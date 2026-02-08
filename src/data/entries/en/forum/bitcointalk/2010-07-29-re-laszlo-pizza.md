@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Laszlo"
+  - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
 description: "Satoshi comments on Laszlo's famous pizza purchase, noting that it would be great to have Bitcoin accepted for pizza delivery."
 isSatoshi: true

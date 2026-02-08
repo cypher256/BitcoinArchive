@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Laszlo"
+  - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
 description: "Satoshi NakamotoがLaszloの有名なピザ購入についてコメントし、実際の商店がビットコインを受け入れるようになることへの期待を表明。"
 isSatoshi: true
