@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/269/"
+threadId: "bt-stealing-coins"
+threadTitle: "Stealing Coins"
+threadPosition: 1
 ---
 
 It's best if you tell it to me privately so it can be fixed first.

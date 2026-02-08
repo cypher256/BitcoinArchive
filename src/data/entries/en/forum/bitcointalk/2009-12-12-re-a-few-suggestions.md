@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/20/"
+threadId: "bt-a-few-suggestions"
+threadTitle: "A few suggestions"
+threadPosition: 3
 ---
 
 The average total coins generated across the network per day stays the same.  Faster machines just get a larger share than slower machines.  If everyone bought faster machines, they wouldn't get more coins than before.

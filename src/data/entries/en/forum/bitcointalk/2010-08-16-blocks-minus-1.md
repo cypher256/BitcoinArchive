@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/"
+threadId: "bt-blocks-minus-1"
+threadTitle: "blocks minus 1"
+threadPosition: 1
 ---
 
 I'd like to reduce the number of blocks displayed in the status bar by 1.   When you first load the program, it'll display 0 blocks instead of 1:

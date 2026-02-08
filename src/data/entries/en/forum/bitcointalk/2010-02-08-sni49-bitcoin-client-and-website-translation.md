@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/49/"
+threadId: "bt-bitcoin-client-and-website-translation"
+threadTitle: "Bitcoin client and website translation"
+threadPosition: 2
 ---
 
 It's much easier to have a single binary and multiple .mo files.  It's too much maintenance work to have lots of build variations.  Once the software support is implemented, anyone could contribute translations.

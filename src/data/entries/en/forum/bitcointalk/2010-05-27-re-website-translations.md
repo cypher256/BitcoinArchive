@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/113/"
+threadId: "bt-website-translations"
+threadTitle: "Website translations"
+threadPosition: 2
 ---
 
 Hurray!  We have our first language.  I uploaded it to SVN to go in with the 0.3 release.

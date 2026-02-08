@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/509/"
+threadId: "bt-new-getwork"
+threadTitle: "New getwork"
+threadPosition: 3
 ---
 
 [Quote from: jgarzik on November 24, 2010, 04:47:42 AM](https://bitcointalk.org/index.php?topic=1901.msg24008#msg24008)I suspect something weird going on with ByteReverse (or lack thereof).  It's quite unclear whether or not 'data' and 'nonce' must be byte-reversed, and in what way.

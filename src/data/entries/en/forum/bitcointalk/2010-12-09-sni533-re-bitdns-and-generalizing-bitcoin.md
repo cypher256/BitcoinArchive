@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/533/"
+threadId: "bt-bitdns-and-generalizing-bitcoin"
+threadTitle: "BitDNS and Generalizing Bitcoin"
+threadPosition: 2
 ---
 
 [Quote from: nanotube on December 09, 2010, 09:20:40 PM](https://bitcointalk.org/index.php?topic=1790.msg28700#msg28700)seems that the miner would have to basically do "extra work". and if there's no reward from the bitdns mining from the extra work (which of course, slows down the main bitcoin work), what would be a miner's incentive to include bitdns (and whatever other side chains) ?

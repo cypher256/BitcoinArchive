@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/"
+threadId: "bt-assertion-failure-ubuntu-lucid"
+threadTitle: "Assertion Failure - Ubuntu Lucid"
+threadPosition: 2
 ---
 
 [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](https://bitcointalk.org/index.php?topic=400.msg3815#msg3815)My coins disappeared, but I assume they'll come back when it's up to current?

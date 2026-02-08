@@ -16,6 +16,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/199/"
+threadId: "bt-not-a-suggestion"
+threadTitle: "Not a suggestion"
+threadPosition: 1
 ---
 
 You could say Bitcoin is pseudonymous rather than anonymous. The key difference is that with Bitcoin, you start with a new, random identity each time you create a new address. If you use a new address for each transaction, there's nothing tying them together.

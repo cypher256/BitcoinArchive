@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/304/"
+threadId: "bt-linux-distribution-download"
+threadTitle: "Linux distribution download"
+threadPosition: 2
 ---
 
 It can be built with Boost 1.37 or later.

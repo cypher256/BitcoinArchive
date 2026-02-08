@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/219/"
+threadId: "bt-source-code-documentation"
+threadTitle: "Source code documentation"
+threadPosition: 2
 ---
 
 It's in init.cpp.

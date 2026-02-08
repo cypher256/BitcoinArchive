@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/420/"
+threadId: "bt-need-a-post-writing-up-some-things-users-should-kn"
+threadTitle: "Need a post writing up some things users should know"
+threadPosition: 3
 ---
 
 Any backup process/procedure would just be a stopgap until there's time to properly work on coding solutions in software.  We can try to use words to help the situation until code gets there.

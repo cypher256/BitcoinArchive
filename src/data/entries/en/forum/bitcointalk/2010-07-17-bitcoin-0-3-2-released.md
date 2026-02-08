@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/232/"
+threadId: "bt-bitcoin-0-3-2-released"
+threadTitle: "Bitcoin 0.3.2 released"
+threadPosition: 1
 ---
 
 Download links available now on bitcoin.org.  Everyone should upgrade to this version.

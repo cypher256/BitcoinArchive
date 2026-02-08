@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/143/"
+threadId: "bt-0-3-almost-ready"
+threadTitle: "0.3 almost ready"
+threadPosition: 5
 ---
 
 Laszlo figured out that enabling some more optimisation increased performance about 20%, so 0.3 hashes 20% faster than 0.2.0, but I assume he used that in his own build.

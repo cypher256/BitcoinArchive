@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/"
+threadId: "bt-a-proposal-for-a-semi-automated-escrow-mechanism"
+threadTitle: "A proposal for a semi-automated Escrow mechanism"
+threadPosition: 2
 ---
 
 [Quote from: jgarzik on August 05, 2010, 07:00:30 PM](https://bitcointalk.org/index.php?topic=645.msg7723#msg7723)Due to that recourse, it is unlikely to be used as an escrow mechanism 

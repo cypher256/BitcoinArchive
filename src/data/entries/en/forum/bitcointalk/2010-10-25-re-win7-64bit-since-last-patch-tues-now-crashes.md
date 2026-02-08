@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/499/"
+threadId: "bt-win7-64bit-since-last-patch-tues-now-crashes"
+threadTitle: "Win7 64bit since last patch Tues now crashes"
+threadPosition: 2
 ---
 
 The only thing I can think of is to see if there are other versions of mingwm10.dll you can get.  mingwm10.dll is a tiny little DLL that came with the MinGW compiler that you need when you build for multi-thread.  I don't know exactly what it does, but it probably just says something like "yes Windows, see I'm in a DLL like you insisted."

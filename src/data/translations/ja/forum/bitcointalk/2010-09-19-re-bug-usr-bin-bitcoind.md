@@ -1,0 +1,22 @@
+---
+title: "Re: Bug? /usr/bin/bitcoind \"\""
+date: 2010-09-19T19:58:11.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=1063.msg13211#msg13211"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "スレッドにおけるサトシ・ナカモトの返信 \"Bug? /usr/bin/bitcoind \"\"\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/454/"
+translationStatus: pending
+---
+
+I don't know anything about any of the bug trackers.  If we were to have one, we would have to make a thoroughly researched choice.
+
+We're managing pretty well just using the forum.  I'm more likely to see bugs posted in the forum, and I think other users are much more likely to help resolve and ask follow up questions here than if they were in a bug tracker.  A key step is other users helping resolve the simple stuff that's not really a bug but some misunderstanding or confusion.
+
+I keep a list of all unresolved bugs I've seen on the forum.  In some cases, I'm still thinking about the best design for the fix.  This isn't the kind of software where we can leave so many unresolved bugs that we need a tracker for them.

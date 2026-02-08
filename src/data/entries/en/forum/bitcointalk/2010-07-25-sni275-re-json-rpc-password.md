@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/275/"
+threadId: "bt-json-rpc-password"
+threadTitle: "JSON-RPC password"
+threadPosition: 14
 ---
 
 [Quote from: gavinandresen on July 25, 2010, 09:38:19 PM](https://bitcointalk.org/index.php?topic=461.msg5768#msg5768)Great catch!  Simpler fix is to specify the BIO_FLAGS_BASE64_NO_NL in the rpc.cpp/EncodeBase64 function

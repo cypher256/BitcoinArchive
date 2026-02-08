@@ -16,6 +16,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/370/"
+threadId: "bt-potential-disaster-scenario"
+threadTitle: "Potential disaster scenario"
+threadPosition: 2
 ---
 
 The network can survive being split into pieces. When it reconnects, the shorter chain will be discarded and the longer one continued. There are no essential nodes. The network doesn't have single points of failure.

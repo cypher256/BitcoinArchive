@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/200/"
+threadId: "bt-0-3-1-release-candidate-please-test"
+threadTitle: "0.3.1 release candidate, please test"
+threadPosition: 3
 ---
 
 [Quote from: knightmb on July 15, 2010, 07:37:10 PM](https://bitcointalk.org/index.php?topic=383.msg3269#msg3269)On Windows, the priority of the Coin Generation is still net for normal. If you run BitCoin in Generate Coin mode, then load up something to eat up all the CPU (like CPU hog for example: [http://www.microtask.ca/cpuhog.html](http://www.microtask.ca/cpuhog.html)) you'll see that both BitCoin and CPU hog share the CPU 50/50 instead of CPU Hog taking all the CPU and BitCoin running only on idle/low process. The khash/s is also reduced in half, so further evidence that the threads are not running in a lower than normal prioirty.

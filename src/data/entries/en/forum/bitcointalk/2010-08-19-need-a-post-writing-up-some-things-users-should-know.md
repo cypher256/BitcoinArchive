@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/404/"
+threadId: "bt-need-a-post-writing-up-some-things-users-should-kn"
+threadTitle: "Need a post writing up some things users should know"
+threadPosition: 1
 ---
 
 I'm not sure what to call it, but we could use a post that lists these things users should know.  If someone has time to write it, here's the list:

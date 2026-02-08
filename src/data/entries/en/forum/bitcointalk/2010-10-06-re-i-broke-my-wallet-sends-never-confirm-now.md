@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/487/"
+threadId: "bt-i-broke-my-wallet-sends-never-confirm-now"
+threadTitle: "I broke my wallet, sends never confirm now."
+threadPosition: 3
 ---
 
 That's going to be more of a SelectCoins thing.

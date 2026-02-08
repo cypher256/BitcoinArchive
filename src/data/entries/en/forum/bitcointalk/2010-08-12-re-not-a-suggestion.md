@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/347/"
+threadId: "bt-not-a-suggestion"
+threadTitle: "Not a suggestion"
+threadPosition: 4
 ---
 
 [Quote from: Red on August 12, 2010, 01:10:19 AM](https://bitcointalk.org/index.php?topic=770.msg8824#msg8824)[Quote from: satoshi on August 11, 2010, 09:07:59 PM](https://bitcointalk.org/index.php?topic=770.msg8798#msg8798)I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  

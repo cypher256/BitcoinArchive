@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/140/"
+threadId: "bt-0-3-almost-ready"
+threadTitle: "0.3 almost ready"
+threadPosition: 3
 ---
 
 [Quote from: davidonpda on June 22, 2010, 06:23:26 PM](https://bitcointalk.org/index.php?topic=199.msg1673#msg1673)EXCEPTION: 22DbRunRecoveryException

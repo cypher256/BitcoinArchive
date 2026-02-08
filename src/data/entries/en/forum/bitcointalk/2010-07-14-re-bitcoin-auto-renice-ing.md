@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/182/"
+threadId: "bt-bitcoin-auto-renice-ing"
+threadTitle: "bitcoin auto-renice-ing"
+threadPosition: 2
 ---
 
 Laszlo corrected this, but unfortunately it was too late to make it into 0.3.0.  There will probably be a 0.3.1 soon though.

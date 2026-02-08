@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/409/"
+threadId: "bt-development-of-alert-system"
+threadTitle: "Development of alert system"
+threadPosition: 1
 ---
 
 I've been working on writing the alert system.  Alerts are broadcast through the network and apply to a range of version numbers.  Alert messages are signed with a private key that only I have.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/434/"
+threadId: "bt-warning-check-your-system-help-me"
+threadTitle: "Warning : Check your system ( Help me )"
+threadPosition: 1
 ---
 
 Any suggestions for better text to put for this error message so the next person will be less likely to be confused?

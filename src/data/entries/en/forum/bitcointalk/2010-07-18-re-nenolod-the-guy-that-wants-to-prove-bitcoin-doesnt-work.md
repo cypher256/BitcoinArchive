@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/244/"
+threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
+threadTitle: "Nenolod, the guy that wants to prove Bitcoin doesn't work."
+threadPosition: 2
 ---
 
 Typically, over 25,000 BTC.

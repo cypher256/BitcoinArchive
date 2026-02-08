@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/21/"
+threadId: "bt-a-few-suggestions"
+threadTitle: "A few suggestions"
+threadPosition: 4
 ---
 
 [Quote from: madhatter2 on December 12, 2009, 06:34:21 AM](https://bitcointalk.org/index.php?topic=12.msg51#msg51)I almost have the svn 0.2 compiling on Mac OS X 10.4.11/Intel (I also have a PPC970 machine here as well so a PPC build would be possible as well). The windowing is native carbon too via wxwidgets! It is FAST!  I had to create a new makefile (makefile.osx; based on makefile.unix of course.. given any thought to using autoconf?) and put some ifdef's into header.h. I have patches. I will keep toying around. I might try it on FreeBSD next.

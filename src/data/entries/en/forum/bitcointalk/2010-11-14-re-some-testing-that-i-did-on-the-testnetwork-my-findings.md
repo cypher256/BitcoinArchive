@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/503/"
+threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
+threadTitle: "Some testing that I did on the testnetwork, my findings."
+threadPosition: 2
 ---
 
 [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](https://bitcointalk.org/index.php?topic=1668.msg21899#msg21899)Of course, if the network is not being flooded and you're not overly concerned about the current transaction getting held up then it's probably worth preferring to use your 0 conf transactions so that you can "save" the higher priority coins for when the network **is** being flooded.

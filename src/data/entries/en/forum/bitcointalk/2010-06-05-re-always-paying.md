@@ -17,6 +17,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/11/"
+threadId: "bt-proof-of-work-difficulty-increasing"
+threadTitle: "Proof-of-work difficulty increasing"
+threadPosition: 1
 ---
 
 The difficulty adjustment is the key to a stable money supply. The difficulty is adjusted every 2016 blocks (approximately every two weeks) based on the time it took to mine the previous 2016 blocks. If the network is finding blocks faster than every 10 minutes, the difficulty goes up. If slower, it goes down.

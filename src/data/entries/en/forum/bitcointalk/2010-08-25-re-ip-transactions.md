@@ -16,6 +16,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/243/"
+threadId: "bt-connection-limits"
+threadTitle: "Connection limits"
+threadPosition: 2
 ---
 
 The software tries to maintain 8 outbound connections and allows up to 125 inbound connections. When you're behind a firewall and can't receive inbound connections, you can still use Bitcoin fine with just outbound connections. But allowing inbound connections helps the network.

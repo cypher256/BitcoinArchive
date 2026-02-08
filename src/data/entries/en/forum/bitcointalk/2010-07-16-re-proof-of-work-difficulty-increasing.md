@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/210/"
+threadId: "bt-proof-of-work-difficulty-increasing"
+threadTitle: "Proof-of-work difficulty increasing"
+threadPosition: 11
 ---
 
 The proof-of-work difficulty is currently 45.38.  (see [http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php))  

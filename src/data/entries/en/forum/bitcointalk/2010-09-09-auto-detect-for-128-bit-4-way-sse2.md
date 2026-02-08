@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/444/"
+threadId: "bt-auto-detect-for-128-bit-4-way-sse2"
+threadTitle: "Auto-detect for 128-bit 4-way SSE2"
+threadPosition: 1
 ---
 
 SVN rev 150 has some code to try to auto-detect whether to use 4-way SSE2.  We need this because it's only faster on certain newer CPUs that have 128-bit SSE2 and not ones with 64-bit SSE2.

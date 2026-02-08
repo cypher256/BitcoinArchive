@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/251/"
+threadId: "bt-json-rpc-password"
+threadTitle: "JSON-RPC password"
+threadPosition: 5
 ---
 
 I was researching config file formats, here's a comparison.

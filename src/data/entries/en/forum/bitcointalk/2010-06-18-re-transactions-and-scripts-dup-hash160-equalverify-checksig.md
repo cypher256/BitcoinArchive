@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/127/"
+threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
+threadTitle: "Transactions and Scripts: DUP HASH160 ... EQUALVERIFY CHECKSIG"
+threadPosition: 2
 ---
 
 A second version would be a massive development and maintenance hassle for me.  It's hard enough maintaining backward compatibility while upgrading the network without a second version locking things in.  If the second version screwed up, the user experience would reflect badly on both, although it would at least reinforce to users the importance of staying with the official version.  If someone was getting ready to fork a second version, I would have to air a lot of disclaimers about the risks of using a minority version.  This is a design where the majority version wins if there's any disagreement, and that can be pretty ugly for the minority version and I'd rather not go into it, and I don't have to as long as there's only one version.

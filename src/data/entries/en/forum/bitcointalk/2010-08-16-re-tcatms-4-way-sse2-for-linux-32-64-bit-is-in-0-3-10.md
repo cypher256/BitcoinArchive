@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/386/"
+threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
+threadTitle: "tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10"
+threadPosition: 2
 ---
 
 [Quote from: jgarzik on August 16, 2010, 03:35:28 AM](https://bitcointalk.org/index.php?topic=820.msg9665#msg9665)Code:cpu family : 6

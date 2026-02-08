@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/335/"
+threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
+threadTitle: "Version 0.3.8.1 update for Linux 64-bit"
+threadPosition: 2
 ---
 
 That's a good point, I believe you could run with generation off if you don't have SSE2.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/227/"
+threadId: "bt-bitcoin-0-3-1-released"
+threadTitle: "Bitcoin 0.3.1 released"
+threadPosition: 2
 ---
 
 I uploaded windows 0.3.1 rc1 and linux 0.3.1 rc2 to SourceForge and updated the links on the homepage.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/506/"
+threadId: "bt-opencl-miner-for-the-masses"
+threadTitle: "OpenCL miner for the masses"
+threadPosition: 1
 ---
 
 [Quote from: m0mchil on November 20, 2010, 10:16:19 AM](https://bitcointalk.org/index.php?topic=1334.msg23018#msg23018)updated to SVN 186

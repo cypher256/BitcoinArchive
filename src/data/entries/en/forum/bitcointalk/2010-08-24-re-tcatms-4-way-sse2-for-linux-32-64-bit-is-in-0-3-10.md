@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/411/"
+threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
+threadTitle: "tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10"
+threadPosition: 6
 ---
 
 [Quote from: ArtForz on August 21, 2010, 04:56:31 PM](https://bitcointalk.org/index.php?topic=820.msg10609#msg10609)- AMD K10: 2 128bit units

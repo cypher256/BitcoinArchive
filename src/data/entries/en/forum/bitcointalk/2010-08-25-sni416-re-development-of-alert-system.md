@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/416/"
+threadId: "bt-development-of-alert-system"
+threadTitle: "Development of alert system"
+threadPosition: 6
 ---
 
 [Quote from: jimbobway on August 25, 2010, 04:45:22 PM](https://bitcointalk.org/index.php?topic=898.msg11153#msg11153)[Quote from: BioMike on August 23, 2010, 05:15:43 AM](https://bitcointalk.org/index.php?topic=898.msg10742#msg10742)@mizerydearia, I think the quote button is easier to find then the reply one. 

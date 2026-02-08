@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/29/"
+threadId: "bt-64bit-support"
+threadTitle: "64bit support"
+threadPosition: 1
 ---
 
 I haven't tried compiling 64-bit yet. 64-bit wouldn't make it any faster, since it uses 64-bit numbers in only a few places and SHA-256 is a 32-bit algorithm, but it may be convenient for those running a 64-bit OS. If I get a chance I'll try -m64 and see what the problem is.

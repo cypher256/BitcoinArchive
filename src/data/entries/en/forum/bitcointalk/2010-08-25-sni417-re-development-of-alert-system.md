@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/417/"
+threadId: "bt-development-of-alert-system"
+threadTitle: "Development of alert system"
+threadPosition: 7
 ---
 
 [Quote from: nelisky on August 25, 2010, 01:28:32 AM](https://bitcointalk.org/index.php?topic=898.msg11092#msg11092)So what kind of warning do admins get from bitcoind? Is there something we can grep from debug.log? Or will rpc calls raise some specific error? Is there a way to locally force this to happen, for unittesting services?

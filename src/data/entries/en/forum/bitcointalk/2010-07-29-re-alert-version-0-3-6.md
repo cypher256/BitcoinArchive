@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/290/"
+threadId: "bt-alert-version-0-3-6"
+threadTitle: "*** ALERT *** version 0.3.6"
+threadPosition: 1
 ---
 
 Haven't had time to update the SVN yet.  Wait for 0.3.6, I'm building it now.  You can shut down your node in the meantime.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/351/"
+threadId: "bt-having-problems-specifing-datadir"
+threadTitle: "Having problems specifing -datadir"
+threadPosition: 2
 ---
 
 Fixed in SVN rev 130.

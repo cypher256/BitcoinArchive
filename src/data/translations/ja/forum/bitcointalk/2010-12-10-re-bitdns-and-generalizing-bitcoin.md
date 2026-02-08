@@ -1,0 +1,29 @@
+---
+title: "Re: BitDNS and Generalizing Bitcoin"
+date: 2010-12-10T17:29:28.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28917#msg28917"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "スレッドにおけるサトシ・ナカモトの返信 \"BitDNS and Generalizing ビットコイン\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/535/"
+threadId: "bt-bitdns-and-generalizing-bitcoin"
+threadTitle: "BitDNS and Generalizing Bitcoin"
+threadPosition: 3
+translationStatus: pending
+---
+
+Piling every proof-of-work quorum system in the world into one dataset doesn't scale.
+
+Bitcoin and BitDNS can be used separately.  Users shouldn't have to download all of both to use one or the other.  BitDNS users may not want to download everything the next several unrelated networks decide to pile in either.
+
+The networks need to have separate fates.  BitDNS users might be completely liberal about adding any large data features since relatively few domain registrars are needed, while Bitcoin users might get increasingly tyrannical about limiting the size of the chain so it's easy for lots of users and small devices.
+
+Fears about securely buying domains with Bitcoins are a red herring.  It's easy to trade Bitcoins for other non-repudiable commodities.
+
+If you're still worried about it, it's cryptographically possible to make a risk free trade.  The two parties would set up transactions on both sides such that when they both sign the transactions, the second signer's signature triggers the release of both.  The second signer can't release one without releasing the other.

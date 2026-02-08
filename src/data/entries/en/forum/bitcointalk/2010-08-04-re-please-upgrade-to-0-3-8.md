@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/315/"
+threadId: "bt-please-upgrade-to-0-3-8"
+threadTitle: "Please upgrade to 0.3.8!"
+threadPosition: 2
 ---
 
 I guess SourceForge hasn't updated its mirrors yet.  The files are there on the admin side, but not on the user side.  I have no idea how long that will take.  It's always been immediate in the past.

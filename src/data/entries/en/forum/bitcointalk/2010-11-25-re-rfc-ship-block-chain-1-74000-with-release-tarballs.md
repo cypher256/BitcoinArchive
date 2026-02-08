@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/511/"
+threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
+threadTitle: "RFC: ship block chain 1-74000 with release tarballs?"
+threadPosition: 1
 ---
 
 It's not the downloading that takes the time, it's verifying and indexing it.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/161/"
+threadId: "bt-feature-request-limiting-connections"
+threadTitle: "Feature Request: Limiting Connections"
+threadPosition: 1
 ---
 
 Thanks for the feedback on this.

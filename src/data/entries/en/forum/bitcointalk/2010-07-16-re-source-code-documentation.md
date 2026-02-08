@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/215/"
+threadId: "bt-source-code-documentation"
+threadTitle: "Source code documentation"
+threadPosition: 1
 ---
 
 I like that in libraries for the external API's, but you can probably tell from the code that I'm not a fan of it for interior functions.  Big obligatory comment headers for each function space out the code and make you hesitate about creating a small little function where the comment header would be bigger than the function.  They're some trouble for maintenance, as changes to the function then require duplicate changes in the comment header.  I like to keep code compact so you can see more code on the screen at once.

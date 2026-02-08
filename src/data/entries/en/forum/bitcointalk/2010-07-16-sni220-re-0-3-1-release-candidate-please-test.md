@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/220/"
+threadId: "bt-0-3-1-release-candidate-please-test"
+threadTitle: "0.3.1 release candidate, please test"
+threadPosition: 8
 ---
 
 Good point.  If you're going to have more than 8 LAN nodes connect to one gateway node, then you'd better have the gateway node set up so it can receive incoming connections.  Otherwise, while the gateway node has 8 or more connections, it will not try to add any more outbound connections.  As the outside nodes you're connected to come and go, it doesn't make new outbound connections to replace them.  You'll be fine if you can accept incoming connections, then there will be plenty of others connecting to you.

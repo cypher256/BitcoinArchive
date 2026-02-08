@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/458/"
+threadId: "bt-internal-version-number"
+threadTitle: "Internal version number"
+threadPosition: 1
 ---
 
 In the next release (0.3.13), I'm going to change the format of the internal version number integer from 313 to 31300, for instance 31305 = 0.3.13.5.  The last number represents changes on the SVN between releases and ought to be properly represented in the version number.  Otherwise, it would be a pain if we had a mistake or something in one of the sub versions that needed to be worked around.

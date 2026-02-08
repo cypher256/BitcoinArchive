@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/85/"
+threadId: "bt-new-icon-logo"
+threadTitle: "New icon/logo"
+threadPosition: 4
 ---
 
 [Quote from: Cdecker on February 27, 2010, 03:24:07 AM](https://bitcointalk.org/index.php?topic=64.msg565#msg565)How about an SVG version? That way we could automatically generate smaller and larger versions as needed.

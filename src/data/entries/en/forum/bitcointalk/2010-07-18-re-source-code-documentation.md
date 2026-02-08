@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/239/"
+threadId: "bt-source-code-documentation"
+threadTitle: "Source code documentation"
+threadPosition: 4
 ---
 
 They're only intended for intrepid programmers who read the sourcecode.

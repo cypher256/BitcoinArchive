@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/314/"
+threadId: "bt-bitcoind-x86-binary-for-centos"
+threadTitle: "Bitcoind x86 binary for CentOS"
+threadPosition: 2
 ---
 
 [Quote from: knightmb on August 03, 2010, 11:46:46 PM](https://bitcointalk.org/index.php?topic=685.msg7365#msg7365)There are two versions, one built from stock code, the other modified to accept up to 1,000 nodes (hence the super node name)

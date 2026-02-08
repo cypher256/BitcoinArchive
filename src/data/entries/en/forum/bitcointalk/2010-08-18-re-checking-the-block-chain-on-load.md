@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/399/"
+threadId: "bt-checking-the-block-chain-on-load"
+threadTitle: "Checking the block chain on load"
+threadPosition: 2
 ---
 
 In the next SVN rev, I'll make it only go back to the last checkpoint at block 74000.  If we need to correct a problem in the future, we can always make sure it goes back at least as far back as the problem.  Also, I'm adding code to verify the block index, which means the proof-of-work chain is checked.

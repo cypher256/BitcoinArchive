@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/431/"
+threadId: "bt-version-0-3-11-with-upgrade-alerts"
+threadTitle: "Version 0.3.11 with upgrade alerts"
+threadPosition: 2
 ---
 
 [Quote from: torservers on August 28, 2010, 01:00:37 PM](https://bitcointalk.org/index.php?topic=941.msg11499#msg11499)The "About" dialog still shows 0.3.10.1 beta.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/214/"
+threadId: "bt-0-3-1-release-candidate-please-test"
+threadTitle: "0.3.1 release candidate, please test"
+threadPosition: 7
 ---
 
 Because of all the dependencies that different systems don't have.  It's easier to just static link what we can.  It doesn't increase the size by very much.

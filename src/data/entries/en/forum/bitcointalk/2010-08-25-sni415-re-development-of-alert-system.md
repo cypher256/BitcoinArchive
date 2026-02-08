@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/415/"
+threadId: "bt-development-of-alert-system"
+threadTitle: "Development of alert system"
+threadPosition: 5
 ---
 
 I changed the switch name to -disablesafemode.

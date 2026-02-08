@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/393/"
+threadId: "bt-checking-the-block-chain-on-load"
+threadTitle: "Checking the block chain on load"
+threadPosition: 1
 ---
 
 SVN rev 139 does a basic check of the block chain after loading.

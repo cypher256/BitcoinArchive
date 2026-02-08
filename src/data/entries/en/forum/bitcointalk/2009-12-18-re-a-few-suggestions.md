@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/27/"
+threadId: "bt-a-few-suggestions"
+threadTitle: "A few suggestions"
+threadPosition: 9
 ---
 
 What you can currently do is set "Minimize to the tray" in options, then run it as "bitcoin -min" so it starts minimized.  The only visible part will be a small (20x20) icon on the tray, which can be doubleclicked if you want to access the UI.  Note: there's a bug with tray icons sometimes disappearing on 64-bit Karmic Koala, not sure if it's from 64-bit or Karmic, it was fine on 32-bit Jaunty.

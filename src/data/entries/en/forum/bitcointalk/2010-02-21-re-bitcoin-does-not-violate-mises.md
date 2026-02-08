@@ -18,6 +18,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/45/"
+threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
+threadTitle: "Bitcoin does NOT violate Mises' Regression Theorem"
+threadPosition: 1
 ---
 
 Bitcoin is an implementation of Wei Dai's b-money proposal http://www.weidai.com/bmoney.txt on Cypherpunks http://en.wikipedia.org/wiki/Cypherpunks in 1998 and Nick Szabo's Bitgold proposal http://unenumerated.blogspot.com/2005/12/bit-gold.html

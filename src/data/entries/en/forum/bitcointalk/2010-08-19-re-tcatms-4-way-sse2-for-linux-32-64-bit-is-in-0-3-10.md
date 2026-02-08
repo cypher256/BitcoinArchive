@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/402/"
+threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
+threadTitle: "tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10"
+threadPosition: 4
 ---
 
 [Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](https://bitcointalk.org/index.php?topic=820.msg10167#msg10167)Any non-Mac i5 love?

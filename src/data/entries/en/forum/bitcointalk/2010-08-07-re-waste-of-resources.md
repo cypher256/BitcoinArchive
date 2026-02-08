@@ -16,6 +16,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/110/"
+threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
+threadTitle: "Transactions and Scripts: DUP HASH160 ... EQUALVERIFY CHECKSIG"
+threadPosition: 1
 ---
 
 The script is actually a predicate. It's just an equation that evaluates to true or false. Predicate is a long and unfamiliar word so I called it script.
