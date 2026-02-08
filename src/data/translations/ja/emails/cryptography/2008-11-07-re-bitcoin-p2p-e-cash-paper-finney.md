@@ -1,6 +1,6 @@
 ---
 title: "返信: ビットコイン P2P 電子キャッシュ論文"
-date: 2008-11-09T03:09:00Z
+date: 2008-11-07T23:40:12Z
 source: cryptography-mailing-list
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014827.html"
 author: "Hal Finney"
@@ -19,8 +19,8 @@ tags:
   - "b-money"
   - "hashcash"
 secondarySources:
-  - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
+  - name: "Satoshi Nakamoto Institute (thread view)"
+    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
 translationStatus: complete
 ---
 
