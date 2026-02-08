@@ -14,6 +14,14 @@ tags:
   - "final"
   - "foundational"
   - "peer-to-peer"
+pdfMetadata:
+  id: "CA1B0A44BD542453BEF918FFCD46DC04"
+  language: "en-GB"
+  creator: "Writer"
+  producer: "OpenOffice.org 2.4"
+  creationDate: "2009-03-24T17:33:15Z"
+  pages: 9
+  checksum: "6F72EA7514DFAD23FABCC7A550021AF7"
 secondarySources:
   - name: "Bitcoin.org"
     url: "https://bitcoin.org/bitcoin.pdf"

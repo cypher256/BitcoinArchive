@@ -2,13 +2,24 @@
 import { useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
+interface PdfMetadata {
+  id: string;
+  language: string;
+  creator: string;
+  producer: string;
+  creationDate: string;
+  pages: number;
+  checksum: string;
+}
+
 interface Props {
   sourceUrl: string;
   secondarySources?: { name: string; url: string }[];
+  pdfMetadata?: PdfMetadata;
   lang: Lang;
 }
 
-const { sourceUrl, secondarySources, lang } = Astro.props;
+const { sourceUrl, secondarySources, pdfMetadata, lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 
@@ -23,6 +34,27 @@ const t = useTranslations(lang);
           <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>
         ))}
       </ul>
+    </div>
+  )}
+  {pdfMetadata && (
+    <div class="pdf-metadata">
+      <h4>{t('entry.pdfMetadata')}</h4>
+      <dl>
+        <dt>{t('entry.pdfId')}</dt>
+        <dd><code>{pdfMetadata.id}</code></dd>
+        <dt>{t('entry.pdfLanguage')}</dt>
+        <dd>{pdfMetadata.language}</dd>
+        <dt>{t('entry.pdfCreator')}</dt>
+        <dd>{pdfMetadata.creator}</dd>
+        <dt>{t('entry.pdfProducer')}</dt>
+        <dd>{pdfMetadata.producer}</dd>
+        <dt>{t('entry.pdfCreationDate')}</dt>
+        <dd><time datetime={pdfMetadata.creationDate}>{pdfMetadata.creationDate}</time></dd>
+        <dt>{t('entry.pdfPages')}</dt>
+        <dd>{pdfMetadata.pages}</dd>
+        <dt>{t('entry.pdfChecksum')}</dt>
+        <dd><code>{pdfMetadata.checksum}</code></dd>
+      </dl>
     </div>
   )}
 </div>
@@ -66,5 +98,37 @@ const t = useTranslations(lang);
   }
   .secondary-sources li {
     margin-bottom: 0.25rem;
+  }
+  .pdf-metadata {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .pdf-metadata h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+  .pdf-metadata dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2rem 0.75rem;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .pdf-metadata dt {
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+  .pdf-metadata dd {
+    margin: 0;
+  }
+  .pdf-metadata code {
+    font-size: 0.75rem;
+    background: var(--color-bg-alt, #f5f5f5);
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+    word-break: break-all;
   }
 </style>

@@ -39,6 +39,15 @@ const entrySchema = z.object({
     url: z.string().url(),
   })).optional(),
   tags: z.array(z.string()).optional(),
+  pdfMetadata: z.object({
+    id: z.string(),
+    language: z.string(),
+    creator: z.string(),
+    producer: z.string(),
+    creationDate: z.string(),
+    pages: z.number(),
+    checksum: z.string(),
+  }).optional(),
   aftermathType: z.enum([
     'court-testimony', 'blog', 'interview', 'media', 'retrospective',
   ]).optional(),
