@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/291/"
+threadId: "bt-alert-version-0-3-6"
+threadTitle: "*** ALERT *** version 0.3.6"
+threadPosition: 2
 ---
 
 SVN is updated with version 0.3.6.

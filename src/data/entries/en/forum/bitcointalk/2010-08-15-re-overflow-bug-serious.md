@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/368/"
+threadId: "bt-overflow-bug-serious"
+threadTitle: "overflow bug SERIOUS"
+threadPosition: 1
 ---
 
 Here's the preliminary change.  Look right?  I have more changes to make, this isn't all of it.  Will SVN shortly.

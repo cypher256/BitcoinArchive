@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/457/"
+threadId: "bt-always-pay-transaction-fee"
+threadTitle: "Always pay transaction fee?"
+threadPosition: 3
 ---
 
 [Quote from: satoshi on September 08, 2010, 05:30:14 PM](https://bitcointalk.org/index.php?topic=994.msg12237#msg12237)The current threshold is 200KB per block, or about 1000 transactions per block.  I think it should be lowered to 50KB per block.  That would still be more than 100 times the average transactions per block.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/175/"
+threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
+threadTitle: "bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username"
+threadPosition: 3
 ---
 
 I tested this with a non-lower-ASCII account name on XP and confirmed the bug, then tested that the new GetDefaultDataDir fixed it.  This change is revision 102 of the SVN.

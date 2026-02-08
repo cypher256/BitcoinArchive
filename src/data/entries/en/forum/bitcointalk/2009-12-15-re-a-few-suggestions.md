@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/"
+threadId: "bt-a-few-suggestions"
+threadTitle: "A few suggestions"
+threadPosition: 7
 ---
 
 [Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](https://bitcointalk.org/index.php?topic=12.msg68#msg68)It is also throwing the same std::string issue on the latest version of Ubuntu Linux.

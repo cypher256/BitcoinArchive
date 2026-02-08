@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/441/"
+threadId: "bt-always-pay-transaction-fee"
+threadTitle: "Always pay transaction fee?"
+threadPosition: 2
 ---
 
 Currently, paying a fee is controlled manually with the -paytxfee switch.  It would be very easy to make the software automatically check the size of recent blocks to see if it should pay a fee.  We're so far from reaching the threshold, we don't need that yet.  It's a good idea to see how things go with controlling it manually first anyway.

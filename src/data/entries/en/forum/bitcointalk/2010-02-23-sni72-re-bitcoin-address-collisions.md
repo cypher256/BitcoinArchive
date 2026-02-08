@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/72/"
+threadId: "bt-bitcoin-address-collisions"
+threadTitle: "Bitcoin Address Collisions"
+threadPosition: 2
 ---
 
 [Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](https://bitcointalk.org/index.php?topic=62.msg450#msg450)Are generated bitcoins encrypted with whichever address is currently displayed in the main Bitcoin window?

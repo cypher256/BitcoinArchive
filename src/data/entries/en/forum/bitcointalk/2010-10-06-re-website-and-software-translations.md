@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/486/"
+threadId: "bt-website-and-software-translations"
+threadTitle: "Website and software translations"
+threadPosition: 5
 ---
 
 poedit reorganised the file for some reason.  I re-ran update from sources and it put it back in the original order so it's fine now.  Did you run it on a drive where files aren't sorted alphabetically, like a FAT drive or USB flash drive?

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/338/"
+threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
+threadTitle: "Version 0.3.8.1 update for Linux 64-bit"
+threadPosition: 3
 ---
 
 SVN rev 128: disable SSE2 on 32-bit.  This may only disable it for MSVC and GCC.  Other compilers might have different 64-bit defines.

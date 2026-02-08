@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/535/"
+threadId: "bt-bitdns-and-generalizing-bitcoin"
+threadTitle: "BitDNS and Generalizing Bitcoin"
+threadPosition: 3
 ---
 
 Piling every proof-of-work quorum system in the world into one dataset doesn't scale.

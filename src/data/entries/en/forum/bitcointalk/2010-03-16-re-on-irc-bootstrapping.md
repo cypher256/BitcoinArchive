@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/92/"
+threadId: "bt-on-irc-bootstrapping"
+threadTitle: "On IRC bootstrapping"
+threadPosition: 1
 ---
 
 Thanks soultcer for talking with the Freenode staffer.  Good to know it's OK at the current size, and now they know who we are.  They're supportive of projects like TOR so I hope they would probably be friendly to us.  We don't want to overstay our welcome.  If we get too big, then by the same token, we're big enough that we don't need IRC anymore and we'll get off.

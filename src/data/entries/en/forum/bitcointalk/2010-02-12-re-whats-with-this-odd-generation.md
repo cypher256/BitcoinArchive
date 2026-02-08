@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/52/"
+threadId: "bt-what-s-with-this-odd-generation"
+threadTitle: "What's with this odd generation?"
+threadPosition: 1
 ---
 
 There's a small transaction fee for very large transactions.  The node that generates the block that contains the transaction gets the fee.

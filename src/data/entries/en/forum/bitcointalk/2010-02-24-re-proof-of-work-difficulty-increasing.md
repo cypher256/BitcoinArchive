@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/78/"
+threadId: "bt-proof-of-work-difficulty-increasing"
+threadTitle: "Proof-of-work difficulty increasing"
+threadPosition: 6
 ---
 
 The automatic adjustment happened earlier today.

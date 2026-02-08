@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/100/"
+threadId: "bt-uri-scheme-for-bitcoin"
+threadTitle: "URI-scheme for bitcoin"
+threadPosition: 2
 ---
 
 [Quote from: Karmicads on May 01, 2010, 06:06:53 AM](https://bitcointalk.org/index.php?topic=55.msg1038#msg1038)A freenet URI is like this:

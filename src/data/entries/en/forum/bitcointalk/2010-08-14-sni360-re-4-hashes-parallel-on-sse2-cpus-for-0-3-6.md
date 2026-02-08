@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/360/"
+threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
+threadTitle: "4 hashes parallel on SSE2 CPUs for 0.3.6"
+threadPosition: 7
 ---
 
 Got the test working on 32-bit with MinGW GCC 4.5.  Exactly 50% slower than stock with Core 2.

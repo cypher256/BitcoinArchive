@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/32/"
+threadId: "bt-bitcoin-crash-when-sending-coins"
+threadTitle: "Bitcoin crash when sending coins"
+threadPosition: 1
 ---
 
 That is what happens if you copy wallet files around.  If you copy your wallet file to a second computer, then they both think the money in the wallet is theirs.  If one spends any of it, the other doesn't know those coins are already spent and would try to spend them again, and that's the error you would hit.

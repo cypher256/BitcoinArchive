@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/282/"
+threadId: "bt-bitcoin-x86-for-windows"
+threadTitle: "Bitcoin x86 for Windows"
+threadPosition: 2
 ---
 
 [Quote from: BlackEye on July 25, 2010, 10:12:23 PM](https://bitcointalk.org/index.php?topic=453.msg5774#msg5774)I was able to integrate the SHA256 functionality from Crypto++ 5.6.0 into Bitcoin.  This is the fastest SHA256 yet using the SSE2 assembly code.  Since Bitcoin was sending unaligned data to the block hash function, I had to change the MOVDQA instruction to MOVDQU.

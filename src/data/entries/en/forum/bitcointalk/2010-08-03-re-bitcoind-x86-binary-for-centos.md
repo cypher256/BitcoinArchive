@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/310/"
+threadId: "bt-bitcoind-x86-binary-for-centos"
+threadTitle: "Bitcoind x86 binary for CentOS"
+threadPosition: 1
 ---
 
 [Quote from: sgtstein on August 03, 2010, 05:30:37 PM](https://bitcointalk.org/index.php?topic=685.msg7275#msg7275)I have successfully built it with 4.8, 4.7 never would but with 4.8 bitcoind locks up whenever it dumps the initial block download to disk. 

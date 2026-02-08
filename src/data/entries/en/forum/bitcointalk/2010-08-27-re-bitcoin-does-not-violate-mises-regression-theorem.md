@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/428/"
+threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
+threadTitle: "Bitcoin does NOT violate Mises' Regression Theorem"
+threadPosition: 2
 ---
 
 As a thought experiment, imagine there was a base metal as scarce as gold but with the following properties:

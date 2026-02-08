@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/477/"
+threadId: "bt-version-0-3-13-please-upgrade"
+threadTitle: "Version 0.3.13, please upgrade"
+threadPosition: 5
 ---
 
 [Quote from: theymos on October 03, 2010, 08:09:51 PM](https://bitcointalk.org/index.php?topic=1327.msg15118#msg15118)ArtForz is already running with no fees, and he has 20-30% of the network's CPU power. The person who originally sent the broken transactions deleted his wallet, though, and the network has forgotten these historical transactions, so any transactions based on this won't confirm.

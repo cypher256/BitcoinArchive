@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/145/"
+threadId: "bt-0-3-almost-ready"
+threadTitle: "0.3 almost ready"
+threadPosition: 7
 ---
 
 I don't know.  Maybe someone with more Linux experience knows how to install the library it needs.

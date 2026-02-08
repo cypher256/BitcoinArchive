@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/17/"
+threadId: "bt-questions-about-bitcoin"
+threadTitle: "Questions about Bitcoin"
+threadPosition: 1
 ---
 
 1-3:

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/381/"
+threadId: "bt-overflow-bug-serious"
+threadTitle: "overflow bug SERIOUS"
+threadPosition: 10
 ---
 
 [Quote from: trebronics on August 16, 2010, 01:02:35 AM](https://bitcointalk.org/index.php?topic=823.msg9625#msg9625)Most people running clients are not reading this message thread.  So...  Silly questions:

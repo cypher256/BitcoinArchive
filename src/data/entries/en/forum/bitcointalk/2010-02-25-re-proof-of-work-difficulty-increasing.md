@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/81/"
+threadId: "bt-proof-of-work-difficulty-increasing"
+threadTitle: "Proof-of-work difficulty increasing"
+threadPosition: 7
 ---
 
 The formula is based on the time it takes to generate 2016 blocks.  The difficulty is multiplied by 14/(actual days taken).  For instance, this time it took 9.4 days, so the calculation was 14/9.4 = 1.49.  Previous difficulty 2.53 * 1.49 = 3.78, a 49% increase. 

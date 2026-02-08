@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/48/"
+threadId: "bt-bitcoin-client-and-website-translation"
+threadTitle: "Bitcoin client and website translation"
+threadPosition: 1
 ---
 
 Thank you for the offer to help translate.  That is probably the best way you could help.

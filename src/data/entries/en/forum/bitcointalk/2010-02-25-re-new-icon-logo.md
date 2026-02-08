@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/79/"
+threadId: "bt-new-icon-logo"
+threadTitle: "New icon/logo"
+threadPosition: 2
 ---
 
 [Quote from: Sabunir on February 25, 2010, 01:47:56 AM](https://bitcointalk.org/index.php?topic=64.msg519#msg519)I like them. Do they come in higher resolutions?

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/538/"
+threadId: "bt-bitdns-and-generalizing-bitcoin"
+threadTitle: "BitDNS and Generalizing Bitcoin"
+threadPosition: 5
 ---
 
 I agree.  All transactions, IP changes, renewals, etc. should have some fee that goes to the miners.

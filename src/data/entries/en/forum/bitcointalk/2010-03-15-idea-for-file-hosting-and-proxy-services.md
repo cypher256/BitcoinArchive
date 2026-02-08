@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/91/"
+threadId: "bt-idea-for-file-hosting-and-proxy-services"
+threadTitle: "Idea for file hosting and proxy services"
+threadPosition: 1
 ---
 
 When you want to upload an image to embed in a forum post, there are services like imageshack, but because they're free, they limit the number of views.  It's a minuscule amount of bandwidth cost, but they can't just give it away for free, there has to be something in it for them.  It would be nice to be able to pay for the bandwidth and avoid the limits, but conventional payments are too inconvenient for such a minor thing.

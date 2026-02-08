@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/70/"
+threadId: "bt-ui-improvements"
+threadTitle: "UI improvements"
+threadPosition: 3
 ---
 
 [Quote from: Xunie on February 23, 2010, 12:28:27 PM](https://bitcointalk.org/index.php?topic=60.msg439#msg439)*/etc/init.d/gdm start* and it will start gdm!

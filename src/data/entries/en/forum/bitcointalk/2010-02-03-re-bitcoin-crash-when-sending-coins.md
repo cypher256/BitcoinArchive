@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/39/"
+threadId: "bt-bitcoin-crash-when-sending-coins"
+threadTitle: "Bitcoin crash when sending coins"
+threadPosition: 3
 ---
 
 I uploaded this fix to the SVN.  It watches for spent coins and updates your wallet on load and also continuously as blocks come in.  I also put a better error message, but it should never hit it because it always finds spent coins ahead of time, unless you spent the same money at the same time on two computers at once.

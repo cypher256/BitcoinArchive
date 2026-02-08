@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/192/"
+threadId: "bt-resource-hog"
+threadTitle: "resource hog"
+threadPosition: 2
 ---
 
 Then all the CPU time is the generate thread, which definitely runs at the lowest possible priority, idle priority.  It's normal that your CPU meter is 100%.  Since it's idle priority, it won't actually slow anything else down, even though the CPU meter is 100%.

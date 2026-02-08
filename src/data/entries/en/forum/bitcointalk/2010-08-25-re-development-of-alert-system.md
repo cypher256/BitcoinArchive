@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/413/"
+threadId: "bt-development-of-alert-system"
+threadTitle: "Development of alert system"
+threadPosition: 3
 ---
 
 This is in SVN rev 142 as version 0.3.11.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/377/"
+threadId: "bt-0-3-10-1-question-on-where-block-should-be"
+threadTitle: "0.3.10.1 Question on where block should be"
+threadPosition: 1
 ---
 
 I suspect there's some difficulty receiving blocks if all the nodes you're connected to are 0.3.9 or lower.  We need enough of us so that at least one node you connect to will be 0.3.10.  The problem will start to go away when we make up more than 1/8th of the network.

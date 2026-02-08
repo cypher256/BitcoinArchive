@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/74/"
+threadId: "bt-command-line-and-json-rpc"
+threadTitle: "Command Line and JSON-RPC"
+threadPosition: 2
 ---
 
 [Quote from: theymos on February 24, 2010, 03:07:37 AM](https://bitcointalk.org/index.php?topic=63.msg467#msg467)[Quote from: satoshi on February 23, 2010, 10:15:41 PM](https://bitcointalk.org/index.php?topic=63.msg452#msg452)On Linux it needs libgtk2.0-0 installed

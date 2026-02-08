@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/330/"
+threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
+threadTitle: "4 hashes parallel on SSE2 CPUs for 0.3.6"
+threadPosition: 3
 ---
 
 [Quote from: impossible7 on August 06, 2010, 11:37:20 AM](https://bitcointalk.org/index.php?topic=648.msg7838#msg7838)CRITICAL_BLOCK is a macro that contains a for loop. The assertion failure indicates that break has been called inside the body of the loop. The only break statement in this block is in line 2762. In the original source file, there is no break statement in this critical block. I think you must remove lines 2759-2762. The is nothing like that in the original main.cpp.

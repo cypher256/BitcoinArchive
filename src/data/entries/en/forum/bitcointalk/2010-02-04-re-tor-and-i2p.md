@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/42/"
+threadId: "bt-tor-and-i2p"
+threadTitle: "TOR and I2P"
+threadPosition: 2
 ---
 
 When using proxy port 9050, it will only make one attempt to connect to IRC, then give up, since it knows it will probably always fail because IRC servers ban all the TOR exit nodes.  If you're using another port, it would assume it might be a regular old normal proxy and would keep retrying IRC at longer and longer intervals.  You should not use Polipo or Privoxy as those are http filters and caches that would corrupt Bitcoin's messages if they make any changes.  Bitcoin might be trying to overcome it by reconnecting.  You should use port 9050.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/241/"
+threadId: "bt-bitcoin-0-3-2-released"
+threadTitle: "Bitcoin 0.3.2 released"
+threadPosition: 3
 ---
 
 The change list is basically encompassed by what's listed in the first message.  Everyone should upgrade to get the important security improvements.

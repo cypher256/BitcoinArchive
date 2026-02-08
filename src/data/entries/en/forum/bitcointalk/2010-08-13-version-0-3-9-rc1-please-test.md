@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/355/"
+threadId: "bt-version-0-3-9-rc1-please-test"
+threadTitle: "Version 0.3.9 rc1, please test"
+threadPosition: 1
 ---
 
 Here's a test build if you'd like to help test before 0.3.9 is released.

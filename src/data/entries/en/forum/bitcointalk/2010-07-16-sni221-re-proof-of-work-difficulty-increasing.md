@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/221/"
+threadId: "bt-proof-of-work-difficulty-increasing"
+threadTitle: "Proof-of-work difficulty increasing"
+threadPosition: 13
 ---
 
 Yes, about 20 hours.  (120 conf / 6 blocks per hour = 20 hours)  That's the normal length of time before you can spend it.  You know long before that that you won one.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/238/"
+threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
+threadTitle: "Bitcoin snack machine (fast transaction problem)"
+threadPosition: 2
 ---
 
 [Quote from: llama on July 18, 2010, 12:03:29 AM](https://bitcointalk.org/index.php?topic=423.msg3836#msg3836)This is a good start, but still not impermeable.

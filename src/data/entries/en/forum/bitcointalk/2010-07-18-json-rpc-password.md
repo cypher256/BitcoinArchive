@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/242/"
+threadId: "bt-json-rpc-password"
+threadTitle: "JSON-RPC password"
+threadPosition: 1
 ---
 
 I uploaded to SVN my changes to add a password to JSON-RPC.  If you're set up to build, please test it.

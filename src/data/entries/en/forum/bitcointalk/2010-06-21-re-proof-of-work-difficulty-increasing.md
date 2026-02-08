@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/132/"
+threadId: "bt-proof-of-work-difficulty-increasing"
+threadTitle: "Proof-of-work difficulty increasing"
+threadPosition: 9
 ---
 
 I integrated the hashmeter idea into the SVN version.  It displays khash/s in the left section of the status bar.

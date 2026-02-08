@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/425/"
+threadId: "bt-auto-backing-up-of-wallet-dat"
+threadTitle: "auto backing up of wallet.dat"
+threadPosition: 4
 ---
 
 Sorry, I've been so busy lately I've been skimming messages and I still can't keep up.

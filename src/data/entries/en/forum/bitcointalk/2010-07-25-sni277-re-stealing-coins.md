@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/277/"
+threadId: "bt-stealing-coins"
+threadTitle: "Stealing Coins"
+threadPosition: 5
 ---
 
 Sorry, actually it's ECDSA (Elliptic Curve Digital Signature Algorithm) not RSA.  I shouldn't have said "prime numbers".  ECDSA doesn't take much time to generate a keypair.

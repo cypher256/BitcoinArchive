@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/185/"
+threadId: "bt-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
+threadTitle: "Runaway CPU usage for 64bit BitCoin (Linux Client)"
+threadPosition: 1
 ---
 
 After it initially tries incorrectly to set itself to the lowest priority, the generate thread only changes its priority again temporarily when it finds a block.  When you've found a block, you should want it to hurry up and broadcast it as soon a possible before someone else finds one and makes yours invalid.  The generate thread only changes to higher priority for less than a second every few days.

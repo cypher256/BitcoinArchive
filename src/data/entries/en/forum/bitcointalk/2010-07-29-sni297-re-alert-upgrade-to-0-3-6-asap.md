@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/297/"
+threadId: "bt-alert-upgrade-to-0-3-6-asap"
+threadTitle: "*** ALERT *** Upgrade to 0.3.6 ASAP!"
+threadPosition: 3
 ---
 
 [Quote from: lachesis on July 29, 2010, 10:14:36 PM](https://bitcointalk.org/index.php?topic=626.msg6515#msg6515)On Debian testing 32-bit, I get a few build errors, all resembling:

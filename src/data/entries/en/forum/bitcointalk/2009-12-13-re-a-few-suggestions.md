@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/22/"
+threadId: "bt-a-few-suggestions"
+threadTitle: "A few suggestions"
+threadPosition: 5
 ---
 
 There would be a command line switch at runtime to tell it to run without UI.  All it needs to do is not create the main window.  A simplistic way would be to disable "pframeMain->Show" and "ptaskbaricon->Show" in ui.cpp.  The network threads don't care that the UI isn't there.  The only other UI is a message box in CheckDiskSpace if it runs out of disk space.

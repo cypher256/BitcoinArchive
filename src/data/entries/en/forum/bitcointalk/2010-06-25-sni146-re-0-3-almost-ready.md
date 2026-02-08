@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/146/"
+threadId: "bt-0-3-almost-ready"
+threadTitle: "0.3 almost ready"
+threadPosition: 8
 ---
 
 Thanks virtualcoin, that's a perfect comparison.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/116/"
+threadId: "bt-website-translations"
+threadTitle: "Website translations"
+threadPosition: 3
 ---
 
 I uploaded the 93% complete Dutch translation to SVN.  Thanks!

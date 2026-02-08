@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/16/"
+threadId: "bt-a-few-suggestions"
+threadTitle: "A few suggestions"
+threadPosition: 1
 ---
 
 [Quote from: madhatter2 on December 10, 2009, 02:00:17 PM](https://bitcointalk.org/index.php?topic=12.msg44#msg44)Front ends can also be ran on clients with very low cpu power such as mobile phones. 

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/130/"
+threadId: "bt-bitcoin-in-ubuntu-10-04"
+threadTitle: "Bitcoin in Ubuntu 10.04"
+threadPosition: 1
 ---
 
 [Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM](https://bitcointalk.org/index.php?topic=149.msg1203#msg1203)Bitcoin looks ugly in Ubuntu's new default theme. It seems that some, but not all of the theme settings are being picked up. The unselected file menu should have light text with a dark background, but it incorrectly has light text with a light background. They're similar enough that it's unreadable on my display. It should be fixed before the next stable release.

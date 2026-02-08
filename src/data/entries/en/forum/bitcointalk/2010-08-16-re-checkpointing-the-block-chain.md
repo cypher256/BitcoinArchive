@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/394/"
+threadId: "bt-checkpointing-the-block-chain"
+threadTitle: "checkpointing the block chain"
+threadPosition: 1
 ---
 
 There is no way for the software to automatically know if one chain is better than another except by the greatest proof-of-work.  In the design it was necessary for it to switch to a longer chain no matter how far back it has to go.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/359/"
+threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
+threadTitle: "4 hashes parallel on SSE2 CPUs for 0.3.6"
+threadPosition: 6
 ---
 
 If you haven't already, try aligning thash.  It might matter.  Couldn't hurt.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/117/"
+threadId: "bt-on-irc-bootstrapping"
+threadTitle: "On IRC bootstrapping"
+threadPosition: 2
 ---
 
 Bitcoin has its own distributed address directory using the "addr" message.  It's about time we coded in a list of the current long running static nodes to seed from.  I can add code so new nodes do not preferentially stay connected to the seed nodes, just connect and get the list, so it won't be a burden on them.

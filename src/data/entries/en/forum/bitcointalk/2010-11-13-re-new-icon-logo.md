@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/500/"
+threadId: "bt-new-icon-logo"
+threadTitle: "New icon/logo"
+threadPosition: 6
 ---
 
 I'm happy if someone with artistic skill wants to contribute alternatives.  The icon/logo was meant to be good as an icon at the 16x16 and 20x20 pixel sizes.  I think it's the best program icon, but there's room for improvement at larger sizes for a graphic for use on websites.

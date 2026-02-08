@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/57/"
+threadId: "bt-what-s-with-this-odd-generation"
+threadTitle: "What's with this odd generation?"
+threadPosition: 3
 ---
 
 Right.  Otherwise we couldn't have a finite limit of 21 million coins, because there would always need to be some minimum reward for generating.  In a few decades when the reward gets too small, the transaction fee will become the main compensation for nodes.  I'm sure that in 20 years there will either be very large transaction volume or no volume.

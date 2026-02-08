@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/82/"
+threadId: "bt-command-line-and-json-rpc"
+threadTitle: "Command Line and JSON-RPC"
+threadPosition: 5
 ---
 
 wx/clipbrd.h isn't used, move it inside the #if wxUSE_GUI.

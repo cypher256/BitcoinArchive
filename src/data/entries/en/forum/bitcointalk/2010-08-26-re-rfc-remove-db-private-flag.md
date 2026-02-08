@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/419/"
+threadId: "bt-rfc-remove-db-private-flag"
+threadTitle: "RFC: remove DB_PRIVATE flag"
+threadPosition: 1
 ---
 
 Can you provide more details about what removing DB_PRIVATE does?

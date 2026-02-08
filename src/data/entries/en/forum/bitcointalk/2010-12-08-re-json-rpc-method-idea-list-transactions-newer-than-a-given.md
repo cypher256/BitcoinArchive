@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/524/"
+threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
+threadTitle: "JSON-RPC method idea: list transactions newer than a given txid"
+threadPosition: 1
 ---
 
 It's not safe to use listtransactions this way.

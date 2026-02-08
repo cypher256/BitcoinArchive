@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"
+threadId: "bt-patch-increase-block-size-limit"
+threadTitle: "[PATCH] increase block size limit"
+threadPosition: 1
 ---
 
 [Quote from: theymos on October 03, 2010, 08:28:39 PM](https://bitcointalk.org/index.php?topic=1347.msg15126#msg15126)Applying this patch will make you incompatible with other Bitcoin clients.

@@ -12,6 +12,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/248/"
+threadId: "bt-json-rpc-password"
+threadTitle: "JSON-RPC password"
+threadPosition: 3
 ---
 
 So you drop a settings file in the ~/.bitcoin directory, that sounds better.  In the "no password is set" warning, it could tell you where the file is and what to do.
