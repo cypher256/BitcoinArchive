@@ -1,6 +1,11 @@
 ---
-import { useTranslations, formatDate } from '../i18n/utils';
+import { useTranslations, formatDate, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
+
+interface Participant {
+  name: string;
+  slug: string;
+}
 
 interface Props {
   date: Date;
@@ -9,9 +14,10 @@ interface Props {
   sourceUrl: string;
   isSatoshi: boolean;
   lang: Lang;
+  participants?: Participant[];
 }
 
-const { date, author, source, sourceUrl, isSatoshi, lang } = Astro.props;
+const { date, author, source, sourceUrl, isSatoshi, lang, participants = [] } = Astro.props;
 const t = useTranslations(lang);
 const sourceLabel = t(`source.${source}` as any) || source;
 ---
@@ -24,6 +30,20 @@ const sourceLabel = t(`source.${source}` as any) || source;
   <span class="source-badge">{sourceLabel}</span>
 </div>
 
+{participants.length > 0 && (
+  <div class="participants-row">
+    <span class="participants-label">{lang === 'ja' ? '参加者:' : 'Participants:'}</span>
+    {participants.map((p, i) => (
+      <>
+        <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>
+          {p.name}
+        </a>
+        {i < participants.length - 1 && <span class="participant-sep">,&nbsp;</span>}
+      </>
+    ))}
+  </div>
+)}
+
 <style>
   .entry-meta {
     display: flex;
@@ -33,7 +53,7 @@ const sourceLabel = t(`source.${source}` as any) || source;
     font-family: var(--font-heading);
     font-size: 0.85rem;
     color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .meta-sep {
     color: var(--color-border);
@@ -48,5 +68,32 @@ const sourceLabel = t(`source.${source}` as any) || source;
     background: var(--color-source-bg);
     border-radius: 3px;
     font-size: 0.8rem;
+  }
+  .participants-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    gap: 0.15rem;
+  }
+  .participants-label {
+    margin-right: 0.3rem;
+  }
+  .participant-link {
+    text-decoration: none;
+    color: var(--color-link);
+  }
+  .participant-link:hover {
+    text-decoration: underline;
+  }
+  .participant-link.satoshi {
+    color: var(--color-satoshi);
+    font-weight: 600;
+  }
+  .participant-sep {
+    color: var(--color-text-muted);
   }
 </style>

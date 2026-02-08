@@ -2,6 +2,11 @@
 import { formatDate, localePath, useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
+interface Participant {
+  name: string;
+  slug: string;
+}
+
 interface Props {
   id: string;
   title: string;
@@ -13,14 +18,16 @@ interface Props {
   lang: Lang;
   threadId?: string;
   threadCount?: number;
+  participants?: Participant[];
 }
 
-const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount } = Astro.props;
+const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [] } = Astro.props;
 const t = useTranslations(lang);
 const sourceLabel = t(`source.${source}` as any) || source;
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)
   : localePath(`/entries/${id}/`, lang);
+const otherParticipants = participants.filter((p) => p.name !== author);
 ---
 
 <article class:list={["entry-card", { "entry-card-thread": !!threadId }]}>
@@ -35,6 +42,11 @@ const href = threadId
     <h3 class="card-title">{title}</h3>
     <p class="card-author">
       <span class:list={[{ satoshi: isSatoshi }]}>{author}</span>
+      {otherParticipants.length > 0 && (
+        <span class="participants-with">
+          &harr; {otherParticipants.map((p) => p.name).join(', ')}
+        </span>
+      )}
     </p>
     <p class="card-description">{description}</p>
   </a>
@@ -102,6 +114,10 @@ const href = threadId
   .satoshi {
     color: var(--color-satoshi);
     font-weight: 600;
+  }
+  .participants-with {
+    color: var(--color-text-muted);
+    font-weight: 400;
   }
   .card-description {
     font-size: 0.9rem;
