@@ -1,11 +1,44 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getEntries } from '../../i18n/utils';
+import { useTranslations, getEntries, localePath } from '../../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
 const entries = await getEntries(lang);
+
+// Count messages per thread
+const threadCounts = new Map<string, number>();
+for (const entry of entries) {
+  if (entry.data.threadId) {
+    threadCounts.set(entry.data.threadId, (threadCounts.get(entry.data.threadId) || 0) + 1);
+  }
+}
+
+// Find the first entry (lowest threadPosition) for each multi-message thread
+const threadStarters = new Map<string, string>();
+for (const entry of entries) {
+  const tid = entry.data.threadId;
+  if (tid && (threadCounts.get(tid) || 0) >= 2) {
+    const existing = threadStarters.get(tid);
+    if (!existing) {
+      threadStarters.set(tid, entry.id);
+    } else {
+      const existingEntry = entries.find((e: any) => e.id === existing);
+      if (existingEntry && (entry.data.threadPosition ?? 999) < (existingEntry.data.threadPosition ?? 999)) {
+        threadStarters.set(tid, entry.id);
+      }
+    }
+  }
+}
+
+// Display list: thread starters + non-thread entries (skip other thread members)
+const displayEntries = entries.filter((entry: any) => {
+  const tid = entry.data.threadId;
+  if (!tid) return true;
+  if ((threadCounts.get(tid) || 0) < 2) return true;
+  return threadStarters.get(tid) === entry.id;
+});
 ---
 
 <BaseLayout
@@ -17,18 +50,25 @@ const entries = await getEntries(lang);
   <div class="container">
     <h1>{t('nav.entries')}</h1>
     <p class="entry-count">{entries.length} entries</p>
-    {entries.map((entry) => (
-      <EntryCard
-        id={entry.id}
-        title={entry.data.title}
-        date={entry.data.date}
-        author={entry.data.author}
-        source={entry.data.source}
-        description={entry.data.description}
-        isSatoshi={entry.data.isSatoshi}
-        lang={lang}
-      />
-    ))}
+    {displayEntries.map((entry: any) => {
+      const tid = entry.data.threadId;
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      return (
+        <EntryCard
+          id={entry.id}
+          title={entry.data.title}
+          date={entry.data.date}
+          author={entry.data.author}
+          source={entry.data.source}
+          description={entry.data.description}
+          isSatoshi={entry.data.isSatoshi}
+          lang={lang}
+          threadId={isThread ? tid : undefined}
+          threadCount={isThread ? msgCount : undefined}
+        />
+      );
+    })}
   </div>
 </BaseLayout>
 

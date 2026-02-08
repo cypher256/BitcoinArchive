@@ -23,6 +23,11 @@ const sorted = allEntries.sort((a, b) => a.data.date.getTime() - b.data.date.get
 const currentIndex = sorted.findIndex((e) => e.id === entry.id);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
+
+const threadId = entry.data.threadId;
+const threadMessages = threadId
+  ? allEntries.filter((e) => e.data.threadId === threadId).length
+  : 0;
 ---
 
 <BaseLayout
@@ -44,9 +49,17 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
       />
     </header>
 
-    <div class="entry-content">
+    <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
+
+    {threadId && threadMessages >= 2 && (
+      <div class="thread-banner">
+        <a href={localePath(`/entries/threads/${threadId}/`, lang)}>
+          View full thread ({threadMessages} messages) &rarr;
+        </a>
+      </div>
+    )}
 
     <SourceCitation
       sourceUrl={entry.data.sourceUrl}
@@ -103,5 +116,18 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   .nav-next {
     margin-left: auto;
     text-align: right;
+  }
+  .thread-banner {
+    margin: 1.5rem 0;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+  .thread-banner a {
+    font-weight: 600;
   }
 </style>

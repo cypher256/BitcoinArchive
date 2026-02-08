@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { useTranslations, formatDate, localePath } from '../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('entries');
+  const threadMap = new Map<string, typeof entries>();
+
+  for (const entry of entries) {
+    if (entry.data.threadId) {
+      const list = threadMap.get(entry.data.threadId) || [];
+      list.push(entry);
+      threadMap.set(entry.data.threadId, list);
+    }
+  }
+
+  return [...threadMap.entries()]
+    .filter(([_, msgs]) => msgs.length >= 2)
+    .map(([threadId, msgs]) => {
+      msgs.sort((a, b) => (a.data.threadPosition ?? 0) - (b.data.threadPosition ?? 0));
+      return {
+        params: { threadId },
+        props: {
+          messages: msgs,
+          threadTitle: msgs[0].data.threadTitle || msgs[0].data.title,
+        },
+      };
+    });
+}
+
+const lang = 'en';
+const t = useTranslations(lang);
+const { messages, threadTitle } = Astro.props;
+
+const rendered = await Promise.all(
+  messages.map(async (msg: any) => {
+    const { Content } = await render(msg);
+    return { entry: msg, Content };
+  })
+);
+
+const participants = [...new Set(messages.map((m: any) => m.data.author))];
+const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(messages[messages.length - 1].data.date, lang)}`;
+---
+
+<BaseLayout
+  title={`${threadTitle} — Thread - ${t('site.title')}`}
+  description={`Full conversation thread: ${threadTitle} (${messages.length} messages)`}
+  lang={lang}
+>
+  <article class="container">
+    <header class="thread-header">
+      <h1>{threadTitle}</h1>
+      <div class="thread-meta">
+        <span class="thread-count">{messages.length} messages</span>
+        <span class="thread-participants">{participants.join(', ')}</span>
+        <span class="thread-dates">{dateRange}</span>
+      </div>
+    </header>
+
+    <div class="conversation-thread">
+      {rendered.map(({ entry, Content }: any, i: number) => (
+        <>
+          {i > 0 && <div class="thread-connector" />}
+          <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'}>
+            <div class="message-header">
+              <span class="author-name">{entry.data.author}</span>
+              <span class="message-date">{formatDate(entry.data.date, lang)}</span>
+              <span class="message-source">
+                <a href={entry.data.sourceUrl} target="_blank" rel="noopener">Source</a>
+                {' · '}
+                <a href={localePath(`/entries/${entry.id}/`, lang)}>Permalink</a>
+              </span>
+            </div>
+            <div class="message-body">
+              <Content />
+            </div>
+          </div>
+        </>
+      ))}
+    </div>
+
+    <nav class="entry-nav">
+      <a href={localePath('/entries/', lang)}>
+        &larr; {t('nav.entries')}
+      </a>
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .thread-header {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .thread-header h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+  }
+  .thread-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+  .thread-count {
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+  .entry-nav {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+</style>

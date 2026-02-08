@@ -32,6 +32,7 @@ const entrySchema = z.object({
   threadPosition: z.number().optional(),
   inReplyTo: z.string().optional(),
   isSatoshi: z.boolean().default(false),
+  isConversation: z.boolean().default(false),
   secondarySources: z.array(z.object({
     name: z.string(),
     url: z.string().url(),

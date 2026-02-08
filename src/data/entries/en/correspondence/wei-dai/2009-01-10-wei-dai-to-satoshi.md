@@ -11,6 +11,9 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Wei Dai responds to Satoshi's Bitcoin announcement, expressing interest and suggesting improvements, noting that the concept is similar to his b-money proposal."
 isSatoshi: false
+threadId: "satoshi-wei-dai"
+threadTitle: "Satoshi ↔ Wei Dai Correspondence"
+threadPosition: 2
 tags:
   - "b-money"
   - "feedback"

@@ -44,7 +44,7 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
       />
     </header>
 
-    <div class="entry-content">
+    <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
 

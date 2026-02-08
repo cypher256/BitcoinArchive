@@ -13,6 +13,7 @@ description: "Satoshi comments on Laszlo's famous pizza purchase, noting that it
 isSatoshi: true
 threadId: "pizza-for-bitcoins"
 threadTitle: "Pizza for bitcoins?"
+threadPosition: 2
 tags:
   - "pizza"
   - "commerce"

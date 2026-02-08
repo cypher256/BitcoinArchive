@@ -11,6 +11,9 @@ participants:
     slug: "mike-hearn"
 description: "Satoshi corresponds with Mike Hearn, a Google engineer who became interested in Bitcoin. These emails reveal Satoshi's thinking about Bitcoin's future development."
 isSatoshi: true
+threadId: "satoshi-mike-hearn"
+threadTitle: "Satoshi ↔ Mike Hearn Correspondence"
+threadPosition: 1
 tags:
   - "mike-hearn"
   - "development"

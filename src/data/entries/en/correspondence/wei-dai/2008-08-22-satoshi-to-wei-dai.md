@@ -11,6 +11,9 @@ participants:
     slug: "wei-dai"
 description: "Satoshi's earliest known correspondence. He emails Wei Dai asking about the correct citation for b-money, revealing that he learned of b-money from Adam Back's reference."
 isSatoshi: true
+threadId: "satoshi-wei-dai"
+threadTitle: "Satoshi ↔ Wei Dai Correspondence"
+threadPosition: 1
 tags:
   - "b-money"
   - "earliest-correspondence"

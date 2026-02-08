@@ -11,6 +11,7 @@ description: "Laszlo Hanyecz posts his famous offer to pay 10,000 bitcoins for t
 isSatoshi: false
 threadId: "pizza-for-bitcoins"
 threadTitle: "Pizza for bitcoins?"
+threadPosition: 1
 tags:
   - "pizza-day"
   - "first-purchase"

@@ -11,6 +11,9 @@ participants:
     slug: "mike-hearn"
 description: "One of Satoshi's final known communications. He tells Mike Hearn that he has moved on to other projects and that Bitcoin is in good hands."
 isSatoshi: true
+threadId: "satoshi-mike-hearn"
+threadTitle: "Satoshi ↔ Mike Hearn Correspondence"
+threadPosition: 2
 tags:
   - "final-communication"
   - "mike-hearn"

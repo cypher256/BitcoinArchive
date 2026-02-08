@@ -11,19 +11,26 @@ interface Props {
   description: string;
   isSatoshi: boolean;
   lang: Lang;
+  threadId?: string;
+  threadCount?: number;
 }
 
-const { id, title, date, author, source, description, isSatoshi, lang } = Astro.props;
+const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount } = Astro.props;
 const t = useTranslations(lang);
 const sourceLabel = t(`source.${source}` as any) || source;
-const href = localePath(`/entries/${id}/`, lang);
+const href = threadId
+  ? localePath(`/entries/threads/${threadId}/`, lang)
+  : localePath(`/entries/${id}/`, lang);
 ---
 
-<article class="entry-card">
+<article class:list={["entry-card", { "entry-card-thread": !!threadId }]}>
   <a href={href} class="card-link">
     <div class="card-header">
       <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
       <span class="source-badge">{sourceLabel}</span>
+      {threadCount && threadCount >= 2 && (
+        <span class="thread-badge">{threadCount} messages</span>
+      )}
     </div>
     <h3 class="card-title">{title}</h3>
     <p class="card-author">
@@ -40,6 +47,10 @@ const href = localePath(`/entries/${id}/`, lang);
   }
   .entry-card:last-child {
     border-bottom: none;
+  }
+  .entry-card-thread {
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1rem;
   }
   .card-link {
     display: block;
@@ -66,6 +77,15 @@ const href = localePath(`/entries/${id}/`, lang);
     padding: 0.1em 0.5em;
     background: var(--color-source-bg);
     border-radius: 3px;
+  }
+  .thread-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background: var(--color-accent);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.75rem;
   }
   .card-title {
     margin: 0 0 0.25rem;

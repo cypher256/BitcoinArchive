@@ -114,6 +114,82 @@ hr {
   padding: 0 1.5rem;
 }
 
+/* Conversation / Thread messages */
+.conversation-thread .message {
+  position: relative;
+  margin: 0 0 0.25rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--color-border);
+  border-radius: 0 4px 4px 0;
+}
+
+.conversation-thread .message[data-author="satoshi"] {
+  border-left-color: var(--color-satoshi);
+  background: #fdf8f0;
+}
+
+.conversation-thread .message[data-author="other"] {
+  border-left-color: #5b7f95;
+  background: #f5f8fa;
+}
+
+.conversation-thread .message-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.conversation-thread .message-header .author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.conversation-thread .message[data-author="satoshi"] .message-header .author-name {
+  color: var(--color-satoshi);
+}
+
+.conversation-thread .message-header .message-date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.conversation-thread .message-header .message-source {
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
+.conversation-thread .message-body p:first-child {
+  margin-top: 0;
+}
+
+.conversation-thread .message-body p:last-child {
+  margin-bottom: 0;
+}
+
+.conversation-thread .message-body blockquote {
+  margin: 0.75em 0;
+  padding: 0.5em 1em;
+  border-left: 2px solid var(--color-border);
+  background: rgba(0,0,0,0.02);
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.conversation-thread .thread-connector {
+  width: 4px;
+  height: 0.25rem;
+  margin-left: 0;
+  background: var(--color-border);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   html { font-size: 15px; }
@@ -121,5 +197,8 @@ hr {
   h2 { font-size: 1.3rem; }
   .container, .container-wide {
     padding: 0 1rem;
+  }
+  .conversation-thread .message {
+    padding: 0.75rem 1rem;
   }
 }
