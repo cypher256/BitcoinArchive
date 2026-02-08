@@ -13,7 +13,7 @@ participants:
     slug: "craig-wright"
   - name: "Adam Back"
     slug: "adam-back"
-description: "COPA対Craig Wright裁判の第15日、Martti Malmiがビデオリンクで証言し、2009年5月から2011年2月にかけてサトシ・ナカモトと交わした260通のメール（14万語）を提出した。完全なメールアーカイブはGitHubで公開された。"
+description: "COPA対Craig Wright裁判の第13日、Martti Malmiがビデオリンクで証言し、2009年5月から2011年2月にかけてサトシ・ナカモトと交わした260通のメール（14万語）を提出した。完全なメールアーカイブはGitHubで公開された。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:
