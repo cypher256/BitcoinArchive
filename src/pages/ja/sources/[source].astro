@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import EntryCard from '../../../components/EntryCard.astro';
+import { useTranslations, getEntries, localePath } from '../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const { getEntries } = await import('../../../i18n/utils');
+  const entries = await getEntries('ja');
+  const sources = [...new Set(entries.map((e) => e.data.source))];
+  return sources.map((source) => ({
+    params: { source },
+    props: { source },
+  }));
+}
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const { source } = Astro.props;
+const entries = await getEntries(lang);
+const filtered = entries.filter((e) => e.data.source === source);
+const sourceLabel = t(`source.${source}` as any) || source;
+---
+
+<BaseLayout
+  title={`${sourceLabel} - ${t('site.title')}`}
+  description={`${sourceLabel}のエントリー一覧`}
+  lang={lang}
+  alternateEn={`https://cypher256.github.io/BitcoinArchive/sources/${source}/`}
+>
+  <div class="container">
+    <h1>{sourceLabel}</h1>
+    <p class="entry-count">{filtered.length} エントリー</p>
+    {filtered.map((entry) => (
+      <EntryCard
+        id={entry.id}
+        title={entry.data.title}
+        date={entry.data.date}
+        author={entry.data.author}
+        source={entry.data.source}
+        description={entry.data.description}
+        isSatoshi={entry.data.isSatoshi}
+        lang={lang}
+      />
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  h1 { margin-bottom: 0.25rem; }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+  }
+</style>
