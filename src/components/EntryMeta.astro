@@ -1,0 +1,52 @@
+---
+import { useTranslations, formatDate } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  date: Date;
+  author: string;
+  source: string;
+  sourceUrl: string;
+  isSatoshi: boolean;
+  lang: Lang;
+}
+
+const { date, author, source, sourceUrl, isSatoshi, lang } = Astro.props;
+const t = useTranslations(lang);
+const sourceLabel = t(`source.${source}` as any) || source;
+---
+
+<div class="entry-meta">
+  <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
+  <span class="meta-sep">&middot;</span>
+  <span class:list={['author', { satoshi: isSatoshi }]}>{author}</span>
+  <span class="meta-sep">&middot;</span>
+  <span class="source-badge">{sourceLabel}</span>
+</div>
+
+<style>
+  .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .meta-sep {
+    color: var(--color-border);
+  }
+  .author.satoshi {
+    color: var(--color-satoshi);
+    font-weight: 600;
+  }
+  .source-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background: var(--color-source-bg);
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+</style>

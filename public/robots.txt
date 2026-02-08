@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cypher256.github.io/BitcoinArchive/sitemap-index.xml

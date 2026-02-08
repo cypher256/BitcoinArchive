@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  title={`${t('nav.about')} - ${t('site.title')}`}
+  description="About the Bitcoin Archive project"
+  lang={lang}
+  alternateJa="https://cypher256.github.io/BitcoinArchive/ja/about/"
+>
+  <div class="container">
+    <h1>About Bitcoin Archive</h1>
+
+    <h2>Mission</h2>
+    <p>
+      Bitcoin Archive aims to be the world's most comprehensive and accurate archive of
+      Satoshi Nakamoto's complete conversations and related historical documents.
+    </p>
+
+    <h2>Scope</h2>
+    <ul>
+      <li><strong>Satoshi Nakamoto's writings</strong> — All emails, forum posts, and code comments</li>
+      <li><strong>Conversations</strong> — Exchanges with Hal Finney, Wei Dai, James A. Donald, and others</li>
+      <li><strong>Aftermath</strong> — Court testimonies, blog retrospectives, interviews, and media reports from people who interacted with Satoshi</li>
+    </ul>
+
+    <h2>Policy</h2>
+    <ul>
+      <li><strong>Historical facts only</strong> — No speculation, no opinion</li>
+      <li><strong>Sources required</strong> — Every entry must cite its original source with a verifiable URL</li>
+      <li><strong>Accuracy</strong> — Content is verified against original archives</li>
+    </ul>
+
+    <h2>Sources</h2>
+    <p>Content is sourced from publicly available archives:</p>
+    <ul>
+      <li><a href="https://www.metzdowd.com/pipermail/cryptography/" target="_blank" rel="noopener">Cryptography Mailing List (metzdowd.com)</a></li>
+      <li><a href="https://bitcointalk.org/" target="_blank" rel="noopener">BitcoinTalk Forum</a></li>
+      <li><a href="https://satoshi.nakamotoinstitute.org/" target="_blank" rel="noopener">Satoshi Nakamoto Institute</a></li>
+      <li><a href="https://p2pfoundation.ning.com/" target="_blank" rel="noopener">P2P Foundation</a></li>
+    </ul>
+
+    <h2>Contributing</h2>
+    <p>
+      This is an open source project. Contributions are welcome via
+      <a href="https://github.com/cypher256/BitcoinArchive" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </div>
+</BaseLayout>

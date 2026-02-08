@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import EntryMeta from '../../../components/EntryMeta.astro';
+import SourceCitation from '../../../components/SourceCitation.astro';
+import { getCollection, render } from 'astro:content';
+import { useTranslations, localePath } from '../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const jaEntries = await getCollection('entries_ja');
+  return jaEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const allEntries = await getCollection('entries_ja');
+const sorted = allEntries.sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const currentIndex = sorted.findIndex((e) => e.id === entry.id);
+const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
+const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
+---
+
+<BaseLayout
+  title={`${entry.data.title} - ${t('site.title')}`}
+  description={entry.data.description}
+  lang={lang}
+  alternateEn={`https://cypher256.github.io/BitcoinArchive/entries/${entry.id}/`}
+>
+  <article class="container">
+    <header class="entry-header">
+      <h1>{entry.data.title}</h1>
+      <EntryMeta
+        date={entry.data.date}
+        author={entry.data.author}
+        source={entry.data.source}
+        sourceUrl={entry.data.sourceUrl}
+        isSatoshi={entry.data.isSatoshi}
+        lang={lang}
+      />
+    </header>
+
+    <div class="entry-content">
+      <Content />
+    </div>
+
+    <SourceCitation
+      sourceUrl={entry.data.sourceUrl}
+      secondarySources={entry.data.secondarySources}
+      lang={lang}
+    />
+
+    <nav class="entry-nav">
+      {prev && (
+        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
+          &larr; {prev.data.title}
+        </a>
+      )}
+      {next && (
+        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
+          {next.data.title} &rarr;
+        </a>
+      )}
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .entry-header {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .entry-header h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+  }
+  .entry-content { line-height: 1.8; }
+  .entry-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+  .nav-prev, .nav-next { max-width: 45%; }
+  .nav-next { margin-left: auto; text-align: right; }
+</style>

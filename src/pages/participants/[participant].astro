@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EntryCard from '../../components/EntryCard.astro';
+import { useTranslations, getEntries } from '../../i18n/utils';
+
+export async function getStaticPaths() {
+  const { getEntries } = await import('../../i18n/utils');
+  const entries = await getEntries('en');
+  const slugs = new Set<string>();
+  const nameMap = new Map<string, string>();
+  for (const entry of entries) {
+    for (const p of entry.data.participants) {
+      slugs.add(p.slug);
+      nameMap.set(p.slug, p.name);
+    }
+  }
+  return Array.from(slugs).map((slug) => ({
+    params: { participant: slug },
+    props: { participantSlug: slug, participantName: nameMap.get(slug)! },
+  }));
+}
+
+const lang = 'en';
+const t = useTranslations(lang);
+const { participantSlug, participantName } = Astro.props;
+const entries = await getEntries(lang);
+const filtered = entries.filter((e) =>
+  e.data.participants.some((p) => p.slug === participantSlug)
+);
+---
+
+<BaseLayout
+  title={`${participantName} - ${t('site.title')}`}
+  description={`All entries involving ${participantName} in the Bitcoin Archive`}
+  lang={lang}
+>
+  <div class="container">
+    <h1>{participantName}</h1>
+    <p class="entry-count">{filtered.length} entries</p>
+    {filtered.map((entry) => (
+      <EntryCard
+        id={entry.id}
+        title={entry.data.title}
+        date={entry.data.date}
+        author={entry.data.author}
+        source={entry.data.source}
+        description={entry.data.description}
+        isSatoshi={entry.data.isSatoshi}
+        lang={lang}
+      />
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  h1 { margin-bottom: 0.25rem; }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+  }
+</style>

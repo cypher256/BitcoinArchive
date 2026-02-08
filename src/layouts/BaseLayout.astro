@@ -1,0 +1,39 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import type { Lang } from '../i18n/ui';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  canonicalUrl?: string;
+  alternateJa?: string;
+  alternateEn?: string;
+}
+
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      lang={lang}
+      canonicalUrl={canonicalUrl}
+      alternateJa={alternateJa}
+      alternateEn={alternateEn}
+    />
+  </head>
+  <body>
+    <Header lang={lang} />
+    <main>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

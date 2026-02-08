@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { useTranslations, getEntries, localePath } from '../../../i18n/utils';
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const entries = await getEntries('en');
+
+const sourceCounts = new Map<string, number>();
+for (const entry of entries) {
+  sourceCounts.set(entry.data.source, (sourceCounts.get(entry.data.source) || 0) + 1);
+}
+const sources = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout
+  title={`${t('nav.sources')} - ${t('site.title')}`}
+  description={t('site.description')}
+  lang={lang}
+  alternateEn="https://cypher256.github.io/BitcoinArchive/sources/"
+>
+  <div class="container">
+    <h1>{t('nav.sources')}</h1>
+    <ul class="source-list">
+      {sources.map(([source, count]) => (
+        <li>
+          <a href={localePath(`/sources/${source}/`, lang)}>
+            {t(`source.${source}` as any) || source}
+          </a>
+          <span class="count">({count})</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .source-list { list-style: none; padding: 0; }
+  .source-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.1rem;
+  }
+  .count { color: var(--color-text-muted); font-size: 0.9rem; }
+</style>

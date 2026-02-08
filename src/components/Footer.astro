@@ -1,0 +1,45 @@
+---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-text">{t('footer.description')}</p>
+    <p class="footer-links">
+      <a href="https://github.com/cypher256/BitcoinArchive" target="_blank" rel="noopener">
+        {t('footer.github')}
+      </a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    margin-top: 3rem;
+    padding: 2rem 0;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+  .footer-text {
+    margin: 0 0 0.5rem;
+  }
+  .footer-links {
+    margin: 0;
+  }
+  .footer-links a {
+    color: var(--color-text-muted);
+  }
+  .footer-links a:hover {
+    color: var(--color-text);
+  }
+</style>

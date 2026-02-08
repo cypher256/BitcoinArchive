@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+  canonicalUrl?: string;
+  alternateJa?: string;
+  alternateEn?: string;
+}
+
+const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn } = Astro.props;
+const siteUrl = 'https://cypher256.github.io/BitcoinArchive';
+const resolvedCanonical = canonicalUrl || Astro.url.href;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<link rel="canonical" href={resolvedCanonical} />
+{alternateEn && <link rel="alternate" hreflang="en" href={alternateEn} />}
+{alternateJa && <link rel="alternate" hreflang="ja" href={alternateJa} />}
+<link rel="alternate" hreflang="x-default" href={alternateEn || resolvedCanonical} />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content={resolvedCanonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content="Bitcoin Archive" />
+<meta property="og:locale" content={lang === 'ja' ? 'ja_JP' : 'en_US'} />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+
+<link rel="sitemap" href="/BitcoinArchive/sitemap-index.xml" />
+<link rel="icon" type="image/svg+xml" href="/BitcoinArchive/favicon.svg" />

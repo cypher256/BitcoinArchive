@@ -1,0 +1,70 @@
+---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  sourceUrl: string;
+  secondarySources?: { name: string; url: string }[];
+  lang: Lang;
+}
+
+const { sourceUrl, secondarySources, lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class="source-citation">
+  <h3>{t('entry.originalSource')}</h3>
+  <a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl}</a>
+  {secondarySources && secondarySources.length > 0 && (
+    <div class="secondary-sources">
+      <h4>{t('entry.secondarySources')}</h4>
+      <ul>
+        {secondarySources.map((s) => (
+          <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
+<style>
+  .source-citation {
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    background: var(--color-source-bg);
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+  .source-citation h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .source-citation a {
+    word-break: break-all;
+  }
+  .secondary-sources {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .secondary-sources h4 {
+    margin: 0 0 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+  .secondary-sources ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .secondary-sources li {
+    margin-bottom: 0.25rem;
+  }
+</style>

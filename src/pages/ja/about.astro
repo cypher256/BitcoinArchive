@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'ja';
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  title={`${t('nav.about')} - ${t('site.title')}`}
+  description="ビットコインアーカイブについて"
+  lang={lang}
+  alternateEn="https://cypher256.github.io/BitcoinArchive/about/"
+>
+  <div class="container">
+    <h1>ビットコインアーカイブについて</h1>
+
+    <h2>ミッション</h2>
+    <p>
+      ビットコインアーカイブは、サトシ・ナカモトの全会話と関連する歴史的文書を網羅する、
+      世界最大かつ最も正確なアーカイブを目指しています。
+    </p>
+
+    <h2>スコープ</h2>
+    <ul>
+      <li><strong>サトシ・ナカモトの著述</strong> — すべてのメール、フォーラム投稿、コードコメント</li>
+      <li><strong>会話</strong> — Hal Finney、Wei Dai、James A. Donald 等との往復書簡</li>
+      <li><strong>後日談</strong> — 裁判証言、ブログ回顧、インタビュー、メディア報道</li>
+    </ul>
+
+    <h2>方針</h2>
+    <ul>
+      <li><strong>史実のみ</strong> — 推測や意見は含みません</li>
+      <li><strong>出典必須</strong> — すべてのエントリーは検証可能なURLで原文ソースを引用</li>
+      <li><strong>正確性</strong> — コンテンツはオリジナルのアーカイブと照合検証</li>
+    </ul>
+
+    <h2>ソース</h2>
+    <p>コンテンツは公開されているアーカイブから収集しています：</p>
+    <ul>
+      <li><a href="https://www.metzdowd.com/pipermail/cryptography/" target="_blank" rel="noopener">暗号学メーリングリスト (metzdowd.com)</a></li>
+      <li><a href="https://bitcointalk.org/" target="_blank" rel="noopener">BitcoinTalk フォーラム</a></li>
+      <li><a href="https://satoshi.nakamotoinstitute.org/" target="_blank" rel="noopener">Satoshi Nakamoto Institute</a></li>
+      <li><a href="https://p2pfoundation.ning.com/" target="_blank" rel="noopener">P2P Foundation</a></li>
+    </ul>
+
+    <h2>コントリビュート</h2>
+    <p>
+      オープンソースプロジェクトです。
+      <a href="https://github.com/cypher256/BitcoinArchive" target="_blank" rel="noopener">GitHub</a>
+      からの貢献を歓迎します。
+    </p>
+  </div>
+</BaseLayout>

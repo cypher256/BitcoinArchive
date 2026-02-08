@@ -1,0 +1,43 @@
+---
+import { languages, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const { pathname } = Astro.url;
+const basePath = '/BitcoinArchive';
+
+function getAlternatePath(targetLang: Lang): string {
+  const pathWithoutBase = pathname.replace(basePath, '');
+  if (targetLang === 'ja') {
+    return `${basePath}/ja${pathWithoutBase === '' ? '/' : pathWithoutBase}`;
+  }
+  return `${basePath}${pathWithoutBase.replace(/^\/ja/, '') || '/'}`;
+}
+
+const targetLang: Lang = lang === 'en' ? 'ja' : 'en';
+const targetPath = getAlternatePath(targetLang);
+---
+
+<a href={targetPath} class="lang-switch" lang={targetLang}>
+  {languages[targetLang]}
+</a>
+
+<style>
+  .lang-switch {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+  .lang-switch:hover {
+    color: var(--color-text);
+    border-color: var(--color-text-muted);
+    text-decoration: none;
+  }
+</style>

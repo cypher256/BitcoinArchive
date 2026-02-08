@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import EntryCard from '../../../components/EntryCard.astro';
+import { useTranslations, getEntries } from '../../../i18n/utils';
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const jaEntries = await getEntries(lang);
+const enEntries = await getEntries('en');
+const entries = jaEntries.length > 0 ? jaEntries : enEntries;
+---
+
+<BaseLayout
+  title={`${t('nav.entries')} - ${t('site.title')}`}
+  description={t('site.description')}
+  lang={lang}
+  alternateEn="https://cypher256.github.io/BitcoinArchive/entries/"
+>
+  <div class="container">
+    <h1>{t('nav.entries')}</h1>
+    <p class="entry-count">{entries.length} entries</p>
+    {entries.map((entry) => (
+      <EntryCard
+        id={entry.id}
+        title={entry.data.title}
+        date={entry.data.date}
+        author={entry.data.author}
+        source={entry.data.source}
+        description={entry.data.description}
+        isSatoshi={entry.data.isSatoshi}
+        lang={lang}
+      />
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  h1 { margin-bottom: 0.25rem; }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+  }
+</style>

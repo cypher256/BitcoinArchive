@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations, getEntries, localePath } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+const entries = await getEntries(lang);
+
+const participantCounts = new Map<string, { name: string; slug: string; count: number }>();
+for (const entry of entries) {
+  for (const p of entry.data.participants) {
+    const existing = participantCounts.get(p.slug);
+    if (existing) {
+      existing.count++;
+    } else {
+      participantCounts.set(p.slug, { name: p.name, slug: p.slug, count: 1 });
+    }
+  }
+}
+const participants = Array.from(participantCounts.values()).sort((a, b) => b.count - a.count);
+---
+
+<BaseLayout
+  title={`${t('nav.participants')} - ${t('site.title')}`}
+  description={t('site.description')}
+  lang={lang}
+  alternateJa="https://cypher256.github.io/BitcoinArchive/ja/participants/"
+>
+  <div class="container">
+    <h1>{t('nav.participants')}</h1>
+    <ul class="participant-list">
+      {participants.map((p) => (
+        <li>
+          <a href={localePath(`/participants/${p.slug}/`, lang)}>
+            {p.name}
+          </a>
+          <span class="count">({p.count} entries)</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .participant-list {
+    list-style: none;
+    padding: 0;
+  }
+  .participant-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.1rem;
+  }
+  .count {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+</style>
