@@ -24,16 +24,16 @@ tags:
   - "adam-back"
   - "court-testimony"
 secondarySources:
-  - name: "Martti Malmiのサトシメールアーカイブ（GitHub）"
+  - name: "Martti Malmi's Satoshi email archive (GitHub)"
     url: "https://mmalmi.github.io/satoshi/"
-  - name: "Protos — COPA対Craig Wright裁判、新公開のサトシメールを分析"
+  - name: "Protos — COPA v. Craig Wright trial analyzes newly published Satoshi emails"
     url: "https://protos.com/copa-v-craig-wright-trial-analyzes-newly-published-satoshi-emails/"
-  - name: "CryptoTimes — ビットコインの象徴、MalmiとBackが証言台に"
+  - name: "CryptoTimes — Bitcoin Icons Malmi and Back Take the Stand"
     url: "https://www.cryptotimes.io/2024/02/23/bitcoin-icons-malmi-and-back-take-the-stand-in-wright-trial/"
 translationStatus: complete
 ---
 
-2024年2月21日、英国高等法院でのCOPA対Craig Wright裁判の第15日、Martti Malmiがビデオリンクで証言した。
+2024年2月21日、英国高等法院でのCOPA対Craig Wright裁判の第13日、Martti Malmiがビデオリンクで証言した。
 
 Malmi — bitcoin.orgの最初の管理者であり、サトシの最初期の協力者 — は、サトシ・ナカモトとの260通のメールを証拠として提出した。メールは合計約14万語に及び、2009年5月から2011年2月までの期間をカバーしていた。
 

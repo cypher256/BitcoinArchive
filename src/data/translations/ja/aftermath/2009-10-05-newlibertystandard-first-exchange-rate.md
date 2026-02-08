@@ -17,7 +17,7 @@ tags:
   - "mining"
   - "electricity-cost"
 secondarySources:
-  - name: "History Heist — 初の為替レート"
+  - name: "History Heist — First Exchange Rate"
     url: "https://historyheist.com/new-liberty-standard-publishes-first-exchange-rate-on-bitcoin-of-1309-03-btc-to-one-u-s-dollar-0-0008btc/"
 translationStatus: complete
 ---

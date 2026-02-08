@@ -44,7 +44,7 @@ Satoshi replied: "Thanks, I wasn't aware of the b-money page, but my ideas start
 
 Back opened the attached whitepaper, gave it a cursory glance, typed back a brief response suggesting Wei Dai's b-money, and closed his laptop. He didn't begin actively using or promoting Bitcoin until around 2013.
 
-**COPA trial testimony (February 22, 2024):**
+**COPA trial testimony (February 21, 2024):**
 
 During the COPA v. Craig Wright trial, Back testified in person at the London High Court and submitted the complete five-email chain between himself and Satoshi as evidence. The emails — dating from August 20, 2008 onward — were made public for the first time.
 
