@@ -1,0 +1,34 @@
+---
+title: "Re: Idea for file hosting and proxy services"
+date: 2010-03-24T18:02:55.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=83.msg810#msg810"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"Idea for file hosting and proxy services\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/97/"
+---
+
+Mihalism Multi Host is a popular open source PHP file hosting server.
+
+It's geared toward image hosting, but I think by increasing the file size limit and liberalising the allowed file extensions, it could just as easily be used for general file upload hosting.  They need the limits to keep it reasonable as a free service, but if we bolt on a Bitcoin payment mechanism, the limits could be relaxed.
+
+It doesn't have a bunch of client side scripting or anti-embedding junk to rip out.  It generates standard links that work normally.
+
+There's a turnover churn in these free hosting sites.  Small sites can give free image hosting, but once one starts getting popular, it gets too swamped with moochers using them for free bandwidth.  Any site that gets well known has to become more aggressively pay-naggy to cover bandwidth costs.  It's a perfect example of a service where the needed price point is in the no-man's-land between just a little too expensive to be free, but too cheap for most users to take the trouble of a conventional payment.  It's in the gap between 0 and 19.95.  The best they can do is try to maybe get 1 out of 1000 users to pay 9.95, but that has 999/1000 users treated like freeloaders.  It can't really be advertising supported because the images are embedded in other sites and downloaded without going to the hosting site.
+
+An example of a site running the software:
+[http://www.imagez.ws/](http://www.imagez.ws/)
+
+Forum:
+[http://www.mihalism.net/](http://www.mihalism.net/)
+
+Download:
+[http://code.google.com/p/mihalismmh/](http://code.google.com/p/mihalismmh/)
+
+What do you think?  If I made a Bitcoin payment integration for this, would anyone be interested in running it?  It might be the first fully automated service available to buy with Bitcoins.  The advantage it could offer over the free services is general file upload hosting of large files without making downloading users go to the upload site and jump through hoops.  It would give a normal link directly to the file.

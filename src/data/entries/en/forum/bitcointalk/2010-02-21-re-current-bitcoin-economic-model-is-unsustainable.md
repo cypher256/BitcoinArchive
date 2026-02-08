@@ -1,0 +1,25 @@
+---
+title: "Re: Current Bitcoin economic model is unsustainable"
+date: 2010-02-21T05:44:24.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=57.msg415#msg415"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"Current Bitcoin economic model is unsustainable\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/"
+---
+
+Excellent analysis, xc.
+
+A rational market price for something that is expected to increase in value will already reflect the present value of the expected future increases.  In your head, you do a probability estimate balancing the odds that it keeps increasing.
+
+In the absence of a market to establish the price, NewLibertyStandard's estimate based on production cost is a good guess and a helpful service (thanks).  The price of any commodity tends to gravitate toward the production cost.  If the price is below cost, then production slows down.  If the price is above cost, profit can be made by generating and selling more.  At the same time, the increased production would increase the difficulty, pushing the cost of generating towards the price.
+
+In later years, when new coin generation is a small percentage of the existing supply, market price will dictate the cost of production more than the other way around.
+
+At the moment, generation effort is rapidly increasing, suggesting people are estimating the present value to be higher than the current cost of production.

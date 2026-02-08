@@ -1,0 +1,23 @@
+---
+title: "Re: A newb's test - anyone want to buy a picture for $1?"
+date: 2010-01-29T00:22:13.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=25.msg173#msg173"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"A newb's test - anyone want to buy a picture for $1?\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/37/"
+---
+
+The recommended ways to do a payment for an order:
+1) The merchant has a static IP, the customer sends to it with a comment.
+2) The merchant creates a new bitcoin address, gives it to the customer, the customer sends to that address.  This will be the standard way for website software to do it.
+
+RSA vs ECDSA: it's not the size of the executable but the size of the data.  I thought it would be impractical if the block chain, bitcoin addresses, disk space and bandwidth requirements were all an order of magnitude bigger.  Also, even if using RSA for messages, it would still make sense to do all the bitcoin network with ECDSA and use RSA in parallel for only the message part.  In that case, everything that's been implemented up to now would be implemented exactly as it has been.
+
+We can figure out the best way to do this much later.  It could use a separate (maybe existing) e-mail or IM infrastructure to pass messages, and instead of RSA, maybe just put a hash of the message in the transaction to prove that the transaction is for the order described in the message.  The message would have to include a salt so nobody could brute force the hash to reveal a short message.

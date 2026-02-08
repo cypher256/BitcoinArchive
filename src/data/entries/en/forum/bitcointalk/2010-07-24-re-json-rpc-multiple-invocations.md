@@ -1,0 +1,35 @@
+---
+title: "Re: JSON-RPC Multiple Invocations"
+date: 2010-07-24T00:59:08.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=528.msg5416#msg5416"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"JSON-RPC Multiple Invocations\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/261/"
+---
+
+Obviously it's a bug that it repeats the header.
+
+I was trying to follow the 1.0 spec: [http://json-rpc.org/wiki/specification](http://json-rpc.org/wiki/specification)   It called for multiple invocation.
+
+I think they mean it's like this, but I'm not sure:
+
+Post:
+{"method": "postMessage", "params": ["Hello all!"], "id": 99}
+{"method": "postMessage", "params": ["I have a question:"], "id": 101}
+
+Reply:
+{"result": 1, "error": null, "id": 99}
+{"result": 1, "error": null, "id": 101}
+
+I can't remember where I think I saw that it's supposed to send back HTTP status 500 for an error reply.  If it contains multiple responses and one is an error, I wonder if that makes the status 500 for the whole thing, I guess so.  Maybe it should always return 200.  I think someone sounded like the 500 might be causing a problem.
+
+This probably gets fixed after 0.3.3.  Until then, just use single invocation.  I wonder if any JSON-RPC package even supports multiple invocation, probably not.
+
+It would be nice if we could pin down better how multiple-invocation is supposed to work, if at all, before trying to fix it, and whether returning HTTP status 500 for error response is right.

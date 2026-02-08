@@ -1,0 +1,26 @@
+---
+title: "Re: Security"
+date: 2010-07-10T12:58:02.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=240.msg2132#msg2132"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"Security\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/176/"
+---
+
+I'll start thinking about how to do this.
+
+At the moment, you can kind of use -connect.  You can use -connect to make it connect to local computers on your LAN, like -connect=192.168.0.100.  If you start it out blank and don't let it connect to the main network, the difficulty is still at the original low difficulty.  If you've port-forwarded though, then outside nodes might still connect inward to you.
+
+With -connect it still uses IRC, do you think it shouldn't get on IRC when you're telling it to only connect to specific nodes with -connect?  The main scenario for -connect is where you have a server farm, with two connected to the network and the rest connected to the first two.  In that case, you wouldn't want the -connect computers on IRC.
+
+void ThreadIRCSeed(void* parg)
+{
+    if (mapArgs.count("-connect"))
+        return;

@@ -1,0 +1,19 @@
+---
+title: "Re: overflow bug SERIOUS"
+date: 2010-08-16T22:54:55.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9841#msg9841"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"overflow bug SERIOUS\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/395/"
+---
+
+Un-upgraded nodes have the correct chain most of the time, but they are still trying to include the overflow transaction in every block, so they're continually trying to fork and generate invalid blocks.  If an old version node is restarted, its transaction pool is emptied, so it may generate valid blocks for a while until the transaction gets broadcast again.  0.3.9 and lower nodes still must upgrade.
+
+The SVN now has the code we needed to automatically reorg the block chain without having to delete the blk*.dat files manually.  I knew I couldn't write that code fast and carefully enough yesterday, so I went with the quick manual option.

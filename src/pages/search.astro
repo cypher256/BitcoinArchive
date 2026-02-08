@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  title={`${t('nav.search')} - ${t('site.title')}`}
+  description="Search the Bitcoin Archive"
+  lang={lang}
+  alternateJa="https://cypher256.github.io/BitcoinArchive/ja/search/"
+>
+  <div class="container">
+    <h1>{t('nav.search')}</h1>
+    <div id="search"></div>
+  </div>
+</BaseLayout>
+
+<link href="/BitcoinArchive/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script is:inline src="/BitcoinArchive/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      baseUrl: '/BitcoinArchive/',
+    });
+  });
+</script>
+
+<style>
+  #search {
+    margin-top: 1rem;
+  }
+</style>
