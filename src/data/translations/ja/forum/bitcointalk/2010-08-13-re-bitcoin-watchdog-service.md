@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Watchdog Service"
+title: "Re: Bitcoin監視サービス"
 date: 2010-08-13T17:09:27.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=691.msg9041#msg9041"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"ビットコイン Watchdog Service\"."
+description: "Satoshi NakamotoがIRCブートストラップは0.3.0以降完全に冗長であり、シードノードからのブートストラップが可能であると説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,10 +15,10 @@ secondarySources:
 threadId: "bt-bitcoin-watchdog-service"
 threadTitle: "Bitcoin Watchdog Service"
 threadPosition: 2
-translationStatus: pending
+translationStatus: complete
 ---
 
-QuoteBut there will be no irc server to bootstrap from.
-Which doesn't matter because you can't access sourceforge to download the software either.
+Quoteしかし、ブートストラップに使うIRCサーバーがなくなります。
+SourceForgeにアクセスしてソフトウェアをダウンロードすることもできないので、それは関係ありません。
 
-If you've ever been connected before, you don't need IRC to bootstrap anymore.  Even if you haven't, you can bootstrap from seed nodes.  IRC is completely redundant since 0.3.0.
+以前に一度でも接続したことがあれば、ブートストラップにIRCはもう必要ありません。接続したことがなくても、シードノードからブートストラップできます。IRCは0.3.0以降完全に冗長です。

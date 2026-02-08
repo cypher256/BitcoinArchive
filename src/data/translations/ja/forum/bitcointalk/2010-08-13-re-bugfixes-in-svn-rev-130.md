@@ -1,5 +1,5 @@
 ---
-title: "Re: Bugfixes in SVN rev 130"
+title: "Re: SVN rev 130のバグ修正"
 date: 2010-08-13T03:15:23.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=795.msg8960#msg8960"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Bugfixes in SVN rev 130\"."
+description: "Satoshi Nakamotoが-paytxfeeスイッチの用途を説明し、必要な場合にトランザクション確認の優先度を上げるためのものであると解説。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,11 +15,11 @@ secondarySources:
 threadId: "bt-bugfixes-in-svn-rev-130"
 threadTitle: "Bugfixes in SVN rev 130"
 threadPosition: 2
-translationStatus: pending
+translationStatus: complete
 ---
 
-No, that's not what it is.
+いいえ、そういうことではありません。
 
--paytxfee allows you to include a transaction fee with your transactions.  If transaction confirmations become slow, you can get priority by using "-paytxfee=0.01".  Any transactions you send would cost an extra 0.01.  There's no reason to use more than 0.01.
+-paytxfeeはトランザクションにトランザクション手数料を含めることを可能にします。トランザクションの確認が遅くなった場合、「-paytxfee=0.01」を使用して優先度を上げることができます。送信するすべてのトランザクションに0.01が追加でかかります。0.01以上を使う理由はありません。
 
-It's just there in case we need it.  It probably won't be needed, and it can be explained more if we do.
+必要な場合に備えてあるだけです。おそらく必要にはならないでしょうし、必要になった場合はもっと詳しく説明できます。

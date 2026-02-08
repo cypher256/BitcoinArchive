@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNS and Generalizing Bitcoin"
+title: "Re: BitDNSとBitcoinの汎用化"
 date: 2010-12-09T22:46:50.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28715#msg28715"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"BitDNS and Generalizing ビットコイン\"."
+description: "スレッド「BitDNSとビットコインの汎用化」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,18 +15,18 @@ secondarySources:
 threadId: "bt-bitdns-and-generalizing-bitcoin"
 threadTitle: "BitDNS and Generalizing Bitcoin"
 threadPosition: 2
-translationStatus: pending
+translationStatus: complete
 ---
 
-[Quote from: nanotube on December 09, 2010, 09:20:40 PM](https://bitcointalk.org/index.php?topic=1790.msg28700#msg28700)seems that the miner would have to basically do "extra work". and if there's no reward from the bitdns mining from the extra work (which of course, slows down the main bitcoin work), what would be a miner's incentive to include bitdns (and whatever other side chains) ?
-The incentive is to get the rewards from the extra side chains also for the same work.
+[Quote from: nanotube on December 09, 2010, 09:20:40 PM](https://bitcointalk.org/index.php?topic=1790.msg28700#msg28700)マイナーは基本的に「余分な作業」をしなければならないようです。そして、その余分な作業（もちろん、メインのbitcoin作業を遅くします）からbitdnsマイニングの報酬がないなら、マイナーがbitdns（およびその他のサイドチェーン）を含めるインセンティブは何でしょうか？
+インセンティブは、同じ作業で追加のサイドチェーンからも報酬を得ることです。
 
-While you are generating bitcoins, why not also get free domain names for the *same work*?
+ビットコインを生成している間に、*同じ作業*で無料のドメイン名も得られるのに、なぜそうしないのですか？
 
-If you currently generate 50 BTC per week, now you could get 50 BTC and some domain names too.
+現在週に50 BTCを生成しているなら、50 BTCに加えていくつかのドメイン名も得られます。
 
-You have one piece of work.  If you solve it, it will solve a block from both Bitcoin and BitDNS.  In concept, they're tied together by a Merkle Tree.  To hand it in to Bitcoin, you break off the BitDNS branch, and to hand it in to BitDNS, you break off the Bitcoin branch.
+1つの作業単位があります。それを解けば、BitcoinとBitDNSの両方のブロックを解決します。概念的には、Merkle Treeで結び付けられています。Bitcoinに提出するにはBitDNSのブランチを切り離し、BitDNSに提出するにはBitcoinのブランチを切り離します。
 
-In practice, to retrofit it for Bitcoin, the BitDNS side would have to have maybe ~200 extra bytes, but that's not a big deal.  You've been talking about 50 domains per block, which would dwarf that little 200 bytes per block for backward compatibility.  We could potentially schedule a far in future block when Bitcoin would upgrade to a modernised arrangement with the Merkle Tree on top, if we care enough about saving a few bytes.
+実際には、Bitcoinに後付けするために、BitDNS側にはおそらく約200バイトの余分が必要ですが、大したことではありません。1ブロックあたり50ドメインの話をしていますが、後方互換性のための1ブロックあたり200バイトは些細なものです。十分に気にするなら、将来のブロックでBitcoinがMerkle Treeを上位に持つ近代化された配置にアップグレードするスケジュールを組むこともできます。
 
-Note that the chains are below this new Merkle Tree.  That is, each of Bitcoin and BitDNS have their own chain links inside their blocks.  This is inverted from the common timestamp server arrangement, where the chain is on top and then the Merkle Tree, because that creates one common master chain.  This is two timestamp servers not sharing a chain.
+チェーンはこの新しいMerkle Treeの下にあることに注意してください。つまり、BitcoinとBitDNSそれぞれが自分のブロック内に独自のチェーンリンクを持ちます。これは一般的なタイムスタンプサーバーの配置とは逆で、通常はチェーンが上にあってその下にMerkle Treeがあり、1つの共通のマスターチェーンを作ります。これはチェーンを共有しない2つのタイムスタンプサーバーです。

@@ -1,5 +1,5 @@
 ---
-title: "Re: HTTP status codes from the JSON-RPC api"
+title: "Re: JSON-RPC APIからのHTTPステータスコード"
 date: 2010-09-06T21:21:21.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=969.msg12130#msg12130"
@@ -7,20 +7,20 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"HTTP status codes from the JSON-RPC api\"."
+description: "スレッド「JSON-RPC APIからのHTTPステータスコード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/435/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-This is in SVN rev 147.
+これはSVN rev 147に入っています。
 
-This is more standard, and although json-rpc 1.0 didn't specify the format of error objects, it did specify that they would be *objects* not strings or other values, so we needed to change this to be correct.  The code/message members have become standard in later json-rpc specs.
+これはより標準的であり、json-rpc 1.0ではエラーオブジェクトの形式を指定していませんでしたが、文字列やその他の値ではなく*オブジェクト*であることは指定していたため、正しくするためにこの変更が必要でした。code/messageメンバーは後のjson-rpc仕様で標準になっています。
 
-If you have code that checks the error and expects a string, you'll need to change it.  When there is an error, the error member is now an object not a string.
+エラーを検査して文字列を期待するコードがある場合は、変更が必要です。エラーがある場合、エラーメンバーは文字列ではなくオブジェクトになりました。
 
-Also in SVN rev 147:
-- The command line json-rpc returns the error code as its exit code.  Exit codes can only be 0-255 on unix, so it's abs(code)%256.
-- The "backupwallet <destination>" command that was discussed in another thread.  It locks the wallet and copies it, so you can be sure you get a correct copy.
+SVN rev 147にはさらに：
+- コマンドラインjson-rpcがエラーコードを終了コードとして返します。unixでは終了コードは0-255のみなので、abs(code)%256です。
+- 別のスレッドで議論された「backupwallet <destination>」コマンド。ウォレットをロックしてコピーするため、正しいコピーを確実に取得できます。

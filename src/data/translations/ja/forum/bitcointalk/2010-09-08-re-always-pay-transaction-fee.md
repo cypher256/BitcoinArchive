@@ -1,5 +1,5 @@
 ---
-title: "Re: Always pay transaction fee?"
+title: "Re: 常にトランザクション手数料を支払う？"
 date: 2010-09-08T17:30:14.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=994.msg12237#msg12237"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Always pay transaction fee?\"."
+description: "スレッド「常にトランザクション手数料を支払う？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,19 +15,19 @@ secondarySources:
 threadId: "bt-always-pay-transaction-fee"
 threadTitle: "Always pay transaction fee?"
 threadPosition: 2
-translationStatus: pending
+translationStatus: complete
 ---
 
-Currently, paying a fee is controlled manually with the -paytxfee switch.  It would be very easy to make the software automatically check the size of recent blocks to see if it should pay a fee.  We're so far from reaching the threshold, we don't need that yet.  It's a good idea to see how things go with controlling it manually first anyway.
+現在、手数料の支払いは-paytxfeeスイッチで手動制御されています。最近のブロックのサイズを自動的にチェックして手数料を支払うべきか判断させるのは非常に簡単です。閾値に到達するにはまだほど遠いので、まだ必要ありません。いずれにせよ、まず手動制御で状況を見るのは良いアイデアです。
 
-It's not a big deal if we reach the threshold.  Free transactions would just take longer to get into a block.
+閾値に到達しても大したことではありません。無料トランザクションがブロックに入るまでに時間がかかるだけです。
 
-I did a rough tally of 4000 blocks from around 74000-78000.  This is excluding the block reward transactions:
+74000から78000あたりの4000ブロックの大まかな集計を行いました。ブロック報酬トランザクションを除いて：
 
-There were average 2 transactions per block, 17 transactions per hour, 400 transactions per day.
+ブロックあたり平均2トランザクション、1時間あたり17トランザクション、1日あたり400トランザクションでした。
 
-Average transaction bytes per block was 428 bytes, or 214 bytes per transaction.
+ブロックあたりの平均トランザクションバイト数は428バイト、つまりトランザクションあたり214バイトでした。
 
-The current threshold is 200KB per block, or about 1000 transactions per block.  I think it should be lowered to 50KB per block.  That would still be more than 100 times the average transactions per block.
+現在の閾値はブロックあたり200KB、つまりブロックあたり約1000トランザクションです。ブロックあたり50KBに下げるべきだと思います。それでもブロックあたりの平均トランザクション数の100倍以上です。
 
-The threshold can easily be changed in the future.  We can decide to increase it when the time comes.  It's a good idea to keep it lower as a circuit breaker and increase it as needed.  If we hit the threshold now, it would almost certainly be some kind of flood and not actual use.  Keeping the threshold lower would help limit the amount of wasted disk space in that event.
+閾値は将来簡単に変更できます。時が来たら増やすことを決められます。回路遮断器として低く保ち、必要に応じて増やすのは良いアイデアです。今閾値に到達するなら、ほぼ確実に何らかのフラッドであり実際の使用ではありません。閾値を低く保つことで、そのような場合の無駄なディスクスペースの量を制限できます。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Automated nightly builds"
+title: "Re: 自動ナイトリービルド"
 date: 2010-12-09T18:28:45.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=644.msg28643#msg28643"
@@ -7,14 +7,14 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Automated nightly builds\"."
+description: "スレッド「自動ナイトリービルド」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/531/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-Thanks for setting this up Cdecker.  
+Cdeckerさん、これを設定してくれてありがとうございます。
 
-Is there any chance of getting it to build the GUI version also?  If this is Ubuntu, if you get wxWidgets 2.9.0 it should just be a matter of following the steps in build-unix.txt exactly.  Is this an environment where you can build wxWidgets once and leave it there and just keep using it?
+GUI版もビルドできる可能性はありますか？Ubuntuであれば、wxWidgets 2.9.0を入手すれば、build-unix.txtの手順に正確に従うだけで済むはずです。wxWidgetsを一度ビルドしてそのまま使い続けられる環境ですか？

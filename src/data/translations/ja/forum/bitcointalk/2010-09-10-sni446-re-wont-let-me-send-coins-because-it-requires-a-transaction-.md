@@ -1,5 +1,5 @@
 ---
-title: "Re: Won't let me send coins because it requires a transaction fee?"
+title: "Re: トランザクション手数料が必要なためコインを送れない？"
 date: 2010-09-10T00:46:37.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1013.msg12342#msg12342"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Won't let me send coins because it requires a transaction fee?\"."
+description: "スレッド「トランザクション手数料が必要なためコインを送れない？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,11 +15,11 @@ secondarySources:
 threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
 threadTitle: "Won't let me send coins because it requires a transaction fee?"
 threadPosition: 2
-translationStatus: pending
+translationStatus: complete
 ---
 
-I think I know what happened.  Doubleclick on the generated transaction.  It probably has a sub-0.01 transaction fee in it.
+何が起きたかわかったと思います。生成されたトランザクションをダブルクリックしてください。おそらく0.01未満のトランザクション手数料が含まれています。
 
-Someone has been paying a 0.00000010 transaction fee.  I don't think you can even set that with -paytxfee, I think you'd have to modify the code to do it.  Your generated block is worth 50.00000010, so when you try to send the whole thing you have 0.00000010 left over for the change, which triggers the dust spam 0.01 fee.
+誰かが0.00000010のトランザクション手数料を支払っています。-paytxfeeでそれを設定できるとは思えません。おそらくコードを修正する必要があるでしょう。あなたの生成されたブロックは50.00000010の価値があるため、全額を送信しようとするとお釣りに0.00000010が残り、それがダストスパムの0.01手数料をトリガーします。
 
-It would normally be harmless except in this corner case.  I should add a special case to CreateTransaction to handle this.
+このコーナーケースを除けば通常は無害です。これを処理するためにCreateTransactionに特別なケースを追加すべきです。

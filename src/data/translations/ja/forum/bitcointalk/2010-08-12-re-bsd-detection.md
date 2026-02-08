@@ -1,5 +1,5 @@
 ---
-title: "Re: BSD detection"
+title: "Re: BSD検出"
 date: 2010-08-12T00:02:06.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=790.msg8814#msg8814"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"BSD detection\"."
+description: "Satoshi Nakamotoが__BSD__の使用を廃止し、sys/param.hを使用するよう変更。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,10 +15,10 @@ secondarySources:
 threadId: "bt-bsd-detection"
 threadTitle: "BSD detection"
 threadPosition: 1
-translationStatus: pending
+translationStatus: complete
 ---
 
-[Quote from: dkaparis on August 11, 2010, 11:00:16 PM](https://bitcointalk.org/index.php?topic=790.msg8807#msg8807)There is this piece of code in headers.h:
+[Quote from: dkaparis on August 11, 2010, 11:00:16 PM](https://bitcointalk.org/index.php?topic=790.msg8807#msg8807)headers.hにこのようなコードがあります：
 
 #ifdef __WXMAC_OSX__
 #define __WXMAC__ 1
@@ -27,11 +27,11 @@ translationStatus: pending
 #endif
 #endif
 
-That code was a bad idea anyway, I'm deleting it.  Any Mac code should only use __WXMAC_OSX__, not __WXMAC__ or __WXOSX__, and we should stop using __BSD__.
+そのコードはそもそもよくないアイデアだったので、削除します。Mac用のコードは__WXMAC_OSX__のみを使用すべきで、__WXMAC__や__WXOSX__は使わず、__BSD__の使用もやめるべきです。
 
 Quote
 #if (defined(__unix__) || defined(unix)) && !defined(USG)
 #include <sys/param.h>
 #endif
 
-Will that definitely cause BSD to be defined on Mac?
+これでMacでBSDが確実に定義されますか？

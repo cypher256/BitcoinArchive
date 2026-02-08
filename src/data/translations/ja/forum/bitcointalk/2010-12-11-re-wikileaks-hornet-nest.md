@@ -1,5 +1,5 @@
 ---
-title: "Re: PC World Article on Bitcoin"
+title: "Re: PC Worldのビットコインに関する記事"
 date: 2010-12-11T23:39:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "One of Satoshi's last posts. After WikiLeaks begins accepting ビットコイン donations, Satoshi expresses concern that ビットコイン has 'kicked the hornet's nest' too early."
+description: "サトシの最後の投稿の1つ。WikiLeaksがビットコインの寄付を受け付け始めた後、サトシはビットコインが時期尚早に「蜂の巣をつついた」ことへの懸念を表明。"
 isSatoshi: true
 tags:
   - "wikileaks"
@@ -17,7 +17,7 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/539/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-It would have been nice to get this attention in any other context. WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us.
+この注目を他のどんな文脈で得られたら良かったのに。WikiLeaksが蜂の巣をつついてしまい、大群がこちらに向かっています。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Watchdog Service"
+title: "Re: Bitcoin監視サービス"
 date: 2010-08-12T21:34:44.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=691.msg8922#msg8922"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"ビットコイン Watchdog Service\"."
+description: "Satoshi NakamotoがISPネットワーク切断時のブロック生成への影響を分析し、ブロック受信頻度の監視を支持。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,11 +15,11 @@ secondarySources:
 threadId: "bt-bitcoin-watchdog-service"
 threadTitle: "Bitcoin Watchdog Service"
 threadPosition: 1
-translationStatus: pending
+translationStatus: complete
 ---
 
-True, there would probably be someone with a dial-up modem or satellite dish internet.  Rarer would be someone who has both that and the wired internet that has the outage, but if it's a big enough segment to matter, out of a million people there's bound to be a multi-home geek.
+確かに、ダイヤルアップモデムや衛星インターネットを持っている人はいるでしょう。それと障害が発生する有線インターネットの両方を持っている人はもっと珍しいですが、十分な規模のセグメントであれば、100万人中にマルチホームのギークが必ずいるでしょう。
 
-ISP network cuts are just your local area.  If you still have communication with the rest of your area, it would probably be something like 1/1000 of the world or less.  Block generation in the segment would take several hours per block.
+ISPネットワークの切断はローカルエリアだけの問題です。自分のエリアの残りとまだ通信できるなら、おそらく世界の1/1000かそれ以下でしょう。セグメント内のブロック生成は1ブロックあたり数時間かかるでしょう。
 
-I favour the plan to monitor if the frequency of blocks received drops too slow.  That covers a large range of possibilities.
+受信ブロックの頻度が遅くなりすぎていないか監視する計画を支持します。それは幅広い可能性をカバーします。
