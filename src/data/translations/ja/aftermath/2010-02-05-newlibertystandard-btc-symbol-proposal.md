@@ -18,9 +18,9 @@ tags:
   - "currency-code"
   - "bitcointalk"
 secondarySources:
-  - name: "Bitcoin Wiki — ビットコイン記号"
+  - name: "Bitcoin Wiki — Bitcoin symbol"
     url: "https://en.bitcoin.it/wiki/Bitcoin_symbol"
-  - name: "Bitcoin Magazine — ビットコインロゴの歴史とシンボリズム"
+  - name: "Bitcoin Magazine — History and Symbolism Behind Bitcoin's Logo"
     url: "https://bitcoinmagazine.com/culture/the-history-and-symbolism-behind-bitcoins-logo"
 translationStatus: complete
 ---

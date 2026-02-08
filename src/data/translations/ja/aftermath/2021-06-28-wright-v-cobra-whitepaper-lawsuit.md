@@ -22,9 +22,9 @@ tags:
   - "copyright"
   - "lawsuit"
 secondarySources:
-  - name: "CoinTelegraph — Craig Wrightが欠席判決で勝訴"
+  - name: "CoinTelegraph — Craig Wright wins default judgment"
     url: "https://cointelegraph.com/news/craig-wright-wins-default-judgment-bitcoin-org-must-remove-bitcoin-whitepaper"
-  - name: "Decrypt — ビットコイン発明者ホワイトペーパー訴訟"
+  - name: "Decrypt — Bitcoin inventor whitepaper lawsuit"
     url: "https://decrypt.co/74657/bitcoin-inventor-whitepaper-lawsuit-craig-wright-cobra"
 translationStatus: complete
 ---

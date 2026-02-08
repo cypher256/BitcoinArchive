@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "Wei Dai — Wikipedia"
     url: "https://en.wikipedia.org/wiki/Wei_Dai"
-  - name: "CoinMarketCap — サトシファイル：Wei Dai"
+  - name: "CoinMarketCap — Satoshi Files: Wei Dai"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-wei-dai"
 translationStatus: complete
 ---

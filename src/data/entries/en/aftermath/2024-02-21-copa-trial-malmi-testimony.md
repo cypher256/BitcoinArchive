@@ -13,7 +13,7 @@ participants:
     slug: "craig-wright"
   - name: "Adam Back"
     slug: "adam-back"
-description: "During Day 15 of the COPA v. Craig Wright trial, Martti Malmi testified via video link and submitted 260 emails (140,000 words) exchanged with Satoshi Nakamoto between May 2009 and February 2011. The complete email archive was published on GitHub."
+description: "During Day 13 of the COPA v. Craig Wright trial, Martti Malmi testified via video link and submitted 260 emails (140,000 words) exchanged with Satoshi Nakamoto between May 2009 and February 2011. The complete email archive was published on GitHub."
 isSatoshi: false
 aftermathType: "retrospective"
 tags:
@@ -32,7 +32,7 @@ secondarySources:
     url: "https://www.cryptotimes.io/2024/02/23/bitcoin-icons-malmi-and-back-take-the-stand-in-wright-trial/"
 ---
 
-On February 21, 2024, during Day 15 of the COPA v. Craig Wright trial at the UK High Court of Justice, Martti Malmi testified via video link.
+On February 21, 2024, during Day 13 of the COPA v. Craig Wright trial at the UK High Court of Justice, Martti Malmi testified via video link.
 
 Malmi — Bitcoin's first administrator of bitcoin.org and Satoshi's earliest known collaborator — submitted a compilation of 260 emails with Satoshi Nakamoto as evidence. The emails totaled approximately 140,000 words and spanned from May 2009 to February 2011.
 

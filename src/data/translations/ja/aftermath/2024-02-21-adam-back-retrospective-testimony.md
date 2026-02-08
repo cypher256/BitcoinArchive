@@ -22,9 +22,9 @@ tags:
   - "wei-dai"
   - "retrospective"
 secondarySources:
-  - name: "COPA裁判証人証言"
+  - name: "COPA trial witness testimony"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-  - name: "Token Dispatch — Adam Back: ビットコインの心臓を作った男"
+  - name: "Token Dispatch — Adam Back: The Man Who Built Bitcoin's Heart"
     url: "https://www.thetokendispatch.com/p/adam-back-the-man-who-built-bitcoins"
 translationStatus: complete
 ---
@@ -45,7 +45,7 @@ Adam Back — Hashcash（1997年）の発明者であり、ビットコインホ
 
 Backは添付されたホワイトペーパーを開き、ざっと目を通し、Wei Daiのb-moneyを提案する簡潔な返信を打って、ラップトップを閉じた。ビットコインを積極的に使い始めたのは2013年頃からだった。
 
-**COPA裁判での証言（2024年2月22日）：**
+**COPA裁判での証言（2024年2月21日）：**
 
 COPA対Craig Wright裁判で、Backはロンドン高等法院で直接証言し、サトシとの完全な5通のメールチェーンを証拠として提出した。2008年8月20日以降のメールが初めて公開された。
 
