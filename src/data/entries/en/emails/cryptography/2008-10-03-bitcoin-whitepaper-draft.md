@@ -14,6 +14,14 @@ tags:
   - "draft"
   - "pre-announcement"
   - "earliest-known"
+pdfMetadata:
+  id: "BBD1C86BA0031ECDEFBD1FEDE45329B2"
+  language: "en-GB"
+  creator: "Writer"
+  producer: "OpenOffice.org 2.4"
+  creationDate: "2008-10-03T20:49:58Z"
+  pages: 8
+  checksum: "94B5A950BE82F71A76361664D9DA141F"
 secondarySources:
   - name: "Gwern's Bitcoin Archive"
     url: "https://www.gwern.net/docs/bitcoin/2008-nakamoto"
