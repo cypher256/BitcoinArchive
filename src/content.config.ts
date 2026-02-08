@@ -24,6 +24,7 @@ const entrySchema = z.object({
   date: z.coerce.date(),
   source: sourceEnum,
   sourceUrl: z.string().url(),
+  sourceStatus: z.enum(['available', 'archived', 'unavailable']).default('available'),
   author: z.string(),
   participants: z.array(participantSchema),
   description: z.string(),

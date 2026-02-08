@@ -1,0 +1,58 @@
+---
+title: "Re: RFC: ship block chain 1-74000 with release tarballs?"
+date: 2010-11-29T20:19:12.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=1931.msg25449#msg25449"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"RFC: ship block chain 1-74000 with release tarballs?\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/520/"
+---
+
+It seems like you're inclined to assume everything is wrong more than is actually so.
+
+Writing the block index is light work.  Building the tx index is much more random access per block.  I suspect reading all the prev txins is what's slow.  Read caching would help that.  It's best if the DB does that.  Maybe it has a setting for how much cache memory to use.
+
+Quote1) bitcoin should be opening databases, not just environment, at program startup, and closing database at program shutdown. 
+Already does that.  See CDB.  The lifetime of the (for instance) CTxDB object is only to support database transactions and to know if anything is still using the database at shutdown.
+
+QuoteAnd, additionally, bitcoin forces a database checkpoint, pushing all transactions from log into main database.
+If it was doing that it would be much slower.  It's supposed to be only once a minute or 500 blocks:
+
+    if (strFile == "blkindex.dat" && IsInitialBlockDownload() && nBestHeight % 500 != 0)
+        nMinutes = 1;
+    dbenv.txn_checkpoint(0, nMinutes, 0);
+
+Probably should add this:
+    if (!fReadOnly)
+        dbenv.txn_checkpoint(0, nMinutes, 0);
+
+Quote2) For the initial block download, txn commit should occur once every N records, not every record.  I suggest N=1000.
+Does transaction commit imply flush?  That seems surprising to me.  I assume a database op wrapped in a transaction would be logged like any other database op.  Many database applications need to wrap almost every pair of ops in a transaction, such as moving money from one account to another. (debit a, credit b)  I can't imagine they're required to batch all their stuff up themselves.
+
+In the following cases, would case 1 flush once and case 2 flush twice?
+
+case 1:
+write
+write
+write
+write
+checkpoint
+
+case 2:
+begin transaction
+write
+write
+commit transaction
+begin transaction
+write
+write
+commit transaction
+checkpoint
+
+Contorting our database usage will not be the right approach.  It's going to be BDB settings and caching.

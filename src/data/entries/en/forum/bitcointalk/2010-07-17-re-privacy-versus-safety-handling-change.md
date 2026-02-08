@@ -1,0 +1,21 @@
+---
+title: "Re: Privacy versus Safety: handling change"
+date: 2010-07-17T16:27:39.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=434.msg3770#msg3770"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"Privacy versus Safety: handling change\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/230/"
+---
+
+We should queue up a supply of pre-made addresses in the wallet to use when a new address is needed.  They aren't very big, so it wouldn't hurt to have a lot of them.  This would more generally cover the case also where someone backs up, then requests a new address and receives a big payment with it.  Maybe there should be separate queues so one type of demand on addresses doesn't deplete it for the others.
+
+The addresses would be created and stored in the normal place, but also listed on a separate list of created-but-never-used addresses.  When an address is requested, the address at the front of the never-used queue is handed out, and a new address is created and added to the back.
+
+There's some kind of rescan in the block loading code that was made to repair the case where someone copied their wallet.dat.  I would need to check that the rescan handles the case of rediscovering received payments in blocks that were already received, but are forgotten because the wallet was restored.

@@ -1,0 +1,35 @@
+---
+title: "Re: Development of alert system"
+date: 2010-08-25T15:17:37.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=898.msg11150#msg11150"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"Development of alert system\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/414/"
+---
+
+It can't do arbitrary actions remotely.  Maybe some of you are responding to other posters who suggested the alert system should do more?
+
+If there is an alert, the following json-rpc methods return an error:
+sendtoaddress
+getbalance
+getreceivedbyaddress
+getreceivedbylabel
+listreceivedbyaddress
+listreceivedbylabel
+
+The remaining 14 methods function as normal. 
+
+I believe the safer option should be enabled by default.  If you want your server to keep trading and ignore an alert saying the money its receiving might be like the money from the overflow bug, then you can use the switch and not blame anyone else if you lose your money.
+
+Worst case if you leave alerts enabled, your site stops trading until you upgrade or add the -disablesafemode switch.
+
+Getting surprised by some temporary down time when your node would otherwise be at risk is better than getting surprised by a thief draining all your inventory.
+
+Someday when we haven't found any new bugs for a long time and it has been thoroughly security reviewed without finding anything, this can be scaled back.  I'm not arguing that this is the permanent way of things forever.  It's still beta software.

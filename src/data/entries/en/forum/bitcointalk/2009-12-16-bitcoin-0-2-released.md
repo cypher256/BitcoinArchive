@@ -1,0 +1,37 @@
+---
+title: "Bitcoin 0.2 released!"
+date: 2009-12-16T22:45:36.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=16.msg73#msg73"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's post: \"Bitcoin 0.2 released!\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/"
+---
+
+Bitcoin version 0.2 is here!
+
+Download links:
+[http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download)
+[http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32.zip/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32.zip/download)
+[http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-linux.tar.gz/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-linux.tar.gz/download)
+
+New Features
+
+Martti Malmi
+ - Minimize to system tray option
+ - Autostart on boot option so you can keep it running in the background automatically
+ - New options dialog layout for future expansion
+ - Setup program for Windows
+ - Linux version (tested on Ubuntu)
+Satoshi Nakamoto
+ - Multi-processor support for coin generation
+ - Proxy support for use with TOR
+ - Fixed some slowdowns in the initial block download
+
+Major thanks to Martti Malmi (sirius-m) for all his coding work and for hosting the new site and this forum, and New Liberty Standard for his help with testing the Linux version.

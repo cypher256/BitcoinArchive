@@ -1,0 +1,21 @@
+---
+title: "Re: TOR and I2P"
+date: 2010-02-04T00:30:50.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=22.msg223#msg223"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"TOR and I2P\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/42/"
+---
+
+When using proxy port 9050, it will only make one attempt to connect to IRC, then give up, since it knows it will probably always fail because IRC servers ban all the TOR exit nodes.  If you're using another port, it would assume it might be a regular old normal proxy and would keep retrying IRC at longer and longer intervals.  You should not use Polipo or Privoxy as those are http filters and caches that would corrupt Bitcoin's messages if they make any changes.  Bitcoin might be trying to overcome it by reconnecting.  You should use port 9050.
+
+As riX says, the "is giving Tor only an IP address. Apps that do DNS..." warnings are nothing to worry about.  Bitcoin doesn't use DNS at all in proxy mode.
+
+Since Bitcoin can't get through to IRC through Tor, it doesn't know which nodes are currently online, so it has to try all the recently seen nodes.  It tries to conserve connection attempts as much as possible, but also people want it to connect quickly when they start it up and reconnect quickly if disconnected.  It uses an algorithm where it tries an IP less and less frequently the longer ago it was successful connected.  For example, for a node it saw 24 hours ago, it would wait 5 hours between connection attempts.  Once it has at least 2 connections, it won't try anything over a week old, and 5 connections it won't try anything over 24 hours old.

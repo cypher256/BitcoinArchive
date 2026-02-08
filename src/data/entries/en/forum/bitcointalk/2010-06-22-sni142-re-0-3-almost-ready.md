@@ -1,0 +1,29 @@
+---
+title: "Re: 0.3 almost ready"
+date: 2010-06-22T19:46:23.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1679#msg1679"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's reply in the thread \"0.3 almost ready\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/142/"
+---
+
+You figured it out faster than I could post a reply.  
+
+It looks like laszlo's build of Berkeley DB has database/log.* files that are not compatible with ours.  The .dat files are fine, their format shouldn't ever change.  All data is stored in the .dat files.  All your own data is stored in wallet.dat.  If you had waited for it to redownload the block chain, your missing transactions and generateds would have appeared as the block chain reached the point where those transactions were recorded.
+
+When you copied the directory except log.0000000002, that's the best solution.  You should be good now.
+
+The database/log.* files only contain temporary database data.  If you exited bitcoin normally the last time, not exited by forced terminating it or crashing, then the database/log.* files can normally be deleted safely.  They're only used so that if the database is in the middle of a transaction when the computer crashes or the program is killed or crashes, then it could recover without losing data.
+
+Please keep running v0.3 if at all possible, don't go back to v0.2.10.
+
+Anyone else who hits this problem, move the database\log.000000000* files somewhere else.  (if it works fine after that, you can delete them later)
+
+I'm reluctant to make the installer delete or move those files.  If the previous run was stopped by crashing or killed, that would be the wrong thing to do.

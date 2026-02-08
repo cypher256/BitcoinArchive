@@ -1,0 +1,28 @@
+---
+title: "Please upgrade to 0.3.8!"
+date: 2010-08-03T23:40:18.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=696.msg7364#msg7364"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi Nakamoto's post: \"Please upgrade to 0.3.8!\"."
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/313/"
+---
+
+Version 0.3.8 adds an important security improvement.  Everyone should upgrade to get this change.
+
+The new safety feature displays a warning message in the status bar and locks down RPC if it detects a problem that may require an upgrade.
+
+If it sees a longer chain, but it can't process it, then it knows something is wrong.  It displays "WARNING: Displayed transactions may not be correct!  You may need to upgrade." and makes most RPC commands return an error.  It still keeps generating as normal, which is necessary for the stability of the network.
+
+There were important security updates in the versions before this too, so if you haven't upgraded recently, it's extremely important that you upgrade now!
+
+Also, don't forget, we recently added 2.4x faster generating thanks to tcatm's mid-state caching optimisation and BlackEye's help getting ASM SHA-256 working.
+
+Download:
+[http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/)
