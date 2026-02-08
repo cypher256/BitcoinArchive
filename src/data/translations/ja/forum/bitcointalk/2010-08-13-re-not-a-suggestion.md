@@ -1,5 +1,5 @@
 ---
-title: "Re: Not a suggestion"
+title: "Re: 提案ではなく"
 date: 2010-08-13T19:28:47.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg9074#msg9074"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Not a suggestion\"."
+description: "Satoshi Nakamotoが「鍵のブラインド化」と「グループ署名」の概念を用いたプライバシー強化の可能性を探求。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,26 +15,26 @@ secondarySources:
 threadId: "bt-not-a-suggestion"
 threadTitle: "Not a suggestion"
 threadPosition: 5
-translationStatus: pending
+translationStatus: complete
 ---
 
-I'm not grasping your idea yet.  Does it hide any information from the public network?  What is the advantage?
+あなたのアイデアをまだ把握できていません。公開ネットワークから何か情報を隠しますか？ 利点は何ですか？
 
-If at least 50% of nodes validated transactions enough that old transactions can be discarded, then everyone saw everything and could keep a record of it.
+少なくとも50%のノードがトランザクションを十分に検証して古いトランザクションを破棄できるなら、全員がすべてを見て記録を保持できたということです。
 
-Can public nodes see the values of transactions?  Can they see which previous transaction the value came from?  If they can, then they know everything.  If they can't, then they couldn't verify that the value came from a valid source, so you couldn't take their generated chain as verification of it.
+公開ノードはトランザクションの値を見ることができますか？ 値がどの前のトランザクションから来たかを見ることができますか？ できるなら、すべてを知っています。できないなら、値が有効なソースから来たことを検証できないので、彼らが生成したチェーンをその検証として受け取ることはできません。
 
-Does it hide the bitcoin addresses?  Is that it?  OK, maybe now I see, if that's it.
+Bitcoinアドレスを隠しますか？ それですか？ OK、それならわかるかもしれません。
 
-Crypto may offer a way to do "key blinding".  I did some research and it was obscure, but there may be something there.  "group signatures" may be related.
+暗号は「鍵のブラインド化」を行う方法を提供するかもしれません。いくつか調査しましたが、あまり知られていない分野でした。しかし何かあるかもしれません。「グループ署名」が関連しているかもしれません。
 
-There's something here in the general area:
+この一般的な分野に何かあります：
 [http://www.users.zetnet.co.uk/hopwood/crypto/rh/](http://www.users.zetnet.co.uk/hopwood/crypto/rh/)
 
-What we need is a way to generate additional blinded variations of a public key.  The blinded variations would have the same properties as the root public key, such that the private key could generate a signature for any one of them.  Others could not tell if a blinded key is related to the root key, or other blinded keys from the same root key.  These are the properties of blinding.  Blinding, in a nutshell, is x = (x * large_random_int) mod m.
+必要なのは、公開鍵の追加のブラインドされたバリエーションを生成する方法です。ブラインドされたバリエーションはルート公開鍵と同じ特性を持ち、秘密鍵がそのいずれに対しても署名を生成できるようにします。他者はブラインドされた鍵がルート鍵に関連しているか、同じルート鍵からの他のブラインドされた鍵に関連しているかを判別できません。これがブラインド化の特性です。ブラインド化は、簡単に言えば x = (x * large_random_int) mod m です。
 
-When paying to a bitcoin address, you would generate a new blinded key for each use.
+Bitcoinアドレスへの支払い時に、使用ごとに新しいブラインドされた鍵を生成することになります。
 
-Then you need to be able to sign a signature such that you can't tell that two signatures came from the same private key.  I'm not sure if always signing a different blinded public key would already give you this property.  If not, I think that's where group signatures comes in.  With group signatures, it is possible for something to be signed but not know who signed it.
+次に、2つの署名が同じ秘密鍵から来たことがわからないように署名できる必要があります。常に異なるブラインドされた公開鍵に署名することでこの特性が既に得られるかどうかはわかりません。得られない場合、そこでグループ署名が登場すると思います。グループ署名では、何かに署名できますが、誰が署名したかわからないようにすることが可能です。
 
-As an example, say some unpopular military attack has to be ordered, but nobody wants to go down in history as the one who ordered it.  If 10 leaders have private keys, one of them could sign the order and you wouldn't know who did it.
+例として、不人気な軍事攻撃の命令が必要だが、歴史にそれを命令した人として名前を残したくない場合を想像してください。10人の指導者が秘密鍵を持っていれば、そのうちの1人が命令に署名でき、誰がやったかわからないようにできます。

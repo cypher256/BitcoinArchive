@@ -1,5 +1,5 @@
 ---
-title: "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6"
+title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
 date: 2010-08-14T00:49:18.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=648.msg9145#msg9145"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"4 hashes parallel on SSE2 CPUs for 0.3.6\"."
+description: "Satoshi NakamotoがMinGW on Windowsでのコンパイルエラーを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,10 +15,10 @@ secondarySources:
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 threadTitle: "4 hashes parallel on SSE2 CPUs for 0.3.6"
 threadPosition: 5
-translationStatus: pending
+translationStatus: complete
 ---
 
-MinGW on Windows has trouble compiling it:
+Windows上のMinGWでコンパイルに問題があります：
 
 g++ -c -mthreads -O2 -w -Wno-invalid-offsetof -Wformat -g -D__WXDEBUG__ -DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH -I"/boost" -I"/db/build_unix" -I"/openssl/include" -I"/wxwidgets/lib/gcc_lib/mswud" -I"/wxwidgets/include" -msse2 -O3 -o obj/sha256.o sha256.cpp
 

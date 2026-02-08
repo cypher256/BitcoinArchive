@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNS and Generalizing Bitcoin"
+title: "Re: BitDNSとBitcoinの汎用化"
 date: 2010-12-09T21:02:42.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28696#msg28696"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"BitDNS and Generalizing ビットコイン\"."
+description: "スレッド「BitDNSとビットコインの汎用化」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,13 +15,13 @@ secondarySources:
 threadId: "bt-bitdns-and-generalizing-bitcoin"
 threadTitle: "BitDNS and Generalizing Bitcoin"
 threadPosition: 1
-translationStatus: pending
+translationStatus: complete
 ---
 
-I think it would be possible for BitDNS to be a completely separate network and separate block chain, yet share CPU power with Bitcoin.  The only overlap is to make it so miners can search for proof-of-work for both networks simultaneously.
+BitDNSが完全に別のネットワークと別のブロックチェーンでありながら、BitcoinとCPUパワーを共有できるようにすることは可能だと思います。唯一の重複は、マイナーが両方のネットワークのプルーフ・オブ・ワークを同時に検索できるようにすることです。
 
-The networks wouldn't need any coordination.  Miners would subscribe to both networks in parallel.  They would scan SHA such that if they get a hit, they potentially solve both at once.  A solution may be for just one of the networks if one network has a lower difficulty.
+ネットワーク間の調整は不要です。マイナーは両方のネットワークに並行して接続します。ヒットを得た場合、潜在的に両方を同時に解決するようにSHAをスキャンします。一方のネットワークの難易度が低い場合、その片方のネットワークだけの解決になるかもしれません。
 
-I think an external miner could call getwork on both programs and combine the work.  Maybe call Bitcoin, get work from it, hand it to BitDNS getwork to combine into a combined work.
+外部マイナーが両方のプログラムでgetworkを呼び出し、作業を組み合わせることができると思います。例えばBitcoinを呼び出し、そこから作業を取得し、BitDNS getworkに渡して組み合わせた作業にするとか。
 
-Instead of fragmentation, networks share and augment each other's total CPU power.  This would solve the problem that if there are multiple networks, they are a danger to each other if the available CPU power gangs up on one.  Instead, all networks in the world would share combined CPU power, increasing the total strength.  It would make it easier for small networks to get started by tapping into a ready base of miners.
+断片化する代わりに、ネットワークは互いの合計CPUパワーを共有し強化します。これは、複数のネットワークがある場合に利用可能なCPUパワーが1つのネットワークに集中すると互いに危険になるという問題を解決します。代わりに、世界中のすべてのネットワークが合算されたCPUパワーを共有し、全体の強度を高めます。小さなネットワークが既存のマイナーの基盤を活用して容易にスタートできるようになります。

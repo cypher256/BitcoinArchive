@@ -1,5 +1,5 @@
 ---
-title: "Re: Not a suggestion"
+title: "Re: 提案ではなく"
 date: 2010-08-12T02:46:56.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg8836#msg8836"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Not a suggestion\"."
+description: "Satoshi Nakamotoがネットワークが値と系譜を知らない仮想システムにおけるトランザクション検証の課題を説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,18 +15,18 @@ secondarySources:
 threadId: "bt-not-a-suggestion"
 threadTitle: "Not a suggestion"
 threadPosition: 4
-translationStatus: pending
+translationStatus: complete
 ---
 
-[Quote from: Red on August 12, 2010, 01:10:19 AM](https://bitcointalk.org/index.php?topic=770.msg8824#msg8824)[Quote from: satoshi on August 11, 2010, 09:07:59 PM](https://bitcointalk.org/index.php?topic=770.msg8798#msg8798)I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  
+[Quote from: Red on August 12, 2010, 01:10:19 AM](https://bitcointalk.org/index.php?topic=770.msg8824#msg8824)[Quote from: satoshi on August 11, 2010, 09:07:59 PM](https://bitcointalk.org/index.php?topic=770.msg8798#msg8798)クライアントは元の生成されたコインまでの全履歴を保持する必要があると思います。クライアントが全履歴を保持しなければならないという事実は、プライバシーの利点を減少させます。
 
-I thought this too at first. But then I convinced myself otherwise.
-Are you back to talking about the existing Bitcoin system here?
+私も最初はそう思いました。しかし、その後自分を納得させました。
+ここで既存のBitcoinシステムの話に戻っていますか？
 
-I was talking about in the hypothetical system I was describing, if the network doesn't know the values and lineage of the transactions, then it can't verify them and vouch for them, so the clients would have to keep the history all the way back.
+私が説明していた仮想システムについて話していました。ネットワークがトランザクションの値と系譜を知らなければ、それらを検証して保証することができないので、クライアントが元のコインまでの全履歴を保持する必要があるということです。
 
-If a client wasn't present until recently, the two ways to convince it that a transaction has a valid past is:
-1) Show it the entire history back to the original generated coin.
-2) Show it a history back to a thoroughly deep block, then trust that if so many nodes all said the history up to then was correct then it must be true.
+クライアントが最近まで存在していなかった場合、トランザクションに有効な過去があることを納得させる2つの方法は：
+1) 元の生成されたコインまでの全履歴を見せる。
+2) 十分に深いブロックまでの履歴を見せ、それまでの履歴が正しいと多くのノードが言ったなら正しいに違いないと信頼する。
 
-But if the network didn't know all the values and lineage of the transactions, it couldn't do 2), I don't think.
+しかし、ネットワークがすべての値とトランザクションの系譜を知らなければ、2）はできないと思います。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Won't let me send coins because it requires a transaction fee?"
+title: "Re: トランザクション手数料が必要なためコインを送れない？"
 date: 2010-09-10T00:23:24.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1013.msg12341#msg12341"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Won't let me send coins because it requires a transaction fee?\"."
+description: "スレッド「トランザクション手数料が必要なためコインを送れない？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,15 +15,15 @@ secondarySources:
 threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
 threadTitle: "Won't let me send coins because it requires a transaction fee?"
 threadPosition: 1
-translationStatus: pending
+translationStatus: complete
 ---
 
-What version is the one where this happened?  Release build, or built it yourself?  Which operating system?  
+これが起きたバージョンは何ですか？リリースビルドですか、自分でビルドしたものですか？どのオペレーティングシステムですか？
 
-Were you sending by IP or by Bitcoin Address?
+IPアドレスで送信しましたか、それともBitcoinアドレスで送信しましたか？
 
-When you sent 49.99, did it prompt you to pay a 0.01 fee?
+49.99を送信した時、0.01の手数料を支払うよう求められましたか？
 
-There was a change in GetMinFee, but I can't see how it would cause this.  It only starts to apply when a block gets huge. 
+GetMinFeeに変更がありましたが、これが原因となるとは思えません。ブロックが巨大になった時にのみ適用され始めます。
 
-The reason for the difference in block number is the number displayed was reduced by 1 in 0.3.11 because it made more sense that way.
+ブロック番号の違いの理由は、表示される数値が0.3.11で1減らされたためで、その方が理にかなっていたからです。

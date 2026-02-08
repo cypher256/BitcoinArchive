@@ -1,5 +1,5 @@
 ---
-title: "Re: Switch to GPL"
+title: "Re: GPLへの切り替え"
 date: 2010-09-12T19:24:53.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=989.msg12494#msg12494"
@@ -7,18 +7,18 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Switch to GPL\"."
+description: "スレッド「GPLへの切り替え」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/451/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-If the only library is closed source, then there's a project to make an open source one.
+唯一のライブラリがクローズドソースなら、オープンソースのものを作るプロジェクトが生まれます。
 
-If the only library is GPL, then there's a project to make a non-GPL one.
+唯一のライブラリがGPLなら、非GPLのものを作るプロジェクトが生まれます。
 
-If the best library is MIT, Boost, new-BSD or public domain, then we can stop re-writing it.
+最良のライブラリがMIT、Boost、新BSDまたはパブリックドメインなら、書き直しを止められます。
 
-I don't question that GPL is a good license for operating systems, especially since non-GPL code is allowed to interface with the OS.  For smaller projects, I think the fear of a closed-source takeover is overdone.
+GPLがオペレーティングシステムにとって良いライセンスであることは疑いません。特に非GPLコードがOSとインターフェースすることが許可されているので。小さなプロジェクトについては、クローズドソースによる乗っ取りへの恐れは過度だと思います。

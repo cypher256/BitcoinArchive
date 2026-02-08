@@ -1,5 +1,5 @@
 ---
-title: "Re: Message Encryption as a built-in feature?"
+title: "Re: 組み込み機能としてのメッセージ暗号化？"
 date: 2010-09-19T22:47:00.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1032.msg13221#msg13221"
@@ -7,12 +7,12 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Message Encryption as a built-in feature?\"."
+description: "スレッド「組み込み機能としてのメッセージ暗号化？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/456/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-Theymos already said this...  ECDSA does not support encrypting messages.  Only digital signatures.
+Theymosがすでに言っていますが...ECDSAはメッセージの暗号化をサポートしていません。デジタル署名のみです。

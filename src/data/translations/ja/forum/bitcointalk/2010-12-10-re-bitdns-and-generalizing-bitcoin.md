@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNS and Generalizing Bitcoin"
+title: "Re: BitDNSとBitcoinの汎用化"
 date: 2010-12-10T17:29:28.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28917#msg28917"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"BitDNS and Generalizing ビットコイン\"."
+description: "スレッド「BitDNSとBitcoinの汎用化」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,15 +15,15 @@ secondarySources:
 threadId: "bt-bitdns-and-generalizing-bitcoin"
 threadTitle: "BitDNS and Generalizing Bitcoin"
 threadPosition: 3
-translationStatus: pending
+translationStatus: complete
 ---
 
-Piling every proof-of-work quorum system in the world into one dataset doesn't scale.
+世界中のすべてのプルーフ・オブ・ワーク合意システムを1つのデータセットに詰め込むのはスケールしません。
 
-Bitcoin and BitDNS can be used separately.  Users shouldn't have to download all of both to use one or the other.  BitDNS users may not want to download everything the next several unrelated networks decide to pile in either.
+BitcoinとBitDNSは別々に使えます。ユーザーがどちらか一方を使うために両方のすべてをダウンロードしなければならないのはおかしいでしょう。BitDNSユーザーは、次の無関係なネットワークがいくつも積み上げることを決めたすべてのデータをダウンロードしたくないかもしれません。
 
-The networks need to have separate fates.  BitDNS users might be completely liberal about adding any large data features since relatively few domain registrars are needed, while Bitcoin users might get increasingly tyrannical about limiting the size of the chain so it's easy for lots of users and small devices.
+ネットワークは別々の運命を持つ必要があります。BitDNSユーザーは、必要なドメイン登録者が比較的少ないため、大きなデータ機能の追加について完全にリベラルかもしれませんが、Bitcoinユーザーは多くのユーザーや小型デバイスでも簡単に使えるようにチェーンのサイズを制限することについてますます厳格になるかもしれません。
 
-Fears about securely buying domains with Bitcoins are a red herring.  It's easy to trade Bitcoins for other non-repudiable commodities.
+Bitcoinでドメインを安全に購入することへの懸念は的外れです。Bitcoinを他の取り消し不能な商品と交換するのは簡単です。
 
-If you're still worried about it, it's cryptographically possible to make a risk free trade.  The two parties would set up transactions on both sides such that when they both sign the transactions, the second signer's signature triggers the release of both.  The second signer can't release one without releasing the other.
+それでも心配なら、暗号学的にリスクフリーの取引を行うことが可能です。両当事者が双方でトランザクションを設定し、両者が署名すると、2番目の署名者の署名が両方のリリースをトリガーします。2番目の署名者は一方をリリースせずにもう一方をリリースすることはできません。

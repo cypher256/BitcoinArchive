@@ -1,5 +1,5 @@
 ---
-title: "Re: Bug? /usr/bin/bitcoind \"\""
+title: "Re: バグ？ /usr/bin/bitcoind \"\""
 date: 2010-09-19T19:58:11.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1063.msg13211#msg13211"
@@ -7,16 +7,16 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Bug? /usr/bin/bitcoind \"\"\"."
+description: "スレッド「バグ？ /usr/bin/bitcoind」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/454/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-I don't know anything about any of the bug trackers.  If we were to have one, we would have to make a thoroughly researched choice.
+どのバグトラッカーについても何も知りません。もし導入するなら、徹底的に調査した上で選択する必要があります。
 
-We're managing pretty well just using the forum.  I'm more likely to see bugs posted in the forum, and I think other users are much more likely to help resolve and ask follow up questions here than if they were in a bug tracker.  A key step is other users helping resolve the simple stuff that's not really a bug but some misunderstanding or confusion.
+フォーラムを使うだけでかなりうまく管理できています。フォーラムに投稿されたバグの方が目に入りやすいですし、他のユーザーがバグトラッカーにある場合よりも、ここで解決を手伝ったりフォローアップの質問をしたりする可能性がはるかに高いと思います。重要なステップは、実際にはバグではなく何らかの誤解や混乱である単純な問題を他のユーザーが解決するのを手伝うことです。
 
-I keep a list of all unresolved bugs I've seen on the forum.  In some cases, I'm still thinking about the best design for the fix.  This isn't the kind of software where we can leave so many unresolved bugs that we need a tracker for them.
+フォーラムで見た未解決のバグのリストをすべて保持しています。一部のケースでは、修正のための最善の設計についてまだ考えています。これは未解決バグが多すぎてトラッカーが必要になるような種類のソフトウェアではありません。

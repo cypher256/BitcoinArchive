@@ -1,5 +1,5 @@
 ---
-title: "Re: Warning : Check your system ( Help me )"
+title: "Re: 警告：システムを確認してください（助けてください）"
 date: 2010-09-05T23:36:20.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=960.msg12063#msg12063"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Warning : Check your system ( Help me )\"."
+description: "スレッド「警告：システムを確認してください（助けてください）」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,17 +15,17 @@ secondarySources:
 threadId: "bt-warning-check-your-system-help-me"
 threadTitle: "Warning : Check your system ( Help me )"
 threadPosition: 1
-translationStatus: pending
+translationStatus: complete
 ---
 
-Any suggestions for better text to put for this error message so the next person will be less likely to be confused?
+このエラーメッセージに使うより良いテキストの提案はありますか？次の人が混乱しにくくなるように。
 
-It's trying to tell them their clock is wrong and they need to correct it.
+時計が間違っていて修正する必要があると伝えようとしています。
 
-It's relying on 3 time sources:
-1) the system clock
-2) the other nodes, if within an hour of the system clock
-if those disagree, then
-3) the user (asking the user to fix the system clock)
+3つの時刻ソースに依存しています：
+1) システム時計
+2) 他のノード（システム時計と1時間以内の場合）
+これらが一致しない場合、
+3) ユーザー（ユーザーにシステム時計を修正するよう求める）
 
-I've thought about NTP, but this is more secure.
+NTPについても考えましたが、こちらの方がより安全です。

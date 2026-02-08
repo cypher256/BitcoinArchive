@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNS and Generalizing Bitcoin"
+title: "Re: BitDNSとBitcoinの汎用化"
 date: 2010-12-10T19:55:12.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28959#msg28959"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"BitDNS and Generalizing ビットコイン\"."
+description: "スレッド「BitDNSとBitcoinの汎用化」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,18 +15,18 @@ secondarySources:
 threadId: "bt-bitdns-and-generalizing-bitcoin"
 threadTitle: "BitDNS and Generalizing Bitcoin"
 threadPosition: 4
-translationStatus: pending
+translationStatus: complete
 ---
 
-[Quote from: Hal on December 10, 2010, 07:14:04 PM](https://bitcointalk.org/index.php?topic=1790.msg28938#msg28938)additional block chains would each create their own flavor of coins, which would trade with bitcoins on exchanges? These chain-specific coins would be used to reward miners on those chains, and to purchase some kinds of rights or privileges within the domain of that chain?
-Right, the exchange rate between domains and bitcoins would float.
+[Quote from: Hal on December 10, 2010, 07:14:04 PM](https://bitcointalk.org/index.php?topic=1790.msg28938#msg28938)追加のブロックチェーンはそれぞれ独自のフレーバーのコインを作成し、それが取引所でビットコインと取引されるのですか？これらのチェーン固有のコインは、そのチェーンのマイナーへの報酬や、そのチェーンのドメイン内での何らかの権利や特権の購入に使われるのですか？
+そうです、ドメインとビットコインの間の交換レートは変動するでしょう。
 
-A longer interval than 10 minutes would be appropriate for BitDNS.
+BitDNSには10分より長い間隔が適切でしょう。
 
-So far in this discussion there's already a lot of housekeeping data required.  It will be much easier if you can freely use all the space you need without worrying about paying fees for expensive space in Bitcoin's chain.  Some transactions:
+この議論でこれまでに、すでに多くのハウスキーピングデータが必要とされています。Bitcoinのチェーンの高価なスペースに手数料を支払うことを心配せずに、必要なスペースを自由に使えれば、はるかに簡単になるでしょう。いくつかのトランザクション：
 
-Changing the IP record.
+IPレコードの変更。
 
-Name change.  A domain object could entitle you to one domain, and you could change it at will to any name that isn't taken.  This would encourage users to free up names they don't want anymore.  Generated domains start out blank and the miner sells it to someone who changes it to what they want.  
+名前の変更。ドメインオブジェクトは1つのドメインへの権利を与え、取得されていない任意の名前に自由に変更できます。これにより、ユーザーが不要になった名前を解放することが促されるでしょう。生成されたドメインは空白で始まり、マイナーがそれを誰かに売り、その人が希望の名前に変更します。
 
-Renewal.  Could be free, or maybe require consuming another domain object to renew.  In that case, domain objects (domaincoins?) could represent the right to own a domain for a year.  The spent fee goes to the miners in the next block fee.
+更新。無料にすることも、更新に別のドメインオブジェクトの消費を必要とすることもできます。その場合、ドメインオブジェクト（ドメインコイン？）は1年間ドメインを所有する権利を表します。使用された手数料は次のブロック手数料でマイナーに支払われます。

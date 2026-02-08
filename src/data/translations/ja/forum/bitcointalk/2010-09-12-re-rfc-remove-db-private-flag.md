@@ -1,5 +1,5 @@
 ---
-title: "Re: RFC: remove DB_PRIVATE flag"
+title: "Re: RFC: DB_PRIVATEフラグの削除"
 date: 2010-09-12T18:00:39.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=920.msg12484#msg12484"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"RFC: remove DB_PRIVATE flag\"."
+description: "スレッド「RFC: DB_PRIVATEフラグの削除」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,17 +15,17 @@ secondarySources:
 threadId: "bt-rfc-remove-db-private-flag"
 threadTitle: "RFC: remove DB_PRIVATE flag"
 threadPosition: 2
-translationStatus: pending
+translationStatus: complete
 ---
 
-Trying it without the DB_PRIVATE flag in rev 153.  We need to keep an eye on what's different.
+rev 153でDB_PRIVATEフラグなしで試しています。何が異なるか注視する必要があります。
 
-On Windows at least, it creates six __db.001 - __db.006 files with sizes from 24K to 4MB.  It doesn't delete them on exit, it just leaves them behind.
+少なくともWindowsでは、24KBから4MBのサイズの__db.001から__db.006の6つのファイルを作成します。終了時にそれらを削除せず、そのまま残します。
 
-The docs say it uses memory mapped files.  I assume they have the same file permissions as the database files, so the same user access restrictions apply.
+ドキュメントによると、メモリマップドファイルを使用するとのことです。データベースファイルと同じファイル権限を持ち、同じユーザーアクセス制限が適用されると思われます。
 
-Tests on Windows private LAN download of 78500 blocks:
-with DB_PRIVATE     20 minutes 51 seconds
-without DB_PRIVATE   20 minutes 51 seconds
+WindowsプライベートLANでの78500ブロックのダウンロードテスト：
+DB_PRIVATEあり     20分51秒
+DB_PRIVATEなし     20分51秒
 
-I wasn't expecting them to come out exactly the same.
+まったく同じになるとは予想していませんでした。

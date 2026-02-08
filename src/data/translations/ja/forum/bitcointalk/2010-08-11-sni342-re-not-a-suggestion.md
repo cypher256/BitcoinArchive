@@ -1,5 +1,5 @@
 ---
-title: "Re: Not a suggestion"
+title: "Re: 提案ではなく"
 date: 2010-08-11T21:07:59.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg8798#msg8798"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッドにおけるサトシ・ナカモトの返信 \"Not a suggestion\"."
+description: "Satoshi Nakamotoがプライバシーを強化した出力ポイントベースのネットワーク設計のアイデアを深く掘り下げて議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -15,19 +15,19 @@ secondarySources:
 threadId: "bt-not-a-suggestion"
 threadTitle: "Not a suggestion"
 threadPosition: 3
-translationStatus: pending
+translationStatus: complete
 ---
 
-Still thinking this idea through...
+まだこのアイデアを考え中です...
 
-The only job the network needs to do is to tell whether a spend of an outpoint is the first or not.
+ネットワークがする必要がある唯一の仕事は、出力ポイントの支出が最初のものかどうかを判別することです。
 
-If we're willing to have clients keep the history for their own money, then some of the information may not need to be stored by the network, such as:
-- the value
-- the association of inpoints and outpoints in one transaction
+クライアントが自分のお金の履歴を保持することを受け入れるなら、以下のようなネットワークが保存する必要のない情報があるかもしれません：
+- 値
+- 1つのトランザクション内の入力ポイントと出力ポイントの関連付け
 
-The network would track a bunch of independent outpoints.  It doesn't know what transactions or amounts they belong to.  A client can find out if an outpoint has been spent, and it can submit a satisfying inpoint to mark it spent.  The network keeps the outpoint and the first valid inpoint that proves it spent.  The inpoint signs a hash of its associated next outpoint and a salt, so it can privately be shown that the signature signs a particular next outpoint if you know the salt, but publicly the network doesn't know what the next outpoint is.
+ネットワークは独立した出力ポイントの集まりを追跡します。それらがどのトランザクションや金額に属するかは知りません。クライアントは出力ポイントが使用済みかどうかを確認でき、使用済みとマークするための満足する入力ポイントを提出できます。ネットワークは出力ポイントと、それが使用されたことを証明する最初の有効な入力ポイントを保持します。入力ポイントは関連する次の出力ポイントとソルトのハッシュに署名するので、ソルトを知っていればその署名が特定の次の出力ポイントに署名していることを非公開で示すことができますが、公開的にはネットワークは次の出力ポイントが何であるかを知りません。
 
-I believe the clients would have to keep the entire history back to the original generated coins.  Someone sending a payment would have to send data to the recipient, as well as still communicating with the network to mark outpoints spent and check that the spend is the first spend.  Maybe the data transfer could be done as an e-mail attachment.
+クライアントは元の生成されたコインまでの全履歴を保持する必要があると思います。支払いを送る人は受取人にデータを送るとともに、出力ポイントを使用済みとマークし、その支出が最初の支出であることを確認するためにネットワークと通信する必要があります。データ転送はメールの添付ファイルとして行えるかもしれません。
 
-The fact that clients have to keep the entire history reduces the privacy benefit.  Someone handling a lot of money still gets to see a lot of transaction history.  The way it retrospectively fans out, they might end up seeing a majority of the history.  Denominations could be made granular to limit fan-out, but a business handling a lot of money might still end up seeing a lot of the history.
+クライアントが全履歴を保持しなければならないという事実は、プライバシーの利点を減少させます。大量のお金を扱う人は依然として多くのトランザクション履歴を見ることになります。遡及的にファンアウトする方法により、履歴の大部分を見てしまう可能性があります。ファンアウトを制限するために額面を細かくすることはできますが、大量のお金を扱うビジネスは依然として多くの履歴を見てしまうかもしれません。
