@@ -66,6 +66,7 @@ const displayEntries = entries.filter((entry: any) => {
           lang={lang}
           threadId={isThread ? tid : undefined}
           threadCount={isThread ? msgCount : undefined}
+          participants={entry.data.participants}
         />
       );
     })}
