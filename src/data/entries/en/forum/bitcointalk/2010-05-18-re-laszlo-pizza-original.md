@@ -3,7 +3,7 @@ title: "Pizza for bitcoins?"
 date: 2010-05-18T17:08:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=137.msg1141#msg1141"
-author: "Laszlo"
+author: "Laszlo Hanyecz"
 participants:
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
