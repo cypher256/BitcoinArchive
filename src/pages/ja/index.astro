@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getEntries } from '../../i18n/utils';
+import { useTranslations, getEntries, localePath } from '../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -24,18 +24,18 @@ const entries = jaEntries.length > 0 ? jaEntries : enEntries;
     </section>
 
     <section class="stats">
-      <div class="stat">
+      <a href={localePath('/entries/', lang)} class="stat">
         <span class="stat-number">{entries.length}</span>
         <span class="stat-label">{t('nav.entries')}</span>
-      </div>
-      <div class="stat">
+      </a>
+      <a href={localePath('/sources/', lang)} class="stat">
         <span class="stat-number">{new Set(entries.map(e => e.data.source)).size}</span>
         <span class="stat-label">{t('nav.sources')}</span>
-      </div>
-      <div class="stat">
+      </a>
+      <a href={localePath('/participants/', lang)} class="stat">
         <span class="stat-number">{new Set(entries.flatMap(e => e.data.participants.map(p => p.slug))).size}</span>
         <span class="stat-label">{t('nav.participants')}</span>
-      </div>
+      </a>
     </section>
 
     <section class="recent">
@@ -88,7 +88,17 @@ const entries = jaEntries.length > 0 ? jaEntries : enEntries;
     border-bottom: 1px solid var(--color-border);
     margin-bottom: 2rem;
   }
-  .stat { text-align: center; }
+  .stat {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  .stat:hover .stat-number {
+    color: var(--color-text);
+  }
+  .stat:hover .stat-label {
+    color: var(--color-text);
+  }
   .stat-number {
     display: block;
     font-family: var(--font-heading);
