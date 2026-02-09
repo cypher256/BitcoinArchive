@@ -13,7 +13,7 @@ description: "Satoshi reviews Malmi's FAQ draft and warns against framing Bitcoi
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 3
+threadPosition: 5
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,7 @@ description: "Satoshi suggests using the word 'cryptocurrency' to describe Bitco
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 4
+threadPosition: 19
 tags:
   - "correspondence"
   - "early-contributor"

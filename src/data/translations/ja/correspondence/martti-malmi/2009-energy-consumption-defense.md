@@ -13,7 +13,7 @@ description: "Satoshiがビットコインのエネルギー消費に関する�
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 8
+threadPosition: 3
 tags:
   - "correspondence"
   - "early-contributor"

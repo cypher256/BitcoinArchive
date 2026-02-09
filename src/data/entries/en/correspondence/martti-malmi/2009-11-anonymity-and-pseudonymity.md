@@ -13,7 +13,7 @@ description: "Satoshi warns Malmi to de-emphasize Bitcoin's anonymity claims, di
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 7
+threadPosition: 197
 tags:
   - "correspondence"
   - "early-contributor"

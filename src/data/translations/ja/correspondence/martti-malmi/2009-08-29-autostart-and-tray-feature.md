@@ -13,7 +13,7 @@ description: "Satoshiが自動起動とタスクトレイ最小化はネット�
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 6
+threadPosition: 31
 tags:
   - "correspondence"
   - "early-contributor"

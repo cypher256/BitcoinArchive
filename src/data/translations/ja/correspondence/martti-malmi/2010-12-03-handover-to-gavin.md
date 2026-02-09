@@ -13,7 +13,7 @@ description: "Malmiがビットコインの開発責任を誰が引き継ぐべ�
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 9
+threadPosition: 241
 tags:
   - "correspondence"
   - "early-contributor"

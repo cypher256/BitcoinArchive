@@ -13,7 +13,7 @@ description: "When Malmi asks who should take over Bitcoin development responsib
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 9
+threadPosition: 241
 tags:
   - "correspondence"
   - "early-contributor"

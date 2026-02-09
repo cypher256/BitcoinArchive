@@ -13,7 +13,7 @@ description: "Malmiがビットコインと法定通貨の交換サービスの�
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 5
+threadPosition: 25
 tags:
   - "correspondence"
   - "early-contributor"
