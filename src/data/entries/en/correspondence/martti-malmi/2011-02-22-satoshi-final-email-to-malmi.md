@@ -13,7 +13,7 @@ description: "Satoshi's last known email to Malmi, containing a PGP signature an
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 10
+threadPosition: 260
 tags:
   - "correspondence"
   - "early-contributor"

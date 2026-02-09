@@ -1,0 +1,113 @@
+---
+title: "Re: Linux - dead sockets problem"
+date: 2009-11-10T16:46:04Z
+source: correspondence
+sourceUrl: "https://mmalmi.github.io/satoshi/"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+  - name: "Martti Malmi"
+    slug: "martti-malmi"
+description: "I see what happened.  All your sockets went dead somehow.  You had no"
+isSatoshi: true
+threadId: "satoshi-martti-malmi"
+threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
+threadPosition: 73
+tags:
+  - "correspondence"
+  - "early-contributor"
+  - "linux"
+secondarySources:
+  - name: "Martti Malmi's Published Email Archive"
+    url: "https://mmalmi.github.io/satoshi/"
+  - name: "COPA v. Wright Trial Exhibits"
+    url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+---
+
+I see what happened.  All your sockets went dead somehow.  You had no 
+communication with the network, but because you had 8 zombie 
+connections, it thought it was still online and kept generating blocks. 
+  You can tell this is happening when your blocks are numbered 
+sequentially, without other people's blocks interspersed, like:
+2/unconfirmed
+3/unconfirmed
+4/unconfirmed
+5/unconfirmed
+6 blocks
+7 blocks
+
+It's implausible that you would be the only one to find blocks for 6 
+blocks in a row like that.
+
+When you exited and restarted, it connected and downloaded 45 blocks 
+that the network found in your absence.  Since your blocks were not 
+broadcast to the network immediately, the network went on without them.
+
+It sounds like you had exactly the same problem on Wine.  There's 
+clearly something about socket handling on Linux that's effecting it 
+either way.
+
+I'll start researching this.  Ultimately if I can't find the root of the 
+problem, I'll have to make some kind of mechanism to watch for an 
+absence of messages and disconnect.  The only workaround for you right 
+now would be to exit and restart more often.
+
+All but one of your node connections went dead at the same time, one 
+shortly after.  IRC was still working, so it wasn't that you were 
+offline from the internet.
+
+I wonder if the status of blocks should say "#/unconfirmed" all the way 
+up to maturity (119/unconfirmed then 120 blocks) instead.  The meaning 
+of the number isn't as strong for blocks as for transactions.
+
+I think it would be an improvement not to count one's own blocks as 
+confirmations.  A drawback would be that the status numbers shown by 
+different nodes would not match.  The status number would no longer be 
+coordinated with the maturity countdown on blocks either.  A lighter 
+option would be a special case only if all confirmations are your own.
+
+Liberty Standard wrote:
+> I just lost 6 sets of maturing coins! I had 10 sets of bitcoins 
+> maturing. The last set was generated at about 0:22. It got to 
+> 2/unconfirmed before bitcoin got stuck. At 10:10, the bitcoin which was 
+> generated at 0:22 was still only at 2/unconfirmed. Since you had told me 
+> that I wasn't going to lose coins, I shutdown and restarted bitcoin. On 
+> the bright side, it shutdown and started up very smoothly. But 
+> unfortunately, when the blocks updated, I lost 6 sets of bitcoins. Four 
+> sets were still unconfirmed, but two sets were confirmed. And there's no 
+> trace of them now. Perhaps now that you have the 'Show Generated Coins' 
+> option available, you can put back in failed bitcoin generations. I just 
+> don't like that those bitcoins just disappeared into thin air. I'm still 
+> running the Linux build at the moment, but the Wine version is suddenly 
+> looking much more attractive now that 6 out of the 10 sets of bitcoins I 
+> generated in the past 24 hours just vanished. I've included my debug.log.
+> 
+> 
+> On Tue, Nov 10, 2009 at 1:45 AM, Liberty Standard 
+> <newlibertystandard@gmail.com <mailto:newlibertystandard@gmail.com>> wrote:
+> 
+>     The Linux build has generated a decent amount of bitcoins within the
+>     past 20 hours and I trust what you're telling me about database
+>     errors, so all signs point toward me running the Linux build from
+>     now on. The only half annoying thing about the Linux build is that
+>     my computer's fan has gone from 50% to 100%. :-P I know I can limit
+>     the CPU, so if it gets on my nerves too much and if I can live with
+>     less bitcoins being generated, perhaps I'll do that. Or maybe I just
+>     need to start listening to more music...
+> 
+...
+> 
+>                    There's no risk in shutting down while there are
+>             unconfirmed.
+>                     When you make a transaction or new block, it immediately
+>                    broadcasts it to the network.  After that, the increasing
+>                    #/confirmed number is just monitoring the outcome.
+>              There's
+>                    nothing your node does during that time to promote
+>             the acceptance.
+> 
+> 
+>
+
+*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

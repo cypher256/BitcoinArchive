@@ -13,7 +13,7 @@ description: "Satoshiがビットコインの匿名性の主張を控えめに�
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 7
+threadPosition: 197
 tags:
   - "correspondence"
   - "early-contributor"

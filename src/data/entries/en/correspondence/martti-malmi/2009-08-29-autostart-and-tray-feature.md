@@ -13,7 +13,7 @@ description: "Satoshi emphasizes that autostart with minimize-to-tray is 'a must
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
-threadPosition: 6
+threadPosition: 31
 tags:
   - "correspondence"
   - "early-contributor"
