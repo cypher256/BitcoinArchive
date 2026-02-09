@@ -1,6 +1,6 @@
 ---
 title: "Re: Bitcoin - De-emphasize the anonymous angle"
-date: 2009-11-25T00:00:00Z
+date: 2010-07-06T02:59:57Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"

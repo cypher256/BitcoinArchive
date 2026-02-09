@@ -2,13 +2,23 @@
 title: "Bitcoin P2P e-cash paper"
 date: 2008-11-15T18:02:00.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014860.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014860.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin P2P e-cash paper\"."
+  - name: "Ray Dillinger"
+    slug: "ray-dillinger"
+description: "Satoshi explains that Bitcoin uses ECC digital signatures with a new key pair for every transaction, providing pseudonymity, and that 5-10 block confirmations are typically sufficient."
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 27
 isSatoshi: true
+tags:
+  - "pseudonymity"
+  - "ecc"
+  - "digital-signatures"
+  - "confirmation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"

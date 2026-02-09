@@ -1,6 +1,6 @@
 ---
 title: "返信: ビットコイン - 後継者としてGavin Andresenを推薦"
-date: 2010-12-03T00:00:00Z
+date: 2010-12-03T19:58:40Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"

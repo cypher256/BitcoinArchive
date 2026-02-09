@@ -2,13 +2,23 @@
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-15T04:43:00.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014858.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014858.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがRay Dillingerの技術的な質問に詳細に回答し、トランザクションの仕組み、プルーフ・オブ・ワーク、二重支払い防止について説明した投稿。"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+description: "ビットコインがHashcashスタイルのSHA-256プルーフ・オブ・ワーク（署名ではなく）を使用していることをSatoshiが明確にし、マイニングの比例確率、アイデンティティ、二重支払い防止について説明した。"
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 26
 isSatoshi: true
+tags:
+  - "proof-of-work"
+  - "hashcash"
+  - "digital-signatures"
+  - "anonymity"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/13/"

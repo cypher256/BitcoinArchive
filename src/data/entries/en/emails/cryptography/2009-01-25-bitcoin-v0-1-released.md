@@ -2,13 +2,23 @@
 title: "Bitcoin v0.1 released"
 date: 2009-01-25T15:47:10.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2009-January/015041.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015041.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin v0.1 released\"."
+  - name: "Hal Finney"
+    slug: "hal-finney"
+description: "Satoshi discusses how proof-of-work tokens could mitigate spam by creating economic incentives that make spamming unprofitable, including the concept of reverse-spamming with fake mailboxes."
+threadId: "bitcoin-v0-1-released"
+threadTitle: "Bitcoin v0.1 released"
+threadPosition: 3
 isSatoshi: true
+tags:
+  - "spam"
+  - "proof-of-work"
+  - "incentives"
+  - "botnet"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/18/"

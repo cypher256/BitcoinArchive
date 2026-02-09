@@ -21,7 +21,7 @@ tags:
   - "bandwidth"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/3/"
+    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/2/"
 ---
 
 James A. Donald wrote:

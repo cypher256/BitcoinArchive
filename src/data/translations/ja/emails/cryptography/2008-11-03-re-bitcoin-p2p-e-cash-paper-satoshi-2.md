@@ -1,8 +1,8 @@
 ---
 title: "返信: ビットコイン P2P 電子キャッシュ論文"
-date: 2008-11-03T17:56:00Z
+date: 2008-11-13T22:56:55Z
 source: cryptography-mailing-list
-sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014816.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014849.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -12,7 +12,7 @@ participants:
 description: "Satoshiがプルーフ・オブ・ワークチェーンについて説明し、正直なノードがCPUパワーの過半数を支配している限り、ノード同士が信頼し合う必要がないことを述べた。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadTitle: "Bitcoin P2P e-cash paper"
-threadPosition: 4
+threadPosition: 22
 isSatoshi: true
 tags:
   - "proof-of-work"
@@ -20,7 +20,7 @@ tags:
   - "trust"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/4/"
+    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
 translationStatus: complete
 ---
 

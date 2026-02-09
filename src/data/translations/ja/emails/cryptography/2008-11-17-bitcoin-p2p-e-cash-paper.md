@@ -2,13 +2,23 @@
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-17T17:24:43.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014863.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014863.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがピアネットワーキングのブロードキャストメカニズムについて説明し、ソースコードの近日公開を告知した投稿。"
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "ノードが新しいブロックとトランザクションのハッシュリストを交換するインベントリベースのブロードキャストメカニズムをSatoshiが説明し、1年半の開発を経てソースコードが間もなくリリースされると述べた。"
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 30
 isSatoshi: true
+tags:
+  - "networking"
+  - "block-propagation"
+  - "inventory"
+  - "implementation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/15/"

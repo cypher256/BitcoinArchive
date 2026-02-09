@@ -2,13 +2,23 @@
 title: "Bitcoin P2P e-cash paper"
 date: 2008-11-17T17:24:43.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014863.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014863.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin P2P e-cash paper\"."
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "Satoshi describes the inventory-based broadcast mechanism where nodes exchange hash lists of new blocks and transactions, and notes that the source code will be released soon after a year and a half of development."
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 30
 isSatoshi: true
+tags:
+  - "networking"
+  - "block-propagation"
+  - "inventory"
+  - "implementation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/15/"

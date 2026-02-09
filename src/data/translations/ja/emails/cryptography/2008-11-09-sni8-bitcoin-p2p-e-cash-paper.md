@@ -2,13 +2,22 @@
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-09T16:31:26.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014838.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014838.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが同時にブロックが生成された場合のチェーン分岐の解決について説明した投稿。"
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "2つのノードが異なるトランザクションセットを持つブロックを同時に作成した場合の競合解決方法をSatoshiが説明した。"
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 16
 isSatoshi: true
+tags:
+  - "fork-resolution"
+  - "block-propagation"
+  - "consensus"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/8/"

@@ -1,14 +1,22 @@
 ---
 title: "ビットコイン v0.1 リリース"
-date: 2009-01-08T19:27:40.000Z
+date: 2009-01-08T19:27:40Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがビットコインの最初のリリースであるv0.1を発表し、ダウンロードリンク、セットアップ手順、コインの配布スケジュールを共有した投稿。"
+description: "Satoshiがビットコインv0.1のリリースを発表。Windows向けのビットコインソフトウェア初の動作する実装で、ソースコードが含まれていた。"
+threadId: "bitcoin-v0-1-released"
+threadTitle: "Bitcoin v0.1 released"
+threadPosition: 1
 isSatoshi: true
+tags:
+  - "release"
+  - "v0.1"
+  - "software"
+  - "announcement"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"

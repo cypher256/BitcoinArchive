@@ -2,13 +2,23 @@
 title: "Bitcoin P2P e-cash paper"
 date: 2008-11-10T22:18:20.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014843.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014843.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin P2P e-cash paper\"."
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "Satoshi explains transaction finality, the target of 10-minute block intervals, and how Bitcoin transactions become sufficiently irreversible in 1-2 hours."
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 19
 isSatoshi: true
+tags:
+  - "double-spending"
+  - "transaction-finality"
+  - "block-timing"
+  - "confirmation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/10/"

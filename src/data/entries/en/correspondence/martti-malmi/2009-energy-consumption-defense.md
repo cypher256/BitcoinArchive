@@ -1,6 +1,6 @@
 ---
 title: "Re: Bitcoin - Defense of mining energy consumption"
-date: 2009-08-24T00:00:00Z
+date: 2009-05-03T22:32:26Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"

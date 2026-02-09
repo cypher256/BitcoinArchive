@@ -2,13 +2,23 @@
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-10T22:18:20.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014843.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014843.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが二重支払いの競争の解決、ブロック生成間隔、即時の取り消し不能性について説明した投稿。"
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "Satoshiがトランザクションの確定性、10分間のブロック間隔目標、ビットコイントランザクションが1〜2時間で十分に不可逆となる仕組みを説明した。"
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 19
 isSatoshi: true
+tags:
+  - "double-spending"
+  - "transaction-finality"
+  - "block-timing"
+  - "confirmation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/10/"
