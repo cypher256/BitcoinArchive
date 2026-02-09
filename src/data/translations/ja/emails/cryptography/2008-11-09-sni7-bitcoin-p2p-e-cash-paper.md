@@ -2,13 +2,22 @@
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-09T03:09:49.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014833.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014833.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがプルーフ・オブ・ワークチェーンによる同期化の問題解決とトランザクションの競合解決について説明した投稿。"
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "Satoshiがプルーフ・オブ・ワークチェーンが同期化問題をどのように解決し、信頼を必要とせずにグローバルな共有ビューを確立するかを説明した。"
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 12
 isSatoshi: true
+tags:
+  - "synchronization"
+  - "consensus"
+  - "proof-of-work"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/7/"

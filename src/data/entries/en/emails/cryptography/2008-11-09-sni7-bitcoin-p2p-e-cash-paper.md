@@ -2,13 +2,22 @@
 title: "Bitcoin P2P e-cash paper"
 date: 2008-11-09T03:09:49.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014833.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014833.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin P2P e-cash paper\"."
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "Satoshi explains how the proof-of-work chain solves the synchronization problem and establishes a globally shared view without requiring trust."
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 12
 isSatoshi: true
+tags:
+  - "synchronization"
+  - "consensus"
+  - "proof-of-work"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/7/"

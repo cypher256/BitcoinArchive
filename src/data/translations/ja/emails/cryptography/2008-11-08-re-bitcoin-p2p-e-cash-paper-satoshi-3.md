@@ -1,35 +1,46 @@
 ---
 title: "返信: ビットコイン P2P 電子キャッシュ論文"
-date: 2008-11-08T22:54:00Z
+date: 2008-11-08T18:54:38Z
 source: cryptography-mailing-list
-sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014822.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014831.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
   - name: "Ray Dillinger"
     slug: "ray-dillinger"
-description: "Satoshiが51%攻撃に関する懸念に返信し、攻撃者がシステムを破壊することを不合理にする経済的インセンティブについて説明した。"
+description: "Ray Dillingerの「35%のインフレ率」という主張にSatoshiが返答し、難易度調整が生産量を一定に保つ仕組みとトランザクション手数料による代替インセンティブについて説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadTitle: "Bitcoin P2P e-cash paper"
-threadPosition: 7
+threadPosition: 10
 isSatoshi: true
 tags:
-  - "51-percent-attack"
-  - "incentives"
-  - "security"
+  - "difficulty-adjustment"
+  - "inflation"
+  - "transaction-fees"
+  - "mining"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/9/"
+    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/5/"
 translationStatus: complete
 ---
 
-Ray Dillingerの投稿：
-> 「通貨」は、誰かがコインを生成し続ける意思がある限り
-> 約35%のインフレ率となる…
+Ray Dillinger：
+> 「通貨」はコンピューターが年間約35%速くなるため
+> 約35%のインフレ率である
+> …35%のインフレ率はテクノロジーによって
+> ほぼ保証されている
 
-むしろ逆に近い。ノード数が増えると、新しいコインの生成はより困難になる。これはプルーフ・オブ・ワークの難易度が1時間あたりの一定のブロック数を目標に調整されるためである。ノードが増えると、難易度はそれに比例して上昇する。
+ハードウェア速度の向上には対処している：「ハードウェア速度の向上とノードの運用への関心の変動を時間の経過とともに補正するため、プルーフ・オブ・ワークの難易度は1時間あたりのブロック数の平均を目標とする移動平均によって決定される。生成が速すぎる場合、難易度が上がる。」
 
-新しいコインの生成は、金の採掘者が資源を費やして金を流通に追加することに類似している。我々の場合、費やされるのはCPU時間と電力である。
+コンピューターが高速化し、ビットコインの生成に投入される総計算能力が増加すると、難易度は総新規生産量を一定に保つように比例して上昇する。したがって、将来毎年どれだけの新しいビットコインが生成されるかは事前にわかっている。
 
-インセンティブはトランザクション手数料でも賄うことができる。トランザクションのアウトプットの値がインプットの値より小さい場合、その差額はトランザクションを含むブロックのインセンティブ値に加算されるトランザクション手数料となる。所定の数のコインが流通に入ると、インセンティブは完全にトランザクション手数料に移行でき、完全にインフレーションフリーとなる。
+新しいコインが生産されることは通貨供給量が計画的に増加することを意味するが、必ずしもインフレになるわけではない。通貨供給量の増加が利用者数の増加と同じ率で増加すれば、物価は安定する。需要ほど速く増加しなければ、デフレが起こり、通貨の初期保有者はその価値の上昇を目にすることになる。
+
+コインは何らかの方法で最初に分配されなければならず、一定の生成率が最良の方式と思われる。
+
+Satoshi Nakamoto
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending "unsubscribe cryptography" to majordomo at metzdowd.com

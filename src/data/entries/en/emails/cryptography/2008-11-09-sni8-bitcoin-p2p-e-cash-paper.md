@@ -2,13 +2,22 @@
 title: "Bitcoin P2P e-cash paper"
 date: 2008-11-09T16:31:26.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014838.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014838.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin P2P e-cash paper\"."
+  - name: "James A. Donald"
+    slug: "james-donald"
+description: "Satoshi explains how competing blocks are resolved when two nodes simultaneously create blocks with different transaction sets."
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 16
 isSatoshi: true
+tags:
+  - "fork-resolution"
+  - "block-propagation"
+  - "consensus"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/8/"

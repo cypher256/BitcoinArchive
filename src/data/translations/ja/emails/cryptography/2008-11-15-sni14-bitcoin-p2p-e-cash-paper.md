@@ -2,13 +2,23 @@
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-15T18:02:00.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014860.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014860.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがRay Dillingerの質問に回答し、ECCデジタル署名、疑似匿名性、トランザクションの取り消し不能性、二重支払い対策について説明した投稿。"
+  - name: "Ray Dillinger"
+    slug: "ray-dillinger"
+description: "ビットコインがトランザクションごとに新しい鍵ペアを用いたECC電子署名を使用し仮名性を提供していること、また5〜10ブロックの承認で通常十分であることをSatoshiが説明した。"
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 27
 isSatoshi: true
+tags:
+  - "pseudonymity"
+  - "ecc"
+  - "digital-signatures"
+  - "confirmation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"

@@ -1,6 +1,6 @@
 ---
 title: "Final email from Satoshi to Malmi"
-date: 2011-02-22T00:00:00Z
+date: 2011-02-22T19:49:19Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"

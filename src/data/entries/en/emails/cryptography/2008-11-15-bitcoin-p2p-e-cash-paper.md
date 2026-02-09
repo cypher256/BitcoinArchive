@@ -2,13 +2,23 @@
 title: "Bitcoin P2P e-cash paper"
 date: 2008-11-15T04:43:00.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2008-November/014858.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014858.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin P2P e-cash paper\"."
+  - name: "Hal Finney"
+    slug: "hal-finney"
+description: "Satoshi clarifies that Bitcoin uses Hashcash-style SHA-256 proof-of-work (not signatures), explains the proportional mining chances, and addresses identity and double-spending prevention."
+threadId: "bitcoin-p2p-e-cash-paper"
+threadTitle: "Bitcoin P2P e-cash paper"
+threadPosition: 26
 isSatoshi: true
+tags:
+  - "proof-of-work"
+  - "hashcash"
+  - "digital-signatures"
+  - "anonymity"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/13/"

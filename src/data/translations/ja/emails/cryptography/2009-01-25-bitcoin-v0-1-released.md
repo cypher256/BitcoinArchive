@@ -2,13 +2,23 @@
 title: "ビットコイン v0.1 リリース"
 date: 2009-01-25T15:47:10.000Z
 source: cryptography-mailing-list
-sourceUrl: "http://www.metzdowd.com/pipermail/cryptography/2009-January/015041.html"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015041.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがスパム対策としてのプルーフ・オブ・ワークトークンの可能性と、スパマーに対する逆スパムの経済的メカニズムについて説明した投稿。"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+description: "プルーフ・オブ・ワークトークンがスパムを不採算にする経済的インセンティブを生み出すことでスパムを軽減する方法を、偽メールボックスによるリバーススパミングの概念を含めてSatoshiが議論した。"
+threadId: "bitcoin-v0-1-released"
+threadTitle: "Bitcoin v0.1 released"
+threadPosition: 3
 isSatoshi: true
+tags:
+  - "spam"
+  - "proof-of-work"
+  - "incentives"
+  - "botnet"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/18/"

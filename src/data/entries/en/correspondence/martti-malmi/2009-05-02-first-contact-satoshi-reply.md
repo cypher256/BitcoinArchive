@@ -1,6 +1,6 @@
 ---
 title: "Re: Bitcoin"
-date: 2009-05-02T18:06:58Z
+date: 2009-05-02T17:06:58Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
