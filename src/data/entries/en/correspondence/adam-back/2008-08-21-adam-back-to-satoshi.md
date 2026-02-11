@@ -29,4 +29,4 @@ secondarySources:
 
 *[Satoshi subsequently replied: "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." He then contacted Wei Dai directly on August 22, 2008, and cited b-money in the Bitcoin whitepaper.]*
 
-*[Source: This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. The complete email chain (5 emails total) was filed by Adam Back as a witness statement.]*
+*[Source: This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. The complete email chain (5 emails total) was filed by Adam Back as a witness statement. Only the first two emails (Satoshi's initial contact and Back's reply) are archived here; the remaining three have not been published in full.]*
