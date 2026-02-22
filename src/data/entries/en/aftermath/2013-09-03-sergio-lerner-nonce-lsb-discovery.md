@@ -41,7 +41,7 @@ The pattern was exclusive to unspent coinbases (Satoshi's blocks) and absent fro
 
 **Significance:**
 
-This LSB restriction to approximately **58 out of 256 possible values** ([0..9] ∪ [19..58]) was a completely independent line of evidence from the ExtraNonce analysis. It proved the dominant miner used custom software that partitioned the nonce search space — assigning different LSB ranges to different threads or processes to avoid duplicate work.
+This LSB restriction to approximately **50 out of 256 possible values** ([0..9] ∪ [19..58]) was a completely independent line of evidence from the ExtraNonce analysis. It proved the dominant miner used custom software that partitioned the nonce search space — assigning different LSB ranges to different threads or processes to avoid duplicate work.
 
 **Initial hypotheses:**
 
