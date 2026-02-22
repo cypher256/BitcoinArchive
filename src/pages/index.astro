@@ -6,6 +6,52 @@ import { useTranslations, getEntries, localePath } from '../i18n/utils';
 const lang = 'en';
 const t = useTranslations(lang);
 const entries = await getEntries(lang);
+
+// Tag counts
+const tagCounts = new Map<string, number>();
+for (const entry of entries) {
+  for (const tag of entry.data.tags ?? []) {
+    tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+  }
+}
+const topTags = Array.from(tagCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 24);
+const maxTagCount = topTags[0]?.[1] ?? 1;
+
+// Source counts
+const sourceCounts = new Map<string, number>();
+for (const entry of entries) {
+  sourceCounts.set(entry.data.source, (sourceCounts.get(entry.data.source) || 0) + 1);
+}
+const topSources = Array.from(sourceCounts.entries())
+  .sort((a, b) => b[1] - a[1]);
+const maxSourceCount = topSources[0]?.[1] ?? 1;
+
+// Participant counts
+const participantMap = new Map<string, { name: string; count: number }>();
+for (const entry of entries) {
+  for (const p of entry.data.participants) {
+    const existing = participantMap.get(p.slug);
+    participantMap.set(p.slug, {
+      name: p.name,
+      count: (existing?.count || 0) + 1,
+    });
+  }
+}
+const topParticipants = Array.from(participantMap.entries())
+  .sort((a, b) => b[1].count - a[1].count)
+  .slice(0, 8);
+const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
+
+// Latest entries
+const latestEntries = [...entries]
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 10);
+
+function tagWeight(count: number, max: number): number {
+  return Math.max(1, Math.min(4, Math.ceil(Math.sqrt(count / max) * 4)));
+}
 ---
 
 <BaseLayout
@@ -40,9 +86,65 @@ const entries = await getEntries(lang);
       </a>
     </section>
 
-    <section class="recent">
-      <h2>{t('nav.entries')}</h2>
-      {entries.map((entry) => (
+    <section class="dashboard-section">
+      <div class="section-header">
+        <h2>{t('home.popularTags')}</h2>
+        <a href={localePath('/tags/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      <div class="tag-cloud">
+        {topTags.map(([tag, count]) => (
+          <a
+            href={localePath(`/tags/${tag}/`, lang)}
+            class="tag-tile"
+            data-weight={tagWeight(count, maxTagCount)}
+          >
+            {tag}
+            <span class="tile-count">{count}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <div class="dashboard-grid">
+      <section class="dashboard-section">
+        <div class="section-header">
+          <h2>{t('home.topSources')}</h2>
+          <a href={localePath('/sources/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+        </div>
+        <div class="rank-list">
+          {topSources.map(([source, count]) => (
+            <a href={localePath(`/sources/${source}/`, lang)} class="rank-item">
+              <div class="rank-bar" style={`width: ${Math.round((count / maxSourceCount) * 100)}%`}></div>
+              <span class="rank-name">{t(`source.${source}` as any)}</span>
+              <span class="rank-count">{count}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="dashboard-section">
+        <div class="section-header">
+          <h2>{t('home.topParticipants')}</h2>
+          <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+        </div>
+        <div class="rank-list">
+          {topParticipants.map(([slug, { name, count }]) => (
+            <a href={localePath(`/participants/${slug}/`, lang)} class="rank-item">
+              <div class="rank-bar" style={`width: ${Math.round((count / maxParticipantCount) * 100)}%`}></div>
+              <span class="rank-name">{name}</span>
+              <span class="rank-count">{count}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+
+    <section class="dashboard-section">
+      <div class="section-header">
+        <h2>{t('home.latestEntries')}</h2>
+        <a href={localePath('/entries/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      {latestEntries.map((entry) => (
         <EntryCard
           id={entry.id}
           title={entry.data.title}
@@ -60,11 +162,11 @@ const entries = await getEntries(lang);
 </BaseLayout>
 
 <style>
+  /* Hero */
   .hero {
     text-align: center;
-    padding: 3rem 0 2rem;
-    border-bottom: 1px solid var(--color-border);
-    margin-bottom: 2rem;
+    padding: 2.5rem 0 1.5rem;
+    margin-bottom: 0;
   }
   .hero h1 {
     margin: 0;
@@ -82,11 +184,14 @@ const entries = await getEntries(lang);
     max-width: 600px;
     margin: 1rem auto 0;
   }
+
+  /* Stats Bar */
   .stats {
     display: flex;
     justify-content: center;
     gap: 3rem;
     padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
     margin-bottom: 2rem;
   }
@@ -95,12 +200,8 @@ const entries = await getEntries(lang);
     text-decoration: none;
     color: inherit;
   }
-  .stat:hover .stat-number {
-    color: var(--color-text);
-  }
-  .stat:hover .stat-label {
-    color: var(--color-text);
-  }
+  .stat:hover .stat-number { color: var(--color-text); }
+  .stat:hover .stat-label { color: var(--color-text); }
   .stat-number {
     display: block;
     font-family: var(--font-heading);
@@ -113,7 +214,153 @@ const entries = await getEntries(lang);
     font-size: 0.85rem;
     color: var(--color-text-muted);
   }
-  .recent h2 {
-    margin-top: 0;
+
+  /* Dashboard Sections */
+  .dashboard-section {
+    margin-bottom: 2.5rem;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+  }
+  .section-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .view-all {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+  .view-all:hover {
+    color: var(--color-accent);
+  }
+
+  /* Tag Cloud */
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .tag-tile {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .tag-tile:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .tile-count {
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+  .tag-tile[data-weight="1"] {
+    background: rgba(180, 83, 9, 0.06);
+    color: var(--color-text-muted);
+  }
+  .tag-tile[data-weight="2"] {
+    background: rgba(180, 83, 9, 0.12);
+    color: var(--color-text);
+  }
+  .tag-tile[data-weight="3"] {
+    background: rgba(180, 83, 9, 0.22);
+    color: #6b3a10;
+  }
+  .tag-tile[data-weight="4"] {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  .tag-tile[data-weight="4"] .tile-count {
+    opacity: 0.85;
+  }
+
+  /* Dashboard Grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .dashboard-grid .dashboard-section {
+    margin-bottom: 1rem;
+  }
+
+  /* Rank List */
+  .rank-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .rank-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    transition: background 0.15s;
+  }
+  .rank-item:hover {
+    background: rgba(180, 83, 9, 0.04);
+  }
+  .rank-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(180, 83, 9, 0.07);
+    border-radius: 6px;
+    transition: background 0.15s;
+  }
+  .rank-item:hover .rank-bar {
+    background: rgba(180, 83, 9, 0.12);
+  }
+  .rank-name {
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .rank-count {
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero h1 {
+      font-size: 2rem;
+    }
   }
 </style>
