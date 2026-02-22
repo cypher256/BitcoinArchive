@@ -1,5 +1,5 @@
 ---
-import { useTranslations, formatDate, localePath } from '../i18n/utils';
+import { useTranslations, formatDate, localePath, translateTag } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Participant {
@@ -49,7 +49,7 @@ const sourceLabel = t(`source.${source}` as any) || source;
   <div class="tags-row">
     {tags.map((tag) => (
       <a href={localePath(`/tags/${tag}/`, lang)} class="tag-link">
-        {tag}
+        {translateTag(tag, lang)}
       </a>
     ))}
   </div>

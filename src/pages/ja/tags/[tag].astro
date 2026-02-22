@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getEntries } from '../../../i18n/utils';
+import { useTranslations, getEntries, translateTag } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const { getEntries } = await import('../../../i18n/utils');
@@ -26,12 +26,12 @@ const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 ---
 
 <BaseLayout
-  title={`${tag} - ${t('site.title')}`}
-  description={`タグ「${tag}」のエントリー一覧`}
+  title={`${translateTag(tag, lang)} - ${t('site.title')}`}
+  description={`タグ「${translateTag(tag, lang)}」のエントリー一覧`}
   lang={lang}
 >
   <div class="container">
-    <h1>{tag}</h1>
+    <h1>{translateTag(tag, lang)}</h1>
     <p class="entry-count">{filtered.length} エントリー</p>
     {filtered.map((entry) => (
       <EntryCard

@@ -36,6 +36,10 @@ const entries = jaEntries.length > 0 ? jaEntries : enEntries;
         <span class="stat-number">{new Set(entries.flatMap(e => e.data.participants.map(p => p.slug))).size}</span>
         <span class="stat-label">{t('nav.participants')}</span>
       </a>
+      <a href={localePath('/tags/', lang)} class="stat">
+        <span class="stat-number">{new Set(entries.flatMap(e => e.data.tags ?? [])).size}</span>
+        <span class="stat-label">{t('nav.tags')}</span>
+      </a>
     </section>
 
     <section class="recent">
