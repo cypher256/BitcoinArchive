@@ -1,4 +1,5 @@
 import { defaultLang, ui, type Lang } from './ui';
+import { tagTranslations } from './tags';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
 export function getLangFromUrl(url: URL): Lang {
@@ -45,4 +46,11 @@ export function formatDate(date: Date, lang: Lang): string {
 
 export function formatDateShort(date: Date): string {
   return date.toISOString().slice(0, 10);
+}
+
+export function translateTag(tag: string, lang: Lang): string {
+  if (lang === 'ja') {
+    return tagTranslations[tag] ?? tag;
+  }
+  return tag;
 }

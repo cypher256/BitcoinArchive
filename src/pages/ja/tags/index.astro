@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { useTranslations, getEntries, localePath } from '../../../i18n/utils';
+import { useTranslations, getEntries, localePath, translateTag } from '../../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -27,7 +27,7 @@ const tags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]);
       {tags.map(([tag, count]) => (
         <li>
           <a href={localePath(`/tags/${tag}/`, lang)}>
-            {tag}
+            {translateTag(tag, lang)}
           </a>
           <span class="count">({count})</span>
         </li>
