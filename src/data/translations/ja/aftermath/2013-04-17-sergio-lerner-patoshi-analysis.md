@@ -22,6 +22,10 @@ tags:
 secondarySources:
   - name: "Bitslog — Satoshi's Fortune: a more accurate figure (April 24, 2013)"
     url: "https://bitslog.com/2013/04/24/satoshi-s-fortune-a-more-accurate-figure/"
+  - name: "Bitslog — A new mystery about Satoshi (September 3, 2013)"
+    url: "https://bitslog.com/2013/09/03/new-mystery-about-satoshi/"
+  - name: "Bitslog — Satoshi's Machine (September 4, 2013)"
+    url: "https://bitslog.com/2013/09/04/satoshi-machine-one-mystery-is-solved-and-another-opens/"
   - name: "Bitslog — The Return of the Deniers and the Revenge of Patoshi (April 16, 2019)"
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
   - name: "Bitslog — The Patoshi Mining Machine (August 22, 2020)"

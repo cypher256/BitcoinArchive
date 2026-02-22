@@ -39,8 +39,12 @@ On September 16, 2022, Jameson Lopp published "Was Satoshi a Greedy Miner?" on h
 - Only **0.09%** of Satoshi's blocks were ever spent
 - Fewer than 5 minutes elapsed between Satoshi's consecutive blocks, suggesting intentional pausing between mining rounds
 
-**Central argument:**
+**Counterfactual analysis:**
 
-Lopp calculates that had Satoshi mined at full capacity without throttling, the total would have been approximately **2.19 million BTC** — nearly double the actual amount. Instead, Satoshi deliberately limited mining output, consistent with prioritizing network bootstrapping and decentralization over personal enrichment.
+Lopp models two alternative scenarios:
+1. **Full capacity (no pauses):** Mining continuously at observed 4.35 Mhps would have yielded ~**31,783 blocks / ~1.59 million BTC** — approximately 1.5× the actual amount
+2. **Maximum capacity:** Mining at the machine's full 6 Mhps would have yielded ~**43,829 blocks / ~2.19 million BTC** — nearly 2× the actual amount
+
+The ~300-second pauses between consecutive blocks and the deliberate use of only 72.5% of available hashrate demonstrate that Satoshi prioritized network bootstrapping and decentralization over personal enrichment.
 
 Building on Sergio Demian Lerner's Patoshi pattern research, Lopp's analysis provided quantitative evidence that Satoshi's mining behavior was altruistic rather than extractive. The article concludes: "Anyone who claims that Satoshi was greedy simply hasn't done the math."
