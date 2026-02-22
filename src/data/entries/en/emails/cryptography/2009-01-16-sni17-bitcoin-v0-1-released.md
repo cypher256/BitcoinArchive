@@ -12,7 +12,7 @@ participants:
 description: "Satoshi expresses confidence that some form of electronic currency will be in use within a decade, describing Bitcoin as the first attempt at a non-trust-based system."
 threadId: "bitcoin-v0-1-released"
 threadTitle: "Bitcoin v0.1 released"
-threadPosition: 2
+threadPosition: 3
 isSatoshi: true
 tags:
   - "electronic-currency"
