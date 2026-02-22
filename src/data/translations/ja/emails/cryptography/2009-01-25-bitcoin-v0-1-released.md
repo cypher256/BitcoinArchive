@@ -12,7 +12,7 @@ participants:
 description: "プルーフ・オブ・ワークトークンがスパムを不採算にする経済的インセンティブを生み出すことでスパムを軽減する方法を、偽メールボックスによるリバーススパミングの概念を含めてSatoshiが議論した。"
 threadId: "bitcoin-v0-1-released"
 threadTitle: "Bitcoin v0.1 released"
-threadPosition: 3
+threadPosition: 8
 isSatoshi: true
 tags:
   - "spam"
