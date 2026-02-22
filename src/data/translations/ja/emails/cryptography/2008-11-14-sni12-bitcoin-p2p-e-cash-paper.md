@@ -23,36 +23,36 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/12/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-Hal Finney wrote:
-> I think it is necessary that nodes keep a separate
-> pending-transaction list associated with each candidate chain.
-> ... One might also ask ... how many candidate chains must
-> a given node keep track of at one time, on average?
+Hal Finneyの投稿：
+> 各候補チェーンに関連付けた別々の
+> 保留トランザクションリストをノードが保持する必要があると思う。
+> ... また、任意の時点でノードはいくつの候補チェーンを
+> 追跡する必要があるのか平均的に尋ねたい。
 
-Fortunately, it's only necessary to keep a pending-transaction pool for the current best branch.  When a new block arrives for the best branch, ConnectBlock removes the block's transactions from the pending-tx pool.  If a different branch becomes longer, it calls DisconnectBlock on the main branch down to the fork, returning the block transactions to the pending-tx pool, and calls ConnectBlock on the new branch, sopping back up any transactions that were in both branches.  It's expected that reorgs like this would be rare and shallow.
+幸いにも、現在の最良ブランチに対する保留トランザクションプールのみを維持すれば十分だ。新しいブロックが最良ブランチに到着すると、ConnectBlockがそのブロックのトランザクションを保留トランザクションプールから削除する。別のブランチがより長くなった場合、フォークまでのメインブランチに対してDisconnectBlockを呼び出し、ブロックのトランザクションを保留トランザクションプールに戻し、新しいブランチに対してConnectBlockを呼び出し、両方のブランチに含まれていたトランザクションを吸い上げる。このような再編成は稀で浅いものになると予想される。
 
-With this optimisation, candidate branches are not really any burden.  They just sit on the disk and don't require attention unless they ever become the main chain.
+この最適化により、候補ブランチは実際にはほとんど負担にならない。ディスク上に存在するだけで、メインチェーンにならない限り注意を払う必要がない。
 
-> Or as James raised earlier, if the network broadcast
-> is reliable but depends on a potentially slow flooding
-> algorithm, how does that impact performance?
+> あるいはJamesが先に提起したように、ネットワークブロードキャストが
+> 信頼性はあるが潜在的に遅いフラッディングアルゴリズムに依存している場合、
+> パフォーマンスにどのような影響があるか？
 
-Broadcasts will probably be almost completely reliable.  TCP transmissions are rarely ever dropped these days, and the broadcast protocol has a retry mechanism to get the data from other nodes after a while.  If broadcasts turn out to be slower in practice than expected, the target time between blocks may have to be increased to avoid wasting resources.  We want blocks to usually propagate in much less time than it takes to generate them, otherwise nodes would spend too much time working on obsolete blocks.
+ブロードキャストはほぼ完全に信頼できるだろう。TCP送信が今日ドロップされることはめったにないし、ブロードキャストプロトコルにはしばらく後に他のノードからデータを取得するリトライメカニズムがある。実際にブロードキャストが予想より遅いことが判明した場合、リソースの無駄を避けるためにブロック間の目標時間を増やす必要があるかもしれない。ブロックを生成するのにかかる時間よりもはるかに短い時間でブロックが伝播することを望んでいる。そうでなければ、ノードは廃れたブロックの作業に時間を費やしすぎることになる。
 
-I'm planning to run an automated test with computers randomly sending payments to each other and randomly dropping packets.
+コンピュータがランダムに支払いを送信し、ランダムにパケットをドロップする自動テストを実行する予定だ。
 
-> 3. The bitcoin system turns out to be socially useful and valuable, so
-> that node operators feel that they are making a beneficial contribution
-> to the world by their efforts (similar to the various "@Home" compute
-> projects where people volunteer their compute resources for good causes).
+> 3. ビットコインシステムが社会的に有用で価値あるものであると判明し、
+> ノードオペレーターが自分たちの努力が世界への有益な貢献だと感じる
+> （人々が善い目的のために計算資源を提供する様々な「@Home」計算
+> プロジェクトに類似）。
 >
-> In this case it seems to me that simple altruism can suffice to keep the
-> network running properly.
+> この場合、単純な利他主義がネットワークを適切に
+> 稼働させ続けるのに十分であるように思われる。
 
-It's very attractive to the libertarian viewpoint if we can explain it properly.  I'm better with code than with words though.
+適切に説明できれば、リバタリアンの視点にとって非常に魅力的だ。ただ、私は言葉よりコードの方が得意なのだが。
 
 Satoshi Nakamoto
 

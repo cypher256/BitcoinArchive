@@ -21,29 +21,29 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/3/"
-translationStatus: pending
+translationStatus: complete
 ---
 
->> As long as honest nodes control the most CPU power on the network,
->> they can generate the longest chain and outpace any attackers.
+>> 正直なノードがネットワーク上で最も多くのCPUパワーを支配している限り、
+>> 最も長いチェーンを生成し、攻撃者を上回ることができる。
 >
-> But they don't.  Bad guys routinely control zombie farms of 100,000
-> machines or more.  People I know who run a blacklist of spam sending
-> zombies tell me they often see a million new zombies a day.
+> しかし実際には支配していない。悪者は日常的に10万台以上の
+> ゾンビファームを支配している。スパム送信ゾンビのブラックリストを
+> 運用している知人によると、1日に100万台の新しいゾンビが
+> 確認されることも珍しくないという。
 >
-> This is the same reason that hashcash can't work on today's Internet
-> -- the good guys have vastly less computational firepower than the bad
-> guys.
+> これはhashcashが今日のインターネットで機能しない理由と同じだ
+> — 善良な者たちは悪者よりもはるかに少ない計算能力しか持っていない。
 
-Thanks for bringing up that point.
+その点を指摘してくれてありがとう。
 
-I didn't really make that statement as strong as I could have.  The requirement is that the good guys collectively have more CPU power than any single attacker.
+私はその主張を十分に強く表現できていなかった。要件は、善良な者たちが集合的に、単一の攻撃者よりも多くのCPUパワーを持つことである。
 
-There would be many smaller zombie farms that are not big enough to overpower the network, and they could still make money by generating bitcoins.  The smaller farms are then the "honest nodes".  (I need a better term than "honest")  The more smaller farms resort to generating bitcoins, the higher the bar gets to overpower the network, making larger farms also too small to overpower it so that they may as well generate bitcoins too.  According to the "long tail" theory, the small, medium and merely large farms put together should add up to a lot more than the biggest zombie farm.
+ネットワークを圧倒するには小さすぎる多くの小規模ゾンビファームが存在し、それらはビットコインを生成することで利益を得ることができる。小規模ファームが「正直なノード」となる。（「正直」より良い用語が必要だ。）より多くの小規模ファームがビットコイン生成に向かうほど、ネットワークを圧倒するためのハードルは上がり、より大きなファームも圧倒するには小さすぎることになり、それらもビットコインを生成した方が良いことになる。「ロングテール」理論によれば、小規模、中規模、そして単に大規模なファームを合わせれば、最大のゾンビファームよりもはるかに多くなるはずだ。
 
-Even if a bad guy does overpower the network, it's not like he's instantly rich.  All he can accomplish is to take back money he himself spent, like bouncing a check.  To exploit it, he would have to buy something from a merchant, wait till it ships, then overpower the network and try to take his money back.  I don't think he could make as much money trying to pull a carding scheme like that as he could by generating bitcoins.  With a zombie farm that big, he could generate more bitcoins than everyone else combined.
+たとえ悪者がネットワークを圧倒したとしても、すぐに富を得られるわけではない。彼にできることは、不渡り小切手のように、自分自身が使ったお金を取り戻すことだけだ。これを悪用するには、商人から何かを購入し、発送されるまで待ち、それからネットワークを圧倒してお金を取り戻そうとする必要がある。そのようなカーディング詐欺を試みるよりも、ビットコインを生成する方が多くの利益を得られると思う。そのような巨大なゾンビファームがあれば、他の全員を合わせたよりも多くのビットコインを生成できるだろう。
 
-The Bitcoin network might actually reduce spam by diverting zombie farms to generating bitcoins instead.
+ビットコインネットワークは、ゾンビファームをビットコイン生成に転向させることで、実際にスパムを減らすかもしれない。
 
 Satoshi Nakamoto
 

@@ -22,17 +22,17 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/4/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-> [Lengthy exposition of vulnerability of a systm to use-of-force
->  monopolies ellided.]
+> [武力行使による独占に対するシステムの脆弱性に関する
+>  長い解説は省略。]
 >
-> You will not find a solution to political problems in cryptography.
+> 政治的問題の解決策を暗号学に求めても見つからないだろう。
 
-Yes, but we can win a major battle in the arms race and gain a new territory of freedom for several years.
+その通り、しかし我々は軍拡競争における大きな戦いに勝ち、数年間の新たな自由の領域を獲得することができる。
 
-Governments are good at cutting off the heads of a centrally controlled networks like Napster, but pure P2P networks like Gnutella and Tor seem to be holding their own.
+政府はNapsterのような中央集権型ネットワークの頭を切り落とすことには長けているが、GnutellaやTorのような純粋なP2Pネットワークは持ちこたえているようだ。
 
 Satoshi
 

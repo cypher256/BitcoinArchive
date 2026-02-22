@@ -21,15 +21,15 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/9/"
-translationStatus: pending
+translationStatus: complete
 ---
 
-James A. Donald wrote:
-> Furthermore, it cannot be made to work, as in the proposed system the
-> work of tracking who owns what coins is paid for by seigniorage, which
-> requires inflation.
+James A. Donaldの投稿：
+> さらに、提案されたシステムでは、誰がどのコインを持っているかを
+> 追跡する作業はシニョリッジによって賄われており、
+> これはインフレを必要とするため、機能させることはできない。
 
-If you're having trouble with the inflation issue, it's easy to tweak it for transaction fees instead.  It's as simple as this: let the output value from any transaction be 1 cent less than the input value.  Either the client software automatically writes transactions for 1 cent more than the intended payment value, or it could come out of the payee's side.  The incentive value when a node finds a proof-of-work for a block could be the total of the fees in the block.
+インフレの問題で困っているなら、代わりにトランザクション手数料に調整するのは簡単だ。こう簡単なことだ：任意のトランザクションのアウトプット値をインプット値より1セント少なくする。クライアントソフトウェアが意図した支払い額より1セント多くトランザクションを自動的に書くか、受取人側から差し引くことができる。ノードがブロックのプルーフ・オブ・ワークを見つけた時のインセンティブ値は、ブロック内の手数料の合計になる。
 
 Satoshi Nakamoto
 
