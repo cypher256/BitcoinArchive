@@ -15,9 +15,10 @@ interface Props {
   isSatoshi: boolean;
   lang: Lang;
   participants?: Participant[];
+  tags?: string[];
 }
 
-const { date, author, source, sourceUrl, isSatoshi, lang, participants = [] } = Astro.props;
+const { date, author, source, sourceUrl, isSatoshi, lang, participants = [], tags = [] } = Astro.props;
 const t = useTranslations(lang);
 const sourceLabel = t(`source.${source}` as any) || source;
 ---
@@ -40,6 +41,16 @@ const sourceLabel = t(`source.${source}` as any) || source;
         </a>
         {i < participants.length - 1 && <span class="participant-sep">,&nbsp;</span>}
       </>
+    ))}
+  </div>
+)}
+
+{tags.length > 0 && (
+  <div class="tags-row">
+    {tags.map((tag) => (
+      <a href={localePath(`/tags/${tag}/`, lang)} class="tag-link">
+        {tag}
+      </a>
     ))}
   </div>
 )}
@@ -95,5 +106,28 @@ const sourceLabel = t(`source.${source}` as any) || source;
   }
   .participant-sep {
     color: var(--color-text-muted);
+  }
+  .tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .tag-link {
+    display: inline-block;
+    padding: 0.15em 0.55em;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+  .tag-link:hover {
+    color: var(--color-text);
+    border-color: var(--color-text-muted);
+    text-decoration: none;
   }
 </style>
