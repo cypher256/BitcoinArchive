@@ -49,7 +49,7 @@ const entrySchema = z.object({
     checksum: z.string(),
   }).optional(),
   aftermathType: z.enum([
-    'court-testimony', 'blog', 'interview', 'media', 'retrospective',
+    'court-testimony', 'blog', 'interview', 'media', 'retrospective', 'article', 'academic',
   ]).optional(),
   translationStatus: z.enum([
     'complete', 'partial', 'machine', 'pending',
