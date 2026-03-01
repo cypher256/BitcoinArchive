@@ -1,5 +1,5 @@
 ---
-title: "Jeff Garzik — ビットコインの最も多作な初期貢献者の一人となったLinuxカーネル開発者"
+title: "Jeff Garzik（1974–） — ビットコインの最も多作な初期貢献者の一人となったLinuxカーネル開発者"
 date: 2010-07-15T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Jeff_Garzik"

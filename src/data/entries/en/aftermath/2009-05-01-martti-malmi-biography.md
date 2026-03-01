@@ -1,5 +1,5 @@
 ---
-title: "Martti Malmi — Finnish developer who became Bitcoin's most prolific early contributor"
+title: "Martti Malmi (1988–) — Finnish developer who became Bitcoin's most prolific early contributor"
 date: 2009-05-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Martti_Malmi"

@@ -1,5 +1,5 @@
 ---
-title: "Sergio Demian Lerner — Patoshiマイニングパターンを発見したブロックチェーン研究者"
+title: "Sergio Demian Lerner（1972–） — Patoshiマイニングパターンを発見したブロックチェーン研究者"
 date: 2013-04-17T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"

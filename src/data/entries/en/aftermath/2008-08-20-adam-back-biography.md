@@ -1,5 +1,5 @@
 ---
-title: "Adam Back — Inventor of Hashcash and the first person Satoshi Nakamoto contacted"
+title: "Adam Back (1970–) — Inventor of Hashcash and the first person Satoshi Nakamoto contacted"
 date: 2008-08-20T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Adam_Back"

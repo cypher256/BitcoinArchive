@@ -1,5 +1,5 @@
 ---
-title: "NewLibertyStandard — Anonymous creator of the first Bitcoin exchange rate"
+title: "NewLibertyStandard (dates unknown) — Anonymous creator of the first Bitcoin exchange rate"
 date: 2009-10-05T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?action=profile;u=26"

@@ -1,5 +1,5 @@
 ---
-title: "Cobra — Pseudonymous operator of bitcoin.org"
+title: "Cobra (dates unknown) — Pseudonymous operator of bitcoin.org"
 date: 2021-06-28T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin.org"
@@ -9,7 +9,7 @@ participants:
     slug: "cobra"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Cobra (also known as Cøbra): Pseudonymous operator and guardian of bitcoin.org, the website originally registered by Satoshi Nakamoto and Martti Malmi. Chose to lose a copyright lawsuit by default rather than reveal his identity — then was vindicated when Craig Wright was ruled not to be Satoshi."
+description: "Cobra (also known as Cøbra): Pseudonymous operator and guardian of bitcoin.org, the website originally registered by Satoshi Nakamoto in 2008. Chose to lose a copyright lawsuit by default rather than reveal his identity — then was vindicated when Craig Wright was ruled not to be Satoshi."
 isSatoshi: false
 aftermathType: "biography"
 tags:
@@ -29,7 +29,7 @@ secondarySources:
     url: "https://bitcoin.org/"
 ---
 
-Cobra (also stylized as Cøbra) is the pseudonymous operator of bitcoin.org, the website originally registered by Satoshi Nakamoto and Martti Malmi in 2008. Cobra's real identity is unknown.
+Cobra (also stylized as Cøbra) is the pseudonymous operator of bitcoin.org, the website registered by Satoshi Nakamoto in August 2008. Cobra's real identity is unknown.
 
 **Role:**
 After Satoshi's disappearance and Martti Malmi's departure, Cobra became the custodian of bitcoin.org — maintaining the site, hosting the Bitcoin whitepaper, and managing the domain that serves as Bitcoin's primary public gateway. The position carries no formal authority over the Bitcoin protocol but holds symbolic significance as the steward of Satoshi's original website.

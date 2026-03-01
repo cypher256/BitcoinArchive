@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Forum migrates from bitcoin.org/smf to bitcointalk.org"
-date: 2011-07-22T00:00:00Z
+date: 2011-08-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Theymos"
@@ -9,7 +9,7 @@ participants:
     slug: "theymos"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "The Bitcoin Forum, originally set up by Martti Malmi at bitcoin.org/smf using Simple Machines Forum (SMF) software, migrated to the independent domain bitcointalk.org in July 2011. The migration was managed by forum administrator Theymos (Michael Marquardt) and preserved all existing posts, threads, and user accounts."
+description: "The Bitcoin Forum, originally set up by Martti Malmi at bitcoin.org/smf using Simple Machines Forum (SMF) software, migrated to the independent domain bitcointalk.org in August 2011. The migration was managed by forum administrator Theymos (Michael Marquardt) and preserved all existing posts, threads, and user accounts."
 isSatoshi: false
 aftermathType: "retrospective"
 tags:
@@ -27,7 +27,7 @@ secondarySources:
     url: "https://bitcointalk.org/"
 ---
 
-In July 2011, the Bitcoin Forum completed its migration from its original location at bitcoin.org/smf to the independent domain bitcointalk.org. This was a significant milestone in Bitcoin's community infrastructure, separating the primary discussion forum from the bitcoin.org website.
+In August 2011, the Bitcoin Forum completed its migration from its original location at bitcoin.org/smf to the independent domain bitcointalk.org. This was a significant milestone in Bitcoin's community infrastructure, separating the primary discussion forum from the bitcoin.org website.
 
 **Original Forum:**
 In November 2009, Satoshi Nakamoto initially created a forum on Zetaboards. Shortly after, Martti Malmi set up a more robust forum using Simple Machines Forum (SMF) software at bitcoin.org/smf. This SMF-based forum became the central gathering place for the early Bitcoin community, where developers, miners, and users discussed technical proposals, shared mining experiences, and coordinated development. Satoshi himself was an active participant, posting under the username "satoshi" until December 2010.

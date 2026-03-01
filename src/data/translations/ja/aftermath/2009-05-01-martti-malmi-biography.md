@@ -1,5 +1,5 @@
 ---
-title: "Martti Malmi — ビットコイン初期の最も多作な貢献者となったフィンランドの開発者"
+title: "Martti Malmi（1988–） — ビットコイン初期の最も多作な貢献者となったフィンランドの開発者"
 date: 2009-05-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Martti_Malmi"

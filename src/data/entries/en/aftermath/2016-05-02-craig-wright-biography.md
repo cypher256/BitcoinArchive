@@ -1,5 +1,5 @@
 ---
-title: "Craig Wright — Australian businessman who falsely claimed to be Satoshi Nakamoto"
+title: "Craig Wright (1970–) — Australian businessman who falsely claimed to be Satoshi Nakamoto"
 date: 2016-05-02T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Craig_Steven_Wright"

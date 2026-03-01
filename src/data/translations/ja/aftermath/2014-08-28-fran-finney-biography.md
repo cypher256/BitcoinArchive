@@ -1,5 +1,5 @@
 ---
-title: "Fran Finney — ハル・フィニーの妻、その遺志の守護者"
+title: "Fran Finney（生没年不明） — ハル・フィニーの妻、その遺志の守護者"
 date: 2014-08-28T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.alcor.org/resources/blog/member-patient-profile-hal-finney/"

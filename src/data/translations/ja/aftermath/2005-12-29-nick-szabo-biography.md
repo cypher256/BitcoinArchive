@@ -1,5 +1,5 @@
 ---
-title: "Nick Szabo — Bit Goldとスマートコントラクトの考案者"
+title: "Nick Szabo（1964–） — Bit Goldとスマートコントラクトの考案者"
 date: 2005-12-29T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Nick_Szabo"

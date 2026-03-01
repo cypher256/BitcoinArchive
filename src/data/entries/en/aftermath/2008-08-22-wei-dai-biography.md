@@ -1,5 +1,5 @@
 ---
-title: "Wei Dai — Computer scientist, creator of b-money and Crypto++, cited in the Bitcoin white paper"
+title: "Wei Dai (dates unknown) — Computer scientist, creator of b-money and Crypto++, cited in the Bitcoin white paper"
 date: 2008-08-22T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Wei_Dai"

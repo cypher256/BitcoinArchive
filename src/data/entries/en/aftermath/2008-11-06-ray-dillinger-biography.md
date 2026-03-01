@@ -1,5 +1,5 @@
 ---
-title: "Ray Dillinger — Cryptographer who reviewed Bitcoin's code before its public release"
+title: "Ray Dillinger (dates unknown) — Cryptographer who reviewed Bitcoin's code before its public release"
 date: 2008-11-06T05:14:37Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216771.0"

@@ -1,5 +1,5 @@
 ---
-title: "James A. Donald — ビットコインホワイトペーパーに最初に返信した暗号学者"
+title: "James A. Donald（生没年不明） — ビットコインホワイトペーパーに最初に返信した暗号学者"
 date: 2008-11-02T23:46:23Z
 source: aftermath
 sourceUrl: "https://en.bitcoin.it/wiki/James_A._Donald"

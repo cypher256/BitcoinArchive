@@ -1,5 +1,5 @@
 ---
-title: "Gavin Andresen — Software developer who became Bitcoin's lead maintainer after Satoshi's departure"
+title: "Gavin Andresen (1966–) — Software developer who became Bitcoin's lead maintainer after Satoshi's departure"
 date: 2010-06-11T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"

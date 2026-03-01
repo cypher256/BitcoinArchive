@@ -1,5 +1,5 @@
 ---
-title: "Adam Back — Hashcashの発明者、サトシ・ナカモトが最初に連絡を取った人物"
+title: "Adam Back（1970–） — Hashcashの発明者、サトシ・ナカモトが最初に連絡を取った人物"
 date: 2008-08-20T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Adam_Back"

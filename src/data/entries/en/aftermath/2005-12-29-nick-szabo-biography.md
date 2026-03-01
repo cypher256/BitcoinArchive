@@ -1,5 +1,5 @@
 ---
-title: "Nick Szabo — Creator of Bit Gold and smart contracts"
+title: "Nick Szabo (1964–) — Creator of Bit Gold and smart contracts"
 date: 2005-12-29T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Nick_Szabo"

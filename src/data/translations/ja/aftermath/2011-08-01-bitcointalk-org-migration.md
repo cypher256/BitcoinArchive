@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Forumがbitcoin.org/smfからbitcointalk.orgに移行"
-date: 2011-07-22T00:00:00Z
+date: 2011-08-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Theymos"
@@ -9,7 +9,7 @@ participants:
     slug: "theymos"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Martti MalmiがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに設置したBitcoin Forumが、2011年7月に独立ドメインbitcointalk.orgに移行した。移行はフォーラム管理者のTheymos（Michael Marquardt）が管理し、既存の投稿、スレッド、ユーザーアカウントはすべて保存された。"
+description: "Martti MalmiがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに設置したBitcoin Forumが、2011年8月に独立ドメインbitcointalk.orgに移行した。移行はフォーラム管理者のTheymos（Michael Marquardt）が管理し、既存の投稿、スレッド、ユーザーアカウントはすべて保存された。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:
@@ -28,7 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2011年7月、Bitcoin Forumはbitcoin.org/smfの元の場所から独立ドメインbitcointalk.orgへの移行を完了した。これはビットコインのコミュニティインフラにおける重要なマイルストーンであり、主要なディスカッションフォーラムがbitcoin.orgウェブサイトから分離された。
+2011年8月、Bitcoin Forumはbitcoin.org/smfの元の場所から独立ドメインbitcointalk.orgへの移行を完了した。これはビットコインのコミュニティインフラにおける重要なマイルストーンであり、主要なディスカッションフォーラムがbitcoin.orgウェブサイトから分離された。
 
 **オリジナルのフォーラム：**
 2009年11月、サトシ・ナカモトはまずZetaboardsにフォーラムを作成した。その直後、Martti MalmiがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに、より本格的なフォーラムを設置した。このSMFベースのフォーラムは初期のビットコインコミュニティの中心的な集会場所となり、開発者、マイナー、ユーザーが技術提案を議論し、マイニング体験を共有し、開発を調整した。サトシ自身もユーザー名「satoshi」で積極的に参加し、2010年12月まで投稿を続けた。

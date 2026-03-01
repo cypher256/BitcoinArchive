@@ -1,5 +1,5 @@
 ---
-title: "Wei Dai — b-moneyとCrypto++の考案者、ビットコインホワイトペーパーで引用されたコンピューターサイエンティスト"
+title: "Wei Dai（生没年不明） — b-moneyとCrypto++の考案者、ビットコインホワイトペーパーで引用されたコンピューターサイエンティスト"
 date: 2008-08-22T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Wei_Dai"

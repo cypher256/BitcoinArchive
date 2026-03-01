@@ -1,5 +1,5 @@
 ---
-title: "Cobra — bitcoin.orgの匿名運営者"
+title: "Cobra（生没年不明） — bitcoin.orgの匿名運営者"
 date: 2021-06-28T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin.org"
@@ -9,7 +9,7 @@ participants:
     slug: "cobra"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Cobra（Cøbraとも表記）：サトシ・ナカモトとMartti Malmiが登録したbitcoin.orgの匿名運営者・守護者。身元を明かすくらいなら著作権訴訟に負ける方を選び、後にCraig Wrightがサトシではないと裁定されたことで名誉を回復した。"
+description: "Cobra（Cøbraとも表記）：2008年にサトシ・ナカモトが登録したbitcoin.orgの匿名運営者・守護者。身元を明かすくらいなら著作権訴訟に負ける方を選び、後にCraig Wrightがサトシではないと裁定されたことで名誉を回復した。"
 isSatoshi: false
 aftermathType: "biography"
 tags:
@@ -30,7 +30,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Cobra（Cøbraとも表記）は、2008年にサトシ・ナカモトとMartti Malmiが登録したbitcoin.orgの匿名運営者である。Cobraの正体は不明である。
+Cobra（Cøbraとも表記）は、2008年8月にサトシ・ナカモトが登録したbitcoin.orgの匿名運営者である。Cobraの正体は不明である。
 
 **役割：**
 サトシの消失とMartti Malmiの離脱後、Cobraはbitcoin.orgの管理者となった——サイトの維持、ビットコインホワイトペーパーのホスティング、ビットコインの主要な公開窓口であるドメインの管理を行っている。この立場はビットコインプロトコルに対する公式な権限を持たないが、サトシのオリジナルウェブサイトの管理人として象徴的な意義を持つ。

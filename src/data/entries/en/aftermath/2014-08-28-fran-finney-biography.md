@@ -1,5 +1,5 @@
 ---
-title: "Fran Finney — Wife of Hal Finney and guardian of his legacy"
+title: "Fran Finney (dates unknown) — Wife of Hal Finney and guardian of his legacy"
 date: 2014-08-28T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.alcor.org/resources/blog/member-patient-profile-hal-finney/"

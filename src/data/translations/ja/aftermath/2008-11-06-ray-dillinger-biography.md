@@ -1,5 +1,5 @@
 ---
-title: "Ray Dillinger — ビットコインの公開リリース前にコードをレビューした暗号学者"
+title: "Ray Dillinger（生没年不明） — ビットコインの公開リリース前にコードをレビューした暗号学者"
 date: 2008-11-06T05:14:37Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216771.0"

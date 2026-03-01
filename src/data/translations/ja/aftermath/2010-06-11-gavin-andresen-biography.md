@@ -1,5 +1,5 @@
 ---
-title: "Gavin Andresen — サトシの離脱後にビットコインのリードメンテナーとなったソフトウェア開発者"
+title: "Gavin Andresen（1966–） — サトシの離脱後にビットコインのリードメンテナーとなったソフトウェア開発者"
 date: 2010-06-11T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"

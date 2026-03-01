@@ -1,5 +1,5 @@
 ---
-title: "Laszlo Hanyecz — ビットコイン初の商取引を行い、GPUマイニングを開拓したプログラマー"
+title: "Laszlo Hanyecz（生没年不明） — ビットコイン初の商取引を行い、GPUマイニングを開拓したプログラマー"
 date: 2010-05-22T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Laszlo_Hanyecz"

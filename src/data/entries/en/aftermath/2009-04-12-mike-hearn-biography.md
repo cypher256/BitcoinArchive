@@ -1,5 +1,5 @@
 ---
-title: "Mike Hearn — Google engineer who became an early Bitcoin contributor and corresponded with Satoshi"
+title: "Mike Hearn (dates unknown) — Google engineer who became an early Bitcoin contributor and corresponded with Satoshi"
 date: 2009-04-12T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Mike_Hearn"

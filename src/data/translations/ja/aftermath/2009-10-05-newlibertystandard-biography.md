@@ -1,5 +1,5 @@
 ---
-title: "NewLibertyStandard — 最初のビットコイン為替レートを作成した匿名の人物"
+title: "NewLibertyStandard（生没年不明） — 最初のビットコイン為替レートを作成した匿名の人物"
 date: 2009-10-05T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?action=profile;u=26"

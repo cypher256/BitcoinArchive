@@ -1,5 +1,5 @@
 ---
-title: "Dustin Trammell — ビットコインを最初期に稼働させた情報セキュリティ研究者"
+title: "Dustin Trammell（生没年不明） — ビットコインを最初期に稼働させた情報セキュリティ研究者"
 date: 2009-01-11T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.bitcoin.it/wiki/Dustin_Trammell"

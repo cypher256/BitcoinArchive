@@ -1,5 +1,5 @@
 ---
-title: "Mike Hearn — サトシと書簡を交わした初期ビットコイン貢献者のGoogleエンジニア"
+title: "Mike Hearn（生没年不明） — サトシと書簡を交わした初期ビットコイン貢献者のGoogleエンジニア"
 date: 2009-04-12T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Mike_Hearn"
