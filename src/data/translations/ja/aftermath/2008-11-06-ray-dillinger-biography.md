@@ -1,6 +1,6 @@
 ---
 title: "Ray Dillinger — ビットコインの公開リリース前にコードをレビューした暗号学者"
-date: 2008-11-08T00:00:00Z
+date: 2008-11-06T05:14:37Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216771.0"
 author: "Ray Dillinger"

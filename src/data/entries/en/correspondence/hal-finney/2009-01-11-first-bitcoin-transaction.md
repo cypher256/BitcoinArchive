@@ -9,7 +9,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Hal Finney's famous tweet 'Running bitcoin' - marking him as the first known person besides Satoshi to run the Bitcoin software. Two days later, he received the first Bitcoin transaction from Satoshi."
+description: "Hal Finney's famous tweet 'Running bitcoin' - marking him as the first known person besides Satoshi to run the Bitcoin software. The next day, he received the first Bitcoin transaction from Satoshi."
 isSatoshi: false
 tags:
   - "first-transaction"
