@@ -40,7 +40,15 @@ const rendered = await Promise.all(
   })
 );
 
-const participants = [...new Set(messages.map((m: any) => m.data.author))];
+const participantMap = new Map<string, { name: string; slug: string }>();
+for (const m of messages) {
+  for (const p of m.data.participants) {
+    if (!participantMap.has(p.slug)) {
+      participantMap.set(p.slug, p);
+    }
+  }
+}
+const participants = Array.from(participantMap.values());
 const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(messages[messages.length - 1].data.date, lang)}`;
 ---
 
@@ -54,7 +62,13 @@ const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(m
       <h1>{threadTitle}</h1>
       <div class="thread-meta">
         <span class="thread-count">{messages.length} 件のメッセージ</span>
-        <span class="thread-participants">{participants.join(', ')}</span>
+        <span class="thread-participants">
+          {participants.map((p, i) => (
+            <>
+              <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>{p.name}</a>{i < participants.length - 1 && ', '}
+            </>
+          ))}
+        </span>
         <span class="thread-dates">{dateRange}</span>
       </div>
     </header>
@@ -65,7 +79,7 @@ const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(m
           {i > 0 && <div class="thread-connector" />}
           <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'}>
             <div class="message-header">
-              <span class="author-name">{entry.data.author}</span>
+              <a href={localePath(`/participants/${entry.data.participants.find((p: any) => p.name === entry.data.author)?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: entry.data.isSatoshi }]}>{entry.data.author}</a>
               <span class="message-date">{formatDate(entry.data.date, lang)}</span>
               <span class="message-source">
                 <a href={entry.data.sourceUrl} target="_blank" rel="noopener">原文</a>
@@ -109,6 +123,29 @@ const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(m
   .thread-count {
     font-weight: 600;
     color: var(--color-accent);
+  }
+  .participant-link {
+    text-decoration: none;
+    color: var(--color-text-muted);
+  }
+  .participant-link:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+  .participant-link.satoshi {
+    color: var(--color-satoshi);
+    font-weight: 600;
+  }
+  .author-name {
+    text-decoration: none;
+    color: inherit;
+  }
+  .author-name:hover {
+    text-decoration: underline;
+  }
+  .author-name.satoshi {
+    color: var(--color-satoshi);
+    font-weight: 600;
   }
   .entry-nav {
     margin-top: 2.5rem;

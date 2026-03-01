@@ -101,6 +101,7 @@ const displayEntries = entries.filter((entry: any) => {
 
 <script is:inline>
 (function() {
+  var STORAGE_KEY = 'entries-sort';
   var list = document.getElementById('entries-list');
   var btns = document.querySelectorAll('.sort-btn');
   if (!list || !btns.length) return;
@@ -108,6 +109,38 @@ const displayEntries = entries.filter((entry: any) => {
   function getLabel(btn) {
     return btn.textContent.replace(/\s*[↑↓]$/, '');
   }
+
+  function applySort(key, order) {
+    var cards = Array.from(list.querySelectorAll('.entry-card'));
+    cards.sort(function(a, b) {
+      var av, bv;
+      if (key === 'date') { av = a.dataset.date || ''; bv = b.dataset.date || ''; }
+      else if (key === 'created') { av = a.dataset.created || ''; bv = b.dataset.created || ''; }
+      else { av = a.dataset.updated || ''; bv = b.dataset.updated || ''; }
+      return order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+    });
+    cards.forEach(function(card) { list.appendChild(card); });
+  }
+
+  function activateBtn(key, order) {
+    btns.forEach(function(b) { b.classList.remove('active'); });
+    btns.forEach(function(b) {
+      if (b.dataset.sort === key) {
+        b.classList.add('active');
+        b.dataset.order = order;
+        b.textContent = getLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+      }
+    });
+  }
+
+  // Restore saved sort
+  try {
+    var saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
+    if (saved && saved.key) {
+      activateBtn(saved.key, saved.order);
+      applySort(saved.key, saved.order);
+    }
+  } catch(e) {}
 
   btns.forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -124,17 +157,9 @@ const displayEntries = entries.filter((entry: any) => {
       }
 
       btn.textContent = getLabel(btn) + (order === 'asc' ? ' ↑' : ' ↓');
+      applySort(key, order);
 
-      var cards = Array.from(list.querySelectorAll('.entry-card'));
-      cards.sort(function(a, b) {
-        var av, bv;
-        if (key === 'date') { av = a.dataset.date || ''; bv = b.dataset.date || ''; }
-        else if (key === 'created') { av = a.dataset.created || ''; bv = b.dataset.created || ''; }
-        else { av = a.dataset.updated || ''; bv = b.dataset.updated || ''; }
-        return order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
-      });
-
-      cards.forEach(function(card) { list.appendChild(card); });
+      try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify({key: key, order: order})); } catch(e) {}
     });
   });
 })();
