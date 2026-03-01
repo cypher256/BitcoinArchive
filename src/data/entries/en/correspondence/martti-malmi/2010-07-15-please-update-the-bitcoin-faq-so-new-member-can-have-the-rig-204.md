@@ -12,7 +12,6 @@ participants:
 description: "-------- Original Message --------"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 204
 tags:
   - "correspondence"

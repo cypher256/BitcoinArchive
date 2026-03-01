@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/7/"
 threadId: "bt-request-make-this-anonymous"
-threadTitle: "Request: Make this anonymous?"
 threadPosition: 1
 translationStatus: complete
 ---

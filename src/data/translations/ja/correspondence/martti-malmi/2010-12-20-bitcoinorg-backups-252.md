@@ -12,7 +12,6 @@ participants:
 description: "マルミがbitcoin.orgの別サーバーへのバックアップ開始に同意し、PGP鍵を共有。バックアップサイズは約50MBと報告。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 252
 tags:
   - "correspondence"

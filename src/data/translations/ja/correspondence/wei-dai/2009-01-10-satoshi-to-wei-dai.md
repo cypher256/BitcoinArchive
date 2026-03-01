@@ -12,7 +12,6 @@ participants:
 description: "SatoshiがWei DaiにBitcoin v0.1のリリースを告知し、b-moneyのほぼすべての目標を達成したと述べている。Hal Finneyのシステム概要を引用。"
 isSatoshi: true
 threadId: "satoshi-wei-dai"
-threadTitle: "Satoshi ↔ Wei Dai Correspondence"
 threadPosition: 3
 tags:
   - "b-money"

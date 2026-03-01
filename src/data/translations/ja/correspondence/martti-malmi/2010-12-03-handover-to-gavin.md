@@ -12,7 +12,6 @@ participants:
 description: "Malmiがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、Satoshiは「彼を信頼している、責任感があり、プロフェッショナル」と述べてGavin Andresenを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 241
 tags:
   - "correspondence"

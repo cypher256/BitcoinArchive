@@ -12,7 +12,6 @@ participants:
 description: "マルミがbitcoin.orgサーバー上の必要なApache設定ファイルへのアクセス権限をサトシに付与したことを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 109
 tags:
   - "correspondence"

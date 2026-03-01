@@ -12,7 +12,6 @@ participants:
 description: "Satoshi celebrates the JSON-RPC server working on the first try after Malmi's successful Python test, and asks for the test code."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 165
 tags:
   - "correspondence"

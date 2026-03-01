@@ -11,7 +11,6 @@ participants:
     slug: "bill-frantz"
 description: "Security consultant Bill Frantz makes the ironic observation that botnet-controlled machines are 'among the most secure on the network' because operators work hard to keep others from compromising 'their' machines, and speculates that botnet operators could evolve into legitimate security firms funded by proof-of-work rewards."
 threadId: "bitcoin-v0-1-released"
-threadTitle: "Bitcoin v0.1 released"
 threadPosition: 6
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-finney"
 isSatoshi: false

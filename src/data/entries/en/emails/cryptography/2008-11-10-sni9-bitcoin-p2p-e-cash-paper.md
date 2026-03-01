@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi proposes transaction fees as an alternative to seigniorage, suggesting that output values be slightly less than input values to fund network incentives without inflation."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 18
 isSatoshi: true
 tags:

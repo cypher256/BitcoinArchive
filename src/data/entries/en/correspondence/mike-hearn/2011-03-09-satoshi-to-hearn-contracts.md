@@ -12,7 +12,6 @@ participants:
 description: "Satoshi gives his most detailed explanation of Bitcoin contracts, sequence numbers, nLockTime, and high-frequency trading channels. He explains why merkle branch verification alone cannot prevent double-spends."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadTitle: "Open sourced my Java SPV impl"
 threadPosition: 2
 tags:
   - "correspondence"

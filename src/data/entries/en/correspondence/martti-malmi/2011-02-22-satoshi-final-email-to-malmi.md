@@ -12,7 +12,6 @@ participants:
 description: "Satoshi's last known email to Malmi, containing a PGP signature and the mailman mailing list password. This was one of the final communications before Satoshi disappeared entirely from public life."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 260
 tags:
   - "correspondence"

@@ -11,7 +11,6 @@ participants:
     slug: "ray-dillinger"
 description: "ビットコインがトランザクションごとに新しい鍵ペアを用いたECC電子署名を使用し仮名性を提供していること、また5〜10ブロックの承認で通常十分であることをSatoshiが説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 27
 isSatoshi: true
 tags:

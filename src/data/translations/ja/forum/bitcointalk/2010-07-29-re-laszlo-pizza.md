@@ -12,7 +12,6 @@ participants:
 description: "Satoshi NakamotoがLaszloの有名なピザ購入についてコメントし、実際の商店がビットコインを受け入れるようになることへの期待を表明。"
 isSatoshi: true
 threadId: "pizza-for-bitcoins"
-threadTitle: "Pizza for bitcoins?"
 threadPosition: 2
 tags:
   - "pizza"

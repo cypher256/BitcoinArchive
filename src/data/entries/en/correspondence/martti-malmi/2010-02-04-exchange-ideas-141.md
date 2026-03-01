@@ -12,7 +12,6 @@ participants:
 description: "Satoshi suggests Liberty Reserve and paysafecards as exchange options for Malmi's Bitcoin exchange service, explaining the advantages of non-reversible payment methods."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 141
 tags:
   - "correspondence"

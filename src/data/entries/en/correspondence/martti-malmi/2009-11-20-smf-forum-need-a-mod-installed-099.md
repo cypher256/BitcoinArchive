@@ -12,7 +12,6 @@ participants:
 description: "Satoshi reports configuring the SMF forum with CSS customizations, requests help installing a mod, and shares that Liberty Standard made his first Bitcoin sale."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 99
 tags:
   - "correspondence"

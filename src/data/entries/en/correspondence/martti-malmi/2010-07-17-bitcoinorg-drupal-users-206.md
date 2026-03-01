@@ -12,7 +12,6 @@ participants:
 description: "Malmi agrees to give trusted translators Drupal accounts with revision-tracking permissions, suggesting Xunie as the first candidate."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 206
 tags:
   - "correspondence"

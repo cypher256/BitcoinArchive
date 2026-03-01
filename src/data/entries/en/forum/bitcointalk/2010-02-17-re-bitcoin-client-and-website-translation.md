@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/62/"
 threadId: "bt-bitcoin-client-and-website-translation"
-threadTitle: "Bitcoin client and website translation"
 threadPosition: 3
 ---
 

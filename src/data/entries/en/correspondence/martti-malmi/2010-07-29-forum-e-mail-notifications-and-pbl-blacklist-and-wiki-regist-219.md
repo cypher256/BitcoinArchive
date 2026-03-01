@@ -12,7 +12,6 @@ participants:
 description: "Satoshi addresses bitcoin.org being listed on the PBL spam blacklist, enabling email verification for forum registration to prevent abuse."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 219
 tags:
   - "correspondence"

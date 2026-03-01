@@ -12,7 +12,6 @@ participants:
 description: "Satoshiがコインを返送し、EC-DSAはRSAのようにメッセージを暗号化できないため、トランザクションコメントが不可能であることを説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 10
 tags:
   - "correspondence"

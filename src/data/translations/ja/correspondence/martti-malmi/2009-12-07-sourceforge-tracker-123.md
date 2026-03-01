@@ -12,7 +12,6 @@ participants:
 description: "マルミがトラッキングを回避するためSourceForgeのロゴをローカルサーバーにコピーし、SFの商標ポリシーに準拠していることを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 123
 tags:
   - "correspondence"

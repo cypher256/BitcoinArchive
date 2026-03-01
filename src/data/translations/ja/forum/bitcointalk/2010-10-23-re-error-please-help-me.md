@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/493/"
 threadId: "bt-error-please-help-me"
-threadTitle: "ERROR - PLEASE HELP ME!"
 threadPosition: 1
 translationStatus: complete
 ---

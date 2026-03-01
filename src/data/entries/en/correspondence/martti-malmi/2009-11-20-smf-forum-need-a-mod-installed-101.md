@@ -12,7 +12,6 @@ participants:
 description: "Malmi notes that the server's sendmail has not been configured yet, so PHP mail functionality is not available but is not needed at this point."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 101
 tags:
   - "correspondence"

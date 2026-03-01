@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearnが二重支払い検証の問題を認め、publish/subscribeプロトコル機能について質問し、Satoshiのマージドマイニング提案の明確化を求める。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadTitle: "Open sourced my Java SPV impl"
 threadPosition: 3
 tags:
   - "correspondence"

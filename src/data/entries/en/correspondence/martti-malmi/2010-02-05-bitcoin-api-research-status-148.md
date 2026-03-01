@@ -12,7 +12,6 @@ participants:
 description: "Satoshi reports his API research findings, noting wxWidgets' threading limitations and leaning toward JSON-RPC over XML-RPC for Bitcoin's command-line interface."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 148
 tags:
   - "correspondence"

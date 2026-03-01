@@ -12,7 +12,6 @@ participants:
 description: "Gavin Andresenは2010年5月にビットコインを発見した後、Satoshi Nakamotoとの書簡を開始し、コードの貢献を始めた。無料のBTCを配布して普及を促進するビットコイン・フォーセットを作成した。"
 isSatoshi: false
 threadId: "satoshi-gavin-andresen"
-threadTitle: "Satoshi ↔ Gavin Andresen Correspondence"
 threadPosition: 1
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Satoshiが、トランザクションが「from: unknown」と表示される理由と、「Generated (not accepted)」が2つのノードが同時にブロックを発見した際に発生することを説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 12
 tags:
   - "correspondence"

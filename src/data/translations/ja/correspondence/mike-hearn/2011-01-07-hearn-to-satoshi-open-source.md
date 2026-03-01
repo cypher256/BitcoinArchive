@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがBitcoinJはGoogleのポリシーに従いオープンソースになることを確認し、testnetでのコイン送金に成功したことを報告する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 5
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがMac上のWineでBitcoinをテストしたことを報告し、ブロック数、マイクロペイメントの承認時間、プルーフ・オブ・ワークの調整、難易度調整について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 3
 tags:
   - "correspondence"

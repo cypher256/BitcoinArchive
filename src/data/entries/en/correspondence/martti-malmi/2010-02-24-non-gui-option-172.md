@@ -12,7 +12,6 @@ participants:
 description: "Good, that gives them a little sense of ownership and responsibility."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 172
 tags:
   - "correspondence"

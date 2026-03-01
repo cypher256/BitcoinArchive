@@ -12,7 +12,6 @@ participants:
 description: "Satoshi Nakamoto gives Gavin Andresen control of the source code repository and endorses him to lead the Bitcoin project. Andresen publicly announces the transition on the Bitcointalk forum."
 isSatoshi: false
 threadId: "satoshi-gavin-andresen"
-threadTitle: "Satoshi ↔ Gavin Andresen Correspondence"
 threadPosition: 2
 tags:
   - "correspondence"

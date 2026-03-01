@@ -12,7 +12,6 @@ participants:
 description: "良いですね。翻訳者に少しでもオーナーシップと責任感を持ってもらえます。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 172
 tags:
   - "correspondence"

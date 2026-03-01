@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearn asks Satoshi whether the Electronic Funds Transfer Act could apply to Bitcoin and if the inability to do chargebacks risks making it illegal."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-chargeback"
-threadTitle: "Lack of chargeback support"
 threadPosition: 1
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Satoshi NakamotoがGavin Andresenにソースコードリポジトリの管理権を与え、ビットコインプロジェクトのリーダーとして承認した。AndresenはBitcointalkフォーラムで移行を公式に発表した。"
 isSatoshi: false
 threadId: "satoshi-gavin-andresen"
-threadTitle: "Satoshi ↔ Gavin Andresen Correspondence"
 threadPosition: 2
 tags:
   - "correspondence"

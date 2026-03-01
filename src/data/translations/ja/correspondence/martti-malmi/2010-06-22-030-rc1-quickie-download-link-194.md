@@ -12,7 +12,6 @@ participants:
 description: "了解です、監視しておきます。帯域幅は今のところ問題になっていません。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 194
 tags:
   - "correspondence"

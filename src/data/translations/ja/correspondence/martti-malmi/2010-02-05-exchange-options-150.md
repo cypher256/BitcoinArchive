@@ -12,7 +12,6 @@ participants:
 description: "マルミが取引所をまずLiberty Reserveで開始することに同意し、長期的な決済オプションとしてヨーロッパのSEPA銀行振込について議論。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 150
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearn offers to write a wiki page on Bitcoin contracts, asks about re-enabling transaction replacement, and asks whether Satoshi plans to rejoin the community. He raises the tragedy of the commons concern about mining fees."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 3
 tags:
   - "correspondence"

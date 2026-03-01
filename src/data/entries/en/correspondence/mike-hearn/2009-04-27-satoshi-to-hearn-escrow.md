@@ -12,7 +12,6 @@ participants:
 description: "Satoshi explains that Bitcoin is designed for non-reversible transactions between two parties without intermediaries, and describes planned escrow transactions using a predicate language."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-chargeback"
-threadTitle: "Lack of chargeback support"
 threadPosition: 2
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "The VPS has 320MB RAM, 50MB of which is currently free. There's also"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 137
 tags:
   - "correspondence"

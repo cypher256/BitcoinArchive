@@ -12,7 +12,6 @@ participants:
 description: "Malmi sends his debug and database logs to Satoshi to help investigate the Berkeley DB 'Bad file descriptor' exception."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 94
 tags:
   - "correspondence"

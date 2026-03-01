@@ -12,7 +12,6 @@ participants:
 description: "現在のバージョンのBitweaverでは不可能です。Bitweaverのwikiとフォーラムパッケージはそれほど高度ではありません。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 45
 tags:
   - "correspondence"

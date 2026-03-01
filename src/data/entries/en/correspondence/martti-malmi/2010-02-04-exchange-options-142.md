@@ -12,7 +12,6 @@ participants:
 description: "Satoshi advises Malmi to be cautious with payment processors for the exchange, suggesting creative positioning strategies and warning against credit card refunds."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 142
 tags:
   - "correspondence"

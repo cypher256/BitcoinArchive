@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "James A. Donald responds to Satoshi's Bitcoin announcement, raising the question of how the system scales and how nodes agree on a single transaction history."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 2
 inReplyTo: "emails/cryptography/2008-10-31-bitcoin-p2p-e-cash-paper"
 isSatoshi: false

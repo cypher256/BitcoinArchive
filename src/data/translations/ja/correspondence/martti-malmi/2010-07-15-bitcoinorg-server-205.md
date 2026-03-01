@@ -12,7 +12,6 @@ participants:
 description: "サトシが現在のbitcoin.orgホスティングの選択を評価し、切り替えに反対するとともに、匿名の2,000ドル寄付の状況を確認する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 205
 tags:
   - "correspondence"

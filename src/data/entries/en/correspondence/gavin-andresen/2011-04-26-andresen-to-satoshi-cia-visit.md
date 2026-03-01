@@ -12,7 +12,6 @@ participants:
 description: "Gavin Andresen replies to Satoshi's final email, accepting the alert key and disclosing that he has been invited to present Bitcoin to US intelligence agencies. Satoshi never replies to this message."
 isSatoshi: false
 threadId: "satoshi-gavin-andresen"
-threadTitle: "Satoshi ↔ Gavin Andresen Correspondence"
 threadPosition: 4
 tags:
   - "correspondence"

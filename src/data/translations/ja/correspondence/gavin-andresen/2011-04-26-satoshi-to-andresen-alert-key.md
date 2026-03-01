@@ -12,7 +12,6 @@ participants:
 description: "Satoshi Nakamotoの最後の既知のプライベートメール。ビットコインネットワークのアラートキーをGavin Andresenに移譲し、自分を「謎の影の人物」として描くのをやめるよう求め、他のことに移ったと宣言した。"
 isSatoshi: true
 threadId: "satoshi-gavin-andresen"
-threadTitle: "Satoshi ↔ Gavin Andresen Correspondence"
 threadPosition: 3
 tags:
   - "correspondence"

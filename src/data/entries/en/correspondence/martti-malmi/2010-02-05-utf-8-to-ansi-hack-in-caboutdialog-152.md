@@ -12,7 +12,6 @@ participants:
 description: "Satoshi proposes using a hex escape sequence to fix the UTF-8 copyright symbol hack in the About dialog, preventing future encoding breakage."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 152
 tags:
   - "correspondence"

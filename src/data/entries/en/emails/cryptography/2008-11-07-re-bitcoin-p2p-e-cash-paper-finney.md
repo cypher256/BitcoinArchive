@@ -11,7 +11,6 @@ participants:
     slug: "hal-finney"
 description: "Hal Finney responds positively to Bitcoin, becoming one of the first supporters. He raises questions about the computational cost and suggests potential improvements."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 9
 isSatoshi: false
 tags:

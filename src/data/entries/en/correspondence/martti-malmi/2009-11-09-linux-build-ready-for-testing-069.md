@@ -12,7 +12,6 @@ participants:
 description: "Satoshi diagnoses a block download bottleneck, explains there is no risk shutting down with unconfirmed transactions, and describes the background database shutdown and data directory options."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 69
 tags:
   - "correspondence"

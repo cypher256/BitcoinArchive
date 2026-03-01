@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/171/"
 threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
-threadTitle: "bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username"
 threadPosition: 1
 translationStatus: complete
 ---

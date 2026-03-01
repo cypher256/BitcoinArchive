@@ -12,7 +12,6 @@ participants:
 description: "How are you doing? Haven't seen you around in a while."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 191
 tags:
   - "correspondence"

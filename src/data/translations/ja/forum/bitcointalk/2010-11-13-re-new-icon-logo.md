@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/500/"
 threadId: "bt-new-icon-logo"
-threadTitle: "New icon/logo"
 threadPosition: 6
 translationStatus: complete
 ---

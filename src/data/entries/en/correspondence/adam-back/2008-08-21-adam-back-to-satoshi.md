@@ -12,7 +12,6 @@ participants:
 description: "Adam Back confirms the Hashcash citation and suggests Satoshi look at Wei Dai's b-money proposal. This referral led Satoshi to contact Wei Dai and cite b-money in the Bitcoin whitepaper."
 isSatoshi: false
 threadId: "satoshi-adam-back"
-threadTitle: "Satoshi ↔ Adam Back Correspondence"
 threadPosition: 2
 tags:
   - "hashcash"

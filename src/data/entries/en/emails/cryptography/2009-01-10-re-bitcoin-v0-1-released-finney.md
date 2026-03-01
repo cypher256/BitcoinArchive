@@ -11,7 +11,6 @@ participants:
     slug: "hal-finney"
 description: "Hal Finney congratulates Satoshi on the first alpha release and performs his famous thought experiment: if Bitcoin becomes the world's dominant payment system, each coin would be worth approximately $10 million — making early mining 'quite a good bet, with a payoff of something like 100 million to 1.'"
 threadId: "bitcoin-v0-1-released"
-threadTitle: "Bitcoin v0.1 released"
 threadPosition: 2
 inReplyTo: "emails/cryptography/2009-01-08-bitcoin-v0-1-released"
 isSatoshi: false

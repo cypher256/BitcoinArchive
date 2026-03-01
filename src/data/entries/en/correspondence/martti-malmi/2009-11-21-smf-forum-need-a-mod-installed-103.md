@@ -12,7 +12,6 @@ participants:
 description: "Satoshi reports installing the SMF File Manager mod via SSH, uploading Drupal themes, and comparing Drupal and Joomla as CMS options for bitcoin.org."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 103
 tags:
   - "correspondence"

@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/428/"
 threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
-threadTitle: "Bitcoin does NOT violate Mises' Regression Theorem"
 threadPosition: 1
 ---
 

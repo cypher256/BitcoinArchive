@@ -12,7 +12,6 @@ participants:
 description: "SatoshiがeBayのようなマーケットプレイス機能の実装について言及し、テスト用にMikeにコインを送ることを申し出る。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 8
 tags:
   - "correspondence"

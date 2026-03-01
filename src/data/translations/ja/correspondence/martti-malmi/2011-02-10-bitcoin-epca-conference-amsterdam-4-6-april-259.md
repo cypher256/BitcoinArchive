@@ -12,7 +12,6 @@ participants:
 description: "MarttiがEPCAカンファレンスの招待に返信し、担当者の手配を約束"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 259
 tags:
   - "correspondence"

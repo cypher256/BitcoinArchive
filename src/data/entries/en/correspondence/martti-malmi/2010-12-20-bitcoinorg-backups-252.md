@@ -12,7 +12,6 @@ participants:
 description: "Malmi agrees to start backing up bitcoin.org to another server and shares his PGP key, noting the backup size is approximately 50MB."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 252
 tags:
   - "correspondence"

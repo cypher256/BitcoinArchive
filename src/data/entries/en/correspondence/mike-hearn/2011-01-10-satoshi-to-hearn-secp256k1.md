@@ -12,7 +12,6 @@ participants:
 description: "Satoshi confirms Hal Finney was an early supporter, reveals that Bitcoin took 2 years of development before release, and explains his choice of ECDSA curve and key size."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 8
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Malmi expresses preference for Drupal over Joomla based on his experience, suggests updating the bitcoin.org DNS entry, and proposes obtaining a free SSL certificate."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 104
 tags:
   - "correspondence"

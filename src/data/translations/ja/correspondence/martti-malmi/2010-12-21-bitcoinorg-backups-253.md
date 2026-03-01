@@ -12,7 +12,6 @@ participants:
 description: "マルミがGPG暗号化されたbitcoin.orgの日次バックアップファイルを取得するためのwgetコマンドと認証情報を提供。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 253
 tags:
   - "correspondence"

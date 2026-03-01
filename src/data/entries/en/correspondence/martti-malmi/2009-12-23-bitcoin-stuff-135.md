@@ -12,7 +12,6 @@ participants:
 description: "I'd also need at least the command line tools to check if coins have"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 135
 tags:
   - "correspondence"

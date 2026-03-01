@@ -12,7 +12,6 @@ participants:
 description: "Satoshiがステートフルなスクリプトオペコードがチェーンフォーク攻撃を可能にする理由を説明し、信頼なしに安全なタイムロック預金のためのnLockTimeを使用した詳細なステップバイステップのマルチシグコントラクトパターンを提示する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 2
 tags:
   - "correspondence"

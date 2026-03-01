@@ -12,7 +12,6 @@ participants:
 description: "Email regarding Fwd: Bitcoin question"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 255
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Satoshi explains why stateful script opcodes would enable chain-forking attacks, then presents a detailed step-by-step multisig contract pattern using nLockTime for safe time-locked deposits without trust."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 2
 tags:
   - "correspondence"

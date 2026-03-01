@@ -12,7 +12,6 @@ participants:
 description: "Satoshi addresses concerns about Bitcoin's energy consumption, arguing it would be far less than traditional banking while acknowledging the tension between economic liberty and conservation."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 3
 tags:
   - "correspondence"

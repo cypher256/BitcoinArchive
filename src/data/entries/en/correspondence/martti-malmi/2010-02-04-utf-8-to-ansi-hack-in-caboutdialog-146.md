@@ -12,7 +12,6 @@ participants:
 description: "Satoshi asks Malmi about a code change in the About dialog's UTF-8 to ANSI conversion hack for the copyright symbol in wxWidgets."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 146
 tags:
   - "correspondence"

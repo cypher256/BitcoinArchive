@@ -9,7 +9,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシ・ナカモトが暗号学メーリングリストでビットコインを初めて公表。信頼できる第三者を必要としない、完全なP2P電子キャッシュシステムを紹介した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 1
 isSatoshi: true
 tags:

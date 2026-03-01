@@ -12,7 +12,6 @@ participants:
 description: "Started very quickly when I got connected and downloaded quicker than"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 70
 tags:
   - "correspondence"

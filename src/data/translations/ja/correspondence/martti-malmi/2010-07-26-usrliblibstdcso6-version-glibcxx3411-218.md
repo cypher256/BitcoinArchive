@@ -12,7 +12,6 @@ participants:
 description: "GLIBCXXの問題の修正方法を模索し、Bitcoin 0.3.3への早急なアップグレードを要請"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 218
 tags:
   - "correspondence"

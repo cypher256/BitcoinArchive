@@ -12,7 +12,6 @@ participants:
 description: "Satoshi's first reply to Martti Malmi, who had offered to help with Bitcoin. Satoshi praises Malmi's understanding of Bitcoin and asks him to help write website content and a FAQ."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 1
 tags:
   - "correspondence"

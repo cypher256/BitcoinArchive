@@ -12,7 +12,6 @@ participants:
 description: "Laszlo Hanyeczがビットコイン初のmacOS移植版を提供し、開発、バグ修正、ソフトウェアの技術的改善についてSatoshi Nakamotoとメールのやり取りを始めた。"
 isSatoshi: false
 threadId: "satoshi-laszlo-hanyecz"
-threadTitle: "Satoshi ↔ Laszlo Hanyecz Correspondence"
 threadPosition: 1
 tags:
   - "correspondence"

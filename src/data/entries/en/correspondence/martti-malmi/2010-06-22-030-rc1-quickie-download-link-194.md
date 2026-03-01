@@ -12,7 +12,6 @@ participants:
 description: "Ok, I'll monitor it. Bandwidth hasn't been a problem so far - it's"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 194
 tags:
   - "correspondence"

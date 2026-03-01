@@ -12,7 +12,6 @@ participants:
 description: "Malmi outlines his plans for the Bitcoin exchange service, including SMS payments via ZayPay, Pecunix reserves, and IBAN transfers for buying coins."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 162
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "マルミがコミュニティ提案のbitcoin.orgミラーリング方法を共有し、信頼できるメンバーへのデータベース共有かPGP暗号化バックアップかを検討。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 250
 tags:
   - "correspondence"

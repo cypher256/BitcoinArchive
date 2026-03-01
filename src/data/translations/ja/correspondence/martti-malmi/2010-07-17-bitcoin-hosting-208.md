@@ -12,7 +12,6 @@ participants:
 description: "マルミがThufirからの安価なホスティング提案を転送し、Rackspaceとの費用差を比較しつつ、予定されている寄付次第ではRackspace継続も可能と述べる。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 208
 tags:
   - "correspondence"

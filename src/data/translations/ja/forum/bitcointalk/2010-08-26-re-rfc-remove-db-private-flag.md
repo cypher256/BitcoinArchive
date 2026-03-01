@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/419/"
 threadId: "bt-rfc-remove-db-private-flag"
-threadTitle: "RFC: remove DB_PRIVATE flag"
 threadPosition: 1
 translationStatus: complete
 ---

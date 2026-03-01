@@ -11,7 +11,6 @@ participants:
     slug: "john-levine"
 description: "インターネットの専門家John Levineがビットコインのセキュリティの前提を否定。ボットネット運営者が日常的に10万台以上のゾンビファームを制御しており、hashcashも同じ理由で失敗した——悪者は善人よりはるかに多くの計算能力を持っている——と主張した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 4
 inReplyTo: "emails/cryptography/2008-10-31-bitcoin-p2p-e-cash-paper"
 isSatoshi: false

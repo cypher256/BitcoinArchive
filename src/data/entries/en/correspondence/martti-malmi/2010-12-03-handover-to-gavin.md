@@ -12,7 +12,6 @@ participants:
 description: "When Malmi asks who should take over Bitcoin development responsibilities, Satoshi recommends Gavin Andresen, stating 'I trust him, he's responsible, professional' - a pivotal moment in Bitcoin's leadership transition."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 241
 tags:
   - "correspondence"

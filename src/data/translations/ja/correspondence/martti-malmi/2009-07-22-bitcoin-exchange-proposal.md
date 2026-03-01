@@ -12,7 +12,6 @@ participants:
 description: "Malmiがビットコインと法定通貨の交換サービスの設立を提案し、価格算定式と収益メカニズムを詳述した。これは最初期のビットコイン取引所の一つと、歴史的な初のBTC-USD取引につながった。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 25
 tags:
   - "correspondence"

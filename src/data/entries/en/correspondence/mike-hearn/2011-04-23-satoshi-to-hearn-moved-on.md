@@ -12,7 +12,6 @@ participants:
 description: "One of Satoshi's last known communications. He tells Mike Hearn he has moved on to other things and that Bitcoin is in good hands with Gavin and everyone."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 4
 tags:
   - "correspondence"

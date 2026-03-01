@@ -12,7 +12,6 @@ participants:
 description: "This is working.  A few more things and I'll upload it."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 169
 tags:
   - "correspondence"

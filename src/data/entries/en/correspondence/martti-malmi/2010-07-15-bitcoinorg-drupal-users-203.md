@@ -12,7 +12,6 @@ participants:
 description: "Satoshi proposes giving trusted translators Drupal user accounts on bitcoin.org so they can update translations directly, and discusses delegation of homepage maintenance."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 203
 tags:
   - "correspondence"

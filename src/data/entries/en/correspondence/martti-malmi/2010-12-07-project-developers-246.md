@@ -12,7 +12,6 @@ participants:
 description: "Malmi agrees to be listed on the Project Developers page and gives permission to include his email address."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 246
 tags:
   - "correspondence"

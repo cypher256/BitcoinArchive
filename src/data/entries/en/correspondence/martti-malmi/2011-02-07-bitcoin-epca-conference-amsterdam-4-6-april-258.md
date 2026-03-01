@@ -12,7 +12,6 @@ participants:
 description: "Malmi responds to an invitation from the EPCA Conference in Amsterdam, recommending Gavin Andresen or Bruce Wagner as potential Bitcoin representatives."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 258
 tags:
   - "correspondence"

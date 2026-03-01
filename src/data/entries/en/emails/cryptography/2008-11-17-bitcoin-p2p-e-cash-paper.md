@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi describes the inventory-based broadcast mechanism where nodes exchange hash lists of new blocks and transactions, and notes that the source code will be released soon after a year and a half of development."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 30
 isSatoshi: true
 tags:

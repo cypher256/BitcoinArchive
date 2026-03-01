@@ -12,7 +12,6 @@ participants:
 description: "サトシがBitcoin Linuxビルド（バージョン0.1.6-test1）のネットワークテスト準備完了を告知し、ダウンロードリンクを提供。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 63
 tags:
   - "correspondence"

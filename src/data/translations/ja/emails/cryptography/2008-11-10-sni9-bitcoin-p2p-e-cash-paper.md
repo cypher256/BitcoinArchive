@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "Satoshiがシニョリッジの代替としてトランザクション手数料を提案し、インフレなしにネットワークのインセンティブを賄うためにアウトプット値をインプット値より若干低くすることを示唆した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 18
 isSatoshi: true
 tags:

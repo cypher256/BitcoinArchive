@@ -12,7 +12,6 @@ participants:
 description: "Satoshi sends the Bitcoin Linux 0.1.6-test1 build as an email attachment for Malmi to test."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 62
 tags:
   - "correspondence"

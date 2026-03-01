@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi explains the proof-of-work chain and how nodes don't need to trust each other, as long as honest nodes control the majority of CPU power."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 22
 isSatoshi: true
 tags:

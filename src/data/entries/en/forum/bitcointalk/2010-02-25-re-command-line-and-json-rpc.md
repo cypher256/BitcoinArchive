@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/80/"
 threadId: "bt-command-line-and-json-rpc"
-threadTitle: "Command Line and JSON-RPC"
 threadPosition: 4
 ---
 

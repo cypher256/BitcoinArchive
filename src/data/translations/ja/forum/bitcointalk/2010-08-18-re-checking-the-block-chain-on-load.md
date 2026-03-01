@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/399/"
 threadId: "bt-checking-the-block-chain-on-load"
-threadTitle: "Checking the block chain on load"
 threadPosition: 2
 translationStatus: complete
 ---

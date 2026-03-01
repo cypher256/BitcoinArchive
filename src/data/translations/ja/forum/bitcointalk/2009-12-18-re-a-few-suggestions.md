@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/27/"
 threadId: "bt-a-few-suggestions"
-threadTitle: "A few suggestions"
 threadPosition: 9
 translationStatus: complete
 ---

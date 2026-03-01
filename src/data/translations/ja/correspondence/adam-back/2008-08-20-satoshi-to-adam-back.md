@@ -12,7 +12,6 @@ participants:
 description: "サトシ・ナカモトの最も初期に知られるメール。Adam BackにHashcash論文の正しい引用を確認し、ビットコインホワイトペーパーのプレリリース版を共有した。"
 isSatoshi: true
 threadId: "satoshi-adam-back"
-threadTitle: "Satoshi ↔ Adam Back Correspondence"
 threadPosition: 1
 tags:
   - "hashcash"

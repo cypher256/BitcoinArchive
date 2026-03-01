@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "「善良な者たちの集合体」が単一の攻撃者より多くのCPUパワーを持つことが要件であることをSatoshiが明確にし、小規模な事業者でも利益的にビットコインを生成できることを説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 5
 isSatoshi: true
 tags:

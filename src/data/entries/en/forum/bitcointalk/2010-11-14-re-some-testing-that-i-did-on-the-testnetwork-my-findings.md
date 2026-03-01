@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/503/"
 threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
-threadTitle: "Some testing that I did on the testnetwork, my findings."
 threadPosition: 2
 ---
 

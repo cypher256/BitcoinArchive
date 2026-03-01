@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/262/"
 threadId: "bt-bitcoind-not-responding-to-rpc"
-threadTitle: "bitcoind not responding to RPC"
 threadPosition: 2
 ---
 

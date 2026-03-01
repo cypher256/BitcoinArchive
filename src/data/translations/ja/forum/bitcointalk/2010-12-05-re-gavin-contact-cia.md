@@ -12,7 +12,6 @@ participants:
 description: "Gavin AndresenがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
-threadTitle: "WikiLeaks, CIA, and Bitcoin's future"
 threadPosition: 1
 tags:
   - "cia"

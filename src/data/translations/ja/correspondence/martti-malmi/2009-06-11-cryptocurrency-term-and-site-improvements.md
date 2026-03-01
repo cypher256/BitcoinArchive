@@ -12,7 +12,6 @@ participants:
 description: "Satoshiがビットコインを表現するために「暗号通貨（cryptocurrency）」という言葉の使用を提案し、サイトから投資に関する表現を削除するようMalmiに求めた——ビットコインのブランディング史における重要な瞬間。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 19
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Satoshi announces that the Bitcoin Linux build version 0.1.6-test1 is ready for network testing and provides a download link."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 63
 tags:
   - "correspondence"

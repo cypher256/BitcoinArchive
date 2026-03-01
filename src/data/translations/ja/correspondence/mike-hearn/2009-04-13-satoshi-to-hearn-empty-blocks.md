@@ -12,7 +12,6 @@ participants:
 description: "Satoshiが、攻撃者に追いつかれるのを防ぐために、トランザクションがなくてもチェーンを延長し続ける必要があることを説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 6
 tags:
   - "correspondence"

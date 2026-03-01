@@ -12,7 +12,6 @@ participants:
 description: "サトシがSourceForgeを避けてBitcoin 0.3.0 RC1の一時ダウンロードリンクを共有し、マルミにプロジェクトの会計係を務めるよう依頼する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 193
 tags:
   - "correspondence"

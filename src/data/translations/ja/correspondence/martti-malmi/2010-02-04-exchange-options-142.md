@@ -12,7 +12,6 @@ participants:
 description: "サトシが取引所の決済処理業者選びに慎重になるようマルミに助言し、創造的なポジショニング戦略を提案、クレジットカード返金については警告。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 142
 tags:
   - "correspondence"

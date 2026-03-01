@@ -2,6 +2,7 @@
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, localePath } from '../../../../i18n/utils';
+import { deriveThreadTitle } from '../../../../data/threads';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries_ja');
@@ -19,16 +20,11 @@ export async function getStaticPaths() {
     .filter(([_, msgs]) => msgs.length >= 2)
     .map(([threadId, msgs]) => {
       msgs.sort((a, b) => (a.data.threadPosition ?? 0) - (b.data.threadPosition ?? 0));
-      // Derive JA thread title from translated entry titles
-      const firstNonReply = msgs.find((m) => !m.data.title.startsWith('Re:'));
-      const jaThreadTitle = firstNonReply
-        ? firstNonReply.data.title
-        : msgs[0].data.title.replace(/^Re:\s*/i, '');
       return {
         params: { threadId },
         props: {
           messages: msgs,
-          threadTitle: jaThreadTitle,
+          threadTitle: deriveThreadTitle(threadId, msgs, 'ja'),
         },
       };
     });

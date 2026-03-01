@@ -12,7 +12,6 @@ participants:
 description: "Satoshi thanks Malmi for his contributions to the Linux build including autostart and tray features, and wishes him well on his upcoming school C++ project."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 72
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Satoshi sends coins back and explains why EC-DSA cannot encrypt messages like RSA, preventing transaction comments."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 10
 tags:
   - "correspondence"

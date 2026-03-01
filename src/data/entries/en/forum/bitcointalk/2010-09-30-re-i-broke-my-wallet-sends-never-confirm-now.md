@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/464/"
 threadId: "bt-i-broke-my-wallet-sends-never-confirm-now"
-threadTitle: "I broke my wallet, sends never confirm now."
 threadPosition: 1
 ---
 

@@ -11,7 +11,6 @@ participants:
     slug: "hal-finney"
 description: "Satoshi discusses how proof-of-work tokens could mitigate spam by creating economic incentives that make spamming unprofitable, including the concept of reverse-spamming with fake mailboxes."
 threadId: "bitcoin-v0-1-released"
-threadTitle: "Bitcoin v0.1 released"
 threadPosition: 8
 isSatoshi: true
 tags:

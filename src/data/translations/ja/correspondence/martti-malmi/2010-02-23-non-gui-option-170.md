@@ -12,7 +12,6 @@ participants:
 description: "良さそうですね。それに関する標準は知りません。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 170
 tags:
   - "correspondence"

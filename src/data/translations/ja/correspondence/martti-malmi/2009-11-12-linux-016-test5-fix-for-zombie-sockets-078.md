@@ -12,7 +12,6 @@ participants:
 description: "MSG_DONTWAITの追加とスレッド監視による万全の対策を含むtest5のリリース。pthread_cancelによるスレッド終了の実装とスレッドラッパーの作成について。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 78
 tags:
   - "correspondence"

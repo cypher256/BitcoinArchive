@@ -12,7 +12,6 @@ participants:
 description: "Satoshi provides the bitcoin-list mailing list info, agrees with Mike's micropayment approach, and explains why he chose a custom serialization format over protocol buffers for security reasons."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 14
 tags:
   - "correspondence"

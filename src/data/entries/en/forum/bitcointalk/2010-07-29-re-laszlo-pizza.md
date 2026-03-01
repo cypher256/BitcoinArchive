@@ -12,7 +12,6 @@ participants:
 description: "Satoshi comments on Laszlo's famous pizza purchase, noting that it would be great to have Bitcoin accepted for pizza delivery."
 isSatoshi: true
 threadId: "pizza-for-bitcoins"
-threadTitle: "Pizza for bitcoins?"
 threadPosition: 2
 tags:
   - "pizza"

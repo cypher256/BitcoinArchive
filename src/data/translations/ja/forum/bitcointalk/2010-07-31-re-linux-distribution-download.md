@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/304/"
 threadId: "bt-linux-distribution-download"
-threadTitle: "Linux distribution download"
 threadPosition: 2
 translationStatus: complete
 ---

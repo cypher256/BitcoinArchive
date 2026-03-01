@@ -12,7 +12,6 @@ participants:
 description: "python-json-rpcをダウンロードして、Pythonインタプリタで直接テストしました。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 166
 tags:
   - "correspondence"

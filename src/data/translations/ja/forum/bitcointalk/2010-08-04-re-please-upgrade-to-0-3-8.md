@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/315/"
 threadId: "bt-please-upgrade-to-0-3-8"
-threadTitle: "Please upgrade to 0.3.8!"
 threadPosition: 2
 translationStatus: complete
 ---

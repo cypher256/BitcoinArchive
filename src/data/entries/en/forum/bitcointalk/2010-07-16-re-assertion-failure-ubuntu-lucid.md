@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/211/"
 threadId: "bt-assertion-failure-ubuntu-lucid"
-threadTitle: "Assertion Failure - Ubuntu Lucid"
 threadPosition: 1
 ---
 

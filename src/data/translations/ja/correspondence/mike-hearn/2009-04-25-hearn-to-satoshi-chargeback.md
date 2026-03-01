@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがSatoshiに、Electronic Funds Transfer ActがBitcoinに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-chargeback"
-threadTitle: "Lack of chargeback support"
 threadPosition: 1
 tags:
   - "correspondence"

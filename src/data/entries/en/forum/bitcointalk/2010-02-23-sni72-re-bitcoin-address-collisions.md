@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/72/"
 threadId: "bt-bitcoin-address-collisions"
-threadTitle: "Bitcoin Address Collisions"
 threadPosition: 2
 ---
 

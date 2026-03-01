@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/111/"
 threadId: "bt-website-translations"
-threadTitle: "Website translations"
 threadPosition: 1
 translationStatus: complete
 ---

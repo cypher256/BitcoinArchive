@@ -12,7 +12,6 @@ participants:
 description: "I added MSG_DONTWAIT to the send and recv calls in case they forgot the"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 78
 tags:
   - "correspondence"

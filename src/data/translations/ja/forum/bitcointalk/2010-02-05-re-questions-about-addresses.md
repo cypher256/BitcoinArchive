@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/"
 threadId: "bt-questions-about-addresses"
-threadTitle: "Questions about Addresses"
 threadPosition: 2
 translationStatus: complete
 ---

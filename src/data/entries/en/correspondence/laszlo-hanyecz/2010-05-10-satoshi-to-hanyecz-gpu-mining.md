@@ -12,7 +12,6 @@ participants:
 description: "Satoshi emails Laszlo Hanyecz expressing concern about GPU mining being publicized too early, arguing it would discourage new users who could only mine with CPUs. Satoshi asks Hanyecz to slow down his GPU mining efforts."
 isSatoshi: true
 threadId: "satoshi-laszlo-hanyecz"
-threadTitle: "Satoshi ↔ Laszlo Hanyecz Correspondence"
 threadPosition: 2
 tags:
   - "correspondence"

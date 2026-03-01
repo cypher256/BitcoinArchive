@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearn sends 50 coins back and asks about 'Generated (not accepted)' errors and ideas for attaching metadata to transactions."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 11
 tags:
   - "correspondence"

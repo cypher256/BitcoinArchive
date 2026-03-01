@@ -12,7 +12,6 @@ participants:
 description: "サトシがbitcoin-listメーリングリストにBitcoin 0.3の公式リリースアナウンスを送付し、デーモンモードやJSON-RPCなどの新機能を紹介する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 200
 tags:
   - "correspondence"

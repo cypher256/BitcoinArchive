@@ -12,7 +12,6 @@ participants:
 description: "サトシがbitcoin.orgのDNS変更が反映されたことを報告し、SourceForgeのフォーラムリンク更新計画を説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 110
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがGoogleの不正利用対策チームでの業務について述べ、スパム防止のためにアカウントの担保としてBitcoinを使用することを提案し、コインのタイムロックについて質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 1
 tags:
   - "correspondence"

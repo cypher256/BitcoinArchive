@@ -12,7 +12,6 @@ participants:
 description: "マルミがアムステルダムのEPCAカンファレンスからの招待に応じ、Bitcoinの代表としてGavin AndresenやBruce Wagnerを推薦。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 258
 tags:
   - "correspondence"

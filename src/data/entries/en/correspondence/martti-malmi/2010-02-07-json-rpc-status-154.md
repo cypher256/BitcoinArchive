@@ -12,7 +12,6 @@ participants:
 description: "Malmi responds positively to the JSON-RPC progress and announces he will begin studying the Liberty Reserve API for the exchange service."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 154
 tags:
   - "correspondence"

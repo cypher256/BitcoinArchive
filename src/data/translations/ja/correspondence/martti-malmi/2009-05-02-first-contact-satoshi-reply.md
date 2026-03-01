@@ -12,7 +12,6 @@ participants:
 description: "ビットコインへの協力を申し出たMartti MalmiへのSatoshiの最初の返信。Satoshiはビットコインに対するMalmiの理解を称賛し、ウェブサイトのコンテンツとFAQの執筆への協力を求めた。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 1
 tags:
   - "correspondence"

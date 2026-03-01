@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/414/"
 threadId: "bt-development-of-alert-system"
-threadTitle: "Development of alert system"
 threadPosition: 4
 translationStatus: complete
 ---

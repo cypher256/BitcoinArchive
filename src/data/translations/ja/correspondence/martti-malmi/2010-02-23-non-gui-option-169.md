@@ -12,7 +12,6 @@ participants:
 description: "うまく動作しています。あといくつか作業したらアップロードします。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 169
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "マルミが新しいbitcoin.orgの公開を祝福し、bitcoin.sourceforge.netを新サイトにリダイレクトしたことを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 125
 tags:
   - "correspondence"

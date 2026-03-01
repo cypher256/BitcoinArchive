@@ -12,7 +12,6 @@ participants:
 description: "I'll be afk 23.-25.11."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 107
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "サトシがブロックダウンロードのボトルネックを診断し、未確認トランザクションがある状態でのシャットダウンにリスクはないと説明。バックグラウンドでのデータベースシャットダウンやデータディレクトリの指定方法についても解説。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 69
 tags:
   - "correspondence"

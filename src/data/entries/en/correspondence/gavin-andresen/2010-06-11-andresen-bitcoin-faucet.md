@@ -12,7 +12,6 @@ participants:
 description: "Gavin Andresen begins corresponding with Satoshi Nakamoto after discovering Bitcoin in May 2010 and starts submitting code contributions. He creates the Bitcoin Faucet to give away free BTC and boost adoption."
 isSatoshi: false
 threadId: "satoshi-gavin-andresen"
-threadTitle: "Satoshi ↔ Gavin Andresen Correspondence"
 threadPosition: 1
 tags:
   - "correspondence"

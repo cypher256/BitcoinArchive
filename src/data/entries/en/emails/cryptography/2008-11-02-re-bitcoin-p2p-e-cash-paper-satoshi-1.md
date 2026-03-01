@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi responds to James Donald's scalability concerns, explaining how the system can work with simplified payment verification and that nodes don't need to know all transactions."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 3
 inReplyTo: "emails/cryptography/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
 isSatoshi: true

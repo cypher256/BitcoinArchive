@@ -12,7 +12,6 @@ participants:
 description: "お元気ですか？しばらく姿を見かけませんでしたね。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 191
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearn confirms BitcoinJ will be open source per Google's policy and reports successfully spending coins on testnet."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 5
 tags:
   - "correspondence"

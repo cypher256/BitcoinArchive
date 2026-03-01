@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/431/"
 threadId: "bt-version-0-3-11-with-upgrade-alerts"
-threadTitle: "Version 0.3.11 with upgrade alerts"
 threadPosition: 2
 ---
 

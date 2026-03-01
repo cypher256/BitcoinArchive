@@ -12,7 +12,6 @@ participants:
 description: "サトシがlinux-0.1.6-test3ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 77
 tags:
   - "correspondence"

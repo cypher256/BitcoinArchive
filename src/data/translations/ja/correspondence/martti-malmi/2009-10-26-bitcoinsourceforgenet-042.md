@@ -12,7 +12,6 @@ participants:
 description: "サトシがEugen LeitlとLiberty Standardからのbitcoin.sourceforge.netダウン報告を転送し、BitweaverがTESTモードのエラーメッセージを表示している問題を伝える。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 42
 tags:
   - "correspondence"

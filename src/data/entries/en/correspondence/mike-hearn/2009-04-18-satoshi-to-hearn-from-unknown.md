@@ -12,7 +12,6 @@ participants:
 description: "Satoshi explains why transactions show 'from: unknown' and that 'Generated (not accepted)' happens when two nodes find a block simultaneously."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 12
 tags:
   - "correspondence"

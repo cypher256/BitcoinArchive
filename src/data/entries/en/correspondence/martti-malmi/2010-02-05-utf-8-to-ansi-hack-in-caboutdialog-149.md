@@ -12,7 +12,6 @@ participants:
 description: "Malmi responds that the UTF-8 encoding change in the About dialog code was unintentional and likely caused by an encoding problem."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 149
 tags:
   - "correspondence"

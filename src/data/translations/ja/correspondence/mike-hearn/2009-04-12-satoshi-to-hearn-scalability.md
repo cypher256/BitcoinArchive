@@ -12,7 +12,6 @@ participants:
 description: "SatoshiがBitcoinのスケーラビリティ、取引手数料への移行、2,100万枚のコインの選択、8桁の小数を持つ64ビット整数値について説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 2
 tags:
   - "correspondence"

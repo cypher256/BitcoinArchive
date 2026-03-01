@@ -12,7 +12,6 @@ participants:
 description: "Satoshi shares his PGP public key with Malmi for secure password exchange and asks about the progress of migrating BitcoinExchange to another server."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 243
 tags:
   - "correspondence"

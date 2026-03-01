@@ -12,7 +12,6 @@ participants:
 description: "サトシがGavinと共にフォーラムデータベースの外部共有に反対し、プライベートメッセージやパスワードの保護のため暗号化バックアップの保管を支持。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 251
 tags:
   - "correspondence"

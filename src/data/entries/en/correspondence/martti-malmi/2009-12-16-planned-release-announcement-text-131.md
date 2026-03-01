@@ -12,7 +12,6 @@ participants:
 description: "Satoshi shares the draft release announcement for Bitcoin v0.2, listing new features contributed by both himself and Malmi."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 131
 tags:
   - "correspondence"

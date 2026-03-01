@@ -11,7 +11,6 @@ participants:
     slug: "hal-finney"
 description: "Satoshi clarifies that Bitcoin uses Hashcash-style SHA-256 proof-of-work (not signatures), explains the proportional mining chances, and addresses identity and double-spending prevention."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 26
 isSatoshi: true
 tags:

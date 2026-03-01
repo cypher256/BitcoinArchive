@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/337/"
 threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
-threadTitle: "Bitcoin minting is thermodynamically perverse"
 threadPosition: 2
 ---
 

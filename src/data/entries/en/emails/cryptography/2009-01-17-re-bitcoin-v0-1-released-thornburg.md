@@ -11,7 +11,6 @@ participants:
     slug: "jonathan-thornburg"
 description: "Indiana University astrophysicist Jonathan Thornburg raises concerns about government regulation and botnet exploitation of Bitcoin, arguing that no major government would allow untraceable international transfers and that botnets could move $100K by having a million nodes each send 10 cents."
 threadId: "bitcoin-v0-1-released"
-threadTitle: "Bitcoin v0.1 released"
 threadPosition: 4
 inReplyTo: "emails/cryptography/2009-01-16-sni17-bitcoin-v0-1-released"
 isSatoshi: false

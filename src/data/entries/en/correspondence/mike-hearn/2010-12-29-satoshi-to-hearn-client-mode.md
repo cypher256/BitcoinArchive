@@ -12,7 +12,6 @@ participants:
 description: "Satoshi provides his most detailed explanation of SPV client-mode implementation, discusses the origin of the 21 million coin limit and 10-minute block target, and confirms the block size limit is temporary."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 2
 tags:
   - "correspondence"

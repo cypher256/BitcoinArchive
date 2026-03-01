@@ -11,7 +11,6 @@ participants:
     slug: "john-levine"
 description: "Internet expert John Levine dismisses Bitcoin's security assumption, arguing that botnet operators routinely control zombie farms of 100,000+ machines and that hashcash failed for the same reason — the bad guys have vastly more computational firepower than the good guys."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 4
 inReplyTo: "emails/cryptography/2008-10-31-bitcoin-p2p-e-cash-paper"
 isSatoshi: false

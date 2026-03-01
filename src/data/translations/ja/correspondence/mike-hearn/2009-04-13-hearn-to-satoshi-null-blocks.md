@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearnが、処理すべきトランザクションがない場合でもブロックチェーンを延長し続ける必要があるかどうかを質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 4
 tags:
   - "correspondence"

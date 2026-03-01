@@ -12,7 +12,6 @@ participants:
 description: "Satoshi suggests using the word 'cryptocurrency' to describe Bitcoin and asks Malmi to remove investment language from the site - a key moment in Bitcoin's branding history."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 19
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "That seems good, I don't know of any standards about it."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 170
 tags:
   - "correspondence"

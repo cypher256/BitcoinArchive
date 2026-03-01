@@ -12,7 +12,6 @@ participants:
 description: "Satoshi discusses Tor connectivity challenges for Bitcoin, the shortage of nodes accepting incoming connections, and the need for port forwarding instructions on the website."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 53
 tags:
   - "correspondence"

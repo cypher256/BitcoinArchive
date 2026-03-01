@@ -12,7 +12,6 @@ participants:
 description: "Malmi agrees to start with Liberty Reserve for the exchange and discusses European SEPA bank transfers as a longer-term payment option."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 150
 tags:
   - "correspondence"

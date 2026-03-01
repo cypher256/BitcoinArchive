@@ -9,7 +9,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi announces the release of Bitcoin v0.1, the first working implementation of the Bitcoin software. Available for Windows, with the source code included."
 threadId: "bitcoin-v0-1-released"
-threadTitle: "Bitcoin v0.1 released"
 threadPosition: 1
 isSatoshi: true
 tags:

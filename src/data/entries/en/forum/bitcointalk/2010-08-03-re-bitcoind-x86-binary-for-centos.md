@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/310/"
 threadId: "bt-bitcoind-x86-binary-for-centos"
-threadTitle: "Bitcoind x86 binary for CentOS"
 threadPosition: 1
 ---
 

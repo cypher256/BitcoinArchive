@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/391/"
 threadId: "bt-blocks-minus-1"
-threadTitle: "blocks minus 1"
 threadPosition: 2
 ---
 

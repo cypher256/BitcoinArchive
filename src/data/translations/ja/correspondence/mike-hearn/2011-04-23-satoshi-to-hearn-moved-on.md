@@ -12,7 +12,6 @@ participants:
 description: "Satoshiの最後の既知のコミュニケーションの一つ。Mike Hearnに他のことに移ったこと、BitcoinはGavinとみんなに託されていると伝える。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 4
 tags:
   - "correspondence"

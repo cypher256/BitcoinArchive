@@ -11,7 +11,6 @@ participants:
     slug: "hal-finney"
 description: "Hal Finneyが最初のアルファ版リリースに祝意を表し、有名な思考実験を行った：ビットコインが世界の支配的な決済システムになれば、各コインの価値は約1000万ドルになる——早期のマイニングは「1億対1のリターンが見込める、かなり良い賭け」だと。"
 threadId: "bitcoin-v0-1-released"
-threadTitle: "Bitcoin v0.1 released"
 threadPosition: 2
 inReplyTo: "emails/cryptography/2009-01-08-bitcoin-v0-1-released"
 isSatoshi: false

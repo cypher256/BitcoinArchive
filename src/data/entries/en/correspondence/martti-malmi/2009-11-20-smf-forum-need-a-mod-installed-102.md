@@ -12,7 +12,6 @@ participants:
 description: "I'm thinking of merging the bitcoin.org information with your site"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 102
 tags:
   - "correspondence"

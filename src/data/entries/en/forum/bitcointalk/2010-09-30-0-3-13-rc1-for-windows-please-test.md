@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/466/"
 threadId: "bt-0-3-13-rc1-for-windows-please-test"
-threadTitle: "0.3.13 RC1 for Windows, please test"
 threadPosition: 1
 ---
 

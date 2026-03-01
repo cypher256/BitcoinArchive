@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがUPnPによるポートフォワーディングを提案し、バージョン通知について質問し、EV SSL証明書を使用したウェブブラウザ向けマイクロペイメントシステムを提案する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 13
 tags:
   - "correspondence"

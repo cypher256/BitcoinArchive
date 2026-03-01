@@ -12,7 +12,6 @@ participants:
 description: "マルミがLinuxビルドの正常動作を確認し、BitcoinがLinuxで動作するという重要なマイルストーンの達成を祝福。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 64
 tags:
   - "correspondence"

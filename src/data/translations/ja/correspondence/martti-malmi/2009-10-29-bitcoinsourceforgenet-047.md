@@ -12,7 +12,6 @@ participants:
 description: "Boostのmutexはここで役に立ちますか？"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 47
 tags:
   - "correspondence"

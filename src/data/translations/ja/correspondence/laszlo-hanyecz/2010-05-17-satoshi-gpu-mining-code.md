@@ -12,7 +12,6 @@ participants:
 description: "驚くべき展開として、Satoshiが独自に開発したGPUマイニングコードをLaszlo Hanyeczと共有した。ネットワークへの潜在的な51%攻撃に対する防御手段としてGPUマイニングを独自に開発していたことが明らかになった。"
 isSatoshi: true
 threadId: "satoshi-laszlo-hanyecz"
-threadTitle: "Satoshi ↔ Laszlo Hanyecz Correspondence"
 threadPosition: 3
 tags:
   - "correspondence"

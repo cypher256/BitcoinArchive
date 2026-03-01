@@ -12,7 +12,6 @@ participants:
 description: "サトシがSourceForgeトラッカーをSourceForgeページに追加するが、SSLの混合コンテンツ警告とプライバシーの懸念からbitcoin.orgからは削除。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 122
 tags:
   - "correspondence"

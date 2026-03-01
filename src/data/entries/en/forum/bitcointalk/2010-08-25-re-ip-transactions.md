@@ -17,7 +17,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/243/"
 threadId: "bt-connection-limits"
-threadTitle: "Connection limits"
 threadPosition: 2
 ---
 

@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "ノードが新しいブロックとトランザクションのハッシュリストを交換するインベントリベースのブロードキャストメカニズムをSatoshiが説明し、1年半の開発を経てソースコードが間もなくリリースされると述べた。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 30
 isSatoshi: true
 tags:

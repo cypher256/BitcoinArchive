@@ -12,7 +12,6 @@ participants:
 description: "In a surprising turn, Satoshi shares his own GPU mining code with Laszlo Hanyecz, revealing that he had independently developed GPU mining as a defensive measure against potential 51% attacks on the network."
 isSatoshi: true
 threadId: "satoshi-laszlo-hanyecz"
-threadTitle: "Satoshi ↔ Laszlo Hanyecz Correspondence"
 threadPosition: 3
 tags:
   - "correspondence"

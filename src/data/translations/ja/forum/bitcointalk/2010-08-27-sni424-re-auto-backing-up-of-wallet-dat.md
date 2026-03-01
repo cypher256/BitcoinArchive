@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/424/"
 threadId: "bt-auto-backing-up-of-wallet-dat"
-threadTitle: "auto backing up of wallet.dat"
 threadPosition: 3
 translationStatus: complete
 ---

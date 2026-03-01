@@ -12,7 +12,6 @@ participants:
 description: "マルミがサーバーのsendmailが未設定のためPHPメール機能が動作しないことを補足するが、現時点では不要と説明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 101
 tags:
   - "correspondence"

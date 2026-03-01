@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearnがsecp256k1曲線のセキュリティに関するフォーラムの議論をSatoshiに紹介し、Hal Finneyのリスクプロファイルに関する懸念を指摘する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 7
 tags:
   - "correspondence"

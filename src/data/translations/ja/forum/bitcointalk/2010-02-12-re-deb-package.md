@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/51/"
 threadId: "bt-deb-package"
-threadTitle: "DEB Package?"
 threadPosition: 1
 translationStatus: complete
 ---

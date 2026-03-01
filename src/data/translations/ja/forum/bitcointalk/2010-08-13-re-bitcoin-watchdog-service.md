@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/"
 threadId: "bt-bitcoin-watchdog-service"
-threadTitle: "Bitcoin Watchdog Service"
 threadPosition: 2
 translationStatus: complete
 ---

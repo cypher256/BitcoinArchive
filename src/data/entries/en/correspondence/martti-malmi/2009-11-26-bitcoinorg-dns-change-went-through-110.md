@@ -12,7 +12,6 @@ participants:
 description: "Satoshi reports that the bitcoin.org DNS change has propagated and outlines plans to update the forum link on SourceForge."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 110
 tags:
   - "correspondence"

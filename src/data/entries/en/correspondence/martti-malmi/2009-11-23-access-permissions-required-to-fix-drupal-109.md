@@ -12,7 +12,6 @@ participants:
 description: "Malmi confirms he has granted Satoshi access to all the necessary Apache configuration files on the bitcoin.org server."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 109
 tags:
   - "correspondence"

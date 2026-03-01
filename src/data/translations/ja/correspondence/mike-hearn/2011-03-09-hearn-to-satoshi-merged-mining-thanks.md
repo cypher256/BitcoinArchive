@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがSatoshiに感謝し、Hal FinneyがTx0のscriptSigにmerkleルートを格納するアプローチを正しく推測していたことを指摘する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadTitle: "Open sourced my Java SPV impl"
 threadPosition: 5
 tags:
   - "correspondence"

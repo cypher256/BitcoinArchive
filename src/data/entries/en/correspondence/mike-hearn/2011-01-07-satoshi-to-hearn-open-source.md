@@ -12,7 +12,6 @@ participants:
 description: "Satoshi expresses excitement about the first client-only implementation and asks whether it will be open source."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 4
 tags:
   - "correspondence"

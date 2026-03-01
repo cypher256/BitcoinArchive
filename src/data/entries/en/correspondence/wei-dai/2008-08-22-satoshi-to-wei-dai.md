@@ -12,7 +12,6 @@ participants:
 description: "Satoshi emails Wei Dai asking about the correct citation for b-money, revealing that he learned of b-money from Adam Back's reference. The email included a link to the pre-release draft 'Electronic Cash Without a Trusted Third Party' (ecash.pdf) hosted at upload.ae."
 isSatoshi: true
 threadId: "satoshi-wei-dai"
-threadTitle: "Satoshi ↔ Wei Dai Correspondence"
 threadPosition: 1
 tags:
   - "b-money"

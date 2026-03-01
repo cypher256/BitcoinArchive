@@ -12,7 +12,6 @@ participants:
 description: "マルミがDjango搭載のbitcoinexchange.comプロトタイプの稼働を報告し、双曲線型の需給価格設定の計画を議論。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 139
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "サトシがSourceForgeの遅さ、標準Cを使ったBitcoinの移植性アプローチ、今後のプロトコル変更、Linuxポートへの関心の高まりについて議論する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 44
 tags:
   - "correspondence"

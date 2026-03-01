@@ -12,7 +12,6 @@ participants:
 description: "Wish I could figure out how to fix that.  What version of GLIBCXX does"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 218
 tags:
   - "correspondence"

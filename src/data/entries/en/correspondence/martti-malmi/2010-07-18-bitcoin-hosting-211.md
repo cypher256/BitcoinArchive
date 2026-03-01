@@ -12,7 +12,6 @@ participants:
 description: "Malmi agrees not to switch hosting and provides a Bitcoin address for donations to help cover bitcoin.org server costs."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 211
 tags:
   - "correspondence"

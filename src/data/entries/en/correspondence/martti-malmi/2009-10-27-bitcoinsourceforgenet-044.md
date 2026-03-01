@@ -12,7 +12,6 @@ participants:
 description: "Satoshi discusses SourceForge's slowness, Bitcoin's portability approach using standard C, upcoming protocol changes, and the growing interest in a Linux port."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 44
 tags:
   - "correspondence"

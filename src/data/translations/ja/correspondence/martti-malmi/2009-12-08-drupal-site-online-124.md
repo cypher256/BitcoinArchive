@@ -12,7 +12,6 @@ participants:
 description: "サトシが新しいDrupalベースのbitcoin.orgウェブサイトの公開を発表し、以前のページからの大幅な改善と評価。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 124
 tags:
   - "correspondence"

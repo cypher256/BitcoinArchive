@@ -12,7 +12,6 @@ participants:
 description: "Malmi confirms he fixed the Bitweaver menu editor issue by updating the forum link directly in the database."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 112
 tags:
   - "correspondence"

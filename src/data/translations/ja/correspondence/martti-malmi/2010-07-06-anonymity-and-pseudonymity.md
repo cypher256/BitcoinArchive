@@ -12,7 +12,6 @@ participants:
 description: "Satoshiがビットコインの匿名性の主張を控えめにするようMalmiに警告し、匿名性と仮名性を区別した——プライバシーへの期待に関する先見性のある警告。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 197
 tags:
   - "correspondence"

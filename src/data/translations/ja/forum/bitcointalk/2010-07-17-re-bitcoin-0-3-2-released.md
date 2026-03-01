@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/235/"
 threadId: "bt-bitcoin-0-3-2-released"
-threadTitle: "Bitcoin 0.3.2 released"
 threadPosition: 2
 translationStatus: complete
 ---

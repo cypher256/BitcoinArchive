@@ -12,7 +12,6 @@ participants:
 description: "マルミがホスティング切り替えをしないことに同意し、bitcoin.orgサーバー費用を賄うためのBitcoin寄付用アドレスを提供する。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
 threadPosition: 211
 tags:
   - "correspondence"

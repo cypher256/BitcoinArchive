@@ -12,7 +12,6 @@ participants:
 description: "Satoshi announces Bitcoin 0.3.18 to the mailing list, featuring wallet.dat compatibility fixes and Gavin's new accounts-based JSON-RPC commands."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 247
 tags:
   - "correspondence"

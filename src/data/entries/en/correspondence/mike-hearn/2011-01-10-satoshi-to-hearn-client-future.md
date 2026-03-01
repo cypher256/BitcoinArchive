@@ -12,7 +12,6 @@ participants:
 description: "Satoshi predicts the original software will become the industrial tool for GPU farms while client implementations drive UI innovation. He reveals the mathematical reasoning behind the 21 million coin limit."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 6
 tags:
   - "correspondence"

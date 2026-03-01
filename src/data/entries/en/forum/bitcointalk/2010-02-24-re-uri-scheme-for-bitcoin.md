@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/73/"
 threadId: "bt-uri-scheme-for-bitcoin"
-threadTitle: "URI-scheme for bitcoin"
 threadPosition: 1
 ---
 

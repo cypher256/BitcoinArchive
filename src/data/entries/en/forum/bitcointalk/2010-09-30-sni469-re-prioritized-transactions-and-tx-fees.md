@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/469/"
 threadId: "bt-prioritized-transactions-and-tx-fees"
-threadTitle: "Prioritized transactions, and tx fees"
 threadPosition: 2
 ---
 

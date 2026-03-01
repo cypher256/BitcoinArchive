@@ -12,7 +12,6 @@ participants:
 description: "Satoshi explains that micropayments can be safely accepted immediately, describes how merchants can detect double-spend attempts, and clarifies that proof-of-work difficulty is hardcoded rather than communicated."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 5
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Adam BackがHashcashの引用を確認し、Wei Daiのb-money提案を参照するよう提案。この紹介がサトシをWei Daiへの連絡とホワイトペーパーでのb-money引用につながった。"
 isSatoshi: false
 threadId: "satoshi-adam-back"
-threadTitle: "Satoshi ↔ Adam Back Correspondence"
 threadPosition: 2
 tags:
   - "hashcash"

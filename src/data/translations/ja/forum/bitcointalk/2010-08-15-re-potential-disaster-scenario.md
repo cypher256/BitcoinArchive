@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/364/"
 threadId: "bt-potential-disaster-scenario"
-threadTitle: "Potential disaster scenario"
 threadPosition: 1
 translationStatus: complete
 ---

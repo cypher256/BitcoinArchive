@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearn asks about the origin of the 21 million coin limit, the 10-minute block target, and the 500KB block size limit while working on a Java SPV implementation for Android."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
-threadTitle: "More BitCoin questions"
 threadPosition: 1
 tags:
   - "correspondence"

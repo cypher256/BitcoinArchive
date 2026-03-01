@@ -12,7 +12,6 @@ participants:
 description: "Malmi announces he registered bitcoinexchange.com and outlines plans for a simple PayPal-based Bitcoin exchange service."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 133
 tags:
   - "correspondence"

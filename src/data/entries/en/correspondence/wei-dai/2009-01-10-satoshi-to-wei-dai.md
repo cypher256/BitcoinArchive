@@ -12,7 +12,6 @@ participants:
 description: "Satoshi announces the release of Bitcoin v0.1 to Wei Dai, stating it achieves nearly all the goals of b-money. He quotes Hal Finney's summary of the system."
 isSatoshi: true
 threadId: "satoshi-wei-dai"
-threadTitle: "Satoshi ↔ Wei Dai Correspondence"
 threadPosition: 3
 tags:
   - "b-money"

@@ -12,7 +12,6 @@ participants:
 description: "Mike Hearn describes his work on Google's abuse team and proposes using Bitcoin as collateral against accounts for spam prevention, asking about time-locking coins."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-holding-coins"
-threadTitle: "Holding coins in an unspendable state for a rolling time window"
 threadPosition: 1
 tags:
   - "correspondence"

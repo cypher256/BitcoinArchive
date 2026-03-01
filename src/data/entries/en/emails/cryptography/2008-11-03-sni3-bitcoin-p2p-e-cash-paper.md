@@ -11,7 +11,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi clarifies that the requirement is for 'the good guys collectively' to have more CPU power than any single attacker, and explains how smaller operations could profitably generate bitcoins."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadTitle: "Bitcoin P2P e-cash paper"
 threadPosition: 5
 isSatoshi: true
 tags:

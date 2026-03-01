@@ -12,7 +12,6 @@ participants:
 description: "Mike HearnがSatoshi Nakamotoに初めて連絡を取り、Bitcoinのスケーラビリティ、マイニングハードウェア、インフレスケジュール、コインの額面について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 1
 tags:
   - "correspondence"

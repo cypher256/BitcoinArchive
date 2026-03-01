@@ -12,7 +12,6 @@ participants:
 description: "Satoshiの最も初期に知られる書簡。Wei Daiにb-moneyの正しい引用について尋ねるメールを送り、Adam Backの紹介でb-moneyを知ったことを明かしている。"
 isSatoshi: true
 threadId: "satoshi-wei-dai"
-threadTitle: "Satoshi ↔ Wei Dai Correspondence"
 threadPosition: 1
 tags:
   - "b-money"

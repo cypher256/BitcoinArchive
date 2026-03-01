@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/406/"
 threadId: "bt-need-a-post-writing-up-some-things-users-should-kn"
-threadTitle: "Need a post writing up some things users should know"
 threadPosition: 2
 translationStatus: complete
 ---

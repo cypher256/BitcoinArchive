@@ -12,7 +12,6 @@ participants:
 description: "Malmi sends the encrypted root password for the bitcoin.org server and provides an update on migrating BitcoinExchange files and database to a new server."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 244
 tags:
   - "correspondence"

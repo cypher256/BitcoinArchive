@@ -12,7 +12,6 @@ participants:
 description: "Satoshiがbitcoin-listメーリングリストの情報を提供し、Mikeのマイクロペイメントアプローチに同意し、セキュリティ上の理由からprotocol buffersではなくカスタムシリアライゼーション形式を選んだ理由を説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadTitle: "Questions about BitCoin"
 threadPosition: 14
 tags:
   - "correspondence"

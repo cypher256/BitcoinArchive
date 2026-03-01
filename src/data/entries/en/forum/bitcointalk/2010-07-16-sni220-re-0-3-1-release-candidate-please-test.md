@@ -13,7 +13,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/220/"
 threadId: "bt-0-3-1-release-candidate-please-test"
-threadTitle: "0.3.1 release candidate, please test"
 threadPosition: 8
 ---
 

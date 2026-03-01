@@ -12,7 +12,6 @@ participants:
 description: "Malmi copies the SourceForge logo to the local server to use as a graphic without triggering tracking, noting it complies with SF trademark policy."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 123
 tags:
   - "correspondence"

@@ -12,7 +12,6 @@ participants:
 description: "Satoshi asks Malmi if he can add him to the Project Developers list on the bitcoin.org Contact page, noting his code contributions."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
 threadPosition: 245
 tags:
   - "correspondence"
