@@ -32,8 +32,8 @@ const t = useTranslations(lang);
     container.innerHTML = '';
 
     var rect = container.getBoundingClientRect();
-    var width = rect.width || 900;
-    var height = Math.max(500, Math.min(width * 0.7, 650));
+    var width = rect.width || 800;
+    var height = Math.round(width * 0.75);
 
     var maxCount = 1;
     var minCount = Infinity;
