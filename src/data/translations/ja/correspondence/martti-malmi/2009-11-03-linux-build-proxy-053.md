@@ -1,5 +1,5 @@
 ---
-title: "返信: Linuxビルド、プロキシ"
+title: "Re: Linuxビルド、プロキシ"
 date: 2009-11-03T15:53:25Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

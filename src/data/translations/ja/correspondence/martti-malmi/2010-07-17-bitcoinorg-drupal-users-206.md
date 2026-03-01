@@ -1,5 +1,5 @@
 ---
-title: "返信: bitcoin.org Drupalユーザー"
+title: "Re: bitcoin.org Drupalユーザー"
 date: 2010-07-17T01:27:38Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

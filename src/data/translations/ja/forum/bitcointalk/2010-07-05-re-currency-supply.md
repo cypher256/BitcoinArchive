@@ -1,5 +1,5 @@
 ---
-title: "返信: 現在のネットハッシュレートは？"
+title: "Re: 現在のネットハッシュレートは？"
 date: 2010-07-05T18:46:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=149.msg1313#msg1313"

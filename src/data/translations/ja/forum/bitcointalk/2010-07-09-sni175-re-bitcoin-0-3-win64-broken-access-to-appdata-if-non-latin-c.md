@@ -1,5 +1,5 @@
 ---
-title: "返信: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
+title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
 date: 2010-07-09T15:37:05.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=246.msg2092#msg2092"

@@ -1,5 +1,5 @@
 ---
-title: "返信: セキュリティ"
+title: "Re: セキュリティ"
 date: 2010-07-10T12:58:02.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=240.msg2132#msg2132"

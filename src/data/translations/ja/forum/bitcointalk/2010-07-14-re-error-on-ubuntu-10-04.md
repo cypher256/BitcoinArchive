@@ -1,5 +1,5 @@
 ---
-title: "返信: Ubuntu 10.04でのエラー"
+title: "Re: Ubuntu 10.04でのエラー"
 date: 2010-07-14T18:25:41.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=318.msg2903#msg2903"

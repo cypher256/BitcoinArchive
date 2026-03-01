@@ -1,5 +1,5 @@
 ---
-title: "返信: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work難易度の上昇"
 date: 2010-06-21T18:09:17.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=43.msg1648#msg1648"

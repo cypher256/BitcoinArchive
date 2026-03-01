@@ -1,5 +1,5 @@
 ---
-title: "返信: IRCブートストラッピングについて"
+title: "Re: IRCブートストラッピングについて"
 date: 2010-06-14T18:13:21.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=84.msg1579#msg1579"

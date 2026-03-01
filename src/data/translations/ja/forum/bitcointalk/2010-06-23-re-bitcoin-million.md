@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコインはどこまで分割できますか？"
+title: "Re: ビットコインはどこまで分割できますか？"
 date: 2010-06-23T15:12:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=233.msg1967#msg1967"

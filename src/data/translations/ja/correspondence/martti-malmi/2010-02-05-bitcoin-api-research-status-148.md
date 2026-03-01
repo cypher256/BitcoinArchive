@@ -1,5 +1,5 @@
 ---
-title: "返信: Bitcoin API調査状況"
+title: "Re: Bitcoin API調査状況"
 date: 2010-02-05T04:08:54Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

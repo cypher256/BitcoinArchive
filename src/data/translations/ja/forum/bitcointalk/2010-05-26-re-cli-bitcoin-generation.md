@@ -1,5 +1,5 @@
 ---
-title: "返信: CLIビットコイン生成"
+title: "Re: CLIビットコイン生成"
 date: 2010-05-26T20:09:34.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=145.msg1256#msg1256"

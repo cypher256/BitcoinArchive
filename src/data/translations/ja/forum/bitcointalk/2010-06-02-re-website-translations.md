@@ -1,5 +1,5 @@
 ---
-title: "返信: ウェブサイト翻訳"
+title: "Re: ウェブサイト翻訳"
 date: 2010-06-02T22:18:09.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=151.msg1324#msg1324"

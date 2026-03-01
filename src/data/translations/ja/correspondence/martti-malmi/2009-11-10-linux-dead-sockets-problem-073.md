@@ -1,5 +1,5 @@
 ---
-title: "返信: Linux - デッドソケット問題"
+title: "Re: Linux - デッドソケット問題"
 date: 2009-11-10T16:46:04Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

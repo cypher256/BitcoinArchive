@@ -1,5 +1,5 @@
 ---
-title: "返信: 新しいバイナリリリースは？"
+title: "Re: 新しいバイナリリリースは？"
 date: 2010-06-17T17:07:56.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=184.msg1609#msg1609"

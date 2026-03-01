@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン - 匿名性の側面を控えめにすべき"
+title: "Re: ビットコイン - 匿名性の側面を控えめにすべき"
 date: 2010-07-06T02:59:57Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

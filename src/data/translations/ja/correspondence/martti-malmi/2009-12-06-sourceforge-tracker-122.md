@@ -1,5 +1,5 @@
 ---
-title: "返信: Sourceforgeトラッカー"
+title: "Re: Sourceforgeトラッカー"
 date: 2009-12-06T03:21:00Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

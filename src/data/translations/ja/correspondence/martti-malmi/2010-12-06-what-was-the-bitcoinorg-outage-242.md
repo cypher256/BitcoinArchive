@@ -1,5 +1,5 @@
 ---
-title: "返信: bitcoin.orgの障害の原因は？"
+title: "Re: bitcoin.orgの障害の原因は？"
 date: 2010-12-06T11:33:01Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

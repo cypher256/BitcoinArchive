@@ -1,5 +1,5 @@
 ---
-title: "返信: Linuxビルドのテスト準備完了"
+title: "Re: Linuxビルドのテスト準備完了"
 date: 2009-11-08T09:50:44Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

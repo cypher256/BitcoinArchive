@@ -1,5 +1,5 @@
 ---
-title: "返信: 現在のビットコイン経済モデルは持続不可能"
+title: "Re: 現在のビットコイン経済モデルは持続不可能"
 date: 2010-02-21T23:09:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=48.msg329#msg329"

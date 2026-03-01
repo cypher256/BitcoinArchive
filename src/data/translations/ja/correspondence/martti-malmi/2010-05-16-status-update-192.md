@@ -1,5 +1,5 @@
 ---
-title: "返信: 近況報告"
+title: "Re: 近況報告"
 date: 2010-05-16T19:12:21Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

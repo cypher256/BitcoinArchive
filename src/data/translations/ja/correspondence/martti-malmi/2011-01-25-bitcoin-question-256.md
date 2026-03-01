@@ -1,5 +1,5 @@
 ---
-title: "返信: 転送: Bitcoinに関する質問"
+title: "Re: 転送: Bitcoinに関する質問"
 date: 2011-01-25T18:34:03Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

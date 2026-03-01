@@ -1,5 +1,5 @@
 ---
-title: "返信: 0.3ほぼ完成"
+title: "Re: 0.3ほぼ完成"
 date: 2010-06-26T15:10:10.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1800#msg1800"

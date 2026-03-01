@@ -1,5 +1,5 @@
 ---
-title: "返信: Ubuntu 10.04でのBitcoin"
+title: "Re: Ubuntu 10.04でのBitcoin"
 date: 2010-06-21T17:20:21.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=149.msg1646#msg1646"

@@ -1,5 +1,5 @@
 ---
-title: "返信: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11'"
+title: "Re: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11'"
 date: 2010-07-26T18:22:08Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

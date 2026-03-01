@@ -1,5 +1,5 @@
 ---
-title: "返信: Bitweaverメニューエディタが壊れている"
+title: "Re: Bitweaverメニューエディタが壊れている"
 date: 2009-11-27T00:46:50Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

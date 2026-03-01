@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン v0.1 リリース - コイン送付の申し出"
+title: "Re: ビットコイン v0.1 リリース - コイン送付の申し出"
 date: 2009-01-13T01:55:00Z
 source: correspondence
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"

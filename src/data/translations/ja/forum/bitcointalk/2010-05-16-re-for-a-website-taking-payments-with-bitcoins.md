@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコインで支払いを受け付けるウェブサイトについて..."
+title: "Re: ビットコインで支払いを受け付けるウェブサイトについて..."
 date: 2010-05-16T21:37:36.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=129.msg1131#msg1131"

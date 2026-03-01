@@ -1,5 +1,5 @@
 ---
-title: "返信: ファイルホスティングとプロキシサービスのアイデア"
+title: "Re: ファイルホスティングとプロキシサービスのアイデア"
 date: 2010-03-24T18:02:55.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=83.msg810#msg810"

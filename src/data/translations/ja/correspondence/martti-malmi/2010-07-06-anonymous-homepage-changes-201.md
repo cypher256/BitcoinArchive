@@ -1,5 +1,5 @@
 ---
-title: "返信: 匿名性、ホームページの変更"
+title: "Re: 匿名性、ホームページの変更"
 date: 2010-07-06T22:17:54Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

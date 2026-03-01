@@ -1,5 +1,5 @@
 ---
-title: "返信: えーっと...私のビットコインはどこに行ったの？"
+title: "Re: えーっと...私のビットコインはどこに行ったの？"
 date: 2010-05-18T20:06:46.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=125.msg1149#msg1149"

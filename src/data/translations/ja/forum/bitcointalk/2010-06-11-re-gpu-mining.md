@@ -1,5 +1,5 @@
 ---
-title: "返信: GPU マイニングが必要です！"
+title: "Re: GPU マイニングが必要です！"
 date: 2010-06-11T21:48:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=124.msg1100#msg1100"

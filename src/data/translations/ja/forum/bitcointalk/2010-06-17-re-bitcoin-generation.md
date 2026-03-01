@@ -1,5 +1,5 @@
 ---
-title: "返信: SHA-256衝突への対処"
+title: "Re: SHA-256衝突への対処"
 date: 2010-06-14T20:39:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=191.msg1585#msg1585"

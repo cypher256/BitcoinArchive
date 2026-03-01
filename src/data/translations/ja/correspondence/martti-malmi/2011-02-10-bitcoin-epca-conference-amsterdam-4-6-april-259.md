@@ -1,5 +1,5 @@
 ---
-title: "返信: Bitcoin @ EPCAカンファレンス アムステルダム 4月4-6日？"
+title: "Re: Bitcoin @ EPCAカンファレンス アムステルダム 4月4-6日？"
 date: 2011-02-10T20:35:22Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

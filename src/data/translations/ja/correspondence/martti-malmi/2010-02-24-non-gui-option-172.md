@@ -1,5 +1,5 @@
 ---
-title: "返信: 非GUIオプション"
+title: "Re: 非GUIオプション"
 date: 2010-02-24T06:34:52Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

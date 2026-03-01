@@ -1,5 +1,5 @@
 ---
-title: "返信: 0.3ほぼ完成 -- Mac版をテストしてください！"
+title: "Re: 0.3ほぼ完成 -- Mac版をテストしてください！"
 date: 2010-07-04T21:52:28.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1947#msg1947"

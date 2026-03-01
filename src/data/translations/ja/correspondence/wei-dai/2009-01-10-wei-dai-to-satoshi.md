@@ -1,5 +1,5 @@
 ---
-title: "返信: あなたのb-moneyページの引用について"
+title: "Re: あなたのb-moneyページの引用について"
 date: 2009-01-10T00:00:00Z
 source: correspondence
 sourceUrl: "https://gwern.net/doc/bitcoin/2008-nakamoto"

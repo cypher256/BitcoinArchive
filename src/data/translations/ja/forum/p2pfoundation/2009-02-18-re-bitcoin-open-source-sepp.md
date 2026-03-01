@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン：P2P通貨のオープンソース実装"
+title: "Re: ビットコイン：P2P通貨のオープンソース実装"
 date: 2009-02-18T20:50:00Z
 source: p2pfoundation
 sourceUrl: "http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"

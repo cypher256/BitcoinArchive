@@ -1,5 +1,5 @@
 ---
-title: "返信: IPアドレスの代わりにホスト名"
+title: "Re: IPアドレスの代わりにホスト名"
 date: 2010-06-14T19:53:44.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=158.msg1582#msg1582"

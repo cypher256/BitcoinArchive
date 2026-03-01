@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン P2P 電子キャッシュ論文"
+title: "Re: ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-09T01:58:48Z
 source: cryptography-mailing-list
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014832.html"

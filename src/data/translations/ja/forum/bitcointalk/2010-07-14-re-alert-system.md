@@ -1,5 +1,5 @@
 ---
-title: "返信: バージョン0.3.8"
+title: "Re: バージョン0.3.8"
 date: 2010-07-14T22:11:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=260.msg2226#msg2226"

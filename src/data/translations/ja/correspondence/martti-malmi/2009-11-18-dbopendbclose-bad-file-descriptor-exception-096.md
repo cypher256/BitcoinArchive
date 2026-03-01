@@ -1,5 +1,5 @@
 ---
-title: "返信: Db::open/Db::close \"Bad file descriptor\" 例外"
+title: "Re: Db::open/Db::close \"Bad file descriptor\" 例外"
 date: 2009-11-18T05:14:45Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン v0.1 リリース"
+title: "Re: ビットコイン v0.1 リリース"
 date: 2009-01-17T16:49:45Z
 source: cryptography-mailing-list
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015016.html"

@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン - 最初の取引所提案"
+title: "Re: ビットコイン - 最初の取引所提案"
 date: 2009-07-22T10:10:02Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

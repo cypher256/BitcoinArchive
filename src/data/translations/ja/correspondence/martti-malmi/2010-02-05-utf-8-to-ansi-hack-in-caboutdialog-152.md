@@ -1,5 +1,5 @@
 ---
-title: "返信: CAboutDialogにおけるUTF-8からANSIへのハック"
+title: "Re: CAboutDialogにおけるUTF-8からANSIへのハック"
 date: 2010-02-05T18:39:18Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

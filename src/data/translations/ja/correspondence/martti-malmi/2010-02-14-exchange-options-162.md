@@ -1,5 +1,5 @@
 ---
-title: "返信: 取引所の選択肢"
+title: "Re: 取引所の選択肢"
 date: 2010-02-14T17:59:12Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

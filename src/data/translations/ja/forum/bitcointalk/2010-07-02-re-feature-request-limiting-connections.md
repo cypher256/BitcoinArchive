@@ -1,5 +1,5 @@
 ---
-title: "返信: 機能リクエスト: 接続数の制限"
+title: "Re: 機能リクエスト: 接続数の制限"
 date: 2010-07-02T19:21:36.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=223.msg1924#msg1924"

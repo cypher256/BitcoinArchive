@@ -1,5 +1,5 @@
 ---
-title: "返信: BitCoinについての記事執筆"
+title: "Re: BitCoinについての記事執筆"
 date: 2011-01-06T18:31:26Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

@@ -1,5 +1,5 @@
 ---
-title: "返信: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
+title: "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
 date: 2010-06-26T14:28:06.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=215.msg1797#msg1797"

@@ -1,5 +1,5 @@
 ---
-title: "返信: Bitcoin.orgのバックアップ"
+title: "Re: Bitcoin.orgのバックアップ"
 date: 2010-12-20T18:10:06Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

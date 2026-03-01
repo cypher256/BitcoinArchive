@@ -1,5 +1,5 @@
 ---
-title: "返信: SEOフレンドリーなサイト移行"
+title: "Re: SEOフレンドリーなサイト移行"
 date: 2009-11-22T20:22:57Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

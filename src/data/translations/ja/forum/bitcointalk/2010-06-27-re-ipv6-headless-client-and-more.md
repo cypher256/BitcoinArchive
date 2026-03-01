@@ -1,5 +1,5 @@
 ---
-title: "返信: IPv6、ヘッドレスクライアント、その他"
+title: "Re: IPv6、ヘッドレスクライアント、その他"
 date: 2010-06-27T13:02:38.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=218.msg1828#msg1828"

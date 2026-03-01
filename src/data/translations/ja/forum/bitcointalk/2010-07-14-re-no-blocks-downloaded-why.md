@@ -1,5 +1,5 @@
 ---
-title: "返信: ブロックがダウンロードされない...なぜ？"
+title: "Re: ブロックがダウンロードされない...なぜ？"
 date: 2010-07-14T16:22:03.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=323.msg2867#msg2867"

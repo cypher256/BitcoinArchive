@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコインモバイル"
+title: "Re: ビットコインモバイル"
 date: 2010-06-26T20:58:26.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=177.msg1814#msg1814"

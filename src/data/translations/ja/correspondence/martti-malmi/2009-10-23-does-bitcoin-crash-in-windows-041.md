@@ -1,5 +1,5 @@
 ---
-title: "返信: [bitcoin-list] BitcoinはWindowsでクラッシュしますか？"
+title: "Re: [bitcoin-list] BitcoinはWindowsでクラッシュしますか？"
 date: 2009-10-23T23:55:06Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

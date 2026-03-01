@@ -1,5 +1,5 @@
 ---
-title: "返信: SMFフォーラム、MODのインストールが必要"
+title: "Re: SMFフォーラム、MODのインストールが必要"
 date: 2009-11-21T10:50:00Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

@@ -1,5 +1,5 @@
 ---
-title: "返信: 転送: bitcoin.sourceforge.net"
+title: "Re: 転送: bitcoin.sourceforge.net"
 date: 2009-10-28T21:27:35Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

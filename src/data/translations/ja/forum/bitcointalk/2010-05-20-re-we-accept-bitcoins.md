@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン受け付けます"
+title: "Re: ビットコイン受け付けます"
 date: 2010-05-20T21:43:42.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=30.msg1169#msg1169"

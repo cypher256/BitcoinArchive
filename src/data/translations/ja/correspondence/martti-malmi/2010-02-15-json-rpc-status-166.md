@@ -1,5 +1,5 @@
 ---
-title: "返信: JSON-RPCの状況"
+title: "Re: JSON-RPCの状況"
 date: 2010-02-15T18:33:23Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

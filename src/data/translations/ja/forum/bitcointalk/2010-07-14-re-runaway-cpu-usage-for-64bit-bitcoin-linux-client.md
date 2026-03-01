@@ -1,5 +1,5 @@
 ---
-title: "返信: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
+title: "Re: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
 date: 2010-07-14T18:45:53.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=299.msg2908#msg2908"

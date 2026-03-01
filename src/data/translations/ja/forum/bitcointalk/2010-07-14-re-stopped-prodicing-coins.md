@@ -1,5 +1,5 @@
 ---
-title: "返信: コインの生成が停止した"
+title: "Re: コインの生成が停止した"
 date: 2010-07-14T17:04:02.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=343.msg2880#msg2880"

@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン - 自動起動とタスクトレイ最小化は必須機能"
+title: "Re: ビットコイン - 自動起動とタスクトレイ最小化は必須機能"
 date: 2009-08-29T17:31:05Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

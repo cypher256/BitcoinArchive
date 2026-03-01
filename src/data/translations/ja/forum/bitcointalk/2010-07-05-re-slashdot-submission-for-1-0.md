@@ -1,5 +1,5 @@
 ---
-title: "返信: 1.0用のSlashdot投稿"
+title: "Re: 1.0用のSlashdot投稿"
 date: 2010-07-05T21:31:14.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=234.msg1976#msg1976"

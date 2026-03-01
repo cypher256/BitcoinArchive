@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン - 「暗号通貨」という用語とサイト改善"
+title: "Re: ビットコイン - 「暗号通貨」という用語とサイト改善"
 date: 2009-06-11T21:24:25Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

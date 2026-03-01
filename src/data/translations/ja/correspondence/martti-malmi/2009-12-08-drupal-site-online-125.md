@@ -1,5 +1,5 @@
 ---
-title: "返信: Drupalサイトが公開"
+title: "Re: Drupalサイトが公開"
 date: 2009-12-08T10:50:20Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

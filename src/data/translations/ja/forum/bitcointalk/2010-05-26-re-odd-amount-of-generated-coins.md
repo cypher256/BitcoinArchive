@@ -1,5 +1,5 @@
 ---
-title: "返信: 生成されたコインの奇妙な量"
+title: "Re: 生成されたコインの奇妙な量"
 date: 2010-05-26T21:34:32.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=141.msg1260#msg1260"

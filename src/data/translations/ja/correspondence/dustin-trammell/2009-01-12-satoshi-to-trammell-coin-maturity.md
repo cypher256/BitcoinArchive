@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン v0.1 リリース - コインの成熟システム"
+title: "Re: ビットコイン v0.1 リリース - コインの成熟システム"
 date: 2009-01-12T18:52:45Z
 source: correspondence
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"

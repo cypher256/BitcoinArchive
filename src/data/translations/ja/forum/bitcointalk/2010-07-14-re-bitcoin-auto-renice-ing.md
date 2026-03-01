@@ -1,5 +1,5 @@
 ---
-title: "返信: bitcoin自動renice"
+title: "Re: bitcoin自動renice"
 date: 2010-07-14T17:38:31.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=72.msg2886#msg2886"

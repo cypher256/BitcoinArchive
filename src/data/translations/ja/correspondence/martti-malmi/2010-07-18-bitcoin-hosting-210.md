@@ -1,5 +1,5 @@
 ---
-title: "返信: 転送: Bitcoinホスティング"
+title: "Re: 転送: Bitcoinホスティング"
 date: 2010-07-18T15:23:10Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

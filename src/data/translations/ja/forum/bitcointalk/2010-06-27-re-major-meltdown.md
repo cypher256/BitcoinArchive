@@ -1,5 +1,5 @@
 ---
-title: "返信: 大規模なメルトダウン"
+title: "Re: 大規模なメルトダウン"
 date: 2010-06-27T19:06:09.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=202.msg1838#msg1838"

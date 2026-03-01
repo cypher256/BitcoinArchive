@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン - ウェブサイトとFAQ開発への同意"
+title: "Re: ビットコイン - ウェブサイトとFAQ開発への同意"
 date: 2009-05-03T05:08:36Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

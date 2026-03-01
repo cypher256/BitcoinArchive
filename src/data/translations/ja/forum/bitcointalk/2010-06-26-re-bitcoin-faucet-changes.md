@@ -1,5 +1,5 @@
 ---
-title: "返信: Bitcoin Faucetの変更"
+title: "Re: Bitcoin Faucetの変更"
 date: 2010-06-26T21:39:52.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=206.msg1816#msg1816"

@@ -1,5 +1,5 @@
 ---
-title: "返信: Drupalを修正するためにアクセス権限が必要"
+title: "Re: Drupalを修正するためにアクセス権限が必要"
 date: 2009-11-23T06:44:35Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"

@@ -1,5 +1,5 @@
 ---
-title: "返信: プロジェクト開発者"
+title: "Re: プロジェクト開発者"
 date: 2010-12-07T16:12:58Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
