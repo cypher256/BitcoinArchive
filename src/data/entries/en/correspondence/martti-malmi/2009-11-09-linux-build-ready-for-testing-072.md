@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "You got a lot done with the Linux build, autostart, minimize to tray,"
+description: "Satoshi thanks Malmi for his contributions to the Linux build including autostart and tray features, and wishes him well on his upcoming school C++ project."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

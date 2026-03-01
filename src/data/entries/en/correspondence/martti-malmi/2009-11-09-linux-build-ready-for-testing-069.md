@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Thanks for that, I see what happened.  Because the first one was slow,"
+description: "Satoshi diagnoses a block download bottleneck, explains there is no risk shutting down with unconfirmed transactions, and describes the background database shutdown and data directory options."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

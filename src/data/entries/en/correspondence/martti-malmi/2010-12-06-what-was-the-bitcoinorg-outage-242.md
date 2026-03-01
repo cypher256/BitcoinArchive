@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I'm ready to send you the password. Can you send me your PGP key so I"
+description: "Malmi offers to send the server password via PGP encryption and agrees to ask Gavin Andresen about taking on server administration responsibilities."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

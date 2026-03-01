@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "http://www.bitcoin.org/smf/index.php?topic=338.0"
+description: "Satoshi addresses bitcoin.org being listed on the PBL spam blacklist, enabling email verification for forum registration to prevent abuse."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

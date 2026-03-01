@@ -59,6 +59,10 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
       />
     </header>
 
+    {entry.data.editorNote && (
+      <p class="editor-note">{entry.data.editorNote}</p>
+    )}
+
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -94,6 +98,15 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   .entry-header h1 {
     margin: 0 0 0.75rem;
     font-size: 2rem;
+  }
+  .editor-note {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0 0 2rem;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--color-border);
+    background: var(--color-bg-alt);
   }
   .entry-content { line-height: 1.8; }
   .entry-nav {

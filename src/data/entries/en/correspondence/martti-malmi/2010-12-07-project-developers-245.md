@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Mind if I add you to the Project Developers list on the Contact page?"
+description: "Satoshi asks Malmi if he can add him to the Project Developers list on the bitcoin.org Contact page, noting his code contributions."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

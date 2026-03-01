@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ファイルlinux-0.1.6-test3.tar.bz2を添付して送付。"
+description: "サトシがlinux-0.1.6-test3ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

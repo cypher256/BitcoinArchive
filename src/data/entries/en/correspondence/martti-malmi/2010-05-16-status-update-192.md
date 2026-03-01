@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I've also been busy with other things for the last month and a half.  I"
+description: "Satoshi returns after a month-long absence, congratulates Malmi on his first exchange transaction, and discusses plans for the 0.3 release and JSON API."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

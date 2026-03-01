@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Linuxビルド、自動起動、トレイ最小化、セットアップなどの貢献への感謝と、C++プロジェクトの成功を祈る言葉。"
+description: "サトシがLinuxビルドの自動起動やトレイ機能などへのマルミの貢献に感謝し、今後の学校のC++プロジェクトの成功を祈る。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

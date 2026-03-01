@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Ok. I'll start backing up to another server I'm using. I'll send you"
+description: "Malmi agrees to start backing up bitcoin.org to another server and shares his PGP key, noting the backup size is approximately 50MB."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

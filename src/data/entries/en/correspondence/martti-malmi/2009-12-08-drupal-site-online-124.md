@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I went ahead and put the new Drupal site online.  Enough time has passed"
+description: "Satoshi announces that the new Drupal-based bitcoin.org website is now live, calling it a huge improvement over the old page."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

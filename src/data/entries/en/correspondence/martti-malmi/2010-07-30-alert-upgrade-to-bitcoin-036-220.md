@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Please upgrade to 0.3.6 ASAP to get an important bugfix."
+description: "Satoshi sends an alert to the bitcoin-list mailing list urging users to upgrade to Bitcoin 0.3.6 for an important bugfix."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました。"
+description: "マルミがBitcoinをGUIなしで実行する方法について調査結果を共有し、GTKのヘッドレスサポートやwxAppConsoleなどのアプローチを提案する。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

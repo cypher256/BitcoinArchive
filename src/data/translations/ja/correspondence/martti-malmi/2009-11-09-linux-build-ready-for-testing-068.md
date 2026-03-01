@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Liberty Standardのブロックダウンロード速度の問題についての調査。遅い接続先からの要求が原因の可能性。ポートバインドの技術的説明とSO_REUSEADDRの使用について。"
+description: "サトシがLiberty Standardから報告されたLinuxビルドのブロックダウンロード速度の遅さを調査し、マルミにも比較データを求める。代替ポートを使用できない理由も説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

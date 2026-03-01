@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "The bitcoin.org DNS change went through about 12 hours ago.  I'll wait"
+description: "Satoshi reports that the bitcoin.org DNS change has propagated and outlines plans to update the forum link on SourceForge."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

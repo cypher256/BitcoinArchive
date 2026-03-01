@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ShadowOfHarbringer described a way of mirroring the bitcoin.org"
+description: "Malmi shares a community-proposed mirroring method for bitcoin.org and asks whether to share the database with trusted members or use PGP-encrypted backups."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

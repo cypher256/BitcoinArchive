@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "修正しました。データベースを直接変更しました。"
+description: "マルミがデータベースを直接編集してBitweaverメニューエディタの問題を修正したことを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

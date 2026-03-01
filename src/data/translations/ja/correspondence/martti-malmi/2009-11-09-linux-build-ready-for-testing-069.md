@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ブロックダウンロードの問題の原因特定。未確認トランザクション中のシャットダウンのリスクはないことの説明。データディレクトリの指定方法とポートロックの仕組みについて。"
+description: "サトシがブロックダウンロードのボトルネックを診断し、未確認トランザクションがある状態でのシャットダウンにリスクはないと説明。バックグラウンドでのデータベースシャットダウンやデータディレクトリの指定方法についても解説。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

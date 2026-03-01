@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "mmalmi@cc.hut.fi wrote:"
+description: "Satoshi discusses creating separate GUI and non-GUI binaries for Bitcoin on Linux, and suggests Malmi use an Ubuntu laptop for testing instead of the VPS."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

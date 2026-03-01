@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "debug.logの分析結果とブロックダウンロードの問題についての調査。トレイアイコンの最小化オプションの分離についての議論。Liberty Standardのテスト報告への返信。"
+description: "サトシがLiberty StandardのLinuxテストにおけるdebug.logを分析し、ブロックダウンロードの問題を調査。トレイ最小化と閉じるオプションの分離にも同意。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

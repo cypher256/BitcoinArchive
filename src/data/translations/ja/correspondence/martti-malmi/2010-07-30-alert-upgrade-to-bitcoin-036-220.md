@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "重要なバグ修正を含む0.3.6への早急なアップグレードを呼びかけ"
+description: "サトシがbitcoin-listメーリングリストに重要なバグ修正のためBitcoin 0.3.6へのアップグレードを促すアラートを送信。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

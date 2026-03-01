@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I created a forum on Zetaboards, InvisionFree's new site that they're"
+description: "Satoshi announces the creation of a Bitcoin forum on Zetaboards, shares admin credentials with Malmi, and outlines the initial subforum structure."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

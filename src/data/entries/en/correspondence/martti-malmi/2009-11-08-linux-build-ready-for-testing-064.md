@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "That's great! A major waypoint reached. Seems to work fine here."
+description: "Malmi confirms that the Linux build works fine on his machine, celebrating the milestone of Bitcoin running on Linux."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

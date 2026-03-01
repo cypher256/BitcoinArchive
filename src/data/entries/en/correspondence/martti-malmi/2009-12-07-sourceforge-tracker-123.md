@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I made a copy of the logo onto the local server, so we can still use"
+description: "Malmi copies the SourceForge logo to the local server to use as a graphic without triggering tracking, noting it complies with SF trademark policy."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

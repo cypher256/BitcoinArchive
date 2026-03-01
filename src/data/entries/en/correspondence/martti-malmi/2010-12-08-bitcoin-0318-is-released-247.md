@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Version 0.3.18 is now available."
+description: "Satoshi announces Bitcoin 0.3.18 to the mailing list, featuring wallet.dat compatibility fixes and Gavin's new accounts-based JSON-RPC commands."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

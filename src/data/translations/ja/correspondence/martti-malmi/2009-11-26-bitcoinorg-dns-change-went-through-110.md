@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "bitcoin.orgのDNS変更が約12時間前に反映された。あと12時間待ってからフォーラムタブを変更する予定"
+description: "サトシがbitcoin.orgのDNS変更が反映されたことを報告し、SourceForgeのフォーラムリンク更新計画を説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

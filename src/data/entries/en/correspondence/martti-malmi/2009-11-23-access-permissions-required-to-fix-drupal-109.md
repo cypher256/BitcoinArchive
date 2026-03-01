@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Done. I granted you access to all the files."
+description: "Malmi confirms he has granted Satoshi access to all the necessary Apache configuration files on the bitcoin.org server."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

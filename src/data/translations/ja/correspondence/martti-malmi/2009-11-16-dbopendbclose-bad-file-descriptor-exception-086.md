@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "回避策のアイデアがありますが、エラーがどのファイルで発生しているかによります。"
+description: "サトシがBerkeley DBの「Bad file descriptor」例外に対する回避策のアイデアを持っており、エラーが発生しているデータベースファイルの特定をLiberty Standardに依頼。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

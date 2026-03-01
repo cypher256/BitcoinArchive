@@ -38,6 +38,7 @@ const entrySchema = z.object({
     name: z.string(),
     url: z.string().url(),
   })).optional(),
+  editorNote: z.string().optional(),
   tags: z.array(z.string()).optional(),
   pdfMetadata: z.object({
     id: z.string(),

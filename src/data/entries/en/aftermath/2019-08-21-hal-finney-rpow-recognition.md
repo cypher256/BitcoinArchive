@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto Institute"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Hal Finney's Reusable Proofs of Work (RPOW) system, created in 2004, receives renewed attention and recognition as a critical precursor to Bitcoin's proof-of-work system."
+description: "Hal Finney's RPOW system, a 2004 prototype for reusable proof-of-work tokens, gains posthumous recognition as one of Bitcoin's most important direct precursors."
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Bitweaverのメニューエディタが壊れていてフォーラムリンクを変更できない"
+description: "サトシがSourceForgeのBitweaverメニューエディタの不具合を報告し、フォーラムリンクをbitcoin.orgに更新するようマルミに依頼。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

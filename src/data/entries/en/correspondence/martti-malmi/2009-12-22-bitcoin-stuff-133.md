@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I have registered the domain name bitcoinexchange.com and will start"
+description: "Malmi announces he registered bitcoinexchange.com and outlines plans for a simple PayPal-based Bitcoin exchange service."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

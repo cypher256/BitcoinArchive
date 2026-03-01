@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Drupalの.htaccessファイルがmod_rewriteを使用してクリーンURLを有効にしているが、Apacheが「AllowOverride All」に設定されていないため動作していない"
+description: "サトシがDrupalのApache設定を修正するためにマルミにサーバーのアクセス権限を要求し、mod_rewriteのクリーンURL有効化の詳細な手順を提供。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

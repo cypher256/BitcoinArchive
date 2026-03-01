@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "フォーラムのメール通知がスパム問題を引き起こしている可能性を指摘し、メール認証の有効化を実施"
+description: "サトシがbitcoin.orgのPBLスパムブラックリスト登録問題に対処し、悪用防止のためフォーラム登録時のメール認証を有効化。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

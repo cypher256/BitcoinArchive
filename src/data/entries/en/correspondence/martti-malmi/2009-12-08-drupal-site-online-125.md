@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Good job. I redirected bitcoin.sourceforge.net there."
+description: "Malmi congratulates Satoshi on the new bitcoin.org launch and confirms he has redirected bitcoin.sourceforge.net to the new site."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

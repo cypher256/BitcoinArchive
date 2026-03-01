@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Gavin Andresen wrote:"
+description: "Satoshi agrees with Gavin that the forum database should not be shared externally due to private messages and passwords, and supports encrypted backup storage."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

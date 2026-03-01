@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Liberty Standard wrote:"
+description: "Satoshi investigates slow block download speeds reported by Liberty Standard on the Linux build, asks Malmi for comparison data, and explains why Bitcoin cannot use alternative ports."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

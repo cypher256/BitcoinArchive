@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Do you know what caused that outage?  Did it need to be rebooted, or was"
+description: "Satoshi asks Malmi about the cause of a bitcoin.org outage and inquires about backup procedures, suggesting a mirror backup arrangement."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

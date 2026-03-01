@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Zetaboardsにフォーラムを作成。管理者アカウントの共有、テーマの選定、サブフォーラムの構成方針について。"
+description: "サトシがZetaboards上にBitcoinフォーラムを作成したことを報告。マルミに管理者アカウントを共有し、初期のサブフォーラム構成方針を説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

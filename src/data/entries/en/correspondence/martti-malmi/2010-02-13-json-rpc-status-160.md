@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I uploaded my JSON-RPC and command line implementation to SVN.  I'm"
+description: "Satoshi announces uploading the JSON-RPC and command line implementation to SVN, shares example commands, and asks Malmi to test it with Python."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

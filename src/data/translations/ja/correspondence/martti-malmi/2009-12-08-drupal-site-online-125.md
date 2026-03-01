@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "お疲れ様。bitcoin.sourceforge.netをそこにリダイレクトした"
+description: "マルミが新しいbitcoin.orgの公開を祝福し、bitcoin.sourceforge.netを新サイトにリダイレクトしたことを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

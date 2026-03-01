@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "おそらく折れてそうすることになるでしょう。initとshutdownをinit.cppかstart.cppなどに移動できます。"
+description: "サトシがLinux上でBitcoinのGUI版と非GUI版のバイナリを分離する方針を議論し、マルミにVPSではなくUbuntuノートPCでのテストを提案する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

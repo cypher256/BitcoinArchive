@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "This is a minor release to add some DoS protection."
+description: "Satoshi announces the Bitcoin 0.3.19 minor release to the mailing list, adding initial DoS protection limits and removing safe mode alerts."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

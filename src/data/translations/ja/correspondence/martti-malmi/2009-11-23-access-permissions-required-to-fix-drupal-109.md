@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "完了しました。すべてのファイルへのアクセス権限を付与しました。"
+description: "マルミがbitcoin.orgサーバー上の必要なApache設定ファイルへのアクセス権限をサトシに付与したことを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I have an idea for a workaround, but it depends on what files the errors"
+description: "Satoshi has an idea for a workaround for the Berkeley DB 'Bad file descriptor' exception and asks Liberty Standard which database files are triggering the errors."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

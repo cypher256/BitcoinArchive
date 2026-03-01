@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto Institute"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "2004年にHal Finneyが開発した再利用可能プルーフ・オブ・ワーク（RPOW）システムが、ビットコインのプルーフ・オブ・ワークシステムの重要な先駆けとして、改めて注目と評価を受ける。"
+description: "2004年に開発されたHal Finneyの再利用可能プルーフ・オブ・ワーク（RPOW）システムが、ビットコインの最も重要な直接の先駆けの一つとして没後に再評価される。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

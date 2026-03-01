@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "新しいDrupalサイトを公開した。安全な移行のための十分な時間が経過し、サイトの見栄えも良い"
+description: "サトシが新しいDrupalベースのbitcoin.orgウェブサイトの公開を発表し、以前のページからの大幅な改善と評価。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "You really don't want to keep running in Wine, you're getting database"
+description: "Satoshi warns against running Bitcoin in Wine due to unfixable Berkeley DB incompatibility causing database corruption, and notes that GCC 4.3.3 on Linux optimizes SHA-256 better."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

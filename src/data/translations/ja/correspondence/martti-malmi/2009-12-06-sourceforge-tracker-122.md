@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。bitcoin.orgにはプライバシーの理由で設置しない"
+description: "サトシがSourceForgeトラッカーをSourceForgeページに追加するが、SSLの混合コンテンツ警告とプライバシーの懸念からbitcoin.orgからは削除。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

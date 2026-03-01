@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Just a few clues I've found about running the same binary without a GUI:"
+description: "Malmi shares research on running Bitcoin without a GUI, including GTK headless support, wxAppConsole, and IMPLEMENT_APP_NO_MAIN() approaches."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

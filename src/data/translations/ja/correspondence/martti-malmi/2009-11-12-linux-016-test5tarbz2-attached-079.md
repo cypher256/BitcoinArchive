@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "12,033,918バイトのlinux-0.1.6-test5.tar.bz2を添付。"
+description: "サトシがlinux-0.1.6-test5ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

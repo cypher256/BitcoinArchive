@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "やった、一発で動きました。"
+description: "サトシがマルミのPythonテスト成功を受けてJSON-RPCサーバーが一発で動作したことを喜び、テストに使ったPythonコードの共有を依頼する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

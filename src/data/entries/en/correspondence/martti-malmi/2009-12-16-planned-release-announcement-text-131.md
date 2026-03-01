@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Here's the planned release announcement text.  Probably releasing shortly."
+description: "Satoshi shares the draft release announcement for Bitcoin v0.2, listing new features contributed by both himself and Malmi."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I have a prototype of the bitcoinexchange.com service up now (auth:"
+description: "Malmi reports that a Django-powered prototype of bitcoinexchange.com is running and discusses plans for hyperbolic supply-demand pricing."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

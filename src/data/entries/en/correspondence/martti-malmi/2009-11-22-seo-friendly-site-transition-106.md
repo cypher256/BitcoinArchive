@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "We need to do a continuity transition with bitcoin.org so the search"
+description: "Satoshi outlines an SEO-friendly plan for transitioning bitcoin.org to a new server, emphasizing the importance of preserving search engine history and site start date."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

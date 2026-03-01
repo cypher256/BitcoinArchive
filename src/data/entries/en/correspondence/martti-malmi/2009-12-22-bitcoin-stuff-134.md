@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Thanks for creating the maintenance account, it would have been"
+description: "Satoshi responds to Malmi's exchange plans, discussing programmatic Bitcoin address generation, address reuse concerns, and UI improvements for receiving payments."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

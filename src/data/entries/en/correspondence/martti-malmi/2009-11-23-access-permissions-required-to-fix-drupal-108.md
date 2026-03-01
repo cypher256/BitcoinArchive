@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Drupal's .htaccess file which uses mod_rewrite to allow clean URLs"
+description: "Satoshi requests server access permissions from Malmi to fix Drupal's Apache configuration, providing detailed instructions for enabling mod_rewrite clean URLs."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

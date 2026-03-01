@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Wine上での実行継続に対する警告。Berkeley DBの互換性問題とデータベース破損のリスク。GCC 4.3.3によるSHA-256コードの最適化についての考察。"
+description: "サトシがWine上でのBitcoin実行はBerkeley DBの互換性問題によるデータベース破損のリスクがあると警告。LinuxのGCC 4.3.3がSHA-256をより効率的に最適化する点にも言及。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "You're right, I was looking at a test run with 250,000 blocks... duh."
+description: "Satoshi corrects his earlier memory usage estimate for Bitcoin, confirming normal usage is only 17MB after mistakenly referencing a 250,000 block test run."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

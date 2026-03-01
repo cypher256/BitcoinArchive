@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "The Bitweaver menu editor is broken, I can't change the Forum link.  The"
+description: "Satoshi reports that the Bitweaver menu editor on SourceForge is broken and asks Malmi for help updating the forum link to point to bitcoin.org."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

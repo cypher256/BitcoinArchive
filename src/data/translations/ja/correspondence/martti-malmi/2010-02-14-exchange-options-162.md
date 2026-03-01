@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ZayPayが提供するSMS決済でコインを購入する場合にのみ取引を自動化する方向で進めています。"
+description: "マルミがビットコイン交換サービスの計画を説明し、ZayPayによるSMS決済、Pecunixでの準備金管理、IBAN送金での買い取りなどの方針を示す。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

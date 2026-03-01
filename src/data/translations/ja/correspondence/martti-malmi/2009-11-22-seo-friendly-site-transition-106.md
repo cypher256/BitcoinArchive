@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "検索エンジンが新しいサイトだと判断してサイト開始日とPRデータをリセットしないように、bitcoin.orgの継続性を保った移行が必要です。"
+description: "サトシが検索エンジンの履歴とサイト開始日を保持するためのbitcoin.orgのSEOフレンドリーなサーバー移行計画を説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

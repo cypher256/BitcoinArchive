@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Linuxビルドのネットワーク上でのテスト準備が完了。実行ファイルを添付で送付し、ダウンロードリンクも提供。"
+description: "サトシがBitcoin Linuxビルド（バージョン0.1.6-test1）のネットワークテスト準備完了を告知し、ダウンロードリンクを提供。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

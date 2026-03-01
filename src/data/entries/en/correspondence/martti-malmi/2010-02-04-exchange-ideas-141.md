@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "You could always exchange for Liberty Reserve.  It's an online currency"
+description: "Satoshi suggests Liberty Reserve and paysafecards as exchange options for Malmi's Bitcoin exchange service, explaining the advantages of non-reversible payment methods."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

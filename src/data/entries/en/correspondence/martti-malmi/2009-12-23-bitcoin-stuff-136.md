@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "mmalmi@cc.hut.fi wrote:"
+description: "Satoshi discusses the need for a headless Bitcoin daemon, command-line API design for receiving payments, and memory requirements for running on a VPS."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

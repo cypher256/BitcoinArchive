@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "wxApp::Initializeでgtk-init-checkを呼び出しているのが分かりました。"
+description: "サトシがwxApp::Initializeのサブクラス化でディスプレイなしでの実行に成功したことを報告し、-daemonと-serverコマンドラインスイッチの命名について意見を求める。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

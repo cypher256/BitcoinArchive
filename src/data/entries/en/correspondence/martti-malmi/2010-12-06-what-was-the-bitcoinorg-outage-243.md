@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "mmalmi@cc.hut.fi wrote:"
+description: "Satoshi shares his PGP public key with Malmi for secure password exchange and asks about the progress of migrating BitcoinExchange to another server."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Attached is the root password encrypted."
+description: "Malmi sends the encrypted root password for the bitcoin.org server and provides an update on migrating BitcoinExchange files and database to a new server."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

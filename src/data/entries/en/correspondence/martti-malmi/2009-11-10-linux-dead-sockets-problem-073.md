@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I see what happened.  All your sockets went dead somehow.  You had no"
+description: "Satoshi diagnoses a zombie socket problem on Linux where dead connections caused generated blocks to be lost, and discusses potential improvements to block confirmation status display."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

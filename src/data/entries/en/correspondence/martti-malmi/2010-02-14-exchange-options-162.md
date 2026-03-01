@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I'm moving in the direction of making transactions automated only when"
+description: "Malmi outlines his plans for the Bitcoin exchange service, including SMS payments via ZayPay, Pecunix reserves, and IBAN transfers for buying coins."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

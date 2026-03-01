@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Marttiがパスワード送信の準備ができたことを伝え、PGP鍵を要求"
+description: "マルミがPGP暗号化でサーバーパスワードを送る準備ができたことを伝え、Gavin Andresenへのサーバー管理の委任について同意。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

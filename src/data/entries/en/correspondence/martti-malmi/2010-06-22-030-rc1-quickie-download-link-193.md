@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "If bandwidth is a problem, delete my link in the \"0.3 almost ready\""
+description: "Satoshi shares a temporary download link for Bitcoin 0.3.0 RC1, avoiding SourceForge, and asks Malmi to serve as the project's treasurer for incoming donations."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

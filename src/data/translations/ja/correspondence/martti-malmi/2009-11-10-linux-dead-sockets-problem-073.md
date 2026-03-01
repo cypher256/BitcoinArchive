@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ゾンビ接続によりネットワークと通信できず、生成したブロックが失われた問題の分析。Linuxのソケットハンドリングの問題と、確認ステータスの表示改善案について議論。"
+description: "サトシがLinux上のゾンビソケット問題を診断。デッド接続により生成ブロックが失われた原因を特定し、ブロック確認ステータス表示の改善案を検討。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

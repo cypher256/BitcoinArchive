@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "SatoshiがPGP公開鍵を送信し、bitcoinexchangeのサーバー移行について確認"
+description: "サトシが安全なパスワード交換のためPGP公開鍵をマルミと共有し、BitcoinExchangeの別サーバーへの移行進捗を確認。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

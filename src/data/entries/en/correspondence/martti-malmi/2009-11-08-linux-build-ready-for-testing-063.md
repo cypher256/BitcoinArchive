@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "The Linux build is ready for testing on the network.  It seems solid.  I"
+description: "Satoshi announces that the Bitcoin Linux build version 0.1.6-test1 is ready for network testing and provides a download link."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"
