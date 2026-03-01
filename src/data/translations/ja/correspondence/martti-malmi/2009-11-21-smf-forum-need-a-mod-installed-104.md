@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "お客様向けにJoomlaサイトを作ったことがありますが、Drupalのほうが好きだと言わざるを得ません。"
+description: "マルミが自身の経験からJoomlaよりもDrupalを推薦し、bitcoin.orgのDNSエントリ変更と無料SSL証明書の取得を提案。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

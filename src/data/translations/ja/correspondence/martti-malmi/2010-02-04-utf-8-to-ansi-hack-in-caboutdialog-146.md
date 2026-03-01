@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "この変更の理由は何でしたか？"
+description: "サトシがwxWidgetsの著作権記号に関するAboutダイアログのUTF-8からANSIへの変換ハックのコード変更についてマルミに質問。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

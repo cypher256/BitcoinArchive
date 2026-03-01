@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "P2P暗号通貨Bitcoinのバージョン0.3をリリースします！"
+description: "サトシがbitcoin-listメーリングリストにBitcoin 0.3の公式リリースアナウンスを送付し、デーモンモードやJSON-RPCなどの新機能を紹介する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

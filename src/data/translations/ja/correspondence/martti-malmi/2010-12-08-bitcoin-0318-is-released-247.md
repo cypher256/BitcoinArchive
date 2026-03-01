@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Bitcoin バージョン0.3.18のリリースアナウンス。アカウントベースのJSON-RPCコマンドを含む"
+description: "サトシがBitcoin 0.3.18のリリースをメーリングリストに告知。wallet.datの互換性修正とGavinのアカウントベースJSON-RPCコマンドを搭載。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

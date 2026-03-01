@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "了解です。再び壊れないように以下のように変更します。"
+description: "サトシがAboutダイアログの著作権記号のUTF-8ハックを16進エスケープシーケンスに変更し、今後のエンコーディング破損を防止する修正を提案。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

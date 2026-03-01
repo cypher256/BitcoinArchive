@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "SMFフォーラムの設定を進めています。SMFはphpBBよりも設計が優れていて信頼性が高いと言われています。"
+description: "サトシがSMFフォーラムのCSS調整を進め、MODインストールの協力を要請。Liberty Standardが初のBitcoin販売を行ったことも共有。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

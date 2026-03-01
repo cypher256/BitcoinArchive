@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "IS_LIVE option was indeed set to false, but it only affects the"
+description: "Malmi explains the Bitweaver IS_LIVE setting and slow SourceForge hosting, then asks Satoshi about using Boost's cross-platform thread and socket libraries."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

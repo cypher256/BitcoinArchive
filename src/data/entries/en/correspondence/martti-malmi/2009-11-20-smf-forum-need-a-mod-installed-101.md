@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Oh yes, one more thing. I haven't configured the server's sendmail"
+description: "Malmi notes that the server's sendmail has not been configured yet, so PHP mail functionality is not available but is not needed at this point."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "それではDrupalのセットアップを進めます。"
+description: "サトシがDrupalでのセットアップ続行を決定。サイトのHTTPSデフォルト化には反対し、プライバシーを重視するユーザー向けのオプション機能としてSSLを提供する方針を提案。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

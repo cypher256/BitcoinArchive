@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "The paper was published in 2008."
+description: "Satoshi clarifies that the Bitcoin whitepaper was published in 2008, not 2009, and calls for someone to correct the error on Wikipedia."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "まだ役に立つかもしれないので、ログをお送りします。"
+description: "マルミがBerkeley DBの「Bad file descriptor」例外の調査に役立てるため、デバッグログとデータベースログをサトシに送付。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

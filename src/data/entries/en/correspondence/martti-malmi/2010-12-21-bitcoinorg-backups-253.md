@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "You can fetch the backup with:"
+description: "Malmi provides the wget command and credentials for fetching the daily GPG-encrypted bitcoin.org backup file."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

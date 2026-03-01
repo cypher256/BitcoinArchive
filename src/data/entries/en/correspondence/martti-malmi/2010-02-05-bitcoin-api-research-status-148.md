@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I noticed this in the docs for wxSocketServer::Accept(bool wait = true):"
+description: "Satoshi reports his API research findings, noting wxWidgets' threading limitations and leaning toward JSON-RPC over XML-RPC for Bitcoin's command-line interface."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

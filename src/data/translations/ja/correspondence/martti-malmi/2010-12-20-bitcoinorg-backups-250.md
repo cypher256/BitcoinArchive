@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "bitcoin.orgウェブサイトとフォーラムのバックアップ・ミラーリング方法についての議論"
+description: "マルミがコミュニティ提案のbitcoin.orgミラーリング方法を共有し、信頼できるメンバーへのデータベース共有かPGP暗号化バックアップかを検討。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

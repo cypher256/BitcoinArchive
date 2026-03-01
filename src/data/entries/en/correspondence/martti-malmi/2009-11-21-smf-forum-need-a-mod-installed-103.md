@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Thanks, that worked, I got File Manager installed with SSH.  I also"
+description: "Satoshi reports installing the SMF File Manager mod via SSH, uploading Drupal themes, and comparing Drupal and Joomla as CMS options for bitcoin.org."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

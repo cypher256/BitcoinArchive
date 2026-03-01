@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Yes, we could give accounts to trusted translators. I haven't found a"
+description: "Malmi agrees to give trusted translators Drupal accounts with revision-tracking permissions, suggesting Xunie as the first candidate."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

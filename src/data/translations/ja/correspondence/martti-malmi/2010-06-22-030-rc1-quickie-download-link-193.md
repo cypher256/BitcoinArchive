@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "帯域幅が問題になるようなら、「0.3 almost ready」スレッドの私のリンクを削除してください。"
+description: "サトシがSourceForgeを避けてBitcoin 0.3.0 RC1の一時ダウンロードリンクを共有し、マルミにプロジェクトの会計係を務めるよう依頼する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

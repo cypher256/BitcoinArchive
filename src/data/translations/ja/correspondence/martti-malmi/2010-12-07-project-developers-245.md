@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshiが連絡先ページのプロジェクト開発者リストにMarttiを追加することを提案"
+description: "サトシがマルミのコード貢献を認め、bitcoin.orgの連絡先ページのプロジェクト開発者リストへの追加を提案。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

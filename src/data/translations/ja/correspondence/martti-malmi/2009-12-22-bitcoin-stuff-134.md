@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "メンテナンス用アカウントを作成してくれてありがとうございます。それがなければあれだけの作業は不可能でした。"
+description: "サトシがマルミの取引所計画に回答し、プログラムによるBitcoinアドレス生成、アドレスの使い回しの懸念、支払い受信のUI改善を議論。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "翻訳者（少なくとも信頼できる人たち）にDrupalのユーザーアカウントを持たせて、翻訳テキストを直接更新できるようにすることは可能ですか？"
+description: "サトシが信頼できる翻訳者にbitcoin.orgのDrupalアカウントを付与して翻訳を直接更新できるようにすることを提案し、ホームページ管理の委任について議論する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

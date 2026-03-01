@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I don't have the time to configure it today, but I made a temporary"
+description: "Malmi provides Satoshi with SSH access to the VPS for forum configuration, approves going live, and expresses excitement about launching his own Bitcoin exchange."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

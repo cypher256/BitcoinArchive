@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Is it possible for the translators (at least the more trusted ones) to"
+description: "Satoshi proposes giving trusted translators Drupal user accounts on bitcoin.org so they can update translations directly, and discusses delegation of homepage maintenance."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

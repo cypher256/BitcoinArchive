@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "wxSocketServer::Accept(bool wait = true)のドキュメントでこれに気づきました。wxWidgetsは病的なまでにシングルスレッドです。"
+description: "サトシがAPI調査結果を報告し、wxWidgetsのスレッド制限を指摘。Bitcoinのコマンドラインインターフェースとして XML-RPCよりJSON-RPCを推す方向に。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

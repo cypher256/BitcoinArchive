@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "テストバージョン5だったと思いますが、完全には確かではありません。"
+description: "マルミがテストバージョン5だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況を説明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

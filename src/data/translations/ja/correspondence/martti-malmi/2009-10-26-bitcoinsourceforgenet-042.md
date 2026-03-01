@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "何が起きているか分かる？自分が見るたびに正常なんだけど。"
+description: "サトシがEugen LeitlとLiberty Standardからのbitcoin.sourceforge.netダウン報告を転送し、BitweaverがTESTモードのエラーメッセージを表示している問題を伝える。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

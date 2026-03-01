@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Rackspaceはサポートが非常に良く、バックエンド、接続性も良好で、スケーリング性に優れたクラウドベースの仮想サーバーを提供しています。"
+description: "マルミがThufirからの安価なホスティング提案を転送し、Rackspaceとの費用差を比較しつつ、予定されている寄付次第ではRackspace継続も可能と述べる。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

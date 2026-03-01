@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "より良いアプローチがあるかどうか確認する前に、急いですべての決済手段から拒否されないようにしてください。"
+description: "サトシが取引所の決済処理業者選びに慎重になるようマルミに助言し、創造的なポジショニング戦略を提案、クレジットカード返金については警告。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

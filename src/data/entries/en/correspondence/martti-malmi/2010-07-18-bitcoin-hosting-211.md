@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Ok, I won't switch it. Donations in Bitcoin are helpful and can be"
+description: "Malmi agrees not to switch hosting and provides a Bitcoin address for donations to help cover bitcoin.org server costs."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

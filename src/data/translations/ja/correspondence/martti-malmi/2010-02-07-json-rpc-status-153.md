@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "JSON-RPCの実装は順調に進んでいます。ソケットにはboost::asioを使っています。"
+description: "サトシがboost::asioとJSON Spiritを使用したBitcoinのJSON-RPC実装の進捗を報告し、フォーラムの急成長にも言及。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

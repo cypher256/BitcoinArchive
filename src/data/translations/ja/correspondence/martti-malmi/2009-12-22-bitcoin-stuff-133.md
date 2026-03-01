@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ドメイン名bitcoinexchange.comを登録し、余暇の活動として近いうちにサービスのコーディングを始めるつもりです。"
+description: "マルミがbitcoinexchange.comドメインを登録したことを報告し、PayPalベースのシンプルなBitcoin取引所サービスの構想を説明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

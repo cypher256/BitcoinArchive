@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshiがデータベースの外部共有に反対し、暗号化バックアップの信頼できる保管場所を支持"
+description: "サトシがGavinと共にフォーラムデータベースの外部共有に反対し、プライベートメッセージやパスワードの保護のため暗号化バックアップの保管を支持。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

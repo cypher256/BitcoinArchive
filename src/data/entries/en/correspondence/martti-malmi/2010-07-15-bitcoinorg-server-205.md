@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "You did some research when choosing hosting, this was a well chosen one,"
+description: "Satoshi praises the current bitcoin.org hosting choice, advises against switching, and asks about the status of the anonymous $2,000 donation."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

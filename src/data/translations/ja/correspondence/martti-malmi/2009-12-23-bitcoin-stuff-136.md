@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "なぜ皆がUI無しにこだわるのか不思議に思っていました。Windowsではトレイに小さなアイコンを表示するだけで動かせるのに。"
+description: "サトシがヘッドレスBitcoinデーモンの必要性、支払い受信のためのコマンドラインAPI設計、VPS上での動作に必要なメモリ要件について議論。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

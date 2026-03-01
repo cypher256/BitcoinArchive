@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "What was the reason for this change?"
+description: "Satoshi asks Malmi about a code change in the About dialog's UTF-8 to ANSI conversion hack for the copyright symbol in wxWidgets."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "その通りですね。25万ブロックのテスト実行を見ていました…失礼。"
+description: "サトシが以前のメモリ使用量の見積もりを修正。25万ブロックのテスト実行を誤って参照していたことを認め、通常使用量はわずか17MBと確認。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

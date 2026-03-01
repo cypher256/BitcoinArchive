@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Right, I'll change it to this so it doesn't get broken again:"
+description: "Satoshi proposes using a hex escape sequence to fix the UTF-8 copyright symbol hack in the About dialog, preventing future encoding breakage."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

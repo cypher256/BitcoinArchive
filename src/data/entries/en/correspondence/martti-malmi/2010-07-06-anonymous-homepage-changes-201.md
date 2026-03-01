@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Ok, that sounds reasonable."
+description: "Malmi agrees with Satoshi's decision to de-emphasize anonymity on the bitcoin.org homepage and add Tor instructions instead."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

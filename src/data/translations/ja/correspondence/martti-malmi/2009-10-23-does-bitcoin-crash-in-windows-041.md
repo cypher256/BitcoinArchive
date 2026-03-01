@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "v0.1.5でのクラッシュ報告は受けていない。Windowsでは非常に安定している。"
+description: "サトシがLiberty Standardのクラッシュ報告に対し問題はBitcoinではなくWineに起因すると回答し、マルミと共に次期リリースに取り組んでいることに言及する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

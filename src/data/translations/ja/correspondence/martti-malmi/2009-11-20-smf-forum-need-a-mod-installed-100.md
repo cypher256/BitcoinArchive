@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "今日は設定する時間がありませんが、一時的なアカウントを作成しました。"
+description: "マルミがフォーラム設定用にサトシにVPSへのSSHアクセスを提供し、公開を承認。自身のBitcoin取引所の立ち上げへの期待も表明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

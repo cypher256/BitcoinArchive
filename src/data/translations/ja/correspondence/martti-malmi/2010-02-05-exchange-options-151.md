@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "LRの購入の難しさが、その方向で簡単にできる限界なのかもしれません。"
+description: "サトシがBitcoinの入手の容易さがマイクロペイメントのエコシステムを立ち上げる可能性を説明し、紙幣と金の歴史的関係になぞらえて議論。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

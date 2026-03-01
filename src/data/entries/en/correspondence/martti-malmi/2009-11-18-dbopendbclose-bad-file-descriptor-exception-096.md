@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Thanks.  The db::open/close errors confirm the pattern."
+description: "Satoshi confirms the DB error pattern from Malmi's logs and notices zombie socket activity, asking which test version Malmi was running."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

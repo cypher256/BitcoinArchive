@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Looks like an excellent opportunity to reach an important audience"
+description: "Malmi responds to an invitation from the EPCA Conference in Amsterdam, recommending Gavin Andresen or Bruce Wagner as potential Bitcoin representatives."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I'll convert the CriticalSection code to wxCriticalSection and upload it"
+description: "Satoshi plans to convert CriticalSection code to wxCriticalSection for cross-platform compatibility and agrees it is time to start the Linux build."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

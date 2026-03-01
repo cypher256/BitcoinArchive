@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ありがとう、うまくいきました。SSHでFile Managerをインストールできました。Drupalにもいくつかテーマをアップロードしました。"
+description: "サトシがSSH経由でSMF File Managerのインストールに成功し、Drupalのテーマもアップロード。bitcoin.orgのCMSとしてDrupalとJoomlaを比較検討。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

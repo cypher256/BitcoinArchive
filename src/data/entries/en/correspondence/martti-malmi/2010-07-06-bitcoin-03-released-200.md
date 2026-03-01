@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Announcing version 0.3 of Bitcoin, the P2P cryptocurrency!  Bitcoin is a"
+description: "Satoshi sends the official Bitcoin 0.3 release announcement to the bitcoin-list mailing list, describing new features including daemon mode and JSON-RPC."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

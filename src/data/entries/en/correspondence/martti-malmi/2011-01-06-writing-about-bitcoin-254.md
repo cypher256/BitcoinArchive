@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Gavin Andresen wrote:"
+description: "Satoshi delegates press and media responsibilities to Gavin Andresen, emphasizing the importance of building a good relationship with the EFF."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

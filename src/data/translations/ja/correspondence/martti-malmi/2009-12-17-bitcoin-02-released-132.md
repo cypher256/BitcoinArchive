@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Bitcoin 0.2が登場！"
+description: "サトシがBitcoin v0.2の公式リリースアナウンスをマルミに転送。Linuxサポート、マルチプロセッサマイニング、TORプロキシ対応を含む。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

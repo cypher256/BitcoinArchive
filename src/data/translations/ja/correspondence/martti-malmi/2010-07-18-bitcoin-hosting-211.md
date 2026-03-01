@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "切り替えをしないことに同意し、Bitcoinでの寄付用アドレスを提供"
+description: "マルミがホスティング切り替えをしないことに同意し、bitcoin.orgサーバー費用を賄うためのBitcoin寄付用アドレスを提供する。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

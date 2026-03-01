@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I've been configuring the SMF forum.  They're saying SMF is better"
+description: "Satoshi reports configuring the SMF forum with CSS customizations, requests help installing a mod, and shares that Liberty Standard made his first Bitcoin sale."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

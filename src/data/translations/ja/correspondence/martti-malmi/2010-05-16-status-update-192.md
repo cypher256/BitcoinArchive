@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "私もこの1ヶ月半、他の仕事で忙しくしていました。"
+description: "サトシが1ヶ月以上の不在から復帰し、マルミの初取引を祝福するとともに、0.3リリースとJSON APIの計画について議論する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I think it was test version 5, not completely sure though. I'm running"
+description: "Malmi reports he was likely running test version 5 and explains that he uses his laptop with hibernate between different locations, which may contribute to the socket issues."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

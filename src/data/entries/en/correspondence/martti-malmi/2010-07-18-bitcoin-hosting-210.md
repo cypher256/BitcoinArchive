@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Please promise me you won't make a switch now.  The last thing we need"
+description: "Satoshi urges Malmi not to switch hosting providers during the Slashdot traffic surge, and offers to send Bitcoin donations to cover costs."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

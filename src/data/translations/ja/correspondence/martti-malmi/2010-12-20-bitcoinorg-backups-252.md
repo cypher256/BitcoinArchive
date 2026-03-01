@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Marttiが別サーバーへのバックアップ開始を報告し、PGP鍵を共有"
+description: "マルミがbitcoin.orgの別サーバーへのバックアップ開始に同意し、PGP鍵を共有。バックアップサイズは約50MBと報告。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

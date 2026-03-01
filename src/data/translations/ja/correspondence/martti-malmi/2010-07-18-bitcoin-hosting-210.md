@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ホスティングの切り替えをしないよう求め、Slashdotからの殺到する作業の中での優先事項について議論"
+description: "サトシがSlashdotトラフィック急増中のホスティング切り替えをしないようマルミに求め、費用を賄うためにBitcoinでの寄付を提案する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I didn't change it knowingly, must have been some encoding problem."
+description: "Malmi responds that the UTF-8 encoding change in the About dialog code was unintentional and likely caused by an encoding problem."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

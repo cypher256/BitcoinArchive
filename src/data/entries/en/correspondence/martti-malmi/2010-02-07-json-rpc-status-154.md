@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "That's great! I'll start familiarizing myself with Liberty Reserve and"
+description: "Malmi responds positively to the JSON-RPC progress and announces he will begin studying the Liberty Reserve API for the exchange service."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

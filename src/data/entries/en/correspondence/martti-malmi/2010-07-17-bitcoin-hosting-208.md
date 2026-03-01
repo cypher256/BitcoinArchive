@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Rackspace has very good support, good backend, good connections and"
+description: "Malmi forwards a cheaper hosting offer from Thufir and compares it to Rackspace, noting the cost difference could be offset by the expected donation."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

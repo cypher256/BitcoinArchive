@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "IS_LIVEオプションは確かにfalseに設定されていましたが、ユーザーへのエラーメッセージの表示にしか影響しません。"
+description: "マルミがBitweaverのIS_LIVE設定とSourceForgeホスティングの遅さを説明し、Boostのクロスプラットフォーム対応スレッド・ソケットライブラリの使用をサトシに提案する。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

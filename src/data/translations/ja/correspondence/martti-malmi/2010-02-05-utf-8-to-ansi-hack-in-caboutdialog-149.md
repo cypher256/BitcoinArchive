@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "意図的に変更したわけではありません。エンコーディングの問題だったのでしょう。"
+description: "マルミがAboutダイアログのUTF-8エンコーディング変更は意図的ではなく、エンコーディングの問題が原因だったと回答。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I'll go ahead with setting up Drupal then."
+description: "Satoshi decides to proceed with Drupal setup, argues against making the site HTTPS by default, and suggests offering SSL as an optional feature for privacy-conscious users."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

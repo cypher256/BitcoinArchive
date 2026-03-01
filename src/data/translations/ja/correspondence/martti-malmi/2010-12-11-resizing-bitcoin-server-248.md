@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Marttiがbitcoin.orgのメモリ不足による障害を報告し、サーバーのメモリを増設"
+description: "マルミがbitcoin.orgのメモリ不足エラーによるmysqldの停止を報告し、サーバーのRAMを512MBから1024MBに増設した経緯を説明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"

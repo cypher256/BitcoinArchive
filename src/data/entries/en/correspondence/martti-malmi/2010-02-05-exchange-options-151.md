@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Maybe the current difficulty of buying LR is already the limit of how"
+description: "Satoshi explains how Bitcoin's ease of acquisition could bootstrap a micropayment ecosystem, comparing it to paper money's historical relationship with gold."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi \u2194 Martti Malmi Correspondence"

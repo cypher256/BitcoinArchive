@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Marttiが暗号化されたrootパスワードを添付し、サーバー移行の進捗を報告"
+description: "マルミがbitcoin.orgサーバーの暗号化されたrootパスワードを送信し、BitcoinExchangeのファイルとデータベースの新サーバーへの移行状況を報告。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadTitle: "Satoshi ↔ Martti Malmi Correspondence"
