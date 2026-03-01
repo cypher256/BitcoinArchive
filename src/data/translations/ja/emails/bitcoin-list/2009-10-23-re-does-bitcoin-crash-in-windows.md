@@ -7,7 +7,9 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoinのWindowsクラッシュに関するスレッドへの返信。Wine関連の問題である可能性とデバッグログについて。"
+  - name: "Eugen Leitl"
+    slug: "eugen-leitl"
+description: "Liberty StandardによるWine上でのBitcoinクラッシュ報告に対するサトシの返信。Wine互換性の問題と判断。Eugen Leitlも同スレッドでDebianパッケージについて質問。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

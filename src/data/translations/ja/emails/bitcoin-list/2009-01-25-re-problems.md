@@ -7,6 +7,8 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Nicholas Bohm"
+    slug: "nicholas-bohm"
 description: "Satoshi NakamotoによるNicholas Bohmの問題報告への返信。デバッグログの提供を依頼。"
 isSatoshi: true
 secondarySources:

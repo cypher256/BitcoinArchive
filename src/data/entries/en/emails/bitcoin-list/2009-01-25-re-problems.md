@@ -7,7 +7,9 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"[bitcoin-list] Problems\"."
+  - name: "Nicholas Bohm"
+    slug: "nicholas-bohm"
+description: "Satoshi Nakamoto responds to Nicholas Bohm's report of problems running Bitcoin, asking for the debug.log file to diagnose the issue."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

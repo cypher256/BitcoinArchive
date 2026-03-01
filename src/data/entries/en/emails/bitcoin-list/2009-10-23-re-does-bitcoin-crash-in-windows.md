@@ -7,7 +7,9 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"[bitcoin-list] Does Bitcoin Crash in Windows?\"."
+  - name: "Eugen Leitl"
+    slug: "eugen-leitl"
+description: "Satoshi responds to Liberty Standard's report of Bitcoin crashing under Wine, attributing it to Wine compatibility issues. Eugen Leitl also replied in the thread, asking about Debian packages."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -23,7 +23,7 @@ export async function getStaticPaths() {
         params: { threadId },
         props: {
           messages: msgs,
-          threadTitle: msgs[0].data.threadTitle || msgs[0].data.title,
+          threadTitle: msgs[0].data.title.replace(/^Re:\s*/i, ''),
         },
       };
     });
