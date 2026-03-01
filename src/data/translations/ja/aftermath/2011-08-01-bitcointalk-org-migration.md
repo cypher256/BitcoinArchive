@@ -3,9 +3,9 @@ title: "Bitcoin Forumがbitcoin.org/smfからbitcointalk.orgに移行"
 date: 2011-08-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
-author: "Theymos"
+author: "Michael Marquardt"
 participants:
-  - name: "Theymos"
+  - name: "Michael Marquardt"
     slug: "theymos"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
