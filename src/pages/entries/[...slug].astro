@@ -7,7 +7,7 @@ import { useTranslations, formatDate, localePath } from '../../i18n/utils';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
-  return entries.map((entry) => ({
+  return entries.filter((e) => e.data.aftermathType !== 'biography').map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));
@@ -19,7 +19,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const allEntries = await getCollection('entries');
-const sorted = allEntries.sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const sorted = allEntries.filter((e) => e.data.aftermathType !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 const currentIndex = sorted.findIndex((e) => e.id === entry.id);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
@@ -62,12 +62,6 @@ const threadMessages = threadId
         tags={entry.data.tags}
       />
     </header>
-
-    {entry.data.aftermathType === 'biography' && (
-      <div class="biography-notice">
-        {t('entry.biographyNotice' as any)}
-      </div>
-    )}
 
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
@@ -143,16 +137,6 @@ const threadMessages = threadId
   .nav-next {
     margin-left: auto;
     text-align: right;
-  }
-  .biography-notice {
-    margin-bottom: 1.5rem;
-    padding: 0.75rem 1rem;
-    background: var(--color-bg-alt);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
   }
   .thread-banner {
     margin: 1.5rem 0;

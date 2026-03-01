@@ -7,7 +7,7 @@ import { useTranslations, localePath } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection('entries_ja');
-  return jaEntries.map((entry) => ({
+  return jaEntries.filter((e) => e.data.aftermathType !== 'biography').map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));
@@ -19,7 +19,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const allEntries = await getCollection('entries_ja');
-const sorted = allEntries.sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const sorted = allEntries.filter((e) => e.data.aftermathType !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 const currentIndex = sorted.findIndex((e) => e.id === entry.id);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
@@ -58,12 +58,6 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
       />
     </header>
 
-    {entry.data.aftermathType === 'biography' && (
-      <div class="biography-notice">
-        {t('entry.biographyNotice' as any)}
-      </div>
-    )}
-
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -98,16 +92,6 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   .entry-header h1 {
     margin: 0 0 0.75rem;
     font-size: 2rem;
-  }
-  .biography-notice {
-    margin-bottom: 1.5rem;
-    padding: 0.75rem 1rem;
-    background: var(--color-bg-alt);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
   }
   .entry-content { line-height: 1.8; }
   .entry-nav {
