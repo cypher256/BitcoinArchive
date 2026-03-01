@@ -13,6 +13,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 
+# generated at build time
+src/data/git-dates.json
+
 # environment variables
 .env
 .env.production

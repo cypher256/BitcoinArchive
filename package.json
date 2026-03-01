@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist",
+    "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

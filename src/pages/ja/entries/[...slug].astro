@@ -46,6 +46,12 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
       />
     </header>
 
+    {entry.data.aftermathType === 'biography' && (
+      <div class="biography-notice">
+        {t('entry.biographyNotice' as any)}
+      </div>
+    )}
+
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -80,6 +86,16 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   .entry-header h1 {
     margin: 0 0 0.75rem;
     font-size: 2rem;
+  }
+  .biography-notice {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
   }
   .entry-content { line-height: 1.8; }
   .entry-nav {

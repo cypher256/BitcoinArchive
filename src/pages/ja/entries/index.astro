@@ -2,12 +2,54 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getEntries } from '../../../i18n/utils';
+import { existsSync, readFileSync } from 'fs';
+import { join } from 'path';
 
 const lang = 'ja';
 const t = useTranslations(lang);
 const jaEntries = await getEntries(lang);
 const enEntries = await getEntries('en');
 const entries = jaEntries.length > 0 ? jaEntries : enEntries;
+
+// Load git dates (generated at build time)
+const gitDatesPath = join(process.cwd(), 'src/data/git-dates.json');
+const gitDates: Record<string, { createdAt: string; updatedAt: string }> = existsSync(gitDatesPath)
+  ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
+  : {};
+const hasGitDates = Object.keys(gitDates).length > 0;
+
+// Count messages per thread
+const threadCounts = new Map<string, number>();
+for (const entry of entries) {
+  if (entry.data.threadId) {
+    threadCounts.set(entry.data.threadId, (threadCounts.get(entry.data.threadId) || 0) + 1);
+  }
+}
+
+// Find the first entry (lowest threadPosition) for each multi-message thread
+const threadStarters = new Map<string, string>();
+for (const entry of entries) {
+  const tid = entry.data.threadId;
+  if (tid && (threadCounts.get(tid) || 0) >= 2) {
+    const existing = threadStarters.get(tid);
+    if (!existing) {
+      threadStarters.set(tid, entry.id);
+    } else {
+      const existingEntry = entries.find((e: any) => e.id === existing);
+      if (existingEntry && (entry.data.threadPosition ?? 999) < (existingEntry.data.threadPosition ?? 999)) {
+        threadStarters.set(tid, entry.id);
+      }
+    }
+  }
+}
+
+// Display list: thread starters + non-thread entries (skip other thread members)
+const displayEntries = entries.filter((entry: any) => {
+  const tid = entry.data.threadId;
+  if (!tid) return true;
+  if ((threadCounts.get(tid) || 0) < 2) return true;
+  return threadStarters.get(tid) === entry.id;
+});
 ---
 
 <BaseLayout
@@ -18,29 +60,125 @@ const entries = jaEntries.length > 0 ? jaEntries : enEntries;
 >
   <div class="container">
     <h1>{t('nav.entries')}</h1>
-    <p class="entry-count">{entries.length} entries</p>
-    {entries.map((entry) => (
-      <EntryCard
-        id={entry.id}
-        title={entry.data.title}
-        date={entry.data.date}
-        author={entry.data.author}
-        source={entry.data.source}
-        description={entry.data.description}
-        isSatoshi={entry.data.isSatoshi}
-        lang={lang}
-        participants={entry.data.participants}
-      />
-    ))}
+    <div class="entries-header">
+      <p class="entry-count">{entries.length} entries</p>
+      <div class="sort-controls">
+        <button class="sort-btn active" data-sort="date" data-order="asc">{t('sort.postDate')} ↑</button>
+        {hasGitDates && (
+          <>
+            <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+            <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+          </>
+        )}
+      </div>
+    </div>
+    <div id="entries-list">
+      {displayEntries.map((entry: any) => {
+        const tid = entry.data.threadId;
+        const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+        const isThread = msgCount >= 2;
+        const gd = gitDates[entry.id];
+        return (
+          <EntryCard
+            id={entry.id}
+            title={entry.data.title}
+            date={entry.data.date}
+            author={entry.data.author}
+            source={entry.data.source}
+            description={entry.data.description}
+            isSatoshi={entry.data.isSatoshi}
+            lang={lang}
+            threadId={isThread ? tid : undefined}
+            threadCount={isThread ? msgCount : undefined}
+            participants={entry.data.participants}
+            aftermathType={entry.data.aftermathType}
+            createdAt={gd?.createdAt}
+            updatedAt={gd?.updatedAt}
+          />
+        );
+      })}
+    </div>
   </div>
 </BaseLayout>
 
+<script is:inline>
+(function() {
+  var list = document.getElementById('entries-list');
+  var btns = document.querySelectorAll('.sort-btn');
+  if (!list || !btns.length) return;
+
+  function getLabel(btn) {
+    return btn.textContent.replace(/\s*[↑↓]$/, '');
+  }
+
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var key = btn.dataset.sort;
+      var order = btn.dataset.order;
+      var isActive = btn.classList.contains('active');
+
+      if (isActive) {
+        order = order === 'asc' ? 'desc' : 'asc';
+        btn.dataset.order = order;
+      } else {
+        btns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+      }
+
+      btn.textContent = getLabel(btn) + (order === 'asc' ? ' ↑' : ' ↓');
+
+      var cards = Array.from(list.querySelectorAll('.entry-card'));
+      cards.sort(function(a, b) {
+        var av, bv;
+        if (key === 'date') { av = a.dataset.date || ''; bv = b.dataset.date || ''; }
+        else if (key === 'created') { av = a.dataset.created || ''; bv = b.dataset.created || ''; }
+        else { av = a.dataset.updated || ''; bv = b.dataset.updated || ''; }
+        return order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+      });
+
+      cards.forEach(function(card) { list.appendChild(card); });
+    });
+  });
+})();
+</script>
+
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .entries-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;
     color: var(--color-text-muted);
-    margin-top: 0;
+    margin: 0;
+  }
+  .sort-controls {
+    display: flex;
+    gap: 0.25rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+  }
+  .sort-btn {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    padding: 0.2em 0.6em;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  .sort-btn:hover {
+    color: var(--color-text);
+    border-color: var(--color-text-muted);
+  }
+  .sort-btn.active {
+    color: var(--color-text);
+    font-weight: 600;
+    border-color: var(--color-text);
   }
 </style>

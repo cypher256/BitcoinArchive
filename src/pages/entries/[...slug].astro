@@ -51,6 +51,12 @@ const threadMessages = threadId
       />
     </header>
 
+    {entry.data.aftermathType === 'biography' && (
+      <div class="biography-notice">
+        {t('entry.biographyNotice' as any)}
+      </div>
+    )}
+
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -119,6 +125,16 @@ const threadMessages = threadId
   .nav-next {
     margin-left: auto;
     text-align: right;
+  }
+  .biography-notice {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
   }
   .thread-banner {
     margin: 1.5rem 0;

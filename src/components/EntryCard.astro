@@ -19,9 +19,13 @@ interface Props {
   threadId?: string;
   threadCount?: number;
   participants?: Participant[];
+  aftermathType?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
-const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [] } = Astro.props;
+const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], aftermathType, createdAt, updatedAt } = Astro.props;
+const isBiography = aftermathType === 'biography';
 const t = useTranslations(lang);
 const sourceLabel = t(`source.${source}` as any) || source;
 const href = threadId
@@ -30,13 +34,21 @@ const href = threadId
 const otherParticipants = participants.filter((p) => p.name !== author);
 ---
 
-<article class:list={["entry-card", { "entry-card-thread": !!threadId }]}>
+<article
+  class:list={["entry-card", { "entry-card-thread": !!threadId }]}
+  data-date={date.toISOString()}
+  data-created={createdAt ?? ''}
+  data-updated={updatedAt ?? ''}
+>
   <a href={href} class="card-link">
     <div class="card-header">
       <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
       <span class="source-badge">{sourceLabel}</span>
       {threadCount && threadCount >= 2 && (
         <span class="thread-badge">{threadCount} messages</span>
+      )}
+      {isBiography && (
+        <span class="biography-badge">{t('entry.biography' as any)}</span>
       )}
     </div>
     <h3 class="card-title">{title}</h3>
@@ -98,6 +110,16 @@ const otherParticipants = participants.filter((p) => p.name !== author);
     border-radius: 3px;
     font-weight: 600;
     font-size: 0.75rem;
+  }
+  .biography-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background: var(--color-text-muted);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    opacity: 0.7;
   }
   .card-title {
     margin: 0 0 0.25rem;

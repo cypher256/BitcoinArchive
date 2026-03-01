@@ -2,14 +2,14 @@
 title: "Hal Finney (1956–2014) — Cypherpunk, PGP developer, first Bitcoin recipient"
 date: 2014-08-28T00:00:00Z
 source: aftermath
-sourceUrl: "https://www.independent.com/obits/2014/09/02/hal-finney/"
+sourceUrl: "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
 author: "The Santa Barbara Independent"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Harold Thomas Finney II (May 4, 1956 – August 28, 2014): Caltech electrical engineering graduate, lead developer of PGP 2.0, Extropian, cryonics advocate, creator of Reusable Proof-of-Work (RPOW), first person other than Satoshi to run Bitcoin, and recipient of the first Bitcoin transaction. Diagnosed with ALS in August 2009, he continued contributing to Bitcoin from a wheelchair. Cryopreserved by Alcor as patient A-1436."
+description: "Harold Thomas Finney II (May 4, 1956 – August 28, 2014): Caltech engineering graduate, one of the principal developers of PGP 2.0, Extropian, cryonics advocate, creator of Reusable Proof-of-Work (RPOW), first person other than Satoshi to run Bitcoin, and recipient of the first Bitcoin transaction. Diagnosed with ALS in August 2009, he continued contributing to Bitcoin from a wheelchair. Cryopreserved by Alcor as patient A-1436."
 isSatoshi: false
-aftermathType: "retrospective"
+aftermathType: "biography"
 tags:
   - "hal-finney"
   - "biography"
@@ -21,20 +21,32 @@ tags:
   - "als"
   - "historic"
 secondarySources:
-  - name: "Hal Finney — Wikipedia"
-    url: "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
+  - name: "The Santa Barbara Independent — Hal Finney Obituary"
+    url: "https://www.independent.com/obits/2014/09/02/hal-finney/"
+  - name: "Alcor — Case Summary A-1436"
+    url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
   - name: "Alcor — Hal Finney Becomes Alcor's 128th Patient"
     url: "https://www.alcor.org/2014/12/hal-finney-becomes-alcors-128th-patient/"
   - name: "Nasdaq — Remembering Bitcoin Pioneer Hal Finney"
     url: "https://www.nasdaq.com/articles/remembering-bitcoin-pioneer-hal-finney-may-4-1956-august-28-2014-2021-08-28"
   - name: "Hal Finney — 'Bitcoin and Me' (BitcoinTalk, March 19, 2013)"
     url: "https://bitcointalk.org/index.php?topic=155054.0"
+  - name: "Hal Finney — 'Dying Outside' (Less Wrong, October 5, 2009)"
+    url: "https://www.lesswrong.com/posts/bshZiaLefDejvPKuS/dying-outside"
+  - name: "Bitcoin Magazine — The Genesis Files: Hal Finney"
+    url: "https://bitcoinmagazine.com/culture/the-genesis-files-how-hal-finneys-quest-for-digital-cash-led-to-rpow-and-more"
+  - name: "Satoshi Nakamoto Institute — RPOW"
+    url: "https://nakamotoinstitute.org/finney/rpow/"
+  - name: "Hal Finney — 'Running bitcoin' tweet (January 11, 2009)"
+    url: "https://x.com/halfin/status/1110302988"
+  - name: "21ideas — Hal Finney Biography"
+    url: "https://21ideas.org/en/hal-finney/"
 ---
 
-Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated with honors from Arcadia High School in 1974 and earned a Bachelor of Science in Electrical Engineering from the California Institute of Technology (Caltech) in 1979.
+Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979.
 
 **Cryptography and PGP:**
-In 1991, Finney began volunteering for Phil Zimmermann's Pretty Good Privacy (PGP) project, writing code for free. He became the lead developer and main author of PGP 2.0, building the core cryptographic libraries. When Zimmermann founded PGP Inc. in 1996, Finney was hired as one of the first employees (the company later became part of Symantec through acquisitions).
+In 1991, Finney began volunteering for Phil Zimmermann's Pretty Good Privacy (PGP) project, writing code for free. He became one of the principal developers of PGP 2.0. When Zimmermann founded PGP Inc. in 1996, Finney was hired as one of the first employees (the company later became part of Symantec through acquisitions).
 
 **Extropianism and Cryonics:**
 Finney was an active participant in the Extropy Institute's discussions on cryonics, life extension, space colonization, nanotechnology, and artificial intelligence. He became interested in cryonics during his freshman year at Caltech. On October 15, 1992, he and his wife Fran signed their Alcor cryonics membership paperwork in Riverside, California. He remained an Alcor member for over 20 years.
