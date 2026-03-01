@@ -1,0 +1,32 @@
+---
+title: "「他のことに移りました」"
+date: 2011-04-23T15:40:00Z
+source: correspondence
+sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread5.html"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+  - name: "Mike Hearn"
+    slug: "mike-hearn"
+description: "Satoshiの最後の既知のコミュニケーションの一つ。Mike Hearnに他のことに移ったこと、BitcoinはGavinとみんなに託されていると伝える。"
+isSatoshi: true
+threadId: "satoshi-mike-hearn-holding-coins"
+threadTitle: "Holding coins in an unspendable state for a rolling time window"
+threadPosition: 4
+tags:
+  - "correspondence"
+  - "final-communication"
+  - "transition"
+  - "disappearance"
+  - "bitcoinj"
+  - "gavin-andresen"
+secondarySources:
+  - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
+    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+translationStatus: complete
+---
+
+私は他のことに移りました。GavinとみんなのもとでBitcoinはうまくいっています。
+
+あなたのBitcoinJが代替クライアントとして引き続き開発されることを願っています。Java開発者に取り組むべきものを与え、すべてをこなす必要のないシンプルな基盤により作業が容易です。せっかちな新しいユーザーが、もう一方がまだブロックチェーンをダウンロードしている間に使い始められるようになれば、クリティカルマスに達するでしょう。
