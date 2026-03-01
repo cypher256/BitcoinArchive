@@ -48,6 +48,18 @@ export function formatDateShort(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
 
+export async function getBiographyForParticipant(
+  lang: Lang,
+  participantSlug: string,
+): Promise<CollectionEntry<'entries' | 'entries_ja'> | undefined> {
+  const entries = await getEntries(lang);
+  return entries.find(
+    (e) =>
+      e.data.aftermathType === 'biography' &&
+      e.data.participants.some((p) => p.slug === participantSlug),
+  );
+}
+
 export function translateTag(tag: string, lang: Lang): string {
   if (lang === 'ja') {
     return tagTranslations[tag] ?? tag;

@@ -44,8 +44,9 @@ const topParticipants = Array.from(participantMap.entries())
   .slice(0, 8);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
-// Latest entries
+// Latest entries (exclude biographies — they are shown on participant pages)
 const latestEntries = [...entries]
+  .filter((e) => e.data.aftermathType !== 'biography')
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 10);
 

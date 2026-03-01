@@ -1,6 +1,6 @@
 ---
 title: "Mike Hearnがサトシとのメールのやり取りを公開"
-date: 2015-08-15T00:00:00Z
+date: 2017-08-11T00:00:00Z
 source: aftermath
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
 author: "Mike Hearn"
@@ -16,10 +16,17 @@ tags:
   - "mike-hearn"
   - "email-archive"
   - "published-correspondence"
+secondarySources:
+  - name: "Vice/Motherboard — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails (August 2017)"
+    url: "https://www.vice.com/en/article/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails/"
+  - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
+    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+  - name: "Slashdot — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails"
+    url: "https://slashdot.org/story/17/08/11/1940213/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails"
 translationStatus: complete
 ---
 
-2015年8月、Mike Hearnはサトシ・ナカモトとの完全なメールのやり取りを自身の個人ウェブサイトで公開した。メールは2009年初頭から2011年4月までにわたり、以下のトピックを扱っている：
+2017年8月、Mike Hearnのサトシ・ナカモトとの完全なメールのやり取りが公開された。メールは最初にBitcoinTalkでCipherionXというユーザーにより共有され、その後Hearnの個人ウェブサイトに掲載された。メールは2009年初頭から2011年4月までにわたり、以下のトピックを扱っている：
 
 - サトシが将来のビットコインのスケーリングをどのように構想していたか
 - 簡易決済検証（SPV）の役割

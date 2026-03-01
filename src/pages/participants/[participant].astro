@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getEntries } from '../../i18n/utils';
+import { render } from 'astro:content';
+import { useTranslations, getEntries, getBiographyForParticipant } from '../../i18n/utils';
 
 export async function getStaticPaths() {
   const { getEntries } = await import('../../i18n/utils');
@@ -27,17 +28,34 @@ const entries = await getEntries(lang);
 const filtered = entries.filter((e) =>
   e.data.participants.some((p) => p.slug === participantSlug)
 );
+
+const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
+const biographyContent = biographyEntry ? await render(biographyEntry) : null;
+const displayEntries = filtered.filter((e) => e.data.aftermathType !== 'biography');
 ---
 
 <BaseLayout
   title={`${participantName} - ${t('site.title')}`}
-  description={`All entries involving ${participantName} in the Bitcoin Archive`}
+  description={biographyEntry?.data.description ?? `All entries involving ${participantName} in the Bitcoin Archive`}
   lang={lang}
 >
   <div class="container">
     <h1>{participantName}</h1>
-    <p class="entry-count">{filtered.length} entries</p>
-    {filtered.map((entry) => (
+
+    {biographyContent && (
+      <section class="biography-section">
+        <p class="biography-description">{biographyEntry!.data.description}</p>
+        <div class="biography-content">
+          <biographyContent.Content />
+        </div>
+      </section>
+    )}
+
+    {biographyContent ? (
+      <h2 class="entries-heading">{t('participant.relatedEntries' as any)}</h2>
+    ) : null}
+    <p class="entry-count">{displayEntries.length} entries</p>
+    {displayEntries.map((entry) => (
       <EntryCard
         id={entry.id}
         title={entry.data.title}
@@ -55,6 +73,27 @@ const filtered = entries.filter((e) =>
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .biography-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .biography-description {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .biography-content {
+    line-height: 1.8;
+  }
+  .biography-content :global(p:first-child) {
+    margin-top: 0;
+  }
+  .entries-heading {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;

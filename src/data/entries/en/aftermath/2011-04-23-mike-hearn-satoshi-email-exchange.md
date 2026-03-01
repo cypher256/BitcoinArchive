@@ -32,4 +32,4 @@ In one of the final exchanges in April 2011, Satoshi wrote to Hearn:
 
 This was among the last known private communications from Satoshi before his complete disappearance. The email confirmed that Satoshi viewed Gavin Andresen as the appropriate successor to lead Bitcoin's development, and indicated a deliberate and voluntary withdrawal from the project rather than any sudden or forced departure.
 
-Hearn would later publish these emails in full in August 2015, providing one of the most valuable primary sources for understanding Satoshi's technical vision and his state of mind as he left the project.
+Hearn would later publish these emails in full in August 2017, providing one of the most valuable primary sources for understanding Satoshi's technical vision and his state of mind as he left the project.

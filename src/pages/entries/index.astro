@@ -41,8 +41,9 @@ for (const entry of entries) {
   }
 }
 
-// Display list: thread starters + non-thread entries (skip other thread members)
+// Display list: thread starters + non-thread entries (skip other thread members and biographies)
 const displayEntries = entries.filter((entry: any) => {
+  if (entry.data.aftermathType === 'biography') return false;
   const tid = entry.data.threadId;
   if (!tid) return true;
   if ((threadCounts.get(tid) || 0) < 2) return true;
