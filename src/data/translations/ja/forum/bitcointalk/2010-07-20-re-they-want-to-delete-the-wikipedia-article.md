@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Wikipediaの記事を削除しようとしている」におけるサトシ・ナカモトの返信。"
+description: "Wikipedia記事の削除議論に対し、サトシが記事の改善方法を提案。b-moneyとBitgoldの実装と述べているが、サトシ自身は論文公開前にこれらを知らなかったと別の場で認めている。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

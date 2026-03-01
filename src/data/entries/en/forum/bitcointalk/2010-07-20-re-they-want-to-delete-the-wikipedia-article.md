@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"They want to delete the Wikipedia article\"."
+description: "Satoshi advises on improving the Bitcoin Wikipedia article facing deletion. He describes Bitcoin as an 'implementation' of b-money and Bitgold, though he has acknowledged elsewhere that he developed Bitcoin independently before learning of these proposals."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
