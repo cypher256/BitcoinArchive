@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
+import AutoLinkNames from '../../../components/AutoLinkNames.astro';
 import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath } from '../../../i18n/utils';
 
@@ -104,6 +105,9 @@ const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]
       ) : <span />}
     </nav>
   </div>
+  {biographyContent && (
+    <AutoLinkNames lang={lang} excludeSlug={participantSlug} selectors=".biography-content, .biography-description" />
+  )}
 </BaseLayout>
 
 <style>

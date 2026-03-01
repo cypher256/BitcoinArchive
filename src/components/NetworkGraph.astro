@@ -69,7 +69,10 @@ const t = useTranslations(lang);
     var zoom = d3.zoom()
       .scaleExtent([0.3, 5])
       .on('zoom', function(event) { g.attr('transform', event.transform); });
-    svg.call(zoom);
+    var initialScale = 1.4;
+    var tx = width / 2 * (1 - initialScale);
+    var ty = height / 2 * (1 - initialScale);
+    svg.call(zoom).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(initialScale));
 
     var tooltip = d3.select(container).append('div')
       .attr('class', 'graph-tooltip')

@@ -1,0 +1,90 @@
+---
+import type { Lang } from '../i18n/ui';
+import { getEntries, localePath } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+  excludeSlug?: string;
+  selectors: string;
+}
+
+const { lang, excludeSlug, selectors } = Astro.props;
+const entries = await getEntries(lang);
+
+const nameMap = new Map<string, string>();
+for (const entry of entries) {
+  for (const p of entry.data.participants) {
+    if (p.slug !== excludeSlug && !nameMap.has(p.name)) {
+      nameMap.set(p.name, localePath(`/participants/${p.slug}/`, lang));
+    }
+  }
+}
+
+const linkData = Array.from(nameMap.entries())
+  .sort((a, b) => b[0].length - a[0].length);
+---
+
+<script type="application/json" id="auto-link-data" data-selectors={selectors} set:html={JSON.stringify(linkData)} />
+
+<script is:inline>
+(function() {
+  var el = document.getElementById('auto-link-data');
+  if (!el) return;
+  var data = JSON.parse(el.textContent);
+  var selectors = el.getAttribute('data-selectors');
+  var containers = document.querySelectorAll(selectors);
+  if (!data.length || !containers.length) return;
+
+  function walkTextNodes(node, callback) {
+    if (node.nodeType === 3) {
+      callback(node);
+    } else if (node.nodeType === 1 && node.tagName !== 'A' && node.tagName !== 'SCRIPT') {
+      var children = Array.from(node.childNodes);
+      for (var i = 0; i < children.length; i++) {
+        walkTextNodes(children[i], callback);
+      }
+    }
+  }
+
+  var replaced = new Set();
+  containers.forEach(function(container) {
+    for (var i = 0; i < data.length; i++) {
+      var name = data[i][0];
+      var href = data[i][1];
+
+      walkTextNodes(container, function(textNode) {
+        var text = textNode.textContent;
+        var idx = text.indexOf(name);
+        if (idx === -1) return;
+        // Only link first occurrence per container
+        var key = container.className + '::' + name;
+        if (replaced.has(key)) return;
+        replaced.add(key);
+
+        var before = text.substring(0, idx);
+        var after = text.substring(idx + name.length);
+        var a = document.createElement('a');
+        a.href = href;
+        a.textContent = name;
+        a.className = 'auto-linked-name';
+
+        var parent = textNode.parentNode;
+        if (before) parent.insertBefore(document.createTextNode(before), textNode);
+        parent.insertBefore(a, textNode);
+        if (after) parent.insertBefore(document.createTextNode(after), textNode);
+        parent.removeChild(textNode);
+      });
+    }
+  });
+})();
+</script>
+
+<style is:global>
+  .auto-linked-name {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  .auto-linked-name:hover {
+    text-decoration: underline;
+  }
+</style>
