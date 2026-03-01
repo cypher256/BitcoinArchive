@@ -16,6 +16,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/543/"
+  - name: "BitcoinChaser — Satoshi's Last Message"
+    url: "https://bitcoinchaser.com/satoshis-last-message/"
 translationStatus: complete
 ---
 

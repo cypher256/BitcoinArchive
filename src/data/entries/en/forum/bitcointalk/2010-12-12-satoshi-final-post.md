@@ -16,6 +16,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/543/"
+  - name: "BitcoinChaser — Satoshi's Last Message"
+    url: "https://bitcoinchaser.com/satoshis-last-message/"
 ---
 
 There's more work to do on DoS, but I'm doing a quick build of what I have so far in case it's needed, before venturing into more complex ideas.

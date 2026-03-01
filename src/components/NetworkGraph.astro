@@ -1,0 +1,274 @@
+---
+import type { Lang } from '../i18n/ui';
+import type { GraphData } from '../lib/graphData';
+import { useTranslations, localePath } from '../i18n/utils';
+
+interface Props {
+  graphData: GraphData;
+  lang: Lang;
+}
+
+const { graphData, lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class="network-graph-wrapper">
+  <p class="graph-instructions">{t('network.instructions' as any)}</p>
+  <div id="network-graph"></div>
+  <script type="application/json" id="graph-data" set:html={JSON.stringify(graphData)} />
+</div>
+
+<script is:inline define:vars={{ lang, basePath: `/BitcoinArchive${lang === 'ja' ? '/ja' : ''}`, entriesLabel: t('network.entries' as any), coLabel: t('network.coOccurrences' as any) }}>
+(function() {
+  var container = document.getElementById('network-graph');
+  var dataEl = document.getElementById('graph-data');
+  if (!container || !dataEl) return;
+
+  var data = JSON.parse(dataEl.textContent);
+  var nodes = data.nodes;
+  var edges = data.edges;
+
+  function draw() {
+    container.innerHTML = '';
+
+    var rect = container.getBoundingClientRect();
+    var width = rect.width || 900;
+    var height = Math.max(500, Math.min(width * 0.7, 650));
+
+    var maxCount = 1;
+    var minCount = Infinity;
+    for (var i = 0; i < nodes.length; i++) {
+      if (nodes[i].count > maxCount) maxCount = nodes[i].count;
+      if (nodes[i].count < minCount) minCount = nodes[i].count;
+    }
+
+    var maxWeight = 1;
+    for (var i = 0; i < edges.length; i++) {
+      if (edges[i].weight > maxWeight) maxWeight = edges[i].weight;
+    }
+
+    function nodeRadius(count) {
+      if (maxCount <= 1) return 8;
+      var t = Math.log(count) / Math.log(maxCount);
+      return 5 + t * 30;
+    }
+
+    function edgeWidth(weight) {
+      if (maxWeight <= 1) return 1;
+      var t = Math.log(weight) / Math.log(maxWeight);
+      return 0.75 + t * 5.25;
+    }
+
+    var svg = d3.select(container).append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('viewBox', '0 0 ' + width + ' ' + height);
+
+    var g = svg.append('g');
+
+    var zoom = d3.zoom()
+      .scaleExtent([0.3, 5])
+      .on('zoom', function(event) { g.attr('transform', event.transform); });
+    svg.call(zoom);
+
+    var tooltip = d3.select(container).append('div')
+      .attr('class', 'graph-tooltip')
+      .style('opacity', 0);
+
+    var adjMap = {};
+    for (var i = 0; i < nodes.length; i++) adjMap[nodes[i].id] = [];
+    for (var i = 0; i < edges.length; i++) {
+      adjMap[edges[i].source] = adjMap[edges[i].source] || [];
+      adjMap[edges[i].target] = adjMap[edges[i].target] || [];
+      adjMap[edges[i].source].push(edges[i].target);
+      adjMap[edges[i].target].push(edges[i].source);
+    }
+
+    var simNodes = nodes.map(function(n) {
+      return { id: n.id, name: n.name, count: n.count, isSatoshi: n.isSatoshi };
+    });
+    var simEdges = edges.map(function(e) {
+      return { source: e.source, target: e.target, weight: e.weight };
+    });
+
+    var simulation = d3.forceSimulation(simNodes)
+      .force('link', d3.forceLink(simEdges).id(function(d) { return d.id; })
+        .distance(function(d) { return 120 / Math.log(d.weight + 1); }))
+      .force('charge', d3.forceManyBody().strength(function(d) { return d.isSatoshi ? -400 : -120; }))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('collide', d3.forceCollide().radius(function(d) { return nodeRadius(d.count) + 4; }));
+
+    var link = g.append('g')
+      .selectAll('line')
+      .data(simEdges)
+      .enter().append('line')
+      .attr('stroke', '#c4c0b8')
+      .attr('stroke-opacity', 0.6)
+      .attr('stroke-width', function(d) { return edgeWidth(d.weight); });
+
+    var node = g.append('g')
+      .selectAll('circle')
+      .data(simNodes)
+      .enter().append('circle')
+      .attr('r', function(d) { return nodeRadius(d.count); })
+      .attr('fill', function(d) { return d.isSatoshi ? '#b45309' : '#5b7f95'; })
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 1.5)
+      .style('cursor', 'pointer');
+
+    var label = g.append('g')
+      .selectAll('text')
+      .data(simNodes)
+      .enter().append('text')
+      .text(function(d) { return d.name; })
+      .attr('font-size', function(d) { return d.isSatoshi ? '13px' : '10px'; })
+      .attr('font-family', 'var(--font-heading), system-ui, sans-serif')
+      .attr('font-weight', function(d) { return d.isSatoshi ? '700' : '400'; })
+      .attr('fill', '#333')
+      .attr('text-anchor', 'middle')
+      .attr('dy', function(d) { return -nodeRadius(d.count) - 4; })
+      .style('pointer-events', 'none')
+      .style('opacity', function(d) { return d.count > 3 ? 1 : 0; });
+
+    // Drag
+    var drag = d3.drag()
+      .on('start', function(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x; d.fy = d.y;
+      })
+      .on('drag', function(event, d) {
+        d.fx = event.x; d.fy = event.y;
+      })
+      .on('end', function(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null; d.fy = null;
+      });
+    node.call(drag);
+
+    // Hover
+    node.on('mouseover', function(event, d) {
+      var neighbors = adjMap[d.id] || [];
+      var neighborSet = {};
+      for (var i = 0; i < neighbors.length; i++) neighborSet[neighbors[i]] = true;
+
+      node.attr('opacity', function(n) {
+        return n.id === d.id || neighborSet[n.id] ? 1 : 0.15;
+      });
+      link.attr('stroke-opacity', function(l) {
+        return (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.05;
+      });
+      label.style('opacity', function(n) {
+        return n.id === d.id || neighborSet[n.id] ? 1 : 0.1;
+      });
+
+      var html = '<strong>' + d.name + '</strong><br>' + d.count + ' ' + entriesLabel;
+      var connEdges = simEdges.filter(function(e) {
+        return e.source.id === d.id || e.target.id === d.id;
+      });
+      if (connEdges.length > 0) {
+        connEdges.sort(function(a, b) { return b.weight - a.weight; });
+        var top = connEdges.slice(0, 5);
+        html += '<br><span style="font-size:0.8em;color:#888">';
+        for (var i = 0; i < top.length; i++) {
+          var other = top[i].source.id === d.id ? top[i].target : top[i].source;
+          html += other.name + ': ' + top[i].weight + ' ' + coLabel;
+          if (i < top.length - 1) html += '<br>';
+        }
+        html += '</span>';
+      }
+
+      tooltip.html(html)
+        .style('opacity', 1)
+        .style('left', (event.offsetX + 15) + 'px')
+        .style('top', (event.offsetY - 10) + 'px');
+    })
+    .on('mousemove', function(event) {
+      tooltip
+        .style('left', (event.offsetX + 15) + 'px')
+        .style('top', (event.offsetY - 10) + 'px');
+    })
+    .on('mouseout', function() {
+      node.attr('opacity', 1);
+      link.attr('stroke-opacity', 0.6);
+      label.style('opacity', function(d) { return d.count > 3 ? 1 : 0; });
+      tooltip.style('opacity', 0);
+    });
+
+    // Click → navigate to participant page
+    node.on('click', function(event, d) {
+      window.location.href = basePath + '/participants/' + d.id + '/';
+    });
+
+    simulation.on('tick', function() {
+      link
+        .attr('x1', function(d) { return d.source.x; })
+        .attr('y1', function(d) { return d.source.y; })
+        .attr('x2', function(d) { return d.target.x; })
+        .attr('y2', function(d) { return d.target.y; });
+      node
+        .attr('cx', function(d) { return d.x; })
+        .attr('cy', function(d) { return d.y; });
+      label
+        .attr('x', function(d) { return d.x; })
+        .attr('y', function(d) { return d.y; });
+    });
+  }
+
+  // Wait for D3 to load
+  function init() {
+    if (typeof d3 !== 'undefined') {
+      draw();
+    } else {
+      setTimeout(init, 50);
+    }
+  }
+
+  init();
+
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (typeof d3 !== 'undefined') draw();
+    }, 250);
+  });
+})();
+</script>
+
+<style>
+  .network-graph-wrapper {
+    position: relative;
+  }
+  .graph-instructions {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin: 0 0 0.75rem;
+  }
+  #network-graph {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  #network-graph :global(svg) {
+    display: block;
+  }
+  #network-graph :global(.graph-tooltip) {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 10;
+    max-width: 260px;
+  }
+</style>

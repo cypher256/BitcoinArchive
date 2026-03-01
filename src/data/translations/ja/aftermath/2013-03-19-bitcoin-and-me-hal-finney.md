@@ -19,8 +19,10 @@ tags:
   - "als"
   - "cypherpunks"
 secondarySources:
-  - name: "Nakamoto Institute - Hal Finney"
-    url: "https://nakamotoinstitute.org/finney/"
+  - name: "Nakamoto Institute — Bitcoin and Me"
+    url: "https://nakamotoinstitute.org/bitcoin-and-me"
+  - name: "Bit2me Academy — Bitcoin and Me by Hal Finney"
+    url: "https://academy.bit2me.com/en/bitcoin-and-me-hal-finney/"
 translationStatus: complete
 ---
 
