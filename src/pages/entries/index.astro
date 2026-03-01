@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getEntries, localePath } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries } from '../../i18n/utils';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 
 const lang = 'en';
 const t = useTranslations(lang);
-const entries = await getEntries(lang);
+const entries = await getDisplayEntries(lang);
 
 // Load git dates (generated at build time)
 const gitDatesPath = join(process.cwd(), 'src/data/git-dates.json');
@@ -41,9 +41,8 @@ for (const entry of entries) {
   }
 }
 
-// Display list: thread starters + non-thread entries (skip other thread members and biographies)
+// Display list: thread starters + non-thread entries (skip other thread members)
 const displayEntries = entries.filter((entry: any) => {
-  if (entry.data.aftermathType === 'biography') return false;
   const tid = entry.data.threadId;
   if (!tid) return true;
   if ((threadCounts.get(tid) || 0) < 2) return true;

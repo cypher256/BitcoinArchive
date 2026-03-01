@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { useTranslations, getEntries, localePath, translateTag } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, translateTag } from '../../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const entries = await getEntries('en');
+const entries = await getDisplayEntries('en');
 
 const tagCounts = new Map<string, number>();
 for (const entry of entries) {

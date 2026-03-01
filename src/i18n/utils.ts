@@ -48,6 +48,12 @@ export function formatDateShort(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
 
+/** Entries excluding biographies — use for all listing/counting contexts */
+export async function getDisplayEntries(lang: Lang): Promise<CollectionEntry<'entries' | 'entries_ja'>[]> {
+  const entries = await getEntries(lang);
+  return entries.filter((e) => e.data.aftermathType !== 'biography');
+}
+
 export async function getBiographyForParticipant(
   lang: Lang,
   participantSlug: string,

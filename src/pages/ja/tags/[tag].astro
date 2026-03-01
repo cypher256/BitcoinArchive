@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getEntries, translateTag } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, translateTag } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
-  const { getEntries } = await import('../../../i18n/utils');
-  const entries = await getEntries('ja');
+  const { getDisplayEntries } = await import('../../../i18n/utils');
+  const entries = await getDisplayEntries('ja');
   const tags = new Set<string>();
   for (const entry of entries) {
     for (const tag of entry.data.tags ?? []) {
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 const lang = 'ja';
 const t = useTranslations(lang);
 const { tag } = Astro.props;
-const entries = await getEntries(lang);
+const entries = await getDisplayEntries(lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 ---
 

@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getEntries, localePath, translateTag } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, translateTag } from '../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const jaEntries = await getEntries(lang);
-const enEntries = await getEntries('en');
+const jaEntries = await getDisplayEntries(lang);
+const enEntries = await getDisplayEntries('en');
 const entries = jaEntries.length > 0 ? jaEntries : enEntries;
 
 // Tag counts
@@ -46,9 +46,8 @@ const topParticipants = Array.from(participantMap.entries())
   .slice(0, 8);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
-// Latest entries (exclude biographies — they are shown on participant pages)
+// Latest entries
 const latestEntries = [...entries]
-  .filter((e) => e.data.aftermathType !== 'biography')
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 10);
 
