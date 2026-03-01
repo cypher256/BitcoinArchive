@@ -87,7 +87,7 @@ for (const [baseTitle, group] of threadGroups) {
     if (entry.hasThreadId) continue;
 
     // Add threadId and threadPosition before the closing ---
-    const newFm = entry.fm + `\nthreadId: "${threadId}"\nthreadTitle: "${baseTitle.replace(/"/g, '\\"')}"\nthreadPosition: ${i + 1}`;
+    const newFm = entry.fm + `\nthreadId: "${threadId}"\nthreadPosition: ${i + 1}`;
     const newContent = entry.content.replace(/^---\n[\s\S]*?\n---/, `---\n${newFm}\n---`);
 
     writeFileSync(entry.path, newContent, 'utf8');

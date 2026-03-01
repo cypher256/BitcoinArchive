@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries } from '../../i18n/utils';
+import { buildThreadInfo, collapseThreads } from '../../data/threads';
 
 export async function getStaticPaths() {
   const { getDisplayEntries } = await import('../../i18n/utils');
@@ -22,7 +23,9 @@ const lang = 'en';
 const t = useTranslations(lang);
 const { tag } = Astro.props;
 const entries = await getDisplayEntries(lang);
+const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
 ---
 
 <BaseLayout
@@ -32,20 +35,27 @@ const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 >
   <div class="container">
     <h1>{tag}</h1>
-    <p class="entry-count">{filtered.length} entries</p>
-    {filtered.map((entry) => (
-      <EntryCard
-        id={entry.id}
-        title={entry.data.title}
-        date={entry.data.date}
-        author={entry.data.author}
-        source={entry.data.source}
-        description={entry.data.description}
-        isSatoshi={entry.data.isSatoshi}
-        lang={lang}
-        participants={entry.data.participants}
-      />
-    ))}
+    <p class="entry-count">{displayEntries.length} entries</p>
+    {displayEntries.map((entry) => {
+      const tid = entry.data.threadId;
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      return (
+        <EntryCard
+          id={entry.id}
+          title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
+          date={entry.data.date}
+          author={entry.data.author}
+          source={entry.data.source}
+          description={entry.data.description}
+          isSatoshi={entry.data.isSatoshi}
+          lang={lang}
+          threadId={isThread ? tid : undefined}
+          threadCount={isThread ? msgCount : undefined}
+          participants={entry.data.participants}
+        />
+      );
+    })}
   </div>
 </BaseLayout>
 
