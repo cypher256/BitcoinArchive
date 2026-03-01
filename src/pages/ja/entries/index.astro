@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries } from '../../../i18n/utils';
+import { deriveThreadTitle } from '../../../data/threads';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 
@@ -43,6 +44,15 @@ for (const entry of entries) {
   }
 }
 
+// Derive thread titles (matches thread page h1)
+const threadTitles = new Map<string, string>();
+for (const [tid] of threadStarters) {
+  const msgs = entries
+    .filter((e: any) => e.data.threadId === tid)
+    .sort((a: any, b: any) => (a.data.threadPosition ?? 0) - (b.data.threadPosition ?? 0));
+  threadTitles.set(tid, deriveThreadTitle(tid, msgs, lang));
+}
+
 // Display list: thread starters + non-thread entries (skip other thread members)
 const displayEntries = entries.filter((entry: any) => {
   const tid = entry.data.threadId;
@@ -81,7 +91,7 @@ const displayEntries = entries.filter((entry: any) => {
         return (
           <EntryCard
             id={entry.id}
-            title={entry.data.title}
+            title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
             date={entry.data.date}
             author={entry.data.author}
             source={entry.data.source}
