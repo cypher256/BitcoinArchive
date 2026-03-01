@@ -2,7 +2,7 @@
 title: "Re: Gavin, can you explain what you said to the CIA?"
 date: 2010-06-14T18:17:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1670#msg1670"
+sourceUrl: "https://bitcointalk.org/index.php?topic=157.msg1252#msg1252"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

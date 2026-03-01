@@ -28,7 +28,6 @@ const participants = Array.from(participantCounts.values()).sort((a, b) => b.cou
 >
   <div class="container">
     <h1>{t('nav.participants')}</h1>
-    <p class="network-link"><a href={localePath('/participants/network/', lang)}>{t('network.viewNetwork' as any)} &rarr;</a></p>
     <ul class="participant-list">
       {participants.map((p) => (
         <li>
@@ -43,11 +42,6 @@ const participants = Array.from(participantCounts.values()).sort((a, b) => b.cou
 </BaseLayout>
 
 <style>
-  .network-link {
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-    margin: 0 0 1rem;
-  }
   .participant-list {
     list-style: none;
     padding: 0;

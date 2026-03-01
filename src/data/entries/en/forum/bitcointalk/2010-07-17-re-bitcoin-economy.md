@@ -2,7 +2,7 @@
 title: "Re: The economics of Bitcoin"
 date: 2010-02-21T05:44:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=57.msg415#msg415"
+sourceUrl: "https://bitcointalk.org/index.php?topic=12.msg41#msg41"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

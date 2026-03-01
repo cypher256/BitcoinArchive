@@ -2,7 +2,7 @@
 title: "Re: BitcoinはMisesの回帰定理に違反しない"
 date: 2010-02-27T21:03:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=583.msg11405#msg11405"
+sourceUrl: "https://bitcointalk.org/index.php?topic=7.msg264#msg264"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

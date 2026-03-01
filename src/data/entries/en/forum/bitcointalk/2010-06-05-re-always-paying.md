@@ -2,7 +2,7 @@
 title: "Re: Proof-of-work difficulty increasing"
 date: 2010-02-05T16:52:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=43.msg249#msg249"
+sourceUrl: "https://bitcointalk.org/index.php?topic=8.msg34#msg34"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

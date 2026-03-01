@@ -2,7 +2,7 @@
 title: "Re: Block size limit"
 date: 2010-10-03T23:47:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=1347.msg15139#msg15139"
+sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9734#msg9734"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

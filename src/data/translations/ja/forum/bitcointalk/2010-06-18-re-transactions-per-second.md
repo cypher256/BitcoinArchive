@@ -2,7 +2,7 @@
 title: "返信: スケーラビリティ"
 date: 2010-06-18T20:43:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=286.msg2947#msg2947"
+sourceUrl: "https://bitcointalk.org/index.php?topic=158.msg1322#msg1322"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

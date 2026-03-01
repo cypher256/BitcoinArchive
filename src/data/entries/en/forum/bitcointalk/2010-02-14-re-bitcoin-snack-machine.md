@@ -2,7 +2,7 @@
 title: "Re: Bitcoin snack machine"
 date: 2010-02-14T17:47:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=423.msg3819#msg3819"
+sourceUrl: "https://bitcointalk.org/index.php?topic=25.msg159#msg159"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

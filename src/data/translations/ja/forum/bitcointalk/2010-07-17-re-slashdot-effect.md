@@ -2,7 +2,7 @@
 title: "Re: Slashdotに掲載されたBitcoin"
 date: 2010-07-11T22:25:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=234.msg1976#msg1976"
+sourceUrl: "https://bitcointalk.org/index.php?topic=149.msg1668#msg1668"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

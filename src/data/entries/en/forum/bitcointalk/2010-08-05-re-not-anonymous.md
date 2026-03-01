@@ -2,7 +2,7 @@
 title: "Re: Not a suggestion"
 date: 2010-08-05T18:49:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg8637#msg8637"
+sourceUrl: "https://bitcointalk.org/index.php?topic=151.msg3257#msg3257"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

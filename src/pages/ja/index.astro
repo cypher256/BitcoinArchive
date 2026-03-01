@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
+import NetworkGraph from '../../components/NetworkGraph.astro';
 import { useTranslations, getDisplayEntries, localePath, translateTag } from '../../i18n/utils';
+import { computeGraphData } from '../../lib/graphData';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -51,6 +53,9 @@ const latestEntries = [...entries]
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 10);
 
+// Network graph data
+const graphData = computeGraphData(entries);
+
 function tagWeight(count: number, max: number): number {
   return Math.max(1, Math.min(4, Math.ceil(Math.sqrt(count / max) * 4)));
 }
@@ -87,7 +92,19 @@ function tagWeight(count: number, max: number): number {
         <span class="stat-label">{t('nav.tags')}</span>
       </a>
     </section>
+  </div>
 
+  <div class="container-wide">
+    <section class="dashboard-section network-section">
+      <div class="section-header">
+        <h2>{t('network.title' as any)}</h2>
+        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      <NetworkGraph graphData={graphData} lang={lang} />
+    </section>
+  </div>
+
+  <div class="container">
     <section class="dashboard-section">
       <div class="section-header">
         <h2>{t('home.popularTags')}</h2>
@@ -163,7 +180,12 @@ function tagWeight(count: number, max: number): number {
   </div>
 </BaseLayout>
 
+<script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
 <style>
+  .network-section {
+    margin-bottom: 1.5rem;
+  }
   /* Hero */
   .hero {
     text-align: center;
