@@ -46,7 +46,8 @@ const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
 const displayEntries = filtered.filter((e) => e.data.aftermathType !== 'biography');
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
-const lifeDates = lifeDatesMatch ? lifeDatesMatch[0] : null;
+const lifeDatesRaw = lifeDatesMatch ? lifeDatesMatch[0] : null;
+const lifeDates = lifeDatesRaw && !/生没年不明|dates unknown/.test(lifeDatesRaw) ? lifeDatesRaw : null;
 const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]+[：:]\s*/, '') ?? '';
 ---
 
