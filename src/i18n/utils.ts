@@ -62,7 +62,7 @@ export async function getBiographyForParticipant(
   return entries.find(
     (e) =>
       e.data.aftermathType === 'biography' &&
-      e.data.participants.some((p) => p.slug === participantSlug),
+      e.data.participants[0]?.slug === participantSlug,
   );
 }
 

@@ -2,7 +2,7 @@
 title: "Re: Potential disaster scenario"
 date: 2010-09-23T16:09:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9539#msg9539"
+sourceUrl: "https://bitcointalk.org/index.php?topic=1306.msg14714#msg14714"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

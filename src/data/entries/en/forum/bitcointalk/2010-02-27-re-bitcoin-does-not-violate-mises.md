@@ -2,7 +2,7 @@
 title: "Re: Bitcoin does NOT violate Mises' Regression Theorem"
 date: 2010-02-27T21:03:00Z
 source: bitcointalk
-sourceUrl: "https://bitcointalk.org/index.php?topic=7.msg264#msg264"
+sourceUrl: "https://bitcointalk.org/index.php?topic=583.msg11405#msg11405"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
