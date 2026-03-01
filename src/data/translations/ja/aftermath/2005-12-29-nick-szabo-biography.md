@@ -1,0 +1,51 @@
+---
+title: "Nick Szabo — Bit Goldとスマートコントラクトの考案者"
+date: 2005-12-29T00:00:00Z
+source: aftermath
+sourceUrl: "https://en.wikipedia.org/wiki/Nick_Szabo"
+author: "Nick Szabo"
+participants:
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
+description: "ニック・サボ：コンピュータ科学者・法学者・暗号学者。ビットコインの直接的な先駆者であるBit Gold（1998年）を構想し、「スマートコントラクト」という用語を生み出した。分散型デジタル希少性に関する彼の研究は、ビットコイン設計の知的基盤を築いた。"
+isSatoshi: false
+aftermathType: "biography"
+tags:
+  - "nick-szabo"
+  - "biography"
+  - "bit-gold"
+  - "smart-contracts"
+  - "precursor"
+  - "cypherpunk"
+  - "historic"
+secondarySources:
+  - name: "Nick Szabo — 'Bit Gold' (Unenumerated blog, December 29, 2005)"
+    url: "https://unenumerated.blogspot.com/2005/12/bit-gold.html"
+  - name: "Bitcoin Magazine — The Genesis Files: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin"
+    url: "https://bitcoinmagazine.com/culture/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin"
+  - name: "Satoshi Nakamoto Institute — Bit Gold"
+    url: "https://nakamotoinstitute.org/library/bit-gold/"
+  - name: "Nick Szabo — 'Bitcoin, what took ye so long?' (Unenumerated blog, May 28, 2011)"
+    url: "https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html"
+  - name: "Nick Szabo — 'Smart Contracts: Building Blocks for Digital Markets' (1996)"
+    url: "https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html"
+translationStatus: complete
+---
+
+ニック・サボは、デジタル通貨とスマートコントラクトの先駆的研究で知られるコンピュータ科学者・法学者・暗号学者である。彼の経歴の詳細は非公開のままである。
+
+**スマートコントラクト：**
+1994年、サボは「スマートコントラクト」という用語を提唱した——契約条件がコードに直接記述された自己実行型の契約である。この概念は時代を数十年先取りしており、後にEthereumなどのプラットフォームの基盤となった。
+
+**Bit Gold：**
+1998年、サボはプルーフ・オブ・ワークに基づく分散型デジタル通貨システム、Bit Goldを構想した。2005年12月29日、ブログ「Unenumerated」で完全な設計を公開した。Bit Goldは、信頼できる第三者なしにデジタル希少性を実現するという根本的な問題——ビットコインが後に解決するのと同じ問題——に取り組んだ。サボは後に振り返っている。「この一般的なアイデアを聞いたほとんど全員が、非常に悪いアイデアだと思った」。
+
+Bit Goldはビットコインと重要な概念を共有していた——プルーフ・オブ・ワーク、連鎖するパズル、分散型検証——しかし重大なセキュリティ上の弱点があった。単一の主体がノードの過半数を支配することを防ぐ問題を解決していなかった。サトシ・ナカモトはこの設計を改良した。
+
+**ビットコインとの関係：**
+サボは2011年のブログ記事でサトシの改良を認めている。「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善した。すなわち、プルーフ・オブ・ワークをビザンチン耐性のあるピアツーピアシステムのノードとなるために要求することで、信頼できない主体がノードの過半数を支配する脅威を大幅に軽減した」。
+
+ハル・フィニーは、ビットコインに関する初期のメールのやり取りの中で、ビットコインとサボのBit Goldの類似性に言及した。サトシは、ウェイ・ダイを通じてサボの研究を知った。ダイは自身のb-moneyの概念と合わせてBit Goldのレビューを提案した。
+
+**サトシ推測：**
+Bit Goldとビットコインの深い概念的類似性から、サボがサトシ・ナカモトではないかと推測する者もいる。サボはこれを否定している。サボとサトシの間の確認された直接的な通信は公開されていない。

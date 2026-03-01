@@ -1,0 +1,44 @@
+---
+title: "Cobra — bitcoin.orgの匿名運営者"
+date: 2021-06-28T00:00:00Z
+source: aftermath
+sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin.org"
+author: "Cobra"
+participants:
+  - name: "Cobra"
+    slug: "cobra"
+  - name: "Craig Wright"
+    slug: "craig-wright"
+description: "Cobra（Cøbraとも表記）：サトシ・ナカモトとMartti Malmiが登録したbitcoin.orgの匿名運営者・守護者。身元を明かすくらいなら著作権訴訟に負ける方を選び、後にCraig Wrightがサトシではないと裁定されたことで名誉を回復した。"
+isSatoshi: false
+aftermathType: "biography"
+tags:
+  - "cobra"
+  - "biography"
+  - "bitcoin-org"
+  - "whitepaper"
+  - "anonymity"
+  - "lawsuit"
+  - "craig-wright"
+secondarySources:
+  - name: "CoinDesk — UK Court Orders Bitcoin.org to Remove White Paper"
+    url: "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"
+  - name: "COPA v Wright — UK High Court Judgment (March 14, 2024)"
+    url: "https://www.judiciary.uk/judgments/copa-v-wright/"
+  - name: "Bitcoin.org"
+    url: "https://bitcoin.org/"
+translationStatus: complete
+---
+
+Cobra（Cøbraとも表記）は、2008年にサトシ・ナカモトとMartti Malmiが登録したbitcoin.orgの匿名運営者である。Cobraの正体は不明である。
+
+**役割：**
+サトシの消失とMartti Malmiの離脱後、Cobraはbitcoin.orgの管理者となった——サイトの維持、ビットコインホワイトペーパーのホスティング、ビットコインの主要な公開窓口であるドメインの管理を行っている。この立場はビットコインプロトコルに対する公式な権限を持たないが、サトシのオリジナルウェブサイトの管理人として象徴的な意義を持つ。
+
+**ライト対Cobra訴訟（2021年）：**
+2021年2月、クレイグ・ライトはビットコインホワイトペーパーの著作権を主張し、bitcoin.orgからの削除を求めてCobraを提訴した。ロンドン高等法院はライトが匿名でCobraを提訴することを認めたが、手続き上のルールによりCobraは身元を明かさずに自らを弁護することができなかった。
+
+Cobraは不可能な選択を迫られた——身元を明かして匿名性を失うか、欠席判決を受け入れるか。2021年6月28日、彼は匿名性の保護を選び、裁判所はライトに有利な欠席判決を下した。bitcoin.orgはホワイトペーパーの削除を命じられた。
+
+**名誉回復（2024年）：**
+2024年3月14日、英国高等法院はCOPA対ライト裁判で、クレイグ・ライトはサトシ・ナカモトではなく、大規模な証拠捏造を行ったと裁定した。この判決により、2021年のCobraに対する欠席判決は無意味なものとなった——ライトにはホワイトペーパーに対する正当な著作権の主張がなかったのである。ビットコインホワイトペーパーはbitcoin.orgおよび世界中の多数のウェブサイトで自由に閲覧可能である。

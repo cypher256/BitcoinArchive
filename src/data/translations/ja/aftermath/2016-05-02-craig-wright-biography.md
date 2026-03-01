@@ -1,0 +1,44 @@
+---
+title: "Craig Wright — サトシ・ナカモトを偽称したオーストラリア人実業家"
+date: 2016-05-02T00:00:00Z
+source: aftermath
+sourceUrl: "https://en.wikipedia.org/wiki/Craig_Steven_Wright"
+author: "Craig Wright"
+participants:
+  - name: "Craig Wright"
+    slug: "craig-wright"
+description: "クレイグ・スティーブン・ライト（1970年10月生まれ）：2016年5月にサトシ・ナカモトであると公言したオーストラリアのコンピュータ科学者・実業家。2024年3月のCOPA対ライト裁判で、英国高等法院は彼の主張を完全に否定し、「大規模な証拠捏造」を認定した。"
+isSatoshi: false
+aftermathType: "biography"
+tags:
+  - "craig-wright"
+  - "biography"
+  - "identity-claim"
+  - "debunked"
+  - "copa"
+  - "lawsuit"
+secondarySources:
+  - name: "COPA v Wright — UK High Court Judgment (March 14, 2024)"
+    url: "https://www.judiciary.uk/judgments/copa-v-wright/"
+  - name: "BBC — Craig Wright reveals himself as Bitcoin creator (May 2, 2016)"
+    url: "https://www.bbc.co.uk/news/technology-36168863"
+  - name: "Wired — Is Craig Wright Satoshi Nakamoto? (December 8, 2015)"
+    url: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
+  - name: "The Economist — Craig Wright claims to be Satoshi Nakamoto (May 2, 2016)"
+    url: "https://www.economist.com/briefing/2016/05/02/craig-steven-wright-claims-to-be-satoshi-nakamoto"
+translationStatus: complete
+---
+
+クレイグ・スティーブン・ライトは、1970年10月にオーストラリア・ブリスベンで生まれたコンピュータ科学者・実業家である。
+
+**偽りの主張：**
+2015年12月8日、WiredとGizmodoがライトをビットコインの創設者である可能性があると同時に報じた。2016年5月2日、ライトはBBC、The Economist、GQ誌との連携インタビューで、自らがサトシ・ナカモトであると公言した。ブログに暗号学的証明と称するものを公開した——初期のビットコインブロックに関連する鍵でメッセージに署名したと主張した。
+
+**暴かれた証明：**
+この「証明」はビットコインコミュニティによって即座に否定された。セキュリティ研究者たちは、ライトが新しい署名を生成したのではなく、2009年のビットコイン取引から既存の署名を再利用したことを証明した。ライトはさらなる証拠を約束したが、提示しなかった。「匿名と隠遁の年月を後にできると信じていた。しかし、できなかった」と投稿した。
+
+**ホワイトペーパー訴訟：**
+2021年2月、ライトはbitcoin.orgの匿名運営者（Cobra）をビットコインホワイトペーパーの著作権侵害で提訴した。2021年6月28日、裁判所はライトに有利な欠席判決を下した——主張に根拠があったからではなく、Cobraが身元を明かすよりも匿名性の保護を選んだためである。
+
+**COPA対ライト裁判（2024年）：**
+2024年3月14日、英国高等法院のメラー判事は、暗号オープン特許アライアンス（COPA）が提起した訴訟で決定的な判決を下した。裁判所は、ライトがビットコインホワイトペーパーの著者ではなく、サトシ・ナカモトの仮名で活動した人物ではなく、ビットコインシステムを構築しておらず、ビットコインソフトウェアの初期バージョンを作成していないと認定した。判事は、ライトが「意図的かつ大規模な文書の偽造」を行い、「極めて不誠実な証人」であったと結論づけた。
