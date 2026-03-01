@@ -2,11 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import { render } from 'astro:content';
-import { useTranslations, getEntries, getBiographyForParticipant } from '../../i18n/utils';
+import { useTranslations, getEntries, getBiographyForParticipant, localePath } from '../../i18n/utils';
 
 export async function getStaticPaths() {
-  const { getEntries } = await import('../../i18n/utils');
+  const { getEntries, getDisplayEntries } = await import('../../i18n/utils');
   const entries = await getEntries('en');
+  const displayEntries = await getDisplayEntries('en');
   const slugs = new Set<string>();
   const nameMap = new Map<string, string>();
   for (const entry of entries) {
@@ -15,15 +16,27 @@ export async function getStaticPaths() {
       nameMap.set(p.slug, p.name);
     }
   }
-  return Array.from(slugs).map((slug) => ({
+  const countMap = new Map<string, number>();
+  for (const entry of displayEntries) {
+    for (const p of entry.data.participants) {
+      countMap.set(p.slug, (countMap.get(p.slug) || 0) + 1);
+    }
+  }
+  const sorted = Array.from(slugs).sort((a, b) => (countMap.get(b) || 0) - (countMap.get(a) || 0));
+  return sorted.map((slug, i) => ({
     params: { participant: slug },
-    props: { participantSlug: slug, participantName: nameMap.get(slug)! },
+    props: {
+      participantSlug: slug,
+      participantName: nameMap.get(slug)!,
+      prevParticipant: i > 0 ? { slug: sorted[i - 1], name: nameMap.get(sorted[i - 1])! } : null,
+      nextParticipant: i < sorted.length - 1 ? { slug: sorted[i + 1], name: nameMap.get(sorted[i + 1])! } : null,
+    },
   }));
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { participantSlug, participantName } = Astro.props;
+const { participantSlug, participantName, prevParticipant, nextParticipant } = Astro.props;
 const entries = await getEntries(lang);
 const filtered = entries.filter((e) =>
   e.data.participants.some((p) => p.slug === participantSlug)
@@ -40,6 +53,14 @@ const displayEntries = filtered.filter((e) => e.data.aftermathType !== 'biograph
   lang={lang}
 >
   <div class="container">
+    <nav class="participant-nav participant-nav-top">
+      {prevParticipant ? (
+        <a href={localePath(`/participants/${prevParticipant.slug}/`, lang)} class="nav-prev">&larr; {prevParticipant.name}</a>
+      ) : <span />}
+      {nextParticipant ? (
+        <a href={localePath(`/participants/${nextParticipant.slug}/`, lang)} class="nav-next">{nextParticipant.name} &rarr;</a>
+      ) : <span />}
+    </nav>
     <h1>{participantName}</h1>
 
     {biographyContent && (
@@ -68,6 +89,15 @@ const displayEntries = filtered.filter((e) => e.data.aftermathType !== 'biograph
         participants={entry.data.participants}
       />
     ))}
+
+    <nav class="participant-nav">
+      {prevParticipant ? (
+        <a href={localePath(`/participants/${prevParticipant.slug}/`, lang)} class="nav-prev">&larr; {prevParticipant.name}</a>
+      ) : <span />}
+      {nextParticipant ? (
+        <a href={localePath(`/participants/${nextParticipant.slug}/`, lang)} class="nav-next">{nextParticipant.name} &rarr;</a>
+      ) : <span />}
+    </nav>
   </div>
 </BaseLayout>
 
@@ -99,5 +129,22 @@ const displayEntries = filtered.filter((e) => e.data.aftermathType !== 'biograph
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 0;
+  }
+  .participant-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    padding-top: 0;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+  .participant-nav-top {
+    margin-top: 1.5rem;
+    padding-top: 0;
+    border-top: none;
+    margin-bottom: 0.5rem;
+  }
+  .nav-next {
+    margin-left: auto;
   }
 </style>

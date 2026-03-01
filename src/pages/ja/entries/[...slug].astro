@@ -32,6 +32,18 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   alternateEn={`https://cypher256.github.io/BitcoinArchive/entries/${entry.id}/`}
 >
   <article class="container">
+    <nav class="entry-nav entry-nav-top">
+      {prev && (
+        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
+          &larr; {prev.data.title}
+        </a>
+      )}
+      {next && (
+        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
+          {next.data.title} &rarr;
+        </a>
+      )}
+    </nav>
     <header class="entry-header">
       <h1>{entry.data.title}</h1>
       <EntryMeta
@@ -107,6 +119,12 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
     border-top: 1px solid var(--color-border);
     font-family: var(--font-heading);
     font-size: 0.9rem;
+  }
+  .entry-nav-top {
+    margin-top: 0;
+    padding-top: 1rem;
+    border-top: none;
+    margin-bottom: 0;
   }
   .nav-prev, .nav-next { max-width: 45%; }
   .nav-next { margin-left: auto; text-align: right; }

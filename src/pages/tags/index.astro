@@ -23,9 +23,16 @@ const tags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]);
 >
   <div class="container">
     <h1>{t('nav.tags')}</h1>
-    <ul class="tag-list">
+    <div class="list-header">
+      <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." autocomplete="off" />
+      <div class="sort-controls">
+        <button class="sort-btn active" data-sort="count" data-order="desc">{t('sort.count' as any)} ↓</button>
+        <button class="sort-btn" data-sort="name" data-order="asc">{t('sort.name' as any)} ↑</button>
+      </div>
+    </div>
+    <ul class="tag-list" id="sort-list">
       {tags.map(([tag, count]) => (
-        <li>
+        <li data-name={tag} data-count={count}>
           <a href={localePath(`/tags/${tag}/`, lang)}>
             {tag}
           </a>
@@ -36,7 +43,128 @@ const tags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]);
   </div>
 </BaseLayout>
 
+<script is:inline>
+(function() {
+  var STORAGE_KEY = 'tags-sort';
+  var list = document.getElementById('sort-list');
+  var btns = document.querySelectorAll('.sort-btn');
+  if (!list || !btns.length) return;
+
+  function getLabel(btn) {
+    return btn.textContent.replace(/\s*[↑↓]$/, '');
+  }
+
+  function applySort(key, order) {
+    var items = Array.from(list.querySelectorAll('li'));
+    items.sort(function(a, b) {
+      if (key === 'name') {
+        var an = a.dataset.name || ''; var bn = b.dataset.name || '';
+        return order === 'asc' ? an.localeCompare(bn) : bn.localeCompare(an);
+      }
+      var ac = parseInt(a.dataset.count) || 0; var bc = parseInt(b.dataset.count) || 0;
+      return order === 'asc' ? ac - bc : bc - ac;
+    });
+    items.forEach(function(item) { list.appendChild(item); });
+  }
+
+  function activateBtn(key, order) {
+    btns.forEach(function(b) { b.classList.remove('active'); });
+    btns.forEach(function(b) {
+      if (b.dataset.sort === key) {
+        b.classList.add('active');
+        b.dataset.order = order;
+        b.textContent = getLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+      }
+    });
+  }
+
+  try {
+    var saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
+    if (saved && saved.key) {
+      activateBtn(saved.key, saved.order);
+      applySort(saved.key, saved.order);
+    }
+  } catch(e) {}
+
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var key = btn.dataset.sort;
+      var order = btn.dataset.order;
+      if (btn.classList.contains('active')) {
+        order = order === 'asc' ? 'desc' : 'asc';
+        btn.dataset.order = order;
+      } else {
+        btns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+      }
+      btn.textContent = getLabel(btn) + (order === 'asc' ? ' ↑' : ' ↓');
+      applySort(key, order);
+      try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify({key: key, order: order})); } catch(e) {}
+    });
+  });
+
+  var filterInput = document.getElementById('filter-input');
+  if (filterInput) {
+    filterInput.addEventListener('input', function() {
+      var q = filterInput.value.toLowerCase();
+      var items = list.querySelectorAll('li');
+      items.forEach(function(item) {
+        var name = (item.dataset.name || '').toLowerCase();
+        item.style.display = name.indexOf(q) !== -1 ? '' : 'none';
+      });
+    });
+  }
+})();
+</script>
+
 <style>
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .filter-input {
+    flex: 1;
+    max-width: 200px;
+    padding: 0.3em 0.6em;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  .filter-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+  .sort-controls {
+    display: flex;
+    gap: 0.25rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+  }
+  .sort-btn {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    padding: 0.2em 0.6em;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  .sort-btn:hover {
+    color: var(--color-text);
+    border-color: var(--color-text-muted);
+  }
+  .sort-btn.active {
+    color: var(--color-text);
+    font-weight: 600;
+    border-color: var(--color-text);
+  }
   .tag-list {
     list-style: none;
     padding: 0;

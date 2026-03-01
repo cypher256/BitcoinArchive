@@ -37,6 +37,18 @@ const threadMessages = threadId
   alternateJa={`https://cypher256.github.io/BitcoinArchive/ja/entries/${entry.id}/`}
 >
   <article class="container">
+    <nav class="entry-nav entry-nav-top">
+      {prev && (
+        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
+          &larr; {prev.data.title}
+        </a>
+      )}
+      {next && (
+        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
+          {next.data.title} &rarr;
+        </a>
+      )}
+    </nav>
     <header class="entry-header">
       <h1>{entry.data.title}</h1>
       <EntryMeta
@@ -121,6 +133,12 @@ const threadMessages = threadId
   }
   .nav-prev, .nav-next {
     max-width: 45%;
+  }
+  .entry-nav-top {
+    margin-top: 0;
+    padding-top: 1rem;
+    border-top: none;
+    margin-bottom: 0;
   }
   .nav-next {
     margin-left: auto;
