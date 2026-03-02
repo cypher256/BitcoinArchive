@@ -7,8 +7,13 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「現在のBitcoin経済モデルは持続不可能」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "合理的な市場価格は将来の期待価値を反映するとし、生産コストと商品価格の力学を説明。ビットコインの経済モデルについて論じています。"
 isSatoshi: true
+tags:
+  - "economics"
+  - "deflation"
+  - "commodity"
+  - "fixed-supply"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/"

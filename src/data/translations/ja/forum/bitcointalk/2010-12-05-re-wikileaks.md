@@ -1,6 +1,6 @@
 ---
 title: "Re: WikiLeaksへのビットコイン寄付を歓迎しよう"
-date: 2010-12-05T09:08:00Z
+date: 2010-12-05T09:08:08.000Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1735.msg26999#msg26999"
 author: "Satoshi Nakamoto"
@@ -17,10 +17,11 @@ tags:
   - "caution"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/521/"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/523/"
 translationStatus: complete
 ---
 
+[Quote from: RHorning on December 04, 2010, 10:17:44 PM](https://bitcointalk.org/index.php?topic=1735.msg26876#msg26876)基本的に、かかってこい。WikileaksがBitcoinを使うよう促進しよう。その行為から生じるリスクや影響を受ける覚悟はできている。
 いいえ、「歓迎」しないでください。
 
 プロジェクトはソフトウェアを途中で強化できるよう、徐々に成長する必要があります。

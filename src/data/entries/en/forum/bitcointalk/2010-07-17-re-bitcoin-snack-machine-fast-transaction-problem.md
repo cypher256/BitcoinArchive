@@ -7,8 +7,13 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"Bitcoin snack machine (fast transaction problem)\"."
+description: "Satoshi describes how a payment processor could enable fast Bitcoin transactions with good-enough checking in 10 seconds, explaining the propagation race that makes double-spending impractical."
 isSatoshi: true
+tags:
+  - "zero-confirmation"
+  - "payments"
+  - "vending"
+  - "double-spending"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/233/"

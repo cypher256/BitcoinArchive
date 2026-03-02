@@ -7,8 +7,13 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Bitcoin自動販売機（高速トランザクション問題）」におけるサトシ・ナカモトの返信。"
+description: "決済処理会社が10秒以内の十分な検証でビットコインの高速決済を実現できると説明。伝播競争により二重支払いが実質的に不可能であることを論じています。"
 isSatoshi: true
+tags:
+  - "zero-confirmation"
+  - "payments"
+  - "vending"
+  - "double-spending"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/233/"

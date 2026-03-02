@@ -7,8 +7,12 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"[PATCH] increase block size limit\"."
+description: "Satoshi warns against using a block size limit patch, agreeing with theymos that it would cause network incompatibility, and suggests phasing in changes later when needed."
 isSatoshi: true
+tags:
+  - "block-size"
+  - "scalability"
+  - "future-planning"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"

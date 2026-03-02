@@ -7,8 +7,12 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「1.0用のSlashdot投稿」におけるサトシ・ナカモトの返信。"
+description: "Slashdot投稿の草稿を批評し、「匿名」という表現や「エネルギーに対して安定」という主張を否定。一般向けにビットコインを説明することの難しさに言及。"
 isSatoshi: true
+tags:
+  - "slashdot"
+  - "media"
+  - "first-impressions"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/167/"

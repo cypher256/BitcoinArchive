@@ -7,8 +7,13 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"Current Bitcoin economic model is unsustainable\"."
+description: "Satoshi outlines the economic model of Bitcoin, explaining that rational market prices reflect expected future value, and compares production cost dynamics to commodity pricing."
 isSatoshi: true
+tags:
+  - "economics"
+  - "deflation"
+  - "commodity"
+  - "fixed-supply"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/"

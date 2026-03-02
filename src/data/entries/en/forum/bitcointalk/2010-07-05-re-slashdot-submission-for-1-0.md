@@ -7,8 +7,12 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"Slashdot Submission for 1.0\"."
+description: "Satoshi critiques a Slashdot submission draft, rejecting the 'anonymous' framing and 'stable-with-respect-to-energy' claims, noting how hard it is to describe Bitcoin for general audiences."
 isSatoshi: true
+tags:
+  - "slashdot"
+  - "media"
+  - "first-impressions"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/167/"
