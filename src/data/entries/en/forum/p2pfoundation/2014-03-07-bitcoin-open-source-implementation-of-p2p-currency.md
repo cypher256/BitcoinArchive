@@ -7,8 +7,11 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin open source implementation of P2P currency\"."
+description: "After years of silence, Satoshi Nakamoto briefly returns to the P2P Foundation forum to deny being Dorian Nakamoto, following Newsweek's controversial cover story identifying a California man as Bitcoin's creator."
 isSatoshi: true
+tags:
+  - "identity"
+  - "dorian-nakamoto"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/"

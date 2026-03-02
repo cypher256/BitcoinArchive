@@ -1,0 +1,23 @@
+---
+title: "Bitcoin open source implementation of P2P currency"
+date: 2009-02-15T16:42:00Z
+source: p2pfoundation
+sourceUrl: "http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Satoshi responds to a discussion about earlier e-currency attempts, arguing that their centralized nature doomed them and that Bitcoin represents the first decentralized, non-trust-based system."
+isSatoshi: true
+tags:
+  - "decentralization"
+  - "trust"
+  - "e-currency"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
+---
+
+Could be. They're talking about the old Chaumian central mint stuff, but maybe only because that was the only thing available. Maybe they would be interested in going in a new direction.
+
+A lot of people automatically dismiss e-currency as a lost cause because of all the companies that failed since the 1990's. I hope it's obvious it was only the centrally controlled nature of those systems that doomed them. I think this is the first time we're trying a decentralized, non-trust-based system.

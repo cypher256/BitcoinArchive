@@ -7,8 +7,11 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが数年間の沈黙を破り、P2P Foundationフォーラムに短い投稿を行い、自分はDorian Nakamotoではないと否定しました。"
+description: "数年間の沈黙を破り、サトシ・ナカモトがP2P Foundationフォーラムに短い投稿を行い、Newsweekの報道で特定されたドリアン・ナカモトが自分ではないと否定しました。"
 isSatoshi: true
+tags:
+  - "identity"
+  - "dorian-nakamoto"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/"
