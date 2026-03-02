@@ -17,7 +17,8 @@ translationStatus: complete
 
 見ていたコードが間違っています。適用されるコードはこちらです：
 
-Code:bool CBlock::CheckBlock() const
+```cpp
+bool CBlock::CheckBlock() const
 {
 ...
     // タイムスタンプをチェック
@@ -31,5 +32,6 @@ bool CBlock::AcceptBlock()
     // 前のブロックに対してタイムスタンプをチェック
     if (nTime <= pindexPrev->GetMedianTimePast())
         return error("AcceptBlock() : block's timestamp is too early");
+```
 
 タイムスタンプは未来方向には最大2時間に制限されています。前のブロックより早い時刻にすることはできますが、直近11ブロックの中央値より大きくなければなりません。このようにしている理由は、前のブロックのタイムスタンプが未来すぎた場合（今回起きたように）、次のブロックで時刻を修正できるようにするためです。

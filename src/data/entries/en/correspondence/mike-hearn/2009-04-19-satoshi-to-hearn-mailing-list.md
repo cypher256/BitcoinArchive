@@ -24,11 +24,11 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
-The list is:
-bitcoin-list@lists.sourceforge.net
-Subscribe/unsubscribe page:
-http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
-Archives:
+The list is:<br>
+bitcoin-list@lists.sourceforge.net<br>
+Subscribe/unsubscribe page:<br>
+http://lists.sourceforge.net/mailman/listinfo/bitcoin-list<br>
+Archives:<br>
 http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
 
 I'll always announce new versions there. Automatic update, or at least notification of new versions, is definitely on the list. There could potentially be necessary changes in the future where nobody will want to talk to you until you upgrade, and there needs to be code in the older version to convey that to the user. This is all the harder in the context of not trusting anyone.

@@ -55,5 +55,5 @@ prophecy.  Once it gets bootstrapped, there are so many
 applications if you could effortlessly pay a few cents to a
 website as easily as dropping coins in a vending machine.  
 
-Satoshi Nakamoto
+Satoshi Nakamoto<br>
 http://www.bitcoin.org

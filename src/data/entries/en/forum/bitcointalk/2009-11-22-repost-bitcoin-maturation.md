@@ -15,8 +15,8 @@ secondarySources:
 ---
 
 --------------------
-bitcoinbitcoin:
-Bitcoin Maturation
+bitcoinbitcoin:<br>
+Bitcoin Maturation<br>
 Posted:Thu 01 of Oct, 2009 (14:12 UTC)
 
 From the user's perspective the bitcoin maturation process can be broken down into 8 stages.
@@ -33,8 +33,8 @@ From the user's perspective the bitcoin maturation process can be broken down in
 Which stages require network connectivity, significant local CPU usage and or significant remote CPU usage? Do any of these stages have names?
 
 --------------------
-sirius-m:
-Re: Bitcoin Maturation
+sirius-m:<br>
+Re: Bitcoin Maturation<br>
 Posted:Thu 22 of Oct, 2009 (02:36 UTC)
 
 As far as I know, there's no network transaction when you click Generate Coins - your computer just starts calculating the next proof-of-work.  The CPU usage is 100% when you're generating coins.

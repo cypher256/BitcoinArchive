@@ -20,6 +20,7 @@ That's a good optimisation.  I'll add that next time I update SVN.
 
 More generally, we could also consider this:
 
+```cpp
         dbenv.set_lk_max_objects(10000);
         dbenv.set_errfile(fopen(strErrorFile.c_str(), "a")); /// debug
         dbenv.set_flags(DB_AUTO_COMMIT, 1);
@@ -28,5 +29,6 @@ More generally, we could also consider this:
                          DB_CREATE     |
                          DB_INIT_LOCK  |
                          DB_INIT_LOG   |
+```
 
 We would then rely on dbenv.txn_checkpoint(0, 0, 0) in CDB::Close() to flush after wallet writes.

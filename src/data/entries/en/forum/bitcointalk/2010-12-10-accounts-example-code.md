@@ -16,6 +16,7 @@ secondarySources:
 
 Some sample pseudocode using the new Accounts based commands in 0.3.18.
 
+```python
 print "send to " + getaccountaddress(username) + " to fund your account"
 print "balance: " + getbalance(username, 0)
 print "available balance: " + getbalance(username, 6)
@@ -26,5 +27,6 @@ if (move(username, "", amount, 6, "purchased item"))
 
 // withdrawal
 sendfrom(username, bitcoinaddress, amount, 6, "withdrawal by user")
+```
 
 You can use listtransactions(username) to show them a list of their recent transactions.

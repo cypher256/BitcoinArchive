@@ -18,12 +18,16 @@ threadPosition: 2
 
 Here's some pseudocode of how you would use the account based commands.  It sure makes website integration a lot easier.
 
+```python
 print "send to " + getaccountaddress(username) + " to fund your account"
 print "balance: " + getbalance(username, 0)
 print "available balance: " + getbalance(username, 6)
+```
 
+```python
 // if you make a sale, move the money out of their account
 move(username, "", amount, 6)
 
 // withdrawal
 sendfrom(username, bitcoinaddress, amount, 6)
+```

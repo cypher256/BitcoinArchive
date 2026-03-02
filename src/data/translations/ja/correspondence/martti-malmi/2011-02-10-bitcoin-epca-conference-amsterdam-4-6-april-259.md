@@ -30,7 +30,7 @@ translationStatus: complete
 
 よろしくお願いいたします。
 
-Martti Malmi
+Martti Malmi<br>
 Bitcoinプロジェクト開発者
 
 > こんにちは。

@@ -24,11 +24,11 @@ secondarySources:
 translationStatus: complete
 ---
 
--------- Original Message --------
+-------- Original Message --------<br>
 Subject: 	Please update the bitcoin FAQ so new member can have the right
-info
-Date: 	Mon, 12 Jul 2010 14:13:20 -0700
-From: 	Jim Nguyen <jimmy.winn@gmail.com>
+info<br>
+Date: 	Mon, 12 Jul 2010 14:13:20 -0700<br>
+From: 	Jim Nguyen <jimmy.winn@gmail.com><br>
 To: 	satoshin@gmx.com
 
 

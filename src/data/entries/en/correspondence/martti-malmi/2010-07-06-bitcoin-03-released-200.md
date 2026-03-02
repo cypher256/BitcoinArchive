@@ -50,8 +50,8 @@ This SF.net email is sponsored by Sprint
 What will you do first with EVO, the first 4G phone?
 Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
 _______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

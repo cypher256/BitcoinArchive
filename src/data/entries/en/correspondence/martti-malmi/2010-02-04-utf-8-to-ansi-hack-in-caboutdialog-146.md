@@ -25,13 +25,17 @@ secondarySources:
 
 What was the reason for this change?
 
+```c
 #if !wxUSE_UNICODE
 ...
      if (str.Find('Â') != wxNOT_FOUND)
          str.Remove(str.Find('Â'), 1);
+```
 to:
+```c
      if (str.Find('ï¿½') != wxNOT_FOUND)
          str.Remove(str.Find('ï¿½'), 1);
+```
 
 wxFormBuilder turns the (c) symbol into UTF-8 automatically.  On 
 wxWidgets-2.8.9 ansi, it shows as a copyright symbol with an extra trash 

@@ -22,12 +22,16 @@ translationStatus: complete
 このようなことを意味していると思いますが、確信はありません:
 
 Post:
+```json
 {"method": "postMessage", "params": ["Hello all!"], "id": 99}
 {"method": "postMessage", "params": ["I have a question:"], "id": 101}
+```
 
 Reply:
+```json
 {"result": 1, "error": null, "id": 99}
 {"result": 1, "error": null, "id": 101}
+```
 
 エラー応答にHTTPステータス500を返すべきだとどこかで見た気がしますが、思い出せません。複数のレスポンスを含み、そのうちの1つがエラーの場合、全体のステータスが500になるのでしょうか。おそらくそうでしょう。常に200を返すべきかもしれません。500が問題を引き起こしているような指摘があったと思います。
 

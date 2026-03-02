@@ -17,9 +17,11 @@ translationStatus: complete
 
 0.3.18の新しいアカウントベースのコマンドを使用した疑似コードのサンプルです。
 
+```
 print "send to " + getaccountaddress(username) + " to fund your account"
 print "balance: " + getbalance(username, 0)
 print "available balance: " + getbalance(username, 6)
+```
 
 // 売上があった場合、相手のアカウントからあなたの""アカウントにお金を移動する
 if (move(username, "", amount, 6, "purchased item"))

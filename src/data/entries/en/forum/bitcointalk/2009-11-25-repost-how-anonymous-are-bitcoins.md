@@ -15,7 +15,7 @@ secondarySources:
 ---
 
 --------------------
-bitcoinbitcoin:
+bitcoinbitcoin:<br>
 How anonymous are bitcoins?
 
 Can nodes on the network tell from which and or to which bitcoin address coins are being sent? Do blocks contain a history of where bitcoins have been transfered to and from? Can nodes tell which bitcoin addresses belong to which IP addresses? Is there a command line option to enable the sock proxy the first time that bitcoin starts? What happens if you send bitcoins to an IP address that has multiple clients connected through network address translation (NAT)?

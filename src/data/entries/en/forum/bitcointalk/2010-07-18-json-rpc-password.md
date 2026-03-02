@@ -30,6 +30,7 @@ All commands now require the password as the first parameter.  It'll tell you t
 
 The central code:
 
+```cpp
   // Check password
   if (params.size() < 1 || params[0].type() != str_type)
       throw runtime_error("First parameter must be the password.");
@@ -42,6 +43,7 @@ The central code:
 ");
       throw runtime_error("Incorrect password.");
   }
+```
 
 Any comments on these decisions?
 
@@ -51,22 +53,22 @@ Any comments on these decisions?
 
 I also fixed the two duplicated commands listed in the help:
 
-getaddressesbylabel <pw> <label>
-getbalance <pw>
-getblockcount <pw>
-getblocknumber <pw>
-getconnectioncount <pw>
-getdifficulty <pw>
-getgenerate <pw>
-getinfo <pw>
-getlabel <pw> <bitcoinaddress>
-getnewaddress <pw> [label]
-getreceivedbyaddress <pw> <bitcoinaddress> [minconf=1]
-getreceivedbylabel <pw> <label> [minconf=1]
-help <pw>
-listreceivedbyaddress <pw> [minconf=1] [includeempty=false]
-listreceivedbylabel <pw> [minconf=1] [includeempty=false]
-sendtoaddress <pw> <bitcoinaddress> <amount> [comment] [comment-to]
-setgenerate <pw> <generate> [genproclimit]
-setlabel <pw> <bitcoinaddress> <label>
+getaddressesbylabel <pw> <label><br>
+getbalance <pw><br>
+getblockcount <pw><br>
+getblocknumber <pw><br>
+getconnectioncount <pw><br>
+getdifficulty <pw><br>
+getgenerate <pw><br>
+getinfo <pw><br>
+getlabel <pw> <bitcoinaddress><br>
+getnewaddress <pw> [label]<br>
+getreceivedbyaddress <pw> <bitcoinaddress> [minconf=1]<br>
+getreceivedbylabel <pw> <label> [minconf=1]<br>
+help <pw><br>
+listreceivedbyaddress <pw> [minconf=1] [includeempty=false]<br>
+listreceivedbylabel <pw> [minconf=1] [includeempty=false]<br>
+sendtoaddress <pw> <bitcoinaddress> <amount> [comment] [comment-to]<br>
+setgenerate <pw> <generate> [genproclimit]<br>
+setlabel <pw> <bitcoinaddress> <label><br>
 stop <pw>

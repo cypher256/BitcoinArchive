@@ -39,13 +39,13 @@ P2P暗号通貨Bitcoinのバージョン0.3をリリースします！Bitcoinは
 www.bitcoin.org で入手し、フォーラムで詳細をご覧ください。
 
 
-------------------------------------------------------------------------------
-This SF.net email is sponsored by Sprint
-What will you do first with EVO, the first 4G phone?
-Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
-_______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+------------------------------------------------------------------------------<br>
+This SF.net email is sponsored by Sprint<br>
+What will you do first with EVO, the first 4G phone?<br>
+Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first<br>
+_______________________________________________<br>
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

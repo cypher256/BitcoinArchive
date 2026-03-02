@@ -24,7 +24,7 @@ secondarySources:
 I've been working on a new electronic cash system that's fully
 peer-to-peer, with no trusted third party.
 
-The paper is available at:
+The paper is available at:<br>
 http://www.bitcoin.org/bitcoin.pdf
 
 The main properties:
@@ -53,7 +53,7 @@ Messages are broadcasted on a best effort basis, and nodes can leave and rejoin
 the network at will, accepting the longest proof-of-work chain as proof of what
 happened while they were gone.
 
-Full paper at:
+Full paper at:<br>
 http://www.bitcoin.org/bitcoin.pdf
 
 Satoshi Nakamoto

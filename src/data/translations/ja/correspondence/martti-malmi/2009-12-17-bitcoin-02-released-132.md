@@ -27,20 +27,20 @@ translationStatus: complete
 
 Bitcoin 0.2が登場！
 
-ダウンロード（Windows、そして新たにLinuxバージョンも利用可能）
+ダウンロード（Windows、そして新たにLinuxバージョンも利用可能）<br>
 http://sourceforge.net/projects/bitcoin/files/
 
 新機能
 
-Martti Malmi
-  - システムトレイへの最小化オプション
-  - 起動時の自動開始オプション、バックグラウンドで自動的に実行し続けられます
-  - 将来の拡張に向けた新しいオプションダイアログレイアウト
-  - Windows用セットアッププログラム
-  - Linuxバージョン（Ubuntuでテスト済み）
-Satoshi Nakamoto
-  - コイン生成のマルチプロセッササポート
-  - TOR使用のためのプロキシサポート
+Martti Malmi<br>
+  - システムトレイへの最小化オプション<br>
+  - 起動時の自動開始オプション、バックグラウンドで自動的に実行し続けられます<br>
+  - 将来の拡張に向けた新しいオプションダイアログレイアウト<br>
+  - Windows用セットアッププログラム<br>
+  - Linuxバージョン（Ubuntuでテスト済み）<br>
+Satoshi Nakamoto<br>
+  - コイン生成のマルチプロセッササポート<br>
+  - TOR使用のためのプロキシサポート<br>
   - 初期ブロックダウンロードの一部の遅延を修正
 
 http://www.bitcoin.org/smf/ に新しいフォーラムもあります。
@@ -49,15 +49,15 @@ http://www.bitcoin.org/smf/ に新しいフォーラムもあります。
 
 Satoshi Nakamoto
 
-------------------------------------------------------------------------------
-This SF.Net email is sponsored by the Verizon Developer Community
-Take advantage of Verizon's best-in-class app development support
-A streamlined, 14 day to market process makes app distribution fast and easy
-Join now and get one step closer to millions of Verizon customers
-http://p.sf.net/sfu/verizon-dev2dev
-_______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+------------------------------------------------------------------------------<br>
+This SF.Net email is sponsored by the Verizon Developer Community<br>
+Take advantage of Verizon's best-in-class app development support<br>
+A streamlined, 14 day to market process makes app distribution fast and easy<br>
+Join now and get one step closer to millions of Verizon customers<br>
+http://p.sf.net/sfu/verizon-dev2dev<br>
+_______________________________________________<br>
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

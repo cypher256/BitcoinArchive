@@ -36,5 +36,5 @@ translationStatus: complete
 
 流行った場合に備えて、少し手に入れておくのは理にかなっているかもしれません。十分な数の人が同じように考えれば、それは自己成就的予言になります。一度軌道に乗れば、自動販売機にコインを入れるのと同じくらい簡単にウェブサイトに数セントを支払えるなら、非常に多くの用途があります。
 
-Satoshi Nakamoto
+Satoshi Nakamoto<br>
 http://www.bitcoin.org

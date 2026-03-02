@@ -26,15 +26,15 @@ translationStatus: complete
 
 *** 警告 ***  問題を調査中です。問題が解決するまで、2010年8月15日 17:05 UTC（ブロック74638）以降に発生した全てのトランザクションを信用しないでください。
 
-------------------------------------------------------------------------------
-This SF.net email is sponsored by
-
-Make an app they can't live without
-Enter the BlackBerry Developer Challenge
-http://p.sf.net/sfu/RIM-dev2dev
-_______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+------------------------------------------------------------------------------<br>
+This SF.net email is sponsored by<br>
+<br>
+Make an app they can't live without<br>
+Enter the BlackBerry Developer Challenge<br>
+http://p.sf.net/sfu/RIM-dev2dev<br>
+_______________________________________________<br>
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

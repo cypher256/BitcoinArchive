@@ -21,7 +21,9 @@ translationStatus: complete
 
 -connectを使ってもまだIRCは使用されますが、-connectで特定のノードにのみ接続するよう指示している時はIRCに接続しないようにすべきだと思いますか？-connectの主なシナリオは、サーバーファームがあり、2台がネットワークに接続し、残りが最初の2台に接続するケースです。その場合、-connectのコンピュータをIRCに接続させたくないでしょう。
 
+```cpp
 void ThreadIRCSeed(void* parg)
 {
     if (mapArgs.count("-connect"))
         return;
+```

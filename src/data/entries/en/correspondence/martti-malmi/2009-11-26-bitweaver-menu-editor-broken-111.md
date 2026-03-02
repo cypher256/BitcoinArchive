@@ -30,7 +30,7 @@ http://bitcoin.sourceforge.net/nexus/menu_items.php?menu_id=2
 
 You try it, I'm stumped.
 
-The Forum link should be changed to:
+The Forum link should be changed to:<br>
 http://www.bitcoin.org/smf/
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

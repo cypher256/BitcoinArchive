@@ -39,20 +39,20 @@ translationStatus: complete
 - getbalance
 - listtransactions
 
-ダウンロード：
+ダウンロード：<br>
 http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.18/
 
 
 
 
-------------------------------------------------------------------------------
-This SF Dev2Dev email is sponsored by:
-
-WikiLeaks The End of the Free Internet
-http://p.sf.net/sfu/therealnews-com
-_______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+------------------------------------------------------------------------------<br>
+This SF Dev2Dev email is sponsored by:<br>
+<br>
+WikiLeaks The End of the Free Internet<br>
+http://p.sf.net/sfu/therealnews-com<br>
+_______________________________________________<br>
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -18,25 +18,25 @@ threadPosition: 4
 
 That big of a difference in speed, by a factor of 4 or 6, feels like it's likely to be some quirky weak spot or instruction that the old chip is slow with.  Unless it's a touted feature of the i5 that they made SSE2 six times faster.
 
-A quick summary:
-Xeon Quad        41% slower
-Core 2 Duo        55% slower
-Core 2 Duo        same (vess)
-Core 2 Quad      50% slower
-Core i5            200% faster (nelisky)
-Core i5            100% faster (vess)
+A quick summary:<br>
+Xeon Quad        41% slower<br>
+Core 2 Duo        55% slower<br>
+Core 2 Duo        same (vess)<br>
+Core 2 Quad      50% slower<br>
+Core i5            200% faster (nelisky)<br>
+Core i5            100% faster (vess)<br>
 AMD Opteron    105% faster
 
-aceat64:
-My system went from ~7100 to ~4200.
-This particular system has dual Intel Xeon Quad-Core CPUs (E5335) @ 2.00GHz.
+aceat64:<br>
+My system went from ~7100 to ~4200.<br>
+This particular system has dual Intel Xeon Quad-Core CPUs (E5335) @ 2.00GHz.<br>
 
-impossible7:
-on an Intel Core 2 Duo T7300 running x86_64 linux it was 55% slower compared to the stock version (r121)
+impossible7:<br>
+on an Intel Core 2 Duo T7300 running x86_64 linux it was 55% slower compared to the stock version (r121)<br>
 
-nelisky:
-My Core2Quad (Q6600) slowed down 50%, 
-my i5 improved ~200%, 
-
-impossible7:
+nelisky:<br>
+My Core2Quad (Q6600) slowed down 50%, <br>
+my i5 improved ~200%, <br>
+<br>
+impossible7:<br>
 on an AMD Opteron 2374 HE running x86_64 linux I got a 105% improvement (!)

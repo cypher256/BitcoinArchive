@@ -29,9 +29,9 @@ without the ? parameter is not working because its changes are rejected
 because Apache is not configured with "AllowOverride All".  This is 
 needed to make Drupal coexist with the other site the way we want.
 
-I need access to change these files to fix it:
-  /etc/apache2/sites-available/default
-  /etc/apache2/sites-available/default-ssl
+I need access to change these files to fix it:<br>
+  /etc/apache2/sites-available/default<br>
+  /etc/apache2/sites-available/default-ssl<br>
   /etc/apache2/httpd.conf
 
 Here's the planned fix.  If you do it yourself, please still give me 
@@ -45,9 +45,9 @@ and in /etc/apache2/sites-available/default-ssl
 change the 2nd instance of "AllowOverride AuthConfig"
       to "AllowOverride All"
 
-replace
-  /etc/apache2/httpd.conf
-with
+replace<br>
+  /etc/apache2/httpd.conf<br>
+with<br>
   /home/maintenance/httpd.conf
 
 This probably requires Apache to be restarted after.

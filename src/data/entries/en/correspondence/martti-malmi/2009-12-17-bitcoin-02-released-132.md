@@ -26,7 +26,7 @@ secondarySources:
 
 Bitcoin 0.2 is here!
 
-Download (Windows, and now Linux version available)
+Download (Windows, and now Linux version available)<br>
 http://sourceforge.net/projects/bitcoin/files/
 
 New Features
@@ -57,8 +57,8 @@ A streamlined, 14 day to market process makes app distribution fast and easy
 Join now and get one step closer to millions of Verizon customers
 http://p.sf.net/sfu/verizon-dev2dev 
 _______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

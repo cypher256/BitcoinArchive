@@ -31,12 +31,15 @@ commands.  At least some method names are going to change.
 To enable the RPC server, add the switch -server.  It's not on by default.
 
 Client commands are without any switches, as such:
+
+```
 bitcoin getblockcount
 bitcoin getdifficulty
 bitcoin getnewaddress somelabel
 bitcoin sendtoaddress 1DvqsbZ... 1.00
 bitcoin getallpayments 0
 bitcoin stop
+```
 
 Applications would normally use JSON-RPC directly, not command line.
 

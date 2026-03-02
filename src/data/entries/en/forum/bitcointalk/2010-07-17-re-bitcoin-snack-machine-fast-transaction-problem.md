@@ -20,11 +20,11 @@ I believe it'll be possible for a payment processing company to provide as a ser
 
 The network nodes only accept the first version of a transaction they receive to incorporate into the block they're trying to generate.  When you broadcast a transaction, if someone else broadcasts a double-spend at the same time, it's a race to propagate to the most nodes first.  If one has a slight head start, it'll geometrically spread through the network faster and get most of the nodes.
 
-A rough back-of-the-envelope example:
-1         0
-4         1
-16        4
-64        16
+A rough back-of-the-envelope example:<br>
+1         0<br>
+4         1<br>
+16        4<br>
+64        16<br>
 80%      20%
 
 So if a double-spend has to wait even a second, it has a huge disadvantage.

@@ -32,10 +32,13 @@ To control it from the command line, the interface is a command name without any
 bitcoin <command> [params...]
 
 For example:
+
+```
 bitcoin getinfo
 bitcoin getdifficulty
 bitcoin setgenerate true
 bitcoin stop
+```
 
 It's a simple JSON-RPC client and prints the JSON result.  Look at rpc.cpp for the list of commands.
 

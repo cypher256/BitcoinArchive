@@ -18,8 +18,8 @@ threadPosition: 9
 
 I integrated the hashmeter idea into the SVN version.  It displays khash/s in the left section of the status bar.
 
-Two new log messages:
-21/06/2010 01:23 hashmeter   2 CPUs    799 khash/s
+Two new log messages:<br>
+21/06/2010 01:23 hashmeter   2 CPUs    799 khash/s<br>
 21/06/2010 01:23 generated 50.00
 
 grep your debug.log for "generated" to see what you've generated, and grep for "hashmeter" to see the performance.  On windows, use:

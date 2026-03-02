@@ -18,11 +18,11 @@ threadPosition: 3
 
 14/02/2010 0000000065465700000000000000000000000000000000000000000000000000
 
-2009        1.00
-30/12/2009  1.18   +18%
-11/01/2010  1.31   +11%
-25/01/2010  1.34    +2%
-04/02/2010  1.82   +36%
+2009        1.00<br>
+30/12/2009  1.18   +18%<br>
+11/01/2010  1.31   +11%<br>
+25/01/2010  1.34    +2%<br>
+04/02/2010  1.82   +36%<br>
 14/02/2010  2.53   +39%
 
 Another big jump in difficulty yesterday from 1.82 times to 2.53 times, a 39% increase since 10 days ago.  It was 10 days apart not 14 because more nodes joined and generated the 2016 blocks in less time.

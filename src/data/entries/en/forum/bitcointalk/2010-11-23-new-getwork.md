@@ -22,12 +22,12 @@ m0mchil's external bitcoin miner idea has solved a lot of problems.  GPU progra
 
 The interface has a few changes:
 
-getwork [data]
-If [data] is not specified, returns formatted hash data to work on:
-  "midstate" : precomputed hash state after hashing the first half of the data
-  "data" : block data
-  "hash1" : formatted hash buffer for second hash
-  "target" : little endian hash target
+getwork [data]<br>
+If [data] is not specified, returns formatted hash data to work on:<br>
+  "midstate" : precomputed hash state after hashing the first half of the data<br>
+  "data" : block data<br>
+  "hash1" : formatted hash buffer for second hash<br>
+  "target" : little endian hash target<br>
 If [data] is specified, tries to solve the block and returns true if it was successful.  [data] is the same 128 byte block data that was returned in the "data" field, but with the nonce changed.
 
 Notes: 

@@ -20,8 +20,8 @@ MinGW GCC 4.5.0:
 Crypto++ doesn't work, X86_SHA256_HashBlocks() never returns
 I only got 4-way working with test.cpp but not when called by BitcoinMiner
 
-MinGW GCC 4.4.1:
-Crypto++ works
+MinGW GCC 4.4.1:<br>
+Crypto++ works<br>
 4-way SIGSEGV
 
 GCC is definitely not aligning __m128i. 

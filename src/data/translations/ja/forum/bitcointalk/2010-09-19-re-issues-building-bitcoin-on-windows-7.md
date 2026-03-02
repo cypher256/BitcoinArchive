@@ -16,7 +16,9 @@ translationStatus: complete
 ---
 
 引っかかっている行：
-Code:ERROR extern map<string, string> mapAddressBook;
+
+```cpp
+ERROR extern map<string, string> mapAddressBook;
 ERROR extern CCriticalSection cs_mapAddressBook;
 ERROR extern vector<unsigned char> vchDefaultKey;
 OK extern bool fClient;
@@ -24,6 +26,7 @@ OK extern int nBestHeight;
 
 OK extern unsigned int nWalletDBUpdated;
 ERROR extern DbEnv dbenv;
+```
 
 つまり、mapやvectorさえも、何も定義されていないかのように振る舞っています。
 

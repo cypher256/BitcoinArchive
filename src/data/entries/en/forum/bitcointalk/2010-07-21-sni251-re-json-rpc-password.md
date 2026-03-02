@@ -23,24 +23,30 @@ YAML is massive.  I'm not sure there's a lightweight easy to build library we c
 JSON is tempting and I'm inclined to like it, but two main sticking points:
 1) No comments!  How can you have a config file where you can't comment out a line to disable it?
 2) Not very user friendly to have to "quote" all the strings, including the keys, and also have to remember the comma at the end of lines.
+```json
 {
     "key" : "value",
 }
+```
 
 I suppose we could easily preprocess JSON reading the config file one line at a time, truncate the lines at any # character (and/or "//"?), concatenate them into a string and pass it to JSON, so you could go:
+```
 # comment
 "key" : "value",   # still have to remember the comma 
 "key2" : "value",   // comment like this or both
+```
 
 Boost has boost::program_options.
 
 We could read lines ourselves and feed them into a map<string, string> mapConfig.
 
+```
 while (!eof)
   read line
   if '#' found, truncate line
   split line at first ':' -> key, value
   mapConfig.insert(key, value)
+```
 
 If we use the syntax:
 # comment

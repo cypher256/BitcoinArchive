@@ -16,6 +16,7 @@ threadId: "bt-version-0-3-13-please-upgrade"
 threadPosition: 4
 ---
 
+```diff
 Code:diff -u old\main.cpp new\main.cpp
 --- old\main.cpp Sun Oct 03 20:57:20 2010
 +++ new\main.cpp Sun Oct 03 20:57:54 2010
@@ -59,3 +60,4 @@ diff -u old\serialize.h new\serialize.h
 -static const char* pszSubVer = "";
 +static const int VERSION = 31301;
 +static const char* pszSubVer = " test1";
+```

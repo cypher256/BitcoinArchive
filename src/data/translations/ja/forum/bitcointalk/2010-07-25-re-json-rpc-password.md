@@ -24,9 +24,13 @@ b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk
 64文字ごとに改行が挿入され、明らかにAuthorizationヘッダーが壊れるため、「bitcoin getinfo」のようなコマンドが失敗します。サーバーは正しく動作するクライアントでは問題なく動作します。
 
 これはBase64Encode関数の結果から改行（およびおそらく''）を削除することで解決できます:
-Code:result.erase(std::remove(result.begin(), result.end(), '
+
+```cpp
+result.erase(std::remove(result.begin(), result.end(), '
 '), result.end());
 result.erase(std::remove(result.begin(), result.end(), ''), result.end());
+```
+
 このバグを見つけるほど長いパスワードを使っていたことに+1です。
 
 SVNにリビジョン110としてアップロードしました。

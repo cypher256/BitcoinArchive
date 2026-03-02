@@ -44,7 +44,7 @@ Subscription sites that need some extra proof-of-work for their free trial so it
 
 It might make sense just to get some in case it catches on.  If enough people think the same way, that becomes a self fulfilling prophecy.  Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
 
-Satoshi Nakamoto
+Satoshi Nakamoto<br>
 http://www.bitcoin.org
 
 ---------------------------------------------------------------------

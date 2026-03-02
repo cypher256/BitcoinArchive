@@ -20,7 +20,7 @@ things that were confusing.
 
 Special thanks to Nicholas and Dustin for all their help and feedback!
 
-Download link:
+Download link:<br>
 http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441
 
 Changes:
@@ -39,5 +39,5 @@ Changes:
 - added some explanation text to transaction details for generated coins
 - reworded the description for transactions received with bitcoin address
 
-Satoshi Nakamoto
+Satoshi Nakamoto<br>
 http://www.bitcoin.org

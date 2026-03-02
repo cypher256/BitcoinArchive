@@ -14,8 +14,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/433/"
 ---
 
-You can probably just comment out the line
-cryptopp/secblock.h:187
+You can probably just comment out the line<br>
+cryptopp/secblock.h:187<br>
   //assert(false);
 
 Let me know if it works, and watch if it memory leaks. 

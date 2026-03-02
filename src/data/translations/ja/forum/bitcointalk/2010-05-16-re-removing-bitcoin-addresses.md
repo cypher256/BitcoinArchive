@@ -23,9 +23,11 @@ sirius-m:
 
 同じIPに同じアドレスを渡し続ける小さなコードを追加するのは良いアイデアでしょう。C++で、同じキー（＝ビットコインアドレス）を使用されるまで渡し続けるために行ったことは以下の通りです:
 
+```cpp
     // 使用されるまで同じIPに同じキーを渡し続ける
     if (!mapReuseKey.count(pfrom->addr.ip))
         mapReuseKey[pfrom->addr.ip] = GenerateNewKey();
+```
 
     ...キー mapReuseKey[pfrom->addr.ip] を送信
 

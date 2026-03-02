@@ -30,8 +30,8 @@ translationStatus: complete
 
 [Frantzは、ボットネットの]オペレーターが正規のセキュリティ企業へと移行し、プルーフ・オブ・ワーク（POW）報酬と引き換えにコンピュータを侵害から保護するようになる将来の可能性を推測した。
 
-Bill Frantz        | The laws and samples
-408-356-8506       | are useful, indeed
-www.pwpconsult.com | indispensable, but
-Periwinkle         | they are not the Law.
+Bill Frantz        | The laws and samples<br>
+408-356-8506       | are useful, indeed<br>
+www.pwpconsult.com | indispensable, but<br>
+Periwinkle         | they are not the Law.<br>
                    |  - Rudyard Kipling

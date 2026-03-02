@@ -22,7 +22,7 @@ I can see both points.
 
 What if the programmer can't figure out how to do HTTP authentication in their language (Fortran or whatever) or it's not even supported by their JSON-RPC library?  Should they be able to explicitly disable the password requirement?
 
-OTOH, what if there's a template conf file, with
+OTOH, what if there's a template conf file, with<br>
 rpcpassword=  # fill in a password here
 
 There are many systems that don't allow you to log in without a password.  This forum, for instance.  Gavin's point seems stronger.

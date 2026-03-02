@@ -21,6 +21,7 @@ translationStatus: complete
 
 より一般的には、これも検討できるでしょう：
 
+```diff
         dbenv.set_lk_max_objects(10000);
         dbenv.set_errfile(fopen(strErrorFile.c_str(), "a")); /// debug
         dbenv.set_flags(DB_AUTO_COMMIT, 1);
@@ -29,5 +30,6 @@ translationStatus: complete
                          DB_CREATE     |
                          DB_INIT_LOCK  |
                          DB_INIT_LOG   |
+```
 
 そうすれば、ウォレット書き込み後のフラッシュにはCDB::Close()のdbenv.txn_checkpoint(0, 0, 0)に依存することになります。

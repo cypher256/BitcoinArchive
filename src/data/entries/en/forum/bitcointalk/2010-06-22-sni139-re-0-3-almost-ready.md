@@ -16,7 +16,7 @@ threadId: "bt-0-3-almost-ready"
 threadPosition: 2
 ---
 
-Here's RC1 for windows for testing:
+Here's RC1 for windows for testing:<br>
 (removed, see RC2 below)
 
 Please only download this if you're going to test and report back whether everything seems fine or not.  Make sure to look through the files in "c:\program files\bitcoin"

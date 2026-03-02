@@ -30,6 +30,7 @@ Martti Malmi
  - 将来の拡張に対応した新しいオプションダイアログレイアウト
  - Windows用セットアッププログラム
  - Linux版（Ubuntuでテスト済み）
+
 Satoshi Nakamoto
  - コイン生成のマルチプロセッササポート
  - TOR使用のためのプロキシサポート

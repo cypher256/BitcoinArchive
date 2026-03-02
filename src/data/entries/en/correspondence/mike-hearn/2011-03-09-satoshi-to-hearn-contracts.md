@@ -64,8 +64,8 @@ Very good idea. That should definitely be allowed on -testnet.
 
 Just to reduce surface area. It wouldn't help with increasing tx fee. A tx starts being valid at nLockTime. It wouldn't work to have a tx that stops being valid at a certain time; once a tx ever becomes valid, it must stay valid permanently.
 
-See these threads:
-http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
+See these threads:<br>
+http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119<br>
 http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
 
 > I haven't fully understood why sequence numbers are a property of the tx inputs rather than the tx itself.

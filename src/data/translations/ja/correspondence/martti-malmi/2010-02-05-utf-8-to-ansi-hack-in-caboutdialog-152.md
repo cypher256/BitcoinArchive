@@ -25,8 +25,10 @@ translationStatus: complete
 ---
 
 了解です。再び壊れないように以下のように変更します:
+```cpp
      if (str.Find('\xC2') != wxNOT_FOUND)
          str.Remove(str.Find('\xC2'), 1);
+```
 
 mmalmi@cc.hut.fi の書き込み:
 > 意図的に変更したわけではありません。エンコーディングの問題だったのでしょう。

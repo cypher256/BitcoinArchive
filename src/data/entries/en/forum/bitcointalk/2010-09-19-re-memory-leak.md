@@ -24,9 +24,11 @@ I'm not sure how the 200Kb/sec, since it waits at least a half second between co
 
 The wait function on linux is:
 
+```cpp
 inline void Sleep(int64 n)
 {
     boost::thread::sleep(boost::get_system_time() + boost::posix_time::milliseconds(n));
 }
+```
 
 If that doesn't work right, then it would be possible for it to spin through the loop as fast as it can.

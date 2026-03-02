@@ -24,8 +24,11 @@ secondarySources:
 ---
 
 Right, I'll change it to this so it doesn't get broken again:
+
+```c
      if (str.Find('\xC2') != wxNOT_FOUND)
          str.Remove(str.Find('\xC2'), 1);
+```
 
 mmalmi@cc.hut.fi wrote:
 > I didn't change it knowingly, must have been some encoding problem.

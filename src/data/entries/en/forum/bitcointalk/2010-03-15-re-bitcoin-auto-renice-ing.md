@@ -26,11 +26,11 @@ The priorities converted from Windows priorities were probably from a table like
 
    "The following table shows the mapping between nice values and Win32 priorities. Refer to the Win32 documentation for SetThreadPriority() for more information on Win32 priority issues.
 
-nice value    Win32 Priority
--20 to -16    THREAD_PRIORITY_HIGHEST
--15 to -6    THREAD_PRIORITY_ABOVE_NORMAL
--5 to +4    THREAD_PRIORITY_NORMAL
-+5 to +14    THREAD_PRIORITY_BELOW_NORMAL
+nice value    Win32 Priority<br>
+-20 to -16    THREAD_PRIORITY_HIGHEST<br>
+-15 to -6    THREAD_PRIORITY_ABOVE_NORMAL<br>
+-5 to +4    THREAD_PRIORITY_NORMAL<br>
++5 to +14    THREAD_PRIORITY_BELOW_NORMAL<br>
 +15 to +19    THREAD_PRIORITY_LOWEST"
 
 If you have better values, suggestions welcome.

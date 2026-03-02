@@ -25,8 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-以下のコマンドでバックアップを取得できます：
-wget --no-check-certificate
+以下のコマンドでバックアップを取得できます：<br>
+wget --no-check-certificate<br>
 https://backup:cAr26Ram@www.bitcoin.org/backup/bitcoinsite.tar.bz2.gpg
 
 毎日GMT 11:00に更新されます。

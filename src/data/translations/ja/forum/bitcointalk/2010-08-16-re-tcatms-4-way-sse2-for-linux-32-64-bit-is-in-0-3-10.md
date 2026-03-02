@@ -17,9 +17,15 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-[Quote from: jgarzik on August 16, 2010, 03:35:28 AM](https://bitcointalk.org/index.php?topic=820.msg9665#msg9665)Code:cpu family : 6
+[Quote from: jgarzik on August 16, 2010, 03:35:28 AM](https://bitcointalk.org/index.php?topic=820.msg9665#msg9665)
+
+```
+cpu family : 6
 model  : 26
 model name : Genuine Intel(R) CPU             000  @ 3.20GHz
-stepping : 4cpu family 6 model 26 stepping 4はIntel Core i7です。
--4wayで23%の高速化、-4way + ハイパースレッディングで合計63%の高速化です。
+stepping : 4
+```
+
+cpu family 6 model 26 stepping 4はIntel Core i7です。<br>
+-4wayで23%の高速化、-4way + ハイパースレッディングで合計63%の高速化です。<br>
 ハイパースレッディングありの場合、なしの場合より33%高速です。

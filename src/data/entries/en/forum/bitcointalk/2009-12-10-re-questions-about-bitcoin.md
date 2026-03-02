@@ -23,7 +23,7 @@ For that level of anonymity you need to connect through TOR, which will be possi
 Version 0.1.5: backup the whole %appdata%\Bitcoin directory.
 Version 0.2: you can backup just wallet.dat.
 
-5:
+5:<br>
 Nope.  The whole design is all about preventing that from working.
 
 6:
@@ -37,20 +37,20 @@ If you only have 24k blocks, it must not have finished the initial block downloa
 8:
 Typically a few hundred right now.  It's easy now but it'll get harder as the network grows.
 
-9:
+9:<br>
 Good question, it's TCP.  The website needs to be updated to say TCP port 8333.
 
 The port forwarding is so other nodes can connect to you, so it helps you stay connected because you are able to be connected with more nodes.  You also need it to receive payments by IP address.
 
-10:
+10:<br>
 No, the other nodes won't accept that.
 
 Being open source means anyone can independently review the code.  If it was closed source, nobody could verify the security.  I think it's essential for a program of this nature to be open source.
 
-11:
+11:<br>
 Slower machines produce fewer coins.  It's proportional to CPU speed.
 
-12:
+12:<br>
 There are more coming.
 
 13:

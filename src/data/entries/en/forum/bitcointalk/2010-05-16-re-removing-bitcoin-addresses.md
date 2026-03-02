@@ -22,16 +22,20 @@ Thousands of own addresses should not be any problem at all.  If you've generat
 
 It would be a good idea to add a little code that keeps giving the same address to the same IP.  Here's what I did in C++ to keep giving the same key (aka bitcoin address) until they use it:
 
+```cpp
     // Keep giving the same key to the same ip until they use it
     if (!mapReuseKey.count(pfrom->addr.ip))
         mapReuseKey[pfrom->addr.ip] = GenerateNewKey();
     
     ...sends the key mapReuseKey[pfrom->addr.ip]
+```
 
 ...later...
 
+```cpp
     // Received something with this key
     mapReuseKey.erase(pfrom->addr.ip);
+```
 
 If it's not convenient to know when you've received, just clear the cached keys every 20 minutes.
 

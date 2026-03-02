@@ -20,6 +20,7 @@ translationStatus: complete
 [Quote from: knightmb on July 30, 2010, 07:24:07 PM](https://bitcointalk.org/index.php?topic=626.msg6702#msg6702)これらのビルドを作るのにどれだけ苦労したか想像できます。Ubuntu 9.04の環境でプログラムをビルドしようとしていますが、パッケージをインストールしたりソースをコンパイルしたりしても、すべての依存関係を見つけられません（笑）。
 なぜそんなに苦労しているのか理解できません。build-unix.txtの手順に従っただけです。Boost 1.37用にちょっとした修正を加えましたが、次回SVNを更新する時にアップロードします。以下に記載します：
 
+```
 依存関係
 ------------
 sudo apt-get install build-essential
@@ -41,9 +42,11 @@ make
 sudo su
 make install
 ldconfig
+```
 
 makefile.unixにコメントを追加：
 
+```makefile
 # boost 1.37の場合、boostライブラリに-mtを追加
 LIBS= \
  -Wl,-Bstatic \
@@ -55,3 +58,4 @@ LIBS= \
    -l crypto \
  -Wl,-Bdynamic \
    -l gthread-2.0
+```

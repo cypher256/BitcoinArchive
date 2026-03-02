@@ -26,19 +26,24 @@ Already does that.  See CDB.  The lifetime of the (for instance) CTxDB object 
 QuoteAnd, additionally, bitcoin forces a database checkpoint, pushing all transactions from log into main database.
 If it was doing that it would be much slower.  It's supposed to be only once a minute or 500 blocks:
 
+```cpp
     if (strFile == "blkindex.dat" && IsInitialBlockDownload() && nBestHeight % 500 != 0)
         nMinutes = 1;
     dbenv.txn_checkpoint(0, nMinutes, 0);
+```
 
 Probably should add this:
+```cpp
     if (!fReadOnly)
         dbenv.txn_checkpoint(0, nMinutes, 0);
+```
 
 Quote2) For the initial block download, txn commit should occur once every N records, not every record.  I suggest N=1000.
 Does transaction commit imply flush?  That seems surprising to me.  I assume a database op wrapped in a transaction would be logged like any other database op.  Many database applications need to wrap almost every pair of ops in a transaction, such as moving money from one account to another. (debit a, credit b)  I can't imagine they're required to batch all their stuff up themselves.
 
 In the following cases, would case 1 flush once and case 2 flush twice?
 
+```
 case 1:
 write
 write
@@ -56,5 +61,6 @@ write
 write
 commit transaction
 checkpoint
+```
 
 Contorting our database usage will not be the right approach.  It's going to be BDB settings and caching.

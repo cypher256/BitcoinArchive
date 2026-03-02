@@ -18,13 +18,13 @@ It must be a rounding error when getinfo converts to floating point to return th
 
 1.139999999999 is longer than bitcoin can internally represent.
 
-internally, it could only be:
-1.13999999 or
+internally, it could only be:<br>
+1.13999999 or<br>
 1.14000000
 
 1.139999999999 is much much closer to 1.14000000 than 1.13999999, so it must be 1.14000000.
 
-The code is this:
+The code is this:<br>
 (double)GetBalance() / (double)COIN.
 
 (I can't think of an easy way to fix it at the moment)

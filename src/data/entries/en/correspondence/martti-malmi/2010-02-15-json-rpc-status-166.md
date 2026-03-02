@@ -40,7 +40,9 @@ Just downloaded the python-json-rpc
 (http://json-rpc.org/wiki/python-json-rpc) from their svn and tested  
 by talking to the Python interpreter directly. Like this:
 
-pythons = ServiceProxy("http://localhost:8332")
+```python
+s = ServiceProxy("http://localhost:8332")
 s.getblockcount()
+```
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

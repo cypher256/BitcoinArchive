@@ -29,14 +29,14 @@ translationStatus: complete
 ダウンロードリンクはbitcoin.orgのホームページをご覧ください。
 
 
-------------------------------------------------------------------------------
-The Palm PDK Hot Apps Program offers developers who use the
-Plug-In Development Kit to bring their C/C++ apps to Palm for a share
-of $1 Million in cash or HP Products. Visit us here for more details:
-http://p.sf.net/sfu/dev2dev-palm
-_______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+------------------------------------------------------------------------------<br>
+The Palm PDK Hot Apps Program offers developers who use the<br>
+Plug-In Development Kit to bring their C/C++ apps to Palm for a share<br>
+of $1 Million in cash or HP Products. Visit us here for more details:<br>
+http://p.sf.net/sfu/dev2dev-palm<br>
+_______________________________________________<br>
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

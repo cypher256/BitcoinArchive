@@ -23,5 +23,5 @@ translationStatus: complete
 
 http://www.bitcoin.org/smf/index.php?topic=2228.0
 
-ダウンロード：
+ダウンロード：<br>
 http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.19/

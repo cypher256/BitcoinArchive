@@ -17,7 +17,7 @@ translationStatus: complete
 
 Bitcoin 0.2が登場しました！
 
-ダウンロード（Windows版、そして新たにLinux版も利用可能）
+ダウンロード（Windows版、そして新たにLinux版も利用可能）<br>
 http://sourceforge.net/projects/bitcoin/files/
 
 新機能

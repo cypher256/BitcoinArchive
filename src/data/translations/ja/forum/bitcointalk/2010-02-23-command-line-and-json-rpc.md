@@ -33,9 +33,9 @@ bitcoin -server [スイッチ...]
 bitcoin <コマンド> [パラメータ...]
 
 例：
-bitcoin getinfo
-bitcoin getdifficulty
-bitcoin setgenerate true
+bitcoin getinfo<br>
+bitcoin getdifficulty<br>
+bitcoin setgenerate true<br>
 bitcoin stop
 
 これはシンプルなJSON-RPCクライアントで、JSONの結果を表示します。コマンドのリストはrpc.cppを参照してください。

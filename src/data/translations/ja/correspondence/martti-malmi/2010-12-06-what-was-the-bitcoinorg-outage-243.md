@@ -67,7 +67,7 @@ EBjAnoZeyUihPrcAniVWl5M44RuGctJe+IMNX4eVkC08AJ9v7cXsp5uDdQNo8q3R
 -----END PGP PUBLIC KEY BLOCK-----
 
 
-こちらにもあります：
+こちらにもあります：<br>
 http://www.bitcoin.org/Satoshi_Nakamoto.asc
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

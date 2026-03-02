@@ -21,12 +21,18 @@ I was trying to follow the 1.0 spec: [http://json-rpc.org/wiki/specification](ht
 I think they mean it's like this, but I'm not sure:
 
 Post:
+
+```json
 {"method": "postMessage", "params": ["Hello all!"], "id": 99}
 {"method": "postMessage", "params": ["I have a question:"], "id": 101}
+```
 
 Reply:
+
+```json
 {"result": 1, "error": null, "id": 99}
 {"result": 1, "error": null, "id": 101}
+```
 
 I can't remember where I think I saw that it's supposed to send back HTTP status 500 for an error reply.  If it contains multiple responses and one is an error, I wonder if that makes the status 500 for the whole thing, I guess so.  Maybe it should always return 200.  I think someone sounded like the 500 might be causing a problem.
 

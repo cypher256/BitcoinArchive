@@ -31,8 +31,12 @@ If you have any of these transactions in your wallet, do not send any payments u
 If you've already sent any of these transactions, or you're the creator of them, then use theymos' patch or make the following change and use it to send your clean transactions to a new wallet to clean things up.
 
 change:
+```cpp
     if (pcoin->GetDepthInMainChain() < 1 && pcoin->GetDebit() <= 0)
         continue;
+```
 to:
+```cpp
     if (pcoin->GetDepthInMainChain() < 1)
         continue;
+```

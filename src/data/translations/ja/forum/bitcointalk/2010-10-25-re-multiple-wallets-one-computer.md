@@ -19,12 +19,16 @@ translationStatus: complete
 
 アカウントベースのコマンドの使い方の擬似コードです。ウェブサイト統合がとても簡単になります。
 
+```
 print "send to " + getaccountaddress(username) + " to fund your account"
 print "balance: " + getbalance(username, 0)
 print "available balance: " + getbalance(username, 6)
+```
 
+```
 // 販売したら、そのアカウントからお金を移動する
 move(username, "", amount, 6)
+```
 
 // 出金
 sendfrom(username, bitcoinaddress, amount, 6)

@@ -16,7 +16,7 @@ secondarySources:
 
 Bitcoin 0.2 is here!
 
-Download (Windows, and now Linux version available)
+Download (Windows, and now Linux version available)<br>
 http://sourceforge.net/projects/bitcoin/files/
 
 New Features

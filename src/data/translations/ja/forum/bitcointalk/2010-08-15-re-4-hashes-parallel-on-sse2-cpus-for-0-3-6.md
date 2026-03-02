@@ -22,9 +22,10 @@ MinGW GCC 4.4.1と4.5.0の両方で、test.cppでは動作しますが、Bitcoin
 Ubuntu 32ビットのGCC 4.3.3では問題なく動作しています。
 
 MinGW 4.5.0でのCrypto++の問題を見つけました。以下がそのパッチです：
-Code:--- \old\sha.cpp Mon Jul 26 13:31:11 2010
-+++
-ew\sha.cpp Sat Aug 14 20:21:08 2010
+
+```diff
+--- \old\sha.cpp Mon Jul 26 13:31:11 2010
++++ \new\sha.cpp Sat Aug 14 20:21:08 2010
 @@ -336,7 +336,7 @@
   ROUND(14, 0, eax, ecx, edi, edx)
   ROUND(15, 0, ecx, eax, edx, edi)
@@ -43,3 +44,4 @@ ew\sha.cpp Sat Aug 14 20:21:08 2010
 
   AS2( mov  WORD_REG(dx), DATA_SAVE)
   AS2( add  WORD_REG(dx), 64)
+```

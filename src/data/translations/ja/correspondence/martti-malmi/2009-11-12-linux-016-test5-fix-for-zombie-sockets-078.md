@@ -33,9 +33,9 @@ test 5：
 
 スレッドを約1000回終了させるテストを実行しましたが、問題なかったので安全なはずです。Linux上での終了はpthread_cancelで、これによりC++の例外ハンドラに投げ込まれます。
 
-使っていたスレッド呼び出しには終了機能がなかったので、util.hにWindowsではCreateThread、LinuxではNpthread_createを使用する独自のラッパーを作成しました。以下の代わりに：
-   _beginthreadはWindows専用で終了機能なし
-   boost::threadは非常に魅力的だが終了機能なし
+使っていたスレッド呼び出しには終了機能がなかったので、util.hにWindowsではCreateThread、LinuxではNpthread_createを使用する独自のラッパーを作成しました。以下の代わりに：<br>
+   _beginthreadはWindows専用で終了機能なし<br>
+   boost::threadは非常に魅力的だが終了機能なし<br>
    wxThreadは呼び出す可能性のある各関数にクラスを作成する必要がある（最悪）
 
 ファイルは次のメールに添付します

@@ -19,7 +19,7 @@ translationStatus: complete
 
 NicholasとDustinの多大なご協力とフィードバックに特別に感謝します！
 
-ダウンロードリンク：
+ダウンロードリンク：<br>
 http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441
 
 変更点：
@@ -37,5 +37,5 @@ http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441
 - 生成されたコインのトランザクション詳細に説明テキストを追加
 - Bitcoinアドレスで受信したトランザクションの説明文を修正
 
-Satoshi Nakamoto
+Satoshi Nakamoto<br>
 http://www.bitcoin.org

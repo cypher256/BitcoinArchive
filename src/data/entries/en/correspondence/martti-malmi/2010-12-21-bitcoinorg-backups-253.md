@@ -25,8 +25,10 @@ secondarySources:
 ---
 
 You can fetch the backup with:
-wget --no-check-certificate  
-https://backup:cAr26Ram@www.bitcoin.org/backup/bitcoinsite.tar.bz2.gpg
+
+```
+wget --no-check-certificate https://backup:cAr26Ram@www.bitcoin.org/backup/bitcoinsite.tar.bz2.gpg
+```
 
 It's updated every day 11:00 GMT.
 

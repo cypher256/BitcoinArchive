@@ -44,13 +44,13 @@ ldconfig
 added a comment in makefile.unix:
 
 # for boost 1.37, add -mt to the boost libraries
-LIBS= \
- -Wl,-Bstatic \
-   -l boost_system \
-   -l boost_filesystem \
-   -l boost_program_options \
-   -l boost_thread \
-   -l db_cxx \
-   -l crypto \
- -Wl,-Bdynamic \
+LIBS= \<br>
+ -Wl,-Bstatic \<br>
+   -l boost_system \<br>
+   -l boost_filesystem \<br>
+   -l boost_program_options \<br>
+   -l boost_thread \<br>
+   -l db_cxx \<br>
+   -l crypto \<br>
+ -Wl,-Bdynamic \<br>
    -l gthread-2.0

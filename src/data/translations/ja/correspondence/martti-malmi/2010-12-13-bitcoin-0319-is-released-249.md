@@ -33,17 +33,17 @@ DoS対策を追加するマイナーリリースです。
 
 http://www.bitcoin.org/smf/index.php?topic=2228.0
 
-ダウンロード：
+ダウンロード：<br>
 http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.19/
 
-------------------------------------------------------------------------------
-Oracle to DB2 Conversion Guide: Learn learn about native support for PL/SQL,
-new data types, scalar functions, improved concurrency, built-in packages,
-OCI, SQL*Plus, data movement tools, best practices and more.
-http://p.sf.net/sfu/oracle-sfdev2dev
-_______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+------------------------------------------------------------------------------<br>
+Oracle to DB2 Conversion Guide: Learn learn about native support for PL/SQL,<br>
+new data types, scalar functions, improved concurrency, built-in packages,<br>
+OCI, SQL*Plus, data movement tools, best practices and more.<br>
+http://p.sf.net/sfu/oracle-sfdev2dev<br>
+_______________________________________________<br>
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

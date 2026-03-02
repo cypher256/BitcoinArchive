@@ -49,5 +49,5 @@ http://bitcoin.sipa.be/speed-lin.png
 
 ネットワークにとってエキサイティングな時期です！
 
-ありがとうございます！
+ありがとうございます！<br>
 /mike

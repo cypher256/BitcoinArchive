@@ -23,12 +23,12 @@ That would be a big help.  TOR users wouldn't have to worry about how to get se
 
 It can be run in a few simple modes without access to the UI if you don't mind a minimized window on the desktop.  (0.1.5 doesn't have -min so it would be an open window)
 
-To only run a seed:
+To only run a seed:<br>
 bitcoin -min -gen=0
 
 You could sort of monitor it by looking at debug.log.  To stop it, kill the process, the database won't mind.
 
-To generate:
+To generate:<br>
 bitcoin -min -gen
 
 To get the generated bitcoins, you'd have to copy wallet.dat (with version 0.2) to a machine with a UI, swap in the wallet.dat, run bitcoin and transfer the coins to your main account.  (With version 0.1.5 you'd have to copy the whole "%appdata%/Bitcoin" directory.)  There is one caveat about copying wallet.dat: if you happened to kill the program at the exact moment that it generated a coin or received a payment, wallet.dat might not work by itself and you'd have to copy the whole directory.

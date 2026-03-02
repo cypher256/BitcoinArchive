@@ -41,7 +41,7 @@ http://www.bitcoin.org/smf/index.php?topic=1886.0).
 - getbalance
 - listtransactions
 
-Download:
+Download:<br>
 http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.18/
 
 
@@ -50,11 +50,11 @@ http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.18/
 ------------------------------------------------------------------------------
 This SF Dev2Dev email is sponsored by:
 
-WikiLeaks The End of the Free Internet
+WikiLeaks The End of the Free Internet<br>
 http://p.sf.net/sfu/therealnews-com
 _______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

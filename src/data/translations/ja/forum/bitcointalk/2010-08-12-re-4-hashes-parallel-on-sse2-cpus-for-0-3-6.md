@@ -19,13 +19,13 @@ translationStatus: complete
 
 4倍や6倍のこれほど大きな速度差は、古いチップが苦手とする何か癖のある弱点や命令があるように感じます。SSE2を6倍速くしたというi5の売りの機能でない限りは。
 
-要約：
-Xeon Quad        41%低下
-Core 2 Duo        55%低下
-Core 2 Duo        変化なし（vess）
-Core 2 Quad      50%低下
-Core i5            200%向上（nelisky）
-Core i5            100%向上（vess）
+要約：<br>
+Xeon Quad        41%低下<br>
+Core 2 Duo        55%低下<br>
+Core 2 Duo        変化なし（vess）<br>
+Core 2 Quad      50%低下<br>
+Core i5            200%向上（nelisky）<br>
+Core i5            100%向上（vess）<br>
 AMD Opteron    105%向上
 
 aceat64:

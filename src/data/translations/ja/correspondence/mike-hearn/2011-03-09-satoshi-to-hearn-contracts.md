@@ -65,8 +65,8 @@ translationStatus: complete
 
 攻撃対象領域を減らすためだけです。トランザクション手数料の引き上げには役立ちません。トランザクションはnLockTimeから有効になります。ある時点で有効でなくなるトランザクションは機能しません。一度有効になったトランザクションは、永久に有効でなければなりません。
 
-以下のスレッドを参照してください：
-http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
+以下のスレッドを参照してください：<br>
+http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119<br>
 http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
 
 > シーケンス番号がトランザクション自体ではなくトランザクション入力のプロパティである理由も完全には理解できていません。

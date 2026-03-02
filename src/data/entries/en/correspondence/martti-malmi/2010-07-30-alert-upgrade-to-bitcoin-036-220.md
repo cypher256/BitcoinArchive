@@ -34,8 +34,8 @@ Plug-In Development Kit to bring their C/C++ apps to Palm for a share
 of $1 Million in cash or HP Products. Visit us here for more details:
 http://p.sf.net/sfu/dev2dev-palm
 _______________________________________________
-bitcoin-list mailing list
-bitcoin-list@lists.sourceforge.net
+bitcoin-list mailing list<br>
+bitcoin-list@lists.sourceforge.net<br>
 https://lists.sourceforge.net/lists/listinfo/bitcoin-list
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

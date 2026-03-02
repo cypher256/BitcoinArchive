@@ -19,15 +19,16 @@ threadPosition: 4
 [Quote from: eurekafag on October 04, 2010, 10:55:56 AM](https://bitcointalk.org/index.php?topic=151.msg15248#msg15248)Where can I find the latest English .po file to keep the translation up-to-date?
 poedit does it.  Either get the src directory from a release, or download it with SVN.  Place your .po file 3 directories deep under the src directory.  Open it with poedit and do Catalog->Update from sources.
 
-So for example, you have:
-src
-src\base58.h
-src\bignum.h
-...
-src\util.cpp
-src\util.h
-src\xpm
-src\localeu\LC_MESSAGES\bitcoin.po
+So for example, you have:<br>
+src<br>
+src\base58.h<br>
+src\bignum.h<br>
+...<br>
+src\util.cpp<br>
+src\util.h<br>
+src\xpm<br>
+src\locale<br>
+u\LC_MESSAGES\bitcoin.po
 
 Open bitcoin.po with poedit, do Catalog->Update from sources.  It looks for the sourcecode up 3 directories (..\..\..) from where bitcoin.po is.
 

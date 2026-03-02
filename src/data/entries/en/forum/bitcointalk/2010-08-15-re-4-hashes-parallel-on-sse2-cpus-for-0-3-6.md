@@ -21,6 +21,7 @@ On both MinGW GCC 4.4.1 and 4.5.0 I have it working with test.cpp but SIGSEGV wh
 I have it working fine on GCC 4.3.3 on Ubuntu 32-bit.
 
 I found the problem with Crypto++ on MinGW 4.5.0.  Here's the patch for that:
+```diff
 Code:--- \old\sha.cpp Mon Jul 26 13:31:11 2010
 +++ 
 ew\sha.cpp Sat Aug 14 20:21:08 2010
@@ -42,3 +43,4 @@ ew\sha.cpp Sat Aug 14 20:21:08 2010
  
   AS2( mov  WORD_REG(dx), DATA_SAVE)
   AS2( add  WORD_REG(dx), 64)
+```

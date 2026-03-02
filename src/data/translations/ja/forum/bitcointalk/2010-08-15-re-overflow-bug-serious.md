@@ -19,7 +19,8 @@ translationStatus: complete
 
 予備的な変更です。正しいですか？ まだ変更することがあります。これがすべてではありません。間もなくSVNにコミットします。
 
-Code:    bool CheckTransaction() const
+```cpp
+    bool CheckTransaction() const
     {
         // コンテキストに依存しない基本チェック
         if (vin.empty() || vout.empty())
@@ -52,5 +53,6 @@ Code:    bool CheckTransaction() const
 
         return true;
     }
+```
 
 トピックをスティッキーにしないでください、あそこは誰も見ません。バンプするのに十分な投稿があるでしょう。

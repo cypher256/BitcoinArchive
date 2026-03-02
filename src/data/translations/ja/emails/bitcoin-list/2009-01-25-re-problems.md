@@ -25,5 +25,5 @@ From: Nicholas Bohm 2009-01-25 10:17
 
 debug.logファイルを直接私に送っていただければ（リストに添付ファイルを送るのは避けた方が良いです）、何が起きているか調べることができます。
 
-Satoshi Nakamoto
+Satoshi Nakamoto<br>
 bitcoin-help at vistomail dot com

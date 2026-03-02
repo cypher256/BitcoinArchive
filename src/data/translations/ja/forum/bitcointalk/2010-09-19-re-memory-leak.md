@@ -25,9 +25,11 @@ translationStatus: complete
 
 Linuxでのwait関数は：
 
+```cpp
 inline void Sleep(int64 n)
 {
     boost::thread::sleep(boost::get_system_time() + boost::posix_time::milliseconds(n));
 }
+```
 
 これが正しく動作しなければ、ループを最速で回り続けることが可能です。

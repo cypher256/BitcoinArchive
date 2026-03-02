@@ -29,8 +29,8 @@ The 0wned machines are among the most secure on the network because botnet opera
 
 [Frantz speculates on a possible future where botnet] operators moving toward being legitimate security firms, protecting computers against compromise in exchange for some of the proof of work (POW) money.
 
-Bill Frantz        | The laws and samples
-408-356-8506       | are useful, indeed
-www.pwpconsult.com | indispensable, but
-Periwinkle         | they are not the Law.
+Bill Frantz        | The laws and samples<br>
+408-356-8506       | are useful, indeed<br>
+www.pwpconsult.com | indispensable, but<br>
+Periwinkle         | they are not the Law.<br>
                    |  - Rudyard Kipling

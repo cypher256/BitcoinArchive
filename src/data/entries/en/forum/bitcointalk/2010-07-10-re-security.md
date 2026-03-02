@@ -20,7 +20,9 @@ At the moment, you can kind of use -connect.  You can use -connect to make it c
 
 With -connect it still uses IRC, do you think it shouldn't get on IRC when you're telling it to only connect to specific nodes with -connect?  The main scenario for -connect is where you have a server farm, with two connected to the network and the rest connected to the first two.  In that case, you wouldn't want the -connect computers on IRC.
 
+```cpp
 void ThreadIRCSeed(void* parg)
 {
     if (mapArgs.count("-connect"))
         return;
+```

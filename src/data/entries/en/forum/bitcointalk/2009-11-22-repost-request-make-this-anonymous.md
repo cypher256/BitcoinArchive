@@ -17,8 +17,8 @@ threadPosition: 1
 ---
 
 --------------------
-anonguy54:
-Request: Make this anonymous?
+anonguy54:<br>
+Request: Make this anonymous?<br>
 Posted:Thu 15 of Oct, 2009 (19:58 UTC)
 
 Are there any plans to make this service anonymous?

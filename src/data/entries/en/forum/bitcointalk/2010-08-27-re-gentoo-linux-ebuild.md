@@ -30,10 +30,10 @@ Has wxWidgets 2.9 finally started to become available as a debian package?
 
 Maybe we should do this:
 
-INCLUDEPATHS= \
- -I"/usr/local/include/wx-2.9" \
- -I"/usr/local/lib/wx/include/gtk2-unicode-debug-static-2.9" \
- -I"/usr/include/wx-2.9" \
+INCLUDEPATHS= \<br>
+ -I"/usr/local/include/wx-2.9" \<br>
+ -I"/usr/local/lib/wx/include/gtk2-unicode-debug-static-2.9" \<br>
+ -I"/usr/include/wx-2.9" \<br>
  -I"/usr/lib/wx/include/gtk2-unicode-debug-static-2.9"
 
 Again, those paths help make sure it's only 2.9 and will fail with 2.8.

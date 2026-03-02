@@ -31,6 +31,7 @@ bitcoind -rpcpw=<password>   -- パスワード付きデーモン
 
 中核コード:
 
+```cpp
   // パスワード確認
   if (params.size() < 1 || params[0].type() != str_type)
       throw runtime_error("First parameter must be the password.");
@@ -43,6 +44,7 @@ bitcoind -rpcpw=<password>   -- パスワード付きデーモン
 ");
       throw runtime_error("Incorrect password.");
   }
+```
 
 これらの判断についてコメントはありますか？
 

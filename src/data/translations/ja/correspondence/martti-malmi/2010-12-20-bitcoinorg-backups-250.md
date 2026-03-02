@@ -25,7 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：
+ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：<br>
 http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 
 この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきでしょうか？もう一つの選択肢は、バックアップをPGPで暗号化して複数の場所に保管することです。

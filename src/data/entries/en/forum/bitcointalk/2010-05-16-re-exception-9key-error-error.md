@@ -20,11 +20,13 @@ I've never seen that fail before.  It's a call to OpenSSL that I assumed would 
 
 The code is:
 
+```cpp
 key.h:
     EC_KEY* pkey;
 
         pkey = EC_KEY_new_by_curve_name(NID_secp256k1);
         if (pkey == NULL)
             throw key_error("CKey::CKey() : EC_KEY_new_by_curve_name failed");
+```
 
 NID_secp256k1 is a constant.

@@ -26,9 +26,9 @@ We don't need to bother with a 64-bit version for Windows.  32-bit programs wor
 
 I'm also curious if it's a little faster on linux than windows.
 
-Do you think I should make the directories:
-/bin32/
-/bin64/
-instead of
-/bin/32/
+Do you think I should make the directories:<br>
+/bin32/<br>
+/bin64/<br>
+instead of<br>
+/bin/32/<br>
 /bin/64/

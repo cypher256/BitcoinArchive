@@ -41,8 +41,8 @@ in there, e-mail addresses, passwords.
 
 BTW, password hashes = passwords.  It's easy to break the hash of short 
 passwords people use on forums.
-6 chars = 3 difficulty
-7 chars = 410 difficulty
+6 chars = 3 difficulty<br>
+7 chars = 410 difficulty<br>
 8 chars = 25418 difficulty
 
 

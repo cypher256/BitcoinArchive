@@ -17,7 +17,7 @@ translationStatus: complete
 
 コマンドラインオプションがあります：
 
-bitcoin -addnode=1.2.3.4    接続するノードをBitcoinに指示
+bitcoin -addnode=1.2.3.4    接続するノードをBitcoinに指示<br>
 bitcoin -connect=1.2.3.4    指定されたノードにのみ接続
 
 これらを複数使用できます。例えば

@@ -27,24 +27,24 @@ translationStatus: complete
 
 Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメータなしのクリーンURLを有効にしていますが、Apacheが「AllowOverride All」に設定されていないため、変更が拒否されて動作していません。これは、私たちが望む形でDrupalを他のサイトと共存させるために必要です。
 
-修正するために以下のファイルへのアクセス権限が必要です：
-  /etc/apache2/sites-available/default
-  /etc/apache2/sites-available/default-ssl
+修正するために以下のファイルへのアクセス権限が必要です：<br>
+  /etc/apache2/sites-available/default<br>
+  /etc/apache2/sites-available/default-ssl<br>
   /etc/apache2/httpd.conf
 
 修正計画は以下の通りです。もし自分でやる場合でも、後で変更が必要になるかもしれないので、httpd.confへのアクセス権限は付与してください。
 
-/etc/apache2/sites-available/defaultで
-「AllowOverride None」の2番目のインスタンスを
+/etc/apache2/sites-available/defaultで<br>
+「AllowOverride None」の2番目のインスタンスを<br>
 「AllowOverride All」に変更
 
-そして/etc/apache2/sites-available/default-sslで
-「AllowOverride AuthConfig」の2番目のインスタンスを
+そして/etc/apache2/sites-available/default-sslで<br>
+「AllowOverride AuthConfig」の2番目のインスタンスを<br>
 「AllowOverride All」に変更
 
-  /etc/apache2/httpd.conf
-を
-  /home/maintenance/httpd.conf
+  /etc/apache2/httpd.conf<br>
+を<br>
+  /home/maintenance/httpd.conf<br>
 に置き換え
 
 おそらくこの後Apacheの再起動が必要です。

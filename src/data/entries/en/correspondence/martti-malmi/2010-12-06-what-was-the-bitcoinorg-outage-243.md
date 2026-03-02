@@ -36,7 +36,7 @@ mmalmi@cc.hut.fi wrote:
 Thanks, did you finish moving bitcoinexchange to another server?
 
 
------BEGIN PGP PUBLIC KEY BLOCK-----
+-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 Version: GnuPG v1.4.7 (MingW32)
 
 mQGiBEkJ+qcRBADKDTcZlYDRtP1Q7/ShuzBJzUh9hoVVowogf2W07U6G9BqKW24r
@@ -68,7 +68,7 @@ EBjAnoZeyUihPrcAniVWl5M44RuGctJe+IMNX4eVkC08AJ9v7cXsp5uDdQNo8q3R
 -----END PGP PUBLIC KEY BLOCK-----
 
 
-It's also at
+It's also at<br>
 http://www.bitcoin.org/Satoshi_Nakamoto.asc
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

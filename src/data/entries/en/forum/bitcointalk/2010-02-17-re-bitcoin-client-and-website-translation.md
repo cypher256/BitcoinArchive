@@ -22,9 +22,9 @@ When the program runs, it looks in the directory of the EXE for the file: locale
 
 <langcode> is the two letter code of the language your OS is set to, like "de" or "nl".
 
-On Linux, it also looks for:
-/usr/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
-/usr/local/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
+On Linux, it also looks for:<br>
+/usr/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo<br>
+/usr/local/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo<br>
 (are there other standard places it should look on linux?)
 
 Here's a quick walkthrough using poedit to make a .po and .mo file:

@@ -18,6 +18,7 @@ threadPosition: 1
 
 Here's the preliminary change.  Look right?  I have more changes to make, this isn't all of it.  Will SVN shortly.
 
+```cpp
 Code:    bool CheckTransaction() const
     {
         // Basic checks that don't depend on any context
@@ -51,5 +52,6 @@ Code:    bool CheckTransaction() const
 
         return true;
     }
+```
 
 Don't sticky the topic, nobody looks up there.  There'll be enough posts to bump.

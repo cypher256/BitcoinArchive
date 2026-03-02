@@ -25,11 +25,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-メーリングリストは以下の通りです：
-bitcoin-list@lists.sourceforge.net
-購読/解除ページ：
-http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
-アーカイブ：
+メーリングリストは以下の通りです：<br>
+bitcoin-list@lists.sourceforge.net<br>
+購読/解除ページ：<br>
+http://lists.sourceforge.net/mailman/listinfo/bitcoin-list<br>
+アーカイブ：<br>
 http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
 
 新しいバージョンは常にそこでアナウンスします。自動更新、または少なくとも新バージョンの通知は、確実に予定リストに入っています。将来的に、アップグレードするまで誰もあなたと通信したがらないような必要な変更が発生する可能性があり、古いバージョンのコードでそのことをユーザーに伝える必要があります。これは誰も信頼しないという文脈では、すべてがさらに難しくなります。

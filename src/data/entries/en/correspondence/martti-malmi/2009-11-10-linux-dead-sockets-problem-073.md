@@ -28,12 +28,12 @@ I see what happened.  All your sockets went dead somehow.  You had no
 communication with the network, but because you had 8 zombie 
 connections, it thought it was still online and kept generating blocks. 
   You can tell this is happening when your blocks are numbered 
-sequentially, without other people's blocks interspersed, like:
-2/unconfirmed
-3/unconfirmed
-4/unconfirmed
-5/unconfirmed
-6 blocks
+sequentially, without other people's blocks interspersed, like:<br>
+2/unconfirmed<br>
+3/unconfirmed<br>
+4/unconfirmed<br>
+5/unconfirmed<br>
+6 blocks<br>
 7 blocks
 
 It's implausible that you would be the only one to find blocks for 6 

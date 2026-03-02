@@ -26,13 +26,17 @@ translationStatus: complete
 
 この変更の理由は何でしたか？
 
+```cpp
 #if !wxUSE_UNICODE
 ...
      if (str.Find('Â') != wxNOT_FOUND)
          str.Remove(str.Find('Â'), 1);
+```
 を以下に変更:
+```cpp
      if (str.Find('ï¿½') != wxNOT_FOUND)
          str.Remove(str.Find('ï¿½'), 1);
+```
 
 wxFormBuilderは(c)記号を自動的にUTF-8に変換します。wxWidgets-2.8.9のANSI版では、著作権記号に余分なゴミ文字が付いて表示されます。このハックは非Unicode（ANSI）の場合にそれを修正するものです。
 

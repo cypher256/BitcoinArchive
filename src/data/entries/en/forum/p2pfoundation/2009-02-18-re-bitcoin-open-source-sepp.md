@@ -29,10 +29,10 @@ The generation rate of new coins will slow over time based on a schedule. This i
 
 The system distributes the coins to network nodes as they create blocks, with the amount halved every 4 years:
 
-first 4 years: 10,500,000 coins
-next 4 years: 5,250,000 coins
-next 4 years: 2,625,000 coins
-next 4 years: 1,312,500 coins
+first 4 years: 10,500,000 coins<br>
+next 4 years: 5,250,000 coins<br>
+next 4 years: 2,625,000 coins<br>
+next 4 years: 1,312,500 coins<br>
 etc...
 
 When that runs out, the system can support transaction fees if needed. It's based on open market competition, and there will probably always be nodes willing to process transactions for free.
