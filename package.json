@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.17.1",
-    "pagefind": "^1.4.0"
+    "pagefind": "^1.4.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   }
 }

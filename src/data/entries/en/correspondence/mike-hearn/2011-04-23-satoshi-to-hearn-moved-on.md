@@ -23,6 +23,7 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+featured: true
 ---
 
 I've moved on to other things. It's in good hands with Gavin and everyone.

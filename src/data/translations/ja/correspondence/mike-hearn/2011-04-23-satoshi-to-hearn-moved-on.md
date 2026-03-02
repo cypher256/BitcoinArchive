@@ -24,6 +24,7 @@ secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 translationStatus: complete
+featured: true
 ---
 
 私は他のことに移りました。GavinとみんなのもとでBitcoinはうまくいっています。

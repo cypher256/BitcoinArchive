@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" font-family="'Courier New', monospace" font-size="11" fill="#000">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- LEFT SIDE: Transactions Hashed in a Merkle Tree -->
+  <text x="160" y="16" text-anchor="middle" font-size="11" font-weight="bold">Transactions Hashed in a Merkle Tree</text>
+
+  <!-- Block Header -->
+  <g transform="translate(30,28)">
+    <rect x="0" y="0" width="260" height="70" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="130" y="14" text-anchor="middle" font-size="10">Block Header (Block Hash)</text>
+
+    <rect x="10" y="20" width="110" height="20" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="65" y="34" text-anchor="middle" font-size="10">Prev Hash</text>
+
+    <rect x="125" y="20" width="60" height="20" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="155" y="34" text-anchor="middle" font-size="10">Nonce</text>
+
+    <rect x="60" y="45" width="110" height="20" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="115" y="59" text-anchor="middle" font-size="10">Root Hash</text>
+  </g>
+
+  <!-- Root Hash → Hash01, Hash23 -->
+  <line x1="145" y1="93" x2="95" y2="130" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="145" y1="93" x2="215" y2="130" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash01 -->
+  <rect x="50" y="132" width="80" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="90" y="147" text-anchor="middle" font-size="10">Hash01</text>
+
+  <!-- Hash23 -->
+  <rect x="180" y="132" width="80" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="220" y="147" text-anchor="middle" font-size="10">Hash23</text>
+
+  <!-- Hash01 → Hash0, Hash1 -->
+  <line x1="90" y1="154" x2="58" y2="186" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="90" y1="154" x2="128" y2="186" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash23 → Hash2, Hash3 -->
+  <line x1="220" y1="154" x2="188" y2="186" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="220" y1="154" x2="258" y2="186" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash0 -->
+  <rect x="20" y="188" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="55" y="203" text-anchor="middle" font-size="10">Hash0</text>
+
+  <!-- Hash1 -->
+  <rect x="100" y="188" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="135" y="203" text-anchor="middle" font-size="10">Hash1</text>
+
+  <!-- Hash2 -->
+  <rect x="180" y="188" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="215" y="203" text-anchor="middle" font-size="10">Hash2</text>
+
+  <!-- Hash3 -->
+  <rect x="260" y="188" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="295" y="203" text-anchor="middle" font-size="10">Hash3</text>
+
+  <!-- Hash → Tx connections -->
+  <line x1="55" y1="210" x2="55" y2="234" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="135" y1="210" x2="135" y2="234" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="215" y1="210" x2="215" y2="234" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="295" y1="210" x2="295" y2="234" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Tx0 -->
+  <rect x="25" y="236" width="60" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="55" y="251" text-anchor="middle" font-size="10">Tx0</text>
+
+  <!-- Tx1 -->
+  <rect x="105" y="236" width="60" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="135" y="251" text-anchor="middle" font-size="10">Tx1</text>
+
+  <!-- Tx2 -->
+  <rect x="185" y="236" width="60" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="215" y="251" text-anchor="middle" font-size="10">Tx2</text>
+
+  <!-- Tx3 -->
+  <rect x="265" y="236" width="60" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="295" y="251" text-anchor="middle" font-size="10">Tx3</text>
+
+  <!-- Divider line -->
+  <line x1="348" y1="10" x2="348" y2="280" stroke="#000" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- RIGHT SIDE: After Pruning Tx0-2 from the Block -->
+  <text x="520" y="16" text-anchor="middle" font-size="11" font-weight="bold">After Pruning Tx0-2 from the Block</text>
+
+  <!-- Block Header (right) -->
+  <g transform="translate(390,28)">
+    <rect x="0" y="0" width="260" height="70" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="130" y="14" text-anchor="middle" font-size="10">Block Header (Block Hash)</text>
+
+    <rect x="10" y="20" width="110" height="20" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="65" y="34" text-anchor="middle" font-size="10">Prev Hash</text>
+
+    <rect x="125" y="20" width="60" height="20" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="155" y="34" text-anchor="middle" font-size="10">Nonce</text>
+
+    <rect x="60" y="45" width="110" height="20" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="115" y="59" text-anchor="middle" font-size="10">Root Hash</text>
+  </g>
+
+  <!-- Root Hash → Hash01, Hash23 (right) -->
+  <line x1="505" y1="93" x2="455" y2="130" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="505" y1="93" x2="575" y2="130" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash01 (pruned - dashed) -->
+  <rect x="410" y="132" width="80" height="22" rx="1" stroke="#000" fill="none" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="147" text-anchor="middle" font-size="10" fill="#666">Hash01</text>
+
+  <!-- Hash23 -->
+  <rect x="540" y="132" width="80" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="580" y="147" text-anchor="middle" font-size="10">Hash23</text>
+
+  <!-- Hash23 → Hash2 (pruned), Hash3 -->
+  <line x1="580" y1="154" x2="548" y2="186" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="580" y1="154" x2="618" y2="186" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash2 (pruned - dashed) -->
+  <rect x="510" y="188" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="545" y="203" text-anchor="middle" font-size="10" fill="#666">Hash2</text>
+
+  <!-- Hash3 -->
+  <rect x="590" y="188" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="625" y="203" text-anchor="middle" font-size="10">Hash3</text>
+
+  <!-- Hash3 → Tx3 -->
+  <line x1="625" y1="210" x2="625" y2="234" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Tx3 -->
+  <rect x="595" y="236" width="60" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="625" y="251" text-anchor="middle" font-size="10">Tx3</text>
+</svg>

@@ -22,6 +22,7 @@ secondarySources:
     url: "https://www.coindesk.com/opinion/2023/01/12/remembering-hal-finney-on-the-14th-anniversary-of-the-first-bitcoin-transaction"
   - name: "Guinness World Records — First Bitcoin Transaction"
     url: "https://www.guinnessworldrecords.com/world-records/696243-first-bitcoin-transaction"
+featured: true
 ---
 
 On January 12, 2009, at 03:30:25 UTC, Satoshi Nakamoto sent 10 BTC to Hal Finney in Block 170 of the Bitcoin blockchain — the first person-to-person Bitcoin transaction in history.

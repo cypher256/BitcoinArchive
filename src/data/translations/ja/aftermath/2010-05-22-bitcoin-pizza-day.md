@@ -26,6 +26,7 @@ secondarySources:
   - name: "CoinDesk — What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 translationStatus: complete
+featured: true
 ---
 
 2010年5月18日、Laszlo HanyeczはBitcoinTalkフォーラムに投稿した：

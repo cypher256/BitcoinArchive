@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="100%" font-family="'Courier New', monospace" font-size="11" fill="#000">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="340" y="16" text-anchor="middle" font-size="12" font-weight="bold">Longest Proof-of-Work Chain</text>
+
+  <!-- Block Header 1 -->
+  <g transform="translate(20,30)">
+    <rect x="0" y="0" width="180" height="70" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="90" y="14" text-anchor="middle" font-size="10" font-weight="bold">Block Header</text>
+
+    <rect x="8" y="20" width="90" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="53" y="33" text-anchor="middle" font-size="9">Prev Hash</text>
+
+    <rect x="102" y="20" width="70" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="137" y="33" text-anchor="middle" font-size="9">Nonce</text>
+
+    <rect x="30" y="44" width="120" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="90" y="57" text-anchor="middle" font-size="9">Merkle Root</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="200" y1="55" x2="248" y2="55" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Block Header 2 -->
+  <g transform="translate(250,30)">
+    <rect x="0" y="0" width="180" height="70" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="90" y="14" text-anchor="middle" font-size="10" font-weight="bold">Block Header</text>
+
+    <rect x="8" y="20" width="90" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="53" y="33" text-anchor="middle" font-size="9">Prev Hash</text>
+
+    <rect x="102" y="20" width="70" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="137" y="33" text-anchor="middle" font-size="9">Nonce</text>
+
+    <rect x="30" y="44" width="120" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="90" y="57" text-anchor="middle" font-size="9">Merkle Root</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="430" y1="55" x2="478" y2="55" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Block Header 3 -->
+  <g transform="translate(480,30)">
+    <rect x="0" y="0" width="180" height="70" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="90" y="14" text-anchor="middle" font-size="10" font-weight="bold">Block Header</text>
+
+    <rect x="8" y="20" width="90" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="53" y="33" text-anchor="middle" font-size="9">Prev Hash</text>
+
+    <rect x="102" y="20" width="70" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="137" y="33" text-anchor="middle" font-size="9">Nonce</text>
+
+    <rect x="30" y="44" width="120" height="18" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="90" y="57" text-anchor="middle" font-size="9">Merkle Root</text>
+  </g>
+
+  <!-- Merkle Branch descending from Block 2's Merkle Root -->
+  <line x1="340" y1="100" x2="340" y2="126" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Merkle Branch label -->
+  <text x="340" y="146" text-anchor="middle" font-size="11" font-weight="bold">Merkle Branch for Tx3</text>
+
+  <!-- Root Hash node -->
+  <rect x="290" y="158" width="100" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="340" y="173" text-anchor="middle" font-size="10">Root Hash</text>
+
+  <!-- Root Hash → Hash01, Hash23 -->
+  <line x1="310" y1="180" x2="270" y2="206" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="370" y1="180" x2="410" y2="206" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash01 -->
+  <rect x="220" y="208" width="80" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="260" y="223" text-anchor="middle" font-size="10">Hash01</text>
+
+  <!-- Hash23 -->
+  <rect x="380" y="208" width="80" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="420" y="223" text-anchor="middle" font-size="10">Hash23</text>
+
+  <!-- Hash23 → Hash2, Hash3 -->
+  <line x1="400" y1="230" x2="370" y2="256" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="440" y1="230" x2="470" y2="256" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Hash2 -->
+  <rect x="330" y="258" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="365" y="273" text-anchor="middle" font-size="10">Hash2</text>
+
+  <!-- Hash3 -->
+  <rect x="440" y="258" width="70" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="475" y="273" text-anchor="middle" font-size="10">Hash3</text>
+
+  <!-- Hash3 → Tx3 -->
+  <line x1="475" y1="280" x2="475" y2="306" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Tx3 -->
+  <rect x="445" y="308" width="60" height="22" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="475" y="323" text-anchor="middle" font-size="10">Tx3</text>
+</svg>

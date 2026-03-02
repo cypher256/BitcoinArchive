@@ -28,6 +28,7 @@ secondarySources:
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"
     url: "https://mmalmi.github.io/satoshi/"
 translationStatus: complete
+featured: true
 ---
 
 2010年後半、Satoshi Nakamotoがビットコインへの積極的な関与から身を引き始めるにあたり、プロジェクトのリーダーシップをGavin Andresenに引き渡すという極めて重要な決断を下した。Satoshiはソースコードリポジトリの管理権（SVNアクセス）をAndresenに与え、プロジェクトのリード開発者として承認した。

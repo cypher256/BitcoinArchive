@@ -27,6 +27,7 @@ secondarySources:
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"
     url: "https://mmalmi.github.io/satoshi/"
+featured: true
 ---
 
 In late 2010, as Satoshi Nakamoto began stepping back from active involvement in Bitcoin, he made the pivotal decision to hand project leadership to Gavin Andresen. Satoshi gave Andresen control of the source code repository (SVN access) and endorsed him as the project's lead developer.

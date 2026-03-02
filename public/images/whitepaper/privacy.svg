@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 220" width="100%" font-family="'Courier New', monospace" font-size="12" fill="#000">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- TOP: Traditional Privacy Model -->
+  <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold">Traditional Privacy Model</text>
+
+  <rect x="10" y="30" width="110" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="65" y="49" text-anchor="middle" font-size="11">Identities</text>
+
+  <line x1="120" y1="45" x2="148" y2="45" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="150" y="30" width="110" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="205" y="49" text-anchor="middle" font-size="11">Transactions</text>
+
+  <line x1="260" y1="45" x2="288" y2="45" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="290" y="30" width="130" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="355" y="44" text-anchor="middle" font-size="10">Trusted</text>
+  <text x="355" y="56" text-anchor="middle" font-size="10">Third Party</text>
+
+  <line x1="420" y1="45" x2="448" y2="45" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="450" y="30" width="110" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="505" y="49" text-anchor="middle" font-size="11">Counterparty</text>
+
+  <line x1="560" y1="45" x2="588" y2="45" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="590" y="30" width="60" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="620" y="49" text-anchor="middle" font-size="11">Public</text>
+
+  <!-- BOTTOM: New Privacy Model -->
+  <text x="330" y="110" text-anchor="middle" font-size="12" font-weight="bold">New Privacy Model</text>
+
+  <!-- Identities (separate/disconnected) -->
+  <rect x="10" y="125" width="110" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="65" y="144" text-anchor="middle" font-size="11">Identities</text>
+
+  <!-- Break/gap indicator -->
+  <line x1="120" y1="140" x2="135" y2="140" stroke="#000" stroke-width="1"/>
+  <line x1="135" y1="132" x2="135" y2="148" stroke="#fff" stroke-width="3"/>
+  <line x1="132" y1="132" x2="138" y2="132" stroke="#000" stroke-width="1"/>
+  <line x1="132" y1="148" x2="138" y2="148" stroke="#000" stroke-width="1"/>
+
+  <rect x="150" y="125" width="110" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="205" y="144" text-anchor="middle" font-size="11">Transactions</text>
+
+  <line x1="260" y1="140" x2="288" y2="140" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="290" y="125" width="60" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+  <text x="320" y="144" text-anchor="middle" font-size="11">Public</text>
+
+  <!-- Additional annotation for new model -->
+  <text x="65" y="180" text-anchor="middle" font-size="10" fill="#555">(separated)</text>
+</svg>

@@ -13,6 +13,7 @@ tags:
   - "sourceforge"
   - "project-registration"
   - "historic"
+featured: true
 ---
 
 Satoshi Nakamoto registered the "bitcoin" project on SourceForge.net on November 9, 2008. This was just nine days after publishing the Bitcoin whitepaper to the Cryptography Mailing List on October 31, 2008.

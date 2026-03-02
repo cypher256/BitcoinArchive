@@ -50,9 +50,9 @@ const topParticipants = Array.from(participantMap.entries())
   .slice(0, 8);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
-// Latest entries (collapsed threads)
-const latestSorted = [...entries].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-const latestEntries = collapseThreads(latestSorted, threadCounts, threadStarters).slice(0, 10);
+// Featured entries (sorted by date)
+const featuredSorted = [...entries].filter(e => e.data.featured).sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const featuredEntries = collapseThreads(featuredSorted, threadCounts, threadStarters);
 
 // Network graph data
 const graphData = computeGraphData(entries);
@@ -159,7 +159,7 @@ function tagWeight(count: number, max: number): number {
         <h2>{t('home.latestEntries')}</h2>
         <a href={localePath('/entries/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
       </div>
-      {latestEntries.map((entry) => {
+      {featuredEntries.map((entry: any) => {
         const tid = entry.data.threadId;
         const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
         const isThread = msgCount >= 2;

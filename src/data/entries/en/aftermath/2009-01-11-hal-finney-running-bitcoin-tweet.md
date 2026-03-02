@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "CoinDesk — Bitcoin ETFs 15 Years After Running Bitcoin"
     url: "https://www.coindesk.com/markets/2024/01/11/bitcoin-etfs-secure-approval-exactly-15-years-after-hal-finneys-iconic-running-bitcoin-tweet"
+featured: true
 ---
 
 Running bitcoin

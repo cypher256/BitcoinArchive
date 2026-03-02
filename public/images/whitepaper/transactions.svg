@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" width="100%" font-family="'Courier New', monospace" font-size="12" fill="#000">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Transaction 0 (Owner 1) -->
+  <g transform="translate(20,10)">
+    <text x="80" y="12" text-anchor="middle" font-size="13" font-weight="bold">Transaction</text>
+
+    <rect x="10" y="24" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="44" text-anchor="middle" font-size="11">Owner 1's</text>
+    <text x="80" y="55" text-anchor="middle" font-size="11" dy="-2">Public Key</text>
+
+    <line x1="80" y1="54" x2="80" y2="72" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+    <rect x="10" y="74" width="140" height="26" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="91" text-anchor="middle" font-size="11">Hash</text>
+
+    <line x1="80" y1="100" x2="80" y2="118" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+    <rect x="10" y="120" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-size="11">Owner 0's</text>
+    <text x="80" y="150" text-anchor="middle" font-size="11" dy="-2">Signature</text>
+  </g>
+
+  <!-- Transaction 1 (Owner 2) -->
+  <g transform="translate(240,10)">
+    <text x="80" y="12" text-anchor="middle" font-size="13" font-weight="bold">Transaction</text>
+
+    <rect x="10" y="24" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="44" text-anchor="middle" font-size="11">Owner 2's</text>
+    <text x="80" y="55" text-anchor="middle" font-size="11" dy="-2">Public Key</text>
+
+    <line x1="80" y1="54" x2="80" y2="72" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+    <rect x="10" y="74" width="140" height="26" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="91" text-anchor="middle" font-size="11">Hash</text>
+
+    <line x1="80" y1="100" x2="80" y2="118" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+    <rect x="10" y="120" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-size="11">Owner 1's</text>
+    <text x="80" y="150" text-anchor="middle" font-size="11" dy="-2">Signature</text>
+  </g>
+
+  <!-- Transaction 2 (Owner 3) -->
+  <g transform="translate(460,10)">
+    <text x="80" y="12" text-anchor="middle" font-size="13" font-weight="bold">Transaction</text>
+
+    <rect x="10" y="24" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="44" text-anchor="middle" font-size="11">Owner 3's</text>
+    <text x="80" y="55" text-anchor="middle" font-size="11" dy="-2">Public Key</text>
+
+    <line x1="80" y1="54" x2="80" y2="72" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+    <rect x="10" y="74" width="140" height="26" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="91" text-anchor="middle" font-size="11">Hash</text>
+
+    <line x1="80" y1="100" x2="80" y2="118" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+    <rect x="10" y="120" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-size="11">Owner 2's</text>
+    <text x="80" y="150" text-anchor="middle" font-size="11" dy="-2">Signature</text>
+  </g>
+
+  <!-- Diagonal arrows: previous signature → current Hash (Verify) -->
+  <line x1="170" y1="145" x2="258" y2="94" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="200" y="108" font-size="10" transform="rotate(-14,200,108)">Verify</text>
+
+  <line x1="390" y1="145" x2="478" y2="94" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="420" y="108" font-size="10" transform="rotate(-14,420,108)">Verify</text>
+
+  <!-- Owner's Private Key boxes and Sign arrows -->
+  <!-- Owner 1 Private Key → Sign → Tx1 Signature -->
+  <g transform="translate(240,200)">
+    <rect x="10" y="0" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="13" text-anchor="middle" font-size="11">Owner 1's</text>
+    <text x="80" y="25" text-anchor="middle" font-size="11">Private Key</text>
+  </g>
+  <line x1="320" y1="230" x2="320" y2="262" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="330" y="252" font-size="10">Sign</text>
+
+  <!-- Arrow from Owner 1 Private Key down to Owner 1's Signature in Tx1 -->
+  <line x1="320" y1="200" x2="320" y2="140" stroke="#000" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- Owner 2 Private Key → Sign → Tx2 Signature -->
+  <g transform="translate(460,200)">
+    <rect x="10" y="0" width="140" height="30" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="80" y="13" text-anchor="middle" font-size="11">Owner 2's</text>
+    <text x="80" y="25" text-anchor="middle" font-size="11">Private Key</text>
+  </g>
+  <line x1="540" y1="230" x2="540" y2="262" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="550" y="252" font-size="10">Sign</text>
+
+  <line x1="540" y1="200" x2="540" y2="140" stroke="#000" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- Continuation dots -->
+  <text x="5" y="97" font-size="16">...</text>
+  <text x="680" y="97" font-size="16">...</text>
+</svg>

@@ -28,6 +28,8 @@ secondarySources:
 
 **PDF:** [View the early draft (PDF)](/BitcoinArchive/documents/2008-10-03-nakamoto-bitcoindraft.pdf)
 
+**See also:** [Final version (October 31, 2008)](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)
+
 This early draft predates the final published version by nearly a month. It was shared privately by Satoshi Nakamoto with selected individuals before the public announcement on the Cryptography Mailing List on October 31, 2008.
 
 **Note:** This is not the earliest known draft. In August 2008, Satoshi shared an even earlier version titled "Electronic Cash Without a Trusted Third Party" (ecash.pdf) with [Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) (August 20) and [Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (August 22). The paper was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System" by the time of this October 3 draft.
@@ -43,8 +45,8 @@ This early draft predates the final published version by nearly a month. It was 
 
 # Bitcoin: A Peer-to-Peer Electronic Cash System
 
-Satoshi Nakamoto
-satoshi@vistomail.com
+Satoshi Nakamoto<br>
+satoshi@vistomail.com<br>
 www.bitcoin.org
 
 **Abstract.** A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without the burdens of going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as honest nodes control the most CPU power on the network, they can generate the longest chain and outpace any attackers. The network itself requires minimal structure. Messages are broadcasted on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.

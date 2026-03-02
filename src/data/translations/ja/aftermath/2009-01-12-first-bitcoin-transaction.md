@@ -23,6 +23,7 @@ secondarySources:
   - name: "Guinness World Records — First Bitcoin Transaction"
     url: "https://www.guinnessworldrecords.com/world-records/696243-first-bitcoin-transaction"
 translationStatus: complete
+featured: true
 ---
 
 2009年1月12日03:30:25 UTC、サトシ・ナカモトはビットコインブロックチェーンのBlock 170でHal Finneyに10 BTCを送付した。史上初の個人間ビットコイン送金である。

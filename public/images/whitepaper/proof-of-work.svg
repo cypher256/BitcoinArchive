@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 120" width="100%" font-family="'Courier New', monospace" font-size="12" fill="#000">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Block 1 -->
+  <g transform="translate(30,10)">
+    <rect x="0" y="0" width="220" height="90" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+
+    <!-- Prev Hash | Nonce row -->
+    <rect x="10" y="8" width="100" height="24" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="60" y="24" text-anchor="middle" font-size="11">Prev Hash</text>
+
+    <rect x="115" y="8" width="95" height="24" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="162" y="24" text-anchor="middle" font-size="11">Nonce</text>
+
+    <!-- Tx row -->
+    <rect x="10" y="46" width="55" height="32" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="38" y="66" text-anchor="middle" font-size="11">Tx</text>
+
+    <rect x="75" y="46" width="55" height="32" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="102" y="66" text-anchor="middle" font-size="11">Tx</text>
+
+    <rect x="140" y="46" width="70" height="32" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="175" y="66" text-anchor="middle" font-size="11">...</text>
+  </g>
+
+  <!-- Arrow between blocks (from block1 to block2 Prev Hash) -->
+  <line x1="250" y1="30" x2="352" y2="30" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Block 2 -->
+  <g transform="translate(340,10)">
+    <rect x="0" y="0" width="220" height="90" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+
+    <!-- Prev Hash | Nonce row -->
+    <rect x="10" y="8" width="100" height="24" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="60" y="24" text-anchor="middle" font-size="11">Prev Hash</text>
+
+    <rect x="115" y="8" width="95" height="24" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="162" y="24" text-anchor="middle" font-size="11">Nonce</text>
+
+    <!-- Tx row -->
+    <rect x="10" y="46" width="55" height="32" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="38" y="66" text-anchor="middle" font-size="11">Tx</text>
+
+    <rect x="75" y="46" width="55" height="32" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="102" y="66" text-anchor="middle" font-size="11">Tx</text>
+
+    <rect x="140" y="46" width="70" height="32" rx="1" stroke="#000" fill="none" stroke-width="1"/>
+    <text x="175" y="66" text-anchor="middle" font-size="11">...</text>
+  </g>
+
+  <!-- Arrow to next (continuation) -->
+  <line x1="560" y1="30" x2="610" y2="30" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Continuation dots left -->
+  <text x="5" y="34" font-size="16">...</text>
+</svg>

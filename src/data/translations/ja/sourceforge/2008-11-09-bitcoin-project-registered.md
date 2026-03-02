@@ -14,6 +14,7 @@ tags:
   - "project-registration"
   - "historic"
 translationStatus: complete
+featured: true
 ---
 
 サトシ・ナカモトは2008年11月9日にSourceForge.netに「bitcoin」プロジェクトを登録した。これは、2008年10月31日に暗号技術メーリングリストにビットコインのホワイトペーパーを公開してからわずか9日後のことであった。
