@@ -13,6 +13,8 @@ tags:
   - "wikipedia"
   - "notability"
   - "mainstream"
+threadId: "bt-they-want-to-delete-the-wikipedia-article"
+threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/152/"

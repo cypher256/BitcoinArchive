@@ -9,6 +9,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's post: \"*** ALERT *** Upgrade to 0.3.6\"."
 isSatoshi: true
+threadId: "bt-alert-upgrade-to-0-3-6-asap"
+threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/289/"

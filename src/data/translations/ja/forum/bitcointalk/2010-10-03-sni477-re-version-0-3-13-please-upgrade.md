@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/477/"
 threadId: "bt-version-0-3-13-please-upgrade"
-threadPosition: 5
+threadPosition: 6
 translationStatus: complete
 ---
 

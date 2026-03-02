@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/474/"
 threadId: "bt-version-0-3-13-please-upgrade"
-threadPosition: 2
+threadPosition: 3
 ---
 
 Could a few people please run this special build?  It'll amnesty the dust spam transactions, which will clear up the 0/unconfirmed problem for now.  We really just need one block letting them through to clear up the previous transactions.  Post if you generate a block with this.

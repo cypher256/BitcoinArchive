@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/482/"
 threadId: "bt-version-0-3-13-please-upgrade"
-threadPosition: 7
+threadPosition: 8
 ---
 
 Make sure you keep your node online so it'll keep rebroadcasting transaction b412a0.  It haven't seen it rebroadcast since 29/09/2010 16:41.

@@ -9,6 +9,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's post: \"Faster initial block download (5x faster)\"."
 isSatoshi: true
+threadId: "bt-faster-initial-block-download"
+threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/258/"

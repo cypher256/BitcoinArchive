@@ -9,6 +9,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamotoが偽のトランザクションが承認済みと表示される実装バグの修正のため、0.3.6への緊急アップグレードを呼びかけ。"
 isSatoshi: true
+threadId: "bt-alert-upgrade-to-0-3-6-asap"
+threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/289/"

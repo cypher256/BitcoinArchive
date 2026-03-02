@@ -13,6 +13,8 @@ tags:
   - "legal"
   - "regulation"
   - "use-cases"
+threadId: "bt-transaction-spam-flood-attack"
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/490/"

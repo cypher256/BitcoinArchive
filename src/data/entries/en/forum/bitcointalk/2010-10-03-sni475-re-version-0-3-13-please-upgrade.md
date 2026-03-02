@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/475/"
 threadId: "bt-version-0-3-13-please-upgrade"
-threadPosition: 3
+threadPosition: 4
 ---
 
 [Quote from: tcatm on October 03, 2010, 07:45:45 PM](https://bitcointalk.org/index.php?topic=1327.msg15111#msg15111)983 Mhash/s box.

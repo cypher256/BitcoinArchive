@@ -9,6 +9,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "「ファイルホスティングサービスのアイデア」スレッドにおけるSatoshi Nakamotoの返信。"
 isSatoshi: true
+threadId: "bt-idea-for-file-hosting-and-proxy-services"
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/93/"
