@@ -9,6 +9,22 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'Bitcoin open source implementation of P2P currency',
     ja: 'ビットコイン：P2P通貨のオープンソース実装',
   },
+  'bitcointalk-1735-wikileaks-cia': {
+    en: 'WikiLeaks, the CIA, and the End of the Beginning',
+    ja: 'WikiLeaks、CIA、そして始まりの終わり',
+  },
+  'bt-alert-upgrade-to-0-3-6-asap': {
+    en: '*** ALERT *** Upgrade to 0.3.6 ASAP!',
+    ja: '*** 警告 *** 0.3.6に今すぐアップグレードしてください！',
+  },
+  'bt-request-make-this-anonymous': {
+    en: 'Request: Make this anonymous?',
+    ja: 'リクエスト：これを匿名にできますか？',
+  },
+  'bt-they-want-to-delete-the-wikipedia-article': {
+    en: 'They want to delete the Wikipedia article',
+    ja: 'Wikipediaの記事を削除しようとしている',
+  },
   'satoshi-adam-back': {
     en: 'Satoshi ↔ Adam Back Correspondence',
     ja: 'Satoshi ↔ Adam Back 書簡',
