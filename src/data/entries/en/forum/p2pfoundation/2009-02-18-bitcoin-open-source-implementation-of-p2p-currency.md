@@ -7,12 +7,29 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's post: \"Bitcoin open source implementation of P2P currency\"."
+  - name: "Joerg Baach"
+    slug: "joerg-baach"
+  - name: "Sepp Hasslberger"
+    slug: "sepp-hasslberger"
+description: "Satoshi explains Bitcoin's proof-of-work mining, halving schedule, and fixed supply in response to questions from Joerg Baach and Sepp Hasslberger, comparing it to a precious metal where supply is predetermined and value changes."
 isSatoshi: true
+tags:
+  - "mining"
+  - "supply-limit"
+  - "proof-of-work"
+  - "monetary-policy"
+threadId: "p2pfoundation-bitcoin-open-source"
+threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/3/"
 ---
+
+Joerg Baach wrote:
+> What I did not understand about your system - how would you use it for a currency of any sort? Everybody can create a coin as they like, as far as I understood, so therefore there is no trusted supply of tokens / coins.
+
+Sepp Hasslberger wrote:
+> Is there a formula to decide on what should be the total amount of tokens, and if so, what is the formula?
 
 It is a global distributed database, with additions to the database by consent of the majority, based on a set of rules they follow:
 

@@ -7,16 +7,27 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi responds to a discussion about earlier e-currency attempts, arguing that their centralized nature doomed them and that Bitcoin represents the first decentralized, non-trust-based system."
+  - name: "Sepp Hasslberger"
+    slug: "sepp-hasslberger"
+description: "Satoshi responds to Sepp Hasslberger's question about the Open Coin project, arguing that previous e-currency failures were due to centralization, and that Bitcoin represents the first decentralized, non-trust-based system."
 isSatoshi: true
 tags:
   - "decentralization"
   - "trust"
   - "e-currency"
+threadId: "p2pfoundation-bitcoin-open-source"
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
 ---
+
+Sepp Hasslberger wrote:
+> Dante, in an email, has mentioned a UK project called Open Coin. It seems to go in a similar direction.
+>
+> Could there be synergies with bitcoin?
+>
+> http://opencoin.org/
 
 Could be. They're talking about the old Chaumian central mint stuff, but maybe only because that was the only thing available. Maybe they would be interested in going in a new direction.
 

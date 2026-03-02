@@ -5,6 +5,10 @@
  * non-"Re:" message's title field.
  */
 const threadMeta: Record<string, { en: string; ja: string }> = {
+  'p2pfoundation-bitcoin-open-source': {
+    en: 'Bitcoin open source implementation of P2P currency',
+    ja: 'ビットコイン：P2P通貨のオープンソース実装',
+  },
   'satoshi-adam-back': {
     en: 'Satoshi ↔ Adam Back Correspondence',
     ja: 'Satoshi ↔ Adam Back 書簡',

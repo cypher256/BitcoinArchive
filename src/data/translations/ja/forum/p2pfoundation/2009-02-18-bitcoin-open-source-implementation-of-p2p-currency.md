@@ -7,13 +7,30 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがビットコインのグローバル分散データベースとしての仕組み、プルーフ・オブ・ワークによるブロック生成、コインの発行スケジュール、そして貴金属に似た経済的性質について説明しています。"
+  - name: "Joerg Baach"
+    slug: "joerg-baach"
+  - name: "Sepp Hasslberger"
+    slug: "sepp-hasslberger"
+description: "Joerg BaachとSepp Hasslbergerの質問に回答し、ビットコインのプルーフ・オブ・ワークによるマイニング、半減期スケジュール、固定供給量について説明。供給量があらかじめ決められ価値が変動する貴金属に例えています。"
 isSatoshi: true
+tags:
+  - "mining"
+  - "supply-limit"
+  - "proof-of-work"
+  - "monetary-policy"
+threadId: "p2pfoundation-bitcoin-open-source"
+threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/3/"
 translationStatus: complete
 ---
+
+Joerg Baachの書き込み：
+> あなたのシステムについて理解できなかったのですが、これをどのように通貨として使うのでしょうか？ 私の理解では、誰でも好きなようにコインを作成できるので、信頼できるトークン/コインの供給がないことになります。
+
+Sepp Hasslbergerの書き込み：
+> トークンの総量を決定する公式はありますか？ もしあるなら、その公式は何ですか？
 
 これはグローバルな分散データベースであり、参加者が従う一連のルールに基づいて、多数決の合意によりデータベースへの追加が行われます：
 

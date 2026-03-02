@@ -7,17 +7,28 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシが以前の電子通貨システムに関する議論に応答し、過去の失敗は中央集権的な性質が原因であり、ビットコインは分散型で信頼を必要としないシステムの最初の試みであると述べています。"
+  - name: "Sepp Hasslberger"
+    slug: "sepp-hasslberger"
+description: "サトシがSepp HasslbergerのOpen Coinプロジェクトに関する質問に回答し、過去の電子通貨の失敗は中央集権的な性質が原因であり、ビットコインは分散型で信頼を必要としないシステムの最初の試みであると述べています。"
 isSatoshi: true
 tags:
   - "decentralization"
   - "trust"
   - "e-currency"
+threadId: "p2pfoundation-bitcoin-open-source"
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
 translationStatus: complete
 ---
+
+Sepp Hasslbergerの書き込み：
+> Danteがメールで、イギリスのOpen Coinというプロジェクトについて言及していました。似たような方向性のようです。
+>
+> ビットコインとシナジーはありえるでしょうか？
+>
+> http://opencoin.org/
 
 そうかもしれない。彼らは昔のChaum式の中央造幣局のことを話しているが、それしか利用可能なものがなかったからかもしれない。新しい方向に進むことに興味を持つかもしれない。
 

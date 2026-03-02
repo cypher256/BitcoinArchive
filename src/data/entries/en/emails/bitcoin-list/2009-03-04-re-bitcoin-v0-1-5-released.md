@@ -9,6 +9,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's reply in the thread \"[bitcoin-list] Bitcoin v0.1.5 released\"."
 isSatoshi: true
+threadId: "bitcoin-list-v015-released"
+threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/27/"

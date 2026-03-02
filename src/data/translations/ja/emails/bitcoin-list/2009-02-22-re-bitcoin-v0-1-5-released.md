@@ -9,6 +9,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi NakamotoによるBitcoin v0.1.5スレッドへの返信。v0.1.6でのマルチプロセッサ対応とウェブサイト統合インターフェースの計画について。"
 isSatoshi: true
+threadId: "bitcoin-list-v015-released"
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/26/"
