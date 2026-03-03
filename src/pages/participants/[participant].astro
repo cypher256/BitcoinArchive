@@ -4,6 +4,7 @@ import EntryCard from '../../components/EntryCard.astro';
 import AutoLinkNames from '../../components/AutoLinkNames.astro';
 import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath } from '../../i18n/utils';
+import { buildThreadInfo, collapseThreads } from '../../data/threads';
 
 export async function getStaticPaths() {
   const { getEntries, getDisplayEntries } = await import('../../i18n/utils');
@@ -43,9 +44,12 @@ const filtered = entries.filter((e) =>
   e.data.participants.some((p) => p.slug === participantSlug)
 );
 
+const allEntries = await getEntries(lang);
+const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
-const displayEntries = filtered.filter((e) => e.data.aftermathType !== 'biography');
+const nonBio = filtered.filter((e) => e.data.aftermathType !== 'biography');
+const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
 const lifeDatesRaw = lifeDatesMatch ? lifeDatesMatch[0] : null;
 const lifeDates = lifeDatesRaw && !/生没年不明|dates unknown/.test(lifeDatesRaw) ? lifeDatesRaw : null;
@@ -81,19 +85,26 @@ const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]
       <h2 class="entries-heading">{t('participant.relatedEntries' as any)}</h2>
     ) : null}
     <p class="entry-count">{displayEntries.length} entries</p>
-    {displayEntries.map((entry) => (
-      <EntryCard
-        id={entry.id}
-        title={entry.data.title}
-        date={entry.data.date}
-        author={entry.data.author}
-        source={entry.data.source}
-        description={entry.data.description}
-        isSatoshi={entry.data.isSatoshi}
-        lang={lang}
-        participants={entry.data.participants}
-      />
-    ))}
+    {displayEntries.map((entry) => {
+      const tid = entry.data.threadId;
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      return (
+        <EntryCard
+          id={entry.id}
+          title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
+          date={entry.data.date}
+          author={entry.data.author}
+          source={entry.data.source}
+          description={entry.data.description}
+          isSatoshi={entry.data.isSatoshi}
+          lang={lang}
+          threadId={isThread ? tid : undefined}
+          threadCount={isThread ? msgCount : undefined}
+          participants={entry.data.participants}
+        />
+      );
+    })}
 
     <nav class="participant-nav">
       {prevParticipant ? (
