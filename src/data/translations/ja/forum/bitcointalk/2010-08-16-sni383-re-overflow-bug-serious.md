@@ -19,6 +19,6 @@ translationStatus: complete
 
 Windowsでは、findstr /c:"version message" debug.log
 
-不正なチェーンは最近ブロック74678にあったようです。追い越すのが待ちきれません。
+不正なチェーンは最近ブロック74678にあったようだ。追い越すのが待ちきれない。
 
-[http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php)の統計では、過去3時間で1時間あたり5ブロックでした。約1日前に難易度調整があり、1時間あたり6ブロックに戻るはずでした。
+[http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php)の統計では、過去3時間で1時間あたり5ブロックだった。約1日前に難易度調整があり、1時間あたり6ブロックに戻るはずだった。

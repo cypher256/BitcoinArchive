@@ -17,4 +17,4 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-正しく覚えていれば、500はJSON-RPCのエラーレスポンスに規定されたステータスコードです。応答のボディにはエラーの説明を含むJSONレスポンスがあり、例えば{"result":"","error":"bitcoin address not found","id":"1"}のようなものです。
+正しく覚えていれば、500はJSON-RPCのエラーレスポンスに規定されたステータスコードだ。応答のボディにはエラーの説明を含むJSONレスポンスがあり、例えば{"result":"","error":"bitcoin address not found","id":"1"}のようなものだ。

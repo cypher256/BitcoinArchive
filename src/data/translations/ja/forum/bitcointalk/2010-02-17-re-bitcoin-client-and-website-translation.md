@@ -17,16 +17,16 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-翻訳サポートのための変更をSVNに更新しました。翻訳可能な文字列はすべて_("")で囲まれており、すべてのプラットフォームでUTF-8を使用しています。
+翻訳サポートのための変更をSVNに更新した。翻訳可能な文字列はすべて_("")で囲まれており、すべてのプラットフォームでUTF-8を使用している。
 
-プログラム実行時、EXEのディレクトリで以下のファイルを探します：locale\<langcode>\LC_MESSAGES\bitcoin.mo
+プログラム実行時、EXEのディレクトリで以下のファイルを探す：locale\<langcode>\LC_MESSAGES\bitcoin.mo
 
-<langcode>はOSに設定された言語の2文字コードで、「de」や「nl」のようなものです。
+<langcode>はOSに設定された言語の2文字コードで、「de」や「nl」のようなものだ。
 
-Linuxでは以下も探します：
+Linuxでは以下も探す：
 /usr/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
 /usr/local/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
-（Linuxで他に探すべき標準的な場所はありますか？）
+（Linuxで他に探すべき標準的な場所はあるか？）
 
 poeditを使って.poと.moファイルを作成する簡単な手順：
 
@@ -40,4 +40,4 @@ poeditを使って.poと.moファイルを作成する簡単な手順：
 - ソースコードをスキャンして約170の文字列が見つかるはず
 - 何も見つからない場合は、Catalog->Settings->Pathタブで「../../..」が追加されているか確認
 
-翻訳が完了したら、bitcoin.po（編集可能なカタログファイル）とbitcoin.mo（プログラムが使用するコンパイル済みデータ）の両方をコミットしてください。
+翻訳が完了したら、bitcoin.po（編集可能なカタログファイル）とbitcoin.mo（プログラムが使用するコンパイル済みデータ）の両方をコミットしてほしい。

@@ -17,4 +17,4 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-SVN rev 130で修正済みです。
+SVN rev 130で修正済みだ。

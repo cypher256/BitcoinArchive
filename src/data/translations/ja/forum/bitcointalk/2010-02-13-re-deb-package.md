@@ -17,14 +17,14 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-Karmic 64ビットでwxWidgets 2.8.9をコンパイルすることは私もできませんでした。
+Karmic 64ビットでwxWidgets 2.8.9をコンパイルすることは私もできなかった。
 
-wxWidgets 2.9.0を使って最新のSVNをKarmic 64ビットでコンパイルしており、64ビットで問題なくコンパイルできます。build-unix.txtを読み、wxWidgetsに指定されたconfigureパラメータを使用して、付属のmakefile.unix.wx2.9を使用できるようにしてください。（--enable-debug --disable-shared --enable-monolithic）
+wxWidgets 2.9.0を使って最新のSVNをKarmic 64ビットでコンパイルしており、64ビットで問題なくコンパイルできる。build-unix.txtを読み、wxWidgetsに指定されたconfigureパラメータを使用して、付属のmakefile.unix.wx2.9を使用できるようにしてほしい。（--enable-debug --disable-shared --enable-monolithic）
 
-2.9.0にはまだ修正が必要な表示上のバグが1つあり、ステータスの数値表示が何かの理由で詰まって表示されます。──修正済み
+2.9.0にはまだ修正が必要な表示上のバグが1つあり、ステータスの数値表示が何かの理由で詰まって表示される。──修正済み
 
-ホームページのダウンロードリンクはSourceForgeのtar.gzアーカイブへのもので、32ビットバイナリと0.2.0のソースが含まれていますが、当時はまだ64ビットでビルドできませんでした。
+ホームページのダウンロードリンクはSourceForgeのtar.gzアーカイブへのもので、32ビットバイナリと0.2.0のソースが含まれているが、当時はまだ64ビットでビルドできなかった。
 
-SVNが64ビットのwx2.9.0で初めてビルド可能になったのは2010年1月28日です。
+SVNが64ビットのwx2.9.0で初めてビルド可能になったのは2010年1月28日だ。
 
-いつかwxWidgets 2.9.0のDebianパッケージができることを願っています。
+いつかwxWidgets 2.9.0のDebianパッケージができることを願っている。

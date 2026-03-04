@@ -31,6 +31,6 @@ result.erase(std::remove(result.begin(), result.end(), '
 result.erase(std::remove(result.begin(), result.end(), ''), result.end());
 ```
 
-このバグを見つけるほど長いパスワードを使っていたことに+1です。
+このバグを見つけるほど長いパスワードを使っていたことに+1だ。
 
-SVNにリビジョン110としてアップロードしました。
+SVNにリビジョン110としてアップロードした。

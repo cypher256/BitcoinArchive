@@ -26,11 +26,11 @@ translationStatus: complete
 #endif
 #endif
 
-そのコードはそもそもよくないアイデアだったので、削除します。Mac用のコードは__WXMAC_OSX__のみを使用すべきで、__WXMAC__や__WXOSX__は使わず、__BSD__の使用もやめるべきです。
+そのコードはそもそもよくないアイデアだったので、削除する。Mac用のコードは__WXMAC_OSX__のみを使用すべきで、__WXMAC__や__WXOSX__は使わず、__BSD__の使用もやめるべきだ。
 
 Quote
 #if (defined(__unix__) || defined(unix)) && !defined(USG)
 #include <sys/param.h>
 #endif
 
-これでMacでBSDが確実に定義されますか？
+これでMacでBSDが確実に定義されるだろうか？

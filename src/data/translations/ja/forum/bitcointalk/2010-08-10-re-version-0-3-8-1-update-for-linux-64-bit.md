@@ -17,4 +17,4 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-SVN rev 128：32ビットでSSE2を無効化。これはMSVCとGCCでのみ無効化される可能性があります。他のコンパイラは異なる64ビット定義を持っているかもしれません。
+SVN rev 128：32ビットでSSE2を無効化。これはMSVCとGCCでのみ無効化される可能性がある。他のコンパイラは異なる64ビット定義を持っているかもしれない。

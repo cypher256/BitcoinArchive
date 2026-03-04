@@ -15,4 +15,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-wxWidgets 2.8では動作しません。wxWidgets 2.9が必要です。残念ながら、wxWidgets 2.9のDebianパッケージはまだありません。
+wxWidgets 2.8では動作しない。wxWidgets 2.9が必要だ。残念ながら、wxWidgets 2.9のDebianパッケージはまだない。

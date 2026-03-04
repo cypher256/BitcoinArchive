@@ -17,5 +17,5 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-0.3リリースしました
+0.3リリースした
 [http://bitcointalk.org/index.php?topic=238.msg2004#msg2004](http://bitcointalk.org/index.php?topic=238.msg2004#msg2004)

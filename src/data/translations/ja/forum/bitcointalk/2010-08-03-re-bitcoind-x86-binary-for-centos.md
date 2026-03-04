@@ -18,4 +18,4 @@ translationStatus: complete
 ---
 
 [Quote from: sgtstein on August 03, 2010, 05:30:37 PM](https://bitcointalk.org/index.php?topic=685.msg7275#msg7275)4.8で正常にビルドできました。4.7ではうまくいきませんでしたが、4.8ではbitcoindが初期ブロックダウンロードをディスクにダンプする時にロックアップします。
-BDB 4.8を使わないよう強くお勧めします。あなたのビルドを使った人が公式ビルドに戻った場合、database/log0000*ファイルに互換性がなくなります。
+BDB 4.8を使わないよう強く勧める。あなたのビルドを使った人が公式ビルドに戻った場合、database/log0000*ファイルに互換性がなくなる。

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "良いですね。翻訳者に少しでもオーナーシップと責任感を持ってもらえます。"
+description: "良いな。翻訳者に少しでもオーナーシップと責任感を持ってもらえる。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 172
@@ -27,8 +27,8 @@ translationStatus: complete
 > bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に
 > 保てるようにします。
 
-良いですね。翻訳者に少しでもオーナーシップと責任感を持ってもらえます。
+良いな。翻訳者に少しでもオーナーシップと責任感を持ってもらえる。
 
-0.3リリースに間に合うように、ソフトウェア翻訳用の.moファイルが少なくとも1つは手に入るといいのですが。
+0.3リリースに間に合うように、ソフトウェア翻訳用の.moファイルが少なくとも1つは手に入るといいのだが。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -19,4 +19,4 @@ translationStatus: complete
 
 [Quote from: Insti on September 06, 2010, 12:51:37 PM](https://bitcointalk.org/index.php?topic=960.msg12101#msg12101)[Quote from: satoshi on September 05, 2010, 11:36:20 PM](https://bitcointalk.org/index.php?topic=960.msg12063#msg12063)このエラーメッセージに使うより良いテキストの提案はありますか？次の人が混乱しにくくなるように。
 「コンピュータの日付と時刻が正しいか確認してください。時計が間違っているとBitcoinは正しく動作しません。」
-ありがとうございます。
+ありがとう。

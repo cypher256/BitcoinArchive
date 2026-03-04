@@ -17,10 +17,10 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-0.3.6のLinuxビルドは古いmakefile.unixに戻りました。libjpegを静的リンクしているので、問題はないはずです。
+0.3.6のLinuxビルドは古いmakefile.unixに戻った。libjpegを静的リンクしているので、問題はないはずだ。
 
-これでうまく動作していますか？
+これでうまく動作しているか？
 
-22DbRunRecoveryExceptionが発生し、以前に他の人のビルドを使用したことがある場合は、database/log.000000*を削除（またはファイルを別の場所に移動）する必要があるかもしれません。
+22DbRunRecoveryExceptionが発生し、以前に他の人のビルドを使用したことがある場合は、database/log.000000*を削除（またはファイルを別の場所に移動）する必要があるかもしれない。
 
-WindowsとLinuxのユーザーへ：0.3.5を入手済みでも、0.3.6にアップグレードする必要があります。
+WindowsとLinuxのユーザーへ：0.3.5を入手済みでも、0.3.6にアップグレードする必要がある。

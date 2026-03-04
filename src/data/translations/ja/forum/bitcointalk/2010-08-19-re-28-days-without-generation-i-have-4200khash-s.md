@@ -17,4 +17,4 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-コンピュータの日付と時刻が正しいことを確認してください。
+コンピュータの日付と時刻が正しいことを確認してくれ。

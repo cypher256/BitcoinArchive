@@ -17,12 +17,12 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-良い指摘です。SSE2がなくても生成をオフにすれば動作できるはずです。
+良い指摘だ。SSE2がなくても生成をオフにすれば動作できるはずだ。
 
-cryptopp/config.hの先頭に以下を追加するのはどうでしょうか：
+cryptopp/config.hの先頭に以下を追加するのはどうだろうか：
 
 #if !defined(_M_X64) && !defined(__x86_64__)
 #define CRYPTOPP_DISABLE_SSE2  1
 #endif
 
-これにより32ビットビルドでSSE2が無効になります。（少なくともGCCまたはMSVCでは）
+これにより32ビットビルドでSSE2が無効になる。（少なくともGCCまたはMSVCでは）

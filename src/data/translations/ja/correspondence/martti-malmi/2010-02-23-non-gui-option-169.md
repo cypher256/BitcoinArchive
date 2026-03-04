@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "うまく動作しています。あといくつか作業したらアップロードします。"
+description: "うまく動作している。あといくつか作業したらアップロードする。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 169
@@ -35,8 +35,8 @@ translationStatus: complete
 > Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
 > 戻り値を無視することができます。うまく動作しているようです。
 
-うまく動作しています。あといくつか作業したらアップロードします。
+うまく動作している。あといくつか作業したらアップロードする。
 
-GTKライブラリをインストールするよう人々に伝える必要があります。GTKをインストールするapt-getコマンドを覚えていますか？また、GUIがインストールされていない環境でもインストールできますか？
+GTKライブラリをインストールするよう人々に伝える必要がある。GTKをインストールするapt-getコマンドを覚えているか？また、GUIがインストールされていない環境でもインストールできるか？
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

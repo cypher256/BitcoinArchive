@@ -17,4 +17,4 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-XP上で非下位ASCIIのアカウント名でテストしてバグを確認し、その後新しいGetDefaultDataDirで修正されたことをテストしました。この変更はSVNのリビジョン102です。
+XP上で非下位ASCIIのアカウント名でテストしてバグを確認し、その後新しいGetDefaultDataDirで修正されたことをテストした。この変更はSVNのリビジョン102だ。

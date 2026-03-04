@@ -19,7 +19,7 @@ translationStatus: complete
 
 良いな、FreeBSDで正常に動作しているか？
 
-headers.hへの変更をコミットした。一貫性のため、__BSD__を使用した。定義の完全なリストは[http://docs.wxwidgets.org/stable/wx_cppconst.html](http://docs.wxwidgets.org/stable/wx_cppconst.html)にあります。
+headers.hへの変更をコミットした。一貫性のため、__BSD__を使用した。定義の完全なリストは[http://docs.wxwidgets.org/stable/wx_cppconst.html](http://docs.wxwidgets.org/stable/wx_cppconst.html)にある。
 #ifdef __BSD__
 #include <netinet/in.h>
 #endif

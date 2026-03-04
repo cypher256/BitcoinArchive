@@ -17,4 +17,4 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-Boost 1.37以降でビルドできます。
+Boost 1.37以降でビルドできる。

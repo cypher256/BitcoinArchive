@@ -17,11 +17,11 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-まだであれば、thashのアラインを試してみてください。効果があるかもしれません。損にはなりません。
+まだであれば、thashのアラインを試してみてほしい。効果があるかもしれない。損にはならない。
 
 [Quote from: tcatm on August 14, 2010, 12:53:07 AM](https://bitcointalk.org/index.php?topic=648.msg9147#msg9147)ツリーオプティマイザのコンパイラバグを引き起こしているようです。-O0でコンパイルしてみてもらえますか？
 -O0でも効果なし、同じエラーです。
 
-MinGWはGCC 3.4.5です。おそらくそれが問題です。
+MinGWはGCC 3.4.5だ。おそらくそれが問題だ。
 
-新しいバージョンのMinGWを入手できるか試してみます。
+新しいバージョンのMinGWを入手できるか試してみる。

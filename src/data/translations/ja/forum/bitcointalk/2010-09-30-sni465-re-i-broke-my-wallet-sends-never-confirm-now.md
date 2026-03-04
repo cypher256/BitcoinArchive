@@ -17,5 +17,5 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-0.3.13リリース候補です。テストをお願いします：
+0.3.13リリース候補だ。テストしてほしい：
 [http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe)

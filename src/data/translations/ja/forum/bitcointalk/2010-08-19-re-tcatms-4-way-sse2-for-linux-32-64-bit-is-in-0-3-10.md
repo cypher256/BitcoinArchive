@@ -18,10 +18,10 @@ translationStatus: complete
 ---
 
 [Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](https://bitcointalk.org/index.php?topic=820.msg10167#msg10167)Mac以外のi5への愛は？
-Windows i5 64ビットではここでは遅くなりました。
-i5で遅くなったと言う人を聞いたのは初めてです。他の全員がi5では4wayの方が速いと言っています。ハイパースレッディングを有効にするとさらにです。
+Windows i5 64ビットではここでは遅くなった。
+i5で遅くなったと言う人を聞いたのは初めてだ。他の全員がi5では4wayの方が速いと言っている。ハイパースレッディングを有効にするとさらにだ。
 
 [Quote from: nelisky on August 18, 2010, 11:02:25 PM](https://bitcointalk.org/index.php?topic=820.msg10164#msg10164)そしてi5、少なくとも私のMacBookProでは
-良いですね、ということはMacでも動作しているという確認ですね？
+良いな、ということはMacでも動作しているという確認だな？
 
-LaszloがMacで-4wayのコードをコンパイルしたと言っていたので、-4wayスイッチはMacでも試せます。SVN上のmakefile.osxにはまだ入っていないと思いますが、ビルドされたバージョンには含まれています。
+LaszloがMacで-4wayのコードをコンパイルしたと言っていたので、-4wayスイッチはMacでも試せる。SVN上のmakefile.osxにはまだ入っていないと思うが、ビルドされたバージョンには含まれている。

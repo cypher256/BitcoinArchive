@@ -15,6 +15,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-後方互換性のためにAPIを複雑にし始めるには時期尚早です。
+後方互換性のためにAPIを複雑にし始めるには時期尚早だ。
 
-単に「<txid>」を返せばいいです。
+単に「<txid>」を返せばいい。

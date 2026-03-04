@@ -17,10 +17,10 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-wxWidgets 2.9.0を使用していますか？2.9.0以外の使用は推奨しません。
+wxWidgets 2.9.0を使用しているか？2.9.0以外の使用は推奨しない。
 
-wxヘッダー（arrstr.h）にwxBase外の何かへの参照があるようです。
+wxヘッダー（arrstr.h）にwxBase外の何かへの参照があるようだ。
 
-BitcoinのmakefileからD__WXDEBUG__を削除すれば、おそらく解決するでしょう。
+BitcoinのmakefileからD__WXDEBUG__を削除すれば、おそらく解決するだろう。
 
-それでも動作せず、とにかく動かしたい場合は、wxWidgetsのinclude/wx/arrstr.h、167行目を編集してwxASSERT_MSGをコメントアウトすることができます。
+それでも動作せず、とにかく動かしたい場合は、wxWidgetsのinclude/wx/arrstr.h、167行目を編集してwxASSERT_MSGをコメントアウトすることができる。

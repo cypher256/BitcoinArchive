@@ -17,4 +17,4 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-93%完成のオランダ語翻訳をSVNにアップロードしました。ありがとうございます！
+93%完成のオランダ語翻訳をSVNにアップロードした。ありがとう！

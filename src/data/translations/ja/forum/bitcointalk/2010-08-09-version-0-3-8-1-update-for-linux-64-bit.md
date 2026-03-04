@@ -17,9 +17,9 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-バージョン0.3.6でCrypto++ 5.6.0 SHA-256に切り替えた際に、Linux 64ビットビルドで生成が壊れていました。64ビットバイナリを更新したバージョン0.3.8.1がSourceForgeに公開されています。
+バージョン0.3.6でCrypto++ 5.6.0 SHA-256に切り替えた際に、Linux 64ビットビルドで生成が壊れていた。64ビットバイナリを更新したバージョン0.3.8.1がSourceForgeに公開されている。
 
 ダウンロード：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/bitcoin-0.3.8.1-linux.tar.gz/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/bitcoin-0.3.8.1-linux.tar.gz/download)
 
-0.3.8以降の将来のバージョンではSSE2が必要になる可能性があります。これが問題になるPentium 3以前のCPUをお使いの方はいますか？
+0.3.8以降の将来のバージョンではSSE2が必要になる可能性がある。これが問題になるPentium 3以前のCPUをお使いの方はいるだろうか？

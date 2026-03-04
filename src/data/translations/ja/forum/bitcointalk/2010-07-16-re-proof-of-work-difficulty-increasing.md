@@ -17,8 +17,8 @@ threadPosition: 11
 translationStatus: complete
 ---
 
-Proof-of-Workの難易度は現在45.38です。（[http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php) を参照）
+Proof-of-Workの難易度は現在45.38だ。（[http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php) を参照）
 
-あと数時間で再び上昇します。前回の上昇からまだ3〜4日しか経っていないので、最大の4倍、またはそれに近い値まで上昇すると予想しています。そうなると181.54になります。
+あと数時間で再び上昇する。前回の上昇からまだ3〜4日しか経っていないので、最大の4倍、またはそれに近い値まで上昇すると予想している。そうなると181.54になる。
 
-調整間の目標時間は14日間であり、14/3.5日 = 4.0倍の上昇です。
+調整間の目標時間は14日間であり、14/3.5日 = 4.0倍の上昇だ。

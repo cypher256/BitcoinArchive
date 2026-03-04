@@ -17,4 +17,4 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-販売時点で便利でしょうね。レジがBitcoinアドレスと金額をエンコードしたQRコードを画面に表示し、携帯電話で撮影するのです。
+販売時点で便利だろうな。レジがBitcoinアドレスと金額をエンコードしたQRコードを画面に表示し、携帯電話で撮影するのだ。

@@ -17,10 +17,10 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-これを再現できました。データベースは相対パスを好まないようです。
+これを再現できた。データベースは相対パスを好まないようだ。
 
-「bitcoind -datadir=./subdir getinfo」は実行中のデーモンに対しては動作しますが、「bitcoind -datadir=./subdir」としてデーモンを起動しようとすると、その例外が発生します。
+「bitcoind -datadir=./subdir getinfo」は実行中のデーモンに対しては動作するが、「bitcoind -datadir=./subdir」としてデーモンを起動しようとすると、その例外が発生する。
 
-データベースに渡す前にフルパスに解決すべきでしょう。
+データベースに渡す前にフルパスに解決すべきだろう。
 
--datadirで相対パスを使ったのはあなたが初めてのようです。
+-datadirで相対パスを使ったのはあなたが初めてのようだ。

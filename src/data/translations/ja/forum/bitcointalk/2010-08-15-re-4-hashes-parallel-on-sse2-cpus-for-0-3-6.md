@@ -17,11 +17,11 @@ threadPosition: 9
 translationStatus: complete
 ---
 
-MinGW GCC 4.4.1と4.5.0の両方で、test.cppでは動作しますが、BitcoinMinerから呼び出されるとSIGSEGVになります。つまりGCCのバージョンの問題ではなく、別の何か、おそらくスタックのアラインメントの運によるものでしょう。
+MinGW GCC 4.4.1と4.5.0の両方で、test.cppでは動作するが、BitcoinMinerから呼び出されるとSIGSEGVになる。つまりGCCのバージョンの問題ではなく、別の何か、おそらくスタックのアラインメントの運によるものだろう。
 
-Ubuntu 32ビットのGCC 4.3.3では問題なく動作しています。
+Ubuntu 32ビットのGCC 4.3.3では問題なく動作している。
 
-MinGW 4.5.0でのCrypto++の問題を見つけました。以下がそのパッチです：
+MinGW 4.5.0でのCrypto++の問題を見つけた。以下がそのパッチだ：
 
 ```diff
 --- \old\sha.cpp Mon Jul 26 13:31:11 2010

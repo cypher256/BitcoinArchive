@@ -17,7 +17,7 @@ threadPosition: 10
 translationStatus: complete
 ---
 
-Gavinの変更は良さそうです。すべて完了したと思います。テストビルドはこちらです。テストしてください！
+Gavinの変更は良さそうだ。すべて完了したと思う。テストビルドはこちらだ。テストしてくれ！
 
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip](http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip)
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz)

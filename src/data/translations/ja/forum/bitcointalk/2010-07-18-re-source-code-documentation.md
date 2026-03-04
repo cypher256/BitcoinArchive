@@ -17,4 +17,4 @@ threadPosition: 4
 translationStatus: complete
 ---
 
-それらはソースコードを読む勇敢なプログラマーだけを対象としています。
+それらはソースコードを読む勇敢なプログラマーだけを対象としている。

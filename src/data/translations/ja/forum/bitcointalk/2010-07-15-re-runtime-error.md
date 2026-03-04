@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-より直接的には、こちらです:
+より直接的には、こちらだ:
 [http://bitcointalk.org/index.php?topic=246.0](http://bitcointalk.org/index.php?topic=246.0)
 
-この修正を含む0.3.1のリリース候補を間もなく投稿します。お試しいただき、問題が解決するかどうかお知らせください。
+この修正を含む0.3.1のリリース候補を間もなく投稿する。試してみて、問題が解決するかどうか知らせてほしい。

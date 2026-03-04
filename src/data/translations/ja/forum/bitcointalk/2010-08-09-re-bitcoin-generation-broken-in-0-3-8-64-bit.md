@@ -17,7 +17,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-再ビルドした64ビット版のLinux用0.3.8.1をアップロードしました。難易度1でテストを実行し、ブロックが生成されました。
+再ビルドした64ビット版のLinux用0.3.8.1をアップロードした。難易度1でテストを実行し、ブロックが生成された。
 
 [http://bitcointalk.org/index.php?topic=765.0](http://bitcointalk.org/index.php?topic=765.0)
 

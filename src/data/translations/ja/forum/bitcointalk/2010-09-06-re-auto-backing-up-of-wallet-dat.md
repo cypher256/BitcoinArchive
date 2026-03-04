@@ -17,4 +17,4 @@ threadPosition: 5
 translationStatus: complete
 ---
 
-rpc backupwallet <destination>がSVN rev 147に入りました。
+rpc backupwallet <destination>がSVN rev 147に入った。

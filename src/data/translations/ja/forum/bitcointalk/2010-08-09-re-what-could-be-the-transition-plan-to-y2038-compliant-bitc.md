@@ -15,6 +15,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-**unsigned** intは2106年まで有効です。それまでにネットワークは少なくとも一度は完全に刷新される必要があるでしょう。
+**unsigned** intは2106年まで有効だ。それまでにネットワークは少なくとも一度は完全に刷新される必要があるだろう。
 
-signed intはないはずです。どこかでsigned intを見つけた場合は、教えてください（今後25年以内にお願いします）。unsigned intに変更します。
+signed intはないはずだ。どこかでsigned intを見つけた場合は、教えてほしい（今後25年以内に頼む）。unsigned intに変更する。

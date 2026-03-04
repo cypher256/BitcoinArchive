@@ -15,4 +15,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-「1.3ほぼ完成」スレッドのLinuxリリース候補に、ビルド済みのbitcoindが含まれています。
+「1.3ほぼ完成」スレッドのLinuxリリース候補に、ビルド済みのbitcoindが含まれている。

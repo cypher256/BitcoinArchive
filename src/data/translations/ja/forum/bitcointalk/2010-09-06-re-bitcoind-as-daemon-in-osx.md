@@ -15,12 +15,12 @@ secondarySources:
 translationStatus: complete
 ---
 
-ビルドできますか？
+ビルドできるか？
 
 init.cppの78行目を以下から：
 #ifdef __WXGTK__
 
-以下に変更してみてください：
+以下に変更してみてくれ：
 #ifndef __WXMSW__
 
-動作するなら、ソースを変更します。動作するはずです。
+動作するなら、ソースを変更する。動作するはずだ。

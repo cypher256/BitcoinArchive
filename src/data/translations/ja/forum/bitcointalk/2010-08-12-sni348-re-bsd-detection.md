@@ -17,7 +17,7 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-SVN rev 130に入っています。正しくコンパイルされるか確認してください。
+SVN rev 130に入っている。正しくコンパイルされるか確認してほしい。
 
 Code:#if (defined(__unix__) || defined(unix)) && !defined(USG)
 #include <sys/param.h>  // BSD定義を取得するため

@@ -17,4 +17,4 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-通常、25,000 BTC以上です。
+通常、25,000 BTC以上だ。

@@ -15,8 +15,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.1のリリース候補をお試しください。少なくともlibcryptoの依存関係は解決されるはずです:
+0.3.1のリリース候補を試してほしい。少なくともlibcryptoの依存関係は解決されるはずだ:
 
 [http://bitcointalk.org/index.php?topic=383.0](http://bitcointalk.org/index.php?topic=383.0)
 
-動作するかどうかお知らせください。
+動作するかどうか知らせてほしい。

@@ -17,7 +17,7 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-テスト用のWindows版RC1はこちらです:
+テスト用のWindows版RC1はこちらだ:
 （削除済み、下記RC2を参照）
 
-テストしてすべてが正常に見えるかどうか報告していただける方のみダウンロードしてください。"c:\program files\bitcoin"内のファイルを確認してください。
+テストしてすべてが正常に見えるかどうか報告してくれる方のみダウンロードしてほしい。"c:\program files\bitcoin"内のファイルを確認してほしい。

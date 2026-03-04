@@ -25,11 +25,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-DoS対策を追加するマイナーリリースです。
+DoS対策を追加するマイナーリリースだ。
 
 変更点：
-- いくつかのDoS制限を追加しました。ただし、完全なDoS耐性にはまだ程遠い状態です。
-- 「セーフモード」アラートを削除しました。
+- いくつかのDoS制限を追加した。ただし、完全なDoS耐性にはまだ程遠い状態だ。
+- 「セーフモード」アラートを削除した。
 
 http://www.bitcoin.org/smf/index.php?topic=2228.0
 

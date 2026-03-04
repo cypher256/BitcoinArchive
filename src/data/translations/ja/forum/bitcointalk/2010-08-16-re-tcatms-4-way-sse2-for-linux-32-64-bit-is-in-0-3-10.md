@@ -26,6 +26,6 @@ model name : Genuine Intel(R) CPU             000  @ 3.20GHz
 stepping : 4
 ```
 
-cpu family 6 model 26 stepping 4はIntel Core i7です。<br>
--4wayで23%の高速化、-4way + ハイパースレッディングで合計63%の高速化です。<br>
-ハイパースレッディングありの場合、なしの場合より33%高速です。
+cpu family 6 model 26 stepping 4はIntel Core i7だ。<br>
+-4wayで23%の高速化、-4way + ハイパースレッディングで合計63%の高速化だ。<br>
+ハイパースレッディングありの場合、なしの場合より33%高速だ。

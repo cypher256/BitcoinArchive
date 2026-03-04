@@ -17,13 +17,13 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-67000から開始するのは*完璧*です。
+67000から開始するのは*完璧*だ。
 
-はい、現時点では74638で止まるでしょう。より多くのノードがアップグレードして生成するにつれて、ゆっくりと増加し始めるはずです。
+はい、現時点では74638で止まるだろう。より多くのノードがアップグレードして生成するにつれて、ゆっくりと増加し始めるはずだ。
 
-Linux版のビルドリンクは以下の通りです。
+Linux版のビルドリンクは以下の通りだ。
 
-Linux版にはtcatmの4-way SSE2 SHA-256が含まれており、i5およびAMD CPUでの生成が高速になります。「-4way」スイッチを使って有効にし、お使いの環境で高速かどうか確認してください。
+Linux版にはtcatmの4-way SSE2 SHA-256が含まれており、i5およびAMD CPUでの生成が高速になる。「-4way」スイッチを使って有効にし、お使いの環境で高速かどうか確認してほしい。
 
 ダウンロードリンク：
 [http://www.bitcoin.org/download/bitcoin-0.3.10-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.10-win32-setup.exe)

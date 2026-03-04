@@ -17,9 +17,9 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-AMDでは2倍速で、Intelでは半分の速度ということですか？
+AMDでは2倍速で、Intelでは半分の速度ということか？
 
 [Quote from: tcatm on July 31, 2010, 10:12:38 AM](https://bitcointalk.org/index.php?topic=648.msg6797#msg6797)ちなみに、__attribute__ ((aligned (16)))を使えばコンパイル時にコンパイラがアラインしてくれるのに、なぜalignup<16>関数を使っているのですか？
-試しましたが、スタック上のものには機能しません。いくつかテストを行いました。
+試したが、スタック上のものには機能しない。いくつかテストを行った。
 
-エラーすら出ず、単にアラインされないだけです。
+エラーすら出ず、単にアラインされないだけだ。

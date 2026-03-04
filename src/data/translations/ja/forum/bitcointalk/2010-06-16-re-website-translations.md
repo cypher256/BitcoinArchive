@@ -17,6 +17,6 @@ threadPosition: 4
 translationStatus: complete
 ---
 
-DataWraithさん、ありがとうございます！ドイツ語翻訳をSVNにアップロードしました。
+DataWraithさん、ありがとう！ドイツ語翻訳をSVNにアップロードした。
 
-素晴らしいですね。すでに3つの主要言語が揃いました。
+素晴らしい。すでに3つの主要言語が揃った。

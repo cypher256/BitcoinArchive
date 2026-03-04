@@ -17,6 +17,6 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-非公開スイッチ -minimizetotray を付けて実行すると、オプションメニューからそのオプションが利用可能になります。
+非公開スイッチ -minimizetotray を付けて実行すると、オプションメニューからそのオプションが利用可能になる。
 
-修正方法がわかりません。wxWidgets、GTK、またはGnomeの内部深くにある何かの問題です。
+修正方法がわからない。wxWidgets、GTK、またはGnomeの内部深くにある何かの問題だ。

@@ -20,4 +20,4 @@ translationStatus: complete
 [Xunieの2010年2月23日 12:28:27 PMの投稿より引用](https://bitcointalk.org/index.php?topic=60.msg439#msg439)*/etc/init.d/gdm start* でgdmが起動します！
 ああ、そうだ、元に戻りました。
 
-Ctrl+Alt+F[1-8]はこのコンピュータでは一度も動いたことがありません。画面がおかしくなるだけです。
+Ctrl+Alt+F[1-8]はこのコンピュータでは一度も動いたことがない。画面がおかしくなるだけだ。

@@ -25,14 +25,14 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン0.3.18が利用可能になりました。
+バージョン0.3.18が利用可能になった。
 
 変更点：
 - 0.3.17からダウングレードして再度アップグレードした場合のwallet.dat互換性の問題を修正
 - ブロックに既知のトランザクションタイプのみを含めるIsStandard()チェックを追加
 - Jgarzikによる初期ブロックダウンロードを若干高速化する最適化
 
-今回のリリースの主な追加機能は、Gavinが開発してきたアカウントベースのJSON-RPCコマンドです（詳細は http://www.bitcoin.org/smf/index.php?topic=1886.0 を参照）。
+今回のリリースの主な追加機能は、Gavinが開発してきたアカウントベースのJSON-RPCコマンドだ（詳細は http://www.bitcoin.org/smf/index.php?topic=1886.0 を参照）。
 - getaccountaddress
 - sendfrom
 - move

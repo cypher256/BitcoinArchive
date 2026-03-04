@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.3にアップグレードしてください！0.3.2と0.3.3で重要なセキュリティ改善が行われました。
+0.3.3にアップグレードしてくれ！0.3.2と0.3.3で重要なセキュリティ改善が行われた。
 
 新機能:
 - Gavin AndresenによるJSON-RPCセキュリティのためのHTTP認証

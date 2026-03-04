@@ -17,17 +17,17 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-テスト用のLinux版RC1はこちらです:
+テスト用のLinux版RC1はこちらだ:
 （リンク削除済み、下記参照）
 
-32ビットと64ビットの両方のバイナリが含まれています。
+32ビットと64ビットの両方のバイナリが含まれている。
 
 最近の変更:
 
 build-unix.txt:
 - bitcoindのコンパイルに必要なwxBaseのビルド手順を追加。
-- libboost-devパッケージは何もインストールしなくなったため、libboost-all-devを取得する必要があります。
+- libboost-devパッケージは何もインストールしなくなったため、libboost-all-devを取得する必要がある。
 - バージョン番号を更新。
 
 makefile.unix:
-- libboostライブラリは1.40でファイル名から"-mt"を削除しました。Ubuntu KarmicのようにBoost 1.38以下でコンパイルする場合は、boost_system-mtとboost_filesystem-mtに戻す必要があります。
+- libboostライブラリは1.40でファイル名から"-mt"を削除した。Ubuntu KarmicのようにBoost 1.38以下でコンパイルする場合は、boost_system-mtとboost_filesystem-mtに戻す必要がある。

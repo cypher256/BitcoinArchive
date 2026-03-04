@@ -17,4 +17,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.3のJSON-RPC HTTP認証機能がこの問題を解決します。
+0.3.3のJSON-RPC HTTP認証機能がこの問題を解決する。

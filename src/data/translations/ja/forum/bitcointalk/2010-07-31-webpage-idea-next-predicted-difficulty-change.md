@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-誰かが（[http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php)にある便利な計算機のような）次の難易度調整を予測するページを作ったら素晴らしいと思います。
+誰かが（[http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php)にある便利な計算機のような）次の難易度調整を予測するページを作ったら素晴らしいと思う。
 
 予測される難易度調整倍率 =
 
@@ -23,8 +23,8 @@ translationStatus: complete
  ------------------------------------<br>
  前回調整からの経過時間 / 14日
 
-例えば、次の調整まで半分のところに7日ではなく3.5日で到達した場合、難易度は倍になると予想されます：
+例えば、次の調整まで半分のところに7日ではなく3.5日で到達した場合、難易度は倍になると予想される：
 
  (1008/2016) / (3.5/14) = 0.5/0.25 = 2.0
 
-また、次の調整が起こる予測時刻を表示したり、前回の調整がいつ行われてどれだけ変化したかを表示することもできるでしょう。
+また、次の調整が起こる予測時刻を表示したり、前回の調整がいつ行われてどれだけ変化したかを表示することもできるだろう。

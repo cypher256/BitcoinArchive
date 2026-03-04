@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-自分のLAN上で使用する場合、例えばある場所に複数のサーバーがあって互いに通信する場合は安全です。
+自分のLAN上で使用する場合、例えばある場所に複数のサーバーがあって互いに通信する場合は安全だ。
 
-0.3.13 RC1がWindows版で利用可能です：
+0.3.13 RC1がWindows版で利用可能だ：
 [http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe)

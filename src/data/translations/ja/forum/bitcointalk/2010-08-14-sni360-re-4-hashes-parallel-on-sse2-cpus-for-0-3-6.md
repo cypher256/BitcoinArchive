@@ -17,4 +17,4 @@ threadPosition: 7
 translationStatus: complete
 ---
 
-MinGW GCC 4.5で32ビットのテストが動作しました。Core 2ではストック版の正確に50%低下です。
+MinGW GCC 4.5で32ビットのテストが動作した。Core 2ではストック版の正確に50%低下だ。

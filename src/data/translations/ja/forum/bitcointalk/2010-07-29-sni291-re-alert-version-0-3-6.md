@@ -17,6 +17,6 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-SVNをバージョン0.3.6に更新しました。
+SVNをバージョン0.3.6に更新した。
 
-0.3.6のWindowsビルドをSourceforgeにアップロード中です。その後、Linuxを再ビルドします。
+0.3.6のWindowsビルドをSourceforgeにアップロード中だ。その後、Linuxを再ビルドする。

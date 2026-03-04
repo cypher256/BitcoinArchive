@@ -15,12 +15,12 @@ secondarySources:
 translationStatus: complete
 ---
 
-bitcoindの残りわずかなwxBase依存を置き換えました。
+bitcoindの残りわずかなwxBase依存を置き換えた。
 
-bitcoindはSVNリビジョン112でwxWidgetsやwxBaseなしでコンパイルできるようになりました。
+bitcoindはSVNリビジョン112でwxWidgetsやwxBaseなしでコンパイルできるようになった。
 
-main(int argc, char* argv[])がinit.cppに追加されました。CMyAppとスタートアップフォルダ関連のコードはui.cppに移動されました。ui.cppとuibase.cppはbitcoindではリンクされません。
+main(int argc, char* argv[])がinit.cppに追加された。CMyAppとスタートアップフォルダ関連のコードはui.cppに移動された。ui.cppとuibase.cppはbitcoindではリンクされない。
 
-MakefileではGUIの使用を制御するために-DGUIを使用しています。
+MakefileではGUIの使用を制御するために-DGUIを使用している。
 
-MinGW、VC、Ubuntuでテストコンパイルしました。Mac OS Xのビルドを壊していないかわかりませんので、誰かが確認する必要があります。
+MinGW、VC、Ubuntuでテストコンパイルした。Mac OS Xのビルドを壊していないかわからないので、誰かが確認する必要がある。

@@ -17,13 +17,13 @@ threadPosition: 9
 translationStatus: complete
 ---
 
-ハッシュメーターのアイデアをSVNバージョンに統合しました。ステータスバーの左側セクションにkhash/sを表示します。
+ハッシュメーターのアイデアをSVNバージョンに統合した。ステータスバーの左側セクションにkhash/sを表示する。
 
 2つの新しいログメッセージ:
 21/06/2010 01:23 hashmeter   2 CPUs    799 khash/s
 21/06/2010 01:23 generated 50.00
 
-debug.logで"generated"をgrepすると生成したものが確認でき、"hashmeter"をgrepするとパフォーマンスが確認できます。Windowsでは以下を使用してください:
+debug.logで"generated"をgrepすると生成したものが確認でき、"hashmeter"をgrepするとパフォーマンスが確認できる。Windowsでは以下を使用してほしい:
  findstr "hashmeter generated" "%appdata%\bitcoin\debug.log"
 
-ハッシュメーターメッセージは1時間に1回にしています。どのくらいの頻度がいいと思いますか？
+ハッシュメーターメッセージは1時間に1回にしている。どのくらいの頻度がいいと思うか？

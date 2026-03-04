@@ -16,6 +16,6 @@ translationStatus: complete
 ---
 
 [Quote from: satoshi on August 16, 2010, 03:25:54 PM](https://bitcointalk.org/index.php?topic=832.msg9754#msg9754)チェック後にAddToBlockIndexまたはReorganizeを開始することはおそらく可能ですが、はるかに慎重な注意が必要になります。おそらくAddToBlockIndexの新しい最良ブロックを設定する部分を分離すべきでしょう。おそらく以下のコードの代わりにそうすることになるでしょう。
-最終的にSVN rev 139でそのようにしました。
+最終的にSVN rev 139でそのようにした。
 
-不正なチェーンを削除する代わりに、ConnectBlockに追加のCheckBlockを加えて、不正なブロックが一度排除された後に最良チェーンに戻れないようにしました。
+不正なチェーンを削除する代わりに、ConnectBlockに追加のCheckBlockを加えて、不正なブロックが一度排除された後に最良チェーンに戻れないようにした。

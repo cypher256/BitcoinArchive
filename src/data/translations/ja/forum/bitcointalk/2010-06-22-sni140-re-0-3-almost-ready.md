@@ -20,8 +20,8 @@ translationStatus: complete
 [davidonpda、2010年6月22日 午後6:23:26の引用](https://bitcointalk.org/index.php?topic=199.msg1673#msg1673)EXCEPTION: 22DbRunRecoveryException
 DBENv::open: DB_RUNRECOVERY: Fatal error, run database recovery
 C:\Program Files\Bitcoin\bitcoin.exe in OnInit()
-オペレーティングシステムは何ですか？
+オペレーティングシステムは何か？
 
-通常これが発生するのは、データディレクトリが配置されるべきディレクトリが存在しない場合です。"%appdata%"ディレクトリが存在するか確認してください。
+通常これが発生するのは、データディレクトリが配置されるべきディレクトリが存在しない場合だ。"%appdata%"ディレクトリが存在するか確認してほしい。
 
-0.2でもこのエラーが出ますか？この点で異なるところはないので、0.2では出ず0.3で出る理由が想像しにくいのですが。
+0.2でもこのエラーが出るか？この点で異なるところはないので、0.2では出ず0.3で出る理由が想像しにくいのだが。

@@ -17,8 +17,8 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-バージョン番号を1.3に変更し、「Beta」を削除しました。
+バージョン番号を1.3に変更し、「Beta」を削除した。
 
 （リンク削除済み、下記参照）
 
-irc.lfnet.orgを使用しています。
+irc.lfnet.orgを使用している。

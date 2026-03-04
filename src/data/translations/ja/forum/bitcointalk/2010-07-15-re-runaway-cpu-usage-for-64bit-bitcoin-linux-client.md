@@ -17,6 +17,6 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-了解しました。非公開スイッチ「-minimizetotray」でオプションを再び有効にできます。
+了解した。非公開スイッチ「-minimizetotray」でオプションを再び有効にできる。
 
-変更をSVNにアップロードしました。
+変更をSVNにアップロードした。

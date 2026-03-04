@@ -15,13 +15,13 @@ secondarySources:
 translationStatus: complete
 ---
 
-無言で失敗するのは見栄えが悪いでしょう。
+無言で失敗するのは見栄えが悪いだろう。
 
 [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](https://bitcointalk.org/index.php?topic=704.msg7575#msg7575)1. IPアドレスの最初のバイトに基づいてレート制限する（この場合は79.や81.）。
-間違いなく必要です。どのくらいのレートを考えていますか？ 最終的には、すべて流出させるよりもレート制限する方が良いです。
+間違いなく必要だ。どのくらいのレートを考えているか？ 最終的には、すべて流出させるよりもレート制限する方が良い。
 
 [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](https://bitcointalk.org/index.php?topic=704.msg7575#msg7575)3. IPアドレスの逆引きDNSの最後の2つのドメインに基づいてレート制限する（この場合はrima-tde.net）。
-それは驚くほどうまく機能するかもしれません。うまくいけば、レート制限に引っかかるのを防ぎますが、最終防衛線としてレート制限があります。
+それは驚くほどうまく機能するかもしれない。うまくいけば、レート制限に引っかかるのを防ぐが、最終防衛線としてレート制限がある。
 
 [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](https://bitcointalk.org/index.php?topic=704.msg7575#msg7575)4. 標準の配布量を0.5 Bitcoinにする（Faucetを始めてからBitcoinの価値は10倍になりました）。
-間違いなく下げる時期です。
+間違いなく下げる時期だ。

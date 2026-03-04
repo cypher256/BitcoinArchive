@@ -17,4 +17,4 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-Laszloのビルドが初のMacリリースになりますので、テストしてください！
+Laszloのビルドが初のMacリリースになるので、テストしてほしい！

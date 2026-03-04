@@ -18,9 +18,9 @@ translationStatus: complete
 ---
 
 [Quote from: lachesis on July 29, 2010, 10:14:36 PM](https://bitcointalk.org/index.php?topic=626.msg6515#msg6515)Debian testing 32ビットで、いくつかのビルドエラーが出ます。すべて以下のようなものです：
-Code:script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出ました。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようですが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用されます。
+Code:script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出た。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようだが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用される。
 
-他にもこのエラーが出た方がいれば、最も簡単な解決策は「make clean」してからビルドを再試行することです。
-プリコンパイル済みヘッダーは実際には必要ありません。コンパイルがわずかに速くなるだけです。廃止しようと思います。それでも、残ったファイルを削除するために、もう一度「make -f makefile.unix clean」を実行するかheaders.h.gchを削除する必要があります。
+他にもこのエラーが出た方がいれば、最も簡単な解決策は「make clean」してからビルドを再試行することだ。
+プリコンパイル済みヘッダーは実際には必要ない。コンパイルがわずかに速くなるだけだ。廃止しようと思う。それでも、残ったファイルを削除するために、もう一度「make -f makefile.unix clean」を実行するかheaders.h.gchを削除する必要がある。
 
 あのGLIBC_2.11のせいで。アップデートを受け入れないよう注意していたと思っていたのに。

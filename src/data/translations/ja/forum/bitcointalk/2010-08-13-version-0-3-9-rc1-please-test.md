@@ -17,7 +17,7 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-0.3.9がリリースされる前にテストにご協力いただける方のためのテストビルドです。
+0.3.9がリリースされる前にテストにご協力いただける方のためのテストビルドだ。
 （または待つ代わりに今すぐアップグレードを済ませたい方にも）
 
 ダウンロード：（バイナリのみ）
@@ -28,10 +28,10 @@ SHA1 a36ea00cce27b4b083755df73a3d1e5e5729884e bitcoin-0.3.9.rc1-win32.zip
 SHA1 bbb333b0ea57302740ad1bb9948520d00f884f9d bitcoin-0.3.9.rc1-linux.tar.gz
 
 編集：
-Linuxの方は代わりにrc2をテストしてください。tcatmの4-way SSE2用の-4wayスイッチが追加されています。これはLinux専用になります：
+Linuxの方は代わりにrc2をテストしてほしい。tcatmの4-way SSE2用の-4wayスイッチが追加されている。これはLinux専用になる：
 [http://www.bitcoin.org/download/bitcoin-0.3.9.rc2-linux.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.9.rc2-linux.tar.gz)
 
 SHA1 47d9998f7d15fe81234a5c89a542da9d0664df40 bitcoin-0.3.9.rc2-linux.tar.gz
 
-結果をご報告ください
+結果を報告してほしい
 [http://bitcointalk.org/index.php?topic=820](http://bitcointalk.org/index.php?topic=820)

@@ -17,9 +17,9 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-これはバグ修正のメンテナンスリリースです。SourceForgeにアップロード済みです。Mac OS Xには修正が不要だったため、更新する必要はありません。0.3.0のままで問題ありません。
+これはバグ修正のメンテナンスリリースだ。SourceForgeにアップロード済みだ。Mac OS Xには修正が不要だったため、更新する必要はない。0.3.0のままで問題ない。
 
-ダウンロードリンクはbitcoin.orgにあります。
+ダウンロードリンクはbitcoin.orgにある。
 
 変更点:
 - Tiago Fariaによるポルトガル語翻訳を追加

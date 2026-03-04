@@ -15,8 +15,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-listtransactionsを何に使う必要があるのですか？
+listtransactionsを何に使う必要があるのか？
 
-listtransactionsを実装しなかった理由は、Web開発者に使わせたくないからです。受信した支払いの監視にそれを利用するのは非常に簡単でしょう。しかし、その方法で何も取りこぼさないようにする信頼できる方法はありません。getreceivedbyaddressとgetreceivedbylabelを使った確実なサンプルコードを用意して「これを使って！ これを使って！ listtransactionsは使わないで！」と言えるようになるまで、listtransactionsを実装すべきではないと思います。
+listtransactionsを実装しなかった理由は、Web開発者に使わせたくないからだ。受信した支払いの監視にそれを利用するのは非常に簡単だろう。しかし、その方法で何も取りこぼさないようにする信頼できる方法はない。getreceivedbyaddressとgetreceivedbylabelを使った確実なサンプルコードを用意して「これを使って！ これを使って！ listtransactionsは使わないで！」と言えるようになるまで、listtransactionsを実装すべきではないと思う。
 
-listtransactionsを実装する時には、対策の一つとしてすべてテキストにする方法があるかもしれません。フィールドをコメント、確認数、クレジット、デビットなどに分解すべきではありません。「0/unconfirmed   0:0:0 date   comment      debit 4  credit 0」のような整形済みの1つの文字列にして、プログラマーが間違った使い方をしにくくすることができるでしょう。これはサーバーの状態を確認するためだけのものです。ただ、HTMLの列にフォーマットしたいWebインターフェースにとっては少し面倒かもしれませんが。
+listtransactionsを実装する時には、対策の一つとしてすべてテキストにする方法があるかもしれない。フィールドをコメント、確認数、クレジット、デビットなどに分解すべきではない。「0/unconfirmed   0:0:0 date   comment      debit 4  credit 0」のような整形済みの1つの文字列にして、プログラマーが間違った使い方をしにくくすることができるだろう。これはサーバーの状態を確認するためだけのものだ。ただ、HTMLの列にフォーマットしたいWebインターフェースにとっては少し面倒かもしれないが。

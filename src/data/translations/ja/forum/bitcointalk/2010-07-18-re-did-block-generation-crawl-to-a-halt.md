@@ -15,6 +15,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-素晴らしいグラフですね！滑らかにするための移動平均があるといいですね。
+素晴らしいグラフだ！滑らかにするための移動平均があるといい。
 
-[http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php) によると、過去24時間で212ブロック、つまり1時間あたり8.8ブロックです。
+[http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php) によると、過去24時間で212ブロック、つまり1時間あたり8.8ブロックだ。

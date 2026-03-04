@@ -20,10 +20,10 @@ translationStatus: complete
 [Quote from: knightmb on July 30, 2010, 08:04:19 PM](https://bitcointalk.org/index.php?topic=626.msg6713#msg6713)つまり最後のコマンドは単に
 **sudo apt-get install libboost1.37-dev**
 にすればいい
-ただし、それはboost 1.40以降（Ubuntu 10.04）では動作しません。その場合はlibboost-all-devを入手する必要があります。
+ただし、それはboost 1.40以降（Ubuntu 10.04）では動作しない。その場合はlibboost-all-devを入手する必要がある。
 
-最近Boostの仕様がいろいろ変わったようで、「-mt」などの問題もあり、大変です。
+最近Boostの仕様がいろいろ変わったようで、「-mt」などの問題もあり、大変だ。
 
-ちなみに、Boost 1.34を試しましたが、boost.interprocessがありませんでした。
+ちなみに、Boost 1.34を試したが、boost.interprocessがなかった。
 
-Mac OSX版が利用可能になりました。bitcoin.orgまたはSourceForgeのリンクをご覧ください。
+Mac OSX版が利用可能になった。bitcoin.orgまたはSourceForgeのリンクを見てくれ。

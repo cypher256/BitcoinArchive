@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.3リリースに向けて0.3.2.5をテストしてください！このビルドは良好で、0.3.3に含まれるものになるはずです。WindowsまたはLinuxをお使いの方は、今すぐアップグレードすることをお勧めします。
+0.3.3リリースに向けて0.3.2.5をテストしてくれ！このビルドは良好で、0.3.3に含まれるものになるはずだ。WindowsまたはLinuxをお使いの方は、今すぐアップグレードすることをお勧めする。
 
 新機能:
 - Gavin AndresenによるJSON-RPCセキュリティのためのHTTP認証
@@ -25,4 +25,4 @@ translationStatus: complete
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip](http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip)
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz)
 
-ありがとうございます！
+ありがとう！

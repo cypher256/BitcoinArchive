@@ -17,8 +17,8 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-sha256.cppを以下で囲みました：
+sha256.cppを以下で囲んだ：
 #ifdef FOURWAYSSE2
 #endif // FOURWAYSSE2
 
-今試してみてください。
+今試してみてくれ。
