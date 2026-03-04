@@ -27,7 +27,7 @@ translationStatus: complete
 
 分かりました。使用している別のサーバーへのバックアップを開始します。設定が完了したらSSH鍵を送りますので、お好きなサーバーにバックアップできるようになります。バックアップファイルのサイズは現在約50MBです。
 
-ちなみに、私のPGP鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
+ちなみに、僕のPGP鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
 
 > Gavin Andresen の書き込み：
 >> Mon, Dec 20, 2010 at 10:55 AM に <mmalmi@cc.hut.fi> が書きました：

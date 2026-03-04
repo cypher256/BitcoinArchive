@@ -41,8 +41,8 @@ translationStatus: complete
 > インストールするapt-getコマンドを覚えていますか？また、GUIがインストール
 > されていない環境でもインストールできますか？
 
-おそらくapt-get install libgtk2.0-0だったと思います。利用可能なパッケージはこのように検索できます：「apt-cache search libgtk」。
+おそらくapt-get install libgtk2.0-0だったと思います。利用可能なパッケージはこのように検索できますよ：「apt-cache search libgtk」。
 
-bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に保てるようにします。
+bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に保てるようにしますね。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

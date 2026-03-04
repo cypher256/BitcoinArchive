@@ -37,7 +37,7 @@ translationStatus: complete
 > 使ったPythonのコードを送ってもらえますか？後で自分でテストするとき、
 > 一から調べなくて済むので。
 
-python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）をSVNからダウンロードして、Pythonインタプリタで直接テストしました。こんな感じです：
+python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）をSVNからダウンロードして、Pythonインタプリタで直接テストしました。こんな感じですよ：
 
 pythons = ServiceProxy("http://localhost:8332")
 s.getblockcount()

@@ -26,10 +26,10 @@ secondarySources:
 
 こんにちは、Satoshi。
 
-以下のWikiページを読んだところです：
+以下のWikiページを読んだところだ：
 
 http://en.wikipedia.org/wiki/Chargeback
 
-そこには「米国のデビットカード保有者は、Electronic Funds Transfer Actに基づくFederal Reserve Regulation Eにより、取消権が保証されている。同様の権利が、対応するカード協会または銀行ネットワークが定めた規則に従い、世界的に適用される」と書かれています。
+そこには「米国のデビットカード保有者は、Electronic Funds Transfer Actに基づくFederal Reserve Regulation Eにより、取消権が保証されている。同様の権利が、対応するカード協会または銀行ネットワークが定めた規則に従い、世界的に適用される」と書かれている。
 
-「Electronic Funds Transfer Act」というのはかなり包括的な名称に聞こえますが、これがBitCoinに適用されると思いますか？もしそうなら、チャージバックができないことが違法となるリスクはありますか？
+「Electronic Funds Transfer Act」というのはかなり包括的な名称に聞こえるが、これがBitCoinに適用されると思うだろうか？もしそうなら、チャージバックができないことが違法となるリスクはあるだろうか？

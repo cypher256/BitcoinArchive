@@ -28,6 +28,6 @@ translationStatus: complete
 > VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 > ノートパソコンを持っていませんか？
 
-はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！本当に使いやすいです。
+はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

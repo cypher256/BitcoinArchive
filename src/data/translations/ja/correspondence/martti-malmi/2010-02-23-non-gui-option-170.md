@@ -41,6 +41,6 @@ translationStatus: complete
 > -daemon（または-d）（RPCを有効にしてバックグラウンドで実行）
 > -server（RPCを有効にする）
 
-良さそうですね。それに関する標準は知りません。
+良さそうですね。それに関する標準は知らないです。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

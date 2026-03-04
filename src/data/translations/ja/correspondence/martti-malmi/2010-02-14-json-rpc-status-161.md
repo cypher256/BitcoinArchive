@@ -30,6 +30,6 @@ translationStatus: complete
 >
 > Linux版をGTKなしで動作させるのは別の作業になります。
 
-はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだしていません。GTKライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しません。wxWidgetsフォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかもしれません。
+はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだしていないです。GTKライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgetsフォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかもしれないです。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

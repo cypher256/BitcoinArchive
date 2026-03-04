@@ -25,4 +25,4 @@ translationStatus: complete
 
 改めてありがとうございます。
 
-Hal Finneyは、あなたが新しいmerkleルートをTx0のscriptSigに格納するつもりだと推測していました。少なくとも彼は正しいアイデアを持っていたことが分かりました :-)
+Hal Finneyは、あなたが新しいmerkleルートをTx0のscriptSigに格納するつもりだと推測していた。少なくとも彼は正しいアイデアを持っていたことが分かった :-)

@@ -25,7 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-それは素晴らしい！Liberty ReserveとそのAPIについて勉強し始めます。
+それは素晴らしいですね！Liberty ReserveとそのAPIについて勉強し始めます。
 
 > JSON-RPCの実装は順調に進んでいます。ソケットにはboost::asioを使って
 > います。JSON-RPCは素のソケットでもHTTPでも使えますが、他の実装のほとんど

@@ -32,9 +32,9 @@ translationStatus: complete
 
 フォーラムを6つのボードに分割しました。Bitcoin Discussion、Development & Technical Discussion、Technical support、Economics、Marketplace、Trading Discussionです。大丈夫でしょうか？
 
-bitcoin.orgサイトに「Trade」ページも追加し、BTCを受け入れるサービスを掲載しています。すでにBTCを受け入れる便利なサービスがあるのは嬉しいことです。
+bitcoin.orgサイトに「Trade」ページも追加し、BTCを受け入れるサービスを掲載しています。すでにBTCを受け入れる便利なサービスがあるのは嬉しいですね。
 
-コミュニティは順調に成長しています。最近は#bitcoin-devに10〜20人くらいが集まり、活発な議論が行われています。
+コミュニティは順調に成長していますよ。最近は#bitcoin-devに10〜20人くらいが集まり、活発な議論が行われています。
 
 デーモン化可能なバイナリをSF.netに公開できるといいですね。コミュニティには優秀なプログラマーがいるので、もしお時間がなければ、JSON API関数の完成を手伝えるかもしれません。
 

@@ -25,11 +25,11 @@ translationStatus: complete
 ---
 
 > 使えるメモリはどのくらいですか？
-VPSには320MBのRAMがあり、そのうち50MBが現在空いています。500MBのスワップ領域もあります。
+VPSには320MBのRAMがあり、そのうち50MBが現在空いています。500MBのスワップ領域もありますよ。
 
 > Bitcoinはそれなりにメモリを必要とします。
 > Windowsでは約75MBです。問題になりますか？
 
-本当ですか？こちらのWindowsタスクマネージャーではメモリ使用量は約13MBと表示されていますが。
+本当ですか？こちらのWindowsタスクマネージャーではメモリ使用量は約13MBと表示されていますけど。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -24,7 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-了解、切り替えはしません。Bitcoinでの寄付は助かりますので、14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U に送ってください。
+了解です、切り替えはしません。Bitcoinでの寄付は助かりますので、14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U に送ってください。
 
 > 今は切り替えをしないと約束してください。今抱えているSlashdotからの殺到する作業に加えて、切り替えの手間まで増えるのは最も避けたいことです。やるべきことが多すぎて頭がおかしくなりそうです。
 >

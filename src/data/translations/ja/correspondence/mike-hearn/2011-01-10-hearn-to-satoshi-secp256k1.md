@@ -25,10 +25,10 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
-ああ、なるほど、それは納得がいきます。
+ああ、なるほど、それは納得がいく。
 
-ところで、もしまだ見ていなければ、フォーラムでsecp256k1のセキュリティに関する議論があります：
+ところで、もしまだ見ていなければ、フォーラムでsecp256k1のセキュリティに関する議論がある：
 
 http://www.bitcoin.org/smf/index.php?topic=2699.0
 
-Hal（Hal Finneyだと思いますが）は、この曲線はランダムな曲線よりも攻撃のリスクが高いと考えているようです。パフォーマンスの改善のためにsecp256k1を選んだのですか？
+Hal（Hal Finneyだと思うが）は、この曲線はランダムな曲線よりも攻撃のリスクが高いと考えているようだ。パフォーマンスの改善のためにsecp256k1を選んだのか？
