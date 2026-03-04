@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Bitcoin バージョン0.2が登場しました！
+Bitcoin バージョン0.2が登場した！
 
 ダウンロードリンク：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download)
@@ -36,4 +36,4 @@ Satoshi Nakamoto
  - TOR使用のためのプロキシサポート
  - 初回ブロックダウンロードの一部の速度低下を修正
 
-Martti Malmi（sirius-m）のすべてのコーディング作業、新しいサイトとこのフォーラムのホスティングに、そしてLinux版のテストを手伝ってくれたNew Liberty Standardに大いに感謝します。
+Martti Malmi（sirius-m）のすべてのコーディング作業、新しいサイトとこのフォーラムのホスティングに、そしてLinux版のテストを手伝ってくれたNew Liberty Standardに大いに感謝する。

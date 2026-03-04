@@ -19,10 +19,10 @@ translationStatus: complete
 
 新しいBitcoinフォーラムへようこそ！
 
-旧フォーラムはこちらからアクセスできます：
+旧フォーラムはこちらからアクセスできる：
 [http://bitcoin.sourceforge.net/boards/index.php](http://bitcoin.sourceforge.net/boards/index.php)
 
-選りすぐりのスレッドをこちらに再投稿し、できる限り質問への回答を更新していきます。
+選りすぐりのスレッドをこちらに再投稿し、できる限り質問への回答を更新していく。
 
 FAQ
 [http://bitcoin.sourceforge.net/wiki/index.php?page=FAQ](http://bitcoin.sourceforge.net/wiki/index.php?page=FAQ)

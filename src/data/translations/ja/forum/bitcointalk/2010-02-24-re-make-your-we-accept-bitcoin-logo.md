@@ -17,4 +17,4 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-GPLのものを使うと、使用を避けなければなりません。GPL自体に反対しているわけではありませんが、BitcoinはMITライセンスのプロジェクトです。GPLのものは、明確にその旨を表示してください。
+GPLのものを使うと、使用を避けなければならない。GPL自体に反対しているわけではないが、BitcoinはMITライセンスのプロジェクトだ。GPLのものは、明確にその旨を表示してほしい。
