@@ -5,6 +5,7 @@
 export const tagTranslations: Record<string, string> = {
   // Core concepts
   'adoption': '普及',
+  'adam-back': 'アダム・バック',
   'announcement': '告知',
   'anonymity': '匿名性',
   'arms-race': '軍拡競争',
@@ -12,6 +13,7 @@ export const tagTranslations: Record<string, string> = {
   'banking': '銀行',
   'bankruptcy': '破産',
   'biography': '伝記',
+  'bit-gold': 'ビットゴールド',
   'blockchain': 'ブロックチェーン',
   'blockchain-analysis': 'ブロックチェーン分析',
   'block-propagation': 'ブロック伝播',
@@ -34,6 +36,7 @@ export const tagTranslations: Record<string, string> = {
   'code-contributions': 'コード貢献',
   'code-review': 'コードレビュー',
   'coin-maturity': 'コイン成熟',
+  'coding-style': 'コーディングスタイル',
   'commerce': '商取引',
   'commodity': 'コモディティ',
   'comparison': '比較',
@@ -147,6 +150,7 @@ export const tagTranslations: Record<string, string> = {
   'investment': '投資',
 
   // K-L
+  'jeff-garzik': 'ジェフ・ガージック',
   'keys': '鍵',
   'last-post': '最後の投稿',
   'lawsuit': '訴訟',
@@ -175,6 +179,8 @@ export const tagTranslations: Record<string, string> = {
   'network-effect': 'ネットワーク効果',
   'network-growth': 'ネットワーク成長',
   'networking': 'ネットワーキング',
+  'NIST': 'NIST',
+  'nick-szabo': 'ニック・サボ',
   'nodes': 'ノード',
   'nonce-analysis': 'ノンス分析',
   'notability': '著名性',
@@ -195,6 +201,7 @@ export const tagTranslations: Record<string, string> = {
   'positioning': 'ポジショニング',
   'practicality': '実用性',
   'pre-announcement': '事前発表',
+  'pre-bitcoin': 'ビットコイン以前',
   'pre-release': 'プレリリース',
   'precursor': '先駆',
   'presentation': 'プレゼンテーション',
@@ -208,6 +215,7 @@ export const tagTranslations: Record<string, string> = {
   'published-correspondence': '公開書簡',
 
   // R
+  'quantum-computing': '量子コンピューティング',
   'regret': '後悔',
   'regulation': '規制',
   'regulatory': '規制',
@@ -219,6 +227,7 @@ export const tagTranslations: Record<string, string> = {
 
   // S
   'safety': '安全性',
+  'satoshi-identity': 'サトシの正体',
   'satoshi-fortune': 'サトシの資産',
   'satoshi-holdings': 'サトシの保有量',
   'satoshi-unit': 'サトシ単位',
@@ -234,6 +243,7 @@ export const tagTranslations: Record<string, string> = {
   'source-code': 'ソースコード',
   'spam': 'スパム',
   'spam-prevention': 'スパム防止',
+  'SLH-DSA': 'SLH-DSA',
   'succession': '後継',
   'supply': '供給量',
   'synchronization': '同期',

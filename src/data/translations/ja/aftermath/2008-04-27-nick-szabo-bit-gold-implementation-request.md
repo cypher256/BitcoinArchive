@@ -2,7 +2,7 @@
 title: "「誰かコードを書いてくれないか？」 — ニック・サボ、bit goldの実装を求める"
 date: 2008-04-27T00:00:00Z
 source: aftermath
-sourceUrl: "https://web.archive.org/web/2008*/unenumerated.blogspot.com"
+sourceUrl: "https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html"
 author: "Nick Szabo"
 participants:
   - name: "Nick Szabo"
