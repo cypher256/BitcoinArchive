@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
   - name: "Token Dispatch — Adam Back: The Man Who Built Bitcoin's Heart"
     url: "https://www.thetokendispatch.com/p/adam-back-the-man-who-built-bitcoins"
+  - name: "CoinShares — Interview: Adam Back, CEO of Blockstream"
+    url: "https://coinshares.com/insights/the-node/interview-adam-back/"
 ---
 
 Adam Back — inventor of Hashcash (1997), the proof-of-work system cited in the Bitcoin whitepaper — has reflected on his earliest interaction with Satoshi Nakamoto:
@@ -43,6 +45,12 @@ Satoshi replied: "Thanks, I wasn't aware of the b-money page, but my ideas start
 "I initially failed to read the Bitcoin whitepaper carefully. That was probably my biggest mistake."
 
 Back opened the attached whitepaper, gave it a cursory glance, typed back a brief response suggesting Wei Dai's b-money, and closed his laptop. He didn't begin actively using or promoting Bitcoin until around 2013.
+
+**On his early doubts about Bitcoin (CoinShares interview):**
+
+"I had questions about its sustainability: it was in 2009, there was no exchange, no value. Earlier systems had failed due to centralisation or unverifiable issuance, but Bitcoin's decentralised model promised a better path."
+
+"From those experiences, it became clear that decentralisation was essential to succeed where others failed."
 
 **COPA trial testimony (February 21, 2024):**
 

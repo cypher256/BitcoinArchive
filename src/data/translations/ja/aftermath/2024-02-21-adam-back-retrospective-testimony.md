@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
   - name: "Token Dispatch — Adam Back: The Man Who Built Bitcoin's Heart"
     url: "https://www.thetokendispatch.com/p/adam-back-the-man-who-built-bitcoins"
+  - name: "CoinShares — Interview: Adam Back, CEO of Blockstream"
+    url: "https://coinshares.com/insights/the-node/interview-adam-back/"
 translationStatus: complete
 ---
 
@@ -44,6 +46,12 @@ Adam Back — Hashcash（1997年）の発明者であり、ビットコインホ
 「ビットコインホワイトペーパーを最初に注意深く読まなかった。それがおそらく最大のミスだ」
 
 Backは添付されたホワイトペーパーを開き、ざっと目を通し、Wei Daiのb-moneyを提案する簡潔な返信を打って、ラップトップを閉じた。ビットコインを積極的に使い始めたのは2013年頃からだった。
+
+**ビットコインへの初期の疑念（CoinSharesインタビュー）：**
+
+「持続可能性に疑問があった。2009年当時、取引所もなく、価値もなかった。以前のシステムは中央集権化や検証不可能な発行で失敗していたが、ビットコインの分散モデルはより良い道を約束していた」
+
+「それらの経験から、他が失敗したところで成功するには分散化が不可欠だと明確になった」
 
 **COPA裁判での証言（2024年2月21日）：**
 
