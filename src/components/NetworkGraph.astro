@@ -69,7 +69,7 @@ const t = useTranslations(lang);
     var zoom = d3.zoom()
       .scaleExtent([0.3, 5])
       .on('zoom', function(event) { g.attr('transform', event.transform); });
-    var initialScale = 1.4;
+    var initialScale = 1.8;
     var tx = width / 2 * (1 - initialScale);
     var ty = height / 2 * (1 - initialScale);
     svg.call(zoom).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(initialScale));

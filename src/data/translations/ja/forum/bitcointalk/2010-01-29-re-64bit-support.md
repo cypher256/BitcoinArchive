@@ -17,18 +17,18 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-64ビットコンパイルの修正と、wxWidgets 2.9.0をサポートするためのいくつかの修正をSVNにコミットしました。
+64ビットコンパイルの修正と、wxWidgets 2.9.0をサポートするためのいくつかの修正をSVNにコミットした。
 
-64ビット用にserialize.hのmin(sizeof())にコンパイルエラーが1つあり、それを修正しました。残りの64ビットコンパイルエラーはwxWidgets 2.8.9で発生していたため、wxWidgets 2.9.0のサポートに取り組み始めました。
+64ビット用にserialize.hのmin(sizeof())にコンパイルエラーが1つあり、それを修正した。残りの64ビットコンパイルエラーはwxWidgets 2.8.9で発生していたため、wxWidgets 2.9.0のサポートに取り組み始めた。
 
-wxWidgets 2.9.0はUTF-8です。wxWidgetsのUTF-8サポートを見越して、wxWidgets 2.8.9のANSIバージョンを使用してきました。
+wxWidgets 2.9.0はUTF-8だ。wxWidgetsのUTF-8サポートを見越して、wxWidgets 2.8.9のANSIバージョンを使用してきた。
 
-64ビットのUbuntu 9.10 Karmicでコンパイルして実行しました。
+64ビットのUbuntu 9.10 Karmicでコンパイルして実行した。
 
-残っているバグはステータスの数値が崩れる問題だけだと思います。原因はわかりませんが、UTF-8関連の可能性がありますが、どうしてそうなるかは見当もつきません。まだ調べていません。
+残っているバグはステータスの数値が崩れる問題だけだと思う。原因はわからないが、UTF-8関連の可能性があるが、どうしてそうなるかは見当もつかない。まだ調べていない。
 
 build-unix.txtが更新され、SVNに2つのmakefileがあります：
 makefile.unix.wx2.8
 makefile.unix.wx2.9
 
-残念ながら、私たちが使用するどちらのバージョンのwxWidgetsにもまだDebianパッケージがありません。wchar（「unicode」）版のwxWidgets 2.8しかなく、wcharのwxStringはstd::stringに変換できないため問題です。私たちはANSIのwxWidgets 2.8、またはwxWidgets 2.9のいずれかを使用しています。なので、まだ自分で取得してビルドする必要があります。
+残念ながら、私たちが使用するどちらのバージョンのwxWidgetsにもまだDebianパッケージがない。wchar（「unicode」）版のwxWidgets 2.8しかなく、wcharのwxStringはstd::stringに変換できないため問題だ。私たちはANSIのwxWidgets 2.8、またはwxWidgets 2.9のいずれかを使用している。なので、まだ自分で取得してビルドする必要がある。

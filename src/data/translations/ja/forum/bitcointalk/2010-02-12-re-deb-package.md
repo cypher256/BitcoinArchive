@@ -17,11 +17,11 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-プログラムを実行しようとしているだけですか、それとも本当にコンパイルする必要がありますか？「sudo apt-get ia32-libs」をすれば、64ビットUbuntuで実行できる32ビットLinuxバイナリがあります。
+プログラムを実行しようとしているだけか、それとも本当にコンパイルする必要があるのか？「sudo apt-get ia32-libs」をすれば、64ビットUbuntuで実行できる32ビットLinuxバイナリがある。
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-linux.tar.gz/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-linux.tar.gz/download)
 
-最近、wxWidgets 2.9.0を使って64ビットKarmicでのビルド用にSVNを更新しました。これは0.2.0リリースの後です。0.2.0リリースはまだ64ビットでビルドできませんでした。
+最近、wxWidgets 2.9.0を使って64ビットKarmicでのビルド用にSVNを更新した。これは0.2.0リリースの後だ。0.2.0リリースはまだ64ビットでビルドできなかった。
 
-残念ながら、使用できるwxWidgetsのバージョンの-dev debパッケージが現在存在しません。Karmicにはutf-16版しかありません。ANSI（libwxgtk2.8-ansi-dev）版またはUTF-8（wxWidgets 2.9.0）版が必要です。2.9.0に移行中です。
+残念ながら、使用できるwxWidgetsのバージョンの-dev debパッケージが現在存在しない。Karmicにはutf-16版しかない。ANSI（libwxgtk2.8-ansi-dev）版またはUTF-8（wxWidgets 2.9.0）版が必要だ。2.9.0に移行中だ。
 
-VMは嫌だとおっしゃっていたのは承知していますが、最終手段として、最後に確認したところWindowsバージョンはWineで正常に動作します。
+VMは嫌だと言っていたのは承知しているが、最終手段として、最後に確認したところWindowsバージョンはWineで正常に動作する。

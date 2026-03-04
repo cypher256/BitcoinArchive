@@ -15,4 +15,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-ありがとうございます。Windowsのどのバージョンですか？
+ありがとう。Windowsのどのバージョンだろうか？
