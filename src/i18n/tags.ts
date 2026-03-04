@@ -5,7 +5,7 @@
 export const tagTranslations: Record<string, string> = {
   // Core concepts
   'adoption': '普及',
-  'adam-back': 'アダム・バック',
+  'adam-back': 'Adam Back',
   'announcement': '告知',
   'anonymity': '匿名性',
   'arms-race': '軍拡競争',
@@ -150,7 +150,7 @@ export const tagTranslations: Record<string, string> = {
   'investment': '投資',
 
   // K-L
-  'jeff-garzik': 'ジェフ・ガージック',
+  'jeff-garzik': 'Jeff Garzik',
   'keys': '鍵',
   'last-post': '最後の投稿',
   'lawsuit': '訴訟',
@@ -180,7 +180,7 @@ export const tagTranslations: Record<string, string> = {
   'network-growth': 'ネットワーク成長',
   'networking': 'ネットワーキング',
   'NIST': 'NIST',
-  'nick-szabo': 'ニック・サボ',
+  'nick-szabo': 'Nick Szabo',
   'nodes': 'ノード',
   'nonce-analysis': 'ノンス分析',
   'notability': '著名性',
