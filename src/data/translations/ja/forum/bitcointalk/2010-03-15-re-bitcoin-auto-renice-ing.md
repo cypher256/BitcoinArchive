@@ -17,13 +17,13 @@ threadPosition: 1
 translationStatus: complete
 ---
 
-各スレッドに異なる優先度を設定しています。生成スレッドはPRIO_MINで実行されます。他のスレッドはCPUをほとんど使用せず、通常の優先度で実行されます。
+各スレッドに異なる優先度を設定している。生成スレッドはPRIO_MINで実行される。他のスレッドはCPUをほとんど使用せず、通常の優先度で実行される。
 
 #define THREAD_PRIORITY_LOWEST          PRIO_MIN
 #define THREAD_PRIORITY_BELOW_NORMAL    2
 #define THREAD_PRIORITY_NORMAL          0
 
-Windowsの優先度から変換された優先度は、おそらく以下のようなテーブルに基づいています：
+Windowsの優先度から変換された優先度は、おそらく以下のようなテーブルに基づいている：
 
    「以下のテーブルはnice値とWin32優先度の対応を示しています。Win32の優先度に関する詳細はSetThreadPriority()のWin32ドキュメントを参照してください。
 
@@ -34,9 +34,9 @@ nice値        Win32優先度
 +5 to +14    THREAD_PRIORITY_BELOW_NORMAL
 +15 to +19    THREAD_PRIORITY_LOWEST」
 
-より良い値があれば、提案を歓迎します。
+より良い値があれば、提案を歓迎する。
 
-また、Linuxではスレッドがプロセスであるためにプロセスに使用されるPRIO_PROCESSについてのウェブ上のアドバイスがありました。それが正しくない場合、アプリ全体の優先度を予期せず設定してしまっている原因かもしれません。
+また、Linuxではスレッドがプロセスであるためにプロセスに使用されるPRIO_PROCESSについてのウェブ上のアドバイスがあった。それが正しくない場合、アプリ全体の優先度を予期せず設定してしまっている原因かもしれない。
 
     // Linuxではスレッドはプロセスなので、PRIO_PROCESSは1つのスレッドだけに影響する
     setpriority(PRIO_PROCESS, getpid(), nPriority);
