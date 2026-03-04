@@ -20,4 +20,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-この注目を他のどんな文脈で得られたら良かったのに。WikiLeaksが蜂の巣をつついてしまい、大群がこちらに向かっています。
+この注目を他のどんな文脈で得られたら良かったのに。WikiLeaksが蜂の巣をつついてしまい、大群がこちらに向かっている。

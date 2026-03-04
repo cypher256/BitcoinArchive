@@ -38,10 +38,10 @@ mmalmi@cc.hut.fi wrote:
 > あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかも
 > しれません。
 
-おそらく折れてそうすることになるでしょう。initとshutdownをinit.cppかstart.cppなどに移動し、wxbaseだけをリンクしてui.oとuibase.oはリンクしないようにできます。
+おそらく折れてそうすることになるだろう。initとshutdownをinit.cppかstart.cppなどに移動し、wxbaseだけをリンクしてui.oとuibase.oはリンクしないようにできる。
 
-wxWidgetsはWindowsの人が多いので、GTKについてはあまり詳しくないでしょう。
+wxWidgetsはWindowsの人が多いので、GTKについてはあまり詳しくないだろう。
 
-VPSをいじらなくても済むように、テストやコンパイルができるUbuntuのノートパソコンを持っていませんか？
+VPSをいじらなくても済むように、テストやコンパイルができるUbuntuのノートパソコンを持っていないか？
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -32,7 +32,7 @@ mmalmi@cc.hut.fi の書き込み：
 >
 > 分かりました、彼に聞いてみます。
 
-ありがとう。bitcoinexchangeの別サーバーへの移行は完了しましたか？
+ありがとう。bitcoinexchangeの別サーバーへの移行は完了したか？
 
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----

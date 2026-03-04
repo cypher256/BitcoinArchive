@@ -39,7 +39,7 @@ Wineでは、Windows版がSO_REUSEADDRを実行する方法がないので、ポ
 異なるデータディレクトリを使用するためのコマンドラインは：<br>
 bitcoin -datadir=<directory>
 
-例えば、Linuxでのデフォルトディレクトリは（~は使わないでください）：
+例えば、Linuxでのデフォルトディレクトリは（~は使わないでくれ）：
 bitcoin -datadir=/home/yourusername/.bitcoin
 
 通常このスイッチを使う必要はないはずだ。それでも2つのインスタンスを同時に実行することはできない。

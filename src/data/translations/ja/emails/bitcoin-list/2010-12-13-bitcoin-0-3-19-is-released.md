@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-これはDoS保護を追加するためのマイナーリリースです。
+これはDoS保護を追加するためのマイナーリリースだ。
 
 変更点：
 - いくつかのDoS制限を追加（ただしDoS耐性にはまだ程遠い状態）。

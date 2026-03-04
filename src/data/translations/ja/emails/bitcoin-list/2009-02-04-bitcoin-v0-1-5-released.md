@@ -17,9 +17,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン0.1.5が公開されました。Nicholasが経験した問題の修正、ディスク容量チェック、および混乱を招いていた点を改善するための変更が含まれています。
+バージョン0.1.5が公開された。Nicholasが経験した問題の修正、ディスク容量チェック、および混乱を招いていた点を改善するための変更が含まれている。
 
-NicholasとDustinの多大なご協力とフィードバックに特別に感謝します！
+NicholasとDustinの多大な協力とフィードバックに特別に感謝する！
 
 ダウンロードリンク：<br>
 http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441

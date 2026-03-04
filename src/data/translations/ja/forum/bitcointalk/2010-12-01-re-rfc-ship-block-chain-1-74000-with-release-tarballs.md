@@ -32,4 +32,4 @@ translationStatus: complete
                          DB_INIT_LOG   |
 ```
 
-そうすれば、ウォレット書き込み後のフラッシュにはCDB::Close()のdbenv.txn_checkpoint(0, 0, 0)に依存することになります。
+そうすれば、ウォレット書き込み後のフラッシュにはCDB::Close()のdbenv.txn_checkpoint(0, 0, 0)に依存することになる。

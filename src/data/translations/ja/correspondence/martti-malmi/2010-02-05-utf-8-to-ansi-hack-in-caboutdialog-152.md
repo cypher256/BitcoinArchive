@@ -24,7 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-了解です。再び壊れないように以下のように変更します:
+了解した。再び壊れないように以下のように変更する:
 ```cpp
      if (str.Find('\xC2') != wxNOT_FOUND)
          str.Remove(str.Find('\xC2'), 1);

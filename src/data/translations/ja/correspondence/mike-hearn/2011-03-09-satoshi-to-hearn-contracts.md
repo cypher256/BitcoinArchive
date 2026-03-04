@@ -65,7 +65,7 @@ translationStatus: complete
 
 攻撃対象領域を減らすためだけだ。トランザクション手数料の引き上げには役立たない。トランザクションはnLockTimeから有効になる。ある時点で有効でなくなるトランザクションは機能しない。一度有効になったトランザクションは、永久に有効でなければならない。
 
-以下のスレッドを参照してください：<br>
+以下のスレッドを参照してほしい：<br>
 http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119<br>
 http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
 

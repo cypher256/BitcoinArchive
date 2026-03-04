@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.18の新しいアカウントベースのコマンドを使用した疑似コードのサンプルです。
+0.3.18の新しいアカウントベースのコマンドを使用した疑似コードのサンプルだ。
 
 ```
 print "send to " + getaccountaddress(username) + " to fund your account"
@@ -30,4 +30,4 @@ if (move(username, "", amount, 6, "purchased item"))
 // 出金
 sendfrom(username, bitcoinaddress, amount, 6, "withdrawal by user")
 
-listtransactions(username)を使って、最近のトランザクションの一覧を表示できます。
+listtransactions(username)を使って、最近のトランザクションの一覧を表示できる。

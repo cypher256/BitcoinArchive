@@ -24,7 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-この変更の理由は何でしたか？
+この変更の理由は何だったのか？
 
 ```cpp
 #if !wxUSE_UNICODE
@@ -38,6 +38,6 @@ translationStatus: complete
          str.Remove(str.Find('ï¿½'), 1);
 ```
 
-wxFormBuilderは(c)記号を自動的にUTF-8に変換します。wxWidgets-2.8.9のANSI版では、著作権記号に余分なゴミ文字が付いて表示されます。このハックは非Unicode（ANSI）の場合にそれを修正するものです。
+wxFormBuilderは(c)記号を自動的にUTF-8に変換する。wxWidgets-2.8.9のANSI版では、著作権記号に余分なゴミ文字が付いて表示される。このハックは非Unicode（ANSI）の場合にそれを修正するものだ。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

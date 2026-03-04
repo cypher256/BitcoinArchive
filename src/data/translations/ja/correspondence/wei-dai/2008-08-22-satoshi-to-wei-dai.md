@@ -24,9 +24,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-あなたのb-moneyページを非常に興味深く読みました。あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしています。Adam Back（hashcash.org）が類似点に気づき、あなたのサイトを教えてくれました。
+あなたのb-moneyページを非常に興味深く読んだ。あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしている。Adam Back（hashcash.org）が類似点に気づき、あなたのサイトを教えてくれた。
 
-論文の引用のために、あなたのb-moneyページの公開年を知る必要があります。このようになります：
+論文の引用のために、あなたのb-moneyページの公開年を知る必要がある。このようになる：
 
 [1] W. Dai, "b-money," http://www.weidai.com/bmoney.txt, 1998.
 

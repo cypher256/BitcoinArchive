@@ -22,7 +22,7 @@ translationStatus: complete
 ---
 
 [Quote from: RHorning on December 04, 2010, 10:17:44 PM](https://bitcointalk.org/index.php?topic=1735.msg26876#msg26876)基本的に、かかってこい。WikileaksがBitcoinを使うよう促進しよう。その行為から生じるリスクや影響を受ける覚悟はできている。
-いいえ、「歓迎」しないでください。
+いいえ、「歓迎」しないでくれ。
 
 プロジェクトはソフトウェアを途中で強化できるよう、徐々に成長する必要がある。
 

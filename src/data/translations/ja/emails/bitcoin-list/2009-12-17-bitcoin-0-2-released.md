@@ -15,7 +15,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Bitcoin 0.2が登場しました！
+Bitcoin 0.2が登場した！
 
 ダウンロード（Windows版、そして新たにLinux版も利用可能）<br>
 http://sourceforge.net/projects/bitcoin/files/
@@ -24,7 +24,7 @@ http://sourceforge.net/projects/bitcoin/files/
 
 Martti Malmi
   - システムトレイに最小化するオプション
-  - 起動時の自動開始オプション（バックグラウンドで自動的に実行し続けられます）
+  - 起動時の自動開始オプション（バックグラウンドで自動的に実行し続けられる）
   - 将来の拡張に向けた新しいオプションダイアログのレイアウト
   - Windows用セットアッププログラム
   - Linux版（Ubuntuでテスト済み）
@@ -33,8 +33,8 @@ Satoshi Nakamoto
   - TOR使用のためのプロキシサポート
   - 初回ブロックダウンロード時の一部の速度低下を修正
 
-新しいフォーラムも http://www.bitcoin.org/smf/ に開設しました。
+新しいフォーラムも http://www.bitcoin.org/smf/ に開設した。
 
-Martti（sirius-m）の開発作業全般と、Linux版のテストを手伝ってくれたNew Liberty Standardに大変感謝します。
+Martti（sirius-m）の開発作業全般と、Linux版のテストを手伝ってくれたNew Liberty Standardに大変感謝する。
 
 Satoshi Nakamoto
