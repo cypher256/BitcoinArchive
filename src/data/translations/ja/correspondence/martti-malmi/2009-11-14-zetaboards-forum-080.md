@@ -25,7 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-InvisionFreeが移行中の新サイトであるZetaboardsにフォーラムを作成しました。
+InvisionFreeが移行中の新サイトであるZetaboardsにフォーラムを作成した。
 
 http://s1.zetaboards.com/Bitcoin/index/
 
