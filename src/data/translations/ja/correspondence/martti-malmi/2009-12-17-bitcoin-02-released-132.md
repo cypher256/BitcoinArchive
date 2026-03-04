@@ -34,7 +34,7 @@ http://sourceforge.net/projects/bitcoin/files/
 
 Martti Malmi<br>
   - システムトレイへの最小化オプション<br>
-  - 起動時の自動開始オプション、バックグラウンドで自動的に実行し続けられます<br>
+  - 起動時の自動開始オプション、バックグラウンドで自動的に実行し続けられる<br>
   - 将来の拡張に向けた新しいオプションダイアログレイアウト<br>
   - Windows用セットアッププログラム<br>
   - Linuxバージョン（Ubuntuでテスト済み）<br>
@@ -43,9 +43,9 @@ Satoshi Nakamoto<br>
   - TOR使用のためのプロキシサポート<br>
   - 初期ブロックダウンロードの一部の遅延を修正
 
-http://www.bitcoin.org/smf/ に新しいフォーラムもあります。
+http://www.bitcoin.org/smf/ に新しいフォーラムもある。
 
-すべての開発作業をしてくれたMartti (sirius-m)に、そしてLinuxバージョンのテストを手伝ってくれたNew Liberty Standardに、心より感謝します。
+すべての開発作業をしてくれたMartti (sirius-m)に、そしてLinuxバージョンのテストを手伝ってくれたNew Liberty Standardに、心より感謝する。
 
 Satoshi Nakamoto
 

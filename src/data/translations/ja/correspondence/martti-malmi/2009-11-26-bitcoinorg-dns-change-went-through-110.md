@@ -25,11 +25,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-bitcoin.orgのDNS変更が約12時間前に反映されました。あと12時間待ってから、bitcoin.sourceforge.netのフォーラムタブを http://www.bitcoin.org/smf/ に変更します。
+bitcoin.orgのDNS変更が約12時間前に反映された。あと12時間待ってから、bitcoin.sourceforge.netのフォーラムタブを http://www.bitcoin.org/smf/ に変更する。
 
-今後の参考のために、SMFでベースURLを更新するための変更箇所は以下の通りです：<br>
+今後の参考のために、SMFでベースURLを更新するための変更箇所は以下の通りだ：<br>
    server settings->Forum URL<br>
    themes and layout->attempt to reset all themes<br>
-   smileys and message iconsにパスがあります
+   smileys and message iconsにパスがある
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

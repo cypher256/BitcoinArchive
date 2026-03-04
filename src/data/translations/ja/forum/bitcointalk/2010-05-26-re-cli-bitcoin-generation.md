@@ -19,9 +19,9 @@ translationStatus: complete
 ああ、実際にそういう仕組みだ。getallreceived 0で望むことができるはずだ。（現在はlistreceivedbyaddress 0に名前が変更されている）デフォルトは1確認だが、実際にはほとんどのデジタル商品やサービスは0確認で問題ないと思う。その通り、0確認以上が必要な場合は、未確認と利用可能残高の2つの数字を表示すれば、トランザクションが通ったことをすぐに確認できる。
 
 listreceivedbyaddress [minconf=1] [includeempty=false]<br>
-[minconf]は支払いが含まれる前の最小確認数です。<br>
-[includeempty]はまだ支払いを受けていないアドレスを含めるかどうかです。<br>
-以下を含むオブジェクトの配列を返します:<br>
+[minconf]は支払いが含まれる前の最小確認数だ。<br>
+[includeempty]はまだ支払いを受けていないアドレスを含めるかどうかだ。<br>
+以下を含むオブジェクトの配列を返す:<br>
   "address" : 受取アドレス<br>
   "label" : 受取アドレスのラベル<br>
   "amount" : アドレスが受け取った合計金額<br>

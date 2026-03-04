@@ -24,7 +24,7 @@ BitcoinはWei Daiが1998年にCypherpunks [http://en.wikipedia.org/wiki/Cypherpu
 
 できるだけ早く記事を凝縮し、宣伝っぽく聞こえないようにすることが助けになるだろう。それが何であるか、電子マネーの分野でどこに位置づけられるかを人々に知らせるだけで、良いものだと説得しようとはしないでほしい。おそらく、それが何であるかを一般的に識別できるものを求めており、その仕組みについてすべてを説明しようとするものではないだろう。
 
-[http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin](http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin) に投稿する際は、「そうだけど、bitcoinは本当に重要で特別だからルールは適用されるべきではない」と言ったり、ルールが愚かだとか不公平だと主張したりしないでください。それは事態を悪化させるだけだ。ルールがどのように満たされているかに対処するようにしてほしい。
+[http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin](http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin) に投稿する際は、「そうだけど、bitcoinは本当に重要で特別だからルールは適用されるべきではない」と言ったり、ルールが愚かだとか不公平だと主張したりしないでほしい。それは事態を悪化させるだけだ。ルールがどのように満たされているかに対処するようにしてほしい。
 
 Googleで「bitcoin」を検索して、InfoWorldやSlashdotの記事に加えて、他の大きな参照先が見つかるか確認してほしい。Slashdotの記事から知った記者が書いた非常に最近の記事があるかもしれない。
 

@@ -25,7 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-以下がリリースアナウンス文の予定です。まもなくリリース予定です。
+以下がリリースアナウンス文の予定だ。まもなくリリース予定だ。
 
 Bitcoinバージョン0.2が登場！
 
@@ -38,7 +38,7 @@ Linux（Ubuntuでテスト済み）
 
 Martti Malmi<br>
   - システムトレイへの最小化オプション<br>
-  - 起動時の自動開始オプション、バックグラウンドで自動的に実行し続けられます<br>
+  - 起動時の自動開始オプション、バックグラウンドで自動的に実行し続けられる<br>
   - 将来の拡張に向けた新しいオプションダイアログレイアウト<br>
   - Windows用セットアッププログラム<br>
   - Linuxバージョン<br>
@@ -48,9 +48,9 @@ Satoshi Nakamoto<br>
   - 初期ブロックダウンロードの一部の遅延を修正<br>
   - ネットワークを円滑に維持するための各種改良
 
-質問があれば http://www.bitcoin.org/smf/ に新しいフォーラムもあります。
+質問があれば http://www.bitcoin.org/smf/ に新しいフォーラムもある。
 
-コーディング作業と新サイト・フォーラムのホスティングをしてくれたMartti Malmi (sirius-m)に感謝します。また、Linuxバージョンのテストをしてくれた New Liberty Standardにも感謝します。
+コーディング作業と新サイト・フォーラムのホスティングをしてくれたMartti Malmi (sirius-m)に感謝する。また、Linuxバージョンのテストをしてくれた New Liberty Standardにも感謝する。
 
 Satoshi Nakamoto
 

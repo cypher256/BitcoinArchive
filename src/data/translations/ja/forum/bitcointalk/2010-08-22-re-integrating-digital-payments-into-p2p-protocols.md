@@ -17,4 +17,4 @@ translationStatus: complete
 
 やあ、Zooko！
 
-1〜2年前にCryptographyメーリングリストでBitcoinを発表した時に、あなたのブログでBitcoinについて投稿してくれたことに感謝したいと思います。
+1〜2年前にCryptographyメーリングリストでBitcoinを発表した時に、あなたのブログでBitcoinについて投稿してくれたことに感謝したいと思う。

@@ -17,4 +17,4 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-やった！最初の言語ができました。0.3リリースに含めるためにSVNにアップロードしました。
+やった！最初の言語ができた。0.3リリースに含めるためにSVNにアップロードした。

@@ -17,7 +17,7 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-アカウントベースのコマンドの使い方の擬似コードです。ウェブサイト統合がとても簡単になります。
+アカウントベースのコマンドの使い方の擬似コードだ。ウェブサイト統合がとても簡単になる。
 
 ```
 print "send to " + getaccountaddress(username) + " to fund your account"

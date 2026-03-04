@@ -18,6 +18,6 @@ translationStatus: complete
 ---
 
 [Quote from: Odin on October 22, 2010, 09:24:38 PM](https://bitcointalk.org/index.php?topic=1540.msg18105#msg18105)  Fault Module Name:   mingwm10.dll
-これが重要な手がかりです。そこでクラッシュしたということだと思います。他のバージョンを試してみることもできるかもしれません。mingwm10.dllはマルチスレッドアプリのコールバック要件を満たすための単純なプレースホルダーです。
+これが重要な手がかりだ。そこでクラッシュしたということだと思う。他のバージョンを試してみることもできるかもしれない。mingwm10.dllはマルチスレッドアプリのコールバック要件を満たすための単純なプレースホルダーだ。
 
-Windows 64ビットで問題なく動作している方は他にいますか？
+Windows 64ビットで問題なく動作している方は他にいるか？

@@ -25,11 +25,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-ありがとう、うまくいきました。SSHでFile Managerをインストールできました。Drupalにもいくつかテーマをアップロードしました。利用可能なテーマをすべて徹底的に確認したわけではまだありません。
+ありがとう、うまくいった。SSHでFile Managerをインストールできた。Drupalにもいくつかテーマをアップロードした。利用可能なテーマをすべて徹底的に確認したわけではまだない。
 
-CMSを調べてみたところ、DrupalとJoomlaが人気です。一般的な見解としては、Joomlaのほうがテーマの選択肢が豊富で学びやすいですが、Drupalはプログラマーやカスタマイズにとってより直感的かもしれません。JoomlaはCMSとして優れており、Drupalはブログに向いています。DrupalのURLは検索エンジンフレンドリーですが、Joomlaはそうではありません。
+CMSを調べてみたところ、DrupalとJoomlaが人気だ。一般的な見解としては、Joomlaのほうがテーマの選択肢が豊富で学びやすいが、Drupalはプログラマーやカスタマイズにとってより直感的かもしれない。JoomlaはCMSとして優れており、Drupalはブログに向いている。DrupalのURLは検索エンジンフレンドリーだが、Joomlaはそうではない。
 
-どちらもSMFブリッジモジュールが利用可能です。今後の参考のために、Drupal用のものは「SMFforum Integration」という名前です。
+どちらもSMFブリッジモジュールが利用可能だ。今後の参考のために、Drupal用のものは「SMFforum Integration」という名前だ。
 
 mmalmi@cc.hut.fi の書き込み：
 > 今日は設定する時間がありませんが、一時的なアカウント「」をパスワード「」で作成し、/var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。

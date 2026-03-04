@@ -17,9 +17,9 @@ threadPosition: 5
 translationStatus: complete
 ---
 
-良い最適化ですね。次にSVNを更新する際に追加します。
+良い最適化だ。次にSVNを更新する際に追加する。
 
-より一般的には、これも検討できるでしょう：
+より一般的には、これも検討できるだろう：
 
 ```diff
         dbenv.set_lk_max_objects(10000);

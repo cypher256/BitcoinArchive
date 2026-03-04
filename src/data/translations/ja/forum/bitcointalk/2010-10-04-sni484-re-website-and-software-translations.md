@@ -18,9 +18,9 @@ translationStatus: complete
 ---
 
 [Quote from: eurekafag on October 04, 2010, 10:55:56 AM](https://bitcointalk.org/index.php?topic=151.msg15248#msg15248)翻訳を最新の状態に保つための最新の英語版.poファイルはどこにありますか？
-poeditで行えます。リリースからsrcディレクトリを取得するか、SVNでダウンロードしてください。srcディレクトリの3階層下に.poファイルを配置します。poeditで開いてCatalog->Update from sourcesを実行します。
+poeditで行える。リリースからsrcディレクトリを取得するか、SVNでダウンロードしてくれ。srcディレクトリの3階層下に.poファイルを配置する。poeditで開いてCatalog->Update from sourcesを実行する。
 
-例えば、以下のようになります：
+例えば、以下のようになる：
 src
 src\base58.h
 src\bignum.h
@@ -30,8 +30,8 @@ src\util.h
 src\xpm
 src\localeu\LC_MESSAGES\bitcoin.po
 
-bitcoin.poをpoeditで開いて、Catalog->Update from sourcesを実行します。bitcoin.poがある場所から3階層上（..\..\..\）のソースコードを探します。
+bitcoin.poをpoeditで開いて、Catalog->Update from sourcesを実行する。bitcoin.poがある場所から3階層上（..\..\..\）のソースコードを探す。
 
-これにより、すでに作業済みの既存の.poファイルが更新され、新しい文字列が追加されます。近い文字列のマッチを試みることがあるので、確認して誤った推測がないかチェックしてください。
+これにより、すでに作業済みの既存の.poファイルが更新され、新しい文字列が追加される。近い文字列のマッチを試みることがあるので、確認して誤った推測がないかチェックしてくれ。
 
-私がSVNにアップロードした、またはリリースに含まれる.poファイルを使用してください。少なくとも数箇所は常に修正を加えているためです。ロシア語のファイルをこのメッセージに添付しています。
+私がSVNにアップロードした、またはリリースに含まれる.poファイルを使用してくれ。少なくとも数箇所は常に修正を加えているためだ。ロシア語のファイルをこのメッセージに添付している。

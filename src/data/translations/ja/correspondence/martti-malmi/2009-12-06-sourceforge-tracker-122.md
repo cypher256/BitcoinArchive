@@ -24,9 +24,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-bitcoin.sourceforge.netにSourceforgeトラッカーを追加しました。別のものが欲しければ、以下に全リンクの一覧があります。
+bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。別のものが欲しければ、以下に全リンクの一覧がある。
 
-bitcoin.orgには一瞬入れましたが、外しました。SSLモードでロックが壊れて、「partially encrypted」や「contains unauthenticated content」という混合コンテンツ警告が出ます。そもそも、Sourceforgeに全員をトラッキングさせたいですか？ない方がプライバシーに優しいです。
+bitcoin.orgには一瞬入れたが、外した。SSLモードでロックが壊れて、「partially encrypted」や「contains unauthenticated content」という混合コンテンツ警告が出る。そもそも、Sourceforgeに全員をトラッキングさせたいか？ない方がプライバシーに優しい。
 
 
 ---

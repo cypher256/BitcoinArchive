@@ -17,4 +17,4 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-これはバージョン0.3.11としてSVN rev 142に入っています。
+これはバージョン0.3.11としてSVN rev 142に入っている。

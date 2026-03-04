@@ -23,6 +23,6 @@ translationStatus: complete
 [Quote from: sirius-m on June 16, 2010, 08:26:14 AM](https://bitcointalk.org/index.php?topic=55.msg1598#msg1598)はい、クロスドメインのJavaScript呼び出しは禁止されているので、127.0.0.1に存在しないJavaScriptから127.0.0.1を呼び出すことはできません、と言いたかったのです。考えてみると、ブラウザが悪意のあるクロスドメインJavaScriptで他の人のFacebookページを変更できるとしたら、かなり笑えますね。
 JavaScriptが127.0.0.1へのクロスドメインPOSTリクエストを実行することが可能だという報告が入ってきた。他のドメインではなく、特にそのドメインだけだ。素晴らしい...
 
-もしこれが事実であれば、ウェブブラウジングをするシステムで-serverスイッチやbitcoindを使用しないでください。
+もしこれが事実であれば、ウェブブラウジングをするシステムで-serverスイッチやbitcoindを使用しないでほしい。
 
 パスワードフィールドの追加に取りかかる。

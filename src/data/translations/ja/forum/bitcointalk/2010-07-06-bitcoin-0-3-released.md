@@ -26,4 +26,4 @@ P2P暗号通貨Bitcoin、バージョン0.3をリリースする！Bitcoinは暗
 - Mac OS Xバージョン（Laszloに感謝）
 - ドイツ語、オランダ語、イタリア語翻訳（DataWraith、Xunie、Joozeroに感謝）
 
-[http://www.bitcoin.org](http://www.bitcoin.org)から入手するか、フォーラムを読んで詳しく知ってください。
+[http://www.bitcoin.org](http://www.bitcoin.org)から入手するか、フォーラムを読んで詳しく知ってほしい。

@@ -18,10 +18,10 @@ translationStatus: complete
 [Quote from: BitLex on September 07, 2010, 08:10:54 PM](https://bitcointalk.org/index.php?topic=955.msg12189#msg12189)AMD X3 @2.8ghz
 ->標準クライアント
 ~3800khs ~150ワット
--4wayを試しましたか？
+-4wayを試したか？
 
 Quote:24コアのマシンではどれくらいのハッシュが期待できますか？クアッドコアで毎秒4,300ハッシュを生成しているので、24コアのマシンなら毎秒25,000ハッシュでマイニングできると見積もっています。
-AMD Phenom（確か4コア）CPUは-4wayで約11,000khpsを出しており、約100%の速度向上です。24コアなら66,000khpsになるはずです。AMDは最良のSSE2実装を持っているため最善の選択です。（あるいはtcatmがAMDを持っていてそのコードをそれ向けに最適化したからかもしれません）
+AMD Phenom（確か4コア）CPUは-4wayで約11,000khpsを出しており、約100%の速度向上だ。24コアなら66,000khpsになるはずだ。AMDは最良のSSE2実装を持っているため最善の選択だ。（あるいはtcatmがAMDを持っていてそのコードをそれ向けに最適化したからかもしれない）
 
-他にやることが多すぎて-4wayを自動にする時間がありませんでした。今のところまだ手動で行う必要があります。
+他にやることが多すぎて-4wayを自動にする時間がなかった。今のところまだ手動で行う必要がある。
 [http://bitcointalk.org/index.php?topic=820.0](http://bitcointalk.org/index.php?topic=820.0)

@@ -15,6 +15,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-Cdeckerさん、これを設定してくれてありがとうございます。
+Cdeckerさん、これを設定してくれてありがとう。
 
-GUI版もビルドできる可能性はありますか？Ubuntuであれば、wxWidgets 2.9.0を入手すれば、build-unix.txtの手順に正確に従うだけで済むはずです。wxWidgetsを一度ビルドしてそのまま使い続けられる環境ですか？
+GUI版もビルドできる可能性はあるか？Ubuntuであれば、wxWidgets 2.9.0を入手すれば、build-unix.txtの手順に正確に従うだけで済むはずだ。wxWidgetsを一度ビルドしてそのまま使い続けられる環境か？

@@ -17,4 +17,4 @@ threadPosition: 5
 translationStatus: complete
 ---
 
-スイッチ名を-disablesafemodeに変更しました。
+スイッチ名を-disablesafemodeに変更した。

@@ -28,8 +28,8 @@ translationStatus: complete
 >
 > 自分でビルドする必要がありました。フォーラムで報告されているのと同じ問題がありました：/usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11' not found。
 
-その修正方法が分かればいいのですが。あなたのシステムにはどのバージョンのGLIBCXXが入っていますか？
+その修正方法が分かればいいのだが。あなたのシステムにはどのバージョンのGLIBCXXが入っているか？
 
-できるだけ早くBitcoin 0.3.3にアップグレードしてください。
+できるだけ早くBitcoin 0.3.3にアップグレードしてほしい。
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

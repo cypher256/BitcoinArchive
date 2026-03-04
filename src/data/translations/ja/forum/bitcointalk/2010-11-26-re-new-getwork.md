@@ -17,4 +17,4 @@ threadPosition: 4
 translationStatus: complete
 ---
 
-それがまさにその動作です。true/falseを返します。
+それがまさにその動作だ。true/falseを返す。

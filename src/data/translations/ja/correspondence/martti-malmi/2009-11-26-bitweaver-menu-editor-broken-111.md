@@ -24,13 +24,13 @@ secondarySources:
 translationStatus: complete
 ---
 
-Bitweaverのメニューエディタが壊れていて、フォーラムのリンクを変更できません。「create and edit menu items」のページが私の環境では空白で表示されます：
+Bitweaverのメニューエディタが壊れていて、フォーラムのリンクを変更できない。「create and edit menu items」のページが私の環境では空白で表示される：
 
 http://bitcoin.sourceforge.net/nexus/menu_items.php?menu_id=2
 
-試してみてもらえますか。お手上げです。
+試してみてもらえるか。お手上げだ。
 
-フォーラムのリンクは以下に変更する必要があります：<br>
+フォーラムのリンクは以下に変更する必要がある：<br>
 http://www.bitcoin.org/smf/
 
 *出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

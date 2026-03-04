@@ -22,7 +22,7 @@ translationStatus: complete
 [Quote from: satoshi on December 08, 2010, 10:36:45 PM](https://bitcointalk.org/index.php?topic=2151.msg28292#msg28292)2) ブロックチェーンの再編成があった場合、トランザクションが再度承認された時に二重カウントするのは容易です。
 OPのlisttransactions <account> [count=10] [txid]の例は、プログラマーが前回のlisttransactions呼び出しの最後のtxidを渡せば同じトランザクションを二度と見ることはないと非常に簡単に仮定してしまうことを暗示しており、それは事実ではない。既に受け入れたtxidを追跡するための独自の永続マップや辞書を維持しなければ、支払いを二重カウントするのは非常に容易だ。
 
-ある明らかな方法で使うために特注されたように見える関数があり、その方法が目立たない罠であるというのは正しくないように思える。
+ある明らかな方法で使うために特注されたように見える関数があり、その方法が目立たない罠であるというのは正しくないように思う。
 
 [Quote from: jgarzik on December 08, 2010, 11:07:22 PM](https://bitcointalk.org/index.php?topic=2151.msg28301#msg28301)[Quote from: satoshi on December 08, 2010, 10:36:45 PM](https://bitcointalk.org/index.php?topic=2151.msg28292#msg28292)3) トランザクションは異なるtxidの二重支払いに置き換えられる可能性があります。両方の支払いをカウントしてしまうでしょう。
 listtransactionsはこの問題に何も追加しません。listreceivedbyaddressを通じてすでに脆弱なもの以上のものではありません。

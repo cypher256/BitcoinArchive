@@ -22,4 +22,4 @@ translationStatus: complete
 #if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)
 
 少なくともARMで再びコンパイルできるようになりました。
-SVN rev 152に追加しました。
+SVN rev 152に追加した。

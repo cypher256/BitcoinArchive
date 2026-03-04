@@ -17,4 +17,4 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-eurekafagさんありがとうございます。ロシア語翻訳をSVN rev 160に追加しました。
+eurekafagさんありがとう。ロシア語翻訳をSVN rev 160に追加した。
