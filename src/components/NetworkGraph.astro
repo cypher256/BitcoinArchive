@@ -131,7 +131,7 @@ const t = useTranslations(lang);
       .attr('text-anchor', 'middle')
       .attr('dy', function(d) { return -nodeRadius(d.count) - 4; })
       .style('pointer-events', 'none')
-      .style('opacity', function(d) { return d.count > 3 ? 1 : 0; });
+      .style('opacity', function(d) { return d.count > 3 ? 1 : d.count >= 2 ? 0.5 : 0.3; });
 
     // Drag
     var drag = d3.drag()
@@ -193,7 +193,7 @@ const t = useTranslations(lang);
     .on('mouseout', function() {
       node.attr('opacity', 1);
       link.attr('stroke-opacity', 0.6);
-      label.style('opacity', function(d) { return d.count > 3 ? 1 : 0; });
+      label.style('opacity', function(d) { return d.count > 3 ? 1 : d.count >= 2 ? 0.5 : 0.3; });
       tooltip.style('opacity', 0);
     });
 
