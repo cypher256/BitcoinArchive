@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin 0.3.19のリリース告知。DoS保護の追加とセーフモードアラートの削除を含むマイナーリリース。"
+description: "サトシ・ナカモトによるBitcoin 0.3.19のリリース告知。DoS保護の追加とセーフモードアラートの削除を含むマイナーリリース。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

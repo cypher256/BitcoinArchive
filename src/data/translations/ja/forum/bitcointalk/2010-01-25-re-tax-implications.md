@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshiは従来の税制の枠組みをBitcoinに適用することの難しさについて議論し、オンラインでの貴金属やコレクターズアイテムの取引との類似性を指摘している。"
+description: "サトシは従来の税制の枠組みをBitcoinに適用することの難しさについて議論し、オンラインでの貴金属やコレクターズアイテムの取引との類似性を指摘している。"
 isSatoshi: true
 tags:
   - "tax"

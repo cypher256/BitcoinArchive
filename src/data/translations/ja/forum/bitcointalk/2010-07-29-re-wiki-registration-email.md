@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがフォーラムの通知メールについて疑問を呈し、無効化を検討。"
+description: "サトシ・ナカモトがフォーラムの通知メールについて疑問を呈し、無効化を検討。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

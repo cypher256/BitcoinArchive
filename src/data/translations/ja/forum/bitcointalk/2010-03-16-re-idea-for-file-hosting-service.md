@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「ファイルホスティングサービスのアイデア」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「ファイルホスティングサービスのアイデア」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 threadId: "bt-idea-for-file-hosting-and-proxy-services"
 threadPosition: 2

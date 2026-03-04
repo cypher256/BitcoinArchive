@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが各ノードの影響力がCPUパワーに比例するシステムから離れた場合の一人一票の判定方法について疑問を呈する。"
+description: "サトシ・ナカモトが各ノードの影響力がCPUパワーに比例するシステムから離れた場合の一人一票の判定方法について疑問を呈する。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

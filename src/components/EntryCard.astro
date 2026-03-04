@@ -1,5 +1,5 @@
 ---
-import { formatDate, localePath, useTranslations } from '../i18n/utils';
+import { formatDate, localePath, translateParticipantName, useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Participant {
@@ -31,8 +31,11 @@ const sourceLabel = t(`source.${source}` as any) || source;
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)
   : localePath(`/entries/${id}/`, lang);
-const otherParticipants = participants.filter((p) => p.name !== author);
 const authorParticipant = participants.find((p) => p.name === author);
+const otherParticipants = authorParticipant
+  ? participants.filter((p) => p.slug !== authorParticipant.slug)
+  : participants.filter((p) => p.name !== author);
+const displayAuthor = translateParticipantName(author, authorParticipant?.slug, lang);
 ---
 
 <article
@@ -56,14 +59,14 @@ const authorParticipant = participants.find((p) => p.name === author);
   </a>
   <p class="card-author">
     {authorParticipant ? (
-      <a href={localePath(`/participants/${authorParticipant.slug}/`, lang)} class:list={["author-link", { satoshi: isSatoshi }]}>{author}</a>
+      <a href={localePath(`/participants/${authorParticipant.slug}/`, lang)} class:list={["author-link", { satoshi: isSatoshi }]}>{displayAuthor}</a>
     ) : (
-      <span class:list={[{ satoshi: isSatoshi }]}>{author}</span>
+      <span class:list={[{ satoshi: isSatoshi }]}>{displayAuthor}</span>
     )}
     {otherParticipants.length > 0 && (
       <span class="participants-with">
         &harr; {otherParticipants.map((p, i) => (
-          <><a href={localePath(`/participants/${p.slug}/`, lang)} class="participant-link">{p.name}</a>{i < otherParticipants.length - 1 && ', '}</>
+          <><a href={localePath(`/participants/${p.slug}/`, lang)} class="participant-link">{translateParticipantName(p.name, p.slug, lang)}</a>{i < otherParticipants.length - 1 && ', '}</>
         ))}
       </span>
     )}

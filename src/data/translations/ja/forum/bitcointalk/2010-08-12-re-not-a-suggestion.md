@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがネットワークが値と系譜を知らない仮想システムにおけるトランザクション検証の課題を説明。"
+description: "サトシ・ナカモトがネットワークが値と系譜を知らない仮想システムにおけるトランザクション検証の課題を説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "SatoshiがJames Donaldのスケーラビリティに関する懸念に返信し、簡易支払い検証によるシステムの機能と、ノードがすべてのトランザクションを知る必要がないことを説明した。"
+description: "サトシがジェームズ ドナルドのスケーラビリティに関する懸念に返信し、簡易支払い検証によるシステムの機能と、ノードがすべてのトランザクションを知る必要がないことを説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 3
 inReplyTo: "emails/cryptography/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"

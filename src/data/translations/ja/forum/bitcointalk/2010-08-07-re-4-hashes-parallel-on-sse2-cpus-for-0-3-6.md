@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがCRITICAL_BLOCKマクロのbreak制限について謝罪し、IntelでSSE2コードが遅い原因の調査を提案。"
+description: "サトシ・ナカモトがCRITICAL_BLOCKマクロのbreak制限について謝罪し、IntelでSSE2コードが遅い原因の調査を提案。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

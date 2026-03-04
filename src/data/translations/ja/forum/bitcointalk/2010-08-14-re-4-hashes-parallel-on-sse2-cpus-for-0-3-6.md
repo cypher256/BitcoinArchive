@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがMinGW on Windowsでのコンパイルエラーを報告。"
+description: "サトシ・ナカモトがMinGW on Windowsでのコンパイルエラーを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

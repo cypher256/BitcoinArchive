@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVN rev 130でBSD検出コードを更新し、コンパイル確認を依頼。"
+description: "サトシ・ナカモトがSVN rev 130でBSD検出コードを更新し、コンパイル確認を依頼。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

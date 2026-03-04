@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがコンピュータの排熱を暖房として利用することで無駄にならない可能性と、寒冷地での生成が本質的に無料になり得ると説明。"
+description: "サトシ・ナカモトがコンピュータの排熱を暖房として利用することで無駄にならない可能性と、寒冷地での生成が本質的に無料になり得ると説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

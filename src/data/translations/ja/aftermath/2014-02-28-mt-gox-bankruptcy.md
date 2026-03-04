@@ -7,7 +7,7 @@ author: "NPR"
 participants:
   - name: "Mark Karpeles"
     slug: "mark-karpeles"
-description: "かつて世界最大のビットコイン取引所で全ビットコイン取引の約70%を処理していたMt. Goxが東京で破産申請を行った。CEO Mark Karpelèsは約85万BTC（約4億5,000万ドル相当）が消失したことを明らかにした。2010年のvalue overflow事件以来、ビットコインが直面した最も深刻な危機だった。"
+description: "かつて世界最大のビットコイン取引所で全ビットコイン取引の約70%を処理していたMt. Goxが東京で破産申請を行った。CEO マーク・カルプレスは約85万BTC（約4億5,000万ドル相当）が消失したことを明らかにした。2010年のvalue overflow事件以来、ビットコインが直面した最も深刻な危機だった。"
 isSatoshi: false
 aftermathType: "media"
 tags:

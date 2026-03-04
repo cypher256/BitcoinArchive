@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがプライバシーを強化した出力ポイントベースのネットワーク設計のアイデアを深く掘り下げて議論。"
+description: "サトシ・ナカモトがプライバシーを強化した出力ポイントベースのネットワーク設計のアイデアを深く掘り下げて議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearnが50コインを返送し、「Generated (not accepted)」エラーとトランザクションにメタデータを添付するアイデアについて質問する。"
+description: "マイク・ハーンが50コインを返送し、「Generated (not accepted)」エラーとトランザクションにメタデータを添付するアイデアについて質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 11

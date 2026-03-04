@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが次の難易度調整を予測するWebページのアイデアと計算式を提案。"
+description: "サトシ・ナカモトが次の難易度調整を予測するWebページのアイデアと計算式を提案。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

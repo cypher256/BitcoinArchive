@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Hal Finneyがビットコインに肯定的に反応し、最初の支持者の一人となった。計算コストについて質問し、潜在的な改善点を提案した。"
+description: "ハル・フィニーがビットコインに肯定的に反応し、最初の支持者の一人となった。計算コストについて質問し、潜在的な改善点を提案した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 9
 isSatoshi: false

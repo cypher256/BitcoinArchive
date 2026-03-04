@@ -1,5 +1,5 @@
 ---
-title: "「ビットコイン、なぜこんなに時間がかかったのか？」（Nick Szabo）"
+title: "「ビットコイン、なぜこんなに時間がかかったのか？」（ニック・サボ）"
 date: 2011-05-28T00:00:00Z
 source: aftermath
 sourceUrl: "https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html"
@@ -13,7 +13,7 @@ participants:
     slug: "wei-dai"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Nick Szaboが、ビットコインの発明にこれほど時間がかかった理由、bit goldとビットコインの類似点と相違点、そして「一般的なアイデアを聞いたほぼ全員が、それは非常に悪いアイデアだと思った」理由を論じる。"
+description: "ニック・サボが、ビットコインの発明にこれほど時間がかかった理由、bit goldとビットコインの類似点と相違点、そして「一般的なアイデアを聞いたほぼ全員が、それは非常に悪いアイデアだと思った」理由を論じる。"
 isSatoshi: false
 aftermathType: "blog"
 tags:

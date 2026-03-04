@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin v0.1リリーススレッドへの返信。電子通貨の将来性と潜在的なユースケースについて。"
+description: "サトシ・ナカモトによるBitcoin v0.1リリーススレッドへの返信。電子通貨の将来性と潜在的なユースケースについて。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

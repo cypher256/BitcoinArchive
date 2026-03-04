@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが1000ノード接続版のビルドの配布を控えるよう要請。"
+description: "サトシ・ナカモトが1000ノード接続版のビルドの配布を控えるよう要請。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

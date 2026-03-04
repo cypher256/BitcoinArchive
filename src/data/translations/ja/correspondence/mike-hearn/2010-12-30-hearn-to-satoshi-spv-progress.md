@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがJava SPV実装の進捗を報告し、Androidでのブロック保存アプローチを説明し、実装数の増加に伴うプロトコルの硬直化への懸念を提起する。"
+description: "マイク・ハーンがJava SPV実装の進捗を報告し、Androidでのブロック保存アプローチを説明し、実装数の増加に伴うプロトコルの硬直化への懸念を提起する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
 threadPosition: 3

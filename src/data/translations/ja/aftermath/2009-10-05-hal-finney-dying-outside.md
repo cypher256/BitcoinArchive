@@ -1,5 +1,5 @@
 ---
-title: "「Dying Outside」 — Hal FinneyのALSと希望についてのエッセイ"
+title: "「Dying Outside」 — ハル・フィニーのALSと希望についてのエッセイ"
 date: 2009-10-05T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.lesswrong.com/posts/bshZiaLefDejvPKuS/dying-outside"
@@ -7,7 +7,7 @@ author: "Hal Finney"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "2009年8月のALS診断から約2ヶ月後にLessWrongに投稿されたHal Finneyのエッセイ。末期の病に直面しながらも、動けない体からでもオープンソースに貢献するという希望と決意を表明した。"
+description: "2009年8月のALS診断から約2ヶ月後にLessWrongに投稿されたハル・フィニーのエッセイ。末期の病に直面しながらも、動けない体からでもオープンソースに貢献するという希望と決意を表明した。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

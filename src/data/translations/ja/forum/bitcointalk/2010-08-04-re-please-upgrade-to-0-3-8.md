@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSourceForgeのミラー更新の遅延について報告。"
+description: "サトシ・ナカモトがSourceForgeのミラー更新の遅延について報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

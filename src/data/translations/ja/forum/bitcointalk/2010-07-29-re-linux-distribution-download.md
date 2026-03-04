@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが9.04または9.10に留まるべきだったと認め、Ubuntuを使い続ける方針を表明。"
+description: "サトシ・ナカモトが9.04または9.10に留まるべきだったと認め、Ubuntuを使い続ける方針を表明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

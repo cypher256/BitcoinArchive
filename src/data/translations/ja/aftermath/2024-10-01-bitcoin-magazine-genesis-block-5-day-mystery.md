@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Pete Rizzo"
     slug: "pete-rizzo"
-description: "Pete Rizzoが、ジェネシスブロック（2009年1月3日）とブロック1（2009年1月9日）の間の説明のつかない約5日8時間の空白を調査し、ビットコインの永続的な未解決の謎の一つとして位置づけた。"
+description: "ピート・リゾが、ジェネシスブロック（2009年1月3日）とブロック1（2009年1月9日）の間の説明のつかない約5日8時間の空白を調査し、ビットコインの永続的な未解決の謎の一つとして位置づけた。"
 isSatoshi: false
 aftermathType: "article"
 tags:

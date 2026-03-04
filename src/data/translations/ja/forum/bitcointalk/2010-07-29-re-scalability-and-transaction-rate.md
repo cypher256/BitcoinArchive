@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが大規模運用時にはすべてのユーザーがノードである必要はないと説明し、支払い処理業者による高速な取引検証の可能性を示唆。"
+description: "サトシ・ナカモトが大規模運用時にはすべてのユーザーがノードである必要はないと説明し、支払い処理業者による高速な取引検証の可能性を示唆。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが0.3.6のLinuxビルドが古いmakefile.unixに戻ったことを説明し、DbRunRecoveryExceptionの対処法を提供。"
+description: "サトシ・ナカモトが0.3.6のLinuxビルドが古いmakefile.unixに戻ったことを説明し、DbRunRecoveryExceptionの対処法を提供。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

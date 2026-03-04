@@ -1,5 +1,5 @@
 ---
-title: "Satoshi Nakamoto（生没年不明） — ビットコインの匿名の創造者"
+title: "サトシ・ナカモト（生没年不明） — ビットコインの匿名の創造者"
 date: 2008-10-31T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto：ビットコインホワイトペーパー（2008年10月31日）を執筆し、ビットコインソフトウェアを作成、ジェネシスブロック（2009年1月3日）を採掘し、2011年4月に姿を消すまでプロジェクトの初期開発を主導した匿名の個人またはグループ。その正体は不明のままである。"
+description: "サトシ・ナカモト：ビットコインホワイトペーパー（2008年10月31日）を執筆し、ビットコインソフトウェアを作成、ジェネシスブロック（2009年1月3日）を採掘し、2011年4月に姿を消すまでプロジェクトの初期開発を主導した匿名の個人またはグループ。その正体は不明のままである。"
 isSatoshi: true
 aftermathType: "biography"
 tags:

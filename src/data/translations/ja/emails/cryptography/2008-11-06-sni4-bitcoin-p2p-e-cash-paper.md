@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "ビットコインが金融の自由のための「軍拡競争における大きな戦い」であるとSatoshiが主張し、GnutellaやTorのような分散型P2Pネットワークが政府による閉鎖に対して堅牢であることを述べた。"
+description: "ビットコインが金融の自由のための「軍拡競争における大きな戦い」であるとサトシが主張し、GnutellaやTorのような分散型P2Pネットワークが政府による閉鎖に対して堅牢であることを述べた。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 8
 isSatoshi: true

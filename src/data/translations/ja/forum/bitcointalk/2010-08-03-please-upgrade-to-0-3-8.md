@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが重要なセキュリティ改善を含むバージョン0.3.8へのアップグレードを呼びかけ、問題検出時の警告メッセージ機能を説明。"
+description: "サトシ・ナカモトが重要なセキュリティ改善を含むバージョン0.3.8へのアップグレードを呼びかけ、問題検出時の警告メッセージ機能を説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

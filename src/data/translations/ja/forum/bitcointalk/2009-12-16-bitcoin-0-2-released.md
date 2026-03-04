@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「Bitcoin 0.2 リリース！」。"
+description: "サトシ・ナカモトの投稿：「Bitcoin 0.2 リリース！」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

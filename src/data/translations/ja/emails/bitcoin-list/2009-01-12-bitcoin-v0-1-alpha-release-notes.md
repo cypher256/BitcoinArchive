@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin v0.1 Alphaのリリースノート。システムの概要、コインの獲得方法、送金方法、総発行量について説明。"
+description: "サトシ・ナカモトによるBitcoin v0.1 Alphaのリリースノート。システムの概要、コインの獲得方法、送金方法、総発行量について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

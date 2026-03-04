@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「Proof-of-work難易度の上昇」。"
+description: "サトシ・ナカモトの投稿：「Proof-of-work難易度の上昇」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

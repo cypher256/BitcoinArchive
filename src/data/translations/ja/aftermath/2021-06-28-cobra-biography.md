@@ -9,7 +9,7 @@ participants:
     slug: "cobra"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Cobra（Cøbraとも表記）：2008年にサトシ・ナカモトが登録したbitcoin.orgの匿名運営者・守護者。身元を明かすくらいなら著作権訴訟に負ける方を選び、後にCraig Wrightがサトシではないと裁定されたことで名誉を回復した。"
+description: "Cobra（Cøbraとも表記）：2008年にサトシ・ナカモトが登録したbitcoin.orgの匿名運営者・守護者。身元を明かすくらいなら著作権訴訟に負ける方を選び、後にクレイグ・ライトがサトシではないと裁定されたことで名誉を回復した。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

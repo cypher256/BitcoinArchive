@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがUPnPによるポートフォワーディングを提案し、バージョン通知について質問し、EV SSL証明書を使用したウェブブラウザ向けマイクロペイメントシステムを提案する。"
+description: "マイク・ハーンがUPnPによるポートフォワーディングを提案し、バージョン通知について質問し、EV SSL証明書を使用したウェブブラウザ向けマイクロペイメントシステムを提案する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 13

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBitcoinマイニングのコストを金の採掘と比較し、交換手段としての有用性がコストを上回ると主張。Proof-of-workの必要性も解説。"
+description: "サトシ・ナカモトがBitcoinマイニングのコストを金の採掘と比較し、交換手段としての有用性がコストを上回ると主張。Proof-of-workの必要性も解説。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

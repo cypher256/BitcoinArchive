@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがアムステルダムのEPCAカンファレンスからの招待に応じ、Bitcoinの代表としてGavin AndresenやBruce Wagnerを推薦。"
+description: "マルミがアムステルダムのEPCAカンファレンスからの招待に応じ、Bitcoinの代表としてギャビン・アンドリーセンやブルース・ワグナーを推薦。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadPosition: 258

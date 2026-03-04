@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがソフトウェアがエスクローのような機能をサポートするよう設計されていることを明かし、詳細を投稿する計画に言及。"
+description: "サトシ・ナカモトがソフトウェアがエスクローのような機能をサポートするよう設計されていることを明かし、詳細を投稿する計画に言及。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

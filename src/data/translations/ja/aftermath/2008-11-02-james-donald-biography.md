@@ -1,5 +1,5 @@
 ---
-title: "James A. Donald（生没年不明） — ビットコインホワイトペーパーに最初に返信した暗号学者"
+title: "ジェームズ・A・ドナルド（生没年不明） — ビットコインホワイトペーパーに最初に返信した暗号学者"
 date: 2008-11-02T23:46:23Z
 source: aftermath
 sourceUrl: "https://en.bitcoin.it/wiki/James_A._Donald"
@@ -7,7 +7,7 @@ author: "James A. Donald"
 participants:
   - name: "James A. Donald"
     slug: "james-donald"
-description: "James A. Donald：2008年11月2日、暗号学メーリングリストでサトシ・ナカモトのビットコインホワイトペーパーに最初に公に返信した暗号学者・リバタリアン評論家。スケーラビリティに関する技術的懐疑論により、サトシに主要な設計決定を明確に説明させた。"
+description: "ジェームズ・A・ドナルド：2008年11月2日、暗号学メーリングリストでサトシ・ナカモトのビットコインホワイトペーパーに最初に公に返信した暗号学者・リバタリアン評論家。スケーラビリティに関する技術的懐疑論により、サトシに主要な設計決定を明確に説明させた。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

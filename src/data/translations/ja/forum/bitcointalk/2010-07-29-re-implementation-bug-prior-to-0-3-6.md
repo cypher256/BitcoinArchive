@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがセキュリティ上の脆弱性を発見した場合はPMで連絡してほしいと依頼。"
+description: "サトシ・ナカモトがセキュリティ上の脆弱性を発見した場合はPMで連絡してほしいと依頼。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

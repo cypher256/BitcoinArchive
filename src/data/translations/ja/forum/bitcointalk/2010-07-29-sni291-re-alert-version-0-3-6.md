@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVNをバージョン0.3.6に更新し、WindowsビルドをSourceforgeにアップロード中であることを報告。"
+description: "サトシ・ナカモトがSVNをバージョン0.3.6に更新し、WindowsビルドをSourceforgeにアップロード中であることを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

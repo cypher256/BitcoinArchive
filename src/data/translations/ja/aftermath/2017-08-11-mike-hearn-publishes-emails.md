@@ -1,5 +1,5 @@
 ---
-title: "Mike Hearnがサトシとのメールのやり取りを公開"
+title: "マイク・ハーンがサトシとのメールのやり取りを公開"
 date: 2017-08-11T00:00:00Z
 source: aftermath
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
@@ -9,7 +9,7 @@ participants:
     slug: "mike-hearn"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Mike Hearnがサトシ・ナカモトとの私的なメールのやり取りを公開し、サトシのビットコインの技術的な将来についての考えに関する貴重な洞察を提供した。"
+description: "マイク・ハーンがサトシ・ナカモトとの私的なメールのやり取りを公開し、サトシのビットコインの技術的な将来についての考えに関する貴重な洞察を提供した。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

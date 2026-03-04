@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Eugen Leitl"
     slug: "eugen-leitl"
-description: "Liberty StandardによるWine上でのBitcoinクラッシュ報告に対するサトシの返信。Wine互換性の問題と判断。Eugen Leitlも同スレッドでDebianパッケージについて質問。"
+description: "Liberty StandardによるWine上でのBitcoinクラッシュ報告に対するサトシの返信。Wine互換性の問題と判断。オイゲン・ライトルも同スレッドでDebianパッケージについて質問。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

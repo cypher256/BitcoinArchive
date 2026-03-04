@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがGLIBC_2.11の問題とUbuntuのアップグレードに関する方針について説明。"
+description: "サトシ・ナカモトがGLIBC_2.11の問題とUbuntuのアップグレードに関する方針について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

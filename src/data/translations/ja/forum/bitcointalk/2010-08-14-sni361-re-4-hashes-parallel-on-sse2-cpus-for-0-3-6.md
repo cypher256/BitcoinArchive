@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが各MinGW GCCバージョンでのテスト結果を詳細に報告し、__m128iのアラインメント問題を特定。"
+description: "サトシ・ナカモトが各MinGW GCCバージョンでのテスト結果を詳細に報告し、__m128iのアラインメント問題を特定。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

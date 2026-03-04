@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Bitcoinクライアントとウェブサイトの翻訳」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「Bitcoinクライアントとウェブサイトの翻訳」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin 0.3のリリース告知。P2P暗号通貨としてのBitcoinの説明と、コマンドライン制御、Mac OS X版などの新機能。"
+description: "サトシ・ナカモトによるBitcoin 0.3のリリース告知。P2P暗号通貨としてのBitcoinの説明と、コマンドライン制御、Mac OS X版などの新機能。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

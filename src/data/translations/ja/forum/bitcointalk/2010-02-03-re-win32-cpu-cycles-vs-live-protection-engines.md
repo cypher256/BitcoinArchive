@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Win32 CPUサイクル対『ライブプロテクション』エンジン？」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「Win32 CPUサイクル対『ライブプロテクション』エンジン？」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

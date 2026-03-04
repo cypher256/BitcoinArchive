@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「静的IPを投稿してください」。"
+description: "サトシ・ナカモトの投稿：「静的IPを投稿してください」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

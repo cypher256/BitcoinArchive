@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVN rev 125での接続制限の改善と-maxconnectionsスイッチの追加を発表。"
+description: "サトシ・ナカモトがSVN rev 125での接続制限の改善と-maxconnectionsスイッチの追加を発表。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

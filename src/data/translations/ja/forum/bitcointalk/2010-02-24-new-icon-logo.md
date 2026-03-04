@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「新しいアイコン/ロゴ」。"
+description: "サトシ・ナカモトの投稿：「新しいアイコン/ロゴ」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

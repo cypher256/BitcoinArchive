@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが128ビットレジスタを使用した4つの32ビットデータのSIMD並列処理のアイデアに感銘を受け、加算の桁上がり問題について言及。"
+description: "サトシ・ナカモトが128ビットレジスタを使用した4つの32ビットデータのSIMD並列処理のアイデアに感銘を受け、加算の桁上がり問題について言及。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

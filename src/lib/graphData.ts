@@ -1,3 +1,6 @@
+import type { Lang } from '../i18n/ui';
+import { getJapaneseParticipantDisplayName } from '../i18n/participants';
+
 export interface GraphNode {
   id: string;
   name: string;
@@ -16,7 +19,10 @@ export interface GraphData {
   edges: GraphEdge[];
 }
 
-export function computeGraphData(entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean } }[]): GraphData {
+export function computeGraphData(
+  entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean } }[],
+  lang: Lang = 'en',
+): GraphData {
   const nodeCounts = new Map<string, { name: string; count: number; isSatoshi: boolean }>();
   const edgeCounts = new Map<string, number>();
 
@@ -29,7 +35,7 @@ export function computeGraphData(entries: { data: { participants: { name: string
         existing.count++;
       } else {
         nodeCounts.set(p.slug, {
-          name: p.name,
+          name: lang === 'ja' ? getJapaneseParticipantDisplayName(p.name, p.slug) : p.name,
           count: 1,
           isSatoshi: p.name === 'Satoshi Nakamoto',
         });

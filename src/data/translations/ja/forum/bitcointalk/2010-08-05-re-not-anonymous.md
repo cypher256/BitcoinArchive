@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBitcoinは匿名ではなく偽名であると説明し、プライバシー維持のための注意事項を述べた。"
+description: "サトシ・ナカモトがBitcoinは匿名ではなく偽名であると説明し、プライバシー維持のための注意事項を述べた。"
 isSatoshi: true
 tags:
   - "privacy"

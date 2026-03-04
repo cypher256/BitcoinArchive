@@ -1,4 +1,5 @@
 import { defaultLang, ui, type Lang } from './ui';
+import { getJapaneseParticipantDisplayName, participantDisplayNamesJaBySlug } from './participants';
 import { tagTranslations } from './tags';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
@@ -66,9 +67,16 @@ export async function getBiographyForParticipant(
   );
 }
 
+export function translateParticipantName(name: string, slug: string | undefined, lang: Lang): string {
+  if (lang === 'ja') {
+    return getJapaneseParticipantDisplayName(name, slug);
+  }
+  return name;
+}
+
 export function translateTag(tag: string, lang: Lang): string {
   if (lang === 'ja') {
-    return tagTranslations[tag] ?? tag;
+    return participantDisplayNamesJaBySlug[tag] ?? tagTranslations[tag] ?? tag;
   }
   return tag;
 }

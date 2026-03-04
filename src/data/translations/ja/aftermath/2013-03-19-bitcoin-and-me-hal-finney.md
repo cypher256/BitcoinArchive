@@ -1,5 +1,5 @@
 ---
-title: "ビットコインと私（Hal Finney）"
+title: "ビットコインと私（ハル・フィニー）"
 date: 2013-03-19T20:40:02Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=155054.msg1643833#msg1643833"
@@ -9,7 +9,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Hal Finneyによるビットコインとの初期の関わり、サトシとの交流、そしてALSとの闘いについての有名な回顧録。ビットコイン史上最も称賛された投稿の一つ。"
+description: "ハル・フィニーによるビットコインとの初期の関わり、サトシとの交流、そしてALSとの闘いについての有名な回顧録。ビットコイン史上最も称賛された投稿の一つ。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

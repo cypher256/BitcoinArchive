@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshiが、トランザクションが「from: unknown」と表示される理由と、「Generated (not accepted)」が2つのノードが同時にブロックを発見した際に発生することを説明する。"
+description: "サトシが、トランザクションが「from: unknown」と表示される理由と、「Generated (not accepted)」が2つのノードが同時にブロックを発見した際に発生することを説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 12

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがオーバーフローバグに対する予備的な修正コードを共有し、負の値とオーバーフロー値のチェックを追加。"
+description: "サトシ・ナカモトがオーバーフローバグに対する予備的な修正コードを共有し、負の値とオーバーフロー値のチェックを追加。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

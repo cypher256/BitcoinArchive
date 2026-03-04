@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "MarttiがEPCAカンファレンスの招待に返信し、担当者の手配を約束"
+description: "マルッティがEPCAカンファレンスの招待に返信し、担当者の手配を約束"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadPosition: 259

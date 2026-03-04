@@ -1,5 +1,5 @@
 ---
-title: "Laszlo Hanyecz（生没年不明） — ビットコイン初の商取引を行い、GPUマイニングを開拓したプログラマー"
+title: "ラズロ・ハニェツ（生没年不明） — ビットコイン初の商取引を行い、GPUマイニングを開拓したプログラマー"
 date: 2010-05-22T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Laszlo_Hanyecz"
@@ -7,7 +7,7 @@ author: "Laszlo Hanyecz"
 participants:
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "Laszlo Hanyecz：フロリダ州Jacksonville在住のソフトウェア開発者。ビットコインのmacOS移植、GPUマイニングの開拓を行い、2010年5月22日に10,000 BTCでピザ2枚を購入する初の既知の実商取引を行った。この日は毎年「ビットコイン・ピザ・デー」として祝われている。"
+description: "ラズロ・ハニェツ：フロリダ州Jacksonville在住のソフトウェア開発者。ビットコインのmacOS移植、GPUマイニングの開拓を行い、2010年5月22日に10,000 BTCでピザ2枚を購入する初の既知の実商取引を行った。この日は毎年「ビットコイン・ピザ・デー」として祝われている。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがAMDとIntelでの速度差について質問し、スタック上のアライメント問題について説明。"
+description: "サトシ・ナカモトがAMDとIntelでの速度差について質問し、スタック上のアライメント問題について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

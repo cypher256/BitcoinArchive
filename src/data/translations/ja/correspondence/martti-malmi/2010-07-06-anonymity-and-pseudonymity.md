@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshiがビットコインの匿名性の主張を控えめにするようMalmiに警告し、匿名性と仮名性を区別した——プライバシーへの期待に関する先見性のある警告。"
+description: "サトシがビットコインの匿名性の主張を控えめにするようマルミに警告し、匿名性と仮名性を区別した——プライバシーへの期待に関する先見性のある警告。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 197

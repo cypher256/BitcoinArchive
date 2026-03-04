@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "ノードが新しいブロックとトランザクションのハッシュリストを交換するインベントリベースのブロードキャストメカニズムをSatoshiが説明し、1年半の開発を経てソースコードが間もなくリリースされると述べた。"
+description: "ノードが新しいブロックとトランザクションのハッシュリストを交換するインベントリベースのブロードキャストメカニズムをサトシが説明し、1年半の開発を経てソースコードが間もなくリリースされると述べた。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 30
 isSatoshi: true

@@ -1,5 +1,5 @@
 ---
-title: "Hal Finney（1956–2014） — サイファーパンク、PGP開発者、ビットコイン最初の受信者"
+title: "ハル・フィニー（1956–2014） — サイファーパンク、PGP開発者、ビットコイン最初の受信者"
 date: 2014-08-28T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
@@ -7,7 +7,7 @@ author: "The Santa Barbara Independent"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Harold Thomas Finney II（1956年5月4日 – 2014年8月28日）：Caltechエンジニアリング卒、PGP 2.0の主要開発者の一人、Extropian、クライオニクス支持者、Reusable Proof-of-Work（RPOW）の考案者、サトシ以外でビットコインを初めて稼働させた人物、そして最初のビットコイン送金の受信者。2009年8月にALSと診断された後も車椅子からビットコインへの貢献を続けた。Alcorによりpatient A-1436として冷凍保存。"
+description: "ハロルド・トーマス・フィニー2世（1956年5月4日 – 2014年8月28日）：Caltechエンジニアリング卒、PGP 2.0の主要開発者の一人、Extropian、クライオニクス支持者、Reusable Proof-of-Work（RPOW）の考案者、サトシ以外でビットコインを初めて稼働させた人物、そして最初のビットコイン送金の受信者。2009年8月にALSと診断された後も車椅子からビットコインへの貢献を続けた。Alcorによりpatient A-1436として冷凍保存。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが「鍵のブラインド化」と「グループ署名」の概念を用いたプライバシー強化の可能性を探求。"
+description: "サトシ・ナカモトが「鍵のブラインド化」と「グループ署名」の概念を用いたプライバシー強化の可能性を探求。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -1,5 +1,5 @@
 ---
-title: "Adam Backのサトシとの初期交流に関する回顧"
+title: "アダム・バックのサトシとの初期交流に関する回顧"
 date: 2024-02-22T00:00:00Z
 source: aftermath
 sourceUrl: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Adam Backが2008年8月のサトシ・ナカモトとのメール交換、ビットコインホワイトペーパーを注意深く読まなかったことへの後悔、完全なメールチェーンが公開されたCOPA対Wright裁判での証言を振り返る。"
+description: "アダム・バックが2008年8月のサトシ・ナカモトとのメール交換、ビットコインホワイトペーパーを注意深く読まなかったことへの後悔、完全なメールチェーンが公開されたCOPA対ライト裁判での証言を振り返る。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearnがブロック数表示のより明確な文言を提案し、採掘したビットコインの使い道としてマーケットプレイスの計画について質問する。"
+description: "マイク・ハーンがブロック数表示のより明確な文言を提案し、採掘したビットコインの使い道としてマーケットプレイスの計画について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 7

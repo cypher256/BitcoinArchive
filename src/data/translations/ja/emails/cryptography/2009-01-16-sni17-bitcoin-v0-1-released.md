@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin D. Trammell"
     slug: "dustin-trammell"
-description: "10年以内に何らかの形の電子通貨が使用されるようになるとSatoshiが確信を表明し、ビットコインを信頼に基づかないシステムの最初の試みとして説明した。"
+description: "10年以内に何らかの形の電子通貨が使用されるようになるとサトシが確信を表明し、ビットコインを信頼に基づかないシステムの最初の試みとして説明した。"
 threadId: "bitcoin-v0-1-released"
 threadPosition: 3
 isSatoshi: true

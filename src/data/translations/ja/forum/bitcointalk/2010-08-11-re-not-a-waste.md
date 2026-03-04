@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBitcoinのProof-of-workは無駄ではないと説明し、金の採掘との比較を行い、エネルギー消費が従来の銀行よりもはるかに少ないと主張。"
+description: "サトシ・ナカモトがBitcoinのProof-of-workは無駄ではないと説明し、金の採掘との比較を行い、エネルギー消費が従来の銀行よりもはるかに少ないと主張。"
 isSatoshi: true
 tags:
   - "proof-of-work"

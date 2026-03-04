@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがウォレットのバックアップ方法と、トランザクション時のコイン選択の仕組みについて説明。"
+description: "サトシ・ナカモトがウォレットのバックアップ方法と、トランザクション時のコイン選択の仕組みについて説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

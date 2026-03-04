@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが二重支払いの不在を証明する課題について議論し、ゼロ知識証明の適用可能性を検討。"
+description: "サトシ・ナカモトが二重支払いの不在を証明する課題について議論し、ゼロ知識証明の適用可能性を検討。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

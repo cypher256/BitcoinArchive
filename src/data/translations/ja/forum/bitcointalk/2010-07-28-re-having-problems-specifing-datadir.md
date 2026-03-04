@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが-datadirの相対パス指定時のデータベースエラーを再現し、フルパスへの解決が必要と説明。"
+description: "サトシ・ナカモトが-datadirの相対パス指定時のデータベースエラーを再現し、フルパスへの解決が必要と説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

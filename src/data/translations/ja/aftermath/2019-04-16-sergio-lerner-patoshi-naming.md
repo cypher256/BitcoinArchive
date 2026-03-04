@@ -1,5 +1,5 @@
 ---
-title: "Sergio Demian Lernerが「Patoshi」を命名し、推定を~22,000ブロック / ~110万BTCに更新"
+title: "セルジオ・デミアン・ラーナーが「Patoshi」を命名し、推定を~22,000ブロック / ~110万BTCに更新"
 date: 2019-04-16T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "最初の分析から6年後、Lernerは「The Return of the Deniers and the Revenge of Patoshi」を発表。「Patoshi」（Pattern + Satoshi）という用語を定着させ、推定を~22,000ブロック / ~110万BTCに更新。新証拠として、Patoshiブロック間のタイムスタンプ逆転がゼロ（非Patoshiでは224回）であることを示し、単一PCクロックを証明した。"
+description: "最初の分析から6年後、ラーナーは「The Return of the Deniers and the Revenge of Patoshi」を発表。「Patoshi」（Pattern + Satoshi）という用語を定着させ、推定を~22,000ブロック / ~110万BTCに更新。新証拠として、Patoshiブロック間のタイムスタンプ逆転がゼロ（非Patoshiでは224回）であることを示し、単一PCクロックを証明した。"
 isSatoshi: false
 aftermathType: "blog"
 tags:

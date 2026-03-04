@@ -53,7 +53,7 @@ const featuredSorted = [...entries].filter(e => e.data.featured).sort((a, b) => 
 const featuredEntries = collapseThreads(featuredSorted, threadCounts, threadStarters);
 
 // Network graph data
-const graphData = computeGraphData(entries);
+const graphData = computeGraphData(entries, lang);
 
 function tagWeight(count: number, max: number): number {
   return Math.max(1, Math.min(4, Math.ceil(Math.sqrt(count / max) * 4)));

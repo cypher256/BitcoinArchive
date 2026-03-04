@@ -1,5 +1,5 @@
 ---
-title: "マージドマイニングへの感謝とHal Finneyの洞察"
+title: "マージドマイニングへの感謝とハル・フィニーの洞察"
 date: 2011-03-09T19:52:00Z
 source: correspondence
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread4.html"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがSatoshiに感謝し、Hal FinneyがTx0のscriptSigにmerkleルートを格納するアプローチを正しく推測していたことを指摘する。"
+description: "マイク・ハーンがサトシに感謝し、ハル・フィニーがTx0のscriptSigにmerkleルートを格納するアプローチを正しく推測していたことを指摘する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
 threadPosition: 5

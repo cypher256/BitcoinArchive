@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが未成熟なコインの送信が許可された経緯について質問し、トランザクションがまだ通る可能性を示唆。"
+description: "サトシ・ナカモトが未成熟なコインの送信が許可された経緯について質問し、トランザクションがまだ通る可能性を示唆。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

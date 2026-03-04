@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "SatoshiがeBayのようなマーケットプレイス機能の実装について言及し、テスト用にMikeにコインを送ることを申し出る。"
+description: "サトシがeBayのようなマーケットプレイス機能の実装について言及し、テスト用にマイクにコインを送ることを申し出る。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 8

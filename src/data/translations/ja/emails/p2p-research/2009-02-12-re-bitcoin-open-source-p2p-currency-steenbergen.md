@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "P2P Researchメーリングリストにおいて、Martien van Steenbergenの質問に回答し、ビットコインの発行上限2,100万枚とDavid Chaumのシステムとの違いを説明。"
+description: "P2P Researchメーリングリストにおいて、マルティエン・ファン・ステーンベルゲンの質問に回答し、ビットコインの発行上限2,100万枚とDavid Chaumのシステムとの違いを説明。"
 isSatoshi: true
 tags:
   - "supply-limit"

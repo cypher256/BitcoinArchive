@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがトランザクション手数料の手数料に対する手数料の問題を指摘し、実装方法が思いつかないと回答。"
+description: "サトシ・ナカモトがトランザクション手数料の手数料に対する手数料の問題を指摘し、実装方法が思いつかないと回答。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Bitcoinはどの程度分割可能か、その他の市場/経済に関する質問」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「Bitcoinはどの程度分割可能か、その他の市場/経済に関する質問」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

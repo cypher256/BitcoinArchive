@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「再投稿：Linux/UNIXコンパイル」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「再投稿：Linux/UNIXコンパイル」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがIRCブートストラップは0.3.0以降完全に冗長であり、シードノードからのブートストラップが可能であると説明。"
+description: "サトシ・ナカモトがIRCブートストラップは0.3.0以降完全に冗長であり、シードノードからのブートストラップが可能であると説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

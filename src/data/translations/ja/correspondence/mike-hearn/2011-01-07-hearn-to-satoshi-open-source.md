@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがBitcoinJはGoogleのポリシーに従いオープンソースになることを確認し、testnetでのコイン送金に成功したことを報告する。"
+description: "マイク・ハーンがBitcoinJはGoogleのポリシーに従いオープンソースになることを確認し、testnetでのコイン送金に成功したことを報告する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
 threadPosition: 5

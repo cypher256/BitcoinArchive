@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBitcoinのスクリプトシステムの本質を説明し、真または偽に評価される述語として様々なトランザクションタイプを可能にすることを解説。"
+description: "サトシ・ナカモトがBitcoinのスクリプトシステムの本質を説明し、真または偽に評価される述語として様々なトランザクションタイプを可能にすることを解説。"
 isSatoshi: true
 tags:
   - "script"

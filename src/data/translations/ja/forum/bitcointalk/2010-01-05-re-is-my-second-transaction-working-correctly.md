@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「2回目のトランザクションは正しく動作していますか？」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「2回目のトランザクションは正しく動作していますか？」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

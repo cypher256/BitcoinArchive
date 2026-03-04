@@ -1,5 +1,5 @@
 ---
-title: "Gavin Andresenがサトシとの共同作業を回顧"
+title: "ギャビン・アンドリーセンがサトシとの共同作業を回顧"
 date: 2016-05-02T00:00:00Z
 source: aftermath
 sourceUrl: "https://gavinthink.blogspot.com/"
@@ -9,7 +9,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシからビットコインのコミット権限を与えられリード開発者となったGavin Andresenが、サトシとの交流とリーダーシップの移行を回顧する。"
+description: "サトシからビットコインのコミット権限を与えられリード開発者となったギャビン・アンドリーセンが、サトシとの交流とリーダーシップの移行を回顧する。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

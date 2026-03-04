@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin v0.1.2のリリース告知。ノード接続に関するバグ修正を含む。"
+description: "サトシ・ナカモトによるBitcoin v0.1.2のリリース告知。ノード接続に関するバグ修正を含む。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

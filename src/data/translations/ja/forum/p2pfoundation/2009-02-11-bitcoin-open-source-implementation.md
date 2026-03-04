@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがP2P Foundationフォーラムでビットコインを発表。従来の通貨の問題点と、ビットコインが信頼ではなく暗号学的証明によってそれらをどのように解決するかを説明しています。"
+description: "サトシ・ナカモトがP2P Foundationフォーラムでビットコインを発表。従来の通貨の問題点と、ビットコインが信頼ではなく暗号学的証明によってそれらをどのように解決するかを説明しています。"
 isSatoshi: true
 tags:
   - "announcement"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「ファイルホスティングとプロキシサービスのアイデア」。"
+description: "サトシ・ナカモトの投稿：「ファイルホスティングとプロキシサービスのアイデア」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

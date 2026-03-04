@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearnが二重支払い検証の問題を認め、publish/subscribeプロトコル機能について質問し、Satoshiのマージドマイニング提案の明確化を求める。"
+description: "マイク・ハーンが二重支払い検証の問題を認め、publish/subscribeプロトコル機能について質問し、サトシのマージドマイニング提案の明確化を求める。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
 threadPosition: 3

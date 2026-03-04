@@ -1,5 +1,5 @@
 ---
-title: "サトシからGavin Andresenへの最後の既知のメール"
+title: "サトシからギャビン・アンドリーセンへの最後の既知のメール"
 date: 2011-04-26T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "サトシの最後の既知の私的な通信。Gavin Andresenへのメールで「他のことに移った」「ビットコインは安心して任せられる」と述べた。"
+description: "サトシの最後の既知の私的な通信。ギャビン・アンドリーセンへのメールで「他のことに移った」「ビットコインは安心して任せられる」と述べた。"
 isSatoshi: true
 aftermathType: "retrospective"
 tags:

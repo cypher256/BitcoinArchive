@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "サトシ・ナカモトの最も初期に知られるメール。Adam BackにHashcash論文の正しい引用を確認し、ビットコインホワイトペーパーのプレリリース版を共有した。"
+description: "サトシ・ナカモトの最も初期に知られるメール。アダム・バックにHashcash論文の正しい引用を確認し、ビットコインホワイトペーパーのプレリリース版を共有した。"
 isSatoshi: true
 threadId: "satoshi-adam-back"
 threadPosition: 1

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがAPIの後方互換性のために複雑にするのは時期尚早だと主張。"
+description: "サトシ・ナカモトがAPIの後方互換性のために複雑にするのは時期尚早だと主張。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

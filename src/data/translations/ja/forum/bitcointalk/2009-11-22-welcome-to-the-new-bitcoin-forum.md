@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「新しいBitcoinフォーラムへようこそ！」。"
+description: "サトシ・ナカモトの投稿：「新しいBitcoinフォーラムへようこそ！」。"
 isSatoshi: true
 threadId: "bt-welcome-to-bitcoin-forum"
 threadPosition: 1

@@ -1,5 +1,5 @@
 ---
-import { useTranslations, formatDate, localePath, translateTag } from '../i18n/utils';
+import { useTranslations, formatDate, localePath, translateParticipantName, translateTag } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Participant {
@@ -21,12 +21,14 @@ interface Props {
 const { date, author, source, sourceUrl, isSatoshi, lang, participants = [], tags = [] } = Astro.props;
 const t = useTranslations(lang);
 const sourceLabel = t(`source.${source}` as any) || source;
+const authorParticipant = participants.find((p) => p.name === author);
+const displayAuthor = translateParticipantName(author, authorParticipant?.slug, lang);
 ---
 
 <div class="entry-meta">
   <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
   <span class="meta-sep">&middot;</span>
-  <span class:list={['author', { satoshi: isSatoshi }]}>{author}</span>
+  <span class:list={['author', { satoshi: isSatoshi }]}>{displayAuthor}</span>
   <span class="meta-sep">&middot;</span>
   <span class="source-badge">{sourceLabel}</span>
 </div>
@@ -37,7 +39,7 @@ const sourceLabel = t(`source.${source}` as any) || source;
     {participants.map((p, i) => (
       <>
         <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>
-          {p.name}
+          {translateParticipantName(p.name, p.slug, lang)}
         </a>
         {i < participants.length - 1 && <span class="participant-sep">,&nbsp;</span>}
       </>

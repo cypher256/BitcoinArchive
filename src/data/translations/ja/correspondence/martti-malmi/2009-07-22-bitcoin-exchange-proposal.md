@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Malmiがビットコインと法定通貨の交換サービスの設立を提案し、価格算定式と収益メカニズムを詳述した。これは最初期のビットコイン取引所の一つと、歴史的な初のBTC-USD取引につながった。"
+description: "マルミがビットコインと法定通貨の交換サービスの設立を提案し、価格算定式と収益メカニズムを詳述した。これは最初期のビットコイン取引所の一つと、歴史的な初のBTC-USD取引につながった。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadPosition: 25

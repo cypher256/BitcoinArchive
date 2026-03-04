@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがIPアドレスへの送金がbitcoindに実装されていないことを説明。"
+description: "サトシ・ナカモトがIPアドレスへの送金がbitcoindに実装されていないことを説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

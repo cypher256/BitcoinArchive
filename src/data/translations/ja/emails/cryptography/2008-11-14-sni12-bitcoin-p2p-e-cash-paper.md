@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "現在の最良ブランチの保留トランザクションプールのみ維持すればよいことをSatoshiが説明し、ブロック伝播におけるTCPの信頼性について議論し、システムがリバタリアンの原則に合致することに言及した。"
+description: "現在の最良ブランチの保留トランザクションプールのみ維持すればよいことをサトシが説明し、ブロック伝播におけるTCPの信頼性について議論し、システムがリバタリアンの原則に合致することに言及した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 25
 isSatoshi: true

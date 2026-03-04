@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBoostのバージョン互換性の問題について説明し、Mac OSX版のリリースを発表。"
+description: "サトシ・ナカモトがBoostのバージョン互換性の問題について説明し、Mac OSX版のリリースを発表。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

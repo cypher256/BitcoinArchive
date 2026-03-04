@@ -9,7 +9,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Laszlo Hanyeczがビットコイン初のmacOS移植版を提供し、開発、バグ修正、ソフトウェアの技術的改善についてSatoshi Nakamotoとメールのやり取りを始めた。"
+description: "ラズロ・ハニェツがビットコイン初のmacOS移植版を提供し、開発、バグ修正、ソフトウェアの技術的改善についてサトシ・ナカモトとメールのやり取りを始めた。"
 isSatoshi: false
 threadId: "satoshi-laszlo-hanyecz"
 threadPosition: 1

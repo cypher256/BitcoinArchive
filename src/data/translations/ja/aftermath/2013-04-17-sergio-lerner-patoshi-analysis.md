@@ -1,5 +1,5 @@
 ---
-title: "Sergio Demian Lernerが「Patoshi」マイニングパターンを特定 — サトシに~100万BTCが紐付け"
+title: "セルジオ・デミアン・ラーナーが「Patoshi」マイニングパターンを特定 — サトシに~100万BTCが紐付け"
 date: 2013-04-17T00:00:00Z
 source: aftermath
 sourceUrl: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ビットコイン研究者Sergio Demian Lernerが「The Well Deserved Fortune of Satoshi Nakamoto」を発表し、ビットコイン最初期のブロックに特徴的なマイニングパターン（後に「Patoshi」と命名）を特定した。約22,000ブロック（~110万BTC）がサトシ・ナカモトと推定される単一のマイナーに紐付けられた。これらのコインは事実上一度も使用されていない。"
+description: "ビットコイン研究者セルジオ・デミアン・ラーナーが「The Well Deserved Fortune of サトシ・ナカモト」を発表し、ビットコイン最初期のブロックに特徴的なマイニングパターン（後に「Patoshi」と命名）を特定した。約22,000ブロック（~110万BTC）がサトシ・ナカモトと推定される単一のマイナーに紐付けられた。これらのコインは事実上一度も使用されていない。"
 isSatoshi: false
 aftermathType: "blog"
 tags:

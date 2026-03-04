@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshiは、Bitcoinがオープンソースであることの重要性を説明し、ソースコード自体が仕様であり、信頼は透明性から生まれると論じている。"
+description: "サトシは、Bitcoinがオープンソースであることの重要性を説明し、ソースコード自体が仕様であり、信頼は透明性から生まれると論じている。"
 isSatoshi: true
 tags:
   - "open-source"

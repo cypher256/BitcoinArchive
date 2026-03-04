@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshiがビットコインのネットワーク設計とノードの接続方法について議論し、接続管理を説明。"
+description: "サトシがビットコインのネットワーク設計とノードの接続方法について議論し、接続管理を説明。"
 isSatoshi: true
 tags:
   - "networking"

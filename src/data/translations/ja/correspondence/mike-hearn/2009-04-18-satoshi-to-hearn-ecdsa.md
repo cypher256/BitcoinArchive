@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshiがコインを返送し、EC-DSAはRSAのようにメッセージを暗号化できないため、トランザクションコメントが不可能であることを説明する。"
+description: "サトシがコインを返送し、EC-DSAはRSAのようにメッセージを暗号化できないため、トランザクションコメントが不可能であることを説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 10

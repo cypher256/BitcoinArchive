@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVNを更新し、将来的に同様の問題が繰り返される可能性を認める。"
+description: "サトシ・ナカモトがSVNを更新し、将来的に同様の問題が繰り返される可能性を認める。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

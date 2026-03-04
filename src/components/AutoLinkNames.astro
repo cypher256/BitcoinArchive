@@ -1,6 +1,6 @@
 ---
 import type { Lang } from '../i18n/ui';
-import { getEntries, localePath } from '../i18n/utils';
+import { getEntries, localePath, translateParticipantName } from '../i18n/utils';
 
 interface Props {
   lang: Lang;
@@ -14,8 +14,14 @@ const entries = await getEntries(lang);
 const nameMap = new Map<string, string>();
 for (const entry of entries) {
   for (const p of entry.data.participants) {
-    if (p.slug !== excludeSlug && !nameMap.has(p.name)) {
-      nameMap.set(p.name, localePath(`/participants/${p.slug}/`, lang));
+    if (p.slug === excludeSlug) continue;
+    const href = localePath(`/participants/${p.slug}/`, lang);
+    const displayName = translateParticipantName(p.name, p.slug, lang);
+    if (!nameMap.has(p.name)) {
+      nameMap.set(p.name, href);
+    }
+    if (!nameMap.has(displayName)) {
+      nameMap.set(displayName, href);
     }
   }
 }

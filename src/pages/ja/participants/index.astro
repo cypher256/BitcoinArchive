@@ -1,19 +1,24 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { useTranslations, getDisplayEntries, localePath } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, translateParticipantName } from '../../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
 const entries = await getDisplayEntries('en');
 
-const participantCounts = new Map<string, { name: string; slug: string; count: number }>();
+const participantCounts = new Map<string, { name: string; displayName: string; slug: string; count: number }>();
 for (const entry of entries) {
   for (const p of entry.data.participants) {
     const existing = participantCounts.get(p.slug);
     if (existing) {
       existing.count++;
     } else {
-      participantCounts.set(p.slug, { name: p.name, slug: p.slug, count: 1 });
+      participantCounts.set(p.slug, {
+        name: p.name,
+        displayName: translateParticipantName(p.name, p.slug, lang),
+        slug: p.slug,
+        count: 1,
+      });
     }
   }
 }
@@ -37,9 +42,9 @@ const participants = Array.from(participantCounts.values()).sort((a, b) => b.cou
     </div>
     <ul class="participant-list" id="sort-list">
       {participants.map((p) => (
-        <li data-name={p.name} data-count={p.count}>
+        <li data-name={p.displayName} data-count={p.count}>
           <a href={localePath(`/participants/${p.slug}/`, lang)}>
-            {p.name}
+            {p.displayName}
           </a>
           <span class="count">({p.count})</span>
         </li>

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが新しい難易度係数244.21（+35%）を報告し、2009年からの難易度変更履歴を更新。"
+description: "サトシ・ナカモトが新しい難易度係数244.21（+35%）を報告し、2009年からの難易度変更履歴を更新。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが各CPU間の速度差を分析し、古いチップの弱点が原因である可能性を指摘。"
+description: "サトシ・ナカモトが各CPU間の速度差を分析し、古いチップの弱点が原因である可能性を指摘。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

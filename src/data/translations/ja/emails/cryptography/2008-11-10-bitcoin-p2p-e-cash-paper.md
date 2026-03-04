@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "Satoshiがトランザクションの確定性、10分間のブロック間隔目標、ビットコイントランザクションが1〜2時間で十分に不可逆となる仕組みを説明した。"
+description: "サトシがトランザクションの確定性、10分間のブロック間隔目標、ビットコイントランザクションが1〜2時間で十分に不可逆となる仕組みを説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 19
 isSatoshi: true

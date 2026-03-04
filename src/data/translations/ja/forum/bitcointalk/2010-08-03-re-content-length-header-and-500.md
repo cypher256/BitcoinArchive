@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがContent-Lengthパラメータがない場合のサポートについて議論。"
+description: "サトシ・ナカモトがContent-Lengthパラメータがない場合のサポートについて議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -1,5 +1,5 @@
 ---
-title: "Dustin Trammellがビットコインネットワークの2番目のノードであった可能性を証言"
+title: "ダスティン・トランメルがビットコインネットワークの2番目のノードであった可能性を証言"
 date: 2021-10-23T00:00:00Z
 source: aftermath
 sourceUrl: "https://stephanlivera.com/episode/314/"
@@ -9,7 +9,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "セキュリティ研究者のDustin Trammell（「Druid」）が詳細なポッドキャストインタビューで、ビットコインネットワークの2番目のノードであった可能性のある体験を語った。最初の接続時に4〜6時間「1つの他のノード」しか見えなかったこと、マイニングがデフォルトで無効だと気づかなかったこと、マイニングを開始するまで4〜5日かかったことを回想した。"
+description: "セキュリティ研究者のダスティン・トランメル（「Druid」）が詳細なポッドキャストインタビューで、ビットコインネットワークの2番目のノードであった可能性のある体験を語った。最初の接続時に4〜6時間「1つの他のノード」しか見えなかったこと、マイニングがデフォルトで無効だと気づかなかったこと、マイニングを開始するまで4〜5日かかったことを回想した。"
 isSatoshi: false
 aftermathType: "interview"
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Re: GavinのCIAプレゼンテーション計画"
+title: "Re: ギャビンのCIAプレゼンテーション計画"
 date: 2010-12-05T17:53:00Z
 source: bitcointalk
 sourceUrl: "https://bitcointalk.org/index.php?topic=1735.msg21247#msg21247"
@@ -9,7 +9,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Gavin AndresenがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
+description: "ギャビン・アンドリーセンがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
 threadPosition: 1

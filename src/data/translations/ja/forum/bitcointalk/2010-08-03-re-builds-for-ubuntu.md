@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが0.3.7にnoWxパッチが含まれていることを確認。"
+description: "サトシ・ナカモトが0.3.7にnoWxパッチが含まれていることを確認。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

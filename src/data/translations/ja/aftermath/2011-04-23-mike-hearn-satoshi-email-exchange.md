@@ -1,5 +1,5 @@
 ---
-title: "Mike Hearnとサトシ・ナカモトのメール交換"
+title: "マイク・ハーンとサトシ・ナカモトのメール交換"
 date: 2011-04-23T00:00:00Z
 source: aftermath
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
@@ -9,7 +9,7 @@ participants:
     slug: "mike-hearn"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Mike Hearnとサトシ・ナカモトの私的なメールのやり取り。サトシは「他のことに移った」と述べ、ビットコインは「Gavinやみんなに任せれば安心だ」と語った。"
+description: "マイク・ハーンとサトシ・ナカモトの私的なメールのやり取り。サトシは「他のことに移った」と述べ、ビットコインは「ギャビンやみんなに任せれば安心だ」と語った。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Dan Kaminskyのビットコインセキュリティ分析"
+title: "ダン・カミンスキーのビットコインセキュリティ分析"
 date: 2011-10-10T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.newyorker.com/magazine/2011/10/10/the-crypto-currency"
@@ -9,7 +9,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "著名なセキュリティ研究者Dan Kaminskyがビットコインの脆弱性を見つけようとして失敗した記録。「美しいバグを見つけた。だがコードを攻撃するたびに、問題に対処する一行があった」彼は結論づけた：「チームで作ったか、天才の仕業だ」"
+description: "著名なセキュリティ研究者ダン・カミンスキーがビットコインの脆弱性を見つけようとして失敗した記録。「美しいバグを見つけた。だがコードを攻撃するたびに、問題に対処する一行があった」彼は結論づけた：「チームで作ったか、天才の仕業だ」"
 isSatoshi: false
 aftermathType: "media"
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Craig Wrightが公にサトシ・ナカモトを名乗る"
+title: "クレイグ・ライトが公にサトシ・ナカモトを名乗る"
 date: 2016-05-02T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.bbc.co.uk/news/technology-36168863"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "オーストラリアの実業家Craig Wrightが、BBC、The Economist、GQとの連携インタビューでサトシ・ナカモトを名乗った。ブログで暗号学的な「証明」を提示したが、即座に論破された — 新しい署名を生成するのではなく、2009年のトランザクションの署名を再利用していた。"
+description: "オーストラリアの実業家クレイグ・ライトが、BBC、The Economist、GQとの連携インタビューでサトシ・ナカモトを名乗った。ブログで暗号学的な「証明」を提示したが、即座に論破された — 新しい署名を生成するのではなく、2009年のトランザクションの署名を再利用していた。"
 isSatoshi: false
 aftermathType: "media"
 tags:

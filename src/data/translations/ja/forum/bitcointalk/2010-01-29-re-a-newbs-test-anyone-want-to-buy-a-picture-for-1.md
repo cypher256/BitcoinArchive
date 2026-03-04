@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「初心者のテスト - 誰か写真を$1で買いませんか？」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「初心者のテスト - 誰か写真を$1で買いませんか？」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

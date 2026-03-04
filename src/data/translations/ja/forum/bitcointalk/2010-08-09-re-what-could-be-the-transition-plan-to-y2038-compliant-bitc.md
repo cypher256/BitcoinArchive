@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがunsigned intは2106年まで有効であり、それまでにネットワークは全面的に刷新されるだろうと説明。"
+description: "サトシ・ナカモトがunsigned intは2106年まで有効であり、それまでにネットワークは全面的に刷新されるだろうと説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

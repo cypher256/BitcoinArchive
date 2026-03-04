@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがブロックのタイムスタンプ検証に関する正しいコードを示し、タイムスタンプの制約について説明。"
+description: "サトシ・ナカモトがブロックのタイムスタンプ検証に関する正しいコードを示し、タイムスタンプの制約について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

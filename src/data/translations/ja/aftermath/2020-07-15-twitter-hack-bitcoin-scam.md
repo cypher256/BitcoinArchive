@@ -7,7 +7,7 @@ author: "Twitter"
 participants:
   - name: "Twitter"
     slug: "twitter"
-description: "ハッカーがBarack Obama、Joe Biden、Elon Musk、Appleなどの著名なTwitterアカウントを乗っ取り、ビットコイン詐欺のメッセージを投稿した。プラットフォーム史上最大のセキュリティ侵害。"
+description: "ハッカーがバラク・オバマ、ジョー・バイデン、イーロン・マスク、Appleなどの著名なTwitterアカウントを乗っ取り、ビットコイン詐欺のメッセージを投稿した。プラットフォーム史上最大のセキュリティ侵害。"
 isSatoshi: false
 aftermathType: "media"
 tags:

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「UIの改善」。"
+description: "サトシ・ナカモトの投稿：「UIの改善」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

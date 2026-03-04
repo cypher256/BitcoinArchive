@@ -1,5 +1,5 @@
 ---
-title: "Mike Hearn（生没年不明） — サトシと書簡を交わした初期ビットコイン貢献者のGoogleエンジニア"
+title: "マイク・ハーン（生没年不明） — サトシと書簡を交わした初期ビットコイン貢献者のGoogleエンジニア"
 date: 2009-04-12T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Mike_Hearn"
@@ -7,7 +7,7 @@ author: "Mike Hearn"
 participants:
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearn：Google Maps、Google Earth、Gmailのスパム対策システムに従事したソフトウェアエンジニア。ビットコインのホワイトペーパーを読み、2009年4月にサトシ・ナカモトに連絡を取り、最初期の貢献者の一人となった。後にBitcoinJ（最初の主要な代替実装）を開発し、2017年にサトシとのメールのやり取りが公開された。"
+description: "マイク・ハーン：Google Maps、Google Earth、Gmailのスパム対策システムに従事したソフトウェアエンジニア。ビットコインのホワイトペーパーを読み、2009年4月にサトシ・ナカモトに連絡を取り、最初期の貢献者の一人となった。後にBitcoinJ（最初の主要な代替実装）を開発し、2017年にサトシとのメールのやり取りが公開された。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

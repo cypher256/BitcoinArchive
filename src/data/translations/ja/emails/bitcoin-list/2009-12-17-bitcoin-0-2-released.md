@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin 0.2のリリース告知。Linux版の追加、マルチプロセッサ対応、プロキシサポートなどの新機能を含む。"
+description: "サトシ・ナカモトによるBitcoin 0.2のリリース告知。Linux版の追加、マルチプロセッサ対応、プロキシサポートなどの新機能を含む。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

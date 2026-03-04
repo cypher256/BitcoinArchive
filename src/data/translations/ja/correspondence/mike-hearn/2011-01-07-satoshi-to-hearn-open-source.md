@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshiが初のクライアント専用実装への期待を表明し、オープンソースになるかどうかを尋ねる。"
+description: "サトシが初のクライアント専用実装への期待を表明し、オープンソースになるかどうかを尋ねる。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-more-questions"
 threadPosition: 4

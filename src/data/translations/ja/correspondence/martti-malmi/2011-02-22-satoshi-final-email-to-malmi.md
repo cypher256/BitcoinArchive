@@ -1,5 +1,5 @@
 ---
-title: "SatoshiからMalmiへの最後のメール"
+title: "サトシからマルミへの最後のメール"
 date: 2011-02-22T19:49:19Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "MalmiへのSatoshiの最後の既知のメール。PGP署名とmailmanメーリングリストのパスワードが含まれていた。Satoshiが公的生活から完全に姿を消す前の最後の連絡の一つであった。"
+description: "マルミへのサトシの最後の既知のメール。PGP署名とmailmanメーリングリストのパスワードが含まれていた。サトシが公的生活から完全に姿を消す前の最後の連絡の一つであった。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 260

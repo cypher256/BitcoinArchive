@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "SatoshiはWikiLeaksの採用を積極的に求めることをビットコインコミュニティに対して控えるよう促し、ビットコインはまだ未成熟であり注目が有害になり得ると主張。"
+description: "サトシはWikiLeaksの採用を積極的に求めることをビットコインコミュニティに対して控えるよう促し、ビットコインはまだ未成熟であり注目が有害になり得ると主張。"
 isSatoshi: true
 threadId: "bitcointalk-1735-wikileaks-cia"
 threadPosition: 2

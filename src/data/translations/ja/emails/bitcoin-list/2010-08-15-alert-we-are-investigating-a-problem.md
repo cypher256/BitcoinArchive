@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoによる緊急警告。問題調査中のため、特定のブロック以降のトランザクションを信頼しないよう呼びかけ。"
+description: "サトシ・ナカモトによる緊急警告。問題調査中のため、特定のブロック以降のトランザクションを信頼しないよう呼びかけ。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

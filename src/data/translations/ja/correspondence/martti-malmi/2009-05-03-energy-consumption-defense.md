@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshiがビットコインのエネルギー消費に関する懸念に対処し、従来の銀行システムよりもはるかに少ないと主張しつつ、経済的自由と環境保全の間の緊張関係を認めた。"
+description: "サトシがビットコインのエネルギー消費に関する懸念に対処し、従来の銀行システムよりもはるかに少ないと主張しつつ、経済的自由と環境保全の間の緊張関係を認めた。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 3

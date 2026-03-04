@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Michel Bauwens"
     slug: "michel-bauwens"
-description: "P2P ResearchメーリングリストでのMichel Bauwensの質問に対し、ビットコインが完全に稼働中であることを確認し、ソフトウェアを試す人にコインを送ると提案。"
+description: "P2P Researchメーリングリストでのミシェル・バウエンスの質問に対し、ビットコインが完全に稼働中であることを確認し、ソフトウェアを試す人にコインを送ると提案。"
 isSatoshi: true
 tags:
   - "announcement"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがGUIが表示されない問題のトラブルシューティングを行い、バージョン0.3.7の試用を推奨。"
+description: "サトシ・ナカモトがGUIが表示されない問題のトラブルシューティングを行い、バージョン0.3.7の試用を推奨。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

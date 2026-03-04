@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがSatoshiに、Electronic Funds Transfer ActがBitcoinに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
+description: "マイク・ハーンがサトシに、Electronic Funds Transfer ActがBitcoinに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-chargeback"
 threadPosition: 1

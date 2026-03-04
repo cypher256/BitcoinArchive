@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「NAT背後での複数Bitcoinマシンのセットアップ」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「NAT背後での複数Bitcoinマシンのセットアップ」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

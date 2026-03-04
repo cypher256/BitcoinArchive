@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがEugen LeitlとLiberty Standardからのbitcoin.sourceforge.netダウン報告を転送し、BitweaverがTESTモードのエラーメッセージを表示している問題を伝える。"
+description: "サトシがオイゲン・ライトルとLiberty Standardからのbitcoin.sourceforge.netダウン報告を転送し、BitweaverがTESTモードのエラーメッセージを表示している問題を伝える。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 42

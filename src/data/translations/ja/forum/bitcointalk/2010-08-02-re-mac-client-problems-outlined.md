@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがMac版でトレイ最小化オプションが未実装であることを認め、次バージョンでグレーアウトすることを提案。"
+description: "サトシ・ナカモトがMac版でトレイ最小化オプションが未実装であることを認め、次バージョンでグレーアウトすることを提案。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

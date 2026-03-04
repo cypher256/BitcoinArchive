@@ -1,5 +1,5 @@
 ---
-title: "Adam Back（1970–） — Hashcashの発明者、サトシ・ナカモトが最初に連絡を取った人物"
+title: "アダム・バック（1970–） — Hashcashの発明者、サトシ・ナカモトが最初に連絡を取った人物"
 date: 2008-08-20T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Adam_Back"
@@ -7,7 +7,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "Adam Back（1970年生まれ）：ビットコインホワイトペーパーで引用されたプルーフ・オブ・ワーク・システムであるHashcash（1997年）を発明した英国の暗号学者・サイファーパンク。2008年8月20日、サトシ・ナカモトがビットコインについて最初に連絡を取った既知の人物となった。2014年にBlockstreamを共同設立。"
+description: "アダム・バック（1970年生まれ）：ビットコインホワイトペーパーで引用されたプルーフ・オブ・ワーク・システムであるHashcash（1997年）を発明した英国の暗号学者・サイファーパンク。2008年8月20日、サトシ・ナカモトがビットコインについて最初に連絡を取った既知の人物となった。2014年にBlockstreamを共同設立。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

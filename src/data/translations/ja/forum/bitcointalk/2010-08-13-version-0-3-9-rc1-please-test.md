@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが0.3.9リリース前のテストビルドを公開し、Linux向けrc2にtcatmの4-way SSE2スイッチを追加。"
+description: "サトシ・ナカモトが0.3.9リリース前のテストビルドを公開し、Linux向けrc2にtcatmの4-way SSE2スイッチを追加。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

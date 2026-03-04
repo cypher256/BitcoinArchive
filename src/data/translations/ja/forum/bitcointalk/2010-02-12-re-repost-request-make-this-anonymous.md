@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「再投稿：リクエスト：これを匿名にできますか？」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「再投稿：リクエスト：これを匿名にできますか？」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

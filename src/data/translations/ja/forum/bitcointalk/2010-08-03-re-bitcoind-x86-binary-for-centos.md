@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBDB 4.8の使用を強く控えるよう警告し、公式ビルドとのデータベース互換性の問題を指摘。"
+description: "サトシ・ナカモトがBDB 4.8の使用を強く控えるよう警告し、公式ビルドとのデータベース互換性の問題を指摘。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

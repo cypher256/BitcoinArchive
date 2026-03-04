@@ -1,5 +1,5 @@
 ---
-title: "Jameson Loppがサトシ・ナカモトは「欲張りなマイナー」だったかを分析"
+title: "ジェイムソン・ロップがサトシ・ナカモトは「欲張りなマイナー」だったかを分析"
 date: 2022-09-16T00:00:00Z
 source: aftermath
 sourceUrl: "https://blog.lopp.net/was-satoshi-a-greedy-miner/"
@@ -11,7 +11,7 @@ participants:
     slug: "jameson-lopp"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ビットコイン研究者Jameson Loppが、サトシは意図的にマイニング能力を制限しており、フル稼働なら約219万BTCを得られたところを約110万BTCに留めたことを示した。「サトシが欲張りだったと言う人は、単に計算をしていないだけだ」と結論。"
+description: "ビットコイン研究者ジェイムソン・ロップが、サトシは意図的にマイニング能力を制限しており、フル稼働なら約219万BTCを得られたところを約110万BTCに留めたことを示した。「サトシが欲張りだったと言う人は、単に計算をしていないだけだ」と結論。"
 isSatoshi: false
 aftermathType: "blog"
 tags:

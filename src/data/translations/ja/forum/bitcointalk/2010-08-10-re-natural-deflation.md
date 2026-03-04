@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが失われたコインは全員への寄付のようなものであり、デフレ通貨に問題はないと主張。"
+description: "サトシ・ナカモトが失われたコインは全員への寄付のようなものであり、デフレ通貨に問題はないと主張。"
 isSatoshi: true
 tags:
   - "deflation"

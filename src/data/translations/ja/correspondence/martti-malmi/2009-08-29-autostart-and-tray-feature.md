@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshiが自動起動とタスクトレイ最小化はネットワーク成長のための「必須機能」であると強調し、初期のファイル共有ネットワークの戦略と比較した。この機能はビットコイン0.2でMalmiにより実装された。"
+description: "サトシが自動起動とタスクトレイ最小化はネットワーク成長のための「必須機能」であると強調し、初期のファイル共有ネットワークの戦略と比較した。この機能はビットコイン0.2でマルミにより実装された。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 31

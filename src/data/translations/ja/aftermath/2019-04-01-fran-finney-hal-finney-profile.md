@@ -1,5 +1,5 @@
 ---
-title: "Fran FinneyによるHal Finneyの生涯の証言 — Cryonics Magazine プロフィール"
+title: "フラン・フィニーによるハル・フィニーの生涯の証言 — Cryonics Magazine プロフィール"
 date: 2019-04-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.alcor.org/resources/blog/member-patient-profile-hal-finney/"
@@ -9,7 +9,7 @@ participants:
     slug: "hal-finney"
   - name: "Fran Finney"
     slug: "fran-finney"
-description: "Cryonics Magazineが妻Fran Finneyへのインタビューに基づくHal Finneyの詳細なプロフィールを掲載。Caltechでの出会い、PGP Corporationでのキャリア、ビットコイン開始時の興奮、ALS診断、そしてAlcorによる冷凍保存について語られた。"
+description: "Cryonics Magazineが妻フラン・フィニーへのインタビューに基づくハル・フィニーの詳細なプロフィールを掲載。Caltechでの出会い、PGP Corporationでのキャリア、ビットコイン開始時の興奮、ALS診断、そしてAlcorによる冷凍保存について語られた。"
 isSatoshi: false
 aftermathType: "interview"
 tags:

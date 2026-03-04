@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがCrypto++ 5.6.0のSHA256機能の統合について議論し、SSE2アセンブリコードにより約2.5倍の高速化を達成したことを報告。"
+description: "サトシ・ナカモトがCrypto++ 5.6.0のSHA256機能の統合について議論し、SSE2アセンブリコードにより約2.5倍の高速化を達成したことを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

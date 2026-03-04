@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「再投稿：Bitcoinの成熟」。"
+description: "サトシ・ナカモトの投稿：「再投稿：Bitcoinの成熟」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "Satoshi NakamotoがLaszloの有名なピザ購入についてコメントし、実際の商店がビットコインを受け入れるようになることへの期待を表明。"
+description: "サトシ・ナカモトがラズロの有名なピザ購入についてコメントし、実際の商店がビットコインを受け入れるようになることへの期待を表明。"
 isSatoshi: true
 threadId: "pizza-for-bitcoins"
 threadPosition: 2

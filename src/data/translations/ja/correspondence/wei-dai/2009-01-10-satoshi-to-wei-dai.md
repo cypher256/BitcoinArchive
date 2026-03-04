@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "SatoshiがWei DaiにBitcoin v0.1のリリースを告知し、b-moneyのほぼすべての目標を達成したと述べている。Hal Finneyのシステム概要を引用。"
+description: "サトシがウェイ・ダイにBitcoin v0.1のリリースを告知し、b-moneyのほぼすべての目標を達成したと述べている。ハル・フィニーのシステム概要を引用。"
 isSatoshi: true
 threadId: "satoshi-wei-dai"
 threadPosition: 3

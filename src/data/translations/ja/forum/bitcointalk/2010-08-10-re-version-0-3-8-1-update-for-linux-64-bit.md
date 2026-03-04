@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVN rev 128で32ビットビルドのSSE2を無効化したことを報告。"
+description: "サトシ・ナカモトがSVN rev 128で32ビットビルドのSSE2を無効化したことを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Doncho Karaivanov"
     slug: "doncho-karaivanov"
-description: "Doncho Karaivanovが、サトシの投稿・コミット・メール742件の活動インスタンスを分析し、The Timesの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
+description: "ドンチョ・カライヴァノフが、サトシの投稿・コミット・メール742件の活動インスタンスを分析し、The Timesの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
 isSatoshi: false
 aftermathType: "article"
 tags:

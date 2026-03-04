@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "Satoshi NakamotoによるNicholas Bohmの問題報告への返信。デバッグログの提供を依頼。"
+description: "サトシ・ナカモトによるニコラス・ボームの問題報告への返信。デバッグログの提供を依頼。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

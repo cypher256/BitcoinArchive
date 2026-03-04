@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがキャッシュされたSHA256のアイデアをSVNに追加し約70%の高速化を達成したこと、およびCrypto++ 5.6.0のASM SHAコードのコンパイラ互換性について議論。"
+description: "サトシ・ナカモトがキャッシュされたSHA256のアイデアをSVNに追加し約70%の高速化を達成したこと、およびCrypto++ 5.6.0のASM SHAコードのコンパイラ互換性について議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

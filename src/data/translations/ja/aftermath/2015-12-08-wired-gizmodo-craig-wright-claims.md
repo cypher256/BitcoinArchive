@@ -1,5 +1,5 @@
 ---
-title: "WiredとGizmodoがCraig Wrightをサトシ・ナカモトの可能性があると特定"
+title: "WiredとGizmodoがクレイグ・ライトをサトシ・ナカモトの可能性があると特定"
 date: 2015-12-08T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
@@ -11,7 +11,7 @@ participants:
     slug: "andy-greenberg"
   - name: "Sam Biddle"
     slug: "sam-biddle"
-description: "WiredとGizmodoが同時に、流出した文書やメールに基づき、オーストラリアのコンピュータ科学者Craig Steven Wrightをビットコインの創設者の可能性が高いと特定する記事を掲載した。"
+description: "WiredとGizmodoが同時に、流出した文書やメールに基づき、オーストラリアのコンピュータ科学者クレイグ・スティーヴン・ライトをビットコインの創設者の可能性が高いと特定する記事を掲載した。"
 isSatoshi: false
 aftermathType: "media"
 tags:

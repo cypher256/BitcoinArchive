@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがGoogleの不正利用対策チームでの業務について述べ、スパム防止のためにアカウントの担保としてBitcoinを使用することを提案し、コインのタイムロックについて質問する。"
+description: "マイク・ハーンがGoogleの不正利用対策チームでの業務について述べ、スパム防止のためにアカウントの担保としてBitcoinを使用することを提案し、コインのタイムロックについて質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-holding-coins"
 threadPosition: 1

@@ -1,5 +1,5 @@
 ---
-title: "Martien van Steenbergen（生没年不明） — ビットコインの通貨供給量についてサトシに質問したアジャイルコーチ"
+title: "マルティエン・ファン・ステーンベルゲン（生没年不明） — ビットコインの通貨供給量についてサトシに質問したアジャイルコーチ"
 date: 2009-02-12T07:47:53Z
 source: aftermath
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
@@ -7,7 +7,7 @@ author: "Martien van Steenbergen"
 participants:
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "Martien van Steenbergen：P2P Researchメーリングリストでの質問により、サトシ・ナカモトにビットコインの発行上限2,100万枚を初めて公に明言させたオランダ人アジャイルコーチ、AardRock創業者。"
+description: "マルティエン・ファン・ステーンベルゲン：P2P Researchメーリングリストでの質問により、サトシ・ナカモトにビットコインの発行上限2,100万枚を初めて公に明言させたオランダ人アジャイルコーチ、AardRock創業者。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

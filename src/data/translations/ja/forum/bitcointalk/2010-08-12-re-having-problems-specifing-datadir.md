@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVN rev 130でdatadirの問題を修正したことを報告。"
+description: "サトシ・ナカモトがSVN rev 130でdatadirの問題を修正したことを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

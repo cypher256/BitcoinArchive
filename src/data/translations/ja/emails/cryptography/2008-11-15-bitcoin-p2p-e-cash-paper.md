@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ビットコインがHashcashスタイルのSHA-256プルーフ・オブ・ワーク（署名ではなく）を使用していることをSatoshiが明確にし、マイニングの比例確率、アイデンティティ、二重支払い防止について説明した。"
+description: "ビットコインがHashcashスタイルのSHA-256プルーフ・オブ・ワーク（署名ではなく）を使用していることをサトシが明確にし、マイニングの比例確率、アイデンティティ、二重支払い防止について説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 26
 isSatoshi: true

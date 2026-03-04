@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "SatoshiがHal Finneyの詳細な技術的質問に返答し、最長チェーンが競合ブロックをどのように解決するか、トランザクションブロードキャストがメッセージ欠落に対してどのように寛容であるかを説明した。"
+description: "サトシがハル・フィニーの詳細な技術的質問に返答し、最長チェーンが競合ブロックをどのように解決するか、トランザクションブロードキャストがメッセージ欠落に対してどのように寛容であるかを説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 11
 isSatoshi: true

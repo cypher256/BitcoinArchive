@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
 import AutoLinkNames from '../../../components/AutoLinkNames.astro';
 import { render } from 'astro:content';
-import { useTranslations, getEntries, getBiographyForParticipant, localePath } from '../../../i18n/utils';
+import { useTranslations, getEntries, getBiographyForParticipant, localePath, translateParticipantName } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads } from '../../../data/threads';
 
 export async function getStaticPaths() {
@@ -29,9 +29,9 @@ export async function getStaticPaths() {
     params: { participant: slug },
     props: {
       participantSlug: slug,
-      participantName: nameMap.get(slug)!,
-      prevParticipant: i > 0 ? { slug: sorted[i - 1], name: nameMap.get(sorted[i - 1])! } : null,
-      nextParticipant: i < sorted.length - 1 ? { slug: sorted[i + 1], name: nameMap.get(sorted[i + 1])! } : null,
+      participantName: translateParticipantName(nameMap.get(slug)!, slug, 'ja'),
+      prevParticipant: i > 0 ? { slug: sorted[i - 1], name: translateParticipantName(nameMap.get(sorted[i - 1])!, sorted[i - 1], 'ja') } : null,
+      nextParticipant: i < sorted.length - 1 ? { slug: sorted[i + 1], name: translateParticipantName(nameMap.get(sorted[i + 1])!, sorted[i + 1], 'ja') } : null,
     },
   }));
 }

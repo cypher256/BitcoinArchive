@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto (disputed)"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ビットコインの創設者を特定したとするNewsweekの記事に対し、サトシのP2P Foundationアカウントから「私はDorian Nakamotoではない」という投稿が行われた。この投稿の真正性は議論が分かれている。"
+description: "ビットコインの創設者を特定したとするNewsweekの記事に対し、サトシのP2P Foundationアカウントから「私はドリアン・ナカモトではない」という投稿が行われた。この投稿の真正性は議論が分かれている。"
 isSatoshi: false
 aftermathType: "media"
 tags:

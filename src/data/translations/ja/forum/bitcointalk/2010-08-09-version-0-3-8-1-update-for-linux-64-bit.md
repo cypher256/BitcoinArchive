@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがバージョン0.3.6でCrypto++ 5.6.0 SHA-256に切り替えた際にLinux 64ビットビルドで生成が壊れた問題の修正版をリリース。"
+description: "サトシ・ナカモトがバージョン0.3.6でCrypto++ 5.6.0 SHA-256に切り替えた際にLinux 64ビットビルドで生成が壊れた問題の修正版をリリース。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

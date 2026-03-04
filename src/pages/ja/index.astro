@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
-import { useTranslations, getDisplayEntries, localePath, translateTag } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
 import { buildThreadInfo, collapseThreads } from '../../data/threads';
 
@@ -55,7 +55,7 @@ const featuredSorted = [...entries].filter(e => e.data.featured).sort((a, b) => 
 const featuredEntries = collapseThreads(featuredSorted, threadCounts, threadStarters);
 
 // Network graph data
-const graphData = computeGraphData(entries);
+const graphData = computeGraphData(entries, lang);
 
 function tagWeight(count: number, max: number): number {
   return Math.max(1, Math.min(4, Math.ceil(Math.sqrt(count / max) * 4)));
@@ -146,7 +146,7 @@ function tagWeight(count: number, max: number): number {
           {topParticipants.map(([slug, { name, count }]) => (
             <a href={localePath(`/participants/${slug}/`, lang)} class="rank-item">
               <div class="rank-bar" style={`width: ${Math.round((count / maxParticipantCount) * 100)}%`}></div>
-              <span class="rank-name">{name}</span>
+              <span class="rank-name">{translateParticipantName(name, slug, lang)}</span>
               <span class="rank-count">{count}</span>
             </a>
           ))}

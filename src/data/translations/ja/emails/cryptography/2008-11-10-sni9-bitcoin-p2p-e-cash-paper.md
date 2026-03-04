@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "Satoshiがシニョリッジの代替としてトランザクション手数料を提案し、インフレなしにネットワークのインセンティブを賄うためにアウトプット値をインプット値より若干低くすることを示唆した。"
+description: "サトシがシニョリッジの代替としてトランザクション手数料を提案し、インフレなしにネットワークのインセンティブを賄うためにアウトプット値をインプット値より若干低くすることを示唆した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 18
 isSatoshi: true

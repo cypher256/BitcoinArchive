@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin 0.3.18のリリース告知。wallet.datの互換性修正とアカウントベースのJSON-RPCコマンドの追加。"
+description: "サトシ・ナカモトによるBitcoin 0.3.18のリリース告知。wallet.datの互換性修正とアカウントベースのJSON-RPCコマンドの追加。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

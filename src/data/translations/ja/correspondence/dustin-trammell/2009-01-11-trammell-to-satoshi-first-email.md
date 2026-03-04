@@ -9,7 +9,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Dustin Trammellがビットコインのアルファ版をダウンロード・実行した後にSatoshi Nakamotoへ送った最初のメール。ソフトウェアの使用体験を報告し、公開タイムスタンプサービスに言及し、生成されたコインのクレジットが0.00と表示されるコイン成熟システムについて質問している。"
+description: "ダスティン・トランメルがビットコインのアルファ版をダウンロード・実行した後にサトシ・ナカモトへ送った最初のメール。ソフトウェアの使用体験を報告し、公開タイムスタンプサービスに言及し、生成されたコインのクレジットが0.00と表示されるコイン成熟システムについて質問している。"
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
 threadPosition: 1

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoによる重要なバグ修正のためBitcoin 0.3.6への緊急アップグレード要請。"
+description: "サトシ・ナカモトによる重要なバグ修正のためBitcoin 0.3.6への緊急アップグレード要請。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

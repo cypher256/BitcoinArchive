@@ -1,5 +1,5 @@
 ---
-title: "Jonathan Thornburg（生没年不明） — ビットコインに初期の懸念を提起した天体物理学者"
+title: "ジョナサン・ソーンバーグ（生没年不明） — ビットコインに初期の懸念を提起した天体物理学者"
 date: 2009-01-17T16:49:45Z
 source: aftermath
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015016.html"

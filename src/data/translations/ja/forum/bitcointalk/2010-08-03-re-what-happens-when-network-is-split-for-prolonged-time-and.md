@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがネットワーク分断のシナリオについて説明し、分断は非対称になりやすく、少数派フォークのクライアントは異常を検知できると述べた。"
+description: "サトシ・ナカモトがネットワーク分断のシナリオについて説明し、分断は非対称になりやすく、少数派フォークのクライアントは異常を検知できると述べた。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Ray Dillinger"
     slug: "ray-dillinger"
-description: "Ray Dillingerの「35%のインフレ率」という主張にSatoshiが返答し、難易度調整が生産量を一定に保つ仕組みとトランザクション手数料による代替インセンティブについて説明した。"
+description: "レイ・ディリンジャーの「35%のインフレ率」という主張にサトシが返答し、難易度調整が生産量を一定に保つ仕組みとトランザクション手数料による代替インセンティブについて説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
 threadPosition: 10
 isSatoshi: true

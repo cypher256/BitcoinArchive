@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがBitcoin FaucetのIPベースのレート制限と配布量の削減について議論。"
+description: "サトシ・ナカモトがBitcoin FaucetのIPベースのレート制限と配布量の削減について議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

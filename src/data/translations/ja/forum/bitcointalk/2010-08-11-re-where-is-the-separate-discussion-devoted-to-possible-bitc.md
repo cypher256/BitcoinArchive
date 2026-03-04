@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがトランザクションへのPoWの適用と、DoS攻撃対策としてのブロック受信減少の検出について議論。"
+description: "サトシ・ナカモトがトランザクションへのPoWの適用と、DoS攻撃対策としてのブロック受信減少の検出について議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

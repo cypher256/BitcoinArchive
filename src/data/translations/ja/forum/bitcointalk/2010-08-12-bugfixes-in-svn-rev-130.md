@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVN rev 130の各種バグ修正と-paytxfeeスイッチの追加を発表。"
+description: "サトシ・ナカモトがSVN rev 130の各種バグ修正と-paytxfeeスイッチの追加を発表。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがエスクローの利点を人々が理解できるかどうかについて反論。"
+description: "サトシ・ナカモトがエスクローの利点を人々が理解できるかどうかについて反論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

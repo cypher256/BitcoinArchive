@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSSE2なしでも生成オフで動作可能であることを確認し、32ビットビルドでSSE2を無効にするコード変更を提案。"
+description: "サトシ・ナカモトがSSE2なしでも生成オフで動作可能であることを確認し、32ビットビルドでSSE2を無効にするコード変更を提案。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがOSXビルドの問題について対応し、Crypto++ ASM SHA-256の互換性とmidstate最適化による1.7倍の高速化について説明。"
+description: "サトシ・ナカモトがOSXビルドの問題について対応し、Crypto++ ASM SHA-256の互換性とmidstate最適化による1.7倍の高速化について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

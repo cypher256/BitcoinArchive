@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshiは、Bitcoinが仲介者なしで二者間の非可逆的な取引のために設計されていることを説明し、述語言語を使用した計画中のエスクロー取引について述べる。"
+description: "サトシは、Bitcoinが仲介者なしで二者間の非可逆的な取引のために設計されていることを説明し、述語言語を使用した計画中のエスクロー取引について述べる。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-chargeback"
 threadPosition: 2

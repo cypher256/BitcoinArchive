@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoの投稿：「コマンドラインとJSON-RPC」。"
+description: "サトシ・ナカモトの投稿：「コマンドラインとJSON-RPC」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

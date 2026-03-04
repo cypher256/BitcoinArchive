@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshiは、Bitcoinのプライバシーモデルについて説明し、取引は公開されるが誰が背後にいるかは分からない証券取引所のプライバシーモデルと比較している。"
+description: "サトシは、Bitcoinのプライバシーモデルについて説明し、取引は公開されるが誰が背後にいるかは分からない証券取引所のプライバシーモデルと比較している。"
 isSatoshi: true
 tags:
   - "privacy"

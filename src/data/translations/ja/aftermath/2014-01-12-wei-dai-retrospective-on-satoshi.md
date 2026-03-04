@@ -1,5 +1,5 @@
 ---
-title: "Wei Daiのサトシ・ナカモトに関する回顧的発言"
+title: "ウェイ・ダイのサトシ・ナカモトに関する回顧的発言"
 date: 2014-01-12T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
@@ -9,7 +9,7 @@ participants:
     slug: "wei-dai"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "LessWrongのQ&Aスレッドでのサトシ・ナカモトに関するWei Daiの考察。Daiは、サトシが「私の記事を読む前にアイデアを独自に再発明した」と述べ、暗号学コミュニティで以前活動していた人物ではないと推測し、サトシの動機は金儲けではなく「世界を変える」ことだったと信じていると語った。"
+description: "LessWrongのQ&Aスレッドでのサトシ・ナカモトに関するウェイ・ダイの考察。ダイは、サトシが「私の記事を読む前にアイデアを独自に再発明した」と述べ、暗号学コミュニティで以前活動していた人物ではないと推測し、サトシの動機は金儲けではなく「世界を変える」ことだったと信じていると語った。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

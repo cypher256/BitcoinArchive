@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin v0.1.5のリリース告知。ディスク容量警告やバグ修正などの変更を含む。"
+description: "サトシ・ナカモトによるBitcoin v0.1.5のリリース告知。ディスク容量警告やバグ修正などの変更を含む。"
 isSatoshi: true
 threadId: "bitcoin-list-v015-released"
 threadPosition: 1

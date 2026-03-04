@@ -1,5 +1,5 @@
 ---
-title: "Bill Frantz（生没年不明） — ビットコインの初期セキュリティ議論に参加したセキュリティコンサルタント"
+title: "ビル・フランツ（生没年不明） — ビットコインの初期セキュリティ議論に参加したセキュリティコンサルタント"
 date: 2009-01-24T23:22:21Z
 source: aftermath
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015038.html"

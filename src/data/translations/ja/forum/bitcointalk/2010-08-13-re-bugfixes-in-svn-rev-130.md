@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが-paytxfeeスイッチの用途を説明し、必要な場合にトランザクション確認の優先度を上げるためのものであると解説。"
+description: "サトシ・ナカモトが-paytxfeeスイッチの用途を説明し、必要な場合にトランザクション確認の優先度を上げるためのものであると解説。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

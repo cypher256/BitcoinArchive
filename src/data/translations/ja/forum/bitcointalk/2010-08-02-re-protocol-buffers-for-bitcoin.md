@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがProtocol Buffersやboostシリアライゼーションを使わなかった理由を説明し、独自のシンプルなシリアライゼーション形式の設計思想を解説。"
+description: "サトシ・ナカモトがProtocol Buffersやboostシリアライゼーションを使わなかった理由を説明し、独自のシンプルなシリアライゼーション形式の設計思想を解説。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

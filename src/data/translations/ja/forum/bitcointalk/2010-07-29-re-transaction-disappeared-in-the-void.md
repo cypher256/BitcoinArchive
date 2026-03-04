@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがトランザクションの再送信メカニズムと、ブロックチェーンの完全ダウンロードが必要であることを説明。"
+description: "サトシ・ナカモトがトランザクションの再送信メカニズムと、ブロックチェーンの完全ダウンロードが必要であることを説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

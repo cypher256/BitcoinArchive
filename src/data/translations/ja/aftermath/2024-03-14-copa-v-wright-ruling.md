@@ -1,5 +1,5 @@
 ---
-title: "COPA対Wright裁判：裁判所がCraig Wrightはサトシ・ナカモトではないと判決"
+title: "COPA対ライト裁判：裁判所がクレイグ・ライトはサトシ・ナカモトではないと判決"
 date: 2024-03-14T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.judiciary.uk/judgments/copa-v-wright/"
@@ -9,7 +9,7 @@ participants:
     slug: "craig-wright"
   - name: "COPA"
     slug: "copa"
-description: "英国高等法院がCraig Steven Wrightはサトシ・ナカモトではないと決定的に判決を下し、彼が虚偽の主張を裏付けるために大規模な証拠の捏造を行ったと認定した。"
+description: "英国高等法院がクレイグ・スティーヴン・ライトはサトシ・ナカモトではないと決定的に判決を下し、彼が虚偽の主張を裏付けるために大規模な証拠の捏造を行ったと認定した。"
 isSatoshi: false
 aftermathType: "court-testimony"
 tags:

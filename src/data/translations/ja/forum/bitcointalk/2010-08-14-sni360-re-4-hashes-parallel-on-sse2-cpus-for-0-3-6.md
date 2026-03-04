@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがMinGW GCC 4.5での32ビットテスト結果を報告し、Core 2でストック比50%低下を確認。"
+description: "サトシ・ナカモトがMinGW GCC 4.5での32ビットテスト結果を報告し、Core 2でストック比50%低下を確認。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

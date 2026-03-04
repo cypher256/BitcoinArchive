@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがUbuntu 9.04でのビルド手順と依存関係のインストール方法を詳細に説明。"
+description: "サトシ・ナカモトがUbuntu 9.04でのビルド手順と依存関係のインストール方法を詳細に説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -1,5 +1,5 @@
 ---
-title: "「始めたことを知っていたなら」（Ray Dillinger）"
+title: "「始めたことを知っていたなら」（レイ・ディリンジャー）"
 date: 2017-09-20T00:00:00Z
 source: aftermath
 sourceUrl: "https://www.linkedin.com/pulse/id-known-what-we-were-starting-ray-dillinger"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Ray Dillingerによるビットコイン最初期の回顧録：ブロックチェーンコードのレビュー、Hal Finneyとの分業、そしてサトシの誠実さへの考察 — 「彼はコインを売っていたのではない。ハッシュを解いた者に与えていたのだ」"
+description: "レイ・ディリンジャーによるビットコイン最初期の回顧録：ブロックチェーンコードのレビュー、ハル・フィニーとの分業、そしてサトシの誠実さへの考察 — 「彼はコインを売っていたのではない。ハッシュを解いた者に与えていたのだ」"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

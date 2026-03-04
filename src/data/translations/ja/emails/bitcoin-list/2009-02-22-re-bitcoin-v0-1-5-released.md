@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoによるBitcoin v0.1.5スレッドへの返信。v0.1.6でのマルチプロセッサ対応とウェブサイト統合インターフェースの計画について。"
+description: "サトシ・ナカモトによるBitcoin v0.1.5スレッドへの返信。v0.1.6でのマルチプロセッサ対応とウェブサイト統合インターフェースの計画について。"
 isSatoshi: true
 threadId: "bitcoin-list-v015-released"
 threadPosition: 2

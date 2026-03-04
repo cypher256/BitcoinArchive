@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshiは、Bitcoinの生成には電気とコンピューティングリソースという実際のコストがかかることを説明し、金の採掘との類似性を示している。"
+description: "サトシは、Bitcoinの生成には電気とコンピューティングリソースという実際のコストがかかることを説明し、金の採掘との類似性を示している。"
 isSatoshi: true
 tags:
   - "cost"

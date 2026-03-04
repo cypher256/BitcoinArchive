@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「『Bitcoin受付中』ロゴを作ろう」スレッドにおけるSatoshi Nakamotoの返信。"
+description: "「『Bitcoin受付中』ロゴを作ろう」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

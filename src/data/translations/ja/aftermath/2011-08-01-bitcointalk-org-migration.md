@@ -9,7 +9,7 @@ participants:
     slug: "theymos"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Martti MalmiがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに設置したBitcoin Forumが、2011年8月に独立ドメインbitcointalk.orgに移行した。移行はフォーラム管理者のTheymos（Michael Marquardt）が管理し、既存の投稿、スレッド、ユーザーアカウントはすべて保存された。"
+description: "マルッティ・マルミがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに設置したBitcoin Forumが、2011年8月に独立ドメインbitcointalk.orgに移行した。移行はフォーラム管理者のTheymos（マイケル・マーカート）が管理し、既存の投稿、スレッド、ユーザーアカウントはすべて保存された。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

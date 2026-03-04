@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSSE2の速度向上が2%とわずかであったこと、Crypto++でのSSE2の実行時検出の問題を説明。"
+description: "サトシ・ナカモトがSSE2の速度向上が2%とわずかであったこと、Crypto++でのSSE2の実行時検出の問題を説明。"
 isSatoshi: true
 threadId: "bt-bitcoin-generation-broken-in-0-3-8"
 threadPosition: 1

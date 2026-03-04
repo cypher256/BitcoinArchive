@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoがtest.cppでは動作するがBitcoinMinerからではSIGSEGVになる問題を報告し、Crypto++のMinGW GCC 4.5.0用パッチを提供。"
+description: "サトシ・ナカモトがtest.cppでは動作するがBitcoinMinerからではSIGSEGVになる問題を報告し、Crypto++のMinGW GCC 4.5.0用パッチを提供。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

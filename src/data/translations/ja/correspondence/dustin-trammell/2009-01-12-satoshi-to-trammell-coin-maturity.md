@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "SatoshiがDustin Trammellに返信し、コインの成熟システムを説明するとともに、ソフトウェアを安定させたバージョン0.1.3へのアップグレードを推奨している。"
+description: "サトシがダスティン・トランメルに返信し、コインの成熟システムを説明するとともに、ソフトウェアを安定させたバージョン0.1.3へのアップグレードを推奨している。"
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
 threadPosition: 2

@@ -1,5 +1,5 @@
 ---
-title: "Martti Malmi（1988–） — ビットコイン初期の最も多作な貢献者となったフィンランドの開発者"
+title: "マルッティ・マルミ（1988–） — ビットコイン初期の最も多作な貢献者となったフィンランドの開発者"
 date: 2009-05-01T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Martti_Malmi"
@@ -7,7 +7,7 @@ author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Martti Malmi（1988年生まれ）：2009年5月にサトシ・ナカモトに連絡を取り、ビットコイン初期の最も多作な貢献者となったフィンランドのソフトウェア開発者。サトシと約260通のメールを交換し、bitcoin.orgの構築、Linuxへの移植、BitcoinTalkフォーラムの作成、そして初の既知のビットコイン-法定通貨取引を行った。"
+description: "マルッティ・マルミ（1988年生まれ）：2009年5月にサトシ・ナカモトに連絡を取り、ビットコイン初期の最も多作な貢献者となったフィンランドのソフトウェア開発者。サトシと約260通のメールを交換し、bitcoin.orgの構築、Linuxへの移植、BitcoinTalkフォーラムの作成、そして初の既知のビットコイン-法定通貨取引を行った。"
 isSatoshi: false
 aftermathType: "biography"
 tags:

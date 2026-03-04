@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが2-of-2マルチシグによるエスクロートランザクションの仕組みを説明。"
+description: "サトシ・ナカモトが2-of-2マルチシグによるエスクロートランザクションの仕組みを説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "SatoshiはBitcoinのWikipedia記事の削除に反応し、Bitcoinの特筆性と主流での認知の必要性について考察している。"
+description: "サトシはBitcoinのWikipedia記事の削除に反応し、Bitcoinの特筆性と主流での認知の必要性について考察している。"
 isSatoshi: true
 tags:
   - "wikipedia"

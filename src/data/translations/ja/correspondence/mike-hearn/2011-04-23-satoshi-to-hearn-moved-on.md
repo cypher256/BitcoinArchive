@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshiの最後の既知のコミュニケーションの一つ。Mike Hearnに他のことに移ったこと、BitcoinはGavinとみんなに託されていると伝える。"
+description: "サトシの最後の既知のコミュニケーションの一つ。マイク・ハーンに他のことに移ったこと、Bitcoinはギャビンとみんなに託されていると伝える。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
 threadPosition: 4

@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike HearnがSatoshi Nakamotoに初めて連絡を取り、Bitcoinのスケーラビリティ、マイニングハードウェア、インフレスケジュール、コインの額面について質問する。"
+description: "マイク・ハーンがサトシ・ナカモトに初めて連絡を取り、Bitcoinのスケーラビリティ、マイニングハードウェア、インフレスケジュール、コインの額面について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
 threadPosition: 1

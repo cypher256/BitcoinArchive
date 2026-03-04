@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshiがステートフルなスクリプトオペコードがチェーンフォーク攻撃を可能にする理由を説明し、信頼なしに安全なタイムロック預金のためのnLockTimeを使用した詳細なステップバイステップのマルチシグコントラクトパターンを提示する。"
+description: "サトシがステートフルなスクリプトオペコードがチェーンフォーク攻撃を可能にする理由を説明し、信頼なしに安全なタイムロック預金のためのnLockTimeを使用した詳細なステップバイステップのマルチシグコントラクトパターンを提示する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
 threadPosition: 2

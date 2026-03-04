@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが__BSD__の使用を廃止し、sys/param.hを使用するよう変更。"
+description: "サトシ・ナカモトが__BSD__の使用を廃止し、sys/param.hを使用するよう変更。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

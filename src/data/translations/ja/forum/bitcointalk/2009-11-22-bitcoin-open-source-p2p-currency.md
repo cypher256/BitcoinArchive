@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "新しいBitcoinフォーラム（後にBitcoinTalkに改称）でのSatoshiの最初の投稿。Bitcoinを発表し、その主要な特性について説明している。"
+description: "新しいBitcoinフォーラム（後にBitcoinTalkに改称）でのサトシの最初の投稿。Bitcoinを発表し、その主要な特性について説明している。"
 isSatoshi: true
 tags:
   - "announcement"

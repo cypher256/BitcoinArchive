@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearnが、Android向けJava SPV実装に取り組みながら、2100万枚のコイン上限の由来、10分間のブロック目標、500KBのブロックサイズ制限について質問する。"
+description: "マイク・ハーンが、Android向けJava SPV実装に取り組みながら、2100万枚のコイン上限の由来、10分間のブロック目標、500KBのブロックサイズ制限について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
 threadPosition: 1

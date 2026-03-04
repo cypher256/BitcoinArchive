@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSSE2非対応のPentium 3でも生成機能をオフにすれば動作するか質問。"
+description: "サトシ・ナカモトがSSE2非対応のPentium 3でも生成機能をオフにすれば動作するか質問。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

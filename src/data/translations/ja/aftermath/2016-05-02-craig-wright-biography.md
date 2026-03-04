@@ -1,5 +1,5 @@
 ---
-title: "Craig Wright（1970–） — サトシ・ナカモトを偽称したオーストラリア人実業家"
+title: "クレイグ・ライト（1970–） — サトシ・ナカモトを偽称したオーストラリア人実業家"
 date: 2016-05-02T00:00:00Z
 source: aftermath
 sourceUrl: "https://en.wikipedia.org/wiki/Craig_Steven_Wright"

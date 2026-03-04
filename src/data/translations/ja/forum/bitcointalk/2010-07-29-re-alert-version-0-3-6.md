@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがSVNの更新が間に合っていないことを伝え、0.3.6のビルド中であることを報告。"
+description: "サトシ・ナカモトがSVNの更新が間に合っていないことを伝え、0.3.6のビルド中であることを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

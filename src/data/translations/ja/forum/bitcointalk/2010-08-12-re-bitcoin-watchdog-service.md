@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi NakamotoがISPネットワーク切断時のブロック生成への影響を分析し、ブロック受信頻度の監視を支持。"
+description: "サトシ・ナカモトがISPネットワーク切断時のブロック生成への影響を分析し、ブロック受信頻度の監視を支持。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamotoが再ビルドした64ビット版のLinux 0.3.8.1をアップロードし、テスト結果を報告。"
+description: "サトシ・ナカモトが再ビルドした64ビット版のLinux 0.3.8.1をアップロードし、テスト結果を報告。"
 isSatoshi: true
 threadId: "bt-bitcoin-generation-broken-in-0-3-8"
 threadPosition: 2

@@ -9,7 +9,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Hal Finneyの有名なツイート「Running bitcoin」——Satoshi以外でビットコインソフトウェアを実行した最初の既知の人物として記録された。翌日、彼はSatoshiから最初のビットコイン取引を受け取った。"
+description: "ハル・フィニーの有名なツイート「Running bitcoin」——サトシ以外でビットコインソフトウェアを実行した最初の既知の人物として記録された。翌日、彼はサトシから最初のビットコイン取引を受け取った。"
 isSatoshi: false
 tags:
   - "first-transaction"

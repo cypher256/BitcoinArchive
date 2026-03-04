@@ -7,7 +7,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshiがビットコインv0.1のリリースを発表。Windows向けのビットコインソフトウェア初の動作する実装で、ソースコードが含まれていた。"
+description: "サトシがビットコインv0.1のリリースを発表。Windows向けのビットコインソフトウェア初の動作する実装で、ソースコードが含まれていた。"
 threadId: "bitcoin-v0-1-released"
 threadPosition: 1
 isSatoshi: true
