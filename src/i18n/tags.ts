@@ -44,6 +44,7 @@ export const tagTranslations: Record<string, string> = {
   'confirmation': '確認',
   'connections': '接続',
   'consensus': 'コンセンサス',
+  'copa-trial': 'COPA裁判',
   'copyright': '著作権',
   'core-developer': 'コア開発者',
   'correspondence': '書簡',
@@ -135,6 +136,7 @@ export const tagTranslations: Record<string, string> = {
   'hack': 'ハッキング',
   'halving': '半減期',
   'handover': '引き継ぎ',
+  'hashcash': 'ハッシュキャッシュ',
   'historic': '歴史的',
   'history': '歴史',
 
@@ -158,6 +160,7 @@ export const tagTranslations: Record<string, string> = {
   'lawsuit': '訴訟',
   'leadership': 'リーダーシップ',
   'legal': '法的',
+  'lesswrong': 'LessWrong',
   'libertarian': 'リバタリアン',
   'liberty': '自由',
   'longest-chain': '最長チェーン',
