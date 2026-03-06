@@ -7,8 +7,6 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-  - name: "Satoshi Nakamoto"
-    slug: "satoshi-nakamoto"
 description: "LessWrongの投稿「Bitcoins are not digital greenbacks」へのウェイ・ダイのコメント。ビットコインは「金融政策に関して失敗した」と論じ、価格変動の問題を指摘。さらに2008年にサトシからの論文レビュー依頼のメールに返信しなかったことを明かし、「固定マネーサプライのアイデアを思いとどまらせることができたかもしれない」と後悔を述べた。"
 isSatoshi: false
 aftermathType: "retrospective"
@@ -28,7 +26,7 @@ translationStatus: complete
 
 *LessWrong「Bitcoins are not digital greenbacks」コメントスレッドより、2013年4月21日：*
 
-Wei Dai — b-money提案（1998年）の考案者であり、ビットコインホワイトペーパーの参考文献[1]として引用されている — がビットコインの金融政策の設計と自身の役割について言及した：
+ウェイ・ダイ — b-money提案（1998年）の考案者であり、ビットコインホワイトペーパーの参考文献[1]として引用されている — がビットコインの金融政策の設計と自身の役割について言及した：
 
 **ビットコインの金融政策の失敗について：**
 

@@ -54,6 +54,8 @@ export const tagTranslations: Record<string, string> = {
   'cryonics': 'クライオニクス',
   'cryptocurrency': '暗号通貨',
   'cryptographic-proof': '暗号学的証明',
+  'crypto-anarchy': 'クリプトアナーキー',
+  'crypto-plus-plus': 'Crypto++',
   'cryptography': '暗号学',
   'currency-code': '通貨コード',
 

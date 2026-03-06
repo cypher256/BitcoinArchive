@@ -19,6 +19,7 @@ tags:
   - "cypherpunks"
   - "monetary-policy"
   - "crypto-anarchy"
+editorNote: "This email predates Bitcoin by a decade, yet identifies the same fundamental challenges — monetary policy and price stability — that Dai would revisit in his 2013 critique of Bitcoin on LessWrong."
 secondarySources:
   - name: "Adam Back's forwarding of b-money protocol (Dec 5, 1998)"
     url: "http://cypherpunks.venona.com/archive/1998/12/msg00194.html"
@@ -42,6 +43,4 @@ Wei Dai replied to Adam Back's discussion of the b-money protocol, addressing co
 
 **On open questions for mainstream adoption:**
 
-Dai raised questions about what would be needed for broader adoption, including price stability, business cycles, and optimal inflation rates — issues that foreshadowed the very criticisms he would later level at Bitcoin's fixed-supply monetary policy.
-
-*[This email, sent just weeks after the original b-money announcement on the Cypherpunks mailing list in November 1998, is one of the earliest records of Dai's own assessment of b-money's limitations. It predates Bitcoin by a decade, yet identifies the same fundamental challenges — monetary policy and price stability — that Dai would revisit in his 2013 critique of Bitcoin.]*
+Dai raised questions about what would be needed for broader adoption, including price stability, business cycles, and optimal inflation rates.
