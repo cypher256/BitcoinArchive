@@ -36,6 +36,7 @@ export const tagTranslations: Record<string, string> = {
   'code-contributions': 'コード貢献',
   'code-review': 'コードレビュー',
   'coin-maturity': 'コイン成熟',
+  'coding': 'コーディング',
   'coding-style': 'コーディングスタイル',
   'commerce': '商取引',
   'commodity': 'コモディティ',
@@ -58,6 +59,7 @@ export const tagTranslations: Record<string, string> = {
   'crypto-anarchy': 'クリプトアナーキー',
   'crypto-plus-plus': 'Crypto++',
   'cryptography': '暗号学',
+  'cypherpunks': 'サイファーパンク',
   'currency-code': '通貨コード',
 
   // D
@@ -198,6 +200,7 @@ export const tagTranslations: Record<string, string> = {
   'overflow-bug': 'オーバーフローバグ',
 
   // P
+  'pipenet': 'PipeNet',
   'payments': '支払い',
   'peer-to-peer': 'ピアツーピア',
   'pending-transactions': '保留トランザクション',
