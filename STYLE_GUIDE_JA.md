@@ -1,0 +1,145 @@
+# Japanese Style Guide
+
+Internal editorial rules for the Japanese edition of Bitcoin Archive.
+
+## Purpose
+
+This file defines how Japanese-language pages should handle names and other
+proper nouns so the site can be normalized over time without changing slugs,
+URLs, or source metadata. Common cross-language editorial rules live in
+`STYLE_GUIDE.md`.
+
+## Core Rule
+
+- In Japanese UI and editorial text, person names should be written in
+  katakana.
+- Canonical metadata, slugs, URLs, and source records remain in their original
+  language.
+
+## Where To Apply Katakana
+
+Use katakana for person names in Japanese-facing editorial elements:
+
+- UI labels that display person names
+  - participant lists
+  - participant page headings
+  - author/participant lines on cards and entry pages
+  - person-tag labels
+- Edited Japanese copy
+  - titles
+  - descriptions
+  - editor notes
+  - biography prose
+  - explanatory text written by the archive editor
+
+## What Stays In The Original Language
+
+Do not force katakana in the following cases:
+
+- Direct quotes
+- Primary-source text such as emails, forum posts, and letters
+- Source titles and publication names
+- Organization, product, and project names when the original form is more
+  natural
+- Handles, pseudonyms, and brand-like identifiers
+  - examples: `Cobra`, `theymos`, `COPA`, `Twitter`
+- Slugs, URLs, file paths, and structured metadata fields
+
+## Quotes And Blockquotes
+
+- Follow the shared quote/block formatting rules in `STYLE_GUIDE.md`.
+- A blockquote marks quoted or source-derived block content.
+- `「…」` marks a direct quotation in Japanese prose.
+- These do not mean the same thing and are often used together.
+
+Use `「…」` in Japanese editorial prose when a quotation is being presented as a
+spoken or written utterance.
+
+- Inline quotations use `「…」`.
+- Nested quotations use `『…』`.
+- In narrative entries such as aftermath pages, short excerpted statements
+  normally use `> 「…」`.
+- In primary-source translations presented as the body of an email, letter,
+  forum post, or log excerpt, blockquotes normally do not need `「」` unless the
+  source or context specifically calls for them.
+- Do not add `「」` to URLs, email headers, commands, log lines, handles, or UI
+  strings unless they are being quoted as language.
+
+## Voice And Register
+
+- Preserve the speaker's register. Do not flatten every person into the same
+  neutral Japanese voice.
+- Preserve meaning first, but also preserve tone where the source clearly
+  supports it: concise, polite, blunt, warm, skeptical, casual, formal, or
+  technical.
+- Prefer natural Japanese over rigid word-for-word calques, but do not add
+  drama, personality, or emotion that is not present in the source.
+- In editor-written narrative entries such as aftermath pages, short translated
+  quotations may be lightly smoothed for readability, but they should still
+  sound like the same person.
+- In primary-source entries, avoid "novelizing" the speaker. Keep the wording
+  close to the source and let the original voice carry the personality.
+
+## Frequent Participant Voice Notes
+
+- `Satoshi Nakamoto`: concise, dry, understated, technical. Avoid theatrical
+  phrasing.
+- `Hal Finney`: warm, curious, encouraging, humane even when technical.
+- `Adam Back`: terse, professional, low-friction.
+- `Wei Dai`: extremely concise and matter-of-fact.
+- `Martti Malmi`: polite, earnest, respectful, especially in early exchanges.
+- `Gavin Andresen`: calm, practical, low-drama, solutions-oriented.
+- `Laszlo Hanyecz`: casual, relaxed, conversational.
+- `Ray Dillinger`: blunt, sharp, skeptical, but technically serious.
+- `James A. Donald`: combative, probing, insistent.
+- `Mike Hearn`: direct, reasoned, energetic, sometimes forceful.
+- `Nick Szabo`: intellectual, essayistic, slightly formal.
+
+## Voice Do / Don't
+
+- Do keep differences in politeness, bluntness, and warmth when they are
+  visible in the source.
+- Do keep technical speakers technically precise.
+- Do keep casual speakers casual when the source is casual.
+- Do not make archive prose read like fiction.
+- Do not add slang, swagger, or emotional intensity unless the source clearly
+  justifies it.
+- Do not over-normalize distinct voices into uniform textbook Japanese.
+
+## Translation Priority
+
+When editing existing Japanese content, normalize in this order:
+
+1. UI labels and page headings
+2. Titles and descriptions
+3. Biography and editor-written prose
+4. Legacy mixed usage inside older entries as they are touched
+
+Quotes and source text should not be rewritten just to match the house style.
+
+## Canonical Name Handling
+
+- Keep the canonical person name in metadata as the original-language form.
+- Japanese display forms should be treated as presentation-layer values.
+- If a name appears in both English and katakana inside the same editorial
+  sentence, prefer the katakana form unless the English spelling is
+  informationally necessary.
+
+## Working Rule For Existing Mixed Content
+
+- Mixed legacy usage currently exists across the Japanese archive.
+- When modifying an entry, normalize the touched Japanese editorial text to this
+  guide.
+- Avoid unrelated rewrites of quoted source text.
+
+## Example Mappings
+
+- `Satoshi Nakamoto` -> `サトシ・ナカモト`
+- `Hal Finney` -> `ハル・フィニー`
+- `Nick Szabo` -> `ニック・サボ`
+- `Adam Back` -> `アダム・バック`
+- `Wei Dai` -> `ウェイ・ダイ`
+- `Jeff Garzik` -> `ジェフ・ガージック`
+- `Gavin Andresen` -> `ギャビン・アンドリーセン`
+- `Martti Malmi` -> `マルッティ・マルミ`
+- `Mike Hearn` -> `マイク・ハーン`

@@ -34,7 +34,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Martti Malmi（1988年、フィンランド・Helsinki生まれ）は、ビットコインの最も初期かつ重要な貢献者の一人となったソフトウェア開発者である。Helsinki University of Technology（現Aalto University）でコンピューターサイエンスを学んだ。
+マルッティ・マルミ（1988年、フィンランド・Helsinki生まれ）は、ビットコインの最も初期かつ重要な貢献者の一人となったソフトウェア開発者である。Helsinki University of Technology（現Aalto University）でコンピューターサイエンスを学んだ。
 
 **サトシとの最初の接触：**
 2009年5月、Malmiはビットコインを発見し、プロジェクトへの協力を申し出てサトシ・ナカモトに連絡を取った。彼らのやり取りは約260通のメールに及び、サトシと単一の個人との間で知られる最大量の通信となった。これらのメールは2024年2月のCOPA対Wright裁判で証拠として提出された。

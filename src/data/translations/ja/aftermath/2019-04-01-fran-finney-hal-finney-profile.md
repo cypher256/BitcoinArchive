@@ -30,7 +30,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Cryonics Magazine（Alcor Life Extension Foundation発行）の2019年第2四半期号に、主に妻Fran Finneyへのインタビューに基づくHal Finneyの詳細なプロフィールが掲載された。このプロフィールは後にDan Heldによって編集され、2020年3月30日に21ideas.orgで再掲載された。
+Cryonics Magazine（Alcor Life Extension Foundation発行）の2019年第2四半期号に、主に妻フラン・フィニーへのインタビューに基づくハル・フィニーの詳細なプロフィールが掲載された。このプロフィールは後にダン・ヘルドによって編集され、2020年3月30日に21ideas.orgで再掲載された。
 
 **Caltechでの出会いについて：**
 FranはCaltechの3年生の時、新入生のHalの「rotation week」で出会った。「彼が[上級生に]持ち上げられて運ばれている最中の姿を見ました。」彼女は回想する：「人々が集まって哲学的な議論をするんです... 彼が話す時、彼の言うことにはたいてい聞く価値がありました。」

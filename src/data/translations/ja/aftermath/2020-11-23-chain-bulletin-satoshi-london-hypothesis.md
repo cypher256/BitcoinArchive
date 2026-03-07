@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2020年11月23日、Doncho KaraivanovはChain Bulletinにて、サトシ・ナカモトがビットコイン開発中にロンドンを拠点としていたと論じる詳細な分析を発表した。記事は複数の証拠を組み合わせている。
+2020年11月23日、ドンチョ・カライヴァノフはChain Bulletinにて、サトシ・ナカモトがビットコイン開発中にロンドンを拠点としていたと論じる詳細な分析を発表した。記事は複数の証拠を組み合わせている。
 
 **The Timesの見出し証拠：**
 

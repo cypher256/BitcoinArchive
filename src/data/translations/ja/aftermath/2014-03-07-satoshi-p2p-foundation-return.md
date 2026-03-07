@@ -21,4 +21,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-私はDorian Nakamotoではない。
+私はドリアン・ナカモトではない。

@@ -35,7 +35,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2021年9月30日、レイキャビク大学コンピュータサイエンス学部のMaria OskarsdottirとJacky Mallettは、PLOS ONEに「Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network」を発表した（DOI: 10.1371/journal.pone.0258001）。これは、Sergio Demian Lernerが2013年にブログで最初に特定したPatoshiマイニングパターンを正式に分析した、最初の査読付き学術論文であった。
+2021年9月30日、レイキャビク大学コンピュータサイエンス学部のマリア・オスカルスドッティルとジャッキー・マレットは、PLOS ONEに「Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network」を発表した（DOI: 10.1371/journal.pone.0258001）。これは、セルジオ・デミアン・ラーナーが2013年にブログで最初に特定したPatoshiマイニングパターンを正式に分析した、最初の査読付き学術論文であった。
 
 **2つの独立した異常の特定：**
 

@@ -33,7 +33,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2013年4月17日、アルゼンチンのビットコイン研究者Sergio Demian Lernerがブログ Bitslog に「The Well Deserved Fortune of Satoshi Nakamoto, Bitcoin creator, Visionary and Genius」を発表した。ビットコイン最初期のマイニングパターンに関する最初の体系的分析である。
+2013年4月17日、アルゼンチンのビットコイン研究者セルジオ・デミアン・ラーナーがブログ Bitslog に「The Well Deserved Fortune of Satoshi Nakamoto, Bitcoin creator, Visionary and Genius」を発表した。ビットコイン最初期のマイニングパターンに関する最初の体系的分析である。
 
 **手法：**
 LernerはBlock 0からBlock 36,288（2009年1月〜2010年1月）のcoinbaseトランザクションのExtraNonceフィールドを追跡し、「slow realtime clock」としてマイナーのクライアント再起動タイミングを特定した。単一のエンティティが一貫した勾配セグメントでマイニングし、約100時間ごとに再起動していることを発見した。
