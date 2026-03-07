@@ -11,9 +11,13 @@ interface Props {
   author?: string;
   noindex?: boolean;
   ogImage?: string;
+  breadcrumbs?: Array<{
+    name: string;
+    url: string;
+  }>;
 }
 
-const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage } = Astro.props;
+const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage, breadcrumbs = [] } = Astro.props;
 const siteUrl = 'https://cypher256.github.io/BitcoinArchive';
 const resolvedCanonical = canonicalUrl || Astro.url.href;
 const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/images/og-default.png`;
@@ -23,6 +27,12 @@ const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/images/og-defa
 const enUrl = alternateEn || (lang === 'en' ? resolvedCanonical : undefined);
 const jaUrl = alternateJa || (lang === 'ja' ? resolvedCanonical : undefined);
 const hasHreflang = enUrl && jaUrl;
+const breadcrumbItems = breadcrumbs.map((item, index) => ({
+  "@type": "ListItem",
+  "position": index + 1,
+  "name": item.name,
+  "item": new URL(item.url, siteUrl).toString(),
+}));
 ---
 
 <meta charset="utf-8" />
@@ -51,6 +61,14 @@ const hasHreflang = enUrl && jaUrl;
 <meta property="og:image:height" content="630" />
 {ogType === 'article' && publishedTime && (
   <meta property="article:published_time" content={publishedTime.toISOString()} />
+)}
+
+{breadcrumbItems.length >= 2 && (
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems,
+  })} />
 )}
 {ogType === 'article' && author && (
   <meta property="article:author" content={author} />

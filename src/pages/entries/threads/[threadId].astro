@@ -61,6 +61,11 @@ for (const m of messages) {
 }
 const participants = Array.from(participantMap.values());
 const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(messages[messages.length - 1].data.date, lang)}`;
+const breadcrumbs = [
+  { name: t('nav.home'), url: localePath('/', lang) },
+  { name: t('nav.entries'), url: localePath('/entries/', lang) },
+  { name: threadTitle, url: localePath(`/entries/threads/${Astro.params.threadId}/`, lang) },
+];
 ---
 
 <BaseLayout
@@ -68,6 +73,7 @@ const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(m
   description={`Full conversation thread: ${threadTitle} (${messages.length} messages)`}
   lang={lang}
   alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/entries/threads/${Astro.params.threadId}/` : undefined}
+  breadcrumbs={breadcrumbs}
 >
   <article class="container">
     <header class="thread-header">

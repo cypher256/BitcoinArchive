@@ -31,6 +31,11 @@ const threadId = entry.data.threadId;
 const threadMessages = threadId
   ? allEntries.filter((e) => e.data.threadId === threadId).length
   : 0;
+const breadcrumbs = [
+  { name: t('nav.home'), url: localePath('/', lang) },
+  { name: t('nav.entries'), url: localePath('/entries/', lang) },
+  { name: entry.data.title, url: localePath(`/entries/${entry.id}/`, lang) },
+];
 ---
 
 <BaseLayout
@@ -42,6 +47,7 @@ const threadMessages = threadId
   publishedTime={entry.data.date}
   author={entry.data.author}
   ogImage={`/og/ja/${entry.id}.png`}
+  breadcrumbs={breadcrumbs}
 >
   <article class="container">
     <nav class="entry-nav entry-nav-top">

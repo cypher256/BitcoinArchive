@@ -17,9 +17,13 @@ interface Props {
   author?: string;
   noindex?: boolean;
   ogImage?: string;
+  breadcrumbs?: Array<{
+    name: string;
+    url: string;
+  }>;
 }
 
-const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author, noindex, ogImage } = Astro.props;
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author, noindex, ogImage, breadcrumbs } = Astro.props;
 ---
 
 <!doctype html>
@@ -37,6 +41,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       author={author}
       noindex={noindex}
       ogImage={ogImage}
+      breadcrumbs={breadcrumbs}
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj3dQfHBBQxVlKRE73ZTgCnDwQy+0TQ2vQa03ZBsiVQx0K5Pp69WautLLi" crossorigin="anonymous">
   </head>
