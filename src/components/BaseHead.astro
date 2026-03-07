@@ -10,12 +10,13 @@ interface Props {
   publishedTime?: Date;
   author?: string;
   noindex?: boolean;
+  ogImage?: string;
 }
 
-const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false } = Astro.props;
+const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage } = Astro.props;
 const siteUrl = 'https://cypher256.github.io/BitcoinArchive';
 const resolvedCanonical = canonicalUrl || Astro.url.href;
-const ogImageUrl = `${siteUrl}/images/og-default.png`;
+const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/images/og-default.png`;
 
 // hreflang: 両方の alternate が揃っている場合のみ完全なクラスタを出力
 // 片側しか渡されていない場合は、自分自身を補完する
