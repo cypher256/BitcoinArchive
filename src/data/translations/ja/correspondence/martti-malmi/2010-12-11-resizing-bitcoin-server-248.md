@@ -26,4 +26,4 @@ translationStatus: complete
 
 Bitcoin.orgが今日もしばらくダウンしていました。pingには応答しましたが、sshやhttpには応答しませんでした。再起動してメモリ不足エラーが原因でmysqldがkillされたことが判明しました。前回も同じエラーでしたが、その時はapacheがkillされていました。他に良い方法が思いつかなかったので、サーバーのメモリを512MBから1024MBに増設しました。
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

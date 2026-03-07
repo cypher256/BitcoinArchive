@@ -40,4 +40,4 @@ translationStatus: complete
 >
 > 下部まで匿名という言葉は出てきませんが、中央当局が身分証明情報を取得することがないことや、Bitcoinアドレスの見た目など、他のすべての特徴から、匿名性を求める人々はすでにそれを察するだろうと思います。
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

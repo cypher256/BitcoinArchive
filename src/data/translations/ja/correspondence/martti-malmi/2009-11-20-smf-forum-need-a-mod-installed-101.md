@@ -55,4 +55,4 @@ translationStatus: complete
 >>
 >> 朗報です：彼が初めてBitcoinを販売したそうです。誰かが彼の持っている分をすべて買い取りました。買い手と売り手のどちらが先に現れるか気になっていたのですが。
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

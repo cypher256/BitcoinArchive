@@ -28,4 +28,4 @@ translationStatus: complete
 
 ところで、近いうちにウェブホストの費用やあなたの取引所サービスの支援などのための資金を、郵送の現金という形で確保できそうだ。受け取って、プロジェクトの会計係を務めてもらえるか？
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

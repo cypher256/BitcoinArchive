@@ -28,4 +28,4 @@ translationStatus: complete
 
 > 回避策のアイデアがありますが、エラーがどのファイルで発生しているかによります。db.logにエラーがいくつか蓄積されているなら、送ってもらえますか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datですか、それともaddr.datやwallet.datも含まれますか？
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

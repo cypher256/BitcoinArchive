@@ -32,4 +32,4 @@ translationStatus: complete
 >
 > ホームページに変更を加える必要があるとき、すべての翻訳に反映する単純作業をXunieのような人に頼めると助かります。自分で全部やらなくて済みますから。（軽微な変更の多くは、言語を理解しなくても翻訳ページを修正できます）
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

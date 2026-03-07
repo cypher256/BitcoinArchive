@@ -31,4 +31,4 @@ https://backup:cAr26Ram@www.bitcoin.org/backup/bitcoinsite.tar.bz2.gpg
 
 毎日GMT 11:00に更新されます。
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
