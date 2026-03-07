@@ -140,6 +140,6 @@ Quotes and source text should not be rewritten just to match the house style.
 - `Adam Back` -> `アダム・バック`
 - `Wei Dai` -> `ウェイ・ダイ`
 - `Jeff Garzik` -> `ジェフ・ガージック`
-- `Gavin Andresen` -> `ギャビン・アンドリーセン`
+- `Gavin Andresen` -> `ギャビン・アンドレセン`
 - `Martti Malmi` -> `マルッティ・マルミ`
 - `Mike Hearn` -> `マイク・ハーン`

@@ -9,7 +9,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがギャビン・アンドリーセンにソースコードリポジトリの管理権を与え、ビットコインプロジェクトのリーダーとして承認した。アンドリーセンはBitcointalkフォーラムで移行を公式に発表した。"
+description: "サトシ・ナカモトがギャビン・アンドレセンにソースコードリポジトリの管理権を与え、ビットコインプロジェクトのリーダーとして承認した。アンドレセンはBitcointalkフォーラムで移行を公式に発表した。"
 isSatoshi: false
 threadId: "satoshi-gavin-andresen"
 threadPosition: 2

@@ -9,7 +9,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ギャビン・アンドリーセンがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
+description: "ギャビン・アンドレセンがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
 threadPosition: 1
