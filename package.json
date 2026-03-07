@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist",
+    "build": "node scripts/check-markdown-image-alt.mjs && node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist",
+    "check:image-alt": "node scripts/check-markdown-image-alt.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
     "astro": "astro"
