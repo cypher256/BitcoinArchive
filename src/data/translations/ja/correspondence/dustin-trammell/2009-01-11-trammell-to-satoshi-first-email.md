@@ -32,6 +32,6 @@ translationStatus: complete
 
 Trammellはソフトウェアを実行して2つの「Generated（生成済み）」メッセージを確認したが、クレジット欄は0.00と表示され、残高に変化がなかったと報告した。これが新しく生成されたコインの成熟要件に関連するものかどうかを尋ねた。
 
-このメールは、Satoshi Nakamotoとの最も初期に知られる私的なやり取りの一つを開始し、Trammellをビットコインの最初期のユーザーおよびマイナーの一人として位置づけた。Trammellは2013年11月にSatoshiとのメールのやり取りの全文を公開した。
+このメールは、サトシ・ナカモトとの最も初期に知られる私的なやり取りの一つを開始し、トランメルをビットコインの最初期のユーザーおよびマイナーの一人として位置づけた。トランメルは2013年11月にサトシとのメールのやり取りの全文を公開した。
 
-*出典：2013年11月にDustin Trammellにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*
+*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

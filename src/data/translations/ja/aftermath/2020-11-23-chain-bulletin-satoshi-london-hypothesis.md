@@ -31,7 +31,7 @@ translationStatus: complete
 
 **The Timesの見出し証拠：**
 
-ジェネシスブロックには「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というメッセージが含まれている。Karaivanovは、この正確な見出しがThe Times of Londonの英国版印刷版にのみ掲載されたことを示した — 米国版は大幅に異なる内容とレイアウトであった。2008年、The Timesの180万人の印刷版読者のうち77万人（43%）がロンドン在住であり、物理的な新聞へのアクセス地点として統計的にロンドンが最も可能性が高い。
+ジェネシスブロックには「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というメッセージが含まれている。カライヴァノフは、この正確な見出しがThe Times of Londonの英国版印刷版にのみ掲載されたことを示した — 米国版は大幅に異なる内容とレイアウトであった。2008年、The Timesの180万人の印刷版読者のうち77万人（43%）がロンドン在住であり、物理的な新聞へのアクセス地点として統計的にロンドンが最も可能性が高い。
 
 **タイムスタンプ分析：**
 
