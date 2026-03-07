@@ -26,7 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2013年9月3日、Sergio Demian Lernerは「A New Mystery about Satoshi Hidden in the Bitcoin Block-Chain」を発表し、5か月前に発表したExtraNonce勾配分析とは独立した、サトシの初期マイニングにおける第二の指紋を明らかにした。
+2013年9月3日、セルジオ・デミアン・ラーナーは「A New Mystery about Satoshi Hidden in the Bitcoin Block-Chain」を発表し、5か月前に発表したExtraNonce勾配分析とは独立した、サトシの初期マイニングにおける第二の指紋を明らかにした。
 
 **発見：**
 

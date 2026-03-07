@@ -32,7 +32,7 @@ secondarySources:
 
 On August 15, 2010, at approximately 18:08 UTC, Bitcoin developer Jeff Garzik noticed an anomaly in Block 74638 and posted on the BitcoinTalk forum:
 
-> Strange block 74638 — 92233720368.54277039 BTC? Is that UINT64_MAX, I wonder?
+> "Strange block 74638 — 92233720368.54277039 BTC? Is that UINT64_MAX, I wonder?"
 
 A single transaction in Block 74638 had created **184,467,440,737.09551616 BTC** — two outputs of 92,233,720,368.54277039 BTC each — approximately 9,000 times Bitcoin's total intended supply of 21 million BTC.
 

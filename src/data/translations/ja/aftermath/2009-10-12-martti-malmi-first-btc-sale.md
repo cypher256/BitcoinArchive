@@ -26,7 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2009年10月12日、Martti MalmiはNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した — ビットコインと法定通貨の最初の既知の交換である。
+2009年10月12日、マルッティ・マルミはNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した — ビットコインと法定通貨の最初の既知の交換である。
 
 1週間前の2009年10月5日、NewLibertyStandardはビットコイン史上初の為替レート（1ドル = 1,309.03 BTC）を公開し、初歩的な取引所サイトを開設していた。Malmiの動機は市場の立ち上げを支援することだった。市場が存在するには、誰かが最初の売り手にならなければならない。
 

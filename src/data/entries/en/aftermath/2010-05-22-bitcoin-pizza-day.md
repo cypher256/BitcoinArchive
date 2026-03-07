@@ -30,7 +30,7 @@ featured: true
 
 On May 18, 2010, Laszlo Hanyecz posted on the BitcoinTalk forum:
 
-> I'll pay 10,000 bitcoins for a couple of pizzas... like maybe 2 large ones so I have some left over for the next day. I like having left over pizza to nibble on later.
+> "I'll pay 10,000 bitcoins for a couple of pizzas... like maybe 2 large ones so I have some left over for the next day. I like having left over pizza to nibble on later."
 
 On May 22, 2010, 19-year-old Jeremy Sturdivant (forum handle "jercos") accepted the offer. He ordered two large pizzas from Papa John's, had them delivered to Hanyecz's home in Jacksonville, Florida, and received 10,000 BTC in return. Hanyecz confirmed: "I just want to report that I successfully traded 10,000 bitcoins for pizza."
 

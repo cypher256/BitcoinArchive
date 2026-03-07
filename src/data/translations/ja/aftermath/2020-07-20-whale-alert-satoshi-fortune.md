@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2020年7月、ブロックチェーン追跡サービスWhale Alertは「The Satoshi Fortune」を発表した。Sergio Demian Lernerの先行Patoshi研究を裏付け、さらに精緻化した独立分析である。
+2020年7月、ブロックチェーン追跡サービスWhale Alertは「The Satoshi Fortune」を発表した。セルジオ・デミアン・ラーナーの先行Patoshi研究を裏付け、さらに精緻化した独立分析である。
 
 **主要な発見：**
 
