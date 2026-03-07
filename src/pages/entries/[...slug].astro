@@ -8,15 +8,17 @@ import { useTranslations, formatDate, localePath } from '../../i18n/utils';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
+  const jaEntries = await getCollection('entries_ja');
+  const jaIds = new Set(jaEntries.filter((e) => e.data.aftermathType !== 'biography').map((e) => e.id));
   return entries.filter((e) => e.data.aftermathType !== 'biography').map((entry) => ({
     params: { slug: entry.id },
-    props: { entry },
+    props: { entry, hasJa: jaIds.has(entry.id) },
   }));
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { entry } = Astro.props;
+const { entry, hasJa } = Astro.props;
 const { Content } = await render(entry);
 
 const allEntries = await getCollection('entries');
@@ -35,7 +37,7 @@ const threadMessages = threadId
   title={`${entry.data.title} - ${t('site.title')}`}
   description={entry.data.description}
   lang={lang}
-  alternateJa={`https://cypher256.github.io/BitcoinArchive/ja/entries/${entry.id}/`}
+  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/entries/${entry.id}/` : undefined}
   ogType="article"
   publishedTime={entry.data.date}
   author={entry.data.author}

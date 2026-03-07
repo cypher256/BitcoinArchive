@@ -9,12 +9,19 @@ interface Props {
   ogType?: 'website' | 'article';
   publishedTime?: Date;
   author?: string;
+  noindex?: boolean;
 }
 
-const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author } = Astro.props;
+const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false } = Astro.props;
 const siteUrl = 'https://cypher256.github.io/BitcoinArchive';
 const resolvedCanonical = canonicalUrl || Astro.url.href;
 const ogImageUrl = `${siteUrl}/images/og-default.png`;
+
+// hreflang: 両方の alternate が揃っている場合のみ完全なクラスタを出力
+// 片側しか渡されていない場合は、自分自身を補完する
+const enUrl = alternateEn || (lang === 'en' ? resolvedCanonical : undefined);
+const jaUrl = alternateJa || (lang === 'ja' ? resolvedCanonical : undefined);
+const hasHreflang = enUrl && jaUrl;
 ---
 
 <meta charset="utf-8" />
@@ -27,9 +34,10 @@ const ogImageUrl = `${siteUrl}/images/og-default.png`;
 <meta name="description" content={description} />
 
 <link rel="canonical" href={resolvedCanonical} />
-{alternateEn && <link rel="alternate" hreflang="en" href={alternateEn} />}
-{alternateJa && <link rel="alternate" hreflang="ja" href={alternateJa} />}
-<link rel="alternate" hreflang="x-default" href={alternateEn || resolvedCanonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+{hasHreflang && <link rel="alternate" hreflang="en" href={enUrl} />}
+{hasHreflang && <link rel="alternate" hreflang="ja" href={jaUrl} />}
+{hasHreflang && <link rel="alternate" hreflang="x-default" href={enUrl} />}
 
 <meta property="og:type" content={ogType} />
 <meta property="og:url" content={resolvedCanonical} />

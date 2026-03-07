@@ -24,6 +24,15 @@ export async function getStaticPaths() {
       countMap.set(p.slug, (countMap.get(p.slug) || 0) + 1);
     }
   }
+  // 日本語側に存在する参加者 slug を取得
+  const jaEntries = await getEntries('ja');
+  const jaSlugs = new Set<string>();
+  for (const entry of jaEntries) {
+    for (const p of entry.data.participants) {
+      jaSlugs.add(p.slug);
+    }
+  }
+
   const sorted = Array.from(slugs).sort((a, b) => (countMap.get(b) || 0) - (countMap.get(a) || 0));
   return sorted.map((slug, i) => ({
     params: { participant: slug },
@@ -32,13 +41,14 @@ export async function getStaticPaths() {
       participantName: nameMap.get(slug)!,
       prevParticipant: i > 0 ? { slug: sorted[i - 1], name: nameMap.get(sorted[i - 1])! } : null,
       nextParticipant: i < sorted.length - 1 ? { slug: sorted[i + 1], name: nameMap.get(sorted[i + 1])! } : null,
+      hasJa: jaSlugs.has(slug),
     },
   }));
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { participantSlug, participantName, prevParticipant, nextParticipant } = Astro.props;
+const { participantSlug, participantName, prevParticipant, nextParticipant, hasJa } = Astro.props;
 const entries = await getEntries(lang);
 const filtered = entries.filter((e) =>
   e.data.participants.some((p) => p.slug === participantSlug)
@@ -60,6 +70,7 @@ const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]
   title={`${participantName} - ${t('site.title')}`}
   description={biographyEntry?.data.description ?? `All entries involving ${participantName} in the Bitcoin Archive`}
   lang={lang}
+  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/participants/${participantSlug}/` : undefined}
 >
   <div class="container">
     <nav class="participant-nav participant-nav-top">

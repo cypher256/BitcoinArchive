@@ -13,15 +13,23 @@ export async function getStaticPaths() {
       tags.add(tag);
     }
   }
+  // 英語側に存在するタグを取得
+  const enEntries = await getDisplayEntries('en');
+  const enTags = new Set<string>();
+  for (const entry of enEntries) {
+    for (const tag of entry.data.tags ?? []) {
+      enTags.add(tag);
+    }
+  }
   return Array.from(tags).map((tag) => ({
     params: { tag },
-    props: { tag },
+    props: { tag, hasEn: enTags.has(tag) },
   }));
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { tag } = Astro.props;
+const { tag, hasEn } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
@@ -32,6 +40,7 @@ const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
   title={`${translateTag(tag, lang)} - ${t('site.title')}`}
   description={`タグ「${translateTag(tag, lang)}」のエントリー一覧`}
   lang={lang}
+  alternateEn={hasEn ? `https://cypher256.github.io/BitcoinArchive/tags/${tag}/` : undefined}
 >
   <div class="container">
     <h1>{translateTag(tag, lang)}</h1>

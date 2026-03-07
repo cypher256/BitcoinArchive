@@ -15,9 +15,10 @@ interface Props {
   ogType?: 'website' | 'article';
   publishedTime?: Date;
   author?: string;
+  noindex?: boolean;
 }
 
-const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author } = Astro.props;
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author, noindex } = Astro.props;
 ---
 
 <!doctype html>
@@ -33,6 +34,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       ogType={ogType}
       publishedTime={publishedTime}
       author={author}
+      noindex={noindex}
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj3dQfHBBQxVlKRE73ZTgCnDwQy+0TQ2vQa03ZBsiVQx0K5Pp69WautLLi" crossorigin="anonymous">
   </head>

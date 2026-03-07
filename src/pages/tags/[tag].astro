@@ -13,15 +13,23 @@ export async function getStaticPaths() {
       tags.add(tag);
     }
   }
+  // 日本語側に存在するタグを取得
+  const jaEntries = await getDisplayEntries('ja');
+  const jaTags = new Set<string>();
+  for (const entry of jaEntries) {
+    for (const tag of entry.data.tags ?? []) {
+      jaTags.add(tag);
+    }
+  }
   return Array.from(tags).map((tag) => ({
     params: { tag },
-    props: { tag },
+    props: { tag, hasJa: jaTags.has(tag) },
   }));
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { tag } = Astro.props;
+const { tag, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
@@ -32,6 +40,7 @@ const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
   title={`${tag} - ${t('site.title')}`}
   description={`Entries tagged "${tag}" in the Bitcoin Archive`}
   lang={lang}
+  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/tags/${tag}/` : undefined}
 >
   <div class="container">
     <h1>{tag}</h1>

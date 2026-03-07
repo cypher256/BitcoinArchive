@@ -8,15 +8,17 @@ export async function getStaticPaths() {
   const { getDisplayEntries } = await import('../../i18n/utils');
   const entries = await getDisplayEntries('en');
   const sources = [...new Set(entries.map((e) => e.data.source))];
+  const jaEntries = await getDisplayEntries('ja');
+  const jaSources = new Set(jaEntries.map((e) => e.data.source));
   return sources.map((source) => ({
     params: { source },
-    props: { source },
+    props: { source, hasJa: jaSources.has(source) },
   }));
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { source } = Astro.props;
+const { source, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
@@ -28,6 +30,7 @@ const sourceLabel = t(`source.${source}` as any) || source;
   title={`${sourceLabel} - ${t('site.title')}`}
   description={`${sourceLabel} entries in the Bitcoin Archive`}
   lang={lang}
+  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/sources/${source}/` : undefined}
 >
   <div class="container">
     <h1>{sourceLabel}</h1>
