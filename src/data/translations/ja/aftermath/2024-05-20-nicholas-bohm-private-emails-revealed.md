@@ -9,7 +9,7 @@ participants:
     slug: "nicholas-bohm"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ニコラス・ボームは、これまで2009年1月の bitcoin-list における公開バグ報告で知られていたが、COPA v Wright の証拠開示により、実際にはサトシと私信でも継続的にやり取りしていたことが判明した。提出資料には、ルーター設定、ポート8333、'not accepted' ブロック、2009年7月時点のネットワークの極端な小ささに関するやり取りが含まれている。"
+description: "ニコラス・ボームは、これまで2009年1月の bitcoin-list における公開バグ報告で知られていたが、COPA対ライト裁判の証拠開示により、実際にはサトシと私信でも継続的にやり取りしていたことが判明した。提出資料には、ルーター設定、ポート8333、'not accepted' ブロック、2009年7月時点のネットワークの極端な小ささに関するやり取りが含まれている。"
 isSatoshi: false
 aftermathType: "court-testimony"
 tags:
@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-**COPA v Wright** の裁判記録から見えてきた発見のひとつが、**ニコラス・ボーム** に関するものだ。
+**COPA対ライト裁判** の裁判記録から見えてきた発見のひとつが、**ニコラス・ボーム** に関するものだ。
 
 裁判以前、ニコラス・ボームは主に 2009年1月25日の bitcoin-list 投稿で知られていた。そこではソフトウェアの問題を報告し、サトシは `debug.log` を直接送ってほしいと返信していた。だが、2024年5月の メラー判決は、さらに重要な事実を明記している。
 
