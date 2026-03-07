@@ -32,7 +32,7 @@ translationStatus: complete
 
 **関連:** [最終版（2008年10月31日）](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)
 
-この初期草稿は、最終公開版より約1ヶ月前のものである。2008年10月31日の暗号学メーリングリストでの公開発表に先立ち、Satoshi Nakamotoが選ばれた個人に対して個人的に共有した。
+この初期草稿は、最終公開版より約1ヶ月前のものである。2008年10月31日の暗号学メーリングリストでの公開発表に先立ち、サトシ・ナカモトが選ばれた個人に対して個人的に共有した。
 
 **最終版との主な相違点：**
 - 連絡先メールアドレス：satoshi@vistomail.com（最終版ではsatoshin@gmx.com）

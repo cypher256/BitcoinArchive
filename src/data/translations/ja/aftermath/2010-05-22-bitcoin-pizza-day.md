@@ -1,5 +1,5 @@
 ---
-title: "ビットコインピザデー — ラズロ・ハニェツが10,000 BTCでピザ2枚を購入"
+title: "ビットコインピザデー — ラズロ・ハニエツが10,000 BTCでピザ2枚を購入"
 date: 2010-05-22T19:17:26Z
 source: aftermath
 sourceUrl: "https://bitcointalk.org/index.php?topic=137.0"
@@ -9,7 +9,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Jeremy Sturdivant"
     slug: "jeremy-sturdivant"
-description: "ラズロ・ハニェツがPapa John'sのピザ2枚を10,000 BTCで購入した。ビットコインによる最初の物理的商品の購入であり、2010年5月22日に成立したこの取引は毎年「ビットコインピザデー」として祝われている。当時の10,000 BTCは約41ドルだった。"
+description: "ラズロ・ハニエツがPapa John'sのピザ2枚を10,000 BTCで購入した。ビットコインによる最初の物理的商品の購入であり、2010年5月22日に成立したこの取引は毎年「ビットコインピザデー」として祝われている。当時の10,000 BTCは約41ドルだった。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:
@@ -29,7 +29,7 @@ translationStatus: complete
 featured: true
 ---
 
-2010年5月18日、ラズロ・ハニェツはBitcoinTalkフォーラムに投稿した：
+2010年5月18日、ラズロ・ハニエツはBitcoinTalkフォーラムに投稿した：
 
 > 「ピザ2枚と引き換えに10,000ビットコイン支払うよ。ラージサイズ2枚くらいで、次の日に残りを食べられるようにしたいんだよね。残りをちょっとずつ食べるのが好きなんだよ。」
 
