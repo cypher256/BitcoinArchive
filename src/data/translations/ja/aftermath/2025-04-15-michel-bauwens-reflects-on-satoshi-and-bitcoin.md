@@ -33,11 +33,11 @@ translationStatus: complete
 
 ミシェル・バウエンスは、そのやり取りは濃密ではなかったが印象的だったと述べた。
 
-> "Satoshi wrote me a few times."
+> 「サトシからは数回メールが来た」
 
 彼によれば、1通はサトシがなぜ P2P Foundation のサイトにビットコイン論文を載せたかったのかを説明するものだった。さらに別の1通では、数ビットコインを送る提案もしていたという。
 
-> "And offering me a few bitcoins. Unfortunately I didn't answer that proposal."
+> 「それに、数ビットコインを送ろうという提案もあった。残念ながら、その提案には返事をしなかった」
 
 またミシェル・バウエンスは、後年に報道で「日本人のあの人物」がサトシだとされた際、サトシ本人が「自分はその人物ではない」と書いてきたこと、さらに「また書く」と言ったものの、その約束は果たされなかったことも回想している。
 
@@ -45,7 +45,7 @@ translationStatus: complete
 
 ミシェル・バウエンスは、ビットコインのエネルギー消費には当時から懐疑的だったとしつつ、その歴史的意義は高く評価した。
 
-> "It was the first globally scalable, socially-sovereign currency that was not created by a firm, nor by the state."
+> 「それは、企業でも国家でもない主体が生み出した、初めて世界規模でスケール可能な、社会的に主権的な通貨だった」
 
 彼はまた、ビットコインが人類にとって初めての「普遍的台帳」をもたらし、会計を閉じた制度の内部から、より開かれたエコシステムへ押し出したと論じた。
 
