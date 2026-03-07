@@ -25,7 +25,7 @@ translationStatus: complete
 featured: true
 ---
 
-Running bitcoin
+> Running bitcoin
 
 *[@halfin — 2009年1月10日 午後10時33分 PST / 2009年1月11日 06:33 UTC]*
 
