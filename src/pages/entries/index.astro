@@ -10,7 +10,7 @@ const lang = 'en';
 const t = useTranslations(lang);
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
-const displayEntries = collapseThreads(entries, threadCounts, threadStarters);
+const displayEntries = collapseThreads(entries, threadCounts, threadStarters).reverse();
 
 // Load git dates (generated at build time)
 const gitDatesPath = join(process.cwd(), 'src/data/git-dates.json');
@@ -31,7 +31,7 @@ const hasGitDates = Object.keys(gitDates).length > 0;
     <div class="entries-header">
       <p class="entry-count">{entries.length} entries</p>
       <div class="sort-controls">
-        <button class="sort-btn active" data-sort="date" data-order="asc">{t('sort.postDate')} ↑</button>
+        <button class="sort-btn active" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         {hasGitDates && (
           <>
             <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
