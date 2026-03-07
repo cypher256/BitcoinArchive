@@ -7,7 +7,7 @@ author: "Laszlo Hanyecz"
 participants:
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "ラズロ・ハニェツが2枚のピザに10,000ビットコインを支払うという有名な申し出を投稿。2010年5月22日に最初の現実世界でのビットコイン取引として知られるものとなり、現在はビットコインピザデーとして祝われている。"
+description: "ラズロ・ハニエツが2枚のピザに10,000ビットコインを支払うという有名な申し出を投稿。2010年5月22日に最初の現実世界でのビットコイン取引として知られるものとなり、現在はビットコインピザデーとして祝われている。"
 isSatoshi: false
 threadId: "pizza-for-bitcoins"
 threadPosition: 1

@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Tim Swansonによる包括的なレイ・ディリンジャーインタビュー。ビットコインホワイトペーパー10周年を記念して実施。コードレビューの技術的詳細、有名な浮動小数点の発見、そしてサトシが倍精度浮動小数点を使用した理由が明かされる。"
+description: "ティム・スワンソンによる包括的なレイ・ディリンジャーインタビュー。ビットコインホワイトペーパー10周年を記念して実施。コードレビューの技術的詳細、有名な浮動小数点の発見、そしてサトシが倍精度浮動小数点を使用した理由が明かされる。"
 isSatoshi: false
 aftermathType: "interview"
 tags:

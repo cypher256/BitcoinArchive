@@ -23,5 +23,8 @@ src/data/git-dates.json
 # macOS-specific files
 .DS_Store
 
+# temporary internal work files
+temp_*
+
 # jetbrains setting folder
 .idea/
