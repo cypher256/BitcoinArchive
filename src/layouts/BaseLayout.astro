@@ -12,9 +12,12 @@ interface Props {
   canonicalUrl?: string;
   alternateJa?: string;
   alternateEn?: string;
+  ogType?: 'website' | 'article';
+  publishedTime?: Date;
+  author?: string;
 }
 
-const { title, description, lang, canonicalUrl, alternateJa, alternateEn } = Astro.props;
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,6 +30,9 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn } = Ast
       canonicalUrl={canonicalUrl}
       alternateJa={alternateJa}
       alternateEn={alternateEn}
+      ogType={ogType}
+      publishedTime={publishedTime}
+      author={author}
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj3dQfHBBQxVlKRE73ZTgCnDwQy+0TQ2vQa03ZBsiVQx0K5Pp69WautLLi" crossorigin="anonymous">
   </head>
