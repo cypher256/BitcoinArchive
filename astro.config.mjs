@@ -19,5 +19,7 @@ export default defineConfig({
     remarkPlugins: [[remarkMath, { singleDollarTextMath: false }]],
     rehypePlugins: [rehypeKatex],
   },
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    filter: (page) => !page.includes('/search/'),
+  })],
 });

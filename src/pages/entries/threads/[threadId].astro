@@ -16,6 +16,15 @@ export async function getStaticPaths() {
     }
   }
 
+  // 日本語側に存在するスレッドIDを取得
+  const jaEntries = await getCollection('entries_ja');
+  const jaThreadCounts = new Map<string, number>();
+  for (const entry of jaEntries) {
+    if (entry.data.threadId) {
+      jaThreadCounts.set(entry.data.threadId, (jaThreadCounts.get(entry.data.threadId) || 0) + 1);
+    }
+  }
+
   return [...threadMap.entries()]
     .filter(([_, msgs]) => msgs.length >= 2)
     .map(([threadId, msgs]) => {
@@ -25,6 +34,7 @@ export async function getStaticPaths() {
         props: {
           messages: msgs,
           threadTitle: deriveThreadTitle(threadId, msgs, 'en'),
+          hasJa: (jaThreadCounts.get(threadId) || 0) >= 2,
         },
       };
     });
@@ -32,7 +42,7 @@ export async function getStaticPaths() {
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { messages, threadTitle } = Astro.props;
+const { messages, threadTitle, hasJa } = Astro.props;
 
 const rendered = await Promise.all(
   messages.map(async (msg: any) => {
@@ -57,6 +67,7 @@ const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(m
   title={`${threadTitle} — Thread - ${t('site.title')}`}
   description={`Full conversation thread: ${threadTitle} (${messages.length} messages)`}
   lang={lang}
+  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/entries/threads/${Astro.params.threadId}/` : undefined}
 >
   <article class="container">
     <header class="thread-header">

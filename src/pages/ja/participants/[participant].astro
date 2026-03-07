@@ -24,6 +24,15 @@ export async function getStaticPaths() {
       countMap.set(p.slug, (countMap.get(p.slug) || 0) + 1);
     }
   }
+  // 英語側に存在する参加者 slug を取得
+  const enEntries = await getEntries('en');
+  const enSlugs = new Set<string>();
+  for (const entry of enEntries) {
+    for (const p of entry.data.participants) {
+      enSlugs.add(p.slug);
+    }
+  }
+
   const sorted = Array.from(slugs).sort((a, b) => (countMap.get(b) || 0) - (countMap.get(a) || 0));
   return sorted.map((slug, i) => ({
     params: { participant: slug },
@@ -32,13 +41,14 @@ export async function getStaticPaths() {
       participantName: translateParticipantName(nameMap.get(slug)!, slug, 'ja'),
       prevParticipant: i > 0 ? { slug: sorted[i - 1], name: translateParticipantName(nameMap.get(sorted[i - 1])!, sorted[i - 1], 'ja') } : null,
       nextParticipant: i < sorted.length - 1 ? { slug: sorted[i + 1], name: translateParticipantName(nameMap.get(sorted[i + 1])!, sorted[i + 1], 'ja') } : null,
+      hasEn: enSlugs.has(slug),
     },
   }));
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { participantSlug, participantName, prevParticipant, nextParticipant } = Astro.props;
+const { participantSlug, participantName, prevParticipant, nextParticipant, hasEn } = Astro.props;
 const entries = await getEntries(lang);
 const filtered = entries.filter((e) =>
   e.data.participants.some((p) => p.slug === participantSlug)
@@ -60,7 +70,7 @@ const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]
   title={`${participantName} - ${t('site.title')}`}
   description={biographyEntry?.data.description ?? `${participantName}に関するエントリー一覧`}
   lang={lang}
-  alternateEn={`https://cypher256.github.io/BitcoinArchive/participants/${participantSlug}/`}
+  alternateEn={hasEn ? `https://cypher256.github.io/BitcoinArchive/participants/${participantSlug}/` : undefined}
 >
   <div class="container">
     <nav class="participant-nav participant-nav-top">
