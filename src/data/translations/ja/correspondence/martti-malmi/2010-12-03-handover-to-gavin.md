@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコイン - 後継者としてギャビン・アンドリーセンを推薦"
+title: "Re: ビットコイン - 後継者としてギャビン・アンドレセンを推薦"
 date: 2010-12-03T19:58:40Z
 source: correspondence
 sourceUrl: "https://mmalmi.github.io/satoshi/"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼を信頼している、責任感があり、プロフェッショナル」と述べてギャビン・アンドリーセンを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
+description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼を信頼している、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 241

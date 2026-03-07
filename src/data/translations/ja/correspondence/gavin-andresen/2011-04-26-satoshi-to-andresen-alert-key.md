@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "サトシ・ナカモトの最後の既知のプライベートメール。ビットコインネットワークのアラートキーをギャビン・アンドリーセンに移譲し、自分を「謎の影の人物」として描くのをやめるよう求め、他のことに移ったと宣言した。"
+description: "サトシ・ナカモトの最後の既知のプライベートメール。ビットコインネットワークのアラートキーをギャビン・アンドレセンに移譲し、自分を「謎の影の人物」として描くのをやめるよう求め、他のことに移ったと宣言した。"
 isSatoshi: true
 threadId: "satoshi-gavin-andresen"
 threadPosition: 3

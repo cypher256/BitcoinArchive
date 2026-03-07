@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがPGP暗号化でサーバーパスワードを送る準備ができたことを伝え、ギャビン・アンドリーセンへのサーバー管理の委任について同意。"
+description: "マルミがPGP暗号化でサーバーパスワードを送る準備ができたことを伝え、ギャビン・アンドレセンへのサーバー管理の委任について同意。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
 threadPosition: 242
