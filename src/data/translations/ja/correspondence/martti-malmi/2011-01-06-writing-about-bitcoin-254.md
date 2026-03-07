@@ -39,4 +39,4 @@ Gavin Andresen の書き込み：
 
 EFFは本当に重要だ。彼らとは良い関係を築きたい。私たちは彼らが好むタイプのプロジェクトだ。彼らはTORプロジェクトを支援し、P2Pファイル共有の保護に多大な貢献をしてきた。
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -40,4 +40,4 @@ translationStatus: complete
 > ANSI版では、著作権記号に余分なゴミ文字が付いて表示されます。このハック
 > は非Unicode（ANSI）の場合にそれを修正するものです。
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

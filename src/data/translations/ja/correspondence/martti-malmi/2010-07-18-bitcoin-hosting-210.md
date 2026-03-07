@@ -64,4 +64,4 @@ mmalmi@cc.hut.fi の書き込み:
 > 良いデータセンターと接続があるなら、検討の価値があります。$10/月はRackspaceより約$20安いです。一方で、寄付が届くならRackspaceの料金は問題ありません。
 >
 
-*出典：COPA対Wright裁判の証言の一環として、2024年2月にMartti MalmiによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
