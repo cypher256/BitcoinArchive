@@ -39,6 +39,6 @@ Trammellはその日の後ほど（2009年1月13日、UTC 18:40）にIPアドレ
 
 翌日の2009年1月14日UTC 19:46に、Satoshiは1回の取引でTrammellに25.0 BTCを送金した（txid: d71fd2f64c0b34465b7518d240c00e83f6a5b10138a7079d1252858fe7e6b577）。この取引はアドレス1Jhk2DHosaaZx1E4CbnTGcKM7FC88YHYv9からTrammellのアドレス1DCbY2GYVaAMCBpuBNN5GVg3a47pNK1wdiへ送られた。
 
-その後のやり取りでは、IPアドレスによるビットコイン送金の安全性の問題についても触れられた。Satoshiはこれらの議論も一因として、最終的にIP送金機能をソフトウェアから完全に削除した。
+その後のやり取りでは、IPアドレスによるビットコイン送金の安全性の問題についても触れられた。サトシはこれらの議論も一因として、最終的にIP送金機能をソフトウェアから完全に削除した。
 
-*出典：2013年11月にDustin Trammellにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。取引の詳細はTrammellのブログに記録されている。*
+*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。取引の詳細はトランメルのブログに記録されている。*
