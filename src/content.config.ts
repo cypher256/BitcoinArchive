@@ -12,6 +12,7 @@ const sourceEnum = z.enum([
   'whitepaper',
   'sourceforge',
   'aftermath',
+  'bip',
 ]);
 
 const participantSchema = z.object({
