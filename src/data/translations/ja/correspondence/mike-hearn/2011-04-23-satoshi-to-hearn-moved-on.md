@@ -1,5 +1,5 @@
 ---
-title: "「他のことに移りました」"
+title: "「他のことに取り組むことにした」"
 date: 2011-04-23T15:40:00Z
 source: correspondence
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread5.html"
@@ -9,7 +9,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシの最後の既知のコミュニケーションの一つ。マイク・ハーンに他のことに移ったこと、Bitcoinはギャビンとみんなに託されていると伝える。"
+description: "サトシの最後の既知のコミュニケーションの一つ。マイク・ハーンに他のことに取り組むことにしたこと、ギャビンたちに任せれば安心だと伝える。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-holding-coins"
 threadPosition: 4
@@ -27,6 +27,6 @@ translationStatus: complete
 featured: true
 ---
 
-私は他のことに移った。GavinとみんなのもとでBitcoinはうまくいっている。
+他のことに取り組むことにした。ギャビンたちに任せれば、ビットコインは安心だ。
 
 あなたのBitcoinJが代替クライアントとして引き続き開発されることを願っている。Java開発者に取り組むべきものを与え、すべてをこなす必要のないシンプルな基盤により作業が容易だ。せっかちな新しいユーザーが、もう一方がまだブロックチェーンをダウンロードしている間に使い始められるようになれば、クリティカルマスに達するだろう。
