@@ -106,6 +106,20 @@ spoken or written utterance.
   justifies it.
 - Do not over-normalize distinct voices into uniform textbook Japanese.
 
+## Cross-Project Consistency (Novel)
+
+When the same Satoshi quote appears in both BitcoinArchive and NovelBitCoin,
+the archive's Japanese translation should match the novel's translation. The
+novel defines each character's voice in `bitcoin-novel_キャラ設定.md`; Satoshi's
+tone is 冷静で論理的、感情を表に出さない、業務連絡的な淡々さ (calm, logical,
+emotionless, matter-of-fact).
+
+Canonical example — Satoshi's final message to Mike Hearn:
+- English source: "I've moved on to other things. It's in good hands with
+  Gavin and everyone."
+- Novel JA: 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
+- Archive JA: must match the novel version above.
+
 ## Translation Priority
 
 When editing existing Japanese content, normalize in this order:
