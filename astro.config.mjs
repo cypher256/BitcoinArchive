@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { remarkRewriteBase } from './src/lib/remark-rewrite-base.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,7 +19,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [[remarkMath, { singleDollarTextMath: false }]],
+    remarkPlugins: [remarkRewriteBase, [remarkMath, { singleDollarTextMath: false }]],
     rehypePlugins: [rehypeKatex],
   },
   integrations: [sitemap({
