@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import AutoLinkNames from '../../components/AutoLinkNames.astro';
 import { render } from 'astro:content';
-import { useTranslations, getEntries, getBiographyForParticipant, localePath } from '../../i18n/utils';
+import { useTranslations, getEntries, getBiographyForParticipant, localePath, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads } from '../../data/threads';
 
 export async function getStaticPaths() {
@@ -70,7 +70,7 @@ const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]
   title={`${participantName} - ${t('site.title')}`}
   description={biographyEntry?.data.description ?? `All entries involving ${participantName} in the Bitcoin Archive`}
   lang={lang}
-  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/participants/${participantSlug}/` : undefined}
+  alternateJa={hasJa ? absoluteUrl(`/participants/${participantSlug}/`, 'ja') : undefined}
 >
   <div class="container">
     <nav class="participant-nav participant-nav-top">

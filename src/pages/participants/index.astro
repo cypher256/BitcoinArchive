@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { useTranslations, getDisplayEntries, localePath } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
@@ -24,7 +24,7 @@ const participants = Array.from(participantCounts.values()).sort((a, b) => b.cou
   title={`${t('nav.participants')} - ${t('site.title')}`}
   description={t('site.description')}
   lang={lang}
-  alternateJa="https://cypher256.github.io/BitcoinArchive/ja/participants/"
+  alternateJa={absoluteUrl('/participants/', 'ja')}
 >
   <div class="container">
     <h1>{t('nav.participants')}</h1>
