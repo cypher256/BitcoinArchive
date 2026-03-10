@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, translateTag } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, translateTag, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads } from '../../../data/threads';
 
 export async function getStaticPaths() {
@@ -40,7 +40,7 @@ const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
   title={`${translateTag(tag, lang)} - ${t('site.title')}`}
   description={`タグ「${translateTag(tag, lang)}」のエントリー一覧`}
   lang={lang}
-  alternateEn={hasEn ? `https://cypher256.github.io/BitcoinArchive/tags/${tag}/` : undefined}
+  alternateEn={hasEn ? absoluteUrl(`/tags/${tag}/`, 'en') : undefined}
 >
   <div class="container">
     <h1>{translateTag(tag, lang)}</h1>

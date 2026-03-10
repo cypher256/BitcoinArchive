@@ -18,7 +18,7 @@ const t = useTranslations(lang);
   <script type="application/json" id="graph-data" set:html={JSON.stringify(graphData)} />
 </div>
 
-<script is:inline define:vars={{ lang, basePath: `/BitcoinArchive${lang === 'ja' ? '/ja' : ''}`, entriesLabel: t('network.entries' as any), coLabel: t('network.coOccurrences' as any) }}>
+<script is:inline define:vars={{ lang, basePath: `${import.meta.env.BASE_URL.replace(/\/$/, '')}${lang === 'ja' ? '/ja' : ''}`, entriesLabel: t('network.entries' as any), coLabel: t('network.coOccurrences' as any) }}>
 (function() {
   var container = document.getElementById('network-graph');
   var dataEl = document.getElementById('graph-data');

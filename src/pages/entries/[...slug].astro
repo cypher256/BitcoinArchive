@@ -4,7 +4,7 @@ import EntryMeta from '../../components/EntryMeta.astro';
 import SourceCitation from '../../components/SourceCitation.astro';
 import AutoLinkNames from '../../components/AutoLinkNames.astro';
 import { getCollection, render } from 'astro:content';
-import { useTranslations, formatDate, localePath } from '../../i18n/utils';
+import { useTranslations, formatDate, localePath, absoluteUrl } from '../../i18n/utils';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -42,7 +42,7 @@ const breadcrumbs = [
   title={`${entry.data.title} - ${t('site.title')}`}
   description={entry.data.description}
   lang={lang}
-  alternateJa={hasJa ? `https://cypher256.github.io/BitcoinArchive/ja/entries/${entry.id}/` : undefined}
+  alternateJa={hasJa ? absoluteUrl(`/entries/${entry.id}/`, 'ja') : undefined}
   ogType="article"
   publishedTime={entry.data.date}
   author={entry.data.author}

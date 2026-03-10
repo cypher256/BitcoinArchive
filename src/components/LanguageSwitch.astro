@@ -7,7 +7,7 @@ interface Props {
 
 const { lang } = Astro.props;
 const { pathname } = Astro.url;
-const basePath = '/BitcoinArchive';
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 function getAlternatePath(targetLang: Lang): string {
   const pathWithoutBase = pathname.replace(basePath, '');

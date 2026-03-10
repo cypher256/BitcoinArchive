@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { useTranslations, getDisplayEntries, localePath } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -17,7 +17,7 @@ const sources = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
   title={`${t('nav.sources')} - ${t('site.title')}`}
   description={t('site.description')}
   lang={lang}
-  alternateEn="https://cypher256.github.io/BitcoinArchive/sources/"
+  alternateEn={absoluteUrl('/sources/', 'en')}
 >
   <div class="container">
     <h1>{t('nav.sources')}</h1>

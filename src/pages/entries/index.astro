@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads } from '../../data/threads';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -24,7 +24,7 @@ const hasGitDates = Object.keys(gitDates).length > 0;
   title={`${t('nav.entries')} - ${t('site.title')}`}
   description={t('site.description')}
   lang={lang}
-  alternateJa="https://cypher256.github.io/BitcoinArchive/ja/entries/"
+  alternateJa={absoluteUrl('/entries/', 'ja')}
 >
   <div class="container">
     <h1>{t('nav.entries')}</h1>

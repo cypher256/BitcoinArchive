@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
-import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag, absoluteUrl } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
 import { buildThreadInfo, collapseThreads } from '../../data/threads';
 
@@ -66,7 +66,7 @@ function tagWeight(count: number, max: number): number {
   title={`${t('site.title')} - ${t('site.subtitle')}`}
   description={t('site.description')}
   lang={lang}
-  alternateEn="https://cypher256.github.io/BitcoinArchive/"
+  alternateEn={absoluteUrl('/', 'en')}
 >
   <div class="container">
     <section class="hero">

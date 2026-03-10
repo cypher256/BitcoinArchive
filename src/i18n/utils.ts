@@ -17,12 +17,20 @@ export function useTranslations(lang: Lang) {
   };
 }
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const siteOrigin = import.meta.env.SITE ?? 'https://cypher256.github.io';
+
 export function localePath(path: string, lang: Lang): string {
   const clean = path.startsWith('/') ? path : `/${path}`;
   if (lang === 'ja') {
-    return `/BitcoinArchive/ja${clean}`;
+    return `${base}/ja${clean}`;
   }
-  return `/BitcoinArchive${clean}`;
+  return `${base}${clean}`;
+}
+
+/** Absolute URL for hreflang/canonical (e.g. https://bitcoin-archive.pages.dev/about/) */
+export function absoluteUrl(path: string, lang: Lang): string {
+  return `${siteOrigin}${localePath(path, lang)}`;
 }
 
 export async function getEntries(lang: Lang): Promise<CollectionEntry<'entries' | 'entries_ja'>[]> {

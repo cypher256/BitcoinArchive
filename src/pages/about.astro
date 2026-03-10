@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { useTranslations } from '../i18n/utils';
+import { useTranslations, absoluteUrl } from '../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
@@ -10,7 +10,7 @@ const t = useTranslations(lang);
   title={`${t('nav.about')} - ${t('site.title')}`}
   description="About the Bitcoin Archive project"
   lang={lang}
-  alternateJa="https://cypher256.github.io/BitcoinArchive/ja/about/"
+  alternateJa={absoluteUrl('/about/', 'ja')}
 >
   <div class="container">
     <h1>About Bitcoin Archive</h1>
