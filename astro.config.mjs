@@ -6,8 +6,10 @@ import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://cypher256.github.io',
-  base: '/BitcoinArchive',
+  site: process.env.CF_PAGES
+    ? 'https://bitcoin-archive.pages.dev'
+    : 'https://cypher256.github.io',
+  base: process.env.CF_PAGES ? '/' : '/BitcoinArchive',
   i18n: {
     locales: ['en', 'ja'],
     defaultLocale: 'en',
