@@ -18,7 +18,8 @@ export function useTranslations(lang: Lang) {
 }
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const siteOrigin = import.meta.env.SITE ?? 'https://cypher256.github.io';
+// All SEO absolute URLs point to the primary site (Cloudflare Pages)
+const primaryOrigin = 'https://bitcoin-archive.pages.dev';
 
 export function localePath(path: string, lang: Lang): string {
   const clean = path.startsWith('/') ? path : `/${path}`;
@@ -28,9 +29,11 @@ export function localePath(path: string, lang: Lang): string {
   return `${base}${clean}`;
 }
 
-/** Absolute URL for hreflang/canonical (e.g. https://bitcoin-archive.pages.dev/about/) */
+/** Primary-origin absolute URL for hreflang/canonical */
 export function absoluteUrl(path: string, lang: Lang): string {
-  return `${siteOrigin}${localePath(path, lang)}`;
+  const clean = path.startsWith('/') ? path : `/${path}`;
+  const langPath = lang === 'ja' ? `/ja${clean}` : clean;
+  return `${primaryOrigin}${langPath}`;
 }
 
 export async function getEntries(lang: Lang): Promise<CollectionEntry<'entries' | 'entries_ja'>[]> {

@@ -19,12 +19,11 @@ interface Props {
 
 const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage, breadcrumbs = [] } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const siteUrl = `${Astro.site?.origin || 'https://cypher256.github.io'}${base}`;
-// Canonical always points to Cloudflare Pages (primary site)
-const canonicalBase = 'https://bitcoin-archive.pages.dev';
+// All SEO URLs point to the primary site (Cloudflare Pages)
+const primaryOrigin = 'https://bitcoin-archive.pages.dev';
 const pagePath = Astro.url.pathname.replace(/^\/BitcoinArchive/, '');
-const resolvedCanonical = canonicalUrl || `${canonicalBase}${pagePath}`;
-const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/images/og-default.png`;
+const resolvedCanonical = canonicalUrl || `${primaryOrigin}${pagePath}`;
+const ogImageUrl = ogImage ? `${primaryOrigin}${ogImage}` : `${primaryOrigin}/images/og-default.png`;
 
 // hreflang: 両方の alternate が揃っている場合のみ完全なクラスタを出力
 // 片側しか渡されていない場合は、自分自身を補完する
@@ -35,7 +34,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
   "@type": "ListItem",
   "position": index + 1,
   "name": item.name,
-  "item": new URL(item.url, siteUrl).toString(),
+  "item": new URL(item.url, primaryOrigin).toString(),
 }));
 ---
 
@@ -96,7 +95,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Bitcoin Archive",
-    "url": siteUrl,
+    "url": primaryOrigin,
     "description": "The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.",
     "inLanguage": [lang === 'ja' ? 'ja' : 'en'],
   })} />
@@ -112,7 +111,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
     "publisher": {
       "@type": "Organization",
       "name": "Bitcoin Archive",
-      "url": siteUrl,
+      "url": primaryOrigin,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
