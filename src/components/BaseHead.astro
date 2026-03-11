@@ -20,7 +20,10 @@ interface Props {
 const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage, breadcrumbs = [] } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const siteUrl = `${Astro.site?.origin || 'https://cypher256.github.io'}${base}`;
-const resolvedCanonical = canonicalUrl || Astro.url.href;
+// Canonical always points to Cloudflare Pages (primary site)
+const canonicalBase = 'https://bitcoin-archive.pages.dev';
+const pagePath = Astro.url.pathname.replace(/^\/BitcoinArchive/, '');
+const resolvedCanonical = canonicalUrl || `${canonicalBase}${pagePath}`;
 const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/images/og-default.png`;
 
 // hreflang: 両方の alternate が揃っている場合のみ完全なクラスタを出力
