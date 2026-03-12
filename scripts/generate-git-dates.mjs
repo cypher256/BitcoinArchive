@@ -19,6 +19,17 @@ const EN_PREFIX = 'src/data/entries/en/';
 const JA_PREFIX = 'src/data/translations/ja/';
 
 function run() {
+  // Ensure full git history is available (Cloudflare Pages uses shallow clone)
+  try {
+    const isShallow = execSync('git rev-parse --is-shallow-repository', { cwd: ROOT, encoding: 'utf-8' }).trim();
+    if (isShallow === 'true') {
+      console.log('Shallow clone detected — fetching full history for accurate git dates...');
+      execSync('git fetch --unshallow', { cwd: ROOT, encoding: 'utf-8' });
+    }
+  } catch {
+    // Ignore — not a git repo or fetch failed; proceed with available history
+  }
+
   // Single git command: all commits with dates and changed file names
   const raw = execSync(
     'git log --all --format="COMMIT %aI" --name-only --diff-filter=ACMR',
