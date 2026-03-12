@@ -1,30 +1,56 @@
 ---
-title: "サトシからギャビン・アンドレセンへの最後の既知のメール"
+title: "サトシの最後の既知のメール — ハーンへの別れ、アンドレセンへのアラートキー移譲"
 date: 2011-04-26T00:00:00Z
 source: aftermath
-sourceUrl: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
+sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "サトシの最後の既知の私的な通信。ギャビン・アンドレセンへのメールで「他のことに取り組むことにした」「ギャビンたちに任せれば、安心だ」と述べた。"
+  - name: "Mike Hearn"
+    slug: "mike-hearn"
+description: "サトシ・ナカモトの最後の既知の私的通信：2011年4月23日、マイク・ハーンに「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」と伝えた。3日後の4月26日、ギャビン・アンドレセンに最後の既知のメールを送り、ネットワークアラートキーを移譲し「他のことに取り組むことにした。おそらく連絡が取れなくなるだろう」と書いた。"
 isSatoshi: true
 aftermathType: "retrospective"
 tags:
   - "final-communication"
   - "gavin-andresen"
+  - "mike-hearn"
+  - "alert-key"
   - "transition"
   - "disappearance"
 secondarySources:
+  - name: "Mike Hearn's published Satoshi emails"
+    url: "https://plan99.net/~mike/satoshi-emails/thread5.html"
+  - name: "Gavin Andresen's Blog — Eleven Years Ago Today"
+    url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
   - name: "MIT Technology Review"
     url: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
 translationStatus: complete
 ---
 
-2011年4月、サトシ・ナカモトはギャビン・アンドレセンに最後のメールとされるものを送った。その中でこう書いている。
+サトシ・ナカモトの最後の既知の私的通信は、2011年4月に送られた2通のメールである。
+
+**2011年4月23日 — マイク・ハーン宛：**
+
+サトシは、2009年4月から書簡を交わしていたGoogleエンジニアのマイク・ハーンにこう書いた。
 
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
-これ以降、サトシはすべての既知の通信を停止した。ギャビン・アンドレセンは最近、CIAでビットコインについて講演するよう招待されたことをサトシに伝えていた。これがサトシの撤退に影響を与えたかどうかは、いまだ憶測の域を出ない。
+ハーンのBitcoinJプロジェクトが代替クライアントとして開発され続けることへの期待も述べた。
+
+**2011年4月26日 — ギャビン・アンドレセン宛：**
+
+3日後、サトシはギャビン・アンドレセンに、最後の既知のメールとされるものを送った。件名は「alert key」だった。
+
+> 「僕のことを謎めいた影の人物のように語り続けるのはやめてほしい。メディアはそれを海賊通貨の切り口にしてしまう。オープンソースプロジェクトとして紹介して、開発貢献者たちにもっと光を当ててくれ。それが彼らのモチベーションになる」
+
+続けて離脱を告げた。
+
+> 「他のことに取り組むことにした。おそらく連絡が取れなくなるだろう」
+
+最後に、ネットワークアラートキー — すべてのビットコインクライアントに緊急メッセージを配信するための重要なツール — を移譲し、プロジェクトの引き継ぎの最後の要素を完了させた。
+
+アンドレセンは返信でアラートキーを受諾し、In-Q-Telの招きでCIAの会議でビットコインのプレゼンテーションを行うことを明かした。サトシが返信することはなかった。以降、サトシからの確認済みの通信は記録されていない。

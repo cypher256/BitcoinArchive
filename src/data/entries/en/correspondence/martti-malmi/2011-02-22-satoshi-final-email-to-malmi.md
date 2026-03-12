@@ -28,7 +28,7 @@ secondarySources:
 
 On February 22, 2011, Satoshi Nakamoto sent what would be his final email to Martti Malmi. The email included a PGP signature and provided the password for the Bitcoin project's mailman mailing list, effectively transferring another piece of project infrastructure.
 
-This was among the last known communications from Satoshi before his complete withdrawal from public involvement in Bitcoin. Approximately two months later, on April 23, 2011, Satoshi sent what is generally considered his absolute final email - to Mike Hearn - in which he stated: "I've moved on to other things. It's in good hands with Gavin and everyone."
+This was among the last known communications from Satoshi before his complete withdrawal from public involvement in Bitcoin. Approximately two months later, Satoshi wrote to Mike Hearn on April 23, 2011: "I've moved on to other things. It's in good hands with Gavin and everyone." Three days after that, on April 26, 2011, Satoshi sent what is believed to be his absolute final email — to Gavin Andresen — transferring the network alert key and writing: "I've moved on to other things and will probably be unavailable."
 
 The Satoshi-Malmi correspondence, spanning from May 2009 to February 2011, encompasses approximately 260 emails and represents one of the most extensive records of direct communication with Bitcoin's creator. The correspondence covers nearly the entire period of Satoshi's active involvement with Bitcoin, from the early days when there were only a handful of users to the point where the project had grown into a functioning open-source community with multiple developers.
 

@@ -44,7 +44,7 @@ Gavin Andresen first discovered Bitcoin in 2010 and quickly became one of the mo
 
 **Satoshi's farewell:**
 
-In one of their final exchanges, Satoshi told Gavin: "I've moved on to other things. It's in good hands with Gavin and everyone."
+In an email to Mike Hearn on April 23, 2011, Satoshi wrote: "I've moved on to other things. It's in good hands with Gavin and everyone." Three days later, on April 26, Satoshi sent his last known email directly to Gavin, transferring the network alert key and writing: "I've moved on to other things and will probably be unavailable."
 
 **On visiting CIA headquarters (tweet, June 14, 2011):**
 
