@@ -23,6 +23,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-改めてありがとうございます。
+改めてありがとう。
 
 Hal Finneyは、あなたが新しいmerkleルートをTx0のscriptSigに格納するつもりだと推測していた。少なくとも彼は正しいアイデアを持っていたことが分かった :-)
