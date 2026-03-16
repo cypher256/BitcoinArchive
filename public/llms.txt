@@ -1,0 +1,39 @@
+# Bitcoin Archive
+
+> The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.
+
+Bitcoin Archive is a bilingual (English/Japanese) reference site that collects and preserves every known public communication by Satoshi Nakamoto, the pseudonymous creator of Bitcoin, along with related historical documents.
+
+## Contents
+
+The archive contains 1,000+ entries across 6 categories:
+
+- **Correspondence** (309 entries): Private emails between Satoshi and 8 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Laszlo Hanyecz, Martti Malmi, Mike Hearn, Wei Dai
+- **Forum** (537 entries): BitcoinTalk forum posts (533) and P2P Foundation posts (4)
+- **Emails** (47 entries): Mailing list posts — Cryptography (28), Bitcoin-list (16), P2P Research (3)
+- **Aftermath** (92 entries): Post-disappearance events, media coverage, and historical analysis
+- **BIP** (8 entries): Bitcoin Improvement Proposals relevant to Satoshi's design
+- **Sourceforge** (9 entries): Key development milestones from Bitcoin's SourceForge project
+
+## Key Pages
+
+- Home: https://bitcoin-archive.pages.dev/
+- All Entries: https://bitcoin-archive.pages.dev/entries/
+- Sources: https://bitcoin-archive.pages.dev/sources/
+- Participants: https://bitcoin-archive.pages.dev/participants/
+- Tags: https://bitcoin-archive.pages.dev/tags/
+- Search: https://bitcoin-archive.pages.dev/search/
+- About: https://bitcoin-archive.pages.dev/about/
+
+## Japanese Version
+
+- Home: https://bitcoin-archive.pages.dev/ja/
+- All Entries: https://bitcoin-archive.pages.dev/ja/entries/
+- Search: https://bitcoin-archive.pages.dev/ja/search/
+
+## Key Facts
+
+- Satoshi Nakamoto was active from October 2008 to April 2011
+- Satoshi mined an estimated 1.1 million BTC, none of which have ever been moved
+- The last known communication was an email to Mike Hearn on April 23, 2011: "I've moved on to other things."
+- All entries include original source URLs for verification

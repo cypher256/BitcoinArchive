@@ -1,0 +1,108 @@
+# Bitcoin Archive — Full Reference for AI
+
+> The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.
+
+## Site Overview
+
+Bitcoin Archive is a bilingual (English/Japanese) static site built with Astro, deployed on Cloudflare Pages and GitHub Pages. It preserves every known public communication by Satoshi Nakamoto with full-text search powered by Pagefind.
+
+URL: https://bitcoin-archive.pages.dev/
+Mirror: https://cypher256.github.io/BitcoinArchive/
+Languages: English, Japanese
+
+## Timeline of Satoshi Nakamoto
+
+### 2008
+- **August 18**: Registered bitcoin.org domain
+- **October 31**: Published the Bitcoin whitepaper "Bitcoin: A Peer-to-Peer Electronic Cash System" to the Cryptography mailing list
+- **November–December**: Engaged in technical discussions with James A. Donald, Ray Dillinger, and Hal Finney on the Cryptography mailing list
+
+### 2009
+- **January 3**: Mined the Genesis Block (Block 0) with the message: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
+- **January 9**: Released Bitcoin v0.1 on SourceForge
+- **January 12**: Sent 10 BTC to Hal Finney — the first Bitcoin transaction between two people
+- **February–December**: Active development, forum posts, and private correspondence with early contributors
+
+### 2010
+- **May 22**: First real-world Bitcoin purchase (10,000 BTC for two pizzas by Laszlo Hanyecz)
+- **August 15**: The 184 billion BTC incident — integer overflow vulnerability exploited, patched by Satoshi within 5 hours via soft fork
+- **December 5**: WikiLeaks donation controversy — Satoshi posted: "WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us"
+- **December 12**: Last known forum post on BitcoinTalk
+
+### 2011
+- **February**: Handed over network alert key and source code repository access to Gavin Andresen
+- **March 7**: Mike Hearn announced BitcoinJ release; Satoshi replied with technical details about contracts and nLockTime
+- **April 23**: Last known email to Mike Hearn: "I've moved on to other things. It's in good hands with Gavin and everyone."
+- **April 26**: Last known email to Gavin Andresen about CIA visit concerns
+
+## Entry Categories
+
+### Correspondence (309 entries)
+Private email exchanges between Satoshi and key participants:
+- **Hal Finney**: First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
+- **Martti Malmi**: Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
+- **Mike Hearn**: Google engineer. Satoshi shared unpublished ideas about smart contracts and payment channels. Received Satoshi's farewell message.
+- **Gavin Andresen**: Took over as lead developer. Received network alert key and repository access.
+- **Wei Dai**: Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
+- **Adam Back**: Creator of Hashcash, the proof-of-work system that inspired Bitcoin's mining.
+- **Dustin Trammell**: Early Bitcoin miner and security researcher.
+- **Laszlo Hanyecz**: Made the first real-world Bitcoin purchase (pizza transaction).
+
+### Forum Posts (537 entries)
+- **BitcoinTalk** (533 posts): Technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
+- **P2P Foundation** (4 posts): Bitcoin announcement and early discussions
+
+### Mailing List Emails (47 entries)
+- **Cryptography mailing list** (28 emails): Whitepaper announcement and technical debates
+- **Bitcoin-list** (16 emails): Development announcements
+- **P2P Research** (3 emails): Peer-to-peer technology discussions
+
+### Aftermath (92 entries)
+Post-disappearance events including:
+- Satoshi identity speculation and investigations
+- FBI and CIA involvement
+- Early Bitcoin wallet movements and Patoshi pattern analysis
+- Major Bitcoin milestones after Satoshi's departure
+- Media coverage and documentaries
+
+### Bitcoin Improvement Proposals (8 entries)
+BIPs relevant to Satoshi's original design and vision.
+
+### SourceForge Milestones (9 entries)
+Key software releases and development milestones from Bitcoin's SourceForge project.
+
+## Key Participants
+
+The archive tracks communications with the following participants:
+- Satoshi Nakamoto (pseudonymous creator)
+- Hal Finney (first user, cypherpunk)
+- Martti Malmi (early developer)
+- Gavin Andresen (lead developer successor)
+- Mike Hearn (Google engineer, BitcoinJ creator)
+- Wei Dai (b-money creator)
+- Adam Back (Hashcash creator)
+- Dustin Trammell (early miner)
+- Laszlo Hanyecz (pizza transaction)
+- Ray Dillinger (early code reviewer)
+- James A. Donald (first whitepaper respondent)
+- Nick Szabo (bit gold creator, not directly corresponding but contextually important)
+
+## Frequently Referenced Facts
+
+- **1.1 million BTC**: Estimated coins mined by Satoshi (Patoshi pattern analysis by Sergio Demian Lerner). None have ever moved.
+- **21 million BTC**: Fixed total supply, enforced by code.
+- **184 billion BTC incident**: August 15, 2010 integer overflow. Fixed within 5 hours.
+- **Genesis Block message**: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" — a reference to a Times of London headline.
+- **First transaction**: Block 170, January 12, 2009 — 10 BTC from Satoshi to Hal Finney.
+- **Pizza transaction**: May 22, 2010 — 10,000 BTC for two pizzas (now celebrated as Bitcoin Pizza Day).
+- **Last public post**: December 12, 2010 on BitcoinTalk (about DoS attack prevention).
+- **Last private email**: April 26, 2011 to Gavin Andresen.
+
+## Technical Details
+
+- Built with Astro (static site generator)
+- Full-text search via Pagefind
+- Structured data (JSON-LD) on every page
+- Canonical URLs on Cloudflare Pages
+- All entries include primary and secondary source URLs for verification
+- Entries are organized by date, source, participant, thread, and tags
