@@ -18,6 +18,26 @@ for (const entry of entries) {
   }
 }
 const participants = Array.from(participantCounts.values()).sort((a, b) => b.count - a.count);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${t('nav.participants')} - ${t('site.title')}`,
+  "url": absoluteUrl('/participants/', lang),
+  "description": t('site.description'),
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": t('nav.participants'),
+    "numberOfItems": participants.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": participants.slice(0, 50).map((p, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": absoluteUrl(`/participants/${p.slug}/`, lang),
+      "name": p.name,
+    })),
+  },
+};
 ---
 
 <BaseLayout
@@ -25,6 +45,7 @@ const participants = Array.from(participantCounts.values()).sort((a, b) => b.cou
   description={t('site.description')}
   lang={lang}
   alternateJa={absoluteUrl('/participants/', 'ja')}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{t('nav.participants')}</h1>

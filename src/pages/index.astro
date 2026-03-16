@@ -54,6 +54,25 @@ const featuredEntries = collapseThreads(featuredSorted, threadCounts, threadStar
 
 // Network graph data
 const graphData = computeGraphData(entries, lang);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": t('site.title'),
+  "url": absoluteUrl('/', lang),
+  "description": t('site.description'),
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Featured entries",
+    "numberOfItems": featuredEntries.length,
+    "itemListElement": featuredEntries.slice(0, 10).map((entry, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": absoluteUrl(`/entries/${entry.id}/`, lang),
+      "name": entry.data.title,
+    })),
+  },
+};
 
 function tagWeight(count: number, max: number): number {
   return Math.max(1, Math.min(4, Math.ceil(Math.sqrt(count / max) * 4)));
@@ -65,6 +84,7 @@ function tagWeight(count: number, max: number): number {
   description={t('site.description')}
   lang={lang}
   alternateJa={absoluteUrl('/', 'ja')}
+  structuredData={structuredData}
 >
   <div class="container">
     <section class="hero">

@@ -21,9 +21,10 @@ interface Props {
     name: string;
     url: string;
   }>;
+  structuredData?: Record<string, any> | Array<Record<string, any>>;
 }
 
-const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author, noindex, ogImage, breadcrumbs } = Astro.props;
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author, noindex, ogImage, breadcrumbs, structuredData } = Astro.props;
 ---
 
 <!doctype html>
@@ -42,6 +43,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       noindex={noindex}
       ogImage={ogImage}
       breadcrumbs={breadcrumbs}
+      structuredData={structuredData}
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj3dQfHBBQxVlKRE73ZTgCnDwQy+0TQ2vQa03ZBsiVQx0K5Pp69WautLLi" crossorigin="anonymous">
   </head>

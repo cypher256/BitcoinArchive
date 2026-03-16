@@ -13,6 +13,26 @@ for (const entry of entries) {
   }
 }
 const tags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${t('nav.tags')} - ${t('site.title')}`,
+  "url": absoluteUrl('/tags/', lang),
+  "description": t('site.description'),
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": t('nav.tags'),
+    "numberOfItems": tags.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": tags.slice(0, 50).map(([tag], index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": absoluteUrl(`/tags/${tag}/`, lang),
+      "name": tag,
+    })),
+  },
+};
 ---
 
 <BaseLayout
@@ -20,6 +40,7 @@ const tags = Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]);
   description={t('site.description')}
   lang={lang}
   alternateJa={absoluteUrl('/tags/', 'ja')}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{t('nav.tags')}</h1>

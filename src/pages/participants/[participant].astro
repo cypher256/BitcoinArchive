@@ -64,6 +64,32 @@ const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/
 const lifeDatesRaw = lifeDatesMatch ? lifeDatesMatch[0] : null;
 const lifeDates = lifeDatesRaw && !/生没年不明|dates unknown/.test(lifeDatesRaw) ? lifeDatesRaw : null;
 const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]+[：:]\s*/, '') ?? '';
+const canonicalUrl = absoluteUrl(`/participants/${participantSlug}/`, lang);
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": `${participantName} - ${t('site.title')}`,
+    "url": canonicalUrl,
+    "inLanguage": lang,
+    "mainEntity": {
+      "@id": `${canonicalUrl}#person`,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${canonicalUrl}#person`,
+    "name": participantName,
+    ...(biographyDescription ? { "description": biographyDescription } : {}),
+    "url": canonicalUrl,
+    "subjectOf": {
+      "@type": "ItemList",
+      "name": `Entries involving ${participantName}`,
+      "numberOfItems": displayEntries.length,
+    },
+  },
+];
 ---
 
 <BaseLayout
@@ -71,6 +97,7 @@ const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]
   description={biographyEntry?.data.description ?? `All entries involving ${participantName} in the Bitcoin Archive`}
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/participants/${participantSlug}/`, 'ja') : undefined}
+  structuredData={structuredData}
 >
   <div class="container">
     <nav class="participant-nav participant-nav-top">

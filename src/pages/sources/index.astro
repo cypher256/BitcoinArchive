@@ -11,6 +11,26 @@ for (const entry of entries) {
   sourceCounts.set(entry.data.source, (sourceCounts.get(entry.data.source) || 0) + 1);
 }
 const sources = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${t('nav.sources')} - ${t('site.title')}`,
+  "url": absoluteUrl('/sources/', lang),
+  "description": t('site.description'),
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": t('nav.sources'),
+    "numberOfItems": sources.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": sources.map(([source], index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": absoluteUrl(`/sources/${source}/`, lang),
+      "name": t(`source.${source}` as any) || source,
+    })),
+  },
+};
 ---
 
 <BaseLayout
@@ -18,6 +38,7 @@ const sources = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
   description={t('site.description')}
   lang={lang}
   alternateJa={absoluteUrl('/sources/', 'ja')}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{t('nav.sources')}</h1>
