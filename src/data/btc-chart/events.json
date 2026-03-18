@@ -1,0 +1,102 @@
+[
+  {
+    "date": "2009-01-03",
+    "type": "milestone",
+    "label": { "en": "Genesis Block mined", "ja": "ジェネシスブロック採掘" }
+  },
+  {
+    "date": "2009-01-12",
+    "type": "milestone",
+    "label": { "en": "First BTC transaction (Satoshi → Hal Finney)", "ja": "初のBTC送金（サトシ→ハル・フィニー）" }
+  },
+  {
+    "date": "2010-05-22",
+    "type": "milestone",
+    "label": { "en": "Bitcoin Pizza Day (10,000 BTC for 2 pizzas)", "ja": "ビットコイン・ピザデー（10,000 BTCでピザ2枚）" }
+  },
+  {
+    "date": "2010-07-17",
+    "type": "milestone",
+    "label": { "en": "Mt. Gox exchange launches", "ja": "Mt. Gox取引所開設" }
+  },
+  {
+    "date": "2011-02-09",
+    "type": "milestone",
+    "label": { "en": "BTC reaches $1 parity with USD", "ja": "BTC初の1ドル到達" }
+  },
+  {
+    "date": "2011-06-08",
+    "type": "crash",
+    "label": { "en": "First major bubble: $31 → $2", "ja": "初の大暴落: $31 → $2" }
+  },
+  {
+    "date": "2013-04-10",
+    "type": "crash",
+    "label": { "en": "April 2013 crash: $266 → $50", "ja": "2013年4月暴落: $266 → $50" }
+  },
+  {
+    "date": "2013-12-05",
+    "type": "regulation",
+    "label": { "en": "China bans financial institutions from BTC", "ja": "中国、金融機関のBTC取扱を禁止" }
+  },
+  {
+    "date": "2014-02-07",
+    "type": "crash",
+    "label": { "en": "Mt. Gox halts withdrawals, later collapses", "ja": "Mt. Gox出金停止、後に破綻" }
+  },
+  {
+    "date": "2017-08-01",
+    "type": "milestone",
+    "label": { "en": "Bitcoin Cash hard fork", "ja": "ビットコインキャッシュ ハードフォーク" }
+  },
+  {
+    "date": "2017-12-17",
+    "type": "milestone",
+    "label": { "en": "BTC reaches ~$20,000 ATH", "ja": "BTC約2万ドルの最高値" }
+  },
+  {
+    "date": "2018-01-16",
+    "type": "crash",
+    "label": { "en": "2018 crypto winter begins", "ja": "2018年クリプト冬の始まり" }
+  },
+  {
+    "date": "2020-03-12",
+    "type": "crash",
+    "label": { "en": "COVID Black Thursday: $7,900 → $3,800", "ja": "コロナショック: $7,900 → $3,800" }
+  },
+  {
+    "date": "2021-02-08",
+    "type": "milestone",
+    "label": { "en": "Tesla buys $1.5B in BTC", "ja": "テスラ社、15億ドル分のBTCを購入" }
+  },
+  {
+    "date": "2021-09-07",
+    "type": "milestone",
+    "label": { "en": "El Salvador adopts BTC as legal tender", "ja": "エルサルバドル、BTCを法定通貨に" }
+  },
+  {
+    "date": "2021-11-10",
+    "type": "milestone",
+    "label": { "en": "BTC reaches ~$69,000 ATH", "ja": "BTC約6.9万ドルの最高値" }
+  },
+  {
+    "date": "2022-05-09",
+    "type": "crash",
+    "label": { "en": "Terra/LUNA collapse", "ja": "Terra/LUNA崩壊" }
+  },
+  {
+    "date": "2022-11-11",
+    "type": "crash",
+    "label": { "en": "FTX exchange collapses", "ja": "FTX取引所崩壊" }
+  },
+  {
+    "date": "2024-01-10",
+    "type": "milestone",
+    "label": { "en": "US spot Bitcoin ETFs approved", "ja": "米国ビットコイン現物ETF承認" }
+  },
+  {
+    "date": "2024-03-14",
+    "type": "milestone",
+    "label": { "en": "BTC reaches $73,000+ new ATH", "ja": "BTC 7.3万ドル超の新最高値" }
+  }
+]

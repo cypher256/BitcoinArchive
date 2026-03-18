@@ -1,0 +1,740 @@
+---
+import type { Lang } from '../i18n/ui';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+  mini?: boolean;
+}
+
+const { lang, mini = false } = Astro.props;
+const t = useTranslations(lang);
+
+// Load data at build time
+const prices = await import('../data/btc-chart/prices.json').then(m => m.default);
+const halvings = await import('../data/btc-chart/halvings.json').then(m => m.default);
+const events = await import('../data/btc-chart/events.json').then(m => m.default);
+const predictions = await import('../data/btc-chart/predictions.json').then(m => m.default);
+const supply = await import('../data/btc-chart/supply.json').then(m => m.default);
+const modelsData = await import('../data/btc-chart/models.json').then(m => m.default);
+
+const chartData = {
+  prices,
+  halvings: halvings.map((h: any) => ({ ...h, label: h.label[lang] })),
+  events: events.map((e: any) => ({ ...e, label: e.label[lang] })),
+  predictions: predictions.map((p: any) => ({
+    ...p,
+    quote: p.quote[lang],
+  })),
+  supply,
+  models: modelsData.models.map((m: any) => ({
+    ...m,
+    name: m.name[lang],
+    description: m.description[lang],
+  })),
+};
+
+const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
+---
+
+<div class:list={['btc-chart-wrapper', { mini }]}>
+  {!mini && (
+    <div class="chart-controls">
+      <div class="chart-toggles">
+        <label class="toggle-btn active" data-toggle="halvings">
+          <span class="toggle-dot halving-dot"></span> {t('chart.halvings' as any)}
+        </label>
+        <label class="toggle-btn active" data-toggle="events">
+          <span class="toggle-dot event-dot"></span> {t('chart.events' as any)}
+        </label>
+        <label class="toggle-btn active" data-toggle="predictions">
+          <span class="toggle-dot prediction-dot"></span> {t('chart.predictions' as any)}
+        </label>
+        <label class="toggle-btn active" data-toggle="models">
+          <span class="toggle-dot model-dot"></span> {t('chart.models' as any)}
+        </label>
+      </div>
+      <div class="chart-scale-btns">
+        <button class="scale-btn active" data-scale="log">{t('chart.logScale' as any)}</button>
+        <button class="scale-btn" data-scale="linear">{t('chart.linearScale' as any)}</button>
+      </div>
+      <div class="chart-range-btns">
+        <button class="range-btn" data-range="1y">{t('chart.range1Y' as any)}</button>
+        <button class="range-btn" data-range="5y">{t('chart.range5Y' as any)}</button>
+        <button class="range-btn active" data-range="all">{t('chart.rangeAll' as any)}</button>
+      </div>
+    </div>
+  )}
+  <div id={chartId} class:list={['chart-container', { mini }]}></div>
+  <script type="application/json" id={`${chartId}-data`} set:html={JSON.stringify(chartData)} />
+</div>
+
+<script is:inline define:vars={{ chartId, mini, lang, labels: {
+  price: t('chart.price' as any),
+  date: t('chart.date' as any),
+  reward: t('chart.reward' as any),
+  block: t('chart.block' as any),
+  predictedBy: t('chart.predictedBy' as any),
+  target: t('chart.target' as any),
+  actual: t('chart.actual' as any),
+  hitYes: t('chart.hitYes' as any),
+  hitNo: t('chart.hitNo' as any),
+  hitPending: t('chart.hitPending' as any),
+} }}>
+(function() {
+  function initChart() {
+    if (typeof d3 === 'undefined') { setTimeout(initChart, 50); return; }
+
+    var container = document.getElementById(chartId);
+    var dataEl = document.getElementById(chartId + '-data');
+    if (!container || !dataEl) return;
+
+    var data = JSON.parse(dataEl.textContent);
+    var prices = data.prices.map(function(d) { return { date: new Date(d.date), price: d.price }; });
+
+    // State
+    var useLog = !mini;
+    var showHalvings = true;
+    var showEvents = true;
+    var showPredictions = !mini;
+    var showModels = !mini;
+    var rangeMode = 'all';
+
+    function getFilteredPrices() {
+      if (rangeMode === 'all') return prices;
+      var now = new Date();
+      var cutoff = new Date(now);
+      if (rangeMode === '1y') cutoff.setFullYear(now.getFullYear() - 1);
+      if (rangeMode === '5y') cutoff.setFullYear(now.getFullYear() - 5);
+      return prices.filter(function(d) { return d.date >= cutoff; });
+    }
+
+    function draw() {
+      container.innerHTML = '';
+      var filteredPrices = getFilteredPrices();
+      if (filteredPrices.length === 0) return;
+
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 800;
+      var H = mini ? 180 : 500;
+
+      var margin = mini
+        ? { top: 20, right: 15, bottom: 30, left: 55 }
+        : { top: 45, right: (showModels ? 150 : 30), bottom: 40, left: 70 };
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg')
+        .attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      // Scales
+      var xExtent = d3.extent(filteredPrices, function(d) { return d.date; });
+
+      // Extend X axis to show model projections into the future
+      if (showModels && !mini && data.models && rangeMode === 'all') {
+        var modelMaxDate = new Date(xExtent[1]);
+        data.models.forEach(function(model) {
+          model.data.forEach(function(d) {
+            var md = new Date(d.date);
+            if (md > modelMaxDate) modelMaxDate = md;
+          });
+        });
+        xExtent[1] = modelMaxDate;
+      }
+
+      var x = d3.scaleTime().domain(xExtent).range([0, w]);
+
+      var priceMin = d3.min(filteredPrices, function(d) { return d.price; });
+      var priceMax = d3.max(filteredPrices, function(d) { return d.price; });
+
+      // When models are visible, extend Y max to include model curves
+      // Cap at 10x actual price max so extreme models (S2F) don't crush the chart
+      var actualPriceMax = priceMax;
+      if (showModels && !mini && data.models) {
+        var modelCap = actualPriceMax * 10;
+        data.models.forEach(function(model) {
+          model.data.forEach(function(d) {
+            var md = new Date(d.date);
+            if (md >= xExtent[0] && md <= xExtent[1]) {
+              var capped = Math.min(d.price, modelCap);
+              if (capped > priceMax) priceMax = capped;
+            }
+          });
+        });
+      }
+
+      var y;
+      if (useLog) {
+        y = d3.scaleLog().domain([Math.max(0.01, priceMin * 0.8), priceMax * 1.3]).range([h, 0]).clamp(true);
+      } else {
+        y = d3.scaleLinear().domain([0, priceMax * 1.15]).range([h, 0]);
+      }
+
+      // Y-axis tick values
+      var yTickValues;
+      if (useLog) {
+        // Explicit log scale ticks to avoid overlapping labels
+        var allLogTicks = [0.01, 0.1, 1, 10, 100, 1000, 10000, 100000, 1000000];
+        var yDomain = y.domain();
+        yTickValues = allLogTicks.filter(function(v) { return v >= yDomain[0] && v <= yDomain[1]; });
+      }
+
+      // Grid lines
+      var gridAxis = d3.axisLeft(y).tickSize(-w).tickFormat('');
+      if (yTickValues) gridAxis.tickValues(yTickValues);
+      else gridAxis.ticks(mini ? 4 : 8);
+      g.append('g').attr('class', 'grid').call(gridAxis)
+        .selectAll('line').attr('stroke', '#e8e5de').attr('stroke-opacity', 0.7);
+      g.selectAll('.grid .domain').remove();
+
+      // Axes
+      var xAxis = mini ? d3.axisBottom(x).ticks(4) : d3.axisBottom(x).ticks(w > 600 ? 12 : 6);
+      g.append('g').attr('transform', 'translate(0,' + h + ')').call(xAxis)
+        .selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', mini ? '9px' : '11px');
+
+      var yFormat = useLog
+        ? function(d) {
+            if (d >= 1000) return '$' + d3.format(',.0f')(d);
+            if (d >= 1) return '$' + d;
+            return '$' + d;
+          }
+        : function(d) { return '$' + d3.format(',.0f')(d); };
+      var yAxis = d3.axisLeft(y).tickFormat(yFormat);
+      if (yTickValues) yAxis.tickValues(yTickValues);
+      else yAxis.ticks(mini ? 4 : 8);
+      g.append('g').call(yAxis)
+        .selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', mini ? '9px' : '11px');
+
+      // Price line with gradient fill
+      var area = d3.area()
+        .x(function(d) { return x(d.date); })
+        .y0(h)
+        .y1(function(d) { return y(d.price); })
+        .curve(d3.curveMonotoneX);
+
+      var line = d3.line()
+        .x(function(d) { return x(d.date); })
+        .y(function(d) { return y(d.price); })
+        .curve(d3.curveMonotoneX);
+
+      var gradient = svg.append('defs').append('linearGradient')
+        .attr('id', chartId + '-gradient')
+        .attr('x1', '0').attr('x2', '0').attr('y1', '0').attr('y2', '1');
+      gradient.append('stop').attr('offset', '0%').attr('stop-color', '#b45309').attr('stop-opacity', 0.3);
+      gradient.append('stop').attr('offset', '100%').attr('stop-color', '#b45309').attr('stop-opacity', 0.02);
+
+      g.append('path').datum(filteredPrices)
+        .attr('fill', 'url(#' + chartId + '-gradient)')
+        .attr('d', area);
+
+      g.append('path').datum(filteredPrices)
+        .attr('fill', 'none')
+        .attr('stroke', '#b45309')
+        .attr('stroke-width', mini ? 1.5 : 2)
+        .attr('d', line);
+
+      if (mini) {
+        // Mini: just show latest price
+        var last = filteredPrices[filteredPrices.length - 1];
+        g.append('text')
+          .attr('x', w - 5).attr('y', 14)
+          .attr('text-anchor', 'end')
+          .attr('font-family', 'var(--font-heading)')
+          .attr('font-size', '14px')
+          .attr('font-weight', '700')
+          .attr('fill', '#b45309')
+          .text('$' + d3.format(',.0f')(last.price));
+        return;
+      }
+
+      // Tooltip (shared by all interactive elements)
+      var tooltip = d3.select(container).append('div')
+        .attr('class', 'chart-tooltip').style('opacity', 0);
+
+      // Position tooltip, flipping to left/above if near edges
+      function positionTooltip(event) {
+        var cRect = container.getBoundingClientRect();
+        var tipNode = tooltip.node();
+        var tipW = tipNode.offsetWidth || 200;
+        var tipH = tipNode.offsetHeight || 80;
+        var ex = event.offsetX;
+        var ey = event.offsetY;
+        var left = (ex + 15 + tipW > cRect.width) ? ex - tipW - 15 : ex + 15;
+        var top = (ey - 40 < 0) ? ey + 15 : ey - tipH - 10;
+        tooltip.style('left', Math.max(0, left) + 'px').style('top', Math.max(0, top) + 'px');
+      }
+
+      // --- Layer 1: Halving lines (background) ---
+      if (showHalvings) {
+        data.halvings.forEach(function(hv) {
+          var hvDate = new Date(hv.date);
+          if (hvDate < xExtent[0] || hvDate > xExtent[1]) return;
+          var hvx = x(hvDate);
+
+          g.append('line')
+            .attr('x1', hvx).attr('x2', hvx).attr('y1', 0).attr('y2', h)
+            .attr('stroke', '#e67e22').attr('stroke-width', 1.5)
+            .attr('stroke-dasharray', hv.estimated ? '6,4' : 'none')
+            .attr('stroke-opacity', 0.6);
+
+          var labelG = g.append('g').attr('transform', 'translate(' + hvx + ',0)');
+          labelG.append('rect')
+            .attr('x', -40).attr('y', -38).attr('width', 80).attr('height', 16)
+            .attr('rx', 3).attr('fill', '#e67e22').attr('fill-opacity', 0.12);
+          labelG.append('text')
+            .attr('y', -26).attr('text-anchor', 'middle')
+            .attr('font-family', 'var(--font-heading)')
+            .attr('font-size', '8px').attr('font-weight', '600')
+            .attr('fill', '#e67e22')
+            .text(hv.label);
+        });
+      }
+
+      // --- Layer 2: Model curves (interactive) ---
+      var modelElements = [];
+      if (showModels && data.models) {
+        var modelLine = d3.line()
+          .x(function(d) { return x(d.date); })
+          .y(function(d) { return y(Math.max(y.domain()[0], Math.min(y.domain()[1], d.price))); })
+          .curve(d3.curveMonotoneX);
+
+        data.models.forEach(function(model) {
+          var pts = model.data
+            .map(function(d) { return { date: new Date(d.date), price: d.price }; })
+            .filter(function(d) { return d.date >= xExtent[0] && d.date <= xExtent[1]; });
+          if (pts.length < 2) return;
+
+          // Visible line
+          var path = g.append('path').datum(pts)
+            .attr('fill', 'none')
+            .attr('stroke', model.color)
+            .attr('stroke-width', 2)
+            .attr('stroke-dasharray', model.id === 'stock-to-flow' ? '8,4' : '6,3')
+            .attr('stroke-opacity', 0.55)
+            .attr('d', modelLine);
+
+          // Label at end
+          var lastPt = pts[pts.length - 1];
+          var ly = y(Math.max(y.domain()[0], Math.min(y.domain()[1], lastPt.price)));
+          var lx = x(lastPt.date);
+
+          // Background rect for readability
+          var labelNode = g.append('g').attr('transform', 'translate(' + (lx + 4) + ',' + ly + ')');
+          var labelBg = labelNode.append('rect')
+            .attr('rx', 3).attr('fill', '#fafaf8').attr('fill-opacity', 0.85);
+          var labelTxt = labelNode.append('text')
+            .attr('x', 3).attr('y', 4)
+            .attr('font-family', 'var(--font-heading)')
+            .attr('font-size', '9px')
+            .attr('font-weight', '700')
+            .attr('fill', model.color)
+            .text(model.name);
+          // Size bg rect to text
+          var bbox = labelTxt.node().getBBox();
+          labelBg.attr('x', bbox.x - 2).attr('y', bbox.y - 1)
+            .attr('width', bbox.width + 4).attr('height', bbox.height + 2);
+
+          // Invisible thick hit area for hover
+          var hitPath = g.append('path').datum(pts)
+            .attr('fill', 'none')
+            .attr('stroke', 'transparent')
+            .attr('stroke-width', 14)
+            .attr('d', modelLine)
+            .style('cursor', 'pointer');
+
+          var entry = { path: path, label: labelNode, model: model };
+          modelElements.push(entry);
+
+          function highlightModel(event) {
+            // Dim all others
+            modelElements.forEach(function(e) {
+              if (e === entry) {
+                e.path.attr('stroke-width', 3.5).attr('stroke-opacity', 1);
+                e.label.select('text').attr('font-size', '11px');
+                var bb = e.label.select('text').node().getBBox();
+                e.label.select('rect').attr('x', bb.x - 2).attr('y', bb.y - 1)
+                  .attr('width', bb.width + 4).attr('height', bb.height + 2);
+              } else {
+                e.path.attr('stroke-opacity', 0.15);
+                e.label.attr('opacity', 0.2);
+              }
+            });
+            // Show tooltip with model details
+            tooltip.html(
+              '<strong style="color:' + model.color + '">' + model.name + '</strong><br>' +
+              '<span style="font-size:0.78em">' + model.description + '</span>'
+            ).style('opacity', 1);
+            positionTooltip(event);
+          }
+
+          function unhighlightModel() {
+            modelElements.forEach(function(e) {
+              e.path.attr('stroke-width', 2).attr('stroke-opacity', 0.55);
+              e.label.attr('opacity', 1);
+              e.label.select('text').attr('font-size', '9px');
+              var bb = e.label.select('text').node().getBBox();
+              e.label.select('rect').attr('x', bb.x - 2).attr('y', bb.y - 1)
+                .attr('width', bb.width + 4).attr('height', bb.height + 2);
+            });
+            tooltip.style('opacity', 0);
+          }
+
+          hitPath.on('mouseover', highlightModel).on('mousemove', function(event) {
+            positionTooltip(event);
+          }).on('mouseout', unhighlightModel);
+          labelNode.style('cursor', 'pointer')
+            .on('mouseover', highlightModel).on('mousemove', function(event) {
+              positionTooltip(event);
+            }).on('mouseout', unhighlightModel);
+        });
+      }
+
+      // --- Layer 3: Prediction dashed lines (background) ---
+      if (showPredictions) {
+        data.predictions.forEach(function(pred) {
+          var predDate = new Date(pred.date);
+          var targetDate = new Date(pred.targetDate);
+          if (targetDate < xExtent[0] || predDate > xExtent[1]) return;
+
+          var targetY = y(Math.max(y.domain()[0], Math.min(y.domain()[1], pred.targetPrice)));
+          var targetX = x(Math.min(targetDate, xExtent[1]));
+          var predX = x(Math.max(predDate, xExtent[0]));
+
+          var isFuture = pred.hit === null;
+          var color = pred.bearish ? '#dc2626' : isFuture ? '#6366f1' : pred.hit ? '#059669' : '#9ca3af';
+
+          g.append('line')
+            .attr('x1', predX).attr('y1', targetY)
+            .attr('x2', targetX).attr('y2', targetY)
+            .attr('stroke', color).attr('stroke-width', 1)
+            .attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.4);
+        });
+      }
+
+      // --- Layer 3: Price crosshair (below markers) ---
+      var bisect = d3.bisector(function(d) { return d.date; }).left;
+      var focusLine = g.append('line')
+        .attr('stroke', '#b45309').attr('stroke-opacity', 0.4)
+        .attr('stroke-width', 1).attr('stroke-dasharray', '4,3')
+        .attr('y1', 0).attr('y2', h).style('opacity', 0);
+      var focusDot = g.append('circle')
+        .attr('r', 4).attr('fill', '#b45309').attr('stroke', '#fff').attr('stroke-width', 2)
+        .style('opacity', 0);
+
+      // Invisible rect for price hover — pointer-events: all but sits below markers
+      var hoverRect = g.append('rect').attr('width', w).attr('height', h)
+        .attr('fill', 'transparent')
+        .on('mousemove', function(event) {
+          var coords = d3.pointer(event, this);
+          var xDate = x.invert(coords[0]);
+          var idx = bisect(filteredPrices, xDate, 1);
+          var d0 = filteredPrices[idx - 1];
+          var d1 = filteredPrices[idx] || d0;
+          var d = (xDate - d0.date > d1.date - xDate) ? d1 : d0;
+
+          focusLine.attr('x1', x(d.date)).attr('x2', x(d.date)).style('opacity', 1);
+          focusDot.attr('cx', x(d.date)).attr('cy', y(d.price)).style('opacity', 1);
+
+          var dateStr = d.date.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+          tooltip.html('<strong>$' + d3.format(',.2f')(d.price) + '</strong><br>' + dateStr)
+            .style('opacity', 1)
+          positionTooltip(event);
+        })
+        .on('mouseout', function() {
+          focusLine.style('opacity', 0);
+          focusDot.style('opacity', 0);
+          tooltip.style('opacity', 0);
+        });
+
+      // --- Layer 4: Event markers (above hover rect) ---
+      if (showEvents) {
+        var eventPriceMap = {};
+        filteredPrices.forEach(function(d) {
+          eventPriceMap[d.date.toISOString().slice(0, 10)] = d.price;
+        });
+
+        data.events.forEach(function(ev) {
+          var evDate = new Date(ev.date);
+          if (evDate < xExtent[0] || evDate > xExtent[1]) return;
+
+          var evDateStr = ev.date;
+          var closestPrice = eventPriceMap[evDateStr];
+          if (!closestPrice) {
+            var nearest = filteredPrices.reduce(function(best, d) {
+              var diff = Math.abs(d.date - evDate);
+              return diff < best.diff ? { diff: diff, price: d.price } : best;
+            }, { diff: Infinity, price: 0 });
+            closestPrice = nearest.price;
+          }
+          if (!closestPrice || closestPrice <= 0) return;
+
+          var evx = x(evDate);
+          var evy = y(closestPrice);
+          var color = ev.type === 'crash' ? '#dc2626' : ev.type === 'regulation' ? '#7c3aed' : '#059669';
+
+          var marker = g.append('g')
+            .attr('transform', 'translate(' + evx + ',' + evy + ')')
+            .style('cursor', 'pointer');
+
+          marker.append('circle')
+            .attr('r', 6).attr('fill', color).attr('stroke', '#fff').attr('stroke-width', 1.5)
+            .attr('fill-opacity', 0.9);
+
+          marker.on('mouseover', function(event) {
+            d3.select(this).select('circle').attr('r', 8);
+            tooltip.html(
+              '<strong>' + ev.label + '</strong><br>' +
+              evDate.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' }) +
+              '<br>$' + d3.format(',.0f')(closestPrice)
+            )
+            .style('opacity', 1)
+          positionTooltip(event);
+          })
+          .on('mouseout', function() {
+            d3.select(this).select('circle').attr('r', 6);
+            tooltip.style('opacity', 0);
+          });
+        });
+      }
+
+      // --- Layer 5: Prediction markers with labels (topmost) ---
+      if (showPredictions) {
+        // Collect prediction markers for overlap avoidance
+        var predMarkers = [];
+
+        data.predictions.forEach(function(pred) {
+          var predDate = new Date(pred.date);
+          var targetDate = new Date(pred.targetDate);
+          if (targetDate < xExtent[0] || predDate > xExtent[1]) return;
+
+          var targetPrice = pred.targetPrice;
+          var targetY = y(Math.max(y.domain()[0], Math.min(y.domain()[1], targetPrice)));
+          var targetX = x(Math.min(targetDate, xExtent[1]));
+
+          var isFuture = pred.hit === null;
+          var color = pred.bearish ? '#dc2626' : isFuture ? '#6366f1' : pred.hit ? '#059669' : '#9ca3af';
+
+          predMarkers.push({ pred: pred, x: targetX, y: targetY, color: color });
+        });
+
+        // Sort by x position to stagger overlapping labels
+        predMarkers.sort(function(a, b) { return a.x - b.x; });
+
+        predMarkers.forEach(function(pm, idx) {
+          var markerG = g.append('g')
+            .attr('transform', 'translate(' + pm.x + ',' + pm.y + ')')
+            .style('cursor', 'pointer');
+
+          // Larger diamond marker
+          markerG.append('rect')
+            .attr('x', -5).attr('y', -5).attr('width', 10).attr('height', 10)
+            .attr('rx', 2).attr('fill', pm.color).attr('stroke', '#fff').attr('stroke-width', 1.5)
+            .attr('fill-opacity', 0.9)
+            .attr('transform', 'rotate(45)');
+
+          // Name label — alternate above/below to reduce overlap
+          var labelText = pm.pred.predictor.split(' ').pop();
+          var above = (idx % 2 === 0);
+          var labelDy = above ? -12 : 16;
+
+          markerG.append('text')
+            .attr('x', 0).attr('y', labelDy)
+            .attr('text-anchor', 'middle')
+            .attr('font-family', 'var(--font-heading)')
+            .attr('font-size', '8px')
+            .attr('font-weight', '600')
+            .attr('fill', pm.color)
+            .attr('fill-opacity', 0.8)
+            .style('pointer-events', 'none')
+            .text(labelText);
+
+          // Hover: show full details
+          markerG.on('mouseover', function(event) {
+            d3.select(this).select('rect').attr('width', 12).attr('height', 12).attr('x', -6).attr('y', -6);
+            var pred = pm.pred;
+            var html = '<strong>' + pred.predictor + '</strong><br>';
+            html += '"' + pred.quote + '"<br>';
+            html += labels.target + ': $' + d3.format(',.0f')(pred.targetPrice) + ' (' + pred.targetDate.slice(0, 7) + ')';
+            if (pred.actualPrice) {
+              html += '<br>' + labels.actual + ': $' + d3.format(',.0f')(pred.actualPrice);
+            }
+            var status = pred.hit === null ? labels.hitPending : pred.hit ? labels.hitYes : labels.hitNo;
+            html += '<br>' + status;
+
+            tooltip.html(html).style('opacity', 1);
+            positionTooltip(event);
+          })
+          .on('mouseout', function() {
+            d3.select(this).select('rect').attr('width', 10).attr('height', 10).attr('x', -5).attr('y', -5);
+            tooltip.style('opacity', 0);
+          });
+        });
+      }
+    }
+
+    draw();
+
+    // Controls (full chart only)
+    if (!mini) {
+      var wrapper = container.parentElement;
+
+      // Toggle buttons
+      wrapper.querySelectorAll('[data-toggle]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          btn.classList.toggle('active');
+          var key = btn.getAttribute('data-toggle');
+          if (key === 'halvings') showHalvings = btn.classList.contains('active');
+          if (key === 'events') showEvents = btn.classList.contains('active');
+          if (key === 'predictions') showPredictions = btn.classList.contains('active');
+          if (key === 'models') showModels = btn.classList.contains('active');
+          draw();
+        });
+      });
+
+      // Scale buttons
+      wrapper.querySelectorAll('[data-scale]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          wrapper.querySelectorAll('[data-scale]').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          useLog = btn.getAttribute('data-scale') === 'log';
+          draw();
+        });
+      });
+
+      // Range buttons
+      wrapper.querySelectorAll('[data-range]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          wrapper.querySelectorAll('[data-range]').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          rangeMode = btn.getAttribute('data-range');
+          draw();
+        });
+      });
+    }
+
+    // Resize
+    var resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(draw, 250);
+    });
+  }
+
+  initChart();
+})();
+</script>
+
+<style>
+  .btc-chart-wrapper {
+    position: relative;
+  }
+  .btc-chart-wrapper.mini {
+    cursor: pointer;
+  }
+  .chart-container {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container.mini {
+    border-radius: 6px;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+  .chart-container :global(.chart-tooltip) {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 10;
+    max-width: 320px;
+  }
+
+  /* Controls */
+  .chart-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+  }
+  .chart-toggles {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .toggle-btn:hover { background: rgba(180, 83, 9, 0.06); }
+  .toggle-btn.active { color: var(--color-text); font-weight: 600; }
+  .toggle-btn:not(.active) { opacity: 0.5; text-decoration: line-through; }
+
+  .toggle-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .halving-dot { background: #e67e22; }
+  .event-dot { background: #059669; }
+  .prediction-dot { background: #6366f1; }
+  .model-dot { background: #8b5cf6; }
+
+  .chart-scale-btns, .chart-range-btns {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .scale-btn, .range-btn {
+    padding: 0.25rem 0.6rem;
+    border: none;
+    background: transparent;
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: all 0.15s;
+  }
+  .scale-btn:hover, .range-btn:hover {
+    background: rgba(180, 83, 9, 0.06);
+  }
+  .scale-btn.active, .range-btn.active {
+    background: var(--color-accent);
+    color: #fff;
+    font-weight: 600;
+  }
+  .scale-btn + .scale-btn, .range-btn + .range-btn {
+    border-left: 1px solid var(--color-border);
+  }
+
+  @media (max-width: 768px) {
+    .chart-controls {
+      gap: 0.5rem;
+    }
+  }
+</style>

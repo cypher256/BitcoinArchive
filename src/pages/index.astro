@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EntryCard from '../components/EntryCard.astro';
 import NetworkGraph from '../components/NetworkGraph.astro';
+import BtcPriceChart from '../components/BtcPriceChart.astro';
 import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../i18n/utils';
 import { computeGraphData } from '../lib/graphData';
 import { buildThreadInfo, collapseThreads } from '../data/threads';
@@ -198,12 +199,31 @@ function tagWeight(count: number, max: number): number {
         );
       })}
     </section>
+
+    <section class="dashboard-section">
+      <div class="section-header">
+        <h2>{t('chart.miniTitle' as any)}</h2>
+        <a href={localePath('/chart/', lang)} class="view-all">{t('chart.viewChart' as any)} &rarr;</a>
+      </div>
+      <a href={localePath('/chart/', lang)} class="mini-chart-link">
+        <BtcPriceChart lang={lang} mini={true} />
+      </a>
+    </section>
   </div>
 </BaseLayout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 
 <style>
+  .mini-chart-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.15s;
+  }
+  .mini-chart-link:hover {
+    opacity: 0.85;
+  }
   .network-section {
     margin-bottom: 1.5rem;
   }

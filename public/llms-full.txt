@@ -98,6 +98,19 @@ The archive tracks communications with the following participants:
 - **Last public post**: December 12, 2010 on BitcoinTalk (about DoS attack prevention).
 - **Last private email**: April 26, 2011 to Gavin Andresen.
 
+## Bitcoin Price Chart
+
+Interactive chart page showing Bitcoin's complete price history with:
+- **Halving events**: All 4 completed halvings plus 2 estimated future halvings displayed as vertical markers
+- **Major events**: 20 historical events including Mt. Gox collapse, ETF approvals, and regulatory milestones
+- **Price predictions**: 16 predictions from notable figures (Hal Finney, Tim Draper, Cathie Wood, Michael Saylor, etc.) including both bullish and bearish forecasts
+- **Theoretical models**: Power Law (Santostasi), Stock-to-Flow (PlanB), Rainbow Band logarithmic regression with future projections to 2030
+- **Supply schedule**: Bitcoin's predetermined supply curve from 2009 to 2140 (21M cap)
+- Log/linear scale toggle, zoom controls, responsive design
+
+English: https://bitcoin-archive.pages.dev/chart/
+Japanese: https://bitcoin-archive.pages.dev/ja/chart/
+
 ## Technical Details
 
 - Built with Astro (static site generator)

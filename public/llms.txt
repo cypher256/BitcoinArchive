@@ -24,12 +24,14 @@ The archive contains 1,000+ entries across 6 categories:
 - Tags: https://bitcoin-archive.pages.dev/tags/
 - Search: https://bitcoin-archive.pages.dev/search/
 - About: https://bitcoin-archive.pages.dev/about/
+- Price Chart: https://bitcoin-archive.pages.dev/chart/
 
 ## Japanese Version
 
 - Home: https://bitcoin-archive.pages.dev/ja/
 - All Entries: https://bitcoin-archive.pages.dev/ja/entries/
 - Search: https://bitcoin-archive.pages.dev/ja/search/
+- Price Chart: https://bitcoin-archive.pages.dev/ja/chart/
 
 ## Key Facts
 

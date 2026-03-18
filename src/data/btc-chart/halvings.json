@@ -1,0 +1,46 @@
+[
+  {
+    "date": "2009-01-03",
+    "block": 0,
+    "reward": 50,
+    "label": { "en": "Genesis Block", "ja": "ジェネシスブロック" }
+  },
+  {
+    "date": "2012-11-28",
+    "block": 210000,
+    "reward": 25,
+    "label": { "en": "1st Halving", "ja": "第1回半減期" }
+  },
+  {
+    "date": "2016-07-09",
+    "block": 420000,
+    "reward": 12.5,
+    "label": { "en": "2nd Halving", "ja": "第2回半減期" }
+  },
+  {
+    "date": "2020-05-11",
+    "block": 630000,
+    "reward": 6.25,
+    "label": { "en": "3rd Halving", "ja": "第3回半減期" }
+  },
+  {
+    "date": "2024-04-20",
+    "block": 840000,
+    "reward": 3.125,
+    "label": { "en": "4th Halving", "ja": "第4回半減期" }
+  },
+  {
+    "date": "2028-04-17",
+    "block": 1050000,
+    "reward": 1.5625,
+    "label": { "en": "5th Halving (est.)", "ja": "第5回半減期（予測）" },
+    "estimated": true
+  },
+  {
+    "date": "2032-04-14",
+    "block": 1260000,
+    "reward": 0.78125,
+    "label": { "en": "6th Halving (est.)", "ja": "第6回半減期（予測）" },
+    "estimated": true
+  }
+]

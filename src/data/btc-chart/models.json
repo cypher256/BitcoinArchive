@@ -1,0 +1,92 @@
+{
+  "models": [
+    {
+      "id": "power-law",
+      "name": { "en": "Power Law (Santostasi)", "ja": "べき乗則 (Santostasi)" },
+      "color": "#8b5cf6",
+      "description": {
+        "en": "log₁₀(price) = -17.01 + 5.82 × log₁₀(days since genesis)",
+        "ja": "log₁₀(価格) = -17.01 + 5.82 × log₁₀(ジェネシスからの日数)"
+      },
+      "data": [
+        { "date": "2010-07-17", "price": 0.09 },
+        { "date": "2011-01-01", "price": 0.44 },
+        { "date": "2012-01-01", "price": 4.7 },
+        { "date": "2013-01-01", "price": 27 },
+        { "date": "2014-01-01", "price": 104 },
+        { "date": "2015-01-01", "price": 310 },
+        { "date": "2016-01-01", "price": 770 },
+        { "date": "2017-01-01", "price": 1670 },
+        { "date": "2018-01-01", "price": 3260 },
+        { "date": "2019-01-01", "price": 5860 },
+        { "date": "2020-01-01", "price": 9830 },
+        { "date": "2021-01-01", "price": 15600 },
+        { "date": "2022-01-01", "price": 23500 },
+        { "date": "2023-01-01", "price": 34100 },
+        { "date": "2024-01-01", "price": 47800 },
+        { "date": "2025-01-01", "price": 65000 },
+        { "date": "2026-01-01", "price": 86400 },
+        { "date": "2027-01-01", "price": 112600 },
+        { "date": "2028-01-01", "price": 144000 },
+        { "date": "2029-01-01", "price": 181000 },
+        { "date": "2030-01-01", "price": 224000 }
+      ]
+    },
+    {
+      "id": "stock-to-flow",
+      "name": { "en": "Stock-to-Flow (PlanB)", "ja": "S2Fモデル (PlanB)" },
+      "color": "#0ea5e9",
+      "note": { "en": "Model accuracy declined significantly after 2020 halving", "ja": "2020年半減期以降、モデルの精度は大幅に低下" },
+      "description": {
+        "en": "Price = e^(14.6) × SF^3.3 — steps up each halving epoch (shown through 2024 epoch only)",
+        "ja": "価格 = e^(14.6) × SF^3.3 — 半減期ごとにステップアップ（2024年エポックまで表示）"
+      },
+      "data": [
+        { "date": "2009-01-03", "price": 0.5 },
+        { "date": "2012-11-27", "price": 0.5 },
+        { "date": "2012-11-28", "price": 12 },
+        { "date": "2016-07-08", "price": 12 },
+        { "date": "2016-07-09", "price": 3600 },
+        { "date": "2020-05-10", "price": 3600 },
+        { "date": "2020-05-11", "price": 55000 },
+        { "date": "2024-04-19", "price": 55000 },
+        { "date": "2024-04-20", "price": 500000 },
+        { "date": "2028-04-16", "price": 500000 },
+        { "date": "2028-04-17", "price": 4200000 },
+        { "date": "2030-01-01", "price": 4200000 }
+      ]
+    },
+    {
+      "id": "rainbow",
+      "name": { "en": "Rainbow Band (mid)", "ja": "レインボーバンド (中央)" },
+      "color": "#f59e0b",
+      "description": {
+        "en": "Logarithmic regression midline: price = 10^(2.66 × ln(days) - 17.9)",
+        "ja": "対数回帰中央線: price = 10^(2.66 × ln(days) - 17.9)"
+      },
+      "data": [
+        { "date": "2010-07-17", "price": 0.06 },
+        { "date": "2011-01-01", "price": 0.26 },
+        { "date": "2012-01-01", "price": 2.3 },
+        { "date": "2013-01-01", "price": 13 },
+        { "date": "2014-01-01", "price": 53 },
+        { "date": "2015-01-01", "price": 166 },
+        { "date": "2016-01-01", "price": 430 },
+        { "date": "2017-01-01", "price": 970 },
+        { "date": "2018-01-01", "price": 1960 },
+        { "date": "2019-01-01", "price": 3640 },
+        { "date": "2020-01-01", "price": 6280 },
+        { "date": "2021-01-01", "price": 10200 },
+        { "date": "2022-01-01", "price": 15700 },
+        { "date": "2023-01-01", "price": 23200 },
+        { "date": "2024-01-01", "price": 33100 },
+        { "date": "2025-01-01", "price": 45800 },
+        { "date": "2026-01-01", "price": 61800 },
+        { "date": "2027-01-01", "price": 81700 },
+        { "date": "2028-01-01", "price": 106000 },
+        { "date": "2029-01-01", "price": 135000 },
+        { "date": "2030-01-01", "price": 170000 }
+      ]
+    }
+  ]
+}

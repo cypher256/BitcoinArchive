@@ -1,0 +1,331 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BtcPriceChart from '../../components/BtcPriceChart.astro';
+import { useTranslations, absoluteUrl } from '../../i18n/utils';
+
+const lang = 'ja';
+const t = useTranslations(lang);
+
+const predictions = await import('../../data/btc-chart/predictions.json').then(m => m.default);
+const supply = await import('../../data/btc-chart/supply.json').then(m => m.default);
+const halvings = await import('../../data/btc-chart/halvings.json').then(m => m.default);
+---
+
+<BaseLayout
+  title={`${t('chart.title' as any)} - ${t('site.title')}`}
+  description={t('chart.description' as any)}
+  lang={lang}
+  alternateEn={absoluteUrl('/chart/', 'en')}
+>
+  <div class="container-wide chart-page">
+    <h1>{t('chart.title' as any)}</h1>
+    <p class="page-description">{t('chart.description' as any)}</p>
+
+    <section class="chart-section">
+      <BtcPriceChart lang={lang} />
+    </section>
+
+    <section class="detail-section">
+      <h2>{t('chart.halvings' as any)}</h2>
+      <div class="halvings-cards">
+        {halvings.map((h: any) => (
+          <div class:list={['halving-card', { estimated: h.estimated }]}>
+            <div class="halving-card-reward">{h.reward} <span>BTC</span></div>
+            <div class="halving-card-label">{h.label[lang]}</div>
+            <div class="halving-card-meta">
+              <span>{h.date}</span>
+              <span>#{h.block.toLocaleString()}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2>{t('chart.supplyTitle' as any)}</h2>
+      <div id="supply-chart" class="supply-chart-container"></div>
+      <script type="application/json" id="supply-data" set:html={JSON.stringify(supply)} />
+    </section>
+
+    <section class="detail-section predictions-section">
+      <h2>{t('chart.predictionsTitle' as any)}</h2>
+      <div class="predictions-table-wrap">
+        <table class="predictions-table">
+          <thead>
+            <tr>
+              <th>{t('chart.predictedBy' as any)}</th>
+              <th>{t('chart.date' as any)}</th>
+              <th>{t('chart.target' as any)}</th>
+              <th>{t('chart.actual' as any)}</th>
+              <th>{t('chart.hit' as any)}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {predictions.map((p: any) => {
+              const status = p.hit === null ? 'pending' : p.hit ? 'hit' : 'miss';
+              return (
+                <tr class={`pred-${status} ${p.bearish ? 'pred-bearish' : ''}`}>
+                  <td>
+                    <strong>{p.predictor}</strong>
+                    <span class="pred-quote">"{p.quote[lang]}"</span>
+                  </td>
+                  <td class="pred-date">
+                    <span>{p.date.slice(0, 7)}</span>
+                    <span class="pred-arrow">&rarr;</span>
+                    <span>{p.targetDate.slice(0, 7)}</span>
+                  </td>
+                  <td class="pred-price">${p.targetPrice.toLocaleString()}</td>
+                  <td class="pred-price">{p.actualPrice ? '$' + p.actualPrice.toLocaleString() : '—'}</td>
+                  <td class={`pred-status pred-status-${status}`}>
+                    {status === 'pending' ? t('chart.hitPending' as any) : status === 'hit' ? t('chart.hitYes' as any) : t('chart.hitNo' as any)}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
+<script is:inline>
+(function() {
+  function initSupplyChart() {
+    if (typeof d3 === 'undefined') { setTimeout(initSupplyChart, 50); return; }
+
+    var container = document.getElementById('supply-chart');
+    var dataEl = document.getElementById('supply-data');
+    if (!container || !dataEl) return;
+
+    var data = JSON.parse(dataEl.textContent);
+    var schedule = data.schedule;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var H = 280;
+      var margin = { top: 20, right: 20, bottom: 40, left: 70 };
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var x = d3.scaleLinear().domain([2009, 2140]).range([0, w]);
+      var y = d3.scaleLinear().domain([0, 21000000]).range([h, 0]);
+
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(8).tickFormat(function(d) { return String(d); }))
+        .selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', '11px');
+
+      g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(function(d) {
+        return d3.format('.1f')(d / 1000000) + 'M';
+      })).selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', '11px');
+
+      // 21M line
+      g.append('line')
+        .attr('x1', 0).attr('x2', w).attr('y1', y(21000000)).attr('y2', y(21000000))
+        .attr('stroke', '#b45309').attr('stroke-dasharray', '6,4').attr('stroke-opacity', 0.5);
+      g.append('text').attr('x', w - 5).attr('y', y(21000000) - 5)
+        .attr('text-anchor', 'end').attr('font-family', 'var(--font-heading)')
+        .attr('font-size', '10px').attr('fill', '#b45309').text('21M BTC');
+
+      // Area fill
+      var area = d3.area()
+        .x(function(d) { return x(d.year); })
+        .y0(h)
+        .y1(function(d) { return y(d.cumulativeSupply); })
+        .curve(d3.curveMonotoneX);
+
+      var gradient = svg.append('defs').append('linearGradient')
+        .attr('id', 'supply-gradient').attr('x1', '0').attr('x2', '0').attr('y1', '0').attr('y2', '1');
+      gradient.append('stop').attr('offset', '0%').attr('stop-color', '#b45309').attr('stop-opacity', 0.25);
+      gradient.append('stop').attr('offset', '100%').attr('stop-color', '#b45309').attr('stop-opacity', 0.02);
+
+      g.append('path').datum(schedule).attr('fill', 'url(#supply-gradient)').attr('d', area);
+
+      var line = d3.line()
+        .x(function(d) { return x(d.year); })
+        .y(function(d) { return y(d.cumulativeSupply); })
+        .curve(d3.curveMonotoneX);
+
+      g.append('path').datum(schedule)
+        .attr('fill', 'none').attr('stroke', '#b45309').attr('stroke-width', 2).attr('d', line);
+
+      // Current year marker
+      var now = new Date().getFullYear();
+      g.append('line')
+        .attr('x1', x(now)).attr('x2', x(now)).attr('y1', 0).attr('y2', h)
+        .attr('stroke', '#6366f1').attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.5);
+      g.append('text').attr('x', x(now)).attr('y', -5)
+        .attr('text-anchor', 'middle').attr('font-family', 'var(--font-heading)')
+        .attr('font-size', '10px').attr('fill', '#6366f1').text(now);
+    }
+
+    draw();
+    var timer;
+    window.addEventListener('resize', function() {
+      clearTimeout(timer);
+      timer = setTimeout(draw, 250);
+    });
+  }
+  initSupplyChart();
+})();
+</script>
+
+<style>
+  .chart-page h1 {
+    margin-top: 2rem;
+  }
+  .page-description {
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+  }
+  .chart-section {
+    margin-bottom: 3rem;
+  }
+  .detail-section {
+    margin-bottom: 3rem;
+  }
+  .detail-section h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+  }
+  .supply-chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .supply-chart-container :global(svg) {
+    display: block;
+  }
+
+  /* Halvings cards */
+  .halvings-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+  .halving-card {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    text-align: center;
+    font-family: var(--font-heading);
+    transition: box-shadow 0.15s;
+  }
+  .halving-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  .halving-card.estimated {
+    opacity: 0.6;
+    border-style: dashed;
+  }
+  .halving-card-reward {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1.2;
+  }
+  .halving-card-reward span {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .halving-card-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 0.4rem 0;
+    color: var(--color-text);
+  }
+  .halving-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Predictions table */
+  .predictions-section {
+    margin-bottom: 3rem;
+  }
+  .predictions-table-wrap {
+    overflow-x: auto;
+  }
+  .predictions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+  }
+  .predictions-table th {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+  .predictions-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+  .pred-quote {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+  .pred-date {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  .pred-arrow {
+    margin: 0 0.25rem;
+    color: var(--color-text-muted);
+  }
+  .pred-price {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .pred-status {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .pred-status-hit { color: #059669; }
+  .pred-status-miss { color: #9ca3af; }
+  .pred-status-pending { color: #6366f1; }
+  .pred-bearish td:first-child strong::after {
+    content: ' (bearish)';
+    color: #dc2626;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 600px) {
+    .halvings-cards {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.5rem;
+    }
+    .halving-card {
+      padding: 0.75rem 0.5rem;
+    }
+    .halving-card-reward {
+      font-size: 1.1rem;
+    }
+    .pred-date {
+      white-space: normal;
+    }
+  }
+</style>

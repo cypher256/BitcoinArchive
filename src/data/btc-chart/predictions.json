@@ -1,0 +1,159 @@
+[
+  {
+    "predictor": "Hal Finney",
+    "date": "2009-01-11",
+    "targetDate": "2019-01-01",
+    "targetPrice": 10000000,
+    "actualPrice": 3700,
+    "quote": { "en": "If Bitcoin succeeds, each coin could be worth $10 million", "ja": "ビットコインが成功すれば、1コイン1000万ドルの価値になりうる" },
+    "source": "Bitcoin-list mailing list",
+    "hit": false
+  },
+  {
+    "predictor": "John McAfee",
+    "date": "2017-11-29",
+    "targetDate": "2020-12-31",
+    "targetPrice": 1000000,
+    "actualPrice": 29000,
+    "quote": { "en": "Bitcoin will reach $1 million by end of 2020", "ja": "2020年末までにビットコインは100万ドルに" },
+    "source": "Twitter",
+    "hit": false
+  },
+  {
+    "predictor": "Tim Draper",
+    "date": "2018-04-12",
+    "targetDate": "2022-12-31",
+    "targetPrice": 250000,
+    "actualPrice": 16500,
+    "quote": { "en": "Bitcoin will reach $250,000 by 2022", "ja": "2022年までにビットコインは25万ドルに" },
+    "source": "Bloomberg interview",
+    "hit": false
+  },
+  {
+    "predictor": "PlanB (S2F Model)",
+    "date": "2019-03-22",
+    "targetDate": "2021-12-31",
+    "targetPrice": 100000,
+    "actualPrice": 46000,
+    "quote": { "en": "Stock-to-Flow model predicts $100K after 2020 halving", "ja": "S2Fモデルは2020年半減期後に10万ドルを予測" },
+    "source": "Medium article",
+    "hit": false
+  },
+  {
+    "predictor": "Willy Woo",
+    "date": "2020-11-14",
+    "targetDate": "2021-12-31",
+    "targetPrice": 200000,
+    "actualPrice": 46000,
+    "quote": { "en": "BTC will reach $200K in this cycle", "ja": "今サイクルでBTCは20万ドルに到達する" },
+    "source": "Twitter",
+    "hit": false
+  },
+  {
+    "predictor": "Cathie Wood (ARK Invest)",
+    "date": "2021-02-17",
+    "targetDate": "2030-12-31",
+    "targetPrice": 1000000,
+    "quote": { "en": "Bitcoin could reach $1 million by 2030", "ja": "2030年までにビットコインは100万ドルに" },
+    "source": "ARK Invest Big Ideas 2021",
+    "hit": null
+  },
+  {
+    "predictor": "Michael Saylor",
+    "date": "2022-01-10",
+    "targetDate": "2032-12-31",
+    "targetPrice": 6000000,
+    "quote": { "en": "Bitcoin will reach $6 million", "ja": "ビットコインは600万ドルに到達する" },
+    "source": "Interview",
+    "hit": null
+  },
+  {
+    "predictor": "Balaji Srinivasan",
+    "date": "2023-03-17",
+    "targetDate": "2023-06-17",
+    "targetPrice": 1000000,
+    "actualPrice": 26300,
+    "quote": { "en": "$1M BTC in 90 days (hyperinflation bet)", "ja": "90日以内にBTC100万ドル（ハイパーインフレ賭け）" },
+    "source": "Twitter bet",
+    "hit": false
+  },
+  {
+    "predictor": "Standard Chartered",
+    "date": "2023-04-24",
+    "targetDate": "2024-12-31",
+    "targetPrice": 120000,
+    "actualPrice": 93000,
+    "quote": { "en": "BTC to $120K by end of 2024", "ja": "2024年末までにBTC12万ドル" },
+    "source": "Research note",
+    "hit": false
+  },
+  {
+    "predictor": "Robert Kiyosaki",
+    "date": "2023-08-14",
+    "targetDate": "2025-06-30",
+    "targetPrice": 300000,
+    "quote": { "en": "Bitcoin will reach $300K by mid-2025", "ja": "2025年半ばまでにビットコイン30万ドル" },
+    "source": "Twitter",
+    "hit": null
+  },
+  {
+    "predictor": "Tom Lee (Fundstrat)",
+    "date": "2024-01-15",
+    "targetDate": "2024-12-31",
+    "targetPrice": 150000,
+    "actualPrice": 93000,
+    "quote": { "en": "BTC to reach $150K in 2024", "ja": "2024年にBTC15万ドル到達" },
+    "source": "CNBC interview",
+    "hit": false
+  },
+  {
+    "predictor": "Max Keiser",
+    "date": "2024-03-01",
+    "targetDate": "2025-12-31",
+    "targetPrice": 200000,
+    "quote": { "en": "BTC will hit $200K in 2025", "ja": "2025年にBTC20万ドル到達" },
+    "source": "Twitter",
+    "hit": null
+  },
+  {
+    "predictor": "Larry Fink (BlackRock)",
+    "date": "2024-01-12",
+    "targetDate": "2029-12-31",
+    "targetPrice": 500000,
+    "quote": { "en": "Bitcoin ETFs could drive BTC to $500K+", "ja": "ビットコインETFがBTC50万ドル超を牽引する可能性" },
+    "source": "Fox Business interview",
+    "hit": null
+  },
+  {
+    "predictor": "Peter Schiff",
+    "date": "2017-12-18",
+    "targetDate": "2019-12-31",
+    "targetPrice": 1000,
+    "actualPrice": 7200,
+    "quote": { "en": "Bitcoin will crash below $1,000", "ja": "ビットコインは1,000ドル以下に暴落する" },
+    "source": "Twitter",
+    "hit": false,
+    "bearish": true
+  },
+  {
+    "predictor": "Warren Buffett",
+    "date": "2018-05-05",
+    "targetDate": "2028-12-31",
+    "targetPrice": 0,
+    "quote": { "en": "Bitcoin is rat poison squared", "ja": "ビットコインはネズミの毒の二乗" },
+    "source": "Berkshire Hathaway shareholder meeting",
+    "hit": null,
+    "bearish": true
+  },
+  {
+    "predictor": "Nouriel Roubini",
+    "date": "2018-10-11",
+    "targetDate": "2023-12-31",
+    "targetPrice": 0,
+    "actualPrice": 42000,
+    "quote": { "en": "Bitcoin is the mother of all bubbles, heading to zero", "ja": "ビットコインは全バブルの母、ゼロに向かう" },
+    "source": "US Senate testimony",
+    "hit": false,
+    "bearish": true
+  }
+]

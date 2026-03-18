@@ -1,0 +1,21 @@
+{
+  "maxSupply": 21000000,
+  "schedule": [
+    { "year": 2009, "block": 0, "reward": 50, "cumulativeSupply": 0 },
+    { "year": 2012, "block": 210000, "reward": 25, "cumulativeSupply": 10500000 },
+    { "year": 2016, "block": 420000, "reward": 12.5, "cumulativeSupply": 15750000 },
+    { "year": 2020, "block": 630000, "reward": 6.25, "cumulativeSupply": 18375000 },
+    { "year": 2024, "block": 840000, "reward": 3.125, "cumulativeSupply": 19687500 },
+    { "year": 2028, "block": 1050000, "reward": 1.5625, "cumulativeSupply": 20343750 },
+    { "year": 2032, "block": 1260000, "reward": 0.78125, "cumulativeSupply": 20671875 },
+    { "year": 2036, "block": 1470000, "reward": 0.390625, "cumulativeSupply": 20835938 },
+    { "year": 2040, "block": 1680000, "reward": 0.1953125, "cumulativeSupply": 20917969 },
+    { "year": 2044, "block": 1890000, "reward": 0.09765625, "cumulativeSupply": 20958984 },
+    { "year": 2048, "block": 2100000, "reward": 0.04882813, "cumulativeSupply": 20979492 },
+    { "year": 2052, "block": 2310000, "reward": 0.02441406, "cumulativeSupply": 20989746 },
+    { "year": 2060, "block": 2730000, "reward": 0.00610352, "cumulativeSupply": 20997437 },
+    { "year": 2080, "block": 3780000, "reward": 0.00000596, "cumulativeSupply": 20999976 },
+    { "year": 2100, "block": 4830000, "reward": 0.00000001, "cumulativeSupply": 20999999 },
+    { "year": 2140, "block": 6930000, "reward": 0, "cumulativeSupply": 21000000 }
+  ]
+}
