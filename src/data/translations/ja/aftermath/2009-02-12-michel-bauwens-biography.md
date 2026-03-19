@@ -1,5 +1,5 @@
 ---
-title: "ミシェル・バウエンス（1958年–） — ビットコインの稼働状況をサトシに尋ねたP2P Foundation創設者"
+title: "ミシェル・バウエンス（1958–） — ビットコインの稼働状況をサトシに尋ねたP2P Foundation創設者"
 date: 2009-02-12T02:15:30Z
 source: aftermath
 sourceUrl: "https://wiki.p2pfoundation.net/Michel_Bauwens"

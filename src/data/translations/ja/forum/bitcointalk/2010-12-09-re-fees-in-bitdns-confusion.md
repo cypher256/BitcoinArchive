@@ -7,8 +7,16 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「BitDNSの手数料に関する混乱」におけるサトシ・ナカモトの返信。"
+  - name: "Peter Todd"
+    slug: "peter-todd"
+description: "サトシ・ナカモトがトランザクション置換の可能な設計を説明 — 手数料の高い二重支払いで元のトランザクションを置き換える仕組み。この概念は後にReplace-by-Fee（RBF）として知られるようになる。ピーター・トッドが約1.5時間後にこの投稿に返信した。"
 isSatoshi: true
+threadId: "bt-fees-in-bitdns-confusion"
+threadPosition: 1
+tags:
+  - "replace-by-fee"
+  - "transaction-replacement"
+  - "peter-todd"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/534/"

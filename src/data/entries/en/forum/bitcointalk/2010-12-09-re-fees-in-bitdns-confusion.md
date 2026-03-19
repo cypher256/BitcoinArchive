@@ -7,8 +7,16 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto's reply in the thread \"Fees in BitDNS confusion\"."
+  - name: "Peter Todd"
+    slug: "peter-todd"
+description: "Satoshi Nakamoto describes a possible design for transaction replacement — allowing a double-spend with a higher fee to replace the original transaction. This concept would later become known as Replace-by-Fee (RBF). Peter Todd replied to this post approximately 1.5 hours later."
 isSatoshi: true
+threadId: "bt-fees-in-bitdns-confusion"
+threadPosition: 1
+tags:
+  - "replace-by-fee"
+  - "transaction-replacement"
+  - "peter-todd"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/534/"
