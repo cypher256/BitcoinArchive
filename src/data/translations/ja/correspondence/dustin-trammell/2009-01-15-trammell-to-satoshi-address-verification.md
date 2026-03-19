@@ -36,7 +36,7 @@ translationStatus: complete
 
 続いてトランメルはデータ喪失について重要な懸念を提起した――ウォレットバックアップに関する最も初期の議論の一つである。
 
-> One thing that came to mind on this topic is the potential for BitCoin loss if you have a system failure. The application doesn't seem to store any data in the directory that it runs in, so I assume it's stored in the registry and other places …… so it may be a good idea to have the application be able to export everything that it needs for recovery to a file that could be backed up off of the system.
+> One thing that came to mind on this topic is the potential for BitCoin loss if you have a system failure. The application doesn't seem to store any data in the directory that it runs in, so I assume it's stored in the registry and other places ... so it may be a good idea to have the application be able to export everything that it needs for recovery to a file that could be backed up off of the system.
 
 また、プライバシーを保護しつつアドレス解決を可能にするオプションとして「ビットコインアドレスをネットワークに公開する」トグルを提案し、アプリケーションが終了時にネットワークソケットを正常にクローズしていない（TCP RST）ことを報告した。
 

@@ -27,7 +27,7 @@ const entrySchema = z.object({
   sourceUrl: z.string().url(),
   sourceStatus: z.enum(['available', 'archived', 'unavailable']).default('available'),
   author: z.string(),
-  participants: z.array(participantSchema),
+  participants: z.array(participantSchema).default([]),
   description: z.string(),
   threadId: z.string().optional(),
   threadPosition: z.number().optional(),

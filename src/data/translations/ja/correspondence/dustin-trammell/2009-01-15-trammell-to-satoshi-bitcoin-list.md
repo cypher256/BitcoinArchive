@@ -33,7 +33,7 @@ translationStatus: complete
 
 会話の公開共有に同意し、すぐにbitcoin-listを購読した。続いてトランメルは、ハル・フィニーの公開メッセージに触発された投資志向の早期マイニング動機を明かした。
 
-> Yes, I saw that message and was one of the other reasons I started up a node so quickly. My systems aren't doing much of anything else while idle, so why not create BitCoins? And if they're worth something someday……? Bonus!
+> Yes, I saw that message and was one of the other reasons I started up a node so quickly. My systems aren't doing much of anything else while idle, so why not create BitCoins? And if they're worth something someday...? Bonus!
 
 サトシのマイクロペイメントのユースケースについて、トランメルは実際の普及における障壁を指摘した。
 
