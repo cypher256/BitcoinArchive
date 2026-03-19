@@ -62,6 +62,11 @@ const linkData = Array.from(nameMap.entries())
         var text = textNode.textContent;
         var idx = text.indexOf(name);
         if (idx === -1) return;
+        // Word boundary check: reject partial matches inside longer words
+        var before = idx > 0 ? text[idx - 1] : ' ';
+        var after = idx + name.length < text.length ? text[idx + name.length] : ' ';
+        var wordChar = /[\w\u3040-\u9fff]/;
+        if (wordChar.test(before) || wordChar.test(after)) return;
         // Only link first occurrence per container
         var key = container.className + '::' + name;
         if (replaced.has(key)) return;
