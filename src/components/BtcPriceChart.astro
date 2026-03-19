@@ -384,6 +384,31 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
               positionTooltip(event);
             }).on('mouseout', unhighlightModel);
         });
+
+        // Resolve overlapping model labels
+        if (modelElements.length > 1) {
+          var minGap = 16; // minimum vertical gap in px
+          // Extract current Y positions from transform
+          var labelPositions = modelElements.map(function(e) {
+            var t = e.label.attr('transform');
+            var m = t.match(/translate\(\s*([\d.e+-]+)\s*,\s*([\d.e+-]+)\s*\)/);
+            return { el: e, tx: parseFloat(m[1]), ty: parseFloat(m[2]) };
+          });
+          // Sort by Y position
+          labelPositions.sort(function(a, b) { return a.ty - b.ty; });
+          // Push overlapping labels apart
+          for (var li = 1; li < labelPositions.length; li++) {
+            var gap = labelPositions[li].ty - labelPositions[li - 1].ty;
+            if (gap < minGap) {
+              var shift = minGap - gap;
+              labelPositions[li].ty += shift;
+            }
+          }
+          // Apply adjusted positions
+          labelPositions.forEach(function(lp) {
+            lp.el.label.attr('transform', 'translate(' + lp.tx + ',' + lp.ty + ')');
+          });
+        }
       }
 
       // --- Layer 3: Prediction dashed lines (background) ---
