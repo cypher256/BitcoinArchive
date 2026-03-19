@@ -30,6 +30,6 @@ translationStatus: complete
 
 Bitcoinが提案する解決策は、二重支払いを検出するためにピアツーピアネットワークを使用することだ。簡単に言えば、ネットワークは分散型タイムスタンプサーバーのように機能し、コインを使用する最初のトランザクションにスタンプを押す。情報は拡散しやすいが抑え込みにくいという性質を利用している。
 
-仕組みの詳細については、http://www.bitcoin.org/bitcoin.pdf の設計論文を参照するか、http://www.bitcoin.org にアクセスしてソフトウェアをダウンロードしてお試しください。
+仕組みの詳細については、http://www.bitcoin.org/bitcoin.pdf の設計論文を参照するか、http://www.bitcoin.org にアクセスしてソフトウェアをダウンロードして試してほしい。
 
 Satoshi Nakamoto
