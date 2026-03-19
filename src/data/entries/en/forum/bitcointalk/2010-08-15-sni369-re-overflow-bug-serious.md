@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/369/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 2
+threadPosition: 3
 ---
 
 It would help if people stop generating.  We will probably need to re-do a branch around the current one, and the less you generate the faster that will be.

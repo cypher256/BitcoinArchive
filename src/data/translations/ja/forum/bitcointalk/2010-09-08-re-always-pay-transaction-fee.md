@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/441/"
 threadId: "bt-always-pay-transaction-fee"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

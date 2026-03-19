@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/57/"
 threadId: "bt-what-s-with-this-odd-generation"
-threadPosition: 3
+threadPosition: 4
 translationStatus: complete
 ---
 

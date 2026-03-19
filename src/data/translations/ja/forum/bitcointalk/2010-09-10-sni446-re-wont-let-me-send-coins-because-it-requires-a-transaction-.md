@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/446/"
 threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

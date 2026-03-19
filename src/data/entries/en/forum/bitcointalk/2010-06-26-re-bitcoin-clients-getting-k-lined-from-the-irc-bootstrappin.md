@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/150/"
 threadId: "bt-bitcoin-clients-getting-k-lined-from-the-irc-boots"
-threadPosition: 2
+threadPosition: 3
 ---
 
 Freenode is too visible, right in the middle of where all those users and moderators are hanging out.  Laszlo's option is a much better fit for us.

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/304/"
 threadId: "bt-linux-distribution-download"
-threadPosition: 2
+threadPosition: 3
 ---
 
 It can be built with Boost 1.37 or later.

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/148/"
 threadId: "bt-on-irc-bootstrapping"
-threadPosition: 4
+threadPosition: 5
 translationStatus: complete
 ---
 

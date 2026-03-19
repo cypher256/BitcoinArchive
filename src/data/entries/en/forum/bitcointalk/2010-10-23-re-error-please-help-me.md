@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/493/"
 threadId: "bt-error-please-help-me"
-threadPosition: 1
+threadPosition: 2
 ---
 
 [Quote from: theymos on October 21, 2010, 10:00:26 PM](https://bitcointalk.org/index.php?topic=1530.msg17955#msg17955)his block count remains "stuck" at 1698.

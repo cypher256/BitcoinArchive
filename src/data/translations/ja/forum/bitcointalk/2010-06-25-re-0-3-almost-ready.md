@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/145/"
 threadId: "bt-0-3-almost-ready"
-threadPosition: 7
+threadPosition: 8
 translationStatus: complete
 ---
 

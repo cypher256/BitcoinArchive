@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/373/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 5
+threadPosition: 6
 ---
 
 [Quote from: knightmb on August 15, 2010, 10:59:04 PM](https://bitcointalk.org/index.php?topic=823.msg9574#msg9574)**[edit]** Just saw your post, I'll build one to less than 74,000 then, should at least save you technical people a few minutes of downloading the new chain.  

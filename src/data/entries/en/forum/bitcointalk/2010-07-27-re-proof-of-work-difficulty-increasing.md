@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/281/"
 threadId: "bt-proof-of-work-difficulty-increasing"
-threadPosition: 15
+threadPosition: 14
 ---
 
 New difficulty factor 244.213223092<br>

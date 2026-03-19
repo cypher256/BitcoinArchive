@@ -1,0 +1,39 @@
+---
+title: "Re: Bitcoin Transfer - Address book and multiple addresses"
+date: 2009-01-18T11:01:09Z
+source: correspondence
+sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+  - name: "Dustin Trammell"
+    slug: "dustin-trammell"
+description: "Satoshi explains that the 'Satoshi' label Trammell saw was from his own address book, that transactions show which receiving address was used (not who sent them), and recommends creating different addresses for each payer to identify the source of payments."
+isSatoshi: true
+threadId: "satoshi-dustin-trammell"
+threadPosition: 16
+tags:
+  - "correspondence"
+  - "usability"
+  - "address-book"
+  - "privacy"
+  - "multiple-addresses"
+secondarySources:
+  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
+    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+  - name: "Dustin Trammell's Blog"
+    url: "https://blog.dustintrammell.com/"
+---
+
+Satoshi clarified the confusion about Trammell's transaction display. The address shown was actually one of Trammell's own receiving addresses, not Satoshi's:
+
+> It should be your Bitcoin address at home that you received it with. There's no way for it to know who it's from, so the best it can do is tell which of your addresses it was received on. You can create multiple addresses and give a different address to each person and label them to help figure out who's sending to you.
+
+He explained the address book labeling system:
+
+> It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change..." button to the right of your Bitcoin address.
+
+This email contains one of the earliest explanations of Bitcoin's pseudonymous nature — the protocol has no concept of sender identity, and the best practice for identifying payers is to create unique receiving addresses for each counterparty. This concept would become fundamental to Bitcoin privacy best practices.
+
+*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

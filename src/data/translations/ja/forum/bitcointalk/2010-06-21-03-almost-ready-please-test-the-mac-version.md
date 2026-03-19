@@ -1,0 +1,22 @@
+---
+title: "0.3ほぼ完成"
+date: 2010-06-21T19:01:53.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1654#msg1654"
+author: "satoshi"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "satoshiがスレッドを開始: 0.3ほぼ完成"
+isSatoshi: false
+threadId: "bt-0-3-almost-ready"
+threadPosition: 1
+tags: []
+translationStatus: complete
+---
+
+バージョン0.3のやることリストをすべて完了した。SVN上のコードはリリースの準備がほぼ整った。
+
+この時点でのテストは大変ありがたい。

@@ -1,0 +1,39 @@
+---
+title: "Re: ビットコイン送金 - UI表現の改善提案"
+date: 2009-01-19T19:58:23Z
+source: correspondence
+sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+author: "Dustin Trammell"
+participants:
+  - name: "Dustin Trammell"
+    slug: "dustin-trammell"
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "トランメルが誤ラベルは自分のミスであったことを認め、「Received with」を「Received payment to」に変更する提案を行い、複数の受信アドレスに最も近い現実世界のアナロジーとしてPayPalを例に挙げた。"
+isSatoshi: false
+threadId: "satoshi-dustin-trammell"
+threadPosition: 19
+tags:
+  - "correspondence"
+  - "usability"
+  - "ux-design"
+  - "address-book"
+secondarySources:
+  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
+    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+  - name: "Dustin Trammell's Blog"
+    url: "https://blog.dustintrammell.com/"
+translationStatus: complete
+---
+
+ビットコイン送金サブスレッドの最後のメールで、トランメルは誤ラベルが自分自身のミスであったことを受け入れ、具体的なUIの改善提案を行った：
+
+> I think had it said "Received with address: X" rather than just "Received with: X" I think I would have understood, although I'm sure that address being mislabeled 'Satoshi' was the primary reason for my initial confusion.
+
+トランメルはまた、ビットコインの複数受信アドレスに最も近い現実世界のアナロジーを特定した：
+
+> You're right though, there's really nothing comparable in the current financial system that people are used to other than maybe being able to use multiple recipient email addresses for PayPal. Perhaps it could say "Received payment to: X"?
+
+このサブスレッド最後のやり取りは、初期のビットコイン開発における協力的な性質を示している。実際のユーザーフィードバックがUI改善に直接反映された。トランメルの「address」や「payment to」を表示テキストに追加する提案は、「誰が送ったのか」と「自分のどのアドレスで受け取ったのか」の曖昧さに対処するものであり、この区別はビットコインウォレットの設計において今なお重要である。
+
+*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

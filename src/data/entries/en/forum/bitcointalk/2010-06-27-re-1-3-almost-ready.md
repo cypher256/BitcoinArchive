@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/159/"
 threadId: "bt-1-3-almost-ready"
-threadPosition: 2
+threadPosition: 3
 ---
 
 MinGW still only has good old stable 3.4.5.  There's not much reason for them to update it. 

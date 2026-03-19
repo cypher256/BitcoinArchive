@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/43/"
 threadId: "bt-proof-of-work-difficulty-increasing"
-threadPosition: 2
+threadPosition: 1
 ---
 
 We had our first automatic adjustment of the proof-of-work difficulty on 30 Dec 2009.  

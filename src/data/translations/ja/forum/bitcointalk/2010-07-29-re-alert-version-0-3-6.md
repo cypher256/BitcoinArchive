@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/290/"
 threadId: "bt-alert-version-0-3-6"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

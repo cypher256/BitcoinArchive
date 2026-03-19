@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/495/"
 threadId: "bt-win7-64bit-since-last-patch-tues-now-crashes"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

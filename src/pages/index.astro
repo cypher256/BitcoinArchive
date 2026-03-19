@@ -29,8 +29,10 @@ const sourceCounts = new Map<string, number>();
 for (const entry of entries) {
   sourceCounts.set(entry.data.source, (sourceCounts.get(entry.data.source) || 0) + 1);
 }
+const TOP_N = 10;
 const topSources = Array.from(sourceCounts.entries())
-  .sort((a, b) => b[1] - a[1]);
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, TOP_N);
 const maxSourceCount = topSources[0]?.[1] ?? 1;
 
 // Participant counts
@@ -46,7 +48,7 @@ for (const entry of entries) {
 }
 const topParticipants = Array.from(participantMap.entries())
   .sort((a, b) => b[1].count - a[1].count)
-  .slice(0, 8);
+  .slice(0, TOP_N);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
 // Featured entries (sorted by date)

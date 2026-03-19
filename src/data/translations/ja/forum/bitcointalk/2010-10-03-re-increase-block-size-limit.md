@@ -17,7 +17,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"
 threadId: "bt-patch-increase-block-size-limit"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

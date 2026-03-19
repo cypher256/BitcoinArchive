@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/352/"
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
-threadPosition: 4
+threadPosition: 5
 ---
 
 That big of a difference in speed, by a factor of 4 or 6, feels like it's likely to be some quirky weak spot or instruction that the old chip is slow with.  Unless it's a touted feature of the i5 that they made SSE2 six times faster.

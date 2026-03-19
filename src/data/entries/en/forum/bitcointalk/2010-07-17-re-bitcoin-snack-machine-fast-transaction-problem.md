@@ -18,7 +18,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/233/"
 threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
-threadPosition: 1
+threadPosition: 2
 ---
 
 I believe it'll be possible for a payment processing company to provide as a service the rapid distribution of transactions with good-enough checking in something like 10 seconds or less.

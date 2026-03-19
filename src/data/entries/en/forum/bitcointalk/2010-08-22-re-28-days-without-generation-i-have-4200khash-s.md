@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/407/"
 threadId: "bt-28-days-without-generation-i-have-4200khash-s"
-threadPosition: 2
+threadPosition: 3
 ---
 
 Search debug.log for "proof-of-work found".  If you find any, then check for any errors right after that.

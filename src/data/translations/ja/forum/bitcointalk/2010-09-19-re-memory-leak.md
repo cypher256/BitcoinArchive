@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/452/"
 threadId: "bt-memory-leak"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

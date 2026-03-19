@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/192/"
 threadId: "bt-resource-hog"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

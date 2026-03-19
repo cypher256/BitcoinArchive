@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/267/"
 threadId: "bt-a-simple-traffic-load-test-run"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

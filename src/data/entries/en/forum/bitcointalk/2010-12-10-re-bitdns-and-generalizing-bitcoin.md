@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/535/"
 threadId: "bt-bitdns-and-generalizing-bitcoin"
-threadPosition: 3
+threadPosition: 4
 ---
 
 Piling every proof-of-work quorum system in the world into one dataset doesn't scale.

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/327/"
 threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

@@ -1,0 +1,36 @@
+---
+title: "Re: ルーターの問題 —— ポート8333転送のアドバイス"
+date: 2009-06-05T00:00:00Z
+source: correspondence
+sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+  - name: "Nicholas Bohm"
+    slug: "nicholas-bohm"
+description: "サトシがボームに新しいルーターでポート8333を転送するよう助言した。オンライン上のノードのいずれも外部接続を受け付けられない場合、ネットワークが機能しなくなることを説明した。"
+isSatoshi: true
+threadId: "satoshi-nicholas-bohm"
+threadPosition: 2
+tags:
+  - "correspondence"
+  - "network"
+  - "port-forwarding"
+  - "connectivity"
+  - "early-network"
+secondarySources:
+  - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
+    url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+  - name: "Decashed - Node IP Analysis"
+    url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
+translationStatus: complete
+---
+
+サトシは翌日、ボームの接続問題に返信し、新しいルーターでポート8333を転送するよう助言した。ポート転送がなければ、ボームのノードは他のピアからの着信接続を受け付けられないと説明した。
+
+サトシは、現在オンラインのノードの中で着信接続を受け付けられるものが一つもなければ、ノードはネットワークへの接続に完全に失敗すると指摘した。これは、2009年半ばの時点でアクティブなノードがほんの一握りしかなく、ビットコインネットワークがいかに脆弱であったかを浮き彫りにしている。
+
+*[このメールの具体的な文面はCOPA対クレイグ・ライト裁判で証拠として提出されたが、全文は公開されていない。]*
+
+*[出典: COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。]*

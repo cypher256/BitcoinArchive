@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/497/"
 threadId: "bt-multiple-wallets-one-computer"
-threadPosition: 1
+threadPosition: 2
 ---
 
 I have the beginning of something like this.  It's mostly like what Gavin described.

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/90/"
 threadId: "bt-bitcoin-auto-renice-ing"
-threadPosition: 1
+threadPosition: 2
 ---
 
 It sets different priorities for each thread.  The generate threads run at PRIO_MIN.  The other threads rarely take any CPU and run at normal.

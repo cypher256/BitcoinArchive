@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/522/"
 threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
-threadPosition: 5
+threadPosition: 6
 ---
 
 That's a good optimisation.  I'll add that next time I update SVN.

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/371/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 3
+threadPosition: 4
 ---
 
 Patch is uploaded to SVN rev 132! 

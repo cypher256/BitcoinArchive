@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/188/"
 threadId: "bt-scalability"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

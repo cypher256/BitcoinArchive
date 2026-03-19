@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/495/"
 threadId: "bt-win7-64bit-since-last-patch-tues-now-crashes"
-threadPosition: 1
+threadPosition: 2
 ---
 
 [Quote from: Odin on October 22, 2010, 09:24:38 PM](https://bitcointalk.org/index.php?topic=1540.msg18105#msg18105)  Fault Module Name:   mingwm10.dll

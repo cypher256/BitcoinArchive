@@ -12,7 +12,7 @@ participants:
 description: "Gavin Andresen announces he has been invited to give a presentation about Bitcoin at the CIA, which may have contributed to Satoshi's subsequent withdrawal from the project."
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
-threadPosition: 1
+threadPosition: 2
 tags:
   - "cia"
   - "gavin-andresen"

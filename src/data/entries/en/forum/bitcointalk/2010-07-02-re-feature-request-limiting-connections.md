@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/161/"
 threadId: "bt-feature-request-limiting-connections"
-threadPosition: 1
+threadPosition: 2
 ---
 
 Thanks for the feedback on this.

@@ -18,7 +18,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/14/"
 threadId: "bt-current-bitcoin-economic-model-is-unsustainable"
-threadPosition: 2
+threadPosition: 3
 ---
 
 It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.

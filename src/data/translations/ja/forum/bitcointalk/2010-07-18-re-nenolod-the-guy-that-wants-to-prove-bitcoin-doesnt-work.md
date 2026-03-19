@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/244/"
 threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

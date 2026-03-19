@@ -10,7 +10,7 @@ participants:
 description: "スレッド「トランザクション/スパムフラッド攻撃が現在進行中」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 threadId: "bt-transaction-spam-flood-attack"
-threadPosition: 1
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/"

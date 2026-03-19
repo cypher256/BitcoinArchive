@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/240/"
 threadId: "bt-uri-scheme-for-bitcoin"
-threadPosition: 4
+threadPosition: 5
 ---
 
 [Quote from: lachesis on June 16, 2010, 06:14:05 AM](https://bitcointalk.org/index.php?topic=55.msg1597#msg1597)I think you're misunderstanding the issue. My browser will always be able to go to 127.0.0.1 (barring some strange IE settings or a virus). If I type the address into the URL bar or click a link, it will work fine. However, it isn't possible to use Javascript to complete POST requests between domains (or ports on the same domain).

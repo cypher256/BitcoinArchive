@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/"
 threadId: "bt-checkpointing-the-block-chain"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

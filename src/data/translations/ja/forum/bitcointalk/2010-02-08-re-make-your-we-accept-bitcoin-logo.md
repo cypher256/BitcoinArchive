@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/47/"
 threadId: "bt-make-your-we-accept-bitcoin-logo"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

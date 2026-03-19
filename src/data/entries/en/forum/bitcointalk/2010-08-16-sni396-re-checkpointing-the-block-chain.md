@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/"
 threadId: "bt-checkpointing-the-block-chain"
-threadPosition: 2
+threadPosition: 3
 ---
 
 [Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](https://bitcointalk.org/index.php?topic=834.msg9839#msg9839)How is the strength of the chain calculated?

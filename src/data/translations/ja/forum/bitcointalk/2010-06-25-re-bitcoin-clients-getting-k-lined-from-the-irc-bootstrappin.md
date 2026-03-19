@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/147/"
 threadId: "bt-bitcoin-clients-getting-k-lined-from-the-irc-boots"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

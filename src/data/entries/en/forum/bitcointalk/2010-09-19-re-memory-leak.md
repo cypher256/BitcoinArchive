@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/452/"
 threadId: "bt-memory-leak"
-threadPosition: 1
+threadPosition: 2
 ---
 
 Bouncing between 0 and 2 connections could be if it's connecting to itself.  Are you using the "-connect" switch?

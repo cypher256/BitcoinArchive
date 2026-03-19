@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/19/"
 threadId: "bt-a-few-suggestions"
-threadPosition: 2
+threadPosition: 3
 ---
 
 Right, the SVN has the almost-release-candidate 0.2 source, which can also be built and run on Linux.   It hasn't been tested on FreeBSD.

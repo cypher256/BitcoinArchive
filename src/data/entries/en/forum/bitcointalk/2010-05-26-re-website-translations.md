@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/111/"
 threadId: "bt-website-translations"
-threadPosition: 1
+threadPosition: 2
 ---
 
 Does anyone want to translate the Bitcoin client itself?  It would be great to have at least one other language in the 0.3 release.

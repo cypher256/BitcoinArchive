@@ -10,7 +10,7 @@ participants:
 description: "サトシ・ナカモトがSSE2の速度向上が2%とわずかであったこと、Crypto++でのSSE2の実行時検出の問題を説明。"
 isSatoshi: true
 threadId: "bt-bitcoin-generation-broken-in-0-3-8"
-threadPosition: 1
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/331/"

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/506/"
 threadId: "bt-opencl-miner-for-the-masses"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

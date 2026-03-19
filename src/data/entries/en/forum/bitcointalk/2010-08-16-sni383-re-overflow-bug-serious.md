@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/383/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 11
+threadPosition: 12
 ---
 
 On Windows, findstr /c:"version message" debug.log

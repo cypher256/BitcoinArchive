@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/537/"
 threadId: "bt-bitdns-and-generalizing-bitcoin"
-threadPosition: 4
+threadPosition: 5
 ---
 
 [Quote from: Hal on December 10, 2010, 07:14:04 PM](https://bitcointalk.org/index.php?topic=1790.msg28938#msg28938)additional block chains would each create their own flavor of coins, which would trade with bitcoins on exchanges? These chain-specific coins would be used to reward miners on those chains, and to purchase some kinds of rights or privileges within the domain of that chain?

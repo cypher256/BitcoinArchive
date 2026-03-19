@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/31/"
 threadId: "bt-tor-and-i2p"
-threadPosition: 1
+threadPosition: 2
 translationStatus: complete
 ---
 

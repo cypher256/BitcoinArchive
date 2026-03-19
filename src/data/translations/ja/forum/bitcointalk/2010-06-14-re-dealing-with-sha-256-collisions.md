@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/119/"
 threadId: "bt-dealing-with-sha-256-collisions"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

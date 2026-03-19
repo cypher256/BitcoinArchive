@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/133/"
 threadId: "bt-bitcoin-in-ubuntu-10-04"
-threadPosition: 2
+threadPosition: 3
 translationStatus: complete
 ---
 

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/69/"
 threadId: "bt-bitcoin-address-collisions"
-threadPosition: 1
+threadPosition: 2
 ---
 
 There's a separate public/private keypair for every bitcoin address.  You don't have a single private key that unlocks everything.  Bitcoin addresses are a 160-bit hash of the public key, everything else in the system is 256-bit.

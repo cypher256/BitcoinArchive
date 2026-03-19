@@ -12,7 +12,7 @@ participants:
 description: "ギャビン・アンドレセンがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
-threadPosition: 1
+threadPosition: 2
 tags:
   - "cia"
   - "gavin-andresen"

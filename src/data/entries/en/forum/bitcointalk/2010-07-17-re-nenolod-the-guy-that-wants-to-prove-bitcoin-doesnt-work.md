@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/231/"
 threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
-threadPosition: 1
+threadPosition: 2
 ---
 
 0.3.2 has some security safeguards to lock in the block chain up to this point and limit the damage a little if someone gets 50%.

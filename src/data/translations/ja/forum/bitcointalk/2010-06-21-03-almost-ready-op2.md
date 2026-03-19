@@ -1,0 +1,20 @@
+---
+title: "0.3ほぼ完成 — Macバージョンをテストしてください！"
+date: 2010-06-21T19:01:53.000Z
+source: bitcointalk
+sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1654#msg1654"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "サトシ・ナカモトがバージョン0.3がほぼ完成したことを発表し、Macバージョンのテストを依頼。"
+isSatoshi: true
+threadId: "bt-1-3-almost-ready"
+threadPosition: 1
+tags: []
+translationStatus: complete
+---
+
+バージョン0.3のやることリストをすべて完了した。SVN上のコードはリリースの準備がほぼ整った。
+
+この時点でのテストは大変ありがたい。

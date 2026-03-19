@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/337/"
 threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
-threadPosition: 2
+threadPosition: 3
 ---
 
 The heat from your computer is not wasted if you need to heat your home.  If you're using electric heat where you live, then your computer's heat isn't a waste.  It's equal cost if you generate the heat with your computer.

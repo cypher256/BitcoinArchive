@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/209/"
 threadId: "bt-seticons-icon-bundle-doesn-t-contain-any-suitable-"
-threadPosition: 3
+threadPosition: 4
 ---
 
 That must be it then.

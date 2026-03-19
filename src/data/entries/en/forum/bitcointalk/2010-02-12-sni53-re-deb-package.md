@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/53/"
 threadId: "bt-deb-package"
-threadPosition: 2
+threadPosition: 3
 ---
 
 [Quote from: soultcer on February 12, 2010, 02:31:50 PM](https://bitcointalk.org/index.php?topic=49.msg321#msg321)If you want, I can provide you with a precompiled binary.

@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/271/"
 threadId: "bt-stealing-coins"
-threadPosition: 3
+threadPosition: 4
 translationStatus: complete
 ---
 

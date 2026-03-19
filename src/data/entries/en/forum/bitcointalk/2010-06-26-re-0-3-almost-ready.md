@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/151/"
 threadId: "bt-0-3-almost-ready"
-threadPosition: 9
+threadPosition: 10
 ---
 
 The first panel of the status bar is shared with the help description of menu items as you hover over them.  Since all our menu item descriptions are blank, it replaces it with blank when you're hovering in a menu.

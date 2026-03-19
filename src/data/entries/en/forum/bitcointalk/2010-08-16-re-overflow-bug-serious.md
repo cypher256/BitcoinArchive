@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 8
+threadPosition: 9
 ---
 
 [Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](https://bitcointalk.org/index.php?topic=823.msg9609#msg9609)Question about fallout:  I had a **transaction** that I submitted after the bad block, using the bad block chain.

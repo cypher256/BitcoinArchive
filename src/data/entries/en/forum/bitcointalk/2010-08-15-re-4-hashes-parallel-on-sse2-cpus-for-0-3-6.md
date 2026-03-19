@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/362/"
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
-threadPosition: 9
+threadPosition: 10
 ---
 
 On both MinGW GCC 4.4.1 and 4.5.0 I have it working with test.cpp but SIGSEGV when called by BitcoinMiner.  So now it doesn't look like it's the version of GCC, it's something else, maybe just the luck of how the stack is aligned.

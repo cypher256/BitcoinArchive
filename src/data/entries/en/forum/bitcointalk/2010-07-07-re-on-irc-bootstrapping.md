@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/170/"
 threadId: "bt-on-irc-bootstrapping"
-threadPosition: 5
+threadPosition: 6
 ---
 
 Everybody needs to connect to the same IRC server and channel so they can find each other.

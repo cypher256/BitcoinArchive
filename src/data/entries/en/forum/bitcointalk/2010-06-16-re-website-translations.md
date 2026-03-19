@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/124/"
 threadId: "bt-website-translations"
-threadPosition: 4
+threadPosition: 5
 ---
 
 Thanks DataWraith!  The German translation is uploaded to SVN.

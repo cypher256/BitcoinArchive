@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/530/"
 threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
-threadPosition: 4
+threadPosition: 5
 ---
 
 [Quote from: jgarzik on December 09, 2010, 12:58:05 AM](https://bitcointalk.org/index.php?topic=2151.msg28330#msg28330)I agree with you and satoshi about "txs after <txid>".  My listtransactions (now xlisttransactions) patch pointedly does not have that feature, and never has.

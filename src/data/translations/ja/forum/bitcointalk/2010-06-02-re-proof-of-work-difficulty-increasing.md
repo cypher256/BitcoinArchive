@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/115/"
 threadId: "bt-proof-of-work-difficulty-increasing"
-threadPosition: 8
+threadPosition: 7
 translationStatus: complete
 ---
 

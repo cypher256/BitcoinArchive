@@ -13,7 +13,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/153/"
 threadId: "bt-1-3-almost-ready"
-threadPosition: 1
+threadPosition: 2
 ---
 
 Changed the version number to 1.3 and removed "Beta".
