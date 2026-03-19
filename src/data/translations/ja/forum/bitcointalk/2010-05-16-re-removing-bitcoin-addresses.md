@@ -29,9 +29,9 @@ sirius-m:
         mapReuseKey[pfrom->addr.ip] = GenerateNewKey();
 ```
 
-    ...キー mapReuseKey[pfrom->addr.ip] を送信
+    ……キー mapReuseKey[pfrom->addr.ip] を送信
 
-...後で...
+……後で……
 
     // このキーで何かを受信した
     mapReuseKey.erase(pfrom->addr.ip);

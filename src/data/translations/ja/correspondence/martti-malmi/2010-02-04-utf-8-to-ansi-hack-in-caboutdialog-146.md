@@ -28,7 +28,7 @@ translationStatus: complete
 
 ```cpp
 #if !wxUSE_UNICODE
-...
+……
      if (str.Find('Â') != wxNOT_FOUND)
          str.Remove(str.Find('Â'), 1);
 ```

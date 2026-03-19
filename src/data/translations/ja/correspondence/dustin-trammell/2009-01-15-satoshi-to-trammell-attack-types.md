@@ -42,7 +42,7 @@ translationStatus: complete
 
 サトシは将来に向けた複合的なアプローチを提案した。
 
-> One solution would be to use both the IP and Bitcoin addresses when sending (maybe 1.2.3.4-1Kn8iojk...), where the recipient uses the public key of the Bitcoin address to sign the new public key to prove that you're sending to who you think you are.
+> One solution would be to use both the IP and Bitcoin addresses when sending (maybe 1.2.3.4-1Kn8iojk……), where the recipient uses the public key of the Bitcoin address to sign the new public key to prove that you're sending to who you think you are.
 
 また、ビットコインアドレスへの送金は受信者が発見できるようにトランザクションをブロックチェーンに計算して組み込む仕組みであることを確認し、ウォレット暗号化を将来の機能として言及した。
 

@@ -162,7 +162,7 @@ $$\lambda = z \frac{q}{p}$$
 
 $$\sum_{k=0}^{\infty} \frac{\lambda^k e^{-\lambda}}{k!} \cdot \begin{cases} (q/p)^{(z-k)} & \text{if } k \leq z \\ 1 & \text{if } k > z \end{cases}$$
 
-分布の無限の裾を合算することを避けるために整理すると...
+分布の無限の裾を合算することを避けるために整理すると……
 
 $$1 - \sum_{k=0}^{z} \frac{\lambda^k e^{-\lambda}}{k!} \left(1 - (q/p)^{(z-k)}\right)$$
 
@@ -217,7 +217,7 @@ z=45   P=0.0000024
 z=50   P=0.0000006
 ```
 
-Pが0.1%未満となる値を求める...
+Pが0.1%未満となる値を求める……
 
 ```
 P < 0.001

@@ -33,7 +33,7 @@ translationStatus: complete
 
 サトシはアドレス帳のラベルシステムについても説明した：
 
-> It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change..." button to the right of your Bitcoin address.
+> It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change……" button to the right of your Bitcoin address.
 
 このメールには、ビットコインの仮名性に関する最も初期の説明の一つが含まれている — プロトコルには送信者のアイデンティティという概念がなく、支払者を特定するためのベストプラクティスは、各取引相手ごとに固有の受信アドレスを作成することである。この概念は後にビットコインのプライバシーに関するベストプラクティスの基本となる。
 

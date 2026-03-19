@@ -29,7 +29,7 @@ translationStatus: complete
 
 このサトシへの返信で、トランメルは自身が管理するproof-hashes Googleグループの詳細を共有し、ビットコインがハッシュブロックを投稿する場所として提供した。
 
-> It actually posts the hash blocks to a Google Group called 'proof-hashes', so similar result as if it were posting to Usenet. ... Since I run that group, and it's sole purpose is to archive proof-of-work hashes, feel free to join an account to have your system post there as well if you like.
+> It actually posts the hash blocks to a Google Group called 'proof-hashes', so similar result as if it were posting to Usenet. …… Since I run that group, and it's sole purpose is to archive proof-of-work hashes, feel free to join an account to have your system post there as well if you like.
 
 クレジット欄の表示に関する質問について、トランメルは空欄よりも$0.00の表示を好むと述べたが、生成された4つのコインがすべて「unconfirmed（未承認）」と表示されていることを指摘した。成熟時に既存のトランザクション行が更新されるのか、新たなクレジットトランザクションが生成されるのかを尋ねた。また、トランザクション行をダブルクリックすると詳細が表示されることを知らなかったと認めた。
 

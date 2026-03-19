@@ -34,7 +34,7 @@ datadir内のdebug.logの出力：
 Bitcoin version 0.3.4.0 beta
 Default data directory /home/psyvenrix/.bitcoin
 Bound to port 8333
-Loading addresses...
+Loading addresses……
 dbenv.open strLogDir=./datadir2/database strErrorFile=./datadir2/db.log
 
 ************************

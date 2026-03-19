@@ -32,7 +32,7 @@ translationStatus: complete
 
 ビットコインの価値提案について、トランメルは初期の段階で核心的な課題を指摘した。
 
-> Yea, that was the primary feature that caught my eye. The real trick will be to get people to actually value the BitCoins so that they become currency. Currently, they're just collections of bits...
+> Yea, that was the primary feature that caught my eye. The real trick will be to get people to actually value the BitCoins so that they become currency. Currently, they're just collections of bits……
 
 続いてトランメルは、サトシが申し出たコイン送金のために自身のIPアドレスを提供した。
 
@@ -42,6 +42,6 @@ translationStatus: complete
 
 マイニングの仕組みについて、トランメルは鮮やかな例えを生み出した。
 
-> Ahh I see... So each guess is like the spin of a roulette wheel, completely independent from all other guesses and the extra CPU power just translates to more successful guesses than anyone else. Unfortunately my ability to understand complex mathematics is conversely proportional to how interested I am in cryptography (:
+> Ahh I see…… So each guess is like the spin of a roulette wheel, completely independent from all other guesses and the extra CPU power just translates to more successful guesses than anyone else. Unfortunately my ability to understand complex mathematics is conversely proportional to how interested I am in cryptography (:
 
 *出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

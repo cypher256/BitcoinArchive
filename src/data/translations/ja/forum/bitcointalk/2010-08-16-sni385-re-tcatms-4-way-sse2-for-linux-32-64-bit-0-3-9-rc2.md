@@ -20,4 +20,4 @@ translationStatus: complete
 [Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](https://bitcointalk.org/index.php?topic=820.msg9660#msg9660)-march=amdfam10を試してみてください
 動いた。
 
-おかしいな...同じものだと確信できるか？tcatm、amdfam10で試して同じ速度測定結果が得られるか確認してくれ。
+おかしいな……同じものだと確信できるか？tcatm、amdfam10で試して同じ速度測定結果が得られるか確認してくれ。
