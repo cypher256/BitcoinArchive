@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 Mike Hearnは次のように書いた：
 
 <!-- speaker: Mike Hearn -->

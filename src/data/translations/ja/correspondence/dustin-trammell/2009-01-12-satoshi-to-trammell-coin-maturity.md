@@ -28,13 +28,13 @@ secondarySources:
 translationStatus: complete
 ---
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 ダスティン・トランメルへのこの返信で、サトシはタイムスタンプサービスのリンクに感謝し、代替的なアプローチについて議論した。トランメルのクレジット欄に関する質問について、サトシはコインの成熟メカニズムを説明した：
 
 <!-- speaker: Satoshi Nakamoto -->
 > クレジット欄は成熟するまで0.00のままで、その後50.00になる。
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 サトシは、0.00と表示する代わりに成熟するまでクレジット欄を空白にした方が分かりやすいかどうかをトランメルに尋ねており、ソフトウェアの最初期からユーザビリティに注意を払っていたことが窺える。
 
 サトシはバージョン0.1.3へのアップグレードをトランメルに推奨し、次のように述べた：
@@ -42,7 +42,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > このバージョンで本当に安定した。
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 このやり取りは、初期ユーザーのフィードバックに対するサトシの応答性と、ソフトウェアの改善に対する反復的なアプローチを示している。バージョン0.1.3では、ノード間でブロックを適切にブロードキャストできなくなっていた通信バグが修正されており、これはネットワークの初期の機能にとって極めて重要であった。
 
 *出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

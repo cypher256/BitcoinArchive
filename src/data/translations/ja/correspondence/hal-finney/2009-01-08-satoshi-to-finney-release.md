@@ -28,7 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 2009年1月8日木曜日、太平洋標準時20:54:55にsatoshi@vistomail.comから送信された。暗号学メーリングリストでの公開アナウンスからわずか数時間後、サトシは個人的にハル・フィニーにビットコインのリリースを通知した。
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -39,7 +39,7 @@ translationStatus: complete
 >
 > Satoshi
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 この簡潔な個人メールは、サトシがフィニーの関与を十分に重視し、公開アナウンスに加えて個別の通知を送るほどであったことを示している。フィニーはソフトウェアをダウンロードして応答し、2009年1月11日に有名な「Running bitcoin」ツイートを投稿した。翌日の1月12日、サトシはブロック170でフィニーに10 BTCを送金した——これが知られている最初の個人間ビットコイン取引である。
 
 ハル・フィニーは後に「Bitcoin and me」の投稿（2013年3月）で次のように回想している。「その後数日間、サトシとメールのやり取りを続けた。主に私がバグを報告し、彼がそれを修正するという内容だった。」

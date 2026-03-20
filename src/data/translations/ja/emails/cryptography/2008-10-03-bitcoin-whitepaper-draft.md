@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 **PDF:** [初期草稿を閲覧（PDF）](/BitcoinArchive/documents/2008-10-03-nakamoto-bitcoindraft.pdf)
 
 **関連:** [最終版（2008年10月31日）](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)
@@ -45,6 +45,7 @@ translationStatus: complete
 
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 # ビットコイン：ピアツーピア電子キャッシュシステム
 
 Satoshi Nakamoto<br>

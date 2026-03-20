@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-<!-- speaker: Dustin Trammell -->
+<!-- speaker: narrator -->
 トランメルはサトシの包括的な返信に対して複数の点について応答した。proof-hashes Googleグループは投稿にメンバーシップを必要とせず、proof-hashes@googlegroups.comにメールを送るだけで内容が公開されることを説明した。ビットコインのクライアントが10,000ブロックごとに現在のブロックチェーンを投稿することを補足的な記録として提案した。
 
 ビットコインの価値提案について、トランメルは初期の段階で核心的な課題を指摘した。
@@ -37,13 +37,13 @@ translationStatus: complete
 <!-- speaker: Dustin Trammell -->
 > ああ、それが俺の目を引いた一番の特徴だった。本当の課題は、人々にビットコインに実際の価値を見出してもらって通貨にすることだろう。今のところ、ただのビットの集まりでしかない……
 
-<!-- speaker: Dustin Trammell -->
+<!-- speaker: narrator -->
 続いてトランメルは、サトシが申し出たコイン送金のために自身のIPアドレスを提供した。
 
 <!-- speaker: Dustin Trammell -->
 > 現在は24.28.79.95だが、動的IPなので変わるかもしれない。
 
-<!-- speaker: Dustin Trammell -->
+<!-- speaker: narrator -->
 このIPアドレスは翌日（2009年1月14日）にサトシがトランメルに25.0 BTCを送金する際に使用された――最も初期に知られる個人間のビットコイン取引の一つである。
 
 マイニングの仕組みについて、トランメルは鮮やかな例えを生み出した。

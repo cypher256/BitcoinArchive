@@ -236,9 +236,9 @@ const ANNOTATION_SPEAKER = /^<!--\s*speaker:\s*(.+?)\s*-->$/;
 function labelLines(body, meta) {
   const lines = body.split('\n');
   const labeled = [];
-  const defaultSpeaker = meta.author || null;
-
-  let currentSpeaker = defaultSpeaker;
+  // Default to null: only explicitly annotated lines are checked.
+  // This prevents editorial/narrative text from being tone-checked.
+  let currentSpeaker = null;
   let toneSkip = false;
   let inCodeBlock = false;
 
@@ -260,7 +260,7 @@ function labelLines(body, meta) {
     }
     const speakerMatch = trimmed.match(ANNOTATION_SPEAKER);
     if (speakerMatch) {
-      currentSpeaker = speakerMatch[1] === 'reset' ? defaultSpeaker : speakerMatch[1];
+      currentSpeaker = speakerMatch[1] === 'reset' ? null : speakerMatch[1];
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'annotation' });
       continue;
     }

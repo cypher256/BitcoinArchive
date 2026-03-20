@@ -32,13 +32,14 @@ translationStatus: complete
 featured: true
 ---
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: narrator -->
 **PDF:** [ビットコインホワイトペーパーを閲覧（PDF）](/BitcoinArchive/documents/bitcoin.pdf)
 
 **関連:** [初期草稿（2008年10月3日）](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/)
 
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 # ビットコイン：ピアツーピア電子キャッシュシステム
 
 Satoshi Nakamoto<br>
