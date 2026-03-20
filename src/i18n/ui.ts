@@ -156,7 +156,7 @@ export const ui = {
     'chart.models': 'Models',
   },
   ja: {
-    'site.title': 'ビットコインインスティテュート',
+    'site.title': 'ビットコイン・インスティテュート',
     'site.subtitle': 'サトシ・ナカモト全会話集',
     'site.description': '世界最大のサトシ・ナカモト会話アーカイブ。メール、フォーラム投稿、関連する歴史的文書を網羅。',
     'nav.home': 'ホーム',
