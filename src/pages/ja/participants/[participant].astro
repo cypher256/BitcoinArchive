@@ -112,7 +112,6 @@ const structuredData = [
 
     {biographyContent && (
       <section class="biography-section">
-        <p class="biography-description">{biographyDescription}</p>
         <div class="biography-content">
           <biographyContent.Content />
         </div>
@@ -154,12 +153,12 @@ const structuredData = [
     </nav>
   </div>
   {biographyContent && (
-    <AutoLinkNames lang={lang} excludeSlug={participantSlug} selectors=".biography-content, .biography-description" />
+    <AutoLinkNames lang={lang} excludeSlug={participantSlug} selectors=".biography-content" />
   )}
 </BaseLayout>
 
 <style>
-  h1 { margin-bottom: 0.25rem; }
+  h1 { margin-bottom: 1rem; }
   .life-dates {
     font-weight: normal;
     font-size: 0.6em;
@@ -169,12 +168,6 @@ const structuredData = [
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--color-border);
-  }
-  .biography-description {
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
   }
   .biography-content {
     line-height: 1.8;
