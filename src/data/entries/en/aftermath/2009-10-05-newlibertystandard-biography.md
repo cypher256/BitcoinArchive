@@ -49,4 +49,8 @@ NewLibertyStandard operated a website (newlibertystandard.wikifoundry.com) that 
 On February 5, 2010, NewLibertyStandard posted on BitcoinTalk (thread #41) proposing the adoption of the Thai baht symbol (฿) and the three-letter currency code "BTC" for Bitcoin. While the symbol was debated, the BTC ticker code became the universally adopted standard.
 
 **Acknowledged by Satoshi:**
-In the Bitcoin 0.2 release announcement (December 2009), Satoshi Nakamoto wrote: "Many thanks to Martti (sirius-m) for all his development work, and to New Liberty Standard for his help with testing the Linux version." This acknowledgment places NewLibertyStandard among the small group of individuals personally recognized by Satoshi for their contributions.
+In the Bitcoin 0.2 release announcement (December 2009), Satoshi Nakamoto wrote:
+
+> "Many thanks to Martti (sirius-m) for all his development work, and to New Liberty Standard for his help with testing the Linux version."
+
+This acknowledgment places NewLibertyStandard among the small group of individuals personally recognized by Satoshi for their contributions.

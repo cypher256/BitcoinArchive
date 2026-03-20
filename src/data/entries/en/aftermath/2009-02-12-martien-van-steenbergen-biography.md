@@ -28,7 +28,11 @@ Martien van Steenbergen is a Dutch agile and lean trainer, coach, and founder of
 **Interaction with Satoshi:**
 On February 12, 2009, van Steenbergen responded to Satoshi Nakamoto's announcement of Bitcoin on the P2P Research mailing list with two key technical questions: whether Bitcoin resembled David Chaum's anonymous digital money system, and whether Bitcoin had a limited money supply or created money at the moment of transaction.
 
-Satoshi replied the same day with one of his most significant early statements: "There is a limited supply of money. Circulation will be 21,000,000 coins. Transactions only transfer ownership." This was the first time Satoshi publicly stated the 21 million coin limit outside the Bitcoin source code.
+Satoshi replied the same day with one of his most significant early statements:
+
+> "There is a limited supply of money. Circulation will be 21,000,000 coins. Transactions only transfer ownership."
+
+This was the first time Satoshi publicly stated the 21 million coin limit outside the Bitcoin source code.
 
 In a follow-up exchange on February 13, van Steenbergen asked about Ripple, protocol specifications, and whether Bitcoin could support self-organizing monetary models. Satoshi responded by describing Bitcoin as "a foundation and first step" for programmable P2P social currencies, and discussed Bitcoin's relationship to Pekunio and reputation-based systems.
 

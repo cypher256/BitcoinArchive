@@ -28,7 +28,7 @@ In their correspondence, Satoshi discussed technical aspects of Bitcoin's future
 
 In one of the final exchanges in April 2011, Satoshi wrote to Hearn:
 
-"I've moved on to other things. It's in good hands with Gavin and everyone."
+> "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 This was among the last known private communications from Satoshi before his complete disappearance. The email confirmed that Satoshi viewed Gavin Andresen as the appropriate successor to lead Bitcoin's development, and indicated a deliberate and voluntary withdrawal from the project rather than any sudden or forced departure.
 

@@ -36,7 +36,9 @@ On February 21, 2024, during Day 13 of the COPA v. Craig Wright trial at the UK 
 
 Malmi — Bitcoin's first administrator of bitcoin.org and Satoshi's earliest known collaborator — submitted a compilation of 260 emails with Satoshi Nakamoto as evidence. The emails totaled approximately 140,000 words and spanned from May 2009 to February 2011.
 
-Malmi stated in court: "I communicated with Satoshi, who I believe to be a different person to Dr. Wright."
+Malmi stated in court:
+
+> "I communicated with Satoshi, who I believe to be a different person to Dr. Wright."
 
 The same day, Adam Back also provided testimony, submitting the complete email chain between himself and Satoshi from August 2008.
 

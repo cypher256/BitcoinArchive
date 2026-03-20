@@ -37,9 +37,10 @@ Fran witnessed Bitcoin's birth firsthand. When Hal downloaded and ran the softwa
 In August 2009, Hal was diagnosed with amyotrophic lateral sclerosis (ALS). Fran became his primary caregiver as the disease progressed. She observed his cognitive decline: "It's not a normal kind of dementia, but the brain is involved. Hal felt that it was affecting his ability to do his fast thinking, to do his mental math. He felt like he was losing that, and he would lose more."
 
 **On Hal's Worldview:**
-"He did not believe in God. He believed in the future."
 
-"I know Hal wanted to be around. He wanted to experience the future. He was very excited about change... It seemed like he was happier with each and every change. Each change was great! He embraced it, and he was always looking forward to more."
+> "He did not believe in God. He believed in the future."
+
+> "I know Hal wanted to be around. He wanted to experience the future. He was very excited about change... It seemed like he was happier with each and every change. Each change was great! He embraced it, and he was always looking forward to more."
 
 **Cryopreservation:**
 On October 15, 1992, Fran and Hal had signed their Alcor cryonics membership paperwork in Riverside, California. On Hal's motivation: "I think that was a lot of his motivation for getting involved with cryonics in the first place. He just wanted to be able to see what the world turned into, because it was going to be such an amazing, wondrous place."

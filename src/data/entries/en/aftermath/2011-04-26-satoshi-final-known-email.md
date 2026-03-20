@@ -36,7 +36,7 @@ Satoshi Nakamoto's final known private communications took place over two emails
 
 Satoshi wrote to Mike Hearn, a Google engineer who had been corresponding with him since April 2009:
 
-"I've moved on to other things. It's in good hands with Gavin and everyone."
+> "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 He also expressed hope that Hearn's BitcoinJ project would continue to be developed as an alternative client.
 
@@ -44,11 +44,11 @@ He also expressed hope that Hearn's BitcoinJ project would continue to be develo
 
 Three days later, Satoshi sent what is believed to be his absolute final email, addressed to Gavin Andresen with the subject line "alert key." He wrote:
 
-"I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle. Maybe instead make it about the open source project and give more credit to your dev contributors; it helps motivate them."
+> "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle. Maybe instead make it about the open source project and give more credit to your dev contributors; it helps motivate them."
 
 He then announced his departure:
 
-"I've moved on to other things and will probably be unavailable."
+> "I've moved on to other things and will probably be unavailable."
 
 Finally, he transferred the network alert key — a critical tool for broadcasting emergency messages to all Bitcoin clients — completing the last piece of the project handover.
 

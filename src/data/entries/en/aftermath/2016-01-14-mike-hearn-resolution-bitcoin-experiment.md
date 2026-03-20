@@ -34,19 +34,21 @@ On January 14, 2016, Mike Hearn — one of the earliest Bitcoin contributors and
 
 In the post, Hearn declared:
 
-"Bitcoin has failed."
+> "Bitcoin has failed."
 
 He announced that he had sold all of his bitcoins and was leaving the project entirely. At the time, Bitcoin was trading at approximately $400.
 
 **On why Bitcoin had failed:**
 
-"What was meant to be a new, decentralised form of money that lacked 'systemically important institutions' and 'too big to fail' has become something even worse: a system completely controlled by just a handful of people."
+> "What was meant to be a new, decentralised form of money that lacked 'systemically important institutions' and 'too big to fail' has become something even worse: a system completely controlled by just a handful of people."
 
 Hearn argued that an "entirely artificial capacity cap of one megabyte per block, put in place as a temporary kludge a long time ago, has not been removed," and that the failure to increase the block size had rendered Bitcoin incapable of scaling.
 
 **On Satoshi's original vision for scaling:**
 
-Hearn quoted Satoshi's response to early bandwidth concerns: "The bandwidth might not be as prohibitive as you think … if the network were to get [as big as VISA], it would take several years, and by then, sending [the equivalent of] 2 HD movies over the Internet would probably not seem like a big deal."
+Hearn quoted Satoshi's response to early bandwidth concerns:
+
+> "The bandwidth might not be as prohibitive as you think … if the network were to get [as big as VISA], it would take several years, and by then, sending [the equivalent of] 2 HD movies over the Internet would probably not seem like a big deal."
 
 He also noted that Satoshi had told him directly that Bitcoin "never really hits a scale ceiling."
 

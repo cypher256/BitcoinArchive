@@ -29,14 +29,14 @@ Wei Dai — creator of the b-money proposal (1998), cited as reference [1] in th
 
 **On Bitcoin's monetary policy failure:**
 
-"I would consider Bitcoin to have failed with regard to its monetary policy (because the policy causes high price volatility which imposes a heavy cost on its users, who have to either take undesirable risks or engage in costly hedging in order to use the currency)."
+> "I would consider Bitcoin to have failed with regard to its monetary policy (because the policy causes high price volatility which imposes a heavy cost on its users, who have to either take undesirable risks or engage in costly hedging in order to use the currency)."
 
 **On the risk of Bitcoin precluding better alternatives:**
 
-"One possible impact of Bitcoin might be that due to its deficient monetary policy and associated price volatility it can't grow to very large scales, and by taking over the cryptocurrency niche, it has precluded a future where a cryptocurrency does grow to very large scales."
+> "One possible impact of Bitcoin might be that due to its deficient monetary policy and associated price volatility it can't grow to very large scales, and by taking over the cryptocurrency niche, it has precluded a future where a cryptocurrency does grow to very large scales."
 
 **On not responding to Satoshi's email:**
 
-"This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."
+> "This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."
 
 *[Dai's comment references the email Satoshi sent him on August 22, 2008, which included a pre-release draft of the Bitcoin whitepaper. Despite receiving this direct outreach, Dai never replied with feedback on the paper's design.]*

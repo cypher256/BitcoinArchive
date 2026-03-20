@@ -36,21 +36,23 @@ Adam Back — inventor of Hashcash (1997), the proof-of-work system cited in the
 
 In August 2008, Satoshi contacted Back to verify the citation for his Hashcash paper. Back confirmed the citation and suggested Satoshi look at Wei Dai's b-money proposal.
 
-"I suggested looking into b-money, but it seemed he wasn't aware of it at that point."
+> "I suggested looking into b-money, but it seemed he wasn't aware of it at that point."
 
-Satoshi replied: "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
+Satoshi replied:
+
+> "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
 **On his biggest regret:**
 
-"I initially failed to read the Bitcoin whitepaper carefully. That was probably my biggest mistake."
+> "I initially failed to read the Bitcoin whitepaper carefully. That was probably my biggest mistake."
 
 Back opened the attached whitepaper, gave it a cursory glance, typed back a brief response suggesting Wei Dai's b-money, and closed his laptop. He didn't begin actively using or promoting Bitcoin until around 2013.
 
 **On his early doubts about Bitcoin (CoinShares interview):**
 
-"I had questions about its sustainability: it was in 2009, there was no exchange, no value. Earlier systems had failed due to centralisation or unverifiable issuance, but Bitcoin's decentralised model promised a better path."
+> "I had questions about its sustainability: it was in 2009, there was no exchange, no value. Earlier systems had failed due to centralisation or unverifiable issuance, but Bitcoin's decentralised model promised a better path."
 
-"From those experiences, it became clear that decentralisation was essential to succeed where others failed."
+> "From those experiences, it became clear that decentralisation was essential to succeed where others failed."
 
 **COPA trial testimony (February 21, 2024):**
 

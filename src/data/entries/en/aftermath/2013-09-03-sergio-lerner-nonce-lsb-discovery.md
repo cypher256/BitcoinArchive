@@ -51,4 +51,6 @@ Lerner proposed four explanations: a parsing error, specialized hardware using g
 
 In "Satoshi's Machine," Lerner confirmed the LSB-ExtraNonce connection and determined that Satoshi's computer appeared approximately **4.3 times faster** than any other early miner's machine — consistent with a single high-end CPU running dozens of parallel threads rather than multiple networked computers.
 
-Lerner noted: "We're living in a LOST movie: each time it looks a mystery is solved, another one appears."
+Lerner noted:
+
+> "We're living in a LOST movie: each time it looks a mystery is solved, another one appears."

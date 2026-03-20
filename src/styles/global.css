@@ -67,6 +67,14 @@ blockquote {
   font-style: italic;
 }
 
+blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > p:first-child {
+  margin-top: 0;
+}
+
 code {
   font-family: var(--font-mono);
   font-size: 0.9em;

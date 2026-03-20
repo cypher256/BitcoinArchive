@@ -26,7 +26,7 @@ secondarySources:
 
 On February 5, 2010, NewLibertyStandard proposed on the BitcoinTalk forum:
 
-"I propose that we adopt the Thai baht currency symbol, ฿, as the official bitcoin currency symbol and BTC as the official bitcoin three letter currency code."
+> "I propose that we adopt the Thai baht currency symbol, ฿, as the official bitcoin currency symbol and BTC as the official bitcoin three letter currency code."
 
 The proposal sparked discussion among early community members, with some concerned that sharing the baht symbol (฿) could cause confusion with the Thai currency.
 

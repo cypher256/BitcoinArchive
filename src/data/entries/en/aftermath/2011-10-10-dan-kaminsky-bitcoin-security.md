@@ -27,19 +27,19 @@ secondarySources:
 
 *From "The Crypto-Currency" by Joshua Davis, The New Yorker, October 10, 2011:*
 
-Dan Kaminsky, a leading Internet-security researcher, investigated Bitcoin's code — roughly 31,000 lines at the time.
-
-"When I first looked at the code, I was sure I was going to be able to break it," Kaminsky said.
-
-"The way the whole thing was formatted was insane. Only the most paranoid, painstaking coder in the world could avoid making mistakes."
-
-He quickly identified nine ways to compromise the system and began attacking the code. But when he found the right spot, there was a message waiting for him: "Attack Removed," it said. The same thing happened over and over, infuriating Kaminsky.
-
-"I came up with beautiful bugs," he said. "But every time I went after the code there was a line that addressed the problem."
-
-"He's a world-class programmer, with a deep understanding of the C++ programming language," Kaminsky said of Bitcoin's creator. "He understands economics, cryptography, and peer-to-peer networking."
-
-"Either there's a team of people who worked on this," he said, "or this guy is a genius."
+> Dan Kaminsky, a leading Internet-security researcher, investigated Bitcoin's code — roughly 31,000 lines at the time.
+>
+> "When I first looked at the code, I was sure I was going to be able to break it," Kaminsky said.
+>
+> "The way the whole thing was formatted was insane. Only the most paranoid, painstaking coder in the world could avoid making mistakes."
+>
+> He quickly identified nine ways to compromise the system and began attacking the code. But when he found the right spot, there was a message waiting for him: "Attack Removed," it said. The same thing happened over and over, infuriating Kaminsky.
+>
+> "I came up with beautiful bugs," he said. "But every time I went after the code there was a line that addressed the problem."
+>
+> "He's a world-class programmer, with a deep understanding of the C++ programming language," Kaminsky said of Bitcoin's creator. "He understands economics, cryptography, and peer-to-peer networking."
+>
+> "Either there's a team of people who worked on this," he said, "or this guy is a genius."
 
 ---
 

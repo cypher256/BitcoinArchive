@@ -36,13 +36,13 @@ Hearn noted that Satoshi was "interested in payments and novel uses for the tech
 
 **On why Satoshi disappeared:**
 
-"When evangelical personalities showed up, he appeared to grow frustrated and understandably disappeared."
+> "When evangelical personalities showed up, he appeared to grow frustrated and understandably disappeared."
 
 This characterization — that Satoshi was driven away not by external threats but by the zealotry of his own community — is one of the most direct assessments from someone who knew Satoshi personally through their correspondence.
 
 **On what he would have done differently:**
 
-"The tech is still interesting, but I now have a greater appreciation for the social side of things. Solving the computer science problems is not enough."
+> "The tech is still interesting, but I now have a greater appreciation for the social side of things. Solving the computer science problems is not enough."
 
 Hearn said that if he could go back, he "would have pushed back harder against some of the ideas" he disagreed with, and believed that "the Bitcoin Foundation could have worked out if handled differently."
 

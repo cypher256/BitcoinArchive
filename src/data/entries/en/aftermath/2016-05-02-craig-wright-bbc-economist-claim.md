@@ -33,14 +33,20 @@ On May 2, 2016, Australian businessman Craig Wright publicly claimed to be Satos
 
 Wright published a blog post on his website (drcraigwright.net) offering what he said was cryptographic proof: he digitally signed a message using encryption keys associated with early Bitcoin blocks from 2009.
 
-The BBC reported: "Mr Wright has provided technical proof to back up his claim using coins known to be owned by Bitcoin's creator."
+The BBC reported:
 
-The Economist took a more skeptical stance: "Our conclusion is that he could well be Mr Nakamoto, but that nagging questions remain."
+> "Mr Wright has provided technical proof to back up his claim using coins known to be owned by Bitcoin's creator."
+
+The Economist took a more skeptical stance:
+
+> "Our conclusion is that he could well be Mr Nakamoto, but that nagging questions remain."
 
 Gavin Andresen initially stated he believed Wright was Satoshi after a private demonstration in London, lending significant credibility to the claim.
 
 However, the cryptographic "proof" published on Wright's blog was quickly debunked by the Bitcoin community. Security researcher Dan Kaminsky and others demonstrated that Wright had reused an existing signature from a 2009 Bitcoin transaction rather than producing a new signature with the claimed keys. The blog post proved nothing.
 
-Wright promised to provide further evidence but never did. He later published a post stating: "I'm sorry. I believed that I could do this. I believed that I could put the years of anonymity and hiding behind me. But I can't."
+Wright promised to provide further evidence but never did. He later published a post stating:
+
+> "I'm sorry. I believed that I could do this. I believed that I could put the years of anonymity and hiding behind me. But I can't."
 
 *[In March 2024, the UK High Court definitively ruled in COPA v. Wright that Craig Wright is not Satoshi Nakamoto, finding that he had "lied to the court extensively and repeatedly" and that documents submitted as evidence were forgeries.]*

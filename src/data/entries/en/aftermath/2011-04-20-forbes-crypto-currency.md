@@ -25,9 +25,11 @@ secondarySources: []
 
 "Crypto Currency" by Andy Greenberg was one of the first major print magazine articles about Bitcoin.
 
-Gavin Andresen told Forbes: "Bitcoin is designed to bring us back to a decentralized currency of the people."
+Gavin Andresen told Forbes:
 
-"This is like better gold than gold."
+> "Bitcoin is designed to bring us back to a decentralized currency of the people."
+>
+> "This is like better gold than gold."
 
 The article described Bitcoin developers as Gavin's "underground cadre of cypherpunks" working on anonymous money. Satoshi Nakamoto reportedly objected to this characterization.
 

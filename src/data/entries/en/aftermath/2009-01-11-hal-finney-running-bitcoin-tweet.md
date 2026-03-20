@@ -24,7 +24,7 @@ secondarySources:
 featured: true
 ---
 
-Running bitcoin
+> Running bitcoin
 
 *[@halfin — January 10, 2009 10:33 PM PST / January 11, 2009 06:33 UTC]*
 

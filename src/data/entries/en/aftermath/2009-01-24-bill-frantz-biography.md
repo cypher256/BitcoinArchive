@@ -28,7 +28,7 @@ Bill Frantz is a security consultant based in the San Francisco Bay Area, operat
 **Mailing List Contribution:**
 On January 24, 2009, Frantz responded to Hal Finney's argument about proof-of-work tokens creating security incentives. He made a characteristically ironic observation about the relationship between botnets and network security:
 
-"The 0wned machines are among the most secure on the network because botnet operators work hard to keep others from compromising 'their' machines."
+> "The 0wned machines are among the most secure on the network because botnet operators work hard to keep others from compromising 'their' machines."
 
 He speculated on a scenario where botnet operators might evolve into legitimate security firms — protecting computers against compromise in exchange for proof-of-work mining rewards. This represented an early, creative attempt to see how Bitcoin's economic incentives could reshape existing security dynamics.
 

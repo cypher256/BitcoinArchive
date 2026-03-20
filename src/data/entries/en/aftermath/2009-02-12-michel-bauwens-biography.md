@@ -29,7 +29,13 @@ Michel Bauwens (born March 21, 1958) is a Belgian political theorist, writer, an
 **Interaction with Satoshi:**
 On February 12, 2009, Bauwens was the first to respond to Satoshi Nakamoto's announcement of Bitcoin on the P2P Research mailing list. He thanked Satoshi for sharing the initiative and invited the community's more expert members to weigh in. Notably, Bauwens assumed Satoshi was Japanese, asking him to contribute information about Japanese initiatives to the P2P Foundation wiki.
 
-On February 13, Bauwens asked Satoshi directly: "how operational is your project? how soon do you think people will be able to use it in real life?" Satoshi replied: "It's fully operational and the network is growing. If you try the software, e-mail me your Bitcoin address and I'll send you a few coins."
+On February 13, Bauwens asked Satoshi directly:
+
+> "how operational is your project? how soon do you think people will be able to use it in real life?"
+
+Satoshi replied:
+
+> "It's fully operational and the network is growing. If you try the software, e-mail me your Bitcoin address and I'll send you a few coins."
 
 **Significance:**
 As founder of the P2P Foundation — the platform where Satoshi also announced Bitcoin through a separate forum post — Bauwens provided an important early channel for Bitcoin's exposure to the broader peer-to-peer research community. His question about operational readiness prompted one of Satoshi's most direct early statements confirming that Bitcoin was fully functional and available for public use.

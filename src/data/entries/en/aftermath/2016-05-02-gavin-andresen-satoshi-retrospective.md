@@ -32,15 +32,15 @@ Gavin Andresen first discovered Bitcoin in 2010 and quickly became one of the mo
 
 **On how Satoshi made him the leader:**
 
-"Eventually, he pulled a fast one on me because he asked me if it'd be OK if he put my email address on the Bitcoin homepage, and I said yes, not realizing that when he put my email address there, he'd take his away. I was the person everyone would email when they wanted to know about Bitcoin. Satoshi started stepping back as leader of project and pushing me forward as the leader of the project."
+> "Eventually, he pulled a fast one on me because he asked me if it'd be OK if he put my email address on the Bitcoin homepage, and I said yes, not realizing that when he put my email address there, he'd take his away. I was the person everyone would email when they wanted to know about Bitcoin. Satoshi started stepping back as leader of project and pushing me forward as the leader of the project."
 
 **On his legacy:**
 
-"I would like to be remembered as a 'good guy' (as opposed to that person who did great things with Bitcoin)."
+> "I would like to be remembered as a 'good guy' (as opposed to that person who did great things with Bitcoin)."
 
 **On assuming the role (BitcoinTalk forum, December 19, 2010):**
 
-"With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin."
+> "With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin."
 
 **Satoshi's farewell:**
 
@@ -48,7 +48,7 @@ In an email to Mike Hearn on April 23, 2011, Satoshi wrote: "I've moved on to ot
 
 **On visiting CIA headquarters (tweet, June 14, 2011):**
 
-"My talk at the CIA went well today. The hallways there are REALLY wide, and full of interesting stuff."
+> "My talk at the CIA went well today. The hallways there are REALLY wide, and full of interesting stuff."
 
 Gavin's involvement was critical during the transition period after Satoshi's departure. He was the last known person to exchange emails with Satoshi before Satoshi disappeared from public communication in April 2011. When Gavin mentioned to Satoshi that he had been invited to speak at the CIA about Bitcoin, Satoshi's communications became less frequent and eventually ceased entirely.
 

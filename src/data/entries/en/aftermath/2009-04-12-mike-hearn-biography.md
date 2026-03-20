@@ -41,7 +41,11 @@ Mike Hearn is a software engineer who worked at Google on projects including Goo
 In April 2009, just months after Bitcoin's launch, Hearn emailed Satoshi Nakamoto after reading the Bitcoin white paper. This began a correspondence that would continue through April 2011. Hearn was among the very first people outside the initial cypherpunk circle to take a serious technical interest in Bitcoin.
 
 **Correspondence with Satoshi:**
-Between 2009 and April 2011, Hearn and Satoshi exchanged a series of emails covering Bitcoin's technical future. Satoshi discussed how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to specialized hardware. In one of the final exchanges (April 23, 2011), Satoshi wrote: "I've moved on to other things. It's in good hands with Gavin and everyone." This was among the last known private communications from Satoshi.
+Between 2009 and April 2011, Hearn and Satoshi exchanged a series of emails covering Bitcoin's technical future. Satoshi discussed how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to specialized hardware. In one of the final exchanges (April 23, 2011), Satoshi wrote:
+
+> "I've moved on to other things. It's in good hands with Gavin and everyone."
+
+This was among the last known private communications from Satoshi.
 
 **BitcoinJ:**
 Hearn developed BitcoinJ, a Java implementation of the Bitcoin protocol. It was the first major alternative implementation and became widely used in Android Bitcoin wallets and other applications. BitcoinJ demonstrated that Bitcoin could be implemented independently from the original C++ client.
