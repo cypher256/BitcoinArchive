@@ -37,19 +37,20 @@ Languages: English, Japanese
 
 ## Entry Categories
 
-### Correspondence (309 entries)
+### Correspondence (337 entries)
 Private email exchanges between Satoshi and key participants:
-- **Hal Finney**: First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
-- **Martti Malmi**: Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
-- **Mike Hearn**: Google engineer. Satoshi shared unpublished ideas about smart contracts and payment channels. Received Satoshi's farewell message.
-- **Gavin Andresen**: Took over as lead developer. Received network alert key and repository access.
-- **Wei Dai**: Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
-- **Adam Back**: Creator of Hashcash, the proof-of-work system that inspired Bitcoin's mining.
-- **Dustin Trammell**: Early Bitcoin miner and security researcher.
-- **Laszlo Hanyecz**: Made the first real-world Bitcoin purchase (pizza transaction).
+- **Martti Malmi** (260 entries): Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
+- **Mike Hearn** (33 entries): Google engineer. Satoshi shared unpublished ideas about smart contracts and payment channels. Received Satoshi's farewell message.
+- **Dustin Trammell** (20 entries): Early Bitcoin miner and security researcher.
+- **Nicholas Bohm** (5 entries): British lawyer. Discussed legal and regulatory implications of Bitcoin.
+- **Adam Back** (5 entries): Creator of Hashcash, the proof-of-work system that inspired Bitcoin's mining.
+- **Hal Finney** (4 entries): First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
+- **Gavin Andresen** (4 entries): Took over as lead developer. Received network alert key and repository access.
+- **Wei Dai** (3 entries): Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
+- **Laszlo Hanyecz** (3 entries): Made the first real-world Bitcoin purchase (pizza transaction).
 
-### Forum Posts (537 entries)
-- **BitcoinTalk** (533 posts): Technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
+### Forum Posts (616 entries)
+- **BitcoinTalk** (612 posts): Technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
 - **P2P Foundation** (4 posts): Bitcoin announcement and early discussions
 
 ### Mailing List Emails (47 entries)
@@ -57,7 +58,13 @@ Private email exchanges between Satoshi and key participants:
 - **Bitcoin-list** (16 emails): Development announcements
 - **P2P Research** (3 emails): Peer-to-peer technology discussions
 
-### Aftermath (92 entries)
+### Articles (65 entries)
+Analysis, media coverage, and research articles from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
+
+### Biographies (25 entries)
+Biographical profiles of key participants compiled from multiple public sources. These are not direct transcriptions of any single document.
+
+### Aftermath (93 entries)
 Post-disappearance events including:
 - Satoshi identity speculation and investigations
 - FBI and CIA involvement
@@ -65,15 +72,21 @@ Post-disappearance events including:
 - Major Bitcoin milestones after Satoshi's departure
 - Media coverage and documentaries
 
-### Bitcoin Improvement Proposals (8 entries)
+### Bitcoin Improvement Proposals (9 entries)
 BIPs relevant to Satoshi's original design and vision.
 
 ### SourceForge Milestones (9 entries)
 Key software releases and development milestones from Bitcoin's SourceForge project.
 
+### Whitepapers (2 entries)
+Bitcoin whitepaper draft (October 3, 2008) and final version (October 31, 2008).
+
+### Court Documents (3 entries)
+COPA v Wright trial materials including testimony and ruling.
+
 ## Key Participants
 
-The archive tracks communications with the following participants:
+The archive tracks communications with the following key participants:
 - Satoshi Nakamoto (pseudonymous creator)
 - Hal Finney (first user, cypherpunk)
 - Martti Malmi (early developer)
@@ -83,6 +96,7 @@ The archive tracks communications with the following participants:
 - Adam Back (Hashcash creator)
 - Dustin Trammell (early miner)
 - Laszlo Hanyecz (pizza transaction)
+- Nicholas Bohm (British lawyer)
 - Ray Dillinger (early code reviewer)
 - James A. Donald (first whitepaper respondent)
 - Nick Szabo (bit gold creator, not directly corresponding but contextually important)
