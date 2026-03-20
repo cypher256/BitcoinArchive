@@ -28,7 +28,7 @@ translationStatus: complete
 
 mmalmi@cc.hut.fi wrote:
 >> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
->> ノートパソコンを持っていませんか？
+>> ノートパソコンを持っていないか？
 >
 > はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！
 > 本当に使いやすいです。

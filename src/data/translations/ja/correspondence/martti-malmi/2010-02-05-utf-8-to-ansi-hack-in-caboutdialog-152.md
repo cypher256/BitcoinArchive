@@ -34,7 +34,7 @@ translationStatus: complete
 mmalmi@cc.hut.fi の書き込み:
 > 意図的に変更したわけではありません。エンコーディングの問題だったのでしょう。
 >
->> この変更の理由は何でしたか？
+>> この変更の理由は何だったのか？
 >>
 >> #if !wxUSE_UNICODE
 >> ...
@@ -44,9 +44,9 @@ mmalmi@cc.hut.fi の書き込み:
 >>     if (str.Find('ï¿½') != wxNOT_FOUND)
 >>         str.Remove(str.Find('ï¿½'), 1);
 >>
->> wxFormBuilderは(c)記号を自動的にUTF-8に変換します。wxWidgets-2.8.9の
->> ANSI版では、著作権記号に余分なゴミ文字が付いて表示されます。このハック
->> は非Unicode（ANSI）の場合にそれを修正するものです。
+>> wxFormBuilderは(c)記号を自動的にUTF-8に変換する。wxWidgets-2.8.9の
+>> ANSI版では、著作権記号に余分なゴミ文字が付いて表示される。このハック
+>> は非Unicode（ANSI）の場合にそれを修正するものだ。
 >
 >
 >

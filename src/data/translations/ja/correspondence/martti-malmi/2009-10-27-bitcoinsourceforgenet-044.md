@@ -61,7 +61,7 @@ mmalmi@cc.hut.fi の書き込み:
 >>
 >>
 >> Liberty Standard の書き込み:
->>> ご存じないかもしれませんが、Bitcoinのウェブサイトがダウンしています。
+>>> ご存じないかもしれないが、Bitcoinのウェブサイトがダウンしている。
 >>>
 >>> http://bitcoin.sourceforge.net/
 >>>

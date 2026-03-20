@@ -25,9 +25,9 @@ translationStatus: complete
 ---
 
 Sepp Hasslbergerの書き込み：
-> Danteがメールで、イギリスのOpen Coinというプロジェクトについて言及していました。似たような方向性のようです。
+> Danteがメールで、イギリスのOpen Coinというプロジェクトについて言及していた。似たような方向性のようだ。
 >
-> ビットコインとシナジーはありえるでしょうか？
+> ビットコインとシナジーはありえるだろうか？
 >
 > http://opencoin.org/
 

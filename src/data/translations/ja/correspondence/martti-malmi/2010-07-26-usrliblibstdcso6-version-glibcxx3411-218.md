@@ -25,7 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
->> ところで、私がビルドしたbitcoindをあなたのホストで使えますか、それとも自分でビルドする必要がありますか？
+>> ところで、私がビルドしたbitcoindをあなたのホストで使えるか、それとも自分でビルドする必要があるか？
 >
 > 自分でビルドする必要がありました。フォーラムで報告されているのと同じ問題がありました：/usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11' not found。
 

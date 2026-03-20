@@ -181,6 +181,9 @@ function parseFrontmatter(content) {
   const srcMatch = raw.match(/^source:\s*(.+)/m);
   if (srcMatch) meta.source = srcMatch[1].trim().replace(/^"|"$/g, '');
 
+  const typeMatch = raw.match(/^type:\s*"(.+?)"/m);
+  if (typeMatch) meta.type = typeMatch[1];
+
   const participants = [];
   const partSection = raw.match(/^participants:\n((?:\s+-.*\n?)*)/m);
   if (partSection) {
@@ -212,8 +215,9 @@ function parseFrontmatter(content) {
 //   - HTML tags (< ... >)            → skip
 //   - Empty lines                    → skip
 //   - Horizontal rules (----)        → skip
-//   - Blockquotes (> ...)            → strip prefix, check content
-//                                      (translated speech lives in blockquotes)
+//   - Blockquotes (> ...)            → correspondence: odd depth = other
+//                                      speaker (skip), even depth = author
+//                                      (check). Non-correspondence: check all.
 //   - Bold-only lines (** ... **)    → skip
 //   - Editorial notes (*[ ... ]*)    → skip
 //   - Source notes (*出典: ... *)     → skip
@@ -284,16 +288,30 @@ function labelLines(body, meta) {
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty' });
       continue;
     }
-    // Blockquotes: strip '> ' prefix and check content (translated speech lives here).
-    // Use <!-- tone-skip --> to exclude quoted text from other speakers.
+    // Blockquotes: handle based on quote depth and content type.
+    //
+    // In correspondence (email threads), blockquote depth indicates speaker:
+    //   odd depth  (>, >>>, >>>>>) = the OTHER person's quoted text → skip
+    //   even depth (>>, >>>>)      = the author's earlier text → check
+    //
+    // In non-correspondence files, blockquotes contain translated speech
+    // that should be checked against the current speaker.
     if (line.startsWith('>')) {
+      const depthMatch = line.match(/^(>+)/);
+      const depth = depthMatch ? depthMatch[1].length : 0;
       const stripped = line.replace(/^>+\s?/, '');
       const strippedTrimmed = stripped.trim();
       if (!strippedTrimmed) {
         labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty-blockquote' });
         continue;
       }
-      // Re-process stripped line through remaining structural checks below
+      if (meta.type === 'correspondence' && depth % 2 === 1) {
+        // Odd depth in correspondence = other person's quoted reply → skip
+        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'other-speaker-quote' });
+        continue;
+      }
+      // Even depth in correspondence = author's earlier words, or
+      // non-correspondence blockquotes = translated speech → check
       line = stripped;
       trimmed = strippedTrimmed;
       // fall through to further checks

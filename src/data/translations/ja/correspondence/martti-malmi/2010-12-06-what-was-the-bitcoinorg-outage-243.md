@@ -29,7 +29,7 @@ translationStatus: complete
 mmalmi@cc.hut.fi の書き込み：
 > パスワードを送る準備ができました。平文で送らなくて済むように、PGP鍵を送ってもらえますか？
 >
->> Gavinがいいでしょう。彼を信頼していますし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通しています。
+>> Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。
 >
 > 分かりました、彼に聞いてみます。
 
@@ -68,7 +68,7 @@ EBjAnoZeyUihPrcAniVWl5M44RuGctJe+IMNX4eVkC08AJ9v7cXsp5uDdQNo8q3R
 -----END PGP PUBLIC KEY BLOCK-----
 
 
-こちらにもあります：<br>
+こちらにもある：<br>
 http://www.bitcoin.org/Satoshi_Nakamoto.asc
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
