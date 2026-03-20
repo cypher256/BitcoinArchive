@@ -1,6 +1,6 @@
-# Bitcoin Archive Style Guide
+# Bitcoin Institute Style Guide
 
-Internal editorial rules shared across Bitcoin Archive.
+Internal editorial rules shared across Bitcoin Institute.
 
 ## Purpose
 

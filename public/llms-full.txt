@@ -1,10 +1,10 @@
-# Bitcoin Archive — Full Reference for AI
+# Bitcoin Institute — Full Reference for AI
 
 > The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.
 
 ## Site Overview
 
-Bitcoin Archive is a bilingual (English/Japanese) static site built with Astro, deployed on Cloudflare Pages and GitHub Pages. It preserves every known public communication by Satoshi Nakamoto with full-text search powered by Pagefind.
+Bitcoin Institute is a bilingual (English/Japanese) static site built with Astro, deployed on Cloudflare Pages and GitHub Pages. It preserves every known public communication by Satoshi Nakamoto with full-text search powered by Pagefind.
 
 URL: https://bitcoin-archive.pages.dev/
 Mirror: https://cypher256.github.io/BitcoinArchive/

@@ -1,6 +1,6 @@
 # Japanese Style Guide
 
-Internal editorial rules for the Japanese edition of Bitcoin Archive.
+Internal editorial rules for the Japanese edition of Bitcoin Institute.
 
 ## Purpose
 

@@ -1,5 +1,5 @@
 /**
- * check-ja-tone.mjs — Japanese tone (口調) linter for Bitcoin Archive
+ * check-ja-tone.mjs — Japanese tone (口調) linter for Bitcoin Institute
  *
  * Design philosophy:
  *   This script is a **coarse lint pass**, not an infallible judge.

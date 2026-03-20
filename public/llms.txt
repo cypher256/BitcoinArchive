@@ -1,8 +1,8 @@
-# Bitcoin Archive
+# Bitcoin Institute
 
 > The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.
 
-Bitcoin Archive is a bilingual (English/Japanese) reference site that collects and preserves every known public communication by Satoshi Nakamoto, the pseudonymous creator of Bitcoin, along with related historical documents.
+Bitcoin Institute is a bilingual (English/Japanese) reference site that collects and preserves every known public communication by Satoshi Nakamoto, the pseudonymous creator of Bitcoin, along with related historical documents.
 
 ## Contents
 

@@ -4,6 +4,6 @@
   <rect x="0" y="626" width="1200" height="4" fill="#f7931a"/>
   <circle cx="600" cy="240" r="80" fill="#f7931a"/>
   <text x="600" y="270" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="100" fill="white">B</text>
-  <text x="600" y="400" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="56" fill="#e0e0e0">Bitcoin Archive</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="56" fill="#e0e0e0">Bitcoin Institute</text>
   <text x="600" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#999">Complete Satoshi Nakamoto Conversations</text>
 </svg>

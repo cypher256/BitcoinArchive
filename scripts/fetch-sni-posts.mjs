@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Batch fetch all Satoshi Nakamoto posts from Satoshi Nakamoto Institute (SNI)
- * and generate Markdown entry files for the Bitcoin Archive.
+ * and generate Markdown entry files for the Bitcoin Institute.
  *
  * Usage: node scripts/fetch-sni-posts.mjs [--source bitcointalk|cryptography|bitcoin-list|p2pfoundation] [--start N] [--end N]
  */
@@ -833,7 +833,7 @@ const startArg = parseInt(args.find((a, i) => args[i-1] === '--start') || '0');
 const endArg = parseInt(args.find((a, i) => args[i-1] === '--end') || '99999');
 
 async function main() {
-  console.log('Bitcoin Archive - SNI Post Fetcher');
+  console.log('Bitcoin Institute - SNI Post Fetcher');
   console.log('==================================');
 
   const results = [];

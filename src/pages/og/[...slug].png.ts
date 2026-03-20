@@ -144,7 +144,7 @@ export const GET: APIRoute = async ({ props }) => {
                             color: '#999',
                             fontSize: '24px',
                           },
-                          children: 'Bitcoin Archive',
+                          children: 'Bitcoin Institute',
                         },
                       },
                     ],

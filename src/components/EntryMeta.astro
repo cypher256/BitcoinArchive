@@ -32,9 +32,9 @@ const displayAuthor = translateParticipantName(author, authorParticipant?.slug, 
   <span class="meta-sep">&middot;</span>
   <span class:list={['author', { satoshi: isSatoshi }]}>{displayAuthor}</span>
   <span class="meta-sep">&middot;</span>
-  <span class="type-badge">{typeLabel}</span>
+  <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge">{typeLabel}</a>
   <span class="meta-sep">&middot;</span>
-  <span class="source-badge">{sourceLabel}</span>
+  <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
 </div>
 
 {participants.length > 0 && (
@@ -87,6 +87,10 @@ const displayAuthor = translateParticipantName(author, authorParticipant?.slug, 
     border-radius: 3px;
     font-size: 0.8rem;
     font-weight: 600;
+    text-decoration: none;
+  }
+  .type-badge:hover {
+    opacity: 0.85;
   }
   .source-badge {
     display: inline-block;
@@ -94,6 +98,11 @@ const displayAuthor = translateParticipantName(author, authorParticipant?.slug, 
     background: var(--color-source-bg);
     border-radius: 3px;
     font-size: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .source-badge:hover {
+    opacity: 0.85;
   }
   .participants-row {
     display: flex;

@@ -1,4 +1,4 @@
-# Bitcoin Archive
+# Bitcoin Institute
 
 The world's most comprehensive archive of Satoshi Nakamoto's complete conversations and related historical documents.
 
