@@ -43,7 +43,7 @@ translationStatus: complete
 
 **メール2：2009年1月8日（サトシ → フィニー）**
 件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — 暗号学メーリングリストでの公開発表のわずか数時間後に送信：
-> 「お知らせしておきたいと思った。Bitcoin v0.1のEXEと完全なソースコードのリリースがSourceforgeにアップされている：http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.orgにリリースノートとスクリーンショットがある。Satoshi」
+> 「お知らせしておきたいと思った。Bitcoin v0.1のEXEと完全なソースコードのリリースがSourceforgeにアップされている：http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。Satoshi」
 
 このメールは`satoshi@vistomail.com`から送信された。
 
