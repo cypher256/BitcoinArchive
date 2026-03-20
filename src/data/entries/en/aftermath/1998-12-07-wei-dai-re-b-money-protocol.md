@@ -35,11 +35,11 @@ Wei Dai replied to Adam Back's discussion of the b-money protocol, addressing co
 
 **On government monopoly of force:**
 
-"I now tend to think that the government monopoly of force is a net benefit."
+> "I now tend to think that the government monopoly of force is a net benefit."
 
 **On b-money's limited scope:**
 
-"b-money will at most be a niche currency/contract enforcement mechanism, serving those who don't want to or can't use government sponsored ones."
+> "b-money will at most be a niche currency/contract enforcement mechanism, serving those who don't want to or can't use government sponsored ones."
 
 **On open questions for mainstream adoption:**
 
