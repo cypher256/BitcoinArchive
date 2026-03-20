@@ -4,7 +4,7 @@ import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const entries = await getDisplayEntries('en');
+const entries = await getDisplayEntries('ja');
 
 const typeCounts = new Map<string, number>();
 for (const entry of entries) {

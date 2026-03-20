@@ -212,8 +212,8 @@ function parseFrontmatter(content) {
 //   - HTML tags (< ... >)            → skip
 //   - Empty lines                    → skip
 //   - Horizontal rules (----)        → skip
-//   - Blockquotes (> ...)            → skip (always — quoted text is not
-//                                      the author's voice)
+//   - Blockquotes (> ...)            → strip prefix, check content
+//                                      (translated speech lives in blockquotes)
 //   - Bold-only lines (** ... **)    → skip
 //   - Editorial notes (*[ ... ]*)    → skip
 //   - Source notes (*出典: ... *)     → skip
@@ -240,9 +240,9 @@ function labelLines(body, meta) {
   let inCodeBlock = false;
 
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
+    let line = lines[i];
     const lineNum = i + 1;
-    const trimmed = line.trim();
+    let trimmed = line.trim();
 
     // --- Annotations ---
     if (ANNOTATION_TONE_SKIP.test(trimmed)) {
@@ -284,9 +284,19 @@ function labelLines(body, meta) {
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty' });
       continue;
     }
+    // Blockquotes: strip '> ' prefix and check content (translated speech lives here).
+    // Use <!-- tone-skip --> to exclude quoted text from other speakers.
     if (line.startsWith('>')) {
-      labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'blockquote' });
-      continue;
+      const stripped = line.replace(/^>+\s?/, '');
+      const strippedTrimmed = stripped.trim();
+      if (!strippedTrimmed) {
+        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty-blockquote' });
+        continue;
+      }
+      // Re-process stripped line through remaining structural checks below
+      line = stripped;
+      trimmed = strippedTrimmed;
+      // fall through to further checks
     }
     if (/^#+\s/.test(trimmed)) {
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'heading' });

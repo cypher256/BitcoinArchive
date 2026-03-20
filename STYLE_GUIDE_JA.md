@@ -114,8 +114,8 @@ spoken or written utterance.
 
 The canonical tone rule for each character — whether to use だ/である調 or
 ですます調 in Japanese — is defined in `scripts/check-ja-tone.mjs`
-(`CHARACTER_RULES`). The build script `npm run check:ja-tone` validates all
-Japanese translations against these rules.
+(`CHARACTER_RULES`). Run `npm run check:ja-tone` to validate Japanese translations against
+these rules. Once all violations are resolved, integrate into `npm run build`.
 
 Summary:
 
