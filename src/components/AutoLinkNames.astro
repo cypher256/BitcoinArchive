@@ -68,6 +68,9 @@ const linkData = Array.from(nameMap.entries())
         var charAfter = idx + name.length < text.length ? text[idx + name.length] : ' ';
         var asciiWord = /\w/;
         if (asciiWord.test(charBefore) || asciiWord.test(charAfter)) return;
+        // Skip if name is followed by a space + uppercase letter (likely part of a compound proper noun, e.g. "Red" in "Red Hat")
+        var afterMatch = text.substring(idx + name.length);
+        if (/^ [A-Z]/.test(afterMatch)) return;
         // Only link first occurrence per container
         var key = container.className + '::' + name;
         if (replaced.has(key)) return;

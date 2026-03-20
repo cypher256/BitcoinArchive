@@ -1,5 +1,5 @@
 ---
-title: "\"If I'd Known What We Were Starting\" (Ray Dillinger)"
+title: "If I'd Known What We Were Starting"
 date: 2017-09-20T00:00:00Z
 type: "article"
 source: "linkedin"

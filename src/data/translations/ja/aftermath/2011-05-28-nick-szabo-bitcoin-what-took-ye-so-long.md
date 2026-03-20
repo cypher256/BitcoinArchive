@@ -1,5 +1,5 @@
 ---
-title: "「ビットコイン、なぜこんなに時間がかかったのか？」（ニック・サボ）"
+title: "ビットコイン、なぜこんなに遅く来たんだ"
 date: 2011-05-28T00:00:00Z
 type: "article"
 source: "unenumerated"

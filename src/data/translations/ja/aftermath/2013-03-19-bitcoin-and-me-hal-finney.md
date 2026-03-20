@@ -1,5 +1,5 @@
 ---
-title: "ビットコインと私（ハル・フィニー）"
+title: "ビットコインと私"
 date: 2013-03-19T20:40:02Z
 type: "article"
 source: "bitcointalk"

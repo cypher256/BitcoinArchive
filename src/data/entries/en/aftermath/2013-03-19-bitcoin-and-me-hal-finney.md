@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin and me (Hal Finney)"
+title: "Bitcoin and me"
 date: 2013-03-19T20:40:02Z
 type: "article"
 source: "bitcointalk"
