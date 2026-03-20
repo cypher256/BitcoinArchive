@@ -20,4 +20,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-私はDorian Nakamotoではありません。
+私はDorian Nakamotoではない。

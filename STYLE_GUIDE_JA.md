@@ -113,7 +113,7 @@ Summary:
 | Gavin Andresen | だ/である | 穏やかな実務家 |
 | Martti Malmi | **ですます** | 丁寧で控えめ（意図的な色付け） |
 | Adam Back | だ/である | 極めて簡潔 |
-| Wei Dai | だ/である | 簡潔・知的・認識的ヘッジ |
+| Wei Dai | **ですます** | 丁寧・事務的・分析的 |
 | Nick Szabo | だ/である | 学者口調 |
 | Mike Hearn | だ/である | 情熱的で論理的 |
 | Laszlo Hanyecz | だ/である | カジュアル |
