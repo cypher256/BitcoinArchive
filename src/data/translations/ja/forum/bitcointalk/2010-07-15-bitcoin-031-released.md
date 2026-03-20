@@ -4,14 +4,12 @@ date: 2010-07-15T08:05:54.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=383.msg3198#msg3198"
-author: "satoshi"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Satoshi Nakamoto"
-    slug: "satoshi-nakamoto"
 description: "satoshiがスレッドを開始: 0.3.1リリース候補、テストしてください"
-isSatoshi: false
+isSatoshi: true
 threadId: "bt-0-3-1-release-candidate-please-test"
 threadPosition: 1
 tags: []

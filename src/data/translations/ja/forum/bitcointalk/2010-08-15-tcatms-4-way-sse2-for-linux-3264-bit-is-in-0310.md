@@ -4,14 +4,12 @@ date: 2010-08-15T06:52:09.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=820.msg9452#msg9452"
-author: "satoshi"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Satoshi Nakamoto"
-    slug: "satoshi-nakamoto"
 description: "satoshiがスレッドを開始: tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2"
-isSatoshi: false
+isSatoshi: true
 threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 threadPosition: 1
 tags: []

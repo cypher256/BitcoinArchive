@@ -4,14 +4,12 @@ date: 2010-06-21T19:01:53.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1654#msg1654"
-author: "satoshi"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Satoshi Nakamoto"
-    slug: "satoshi-nakamoto"
-description: "satoshi starts a discussion: 0.3 almost ready -- please test the Mac version!."
-isSatoshi: false
+description: "Satoshi Nakamoto starts a discussion: 0.3 almost ready -- please test the Mac version!."
+isSatoshi: true
 threadId: "bt-0-3-almost-ready"
 threadPosition: 1
 tags: []

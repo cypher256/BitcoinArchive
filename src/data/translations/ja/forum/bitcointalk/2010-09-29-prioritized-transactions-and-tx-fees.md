@@ -4,13 +4,13 @@ date: 2010-09-29T11:13:30.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1314.msg14616#msg14616"
-author: "jgarzik"
+author: "Jeff Garzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "jgarzikがスレッドを開始: 優先トランザクションと取引手数料"
+description: "Jeff Garzikがスレッドを開始: 優先トランザクションと取引手数料"
 isSatoshi: false
 threadId: "bt-prioritized-transactions-and-tx-fees"
 threadPosition: 1

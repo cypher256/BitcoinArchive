@@ -4,13 +4,13 @@ date: 2010-11-19T10:02:38.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1850.msg22870#msg22870"
-author: "jgarzik"
+author: "Jeff Garzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "jgarzikがスレッドを開始: トランザクション/スパムフラッド攻撃が現在進行中"
+description: "Jeff Garzikがスレッドを開始: トランザクション/スパムフラッド攻撃が現在進行中"
 isSatoshi: false
 threadId: "bt-transaction-spam-flood-attack"
 threadPosition: 1

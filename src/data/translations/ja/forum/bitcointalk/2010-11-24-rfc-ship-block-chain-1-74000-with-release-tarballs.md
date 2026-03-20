@@ -4,13 +4,13 @@ date: 2010-11-24T22:07:51.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1931.msg24277#msg24277"
-author: "jgarzik"
+author: "Jeff Garzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "jgarzikがスレッドを開始: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
+description: "Jeff Garzikがスレッドを開始: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
 isSatoshi: false
 threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
 threadPosition: 1

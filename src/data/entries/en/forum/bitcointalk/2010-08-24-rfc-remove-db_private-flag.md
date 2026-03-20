@@ -4,13 +4,13 @@ date: 2010-08-24T16:03:13.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=920.msg11087#msg11087"
-author: "jgarzik"
+author: "Jeff Garzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "jgarzik starts a discussion: RFC: remove DB_PRIVATE flag."
+description: "Jeff Garzik starts a discussion: RFC: remove DB_PRIVATE flag."
 isSatoshi: false
 threadId: "bt-rfc-remove-db-private-flag"
 threadPosition: 1

@@ -4,14 +4,12 @@ date: 2010-07-29T10:13:06.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=626.msg6451#msg6451"
-author: "satoshi"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Satoshi Nakamoto"
-    slug: "satoshi-nakamoto"
 description: "satoshiがスレッドを開始: *** 警告 *** バージョン0.3.6"
-isSatoshi: false
+isSatoshi: true
 threadId: "bt-alert-version-0-3-6"
 threadPosition: 1
 tags: []

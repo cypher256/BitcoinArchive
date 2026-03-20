@@ -4,13 +4,13 @@ date: 2010-09-06T18:17:34.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=994.msg12145#msg12145"
-author: "jgarzik"
+author: "Jeff Garzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "jgarzik starts a discussion: Always pay transaction fee?."
+description: "Jeff Garzik starts a discussion: Always pay transaction fee?."
 isSatoshi: false
 threadId: "bt-always-pay-transaction-fee"
 threadPosition: 1
