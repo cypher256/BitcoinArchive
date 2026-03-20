@@ -221,6 +221,8 @@ function labelLines(body, meta) {
   const isCorrespondence = meta.source === 'correspondence';
 
   let inCodeBlock = false;
+  let inQuoteBlock = false; // [Quote from:] ブロック内かどうか
+  let emptyLineCount = 0; // 連続空行カウント（引用ブロック終了判定用）
   let repostCurrentSpeaker = null; // repost記事内の現在の発話者
   let lastAttributedSpeaker = null; // aftermath で直前に帰属された人物
 
@@ -237,6 +239,30 @@ function labelLines(body, meta) {
     }
     if (inCodeBlock) {
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'code-block' });
+      continue;
+    }
+
+    // --- [Quote from:] ブロック内の処理 ---
+    if (inQuoteBlock) {
+      if (!trimmed) {
+        emptyLineCount++;
+        // 空行2つ以上で引用ブロック終了とみなす
+        if (emptyLineCount >= 2) {
+          inQuoteBlock = false;
+          emptyLineCount = 0;
+        }
+        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'quote-block-gap' });
+        continue;
+      }
+      // 新しい[Quote from:]が来たら引用ブロック継続
+      if (/^\[Quote from:/.test(trimmed)) {
+        emptyLineCount = 0;
+        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'quote-block' });
+        continue;
+      }
+      // 非空行 → 引用の続き（空行リセット）
+      emptyLineCount = 0;
+      labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'quote-block' });
       continue;
     }
 
@@ -325,7 +351,20 @@ function labelLines(body, meta) {
     }
 
     // --- 引用ラベル行 ---
-    if (/^引用[:：]/.test(trimmed) || /^\[Quote from:/.test(trimmed)) {
+    if (
+      /^引用[:：]/.test(trimmed) ||
+      /^\[Quote from:/.test(trimmed) ||
+      /^Quote from:/.test(trimmed) ||
+      /^Quote[:：]/.test(trimmed) ||
+      /^Quote[^a-z]/.test(trimmed) ||
+      /^引用「/.test(trimmed) ||
+      /^\[.*の.*投稿より引用\]/.test(trimmed)
+    ) {
+      // [Quote from:] / [xxx の投稿より引用] の場合、後続行も引用ブロックとしてスキップ
+      if (/^\[Quote from:/.test(trimmed) || /^\[.*の.*投稿より引用\]/.test(trimmed)) {
+        inQuoteBlock = true;
+        emptyLineCount = 0;
+      }
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'quote-label' });
       continue;
     }
@@ -354,6 +393,11 @@ function labelLines(body, meta) {
       // 引用ヘッダー行（"Satoshi Nakamoto <...>の引用："等）→ スキップ
       if (/の引用[:：]/.test(trimmed) || /引用[:：]$/.test(trimmed)) {
         labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'quote-header' });
+        continue;
+      }
+      // 転送メールヘッダー（"xxx wrote:" / "xxx@xxx" 含む行）→ スキップ
+      if (/wrote:\s*$/.test(trimmed) || /\S+@\S+.*wrote/.test(trimmed)) {
+        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'forwarded-header' });
         continue;
       }
       // 本文 → author の発言
@@ -437,6 +481,8 @@ function preprocessLine(text) {
   t = t.replace(/`[^`]+`/g, '');
   // 太字ラベル除去（**メール1：** 等）
   t = t.replace(/\*\*[^*]+\*\*/g, '');
+  // 「」内の引用テキスト除去（他人の発言やUI文字列を含む可能性）
+  t = t.replace(/「[^」]*」/g, '');
   // 英語のみの部分除去
   t = t.replace(/[A-Za-z0-9_\-./]+/g, '');
   return t;
@@ -479,6 +525,12 @@ for (const filePath of files) {
   const hasKnownAuthor = author && CHARACTER_RULES[author];
   const hasKnownParticipant = (meta.participants || []).some((p) => CHARACTER_RULES[p]);
   if (!hasKnownAuthor && !hasKnownParticipant) {
+    skippedFiles++;
+    continue;
+  }
+
+  // fran-finney ファイル: 引用は全てフランの発言（ルール未定義）→ スキップ
+  if (filePath.includes('fran-finney')) {
     skippedFiles++;
     continue;
   }
