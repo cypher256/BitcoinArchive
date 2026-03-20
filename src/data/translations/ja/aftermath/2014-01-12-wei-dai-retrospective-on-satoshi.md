@@ -9,7 +9,7 @@ participants:
     slug: "wei-dai"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "LessWrongのQ&Aスレッドでのサトシ・ナカモトおよびb-moneyが実装されなかった理由に関するウェイ・ダイの考察。ダイは、サトシが「私の記事を読む前にアイデアを独自に再発明した」と述べ、さらにb-moneyは「完全な実用的設計ではなかった」こと、「書き上げた時点でクリプトアナーキーへの幻滅を感じていた」ことを説明した。"
+description: "LessWrongのQ&Aスレッドでのサトシ・ナカモトおよびb-moneyが実装されなかった理由に関するウェイ・ダイの考察。ダイは、サトシが「私の記事を読む前にアイデアを独自に再発明しました」と述べ、さらにb-moneyは「完全な実用的設計ではありませんでした」こと、「書き上げた時点でクリプトアナーキーへの幻滅を感じていました」ことを説明した。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

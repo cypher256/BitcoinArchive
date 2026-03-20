@@ -7,7 +7,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "ウェイ・ダイのLessWrong投稿。サトシ・ナカモトが2009年初頭にビットコインv0.1を発表するメールを個人的に送ってきたが、「当時はサイファーパンクよりLessWrongに関心があった」ため無視したことを明かした。2011年にLWの記事をきっかけにマイニングを開始し、約300ドルの投資が6桁のリターンとなった。"
+description: "ウェイ・ダイのLessWrong投稿。サトシ・ナカモトが2009年初頭にビットコインv0.1を発表するメールを個人的に送ってきたが、「当時はサイファーパンクよりLessWrongに関心がありました」ため無視したことを明かした。2011年にLWの記事をきっかけにマイニングを開始し、約300ドルの投資が6桁のリターンとなった。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

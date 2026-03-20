@@ -30,7 +30,7 @@ translationStatus: complete
 
 このメールチェーンの3通目で、サトシはアダム・バックがウェイ・ダイのb-money提案を紹介してくれたことに感謝し、歴史的に重要な告白をした。
 
-> Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.
+> ありがとう、b-moneyのページは知らなかったが、私のアイデアはまさにその点から始まっている。
 
 この発言は二つの点で重要である。第一に、サトシがb-moneyを知る前にビットコインの核心的アイデアを独自に発展させていたことを示している。第二に、b-moneyがバックの提案を受けて初めてビットコインホワイトペーパーの参考文献に追加されたことを確認している。
 

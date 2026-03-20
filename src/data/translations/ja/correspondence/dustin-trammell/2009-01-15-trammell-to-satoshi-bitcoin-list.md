@@ -33,11 +33,11 @@ translationStatus: complete
 
 会話の公開共有に同意し、すぐにbitcoin-listを購読した。続いてトランメルは、ハル・フィニーの公開メッセージに触発された投資志向の早期マイニング動機を明かした。
 
-> Yes, I saw that message and was one of the other reasons I started up a node so quickly. My systems aren't doing much of anything else while idle, so why not create BitCoins? And if they're worth something someday...? Bonus!
+> ああ、あのメッセージは見ていて、ノードをすぐに立ち上げた理由の一つでもある。俺のシステムはアイドル時にほとんど何もしていないんだから、ビットコインを生成しない手はないだろう？そしていつか価値が出たら……？ボーナスだ！
 
 サトシのマイクロペイメントのユースケースについて、トランメルは実際の普及における障壁を指摘した。
 
-> I can see how various types of sites that have a need for micropayments could use them, however I also see an impedement to adoption if they want to use an existing BitCoin peer group rather than a closed system since they would first have to generate enough coins to support what they intend to do (or buy them from someone else). A closed system obviously doesn't have that problem.
+> マイクロペイメントを必要とする様々なタイプのサイトがこれを利用できるのはわかる。ただ、クローズドシステムではなく既存のビットコインピアグループを使いたい場合、まず目的を果たすのに十分なコインを生成するか（あるいは誰かから購入するか）しなければならないという普及の障壁も見える。クローズドシステムなら当然その問題はない。
 
 これはビットコインのブートストラップ問題――交換手段として機能するために十分な流動性をいかにして流通させるか――に関する最も初期の議論の一つとして注目される。
 

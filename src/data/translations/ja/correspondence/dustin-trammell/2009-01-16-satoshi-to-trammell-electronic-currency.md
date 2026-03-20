@@ -36,13 +36,13 @@ translationStatus: complete
 
 サトシはトランメルがビットコインの価値について述べた以前の観察を引用し、自身のビジョンを共有した：
 
-> I would be surprised if 10 years from now we're not using electronic currency in some way, now that we know a way to do it that won't inevitably get dumbed down when the trusted third party gets cold feet.
+> 信頼できる第三者が怖気づいた時に必然的に骨抜きにされない方法がわかった今、10年後に何らかの形で電子通貨を使っていなかったら驚きである。
 
 サトシはビットコインのニッチなアプリケーションにおける可能性を描写した — リワードポイント、寄付トークン、ゲーム内通貨、マイクロペイメント、プルーフ・オブ・ワークの応用などである。また、送金時課金型メールの概念やサブスクリプションの試用ユースケースについても改めて説明した。
 
 このメールには、サトシの最も有名な一節となった言葉が含まれている：
 
-> It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
+> 万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない。十分な数の人々が同じように考えれば、それは自己実現的予言となる。一度ブートストラップされれば、自動販売機にコインを入れるように気軽にウェブサイトに数セント支払えるようになった場合、非常に多くの応用が可能になる。
 
 サトシとトランメルのプライベートな書簡から生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。
 

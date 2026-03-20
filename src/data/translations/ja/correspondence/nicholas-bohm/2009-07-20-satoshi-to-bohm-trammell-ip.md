@@ -29,7 +29,7 @@ translationStatus: complete
 
 翌日のフォローアップで、サトシはデバッグ情報を提供した。
 
-> I'm currently connected to 70.113.114.209 since yesterday.
+> 昨日から70.113.114.209に接続している。
 
 彼は、ボームがこのIPに接続できていないのであれば、問題はボーム側にあり、発信接続もできない状態であると指摘した。
 

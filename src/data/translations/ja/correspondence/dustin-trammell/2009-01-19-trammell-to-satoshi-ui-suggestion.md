@@ -28,11 +28,11 @@ translationStatus: complete
 
 ビットコイン送金サブスレッドの最後のメールで、トランメルは誤ラベルが自分自身のミスであったことを受け入れ、具体的なUIの改善提案を行った：
 
-> I think had it said "Received with address: X" rather than just "Received with: X" I think I would have understood, although I'm sure that address being mislabeled 'Satoshi' was the primary reason for my initial confusion.
+> 「Received with: X」ではなく「Received with address: X」と表示されていれば理解できたと思う。もっとも、アドレスに「Satoshi」と誤ラベルされていたのが最初の混乱の主な原因だったのは間違いないが。
 
 トランメルはまた、ビットコインの複数受信アドレスに最も近い現実世界のアナロジーを特定した：
 
-> You're right though, there's really nothing comparable in the current financial system that people are used to other than maybe being able to use multiple recipient email addresses for PayPal. Perhaps it could say "Received payment to: X"?
+> その通りだ、現在の金融システムには人々が慣れ親しんでいる類似のものは本当にない。PayPalで複数の受信メールアドレスを使えること以外は。「Received payment to: X」と表示するのはどうだろう？
 
 このサブスレッド最後のやり取りは、初期のビットコイン開発における協力的な性質を示している。実際のユーザーフィードバックがUI改善に直接反映された。トランメルの「address」や「payment to」を表示テキストに追加する提案は、「誰が送ったのか」と「自分のどのアドレスで受け取ったのか」の曖昧さに対処するものであり、この区別はビットコインウォレットの設計において今なお重要である。
 

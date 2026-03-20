@@ -7,7 +7,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "LessWrongの「Making money with Bitcoin?」スレッドでのウェイ・ダイのコメント。ビットコインを作ったのは自分ではなく「10年以上前に類似のアイデアを記述しただけ」であり、サトシが独立に再発明したと説明。このスレッドをきっかけにRadeon 5870 GPUを購入してマイニングを開始したこと、「他の暗号学者もまだそのセキュリティを分析していない」と警告したことを明かした。"
+description: "LessWrongの「Making money with Bitcoin?」スレッドでのウェイ・ダイのコメント。ビットコインを作ったのは自分ではなく「10年以上前に類似のアイデアを記述しただけです」であり、サトシが独立に再発明したと説明。このスレッドをきっかけにRadeon 5870 GPUを購入してマイニングを開始したこと、「他の暗号学者もまだそのセキュリティを分析していません」と警告したことを明かした。"
 isSatoshi: false
 aftermathType: "retrospective"
 tags:

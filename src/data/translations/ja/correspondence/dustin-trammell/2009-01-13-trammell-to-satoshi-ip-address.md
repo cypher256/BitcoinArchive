@@ -32,16 +32,16 @@ translationStatus: complete
 
 ビットコインの価値提案について、トランメルは初期の段階で核心的な課題を指摘した。
 
-> Yea, that was the primary feature that caught my eye. The real trick will be to get people to actually value the BitCoins so that they become currency. Currently, they're just collections of bits...
+> ああ、それが俺の目を引いた一番の特徴だった。本当の課題は、人々にビットコインに実際の価値を見出してもらって通貨にすることだろう。今のところ、ただのビットの集まりでしかない……
 
 続いてトランメルは、サトシが申し出たコイン送金のために自身のIPアドレスを提供した。
 
-> I'm currently at 24.28.79.95, but that's dynamic so it may change.
+> 現在は24.28.79.95だが、動的IPなので変わるかもしれない。
 
 このIPアドレスは翌日（2009年1月14日）にサトシがトランメルに25.0 BTCを送金する際に使用された――最も初期に知られる個人間のビットコイン取引の一つである。
 
 マイニングの仕組みについて、トランメルは鮮やかな例えを生み出した。
 
-> Ahh I see... So each guess is like the spin of a roulette wheel, completely independent from all other guesses and the extra CPU power just translates to more successful guesses than anyone else. Unfortunately my ability to understand complex mathematics is conversely proportional to how interested I am in cryptography (:
+> ああ、なるほど……つまり各推測はルーレットのスピンのようなもので、他のすべての推測から完全に独立していて、CPUパワーの余剰分は単に他の誰よりも多くの当たりを引けるということになるわけか。残念ながら、俺の複雑な数学を理解する能力は暗号技術への興味に反比例しているんだが (:
 
 *出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

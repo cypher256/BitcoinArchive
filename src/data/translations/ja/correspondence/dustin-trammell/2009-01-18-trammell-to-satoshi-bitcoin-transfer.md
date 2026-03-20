@@ -29,7 +29,7 @@ translationStatus: complete
 
 トランメルは不可解なトランザクションについて新しいメールスレッドを開始した。職場のビットコインクライアントから自宅のクライアントに、IPアドレスではなくビットコインアドレスを使って100BTCを自分自身に送金したが、トランザクションの詳細に予期しないラベルが表示された：
 
-> After that first transfer of 25.00, you didn't send me another 100.00 did you? I sent myself 100.00 from my BitCoin application at work to my one at home using the BitCoin address rather than by IP. My application at home has a 100.00 transfer received, however it's transaction details say "Received with: Satoshi 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv". That is not my BitCoin address from work, so I assume this means that I received the payment encoded with a block that was computed by your client?
+> 最初の25.00の送金の後、もう100.00を送ってくれたりした？俺は職場のビットコインアプリケーションから自宅のものに、IPではなくビットコインアドレスを使って100.00を自分宛に送金した。自宅のアプリケーションには100.00の受信が表示されているが、トランザクション詳細には「Received with: Satoshi 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv」と書いてある。これは職場のビットコインアドレスではないので、あなたのクライアントが計算したブロックにエンコードされた支払いを受け取ったということだと思うんだが？
 
 トランメルは表示されたビットコインアドレスに覚えがなく、アプリケーションに名前を入力した記憶もないのにソフトウェアがどうしてサトシの名前を知っているのか不思議に思った。この混乱は、ビットコインのアドレス帳とトランザクション表示における初期のユーザビリティの問題を浮き彫りにし、サトシが返信で対処することになる。
 

@@ -33,11 +33,11 @@ translationStatus: complete
 
 サトシはその後、新しい経済的対抗メカニズムである「リバース・スパミング」を提案した：
 
-> Another factor that would mitigate spam if POW tokens have value: there would be a profit motive for people to set up massive quantities of fake e-mail accounts to harvest POW tokens from spam. They'd essentially be reverse-spamming the spammers with automated mailboxes that collect their POW and don't read the message. The ratio of fake mailboxes to real people could become too high for spam to be cost effective.
+> POWトークンに価値がある場合、スパムを軽減するもう一つの要因がある。スパムからPOWトークンを回収するために大量の偽メールアカウントを作成する利益動機が生まれるのである。実質的に、POWを回収しメッセージを読まない自動メールボックスによってスパマーにリバース・スパミングを行うことになる。偽メールボックスと実際の人間の比率が高くなりすぎて、スパムの費用対効果が合わなくなる可能性がある。
 
 サトシは、このプロセスが逆説的にトークンの価値を確立するのに役立つ可能性があると述べた：
 
-> The process has the potential to establish the POW token's value in the first place, since spammers that don't have a botnet could buy tokens from harvesters. While the buying back would temporarily let more spam through, it would only hasten the self-defeating cycle leading to too many harvesters exploiting the spammers.
+> このプロセスはそもそもPOWトークンの価値を確立する可能性を持っている。ボットネットを持たないスパマーが回収者からトークンを購入できるためである。買い戻しによって一時的にスパムが増加するが、それはスパマーを搾取する回収者が多くなりすぎるという自滅的サイクルを加速させるだけである。
 
 サトシはまた既存のシステムとの類似点を指摘し、e-goldでは既に「ダスティング」と呼ばれるスパムの一形態が存在しており、スパマーがトランザクションのコメント欄にメッセージを含めるために微量のゴールドダストを送金していたことに言及した。その解決策として、設定可能な最低支払い閾値を提案した。
 

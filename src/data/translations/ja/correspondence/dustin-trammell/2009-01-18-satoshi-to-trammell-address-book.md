@@ -29,11 +29,11 @@ translationStatus: complete
 
 サトシはトランメルのトランザクション表示に関する混乱を解消した。表示されたアドレスは実際にはサトシのものではなく、トランメル自身の受信アドレスであった：
 
-> It should be your Bitcoin address at home that you received it with. There's no way for it to know who it's from, so the best it can do is tell which of your addresses it was received on. You can create multiple addresses and give a different address to each person and label them to help figure out who's sending to you.
+> それは自宅で受け取った際のあなたのビットコインアドレスのはずである。送信者が誰かを知る方法はないため、できることはあなたのどのアドレスで受信されたかを表示することだけである。複数のアドレスを作成して各人に異なるアドレスを渡し、ラベルを付ければ、誰からの送金かを判別する助けになる。
 
 サトシはアドレス帳のラベルシステムについても説明した：
 
-> It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change..." button to the right of your Bitcoin address.
+> ソフトウェアはあなたが入力した以外の名前は一切知らない。そこに表示されている名前は、アドレス帳でそのアドレスに関連付けられたもので、Address Bookボタンか、ビットコインアドレスの右にある「Change...」ボタンのいずれかで設定されたものである。
 
 このメールには、ビットコインの仮名性に関する最も初期の説明の一つが含まれている — プロトコルには送信者のアイデンティティという概念がなく、支払者を特定するためのベストプラクティスは、各取引相手ごとに固有の受信アドレスを作成することである。この概念は後にビットコインのプライバシーに関するベストプラクティスの基本となる。
 

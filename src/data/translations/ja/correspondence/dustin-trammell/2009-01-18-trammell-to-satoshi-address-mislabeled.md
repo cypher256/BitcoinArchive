@@ -27,11 +27,11 @@ translationStatus: complete
 
 トランメルは紛らわしいトランザクションラベルについて納得した瞬間を迎えた：
 
-> Ah! I didn't even notice it was my address at home, you're right (: I do have multiple addresses created at home so I didn't make the connection.
+> ああ！自宅のアドレスだったことに全然気づかなかった、その通りだ (: 自宅で複数のアドレスを作成していたから、結びつけられなかった。
 
 トランメルは、「Satoshi」がChangeボタン配下のアドレスに確かに関連付けられていることを確認したが、新たな疑問を提起した：
 
-> I don't recall setting that value though, is that the default or something? (this is the first, default, address that the application generated itself when I first ran it)
+> ただ、その値を設定した覚えがないんだが、デフォルトか何かなのか？（これは初回起動時にアプリケーションが自動生成した最初のデフォルトアドレスだ）
 
 このやり取りは、ビットコインの初期におけるユーザビリティの課題を浮き彫りにしている — セキュリティ研究者として暗号技術の概念に精通した技術的に高度なユーザーであるトランメルでさえ、アドレス帳とトランザクション表示に混乱し、自分自身への送金の送信元を誤認するほどであった。
 

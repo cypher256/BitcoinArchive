@@ -9,7 +9,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "リリース前のコードレビュー期間中にハル・フィニーがサトシに送った非公開メール。ビットコインのスケーラビリティについて根本的な質問を投げかけた。「どのくらいの規模を想定していますか？数十ノード？数千？数百万？」"
+description: "リリース前のコードレビュー期間中にハル・フィニーがサトシに送った非公開メール。ビットコインのスケーラビリティについて根本的な質問を投げかけた。「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」"
 isSatoshi: false
 threadId: "satoshi-hal-finney-private"
 threadPosition: 1
@@ -29,11 +29,11 @@ translationStatus: complete
 
 このメールは、ビットコインの公開ローンチの約2ヶ月前、リリース前のコードレビュー期間に送られたものである。フィニーはサトシのコードと論文草稿をレビューしており、スケーラビリティに関する根本的な質問を投げかけた。
 
-> How large do you envision it becoming? Tens of nodes? Thousands? Millions?
+> どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？
 
 彼はまた次のようにも尋ねた。
 
-> And for clients, do you think this could scale to be usable for close to 100% of the world's financial transactions?
+> それから、クライアント側について聞きたいんだけど、これは世界の金融取引のほぼ100%を処理できるくらいまでスケールできると思うかい？
 
 これらの質問は、PGPの開発に携わり、最初の再利用可能なプルーフ・オブ・ワーク・システム（RPOW）を構築したベテラン暗号学者であるフィニーが、最初期からビットコインの可能性を真剣に考えていたことを示している。暗号学メーリングリストでホワイトペーパーを受け取ったほとんどの人々が懐疑的だった中、フィニーは技術的な詳細に深く関与した数少ない人物の一人であった。
 

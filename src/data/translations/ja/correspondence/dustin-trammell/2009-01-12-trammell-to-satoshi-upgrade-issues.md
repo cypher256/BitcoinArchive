@@ -30,11 +30,11 @@ translationStatus: complete
 
 前回のメールからわずか11分後に送信されたこのメールで、トランメルはv0.1.0からv0.1.3へのアップグレード時に遭遇した2つの問題を報告した。
 
-> When closing my previous version (help said 0.1.1 but I think it was really 0.1.0), the process did not exit. The UI exited but the process remained. I had to manually kill the process before I was able to start version 0.1.3.
+> 以前のバージョン（ヘルプには0.1.1と表示されていたが、実際は0.1.0だったと思う）を閉じた時、プロセスが終了しなかった。UIは終了したがプロセスは残っていた。バージョン0.1.3を起動する前に、手動でプロセスをキルしなければならなかった。
 
 より深刻だったのは、生成したコインの喪失であった。
 
-> Upon opening version 0.1.3, all four of my transaction entries still say 'unconfirmed', but now the Descriptions say 'Generated (not accepted)'. Does this mean that some other node had extended the chain first and my coins were generated in a dead branch? If so, why did the previous instance of the software not detect this immediately and begin generating coins in the winning branch? Bug in 0.1.0?
+> バージョン0.1.3を開いたところ、4つのトランザクション項目はまだ「unconfirmed」のままだが、今度は説明欄に「Generated (not accepted)」と表示されるようになった。これは、他のノードが先にチェーンを延長して、俺のコインがデッドブランチで生成されたということか？もしそうなら、なぜ以前のバージョンのソフトウェアがこれを即座に検出して、勝利ブランチでコインの生成を始めなかったんだ？0.1.0のバグか？
 
 トランメルは問題を正確に診断していた――v0.1.0の通信バグにより彼のノードはブロックをネットワークにブロードキャストできず、採掘したすべてのブロックが孤立していた。サトシは次の返信でこれを確認した。
 

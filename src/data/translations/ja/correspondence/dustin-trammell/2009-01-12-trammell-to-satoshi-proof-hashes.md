@@ -29,12 +29,12 @@ translationStatus: complete
 
 このサトシへの返信で、トランメルは自身が管理するproof-hashes Googleグループの詳細を共有し、ビットコインがハッシュブロックを投稿する場所として提供した。
 
-> It actually posts the hash blocks to a Google Group called 'proof-hashes', so similar result as if it were posting to Usenet. ... Since I run that group, and it's sole purpose is to archive proof-of-work hashes, feel free to join an account to have your system post there as well if you like.
+> 実際にはハッシュブロックを「proof-hashes」というGoogleグループに投稿している。Usenetに投稿するのと似たような結果になる。……俺がそのグループを運営していて、唯一の目的はproof-of-workハッシュのアーカイブだから、よかったらアカウントを作ってそちらのシステムからも投稿してくれて構わない。
 
 クレジット欄の表示に関する質問について、トランメルは空欄よりも$0.00の表示を好むと述べたが、生成された4つのコインがすべて「unconfirmed（未承認）」と表示されていることを指摘した。成熟時に既存のトランザクション行が更新されるのか、新たなクレジットトランザクションが生成されるのかを尋ねた。また、トランザクション行をダブルクリックすると詳細が表示されることを知らなかったと認めた。
 
 トランメルはバージョン0.1.1を実行していたことを報告し、0.1.3にアップグレードする予定であると伝え、自動アップデート機能を提案した。彼は強い熱意を示した。
 
-> Electronic currency and cryptography are two things that I am very interested in so as you would assume I was drawn to this project immediately when I saw it posted to the Cryptography email list. Feel free to ping me for feedback or to test out new features, I'll be happy to help out.
+> 電子通貨と暗号技術は俺がとても興味を持っている2つの分野で、想像通り、暗号技術メーリングリストに投稿されたのを見てすぐにこのプロジェクトに引き込まれた。フィードバックや新機能のテストが必要なら遠慮なく連絡してくれ、喜んで手伝うよ。
 
 *出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

@@ -33,11 +33,11 @@ translationStatus: complete
 
 続いてサトシは、ビットコインを投資対象とするハル・フィニーの以前の提案に言及した。
 
-> Hal sort of alluded to the possibility that it could be seen as a long-odds investment. I would be surprised if 10 years from now we're not using electronic currency in some way, now that we know a way to do it that won't inevitably get dumbed down when the TTP gets cold feet.
+> ハルは、これが低確率の投資対象として見られる可能性をほのめかしていた。信頼できる第三者が怖気づいた時に必然的に骨抜きにされない方法がわかった今、10年後に何らかの形で電子通貨を使っていなかったら驚きである。
 
 サトシは、ビットコインが即座に主流として普及しなくても活用できる複数のユースケースを概説した。
 
-> Even if it doesn't take off straight away, it's now available for use by the next guy who comes up with a plan that needs some kind of token or electronic currency. It could get started in a closed system or narrow niche like reward points, donation tokens, currency for a game or micropayments for adult sites. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
+> すぐに普及しなくても、何らかのトークンや電子通貨を必要とするプランを思いついた次の人物が利用できる状態にある。クローズドシステムやニッチな分野――リワードポイント、寄付トークン、ゲーム内通貨、アダルトサイトのマイクロペイメントなど――から始めることもできる。一度ブートストラップされれば、自動販売機にコインを入れるように気軽にウェブサイトに数セント支払えるようになった場合、非常に多くの応用が可能になる。
 
 サトシはビットコインの送金メール機能を既存のユースケースとして説明し、有名人がファンからのメッセージを読むためにビットコインの支払いを受け取ることや、サブスクリプションサイトが悪用防止のために無料トライアルにビットコインを課金することを構想した。
 

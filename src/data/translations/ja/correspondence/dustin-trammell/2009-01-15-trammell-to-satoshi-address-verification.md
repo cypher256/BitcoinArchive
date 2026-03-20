@@ -30,13 +30,13 @@ translationStatus: complete
 
 トランメルはセキュリティに関する議論を継続し、ビットコインアドレスはIPベースの送金に比べて優位性があると主張した。複数の独立したチャネルを通じて検証できるためである。
 
-> True, but the upside to using the BitCoin address is that two people can communicate via a number of different channels to verify the address. If my friend gets my address off my website, and thinks something fishy is going on, he can call me, or IM me, or email me, etc. to verify the address. An attacker would then have to basically be replacing my address with the malicious one in every possible communications channel, including voice, which is a difficult feat.
+> 確かにその通りだが、ビットコインアドレスを使う利点は、2人が複数の異なるチャネルを通じてアドレスを検証できることだ。友人が俺のウェブサイトからアドレスを取得して何かおかしいと思ったら、電話やIM、メールなどでアドレスを確認できる。攻撃者はその場合、音声を含むあらゆる通信チャネルで俺のアドレスを悪意のあるものに差し替えなければならなくなるが、それは至難の業だ。
 
 サトシが提案したIPとビットコインアドレスを組み合わせた解決策を支持し、定期的に取引する相手は既にアドレス帳に互いのビットコインアドレスを持っているだろうと指摘した。
 
 続いてトランメルはデータ喪失について重要な懸念を提起した――ウォレットバックアップに関する最も初期の議論の一つである。
 
-> One thing that came to mind on this topic is the potential for BitCoin loss if you have a system failure. The application doesn't seem to store any data in the directory that it runs in, so I assume it's stored in the registry and other places ... so it may be a good idea to have the application be able to export everything that it needs for recovery to a file that could be backed up off of the system.
+> この話題で思い浮かんだことが一つある。システム障害が発生した場合のビットコイン喪失の可能性だ。アプリケーションは実行ディレクトリにデータを保存していないようなので、レジストリやその他の場所に保存されていると思うが……復旧に必要なすべてのデータをシステム外にバックアップできるファイルにエクスポートする機能があると良いんじゃないか。
 
 また、プライバシーを保護しつつアドレス解決を可能にするオプションとして「ビットコインアドレスをネットワークに公開する」トグルを提案し、アプリケーションが終了時にネットワークソケットを正常にクローズしていない（TCP RST）ことを報告した。
 

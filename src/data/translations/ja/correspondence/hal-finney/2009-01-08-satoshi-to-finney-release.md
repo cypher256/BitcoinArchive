@@ -29,10 +29,10 @@ translationStatus: complete
 
 2009年1月8日木曜日、太平洋標準時20:54:55にsatoshi@vistomail.comから送信された。暗号学メーリングリストでの公開アナウンスからわずか数時間後、サトシは個人的にハル・フィニーにビットコインのリリースを通知した。
 
-> Thought you'd like to know, the Bitcoin v0.1 release with EXE and full sourcecode is up on Sourceforge:
+> お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された:
 > http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
 >
-> www.bitcoin.org has release notes and screenshots.
+> www.bitcoin.org にリリースノートとスクリーンショットがある。
 >
 > Satoshi
 

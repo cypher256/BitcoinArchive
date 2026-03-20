@@ -29,13 +29,13 @@ translationStatus: complete
 
 データ損失とウォレットのバックアップに関するトランメルの懸念に応じて、サトシはウォレットの保存場所と使用技術を開示した：
 
-> The files are in "%appdata%\Bitcoin", that's the directory to backup. The data is stored in a transactional database DBM, so it should be safe from loss if there's a crash or power failure.
+> ファイルは「%appdata%\Bitcoin」にある。バックアップすべきディレクトリはそこである。データはトランザクショナルデータベースDBMに保存されているため、クラッシュや停電が発生してもデータ損失からは安全なはずである。
 
 サトシは、%appdata%がFirefoxなどの最新プログラムが設定に使用するユーザーごとのディレクトリであると説明した。ただし、MicrosoftがWindowsのリリースごとにその名前を変更し、スペースだらけで、画面からはみ出すほど長いことに言及した。
 
 トランメルが報告していたソケットの不正切断については：
 
-> Just now added code to the next release for that.
+> ちょうど次のリリースに向けてそのコードを追加したところである。
 
 この短いやり取りは、ビットコイン最初期におけるサトシの迅速な開発サイクルを示している — トランメルがバグを報告し、サトシは返信する時点で既に修正コードを書き上げていた。DBM（Berkeley DB）データベースの選択は、2013年3月にデータベースのロック制限の問題がチェーンのフォークを引き起こした際に重要な意味を持つことになる。
 
