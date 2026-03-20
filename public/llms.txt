@@ -17,21 +17,21 @@ The archive contains 1,000+ entries across 6 categories:
 
 ## Key Pages
 
-- Home: https://bitcoin-archive.pages.dev/
-- All Entries: https://bitcoin-archive.pages.dev/entries/
-- Sources: https://bitcoin-archive.pages.dev/sources/
-- Participants: https://bitcoin-archive.pages.dev/participants/
-- Tags: https://bitcoin-archive.pages.dev/tags/
-- Search: https://bitcoin-archive.pages.dev/search/
-- About: https://bitcoin-archive.pages.dev/about/
-- Price Chart: https://bitcoin-archive.pages.dev/chart/
+- Home: https://bitcoin-institute.pages.dev/
+- All Entries: https://bitcoin-institute.pages.dev/entries/
+- Sources: https://bitcoin-institute.pages.dev/sources/
+- Participants: https://bitcoin-institute.pages.dev/participants/
+- Tags: https://bitcoin-institute.pages.dev/tags/
+- Search: https://bitcoin-institute.pages.dev/search/
+- About: https://bitcoin-institute.pages.dev/about/
+- Price Chart: https://bitcoin-institute.pages.dev/chart/
 
 ## Japanese Version
 
-- Home: https://bitcoin-archive.pages.dev/ja/
-- All Entries: https://bitcoin-archive.pages.dev/ja/entries/
-- Search: https://bitcoin-archive.pages.dev/ja/search/
-- Price Chart: https://bitcoin-archive.pages.dev/ja/chart/
+- Home: https://bitcoin-institute.pages.dev/ja/
+- All Entries: https://bitcoin-institute.pages.dev/ja/entries/
+- Search: https://bitcoin-institute.pages.dev/ja/search/
+- Price Chart: https://bitcoin-institute.pages.dev/ja/chart/
 
 ## Key Facts
 

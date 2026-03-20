@@ -8,7 +8,7 @@ import { remarkRewriteBase } from './src/lib/remark-rewrite-base.mjs';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.CF_PAGES
-    ? 'https://bitcoin-archive.pages.dev'
+    ? 'https://bitcoin-institute.pages.dev'
     : 'https://cypher256.github.io',
   base: process.env.CF_PAGES ? '/' : '/BitcoinArchive',
   i18n: {

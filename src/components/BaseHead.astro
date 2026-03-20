@@ -1,4 +1,6 @@
 ---
+import { PRIMARY_ORIGIN as primaryOrigin } from '../lib/constants';
+
 interface Props {
   title: string;
   description: string;
@@ -20,8 +22,6 @@ interface Props {
 
 const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage, breadcrumbs = [], structuredData } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-// All SEO URLs point to the primary site (Cloudflare Pages)
-const primaryOrigin = 'https://bitcoin-archive.pages.dev';
 const pagePath = Astro.url.pathname.replace(/^\/BitcoinArchive/, '');
 const resolvedCanonical = canonicalUrl || `${primaryOrigin}${pagePath}`;
 const ogImageUrl = ogImage ? `${primaryOrigin}${ogImage}` : `${primaryOrigin}/images/og-default.png`;
@@ -49,7 +49,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
 <meta name="generator" content={Astro.generator} />
 <!-- Google Search Console: GitHub Pages (cypher256.github.io) -->
 <meta name="google-site-verification" content="dUyV3q5C-KweMCnu3GmALTNF9Yr9BHvIIJe5IzyR4Mo" />
-<!-- Google Search Console: Cloudflare Pages (bitcoin-archive.pages.dev) -->
+<!-- Google Search Console: Cloudflare Pages (bitcoin-institute.pages.dev) -->
 <meta name="google-site-verification" content="iB8WajDfhHKk7jbDrKODvl6SKNOefazbfxuGXYBNoRk" />
 <meta name="theme-color" content="#b45309" />
 

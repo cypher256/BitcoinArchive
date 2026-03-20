@@ -18,8 +18,7 @@ export function useTranslations(lang: Lang) {
 }
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-// All SEO absolute URLs point to the primary site (Cloudflare Pages)
-const primaryOrigin = 'https://bitcoin-archive.pages.dev';
+import { PRIMARY_ORIGIN as primaryOrigin } from '../lib/constants';
 
 export function localePath(path: string, lang: Lang): string {
   const clean = path.startsWith('/') ? path : `/${path}`;

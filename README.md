@@ -2,7 +2,7 @@
 
 The world's most comprehensive archive of Satoshi Nakamoto's complete conversations and related historical documents.
 
-- https://bitcoin-archive.pages.dev/
+- https://bitcoin-institute.pages.dev/
 - https://cypher256.github.io/BitcoinArchive/ (Mirror)
 
 ## Scope
@@ -26,4 +26,4 @@ Pushing to `main` triggers automatic deployment to GitHub Pages via GitHub Actio
 
 ## License
 
-Content is sourced from publicly available archives. See [About](https://bitcoin-archive.pages.dev/about/) for details.
+Content is sourced from publicly available archives. See [About](https://bitcoin-institute.pages.dev/about/) for details.

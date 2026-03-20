@@ -6,7 +6,7 @@
 
 Bitcoin Institute is a bilingual (English/Japanese) static site built with Astro, deployed on Cloudflare Pages and GitHub Pages. It preserves every known public communication by Satoshi Nakamoto with full-text search powered by Pagefind.
 
-URL: https://bitcoin-archive.pages.dev/
+URL: https://bitcoin-institute.pages.dev/
 Mirror: https://cypher256.github.io/BitcoinArchive/
 Languages: English, Japanese
 
@@ -108,8 +108,8 @@ Interactive chart page showing Bitcoin's complete price history with:
 - **Supply schedule**: Bitcoin's predetermined supply curve from 2009 to 2140 (21M cap)
 - Log/linear scale toggle, zoom controls, responsive design
 
-English: https://bitcoin-archive.pages.dev/chart/
-Japanese: https://bitcoin-archive.pages.dev/ja/chart/
+English: https://bitcoin-institute.pages.dev/chart/
+Japanese: https://bitcoin-institute.pages.dev/ja/chart/
 
 ## Technical Details
 

@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bitcoin-archive.pages.dev/sitemap-index.xml
+Sitemap: https://bitcoin-institute.pages.dev/sitemap-index.xml
 
 # AI/LLM crawlers
-# llms.txt: https://bitcoin-archive.pages.dev/llms.txt
-# llms-full.txt: https://bitcoin-archive.pages.dev/llms-full.txt
+# llms.txt: https://bitcoin-institute.pages.dev/llms.txt
+# llms-full.txt: https://bitcoin-institute.pages.dev/llms-full.txt
