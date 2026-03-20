@@ -2,6 +2,7 @@ import { defaultLang, ui, type Lang } from './ui';
 import { getJapaneseParticipantDisplayName, participantDisplayNamesJaBySlug } from './participants';
 import { tagTranslations } from './tags';
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { PRIMARY_ORIGIN as primaryOrigin } from '../lib/constants';
 
 export function getLangFromUrl(url: URL): Lang {
   const pathParts = url.pathname.split('/');
@@ -18,7 +19,6 @@ export function useTranslations(lang: Lang) {
 }
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-import { PRIMARY_ORIGIN as primaryOrigin } from '../lib/constants';
 
 export function localePath(path: string, lang: Lang): string {
   const clean = path.startsWith('/') ? path : `/${path}`;

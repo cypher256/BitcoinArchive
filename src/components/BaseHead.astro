@@ -1,5 +1,5 @@
 ---
-import { PRIMARY_ORIGIN as primaryOrigin } from '../lib/constants';
+import { PRIMARY_ORIGIN as primaryOrigin, SITE_NAME as siteName } from '../lib/constants';
 
 interface Props {
   title: string;
@@ -75,7 +75,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
 <meta property="og:url" content={resolvedCanonical} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:site_name" content="Bitcoin Institute" />
+<meta property="og:site_name" content={siteName} />
 <meta property="og:locale" content={lang === 'ja' ? 'ja_JP' : 'en_US'} />
 <meta property="og:image" content={ogImageUrl} />
 <meta property="og:image:width" content="1200" />
@@ -110,7 +110,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": websiteId,
-    "name": "Bitcoin Institute",
+    "name": siteName,
     "url": primaryOrigin,
     "description": "The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.",
     "inLanguage": [lang === 'ja' ? 'ja' : 'en'],
@@ -149,7 +149,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": organizationId,
-  "name": "Bitcoin Institute",
+  "name": siteName,
   "url": primaryOrigin,
   "logo": {
     "@type": "ImageObject",
