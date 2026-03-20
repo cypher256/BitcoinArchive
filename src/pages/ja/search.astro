@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 <BaseLayout
   title={`${t('nav.search')} - ${t('site.title')}`}
-  description="ビットコイン・インスティテュートを検索"
+  description={t('search.description')}
   lang={lang}
   alternateEn={absoluteUrl('/search/', 'en')}
   noindex={true}
