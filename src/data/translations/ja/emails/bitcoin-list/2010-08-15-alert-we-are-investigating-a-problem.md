@@ -16,4 +16,5 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 *** 警告 ***  問題を調査中だ。問題が解決されるまで、2010年8月15日 17:05 UTC（ブロック74638）以降に発生したトランザクションを一切信頼しないでほしい。

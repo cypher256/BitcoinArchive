@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 wxSocketServer::Accept(bool wait = true)のドキュメントでこれに気づいた:
 「waitがtrueで、受け入れ待ちの接続がない場合、次の着信接続が到着するまで待機する。**警告: これはGUIをブロックする。」
 

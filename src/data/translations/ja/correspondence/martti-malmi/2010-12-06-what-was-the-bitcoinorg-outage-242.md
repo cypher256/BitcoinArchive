@@ -26,10 +26,13 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 パスワードを送る準備ができました。平文で送らなくて済むように、PGP鍵を送ってもらえますか？
 
-> Gavinがいいでしょう。彼を信頼していますし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通しています。
+<!-- speaker: Satoshi Nakamoto -->
+> Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。
 
+<!-- speaker: Martti Malmi -->
 分かりました、彼に聞いてみます。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

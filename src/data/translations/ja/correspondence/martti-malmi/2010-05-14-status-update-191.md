@@ -25,6 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
+
 こんにちは！
 
 お元気ですか？しばらく姿を見かけませんでしたね。

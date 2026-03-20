@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 連絡先ページのプロジェクト開発者リストにあなたを追加してもいいだろうか？以前コードを書いてくれたので、載せるべきだと思う。統一性のために本名でなければならない。メールアドレスも掲載したい場合は、スパムを防ぐために画像にする。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

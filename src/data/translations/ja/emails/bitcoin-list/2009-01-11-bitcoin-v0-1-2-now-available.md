@@ -16,6 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Bitcoin v0.1.2 がダウンロード可能になった。
 
 ダウンロードリンクは http://www.bitcoin.org を参照してほしい。

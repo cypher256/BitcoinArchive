@@ -26,11 +26,13 @@ secondarySources:
 translationStatus: complete
 ---
 
-> まだ私のJSON-RPCサーバーを他のものでテストしていません。もしテストしたら、
-> 結果を教えてください。Pythonを使っていますよね？
+<!-- speaker: Satoshi Nakamoto -->
+> まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、
+> 結果を教えてほしい。Pythonを使っているか？
 >
-> Linux版をGTKなしで動作させるのは別の作業になります。
+> Linux版をGTKなしで動作させるのは別の作業になる。
 
+<!-- speaker: Martti Malmi -->
 はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだしていないです。GTKライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgetsフォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかもしれないです。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

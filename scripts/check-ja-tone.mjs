@@ -215,9 +215,8 @@ function parseFrontmatter(content) {
 //   - HTML tags (< ... >)            → skip
 //   - Empty lines                    → skip
 //   - Horizontal rules (----)        → skip
-//   - Blockquotes (> ...)            → correspondence: odd depth = other
-//                                      speaker (skip), even depth = author
-//                                      (check). Non-correspondence: check all.
+//   - Blockquotes (> ...)            → strip prefix, check content.
+//                                      Speaker set by <!-- speaker: --> annotations.
 //   - Bold-only lines (** ... **)    → skip
 //   - Editorial notes (*[ ... ]*)    → skip
 //   - Source notes (*出典: ... *)     → skip
@@ -288,30 +287,16 @@ function labelLines(body, meta) {
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty' });
       continue;
     }
-    // Blockquotes: handle based on quote depth and content type.
-    //
-    // In correspondence (email threads), blockquote depth indicates speaker:
-    //   odd depth  (>, >>>, >>>>>) = the OTHER person's quoted text → skip
-    //   even depth (>>, >>>>)      = the author's earlier text → check
-    //
-    // In non-correspondence files, blockquotes contain translated speech
-    // that should be checked against the current speaker.
+    // Blockquotes: strip prefix and check content.
+    // Speaker attribution is handled by <!-- speaker: Name --> annotations
+    // in the markdown files, not by quote-depth heuristics.
     if (line.startsWith('>')) {
-      const depthMatch = line.match(/^(>+)/);
-      const depth = depthMatch ? depthMatch[1].length : 0;
       const stripped = line.replace(/^>+\s?/, '');
       const strippedTrimmed = stripped.trim();
       if (!strippedTrimmed) {
         labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty-blockquote' });
         continue;
       }
-      if (meta.type === 'correspondence' && depth % 2 === 1) {
-        // Odd depth in correspondence = other person's quoted reply → skip
-        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'other-speaker-quote' });
-        continue;
-      }
-      // Even depth in correspondence = author's earlier words, or
-      // non-correspondence blockquotes = translated speech → check
       line = stripped;
       trimmed = strippedTrimmed;
       // fall through to further checks

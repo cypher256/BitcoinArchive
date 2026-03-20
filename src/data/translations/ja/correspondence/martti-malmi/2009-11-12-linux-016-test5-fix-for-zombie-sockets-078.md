@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 test 5：
 
 ソケットがノンブロッキングであることを忘れている場合に備えて、sendとrecvの呼び出しにMSG_DONTWAITを追加した。それでもうまくいかない場合の万全の対策として、別のスレッドがsend/recvスレッドを監視し、停止した場合に終了して再起動する。debug.logに「*** Restarting ThreadSocketHandler ***」と出力され、ステータスバーにしばらくエラーメッセージが表示される。

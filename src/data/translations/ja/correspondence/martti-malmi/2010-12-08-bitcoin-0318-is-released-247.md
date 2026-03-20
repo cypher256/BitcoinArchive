@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 バージョン0.3.18が利用可能になった。
 
 変更点：

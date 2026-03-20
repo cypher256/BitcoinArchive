@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 以下のコマンドでバックアップを取得できます：<br>
 wget --no-check-certificate<br>
 https://backup:cAr26Ram@www.bitcoin.org/backup/bitcoinsite.tar.bz2.gpg

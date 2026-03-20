@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使っている。JSON-RPCは素のソケットでもHTTPでも使えるが、他の実装のほとんどはHTTPのようなので、独自のシンプルなHTTPヘッダーを作った。JSONのパースにはJSON Spiritを使っている。STLをフル活用しており、非常に使いやすい。ヘッダーオンリーなのでビルド作業が増えることもなく、私たちのソースツリーに追加できるほど小さい。MITライセンスだ。あと数日で全て動くようになるはずだ。
 
 フォーラムは確実に盛り上がっているな。こんなに早く活発になるとは思わなかった。

@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 以下がリリースアナウンス文の予定だ。まもなくリリース予定だ。
 
 Bitcoinバージョン0.2が登場！

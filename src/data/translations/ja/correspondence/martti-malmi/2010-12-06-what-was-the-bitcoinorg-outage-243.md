@@ -26,13 +26,17 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 mmalmi@cc.hut.fi の書き込み：
 > パスワードを送る準備ができました。平文で送らなくて済むように、PGP鍵を送ってもらえますか？
 >
+<!-- speaker: Satoshi Nakamoto -->
 >> Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。
 >
+<!-- speaker: Martti Malmi -->
 > 分かりました、彼に聞いてみます。
 
+<!-- speaker: Satoshi Nakamoto -->
 ありがとう。bitcoinexchangeの別サーバーへの移行は完了したか？
 
 

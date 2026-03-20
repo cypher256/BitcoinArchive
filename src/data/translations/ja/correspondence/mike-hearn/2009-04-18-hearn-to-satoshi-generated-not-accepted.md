@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Mike Hearn -->
 ありがとう。50を返送したので、これでおあいこだ。
 
 なぜか、あなたからの送金は、アドレス帳に追加したにもかかわらず「From: unknown」と表示される。

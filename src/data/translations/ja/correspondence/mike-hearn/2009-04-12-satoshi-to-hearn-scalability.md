@@ -27,6 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Mikeさん、こんにちは。
 
 ご質問にお答えできることを嬉しく思う。時間があれば、論文を補足するFAQを書くべきだな。

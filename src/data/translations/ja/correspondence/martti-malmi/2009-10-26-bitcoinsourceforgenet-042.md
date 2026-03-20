@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 何が起きているか分かる？自分が見るたびに正常なんだけど。
 
 

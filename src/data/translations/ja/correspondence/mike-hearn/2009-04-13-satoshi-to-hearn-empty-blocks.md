@@ -24,6 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 チェーンは常に延長され続ける。もし止まったら、攻撃者が追いつく時間を与えてしまう。空のブロックはそれほど大きくないので、心配いらない。
 
 おっしゃる通り、重要なのはイベントの順序だ。

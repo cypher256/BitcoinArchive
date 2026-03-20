@@ -26,18 +26,22 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 > mmalmi@cc.hut.fi wrote:
 >>> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
->>> ノートパソコンを持っていませんか？
+>>> ノートパソコンを持っていないか？
+<!-- speaker: Martti Malmi -->
 >>
 >> はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！
 >> 本当に使いやすいです。
+<!-- speaker: Satoshi Nakamoto -->
 >
-> やった、一発で動きました。
+> やった、一発で動いた。
 >
-> 使ったPythonのコードを送ってもらえますか？後で自分でテストするとき、
+> 使ったPythonのコードを送ってもらえるか？後で自分でテストするとき、
 > 一から調べなくて済むので。
 
+<!-- speaker: Martti Malmi -->
 python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）をSVNからダウンロードして、Pythonインタプリタで直接テストしました。こんな感じですよ：
 
 pythons = ServiceProxy("http://localhost:8332")

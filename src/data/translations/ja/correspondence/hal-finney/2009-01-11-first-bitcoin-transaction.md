@@ -23,4 +23,5 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Hal Finney -->
 Running bitcoin

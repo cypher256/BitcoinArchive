@@ -28,6 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 2009年6月11日のこのメールで、サトシはマルミがbitcoin.orgウェブサイトに施した改善を称賛した。以前の姿勢と一貫して、投資関連の表現の削除を再度求めた。
 
 最も注目すべきは、サトシがこのやり取りで「暗号通貨（cryptocurrency）」という用語を紹介したことである：

@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
+
 mmalmi@cc.hut.fi wrote:
 >> まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、
 >> 結果を教えてほしい。Pythonを使っているのか？
@@ -38,6 +40,8 @@ mmalmi@cc.hut.fi wrote:
 > （http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、
 > あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかも
 > しれません。
+
+<!-- speaker: Satoshi Nakamoto -->
 
 おそらく折れてそうすることになるだろう。initとshutdownをinit.cppかstart.cppなどに移動し、wxbaseだけをリンクしてui.oとuibase.oはリンクしないようにできる。
 

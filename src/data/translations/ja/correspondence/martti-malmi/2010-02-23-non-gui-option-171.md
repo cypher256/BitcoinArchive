@@ -25,23 +25,27 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 >>> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >>>
 >>> 1) GTKはディスプレイなしでプログラムを実行することをサポートしています：
 >>> http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
 >>> ただし、wxWidgetsで可能かどうかまでは分かりません。
+<!-- speaker: Satoshi Nakamoto -->
 >>
->> wxApp::Initializeでgtk-init-checkを呼び出しているのが分かりました。
+>> wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
 >>
 >> Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
->> 戻り値を無視することができます。うまく動作しているようです。
+>> 戻り値を無視することができる。うまく動作しているようだ。
+<!-- speaker: Satoshi Nakamoto -->
 >
-> うまく動作しています。あといくつか作業したらアップロードします。
+> うまく動作している。あといくつか作業したらアップロードする。
 >
-> GTKライブラリをインストールするよう人々に伝える必要があります。GTKを
-> インストールするapt-getコマンドを覚えていますか？また、GUIがインストール
-> されていない環境でもインストールできますか？
+> GTKライブラリをインストールするよう人々に伝える必要がある。GTKを
+> インストールするapt-getコマンドを覚えているか？また、GUIがインストール
+> されていない環境でもインストールできるか？
 
+<!-- speaker: Martti Malmi -->
 おそらくapt-get install libgtk2.0-0だったと思います。利用可能なパッケージはこのように検索できますよ：「apt-cache search libgtk」。
 
 bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に保てるようにしますね。

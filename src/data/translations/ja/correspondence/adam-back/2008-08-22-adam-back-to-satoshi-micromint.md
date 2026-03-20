@@ -28,6 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Adam Back -->
 このメールチェーンの4通目で、アダム・バックはサトシが興味を持つかもしれない別の論文を提案した。ロン・リベストらによる「MicroMint」（1996年）である。この論文は、HashcashやBitcoinで使用される部分的プリイメージではなく、k-wayハッシュ衝突の抽出を探求したものだった。
 
 *[バックは、デジタル通貨のための計算パズルに関連する研究としてMicroMint論文を提案した。]*

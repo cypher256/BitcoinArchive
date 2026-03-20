@@ -27,6 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Mike Hearn -->
 Satoshiさん、こんにちは。
 
 お元気でお過ごしのことと思う。最近、BitCoinがインターネット上の不正利用にどう対処できるかについて考えており、意見を聞かせてほしい。

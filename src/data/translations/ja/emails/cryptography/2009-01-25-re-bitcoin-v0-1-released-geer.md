@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Dan Geer -->
 [ビル・フランツのボットネットのセキュリティに関する観察への返信]
 
 [ギアは2009年1月20日に行った講演に言及し、ウイルス攻撃が減少する一方で寄生的な関係が増加していることを論じた。]

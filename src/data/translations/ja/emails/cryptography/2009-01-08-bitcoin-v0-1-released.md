@@ -23,6 +23,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 ビットコインの最初のリリースを発表する。二重支払いを防止するためにピアツーピアネットワークを使用する新しい電子キャッシュシステムだ。サーバーや中央機関のない、完全な分散型システムだ。
 
 スクリーンショットはbitcoin.orgを参照。

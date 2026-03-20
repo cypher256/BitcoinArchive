@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 ファイル linux-0.1.6-test3.tar.bz2 を添付
 
 linux-0.1.6-test3.tar.bz2   12,143,473バイト

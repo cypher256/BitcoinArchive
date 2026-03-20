@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Mike Hearn -->
 Satoshiさん、こんにちは。
 
 あなたのBitCoinに関する論文を大変興味深く読んだ。しかし少し分かりにくいと感じた――いくつかの例を示してもらえれば、より理解しやすくなると思う。

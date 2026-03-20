@@ -25,6 +25,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-
+<!-- speaker: Martti Malmi -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

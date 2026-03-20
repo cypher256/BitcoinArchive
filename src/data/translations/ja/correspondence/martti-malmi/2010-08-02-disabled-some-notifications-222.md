@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 「一般メンバー」向けに「返信の通知をリクエスト」と「新規トピックの通知をリクエスト」を無効にした。
 
 PM受信時の通知オプションも確かにあるはずだが、無効にする方法が見当たらない。必要なら、PHPのコードを編集するしかないだろう。

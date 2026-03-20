@@ -25,10 +25,12 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 > CriticalSectionのコードをwxCriticalSectionに変換してSVNにアップロード
 > するよ（少しトリッキーだけど）。TryEnterCriticalSectionをどうするかは
 > まだわからない。もうすぐすべてチェックインできる状態になると思う。
 
+<!-- speaker: Martti Malmi -->
 Boostのmutexはここで役に立ちますか？
 
 http://www.boost.org/doc/libs/1_40_0/doc/html/thread/synchronization.html#thread.synchronization.mutex_concepts

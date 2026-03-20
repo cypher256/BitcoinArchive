@@ -25,14 +25,17 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 論文は2008年に公開された。
 
 誰かWikipediaを修正する必要がある。論文が2009年に公開されたと誤って記載されている。論文はソフトウェアよりも先にリリースされた。
 
 
+<!-- speaker: Martti Malmi -->
 mmalmi@cc.hut.fi の書き込み：
 > これについてコメントいただけますか？
 >
+<!-- speaker: Constance J. Wells -->
 > ----- cjwells_1@yahoo.com からの転送メッセージ -----
 >     Date: Mon, 24 Jan 2011 00:32:48 -0800 (PST)
 >     From: "Constance J. Wells" <cjwells_1@yahoo.com>
@@ -55,6 +58,7 @@ mmalmi@cc.hut.fi の書き込み：
 >
 > --- Mon, 1/24/11 に mmalmi@cc.hut.fi <mmalmi@cc.hut.fi> が書きました：
 >
+<!-- speaker: Martti Malmi -->
 > From: mmalmi@cc.hut.fi <mmalmi@cc.hut.fi>
 > Subject: Re:
 > To: "Constance J. Wells" <cjwells_1@yahoo.com>
@@ -67,6 +71,7 @@ mmalmi@cc.hut.fi の書き込み：
 >
 > -Martti
 >
+<!-- speaker: Constance J. Wells -->
 >> Martti Malmi
 >> 現在フルタイムの学生だ -
 >> http://info.aspen.edu/

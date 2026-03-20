@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 JSON-RPCとコマンドラインの実装をSVNにアップロードした。コマンドについてもう少し考える時間ができたら、フォーラムに投稿するつもりだ。少なくともいくつかのメソッド名は変更する予定だ。
 
 RPCサーバーを有効にするには、-serverスイッチを追加してほしい。デフォルトでは無効だ。
@@ -46,9 +48,12 @@ bitcoin stop
 
 Linux版をGTKなしで動作させるのは別の作業になる。
 
+<!-- speaker: Martti Malmi -->
+
 mmalmi@cc.hut.fi wrote:
 > それは素晴らしいですね！Liberty ReserveとそのAPIについて調べ始めます。
 >
+<!-- speaker: Satoshi Nakamoto -->
 >> JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使って
 >> いる。JSON-RPCはプレーンソケットでもHTTPでも可能だが、他のほとんどの
 >> 実装はHTTPのようなので、自分でシンプルなHTTPヘッダーを作った。JSON

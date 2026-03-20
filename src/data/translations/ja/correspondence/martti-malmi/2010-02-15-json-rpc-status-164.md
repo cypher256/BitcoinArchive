@@ -26,9 +26,11 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 > VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 > ノートパソコンを持っていませんか？
 
+<!-- speaker: Martti Malmi -->
 はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

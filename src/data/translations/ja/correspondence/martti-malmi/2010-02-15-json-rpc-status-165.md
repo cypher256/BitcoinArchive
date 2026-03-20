@@ -26,12 +26,18 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
+
 mmalmi@cc.hut.fi wrote:
+<!-- speaker: Satoshi Nakamoto -->
 >> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 >> ノートパソコンを持っていないか？
 >
+<!-- speaker: Martti Malmi -->
 > はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！
 > 本当に使いやすいです。
+
+<!-- speaker: Satoshi Nakamoto -->
 
 やった、一発で動いた。
 

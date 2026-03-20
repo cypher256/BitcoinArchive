@@ -16,6 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 これはDoS保護を追加するためのマイナーリリースだ。
 
 変更点：

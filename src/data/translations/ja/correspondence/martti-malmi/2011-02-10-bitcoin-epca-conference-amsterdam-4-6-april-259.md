@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 こんにちは。
 
 ご連絡いただきありがとうございます。返信が遅くなり申し訳ございません。EPCAはBitcoinプロジェクトにとって非常に興味深く、ネットワーキングの良い機会だと思います。この件で協力できる人を見つけます。それまでの間、ご質問があればお気軽にお尋ねください。
@@ -34,6 +35,7 @@ translationStatus: complete
 Martti Malmi<br>
 Bitcoinプロジェクト開発者
 
+<!-- speaker: Douwe Lycklama -->
 > こんにちは。
 >
 > EPCAカンファレンスを代表してご連絡しています。Bitcoinについてもっと知りたいと考えています。Bitcoinは4月4-6日にアムステルダムで開催される次回カンファレンスの興味深いトピックになる可能性があります。
@@ -69,4 +71,5 @@ Bitcoinプロジェクト開発者
 >
 >
 
+<!-- speaker: Martti Malmi -->
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

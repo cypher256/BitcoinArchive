@@ -26,7 +26,11 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
+
 > 公開して大丈夫です。リダイレクトとDNSエントリのどちらを設定しますか？DNSエントリの場合は、フォーラムのアドレスがhttp://forum.bitcoin.org/になるようにApache vhostを設定できます。
+
+<!-- speaker: Satoshi Nakamoto -->
 
 DNSエントリだ。
 
@@ -36,11 +40,19 @@ bitcoin.orgの情報をあなたのサイトのコンテンツと統合して、
 
 使用するCMSは決めたか？Drupalや他のCMSを調査して、どれが最も人気があるか確認すべきだな。
 
+<!-- speaker: Martti Malmi -->
+
 > Linuxビルドが動くようになって良かったです。新しいリリースとフォーラムで物事が動き出すのを見るのは楽しみです。自分の取引所を立ち上げて、（ウェブ）ビジネス関係者に通貨を宣伝し始めるのもそう遠くないでしょう。
+
+<!-- speaker: Satoshi Nakamoto -->
 
 Linux版、セットアップexe、Torオプション、改善されたウェブサイト/フォーラムのすべてが、利用できる訪問者の割合を増やし、自動起動とタスクトレイへの最小化が実行し続ける人の数を増やす。これらの要因はすべて掛け合わされる。
 
+<!-- speaker: Martti Malmi -->
+
 > NewLibertyStandardはコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
+
+<!-- speaker: Satoshi Nakamoto -->
 
 低い価格から始めて、価格が上がるだけにするのは良いことだ。
 

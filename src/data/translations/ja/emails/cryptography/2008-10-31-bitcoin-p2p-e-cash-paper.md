@@ -23,6 +23,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 新しい電子キャッシュシステムに取り組んできた。完全なピアツーピア方式で、信頼できる第三者を必要としない。
 
 論文はこちらで公開している：<br>

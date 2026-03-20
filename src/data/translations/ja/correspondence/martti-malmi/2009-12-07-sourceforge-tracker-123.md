@@ -25,26 +25,31 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 ロゴをローカルサーバーにコピーしましたので、グラフィックとして引き続き使えます。SFの商標ポリシーで禁止されていません。
 
-> bitcoin.sourceforge.netにSourceforgeトラッカーを追加しました。
-> 別のものが欲しければ、以下に全リンクの一覧があります。
+<!-- speaker: Satoshi Nakamoto -->
+> bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。
+> 別のものが欲しければ、以下に全リンクの一覧がある。
 >
-> bitcoin.orgには一瞬入れましたが、外しました。SSLモードでロックが壊れて、
+> bitcoin.orgには一瞬入れたが、外した。SSLモードでロックが壊れて、
 > 「partially encrypted」や「contains unauthenticated content」という
-> 混合コンテンツ警告が出ます。そもそも、Sourceforgeに全員を
-> トラッキングさせたいですか？ない方がプライバシーに優しいです。
+> 混合コンテンツ警告が出る。そもそも、Sourceforgeに全員を
+> トラッキングさせたいか？ない方がプライバシーに優しい。
 >
 > mmalmi@cc.hut.fi wrote:
+<!-- speaker: Martti Malmi -->
 >> SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 >> フッターに追加できると良いですね。
 >>
->>> 現在のサイトレイアウトはすっきりしていて良いですね。ロゴだけ
->>> 変更すべきです。すぐに公開したいなら、とりあえずサイトタイトルに
->>> 置き換えて、後でもっと良いロゴを作ればいいでしょう。
+<!-- speaker: Satoshi Nakamoto -->
+>>> 現在のサイトレイアウトはすっきりしていて良いな。ロゴだけ
+>>> 変更すべきだ。すぐに公開したいなら、とりあえずサイトタイトルに
+>>> 置き換えて、後でもっと良いロゴを作ればいいだろう。
 >>>
 >>> サイト管理やプロのウェブグラフィックアーティストとのコンタクトが
->>> 必要なら、Daveに頼めます。彼は仕事でDrupal関連のことをやっています。
+>>> 必要なら、Daveに頼める。彼は仕事でDrupal関連のことをやっている。
+<!-- speaker: Martti Malmi -->
 >>
 >>
 >>

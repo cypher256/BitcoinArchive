@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメータなしのクリーンURLを有効にしているが、Apacheが「AllowOverride All」に設定されていないため、変更が拒否されて動作していない。これは、私たちが望む形でDrupalを他のサイトと共存させるために必要だ。
 
 修正するために以下のファイルへのアクセス権限が必要だ：<br>

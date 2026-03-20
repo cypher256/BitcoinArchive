@@ -24,6 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Dustin D. Trammell -->
 Dustin D. Trammellの投稿：
 > Satoshi Nakamotoの投稿：
 > > ご存知の通り、90年代にはもっと多くの人が関心を持っていたと思うが、
@@ -36,6 +37,7 @@ Dustin D. Trammellの投稿：
 > 人々がBitCoinを実際に価値あるものとして評価し、
 > 通貨となるようにすることだろう。
 
+<!-- speaker: Satoshi Nakamoto -->
 10年後に何らかの形の電子通貨を使用していなければ驚くだろう。信頼できる第三者が及び腰になった時に必然的に骨抜きにされない方法を知った今となっては。
 
 リワードポイント、寄付トークン、ゲームの通貨、アダルトサイトの少額決済のような狭いニッチから始めることができる。最初は、ほとんど無料だが完全に無料ではないサービスのプルーフ・オブ・ワーク用途に使用できる。

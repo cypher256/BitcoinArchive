@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 Rackspaceはサポートが非常に良く、バックエンド、接続性も良好で、スケーリング性に優れたクラウドベースの仮想サーバーを提供しています。Thufirからこのような提案がありました：
 
 -----

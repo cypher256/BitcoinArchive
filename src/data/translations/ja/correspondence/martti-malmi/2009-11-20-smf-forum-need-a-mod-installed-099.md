@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 SMFフォーラムの設定を進めている。SMFはphpBBよりも設計が優れていて信頼性が高いと言われているので、SMFの見た目をちゃんと整えられるなら、そちらが望ましい選択だ。
 
 ほとんどのフォーラムはvBulletinで運営されている（big-boards.comにはvBulletin 1376件、Invision 275件、phpBB 245件、SMF 41件が掲載されている）。そのため、vBulletinやInvisionの見た目でないと、vBulletinを買えなくて妥協したように見えてしまう。SMFのUIは標準的な見た目からかなり離れていたが、CSSを使って他のものに近づけることができた。

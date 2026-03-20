@@ -26,7 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-メーリングリストは以下の通りです：<br>
+<!-- speaker: Satoshi Nakamoto -->
+メーリングリストは以下の通りだ：<br>
 bitcoin-list@lists.sourceforge.net<br>
 購読/解除ページ：<br>
 http://lists.sourceforge.net/mailman/listinfo/bitcoin-list<br>

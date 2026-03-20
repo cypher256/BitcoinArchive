@@ -26,14 +26,19 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Dustin Trammell -->
 トランメルは紛らわしいトランザクションラベルについて納得した瞬間を迎えた：
 
+<!-- speaker: Dustin Trammell -->
 > ああ！自宅のアドレスだったことに全然気づかなかった、その通りだ (: 自宅で複数のアドレスを作成していたから、結びつけられなかった。
 
+<!-- speaker: Dustin Trammell -->
 トランメルは、「Satoshi」がChangeボタン配下のアドレスに確かに関連付けられていることを確認したが、新たな疑問を提起した：
 
+<!-- speaker: Dustin Trammell -->
 > ただ、その値を設定した覚えがないんだが、デフォルトか何かなのか？（これは初回起動時にアプリケーションが自動生成した最初のデフォルトアドレスだ）
 
+<!-- speaker: Dustin Trammell -->
 このやり取りは、ビットコインの初期におけるユーザビリティの課題を浮き彫りにしている — セキュリティ研究者として暗号技術の概念に精通した技術的に高度なユーザーであるトランメルでさえ、アドレス帳とトランザクション表示に混乱し、自分自身への送金の送信元を誤認するほどであった。
 
 *出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

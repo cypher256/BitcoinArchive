@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Liberty Reserveとの交換という手もある。e-Bullion、Pecunix、Webmoneyに似たオンライン通貨で、質問なし・プライバシー付きで交換が可能だ。
 
 LRやその他のオンライン通貨は購入が難しいが、現金化は簡単だ。購入が難しいのは、取引所が支払いの取り消しで騙されることに非常に慎重で、より多くの詳細情報や保持期間を要求するからだ。現金化は非常に簡単だ。LRは取り消し不可能なので、LRをあらゆる種類の支払いに変換することに積極的な取引所がたくさんある。

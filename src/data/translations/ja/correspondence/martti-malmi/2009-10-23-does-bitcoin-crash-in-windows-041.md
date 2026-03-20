@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Liberty Standard の書き込み:
 > WindowsユーザーはBitcoinがたまにクラッシュすることがあるか？
 > 最近wine-1.0.1で実行しているBitcoinが頻繁にクラッシュしている。これが

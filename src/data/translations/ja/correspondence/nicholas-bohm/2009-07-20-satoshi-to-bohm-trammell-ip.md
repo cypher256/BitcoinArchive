@@ -28,6 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 翌日のフォローアップで、サトシはデバッグ情報を提供した。
 
 > 昨日から70.113.114.209に接続している。

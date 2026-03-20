@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしている。
 
 あなたのhashcash論文の引用が正しいか確認したいと思った。

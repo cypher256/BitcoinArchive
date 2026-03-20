@@ -32,6 +32,7 @@ translationStatus: complete
 featured: true
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 **PDF:** [ビットコインホワイトペーパーを閲覧（PDF）](/BitcoinArchive/documents/bitcoin.pdf)
 
 **関連:** [初期草稿（2008年10月3日）](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/)

@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 bitcoin.orgのDNS変更が約12時間前に反映された。あと12時間待ってから、bitcoin.sourceforge.netのフォーラムタブを http://www.bitcoin.org/smf/ に変更する。
 
 今後の参考のために、SMFでベースURLを更新するための変更箇所は以下の通りだ：<br>

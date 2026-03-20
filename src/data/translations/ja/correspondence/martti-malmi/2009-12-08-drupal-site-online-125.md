@@ -26,11 +26,14 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 お疲れ様です。bitcoin.sourceforge.netをそこにリダイレクトしました。
 
-> 新しいDrupalサイトを公開しました。安全な移行のための十分な時間が
-> 経過しましたし、サイトの見栄えも良いです。テーマにはまだ作業が
-> 必要ですが、今のところ十分です。以前のbitcoin.orgページからは
-> 大幅な改善です。
+<!-- speaker: Satoshi Nakamoto -->
+> 新しいDrupalサイトを公開した。安全な移行のための十分な時間が
+> 経過したし、サイトの見栄えも良い。テーマにはまだ作業が
+> 必要だが、今のところ十分だ。以前のbitcoin.orgページからは
+> 大幅な改善だ。
 
+<!-- speaker: Martti Malmi -->
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

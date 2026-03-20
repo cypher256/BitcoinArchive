@@ -25,12 +25,16 @@ secondarySources:
 translationStatus: complete
 ---
 
-> 使えるメモリはどのくらいですか？
+<!-- speaker: Satoshi Nakamoto -->
+> 使えるメモリはどのくらいか？
+<!-- speaker: Martti Malmi -->
 VPSには320MBのRAMがあり、そのうち50MBが現在空いています。500MBのスワップ領域もありますよ。
 
-> Bitcoinはそれなりにメモリを必要とします。
-> Windowsでは約75MBです。問題になりますか？
+<!-- speaker: Satoshi Nakamoto -->
+> Bitcoinはそれなりにメモリを必要とする。
+> Windowsでは約75MBだ。問題になるか？
 
+<!-- speaker: Martti Malmi -->
 本当ですか？こちらのWindowsタスクマネージャーではメモリ使用量は約13MBと表示されていますけど。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

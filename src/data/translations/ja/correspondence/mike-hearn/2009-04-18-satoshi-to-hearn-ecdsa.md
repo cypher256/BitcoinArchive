@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 32.51と50.00を返送した。
 
 間接送金にコメントを含める方法を何とか見つけたかったのだが、どうしても方法がなかった。BitcoinはEC-DSAを使用している。これは署名がRSAより桁違いに小さいため、現在の技術でブロックチェーンを実用的なサイズにするために不可欠だった。しかしEC-DSAはRSAのようにメッセージを暗号化することはできず、署名の検証にしか使用できない。

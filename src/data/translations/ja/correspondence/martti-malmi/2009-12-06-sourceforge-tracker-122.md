@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。別のものが欲しければ、以下に全リンクの一覧がある。
 
 bitcoin.orgには一瞬入れたが、外した。SSLモードでロックが壊れて、「partially encrypted」や「contains unauthenticated content」という混合コンテンツ警告が出る。そもそも、Sourceforgeに全員をトラッキングさせたいか？ない方がプライバシーに優しい。
@@ -97,10 +98,12 @@ width="150" height="40" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 
+<!-- speaker: Martti Malmi -->
 mmalmi@cc.hut.fi wrote:
 > SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 > フッターに追加できると良いですね。
 >
+<!-- speaker: Satoshi Nakamoto -->
 >> 現在のサイトレイアウトはすっきりしていて良いな。ロゴだけ
 >> 変更すべきだ。すぐに公開したいなら、とりあえずサイトタイトルに
 >> 置き換えて、後でもっと良いロゴを作ればいいだろう。

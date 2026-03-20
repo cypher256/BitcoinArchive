@@ -28,6 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Mike Hearn -->
 Satoshiさん、こんにちは。
 
 お元気でいることを願っている。ようやくすべての弁護士を説得し、GoogleのもとでApache 2ライセンスを使用してBitCoinJをリリースすることができた：

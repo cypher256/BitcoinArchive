@@ -25,6 +25,7 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
+<!-- speaker: Mike Hearn -->
 こんにちは、Satoshi。
 
 以下のWikiページを読んだところだ：

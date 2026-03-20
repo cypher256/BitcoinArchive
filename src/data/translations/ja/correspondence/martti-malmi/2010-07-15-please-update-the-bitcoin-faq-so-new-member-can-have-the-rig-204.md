@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Jim Nguyen -->
 <!-- tone-skip -->
 -------- Original Message --------<br>
 Subject: 	Please update the bitcoin FAQ so new member can have the right

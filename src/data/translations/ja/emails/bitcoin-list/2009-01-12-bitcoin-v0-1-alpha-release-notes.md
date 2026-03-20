@@ -16,6 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Bitcoin v0.1 Alpha リリースノート
 
 Bitcoinは、二重支払いを防止するためにピアツーピアネットワークを使用する新しい電子キャッシュシステムだ。サーバーや中央機関を必要とせず、完全に分散化されている。

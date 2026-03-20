@@ -28,6 +28,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Nicholas Bohm -->
 ポート転送の修正から約6週間後、ボームは新たな接続障害を報告した。
 
 > Bitcoinが丸一日ほど接続を確立できていない。再起動しても変わらない。

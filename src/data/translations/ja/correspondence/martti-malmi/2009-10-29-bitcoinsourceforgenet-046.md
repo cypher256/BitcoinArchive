@@ -25,10 +25,12 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 CriticalSectionのコードをwxCriticalSectionに変換してSVNにアップロードするよ（少しトリッキーだけど）。TryEnterCriticalSectionをどうするかはまだわからない。もうすぐすべてチェックインできる状態になると思う。
 
 君の言う通り、そろそろLinuxビルドをやる時期だろうね。Linux環境のセットアップと依存関係のビルドに取り組んでいるところだ。
 
+<!-- speaker: Martti Malmi -->
 > はい。WindowsのスレッドとソケットライブラリのインクルードをそれらのPOSIX版に
 > 置き換えたところ、エラーが少しだけ出るようになりました。主にCriticalSectionから
 > のエラーです。動作するようにできたら、svn/branchesに入れます。公式リリースで

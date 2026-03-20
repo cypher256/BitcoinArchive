@@ -27,6 +27,7 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
+<!-- speaker: Mike Hearn -->
 Satoshi、メリークリスマス。世界のどこにいるにせよ、お祝いしていると仮定して :-)
 
 私はAndroid携帯で動作するクライアントの構築を視野に入れて、簡易支払い検証のJava実装に取り組んでいる。そのため、ストレージ要件とBitCoinのスケーラビリティについて多く考えてきたが、論文では答えられていないいくつかの疑問が生じた（論文の新版を出してもいいかもしれない。現在では内容の一部が古くなっていると思う）。

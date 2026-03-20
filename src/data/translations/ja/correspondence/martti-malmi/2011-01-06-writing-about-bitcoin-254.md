@@ -25,17 +25,23 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Gavin Andresen -->
 Gavin Andresen の書き込み：
 > 喜んでRaineyと話すよ。
 
+<!-- speaker: Satoshi Nakamoto -->
 素晴らしい
 
+<!-- speaker: Gavin Andresen -->
 > Satoshi、あなたはメディア対応やPR、インタビューには関わりたくないよね？
 
+<!-- speaker: Satoshi Nakamoto -->
 その通りだ
 
+<!-- speaker: Gavin Andresen -->
 > メディアへの対応を断ることもできるが——Satoshi、Bitcoinが急速に大きくなりすぎて、トラフィックや攻撃、機能要望などに対応しきれなくなることへの懸念を表明していたのは知っている。でもメディアを無視しても彼らは去らない。別の誰かに話を聞くだけだ。過度に熱狂的な人が「非公式なBitcoinスポークスパーソン」になるよりも、Bitcoinについて現実的な印象（最先端のベータソフトウェアでまだ開発中であり、PayPalやユーロにすぐ取って代わるものではない、など）を伝える方が良いと思う。
 
+<!-- speaker: Satoshi Nakamoto -->
 あなたが最適な人物だ。
 
 EFFは本当に重要だ。彼らとは良い関係を築きたい。私たちは彼らが好むタイプのプロジェクトだ。彼らはTORプロジェクトを支援し、P2Pファイル共有の保護に多大な貢献をしてきた。

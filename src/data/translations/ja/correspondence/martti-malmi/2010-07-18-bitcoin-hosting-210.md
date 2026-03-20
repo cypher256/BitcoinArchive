@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 今は切り替えをしないと約束してほしい。今抱えているSlashdotからの殺到する作業に加えて、切り替えの手間まで増えるのは最も避けたいことだ。やるべきことが多すぎて頭がおかしくなりそうだ。
 
 また、たった$20を節約するために、より小さくて信頼性の低いホストに移るのは最悪だ。
@@ -33,9 +34,11 @@ translationStatus: complete
 
 短期的にはBitcoinでの寄付が役に立つか？
 
+<!-- speaker: Martti Malmi -->
 mmalmi@cc.hut.fi の書き込み:
 > Rackspaceは非常に良いサポート、良いバックエンド、良い接続性、そしてうまくスケールするクラウドベースの仮想サーバーを持っています。Thufirからこんなオファーをもらいました：
 >
+<!-- speaker: Thufir -->
 > -----
 > Hi Sirius、
 >
@@ -62,6 +65,7 @@ mmalmi@cc.hut.fi の書き込み:
 > では！
 > -----
 >
+<!-- speaker: Martti Malmi -->
 > 良いデータセンターと接続があるなら、検討の価値があります。$10/月はRackspaceより約$20安いです。一方で、寄付が届くならRackspaceの料金は問題ありません。
 >
 

@@ -27,6 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 http://www.bitcoin.org/smf/index.php?topic=338.0
 
 > メールブラックホールリスト、もしくは少なくとも登録用メールサーバーをホストしているISPがそれらのリストに載っている。

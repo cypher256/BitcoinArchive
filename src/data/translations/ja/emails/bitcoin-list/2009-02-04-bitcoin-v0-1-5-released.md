@@ -18,6 +18,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 バージョン0.1.5が公開された。Nicholasが経験した問題の修正、ディスク容量チェック、および混乱を招いていた点を改善するための変更が含まれている。
 
 NicholasとDustinの多大な協力とフィードバックに特別に感謝する！

@@ -27,6 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 ありがとう、何が起こったか分かった。最初のノードが遅かったため、他の全員にもブロックを要求してしまい、全体が詰まっただけだ。これは修正できる。正しいやり方を少し考える必要がある。
 
 未確認の状態でシャットダウンしてもリスクはない。トランザクションや新しいブロックを作成すると、すぐにネットワークにブロードキャストされる。その後の確認数/#の増加は結果を監視しているだけだ。その間にあなたのノードが承認を促進するために何かをすることはない。
@@ -45,6 +46,7 @@ bitcoin -datadir=/home/yourusername/.bitcoin
 
 通常このスイッチを使う必要はないはずだ。それでも2つのインスタンスを同時に実行することはできない。
 
+<!-- speaker: Liberty Standard -->
 Liberty Standardの書き込み：
 > 2009年11月9日 午前3:23、Satoshi Nakamoto <satoshin@gmx.com
 > <mailto:satoshin@gmx.com>> の書き込み：

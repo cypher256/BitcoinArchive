@@ -26,6 +26,7 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 私は弁護士ではないので、その質問には答えられない。おそらく、その法律が銀行や金融機関、その他の仲介者に適用されるものであれば、銀行が関与せず、現金での対面取引や物理的な商品との物々交換と同様に、二者が直接取引するだけなので、適用されないと思う。
 
 Bitcoinは根本的に非可逆的な取引ができるように設計されており、それを必要とするアプリケーションは確かに存在する。

@@ -25,6 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 >> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけた：
 >>
 >> 1) GTKはディスプレイなしでプログラムを実行することをサポートしている：

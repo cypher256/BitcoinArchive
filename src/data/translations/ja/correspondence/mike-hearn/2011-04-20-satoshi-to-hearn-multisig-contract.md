@@ -27,6 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 スクリプト言語がステートレスでない場合、つまり変化する外部情報やノード間で異なる情報にアクセスできる場合、攻撃者はそれを使ってチェーンをフォークできる。唯一の例外は、ある時点より前は常にfalseで、その後は永久にtrueとなる場合であり、これはnLockTimeで実装されている。
 
 Googleは信頼されているので、ユーザーがGoogleにトークン預金を支払い、アカウントを閉鎖する際にGoogleが返金するということはできないのだろうか？

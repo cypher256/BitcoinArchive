@@ -26,8 +26,10 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 あ、もう一つ。サーバーのsendmailをまだ設定していないので、PHPのメール機能は動きませんが、まだ必要ないので問題ありません。
 
+<!-- speaker: Martti Malmi -->
 > 今日は設定する時間がありませんが、一時的なアカウント「maintenance」をパスワード「6648ku5HeK」で作成し、/var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
 >
 > 公開して大丈夫です。リダイレクトとDNSエントリのどちらを設定しますか？DNSエントリの場合は、フォーラムのアドレスがhttp://forum.bitcoin.org/になるようにApache vhostを設定できます。
@@ -36,24 +38,25 @@ translationStatus: complete
 >
 > NewLibertyStandardはコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
 >
->> SMFフォーラムの設定を進めています。SMFはphpBBよりも設計が優れていて信頼性が高いと言われているので、SMFの見た目をちゃんと整えられるなら、そちらが望ましい選択です。
+<!-- speaker: Satoshi Nakamoto -->
+>> SMFフォーラムの設定を進めている。SMFはphpBBよりも設計が優れていて信頼性が高いと言われているので、SMFの見た目をちゃんと整えられるなら、そちらが望ましい選択だ。
 >>
->> ほとんどのフォーラムはvBulletinで運営されています（big-boards.comにはvBulletin 1376件、Invision 275件、phpBB 245件、SMF 41件が掲載されています）。そのため、vBulletinやInvisionの見た目でないと、vBulletinを買えなくて妥協したように見えてしまいます。SMFのUIは標準的な見た目からかなり離れていましたが、CSSを使って他のものに近づけることができました。
+>> ほとんどのフォーラムはvBulletinで運営されている（big-boards.comにはvBulletin 1376件、Invision 275件、phpBB 245件、SMF 41件が掲載されている）。そのため、vBulletinやInvisionの見た目でないと、vBulletinを買えなくて妥協したように見えてしまう。SMFのUIは標準的な見た目からかなり離れていたが、CSSを使って他のものに近づけることができた。
 >>
->> CSSでできることはやり尽くしたので、残りはPHPファイルの編集と画像のアップロードが必要です。フォーラムにはファイルアップロード/編集の管理機能が組み込まれておらず、SMF File Manager MODとして別途追加されます。MODをアップロードしましたが、インストールするためにいくつかのファイルをchmod 777にする必要があります。Admin->Packages->Browse Packagesに移動してApply Modをクリックすると、FTPログインを入力すれば自動的に行うオプションが表示されます。
+>> CSSでできることはやり尽くしたので、残りはPHPファイルの編集と画像のアップロードが必要だ。フォーラムにはファイルアップロード/編集の管理機能が組み込まれておらず、SMF File Manager MODとして別途追加される。MODをアップロードしたが、インストールするためにいくつかのファイルをchmod 777にする必要がある。Admin->Packages->Browse Packagesに移動してApply Modをクリックすると、FTPログインを入力すれば自動的に行うオプションが表示される。
 >>
->> 以下も必要かもしれないと言っている人がいます：
+>> 以下も必要かもしれないと言っている人がいる：
 >> mkdir /var/www/bitcoin/smf/packages/temp
 >>
 >> エラーログのエラーは：
 >> failed to open stream: Permission denied
 >> File: /var/www/bitcoin/smf/Sources/Subs-Package.php
->> （これは最初のファイルに過ぎないはずです）
+>> （これは最初のファイルに過ぎないはずだ）
 >>
->> 設定が完了したら、このSMFインストールを公開しても大丈夫ですか？forum.bitcoin.orgをそこに向けられるはずです。
+>> 設定が完了したら、このSMFインストールを公開しても大丈夫か？forum.bitcoin.orgをそこに向けられるはずだ。
 >>
->> Libertyからlinux-test8が順調に動いているとの報告がありました。私のテストもうまくいっています。Linux版は完全に安定したと思います。
+>> Libertyからlinux-test8が順調に動いているとの報告があった。私のテストもうまくいっている。Linux版は完全に安定したと思う。
 >>
->> 朗報です：彼が初めてBitcoinを販売したそうです。誰かが彼の持っている分をすべて買い取りました。買い手と売り手のどちらが先に現れるか気になっていたのですが。
+>> 朗報だ：彼が初めてBitcoinを販売したそうだ。誰かが彼の持っている分をすべて買い取った。買い手と売り手のどちらが先に現れるか気になっていたのだが。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

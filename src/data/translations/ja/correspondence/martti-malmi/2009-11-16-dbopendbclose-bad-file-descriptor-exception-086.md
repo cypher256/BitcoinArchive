@@ -25,7 +25,11 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.logにエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datか、それともaddr.datやwallet.datも含まれるか？
+
+<!-- speaker: Liberty Standard -->
 
 Liberty Standard の書き込み：
 > データディレクトリをSSDカードに戻して、bitcoin test 6を開始しました。今日、ログにDb::openのセグメンテーションフォルトが発生しました。720pのmkv動画を見ている間、プロセッサ/コアを1つだけ使用する設定に変更していました。映画が終わった後にセグメンテーションフォルトに気づきました。

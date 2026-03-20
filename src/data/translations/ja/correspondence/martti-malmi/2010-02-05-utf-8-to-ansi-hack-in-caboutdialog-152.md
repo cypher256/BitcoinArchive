@@ -25,15 +25,20 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 了解した。再び壊れないように以下のように変更する:
 ```cpp
      if (str.Find('\xC2') != wxNOT_FOUND)
          str.Remove(str.Find('\xC2'), 1);
 ```
 
+<!-- speaker: Martti Malmi -->
+
 mmalmi@cc.hut.fi の書き込み:
 > 意図的に変更したわけではありません。エンコーディングの問題だったのでしょう。
 >
+<!-- speaker: Satoshi Nakamoto -->
 >> この変更の理由は何だったのか？
 >>
 >> #if !wxUSE_UNICODE

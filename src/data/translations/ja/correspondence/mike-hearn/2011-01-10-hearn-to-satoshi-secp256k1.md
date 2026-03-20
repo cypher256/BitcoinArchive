@@ -26,6 +26,7 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
+<!-- speaker: Mike Hearn -->
 ああ、なるほど、それは納得がいく。
 
 ところで、もしまだ見ていなければ、フォーラムでsecp256k1のセキュリティに関する議論がある：

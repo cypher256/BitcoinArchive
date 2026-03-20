@@ -24,6 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Wei Dai -->
 論文のことを教えていただきありがとうございます。確認して、コメントや質問があればお知らせします。
 
 私のb-moneyページは1998年11月に作成しました。

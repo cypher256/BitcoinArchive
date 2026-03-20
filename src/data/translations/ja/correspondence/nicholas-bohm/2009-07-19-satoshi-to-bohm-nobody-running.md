@@ -29,6 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 サトシの返信には、ビットコインの初期の脆弱さを最も如実に示す告白の一つが含まれていた。
 
 > 今、他に誰も実行していないだけかもしれない。

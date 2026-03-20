@@ -24,10 +24,12 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Michel Bauwens -->
 Michel Bauwens wrote:
 > プロジェクトはどの程度稼働していますか？実生活で使えるようになるのは
 > いつ頃だと思いますか？
 
+<!-- speaker: Satoshi Nakamoto -->
 完全に稼働しており、ネットワークは成長している。ソフトウェアを試してくれれば、あなたのビットコインアドレスにコインを送る。
 
 あとは情報を広めて、より多くの人に興味を持ってもらう必要がある。

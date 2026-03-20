@@ -16,6 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Bitcoin 0.2が登場した！
 
 ダウンロード（Windows版、そして新たにLinux版も利用可能）<br>

@@ -24,6 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: John Levine -->
 >> 正直なノードがネットワーク上で最も多くのCPUパワーを支配している限り、
 >> 最も長いチェーンを生成し、攻撃者を上回ることができる。
 >
@@ -35,6 +36,7 @@ translationStatus: complete
 > これはhashcashが今日のインターネットで機能しない理由と同じだ
 > — 善良な者たちは悪者よりもはるかに少ない計算能力しか持っていない。
 
+<!-- speaker: Satoshi Nakamoto -->
 その点を指摘してくれてありがとう。
 
 私はその主張を十分に強く表現できていなかった。要件は、善良な者たちが集合的に、単一の攻撃者よりも多くのCPUパワーを持つことだ。

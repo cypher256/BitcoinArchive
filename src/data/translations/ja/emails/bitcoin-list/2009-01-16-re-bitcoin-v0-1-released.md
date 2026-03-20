@@ -16,6 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 > Dustin D. Trammell wrote:
 > > Satoshi Nakamoto wrote:
 > > ご存知の通り、90年代にはもっと多くの人が関心を持っていたと思うが、
@@ -24,9 +25,11 @@ translationStatus: complete
 > > 初めて、信頼に基づかないシステムを試みていることを理解してもらえれば
 > > と思う。
 >
+<!-- speaker: Dustin D. Trammell -->
 > ええ、それが私の目を引いた主な特徴だった。本当の課題は、人々に実際に
 > BitCoinsに価値を認めさせて通貨にすることだろう。
 
+<!-- speaker: Satoshi Nakamoto -->
 今から10年後に何らかの形で電子通貨を使っていなかったら驚く。信頼できる第三者が怖気づいた時に必然的に骨抜きにされないやり方がわかった今となっては。
 
 リワードポイント、寄付トークン、ゲームの通貨、アダルトサイトの少額決済といったニッチな分野から始まるかもしれない。当初はほぼ無料だがまったく無料ではないサービスのproof-of-workアプリケーションに使用できる。

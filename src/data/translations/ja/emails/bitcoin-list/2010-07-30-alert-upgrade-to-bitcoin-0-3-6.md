@@ -16,6 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 重要なバグ修正を含む0.3.6に至急アップグレードしてほしい。
 
 ダウンロードリンクはbitcoin.orgのホームページを参照してほしい。

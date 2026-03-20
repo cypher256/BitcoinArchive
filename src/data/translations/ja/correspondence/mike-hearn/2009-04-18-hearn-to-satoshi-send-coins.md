@@ -24,6 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Mike Hearn -->
 Satoshiさん、こんにちは。
 
 32.51コインを送った。私のビットコインアドレスは 1JuEjh9znXwqsy5RrnKqgzqY4Ldg7rnj5n だ。

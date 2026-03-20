@@ -26,6 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 あの障害の原因は分かったか？再起動が必要だったのか、それともDoS攻撃か何かだったのか？障害中もIPにはpingが通っていた。
 
 davidonpdaにミラーバックアップの件で返事はしたか？とても良いアイデアだと思う。バックアップは取っているか、それともVPSが自動的にバックアップしてくれるか？

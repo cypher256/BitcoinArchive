@@ -27,8 +27,10 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Linuxビルド、自動起動、トレイ最小化、セットアップなど、たくさんのことをやってくれて本当に感謝している。C++プロジェクトの成功を祈っている。
 
+<!-- speaker: Martti Malmi -->
 mmalmi@cc.hut.fi の書き込み：
 > 学校のプロジェクト（偶然にもC++のコーディング）に約1ヶ月集中しなければ
 > ならないので、12月までは積極的な開発に使える時間があまりありません。

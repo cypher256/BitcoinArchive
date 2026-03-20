@@ -25,10 +25,12 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 SlashdotやRedditをフォローしていない重要な層にリーチする素晴らしい機会のようです。GavinかBruce Wagnerがこの役割に適任だと思います。2人が参加するのもいいかもしれません。フォーラムのS3052も適任の可能性がありそうでした。
 
 Gavin、これの取りまとめに興味はありますか？
 
+<!-- speaker: Douwe Lycklama -->
 > こんにちは。
 >
 > EPCAカンファレンスを代表してご連絡しています。Bitcoinについてもっと知りたいと考えています。Bitcoinは4月4-6日にアムステルダムで開催される次回カンファレンスの興味深いトピックになる可能性があります。
@@ -64,4 +66,5 @@ Gavin、これの取りまとめに興味はありますか？
 >
 >
 
+<!-- speaker: Martti Malmi -->
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

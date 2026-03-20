@@ -25,9 +25,13 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+
 ありがとう。db::open/closeのエラーはパターンを裏付けている。
 
 より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたのか？test5のMSG_DONTWAITがLibertyのゾンビ問題を解決した。どのテストバージョンを実行していたのか？（ログにテストバージョンを出力するようにすべきだな）
+
+<!-- speaker: Martti Malmi -->
 
 mmalmi@cc.hut.fi の書き込み：
 > まだ役に立つかもしれないので、ログをお送りします。

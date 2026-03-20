@@ -26,20 +26,22 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Martti Malmi -->
 完了しました。すべてのファイルへのアクセス権限を付与しました。
 
+<!-- speaker: Satoshi Nakamoto -->
 > Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメータなしの
-> クリーンURLを有効にしていますが、Apacheが「AllowOverride All」に設定
-> されていないため、変更が拒否されて動作していません。これは、私たちが望む形で
-> Drupalを他のサイトと共存させるために必要です。
+> クリーンURLを有効にしているが、Apacheが「AllowOverride All」に設定
+> されていないため、変更が拒否されて動作していない。これは、私たちが望む形で
+> Drupalを他のサイトと共存させるために必要だ。
 >
-> 修正するために以下のファイルへのアクセス権限が必要です：
+> 修正するために以下のファイルへのアクセス権限が必要だ：
 >  /etc/apache2/sites-available/default
 >  /etc/apache2/sites-available/default-ssl
 >  /etc/apache2/httpd.conf
 >
-> 修正計画は以下の通りです。もし自分でやる場合でも、後で変更が
-> 必要になるかもしれないので、httpd.confへのアクセス権限は付与してください。
+> 修正計画は以下の通りだ。もし自分でやる場合でも、後で変更が
+> 必要になるかもしれないので、httpd.confへのアクセス権限は付与してほしい。
 >
 > /etc/apache2/sites-available/defaultで
 > 「AllowOverride None」の2番目のインスタンスを
@@ -54,7 +56,8 @@ translationStatus: complete
 > を
 >  /home/maintenance/httpd.conf
 >
-> おそらくこの後Apacheの再起動が必要です。
+> おそらくこの後Apacheの再起動が必要だ。
 > (apache2ctl graceful)
 
+<!-- speaker: Martti Malmi -->
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

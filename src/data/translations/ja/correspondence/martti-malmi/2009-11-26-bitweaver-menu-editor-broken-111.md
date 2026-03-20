@@ -25,6 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 Bitweaverのメニューエディタが壊れていて、フォーラムのリンクを変更できない。「create and edit menu items」のページが私の環境では空白で表示される：
 
 http://bitcoin.sourceforge.net/nexus/menu_items.php?menu_id=2

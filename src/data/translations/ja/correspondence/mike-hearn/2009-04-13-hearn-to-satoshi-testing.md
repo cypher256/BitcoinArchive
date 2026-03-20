@@ -27,6 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- speaker: Mike Hearn -->
 Satoshiさん、ありがとう。
 
 昨日アプリを試してみた。Wine上でかなりうまく動いているようだ（MacOSで試したが、Linuxでも動くはずなので、来週仕事に戻ったら試してみる）。
