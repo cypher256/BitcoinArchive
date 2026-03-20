@@ -27,6 +27,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 translationStatus: complete
 ---
+<!-- tone-skip -->
 
 *サイファーパンクメーリングリストより、1998年11月26日：*
 

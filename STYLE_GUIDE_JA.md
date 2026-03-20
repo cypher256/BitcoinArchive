@@ -34,16 +34,31 @@ Use katakana for person names in Japanese-facing editorial elements:
 
 ## What Stays In The Original Language
 
-Do not force katakana in the following cases:
+Do not force katakana in the following cases — but **translate the content
+itself into Japanese**. This section is about name rendering within translated
+text, not about leaving entire passages in English.
 
-- Direct quotes
-- Primary-source text such as emails, forum posts, and letters
+- Person names inside direct quotes — keep in original form unless the
+  surrounding text already uses katakana for the same person
 - Source titles and publication names
 - Organization, product, and project names when the original form is more
   natural
 - Handles, pseudonyms, and brand-like identifiers
   - examples: `Cobra`, `theymos`, `COPA`, `Twitter`
 - Slugs, URLs, file paths, and structured metadata fields
+
+## Translation Completeness
+
+All text on Japanese pages must be in Japanese, including quoted material.
+The site provides language switching — users who want the English original
+can switch to the English version. Do not leave English passages untranslated
+in Japanese entries.
+
+- Quoted emails, forum posts, and letters → translate into Japanese
+- Blockquoted excerpts in aftermath/narrative entries → translate into Japanese
+- Only preserve English for: URLs, code, commands, email headers, file paths,
+  and similar technical strings where the original form is functionally
+  necessary
 
 ## Quotes And Blockquotes
 

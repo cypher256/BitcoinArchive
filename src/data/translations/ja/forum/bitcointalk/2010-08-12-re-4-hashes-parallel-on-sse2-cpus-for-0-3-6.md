@@ -28,6 +28,7 @@ Core i5            200%向上（nelisky）<br>
 Core i5            100%向上（vess）<br>
 AMD Opteron    105%向上
 
+<!-- tone-skip -->
 aceat64:
 私のシステムは約7100から約4200に低下しました。
 このシステムはデュアルIntel Xeon Quad-Core CPU（E5335）@ 2.00GHzです。
@@ -41,3 +42,4 @@ i5は約200%向上しました、
 
 impossible7:
 AMD Opteron 2374 HEでx86_64 Linuxを実行したところ、105%向上しました（！）
+<!-- /tone-skip -->

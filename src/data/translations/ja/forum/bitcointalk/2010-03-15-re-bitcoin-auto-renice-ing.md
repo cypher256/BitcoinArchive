@@ -25,6 +25,7 @@ translationStatus: complete
 
 Windowsの優先度から変換された優先度は、おそらく以下のようなテーブルに基づいている：
 
+<!-- tone-skip -->
    「以下のテーブルはnice値とWin32優先度の対応を示しています。Win32の優先度に関する詳細はSetThreadPriority()のWin32ドキュメントを参照してください。
 
 nice値        Win32優先度
@@ -33,6 +34,7 @@ nice値        Win32優先度
 -5 to +4    THREAD_PRIORITY_NORMAL
 +5 to +14    THREAD_PRIORITY_BELOW_NORMAL
 +15 to +19    THREAD_PRIORITY_LOWEST」
+<!-- /tone-skip -->
 
 より良い値があれば、提案を歓迎する。
 

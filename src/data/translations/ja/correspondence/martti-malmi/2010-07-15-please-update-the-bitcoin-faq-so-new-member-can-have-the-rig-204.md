@@ -24,6 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 -------- Original Message --------<br>
 Subject: 	Please update the bitcoin FAQ so new member can have the right
 info<br>

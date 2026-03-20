@@ -15,9 +15,11 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 [Quote from: Olipro on July 26, 2010, 06:39:17 AM](https://bitcointalk.org/index.php?topic=501.msg5815#msg5815)SHAコンテキストのキャッシュ部分はtcatmの功績です -- これは見事なパフォーマンスを提供します。さらに、Intelコンパイラはここで真価を発揮し、その並列化能力がVisual Studioに対して大幅なパフォーマンス向上をもたらしています。
 
 パフォーマンス: 4コアで4700khash/s、これは結果が物語っていると思います。
 
 VSとIntelの両方のビルドを含めましたが、比較になりません。IntelビルドはVSを完全に凌駕しています。
+<!-- /tone-skip -->
 まだCrypto++をベースにしているか？これをメインのソースコードに取り込もう。

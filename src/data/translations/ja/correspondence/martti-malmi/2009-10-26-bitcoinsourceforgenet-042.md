@@ -27,6 +27,7 @@ translationStatus: complete
 何が起きているか分かる？自分が見るたびに正常なんだけど。
 
 
+<!-- tone-skip -->
 Eugen Leitl の書き込み:
 On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
  > > bitcoin.sourceforge.netは今は正常に見える。SourceForgeが
@@ -51,5 +52,6 @@ Liberty Standard の書き込み:
  >     * To hide this message, please set the IS_LIVE constant to TRUE
 in your
  > kernel/config_inc.php file.
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -26,8 +26,10 @@ translationStatus: complete
 
 ここで起きた混乱を軽減できるだろう：
 
+<!-- tone-skip -->
 [Quote from: kencausey on August 15, 2010, 11:45:26 PM](https://bitcointalk.org/index.php?topic=823.msg9588#msg9588)[Quote from: davidonpda on August 15, 2010, 11:31:37 PM](https://bitcointalk.org/index.php?topic=823.msg9580#msg9580)... すでにブロック74638にいます。そのブロックは今は正しいものだということでしょうか？
 
 私自身もこの件で混乱があり、#bitcoin-devで明確化してもらいました：
 
 不正なブロックは番号74638で、最後の正しいブロックは74637でした。番号は0から始まるので、クライアントに74638ブロックと表示されている場合、ブロック番号74637まで持っていることを意味し、それが最後の正しいブロックです。
+<!-- /tone-skip -->

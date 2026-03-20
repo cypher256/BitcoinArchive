@@ -17,5 +17,7 @@ threadPosition: 4
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 [dkaparis、2010年6月27日 午後10:02:25の引用](https://bitcointalk.org/index.php?topic=199.msg1842#msg1842)関連して、Visual C++でコンパイル可能ですか？余裕ができたら試してみたいと思っています。
+<!-- /tone-skip -->
 可能だが、生成速度は2倍以上遅くなる。

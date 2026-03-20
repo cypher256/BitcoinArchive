@@ -33,6 +33,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/29/"
 translationStatus: complete
 ---
+<!-- tone-skip -->
 
 マルッティ・マルミ（1988年、フィンランド・ヘルシンキ生まれ）は、ビットコインの最も初期かつ重要な貢献者の一人となったソフトウェア開発者である。Helsinki University of Technology（現Aalto University）でコンピューターサイエンスを学んだ。
 

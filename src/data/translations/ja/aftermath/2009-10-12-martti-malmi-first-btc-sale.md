@@ -25,6 +25,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
 translationStatus: complete
 ---
+<!-- tone-skip -->
 
 2009年10月12日、マルッティ・マルミはNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した — ビットコインと法定通貨の最初の既知の交換である。
 
