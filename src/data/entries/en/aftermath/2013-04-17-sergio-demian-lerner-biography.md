@@ -1,7 +1,8 @@
 ---
 title: "Sergio Demian Lerner (1972–) — Blockchain researcher who discovered the Patoshi mining pattern"
 date: 2013-04-17T00:00:00Z
-source: aftermath
+type: "biography"
+source: "bitslog"
 sourceUrl: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
 author: "Sergio Demian Lerner"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Sergio Demian Lerner: Argentine cryptographer and blockchain researcher who conducted the most significant blockchain forensic analysis in Bitcoin's history — the 'Patoshi' analysis. His work identified a single dominant miner in Bitcoin's earliest blocks, attributed to Satoshi Nakamoto, who accumulated approximately 1.1 million BTC and never spent them."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "sergio-demian-lerner"
   - "biography"

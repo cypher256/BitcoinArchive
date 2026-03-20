@@ -1,7 +1,8 @@
 ---
 title: "ビル・フランツ（生没年不明） — ビットコインの初期セキュリティ議論に参加したセキュリティコンサルタント"
 date: 2009-01-24T23:22:21Z
-source: aftermath
+type: "biography"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015038.html"
 author: "Bill Frantz"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "ビル・フランツ：Periwinkle（pwpconsult.com）のセキュリティコンサルタント。2009年1月、暗号学メーリングリストのビットコイン議論に参加し、ボットネットに支配されたマシンが「ネットワーク上で最もセキュアである」という皮肉な観察を行った。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "bill-frantz"
   - "biography"

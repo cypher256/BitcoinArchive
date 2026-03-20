@@ -1,7 +1,8 @@
 ---
 title: "Re: Payment server"
 date: 2010-01-28T23:26:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=29.msg172#msg172"
 author: "Satoshi Nakamoto"
 participants:

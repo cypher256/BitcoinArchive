@@ -1,7 +1,8 @@
 ---
 title: "FTX files for bankruptcy — $8 billion in customer funds missing"
 date: 2022-11-11T00:00:00Z
-source: aftermath
+type: "article"
+source: "cnbc"
 sourceUrl: "https://www.cnbc.com/2022/11/11/sam-bankman-frieds-cryptocurrency-exchange-ftx-files-for-bankruptcy.html"
 author: "CNBC"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "sam-bankman-fried"
 description: "FTX, the world's second-largest cryptocurrency exchange, filed for Chapter 11 bankruptcy. Founder Sam Bankman-Fried resigned as CEO. Approximately $8 billion in customer funds had been misappropriated. SBF was later convicted on all seven criminal counts and sentenced to 25 years in prison."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "ftx"
   - "sam-bankman-fried"

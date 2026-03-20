@@ -1,7 +1,8 @@
 ---
 title: "ハル・フィニーのRPOWがビットコインの先駆けとして没後に再評価される"
 date: 2019-08-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "nakamotoinstitute"
 sourceUrl: "https://nakamotoinstitute.org/finney/rpow/"
 author: "Satoshi Nakamoto Institute"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "hal-finney"
 description: "2004年に開発されたハル・フィニーの再利用可能プルーフ・オブ・ワーク（RPOW）システムが、ビットコインの最も重要な直接の先駆けの一つとして没後に再評価される。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "rpow"

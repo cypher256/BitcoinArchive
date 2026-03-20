@@ -1,7 +1,8 @@
 ---
 title: "\"Bitcoin, what took ye so long?\" (Nick Szabo)"
 date: 2011-05-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "unenumerated"
 sourceUrl: "https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html"
 author: "Nick Szabo"
 participants:
@@ -15,7 +16,6 @@ participants:
     slug: "hal-finney"
 description: "Nick Szabo discusses why Bitcoin took so long to be invented, the similarities and differences between bit gold and Bitcoin, and why 'nearly everybody who heard the general idea thought it was a very bad idea.'"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "nick-szabo"
   - "bit-gold"

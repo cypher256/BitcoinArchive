@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイによるb-moneyの初出アナウンス（PipeNet 1.1と同時）"
 date: 1998-11-26T00:00:00Z
-source: aftermath
+type: "article"
+source: "cypherpunks-mailing-list"
 sourceUrl: "http://cypherpunks.venona.com/archive/1998/11/msg00941.html"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "サイファーパンクメーリングリストにおけるウェイ・ダイのb-money初出アナウンス。注目すべきは、b-moneyがPipeNet 1.1（匿名ルーティングプロトコル）の付随的な項目として言及されたことだ。後にビットコインのインスピレーションとなるb-moneyの提案は、投稿末尾のわずか一文で紹介された。"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "wei-dai"
   - "b-money"

@@ -1,7 +1,8 @@
 ---
 title: "BitDNSとBitcoinの汎用化"
 date: 2010-11-14T18:02:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg22019#msg22019"
 author: "appamatto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Setting up multiple bitcoin machines behind NAT"
 date: 2010-02-16T01:34:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=54.msg360#msg360"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "大衆向けOpenCLマイナー"
 date: 2010-10-01T09:21:59.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1334.msg14875#msg14875"
 author: "m0mchil"
 participants:

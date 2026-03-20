@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoins are not free"
 date: 2009-12-05T15:38:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2.msg26#msg26"
 author: "Satoshi Nakamoto"
 participants:

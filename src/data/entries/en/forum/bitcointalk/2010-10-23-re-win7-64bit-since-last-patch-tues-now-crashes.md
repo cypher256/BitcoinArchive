@@ -1,7 +1,8 @@
 ---
 title: "Re: Win7 64bit since last patch Tues now crashes"
 date: 2010-10-23T18:52:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1540.msg18246#msg18246"
 author: "Satoshi Nakamoto"
 participants:

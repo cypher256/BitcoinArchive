@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン v0.1 リリース - スパム、POWトークン、リバース・スパミング"
 date: 2009-01-25T10:03:21Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

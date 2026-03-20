@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai announces Disperse/Collect, built from his own Crypto++ library"
 date: 1996-02-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "cypherpunks-mailing-list"
 sourceUrl: "http://cypherpunks.venona.com/archive/1996/02/msg00444.html"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "Wei Dai's announcement of Disperse/Collect version 1.0 on the Cypherpunks mailing list. This post explicitly references 'my own Crypto++ library,' confirming that Dai was not only a theorist but an active, prolific coder who built and shipped software. This context is essential for understanding why he later chose not to implement b-money."
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "wei-dai"
   - "crypto-plus-plus"

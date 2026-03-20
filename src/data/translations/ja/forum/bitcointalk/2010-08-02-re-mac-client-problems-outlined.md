@@ -1,7 +1,8 @@
 ---
 title: "Re: Macクライアントの問題点..."
 date: 2010-08-02T18:02:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=660.msg7068#msg7068"
 author: "Satoshi Nakamoto"
 participants:

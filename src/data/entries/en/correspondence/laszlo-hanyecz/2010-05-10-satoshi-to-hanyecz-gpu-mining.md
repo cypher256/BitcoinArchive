@@ -1,7 +1,8 @@
 ---
 title: "GPU mining concerns"
 date: 2010-05-10T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: 初期ブロックダウンロードの高速化"
 date: 2010-07-23T20:13:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=550.msg5378#msg5378"
 author: "Satoshi Nakamoto"
 participants:

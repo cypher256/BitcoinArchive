@@ -1,7 +1,8 @@
 ---
 title: "Mike Hearn testifies in COPA v Wright: 'I didn't get the sense I was talking to Satoshi'"
 date: 2024-02-22T00:00:00Z
-source: aftermath
+type: "court-document"
+source: "bitcoin-defense"
 sourceUrl: "https://bitcoindefense.org/assets/documents/First-Witness-Statement-of-Michael-Christopher-Hearn.pdf"
 author: "Mike Hearn"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "craig-wright"
 description: "Mike Hearn testifies at the COPA v. Craig Wright trial, recounting his direct interactions with Satoshi Nakamoto and describing how Craig Wright failed his technical 'check questions' at a 2016 dinner. He concludes that Wright lacked the clarity of thought present in Satoshi's emails."
 isSatoshi: false
-aftermathType: "court-testimony"
 tags:
   - "mike-hearn"
   - "copa-trial"

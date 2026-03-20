@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Faucet and early collaboration"
 date: 2010-06-11T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 author: "Gavin Andresen"
 participants:

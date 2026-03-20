@@ -1,7 +1,8 @@
 ---
 title: "A proposal for a semi-automated Escrow mechanism"
 date: 2010-07-30T10:29:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=645.msg6704#msg6704"
 author: "Olipro"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "ギャビン・アンドレセンがサトシとの共同作業を回顧"
 date: 2016-05-02T00:00:00Z
-source: aftermath
+type: "article"
+source: "gavin-andresen-blog"
 sourceUrl: "https://gavinthink.blogspot.com/"
 author: "Gavin Andresen"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシからビットコインのコミット権限を与えられリード開発者となったギャビン・アンドレセンが、サトシとの交流とリーダーシップの移行を回顧する。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "gavin-andresen"
   - "leadership"

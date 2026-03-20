@@ -1,7 +1,8 @@
 ---
 title: "Re: 64bit support"
 date: 2010-01-29T00:42:49.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=18.msg174#msg174"
 author: "Satoshi Nakamoto"
 participants:

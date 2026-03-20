@@ -1,7 +1,8 @@
 ---
 title: "トランザクション/スパムフラッド攻撃が現在進行中"
 date: 2010-11-19T10:02:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1850.msg22870#msg22870"
 author: "jgarzik"
 participants:

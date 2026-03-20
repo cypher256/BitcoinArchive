@@ -1,7 +1,8 @@
 ---
 title: "Re: Sourceforge tracker"
 date: 2009-12-07T11:49:08Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

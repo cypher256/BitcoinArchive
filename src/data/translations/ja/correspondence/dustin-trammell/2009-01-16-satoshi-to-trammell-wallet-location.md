@@ -1,7 +1,8 @@
 ---
 title: "Re: いくつかの考え... - ウォレットの保存場所とソケット修正"
 date: 2009-01-16T12:42:18Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

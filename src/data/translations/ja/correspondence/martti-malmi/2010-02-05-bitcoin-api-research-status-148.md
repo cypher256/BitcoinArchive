@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin API調査状況"
 date: 2010-02-05T04:08:54Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

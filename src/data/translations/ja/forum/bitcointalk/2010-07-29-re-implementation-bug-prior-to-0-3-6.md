@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.6以前の実装バグ"
 date: 2010-07-29T22:04:15.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=628.msg6508#msg6508"
 author: "Satoshi Nakamoto"
 participants:

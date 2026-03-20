@@ -1,7 +1,8 @@
 ---
 title: "Re: トランザクションを収集するインセンティブは何ですか？"
 date: 2010-06-15T23:41:29.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=165.msg1595#msg1595"
 author: "Satoshi Nakamoto"
 participants:

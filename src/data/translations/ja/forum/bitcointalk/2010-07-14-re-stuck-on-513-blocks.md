@@ -1,7 +1,8 @@
 ---
 title: "Re: 513ブロックで止まっている"
 date: 2010-07-14T18:02:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=305.msg2895#msg2895"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: JSON-RPC Multiple Invocations"
 date: 2010-07-24T00:59:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=528.msg5416#msg5416"
 author: "Satoshi Nakamoto"
 participants:

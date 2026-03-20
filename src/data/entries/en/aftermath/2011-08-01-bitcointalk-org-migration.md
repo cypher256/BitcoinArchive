@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Forum migrates from bitcoin.org/smf to bitcointalk.org"
 date: 2011-08-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Michael Marquardt"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "The Bitcoin Forum, originally set up by Martti Malmi at bitcoin.org/smf using Simple Machines Forum (SMF) software, migrated to the independent domain bitcointalk.org in August 2011. The migration was managed by forum administrator Theymos (Michael Marquardt) and preserved all existing posts, threads, and user accounts."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "bitcointalk"
   - "forum"

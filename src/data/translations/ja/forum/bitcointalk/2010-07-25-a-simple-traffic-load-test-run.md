@@ -1,7 +1,8 @@
 ---
 title: "シンプルなトラフィック負荷テストの実行"
 date: 2010-07-25T04:02:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=567.msg5685#msg5685"
 author: "lfm"
 participants:

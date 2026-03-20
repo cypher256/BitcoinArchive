@@ -1,7 +1,8 @@
 ---
 title: "Re: JSON-RPC status"
 date: 2010-02-13T01:08:42Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

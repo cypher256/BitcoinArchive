@@ -1,7 +1,8 @@
 ---
 title: "Re: ウェブサイトとソフトウェアの翻訳"
 date: 2010-10-04T01:44:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=151.msg15176#msg15176"
 author: "Satoshi Nakamoto"
 participants:

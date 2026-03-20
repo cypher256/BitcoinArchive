@@ -1,7 +1,8 @@
 ---
 title: "Re: 新しいgetwork"
 date: 2010-11-26T21:31:13.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1901.msg24708#msg24708"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Ray Dillinger (dates unknown) — Cryptographer who reviewed Bitcoin's code before its public release"
 date: 2008-11-06T05:14:37Z
-source: aftermath
+type: "biography"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216771.0"
 author: "Ray Dillinger"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "ray-dillinger"
 description: "Ray Dillinger (online handle 'bear' / 'cryddit'): Computer scientist who, along with Hal Finney, reviewed Satoshi Nakamoto's Bitcoin source code before its public release. He focused on security auditing and is credited with contributing to the origin of the 1 MB block size limit."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "ray-dillinger"
   - "biography"

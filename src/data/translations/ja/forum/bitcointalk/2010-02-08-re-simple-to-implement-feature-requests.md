@@ -1,7 +1,8 @@
 ---
 title: "Re: 実装が簡単な機能リクエスト"
 date: 2010-02-08T16:37:24.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=46.msg284#msg284"
 author: "Satoshi Nakamoto"
 participants:

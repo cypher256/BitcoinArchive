@@ -1,7 +1,8 @@
 ---
 title: "Re: バグ？ /usr/bin/bitcoind \"\""
 date: 2010-09-19T19:58:11.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1063.msg13211#msg13211"
 author: "Satoshi Nakamoto"
 participants:

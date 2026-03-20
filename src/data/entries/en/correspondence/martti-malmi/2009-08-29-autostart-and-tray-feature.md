@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin - Autostart and minimize-to-tray as must-have features"
 date: 2009-08-29T17:31:05Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

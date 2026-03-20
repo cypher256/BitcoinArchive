@@ -1,7 +1,8 @@
 ---
 title: "bitcoin.orgの障害の原因は？"
 date: 2010-12-02T22:00:56Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

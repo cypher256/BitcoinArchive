@@ -1,7 +1,8 @@
 ---
 title: "サトシからマルミへの最後のメール"
 date: 2011-02-22T19:49:19Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

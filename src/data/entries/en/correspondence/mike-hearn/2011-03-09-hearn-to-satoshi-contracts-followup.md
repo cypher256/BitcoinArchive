@@ -1,7 +1,8 @@
 ---
 title: "Contracts follow-up, publish/subscribe, and merged mining"
 date: 2011-03-09T17:39:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread4.html"
 author: "Mike Hearn"
 participants:

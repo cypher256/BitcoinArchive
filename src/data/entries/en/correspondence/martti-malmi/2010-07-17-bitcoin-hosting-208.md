@@ -1,7 +1,8 @@
 ---
 title: "Fwd: bitcoin hosting"
 date: 2010-07-17T23:21:45Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "エラー - 助けてください！"
 date: 2010-10-21T11:52:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1530.msg17947#msg17947"
 author: "Dhaw"
 participants:

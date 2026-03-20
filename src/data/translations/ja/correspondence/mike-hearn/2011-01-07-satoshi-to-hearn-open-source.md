@@ -1,7 +1,8 @@
 ---
 title: "初のクライアント専用実装"
 date: 2011-01-07T13:00:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Satoshi Nakamoto"
 participants:

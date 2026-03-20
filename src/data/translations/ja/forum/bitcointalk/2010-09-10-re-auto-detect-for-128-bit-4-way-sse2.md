@@ -1,7 +1,8 @@
 ---
 title: "Re: 128ビット4-way SSE2の自動検出"
 date: 2010-09-10T18:11:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1007.msg12372#msg12372"
 author: "Satoshi Nakamoto"
 participants:

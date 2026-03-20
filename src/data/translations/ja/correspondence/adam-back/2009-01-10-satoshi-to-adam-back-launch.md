@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin v0.1ローンチのアダム・バックへの通知"
 date: 2009-01-10T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 author: "Satoshi Nakamoto"
 participants:

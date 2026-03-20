@@ -58,7 +58,7 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
-const nonBio = filtered.filter((e) => e.data.aftermathType !== 'biography');
+const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
 const lifeDatesRaw = lifeDatesMatch ? lifeDatesMatch[0] : null;

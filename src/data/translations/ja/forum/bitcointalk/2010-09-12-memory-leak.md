@@ -1,7 +1,8 @@
 ---
 title: "メモリリーク"
 date: 2010-09-12T20:51:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1023.msg12522#msg12522"
 author: "eurekafag"
 participants:

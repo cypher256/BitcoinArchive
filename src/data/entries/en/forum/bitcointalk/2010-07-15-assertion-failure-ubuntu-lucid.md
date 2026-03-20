@@ -1,7 +1,8 @@
 ---
 title: "Assertion Failure - Ubuntu Lucid"
 date: 2010-07-15T19:30:15.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=400.msg3384#msg3384"
 author: "singpolyma"
 participants:

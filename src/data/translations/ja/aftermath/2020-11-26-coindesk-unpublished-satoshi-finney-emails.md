@@ -1,7 +1,8 @@
 ---
 title: "サトシとフィニーの未公開メールが明らかに"
 date: 2020-11-26T17:03:00Z
-source: aftermath
+type: "article"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Michael Kapilkov"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "fran-finney"
 description: "CoinDeskがサトシ・ナカモトとハル・フィニーの間の未公開メールを公表した。ハルの未亡人フラン・フィニーを通じてハルのパーソナルコンピュータから入手されたもので、2008年11月のフィニーによるネットワーク拡張性の質問、2009年1月8日のサトシによるv0.1リリース個人通知、サトシが外部接続を受信できないと述べたフォローアップが含まれていた。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "satoshi-finney-emails"
   - "unpublished"

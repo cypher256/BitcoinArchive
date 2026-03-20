@@ -1,7 +1,8 @@
 ---
 title: "Re: PC World Article on Bitcoin"
 date: 2010-12-11T23:39:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280"
 author: "Satoshi Nakamoto"
 participants:

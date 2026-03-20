@@ -1,7 +1,8 @@
 ---
 title: "Re: Version 0.3.11 with upgrade alerts"
 date: 2010-08-28T14:54:04.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=941.msg11505#msg11505"
 author: "Satoshi Nakamoto"
 participants:

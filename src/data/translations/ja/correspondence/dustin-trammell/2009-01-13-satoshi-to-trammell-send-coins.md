@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン v0.1 リリース - コイン送付の申し出"
 date: 2009-01-13T01:55:00Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

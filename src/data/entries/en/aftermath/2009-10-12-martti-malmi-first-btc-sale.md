@@ -1,7 +1,8 @@
 ---
 title: "First Bitcoin sale for fiat — Martti Malmi sells 5,050 BTC for $5.02"
 date: 2009-10-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcoin-com-forum"
 sourceUrl: "https://forum.bitcoin.com/ama-ask-me-anything/i-m-martti-malmi-early-bitcoin-developer-and-the-original-founder-of-the-bitcointalk-org-forums-ama-t2770.html"
 author: "Martti Malmi"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "newlibertystandard"
 description: "Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency. The transaction established a real-world price of approximately $0.001 per BTC."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "martti-malmi"
   - "newlibertystandard"

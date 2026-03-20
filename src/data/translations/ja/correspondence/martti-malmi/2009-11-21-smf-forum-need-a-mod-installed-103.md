@@ -1,7 +1,8 @@
 ---
 title: "Re: SMFフォーラム、MODのインストールが必要"
 date: 2009-11-21T07:02:20Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin and me (Hal Finney)"
 date: 2013-03-19T20:40:02Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=155054.msg1643833#msg1643833"
 author: "Hal Finney"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Hal Finney's famous retrospective on his early involvement with Bitcoin, his interactions with Satoshi, and his battle with ALS. One of the most celebrated posts in Bitcoin history."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "first-transaction"

@@ -1,7 +1,8 @@
 ---
 title: "Re: Linux build ready for testing"
 date: 2009-11-09T19:41:11Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

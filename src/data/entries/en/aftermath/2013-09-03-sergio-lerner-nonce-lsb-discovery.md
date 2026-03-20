@@ -1,7 +1,8 @@
 ---
 title: "Sergio Demian Lerner discovers a second fingerprint in Satoshi's mining — the nonce LSB pattern"
 date: 2013-09-03T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitslog"
 sourceUrl: "https://bitslog.com/2013/09/03/new-mystery-about-satoshi/"
 author: "Sergio Demian Lerner"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "Five months after his initial ExtraNonce analysis, Lerner discovered that Satoshi's nonce values had a highly non-random least significant byte (LSB) distribution — restricted to values [0..9] and [19..58], approximately 50 out of 256 possible values. This second fingerprint, independent of ExtraNonce, proved Satoshi used custom mining software with parallelized nonce space partitioning."
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "patoshi"
   - "mining"

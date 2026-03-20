@@ -1,7 +1,8 @@
 ---
 title: "Re: [bitcoin-list] Bitcoin v0.1.5 released"
 date: 2009-03-04T16:59:12.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/21740046/"
 author: "Satoshi Nakamoto"
 participants:

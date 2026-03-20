@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoinの潜在的な弱点に関する個別の議論はどこですか"
 date: 2010-08-11T22:40:25.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=788.msg8804#msg8804"
 author: "Satoshi Nakamoto"
 participants:

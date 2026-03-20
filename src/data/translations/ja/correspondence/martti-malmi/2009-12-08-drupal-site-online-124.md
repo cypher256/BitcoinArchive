@@ -1,7 +1,8 @@
 ---
 title: "Drupalサイトが公開"
 date: 2009-12-08T05:43:33Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

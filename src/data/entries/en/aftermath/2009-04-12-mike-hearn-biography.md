@@ -1,7 +1,8 @@
 ---
 title: "Mike Hearn (dates unknown) — Google engineer who became an early Bitcoin contributor and corresponded with Satoshi"
 date: 2009-04-12T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Mike_Hearn"
 author: "Mike Hearn"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "mike-hearn"
 description: "Mike Hearn: Software engineer who worked at Google on Maps, Earth, and Gmail anti-spam systems. He contacted Satoshi Nakamoto in April 2009 after reading the Bitcoin white paper and became one of the earliest contributors. He later developed BitcoinJ, the first major alternative implementation, and in 2017 his email correspondence with Satoshi was made public."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "mike-hearn"
   - "biography"

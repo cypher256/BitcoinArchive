@@ -1,7 +1,8 @@
 ---
 title: "Re: 技術的な説明"
 date: 2010-06-14T22:21:55.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=179.msg1588#msg1588"
 author: "Satoshi Nakamoto"
 participants:

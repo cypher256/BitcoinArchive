@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.0 rc1 簡易ダウンロードリンク"
 date: 2010-06-22T18:51:21Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

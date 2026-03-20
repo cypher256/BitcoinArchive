@@ -1,7 +1,8 @@
 ---
 title: "Re: アラートシステムの開発"
 date: 2010-08-24T23:51:12.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=898.msg11074#msg11074"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin 0.3.1 released"
 date: 2010-07-16T21:06:57.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=383.msg3590#msg3590"
 author: "Satoshi Nakamoto"
 participants:

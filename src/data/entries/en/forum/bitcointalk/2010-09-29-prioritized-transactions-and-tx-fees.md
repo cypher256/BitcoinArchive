@@ -1,7 +1,8 @@
 ---
 title: "Prioritized transactions, and tx fees"
 date: 2010-09-29T11:13:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1314.msg14616#msg14616"
 author: "jgarzik"
 participants:

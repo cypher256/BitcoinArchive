@@ -1,7 +1,8 @@
 ---
 title: "Re: Automated nightly builds"
 date: 2010-12-09T18:28:45.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=644.msg28643#msg28643"
 author: "Satoshi Nakamoto"
 participants:

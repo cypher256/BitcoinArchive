@@ -1,7 +1,8 @@
 ---
 title: "Re: How divisible are bitcoins and other market/economic questions"
 date: 2010-02-06T23:25:53.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=44.msg267#msg267"
 author: "Satoshi Nakamoto"
 participants:

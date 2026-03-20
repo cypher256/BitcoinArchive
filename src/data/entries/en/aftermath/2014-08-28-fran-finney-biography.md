@@ -1,7 +1,8 @@
 ---
 title: "Fran Finney (dates unknown) — Wife of Hal Finney and guardian of his legacy"
 date: 2014-08-28T00:00:00Z
-source: aftermath
+type: "biography"
+source: "alcor"
 sourceUrl: "https://www.alcor.org/resources/blog/member-patient-profile-hal-finney/"
 author: "Cryonics Magazine"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "Fran Finney: Wife of Hal Finney, the first person other than Satoshi to run Bitcoin. She witnessed Bitcoin's earliest moments firsthand, cared for Hal through his ALS diagnosis, and became the primary keeper of his legacy after his death and cryopreservation in 2014."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "fran-finney"
   - "hal-finney"

@@ -1,7 +1,8 @@
 ---
 title: "Whale Alert publishes 'The Satoshi Fortune' — independent analysis confirms ~1.125 million BTC"
 date: 2020-07-20T00:00:00Z
-source: aftermath
+type: "article"
+source: "medium"
 sourceUrl: "https://whale-alert.medium.com/the-satoshi-fortune-e49cf73f9a9b"
 author: "Whale Alert"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "Blockchain tracking service Whale Alert published an independent analysis confirming Satoshi mined 1,125,150 BTC across 22,503 of the first 54,316 blocks. The report found Satoshi maintained approximately 60% hashrate using ~48 computers, deliberately throttling to protect the network rather than maximize profit."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "patoshi"
   - "mining"

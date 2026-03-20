@@ -1,7 +1,8 @@
 ---
 title: "Re: Questions about Addresses"
 date: 2010-02-05T19:44:46.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=34.msg250#msg250"
 author: "Satoshi Nakamoto"
 participants:

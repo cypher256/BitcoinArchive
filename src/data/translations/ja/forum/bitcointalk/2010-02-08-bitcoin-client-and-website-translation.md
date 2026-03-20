@@ -1,7 +1,8 @@
 ---
 title: "Bitcoinクライアントとウェブサイトの翻訳"
 date: 2010-02-08T01:27:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=47.msg279#msg279"
 author: "Satoshi Nakamoto"
 participants:

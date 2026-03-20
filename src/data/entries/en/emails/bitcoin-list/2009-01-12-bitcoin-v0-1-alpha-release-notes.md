@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin v0.1 Alpha release notes"
 date: 2009-01-12T20:20:47.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/21312004/"
 author: "Satoshi Nakamoto"
 participants:

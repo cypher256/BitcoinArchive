@@ -1,7 +1,8 @@
 ---
 title: "Re: Fwd: Bitcoin question"
 date: 2011-01-25T18:34:03Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

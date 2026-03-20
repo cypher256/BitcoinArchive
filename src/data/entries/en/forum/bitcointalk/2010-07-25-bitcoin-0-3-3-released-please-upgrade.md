@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin 0.3.3 released -- PLEASE UPGRADE"
 date: 2010-07-25T16:55:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=570.msg5707#msg5707"
 author: "Satoshi Nakamoto"
 participants:

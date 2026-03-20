@@ -1,7 +1,8 @@
 ---
 title: "Re: 提案ではなく"
 date: 2010-08-11T21:07:59.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg8798#msg8798"
 author: "Satoshi Nakamoto"
 participants:

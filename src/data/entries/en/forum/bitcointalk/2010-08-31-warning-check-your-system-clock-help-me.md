@@ -1,7 +1,8 @@
 ---
 title: "Warning : Check your system clock (help me)"
 date: 2010-08-31T03:55:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=960.msg11773#msg11773"
 author: "icaro"
 participants:

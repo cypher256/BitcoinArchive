@@ -1,7 +1,8 @@
 ---
 title: "レイ・ディリンジャー（生没年不明） — ビットコインの公開リリース前にコードをレビューした暗号学者"
 date: 2008-11-06T05:14:37Z
-source: aftermath
+type: "biography"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2216771.0"
 author: "Ray Dillinger"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "ray-dillinger"
 description: "レイ・ディリンジャー（オンラインハンドル名「bear」/「cryddit」）：ハル・フィニーとともに、サトシ・ナカモトのビットコインソースコードを公開リリース前にレビューしたコンピューターサイエンティスト。セキュリティ監査に注力し、1MBブロックサイズ制限の起源に貢献したとされる。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "ray-dillinger"
   - "biography"

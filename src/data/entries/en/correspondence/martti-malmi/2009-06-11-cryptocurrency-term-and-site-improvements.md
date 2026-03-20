@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin - The term 'cryptocurrency' and site improvements"
 date: 2009-06-11T21:24:25Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

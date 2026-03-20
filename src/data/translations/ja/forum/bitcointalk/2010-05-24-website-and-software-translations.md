@@ -1,7 +1,8 @@
 ---
 title: "ウェブサイト翻訳"
 date: 2010-05-24T02:56:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=151.msg1212#msg1212"
 author: "HostFat"
 participants:

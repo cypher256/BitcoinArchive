@@ -1,7 +1,8 @@
 ---
 title: "テストネットワークで行ったテスト、私の発見"
 date: 2010-11-05T14:44:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1668.msg20278#msg20278"
 author: "[deleted]"
 description: "元のスレッド開始投稿。内容は後に投稿者により削除された。"

@@ -1,7 +1,8 @@
 ---
 title: "Re: P2Pプロトコルへのデジタル決済の統合"
 date: 2010-08-22T23:57:32.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=890.msg10723#msg10723"
 author: "Satoshi Nakamoto"
 participants:

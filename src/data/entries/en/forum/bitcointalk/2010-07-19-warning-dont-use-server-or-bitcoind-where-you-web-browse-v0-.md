@@ -1,7 +1,8 @@
 ---
 title: "Warning: don't use -server or bitcoind where you web browse (v0.3.2 and lower)"
 date: 2010-07-19T16:01:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=479.msg4263#msg4263"
 author: "Satoshi Nakamoto"
 participants:

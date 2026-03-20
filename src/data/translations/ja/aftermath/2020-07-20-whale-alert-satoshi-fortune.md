@@ -1,7 +1,8 @@
 ---
 title: "Whale Alertが「The Satoshi Fortune」を発表 — 独立分析で約112.5万BTCを確認"
 date: 2020-07-20T00:00:00Z
-source: aftermath
+type: "article"
+source: "medium"
 sourceUrl: "https://whale-alert.medium.com/the-satoshi-fortune-e49cf73f9a9b"
 author: "Whale Alert"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "ブロックチェーン追跡サービスWhale Alertが独立した分析を発表し、サトシが最初の54,316ブロックのうち22,503ブロックで1,125,150 BTCをマイニングしたことを確認。約48台のコンピューターで約60%のハッシュレートを維持し、利益最大化ではなくネットワーク保護のために意図的に制限していたと結論。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "patoshi"
   - "mining"

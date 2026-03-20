@@ -1,7 +1,8 @@
 ---
 title: "セルジオ・デミアン・ラーナー（1972–） — Patoshiマイニングパターンを発見したブロックチェーン研究者"
 date: 2013-04-17T00:00:00Z
-source: aftermath
+type: "biography"
+source: "bitslog"
 sourceUrl: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
 author: "Sergio Demian Lerner"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "セルジオ・デミアン・ラーナー：アルゼンチンの暗号学者・ブロックチェーン研究者。ビットコイン史上最も重要なブロックチェーンフォレンジック分析——「Patoshi」分析——を行った。ビットコインの最初期のブロックにおける単一の支配的マイナーを特定し、サトシ・ナカモトに帰属するとされる約110万BTCを蓄積しながら一度も使用しなかったことを証明した。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "sergio-demian-lerner"
   - "biography"

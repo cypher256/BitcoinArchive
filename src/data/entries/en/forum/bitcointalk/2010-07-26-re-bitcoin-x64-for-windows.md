@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin x64 for Windows"
 date: 2010-07-26T18:41:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=501.msg5920#msg5920"
 author: "Satoshi Nakamoto"
 participants:

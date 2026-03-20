@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.8でBitcoin生成が壊れた？"
 date: 2010-08-09T18:50:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=753.msg8388#msg8388"
 author: "Satoshi Nakamoto"
 participants:

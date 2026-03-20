@@ -1,7 +1,8 @@
 ---
 title: "Re: オープンソースと信頼"
 date: 2010-02-06T19:46:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=70.msg549#msg549"
 author: "Satoshi Nakamoto"
 participants:

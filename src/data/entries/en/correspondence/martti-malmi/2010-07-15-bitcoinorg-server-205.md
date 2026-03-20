@@ -1,7 +1,8 @@
 ---
 title: "bitcoin.org server"
 date: 2010-07-15T20:00:12Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

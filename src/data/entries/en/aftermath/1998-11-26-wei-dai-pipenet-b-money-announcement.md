@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai's original b-money announcement alongside PipeNet 1.1"
 date: 1998-11-26T00:00:00Z
-source: aftermath
+type: "article"
+source: "cypherpunks-mailing-list"
 sourceUrl: "http://cypherpunks.venona.com/archive/1998/11/msg00941.html"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "Wei Dai's original announcement of b-money on the Cypherpunks mailing list. Notably, b-money was mentioned as a secondary item alongside PipeNet 1.1 — an anonymous routing protocol that was Dai's primary focus. The b-money proposal that would later inspire Bitcoin was introduced in a single sentence at the end of this post."
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "wei-dai"
   - "b-money"

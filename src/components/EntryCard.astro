@@ -19,15 +19,15 @@ interface Props {
   threadId?: string;
   threadCount?: number;
   participants?: Participant[];
-  aftermathType?: string;
+  entryType?: string;
   createdAt?: string;
   updatedAt?: string;
 }
 
-const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], aftermathType, createdAt, updatedAt } = Astro.props;
-const isBiography = aftermathType === 'biography';
+const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt } = Astro.props;
+const isBiography = entryType === 'biography';
 const t = useTranslations(lang);
-const sourceLabel = t(`source.${source}` as any) || source;
+const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(`source.${source}` as any) || source);
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)
   : localePath(`/entries/${id}/`, lang);
@@ -47,7 +47,7 @@ const displayAuthor = translateParticipantName(author, authorParticipant?.slug, 
   <a href={href} class="card-link">
     <div class="card-header">
       <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
-      <span class="source-badge">{sourceLabel}</span>
+      <span class="source-badge">{typeLabel}</span>
       {threadCount && threadCount >= 2 && (
         <span class="thread-badge">{threadCount} messages</span>
       )}

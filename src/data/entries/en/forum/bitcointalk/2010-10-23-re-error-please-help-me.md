@@ -1,7 +1,8 @@
 ---
 title: "Re: ERROR - PLEASE HELP ME!"
 date: 2010-10-23T18:22:49.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1530.msg18241#msg18241"
 author: "Satoshi Nakamoto"
 participants:

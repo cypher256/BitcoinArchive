@@ -1,7 +1,8 @@
 ---
 title: "resource hog"
 date: 2010-07-13T10:19:47.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=327.msg2624#msg2624"
 author: "andy_3_913"
 participants:

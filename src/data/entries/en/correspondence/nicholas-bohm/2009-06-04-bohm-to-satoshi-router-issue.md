@@ -1,7 +1,8 @@
 ---
 title: "Router issue — Bitcoin can't connect"
 date: 2009-06-04T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 author: "Nicholas Bohm"
 participants:

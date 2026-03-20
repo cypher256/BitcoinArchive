@@ -1,7 +1,8 @@
 ---
 title: "0.3.10.1 Question on where block should be"
 date: 2010-08-15T15:09:18.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=828.msg9601#msg9601"
 author: "[deleted]"
 participants:

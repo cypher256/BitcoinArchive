@@ -1,7 +1,8 @@
 ---
 title: "Value overflow事件 — Block 74638で1,840億BTCが生成される"
 date: 2010-08-15T18:08:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=822.0"
 author: "Jeff Garzik"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "gavin-andresen"
 description: "整数オーバーフローバグ（CVE-2010-5139）が悪用され、Block 74638の単一トランザクションで184,467,440,737.09551616 BTCが生成された。サトシ・ナカモトは発見から5時間以内に修正を公開し、修正チェーンは15時間以内に無効なチェーンを追い越した。ビットコイン史上最も深刻な危機だった。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "overflow-bug"
   - "block-74638"

@@ -1,7 +1,8 @@
 ---
 title: "Re: CentOS用Bitcoind x86バイナリ"
 date: 2010-08-03T21:05:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=685.msg7331#msg7331"
 author: "Satoshi Nakamoto"
 participants:

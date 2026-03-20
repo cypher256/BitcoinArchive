@@ -1,7 +1,8 @@
 ---
 title: "Re: Odd amount of generated coins"
 date: 2010-05-26T21:34:32.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=141.msg1260#msg1260"
 author: "Satoshi Nakamoto"
 participants:

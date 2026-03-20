@@ -1,7 +1,8 @@
 ---
 title: "Re: Building BitCoin Client completely Headless"
 date: 2010-06-26T21:06:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=171.msg1815#msg1815"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: IRCブートストラッピングについて"
 date: 2010-06-25T22:40:47.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=84.msg1781#msg1781"
 author: "Satoshi Nakamoto"
 participants:

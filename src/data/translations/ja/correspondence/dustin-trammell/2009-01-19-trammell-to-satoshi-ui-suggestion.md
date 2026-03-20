@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン送金 - UI表現の改善提案"
 date: 2009-01-19T19:58:23Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Dustin Trammell"
 participants:

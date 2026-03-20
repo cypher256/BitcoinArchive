@@ -1,7 +1,8 @@
 ---
 title: "James A. Donald (dates unknown) — Cryptographer who was the first to respond to the Bitcoin white paper"
 date: 2008-11-02T23:46:23Z
-source: aftermath
+type: "biography"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/James_A._Donald"
 author: "James A. Donald"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "james-donald"
 description: "James A. Donald: Cryptographer and libertarian commentator who was the first person to publicly respond to Satoshi Nakamoto's Bitcoin white paper on the cryptography mailing list on November 2, 2008. His technical skepticism about scalability prompted Satoshi to articulate key design decisions."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "james-donald"
   - "biography"

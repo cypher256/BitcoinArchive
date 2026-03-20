@@ -1,7 +1,8 @@
 ---
 title: "Re: ルーターの問題 —— ポート8333転送のアドバイス"
 date: 2009-06-05T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 author: "Satoshi Nakamoto"
 participants:

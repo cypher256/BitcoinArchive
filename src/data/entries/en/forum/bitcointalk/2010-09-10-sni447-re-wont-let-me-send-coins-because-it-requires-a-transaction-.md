@@ -1,7 +1,8 @@
 ---
 title: "Re: Won't let me send coins because it requires a transaction fee?"
 date: 2010-09-10T17:12:33.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1013.msg12368#msg12368"
 author: "Satoshi Nakamoto"
 participants:

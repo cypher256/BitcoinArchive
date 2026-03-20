@@ -1,7 +1,8 @@
 ---
 title: "PLOS ONEがPatoshiマイニング異常を確認する査読付き論文を掲載"
 date: 2021-09-30T00:00:00Z
-source: aftermath
+type: "article"
+source: "plos"
 sourceUrl: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
 author: "Maria Oskarsdottir"
 participants:
@@ -15,7 +16,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "レイキャビク大学の研究者がPatoshiパターンに関する最初の査読付き学術論文をPLOS ONEに発表。「P異常」（拡張Patoshi）と「Z異常」（ゼロノンス）の2つの独立したノンス異常を特定し、決定的な発見としてP異常が最初の64ブロック「すべて」に出現することを示した。これにはExtraNonce分析で非PatoshiとされていたBlock 12も含まれる。"
 isSatoshi: false
-aftermathType: "academic"
 tags:
   - "patoshi"
   - "mining"

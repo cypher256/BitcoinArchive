@@ -1,7 +1,8 @@
 ---
 title: "Re: アドレスに関する質問"
 date: 2010-02-04T00:07:07.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=34.msg222#msg222"
 author: "Satoshi Nakamoto"
 participants:

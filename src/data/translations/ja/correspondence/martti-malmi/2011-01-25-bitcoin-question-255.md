@@ -1,7 +1,8 @@
 ---
 title: "転送: Bitcoinに関する質問"
 date: 2011-01-25T07:25:12Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

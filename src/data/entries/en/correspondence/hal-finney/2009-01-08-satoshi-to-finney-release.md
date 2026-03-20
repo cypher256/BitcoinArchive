@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin v0.1 — personal notification to Hal Finney"
 date: 2009-01-08T20:54:55Z
-source: correspondence
+type: "correspondence"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"
 participants:

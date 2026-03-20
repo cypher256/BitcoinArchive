@@ -1,7 +1,8 @@
 ---
 title: "BitCoinに関する質問"
 date: 2009-04-18T15:08:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
 author: "Mike Hearn"
 participants:

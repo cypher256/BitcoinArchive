@@ -1,7 +1,8 @@
 ---
 title: "Bitweaverメニューエディタが壊れている"
 date: 2009-11-26T17:45:42Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

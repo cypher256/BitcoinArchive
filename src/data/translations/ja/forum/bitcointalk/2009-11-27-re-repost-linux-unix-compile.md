@@ -1,7 +1,8 @@
 ---
 title: "Re: 再投稿：Linux/UNIXコンパイル"
 date: 2009-11-27T17:27:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=9.msg37#msg37"
 author: "Satoshi Nakamoto"
 participants:

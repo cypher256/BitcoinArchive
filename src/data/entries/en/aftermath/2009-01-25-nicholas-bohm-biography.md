@@ -1,7 +1,8 @@
 ---
 title: "Nicholas Bohm (dates unknown) — Lawyer who reported early Bitcoin software issues"
 date: 2009-01-25T10:17:52Z
-source: aftermath
+type: "biography"
+source: "nakamotoinstitute"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/8/"
 author: "Nicholas Bohm"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "nicholas-bohm"
 description: "Nicholas Bohm: British commercial lawyer and electronic commerce policy adviser who reported problems running Bitcoin on the bitcoin-list mailing list in January 2009, prompting a direct response from Satoshi Nakamoto."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "nicholas-bohm"
   - "biography"

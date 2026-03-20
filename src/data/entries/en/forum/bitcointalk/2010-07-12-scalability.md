@@ -1,7 +1,8 @@
 ---
 title: "Scalability"
 date: 2010-07-12T02:36:17.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=286.msg2292#msg2292"
 author: "jib"
 participants:

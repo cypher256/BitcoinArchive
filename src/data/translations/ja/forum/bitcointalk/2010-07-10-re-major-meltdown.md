@@ -1,7 +1,8 @@
 ---
 title: "Re: 大規模なメルトダウン"
 date: 2010-07-10T13:36:17.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=202.msg2133#msg2133"
 author: "Satoshi Nakamoto"
 participants:

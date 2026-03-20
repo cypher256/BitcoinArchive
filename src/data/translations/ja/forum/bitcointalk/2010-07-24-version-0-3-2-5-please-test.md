@@ -1,7 +1,8 @@
 ---
 title: "バージョン 0.3.2.5 -- テストしてください！"
 date: 2010-07-24T03:32:52.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=556.msg5443#msg5443"
 author: "Satoshi Nakamoto"
 participants:

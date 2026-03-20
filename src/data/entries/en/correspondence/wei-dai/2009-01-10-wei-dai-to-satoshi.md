@@ -1,7 +1,8 @@
 ---
 title: "Re: Citation of your b-money page"
 date: 2009-01-10T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 author: "Wei Dai"
 participants:

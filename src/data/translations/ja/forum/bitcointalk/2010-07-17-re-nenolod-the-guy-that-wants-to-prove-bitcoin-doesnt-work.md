@@ -1,7 +1,8 @@
 ---
 title: "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
 date: 2010-07-17T16:56:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=431.msg3773#msg3773"
 author: "Satoshi Nakamoto"
 participants:

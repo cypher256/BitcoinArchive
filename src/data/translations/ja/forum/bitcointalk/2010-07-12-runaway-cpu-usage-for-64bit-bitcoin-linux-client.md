@@ -1,7 +1,8 @@
 ---
 title: "64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
 date: 2010-07-12T11:59:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=299.msg2378#msg2378"
 author: "knightmb"
 participants:

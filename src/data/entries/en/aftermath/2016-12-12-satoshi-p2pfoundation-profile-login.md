@@ -1,7 +1,8 @@
 ---
 title: "Satoshi Nakamoto's P2P Foundation profile shows login activity"
 date: 2016-12-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "p2pfoundation"
 sourceUrl: "http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
 author: "Unknown"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's P2P Foundation profile shows login activity in late 2016, years after the 'I am not Dorian Nakamoto' post in 2014, sparking renewed speculation about the account's security."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "satoshi-nakamoto"
   - "p2p-foundation"

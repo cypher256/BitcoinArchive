@@ -1,7 +1,8 @@
 ---
 title: "bitcoind without wxWidgets"
 date: 2010-07-26T17:23:33.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=576.msg5904#msg5904"
 author: "Satoshi Nakamoto"
 participants:

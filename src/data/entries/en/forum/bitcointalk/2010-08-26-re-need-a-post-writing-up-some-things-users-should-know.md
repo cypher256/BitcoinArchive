@@ -1,7 +1,8 @@
 ---
 title: "Re: Need a post writing up some things users should know"
 date: 2010-08-26T00:44:05.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=873.msg11227#msg11227"
 author: "Satoshi Nakamoto"
 participants:

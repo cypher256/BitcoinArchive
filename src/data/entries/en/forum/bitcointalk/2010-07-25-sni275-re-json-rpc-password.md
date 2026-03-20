@@ -1,7 +1,8 @@
 ---
 title: "Re: JSON-RPC password"
 date: 2010-07-25T21:51:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=461.msg5771#msg5771"
 author: "Satoshi Nakamoto"
 participants:

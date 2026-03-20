@@ -1,7 +1,8 @@
 ---
 title: "bitcoin generation broken in 0.3.8?  (64-bit)"
 date: 2010-08-07T18:06:59.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=753.msg8191#msg8191"
 author: "lfm"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: JSON-RPC method idea: list transactions newer than a given txid"
 date: 2010-12-09T00:12:17.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2151.msg28313#msg28313"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin Watchdog Service"
 date: 2010-08-13T17:09:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=691.msg9041#msg9041"
 author: "Satoshi Nakamoto"
 participants:

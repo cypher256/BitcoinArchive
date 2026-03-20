@@ -1,7 +1,8 @@
 ---
 title: "Win7 64bit 前回のパッチ火曜日以降クラッシュする"
 date: 2010-10-22T12:24:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1540.msg18105#msg18105"
 author: "Odin"
 participants:

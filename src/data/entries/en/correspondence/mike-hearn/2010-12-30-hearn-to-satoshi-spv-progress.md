@@ -1,7 +1,8 @@
 ---
 title: "SPV implementation progress"
 date: 2010-12-30T00:27:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Mike Hearn"
 participants:

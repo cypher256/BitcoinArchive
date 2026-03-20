@@ -1,7 +1,8 @@
 ---
 title: "Re: Running on a port other than 8333"
 date: 2010-09-12T17:40:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=589.msg12483#msg12483"
 author: "Satoshi Nakamoto"
 participants:

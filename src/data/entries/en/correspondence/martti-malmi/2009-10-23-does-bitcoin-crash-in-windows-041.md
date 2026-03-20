@@ -1,7 +1,8 @@
 ---
 title: "Re: [bitcoin-list] Does Bitcoin Crash in Windows?"
 date: 2009-10-23T23:55:06Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

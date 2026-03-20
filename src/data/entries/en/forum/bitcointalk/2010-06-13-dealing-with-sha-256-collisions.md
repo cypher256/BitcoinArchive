@@ -1,7 +1,8 @@
 ---
 title: "Dealing with SHA-256 Collisions"
 date: 2010-06-13T16:01:11.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=191.msg1555#msg1555"
 author: "lachesis"
 participants:

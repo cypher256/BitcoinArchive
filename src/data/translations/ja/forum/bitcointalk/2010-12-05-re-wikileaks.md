@@ -1,7 +1,8 @@
 ---
 title: "Re: WikiLeaksへのビットコイン寄付を歓迎しよう"
 date: 2010-12-05T09:08:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1735.msg26999#msg26999"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "BitcoinJ open-source release and protocol questions"
 date: 2011-03-07T14:13:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread4.html"
 author: "Mike Hearn"
 participants:

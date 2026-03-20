@@ -1,7 +1,8 @@
 ---
 title: "Mike Hearn publishes his email correspondence with Satoshi"
 date: 2017-08-11T00:00:00Z
-source: aftermath
+type: "article"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Mike Hearn publishes his private email correspondence with Satoshi Nakamoto, providing valuable insights into Satoshi's thinking about Bitcoin's technical future."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "mike-hearn"
   - "email-archive"

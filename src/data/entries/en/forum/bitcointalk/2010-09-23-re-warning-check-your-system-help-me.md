@@ -1,7 +1,8 @@
 ---
 title: "Re: Warning : Check your system ( Help me )"
 date: 2010-09-23T16:28:25.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=960.msg13833#msg13833"
 author: "Satoshi Nakamoto"
 participants:

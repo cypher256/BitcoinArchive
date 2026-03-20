@@ -1,7 +1,8 @@
 ---
 title: "Potential disaster scenario"
 date: 2010-08-14T03:43:54.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=813.msg9186#msg9186"
 author: "gebler"
 participants:

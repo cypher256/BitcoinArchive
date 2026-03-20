@@ -1,7 +1,8 @@
 ---
 title: "Re: CryptoPP Assertion Error"
 date: 2010-09-05T23:25:32.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=967.msg12062#msg12062"
 author: "Satoshi Nakamoto"
 participants:

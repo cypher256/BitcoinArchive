@@ -1,7 +1,8 @@
 ---
 title: "Re: 難易度"
 date: 2010-07-29T01:16:23.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=587.msg6301#msg6301"
 author: "Satoshi Nakamoto"
 participants:

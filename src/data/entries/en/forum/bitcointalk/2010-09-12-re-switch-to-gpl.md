@@ -1,7 +1,8 @@
 ---
 title: "Re: Switch to GPL"
 date: 2010-09-12T19:24:53.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=989.msg12494#msg12494"
 author: "Satoshi Nakamoto"
 participants:

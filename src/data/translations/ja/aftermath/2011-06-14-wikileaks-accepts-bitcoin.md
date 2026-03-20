@@ -1,7 +1,8 @@
 ---
 title: "WikiLeaksがビットコインでの寄付受付を開始"
 date: 2011-06-14T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://x.com/wikileaks/status/80774521350668288"
 author: "WikiLeaks"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "WikiLeaksがビットコインでの寄付受付を開始し、Bank of America、Visa、MasterCard、PayPal、Western Unionによる金融封鎖を回避した。サトシは6か月前にこれに警告を発し、政府の不要な注目をまだ未成熟なネットワークに集めることになると述べていた。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "wikileaks"
   - "julian-assange"

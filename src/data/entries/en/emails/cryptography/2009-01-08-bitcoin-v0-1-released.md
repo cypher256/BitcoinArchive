@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin v0.1 released"
 date: 2009-01-08T19:27:40Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html"
 author: "Satoshi Nakamoto"
 participants:

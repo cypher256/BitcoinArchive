@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin Transfer - Address book and multiple addresses"
 date: 2009-01-18T11:01:09Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

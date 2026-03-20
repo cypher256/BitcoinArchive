@@ -1,7 +1,8 @@
 ---
 title: "Using Bitcoin as collateral for abuse prevention"
 date: 2011-04-18T23:14:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread5.html"
 author: "Mike Hearn"
 participants:

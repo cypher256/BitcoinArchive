@@ -1,7 +1,8 @@
 ---
 title: "Re: What's with this odd generation?"
 date: 2010-02-12T03:08:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=48.msg316#msg316"
 author: "Satoshi Nakamoto"
 participants:

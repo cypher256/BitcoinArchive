@@ -1,7 +1,8 @@
 ---
 title: "linux-0.1.6-test3.tar.bz2 添付"
 date: 2009-11-12T05:37:58Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

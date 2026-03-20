@@ -1,7 +1,8 @@
 ---
 title: "Contracts wiki page, transaction replacement, and mining economics"
 date: 2011-04-20T13:55:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread5.html"
 author: "Mike Hearn"
 participants:

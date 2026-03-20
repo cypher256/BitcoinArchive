@@ -1,7 +1,8 @@
 ---
 title: "COPA裁判 — マルッティ・マルミが証言し、サトシとの260通のメールを公開"
 date: 2024-02-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "opencrypto"
 sourceUrl: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 author: "Martti Malmi"
 participants:
@@ -15,7 +16,6 @@ participants:
     slug: "adam-back"
 description: "COPA対クレイグ・ライト裁判の第13日、マルッティ・マルミがビデオリンクで証言し、2009年5月から2011年2月にかけてサトシ・ナカモトと交わした260通のメール（14万語）を提出した。完全なメールアーカイブはGitHubで公開された。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "copa-trial"
   - "martti-malmi"

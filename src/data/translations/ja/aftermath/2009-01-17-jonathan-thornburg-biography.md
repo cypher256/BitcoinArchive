@@ -1,7 +1,8 @@
 ---
 title: "ジョナサン・ソーンバーグ（生没年不明） — ビットコインに初期の懸念を提起した天体物理学者"
 date: 2009-01-17T16:49:45Z
-source: aftermath
+type: "biography"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015016.html"
 author: "Jonathan Thornburg"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ジョナサン・ソーンバーグ：インディアナ大学の天体物理学者。2009年1月17日、暗号学メーリングリストでビットコインに対する政府規制とボットネット悪用の懸念を提起した——ビットコインに対する最も初期の実質的な批判の一つ。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "jonathan-thornburg"
   - "biography"

@@ -1,7 +1,8 @@
 ---
 title: "\"Dying Outside\" — Hal Finney's essay on ALS and hope"
 date: 2009-10-05T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/bshZiaLefDejvPKuS/dying-outside"
 author: "Hal Finney"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "hal-finney"
 description: "Hal Finney's essay on LessWrong, written approximately two months after his ALS diagnosis in August 2009. Despite facing a terminal illness, Finney expressed hope and determination, dreaming of contributing to open-source software even from within an immobile body."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "als"

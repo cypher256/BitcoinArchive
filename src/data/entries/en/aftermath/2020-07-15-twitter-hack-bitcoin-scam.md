@@ -1,7 +1,8 @@
 ---
 title: "Major Twitter hack uses Bitcoin in largest social media security breach"
 date: 2020-07-15T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://blog.twitter.com/en_us/topics/company/2020/an-update-on-our-security-incident"
 author: "Twitter"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "twitter"
 description: "Hackers compromise high-profile Twitter accounts including Barack Obama, Joe Biden, Elon Musk, and Apple, posting Bitcoin scam messages in the largest security breach in the platform's history."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "twitter"
   - "hack"

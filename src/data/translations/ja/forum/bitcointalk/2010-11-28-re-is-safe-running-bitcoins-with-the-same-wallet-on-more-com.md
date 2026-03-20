@@ -1,7 +1,8 @@
 ---
 title: "Re: 複数のコンピュータで同じウォレットを同時に実行しても安全ですか？"
 date: 2010-11-28T18:06:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1986.msg25154#msg25154"
 author: "Satoshi Nakamoto"
 participants:

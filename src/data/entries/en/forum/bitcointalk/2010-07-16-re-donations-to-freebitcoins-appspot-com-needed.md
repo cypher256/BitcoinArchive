@@ -1,7 +1,8 @@
 ---
 title: "Re: Donations to freebitcoins.appspot.com needed!"
 date: 2010-07-16T02:02:07.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=295.msg3350#msg3350"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン - 後継者としてギャビン・アンドレセンを推薦"
 date: 2010-12-03T19:58:40Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

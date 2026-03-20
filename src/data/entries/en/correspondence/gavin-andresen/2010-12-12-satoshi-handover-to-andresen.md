@@ -1,7 +1,8 @@
 ---
 title: "Leadership transition and project management handover"
 date: 2010-12-12T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 author: "Gavin Andresen"
 participants:

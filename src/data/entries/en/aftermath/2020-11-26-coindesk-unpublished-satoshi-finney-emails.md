@@ -1,7 +1,8 @@
 ---
 title: "Previously unpublished Satoshi-Finney emails revealed"
 date: 2020-11-26T17:03:00Z
-source: aftermath
+type: "article"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Michael Kapilkov"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "fran-finney"
 description: "CoinDesk published previously unpublished emails between Satoshi Nakamoto and Hal Finney, obtained from Hal's personal computer via his widow Fran Finney. The emails included Finney asking Satoshi about network scalability in November 2008, Satoshi personally notifying Finney of the v0.1 release on January 8, 2009, and a follow-up where Satoshi mentioned being unable to receive incoming connections."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "satoshi-finney-emails"
   - "unpublished"

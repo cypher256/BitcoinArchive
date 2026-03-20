@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.13 RC1 for Windows, please test"
 date: 2010-10-01T00:32:46.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1322.msg14787#msg14787"
 author: "Satoshi Nakamoto"
 participants:

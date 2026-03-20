@@ -1,7 +1,8 @@
 ---
 title: "あなたのb-moneyページの引用について"
 date: 2008-08-22T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 author: "Satoshi Nakamoto"
 participants:

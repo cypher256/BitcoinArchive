@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Pizza Day — Laszlo Hanyecz buys two pizzas for 10,000 BTC"
 date: 2010-05-22T19:17:26Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=137.0"
 author: "Laszlo Hanyecz"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "jeremy-sturdivant"
 description: "Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas — the first purchase of a physical good with Bitcoin. The transaction, completed on May 22, 2010, is celebrated annually as 'Bitcoin Pizza Day.' At the time, 10,000 BTC was worth approximately $41."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "laszlo-hanyecz"
   - "pizza-day"

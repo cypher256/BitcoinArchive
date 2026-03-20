@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン銀行"
 date: 2010-09-30T22:53:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1364.msg15346#msg15346"
 author: "Satoshi Nakamoto"
 participants:

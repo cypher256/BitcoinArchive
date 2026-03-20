@@ -1,7 +1,8 @@
 ---
 title: "Re: 接続数は？"
 date: 2010-01-20T20:07:15.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=21.msg112#msg112"
 author: "Satoshi Nakamoto"
 participants:

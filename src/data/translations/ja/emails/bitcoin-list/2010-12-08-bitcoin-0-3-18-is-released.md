@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.3.18 リリース"
 date: 2010-12-08T23:11:55.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/26722835/"
 author: "Satoshi Nakamoto"
 participants:

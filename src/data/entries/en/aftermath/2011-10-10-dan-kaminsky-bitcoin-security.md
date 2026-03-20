@@ -1,7 +1,8 @@
 ---
 title: "Dan Kaminsky's Bitcoin security analysis"
 date: 2011-10-10T00:00:00Z
-source: aftermath
+type: "article"
+source: "new-yorker"
 sourceUrl: "https://www.newyorker.com/magazine/2011/10/10/the-crypto-currency"
 author: "Joshua Davis"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Renowned security researcher Dan Kaminsky attempted to find vulnerabilities in Bitcoin and failed. 'I came up with beautiful bugs. But every time I went after the code there was a line that addressed the problem.' He concluded: 'Either there's a team of people who worked on this, or this guy is a genius.'"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "dan-kaminsky"
   - "security"

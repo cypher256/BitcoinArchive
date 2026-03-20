@@ -1,7 +1,8 @@
 ---
 title: "Repost: How anonymous are bitcoins?"
 date: 2009-11-25T18:15:57.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=8.msg33#msg33"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Private email — scalability questions"
 date: 2008-11-19T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Hal Finney"
 participants:

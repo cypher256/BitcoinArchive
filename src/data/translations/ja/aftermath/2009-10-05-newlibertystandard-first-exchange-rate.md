@@ -1,7 +1,8 @@
 ---
 title: "ビットコイン初の為替レート — 1ドル = 1,309.03 BTC"
 date: 2009-10-05T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=42.0"
 author: "NewLibertyStandard"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "NewLibertyStandardがビットコイン史上初の為替レートを公開：1ドル = 1,309.03 BTC（1BTCあたり0.00764ドル）。レートはビットコインのマイニングに必要な電気代に基づいて計算された — 原始的だが歴史的に重要な、ビットコインに金銭的価値を初めて付与する試み。"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "newlibertystandard"
   - "exchange-rate"

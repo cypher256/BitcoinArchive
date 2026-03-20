@@ -1,7 +1,8 @@
 ---
 title: "Re: SMF forum, need a mod installed"
 date: 2009-11-21T10:50:00Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

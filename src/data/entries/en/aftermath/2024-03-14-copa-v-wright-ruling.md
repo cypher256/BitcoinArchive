@@ -1,7 +1,8 @@
 ---
 title: "COPA v Wright: Court rules Craig Wright is not Satoshi Nakamoto"
 date: 2024-03-14T00:00:00Z
-source: aftermath
+type: "court-document"
+source: "uk-judiciary"
 sourceUrl: "https://www.judiciary.uk/judgments/copa-v-wright/"
 author: "Justice Mellor"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "copa"
 description: "The UK High Court rules definitively that Craig Steven Wright is not Satoshi Nakamoto, finding that he fabricated evidence on a grand scale to support his false claim."
 isSatoshi: false
-aftermathType: "court-testimony"
 tags:
   - "craig-wright"
   - "copa"

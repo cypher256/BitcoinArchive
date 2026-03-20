@@ -1,7 +1,8 @@
 ---
 title: "Re: Money Transfer Regulations"
 date: 2010-03-03T04:28:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=69.msg614#msg614"
 author: "Satoshi Nakamoto"
 participants:

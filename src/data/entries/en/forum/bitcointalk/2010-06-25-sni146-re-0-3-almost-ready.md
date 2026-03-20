@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3 almost ready"
 date: 2010-06-25T14:10:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1769#msg1769"
 author: "Satoshi Nakamoto"
 participants:

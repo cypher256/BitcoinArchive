@@ -1,7 +1,8 @@
 ---
 title: "Re: URI-scheme for bitcoin"
 date: 2010-02-24T05:57:43.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=55.msg481#msg481"
 author: "Satoshi Nakamoto"
 participants:

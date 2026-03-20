@@ -1,7 +1,8 @@
 ---
 title: "Re: libcryptoの問題を抱える人向けの静的Linux x86_64バイナリ"
 date: 2010-07-15T14:33:04.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=326.msg3157#msg3157"
 author: "Satoshi Nakamoto"
 participants:

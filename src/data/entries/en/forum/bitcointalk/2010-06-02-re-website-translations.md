@@ -1,7 +1,8 @@
 ---
 title: "Re: Website translations"
 date: 2010-06-02T22:18:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=151.msg1324#msg1324"
 author: "Satoshi Nakamoto"
 participants:

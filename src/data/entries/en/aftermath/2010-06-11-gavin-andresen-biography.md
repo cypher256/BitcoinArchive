@@ -1,7 +1,8 @@
 ---
 title: "Gavin Andresen (1966–) — Software developer who became Bitcoin's lead maintainer after Satoshi's departure"
 date: 2010-06-11T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 author: "Gavin Andresen"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Gavin Andresen (born 1966): Software developer, founder of Wasabi Software, creator of the Bitcoin Faucet, and the person Satoshi Nakamoto chose to hand over project leadership. He was granted commit access to the Bitcoin repository and served as lead maintainer from 2011 to 2014."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "gavin-andresen"
   - "biography"

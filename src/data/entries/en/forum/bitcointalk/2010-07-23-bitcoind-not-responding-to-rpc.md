@@ -1,7 +1,8 @@
 ---
 title: "bitcoind not responding to RPC"
 date: 2010-07-23T03:29:48.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=548.msg5248#msg5248"
 author: "mtgox"
 participants:

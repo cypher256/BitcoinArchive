@@ -1,7 +1,8 @@
 ---
 title: "\"Crypto Currency\" — Forbes magazine article"
 date: 2011-04-20T00:00:00Z
-source: aftermath
+type: "article"
+source: "forbes"
 sourceUrl: "https://www.forbes.com/forbes/2011/0509/technology-psilocybin-bitcoins-gavin-andresen-crypto-currency.html"
 author: "Andy Greenberg"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "One of the first major print magazine articles about Bitcoin, published in Forbes. Andy Greenberg interviewed Gavin Andresen, who described Bitcoin as 'better gold than gold.' The article brought significant mainstream media attention and may have contributed to Satoshi's decision to withdraw from public communication."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "forbes"
   - "gavin-andresen"

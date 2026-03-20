@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.8にアップグレードしてください！"
 date: 2010-08-04T00:29:37.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=696.msg7381#msg7381"
 author: "Satoshi Nakamoto"
 participants:

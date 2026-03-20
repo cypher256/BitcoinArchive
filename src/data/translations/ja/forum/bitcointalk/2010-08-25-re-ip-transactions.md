@@ -1,7 +1,8 @@
 ---
 title: "Re: 接続制限"
 date: 2010-08-25T21:02:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=862.msg10143#msg10143"
 author: "Satoshi Nakamoto"
 participants:

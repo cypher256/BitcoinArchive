@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
 date: 2010-07-09T03:01:35.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=246.msg2077#msg2077"
 author: "Satoshi Nakamoto"
 participants:

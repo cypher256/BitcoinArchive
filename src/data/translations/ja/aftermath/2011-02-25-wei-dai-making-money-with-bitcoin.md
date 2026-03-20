@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイがビットコインとの関係を説明しマイニングを開始"
 date: 2011-02-25T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/ijr8rsyvJci2edxot/making-money-with-bitcoin"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "LessWrongの「Making money with Bitcoin?」スレッドでのウェイ・ダイのコメント。ビットコインを作ったのは自分ではなく「10年以上前に類似のアイデアを記述しただけです」であり、サトシが独立に再発明したと説明。このスレッドをきっかけにRadeon 5870 GPUを購入してマイニングを開始したこと、「他の暗号学者もまだそのセキュリティを分析していません」と警告したことを明かした。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "b-money"

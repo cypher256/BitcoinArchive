@@ -1,7 +1,8 @@
 ---
 title: "linux-0.1.6-test5 fix for zombie sockets"
 date: 2009-11-12T23:39:44Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

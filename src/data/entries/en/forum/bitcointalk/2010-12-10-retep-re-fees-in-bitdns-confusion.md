@@ -1,7 +1,8 @@
 ---
 title: "Re: Fees in BitDNS confusion"
 date: 2010-12-10T01:27:59.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2181.msg28739#msg28739"
 author: "Peter Todd"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Hal Finney (1956–2014) — Cypherpunk, PGP developer, first Bitcoin recipient"
 date: 2014-08-28T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
 author: "The Santa Barbara Independent"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "hal-finney"
 description: "Harold Thomas Finney II (May 4, 1956 – August 28, 2014): Caltech engineering graduate, one of the principal developers of PGP 2.0, Extropian, cryonics advocate, creator of Reusable Proof-of-Work (RPOW), first person other than Satoshi to run Bitcoin, and recipient of the first Bitcoin transaction. Diagnosed with ALS in August 2009, he continued contributing to Bitcoin from a wheelchair. Cryopreserved by Alcor as patient A-1436."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "hal-finney"
   - "biography"

@@ -1,7 +1,8 @@
 ---
 title: "Re: Is safe running bitcoins with the same wallet on more computers simultaneously?"
 date: 2010-11-28T18:06:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1986.msg25154#msg25154"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitweaver menu editor broken"
 date: 2009-11-27T00:46:50Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "転送: 新メンバーが正しい情報を得られるようBitcoin FAQを更新してください"
 date: 2010-07-15T17:43:55Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

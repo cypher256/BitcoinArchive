@@ -1,7 +1,8 @@
 ---
 title: "マージドマイニング、放棄されたマーケットプレイス、独立チェーン"
 date: 2011-03-09T19:39:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread4.html"
 author: "Satoshi Nakamoto"
 participants:

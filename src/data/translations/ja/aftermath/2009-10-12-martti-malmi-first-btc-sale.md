@@ -1,7 +1,8 @@
 ---
 title: "ビットコイン初の法定通貨売却 — マルッティ・マルミが5,050 BTCを5.02ドルで売却"
 date: 2009-10-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcoin-com-forum"
 sourceUrl: "https://forum.bitcoin.com/ama-ask-me-anything/i-m-martti-malmi-early-bitcoin-developer-and-the-original-founder-of-the-bitcointalk-org-forums-ama-t2770.html"
 author: "Martti Malmi"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "newlibertystandard"
 description: "マルッティ・マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した。ビットコインと法定通貨の最初の既知の交換であり、1BTCあたり約0.001ドルの実世界価格が確立された。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "martti-malmi"
   - "newlibertystandard"

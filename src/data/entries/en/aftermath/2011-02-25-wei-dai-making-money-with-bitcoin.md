@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai clarifies his connection to Bitcoin and begins mining"
 date: 2011-02-25T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/ijr8rsyvJci2edxot/making-money-with-bitcoin"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "Wei Dai's comments on the LessWrong 'Making money with Bitcoin?' thread. He clarified that he did not create Bitcoin but 'only described a similar idea more than a decade ago' and that Satoshi independently reinvented the concept. He revealed purchasing a Radeon 5870 GPU for mining after this thread, and warned that 'not many other cryptographers have analyzed its security.'"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "b-money"

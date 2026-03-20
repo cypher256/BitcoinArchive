@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Exchange"
 date: 2010-01-05T01:55:14Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

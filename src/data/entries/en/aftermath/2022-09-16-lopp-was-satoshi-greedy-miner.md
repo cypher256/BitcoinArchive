@@ -1,7 +1,8 @@
 ---
 title: "Jameson Lopp analyzes whether Satoshi Nakamoto was a 'greedy' miner"
 date: 2022-09-16T00:00:00Z
-source: aftermath
+type: "article"
+source: "lopp-blog"
 sourceUrl: "https://blog.lopp.net/was-satoshi-a-greedy-miner/"
 author: "Jameson Lopp"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "Bitcoin researcher Jameson Lopp demonstrates that Satoshi deliberately throttled mining capacity, earning only ~1.1 million BTC when full-capacity mining could have yielded ~2.19 million BTC. Lopp concludes: 'Anyone who claims that Satoshi was greedy simply hasn't done the math.'"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "patoshi"
   - "mining"

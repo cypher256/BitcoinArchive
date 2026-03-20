@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3 almost ready -- please test the Mac version!"
 date: 2010-07-04T21:52:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1947#msg1947"
 author: "Satoshi Nakamoto"
 participants:

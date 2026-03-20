@@ -1,7 +1,8 @@
 ---
 title: "Transaction / spam flood attack currently under way"
 date: 2010-11-19T10:02:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1850.msg22870#msg22870"
 author: "jgarzik"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "ジェフ・ガージック（1974–） — ビットコインの最も多作な初期貢献者の一人となったLinuxカーネル開発者"
 date: 2010-07-15T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Jeff_Garzik"
 author: "Jeff Garzik"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "jeff-garzik"
 description: "ジェフ・ガージック：2010年7月にSlashdotでビットコインを発見したソフトウェアエンジニア、Linuxカーネル貢献者、Red Hat従業員。Bitcoin Coreのトップ3の貢献者の一人となり、cpuminerを作成、複数のBIPを起草し、後にBloqを共同設立した。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "jeff-garzik"
   - "biography"

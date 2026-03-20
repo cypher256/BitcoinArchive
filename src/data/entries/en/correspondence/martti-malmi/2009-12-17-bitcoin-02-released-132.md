@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.2 released"
 date: 2009-12-17T06:49:02Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

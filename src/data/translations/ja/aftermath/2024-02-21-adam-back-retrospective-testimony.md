@@ -1,7 +1,8 @@
 ---
 title: "アダム・バックのサトシとの初期交流に関する回顧"
 date: 2024-02-22T00:00:00Z
-source: aftermath
+type: "article"
+source: "cointelegraph"
 sourceUrl: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 author: "Adam Back"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "wei-dai"
 description: "アダム・バックが2008年8月のサトシ・ナカモトとのメール交換、ビットコインホワイトペーパーを注意深く読まなかったことへの後悔、完全なメールチェーンが公開されたCOPA対ライト裁判での証言を振り返る。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "adam-back"
   - "hashcash"

@@ -1,7 +1,8 @@
 ---
 title: "分析によりサトシ・ナカモトのビットコイン保有量は約110万BTCと推定"
 date: 2021-02-08T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitmex-research"
 sourceUrl: "https://blog.bitmex.com/satoshis-1-million-bitcoin/"
 author: "BitMEX Research"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "複数のブロックチェーン分析により、サトシ・ナカモトがビットコインの最初期に約110万ビットコインをマイニングし、それらのコインが一度も使われていないことが推定された。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "satoshi-nakamoto"
   - "mining"

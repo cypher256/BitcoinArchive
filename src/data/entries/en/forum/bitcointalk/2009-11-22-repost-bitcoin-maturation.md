@@ -1,7 +1,8 @@
 ---
 title: "Repost: Bitcoin Maturation"
 date: 2009-11-22T18:31:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=6.msg29#msg29"
 author: "Satoshi Nakamoto"
 participants:

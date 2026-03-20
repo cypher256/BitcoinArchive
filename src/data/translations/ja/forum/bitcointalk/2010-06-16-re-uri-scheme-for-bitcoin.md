@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコインのURIスキーム"
 date: 2010-06-16T00:15:47.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=55.msg1596#msg1596"
 author: "Satoshi Nakamoto"
 participants:

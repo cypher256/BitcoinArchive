@@ -1,7 +1,8 @@
 ---
 title: "Re: Is there a way to automate bitcoin payments..."
 date: 2010-05-18T02:58:11.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=112.msg1143#msg1143"
 author: "Satoshi Nakamoto"
 participants:

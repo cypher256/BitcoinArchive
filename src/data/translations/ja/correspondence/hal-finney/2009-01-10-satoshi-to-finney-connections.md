@@ -1,7 +1,8 @@
 ---
 title: "非公開メール —— 接続の問題"
 date: 2009-01-10T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"
 participants:

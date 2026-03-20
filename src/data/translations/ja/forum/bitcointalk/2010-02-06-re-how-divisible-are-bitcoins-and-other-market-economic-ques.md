@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoinはどの程度分割可能か、その他の市場/経済に関する質問"
 date: 2010-02-06T23:25:53.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=44.msg267#msg267"
 author: "Satoshi Nakamoto"
 participants:

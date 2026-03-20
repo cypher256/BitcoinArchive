@@ -1,7 +1,8 @@
 ---
 title: "Re: 新しいWebサービス：ビットコインブロックNNNNのダンプを取得"
 date: 2010-08-27T16:13:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=928.msg11400#msg11400"
 author: "Satoshi Nakamoto"
 participants:

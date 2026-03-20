@@ -1,7 +1,8 @@
 ---
 title: "ビットコイン：P2P通貨のオープンソース実装"
 date: 2014-03-07T01:17:00.000Z
-source: p2pfoundation
+type: "forum-post"
+source: "p2pfoundation"
 sourceUrl: "http://p2pfoundation.ning.com/xn/detail/2003008:Comment:52186"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "\"I've moved on to other things\""
 date: 2011-04-23T15:40:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread5.html"
 author: "Satoshi Nakamoto"
 participants:

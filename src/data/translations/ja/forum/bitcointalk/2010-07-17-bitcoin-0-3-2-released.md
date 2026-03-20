@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin 0.3.2 リリース"
 date: 2010-07-17T21:35:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=437.msg3807#msg3807"
 author: "Satoshi Nakamoto"
 participants:

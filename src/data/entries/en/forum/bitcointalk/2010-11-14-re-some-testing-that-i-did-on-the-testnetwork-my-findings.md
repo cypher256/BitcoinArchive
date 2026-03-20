@@ -1,7 +1,8 @@
 ---
 title: "Re: Some testing that I did on the testnetwork, my findings."
 date: 2010-11-14T16:53:19.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1668.msg21959#msg21959"
 author: "Satoshi Nakamoto"
 participants:

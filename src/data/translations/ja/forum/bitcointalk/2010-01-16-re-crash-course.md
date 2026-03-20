@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin用語の速習講座"
 date: 2010-01-16T19:47:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=32.msg295#msg295"
 author: "Satoshi Nakamoto"
 participants:

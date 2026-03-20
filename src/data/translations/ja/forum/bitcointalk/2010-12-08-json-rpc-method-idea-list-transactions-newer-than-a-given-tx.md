@@ -1,7 +1,8 @@
 ---
 title: "JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
 date: 2010-12-08T08:07:21.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2151.msg28160#msg28160"
 author: "davux"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Y2038準拠Bitcoinへの移行計画は？"
 date: 2010-08-09T20:13:26.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=760.msg8413#msg8413"
 author: "Satoshi Nakamoto"
 participants:

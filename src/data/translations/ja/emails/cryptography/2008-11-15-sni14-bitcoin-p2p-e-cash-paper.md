@@ -1,7 +1,8 @@
 ---
 title: "ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-15T18:02:00.000Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014860.html"
 author: "Satoshi Nakamoto"
 participants:

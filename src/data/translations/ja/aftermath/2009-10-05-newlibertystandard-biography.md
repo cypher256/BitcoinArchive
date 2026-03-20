@@ -1,7 +1,8 @@
 ---
 title: "NewLibertyStandard（生没年不明） — 最初のビットコイン為替レートを作成した匿名の人物"
 date: 2009-10-05T00:00:00Z
-source: aftermath
+type: "biography"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?action=profile;u=26"
 author: "NewLibertyStandard"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "NewLibertyStandard：2009年10月5日にマイニングの電力コストに基づく最初の既知のビットコイン-米ドル為替レート（$1 = 1,309.03 BTC）を公開した匿名の人物。マルッティ・マルミとの初の既知のビットコイン-法定通貨取引を行い、BTCティッカーシンボルを提案した。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "newlibertystandard"
   - "biography"

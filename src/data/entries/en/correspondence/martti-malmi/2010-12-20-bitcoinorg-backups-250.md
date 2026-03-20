@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin.org backups"
 date: 2010-12-20T15:55:04Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

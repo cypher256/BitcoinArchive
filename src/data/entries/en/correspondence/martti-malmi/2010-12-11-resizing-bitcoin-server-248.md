@@ -1,7 +1,8 @@
 ---
 title: "Resizing Bitcoin server"
 date: 2010-12-11T18:36:32Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

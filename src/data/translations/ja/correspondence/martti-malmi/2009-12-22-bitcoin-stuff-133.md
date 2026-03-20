@@ -1,7 +1,8 @@
 ---
 title: "Bitcoinに関すること"
 date: 2009-12-22T13:49:14Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

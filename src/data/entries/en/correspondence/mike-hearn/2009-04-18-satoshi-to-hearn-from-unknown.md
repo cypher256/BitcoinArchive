@@ -1,7 +1,8 @@
 ---
 title: "Questions about BitCoin"
 date: 2009-04-18T22:52:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
 author: "Satoshi Nakamoto"
 participants:

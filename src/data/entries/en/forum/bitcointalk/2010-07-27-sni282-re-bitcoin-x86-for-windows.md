@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin x86 for Windows"
 date: 2010-07-27T18:27:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=572.msg6069#msg6069"
 author: "Satoshi Nakamoto"
 participants:

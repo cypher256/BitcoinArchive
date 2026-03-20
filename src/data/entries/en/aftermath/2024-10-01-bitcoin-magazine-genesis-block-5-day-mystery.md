@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Magazine examines the 5-day gap between Genesis Block and Block 1"
 date: 2024-10-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/satoshi-nakamoto-2009-bitcoin-mining-missing-blocks-mystery"
 author: "Pete Rizzo"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "pete-rizzo"
 description: "Pete Rizzo investigates the unexplained ~5-day, 8-hour gap between the Genesis Block (January 3, 2009) and Block 1 (January 9, 2009), framing it as one of Bitcoin's enduring unsolved mysteries."
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "genesis-block"
   - "mining"

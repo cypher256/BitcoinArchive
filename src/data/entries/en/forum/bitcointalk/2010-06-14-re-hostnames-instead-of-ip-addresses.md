@@ -1,7 +1,8 @@
 ---
 title: "Re: Hostnames instead of IP Addresses"
 date: 2010-06-14T19:53:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=158.msg1582#msg1582"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: RFC: ship block chain 1-74000 with release tarballs?"
 date: 2010-11-29T20:19:12.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1931.msg25449#msg25449"
 author: "Satoshi Nakamoto"
 participants:

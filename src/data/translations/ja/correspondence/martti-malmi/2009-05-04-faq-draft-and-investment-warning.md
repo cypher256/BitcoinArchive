@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン - FAQ草案と投資表現への警告"
 date: 2009-05-04T15:51:00Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

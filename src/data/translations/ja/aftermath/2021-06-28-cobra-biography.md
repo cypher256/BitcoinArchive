@@ -1,7 +1,8 @@
 ---
 title: "Cobra（生没年不明） — bitcoin.orgの匿名運営者"
 date: 2021-06-28T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin.org"
 author: "Cobra"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "Cobra（Cøbraとも表記）：2008年にサトシ・ナカモトが登録したbitcoin.orgの匿名運営者・守護者。身元を明かすくらいなら著作権訴訟に負ける方を選び、後にクレイグ・ライトがサトシではないと裁定されたことで名誉を回復した。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "cobra"
   - "biography"

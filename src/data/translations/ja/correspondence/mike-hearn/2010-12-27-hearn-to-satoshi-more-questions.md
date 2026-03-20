@@ -1,7 +1,8 @@
 ---
 title: "BitCoinに関する追加の質問"
 date: 2010-12-27T20:21:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Mike Hearn"
 participants:

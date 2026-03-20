@@ -13,7 +13,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const jaEntries = await getCollection('entries_ja');
 
   const enPaths = enEntries
-    .filter((e) => e.data.aftermathType !== 'biography')
+    .filter((e) => e.data.type !== 'biography')
     .map((entry) => ({
       params: { slug: entry.id },
       props: {
@@ -27,7 +27,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }));
 
   const jaPaths = jaEntries
-    .filter((e) => e.data.aftermathType !== 'biography')
+    .filter((e) => e.data.type !== 'biography')
     .map((entry) => ({
       params: { slug: `ja/${entry.id}` },
       props: {

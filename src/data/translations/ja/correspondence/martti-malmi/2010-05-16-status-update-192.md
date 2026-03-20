@@ -1,7 +1,8 @@
 ---
 title: "Re: 近況報告"
 date: 2010-05-16T19:12:21Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "SVN rev 130のバグ修正"
 date: 2010-08-12T21:20:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=795.msg8920#msg8920"
 author: "Satoshi Nakamoto"
 participants:

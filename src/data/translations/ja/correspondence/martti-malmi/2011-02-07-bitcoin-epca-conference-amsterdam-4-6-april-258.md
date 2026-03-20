@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin @ EPCAカンファレンス アムステルダム 4月4-6日？"
 date: 2011-02-07T09:39:36Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

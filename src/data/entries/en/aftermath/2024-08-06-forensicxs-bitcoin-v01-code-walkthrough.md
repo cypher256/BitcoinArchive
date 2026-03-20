@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Core v0.1 code walkthrough — 31,794 lines analyzed"
 date: 2024-08-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "forensicxs"
 sourceUrl: "https://www.forensicxs.com/bitcoin-core-v0-1-a-code-walkthrough/"
 author: "Forensicxs"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Forensicxs published a comprehensive line-by-line walkthrough of Bitcoin v0.1's 31,794 lines of source code — one of the most detailed public analyses of Satoshi Nakamoto's original codebase. The analysis covered all 31 files across cryptography, blockchain operations, networking, wallet management, and the GUI."
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "bitcoin-v0.1"
   - "source-code"

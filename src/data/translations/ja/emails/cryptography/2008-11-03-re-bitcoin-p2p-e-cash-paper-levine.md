@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-03T13:32:39Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014817.html"
 author: "John Levine"
 participants:

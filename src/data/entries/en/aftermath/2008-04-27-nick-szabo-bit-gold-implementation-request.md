@@ -1,7 +1,8 @@
 ---
 title: "\"Anybody want to help me code one up?\" — Nick Szabo seeks bit gold implementation"
 date: 2008-04-27T00:00:00Z
-source: aftermath
+type: "article"
+source: "unenumerated"
 sourceUrl: "https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html"
 author: "Nick Szabo"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "In a comment on his Unenumerated blog, Nick Szabo asked for help implementing bit gold — the digital currency concept he had designed in 1998. No one publicly responded. Six months later, Satoshi Nakamoto published the Bitcoin whitepaper."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "nick-szabo"
   - "bit-gold"

@@ -1,7 +1,8 @@
 ---
 title: "Re: エラー - 助けてください！"
 date: 2010-10-23T18:38:04.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1530.msg18245#msg18245"
 author: "Satoshi Nakamoto"
 participants:

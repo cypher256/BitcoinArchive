@@ -1,7 +1,8 @@
 ---
 title: "Running bitcoin"
 date: 2009-01-11T22:33:00Z
-source: correspondence
+type: "correspondence"
+source: "x"
 sourceUrl: "https://twitter.com/halfin/status/1110302988"
 author: "Hal Finney"
 participants:

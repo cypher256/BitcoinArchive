@@ -1,7 +1,8 @@
 ---
 title: "overflow bug SERIOUS"
 date: 2010-08-15T10:04:11.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9494#msg9494"
 author: "lfm"
 participants:

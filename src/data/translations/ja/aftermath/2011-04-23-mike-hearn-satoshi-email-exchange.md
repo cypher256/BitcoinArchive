@@ -1,7 +1,8 @@
 ---
 title: "マイク・ハーンとサトシ・ナカモトのメール交換"
 date: 2011-04-23T00:00:00Z
-source: aftermath
+type: "article"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "マイク・ハーンとサトシ・ナカモトの私的なメールのやり取り。サトシは「他のことに取り組むことにした」と述べ、「ギャビンたちに任せれば、安心だ」と語った。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "mike-hearn"
   - "email-archive"

@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin v0.1 released - Spam, POW tokens, and reverse-spamming"
 date: 2009-01-25T10:03:21Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "プロジェクト開発者"
 date: 2010-12-07T15:38:28Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

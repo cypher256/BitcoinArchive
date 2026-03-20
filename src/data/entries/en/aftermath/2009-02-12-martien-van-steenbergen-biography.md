@@ -1,7 +1,8 @@
 ---
 title: "Martien van Steenbergen (dates unknown) — Agile coach who asked Satoshi about Bitcoin's money supply"
 date: 2009-02-12T07:47:53Z
-source: aftermath
+type: "biography"
+source: "nakamotoinstitute"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
 author: "Martien van Steenbergen"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "martien-van-steenbergen"
 description: "Martien van Steenbergen: Dutch agile coach and founder of AardRock whose questions on the P2P Research mailing list prompted Satoshi Nakamoto to first publicly state Bitcoin's fixed supply of 21,000,000 coins."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "martien-van-steenbergen"
   - "biography"

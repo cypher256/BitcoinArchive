@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin x86 for Windows"
 date: 2010-07-25T23:17:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=572.msg5823#msg5823"
 author: "Olipro"
 participants:

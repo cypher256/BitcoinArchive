@@ -1,7 +1,8 @@
 ---
 title: "「始めたことを知っていたなら」（レイ・ディリンジャー）"
 date: 2017-09-20T00:00:00Z
-source: aftermath
+type: "article"
+source: "linkedin"
 sourceUrl: "https://www.linkedin.com/pulse/id-known-what-we-were-starting-ray-dillinger"
 author: "Ray Dillinger"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "hal-finney"
 description: "レイ・ディリンジャーによるビットコイン最初期の回顧録：ブロックチェーンコードのレビュー、ハル・フィニーとの分業、そしてサトシの誠実さへの考察 — 「彼はコインを売っていたのではない。ハッシュを解いた者に与えていたのだ」"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "ray-dillinger"
   - "code-review"

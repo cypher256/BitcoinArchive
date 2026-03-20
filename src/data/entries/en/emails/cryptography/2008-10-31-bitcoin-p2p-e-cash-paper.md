@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin P2P e-cash paper"
 date: 2008-10-31T18:10:00Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html"
 author: "Satoshi Nakamoto"
 participants:

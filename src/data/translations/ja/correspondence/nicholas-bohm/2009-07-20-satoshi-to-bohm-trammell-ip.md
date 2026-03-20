@@ -1,7 +1,8 @@
 ---
 title: "Re: 接続なし —— 単一ピアに接続中"
 date: 2009-07-20T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 author: "Satoshi Nakamoto"
 participants:

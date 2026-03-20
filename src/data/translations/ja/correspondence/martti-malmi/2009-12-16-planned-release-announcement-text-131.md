@@ -1,7 +1,8 @@
 ---
 title: "リリースアナウンス文の予定"
 date: 2009-12-16T16:54:46Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

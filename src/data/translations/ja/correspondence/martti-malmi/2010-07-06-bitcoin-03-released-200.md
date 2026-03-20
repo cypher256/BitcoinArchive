@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.3 リリース！"
 date: 2010-07-06T21:53:07Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

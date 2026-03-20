@@ -1,7 +1,8 @@
 ---
 title: "Internal version number"
 date: 2010-09-23T16:19:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1269.msg13831#msg13831"
 author: "Satoshi Nakamoto"
 participants:

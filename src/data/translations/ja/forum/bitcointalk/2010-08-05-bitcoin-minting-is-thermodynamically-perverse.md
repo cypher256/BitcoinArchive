@@ -1,7 +1,8 @@
 ---
 title: "Bitcoinの鋳造は熱力学的に逆説的"
 date: 2010-08-05T16:52:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=721.msg7771#msg7771"
 author: "gridecon"
 participants:

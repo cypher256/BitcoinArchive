@@ -1,7 +1,8 @@
 ---
 title: "Re: BSD検出"
 date: 2010-08-12T21:14:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=790.msg8919#msg8919"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "コインの窃盗"
 date: 2010-07-25T08:08:03.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=571.msg5708#msg5708"
 author: "Red"
 participants:

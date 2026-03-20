@@ -1,7 +1,8 @@
 ---
 title: "Re: Linuxビルドのテスト準備完了"
 date: 2009-11-08T17:39:39Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

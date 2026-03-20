@@ -1,7 +1,8 @@
 ---
 title: "Re: wikiの登録メール？"
 date: 2010-07-29T02:10:46.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=338.msg6307#msg6307"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: バージョン0.2のリリース準備がほぼ完了"
 date: 2009-12-13T20:12:38Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: オーバーフローバグ 深刻"
 date: 2010-08-15T20:59:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9530#msg9530"
 author: "Satoshi Nakamoto"
 participants:

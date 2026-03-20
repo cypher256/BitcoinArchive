@@ -1,7 +1,8 @@
 ---
 title: "*** 警告 *** 0.3.6にアップグレードしてください"
 date: 2010-07-29T19:13:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=626.msg6451#msg6451"
 author: "Satoshi Nakamoto"
 participants:

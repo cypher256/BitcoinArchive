@@ -1,7 +1,8 @@
 ---
 title: "Re: 1.3ほぼ完成"
 date: 2010-07-02T20:37:17.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1926#msg1926"
 author: "Satoshi Nakamoto"
 participants:

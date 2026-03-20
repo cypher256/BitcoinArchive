@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイによるビットコインの金融政策批判とサトシへの無返信の後悔"
 date: 2013-04-21T19:44:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/P9jggxRZTMJcjnaPw/bitcoins-are-not-digital-greenbacks"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "LessWrongの投稿「Bitcoins are not digital greenbacks」へのウェイ・ダイのコメント。ビットコインは「金融政策に関して失敗しました」と論じ、価格変動の問題を指摘。さらに2008年にサトシからの論文レビュー依頼のメールに返信しなかったことを明かし、「固定マネーサプライのアイデアを思いとどまらせることができたかもしれません」と後悔を述べた。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "b-money"

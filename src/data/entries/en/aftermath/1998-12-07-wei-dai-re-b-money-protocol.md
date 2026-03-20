@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai's response on b-money's limitations and prospects"
 date: 1998-12-07T23:20:00Z
-source: aftermath
+type: "article"
+source: "cypherpunks-mailing-list"
 sourceUrl: "http://cypherpunks.venona.com/archive/1998/12/msg00261.html"
 author: "Wei Dai"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "adam-back"
 description: "Wei Dai's reply to Adam Back on the Cypherpunks mailing list, discussing b-money's practical limitations. Dai acknowledged that 'b-money will at most be a niche currency/contract enforcement mechanism' and revealed a shift in his political views, stating 'I now tend to think that the government monopoly of force is a net benefit.'"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "wei-dai"
   - "b-money"

@@ -1,7 +1,8 @@
 ---
 title: "Private email — connection difficulties"
 date: 2009-01-10T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"
 participants:

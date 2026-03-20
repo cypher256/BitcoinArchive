@@ -1,7 +1,8 @@
 ---
 title: "bitcoin.org Drupalユーザー"
 date: 2010-07-15T17:41:10Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

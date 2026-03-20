@@ -1,7 +1,8 @@
 ---
 title: "Re: UTF-8 to ANSI hack in CAboutDialog"
 date: 2010-02-05T07:16:23Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

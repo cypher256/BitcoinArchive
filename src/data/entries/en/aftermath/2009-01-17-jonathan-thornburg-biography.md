@@ -1,7 +1,8 @@
 ---
 title: "Jonathan Thornburg (dates unknown) — Astrophysicist who raised early concerns about Bitcoin"
 date: 2009-01-17T16:49:45Z
-source: aftermath
+type: "biography"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015016.html"
 author: "Jonathan Thornburg"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jonathan Thornburg: Astrophysicist at Indiana University who posted on the cryptography mailing list on January 17, 2009, raising concerns about government regulation and botnet exploitation of Bitcoin — among the earliest substantive criticisms of the system."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "jonathan-thornburg"
   - "biography"

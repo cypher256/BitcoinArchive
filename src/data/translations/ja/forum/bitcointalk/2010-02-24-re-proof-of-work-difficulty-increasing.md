@@ -1,7 +1,8 @@
 ---
 title: "Re: Proof-of-work難易度の上昇"
 date: 2010-02-24T22:42:24.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=43.msg510#msg510"
 author: "Satoshi Nakamoto"
 participants:

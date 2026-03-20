@@ -1,7 +1,8 @@
 ---
 title: "「ビットコインの激動の10年」 — ジェフ・ガージック回顧録"
 date: 2018-10-29T00:00:00Z
-source: aftermath
+type: "article"
+source: "breaker-mag"
 sourceUrl: "https://breakermag.com/bitcoins-wild-decade-an-early-developer-reflects/"
 author: "Jeff Garzik"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "gavin-andresen"
 description: "ビットコインの最初期のコア開発者の一人であるジェフ・ガージックが、サトシ・ナカモトとの直接の交流を振り返る。2010年7月のSlashdot投稿でビットコインを発見し、コードベースへの貢献度で上位3人に入る開発者となった。"
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "jeff-garzik"
   - "core-developer"

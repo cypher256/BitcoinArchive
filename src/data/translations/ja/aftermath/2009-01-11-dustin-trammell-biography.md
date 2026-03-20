@@ -1,7 +1,8 @@
 ---
 title: "ダスティン・トランメル（生没年不明） — ビットコインを最初期に稼働させた情報セキュリティ研究者"
 date: 2009-01-11T00:00:00Z
-source: aftermath
+type: "biography"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Dustin_Trammell"
 author: "Dustin Trammell"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "dustin-trammell"
 description: "ダスティン・D・トランメル：テキサス州オースティン在住の情報セキュリティ研究者で、ビットコインのリリース後に最初期に稼働させた人物の一人。2009年1月11日にサトシ・ナカモトにメールを送り、サトシから直接25 BTCを受信した — 最初期の既知の個人間ビットコイン送金の一つ。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "dustin-trammell"
   - "biography"

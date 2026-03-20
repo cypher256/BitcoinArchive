@@ -1,7 +1,8 @@
 ---
 title: "Re: who is bitcoin.com"
 date: 2010-03-23T15:22:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=88.msg806#msg806"
 author: "Satoshi Nakamoto"
 participants:

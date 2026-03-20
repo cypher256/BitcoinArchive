@@ -1,7 +1,8 @@
 ---
 title: "Re: Pizza for bitcoins?"
 date: 2010-07-29T18:12:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=137.msg1195#msg1195"
 author: "Satoshi Nakamoto"
 participants:

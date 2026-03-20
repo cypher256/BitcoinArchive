@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン P2P 電子キャッシュ論文"
 date: 2008-11-02T23:46:23Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014814.html"
 author: "James A. Donald"
 participants:

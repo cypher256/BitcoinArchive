@@ -1,7 +1,8 @@
 ---
 title: "Interview with Ray Dillinger (Great Wall of Numbers)"
 date: 2018-10-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "of-numbers"
 sourceUrl: "https://www.ofnumbers.com/2018/10/01/interview-with-ray-dillinger/"
 author: "Ray Dillinger"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "hal-finney"
 description: "Comprehensive interview with Ray Dillinger by Tim Swanson, marking the 10th anniversary of the Bitcoin whitepaper. Dillinger reveals technical details of his code review, including the famous floating-point discovery and Satoshi's reasoning for using double-precision floats."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "ray-dillinger"
   - "code-review"

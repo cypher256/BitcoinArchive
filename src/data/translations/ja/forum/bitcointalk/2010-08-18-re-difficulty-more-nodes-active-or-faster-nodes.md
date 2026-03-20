@@ -1,7 +1,8 @@
 ---
 title: "Re: 難易度：アクティブなノードが増えたのか、より高速なノードか？"
 date: 2010-08-18T18:01:40.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=846.msg10076#msg10076"
 author: "Satoshi Nakamoto"
 participants:

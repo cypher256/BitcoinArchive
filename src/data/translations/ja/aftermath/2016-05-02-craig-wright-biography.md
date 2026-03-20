@@ -1,7 +1,8 @@
 ---
 title: "クレイグ・ライト（1970–） — サトシ・ナカモトを偽称したオーストラリア人実業家"
 date: 2016-05-02T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Craig_Steven_Wright"
 author: "Craig Wright"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "craig-wright"
 description: "クレイグ・スティーブン・ライト（1970年10月生まれ）：2016年5月にサトシ・ナカモトであると公言したオーストラリアのコンピュータ科学者・実業家。2024年3月のCOPA対ライト裁判で、英国高等法院は彼の主張を完全に否定し、「大規模な証拠捏造」を認定した。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "craig-wright"
   - "biography"

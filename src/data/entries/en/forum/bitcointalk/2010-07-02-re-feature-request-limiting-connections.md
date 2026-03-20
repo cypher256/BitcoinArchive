@@ -1,7 +1,8 @@
 ---
 title: "Re: Feature Request: Limiting Connections"
 date: 2010-07-02T19:21:36.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=223.msg1924#msg1924"
 author: "Satoshi Nakamoto"
 participants:

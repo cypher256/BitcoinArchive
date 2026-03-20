@@ -1,7 +1,8 @@
 ---
 title: "Re: Dealing with SHA-256 Collisions"
 date: 2010-06-14T20:39:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=191.msg1585#msg1585"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: *** ALERT *** version 0.3.6"
 date: 2010-07-29T19:55:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=626.msg6469#msg6469"
 author: "Satoshi Nakamoto"
 participants:

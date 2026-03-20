@@ -1,7 +1,8 @@
 ---
 title: "Re: Message Encryption as a built-in feature?"
 date: 2010-09-19T22:47:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1032.msg13221#msg13221"
 author: "Satoshi Nakamoto"
 participants:

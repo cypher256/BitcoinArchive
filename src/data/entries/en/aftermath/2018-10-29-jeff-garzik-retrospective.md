@@ -1,7 +1,8 @@
 ---
 title: "\"Bitcoin's Wild Decade\" — Jeff Garzik retrospective"
 date: 2018-10-29T00:00:00Z
-source: aftermath
+type: "article"
+source: "breaker-mag"
 sourceUrl: "https://breakermag.com/bitcoins-wild-decade-an-early-developer-reflects/"
 author: "Jeff Garzik"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "gavin-andresen"
 description: "Jeff Garzik, one of Bitcoin's earliest core developers, reflects on his experience working directly with Satoshi Nakamoto. He discovered Bitcoin through a Slashdot post in July 2010 and became one of the top three contributors to Bitcoin's codebase."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "jeff-garzik"
   - "core-developer"

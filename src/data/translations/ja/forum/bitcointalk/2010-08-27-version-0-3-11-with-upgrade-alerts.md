@@ -1,7 +1,8 @@
 ---
 title: "バージョン0.3.11 アップグレードアラート付き"
 date: 2010-08-27T21:54:12.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=941.msg11439#msg11439"
 author: "Satoshi Nakamoto"
 participants:

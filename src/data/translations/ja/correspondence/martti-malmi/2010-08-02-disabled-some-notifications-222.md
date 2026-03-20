@@ -1,7 +1,8 @@
 ---
 title: "一部の通知を無効化"
 date: 2010-08-02T21:08:22Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Satoshi Nakamoto (dates unknown) — Pseudonymous creator of Bitcoin"
 date: 2008-10-31T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 author: "Satoshi Nakamoto"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto: Pseudonymous individual or group who authored the Bitcoin white paper (October 31, 2008), created the Bitcoin software, mined the genesis block (January 3, 2009), and guided the project's early development before disappearing in April 2011. Their true identity remains unknown."
 isSatoshi: true
-aftermathType: "biography"
 tags:
   - "satoshi-nakamoto"
   - "biography"

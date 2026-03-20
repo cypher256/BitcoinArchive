@@ -1,7 +1,8 @@
 ---
 title: "bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username"
 date: 2010-07-08T00:33:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=246.msg2052#msg2052"
 author: "m0mchil"
 participants:

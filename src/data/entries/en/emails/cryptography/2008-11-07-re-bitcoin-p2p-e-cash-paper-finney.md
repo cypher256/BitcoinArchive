@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin P2P e-cash paper"
 date: 2008-11-07T23:40:12Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014827.html"
 author: "Hal Finney"
 participants:

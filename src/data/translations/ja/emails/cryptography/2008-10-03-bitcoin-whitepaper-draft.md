@@ -1,7 +1,8 @@
 ---
 title: "ビットコインホワイトペーパー初期草稿"
 date: 2008-10-03T00:00:00Z
-source: whitepaper
+type: "whitepaper"
+source: "bitcoin-org"
 sourceUrl: "https://www.gwern.net/docs/bitcoin/2008-nakamoto"
 author: "Satoshi Nakamoto"
 participants:

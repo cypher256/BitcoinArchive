@@ -1,7 +1,8 @@
 ---
 title: "Sample account system using JSON-RPC needed"
 date: 2010-07-16T19:45:10.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=417.msg3579#msg3579"
 author: "Satoshi Nakamoto"
 participants:

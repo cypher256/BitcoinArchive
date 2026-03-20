@@ -1,7 +1,8 @@
 ---
 title: "Re: checkpointing the block chain"
 date: 2010-08-16T23:01:48.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=834.msg9843#msg9843"
 author: "Satoshi Nakamoto"
 participants:

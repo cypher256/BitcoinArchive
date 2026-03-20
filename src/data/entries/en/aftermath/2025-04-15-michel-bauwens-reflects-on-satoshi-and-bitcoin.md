@@ -1,7 +1,8 @@
 ---
 title: "Michel Bauwens reflects on Satoshi, Bitcoin, and the path not taken"
 date: 2025-04-15T00:00:00Z
-source: aftermath
+type: "article"
+source: "uncommons"
 sourceUrl: "https://blog.uncommons.cc/cryptoflight-vol-10-eng/"
 author: "Michel Bauwens"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "In an April 2025 interview, P2P Foundation founder Michel Bauwens recalled that Satoshi emailed him several times, offered him a few bitcoins, and explained why he was publishing the white paper on the P2P Foundation site. Bauwens also gave a mature retrospective on Bitcoin: he remained skeptical of its energy costs, but saw it as the first globally scalable, socially sovereign currency not issued by a firm or state."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "michel-bauwens"
   - "p2p-foundation"

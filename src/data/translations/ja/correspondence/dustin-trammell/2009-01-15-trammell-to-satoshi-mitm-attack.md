@@ -1,7 +1,8 @@
 ---
 title: "いくつかの考え... — IP送金に対する中間者攻撃"
 date: 2009-01-15T00:05:15Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Dustin Trammell"
 participants:

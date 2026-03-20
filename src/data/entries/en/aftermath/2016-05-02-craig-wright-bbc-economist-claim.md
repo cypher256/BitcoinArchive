@@ -1,7 +1,8 @@
 ---
 title: "Craig Wright publicly claims to be Satoshi Nakamoto"
 date: 2016-05-02T00:00:00Z
-source: aftermath
+type: "article"
+source: "bbc"
 sourceUrl: "https://www.bbc.co.uk/news/technology-36168863"
 author: "BBC / The Economist"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "gavin-andresen"
 description: "Australian businessman Craig Wright publicly declared himself to be Satoshi Nakamoto in coordinated interviews with BBC, The Economist, and GQ. He provided a cryptographic 'proof' on his blog that was quickly debunked — he had reused a signature from a 2009 transaction rather than producing a new one."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "craig-wright"
   - "identity-claim"

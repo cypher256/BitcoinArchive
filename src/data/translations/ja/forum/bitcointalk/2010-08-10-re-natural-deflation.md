@@ -1,7 +1,8 @@
 ---
 title: "Re: デフレスパイラル"
 date: 2010-08-10T22:10:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=758.msg8469#msg8469"
 author: "Satoshi Nakamoto"
 participants:

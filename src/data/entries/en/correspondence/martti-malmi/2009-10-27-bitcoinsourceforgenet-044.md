@@ -1,7 +1,8 @@
 ---
 title: "Re: Fw: bitcoin.sourceforge.net"
 date: 2009-10-27T04:45:47Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

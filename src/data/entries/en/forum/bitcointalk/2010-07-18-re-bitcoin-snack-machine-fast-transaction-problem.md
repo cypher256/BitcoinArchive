@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin snack machine (fast transaction problem)"
 date: 2010-07-18T01:59:15.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=423.msg3867#msg3867"
 author: "Satoshi Nakamoto"
 participants:

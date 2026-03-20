@@ -1,7 +1,8 @@
 ---
 title: "Nick Szabo (1964–) — Creator of Bit Gold and smart contracts"
 date: 2005-12-29T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Nick_Szabo"
 author: "Nick Szabo"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "nick-szabo"
 description: "Nick Szabo: Computer scientist, legal scholar, and cryptographer who conceived Bit Gold (1998) — a direct precursor to Bitcoin — and coined the term 'smart contracts.' His work on decentralized digital scarcity laid the intellectual foundation for Bitcoin's design."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "nick-szabo"
   - "biography"

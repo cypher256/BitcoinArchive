@@ -1,7 +1,8 @@
 ---
 title: "Re: Who's the Spanish jerk draining the Faucet?"
 date: 2010-08-05T17:06:03.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=704.msg7703#msg7703"
 author: "Satoshi Nakamoto"
 participants:

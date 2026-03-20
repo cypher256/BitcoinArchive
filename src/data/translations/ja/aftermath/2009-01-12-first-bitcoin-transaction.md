@@ -1,7 +1,8 @@
 ---
 title: "史上初のビットコイン送金 — サトシ・ナカモトがハル・フィニーに10 BTCを送付"
 date: 2009-01-12T03:30:25Z
-source: aftermath
+type: "article"
+source: "blockchain-com"
 sourceUrl: "https://www.blockchain.com/explorer/transactions/btc/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16"
 author: "Satoshi Nakamoto"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "史上初の個人間ビットコイン送金。サトシ・ナカモトがBlock 170でハル・フィニーに10 BTCを送付し、ビットコインのP2P電子キャッシュシステムが設計通りに機能することを確認した。"
 isSatoshi: true
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "first-transaction"

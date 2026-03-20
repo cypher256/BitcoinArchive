@@ -1,7 +1,8 @@
 ---
 title: "Re: Proposed change to sendtoaddress API call"
 date: 2010-08-13T23:39:14.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=807.msg9134#msg9134"
 author: "Satoshi Nakamoto"
 participants:

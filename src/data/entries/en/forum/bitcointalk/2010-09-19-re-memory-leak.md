@@ -1,7 +1,8 @@
 ---
 title: "Re: Memory leak"
 date: 2010-09-19T17:22:03.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1023.msg13201#msg13201"
 author: "Satoshi Nakamoto"
 participants:

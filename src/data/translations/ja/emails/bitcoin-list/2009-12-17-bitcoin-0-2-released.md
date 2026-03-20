@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.2 リリース"
 date: 2009-12-17T06:52:09.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/24205662/"
 author: "Satoshi Nakamoto"
 participants:

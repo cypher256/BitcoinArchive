@@ -1,7 +1,8 @@
 ---
 title: "Re: Transactions fee schedule"
 date: 2010-11-08T19:49:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1628.msg20366#msg20366"
 author: "Satoshi Nakamoto"
 participants:

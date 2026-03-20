@@ -1,7 +1,8 @@
 ---
 title: "Re: Number of connections"
 date: 2010-02-21T03:43:48.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=58.msg413#msg413"
 author: "Satoshi Nakamoto"
 participants:

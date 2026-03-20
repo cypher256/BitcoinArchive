@@ -1,7 +1,8 @@
 ---
 title: "Wired and Gizmodo identify Craig Wright as possible Satoshi Nakamoto"
 date: 2015-12-08T00:00:00Z
-source: aftermath
+type: "article"
+source: "wired"
 sourceUrl: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
 author: "Andy Greenberg"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "sam-biddle"
 description: "Wired and Gizmodo simultaneously publish articles identifying Australian computer scientist Craig Steven Wright as the probable creator of Bitcoin, based on leaked documents and emails."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "craig-wright"
   - "identity"

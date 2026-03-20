@@ -1,7 +1,8 @@
 ---
 title: "Re: Fees in BitDNS confusion"
 date: 2010-12-09T23:58:54.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2181.msg28729#msg28729"
 author: "Satoshi Nakamoto"
 participants:

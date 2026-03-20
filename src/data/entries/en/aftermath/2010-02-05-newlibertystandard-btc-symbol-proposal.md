@@ -1,7 +1,8 @@
 ---
 title: "BTC currency code and ฿ symbol proposal"
 date: 2010-02-05T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=41.0"
 author: "NewLibertyStandard"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "NewLibertyStandard proposed adopting the Thai baht currency symbol (฿) as Bitcoin's official symbol and 'BTC' as the three-letter currency code. This proposal on BitcoinTalk established the currency notation still used today."
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "newlibertystandard"
   - "btc-symbol"

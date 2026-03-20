@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.3 released!"
 date: 2010-07-06T21:53:53.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/25686730/"
 author: "Satoshi Nakamoto"
 participants:

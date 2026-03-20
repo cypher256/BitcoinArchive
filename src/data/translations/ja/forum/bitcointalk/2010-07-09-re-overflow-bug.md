@@ -1,7 +1,8 @@
 ---
 title: "Re: 奇妙なブロック74638"
 date: 2010-08-15T20:02:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=822.msg9547#msg9547"
 author: "Satoshi Nakamoto"
 participants:

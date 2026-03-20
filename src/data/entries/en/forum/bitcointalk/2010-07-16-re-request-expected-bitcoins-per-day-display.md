@@ -1,7 +1,8 @@
 ---
 title: "Re: Request: expected bitcoins per day display"
 date: 2010-07-16T16:47:14.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=397.msg3524#msg3524"
 author: "Satoshi Nakamoto"
 participants:

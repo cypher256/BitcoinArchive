@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin 0.3のビルド"
 date: 2010-07-14T17:34:50.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=298.msg2885#msg2885"
 author: "Satoshi Nakamoto"
 participants:

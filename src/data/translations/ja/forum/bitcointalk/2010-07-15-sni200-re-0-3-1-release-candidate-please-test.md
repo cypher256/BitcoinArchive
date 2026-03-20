@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.1リリース候補、テストしてください"
 date: 2010-07-15T21:40:34.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=383.msg3295#msg3295"
 author: "Satoshi Nakamoto"
 participants:

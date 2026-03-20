@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin macOS port and early development"
 date: 2010-04-19T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/culture/the-man-behind-bitcoin-pizza-day-is-more-than-a-meme-hes-a-mining-pioneer"
 author: "Laszlo Hanyecz"
 participants:

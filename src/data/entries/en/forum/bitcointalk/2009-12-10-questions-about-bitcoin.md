@@ -1,7 +1,8 @@
 ---
 title: "Questions about Bitcoin"
 date: 2009-12-10T04:13:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=13.msg43#msg43"
 author: "SmokeTooMuch"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "「ビューティフル・マインド型の孤独な天才」 — ジェフ・ガージックが語るサトシ・ナカモト"
 date: 2024-10-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/lone-genius-bitcoin-developer-satoshi-nakamoto-theory"
 author: "Jeff Garzik"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "初期のビットコイン開発者ジェフ・ガージックが、サトシ・ナカモトとの共同作業の経験を語る動画シリーズを公開。サトシを独学のプログラマー、孤独な天才と評し、個人情報を一切漏らさなかったと証言した。"
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "jeff-garzik"
   - "satoshi-identity"

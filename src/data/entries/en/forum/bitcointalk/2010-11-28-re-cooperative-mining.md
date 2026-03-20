@@ -1,7 +1,8 @@
 ---
 title: "Re: Cooperative mining"
 date: 2010-11-28T16:03:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1976.msg25119#msg25119"
 author: "Satoshi Nakamoto"
 participants:

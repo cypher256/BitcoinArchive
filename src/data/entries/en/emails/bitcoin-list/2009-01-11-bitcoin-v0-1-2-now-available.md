@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin v0.1.2 now available"
 date: 2009-01-11T22:32:18.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/21303153/"
 author: "Satoshi Nakamoto"
 participants:

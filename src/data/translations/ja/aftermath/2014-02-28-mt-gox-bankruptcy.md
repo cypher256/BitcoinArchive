@@ -1,7 +1,8 @@
 ---
 title: "Mt. Goxが破産申請 — 85万BTCが消失"
 date: 2014-02-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "npr"
 sourceUrl: "https://www.npr.org/sections/thetwo-way/2014/02/28/283863219/mtgox-files-for-bankruptcy-nearly-500m-of-bitcoins-lost"
 author: "NPR"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "mark-karpeles"
 description: "かつて世界最大のビットコイン取引所で全ビットコイン取引の約70%を処理していたMt. Goxが東京で破産申請を行った。CEO マーク・カルプレスは約85万BTC（約4億5,000万ドル相当）が消失したことを明らかにした。2010年のvalue overflow事件以来、ビットコインが直面した最も深刻な危機だった。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "mt-gox"
   - "mark-karpeles"

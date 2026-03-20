@@ -1,7 +1,8 @@
 ---
 title: "アダム・バック：ビットコインの量子脅威は20〜40年先"
 date: 2025-11-15T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://x.com/adam3us/status/1989721899991986374"
 author: "Adam Back"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "adam-back"
 description: "Blockstream CEOのアダム・バックは、ビットコインが量子コンピューティングの脅威に直面するのはおよそ20〜40年先であり、NISTが標準化した耐量子署名SLH-DSAを脅威が現実化するはるか前に導入できると述べた。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "adam-back"
   - "quantum-computing"

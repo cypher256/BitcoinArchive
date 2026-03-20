@@ -1,7 +1,8 @@
 ---
 title: "Re: BitcoinをGTKに変換：賛成？反対？wxの方が良い？"
 date: 2010-08-19T18:44:36.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=867.msg10272#msg10272"
 author: "Satoshi Nakamoto"
 participants:

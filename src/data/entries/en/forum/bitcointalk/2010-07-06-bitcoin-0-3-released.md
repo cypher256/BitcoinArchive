@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin 0.3 released!"
 date: 2010-07-06T18:32:35.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=238.msg2004#msg2004"
 author: "Satoshi Nakamoto"
 participants:

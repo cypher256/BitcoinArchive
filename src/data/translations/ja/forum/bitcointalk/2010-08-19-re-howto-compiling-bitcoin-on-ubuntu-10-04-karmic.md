@@ -1,7 +1,8 @@
 ---
 title: "Re: HOWTO: Ubuntu 10.04 (Karmic)でBitcoinをコンパイルする方法"
 date: 2010-08-19T18:55:48.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=868.msg10275#msg10275"
 author: "Satoshi Nakamoto"
 participants:

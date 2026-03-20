@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Magazineがジェネシスブロックとブロック1の間の5日間の空白を検証"
 date: 2024-10-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/satoshi-nakamoto-2009-bitcoin-mining-missing-blocks-mystery"
 author: "Pete Rizzo"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "pete-rizzo"
 description: "ピート・リゾが、ジェネシスブロック（2009年1月3日）とブロック1（2009年1月9日）の間の説明のつかない約5日8時間の空白を調査し、ビットコインの永続的な未解決の謎の一つとして位置づけた。"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "genesis-block"
   - "mining"

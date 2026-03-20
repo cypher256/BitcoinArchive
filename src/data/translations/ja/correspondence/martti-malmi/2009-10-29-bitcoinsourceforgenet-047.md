@@ -1,7 +1,8 @@
 ---
 title: "Re: 転送: bitcoin.sourceforge.net"
 date: 2009-10-29T04:08:10Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

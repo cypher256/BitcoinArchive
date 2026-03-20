@@ -1,7 +1,8 @@
 ---
 title: "Re: Linuxディストリビューションのダウンロード"
 date: 2010-07-31T14:38:52.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=612.msg6822#msg6822"
 author: "Satoshi Nakamoto"
 participants:

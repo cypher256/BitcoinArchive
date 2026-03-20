@@ -1,7 +1,8 @@
 ---
 title: "Re: 時間制限付きトランザクションを可能にするためにOP_BLOCKNUMBERが必要"
 date: 2010-11-15T18:37:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1786.msg22119#msg22119"
 author: "Satoshi Nakamoto"
 participants:

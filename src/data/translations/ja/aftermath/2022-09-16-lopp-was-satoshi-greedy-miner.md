@@ -1,7 +1,8 @@
 ---
 title: "ジェイムソン・ロップがサトシ・ナカモトは「欲張りなマイナー」だったかを分析"
 date: 2022-09-16T00:00:00Z
-source: aftermath
+type: "article"
+source: "lopp-blog"
 sourceUrl: "https://blog.lopp.net/was-satoshi-a-greedy-miner/"
 author: "Jameson Lopp"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "ビットコイン研究者ジェイムソン・ロップが、サトシは意図的にマイニング能力を制限しており、フル稼働なら約219万BTCを得られたところを約110万BTCに留めたことを示した。「サトシが欲張りだったと言う人は、単に計算をしていないだけだ」と結論。"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "patoshi"
   - "mining"

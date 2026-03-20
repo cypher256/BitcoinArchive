@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoin generation broken in 0.3.8?"
 date: 2010-08-09T18:50:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=753.msg8388#msg8388"
 author: "Satoshi Nakamoto"
 participants:

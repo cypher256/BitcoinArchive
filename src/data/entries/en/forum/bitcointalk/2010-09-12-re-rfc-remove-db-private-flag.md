@@ -1,7 +1,8 @@
 ---
 title: "Re: RFC: remove DB_PRIVATE flag"
 date: 2010-09-12T18:00:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=920.msg12484#msg12484"
 author: "Satoshi Nakamoto"
 participants:

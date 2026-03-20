@@ -1,7 +1,8 @@
 ---
 title: "Hashcash citation and Bitcoin whitepaper draft"
 date: 2008-08-20T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin mined in January 2009 moves for the first time"
 date: 2023-01-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "mempool"
 sourceUrl: "https://mempool.space/"
 author: "Blockchain observers"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Bitcoins mined in the earliest weeks of Bitcoin's existence in January 2009 are moved for the first time, sparking intense speculation about whether Satoshi Nakamoto is spending coins."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "satoshi-nakamoto"
   - "early-bitcoin"

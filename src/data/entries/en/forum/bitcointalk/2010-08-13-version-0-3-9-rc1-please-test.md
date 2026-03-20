@@ -1,7 +1,8 @@
 ---
 title: "Version 0.3.9 rc1, please test"
 date: 2010-08-13T17:40:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=806.msg9046#msg9046"
 author: "Satoshi Nakamoto"
 participants:

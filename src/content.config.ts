@@ -2,17 +2,15 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-const sourceEnum = z.enum([
-  'cryptography-mailing-list',
-  'bitcoin-list',
-  'p2p-research-list',
-  'bitcointalk',
-  'p2pfoundation',
+const typeEnum = z.enum([
+  'forum-post',
+  'mailing-list',
   'correspondence',
   'whitepaper',
-  'sourceforge',
-  'aftermath',
   'bip',
+  'article',
+  'biography',
+  'court-document',
 ]);
 
 const participantSchema = z.object({
@@ -23,7 +21,8 @@ const participantSchema = z.object({
 const entrySchema = z.object({
   title: z.string(),
   date: z.coerce.date(),
-  source: sourceEnum,
+  type: typeEnum,
+  source: z.string(),
   sourceUrl: z.string().url(),
   sourceStatus: z.enum(['available', 'archived', 'unavailable']).default('available'),
   author: z.string(),
@@ -50,9 +49,6 @@ const entrySchema = z.object({
     pages: z.number(),
     checksum: z.string(),
   }).optional(),
-  aftermathType: z.enum([
-    'court-testimony', 'blog', 'interview', 'media', 'retrospective', 'article', 'academic', 'biography',
-  ]).optional(),
   translationStatus: z.enum([
     'complete', 'partial', 'machine', 'pending',
   ]).optional(),

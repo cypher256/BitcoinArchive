@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin.org backups"
 date: 2010-12-20T18:10:06Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

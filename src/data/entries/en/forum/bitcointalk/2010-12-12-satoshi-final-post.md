@@ -1,7 +1,8 @@
 ---
 title: "Re: Added some DoS limits, removed safe mode"
 date: 2010-12-12T18:22:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2228.msg29479#msg29479"
 author: "Satoshi Nakamoto"
 participants:

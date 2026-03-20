@@ -1,7 +1,8 @@
 ---
 title: "Sergio Demian Lerner coins the term 'Patoshi' and updates estimate to ~22,000 blocks / ~1.1 million BTC"
 date: 2019-04-16T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitslog"
 sourceUrl: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
 author: "Sergio Demian Lerner"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "Six years after his original analysis, Lerner published 'The Return of the Deniers and the Revenge of Patoshi,' coining the term 'Patoshi' (Pattern + Satoshi), updating his estimate to ~22,000 blocks / ~1.1 million BTC, and providing new evidence: zero timestamp inversions between Patoshi blocks versus 224 among non-Patoshi blocks, proving a single PC clock."
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "patoshi"
   - "mining"

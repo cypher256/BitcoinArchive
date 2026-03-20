@@ -1,7 +1,8 @@
 ---
 title: "Re: Warning: don't use -server or bitcoind on a machine where you web browse"
 date: 2010-07-24T02:29:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=479.msg5432#msg5432"
 author: "Satoshi Nakamoto"
 participants:

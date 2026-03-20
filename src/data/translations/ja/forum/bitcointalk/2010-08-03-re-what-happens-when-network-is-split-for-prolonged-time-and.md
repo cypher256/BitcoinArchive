@@ -1,7 +1,8 @@
 ---
 title: "Re: ネットワークが長期間分断されて再接続された場合どうなるか？"
 date: 2010-08-03T22:45:07.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=661.msg7356#msg7356"
 author: "Satoshi Nakamoto"
 participants:

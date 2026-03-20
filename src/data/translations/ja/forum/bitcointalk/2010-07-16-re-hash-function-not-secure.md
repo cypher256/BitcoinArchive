@@ -1,7 +1,8 @@
 ---
 title: "Re: Hash()関数は安全ではない"
 date: 2010-07-16T16:13:53.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=360.msg3520#msg3520"
 author: "Satoshi Nakamoto"
 participants:

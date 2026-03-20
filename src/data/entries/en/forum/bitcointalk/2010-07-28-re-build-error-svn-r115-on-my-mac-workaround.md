@@ -1,7 +1,8 @@
 ---
 title: "Re: Build error SVN r115 on my Mac: workaround"
 date: 2010-07-28T21:23:23.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=604.msg6273#msg6273"
 author: "Satoshi Nakamoto"
 participants:

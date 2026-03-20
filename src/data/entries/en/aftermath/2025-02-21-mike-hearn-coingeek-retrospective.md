@@ -1,7 +1,8 @@
 ---
 title: "Mike Hearn reflects on Satoshi's personality and Bitcoin's social failures"
 date: 2025-02-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "coingeek"
 sourceUrl: "https://coingeek.com/bitcoin-retrospective-and-focus-on-the-internet-future-video/"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "In a CoinGeek interview, Mike Hearn offers rare reflections on Satoshi Nakamoto's personality, describing him as someone who enjoyed experimenting and discussing possibilities but grew frustrated when evangelical personalities arrived in the community."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "mike-hearn"
   - "retrospective"

@@ -1,7 +1,8 @@
 ---
 title: "Re: Linux - linux-0.1.6-test2 添付"
 date: 2009-11-11T00:41:06Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

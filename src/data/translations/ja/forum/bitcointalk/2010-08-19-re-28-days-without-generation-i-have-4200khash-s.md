@@ -1,7 +1,8 @@
 ---
 title: "Re: 28日間生成なし、4200khash/sあるのに"
 date: 2010-08-19T19:40:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=862.msg10290#msg10290"
 author: "Satoshi Nakamoto"
 participants:

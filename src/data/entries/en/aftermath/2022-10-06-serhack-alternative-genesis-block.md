@@ -1,7 +1,8 @@
 ---
 title: "The alternative genesis block — Satoshi's pre-release test block from September 2008"
 date: 2022-10-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "serhack"
 sourceUrl: "https://serhack.me/articles/story-behind-alternative-genesis-block-bitcoin/"
 author: "SerHack"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "hal-finney"
 description: "SerHack published an analysis of a pre-release Bitcoin genesis block dated September 10, 2008 — discovered in source code Satoshi shared privately in November 2008. The test block had a completely different hash, trivially easy difficulty, and an initial block reward of 10,000 units. The September 10 date coincides with Lehman Brothers announcing $3.9 billion in losses."
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "genesis-block"
   - "pre-release"

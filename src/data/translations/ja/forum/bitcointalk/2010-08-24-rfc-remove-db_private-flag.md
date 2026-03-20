@@ -1,7 +1,8 @@
 ---
 title: "RFC: DB_PRIVATEフラグの削除"
 date: 2010-08-24T16:03:13.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=920.msg11087#msg11087"
 author: "jgarzik"
 participants:

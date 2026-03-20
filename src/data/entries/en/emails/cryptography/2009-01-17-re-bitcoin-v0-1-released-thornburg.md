@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin v0.1 released"
 date: 2009-01-17T16:49:45Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015016.html"
 author: "Jonathan Thornburg"
 participants:

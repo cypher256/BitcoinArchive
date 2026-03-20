@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin v0.1 released - Upgrade issues"
 date: 2009-01-12T21:40:58Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Dustin Trammell"
 participants:

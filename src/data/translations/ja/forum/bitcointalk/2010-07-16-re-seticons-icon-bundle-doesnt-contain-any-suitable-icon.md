@@ -1,7 +1,8 @@
 ---
 title: "Re: \"SetIcons(): icon bundle doesn't contain any suitable icon\""
 date: 2010-07-16T02:43:29.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=391.msg3362#msg3362"
 author: "Satoshi Nakamoto"
 participants:

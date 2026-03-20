@@ -47,6 +47,11 @@ export async function getEntriesBySource(lang: Lang, source: string) {
   return entries.filter((e) => e.data.source === source);
 }
 
+export async function getEntriesByType(lang: Lang, type: string) {
+  const entries = await getEntries(lang);
+  return entries.filter((e) => e.data.type === type);
+}
+
 export function formatDate(date: Date, lang: Lang): string {
   return date.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-US', {
     year: 'numeric',
@@ -63,7 +68,7 @@ export function formatDateShort(date: Date): string {
 /** Entries excluding biographies — use for all listing/counting contexts */
 export async function getDisplayEntries(lang: Lang): Promise<CollectionEntry<'entries' | 'entries_ja'>[]> {
   const entries = await getEntries(lang);
-  return entries.filter((e) => e.data.aftermathType !== 'biography');
+  return entries.filter((e) => e.data.type !== 'biography');
 }
 
 export async function getBiographyForParticipant(
@@ -73,7 +78,7 @@ export async function getBiographyForParticipant(
   const entries = await getEntries(lang);
   return entries.find(
     (e) =>
-      e.data.aftermathType === 'biography' &&
+      e.data.type === 'biography' &&
       e.data.participants[0]?.slug === participantSlug,
   );
 }

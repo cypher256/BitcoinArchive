@@ -1,7 +1,8 @@
 ---
 title: "China bans ICOs and orders crypto exchange closures"
 date: 2017-09-04T00:00:00Z
-source: aftermath
+type: "article"
+source: "cnbc"
 sourceUrl: "https://www.cnbc.com/2017/09/04/chinese-icos-china-bans-fundraising-through-initial-coin-offerings-report-says.html"
 author: "CNBC"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "pboc"
 description: "Seven Chinese government regulators jointly banned all ICOs and ordered domestic cryptocurrency exchanges to shut down. China had been the world's largest Bitcoin mining hub and trading market. Bitcoin's price dropped sharply, but miners relocated to other countries and trading shifted to decentralized platforms."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "china-ban"
   - "ico-ban"

@@ -1,7 +1,8 @@
 ---
 title: "Chain Bulletinがサトシ・ナカモトのロンドン居住説の証拠を提示"
 date: 2020-11-23T00:00:00Z
-source: aftermath
+type: "article"
+source: "chain-bulletin"
 sourceUrl: "https://chainbulletin.com/satoshi-nakamoto-lived-in-london-while-working-on-bitcoin-heres-how-we-know"
 author: "Doncho Karaivanov"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "doncho-karaivanov"
 description: "ドンチョ・カライヴァノフが、サトシの投稿・コミット・メール742件の活動インスタンスを分析し、The Timesの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "satoshi-identity"
   - "timestamp"

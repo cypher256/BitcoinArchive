@@ -1,7 +1,8 @@
 ---
 title: "ギャビンのCIAプレゼンテーション計画"
 date: 2010-11-10T03:49:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1735.msg21271#msg21271"
 author: "genjix"
 participants:

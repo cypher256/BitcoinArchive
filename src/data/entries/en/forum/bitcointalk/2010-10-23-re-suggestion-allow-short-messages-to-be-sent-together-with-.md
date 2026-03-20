@@ -1,7 +1,8 @@
 ---
 title: "Re: Suggestion: Allow short messages to be sent together with bitcoins ?"
 date: 2010-10-23T19:02:57.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1545.msg18250#msg18250"
 author: "Satoshi Nakamoto"
 participants:

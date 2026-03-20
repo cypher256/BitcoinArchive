@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.10.1 Question on where block should be"
 date: 2010-08-16T00:37:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=828.msg9612#msg9612"
 author: "Satoshi Nakamoto"
 participants:

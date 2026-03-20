@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoind as daemon in OSX"
 date: 2010-09-06T21:52:45.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=992.msg12135#msg12135"
 author: "Satoshi Nakamoto"
 participants:

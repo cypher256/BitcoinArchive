@@ -1,7 +1,8 @@
 ---
 title: "Re: On IRC bootstrapping"
 date: 2010-03-16T19:48:47.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=84.msg729#msg729"
 author: "Satoshi Nakamoto"
 participants:

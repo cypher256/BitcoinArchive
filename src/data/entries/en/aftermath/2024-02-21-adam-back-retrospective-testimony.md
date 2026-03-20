@@ -1,7 +1,8 @@
 ---
 title: "Adam Back's retrospective on his early interaction with Satoshi"
 date: 2024-02-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "cointelegraph"
 sourceUrl: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 author: "Adam Back"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "wei-dai"
 description: "Adam Back reflects on his August 2008 email exchange with Satoshi Nakamoto, his regret at not reading the Bitcoin whitepaper carefully, and his testimony during the COPA v. Wright trial where the complete email chain was made public."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "adam-back"
   - "hashcash"

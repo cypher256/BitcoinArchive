@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai's retrospective statements on Satoshi Nakamoto and b-money"
 date: 2014-01-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 author: "Wei Dai"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Wei Dai's reflections on Satoshi Nakamoto and on why b-money was never implemented, from a LessWrong Q&A thread. Dai stated that Satoshi 'didn't even read my article before reinventing the idea himself,' and later explained that b-money 'wasn't a complete practical design yet' and that he had 'grown somewhat disillusioned with cryptoanarchy' by the time he finished writing it up."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "b-money"

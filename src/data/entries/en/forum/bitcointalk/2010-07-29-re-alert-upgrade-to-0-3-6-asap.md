@@ -1,7 +1,8 @@
 ---
 title: "Re: *** ALERT *** Upgrade to 0.3.6 ASAP!"
 date: 2010-07-29T21:20:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=626.msg6490#msg6490"
 author: "Satoshi Nakamoto"
 participants:

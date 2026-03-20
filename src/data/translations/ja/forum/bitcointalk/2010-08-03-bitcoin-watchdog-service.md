@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin監視サービス"
 date: 2010-08-03T08:53:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=691.msg7283#msg7283"
 author: "MoonShadow"
 participants:

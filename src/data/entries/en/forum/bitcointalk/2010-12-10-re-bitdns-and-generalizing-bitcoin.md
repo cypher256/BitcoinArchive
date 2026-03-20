@@ -1,7 +1,8 @@
 ---
 title: "Re: BitDNS and Generalizing Bitcoin"
 date: 2010-12-10T17:29:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28917#msg28917"
 author: "Satoshi Nakamoto"
 participants:

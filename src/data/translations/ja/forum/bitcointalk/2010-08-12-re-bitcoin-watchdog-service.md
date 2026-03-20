@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin監視サービス"
 date: 2010-08-12T21:34:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=691.msg8922#msg8922"
 author: "Satoshi Nakamoto"
 participants:

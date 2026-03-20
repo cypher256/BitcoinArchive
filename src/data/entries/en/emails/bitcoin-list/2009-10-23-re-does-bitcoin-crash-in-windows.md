@@ -1,7 +1,8 @@
 ---
 title: "Re: [bitcoin-list] Does Bitcoin Crash in Windows?"
 date: 2009-10-23T23:57:51.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/23824064/"
 author: "Satoshi Nakamoto"
 participants:

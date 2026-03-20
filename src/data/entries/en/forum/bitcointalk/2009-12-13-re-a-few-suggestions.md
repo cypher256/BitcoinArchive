@@ -1,7 +1,8 @@
 ---
 title: "Re: A few suggestions"
 date: 2009-12-13T16:51:25.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=12.msg62#msg62"
 author: "Satoshi Nakamoto"
 participants:

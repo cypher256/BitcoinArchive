@@ -1,7 +1,8 @@
 ---
 title: "ライト対Cobra — bitcoin.orgホワイトペーパー著作権訴訟"
 date: 2021-06-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"
 author: "CoinDesk"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "クレイグ・ライトがbitcoin.orgの匿名運営者（Cobra）をビットコインホワイトペーパーの著作権侵害で訴えた。Cobraは身元を守るため法廷に出頭せず、2021年6月28日に欠席判決が下された。裁判所はbitcoin.orgにホワイトペーパーの削除を命じた。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "craig-wright"
   - "cobra"

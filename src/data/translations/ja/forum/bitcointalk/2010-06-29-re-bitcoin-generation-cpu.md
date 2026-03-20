@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン生成とCPU使用率"
 date: 2010-06-29T17:55:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=228.msg1977#msg1977"
 author: "Satoshi Nakamoto"
 participants:

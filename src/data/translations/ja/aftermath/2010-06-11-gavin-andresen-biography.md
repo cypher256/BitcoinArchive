@@ -1,7 +1,8 @@
 ---
 title: "ギャビン・アンドレセン（1966–） — サトシの離脱後にビットコインのリードメンテナーとなったソフトウェア開発者"
 date: 2010-06-11T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 author: "Gavin Andresen"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "ギャビン・アンドレセン（1966年生まれ）：ソフトウェア開発者、Wasabi Software創業者、Bitcoin Faucetの作成者、そしてサトシ・ナカモトがプロジェクトのリーダーシップを委ねた人物。ビットコインリポジトリのコミット権限を付与され、2011年から2014年までリードメンテナーを務めた。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "gavin-andresen"
   - "biography"

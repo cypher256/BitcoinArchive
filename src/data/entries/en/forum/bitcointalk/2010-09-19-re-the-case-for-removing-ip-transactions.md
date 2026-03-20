@@ -1,7 +1,8 @@
 ---
 title: "Re: The case for removing IP transactions"
 date: 2010-09-19T21:49:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1048.msg13219#msg13219"
 author: "Satoshi Nakamoto"
 participants:

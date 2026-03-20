@@ -1,7 +1,8 @@
 ---
 title: "Re: ファイルホスティングとプロキシサービスのアイデア"
 date: 2010-03-24T18:02:55.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=83.msg810#msg810"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコインは普通株に最も似ている"
 date: 2010-08-27T16:39:26.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=845.msg11403#msg11403"
 author: "Satoshi Nakamoto"
 participants:

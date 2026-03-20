@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoin.org drupal users"
 date: 2010-07-17T01:27:38Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

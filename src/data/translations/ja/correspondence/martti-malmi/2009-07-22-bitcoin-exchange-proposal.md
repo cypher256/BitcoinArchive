@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン - 最初の取引所提案"
 date: 2009-07-22T10:10:02Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

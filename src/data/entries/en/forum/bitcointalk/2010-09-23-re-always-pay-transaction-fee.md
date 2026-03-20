@@ -1,7 +1,8 @@
 ---
 title: "Re: Always pay transaction fee?"
 date: 2010-09-23T16:08:35.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=994.msg13829#msg13829"
 author: "Satoshi Nakamoto"
 participants:

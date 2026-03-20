@@ -1,7 +1,8 @@
 ---
 title: "Re: What was the bitcoin.org outage?"
 date: 2010-12-06T11:33:01Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

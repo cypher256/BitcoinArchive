@@ -1,7 +1,8 @@
 ---
 title: "ミシェル・バウエンス（1958–） — ビットコインの稼働状況をサトシに尋ねたP2P Foundation創設者"
 date: 2009-02-12T02:15:30Z
-source: aftermath
+type: "biography"
+source: "p2pfoundation"
 sourceUrl: "https://wiki.p2pfoundation.net/Michel_Bauwens"
 author: "Michel Bauwens"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "michel-bauwens"
 description: "ミシェル・バウエンス：2009年2月にP2P Researchメーリングリストでサトシ・ナカモトとやり取りし、ビットコインの稼働状況について質問したベルギーの政治理論家、P2P Foundation創設者。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "michel-bauwens"
   - "biography"

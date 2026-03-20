@@ -1,7 +1,8 @@
 ---
 title: "Re: a simple traffic load test run"
 date: 2010-07-25T15:29:52.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=567.msg5698#msg5698"
 author: "Satoshi Nakamoto"
 participants:

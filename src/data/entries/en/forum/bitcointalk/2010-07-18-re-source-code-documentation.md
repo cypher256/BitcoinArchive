@@ -1,7 +1,8 @@
 ---
 title: "Re: Source code documentation"
 date: 2010-07-18T15:12:54.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=393.msg3999#msg3999"
 author: "Satoshi Nakamoto"
 participants:

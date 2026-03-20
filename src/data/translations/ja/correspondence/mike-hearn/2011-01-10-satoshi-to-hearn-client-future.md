@@ -1,7 +1,8 @@
 ---
 title: "クライアント実装と2100万枚のコイン上限"
 date: 2011-01-10T16:34:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Satoshi Nakamoto"
 participants:

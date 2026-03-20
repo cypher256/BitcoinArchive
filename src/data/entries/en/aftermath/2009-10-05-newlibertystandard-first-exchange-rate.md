@@ -1,7 +1,8 @@
 ---
 title: "First Bitcoin exchange rate — $1 = 1,309.03 BTC"
 date: 2009-10-05T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=42.0"
 author: "NewLibertyStandard"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "NewLibertyStandard published the first-ever exchange rate for Bitcoin: $1 = 1,309.03 BTC ($0.000764 per BTC). The rate was calculated based on the electricity cost required to mine Bitcoin — a rudimentary but historically significant first attempt to assign monetary value to Bitcoin."
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "newlibertystandard"
   - "exchange-rate"

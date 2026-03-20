@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.3.19 is released"
 date: 2010-12-13T16:11:53Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

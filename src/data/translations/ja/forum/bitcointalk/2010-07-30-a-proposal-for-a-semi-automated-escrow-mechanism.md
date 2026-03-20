@@ -1,7 +1,8 @@
 ---
 title: "半自動エスクローメカニズムの提案"
 date: 2010-07-30T10:29:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=645.msg6704#msg6704"
 author: "Olipro"
 participants:

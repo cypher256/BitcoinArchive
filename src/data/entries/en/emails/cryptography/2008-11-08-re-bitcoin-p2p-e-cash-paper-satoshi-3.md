@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin P2P e-cash paper"
 date: 2008-11-08T18:54:38Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014831.html"
 author: "Satoshi Nakamoto"
 participants:

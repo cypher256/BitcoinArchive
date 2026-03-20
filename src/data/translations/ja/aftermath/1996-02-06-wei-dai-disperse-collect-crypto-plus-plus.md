@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイがDisperse/Collectを発表 ― 自作のCrypto++ライブラリを使用"
 date: 1996-02-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "cypherpunks-mailing-list"
 sourceUrl: "http://cypherpunks.venona.com/archive/1996/02/msg00444.html"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "サイファーパンクメーリングリストにおけるウェイ・ダイのDisperse/Collect 1.0の発表。この投稿は「my own Crypto++ library（自分のCrypto++ライブラリ）」と明示的に言及しており、ダイが理論家ではなく、実際にソフトウェアを作成しリリースしていたプログラマーであったことを確認する。この文脈は、彼が後にb-moneyを実装しなかった理由を理解する上で不可欠だ。"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "wei-dai"
   - "crypto-plus-plus"

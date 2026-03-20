@@ -1,7 +1,8 @@
 ---
 title: "URI-scheme for bitcoin"
 date: 2010-02-16T11:51:42.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=55.msg377#msg377"
 author: "ec"
 participants:

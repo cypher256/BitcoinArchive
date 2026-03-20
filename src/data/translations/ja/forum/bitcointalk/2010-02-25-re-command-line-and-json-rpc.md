@@ -1,7 +1,8 @@
 ---
 title: "Re: コマンドラインとJSON-RPC"
 date: 2010-02-25T22:54:17.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=63.msg539#msg539"
 author: "Satoshi Nakamoto"
 participants:

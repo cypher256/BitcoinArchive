@@ -1,7 +1,8 @@
 ---
 title: "Client implementations and the 21 million coin limit"
 date: 2011-01-10T16:34:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Satoshi Nakamoto"
 participants:

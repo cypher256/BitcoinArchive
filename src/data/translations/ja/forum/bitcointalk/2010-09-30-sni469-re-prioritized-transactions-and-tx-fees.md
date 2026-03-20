@@ -1,7 +1,8 @@
 ---
 title: "Re: 優先トランザクションと取引手数料"
 date: 2010-09-30T18:22:22.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1314.msg14734#msg14734"
 author: "Satoshi Nakamoto"
 participants:

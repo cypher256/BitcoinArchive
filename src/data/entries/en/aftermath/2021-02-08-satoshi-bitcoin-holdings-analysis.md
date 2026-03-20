@@ -1,7 +1,8 @@
 ---
 title: "Analyses estimate Satoshi Nakamoto's Bitcoin holdings at approximately 1.1 million BTC"
 date: 2021-02-08T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitmex-research"
 sourceUrl: "https://blog.bitmex.com/satoshis-1-million-bitcoin/"
 author: "BitMEX Research"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "Multiple blockchain analyses estimate that Satoshi Nakamoto mined approximately 1.1 million bitcoins in Bitcoin's earliest days, with none of these coins having ever been spent."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "satoshi-nakamoto"
   - "mining"

@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai's critique of Bitcoin's monetary policy and regret over not responding to Satoshi"
 date: 2013-04-21T19:44:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/P9jggxRZTMJcjnaPw/bitcoins-are-not-digital-greenbacks"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "Wei Dai's comments on the LessWrong post 'Bitcoins are not digital greenbacks,' in which he argued that Bitcoin has 'failed with regard to its monetary policy' due to price volatility, and revealed that he never responded to Satoshi's 2008 email asking for comments — regretting that he 'could have dissuaded him (or them) from the fixed supply of money idea.'"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "b-money"

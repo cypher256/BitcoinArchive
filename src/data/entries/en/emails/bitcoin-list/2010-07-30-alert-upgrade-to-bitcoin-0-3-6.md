@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Alert: upgrade to bitcoin 0.3.6"
 date: 2010-07-30T06:02:38.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/25843947/"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Version 0.3.10 - block 74638 overflow PATCH!"
 date: 2010-08-15T23:48:22.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=827.msg9590#msg9590"
 author: "Satoshi Nakamoto"
 participants:

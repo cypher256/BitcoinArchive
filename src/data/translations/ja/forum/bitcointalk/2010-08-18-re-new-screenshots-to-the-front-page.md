@@ -1,7 +1,8 @@
 ---
 title: "Re: フロントページに新しいスクリーンショットを？"
 date: 2010-08-18T16:58:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=850.msg10067#msg10067"
 author: "Satoshi Nakamoto"
 participants:

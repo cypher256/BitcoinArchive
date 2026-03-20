@@ -1,7 +1,8 @@
 ---
 title: "警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）"
 date: 2010-07-19T16:01:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=479.msg4263#msg4263"
 author: "Satoshi Nakamoto"
 participants:

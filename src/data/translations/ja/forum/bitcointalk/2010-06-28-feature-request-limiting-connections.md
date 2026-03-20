@@ -1,7 +1,8 @@
 ---
 title: "機能リクエスト: 接続数の制限"
 date: 2010-06-28T15:41:52.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=223.msg1859#msg1859"
 author: "lachesis"
 participants:

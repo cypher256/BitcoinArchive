@@ -1,7 +1,8 @@
 ---
 title: "この奇妙な生成は何ですか？"
 date: 2010-02-10T09:31:40.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=48.msg310#msg310"
 author: "theymos"
 participants:

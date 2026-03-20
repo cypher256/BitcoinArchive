@@ -1,7 +1,8 @@
 ---
 title: "Re: How To Make a Distributed BitCoin Escrow Service"
 date: 2010-09-26T17:34:26.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1283.msg14136#msg14136"
 author: "Satoshi Nakamoto"
 participants:

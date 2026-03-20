@@ -1,7 +1,8 @@
 ---
 title: "Zetaboards forum"
 date: 2009-11-14T05:46:22Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

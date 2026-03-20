@@ -1,7 +1,8 @@
 ---
 title: "Major Meltdown"
 date: 2010-06-22T22:42:04.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=202.msg1692#msg1692"
 author: "llama"
 participants:

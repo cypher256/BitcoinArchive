@@ -1,7 +1,8 @@
 ---
 title: "Re: Current Bitcoin economic model is unsustainable"
 date: 2010-02-21T05:44:24.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=57.msg415#msg415"
 author: "Satoshi Nakamoto"
 participants:

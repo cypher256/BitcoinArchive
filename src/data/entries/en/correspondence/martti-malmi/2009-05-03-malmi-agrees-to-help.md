@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin - Agreement to develop website and FAQ"
 date: 2009-05-03T05:08:36Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

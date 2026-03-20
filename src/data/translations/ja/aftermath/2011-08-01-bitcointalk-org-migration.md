@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Forumがbitcoin.org/smfからbitcointalk.orgに移行"
 date: 2011-08-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Michael Marquardt"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "マルッティ・マルミがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに設置したBitcoin Forumが、2011年8月に独立ドメインbitcointalk.orgに移行した。移行はフォーラム管理者のTheymos（マイケル・マーカート）が管理し、既存の投稿、スレッド、ユーザーアカウントはすべて保存された。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "bitcointalk"
   - "forum"

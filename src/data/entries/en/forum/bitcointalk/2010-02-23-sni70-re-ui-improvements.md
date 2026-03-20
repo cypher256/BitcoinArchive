@@ -1,7 +1,8 @@
 ---
 title: "Re: UI improvements"
 date: 2010-02-23T16:53:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=60.msg446#msg446"
 author: "Satoshi Nakamoto"
 participants:

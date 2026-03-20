@@ -1,7 +1,8 @@
 ---
 title: "Re: Builds for Ubuntu?"
 date: 2010-08-03T20:56:11.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=454.msg7328#msg7328"
 author: "Satoshi Nakamoto"
 participants:

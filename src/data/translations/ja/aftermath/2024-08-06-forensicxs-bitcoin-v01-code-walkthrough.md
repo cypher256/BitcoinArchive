@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin Core v0.1 コードウォークスルー — 31,794行を分析"
 date: 2024-08-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "forensicxs"
 sourceUrl: "https://www.forensicxs.com/bitcoin-core-v0-1-a-code-walkthrough/"
 author: "Forensicxs"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Forensicxsがビットコインv0.1の31,794行のソースコードの包括的な行単位ウォークスルーを公開した。サトシ・ナカモトのオリジナルコードベースの最も詳細な公開分析の一つであり、暗号学、ブロックチェーン操作、ネットワーキング、ウォレット管理、GUIにわたる全31ファイルを網羅した。"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "bitcoin-v0.1"
   - "source-code"

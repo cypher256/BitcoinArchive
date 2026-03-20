@@ -1,7 +1,8 @@
 ---
 title: "Re: 交換方法"
 date: 2010-03-23T17:35:34.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=87.msg807#msg807"
 author: "Satoshi Nakamoto"
 participants:

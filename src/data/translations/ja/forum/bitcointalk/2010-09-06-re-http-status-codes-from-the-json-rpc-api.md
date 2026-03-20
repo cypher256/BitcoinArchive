@@ -1,7 +1,8 @@
 ---
 title: "Re: JSON-RPC APIからのHTTPステータスコード"
 date: 2010-09-06T21:21:21.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=969.msg12130#msg12130"
 author: "Satoshi Nakamoto"
 participants:

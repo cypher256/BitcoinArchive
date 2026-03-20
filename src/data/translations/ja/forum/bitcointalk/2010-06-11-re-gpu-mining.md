@@ -1,7 +1,8 @@
 ---
 title: "Re: GPU マイニングが必要です！"
 date: 2010-06-11T21:48:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=124.msg1100#msg1100"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] 警告: Bitcoin 0.3.6にアップグレードしてください"
 date: 2010-07-30T06:02:38.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/25843947/"
 author: "Satoshi Nakamoto"
 participants:

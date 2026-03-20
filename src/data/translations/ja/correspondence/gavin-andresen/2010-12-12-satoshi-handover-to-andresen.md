@@ -1,7 +1,8 @@
 ---
 title: "リーダーシップの移行とプロジェクト管理の引き継ぎ"
 date: 2010-12-12T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 author: "Gavin Andresen"
 participants:

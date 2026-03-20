@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] Bitcoin 0.3.19 リリース"
 date: 2010-12-13T16:12:09.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/26744510/"
 author: "Satoshi Nakamoto"
 participants:

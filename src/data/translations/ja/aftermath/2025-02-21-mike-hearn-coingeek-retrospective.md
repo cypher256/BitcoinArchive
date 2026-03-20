@@ -1,7 +1,8 @@
 ---
 title: "マイク・ハーン、サトシの人物像とビットコインの社会的失敗を振り返る"
 date: 2025-02-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "coingeek"
 sourceUrl: "https://coingeek.com/bitcoin-retrospective-and-focus-on-the-internet-future-video/"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "CoinGeekのインタビューで、マイク・ハーンがサトシ・ナカモトの人物像について稀有な証言を語った。サトシは実験と可能性の議論を楽しむ人物だったが、福音主義的な人物たちがコミュニティに現れると苛立ちを覚え姿を消したと述べた。"
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "mike-hearn"
   - "retrospective"

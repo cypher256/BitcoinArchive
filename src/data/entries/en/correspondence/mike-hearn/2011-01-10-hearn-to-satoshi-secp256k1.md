@@ -1,7 +1,8 @@
 ---
 title: "Security of secp256k1 curve"
 date: 2011-01-10T16:48:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Mike Hearn"
 participants:

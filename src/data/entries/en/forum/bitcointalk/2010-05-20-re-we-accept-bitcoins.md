@@ -1,7 +1,8 @@
 ---
 title: "Re: We accept Bitcoins"
 date: 2010-05-20T21:43:42.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=30.msg1169#msg1169"
 author: "Satoshi Nakamoto"
 participants:

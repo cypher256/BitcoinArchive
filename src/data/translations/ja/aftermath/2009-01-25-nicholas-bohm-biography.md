@@ -1,7 +1,8 @@
 ---
 title: "ニコラス・ボーム（生没年不明） — 初期のBitcoinソフトウェアの問題を報告した弁護士"
 date: 2009-01-25T10:17:52Z
-source: aftermath
+type: "biography"
+source: "nakamotoinstitute"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/8/"
 author: "Nicholas Bohm"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "nicholas-bohm"
 description: "ニコラス・ボーム：2009年1月にbitcoin-listメーリングリストでBitcoinの動作問題を報告し、サトシ・ナカモトから直接返信を受けた英国の商事弁護士・電子商取引政策アドバイザー。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "nicholas-bohm"
   - "biography"

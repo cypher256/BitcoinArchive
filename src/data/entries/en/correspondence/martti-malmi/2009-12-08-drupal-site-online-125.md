@@ -1,7 +1,8 @@
 ---
 title: "Re: Drupal site online"
 date: 2009-12-08T10:50:20Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

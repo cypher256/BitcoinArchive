@@ -1,7 +1,8 @@
 ---
 title: "Re: [p2p-research] Bitcoin open source implementation of P2P currency"
 date: 2009-02-12T19:08:24.000Z
-source: p2p-research-list
+type: "mailing-list"
+source: "p2p-research-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/36/"
 author: "Satoshi Nakamoto"
 participants:

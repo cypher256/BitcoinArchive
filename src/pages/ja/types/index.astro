@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../../../i18n/utils';
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const entries = await getDisplayEntries('en');
+
+const typeCounts = new Map<string, number>();
+for (const entry of entries) {
+  typeCounts.set(entry.data.type, (typeCounts.get(entry.data.type) || 0) + 1);
+}
+const types = Array.from(typeCounts.entries()).sort((a, b) => b[1] - a[1]);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${t('nav.types' as any)} - ${t('site.title')}`,
+  "url": absoluteUrl('/types/', lang),
+  "description": t('site.description'),
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": t('nav.types' as any),
+    "numberOfItems": types.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": types.map(([type], index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": absoluteUrl(`/types/${type}/`, lang),
+      "name": t(`type.${type}` as any) || type,
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title={`${t('nav.types' as any)} - ${t('site.title')}`}
+  description={t('site.description')}
+  lang={lang}
+  alternateEn={absoluteUrl('/types/', 'en')}
+  structuredData={structuredData}
+>
+  <div class="container">
+    <h1>{t('nav.types' as any)}</h1>
+    <ul class="type-list">
+      {types.map(([type, count]) => (
+        <li>
+          <a href={localePath(`/types/${type}/`, lang)}>
+            {t(`type.${type}` as any) || type}
+          </a>
+          <span class="count">({count})</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .type-list { list-style: none; padding: 0; }
+  .type-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.1rem;
+  }
+  .count { color: var(--color-text-muted); font-size: 0.9rem; }
+</style>

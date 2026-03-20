@@ -1,7 +1,8 @@
 ---
 title: "Dustin Trammell recounts being the possible second node on the Bitcoin network"
 date: 2021-10-23T00:00:00Z
-source: aftermath
+type: "article"
+source: "stephan-livera"
 sourceUrl: "https://stephanlivera.com/episode/314/"
 author: "Dustin Trammell"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "In a detailed podcast interview, security researcher Dustin Trammell ('Druid') describes his experience as possibly the second node on the Bitcoin network. He recalls seeing only 'one other node' for 4-6 hours after first connecting, not realizing mining was disabled by default, and not starting to mine until 4-5 days later."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "early-adopter"
   - "mining"

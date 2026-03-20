@@ -1,7 +1,8 @@
 ---
 title: "サトシがネットワーク防衛のためにGPUマイニングコードを共有"
 date: 2010-05-17T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "cointelegraph"
 sourceUrl: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 author: "Satoshi Nakamoto"
 participants:

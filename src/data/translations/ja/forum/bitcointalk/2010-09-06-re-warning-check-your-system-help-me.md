@@ -1,7 +1,8 @@
 ---
 title: "Re: 警告：システムを確認してください（助けてください）"
 date: 2010-09-06T21:41:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=960.msg12132#msg12132"
 author: "Satoshi Nakamoto"
 participants:

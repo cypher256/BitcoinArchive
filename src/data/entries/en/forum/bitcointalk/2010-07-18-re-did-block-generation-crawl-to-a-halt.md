@@ -1,7 +1,8 @@
 ---
 title: "Re: Did block generation crawl to a halt?"
 date: 2010-07-18T23:35:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=441.msg4095#msg4095"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: [Bitcoin 0.3.0] ランタイムエラー"
 date: 2010-07-15T14:05:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=373.msg3150#msg3150"
 author: "Satoshi Nakamoto"
 participants:

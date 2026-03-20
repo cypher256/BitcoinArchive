@@ -1,7 +1,8 @@
 ---
 title: "Re: Is my second Transaction working correctly?"
 date: 2010-01-05T20:00:46.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=17.msg85#msg85"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: -datadirの指定で問題が発生"
 date: 2010-07-28T20:58:26.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=601.msg6268#msg6268"
 author: "Satoshi Nakamoto"
 participants:

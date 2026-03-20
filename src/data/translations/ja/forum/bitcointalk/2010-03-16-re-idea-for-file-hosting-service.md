@@ -1,7 +1,8 @@
 ---
 title: "Re: ファイルホスティングサービスのアイデア"
 date: 2010-03-16T20:17:34.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=83.msg731#msg731"
 author: "Satoshi Nakamoto"
 participants:

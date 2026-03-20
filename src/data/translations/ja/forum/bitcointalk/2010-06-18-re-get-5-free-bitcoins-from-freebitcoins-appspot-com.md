@@ -1,7 +1,8 @@
 ---
 title: "Re: freebitcoins.appspot.comから5ビットコインを無料で入手"
 date: 2010-06-18T23:08:34.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=183.msg1620#msg1620"
 author: "Satoshi Nakamoto"
 participants:

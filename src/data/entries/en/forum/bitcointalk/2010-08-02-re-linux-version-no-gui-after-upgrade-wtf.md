@@ -1,7 +1,8 @@
 ---
 title: "Re: Linux version => No GUI after upgrade. WTF?"
 date: 2010-08-02T17:39:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=655.msg7057#msg7057"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: resource hog"
 date: 2010-07-14T16:29:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=327.msg2871#msg2871"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Newsweekがサトシ・ナカモトの正体はドリアン・ナカモトだと主張"
 date: 2014-03-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "newsweek"
 sourceUrl: "https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html"
 author: "Leah McGrath Goodman"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Newsweekが「ビットコインの顔」と題した記事を掲載し、カリフォルニア州テンプルシティ在住の64歳の日系アメリカ人、ドリアン・プレンティス・サトシ・ナカモトをビットコインの創設者と特定した。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "dorian-nakamoto"
   - "identity"

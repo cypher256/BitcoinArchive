@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin v0.1 released - Proof hashes and upgrade"
 date: 2009-01-12T21:29:52Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Dustin Trammell"
 participants:

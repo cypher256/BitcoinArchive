@@ -1,7 +1,8 @@
 ---
 title: "Re: A proposal for a semi-automated Escrow mechanism"
 date: 2010-08-05T18:08:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=645.msg7712#msg7712"
 author: "Satoshi Nakamoto"
 participants:

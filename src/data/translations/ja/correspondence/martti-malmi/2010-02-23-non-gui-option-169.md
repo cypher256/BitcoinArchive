@@ -1,7 +1,8 @@
 ---
 title: "Re: 非GUIオプション"
 date: 2010-02-23T01:41:01Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

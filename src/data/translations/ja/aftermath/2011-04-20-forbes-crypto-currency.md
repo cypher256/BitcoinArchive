@@ -1,7 +1,8 @@
 ---
 title: "「Crypto Currency」 — Forbes誌記事"
 date: 2011-04-20T00:00:00Z
-source: aftermath
+type: "article"
+source: "forbes"
 sourceUrl: "https://www.forbes.com/forbes/2011/0509/technology-psilocybin-bitcoins-gavin-andresen-crypto-currency.html"
 author: "Andy Greenberg"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Forbesに掲載されたビットコインに関する最初の主要な印刷雑誌記事の一つ。アンディ・グリーンバーグがギャビン・アンドレセンにインタビューし、アンドレセンはビットコインを「金よりも優れた金」と表現した。この記事は大きな主流メディアの注目を集め、サトシの公の場からの撤退に寄与した可能性がある。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "forbes"
   - "gavin-andresen"

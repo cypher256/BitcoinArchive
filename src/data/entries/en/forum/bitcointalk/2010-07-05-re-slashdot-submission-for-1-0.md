@@ -1,7 +1,8 @@
 ---
 title: "Re: Slashdot Submission for 1.0"
 date: 2010-07-05T21:31:14.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=234.msg1976#msg1976"
 author: "Satoshi Nakamoto"
 participants:

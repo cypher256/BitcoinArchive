@@ -1,7 +1,8 @@
 ---
 title: "Re: Transaction Overload Solution"
 date: 2010-08-05T17:38:21.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=713.msg7706#msg7706"
 author: "Satoshi Nakamoto"
 participants:

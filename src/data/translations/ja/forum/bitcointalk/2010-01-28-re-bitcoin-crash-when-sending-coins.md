@@ -1,7 +1,8 @@
 ---
 title: "Re: コイン送信時のBitcoinクラッシュ"
 date: 2010-01-28T23:08:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=27.msg170#msg170"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: DEB Package?"
 date: 2010-02-12T02:33:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=49.msg315#msg315"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "フラン・フィニー（生没年不明） — ハル・フィニーの妻、その遺志の守護者"
 date: 2014-08-28T00:00:00Z
-source: aftermath
+type: "biography"
+source: "alcor"
 sourceUrl: "https://www.alcor.org/resources/blog/member-patient-profile-hal-finney/"
 author: "Cryonics Magazine"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "フラン・フィニー：サトシ以外で初めてビットコインを実行したハル・フィニーの妻。ビットコイン最初期の瞬間を目の当たりにし、ハルのALS闘病を支え、2014年の死去とクライオニクス保存後、彼の遺志の守護者となった。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "fran-finney"
   - "hal-finney"

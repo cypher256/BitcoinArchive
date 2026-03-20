@@ -1,7 +1,8 @@
 ---
 title: "Re: Project Developers"
 date: 2010-12-07T16:12:58Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

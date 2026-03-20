@@ -1,7 +1,8 @@
 ---
 title: "Re: Transaction / spam flood attack currently under way"
 date: 2010-11-19T23:50:24.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1850.msg22952#msg22952"
 author: "Satoshi Nakamoto"
 participants:

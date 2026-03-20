@@ -1,7 +1,8 @@
 ---
 title: "Re: 鍵ペアの生成と安全性"
 date: 2010-07-18T16:44:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=300.msg2555#msg2555"
 author: "Satoshi Nakamoto"
 participants:

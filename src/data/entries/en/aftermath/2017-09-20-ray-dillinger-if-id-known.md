@@ -1,7 +1,8 @@
 ---
 title: "\"If I'd Known What We Were Starting\" (Ray Dillinger)"
 date: 2017-09-20T00:00:00Z
-source: aftermath
+type: "article"
+source: "linkedin"
 sourceUrl: "https://www.linkedin.com/pulse/id-known-what-we-were-starting-ray-dillinger"
 author: "Ray Dillinger"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "hal-finney"
 description: "Ray Dillinger's retrospective on his role in Bitcoin's earliest days: reviewing the blockchain code, his division of labor with Hal Finney, and his reflections on Satoshi's integrity — 'He wasn't selling coins, he was giving them away for solving hashes.'"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "ray-dillinger"
   - "code-review"

@@ -1,7 +1,8 @@
 ---
 title: "COPA trial — Martti Malmi testifies and publishes 260 Satoshi emails"
 date: 2024-02-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "opencrypto"
 sourceUrl: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 author: "Martti Malmi"
 participants:
@@ -15,7 +16,6 @@ participants:
     slug: "adam-back"
 description: "During Day 13 of the COPA v. Craig Wright trial, Martti Malmi testified via video link and submitted 260 emails (140,000 words) exchanged with Satoshi Nakamoto between May 2009 and February 2011. The complete email archive was published on GitHub."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "copa-trial"
   - "martti-malmi"

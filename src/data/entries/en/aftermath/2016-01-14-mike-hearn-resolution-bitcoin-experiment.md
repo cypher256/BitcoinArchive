@@ -1,7 +1,8 @@
 ---
 title: "Mike Hearn declares 'Bitcoin has failed' and sells all his coins"
 date: 2016-01-14T00:00:00Z
-source: aftermath
+type: "article"
+source: "plan99"
 sourceUrl: "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Mike Hearn publishes 'The resolution of the Bitcoin experiment,' declaring that Bitcoin has failed due to governance breakdown and the block size stalemate. He announces he has sold all his coins and is leaving the project."
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "mike-hearn"
   - "block-size"

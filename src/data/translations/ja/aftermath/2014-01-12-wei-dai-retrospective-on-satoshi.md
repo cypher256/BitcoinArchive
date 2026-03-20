@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイのサトシ・ナカモトとb-moneyに関する回顧的発言"
 date: 2014-01-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 author: "Wei Dai"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "LessWrongのQ&Aスレッドでのサトシ・ナカモトおよびb-moneyが実装されなかった理由に関するウェイ・ダイの考察。ダイは、サトシが「私の記事を読む前にアイデアを独自に再発明しました」と述べ、さらにb-moneyは「完全な実用的設計ではありませんでした」こと、「書き上げた時点でクリプトアナーキーへの幻滅を感じていました」ことを説明した。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "b-money"

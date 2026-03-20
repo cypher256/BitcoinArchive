@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin - FAQ draft and investment language warning"
 date: 2009-05-04T15:51:00Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

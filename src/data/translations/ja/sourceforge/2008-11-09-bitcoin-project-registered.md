@@ -1,7 +1,8 @@
 ---
 title: "ビットコインプロジェクトがSourceForgeに登録"
 date: 2008-11-09T00:00:00Z
-source: sourceforge
+type: "forum-post"
+source: "sourceforge"
 sourceUrl: "https://sourceforge.net/projects/bitcoin/"
 author: "Satoshi Nakamoto"
 participants:

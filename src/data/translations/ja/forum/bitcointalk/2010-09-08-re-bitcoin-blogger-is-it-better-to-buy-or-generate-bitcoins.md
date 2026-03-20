@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコインブロガー：ビットコインは購入と生成のどちらが良いか？"
 date: 2010-09-08T20:27:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=955.msg12248#msg12248"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: generation slowed down dramatically"
 date: 2010-02-23T00:49:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=61.msg433#msg433"
 author: "Satoshi Nakamoto"
 participants:

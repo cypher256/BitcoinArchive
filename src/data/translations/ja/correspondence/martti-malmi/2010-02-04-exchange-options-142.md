@@ -1,7 +1,8 @@
 ---
 title: "取引所の選択肢"
 date: 2010-02-04T01:32:50Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

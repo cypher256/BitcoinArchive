@@ -1,7 +1,8 @@
 ---
 title: "Re: A newb's test - anyone want to buy a picture for $1?"
 date: 2010-01-29T00:22:13.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=25.msg173#msg173"
 author: "Satoshi Nakamoto"
 participants:

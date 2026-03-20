@@ -1,7 +1,8 @@
 ---
 title: "Re: Having problems specifing -datadir"
 date: 2010-08-12T21:43:29.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=601.msg8924#msg8924"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3.10.1 ブロックの位置に関する質問"
 date: 2010-08-16T00:28:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=828.msg9608#msg9608"
 author: "Satoshi Nakamoto"
 participants:

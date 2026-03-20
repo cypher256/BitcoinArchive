@@ -1,7 +1,8 @@
 ---
 title: "Re: ブロックチェーンのチェックポイント化"
 date: 2010-08-16T20:20:53.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=834.msg9816#msg9816"
 author: "Satoshi Nakamoto"
 participants:

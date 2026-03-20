@@ -1,7 +1,8 @@
 ---
 title: "Re: 0.3ほぼ完成"
 date: 2010-06-24T17:40:05.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1748#msg1748"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "NewLibertyStandard (dates unknown) — Anonymous creator of the first Bitcoin exchange rate"
 date: 2009-10-05T00:00:00Z
-source: aftermath
+type: "biography"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?action=profile;u=26"
 author: "NewLibertyStandard"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "NewLibertyStandard: Pseudonymous individual who published the first known Bitcoin-to-US-dollar exchange rate on October 5, 2009 ($1 = 1,309.03 BTC), based on electricity cost of mining. Conducted the first known bitcoin-to-fiat transaction with Martti Malmi and proposed the BTC ticker symbol."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "newlibertystandard"
   - "biography"

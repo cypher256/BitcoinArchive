@@ -1,7 +1,8 @@
 ---
 title: "Bitcoinはミーゼスの回帰定理に違反しない"
 date: 2010-07-26T17:09:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=583.msg5984#msg5984"
 author: "xc"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: The dollar cost of bitmining energy"
 date: 2010-07-16T17:58:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=403.msg3545#msg3545"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin Address Collisions"
 date: 2010-02-23T16:26:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=62.msg443#msg443"
 author: "Satoshi Nakamoto"
 participants:

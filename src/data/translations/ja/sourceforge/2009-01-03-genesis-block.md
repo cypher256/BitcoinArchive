@@ -1,7 +1,8 @@
 ---
 title: "ジェネシスブロックの採掘"
 date: 2009-01-03T18:15:05Z
-source: sourceforge
+type: "forum-post"
+source: "sourceforge"
 sourceUrl: "https://sourceforge.net/projects/bitcoin/"
 author: "Satoshi Nakamoto"
 participants:

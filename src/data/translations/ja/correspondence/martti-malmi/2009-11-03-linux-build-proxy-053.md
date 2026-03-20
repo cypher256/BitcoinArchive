@@ -1,7 +1,8 @@
 ---
 title: "Re: Linuxビルド、プロキシ"
 date: 2009-11-03T15:53:25Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

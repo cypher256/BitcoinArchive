@@ -1,7 +1,8 @@
 ---
 title: "Newsweek claims to identify Satoshi Nakamoto as Dorian Nakamoto"
 date: 2014-03-06T00:00:00Z
-source: aftermath
+type: "article"
+source: "newsweek"
 sourceUrl: "https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html"
 author: "Leah McGrath Goodman"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Newsweek publishes 'The Face Behind Bitcoin,' identifying Dorian Prentice Satoshi Nakamoto, a 64-year-old Japanese-American man living in Temple City, California, as Bitcoin's creator."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "dorian-nakamoto"
   - "identity"

@@ -1,7 +1,8 @@
 ---
 title: "セルジオ・デミアン・ラーナーがサトシのマイニングに第二の指紋を発見 — ノンスLSBパターン"
 date: 2013-09-03T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitslog"
 sourceUrl: "https://bitslog.com/2013/09/03/new-mystery-about-satoshi/"
 author: "Sergio Demian Lerner"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "ExtraNonce分析から5か月後、ラーナーはサトシのノンス値の最下位バイト（LSB）が非ランダムな分布を示すことを発見 — [0..9]と[19..58]の約50個の値に制限されていた。ExtraNonceとは独立した第二の指紋であり、サトシがノンス空間を分割した独自のマイニングソフトウェアを使用していたことを証明した。"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "patoshi"
   - "mining"

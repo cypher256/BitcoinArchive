@@ -1,7 +1,8 @@
 ---
 title: "Re: Where is the separate discussion devoted to possible Bitcoin weaknesses."
 date: 2010-08-11T22:40:25.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=788.msg8804#msg8804"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Fran Finney's account of Hal Finney's life — Cryonics Magazine profile"
 date: 2019-04-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "alcor"
 sourceUrl: "https://www.alcor.org/resources/blog/member-patient-profile-hal-finney/"
 author: "Cryonics Magazine"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "fran-finney"
 description: "Cryonics Magazine published an extensive profile of Hal Finney based on interviews with his wife Fran Finney. The profile covered their meeting at Caltech, Hal's career at PGP Corporation, his excitement about Bitcoin's launch, his ALS diagnosis, and his cryopreservation by Alcor."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "hal-finney"
   - "fran-finney"

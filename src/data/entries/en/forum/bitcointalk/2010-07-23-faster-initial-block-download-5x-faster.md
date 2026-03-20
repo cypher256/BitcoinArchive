@@ -1,7 +1,8 @@
 ---
 title: "Faster initial block download (5x faster)"
 date: 2010-07-23T18:24:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=550.msg5349#msg5349"
 author: "Satoshi Nakamoto"
 participants:

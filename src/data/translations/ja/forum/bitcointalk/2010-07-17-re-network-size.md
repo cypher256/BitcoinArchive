@@ -1,7 +1,8 @@
 ---
 title: "Re: ネットワークサイズ"
 date: 2010-07-17T23:25:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=419.msg3830#msg3830"
 author: "Satoshi Nakamoto"
 participants:

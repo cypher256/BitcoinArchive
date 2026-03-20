@@ -1,7 +1,8 @@
 ---
 title: "Re: No blocks downloaded... why?"
 date: 2010-07-14T16:22:03.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=323.msg2867#msg2867"
 author: "Satoshi Nakamoto"
 participants:

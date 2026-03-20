@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoin.orgの障害の原因は？"
 date: 2010-12-07T02:37:38Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

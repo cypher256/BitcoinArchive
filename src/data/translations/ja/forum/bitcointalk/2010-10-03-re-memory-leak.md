@@ -1,7 +1,8 @@
 ---
 title: "Re: メモリリーク"
 date: 2010-10-03T22:07:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1023.msg15150#msg15150"
 author: "Satoshi Nakamoto"
 participants:

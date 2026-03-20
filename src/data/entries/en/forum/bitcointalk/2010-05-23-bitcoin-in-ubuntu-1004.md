@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin in Ubuntu 10.04"
 date: 2010-05-23T07:28:12.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=149.msg1203#msg1203"
 author: "NewLibertyStandard"
 participants:

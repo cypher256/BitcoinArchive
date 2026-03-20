@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import EntryCard from '../../../components/EntryCard.astro';
+import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
+import { buildThreadInfo, collapseThreads } from '../../../data/threads';
+
+export async function getStaticPaths() {
+  const { getDisplayEntries } = await import('../../../i18n/utils');
+  const entries = await getDisplayEntries('ja');
+  const types = [...new Set(entries.map((e) => e.data.type))];
+  const enEntries = await getDisplayEntries('en');
+  const enTypes = new Set(enEntries.map((e) => e.data.type));
+  return types.map((type) => ({
+    params: { type },
+    props: { type, hasEn: enTypes.has(type) },
+  }));
+}
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const { type, hasEn } = Astro.props;
+const entries = await getDisplayEntries(lang);
+const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
+const filtered = entries.filter((e) => e.data.type === type);
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
+const typeLabel = t(`type.${type}` as any) || type;
+---
+
+<BaseLayout
+  title={`${typeLabel} - ${t('site.title')}`}
+  description={`${typeLabel}のエントリー一覧`}
+  lang={lang}
+  alternateEn={hasEn ? absoluteUrl(`/types/${type}/`, 'en') : undefined}
+>
+  <div class="container">
+    <h1>{typeLabel}</h1>
+    <p class="entry-count">{displayEntries.length} エントリー</p>
+    {displayEntries.map((entry) => {
+      const tid = entry.data.threadId;
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      return (
+        <EntryCard
+          id={entry.id}
+          title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
+          date={entry.data.date}
+          author={entry.data.author}
+          source={entry.data.source}
+          description={entry.data.description}
+          isSatoshi={entry.data.isSatoshi}
+          lang={lang}
+          threadId={isThread ? tid : undefined}
+          threadCount={isThread ? msgCount : undefined}
+          participants={entry.data.participants}
+          entryType={entry.data.type}
+        />
+      );
+    })}
+  </div>
+</BaseLayout>
+
+<style>
+  h1 { margin-bottom: 0.25rem; }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+  }
+</style>

@@ -1,7 +1,8 @@
 ---
 title: "Mt. Gox files for bankruptcy — 850,000 BTC lost"
 date: 2014-02-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "npr"
 sourceUrl: "https://www.npr.org/sections/thetwo-way/2014/02/28/283863219/mtgox-files-for-bankruptcy-nearly-500m-of-bitcoins-lost"
 author: "NPR"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "mark-karpeles"
 description: "Mt. Gox, once the world's largest Bitcoin exchange handling approximately 70% of all Bitcoin transactions, filed for bankruptcy in Tokyo. CEO Mark Karpeles revealed that approximately 850,000 BTC (worth ~$450 million) had been lost. The collapse was the most significant crisis Bitcoin had faced since the 2010 value overflow incident."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "mt-gox"
   - "mark-karpeles"

@@ -1,7 +1,8 @@
 ---
 title: "Re: Could the bitcoin network be destroyed..."
 date: 2010-05-16T21:01:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=130.msg1130#msg1130"
 author: "Satoshi Nakamoto"
 participants:

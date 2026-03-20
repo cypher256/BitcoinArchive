@@ -1,7 +1,8 @@
 ---
 title: "Wright v. Cobra — bitcoin.org whitepaper copyright lawsuit"
 date: 2021-06-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"
 author: "CoinDesk"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Craig Wright sued the pseudonymous operator of bitcoin.org (Cobra) over Bitcoin whitepaper copyright. Cobra refused to reveal his identity to defend himself, resulting in a default judgment on June 28, 2021. The court ordered bitcoin.org to remove the whitepaper."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "craig-wright"
   - "cobra"

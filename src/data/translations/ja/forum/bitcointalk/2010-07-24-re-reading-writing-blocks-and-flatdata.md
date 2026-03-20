@@ -1,7 +1,8 @@
 ---
 title: "Re: ブロックの読み書きとFLATDATA"
 date: 2010-07-24T04:04:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=555.msg5450#msg5450"
 author: "Satoshi Nakamoto"
 participants:

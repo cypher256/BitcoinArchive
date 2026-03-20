@@ -1,7 +1,8 @@
 ---
 title: "Slashdotがビットコイン記事を掲載 — 初の大手テックメディア報道"
 date: 2010-07-11T00:00:00Z
-source: aftermath
+type: "article"
+source: "slashdot"
 sourceUrl: "https://news.slashdot.org/story/10/07/11/1747245/bitcoin-releases-version-03"
 author: "Slashdot"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "当時最も影響力のあるテクノロジーニュースサイトの一つであるSlashdotが、Bitcoin v0.3に関する記事を掲載した。「Slashdot効果」によりダウンロード数と新規ユーザーが急増し、ビットコインにとって初の重要なテックメディア露出となった。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "slashdot"
   - "media"

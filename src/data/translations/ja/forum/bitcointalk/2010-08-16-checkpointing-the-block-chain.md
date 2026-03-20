@@ -1,7 +1,8 @@
 ---
 title: "ブロックチェーンのチェックポイント化"
 date: 2010-08-16T00:40:23.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=834.msg9712#msg9712"
 author: "mkrogh"
 participants:

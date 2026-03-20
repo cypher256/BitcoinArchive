@@ -1,7 +1,8 @@
 ---
 title: "大規模Twitterハッキングでビットコインが史上最大のソーシャルメディアセキュリティ侵害に利用される"
 date: 2020-07-15T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://blog.twitter.com/en_us/topics/company/2020/an-update-on-our-security-incident"
 author: "Twitter"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "twitter"
 description: "ハッカーがバラク・オバマ、ジョー・バイデン、イーロン・マスク、Appleなどの著名なTwitterアカウントを乗っ取り、ビットコイン詐欺のメッセージを投稿した。プラットフォーム史上最大のセキュリティ侵害。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "twitter"
   - "hack"

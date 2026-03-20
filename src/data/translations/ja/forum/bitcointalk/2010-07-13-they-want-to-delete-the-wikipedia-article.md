@@ -1,7 +1,8 @@
 ---
 title: "WikipediaのBitcoin記事"
 date: 2010-07-13T22:21:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=342.msg2771#msg2771"
 author: "Giulio Prisco"
 participants:

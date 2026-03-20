@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin用Protocol Buffers"
 date: 2010-08-02T20:22:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=632.msg7090#msg7090"
 author: "Satoshi Nakamoto"
 participants:

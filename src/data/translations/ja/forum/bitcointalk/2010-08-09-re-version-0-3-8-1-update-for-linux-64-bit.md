@@ -1,7 +1,8 @@
 ---
 title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
 date: 2010-08-09T20:55:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=765.msg8422#msg8422"
 author: "Satoshi Nakamoto"
 participants:

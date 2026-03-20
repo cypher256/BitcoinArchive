@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン v0.1 リリース - コインの成熟システム"
 date: 2009-01-12T18:52:45Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

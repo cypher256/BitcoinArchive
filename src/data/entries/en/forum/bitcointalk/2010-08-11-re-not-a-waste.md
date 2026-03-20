@@ -1,7 +1,8 @@
 ---
 title: "Re: On The Longer-Term Potential For Bitcoin"
 date: 2010-08-11T04:22:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=764.msg8543#msg8543"
 author: "Satoshi Nakamoto"
 participants:

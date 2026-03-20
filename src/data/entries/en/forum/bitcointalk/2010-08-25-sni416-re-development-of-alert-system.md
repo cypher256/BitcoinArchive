@@ -1,7 +1,8 @@
 ---
 title: "Re: Development of alert system"
 date: 2010-08-25T16:56:15.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=898.msg11155#msg11155"
 author: "Satoshi Nakamoto"
 participants:

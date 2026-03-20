@@ -1,7 +1,8 @@
 ---
 title: "Re: blocks minus 1"
 date: 2010-08-16T17:06:27.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=837.msg9774#msg9774"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin open source implementation of P2P currency"
 date: 2009-11-22T18:56:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=5.0"
 author: "Satoshi Nakamoto"
 participants:

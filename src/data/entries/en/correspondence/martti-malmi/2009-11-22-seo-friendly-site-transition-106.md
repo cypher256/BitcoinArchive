@@ -1,7 +1,8 @@
 ---
 title: "SEO friendly site transition"
 date: 2009-11-22T19:47:56Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

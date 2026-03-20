@@ -1,7 +1,8 @@
 ---
 title: "Gavin Andresen recalls working with Satoshi"
 date: 2016-05-02T00:00:00Z
-source: aftermath
+type: "article"
+source: "gavin-andresen-blog"
 sourceUrl: "https://gavinthink.blogspot.com/"
 author: "Gavin Andresen"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Gavin Andresen, who was given commit access to Bitcoin by Satoshi and became the lead developer, recalls his interactions with Satoshi and the transition of leadership."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "gavin-andresen"
   - "leadership"

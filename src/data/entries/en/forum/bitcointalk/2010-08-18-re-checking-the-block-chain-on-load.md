@@ -1,7 +1,8 @@
 ---
 title: "Re: Checking the block chain on load"
 date: 2010-08-18T18:28:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=841.msg10082#msg10082"
 author: "Satoshi Nakamoto"
 participants:

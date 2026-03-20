@@ -1,7 +1,8 @@
 ---
 title: "ハル・フィニー逝去"
 date: 2014-08-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "extropians"
 sourceUrl: "https://www.extropians.com/2014/08/28/hal-finney-1956-2014/"
 author: "Fran Finney"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "fran-finney"
 description: "サトシ以外で最初にビットコインを稼働させ、最初のビットコイン取引の受取人であったハル・フィニーが、58歳でALSにより逝去した。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "obituary"

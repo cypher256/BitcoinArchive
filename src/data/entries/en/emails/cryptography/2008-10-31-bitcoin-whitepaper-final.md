@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin: A Peer-to-Peer Electronic Cash System (Whitepaper)"
 date: 2008-10-31T18:10:00Z
-source: whitepaper
+type: "whitepaper"
+source: "bitcoin-org"
 sourceUrl: "https://bitcoin.org/bitcoin.pdf"
 author: "Satoshi Nakamoto"
 participants:

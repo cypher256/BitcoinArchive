@@ -1,7 +1,8 @@
 ---
 title: "Repost: Request: Make this anonymous?"
 date: 2009-11-22T18:32:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=7.msg30#msg30"
 author: "Satoshi Nakamoto"
 participants:

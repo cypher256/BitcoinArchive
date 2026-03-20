@@ -1,7 +1,8 @@
 ---
 title: "Re: How divisible are bitcoins - the technical side"
 date: 2010-09-23T18:39:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1271.msg13848#msg13848"
 author: "Satoshi Nakamoto"
 participants:

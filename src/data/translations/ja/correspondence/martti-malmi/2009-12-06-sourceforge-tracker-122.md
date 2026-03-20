@@ -1,7 +1,8 @@
 ---
 title: "Re: Sourceforgeトラッカー"
 date: 2009-12-06T03:21:00Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

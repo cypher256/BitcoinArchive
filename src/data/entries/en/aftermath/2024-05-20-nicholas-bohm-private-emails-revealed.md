@@ -1,7 +1,8 @@
 ---
 title: "COPA evidence reveals Nicholas Bohm's previously unpublished emails with Satoshi"
 date: 2024-05-20T00:00:00Z
-source: aftermath
+type: "court-document"
+source: "bitcoin-defense"
 sourceUrl: "https://bitcoindefense.org/assets/documents/COPA-v-Wright-Main-Judgment.pdf"
 author: "Nicholas Bohm"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "The COPA v Wright record revealed that Nicholas Bohm, previously known only for a public January 2009 bitcoin-list bug report, had also exchanged a series of private emails with Satoshi Nakamoto. The exhibits show direct troubleshooting about routing, port forwarding, unaccepted blocks, and network isolation, including Satoshi's remark that there might have been almost nobody else running Bitcoin in July 2009."
 isSatoshi: false
-aftermathType: "court-testimony"
 tags:
   - "nicholas-bohm"
   - "copa-trial"

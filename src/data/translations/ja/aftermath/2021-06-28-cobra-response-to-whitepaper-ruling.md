@@ -1,7 +1,8 @@
 ---
 title: "「正義は財布の大きさで決まる」 — ホワイトペーパー判決へのCobraの反応"
 date: 2021-06-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://x.com/CobraBitcoin/status/1409605494629613571"
 author: "Cobra"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "ロンドン高等法院がbitcoin.orgにビットコインホワイトペーパーの削除を命じた後、CobraはTwitterで法制度を痛烈に批判し、暗号学によるルールは法廷のルールより優れていると宣言した。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "cobra"
   - "craig-wright"

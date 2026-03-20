@@ -1,7 +1,8 @@
 ---
 title: "Re: スケーラビリティとトランザクションレート"
 date: 2010-07-29T02:00:38.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=532.msg6306#msg6306"
 author: "Satoshi Nakamoto"
 participants:

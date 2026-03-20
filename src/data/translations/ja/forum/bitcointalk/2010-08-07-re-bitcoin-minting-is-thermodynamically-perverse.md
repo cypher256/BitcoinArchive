@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoinの鋳造は熱力学的に逆説的"
 date: 2010-08-07T17:46:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=721.msg8114#msg8114"
 author: "Satoshi Nakamoto"
 participants:

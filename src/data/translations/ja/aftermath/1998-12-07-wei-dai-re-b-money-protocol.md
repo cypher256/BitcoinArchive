@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイによるb-moneyの限界と展望に関する返信"
 date: 1998-12-07T23:20:00Z
-source: aftermath
+type: "article"
+source: "cypherpunks-mailing-list"
 sourceUrl: "http://cypherpunks.venona.com/archive/1998/12/msg00261.html"
 author: "Wei Dai"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "adam-back"
 description: "サイファーパンクメーリングリストでのアダム・バックへのウェイ・ダイの返信。b-moneyの実用上の限界について議論し、「b-moneyはせいぜいニッチな通貨/契約執行メカニズムにしかなりません」と認め、「今では政府の暴力独占は差し引きでプラスだと思うようになりました」と政治的見解の変化を明かした。"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "wei-dai"
   - "b-money"

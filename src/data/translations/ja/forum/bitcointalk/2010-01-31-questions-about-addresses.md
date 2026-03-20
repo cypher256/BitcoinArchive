@@ -1,7 +1,8 @@
 ---
 title: "アドレスに関する質問"
 date: 2010-01-31T17:17:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=34.msg185#msg185"
 author: "Sabunir"
 participants:

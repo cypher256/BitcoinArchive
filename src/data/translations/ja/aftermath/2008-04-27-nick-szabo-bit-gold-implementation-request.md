@@ -1,7 +1,8 @@
 ---
 title: "「誰かコードを書いてくれないか？」 — ニック・サボ、bit goldの実装を求める"
 date: 2008-04-27T00:00:00Z
-source: aftermath
+type: "article"
+source: "unenumerated"
 sourceUrl: "https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html"
 author: "Nick Szabo"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ニック・サボが自身のブログ「Unenumerated」のコメント欄で、1998年に設計したデジタル通貨bit goldの実装への協力を求めた。公に応じる者はいなかった。6ヶ月後、サトシ・ナカモトがビットコインのホワイトペーパーを公開した。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "nick-szabo"
   - "bit-gold"

@@ -1,7 +1,8 @@
 ---
 title: "マイク・ハーン、COPA対ライト裁判で証言：「サトシと話している感覚はなかった」"
 date: 2024-02-22T00:00:00Z
-source: aftermath
+type: "court-document"
+source: "bitcoin-defense"
 sourceUrl: "https://bitcoindefense.org/assets/documents/First-Witness-Statement-of-Michael-Christopher-Hearn.pdf"
 author: "Mike Hearn"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "craig-wright"
 description: "マイク・ハーンがCOPA対クレイグ・ライト裁判で証言。サトシ・ナカモトとの直接のやり取りを回顧し、2016年のライトとの夕食でチェック質問にすべて不合格だったと述べた。ライトにはサトシのメールに見られた思考の明晰さがなかったと結論付けた。"
 isSatoshi: false
-aftermathType: "court-testimony"
 tags:
   - "mike-hearn"
   - "copa-trial"

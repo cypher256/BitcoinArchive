@@ -1,7 +1,8 @@
 ---
 title: "Re: CAboutDialogにおけるUTF-8からANSIへのハック"
 date: 2010-02-05T18:39:18Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

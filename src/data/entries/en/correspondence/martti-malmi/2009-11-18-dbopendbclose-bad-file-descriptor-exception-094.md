@@ -1,7 +1,8 @@
 ---
 title: "Re: Db::open/Db::close \"Bad file descriptor\" exception"
 date: 2009-11-18T01:50:24Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

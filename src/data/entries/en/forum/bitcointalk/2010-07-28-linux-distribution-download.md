@@ -1,7 +1,8 @@
 ---
 title: "Linux distribution download"
 date: 2010-07-28T18:22:37.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=612.msg6312#msg6312"
 author: "Odin"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: バグ：トランザクション中にwallet.datで「未成熟な」コインが失われる"
 date: 2010-07-30T19:19:05.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=642.msg6701#msg6701"
 author: "Satoshi Nakamoto"
 participants:

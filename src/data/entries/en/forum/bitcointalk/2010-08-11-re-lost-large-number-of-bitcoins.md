@@ -1,7 +1,8 @@
 ---
 title: "Re: Lost large number of bitcoins"
 date: 2010-08-11T21:46:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=782.msg8803#msg8803"
 author: "Satoshi Nakamoto"
 participants:

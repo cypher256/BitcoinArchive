@@ -1,7 +1,8 @@
 ---
 title: "Re: Version 0.3.13, please upgrade"
 date: 2010-10-03T21:43:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1327.msg15147#msg15147"
 author: "Satoshi Nakamoto"
 participants:

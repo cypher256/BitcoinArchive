@@ -1,7 +1,8 @@
 ---
 title: "Re: overflow bug SERIOUS"
 date: 2010-08-15T22:58:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9573#msg9573"
 author: "Satoshi Nakamoto"
 participants:

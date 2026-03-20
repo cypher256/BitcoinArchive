@@ -1,7 +1,8 @@
 ---
 title: "Re: [パッチ] 自動ブロック検証"
 date: 2010-08-16T17:08:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=832.msg9775#msg9775"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] アラート: Bitcoin 0.3.6にアップグレードしてください"
 date: 2010-07-30T05:34:38Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

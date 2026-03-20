@@ -1,7 +1,8 @@
 ---
 title: "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
 date: 2010-11-26T17:32:01.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1931.msg24662#msg24662"
 author: "Satoshi Nakamoto"
 participants:

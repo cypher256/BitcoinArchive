@@ -1,7 +1,8 @@
 ---
 title: "チャージバック機能の欠如"
 date: 2009-04-25T21:30:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread2.html"
 author: "Mike Hearn"
 participants:

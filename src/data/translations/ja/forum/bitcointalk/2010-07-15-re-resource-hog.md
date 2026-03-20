@@ -1,7 +1,8 @@
 ---
 title: "Re: リソースの大量消費"
 date: 2010-07-15T14:59:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=327.msg3162#msg3162"
 author: "Satoshi Nakamoto"
 participants:

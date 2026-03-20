@@ -1,7 +1,8 @@
 ---
 title: "\"Justice depends on who's got the bigger wallet\" — Cobra's response to whitepaper ruling"
 date: 2021-06-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://x.com/CobraBitcoin/status/1409605494629613571"
 author: "Cobra"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "After the London High Court ordered bitcoin.org to remove the Bitcoin whitepaper, Cobra responded on Twitter with a scathing critique of the legal system and a declaration that cryptographic rules are superior to court-enforced rules."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "cobra"
   - "craig-wright"

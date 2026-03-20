@@ -1,7 +1,8 @@
 ---
 title: "サトシ・ナカモトのP2P Foundationプロフィールにログイン活動が検出"
 date: 2016-12-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "p2pfoundation"
 sourceUrl: "http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
 author: "Unknown"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシ・ナカモトのP2P Foundationプロフィールに2016年末にログイン活動が確認された。2014年の「私はドリアン・ナカモトではない」という投稿以来、数年ぶりの動きであり、アカウントのセキュリティに関する憶測が再燃した。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "satoshi-nakamoto"
   - "p2p-foundation"

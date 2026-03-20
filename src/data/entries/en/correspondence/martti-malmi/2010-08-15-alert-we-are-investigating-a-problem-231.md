@@ -1,7 +1,8 @@
 ---
 title: "[bitcoin-list] ALERT - we are investigating a problem"
 date: 2010-08-15T20:37:28Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

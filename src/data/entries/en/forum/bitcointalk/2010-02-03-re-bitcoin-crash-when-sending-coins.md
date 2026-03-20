@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin crash when sending coins"
 date: 2010-02-03T23:29:57.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=27.msg219#msg219"
 author: "Satoshi Nakamoto"
 participants:

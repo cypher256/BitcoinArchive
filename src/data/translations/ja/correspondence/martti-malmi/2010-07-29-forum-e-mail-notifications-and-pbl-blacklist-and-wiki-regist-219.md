@@ -1,7 +1,8 @@
 ---
 title: "フォーラムのメール通知とPBLブラックリストとWiki登録"
 date: 2010-07-29T02:18:56Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

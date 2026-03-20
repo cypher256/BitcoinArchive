@@ -1,7 +1,8 @@
 ---
 title: "Michel Bauwens (1958–) — P2P Foundation founder who asked Satoshi about Bitcoin's operational status"
 date: 2009-02-12T02:15:30Z
-source: aftermath
+type: "biography"
+source: "p2pfoundation"
 sourceUrl: "https://wiki.p2pfoundation.net/Michel_Bauwens"
 author: "Michel Bauwens"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "michel-bauwens"
 description: "Michel Bauwens: Belgian political theorist and founder of the P2P Foundation who engaged with Satoshi Nakamoto on the P2P Research mailing list in February 2009, asking about Bitcoin's operational readiness."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "michel-bauwens"
   - "biography"

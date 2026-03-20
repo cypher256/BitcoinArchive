@@ -1,7 +1,8 @@
 ---
 title: "Not a suggestion"
 date: 2010-08-09T20:45:45.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg8477#msg8477"
 author: "Red"
 participants:

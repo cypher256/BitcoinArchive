@@ -1,7 +1,8 @@
 ---
 title: "Re: Make your \"we accept Bitcoin\" logo"
 date: 2010-02-24T21:53:52.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=45.msg507#msg507"
 author: "Satoshi Nakamoto"
 participants:

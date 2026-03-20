@@ -1,7 +1,8 @@
 ---
 title: "Bitcoinアドレスの衝突"
 date: 2010-02-22T18:46:44.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=62.msg435#msg435"
 author: "NewLibertyStandard"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "マイク・ハーン、「ビットコインは失敗した」と宣言し全コインを売却"
 date: 2016-01-14T00:00:00Z
-source: aftermath
+type: "article"
+source: "plan99"
 sourceUrl: "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "マイク・ハーンが「The resolution of the Bitcoin experiment」を公開し、ガバナンスの崩壊とブロックサイズの膠着状態を理由にビットコインは失敗したと宣言。全コインを売却しプロジェクトを離脱した。"
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "mike-hearn"
   - "block-size"

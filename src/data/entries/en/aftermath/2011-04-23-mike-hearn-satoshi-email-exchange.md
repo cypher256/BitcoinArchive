@@ -1,7 +1,8 @@
 ---
 title: "Mike Hearn's email exchange with Satoshi Nakamoto"
 date: 2011-04-23T00:00:00Z
-source: aftermath
+type: "article"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread1.html"
 author: "Mike Hearn"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Mike Hearn's private email correspondence with Satoshi Nakamoto, in which Satoshi stated he had 'moved on to other things' and that Bitcoin was 'in good hands with Gavin and everyone.'"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "mike-hearn"
   - "email-archive"

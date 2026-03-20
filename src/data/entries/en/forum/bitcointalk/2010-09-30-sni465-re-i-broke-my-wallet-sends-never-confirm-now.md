@@ -1,7 +1,8 @@
 ---
 title: "Re: I broke my wallet, sends never confirm now."
 date: 2010-09-30T16:59:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1306.msg14720#msg14720"
 author: "Satoshi Nakamoto"
 participants:

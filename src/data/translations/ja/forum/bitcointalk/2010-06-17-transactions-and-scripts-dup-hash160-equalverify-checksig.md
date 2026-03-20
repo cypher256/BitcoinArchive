@@ -1,7 +1,8 @@
 ---
 title: "トランザクションとスクリプト：DUP HASH160 ... EQUALVERIFY CHECKSIG"
 date: 2010-06-17T02:38:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=195.msg1606#msg1606"
 author: "Gavin Andresen"
 participants:

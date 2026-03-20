@@ -1,7 +1,8 @@
 ---
 title: "Re: The Niche List"
 date: 2010-10-06T23:10:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1268.msg15741#msg15741"
 author: "Satoshi Nakamoto"
 participants:

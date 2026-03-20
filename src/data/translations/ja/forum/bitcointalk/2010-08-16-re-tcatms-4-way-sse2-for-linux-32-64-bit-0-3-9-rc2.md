@@ -1,7 +1,8 @@
 ---
 title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2"
 date: 2010-08-16T02:57:57.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=820.msg9655#msg9655"
 author: "Satoshi Nakamoto"
 participants:

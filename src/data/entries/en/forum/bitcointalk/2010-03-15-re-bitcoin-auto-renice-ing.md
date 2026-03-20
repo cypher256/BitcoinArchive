@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoin auto-renice-ing"
 date: 2010-03-15T18:44:12.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=72.msg717#msg717"
 author: "Satoshi Nakamoto"
 participants:

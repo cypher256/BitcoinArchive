@@ -1,7 +1,8 @@
 ---
 title: "マージドマイニングへの感謝とハル・フィニーの洞察"
 date: 2011-03-09T19:52:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread4.html"
 author: "Mike Hearn"
 participants:

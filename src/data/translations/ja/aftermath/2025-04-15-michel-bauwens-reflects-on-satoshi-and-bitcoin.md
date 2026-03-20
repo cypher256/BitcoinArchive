@@ -1,7 +1,8 @@
 ---
 title: "ミシェル・バウエンスが語る、サトシとビットコインへの回顧"
 date: 2025-04-15T00:00:00Z
-source: aftermath
+type: "article"
+source: "uncommons"
 sourceUrl: "https://blog.uncommons.cc/cryptoflight-vol-10-eng/"
 author: "Michel Bauwens"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "2025年4月のインタビューで、P2P Foundation 創設者のミシェル・バウエンスは、サトシから数回メールを受け取り、P2P Foundation に論文を載せる理由を説明され、さらに数ビットコインを送ると提案されていたと回想した。同時に、企業でも国家でもない主体が生んだ、世界規模でスケール可能な「社会的に主権的な通貨」としてビットコインを評価した。"
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "michel-bauwens"
   - "p2p-foundation"

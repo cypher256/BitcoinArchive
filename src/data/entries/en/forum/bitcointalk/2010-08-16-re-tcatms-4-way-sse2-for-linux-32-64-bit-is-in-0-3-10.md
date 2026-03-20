@@ -1,7 +1,8 @@
 ---
 title: "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10"
 date: 2010-08-16T04:36:59.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=820.msg9676#msg9676"
 author: "Satoshi Nakamoto"
 participants:

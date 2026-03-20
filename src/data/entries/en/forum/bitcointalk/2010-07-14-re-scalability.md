@@ -1,7 +1,8 @@
 ---
 title: "Re: Scalability"
 date: 2010-07-14T21:10:52.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=286.msg2947#msg2947"
 author: "Satoshi Nakamoto"
 participants:

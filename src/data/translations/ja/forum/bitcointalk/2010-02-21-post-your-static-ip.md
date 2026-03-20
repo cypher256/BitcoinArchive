@@ -1,7 +1,8 @@
 ---
 title: "静的IPを投稿してください"
 date: 2010-02-21T04:19:53.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=59.msg414#msg414"
 author: "Satoshi Nakamoto"
 participants:

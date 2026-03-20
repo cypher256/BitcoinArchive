@@ -1,7 +1,8 @@
 ---
 title: "ビットコイン v0.1 リリース"
 date: 2009-01-16T16:03:14Z
-source: cryptography-mailing-list
+type: "mailing-list"
+source: "cryptography-mailing-list"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/015014.html"
 author: "Satoshi Nakamoto"
 participants:

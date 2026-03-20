@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin Blogger: Is It Better To Buy Or Generate Bitcoins?"
 date: 2010-09-08T20:27:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=955.msg12248#msg12248"
 author: "Satoshi Nakamoto"
 participants:

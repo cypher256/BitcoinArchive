@@ -1,7 +1,8 @@
 ---
 title: "Re: Transactions and Scripts: DUP HASH160 ... EQUALVERIFY CHECKSIG"
 date: 2010-06-17T22:46:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=195.msg1611#msg1611"
 author: "Satoshi Nakamoto"
 participants:

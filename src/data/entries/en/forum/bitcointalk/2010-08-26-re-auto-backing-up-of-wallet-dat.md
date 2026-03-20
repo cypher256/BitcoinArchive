@@ -1,7 +1,8 @@
 ---
 title: "Re: auto backing up of wallet.dat"
 date: 2010-08-26T00:57:40.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=921.msg11228#msg11228"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: 64ビットサポート"
 date: 2010-01-14T20:17:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=18.msg97#msg97"
 author: "Satoshi Nakamoto"
 participants:

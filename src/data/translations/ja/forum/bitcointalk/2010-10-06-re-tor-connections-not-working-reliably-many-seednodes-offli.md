@@ -1,7 +1,8 @@
 ---
 title: "Re: Tor接続が安定しない、多くのシードノードがオフライン"
 date: 2010-10-06T17:36:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1375.msg15682#msg15682"
 author: "Satoshi Nakamoto"
 participants:

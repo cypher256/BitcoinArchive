@@ -1,7 +1,8 @@
 ---
 title: "Re: ブロックチェーンへの埋め込みメッセージ"
 date: 2010-10-03T19:05:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1382.msg15372#msg15372"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Not a suggestion"
 date: 2010-08-13T19:28:47.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=770.msg9074#msg9074"
 author: "Satoshi Nakamoto"
 participants:

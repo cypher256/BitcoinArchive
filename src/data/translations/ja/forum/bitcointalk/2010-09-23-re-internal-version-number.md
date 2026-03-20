@@ -1,7 +1,8 @@
 ---
 title: "Re: 内部バージョン番号"
 date: 2010-09-23T18:46:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1269.msg13849#msg13849"
 author: "Satoshi Nakamoto"
 participants:

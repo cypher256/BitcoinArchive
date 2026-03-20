@@ -1,7 +1,8 @@
 ---
 title: "Re: How fast do the fastest computers generate bitcoins?"
 date: 2010-06-22T04:35:26.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=197.msg1656#msg1656"
 author: "Satoshi Nakamoto"
 participants:

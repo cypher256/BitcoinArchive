@@ -1,7 +1,8 @@
 ---
 title: "DEB Package?"
 date: 2010-02-11T15:31:35.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=49.msg314#msg314"
 author: "nphyx"
 participants:

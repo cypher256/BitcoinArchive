@@ -1,7 +1,8 @@
 ---
 title: "Re: TORとI2P"
 date: 2010-02-04T00:30:50.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=22.msg223#msg223"
 author: "Satoshi Nakamoto"
 participants:

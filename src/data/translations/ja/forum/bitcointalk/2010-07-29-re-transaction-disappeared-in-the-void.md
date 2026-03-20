@@ -1,7 +1,8 @@
 ---
 title: "Re: トランザクションが消えた..."
 date: 2010-07-29T22:08:31.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=615.msg6512#msg6512"
 author: "Satoshi Nakamoto"
 participants:

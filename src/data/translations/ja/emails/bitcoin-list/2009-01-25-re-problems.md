@@ -1,7 +1,8 @@
 ---
 title: "Re: [bitcoin-list] 問題について"
 date: 2009-01-25T16:45:25.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/21424626/"
 author: "Satoshi Nakamoto"
 participants:

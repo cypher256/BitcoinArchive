@@ -1,7 +1,8 @@
 ---
 title: "オイゲン・ライトル（生没年不明） — 初期のビットコイン議論に参加したサイファーパンク・トランスヒューマニスト"
 date: 2009-10-26T12:46:27Z
-source: aftermath
+type: "biography"
+source: "nakamotoinstitute"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/10/"
 author: "Eugen Leitl"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "eugen-leitl"
 description: "オイゲン・ライトル：2009年10月にbitcoin-listメーリングリストの議論に参加し、サトシ・ナカモトの投稿に返信してDebianパッケージについて質問したドイツの低温生物学者、トランスヒューマニスト、サイファーパンク。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "eugen-leitl"
   - "biography"

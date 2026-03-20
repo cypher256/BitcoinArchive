@@ -1,7 +1,8 @@
 ---
 title: "Re: 匿名性"
 date: 2010-07-08T19:12:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=241.msg2071#msg2071"
 author: "Satoshi Nakamoto"
 participants:

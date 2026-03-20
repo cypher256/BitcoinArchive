@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイ（生没年不明） — b-moneyとCrypto++の考案者、ビットコインホワイトペーパーで引用されたコンピューターサイエンティスト"
 date: 2008-08-22T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Wei_Dai"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "ウェイ・ダイ：最初期のデジタル通貨提案の一つであるb-money（1998年）と暗号ライブラリCrypto++を作成したコンピューターサイエンティスト・暗号学者。サトシ・ナカモトは2008年8月22日にダイにメールを送り、ビットコインホワイトペーパーではb-moneyを基礎的参考文献として引用している。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "wei-dai"
   - "biography"

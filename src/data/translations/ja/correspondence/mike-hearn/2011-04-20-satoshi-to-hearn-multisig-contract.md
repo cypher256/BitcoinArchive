@@ -1,7 +1,8 @@
 ---
 title: "タイムロック預金のためのマルチシグコントラクトパターン"
 date: 2011-04-20T11:39:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread5.html"
 author: "Satoshi Nakamoto"
 participants:

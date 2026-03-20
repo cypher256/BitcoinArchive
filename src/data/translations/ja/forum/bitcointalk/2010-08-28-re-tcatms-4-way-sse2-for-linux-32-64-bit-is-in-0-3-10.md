@@ -1,7 +1,8 @@
 ---
 title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載"
 date: 2010-08-28T14:27:15.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=820.msg11503#msg11503"
 author: "Satoshi Nakamoto"
 participants:

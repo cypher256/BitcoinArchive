@@ -1,7 +1,8 @@
 ---
 title: "\"A Beautiful Mind type lone genius\" — Jeff Garzik on Satoshi Nakamoto"
 date: 2024-10-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/lone-genius-bitcoin-developer-satoshi-nakamoto-theory"
 author: "Jeff Garzik"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Early Bitcoin developer Jeff Garzik released a series of videos detailing his time working with Satoshi Nakamoto, describing the creator as a self-taught, solitary genius who never revealed any personal information."
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "jeff-garzik"
   - "satoshi-identity"

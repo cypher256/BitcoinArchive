@@ -1,7 +1,8 @@
 ---
 title: "First Bitcoin transaction — Satoshi sends 10 BTC to Hal Finney"
 date: 2009-01-12T03:30:25Z
-source: aftermath
+type: "article"
+source: "blockchain-com"
 sourceUrl: "https://www.blockchain.com/explorer/transactions/btc/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16"
 author: "Satoshi Nakamoto"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "The first person-to-person Bitcoin transaction in history. Satoshi Nakamoto sent 10 BTC to Hal Finney in Block 170, confirming that Bitcoin's peer-to-peer electronic cash system worked as designed."
 isSatoshi: true
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "first-transaction"

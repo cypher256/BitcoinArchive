@@ -1,7 +1,8 @@
 ---
 title: "Re: Gentoo Linux Ebuild"
 date: 2010-08-27T00:49:43.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=930.msg11342#msg11342"
 author: "Satoshi Nakamoto"
 participants:

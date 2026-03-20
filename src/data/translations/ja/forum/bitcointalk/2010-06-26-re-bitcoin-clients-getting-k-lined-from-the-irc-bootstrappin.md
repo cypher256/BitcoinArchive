@@ -1,7 +1,8 @@
 ---
 title: "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
 date: 2010-06-26T14:28:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=215.msg1797#msg1797"
 author: "Satoshi Nakamoto"
 participants:

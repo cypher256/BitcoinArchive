@@ -1,7 +1,8 @@
 ---
 title: "Re: Hash/sec Throttling for Democracy"
 date: 2010-07-14T20:25:06.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=325.msg2935#msg2935"
 author: "Satoshi Nakamoto"
 participants:

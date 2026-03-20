@@ -1,7 +1,8 @@
 ---
 title: "Webページのアイデア：次の予測される難易度変更"
 date: 2010-07-31T01:32:08.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=651.msg6760#msg6760"
 author: "Satoshi Nakamoto"
 participants:

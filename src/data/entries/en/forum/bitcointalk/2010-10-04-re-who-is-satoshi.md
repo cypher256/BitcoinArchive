@@ -1,7 +1,8 @@
 ---
 title: "Re: A Treatise on Altcoins"
 date: 2010-08-04T18:42:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=662.msg7513#msg7513"
 author: "Satoshi Nakamoto"
 participants:

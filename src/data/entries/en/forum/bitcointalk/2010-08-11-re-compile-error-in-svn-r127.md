@@ -1,7 +1,8 @@
 ---
 title: "Re: Compile error in SVN r127"
 date: 2010-08-11T01:42:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=784.msg8651#msg8651"
 author: "Satoshi Nakamoto"
 participants:

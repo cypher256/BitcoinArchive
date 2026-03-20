@@ -1,7 +1,8 @@
 ---
 title: "alert key"
 date: 2011-04-26T10:29:00Z
-source: correspondence
+type: "correspondence"
+source: "riski-wiki"
 sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 author: "Satoshi Nakamoto"
 participants:

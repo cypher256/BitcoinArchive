@@ -1,7 +1,8 @@
 ---
 title: "アカウントのサンプルコード"
 date: 2010-12-10T19:21:03.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=2202.msg28947#msg28947"
 author: "Satoshi Nakamoto"
 participants:

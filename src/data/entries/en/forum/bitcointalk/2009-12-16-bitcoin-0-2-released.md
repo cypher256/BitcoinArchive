@@ -1,7 +1,8 @@
 ---
 title: "Bitcoin 0.2 released!"
 date: 2009-12-16T22:45:36.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=16.msg73#msg73"
 author: "Satoshi Nakamoto"
 participants:

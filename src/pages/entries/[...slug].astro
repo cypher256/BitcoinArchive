@@ -9,8 +9,8 @@ import { useTranslations, formatDate, localePath, absoluteUrl } from '../../i18n
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
   const jaEntries = await getCollection('entries_ja');
-  const jaIds = new Set(jaEntries.filter((e) => e.data.aftermathType !== 'biography').map((e) => e.id));
-  return entries.filter((e) => e.data.aftermathType !== 'biography').map((entry) => ({
+  const jaIds = new Set(jaEntries.filter((e) => e.data.type !== 'biography').map((e) => e.id));
+  return entries.filter((e) => e.data.type !== 'biography').map((entry) => ({
     params: { slug: entry.id },
     props: { entry, hasJa: jaIds.has(entry.id) },
   }));
@@ -22,7 +22,7 @@ const { entry, hasJa } = Astro.props;
 const { Content } = await render(entry);
 
 const allEntries = await getCollection('entries');
-const sorted = allEntries.filter((e) => e.data.aftermathType !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const sorted = allEntries.filter((e) => e.data.type !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 const currentIndex = sorted.findIndex((e) => e.id === entry.id);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
@@ -67,6 +67,7 @@ const breadcrumbs = [
       <EntryMeta
         date={entry.data.date}
         author={entry.data.author}
+        entryType={entry.data.type}
         source={entry.data.source}
         sourceUrl={entry.data.sourceUrl}
         isSatoshi={entry.data.isSatoshi}

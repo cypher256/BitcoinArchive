@@ -1,7 +1,8 @@
 ---
 title: "Re: bitcoindがRPCに応答しない"
 date: 2010-07-24T01:15:58.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=548.msg5419#msg5419"
 author: "Satoshi Nakamoto"
 participants:

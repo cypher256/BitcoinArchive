@@ -1,7 +1,8 @@
 ---
 title: "Re: Regarding Bitcoin's Legality"
 date: 2010-11-22T19:54:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1850.msg23840#msg23840"
 author: "Satoshi Nakamoto"
 participants:

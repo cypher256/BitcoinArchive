@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン - 自動起動とタスクトレイ最小化は必須機能"
 date: 2009-08-29T17:31:05Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

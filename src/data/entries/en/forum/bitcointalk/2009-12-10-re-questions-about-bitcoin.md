@@ -1,7 +1,8 @@
 ---
 title: "Re: Questions about Bitcoin"
 date: 2009-12-10T20:49:02.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=13.msg46#msg46"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Eugen Leitl (dates unknown) — Cypherpunk and transhumanist who participated in early Bitcoin discussions"
 date: 2009-10-26T12:46:27Z
-source: aftermath
+type: "biography"
+source: "nakamotoinstitute"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/10/"
 author: "Eugen Leitl"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "eugen-leitl"
 description: "Eugen Leitl: German cryobiologist, transhumanist, and cypherpunk who participated in the bitcoin-list mailing list discussion in October 2009, replying to Satoshi Nakamoto's post about Bitcoin stability and asking about Debian packages."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "eugen-leitl"
   - "biography"

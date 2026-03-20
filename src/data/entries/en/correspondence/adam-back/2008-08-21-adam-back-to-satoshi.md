@@ -1,7 +1,8 @@
 ---
 title: "Re: Hashcash citation — suggesting b-money"
 date: 2008-08-21T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 author: "Adam Back"
 participants:

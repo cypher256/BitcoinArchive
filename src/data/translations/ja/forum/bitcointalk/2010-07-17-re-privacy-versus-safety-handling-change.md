@@ -1,7 +1,8 @@
 ---
 title: "Re: プライバシー対安全性: おつりの取り扱い"
 date: 2010-07-17T16:27:39.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=434.msg3770#msg3770"
 author: "Satoshi Nakamoto"
 participants:

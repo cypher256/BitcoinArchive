@@ -1,7 +1,8 @@
 ---
 title: "WikiLeaks begins accepting Bitcoin donations"
 date: 2011-06-14T00:00:00Z
-source: aftermath
+type: "article"
+source: "x"
 sourceUrl: "https://x.com/wikileaks/status/80774521350668288"
 author: "WikiLeaks"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "WikiLeaks announced it would accept Bitcoin donations, circumventing a financial blockade imposed by Bank of America, Visa, MasterCard, PayPal, and Western Union. Satoshi had warned against this six months earlier, saying it would bring unwanted government attention to the still-nascent network."
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "wikileaks"
   - "julian-assange"

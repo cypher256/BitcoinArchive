@@ -1,7 +1,8 @@
 ---
 title: "Re: BUG Report: Rounding glitch"
 date: 2010-07-17T16:06:12.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=432.msg3769#msg3769"
 author: "Satoshi Nakamoto"
 participants:

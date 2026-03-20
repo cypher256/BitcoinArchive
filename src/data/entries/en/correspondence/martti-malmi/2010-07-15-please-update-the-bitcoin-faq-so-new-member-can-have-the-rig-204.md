@@ -1,7 +1,8 @@
 ---
 title: "Fwd: Please update the bitcoin FAQ so new member can have the right info"
 date: 2010-07-15T17:43:55Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

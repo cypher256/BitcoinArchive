@@ -1,7 +1,8 @@
 ---
 title: "Re: Access permissions required to fix Drupal"
 date: 2009-11-23T06:44:35Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

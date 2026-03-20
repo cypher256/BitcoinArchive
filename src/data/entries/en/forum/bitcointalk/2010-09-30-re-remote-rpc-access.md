@@ -1,7 +1,8 @@
 ---
 title: "Re: Remote RPC access"
 date: 2010-09-30T18:27:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1291.msg14736#msg14736"
 author: "Satoshi Nakamoto"
 participants:

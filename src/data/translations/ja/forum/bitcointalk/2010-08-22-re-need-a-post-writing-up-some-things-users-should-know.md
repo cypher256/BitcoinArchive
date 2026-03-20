@@ -1,7 +1,8 @@
 ---
 title: "Re: ユーザーが知っておくべきことをまとめた投稿が必要"
 date: 2010-08-22T22:51:00.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=873.msg10715#msg10715"
 author: "Satoshi Nakamoto"
 participants:

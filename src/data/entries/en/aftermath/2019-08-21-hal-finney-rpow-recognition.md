@@ -1,7 +1,8 @@
 ---
 title: "Hal Finney's RPOW receives posthumous recognition as Bitcoin precursor"
 date: 2019-08-21T00:00:00Z
-source: aftermath
+type: "article"
+source: "nakamotoinstitute"
 sourceUrl: "https://nakamotoinstitute.org/finney/rpow/"
 author: "Satoshi Nakamoto Institute"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "hal-finney"
 description: "Hal Finney's RPOW system, a 2004 prototype for reusable proof-of-work tokens, gains posthumous recognition as one of Bitcoin's most important direct precursors."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "rpow"

@@ -1,7 +1,8 @@
 ---
 title: "BTC通貨コードと฿記号の提案"
 date: 2010-02-05T00:00:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=41.0"
 author: "NewLibertyStandard"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "NewLibertyStandardがBitcoinTalkでタイバーツの通貨記号（฿）をビットコインの公式記号とし、「BTC」を3文字の通貨コードとすることを提案。この提案は今日まで使われ続ける通貨表記を確立した。"
 isSatoshi: false
-aftermathType: "blog"
 tags:
   - "newlibertystandard"
   - "btc-symbol"

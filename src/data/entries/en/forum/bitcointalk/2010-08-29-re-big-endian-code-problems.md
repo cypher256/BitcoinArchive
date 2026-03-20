@@ -1,7 +1,8 @@
 ---
 title: "Re: Big endian code problems"
 date: 2010-08-29T22:14:36.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=816.msg11610#msg11610"
 author: "Satoshi Nakamoto"
 participants:

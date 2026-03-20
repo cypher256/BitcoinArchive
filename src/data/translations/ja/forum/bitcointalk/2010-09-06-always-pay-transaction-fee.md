@@ -1,7 +1,8 @@
 ---
 title: "常にトランザクション手数料を支払う？"
 date: 2010-09-06T18:17:34.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=994.msg12145#msg12145"
 author: "jgarzik"
 participants:

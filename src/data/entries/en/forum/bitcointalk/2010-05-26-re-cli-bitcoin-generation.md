@@ -1,7 +1,8 @@
 ---
 title: "Re: CLI bitcoin generation"
 date: 2010-05-26T20:09:34.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=145.msg1256#msg1256"
 author: "Satoshi Nakamoto"
 participants:

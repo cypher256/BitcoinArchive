@@ -1,7 +1,8 @@
 ---
 title: "BSD検出"
 date: 2010-08-11T14:00:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=790.msg8807#msg8807"
 author: "dkaparis"
 participants:

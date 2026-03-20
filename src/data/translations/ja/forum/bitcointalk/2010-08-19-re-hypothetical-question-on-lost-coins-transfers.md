@@ -1,7 +1,8 @@
 ---
 title: "Re: 失われたコイン/送金に関する仮説的な質問"
 date: 2010-08-19T20:28:50.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=870.msg10300#msg10300"
 author: "Satoshi Nakamoto"
 participants:

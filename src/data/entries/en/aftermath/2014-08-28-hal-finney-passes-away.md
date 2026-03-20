@@ -1,7 +1,8 @@
 ---
 title: "Hal Finney passes away"
 date: 2014-08-28T00:00:00Z
-source: aftermath
+type: "article"
+source: "extropians"
 sourceUrl: "https://www.extropians.com/2014/08/28/hal-finney-1956-2014/"
 author: "Fran Finney"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "fran-finney"
 description: "Hal Finney, the first person besides Satoshi to run Bitcoin and the recipient of the first Bitcoin transaction, passes away from ALS at the age of 58."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "hal-finney"
   - "obituary"

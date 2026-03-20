@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin Transfer - Address labels and UX challenges"
 date: 2009-01-19T11:02:37Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:

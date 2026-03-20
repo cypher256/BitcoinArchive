@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoinはミーゼスの回帰定理に違反しない"
 date: 2010-08-27T17:32:07.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=583.msg11405#msg11405"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: ソースコードのドキュメント"
 date: 2010-07-17T23:18:30.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=393.msg3828#msg3828"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin stuff"
 date: 2009-12-25T16:11:14Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

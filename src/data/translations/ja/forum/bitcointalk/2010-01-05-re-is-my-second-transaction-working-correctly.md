@@ -1,7 +1,8 @@
 ---
 title: "Re: 2回目のトランザクションは正しく動作していますか？"
 date: 2010-01-05T20:00:46.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=17.msg85#msg85"
 author: "Satoshi Nakamoto"
 participants:

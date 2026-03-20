@@ -1,7 +1,8 @@
 ---
 title: "Value overflow incident — 184 billion BTC created in Block 74638"
 date: 2010-08-15T18:08:00Z
-source: aftermath
+type: "article"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=822.0"
 author: "Jeff Garzik"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "gavin-andresen"
 description: "An integer overflow bug (CVE-2010-5139) was exploited to create 184,467,440,737.09551616 BTC in a single transaction in Block 74638. Satoshi Nakamoto published a fix within 5 hours, and the corrected chain overtook the invalid chain within 15 hours — the most serious crisis in Bitcoin's history."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "overflow-bug"
   - "block-74638"

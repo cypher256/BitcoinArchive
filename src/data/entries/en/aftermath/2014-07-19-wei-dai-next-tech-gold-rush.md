@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai on stumbling into Bitcoin and the missed gold rush"
 date: 2014-07-19T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/Jter3YhFBZFYo8vtq/look-for-the-next-tech-gold-rush"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "Wei Dai's LessWrong post revealing that Satoshi Nakamoto emailed him personally in early 2009 announcing Bitcoin v0.1, but he ignored it because he 'was more interested in Less Wrong than Cypherpunks at that point.' He later started mining in 2011 after seeing a LW article, turning ~$300 into six figures."
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "early-bitcoin"

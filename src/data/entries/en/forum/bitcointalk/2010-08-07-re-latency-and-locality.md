@@ -1,7 +1,8 @@
 ---
 title: "Re: latency and locality"
 date: 2010-08-07T16:28:17.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=723.msg8103#msg8103"
 author: "Satoshi Nakamoto"
 participants:

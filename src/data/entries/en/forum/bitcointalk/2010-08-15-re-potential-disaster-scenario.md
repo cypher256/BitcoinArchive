@@ -1,7 +1,8 @@
 ---
 title: "Re: Potential disaster scenario"
 date: 2010-08-15T16:37:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=813.msg9454#msg9454"
 author: "Satoshi Nakamoto"
 participants:

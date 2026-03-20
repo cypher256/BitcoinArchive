@@ -1,7 +1,8 @@
 ---
 title: "28 days without generation, i have 4200khash/s"
 date: 2010-08-18T12:20:35.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=862.msg10128#msg10128"
 author: "kosovito"
 participants:

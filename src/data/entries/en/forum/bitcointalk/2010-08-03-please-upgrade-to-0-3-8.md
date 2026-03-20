@@ -1,7 +1,8 @@
 ---
 title: "Please upgrade to 0.3.8!"
 date: 2010-08-03T23:40:18.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=696.msg7364#msg7364"
 author: "Satoshi Nakamoto"
 participants:

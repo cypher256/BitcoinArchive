@@ -1,7 +1,8 @@
 ---
 title: "Re: Tracing a coin's lineage"
 date: 2010-05-26T18:51:04.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=154.msg1254#msg1254"
 author: "Satoshi Nakamoto"
 participants:

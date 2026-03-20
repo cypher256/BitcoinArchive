@@ -1,7 +1,8 @@
 ---
 title: "Re: Stealing Coins"
 date: 2010-07-25T17:45:22.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=571.msg5712#msg5712"
 author: "Satoshi Nakamoto"
 participants:

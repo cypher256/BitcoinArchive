@@ -1,7 +1,8 @@
 ---
 title: "Re: Gavin's planned CIA presentation"
 date: 2010-12-05T17:53:00Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1735.msg21247#msg21247"
 author: "Gavin Andresen"
 participants:

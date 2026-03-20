@@ -1,7 +1,8 @@
 ---
 title: "ピーター・トッド（1985–）— Bitcoin Core開発者、Replace-by-Feeの提唱者"
 date: 2010-12-07T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Peter_Todd"
 author: "Peter Todd"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "peter-todd"
 description: "ピーター・トッド（1985年生まれ）：カナダの暗号学者でBitcoin Core開発者。Replace-by-Fee（RBF）の提唱やOpenTimestampsの開発で知られる。2010年12月7日にユーザー名「retep」でBitcoinTalkに登録し、3日後にサトシ・ナカモトの投稿に返信した。2024年10月、HBOのドキュメンタリーでサトシ・ナカモト候補として取り上げられたが、本人は否定した。"
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "peter-todd"
   - "biography"

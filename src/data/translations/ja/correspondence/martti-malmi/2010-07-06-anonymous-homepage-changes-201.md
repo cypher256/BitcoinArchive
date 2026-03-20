@@ -1,7 +1,8 @@
 ---
 title: "Re: 匿名性、ホームページの変更"
 date: 2010-07-06T22:17:54Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

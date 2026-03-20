@@ -1,7 +1,8 @@
 ---
 title: "bitcoin auto-renice-ing"
 date: 2010-03-08T00:29:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=72.msg673#msg673"
 author: "fergalish"
 participants:

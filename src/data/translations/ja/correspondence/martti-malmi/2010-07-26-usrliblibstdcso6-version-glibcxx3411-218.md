@@ -1,7 +1,8 @@
 ---
 title: "Re: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11'"
 date: 2010-07-26T18:22:08Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

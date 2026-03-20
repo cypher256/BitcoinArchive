@@ -1,7 +1,8 @@
 ---
 title: "Re: No connections — 'There may just not be anybody else running it right now'"
 date: 2009-07-19T00:00:00Z
-source: correspondence
+type: "correspondence"
+source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 author: "Satoshi Nakamoto"
 participants:

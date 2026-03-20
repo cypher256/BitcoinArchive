@@ -1,7 +1,8 @@
 ---
 title: "Re: [bitcoin-list] Bitcoin v0.1 リリース"
 date: 2009-01-16T18:35:32.000Z
-source: bitcoin-list
+type: "mailing-list"
+source: "bitcoin-list"
 sourceUrl: "https://sourceforge.net/p/bitcoin/mailman/message/21356305/"
 author: "Satoshi Nakamoto"
 participants:

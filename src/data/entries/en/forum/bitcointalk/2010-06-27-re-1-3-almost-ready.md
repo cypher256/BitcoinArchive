@@ -1,7 +1,8 @@
 ---
 title: "Re: 1.3 almost ready"
 date: 2010-06-27T15:30:13.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1834#msg1834"
 author: "Satoshi Nakamoto"
 participants:

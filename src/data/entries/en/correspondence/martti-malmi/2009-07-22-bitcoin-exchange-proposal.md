@@ -1,7 +1,8 @@
 ---
 title: "Re: Bitcoin - First exchange proposal"
 date: 2009-07-22T10:10:02Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Martti Malmi"
 participants:

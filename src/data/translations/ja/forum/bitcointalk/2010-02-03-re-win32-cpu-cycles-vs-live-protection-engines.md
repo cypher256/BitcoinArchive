@@ -1,7 +1,8 @@
 ---
 title: "Re: Win32 CPUサイクル対「ライブプロテクション」エンジン？"
 date: 2010-02-03T23:36:54.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=35.msg220#msg220"
 author: "Satoshi Nakamoto"
 participants:

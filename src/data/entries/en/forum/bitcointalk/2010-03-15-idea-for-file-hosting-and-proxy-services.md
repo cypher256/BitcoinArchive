@@ -1,7 +1,8 @@
 ---
 title: "Idea for file hosting and proxy services"
 date: 2010-03-15T19:16:56.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=83.msg719#msg719"
 author: "Satoshi Nakamoto"
 participants:

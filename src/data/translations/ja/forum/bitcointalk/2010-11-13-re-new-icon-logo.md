@@ -1,7 +1,8 @@
 ---
 title: "Re: 新しいアイコン/ロゴ"
 date: 2010-11-13T00:55:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=64.msg21766#msg21766"
 author: "Satoshi Nakamoto"
 participants:

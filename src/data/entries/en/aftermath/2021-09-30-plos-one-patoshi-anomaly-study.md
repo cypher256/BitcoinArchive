@@ -1,7 +1,8 @@
 ---
 title: "PLOS ONE publishes peer-reviewed study confirming Patoshi mining anomalies across Bitcoin's first 18 months"
 date: 2021-09-30T00:00:00Z
-source: aftermath
+type: "article"
+source: "plos"
 sourceUrl: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
 author: "Maria Oskarsdottir"
 participants:
@@ -15,7 +16,6 @@ participants:
     slug: "sergio-demian-lerner"
 description: "Reykjavik University researchers publish the first peer-reviewed academic study of the Patoshi pattern in PLOS ONE. The paper identifies two distinct nonce anomalies — the 'P anomaly' (extended Patoshi) and the 'Z anomaly' (zerononce) — and crucially finds that the P anomaly appears in ALL of the first 64 blocks mined, including Block 12 which was previously classified as non-Patoshi by ExtraNonce analysis."
 isSatoshi: false
-aftermathType: "academic"
 tags:
   - "patoshi"
   - "mining"

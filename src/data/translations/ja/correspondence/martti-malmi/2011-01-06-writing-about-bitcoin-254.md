@@ -1,7 +1,8 @@
 ---
 title: "Re: BitCoinについての記事執筆"
 date: 2011-01-06T18:31:26Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

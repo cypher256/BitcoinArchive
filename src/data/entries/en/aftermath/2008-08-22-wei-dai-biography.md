@@ -1,7 +1,8 @@
 ---
 title: "Wei Dai (dates unknown) — Computer scientist, creator of b-money and Crypto++, cited in the Bitcoin white paper"
 date: 2008-08-22T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Wei_Dai"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "Wei Dai: Computer scientist and cryptographer who created b-money (1998), one of the earliest digital currency proposals, and the Crypto++ cryptographic library. Satoshi Nakamoto emailed Dai on August 22, 2008, before publishing the Bitcoin white paper, which cites b-money as a foundational reference."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "wei-dai"
   - "biography"

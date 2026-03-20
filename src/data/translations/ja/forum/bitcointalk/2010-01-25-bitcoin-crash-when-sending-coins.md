@@ -1,7 +1,8 @@
 ---
 title: "コイン送信時のBitcoinクラッシュ"
 date: 2010-01-25T14:07:16.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=27.msg135#msg135"
 author: "riX"
 participants:

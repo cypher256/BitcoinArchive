@@ -1,7 +1,8 @@
 ---
 title: "Cobra (dates unknown) — Pseudonymous operator of bitcoin.org"
 date: 2021-06-28T00:00:00Z
-source: aftermath
+type: "biography"
+source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin.org"
 author: "Cobra"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "Cobra (also known as Cøbra): Pseudonymous operator and guardian of bitcoin.org, the website originally registered by Satoshi Nakamoto in 2008. Chose to lose a copyright lawsuit by default rather than reveal his identity — then was vindicated when Craig Wright was ruled not to be Satoshi."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "cobra"
   - "biography"

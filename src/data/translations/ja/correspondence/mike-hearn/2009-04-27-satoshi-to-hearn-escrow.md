@@ -1,7 +1,8 @@
 ---
 title: "エスクロー取引と非可逆性"
 date: 2009-04-27T00:11:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread2.html"
 author: "Satoshi Nakamoto"
 participants:

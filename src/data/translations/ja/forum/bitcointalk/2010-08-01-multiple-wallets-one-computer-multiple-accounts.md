@@ -1,7 +1,8 @@
 ---
 title: "複数のウォレット、1台のコンピュータ"
 date: 2010-08-01T11:14:29.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=665.msg6928#msg6928"
 author: "bytemaster"
 participants:

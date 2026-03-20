@@ -1,7 +1,8 @@
 ---
 title: "Re: コインの窃盗"
 date: 2010-07-25T20:48:01.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=571.msg5754#msg5754"
 author: "Satoshi Nakamoto"
 participants:

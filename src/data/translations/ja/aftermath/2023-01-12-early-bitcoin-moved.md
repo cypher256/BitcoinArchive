@@ -1,7 +1,8 @@
 ---
 title: "2009年1月にマイニングされたビットコインが初めて移動"
 date: 2023-01-12T00:00:00Z
-source: aftermath
+type: "article"
+source: "mempool"
 sourceUrl: "https://mempool.space/"
 author: "Blockchain observers"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ビットコインの存在の最初の数週間である2009年1月にマイニングされたビットコインが初めて移動し、サトシ・ナカモトがコインを使い始めたのではないかという激しい憶測を引き起こした。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "satoshi-nakamoto"
   - "early-bitcoin"

@@ -1,7 +1,8 @@
 ---
 title: "Re: Content-Length header and 500"
 date: 2010-08-03T21:26:26.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=689.msg7335#msg7335"
 author: "Satoshi Nakamoto"
 participants:

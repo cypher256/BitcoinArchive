@@ -1,7 +1,8 @@
 ---
 title: "Re: OpenCL miner for the masses"
 date: 2010-11-20T17:24:20.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1334.msg23097#msg23097"
 author: "Satoshi Nakamoto"
 participants:

@@ -1,7 +1,8 @@
 ---
 title: "ウェイ・ダイのビットコインとの偶然の出会いと逃したゴールドラッシュ"
 date: 2014-07-19T00:00:00Z
-source: aftermath
+type: "article"
+source: "lesswrong"
 sourceUrl: "https://www.lesswrong.com/posts/Jter3YhFBZFYo8vtq/look-for-the-next-tech-gold-rush"
 author: "Wei Dai"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "wei-dai"
 description: "ウェイ・ダイのLessWrong投稿。サトシ・ナカモトが2009年初頭にビットコインv0.1を発表するメールを個人的に送ってきたが、「当時はサイファーパンクよりLessWrongに関心がありました」ため無視したことを明かした。2011年にLWの記事をきっかけにマイニングを開始し、約300ドルの投資が6桁のリターンとなった。"
 isSatoshi: false
-aftermathType: "retrospective"
 tags:
   - "wei-dai"
   - "early-bitcoin"

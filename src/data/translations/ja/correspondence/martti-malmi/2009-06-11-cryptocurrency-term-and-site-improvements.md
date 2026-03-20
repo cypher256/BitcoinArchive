@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン - 「暗号通貨」という用語とサイト改善"
 date: 2009-06-11T21:24:25Z
-source: correspondence
+type: "correspondence"
+source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 author: "Satoshi Nakamoto"
 participants:

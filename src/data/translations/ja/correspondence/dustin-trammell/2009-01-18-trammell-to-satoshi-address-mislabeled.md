@@ -1,7 +1,8 @@
 ---
 title: "Re: ビットコイン送金 - 誤ラベルの発見"
 date: 2009-01-18T18:09:32Z
-source: correspondence
+type: "correspondence"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Dustin Trammell"
 participants:

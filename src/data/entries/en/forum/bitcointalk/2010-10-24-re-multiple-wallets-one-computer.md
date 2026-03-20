@@ -1,7 +1,8 @@
 ---
 title: "Re: Multiple Wallets, one computer"
 date: 2010-10-24T19:17:51.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=665.msg18349#msg18349"
 author: "Satoshi Nakamoto"
 participants:

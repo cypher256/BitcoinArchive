@@ -1,7 +1,8 @@
 ---
 title: "Re: BitDNSとBitcoinの汎用化"
 date: 2010-12-09T21:02:42.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1790.msg28696#msg28696"
 author: "Satoshi Nakamoto"
 participants:

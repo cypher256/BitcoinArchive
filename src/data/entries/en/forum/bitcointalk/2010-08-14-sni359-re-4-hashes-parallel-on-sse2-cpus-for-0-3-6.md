@@ -1,7 +1,8 @@
 ---
 title: "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6"
 date: 2010-08-14T04:22:29.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=648.msg9159#msg9159"
 author: "Satoshi Nakamoto"
 participants:

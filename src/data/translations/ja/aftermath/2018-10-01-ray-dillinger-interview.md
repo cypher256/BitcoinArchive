@@ -1,7 +1,8 @@
 ---
 title: "レイ・ディリンジャーインタビュー（Great Wall of Numbers）"
 date: 2018-10-01T00:00:00Z
-source: aftermath
+type: "article"
+source: "of-numbers"
 sourceUrl: "https://www.ofnumbers.com/2018/10/01/interview-with-ray-dillinger/"
 author: "Ray Dillinger"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "hal-finney"
 description: "ティム・スワンソンによる包括的なレイ・ディリンジャーインタビュー。ビットコインホワイトペーパー10周年を記念して実施。コードレビューの技術的詳細、有名な浮動小数点の発見、そしてサトシが倍精度浮動小数点を使用した理由が明かされる。"
 isSatoshi: false
-aftermathType: "interview"
 tags:
   - "ray-dillinger"
   - "code-review"

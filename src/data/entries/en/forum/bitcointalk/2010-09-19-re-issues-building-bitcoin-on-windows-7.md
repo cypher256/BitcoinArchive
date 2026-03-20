@@ -1,7 +1,8 @@
 ---
 title: "Re: Issues building bitcoin on Windows 7"
 date: 2010-09-19T18:46:46.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1034.msg13206#msg13206"
 author: "Satoshi Nakamoto"
 participants:

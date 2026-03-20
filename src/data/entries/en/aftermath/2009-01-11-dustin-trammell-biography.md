@@ -1,7 +1,8 @@
 ---
 title: "Dustin Trammell (dates unknown) — Information security researcher who was among the first to run Bitcoin"
 date: 2009-01-11T00:00:00Z
-source: aftermath
+type: "biography"
+source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Dustin_Trammell"
 author: "Dustin Trammell"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "dustin-trammell"
 description: "Dustin D. Trammell: Information security researcher from Austin, Texas, who was among the first people to run Bitcoin after its release. He emailed Satoshi Nakamoto on January 11, 2009, and received 25 BTC directly from Satoshi — one of the earliest known person-to-person bitcoin transfers."
 isSatoshi: false
-aftermathType: "biography"
 tags:
   - "dustin-trammell"
   - "biography"

@@ -1,7 +1,8 @@
 ---
 title: "サトシの最後の既知のメール — ハーンへの別れ、アンドレセンへのアラートキー移譲"
 date: 2011-04-26T00:00:00Z
-source: aftermath
+type: "article"
+source: "riski-wiki"
 sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 author: "Satoshi Nakamoto"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "mike-hearn"
 description: "サトシ・ナカモトの最後の既知の私的通信：2011年4月23日、マイク・ハーンに「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」と伝えた。3日後の4月26日、ギャビン・アンドレセンに最後の既知のメールを送り、ネットワークアラートキーを移譲し「他のことに取り組むことにした。おそらく連絡が取れなくなるだろう」と書いた。"
 isSatoshi: true
-aftermathType: "retrospective"
 tags:
   - "final-communication"
   - "gavin-andresen"

@@ -1,7 +1,8 @@
 ---
 title: "Satoshi's final known emails — farewell to Hearn, alert key to Andresen"
 date: 2011-04-26T00:00:00Z
-source: aftermath
+type: "article"
+source: "riski-wiki"
 sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 author: "Satoshi Nakamoto"
 participants:
@@ -13,7 +14,6 @@ participants:
     slug: "mike-hearn"
 description: "Satoshi Nakamoto's final known private communications: on April 23, 2011, he told Mike Hearn 'I've moved on to other things. It's in good hands with Gavin and everyone.' Three days later, on April 26, he sent his last known email to Gavin Andresen, transferring the network alert key and writing 'I've moved on to other things and will probably be unavailable.'"
 isSatoshi: true
-aftermathType: "retrospective"
 tags:
   - "final-communication"
   - "gavin-andresen"

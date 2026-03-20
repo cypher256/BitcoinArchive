@@ -1,7 +1,8 @@
 ---
 title: "Re: 世界のための新しい通貨システム"
 date: 2010-07-16T22:20:09.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=128.msg3605#msg3605"
 author: "Satoshi Nakamoto"
 participants:

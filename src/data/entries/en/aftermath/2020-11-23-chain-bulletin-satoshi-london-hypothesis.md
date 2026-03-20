@@ -1,7 +1,8 @@
 ---
 title: "Chain Bulletin presents evidence that Satoshi Nakamoto lived in London"
 date: 2020-11-23T00:00:00Z
-source: aftermath
+type: "article"
+source: "chain-bulletin"
 sourceUrl: "https://chainbulletin.com/satoshi-nakamoto-lived-in-london-while-working-on-bitcoin-heres-how-we-know"
 author: "Doncho Karaivanov"
 participants:
@@ -11,7 +12,6 @@ participants:
     slug: "doncho-karaivanov"
 description: "Doncho Karaivanov analyzes 742 activity instances across Satoshi's posts, commits, and emails, combined with The Times headline evidence and British spelling conventions, to argue Satoshi was based in London."
 isSatoshi: false
-aftermathType: "article"
 tags:
   - "satoshi-identity"
   - "timestamp"

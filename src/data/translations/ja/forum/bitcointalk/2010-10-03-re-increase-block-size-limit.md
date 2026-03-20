@@ -1,7 +1,8 @@
 ---
 title: "Re: [パッチ] ブロックサイズ制限の引き上げ"
 date: 2010-10-03T21:07:28.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1347.msg15139#msg15139"
 author: "Satoshi Nakamoto"
 participants:

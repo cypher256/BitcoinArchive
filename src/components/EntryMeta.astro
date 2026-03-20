@@ -10,6 +10,7 @@ interface Participant {
 interface Props {
   date: Date;
   author: string;
+  entryType: string;
   source: string;
   sourceUrl: string;
   isSatoshi: boolean;
@@ -18,8 +19,9 @@ interface Props {
   tags?: string[];
 }
 
-const { date, author, source, sourceUrl, isSatoshi, lang, participants = [], tags = [] } = Astro.props;
+const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [] } = Astro.props;
 const t = useTranslations(lang);
+const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
 const authorParticipant = participants.find((p) => p.name === author);
 const displayAuthor = translateParticipantName(author, authorParticipant?.slug, lang);
@@ -29,6 +31,8 @@ const displayAuthor = translateParticipantName(author, authorParticipant?.slug, 
   <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
   <span class="meta-sep">&middot;</span>
   <span class:list={['author', { satoshi: isSatoshi }]}>{displayAuthor}</span>
+  <span class="meta-sep">&middot;</span>
+  <span class="type-badge">{typeLabel}</span>
   <span class="meta-sep">&middot;</span>
   <span class="source-badge">{sourceLabel}</span>
 </div>
@@ -73,6 +77,15 @@ const displayAuthor = translateParticipantName(author, authorParticipant?.slug, 
   }
   .author.satoshi {
     color: var(--color-satoshi);
+    font-weight: 600;
+  }
+  .type-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background: var(--color-accent);
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.8rem;
     font-weight: 600;
   }
   .source-badge {

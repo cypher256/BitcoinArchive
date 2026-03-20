@@ -1,7 +1,8 @@
 ---
 title: "FTXが破産申請 — 顧客資金80億ドルが消失"
 date: 2022-11-11T00:00:00Z
-source: aftermath
+type: "article"
+source: "cnbc"
 sourceUrl: "https://www.cnbc.com/2022/11/11/sam-bankman-frieds-cryptocurrency-exchange-ftx-files-for-bankruptcy.html"
 author: "CNBC"
 participants:
@@ -9,7 +10,6 @@ participants:
     slug: "sam-bankman-fried"
 description: "世界第2位の暗号通貨取引所FTXが連邦破産法第11章の適用を申請。創業者サム・バンクマン＝フリードはCEOを辞任。約80億ドルの顧客資金が流用されていた。SBFはその後7つの刑事罪すべてで有罪判決を受け、禁固25年の刑を宣告された。"
 isSatoshi: false
-aftermathType: "media"
 tags:
   - "ftx"
   - "sam-bankman-fried"

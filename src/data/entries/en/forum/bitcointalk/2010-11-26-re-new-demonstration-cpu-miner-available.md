@@ -1,7 +1,8 @@
 ---
 title: "Re: New demonstration CPU miner available"
 date: 2010-11-26T22:02:41.000Z
-source: bitcointalk
+type: "forum-post"
+source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1925.msg24719#msg24719"
 author: "Satoshi Nakamoto"
 participants:

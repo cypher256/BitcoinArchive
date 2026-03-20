@@ -1,7 +1,8 @@
 ---
 title: "ECDSA曲線の選択と開発の歴史"
 date: 2011-01-10T20:47:00Z
-source: correspondence
+type: "correspondence"
+source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
 author: "Satoshi Nakamoto"
 participants:
