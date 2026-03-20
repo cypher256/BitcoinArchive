@@ -159,7 +159,7 @@ export const ui = {
     'network.entries': 'エントリー',
     'network.coOccurrences': '共起数',
     'network.instructions': 'ノードをドラッグして配置を変更。スクロールでズーム。ホバーで詳細表示。クリックで遷移。',
-    'footer.description': '歴史的アーカイブ。すべてのコンテンツは公開記録に基づいています。',
+    'footer.description': '公開記録に基づく歴史的アーカイブ',
     'footer.github': 'GitHub で見る',
     'nav.chart': '価格チャート',
     'chart.title': 'ビットコイン価格推移',

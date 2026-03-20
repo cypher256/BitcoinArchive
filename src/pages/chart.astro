@@ -54,9 +54,11 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
           <thead>
             <tr>
               <th>{t('chart.predictedBy' as any)}</th>
-              <th>{t('chart.date' as any)}</th>
-              <th>{t('chart.target' as any)}</th>
-              <th>{t('chart.actual' as any)}</th>
+              <th class="pred-col-date">{t('chart.date' as any)}</th>
+              <th class="th-price">
+                <span class="th-price-line">{t('chart.target' as any)}</span>
+                <span class="th-price-line">{t('chart.actual' as any)}</span>
+              </th>
               <th>{t('chart.hit' as any)}</th>
             </tr>
           </thead>
@@ -67,15 +69,22 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
                 <tr class={`pred-${status} ${p.bearish ? 'pred-bearish' : ''}`}>
                   <td>
                     <strong>{p.predictor}</strong>
+                    <span class="pred-date-inline">
+                      {p.date.slice(0, 7)}
+                      <span class="pred-arrow">&rarr;</span>
+                      {p.targetDate.slice(0, 7)}
+                    </span>
                     <span class="pred-quote">"{p.quote[lang]}"</span>
                   </td>
-                  <td class="pred-date">
+                  <td class="pred-col-date pred-date">
                     <span>{p.date.slice(0, 7)}</span>
                     <span class="pred-arrow">&rarr;</span>
                     <span>{p.targetDate.slice(0, 7)}</span>
                   </td>
-                  <td class="pred-price">${p.targetPrice.toLocaleString()}</td>
-                  <td class="pred-price">{p.actualPrice ? '$' + p.actualPrice.toLocaleString() : '—'}</td>
+                  <td class="pred-price-cell">
+                    <span class="pred-price-value">${p.targetPrice.toLocaleString()}</span>
+                    <span class="pred-price-actual">{p.actualPrice ? '$' + p.actualPrice.toLocaleString() : '—'}</span>
+                  </td>
                   <td class={`pred-status pred-status-${status}`}>
                     {status === 'pending' ? t('chart.hitPending' as any) : status === 'hit' ? t('chart.hitYes' as any) : t('chart.hitNo' as any)}
                   </td>
@@ -287,17 +296,46 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     font-style: italic;
     margin-top: 0.2rem;
   }
+  .pred-date-inline {
+    display: none;
+  }
   .pred-date {
     white-space: nowrap;
     font-size: 0.8rem;
   }
   .pred-arrow {
-    margin: 0 0.25rem;
+    margin: 0 0.2rem;
     color: var(--color-text-muted);
   }
-  .pred-price {
-    font-weight: 600;
+  .predictions-table .th-price {
+    text-align: right;
+  }
+  .th-price-line {
+    display: block;
+  }
+  .pred-price-cell {
+    text-align: right;
     white-space: nowrap;
+  }
+  .pred-price-value,
+  .pred-price-actual {
+    display: block;
+    font-weight: 600;
+  }
+  .pred-price-actual {
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .pred-col-date {
+      display: none;
+    }
+    .pred-date-inline {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: 0.15rem;
+    }
   }
   .pred-status {
     font-weight: 600;
