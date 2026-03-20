@@ -7,6 +7,7 @@
     "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist",
     "check:image-alt": "node scripts/check-markdown-image-alt.mjs",
     "check:participants": "node scripts/check-participants.mjs",
+    "check:ja-tone": "node scripts/check-ja-tone.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
     "astro": "astro"

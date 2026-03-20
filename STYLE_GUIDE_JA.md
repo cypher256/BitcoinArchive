@@ -86,7 +86,7 @@ spoken or written utterance.
   phrasing.
 - `Hal Finney`: warm, curious, encouraging, humane even when technical.
 - `Adam Back`: terse, professional, low-friction.
-- `Wei Dai`: extremely concise and matter-of-fact.
+- `Wei Dai`: analytical, matter-of-fact, epistemic hedging.
 - `Martti Malmi`: polite, earnest, respectful, especially in early exchanges.
 - `Gavin Andresen`: calm, practical, low-drama, solutions-oriented.
 - `Laszlo Hanyecz`: casual, relaxed, conversational.
@@ -94,6 +94,36 @@ spoken or written utterance.
 - `James A. Donald`: combative, probing, insistent.
 - `Mike Hearn`: direct, reasoned, energetic, sometimes forceful.
 - `Nick Szabo`: intellectual, essayistic, slightly formal.
+
+## Japanese Tone (だ/である vs ですます)
+
+The canonical tone rule for each character — whether to use だ/である調 or
+ですます調 in Japanese — is defined in `scripts/check-ja-tone.mjs`
+(`CHARACTER_RULES`). The build script `npm run check:ja-tone` validates all
+Japanese translations against these rules.
+
+Summary:
+
+| Person | Tone | Notes |
+|--------|------|-------|
+| Satoshi Nakamoto | だ/である | 穏やか・抑制的 |
+| Hal Finney | だ/である | 温かい楽観主義者 |
+| Ray Dillinger | だ/である | 皮肉屋でぶっきらぼう |
+| James Donald | だ/である | 攻撃的な懐疑論者 |
+| Gavin Andresen | だ/である | 穏やかな実務家 |
+| Martti Malmi | **ですます** | 丁寧で控えめ（意図的な色付け） |
+| Adam Back | だ/である | 極めて簡潔 |
+| Wei Dai | だ/である | 簡潔・知的・認識的ヘッジ |
+| Nick Szabo | だ/である | 学者口調 |
+| Mike Hearn | だ/である | 情熱的で論理的 |
+| Laszlo Hanyecz | だ/である | カジュアル |
+| Dustin Trammell | だ/である | カジュアル・技術者同士 |
+| Cøbra | だ/である | 反骨精神 |
+| Craig Wright | だ/である | 尊大 |
+
+When adding a new participant or changing a tone rule, update
+`scripts/check-ja-tone.mjs` first — it is the single source of truth for
+automated checks.
 
 ## Voice Do / Don't
 
