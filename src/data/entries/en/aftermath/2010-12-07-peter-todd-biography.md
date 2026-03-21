@@ -54,3 +54,14 @@ Todd served as Chief Scientist at Mastercoin and Dark Wallet, and contributed to
 
 **HBO Documentary (October 2024):**
 In October 2024, the HBO documentary "Money Electric: The Bitcoin Mystery" named Todd as a candidate for Satoshi Nakamoto's true identity, pointing to his December 2010 reply to Satoshi's post as evidence. Todd denied the claim, calling it irresponsible and dangerous.
+
+**Writing style across three periods:**
+Todd's public writing appears to shift noticeably across three periods:
+
+1. **First post (December 7, 2010):** His BitcoinTalk debut — "Will buy 1 invite for $2, msg privately." — is maximally terse. No subject pronoun, no full words where abbreviations suffice, no personality. The text reads like a classified ad, stylistically indistinguishable from any anonymous user. Neither Todd's later voice nor Satoshi's restrained precision is evident.
+
+2. **Second post (December 10, 2010):** His reply to Satoshi — "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee." — is calm, technically precise, and measured. The opening "Of course" carries a tone of casual authority, but the overall register is neutral. It does not yet display the profanity, self-deprecation, or combative sarcasm that would later define Todd's public persona.
+
+3. **2012 onward:** Todd's writing develops a highly distinctive and consistent voice: frequent profanity, self-deprecating humor, rhetorical aggression, heavy use of asterisk emphasis, and a confrontational style. This voice remained remarkably stable across blog posts, mailing list exchanges, and social media for over a decade.
+
+The progression — from no personality, to neutral precision, to an unmistakably idiosyncratic style — is unusual. Most writers show more personality early and develop restraint over time, not the reverse. Whether this reflects a young developer finding his voice over several years or something else entirely is a matter of interpretation.
