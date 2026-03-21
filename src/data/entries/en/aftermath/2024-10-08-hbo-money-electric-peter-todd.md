@@ -64,6 +64,8 @@ Todd dismissed the allegations with sarcasm and anger:
 
 He called the documentary "irresponsible" and said it put his safety at risk, noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could make them a target. Todd stated he did not begin working on Bitcoin until 2014 — six years after Nakamoto's disappearance.
 
+However, the BitcoinTalk record raises questions about this claim. On December 10, 2010, just three days after registering, "retep" replied to Satoshi Nakamoto's explanation of transaction replacement with "Of course, to be specific" — correcting Bitcoin's creator on the mechanics of transaction fees as though it were self-evident. A 23-year-old fine arts student addressing the designer of a novel consensus mechanism with casual technical authority is difficult to reconcile with someone who did not begin working on Bitcoin until 2014. Furthermore, after this reply Todd fell completely silent on BitcoinTalk for sixteen months, and Satoshi's last public post came just two days after Todd's correction.
+
 **Critical reception:**
 
 The documentary was widely criticized by the Bitcoin community. Bitcoin Magazine called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no writing style analysis, and no explanation for how a fine arts student could have designed a novel consensus mechanism.
