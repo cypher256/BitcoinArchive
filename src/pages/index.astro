@@ -24,16 +24,17 @@ const topTags = Array.from(tagCounts.entries())
   .slice(0, 24);
 const maxTagCount = topTags[0]?.[1] ?? 1;
 
-// Type counts
-const typeCounts = new Map<string, number>();
-for (const entry of entries) {
-  typeCounts.set(entry.data.type, (typeCounts.get(entry.data.type) || 0) + 1);
-}
-const topTypes = Array.from(typeCounts.entries())
-  .sort((a, b) => b[1] - a[1]);
-const maxTypeCount = topTypes[0]?.[1] ?? 1;
-
 const TOP_N = 10;
+
+// Source counts
+const sourceCounts = new Map<string, number>();
+for (const entry of entries) {
+  sourceCounts.set(entry.data.source, (sourceCounts.get(entry.data.source) || 0) + 1);
+}
+const topSources = Array.from(sourceCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, TOP_N);
+const maxSourceCount = topSources[0]?.[1] ?? 1;
 
 // Participant counts
 const participantMap = new Map<string, { name: string; count: number }>();
@@ -148,14 +149,14 @@ function tagWeight(count: number, max: number): number {
     <div class="dashboard-grid">
       <section class="dashboard-section">
         <div class="section-header">
-          <h2>{t('home.topTypes' as any)}</h2>
-          <a href={localePath('/types/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+          <h2>{t('home.topSources')}</h2>
+          <a href={localePath('/sources/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
         </div>
         <div class="rank-list">
-          {topTypes.map(([type, count]) => (
-            <a href={localePath(`/types/${type}/`, lang)} class="rank-item">
-              <div class="rank-bar" style={`width: ${Math.round((count / maxTypeCount) * 100)}%`}></div>
-              <span class="rank-name">{t(`type.${type}` as any)}</span>
+          {topSources.map(([source, count]) => (
+            <a href={localePath(`/sources/${source}/`, lang)} class="rank-item">
+              <div class="rank-bar" style={`width: ${Math.round((count / maxSourceCount) * 100)}%`}></div>
+              <span class="rank-name">{t(`source.${source}` as any)}</span>
               <span class="rank-count">{count}</span>
             </a>
           ))}
