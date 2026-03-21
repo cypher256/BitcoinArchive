@@ -116,8 +116,8 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
       container.innerHTML = '';
       var rect = container.getBoundingClientRect();
       var W = rect.width || 600;
-      var H = 280;
-      var margin = { top: 20, right: 20, bottom: 40, left: 70 };
+      var H = 360;
+      var margin = { top: 24, right: 70, bottom: 40, left: 70 };
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
@@ -126,14 +126,31 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 
       var x = d3.scaleLinear().domain([2009, 2140]).range([0, w]);
       var y = d3.scaleLinear().domain([0, 21000000]).range([h, 0]);
+      var yReward = d3.scaleLog().domain([0.00000001, 50]).range([h, 0]).clamp(true);
 
+      // X axis
       g.append('g').attr('transform', 'translate(0,' + h + ')')
         .call(d3.axisBottom(x).ticks(8).tickFormat(function(d) { return String(d); }))
         .selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', '11px');
 
+      // Left Y axis — cumulative supply
       g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(function(d) {
         return d3.format('.1f')(d / 1000000) + 'M';
       })).selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', '11px');
+      g.append('text').attr('transform', 'rotate(-90)').attr('x', -h / 2).attr('y', -55)
+        .attr('text-anchor', 'middle').attr('font-family', 'var(--font-heading)')
+        .attr('font-size', '11px').attr('fill', '#b45309').text('Cumulative Supply');
+
+      // Right Y axis — block reward
+      var rewardTicks = [50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78125];
+      g.append('g').attr('transform', 'translate(' + w + ',0)')
+        .call(d3.axisRight(yReward).tickValues(rewardTicks).tickFormat(function(d) {
+          return d >= 1 ? String(d) : d.toFixed(2);
+        }))
+        .selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', '10px').attr('fill', '#6366f1');
+      g.append('text').attr('transform', 'rotate(90)').attr('x', h / 2).attr('y', -w - 55)
+        .attr('text-anchor', 'middle').attr('font-family', 'var(--font-heading)')
+        .attr('font-size', '11px').attr('fill', '#6366f1').text('Block Reward (BTC)');
 
       // 21M line
       g.append('line')
@@ -143,7 +160,7 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
         .attr('text-anchor', 'end').attr('font-family', 'var(--font-heading)')
         .attr('font-size', '10px').attr('fill', '#b45309').text('21M BTC');
 
-      // Area fill
+      // Area fill for cumulative supply
       var area = d3.area()
         .x(function(d) { return x(d.year); })
         .y0(h)
@@ -165,14 +182,103 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
       g.append('path').datum(schedule)
         .attr('fill', 'none').attr('stroke', '#b45309').attr('stroke-width', 2).attr('d', line);
 
+      // Block reward step line (right Y axis)
+      var rewardData = schedule.filter(function(d) { return d.reward > 0; });
+      var rewardSteps = [];
+      for (var i = 0; i < rewardData.length; i++) {
+        rewardSteps.push({ year: rewardData[i].year, reward: rewardData[i].reward });
+        if (i + 1 < rewardData.length) {
+          rewardSteps.push({ year: rewardData[i + 1].year, reward: rewardData[i].reward });
+        } else {
+          rewardSteps.push({ year: 2140, reward: rewardData[i].reward });
+        }
+      }
+
+      var rewardLine = d3.line()
+        .x(function(d) { return x(d.year); })
+        .y(function(d) { return yReward(d.reward); });
+
+      g.append('path').datum(rewardSteps)
+        .attr('fill', 'none').attr('stroke', '#6366f1').attr('stroke-width', 2)
+        .attr('stroke-opacity', 0.7).attr('d', rewardLine);
+
+      // Halving dots
+      rewardData.forEach(function(d) {
+        g.append('circle')
+          .attr('cx', x(d.year)).attr('cy', yReward(d.reward))
+          .attr('r', 3.5).attr('fill', '#6366f1').attr('stroke', '#fff').attr('stroke-width', 1);
+      });
+
+      // Interactive overlay + tooltip
+      container.style.position = 'relative';
+      var tooltip = d3.select(container).append('div')
+        .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
+        .style('background', 'var(--color-bg)').style('border', '1px solid var(--color-border)')
+        .style('border-radius', '6px').style('padding', '6px 10px').style('font-size', '12px')
+        .style('font-family', 'var(--font-heading)').style('box-shadow', '0 2px 8px rgba(0,0,0,0.12)')
+        .style('white-space', 'nowrap').style('z-index', '10');
+
+      var crosshair = g.append('line')
+        .attr('y1', 0).attr('y2', h)
+        .attr('stroke', 'var(--color-text-muted)').attr('stroke-dasharray', '3,3')
+        .attr('stroke-opacity', 0).attr('pointer-events', 'none');
+
+      function findPeriod(year) {
+        for (var i = schedule.length - 1; i >= 0; i--) {
+          if (year >= schedule[i].year) return schedule[i];
+        }
+        return schedule[0];
+      }
+
+      function interpSupply(year) {
+        for (var i = 0; i < schedule.length - 1; i++) {
+          if (year >= schedule[i].year && year <= schedule[i + 1].year) {
+            var t = (year - schedule[i].year) / (schedule[i + 1].year - schedule[i].year);
+            return schedule[i].cumulativeSupply + t * (schedule[i + 1].cumulativeSupply - schedule[i].cumulativeSupply);
+          }
+        }
+        return schedule[schedule.length - 1].cumulativeSupply;
+      }
+
+      g.append('rect').attr('width', w).attr('height', h).attr('fill', 'transparent')
+        .style('cursor', 'crosshair')
+        .on('mousemove', function(event) {
+          var coords = d3.pointer(event, this);
+          var hoverYear = Math.round(x.invert(coords[0]));
+          if (hoverYear < 2009) hoverYear = 2009;
+          if (hoverYear > 2140) hoverYear = 2140;
+          var p = findPeriod(hoverYear);
+          var supplyAt = Math.round(interpSupply(hoverYear));
+
+          crosshair.attr('x1', coords[0]).attr('x2', coords[0]).attr('stroke-opacity', 0.4);
+
+          var reward = p.reward >= 1 ? String(p.reward) : p.reward > 0 ? p.reward.toFixed(8).replace(/0+$/, '') : '0';
+          tooltip.html(
+            '<div style="font-weight:700;color:#6366f1">' + hoverYear + '</div>' +
+            '<div>Block Reward: <b>' + reward + ' BTC</b></div>' +
+            '<div>Cumulative Supply: <b>' + d3.format(',')(supplyAt) + ' BTC</b></div>' +
+            '<div style="color:var(--color-text-muted)">Block #' + d3.format(',')(p.block) + '+</div>'
+          ).style('opacity', 1);
+
+          var cr = container.getBoundingClientRect();
+          var tx = event.clientX - cr.left + 14;
+          var ty = event.clientY - cr.top - 10;
+          if (tx + 200 > cr.width) tx = tx - 220;
+          tooltip.style('left', tx + 'px').style('top', ty + 'px');
+        })
+        .on('mouseleave', function() {
+          crosshair.attr('stroke-opacity', 0);
+          tooltip.style('opacity', 0);
+        });
+
       // Current year marker
       var now = new Date().getFullYear();
       g.append('line')
         .attr('x1', x(now)).attr('x2', x(now)).attr('y1', 0).attr('y2', h)
-        .attr('stroke', '#6366f1').attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.5);
+        .attr('stroke', '#059669').attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.5);
       g.append('text').attr('x', x(now)).attr('y', -5)
         .attr('text-anchor', 'middle').attr('font-family', 'var(--font-heading)')
-        .attr('font-size', '10px').attr('fill', '#6366f1').text(now);
+        .attr('font-size', '10px').attr('fill', '#059669').text(now);
     }
 
     draw();
