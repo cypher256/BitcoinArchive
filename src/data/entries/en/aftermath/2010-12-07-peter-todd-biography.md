@@ -1,5 +1,5 @@
 ---
-title: "Peter Todd (1985–) — Bitcoin Core developer and proponent of Replace-by-Fee"
+title: "Peter Todd — Bitcoin Core developer and proponent of Replace-by-Fee"
 date: 2010-12-07T00:00:00Z
 type: "biography"
 source: "wikipedia"
@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd (born 1985): Canadian cryptographer and Bitcoin Core developer known for proposing Replace-by-Fee (RBF) and creating OpenTimestamps. He registered on BitcoinTalk on December 7, 2010 under the username \"retep\" and replied to one of Satoshi Nakamoto's posts three days later. In October 2024, an HBO documentary named him as a Satoshi Nakamoto candidate, which he denied."
+description: "Peter Todd: Canadian cryptographer and Bitcoin Core developer known for proposing Replace-by-Fee (RBF) and creating OpenTimestamps. He registered on BitcoinTalk on December 7, 2010 under the username \"retep\" and replied to one of Satoshi Nakamoto's posts three days later. In October 2024, an HBO documentary named him as a Satoshi Nakamoto candidate, which he denied."
 isSatoshi: false
 tags:
   - "peter-todd"
@@ -29,7 +29,7 @@ secondarySources:
     url: "https://petertodd.org/"
 ---
 
-Peter Todd (born 1985, Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.
+Peter Todd (Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media, and previously worked as an analog electronics designer at geophysics startup Gedex Inc. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.
 
 **BitcoinTalk and Satoshi:**
 Todd registered on BitcoinTalk on December 7, 2010 under the username "retep" (Peter spelled backwards). Three days later, on December 10, he replied to a Satoshi Nakamoto post in the "Fees in BitDNS confusion" thread, where Satoshi had described a concept for transaction replacement — what would later become known as Replace-by-Fee. This was only Todd's second post on the forum. Satoshi's last public post came two days later, on December 12, 2010.

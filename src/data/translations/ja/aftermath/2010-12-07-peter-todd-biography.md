@@ -1,5 +1,5 @@
 ---
-title: "ピーター・トッド（1985–）— Bitcoin Core開発者、Replace-by-Feeの提唱者"
+title: "ピーター・トッド — Bitcoin Core開発者、Replace-by-Feeの提唱者"
 date: 2010-12-07T00:00:00Z
 type: "biography"
 source: "wikipedia"
@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "ピーター・トッド（1985年生まれ）：カナダの暗号学者でBitcoin Core開発者。Replace-by-Fee（RBF）の提唱やOpenTimestampsの開発で知られる。2010年12月7日にユーザー名「retep」でBitcoinTalkに登録し、3日後にサトシ・ナカモトの投稿に返信した。2024年10月、HBOのドキュメンタリーでサトシ・ナカモト候補として取り上げられたが、本人は否定した。"
+description: "ピーター・トッド：カナダの暗号学者でBitcoin Core開発者。Replace-by-Fee（RBF）の提唱やOpenTimestampsの開発で知られる。2010年12月7日にユーザー名「retep」でBitcoinTalkに登録し、3日後にサトシ・ナカモトの投稿に返信した。2024年10月、HBOのドキュメンタリーでサトシ・ナカモト候補として取り上げられたが、本人は否定した。"
 isSatoshi: false
 tags:
   - "peter-todd"
@@ -30,7 +30,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-ピーター・トッド（1985年生まれ、カナダ）は暗号学者、応用暗号コンサルタント、Bitcoin Core開発者である。Bitcoinプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
+ピーター・トッド（カナダ）は暗号学者、応用暗号コンサルタント、Bitcoin Core開発者である。2011年にOCAD University（Ontario College of Art and Design）のIntegrated Media専攻を卒業し、以前は地球物理学スタートアップGedex Inc.でアナログ電子工学の設計者として勤務していた。Bitcoinプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
 
 **BitcoinTalkとサトシ：**
 トッドは2010年12月7日にユーザー名「retep」（Peterの逆）でBitcoinTalkに登録した。3日後の12月10日、「Fees in BitDNS confusion」スレッドでサトシ・ナカモトの投稿に返信した。サトシはそこでトランザクション置換の概念 — 後にReplace-by-Feeとして知られるもの — を説明していた。これはトッドのフォーラムでの2番目の投稿だった。サトシの最後の公開投稿はその2日後の2010年12月12日だった。
