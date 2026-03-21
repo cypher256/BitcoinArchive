@@ -52,6 +52,18 @@ Hearn quoted Satoshi's response to early bandwidth concerns:
 
 He also noted that Satoshi had told him directly that Bitcoin "never really hits a scale ceiling."
 
+**On the leadership handover:**
+
+Hearn described how Satoshi's departure left an unplanned governance vacuum:
+
+> "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to Gavin Andresen, an early contributor."
+
+After praising Gavin's judgement — calling it one of the reasons Hearn had quit Google to work on Bitcoin full time — he added:
+
+> "Only one tiny problem: Satoshi never actually asked Gavin if he wanted the job, and in fact he didn't."
+
+> "So the first thing Gavin did was grant four other developers access to the code as well. These developers were chosen quickly in order to ensure the project could easily continue if anything happened to him. They were, essentially, whoever was around and making themselves useful at the time."
+
 **Bitcoin XT:**
 
 Prior to this post, Hearn had developed Bitcoin XT — an alternative Bitcoin client that proposed increasing the block size from 1 MB to 8 MB initially, doubling every two years until reaching 8 GB. The project failed to gain sufficient adoption, which Hearn cited as evidence that the governance model was broken.
