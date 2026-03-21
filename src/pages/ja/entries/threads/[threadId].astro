@@ -61,6 +61,8 @@ for (const m of messages) {
 }
 const participants = Array.from(participantMap.values());
 const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(messages[messages.length - 1].data.date, lang)}`;
+const source = messages[0].data.source;
+const sourceLabel = t(`source.${source}` as any) || source;
 const breadcrumbs = [
   { name: t('nav.home'), url: localePath('/', lang) },
   { name: t('nav.entries'), url: localePath('/entries/', lang) },
@@ -80,6 +82,7 @@ const breadcrumbs = [
       <h1>{threadTitle}</h1>
       <div class="thread-meta">
         <span class="thread-count">{messages.length} 件のメッセージ</span>
+        <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
         <span class="thread-participants">
           {participants.map((p, i) => (
             <>
@@ -143,6 +146,18 @@ const breadcrumbs = [
   .thread-count {
     font-weight: 600;
     color: var(--color-accent);
+  }
+  .source-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background: var(--color-source-bg);
+    border-radius: 3px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .source-badge:hover {
+    opacity: 0.85;
   }
   .participant-link {
     text-decoration: none;
