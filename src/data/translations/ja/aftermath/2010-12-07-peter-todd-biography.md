@@ -25,12 +25,14 @@ secondarySources:
     url: "https://www.hbo.com/movies/money-electric-the-bitcoin-mystery"
   - name: "Peter Todd — BitcoinTalkプロフィール"
     url: "https://bitcointalk.org/index.php?action=profile;u=2546"
+  - name: "Peter Todd — GitHubプロフィール"
+    url: "https://github.com/petertodd"
   - name: "Peter Todd — 公式ウェブサイト"
     url: "https://petertodd.org/"
 translationStatus: complete
 ---
 
-ピーター・トッド（カナダ）は暗号学者、応用暗号コンサルタント、Bitcoin Core開発者である。2011年にOCAD University（Ontario College of Art and Design）のIntegrated Media専攻を卒業し、以前は地球物理学スタートアップGedex Inc.でアナログ電子工学の設計者として勤務していた。Bitcoinプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
+ピーター・トッド（カナダ）は暗号学者、応用暗号コンサルタント、Bitcoin Core開発者である。2011年にOCAD University（Ontario College of Art and Design）のIntegrated Media専攻を卒業し、以前は地球物理学スタートアップGedex Inc.でアナログ電子工学の設計者として勤務していた。2008年4月にGitHubアカウントを登録している。Bitcoinプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
 
 **BitcoinTalkとサトシ：**
 トッドは2010年12月7日にユーザー名「retep」（Peterの逆）でBitcoinTalkに登録した。3日後の12月10日、「Fees in BitDNS confusion」スレッドでサトシ・ナカモトの投稿に返信した。サトシはそこでトランザクション置換の概念 — 後にReplace-by-Feeとして知られるもの — を説明していた。これはトッドのフォーラムでの2番目の投稿だった。サトシの最後の公開投稿はその2日後の2010年12月12日だった。
@@ -58,7 +60,9 @@ translationStatus: complete
 <!-- speaker: narrator -->
 2024年10月、HBOのドキュメンタリー「Money Electric: The Bitcoin Mystery」は、トッドをサトシ・ナカモトの正体候補として取り上げ、2010年12月のサトシの投稿への返信を証拠として指摘した。トッドはこの主張を否定し、無責任で危険だと述べた。
 
-**3つの時期にわたる文体の変遷：**
+---
+
+**考察：3つの時期にわたる文体の変遷**
 
 <!-- speaker: narrator -->
 トッドの公開された文章は、3つの時期で顕著な変化を見せる。
@@ -73,4 +77,48 @@ translationStatus: complete
 3. **2012年以降：** トッドの文体は極めて特徴的で一貫したものになる。頻繁な罵倒、自虐的ユーモア、修辞的な攻撃性、アスタリスクによる強調の多用、挑発的なスタイル。この文体はブログ、メーリングリスト、SNSにわたって10年以上にわたり驚くほど安定していた。
 
 <!-- speaker: narrator -->
-個性ゼロから、中立的な精密さへ、そして強烈な個性へ——この段階的な変遷は珍しい。一般的に、書き手は若い頃のほうが感情的で、経験を積むにつれて抑制的になる。トッドの場合はその逆に見える。これが数年かけて自分のスタイルを見つけた若い開発者の軌跡なのか、それとも別の何かなのかは、解釈に委ねられる。
+個性ゼロから、中立的な精密さへ、そして強烈な個性へ——この段階的な変遷は珍しい。一般的に、書き手は若い頃のほうが感情的で、経験を積むにつれて抑制的になる。トッドの場合はその逆に見える。
+
+**考察：GitHubの活動タイムライン**
+
+<!-- speaker: narrator -->
+トッドは2008年4月13日にGitHubアカウントを登録した。GitHubにおける公開コミット履歴は以下のようにまとめられる。
+
+| 期間 | トッドの公開された活動記録 | サトシ・ナカモトの活動 |
+|------|--------------------------|---------------------|
+| 2008年4〜12月 | GitHub：活発、15リポジトリ——すべてハードウェア/電子工学（時計、エントロピーオシレーター、カウンター、ファームウェア、PCB）。2プロジェクトに「Shipped」コミットあり。最終コミット：12月9日 | 10月：ホワイトペーパー公開 |
+| 2009年 | GitHub：コミットゼロ、新規リポジトリゼロ | 1月：ジェネシスブロック。年間を通じて活発な開発とフォーラム参加 |
+| 2010年 | GitHub：ほぼ休止——小規模なリポジトリ1つ（2月）のみ、継続的な活動なし。BitcoinTalk：登録（12月7日）、サトシへの返信（12月10日） | 12月12日まで活動（最後の公開投稿） |
+| 2011年 | GitHub：新規リポジトリゼロ。OCAD University卒業（Integrated Media専攻） | 撤退。最後の既知のプライベートメール |
+| 2012年5月 | GitHub：初のBitcoinリポジトリ——`hardware-bitcoin-wallet` | — |
+| 2012年9月 | GitHub：Bitcoin Coreをフォーク。急速なBitcoin開発が始まる | — |
+
+<!-- speaker: narrator -->
+トッドのGitHub公開活動の空白期間——おおよそ2008年12月から2012年初頭——は、サトシ・ナカモトの既知の活動期間と重なる。
+
+<!-- speaker: narrator -->
+トッドの2008〜2011年に作成されたGitHubリポジトリ：
+
+| リポジトリ | 作成日 | 言語 | OS手がかり | 説明 |
+|-----------|--------|------|-----------|------|
+| vimfiles | 2008-04-15 | VimL | `~/.vim`（Unix） | 職場で共有していたvim設定 |
+| alternate-pace | 2008-05-24 | — | | 別のペースを刻む時計 |
+| alternate-pace.elec | 2008-05-28 | Shell | `#!/bin/sh`、Unixパイプライン | Alternate Pace——電子回路 |
+| alternate-pace.firm | 2008-05-28 | C | `/usr/share/sdcc/`、`/usr/share/gputils/`（Linux FHS） | Alternate Pace——ファームウェア |
+| entropy-oscillator | 2008-05-25 | — | | エントロピーオシレーター |
+| entropy-oscillator.elec | 2008-08-28 | Python | | エントロピーオシレーター——電子回路 |
+| entropy-oscillator.firm | 2008-08-28 | — | | エントロピーオシレーター——ファームウェア |
+| meter-clock | 2008-06-07 | — | | メータークロック |
+| meter-clock.schem | 2008-06-07 | Shell | | メータークロック——回路図 |
+| meter-clock.hard | 2008-06-07 | — | | メータークロック——PCBレイアウトとハードウェア設計 |
+| meter-clock.firm | 2008-11-09 | — | | メータークロック——ファームウェア |
+| 64-bit-counter | 2008-06-09 | — | | 64MHz源で駆動される64ビット不揮発性カウンター |
+| 64-bit-counter.elec | 2008-06-09 | KiCad | | 64ビットカウンター——電子回路 |
+| 64-bit-counter.firm | 2008-06-09 | C | | 64ビットカウンター——ファームウェア |
+| metesky | 2008-08-20 | Python | | 部品表（BOM）管理ツール |
+| *（2009年——リポジトリなし）* | | | | |
+| congestion | 2010-02-24 | Python | `#!/usr/bin/python`、PyGTK（GNOME/Linux）、vim modeline | 交通渋滞シミュレーション（Python/Cython、Cairo描画）。2〜4月に約30コミット後、活動停止。OCAD大学の課題の可能性 |
+| *（2011年——リポジトリなし）* | | | | |
+
+<!-- speaker: narrator -->
+すべてのOS指標がLinuxを示している——ハードコードされたLinux FHSパス（`/usr/share/`）、Unixシバン、PyGTK（GNOME/Linuxネイティブのツールキット）。いずれのリポジトリにもWindows関連のファイル、パス、ツールは一切現れない。
