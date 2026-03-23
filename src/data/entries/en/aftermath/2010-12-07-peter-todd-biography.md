@@ -27,6 +27,8 @@ secondarySources:
     url: "https://bitcointalk.org/index.php?action=profile;u=2546"
   - name: "Peter Todd — GitHub Profile"
     url: "https://github.com/petertodd"
+  - name: "Gregory Maxwell — Hacker News comment ('it took me mass nearly a decade to realize retep was peter backwards')"
+    url: "https://news.ycombinator.com/item?id=41784567"
   - name: "Peter Todd — Official Website"
     url: "https://petertodd.org/"
 ---
@@ -34,7 +36,7 @@ secondarySources:
 Peter Todd (Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media, and previously worked as an analog electronics designer at geophysics startup Gedex Inc. He registered a GitHub account in April 2008. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.
 
 **BitcoinTalk and Satoshi:**
-Todd registered on BitcoinTalk on December 7, 2010 under the username "retep" (Peter spelled backwards). Three days later, on December 10, he replied to a Satoshi Nakamoto post in the "Fees in BitDNS confusion" thread, where Satoshi had described a concept for transaction replacement — what would later become known as Replace-by-Fee. This was only Todd's second post on the forum. Satoshi's last public post came two days later, on December 12, 2010.
+Todd registered on BitcoinTalk on December 7, 2010 under the username "retep." At the time, few noticed that the handle was Peter spelled backwards — Bitcoin Core developer Gregory Maxwell testified in October 2024 that "it took me nearly a decade to realize retep was peter backwards." Years later, Todd changed the account's username to "Peter Todd." Three days after registration, on December 10, he replied to a Satoshi Nakamoto post in the "Fees in BitDNS confusion" thread, where Satoshi had described a concept for transaction replacement — what would later become known as Replace-by-Fee. This was only Todd's second post on the forum. Satoshi's last public post came two days later, on December 12, 2010.
 
 **Bitcoin Core Contributions:**
 Todd became an active Bitcoin Core contributor starting in April 2012, eventually becoming the 11th most prolific contributor to Bitcoin Core's GitHub repository. He focused on protocol-level security, transaction policy, and network resilience.

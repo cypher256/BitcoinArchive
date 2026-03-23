@@ -21,6 +21,8 @@ secondarySources:
     url: "https://bitcointalk.org/index.php?action=profile;u=2546"
   - name: "HBO — Money Electric: The Bitcoin Mystery"
     url: "https://www.hbo.com/movies/money-electric-the-bitcoin-mystery"
+  - name: "Gregory Maxwell — Hacker News comment ('it took me nearly a decade to realize retep was peter backwards')"
+    url: "https://news.ycombinator.com/item?id=41784567"
 ---
 
 > Will buy 1 invite for $2, msg privately.
@@ -45,3 +47,7 @@ The post is maximally terse: no subject ("I"), no full word ("msg" for "message"
 - December 12 — Satoshi's last public post
 
 The 41-second gap between registration and first post suggests the message was composed in advance — or the account was created specifically to post it.
+
+**Username change:**
+
+The username "retep" was changed to "Peter Todd" years later at Todd's own request (BitcoinTalk requires users to ask an administrator to change usernames). The exact timing is unknown but is estimated to be around 2012–2013, when Todd began actively contributing to Bitcoin Core. Few people realized at the time that "retep" was "Peter" reversed. Bitcoin Core developer Gregory Maxwell stated on Hacker News in October 2024 that "it took me nearly a decade to realize retep was peter backwards." Todd himself addressed this in a 2024 Bloomberg interview, arguing: "At the time I was under the name retep, and nobody knew who I was. If I had accidentally posted as Satoshi, the normal thing to do would be to abandon the account — not change the username to my real name years later."
