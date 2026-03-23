@@ -23,6 +23,8 @@ secondarySources:
     url: "https://www.hbo.com/movies/money-electric-the-bitcoin-mystery"
   - name: "Gregory Maxwell — Hacker Newsコメント（retepの逆綴りに気づくのに10年近くかかった）"
     url: "https://news.ycombinator.com/item?id=41784567"
+  - name: "Bloomberg — Peter Toddインタビュー（2024年10月）"
+    url: "https://www.bloomberg.com/news/videos/2024-10-09/peter-todd-denies-being-bitcoin-creator-satoshi-nakamoto"
 translationStatus: complete
 ---
 
@@ -62,4 +64,4 @@ translationStatus: complete
 **アカウント名の変更：**
 
 <!-- speaker: narrator -->
-「retep」というユーザー名は、数年後にトッド自身の依頼により「Peter Todd」に変更された（BitcoinTalkではユーザー名変更は管理者への依頼が必要）。変更の正確な時期は不明だが、トッドがBitcoin Coreへの貢献を本格化した2012〜2013年頃と推定される。retepがPeterの逆綴りであることに当時気づいた者はほとんどいなかった。Bitcoin Core開発者のグレゴリー・マクスウェルは2024年10月にHacker Newsで「retepがpeterの逆だと気づくのに10年近くかかった」と証言している。トッド本人は2024年のBloombergインタビューで「当時はretepという名前で、誰も正体を知らなかった。もしサトシとして誤投稿したなら、アカウントを捨てるのが普通だ。数年後に実名に変えたりしない」と、HBO説への反論材料としてこの経緯を語った。
+「retep」というユーザー名は、数年後にトッド自身の依頼により「Peter Todd」に変更された（BitcoinTalkではユーザー名変更は管理者への依頼が必要）。変更の正確な時期は不明だが、トッドがBitcoin Coreへの貢献を本格化した2012〜2013年頃と推定される。retepがPeterの逆綴りであることに当時気づいた者はほとんどいなかった。Bitcoin Core開発者のグレゴリー・マクスウェルは2024年10月にHacker Newsで「retepがpeterの逆だと気づくのに10年近くかかった」と述べている。トッド本人は2024年のBloombergインタビューで「当時はretepという名前で、誰も正体を知らなかった。もしサトシとして誤投稿したなら、アカウントを捨てるのが普通だ。数年後に実名に変えたりしない」と、HBO説への反論材料としてこの経緯を語った。
