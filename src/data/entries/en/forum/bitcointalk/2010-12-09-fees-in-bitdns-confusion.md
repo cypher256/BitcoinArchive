@@ -8,8 +8,6 @@ author: "galeru"
 participants:
   - name: "galeru"
     slug: "galeru"
-  - name: "Satoshi Nakamoto"
-    slug: "satoshi-nakamoto"
 description: "galeru raises questions about how users will determine transaction fees, noting that current debates about BitDNS assume fine-grained miner fee decisions without any user-friendly implementation."
 isSatoshi: false
 threadId: "bt-fees-in-bitdns-confusion"

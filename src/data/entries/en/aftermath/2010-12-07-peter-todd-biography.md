@@ -71,20 +71,20 @@ Todd's public writing appears to shift noticeably across three periods:
 
 The progression — from no personality, to neutral precision, to an unmistakably idiosyncratic style — is unusual. Most writers show more personality early and develop restraint over time, not the reverse.
 
-**Analysis: GitHub activity timeline**
+**Analysis: Development activity timeline**
 
-Todd registered his GitHub account on April 13, 2008. His public commit history on GitHub can be summarized as follows:
+Todd registered his GitHub account on April 13, 2008. Satoshi Nakamoto developed Bitcoin on SourceForge (SVN). Their public activity records can be summarized as follows:
 
-| Period | Todd's public record | Satoshi Nakamoto's activity |
+| Period | Todd's public record (GitHub) | Satoshi Nakamoto's activity (SourceForge / BitcoinTalk) |
 |--------|----------------------|---------------------------|
-| Apr–Dec 2008 | GitHub: Active, 15 repos — all hardware/electronics (clocks, entropy oscillators, counters, firmware, PCB). Two projects have "Shipped" commits. Last commit: Dec 9 | Oct 2008: Whitepaper published |
-| 2009 | GitHub: Zero commits, zero new repos | Jan: Genesis block. Active development and forum participation throughout the year |
-| 2010 | GitHub: Nearly dormant — 1 small repo (Feb), no sustained activity. BitcoinTalk: registration (Dec 7), reply to Satoshi (Dec 10) | Active until Dec 12 (last public post) |
-| 2011 | GitHub: Zero new repos. OCAD University graduation (Integrated Media) | Departure. Final known private emails |
-| May 2012 | GitHub: First Bitcoin repo — `hardware-bitcoin-wallet` | — |
-| Sep 2012 | GitHub: Forks Bitcoin Core. Rapid Bitcoin development begins | — |
+| Apr–Dec 2008 | Active, 15 repos — all hardware/electronics (clocks, entropy oscillators, counters, firmware, PCB). Two projects have "Shipped" commits. Last commit: Dec 9 | Oct 2008: Whitepaper published |
+| 2009 | Zero commits, zero new repos | Jan: Genesis block. Active development on SourceForge, forum participation on BitcoinTalk |
+| 2010 | Nearly dormant — 1 small repo (Feb), no sustained activity. BitcoinTalk: registration (Dec 7), reply to Satoshi (Dec 10) | Active on SourceForge / BitcoinTalk until Dec 12 (last public post) |
+| 2011 | Zero new repos. OCAD University graduation (Integrated Media) | Departure. Final known private emails |
+| May 2012 | First Bitcoin repo — `hardware-bitcoin-wallet` | — |
+| Sep 2012 | Forks Bitcoin Core. Rapid Bitcoin development begins | — |
 
-The gap in Todd's public GitHub activity — roughly December 2008 through early 2012 — overlaps with Satoshi Nakamoto's known active period.
+The gap in Todd's public GitHub activity — roughly December 2008 through early 2012 — overlaps with Satoshi Nakamoto's active period on SourceForge and BitcoinTalk.
 
 Todd's GitHub repositories created between 2008 and 2011:
 
