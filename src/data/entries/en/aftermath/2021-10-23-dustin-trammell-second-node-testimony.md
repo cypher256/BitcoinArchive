@@ -39,7 +39,7 @@ Trammell described his first moments on the Bitcoin network after downloading an
 
 > "If it was the first time it started, it would bootstrap to a known IP address and try to get a peer list and then connect to up to eight peers."
 
-The single connection he observed was almost certainly Satoshi's own node — the only other machine running Bitcoin at that point.
+The single connection he observed was likely Satoshi's own node — the only other machine running Bitcoin at that point.
 
 **Mining disabled by default:**
 
