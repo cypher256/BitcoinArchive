@@ -10,7 +10,7 @@ export const defaultLang: Lang = 'en';
 export const ui = {
   en: {
     'site.title': 'Bitcoin Institute',
-    'site.subtitle': 'Complete Satoshi Nakamoto Conversations',
+    'site.subtitle': 'Who Is Satoshi Nakamoto?',
     'site.description': 'The world\'s most comprehensive archive of Satoshi Nakamoto\'s complete conversations, emails, forum posts, and related historical documents.',
     'nav.home': 'Home',
     'nav.timeline': 'Timeline',
@@ -163,7 +163,7 @@ export const ui = {
   },
   ja: {
     'site.title': 'ビットコイン・インスティテュート',
-    'site.subtitle': 'サトシ・ナカモト全会話集',
+    'site.subtitle': 'サトシ・ナカモトとは何者か',
     'site.description': '世界最大のサトシ・ナカモト会話アーカイブ。メール、フォーラム投稿、関連する歴史的文書を網羅。',
     'nav.home': 'ホーム',
     'nav.timeline': 'タイムライン',
