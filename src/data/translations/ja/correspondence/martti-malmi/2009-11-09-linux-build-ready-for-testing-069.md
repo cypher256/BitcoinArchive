@@ -102,6 +102,7 @@ Liberty Standardの書き込み：
 >            Failed to load module: /usr/lib/gio/modules/libgiogconf.so
 >
 >
+<!-- speaker: Satoshi Nakamoto -->
 >     既にSO_REUSEADDRを使用しているので、閉じた後のTIME_WAIT状態でも
 >     ポートをバインドできる。バインドに失敗するのはプログラムが本当に
 >     まだ実行中の場合だけのはずだ。Bitcoinの2つのコピーを同じマシンで
@@ -110,6 +111,7 @@ Liberty Standardの書き込み：
 >     今では自動的に複数のプロセッサを使用する。
 >
 >
+<!-- speaker: Liberty Standard -->
 > 2つのインスタンスを同時に実行する理由は、あるBitcoinインスタンスから別の
 > インスタンスにBitcoinを転送するためです。もちろん別々のデータディレクトリに
 > アクセスする必要があります。コマンドライン引数で指定できるようになれば

@@ -34,6 +34,7 @@ translationStatus: complete
 Liberty Standard の書き込み：
 > データディレクトリをSSDカードに戻して、bitcoin test 6を開始しました。今日、ログにDb::openのセグメンテーションフォルトが発生しました。720pのmkv動画を見ている間、プロセッサ/コアを1つだけ使用する設定に変更していました。映画が終わった後にセグメンテーションフォルトに気づきました。
 >
+<!-- speaker: Satoshi Nakamoto -->
 > 2009年11月15日(日) 午前12:45、Satoshi Nakamoto <satoshin@gmx.com
 > <mailto:satoshin@gmx.com>> の書き込み：
 >

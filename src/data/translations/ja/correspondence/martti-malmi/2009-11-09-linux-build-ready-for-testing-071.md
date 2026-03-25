@@ -51,6 +51,7 @@ Liberty Standardの書き込み：
 >
 >
 >
+<!-- speaker: Satoshi Nakamoto -->
 >     2009年11月9日 午前7:42、Satoshi Nakamoto <satoshin@gmx.com
 >     <mailto:satoshin@gmx.com>> の書き込み：
 >
@@ -64,5 +65,6 @@ Liberty Standardの書き込み：
 >         される。その後の確認数/#の増加は結果を監視しているだけだ。その間に
 >         あなたのノードが承認を促進するために何かをすることはない。
 >
+<!-- speaker: Liberty Standard -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

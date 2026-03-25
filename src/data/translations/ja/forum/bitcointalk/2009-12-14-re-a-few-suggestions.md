@@ -42,3 +42,4 @@ __WXMAC__が正しい定義かわからない。wxStringを複雑にしている
     * ClassicとOS Xを含むすべてのMacプラットフォームをテストしたい場合は、__WXMAC__と__WXCOCOA__の両方をテストしてください。
     * OS X上の任意のGUI Macポートをテストしたい場合は、__WXOSX__を使用してください。
     * wxGTKやwxBaseを含むMac OS X上の任意のポートをテストしたい場合は、__DARWIN__を使用してください」
+<!-- /tone-skip -->

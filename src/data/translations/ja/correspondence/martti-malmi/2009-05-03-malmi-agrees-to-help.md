@@ -37,3 +37,4 @@ translationStatus: complete
 この迅速なやり取りは、その後2年間にわたって彼らの協力関係を特徴づける生産的なダイナミクスを示していた。
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+<!-- /tone-skip -->

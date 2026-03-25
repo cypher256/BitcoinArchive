@@ -56,9 +56,11 @@ Liberty Standardの書き込み：
 > できないため、これが不可能です。
 >
 >
+<!-- speaker: Satoshi Nakamoto -->
 > 2009年11月8日 午前9:08、Satoshi Nakamoto <satoshin@gmx.com
 > <mailto:satoshin@gmx.com>> の書き込み：
 >
+<!-- speaker: Liberty Standard -->
 >     Liberty Standardの書き込み：
 >
 >         ダウンロードして実行できました。CPUをかなり使っているので、
@@ -66,17 +68,20 @@ Liberty Standardの書き込み：
 >         ダウンロードされていません。これはバグですか、新機能ですか？
 >
 >
+<!-- speaker: Satoshi Nakamoto -->
 >     ステータスバーのブロック数が約26600まで上がっていないということであれば、
 >     それはバグだ。debug.logを送ってくれ。
 >     （~/.bitcoin/debug.logにある）
 >
 >
+<!-- speaker: Liberty Standard -->
 >         Gnomeのシステムトレイはあまり信頼性がありません。アイコンが消えて
 >         プログラムに戻る方法がなくなることがあります。Bitcoinでもこれが
 >         起こりうることを確認しました。既に実行中のBitcoinを起動した時に、
 >         既に実行中のBitcoinプロセスのGUIを表示してくれると良いのですが。
 >
 >
+<!-- speaker: Satoshi Nakamoto -->
 >     Windowsのように、Linux上で既に実行中のプログラムを見つけて表示する方法は
 >     まだ分かっていない。あなたのお話を聞いて、少なくともトレイに最小化の
 >     オプションを初期状態ではデフォルトでオフにすべきだな。
