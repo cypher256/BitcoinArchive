@@ -64,7 +64,7 @@ translationStatus: complete
 **トッドの反応：**
 
 <!-- speaker: Peter Todd -->
-> 「ああ、そうだよ、俺がサトシだ。サトシ・ナカモトだよ」
+> 「ああ、そうだよ、俺がサトシだ」
 
 <!-- speaker: Peter Todd -->
 > 「もちろん俺がサトシだ。ついでにクレイグ・ライトでもある」

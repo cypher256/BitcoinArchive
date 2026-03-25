@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼を信頼している、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
+description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼は信頼できる、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
 threadPosition: 241
@@ -35,7 +35,7 @@ translationStatus: complete
 サトシの回答は明確かつ断固としたものだった：
 
 <!-- speaker: Satoshi Nakamoto -->
-> Gavin [Andresen]にすべきだ。彼を信頼している。責任感があり、プロフェッショナルで、技術的にLinuxの扱いは私よりはるかに優れている。
+> 任せるならギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては技術的にも、私よりずっと上だ。
 
 <!-- speaker: narrator -->
 3日後、マルミは簡潔に返信した：「了解です、彼に聞いてみます。」
