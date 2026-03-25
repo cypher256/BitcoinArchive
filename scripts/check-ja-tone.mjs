@@ -240,9 +240,10 @@ const ANNOTATION_SPEAKER = /^<!--\s*speaker:\s*(.+?)\s*-->$/;
 function labelLines(body, meta) {
   const lines = body.split('\n');
   const labeled = [];
-  // Default to null: only explicitly annotated lines are checked.
-  // This prevents editorial/narrative text from being tone-checked.
-  let currentSpeaker = null;
+  // Default to frontmatter author if they have a known tone rule.
+  // This ensures single-author files are checked even without speaker annotations.
+  // Multi-speaker files should use <!-- speaker: Name --> to override.
+  let currentSpeaker = (meta.author && CHARACTER_RULES[meta.author]) ? meta.author : null;
   let toneSkip = false;
   let inCodeBlock = false;
 
