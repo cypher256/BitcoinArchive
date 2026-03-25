@@ -98,6 +98,10 @@ const CHARACTER_RULES = {
     tone: 'da',
     notes: 'カジュアル。「〜じゃん」「〜だろ」「〜してさ」',
   },
+  'Liberty Standard': {
+    tone: 'desu',
+    notes: '丁寧で実務的。利用報告や要望を穏当に述べる',
+  },
   'Martti Malmi': {
     tone: 'desu',
     notes: '丁寧で控えめ。「〜ですよね」「〜しましょうか」',
@@ -114,6 +118,12 @@ const CHARACTER_RULES = {
     tone: 'da',
     notes: 'くだけた皮肉屋。「〜だろ」「もちろん」。※2010年の2投稿は口調が異質（tone-skipで除外）',
   },
+};
+
+const SPEAKER_ALIASES = {
+  'James A. Donald': 'James Donald',
+  'Dustin D. Trammell': 'Dustin Trammell',
+  'Cobra': 'Cøbra',
 };
 
 // ---------------------------------------------------------------------------
@@ -201,6 +211,10 @@ function parseFrontmatter(content) {
   return { meta, body };
 }
 
+function normalizeSpeakerName(name) {
+  return SPEAKER_ALIASES[name] || name;
+}
+
 // ---------------------------------------------------------------------------
 // Line labeling — annotation-driven
 //
@@ -229,6 +243,7 @@ function parseFrontmatter(content) {
 //   - [Quote from: ...]              → skip (BitcoinTalk quote header)
 //   - [xxxの投稿より引用]              → skip (Japanese quote reference)
 //   - Quote from: / Quote: / 引用:   → skip (quote label lines)
+//   - xxxの書き込み: / xxxの投稿:      → skip (mail/forum quote attribution)
 //
 // Everything else → check against the current speaker's tone rule.
 // ---------------------------------------------------------------------------
@@ -240,10 +255,16 @@ const ANNOTATION_SPEAKER = /^<!--\s*speaker:\s*(.+?)\s*-->$/;
 function labelLines(body, meta) {
   const lines = body.split('\n');
   const labeled = [];
+  const normalizedAuthor = meta.author ? normalizeSpeakerName(meta.author) : null;
   // Default to frontmatter author if they have a known tone rule.
   // This ensures single-author files are checked even without speaker annotations.
   // Multi-speaker files should use <!-- speaker: Name --> to override.
-  let currentSpeaker = (meta.author && CHARACTER_RULES[meta.author]) ? meta.author : null;
+  // Biographies are editorial narrative, not authored in that person's voice.
+  let currentSpeaker = (
+    normalizedAuthor &&
+    meta.type !== 'biography' &&
+    CHARACTER_RULES[normalizedAuthor]
+  ) ? normalizedAuthor : null;
   let toneSkip = false;
   let inCodeBlock = false;
 
@@ -265,7 +286,9 @@ function labelLines(body, meta) {
     }
     const speakerMatch = trimmed.match(ANNOTATION_SPEAKER);
     if (speakerMatch) {
-      currentSpeaker = speakerMatch[1] === 'reset' ? null : speakerMatch[1];
+      currentSpeaker = speakerMatch[1] === 'reset'
+        ? ((normalizedAuthor && meta.type !== 'biography' && CHARACTER_RULES[normalizedAuthor]) ? normalizedAuthor : null)
+        : normalizeSpeakerName(speakerMatch[1]);
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'annotation' });
       continue;
     }
@@ -349,7 +372,9 @@ function labelLines(body, meta) {
       /^\[.*の.*投稿より引用\]/.test(trimmed) ||
       /^Quote\s*from:/i.test(trimmed) ||
       /^Quote[:：\s]/i.test(trimmed) ||
-      /^引用[:：「]/.test(trimmed)
+      /^引用[:：「]/.test(trimmed) ||
+      /^.+の(?:書き込み|投稿|引用)[:：]$/.test(trimmed) ||
+      /^.+ wrote:$/.test(trimmed)
     ) {
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'quote-label' });
       continue;
@@ -414,6 +439,8 @@ function checkLine(text, rule) {
 
 const files = walkMarkdownFiles(jaDir);
 const violations = [];
+const annotationErrors = [];
+const unknownSpeakerLines = new Map();
 let checkedFiles = 0;
 let skippedFiles = 0;
 let checkedLines = 0;
@@ -422,9 +449,30 @@ let skippedLines = 0;
 for (const filePath of files) {
   const content = readFileSync(filePath, 'utf-8');
   const { meta, body } = parseFrontmatter(content);
+  const normalizedAuthor = meta.author ? normalizeSpeakerName(meta.author) : null;
 
-  const hasKnownAuthor = meta.author && CHARACTER_RULES[meta.author];
-  const hasKnownParticipant = (meta.participants || []).some((p) => CHARACTER_RULES[p]);
+  let toneSkipBalance = 0;
+  for (const rawLine of body.split('\n')) {
+    const trimmed = rawLine.trim();
+    if (ANNOTATION_TONE_SKIP.test(trimmed)) toneSkipBalance++;
+    if (ANNOTATION_TONE_RESUME.test(trimmed)) toneSkipBalance--;
+    if (toneSkipBalance < 0) {
+      annotationErrors.push({
+        file: path.relative(path.resolve(__dirname, '..'), filePath),
+        error: 'tone-skip resume without matching start',
+      });
+      toneSkipBalance = 0;
+    }
+  }
+  if (toneSkipBalance !== 0) {
+    annotationErrors.push({
+      file: path.relative(path.resolve(__dirname, '..'), filePath),
+      error: 'unclosed tone-skip annotation',
+    });
+  }
+
+  const hasKnownAuthor = normalizedAuthor && CHARACTER_RULES[normalizedAuthor];
+  const hasKnownParticipant = (meta.participants || []).some((p) => CHARACTER_RULES[normalizeSpeakerName(p)]);
   if (!hasKnownAuthor && !hasKnownParticipant) {
     skippedFiles++;
     continue;
@@ -441,6 +489,21 @@ for (const filePath of files) {
 
     const rule = CHARACTER_RULES[entry.speaker];
     if (!rule) {
+      const processed = preprocessLine(entry.text);
+      if (processed.trim()) {
+        const tone =
+          hasDesuMasu(processed) && !hasDaDearu(processed) ? 'desu' :
+          hasDaDearu(processed) && !hasDesuMasu(processed) ? 'da' :
+          hasDaDearu(processed) && hasDesuMasu(processed) ? 'mixed' :
+          'none';
+        if (!unknownSpeakerLines.has(entry.speaker)) unknownSpeakerLines.set(entry.speaker, []);
+        unknownSpeakerLines.get(entry.speaker).push({
+          file: path.relative(path.resolve(__dirname, '..'), filePath),
+          line: entry.lineNum,
+          tone,
+          text: entry.text.trim().slice(0, 120),
+        });
+      }
       skippedLines++;
       continue;
     }
@@ -470,6 +533,39 @@ console.log('=== JA口調チェック結果 ===\n');
 console.log(`チェック対象: ${checkedFiles} ファイル / ${checkedLines} 行`);
 console.log(`スキップ: ${skippedFiles} ファイル / ${skippedLines} 行`);
 console.log(`違反件数: ${violations.length}\n`);
+
+if (annotationErrors.length > 0) {
+  console.log('=== アノテーションエラー ===\n');
+  for (const err of annotationErrors) {
+    console.log(`📄 ${err.file}`);
+    console.log(`   ${err.error}`);
+  }
+  console.log(`\n❌ ${annotationErrors.length} 件のアノテーションエラーが見つかりました。`);
+  process.exit(1);
+}
+
+const unknownSpeakerIssues = [];
+for (const [speaker, entries] of [...unknownSpeakerLines.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+  // Only compare entries with a single clear tone.
+  // Mixed entries often contain forwarded quotes or nested mail context.
+  const classified = entries.filter((e) => e.tone === 'da' || e.tone === 'desu');
+  if (classified.length < 2) continue;
+  const tones = new Set(classified.map((e) => e.tone));
+  if (tones.size > 1) {
+    unknownSpeakerIssues.push({ speaker, entries: classified });
+  }
+}
+
+if (unknownSpeakerIssues.length > 0) {
+  console.log('=== 未定義 speaker の口調混在 ===\n');
+  for (const issue of unknownSpeakerIssues) {
+    console.log(`👤 ${issue.speaker}`);
+    for (const entry of issue.entries.slice(0, 6)) {
+      console.log(`   ${entry.file}:L${entry.line} [${entry.tone}] ${entry.text}`);
+    }
+  }
+  console.log(`\n⚠ ${unknownSpeakerIssues.length} 件の未定義 speaker で口調混在候補が見つかりました。`);
+}
 
 if (violations.length > 0) {
   const byFile = {};
