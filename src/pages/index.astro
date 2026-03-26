@@ -97,6 +97,14 @@ function tagWeight(count: number, max: number): number {
       <p class="description">{t('site.description')}</p>
     </section>
 
+    <section class="dashboard-section network-section">
+      <div class="section-header">
+        <h2>{t('network.title' as any)}</h2>
+        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      <NetworkGraph graphData={graphData} lang={lang} />
+    </section>
+
     <section class="stats">
       <a href={localePath('/entries/', lang)} class="stat">
         <span class="stat-number">{entries.length}</span>
@@ -120,13 +128,40 @@ function tagWeight(count: number, max: number): number {
       </a>
     </section>
 
-    <section class="dashboard-section network-section">
-      <div class="section-header">
-        <h2>{t('network.title' as any)}</h2>
-        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
-      </div>
-      <NetworkGraph graphData={graphData} lang={lang} />
-    </section>
+    <div class="dashboard-grid">
+      <section class="dashboard-section">
+        <div class="section-header">
+          <h2>{t('home.topParticipants')}</h2>
+          <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+        </div>
+        <div class="rank-list">
+          {topParticipants.map(([slug, { name, count }]) => (
+            <a href={localePath(`/participants/${slug}/`, lang)} class="rank-item">
+              <div class="rank-bar" style={`width: ${Math.round((count / maxParticipantCount) * 100)}%`}></div>
+              <span class="rank-name">{name}</span>
+              <span class="rank-count">{count}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="dashboard-section">
+        <div class="section-header">
+          <h2>{t('home.topSources')}</h2>
+          <a href={localePath('/sources/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+        </div>
+        <div class="rank-list">
+          {topSources.map(([source, count]) => (
+            <a href={localePath(`/sources/${source}/`, lang)} class="rank-item">
+              <div class="rank-bar" style={`width: ${Math.round((count / maxSourceCount) * 100)}%`}></div>
+              <span class="rank-name">{t(`source.${source}` as any)}</span>
+              <span class="rank-count">{count}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+
     <section class="dashboard-section">
       <div class="section-header">
         <h2>{t('home.popularTags')}</h2>
@@ -145,40 +180,6 @@ function tagWeight(count: number, max: number): number {
         ))}
       </div>
     </section>
-
-    <div class="dashboard-grid">
-      <section class="dashboard-section">
-        <div class="section-header">
-          <h2>{t('home.topSources')}</h2>
-          <a href={localePath('/sources/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
-        </div>
-        <div class="rank-list">
-          {topSources.map(([source, count]) => (
-            <a href={localePath(`/sources/${source}/`, lang)} class="rank-item">
-              <div class="rank-bar" style={`width: ${Math.round((count / maxSourceCount) * 100)}%`}></div>
-              <span class="rank-name">{t(`source.${source}` as any)}</span>
-              <span class="rank-count">{count}</span>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section class="dashboard-section">
-        <div class="section-header">
-          <h2>{t('home.topParticipants')}</h2>
-          <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
-        </div>
-        <div class="rank-list">
-          {topParticipants.map(([slug, { name, count }]) => (
-            <a href={localePath(`/participants/${slug}/`, lang)} class="rank-item">
-              <div class="rank-bar" style={`width: ${Math.round((count / maxParticipantCount) * 100)}%`}></div>
-              <span class="rank-name">{name}</span>
-              <span class="rank-count">{count}</span>
-            </a>
-          ))}
-        </div>
-      </section>
-    </div>
 
     <section class="dashboard-section">
       <div class="section-header">
