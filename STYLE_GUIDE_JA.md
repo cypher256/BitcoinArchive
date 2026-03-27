@@ -38,8 +38,8 @@ Do not force katakana in the following cases — but **translate the content
 itself into Japanese**. This section is about name rendering within translated
 text, not about leaving entire passages in English.
 
-- Person names inside direct quotes — keep in original form unless the
-  surrounding text already uses katakana for the same person
+- Person names inside direct quotes — use katakana, consistent with the
+  rest of the Japanese text
 - Source titles and publication names
 - Organization, product, and project names when the original form is more
   natural

@@ -19,7 +19,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-BitcoinはWei Daiが1998年にCypherpunks [http://en.wikipedia.org/wiki/Cypherpunks](http://en.wikipedia.org/wiki/Cypherpunks) で提案したb-money [http://weidai.com/bmoney.txt](http://weidai.com/bmoney.txt) と、Nick SzaboのBitgold提案 [http://unenumerated.blogspot.com/2005/12/bit-gold.html](http://unenumerated.blogspot.com/2005/12/bit-gold.html) の実装だ。
+Bitcoinはウェイ・ダイが1998年にCypherpunks [http://en.wikipedia.org/wiki/Cypherpunks](http://en.wikipedia.org/wiki/Cypherpunks) で提案したb-money [http://weidai.com/bmoney.txt](http://weidai.com/bmoney.txt) と、ニック・サボのBitgold提案 [http://unenumerated.blogspot.com/2005/12/bit-gold.html](http://unenumerated.blogspot.com/2005/12/bit-gold.html) の実装だ。
 
 タイミングが奇妙だ。Slashdotに取り上げられた後、サードパーティの報道が急増しているちょうどその時だ。議論をまとめて決定を急いでいないことを願う。Wikipediaは通常、このような質問をどのくらいの期間コメントに開放しておくのだろうか？
 

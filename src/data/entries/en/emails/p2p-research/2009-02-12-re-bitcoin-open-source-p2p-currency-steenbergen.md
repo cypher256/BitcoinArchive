@@ -18,7 +18,7 @@ tags:
   - "david-chaum"
   - "double-spending"
 threadId: "p2p-research-bitcoin-open-source"
-threadPosition: 1
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"

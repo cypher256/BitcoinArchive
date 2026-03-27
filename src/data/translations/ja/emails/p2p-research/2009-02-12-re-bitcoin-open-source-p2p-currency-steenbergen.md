@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "P2P Researchメーリングリストにおいて、マルティエン・ファン・ステーンベルゲンの質問に回答し、ビットコインの発行上限2,100万枚とDavid Chaumのシステムとの違いを説明。"
+description: "P2P Researchメーリングリストにおいて、マルティエン・ファン・ステーンベルゲンの質問に回答し、ビットコインの発行上限2,100万枚とデイビッド・チャウムのシステムとの違いを説明。"
 isSatoshi: true
 tags:
   - "supply-limit"
@@ -18,7 +18,7 @@ tags:
   - "david-chaum"
   - "double-spending"
 threadId: "p2p-research-bitcoin-open-source"
-threadPosition: 1
+threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
@@ -27,7 +27,7 @@ translationStatus: complete
 
 <!-- speaker: Martien van Steenbergen -->
 Martien van Steenbergen wrote:
-> 非常に興味深い。これはDavid Chaumの匿名デジタルマネーに似ているか？
+> 非常に興味深い。これはデイビッド・チャウムの匿名デジタルマネーに似ているか？
 > 彼のコンセプトでは、マネーが不正使用されない限り匿名性が保たれ、つまり
 > 同じマネーが複数回使われた場合、「偽造者」は直ちに公に晒される。
 
@@ -36,7 +36,7 @@ Martien van Steenbergen wrote:
 
 プライバシーを保護するため、鍵ペアは一度だけ使用され、取引ごとに新しいものが使われる。コインの所有者は、その秘密鍵を持っている人だ。
 
-もちろん、最大の違いは中央サーバーがないことだ。それがChaumianシステムのアキレス腱だった。中央の会社が閉鎖されると、通貨も終わった。
+もちろん、最大の違いは中央サーバーがないことだ。それがチャウム式システムのアキレス腱だった。中央の会社が閉鎖されると、通貨も終わった。
 
 <!-- speaker: Martien van Steenbergen -->
 > また、ビットコインには限られた通貨供給量があるのか（管理が必要な）？それとも取引の瞬間に通貨が作られるのか？

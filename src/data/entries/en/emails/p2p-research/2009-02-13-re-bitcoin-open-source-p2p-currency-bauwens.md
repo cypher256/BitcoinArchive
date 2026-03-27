@@ -17,7 +17,7 @@ tags:
   - "adoption"
   - "network"
 threadId: "p2p-research-bitcoin-open-source"
-threadPosition: 3
+threadPosition: 4
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
