@@ -32,8 +32,12 @@ const t = useTranslations(lang);
     container.innerHTML = '';
 
     // 固定のシミュレーション空間（viewBox で自動スケーリング）
-    var simW = 400;
-    var simH = 300;
+    // scale: 1.0 = 等倍、2.0 = 2倍表示（viewBox を縮小して相対的に拡大）
+    var scale = 1.1;
+    var baseW = 800;
+    var baseH = 600;
+    var simW = Math.round(baseW / scale);
+    var simH = Math.round(baseH / scale);
 
     var maxCount = 1;
     var minCount = Infinity;
