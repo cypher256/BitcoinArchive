@@ -191,7 +191,40 @@ Quotes and source text should not be rewritten just to match the house style.
   guide.
 - Avoid unrelated rewrites of quoted source text.
 
-## Example Mappings
+## Technical Term Localization
+
+Technical terms that have established Japanese katakana forms should use the
+katakana form in Japanese editorial text and descriptions. Terms that are
+universally used in their English form in the Japanese Bitcoin community (e.g.,
+Bitcoin, blockchain, hash, nonce) stay in English.
+
+### When To Use Katakana
+
+- The term has a widely recognized katakana form in Japanese technical writing
+- Using the English form would make the Japanese text harder to read
+- The term refers to a concept (algorithm, protocol, cryptographic scheme)
+  rather than a product name or brand
+
+### What Stays In English
+
+- Product names, protocol names, and brand identifiers: Bitcoin, Taproot,
+  SegWit, Lightning Network
+- BIP titles and formal specification names (keep original for precision)
+- Tags, slugs, URLs, and metadata fields
+- Secondary source names and URLs
+- Terms universally used in English in the Japanese Bitcoin community:
+  hash, nonce, mining, block, node, fork, P2P, ECDSA, SHA-256
+
+### Canonical Mappings
+
+| English | Japanese | Notes |
+|---------|----------|-------|
+| Schnorr (signature) | シュノア（署名） | Japanese Bitcoin community standard |
+
+Add new entries to this table as they arise. When in doubt, check how
+bitcoin.org/ja, bitcoinops.org, and major Japanese Bitcoin media use the term.
+
+## Example Mappings (Person Names)
 
 - `Satoshi Nakamoto` -> `サトシ・ナカモト`
 - `Hal Finney` -> `ハル・フィニー`
