@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ブロックチェーン追跡サービスWhale Alertが独立した分析を発表し、サトシが最初の54,316ブロックのうち22,503ブロックで1,125,150 BTCをマイニングしたことを確認。約48台のコンピューターで約60%のハッシュレートを維持し、利益最大化ではなくネットワーク保護のために意図的に制限していたと結論。"
+description: "ブロックチェーン追跡サービスWhale Alertが独立した分析を発表し、サトシが最初の54,316ブロックのうち22,503ブロックで1,125,150 BTCをマイニングしたことを確認。約48台のコンピューター（またはCPUスレッド）を使用したと主張したが、翌月ラーナーの再マイニングシミュレーションにより単一のマルチスレッドPCであることが実証された。サトシが利益ではなくネットワーク保護のためにマイニングしたという核心的結論は、研究コンセンサスと一致している。"
 isSatoshi: false
 tags:
   - "patoshi"
@@ -26,10 +26,12 @@ secondarySources:
     url: "https://cointelegraph.com/news/109-billion-bitcoin-stash-proves-satoshi-is-still-the-biggest-whale"
   - name: "Sergio Demian Lerner — The Well Deserved Fortune of Satoshi Nakamoto (2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
+  - name: "Sergio Demian Lerner — The Patoshi Mining Machine (August 22, 2020)"
+    url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 translationStatus: complete
 ---
 
-2020年7月、ブロックチェーン追跡サービスWhale Alertは「The Satoshi Fortune」を発表した。セルジオ・デミアン・ラーナーの先行Patoshi研究を裏付け、さらに精緻化した独立分析である。
+2020年7月、ブロックチェーン追跡サービスWhale Alertは「The Satoshi Fortune」を発表した。セルジオ・デミアン・ラーナーの先行Patoshi研究を概ね裏付ける独立分析であるが、サトシのマイニング環境について独自の解釈を導入した。
 
 **主要な発見：**
 
@@ -41,6 +43,8 @@ translationStatus: complete
 **マイニング行動：**
 
 Whale Alertの分析によると、サトシはネットワークの成長に伴い、約**48台のコンピューター**（またはCPUスレッド）を使用して、ネットワークハッシュレートの約**60%**を安定的に維持していた。サトシは処理能力を体系的に調整し、1時間あたり約**3.6ブロック**をマイニングすることで、ネットワークがまだ脆弱な時期に51%攻撃から防御するのに十分なハッシュレートを確保していた。
+
+**「48台のコンピューター」主張に関する注記：** 本レポートの1か月後、セルジオ・デミアン・ラーナーが「The Patoshi Mining Machine」（2020年8月22日）を発表し、再マイニングシミュレーションによりPatoshiマイナーが48台以上の独立したコンピューターではなく、**5つの並列スレッドを持つ単一の高性能CPU**を使用していたことを実証した。ラーナーはナンス空間が5つのサブレンジに分割され、各サブレンジ内で順次スキャンが行われていたことを示し、78%の高値バイアスが独立したマシンとは整合しないことを証明した。ジェイムソン・ロップの2022年の分析もこの単一PC説を支持している：「ダブルヘリックス」期間（ブロック1400-1916）で2つのマイニングインスタンスが同じCPUコアを奪い合い、別マシンなら100%増のところ28%の増加しか見られなかった。現在の研究コンセンサスは単一のマルチスレッドPCを支持している。
 
 **意図的な制限：**
 

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Blockchain tracking service Whale Alert published an independent analysis confirming Satoshi mined 1,125,150 BTC across 22,503 of the first 54,316 blocks. The report found Satoshi maintained approximately 60% hashrate using ~48 computers, deliberately throttling to protect the network rather than maximize profit."
+description: "Blockchain tracking service Whale Alert published an independent analysis confirming Satoshi mined 1,125,150 BTC across 22,503 of the first 54,316 blocks. The report claimed Satoshi used ~48 computers (or CPU threads), though this was disputed one month later by Lerner's re-mining simulation proving a single multi-threaded PC. The report's core finding — that Satoshi mined to protect the network, not for profit — aligns with the broader research consensus."
 isSatoshi: false
 tags:
   - "patoshi"
@@ -26,10 +26,12 @@ secondarySources:
     url: "https://cointelegraph.com/news/109-billion-bitcoin-stash-proves-satoshi-is-still-the-biggest-whale"
   - name: "Sergio Demian Lerner — The Well Deserved Fortune of Satoshi Nakamoto (2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
+  - name: "Sergio Demian Lerner — The Patoshi Mining Machine (August 22, 2020)"
+    url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 translationStatus: complete
 ---
 
-In July 2020, blockchain tracking service Whale Alert published "The Satoshi Fortune," an independent analysis of Satoshi Nakamoto's mining activity that corroborated and refined earlier Patoshi research by Sergio Demian Lerner.
+In July 2020, blockchain tracking service Whale Alert published "The Satoshi Fortune," an independent analysis of Satoshi Nakamoto's mining activity that largely corroborated earlier Patoshi research by Sergio Demian Lerner, while introducing its own interpretation of Satoshi's mining infrastructure.
 
 **Key findings:**
 
@@ -41,6 +43,8 @@ In July 2020, blockchain tracking service Whale Alert published "The Satoshi For
 **Mining behavior:**
 
 Whale Alert found that Satoshi maintained a steady share of approximately **60% of the network hashrate** as the network grew, using an estimated **48 computers** (or CPU threads). Satoshi systematically adjusted processing power to mine approximately **3.6 blocks per hour**, ensuring sufficient hashrate to defend against a 51% attack while the network was still vulnerable.
+
+**Note on the "48 computers" claim:** One month after this report, Sergio Demian Lerner published "The Patoshi Mining Machine" (August 22, 2020), presenting a re-mining simulation that demonstrated the Patoshi miner used a **single high-end CPU with 5 parallel threads** — not 48+ separate computers. Lerner showed the nonce space was divided into 5 subranges with sequential scanning within each, producing a 78% high-value bias inconsistent with independent machines. Jameson Lopp's 2022 analysis further supported the single-PC thesis: during the "double helix" period (blocks 1400–1916), two mining instances competing for the same CPU cores produced only a 28% hashrate increase rather than the 100% expected from separate machines. The research consensus now favors a single multi-threaded PC.
 
 **Intentional throttling:**
 
