@@ -28,7 +28,7 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 wxSocketServer::Accept(bool wait = true)のドキュメントでこれに気づいた:
-「waitがtrueで、受け入れ待ちの接続がない場合、次の着信接続が到着するまで待機する。**警告: これはGUIをブロックする。」
+「waitがtrueで、受け入れ待ちの接続がない場合、次の着信接続が到着するまで待機する。 **警告: これはGUIをブロックする。** 」
 
 wxWidgetsは病的なまでにシングルスレッドだ。単にシングルスレッドなだけでなく、GUIスレッドでなければならないのだ。wxStandardPathsのようなUI以外のものでもやられた。UIコードであれば問題ない。Windowsが課す制約と同じだからだ。しかしUI無しのサーバーデーモンコードでは、wxの呼び出しは不確実だ。
 
