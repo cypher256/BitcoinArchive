@@ -14,7 +14,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Complete record of all four developers who had commit access to Bitcoin's SourceForge SVN repository, spanning 252 revisions from August 30, 2009 to September 13, 2011."
+description: "Complete record of all four developers who had commit access to Bitcoin's SourceForge SVN repository. 252 revisions were recorded from August 30, 2009 to September 13, 2011."
 isSatoshi: true
 tags:
   - "sourceforge"
@@ -34,7 +34,7 @@ secondarySources:
     url: "https://github.com/research-note/bitcoin-legacy"
 ---
 
-Before Bitcoin moved to GitHub, all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository spanned 252 revisions, from its creation on August 30, 2009 to its final commit on September 13, 2011. Only four people ever committed code to this repository.
+Before Bitcoin moved to GitHub, all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.
 
 **Prior to SVN:**
 Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceForge before the SVN repository existed. The SourceForge project was registered on November 9, 2008, and Bitcoin v0.1 was released on January 9, 2009. For the first eight months, source code was distributed as downloadable archives rather than through version control.
@@ -50,11 +50,11 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 
 **Martti Malmi (sirius-m)** created the SVN repository with the "First commit" at r1 on August 30, 2009. He ported the Bitcoin codebase — which Satoshi had developed on Windows using Visual C++ 6.0 — to Linux, and contributed 21 revisions before stepping back from active development.
 
-**Satoshi Nakamoto (s_nakamoto)** was by far the most prolific committer, responsible for 164 of the 252 revisions. His last SVN commit was r168, after which Gavin Andresen continued development. Satoshi's final known code contribution was version 0.3.19 on December 13, 2010.
+**Satoshi Nakamoto (s_nakamoto)** committed 164 of the 252 revisions — by far the most of any contributor. His last SVN commit was r168, after which Gavin Andresen continued development. Satoshi's final known code contribution was version 0.3.19 on December 13, 2010.
 
 **Laszlo Hanyecz (laszloh)** — known for the first real-world Bitcoin purchase (10,000 BTC for two pizzas) and for pioneering GPU mining — made exactly one SVN commit: r123 on August 4, 2010, fixing macOS compilation issues.
 
-**Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. On December 3, 2010, Satoshi wrote to Martti Malmi:
+**Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. With 81 commits, he was the second most active committer after Satoshi. On December 3, 2010, Satoshi wrote to Martti Malmi:
 
 > "I think it should be Gavin. I trust him, he's responsible, professional, and technically much more Linux capable than me."
 

@@ -53,7 +53,7 @@ With Satoshi's departure (last known email: April 26, 2011), Gavin Andresen — 
 | Developer | GitHub Username | Access Granted | Notes |
 |-----------|----------------|---------------|-------|
 | Chris Moore | dooglus | 2011-01-21 | Access ended ~2011-03-31 |
-| Pieter Wuille | sipa | 2011-05-01 | Later became lead maintainer |
+| Pieter Wuille | sipa | 2011-05-01 | Key long-term maintainer |
 | Jeff Garzik | jgarzik | 2011-05-06 | Also listed as SF project member |
 | Wladimir van der Laan | laanwj | 2011-06-05 | Became lead maintainer in 2014 |
 | Nils Schneider | tcatm | 2011-09-19 | Access ended 2012-05-31 |
