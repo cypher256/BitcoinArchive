@@ -8,11 +8,11 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "Context post by mizerydearia in BitcoinTalk topic 1327. before msg15102."
+description: "BitcoinTalkトピック1327におけるmizerydearia の投稿。msg15102の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I suggest a manpage should be included in the tarball.
+tarballにmanページを含めるべきだと提案する。

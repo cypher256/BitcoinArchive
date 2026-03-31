@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-14T15:01:39.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. quoted by msg67."
+description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg67で引用。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Can anyone shed some light here?
+誰かここを解説してくれないか？
 
 g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D__WXMAC__ -DNOPCH -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8" -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4" -I"/usr/local/ssl/include" -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch headers.h
 ui.h: In constructor 'CGetTextFromUserDialog::CGetTextFromUserDialog(wxWindow*, const std::string&, const std::string&, const std::string&, const std::string&, const std::string&)':

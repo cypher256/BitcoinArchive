@@ -3,7 +3,7 @@ title: "Re: Strange block 74638"
 date: 2010-08-15T20:02:00Z
 type: "forum-post"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=822.msg9547#msg9547"
+sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9530#msg9530"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

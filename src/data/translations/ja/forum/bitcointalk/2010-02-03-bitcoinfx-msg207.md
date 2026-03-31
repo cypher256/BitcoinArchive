@@ -1,5 +1,5 @@
 ---
-title: "Re: TOR and I2P"
+title: "Re: TORとI2P"
 date: 2010-02-03T15:31:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,20 +8,20 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "Context post by BitcoinFX in BitcoinTalk topic 22. before msg223."
+description: "BitcoinTalkトピック22におけるBitcoinFXの文脈投稿。msg223の前。"
 isSatoshi: false
 threadId: "bt-tor-and-i2p"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-OK thanks riX.
+了解、ありがとうriX。
 
-So, once Bitcoin has connected to at least one node then the -connect option will eliminate the 6667 warnings.
+つまり、Bitcoinが少なくとも1つのノードに接続すれば、-connectオプションで6667の警告を解消できるということだな。
 
-Is Bitcoin using any kind of 'peer exchange' or DHT because this still does not seem to prevent the constant Tor 'exit' warnings and therefore Tor's requirement to try a new 'exit' node for connection. (which is problematic ! For Tor anyway, not Bitcoin Wink ) This is really what I meant by "However, Bitcoin must try to connect with all nodes to check its not missing any blocks ?" I just communicated it incorrectly.
+Bitcoinは何らかの「ピア交換」やDHTを使っているのだろうか。というのも、これでもTorの「出口」警告が常に出続けて、Torが接続のために新しい「出口」ノードを試す必要が生じることを防げないようだ。（これはTorにとって問題であり、Bitcoinにとってではないが Wink）これこそ「Bitcoinはブロックを見逃していないか確認するためにすべてのノードに接続を試みなければならない」で本当に言いたかったことだ。伝え方が間違っていただけだ。
 
-I2P would seem to be a much easier solution to implement to increase a Bitcoins users anonymity.
+I2Pの方がBitcoinユーザーの匿名性を高めるには、はるかに実装しやすいソリューションに思える。
 http://forum.i2p2.de/viewtopic.php?t=3946&sid=213e3cd998db98c4511675ecbba17af4
 
-I'm also testing JonDonym http://anonymous-proxy-servers.net/ (only the paid services support socks !) However, they do accept paysafecards which can currently be brought in exchange for Bitcoins. Grin
+JonDonym http://anonymous-proxy-servers.net/ もテストしている（有料サービスのみsocksをサポート！）。ただし、paysafecardsを受け付けており、それは現在Bitcoinと交換で入手できる。Grin

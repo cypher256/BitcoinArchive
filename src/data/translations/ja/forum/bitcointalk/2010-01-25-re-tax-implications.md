@@ -3,7 +3,7 @@ title: "Re: Bitcoinの税務上の影響"
 date: 2010-01-25T18:27:00Z
 type: "forum-post"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=26.msg227#msg227"
+sourceUrl: "https://bitcointalk.org/index.php?topic=671.msg13844#msg13844"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

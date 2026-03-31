@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-12T13:08:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 12. before msg55."
+description: "BitcoinTalkトピック12におけるSmokeTooMuchの文脈投稿。msg55の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Suggestion :
+提案：
 
-Since the coins are generated faster on fast machines, many people will want to use their GPU power to do this, too.
+高速なマシンほどコインの生成が速いので、多くの人がGPUパワーも使いたがるだろう。
 
-So, my suggestion is to implement a GPU-computing support using ATI Stream and Nvidia CUDA.
+そこで、ATI StreamとNvidia CUDAを使ったGPUコンピューティングのサポートを実装することを提案する。

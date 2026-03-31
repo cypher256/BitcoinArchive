@@ -3,7 +3,7 @@ title: "Re: ビットコインはどこまで分割できますか？"
 date: 2010-06-23T15:12:00Z
 type: "forum-post"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=233.msg1967#msg1967"
+sourceUrl: "https://bitcointalk.org/index.php?topic=44.msg267#msg267"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

@@ -1,5 +1,5 @@
 ---
-title: "Re: resource hog"
+title: "Re: リソース食い"
 date: 2010-07-13T21:28:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 327. before msg2871."
+description: "BitcoinTalkトピック327におけるSmokeTooMuchの文脈投稿。msg2871の前。"
 isSatoshi: false
 threadId: "bt-resource-hog"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 > [Quote from: andy_3_913 on July 13, 2010, 07:19:47 PM](https://bitcointalk.org/index.php?topic=327.msg2624#msg2624)
 > windows 7 home 64
 
-I don't think their is any renicing under Windows.
+Windowsにはreniceに相当するものはないと思う。

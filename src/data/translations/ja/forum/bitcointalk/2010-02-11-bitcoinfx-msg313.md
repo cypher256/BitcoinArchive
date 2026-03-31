@@ -1,5 +1,5 @@
 ---
-title: "Re: What's with this odd generation?"
+title: "Re: この奇妙な生成は何？"
 date: 2010-02-11T16:57:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "Context post by BitcoinFX in BitcoinTalk topic 48. before msg316."
+description: "BitcoinTalkトピック48におけるBitcoinFXの文脈投稿。msg316の前。"
 isSatoshi: false
 threadId: "bt-what-s-with-this-odd-generation"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-That is odd !?! I've currently only had 50.00 generations myself.  Huh
+それは奇妙だ！？！自分はこれまで50.00の生成しかなかった。Huh

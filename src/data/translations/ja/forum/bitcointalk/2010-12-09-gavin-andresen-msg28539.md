@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.18"
+title: "Re: バージョン0.3.18"
 date: 2010-12-09T14:51:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,22 +8,22 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 2162. before msg28549."
+description: "BitcoinTalkトピック2162におけるギャビン・アンドレセンの投稿。msg28549の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-18"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-> [Quote from: chaord on December 09, 2010, 07:17:12 AM](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)
-> by default disallow non-standard transactions that exceed 128 bytes (or whatever threshold is agreeable)?
+> [chaordの引用、2010年12月9日 午前7:17:12](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)
+> デフォルトで128バイト（または合意できる閾値）を超える非標準トランザクションを禁止する？
 > 
-> I would like to hear why the above option was thrown out by the developers.
+> 上記のオプションが開発者によって却下された理由を聞きたい。
 
-Several months ago, around the time when the 0.3.9 bugs were found, I privately told Satoshi that I thought whitelisting acceptable transaction types was a better way to go, rather than blacklisting transaction types that we find out cause problems.
+数ヶ月前、0.3.9のバグが発見された頃、問題を引き起こすことがわかったトランザクションタイプをブラックリストに入れるよりも、許容できるトランザクションタイプをホワイトリストに入れる方がよいとサトシに個人的に伝えた。
 
-The danger is similar websites that try to blacklist <script> tags in HTML entered by users to prevent cross-site-scripting hacks.  See http://ha.ckers.org/xss.html for a nice sampling of how creative hackers can be.
+この危険性は、クロスサイトスクリプティング攻撃を防ぐためにユーザーが入力したHTMLの&lt;script&gt;タグをブラックリストに入れようとするウェブサイトと似ている。ハッカーがいかに創造的であるかについては http://ha.ckers.org/xss.html を参照。
 
-I haven't asked Satoshi if the recent discussion of BitDNS putting extra data in the block chain swayed his opinion or if he woke up in the middle of the night and realized that a creative use of OP_SOMETHING might lead to an exploit.  I don't think it matters; I'm still convinced that whitelisting acceptable transaction types is the right thing to do.
+BitDNSがブロックチェーンに追加データを入れるという最近の議論がサトシの意見を変えたのか、あるいは真夜中に目覚めてOP_SOMETHINGの創造的な使い方が脆弱性につながると気づいたのかは聞いていない。どちらでも構わないと思う。許容できるトランザクションタイプのホワイトリスト化が正しいことだと今でも確信している。
 
-As for "the above option was thrown out by the developers"  -- **nothing** has been thrown out!  Again, I haven't talked to Satoshi, but I'm open to the idea of a third 'standard' transaction type that includes extra, arbitrary data.   Lets have that discussion, implement it on the -testnet, poke at it, try to imagine all the possible ways it can be misused, try to estimate the benefits and costs... and if there's general consensus that it is a good idea, roll it into production.
+「上記のオプションが開発者によって却下された」という点について――**何も却下されていない**！繰り返すが、サトシとは話していないが、追加の任意データを含む3番目の「標準」トランザクションタイプのアイデアには前向きだ。議論し、-testnetに実装し、突いてみて、悪用される可能性のあるあらゆる方法を想像し、メリットとコストを見積もり……そして良いアイデアだという一般的な合意があれば、本番に投入しよう。

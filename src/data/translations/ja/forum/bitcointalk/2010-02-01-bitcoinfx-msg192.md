@@ -1,5 +1,5 @@
 ---
-title: "Re: TOR and I2P"
+title: "Re: TORとI2P"
 date: 2010-02-01T22:08:54.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,28 +8,28 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "Context post by BitcoinFX in BitcoinTalk topic 22. before msg223."
+description: "BitcoinTalkトピック22におけるBitcoinFXの文脈投稿。msg223の前。"
 isSatoshi: false
 threadId: "bt-tor-and-i2p"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-OK So, I tried to set-up a sudo-anonymous crypto 'Bitcoin Bank' experiment using Tor. Grin
+よし、Torを使った擬似匿名暗号「Bitcoin Bank」の実験を試みた。Grin
 
-Whilst it was mostly successful using the standard 9050 socks port 'default setup' i.e. I got connectivity to other Bitcoin nodes through Tor; I did encounter various issues and multiple Warning messages.
+標準の9050 socksポート「デフォルト設定」、つまりTor経由で他のBitcoinノードへの接続は得られたので、おおむね成功だった。しかし、様々な問題と複数の警告メッセージに遭遇した。
 
-"Your application (using socks5 on port xxxx) is giving Tor only an IP address. Applications that do DNS resolves themselves may leak information. Consider
-using Socks4A (e.g. via polipo or socat) instead."
+「Your application (using socks5 on port xxxx) is giving Tor only an IP address. Applications that do DNS resolves themselves may leak information. Consider
+using Socks4A (e.g. via polipo or socat) instead.」
 
 https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#IkeepseeingthesewarningsaboutSOCKSandDNSandinformationleaks.ShouldIworry.3F
 
-I eventually fixed this using Privoxy and Stunnel (because i'm more familiar with those) However, you could use polipo and Stunnel.
+最終的にPrivoxyとStunnelを使って修正した（そちらの方が慣れているので）。もっとも、polipoとStunnelを使うこともできる。
 
-However, I still get occasional warnings for these ports 8333 (expected Bitcoin 'default') and 6667 (which if i'm not mistaken is an IRC port !?)
+しかし、ポート8333（Bitcoinの「デフォルト」として予想通り）と6667（間違いでなければIRCポートだ！？）で時折警告が出る。
 
-Connecting Bitcoin through Tor also makes Tor repeatedly change exit nodes looking to establish 'missing' connections to a [scrubbed] address. At first I assumed that this was because Tor exits might be blocking port 8333 or 6667, but that is mostly not the case !
+Tor経由でBitcoinを接続すると、[scrubbed]アドレスへの「欠落した」接続を確立しようとしてTorが繰り返し出口ノードを変更する。最初はTorの出口ノードがポート8333や6667をブロックしているのかと思ったが、ほとんどの場合そうではない！
 
-Other P2P applications through Tor can 'ignore' IP addresses that they cannot connect to and the application can still get the job done without 'warning'. However, Bitcoin *must* try to connect with all nodes to check its not missing any blocks ! So, if an IP range where only 1 Bitcoin node is running is blocking Tor exit nodes, then presumably this will always be the case ?
+Tor経由の他のP2Pアプリケーションは、接続できないIPアドレスを「無視」でき、「警告」なしにアプリケーションは問題なく機能する。しかし、Bitcoinはブロックを見逃していないか確認するためにすべてのノードに接続を試み*なければならない*！つまり、Bitcoinノードが1つだけ稼働しているIP範囲がTor出口ノードをブロックしている場合、おそらくこれは常にそうなるのだろうか？
 
-This is problematic for many reasons. Huh
+これは多くの理由で問題がある。Huh

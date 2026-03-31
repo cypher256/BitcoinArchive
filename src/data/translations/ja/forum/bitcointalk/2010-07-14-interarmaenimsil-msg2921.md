@@ -1,5 +1,5 @@
 ---
-title: "Re: Scalability"
+title: "Re: スケーラビリティ"
 date: 2010-07-14T19:23:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "Context post by InterArmaEnimSil in BitcoinTalk topic 286. before msg2947."
+description: "BitcoinTalkトピック286におけるInterArmaEnimSilの文脈投稿。msg2947の前。"
 isSatoshi: false
 threadId: "bt-scalability"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I second the DHT idea for maintaining a client list - we can't have millions of people relying upon an IRC channel, etc.  As far as the scaling issue goes, the issue is not at all HDD space, its network bandwidth.  Everyone is forgetting, its not bytes_per_transaction*transactions, which is the number everyone is using.  That number, as everyone has said, is fully manageable.  No, the number we're interested in is bytes_per_transaction * transactions * number_of_clients * total_hops_beyond_first_between_all_clients_combined
+クライアントリストの維持にDHTを使うというアイデアに賛成だ――何百万人もの人がIRCチャンネル等に依存するわけにはいかない。スケーリングの問題に関しては、HDDの容量は全く問題ではなく、ネットワーク帯域幅が問題だ。皆が忘れているのは、bytes_per_transaction * transactionsではないということだ。みんなが使っているのはこの数字だが、これは誰もが言うように十分管理可能だ。いや、我々が注目すべき数字はbytes_per_transaction * transactions * number_of_clients * total_hops_beyond_first_between_all_clients_combinedだ。
 
-THIS is the amount of bandwidth which the protocol for BTC consumes as the network scales.  We're not just talking about sending one copy of each transaction to each client - we're talking about multiple clients broadcasting potentially redundant data to one another, and doing it across numerous hops, meaning numerous rebroadcasts.  Much larger number, much more difficult to handle.  However, it is manageable, just not in the current incarnation of network handling in the client.
+これがネットワークの規模拡大に伴ってBTCプロトコルが消費する帯域幅量だ。各トランザクションのコピーを各クライアントに1つ送る話だけではない――複数のクライアントが潜在的に冗長なデータを互いにブロードキャストし、多数のホップを経由して行うため、多数の再ブロードキャストが発生する。はるかに大きな数字であり、扱いがはるかに難しい。しかし管理可能ではある。ただし、現在のクライアントのネットワーク処理の実装ではない。
 
-Perhaps in the "popular" phase, BTC chains could be broken up by region, similar to the purviews of domain name authorities now - and there could be an alternative protocol for transactions across these regional boundaries?  This would help the raw numbers of the problem, and also cut down on latency and related issues.  Not that I think this is an excellent solution - but P2P flooding across all active clients is obviously out barring some massive breakthrough in quantum computing or whatnot.
+おそらく「普及」段階では、BTCチェーンを地域ごとに分割できるかもしれない。現在のドメイン名管理機関の管轄と同様に。そしてこれらの地域境界を越えるトランザクション用の代替プロトコルを用意する。これは問題の絶対数を減らし、レイテンシーや関連する問題も軽減するだろう。優れた解決策だとは思わないが、量子コンピュータの大規模なブレークスルー等がない限り、すべてのアクティブクライアントへのP2Pフラッディングは明らかに不可能だ。

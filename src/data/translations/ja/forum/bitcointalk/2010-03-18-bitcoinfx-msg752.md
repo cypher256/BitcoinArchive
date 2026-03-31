@@ -1,5 +1,5 @@
 ---
-title: "Re: Idea for file hosting and proxy services"
+title: "Re: ファイルホスティングとプロキシサービスのアイデア"
 date: 2010-03-18T14:36:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,20 +8,20 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "Context post by BitcoinFX in BitcoinTalk topic 83. before msg810."
+description: "BitcoinTalkトピック83におけるBitcoinFXの文脈投稿。msg810の前。"
 isSatoshi: false
 threadId: "bt-idea-for-file-hosting-and-proxy-services"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Yes. Any built proxy implementation would be open source and automated bitcoin payments would be great.
+そうだ。構築されたプロキシ実装はオープンソースにすべきで、自動化されたBitcoin支払いは素晴らしいだろう。
 
-I will post the psiphon info. and links because the project has just moved from v1 to v2 and the implementations are very different.
+Psiphonの情報とリンクを投稿する。プロジェクトがちょうどv1からv2に移行したところで、実装は大きく異なる。
 
-Psiphon is a free 'circumvention' tool and should remain so. However, I've run a private and personally updated / secured 1.6 version and do accept 'token' donations from some of my users.
+Psiphonは無料の「検閲回避」ツールであり、そのままであるべきだ。しかし、個人的に更新・セキュリティ強化した1.6バージョンをプライベートに運用しており、一部のユーザーから「形式的な」寄付を受け付けている。
 
-"Psiphon is a web proxy designed to help Internet users securely bypass the content-filtering systems used to censor the internet. Psiphon was developed by the Citizen Lab at the University of Toronto.
+「Psiphonは、インターネットを検閲するために使用されるコンテンツフィルタリングシステムを安全に回避するために設計されたウェブプロキシです。PsiphonはトロントoloColor 大学のCitizen Labによって開発されました。
 
 License: GNU General Public License
 Source code: http://psiphon.ca/download/psiphon-src-1.6.tar.gz
@@ -32,34 +32,34 @@ http://psiphon.ca/
 
 https://launchpad.net/psiphon
 
-Psiphon is a user-friendly, simple to administer, web-based proxy application. It allows users in regions with unrestricted Internet access to provide access to denied content to their friends, family, and associates in regions with restricted access.
+Psiphonは、ユーザーフレンドリーで管理が簡単なウェブベースのプロキシアプリケーションです。制限のないインターネットアクセスを持つ地域のユーザーが、アクセスが制限された地域の友人、家族、関係者に拒否されたコンテンツへのアクセスを提供できるようにします。
 
-Please contact the project leader if you're interested in helping us take Psiphon forward.
+Psiphonを前進させることに興味がある方は、プロジェクトリーダーにお問い合わせください。
 
-NOTE: The Psiphon 1.x and 2.x series are essentially different products with different architectures. Psiphon 1.x is a light-weight web proxy designed to run on a home PC (MS Windows-based) with no central management component. With Psiphon 1.x, a user asks a friend to run a proxy and can then access blocked sites via his or her friend's Internet connection. The Psiphon 1.x source code is available here: https://code.launchpad.net/~psiphon-inc/psiphon/psiphon-1.6.
+注：Psiphon 1.xと2.xシリーズは本質的に異なるアーキテクチャの異なる製品です。Psiphon 1.xは、中央管理コンポーネントなしで家庭のPC（MS Windowsベース）上で実行されるように設計された軽量ウェブプロキシです。Psiphon 1.xでは、ユーザーが友人にプロキシの実行を依頼し、友人のインターネット接続を介してブロックされたサイトにアクセスできます。Psiphon 1.xのソースコードはこちら：https://code.launchpad.net/~psiphon-inc/psiphon/psiphon-1.6。
 
-The new project is Psiphon 2.x, a centrally managed web proxy system deployed by Psiphon Inc. to provide censorship circumvention services."
+新しいプロジェクトはPsiphon 2.xで、検閲回避サービスを提供するためにPsiphon Inc.がデプロイする中央管理型ウェブプロキシシステムです。」
 
-Great source code here in reference to designing and building our own separate bitcoin style implementation. I'd grab the 1.6.tar.gz for your reference satoshi, before it becomes to 'historical'. It's also not that easy to compile the 1.6 version on Linux anymore.
+独自のBitcoinスタイルの実装を設計・構築するための参考として素晴らしいソースコードだ。「歴史的」になる前にサトシ、参考用に1.6.tar.gzを入手しておくことをお勧めする。Linux上で1.6バージョンをコンパイルするのももう簡単ではない。
 
-The 1.6 Win32 version has now been removed from the original project website. I actually run my existing proxy service on a windows box, with additional security. I have the msi and documentation if anyone can't find it elsewhere or would like it for reference etc. I keep it up-to-date and secure from the following sources;
+1.6 Win32バージョンは元のプロジェクトウェブサイトから削除された。実際には追加のセキュリティを施したWindowsマシンで既存のプロキシサービスを運用している。他で見つけられない場合や参考にしたい場合は、msiとドキュメントがある。以下のソースから最新の状態を維持しセキュアに保っている：
 
 SSL - http://www.slproweb.com/products/Win32OpenSSL.html
 
-Visual C++ 2008 Redistributables for msvcpXX.dll and msvcrXX.dll
+Visual C++ 2008 Redistributables（msvcpXX.dllとmsvcrXX.dll用）
 
 http://www.sqlite.org/download.html
 
-Precompiled Binaries For Windows for sqlite3.dll
+Precompiled Binaries For Windows（sqlite3.dll用）
 
-Java and some flash support is always an issue though !
+ただし、Javaと一部のFlashサポートは常に問題だ！
 
-I would be happy to work on and share contributions for a 'bitcoin' proxy software, but have limited time and developer experience myself. Maybe you should contact the psiphon developers for a separate v1.6 style implementation yourself satoshi ?
+「Bitcoin」プロキシソフトウェアへの貢献を喜んで行い共有するが、自分自身の時間と開発経験は限られている。サトシ、別のv1.6スタイルの実装についてPsiphon開発者に直接連絡してみてはどうか？
 
-I understand that the Tor project is also looking for a payment / incentive system for it's server operators. Smiley
+Torプロジェクトもサーバーオペレーター向けの支払い/インセンティブシステムを探していると聞いている。Smiley
 
-Could you change the thread title to "Re: Idea for file hosting and proxy services". Thanks.
+スレッドタイトルを「Re: Idea for file hosting and proxy services」に変更してもらえないだろうか。ありがとう。
 
-Regards,
+よろしく、
 
 BitcoinFX

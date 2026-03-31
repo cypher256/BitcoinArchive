@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-15T05:21:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,23 +8,23 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. quoted by msg70."
+description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg70で引用。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Okay, I will look into the std::string issue. It is also throwing the same std::string issue on the latest version of Ubuntu Linux. So this isn't just OSX related. I have to say that my main background is C, not C++ so I am still learning some of the C++ data types/headers/and other specifics "as I go". Smiley
+了解、std::stringの問題を調べてみる。最新版のUbuntu Linuxでも同じstd::stringの問題が出ている。だからこれはOSXだけの問題ではない。正直に言うと、俺のメインの経歴はCであってC++ではないので、C++のデータ型/ヘッダー/その他の仕様はまだ「やりながら」学んでいるところだ。Smiley
 
-There are only defines for __WXCOCOA__ and __WXMAC__ in wx/defs.h (I must be missing something here..maybe my wxwidgets needs to be rebuilt -- I'll try that). I have tried combinations of those existing defines without success. The other option is to use gtk on OSX but the windowing will be slower and (my opinion) "ugly". Carbon would be the best selection for OSX.  I'll keep hacking at it until I get it working. Smiley
+wx/defs.hには__WXCOCOA__と__WXMAC__のdefineしかない（何か見落としているはずだ…wxwidgetsを再ビルドする必要があるかもしれない――試してみる）。既存のdefineの組み合わせを試したが成功していない。もう一つの選択肢はOSXでgtkを使うことだが、ウィンドウ描画が遅くなるし（個人的な意見だが）「見苦しい」。CarbonがOSXには最適だろう。動くまでハックし続ける。Smiley
 
-I also now have a working startup script for FreeBSD that will launch xorg's virtual framebuffer onto the localhost, fire up bitcoin and have the X11 screen output get stuffed into memory (instead of the monitor). This is a real big hack, but it does enable someone to run bitcoin as a pseudo unix daemon. I have had the code running for over 12h now and I don't detect any memory leaks or other weirdness.
+FreeBSD用の起動スクリプトも作った。xorgの仮想フレームバッファをlocalhostに起動し、Bitcoinを立ち上げ、X11の画面出力を（モニターではなく）メモリに送り込むものだ。かなりの大技だが、Bitcoinを疑似UNIXデーモンとして動かすことはできる。12時間以上コードを走らせているが、メモリリークやその他の異常は検出されていない。
 
-Also I have a simple network monitor that will detect if bitcoin has crashed/stopped responding on port 8333, send me a page, and start the daemon back up again. This setup is ideal. I have started deploying seeds on servers I control that are all over the world. Smiley
+また、Bitcoinがクラッシュしたりポート8333で応答しなくなったりした場合に検知し、ページを送信し、デーモンを再起動するシンプルなネットワークモニターも作った。この構成は理想的だ。世界中の自分が管理するサーバーにシードのデプロイを始めた。Smiley
 
-One question: how do I enable the debug.log? I have tried stopping bitcoin and touching ~/.bitcoin/debug.log and starting bitcoin again. It never seems to write to the file. Am I missing something?
+一つ質問：debug.logを有効にするにはどうすればいい？Bitcoinを停止し、~/.bitcoin/debug.logをtouchして再起動してみたが、ファイルに書き込まれないようだ。何か見落としているのだろうか？
 
-I will include these tools once I get SF setup.
+SFのセットアップが済んだら、これらのツールを含める予定だ。
 
-Cheers!
+乾杯！

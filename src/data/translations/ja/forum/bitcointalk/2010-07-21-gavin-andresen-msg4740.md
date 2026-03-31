@@ -1,5 +1,5 @@
 ---
-title: "Re: Warning: don't use -server or bitcoind where you web browse (v0.3.2 and lower)"
+title: "Re: 警告：Web閲覧するマシンで-serverやbitcoindを使うな（v0.3.2以下）"
 date: 2010-07-21T15:01:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 479. before msg5432."
+description: "BitcoinTalkトピック479におけるギャビン・アンドレセンの文脈投稿。msg5432の前。"
 isSatoshi: false
 threadId: "bt-warning-dont-use-server-or-bitcoind"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-You can still generate bitcoins, just don't run bitcoind or bitcoin -server or bitcoin -daemon on machine that you use to browse the Web.
+Bitcoin自体は引き続き生成できる。ただ、Web閲覧に使うマシンでbitcoindやbitcoin -serverやbitcoin -daemonを実行しなければいい。
 
-As sirius says, if you do you could browse to a website that empties your Bitcoin wallet without your knowledge or permission.
+siriusが言うように、もしそうすると、知らないうちに許可なくBitcoinウォレットを空にするWebサイトを閲覧してしまう可能性がある。

@@ -3,7 +3,7 @@ title: "Re: Wikipedia article on Bitcoin"
 date: 2010-07-20T18:38:00Z
 type: "forum-post"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=342.msg4117#msg4117"
+sourceUrl: "https://bitcointalk.org/index.php?topic=342.msg4508#msg4508"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

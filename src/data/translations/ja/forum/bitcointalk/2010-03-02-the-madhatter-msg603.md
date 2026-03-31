@@ -1,5 +1,5 @@
 ---
-title: "Re: Command Line and JSON-RPC"
+title: "Re: コマンドラインとJSON-RPC"
 date: 2010-03-02T15:46:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 63. before msg633."
+description: "BitcoinTalkトピック63におけるThe Madhatterの文脈投稿。msg633の前。"
 isSatoshi: false
 threadId: "bt-command-line-and-json-rpc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-That wchar thing was what I was stuck on for the OSX build. Cheesy
+そのwcharの件がOSXビルドで詰まっていたところだった。Cheesy
 
-Glad to see it is ironed out. I'll keep hacking away now.
+解決されたようで良かった。引き続きハックしていく。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin client and website translation"
+title: "Re: Bitcoinクライアントとウェブサイトの翻訳"
 date: 2010-02-10T18:15:05.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 47. before msg389."
+description: "BitcoinTalkトピック47におけるNewLibertyStandardの文脈投稿。msg389の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-client-and-website-translation"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-It looks like the Bitcoin Wikipedia article is only available in English. How about some of you either translate or write a new article in your language.
+BitcoinのWikipedia記事は英語でしか利用できないようだ。誰か自分の言語に翻訳するか、新しい記事を書いてみてはどうだろうか。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Beta?"
+title: "Re: ベータ版？"
 date: 2010-06-30T02:16:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 217. before msg1928."
+description: "BitcoinTalkトピック217におけるNewLibertyStandardの文脈投稿。msg1928の前。"
 isSatoshi: false
 threadId: "bt-beta"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I think version 0.3 would be a better choice if Bitcoin wasn't making financial transactions on Windows. A significant number of people, particularly Windows users, don't trust software below version 1.1 or 1.2, but going from version 0.2 to 1.3 will backfire when those users find out we skipped the first three 1.x versions.
+BitcoinがWindowsで金融取引を行っていなければ、バージョン0.3の方が良い選択だと思う。かなりの数の人々、特にWindowsユーザーは、バージョン1.1や1.2以下のソフトウェアを信用しない。しかしバージョン0.2から1.3に飛ぶと、最初の3つの1.xバージョンを飛ばしたことがわかった時に裏目に出るだろう。

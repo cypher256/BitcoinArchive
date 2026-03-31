@@ -1,5 +1,5 @@
 ---
-title: "Re: Assertion Failure - Ubuntu Lucid"
+title: "Re: アサーション失敗 - Ubuntu Lucid"
 date: 2010-07-17T22:17:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "singpolyma"
 participants:
   - name: "singpolyma"
     slug: "singpolyma"
-description: "Context post by singpolyma in BitcoinTalk topic 400. before msg3823."
+description: "BitcoinTalkトピック400におけるsingpolymaの文脈投稿。msg3823の前。"
 isSatoshi: false
 threadId: "bt-assertion-failure-ubuntu-lucid"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I have 58464 blocks... haven't run the software in awhile
+58464ブロックある…しばらくソフトウェアを動かしていなかった。

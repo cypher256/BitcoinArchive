@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.18"
+title: "Re: バージョン0.3.18"
 date: 2010-12-09T13:51:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 2162. before msg28549."
+description: "BitcoinTalkトピック2162におけるShadowOfHarbringerの投稿。msg28549の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-18"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Well I spport Satoshi completely in this matter.
+この件ではサトシを完全に支持する。
 
-Leaving a possibility to store data in bitcoin chain is an accident waiting to happen. Just wait until somebody encodes kiddie porn into the chain - it would stay there forever. And the governments would have a perfect propaganda possibility for fighting it. "Normal" people won't use bitcoin at all if it is associated with perverts, mafia, and financial scams.
+Bitcoinチェーンにデータを保存する可能性を残すのは事故が起きるのを待っているようなものだ。誰かが児童ポルノをチェーンにエンコードするまで待てばいい。それは永久にそこに残る。そして政府はそれと戦うための完璧なプロパガンダの機会を得る。Bitcoinが変態、マフィア、金融詐欺と結びつけられたら、「普通の」人々はBitcoinを一切使わなくなる。

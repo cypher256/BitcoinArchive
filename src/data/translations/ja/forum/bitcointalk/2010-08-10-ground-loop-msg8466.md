@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.8.1 update for Linux 64-bit"
+title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
 date: 2010-08-10T03:47:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Context post by Ground Loop in BitcoinTalk topic 765. before msg8628."
+description: "BitcoinTalkトピック765におけるGround Loopのコンテキスト投稿。msg8628の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Just to confirm -- this fix is in SVN 125?
+確認だが、この修正はSVN 125に入っているのか？

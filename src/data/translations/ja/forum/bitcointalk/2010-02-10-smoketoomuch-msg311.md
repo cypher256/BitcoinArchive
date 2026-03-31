@@ -1,5 +1,5 @@
 ---
-title: "Re: What's with this odd generation?"
+title: "Re: この奇妙な生成は何？"
 date: 2010-02-10T19:06:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 48. before msg316."
+description: "BitcoinTalkトピック48におけるSmokeTooMuchの文脈投稿。msg316の前。"
 isSatoshi: false
 threadId: "bt-what-s-with-this-odd-generation"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-had the same a while ago with 50.26
+少し前に同じことがあった。50.26で。

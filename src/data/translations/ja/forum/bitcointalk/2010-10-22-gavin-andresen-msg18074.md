@@ -1,5 +1,5 @@
 ---
-title: "Re: ERROR - PLEASE HELP ME!"
+title: "Re: エラー - 助けてください！"
 date: 2010-10-22T14:25:14.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 1530. quoted by msg18241."
+description: "BitcoinTalkトピック1530におけるギャビン・アンドレセンの投稿。msg18241で引用。"
 isSatoshi: false
 threadId: "bt-error-please-help-me"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Dhaw generated all of these coins on his (her?) own machines.
+Dhawはこれらのコインをすべて自分のマシンで生成した。
 
-Unfortunately, either due to a bug or some oddness with Dhaw's network connections they were all generated on an alternate block chain.
+残念ながら、バグかDhawのネットワーク接続の異常により、すべて別のブロックチェーン上で生成されてしまった。
 
-The Bitcoin client really shouldn't allow coin generation until you have all of the blocks up to the last block checkpoint.
+Bitcoinクライアントは、最後のブロックチェックポイントまでのすべてのブロックを取得するまで、コイン生成を許可すべきではない。

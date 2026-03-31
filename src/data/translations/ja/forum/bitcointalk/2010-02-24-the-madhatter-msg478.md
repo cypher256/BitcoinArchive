@@ -1,5 +1,5 @@
 ---
-title: "Re: Command Line and JSON-RPC"
+title: "Re: コマンドラインとJSON-RPC"
 date: 2010-02-24T05:00:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 63. before msg482."
+description: "BitcoinTalkトピック63におけるThe Madhatterの文脈投稿。msg482の前。"
 isSatoshi: false
 threadId: "bt-command-line-and-json-rpc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-* madhatter2 pulls out razor sharp hex editor
+* madhatter2が切れ味鋭いバイナリエディタを取り出す

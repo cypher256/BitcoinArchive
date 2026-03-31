@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin in Ubuntu 10.04"
+title: "Re: Ubuntu 10.04でのBitcoin"
 date: 2010-06-21T09:08:36.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "Context post by virtualcoin in BitcoinTalk topic 149. before msg1646."
+description: "BitcoinTalkトピック149におけるvirtualcoinの文脈投稿。msg1646の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-in-ubuntu-10-04"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I'm new, but it works fine here. It's version 0.2 though.
+新参者だが、こちらでは問題なく動いている。バージョン0.2だけど。
 
 [http://i45.tinypic.com/1z5knb8.jpg](http://i45.tinypic.com/1z5knb8.jpg)

@@ -8,21 +8,21 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 1327. before msg15147."
+description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの投稿。msg15147の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102)
-> Forgot to say, I suspected the detect might not work on 64-bit AMD.  I found it hard to believe but AMD reports a different model number in 64-bit mode.
+> [サトシの引用、2010年10月3日 午後6:17:06](https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102)
+> 言い忘れていたが、64ビットAMDでは検出がうまくいかないのではないかと思っていた。信じがたいことだが、AMDは64ビットモードで異なるモデル番号を報告する。
 > 
-> Could you grep CPUID your debug.log and tell me what it says?  (and anyone else with 64-bit AMD)  And what AMD chip do you have?
+> debug.logでCPUIDをgrepして結果を教えてくれないか？（64ビットAMDを使っている他の人もお願いしたい。）どのAMDチップを使っているか？
 > 
-> Do all AMDs that support 64-bit have the better SSE2 hardware also?
+> 64ビット対応のAMDはすべて、より優れたSSE2ハードウェアも搭載しているのだろうか？
 
-Will that be enough ?:
+これで足りるだろうか？：
 
 Code:cat /proc/cpuinfo
 processor       : 0
@@ -51,7 +51,7 @@ cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
 
-EDIT:
-Also, i have just found out how to do the cpuid thingy:
+編集：
+CPUIDの確認方法もわかった：
 
 Code:CPUID 444d4163 family 16, model 2, stepping 3, fUseSSE2=0

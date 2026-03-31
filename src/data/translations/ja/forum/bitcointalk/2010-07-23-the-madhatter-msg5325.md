@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoind not responding to RPC"
+title: "Re: bitcoindがRPCに応答しない"
 date: 2010-07-23T16:39:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 548. before msg5339."
+description: "BitcoinTalkトピック548におけるThe Madhatterの文脈投稿。msg5339の前。"
 isSatoshi: false
 threadId: "bt-bitcoind-not-responding-to-rpc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Strange. I use my bitcoind almost every day from PHP, and I haven't encountered that.
+奇妙だ。PHPからbitcoindをほぼ毎日使っているが、そのような問題には遭遇したことがない。
