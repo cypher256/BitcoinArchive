@@ -339,8 +339,8 @@ async function main() {
       }
 
       const body = htmlToMarkdown(post.bodyHtml);
-      if (!body) {
-        console.log(`  SKIP msg${msgId}: empty body`);
+      if (!body || !post.dateISO || post.author === 'Unknown') {
+        console.log(`  SKIP msg${msgId}: ${!body ? 'empty body' : !post.dateISO ? 'no date' : 'unknown author'}`);
         continue;
       }
 
