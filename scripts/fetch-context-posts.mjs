@@ -265,6 +265,18 @@ async function main() {
   for (const [topicNum, satoshiPosts] of satoshiByTopic) {
     console.log(`\n=== Topic ${topicNum} (${satoshiPosts.length} Satoshi posts) ===`);
 
+    // Derive thread title from existing entries (strip "Re: " prefix)
+    const threadTitle = (() => {
+      const threadId = satoshiPosts[0]?.threadId;
+      if (!threadId) return '';
+      const threadEntries = enEntries.filter(e => e.threadId === threadId);
+      // Find the first non-"Re:" title, or strip "Re:" from the first one
+      const original = threadEntries.find(e => e.title && !e.title.startsWith('Re:'));
+      if (original) return original.title;
+      const first = threadEntries[0];
+      return first?.title?.replace(/^Re:\s*/, '') || '';
+    })();
+
     // Collect all msg IDs we need to check (for "3 before" we need the page)
     // Also collect quoted msg IDs
     const quotedMsgIds = new Set();
@@ -339,8 +351,9 @@ async function main() {
       const fileName = `${datePrefix}-${slug}-msg${msgId}.md`;
 
       // Generate frontmatter
+      const displayTitle = threadTitle ? `Re: ${threadTitle}` : `Re: (context post by ${post.author})`;
       const md = `---
-title: "Re: (context post by ${post.author})"
+title: "${displayTitle.replace(/"/g, '\\"')}"
 date: ${post.dateISO || '2010-01-01T00:00:00Z'}
 type: "forum-post"
 source: "bitcointalk"
