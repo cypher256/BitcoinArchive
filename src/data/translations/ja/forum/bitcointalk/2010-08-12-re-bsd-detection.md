@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 > [Quote from: dkaparis on August 11, 2010, 11:00:16 PM](#msg8807)
-> There is this piece of code in headers.h:
+> headers.hにこのコードがある：
 
 #ifdef __WXMAC_OSX__
 #define __WXMAC__ 1

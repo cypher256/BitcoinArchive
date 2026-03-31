@@ -18,8 +18,7 @@ translationStatus: complete
 ---
 
 > [Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](#msg9660)
-> GCC 4.3.3は-march=amdfamk10をサポートしていない。こうなる：
-> sha256.cpp:1: error: bad value (amdfamk10) for -march= switchtry -march=amdfam10
+> -march=amdfam10を試してみてくれ
 
 動いた。
 
