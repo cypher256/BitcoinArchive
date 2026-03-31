@@ -17,7 +17,9 @@ threadId: "bt-stealing-coins"
 threadPosition: 4
 ---
 
-[Quote from: knightmb on July 25, 2010, 07:44:02 PM](https://bitcointalk.org/index.php?topic=571.msg5736#msg5736)If I figure out that Public Key 123456 generates Hash ABCD
+> [Quote from: knightmb on July 25, 2010, 07:44:02 PM](https://bitcointalk.org/index.php?topic=571.msg5736#msg5736)
+> If I figure out that Public Key 123456 generates Hash ABCD
+
 and
 Public Key 654321 also generates Hash ABCD
 *I'm still left without the Private Key.*

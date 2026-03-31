@@ -18,7 +18,9 @@ threadPosition: 10
 translationStatus: complete
 ---
 
-[Quote from: kosovito on August 16, 2010, 12:39:17 AM](https://bitcointalk.org/index.php?topic=823.msg9615#msg9615)すべての手順を実行しました。現在クライアントは0.3.10で、ブロック74638で止まっています。これで問題ありませんか？
+> [Quote from: kosovito on August 16, 2010, 12:39:17 AM](https://bitcointalk.org/index.php?topic=823.msg9615#msg9615)
+> すべての手順を実行しました。現在クライアントは0.3.10で、ブロック74638で止まっています。これで問題ありませんか？
+
 まだ74638ブロックと表示されているなら、0.3.10のノードに接続されていない。
 
 今日のところは、以下のパラメータを追加してみてほしい：

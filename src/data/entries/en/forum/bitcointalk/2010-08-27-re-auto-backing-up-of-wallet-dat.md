@@ -21,5 +21,7 @@ If you read it into memory and write it out, it could fail in tight memory situa
 
 I'm looking for something like copyfile(const char* from, const char* to) or copyfile(path from, path to), preferably something in Boost if it has it.  If you find it for me, it's more likely I'll get to implementing it.
 
-[Quote from: nelisky on August 26, 2010, 01:21:57 AM](https://bitcointalk.org/index.php?topic=921.msg11232#msg11232)As for the file copy, why add to the boost dependency? I for one would love to get a core lib with very little deps.
+> [Quote from: nelisky on August 26, 2010, 01:21:57 AM](https://bitcointalk.org/index.php?topic=921.msg11232#msg11232)
+> As for the file copy, why add to the boost dependency? I for one would love to get a core lib with very little deps.
+
 We require Boost for JSON and a dozen things replacing dependencies on wxWidgets.  Boost is good, portable stuff, we should not shy away from it.

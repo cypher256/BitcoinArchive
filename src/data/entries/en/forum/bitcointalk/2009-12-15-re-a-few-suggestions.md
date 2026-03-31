@@ -17,7 +17,9 @@ threadId: "bt-a-few-suggestions"
 threadPosition: 8
 ---
 
-[Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](https://bitcointalk.org/index.php?topic=12.msg68#msg68)It is also throwing the same std::string issue on the latest version of Ubuntu Linux.
+> [Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](https://bitcointalk.org/index.php?topic=12.msg68#msg68)
+> It is also throwing the same std::string issue on the latest version of Ubuntu Linux.
+
 Then it must be something you're doing differently with building or configuring wxWidgets.
 
 What options did you use on the wxWidgets "configure" script?  The options I used are in build-unix.txt.

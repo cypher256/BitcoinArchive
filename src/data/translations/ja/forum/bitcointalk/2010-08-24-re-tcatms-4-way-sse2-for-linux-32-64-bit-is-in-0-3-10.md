@@ -18,6 +18,8 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-[Quote from: ArtForz on August 21, 2010, 04:56:31 PM](https://bitcointalk.org/index.php?topic=820.msg10609#msg10609)- AMD K10: 128ビットユニット2つ
+> [Quote from: ArtForz on August 21, 2010, 04:56:31 PM](https://bitcointalk.org/index.php?topic=820.msg10609#msg10609)
+> - AMD K10: 128ビットユニット2つ
+
 - Intel Nehalem: 128ビットユニット3つ
 これはおそらく、ハイパースレッディングが-4wayで性能を向上させる理由を説明している。3つのSSE2ユニットが過剰であれば、ハイパースレッディングがそれらをすべてビジー状態に保つのに役立つだろう。

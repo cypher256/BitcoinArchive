@@ -18,7 +18,9 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-[Quote from: knightmb on July 30, 2010, 08:04:19 PM](https://bitcointalk.org/index.php?topic=626.msg6713#msg6713)つまり最後のコマンドは単に
+> [Quote from: knightmb on July 30, 2010, 08:04:19 PM](https://bitcointalk.org/index.php?topic=626.msg6713#msg6713)
+> つまり最後のコマンドは単に
+
 **sudo apt-get install libboost1.37-dev**
 にすればいい
 ただし、それはboost 1.40以降（Ubuntu 10.04）では動作しない。その場合はlibboost-all-devを入手する必要がある。

@@ -18,7 +18,9 @@ threadPosition: 4
 translationStatus: complete
 ---
 
-[Quote from: knightmb on July 25, 2010, 07:44:02 PM](https://bitcointalk.org/index.php?topic=571.msg5736#msg5736)公開鍵123456がハッシュABCDを生成し、
+> [Quote from: knightmb on July 25, 2010, 07:44:02 PM](https://bitcointalk.org/index.php?topic=571.msg5736#msg5736)
+> 公開鍵123456がハッシュABCDを生成し、
+
 かつ
 公開鍵654321もハッシュABCDを生成するとわかったとしても、
 *秘密鍵は依然としてわからない。*

@@ -15,7 +15,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/154/"
 ---
 
-[Quote from: sirius-m on June 10, 2010, 01:51:16 PM](https://bitcointalk.org/index.php?topic=177.msg1452#msg1452)You can of course use services like vekja.net or mybitcoin.com on a mobile browser, depositing money there to the extent you trust them. 
+> [Quote from: sirius-m on June 10, 2010, 01:51:16 PM](https://bitcointalk.org/index.php?topic=177.msg1452#msg1452)
+> You can of course use services like vekja.net or mybitcoin.com on a mobile browser, depositing money there to the extent you trust them. 
+
 I think that's the best option right now.  Like cash, you don't keep your entire net worth in your pocket, just walking around money for incidental expenses.
 
 They could make a smaller version of the site optimized for mobile.  If there was an app, it could be a front end to one of those, with the main feature being QR-code reader, or maybe there's already a universal QR-code reading app that web sites can be designed to accept scans from.

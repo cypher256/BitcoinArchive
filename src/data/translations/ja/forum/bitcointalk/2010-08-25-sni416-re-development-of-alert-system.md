@@ -18,7 +18,8 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-[Quote from: jimbobway on August 25, 2010, 04:45:22 PM](https://bitcointalk.org/index.php?topic=898.msg11153#msg11153)[Quote from: BioMike on August 23, 2010, 05:15:43 AM](https://bitcointalk.org/index.php?topic=898.msg10742#msg10742)@mizerydearia、引用ボタンの方が返信ボタンより見つけやすいと思います。
+> [Quote from: jimbobway on August 25, 2010, 04:45:22 PM](https://bitcointalk.org/index.php?topic=898.msg11153#msg11153)
+> [Quote from: BioMike on August 23, 2010, 05:15:43 AM](https://bitcointalk.org/index.php?topic=898.msg10742#msg10742)@mizerydearia、引用ボタンの方が返信ボタンより見つけやすいと思います。
 
 では、理論的にこれは<ある政府>がSatoshiを逮捕して鍵を引き渡すよう（またはコンピュータから取得して）要求し、ネットワーク全体をシャットダウンできる最初の制御システムですか？
 
@@ -32,5 +33,7 @@ Satoshiへのいくつかの修辞的な質問：
 最後に、あなたはもしかしてJack Bauerですか？本気で。
 アラートシステムに関して、誰が気にするのか？鍵ができることは、サイト所有者が-disablesafemodeスイッチを追加するかアップグレードするまで、6つのjson-rpcコマンドを一時的に無効にすることだけだ。すべてのノードは稼働し続け生成を続け、ネットワークは維持される。私が不在でも、スクリプトキディでも2文字追加してアラートシステムを無効にする新バージョンを作る方法を理解できる。一時的な不便でしかない。
 
-[Quote from: BioMike on August 23, 2010, 05:15:43 AM](https://bitcointalk.org/index.php?topic=898.msg10742#msg10742)では、理論的にこれは<ある政府>がSatoshiを逮捕して鍵を引き渡すよう（またはコンピュータから取得して）要求し、ネットワーク全体をシャットダウンできる最初の制御システムですか？
+> [Quote from: BioMike on August 23, 2010, 05:15:43 AM](https://bitcointalk.org/index.php?topic=898.msg10742#msg10742)
+> では、理論的にこれは<ある政府>がSatoshiを逮捕して鍵を引き渡すよう（またはコンピュータから取得して）要求し、ネットワーク全体をシャットダウンできる最初の制御システムですか？
+
 これが、反対している人々が何を言っているかわかっていないと思わせる理由だ。「ネットワーク全体をシャットダウン」することはできない。

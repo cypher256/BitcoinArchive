@@ -19,7 +19,8 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-[Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](https://bitcointalk.org/index.php?topic=823.msg9609#msg9609)影響についての質問：不正なブロックの後、不正なブロックチェーンを使って **トランザクション** を送信しました。
+> [Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](https://bitcointalk.org/index.php?topic=823.msg9609#msg9609)
+> 影響についての質問：不正なブロックの後、不正なブロックチェーンを使って **トランザクション** を送信しました。
 
 そのトランザクションのステータスはどうなりますか？
 見たところ、（更新された）送信側のクライアントウォレットには差し引かれた金額が表示されています。

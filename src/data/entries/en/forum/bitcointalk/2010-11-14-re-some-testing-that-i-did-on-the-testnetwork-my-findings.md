@@ -17,7 +17,9 @@ threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 threadPosition: 3
 ---
 
-[Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](https://bitcointalk.org/index.php?topic=1668.msg21899#msg21899)Of course, if the network is not being flooded and you're not overly concerned about the current transaction getting held up then it's probably worth preferring to use your 0 conf transactions so that you can "save" the higher priority coins for when the network **is** being flooded.
+> [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](https://bitcointalk.org/index.php?topic=1668.msg21899#msg21899)
+> Of course, if the network is not being flooded and you're not overly concerned about the current transaction getting held up then it's probably worth preferring to use your 0 conf transactions so that you can "save" the higher priority coins for when the network **is** being flooded.
+
 You should use at least some priority in case a flood comes along before the next block.
 
 As long as all dependencies have at least 1 conf, if the transaction doesn't have enough priority at first, the dependencies will age until it does.

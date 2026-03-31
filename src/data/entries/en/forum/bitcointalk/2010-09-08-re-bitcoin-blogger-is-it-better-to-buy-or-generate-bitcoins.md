@@ -15,7 +15,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/443/"
 ---
 
-[Quote from: BitLex on September 07, 2010, 08:10:54 PM](https://bitcointalk.org/index.php?topic=955.msg12189#msg12189)AMD X3 @2.8ghz
+> [Quote from: BitLex on September 07, 2010, 08:10:54 PM](https://bitcointalk.org/index.php?topic=955.msg12189#msg12189)
+> AMD X3 @2.8ghz
+
 ->stock client
 ~3800khs ~150Watt
 Did you try -4way?

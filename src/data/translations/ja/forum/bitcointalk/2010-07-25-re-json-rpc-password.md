@@ -19,7 +19,9 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-[Quote from: lachesis on July 25, 2010, 07:52:35 PM](https://bitcointalk.org/index.php?topic=461.msg5738#msg5738)バグと思われるものを見つけました: ユーザー名とパスワードの組み合わせが十分に長い場合、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成します:
+> [Quote from: lachesis on July 25, 2010, 07:52:35 PM](https://bitcointalk.org/index.php?topic=461.msg5738#msg5738)
+> バグと思われるものを見つけました: ユーザー名とパスワードの組み合わせが十分に長い場合、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成します:
+
 Code:...
 Authorization: Basic YWJiYWJiYWFiYmE6aGVsbG93b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxkaGVsbG93
 b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk

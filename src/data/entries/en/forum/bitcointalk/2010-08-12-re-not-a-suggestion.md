@@ -17,7 +17,8 @@ threadId: "bt-not-a-suggestion"
 threadPosition: 5
 ---
 
-[Quote from: Red on August 12, 2010, 01:10:19 AM](https://bitcointalk.org/index.php?topic=770.msg8824#msg8824)[Quote from: satoshi on August 11, 2010, 09:07:59 PM](https://bitcointalk.org/index.php?topic=770.msg8798#msg8798)I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  
+> [Quote from: Red on August 12, 2010, 01:10:19 AM](https://bitcointalk.org/index.php?topic=770.msg8824#msg8824)
+> [Quote from: satoshi on August 11, 2010, 09:07:59 PM](https://bitcointalk.org/index.php?topic=770.msg8798#msg8798)I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  
 
 I thought this too at first. But then I convinced myself otherwise.
 Are you back to talking about the existing Bitcoin system here?

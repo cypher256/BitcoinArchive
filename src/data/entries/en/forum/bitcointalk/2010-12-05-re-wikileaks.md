@@ -21,7 +21,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/523/"
 ---
 
-[Quote from: RHorning on December 04, 2010, 10:17:44 PM](https://bitcointalk.org/index.php?topic=1735.msg26876#msg26876)Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
+> [Quote from: RHorning on December 04, 2010, 10:17:44 PM](https://bitcointalk.org/index.php?topic=1735.msg26876#msg26876)
+> Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
+
 No, don't "bring it on".
 
 The project needs to grow gradually so the software can be strengthened along the way.

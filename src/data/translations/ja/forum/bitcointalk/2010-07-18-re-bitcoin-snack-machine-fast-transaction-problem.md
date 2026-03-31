@@ -18,7 +18,9 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-[Quote from: llama on July 18, 2010, 12:03:29 AM](https://bitcointalk.org/index.php?topic=423.msg3836#msg3836)良いスタートですが、まだ完全ではありません。
+> [Quote from: llama on July 18, 2010, 12:03:29 AM](https://bitcointalk.org/index.php?topic=423.msg3836#msg3836)
+> 良いスタートですが、まだ完全ではありません。
+
 完全とは言っていない。十分に実用的だと言ったのだ。実際の損失はクレジットカードよりもはるかに少ないだろう。
 
 引用（例えば、自動販売機でトランザクションの伝播を拒否することで）

@@ -17,7 +17,9 @@ threadId: "bt-ui-improvements"
 threadPosition: 3
 ---
 
-[Quote from: Xunie on February 23, 2010, 12:28:27 PM](https://bitcointalk.org/index.php?topic=60.msg439#msg439)*/etc/init.d/gdm start* and it will start gdm!
+> [Quote from: Xunie on February 23, 2010, 12:28:27 PM](https://bitcointalk.org/index.php?topic=60.msg439#msg439)
+> */etc/init.d/gdm start* and it will start gdm!
+
 Ah yes, there we go, back to normal again.
 
 The ctrl+alt+F[1-8] thing never worked on this computer.  The screen just goes haywire.

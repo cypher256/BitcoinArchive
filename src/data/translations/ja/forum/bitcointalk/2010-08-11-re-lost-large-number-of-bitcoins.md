@@ -16,8 +16,12 @@ secondarySources:
 translationStatus: complete
 ---
 
-[Quote from: sirius-m on August 11, 2010, 02:01:53 AM](https://bitcointalk.org/index.php?topic=782.msg8657#msg8657)FAQに各トランザクション後のバックアップの警告を追加しました。ちなみに、バックアップ前にクライアントを停止する必要がありますか？ ちょっと不便ですね。自動バックアップがあると便利です。
+> [Quote from: sirius-m on August 11, 2010, 02:01:53 AM](https://bitcointalk.org/index.php?topic=782.msg8657#msg8657)
+> FAQに各トランザクション後のバックアップの警告を追加しました。ちなみに、バックアップ前にクライアントを停止する必要がありますか？ ちょっと不便ですね。自動バックアップがあると便利です。
+
 バックアップの数秒前（5秒程度）以内に何もしなかったり、支払いを受けたりしなければ、クライアントを停止せずにバックアップを取ることができる。
 
-[Quote from: gridecon on August 11, 2010, 08:46:08 PM](https://bitcointalk.org/index.php?topic=782.msg8795#msg8795)待ってください、また混乱しています。Bitcoinは各トランザクションごとにウォレットを「空にする」ようプログラムされているのが驚きの本質だと思っていました。
+> [Quote from: gridecon on August 11, 2010, 08:46:08 PM](https://bitcointalk.org/index.php?topic=782.msg8795#msg8795)
+> 待ってください、また混乱しています。Bitcoinは各トランザクションごとにウォレットを「空にする」ようプログラムされているのが驚きの本質だと思っていました。
+
 いいえ、通常は各トランザクションでウォレットを空にするわけではない。金額に近くなるように合計できる最小のコインセットを使う。この場合、残念ながら彼のウォレットには9000 BTCの単一の「紙幣」が入っており、1 BTCと8999 BTCのお釣りを得るために崩す必要があった。

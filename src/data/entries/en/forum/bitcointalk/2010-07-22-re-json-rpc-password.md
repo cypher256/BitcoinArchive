@@ -17,7 +17,9 @@ threadId: "bt-json-rpc-password"
 threadPosition: 8
 ---
 
-[Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](https://bitcointalk.org/index.php?topic=461.msg4908#msg4908)TODO: dialog box or debug.log warning if no rpc.user/rpc.password is set, explaining how to set.
+> [Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](https://bitcointalk.org/index.php?topic=461.msg4908#msg4908)
+> TODO: dialog box or debug.log warning if no rpc.user/rpc.password is set, explaining how to set.
+
 In many of the contexts of this RPC stuff, you can print to the console with fprintf(stdout, like this:
 #if defined(__WXMSW__) && wxUSE_GUI
         MyMessageBox("Warning: rpc password is blank, use -rpcpw=<password>

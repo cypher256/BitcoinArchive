@@ -18,5 +18,7 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-[Quote from: jgarzik on August 05, 2010, 07:00:30 PM](https://bitcointalk.org/index.php?topic=645.msg7723#msg7723)その対抗手段があるため、エスクローメカニズムとして使われることはないでしょう
+> [Quote from: jgarzik on August 05, 2010, 07:00:30 PM](https://bitcointalk.org/index.php?topic=645.msg7723#msg7723)
+> その対抗手段があるため、エスクローメカニズムとして使われることはないでしょう
+
 本当か？ 人々が利点を理解できないと思うか？（もしあなたの返答が利点が全くないという主張であれば、人々がそれを理解できないという主張を裏付けることになるだろう。）

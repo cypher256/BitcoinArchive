@@ -17,7 +17,9 @@ threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 threadPosition: 3
 ---
 
-[Quote from: llama on July 18, 2010, 12:03:29 AM](https://bitcointalk.org/index.php?topic=423.msg3836#msg3836)This is a good start, but still not impermeable.
+> [Quote from: llama on July 18, 2010, 12:03:29 AM](https://bitcointalk.org/index.php?topic=423.msg3836#msg3836)
+> This is a good start, but still not impermeable.
+
 I didn't say impermeable, I said good-enough.  The loss in practice would be far lower than with credit cards.
 
 Quote(for example, by refusing to propogate word of the transaction at the vending machine)

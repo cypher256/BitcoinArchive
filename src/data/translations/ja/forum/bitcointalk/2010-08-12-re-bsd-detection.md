@@ -18,7 +18,8 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-[Quote from: dkaparis on August 11, 2010, 11:00:16 PM](https://bitcointalk.org/index.php?topic=790.msg8807#msg8807)headers.hにこのようなコードがあります：
+> [Quote from: dkaparis on August 11, 2010, 11:00:16 PM](https://bitcointalk.org/index.php?topic=790.msg8807#msg8807)
+> headers.hにこのようなコードがあります：
 
 #ifdef __WXMAC_OSX__
 #define __WXMAC__ 1

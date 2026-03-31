@@ -18,5 +18,7 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-[Quote from: bdonlan on July 15, 2010, 11:27:14 PM](https://bitcointalk.org/index.php?topic=391.msg3320#msg3320)120DPIモードで。
+> [Quote from: bdonlan on July 15, 2010, 11:27:14 PM](https://bitcointalk.org/index.php?topic=391.msg3320#msg3320)
+> 120DPIモードで。
+
 「120DPIモード」とは何か？実際にどこかにある設定か？十分にマイナーな原因候補のようだな。左上隅のアイコンのサイズを埋めるために2倍の解像度のアイコンが必要なのだろう。提供されているのは1つのサイズだけだ。

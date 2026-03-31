@@ -18,11 +18,15 @@ threadPosition: 4
 translationStatus: complete
 ---
 
-[Quote from: tcatm on August 16, 2010, 12:43:39 AM](https://bitcointalk.org/index.php?topic=820.msg9617#msg9617)sha256.cppを-O3 -march=amdfamk10でコンパイルすることを提案します（32ビットと64ビットの両方で動作します）。この命令セットをサポートするCPU（AMD Phenom、Intel i5以降）のみが-4wayの恩恵を受け、性能が約9%向上するためです。
+> [Quote from: tcatm on August 16, 2010, 12:43:39 AM](https://bitcointalk.org/index.php?topic=820.msg9617#msg9617)
+> sha256.cppを-O3 -march=amdfamk10でコンパイルすることを提案します（32ビットと64ビットの両方で動作します）。この命令セットをサポートするCPU（AMD Phenom、Intel i5以降）のみが-4wayの恩恵を受け、性能が約9%向上するためです。
+
 GCC 4.3.3は-march=amdfamk10をサポートしていない。以下のエラーが出る：
 sha256.cpp:1: error: bad value (amdfamk10) for -march= switch
 
-[Quote from: NewLibertyStandard on August 16, 2010, 01:49:01 AM](https://bitcointalk.org/index.php?topic=820.msg9630#msg9630)4wayでは、すべての仮想コアを有効にすると大幅に良い性能が得られます。ハイパースレッディングをオフにすると、4wayの有無にかかわらず、ほぼ同じ量のハッシュが得られると思います。
+> [Quote from: NewLibertyStandard on August 16, 2010, 01:49:01 AM](https://bitcointalk.org/index.php?topic=820.msg9630#msg9630)
+> 4wayでは、すべての仮想コアを有効にすると大幅に良い性能が得られます。ハイパースレッディングをオフにすると、4wayの有無にかかわらず、ほぼ同じ量のハッシュが得られると思います。
+
 おお、何か重要な発見をしたかもしれないな！
 
 以前はハイパースレッディングが役に立たなかったのは、すべての処理が算術論理ユニットで行われ、ハイパースレッドがそれを共有していたためだ。

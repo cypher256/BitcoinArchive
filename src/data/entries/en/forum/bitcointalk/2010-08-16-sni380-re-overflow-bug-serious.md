@@ -17,7 +17,9 @@ threadId: "bt-overflow-bug-serious"
 threadPosition: 10
 ---
 
-[Quote from: kosovito on August 16, 2010, 12:39:17 AM](https://bitcointalk.org/index.php?topic=823.msg9615#msg9615)I did all steps, now my client is 0.3.10 and it stopped at block 74638. Is all fine?
+> [Quote from: kosovito on August 16, 2010, 12:39:17 AM](https://bitcointalk.org/index.php?topic=823.msg9615#msg9615)
+> I did all steps, now my client is 0.3.10 and it stopped at block 74638. Is all fine?
+
 If you still show 74638 blocks then you aren't connected to any 0.3.10 nodes.  
 
 For today, try adding these parameters:  

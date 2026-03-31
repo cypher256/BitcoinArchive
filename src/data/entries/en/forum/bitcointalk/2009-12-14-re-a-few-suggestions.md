@@ -17,7 +17,8 @@ threadId: "bt-a-few-suggestions"
 threadPosition: 7
 ---
 
-[Quote from: madhatter2 on December 14, 2009, 03:01:39 PM](https://bitcointalk.org/index.php?topic=12.msg66#msg66)Can anyone shed some light here?
+> [Quote from: madhatter2 on December 14, 2009, 03:01:39 PM](https://bitcointalk.org/index.php?topic=12.msg66#msg66)
+> Can anyone shed some light here?
 
 g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D**__WXMAC__** -DNOPCH -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8" -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4" -I"/usr/local/ssl/include" -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch headers.h
 ...

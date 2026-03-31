@@ -17,7 +17,9 @@ threadId: "bt-alert-upgrade-to-0-3-6-asap"
 threadPosition: 6
 ---
 
-[Quote from: knightmb on July 30, 2010, 08:04:19 PM](https://bitcointalk.org/index.php?topic=626.msg6713#msg6713)So that last command should simply be
+> [Quote from: knightmb on July 30, 2010, 08:04:19 PM](https://bitcointalk.org/index.php?topic=626.msg6713#msg6713)
+> So that last command should simply be
+
 **sudo apt-get install libboost1.37-dev**
 Except that wouldn't work for boost 1.40+ (on Ubuntu 10.04), where you need to get libboost-all-dev.
 

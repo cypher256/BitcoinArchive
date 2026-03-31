@@ -18,7 +18,8 @@ threadPosition: 11
 translationStatus: complete
 ---
 
-[Quote from: trebronics on August 16, 2010, 01:02:35 AM](https://bitcointalk.org/index.php?topic=823.msg9625#msg9625)クライアントを実行しているほとんどの人はこのメッセージスレッドを読んでいません。では...素朴な質問です：
+> [Quote from: trebronics on August 16, 2010, 01:02:35 AM](https://bitcointalk.org/index.php?topic=823.msg9625#msg9625)
+> クライアントを実行しているほとんどの人はこのメッセージスレッドを読んでいません。では...素朴な質問です：
 
 1) これはバージョン3.8.1（大災害前）の不正なブロックチェーンを持つクライアントにどのような影響を与え続けますか？
 2) 3.8.10にアップグレードしたがブロックチェーンファイルを削除しないクライアントにどのような影響がありますか？

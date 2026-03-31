@@ -18,8 +18,12 @@ threadPosition: 2
 translationStatus: complete
 ---
 
-[Quote from: llama on July 17, 2010, 09:56:25 PM](https://bitcointalk.org/index.php?topic=437.msg3810#msg3810)ただし、最新のブロックまでロックしないことが重要です。そうしないと、攻撃者がロックする直前に偽のブロック（または数個）を生成する可能性があり、ブロックロックがなかった場合よりも攻撃がはるかに容易になります。
+> [Quote from: llama on July 17, 2010, 09:56:25 PM](https://bitcointalk.org/index.php?topic=437.msg3810#msg3810)
+> ただし、最新のブロックまでロックしないことが重要です。そうしないと、攻撃者がロックする直前に偽のブロック（または数個）を生成する可能性があり、ブロックロックがなかった場合よりも攻撃がはるかに容易になります。
+
 約200ブロック前まで戻った。ブロックチェーンは分岐のないきれいな直線で、ロックされたブロックの既知のバージョンは1つだけだった。
 
-[Quote from: llama on July 17, 2010, 09:56:25 PM](https://bitcointalk.org/index.php?topic=437.msg3810#msg3810)また、ブロックロックはブロックがクライアントに同梱されることを意味すると思いますが、そうですか？
+> [Quote from: llama on July 17, 2010, 09:56:25 PM](https://bitcointalk.org/index.php?topic=437.msg3810#msg3810)
+> また、ブロックロックはブロックがクライアントに同梱されることを意味すると思いますが、そうですか？
+
 申し訳ないが、まだだ。ただ、初期ブロックダウンロードを高速化したいとは思っている。

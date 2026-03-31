@@ -17,7 +17,9 @@ threadId: "bt-alert-upgrade-to-0-3-6-asap"
 threadPosition: 5
 ---
 
-[Quote from: knightmb on July 30, 2010, 07:24:07 PM](https://bitcointalk.org/index.php?topic=626.msg6702#msg6702)I can only imagine the pain you went through to get these builds because I'm trying to build the program on a Ubuntu 9.04 box and so far I can't seem to find all the dependencies to compile no matter how much I keep installing packages and compiling source, LOL.
+> [Quote from: knightmb on July 30, 2010, 07:24:07 PM](https://bitcointalk.org/index.php?topic=626.msg6702#msg6702)
+> I can only imagine the pain you went through to get these builds because I'm trying to build the program on a Ubuntu 9.04 box and so far I can't seem to find all the dependencies to compile no matter how much I keep installing packages and compiling source, LOL.
+
 I can't understand why you're having so much pain.  I just followed the instructions in build-unix.txt.  I made a couple little corrections for Boost 1.37, which I'll put on SVN the next time I update it, noted below:
 
 Dependencies

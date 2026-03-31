@@ -19,7 +19,9 @@ threadPosition: 7
 
 If you haven't already, try aligning thash.  It might matter.  Couldn't hurt.
 
-[Quote from: tcatm on August 14, 2010, 12:53:07 AM](https://bitcointalk.org/index.php?topic=648.msg9147#msg9147)Looks like we're triggering a compiler bug in the tree optimizer. Can you try to compile it -O0?
+> [Quote from: tcatm on August 14, 2010, 12:53:07 AM](https://bitcointalk.org/index.php?topic=648.msg9147#msg9147)
+> Looks like we're triggering a compiler bug in the tree optimizer. Can you try to compile it -O0?
+
 No help from -O0, same error.
 
 MinGW is GCC 3.4.5.  Probably the problem.

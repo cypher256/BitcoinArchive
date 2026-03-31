@@ -15,7 +15,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/449/"
 ---
 
-[Quote from: lachesis on August 10, 2010, 03:24:55 PM](https://bitcointalk.org/index.php?topic=589.msg8544#msg8544)Also, does Bitcoin open the BerkeleyDB as exclusive, precluding the need for a file lock?It does not -- did my own tests.
+> [Quote from: lachesis on August 10, 2010, 03:24:55 PM](https://bitcointalk.org/index.php?topic=589.msg8544#msg8544)
+> Also, does Bitcoin open the BerkeleyDB as exclusive, precluding the need for a file lock?It does not -- did my own tests.
+
 Is there a way to open BerkeleyDB exclusive?
 
 DB_PRIVATE is the worst of both worlds.  DB_PRIVATE is not exclusive, but it does make it get screwed up if another process tries to access it at the same time.

@@ -20,7 +20,9 @@ translationStatus: complete
 
 Windowsにmmap(2)があるとは思えない。自作のものを作ってテストするよりも、既存のファイルコピー関数を呼び出す方が良い。
 
-[Quote from: nelisky on August 27, 2010, 01:21:09 AM](https://bitcointalk.org/index.php?topic=921.msg11346#msg11346)しかし、すでにboost::filesystemの機能を使っているなら、そこからcopy_fileを使えます。ただ、すでに他の何かに必要でなければ、少しやりすぎだと思います。
+> [Quote from: nelisky on August 27, 2010, 01:21:09 AM](https://bitcointalk.org/index.php?topic=921.msg11346#msg11346)
+> しかし、すでにboost::filesystemの機能を使っているなら、そこからcopy_fileを使えます。ただ、すでに他の何かに必要でなければ、少しやりすぎだと思います。
+
 ありがとう。どこかにあるだろうと思っていた。
 
 すでに十数箇所でboost::filesystemを使っている。新たに追加される依存関係ではない。そうでなければ各OSごとに#ifdefを用意してあらゆる場所でテストしなければならないような、多くのポータブルなものを提供してくれる。

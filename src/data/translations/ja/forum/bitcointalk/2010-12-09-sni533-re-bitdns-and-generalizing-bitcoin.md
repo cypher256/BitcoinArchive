@@ -18,7 +18,9 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-[Quote from: nanotube on December 09, 2010, 09:20:40 PM](https://bitcointalk.org/index.php?topic=1790.msg28700#msg28700)マイナーは基本的に「余分な作業」をしなければならないようです。そして、その余分な作業（もちろん、メインのbitcoin作業を遅くします）からbitdnsマイニングの報酬がないなら、マイナーがbitdns（およびその他のサイドチェーン）を含めるインセンティブは何でしょうか？
+> [Quote from: nanotube on December 09, 2010, 09:20:40 PM](https://bitcointalk.org/index.php?topic=1790.msg28700#msg28700)
+> マイナーは基本的に「余分な作業」をしなければならないようです。そして、その余分な作業（もちろん、メインのbitcoin作業を遅くします）からbitdnsマイニングの報酬がないなら、マイナーがbitdns（およびその他のサイドチェーン）を含めるインセンティブは何でしょうか？
+
 インセンティブは、同じ作業で追加のサイドチェーンからも報酬を得ることだ。
 
 ビットコインを生成している間に、*同じ作業*で無料のドメイン名も得られるのに、なぜそうしないのか？

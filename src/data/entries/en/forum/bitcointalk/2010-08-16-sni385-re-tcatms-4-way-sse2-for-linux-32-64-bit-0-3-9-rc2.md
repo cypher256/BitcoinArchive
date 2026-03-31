@@ -17,7 +17,9 @@ threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 threadPosition: 5
 ---
 
-[Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](https://bitcointalk.org/index.php?topic=820.msg9660#msg9660)try -march=amdfam10
+> [Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](https://bitcointalk.org/index.php?topic=820.msg9660#msg9660)
+> try -march=amdfam10
+
 That works.
 
 That's strange...  are we sure that's the same thing?  tcatm, try amdfam10 and make sure you get the same speed measurement.

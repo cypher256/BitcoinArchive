@@ -17,7 +17,8 @@ threadId: "bt-questions-about-addresses"
 threadPosition: 3
 ---
 
-[Quote from: Sabunir on February 05, 2010, 05:31:30 PM](https://bitcointalk.org/index.php?topic=34.msg246#msg246)Perhaps there should be a feature against this? For instance, if a transaction isn't accepted by the recipient for a long period of time (a month?), the transaction will be canceled and the coins returned to the one who sent them?
+> [Quote from: Sabunir on February 05, 2010, 05:31:30 PM](https://bitcointalk.org/index.php?topic=34.msg246#msg246)
+> Perhaps there should be a feature against this? For instance, if a transaction isn't accepted by the recipient for a long period of time (a month?), the transaction will be canceled and the coins returned to the one who sent them?
 
 That's not possible.  You've handed control of the money over to the recipient's keypair.  Only that key can control it.
 

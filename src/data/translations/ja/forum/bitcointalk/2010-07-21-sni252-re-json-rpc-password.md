@@ -18,7 +18,9 @@ threadPosition: 6
 translationStatus: complete
 ---
 
-[Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](https://bitcointalk.org/index.php?topic=461.msg4709#msg4709)Debianシステムの/etc内の20個の.confファイルを簡単に調査したところ:
+> [Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](https://bitcointalk.org/index.php?topic=461.msg4709#msg4709)
+> Debianシステムの/etc内の20個の.confファイルを簡単に調査したところ:
+
  1ファイルが"key value"を使用
  5ファイルが"key=value"を使用
 調査ありがとう！

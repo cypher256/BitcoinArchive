@@ -17,7 +17,9 @@ threadId: "bt-bitcoin-x86-for-windows"
 threadPosition: 2
 ---
 
-[Quote from: Olipro on July 26, 2010, 01:04:41 PM](https://bitcointalk.org/index.php?topic=572.msg5851#msg5851)Crypto++ 5.6.0: [http://www.cryptopp.com/](http://www.cryptopp.com/)
+> [Quote from: Olipro on July 26, 2010, 01:04:41 PM](https://bitcointalk.org/index.php?topic=572.msg5851#msg5851)
+> Crypto++ 5.6.0: [http://www.cryptopp.com/](http://www.cryptopp.com/)
+
 Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32) (although I'm pretty sure this is publically submitted elsewhere, I was linked to it on IRC)
 I added the cached SHA256 state idea to the SVN, rev 113.  The speedup is about 70%.  I credited it to tcatm based on your post in the x64 thread. 
 

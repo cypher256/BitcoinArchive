@@ -17,5 +17,7 @@ threadId: "bt-0-3-1-release-candidate-please-test"
 threadPosition: 6
 ---
 
-[Quote from: db on July 15, 2010, 08:39:08 PM](https://bitcointalk.org/index.php?topic=383.msg3278#msg3278)The listreceivedbyaddress and getreceivedbyaddress commands are duplicated in bincoind help. (Same in 0.3.0.)
+> [Quote from: db on July 15, 2010, 08:39:08 PM](https://bitcointalk.org/index.php?topic=383.msg3278#msg3278)
+> The listreceivedbyaddress and getreceivedbyaddress commands are duplicated in bincoind help. (Same in 0.3.0.)
+
 Yes a bug.  It'll have to be fixed in the next version.

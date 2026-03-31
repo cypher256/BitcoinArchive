@@ -626,8 +626,10 @@ function htmlToMarkdown(html) {
     .replace(/<\/p>/gi, '\n\n')
     .replace(/<p[^>]*>/gi, '')
     .replace(/<a\s+href="([^"]*)"[^>]*>(.*?)<\/a>/gi, '[$2]($1)')
-    .replace(/<blockquote[^>]*>/gi, '\n> ')
-    .replace(/<\/blockquote>/gi, '\n')
+    .replace(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/gi, (_, inner) => {
+      const lines = inner.trim().split('\n').map(l => `> ${l}`).join('\n');
+      return `\n${lines}\n\n`;
+    })
     .replace(/<pre[^>]*>(.*?)<\/pre>/gis, '\n```\n$1\n```\n')
     .replace(/<code[^>]*>(.*?)<\/code>/gi, '`$1`')
     .replace(/<strong[^>]*>(.*?)<\/strong>/gi, '**$1**')

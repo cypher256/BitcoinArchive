@@ -16,7 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-[Quote from: BitLex on September 07, 2010, 08:10:54 PM](https://bitcointalk.org/index.php?topic=955.msg12189#msg12189)AMD X3 @2.8ghz
+> [Quote from: BitLex on September 07, 2010, 08:10:54 PM](https://bitcointalk.org/index.php?topic=955.msg12189#msg12189)
+> AMD X3 @2.8ghz
+
 ->標準クライアント
 ~3800khs ~150ワット
 -4wayを試したか？

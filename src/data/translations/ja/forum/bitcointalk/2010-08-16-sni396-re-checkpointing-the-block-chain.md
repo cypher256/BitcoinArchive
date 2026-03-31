@@ -18,5 +18,7 @@ threadPosition: 3
 translationStatus: complete
 ---
 
-[Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](https://bitcointalk.org/index.php?topic=834.msg9839#msg9839)チェーンの強度はどのように計算されるのですか？
+> [Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](https://bitcointalk.org/index.php?topic=834.msg9839#msg9839)
+> チェーンの強度はどのように計算されるのですか？
+
 合計プルーフ・オブ・ワークだ。

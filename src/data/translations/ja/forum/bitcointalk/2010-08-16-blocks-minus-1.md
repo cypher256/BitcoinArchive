@@ -28,7 +28,8 @@ translationStatus: complete
 ここで起きた混乱を軽減できるだろう：
 
 <!-- tone-skip -->
-[Quote from: kencausey on August 15, 2010, 11:45:26 PM](https://bitcointalk.org/index.php?topic=823.msg9588#msg9588)[Quote from: davidonpda on August 15, 2010, 11:31:37 PM](https://bitcointalk.org/index.php?topic=823.msg9580#msg9580)... すでにブロック74638にいます。そのブロックは今は正しいものだということでしょうか？
+> [Quote from: kencausey on August 15, 2010, 11:45:26 PM](https://bitcointalk.org/index.php?topic=823.msg9588#msg9588)
+> [Quote from: davidonpda on August 15, 2010, 11:31:37 PM](https://bitcointalk.org/index.php?topic=823.msg9580#msg9580)... すでにブロック74638にいます。そのブロックは今は正しいものだということでしょうか？
 
 私自身もこの件で混乱があり、#bitcoin-devで明確化してもらいました：
 

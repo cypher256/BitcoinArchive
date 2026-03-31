@@ -18,5 +18,7 @@ threadPosition: 9
 translationStatus: complete
 ---
 
-[Quote from: gavinandresen on July 23, 2010, 03:11:45 PM](https://bitcointalk.org/index.php?topic=461.msg5296#msg5296)皆さんへの質問: HTTPベーシック認証の詳細なやり方を説明するセクションをWikiページに追加すべきでしょうか？PHPとPythonでは本当に簡単です -- [http://user:pass@host:port/](http://user:pass@host:port/) のURL構文を使うだけです。
+> [Quote from: gavinandresen on July 23, 2010, 03:11:45 PM](https://bitcointalk.org/index.php?topic=461.msg5296#msg5296)
+> 皆さんへの質問: HTTPベーシック認証の詳細なやり方を説明するセクションをWikiページに追加すべきでしょうか？PHPとPythonでは本当に簡単です -- [http://user:pass@host:port/](http://user:pass@host:port/) のURL構文を使うだけです。
+
 はい、各開発者が自分で調べなくて済むように、それは本当に良いと思う。Python、PHP、Javaそれぞれでjson-rpcライブラリをインポートしてgetinfoなどを実行する簡単な例が必要だ。HTTP認証部分も含めて。

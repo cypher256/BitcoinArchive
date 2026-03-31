@@ -19,7 +19,8 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-[Quote from: teknohog on September 09, 2010, 07:32:05 PM](https://bitcointalk.org/index.php?topic=1007.msg12336#msg12336)CallCPUID関数にx86アセンブラが含まれているため、他のアーキテクチャでビルドが壊れます。main.cppの2770行目を以下に変更しました
+> [Quote from: teknohog on September 09, 2010, 07:32:05 PM](https://bitcointalk.org/index.php?topic=1007.msg12336#msg12336)
+> CallCPUID関数にx86アセンブラが含まれているため、他のアーキテクチャでビルドが壊れます。main.cppの2770行目を以下に変更しました
 
 #if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)
 

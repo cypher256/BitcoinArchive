@@ -16,7 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-[Quote from: NewLibertyStandard on July 17, 2010, 10:22:09 PM](https://bitcointalk.org/index.php?topic=419.msg3817#msg3817)バージョン0.3ではポートフォワーディングされていないクライアントの外向き接続数を15から8に減らす予定でしたが、実際には実現しなかったと思います。確信はありません。間違っていたら訂正してください。
+> [Quote from: NewLibertyStandard on July 17, 2010, 10:22:09 PM](https://bitcointalk.org/index.php?topic=419.msg3817#msg3817)
+> バージョン0.3ではポートフォワーディングされていないクライアントの外向き接続数を15から8に減らす予定でしたが、実際には実現しなかったと思います。確信はありません。間違っていたら訂正してください。
+
 0.3.0では、8への変更はWindows版にのみ反映され、他のバージョンはまだ15のままだった。
 
 0.3.2にアップグレードしてほしい。現在利用可能だ。
