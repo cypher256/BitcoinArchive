@@ -11,7 +11,7 @@ participants:
 description: "Satoshi discourages the Bitcoin community from actively seeking WikiLeaks adoption, arguing that Bitcoin is still immature and the attention could be harmful."
 isSatoshi: true
 threadId: "bitcointalk-1735-wikileaks-cia"
-threadPosition: 3
+threadPosition: 2
 tags:
   - "wikileaks"
   - "adoption"

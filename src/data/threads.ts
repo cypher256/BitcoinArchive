@@ -10,8 +10,12 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     ja: 'ビットコイン：P2P通貨のオープンソース実装',
   },
   'bitcointalk-1735-wikileaks-cia': {
-    en: 'WikiLeaks, the CIA, and the End of the Beginning',
-    ja: 'WikiLeaks、CIA、そして始まりの終わり',
+    en: 'WikiLeaks and the End of the Beginning',
+    ja: 'WikiLeaksと始まりの終わり',
+  },
+  'bitcointalk-6652-gavin-cia': {
+    en: 'Gavin will visit the CIA',
+    ja: 'ギャビン、CIAを訪問予定',
   },
   'bt-alert-upgrade-to-0-3-6-asap': {
     en: '*** ALERT *** Upgrade to 0.3.6 ASAP!',
