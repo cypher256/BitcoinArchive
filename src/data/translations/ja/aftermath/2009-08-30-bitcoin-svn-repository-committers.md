@@ -35,7 +35,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-BitcoinがGitHubに移行する以前、すべての開発はSourceForgeでホストされたSubversion（SVN）リポジトリで行われていた。リポジトリは2009年8月30日に作成され、2011年9月13日の最終コミットまでに252リビジョンが記録された。このリポジトリにコードをコミットしたのは、わずか4人だった。
+Bitcoinが[GitHubに移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)以前、すべての開発はSourceForgeでホストされたSubversion（SVN）リポジトリで行われていた。リポジトリは2009年8月30日に作成され、2011年9月13日の最終コミットまでに252リビジョンが記録された。このリポジトリにコードをコミットしたのは、わずか4人だった。
 
 **SVN以前：**
 サトシ・ナカモトはSVNリポジトリが存在する前、SourceForge上で`.rar`アーカイブとしてソースコードを配布していた。SourceForgeプロジェクトは2008年11月9日に登録され、Bitcoin v0.1は2009年1月9日にリリースされた。最初の8ヶ月間、ソースコードはバージョン管理システムではなく、ダウンロード可能なアーカイブとして配布されていた。

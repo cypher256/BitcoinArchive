@@ -34,7 +34,7 @@ secondarySources:
     url: "https://github.com/research-note/bitcoin-legacy"
 ---
 
-Before Bitcoin moved to GitHub, all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.
+Before Bitcoin [moved to GitHub](/BitcoinArchive/en/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.
 
 **Prior to SVN:**
 Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceForge before the SVN repository existed. The SourceForge project was registered on November 9, 2008, and Bitcoin v0.1 was released on January 9, 2009. For the first eight months, source code was distributed as downloadable archives rather than through version control.
