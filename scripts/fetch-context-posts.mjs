@@ -63,14 +63,19 @@ function extractTopic(url) {
   return m ? m[1] : null;
 }
 
-/** Extract quoted msg IDs from markdown body */
+/** Extract quoted msg IDs and their topics from markdown body */
 function extractQuotedMsgIds(body) {
   if (!body) return [];
   const ids = [];
-  const re = /\[Quote from:.*?\]\(https?:\/\/bitcointalk\.org\/index\.php\?topic=\d+\.msg(\d+)/g;
+  // Match both external URLs and internal anchors
+  const re1 = /\[Quote from:.*?\]\(https?:\/\/bitcointalk\.org\/index\.php\?topic=(\d+)\.msg(\d+)/g;
+  const re2 = /\[Quote from:.*?\]\(#msg(\d+)/g;
   let m;
-  while ((m = re.exec(body)) !== null) {
-    ids.push(m[1]);
+  while ((m = re1.exec(body)) !== null) {
+    ids.push({ msgId: m[2], topic: m[1] });
+  }
+  while ((m = re2.exec(body)) !== null) {
+    ids.push({ msgId: m[1], topic: null });
   }
   return ids;
 }
@@ -280,18 +285,32 @@ async function main() {
     })();
 
     // Collect all msg IDs we need to check (for "3 before" we need the page)
-    // Also collect quoted msg IDs
+    // Also collect quoted msg IDs, tracking cross-topic quotes separately
     const quotedMsgIds = new Set();
+    const crossTopicQuotes = new Map(); // msgId -> topicNum (for quotes from other topics)
     for (const sp of satoshiPosts) {
-      for (const qid of sp.quotedMsgIds) {
-        if (!existingMsgIds.has(qid)) quotedMsgIds.add(qid);
+      for (const q of sp.quotedMsgIds) {
+        if (!existingMsgIds.has(q.msgId)) {
+          quotedMsgIds.add(q.msgId);
+          if (q.topic && q.topic !== topicNum) {
+            crossTopicQuotes.set(q.msgId, q.topic);
+          }
+        }
       }
     }
 
     // Fetch pages containing Satoshi's posts to find "3 before"
     const satoshiMsgIds = satoshiPosts.map(sp => sp.msgId);
-    const allNeededPageMsgIds = [...satoshiMsgIds, ...quotedMsgIds];
-    const threadPosts = await fetchThreadPosts(topicNum, allNeededPageMsgIds);
+    const sameTopicMsgIds = [...satoshiMsgIds, ...[...quotedMsgIds].filter(id => !crossTopicQuotes.has(id))];
+    const threadPosts = await fetchThreadPosts(topicNum, sameTopicMsgIds);
+
+    // Fetch cross-topic quoted posts
+    for (const [msgId, quoteTopic] of crossTopicQuotes) {
+      const crossPosts = await fetchThreadPosts(quoteTopic, [msgId]);
+      for (const [id, post] of crossPosts) {
+        threadPosts.set(id, post);
+      }
+    }
 
     // Build ordered list of all posts we found
     const orderedPosts = [...threadPosts.values()]
@@ -319,13 +338,13 @@ async function main() {
       }
 
       // Quoted posts
-      for (const qid of sp.quotedMsgIds) {
-        if (existingMsgIds.has(qid)) continue;
-        const post = threadPosts.get(qid);
+      for (const q of sp.quotedMsgIds) {
+        if (existingMsgIds.has(q.msgId)) continue;
+        const post = threadPosts.get(q.msgId);
         if (post) {
-          neededPosts.set(qid, { post, reason: `quoted by msg${sp.msgId}` });
+          neededPosts.set(q.msgId, { post, reason: `quoted by msg${sp.msgId}`, quoteTopic: q.topic || topicNum });
         } else {
-          console.log(`  WARNING: Quoted msg${qid} not found (may be on different page)`);
+          console.log(`  WARNING: Quoted msg${q.msgId} not found (may be on different page)`);
         }
       }
     }
