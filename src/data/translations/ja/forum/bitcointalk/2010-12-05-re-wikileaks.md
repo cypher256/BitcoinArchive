@@ -22,7 +22,9 @@ translationStatus: complete
 ---
 
 > [Quote from: RHorning on December 04, 2010, 10:17:44 PM](#msg26876)
-> Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
+> 要するに、かかってこい。WikiLeaksにBitcoinの使用を勧めよう。その行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。
+> -- Robert S. Horning
+> ユタ州ローガン
 
 違う、挑発するな。
 

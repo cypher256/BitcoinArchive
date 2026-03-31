@@ -22,7 +22,7 @@ translationStatus: complete
 Bitcoinの場合も同じだと思う。Bitcoinによって可能になる取引の有用性は、使用される電力のコストをはるかに上回るだろう。したがって、Bitcoinを*持たない*ことこそが正味の無駄になるだろう。
 
 > [Quote from: gridecon on August 06, 2010, 04:48:00 PM](#msg7889)
-> As an overall point, I also do not agree with the idea that the very high computational burden of coin generation is in fact a necessity of the current system. As I understand it, currency creation is fundamentally metered by TIME - and if that is the fundamental controlling variable, what is the need for everyone to "roll as many dice as posible" within that given time period? The "chain of proof" for coin ownership and transactions doesn't depend on the method for spawning coins. 
+> 全体的なポイントとして、コイン生成の非常に高い計算負荷が現行システムの必然であるという考えにも賛同しない。私の理解では、通貨の創造は基本的に時間によって制御されている。そしてそれが基本的な制御変数であるなら、与えられた時間内に全員が「できるだけ多くのサイコロを振る」必要性は何なのか？コインの所有権と取引の「証明の連鎖」は、コインの生成方法に依存していない。
 
 各ノードのネットワークへの影響力はCPUパワーに比例する。ネットワークにどれだけのCPUパワーを持っているかを示す唯一の方法は、実際にそれを使うことだ。
 

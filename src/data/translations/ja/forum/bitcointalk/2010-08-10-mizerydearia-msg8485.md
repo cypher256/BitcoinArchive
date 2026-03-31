@@ -16,6 +16,6 @@ translationStatus: complete
 ---
 
 > [Quote from: Ground Loop on August 10, 2010, 03:38:23 AM](https://bitcointalk.org/index.php?topic=765.msg8464#msg8464)
-> Hah!  This sure helps explain a long-standing mystery.. why my 10,000 khash/sec Linux 64-bit machine is the only one that has never, in two weeks, generated a block.
+> ハッ！これで長年の謎が解けた……なぜ自分の10,000 khash/secのLinux 64ビットマシンだけが、2週間経っても一度もブロックを生成しなかったのか。
 
 君だけじゃない。自分も1ヶ月以上生成できていない。

@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 > [Quote from: Odin on October 22, 2010, 09:24:38 PM](#msg18105)
->   Fault Module Name:   mingwm10.dll
+>   障害モジュール名：   mingwm10.dll
 
 これが重要な手がかりだ。そこでクラッシュしたということだと思う。他のバージョンを試してみることもできるかもしれない。mingwm10.dllはマルチスレッドアプリのコールバック要件を満たすための単純なプレースホルダーだ。
 

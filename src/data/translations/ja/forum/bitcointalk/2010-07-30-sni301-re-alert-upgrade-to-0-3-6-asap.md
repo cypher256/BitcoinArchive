@@ -18,7 +18,10 @@ translationStatus: complete
 ---
 
 > [Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
-> So that last command should simply be
+> つまり、最後のコマンドは単純に
+> **sudo apt-get install libboost1.37-dev**
+> とすべきだ。
+> 余談だが、Ubuntu 64ビットシステムでコンパイルしたので、完成したプログラムは64ビット対応になった。いくつかの64ビットシステムでテスト中だ。
 
 **sudo apt-get install libboost1.37-dev**
 にすればいい

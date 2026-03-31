@@ -18,7 +18,11 @@ translationStatus: complete
 ---
 
 > [Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
-> If I figure out that Public Key 123456 generates Hash ABCD
+> 公開鍵123456がハッシュABCDを生成すると判明し、
+> そして
+> 公開鍵654321もハッシュABCDを生成するとわかったとしても、
+> 秘密鍵はまだわからない。
+> しかし君の言っていることからすると、公開鍵654321さえあれば、公開鍵123456のふりをしてコインを使える。
 
 かつ
 公開鍵654321もハッシュABCDを生成するとわかったとしても、

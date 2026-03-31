@@ -18,7 +18,10 @@ translationStatus: complete
 ---
 
 > [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](#msg21899)
-> Of course, if the network is not being flooded and you're not overly concerned about the current transaction getting held up then it's probably worth preferring to use your 0 conf transactions so that you can "save" the higher priority coins for when the network **is** being flooded.
+> もちろん、ネットワークがフラッディングされておらず、現在のトランザクションが保留されることをあまり心配していないのであれば、0確認トランザクションを優先的に使い、より高い優先度のコインをネットワークが**実際に**フラッディングされている時のために「温存」する方が良いだろう。
+> 自分の理解が間違っていなければ、現在のロジックは古いトランザクションの蓄積された優先度を消費しやすいように見える。些細な点ではあるが。
+> 上の自分の投稿で述べたように、最近回転させた1000 BTC程度を含めて優先度を引き上げるというシステムの悪用は、もちろんまだ可能だ！
+> ByteCoin
 
 次のブロックの前にフラッド攻撃が来る場合に備えて、少なくともある程度の優先度は使うべきだ。
 
