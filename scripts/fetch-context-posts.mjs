@@ -142,7 +142,9 @@ function parseForumDate(str) {
   if (!str) return '';
   try {
     // "December 05, 2010, 09:08:08 AM" -> ISO
-    const d = new Date(str.replace(/,\s*(\d{1,2}:\d{2}:\d{2})/, ' $1'));
+    // BitcoinTalk displays times in UTC
+    const cleaned = str.replace(/,\s*(\d{1,2}:\d{2}:\d{2})/, ' $1');
+    const d = new Date(cleaned + ' UTC');
     if (isNaN(d.getTime())) return '';
     return d.toISOString();
   } catch { return ''; }
