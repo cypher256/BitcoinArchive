@@ -17,7 +17,9 @@ threadId: "bt-command-line-and-json-rpc"
 translationStatus: complete
 ---
 
-[theymosの2010年2月24日 03:07:37 AMの投稿より引用](#msg467)[satoshiの2010年2月23日 10:15:41 PMの投稿より引用](#msg452)LinuxではGTK2.0-0がインストールされている必要があります。
+> [Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
+> [Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)LinuxではGTK2.0-0がインストールされている必要があります。
+
 この要件はいつか解消されますか？GTKを扱いたくないのですが。
 GTKを「扱う」のに実際どれくらいの手間がかかるのだろうか？「sudo apt-get install libgtk2.0-0」をして、いくつかの余分なライブラリが置いてあるだけの問題ではないか？GTKは何もする必要はなく、ただそこにあればBitcoinが起動時にリンクでき、GUIがないためgtk-init-checkの呼び出しが失敗して、それで終わりだ。
 

@@ -17,7 +17,10 @@ threadId: "bt-a-few-suggestions"
 translationStatus: complete
 ---
 
-[madhatter2の2009年12月12日 06:34:21 AMの投稿より引用](https://bitcointalk.org/index.php?topic=12.msg51#msg51)SVN 0.2をMac OS X 10.4.11/Intelでほぼコンパイルできるようになりました（PPC970マシンもあるのでPPCビルドも可能です）。ウィンドウシステムはwxwidgets経由のネイティブCarbonです！高速です！新しいmakefile（makefile.osx、もちろんmakefile.unixベース... autoconfの使用を検討したことはありますか？）を作成し、header.hにいくつかのifdefを追加しなければなりませんでした。パッチがあります。引き続きいじってみます。次はFreeBSDで試すかもしれません。
+<!-- tone-skip -->
+> [Quote from: madhatter2 on December 12, 2009, 06:34:21 AM](https://bitcointalk.org/index.php?topic=12.msg51#msg51)
+> SVN 0.2をMac OS X 10.4.11/Intelでほぼコンパイルできるようになりました（PPC970マシンもあるのでPPCビルドも可能です）。ウィンドウシステムはwxwidgets経由のネイティブCarbonです！高速です！新しいmakefile（makefile.osx、もちろんmakefile.unixベース... autoconfの使用を検討したことはありますか？）を作成し、header.hにいくつかのifdefを追加しなければなりませんでした。パッチがあります。引き続きいじってみます。次はFreeBSDで試すかもしれません。
+<!-- /tone-skip -->
 Macサポートは良いな。wxWidgetsはクロスプラットフォームで本当に効果を発揮している。
 
 PPCは試さないでほしい。PPCはビッグエンディアンで、Bitcoinはリトルエンディアンだ。バイトスワップの可能性があるノードが存在すると、ネットワークのデバッグが困難になる無限のエンディアンバグが発生する。いずれにせよPPCは衰退途上だ。

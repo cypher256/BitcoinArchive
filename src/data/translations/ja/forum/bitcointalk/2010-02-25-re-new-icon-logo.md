@@ -17,7 +17,10 @@ threadId: "bt-new-icon-logo"
 translationStatus: complete
 ---
 
-[Sabunirの2010年2月25日 01:47:56 AMの投稿より引用](https://bitcointalk.org/index.php?topic=64.msg519#msg519)気に入りました。もっと高解像度のものはありますか？
+<!-- tone-skip -->
+> [Quote from: Sabunir on February 25, 2010, 01:47:56 AM](https://bitcointalk.org/index.php?topic=64.msg519#msg519)
+> 気に入りました。もっと高解像度のものはありますか？
+<!-- /tone-skip -->
 はい、オリジナルは546x531ピクセルだ。
 
 大きいサイズでも見栄えが良いが、普段常に目にするのは小さいアイコンなので、まずそれで判断したかったのだ。後で大きいサイズとフルサイズを投稿する。

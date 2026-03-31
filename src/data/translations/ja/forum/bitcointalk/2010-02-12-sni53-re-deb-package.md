@@ -17,7 +17,8 @@ threadId: "bt-deb-package"
 translationStatus: complete
 ---
 
-[soultcerの2010年2月12日 02:31:50 PMの投稿より引用](https://bitcointalk.org/index.php?topic=49.msg321#msg321)必要でしたら、コンパイル済みバイナリを提供できますよ。
+> [Quote from: soultcer on February 12, 2010, 02:31:50 PM](https://bitcointalk.org/index.php?topic=49.msg321#msg321)
+> 必要でしたら、コンパイル済みバイナリを提供できますよ。
 
 何か見落としているだろうか？bitcoin.orgの32ビットLinuxプリコンパイル済みバイナリに問題があるか？
 

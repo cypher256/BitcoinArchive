@@ -17,7 +17,10 @@ threadId: "bt-uri-scheme-for-bitcoin"
 translationStatus: complete
 ---
 
-[Karmicads、2010年5月1日 午前6:06:53の引用](#msg1038)FreenetのURIはこのようになっています:
+<!-- tone-skip -->
+> [Quote from: Karmicads on May 01, 2010, 06:06:53 AM](#msg1038)
+> FreenetのURIはこのようになっています:
+<!-- /tone-skip -->
 
 [http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf](http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf)
 
@@ -26,7 +29,10 @@ translationStatus: complete
 
 BitcoinはJSON-RPCのポート8332と同様に、ローカルループバックのポート8330で応答できる。HTTP応答を返すことになる。
 
-[DataWraith、2010年5月2日 午前11:13:09の引用](https://bitcointalk.org/index.php?topic=55.msg1045#msg1045)ビットコインリンクは、magnet:よりもmailto:に近いものであるべきだと思います。
+<!-- tone-skip -->
+> [Quote from: DataWraith on May 02, 2010, 11:13:09 AM](https://bitcointalk.org/index.php?topic=55.msg1045#msg1045)
+> ビットコインリンクは、magnet:よりもmailto:に近いものであるべきだと思います。
+<!-- /tone-skip -->
 
 それは可能だと思う。
 

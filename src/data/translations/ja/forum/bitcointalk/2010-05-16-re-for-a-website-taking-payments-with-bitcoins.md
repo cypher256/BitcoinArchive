@@ -16,6 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-[Xunie、2010年5月14日 午後9:52:53の引用](https://bitcointalk.org/index.php?topic=129.msg1124#msg1124)ユーザーがプロキシを使用している間はIPトランザクションを無効にすることを提案します！
+<!-- tone-skip -->
+> [Quote from: Xunie on May 14, 2010, 09:52:53 PM](https://bitcointalk.org/index.php?topic=129.msg1124#msg1124)
+> ユーザーがプロキシを使用している間はIPトランザクションを無効にすることを提案します！
+<!-- /tone-skip -->
 安全のために。
 それは良いアイデアだ。少なくとも、IPに接続して情報を平文で送信することを説明する警告ダイアログを表示し、キャンセルの機会を与えるべきだ。

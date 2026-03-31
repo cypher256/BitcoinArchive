@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 > [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
-> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
+> Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM
 
 言い忘れていたが、64ビットAMDでは検出がうまくいかないのではないかと思っていた。信じがたいことだが、AMDは64ビットモードで異なるモデル番号を報告する。
 
