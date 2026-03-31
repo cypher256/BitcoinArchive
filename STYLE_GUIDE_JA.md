@@ -163,6 +163,37 @@ When adding a new participant or changing a tone rule, update
 `scripts/check-ja-tone.mjs` first — it is the single source of truth for
 automated checks.
 
+### Tone Annotations
+
+The tone checker supports HTML comment annotations in markdown body text to
+handle cases where the default author-based tone rule doesn't apply:
+
+| Annotation | Effect |
+|------------|--------|
+| `<!-- tone-skip -->` | Start skipping tone checks (for quoted text, code, editorial narrative) |
+| `<!-- /tone-skip -->` | Resume tone checking |
+| `<!-- speaker: Hal Finney -->` | Override speaker for subsequent lines (use when quoting another person inline) |
+| `<!-- speaker: reset -->` | Reset speaker to the frontmatter author |
+
+Use `tone-skip` for content that is not authored by the entry's author:
+forwarded emails, third-party quotes not in blockquotes, documentation
+excerpts, or UI text examples. Every `tone-skip` should have a clear reason —
+do not use it to silence genuine violations.
+
+Use `speaker:` when one entry contains inline text by a different person
+(e.g., Satoshi quoting Hal's words without blockquote formatting).
+
+### Running the Tone Checker
+
+```bash
+npm run check:ja-tone
+```
+
+This must pass with 0 violations before committing Japanese translations.
+The checker flags lines where detected tone doesn't match the character rule.
+Review each flag — some may be false positives (code, URLs, proper nouns
+ending in です/ます patterns).
+
 ## Voice Do / Don't
 
 - Do keep differences in politeness, bluntness, and warmth when they are
