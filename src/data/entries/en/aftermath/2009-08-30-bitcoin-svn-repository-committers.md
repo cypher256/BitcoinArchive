@@ -16,6 +16,7 @@ participants:
     slug: "gavin-andresen"
 description: "Complete record of all four developers who had commit access to Bitcoin's SourceForge SVN repository. 252 revisions were recorded from August 30, 2009 to September 13, 2011."
 isSatoshi: true
+featured: true
 tags:
   - "sourceforge"
   - "svn"

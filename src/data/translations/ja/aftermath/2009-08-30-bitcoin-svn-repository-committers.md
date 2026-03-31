@@ -16,6 +16,7 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinのSourceForge SVNリポジトリにコミット権を持っていた全4名の開発者の完全な記録。2009年8月30日から2011年9月13日までの252リビジョンを網羅。"
 isSatoshi: true
+featured: true
 tags:
   - "sourceforge"
   - "svn"

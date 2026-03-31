@@ -20,6 +20,7 @@ participants:
     slug: "nils-schneider"
 description: "BitcoinのSourceForge SVNからGitHubへの移行と、2011年にGitHubリポジトリへのコミットアクセスを付与された開発者の時系列記録。"
 isSatoshi: false
+featured: true
 tags:
   - "github"
   - "repository"
