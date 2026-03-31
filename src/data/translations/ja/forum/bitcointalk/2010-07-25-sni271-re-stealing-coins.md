@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 > [Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
-> 公開鍵123456がハッシュABCDを生成し、
+> If I figure out that Public Key 123456 generates Hash ABCD
 
 かつ
 公開鍵654321もハッシュABCDを生成するとわかったとしても、

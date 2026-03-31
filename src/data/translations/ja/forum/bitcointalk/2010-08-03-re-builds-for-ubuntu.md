@@ -16,7 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 > [Quote from: nimnul on August 03, 2010, 05:51:15 PM](https://bitcointalk.org/index.php?topic=454.msg7282#msg7282)
 > SatoshiのnoWxパッチはもう0.3.7に入っていますか？ それ以前のbitcoindはwxが必要で、Satoshiがtrunkに入ったと発表するのを見たことがありません
+<!-- /tone-skip -->
 
 はい、0.3.7に入っている。rev 112だった。

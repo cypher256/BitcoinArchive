@@ -17,8 +17,10 @@ threadId: "bt-0-3-1-release-candidate-please-test"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 > [Quote from: knightmb on July 15, 2010, 08:15:46 PM](https://bitcointalk.org/index.php?topic=383.msg3274#msg3274)
 > Linuxクライアント（64ビット）では、「閉じる時に最小化」がまだトレイに最小化します（しばらくするとトレイアイコンを複数生成してXサーバーがハングします）。
+<!-- /tone-skip -->
 
 最初の投稿をこの修正を含むLinux用rc2へのリンクで更新した。修正されているか確認してほしい。ありがとう！
 

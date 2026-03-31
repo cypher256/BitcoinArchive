@@ -20,6 +20,8 @@ translationStatus: complete
 大規模なメルトダウンからの復旧方法に関する同様の質問への回答がこちらだ。
 [https://www.bitcoin.org/smf/index.php?topic=191.msg1585#msg1585](https://www.bitcoin.org/smf/index.php?topic=191.msg1585#msg1585)
 
+<!-- tone-skip -->
 [satoshi、2010年6月14日 午後8:39:50の引用](/BitcoinArchive/entries/forum/bitcointalk/2010-06-17-re-bitcoin-generation/)もしSHA-256が完全に破られた場合、問題が始まる前の正直なブロックチェーンが何であったかについて合意に達し、それを固定して新しいハッシュ関数で継続できると思います。
+<!-- /tone-skip -->
 
 ハッシュの崩壊が徐々に起きた場合は、秩序立った方法で新しいハッシュに移行できるだろう。ソフトウェアは特定のブロック番号以降に新しいハッシュを使い始めるようにプログラムされる。その時までに全員がアップグレードする必要がある。ソフトウェアは古いブロックの新しいハッシュを保存して、同じ古いハッシュを持つ別のブロックが使用されないようにすることができる。

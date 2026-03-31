@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 > [Quote from: lachesis on August 10, 2010, 03:24:55 PM](https://bitcointalk.org/index.php?topic=589.msg8544#msg8544)
-> また、BitcoinはBerkeleyDBを排他的に開き、ファイルロックの必要性を排除していますか？そうではありません -- 自分でテストしました。
+> また、BitcoinはBerkeleyDBを排他的に開き、ファイルロックの必要性を排除しているのか？そうではない -- 自分でテストした。
 
 BerkeleyDBを排他的に開く方法はあるか？
 

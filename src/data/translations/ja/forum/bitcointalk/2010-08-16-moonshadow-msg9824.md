@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 > [Quote from: mkrogh on August 16, 2010, 08:54:47 PM](#msg9822)
-> ソフトウェアは単純に1000ブロック前にチェックポイントがあると宣言すればいい。これは各ノードの個別のチェックポイントであり、新しいブロックが到着するたびにチェックポイントは前進する。チェックポイントは決して後退しない。
+> The software could just declare that there is a checkpoint 1000 blocks back. This is an individual checkpoint for each node, and the checkpoints would move forward every time a new block arrives. The checkpoint could never move backwards.
 > 
 > チェックポイントより前の、より長いチェーンが到着した場合、ノードはそれを拒否する。
 

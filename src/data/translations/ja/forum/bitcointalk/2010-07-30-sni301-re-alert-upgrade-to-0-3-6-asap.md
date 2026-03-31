@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 > [Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
-> つまり最後のコマンドは単に
+> So that last command should simply be
 
 **sudo apt-get install libboost1.37-dev**
 にすればいい

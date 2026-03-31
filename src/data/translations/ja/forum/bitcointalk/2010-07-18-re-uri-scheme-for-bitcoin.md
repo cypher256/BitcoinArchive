@@ -18,12 +18,12 @@ translationStatus: complete
 ---
 
 > [Quote from: lachesis on June 16, 2010, 06:14:05 AM](#msg1597)
-> 問題を誤解していると思います。ブラウザは常に127.0.0.1にアクセスできます（IEの奇妙な設定やウイルスがない限り）。URLバーにアドレスを入力するかリンクをクリックすれば、問題なく動作します。ただし、JavaScriptを使用してドメイン間（または同じドメインの異なるポート間）でPOSTリクエストを完了することはできません。
+> I think you're misunderstanding the issue. My browser will always be able to go to 127.0.0.1 (barring some strange IE settings or a virus). If I type the address into the URL bar or click a link, it will work fine. However, it isn't possible to use Javascript to complete POST requests between domains (or ports on the same domain).
 
 私もそう思っていた。
 
 > [Quote from: sirius-m on June 16, 2010, 08:26:14 AM](#msg1598)
-> はい、クロスドメインのJavaScript呼び出しは禁止されているので、127.0.0.1に存在しないJavaScriptから127.0.0.1を呼び出すことはできません、と言いたかったのです。考えてみると、ブラウザが悪意のあるクロスドメインJavaScriptで他の人のFacebookページを変更できるとしたら、かなり笑えますね。
+> ああ、言いたかったのはクロスドメインのJavaScript呼び出しは禁止されているということだ。つまり、127.0.0.1に存在しないJavaScriptから127.0.0.1を呼び出すことはできない。考えてみれば、もしブラウザが悪意あるクロスドメインJavaScriptで他人のFacebookページを変更できたら、かなり面白いことになるだろうな。
 
 JavaScriptが127.0.0.1へのクロスドメインPOSTリクエストを実行することが可能だという報告が入ってきた。他のドメインではなく、特にそのドメインだけだ。素晴らしい……
 

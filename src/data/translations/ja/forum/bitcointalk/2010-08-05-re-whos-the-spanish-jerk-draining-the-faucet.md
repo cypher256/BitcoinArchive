@@ -29,6 +29,6 @@ translationStatus: complete
 それは驚くほどうまく機能するかもしれない。うまくいけば、レート制限に引っかかるのを防ぐが、最終防衛線としてレート制限がある。
 
 > [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](https://bitcointalk.org/index.php?topic=704.msg7575#msg7575)
-> 4. 標準の配布量を0.5 Bitcoinにする（Faucetを始めてからBitcoinの価値は10倍になりました）。
+> 4. 標準の配布量を0.5 Bitcoinにする（Faucetを始めてからBitcoinの価値は10倍になった）。
 
 間違いなく下げる時期だ。

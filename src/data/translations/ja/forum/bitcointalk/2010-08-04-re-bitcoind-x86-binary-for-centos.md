@@ -17,7 +17,9 @@ threadId: "bt-bitcoind-x86-binary-for-centos"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 > [Quote from: knightmb on August 03, 2010, 11:46:46 PM](https://bitcointalk.org/index.php?topic=685.msg7365#msg7365)
 > 2つのバージョンがあります。1つはストックコードからビルドしたもの、もう1つは最大1,000ノードを受け入れるように変更したものです（そのためスーパーノードという名前です）
+<!-- /tone-skip -->
 
 1000ノード接続版のビルドを公開しないでほしい。それを実行する人が少しでも増えると、着信接続を制限するためだけに別のリリースを出さなければならなくなる。

@@ -18,6 +18,6 @@ translationStatus: complete
 ---
 
 > [Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](#msg9839)
-> チェーンの強度はどのように計算されるのですか？
+> How is the strength of the chain calculated?
 
 合計プルーフ・オブ・ワークだ。

@@ -17,7 +17,9 @@ threadId: "bt-0-3-1-release-candidate-please-test"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 > [Quote from: db on July 15, 2010, 08:39:08 PM](https://bitcointalk.org/index.php?topic=383.msg3278#msg3278)
 > listreceivedbyaddressとgetreceivedbyaddressコマンドがbitcoindのヘルプで重複しています。（0.3.0でも同様。）
+<!-- /tone-skip -->
 
 はい、バグだ。次のバージョンで修正する必要がある。

@@ -22,7 +22,7 @@ translationStatus: complete
 ---
 
 > [Quote from: RHorning on December 04, 2010, 10:17:44 PM](#msg26876)
-> 基本的に、かかってこい。WikileaksがBitcoinを使うよう促進しよう。その行為から生じるリスクや影響を受ける覚悟はできている。
+> Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
 
 違う、挑発するな。
 
