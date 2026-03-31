@@ -36,7 +36,7 @@ On February 22, 2024, during Day 14 of the COPA v. Craig Wright trial at the UK 
 
 > "I worked on Bitcoin in the early days and as part of that I interacted with Satoshi Nakamoto, only ever by email, and we effectively worked together on the project for a brief period of time until he retreated from the project and told me he was done with it."
 
-Hearn stated that his communications with Satoshi spanned from April 12, 2009 to April 23, 2011. He had first discovered Bitcoin from a mailing list called rippleusers@googlegroups.com (unrelated to the later company Ripple), and contacted Satoshi because "there was a lot about Bitcoin that wasn't clear from the White Paper or the user interface of the app or the website."
+Hearn stated that his communications with Satoshi spanned from [April 12, 2009](/BitcoinArchive/en/entries/correspondence/mike-hearn/2009-04-12-hearn-to-satoshi-questions/) to [April 23, 2011](/BitcoinArchive/en/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/). He had first discovered Bitcoin from a mailing list called rippleusers@googlegroups.com (unrelated to the later company Ripple), and contacted Satoshi because "there was a lot about Bitcoin that wasn't clear from the White Paper or the user interface of the app or the website."
 
 **On meeting Craig Wright — the dinner (July 9, 2016):**
 
@@ -70,4 +70,4 @@ Hearn asked Wright about SIGHASH_SINGLE, a signing mode Satoshi had implemented 
 
 During cross-examination, COPA's attorney asked only one question: "Are you Satoshi Nakamoto?" Hearn laughed and denied the claim.
 
-*[The COPA v. Wright trial concluded on March 14, 2024, with Justice Mellor ruling definitively that Craig Wright is not Satoshi Nakamoto.]*
+*[The COPA v. Wright trial [concluded on March 14, 2024](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/), with Justice Mellor ruling definitively that Craig Wright is not Satoshi Nakamoto.]*

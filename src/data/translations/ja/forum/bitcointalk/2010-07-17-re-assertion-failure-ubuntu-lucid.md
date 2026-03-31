@@ -17,7 +17,7 @@ threadId: "bt-assertion-failure-ubuntu-lucid"
 translationStatus: complete
 ---
 
-> [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](https://bitcointalk.org/index.php?topic=400.msg3815#msg3815)
+> [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)
 > コインが消えましたが、最新の状態になれば戻ってくると思います。
 
 その通りだ。すべてのブロックのダウンロードが完了すれば再表示される。

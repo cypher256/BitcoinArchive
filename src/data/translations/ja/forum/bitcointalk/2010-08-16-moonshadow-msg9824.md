@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-> [Quote from: mkrogh on August 16, 2010, 08:54:47 PM](https://bitcointalk.org/index.php?topic=834.msg9822#msg9822)
+> [Quote from: mkrogh on August 16, 2010, 08:54:47 PM](#msg9822)
 > ソフトウェアは単純に1000ブロック前にチェックポイントがあると宣言すればいい。これは各ノードの個別のチェックポイントであり、新しいブロックが到着するたびにチェックポイントは前進する。チェックポイントは決して後退しない。
 > 
 > チェックポイントより前の、より長いチェーンが到着した場合、ノードはそれを拒否する。

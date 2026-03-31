@@ -17,7 +17,7 @@ threadId: "bt-bitdns-and-generalizing-bitcoin"
 translationStatus: complete
 ---
 
-> [Quote from: Hal on December 10, 2010, 07:14:04 PM](https://bitcointalk.org/index.php?topic=1790.msg28938#msg28938)
+> [Quote from: Hal on December 10, 2010, 07:14:04 PM](#msg28938)
 > 追加のブロックチェーンはそれぞれ独自のフレーバーのコインを作成し、それが取引所でビットコインと取引されるのですか？これらのチェーン固有のコインは、そのチェーンのマイナーへの報酬や、そのチェーンのドメイン内での何らかの権利や特権の購入に使われるのですか？
 
 そうだ、ドメインとビットコインの間の交換レートは変動するだろう。

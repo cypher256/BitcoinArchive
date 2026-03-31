@@ -20,7 +20,7 @@ secondarySources:
 threadId: "bt-patch-increase-block-size-limit"
 ---
 
-> [Quote from: theymos on October 03, 2010, 08:28:39 PM](https://bitcointalk.org/index.php?topic=1347.msg15126#msg15126)
+> [Quote from: theymos on October 03, 2010, 08:28:39 PM](#msg15126)
 > Applying this patch will make you incompatible with other Bitcoin clients.
 
 +1 theymos.  Don't use this patch, it'll make you incompatible with the network, to your own detriment.

@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-[madhatter2の2009年12月14日 03:01:39 PMの投稿より引用](https://bitcointalk.org/index.php?topic=12.msg66#msg66)誰かここを解説してくれませんか？
+[madhatter2の2009年12月14日 03:01:39 PMの投稿より引用](#msg66)誰かここを解説してくれませんか？
 
 g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D**__WXMAC__** -DNOPCH -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8" -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4" -I"/usr/local/ssl/include" -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch headers.h
 ……

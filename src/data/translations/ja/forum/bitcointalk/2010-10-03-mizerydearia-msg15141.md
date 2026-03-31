@@ -15,8 +15,8 @@ tags: []
 translationStatus: complete
 ---
 
-> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102)
-> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102)
+> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
+> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
 
 言い忘れていたが、64ビットAMDでは検出がうまくいかないのではないかと思っていた。信じがたいことだが、AMDは64ビットモードで異なるモデル番号を報告する。
 

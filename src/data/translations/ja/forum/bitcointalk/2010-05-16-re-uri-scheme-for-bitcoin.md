@@ -17,7 +17,7 @@ threadId: "bt-uri-scheme-for-bitcoin"
 translationStatus: complete
 ---
 
-[Karmicads、2010年5月1日 午前6:06:53の引用](https://bitcointalk.org/index.php?topic=55.msg1038#msg1038)FreenetのURIはこのようになっています:
+[Karmicads、2010年5月1日 午前6:06:53の引用](#msg1038)FreenetのURIはこのようになっています:
 
 [http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf](http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf)
 

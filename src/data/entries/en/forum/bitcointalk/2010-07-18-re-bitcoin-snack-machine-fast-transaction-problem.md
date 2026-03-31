@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 ---
 
-> [Quote from: llama on July 18, 2010, 12:03:29 AM](https://bitcointalk.org/index.php?topic=423.msg3836#msg3836)
+> [Quote from: llama on July 18, 2010, 12:03:29 AM](#msg3836)
 > This is a good start, but still not impermeable.
 
 I didn't say impermeable, I said good-enough.  The loss in practice would be far lower than with credit cards.

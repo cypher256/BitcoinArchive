@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-seticons-icon-bundle-doesn-t-contain-any-suitable-"
 ---
 
-> [Quote from: bdonlan on July 15, 2010, 11:27:14 PM](https://bitcointalk.org/index.php?topic=391.msg3320#msg3320)
+> [Quote from: bdonlan on July 15, 2010, 11:27:14 PM](#msg3320)
 > in 120DPI mode. 
 
 What is "120DPI mode"?  Is that an actual setting somewhere?  Sounds like an obscure enough candidate.  I suppose it needs twice the resolution icon to fill the size of the upper left corner icon.  Only one size is provided.

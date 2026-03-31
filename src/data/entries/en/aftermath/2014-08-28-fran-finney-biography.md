@@ -28,7 +28,7 @@ secondarySources:
     url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
 ---
 
-Fran Finney met Hal Finney at the California Institute of Technology (Caltech). She was a junior when Hal arrived as a freshman. She first saw him during "rotation week": "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled how people would cluster around him for philosophical discussions: "When he spoke, what he said was usually worth listening to."
+Fran Finney met [Hal Finney](/BitcoinArchive/en/entries/aftermath/2014-08-28-hal-finney-biography/) at the California Institute of Technology (Caltech). She was a junior when Hal arrived as a freshman. She first saw him during "rotation week": "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled how people would cluster around him for philosophical discussions: "When he spoke, what he said was usually worth listening to."
 
 **Bitcoin:**
 Fran witnessed Bitcoin's birth firsthand. When Hal downloaded and ran the software on January 9, 2009, she described his reaction: "This is cool. This is a fun game. Look! This is actually working!" She also recalled how Hal's early mining was cut short — she complained that the computer fan was too noisy at night.
@@ -45,4 +45,4 @@ In August 2009, Hal was diagnosed with amyotrophic lateral sclerosis (ALS). Fran
 **Cryopreservation:**
 On October 15, 1992, Fran and Hal had signed their Alcor cryonics membership paperwork in Riverside, California. On Hal's motivation: "I think that was a lot of his motivation for getting involved with cryonics in the first place. He just wanted to be able to see what the world turned into, because it was going to be such an amazing, wondrous place."
 
-Hal Finney died on August 28, 2014. He was cryopreserved by Alcor as their 128th patient (member A-1436). Fran is survived by their son Jason and daughter Erin.
+[Hal Finney died on August 28, 2014.](/BitcoinArchive/en/entries/aftermath/2014-08-28-hal-finney-passes-away/) He was cryopreserved by Alcor as their 128th patient (member A-1436). Fran is survived by their son Jason and daughter Erin.

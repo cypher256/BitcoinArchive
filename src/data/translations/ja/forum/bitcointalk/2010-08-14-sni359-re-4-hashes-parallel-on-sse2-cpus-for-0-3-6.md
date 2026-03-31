@@ -19,7 +19,7 @@ translationStatus: complete
 
 まだであれば、thashのアラインを試してみてほしい。効果があるかもしれない。損にはならない。
 
-> [Quote from: tcatm on August 14, 2010, 12:53:07 AM](https://bitcointalk.org/index.php?topic=648.msg9147#msg9147)
+> [Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
 > ツリーオプティマイザのコンパイラバグを引き起こしているようです。-O0でコンパイルしてみてもらえますか？
 
 -O0でも効果なし、同じエラーだ。

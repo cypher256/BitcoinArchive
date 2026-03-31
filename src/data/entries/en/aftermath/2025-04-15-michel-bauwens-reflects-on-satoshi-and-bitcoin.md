@@ -26,7 +26,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/"
 ---
 
-In an interview published by Uncommons on April 15, 2025, P2P Foundation founder Michel Bauwens looked back on his brief but direct contact with Satoshi Nakamoto.
+In an interview published by Uncommons on April 15, 2025, P2P Foundation founder [Michel Bauwens](/BitcoinArchive/en/entries/aftermath/2009-02-12-michel-bauwens-biography/) looked back on his brief but direct contact with Satoshi Nakamoto.
 
 **On Satoshi's emails:**
 
@@ -52,4 +52,4 @@ He also argued that Bitcoin introduced a new kind of universal ledger, moving ac
 
 Bauwens framed Bitcoin as a post-capitalist invention rather than a simply anti-capitalist one. In his view, Bitcoin created a new coordination layer for value, but still lacked a strong connection to productive, local, commons-based reality.
 
-*[This interview is notable because Bauwens was among the first people to engage Satoshi on the P2P Foundation / P2P Research channels in February 2009. His 2025 comments add new personal detail to that early contact, including the previously underemphasized fact that Satoshi directly offered him bitcoins and explained his decision to post on the P2P Foundation site.]*
+*[This interview is notable because Bauwens was among the first people to engage Satoshi on the [P2P Foundation](/BitcoinArchive/en/entries/forum/p2pfoundation/2009-02-11-bitcoin-open-source-implementation/) / [P2P Research](/BitcoinArchive/en/entries/emails/p2p-research/2009-02-11-bitcoin-open-source-p2p-currency/) channels in February 2009. His 2025 comments add new personal detail to that early contact, including the previously underemphasized fact that Satoshi directly offered him bitcoins and explained his decision to post on the P2P Foundation site.]*

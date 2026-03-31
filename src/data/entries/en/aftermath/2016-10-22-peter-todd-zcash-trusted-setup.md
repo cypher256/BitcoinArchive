@@ -27,7 +27,7 @@ secondarySources:
     url: "https://github.com/zcash/mpc/pull/1"
 ---
 
-Peter Todd was one of six participants in the Zcash trusted setup ceremony held October 22–23, 2016. Zooko Wilcox (Zcash co-founder) had contacted him via Twitter DM on September 26, asking him to serve as a "Human Witness." Todd insisted the conversation move to Signal, noting that soliciting someone for this role exposed them to significant threats.
+[Peter Todd](/BitcoinArchive/en/entries/aftermath/2010-12-07-peter-todd-biography/) was one of six participants in the Zcash trusted setup ceremony held October 22–23, 2016. Zooko Wilcox (Zcash co-founder) had contacted him via Twitter DM on September 26, asking him to serve as a "Human Witness." Todd insisted the conversation move to Signal, noting that soliciting someone for this role exposed them to significant threats.
 
 **The ceremony's purpose:**
 

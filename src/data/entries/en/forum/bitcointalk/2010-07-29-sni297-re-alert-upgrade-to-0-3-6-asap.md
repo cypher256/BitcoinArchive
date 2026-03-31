@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-alert-upgrade-to-0-3-6-asap"
 ---
 
-> [Quote from: lachesis on July 29, 2010, 10:14:36 PM](https://bitcointalk.org/index.php?topic=626.msg6515#msg6515)
+> [Quote from: lachesis on July 29, 2010, 10:14:36 PM](#msg6515)
 > On Debian testing 32-bit, I get a few build errors, all resembling:
 
 Code:script.cpp:114: error: OP_NOP1 was not declared in this scopeI got these when attempting to "make bitcoind" without "make clean" or "make" first. It looks like the bitcoind build instructions don't compile the headers first, but they also don't delete the headers.h.gch, so the old headers are used if present.

@@ -18,7 +18,7 @@ threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 
 Is it 2x fast on AMD and 1/2 fast on Intel?
 
-> [Quote from: tcatm on July 31, 2010, 10:12:38 AM](https://bitcointalk.org/index.php?topic=648.msg6797#msg6797)
+> [Quote from: tcatm on July 31, 2010, 10:12:38 AM](#msg6797)
 > Btw. Why are you using this alignup<16> function when __attribute__ ((aligned (16))) will tell the compiler to align at compiletime?
 
 Tried that, but it doesn't work for things on the stack.  I ran some tests.

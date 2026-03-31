@@ -39,20 +39,20 @@ On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a docume
 
 **The forum post theory:**
 
-The documentary's central piece of evidence was a December 2010 exchange on BitcoinTalk. Satoshi had described a concept for transaction replacement — what would later become Replace-by-Fee (RBF). Approximately 1.5 hours later, Todd (posting under the username "retep," his name spelled backwards) replied with a technical correction:
+The documentary's central piece of evidence was a December 2010 exchange on BitcoinTalk. Satoshi had described a concept for transaction replacement — what would later become Replace-by-Fee (RBF). Approximately 1.5 hours later, Todd (posting under the username ["retep,"](/BitcoinArchive/en/entries/forum/bitcointalk/2010-12-10-retep-re-fees-in-bitdns-confusion/) his name spelled backwards) replied with a technical correction:
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
-This was only Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought, not a response to it. Both accounts fell silent in the days that followed. Satoshi's last public post came two days later, on December 12, 2010.
+This was only Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought, not a response to it. Both accounts fell silent in the days that followed. [Satoshi's last public post](/BitcoinArchive/en/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
 
 **The RBF connection:**
 
-The documentary drew a line from this exchange to Todd's later work formalizing Replace-by-Fee in BIP 125 (2015), arguing that Todd completed what Satoshi had started — because they were the same person. Hoback also noted that Todd had previously used an alternate persona to submit an RBF patch, suggesting a pattern of operating under different identities.
+The documentary drew a line from this exchange to Todd's later work formalizing Replace-by-Fee in [BIP 125](/BitcoinArchive/en/entries/bip/2015-11-03-bip-0125/) (2015), arguing that Todd completed what Satoshi had started — because they were the same person. Hoback also noted that Todd had previously used an alternate persona to submit an RBF patch, suggesting a pattern of operating under different identities.
 
 **Additional circumstantial evidence:**
 
 - Todd was pursuing a fine arts degree at OCAD University (graduating 2011) when Bitcoin launched in 2008–2009
-- Todd's alignment with Adam Back and Gregory Maxwell at Blockstream
+- Todd's alignment with [Adam Back](/BitcoinArchive/en/participants/adam-back/) and Gregory Maxwell at Blockstream
 - An alleged 2014 email from Satoshi's address during the block size debate
 
 **Todd's response:**
@@ -91,7 +91,7 @@ The progression — from no personality, to neutral precision, to an unmistakabl
 
 **Analysis: Development activity timeline**
 
-Todd registered his GitHub account on April 13, 2008. Satoshi Nakamoto developed Bitcoin on SourceForge (SVN). Their public activity records can be summarized as follows:
+Todd registered his GitHub account on April 13, 2008. Satoshi Nakamoto developed Bitcoin on [SourceForge (SVN)](/BitcoinArchive/en/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/). Their public activity records can be summarized as follows:
 
 | Period | Todd's public record (GitHub) | Satoshi Nakamoto's activity (SourceForge / BitcoinTalk) |
 |--------|----------------------|---------------------------|

@@ -17,7 +17,7 @@ threadId: "bt-command-line-and-json-rpc"
 translationStatus: complete
 ---
 
-[sirius-mの2010年2月24日 06:17:35 PMの投稿より引用](https://bitcointalk.org/index.php?topic=63.msg502#msg502)これは変です... 64ビットLinuxサーバーでBitcoinをデーモンとして起動すると、残りのRAM 250MBすべて、スワップ700MBを食い尽くし、最終的にクラッシュします。32ビットのUbuntuデスクトップでは正常に動作し、メモリ使用量は15MBに留まります。サーバーは64ビットビルドのBitcoinを実行しています。ビルドか何かに問題があるのかもしれません。
+[sirius-mの2010年2月24日 06:17:35 PMの投稿より引用](#msg502)これは変です... 64ビットLinuxサーバーでBitcoinをデーモンとして起動すると、残りのRAM 250MBすべて、スワップ700MBを食い尽くし、最終的にクラッシュします。32ビットのUbuntuデスクトップでは正常に動作し、メモリ使用量は15MBに留まります。サーバーは64ビットビルドのBitcoinを実行しています。ビルドか何かに問題があるのかもしれません。
 sirius-mがこれをデバッグした。64ビット関連の問題だった。
 
 修正はSVNのutil.cppファイルで利用可能になった。

@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
 ---
 
-> [Quote from: ArtForz on August 21, 2010, 04:56:31 PM](https://bitcointalk.org/index.php?topic=820.msg10609#msg10609)
+> [Quote from: ArtForz on August 21, 2010, 04:56:31 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-21-artforz-msg10609/)
 > - AMD K10: 2 128bit units
 
 - intel nehalem: 3 128bit units

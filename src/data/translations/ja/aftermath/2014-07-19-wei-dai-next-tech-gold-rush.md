@@ -27,11 +27,11 @@ translationStatus: complete
 
 *LessWrong投稿「Look for the Next Tech Gold Rush?」、2014年7月19日：*
 
-ウェイ・ダイ — b-money提案（1998年）の考案者であり、ビットコインホワイトペーパーの参考文献[1]として引用されている — がビットコインをほぼ見逃しかけた経緯を語った：
+[ウェイ・ダイ](/BitcoinArchive/ja/entries/aftermath/2008-08-22-wei-dai-biography/) — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインをほぼ見逃しかけた経緯を語った：
 
 **サトシからの直接の働きかけについて：**
 
-> 「2009年初頭、サトシ・ナカモトという人物がビットコインのバージョン0.1を公開したという告知メールを個人的に送ってきました。当時はあまり注意を払いませんでした（その時点ではサイファーパンクよりLessWrongに興味がありました）。しかし2011年初頭にLWでビットコインに関する記事を見て、マイニングを始めました」
+> 「2009年初頭、サトシ・ナカモトという人物がビットコインのバージョン0.1を公開したという告知メールを[個人的に送ってきました](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/)。当時はあまり注意を払いませんでした（その時点ではサイファーパンクよりLessWrongに興味がありました）。しかし2011年初頭にLWでビットコインに関する記事を見て、マイニングを始めました」
 
 **マイニングのリターンについて：**
 

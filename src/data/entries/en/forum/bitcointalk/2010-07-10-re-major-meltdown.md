@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-major-meltdown"
 ---
 
-> [Quote from: llama on July 01, 2010, 10:21:47 PM](https://bitcointalk.org/index.php?topic=202.msg1920#msg1920)
+> [Quote from: llama on July 01, 2010, 10:21:47 PM](#msg1920)
 > However, if something happened and the signatures were compromised (perhaps integer factorization is solved, quantum computers?), then even agreeing upon the last valid block would be worthless.
 
 True, if it happened suddenly.  If it happens gradually, we can still transition to something stronger.  When you run the upgraded software for the first time, it would re-sign all your money with the new stronger signature algorithm.  (by creating a transaction sending the money to yourself with the stronger sig)

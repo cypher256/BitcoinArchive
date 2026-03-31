@@ -22,7 +22,7 @@ threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
 Windows i5 64-bit got slower here.
 That's the first I've heard anyone say i5 was slower.  Everyone else has said 4way was faster on i5.  Moreso with hyperthreading enabled.
 
-> [Quote from: nelisky on August 18, 2010, 11:02:25 PM](https://bitcointalk.org/index.php?topic=820.msg10164#msg10164)
+> [Quote from: nelisky on August 18, 2010, 11:02:25 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-18-nelisky-msg10164/)
 > And i5, at least on my macbookpro
 
 Good, so I take it that's a confirmation that it's working on Mac as well?

@@ -17,7 +17,7 @@ threadId: "bt-version-0-3-13-please-upgrade"
 translationStatus: complete
 ---
 
-> [Quote from: tcatm on October 03, 2010, 07:45:45 PM](https://bitcointalk.org/index.php?topic=1327.msg15111#msg15111)
+> [Quote from: tcatm on October 03, 2010, 07:45:45 PM](#msg15111)
 > 983 Mhash/sのマシンです。
 
 本当ですか？それはどんなハードウェアですか？

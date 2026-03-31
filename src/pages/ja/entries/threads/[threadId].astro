@@ -98,7 +98,7 @@ const breadcrumbs = [
       {rendered.map(({ entry, Content }: any, i: number) => (
         <>
           {i > 0 && <div class="thread-connector" />}
-          <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'}>
+          <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'} id={entry.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ''}>
             <div class="message-header">
               <a href={localePath(`/participants/${entry.data.participants.find((p: any) => p.name === entry.data.author)?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: entry.data.isSatoshi }]}>
                 {translateParticipantName(entry.data.author, entry.data.participants.find((p: any) => p.name === entry.data.author)?.slug, lang)}

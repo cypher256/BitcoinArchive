@@ -17,7 +17,7 @@ threadId: "bt-version-0-3-13-please-upgrade"
 translationStatus: complete
 ---
 
-> [Quote from: theymos on October 03, 2010, 08:09:51 PM](https://bitcointalk.org/index.php?topic=1327.msg15118#msg15118)
+> [Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
 > ArtForzはすでに手数料なしで実行しており、ネットワークのCPUパワーの20-30%を持っています。ただし、元の壊れたトランザクションを送信した人はウォレットを削除しており、ネットワークはこれらの過去のトランザクションを忘れているため、これに基づくトランザクションは承認されません。
 
 トランザクションは、ノードがブロックチェーンに戻るトランザクションのパスを持つまで、0/未承認として受け入れられたり表示されたりしない。
@@ -26,12 +26,12 @@ translationStatus: complete
 
 手数料なしのブロックがすでに生成されたのに解決しない場合は、何が問題なのか調べる必要がある。あまり使われないコードの部分だ。それらに依存するトランザクションを持つ全員のウォレットに記録されているはずだ。
 
-> [Quote from: theymos on October 03, 2010, 08:09:51 PM](https://bitcointalk.org/index.php?topic=1327.msg15118#msg15118)
+> [Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
 > 元の壊れたトランザクションを送信した人はウォレットを削除しました
 
 はぁ……ウォレットを別の場所に移動して万が一のために古いコピーを保管しておくのではなく、なぜ削除するのだろうか？ウォレットは決して削除すべきではない。
 
-> [Quote from: tcatm on October 03, 2010, 08:10:47 PM](https://bitcointalk.org/index.php?topic=1327.msg15119#msg15119)
+> [Quote from: tcatm on October 03, 2010, 08:10:47 PM](#msg15119)
 > 実行中です。3時間以内にブロックを見つけるはずです。
 
 再ブロードキャストされたトランザクションを収集するのに時間がかかるかもしれない。より多くのノードをリッスンできるよう、インバウンド接続を受け入れられるようにすると助けになる。3時間でブロックを見つけたとしても、少なくとも数日間は継続して実行し続けてくれ。

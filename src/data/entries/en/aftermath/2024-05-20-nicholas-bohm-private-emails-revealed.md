@@ -28,7 +28,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/24/"
 ---
 
-One of the more interesting post-trial discoveries from **COPA v Wright** concerns **Nicholas Bohm**.
+One of the more interesting post-trial discoveries from **[COPA v Wright](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** concerns **[Nicholas Bohm](/BitcoinArchive/en/entries/aftermath/2009-01-25-nicholas-bohm-biography/)**.
 
 Before the trial, Bohm was publicly known mainly from a January 25, 2009 bitcoin-list message in which he reported software problems and Satoshi invited him to send a `debug.log` file directly. But Justice Mellor's May 2024 judgment records something more important:
 
@@ -40,9 +40,9 @@ That detail matters because it shows that a participant first visible on the pub
 
 The trial exhibits indicate that Bohm and Satoshi exchanged direct emails about real node-operation issues during 2009:
 
-- On **June 4, 2009**, Bohm wrote that he had installed a new router and could no longer get Bitcoin to connect.
+- On **[June 4, 2009](/BitcoinArchive/en/entries/correspondence/nicholas-bohm/2009-06-04-bohm-to-satoshi-router-issue/)**, Bohm wrote that he had installed a new router and could no longer get Bitcoin to connect.
 - On **June 5, 2009**, Satoshi replied that Bohm should forward **port 8333** so his node could receive incoming connections, adding that if nobody online could accept inbound connections, nodes would fail to connect.
-- On **July 18-19, 2009**, Bohm reported that Bitcoin had failed to establish connections "for the last day or so." Satoshi responded by asking whether Bohm's IP address had changed and noted:
+- On **[July 18-19, 2009](/BitcoinArchive/en/entries/correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running/)**, Bohm reported that Bitcoin had failed to establish connections "for the last day or so." Satoshi responded by asking whether Bohm's IP address had changed and noted:
 
 > "There may just not be anybody else running it right now."
 

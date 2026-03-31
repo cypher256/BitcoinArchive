@@ -16,7 +16,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/"
 ---
 
-> [Quote from: creighto on November 19, 2010, 08:29:12 PM](https://bitcointalk.org/index.php?topic=1850.msg22896#msg22896)
+> [Quote from: creighto on November 19, 2010, 08:29:12 PM](#msg22896)
 > Perhaps in addition to the age priority rule recently implimented, there should be a minimum age rule without a transaction fee.  Said another way, perhaps a generation rule that says that a free transaction must be 3 blocks deep before it can be transfered again for free.  This will still allow real users to immediately spend new funds if they have to, while still permitting real users to reshuffle funds to suit their needs without an overhead cost.  I think that this would significantly inhibit the type of spamming attack that is currently underway.
 
 I'm doing something like that.  Priority is a more formalised version of the concept you're describing.

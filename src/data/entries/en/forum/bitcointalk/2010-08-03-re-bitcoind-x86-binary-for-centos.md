@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-bitcoind-x86-binary-for-centos"
 ---
 
-> [Quote from: sgtstein on August 03, 2010, 05:30:37 PM](https://bitcointalk.org/index.php?topic=685.msg7275#msg7275)
+> [Quote from: sgtstein on August 03, 2010, 05:30:37 PM](#msg7275)
 > I have successfully built it with 4.8, 4.7 never would but with 4.8 bitcoind locks up whenever it dumps the initial block download to disk. 
 
 I urge you not to use BDB 4.8.  The database/log0000* files will be incompatible if anyone uses your build and then goes back to the official build.

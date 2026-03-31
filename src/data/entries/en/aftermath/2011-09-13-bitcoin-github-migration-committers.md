@@ -49,7 +49,7 @@ The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 
 
 **GitHub commit access grants in 2011:**
 
-With Satoshi's departure (last known email: April 26, 2011), Gavin Andresen — who held both the repository access and the network alert key — began granting commit access to trusted contributors. The following developers received GitHub commit access in 2011:
+With Satoshi's departure ([last known email: April 26, 2011](/BitcoinArchive/en/entries/aftermath/2011-04-26-satoshi-final-known-email/)), Gavin Andresen — who held both the repository access and the network alert key — began granting commit access to trusted contributors. The following developers received GitHub commit access in 2011:
 
 | Developer | GitHub Username | Access Granted | Notes |
 |-----------|----------------|---------------|-------|

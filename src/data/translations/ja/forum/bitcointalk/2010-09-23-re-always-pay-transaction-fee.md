@@ -17,7 +17,7 @@ threadId: "bt-always-pay-transaction-fee"
 translationStatus: complete
 ---
 
-> [Quote from: satoshi on September 08, 2010, 05:30:14 PM](https://bitcointalk.org/index.php?topic=994.msg12237#msg12237)
+> [Quote from: satoshi on September 08, 2010, 05:30:14 PM](#msg12237)
 > 現在の閾値は1ブロックあたり200KB、つまり1ブロックあたり約1,000トランザクションです。これを1ブロックあたり50KBに引き下げるべきだと思います。それでも1ブロックあたりの平均トランザクション数の100倍以上になります。
 
 この変更をSVN rev 157で実装した。

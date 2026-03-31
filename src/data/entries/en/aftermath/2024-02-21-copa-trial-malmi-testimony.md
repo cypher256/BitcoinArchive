@@ -40,10 +40,10 @@ Malmi stated in court:
 
 > "I communicated with Satoshi, who I believe to be a different person to Dr. Wright."
 
-The same day, Adam Back also provided testimony, submitting the complete email chain between himself and Satoshi from August 2008.
+The same day, [Adam Back also provided testimony](/BitcoinArchive/en/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), submitting the [complete email chain between himself and Satoshi](/BitcoinArchive/en/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) from August 2008.
 
 Malmi subsequently published the full email archive on GitHub, explaining that he had withheld these conversations for years due to sensitive information (including links and passwords), but decided to make them public given the trial's significance.
 
 The emails revealed intimate details of Bitcoin's earliest development: infrastructure decisions, website design, the first exchange proposals, energy consumption debates, anonymity discussions, and Satoshi's eventual withdrawal from the project.
 
-*[The COPA v. Wright trial concluded on March 14, 2024, with Justice Mellor ruling that Craig Wright is not Satoshi Nakamoto.]*
+*[The COPA v. Wright trial [concluded on March 14, 2024](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/), with Justice Mellor ruling that Craig Wright is not Satoshi Nakamoto.]*

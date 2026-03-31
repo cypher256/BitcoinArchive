@@ -25,7 +25,7 @@ secondarySources: []
 
 "Crypto Currency" by Andy Greenberg was one of the first major print magazine articles about Bitcoin.
 
-Gavin Andresen told Forbes:
+[Gavin Andresen](/BitcoinArchive/en/entries/aftermath/2010-06-11-gavin-andresen-biography/) told Forbes:
 
 > "Bitcoin is designed to bring us back to a decentralized currency of the people."
 >
@@ -35,4 +35,4 @@ The article described Bitcoin developers as Gavin's "underground cadre of cypher
 
 The article also described Bitcoin as potentially untraceable — an assessment Greenberg later acknowledged was incorrect, as cryptocurrency proved to be extremely traceable through blockchain analysis.
 
-*[This article ran in the week leading up to Satoshi's disappearance from public communication in late April 2011. The mainstream media attention it generated, and the association with illegal activity, may have contributed to Satoshi's decision to withdraw. In his final known email to Gavin Andresen on April 26, 2011, Satoshi wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle."]*
+*[This article ran in the week leading up to Satoshi's disappearance from public communication in late April 2011. The mainstream media attention it generated, and the association with illegal activity, may have contributed to Satoshi's decision to withdraw. In his [final known email to Gavin Andresen](/BitcoinArchive/en/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, Satoshi wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle."]*

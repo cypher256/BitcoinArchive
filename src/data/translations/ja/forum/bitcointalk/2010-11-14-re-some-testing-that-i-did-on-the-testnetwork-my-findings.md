@@ -17,7 +17,7 @@ threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 translationStatus: complete
 ---
 
-> [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](https://bitcointalk.org/index.php?topic=1668.msg21899#msg21899)
+> [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](#msg21899)
 > もちろん、ネットワークがフラッド攻撃を受けておらず、現在のトランザクションが保留されることをそれほど心配していないなら、ネットワークがフラッド攻撃を受けている時のために高優先度のコインを「温存」するため、0承認のトランザクションを優先的に使う方が良いでしょう。
 
 次のブロックの前にフラッド攻撃が来る場合に備えて、少なくともある程度の優先度は使うべきだ。

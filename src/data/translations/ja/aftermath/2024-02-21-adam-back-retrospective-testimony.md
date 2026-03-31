@@ -35,11 +35,11 @@ translationStatus: complete
 
 **2008年8月のメール交換について：**
 
-2008年8月、サトシはバックにHashcash論文の引用を確認するために連絡した。バックは引用を確認し、ウェイ・ダイのb-money提案を参照するよう提案した。
+2008年8月、サトシは[バックにHashcash論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)のb-money提案を参照するよう提案した。
 
 > 「b-moneyを調べるよう提案した。その時点では知らなかったようだ」
 
-サトシは返信した：
+[サトシは返信した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/)：
 
 > 「ありがとう。b-moneyのページは知らなかったが、私のアイデアはまさにその点から始まっている」
 
@@ -57,6 +57,6 @@ translationStatus: complete
 
 **COPA裁判での証言（2024年2月21日）：**
 
-COPA対クレイグ・ライト裁判で、バックはロンドン高等法院で直接証言し、サトシとの完全な5通のメールチェーンを証拠として提出した。2008年8月20日以降のメールが初めて公開された。
+[COPA対クレイグ・ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、バックはロンドン高等法院で直接証言し、サトシとの完全な5通のメールチェーンを証拠として提出した。2008年8月20日以降のメールが初めて公開された。
 
 *[バックは2014年にBlockstreamを設立し、最も著名なビットコインインフラ企業の一つとなった。早期に関与しなかったことへの後悔にもかかわらず、彼のHashcashの発明はビットコインのプルーフ・オブ・ワーク合意メカニズムの基本的な構成要素であり続けている。]*

@@ -35,11 +35,11 @@ The BIP's rationale explicitly traces the concept to Nakamoto's original Bitcoin
 
 **The December 2010 connection:**
 
-On December 10, 2010, Peter Todd (then posting as "retep") replied to Satoshi's description of transaction replacement with a technical correction:
+On December 10, 2010, [Peter Todd](/BitcoinArchive/en/entries/aftermath/2010-12-07-peter-todd-biography/) (then posting as ["retep"](/BitcoinArchive/en/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)) replied to Satoshi's description of transaction replacement with a technical correction:
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
-This was Todd's second-ever post on BitcoinTalk, made three days after registration. Satoshi's last public forum post came two days later. Five years afterward, Todd formalized the very concept Satoshi had been describing.
+This was Todd's second-ever post on BitcoinTalk, made three days after registration. [Satoshi's last public forum post](/BitcoinArchive/en/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/) came two days later. Five years afterward, Todd formalized the very concept Satoshi had been describing.
 
 **How BIP 125 works:**
 

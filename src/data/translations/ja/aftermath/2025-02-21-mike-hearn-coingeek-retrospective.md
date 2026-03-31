@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-CoinGeek Weekly Livestreamのインタビューで、サトシ・ナカモトと直接書簡を交わした数少ない人物の一人であるマイク・ハーンが、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
+CoinGeek Weekly Livestreamのインタビューで、サトシ・ナカモトと[直接書簡を交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人であるマイク・ハーンが、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
 
 **サトシの人物像について：**
 
@@ -49,4 +49,4 @@ CoinGeek Weekly Livestreamのインタビューで、サトシ・ナカモトと
 
 「Bitcoin Core」という名称の採用も後悔しているとし、その命名がプロジェクト内の不健全な権力構造を強化したと指摘した。
 
-*[このインタビューの時点で、ハーンは2021年にR3を退社し、Hydraulic Softwareを設立し、Oracleでのソフトウェアアーキテクト職に就く準備をしていた。2016年のビットコインからの離脱にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。]*
+*[このインタビューの時点で、ハーンは2021年にR3を退社し、Hydraulic Softwareを設立し、Oracleでのソフトウェアアーキテクト職に就く準備をしていた。[2016年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。]*

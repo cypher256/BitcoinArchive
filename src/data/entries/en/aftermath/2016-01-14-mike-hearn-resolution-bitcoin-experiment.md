@@ -30,7 +30,7 @@ secondarySources:
     url: "https://bitbo.io/calendar/mike-hearn-quits/"
 ---
 
-On January 14, 2016, Mike Hearn — one of the earliest Bitcoin contributors and a developer who had corresponded directly with Satoshi Nakamoto — published a lengthy blog post titled "The resolution of the Bitcoin experiment" on his personal blog (blog.plan99.net, hosted on Medium).
+On January 14, 2016, [Mike Hearn](/BitcoinArchive/en/entries/aftermath/2009-04-12-mike-hearn-biography/) — one of the earliest Bitcoin contributors and a developer who had corresponded directly with Satoshi Nakamoto — published a lengthy blog post titled "The resolution of the Bitcoin experiment" on his personal blog (blog.plan99.net, hosted on Medium).
 
 In the post, Hearn declared:
 
@@ -56,7 +56,7 @@ He also noted that Satoshi had told him directly that Bitcoin "never really hits
 
 Hearn described how Satoshi's departure left an unplanned governance vacuum:
 
-> "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to Gavin Andresen, an early contributor."
+> "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to [Gavin Andresen](/BitcoinArchive/en/entries/aftermath/2010-06-11-gavin-andresen-biography/), an early contributor."
 
 After praising Gavin's judgement — calling it one of the reasons Hearn had quit Google to work on Bitcoin full time — he added:
 

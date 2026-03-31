@@ -26,11 +26,11 @@ secondarySources:
 
 *LessWrong post "Look for the Next Tech Gold Rush?", July 19, 2014:*
 
-Wei Dai — creator of the b-money proposal (1998) and cited as reference [1] in the Bitcoin whitepaper — described how he nearly missed Bitcoin entirely:
+[Wei Dai](/BitcoinArchive/en/entries/aftermath/2008-08-22-wei-dai-biography/) — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — described how he nearly missed Bitcoin entirely:
 
 **On Satoshi's direct outreach:**
 
-> "In early 2009, someone named Satoshi Nakamoto emailed me personally with an announcement that he had published version 0.1 of Bitcoin. I didn't pay much attention at the time (I was more interested in Less Wrong than Cypherpunks at that point), but then in early 2011 I saw a LW article about Bitcoin, which prompted me to start mining it."
+> "In early 2009, someone named Satoshi Nakamoto [emailed me personally](/BitcoinArchive/en/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/) with an announcement that he had published version 0.1 of Bitcoin. I didn't pay much attention at the time (I was more interested in Less Wrong than Cypherpunks at that point), but then in early 2011 I saw a LW article about Bitcoin, which prompted me to start mining it."
 
 **On his return from mining:**
 

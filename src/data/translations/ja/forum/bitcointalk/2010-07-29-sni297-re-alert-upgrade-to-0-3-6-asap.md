@@ -17,7 +17,7 @@ threadId: "bt-alert-upgrade-to-0-3-6-asap"
 translationStatus: complete
 ---
 
-> [Quote from: lachesis on July 29, 2010, 10:14:36 PM](https://bitcointalk.org/index.php?topic=626.msg6515#msg6515)
+> [Quote from: lachesis on July 29, 2010, 10:14:36 PM](#msg6515)
 > Debian testing 32ビットで、いくつかのビルドエラーが出ます。すべて以下のようなものです：
 
 Code:script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出た。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようだが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用される。

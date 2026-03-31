@@ -14,7 +14,7 @@ threadId: "bt-resource-hog"
 tags: []
 ---
 
-> [Quote from: andy_3_913 on July 13, 2010, 07:19:47 PM](https://bitcointalk.org/index.php?topic=327.msg2624#msg2624)
+> [Quote from: andy_3_913 on July 13, 2010, 07:19:47 PM](#msg2624)
 > windows 7 home 64
 
 I don't think their is any renicing under Windows.

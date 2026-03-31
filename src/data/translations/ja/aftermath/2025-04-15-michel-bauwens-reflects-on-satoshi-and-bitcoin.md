@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2025年4月15日に Uncommons が公開したインタビューで、P2P Foundation 創設者のミシェル・バウエンスは、サトシ・ナカモトとの短いが直接的な接触を振り返った。
+2025年4月15日に Uncommons が公開したインタビューで、P2P Foundation 創設者の[ミシェル・バウエンス](/BitcoinArchive/ja/entries/aftermath/2009-02-12-michel-bauwens-biography/)は、サトシ・ナカモトとの短いが直接的な接触を振り返った。
 
 **サトシからのメールについて：**
 
@@ -53,4 +53,4 @@ translationStatus: complete
 
 ミシェル・バウエンスは、ビットコインを単純な「反資本主義」ではなく、より高次の仕組みに資本主義を埋め込むための「ポスト資本主義的な発明」と位置づけた。一方で、ローカルな生産やコモンズ的実践との結びつきがまだ弱いとも述べている。
 
-*[このインタビューは、2009年2月に P2P Foundation / P2P Research 系列でサトシと接点を持ったミシェル・バウエンスが、その接触を後年どう理解していたかを示す一次証言として重要である。特に、サトシがミシェル・バウエンスにビットコインを送ろうとしていたことと、論文掲載の意図を直接説明していたことが、より具体的に語られている。]*
+*[このインタビューは、2009年2月に [P2P Foundation](/BitcoinArchive/ja/entries/forum/p2pfoundation/2009-02-11-bitcoin-open-source-implementation/) / [P2P Research](/BitcoinArchive/ja/entries/emails/p2p-research/2009-02-11-bitcoin-open-source-p2p-currency/) 系列でサトシと接点を持ったミシェル・バウエンスが、その接触を後年どう理解していたかを示す一次証言として重要である。特に、サトシがミシェル・バウエンスにビットコインを送ろうとしていたことと、論文掲載の意図を直接説明していたことが、より具体的に語られている。]*

@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-assertion-failure-ubuntu-lucid"
 ---
 
-> [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](https://bitcointalk.org/index.php?topic=400.msg3815#msg3815)
+> [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)
 > My coins disappeared, but I assume they'll come back when it's up to current?
 
 Right, they'll re-appear when it's finished downloading all the blocks.

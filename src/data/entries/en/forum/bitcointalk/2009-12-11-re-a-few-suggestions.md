@@ -18,7 +18,7 @@ threadId: "bt-a-few-suggestions"
 
 Right, the SVN has the almost-release-candidate 0.2 source, which can also be built and run on Linux.   It hasn't been tested on FreeBSD.
 
-> [Quote from: madhatter2 on December 11, 2009, 04:59:19 AM](https://bitcointalk.org/index.php?topic=12.msg47#msg47)
+> [Quote from: madhatter2 on December 11, 2009, 04:59:19 AM](#msg47)
 > If we can get to the point where we have a working backend process that will run on FreeBSD I can run always-on seeds.
 
 That would be a big help.  TOR users wouldn't have to worry about how to get seeded, and we wouldn't depend on IRC.

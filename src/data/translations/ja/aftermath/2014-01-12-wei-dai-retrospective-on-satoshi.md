@@ -29,7 +29,7 @@ translationStatus: complete
 
 *LessWrong「Ask Any LessWronger Anything」（AALWA）スレッド、2014年1月12日より：*
 
-ウェイ・ダイ — b-money提案（1998年）の考案者であり、ビットコインホワイトペーパーの参考文献[1]として引用されている — がサトシ・ナカモトについての考察を共有した：
+ウェイ・ダイ — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がサトシ・ナカモトについての考察を共有した：
 
 **独立した発明について：**
 

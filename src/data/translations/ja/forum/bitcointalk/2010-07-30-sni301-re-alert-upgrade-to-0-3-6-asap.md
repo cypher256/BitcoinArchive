@@ -17,7 +17,7 @@ threadId: "bt-alert-upgrade-to-0-3-6-asap"
 translationStatus: complete
 ---
 
-> [Quote from: knightmb on July 30, 2010, 08:04:19 PM](https://bitcointalk.org/index.php?topic=626.msg6713#msg6713)
+> [Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
 > つまり最後のコマンドは単に
 
 **sudo apt-get install libboost1.37-dev**

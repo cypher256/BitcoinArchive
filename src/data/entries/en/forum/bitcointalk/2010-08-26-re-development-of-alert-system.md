@@ -16,8 +16,8 @@ secondarySources:
 threadId: "bt-development-of-alert-system"
 ---
 
-> [Quote from: BioMike on August 25, 2010, 06:23:45 PM](https://bitcointalk.org/index.php?topic=898.msg11162#msg11162)
-> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](https://bitcointalk.org/index.php?topic=898.msg11155#msg11155)[Quote from: BioMike on August 23, 2010, 05:15:43 AM](https://bitcointalk.org/index.php?topic=898.msg10742#msg10742)So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand 
+> [Quote from: BioMike on August 25, 2010, 06:23:45 PM](#msg11162)
+> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)[Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand 
 
 that he hands over his key (or get it from his computer) and shut down the complete network?
 

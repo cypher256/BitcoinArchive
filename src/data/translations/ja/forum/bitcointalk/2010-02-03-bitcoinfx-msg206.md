@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-> [Quote from: sirius-m on February 02, 2010, 12:34:08 PM](https://bitcointalk.org/index.php?topic=34.msg203#msg203)
+> [Quote from: sirius-m on February 02, 2010, 12:34:08 PM](#msg203)
 > Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM
 
 ポートが転送されていなければ、接続はまったく通らない。

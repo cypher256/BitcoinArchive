@@ -26,7 +26,7 @@ secondarySources:
     url: "https://www.coindesk.com/business/2021/02/12/former-bitcoin-developer-mike-hearn-steps-down-from-enterprise-blockchain-firm-r3"
 ---
 
-In a CoinGeek Weekly Livestream interview, Mike Hearn — one of the few people who corresponded directly with Satoshi Nakamoto — offered rare personal reflections on Bitcoin's creator and the project's evolution.
+In a CoinGeek Weekly Livestream interview, Mike Hearn — one of the few people who [corresponded directly with Satoshi Nakamoto](/BitcoinArchive/en/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/) — offered rare personal reflections on Bitcoin's creator and the project's evolution.
 
 **On Satoshi's personality:**
 
@@ -48,4 +48,4 @@ Hearn said that if he could go back, he "would have pushed back harder against s
 
 He also regretted adopting the term "Bitcoin Core," suggesting the naming reinforced an unhealthy power dynamic within the project.
 
-*[By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect. Despite his 2016 departure from Bitcoin, he remained one of the most historically significant witnesses to Bitcoin's earliest period.]*
+*[By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect. Despite his [2016 departure from Bitcoin](/BitcoinArchive/en/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), he remained one of the most historically significant witnesses to Bitcoin's earliest period.]*

@@ -25,7 +25,7 @@ secondarySources:
 
 *From LessWrong "Bitcoins are not digital greenbacks" comment thread, April 21, 2013:*
 
-Wei Dai — creator of the b-money proposal (1998), cited as reference [1] in the Bitcoin whitepaper — commented on Bitcoin's monetary design and his own role in its history:
+Wei Dai — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — commented on Bitcoin's monetary design and his own role in its history:
 
 **On Bitcoin's monetary policy failure:**
 
@@ -39,4 +39,4 @@ Wei Dai — creator of the b-money proposal (1998), cited as reference [1] in th
 
 > "This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."
 
-*[Dai's comment references the email Satoshi sent him on August 22, 2008, which included a pre-release draft of the Bitcoin whitepaper. Despite receiving this direct outreach, Dai never replied with feedback on the paper's design.]*
+*[Dai's comment references the [email Satoshi sent him on August 22, 2008](/BitcoinArchive/en/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), which included a pre-release draft of the Bitcoin whitepaper. Despite receiving this direct outreach, Dai never replied with feedback on the paper's design.]*

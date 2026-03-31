@@ -20,7 +20,7 @@ After it initially tries incorrectly to set itself to the lowest priority, the g
 
 There should be a 0.3.1 release for this soon.  There are a few other issues we need to look at fixing in 0.3.1 before making a release.
 
-> [Quote from: knightmb on July 12, 2010, 10:39:13 PM](https://bitcointalk.org/index.php?topic=299.msg2409#msg2409)
+> [Quote from: knightmb on July 12, 2010, 10:39:13 PM](#msg2409)
 > On a side note, I've tracked down the other GUI issue.
 
 The "minimize to tray instead of taskbar" is what was eating up all the CPU on my system. After I turned this off, the issue was resolved with Runaway CPU.

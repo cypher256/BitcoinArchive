@@ -35,19 +35,19 @@ translationStatus: complete
 
 **入手経路:** 2014年3月、フラン・フィニー（ハルの未亡人）がジャーナリストのナサニエル・ポッパーに著書『Digital Gold』のためハルのパーソナルコンピュータからファイルを送付。ポッパーはそのメールファイルをカピルコフと共有した。CoinDeskはフラン・フィニーに直接確認した。
 
-**メール1：2008年11月19日（フィニー → サトシ）**
+**メール1：[2008年11月19日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)（フィニー → サトシ）**
 フィニーはサトシに修正への感謝を述べ、ネットワークの拡張性について質問した：
 > 「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」
 
 これはビットコイン公開ローンチの2か月前、プレリリースコードレビュー期間中のことだった。
 
-**メール2：2009年1月8日（サトシ → フィニー）**
-件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — 暗号学メーリングリストでの公開発表のわずか数時間後に送信：
+**メール2：[2009年1月8日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
+件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
 > 「お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された：http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。Satoshi」
 
 このメールは`satoshi@vistomail.com`から送信された。
 
-**メール3：2009年1月10日（または12日）（サトシ → フィニー）**
+**メール3：[2009年1月10日（または12日）](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）**
 ビットコインローンチ後のフォローアップ：
 > 「残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。」
 
