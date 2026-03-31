@@ -1,0 +1,19 @@
+---
+title: "Re: A few suggestions"
+date: 2009-12-18T15:11:53.000Z
+type: "forum-post"
+source: "bitcointalk"
+sourceUrl: "https://bitcointalk.org/index.php?topic=12.msg78#msg78"
+author: "The Doctor"
+participants:
+  - name: "The Doctor"
+    slug: "the-doctor"
+description: "Context post by The Doctor in BitcoinTalk topic 12. before msg79."
+isSatoshi: false
+threadId: "bt-a-few-suggestions"
+tags: []
+---
+
+Hi.  I would like to second the headless/non-GUI mode for /*nix/i systems.  It would be useful to be able to start the Bitcoin software from an initscript or one's ~/.bashrc (or equivalent) file and let it run in the background, silently cranking away.
+
+Also, what would the feasibility of changing the location of the wallet.dat file be for the Win32 client?  I ask this because I was playing around with the .zipped Windows Bitcoin client yesterday, and it struck me that it would make a good portable application.  I was toying with the idea of decompressing it into a TrueCrypt volume on a USB drive so that it could, say, be taken on the road, run for a few hours, and then shut down just before the volume was unmounted, but it created the wallet.dat file in the C:\Documents and Settings\username\Application Data\Bitcoin directory.  In effect, using a portable version of Bitcoin to eventually grow a portable wallet.
