@@ -13,7 +13,6 @@ participants:
 description: "Trammell acknowledges the mislabeling was his error, suggests changing 'Received with' to 'Received payment to' for clarity, and draws a PayPal analogy as the closest real-world comparison to multiple receiving addresses."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 19
 tags:
   - "correspondence"
   - "usability"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/474/"
 threadId: "bt-version-0-3-13-please-upgrade"
-threadPosition: 3
 translationStatus: complete
 ---
 

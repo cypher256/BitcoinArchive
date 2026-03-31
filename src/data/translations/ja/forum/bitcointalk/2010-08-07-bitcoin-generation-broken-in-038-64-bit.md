@@ -13,7 +13,6 @@ participants:
 description: "lfmがスレッドを開始: 0.3.8でBitcoin生成が壊れた？"
 isSatoshi: false
 threadId: "bt-bitcoin-generation-broken-in-0-3-8"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

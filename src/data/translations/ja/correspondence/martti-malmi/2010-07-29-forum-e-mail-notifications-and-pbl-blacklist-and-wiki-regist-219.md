@@ -13,7 +13,6 @@ participants:
 description: "サトシがbitcoin.orgのPBLスパムブラックリスト登録問題に対処し、悪用防止のためフォーラム登録時のメール認証を有効化。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 219
 tags:
   - "correspondence"
   - "early-contributor"

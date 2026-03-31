@@ -13,7 +13,6 @@ participants:
 description: "knightmb starts a discussion: Runaway CPU usage for 64bit BitCoin (Linux Client)."
 isSatoshi: false
 threadId: "bt-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
-threadPosition: 1
 tags: []
 ---
 

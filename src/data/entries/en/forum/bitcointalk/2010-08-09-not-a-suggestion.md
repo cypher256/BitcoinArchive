@@ -13,7 +13,6 @@ participants:
 description: "Red starts a discussion: Not a suggestion."
 isSatoshi: false
 threadId: "bt-not-a-suggestion"
-threadPosition: 1
 tags: []
 ---
 

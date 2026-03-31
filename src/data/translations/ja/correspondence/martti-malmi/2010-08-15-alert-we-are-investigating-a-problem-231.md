@@ -13,7 +13,6 @@ participants:
 description: "サトシがbitcoin-listメーリングリストに緊急アラートを発し、重大な問題の調査中ブロック74638以降のトランザクションを信用しないよう警告。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 231
 tags:
   - "correspondence"
   - "early-contributor"

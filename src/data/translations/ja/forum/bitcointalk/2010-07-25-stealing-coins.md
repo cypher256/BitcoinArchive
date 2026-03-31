@@ -13,7 +13,6 @@ participants:
 description: "Redがスレッドを開始: コインの窃盗"
 isSatoshi: false
 threadId: "bt-stealing-coins"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

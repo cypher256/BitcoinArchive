@@ -13,7 +13,6 @@ participants:
 description: "サトシがBitcoinコントラクト、シーケンス番号、nLockTime、高頻度取引チャネルについて最も詳細な説明を行う。merkleブランチ検証だけでは二重支払いを防止できない理由を説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 2
 tags:
   - "correspondence"
   - "bitcoinj"

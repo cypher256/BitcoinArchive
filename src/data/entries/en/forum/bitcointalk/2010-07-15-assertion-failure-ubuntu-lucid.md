@@ -13,7 +13,6 @@ participants:
 description: "singpolyma starts a discussion: Assertion Failure - Ubuntu Lucid."
 isSatoshi: false
 threadId: "bt-assertion-failure-ubuntu-lucid"
-threadPosition: 1
 tags: []
 ---
 

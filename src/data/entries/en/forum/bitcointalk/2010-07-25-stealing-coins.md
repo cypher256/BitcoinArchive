@@ -13,7 +13,6 @@ participants:
 description: "Red starts a discussion: Stealing Coins."
 isSatoshi: false
 threadId: "bt-stealing-coins"
-threadPosition: 1
 tags: []
 ---
 

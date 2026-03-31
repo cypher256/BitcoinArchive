@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "サトシがプルーフ・オブ・ワークチェーンについて説明し、正直なノードがCPUパワーの過半数を支配している限り、ノード同士が信頼し合う必要がないことを述べた。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 22
 isSatoshi: true
 tags:
   - "proof-of-work"

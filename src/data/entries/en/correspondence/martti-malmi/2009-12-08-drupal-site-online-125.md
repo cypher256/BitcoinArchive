@@ -13,7 +13,6 @@ participants:
 description: "Malmi congratulates Satoshi on the new bitcoin.org launch and confirms he has redirected bitcoin.sourceforge.net to the new site."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 125
 tags:
   - "correspondence"
   - "early-contributor"

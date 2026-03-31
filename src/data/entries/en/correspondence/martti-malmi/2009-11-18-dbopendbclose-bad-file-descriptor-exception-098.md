@@ -13,7 +13,6 @@ participants:
 description: "Malmi reports he was likely running test version 5 and explains that he uses his laptop with hibernate between different locations, which may contribute to the socket issues."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 98
 tags:
   - "correspondence"
   - "early-contributor"

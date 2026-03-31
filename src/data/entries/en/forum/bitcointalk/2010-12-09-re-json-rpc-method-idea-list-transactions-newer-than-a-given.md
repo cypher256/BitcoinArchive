@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/527/"
 threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
-threadPosition: 4
 ---
 
 I'm not talking about the normal risk for a given minconf level, I'm talking about additional pitfalls from listtransactions when used this way.

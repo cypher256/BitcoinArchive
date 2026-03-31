@@ -13,7 +13,6 @@ participants:
 description: "icaro starts a discussion: Warning : Check your system clock (help me)."
 isSatoshi: false
 threadId: "bt-warning-check-your-system-help-me"
-threadPosition: 1
 tags: []
 ---
 

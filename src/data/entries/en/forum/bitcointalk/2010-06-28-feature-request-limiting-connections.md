@@ -13,7 +13,6 @@ participants:
 description: "lachesis starts a discussion: Feature Request: Limiting Connections."
 isSatoshi: false
 threadId: "bt-feature-request-limiting-connections"
-threadPosition: 1
 tags: []
 ---
 

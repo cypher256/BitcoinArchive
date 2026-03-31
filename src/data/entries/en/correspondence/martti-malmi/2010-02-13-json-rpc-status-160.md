@@ -13,7 +13,6 @@ participants:
 description: "Satoshi announces uploading the JSON-RPC and command line implementation to SVN, shares example commands, and asks Malmi to test it with Python."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 160
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi discusses dynamic IPs on the network, asks permission to CC the conversation to bitcoin-list and the Cryptography mailing list, references Hal Finney's investment idea, envisions Bitcoin use cases including pay-to-send email and micropayments, and shares the bitcoin-list mailing list details."
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
-threadPosition: 9
 tags:
   - "correspondence"
   - "use-cases"

@@ -11,7 +11,6 @@ participants:
 description: "サトシ・ナカモトが再ビルドした64ビット版のLinux 0.3.8.1をアップロードし、テスト結果を報告。"
 isSatoshi: true
 threadId: "bt-bitcoin-generation-broken-in-0-3-8"
-threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/334/"

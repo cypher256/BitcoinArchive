@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/"
 threadId: "bt-assertion-failure-ubuntu-lucid"
-threadPosition: 3
 ---
 
 > [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](https://bitcointalk.org/index.php?topic=400.msg3815#msg3815)

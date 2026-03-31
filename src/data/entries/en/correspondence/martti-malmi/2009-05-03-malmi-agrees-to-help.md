@@ -13,7 +13,6 @@ participants:
 description: "Malmi agrees to develop the Bitcoin website and FAQ, proposes password-protected private keys, and reports running a Bitcoin node 24/7."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 2
 tags:
   - "correspondence"
   - "early-contributor"

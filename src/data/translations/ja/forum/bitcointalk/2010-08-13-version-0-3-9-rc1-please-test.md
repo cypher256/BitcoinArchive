@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/355/"
 threadId: "bt-version-0-3-9-rc1-please-test"
-threadPosition: 1
 translationStatus: complete
 ---
 

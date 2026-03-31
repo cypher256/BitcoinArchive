@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "サトシがプルーフ・オブ・ワークチェーンが同期化問題をどのように解決し、信頼を必要とせずにグローバルな共有ビューを確立するかを説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 12
 isSatoshi: true
 tags:
   - "synchronization"

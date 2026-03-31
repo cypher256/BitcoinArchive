@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/173/"
 threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
-threadPosition: 3
 ---
 
 I think I see where the problem is.  Coincidentally, I recently coded a replacement for the function in question which should fix it.  It's not enabled yet, but in the SVN version it prints a debug message in debug.log showing the new directory value and old value for comparison.

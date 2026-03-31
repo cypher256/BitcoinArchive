@@ -13,7 +13,6 @@ participants:
 description: "Satoshi tells Finney that he cannot receive incoming connections from his location, revealing an operational constraint in the earliest days of the Bitcoin network."
 isSatoshi: true
 threadId: "satoshi-hal-finney-private"
-threadPosition: 3
 tags:
   - "correspondence"
   - "network"

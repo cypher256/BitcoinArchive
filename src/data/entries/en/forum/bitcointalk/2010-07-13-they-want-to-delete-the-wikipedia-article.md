@@ -13,7 +13,6 @@ participants:
 description: "Giulio Prisco starts a discussion: They want to delete the Wikipedia article."
 isSatoshi: false
 threadId: "bt-they-want-to-delete-the-wikipedia-article"
-threadPosition: 1
 tags: []
 ---
 

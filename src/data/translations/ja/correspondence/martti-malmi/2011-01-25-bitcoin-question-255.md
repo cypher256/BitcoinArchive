@@ -13,7 +13,6 @@ participants:
 description: "Bitcoinに関する質問の転送メール"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 255
 tags:
   - "correspondence"
   - "early-contributor"

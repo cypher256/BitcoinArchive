@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/492/"
 threadId: "bt-website-and-software-translations"
-threadPosition: 7
 ---
 
 The order matters not to the program, but it matters to me maintaining it.  If it jumbles the order of the .po file then I can't diff for changes.  I have to update all 7 translation files when I change the English text in the program, and it's easier when they're all in the same order.

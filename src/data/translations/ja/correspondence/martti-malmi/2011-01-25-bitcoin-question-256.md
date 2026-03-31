@@ -13,7 +13,6 @@ participants:
 description: "サトシがBitcoinホワイトペーパーの公開は2009年ではなく2008年であると明確にし、Wikipediaの誤記修正を呼びかけ。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 256
 tags:
   - "correspondence"
   - "early-contributor"

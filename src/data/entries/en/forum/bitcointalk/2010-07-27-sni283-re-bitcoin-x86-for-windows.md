@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/283/"
 threadId: "bt-bitcoin-x86-for-windows"
-threadPosition: 4
 ---
 
 OK, thanks.  I'd also like to know if it runs fine as long as you don't turn on Generate.  You'd think as long as it doesn't actually execute any SSE2 instructions, it would still load.  At least Pentium 3's could run it without generating.

@@ -11,7 +11,6 @@ participants:
 description: "satoshiがスレッドを開始: 0.3ほぼ完成"
 isSatoshi: true
 threadId: "bt-0-3-almost-ready"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

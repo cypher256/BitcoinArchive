@@ -14,7 +14,6 @@ description: "Peter Todd's reply to Satoshi Nakamoto's post about transaction re
 isSatoshi: false
 isConversation: true
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 8
 inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"
 tags:
   - "replace-by-fee"

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi sends the linux-0.1.6-test5 build as an email attachment for testing."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 79
 tags:
   - "correspondence"
   - "early-contributor"

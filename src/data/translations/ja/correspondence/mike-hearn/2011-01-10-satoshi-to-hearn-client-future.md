@@ -13,7 +13,6 @@ participants:
 description: "サトシは元のソフトウェアがGPUファーム向けの産業用ツールとなる一方、クライアント実装がUIイノベーションを推進すると予測する。2100万枚のコイン上限の背後にある数学的根拠を明かす。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-more-questions"
-threadPosition: 6
 tags:
   - "correspondence"
   - "bitcoinj"

@@ -13,7 +13,6 @@ participants:
 description: "fergalishがスレッドを開始: Bitcoinの自動renice"
 isSatoshi: false
 threadId: "bt-bitcoin-auto-renice-ing"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

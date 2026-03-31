@@ -13,7 +13,6 @@ participants:
 description: "gridecon starts a discussion: Bitcoin minting is thermodynamically perverse."
 isSatoshi: false
 threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
-threadPosition: 1
 tags: []
 ---
 

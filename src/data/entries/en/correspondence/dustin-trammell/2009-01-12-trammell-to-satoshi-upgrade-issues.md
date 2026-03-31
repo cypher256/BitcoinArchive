@@ -13,7 +13,6 @@ participants:
 description: "Trammell reports two issues when upgrading from v0.1.0 to v0.1.3: the old process wouldn't exit, and all four generated coins now showed 'Generated (not accepted)' — likely orphaned blocks from the communications bug."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 4
 tags:
   - "correspondence"
   - "early-adopter"

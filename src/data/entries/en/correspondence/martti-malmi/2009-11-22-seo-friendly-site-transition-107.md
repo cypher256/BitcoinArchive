@@ -13,7 +13,6 @@ participants:
 description: "I'll be afk 23.-25.11."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 107
 tags:
   - "correspondence"
   - "early-contributor"

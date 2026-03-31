@@ -14,7 +14,6 @@ description: "トランザクション置換に関するサトシ・ナカモト
 isSatoshi: false
 isConversation: true
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 8
 inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"
 tags:
   - "replace-by-fee"

@@ -13,7 +13,6 @@ participants:
 description: "nelisky starts a discussion: auto backing up of wallet.dat."
 isSatoshi: false
 threadId: "bt-auto-backing-up-of-wallet-dat"
-threadPosition: 1
 tags: []
 ---
 

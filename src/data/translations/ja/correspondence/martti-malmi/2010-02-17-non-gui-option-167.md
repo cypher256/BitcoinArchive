@@ -13,7 +13,6 @@ participants:
 description: "マルミがBitcoinをGUIなしで実行する方法について調査結果を共有し、GTKのヘッドレスサポートやwxAppConsoleなどのアプローチを提案する。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 167
 tags:
   - "correspondence"
   - "early-contributor"

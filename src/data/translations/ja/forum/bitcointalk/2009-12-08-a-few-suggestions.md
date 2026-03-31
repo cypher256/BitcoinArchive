@@ -13,7 +13,6 @@ participants:
 description: "madhatterがスレッドを開始: いくつかの提案"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

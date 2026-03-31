@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/275/"
 threadId: "bt-json-rpc-password"
-threadPosition: 14
 ---
 
 > [Quote from: gavinandresen on July 25, 2010, 09:38:19 PM](https://bitcointalk.org/index.php?topic=461.msg5768#msg5768)

@@ -13,7 +13,6 @@ participants:
 description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼は信頼できる、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 241
 tags:
   - "correspondence"
   - "early-contributor"

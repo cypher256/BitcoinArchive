@@ -13,7 +13,6 @@ participants:
 description: "MoonShadowがスレッドを開始: Bitcoin監視サービス"
 isSatoshi: false
 threadId: "bt-bitcoin-watchdog-service"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

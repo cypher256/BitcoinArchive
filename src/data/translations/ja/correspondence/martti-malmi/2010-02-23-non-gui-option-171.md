@@ -13,7 +13,6 @@ participants:
 description: "おそらくapt-get install libgtk2.0-0だったと思います。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 171
 tags:
   - "correspondence"
   - "early-contributor"

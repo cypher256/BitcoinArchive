@@ -13,7 +13,6 @@ participants:
 description: "-------- Original Message --------"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 204
 tags:
   - "correspondence"
   - "early-contributor"

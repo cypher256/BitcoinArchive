@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/292/"
 threadId: "bt-alert-upgrade-to-0-3-6-asap"
-threadPosition: 2
 translationStatus: complete
 ---
 

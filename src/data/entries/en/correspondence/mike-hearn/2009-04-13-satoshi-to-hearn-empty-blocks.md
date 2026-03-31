@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains that the chain must keep extending even without transactions, to prevent attackers from catching up."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 6
 tags:
   - "correspondence"
   - "empty-blocks"

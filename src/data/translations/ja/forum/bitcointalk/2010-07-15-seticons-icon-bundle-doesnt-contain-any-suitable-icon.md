@@ -13,7 +13,6 @@ participants:
 description: "EricJ2190がスレッドを開始: \"SetIcons(): icon bundle doesn't contain any suitable icon\""
 isSatoshi: false
 threadId: "bt-seticons-icon-bundle-doesn-t-contain-any-suitable-"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

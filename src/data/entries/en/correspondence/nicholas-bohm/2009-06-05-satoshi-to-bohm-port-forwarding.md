@@ -13,7 +13,6 @@ participants:
 description: "Satoshi advises Bohm to forward port 8333 on his new router so his Bitcoin node can receive incoming connections, explaining that if no online nodes can accept inbound connections, the network fails to function."
 isSatoshi: true
 threadId: "satoshi-nicholas-bohm"
-threadPosition: 2
 tags:
   - "correspondence"
   - "network"

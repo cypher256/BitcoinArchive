@@ -13,7 +13,6 @@ participants:
 description: "Satoshi adds the SourceForge tracker to the SourceForge page but removes it from bitcoin.org due to SSL mixed content warnings and privacy concerns."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 122
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn suggests UPnP for port forwarding, asks about version notifications, and proposes a micropayment system for web browsers using EV SSL certificates."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 13
 tags:
   - "correspondence"
   - "upnp"

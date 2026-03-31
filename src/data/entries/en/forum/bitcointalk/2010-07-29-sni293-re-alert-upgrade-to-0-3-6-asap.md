@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/293/"
 threadId: "bt-alert-upgrade-to-0-3-6-asap"
-threadPosition: 3
 ---
 
 "./bitcoin: /lib64/libc.so.6: version `GLIBC_2.11' not found (required by ./bitcoin)" isn't a new problem that started with 0.3.6 is it?  This was built on the same OS installations as 0.3.0.

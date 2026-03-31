@@ -13,7 +13,6 @@ participants:
 description: "psyvenrix starts a discussion: Having problems specifing -datadir."
 isSatoshi: false
 threadId: "bt-having-problems-specifing-datadir"
-threadPosition: 1
 tags: []
 ---
 

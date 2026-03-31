@@ -13,7 +13,6 @@ participants:
 description: "トランメルがサトシにコイン送金用のIPアドレスを提供し、proof-hashesグループは投稿に制限がないことを説明し、ビットコインの初期の課題について議論し、マイニングをルーレットに例えた。"
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 7
 tags:
   - "correspondence"
   - "early-adopter"

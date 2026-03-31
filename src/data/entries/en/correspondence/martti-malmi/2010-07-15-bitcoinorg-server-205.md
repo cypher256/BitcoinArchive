@@ -13,7 +13,6 @@ participants:
 description: "Satoshi praises the current bitcoin.org hosting choice, advises against switching, and asks about the status of the anonymous $2,000 donation."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 205
 tags:
   - "correspondence"
   - "early-contributor"

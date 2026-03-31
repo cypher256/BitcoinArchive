@@ -13,7 +13,6 @@ participants:
 description: "Malmi shares a community-proposed mirroring method for bitcoin.org and asks whether to share the database with trusted members or use PGP-encrypted backups."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 250
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "サトシがBitcoin Linux 0.1.6-test1ビルドをメール添付でマルミに送付し、テストを依頼。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 62
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "サトシがアダム・バックに最後のメールを送り、以前の論文紹介への感謝を述べるとともに、ビットコインソフトウェアのローンチを報告した。暗号学メーリングリストでのハル・フィニーによるプロジェクト概要も添付された。"
 isSatoshi: true
 threadId: "satoshi-adam-back"
-threadPosition: 5
 tags:
   - "hashcash"
   - "adam-back"

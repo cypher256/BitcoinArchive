@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/56/"
 threadId: "bt-what-s-with-this-odd-generation"
-threadPosition: 3
 ---
 
 > [Quote from: theymos on February 12, 2010, 08:31:52 AM](https://bitcointalk.org/index.php?topic=48.msg318#msg318)

@@ -16,7 +16,6 @@ tags:
   - "central-banking"
   - "cryptographic-proof"
 threadId: "p2pfoundation-bitcoin-open-source"
-threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/"

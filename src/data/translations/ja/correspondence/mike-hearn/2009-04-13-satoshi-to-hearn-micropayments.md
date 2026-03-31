@@ -13,7 +13,6 @@ participants:
 description: "サトシが、マイクロペイメントは即座に安全に受け入れられることを説明し、マーチャントが二重支払い攻撃を検出する方法を説明し、プルーフ・オブ・ワークの難易度は伝達されるのではなくハードコードされていることを明確にする。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 5
 tags:
   - "correspondence"
   - "micropayments"

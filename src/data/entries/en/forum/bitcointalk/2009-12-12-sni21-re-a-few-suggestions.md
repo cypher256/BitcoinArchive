@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/21/"
 threadId: "bt-a-few-suggestions"
-threadPosition: 5
 ---
 
 > [Quote from: madhatter2 on December 12, 2009, 06:34:21 AM](https://bitcointalk.org/index.php?topic=12.msg51#msg51)

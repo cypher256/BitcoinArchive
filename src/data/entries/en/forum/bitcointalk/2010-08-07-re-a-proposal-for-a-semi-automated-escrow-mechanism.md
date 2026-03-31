@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/"
 threadId: "bt-a-proposal-for-a-semi-automated-escrow-mechanism"
-threadPosition: 3
 ---
 
 > [Quote from: jgarzik on August 05, 2010, 07:00:30 PM](https://bitcointalk.org/index.php?topic=645.msg7723#msg7723)

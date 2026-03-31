@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzik starts a discussion: Transaction / spam flood attack currently under way."
 isSatoshi: false
 threadId: "bt-transaction-spam-flood-attack"
-threadPosition: 1
 tags: []
 ---
 

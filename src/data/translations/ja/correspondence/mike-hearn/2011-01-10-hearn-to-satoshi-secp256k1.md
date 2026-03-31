@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがsecp256k1曲線のセキュリティに関するフォーラムの議論をサトシに紹介し、ハル・フィニーのリスクプロファイルに関する懸念を指摘する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
-threadPosition: 7
 tags:
   - "correspondence"
   - "secp256k1"

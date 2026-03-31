@@ -11,7 +11,6 @@ participants:
 description: "サトシ・ナカモトの投稿: \"初期ブロックダウンロードの高速化（5倍高速）\"."
 isSatoshi: true
 threadId: "bt-faster-initial-block-download"
-threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/258/"

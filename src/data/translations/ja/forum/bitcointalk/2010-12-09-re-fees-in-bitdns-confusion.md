@@ -13,7 +13,6 @@ participants:
 description: "サトシ・ナカモトがトランザクション置換の可能な設計を説明 — 手数料の高い二重支払いで元のトランザクションを置き換える仕組み。この概念は後にReplace-by-Fee（RBF）として知られるようになる。ピーター・トッドが約1.5時間後にこの投稿に返信した。"
 isSatoshi: true
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 7
 inReplyTo: "forum/bitcointalk/2010-12-09-jgarzik-2-re-fees-in-bitdns-confusion"
 tags:
   - "replace-by-fee"

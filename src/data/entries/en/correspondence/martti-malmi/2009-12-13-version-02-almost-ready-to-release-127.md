@@ -13,7 +13,6 @@ participants:
 description: "No problems so far. Seems fine."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 127
 tags:
   - "correspondence"
   - "early-contributor"

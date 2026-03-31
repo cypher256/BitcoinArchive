@@ -13,7 +13,6 @@ participants:
 description: "riXがスレッドを開始: コイン送信時のBitcoinクラッシュ"
 isSatoshi: false
 threadId: "bt-bitcoin-crash-when-sending-coins"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

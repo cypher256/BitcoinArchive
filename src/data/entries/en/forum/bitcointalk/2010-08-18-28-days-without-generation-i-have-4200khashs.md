@@ -13,7 +13,6 @@ participants:
 description: "kosovito starts a discussion: 28 days without generation, i have 4200khash/s."
 isSatoshi: false
 threadId: "bt-28-days-without-generation-i-have-4200khash-s"
-threadPosition: 1
 tags: []
 ---
 

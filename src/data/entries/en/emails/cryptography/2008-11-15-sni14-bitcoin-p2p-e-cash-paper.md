@@ -12,7 +12,6 @@ participants:
     slug: "ray-dillinger"
 description: "Satoshi explains that Bitcoin uses ECC digital signatures with a new key pair for every transaction, providing pseudonymity, and that 5-10 block confirmations are typically sufficient."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 27
 isSatoshi: true
 tags:
   - "pseudonymity"

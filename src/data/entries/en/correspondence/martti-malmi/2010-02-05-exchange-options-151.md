@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains how Bitcoin's ease of acquisition could bootstrap a micropayment ecosystem, comparing it to paper money's historical relationship with gold."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 151
 tags:
   - "correspondence"
   - "early-contributor"

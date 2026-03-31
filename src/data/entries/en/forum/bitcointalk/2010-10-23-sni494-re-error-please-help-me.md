@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/494/"
 threadId: "bt-error-please-help-me"
-threadPosition: 3
 ---
 
 OK, if it really won't get past block 1698 on redownload, then we're in stranger territory.

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/35/"
 threadId: "bt-bitcoin-crash-when-sending-coins"
-threadPosition: 3
 translationStatus: complete
 ---
 

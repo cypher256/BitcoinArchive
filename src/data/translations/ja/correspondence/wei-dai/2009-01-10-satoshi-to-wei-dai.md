@@ -13,7 +13,6 @@ participants:
 description: "サトシがウェイ・ダイにBitcoin v0.1のリリースを告知し、b-moneyのほぼすべての目標を達成したと述べている。ハル・フィニーのシステム概要を引用。"
 isSatoshi: true
 threadId: "satoshi-wei-dai"
-threadPosition: 3
 tags:
   - "b-money"
   - "bitcoin-release"

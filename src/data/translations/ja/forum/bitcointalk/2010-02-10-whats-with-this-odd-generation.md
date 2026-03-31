@@ -13,7 +13,6 @@ participants:
 description: "theymosがスレッドを開始: この奇妙な生成は何ですか？"
 isSatoshi: false
 threadId: "bt-what-s-with-this-odd-generation"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -28,7 +28,7 @@ export async function getStaticPaths() {
   return [...threadMap.entries()]
     .filter(([_, msgs]) => msgs.length >= 2)
     .map(([threadId, msgs]) => {
-      msgs.sort((a, b) => (a.data.threadPosition ?? 0) - (b.data.threadPosition ?? 0));
+      msgs.sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime());
       return {
         params: { threadId },
         props: {

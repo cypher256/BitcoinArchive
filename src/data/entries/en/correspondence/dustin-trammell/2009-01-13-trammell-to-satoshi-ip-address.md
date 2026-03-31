@@ -13,7 +13,6 @@ participants:
 description: "Trammell provides his IP address for Satoshi to send coins, explains the proof-hashes group is open for posting, discusses Bitcoin's early vulnerability, gives his IP address, and compares mining to a roulette wheel."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 7
 tags:
   - "correspondence"
   - "early-adopter"

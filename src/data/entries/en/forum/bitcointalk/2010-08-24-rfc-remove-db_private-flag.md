@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzik starts a discussion: RFC: remove DB_PRIVATE flag."
 isSatoshi: false
 threadId: "bt-rfc-remove-db-private-flag"
-threadPosition: 1
 tags: []
 ---
 

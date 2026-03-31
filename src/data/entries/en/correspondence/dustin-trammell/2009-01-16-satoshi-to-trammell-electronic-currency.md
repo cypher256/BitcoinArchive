@@ -13,7 +13,6 @@ participants:
 description: "Satoshi CC's his conversation with Trammell to bitcoin-list and the Cryptography mailing list, sharing his vision for Bitcoin's future including the famous line 'It might make sense just to get some in case it catches on.' This is the public version of his earlier private email to Trammell."
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
-threadPosition: 13
 tags:
   - "correspondence"
   - "use-cases"

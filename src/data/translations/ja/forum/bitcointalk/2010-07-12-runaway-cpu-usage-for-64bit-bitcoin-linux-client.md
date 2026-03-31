@@ -13,7 +13,6 @@ participants:
 description: "knightmbがスレッドを開始: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
 isSatoshi: false
 threadId: "bt-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

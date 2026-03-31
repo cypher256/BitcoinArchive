@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/537/"
 threadId: "bt-bitdns-and-generalizing-bitcoin"
-threadPosition: 5
 ---
 
 > [Quote from: Hal on December 10, 2010, 07:14:04 PM](https://bitcointalk.org/index.php?topic=1790.msg28938#msg28938)

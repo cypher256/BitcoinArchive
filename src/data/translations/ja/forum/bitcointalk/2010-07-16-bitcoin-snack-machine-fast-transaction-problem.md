@@ -13,7 +13,6 @@ participants:
 description: "Instiがスレッドを開始: Bitcoin自動販売機（高速トランザクション問題）"
 isSatoshi: false
 threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

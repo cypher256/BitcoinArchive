@@ -13,7 +13,6 @@ participants:
 description: "トランメルが最も強力なノードがビットコインの大半を生成することを何が防ぐのかを質問――マイニングの中央集権化に関する最も初期の問題提起の一つ。"
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 5
 tags:
   - "correspondence"
   - "early-adopter"

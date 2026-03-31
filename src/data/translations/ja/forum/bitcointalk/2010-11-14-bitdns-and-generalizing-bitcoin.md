@@ -13,7 +13,6 @@ participants:
 description: "appamattoがスレッドを開始: BitDNSとBitcoinの汎用化"
 isSatoshi: false
 threadId: "bt-bitdns-and-generalizing-bitcoin"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

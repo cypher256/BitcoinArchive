@@ -13,7 +13,6 @@ participants:
 description: "Satoshi warns against running Bitcoin in Wine due to unfixable Berkeley DB incompatibility causing database corruption, and notes that GCC 4.3.3 on Linux optimizes SHA-256 better."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 71
 tags:
   - "correspondence"
   - "early-contributor"

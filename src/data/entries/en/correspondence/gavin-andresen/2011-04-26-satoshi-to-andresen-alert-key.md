@@ -13,7 +13,6 @@ participants:
 description: "Satoshi Nakamoto's last known private email. He transfers the Bitcoin network alert key to Gavin Andresen, asks him to stop portraying him as a 'mysterious shadowy figure,' and announces he has moved on to other things."
 isSatoshi: true
 threadId: "satoshi-gavin-andresen"
-threadPosition: 3
 tags:
   - "correspondence"
   - "alert-key"

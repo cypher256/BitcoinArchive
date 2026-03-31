@@ -11,7 +11,6 @@ participants:
 description: "サトシ・ナカモトによるBitcoin v0.1.5スレッドへの返信。ハル・フィニーとの議論で、NAT環境でのマルチノード運用、タイムスタンプ機能、ライブラリインターフェースについて。"
 isSatoshi: true
 threadId: "bitcoin-list-v015-released"
-threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/27/"

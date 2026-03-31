@@ -13,7 +13,6 @@ participants:
 description: "アダム・バックがHashcashの引用を確認し、ウェイ・ダイのb-money提案を参照するよう提案。この紹介がサトシをウェイ・ダイへの連絡とホワイトペーパーでのb-money引用につながった。"
 isSatoshi: false
 threadId: "satoshi-adam-back"
-threadPosition: 2
 tags:
   - "hashcash"
   - "adam-back"

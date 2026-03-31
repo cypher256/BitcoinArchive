@@ -13,7 +13,6 @@ participants:
 description: "マルミがビットコイン交換サービスの計画を説明し、ZayPayによるSMS決済、Pecunixでの準備金管理、IBAN送金での買い取りなどの方針を示す。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 162
 tags:
   - "correspondence"
   - "early-contributor"

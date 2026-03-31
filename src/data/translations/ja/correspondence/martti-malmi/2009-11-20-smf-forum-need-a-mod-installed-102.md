@@ -13,7 +13,6 @@ participants:
 description: "bitcoin.orgの情報をあなたのサイトのコンテンツと統合して、bitcoin.orgドメイン全体を切り替えることを考えています。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 102
 tags:
   - "correspondence"
   - "early-contributor"

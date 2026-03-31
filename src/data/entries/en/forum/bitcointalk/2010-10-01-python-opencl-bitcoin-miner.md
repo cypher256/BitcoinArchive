@@ -13,7 +13,6 @@ participants:
 description: "m0mchil starts a discussion: python OpenCL bitcoin miner."
 isSatoshi: false
 threadId: "bt-opencl-miner-for-the-masses"
-threadPosition: 1
 tags: []
 ---
 

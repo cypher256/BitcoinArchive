@@ -13,7 +13,6 @@ participants:
 description: "引退した英国の事務弁護士であり初期のビットコインユーザーであるニコラス・ボームが、新しいルーターを設置した後、ビットコインクライアントがネットワークに接続できなくなったとサトシに報告した。"
 isSatoshi: false
 threadId: "satoshi-nicholas-bohm"
-threadPosition: 1
 tags:
   - "correspondence"
   - "early-adopter"

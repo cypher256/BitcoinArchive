@@ -13,7 +13,6 @@ participants:
 description: "サトシが自動起動とタスクトレイ最小化はネットワーク成長のための「必須機能」であると強調し、初期のファイル共有ネットワークの戦略と比較した。この機能はビットコイン0.2でマルミにより実装された。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 31
 tags:
   - "correspondence"
   - "early-contributor"

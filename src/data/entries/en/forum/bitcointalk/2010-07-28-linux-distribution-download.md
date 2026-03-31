@@ -13,7 +13,6 @@ participants:
 description: "Odin starts a discussion: Linux distribution download."
 isSatoshi: false
 threadId: "bt-linux-distribution-download"
-threadPosition: 1
 tags: []
 ---
 

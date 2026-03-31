@@ -13,7 +13,6 @@ participants:
 description: "Insti starts a discussion: Bitcoin snack machine (fast transaction problem)."
 isSatoshi: false
 threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
-threadPosition: 1
 tags: []
 ---
 

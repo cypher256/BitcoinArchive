@@ -13,7 +13,6 @@ participants:
 description: "Satoshi Nakamoto's earliest known email. He contacts Adam Back to verify the correct citation for the Hashcash paper and shares a pre-release draft titled 'Electronic Cash Without a Trusted Third Party' (ecash.pdf)."
 isSatoshi: true
 threadId: "satoshi-adam-back"
-threadPosition: 1
 tags:
   - "hashcash"
   - "earliest-correspondence"

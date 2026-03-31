@@ -13,7 +13,6 @@ participants:
 description: "お元気ですか？しばらく姿を見かけませんでしたね。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 191
 tags:
   - "correspondence"
   - "early-contributor"

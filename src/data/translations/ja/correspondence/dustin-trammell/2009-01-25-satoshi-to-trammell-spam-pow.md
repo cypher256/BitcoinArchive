@@ -13,7 +13,6 @@ participants:
 description: "サトシがハル・フィニーのボットネットと送金時課金型メールに関する指摘に応答し、偽のメールボックスがスパマーのPOWトークンを回収することで「リバース・スパミング」を行い、自滅的なサイクルを生み出すという経済的議論を提案した。また、e-goldの「ダスティング」スパム問題についても言及した。"
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
-threadPosition: 20
 tags:
   - "correspondence"
   - "spam"

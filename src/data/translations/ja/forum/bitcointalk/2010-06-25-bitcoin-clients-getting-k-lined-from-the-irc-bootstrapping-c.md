@@ -13,7 +13,6 @@ participants:
 description: "Xunieがスレッドを開始: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
 isSatoshi: false
 threadId: "bt-bitcoin-clients-getting-k-lined-from-the-irc-boots"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

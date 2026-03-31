@@ -14,7 +14,6 @@ participants:
     slug: "jonathan-thornburg"
 description: "Hal Finney responds to Thornburg's regulatory concerns, arguing that Bitcoin has no single point of failure — 'no mint, no company with officers that can be subpoenaed and arrested and shut down.' He identifies the 'decentralized, global, irreversible transaction database' as Bitcoin's core innovation, presciently predicting the broader blockchain movement."
 threadId: "bitcoin-v0-1-released"
-threadPosition: 5
 inReplyTo: "emails/cryptography/2009-01-17-re-bitcoin-v0-1-released-thornburg"
 isSatoshi: false
 tags:

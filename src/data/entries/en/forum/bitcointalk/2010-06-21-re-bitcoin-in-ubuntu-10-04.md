@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/130/"
 threadId: "bt-bitcoin-in-ubuntu-10-04"
-threadPosition: 2
 ---
 
 > [Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM](https://bitcointalk.org/index.php?topic=149.msg1203#msg1203)

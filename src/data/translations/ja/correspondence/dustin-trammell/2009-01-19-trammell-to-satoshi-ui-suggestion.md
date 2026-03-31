@@ -13,7 +13,6 @@ participants:
 description: "トランメルが誤ラベルは自分のミスであったことを認め、「Received with」を「Received payment to」に変更する提案を行い、複数の受信アドレスに最も近い現実世界のアナロジーとしてPayPalを例に挙げた。"
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 19
 tags:
   - "correspondence"
   - "usability"

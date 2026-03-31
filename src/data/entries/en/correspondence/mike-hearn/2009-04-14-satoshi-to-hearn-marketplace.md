@@ -13,7 +13,6 @@ participants:
 description: "Satoshi mentions implementing a marketplace feature like eBay and offers to send Mike coins for testing."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 8
 tags:
   - "correspondence"
   - "marketplace"

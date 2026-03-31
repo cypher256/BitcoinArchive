@@ -13,7 +13,6 @@ participants:
 description: "Giulio Priscoがスレッドを開始: WikipediaのBitcoin記事"
 isSatoshi: false
 threadId: "bt-they-want-to-delete-the-wikipedia-article"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

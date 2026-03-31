@@ -13,7 +13,6 @@ participants:
 description: "tcatm starts a discussion: 4 hashes parallel on SSE2 CPUs for 0.3.6."
 isSatoshi: false
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
-threadPosition: 1
 tags: []
 ---
 

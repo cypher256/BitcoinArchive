@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn sends Satoshi 32.51 coins and asks whether transaction comments could be encrypted using the receiver's public key."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 9
 tags:
   - "correspondence"
   - "transaction"

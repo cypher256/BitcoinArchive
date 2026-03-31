@@ -13,7 +13,6 @@ participants:
 description: "サトシがBitcoin 0.3.18のリリースをメーリングリストに告知。wallet.datの互換性修正とギャビンのアカウントベースJSON-RPCコマンドを搭載。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 247
 tags:
   - "correspondence"
   - "early-contributor"

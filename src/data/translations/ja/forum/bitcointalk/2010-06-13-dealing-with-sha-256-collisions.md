@@ -13,7 +13,6 @@ participants:
 description: "lachesisがスレッドを開始: SHA-256衝突への対処"
 isSatoshi: false
 threadId: "bt-dealing-with-sha-256-collisions"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

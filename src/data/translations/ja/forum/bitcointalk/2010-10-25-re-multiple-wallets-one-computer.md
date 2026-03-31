@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/498/"
 threadId: "bt-multiple-wallets-one-computer"
-threadPosition: 3
 translationStatus: complete
 ---
 

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/406/"
 threadId: "bt-need-a-post-writing-up-some-things-users-should-kn"
-threadPosition: 2
 ---
 
 The clock part will be covered in the next release (0.3.11 or higher).  SVN rev 141 pops up a message box if your clock is too far off.

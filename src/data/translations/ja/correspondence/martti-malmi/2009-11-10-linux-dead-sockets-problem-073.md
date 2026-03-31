@@ -13,7 +13,6 @@ participants:
 description: "サトシがLinux上のゾンビソケット問題を診断。デッド接続により生成ブロックが失われた原因を特定し、ブロック確認ステータス表示の改善案を検討。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 73
 tags:
   - "correspondence"
   - "early-contributor"

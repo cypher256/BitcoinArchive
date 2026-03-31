@@ -13,7 +13,6 @@ participants:
 description: "For \"normal members\" I disabled \"Request notification on replies\" and"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 222
 tags:
   - "correspondence"
   - "early-contributor"

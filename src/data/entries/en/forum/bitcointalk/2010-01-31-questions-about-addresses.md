@@ -13,7 +13,6 @@ participants:
 description: "Sabunir starts a discussion: Questions about Addresses."
 isSatoshi: false
 threadId: "bt-questions-about-addresses"
-threadPosition: 1
 tags: []
 ---
 

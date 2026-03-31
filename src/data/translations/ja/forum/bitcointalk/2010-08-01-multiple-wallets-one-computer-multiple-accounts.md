@@ -13,7 +13,6 @@ participants:
 description: "bytemasterがスレッドを開始: 複数のウォレット、1台のコンピュータ"
 isSatoshi: false
 threadId: "bt-multiple-wallets-one-computer"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

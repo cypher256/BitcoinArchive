@@ -13,7 +13,6 @@ participants:
 description: "riX starts a discussion: Bitcoin crash when sending coins."
 isSatoshi: false
 threadId: "bt-bitcoin-crash-when-sending-coins"
-threadPosition: 1
 tags: []
 ---
 

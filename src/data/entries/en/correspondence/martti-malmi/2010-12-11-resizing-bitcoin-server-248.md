@@ -13,7 +13,6 @@ participants:
 description: "Malmi reports that bitcoin.org went down again due to an out-of-memory error killing mysqld, and describes upgrading the server from 512MB to 1024MB RAM."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 248
 tags:
   - "correspondence"
   - "early-contributor"

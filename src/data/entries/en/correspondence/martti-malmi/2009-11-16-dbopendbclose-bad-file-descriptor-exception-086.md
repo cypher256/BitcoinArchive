@@ -13,7 +13,6 @@ participants:
 description: "Satoshi has an idea for a workaround for the Berkeley DB 'Bad file descriptor' exception and asks Liberty Standard which database files are triggering the errors."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 86
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "サトシがWine上でのBitcoin実行はBerkeley DBの互換性問題によるデータベース破損のリスクがあると警告。LinuxのGCC 4.3.3がSHA-256をより効率的に最適化する点にも言及。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 71
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains his most detailed merged mining proposal, reveals the abandoned eBay-style marketplace feature, and clarifies that alternative chains are completely independent with shared miners."
 isSatoshi: true
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 4
 tags:
   - "correspondence"
   - "merged-mining"

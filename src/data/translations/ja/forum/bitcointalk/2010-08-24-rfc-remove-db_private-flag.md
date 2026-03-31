@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzikがスレッドを開始: RFC: DB_PRIVATEフラグの削除"
 isSatoshi: false
 threadId: "bt-rfc-remove-db-private-flag"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

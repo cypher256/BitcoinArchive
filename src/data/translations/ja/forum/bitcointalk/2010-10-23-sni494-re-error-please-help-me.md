@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/494/"
 threadId: "bt-error-please-help-me"
-threadPosition: 3
 translationStatus: complete
 ---
 

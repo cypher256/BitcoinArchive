@@ -13,7 +13,6 @@ participants:
 description: "Xunie starts a discussion: Bitcoin clients getting k-lined from the IRC bootstrapping channel."
 isSatoshi: false
 threadId: "bt-bitcoin-clients-getting-k-lined-from-the-irc-boots"
-threadPosition: 1
 tags: []
 ---
 

@@ -13,7 +13,6 @@ participants:
 description: "サトシがデフォルトのアドレスラベルは「Your Address」であると説明し、誤ラベルは紛らわしいUIに起因するユーザーの操作ミスであったと示唆し、支払者ごとに受信アドレスを作成するという概念は現実世界に類似するものがないという根本的なUXの課題を認めた。"
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
-threadPosition: 18
 tags:
   - "correspondence"
   - "usability"

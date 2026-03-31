@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn acknowledges the double-spend verification issue, asks about the publish/subscribe protocol feature, and seeks clarification on Satoshi's merged mining proposal."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 3
 tags:
   - "correspondence"
   - "contracts"

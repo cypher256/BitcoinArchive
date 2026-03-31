@@ -13,7 +13,6 @@ participants:
 description: "lfm starts a discussion: bitcoin generation broken in 0.3.8?  (64-bit)."
 isSatoshi: false
 threadId: "bt-bitcoin-generation-broken-in-0-3-8"
-threadPosition: 1
 tags: []
 ---
 

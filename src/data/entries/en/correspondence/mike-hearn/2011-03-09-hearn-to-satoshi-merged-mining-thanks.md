@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn thanks Satoshi and notes that Hal Finney had correctly speculated about the merkle root approach in the tx0 scriptSig."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 5
 tags:
   - "correspondence"
   - "merged-mining"

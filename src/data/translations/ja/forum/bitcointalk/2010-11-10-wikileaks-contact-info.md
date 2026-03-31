@@ -13,7 +13,6 @@ participants:
 description: "genjixがスレッドを開始: ギャビンのCIAプレゼンテーション計画"
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -29,7 +29,6 @@ const entrySchema = z.object({
   participants: z.array(participantSchema).default([]),
   description: z.string(),
   threadId: z.string().optional(),
-  threadPosition: z.number().optional(),
   inReplyTo: z.string().optional(),
   isSatoshi: z.boolean().default(false),
   isConversation: z.boolean().default(false),

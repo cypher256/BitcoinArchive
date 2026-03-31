@@ -13,7 +13,6 @@ participants:
 description: "davuxがスレッドを開始: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
 isSatoshi: false
 threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

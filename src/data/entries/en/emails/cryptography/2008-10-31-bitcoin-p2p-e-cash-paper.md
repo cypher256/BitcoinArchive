@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's first public announcement of Bitcoin on the Cryptography Mailing List. He introduces a peer-to-peer electronic cash system with no trusted third party."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 1
 isSatoshi: true
 tags:
   - "announcement"

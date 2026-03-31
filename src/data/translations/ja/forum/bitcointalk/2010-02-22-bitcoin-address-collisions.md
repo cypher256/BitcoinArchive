@@ -13,7 +13,6 @@ participants:
 description: "NewLibertyStandardがスレッドを開始: Bitcoinアドレスの衝突"
 isSatoshi: false
 threadId: "bt-bitcoin-address-collisions"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

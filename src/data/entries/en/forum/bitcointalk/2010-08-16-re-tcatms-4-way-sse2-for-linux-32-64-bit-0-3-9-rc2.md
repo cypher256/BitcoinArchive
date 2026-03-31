@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/384/"
 threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
-threadPosition: 4
 ---
 
 > [Quote from: tcatm on August 16, 2010, 12:43:39 AM](https://bitcointalk.org/index.php?topic=820.msg9617#msg9617)

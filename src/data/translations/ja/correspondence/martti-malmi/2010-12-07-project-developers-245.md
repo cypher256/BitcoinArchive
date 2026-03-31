@@ -13,7 +13,6 @@ participants:
 description: "サトシがマルミのコード貢献を認め、bitcoin.orgの連絡先ページのプロジェクト開発者リストへの追加を提案。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 245
 tags:
   - "correspondence"
   - "early-contributor"

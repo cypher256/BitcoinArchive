@@ -11,7 +11,6 @@ participants:
 description: "Jeff Garzik suggests users increase transaction fees if confirmations are slow, and notes that specialized software for non-currency transactions would provide user-friendly fee interfaces."
 isSatoshi: false
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 2
 inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

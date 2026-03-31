@@ -13,7 +13,6 @@ participants:
 description: "トランメルがサトシに自身が管理するproof-hashes Googleグループについて説明し、クレジット欄の表示についてフィードバックを提供し、v0.1.1を実行中であったことを報告してアップグレードを予定していると伝え、新機能のテストに協力を申し出ている。"
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 3
 tags:
   - "correspondence"
   - "early-adopter"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/284/"
 threadId: "bt-having-problems-specifing-datadir"
-threadPosition: 2
 ---
 
 It was able to reproduce this.  The database doesn't like the relative path.

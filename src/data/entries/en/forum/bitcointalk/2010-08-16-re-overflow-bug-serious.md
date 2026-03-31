@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 9
 ---
 
 > [Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](https://bitcointalk.org/index.php?topic=823.msg9609#msg9609)

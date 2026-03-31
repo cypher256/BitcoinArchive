@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/408/"
 threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
-threadPosition: 5
 ---
 
 Thanks for clearing that up.  I read the link someone posted about AMD making that change around 2007, but I didn't know what the story was for Intel.

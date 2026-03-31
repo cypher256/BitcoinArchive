@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/310/"
 threadId: "bt-bitcoind-x86-binary-for-centos"
-threadPosition: 2
 ---
 
 > [Quote from: sgtstein on August 03, 2010, 05:30:37 PM](https://bitcointalk.org/index.php?topic=685.msg7275#msg7275)

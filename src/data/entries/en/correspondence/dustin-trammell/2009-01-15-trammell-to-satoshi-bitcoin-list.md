@@ -13,7 +13,6 @@ participants:
 description: "Trammell confirms his IP is static at work/home, agrees to CC conversations publicly, announces he'll join bitcoin-list, reveals he started mining partly as an investment after reading Hal Finney's message, and discusses micropayment adoption challenges."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 12
 tags:
   - "correspondence"
   - "early-adopter"

@@ -12,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "Satoshi replies to Hal Finney's detailed technical questions, explaining how the longest chain resolves competing blocks and how transaction broadcasts are tolerant of dropped messages."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 11
 isSatoshi: true
 tags:
   - "longest-chain"

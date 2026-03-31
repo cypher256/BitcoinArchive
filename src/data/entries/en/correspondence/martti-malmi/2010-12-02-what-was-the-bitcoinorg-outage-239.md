@@ -13,7 +13,6 @@ participants:
 description: "Satoshi asks Malmi about the cause of a bitcoin.org outage and inquires about backup procedures, suggesting a mirror backup arrangement."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 239
 tags:
   - "correspondence"
   - "early-contributor"

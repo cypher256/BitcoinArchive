@@ -13,7 +13,6 @@ participants:
 description: "Trammell realizes the confusing 'Satoshi' label was on his own receiving address, confirms he has multiple addresses at home, and asks whether 'Satoshi' was the default label since he doesn't recall setting it."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 17
 tags:
   - "correspondence"
   - "usability"

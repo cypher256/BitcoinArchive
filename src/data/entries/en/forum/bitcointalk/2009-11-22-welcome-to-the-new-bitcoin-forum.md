@@ -11,7 +11,6 @@ participants:
 description: "Satoshi Nakamoto's post: \"Welcome to the new Bitcoin forum!\"."
 isSatoshi: true
 threadId: "bt-welcome-to-bitcoin-forum"
-threadPosition: 1
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/5/"

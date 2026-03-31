@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/79/"
 threadId: "bt-new-icon-logo"
-threadPosition: 2
 translationStatus: complete
 ---
 

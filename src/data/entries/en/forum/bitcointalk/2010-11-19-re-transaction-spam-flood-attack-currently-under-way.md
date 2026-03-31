@@ -11,7 +11,6 @@ participants:
 description: "Satoshi Nakamoto's reply in the thread \"Transaction / spam flood attack currently under way\"."
 isSatoshi: true
 threadId: "bt-transaction-spam-flood-attack"
-threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/"

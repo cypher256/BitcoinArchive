@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/60/"
 threadId: "bt-proof-of-work-difficulty-increasing"
-threadPosition: 3
 ---
 
 > [Quote from: Suggester on February 16, 2010, 02:15:49 AM](https://bitcointalk.org/index.php?topic=43.msg361#msg361)

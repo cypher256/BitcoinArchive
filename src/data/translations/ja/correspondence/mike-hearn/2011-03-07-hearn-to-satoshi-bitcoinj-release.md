@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがApache 2ライセンスの下でBitcoinJをオープンソースとしてリリースしたことを発表し、merkleブランチ検証、スクリプト言語のアイデア、トランザクション置換が無効化された理由について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 1
 tags:
   - "correspondence"
   - "bitcoinj"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/403/"
 threadId: "bt-28-days-without-generation-i-have-4200khash-s"
-threadPosition: 2
 ---
 
 Make sure your computer's date and time are correct.

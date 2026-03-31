@@ -13,7 +13,6 @@ participants:
 description: "サトシがBitcoin 0.3.19マイナーリリースをメーリングリストに告知。初期的なDoS対策の追加とセーフモードアラートの削除を実施。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 249
 tags:
   - "correspondence"
   - "early-contributor"

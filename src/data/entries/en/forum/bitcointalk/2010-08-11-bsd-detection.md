@@ -13,7 +13,6 @@ participants:
 description: "dkaparis starts a discussion: BSD detection."
 isSatoshi: false
 threadId: "bt-bsd-detection"
-threadPosition: 1
 tags: []
 ---
 

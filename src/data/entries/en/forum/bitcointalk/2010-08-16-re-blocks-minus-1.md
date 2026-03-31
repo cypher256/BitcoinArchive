@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/391/"
 threadId: "bt-blocks-minus-1"
-threadPosition: 2
 ---
 
 Done in SVN rev 137

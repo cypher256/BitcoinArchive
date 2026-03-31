@@ -8,7 +8,6 @@ author: "[deleted]"
 description: "Original thread starter post. The content was later deleted by the author."
 isSatoshi: false
 threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
-threadPosition: 1
 tags: []
 editorNote: "The original post content was vandalized by the author. On the live BitcoinTalk forum, the title now reads 'af' and the body reads 'adgadg'. The Satoshi Nakamoto Institute mirrors this vandalized state. The original content is lost."
 ---

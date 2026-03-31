@@ -13,7 +13,6 @@ participants:
 description: "jib starts a discussion: Scalability."
 isSatoshi: false
 threadId: "bt-scalability"
-threadPosition: 1
 tags: []
 ---
 

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/358/"
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
-threadPosition: 6
 ---
 
 MinGW on Windows has trouble compiling it:

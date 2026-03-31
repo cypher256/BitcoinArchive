@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/123/"
 threadId: "bt-uri-scheme-for-bitcoin"
-threadPosition: 4
 translationStatus: complete
 ---
 

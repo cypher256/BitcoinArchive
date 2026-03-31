@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/200/"
 threadId: "bt-0-3-1-release-candidate-please-test"
-threadPosition: 4
 ---
 
 > [Quote from: knightmb on July 15, 2010, 07:37:10 PM](https://bitcointalk.org/index.php?topic=383.msg3269#msg3269)

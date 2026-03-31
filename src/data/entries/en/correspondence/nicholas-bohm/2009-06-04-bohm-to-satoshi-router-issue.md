@@ -13,7 +13,6 @@ participants:
 description: "Nicholas Bohm, a retired British solicitor and early Bitcoin user, writes to Satoshi that after installing a new router, his Bitcoin client can no longer connect to the network."
 isSatoshi: false
 threadId: "satoshi-nicholas-bohm"
-threadPosition: 1
 tags:
   - "correspondence"
   - "early-adopter"

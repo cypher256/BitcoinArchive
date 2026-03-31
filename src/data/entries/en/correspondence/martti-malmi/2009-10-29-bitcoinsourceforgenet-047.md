@@ -13,7 +13,6 @@ participants:
 description: "Would the Boost mutex be of any help here?"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 47
 tags:
   - "correspondence"
   - "early-contributor"

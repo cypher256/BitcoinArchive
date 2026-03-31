@@ -13,7 +13,6 @@ participants:
 description: "m0mchilがスレッドを開始: 大衆向けOpenCLマイナー"
 isSatoshi: false
 threadId: "bt-opencl-miner-for-the-masses"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

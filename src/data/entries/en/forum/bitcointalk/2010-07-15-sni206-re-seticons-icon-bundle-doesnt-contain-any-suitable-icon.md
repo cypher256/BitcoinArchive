@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/206/"
 threadId: "bt-seticons-icon-bundle-doesn-t-contain-any-suitable-"
-threadPosition: 3
 ---
 
 > [Quote from: bdonlan on July 15, 2010, 11:27:14 PM](https://bitcointalk.org/index.php?topic=391.msg3320#msg3320)

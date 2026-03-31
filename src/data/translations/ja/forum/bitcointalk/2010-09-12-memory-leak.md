@@ -13,7 +13,6 @@ participants:
 description: "eurekafagがスレッドを開始: メモリリーク"
 isSatoshi: false
 threadId: "bt-memory-leak"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

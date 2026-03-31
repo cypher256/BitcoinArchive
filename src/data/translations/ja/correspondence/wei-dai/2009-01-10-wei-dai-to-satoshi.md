@@ -13,7 +13,6 @@ participants:
 description: "ウェイ・ダイがサトシのビットコイン発表に応え、関心を示し改善を提案した。コンセプトが自身のb-money提案と類似していることに言及した。"
 isSatoshi: false
 threadId: "satoshi-wei-dai"
-threadPosition: 2
 tags:
   - "b-money"
   - "feedback"

@@ -13,7 +13,6 @@ participants:
 description: "icaroがスレッドを開始: 警告：システムを確認してください（助けてください）"
 isSatoshi: false
 threadId: "bt-warning-check-your-system-help-me"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

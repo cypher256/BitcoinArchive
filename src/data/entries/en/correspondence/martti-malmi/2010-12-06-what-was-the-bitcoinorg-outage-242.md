@@ -13,7 +13,6 @@ participants:
 description: "Malmi offers to send the server password via PGP encryption and agrees to ask Gavin Andresen about taking on server administration responsibilities."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 242
 tags:
   - "correspondence"
   - "early-contributor"

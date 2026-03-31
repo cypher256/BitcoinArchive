@@ -13,7 +13,6 @@ participants:
 description: "xcがスレッドを開始: Bitcoinはミーゼスの回帰定理に違反しない"
 isSatoshi: false
 threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

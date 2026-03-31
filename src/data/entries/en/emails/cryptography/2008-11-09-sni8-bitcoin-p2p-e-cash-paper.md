@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi explains how competing blocks are resolved when two nodes simultaneously create blocks with different transaction sets."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 16
 isSatoshi: true
 tags:
   - "fork-resolution"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/193/"
 threadId: "bt-bitcoin-0-3-1-released"
-threadPosition: 1
 ---
 
 This is a bugfix maintenance release.  It is now uploaded to SourceForge.  Mac OS X didn't need any fixes so we don't really need to update it, 0.3.0 is still good.

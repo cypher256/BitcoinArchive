@@ -13,7 +13,6 @@ participants:
 description: "サトシがSlashdotトラフィック急増中のホスティング切り替えをしないようマルミに求め、費用を賄うためにBitcoinでの寄付を提案する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 210
 tags:
   - "correspondence"
   - "early-contributor"

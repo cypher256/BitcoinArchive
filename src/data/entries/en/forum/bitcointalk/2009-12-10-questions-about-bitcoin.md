@@ -13,7 +13,6 @@ participants:
 description: "SmokeTooMuch starts a discussion: Questions about Bitcoin."
 isSatoshi: false
 threadId: "bt-questions-about-bitcoin"
-threadPosition: 1
 tags: []
 ---
 

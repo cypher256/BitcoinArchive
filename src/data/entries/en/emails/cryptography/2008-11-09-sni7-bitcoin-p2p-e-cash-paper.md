@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi explains how the proof-of-work chain solves the synchronization problem and establishes a globally shared view without requiring trust."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 12
 isSatoshi: true
 tags:
   - "synchronization"

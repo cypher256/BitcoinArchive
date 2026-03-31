@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/423/"
 threadId: "bt-auto-backing-up-of-wallet-dat"
-threadPosition: 3
 ---
 
 If you read it into memory and write it out, it could fail in tight memory situations. 

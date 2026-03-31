@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn reports testing Bitcoin on Mac via Wine, asks about block counts, confirmation times for micropayments, proof-of-work coordination, and difficulty adjustment."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 3
 tags:
   - "correspondence"
   - "wine"

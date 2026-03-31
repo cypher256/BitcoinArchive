@@ -13,7 +13,6 @@ participants:
 description: "Suggester starts a discussion: The current Bitcoin economic model doesn't work."
 isSatoshi: false
 threadId: "bt-current-bitcoin-economic-model-is-unsustainable"
-threadPosition: 1
 tags: []
 ---
 

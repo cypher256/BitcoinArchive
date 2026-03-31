@@ -13,7 +13,6 @@ participants:
 description: "appamatto starts a discussion: BitDNS and Generalizing Bitcoin."
 isSatoshi: false
 threadId: "bt-bitdns-and-generalizing-bitcoin"
-threadPosition: 1
 tags: []
 ---
 

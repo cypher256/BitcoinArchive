@@ -13,7 +13,6 @@ participants:
 description: "Satoshi follows up that he is currently connected to IP 70.113.114.209, and notes that if Bohm is not connected to that address, he may have an outgoing connection problem. The IP was later identified as likely belonging to Dustin Trammell in Austin, Texas."
 isSatoshi: true
 threadId: "satoshi-nicholas-bohm"
-threadPosition: 5
 tags:
   - "correspondence"
   - "network"

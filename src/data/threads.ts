@@ -78,7 +78,7 @@ export function deriveThreadTitle(
 
 interface ThreadEntry {
   id: string;
-  data: { threadId?: string; threadPosition?: number; title: string };
+  data: { threadId?: string; date: Date; title: string };
 }
 
 /**
@@ -106,7 +106,7 @@ export function buildThreadInfo<T extends ThreadEntry>(
 
   for (const [tid, group] of threadGroups) {
     if ((threadCounts.get(tid) || 0) < 2) continue;
-    group.sort((a, b) => (a.data.threadPosition ?? 0) - (b.data.threadPosition ?? 0));
+    group.sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime());
     threadStarters.set(tid, group[0].id);
     threadTitles.set(tid, deriveThreadTitle(tid, group, lang));
   }

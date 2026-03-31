@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/"
 threadId: "bt-bsd-detection"
-threadPosition: 2
 ---
 
 > [Quote from: dkaparis on August 11, 2010, 11:00:16 PM](https://bitcointalk.org/index.php?topic=790.msg8807#msg8807)

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/90/"
 threadId: "bt-bitcoin-auto-renice-ing"
-threadPosition: 2
 translationStatus: complete
 ---
 

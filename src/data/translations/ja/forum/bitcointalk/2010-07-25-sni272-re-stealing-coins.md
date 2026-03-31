@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/272/"
 threadId: "bt-stealing-coins"
-threadPosition: 5
 translationStatus: complete
 ---
 

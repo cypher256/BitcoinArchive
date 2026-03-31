@@ -13,7 +13,6 @@ participants:
 description: "Odin starts a discussion: Win7 64bit since last patch Tues now crashes."
 isSatoshi: false
 threadId: "bt-win7-64bit-since-last-patch-tues-now-crashes"
-threadPosition: 1
 tags: []
 ---
 

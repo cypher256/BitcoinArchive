@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/436/"
 threadId: "bt-warning-check-your-system-help-me"
-threadPosition: 3
 translationStatus: complete
 ---
 

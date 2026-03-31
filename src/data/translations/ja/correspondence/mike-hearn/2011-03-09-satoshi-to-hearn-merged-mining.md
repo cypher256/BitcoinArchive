@@ -13,7 +13,6 @@ participants:
 description: "サトシが最も詳細なマージドマイニング提案を説明し、放棄されたeBayスタイルのマーケットプレイス機能を明かし、代替チェーンはマイナーを共有する完全に独立したものであることを明確にする。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 4
 tags:
   - "correspondence"
   - "merged-mining"

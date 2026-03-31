@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi argues that Bitcoin represents 'a major battle in the arms race' for financial freedom, noting that decentralized P2P networks like Gnutella and Tor have proven resilient against government shutdown."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 8
 isSatoshi: true
 tags:
   - "cryptography"

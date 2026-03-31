@@ -13,7 +13,6 @@ participants:
 description: "How are you doing? Haven't seen you around in a while."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 191
 tags:
   - "correspondence"
   - "early-contributor"

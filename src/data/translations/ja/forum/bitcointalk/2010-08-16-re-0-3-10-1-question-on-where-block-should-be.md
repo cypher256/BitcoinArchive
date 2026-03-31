@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/377/"
 threadId: "bt-0-3-10-1-question-on-where-block-should-be"
-threadPosition: 2
 translationStatus: complete
 ---
 

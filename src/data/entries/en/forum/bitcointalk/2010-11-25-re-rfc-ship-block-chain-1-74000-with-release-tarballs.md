@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/511/"
 threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
-threadPosition: 2
 ---
 
 It's not the downloading that takes the time, it's verifying and indexing it.

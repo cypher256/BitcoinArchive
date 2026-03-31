@@ -13,7 +13,6 @@ participants:
 description: "サトシがbitcoin-listメーリングリストに重要なバグ修正のためBitcoin 0.3.6へのアップグレードを促すアラートを送信。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 220
 tags:
   - "correspondence"
   - "early-contributor"

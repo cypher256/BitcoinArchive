@@ -13,7 +13,6 @@ participants:
 description: "サトシがコインを返送し、EC-DSAはRSAのようにメッセージを暗号化できないため、トランザクションコメントが不可能であることを説明する。"
 isSatoshi: true
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 10
 tags:
   - "correspondence"
   - "transaction"

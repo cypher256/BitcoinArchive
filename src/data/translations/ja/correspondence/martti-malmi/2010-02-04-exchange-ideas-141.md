@@ -13,7 +13,6 @@ participants:
 description: "サトシがマルミのBitcoin取引所サービスにLiberty Reserveとpaysafecardを交換手段として提案し、取消不可能な決済手段の利点を説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 141
 tags:
   - "correspondence"
   - "early-contributor"

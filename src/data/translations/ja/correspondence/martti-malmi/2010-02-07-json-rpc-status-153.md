@@ -13,7 +13,6 @@ participants:
 description: "サトシがboost::asioとJSON Spiritを使用したBitcoinのJSON-RPC実装の進捗を報告し、フォーラムの急成長にも言及。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 153
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "m0mchil starts a discussion: bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username."
 isSatoshi: false
 threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
-threadPosition: 1
 tags: []
 ---
 

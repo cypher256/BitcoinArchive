@@ -13,7 +13,6 @@ participants:
 description: "サトシが信頼できる翻訳者にbitcoin.orgのDrupalアカウントを付与して翻訳を直接更新できるようにすることを提案し、ホームページ管理の委任について議論する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 203
 tags:
   - "correspondence"
   - "early-contributor"

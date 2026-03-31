@@ -11,7 +11,6 @@ participants:
 description: "サトシ・ナカモトがバージョン0.3がほぼ完成したことを発表し、Macバージョンのテストを依頼。"
 isSatoshi: true
 threadId: "bt-1-3-almost-ready"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

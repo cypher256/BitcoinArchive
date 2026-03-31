@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/169/"
 threadId: "bt-0-3-almost-ready-please-test-the-mac-version"
-threadPosition: 3
 ---
 
 0.3 released

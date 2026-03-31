@@ -13,7 +13,6 @@ participants:
 description: "マルッティが障害の調査結果を報告し、サーバー管理者の追加とセキュリティについて提案"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 240
 tags:
   - "correspondence"
   - "early-contributor"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/503/"
 threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
-threadPosition: 3
 ---
 
 > [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](https://bitcointalk.org/index.php?topic=1668.msg21899#msg21899)

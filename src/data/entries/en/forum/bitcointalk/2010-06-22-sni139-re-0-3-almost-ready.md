@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/139/"
 threadId: "bt-0-3-almost-ready"
-threadPosition: 3
 ---
 
 Here's RC1 for windows for testing:<br>

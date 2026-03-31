@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/97/"
 threadId: "bt-idea-for-file-hosting-and-proxy-services"
-threadPosition: 3
 ---
 
 Mihalism Multi Host is a popular open source PHP file hosting server.

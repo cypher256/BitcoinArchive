@@ -13,7 +13,6 @@ participants:
 description: "xc starts a discussion: Bitcoin does NOT violate Mises' Regression Theorem."
 isSatoshi: false
 threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
-threadPosition: 1
 tags: []
 ---
 

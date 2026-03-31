@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "Satoshi explains transaction finality, the target of 10-minute block intervals, and how Bitcoin transactions become sufficiently irreversible in 1-2 hours."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 19
 isSatoshi: true
 tags:
   - "double-spending"

@@ -12,7 +12,6 @@ participants:
     slug: "bill-frantz"
 description: "セキュリティコンサルタントのビル・フランツが、ボットネットに制御されたマシンは他者による侵害を防ぐためにオペレーターが懸命に管理しているため「ネットワーク上で最も安全な部類に入る」という皮肉な観察を行い、ボットネット運営者がプルーフ・オブ・ワーク報酬を原資とする正規のセキュリティ企業に進化し得ると推測した。"
 threadId: "bitcoin-v0-1-released"
-threadPosition: 6
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-finney"
 isSatoshi: false
 tags:

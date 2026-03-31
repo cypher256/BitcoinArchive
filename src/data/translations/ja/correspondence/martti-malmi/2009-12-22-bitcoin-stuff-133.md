@@ -13,7 +13,6 @@ participants:
 description: "マルミがbitcoinexchange.comドメインを登録したことを報告し、PayPalベースのシンプルなBitcoin取引所サービスの構想を説明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 133
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "マルミがビットコインのウェブサイトとFAQの開発に同意し、パスワード保護された秘密鍵を提案し、ビットコインノードを24時間365日稼働させていることを報告した。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 2
 tags:
   - "correspondence"
   - "early-contributor"

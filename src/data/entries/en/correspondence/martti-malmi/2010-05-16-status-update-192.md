@@ -13,7 +13,6 @@ participants:
 description: "Satoshi returns after a month-long absence, congratulates Malmi on his first exchange transaction, and discusses plans for the 0.3 release and JSON API."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 192
 tags:
   - "correspondence"
   - "early-contributor"

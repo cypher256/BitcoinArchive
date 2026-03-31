@@ -13,7 +13,6 @@ participants:
 description: "MoonShadow starts a discussion: Bitcoin Watchdog Service."
 isSatoshi: false
 threadId: "bt-bitcoin-watchdog-service"
-threadPosition: 1
 tags: []
 ---
 

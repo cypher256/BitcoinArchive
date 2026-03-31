@@ -13,7 +13,6 @@ participants:
 description: "Gavin Andresen starts a discussion: Transactions and Scripts: DUP HASH160 ... EQUALVERIFY CHECKSIG."
 isSatoshi: false
 threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
-threadPosition: 1
 tags: []
 ---
 

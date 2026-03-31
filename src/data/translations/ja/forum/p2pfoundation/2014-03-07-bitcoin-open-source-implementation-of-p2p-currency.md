@@ -14,7 +14,6 @@ tags:
   - "identity"
   - "dorian-nakamoto"
 threadId: "p2pfoundation-bitcoin-open-source"
-threadPosition: 4
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/"

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi reports a working solution for running Bitcoin without a display by subclassing wxApp::Initialize, and asks for input on naming the -daemon and -server command line switches."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 168
 tags:
   - "correspondence"
   - "early-contributor"

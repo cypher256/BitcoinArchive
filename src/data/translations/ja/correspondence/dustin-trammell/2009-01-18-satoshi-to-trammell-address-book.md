@@ -13,7 +13,6 @@ participants:
 description: "サトシが、トランメルに表示された「Satoshi」ラベルはトランメル自身のアドレス帳に由来するものであると説明し、トランザクションは送信者ではなく使用された受信アドレスを表示することを解説し、支払い元を特定するために各支払者ごとに異なるアドレスを作成することを推奨した。"
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
-threadPosition: 16
 tags:
   - "correspondence"
   - "usability"

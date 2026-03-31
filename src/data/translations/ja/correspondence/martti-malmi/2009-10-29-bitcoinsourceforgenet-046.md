@@ -13,7 +13,6 @@ participants:
 description: "サトシがクロスプラットフォーム互換性のためCriticalSectionコードのwxCriticalSectionへの変換を計画し、Linuxビルドに着手する時期であることに同意する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 46
 tags:
   - "correspondence"
   - "early-contributor"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/123/"
 threadId: "bt-uri-scheme-for-bitcoin"
-threadPosition: 4
 ---
 
 [http://127.0.0.1:8330/?to=domain.com&amount=200.00&comment=order_12345](http://127.0.0.1:8330/?to=domain.com&amount=200.00&comment=order_12345)

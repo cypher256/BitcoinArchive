@@ -13,7 +13,6 @@ participants:
 description: "andy_3_913 starts a discussion: resource hog."
 isSatoshi: false
 threadId: "bt-resource-hog"
-threadPosition: 1
 tags: []
 ---
 

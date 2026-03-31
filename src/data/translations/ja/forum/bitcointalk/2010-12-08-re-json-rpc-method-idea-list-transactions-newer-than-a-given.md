@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/524/"
 threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
-threadPosition: 2
 translationStatus: complete
 ---
 

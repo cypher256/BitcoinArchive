@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/194/"
 threadId: "bt-0-3-1-release-candidate-please-test"
-threadPosition: 2
 ---
 
 Well, it can't hurt to do a backup and it's a good idea to backup regularly, but no, a backup is not required before installing this.

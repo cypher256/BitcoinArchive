@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/335/"
 threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
-threadPosition: 2
 translationStatus: complete
 ---
 

@@ -13,7 +13,6 @@ participants:
 description: "Adam Back suggests Satoshi look at Ron Rivest's 1996 MicroMint paper on k-way hash collisions. Notably, Back admits he still has not read Satoshi's attached draft paper — a decision he would later call 'probably my biggest mistake.'"
 isSatoshi: false
 threadId: "satoshi-adam-back"
-threadPosition: 4
 tags:
   - "hashcash"
   - "adam-back"

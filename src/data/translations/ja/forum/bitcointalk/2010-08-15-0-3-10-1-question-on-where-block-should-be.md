@@ -11,7 +11,6 @@ participants:
 description: "元のスレッド開始投稿。内容は後に投稿者により削除された。"
 isSatoshi: false
 threadId: "bt-0-3-10-1-question-on-where-block-should-be"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

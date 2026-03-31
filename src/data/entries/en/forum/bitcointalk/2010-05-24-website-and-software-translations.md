@@ -13,7 +13,6 @@ participants:
 description: "HostFat starts a discussion: Website and software translations."
 isSatoshi: false
 threadId: "bt-website-translations"
-threadPosition: 1
 tags: []
 ---
 

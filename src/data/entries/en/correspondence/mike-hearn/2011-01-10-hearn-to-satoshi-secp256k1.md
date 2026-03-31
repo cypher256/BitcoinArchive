@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn points Satoshi to a forum discussion about the security of the secp256k1 curve, noting Hal Finney's concerns about its risk profile."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-more-questions"
-threadPosition: 7
 tags:
   - "correspondence"
   - "secp256k1"

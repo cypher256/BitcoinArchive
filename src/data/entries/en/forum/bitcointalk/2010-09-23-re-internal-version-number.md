@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/462/"
 threadId: "bt-internal-version-number"
-threadPosition: 2
 ---
 
 I don't think it should cause any problems for version comparisons.  31300 > 312.

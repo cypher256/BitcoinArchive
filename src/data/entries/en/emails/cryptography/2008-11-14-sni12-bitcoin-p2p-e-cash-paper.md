@@ -12,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "Satoshi explains that only the current best branch's pending-transaction pool needs to be maintained, discusses TCP reliability for block propagation, and notes the system aligns with libertarian principles."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 25
 isSatoshi: true
 tags:
   - "pending-transactions"

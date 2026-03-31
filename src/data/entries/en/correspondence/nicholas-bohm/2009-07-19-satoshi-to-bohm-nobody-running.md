@@ -13,7 +13,6 @@ participants:
 description: "Satoshi's candid response to Bohm's connectivity issue, admitting that there may be no other nodes running at that moment. He asks if Bohm's IP changed and encourages him to keep his server online so new users have someone to connect to."
 isSatoshi: true
 threadId: "satoshi-nicholas-bohm"
-threadPosition: 4
 tags:
   - "correspondence"
   - "network"

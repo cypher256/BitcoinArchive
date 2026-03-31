@@ -13,7 +13,6 @@ participants:
 description: "暗号学メーリングリストでの公開アナウンスの数時間後、サトシが個人的にハル・フィニーにBitcoin v0.1のリリースを通知した。SourceForgeのダウンロードリンクとbitcoin.orgのリリースノートを案内した。"
 isSatoshi: true
 threadId: "satoshi-hal-finney-private"
-threadPosition: 2
 tags:
   - "correspondence"
   - "bitcoin-launch"

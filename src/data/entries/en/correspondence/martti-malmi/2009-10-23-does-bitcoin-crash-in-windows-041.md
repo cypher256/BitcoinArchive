@@ -13,7 +13,6 @@ participants:
 description: "Satoshi responds to Liberty Standard's crash report, attributing the issue to Wine rather than Bitcoin, and mentions working with Malmi on an upcoming release."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 41
 tags:
   - "correspondence"
   - "early-contributor"

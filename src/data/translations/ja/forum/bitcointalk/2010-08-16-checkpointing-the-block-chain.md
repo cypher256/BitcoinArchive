@@ -13,7 +13,6 @@ participants:
 description: "mkroghがスレッドを開始: ブロックチェーンのチェックポイント化"
 isSatoshi: false
 threadId: "bt-checkpointing-the-block-chain"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

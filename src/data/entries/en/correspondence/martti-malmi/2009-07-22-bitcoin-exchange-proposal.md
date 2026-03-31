@@ -13,7 +13,6 @@ participants:
 description: "Malmi proposes creating a Bitcoin-to-fiat exchange service, detailing pricing formulas and profit mechanisms. This led to one of the first Bitcoin exchanges and the historic first BTC-to-USD sale."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 25
 tags:
   - "correspondence"
   - "early-contributor"

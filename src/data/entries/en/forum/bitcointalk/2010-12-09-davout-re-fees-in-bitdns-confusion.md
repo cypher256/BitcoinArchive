@@ -11,7 +11,6 @@ participants:
 description: "davout asks whether it is possible to cancel an unconfirmed transaction that has no fee and rebroadcast it with a fee included."
 isSatoshi: false
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 4
 inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

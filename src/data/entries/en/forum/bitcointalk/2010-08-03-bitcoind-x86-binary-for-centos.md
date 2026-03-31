@@ -13,7 +13,6 @@ participants:
 description: "nimnul starts a discussion: Bitcoind x86 binary for CentOS."
 isSatoshi: false
 threadId: "bt-bitcoind-x86-binary-for-centos"
-threadPosition: 1
 tags: []
 ---
 

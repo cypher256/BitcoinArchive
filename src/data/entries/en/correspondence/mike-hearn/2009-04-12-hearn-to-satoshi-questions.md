@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn contacts Satoshi Nakamoto for the first time with questions about Bitcoin's scalability, mining hardware, inflation schedule, and coin denominations."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 1
 tags:
   - "correspondence"
   - "first-contact"

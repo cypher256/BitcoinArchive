@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/"
 threadId: "bt-questions-about-addresses"
-threadPosition: 3
 ---
 
 > [Quote from: Sabunir on February 05, 2010, 05:31:30 PM](https://bitcointalk.org/index.php?topic=34.msg246#msg246)

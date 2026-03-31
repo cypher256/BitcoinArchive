@@ -13,7 +13,6 @@ participants:
 description: "kosovitoがスレッドを開始: 28日間生成なし、4200khash/sあるのに"
 isSatoshi: false
 threadId: "bt-28-days-without-generation-i-have-4200khash-s"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

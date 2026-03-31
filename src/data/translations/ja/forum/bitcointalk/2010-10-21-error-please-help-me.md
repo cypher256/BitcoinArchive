@@ -13,7 +13,6 @@ participants:
 description: "Dhawがスレッドを開始: エラー - 助けてください！"
 isSatoshi: false
 threadId: "bt-error-please-help-me"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

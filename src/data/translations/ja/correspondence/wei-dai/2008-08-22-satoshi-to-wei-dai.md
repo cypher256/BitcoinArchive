@@ -13,7 +13,6 @@ participants:
 description: "サトシの最も初期に知られる書簡。ウェイ・ダイにb-moneyの正しい引用について尋ねるメールを送り、アダム・バックの紹介でb-moneyを知ったことを明かしている。"
 isSatoshi: true
 threadId: "satoshi-wei-dai"
-threadPosition: 1
 tags:
   - "b-money"
   - "earliest-correspondence"

@@ -13,7 +13,6 @@ participants:
 description: "nphyxがスレッドを開始: DEBパッケージ？"
 isSatoshi: false
 threadId: "bt-deb-package"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

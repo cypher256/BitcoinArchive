@@ -13,7 +13,6 @@ participants:
 description: "VPSには320MBのRAMがあり、そのうち50MBが現在空いています。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 137
 tags:
   - "correspondence"
   - "early-contributor"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/250/"
 threadId: "bt-json-rpc-password"
-threadPosition: 4
 ---
 
 Still need to know what's the most typical settings file format on Linux.  Is there a standard file extension?  I've never seen a settings file using JSON, and it doesn't look very human friendly with everything required to be in quotes.  I think what I usually see is like:

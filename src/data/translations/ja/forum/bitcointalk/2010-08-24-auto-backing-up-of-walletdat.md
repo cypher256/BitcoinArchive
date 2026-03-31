@@ -13,7 +13,6 @@ participants:
 description: "neliskyがスレッドを開始: wallet.datの自動バックアップ"
 isSatoshi: false
 threadId: "bt-auto-backing-up-of-wallet-dat"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

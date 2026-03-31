@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/469/"
 threadId: "bt-prioritized-transactions-and-tx-fees"
-threadPosition: 3
 ---
 
 True, the switch should be something more dynamic that pays per KB.  It's harder to think of how to explain it.

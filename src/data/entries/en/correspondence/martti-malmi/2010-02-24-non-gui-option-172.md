@@ -13,7 +13,6 @@ participants:
 description: "Good, that gives them a little sense of ownership and responsibility."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 172
 tags:
   - "correspondence"
   - "early-contributor"

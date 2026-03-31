@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/448/"
 threadId: "bt-auto-detect-for-128-bit-4-way-sse2"
-threadPosition: 2
 ---
 
 > [Quote from: teknohog on September 09, 2010, 07:32:05 PM](https://bitcointalk.org/index.php?topic=1007.msg12336#msg12336)

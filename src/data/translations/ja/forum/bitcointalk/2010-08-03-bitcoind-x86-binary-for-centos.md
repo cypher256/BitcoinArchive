@@ -13,7 +13,6 @@ participants:
 description: "nimnulがスレッドを開始: CentOS用Bitcoind x86バイナリ"
 isSatoshi: false
 threadId: "bt-bitcoind-x86-binary-for-centos"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

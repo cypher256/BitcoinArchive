@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/420/"
 threadId: "bt-need-a-post-writing-up-some-things-users-should-kn"
-threadPosition: 3
 translationStatus: complete
 ---
 

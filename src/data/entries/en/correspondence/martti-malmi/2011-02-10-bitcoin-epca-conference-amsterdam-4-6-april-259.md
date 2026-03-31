@@ -13,7 +13,6 @@ participants:
 description: "Thanks for contacting and sorry for the late response. EPCA seems very"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 259
 tags:
   - "correspondence"
   - "early-contributor"

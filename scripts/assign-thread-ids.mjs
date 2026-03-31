@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Assign threadId and threadPosition to BitcoinTalk posts
+ * Assign threadId to BitcoinTalk posts
  * Groups posts by base thread title (strips "Re: " prefix)
  */
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
@@ -86,8 +86,8 @@ for (const [baseTitle, group] of threadGroups) {
     const entry = group[i];
     if (entry.hasThreadId) continue;
 
-    // Add threadId and threadPosition before the closing ---
-    const newFm = entry.fm + `\nthreadId: "${threadId}"\nthreadPosition: ${i + 1}`;
+    // Add threadId before the closing ---
+    const newFm = entry.fm + `\nthreadId: "${threadId}"`;
     const newContent = entry.content.replace(/^---\n[\s\S]*?\n---/, `---\n${newFm}\n---`);
 
     writeFileSync(entry.path, newContent, 'utf8');

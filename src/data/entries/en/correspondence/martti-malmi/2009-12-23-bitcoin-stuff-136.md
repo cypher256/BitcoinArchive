@@ -13,7 +13,6 @@ participants:
 description: "Satoshi discusses the need for a headless Bitcoin daemon, command-line API design for receiving payments, and memory requirements for running on a VPS."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 136
 tags:
   - "correspondence"
   - "early-contributor"

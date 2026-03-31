@@ -12,7 +12,6 @@ participants:
     slug: "ray-dillinger"
 description: "Satoshi responds to Ray Dillinger's claim that Bitcoin would be inflationary at 35%, explaining how difficulty adjustment keeps production constant and how transaction fees provide an alternative incentive."
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 10
 isSatoshi: true
 tags:
   - "difficulty-adjustment"

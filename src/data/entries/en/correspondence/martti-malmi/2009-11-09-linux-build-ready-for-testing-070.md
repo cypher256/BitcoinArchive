@@ -13,7 +13,6 @@ participants:
 description: "Started very quickly when I got connected and downloaded quicker than"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 70
 tags:
   - "correspondence"
   - "early-contributor"

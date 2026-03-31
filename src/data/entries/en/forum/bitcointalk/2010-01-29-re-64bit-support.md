@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/38/"
 threadId: "bt-64bit-support"
-threadPosition: 3
 ---
 
 I committed a fix for 64-bit compile and some fixes to support wxWidgets 2.9.0.

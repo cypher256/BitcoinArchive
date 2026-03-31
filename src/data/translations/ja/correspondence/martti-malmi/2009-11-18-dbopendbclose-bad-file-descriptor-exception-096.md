@@ -13,7 +13,6 @@ participants:
 description: "サトシがマルミのログからDBエラーのパターンを確認し、ゾンビソケットの活動にも注目。実行していたテストバージョンを確認。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 96
 tags:
   - "correspondence"
   - "early-contributor"

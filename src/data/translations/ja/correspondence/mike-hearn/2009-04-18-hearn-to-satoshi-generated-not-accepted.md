@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが50コインを返送し、「Generated (not accepted)」エラーとトランザクションにメタデータを添付するアイデアについて質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 11
 tags:
   - "correspondence"
   - "transaction"

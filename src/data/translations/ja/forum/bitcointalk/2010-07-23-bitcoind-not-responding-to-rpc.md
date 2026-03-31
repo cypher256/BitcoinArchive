@@ -13,7 +13,6 @@ participants:
 description: "mtgoxがスレッドを開始: bitcoindがRPCに応答しない"
 isSatoshi: false
 threadId: "bt-bitcoind-not-responding-to-rpc"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

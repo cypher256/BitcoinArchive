@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/134/"
 threadId: "bt-0-3-almost-ready-please-test-the-mac-version"
-threadPosition: 1
 ---
 
 I finished everything on my list to do for version 0.3.  The code on SVN is about ready to release.

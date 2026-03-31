@@ -13,7 +13,6 @@ participants:
 description: "サトシが安全なパスワード交換のためPGP公開鍵をマルミと共有し、BitcoinExchangeの別サーバーへの移行進捗を確認。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 243
 tags:
   - "correspondence"
   - "early-contributor"

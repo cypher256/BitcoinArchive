@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/91/"
 threadId: "bt-idea-for-file-hosting-and-proxy-services"
-threadPosition: 1
 translationStatus: complete
 ---
 

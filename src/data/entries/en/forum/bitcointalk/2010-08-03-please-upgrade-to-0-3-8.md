@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/313/"
 threadId: "bt-please-upgrade-to-0-3-8"
-threadPosition: 1
 ---
 
 Version 0.3.8 adds an important security improvement.  Everyone should upgrade to get this change.

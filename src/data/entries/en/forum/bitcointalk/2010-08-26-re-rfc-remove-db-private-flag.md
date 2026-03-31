@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/419/"
 threadId: "bt-rfc-remove-db-private-flag"
-threadPosition: 2
 ---
 
 Can you provide more details about what removing DB_PRIVATE does?

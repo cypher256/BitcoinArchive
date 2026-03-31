@@ -13,7 +13,6 @@ participants:
 description: "マルミがPGP暗号化でサーバーパスワードを送る準備ができたことを伝え、ギャビン・アンドレセンへのサーバー管理の委任について同意。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 242
 tags:
   - "correspondence"
   - "early-contributor"

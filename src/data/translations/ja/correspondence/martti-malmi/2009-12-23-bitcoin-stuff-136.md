@@ -13,7 +13,6 @@ participants:
 description: "サトシがヘッドレスBitcoinデーモンの必要性、支払い受信のためのコマンドラインAPI設計、VPS上での動作に必要なメモリ要件について議論。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 136
 tags:
   - "correspondence"
   - "early-contributor"

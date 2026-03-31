@@ -11,7 +11,6 @@ participants:
 description: "元のスレッド開始投稿。内容は後に投稿者により削除された。"
 isSatoshi: false
 threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

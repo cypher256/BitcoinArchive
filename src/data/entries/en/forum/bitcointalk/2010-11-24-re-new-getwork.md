@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/509/"
 threadId: "bt-new-getwork"
-threadPosition: 3
 ---
 
 > [Quote from: jgarzik on November 24, 2010, 04:47:42 AM](https://bitcointalk.org/index.php?topic=1901.msg24008#msg24008)

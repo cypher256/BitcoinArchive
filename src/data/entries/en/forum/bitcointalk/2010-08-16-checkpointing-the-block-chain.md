@@ -13,7 +13,6 @@ participants:
 description: "mkrogh starts a discussion: checkpointing the block chain."
 isSatoshi: false
 threadId: "bt-checkpointing-the-block-chain"
-threadPosition: 1
 tags: []
 ---
 

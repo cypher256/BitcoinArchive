@@ -13,7 +13,6 @@ participants:
 description: "llama starts a discussion: Major Meltdown."
 isSatoshi: false
 threadId: "bt-major-meltdown"
-threadPosition: 1
 tags: []
 ---
 

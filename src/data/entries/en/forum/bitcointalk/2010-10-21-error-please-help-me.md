@@ -13,7 +13,6 @@ participants:
 description: "Dhaw starts a discussion: ERROR - PLEASE HELP ME!."
 isSatoshi: false
 threadId: "bt-error-please-help-me"
-threadPosition: 1
 tags: []
 ---
 

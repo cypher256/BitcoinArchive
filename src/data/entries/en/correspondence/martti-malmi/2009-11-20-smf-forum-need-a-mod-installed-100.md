@@ -13,7 +13,6 @@ participants:
 description: "Malmi provides Satoshi with SSH access to the VPS for forum configuration, approves going live, and expresses excitement about launching his own Bitcoin exchange."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 100
 tags:
   - "correspondence"
   - "early-contributor"

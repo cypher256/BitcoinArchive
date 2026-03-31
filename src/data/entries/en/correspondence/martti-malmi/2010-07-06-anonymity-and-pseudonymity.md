@@ -13,7 +13,6 @@ participants:
 description: "Satoshi warns Malmi to de-emphasize Bitcoin's anonymity claims, distinguishing between anonymity and pseudonymity - a prescient warning about privacy expectations."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 197
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "nphyx starts a discussion: DEB Package?."
 isSatoshi: false
 threadId: "bt-deb-package"
-threadPosition: 1
 tags: []
 ---
 

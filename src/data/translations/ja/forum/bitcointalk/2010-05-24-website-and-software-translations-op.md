@@ -13,7 +13,6 @@ participants:
 description: "HostFatがスレッドを開始: ウェブサイトとソフトウェアの翻訳"
 isSatoshi: false
 threadId: "bt-website-and-software-translations"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

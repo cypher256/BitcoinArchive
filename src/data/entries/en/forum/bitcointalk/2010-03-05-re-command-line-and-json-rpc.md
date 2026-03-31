@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/89/"
 threadId: "bt-command-line-and-json-rpc"
-threadPosition: 7
 ---
 
 > [Quote from: sirius-m on February 24, 2010, 06:17:35 PM](https://bitcointalk.org/index.php?topic=63.msg502#msg502)

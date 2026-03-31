@@ -13,7 +13,6 @@ participants:
 description: "m0mchilがスレッドを開始: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
 isSatoshi: false
 threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

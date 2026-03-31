@@ -18,7 +18,6 @@ tags:
   - "reputation"
   - "trust"
 threadId: "p2p-research-bitcoin-open-source"
-threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"

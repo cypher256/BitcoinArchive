@@ -13,7 +13,6 @@ participants:
 description: "マルミがアムステルダムのEPCAカンファレンスからの招待に応じ、Bitcoinの代表としてギャビン・アンドレセンやブルース・ワグナーを推薦。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 258
 tags:
   - "correspondence"
   - "early-contributor"

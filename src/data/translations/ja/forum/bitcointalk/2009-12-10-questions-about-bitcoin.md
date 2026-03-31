@@ -13,7 +13,6 @@ participants:
 description: "SmokeTooMuchがスレッドを開始: Bitcoinに関する質問"
 isSatoshi: false
 threadId: "bt-questions-about-bitcoin"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

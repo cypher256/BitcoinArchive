@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/"
 threadId: "bt-bitcoin-watchdog-service"
-threadPosition: 3
 ---
 
 QuoteBut there will be no irc server to bootstrap from.

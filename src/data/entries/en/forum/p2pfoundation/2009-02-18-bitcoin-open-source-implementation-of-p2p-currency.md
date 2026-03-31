@@ -20,7 +20,6 @@ tags:
   - "proof-of-work"
   - "monetary-policy"
 threadId: "p2pfoundation-bitcoin-open-source"
-threadPosition: 3
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/3/"

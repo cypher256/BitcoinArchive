@@ -13,7 +13,6 @@ participants:
 description: "Redがスレッドを開始: 提案ではなく"
 isSatoshi: false
 threadId: "bt-not-a-suggestion"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

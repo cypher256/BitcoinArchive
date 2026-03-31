@@ -13,7 +13,6 @@ participants:
 description: "Gavin Andresenがスレッドを開始: トランザクションとスクリプト：DUP HASH160 ... EQUALVERIFY CHECKSIG"
 isSatoshi: false
 threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

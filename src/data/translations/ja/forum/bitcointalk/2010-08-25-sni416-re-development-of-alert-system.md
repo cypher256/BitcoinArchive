@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/416/"
 threadId: "bt-development-of-alert-system"
-threadPosition: 6
 translationStatus: complete
 ---
 

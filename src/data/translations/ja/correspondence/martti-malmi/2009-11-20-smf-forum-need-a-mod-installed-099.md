@@ -13,7 +13,6 @@ participants:
 description: "サトシがSMFフォーラムのCSS調整を進め、MODインストールの協力を要請。Liberty Standardが初のBitcoin販売を行ったことも共有。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 99
 tags:
   - "correspondence"
   - "early-contributor"

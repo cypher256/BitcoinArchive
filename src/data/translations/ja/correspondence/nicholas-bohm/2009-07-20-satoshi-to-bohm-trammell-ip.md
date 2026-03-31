@@ -13,7 +13,6 @@ participants:
 description: "サトシがIP 70.113.114.209に接続中であることを報告し、ボームがそのアドレスに接続できていなければ発信接続に問題がある可能性を指摘した。このIPアドレスは後にテキサス州オースティンのダスティン・トランメルのものである可能性が高いと特定された。"
 isSatoshi: true
 threadId: "satoshi-nicholas-bohm"
-threadPosition: 5
 tags:
   - "correspondence"
   - "network"

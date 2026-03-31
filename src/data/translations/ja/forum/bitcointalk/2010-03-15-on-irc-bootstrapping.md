@@ -13,7 +13,6 @@ participants:
 description: "soultcerがスレッドを開始: IRCブートストラッピングについて"
 isSatoshi: false
 threadId: "bt-on-irc-bootstrapping"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

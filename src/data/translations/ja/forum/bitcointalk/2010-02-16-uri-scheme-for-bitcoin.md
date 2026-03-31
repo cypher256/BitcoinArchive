@@ -13,7 +13,6 @@ participants:
 description: "ecがスレッドを開始: Bitcoin用URIスキーム"
 isSatoshi: false
 threadId: "bt-uri-scheme-for-bitcoin"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

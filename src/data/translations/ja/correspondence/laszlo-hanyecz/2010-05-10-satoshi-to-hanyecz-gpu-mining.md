@@ -13,7 +13,6 @@ participants:
 description: "サトシがラズロ・ハニエツにメールを送り、GPUマイニングの早すぎる公開に懸念を表明した。CPUでしかマイニングできない新規ユーザーの意欲を削ぐと主張し、GPUマイニングの取り組みを控えるよう求めた。"
 isSatoshi: true
 threadId: "satoshi-laszlo-hanyecz"
-threadPosition: 2
 tags:
   - "correspondence"
   - "gpu-mining"

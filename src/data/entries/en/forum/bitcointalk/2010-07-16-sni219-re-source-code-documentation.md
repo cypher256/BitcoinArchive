@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/219/"
 threadId: "bt-source-code-documentation"
-threadPosition: 3
 ---
 
 It's in init.cpp.

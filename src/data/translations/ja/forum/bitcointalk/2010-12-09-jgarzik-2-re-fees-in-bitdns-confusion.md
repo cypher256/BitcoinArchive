@@ -11,7 +11,6 @@ participants:
 description: "Jeff Garzikがトランザクション置換のためのlocktimeの議論を参照した。サトシ・ナカモトは次の返信でこれを訂正することになる。"
 isSatoshi: false
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 6
 tags:
   - "transaction-replacement"
   - "locktime"

@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/445/"
 threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
-threadPosition: 2
 ---
 
 What version is the one where this happened?  Release build, or built it yourself?  Which operating system?  

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi responds to Trammell's MITM analysis by classifying attacks into two types (chain-of-communication vs. anyone on the Internet), acknowledges send-to-IP vulnerabilities, proposes a combined IP+Bitcoin address solution, and mentions plans for wallet encryption."
 isSatoshi: true
 threadId: "satoshi-dustin-trammell"
-threadPosition: 10
 tags:
   - "correspondence"
   - "security"

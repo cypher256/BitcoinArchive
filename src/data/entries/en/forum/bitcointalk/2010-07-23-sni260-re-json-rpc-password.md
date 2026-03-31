@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/260/"
 threadId: "bt-json-rpc-password"
-threadPosition: 11
 ---
 
 I don't think authentication should be disabled by default if there's no conf file or the config file doesn't contain "rpcpassword", but what if it contains "rpcpassword="?

@@ -11,7 +11,6 @@ participants:
 description: "RHorningが手数料スケジュールとマイニングポリシーを調整するUIツールを提唱。無料トランザクションは現在機能しているが、長期的には持続不可能だろうと指摘した。"
 isSatoshi: false
 threadId: "bt-fees-in-bitdns-confusion"
-threadPosition: 3
 inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

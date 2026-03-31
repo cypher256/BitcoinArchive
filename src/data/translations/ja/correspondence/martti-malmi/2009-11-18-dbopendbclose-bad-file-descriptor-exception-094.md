@@ -13,7 +13,6 @@ participants:
 description: "マルミがBerkeley DBの「Bad file descriptor」例外の調査に役立てるため、デバッグログとデータベースログをサトシに送付。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 94
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "python-json-rpcをダウンロードして、Pythonインタプリタで直接テストしました。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 166
 tags:
   - "correspondence"
   - "early-contributor"

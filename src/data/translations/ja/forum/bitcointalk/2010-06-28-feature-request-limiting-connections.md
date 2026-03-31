@@ -13,7 +13,6 @@ participants:
 description: "lachesisがスレッドを開始: 機能リクエスト: 接続数の制限"
 isSatoshi: false
 threadId: "bt-feature-request-limiting-connections"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

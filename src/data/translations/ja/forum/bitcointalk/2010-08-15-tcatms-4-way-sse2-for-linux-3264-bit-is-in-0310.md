@@ -11,7 +11,6 @@ participants:
 description: "satoshiがスレッドを開始: tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2"
 isSatoshi: true
 threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

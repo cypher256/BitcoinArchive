@@ -13,7 +13,6 @@ participants:
 description: "Hal Finney's private email to Satoshi during the pre-release code review period, asking foundational questions about Bitcoin's scalability: 'How large do you envision it becoming? Tens of nodes? Thousands? Millions?'"
 isSatoshi: false
 threadId: "satoshi-hal-finney-private"
-threadPosition: 1
 tags:
   - "correspondence"
   - "scalability"

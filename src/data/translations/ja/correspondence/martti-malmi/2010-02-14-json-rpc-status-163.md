@@ -13,7 +13,6 @@ participants:
 description: "サトシがLinux上でBitcoinのGUI版と非GUI版のバイナリを分離する方針を議論し、マルミにVPSではなくUbuntuノートPCでのテストを提案する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 163
 tags:
   - "correspondence"
   - "early-contributor"

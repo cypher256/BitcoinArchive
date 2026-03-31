@@ -13,7 +13,6 @@ participants:
 description: "singpolymaがスレッドを開始: アサーション失敗 - Ubuntu Lucid"
 isSatoshi: false
 threadId: "bt-assertion-failure-ubuntu-lucid"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

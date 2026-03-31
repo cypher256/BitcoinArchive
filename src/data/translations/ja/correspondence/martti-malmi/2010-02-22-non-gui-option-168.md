@@ -13,7 +13,6 @@ participants:
 description: "サトシがwxApp::Initializeのサブクラス化でディスプレイなしでの実行に成功したことを報告し、-daemonと-serverコマンドラインスイッチの命名について意見を求める。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 168
 tags:
   - "correspondence"
   - "early-contributor"

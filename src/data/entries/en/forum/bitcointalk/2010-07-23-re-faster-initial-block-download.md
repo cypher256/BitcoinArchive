@@ -11,7 +11,6 @@ participants:
 description: "Satoshi Nakamoto's reply in the thread \"Faster initial block download\"."
 isSatoshi: true
 threadId: "bt-faster-initial-block-download"
-threadPosition: 2
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/259/"

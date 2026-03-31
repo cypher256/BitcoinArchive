@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzik starts a discussion: RFC: ship block chain 1-74000 with release tarballs?."
 isSatoshi: false
 threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
-threadPosition: 1
 tags: []
 ---
 

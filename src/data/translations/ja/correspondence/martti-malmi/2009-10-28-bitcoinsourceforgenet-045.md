@@ -13,7 +13,6 @@ participants:
 description: "現在のバージョンのBitweaverでは不可能です。Bitweaverのwikiとフォーラムパッケージはそれほど高度ではありません。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 45
 tags:
   - "correspondence"
   - "early-contributor"

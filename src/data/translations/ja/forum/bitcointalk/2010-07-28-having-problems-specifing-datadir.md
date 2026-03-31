@@ -13,7 +13,6 @@ participants:
 description: "psyvenrixがスレッドを開始: -datadirの指定で問題が発生"
 isSatoshi: false
 threadId: "bt-having-problems-specifing-datadir"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

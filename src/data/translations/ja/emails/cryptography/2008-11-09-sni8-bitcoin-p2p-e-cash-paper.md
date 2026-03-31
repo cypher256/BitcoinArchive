@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "2つのノードが異なるトランザクションセットを持つブロックを同時に作成した場合の競合解決方法をサトシが説明した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 16
 isSatoshi: true
 tags:
   - "fork-resolution"

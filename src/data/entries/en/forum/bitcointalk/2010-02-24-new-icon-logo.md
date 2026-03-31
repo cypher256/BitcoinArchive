@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/75/"
 threadId: "bt-new-icon-logo"
-threadPosition: 1
 ---
 
 New icons, what do you think?  Better than the old one?

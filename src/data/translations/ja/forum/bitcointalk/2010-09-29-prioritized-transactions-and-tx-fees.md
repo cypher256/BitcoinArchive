@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzikがスレッドを開始: 優先トランザクションと取引手数料"
 isSatoshi: false
 threadId: "bt-prioritized-transactions-and-tx-fees"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

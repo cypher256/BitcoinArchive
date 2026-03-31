@@ -13,7 +13,6 @@ participants:
 description: "Yes, using Python. I didn't test the JSON-RPC yet as I don't have"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 161
 tags:
   - "correspondence"
   - "early-contributor"

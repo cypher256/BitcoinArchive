@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/330/"
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
-threadPosition: 4
 ---
 
 > [Quote from: impossible7 on August 06, 2010, 11:37:20 AM](https://bitcointalk.org/index.php?topic=648.msg7838#msg7838)

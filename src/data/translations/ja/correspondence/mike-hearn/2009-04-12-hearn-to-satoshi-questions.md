@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシ・ナカモトに初めて連絡を取り、Bitcoinのスケーラビリティ、マイニングハードウェア、インフレスケジュール、コインの額面について質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 1
 tags:
   - "correspondence"
   - "first-contact"

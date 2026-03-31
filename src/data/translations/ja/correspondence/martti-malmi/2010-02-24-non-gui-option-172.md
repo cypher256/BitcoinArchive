@@ -13,7 +13,6 @@ participants:
 description: "良いな。翻訳者に少しでもオーナーシップと責任感を持ってもらえる。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 172
 tags:
   - "correspondence"
   - "early-contributor"

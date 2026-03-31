@@ -13,7 +13,6 @@ participants:
 description: "サトシがJSON-RPCとコマンドラインの実装をSVNにアップロードしたことを報告し、コマンド例を示してマルミにPythonでのテストを依頼する。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 160
 tags:
   - "correspondence"
   - "early-contributor"

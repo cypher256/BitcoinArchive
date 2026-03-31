@@ -13,7 +13,6 @@ participants:
 description: "Trammell conducts a detailed security analysis of Bitcoin's send-to-IP feature, identifying man-in-the-middle vulnerabilities including ARP poisoning and ISP-level interception. He recommends always using Bitcoin addresses instead of IP addresses."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 8
 tags:
   - "correspondence"
   - "early-adopter"

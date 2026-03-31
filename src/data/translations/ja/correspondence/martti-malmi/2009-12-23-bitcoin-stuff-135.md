@@ -13,7 +13,6 @@ participants:
 description: "コインが受信されたかどうかを確認したり、コインを送金したりするためのコマンドラインツールも少なくとも必要です。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 135
 tags:
   - "correspondence"
   - "early-contributor"

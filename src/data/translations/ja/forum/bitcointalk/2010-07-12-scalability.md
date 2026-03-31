@@ -13,7 +13,6 @@ participants:
 description: "jibがスレッドを開始: スケーラビリティ"
 isSatoshi: false
 threadId: "bt-scalability"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

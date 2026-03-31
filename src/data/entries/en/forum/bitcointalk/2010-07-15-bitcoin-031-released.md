@@ -11,7 +11,6 @@ participants:
 description: "Satoshi Nakamoto starts a discussion: Bitcoin 0.3.1 released."
 isSatoshi: true
 threadId: "bt-0-3-1-release-candidate-please-test"
-threadPosition: 1
 tags: []
 ---
 

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi personally notifies Hal Finney of the Bitcoin v0.1 release hours after the public announcement on the Cryptography mailing list, sending the SourceForge download link and directing him to bitcoin.org for release notes."
 isSatoshi: true
 threadId: "satoshi-hal-finney-private"
-threadPosition: 2
 tags:
   - "correspondence"
   - "bitcoin-launch"

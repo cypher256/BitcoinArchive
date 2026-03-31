@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzikがスレッドを開始: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
 isSatoshi: false
 threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

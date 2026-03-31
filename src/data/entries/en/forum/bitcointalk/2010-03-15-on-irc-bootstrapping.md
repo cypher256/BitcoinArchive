@@ -13,7 +13,6 @@ participants:
 description: "soultcer starts a discussion: On IRC bootstrapping."
 isSatoshi: false
 threadId: "bt-on-irc-bootstrapping"
-threadPosition: 1
 tags: []
 ---
 

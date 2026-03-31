@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがUPnPによるポートフォワーディングを提案し、バージョン通知について質問し、EV SSL証明書を使用したウェブブラウザ向けマイクロペイメントシステムを提案する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 13
 tags:
   - "correspondence"
   - "upnp"

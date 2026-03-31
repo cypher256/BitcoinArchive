@@ -13,7 +13,6 @@ participants:
 description: "サトシがLiberty Standardから報告されたLinuxビルドのブロックダウンロード速度の遅さを調査し、マルミにも比較データを求める。代替ポートを使用できない理由も説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 68
 tags:
   - "correspondence"
   - "early-contributor"

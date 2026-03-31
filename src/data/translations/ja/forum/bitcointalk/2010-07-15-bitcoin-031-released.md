@@ -11,7 +11,6 @@ participants:
 description: "satoshiがスレッドを開始: 0.3.1リリース候補、テストしてください"
 isSatoshi: true
 threadId: "bt-0-3-1-release-candidate-please-test"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

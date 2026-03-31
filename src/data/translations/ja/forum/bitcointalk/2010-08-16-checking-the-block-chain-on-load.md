@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/393/"
 threadId: "bt-checking-the-block-chain-on-load"
-threadPosition: 1
 translationStatus: complete
 ---
 

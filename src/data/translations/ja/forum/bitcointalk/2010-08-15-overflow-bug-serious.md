@@ -13,7 +13,6 @@ participants:
 description: "lfmがスレッドを開始: オーバーフローバグ 深刻"
 isSatoshi: false
 threadId: "bt-overflow-bug-serious"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ participants:
 description: "トランメルが自分の2つのビットコインインスタンス間で送った100BTCの送金について混乱を報告した。トランザクションの詳細に「Satoshi」というラベルが表示されたため、サトシがコインを送ったのか、それともブロック生成に由来するラベルなのか疑問に思った。"
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 15
 tags:
   - "correspondence"
   - "early-adopter"

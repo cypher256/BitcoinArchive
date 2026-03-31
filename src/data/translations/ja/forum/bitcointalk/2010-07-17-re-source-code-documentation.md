@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/236/"
 threadId: "bt-source-code-documentation"
-threadPosition: 4
 translationStatus: complete
 ---
 

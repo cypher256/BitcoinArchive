@@ -13,7 +13,6 @@ participants:
 description: "llamaがスレッドを開始: 大規模なメルトダウン"
 isSatoshi: false
 threadId: "bt-major-meltdown"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ participants:
 description: "Malmi confirms that the Linux build works fine on his machine, celebrating the milestone of Bitcoin running on Linux."
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 64
 tags:
   - "correspondence"
   - "early-contributor"

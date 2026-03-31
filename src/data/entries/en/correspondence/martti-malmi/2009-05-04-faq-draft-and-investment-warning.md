@@ -13,7 +13,6 @@ participants:
 description: "Satoshi reviews Malmi's FAQ draft and warns against framing Bitcoin as an investment, stating 'we can't pitch it as that' - a historically significant stance on Bitcoin's positioning."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 5
 tags:
   - "correspondence"
   - "early-contributor"

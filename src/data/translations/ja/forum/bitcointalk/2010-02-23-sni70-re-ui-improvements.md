@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/70/"
 threadId: "bt-ui-improvements"
-threadPosition: 3
 translationStatus: complete
 ---
 

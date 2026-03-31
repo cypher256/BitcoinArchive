@@ -13,7 +13,6 @@ participants:
 description: "マルミがデータベースを直接編集してBitweaverメニューエディタの問題を修正したことを確認。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 112
 tags:
   - "correspondence"
   - "early-contributor"

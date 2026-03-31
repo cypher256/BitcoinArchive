@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/511/"
 threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
-threadPosition: 2
 translationStatus: complete
 ---
 

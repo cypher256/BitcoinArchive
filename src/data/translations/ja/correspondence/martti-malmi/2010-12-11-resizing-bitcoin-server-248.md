@@ -13,7 +13,6 @@ participants:
 description: "マルミがbitcoin.orgのメモリ不足エラーによるmysqldの停止を報告し、サーバーのRAMを512MBから1024MBに増設した経緯を説明。"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 248
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ participants:
 description: "genjix starts a discussion: Wikileaks contact info?."
 isSatoshi: false
 threadId: "bitcointalk-1735-wikileaks-cia"
-threadPosition: 1
 tags: []
 ---
 

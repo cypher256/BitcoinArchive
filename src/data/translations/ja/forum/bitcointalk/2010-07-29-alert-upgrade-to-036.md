@@ -11,7 +11,6 @@ participants:
 description: "satoshiがスレッドを開始: *** 警告 *** バージョン0.3.6"
 isSatoshi: true
 threadId: "bt-alert-version-0-3-6"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

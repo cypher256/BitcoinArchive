@@ -13,7 +13,6 @@ participants:
 description: "Just downloaded the python-json-rpc"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 166
 tags:
   - "correspondence"
   - "early-contributor"

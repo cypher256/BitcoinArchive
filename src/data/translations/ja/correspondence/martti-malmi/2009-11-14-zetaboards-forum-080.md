@@ -13,7 +13,6 @@ participants:
 description: "サトシがZetaboards上にBitcoinフォーラムを作成したことを報告。マルミに管理者アカウントを共有し、初期のサブフォーラム構成方針を説明。"
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 80
 tags:
   - "correspondence"
   - "early-contributor"

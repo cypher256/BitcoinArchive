@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシに32.51コインを送り、トランザクションのコメントを受信者の公開鍵で暗号化できるかどうかを質問する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 9
 tags:
   - "correspondence"
   - "transaction"

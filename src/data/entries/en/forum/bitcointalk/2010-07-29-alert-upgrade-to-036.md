@@ -11,7 +11,6 @@ participants:
 description: "Satoshi Nakamoto starts a discussion: *** ALERT *** Upgrade to 0.3.6."
 isSatoshi: true
 threadId: "bt-alert-version-0-3-6"
-threadPosition: 1
 tags: []
 ---
 

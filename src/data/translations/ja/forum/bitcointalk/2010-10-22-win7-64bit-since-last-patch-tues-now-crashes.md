@@ -13,7 +13,6 @@ participants:
 description: "Odinがスレッドを開始: Win7 64bit 前回のパッチ火曜日以降クラッシュする"
 isSatoshi: false
 threadId: "bt-win7-64bit-since-last-patch-tues-now-crashes"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

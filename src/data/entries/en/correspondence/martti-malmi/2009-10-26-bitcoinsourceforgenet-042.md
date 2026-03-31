@@ -13,7 +13,6 @@ participants:
 description: "Satoshi forwards reports from Eugen Leitl and Liberty Standard about bitcoin.sourceforge.net being down, with Bitweaver showing a TEST mode error message."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 42
 tags:
   - "correspondence"
   - "early-contributor"

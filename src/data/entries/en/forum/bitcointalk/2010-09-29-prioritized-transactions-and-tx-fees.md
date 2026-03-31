@@ -13,7 +13,6 @@ participants:
 description: "Jeff Garzik starts a discussion: Prioritized transactions, and tx fees."
 isSatoshi: false
 threadId: "bt-prioritized-transactions-and-tx-fees"
-threadPosition: 1
 tags: []
 ---
 

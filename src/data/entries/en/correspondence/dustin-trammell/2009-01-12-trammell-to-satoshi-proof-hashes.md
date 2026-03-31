@@ -13,7 +13,6 @@ participants:
 description: "Trammell tells Satoshi about the proof-hashes Google Group he runs, offers feedback on the credit field display, reports he was running v0.1.1 and will upgrade, and volunteers to help test new features."
 isSatoshi: false
 threadId: "satoshi-dustin-trammell"
-threadPosition: 3
 tags:
   - "correspondence"
   - "early-adopter"

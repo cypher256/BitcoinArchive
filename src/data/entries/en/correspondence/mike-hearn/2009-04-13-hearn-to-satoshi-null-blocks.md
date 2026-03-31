@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn asks whether the block chain needs to keep extending even when there are no transactions to process."
 isSatoshi: false
 threadId: "satoshi-mike-hearn-questions"
-threadPosition: 4
 tags:
   - "correspondence"
   - "block-chain"

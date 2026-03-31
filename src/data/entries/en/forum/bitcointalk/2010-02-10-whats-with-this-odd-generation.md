@@ -13,7 +13,6 @@ participants:
 description: "theymos starts a discussion: What's with this odd generation?."
 isSatoshi: false
 threadId: "bt-what-s-with-this-odd-generation"
-threadPosition: 1
 tags: []
 ---
 

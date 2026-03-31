@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/378/"
 threadId: "bt-0-3-10-1-question-on-where-block-should-be"
-threadPosition: 3
 ---
 
 For now, can some people running 0.3.10 with static IP who can receive incoming connections post their IP?  Then we can -addnode= them and make sure to connect to at least one 0.3.10 node.

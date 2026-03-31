@@ -13,7 +13,6 @@ participants:
 description: "Odinがスレッドを開始: Linuxディストリビューションのダウンロード"
 isSatoshi: false
 threadId: "bt-linux-distribution-download"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ participants:
 description: "AndrewBuckがスレッドを開始: ソースコードのドキュメント"
 isSatoshi: false
 threadId: "bt-source-code-documentation"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ participants:
 description: "wobberがスレッドを開始: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
 isSatoshi: false
 threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

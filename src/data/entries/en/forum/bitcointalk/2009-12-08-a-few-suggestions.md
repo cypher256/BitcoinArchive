@@ -13,7 +13,6 @@ participants:
 description: "madhatter starts a discussion: A few suggestions."
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
-threadPosition: 1
 tags: []
 ---
 

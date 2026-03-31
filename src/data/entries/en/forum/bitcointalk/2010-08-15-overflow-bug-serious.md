@@ -13,7 +13,6 @@ participants:
 description: "lfm starts a discussion: overflow bug SERIOUS."
 isSatoshi: false
 threadId: "bt-overflow-bug-serious"
-threadPosition: 1
 tags: []
 ---
 

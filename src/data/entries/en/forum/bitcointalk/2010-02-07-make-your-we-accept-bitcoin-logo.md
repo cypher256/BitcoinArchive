@@ -13,7 +13,6 @@ participants:
 description: "Martti Malmi (sirius) starts a discussion: Make your \"we accept Bitcoin\" logo."
 isSatoshi: false
 threadId: "bt-make-your-we-accept-bitcoin-logo"
-threadPosition: 1
 tags: []
 ---
 

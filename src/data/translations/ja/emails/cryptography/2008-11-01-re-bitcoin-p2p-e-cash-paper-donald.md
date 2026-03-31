@@ -12,7 +12,6 @@ participants:
     slug: "james-donald"
 description: "ジェームズ・A・ドナルドがサトシのビットコイン発表に返信し、システムのスケーラビリティとノードが単一のトランザクション履歴にどのように合意するかについて疑問を提起した。"
 threadId: "bitcoin-p2p-e-cash-paper"
-threadPosition: 2
 inReplyTo: "emails/cryptography/2008-10-31-bitcoin-p2p-e-cash-paper"
 isSatoshi: false
 tags:

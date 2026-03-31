@@ -13,7 +13,6 @@ participants:
 description: "AndrewBuck starts a discussion: Source code documentation."
 isSatoshi: false
 threadId: "bt-source-code-documentation"
-threadPosition: 1
 tags: []
 ---
 

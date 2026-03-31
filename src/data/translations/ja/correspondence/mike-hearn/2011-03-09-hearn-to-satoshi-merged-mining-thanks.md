@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシに感謝し、ハル・フィニーがTx0のscriptSigにmerkleルートを格納するアプローチを正しく推測していたことを指摘する。"
 isSatoshi: false
 threadId: "satoshi-mike-hearn-bitcoinj"
-threadPosition: 5
 tags:
   - "correspondence"
   - "merged-mining"

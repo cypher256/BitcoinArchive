@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/395/"
 threadId: "bt-overflow-bug-serious"
-threadPosition: 13
 ---
 
 Un-upgraded nodes have the correct chain most of the time, but they are still trying to include the overflow transaction in every block, so they're continually trying to fork and generate invalid blocks.  If an old version node is restarted, its transaction pool is emptied, so it may generate valid blocks for a while until the transaction gets broadcast again.  0.3.9 and lower nodes still must upgrade.

@@ -13,7 +13,6 @@ participants:
 description: "geblerがスレッドを開始: 潜在的な災害シナリオ"
 isSatoshi: false
 threadId: "bt-potential-disaster-scenario"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ participants:
 description: "今のところ問題なし。大丈夫そう"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 127
 tags:
   - "correspondence"
   - "early-contributor"

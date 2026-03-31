@@ -13,7 +13,6 @@ participants:
 description: "Satoshi issues an urgent alert to the bitcoin-list mailing list warning users not to trust transactions after block 74638 while a critical problem is being investigated."
 isSatoshi: true
 threadId: "satoshi-martti-malmi"
-threadPosition: 231
 tags:
   - "correspondence"
   - "early-contributor"

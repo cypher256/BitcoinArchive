@@ -13,7 +13,6 @@ participants:
 description: "Suggesterがスレッドを開始: 現在のBitcoin経済モデルは持続不可能"
 isSatoshi: false
 threadId: "bt-current-bitcoin-economic-model-is-unsustainable"
-threadPosition: 1
 tags: []
 translationStatus: complete
 ---

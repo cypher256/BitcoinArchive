@@ -13,7 +13,6 @@ participants:
 description: "eurekafag starts a discussion: Memory leak."
 isSatoshi: false
 threadId: "bt-memory-leak"
-threadPosition: 1
 tags: []
 ---
 

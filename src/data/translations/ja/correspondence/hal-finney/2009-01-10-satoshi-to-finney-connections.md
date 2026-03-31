@@ -13,7 +13,6 @@ participants:
 description: "サトシがフィニーに対し、自分のいる場所からは外部からの接続を受け付けられないことを明かした。ビットコインネットワーク最初期における運用上の制約が示されている。"
 isSatoshi: true
 threadId: "satoshi-hal-finney-private"
-threadPosition: 3
 tags:
   - "correspondence"
   - "network"

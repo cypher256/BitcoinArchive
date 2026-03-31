@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/280/"
 threadId: "bt-bitcoin-x86-for-windows"
-threadPosition: 2
 translationStatus: complete
 ---
 

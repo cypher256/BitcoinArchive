@@ -14,7 +14,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/349/"
 threadId: "bt-bugfixes-in-svn-rev-130"
-threadPosition: 1
 translationStatus: complete
 ---
 

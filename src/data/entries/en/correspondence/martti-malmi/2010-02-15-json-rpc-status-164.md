@@ -13,7 +13,6 @@ participants:
 description: "Yes. Tested with Python's JSON-RPC, and seems to work fine! Really"
 isSatoshi: false
 threadId: "satoshi-martti-malmi"
-threadPosition: 164
 tags:
   - "correspondence"
   - "early-contributor"
