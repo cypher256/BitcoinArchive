@@ -363,8 +363,11 @@ async function main() {
         continue;
       }
 
-      // Determine threadId from the Satoshi post it's associated with
-      const threadId = satoshiPosts[0]?.threadId || '';
+      // Determine threadId and topic for this post
+      // Cross-topic quotes don't belong to the current thread
+      const isCrossTopic = neededPosts.get(msgId)?.quoteTopic && neededPosts.get(msgId).quoteTopic !== topicNum;
+      const postTopicNum = isCrossTopic ? neededPosts.get(msgId).quoteTopic : topicNum;
+      const threadId = isCrossTopic ? '' : (satoshiPosts[0]?.threadId || '');
 
       // Generate filename
       const datePrefix = post.dateISO ? post.dateISO.slice(0, 10) : 'unknown-date';
@@ -373,19 +376,19 @@ async function main() {
 
       // Generate frontmatter
       const displayTitle = threadTitle ? `Re: ${threadTitle}` : `Re: (context post by ${post.author})`;
+      const threadIdLine = threadId ? `\nthreadId: "${threadId}"` : '';
       const md = `---
 title: "${displayTitle.replace(/"/g, '\\"')}"
 date: ${post.dateISO || '2010-01-01T00:00:00Z'}
 type: "forum-post"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=${topicNum}.msg${msgId}#msg${msgId}"
+sourceUrl: "https://bitcointalk.org/index.php?topic=${postTopicNum}.msg${msgId}#msg${msgId}"
 author: "${post.author}"
 participants:
   - name: "${post.author}"
     slug: "${post.author.toLowerCase().replace(/\s+/g, '-')}"
-description: "Context post by ${post.author} in BitcoinTalk topic ${topicNum}. ${reason}."
-isSatoshi: false
-threadId: "${threadId}"
+description: "Context post by ${post.author} in BitcoinTalk topic ${postTopicNum}. ${reason}."
+isSatoshi: false${threadIdLine}
 tags: []
 ---
 

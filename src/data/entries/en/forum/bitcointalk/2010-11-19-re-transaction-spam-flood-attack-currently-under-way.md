@@ -21,7 +21,7 @@ secondarySources:
 
 I'm doing something like that.  Priority is a more formalised version of the concept you're describing.
 
-> [Quote from: FreeMoney on November 19, 2010, 05:39:44 PM](#msg22844)
+> [Quote from: FreeMoney on November 19, 2010, 05:39:44 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-11-19-freemoney-msg22844/)
 > As it stands now 3.15 has a lot of free transaction space and that space is given first to transactions with the highest [age]*[value]/[size] correct? Would it be reasonable to make some arbitrary portion of the free space require [age]*[value]/[size] > C ?
 
 Maybe set C so that a standard 1BTC transaction can get into the main free area on the next block. And a .1 can get in after waiting about 10 blocks. And make the area which allows [age]*[value]/[size] < C to let in about a dozen transactions or so.
