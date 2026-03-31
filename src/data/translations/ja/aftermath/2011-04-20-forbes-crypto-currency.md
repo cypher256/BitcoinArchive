@@ -1,5 +1,5 @@
 ---
-title: "「Crypto Currency」 — Forbes誌記事"
+title: "Forbes「Crypto Currency」 — ビットコインとサトシに関する初の主流メディア特集（2011年）"
 date: 2011-04-20T00:00:00Z
 type: "article"
 source: "forbes"

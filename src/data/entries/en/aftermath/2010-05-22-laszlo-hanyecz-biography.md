@@ -1,5 +1,5 @@
 ---
-title: "Laszlo Hanyecz (dates unknown) — Programmer who made Bitcoin's first commercial transaction and pioneered GPU mining"
+title: "Laszlo Hanyecz — Bitcoin Pizza Day pioneer and first GPU miner"
 date: 2010-05-22T00:00:00Z
 type: "biography"
 source: "wikipedia"

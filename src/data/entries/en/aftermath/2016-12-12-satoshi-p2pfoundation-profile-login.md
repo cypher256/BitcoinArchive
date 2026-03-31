@@ -1,5 +1,5 @@
 ---
-title: "Satoshi Nakamoto's P2P Foundation profile shows login activity"
+title: "Satoshi Nakamoto's P2P Foundation account shows login activity (2016) — hack or return?"
 date: 2016-12-12T00:00:00Z
 type: "article"
 source: "p2pfoundation"

@@ -1,5 +1,5 @@
 ---
-title: "Jeff Garzik (1974–) — Linux kernel developer who became one of Bitcoin's most prolific early contributors"
+title: "Jeff Garzik (1974–) — Linux kernel developer and early Bitcoin contributor"
 date: 2010-07-15T00:00:00Z
 type: "biography"
 source: "wikipedia"

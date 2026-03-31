@@ -1,5 +1,5 @@
 ---
-title: "「ビットコインの激動の10年」 — ジェフ・ガージック回顧録"
+title: "ジェフ・ガージック「Bitcoin's Wild Decade」 — 初期開発者の10年回顧"
 date: 2018-10-29T00:00:00Z
 type: "article"
 source: "breaker-mag"

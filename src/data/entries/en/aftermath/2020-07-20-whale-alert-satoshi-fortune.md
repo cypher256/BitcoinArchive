@@ -1,5 +1,5 @@
 ---
-title: "Whale Alert publishes 'The Satoshi Fortune' — independent analysis confirms ~1.125 million BTC"
+title: "Whale Alert's 'The Satoshi Fortune' — analysis confirms Satoshi mined ~1.125 million BTC"
 date: 2020-07-20T00:00:00Z
 type: "article"
 source: "medium"

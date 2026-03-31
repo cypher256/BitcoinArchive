@@ -1,5 +1,5 @@
 ---
-title: "ピーター・トッド — Bitcoin Core開発者、Replace-by-Feeの提唱者"
+title: "ピーター・トッド（生没年不明） — Bitcoin Core開発者、Replace-by-Feeの提唱者"
 date: 2010-12-07T00:00:00Z
 type: "biography"
 source: "wikipedia"

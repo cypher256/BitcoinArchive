@@ -1,5 +1,5 @@
 ---
-title: "PLOS ONE publishes peer-reviewed study confirming Patoshi mining anomalies across Bitcoin's first 18 months"
+title: "PLOS ONE peer-reviewed study confirms Patoshi mining anomalies in early Bitcoin"
 date: 2021-09-30T00:00:00Z
 type: "article"
 source: "plos"

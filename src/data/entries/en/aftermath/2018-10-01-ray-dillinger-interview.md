@@ -1,5 +1,5 @@
 ---
-title: "Interview with Ray Dillinger (Great Wall of Numbers)"
+title: "Ray Dillinger interview — early Bitcoin code reviewer recalls Satoshi's design choices"
 date: 2018-10-01T00:00:00Z
 type: "article"
 source: "of-numbers"

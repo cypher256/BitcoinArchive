@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin and me"
+title: "Hal Finney: 'Bitcoin and Me' — a cypherpunk's final essay on Bitcoin's origins"
 date: 2013-03-19T20:40:02Z
 type: "article"
 source: "bitcointalk"

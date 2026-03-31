@@ -1,5 +1,5 @@
 ---
-title: "If I'd Known What We Were Starting"
+title: "Ray Dillinger: 'If I'd Known What We Were Starting' — reflections on reviewing Bitcoin's code"
 date: 2017-09-20T00:00:00Z
 type: "article"
 source: "linkedin"

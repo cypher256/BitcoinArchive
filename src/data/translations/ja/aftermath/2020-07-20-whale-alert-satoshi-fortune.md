@@ -1,5 +1,5 @@
 ---
-title: "Whale Alertが「The Satoshi Fortune」を発表 — 独立分析で約112.5万BTCを確認"
+title: "サトシの保有量は約112.5万BTC — Whale Alert独立分析「The Satoshi Fortune」"
 date: 2020-07-20T00:00:00Z
 type: "article"
 source: "medium"

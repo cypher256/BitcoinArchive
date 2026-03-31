@@ -1,5 +1,5 @@
 ---
-title: "Hal Finney passes away"
+title: "Hal Finney (1956–2014) passes away — first Bitcoin recipient cryopreserved at Alcor"
 date: 2014-08-28T00:00:00Z
 type: "article"
 source: "extropians"

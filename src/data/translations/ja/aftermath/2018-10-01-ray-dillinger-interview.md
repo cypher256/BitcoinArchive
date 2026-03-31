@@ -1,5 +1,5 @@
 ---
-title: "レイ・ディリンジャーインタビュー（Great Wall of Numbers）"
+title: "レイ・ディリンジャー インタビュー — ビットコインの初期コードレビューを語る"
 date: 2018-10-01T00:00:00Z
 type: "article"
 source: "of-numbers"

@@ -1,5 +1,5 @@
 ---
-title: "Martti Malmi (1988–) — Finnish developer who became Bitcoin's most prolific early contributor"
+title: "Martti Malmi (1988–) — Bitcoin's first developer after Satoshi"
 date: 2009-05-01T00:00:00Z
 type: "biography"
 source: "wikipedia"

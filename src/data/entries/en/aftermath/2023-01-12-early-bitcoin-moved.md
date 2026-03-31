@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin mined in January 2009 moves for the first time"
+title: "Early Bitcoin from January 2009 moves for the first time — sparks Satoshi speculation"
 date: 2023-01-12T00:00:00Z
 type: "article"
 source: "mempool"

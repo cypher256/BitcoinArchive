@@ -1,5 +1,5 @@
 ---
-title: "\"Crypto Currency\" — Forbes magazine article"
+title: "Forbes 'Crypto Currency' — early mainstream feature on Bitcoin and Satoshi (2011)"
 date: 2011-04-20T00:00:00Z
 type: "article"
 source: "forbes"

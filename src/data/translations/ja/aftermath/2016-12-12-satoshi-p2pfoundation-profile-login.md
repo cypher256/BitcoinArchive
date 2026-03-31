@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモトのP2P Foundationプロフィールにログイン活動が検出"
+title: "サトシ・ナカモトのP2P Foundationアカウントにログイン活動（2016年） — ハッキングか本人か"
 date: 2016-12-12T00:00:00Z
 type: "article"
 source: "p2pfoundation"

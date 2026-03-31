@@ -1,5 +1,5 @@
 ---
-title: "\"Justice depends on who's got the bigger wallet\" — Cobra's response to whitepaper ruling"
+title: "Cobra responds to Bitcoin whitepaper ruling: 'Justice depends on who's got the bigger wallet'"
 date: 2021-06-28T00:00:00Z
 type: "article"
 source: "x"

@@ -1,5 +1,5 @@
 ---
-title: "Sergio Demian Lerner coins the term 'Patoshi' and updates estimate to ~22,000 blocks / ~1.1 million BTC"
+title: "Sergio Lerner coins the term 'Patoshi' — updates Satoshi mining estimate to ~1.1M BTC"
 date: 2019-04-16T00:00:00Z
 type: "article"
 source: "bitslog"

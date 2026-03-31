@@ -1,5 +1,5 @@
 ---
-title: "\"Bitcoin's Wild Decade\" — Jeff Garzik retrospective"
+title: "Jeff Garzik: 'Bitcoin's Wild Decade' — early developer retrospective"
 date: 2018-10-29T00:00:00Z
 type: "article"
 source: "breaker-mag"

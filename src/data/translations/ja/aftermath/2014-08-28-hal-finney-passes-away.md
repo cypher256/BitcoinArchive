@@ -1,5 +1,5 @@
 ---
-title: "ハル・フィニー逝去"
+title: "ハル・フィニー逝去（2014年） — ビットコイン最初の受信者、Alcorで人体冷凍保存"
 date: 2014-08-28T00:00:00Z
 type: "article"
 source: "extropians"

@@ -1,5 +1,5 @@
 ---
-title: "Satoshi's brief return on P2P Foundation"
+title: "Satoshi Nakamoto's P2P Foundation return: 'I am not Dorian Nakamoto'"
 date: 2014-03-07T12:21:00Z
 type: "article"
 source: "p2pfoundation"

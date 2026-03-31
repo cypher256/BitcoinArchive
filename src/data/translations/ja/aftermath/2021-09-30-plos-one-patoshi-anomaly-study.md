@@ -1,5 +1,5 @@
 ---
-title: "PLOS ONEがPatoshiマイニング異常を確認する査読付き論文を掲載"
+title: "PLOS ONE査読済み研究がPatoshiマイニング異常を確認 — ビットコイン初期の採掘パターン"
 date: 2021-09-30T00:00:00Z
 type: "article"
 source: "plos"

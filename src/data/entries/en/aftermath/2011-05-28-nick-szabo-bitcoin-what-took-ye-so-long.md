@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin, what took ye so long?"
+title: "Nick Szabo: 'Bitcoin, what took ye so long?' — why digital cash took decades"
 date: 2011-05-28T00:00:00Z
 type: "article"
 source: "unenumerated"

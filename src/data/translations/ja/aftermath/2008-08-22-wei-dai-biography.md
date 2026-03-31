@@ -1,5 +1,5 @@
 ---
-title: "ウェイ・ダイ（生没年不明） — b-moneyとCrypto++の考案者、ビットコインホワイトペーパーで引用されたコンピューターサイエンティスト"
+title: "ウェイ・ダイ — b-moneyとCrypto++の作者、ビットコイン論文で引用"
 date: 2008-08-22T00:00:00Z
 type: "biography"
 source: "wikipedia"

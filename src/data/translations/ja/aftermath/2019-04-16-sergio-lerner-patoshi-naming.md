@@ -1,5 +1,5 @@
 ---
-title: "セルジオ・デミアン・ラーナーが「Patoshi」を命名し、推定を~22,000ブロック / ~110万BTCに更新"
+title: "セルジオ・ラーナーが「Patoshi」を命名 — サトシのマイニング推定を~110万BTCに更新"
 date: 2019-04-16T00:00:00Z
 type: "article"
 source: "bitslog"

@@ -1,5 +1,5 @@
 ---
-title: "\"A Beautiful Mind type lone genius\" — Jeff Garzik on Satoshi Nakamoto"
+title: "Jeff Garzik on Satoshi Nakamoto: 'A Beautiful Mind type lone genius'"
 date: 2024-10-28T00:00:00Z
 type: "article"
 source: "bitcoin-magazine"

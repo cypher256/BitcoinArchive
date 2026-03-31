@@ -1,5 +1,5 @@
 ---
-title: "ビットコインと私"
+title: "ハル・フィニー「ビットコインと私」 — サイファーパンクが振り返るビットコインの起源"
 date: 2013-03-19T20:40:02Z
 type: "article"
 source: "bitcointalk"
