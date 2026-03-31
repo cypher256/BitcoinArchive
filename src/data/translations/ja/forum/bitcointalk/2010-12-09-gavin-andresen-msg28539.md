@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-> [chaordの引用、2010年12月9日 午前7:17:12](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)
+> [Quote from: chaord on December 09, 2010, 07:17:12 AM](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)
 > デフォルトで128バイト（または合意できる閾値）を超える非標準トランザクションを禁止する？
 > 
 > 上記のオプションが開発者によって却下された理由を聞きたい。

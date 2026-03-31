@@ -33,7 +33,7 @@ On April 16, 2019, Sergio Demian Lerner published "The Return of the Deniers and
 
 **The "Patoshi" name:**
 
-Lerner coined the term **"Patoshi"** — a portmanteau of "Pattern" and "Satoshi" — to refer to the distinctive mining signature he had been studying since 2013. The name became the standard reference in all subsequent academic and community discussions of Satoshi's mining behavior.
+Lerner coined the term **"Patoshi"** — a portmanteau of "Pattern" and "Satoshi" — to refer to the distinctive mining signature he had been [studying since 2013](/BitcoinArchive/en/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). The name became the standard reference in all subsequent academic and community discussions of Satoshi's mining behavior.
 
 **Updated estimates:**
 
@@ -43,7 +43,7 @@ Lerner coined the term **"Patoshi"** — a portmanteau of "Pattern" and "Satoshi
 
 **Timestamp inversion analysis:**
 
-The most powerful new evidence was a timestamp analysis of the first 50,000 blocks. Lerner found:
+Building on the [nonce LSB discovery](/BitcoinArchive/en/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/), the most powerful new evidence was a timestamp analysis of the first 50,000 blocks. Lerner found:
 
 - **Zero** timestamp inversions between consecutive Patoshi blocks
 - **224** timestamp inversions among consecutive non-Patoshi blocks

@@ -35,7 +35,7 @@ Cryonics Magazine（Alcor Life Extension Foundation発行）の2019年第2四半
 **Caltechでの出会いについて：**
 フランはCaltechの3年生の時、新入生のハルの「rotation week」で出会った。「彼が[上級生に]持ち上げられて運ばれている最中の姿を見ました。」彼女は回想する：「人々が集まって哲学的な議論をするんです…… 彼が話す時、彼の言うことにはたいてい聞く価値がありました。」
 
-**2009年1月のビットコイン開始について：**
+**2009年1月の[ビットコイン開始](/BitcoinArchive/ja/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/)について：**
 フランはハルの反応を語った：
 
 > 「これはクールだ。これは楽しいゲームだ。見て！本当に動いてる！」

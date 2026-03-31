@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-> [ByteCoinの引用、2010年11月8日 午前2:31:22](https://bitcointalk.org/index.php?topic=1668.msg20570#msg20570)
+> [Quote from: ByteCoin on November 08, 2010, 02:31:22 AM](https://bitcointalk.org/index.php?topic=1668.msg20570#msg20570)
 > 高額トランザクションを優先しても問題は解決しない。自分のアドレス間で大量のBitcoinを無限に送り合うことでスパムできてしまうからだ。
 
 いや、できない。送信するたびに「新しい」ものになり、優先度は経過時間と金額の積だからだ：

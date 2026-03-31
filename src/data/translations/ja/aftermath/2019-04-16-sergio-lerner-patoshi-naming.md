@@ -33,7 +33,7 @@ translationStatus: complete
 
 **「Patoshi」の命名:**
 
-ラーナーは **「Patoshi」** — 「Pattern」と「Satoshi」を組み合わせた造語 — を使い、2013年から研究してきた特徴的なマイニング署名を呼んだ。この名称は、その後のサトシのマイニング行動に関するすべての学術的・コミュニティ議論における標準的な呼称となった。
+ラーナーは **「Patoshi」** — 「Pattern」と「Satoshi」を組み合わせた造語 — を使い、[2013年から研究してきた](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)特徴的なマイニング署名を呼んだ。この名称は、その後のサトシのマイニング行動に関するすべての学術的・コミュニティ議論における標準的な呼称となった。
 
 **更新された推定:**
 
@@ -43,7 +43,7 @@ translationStatus: complete
 
 **タイムスタンプ逆転分析:**
 
-最も強力な新証拠は、最初の50,000ブロックのタイムスタンプ分析であった。ラーナーは以下を発見した：
+[ノンスLSBの発見](/BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/)に続き、最も強力な新証拠は、最初の50,000ブロックのタイムスタンプ分析であった。ラーナーは以下を発見した：
 
 - 連続するPatoshiブロック間のタイムスタンプ逆転: **ゼロ**
 - 連続する非Patoshiブロック間のタイムスタンプ逆転: **224回**

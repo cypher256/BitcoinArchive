@@ -36,7 +36,7 @@ secondarySources:
 Martti Malmi (born 1988, Helsinki, Finland) is a software developer who became one of the earliest and most significant contributors to Bitcoin. He studied computer science at Helsinki University of Technology (now Aalto University).
 
 **First Contact with Satoshi:**
-In May 2009, Malmi discovered Bitcoin and contacted Satoshi Nakamoto, offering to help with the project. Their correspondence would grow to approximately 260 emails — the largest known volume of communication between Satoshi and any single individual. These emails were entered into evidence during the COPA v Wright trial in February 2024.
+In May 2009, Malmi discovered Bitcoin and contacted Satoshi Nakamoto, offering to help with the project. Their correspondence would grow to approximately 260 emails — the largest known volume of communication between Satoshi and any single individual. These emails were entered into evidence during the [COPA v Wright trial](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in February 2024.
 
 **Contributions to Bitcoin:**
 Malmi's contributions were wide-ranging and foundational. He ported the Bitcoin software to Linux, making it accessible beyond Windows for the first time. He set up and managed the bitcoin.org website, which served as the primary information hub for the project. He also created the original Bitcoin forum (which later evolved into BitcoinTalk), providing the community with its first dedicated discussion platform. Satoshi acknowledged Malmi's contributions in the Bitcoin 0.2 release announcement (December 2009):
@@ -44,7 +44,7 @@ Malmi's contributions were wide-ranging and foundational. He ported the Bitcoin 
 > "Many thanks to Martti (sirius-m) for all his development work."
 
 **First Bitcoin-to-Fiat Transaction:**
-On October 12, 2009, Malmi sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing that bitcoin had real-world monetary value. Malmi later confirmed this transaction on Twitter, stating he made the sale "to help him get the world's first bitcoin trading service started."
+On [October 12, 2009](/BitcoinArchive/en/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), Malmi sold 5,050 BTC to [NewLibertyStandard](/BitcoinArchive/en/entries/aftermath/2009-10-05-newlibertystandard-biography/) for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing that bitcoin had real-world monetary value. Malmi later confirmed this transaction on Twitter, stating he made the sale "to help him get the world's first bitcoin trading service started."
 
 **Later Years:**
 Malmi gradually reduced his involvement in Bitcoin development around 2011 as other developers took on larger roles. He went on to work in the technology industry in Finland. His early emails with Satoshi, published through the COPA v Wright trial proceedings in 2024, provided invaluable insight into Bitcoin's formative period and Satoshi's development philosophy.

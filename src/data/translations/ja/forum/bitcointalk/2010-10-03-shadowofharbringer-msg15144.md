@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-> [サトシの引用、2010年10月3日 午後6:17:06](https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102)
+> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102)
 > 言い忘れていたが、64ビットAMDでは検出がうまくいかないのではないかと思っていた。信じがたいことだが、AMDは64ビットモードで異なるモデル番号を報告する。
 > 
 > debug.logでCPUIDをgrepして結果を教えてくれないか？（64ビットAMDを使っている他の人もお願いしたい。）どのAMDチップを使っているか？

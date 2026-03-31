@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.13, please upgrade"
+title: "Re: バージョン0.3.13、アップグレードしてください"
 date: 2010-10-02T13:00:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 1327. quoted by msg15102."
+description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの投稿。msg15102で引用。"
 isSatoshi: false
 threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-That's nice, however the automatic 4way detection is not working on my Gentoo AMD 64 version client.
+それは良いが、自分のGentoo AMD 64版クライアントでは自動4way検出が機能していない。
 
-I still have to add the "-4way" switch.
+まだ「-4way」スイッチを手動で追加しなければならない。

@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-> [bytemasterの引用、2010年8月1日 午後8:14:29](https://bitcointalk.org/index.php?topic=665.msg6928#msg6928)
+> [Quote from: bytemaster on August 01, 2010, 08:14:29 PM](https://bitcointalk.org/index.php?topic=665.msg6928#msg6928)
 > 固有の残高を持つ複数の「アカウント」を持ち、アカウントごとにコインの送受信をしたい。複数のウォレットを同時に実行するのと同等のものだ。
 > 
 > 各「受信アドレス」の残高を一覧表示し、コイン送信時に「送信元」アドレスを指定できると助かる。

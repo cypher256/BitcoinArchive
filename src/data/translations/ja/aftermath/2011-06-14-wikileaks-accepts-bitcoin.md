@@ -32,11 +32,11 @@ translationStatus: complete
 
 これは2010年11月のCableGateスキャンダルを受けてWikiLeaksに課された金融封鎖の後のことだった。Bank of America、Visa、MasterCard、PayPal、Western Unionがすべて同組織への寄付を遮断し、収入の推定95%を断ち切っていた。
 
-6か月前の2010年12月5日、サトシ・ナカモトはWikiLeaksのビットコイン採用に対してコミュニティにこう警告していた。
+6か月前の2010年12月5日、サトシ・ナカモトはWikiLeaksのビットコイン採用に対して[コミュニティにこう警告していた](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-12-05-re-wikileaks/)。
 
 > 「プロジェクトは徐々に成長する必要がある。そうすれば途中でソフトウェアを強化できる。WikiLeaksにビットコインを使おうとしないよう訴える。」
 
-WikiLeaksはサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表がサトシの最終的な退場から2か月後だったことだ。
+WikiLeaksはサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から2か月後だったことだ。
 
 ビットコインはWikiLeaksの生命線となった。2016年までに、同組織はビットコイン寄付を通じて4,000 BTC以上を集めた。ジュリアン・アサンジは後にこう述べた。
 

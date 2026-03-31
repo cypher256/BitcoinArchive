@@ -35,13 +35,13 @@ secondarySources:
     url: "https://www.vice.com/en/article/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails/"
 ---
 
-Mike Hearn is a software engineer who worked at Google on projects including Google Maps, Google Earth, and Gmail's anti-spam systems. He became one of the earliest contributors to Bitcoin after reading the white paper and contacting Satoshi Nakamoto directly.
+Mike Hearn is a software engineer who worked at Google on projects including Google Maps, Google Earth, and Gmail's anti-spam systems. He became one of the earliest contributors to Bitcoin after reading the [white paper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and contacting Satoshi Nakamoto directly.
 
 **First Contact with Satoshi:**
 In April 2009, just months after Bitcoin's launch, Hearn emailed Satoshi Nakamoto after reading the Bitcoin white paper. This began a correspondence that would continue through April 2011. Hearn was among the very first people outside the initial cypherpunk circle to take a serious technical interest in Bitcoin.
 
 **Correspondence with Satoshi:**
-Between 2009 and April 2011, Hearn and Satoshi exchanged a series of emails covering Bitcoin's technical future. Satoshi discussed how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to specialized hardware. In one of the final exchanges (April 23, 2011), Satoshi wrote:
+Between 2009 and April 2011, Hearn and Satoshi exchanged a series of emails covering Bitcoin's technical future. Satoshi discussed how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to specialized hardware. In one of the [final exchanges](/BitcoinArchive/en/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/) (April 23, 2011), Satoshi wrote:
 
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
@@ -51,7 +51,7 @@ This was among the last known private communications from Satoshi.
 Hearn developed BitcoinJ, a Java implementation of the Bitcoin protocol. It was the first major alternative implementation and became widely used in Android Bitcoin wallets and other applications. BitcoinJ demonstrated that Bitcoin could be implemented independently from the original C++ client.
 
 **Publication of Satoshi Emails:**
-In August 2017, Hearn's email correspondence with Satoshi was made public. The emails were first shared on BitcoinTalk and subsequently published on Hearn's personal website. These emails became one of the most important primary sources for understanding Satoshi's long-term technical vision and his state of mind as he left the project.
+In [August 2017, Hearn's email correspondence with Satoshi was made public](/BitcoinArchive/en/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/). The emails were first shared on BitcoinTalk and subsequently published on Hearn's personal website. These emails became one of the most important primary sources for understanding Satoshi's long-term technical vision and his state of mind as he left the project.
 
 **Departure from Bitcoin:**
-On January 14, 2016, Hearn published a blog post titled "The resolution of the Bitcoin experiment" on Medium, in which he wrote that Bitcoin "has failed." He announced he was leaving the project and had sold all his bitcoins, citing governance issues and the inability to reach consensus on scaling solutions. He subsequently joined R3, a blockchain consortium focused on enterprise applications, where he co-led development of the Corda distributed ledger platform.
+On January 14, 2016, Hearn published a blog post titled ["The resolution of the Bitcoin experiment"](/BitcoinArchive/en/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) on Medium, in which he wrote that Bitcoin "has failed." He announced he was leaving the project and had sold all his bitcoins, citing governance issues and the inability to reach consensus on scaling solutions. He subsequently joined R3, a blockchain consortium focused on enterprise applications, where he co-led development of the Corda distributed ledger platform.

@@ -34,6 +34,6 @@ The article sparked a media frenzy. Reporters and photographers descended on Dor
 
 Dorian Nakamoto firmly and repeatedly denied any involvement with Bitcoin. He stated he had misunderstood the reporter's question and thought she was asking about his previous classified engineering work. He retained a lawyer and gave a detailed interview to the Associated Press reaffirming his denial.
 
-The following day, on March 7, 2014, a message appeared on Satoshi Nakamoto's P2P Foundation account stating simply: "I am not Dorian Nakamoto." The authenticity of this post remains debated, as Satoshi's P2P Foundation account may have been compromised.
+The following day, on March 7, 2014, a message appeared on [Satoshi Nakamoto's P2P Foundation account](/BitcoinArchive/en/entries/forum/p2pfoundation/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency/) stating simply: "I am not Dorian Nakamoto." The authenticity of this post remains debated, as Satoshi's P2P Foundation account may have been compromised.
 
 The Bitcoin community rallied behind Dorian, raising over 67 BTC in donations for him. The incident became a cautionary tale about irresponsible reporting on Satoshi's identity and the consequences for innocent individuals caught in the speculation.

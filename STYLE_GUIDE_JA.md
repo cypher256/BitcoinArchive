@@ -80,6 +80,29 @@ spoken or written utterance.
 - Do not add `「」` to URLs, email headers, commands, log lines, handles, or UI
   strings unless they are being quoted as language.
 
+### Quote Attribution Lines
+
+BitcoinTalk quote attributions (`[Quote from: NAME on DATE]`) are structural
+UI elements, not prose. Keep them in their original English form:
+
+```markdown
+> [Quote from: RHorning on December 04, 2010, 10:17:44 PM](https://...)
+> 引用テキストは日本語に翻訳する。
+```
+
+Do not translate `Quote from:`, the person's name/handle, or the date format.
+The quoted **body text** that follows is translated to Japanese as normal.
+
+For mailing-list emails, the attribution line uses `NAME wrote:` format (e.g.,
+`Hal Finney wrote:`). Keep this in English as well — it is an email reply
+header, not prose.
+
+| Source | Attribution format | Rule |
+|--------|-------------------|------|
+| BitcoinTalk | `[Quote from: NAME on DATE](URL)` | Keep English |
+| Mailing lists | `NAME wrote:` | Keep English |
+| Correspondence | `> ` inline quotes | Translate as body text |
+
 ## Voice And Register
 
 - Preserve the speaker's register. Do not flatten every person into the same

@@ -39,7 +39,7 @@ translationStatus: complete
 Bitcoinが[GitHubに移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)以前、すべての開発はSourceForgeでホストされたSubversion（SVN）リポジトリで行われていた。リポジトリは2009年8月30日に作成され、2011年9月13日の最終コミットまでに252リビジョンが記録された。このリポジトリにコードをコミットしたのは、わずか4人だった。
 
 **SVN以前：**
-サトシ・ナカモトはSVNリポジトリが存在する前、SourceForge上で`.rar`アーカイブとしてソースコードを配布していた。SourceForgeプロジェクトは2008年11月9日に登録され、Bitcoin v0.1は2009年1月9日にリリースされた。最初の8ヶ月間、ソースコードはバージョン管理システムではなく、ダウンロード可能なアーカイブとして配布されていた。
+サトシ・ナカモトはSVNリポジトリが存在する前、SourceForge上で`.rar`アーカイブとしてソースコードを配布していた。SourceForgeプロジェクトは[2008年11月9日に登録](/BitcoinArchive/ja/entries/sourceforge/2008-11-09-bitcoin-project-registered/)され、Bitcoin v0.1は[2009年1月9日にリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v0.1-released/)された。最初の8ヶ月間、ソースコードはバージョン管理システムではなく、ダウンロード可能なアーカイブとして配布されていた。
 
 **SVNコミッター（完全なリスト）：**
 
@@ -54,9 +54,9 @@ Bitcoinが[GitHubに移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-1
 
 **サトシ・ナカモト（s_nakamoto）** のコミット数は252リビジョン中164件と圧倒的に多い。最後のリリースコミットはr201（"version 0.3.19 release"、2010年12月13日）。その2日後、小さな修正をもう1件 — r202（"get external ip from irc"、2010年12月15日）を入れた。r202以降にs_nakamotoのコミットはない。
 
-**ラズロ・ハニエツ（laszloh）** — 史上初のビットコインによる実世界での購入（ピザ2枚に1万BTC）とGPUマイニングの先駆者として知られる — のSVNコミットはたった1件：2010年8月4日のr123で、macOSのコンパイル問題を修正した。
+**ラズロ・ハニエツ（laszloh）** — [史上初のビットコインによる実世界での購入](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)（ピザ2枚に1万BTC）とGPUマイニングの先駆者として知られる — のSVNコミットはたった1件：2010年8月4日のr123で、macOSのコンパイル問題を修正した。
 
-**ギャビン・アンドレセン（gavinandresen）** は2010年10月にコミットアクセスを取得した。サトシがプロジェクトを段階的に引き渡す過程の一環だった。81件のコミットはサトシに次いで2番目に多い。2010年12月3日、サトシはマルッティ・マルミにこう書いている：
+**ギャビン・アンドレセン（gavinandresen）** は2010年10月にコミットアクセスを取得した。サトシがプロジェクトを段階的に引き渡す過程の一環だった。81件のコミットはサトシに次いで2番目に多い。2010年12月3日、サトシは[マルッティ・マルミにこう書いている](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)：
 
 > 「ギャビンがいいと思う。信頼できるし、責任感があり、プロフェッショナルで、技術的にもLinuxに関しては私よりずっと上だ」
 

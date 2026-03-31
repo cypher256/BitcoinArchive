@@ -1,5 +1,5 @@
 ---
-title: "Re: Multiple Wallets, one computer (multiple accounts)"
+title: "Re: 複数のウォレット、1台のコンピュータ（複数アカウント）"
 date: 2010-09-27T17:10:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 665. before msg18349."
+description: "BitcoinTalkトピック665におけるギャビン・アンドレセンの投稿。msg18349の前。"
 isSatoshi: false
 threadId: "bt-multiple-wallets-one-computer"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Separate "accounts" (addresses with labels) to accumulate Jackpots is the right idea.  Users buy tickets, bitcoins are moved to the appropriate Jackpot account.  When a Jackpot is won, transactions flow out of its account back to whoever won.
+ジャックポットを蓄積するための個別の「アカウント」（ラベル付きアドレス）は正しい考え方だ。ユーザーがチケットを購入し、ビットコインが適切なジャックポットアカウントに移動される。ジャックポットが当選した際は、そのアカウントから当選者にトランザクションが流れる。

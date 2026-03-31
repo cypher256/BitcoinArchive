@@ -34,13 +34,13 @@ secondarySources:
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
 ---
 
-On September 30, 2021, Maria Oskarsdottir and Jacky Mallett of Reykjavik University's Department of Computer Science published "Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network" in PLOS ONE (DOI: 10.1371/journal.pone.0258001). This was the first peer-reviewed academic paper to formally analyze the Patoshi mining pattern originally identified by Sergio Demian Lerner on his blog in 2013.
+On September 30, 2021, Maria Oskarsdottir and Jacky Mallett of Reykjavik University's Department of Computer Science published "Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network" in PLOS ONE (DOI: 10.1371/journal.pone.0258001). This was the first peer-reviewed academic paper to formally analyze the [Patoshi mining pattern](/BitcoinArchive/en/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) originally identified by [Sergio Demian Lerner](/BitcoinArchive/en/participants/sergio-demian-lerner/) on his blog in 2013.
 
 **Two distinct anomalies identified:**
 
 The paper identified two independent nonce anomalies in Bitcoin's coinbase transactions:
 
-1. **P Anomaly (Extended Patoshi anomaly):** The first hexadecimal nibble of the block nonce shows a disproportionate number of values in the range 0–3, when values should be uniformly distributed across 0–F. This is an extension and formalization of Lerner's original nonce LSB analysis.
+1. **P Anomaly (Extended Patoshi anomaly):** The first hexadecimal nibble of the block nonce shows a disproportionate number of values in the range 0–3, when values should be uniformly distributed across 0–F. This is an extension and formalization of Lerner's original [nonce LSB analysis](/BitcoinArchive/en/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/).
 
 2. **Z Anomaly (Zerononce anomaly):** The penultimate position of the nonce shows an abnormal number of zeros in the first 18 months of mining.
 

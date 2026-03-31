@@ -26,7 +26,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-On September 3, 2013, Sergio Demian Lerner published "A New Mystery about Satoshi Hidden in the Bitcoin Block-Chain," revealing a second, independent fingerprint in Satoshi's early mining — beyond the ExtraNonce slope analysis he had published five months earlier.
+On September 3, 2013, Sergio Demian Lerner published "A New Mystery about Satoshi Hidden in the Bitcoin Block-Chain," revealing a second, independent fingerprint in Satoshi's early mining — beyond the [ExtraNonce slope analysis he had published five months earlier](/BitcoinArchive/en/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/).
 
 **The discovery:**
 
