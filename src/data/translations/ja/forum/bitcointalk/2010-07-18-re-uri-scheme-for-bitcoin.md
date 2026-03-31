@@ -18,11 +18,7 @@ translationStatus: complete
 ---
 
 > [Quote from: lachesis on June 16, 2010, 06:14:05 AM](#msg1597)
-> 問題を誤解していると思う。私のブラウザは常に127.0.0.1にアクセスできる（奇妙なIEの設定やウイルスがない限り）。URLバーにアドレスを入力するか、リンクをクリックすれば、問題なく動作する。しかし、JavaScriptでドメイン間（または同一ドメイン上の異なるポート間）のPOSTリクエストを完了させることはできない。
-> このリンクをクリックしてみてほしい：
-> http://127.0.0.1/
-> おそらく何も表示されないだろう（システム上でWebサーバーを実行していない限り）が、ブラウザは喜んでそこに行こうとする。
-> XMLHTTPRequestは、あの別のスレッドで議論していたものだ。
+> I think you're misunderstanding the issue. My browser will always be able to go to 127.0.0.1 (barring some strange IE settings or a virus). If I type the address into the URL bar or click a link, it will work fine. However, it isn't possible to use Javascript to complete POST requests between domains (or ports on the same domain).
 
 私もそう思っていた。
 

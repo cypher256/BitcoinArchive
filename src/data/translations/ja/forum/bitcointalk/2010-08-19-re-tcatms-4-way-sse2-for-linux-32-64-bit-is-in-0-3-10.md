@@ -23,7 +23,7 @@ translationStatus: complete
 Windows i5 64ビットではここでは遅くなった。
 i5で遅くなったと言う人を聞いたのは初めてだ。他の全員がi5では4wayの方が速いと言っている。ハイパースレッディングを有効にするとさらにだ。
 
-> [Quote from: nelisky on August 18, 2010, 11:02:25 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-18-nelisky-msg10164/)
+> [Quote from: nelisky on August 18, 2010, 11:02:25 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-18-nelisky-msg10164/)
 > i5もだ、少なくとも自分のMacBook Proでは
 
 良いな、ということはMacでも動作しているという確認だな？
