@@ -155,20 +155,70 @@ function parseForumDate(str) {
   } catch { return ''; }
 }
 
+function convertQuoteBlocks(html, depth = 0) {
+  // Recursively convert BitcoinTalk quote blocks with proper nesting
+  const prefix = '> '.repeat(depth);
+  let result = html;
+
+  // Find quoteheader + quote pairs from outermost level
+  while (true) {
+    const headerMatch = result.match(/<div\s+class="quoteheader">\s*<a\s+href="([^"]*)"[^>]*>([\s\S]*?)<\/a>\s*<\/div>\s*<div\s+class="quote">/i);
+    if (!headerMatch) break;
+
+    const url = headerMatch[1];
+    const headerText = headerMatch[2].replace(/<[^>]+>/g, '').trim();
+    const startOfQuoteBody = headerMatch.index + headerMatch[0].length;
+
+    // Find matching </div> for this quote, counting nesting
+    let nestLevel = 1;
+    let pos = startOfQuoteBody;
+    while (pos < result.length && nestLevel > 0) {
+      const nextOpen = result.indexOf('<div', pos);
+      const nextClose = result.indexOf('</div>', pos);
+      if (nextClose === -1) break;
+      if (nextOpen !== -1 && nextOpen < nextClose) {
+        nestLevel++;
+        pos = nextOpen + 4;
+      } else {
+        nestLevel--;
+        if (nestLevel === 0) {
+          const quoteBody = result.slice(startOfQuoteBody, nextClose);
+          // Recursively process nested quotes
+          const innerConverted = convertQuoteBlocks(quoteBody, depth + 1);
+          const innerPrefix = '> '.repeat(depth + 1);
+          const cleanBody = innerConverted
+            .replace(/<br\s*\/?>/gi, '\n')
+            .replace(/<[^>]+>/g, '')
+            .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&nbsp;/g, ' ')
+            .trim();
+          const lines = cleanBody.split('\n').map(l => {
+            // Don't add prefix to lines that already have one (from recursive call)
+            if (l.startsWith('> ')) return `${prefix}${l}`;
+            return `${prefix}> ${l}`;
+          }).join('\n');
+
+          const attribution = `${prefix}[${headerText}](${url})`;
+          const replacement = `\n${attribution}\n${lines}\n\n`;
+          result = result.slice(0, headerMatch.index) + replacement + result.slice(nextClose + 6);
+          break;
+        }
+        pos = nextClose + 6;
+      }
+    }
+    if (nestLevel > 0) break; // safety: couldn't find matching close
+  }
+
+  return result;
+}
+
 function htmlToMarkdown(html) {
   if (!html) return '';
-  return html
+  // First handle quote blocks with proper nesting
+  let result = convertQuoteBlocks(html);
+  return result
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/p>/gi, '\n\n')
     .replace(/<p[^>]*>/gi, '')
-    // BitcoinTalk quote blocks: <div class="quoteheader">...<div class="quote">...</div>
-    .replace(/<div\s+class="quoteheader">\s*<a\s+href="([^"]*)"[^>]*>([\s\S]*?)<\/a>\s*<\/div>\s*<div\s+class="quote">([\s\S]*?)<\/div>/gi,
-      (_, url, header, body) => {
-        const cleanHeader = header.replace(/<[^>]+>/g, '').trim();
-        const cleanBody = body.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').trim();
-        const lines = cleanBody.split('\n').map(l => `> ${l}`).join('\n');
-        return `\n> [${cleanHeader}](${url})\n${lines}\n\n`;
-      })
     // Fallback for simple blockquotes
     .replace(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/gi, (_, inner) => {
       const lines = inner.trim().split('\n').map(l => `> ${l}`).join('\n');
