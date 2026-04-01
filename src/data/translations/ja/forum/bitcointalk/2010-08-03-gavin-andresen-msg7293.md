@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-08-03T18:38:44.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,19 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 661."
+description: "BitcoinTalkトピック661におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: BeeCee1 on August 03, 2010, 03:12:42 PM](https://bitcointalk.org/index.php?topic=661.msg7249#msg7249)
-> I am also not saying it is a good thing.  having a single split for a fairly long period of time lets people come up with a solution, having many splits that each last for a few hours means that transactions randomly disappear and that hurts confidence in the system.
+> 良いことだと言っているわけでもない。長期間にわたる単一の分裂があれば人々は解決策を考え出せるが、数時間続く分裂が何度もあるとトランザクションがランダムに消え、システムへの信頼が損なわれる。
 
-Transactions won't disappear if they're valid.  They'll just move to the longer block chain.
+トランザクションが有効であれば消えることはない。より長いブロックチェーンに移動するだけだ。
 
-Invalid transactions would be somebody trying to double-spend across the split chains (which would be tricky-- you'd have to run a modified client, or copy your wallet to a machine working on the other block chain).
+無効なトランザクションとは、分裂したチェーン間で二重支払いを試みる誰かのことだ（これは巧妙でなければならない――改変クライアントを実行するか、もう一方のブロックチェーンで作業しているマシンにウォレットをコピーする必要がある）。
 
-Or if the split lasted long enough (more than 100 blocks), transactions that involve generated coins on the shorter chain would be invalid at the merge.
+あるいは、分裂が十分に長く続いた場合（100ブロック以上）、短い方のチェーンで生成されたコインを含むトランザクションは合流時に無効となる。
 
-For shorter splits, immature generated coins on the shorter chain will disappear when the chains merge, but that would be about the worst consequences for honest users (unless you were unlucky enough to get an invalid coin from somebody trying to cheat).
+より短い分裂の場合、短い方のチェーンの未成熟な生成コインはチェーンの合流時に消えるが、正直なユーザーにとってはそれが最悪の結果だろう（不正を試みる誰かから無効なコインを受け取るほど不運でない限り）。

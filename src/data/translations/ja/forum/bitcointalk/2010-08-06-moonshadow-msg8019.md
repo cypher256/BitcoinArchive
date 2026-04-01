@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by MoonShadow)"
+title: "Re:（MoonShadowの引用投稿）"
 date: 2010-08-06T23:42:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,25 +8,25 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Quoted post by MoonShadow in BitcoinTalk topic 723."
+description: "BitcoinTalkトピック723におけるMoonShadowの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: creighto on August 06, 2010, 10:27:03 PM](https://bitcointalk.org/index.php?topic=723.msg7995#msg7995)
-> Imagine this picture...
+> この状況を想像してほしい…
 > 
-> You have a full client on your Iphone running in the background, and then there is a power failure.  You head down to the corner store, and find that the shopkeeper has put everything in the cooler on sale half price, cash or bitcoins only.  Your cellphone client connects with the shopkeeper's cell phone client over ad-hoc bluetooth.  Signs the transfer accouncement (there are no actual cryptocoins in your wallet, they exist only as a series of entries into an encrypted ledger we call the blockchain, more like writing a check than actual coins) over to the shopkeeper's address.  Shopkeeper's client can then (but does not have to) check his copy of the blockchain to verify that you actually owned said bitcoins at the time of his last blockchain update.  If it's good locally, he can assume that you are not trying to cheat him and accept the trade and you leave with your half priced milk.  This does not protect the shopkeeper from an intentional double spend, but you still had to have honestly owned the coins at one time in order to do this.  If you did not own the coins at the time the power went out, his client would have rejected the transfer.
+> iPhoneでフルクライアントがバックグラウンドで動いていて、停電が起きる。近所の店に行くと、店主が冷蔵庫の中のものを全部半額セールにしている。現金かBitcoinのみ。携帯のクライアントが店主の携帯クライアントとアドホックBluetoothで接続する。送金通知に署名して（ウォレットには実際の暗号コインはなく、ブロックチェーンと呼ばれる暗号化された台帳への一連のエントリとして存在するだけで、実際のコインというよりも小切手を書くのに近い）店主のアドレスに送る。店主のクライアントは、最後のブロックチェーン更新時点で実際にそのBitcoinを所有していたかどうか、自分のブロックチェーンのコピーで確認できる（必須ではない）。ローカルで問題なければ、あなたが不正を試みていないと仮定して取引を受け入れ、半額の牛乳を持って帰れる。これは意図的な二重支払いから店主を保護するものではないが、これを行うにはコインを一度は正当に所有していなければならない。停電時にコインを所有していなければ、クライアントが送金を拒否していただろう。
 
-There was another point here that I intended to make.
+ここでもう一つ指摘したかったことがある。
 
-As with the example above, most cash transactions are not actually anonymous, but psuedo-anonymous.  For example, one party can be well established (the shopkeeper) while the other is mostly anonymous, (the bargain hunter in the above example) but even the buyer is not truely anonymous.  He has been in the shop many times before, and even if the shopkeeper doesn't know his name, he has seen his face enough times to recognize it.  So there is some trust that, since he is a local or regular customer, that he is not some pro trying to sting him with an opprotunistic scam.
+上記の例と同様に、ほとんどの現金取引は実際には匿名ではなく、擬似匿名だ。例えば、一方の当事者は確立された存在（店主）で、もう一方はほぼ匿名（上記のお買い得品ハンター）だが、買い手でさえ真に匿名ではない。以前から何度もその店に来ており、店主が名前を知らなくても、顔を見覚えるほど見ている。だから、地元客や常連だからという信頼があり、機会主義的な詐欺を仕掛けるプロではないだろうと考える。
 
-Another example of a psuedo-anonymous transaction is the kind that both parties are anonymous to the world, but not to each other.  This is actually how *most* cash transactions work in the real world; but online it could go like this...
+擬似匿名取引のもう一つの例は、両当事者が世界に対しては匿名だが、お互いにはそうでないタイプだ。これは現実世界の*ほとんどの*現金取引の仕組みだ。しかしオンラインではこうなるだろう…
 
-You want to get something, let's say, unusual.  You find this guy on, say, Tor with a hidden website selling your wanted commodity.  He is known to you only as, "pothead420" on the website.  You have no other way to contact him, and no means of finding out who is actually is.  You don't trust this guy, but someone is going to have to take a leap of faith, and that someone is likely going to be you.  So at first, you order small.  After a few succesful trades, your trust grows that "pothead420" is an honest dealer; so your orders grow larger.  He could screw you over at any time without recourse, but then he would be cutting off a regular customer, so he has an incentive to continue to treat you properly.
+何か、変わったものが欲しいとする。Tor上で隠しウェブサイトを運営し、欲しい商品を売っている人物を見つける。ウェブサイト上では「pothead420」としてしか知らない。連絡手段は他になく、実際に誰なのか知る術もない。この人物を信頼していないが、誰かが信頼の飛躍をしなければならず、それはおそらくあなただ。だからまず少量を注文する。数回の取引が成功すると、「pothead420」が正直な売り手だという信頼が高まり、注文量が増える。相手はいつでもあなたを裏切れるが、そうすれば常連客を失うことになるので、きちんと対応し続けるインセンティブがある。
 
-A third kind of pseudo-anonymous trust relationship could be found on this very forum that depends on reputation.  Most of us do not use our real names, but some of us do.  We assume that the member who uses the name of the bitcoin programmer is the actual programmer, and have some evidence to support this, but we cannot know for sure.  But, as far as this forum is concerned, he has a reputation.  So if you were to do direct business with him, and screw him, his word that you are not trustworthly would harm any business that you desired to conduct in the future, solely because he has a longer reputation than any newcomer.
+3つ目の擬似匿名信頼関係は、まさにこのフォーラムで見られる評判に依存するものだ。ほとんどの人は本名を使っていないが、使っている人もいる。Bitcoinプログラマーの名前を使っているメンバーが実際のプログラマーだと推定し、それを裏付ける証拠もあるが、確実にはわからない。しかし、このフォーラムに関する限り、彼には評判がある。だから直接取引をして裏切れば、あなたが信頼できないという彼の言葉は、どんな新参者よりも長い評判を持つ彼だけの理由で、将来のビジネスに悪影響を与える。
 
-All of these examples involve some kind of two party trust, but not one requires both parties trust a third.  Not even the verification of the blockchain.
+これらの例はすべて何らかの二者間信頼を含んでいるが、両者が第三者を信頼することを必要とするものは一つもない。ブロックチェーンの検証でさえも。

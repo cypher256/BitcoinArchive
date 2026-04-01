@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-07-14T00:42:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,25 +8,25 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 286."
+description: "BitcoinTalkトピック286におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 threadId: "bt-scalability"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Insti on July 13, 2010, 11:34:03 PM](https://bitcointalk.org/index.php?topic=286.msg2678#msg2678)
-> 77428 transactions in 66663 blocks is about 46,752,464 bytes.
-> which works out to about 600 bytes per transaction (including block headers + database overheads)
+> 66663ブロック内の77428トランザクションは約46,752,464バイトだ。
+> トランザクションあたり約600バイト（ブロックヘッダ+データベースのオーバーヘッドを含む）になる。
 
-That sounds about right.
+それくらいだろう。
 
-So a million transactions a day would be 600 million bytes.  600 megabytes a day, 18 GB a month.
+つまり1日100万トランザクションなら6億バイトだ。1日600メガバイト、月18GB。
 
-That's not bad.  Actual network bandwidth will be higher (the way the network is connected you get the same transaction multiple times from your peers).  You won't be running an always-connected-network node on your iPhone, but any low-cost server will give you twenty times that bandwidth per month.  And 18GB isn't much disk space in these days of terabyte hard drives.
+それほど悪くない。実際のネットワーク帯域幅はもっと大きくなる（ネットワークの接続方法により、ピアから同じトランザクションを複数回受信する）。iPhoneで常時接続ネットワークノードを動かすことにはならないが、安価なサーバーならその20倍の月間帯域幅を提供できる。そして18GBはテラバイトのハードドライブの時代にはたいしたディスク容量ではない。
 
-A million transactions per day is a **LOT**!  For comparison, in 2006 there were about 60 million credit card transactions per day in the US.
+1日100万トランザクションは**非常に多い**！ 比較のために言えば、2006年にはアメリカで1日あたり約6000万件のクレジットカード取引があった。
 
-Eventually, if Bitcoin survives and gets as popular as credit cards for paying for stuff I expect somebody will create a compatible version with a more efficient network structure (maybe by that time there will be some fancy IPV6 multicast protocol or something).  And they'll implement a couple of gateway nodes (running on really fast connections) that shuttle transaction and block traffic from the current Bitcoin network into the super-efficient network.  And I expect most of us will be running lightweight clients that just keep our wallets, sign transactions, and send and receive transactions to the ultra-fast nodes that ARE looking at every transaction.
+最終的に、Bitcoinが生き残ってクレジットカードと同じくらい普及すれば、誰かがより効率的なネットワーク構造を持つ互換バージョンを作るだろう（その頃には何か洗練されたIPV6マルチキャストプロトコルなどがあるかもしれない）。そして彼らはいくつかのゲートウェイノード（非常に高速な回線で動作する）を実装して、現在のBitcoinネットワークからトランザクションとブロックのトラフィックを超効率的なネットワークに中継するだろう。そしてほとんどの人は、ウォレットの保持、トランザクションの署名、そしてすべてのトランザクションを監視している超高速ノードへのトランザクションの送受信だけを行う軽量クライアントを使うことになるだろう。
 
-You know, kind of like how we have those Big Routers in the Sky that handle Internet backbone traffic (or the ultra-fast DNS root servers).  The Internet didn't start out with astoundingly fast routers zinging packets around.
+つまり、インターネットのバックボーントラフィックを処理する巨大なルーターや、超高速のDNSルートサーバーのようなものだ。インターネットも最初から驚異的に高速なルーターがパケットを飛ばし合っていたわけではない。

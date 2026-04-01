@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by throughput)"
+title: "Re:（throughputの引用投稿）"
 date: 2010-08-03T13:33:08.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,24 +8,24 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "Quoted post by throughput in BitcoinTalk topic 661."
+description: "BitcoinTalkトピック661におけるthroughputの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: BeeCee1 on August 03, 2010, 01:07:23 PM](https://bitcointalk.org/index.php?topic=661.msg7223#msg7223)
-> If enough people are using the network, and the split were not due to open hostilities, it is possible that there would be intermittent connectivity between the two networks.  This would serve to re-sync the block chains but could hurt the reliability of the system with transactions disappearing at random.
+> 十分な数の人がネットワークを使用しており、分裂が公然の敵対行為によるものでなければ、2つのネットワーク間で断続的な接続があり得る。これはブロックチェーンの再同期に役立つが、トランザクションがランダムに消えることでシステムの信頼性を損なう可能性がある。
 > 
-> Imagine a cable cut, or series of cable cuts that isolated a block of countries.
+> ケーブルの切断、または一連のケーブル切断が国の一群を孤立させたと想像してほしい。
 > 
-> - Someone with bitcoin might initiate an oversees dialup connection
-> - someone might have a satellite connection
+> - Bitcoinを持つ誰かが海外へのダイヤルアップ接続を開始するかもしれない
+> - 衛星接続を持つ人がいるかもしれない
 > 
-> These would probably be intermittent since they may spend most of their time on their 'normal' internet since most of what they want is there.  Everytime they connected the blocks would start flowing from their computer to the rest of the world, then when they re-connected to their normal service they would flow to the rest of their country.
+> これらはおそらく断続的だろう。欲しいもののほとんどがある「通常の」インターネットで大半の時間を過ごすからだ。接続するたびにブロックがそのコンピュータから世界の残りの部分に流れ、通常のサービスに再接続するとその国の残りの部分に流れる。
 > 
-> Someone with bitcoin might fly to one of those countries to visit, when they connected to a local service, the blocks on their computer would flow to the disconnected countries, the longest block chain wins.  When they come back, again, the blocks from the disconnected countries would flow to the rest of the world.
+> Bitcoinを持つ誰かがそれらの国の一つに飛んで訪問し、ローカルサービスに接続すると、そのコンピュータのブロックが切断された国々に流れ、最長のブロックチェーンが勝つ。帰国すると再び、切断された国々からのブロックが世界の残りの部分に流れる。
 
-Yes...
-But what you describe is only possible after someone have noticed and prooved the network split is happening.
-Do you propose any method to detect the beginning of the network split?
+そうだ…
+しかし、あなたが述べていることは、ネットワーク分裂が起きていることを誰かが気づき、証明した後にのみ可能だ。
+ネットワーク分裂の始まりを検出する方法を提案しているのか？

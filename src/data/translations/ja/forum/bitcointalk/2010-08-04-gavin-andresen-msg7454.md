@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-08-04T11:58:58.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,19 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 287."
+description: "BitcoinTalkトピック287におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: bytemaster on August 04, 2010, 06:22:56 AM](#msg7443)
-> Well, right now nothing stops someone from creating a system where:
+> まあ、現時点では次のようなシステムを作ることを止めるものは何もない：
 > 
-> A sends  1.00000001 to B
-> B sends  1.00000000 back to A
+> AがBに1.00000001を送る
+> BがAに1.00000000を返す
 > 
-> Net result is a micro-payment and no processing fee.
+> 差し引きの結果はマイクロペイメントであり、処理手数料はかからない。
 
-... unless B started with zero bitcoins.  Then B is stuck; she can't send 1.0 back, because doing that would cause a 0.00000001 bitcoin 'change' transaction, which would trigger the 0.01BTC fee, which they can't pay (because they only have 1.0000000001).
+…Bが最初にゼロBitcoinで始めた場合を除いて。その場合Bは行き詰まる。1.0を返送することで0.00000001 Bitcoinの「おつり」トランザクションが発生し、それが0.01BTCの手数料を引き起こすが、Bはそれを支払えない（1.0000000001しか持っていないから）。

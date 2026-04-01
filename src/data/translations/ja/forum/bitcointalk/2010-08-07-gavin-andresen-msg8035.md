@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-08-07T01:20:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,23 +8,23 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 723."
+description: "BitcoinTalkトピック723におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Red on August 07, 2010, 12:19:16 AM](https://bitcointalk.org/index.php?topic=723.msg8023#msg8023)
-> So which one is valid? Who cares. Flip a coin. That is exactly what bitcoin does in this situation. If my node is working on a block with on transaction, and your node is working on a block with a conflicting transaction, whoever solves the block first wins.
+> では、どちらが有効か？どうでもいい。コインを投げればいい。まさにBitcoinがこの状況でやっていることだ。私のノードが一方のトランザクションを含むブロックに取り組み、あなたのノードが競合するトランザクションを含むブロックに取り組んでいるなら、先にブロックを解いた方が勝つ。
 
-Now I'm confused again.  I thought your scheme didn't have blocks, just transactions.  What do you mean, whoever solves "the block" first?
+ここでまた混乱した。あなたのスキームにはブロックはなく、トランザクションだけだと思っていた。先に「ブロック」を解くとはどういう意味か？
 
-But standard DHTs are typically used to store chunks of MP3s or movies, indexed by a torrent file that has the hash for every piece.  So it is easy for me to tell whether or not I'm getting bad data from any particular DHT node.  I don't have to trust them.
+しかし、標準的なDHTは通常MP3や映画のチャンクを保存するために使われ、各ピースのハッシュを持つトレントファイルによってインデックスされる。だから、特定のDHTノードから不正なデータを受け取っているかどうかを簡単に判別できる。信頼する必要はない。
 
-Huh?  Lets say the network has 10,000 nodes in it.  I query the network to find the network node closest to a transaction that I want to double-spend.
+えっと？ネットワークに10,000ノードがあるとしよう。二重支払いしたいトランザクションに最も近いネットワークノードを見つけるためにクエリを行う。
 
-So I generate a private key.  It has about a 1 in 10,000 chance of being closer than the current closest node.  So I keep generating private keys until I have 5 that are closer.  It's too late for me to figure out the odds, but lets say I generate 100,000 private keys, I'm pretty darn likely to find 5.  My wimpy laptop can generate at LEAST 100 ECC keys/second, so in under 20 minutes it could generate 100,000.
+そこで秘密鍵を生成する。現在最も近いノードよりも近くなる確率は約1/10,000だ。だから近い鍵を5つ見つけるまで秘密鍵を生成し続ける。確率を今から計算する余裕はないが、100,000の秘密鍵を生成すれば、5つ見つかる可能性はかなり高い。私のしょぼいラップトップでも少なくとも毎秒100のECC鍵を生成できるので、20分もあれば100,000を生成できる。
 
-I create 5 nodes with those keys (telling the rest of the network "honest, folks, I chose those keys RANDOMLY...") and I've won.
+それらの鍵で5つのノードを作成し（ネットワークの残りに「正直に言うと、これらの鍵はランダムに選んだんだ…」と言いながら）、勝利だ。
 
-I'm not trying to generate a transaction with a particular hash, I'm trying to generate node ids that are "closer" to that transaction's hash than any other node currently on the network.  That's much easier.
+特定のハッシュを持つトランザクションを生成しようとしているのではなく、現在ネットワーク上の他のどのノードよりもそのトランザクションのハッシュに「近い」ノードIDを生成しようとしている。それはずっと簡単だ。

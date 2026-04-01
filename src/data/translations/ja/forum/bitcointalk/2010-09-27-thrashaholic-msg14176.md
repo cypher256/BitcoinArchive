@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by thrashaholic)"
+title: "Re:（thrashaholicの引用投稿）"
 date: 2010-09-27T00:20:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,45 +8,45 @@ author: "thrashaholic"
 participants:
   - name: "thrashaholic"
     slug: "thrashaholic"
-description: "Quoted post by thrashaholic in BitcoinTalk topic 1268."
+description: "BitcoinTalkトピック1268におけるthrashaholicの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: kiba on September 23, 2010, 08:10:38 PM](https://bitcointalk.org/index.php?topic=1268.msg13869#msg13869)
 > [Quote from: mskwik on September 23, 2010, 07:14:16 PM](https://bitcointalk.org/index.php?topic=1268.msg13855#msg13855)
 > > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](https://bitcointalk.org/index.php?topic=1268.msg13828#msg13828)
-> > > > 1. Download site like rapidshare and other crappy host. Inconvenient captcha and required paypal. Bitcoin can possibly take both roles and streamline the whole process. Suggested by Kiba.
+> > > > 1. rapidshareや他のダウンロードサイト。不便なcaptchaとPayPalが必要。Bitcoinで両方を代替し効率化できる可能性。Kibaの提案。
 > > 
 > > 
-> > That could be an interesting project.  I'd be willing to work on the technical side but not sure I really have time to do proper support/marketing.  Anyone interested in partnering up?
+> > 面白いプロジェクトになり得る。技術面では喜んで手伝うが、サポート/マーケティングの時間があるかわからない。パートナーに興味のある人は？
 > 
-> There will be nothing to market if there aren't anything to market. I suspect it required maybe only a week of development if you're competent. Other than that, it's about gaining critical mass of stuff to download before explosion, I suspect. Marketing can be something like gathering desirable and not illegal stuff to download, curating it, etc and than giving the link to people who want it. That can be done in your spare downtime until you find marketer worth his salt of set up an affiliate program that incentivized people to market for you.
+> マーケティングするものがなければマーケティングもない。能力があれば1週間程度の開発で済むだろう。あとは爆発前にダウンロード素材の臨界質量を集めることだ。マーケターが見つかるかアフィリエイトプログラムを設定するまで空き時間にできる。
 > 
-> Actually, I  didn't suggested it originally, but somebody else did in the thread about p0rn.
+> 実は最初に提案したのは自分ではなく、ポルノスレッドで別の人だ。
 
-( Those who are fans of IP enforcement should just skip this part. Just sayin'. )
+（知的財産保護の支持者はこの部分を飛ばしてほしい）
 
-That was me, and I was specifically talking about targeting the less than legal area of file sharing. 
+それは自分だ。具体的にはファイル共有の合法性の低い領域をターゲットにする話だった。
 
-Put simply, you're just not going to find legal content that will be effective in that market. Anything like OSS is mirrored for free and people aren't going to pay to download. Content owners aren't game - it'd be just another CDN to them, why would they pay in bitcoin, and why would their users pay per download/MB/GB when they're already paying for the content? That niche is solely about pirated content - like it or not. 
+簡単に言えば、その市場で効果的な合法コンテンツは見つからない。OSSは無料でミラーされ、課金しても払う人はいない。コンテンツオーナーもその気はない。このニッチは海賊版コンテンツだけだ。
 
-Marketing would take hardly any effort, as I'm sure (with a good enough user pay flow) we could offer higher conversion rates and payouts for affiliates than the other shady CC required websites. It would take time to work out a business plan, but the actual development would take no time at all. (I could do it in a couple of days with a full-time effort) The files themselves could be shoved onto S3 or something. Just have to have someone handy with numbers to make sure it's profitable - otherwise nobody's going to waste their time.
+十分良い支払いフローがあれば、他のCC必須サイトより高いコンバージョン率とアフィリエイト報酬を提供できるはずだ。開発自体はフルタイムで数日。ファイルはS3に置ける。
 
-Something like x amount of BTC per GB or MB (instead of a monthly membership), with an affiliate system would take over that market. Lots of people are willing to pay for better access to niche pirated content, but are reluctant to offer up CC and personal info directly for obvious reasons. 
+GBまたはMBあたりx BTCにアフィリエイトシステムを付ければその市場を制覇できる。多くの人がニッチな海賊版コンテンツへの支払いに前向きだが、CCや個人情報の直接提供には消極的だ。
 
-I also don't see how bitcoin could be used as a captcha, those are used to make sure there's a human on the other end and not a spam bot...you could easily automate the payments. For this niche, it's paying for high bandwidth, concurrent downloads of pirated content; it just won't work otherwise IMO.
+Bitcoinがcaptchaとして使えるとも思わない。それは人間確認用だ…支払いは自動化できる。このニッチは海賊版コンテンツの高帯域幅ダウンロードへの支払いだ。
 
-Agorist developers apply within.  Grin
+アゴリスト開発者募集中。
 
 [Quote from: kiba on September 26, 2010, 12:54:44 PM](https://bitcointalk.org/index.php?topic=1268.msg14114#msg14114)
 > [Quote from: Anonymous on September 26, 2010, 12:05:29 PM](https://bitcointalk.org/index.php?topic=1268.msg14112#msg14112)
-> > Quote2. Advertising clearing house like http://projectwonderful.com. Suggested by mskwik.(I used projectwonderful to make tiny bit of money. I wonder if I can get more money from a bitcoin advertising clearing house)
+> > 引用2. projectwonderful.comのような広告清算所。mskwikの提案。
 > > 
-> > We are working on a bitcoin business directory so an advertising clearance house would be a natural fit with this. There is one developer working on the directory at the moment so another drupal developer or two to help us out would get it done a lot quicker.
+> > Bitcoinビジネスディレクトリに取り組んでいるので広告清算所は自然に合う。もう1～2人のDrupal開発者がいればもっと早く完成する。
 > 
 > 
-> Moved #2 to niches being worked upon.
+> #2を取り組み中のニッチに移動。
 
-Ugh, Drupal. ::wilhelmscream:: I'd be willing to develop an advertising clearance house - I actually have a lot of industry experience there.
+うーん、Drupalか。広告清算所の開発は喜んでやる――その分野ではかなりの業界経験がある。

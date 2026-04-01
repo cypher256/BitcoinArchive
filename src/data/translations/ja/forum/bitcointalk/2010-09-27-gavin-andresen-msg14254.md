@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-09-27T15:14:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,42 +8,42 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 665."
+description: "BitcoinTalkトピック665におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 threadId: "bt-multiple-wallets-one-computer"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-The "label" mechanism (setlabel / getreceivedbylabel) is supposed to meet this need, but only solves part of the problem.
+「ラベル」メカニズム（setlabel / getreceivedbylabel）はこのニーズに対応するはずだが、問題の一部しか解決しない。
 
-If the API was extended as I describe below, would it solve the same problems as having multiple wallets?
+以下に説明するようにAPIを拡張すれば、複数のウォレットを持つのと同じ問題を解決できるか？
 
-Proposal:
+提案：
 
-+ new send method: send TO a given bitcoin address specifically FROM the bitcoins sent to <label>
-  (change generated would be automatically tagged with <label>)
-+ add optional [label] param to getbalance.
-+ new method: listsentbylabel
-  (returns array of [ "address" : "bcaddresssentto", "amount" : x.yz, "confirmations": n ]) 
++ 新しい送信メソッド：指定したBitcoinアドレスに、<label>に送られたBitcoinから具体的にFROMとして送信
+  （生成されたおつりには自動的に<label>がタグ付けされる）
++ getbalanceにオプションの[label]パラメータを追加
++ 新しいメソッド：listsentbylabel
+  （[ "address" : "送信先BCアドレス", "amount" : x.yz, "confirmations": n ]の配列を返す）
 
-Each customer "account" would be a bitcoin <label>.  Account handling would look like:
+各顧客の「アカウント」がBitcoinの<label>になる。アカウント処理はこのようになる：
 
-Create account / create new address for account:
+アカウント作成 / アカウント用の新しいアドレス作成：
   getnewaddress [account_id_label]
-   ... tell user "fund your account by sending coins to {the address returned}"
+   … ユーザーに「{返されたアドレス}にコインを送信してアカウントに資金を入れてください」と伝える
 
-Customer withdraws/spends:
+顧客の引き出し/支出：
   sendfrom [account_id_label] [address] [amount]
-   (FAILS if balance for that account too low)
+   （そのアカウントの残高が不足している場合は失敗）
 
-Show customer their balance:
+顧客に残高を表示：
   getbalance [account_id_label]
 
-Show customer their transactions in/out
+顧客に入出金トランザクションを表示：
   listreceivedbylabel [account_id_label]
   listsentbylabel [account_id_label]
 
 ---------
 
-Seems to me this would be a much better direction to go in, rather than having separate wallet.dat files for each customer.  At the very least, backing up thousands of customer's wallet files would be inefficient and error-prone, and constantly switching between them would also be incredibly inefficient.
+各顧客のために別々のwallet.datファイルを持つよりも、こちらの方向に進む方がはるかに良いと思う。少なくとも、何千もの顧客のウォレットファイルをバックアップするのは非効率的でエラーが起きやすく、常にそれらを切り替えるのも非常に非効率的だ。

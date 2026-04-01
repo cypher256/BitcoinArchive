@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-07-27T14:08:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,16 +8,16 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 589."
+description: "BitcoinTalkトピック589におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I've been working on adding -port= / -rpcport=  command line / config file options to bitcoin.  The idea is to let you run multiple copies of bitcoind on one machine; I need this because I'm planning on having at least two Bitcoin-related web services (the Bitcoin Faucet and a service to be named later), I want them to have completely separate wallets, but I don't want to rent multiple servers to host them.
+bitcoinに`-port=` / `-rpcport=`のコマンドライン/設定ファイルオプションを追加する作業をしている。目的は、1台のマシンで複数のbitcoindを実行できるようにすることだ。少なくとも2つのBitcoin関連ウェブサービス（Bitcoin Faucetと、後で発表するサービス）を予定しており、完全に別のウォレットにしたいが、ホスティングのために複数のサーバーを借りたくはない。
 
-Usage looks like this:
-Code:$ ./bitcoind getbalance  # The TEST network Faucet bitcoind
+使い方はこのようになる：
+Code:$ ./bitcoind getbalance  # TESTネットワークのFaucet bitcoind
 40616.66159265000
 $ ./bitcoind -datadir=/home/bitcoin/.bitcoinTEST2 getbalance
 1000.000000000000
@@ -26,12 +26,12 @@ rpcpassword=.....
 port=18666
 rpcport=18665
 
-Satoshi pointed out that allowing bitcoin/bitcoind to run on a non-standard port could be dangerous, because if misconfigured two bitcoins might both open and write to the same database.  To prevent that, the <datadir>/db.log file is used as a lock so only one bitcoin can access the same datadir at a time (uses boost::interprocess::file_lock, which is purported to be cross-platform and well-behaved, even if bitcoin crashes).
+サトシは、bitcoin/bitcoindを非標準ポートで実行することを許可すると、設定を誤った場合に2つのbitcoinが同じデータベースを開いて書き込む可能性があり危険だと指摘した。これを防ぐために、`<datadir>/db.log`ファイルをロックとして使用し、同時に1つのbitcoinだけが同じdatadirにアクセスできるようにした（`boost::interprocess::file_lock`を使用。これはクロスプラットフォームで、bitcoinがクラッシュしても正常に動作するとされている）。
 
-Issues that came up as I was doing this:
+この作業中に出てきた問題：
 
-I left a call to wxSingleInstanceChecker in the Windows GUI code, so no multiple-gui-bitcoins-listening-on-different-ports on Windows.  I don't do Windows...
+Windows GUIコードにwxSingleInstanceCheckerの呼び出しを残したため、Windowsでは異なるポートでリッスンする複数のGUI版bitcoinは動作しない。Windowsは使わないので…
 
-I didn't bother making the error handling graceful if you point two bitcoins at the same datadir (you get a runtime exception "Cannot lock db.log, is bitcoin already running?").
+2つのbitcoinを同じdatadirに向けた場合のエラー処理をきれいにする手間は省いた（ランタイム例外「Cannot lock db.log, is bitcoin already running?」が出る）。
 
-Patches are at http://pastebin.com/2e4hfXSS; I've only tested on Linux so far, anybody willing to try this on Windows?
+パッチは http://pastebin.com/2e4hfXSS にある。Linuxでしかテストしていないので、Windowsで試してくれる人はいるか？

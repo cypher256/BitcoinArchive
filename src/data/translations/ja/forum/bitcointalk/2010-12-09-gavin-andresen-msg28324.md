@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの引用投稿）"
 date: 2010-12-09T00:41:44.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Quoted post by Gavin Andresen in BitcoinTalk topic 2151."
+description: "BitcoinTalkトピック2151におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I'll and add another reason not to have a "list transactions that happened after <txid>" :
+「<txid>より後に発生したトランザクションを一覧する」を持たないもう一つの理由を追加しよう：
 
-move "transactions" don't have a transaction id, but they do affect account balances (and are listed in listtransactions).
+moveの「トランザクション」にはトランザクションIDがないが、アカウント残高には影響する（listtransactionsにも表示される）。
 
-Your code is going to get really messy if you expect to call listtransactions and then squirrel away the txid of the last item returned.  If it was "category":"move",  there WILL be no txid...
+listtransactionsを呼び出して、返された最後のアイテムのtxidを保存しようとすると、コードがぐちゃぐちゃになる。「category」が「move」だった場合、txidは存在し*ない*…
 
-RE: eliminating polling:  at some point fairly soon, I plan on cleaning up my "monitorreceived" patch, to POST to a URL when transactions come in or blocks are accepted... but I need to do some Deep Thinking to redesign based on lessons learned from 'accounts'.  It might turn into a very minimal API, where the notification is "Hey, txid <123ae4221...> just got to N confirmations, you might want to call gettransaction and getbalance to get up-to-date."
+ポーリングの排除について：かなり近いうちに「monitorreceived」パッチをクリーンアップする予定だ。トランザクションが入ってきたりブロックが承認されたりした時にURLにPOSTする…しかし「accounts」から学んだ教訓に基づいて再設計するためにじっくり考える必要がある。非常にミニマルなAPIになるかもしれない。通知は「おい、txid <123ae4221...>がN回の確認に達したぞ、gettransactionとgetbalanceを呼んで最新情報を取得した方がいいかもしれない」というものだ。

@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by NewLibertyStandard)"
+title: "Re:（NewLibertyStandardの引用投稿）"
 date: 2010-07-19T22:27:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Quoted post by NewLibertyStandard in BitcoinTalk topic 342."
+description: "BitcoinTalkトピック342におけるNewLibertyStandardの投稿。"
 isSatoshi: false
 threadId: "bt-they-want-to-delete-the-wikipedia-article"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-The idea behind bitcoin has been around in research white papers for years. I imagine we should be able to list such research papers as a source. Bitcoins is the first time this theoretical idea which has been around for quite a while, has actually been implemented. I don't have sources available at the moment, but if I get some time, I'll try to look around. If anybody can find these historical research papers and discussions from before Bitcoin was started, please post links to them.
+Bitcoinの背後にあるアイデアは、何年も前から研究論文に存在していた。そうした研究論文を出典として挙げることは可能だろう。Bitcoinは、かなり以前から存在していたこの理論的なアイデアが実際に実装された初めてのケースだ。今のところ出典を手元に持っていないが、時間があれば探してみる。Bitcoinが始まる前のこれらの歴史的な研究論文や議論を見つけた人がいれば、リンクを投稿してほしい。

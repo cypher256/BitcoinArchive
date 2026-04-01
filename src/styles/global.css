@@ -219,12 +219,14 @@ th {
 
 /* In-page anchor links */
 a[href^="#"] {
+  color: var(--color-accent);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 3px;
 }
 
 a[href^="#"]:hover {
+  color: var(--color-link);
   text-decoration-style: solid;
 }
 

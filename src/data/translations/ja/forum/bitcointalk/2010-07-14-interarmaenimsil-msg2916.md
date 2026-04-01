@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by InterArmaEnimSil)"
+title: "Re:（InterArmaEnimSilの引用投稿）"
 date: 2010-07-14T19:07:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "Quoted post by InterArmaEnimSil in BitcoinTalk topic 325."
+description: "BitcoinTalkトピック325におけるInterArmaEnimSilの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Okay - if everyone's machines are working on a hash to a different problem, then I can see how luck would be a factor.  However, what is the source of the variation between the problem my machine is working on, the problem yours is, etc?  One reply earlier seemed to imply that it had to do with transactions in which the individual recently took part....but what about those of us not taking part in any recent transactions? (My most recent one is at least two days old now)
+なるほど、全員のマシンがそれぞれ異なる問題のハッシュに取り組んでいるなら、運が要素になるのは理解できる。しかし、自分のマシンが取り組んでいる問題と他の人の問題との間の変動の源は何なのか？先の返信の一つでは、そのユーザーが最近参加したトランザクションに関係しているようだったが…最近のトランザクションに参加していない我々についてはどうなるのか？（最後のトランザクションは少なくとも2日前だ）

@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by NewLibertyStandard)"
+title: "Re:（NewLibertyStandardの引用投稿）"
 date: 2010-08-06T23:55:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Quoted post by NewLibertyStandard in BitcoinTalk topic 723."
+description: "BitcoinTalkトピック723におけるNewLibertyStandardの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: creighto on August 06, 2010, 11:42:31 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-06-moonshadow-msg8019/)
-> All of these examples involve some kind of two party trust, but not one requires both parties trust a third.  Not even the verification of the blockchain.
+> これらの例はすべて何らかの二者間信頼を含んでいるが、両者が第三者を信頼することを必要とするものは一つもない。ブロックチェーンの検証でさえも。
 
-Trusted third parties are very useful when trading with someone you don't trust. One person trusts the trading administrator enough to deposit bitcoins and the other person trusts a payment processor such as Liberty Reserve or Pecunix to provide proof to the trading administrator that the payment occurred and he trust the trading site administrator that he'll accept proof of payment. Both traders have to trust the trading site and the payment processor, both third parties, but they don't need to trust each other.
+信頼できない相手と取引する際、信頼できる第三者は非常に有用だ。一方が取引管理者を信頼してBitcoinを預け、もう一方がLiberty ReserveやPecunixのような決済プロセッサを信頼して支払い証明を取引管理者に提供し、管理者が支払い証明を受け入れることを信頼する。両方のトレーダーが取引サイトと決済プロセッサ、つまり両方の第三者を信頼する必要があるが、お互いを信頼する必要はない。

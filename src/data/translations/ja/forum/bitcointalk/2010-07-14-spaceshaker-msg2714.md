@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by spaceshaker)"
+title: "Re:（spaceshakerの引用投稿）"
 date: 2010-07-14T01:52:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,22 +8,22 @@ author: "spaceshaker"
 participants:
   - name: "spaceshaker"
     slug: "spaceshaker"
-description: "Quoted post by spaceshaker in BitcoinTalk topic 286."
+description: "BitcoinTalkトピック286におけるspaceshakerの投稿。"
 isSatoshi: false
 threadId: "bt-scalability"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
-> And I expect most of us will be running lightweight clients that just keep our wallets, sign transactions, and send and receive transactions to the ultra-fast nodes that ARE looking at every transaction.
+> そしてほとんどの人は、ウォレットの保持、トランザクションの署名、そしてすべてのトランザクションを監視している超高速ノードへのトランザクションの送受信だけを行う軽量クライアントを使うことになるだろう。
 
-Is this possible? What would this look like? From a technical perspective what does a "lightweight client" look like for you? My understanding is that the Bitcoin client needs the entire block chain in order to establish trust.
+それは可能なのか？どのようなものになるのか？技術的な観点から「軽量クライアント」はどういうものをイメージしているのか？私の理解では、Bitcoinクライアントは信頼を確立するためにブロックチェーン全体が必要だ。
 
-I am just thinking out loud here...
+ちょっと思いつきを述べてみる…
 
-Although the peer-to-peer model is certainly novel perhaps it seems to me to be somewhat utopian. Bear with me for a minute here (I am not trying to troll). Consider banks. Banks have a system whereby they can work together efficiently. I take take money out of a ATM from bank X even though I bank with bank Y. Banks loan money to each other. They are generally cooperative. Instead of every Tom, Dick & Harry having a Bitcoin client on his/her PC (or smartphone) participating in an open P2P network, perhaps there is a collection of Bitcoin "banks" who provide the service of hosting and "peering" the Bitcoin block chain. These are large enough organizations that they can afford the bandwidth and hardware needed to maintain an infinitely long block chain with a million (or more) transactions a day. These banks would still be peer-2-peer, and hopefully also completely open. Ideally anybody could participate in the peer-2-peer network, its just that the average person won't because of the barrier to entry. These banks still operate using the same fundamental technology we have to day. All of the beautiful facets of Bitcoin are preserved, except that the number of active participants is somewhat reduced. Anybody that _wanted_ to participate still could.
+P2Pモデルは確かに斬新だが、多少ユートピア的に思える。少し付き合ってほしい（荒らしたいわけではない）。銀行を考えてみよう。銀行には効率的に協力し合うシステムがある。銀行Yの口座を持っていても、銀行XのATMからお金を引き出せる。銀行同士は融資し合う。基本的に協力的だ。すべての人がPC（やスマートフォン）にBitcoinクライアントを入れてオープンなP2Pネットワークに参加する代わりに、Bitcoinの「銀行」の集まりがブロックチェーンのホスティングと「ピアリング」のサービスを提供するのはどうだろう。これらは十分に大きな組織で、1日100万件（以上）のトランザクションを持つ無限に長いブロックチェーンを維持するための帯域幅とハードウェアを賄える。これらの銀行はP2Pのままであり、完全にオープンであることが望ましい。理想的には誰でもP2Pネットワークに参加できるが、参入障壁があるため一般の人はそうしないだろう。これらの銀行は今日あるのと同じ基本技術で運営される。Bitcoinの美しい側面はすべて保たれるが、アクティブな参加者の数がいくらか減少する。参加したい人は引き続き参加できる。
 
-The problem remaining would be the typical "last mile" problem. How does Tom (or Dick or Harry) perform transactions? Well the issue becomes much more straight forward at this point. Now the trust only has to be between two parties (the "bank" and Tom). This really becomes more of a proxy issue. Now Tom has to send a transaction request through his "bank". It might even be possible to bake into Bitcoin a protocol for proxy transactions.
+残る問題は典型的な「ラストマイル」問題だ。一般ユーザーはどうやってトランザクションを行うのか？この時点では問題はかなり単純になる。信頼は2者間（「銀行」とユーザー）だけで済む。これは本質的にプロキシの問題になる。ユーザーは「銀行」を通じてトランザクション要求を送信する。プロキシトランザクション用のプロトコルをBitcoinに組み込むことさえ可能かもしれない。
 
-Anyway...This is just my 2 cents. I would really like a tangible answer to this problem because it seems foundational to the success of this endeavor to me.
+とにかく…これは私の個人的な意見に過ぎない。この問題に対する具体的な回答がほしい。なぜなら、この取り組みの成功にとって根本的に重要だと思うからだ。

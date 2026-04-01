@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by AndrewBuck)"
+title: "Re:（AndrewBuckの引用投稿）"
 date: 2010-07-18T14:14:04.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "Quoted post by AndrewBuck in BitcoinTalk topic 437."
+description: "BitcoinTalkトピック437におけるAndrewBuckの投稿。"
 isSatoshi: false
 threadId: "bt-bitcoin-0-3-2-released"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Traktion, you could try running the client with -minimizetotray that seemed to work for me (10.04 as well).  It will start minimized there so you need to click on it to get the main window but it seems to work after that.
+Traktion、`-minimizetotray`オプションを付けてクライアントを実行してみてくれ。自分の環境（同じく10.04）ではそれでうまくいった。最小化された状態で起動するのでクリックしてメインウインドウを表示する必要があるが、その後は正常に動作するようだ。
 
 -Buck

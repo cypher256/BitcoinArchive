@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Ground Loop)"
+title: "Re:（Ground Loopの引用投稿）"
 date: 2010-08-02T09:17:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Quoted post by Ground Loop in BitcoinTalk topic 648."
+description: "BitcoinTalkトピック648におけるGround Loopの投稿。"
 isSatoshi: false
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-With the patch above, I was unable to build the test program.  You?
+上記のパッチでは、テストプログラムをビルドできなかった。そちらはどうだ？

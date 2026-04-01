@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by SmokeTooMuch)"
+title: "Re:（SmokeTooMuchの引用投稿）"
 date: 2010-02-09T21:33:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Quoted post by SmokeTooMuch in BitcoinTalk topic 47."
+description: "BitcoinTalkトピック47におけるSmokeTooMuchの投稿。"
 isSatoshi: false
 threadId: "bt-bitcoin-client-and-website-translation"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: sirius-m on February 09, 2010, 04:08:39 PM](#msg298)
-> You can send me translations of the bitcoin.org site as private messages (or if it's too long, I'll pm you my e-mail address). If you can translate only the front page, it's ok too.
+> bitcoin.orgサイトの翻訳をプライベートメッセージで送ってくれ（長すぎる場合は、メールアドレスをPMで送る）。フロントページだけの翻訳でも構わない。
 
-Do you want it as plain-text or a .html or .php file ?
+プレーンテキストがいいのか、それとも.htmlや.phpファイルか？

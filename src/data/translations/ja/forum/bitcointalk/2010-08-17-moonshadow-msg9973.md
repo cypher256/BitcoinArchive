@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by MoonShadow)"
+title: "Re:（MoonShadowの引用投稿）"
 date: 2010-08-17T20:51:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,36 +8,36 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Quoted post by MoonShadow in BitcoinTalk topic 846."
+description: "BitcoinTalkトピック846におけるMoonShadowの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I would be willing to bet that someone used one of these...
+誰かがこれを使ったのではないかと賭けてもいい…
 
 http://en.wikipedia.org/wiki/Field-programmable_gate_array
 
-to do this...
+これをするために…
 
 http://www.springerlink.com/content/765kta4qr92daea8/
 
-which is something that I, myself, obviously has considered.  Whoever is doing it is probably representing a great deal of the current hash percentage, and hogging a pretty good amount of the new bitcoins.  Considering that up to four of these programmable arrays are used by modern ham radios for this...
+これは自分自身も当然考えたことだ。やっている人は現在のハッシュ割合のかなりの部分を占め、新しいBitcoinのかなりの量を占めているだろう。最新のアマチュア無線にはこれらのプログラマブルアレイが最大4つ使われていることを考えると…
 
 http://www.dsptools.com/Radio.htm
 
-and this...
+そしてこれ…
 
 http://www.softrockradio.org/
 
-The successful coding of the sha-256 algorithim into a fpga and recoding of the bitcoin client's generation function to use one or more such fpga's would produce a khash per second rate that no desktop could match.  It would look like a super-computer from our perspectives.  As a ham radio operator myself, I was aware of these devices, but I don't presently own any.  Even connected to my netbook over USB2, the khas/sec rate would be sick.  The program for these things are normally kept on the master computer's harddisk, and only take a few seconds to swap out; so a ham could use his software radio whenever he wants to, and then rewrite all of his FPGA's with the sha-256 algorithim before going to bed, and make money while he sleeps.
+SHA-256アルゴリズムをFPGAにコーディングし、Bitcoinクライアントの生成機能を1つ以上のFPGAを使用するようにリコーディングすれば、デスクトップでは太刀打ちできないkhash/秒レートが出るだろう。我々の観点からはスーパーコンピュータのように見える。アマチュア無線家として自分はこれらのデバイスを知っていたが、現在は持っていない。USB2経由でネットブックに接続しても、khash/秒レートはとんでもないことになるだろう。これらのプログラムは通常マスターコンピュータのハードディスクに保存されており、入れ替えるのに数秒しかかからない。だからアマチュア無線家はソフトウェアラジオを使いたい時に使い、寝る前にすべてのFPGAをSHA-256アルゴリズムに書き換えて、寝ている間にお金を稼げる。
 
-Another possibilty is that someone owned or bought one of these...
+もう一つの可能性は、誰かがこれを所有しているか購入したことだ…
 
 http://www.via.com.tw/en/initiatives/padlock/features.jsp
 
-or some other cryptographic coproccesor on a daughtercard.
+あるいは他の暗号コプロセッサが載ったドーターカード。
 
-I'm sure once Bitcoin takes off, anyone with enough of the coins to have a deep personal interest in the strength of the currency will be running clients with hardware exceleration for the sha-256 has function.
+Bitcoinが軌道に乗れば、通貨の強度に深い個人的利害を持つほど十分なコインを持つ人は誰でも、SHA-256ハッシュ関数のハードウェアアクセラレーション付きクライアントを動かすようになると確信している。
 
-That also makes me wonder if there are PCI daughtercards with FPGA's on them yet.  The last time that I looked into them, they were only available as external setups.
+また、FPGAが載ったPCIドーターカードがもうあるのかとも思う。最後に調べた時は、外付けセットアップとしてしか利用できなかった。

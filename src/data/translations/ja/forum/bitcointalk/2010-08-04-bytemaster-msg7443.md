@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by bytemaster)"
+title: "Re:（bytemasterの引用投稿）"
 date: 2010-08-04T06:22:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,20 +8,20 @@ author: "bytemaster"
 participants:
   - name: "bytemaster"
     slug: "bytemaster"
-description: "Quoted post by bytemaster in BitcoinTalk topic 287."
+description: "BitcoinTalkトピック287におけるbytemasterの投稿。"
 isSatoshi: false
 threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Well, right now nothing stops someone from creating a system where:
+まあ、現時点では次のようなシステムを作ることを止めるものは何もない：
 
-A sends  1.00000001 to B
-B sends  1.00000000 back to A
+AがBに1.00000001を送る
+BがAに1.00000000を返す
 
-Net result is a micro-payment and no processing fee.  I am creating a system that does something very similar to the above.   The reality is that any "micro-payment" system should probably be handled outside the BTC block and have the payments "summed up" before being sent.  
+差し引きの結果はマイクロペイメントであり、処理手数料はかからない。私は上記と非常に似たことを行うシステムを作っている。実際のところ、「マイクロペイメント」システムはBTCブロックの外部で処理し、支払いを「集計」してから送信すべきだろう。
 
-I think the processing fee design is brilliant.  Every node can pick and choose which transactions it wants to include and thus the "time until included" is directly proportional to the number of nodes who accept your "offer".  Worst case you have to wait until your lonely PC can create a block which at the moment could be weeks! 
+処理手数料の設計は素晴らしいと思う。各ノードは含めたいトランザクションを選り好みでき、したがって「含まれるまでの時間」はあなたの「提示」を受け入れるノードの数に正比例する。最悪の場合、自分一人のPCがブロックを作成できるまで待たなければならず、現時点では何週間もかかりうる！
 
-In fact, I think it would be reasonable to offer to pay the nodes that propagate your transaction if there was some way to "enforce it" and prevent rouge clients from collecting fees but not doing work.
+実際、トランザクションを伝搬するノードに支払いを提供するのは合理的だと思う。ただし、それを「強制」し、不正なクライアントが手数料だけ集めて作業しないのを防ぐ方法があればの話だが。

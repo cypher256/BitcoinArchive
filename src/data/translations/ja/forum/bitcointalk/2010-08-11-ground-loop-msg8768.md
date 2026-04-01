@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Ground Loop)"
+title: "Re:（Ground Loopの引用投稿）"
 date: 2010-08-11T17:31:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Quoted post by Ground Loop in BitcoinTalk topic 782."
+description: "BitcoinTalkトピック782におけるGround Loopの投稿。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-News to me is that *all* your coins are at risk.  I thought it was just clumps of coins (previously received transactions) involved in the transaction, not my aggregate balance.  Yikes.
+*すべての*コインがリスクにさらされるとは初耳だ。トランザクションに関与するコインの塊（以前受け取ったトランザクション）だけだと思っていた。合計残高ではなく。おっと。
 
-As a countermeasure, I've manually split my wallet up into five new wallets of distributed value.  Now only one is at risk at any given time.
+対策として、ウォレットを手動で5つの新しいウォレットに分散して分割した。これで常にリスクにさらされるのは1つだけだ。
