@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-bitcoind-x86-binary-for-centos"
 ---
 
-[Quote from: knightmb on August 03, 2010, 11:46:46 PM](https://bitcointalk.org/index.php?topic=685.msg7365#msg7365)
+[Quote from: knightmb on August 03, 2010, 11:46:46 PM](#msg7365)
 > There are two versions, one built from stock code, the other modified to accept up to 1,000 nodes (hence the super node name)
 
 I'd rather you didn't make a build of the 1000 node connecting version available.  It won't take very many people running that before we have to make another release just to limit the incoming connections.

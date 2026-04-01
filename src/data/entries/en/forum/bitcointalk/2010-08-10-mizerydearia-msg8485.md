@@ -14,7 +14,7 @@ threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
 tags: []
 ---
 
-[Quote from: Ground Loop on August 10, 2010, 03:38:23 AM](https://bitcointalk.org/index.php?topic=765.msg8464#msg8464)
+[Quote from: Ground Loop on August 10, 2010, 03:38:23 AM](#msg8464)
 > Hah!  This sure helps explain a long-standing mystery.. why my 10,000 khash/sec Linux 64-bit machine is the only one that has never, in two weeks, generated a block.
 
 You're not the only one.  I haven't generated in over a month.

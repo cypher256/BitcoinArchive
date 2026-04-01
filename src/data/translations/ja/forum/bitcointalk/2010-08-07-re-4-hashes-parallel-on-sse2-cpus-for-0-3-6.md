@@ -17,7 +17,7 @@ threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 translationStatus: complete
 ---
 
-> [Quote from: impossible7 on August 06, 2010, 11:37:20 AM](https://bitcointalk.org/index.php?topic=648.msg7838#msg7838)
+> [Quote from: impossible7 on August 06, 2010, 11:37:20 AM](#msg7838)
 > CRITICAL_BLOCKはforループを含むマクロだ。アサーション失敗はループ本体内でbreakが呼ばれたことを示している。このブロック内の唯一のbreak文は2762行目にある。元のソースファイルでは、このクリティカルブロック内にbreak文はない。2759-2762行を削除すべきだと思う。元のmain.cppにはそのようなものはない。
 
 申し訳ない。CRITICAL_BLOCKは完璧ではない。その中からbreakやcontinueしないよう注意が必要だ。breakを検出して警告するassertがある。使用していることを批判されるかもしれないが、これなしでは構文がはるかに冗長でエラーが起きやすくなる。

@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-json-rpc-password"
 ---
 
-[Quote from: lachesis on July 25, 2010, 07:52:35 PM](https://bitcointalk.org/index.php?topic=461.msg5738#msg5738)
+[Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
 > I found what appears to be a bug: with a long enough username and password combination, the base64 encoder in bitcoind produces authorization headers that look like this:
 
 ```

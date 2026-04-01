@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: grondilu on October 23, 2010, 06:07:41 PM](https://bitcointalk.org/index.php?topic=1545.msg18237#msg18237)
+[Quote from: grondilu on October 23, 2010, 06:07:41 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-10-23-grondilu-msg18237/)
 > メッセージというアイデアがとても気に入らない。プロトコルに必要ないので、本当にフィットする場所を見つけるのは簡単ではないと思う。ただしプログラマではないが。サトシの考えを聞きたい。
 
 ああ、自分もそれは気になる。

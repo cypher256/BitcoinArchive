@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 ---
 
-[Quote from: impossible7 on August 06, 2010, 11:37:20 AM](https://bitcointalk.org/index.php?topic=648.msg7838#msg7838)
+[Quote from: impossible7 on August 06, 2010, 11:37:20 AM](#msg7838)
 > CRITICAL_BLOCK is a macro that contains a for loop. The assertion failure indicates that break has been called inside the body of the loop. The only break statement in this block is in line 2762. In the original source file, there is no break statement in this critical block. I think you must remove lines 2759-2762. The is nothing like that in the original main.cpp.
 
 Sorry about that.  CRITICAL_BLOCK isn't perfect.  You have to be careful not to break or continue out of it.  There's an assert that catches and warns about break.  I can be criticized for using it, but the syntax would be so much more bloated and error prone without it.

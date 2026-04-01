@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: knightmb on July 30, 2010, 07:24:07 PM](https://bitcointalk.org/index.php?topic=626.msg6702#msg6702)
+> [Quote from: knightmb on July 30, 2010, 07:24:07 PM](#msg6702)
 > これらのビルドを作るのにどれだけ苦労したか想像できます。Ubuntu 9.04の環境でプログラムをビルドしようとしていますが、パッケージをインストールしたりソースをコンパイルしたりしても、すべての依存関係を見つけられません（笑）。
 <!-- /tone-skip -->
 

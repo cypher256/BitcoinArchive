@@ -17,7 +17,7 @@ threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
 translationStatus: complete
 ---
 
-> [Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](https://bitcointalk.org/index.php?topic=820.msg10167#msg10167)
+> [Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](#msg10167)
 > Mac以外のi5への愛は？
 
 Windows i5 64ビットではここでは遅くなった。

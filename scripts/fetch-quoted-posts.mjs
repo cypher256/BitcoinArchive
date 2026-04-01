@@ -47,7 +47,7 @@ function parsePostsFromHtml(html) {
       || chunk.match(/action=profile;u=\d+[^>]*>([^<]+)<\/a>/i);
     const author = authorMatch ? authorMatch[1].trim() : 'Unknown';
 
-    const dateMatch = chunk.match(/(?:on:|class="smalltext"[^>]*>)\s*(?:<b>)?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4},\s+\d{1,2}:\d{2}:\d{2}\s+(?:AM|PM))/i);
+    const dateMatch = chunk.match(/(?:on:|class="smalltext"[^>]*>)\s*(?:<b>|<span[^>]*>)?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4},\s+\d{1,2}:\d{2}:\d{2}\s+(?:AM|PM))/i);
     const dateStr = dateMatch ? dateMatch[1].trim() : '';
     const dateISO = parseForumDate(dateStr);
 

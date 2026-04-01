@@ -30,7 +30,7 @@ translationStatus: complete
 BitcoinはJSON-RPCのポート8332と同様に、ローカルループバックのポート8330で応答できる。HTTP応答を返すことになる。
 
 <!-- tone-skip -->
-> [Quote from: DataWraith on May 02, 2010, 11:13:09 AM](https://bitcointalk.org/index.php?topic=55.msg1045#msg1045)
+> [Quote from: DataWraith on May 02, 2010, 11:13:09 AM](#msg1045)
 > ビットコインリンクは、magnet:よりもmailto:に近いものであるべきだと思います。
 <!-- /tone-skip -->
 

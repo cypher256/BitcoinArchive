@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: satoshi on August 16, 2010, 03:25:54 PM](https://bitcointalk.org/index.php?topic=832.msg9754#msg9754)
+> [Quote from: satoshi on August 16, 2010, 03:25:54 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-satoshi-msg9754/)
 > チェック後にAddToBlockIndexまたはReorganizeを開始することはおそらく可能だが、はるかに慎重な注意が必要になる。おそらくAddToBlockIndexの新しい最良ブロックを設定する部分を分離すべきだろう。おそらく以下のコードの代わりにそうすることになるだろう。
 
 最終的にSVN rev 139でそのようにした。

@@ -15,7 +15,7 @@ tags: []
 
 [Quote from: kiba on September 23, 2010, 08:10:38 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-23-kiba-msg13869/)
 > [Quote from: mskwik on September 23, 2010, 07:14:16 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-23-mskwik-msg13855/)
-> > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](https://bitcointalk.org/index.php?topic=1268.msg13828#msg13828)
+> > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-23-kiba-msg13828/)
 > > > > 1. Download site like rapidshare and other crappy host. Inconvenient captcha and required paypal. Bitcoin can possibly take both roles and streamline the whole process. Suggested by Kiba.
 > > 
 > > 

@@ -14,7 +14,7 @@ threadId: "bt-json-rpc-password"
 tags: []
 ---
 
-[Quote from: lachesis on July 25, 2010, 07:52:35 PM](https://bitcointalk.org/index.php?topic=461.msg5738#msg5738)
+[Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
 > I found what appears to be a bug: with a long enough username and password combination, the base64 encoder in bitcoind ... inserts a newline every 64 characters
 
 Great catch!  Simpler fix is to specify the BIO_FLAGS_BASE64_NO_NL in the rpc.cpp/EncodeBase64 function:
