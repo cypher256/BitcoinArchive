@@ -14,11 +14,11 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: NewLibertyStandard on August 06, 2010, 11:55:47 PM](https://bitcointalk.org/index.php?topic=723.msg8021#msg8021)
-> [Quote from: creighto on August 06, 2010, 11:42:31 PM](https://bitcointalk.org/index.php?topic=723.msg8019#msg8019)
-> > All of these examples involve some kind of two party trust, but not one requires both parties trust a third.  Not even the verification of the blockchain.
-> 
-> Trusted third parties are very useful when trading with someone you don't trust.
+[Quote from: NewLibertyStandard on August 06, 2010, 11:55:47 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-06-newlibertystandard-msg8021/)
+> [Quote from: creighto on August 06, 2010, 11:42:31 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-06-moonshadow-msg8019/)
+> > これらの例はすべて何らかの二者間の信頼を含むが、両者が第三者を信頼する必要があるものは1つもない。ブロックチェーンの検証さえも。
+>
+> 信頼できない相手と取引する際には、信頼できる第三者は非常に有用だ。
 
-Yes, but I was pointing out that waiting for verification is not usually neccessary in common usage of the currency.  It's the unknowns that call for waiting for verification or the use of a trusted third party.
-So most everyday transactions, either online or IRL, can be performed with faith instantly, or with the additional confidence of the local client verification almost instantly.  The 10 minute lag isn't really a detriment.
+はい、ただ私が指摘していたのは、通貨の一般的な使用では検証を待つ必要は通常ないということだ。検証の待機や信頼できる第三者の利用を必要とするのは未知の相手だ。
+したがって、オンラインでもIRLでも、ほとんどの日常的な取引は即座に信頼に基づいて行えるか、ローカルクライアントの検証による追加の確信でほぼ即座に行える。10分の遅延は実際にはデメリットではない。

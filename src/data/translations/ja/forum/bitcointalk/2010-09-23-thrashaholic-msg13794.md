@@ -15,7 +15,7 @@ translationStatus: complete
 ---
 
 [Quote from: Babylon on September 23, 2010, 05:01:59 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-23-babylon-msg13789/)
-> [Quote from: mtgox on August 02, 2010, 01:23:12 PM](https://bitcointalk.org/index.php?topic=671.msg7004#msg7004)
+> [Quote from: mtgox on August 02, 2010, 01:23:12 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-02-mtgox-msg7004/)
 > > Bitcoinポーカーが本当にBTCを確立すると思う。
 > 
 > 

@@ -15,8 +15,8 @@ tags: []
 translationStatus: complete
 ---
 
-I can see the motivation for davux's request. In developing the e-commerce plugins I've released, I've wondered about the viability long term of using a "dump" method against the wallet, since over time the data returned is just going to grow and grow.
+davuxのリクエストの動機は理解できる。リリースしたeコマースプラグインの開発中に、ウォレットに対する「ダンプ」メソッドの使用が長期的に実現可能かどうか疑問に思った。時間が経つにつれ返されるデータは増える一方だからだ。
 
-What I'd prefer is being able to attach a JSON-RPC callback URL to an account or an address, maybe to be invoked each time a confirmation or any other status change to that account or address comes in, until the callback is cleared. That would eliminate the need for polling the wallet entirely.
+アカウントやアドレスにJSON-RPCコールバックURLを添付でき、そのアカウントやアドレスの承認やその他のステータス変更のたびに呼び出され、コールバックがクリアされるまで続くのが理想だ。これでウォレットのポーリングの必要が完全になくなる。
 
-I threw a "feature request" post in about that someplace.
+それについての「機能リクエスト」投稿をどこかに書いた。

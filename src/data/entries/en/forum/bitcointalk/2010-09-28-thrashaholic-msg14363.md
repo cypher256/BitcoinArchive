@@ -13,8 +13,8 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: theymos on September 27, 2010, 01:14:45 AM](https://bitcointalk.org/index.php?topic=1268.msg14183#msg14183)
-> [Quote from: thrashaholic on September 27, 2010, 12:20:02 AM](https://bitcointalk.org/index.php?topic=1268.msg14176#msg14176)
+[Quote from: theymos on September 27, 2010, 01:14:45 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-27-theymos-msg14183/)
+> [Quote from: thrashaholic on September 27, 2010, 12:20:02 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-27-thrashaholic-msg14176/)
 > > I also don't see how bitcoin could be used as a captcha, those are used to make sure there's a human on the other end and not a spam bot...you could easily automate the payments. For this niche, it's paying for high bandwidth, concurrent downloads of pirated content; it just won't work otherwise IMO.
 > 
 > 

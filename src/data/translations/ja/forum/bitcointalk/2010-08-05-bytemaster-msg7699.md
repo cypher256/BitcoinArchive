@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-Right now the transaction fee address is left "blank" and the block generator fills it out.
-Now you would fill it in with the address of the person you are asking to build the block.  
+現在、トランザクション手数料のアドレスは「空白」のままで、ブロック生成者が記入する。
+今度はブロック構築を依頼する相手のアドレスを記入する。
 
-If the transmit fee <= block integration fee no one could profitably forward the transaction and thus must generate a block themselves.
+送信手数料 <= ブロック統合手数料の場合、誰もトランザクションを利益的に転送できないため、自分自身でブロックを生成する必要がある。

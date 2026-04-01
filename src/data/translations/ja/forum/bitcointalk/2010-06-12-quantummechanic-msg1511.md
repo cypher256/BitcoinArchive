@@ -8,10 +8,9 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "Context post by QuantumMechanic in BitcoinTalk topic 179. before msg1588."
+description: "BitcoinTalkトピック165におけるQuantumMechanicのコンテキスト投稿。msg1595の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-
-I second that one.  My fear is that the transaction fee won't scale nicely.  Hopefully this is unfounded.
+それに賛成だ。トランザクション手数料がうまくスケールしないのではないかという懸念がある。根拠のないものだといいが。

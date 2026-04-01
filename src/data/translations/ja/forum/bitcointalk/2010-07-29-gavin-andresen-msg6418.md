@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: Brre on July 29, 2010, 11:20:33 AM](https://bitcointalk.org/index.php?topic=615.msg6361#msg6361)
+[Quote from: Brre on July 29, 2010, 11:20:33 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-29-brre-msg6361/)
 > 約2時間前にトランザクションを行ったが、0/未確認のままだ。受信者にもクレジットの表示や未確認の行すらない……コインが虚空に消えたようだ……
 > 待つべきか？これは異常に時間のかかるトランザクションなのだろうか？
 

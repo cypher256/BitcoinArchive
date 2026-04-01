@@ -14,7 +14,7 @@ threadId: "bt-version-0-3-18"
 tags: []
 ---
 
-[Quote from: chaord on December 09, 2010, 07:17:12 AM](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)
+[Quote from: chaord on December 09, 2010, 07:17:12 AM](#msg28448)
 > by default disallow non-standard transactions that exceed 128 bytes (or whatever threshold is agreeable)?
 > 
 > I would like to hear why the above option was thrown out by the developers.

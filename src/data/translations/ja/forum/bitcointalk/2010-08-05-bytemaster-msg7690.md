@@ -14,6 +14,6 @@ tags: []
 translationStatus: complete
 ---
 
-The downside to a non "broadcast" system is that it makes it easier to double-spend and in fact your payment to generate would be a prime candidate for double spending.  
+「ブロードキャスト」でないシステムの欠点は、二重使用がより容易になることだ。実際、生成への支払い自体が二重使用の格好の標的となる。
 
-I am not sure that the system can stand such delays in the broadcast system.  I suppose those worried about double spending would pay to have the transaction "vetted" by more nodes and those that can handle a loss would take the risk.
+ブロードキャストシステムにそのような遅延を許容できるか確信がない。二重使用を心配する人は、より多くのノードにトランザクションを「審査」してもらうために支払い、損失を受け入れられる人はリスクを取ればよいだろう。

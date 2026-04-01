@@ -14,9 +14,9 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: throughput on August 03, 2010, 01:33:08 PM](https://bitcointalk.org/index.php?topic=661.msg7230#msg7230)
-> Yes...
-> But what you describe is only possible after someone have noticed and prooved the network split is happening.
-> Do you propose any method to detect the beginning of the network split?
+[Quote from: throughput on August 03, 2010, 01:33:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-throughput-msg7230/)
+> はい……
+> しかしあなたが述べていることは、誰かがネットワーク分裂の発生に気づき証明した後でしか可能ではない。
+> ネットワーク分裂の開始を検出する方法を提案しているか？
 
-I started another thread along this line elsewhere, but for an individual vendor, a simple watchdog daemon that tracks the average time between blocks since the last official change in difficulty and alerts the vendor if a single block takes more than twice as long as the average, perhaps suspending the acceptance of new coins until the vendor checks to see what is happening.  Each block in a row that takes longer than the average increases confidence against a false positive.  So if one block takes twice as long as average, followed by a series of blocks that take 75% longer than average, then you can be fairly certain that you are no longer on the majority network.
+この方向で別のスレッドを始めたが、個々の販売者にとっては、最後の公式難易度変更以降のブロック間の平均時間を追跡するシンプルなウォッチドッグデーモンが良いだろう。1つのブロックが平均の2倍以上かかった場合に販売者に警告し、販売者が状況を確認するまで新しいコインの受け入れを一時停止する。平均より長いブロックが連続するほど、偽陽性に対する信頼度が上がる。つまり、1ブロックが平均の2倍かかり、その後一連のブロックが平均の75%長くかかれば、もはや多数派ネットワーク上にいないとかなり確信できる。

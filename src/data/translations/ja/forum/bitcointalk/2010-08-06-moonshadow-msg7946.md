@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: gridecon on August 06, 2010, 07:30:32 PM](https://bitcointalk.org/index.php?topic=721.msg7938#msg7938)
+[Quote from: gridecon on August 06, 2010, 07:30:32 PM](#msg7938)
 > ビットコインの鋳造という活動は、スパム送信のような他のボットネット活動よりも害が少ないという議論さえできる。
 
 彼はすでにそう主張していたと思うが。

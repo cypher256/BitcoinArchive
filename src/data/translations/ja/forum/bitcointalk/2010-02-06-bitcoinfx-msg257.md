@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: BlueSky on February 06, 2010, 01:26:39 PM](https://bitcointalk.org/index.php?topic=44.msg255#msg255)
+[Quote from: BlueSky on February 06, 2010, 01:26:39 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-02-06-bluesky-msg255/)
 > …そうでなければ、流通しているの総量と、それで購入できる商品の量を知る必要がある（これはオーストリア学派的な価値測定の考え方だと思うが？）。で、流通量はどれくらいなのか？…
 
 FAQより：

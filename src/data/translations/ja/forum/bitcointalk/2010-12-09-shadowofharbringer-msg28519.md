@@ -15,6 +15,6 @@ tags: []
 translationStatus: complete
 ---
 
-Well I spport Satoshi completely in this matter.
+この件についてはサトシを完全に支持する。
 
-Leaving a possibility to store data in bitcoin chain is an accident waiting to happen. Just wait until somebody encodes kiddie porn into the chain - it would stay there forever. And the governments would have a perfect propaganda possibility for fighting it. "Normal" people won't use bitcoin at all if it is associated with perverts, mafia, and financial scams.
+Bitcoinチェーンにデータを保存する可能性を残すことは、災害が起こるのを待っているようなものだ。誰かが児童ポルノをチェーンにエンコードするのを待つだけだ——それは永遠にそこに残る。そして政府はそれと戦うための完璧なプロパガンダの機会を得る。「普通の」人々は、変質者、マフィア、金融詐欺と関連付けられるなら、Bitcoinをまったく使わないだろう。

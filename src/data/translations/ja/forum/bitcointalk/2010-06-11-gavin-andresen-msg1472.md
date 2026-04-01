@@ -8,26 +8,26 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 179. before msg1588."
+description: "BitcoinTalkトピック179におけるギャビン・アンドレセンのコンテキスト投稿。msg1588の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-I'll try to answer what I can:
+答えられるものに答えてみよう：
 
-[Quote from: nixoid on June 10, 2010, 08:38:13 PM](https://bitcointalk.org/index.php?topic=179.msg1461#msg1461)
-> 0) Is it necessary to run a node if i want to have a wallet? Is it necessarily attached to some exact node or i can keep my wallet on flash drive for example and use it with any node? Where and in which form my account balance is stored?
+[Quote from: nixoid on June 10, 2010, 08:38:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-10-nixoid-msg1461/)
+> 0) ウォレットを持つためにノードを実行する必要があるのか？ 特定のノードに紐付けられるのか、それとも例えばフラッシュドライブにウォレットを保管して任意のノードで使えるのか？ 口座残高はどこにどのような形式で保存されるのか？
 
-You either have to run a node or trust somebody else (like MyBitcoin.com) to keep a wallet for you.
+ノードを実行するか、誰か（MyBitcoin.comのような）を信頼してウォレットを預けるかのどちらかだ。
 
-Your account balance is stored in a Berkeley DB file called 'wallet.dat' (what directory depends on your operating system; on my Mac it is ~/Library/Application Support/Bitcoin/wallet.dat, on linux it is ~/.bitcoin/wallet.dat, not sure about PCs).
+口座残高はwallet.datというBerkeley DBファイルに保存される（どのディレクトリかはOSによる。Macでは~/Library/Application Support/Bitcoin/wallet.dat、Linuxでは~/.bitcoin/wallet.dat、PCについては不明）。
 
-The only application that can read wallet.dat is the bitcoin code, and the database structure isn't documented anywhere besides the bitcoin C++ source code.
-Theoretically, no, but the code to do lightweight validation hasn't been written.
-Satoshi is planning on encrypting the wallet database, so you'd need to enter a password to read it.  (and they need to get your private keys to generate transactions-- those are what are stored in the wallet.dat)
-Dunno.
-There's another thread about this in these forums; maybe we should start a "Satoshi's TODO list" thread and get folks to volunteer to help out.
-Fewer and fewer coins will be created over the next N years (where N is-- what, 20?).  That's a feature, not a bug...
+wallet.datを読めるアプリケーションはbitcoinのコードだけで、データベース構造はbitcoinのC++ソースコード以外にはどこにもドキュメント化されていない。
+理論的にはいいえだが、軽量な検証を行うコードはまだ書かれていない。
+サトシはウォレットデータベースの暗号化を計画しているので、読むためにはパスワードを入力する必要がある。（トランザクションを生成するためには秘密鍵が必要で、それがwallet.datに保存されているものだ）
+分からない。
+このフォーラムにこれについての別のスレッドがある。「サトシのTODOリスト」スレッドを始めて、人々にボランティアを呼びかけてはどうか。
+今後N年間（Nは何年だ、20？）にわたって生成されるコインはますます少なくなる。これはバグではなく機能だ…
 
-RE: developing your own version: are you thinking of creating a second bitcoin implementation that is compatible with the existing C++ one  (good idea, in my opinion)?  Or creating a similar-but-not-the-same system (bad idea, in my opinion)?
+自分のバージョンの開発について：既存のC++実装と互換性のある2番目のbitcoin実装を作ることを考えているのか（俺の意見では良いアイデア）？ それとも似ているが同じではないシステムを作ることか（俺の意見では悪いアイデア）？

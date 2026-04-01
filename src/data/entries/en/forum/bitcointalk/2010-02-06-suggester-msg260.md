@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: BlueSky on February 06, 2010, 09:36:45 AM](https://bitcointalk.org/index.php?topic=44.msg252#msg252)
+[Quote from: BlueSky on February 06, 2010, 09:36:45 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-02-06-bluesky-msg252/)
 > What about dwindling supply?
 > The current supply will eventually begin to dwindle as people lose their wallet's(removing coins from the system) & governments attempt to drain coins out (either by scamming or creating coins themselves and simply hoarding them)of the system. This is inevitable (government action against BC) as no government worldwide will allow the existence of such an anonymous currency system out of their control or supervision.
 

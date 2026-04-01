@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: Brre on July 29, 2010, 11:20:33 AM](https://bitcointalk.org/index.php?topic=615.msg6361#msg6361)
+[Quote from: Brre on July 29, 2010, 11:20:33 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-07-29-brre-msg6361/)
 > I did a transaction about 2 hours ago and it is staying at 0/unconfirmed, the recipient has no credit showing or even an unconfirmed line... The coins seems to disapeared in the void...
 > Should I wait is this just a transaction that is going to take exceptionally long?
 

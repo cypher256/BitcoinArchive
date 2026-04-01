@@ -14,14 +14,14 @@ threadId: "bt-scalability"
 tags: []
 ---
 
-[Quote from: DataWraith on July 14, 2010, 04:42:16 PM](https://bitcointalk.org/index.php?topic=286.msg2875#msg2875)
+[Quote from: DataWraith on July 14, 2010, 04:42:16 PM](#msg2875)
 > Quotespaceshaker: yes I agree there will have to be nodes that act as proxies for mobile devices. 
 > 
 > Um. That's exactly what a supernode server would do.
 
 Um. Sure. I think I've gone full circle. I think Gavin said it best:
 
-[Quote from: gavinandresen on July 14, 2010, 02:20:45 AM](https://bitcointalk.org/index.php?topic=286.msg2721#msg2721)
+[Quote from: gavinandresen on July 14, 2010, 02:20:45 AM](#msg2721)
 > A lightweight client would have a wallet with coins in it (public+private key pairs).
 > 
 > And a secure way of sending messages to, and getting messages from, any of the ultra-fast, always-connected heavyweight nodes.

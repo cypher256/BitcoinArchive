@@ -15,14 +15,14 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: DataWraith on July 14, 2010, 04:42:16 PM](https://bitcointalk.org/index.php?topic=286.msg2875#msg2875)
+[Quote from: DataWraith on July 14, 2010, 04:42:16 PM](#msg2875)
 > Quotespaceshaker: ええ、モバイルデバイスのプロキシとして機能するノードが必要になることには同意する。
 > 
 > うーん。それはまさにスーパーノードサーバーがやることだ。
 
 うーん。確かに。一周回ったようだ。ギャビンが一番うまく言ったと思う：
 
-[Quote from: gavinandresen on July 14, 2010, 02:20:45 AM](https://bitcointalk.org/index.php?topic=286.msg2721#msg2721)
+[Quote from: gavinandresen on July 14, 2010, 02:20:45 AM](#msg2721)
 > 軽量クライアントはコインが入ったウォレットを持つ（公開鍵+秘密鍵のペア）。
 > 
 > そして、超高速で常時接続のヘビーウェイトノードのいずれかにメッセージを送信し、メッセージを受け取るための安全な方法。

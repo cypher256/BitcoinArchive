@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: BlueSky on February 06, 2010, 09:36:45 AM](https://bitcointalk.org/index.php?topic=44.msg252#msg252)
+[Quote from: BlueSky on February 06, 2010, 09:36:45 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-02-06-bluesky-msg252/)
 > 供給量の減少はどうだろうか？
 > 現在の供給量は、人々がウォレットを失ったり（コインがシステムから除去される）、政府がコインを抜き取ろうとしたり（詐欺で奪うか、自らコインを作成して単に退蔵する）することで、いずれ減少し始める。これは避けられないことだ（政府によるBCへの対抗行動は）。世界中のどの政府も、自分たちの管理や監視の及ばない匿名通貨システムの存在を許さないだろう。
 

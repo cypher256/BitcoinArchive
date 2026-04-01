@@ -14,15 +14,15 @@ tags: []
 translationStatus: complete
 ---
 
-Couple of quick suggestions:
+いくつか簡単な提案：
 
-Using the key name "class" will cause problems for, at least, JavaScript, and probably other languages where "class" is a reserved word.  "type" or "variety" or some other synonym will cause fewer problems later.
+キー名に"class"を使うと、少なくともJavaScript、おそらく他の言語でも"class"が予約語であるため問題が生じる。"type"や"variety"など他の同義語の方が後の問題が少ない。
 
-Or, maybe better, get rid of that field and just report credits as positive numbers and debits as negative.  And add a separate "generated" field (boolean true or false).
+あるいは、そのフィールドを削除して、クレジットを正の数、デビットを負の数で報告する方が良いかもしれない。そして別の"generated"フィールド（ブール値のtrueまたはfalse）を追加する。
 
-Since each entry refers to a transaction, I'd suggest adding a "tx_id" SHA256 hex-encoded transaction id.  Then listtransactions would play nicely with the refundtransaction JSON-RPC extension (and maybe a future gettransactiondetails that let you get transaction parents, which block the transaction was in, and so on).
+各エントリはトランザクションを参照するので、"tx_id"としてSHA256の16進エンコードされたトランザクションIDを追加することを提案する。そうすればlisttransactionsがrefundtransaction JSON-RPC拡張（および将来のgettransactiondetailsでトランザクションの親、トランザクションが含まれるブロックなどを取得できるもの）とうまく連携する。
 
-Code to get that would look something like:
+コードは以下のようになる：
 Code:            uint256 tx_hash = transaction.GetHash();
             string tx_id = tx_hash.GetHex();
             mapJSONResponse.push_back(Pair("tx_id", tx_id));

@@ -14,12 +14,12 @@ tags: []
 translationStatus: complete
 ---
 
-They key bits of code are:
+コードの重要な部分は：
 Code:fileout << FLATDATA(pchMessageStart) << nSize;
 ...
-fileout << *this;pchMessageStart are the four magic bytes, and those are written with FLATDATA.
+fileout << *this;pchMessageStartは4バイトのマジックバイトで、FLATDATAで書き込まれる。
 
-The CBlock itself is written by << *this, and that's done by the IMPLEMENT_SERIALIZE in main.h:
+CBlock自体は<< *thisで書き込まれ、main.hのIMPLEMENT_SERIALIZEで行われる：
 Code:    IMPLEMENT_SERIALIZE
     (
         READWRITE(this->nVersion);
@@ -37,6 +37,6 @@ Code:    IMPLEMENT_SERIALIZE
             const_cast<CBlock*>(this)->vtx.clear();
     )
 
-The READWRITE macros Do The Right Thing, reading in or writing out the members in a machine-independent way.
+READWRITEマクロは適切な処理を行い、メンバーをマシン非依存の方法で読み書きする。
 
-See http://github.com/gavinandresen/bitcointools for simplified Python code that can dump out transactions and blocks.
+トランザクションとブロックをダンプできる簡略化されたPythonコードは http://github.com/gavinandresen/bitcointools を参照。

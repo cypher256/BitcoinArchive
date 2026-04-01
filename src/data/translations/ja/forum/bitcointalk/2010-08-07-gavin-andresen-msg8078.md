@@ -15,9 +15,9 @@ translationStatus: complete
 ---
 
 [Quote from: Red on August 07, 2010, 02:39:04 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-07-red-msg8039/)
-> Is the main thrust and incredulity in your argument because you think there CANNOT be a better solution than burning 100,000 CPU at 100% 24/7 and sending 100,000+ redundant messages per transaction?
+> あなたの議論の主な趣旨と懐疑は、100,000のCPUを24時間365日100%で燃やし、トランザクションごとに100,000以上の冗長メッセージを送る以上の良い解決策がありえないと考えるからなのか？
 
-No, not at all.  Like I said when I jumped into this thread, I think using a DHT network to somehow distribute the work is a very interesting idea, it just seems to me any solution that partitions the network will be more vulnerable to attacks that insert malicious nodes.  I think it would be fantastic to come up with less resource-intensive solution that actually works.
+いいえ、全くそうではない。このスレッドに飛び込んだ時に言ったように、DHTネットワークを使って何らかの方法で作業を分散するのは非常に興味深いアイデアだと思う。ただ、ネットワークを分割するどんなソリューションも、悪意のあるノードを挿入する攻撃に対してより脆弱になるように思える。実際に機能するリソース集約度の低いソリューションを考え出せたら素晴らしいと思う。
 
-How does Freenet generate node IDs?  The only info I see in the latest Freenet paper is:
-.... and:...which doesn't sound like it would work very well for Bitcoin.
+FreenetはどうやってノードIDを生成しているのか？最新のFreenetの論文で見つけた唯一の情報は：
+……そして：……これはBitcoinにはあまりうまく機能しないように聞こえる。

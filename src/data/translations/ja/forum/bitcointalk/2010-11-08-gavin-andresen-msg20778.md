@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: ByteCoin on November 08, 2010, 02:31:22 AM](https://bitcointalk.org/index.php?topic=1668.msg20570#msg20570)
+[Quote from: ByteCoin on November 08, 2010, 02:31:22 AM](#msg20570)
 > 大きな金額の取引を優先しても問題は本当には解決しない。なぜなら、自分のアドレスの1つから別のアドレスに大量のビットコインを無限に送ることでスパムすることは完全に可能だからだ。
 
 いや、できない。送るたびに「新しい」ものになり、優先度は年齢に金額を掛けたものだからだ：

@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: Cdecker on July 30, 2010, 06:31:48 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-30-cdecker-msg6688/)
-> I'll be trying to create openSuse and SLE packages too, Debian would be possible too, but compiling wx, boost and libdb sounds a bit excessive to me, anyone interested in helping?
+[Quote from: Cdecker on July 30, 2010, 06:31:48 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-07-30-cdecker-msg6688/)
+> openSuseとSLEのパッケージも作ってみる。Debianも可能だが、wx、boost、libdbのコンパイルはちょっと過剰に思える。手伝ってくれる人はいるだろうか？
 
-Nightly builds are a great idea; does the build service do an automatic svn update?  Anybody else willing to help get GUI-bitcoin building (or anybody know somebody on the wxWidgets team?)
+ナイトリービルドは素晴らしいアイデアだ。Build Serviceは自動SVNアップデートを行うのだろうか？ GUIのBitcoinのビルドを手伝ってくれる人はいるか（またはwxWidgetsチームの誰かを知っている人は？）

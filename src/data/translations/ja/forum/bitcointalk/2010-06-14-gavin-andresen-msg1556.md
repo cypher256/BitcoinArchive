@@ -8,14 +8,14 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 183. before msg1620."
+description: "BitcoinTalkトピック183におけるギャビン・アンドレセンのコンテキスト投稿。msg1620の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Thanks, lachesis-- 50 to you for finding that bug!
+ありがとう、lachesis――そのバグを見つけてくれたお礼に50を送る！
 
-I've changed the key and turned off debugging; I'll tighten up its security a little more tomorrow when I'm more awake.
+鍵を変更してデバッグをオフにした。明日もう少し目が覚めてからセキュリティをもう少し強化する。
 
-And wobber: no, I didn't send you leet
+そしてwobber：いいや、leetは送っていない。

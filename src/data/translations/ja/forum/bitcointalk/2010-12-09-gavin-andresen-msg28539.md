@@ -15,15 +15,10 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: chaord on December 09, 2010, 07:17:12 AM](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)
-> by default disallow non-standard transactions that exceed 128 bytes (or whatever threshold is agreeable)?
-> 
-> I would like to hear why the above option was thrown out by the developers.
+数ヶ月前、0.3.9のバグが発見された頃、受け入れ可能な取引タイプのホワイトリスト化の方が、問題を引き起こすことがわかった取引タイプのブラックリスト化よりも良い方法だとサトシに個人的に伝えた。
 
-Several months ago, around the time when the 0.3.9 bugs were found, I privately told Satoshi that I thought whitelisting acceptable transaction types was a better way to go, rather than blacklisting transaction types that we find out cause problems.
+ユーザーが入力したHTMLの<script>タグをブラックリスト化してクロスサイトスクリプティングハッキングを防ごうとするウェブサイトと危険性は似ている。
 
-The danger is similar websites that try to blacklist <script> tags in HTML entered by users to prevent cross-site-scripting hacks.  See http://ha.ckers.org/xss.html for a nice sampling of how creative hackers can be.
+受け入れ可能な取引タイプのホワイトリスト化が正しいことだと今でも確信している。
 
-I haven't asked Satoshi if the recent discussion of BitDNS putting extra data in the block chain swayed his opinion or if he woke up in the middle of the night and realized that a creative use of OP_SOMETHING might lead to an exploit.  I don't think it matters; I'm still convinced that whitelisting acceptable transaction types is the right thing to do.
-
-As for "the above option was thrown out by the developers"  -- **nothing** has been thrown out!  Again, I haven't talked to Satoshi, but I'm open to the idea of a third 'standard' transaction type that includes extra, arbitrary data.   Lets have that discussion, implement it on the -testnet, poke at it, try to imagine all the possible ways it can be misused, try to estimate the benefits and costs... and if there's general consensus that it is a good idea, roll it into production.
+「開発者によって却下された」については——**何も**却下されていない！ まだサトシと話していないが、任意の追加データを含む第三の「標準」取引タイプのアイデアには前向きだ。その議論を行い、-testnetで実装し、突いてみて、悪用される可能性のあるあらゆる方法を想像してみて、利益とコストを見積もり……一般的なコンセンサスがそれが良いアイデアだと判断されれば、本番環境に展開しよう。

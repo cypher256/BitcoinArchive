@@ -13,8 +13,8 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: kiba on September 25, 2010, 04:56:46 AM](https://bitcointalk.org/index.php?topic=1268.msg14004#msg14004)
-> [Quote from: dejayl on September 25, 2010, 04:14:44 AM](https://bitcointalk.org/index.php?topic=1268.msg14002#msg14002)
+[Quote from: kiba on September 25, 2010, 04:56:46 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-25-kiba-msg14004/)
+> [Quote from: dejayl on September 25, 2010, 04:14:44 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-25-quantummechanic-msg14002/)
 > > I'd like to see Bitcoin payments implemented into Tahoe-LAFS (distributed online storage), like Zooko was on here suggesting.  I would help, but I'm just learning how to program.
 > 
 > 

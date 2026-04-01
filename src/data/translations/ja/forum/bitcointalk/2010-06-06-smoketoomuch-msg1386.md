@@ -8,11 +8,10 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 151. before msg1600."
+description: "BitcoinTalkトピック151におけるSmokeTooMuchのコンテキスト投稿。msg1600の前。"
 isSatoshi: false
 threadId: "bt-website-translations"
 tags: []
 translationStatus: complete
 ---
-
 lol!

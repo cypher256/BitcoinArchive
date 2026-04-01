@@ -14,8 +14,8 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: theymos on September 27, 2010, 01:14:45 AM](https://bitcointalk.org/index.php?topic=1268.msg14183#msg14183)
-> [Quote from: thrashaholic on September 27, 2010, 12:20:02 AM](https://bitcointalk.org/index.php?topic=1268.msg14176#msg14176)
+[Quote from: theymos on September 27, 2010, 01:14:45 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-27-theymos-msg14183/)
+> [Quote from: thrashaholic on September 27, 2010, 12:20:02 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-27-thrashaholic-msg14176/)
 > > Bitcoinがどうやってcaptchaとして使えるのか見当もつかない。captchaは相手が人間でありスパムボットでないことを確認するためのものだ……支払いは簡単に自動化できる。このニッチでは、海賊版コンテンツの高帯域幅・同時ダウンロードに対して支払いをするということだ。そうでなければ機能しないと思う。
 > 
 > 
