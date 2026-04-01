@@ -1,5 +1,5 @@
 ---
-title: "Re: ファイルホスティングとプロキシサービスのアイデア"
+title: "Re: Idea for file hosting and proxy services"
 date: 2010-03-16T10:17:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック83におけるBitcoinFXの文脈投稿。msg731の前。"
+description: "Context post by BitcoinFX in BitcoinTalk topic 83. before msg731."
 isSatoshi: false
 threadId: "bt-idea-for-file-hosting-and-proxy-services"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-いいアイデアだ。
+Good idea.
 
-いずれ「ワンホップ」SSL、HTTP、ログイン保護されたプロキシサービス（最初のPsiphonプロジェクトに似たもの）を立ち上げて、Bitcoinでの支払いを受け付ける予定だ。
+I'll eventually be setting up a 'one hop', SSL, http, login protected proxy service (similar to the 1st Psiphon project) and accepting bitcoins as payment.
 
-イギリス在住なので、BBC iPlayerなどの利用に良いだろう。Smiley Bitcoinユーザーと「規制された」国からのユーザーに優先サービスを提供するつもりだ。
+I'm UK based so it will be good for using BBC iplayer etc. Smiley I will be giving bitcoin users priority service, as well as users from 'restricted' countries.
 
-ファイルホスティングサービスに使える余剰帯域幅があるかは疑わしいが、もしかしたら。
+I doubt I'll have the spare bandwidth for a file hosting service though, maybe.

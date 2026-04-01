@@ -1,5 +1,5 @@
 ---
-title: "Re: いくつかの提案"
+title: "Re: A few suggestions"
 date: 2009-12-17T13:21:49.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg77の前。"
+description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg77."
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
 [madhatter@10 /home/madhatter/src/bitcoin]# diff -u headers.h.orig headers.h      

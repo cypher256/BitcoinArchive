@@ -17,7 +17,7 @@ threadId: "bt-0-3-almost-ready"
 translationStatus: complete
 ---
 
-> [Quote from: lachesis on June 22, 2010, 06:20:02 AM](https://bitcointalk.org/index.php?topic=199.msg1658#msg1658)
+> [Quote from: lachesis on June 22, 2010, 06:20:02 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-22-lachesis-msg1658/)
 > 次のリリースまでにlisttransactionsのRPCメソッドが完成するといいのですが。
 心配しているのは、多くのプログラマーが受取支払いの確認にそれを使おうとすることだ。その方法では決して信頼性がない。list/getreceivedbyaddress/label関数が信頼性のある唯一の方法だ。
 

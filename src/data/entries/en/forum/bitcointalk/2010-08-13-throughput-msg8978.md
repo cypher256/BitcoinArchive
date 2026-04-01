@@ -15,9 +15,25 @@ tags: []
 ---
 
 [Quote from: aceat64 on August 12, 2010, 05:02:43 PM](#msg8906)
-> Quote from: throughput on August 12, 2010, 03:28:43 PM
+> [Quote from: throughput on August 12, 2010, 03:28:43 PM](#msg8897)
+> > Definitively, we need some overall network hps meter in every node.
+> > 
+> > And at last I've found that article:
+> > http://www.informit.com/articles/article.aspx?p=1237179
+> > 
+> > Network splits are easier to produce, and happen more often, than many users on this forum think.
+> > You don't really need to cut any cable, nor hack into ISP's router to plug that ISP off Internet.
+> > You don't need to hack his peers either. All you need is BGP router in any AS (and some unwary BGP peers).
+> > I have one  
+> > 
+> > So, it is possible to talk about a short (1 - 3 hours) and controlled network split.
+> > Not just split in half, but split into ASes. After an hour or three-four most of ISPs will recover, but that
+> > really depends on work hours. Weekend attack may have more prolonged effect.
+> > Perhaps in the future that will be fixed and no BGP router will be vulnerable, but
+> > anyway, nobody should count on Internet stability and persistent connectivity.
+> 
+> How would an attacker connect to both sides during this split in order to spend the coins? And if the attacker can do it, the likelihood that one or more honest nodes could bridge the divide is pretty good.
 
-How would an attacker connect to both sides during this split in order to spend the coins? And if the attacker can do it, the likelihood that one or more honest nodes could bridge the divide is pretty good.
 1. Why an attacker is forced to be a single person with a single PC?
 Copy the wallet on another PC and use it anywhere!
 

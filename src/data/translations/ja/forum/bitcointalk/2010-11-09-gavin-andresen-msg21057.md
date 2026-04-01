@@ -1,5 +1,5 @@
 ---
-title: "Re: テストネットワークで行ったテストと結果"
+title: "Re: Some testing that I did on the testnetwork, my findings."
 date: 2010-11-09T19:36:38.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック1668におけるギャビン・アンドレセンの投稿。msg21959の前。"
+description: "Context post by Gavin Andresen in BitcoinTalk topic 1668. before msg21959."
 isSatoshi: false
 threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-davidonpdaの協力のもと、今日サトシの最新のコード変更（トランザクションの経過時間、Bitcoin入力額、トランザクションの合計バイト数に基づく優先度設定 -- SVN rev 176）でテストを行った。
+With davidonpda's help, I did some testing myself today with Satoshi's latest code changes (setting priority based on transaction age, bitcoin amounts in, and total transaction size in bytes -- svn rev 176).
 
-期待通りの動作で、より大きく古いトランザクションがネットワークに流し込まれる少額のものよりも先に処理されるため、誰かが嫌がらせでトランザクションを大量送信しても、「通常の」トランザクションは迅速に確認される。
+It behaved as expected, putting larger, older transactions ahead of the pennies being flooded into the network, so "normal" transactions will be confirmed promptly even if somebody decides to be a jerk and floods the network with transactions.

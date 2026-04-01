@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "Context post by BitcoinFX in BitcoinTalk topic 35. before msg220."
 isSatoshi: false
-threadId: ""
 tags: []
 ---
 

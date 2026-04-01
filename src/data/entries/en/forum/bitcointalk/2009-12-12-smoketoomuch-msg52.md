@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 12. before msg55."
+description: "Context post by SmokeTooMuch in BitcoinTalk topic 12. before msg54."
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []

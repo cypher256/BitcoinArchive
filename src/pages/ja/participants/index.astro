@@ -63,9 +63,10 @@ const structuredData = {
     </div>
     <ul class="participant-list" id="sort-list">
       {participants.map((p) => (
-        <li data-name={p.displayName} data-count={p.count}>
+        <li data-name={`${p.displayName} ${p.name}`} data-count={p.count}>
           <a href={localePath(`/participants/${p.slug}/`, lang)}>
             {p.displayName}
+            {p.displayName !== p.name && <span class="original-name">({p.name})</span>}
           </a>
           <span class="count">({p.count})</span>
         </li>
@@ -201,6 +202,12 @@ const structuredData = {
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--color-border);
     font-size: 1.1rem;
+  }
+  .original-name {
+    color: var(--color-text-muted);
+    font-size: 0.85em;
+    margin-left: 0.3em;
+    font-family: var(--font-heading);
   }
   .count { color: var(--color-text-muted); font-size: 0.9rem; }
 </style>

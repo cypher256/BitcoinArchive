@@ -15,9 +15,19 @@ tags: []
 ---
 
 [Quote from: sirius-m on February 02, 2010, 12:34:08 PM](#msg203)
-> Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM
-
-The connection won't get through at all if the port is not forwarded.
+> [Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM](#msg202)
+> > Thanks, I understand that and my port 8333 is correctly forwarded to my 24/7 Bitcoin machine. 
+> > 
+> > However, lets say that I have 2 machines on the same IP running Bitcoin without port 8333 forwarded on either !
+> > 
+> > Bitcoin node (1) 192.168.0.2
+> > 
+> > Bitcoin node (2) 192.168.0.3
+> > 
+> > So, I would guess that 192.168.0.2 machine would receive the bitcoins because it is the first IP on the sub-net ?
+> 
+> 
+> The connection won't get through at all if the port is not forwarded.
 
 Not so ? I have had 2 machines connected (getting 4+ connections on each) and generating Bitcoins on the same static IP address. The port 8333 is of course forwarded for connection through my firewall, which I guess is what you mean. However, connections to other nodes are made without port 8333 being specifically forwarded through my router to a specific machine (sub-net IP), which is of course the best way to max connectivity. I understand Bitcoin only requires 1 other connection for transactions, yes ?
 

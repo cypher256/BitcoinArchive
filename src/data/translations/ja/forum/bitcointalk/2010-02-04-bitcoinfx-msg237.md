@@ -1,5 +1,5 @@
 ---
-title: "Re: アドレスに関する質問"
+title: "Re: Questions about Addresses"
 date: 2010-02-04T17:11:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック34におけるBitcoinFXの文脈投稿。msg250の前。"
+description: "Context post by BitcoinFX in BitcoinTalk topic 34. before msg250."
 isSatoshi: false
 threadId: "bt-questions-about-addresses"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-ありがとうSmokeTM。
+Thanks SmokeTM.
 
-両方のマイクロ寄付を無事に受け取った。Smiley
+Both Micro donations were successfully received. Smiley

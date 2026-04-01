@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: SmokeTooMuch on July 13, 2010, 06:55:55 PM](https://bitcointalk.org/index.php?topic=151.msg2619#msg2619)
+> [Quote from: SmokeTooMuch on July 13, 2010, 06:55:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-13-smoketoomuch-msg2619/)
 > メインページの下部にあるダウンロードリンクを削除することをお勧めします。
 
 ご覧の通り、英語ページのリンクは新しい0.3リリースを指していますが、他の言語のページには古い0.2バージョンのリンクしかありません。

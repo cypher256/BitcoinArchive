@@ -1,5 +1,5 @@
 ---
-title: "Re: SSE2 CPUでの4ハッシュ並列処理（0.3.6向け）"
+title: "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6"
 date: 2010-08-13T22:27:25.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック648におけるNewLibertyStandardのコンテキスト投稿。msg9145の前。"
+description: "Context post by NewLibertyStandard in BitcoinTalk topic 648. before msg9145."
 isSatoshi: false
 threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-この機能が近いうちに公式ビルドに含まれることを本当に望んでいる。どのアルゴリズムを使うか決定するための内部速度テストと合わせて。速度テストを実行せずに速くなるか遅くなるかを判断する方法がわかれば、後で速度テストを削除すればよい。
+I would really like to have this feature included in an official build  sometimes soon along with an internal speed test to determine which algorithm to use. You can always remove the speed test later once you figure out how to determine whether it will be faster or slower without running the speed test.

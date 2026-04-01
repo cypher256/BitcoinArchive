@@ -10,7 +10,6 @@ participants:
     slug: "rogerrabbit"
 description: "Context post by RogerRabbit in BitcoinTalk topic 21. before msg112."
 isSatoshi: false
-threadId: ""
 tags: []
 ---
 

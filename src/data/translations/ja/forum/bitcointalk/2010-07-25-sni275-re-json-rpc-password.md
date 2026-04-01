@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: gavinandresen on July 25, 2010, 09:38:19 PM](https://bitcointalk.org/index.php?topic=461.msg5768#msg5768)
+> [Quote from: gavinandresen on July 25, 2010, 09:38:19 PM](#msg5768)
 > 素晴らしい発見です！より簡単な修正は、rpc.cpp/EncodeBase64関数でBIO_FLAGS_BASE64_NO_NLを指定することです。
 <!-- /tone-skip -->
 

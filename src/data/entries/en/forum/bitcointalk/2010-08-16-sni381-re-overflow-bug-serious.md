@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-overflow-bug-serious"
 ---
 
-[Quote from: trebronics on August 16, 2010, 01:02:35 AM](https://bitcointalk.org/index.php?topic=823.msg9625#msg9625)
+[Quote from: trebronics on August 16, 2010, 01:02:35 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-goldrush-msg9625/)
 > Most people running clients are not reading this message thread.  So...  Silly questions:
 
 1) How will this continue to affect version 3.8.1 (pre-catastrophe) clients with bad block chain?

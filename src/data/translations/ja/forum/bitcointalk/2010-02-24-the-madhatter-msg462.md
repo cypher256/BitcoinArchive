@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin用URIスキーム"
+title: "Re: URI-scheme for bitcoin"
 date: 2010-02-24T02:37:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック55におけるThe Madhatterの文脈投稿。msg481の前。"
+description: "Context post by The Madhatter in BitcoinTalk topic 55. before msg481."
 isSatoshi: false
 threadId: "bt-uri-scheme-for-bitcoin"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-ああ、俺もまったく同じことを考えていた。マグネットリンクスキームは最高だろう。Cheesy
+Yeah, I had totally thought of that too. A magnet link scheme would be awesome. Cheesy

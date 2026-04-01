@@ -19,7 +19,7 @@ translationStatus: complete
 すべてのユーザーがネットワークノードであるという現在のシステムは、大規模運用を想定した構成ではない。それはすべてのUsenetユーザーが自分のNNTPサーバーを運用するようなものだ。この設計はユーザーが単なるユーザーでいられるように対応している。ノードを運用する負担が大きくなるほど、ノードの数は少なくなる。その少数のノードは大規模なサーバーファームになるだろう。残りはトランザクションのみを行い生成はしないクライアントノードになる。
 
 <!-- tone-skip -->
-> [Quote from: bytemaster on July 28, 2010, 08:59:42 PM](https://bitcointalk.org/index.php?topic=532.msg6269#msg6269)
+> [Quote from: bytemaster on July 28, 2010, 08:59:42 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-28-bytemaster-msg6269/)
 > それに、支払いが正当であることを確認するのに10分は長すぎます。今日のクレジットカードをスワイプするのと同じくらい速くなければなりません。
 <!-- /tone-skip -->
 

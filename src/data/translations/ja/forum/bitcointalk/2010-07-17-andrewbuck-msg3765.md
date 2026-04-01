@@ -1,5 +1,5 @@
 ---
-title: "Re: ソースコードのドキュメント"
+title: "Re: Source code documentation"
 date: 2010-07-17T15:49:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "BitcoinTalkトピック393におけるAndrewBuckの文脈投稿。msg3828の前。"
+description: "Context post by AndrewBuck in BitcoinTalk topic 393. before msg3828."
 isSatoshi: false
 threadId: "bt-source-code-documentation"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-自分に返信し続けて申し訳ないが、見つけた小さな断片を投稿している。現在 -dropmessagestest コマンドラインスイッチをドキュメント化しているところだが、コードに追加するとよい小さな改善を見つけた。現在、このスイッチの結果としてメッセージがドロップされた場合、メッセージがドロップされたことを示すデバッグメッセージがログに出力される。ドロップされたメッセージの内容もログに出力するとかなり有用だろう。こうすれば、ドロップされたメッセージの1つが本当にBitcoinを壊した場合、どのメッセージが問題を引き起こしたかがわかる。また、最初に壊した時と同じメッセージをブロックする受信ネットワークストリームのフィルターを追加して問題を再現し、後で修正を検証することも可能になる。
+Sorry to keep replying to myself but I am posting these little snippets as I stumble across them.  I am currently documenting the -dropmessagestest command line switch and I see a minor improvement you may want to add to the code.  Currently if a message is dropped as a result of this switch, a debug message is printed to the log indicating a message was dropped.  It would probably be pretty useful to print the contents of the dropped message to the log as well.  This way if one of the dropped messages really does break bitcoin, you can see what message caused the problem.  It would also allow you to later re-create the problem by adding a filter on the incoming network stream blocking messages like the one that broke it the first time so that you can verify that you have fixed the issue later on.
 
-良いアイデアだと思えば、おそらく自分でも追加できる。
+If you think it is a good idea I can probably add this myself as well.
 
 -Buck

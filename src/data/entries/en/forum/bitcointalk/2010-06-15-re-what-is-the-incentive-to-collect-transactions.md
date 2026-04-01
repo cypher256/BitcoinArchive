@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/122/"
 ---
 
-[Quote from: theymos on June 05, 2010, 04:26:09 PM](https://bitcointalk.org/index.php?topic=165.msg1373#msg1373)
+[Quote from: theymos on June 05, 2010, 04:26:09 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-06-05-theymos-msg1373/)
 > Adding transactions to the block you're working on will slow down your generation rate
 
 The premise is false.  Adding more transactions to the block you're working on does NOT slow down your generation rate.  When generate is scanning hashes, it only hashes the header of the block, which is constant size.  The header contains a hash of the transactions (the Merkle root) and is only updated occasionally.

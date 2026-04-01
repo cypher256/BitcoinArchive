@@ -1,5 +1,5 @@
 ---
-title: "Re:（BitcoinFXの文脈投稿）"
+title: "Re: (context post by BitcoinFX)"
 date: 2010-02-01T18:51:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,21 +8,20 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック35におけるBitcoinFXの文脈投稿。msg220の前。"
+description: "Context post by BitcoinFX in BitcoinTalk topic 35. before msg220."
 isSatoshi: false
-threadId: ""
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-Bitcoinソフトウェアの初回インストール・使用時に遭遇した問題を記録しておきたい。
+I wanted to document an issue I encountered when first installing and using the Bitcoin software.
 
-正しいインストールとポート転送設定にもかかわらず、最初の24時間は20以上の接続があるにもかかわらずBitcoinがコインや「ブロック」を生成していないことに気づいた。ブロック数はずっと0のままだった。Bitcoinがネットワーク全体のブロックダウンロードや生成に「追いついていない」ことに気づき、タスクマネージャーを開いてさらに調査した。
+Despite a correct installation and port forward settings I noticed that Bitcoin was not generating any coins or 'blocks' despite having 20+ connections for the first 24hrs. The block count just remained at 0. After realizing that Bitcoin was not 'catching up' with the collective network block download or generation I opened up the Task Manager to investigate the issue further.
 
-bitcoin.exeプロセスがMsMpEng.exe（Microsoft Security Essentials）とCPU使用率を「奪い合っている」ように見えた。かなり高スペックなPCだったのでシステムの速度低下には気づいていなかった。bitcoin.exeと適切なプログラムフォルダの場所を「ファイルと場所の除外」および「プロセスの除外」に追加した後、Bitcoinは即座にブロックの生成を開始し、CPUプロセスは正常に戻った。
+I noticed that the bitcoin.exe process seemed to be 'fighting' for CPU usage against MsMpEng.exe (Microsoft Security Essentials). I hadn't noticed any system slowdown due to having a fairly high spec. PC. After adding bitcoin.exe and the appropriate program folder locations to Exclude 'Files and Locations' and 'Exclude Processes' - Bitcoin instantly started generating blocks and the CPU processes returned to normal.
 
-ウイルスアラートやBitcoinの「誤検知」は一切なかった。**ソフトウェアが100%問題ないことは分かっている**。Microsoft Security Essentialsの「ライブ保護」エンジンが、「ブロック」生成で使用されるCPU集約型サイクルの何らかの側面とうまく「共存できない」のだろうと推測している。
+I did **not** have any virus alerts or even 'false positive' identifications for Bitcoin. **I know that the software is 100% OK**. I'm assuming that the 'Live Protection' engine in Microsoft Security Essentials just doesn't 'play well' with some aspect of the CPU hungry cycles used in 'block' generation.
 
-さらなるテストはまだ行っていないが、Comodo Internet Security（無料版）を使用した際にも同じ問題に遭遇した。
+I have yet to do more testing, however I also encountered the same issue when using Comodo Internet Security (free version).
 
-これは、あまり「技術に詳しくない」新しいBitcoinユーザーにとって明らかに問題になるだろう。同様の問題に遭遇した人はいるだろうか？
+This is obviously going to be an issue for lots of new Bitcoin users who will perhaps be less 'tech savvy'. Has anyone else encountered any similar issues ?

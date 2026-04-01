@@ -10,7 +10,6 @@ participants:
     slug: "suggester"
 description: "Context post by Suggester in BitcoinTalk topic 44. before msg267."
 isSatoshi: false
-threadId: ""
 tags: []
 ---
 

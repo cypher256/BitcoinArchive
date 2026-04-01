@@ -17,6 +17,6 @@ tags: []
 [Quote from: bytemaster on August 01, 2010, 08:14:29 PM](#msg6928)
 > I want to have multiple "accounts" with unique balances and to send and receive coins on a per-account basis.  The equiv. of having multiple wallets running at the same time.   
 > 
-> It would help to simply list the balance for each 'receiving address' and to specify a 'source' address when sending coins. 
+> It would help to simply list the balance for each 'receiving address' and to specify a 'source' address when sending coins.
 
 use -datadir and change the port on the source code and then use a different dir and port for every bitcoin instance

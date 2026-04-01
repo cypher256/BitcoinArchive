@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-new-icon-logo"
 ---
 
-[Quote from: Cdecker on February 27, 2010, 03:24:07 AM](https://bitcointalk.org/index.php?topic=64.msg565#msg565)
+[Quote from: Cdecker on February 27, 2010, 03:24:07 AM](#msg565)
 > How about an SVG version? That way we could automatically generate smaller and larger versions as needed.
 
 I don't know how to do SVG, but I did the original very large, over 500 pixels across, so it can be scaled down.  I'll give the original when I'm finished.

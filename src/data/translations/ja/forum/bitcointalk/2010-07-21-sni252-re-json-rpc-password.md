@@ -17,7 +17,7 @@ threadId: "bt-json-rpc-password"
 translationStatus: complete
 ---
 
-> [Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](https://bitcointalk.org/index.php?topic=461.msg4709#msg4709)
+> [Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](#msg4709)
 > Debianシステムの/etc内の20個の.confファイルを簡単に調査したところ:
 
  1ファイルが"key value"を使用

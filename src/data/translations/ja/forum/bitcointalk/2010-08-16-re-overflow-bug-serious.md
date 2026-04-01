@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](https://bitcointalk.org/index.php?topic=823.msg9609#msg9609)
+> [Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-ground-loop-msg9609/)
 > 影響についての質問：不正なブロックの後、不正なブロックチェーンを使って **トランザクション** を送信しました。
 
 そのトランザクションのステータスはどうなりますか？

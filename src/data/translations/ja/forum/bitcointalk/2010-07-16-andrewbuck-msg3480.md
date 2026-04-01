@@ -1,5 +1,5 @@
 ---
-title: "Re: ソースコードのドキュメント"
+title: "Re: Source code documentation"
 date: 2010-07-16T14:15:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,16 +8,16 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "BitcoinTalkトピック393におけるAndrewBuckの文脈投稿。msg3534の前。"
+description: "Context post by AndrewBuck in BitcoinTalk topic 393. before msg3534."
 isSatoshi: false
 threadId: "bt-source-code-documentation"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-> [Quote from: lachesis on July 15, 2010, 11:57:19 PM](#msg3329)
-> それはいいと思うが、いつも通り、決定はプロジェクトリーダーのサトシ次第だ。
+[Quote from: lachesis on July 15, 2010, 11:57:19 PM](#msg3329)
+> I think that would be cool, but as always, the decision rests with Satoshi, the project lead.
 
-これに反対する人がいるとは思わなかった。サトシからOKという確定的な返事をもらえるといいのだが。それなら今夜から作業を始めるだろう（アメリカ時間の今夜）。また、パッチの送り方を質問している別のスレッドを見たが、サトシにメールするのが推奨方法とのことだった。これはまだ推奨される方法か？
+I didn't think this would be something people would object to.  Hopefully I hear definitively from Satoshi that it is OK.  I will probably start working on this tonight then (tonight in USA time).  Also, I saw another thread questioning how to send in patches; the stated answer was that we should e-mail them to Satoshi, is this still the preferred method?
 
 -Buck

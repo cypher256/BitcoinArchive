@@ -17,7 +17,7 @@ threadId: "bt-website-and-software-translations"
 translationStatus: complete
 ---
 
-> [Quote from: eurekafag on October 04, 2010, 10:55:56 AM](https://bitcointalk.org/index.php?topic=151.msg15248#msg15248)
+> [Quote from: eurekafag on October 04, 2010, 10:55:56 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-10-04-eurekafag-msg15248/)
 > 翻訳を最新の状態に保つための最新の英語版.poファイルはどこにありますか？
 
 poeditで行える。リリースからsrcディレクトリを取得するか、SVNでダウンロードしてくれ。srcディレクトリの3階層下に.poファイルを配置する。poeditで開いてCatalog->Update from sourcesを実行する。

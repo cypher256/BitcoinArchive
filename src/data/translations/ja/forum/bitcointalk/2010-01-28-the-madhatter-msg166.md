@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: (context post by The Madhatter)"
 date: 2010-01-28T10:24:21.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,10 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック25におけるThe Madhatterの文脈投稿。msg173の前。"
+description: "Context post by The Madhatter in BitcoinTalk topic 25. before msg173."
 isSatoshi: false
-threadId: ""
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-拡張トランザクションデータを備えつつ、インスタントメッセンジャークライアントにはならないバランスがいいな。Tongue
+A balance between extended transaction data while NOT becoming an instant messenger client would be nice. Tongue

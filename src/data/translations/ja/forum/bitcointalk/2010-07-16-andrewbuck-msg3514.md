@@ -1,5 +1,5 @@
 ---
-title: "Re: ソースコードのドキュメント"
+title: "Re: Source code documentation"
 date: 2010-07-16T15:52:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "BitcoinTalkトピック393におけるAndrewBuckの文脈投稿。msg3534の前。"
+description: "Context post by AndrewBuck in BitcoinTalk topic 393. before msg3534."
 isSatoshi: false
 threadId: "bt-source-code-documentation"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-問題ない。だからこそ書き始める前にドキュメントについて聞いたのだ。それでもドキュメント化はしたいし、あなたが受け入れられるシステムを一緒に見つけられるかもしれない。一つの方法として、自分のコードに対してDoxygenを実行し、説明などを追加せずに自動生成されたドキュメントだけを使うことだ。これならプロジェクトへの影響はなく、自分や他の誰でもいつでもできるが、ドキュメントの有用性は限られる。
+No problem, that is why I asked about documentation before I started writing it.  I still would like to document it though and maybe we can come to some system which you would find acceptable.  One possible way is that I just run Doxygen on my own code and just use the auto-generated docs without adding any descriptions, etc.  This would have no impact on the project and myself or anyone else could do this whenever but it limits the usefulness of the documentation.
 
-2つ目の、おそらくより魅力的な方法は、Doxygenが追加ドキュメントをソースコードと同じファイルに入れる必要がないという事実を活用することだ。関数名へのリンクを含むドキュメントブロックを持つファイルを1つ追加できる。Doxygenはそれをソースから収集した自動生成情報と組み合わせてドキュメントを生成する。
+A second, and perhaps more appealing method would be to utilize the fact that Doxygen does not require the added documentation to be in the same file as the source code it is documenting.  We could add a single file that contains the documentation blocks with links pointing to the function names.  Doxygen then combines this with the auto-generated info it collects from the source to produce the docs.
 
-最後に、Doxygenを使うかどうかに関わらず、プログラムが受け付けるコマンドラインオプションを文書化した「manページ」を書きたい。コード内のどこでコマンドラインが処理されているのか？ main.cppを見たが見つからなかった（実際「main」関数すら見つけられなかった）。
+Finally, whether we use Doxygen or not, I would like to write a "man page" for the program documenting the command-line options it takes.  Where is the command line processed in the code?  I looked at main.cpp and didn't see it (in fact I couldn't even find the "main" function).
 
 -Buck

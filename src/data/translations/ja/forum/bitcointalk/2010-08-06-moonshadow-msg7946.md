@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインの鋳造は熱力学的に倒錯している"
+title: "Re: Bitcoin minting is thermodynamically perverse"
 date: 2010-08-06T19:48:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック721におけるMoonShadowのコンテキスト投稿。msg8114の前。"
+description: "Context post by MoonShadow in BitcoinTalk topic 721. before msg8114."
 isSatoshi: false
 threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-> [Quote from: gridecon on August 06, 2010, 07:30:32 PM](https://bitcointalk.org/index.php?topic=721.msg7938#msg7938)
-> ビットコインの鋳造という活動は、スパム送信のような他のボットネット活動よりも害が少ないと主張することさえできる。
+[Quote from: gridecon on August 06, 2010, 07:30:32 PM](https://bitcointalk.org/index.php?topic=721.msg7938#msg7938)
+> You could even make the argument that minting bitcoins as an activity is less harmful than other botnet activities like sending out spam.
 
-それは彼がすでに言っていたと思う。
+I think that he already did.

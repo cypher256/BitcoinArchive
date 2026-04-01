@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: knightmb on July 15, 2010, 08:15:46 PM](https://bitcointalk.org/index.php?topic=383.msg3274#msg3274)
+> [Quote from: knightmb on July 15, 2010, 08:15:46 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-15-knightmb-msg3274/)
 > Linuxクライアント（64ビット）では、「閉じる時に最小化」がまだトレイに最小化します（しばらくするとトレイアイコンを複数生成してXサーバーがハングします）。
 <!-- /tone-skip -->
 

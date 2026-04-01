@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: gavinandresen on July 23, 2010, 03:11:45 PM](https://bitcointalk.org/index.php?topic=461.msg5296#msg5296)
+> [Quote from: gavinandresen on July 23, 2010, 03:11:45 PM](#msg5296)
 > 皆さんへの質問: HTTPベーシック認証の詳細なやり方を説明するセクションをWikiページに追加すべきでしょうか？PHPとPythonでは本当に簡単です -- [http://user:pass@host:port/](http://user:pass@host:port/) のURL構文を使うだけです。
 <!-- /tone-skip -->
 

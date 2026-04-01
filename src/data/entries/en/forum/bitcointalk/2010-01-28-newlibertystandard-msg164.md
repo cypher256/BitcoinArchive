@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 25. before msg173."
 isSatoshi: false
-threadId: ""
 tags: []
 ---
 

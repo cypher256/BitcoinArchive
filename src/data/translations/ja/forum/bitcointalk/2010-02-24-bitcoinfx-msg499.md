@@ -1,5 +1,5 @@
 ---
-title: "Re:（BitcoinFXの文脈投稿）"
+title: "Re: (context post by BitcoinFX)"
 date: 2010-02-24T16:07:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック45におけるBitcoinFXの文脈投稿。msg507の前。"
+description: "Context post by BitcoinFX in BitcoinTalk topic 45. before msg507."
 isSatoshi: false
 threadId: "bt-make-your-we-accept-bitcoin-logo"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-おお！いい感じだ Cool
+wow ! Yeah looking really good Cool
 
-GNU GPLに加えて、Creative Commonsライセンス http://creativecommons.org/ も付けてはどうか。プロジェクトアドレスを参照して、複製に対するBitcoin寄付を依頼できる。Smiley
+As well as GNU GPL why not attach a Creative Commons License http://creativecommons.org/ to them. You can reference the project address and request a Bitcoin donation for their reproduction. Smiley

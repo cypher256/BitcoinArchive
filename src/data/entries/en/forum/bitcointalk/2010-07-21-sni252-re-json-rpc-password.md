@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-json-rpc-password"
 ---
 
-[Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](https://bitcointalk.org/index.php?topic=461.msg4709#msg4709)
+[Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](#msg4709)
 > I just did a quick survey of 20 .conf files in /etc on my debian system, and found:
 
  1 file used "key value"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 警告：Web閲覧するマシンで-serverやbitcoindを使うな（v0.3.2以下）"
+title: "Re: Warning: don't use -server or bitcoind where you web browse (v0.3.2 and lower)"
 date: 2010-07-21T16:10:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック479におけるギャビン・アンドレセンの文脈投稿。msg5432の前。"
+description: "Context post by Gavin Andresen in BitcoinTalk topic 479. before msg5432."
 isSatoshi: false
 threadId: "bt-warning-dont-use-server-or-bitcoind"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-chroot：保護にはならない。
+chroot: won't protect you.
 
-別のVMとして実行：保護されると思う。ただ、ブラウザはWebから取得したWebページから「localhost」へのXMLHTTPRequestを許可しないはずだと思っていたので、テストすることを勧める。Bitcoin以外のVMから同じマシン上のBitcoinデーモンと通信できるか、「bitcoind getinfo」または「bitcoin getinfo」をBitcoinでないVM上で実行して確認してみてほしい。
+Running as a separate VM:  I think will protect you.  But I thought browsers wouldn't allow XMLHTTPRequests to "localhost" from web pages fetched from the web, so my advice would be to test it.  See if you can talk to the Bitcoin daemon from another VM on the same machine by running "bitcoind getinfo" or "bitcoin getinfo" on the non-bitcoin-vm.

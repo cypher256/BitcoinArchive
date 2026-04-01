@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: aidos on July 15, 2010, 12:49:11 AM](https://bitcointalk.org/index.php?topic=151.msg3017#msg3017)
+> [Quote from: aidos on July 15, 2010, 12:49:11 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-15-aidos-msg3017/)
 > フランス語の.poファイルがこちらです。ついでに、いくつかの問題に気づきました:
 
 1. 「About」ボックスは翻訳が反映されておらず、ソフトウェアの他の部分は翻訳された文字列を使用しており、.poファイルにも「About」ボックスのメッセージの翻訳文字列が含まれているにもかかわらず、英語版が表示されたままです。設定ウィンドウの「Apply」ボタンも同様の問題があります。
@@ -26,14 +26,14 @@ translationStatus: complete
 更新された.poファイルを提供する必要がある。
 
 <!-- tone-skip -->
-> [Quote from: aidos on July 15, 2010, 12:49:11 AM](https://bitcointalk.org/index.php?topic=151.msg3017#msg3017)
+> [Quote from: aidos on July 15, 2010, 12:49:11 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-15-aidos-msg3017/)
 > 2. メインウィンドウの取引一覧にある取引の説明にダイアクリティカル文字（「éàèç」など）が含まれている場合、表示されません。おそらくどこかで文字列がUTF8として正しく処理されていないのだと思います。
 
 <!-- /tone-skip -->
 はい、これはどこかに問題があるはずだ。確認する必要があるし、他の開発者にも見てもらえる。
 
 <!-- tone-skip -->
-> [Quote from: aidos on July 15, 2010, 12:49:11 AM](https://bitcointalk.org/index.php?topic=151.msg3017#msg3017)
+> [Quote from: aidos on July 15, 2010, 12:49:11 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-15-aidos-msg3017/)
 > 4. .poファイルについて:
 
    - .poファイルの中に翻訳不要な文字列がいくつかあります（例: "Bitcoin"）。これらは _("...") の中に入れるべきではないのでは？

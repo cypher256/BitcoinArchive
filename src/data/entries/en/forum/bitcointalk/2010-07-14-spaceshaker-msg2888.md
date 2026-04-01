@@ -15,6 +15,8 @@ tags: []
 ---
 
 [Quote from: DataWraith on July 14, 2010, 04:42:16 PM](https://bitcointalk.org/index.php?topic=286.msg2875#msg2875)
+> Quotespaceshaker: yes I agree there will have to be nodes that act as proxies for mobile devices. 
+> 
 > Um. That's exactly what a supernode server would do.
 
 Um. Sure. I think I've gone full circle. I think Gavin said it best:

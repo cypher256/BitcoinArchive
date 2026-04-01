@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-website-and-software-translations"
 ---
 
-[Quote from: eurekafag on October 04, 2010, 10:55:56 AM](https://bitcointalk.org/index.php?topic=151.msg15248#msg15248)
+[Quote from: eurekafag on October 04, 2010, 10:55:56 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-10-04-eurekafag-msg15248/)
 > Where can I find the latest English .po file to keep the translation up-to-date?
 
 poedit does it.  Either get the src directory from a release, or download it with SVN.  Place your .po file 3 directories deep under the src directory.  Open it with poedit and do Catalog->Update from sources.

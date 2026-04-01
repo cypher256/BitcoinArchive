@@ -1,5 +1,5 @@
 ---
-title: "Re: アドレスに関する質問"
+title: "Re: Questions about Addresses"
 date: 2010-02-02T09:00:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,19 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック34におけるBitcoinFXの文脈投稿。msg222の前。"
+description: "Context post by BitcoinFX in BitcoinTalk topic 34. before msg222."
 isSatoshi: false
 threadId: "bt-questions-about-addresses"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-ありがとう、それは理解している。ポート8333は24時間稼働のBitcoinマシンに正しく転送されている。Grin
+Thanks, I understand that and my port 8333 is correctly forwarded to my 24/7 Bitcoin machine. Grin
 
-しかし、同じIPで2台のマシンがBitcoinを動かしていて、どちらにもポート8333が転送されていない場合はどうなるだろうか？
+However, lets say that I have 2 machines on the same IP running Bitcoin without port 8333 forwarded on either !
 
 Bitcoin node (1) 192.168.0.2
 
 Bitcoin node (2) 192.168.0.3
 
-サブネット上の最初のIPだから192.168.0.2のマシンがBitcoinを受け取ると推測するが？
+So, I would guess that 192.168.0.2 machine would receive the bitcoins because it is the first IP on the sub-net ?

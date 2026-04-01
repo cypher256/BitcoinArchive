@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: BioMike on August 19, 2010, 08:05:18 AM](https://bitcointalk.org/index.php?topic=867.msg10226#msg10226)
+> [Quote from: BioMike on August 19, 2010, 08:05:18 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-19-biomike-msg10226/)
 > wxWidgets自体は問題ではない。問題は使用されているバージョン（2.9）で、多くのディストロのパッケージ管理者が不安定と見なしている（wxWidgetsの開発者はそうではないと言っているが）。一方、私の知る限り、wxWidgetsはLinux上ではgtkを使ってすべてを描画しており、Bitcoin開発者がクロスプラットフォーム対応を容易にしている。
 
 wxWidgets 2.9は彼らの最初のUTF-8バージョンだ。我々はWindows含むすべてのプラットフォームでUTF-8を使用している。

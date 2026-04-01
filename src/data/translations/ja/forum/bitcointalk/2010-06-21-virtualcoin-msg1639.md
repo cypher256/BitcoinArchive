@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu 10.04でのBitcoin"
+title: "Re: Bitcoin in Ubuntu 10.04"
 date: 2010-06-21T13:28:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック149におけるvirtualcoinの文脈投稿。msg1653の前。"
+description: "Context post by virtualcoin in BitcoinTalk topic 149. before msg1653."
 isSatoshi: false
 threadId: "bt-bitcoin-in-ubuntu-10-04"
 tags: []
-translationStatus: complete
+translationStatus: pending
 ---
 
-ダサいとは思わないけどな。
-ボタンを右側に戻したければ、ググればやり方が出てくるよ。 Smiley
+I don't thinks it looks ugly.
+You can change the buttons back to the right side if you wish, just google for it. Smiley

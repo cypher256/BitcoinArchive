@@ -15,13 +15,16 @@ tags: []
 ---
 
 [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
-> Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM
-
-Forgot to say, I suspected the detect might not work on 64-bit AMD.  I found it hard to believe but AMD reports a different model number in 64-bit mode.
-
-Could you grep CPUID your debug.log and tell me what it says?  (and anyone else with 64-bit AMD)  And what AMD chip do you have?
-
-Do all AMDs that support 64-bit have the better SSE2 hardware also?
+> [Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM](#msg14997)
+> > That's nice, however the automatic 4way detection is not working on my Gentoo AMD 64 version client.
+> > 
+> > I still have to add the "-4way" switch.
+> 
+> Forgot to say, I suspected the detect might not work on 64-bit AMD.  I found it hard to believe but AMD reports a different model number in 64-bit mode.
+> 
+> Could you grep CPUID your debug.log and tell me what it says?  (and anyone else with 64-bit AMD)  And what AMD chip do you have?
+> 
+> Do all AMDs that support 64-bit have the better SSE2 hardware also?
 
 Code:$ grep -i cpuid debug.log 
 CPUID 444d4163 family 16, model 5, stepping 2, fUseSSE2=0

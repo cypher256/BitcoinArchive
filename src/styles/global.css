@@ -217,6 +217,26 @@ th {
   background: var(--color-border);
 }
 
+/* In-page anchor links */
+a[href^="#"] {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+a[href^="#"]:hover {
+  text-decoration-style: solid;
+}
+
+:target {
+  animation: highlight-fade 2s ease;
+}
+
+@keyframes highlight-fade {
+  from { background-color: rgba(180, 83, 9, 0.08); }
+  to   { background-color: transparent; }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   html { font-size: 15px; }
