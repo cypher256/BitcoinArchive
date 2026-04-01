@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-bitdns-and-generalizing-bitcoin"
 ---
 
-> [Quote from: Hal on December 10, 2010, 07:14:04 PM](#msg28938)
+[Quote from: Hal on December 10, 2010, 07:14:04 PM](#msg28938)
 > additional block chains would each create their own flavor of coins, which would trade with bitcoins on exchanges? These chain-specific coins would be used to reward miners on those chains, and to purchase some kinds of rights or privileges within the domain of that chain?
 
 Right, the exchange rate between domains and bitcoins would float.

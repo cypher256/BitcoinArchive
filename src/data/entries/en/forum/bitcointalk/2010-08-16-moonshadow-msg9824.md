@@ -14,7 +14,7 @@ threadId: "bt-checkpointing-the-block-chain"
 tags: []
 ---
 
-> [Quote from: mkrogh on August 16, 2010, 08:54:47 PM](#msg9822)
+[Quote from: mkrogh on August 16, 2010, 08:54:47 PM](#msg9822)
 > The software could just declare that there is a checkpoint 1000 blocks back. This is an individual checkpoint for each node, and the checkpoints would move forward every time a new block arrives. The checkpoint could never move backwards.
 > 
 > If a longer chain, predating the checkpoint arrived, the node would reject it.

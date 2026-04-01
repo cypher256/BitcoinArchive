@@ -18,7 +18,7 @@ threadId: "bt-warning-check-your-system-help-me"
 
 I don't understand, are you under the impression that the program sets the system clock?  It doesn't.
 
-> [Quote from: Cdecker on September 19, 2010, 08:14:08 PM](#msg13212)
+[Quote from: Cdecker on September 19, 2010, 08:14:08 PM](#msg13212)
 > We already have ways to synchronize (approximately) the clients, so why not make use of that?
 
 We use an internal offset based on the median of other nodes' times, but for security reasons we don't let them offset us by more than an hour.  If they indicate we're off by more than an hour, then we resort to alerting the user to fix their clock.

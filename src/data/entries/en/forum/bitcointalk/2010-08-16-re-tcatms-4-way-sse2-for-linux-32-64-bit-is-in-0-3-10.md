@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
 ---
 
-> [Quote from: jgarzik on August 16, 2010, 03:35:28 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-jgarzik-msg9665/)
+[Quote from: jgarzik on August 16, 2010, 03:35:28 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-jgarzik-msg9665/)
 > Code:cpu family : 6
 
 model  : 26

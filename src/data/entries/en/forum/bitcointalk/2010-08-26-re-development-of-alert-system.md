@@ -16,13 +16,15 @@ secondarySources:
 threadId: "bt-development-of-alert-system"
 ---
 
-> [Quote from: BioMike on August 25, 2010, 06:23:45 PM](#msg11162)
-> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)[Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand 
+[Quote from: BioMike on August 25, 2010, 06:23:45 PM](#msg11162)
+> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)
+> > [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)
+> > > So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand that he hands over his key (or get it from his computer) and shut down the complete network?
+> > > Or is that not possible? How far would <some goverment> get?
+> >
+> > This is what makes me think the people objecting don't know what they're talking about.  It can't "shut down the complete network".
+>
+> I've never objected this change/idea, just asking if this was possible and to what extent.
+> What's wrong with getting informed?
 
-that he hands over his key (or get it from his computer) and shut down the complete network?
-
-Or is that not possible? How far would <some goverment> get?
-This is what makes me think the people objecting don't know what they're talking about.  It can't "shut down the complete network". 
-I've never objected this change/idea, just asking if this was possible and to what extent.
-What's wrong with getting informed? 
 My apologies, your post was indeed a question not a statement.

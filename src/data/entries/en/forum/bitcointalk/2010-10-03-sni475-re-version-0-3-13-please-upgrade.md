@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-version-0-3-13-please-upgrade"
 ---
 
-> [Quote from: tcatm on October 03, 2010, 07:45:45 PM](#msg15111)
+[Quote from: tcatm on October 03, 2010, 07:45:45 PM](#msg15111)
 > 983 Mhash/s box.
 
 Seriously?  What hardware is that?

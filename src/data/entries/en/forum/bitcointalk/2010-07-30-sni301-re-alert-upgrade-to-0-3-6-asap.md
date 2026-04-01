@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-alert-upgrade-to-0-3-6-asap"
 ---
 
-> [Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
+[Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
 > So that last command should simply be
 
 **sudo apt-get install libboost1.37-dev**

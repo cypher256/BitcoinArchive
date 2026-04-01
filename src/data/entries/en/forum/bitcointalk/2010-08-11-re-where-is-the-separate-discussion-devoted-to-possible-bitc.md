@@ -21,7 +21,7 @@ I've thought about PoW on transactions many times, but usually I end up thinking
 
 A more general umbrella partial solution would be to implement the idea where an unlikely dropoff in blocks received is detected.  Then an attacker would still need a substantial portion of the network's power to benefit from a DoS attack.
 
-> [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](https://bitcointalk.org/index.php?topic=788.msg8761#msg8761)
+[Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](https://bitcointalk.org/index.php?topic=788.msg8761#msg8761)
 > Bitcoin's p2p network is subject to various kinds of denial of service attacks.
 
 There, I said it.

@@ -16,14 +16,14 @@ secondarySources:
 threadId: "bt-version-0-3-11-with-upgrade-alerts"
 ---
 
-> [Quote from: torservers on August 28, 2010, 01:00:37 PM](#msg11499)
+[Quote from: torservers on August 28, 2010, 01:00:37 PM](#msg11499)
 > The "About" dialog still shows 0.3.10.1 beta.
 
 What OS?  I ran the Windows and 64-bit Linux version and checked the about dialog.
 
 The Mac version is still 0.3.10.1.
 
-> [Quote from: pavelo on August 28, 2010, 07:36:07 AM](#msg11481)
+[Quote from: pavelo on August 28, 2010, 07:36:07 AM](#msg11481)
 > iirc, it is possible to specify -march on a per-function basis using some gcc __attribute__. That way, only the function in question would be optimized, and if the user doesn't specify -4way, everything else should be ok.
 
 I updated the first post to be more specific.  Only the -4way code is compiled this way.

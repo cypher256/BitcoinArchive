@@ -14,7 +14,7 @@ threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 tags: []
 ---
 
-> [Quote from: aceat64 on August 16, 2010, 12:37:54 AM](https://bitcointalk.org/index.php?topic=820.msg9613#msg9613)
+[Quote from: aceat64 on August 16, 2010, 12:37:54 AM](https://bitcointalk.org/index.php?topic=820.msg9613#msg9613)
 > I created a wiki page so we can keep track of the results: http://www.bitcoin.org/wiki/doku.php?id=4-way_sse2
 
 You might want to add columns for whether hyper-threading is enabled, number of physical cores and how many cores Bitcoin is using. Without 4way, I get very slightly better results when I have half of my virtual cores hashing. With 4way, I get significantly better performance when I have all my virtual cores enabled. I think I get about the same amount of hashes when hyper threading is turned off with or without 4way.

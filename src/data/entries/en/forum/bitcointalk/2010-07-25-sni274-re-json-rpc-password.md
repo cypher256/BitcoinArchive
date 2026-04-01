@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-json-rpc-password"
 ---
 
-> [Quote from: BitLex on July 25, 2010, 08:45:38 PM](https://bitcointalk.org/index.php?topic=461.msg5753#msg5753)
+[Quote from: BitLex on July 25, 2010, 08:45:38 PM](https://bitcointalk.org/index.php?topic=461.msg5753#msg5753)
 > i got some problems here too trying to get this run on PHP.
 
 so far i had no luck, neither the wiki-sample (jsonRPCClient trying to fopen([http://username:password@localhost:8332/](http://username:password@localhost:8332/))), nor my curl-sample (using setopt CURLOPT_HTTPAUTH, CURLAUTH_BASIC) seem to work.

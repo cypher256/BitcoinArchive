@@ -18,7 +18,7 @@ threadId: "bt-auto-backing-up-of-wallet-dat"
 
 I doubt there's an mmap(2) on Windows.  I'd rather call an existing file copy function than make and test my own.
 
-> [Quote from: nelisky on August 27, 2010, 01:21:09 AM](#msg11346)
+[Quote from: nelisky on August 27, 2010, 01:21:09 AM](#msg11346)
 > But if you are already using features from boost::filesystem you can use copy_file from that. I just think that, if not already required for something else, it's a tad overkill.
 
 Thanks.  I thought it would be in there somewhere.

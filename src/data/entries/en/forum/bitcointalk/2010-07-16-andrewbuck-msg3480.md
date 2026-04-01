@@ -14,7 +14,7 @@ threadId: "bt-source-code-documentation"
 tags: []
 ---
 
-> [Quote from: lachesis on July 15, 2010, 11:57:19 PM](#msg3329)
+[Quote from: lachesis on July 15, 2010, 11:57:19 PM](#msg3329)
 > I think that would be cool, but as always, the decision rests with Satoshi, the project lead.
 
 I didn't think this would be something people would object to.  Hopefully I hear definitively from Satoshi that it is OK.  I will probably start working on this tonight then (tonight in USA time).  Also, I saw another thread questioning how to send in patches; the stated answer was that we should e-mail them to Satoshi, is this still the preferred method?

@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-development-of-alert-system"
 ---
 
-> [Quote from: nelisky on August 25, 2010, 01:28:32 AM](https://bitcointalk.org/index.php?topic=898.msg11092#msg11092)
+[Quote from: nelisky on August 25, 2010, 01:28:32 AM](https://bitcointalk.org/index.php?topic=898.msg11092#msg11092)
 > So what kind of warning do admins get from bitcoind? Is there something we can grep from debug.log? Or will rpc calls raise some specific error? Is there a way to locally force this to happen, for unittesting services?
 
 getinfo has a new field that shows any alert messages or other errors that would be displayed on the status bar.
@@ -27,7 +27,7 @@ I added the switch "-testsafemode" for you.  SVN rev 145.
 
 This stuff is very new and may still be subject to change.
 
-> [Quote from: mizerydearia on August 25, 2010, 12:11:50 AM](https://bitcointalk.org/index.php?topic=898.msg11079#msg11079)
+[Quote from: mizerydearia on August 25, 2010, 12:11:50 AM](https://bitcointalk.org/index.php?topic=898.msg11079#msg11079)
 > I just discovered [http://www.bitcoin.org/wiki/doku.php?id=man_page](http://www.bitcoin.org/wiki/doku.php?id=man_page) and don't see any reference to -disablesafemode.  Perhaps it should be added!  Also others liek -4way should be added as well.
 
 Many switches are intentionally undocumented, like if their functionality is still under construction or I haven't settled on their name yet, or just test code not intended for release.

@@ -14,7 +14,7 @@ threadId: "bt-questions-about-addresses"
 tags: []
 ---
 
-> [Quote from: sirius-m on February 02, 2010, 12:34:08 PM](#msg203)
+[Quote from: sirius-m on February 02, 2010, 12:34:08 PM](#msg203)
 > Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM
 
 The connection won't get through at all if the port is not forwarded.

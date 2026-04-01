@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-always-pay-transaction-fee"
 ---
 
-> [Quote from: satoshi on September 08, 2010, 05:30:14 PM](#msg12237)
+[Quote from: satoshi on September 08, 2010, 05:30:14 PM](#msg12237)
 > The current threshold is 200KB per block, or about 1000 transactions per block.  I think it should be lowered to 50KB per block.  That would still be more than 100 times the average transactions per block.
 
 I implemented this change in SVN rev 157.

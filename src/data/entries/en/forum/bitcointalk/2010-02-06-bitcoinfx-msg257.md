@@ -14,7 +14,7 @@ threadId: ""
 tags: []
 ---
 
-> [Quote from: BlueSky on February 06, 2010, 01:26:39 PM](https://bitcointalk.org/index.php?topic=44.msg255#msg255)
+[Quote from: BlueSky on February 06, 2010, 01:26:39 PM](https://bitcointalk.org/index.php?topic=44.msg255#msg255)
 > ...Otherwise I would need to know the total amount of  in circulation and the amount of goods that can be purchased with it(this is a Austrian economist view of measuring the value I think?), just what is the amount in circulation? ...
 
 From the FAQ:

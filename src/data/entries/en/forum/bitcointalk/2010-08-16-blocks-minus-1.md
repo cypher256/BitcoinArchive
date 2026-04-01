@@ -25,8 +25,9 @@ The main benefit is that blocks will be equal to the block number of the current
 
 It would reduce the confusion we had here:
 
-> [Quote from: kencausey on August 15, 2010, 11:45:26 PM](https://bitcointalk.org/index.php?topic=823.msg9588#msg9588)
-> [Quote from: davidonpda on August 15, 2010, 11:31:37 PM](https://bitcointalk.org/index.php?topic=823.msg9580#msg9580)... It already is on block 74638. I assume that means that block is now a good one?
+[Quote from: kencausey on August 15, 2010, 11:45:26 PM](https://bitcointalk.org/index.php?topic=823.msg9588#msg9588)
+[Quote from: davidonpda on August 15, 2010, 11:31:37 PM](https://bitcointalk.org/index.php?topic=823.msg9580#msg9580)
+> ... It already is on block 74638. I assume that means that block is now a good one?
 
 I had some confusion on this myself and got clarification in #bitcoin-dev:
 

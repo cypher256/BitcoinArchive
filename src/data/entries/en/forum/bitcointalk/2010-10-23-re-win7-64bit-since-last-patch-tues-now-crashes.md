@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-win7-64bit-since-last-patch-tues-now-crashes"
 ---
 
-> [Quote from: Odin on October 22, 2010, 09:24:38 PM](#msg18105)
+[Quote from: Odin on October 22, 2010, 09:24:38 PM](#msg18105)
 >   Fault Module Name:   mingwm10.dll
 
 This is the important clue.  I believe it's saying it crashed in that.  Maybe there are other versions of it to try.  mingwm10.dll is just a simple placeholder thing that satisfies some callback requirement for multithreaded apps.

@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-command-line-and-json-rpc"
 ---
 
-> [Quote from: sirius-m on February 24, 2010, 06:17:35 PM](#msg502)
+[Quote from: sirius-m on February 24, 2010, 06:17:35 PM](#msg502)
 > This is strange... When I start Bitcoin as a daemon on my 64 bit Linux server, it eats up all the 250MB of remaining RAM, 700MB of swap and eventually crashes. On my 32 bit Ubuntu desktop, it works fine and stays at 15MB of memory usage. The server is running a 64 bit build of Bitcoin. Maybe there's something wrong with the build or something.
 
 sirius-m debugged this, it was 64-bit related.  

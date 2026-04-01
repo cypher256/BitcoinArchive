@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-website-and-software-translations"
 ---
 
-> [Quote from: SmokeTooMuch on July 13, 2010, 06:55:55 PM](https://bitcointalk.org/index.php?topic=151.msg2619#msg2619)
+[Quote from: SmokeTooMuch on July 13, 2010, 06:55:55 PM](https://bitcointalk.org/index.php?topic=151.msg2619#msg2619)
 > I recommend to remove the download links at the bottom of the main page.
 
 As you can see the links on the English page points to the new 0.3 release, but the other languages only contain links for the old 0.2 version.

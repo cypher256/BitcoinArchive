@@ -14,7 +14,7 @@ threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
 ---
 
-> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
+[Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
 > Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM
 
 Forgot to say, I suspected the detect might not work on 64-bit AMD.  I found it hard to believe but AMD reports a different model number in 64-bit mode.

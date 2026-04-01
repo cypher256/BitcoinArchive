@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-checkpointing-the-block-chain"
 ---
 
-> [Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](#msg9839)
+[Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](#msg9839)
 > How is the strength of the chain calculated?
 
 Total proof-of-work.

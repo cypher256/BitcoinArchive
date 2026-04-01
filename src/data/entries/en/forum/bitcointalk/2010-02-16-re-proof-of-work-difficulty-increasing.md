@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-proof-of-work-difficulty-increasing"
 ---
 
-> [Quote from: Suggester on February 16, 2010, 02:15:49 AM](https://bitcointalk.org/index.php?topic=43.msg361#msg361)
+[Quote from: Suggester on February 16, 2010, 02:15:49 AM](https://bitcointalk.org/index.php?topic=43.msg361#msg361)
 > Satoshi, I figured it will take my modern core 2 duo about 20 hours of nonstop work to create ฿50.00! With older PCs it will take forever. People like to feel that they "own" something as soon as possible, is there a way to make the generation more divisible? So say, instead of making ฿50 every 20 hours, make ฿5 every 2 hours? 
 
 I thought about that but there wasn't a practical way to do smaller increments.  The frequency of block generation is balanced between confirming transactions as fast as possible and the latency of the network.

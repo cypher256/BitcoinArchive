@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-bitcoin-address-collisions"
 ---
 
-> [Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](#msg450)
+[Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](#msg450)
 > Are generated bitcoins encrypted with whichever address is currently displayed in the main Bitcoin window?
 
 No, each generated transaction uses a new, single-use address.

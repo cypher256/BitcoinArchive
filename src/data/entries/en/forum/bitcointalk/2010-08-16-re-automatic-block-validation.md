@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/392/"
 ---
 
-> [Quote from: satoshi on August 16, 2010, 03:25:54 PM](https://bitcointalk.org/index.php?topic=832.msg9754#msg9754)
+[Quote from: satoshi on August 16, 2010, 03:25:54 PM](https://bitcointalk.org/index.php?topic=832.msg9754#msg9754)
 > It would probably be possible to initiate an AddToBlockIndex or Reorganize after the check, but it would require a lot more careful attention.  I probably should break out part of AddToBlockIndex that sets the new best block.  I'll probably end up doing that instead of the code below.
 
 This is what I ended up doing in SVN rev 139.

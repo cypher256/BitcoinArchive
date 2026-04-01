@@ -14,7 +14,7 @@ threadId: "bt-bitcoin-watchdog-service"
 tags: []
 ---
 
-> [Quote from: aceat64 on August 12, 2010, 05:02:43 PM](#msg8906)
+[Quote from: aceat64 on August 12, 2010, 05:02:43 PM](#msg8906)
 > Quote from: throughput on August 12, 2010, 03:28:43 PM
 
 How would an attacker connect to both sides during this split in order to spend the coins? And if the attacker can do it, the likelihood that one or more honest nodes could bridge the divide is pretty good.
@@ -24,7 +24,7 @@ Copy the wallet on another PC and use it anywhere!
 2. Why should network isolation only be used for double spending?
 Can't it be used to slow down block generation? Will that affect difficulty adjustment?
 
-> [Quote from: satoshi on August 12, 2010, 09:34:44 PM](#msg8922)
+[Quote from: satoshi on August 12, 2010, 09:34:44 PM](#msg8922)
 > True, there would probably be someone with a dial-up modem or satellite dish internet.  Rarer would be someone who has both that and the wired internet that has the outage, but if it's a big enough segment to matter, out of a million people there's bound to be a multi-home geek.
 
 But there will be no irc server to bootsrap from.

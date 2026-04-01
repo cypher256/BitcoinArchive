@@ -18,7 +18,7 @@ threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 
 If you haven't already, try aligning thash.  It might matter.  Couldn't hurt.
 
-> [Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
+[Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
 > Looks like we're triggering a compiler bug in the tree optimizer. Can you try to compile it -O0?
 
 No help from -O0, same error.

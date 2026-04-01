@@ -16,12 +16,12 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/"
 ---
 
-> [Quote from: creighto on November 19, 2010, 08:29:12 PM](#msg22896)
+[Quote from: creighto on November 19, 2010, 08:29:12 PM](#msg22896)
 > Perhaps in addition to the age priority rule recently implimented, there should be a minimum age rule without a transaction fee.  Said another way, perhaps a generation rule that says that a free transaction must be 3 blocks deep before it can be transfered again for free.  This will still allow real users to immediately spend new funds if they have to, while still permitting real users to reshuffle funds to suit their needs without an overhead cost.  I think that this would significantly inhibit the type of spamming attack that is currently underway.
 
 I'm doing something like that.  Priority is a more formalised version of the concept you're describing.
 
-> [Quote from: FreeMoney on November 19, 2010, 05:39:44 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-11-19-freemoney-msg22844/)
+[Quote from: FreeMoney on November 19, 2010, 05:39:44 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-11-19-freemoney-msg22844/)
 > As it stands now 3.15 has a lot of free transaction space and that space is given first to transactions with the highest [age]*[value]/[size] correct? Would it be reasonable to make some arbitrary portion of the free space require [age]*[value]/[size] > C ?
 
 Maybe set C so that a standard 1BTC transaction can get into the main free area on the next block. And a .1 can get in after waiting about 10 blocks. And make the area which allows [age]*[value]/[size] < C to let in about a dozen transactions or so.

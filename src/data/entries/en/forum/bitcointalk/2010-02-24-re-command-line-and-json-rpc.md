@@ -16,8 +16,9 @@ secondarySources:
 threadId: "bt-command-line-and-json-rpc"
 ---
 
-> [Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
-> [Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)On Linux it needs libgtk2.0-0 installed
+[Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
+[Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)
+> On Linux it needs libgtk2.0-0 installed
 
 Will this requirement be removed sometime? I'd rather not have to deal with GTK.
 How much "dealing with" does GTK actually require?  Is it just a matter of "sudo apt-get install libgtk2.0-0" and having some extra libraries sitting around?  GTK doesn't have to do anything, just be there for bitcoin to link to when it loads up, have the gtk-init-check call fail because no GUI present, then it's done.  

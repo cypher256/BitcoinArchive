@@ -18,7 +18,7 @@ threadId: "bt-on-irc-bootstrapping"
 
 Everybody needs to connect to the same IRC server and channel so they can find each other.
 
-> [Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
+[Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
 > You may want to leave Freenode in as a fallback server -- if his server doesn't work, use Freenode's.
 
 It might not be good if we suddenly rushed freenode with a ton of users all at once.

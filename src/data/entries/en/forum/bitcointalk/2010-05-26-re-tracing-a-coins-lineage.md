@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/108/"
 ---
 
-> [Quote from: Xunie on May 26, 2010, 12:50:04 AM](https://bitcointalk.org/index.php?topic=154.msg1242#msg1242)
+[Quote from: Xunie on May 26, 2010, 12:50:04 AM](https://bitcointalk.org/index.php?topic=154.msg1242#msg1242)
 > Can't we force a user to use a new address for receiving payments?
 
 Every time a payment is received display another Bitcoin address in the address bar. (only transactions via Bitcoin addresses, NOT IPs of course, since that'd be useless, right?)

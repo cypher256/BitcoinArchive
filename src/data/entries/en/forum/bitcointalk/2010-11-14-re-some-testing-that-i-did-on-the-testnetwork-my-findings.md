@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 ---
 
-> [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](#msg21899)
+[Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](#msg21899)
 > Of course, if the network is not being flooded and you're not overly concerned about the current transaction getting held up then it's probably worth preferring to use your 0 conf transactions so that you can "save" the higher priority coins for when the network **is** being flooded.
 
 You should use at least some priority in case a flood comes along before the next block.

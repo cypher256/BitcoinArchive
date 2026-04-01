@@ -14,7 +14,7 @@ threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
 ---
 
-> [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
+[Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
 > Forgot to say, I suspected the detect might not work on 64-bit AMD.  I found it hard to believe but AMD reports a different model number in 64-bit mode.
 > 
 > Could you grep CPUID your debug.log and tell me what it says?  (and anyone else with 64-bit AMD)  And what AMD chip do you have?

@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-new-icon-logo"
 ---
 
-> [Quote from: Sabunir on February 25, 2010, 01:47:56 AM](https://bitcointalk.org/index.php?topic=64.msg519#msg519)
+[Quote from: Sabunir on February 25, 2010, 01:47:56 AM](https://bitcointalk.org/index.php?topic=64.msg519#msg519)
 > I like them. Do they come in higher resolutions?
 
 Yes, the original is 546x531 pixels.

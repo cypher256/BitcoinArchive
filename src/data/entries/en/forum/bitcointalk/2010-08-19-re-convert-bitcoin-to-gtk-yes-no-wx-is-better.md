@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/400/"
 ---
 
-> [Quote from: BioMike on August 19, 2010, 08:05:18 AM](https://bitcointalk.org/index.php?topic=867.msg10226#msg10226)
+[Quote from: BioMike on August 19, 2010, 08:05:18 AM](https://bitcointalk.org/index.php?topic=867.msg10226#msg10226)
 > WxWidgets is not really a problem. My problem is the version that is used (2.9), which is considered unstable by many distro packagers (although the WxWidgets devs say it isn't). On the other side, as far as I know WxWidgets uses gtk under Linux for drawing the whole stuff and makes it for the bitcoins devs easy to make things cross platform.
 
 wxWidgets 2.9 is their first UTF-8 version.  We are UTF-8 on all platforms including Windows.

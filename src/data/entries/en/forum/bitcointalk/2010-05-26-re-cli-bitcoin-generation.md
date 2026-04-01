@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/109/"
 ---
 
-> [Quote from: molybdenum on May 22, 2010, 06:44:20 PM](https://bitcointalk.org/index.php?topic=145.msg1194#msg1194)
+[Quote from: molybdenum on May 22, 2010, 06:44:20 PM](https://bitcointalk.org/index.php?topic=145.msg1194#msg1194)
 > An optional parameter to specify the minimum number of blocks after that transaction (getallreceived 1 for current behavior, or just getallreceived, getallreceived 5 for the paranoid, getallreceived 0 for instant confirms)?
 
 Yeah, that actually is what it is.  getallreceived 0 should do what you want.  (now it's renamed to listreceivedbyaddress 0)  The default is 1 confirmation, but I think in reality most digital goods and services can be 0 confirmations.  Like you say, if you need more than 0 confirmations, you could show two numbers, unconfirmed and available balance, so they immediately see their transaction went through.

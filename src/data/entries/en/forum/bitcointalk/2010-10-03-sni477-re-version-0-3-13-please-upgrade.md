@@ -16,7 +16,7 @@ secondarySources:
 threadId: "bt-version-0-3-13-please-upgrade"
 ---
 
-> [Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
+[Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
 > ArtForz is already running with no fees, and he has 20-30% of the network's CPU power. The person who originally sent the broken transactions deleted his wallet, though, and the network has forgotten these historical transactions, so any transactions based on this won't confirm.
 
 Transactions aren't accepted or displayed as 0/unconfirmed until your node has a path of transactions back to the block chain.
@@ -25,12 +25,12 @@ Any transactions in your wallet also have bundled with them all unrecorded trans
 
 If a no-fee block has already been generated and hasn't helped, then I need to look at what's wrong.  It's a part of code that doesn't get much use.  They should be recorded in the wallets of everyone who has a transaction depending on them.
 
-> [Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
+[Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
 > The person who originally sent the broken transactions deleted his wallet
 
 Sigh... why delete a wallet instead of moving it aside and keeping the old copy just in case?  You should never delete a wallet.
 
-> [Quote from: tcatm on October 03, 2010, 08:10:47 PM](#msg15119)
+[Quote from: tcatm on October 03, 2010, 08:10:47 PM](#msg15119)
 > It's running. Should find a block within 3 hours.
 
 It may take a while to collect re-broadcast transactions.  It'll help if you can accept inbound connections so you'll be listening to more nodes.  Even if you find a block in 3 hours, keep it running continuously for a few days at least.
