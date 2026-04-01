@@ -4,11 +4,11 @@ date: 2010-06-03T11:24:49.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=151.msg1331#msg1331"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
+  - name: "DataWraith"
     slug: "d&#1161;atawraith"
-description: "BitcoinTalkトピック151におけるD&#1161;ataWraithのコンテキスト投稿。msg1600の前。"
+description: "BitcoinTalkトピック151におけるDataWraithのコンテキスト投稿。msg1600の前。"
 isSatoshi: false
 threadId: "bt-website-translations"
 tags: []

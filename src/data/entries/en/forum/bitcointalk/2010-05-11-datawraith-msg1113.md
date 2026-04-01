@@ -4,11 +4,11 @@ date: 2010-05-11T21:50:51.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=43.msg1113#msg1113"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
+  - name: "DataWraith"
     slug: "d&#1161;atawraith"
-description: "Context post by D&#1161;ataWraith in BitcoinTalk topic 43. before msg1323."
+description: "Context post by DataWraith in BitcoinTalk topic 43. before msg1323."
 isSatoshi: false
 threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []

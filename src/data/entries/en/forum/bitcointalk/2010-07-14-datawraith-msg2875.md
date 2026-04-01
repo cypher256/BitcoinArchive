@@ -1,14 +1,14 @@
 ---
-title: "Re: (quoted post by D&#1161;ataWraith)"
+title: "Re: (quoted post by DataWraith)"
 date: 2010-07-14T16:42:16.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=286.msg2875#msg2875"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
-    slug: "d--1161-atawraith"
-description: "Quoted post by D&#1161;ataWraith in BitcoinTalk topic 286."
+  - name: "DataWraith"
+    slug: "datawraith"
+description: "Quoted post by DataWraith in BitcoinTalk topic 286."
 isSatoshi: false
 threadId: "bt-scalability"
 tags: []

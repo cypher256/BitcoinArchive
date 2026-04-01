@@ -4,11 +4,11 @@ date: 2010-06-22T21:01:58.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1683#msg1683"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
+  - name: "DataWraith"
     slug: "d&#1161;atawraith"
-description: "BitcoinTalkトピック199におけるD&#1161;ataWraithのコンテキスト投稿。msg1686の前。"
+description: "BitcoinTalkトピック199におけるDataWraithのコンテキスト投稿。msg1686の前。"
 isSatoshi: false
 threadId: "bt-1-3-almost-ready"
 tags: []

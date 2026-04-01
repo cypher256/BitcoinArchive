@@ -1,14 +1,14 @@
 ---
-title: "Re:（D&#1161;ataWraithの引用投稿）"
+title: "Re:（DataWraithの引用投稿）"
 date: 2010-07-14T16:42:16.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=286.msg2875#msg2875"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
-    slug: "d--1161-atawraith"
-description: "BitcoinTalkトピック286におけるD&#1161;ataWraithの投稿。"
+  - name: "DataWraith"
+    slug: "datawraith"
+description: "BitcoinTalkトピック286におけるDataWraithの投稿。"
 isSatoshi: false
 threadId: "bt-scalability"
 tags: []

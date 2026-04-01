@@ -1,14 +1,14 @@
 ---
-title: "Re: (context post by D&#1161;ataWraith)"
+title: "Re: (context post by DataWraith)"
 date: 2010-07-16T11:27:46.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=360.msg3434#msg3434"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
+  - name: "DataWraith"
     slug: "d&#1161;atawraith"
-description: "Context post by D&#1161;ataWraith in BitcoinTalk topic 360. before msg3520."
+description: "Context post by DataWraith in BitcoinTalk topic 360. before msg3520."
 isSatoshi: false
 tags: []
 ---

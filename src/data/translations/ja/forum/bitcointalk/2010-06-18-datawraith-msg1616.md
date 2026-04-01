@@ -4,11 +4,11 @@ date: 2010-06-18T14:08:23.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=84.msg1616#msg1616"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
+  - name: "DataWraith"
     slug: "d&#1161;atawraith"
-description: "BitcoinTalkトピック84におけるD&#1161;ataWraithのコンテキスト投稿。msg1781の前。"
+description: "BitcoinTalkトピック84におけるDataWraithのコンテキスト投稿。msg1781の前。"
 isSatoshi: false
 threadId: "bt-on-irc-bootstrapping"
 tags: []
