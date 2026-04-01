@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=43.msg1113#msg1113"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "BitcoinTalkトピック43におけるDataWraithのコンテキスト投稿。msg1323の前。"
 isSatoshi: false
 threadId: "bt-proof-of-work-difficulty-increasing"

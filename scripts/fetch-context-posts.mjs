@@ -124,7 +124,7 @@ function parsePostsFromHtml(html) {
     // Author: <a href="...action=profile;u=..." title="...">USERNAME</a>
     const authorMatch = chunk.match(/action=profile;u=\d+[^>]*title="[^"]*"[^>]*>([^<]+)<\/a>/i)
       || chunk.match(/action=profile;u=\d+[^>]*>([^<]+)<\/a>/i);
-    const author = authorMatch ? authorMatch[1].trim() : 'Unknown';
+    const author = authorMatch ? authorMatch[1].trim().replace(/&#\d+;/g, '') : 'Unknown';
 
     // Date: appears after "on: " or in the headerandpost area
     // Format: "Month DD, YYYY, HH:MM:SS AM/PM"

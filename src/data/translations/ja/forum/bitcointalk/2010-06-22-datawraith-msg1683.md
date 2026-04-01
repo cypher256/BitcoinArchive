@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1683#msg1683"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "BitcoinTalkトピック199におけるDataWraithのコンテキスト投稿。msg1686の前。"
 isSatoshi: false
 threadId: "bt-1-3-almost-ready"

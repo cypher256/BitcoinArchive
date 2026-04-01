@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=30.msg1161#msg1161"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "BitcoinTalkトピック30におけるDataWraithのコンテキスト投稿。msg1169で引用。"
 isSatoshi: false
 tags: []

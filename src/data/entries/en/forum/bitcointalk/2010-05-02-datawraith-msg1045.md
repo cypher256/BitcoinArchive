@@ -1,14 +1,14 @@
 ---
-title: "Re: (quoted post by D&#1161;ataWraith)"
+title: "Re: (quoted post by DataWraith)"
 date: 2010-05-02T11:13:09.000Z
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=55.msg1045#msg1045"
-author: "D&#1161;ataWraith"
+author: "DataWraith"
 participants:
-  - name: "D&#1161;ataWraith"
-    slug: "d--1161-atawraith"
-description: "Quoted post by D&#1161;ataWraith in BitcoinTalk topic 55."
+  - name: "DataWraith"
+    slug: "datawraith"
+description: "Quoted post by DataWraith in BitcoinTalk topic 55."
 isSatoshi: false
 threadId: "bt-uri-scheme-for-bitcoin"
 tags: []

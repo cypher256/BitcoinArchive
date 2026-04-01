@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=360.msg3434#msg3434"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "BitcoinTalkトピック360におけるDataWraithのコンテキスト投稿。msg3520の前。"
 isSatoshi: false
 tags: []

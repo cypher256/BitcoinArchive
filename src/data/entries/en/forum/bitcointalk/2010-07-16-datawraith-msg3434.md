@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=360.msg3434#msg3434"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "Context post by DataWraith in BitcoinTalk topic 360. before msg3520."
 isSatoshi: false
 tags: []

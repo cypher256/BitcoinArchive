@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=199.msg1683#msg1683"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "Context post by DataWraith in BitcoinTalk topic 199. before msg1686."
 isSatoshi: false
 threadId: "bt-1-3-almost-ready"

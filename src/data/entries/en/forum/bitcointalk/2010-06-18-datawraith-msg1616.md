@@ -7,7 +7,7 @@ sourceUrl: "https://bitcointalk.org/index.php?topic=84.msg1616#msg1616"
 author: "DataWraith"
 participants:
   - name: "DataWraith"
-    slug: "d&#1161;atawraith"
+    slug: "datawraith"
 description: "Context post by DataWraith in BitcoinTalk topic 84. before msg1781."
 isSatoshi: false
 threadId: "bt-on-irc-bootstrapping"
