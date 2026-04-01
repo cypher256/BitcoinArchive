@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: mkrogh on August 06, 2010, 09:38:46 PM](https://bitcointalk.org/index.php?topic=723.msg7982#msg7982)
+[Quote from: mkrogh on August 06, 2010, 09:38:46 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-06-mkrogh-msg7982/)
 > creighto, I am only talking about verifying the absence of double spending. Of course, you can always receive a coin and just hope. That is clear.
 
 There is more to it than just hoping.  For starters, you could already have an existing business relationship, and trust built between two parties due to honest prior trading.  
