@@ -20,7 +20,8 @@ creighto：そのアイデアに同意する。数時間後には、ブロック
 
 <!-- tone-skip -->
 > [Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-knightmb-msg7303/)
-> [Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-gavin-andresen-msg7293/)あるいは分断が十分長く続いた場合（100ブロック以上）、短い方のチェーンで生成されたコインを含むトランザクションは、マージ時に無効になります。
+> [Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-gavin-andresen-msg7293/)
+> あるいは分断が十分長く続いた場合（100ブロック以上）、短い方のチェーンで生成されたコインを含むトランザクションは、マージ時に無効になります。
 
 興味深い情報です。つまり、二重支払いの問題以外は、ブロックチェーンが100ブロック程度（または16時間以上）分離しない限り、
 <!-- /tone-skip -->

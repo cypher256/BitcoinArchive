@@ -18,7 +18,8 @@ translationStatus: complete
 ---
 
 > [Quote from: jimbobway on August 25, 2010, 04:45:22 PM](#msg11153)
-> [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)@mizerydearia、引用ボタンの方が返信ボタンより見つけやすいと思います。
+> [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)
+> @mizerydearia、引用ボタンの方が返信ボタンより見つけやすいと思う。
 
 では、理論的にこれは<ある政府>がSatoshiを逮捕して鍵を引き渡すよう（またはコンピュータから取得して）要求し、ネットワーク全体をシャットダウンできる最初の制御システムですか？
 

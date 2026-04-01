@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: Cdecker on July 30, 2010, 06:31:48 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-07-30-cdecker-msg6688/)
+[Quote from: Cdecker on July 30, 2010, 06:31:48 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-30-cdecker-msg6688/)
 > openSuseとSLEのパッケージも作ってみる。Debianも可能だが、wx、boost、libdbのコンパイルはちょっと過剰に思える。手伝ってくれる人はいるだろうか？
 
 ナイトリービルドは素晴らしいアイデアだ。Build Serviceは自動SVNアップデートを行うのだろうか？ GUIのBitcoinのビルドを手伝ってくれる人はいるか（またはwxWidgetsチームの誰かを知っている人は？）
