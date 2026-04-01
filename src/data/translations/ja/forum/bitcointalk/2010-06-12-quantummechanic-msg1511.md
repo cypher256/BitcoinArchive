@@ -11,7 +11,7 @@ participants:
 description: "Context post by QuantumMechanic in BitcoinTalk topic 179. before msg1588."
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 I second that one.  My fear is that the transaction fee won't scale nicely.  Hopefully this is unfounded.

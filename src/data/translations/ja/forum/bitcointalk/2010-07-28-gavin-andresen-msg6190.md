@@ -1,5 +1,5 @@
 ---
-title: "Re: Having problems specifing -datadir"
+title: "Re: -datadirの指定で問題が発生"
 date: 2010-07-28T13:40:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 601. before msg6268."
+description: "BitcoinTalkトピック601におけるGavin Andresenの文脈投稿。msg6268の前。"
 isSatoshi: false
 threadId: "bt-having-problems-specifing-datadir"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Does it work if you specify the full path?  e.g. -datadir=/home/psyvenrix/datadir2  ?
+フルパスを指定すれば動くか？例：-datadir=/home/psyvenrix/datadir2

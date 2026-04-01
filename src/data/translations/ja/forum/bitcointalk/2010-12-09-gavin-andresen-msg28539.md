@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.18"
+title: "Re: バージョン0.3.18"
 date: 2010-12-09T14:51:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 2162. before msg28549."
+description: "BitcoinTalkトピック2162におけるGavin Andresenの文脈投稿。msg28549の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-18"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: chaord on December 09, 2010, 07:17:12 AM](https://bitcointalk.org/index.php?topic=2162.msg28448#msg28448)

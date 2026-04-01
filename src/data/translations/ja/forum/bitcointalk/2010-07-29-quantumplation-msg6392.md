@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Quantumplation)"
+title: "Re:（Quantumplationの文脈投稿）"
 date: 2010-07-29T14:20:44.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "Context post by Quantumplation in BitcoinTalk topic 615. before msg6512."
+description: "BitcoinTalkトピック615におけるQuantumplationの文脈投稿。msg6512の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Brre: Your client will relentlessly broadcast that transaction into infinity until it's accepted.  It's VERY persistent.
+Brre：あなたのクライアントはそのトランザクションを受け入れられるまで際限なくブロードキャストし続ける。非常にしつこい。
 
-A block just probably hasn't been solved in two hours.  The difficulty's up there, I know that.
+たぶんこの2時間でブロックが解決されていないだけだろう。難易度がかなり高くなっているのは分かっている。

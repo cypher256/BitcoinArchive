@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの文脈投稿）"
 date: 2010-09-19T15:19:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 1063. before msg13211."
+description: "BitcoinTalkトピック1063におけるギャビン・アンドレセンの文脈投稿。msg13211の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I agree with nelisky-- not a bug.  Here's what the unix cat command has to say about "":
+neliskyに同意する——バグではない。UNIXのcatコマンドが""についてこう言っている：
 Code:> cat ""
 cat: : No such file or directory

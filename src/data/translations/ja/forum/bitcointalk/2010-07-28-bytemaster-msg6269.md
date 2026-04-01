@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by bytemaster)"
+title: "Re:（bytemasterの文脈投稿）"
 date: 2010-07-28T20:59:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "bytemaster"
 participants:
   - name: "bytemaster"
     slug: "bytemaster"
-description: "Context post by bytemaster in BitcoinTalk topic 532. quoted by msg6306."
+description: "BitcoinTalkトピック532におけるbytemasterの文脈投稿。msg6306に引用。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I am convinced that bandwidth, disk space, and computation time necessary to distribute and "finalize" a transaction will be prohibitively expensive for micro-payments.  Consider for a second that the current banking industry is unable to provide a reasonable micropayment solution that does not involve depositing a reasonable sum and only allowing a withdraw after a reasonable sum has been accumulated.  
+トランザクションの配信と「確定」に必要な帯域幅、ディスク容量、計算時間は、マイクロペイメントには法外に高くつくと確信している。現在の銀行業界でさえ、合理的な額の入金を要求し合理的な額が蓄積した後でのみ出金を許可するもの以外に、合理的なマイクロペイメントソリューションを提供できていないことを考えてほしい。
 
-Besides, 10 minutes is too long to verify that payment is good.  It needs to be as fast as swiping a credit card is today.
+それに、10分は支払いの確認に長すぎる。今日のクレジットカードをスワイプするのと同じくらい速くなければならない。
 
-Thus we need bit-banks that allow instant transfers among members and peer banks.   Anyone can open a bit-bank but the system would, by necessity operate on some level of trust.  Transfers in and out of the banks and peer-to-peer would still be possible but will be more costly.   Thus, a bit bank could make money by enabling transfers cheaper and faster than the swarm with the added risk of trusting the bank.  A bank has to maintain trust to make money.
+したがって、メンバー間およびピア銀行間で即時転送を可能にするビット銀行が必要だ。誰でもビット銀行を開設できるが、システムは必然的にある程度の信頼に基づいて運用される。銀行間およびピアツーピアの入出金は引き続き可能だが、よりコストがかかる。つまり、ビット銀行はスウォームより安く速い転送を可能にすることで利益を上げられるが、銀行を信頼するリスクが伴う。銀行は利益を上げるために信頼を維持しなければならない。

@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by QuantumMechanic)"
+title: "Re:（QuantumMechanicのコンテキスト投稿）"
 date: 2010-06-05T20:02:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "Context post by QuantumMechanic in BitcoinTalk topic 165. before msg1595."
+description: "BitcoinTalkトピック165におけるQuantumMechanicのコンテキスト投稿。msg1595の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Are there any estimates on the average transaction fee once users' incentive to support the network via bitcoin generation is mostly dried up?  How does this scale with the number of users, the size of network, and the total transaction rate?
+bitcoin生成によるネットワーク支援のインセンティブがほぼ枯渇した後の、平均トランザクション手数料の推定値はあるだろうか？ これはユーザー数、ネットワークの規模、総トランザクション速度とどのようにスケールするのか？

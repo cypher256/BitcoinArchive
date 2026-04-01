@@ -8,22 +8,21 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 788. quoted by msg8804."
+description: "BitcoinTalkトピック788におけるGavin Andresenのコンテキスト投稿。msg8804に引用。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+BitcoinのP2Pネットワークはさまざまなサービス拒否攻撃を受ける可能性がある。
 
-Bitcoin's p2p network is subject to various kinds of denial of service attacks.
+はい、言った。
 
-There, I said it.
+修正方法について建設的な提案があるのか、それともできるからという理由で壊すのを楽しむタイプの人間なのか？
 
-Do you have constructive suggestions for how to fix it, or are you the kind of person who just enjoys breaking things because you can?
+頭の中で浮かんでいるアイデアで、うまくいくかもしれないしうまくいかないかもしれないもの：
 
-Ideas that have been bouncing around my head that may or may not work:
++ クライアント同士が、単位時間あたりいくつのトランザクションを受け入れるかを相互に伝える。クライアントがそれ以上送ってきたら（多少の誤差範囲内で）、切断する。一般的なユーザーの推定トランザクション数と現在のユーザー数の推定に基づいたデフォルト値をコンパイル時に設定する。
 
-+ have clients tell each other how many transactions per unit of time they're willing to accept.  If a client sends you more (within some fuzz factor), drop it.  Compile in a default that's based on estimated number of transactions for a typical user and estimate on the number of current users.
++ クライアント間の接続プロセスの一部としてある程度のプルーフ・オブ・ワークを要求する（「シビル」攻撃の防止に役立つ）。
 
-+ require some proof-of-work as part of the client-to-client connection process (helps prevent 'Sybil' attacks).
-
-This is an active area of research; see, for example: http://scholar.google.com/scholar?q=ddos+attacks+by+subverting+membership
+これは活発な研究分野だ。例えば次を参照：http://scholar.google.com/scholar?q=ddos+attacks+by+subverting+membership

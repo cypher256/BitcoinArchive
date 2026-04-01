@@ -1,5 +1,5 @@
 ---
-title: "Re: New icon/logo"
+title: "Re: 新しいアイコン/ロゴ"
 date: 2010-02-25T02:01:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 64. before msg561."
+description: "BitcoinTalkトピック64におけるSmokeTooMuchのコンテキスト投稿。msg561の前。"
 isSatoshi: false
 threadId: "bt-new-icon-logo"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I still dislike the currency symbol ... But at least the logos look good and clean.
+通貨記号はまだ気に入らないが…少なくともロゴの見た目は良くてすっきりしている。

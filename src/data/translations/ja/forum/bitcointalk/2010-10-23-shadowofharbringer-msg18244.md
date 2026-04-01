@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by ShadowOfHarbringer)"
+title: "Re:（ShadowOfHarbringerの文脈投稿）"
 date: 2010-10-23T18:33:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 1545. before msg18250."
+description: "BitcoinTalkトピック1545におけるShadowOfHarbringerの文脈投稿。msg18250の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: grondilu on October 23, 2010, 06:07:41 PM](https://bitcointalk.org/index.php?topic=1545.msg18237#msg18237)
-> I very much don't like this idea of a message.  Since it is not necessary to the protocol, I'm not sure if it would be easy to find a place where it really fits.  I'm not a programmer though.  I'd be curious to have Satoshi's thought on this.
+> メッセージというアイデアがとても気に入らない。プロトコルに必要ないので、本当にフィットする場所を見つけるのは簡単ではないと思う。ただしプログラマではないが。サトシの考えを聞きたい。
 
-Yeah, I'm curious of that too.
+ああ、自分もそれは気になる。

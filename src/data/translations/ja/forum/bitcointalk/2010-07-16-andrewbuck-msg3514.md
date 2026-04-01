@@ -1,5 +1,5 @@
 ---
-title: "Re: Source code documentation"
+title: "Re: ソースコードのドキュメント"
 date: 2010-07-16T15:52:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "Context post by AndrewBuck in BitcoinTalk topic 393. before msg3534."
+description: "BitcoinTalkトピック393におけるAndrewBuckのコンテキスト投稿。msg3534の前。"
 isSatoshi: false
 threadId: "bt-source-code-documentation"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-No problem, that is why I asked about documentation before I started writing it.  I still would like to document it though and maybe we can come to some system which you would find acceptable.  One possible way is that I just run Doxygen on my own code and just use the auto-generated docs without adding any descriptions, etc.  This would have no impact on the project and myself or anyone else could do this whenever but it limits the usefulness of the documentation.
+問題ない。だからこそドキュメントを書き始める前に確認した。それでもドキュメント化したいし、受け入れられるシステムを見つけられるかもしれない。一つの方法は、自分のコードに対してDoxygenを実行し、説明などを追加せずに自動生成されたドキュメントだけを使うことだ。これならプロジェクトに影響はないが、ドキュメントの有用性は制限される。
 
-A second, and perhaps more appealing method would be to utilize the fact that Doxygen does not require the added documentation to be in the same file as the source code it is documenting.  We could add a single file that contains the documentation blocks with links pointing to the function names.  Doxygen then combines this with the auto-generated info it collects from the source to produce the docs.
+2つ目の、おそらくより魅力的な方法は、Doxygenがドキュメントしているソースコードと同じファイルに追加ドキュメントを含める必要がないという事実を利用することだ。関数名へのリンクを持つドキュメントブロックを含む単一のファイルを追加できる。Doxygenはこれをソースから収集した自動生成情報と組み合わせてドキュメントを生成する。
 
-Finally, whether we use Doxygen or not, I would like to write a "man page" for the program documenting the command-line options it takes.  Where is the command line processed in the code?  I looked at main.cpp and didn't see it (in fact I couldn't even find the "main" function).
+最後に、Doxygenを使うかどうかに関係なく、プログラムのコマンドラインオプションを文書化する「manページ」を書きたい。コマンドラインはコードのどこで処理されているだろうか？ main.cppを見たが見つからなかった（実際、"main"関数すら見つからなかった）。
 
 -Buck

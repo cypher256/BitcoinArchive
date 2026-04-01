@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Watchdog Service"
+title: "Re: Bitcoin監視サービス"
 date: 2010-08-12T15:28:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,25 +8,24 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "Context post by throughput in BitcoinTalk topic 691. before msg8922."
+description: "BitcoinTalkトピック691におけるthroughputのコンテキスト投稿。msg8922の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-watchdog-service"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+間違いなく、各ノードにネットワーク全体のhpsメーターが必要だ。
 
-Definitively, we need some overall network hps meter in every node.
-
-And at last I've found that article:
+やっとあの記事を見つけた：
 http://www.informit.com/articles/article.aspx?p=1237179
 
-Network splits are easier to produce, and happen more often, than many users on this forum think.
-You don't really need to cut any cable, nor hack into ISP's router to plug that ISP off Internet.
-You don't need to hack his peers either. All you need is BGP router in any AS (and some unwary BGP peers).
-I have one  Grin
+ネットワーク分断は、このフォーラムの多くのユーザーが思っているよりも簡単に発生し、頻繁に起きている。
+ISPのルーターをハッキングしてそのISPをインターネットから切り離すためにケーブルを切ったり、ルーターをハックする必要は本当にない。
+ピアをハッキングする必要もない。必要なのは任意のASにあるBGPルーターだけだ（そして無警戒なBGPピアがいくつかあればいい）。
+私は持っている Grin
 
-So, it is possible to talk about a short (1 - 3 hours) and controlled network split.
-Not just split in half, but split into ASes. After an hour or three-four most of ISPs will recover, but that
-really depends on work hours. Weekend attack may have more prolonged effect.
-Perhaps in the future that will be fixed and no BGP router will be vulnerable, but
-anyway, nobody should count on Internet stability and persistent connectivity.
+だから、短時間（1〜3時間）で制御されたネットワーク分断について話すことは可能だ。
+半分に分断するだけではなく、AS単位で分断する。1時間か3〜4時間後にほとんどのISPは回復するが、
+それは営業時間に大きく依存する。週末の攻撃はより長引く効果をもたらす可能性がある。
+おそらく将来的にはこれが修正され、どのBGPルーターも脆弱でなくなるだろうが、
+いずれにせよ、インターネットの安定性と持続的な接続性を当てにすべきではない。

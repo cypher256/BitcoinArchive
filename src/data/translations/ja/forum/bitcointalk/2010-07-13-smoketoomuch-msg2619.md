@@ -1,5 +1,5 @@
 ---
-title: "Re: Website and software translations"
+title: "Re: ウェブサイトとソフトウェアの翻訳"
 date: 2010-07-13T18:55:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 151. quoted by msg3247."
+description: "BitcoinTalkトピック151におけるSmokeTooMuchのコンテキスト投稿。msg3247で引用。"
 isSatoshi: false
 threadId: "bt-website-translations"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I recommend to remove the download links at the bottom of the main page.
-As you can see the links on the English page points to the new 0.3 release, but the other languages only contain links for the old 0.2 version.
-There's a download box with the current releases on the right anyway, so why not remove the links from the translated pages.
+メインページ下部のダウンロードリンクを削除することを推奨する。
+ご覧の通り、英語ページのリンクは新しい0.3リリースを指しているが、他の言語には古い0.2バージョンのリンクしかない。
+右側に最新リリースのダウンロードボックスがあるのだから、翻訳ページからリンクを削除すればいいのではないか。

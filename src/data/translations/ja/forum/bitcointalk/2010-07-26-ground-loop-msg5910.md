@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Ground Loop)"
+title: "Re:（Ground Loopの文脈投稿）"
 date: 2010-07-26T18:03:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Context post by Ground Loop in BitcoinTalk topic 501. before msg5920."
+description: "BitcoinTalkトピック501におけるGround Loopの文脈投稿。msg5920の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I've thought about dialing BitCoin down to 7 active cores on my desktop machine, just to keep one free for general lightweight UI use.
+デスクトップマシンでBitCoinを7アクティブコアに下げて、一般的な軽量UI用に1つ空けておこうかと考えていた。

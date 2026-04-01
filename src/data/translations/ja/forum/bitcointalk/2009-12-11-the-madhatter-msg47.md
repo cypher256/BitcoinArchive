@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-11T04:59:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,23 +8,23 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. quoted by msg50."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg50で引用。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Okay, let me get registered on SF and get you my username. I haven't used SF in years so I'll have to familiarize myself. Will this give me access to the current branch you fellows are currently working on? (0.2)
+了解、SFに登録してユーザー名を伝える。もう何年もSFを使っていないので慣れ直す必要がある。これで君たちが現在作業しているブランチ（0.2）にアクセスできるようになるのか？
 
-I have been trying to think of the options that will be needed for the backend process. I wonder which would be better: a long set of command line switches or a configuration file. Hmm...
+バックエンドプロセスに必要なオプションについて考えていた。長いコマンドラインスイッチのセットと設定ファイル、どちらが良いだろうか。うーん…
 
-I have a lot of servers spread across the globe. If we can get to the point where we have a working backend process that will run on FreeBSD I can run always-on seeds.
+世界中にたくさんのサーバーを持っている。FreeBSDで動作するバックエンドプロセスが完成すれば、常時稼働のシードを動かせる。
 
-I really think that having the download package contain a daily seed snapshot will improve the bootstrapping. I have seen instances on new test installs here where the application will sit with 0 connections / 1 block. Upon inspecting the debug.log I find that the IRC server (freenode, I believe) claims I am already connected and refuses to let me seed the application. (Just an example).
+ダウンロードパッケージに日次のシードスナップショットを含めれば、ブートストラップが改善されると本当に思う。新規テストインストールで、アプリケーションが0接続/1ブロックのまま動かなくなるケースを見たことがある。debug.logを調べると、IRCサーバー（確かfreenode）が既に接続済みだと主張して、アプリケーションのシーディングを拒否していた。（一例にすぎないが。）
 
-I think that a simple network monitor plugin for Nagios would be helpful as well. Something that can emulate a connecting client, and retrieve a valid status code from the backend process. I have a lot of ideas. Smiley
+Nagios用のシンプルなネットワークモニタープラグインも有用だと思う。接続クライアントをエミュレートし、バックエンドプロセスから有効なステータスコードを取得できるものだ。アイデアはたくさんある。Smiley
 
-In any event, I would like to help. I have a lot of time and a project like this one is very exciting.
+いずれにしても、手伝いたい。時間は十分にあるし、こういうプロジェクトはとてもワクワクする。
 
-Thanks for letting me be a part of it. Smiley
+参加させてくれてありがとう。Smiley

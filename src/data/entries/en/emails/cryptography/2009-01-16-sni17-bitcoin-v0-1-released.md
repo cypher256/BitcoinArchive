@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-  - name: "Dustin D. Trammell"
+  - name: "Dustin Trammell"
     slug: "dustin-trammell"
 description: "Satoshi expresses confidence that some form of electronic currency will be in use within a decade, describing Bitcoin as the first attempt at a non-trust-based system."
 threadId: "bitcoin-v0-1-released"

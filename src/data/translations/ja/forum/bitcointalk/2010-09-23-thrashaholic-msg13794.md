@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by thrashaholic)"
+title: "Re:（thrashaholicの文脈投稿）"
 date: 2010-09-23T05:06:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,21 +8,21 @@ author: "thrashaholic"
 participants:
   - name: "thrashaholic"
     slug: "thrashaholic"
-description: "Context post by thrashaholic in BitcoinTalk topic 671. before msg13844."
+description: "BitcoinTalkトピック671におけるthrashaholicの文脈投稿。msg13844の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Babylon on September 23, 2010, 05:01:59 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-23-babylon-msg13789/)
 > [Quote from: mtgox on August 02, 2010, 01:23:12 PM](https://bitcointalk.org/index.php?topic=671.msg7004#msg7004)
-> > I think bitcoin poker will really establish the BTC.
+> > Bitcoinポーカーが本当にBTCを確立すると思う。
 > 
 > 
-> I disagree.  All you can get with bitcoins by playing poker is bitcoins.  Gambling is also nowhere near as big a market as porn and it does not really benefit as much from the possibility of micropayments.
+> 反対だ。ポーカーでビットコインを使って得られるのはビットコインだけだ。ギャンブルはポルノほど大きな市場ではないし、マイクロペイメントの可能性からそれほど恩恵を受けるわけでもない。
 > 
-> I think bitporn would be an excellent idea and if someone starts developing it I hope they will contact me.
+> bitpornは素晴らしいアイデアだと思うし、誰かが開発を始めるなら連絡してほしい。
 
-Why not replace SharingMatrix/MegaUpload/et. al with a (user friendly) bitcoin based file host, and get all the "free" porn sites (like adultbay, for instance) to use it instead. I'd actually pay for the increased bandwidth and concurrent downloads if I didn't have to risk my personal and CC details and those evil, evil automatic recurring payments.
+SharingMatrix/MegaUpload等を（ユーザーフレンドリーな）Bitcoinベースのファイルホストに置き換えて、「無料」のポルノサイト（例えばadultbay）にそれを使わせたらどうだ。個人情報やクレジットカードの詳細をリスクにさらしたり、あの悪質な自動定期課金を使わなくてすむなら、帯域幅の増加と同時ダウンロードにお金を払ってもいい。
 
-This way we can use porn (and music blogs) in a roundabout way.
+この方法なら、ポルノ（と音楽ブログ）を間接的に活用できる。

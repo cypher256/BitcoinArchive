@@ -1,5 +1,5 @@
 ---
-title: "Re: Flood attack 0.00000001 BC"
+title: "Re: フラッド攻撃 0.00000001 BC"
 date: 2010-08-10T10:13:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,18 +8,16 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "Context post by throughput in BitcoinTalk topic 287. before msg8810."
+description: "BitcoinTalkトピック287におけるthroughputのコンテキスト投稿。msg8810の前。"
 isSatoshi: false
 threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+つまり、Bitcoinネットワーク全体をDDoS攻撃する能力は、ネットワーク接続やノードの数ではなく、BTCの購買力によってのみ制限されるということか？
 
-Does that mean, that my abilities to DDoS the entire Bitcoin network are only limited by my BTC
-bying power? And not by the number of my network connections, nodes, etc?
+ところで、いつかネットワークをテストしないか？
+既知のアドレスのリストに小さなトランザクションを送信するプロセスを自動化するのは簡単だ。
+ネットワークを酷使して、影響を正確に把握しよう。
 
-BTW, let's test the network someday?
-It is trivial to automate the process of sending small transactions to the list of known addresses.
-Let's abuse the network and know the effect precisely.
-
-I suppose, we should caution the other users...
+他のユーザーに注意喚起すべきだと思うが...

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin x86 for Windows"
+title: "Re: Windows用Bitcoin x86"
 date: 2010-07-26T14:53:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "BitCoinPurse"
 participants:
   - name: "BitCoinPurse"
     slug: "bitcoinpurse"
-description: "Context post by BitCoinPurse in BitcoinTalk topic 572. before msg5978."
+description: "BitcoinTalkトピック572におけるBitCoinPurseの文脈投稿。msg5978の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-x86-for-windows"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-More than doubled my khash/sec from 800 to 1900.
+khash/sが800から1900に倍以上になった。
 
 AMD Phenon II X2 550

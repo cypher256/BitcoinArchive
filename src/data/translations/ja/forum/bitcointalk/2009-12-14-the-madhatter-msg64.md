@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-14T13:09:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg67."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg67の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Got it working on FreeBSD! I'll submit my work here soon.
+FreeBSDで動くようになった！ 近いうちにここに成果を投稿する。
 
 $gmake -f makefile.fbsd      
 g++ -c -O0 -Wno-invalid-offsetof -Wformat  -D__WXGTK__ -DNOPCH -DBUILD_FREEBSD -I"/usr/include" -I"/usr/local/include" -I"/usr/local/include/db47" -I"/usr/local/include/wx-2.8" -I"/usr/local/lib/wx/include/gtk2-ansi-release-2.8" -o headers.h.gch headers.h

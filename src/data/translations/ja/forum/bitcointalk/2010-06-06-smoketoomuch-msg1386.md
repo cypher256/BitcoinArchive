@@ -12,7 +12,7 @@ description: "Context post by SmokeTooMuch in BitcoinTalk topic 151. before msg1
 isSatoshi: false
 threadId: "bt-website-translations"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 lol!

@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-10T14:00:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,28 +8,28 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg50."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg50の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Most modern P2P software tries UPnP by default. You can (of course) disable it (usually) in the options.
+最近のP2PソフトウェアはほとんどがデフォルトでUPnPを試行する。もちろん、（通常は）オプションで無効にできる。
 
-Hmm. I had thought about that as well. Your first idea is probably best. That way you can run the server daemon "headless" and have your choice of a front end. (One of the front ends could be a PHP [or C++ CGI] program that runs on your favorite webserver).
+うーん、俺もそれについて考えていた。最初のアイデアがおそらく最善だろう。そうすればサーバーデーモンを「ヘッドレス」で動かし、フロントエンドを自由に選べる。（フロントエンドの一つは、好みのウェブサーバーで動くPHP [またはC++ CGI] プログラムにもできる）。
 
-This would also enable you to run the front end and back end on different machines. (Ex. headless on a linux server that has a static IP to make receiving payments easier [pay by ip mode] and a front end client for management that can be ran on windows/mac/or something else). Front ends can also be ran on clients with very low cpu power such as mobile phones. *nudge nudge* Wink
+これにより、フロントエンドとバックエンドを別々のマシンで実行することも可能になる。（例：静的IPを持つLinuxサーバーでヘッドレスで動かして受け取りを容易にし [IPモードでの支払い]、管理用のフロントエンドクライアントはWindows/Mac/その他で実行する）。フロントエンドは携帯電話のようなCPUパワーの低いクライアントでも実行できる。*nudge nudge* Wink
 
-One other thing I have thought of is the seeding. The app could be pre-seeded before downloading. You could prepare a new archive daily that is pre-seeded. That would do away with the IRC connection. (Or it could be used as a fallback, I suppose. I still haven't audited the IRC connection code. I am thinking of a few exploits but I don't want to mention them until I am sure they exist.) Pre-seeding would also cure the TOR+IRC problem. I know that people will want to run this system over I2P+TOR. Tongue
+もう一つ考えていることがある。シーディングだ。アプリはダウンロード前にプリシードしておくことができる。毎日プリシード済みの新しいアーカイブを準備できる。そうすればIRC接続は不要になる。（あるいはフォールバックとして使うこともできるだろう。IRC接続のコードはまだ監査していない。いくつかのエクスプロイトを思いついたが、実際に存在するか確認するまでは言及したくない。）プリシーディングはTOR+IRC問題も解決する。このシステムをI2P+TOR上で動かしたい人が出てくるのは分かっている。Tongue
 
-Also you could pre-seed the blocks so they won't have to be downloaded upon initial run. (Downloading 28,000 blocks on a slower ADSL takes forever I couldn't imagine how long it would take when there are millions of blocks -- a lifetime).
+また、ブロックもプリシードしておけば、初回起動時にダウンロードする必要がなくなる。（28,000ブロックを低速ADSLでダウンロードするのは永遠にかかる。数百万ブロックになったらどれほどの時間がかかるか想像もつかない――一生かかるだろう。）
 
-Can you give me CVS access or something? (If not, can I send you patches?) I'd like to help out. I am mostly a Linux/BSD guy and I would like to lend my expertise in those areas.
+CVSアクセスか何かをもらえないだろうか？（無理なら、パッチを送ることはできるか？）手伝いたい。俺は主にLinux/BSDの人間で、その分野の専門知識を提供したい。
 
 Cheers! Smiley
 
 [Quote from: satoshi on December 09, 2009, 06:45:10 PM](https://bitcointalk.org/index.php?topic=12.msg41#msg41)
-> I'm looking forward to trying UPnP.  Do most P2P clients typically have UPnP enabled by default?
+> UPnPを試すのが楽しみだ。ほとんどのP2Pクライアントは通常、UPnPをデフォルトで有効にしているのだろうか？
 > 
-> I'm still thinking about how best to structure the management interface.  Maybe command line commands to communicate with the background daemon to query transactions received and initiate sending transfers.  That would be more automation friendly.  Or what about an http interface on some port other than 80 to manage it with a browser?
+> 管理インターフェースの最適な構造をまだ考えている。バックグラウンドデーモンと通信して受信トランザクションの照会や送金の開始を行うコマンドラインコマンドだろうか。そちらの方が自動化しやすい。あるいは80番以外のポートでHTTPインターフェースを用意し、ブラウザで管理する方法はどうだろうか？

@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by XaviorPenguin)"
+title: "Re: （XaviorPenguinのコンテキスト投稿）"
 date: 2010-07-14T01:05:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "XaviorPenguin"
 participants:
   - name: "XaviorPenguin"
     slug: "xaviorpenguin"
-description: "Context post by XaviorPenguin in BitcoinTalk topic 295. before msg3350."
+description: "BitcoinTalkトピック295におけるXaviorPenguinのコンテキスト投稿。msg3350の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-You can have the 5 you gave me back.  I just wanted to see how this all works and all and hopefully, I will have some coins popping up every couple of days.  Smiley
+もらった5コインを返すよ。仕組みがどう動くか見てみたかっただけで、数日ごとにコインが出てくることを願っている。Smiley
 
-Thank you for running a great program/incentive!  I appreciate it!
+素晴らしいプログラム/インセンティブを運営してくれてありがとう！ 感謝する！

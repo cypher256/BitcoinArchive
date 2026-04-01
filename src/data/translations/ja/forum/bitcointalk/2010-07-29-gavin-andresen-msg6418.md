@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re:（Gavin Andresenの文脈投稿）"
 date: 2010-07-29T16:28:35.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 615. before msg6512."
+description: "BitcoinTalkトピック615におけるGavin Andresenの文脈投稿。msg6512の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Brre on July 29, 2010, 11:20:33 AM](https://bitcointalk.org/index.php?topic=615.msg6361#msg6361)
-> I did a transaction about 2 hours ago and it is staying at 0/unconfirmed, the recipient has no credit showing or even an unconfirmed line... The coins seems to disapeared in the void...
-> Should I wait is this just a transaction that is going to take exceptionally long?
+> 約2時間前にトランザクションを行ったが、0/未確認のままだ。受信者にもクレジットの表示や未確認の行すらない……コインが虚空に消えたようだ……
+> 待つべきか？これは異常に時間のかかるトランザクションなのだろうか？
 
-Are you still downloading the block chain?  If you don't already have all 70,000+ blocks in the block chain, then you transaction won't show up as confirmed until you catch up.
+まだブロックチェーンをダウンロード中ではないか？ブロックチェーンの70,000以上のブロックをすべて持っていなければ、追いつくまでトランザクションは確認済みとして表示されない。

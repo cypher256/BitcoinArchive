@@ -8,15 +8,14 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Context post by Ground Loop in BitcoinTalk topic 823. before msg9624."
+description: "BitcoinTalkトピック823におけるGround Loopのコンテキスト投稿。msg9624の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+影響についての質問：不正なブロックの後、不正なブロックチェーンを使ってトランザクションを送信した。
 
-Question about fallout:  I had a transaction that I submitted after the bad block, using the bad block chain.
+そのトランザクションの状態はどうなっているのか？
+見る限り、（更新済みの）送信側クライアントのウォレットは差し引かれた金額を表示している。
 
-What is the status of that transaction?
-From what I can tell, my (updated) sending client wallet shows the deducted amount.
-
-Will it get reincorporated into the fixed chain, and will the recipient be able to spend it?
+修正されたチェーンに再組み込みされ、受取人はそれを使用できるようになるのか？

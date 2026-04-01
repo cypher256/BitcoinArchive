@@ -1,5 +1,5 @@
 ---
-title: "Re: Command Line and JSON-RPC"
+title: "Re: コマンドラインとJSON-RPC"
 date: 2010-02-24T07:56:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 63. before msg509."
+description: "BitcoinTalkトピック63におけるThe Madhatterのコンテキスト投稿。msg509の前。"
 isSatoshi: false
 threadId: "bt-command-line-and-json-rpc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Why would you install them? Because you currently have to. I know the feeling. I run minimalist FreeBSD servers and to clutter them with X libraries is a pain.
+なぜインストールするかって？ 今のところそうしなければならないからだ。その気持ちは分かる。俺はミニマリストのFreeBSDサーバーを運用しているが、Xライブラリでごちゃごちゃにするのは面倒だ。
 
-However, installing them onto a X workstation is totally fine -- you usually have all of the correct dependancies already. Tongue
+しかし、Xワークステーションにインストールするのはまったく問題ない。通常、正しい依存関係がすでに揃っているからだ。Tongue

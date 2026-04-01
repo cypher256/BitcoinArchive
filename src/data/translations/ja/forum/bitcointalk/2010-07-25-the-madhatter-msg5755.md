@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-25T20:54:38.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 461. before msg5767."
+description: "BitcoinTalkトピック461におけるThe Madhatterの文脈投稿。msg5767の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Hmm.. shouldn't it be using digest auth instead of basic auth?
+うーん……basic認証ではなくdigest認証を使うべきではないか？
 
-I usually wrap everything into SSL or IPSec anyway, but digest auth might keep noobs from getting pwned so easily. Tongue
+私は普段すべてをSSLかIPSecで包んでいるが、digest認証なら初心者が簡単にやられるのを防げるかもしれない。Tongue

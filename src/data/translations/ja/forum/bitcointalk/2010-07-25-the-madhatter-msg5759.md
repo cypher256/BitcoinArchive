@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-25T21:05:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 461. before msg5769."
+description: "BitcoinTalkトピック461におけるThe Madhatterの文脈投稿。msg5769の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Hmm... I implemented digest auth into a custom webserver I wrote a decade ago. From what I remember, it was fairly easy. However, client support back then was rather shoddy. It has improved a lot since then. Smiley
+うーん……10年ほど前に自作のウェブサーバーにdigest認証を実装したことがある。記憶では、実装はかなり簡単だった。ただ当時のクライアントサポートはかなり貧弱だった。それ以来大幅に改善されている。Smiley
 
-Perhaps we could document a simple stunnel + bitcoin configuration on the wiki then? Under a section called "Securely using bitcoind from remote"?
+stunnel + bitcoinのシンプルな設定をwikiに文書化するのはどうだろう？「Securely using bitcoind from remote」というセクションで。
 
-Just offering my 2c as usual. Tongue
+いつものように2セントを提供するだけだ。Tongue

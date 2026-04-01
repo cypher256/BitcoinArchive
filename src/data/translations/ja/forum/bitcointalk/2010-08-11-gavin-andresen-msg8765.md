@@ -8,19 +8,18 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 788. before msg8804."
+description: "BitcoinTalkトピック788におけるGavin Andresenのコンテキスト投稿。msg8804の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
 [Quote from: davidonpda on August 11, 2010, 04:19:43 PM](https://bitcointalk.org/index.php?topic=788.msg8764#msg8764)
 > [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-11-gavin-andresen-msg8761/)
-> > + require some proof-of-work as part of the client-to-client connection process (helps prevent 'Sybil' attacks).
-> 
-> 
-> Isn't that a brilliant idea? Like hashcash? 
-> 
-> You would be required to hash the string of the transaction, with a proof of work, that would say, take 5 seconds to calculate on a modern PC. Checking the POW just like in bitcoin would be easy and very quick for the receiving machines, but would stop a flood attack of random data without the attacker having limitless CPU power.
+> > + クライアント間の接続プロセスの一部としてある程度のプルーフ・オブ・ワークを要求する（「シビル」攻撃の防止に役立つ）。
+>
+>
+> これは素晴らしいアイデアではないか？Hashcashのような？
+>
+> トランザクションの文字列をハッシュし、プルーフ・オブ・ワーク付きでなければならないようにする。例えば、最新のPCで計算に5秒かかるようにする。POWのチェックはBitcoinと同様に簡単で非常に速いが、攻撃者が無限のCPUパワーを持っていない限り、プルーフ・オブ・ワークなしのランダムデータによるフラッド攻撃を阻止できる。
 
-I was actually thinking of a minute or three of proof-of-work on initial connection, not when submitting a transaction, but requiring some proof-of-work for every transaction submitted into the network IS a very interesting idea!  Should be straightforward to implement, too (add a nonce and either a full or partial hash to the transaction)...
+実は初回接続時に1分から3分のプルーフ・オブ・ワークを考えていたのであって、トランザクション送信時ではないが、ネットワークに送信されるすべてのトランザクションに何らかのプルーフ・オブ・ワークを要求するのは非常に興味深いアイデアだ！実装も簡単なはずだ（トランザクションにnonceと完全または部分的なハッシュを追加する）...

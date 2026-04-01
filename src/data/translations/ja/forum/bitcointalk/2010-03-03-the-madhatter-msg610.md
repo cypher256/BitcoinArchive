@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by The Madhatter)"
+title: "Re:（The Madhatterのコンテキスト投稿）"
 date: 2010-03-03T02:25:22.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,20 +8,20 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 69. before msg614."
+description: "BitcoinTalkトピック69におけるThe Madhatterのコンテキスト投稿。msg614の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Don't forget to look at state money transmitting licenses. That's what killed Goldage. (They were one of the largest e-gold exchangers). They were unlicensed because that thought that digital gold was outside the jurisdiction (not legal tender) of the state/federal governments. The state laws were vague enough, and law enforcement was ignorant enough, that they were prosecuted by the state of New York.
+州の送金業者ライセンスも調べることを忘れるな。Goldageを潰したのはそれだ。（彼らはe-goldの最大手の交換業者の一つだった。）デジタルゴールドは州/連邦政府の管轄外（法定通貨ではない）と考えていたため、無許可で営業していた。州法は十分に曖昧で、法執行機関は十分に無知だったため、ニューヨーク州によって起訴された。
 
-(See: http://en.wikipedia.org/wiki/Goldage)
+（参照：http://en.wikipedia.org/wiki/Goldage）
 
-Lots of people speculate that they were prosecuted for political reasons and not for "legal" ones. The central banks (and therefore the governments under their economic debt rule) do not want competing currencies. This isn't because it is competition (e-gold was soooo small compared to the FRN paper game). They didn't want e-gold to open up people's mind to the idea of alternate currencies. That is a far bigger threat.
+多くの人が、彼らは「法的な」理由ではなく政治的な理由で起訴されたと推測している。中央銀行（そしてその経済的債務支配下にある政府）は競合通貨を望まない。競争だからではない（e-goldはFRN紙幣のゲームに比べれば非常に小さかった）。e-goldが人々に代替通貨というアイデアに目を開かせることを望まなかったのだ。それははるかに大きな脅威だ。
 
-Remember that a license is an act of privilege that can be revoked/regulated. I firmly believe that any action that you can purchase a license for is fundamentally lawful. (Ex: you can't buy a license to commit a crime. No "license to kill", Bond. Tongue).
+ライセンスとは取り消し/規制が可能な特権行為であることを覚えておいてくれ。ライセンスを購入できる行為は根本的に合法であると俺は確信している。（例：犯罪を犯すためのライセンスは買えない。「殺しのライセンス」はないのだ、ボンド。Tongue）
 
-It is possible to claim lawful excuse to operate unlicensed. (By pronouncement or claim by right of notary.. again, you need to know what you are doing.)
+無許可で営業する合法的な理由を主張することは可能だ。（宣言または公証権による主張によって…繰り返すが、何をしているか理解している必要がある。）
 
 Peace!

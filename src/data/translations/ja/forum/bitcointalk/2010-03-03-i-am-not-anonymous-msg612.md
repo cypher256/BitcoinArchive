@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by I-am-not-anonymous)"
+title: "Re:（I-am-not-anonymousのコンテキスト投稿）"
 date: 2010-03-03T03:48:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,27 +8,27 @@ author: "I-am-not-anonymous"
 participants:
   - name: "I-am-not-anonymous"
     slug: "i-am-not-anonymous"
-description: "Context post by I-am-not-anonymous in BitcoinTalk topic 69. before msg614."
+description: "BitcoinTalkトピック69におけるI-am-not-anonymousのコンテキスト投稿。msg614の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: ihrhase on March 03, 2010, 03:15:31 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-03-03-ihrhase-msg611/)
-> Remember NLS
+> NLSを忘れないでくれ
 > 
-> There are two types of law...
+> 法律には2種類ある…
 > 
-> The Law you can read, and the one the government chooses to apply to you...
+> 読める法律と、政府があなたに適用することを選ぶ法律だ…
 > 
-> Your Lawyer friends may be right, but so were joe stack's and he got prosecuted...
+> あなたの弁護士の友人は正しいかもしれないが、ジョー・スタックの弁護士もそうだった。それでも彼は起訴された…
 
-How encouraging...you've just told the poor fellow that even if he does everything right he could still go to jail--you're making him feel like an ethnic minority!
+励みになるね…全て正しくやっても投獄される可能性があると言っているわけだ。少数民族のような気分にさせてくれる！
 
-In most cases though, if a lawyer tells you you won't go to jail, you probably will not go to jail.  Newlibertstandard uses paypal, which already practices know-your-customer and he is operating in amounts less than $10,000 which is what the money laundering and tax cheat police sniff out for.  This means he is unlikely to be doing anything that is wrong OR anything that will attract the attention of Law Enforcement.
+しかしほとんどの場合、弁護士が投獄されないと言えば、おそらく投獄されない。NewLibertyStandardはPayPalを使っている。PayPalは既にKYC（顧客確認）を実施しており、1万ドル未満の金額で運営している。マネーロンダリングや脱税の取り締まりが嗅ぎ回る額だ。つまり、彼が違法なことをしている可能性も、法執行機関の注目を引く可能性も低い。
 
-However---
+しかし――
 
-Thinking ahead to bitcoin's future--money changing services that operate on a large scale and don't practice know-your customer would indeed be illegal and would thus have to operate within the onionverse, changing bitcoin to money services other than paypal (perhaps offshore based like pecunix).
+bitcoinの将来を考えると、大規模に運営してKYCを実施しない両替サービスは確かに違法となり、オニオンバース内で運営する必要があるだろう。bitcoinをPayPal以外の送金サービス（おそらくPecunixのようなオフショアベース）に両替することになる。
 
-Another idea would be for some future crypto-preneur to set up a Mom and Pop shop called "Grandpa Joe's envelopes stuffed with cash" and only accept bitcoin as payment.  lol.
+もう一つのアイデアは、将来の暗号起業家が「じいちゃんジョーの現金入り封筒」というような個人商店を立ち上げ、bitcoinのみを支払いとして受け付けることだ。笑。

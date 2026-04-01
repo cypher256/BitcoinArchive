@@ -8,14 +8,13 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 823. before msg9576."
+description: "BitcoinTalkトピック823におけるNewLibertyStandardのコンテキスト投稿。msg9576の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+この焦らしに耐えられない！Jr.メンバー以上で、非公式のSVN rev 134 Linux 64ビットビルドをコンパイル済みで共有してくれる人はいないだろうか？ええ、公式ビルドが数分後にリリースされることは分かっている。たいして重要ではない。
 
-I can't stand the suspense! Do any Jr. Members or higher happen to have an unofficial SVN rev 134 Linux 64-bit build compiled that they'd be willing to share? Yeah, I know the official build is about to be released in a few minutes. It's not terribly important.
+編集：サトシが先ほどコメントしたのでSVNバージョン番号を更新した。
 
-Edit: Updated the SVN version number as per satoshi's comment a moment ago.
-
-Ah, never mind. Since the SVN version was just updated and the Windows builds were just released, I'll wait. Embarrassed
+ああ、気にしないでくれ。SVNバージョンが更新されてWindowsビルドもリリースされたので、待つことにする。 Embarrassed

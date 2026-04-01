@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
 date: 2010-07-14T13:04:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 295. before msg3350."
+description: "BitcoinTalkトピック295におけるギャビン・アンドレセンのコンテキスト投稿。msg3350の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Thanks Xavier!
+Xavier、ありがとう！
 
-To everyone else:  the Faucet is now giving out bit-nickels; it just went under 500 BTC.  I've got just under 2,000 BTC left to refill it, but I think I'll start letting it drain a nickel-at-a-time and keep it above zero for as long as I can (refilling it to just under 500 if it gets near zero).
+皆に報告：Faucetは現在ビットニッケルを配布している。残高が500 BTC未満になった。補充用にまだ約2,000 BTCが残っているが、ニッケル単位でゆっくり減らし、できるだけ長くゼロ以上を維持しようと思う（ゼロに近づいたら500 BTC弱まで補充する）。

@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
 date: 2010-06-24T23:13:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 206. before msg1816."
+description: "BitcoinTalkトピック206におけるギャビン・アンドレセンのコンテキスト投稿。msg1816の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: virtualcoin on June 24, 2010, 10:07:30 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-24-virtualcoin-msg1755/)
-> Gavin, why don't you just block all served Bitcoin addresses?
-> Would it be easy to generate them automatically?
+> ギャビン、配布するBitcoinアドレスを全部ブロックすればいいんじゃないか？
+> 自動生成は簡単だろうか？
 
-It is easy to generate them automatically (it is easy to write code that asks the Bitcoin program to generate and return a new address).
+自動生成は簡単だ（Bitcoinプログラムに新しいアドレスを生成して返すよう要求するコードを書くのは簡単だ）。

@@ -1,5 +1,5 @@
 ---
-title: "Re: auto backing up of wallet.dat"
+title: "Re: wallet.datの自動バックアップ"
 date: 2010-08-25T11:11:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,10 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "Context post by mizerydearia in BitcoinTalk topic 921. before msg11228."
+description: "BitcoinTalkトピック921におけるmizerydeariaのコンテキスト投稿。msg11228の前。"
 isSatoshi: false
 threadId: "bt-auto-backing-up-of-wallet-dat"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
-http://bitcointalk.org/index.php?topic=873.msg10728#msg10728 is somewhat related
+http://bitcointalk.org/index.php?topic=873.msg10728#msg10728 がやや関連している。

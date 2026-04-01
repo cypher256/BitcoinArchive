@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by MoonShadow)"
+title: "Re:（MoonShadowの文脈投稿）"
 date: 2010-08-03T20:01:22.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Context post by MoonShadow in BitcoinTalk topic 661. before msg7356."
+description: "BitcoinTalkトピック661におけるMoonShadowの文脈投稿。msg7356の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: throughput on August 03, 2010, 01:33:08 PM](https://bitcointalk.org/index.php?topic=661.msg7230#msg7230)

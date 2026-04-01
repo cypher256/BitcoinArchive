@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin minting is thermodynamically perverse"
+title: "Re: Bitcoinの鋳造は熱力学的に逆効果"
 date: 2010-08-09T19:12:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,16 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Context post by MoonShadow in BitcoinTalk topic 721. before msg8431."
+description: "BitcoinTalkトピック721におけるMoonShadowのコンテキスト投稿。msg8431の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+使われる電力は無駄ではない。それは単にオーナーがこのプロジェクトに費やす意思のあるものだ。それでも「廃熱」として利用することさえ可能だ。私は電気技師を職業としており、何年も前に開放型駐車場内の断熱されたスプリンクラー配管に「ヒートトレース」ネットワークを設置しているときに、次のようなアイデアを思いついた。
 
-The power used is not wasteful.  It is simply what the owner is willing to commit to the project.  Even so, it may be used even as "waste heat".  I am an electritian by trade, and years ago I had the following idea form, while installing a 'heat trace' network on insulated sprinkler lines inside an open air parking garage.
+「ヒートトレース」はかなり高価なケーブルで、テープで貼り付けた配管の長さに沿って低強度の電気熱を発生させる連続抵抗コアを持っている。その後、断熱材がこのアセンブリの周りに巻かれる。最良かつ最も効率的なシステムは温度反応型コアを持っている。つまり、ケーブル自体がどの長さでも凍結点に近づくほど、コア全体の抵抗が低くなり、より冷たく断熱の弱い部分で発熱量が増加する。
 
-The 'heat trace' is a fairly expensive cable that has a continuous resistive core to produce low intensity electric heat along the length of the pipe that it's taped onto.  Insulation is then wrapped around this assembly.  The best, and most efficient, systems have a temp reactive core; so that the closer to the freezing point that the cable itself becomes at any given length, the lower the resistance across the core becomes, resulting in an increase in heat output along the colder and less well insulated sections.  
+当時、私は「Condor」と呼ばれる初期の分散コンピューティングに触れていた。これは単一プロセスをネットワーク上の他のコンピュータにエクスポートし、そのディスクI/Oをネットワーク経由でマスターサーバーに転送するもので、プロセス側は違いを認識できない。そのとき、フラットネットワークケーブル上に配線された小さな「ワンチップコンピュータ」が、Bitcoinが必要とするのとまったく同じ方法で数値計算を行いながら、局所的な温度感応で配管を凍結以上に保つのと同じ機能を効果的に実行できるだろうと考えた。このようなアイデアでは、配管に沿って許容できない数の電源ポイントを必要としないためにかなりの電力を許容するネットワークが必要だが、非常に高い（または非常に低い）緯度にある企業にとって、そのようなシステムの有用性を想像してほしい。
 
-At the time, I was playing with an early form of distributed computing called "Condor", which allowed single processes to be exported to other computers upon a network and their disk I/O shipped back across the network to a master server without the process being able to tell the difference.  I thought then that a small "computer on a chip" wired upon a flat network cable would be able to effectively perform the same functions of keeping the pipes above freezing with local temp sensitivity while also crunching numbers in exactly the same way that bitcoin requires.  Such an idea would require a network that permited quite a bit of power in order to not need an unacceptable number of power points along the pipe, but imagine the usefulness of such a system for companies that have such needs in very high (or very low) latitudes.
-
-What if such a system were retrofitted onto the Alaskan Oil Pipeline, for example, one mile at a time?
+例えば、このようなシステムをアラスカ石油パイプラインに1マイルずつ後付けしたらどうなるだろうか？

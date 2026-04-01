@@ -8,13 +8,12 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Context post by MoonShadow in BitcoinTalk topic 760. before msg8413."
+description: "BitcoinTalkトピック760におけるMoonShadowのコンテキスト投稿。msg8413の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
 [Quote from: davidonpda on August 09, 2010, 08:07:26 PM](https://bitcointalk.org/index.php?topic=760.msg8410#msg8410)
-> The problem with the time stamps, is a unix time stamp as a 32 bit integer WILL overflow in 2038. I am a programmer, but you can find more info on it by googling unix time problem or 2038
+> タイムスタンプの問題は、32ビット整数としてのunixタイムスタンプが2038年にオーバーフローすることだ。プログラマーだが、「unix time problem」や「2038」でググればもっと情報が見つかる。
 
-I understand the Y2038 problem from a layman's perspective.  My point was that, I doubted that a Y2038 problem exists within the structure of bitcoin.  Since the timestamp is relative only to a particular position within the blockchain, there is no reason that a client should require an accurate timestamp within the block.  And then, what would that be?  GMT?  I'm pretty sure that my client is doing fine with local time.  If that could be getting any successful blocks rejected, let me know, please.
+素人の観点からY2038問題は理解している。私が言いたかったのは、Bitcoinの構造内にはY2038問題は存在しないのではないかということだ。タイムスタンプはブロックチェーン内の特定の位置にのみ関連するので、クライアントがブロック内に正確なタイムスタンプを持つ必要はないはずだ。それに、それは何だろう？GMT？自分のクライアントはローカル時間で問題なく動作していると思う。もしそれが生成したブロックの拒否につながるなら、教えてほしい。

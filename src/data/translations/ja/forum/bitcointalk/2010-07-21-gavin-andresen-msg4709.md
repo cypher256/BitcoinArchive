@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-21T12:11:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,24 +8,23 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg4775."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg4775の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I think there's no such thing a a "typical" settings file on Linux!
+Linuxには「典型的な」設定ファイルというものはないと思う！
 
-I just did a quick survey of 20 .conf files in /etc on my debian system, and found:
- 1 file used "key value"
- 5 used "key=value"  (actually, a couple were  "key = value", allowing whitespace around the "=")
- 14 did their own thing.
+自分のDebianシステムの/etcにある20個の.confファイルを手短に調べてみたところ：
+ 1ファイルは"key value"を使用
+ 5ファイルは"key=value"を使用（実際にはいくつかは"key = value"で、"="の前後にスペースを許容）
+ 14ファイルは独自の方式
 
-The 14 that did their own thing were all over the map; from one-value-per-line to "key:value" to full-blown XML.  # is
-the universal comment character in the Linux world.
+独自の方式の14ファイルは実に様々で、1行1値から"key:value"、本格的なXMLまであった。#はLinux世界における共通のコメント文字だ。
 
-My vote would be for:
+私の推しは：
 
 # comment
 key1=value1

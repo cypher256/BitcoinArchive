@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.18"
+title: "Re: バージョン0.3.18"
 date: 2010-12-09T13:51:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 2162. before msg28549."
+description: "BitcoinTalkトピック2162におけるShadowOfHarbringerの文脈投稿。msg28549の前。"
 isSatoshi: false
 threadId: "bt-version-0-3-18"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 Well I spport Satoshi completely in this matter.

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC method idea: list transactions newer than a given txid"
+title: "Re: JSON-RPCメソッドのアイデア：指定したtxidより新しい取引をリスト表示"
 date: 2010-12-08T20:41:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "mikegogulski"
 participants:
   - name: "mikegogulski"
     slug: "mikegogulski"
-description: "Context post by mikegogulski in BitcoinTalk topic 2151. before msg28292."
+description: "BitcoinTalkトピック2151におけるmikegogulskiの文脈投稿。msg28292の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 I can see the motivation for davux's request. In developing the e-commerce plugins I've released, I've wondered about the viability long term of using a "dump" method against the wallet, since over time the data returned is just going to grow and grow.

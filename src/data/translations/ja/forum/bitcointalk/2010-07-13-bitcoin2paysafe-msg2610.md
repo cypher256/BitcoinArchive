@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by bitcoin2paysafe)"
+title: "Re: （bitcoin2paysafeのコンテキスト投稿）"
 date: 2010-07-13T18:37:54.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "bitcoin2paysafe"
 participants:
   - name: "bitcoin2paysafe"
     slug: "bitcoin2paysafe"
-description: "Context post by bitcoin2paysafe in BitcoinTalk topic 323. before msg2867."
+description: "BitcoinTalkトピック323におけるbitcoin2paysafeのコンテキスト投稿。msg2867の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Maybe, the hdd is full?
+HDDが一杯なんじゃないか？

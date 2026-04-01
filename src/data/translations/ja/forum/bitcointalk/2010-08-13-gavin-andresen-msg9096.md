@@ -8,18 +8,17 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 807. before msg9134."
+description: "BitcoinTalkトピック807におけるGavin Andresenのコンテキスト投稿。msg9134の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
 [Quote from: jgarzik on August 13, 2010, 08:13:30 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-13-jgarzik-msg9090/)
-> What happens when we desire to return additional information, beyond tx-id?
-> 
-> For the sake of future compatibility, it seems like the flag should present a choice between returning (a) just the current 'sent', or (b) a JSON map containing tx-id, and perhaps other things.
+> tx-id以外の追加情報を返したい場合はどうなるのか？
+>
+> 将来の互換性のために、フラグは(a)現在の'sent'のみを返すか、(b)tx-idやその他のものを含むJSONマップを返すかの選択を提示すべきだと思う。
 
-A 'gettransaction tx_id' API call is on my short list.
+'gettransaction tx_id' APIコールは私のショートリストに入っている。
 
-What do other folks think; should sendtoaddress .... true   return just the tx_id, and you have to make another API call to get details if you need them?
-Or should it return an Array?
+他の皆さんはどう思うか。sendtoaddress .... true はtx_idだけを返し、詳細が必要なら別のAPIコールを行う方式にすべきか？
+それともArrayを返すべきか？

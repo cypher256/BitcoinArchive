@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by RogerRabbit)"
+title: "Re:（RogerRabbitのコンテキスト投稿）"
 date: 2010-01-16T14:27:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "RogerRabbit"
 participants:
   - name: "RogerRabbit"
     slug: "rogerrabbit"
-description: "Context post by RogerRabbit in BitcoinTalk topic 21. before msg112."
+description: "BitcoinTalkトピック21におけるRogerRabbitのコンテキスト投稿。msg112の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-What exactly does the number of connections do for me? Do I generate more coins with more connections, or is it equivalent no matter what?
+接続数は具体的に何の役に立つのだろうか？ 接続数が多いとコインの生成が増えるのか、それとも接続数に関係なく同じなのか？
 
-It seems that from time to time, Tor gets tied up and can go for a few hours with 3 or 4 connections. Then, when I restart bitcoin or restart Tor to refresh my connections, I can get 7,8, or even more (9 currently).
-I haven't really been able to tell if coins generate slower or not with less connections, but I was curious if it does correlate. If not, how exactly will having more connections help me out compared to less?
+時々Torが詰まって、3～4接続のまま数時間続くことがある。それからbitcoinを再起動するかTorを再起動して接続をリフレッシュすると、7、8、あるいはそれ以上（現在9）になる。
+接続数が少ないとコインの生成が遅くなるかどうかはよく分からなかったが、相関があるのか気になった。もしないなら、接続が多いことは少ない場合と比べて具体的にどう役立つのだろうか？

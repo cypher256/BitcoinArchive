@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Quantumplation)"
+title: "Re: （Quantumplationのコンテキスト投稿）"
 date: 2010-07-16T14:14:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "Context post by Quantumplation in BitcoinTalk topic 364. before msg3559."
+description: "BitcoinTalkトピック364におけるQuantumplationのコンテキスト投稿。msg3559の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: martin on July 16, 2010, 02:09:09 PM](https://bitcointalk.org/index.php?topic=364.msg3476#msg3476)
-> It is, I hope that ultimately this is just a proof of concept, and once it's shown to work it can be integrated into the client (using the same port and URLs).
+> そう、最終的にはこれは概念実証に過ぎないことを願っている。うまくいくことが示されれば、クライアントに統合できる（同じポートとURLを使って）。
 
-*nods*  It's a good initiative, and ANY development in the interest of bitcoins right now is good development.
+*うなずく* 良い取り組みだし、今のBitcoinにとってはどんな開発も良い開発だ。

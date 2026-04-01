@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by NewLibertyStandard)"
+title: "Re:（NewLibertyStandardのコンテキスト投稿）"
 date: 2010-02-22T19:33:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 61. before msg433."
+description: "BitcoinTalkトピック61におけるNewLibertyStandardのコンテキスト投稿。msg433の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-No problem here. Other clients just happened to generate those blocks before you.
+問題ない。他のクライアントがたまたまあなたより先にそれらのブロックを生成しただけだ。

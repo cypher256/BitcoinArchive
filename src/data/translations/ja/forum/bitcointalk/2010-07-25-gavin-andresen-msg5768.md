@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-25T21:38:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. quoted by msg5771."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg5771に引用。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: lachesis on July 25, 2010, 07:52:35 PM](https://bitcointalk.org/index.php?topic=461.msg5738#msg5738)

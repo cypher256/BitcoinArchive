@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by The Madhatter)"
+title: "Re:（The Madhatterのコンテキスト投稿）"
 date: 2010-05-06T10:09:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,19 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 125. before msg1149."
+description: "BitcoinTalkトピック125におけるThe Madhatterのコンテキスト投稿。msg1149の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-We should bundle a snapshot of the block chain with each release of the Bitcoin software to save the user from having to download the entire chain upon a new install.
+Bitcoinソフトウェアの各リリースにブロックチェーンのスナップショットを同梱して、新規インストール時にチェーン全体をダウンロードする必要をなくすべきだ。
 
-In terms of trust: The user is already trusting bitcoin.org's download to be valid. Combining the zip/exe installer with a snapshot of the block chain is not a big deal in my opinion. They can publish hashes and signatures to ensure file integrity, etc.
+信頼の面では：ユーザーはすでにbitcoin.orgからのダウンロードが正当であると信頼している。zip/exeインストーラーにブロックチェーンのスナップショットを組み合わせることは、俺の意見では大したことではない。ファイルの整合性を確保するためにハッシュと署名を公開できる。
 
-Even in a worst case scenario where the block chain snapshot was compromised nothing bad will happen. The longest block chain always wins. The client would download a new copy from the P2P network. (Besides, if the block chain was compromised we have bigger problems such as the software itself being trojaned, but this is another topic).
+最悪のシナリオでブロックチェーンのスナップショットが侵害されたとしても、悪いことは起きない。最長のブロックチェーンが常に勝つ。クライアントはP2Pネットワークから新しいコピーをダウンロードするだろう。（そもそも、ブロックチェーンが侵害されたなら、ソフトウェア自体がトロイの木馬化されているなど、もっと大きな問題があるが、それは別の話だ。）
 
-It's ++good!
+++good!
 
 [Quote from: davidonpda on May 03, 2010, 02:40:35 PM](https://bitcointalk.org/index.php?topic=125.msg1055#msg1055)
-> 34 MB... on a fast DSL plan, that should take a couple of minutes. Not 3 hours....
+> 34 MB…高速DSLプランなら数分で済むはずだ。3時間ではない…

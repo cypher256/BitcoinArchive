@@ -1,5 +1,5 @@
 ---
-title: "Re: Website and software translations"
+title: "Re: ウェブサイトとソフトウェアの翻訳"
 date: 2010-05-24T21:04:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 151. before msg1259."
+description: "BitcoinTalkトピック151におけるSmokeTooMuchのコンテキスト投稿。msg1259の前。"
 isSatoshi: false
 threadId: "bt-website-translations"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-In my opinion your translation is fine, DataWraith.
+俺の意見では、DataWraith、翻訳は良い出来だ。
 
-Just two things:
-1. I think the "f" in Sourceforge should be uppercase. At least that`s what wikipedia tells me.
-2. It sounds better when you write it like this:
-Abh�ngig davon, wieviel CPU-Zeit **Sie im Leerlauf** beitragen k�nnen, kann es einige Tage dauern bis die ersten M�nzen erzeugt werden - haben Sie also bitte etwas Geduld.
-(the &endash; doesn`t get resolved correctly, you better check that again or replace it with a normal comma)
+2点だけ：
+1. SourceforgeのfはSourceForgeと大文字にすべきだと思う。少なくともWikipediaではそうなっている。
+2. こう書いた方が自然だ：
+Abhängig davon, wieviel CPU-Zeit **Sie im Leerlauf** beitragen können, kann es einige Tage dauern bis die ersten Münzen erzeugt werden - haben Sie also bitte etwas Geduld.
+（&endash;が正しく解決されていない。再確認するか、通常のカンマに置き換えた方がいい）

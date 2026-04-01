@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-13T06:50:05.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg62."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg62の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-One quick question about "natural deflation" (as I call it). I have noticed that it is possible to spend to old addresses that no longer work. In essence the coins can not be claimed. Wouldn't there be a natural deflation effect because of this? I mean if the coins max out at 21,000,000 wouldn't the number of coins slowly work backwards due to payment errors?
+「自然デフレーション」（俺はそう呼んでいる）について一つ質問がある。もう機能していない古いアドレスに送金できることに気づいた。要するに、そのコインは誰も請求できない。これによって自然なデフレ効果が生じないだろうか？ つまり、コインの上限が21,000,000なら、送金ミスによってコインの数は徐々に減少していくのではないか？

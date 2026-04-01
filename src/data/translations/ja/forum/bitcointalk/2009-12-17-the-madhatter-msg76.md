@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-17T13:23:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg79."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg79の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-To build on FreeBSD:
+FreeBSDでビルドするには：
 
-Install all of the required software from /usr/ports and then compile using the makefile.fbsd
+/usr/portsから必要なソフトウェアをすべてインストールし、makefile.fbsdを使ってコンパイルする。
 
-"It just works". Smiley
+「そのまま動く」。Smiley

@@ -11,7 +11,7 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 183. before msg1620."
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 The Bitcoin Faucet now shows how many coins it has available to give out (on the left-hand side of the page).  The number is only moderately accurate-- donations will take 5 or 10 minutes to show up in the balance.

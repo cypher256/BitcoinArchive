@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re:（Gavin Andresenの文脈投稿）"
 date: 2010-08-04T20:40:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 704. quoted by msg7703."
+description: "BitcoinTalkトピック704におけるGavin Andresenの文脈投稿。msg7703に引用。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 I just shut down freebitcoins.appspot.com; it looks like somebody in Spain is being a jerk and getting a new IP address, bitcoin address, and solving the captcha.  Over and over and over again:

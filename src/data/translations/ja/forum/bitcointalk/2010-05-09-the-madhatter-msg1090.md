@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by The Madhatter)"
+title: "Re:（The Madhatterのコンテキスト投稿）"
 date: 2010-05-09T04:39:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 128. before msg3605."
+description: "BitcoinTalkトピック128におけるThe Madhatterのコンテキスト投稿。msg3605の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-You'll want to renice +20 bitcoin then. I wouldn't dream of sharing a bitcoin in generation mode on a box that was playing videos. Choppy videos annoy the hell outta me.
+それならbitcoinをrenice +20すべきだ。動画を再生しているマシンで生成モードのbitcoinを共有するなんて、俺は夢にも思わない。カクカクした動画は本当にイライラする。
 
 Tongue

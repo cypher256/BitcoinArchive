@@ -1,5 +1,5 @@
 ---
-title: "Re: Major Meltdown"
+title: "Re: 大崩壊"
 date: 2010-06-27T18:22:51.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "Max Stirner"
 participants:
   - name: "Max Stirner"
     slug: "max-stirner"
-description: "Context post by Max Stirner in BitcoinTalk topic 202. before msg1838."
+description: "BitcoinTalkトピック202におけるMax Stirnerのコンテキスト投稿。msg1838の前。"
 isSatoshi: false
 threadId: "bt-major-meltdown"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Amal,  I admit: I got you wrong! 
-I am just afraid that digital currencies will not stay legal for long because the government has not control over it. (The day they make it illegal, you should open a bottle of champagne, because that's the sign that bitcoin is a success.)
-So at that point, they will also shut down your registry. And all the people who gave their address to that agency will get into trouble. 
+Amal、認める：あなたのことを誤解していた！
+デジタル通貨は政府がコントロールできないので、長く合法ではいられないのではないかと心配しているだけだ。（違法にされた日にはシャンパンを開けるべきだ。それはBitcoinが成功した証だから。）
+その時点で、あなたのレジストリも閉鎖されるだろう。そして、その機関にアドレスを提供したすべての人が困ったことになる。
 
-If there is a major flaw discovered in Bitcoin and there is no sufficient time to swap to a different system, I assume there is nothing you can do about a loss of your wealth. 
+Bitcoinに重大な欠陥が見つかり、別のシステムに切り替える十分な時間がない場合、資産の損失に対してできることはないと思う。
 
-Still, let's suppose YOU have discovered a way to produce an unlimited amount of coins. Your goal would be to profit from that secret AS LONG AS POSSIBLE. So even people that have the power to cheat wouldn't want a collapse of the digital fiat currency. And before the collapse of the old currency they would change their fake money for a better currency. But I am afraid that also goes for the so called "real" money. But.. somebody who has the brains to fool the algorithm of the digital currency at least gets a reward for his genius. In our paper fiat money system in the contrary, people who have access to the "printing press" of the government / central bank get rewarded for being just plain assholes.
+それでも仮に、あなたがコインを無限に生成する方法を発見したとしよう。あなたの目標は、その秘密からできるだけ長く利益を得ることだ。だから、不正を行う力を持つ人でさえ、デジタル不換通貨の崩壊は望まないだろう。そして、旧通貨が崩壊する前に、偽のお金をより良い通貨に交換するだろう。しかし、いわゆる「本物の」お金にも同じことが言えると思う。ただし、デジタル通貨のアルゴリズムを欺く頭脳を持つ人は、少なくともその天才に対する報酬を得る。一方、政府/中央銀行の「印刷機」にアクセスできる人は、単なるクズであることに対して報酬を得ているのだ。

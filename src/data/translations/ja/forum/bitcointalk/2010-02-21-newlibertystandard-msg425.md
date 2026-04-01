@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work difficulty increasing"
+title: "Re: プルーフ・オブ・ワーク難易度の上昇"
 date: 2010-02-21T18:52:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 43. before msg540."
+description: "BitcoinTalkトピック43におけるNewLibertyStandardのコンテキスト投稿。msg540の前。"
 isSatoshi: false
 threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Sabunir on February 21, 2010, 04:58:44 PM](#msg424)
-> How do you adjust this difficulty, anyway? (Administrating a decentralized system?) And what would prevent an attacker from setting the difficulty very low or very high to interfere with the system?
+> この難易度はどうやって調整しているのか？（分散型システムを管理するということ？）そして、攻撃者がシステムを妨害するために難易度を非常に低くまたは非常に高く設定することを防ぐものは何だ？
 
-My understanding is that every Bitcoin client has the same algorithm (formula) built into it to automatically adjust the difficulty every so many blocks. Not only that, but I think that Bitcoin will not accept blocks generated at a different difficulty, so if a modified Bitcoin client tried to send out more easily generated blocks, all the authentic clients would reject the fake blocks.
+俺の理解では、すべてのBitcoinクライアントが同じアルゴリズム（数式）を内蔵しており、一定のブロック数ごとに自動的に難易度を調整する。それだけでなく、Bitcoinは異なる難易度で生成されたブロックを受け入れないと思う。だから改変されたBitcoinクライアントがより簡単に生成されたブロックを送信しようとしても、すべての正規クライアントが偽のブロックを拒否するだろう。

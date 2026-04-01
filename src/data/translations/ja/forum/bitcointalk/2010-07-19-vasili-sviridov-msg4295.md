@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-19T17:23:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Vasili Sviridov"
 participants:
   - name: "Vasili Sviridov"
     slug: "vasili-sviridov"
-description: "Context post by Vasili Sviridov in BitcoinTalk topic 461. before msg4646."
+description: "BitcoinTalkトピック461におけるVasili Sviridovの文脈投稿。msg4646の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Should bitcoind be more of a system-wide daemon? With PAM authentication and support for all system users, not just the one running it?
-Like scanning /home/*/.bitcoin folders for a wallet file and provide access by both username and system password...
+bitcoindはもっとシステム全体のデーモンにすべきではないか？PAM認証で、実行ユーザーだけでなくすべてのシステムユーザーをサポートする。
+例えば/home/*/.bitcoinフォルダーのウォレットファイルをスキャンして、ユーザー名とシステムパスワードの両方でアクセスを提供するとか……

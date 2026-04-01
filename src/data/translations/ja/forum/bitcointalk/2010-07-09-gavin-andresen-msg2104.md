@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
 date: 2010-07-09T18:11:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 240. before msg2132."
+description: "BitcoinTalkトピック240におけるギャビン・アンドレセンのコンテキスト投稿。msg2132の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-It's a bad idea to try to break the "in-production" bitcoin network.
+「本番」のBitcoinネットワークを壊そうとするのは悪いアイデアだ。
 
-If anybody is starting serious work on either extending Bitcoin or developing compatible implementations or trying to break it by creating bad transactions, I think creating a "parallel universe" test network with its own block chain, data directory, etc makes sense.
+Bitcoinの拡張、互換実装の開発、不正な取引の作成による破壊テストに本格的に取り組み始める人がいるなら、独自のブロックチェーン、データディレクトリなどを持つ「パラレルユニバース」テストネットワークを作成するのが合理的だと思う。
 
-Satoshi:  would you be open to a --testnetwork (or something) flag to bitcoin that swapped to an alternate genesis block, data directory, listen port and IRC channel?  Maybe with a really short average block generation time, too (like once per minute instead of once per 10 minutes) so everything happens ten times a fast to make testing quicker.
+サトシ：代替のジェネシスブロック、データディレクトリ、リッスンポート、IRCチャンネルに切り替える--testnetwork（か何か）フラグを受け入れる気はあるか？ テストを速くするために、平均ブロック生成時間も非常に短く（10分に1回ではなく1分に1回のように）して、すべてが10倍速く進むようにするとか。

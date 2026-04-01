@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Address Collisions"
+title: "Re: Bitcoinアドレスの衝突"
 date: 2010-02-23T09:22:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 62. before msg443."
+description: "BitcoinTalkトピック62におけるNewLibertyStandardのコンテキスト投稿。msg443の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-address-collisions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Are you referring to the private key which is generated the first time a person runs Bitcoin? If someone were to successfully duplicate someone else's key then after they downloaded all the blocks, they would have the same balance as the person with the original key. That's what you're saying, right?
+Bitcoinを初回起動したときに生成される秘密鍵のことを言っているのか？ もし誰かが他人の鍵を複製することに成功したら、全ブロックをダウンロードした後、元の鍵の所有者と同じ残高を持つことになる。そういうことだよな？
 
-I was referring to the custom Bitcoin addresses which you can label with the name of the person who is going to send you bitcoins so that you know from whom the payment came. I think these addresses are generated from the private key mentioned previously. I'm wondering about collisions because although they are very unique, they are easily generated over and over again by all by all bitcoin clients.
+自分が言っていたのはカスタムBitcoinアドレスのことだ。bitcoinを送ってくる相手の名前でラベルを付けて、誰からの支払いか分かるようにするものだ。これらのアドレスは前述の秘密鍵から生成されると思う。衝突について疑問なのは、非常にユニークではあるが、すべてのbitcoinクライアントで簡単に何度でも生成されるからだ。

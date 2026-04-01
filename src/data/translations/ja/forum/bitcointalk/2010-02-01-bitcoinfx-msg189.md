@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by BitcoinFX)"
+title: "Re:（BitcoinFXのコンテキスト投稿）"
 date: 2010-02-01T18:51:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,20 +8,20 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "Context post by BitcoinFX in BitcoinTalk topic 35. before msg220."
+description: "BitcoinTalkトピック35におけるBitcoinFXのコンテキスト投稿。msg220の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I wanted to document an issue I encountered when first installing and using the Bitcoin software.
+Bitcoinソフトウェアを最初にインストールして使用した際に遭遇した問題を記録しておきたい。
 
-Despite a correct installation and port forward settings I noticed that Bitcoin was not generating any coins or 'blocks' despite having 20+ connections for the first 24hrs. The block count just remained at 0. After realizing that Bitcoin was not 'catching up' with the collective network block download or generation I opened up the Task Manager to investigate the issue further.
+正しいインストールとポートフォワード設定にもかかわらず、最初の24時間で20以上の接続があったにもかかわらず、Bitcoinがコインも「ブロック」も生成していないことに気づいた。ブロック数は0のままだった。Bitcoinがネットワーク全体のブロックダウンロードや生成に「追いついて」いないことに気づいた後、タスクマネージャーを開いてさらに調査した。
 
-I noticed that the bitcoin.exe process seemed to be 'fighting' for CPU usage against MsMpEng.exe (Microsoft Security Essentials). I hadn't noticed any system slowdown due to having a fairly high spec. PC. After adding bitcoin.exe and the appropriate program folder locations to Exclude 'Files and Locations' and 'Exclude Processes' - Bitcoin instantly started generating blocks and the CPU processes returned to normal.
+bitcoin.exeプロセスがMsMpEng.exe（Microsoft Security Essentials）とCPU使用率を「奪い合って」いるようだった。かなりハイスペックなPCなのでシステムの遅延には気づかなかった。bitcoin.exeと適切なプログラムフォルダの場所を「ファイルと場所の除外」と「プロセスの除外」に追加したところ、Bitcoinは即座にブロックの生成を開始し、CPUプロセスは正常に戻った。
 
-I did **not** have any virus alerts or even 'false positive' identifications for Bitcoin. **I know that the software is 100% OK**. I'm assuming that the 'Live Protection' engine in Microsoft Security Essentials just doesn't 'play well' with some aspect of the CPU hungry cycles used in 'block' generation.
+ウイルスアラートも「誤検知」もなかった。**ソフトウェアは100%問題ないことは分かっている**。Microsoft Security Essentialsの「ライブプロテクション」エンジンが、「ブロック」生成で使われるCPU集約的なサイクルの何らかの側面と「うまくやれない」のだと推測している。
 
-I have yet to do more testing, however I also encountered the same issue when using Comodo Internet Security (free version).
+さらなるテストはまだだが、Comodo Internet Security（無料版）を使用した際にも同じ問題に遭遇した。
 
-This is obviously going to be an issue for lots of new Bitcoin users who will perhaps be less 'tech savvy'. Has anyone else encountered any similar issues ?
+テクノロジーに詳しくない新規Bitcoinユーザーにとっては明らかに問題になるだろう。同様の問題に遭遇した人はいるだろうか？

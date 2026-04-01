@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Ground Loop)"
+title: "Re: （Ground Loopのコンテキスト投稿）"
 date: 2010-07-16T05:42:14.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,23 +8,23 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Context post by Ground Loop in BitcoinTalk topic 403. before msg3545."
+description: "BitcoinTalkトピック403におけるGround Loopのコンテキスト投稿。msg3545の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I run my computers off solar-generated electricity, so I keep pretty tight tabs on how much power they consume.
+ソーラー発電の電力でコンピュータを動かしているので、消費電力をかなり細かく管理している。
 
-I have one headless Ubuntu server that is always-on, usually with the disk array spun down, as it has some central network management roles.  It's an Intel Core2Duo E6300 @ 1.86 GHz, and mines at about 950 khash/s.
+常時稼働のヘッドレスUbuntuサーバーが1台ある。通常はディスクアレイをスピンダウンしていて、いくつかの中央ネットワーク管理の役割がある。Intel Core2Duo E6300 @ 1.86 GHzで、約950 khash/sでマイニングする。
 
-I was curious to see the impact bitcoind generation would have on it.  Here is what it looks like:
+bitcoindの生成がどのような影響を与えるか気になった。結果はこうだ：
 
-The lowest level on the left is idle, and the noise after it is bitcoind inhaling the block history.  The step up is the bitminer threads.
-In short, hashing raised the idle floor from about 120W to 160W, or +40W.
+左側の最低レベルがアイドルで、その後のノイズはbitcoindがブロック履歴を取り込んでいるところだ。段差がビットマイナースレッドだ。
+要するに、ハッシュによりアイドルフロアが約120Wから160Wに上がった。+40Wだ。
 
-This draws 29 kilowatt-hours a month from my generation, which means I net some $3.80 less for power ($0.13/kwh marginal power rate)
+これは月あたり29キロワット時を自家発電から消費し、つまり電力で約3.80ドル少なくなる（限界電力料金0.13ドル/kWh）
 
-If I generate an average of 13 blocks a month at the current difficulty, BTC 650, that puts my cost at about US$0.005/BTC.
+現在の難易度で月平均13ブロック生成すると、BTC 650で、コストは約0.005ドル/BTCになる。
 
-In short, I'm better off buying BTC from the exchange than generating them on this particular machine.  Food for thought.
+要するに、このマシンでコインを生成するよりも取引所でBTCを買った方がいい。参考までに。

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-19T12:30:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg4268."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg4268の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-The Transmission BitTorrent client does authenticated JSON-RPC; see "Remote Control" section of:
+TransmissionのBitTorrentクライアントは認証付きJSON-RPCを実装している。「Remote Control」セクションを参照：
  https://trac.transmissionbt.com/wiki/ConfigurationParameters
 
-E.g. setting.json file might look like:
+例えば、setting.jsonファイルは次のようになる：
 Code:{
     "rpc-enabled":1
     "rpc-authentication-required": 1,
@@ -28,4 +28,4 @@ Code:{
     "rpc-whitelist-enabled":1
     "rpc-whitelist":"127.0.0.1,192.168.*.*"
 }
-It uses HTTP 'basic' authentication (Authorization: basic base64(username:password) in the HTTP headers).
+HTTPの「basic」認証（HTTPヘッダーにAuthorization: basic base64(username:password)）を使用している。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Beta?"
+title: "Re: ベータ？"
 date: 2010-06-27T01:10:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 217. before msg1827."
+description: "BitcoinTalkトピック217におけるNewLibertyStandardのコンテキスト投稿。msg1827の前。"
 isSatoshi: false
 threadId: "bt-beta"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-My vote is for 1.0. It'll probably help us get slashdotted.
+1.0に1票。Slashdotに載る助けにもなるだろう。

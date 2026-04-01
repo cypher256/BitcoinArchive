@@ -8,14 +8,13 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Context post by MoonShadow in BitcoinTalk topic 846. before msg10076."
+description: "BitcoinTalkトピック846におけるMoonShadowのコンテキスト投稿。msg10076の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
 [Quote from: lfm on August 17, 2010, 09:33:14 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-17-lfm-msg9981/)
-> QuoteThe successful coding of the sha-256 algorithim into a fpga and recoding of the bitcoin client's generation function to use one or more such fpga's would produce a khash per second rate that no desktop could match.  It would look like a super-computer from our perspectives.
-> A lot of hand waving there. For some concrete numbers it quotes 53 MB/s and since we only hash 192 bytes at a time, you might think it would do 27 mhash/s (but it probably would be less) which I beleive is actually within the range of a desktop with a couple GPUs.
+> Quotesha-256アルゴリズムのFPGAへの実装とbitcoinクライアントの生成機能を1つ以上のFPGAを使うように書き換えれば、デスクトップでは到底及ばないkhash/sレートが得られるだろう。我々の視点からはスーパーコンピュータのように見えるだろう。
+> かなりの誇大宣伝だ。具体的な数字を見ると、53 MB/sと記載されており、一度に192バイトしかハッシュしないので、27 mhash/s程度になるかもしれない（実際にはもっと少ないだろう）。これはGPUを2つ搭載したデスクトップの範囲内だと思う。
 
-Yes, but there are two points that you overlooked.  First, the software transceiver ususally requires four of these chips.  (two for receive and two for transmit, one does digital signal processing and the other does digital filtering of the raw signal.  Said another way, one is the virtual mike/speaker and the other is a virtual tuner.  Not all such software radio setups need four, however)  So if a ham has four of these, all four could be programmed to this end.  The other point is one that I didn't explicitly mention, one FPGA does not equal only one sha-256 processor.  It is possible, even likely, that more than one such processor could be programmed into a single FPGA chip.  These chips are fairly large so that they can 'virtualize' some pretty complex logic circuts, and a talented programmer could program one chip to be several sha-256 processors running in parrallel.  All this, and his main CPU and GPU are still available if still more Kh/s are desired.  Any hacker with the skills to program one or more GPU's in the same system to crunch hashes is already elite, and doing multiple sha-256 cores on a single FPGA would be child's play.  And we already know that there is some elite talent within the Bitcoin community, some who desire to run it, and some who desire to break it.
+そうだが、あなたが見落とした2つの点がある。まず、ソフトウェアトランシーバーは通常これらのチップを4つ必要とする。（受信用に2つ、送信用に2つ。1つがデジタル信号処理を行い、もう1つが生信号のデジタルフィルタリングを行う。別の言い方をすると、1つが仮想マイク/スピーカーで、もう1つが仮想チューナーだ。すべてのソフトウェア無線セットアップが4つ必要なわけではないが。）だからアマチュア無線家がこれらを4つ持っていれば、4つすべてをこの目的にプログラムできる。もう1つのポイントは、明示的には述べなかったが、1つのFPGAが1つのsha-256プロセッサにしかならないわけではないということだ。1つのFPGAチップに複数のそのようなプロセッサをプログラムすることが可能であり、むしろありそうだ。これらのチップはかなり複雑な論理回路を「仮想化」できるように大きく、才能あるプログラマーなら1つのチップに複数のsha-256プロセッサを並列で動作するようにプログラムできるだろう。これでも彼のメインCPUとGPUはさらなるKh/sが欲しければまだ利用可能だ。同じシステム内の1つ以上のGPUをハッシュ計算用にプログラムするスキルを持つハッカーはすでにエリートであり、単一のFPGA上で複数のsha-256コアを実行するのは朝飯前だろう。そして我々はBitcoinコミュニティ内にエリートな才能がいることをすでに知っている。動かしたい人も壊したい人も。

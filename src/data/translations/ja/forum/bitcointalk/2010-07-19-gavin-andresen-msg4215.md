@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-19T12:02:39.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. quoted by msg4268."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg4268に引用。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-The Bitcoin Faucets (production and TEST) are now running with this change.
+Bitcoin Faucet（本番とTEST）はこの変更を適用して稼働中だ。
 
-I was confused for a bit because the password is given LAST on the command line, but FIRST in the JSON-RPC params list.  I agree that reading the command-line password from a file would be more convenient and more secure.
+パスワードがコマンドラインでは最後に指定するのに、JSON-RPCのパラメータリストでは最初になるので少し混乱した。コマンドラインのパスワードをファイルから読み取る方が便利で安全だという意見には同意する。
 
-I'll try to do some research on how other projects tackle JSON-RPC authentication.
+他のプロジェクトがJSON-RPC認証にどう取り組んでいるか調査してみるつもりだ。

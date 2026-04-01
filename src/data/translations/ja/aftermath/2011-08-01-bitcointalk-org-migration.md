@@ -6,7 +6,7 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Michael Marquardt"
 participants:
-  - name: "Michael Marquardt"
+  - name: "theymos"
     slug: "theymos"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"

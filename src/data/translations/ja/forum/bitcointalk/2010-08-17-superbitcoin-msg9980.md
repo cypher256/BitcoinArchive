@@ -8,12 +8,11 @@ author: "superbitcoin"
 participants:
   - name: "superbitcoin"
     slug: "superbitcoin"
-description: "Context post by superbitcoin in BitcoinTalk topic 846. before msg10076."
+description: "BitcoinTalkトピック846におけるsuperbitcoinのコンテキスト投稿。msg10076の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
-block generation on the VIA C7:
+VIA C7でのブロック生成：
 
 http://bitcointalk.org/index.php?topic=758.0

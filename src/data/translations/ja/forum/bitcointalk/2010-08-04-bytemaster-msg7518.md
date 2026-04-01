@@ -1,5 +1,5 @@
 ---
-title: "Re: Flood attack 0.00000001 BC"
+title: "Re: フラッド攻撃 0.00000001 BC"
 date: 2010-08-04T15:54:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "bytemaster"
 participants:
   - name: "bytemaster"
     slug: "bytemaster"
-description: "Context post by bytemaster in BitcoinTalk topic 287. before msg7524."
+description: "BitcoinTalkトピック287におけるbytemasterの文脈投稿。msg7524の前。"
 isSatoshi: false
 threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-priority is all contingent upon how many nodes accept them.  Thus if only 1% of the nodes accept a transaction fee of 0.000001 btc then you will have a 1% chance of being included in the next block.  If all nodes accept transaction fees of 1BTC then you have near 100% chance of being in the next block.
+優先度は何ノードがそれを受け入れるかに完全に依存する。つまり、ノードの1%しか0.000001 btcのトランザクション手数料を受け入れなければ、次のブロックに含まれる確率は1%だ。すべてのノードが1 BTCのトランザクション手数料を受け入れれば、次のブロックに含まれる確率はほぼ100%だ。

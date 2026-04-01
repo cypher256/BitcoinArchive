@@ -8,13 +8,12 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 823. before msg9841."
+description: "BitcoinTalkトピック823におけるNewLibertyStandardのコンテキスト投稿。msg9841の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
 [Quote from: laszlo on August 16, 2010, 10:13:00 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-laszlo-msg9833/)
-> So at this point, would a client that has not upgraded also have the correct chain?
+> この時点で、アップグレードしていないクライアントも正しいチェーンを持っているのか？
 
-Yes. The only exception would be if an unpatched client made another fake transaction and managed to verify it. They would be able to spread that fake block to a few other nodes that haven't upgraded, but the upgraded clients seem to have more power than the unpatched clients, so the bad link would not last long and would not be spread by upgraded clients.
+はい。唯一の例外は、パッチ未適用のクライアントが別の偽トランザクションを作成し検証に成功した場合だ。アップグレードしていない他のいくつかのノードにその偽ブロックを広められるだろうが、アップグレード済みクライアントの方がパッチ未適用クライアントより多くのパワーを持っているようなので、不正なリンクは長続きせず、アップグレード済みクライアントには広まらない。

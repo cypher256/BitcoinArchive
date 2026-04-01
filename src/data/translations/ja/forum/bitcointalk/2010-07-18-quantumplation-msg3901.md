@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Quantumplation)"
+title: "Re:（Quantumplationの文脈投稿）"
 date: 2010-07-18T03:23:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "Context post by Quantumplation in BitcoinTalk topic 441. before msg4095."
+description: "BitcoinTalkトピック441におけるQuantumplationの文脈投稿。msg4095の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-The difficulty gets reevaluated and adjusted every 2016 blocks.
+難易度は2016ブロックごとに再評価・調整される。

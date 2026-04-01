@@ -8,10 +8,9 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "Context post by MoonShadow in BitcoinTalk topic 760. before msg8413."
+description: "BitcoinTalkトピック760におけるMoonShadowのコンテキスト投稿。msg8413の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
-I'm not a programmer, but I have doubts that any of those 32 bit variables are subject to rolling over antime near 2038.  My understanding, however limited it may be, is that the timestamp of the blockchain is relative only to it's position within the chain, and not subject to any such limitations.  I'm sure that the two week difficulty calculations require an accurate count of seconds, but at worst, that would just throw off the calculations for the two weeks around the rollover in 2038.  And since there is a limit to just how much the difficulty may change in any two week period, even that isn't particularly crucial.
+プログラマーではないが、これらの32ビット変数が2038年の近くでロールオーバーする可能性があることには疑問を持っている。私の限られた理解では、ブロックチェーンのタイムスタンプはチェーン内の位置にのみ関連しており、そのような制限の対象ではない。もちろん、2週間の難易度計算には正確な秒数が必要だが、最悪の場合でも2038年前後の2週間の計算がずれるだけだ。そして、2週間で難易度がどれだけ変化できるかには制限があるので、それさえ特に重要ではない。

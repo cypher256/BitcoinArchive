@@ -1,5 +1,5 @@
 ---
-title: "Re: Assertion Failure - Ubuntu Lucid"
+title: "Re: アサーション失敗 - Ubuntu Lucid"
 date: 2010-07-17T22:19:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "singpolyma"
 participants:
   - name: "singpolyma"
     slug: "singpolyma"
-description: "Context post by singpolyma in BitcoinTalk topic 400. quoted by msg3823."
+description: "BitcoinTalkトピック400におけるsingpolymaの文脈投稿。msg3823に引用。"
 isSatoshi: false
 threadId: "bt-assertion-failure-ubuntu-lucid"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Moved the block files... it's working through them all again.  My coins disappeared, but I assume they'll come back when it's up to current?
+ブロックファイルを移動した……全部もう一度処理し直している。コインが消えたが、最新まで追いつけば戻ってくると思う？

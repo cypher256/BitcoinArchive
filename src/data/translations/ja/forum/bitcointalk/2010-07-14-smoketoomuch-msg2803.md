@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by SmokeTooMuch)"
+title: "Re: （SmokeTooMuchのコンテキスト投稿）"
 date: 2010-07-14T11:34:52.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 343. before msg2880."
+description: "BitcoinTalkトピック343におけるSmokeTooMuchのコンテキスト投稿。msg2880の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-The production rate depends on your hashs per second and the probability of 1 hash to be the right one.
+生成レートはhash/sと1つのハッシュが正解である確率に依存する。
 
-so basically khash/s * luck factor = generaterd bitcoins.
+基本的に khash/s * 運の要素 = 生成されたビットコイン。

@@ -12,7 +12,7 @@ description: "Context post by Gavin Andresen in BitcoinTalk topic 195. quoted by
 isSatoshi: false
 threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: satoshi on June 17, 2010, 06:46:08 PM](#msg1611)

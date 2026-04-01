@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by NewLibertyStandard)"
+title: "Re: （NewLibertyStandardのコンテキスト投稿）"
 date: 2010-07-17T22:22:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 419. quoted by msg3830."
+description: "BitcoinTalkトピック419におけるNewLibertyStandardのコンテキスト投稿。msg3830で引用。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Version 0.3 was supposed to reduce the number of outgoing connections on non-port forwarded clients from 15 to 8, but I don't think it really happened. I'm not positive if this is the case. Correct me if I'm wrong.
+バージョン0.3はポートフォワーディングしていないクライアントの発信接続を15から8に減らすはずだったが、実際には起きていないと思う。確信は持てない。間違っていたら訂正してほしい。

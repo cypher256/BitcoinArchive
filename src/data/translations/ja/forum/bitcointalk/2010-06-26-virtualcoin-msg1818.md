@@ -1,5 +1,5 @@
 ---
-title: "Re: Beta?"
+title: "Re: ベータ？"
 date: 2010-06-26T23:04:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "Context post by virtualcoin in BitcoinTalk topic 217. before msg1827."
+description: "BitcoinTalkトピック217におけるvirtualcoinのコンテキスト投稿。msg1827の前。"
 isSatoshi: false
 threadId: "bt-beta"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I'm not sure, but I think it's unusual to jump from version 0.3 to 1.3. ^^ Maybe 1.0?
-But on the other hand: who cares?
+確信はないが、バージョン0.3から1.3にジャンプするのは普通ではないと思う。^^ 1.0じゃないのか？
+まあ一方で、誰が気にするんだって話だが。

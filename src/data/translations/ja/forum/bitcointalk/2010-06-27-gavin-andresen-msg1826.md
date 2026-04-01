@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
 date: 2010-06-27T01:55:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,21 +8,21 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 218. before msg1828."
+description: "BitcoinTalkトピック218におけるギャビン・アンドレセンのコンテキスト投稿。msg1828の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: HarryS on June 27, 2010, 01:43:37 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-27-harrys-msg1825/)
-> When I run,
+> 実行すると、
 > Quote./bitcoind getaddressesbylabel ""
 > [
 > ]
-> Is it normal for it to give nothing, or what?
+> 何も返ってこないのは正常だろうか？
 
-Hmm, yeah, it's probably normal; I THOUGHT the default address was given an empty label; I'm wrong, they're given the label "Your Address".
-So:  Code:./bitcoind getaddressesbylabel "Your Address" should work.
+うーん、おそらく正常だ。デフォルトのアドレスには空のラベルが付いていると思っていたが、間違いだった。"Your Address"というラベルが付けられている。
+なので：Code:./bitcoind getaddressesbylabel "Your Address" でうまくいくはずだ。
 
-Or just generate a new address, either with or without a label:
+または、ラベル付きでもなしでも新しいアドレスを生成すればいい：
 Code:./bitcoind getnewaddress

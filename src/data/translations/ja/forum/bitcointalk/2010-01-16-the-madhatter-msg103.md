@@ -1,5 +1,5 @@
 ---
-title: "Re: 64bit support"
+title: "Re: 64bitサポート"
 date: 2010-01-16T23:16:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 18. before msg174."
+description: "BitcoinTalkトピック18におけるThe Madhatterのコンテキスト投稿。msg174の前。"
 isSatoshi: false
 threadId: "bt-64bit-support"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-All modern computers are amd64/EM64T. It should be able to be compiled on either platform. It is a hassle to compile all of the dependancies in 32-bit mode just to run one program. I know the 32-bit/64-bit stuff is seamless on windows platforms but on *NIX platforms it is a major pain since they are usually either one or the other by default. Wink
+現代のコンピュータはすべてamd64/EM64Tだ。どちらのプラットフォームでもコンパイルできるべきだろう。たった一つのプログラムを動かすためだけに、すべての依存関係を32ビットモードでコンパイルするのは面倒だ。Windowsプラットフォームでは32ビット/64ビットの切り替えはシームレスだが、*NIXプラットフォームではデフォルトで通常どちらか一方になっているので、大きな苦痛だ。Wink
 
-As a workaround I am in the process of compiling FreeBSD 32-bit jails (aka virtual server images) just for running bitcoin on our network. It should make it easier for me to deploy more nodes as they can simply be zipped up / scp'd / extracted / launched. After I have a working system image based on FreeBSD-8.0 I may post a link for download.
+回避策として、俺たちのネットワークでbitcoinを動かすために、FreeBSD 32ビットjail（仮想サーバーイメージのようなもの）のコンパイルを進めている。zipして、scpして、展開して、起動するだけなので、より多くのノードのデプロイが容易になるはずだ。FreeBSD-8.0ベースの動作するシステムイメージができたら、ダウンロードリンクを投稿するかもしれない。
 
-Thanks and keep up the good work. I can't wait to see how many exchangers are willing to trade BT. The stability of the exchangers and their longevity is everything. If the exchangers stick around big businesses may use this system to get around service fees / chargebacks / and the general faults caused by the credit card industry.
+ありがとう、引き続き良い仕事を。どれだけの交換所がBTを取引してくれるか楽しみだ。交換所の安定性と継続性がすべてだ。交換所が存続すれば、大企業がサービス手数料/チャージバック/クレジットカード業界による一般的な問題を回避するためにこのシステムを使うかもしれない。
 
-Keep up the great work! Smiley
+引き続き素晴らしい仕事を！ Smiley

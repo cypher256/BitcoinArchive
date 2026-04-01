@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-15T05:30:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg70."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg70の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Okay, I am on SF now. Username "madhatter2".
+了解、SFに登録した。ユーザー名は「madhatter2」だ。
 
 Smiley

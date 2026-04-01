@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by The Madhatter)"
+title: "Re:（The Madhatterの文脈投稿）"
 date: 2010-10-06T03:01:14.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 1375. before msg15682."
+description: "BitcoinTalkトピック1375におけるThe Madhatterの文脈投稿。msg15682の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Seeding from Tor is a snap. There are 7 .onion nodes that can provide IPs. I'd also just switch the IRC stuff off with '-noirc' to speed it up.
+Torからのシーディングは簡単だ。IPを提供できる.onionノードが7つある。「-noirc」でIRC関連のものをオフにして高速化もしたい。
 
-See https://www.bitcoin.org/smf/index.php?topic=59.msg14635#msg14635
+https://www.bitcoin.org/smf/index.php?topic=59.msg14635#msg14635 を参照

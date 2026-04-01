@@ -8,12 +8,11 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 969. before msg12130."
+description: "BitcoinTalkトピック969におけるGavin Andresenのコンテキスト投稿。msg12130の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+この変更について今発言するか、永遠に黙っていてくれ...サトシはこの機能をBitcoinの次のバージョン（0.3.12）に含める予定だ。
 
-Speak now about this change or forever hold your peace...  Satoshi will be including this functionality in the next version of Bitcoin (0.3.12).
-
-If you use the JSON-RPC api, you should check your error-condition-handling code; again, the changes are that the error member will be an Object (with 'code' and 'message' fields) instead of a String, and the HTTP status code may be 404 instead of 500 for method-not-found.
+JSON-RPC APIを使用している場合は、エラー条件の処理コードを確認すべきだ。繰り返しになるが、変更点はerrorメンバーがStringではなくObject（'code'と'message'フィールド付き）になり、method-not-foundの場合HTTPステータスコードが500ではなく404になる可能性があるということだ。

@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by AndrewBuck)"
+title: "Re: （AndrewBuckのコンテキスト投稿）"
 date: 2010-07-17T19:46:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "Context post by AndrewBuck in BitcoinTalk topic 419. before msg3830."
+description: "BitcoinTalkトピック419におけるAndrewBuckのコンテキスト投稿。msg3830の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I am aware that 1 is plenty for proper functioning, but more connections helps prevent the network from becoming segmented.  I was just wondering if there was a limit because I am always at 15 which seemed odd to me.
+正常な動作には1つで十分だが、接続数が多いほどネットワークのセグメント化を防げる。常に15なのが奇妙に思えたので、制限があるのかと思っただけだ。
 
-Anyway in regards to the question I think the protocol itself should support some kind of mechanism like this as it is good to know.  As far as I understand it the IRC server is more of a temporary thing until a more permanent solution is implemented.  This will probably have to happen sooner, rather than later, since the growth of the system will soon overwhelm the IRC server.  It is also somewhat of a single point of failure, even though the clients have other ways of finding eachother losing the IRC server could end up fragmenting the network causing several "islands" of interconnected nodes.  If this islanding persisted for long enough transactions could be lost.
+プロトコル自体がこのようなメカニズムをサポートすべきだと思う。知っておくと良い。自分の理解では、IRCサーバーはより恒久的な解決策が実装されるまでの一時的なものだ。これはおそらく早めに対処する必要がある。システムの成長がすぐにIRCサーバーを圧倒するからだ。単一障害点でもあり、クライアントには他の方法で互いを見つける手段があるが、IRCサーバーを失うとネットワークがフラグメント化し、相互接続されたノードの複数の「島」ができる可能性がある。この島状態が十分長く続くと、トランザクションが失われる可能性がある。
 
 -Buck

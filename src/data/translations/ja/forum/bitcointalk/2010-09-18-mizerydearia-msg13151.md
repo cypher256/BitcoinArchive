@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by mizerydearia)"
+title: "Re:（mizerydeaiaの文脈投稿）"
 date: 2010-09-18T23:42:52.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "Context post by mizerydearia in BitcoinTalk topic 1063. before msg13211."
+description: "BitcoinTalkトピック1063におけるmizerydeaiaの文脈投稿。msg13211の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I sent sourceforge-based message to Satoshi suggesting enabling MantisBT or Trac.  Perhaps he will notice it.
+SourceForge経由でサトシにMantisBTまたはTracの有効化を提案するメッセージを送った。気づいてくれるかもしれない。

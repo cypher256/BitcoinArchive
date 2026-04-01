@@ -62,6 +62,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'tim-ruffing': 'ティム・ルフィング',
   'twitter': 'Twitter',
   'wei-dai': 'ウェイ・ダイ',
+  'wladimir-van-der-laan': 'ウラジミール・ファン・デル・ラーン',
 };
 
 export const properNameTranslationsJa: Record<string, string> = {
@@ -148,6 +149,7 @@ export const properNameTranslationsJa: Record<string, string> = {
   'Tim Swanson': 'ティム・スワンソン',
   'Twitter': 'Twitter',
   'Wei Dai': 'ウェイ・ダイ',
+  'Wladimir van der Laan': 'ウラジミール・ファン・デル・ラーン',
 };
 
 export function getJapaneseParticipantDisplayName(name: string, slug?: string): string {

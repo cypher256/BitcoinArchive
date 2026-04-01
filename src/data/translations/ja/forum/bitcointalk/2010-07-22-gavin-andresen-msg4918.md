@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-22T01:51:40.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg5337."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg5337の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I've implemented it so that all the command-line options can also be specified in the bitcoin.conf file.
+すべてのコマンドラインオプションをbitcoin.confファイルでも指定できるように実装した。
 
-Options given on the command line override options in the conf file.  But I need to do more testing, especially with the "multiargs" options like "addnode".
+コマンドラインで指定されたオプションはconfファイルのオプションを上書きする。ただし、特に"addnode"のような「複数引数」オプションについてはもっとテストが必要だ。

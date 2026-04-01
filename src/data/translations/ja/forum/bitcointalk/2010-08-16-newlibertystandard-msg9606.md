@@ -8,10 +8,9 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 823. before msg9623."
+description: "BitcoinTalkトピック823におけるNewLibertyStandardのコンテキスト投稿。msg9623の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
-Ya know, in a way, this actually temporarily decreases the difficulty to generate blocks until everyone upgrades. Yeah, it'll be slower, but that just gives each client more time to try to generate the difficult hash.
+ある意味、これは全員がアップグレードするまで一時的にブロック生成の難易度を下げることになる。そう、遅くなるが、それは各クライアントが難しいハッシュを生成するためにより多くの時間を持つということだ。

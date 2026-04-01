@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by bytemaster)"
+title: "Re:（bytemasterの文脈投稿）"
 date: 2010-08-04T00:17:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "bytemaster"
 participants:
   - name: "bytemaster"
     slug: "bytemaster"
-description: "Context post by bytemaster in BitcoinTalk topic 635. before msg7385."
+description: "BitcoinTalkトピック635におけるbytemasterの文脈投稿。msg7385の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I think that Red's idea is great if it can be properly designed. 
+Redのアイデアは、適切に設計できれば素晴らしいと思う。
 
-The only problem with this whole procedure is that both parties are required to put up capital.   The one buying a service and the one performing the service both must put up cash.  Unfortunately the one providing the service is also putting up their service.
+この手順全体の唯一の問題は、両当事者が資本を出す必要があることだ。サービスを購入する側とサービスを提供する側の両方が現金を出さなければならない。しかもサービスを提供する側はサービス自体も出している。

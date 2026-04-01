@@ -1,5 +1,5 @@
 ---
-title: "Re: Scalability"
+title: "Re: スケーラビリティ"
 date: 2010-07-14T17:44:12.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,39 +8,38 @@ author: "spaceshaker"
 participants:
   - name: "spaceshaker"
     slug: "spaceshaker"
-description: "Context post by spaceshaker in BitcoinTalk topic 286. before msg2947."
+description: "BitcoinTalkトピック286におけるspaceshakerのコンテキスト投稿。msg2947の前。"
 isSatoshi: false
 threadId: "bt-scalability"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: DataWraith on July 14, 2010, 04:42:16 PM](https://bitcointalk.org/index.php?topic=286.msg2875#msg2875)
-> Quotespaceshaker: yes I agree there will have to be nodes that act as proxies for mobile devices. 
+> Quotespaceshaker: ええ、モバイルデバイスのプロキシとして機能するノードが必要になることには同意する。
 > 
-> Um. That's exactly what a supernode server would do.
+> うーん。それはまさにスーパーノードサーバーがやることだ。
 
-Um. Sure. I think I've gone full circle. I think Gavin said it best:
+うーん。確かに。一周回ったようだ。ギャビンが一番うまく言ったと思う：
 
 [Quote from: gavinandresen on July 14, 2010, 02:20:45 AM](https://bitcointalk.org/index.php?topic=286.msg2721#msg2721)
-> A lightweight client would have a wallet with coins in it (public+private key pairs).
+> 軽量クライアントはコインが入ったウォレットを持つ（公開鍵+秘密鍵のペア）。
 > 
-> And a secure way of sending messages to, and getting messages from, any of the ultra-fast, always-connected heavyweight nodes.
+> そして、超高速で常時接続のヘビーウェイトノードのいずれかにメッセージを送信し、メッセージを受け取るための安全な方法。
 > 
-> The lightweight client sends money by:
->   creating a transaction (signing coins with the private key)
->   sending the signed transaction securely to the ultra-fast server, which puts it on the network.
->   receiving confirmation that the transaction was valid and sent, and updating its wallet (marks coins as spent)
->    (or getting a "you already spent those coins" error from the server)
+> 軽量クライアントは以下のように送金する：
+>   トランザクションを作成する（秘密鍵でコインに署名）
+>   署名されたトランザクションを安全に超高速サーバーに送信し、サーバーがネットワークに投入する。
+>   トランザクションが有効で送信されたことの確認を受け取り、ウォレットを更新する（コインを使用済みとしてマーク）
+>    （またはサーバーから「それらのコインはすでに使用済み」エラーを受け取る）
 > 
-> The lightweight client receives money by:
->   Either polling the server every once in a while, asking "Any payments to these BC addresses that I have in my wallet?"
->    ... or asking the server to tell it whenever it sees a transaction to a list of BC addresses (or maybe when it sees
->     a relevant transaction with N confirmations)
->   When transactions occur, the lightweight client updates its wallet (adds the coins).
+> 軽量クライアントは以下のように受金する：
+>   定期的にサーバーにポーリングして「ウォレット内のこれらのBCアドレスへの支払いはあるか？」と尋ねる
+>    ……またはBCアドレスリストへのトランザクションを見つけた時（またはN回の確認があるトランザクション）にサーバーに通知するよう依頼する
+>   トランザクションが発生したら、軽量クライアントはウォレットを更新する（コインを追加）。
 > 
-> You don't have to trust the server; it never has your private keys.
+> サーバーを信頼する必要はない。秘密鍵を持つことはないのだから。
 > 
-> Well, you do have to trust that the server doesn't lie about whether your transactions are valid or not, but why would the server lie about that?
+> まあ、サーバーがトランザクションが有効かどうかについて嘘をつかないことを信頼する必要はあるが、なぜサーバーがそんな嘘をつくだろうか？
 
-In this scenario, the Bitcoin client could remain largely the same as it is today, although the focus would be that it is used on the "super-nodes" or "transaction servers" or "proxy servers" (these systems would probably serve all three roles) or by anyone wishing to play in that game. If the Bitcoin client was augmented to use DHT then that may be improvement but there is still a need for a "lightweight client" as Gavin described above. It seem's Gavin's "lightweight client" concept obviates my scalability concerns somewhat.
+このシナリオでは、Bitcoinクライアントは現在とほぼ同じままだが、「スーパーノード」や「トランザクションサーバー」や「プロキシサーバー」（これらのシステムはおそらく3つの役割すべてを果たす）で使われるか、そのゲームに参加したい人が使うことに焦点が当てられるだろう。BitcoinクライアントがDHTを使うよう拡張されれば改善になるかもしれないが、ギャビンが上記で説明した「軽量クライアント」の必要性は依然としてある。ギャビンの「軽量クライアント」コンセプトは、私のスケーラビリティの懸念をある程度解消してくれるようだ。

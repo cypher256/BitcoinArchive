@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by NewLibertyStandard)"
+title: "Re:（NewLibertyStandardのコンテキスト投稿）"
 date: 2010-01-28T09:58:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 25. before msg173."
+description: "BitcoinTalkトピック25におけるNewLibertyStandardのコンテキスト投稿。msg173の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I certainly wouldn't mind a larger Bitcoin application if it meant we could send an encrypted message along with each transaction. Right now I require an email message from customers who send me bitcoins. This is not ideal because if another person knew about a transaction that was occurring, they could take credit for the transaction by sending a message before the person who sent the bitcoins. About how many MB do you think it would add? Of course these messages will add to the size of the confirmation blocks being stored, so there should probably be a maximum size. Perhaps 256 characters would be a good maximum since the maximum size of an email address is 254 characters.
+各トランザクションに暗号化メッセージを添付できるなら、Bitcoinアプリケーションが多少大きくなっても構わない。現在、bitcoinを送ってくれた顧客にはメールメッセージを要求している。これは理想的ではない。なぜなら、別の人がそのトランザクションを知っていた場合、bitcoinを送った本人よりも先にメッセージを送ることで、そのトランザクションの手柄を横取りできるからだ。何MBくらい増えると思うか？ もちろんこれらのメッセージは保存される確認ブロックのサイズを増加させるので、最大サイズを設けるべきだろう。メールアドレスの最大サイズが254文字なので、256文字が最大として適切かもしれない。
 
-It would also be nice if transactions included a return address so that if a product or service being purchased can't be delivered the seller could more easily and reliably refund the bitcoins.
+購入した商品やサービスが配送できない場合に、販売者がより簡単かつ確実にbitcoinを返金できるよう、トランザクションに返送先アドレスが含まれると良いだろう。

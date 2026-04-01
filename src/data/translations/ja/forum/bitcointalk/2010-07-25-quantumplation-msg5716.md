@@ -1,5 +1,5 @@
 ---
-title: "Re: Stealing Coins"
+title: "Re: コインの窃取"
 date: 2010-07-25T18:09:40.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "Context post by Quantumplation in BitcoinTalk topic 571. before msg5724."
+description: "BitcoinTalkトピック571におけるQuantumplationの文脈投稿。msg5724の前。"
 isSatoshi: false
 threadId: "bt-stealing-coins"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Once it's fixed or proven not to work, could you post the details here?  I'm very curious. =)
+修正されるか、動作しないと証明されたら、詳細をここに投稿してもらえないか？とても気になる。=)

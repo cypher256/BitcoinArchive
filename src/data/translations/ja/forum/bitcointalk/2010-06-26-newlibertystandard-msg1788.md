@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3 almost ready -- please test the Mac version!"
+title: "Re: 0.3ほぼ完成 -- Mac版をテストしてください！"
 date: 2010-06-26T01:19:35.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 199. before msg1806."
+description: "BitcoinTalkトピック199におけるNewLibertyStandardのコンテキスト投稿。msg1806の前。"
 isSatoshi: false
 threadId: "bt-1-3-almost-ready"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-It looks good! The number of hashes per second intermittently disappears for a few seconds at a time. I think it might be triggered by clicking on the file menu multiple times. I'm using the Linux 64-bit build.
+いい感じだ！ 1秒あたりのハッシュ数が数秒間断続的に消える。ファイルメニューを複数回クリックすると発生するようだ。Linux 64ビットビルドを使っている。

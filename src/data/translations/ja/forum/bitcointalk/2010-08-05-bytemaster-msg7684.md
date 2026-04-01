@@ -1,5 +1,5 @@
 ---
-title: "Re: Flood attack 0.00000001 BC"
+title: "Re: フラッド攻撃 0.00000001 BC"
 date: 2010-08-05T15:39:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "bytemaster"
 participants:
   - name: "bytemaster"
     slug: "bytemaster"
-description: "Context post by bytemaster in BitcoinTalk topic 287. quoted by msg7696."
+description: "BitcoinTalkトピック287におけるbytemasterの文脈投稿。msg7696に引用。"
 isSatoshi: false
 threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 I think the current system works fine.  If someone wants to implement a micro-payment system then they will have to host enough nodes and contribute enough processing power to include their small transactions.   I see no reason to require any node to accept or forward micro-payment transactions if said nodes does not wish to.  

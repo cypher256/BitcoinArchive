@@ -4,7 +4,9 @@ import { useTranslations, getDisplayEntries, localePath, translateParticipantNam
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const entries = await getDisplayEntries('en');
+const jaEntries = await getDisplayEntries(lang);
+const enEntries = await getDisplayEntries('en');
+const entries = jaEntries.length > 0 ? jaEntries : enEntries;
 
 const participantCounts = new Map<string, { name: string; displayName: string; slug: string; count: number }>();
 for (const entry of entries) {
@@ -66,7 +68,6 @@ const structuredData = {
         <li data-name={`${p.displayName} ${p.name}`} data-count={p.count}>
           <a href={localePath(`/participants/${p.slug}/`, lang)}>
             {p.displayName}
-            {p.displayName !== p.name && <span class="original-name">({p.name})</span>}
           </a>
           <span class="count">({p.count})</span>
         </li>
@@ -202,12 +203,6 @@ const structuredData = {
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--color-border);
     font-size: 1.1rem;
-  }
-  .original-name {
-    color: var(--color-text-muted);
-    font-size: 0.85em;
-    margin-left: 0.3em;
-    font-family: var(--font-heading);
   }
   .count { color: var(--color-text-muted); font-size: 0.9rem; }
 </style>

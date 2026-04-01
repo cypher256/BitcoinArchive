@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-19T16:58:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,22 +8,22 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg4577."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg4577の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: satoshi on July 19, 2010, 04:20:50 PM](#msg4268)
-> So you drop a settings file in the ~/.bitcoin directory, that sounds better.  In the "no password is set" warning, it could tell you where the file is and what to do.
-> What is the most popular and common settings file format?
+> つまり~/.bitcoinディレクトリに設定ファイルを置くわけだ、その方が良い。「パスワード未設定」の警告で、ファイルの場所と何をすべきかを表示できるだろう。
+> 最も一般的で広く使われている設定ファイルのフォーマットは何だろう？
 
-You ask hard questions!  Most common: probably Windows INI files, because Windows is most common OS.
+難しい質問だ！最も一般的：おそらくWindows INIファイルだろう。WindowsがOSとして最も普及しているから。
 
-I'd lobby for using JSON; it's (mostly) a subset of YAML (which is a common choice for config files), so any JSON or YAML parser will read it.
-I think the only big advantage is that it keeps authentication where it belongs in the transport layer, so if, in the future, you **do** want to go with full-fledged HTTPS with certificates the API doesn't have to change.
-No, I just confused "command" with "parameter", and did this:
+JSONを推したい。JSONは（ほぼ）YAMLのサブセット（YAMLは設定ファイルの一般的な選択肢）なので、JSONまたはYAMLパーサーで読める。
+最大の利点は認証をトランスポート層に適切に配置することだと思う。そうすれば将来、本格的なHTTPSと証明書を導入する場合にAPIを変更する必要がない。
+いや、単に「command」と「parameter」を混同して、こうしただけだ：
 
 Code:> bitcoind help
 error: First parameter must be the password.

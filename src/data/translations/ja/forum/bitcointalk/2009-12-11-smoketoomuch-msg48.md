@@ -1,5 +1,5 @@
 ---
-title: "Re: Questions about Bitcoin"
+title: "Re: Bitcoinに関する質問"
 date: 2009-12-11T17:20:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,29 +8,29 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "Context post by SmokeTooMuch in BitcoinTalk topic 13. before msg49."
+description: "BitcoinTalkトピック13におけるSmokeTooMuchのコンテキスト投稿。msg49の前。"
 isSatoshi: false
 threadId: "bt-questions-about-bitcoin"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Wow, thanks alot for these detailed answers.
+おお、詳しい回答をありがとう。
 
-But today another question came to my mind.
+しかし今日、もう一つ疑問が浮かんだ。
 
-Lets say we know, that our neighbar uses Bitcoin, and we also know that he will receive a payment soon (maybe because he owns an internet shop and accepts bitcoin as payment option).
+隣人がBitcoinを使っていることが分かっていて、近いうちに支払いを受け取ることも分かっているとする（例えばネットショップを運営していてBitcoinを支払いオプションとして受け付けている場合）。
 
-Also, we know that he uses WLAN and his network is unsecured or weak protected. Same goes for router configuration.
+さらに、その隣人がWLANを使っていて、ネットワークが保護されていないか弱い保護しかされていないことも分かっている。ルーターの設定も同様だ。
 
-We now could log into his router configuration, change the ip adresses for the forwarded port 8333 to our system ip.
-Now every payment would be received by our bitcoin client.
+その場合、ルーターの設定にログインして、ポート8333のフォワード先IPアドレスを自分のシステムIPに変更できる。
+そうすれば、すべての支払いが自分のBitcoinクライアントで受信されることになる。
 
-Is this actually going to work ?
+これは実際に機能するのだろうか？
 
-I know this is highly criminal and the scenario is .. well, lets call it "uncommon", but in theory it should work, right ?
-(Not that I have an interest in harming people, but I know that criminal people will try many ways to get some money.)
+極めて犯罪的で、このシナリオは…まあ「一般的ではない」と呼ぶべきだが、理論的には機能するはずだよな？
+（人に害を与えることに興味があるわけではないが、犯罪者はあらゆる方法で金を得ようとすることは分かっている。）
 
-BTW: same should work when you are on a LAN party with unprotected router config.
+余談：LANパーティで保護されていないルーター設定がある場合も同様のことができるはずだ。
 
-Edit: Or are these scenarios totally impossible because no matter which ip adress uses the port, the payment will go to the bitcoin or ip adress that was defined from the payer ?
+追記：あるいは、どのIPアドレスがそのポートを使っていようと、支払いは支払い者が指定したBitcoinアドレスまたはIPアドレスに送られるため、これらのシナリオはまったく不可能なのだろうか？

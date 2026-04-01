@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by bytemaster)"
+title: "Re:（bytemasterの文脈投稿）"
 date: 2010-08-05T16:05:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "bytemaster"
 participants:
   - name: "bytemaster"
     slug: "bytemaster"
-description: "Context post by bytemaster in BitcoinTalk topic 713. before msg7706."
+description: "BitcoinTalkトピック713におけるbytemasterの文脈投稿。msg7706の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 In another thread I posted the comment below, but I felt that it was an important enough flaw that it should be addressed asap before bitcoin is overrun with huge numbers of automated non-micro payments.

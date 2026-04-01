@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-13T06:46:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg62."
+description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg62の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Um, so command line only mode could be selected at compile-time? Perhaps with a define? And that would shut off the graphical UI stuff?
+えーと、コマンドラインオンリーモードはコンパイル時に選択できるということか？ defineで？ それでグラフィカルUIの部分がオフになるのか？
 
-Just want to be on the same page here. Smiley
+認識を合わせておきたいだけだ。Smiley

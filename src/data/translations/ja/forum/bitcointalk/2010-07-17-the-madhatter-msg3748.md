@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by The Madhatter)"
+title: "Re:（The Madhatterの文脈投稿）"
 date: 2010-07-17T14:10:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,17 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "Context post by The Madhatter in BitcoinTalk topic 432. before msg3769."
+description: "BitcoinTalkトピック432におけるThe Madhatterの文脈投稿。msg3769の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Check this out...
+これを見てくれ……
 
-I just installed 0.3.1 on two different machines and moved one bitpenny (0.01):
+0.3.1を2台の別々のマシンにインストールして、1 bitpenny（0.01）を移動した：
 
-**-= Before the transfer =-**
+**-= 送金前 =-**
 
 [bitcoind@box1 ~]$ ~/bin/bitcoind getinfo
 {
@@ -42,7 +42,7 @@ I just installed 0.3.1 on two different machines and moved one bitpenny (0.01):
     "difficulty" : 181.5432893640505
 }
 
-**-= AFTER the transfer =-**
+**-= 送金後 =-**
 
 [bitcoind@box1 ~]$ ~/bin/bitcoind getinfo
 {
@@ -66,6 +66,6 @@ I just installed 0.3.1 on two different machines and moved one bitpenny (0.01):
     "difficulty" : 181.5432893640505
 }
 
-I personally think it is a display problem, but I can't be sure.. strange, no?
+個人的には表示の問題だと思うが、確信は持てない……変だろう？
 
-Both machines are running FreeBSD 7.2/amd64.
+両マシンともFreeBSD 7.2/amd64で動かしている。

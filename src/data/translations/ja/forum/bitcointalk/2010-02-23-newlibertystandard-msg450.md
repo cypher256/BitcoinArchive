@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Address Collisions"
+title: "Re: Bitcoinアドレスの衝突"
 date: 2010-02-23T19:04:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 62. quoted by msg453."
+description: "BitcoinTalkトピック62におけるNewLibertyStandardのコンテキスト投稿。msg453で引用。"
 isSatoshi: false
 threadId: "bt-bitcoin-address-collisions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Thanks for the explanation. I think it all makes sense.
+説明ありがとう。全部理解できたと思う。
 
-Are generated bitcoins encrypted with whichever address is currently displayed in the main Bitcoin window? I may have mentioned this in an email message quite a while ago, but it would be cool for some very future version to allow people to see which of their bitcoins are encrypted with which of their addresses.
+生成されたbitcoinは、Bitcoinのメインウィンドウに現在表示されているアドレスで暗号化されるのか？ かなり前にメールで言及したかもしれないが、将来のバージョンで、自分のbitcoinのうちどれがどのアドレスで暗号化されているかを確認できるようになると素晴らしいだろう。

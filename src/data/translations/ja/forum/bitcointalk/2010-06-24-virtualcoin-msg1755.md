@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by virtualcoin)"
+title: "Re: （virtualcoinのコンテキスト投稿）"
 date: 2010-06-24T22:07:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "Context post by virtualcoin in BitcoinTalk topic 206. before msg1816."
+description: "BitcoinTalkトピック206におけるvirtualcoinのコンテキスト投稿。msg1816の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Gavin, why don't you just block all served Bitcoin addresses?
-Would it be easy to generate them automatically?
+ギャビン、配布するBitcoinアドレスを全部ブロックすればいいんじゃないか？
+自動生成は簡単だろうか？

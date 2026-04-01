@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re:（Gavin Andresenの文脈投稿）"
 date: 2010-12-09T16:43:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 644. before msg28643."
+description: "BitcoinTalkトピック644におけるGavin Andresenの文脈投稿。msg28643の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Cdecker on July 30, 2010, 06:31:48 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-30-cdecker-msg6688/)

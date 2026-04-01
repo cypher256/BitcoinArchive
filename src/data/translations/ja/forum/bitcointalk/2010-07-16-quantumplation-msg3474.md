@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Quantumplation)"
+title: "Re: （Quantumplationのコンテキスト投稿）"
 date: 2010-07-16T14:02:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "Context post by Quantumplation in BitcoinTalk topic 364. before msg3559."
+description: "BitcoinTalkトピック364におけるQuantumplationのコンテキスト投稿。msg3559の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-It's a good temporary solution, and the only drawback I can see is that it requires a different/separate install, as opposed to just being something server-side.  Granted, I can't come up with an alternative either, but it IS a bit of barrier-to-entry for some people.
+良い一時的な解決策だ。唯一の欠点は、サーバー側だけで完結するのではなく、別のインストールが必要なことだ。とはいえ、代替案も思いつかないが、一部の人にとっては参入障壁になる。

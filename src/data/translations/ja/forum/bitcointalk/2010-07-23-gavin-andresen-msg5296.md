@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-23T15:11:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,15 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg5338."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg5338の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I've updated the RPC wiki page for how the password stuff will work in Bitcoin 0.3.3.
+RPC wikiページを更新して、Bitcoin 0.3.3でのパスワード機能の仕組みを説明した。
 
-One nice side effect: you can prepare for the changes now; create a bitcoin.conf file with a username and password and modify your JSON-RPC code to do the HTTP Basic Authentication thing.  Old code will just ignore the .conf file and the Authorization: HTTP header.
+1つの良い副作用：今すぐ変更に備えることができる。bitcoin.confファイルにユーザー名とパスワードを作成し、JSON-RPCコードをHTTP Basic認証に対応するよう修正すればいい。古いコードは.confファイルとAuthorization: HTTPヘッダーを単に無視する。
 
-Question for everybody:  should I add a section to the wiki page describing, in detail, how to do HTTP Basic authentication?  PHP and Python make is really easy-- just use the http://user:pass@host:port/ URL syntax.  I don't want to just duplicate the HTTP Basic authentication Wikipedia page.
+皆に質問：HTTP Basic認証の詳細な方法をwikiページに追加すべきだろうか？PHPとPythonでは非常に簡単だ——http://user:pass@host:port/ のURL構文を使うだけだ。HTTP Basic認証のWikipediaページをただ複製したくはない。

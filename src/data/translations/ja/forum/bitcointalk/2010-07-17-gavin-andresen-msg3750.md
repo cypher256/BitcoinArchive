@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
 date: 2010-07-17T14:13:46.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,28 +8,28 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 434. before msg3770."
+description: "BitcoinTalkトピック434におけるギャビン・アンドレセンのコンテキスト投稿。msg3770の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Here's how you can lose coins by backing up and restoring your wallet file:
+ウォレットファイルのバックアップと復元でコインを失う方法を説明する：
 
-Lets say you have one shiny 1,000 Bitcoin coin in your wallet (it's actually just a transaction for 1,000 bitcoins paid to a public key that's stored in your wallet).
+ウォレットにピカピカの1,000ビットコインが1枚あるとする（実際にはウォレットに保存された公開鍵に支払われた1,000ビットコインのトランザクションだ）。
 
-You backup that file.
+そのファイルをバックアップする。
 
-Now you spend 1 Bitcoin.  Your shiny 1,000 BTC coin is broken into 1BTC, plus 999BTC in change.  That change is **given a new, different public key.**
+次に1ビットコインを使う。ピカピカの1,000 BTCコインは1BTCとお釣りの999BTCに分割される。そのお釣りには**新しい別の公開鍵が割り当てられる。**
 
-Now if you restore your wallet file, Bitcoin sees that the 1,000BTC coin has been spent-- 1BTC was sent somewhere, and the other 999BTC was sent somewhere else.  Because you don't have the key for the 999BTC, it has no idea that those coins belong to you.
+ウォレットファイルを復元すると、Bitcoinは1,000BTCコインが使われたことを認識する――1BTCはどこかに送られ、残りの999BTCはどこかに送られた。999BTCの鍵がないので、それらのコインがあなたのものだとわからない。
 
-So they're lost.
+だから失われる。
 
-Trying out alternative policies for handling change on the TEST network would be a good idea, in my opinion.
+TESTネットワークでお釣りの処理に関する代替ポリシーを試すのは良いアイデアだと思う。
 
-Maybe change transactions should always get signed with the same public key, so you wouldn't lose coins when restoring your wallet... although that would give you less privacy because it would tend to tie all your transactions together.
+お釣りのトランザクションには常に同じ公開鍵で署名すべきかもしれない。そうすればウォレットの復元時にコインを失わない……ただし、すべてのトランザクションが紐付けられるのでプライバシーが低下する。
 
-Maybe your wallet should get initially populated with 100 "change" addresses, with one randomly chosen as needed.  And some super-geeky way of replacing them with another, new, 100 addresses.
+ウォレットに最初から100の「お釣り」アドレスを用意し、必要に応じてランダムに選ぶのもいい。そして新しい100アドレスに置き換える超ギーク的な方法を用意する。
 
-Maybe there's an even better way of handling the "I lost BTC when I restored my wallet" problem; ideas?
+「ウォレットを復元したらBTCを失った」問題のさらに良い解決策があるかもしれない。アイデアは？

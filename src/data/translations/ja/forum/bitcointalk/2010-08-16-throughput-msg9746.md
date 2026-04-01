@@ -8,11 +8,9 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "Context post by throughput in BitcoinTalk topic 823. before msg9841."
+description: "BitcoinTalkトピック823におけるthroughputのコンテキスト投稿。msg9841の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
-Would it be useful to have RPC command to chop off the tail of the chain manually,
-instead of removind and redownloading the whole chain?
+チェーン全体を削除して再ダウンロードする代わりに、チェーンの末尾を手動で切り落とすRPCコマンドがあると便利ではないか？

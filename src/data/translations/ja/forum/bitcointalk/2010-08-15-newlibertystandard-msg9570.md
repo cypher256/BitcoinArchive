@@ -8,15 +8,14 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 823. before msg9573."
+description: "BitcoinTalkトピック823におけるNewLibertyStandardのコンテキスト投稿。msg9573の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
-
 [Quote from: davidonpda on August 15, 2010, 10:41:29 PM](https://bitcointalk.org/index.php?topic=823.msg9569#msg9569)
-> I already said that I have it right at 74637.
-> 
-> Satoshi said it needs to be before 74,000
+> 74637でちょうど持っていると既に言った。
+>
+> サトシは74,000以前である必要があると言った。
 
-So long as a the person who creates it has a patched client and downloads the whole chain, optimally from another computer on their local network, then it should stop at the right place automatically.
+パッチ適用済みのクライアントを持つ人がチェーン全体をダウンロードする限り、できればローカルネットワーク上の別のコンピュータから最適にダウンロードすれば、正しい場所で自動的に停止するはずだ。

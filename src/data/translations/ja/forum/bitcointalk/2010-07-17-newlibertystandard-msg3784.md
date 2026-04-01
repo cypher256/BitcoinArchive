@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin snack machine (fast transaction problem)"
+title: "Re: Bitcoin自販機（高速トランザクション問題）"
 date: 2010-07-17T18:37:58.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 423. before msg3819."
+description: "BitcoinTalkトピック423におけるNewLibertyStandardのコンテキスト投稿。msg3819の前。"
 isSatoshi: false
 threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: Babylon on July 17, 2010, 08:42:30 AM](https://bitcointalk.org/index.php?topic=423.msg3709#msg3709)
-> In this case it seems the point is more to speed up transactions without losing security, which looks more like a debit account than an escrow service, but I may be misunderstanding what an escrow service is.
+> この場合、セキュリティを失わずにトランザクションを高速化することがポイントのようで、エスクローサービスというよりデビットアカウントのように見えるが、エスクローサービスの意味を誤解しているかもしれない。
 
-You're not misunderstanding. Escrow and debit are similar services and their definitions overlap. I was stretching the definition. Debit fits my description just as well if not better than escrow. I was just putting the emphasis on the fact that the company, whatever it's called, can transfer bitcoin balances on an accounting sheet instantly without having to wait for a real bitcoin transaction, but like is described in the fractional reserve lending thread.
+誤解していない。エスクローとデビットは類似のサービスで、定義が重なる。定義を拡大して使っていた。デビットの方が私の説明に同様に、あるいはより適切に当てはまる。会社（名前は何でもいい）が、実際のビットコインのトランザクションを待つ必要なく、帳簿上のビットコイン残高を即座に移転できることに重点を置いていただけだ。フラクショナルリザーブ貸付のスレッドで説明されているのと同様に。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Source code documentation"
+title: "Re: ソースコードのドキュメント"
 date: 2010-07-18T01:50:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,19 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "Context post by AndrewBuck in BitcoinTalk topic 393. before msg3999."
+description: "BitcoinTalkトピック393におけるAndrewBuckの文脈投稿。msg3999の前。"
 isSatoshi: false
 threadId: "bt-source-code-documentation"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-I wondered if they were not really meant to be public facing.  I think they are useful to have documented though, at least for now.  If the program accepts it as valid input it should be documented.  You can either add a notice to the commands in the man-page that are experimental, or just remove them.  In my opinion it makes more sense to label them experimental so people know they might change, but can use them if they need to.  I would just add the following to the beginning of each of the commands in the makefile:
+これらは本来、一般ユーザー向けのものではないのだろうと思った。しかし、少なくとも今のところは文書化しておくのが有用だと思う。プログラムが有効な入力として受け付けるなら、文書化すべきだ。manページのコマンドに実験的である旨の注意書きを追加するか、単に削除するかだ。私の意見では、実験的とラベル付けして変更される可能性があることを知らせつつ、必要なら使えるようにする方が理にかなっている。makefileの各コマンドの先頭に以下を追加するだけだ：
 
 \fBUnsupported - Behaviour may change in future versions\fR
 
-The \fB switches on bold text and the \fR switches back to regular.  This way people can use the program to its fullest potential during the development stages.  Too much documentation is never a bad thing, especially for an open source project.  Since people can see the code they will find these calls anyway and use them whether you want them to or not.  If they are documented and marked as volatile then people can at least make an informed choice on whether or not they want to use them.
+\fBで太字をオンにし、\fRで通常に戻す。こうすれば開発段階でプログラムを最大限に活用できる。ドキュメントが多すぎて困ることはない、特にオープンソースプロジェクトでは。コードが見えるのだから、どのみちこれらの呼び出しを見つけて使うだろう。文書化して変更可能性が明示されていれば、使うかどうかについて情報に基づいた判断ができる。
 
-For example, just at the moment someone in IRC is making use of the -printblock command to generate statistics about the block chain that might help us understand the program better (as in how it performs in the real world).  Although the output of this command may change in the future, and therefore we shouldn't be building complex frameworks around it, it is nice to know it exists if you need something done as a quick hack.  Also because the program is open source, if someone comes to depend on a certain command line switch they can maintain it.  Eventually what you thought was just a temporary debugging tool make end up being one of the most widely used switches available.
+例えば、まさに今、IRCで誰かが-printblockコマンドを使ってブロックチェーンの統計情報を生成し、プログラムの動作をよりよく理解しようとしている（実際の環境でどう動くかという意味で）。このコマンドの出力は将来変わるかもしれないので、その上に複雑なフレームワークを構築すべきではないが、ちょっとしたハックが必要な時にその存在を知っているのは良いことだ。また、プログラムがオープンソースなので、あるコマンドラインスイッチに依存するようになれば、それをメンテナンスできる。一時的なデバッグツールだと思っていたものが、結局最も広く使われるスイッチの1つになるかもしれない。
 
 -Buck

@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by SheriffWoody)"
+title: "Re:（SheriffWoodyのコンテキスト投稿）"
 date: 2010-04-08T14:56:25.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "SheriffWoody"
 participants:
   - name: "SheriffWoody"
     slug: "sheriffwoody"
-description: "Context post by SheriffWoody in BitcoinTalk topic 101. before msg1134."
+description: "BitcoinTalkトピック101におけるSheriffWoodyのコンテキスト投稿。msg1134の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Is there any way to remove bitcoin addresses that you have generated for yourself? What about if you have received payments to those addresses? Are they needed to show ownership for the coins after they have been transferred?
+自分で生成したBitcoinアドレスを削除する方法はあるのか？ そのアドレスで支払いを受け取った場合はどうなるのか？ コインが送金された後もその所有権を示すために必要なのか？

@@ -8,12 +8,11 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Context post by NewLibertyStandard in BitcoinTalk topic 823. before msg9548."
+description: "BitcoinTalkトピック823におけるNewLibertyStandardのコンテキスト投稿。msg9548の前。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
+再ダウンロードする方がいい。
 
-I prefer to just re-download them.
-
-Block verification after the patch but before everyone upgrades is going to be SLOW! It'll probably cause the next difficulty adjustment to decrease significantly. Of course everyone will probably have upgraded by the time the next adjustment rolls around, so we'll probably roll through it relatively quickly.
+パッチ適用後だが全員がアップグレードする前のブロック検証は非常に遅くなるだろう！おそらく次の難易度調整が大幅に低下するだろう。もちろん、次の調整が来る頃には全員がアップグレードしているだろうから、比較的素早く通過するだろう。

@@ -11,7 +11,7 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 179. before msg1588."
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 I'll try to answer what I can:

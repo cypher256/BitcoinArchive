@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by molybdenum)"
+title: "Re:（molybdenumのコンテキスト投稿）"
 date: 2010-05-22T18:44:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,16 +8,16 @@ author: "molybdenum"
 participants:
   - name: "molybdenum"
     slug: "molybdenum"
-description: "Context post by molybdenum in BitcoinTalk topic 145. quoted by msg1256."
+description: "BitcoinTalkトピック145におけるmolybdenumのコンテキスト投稿。msg1256で引用。"
 isSatoshi: false
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-So I'm poking around creating a simple web interface for simple bitcoin usage (something a little lighter and less stateful than a full-on wx/GTK GUI) and I haven't seen any way to see the status of generated blocks in progress of verification... I have seen my balance jump up by 50, but of course that doesn't show up in getallreceived.
+シンプルなbitcoin用ウェブインターフェースを作ろうとしていて（本格的なwx/GTK GUIよりも軽量でステートレスなもの）、検証中の生成ブロックのステータスを確認する方法が見当たらない…残高が50ジャンプするのは見たが、もちろんそれはgetallreceivedには表示されない。
 
-For a headless coin generation box, being able to see my status right away would be nice, or at least, being able to know if I have 30 blocks awaiting confirmation, or am still trying to get the first... if it's purely automated and just checking-and-forwarding the balance, that's not a problem though.
+ヘッドレスのコイン生成マシンにとって、すぐにステータスを確認できると良い。少なくとも、確認待ちのブロックが30あるのか、まだ最初の1つを取得しようとしているのかが分かると良い…純粋に自動化されていて残高のチェックと転送だけなら、それは問題ではないが。
 
-Additionally, in the GUI client a transaction will appear as soon as it's seen, while getallreceived only shows a transaction after a block has gone by... yet the balance jumps up by the appropriate amount right away.
+さらに、GUIクライアントではトランザクションは見つかった時点で表示されるが、getallreceivedはブロックが経過した後にのみトランザクションを表示する…しかし残高は適切な量だけすぐにジャンプする。
 
-I can imagine some poor nervous customer pacing back and forth worrying about his payment going through, when that wouldn't really be needed. While this *could* be used to cheat the system if a malicious machine managed to generate the winning block and exclude its own payment, but some instant indication that something was happening would be nice none the less even if it needed a "don't accept transactions while the confirmations are still at 0" warning tag... perhaps a separate function that included 0-confirmation transactions? An optional parameter to specify the minimum number of blocks after that transaction (getallreceived 1 for current behavior, or just getallreceived, getallreceived 5 for the paranoid, getallreceived 0 for instant confirms)?
+気の毒な神経質な顧客が支払いが通るかどうか心配して行ったり来たりしている姿が想像できるが、本当はその必要はない。悪意のあるマシンが勝利ブロックを生成して自分の支払いを除外すれば、これはシステムを騙すために使える*可能性*はあるが、確認がまだ0の段階でも何かが起きているという即座の表示があると良い。「確認がまだ0の間はトランザクションを受け入れるな」という警告タグ付きであっても…0確認のトランザクションを含む別の関数はどうだろうか？ そのトランザクション後の最小ブロック数を指定するオプションパラメータは？（getallreceived 1で現在の動作、またはただのgetallreceived、getallreceived 5は慎重派向け、getallreceived 0で即座の確認）

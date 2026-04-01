@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-09T19:25:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "nanaimogold"
 participants:
   - name: "nanaimogold"
     slug: "nanaimogold"
-description: "Context post by nanaimogold in BitcoinTalk topic 12. before msg45."
+description: "BitcoinTalkトピック12におけるnanaimogoldのコンテキスト投稿。msg45の前。"
 isSatoshi: false
 threadId: "bt-a-few-suggestions"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
-Thank you for this effort. A P2P payment system has been needed for a long time.
+この取り組みに感謝する。P2P決済システムは長い間必要とされていた。
 
 Shane

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-23T18:51:34.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,16 +8,16 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg5383."
+description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg5383の前。"
 isSatoshi: false
 threadId: "bt-json-rpc-password"
 tags: []
-translationStatus: pending
+translationStatus: complete
 ---
 
 [Quote from: lachesis on July 23, 2010, 06:22:08 PM](#msg5348)
-> The password definitely shouldn't be required.
+> パスワードは絶対に必須にすべきではない。
 
-I strongly disagree; software should be secure by default, and running bitcoind without a password (or bitcoin -server) is definitely NOT secure.
+強く反対する。ソフトウェアはデフォルトで安全であるべきであり、パスワードなしでbitcoindを実行する（またはbitcoin -server）のは明らかに安全ではない。
 
-I just don't see somebody saying "Man, Bitcoin sucks because I have to add a password to a configuration file before running it as a daemon."  I **can** see somebody saying "Man, Bitcoin sucks because I accidently ran it with the -server switch and somebody stole all my money."
+「設定ファイルにパスワードを追加しないとデーモンとして実行できないからBitcoinはダメだ」と言う人はまずいないだろう。「うっかり-serverスイッチを付けて実行したら誰かに全額盗まれたからBitcoinはダメだ」と言う人は**大いに**あり得る。
