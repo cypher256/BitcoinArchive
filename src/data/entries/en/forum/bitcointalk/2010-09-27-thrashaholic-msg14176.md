@@ -13,8 +13,8 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: kiba on September 23, 2010, 08:10:38 PM](https://bitcointalk.org/index.php?topic=1268.msg13869#msg13869)
-> [Quote from: mskwik on September 23, 2010, 07:14:16 PM](https://bitcointalk.org/index.php?topic=1268.msg13855#msg13855)
+[Quote from: kiba on September 23, 2010, 08:10:38 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-23-kiba-msg13869/)
+> [Quote from: mskwik on September 23, 2010, 07:14:16 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-23-mskwik-msg13855/)
 > > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](https://bitcointalk.org/index.php?topic=1268.msg13828#msg13828)
 > > > > 1. Download site like rapidshare and other crappy host. Inconvenient captcha and required paypal. Bitcoin can possibly take both roles and streamline the whole process. Suggested by Kiba.
 > > 
@@ -39,7 +39,7 @@ I also don't see how bitcoin could be used as a captcha, those are used to make 
 
 Agorist developers apply within.  Grin
 
-[Quote from: kiba on September 26, 2010, 12:54:44 PM](https://bitcointalk.org/index.php?topic=1268.msg14114#msg14114)
+[Quote from: kiba on September 26, 2010, 12:54:44 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-09-26-kiba-msg14114/)
 > [Quote from: Anonymous on September 26, 2010, 12:05:29 PM](https://bitcointalk.org/index.php?topic=1268.msg14112#msg14112)
 > > Quote2. Advertising clearing house like http://projectwonderful.com. Suggested by mskwik.(I used projectwonderful to make tiny bit of money. I wonder if I can get more money from a bitcoin advertising clearing house)
 > > 

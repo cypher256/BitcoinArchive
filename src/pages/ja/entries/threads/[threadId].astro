@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
-import { useTranslations, formatDate, localePath, translateParticipantName, absoluteUrl } from '../../../../i18n/utils';
+import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, absoluteUrl } from '../../../../i18n/utils';
 import { deriveThreadTitle } from '../../../../data/threads';
 
 export async function getStaticPaths() {
@@ -100,9 +100,16 @@ const breadcrumbs = [
           {i > 0 && <div class="thread-connector" />}
           <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'} id={entry.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ''}>
             <div class="message-header">
-              <a href={localePath(`/participants/${entry.data.participants.find((p: any) => p.name === entry.data.author)?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: entry.data.isSatoshi }]}>
-                {translateParticipantName(entry.data.author, entry.data.participants.find((p: any) => p.name === entry.data.author)?.slug, lang)}
-              </a>
+              {(() => {
+                const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+                const displayName = translateParticipantName(ap?.name ?? entry.data.author, ap?.slug, lang);
+                const showHandle = ap && displayName !== entry.data.author;
+                return (
+                  <a href={localePath(`/participants/${ap?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: entry.data.isSatoshi }]}>
+                    {displayName}{showHandle && <span class="author-handle">（{entry.data.author}）</span>}
+                  </a>
+                );
+              })()}
               <span class="message-date">{formatDate(entry.data.date, lang)}</span>
               <span class="message-source">
                 <a href={entry.data.sourceUrl} target="_blank" rel="noopener">原文</a>
@@ -181,6 +188,11 @@ const breadcrumbs = [
   .author-name.satoshi {
     color: var(--color-satoshi);
     font-weight: 600;
+  }
+  .author-handle {
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-text-muted);
   }
   .entry-nav {
     margin-top: 2.5rem;

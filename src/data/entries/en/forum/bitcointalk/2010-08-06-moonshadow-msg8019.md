@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: creighto on August 06, 2010, 10:27:03 PM](https://bitcointalk.org/index.php?topic=723.msg7995#msg7995)
+[Quote from: creighto on August 06, 2010, 10:27:03 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-06-moonshadow-msg7995/)
 > Imagine this picture...
 > 
 > You have a full client on your Iphone running in the background, and then there is a power failure.  You head down to the corner store, and find that the shopkeeper has put everything in the cooler on sale half price, cash or bitcoins only.  Your cellphone client connects with the shopkeeper's cell phone client over ad-hoc bluetooth.  Signs the transfer accouncement (there are no actual cryptocoins in your wallet, they exist only as a series of entries into an encrypted ledger we call the blockchain, more like writing a check than actual coins) over to the shopkeeper's address.  Shopkeeper's client can then (but does not have to) check his copy of the blockchain to verify that you actually owned said bitcoins at the time of his last blockchain update.  If it's good locally, he can assume that you are not trying to cheat him and accept the trade and you leave with your half priced milk.  This does not protect the shopkeeper from an intentional double spend, but you still had to have honestly owned the coins at one time in order to do this.  If you did not own the coins at the time the power went out, his client would have rejected the transfer.

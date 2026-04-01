@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: BeeCee1 on August 03, 2010, 03:12:42 PM](https://bitcointalk.org/index.php?topic=661.msg7249#msg7249)
+[Quote from: BeeCee1 on August 03, 2010, 03:12:42 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-beecee1-msg7249/)
 > 良いことだと言っているわけでもない。長期間にわたる単一の分裂があれば人々は解決策を考え出せるが、数時間続く分裂が何度もあるとトランザクションがランダムに消え、システムへの信頼が損なわれる。
 
 トランザクションが有効であれば消えることはない。より長いブロックチェーンに移動するだけだ。

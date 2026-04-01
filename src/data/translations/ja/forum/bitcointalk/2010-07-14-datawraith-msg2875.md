@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: TopSoil on July 14, 2010, 03:59:18 PM](https://bitcointalk.org/index.php?topic=286.msg2859#msg2859)
+[Quote from: TopSoil on July 14, 2010, 03:59:18 PM](#msg2859)
 > 引用：なぜ？メールやJabberも同じ仕組みだ。誰でも自分のサーバーを運用でき、多くの人がそうしているが、ほとんどのユーザーは他人のサーバーを使うことを好む。確かにそのように動作はするが、それが理想的なのか？それだとネットワークの堅牢性が低下し、攻撃や操作に対してより脆弱になるのではないか？
 
 実際にはそうでもない。心配なら、自分自身のサーバーをいつでも運用できる。

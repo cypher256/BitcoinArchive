@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: Red on August 07, 2010, 12:19:16 AM](https://bitcointalk.org/index.php?topic=723.msg8023#msg8023)
+[Quote from: Red on August 07, 2010, 12:19:16 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-07-red-msg8023/)
 > では、どちらが有効か？どうでもいい。コインを投げればいい。まさにBitcoinがこの状況でやっていることだ。私のノードが一方のトランザクションを含むブロックに取り組み、あなたのノードが競合するトランザクションを含むブロックに取り組んでいるなら、先にブロックを解いた方が勝つ。
 
 ここでまた混乱した。あなたのスキームにはブロックはなく、トランザクションだけだと思っていた。先に「ブロック」を解くとはどういう意味か？

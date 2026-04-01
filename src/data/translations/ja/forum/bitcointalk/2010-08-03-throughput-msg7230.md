@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: BeeCee1 on August 03, 2010, 01:07:23 PM](https://bitcointalk.org/index.php?topic=661.msg7223#msg7223)
+[Quote from: BeeCee1 on August 03, 2010, 01:07:23 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-beecee1-msg7223/)
 > 十分な数の人がネットワークを使用しており、分裂が公然の敵対行為によるものでなければ、2つのネットワーク間で断続的な接続があり得る。これはブロックチェーンの再同期に役立つが、トランザクションがランダムに消えることでシステムの信頼性を損なう可能性がある。
 > 
 > ケーブルの切断、または一連のケーブル切断が国の一群を孤立させたと想像してほしい。

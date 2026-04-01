@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: Insti on July 13, 2010, 11:34:03 PM](https://bitcointalk.org/index.php?topic=286.msg2678#msg2678)
+[Quote from: Insti on July 13, 2010, 11:34:03 PM](#msg2678)
 > 66663ブロック内の77428トランザクションは約46,752,464バイトだ。
 > トランザクションあたり約600バイト（ブロックヘッダ+データベースのオーバーヘッドを含む）になる。
 

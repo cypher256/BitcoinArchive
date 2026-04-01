@@ -1,5 +1,5 @@
 ---
-import { formatDate, localePath, translateParticipantName, useTranslations } from '../i18n/utils';
+import { formatDate, localePath, translateParticipantName, findAuthorParticipant, useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Participant {
@@ -31,11 +31,11 @@ const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)
   : localePath(`/entries/${id}/`, lang);
-const authorParticipant = participants.find((p) => p.name === author);
+const authorParticipant = findAuthorParticipant(author, participants);
 const otherParticipants = authorParticipant
   ? participants.filter((p) => p.slug !== authorParticipant.slug)
   : participants.filter((p) => p.name !== author);
-const displayAuthor = translateParticipantName(author, authorParticipant?.slug, lang);
+const displayAuthor = translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
 ---
 
 <article

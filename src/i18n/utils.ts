@@ -82,6 +82,28 @@ export async function getBiographyForParticipant(
   );
 }
 
+interface Participant {
+  name: string;
+  slug: string;
+}
+
+const authorHandleToSlug: Record<string, string> = {
+  'jgarzik': 'jeff-garzik',
+  'sirius': 'martti-malmi',
+  'laszlo': 'laszlo-hanyecz',
+  'hal': 'hal-finney',
+  'laanwj': 'wladimir-van-der-laan',
+  'slush': 'marek-palatinus',
+  'harding': 'david-harding',
+};
+
+export function findAuthorParticipant(author: string, participants: Participant[]): Participant | undefined {
+  return participants.find((p) => p.name === author)
+    || participants.find((p) => p.slug === authorHandleToSlug[author])
+    || participants.find((p) => p.slug === author)
+    || undefined;
+}
+
 export function translateParticipantName(name: string, slug: string | undefined, lang: Lang): string {
   if (lang === 'ja') {
     return getJapaneseParticipantDisplayName(name, slug);

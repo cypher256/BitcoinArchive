@@ -14,7 +14,7 @@ threadId: "bt-scalability"
 tags: []
 ---
 
-[Quote from: Insti on July 13, 2010, 11:34:03 PM](https://bitcointalk.org/index.php?topic=286.msg2678#msg2678)
+[Quote from: Insti on July 13, 2010, 11:34:03 PM](#msg2678)
 > 77428 transactions in 66663 blocks is about 46,752,464 bytes.
 > which works out to about 600 bytes per transaction (including block headers + database overheads)
 

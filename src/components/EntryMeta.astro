@@ -1,5 +1,5 @@
 ---
-import { useTranslations, formatDate, localePath, translateParticipantName, translateTag } from '../i18n/utils';
+import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Participant {
@@ -23,8 +23,8 @@ const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participant
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
-const authorParticipant = participants.find((p) => p.name === author);
-const displayAuthor = translateParticipantName(author, authorParticipant?.slug, lang);
+const authorParticipant = findAuthorParticipant(author, participants);
+const displayAuthor = translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
 ---
 
 <div class="entry-meta">

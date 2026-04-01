@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: Red on August 07, 2010, 12:19:16 AM](https://bitcointalk.org/index.php?topic=723.msg8023#msg8023)
+[Quote from: Red on August 07, 2010, 12:19:16 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-07-red-msg8023/)
 > So which one is valid? Who cares. Flip a coin. That is exactly what bitcoin does in this situation. If my node is working on a block with on transaction, and your node is working on a block with a conflicting transaction, whoever solves the block first wins.
 
 Now I'm confused again.  I thought your scheme didn't have blocks, just transactions.  What do you mean, whoever solves "the block" first?
