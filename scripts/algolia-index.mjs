@@ -19,9 +19,8 @@ const APP_ID = process.env.ALGOLIA_APP_ID;
 const ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY;
 
 if (!APP_ID || !ADMIN_KEY) {
-  console.error('Error: ALGOLIA_APP_ID and ALGOLIA_ADMIN_KEY environment variables are required.');
-  console.error('  ALGOLIA_APP_ID=xxx ALGOLIA_ADMIN_KEY=xxx node scripts/algolia-index.mjs');
-  process.exit(1);
+  console.log('Algolia index skipped (ALGOLIA_APP_ID / ALGOLIA_ADMIN_KEY not set)');
+  process.exit(0);
 }
 
 const client = algoliasearch(APP_ID, ADMIN_KEY);
