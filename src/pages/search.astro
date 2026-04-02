@@ -4,7 +4,6 @@ import { useTranslations, absoluteUrl } from '../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
@@ -16,23 +15,84 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 >
   <div class="container">
     <h1>{t('nav.search')}</h1>
-    <link href={`${base}/pagefind/pagefind-ui.css`} rel="stylesheet" />
-    <script is:inline src={`${base}/pagefind/pagefind-ui.js`}></script>
-    <div id="search"></div>
-    <script is:inline define:vars={{ searchBase: `${base}/` }}>
-      window.addEventListener('DOMContentLoaded', () => {
-        new PagefindUI({
-          element: '#search',
-          showSubResults: true,
-          baseUrl: searchBase,
-        });
-      });
-    </script>
+    <div id="searchbox"></div>
+    <div id="stats"></div>
+    <div id="hits"></div>
+    <div id="pagination"></div>
   </div>
 </BaseLayout>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
+
 <style>
-  #search {
-    margin-top: 1rem;
-  }
+  .container { max-width: 800px; margin: 0 auto; padding: 1rem; }
+  #searchbox { margin: 1rem 0; }
+  #stats { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+  .hit-item { padding: 1rem 0; border-bottom: 1px solid #eee; }
+  .hit-item a { text-decoration: none; color: inherit; display: block; }
+  .hit-item a:hover { background: #f9f9f9; }
+  .hit-title { font-size: 1.1rem; font-weight: bold; color: #c45a2c; margin-bottom: 0.25rem; }
+  .hit-meta { font-size: 0.8rem; color: #888; margin-bottom: 0.5rem; }
+  .hit-meta .satoshi { color: #c45a2c; font-weight: bold; }
+  .hit-snippet { font-size: 0.9rem; color: #444; }
+  .hit-snippet mark, .hit-title mark { background: #fff3cd; padding: 0 2px; }
+  .ais-Pagination-list { display: flex; gap: 0.5rem; list-style: none; padding: 1rem 0; justify-content: center; }
+  .ais-Pagination-item--selected .ais-Pagination-link { font-weight: bold; color: #c45a2c; }
 </style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const s1 = document.createElement('script');
+    s1.src = 'https://cdn.jsdelivr.net/npm/algoliasearch@5/dist/lite/algoliasearch.lite.umd.js';
+    document.head.appendChild(s1);
+    const s2 = document.createElement('script');
+    s2.src = 'https://cdn.jsdelivr.net/npm/instantsearch.js@4';
+    document.head.appendChild(s2);
+    s2.onload = () => {
+      const searchClient = window.algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
+
+      const search = window.instantsearch({
+        indexName: 'bitcoin_archive_en',
+        searchClient,
+      });
+
+      search.addWidgets([
+        window.instantsearch.widgets.searchBox({
+          container: '#searchbox',
+          placeholder: 'Search...',
+          autofocus: true,
+        }),
+        window.instantsearch.widgets.stats({
+          container: '#stats',
+          templates: {
+            text: (data) => `${data.nbHits} results (${data.processingTimeMS}ms)`,
+          },
+        }),
+        window.instantsearch.widgets.hits({
+          container: '#hits',
+          templates: {
+            item: (hit, { html, components }) => html`
+              <div class="hit-item">
+                <a href="${hit.url}">
+                  <div class="hit-title">${components.Highlight({ hit, attribute: 'title' })}</div>
+                  <div class="hit-meta">
+                    <span class="${hit.isSatoshi ? 'satoshi' : ''}">${hit.author}</span>
+                    ${hit.date ? ` · ${new Date(hit.date).toLocaleDateString('en-US')}` : ''}
+                    ${hit.type ? ` · ${hit.type}` : ''}
+                  </div>
+                  <div class="hit-snippet">${components.Snippet({ hit, attribute: 'body' })}</div>
+                </a>
+              </div>
+            `,
+            empty: () => '<p>No results found</p>',
+          },
+        }),
+        window.instantsearch.widgets.pagination({
+          container: '#pagination',
+        }),
+      ]);
+
+      search.start();
+    };
+  });
+</script>

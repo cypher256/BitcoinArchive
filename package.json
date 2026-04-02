@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
+    "algoliasearch": "^5.50.1",
     "astro": "^5.17.1",
+    "instantsearch.js": "^4.93.0",
     "pagefind": "^1.4.0",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
