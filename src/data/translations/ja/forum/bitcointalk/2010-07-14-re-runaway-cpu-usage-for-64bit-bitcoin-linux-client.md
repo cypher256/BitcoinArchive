@@ -22,7 +22,7 @@ translationStatus: complete
 これについて近いうちに0.3.1リリースがあるはずだ。リリース前に0.3.1で修正すべき他の問題がいくつかある。
 
 <!-- tone-skip -->
-> [Quote from: knightmb on July 12, 2010, 10:39:13 PM](#msg2409)
+[Quote from: knightmb on July 12, 2010, 10:39:13 PM](#msg2409)
 > 補足として、もう1つのGUIの問題を突き止めました。
 
 「タスクバーの代わりにトレイに最小化」が私のシステムでCPUを食い潰していた原因でした。これをオフにしたら、暴走CPUの問題は解決しました。

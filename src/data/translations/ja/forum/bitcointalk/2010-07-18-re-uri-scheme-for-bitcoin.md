@@ -17,12 +17,12 @@ threadId: "bt-uri-scheme-for-bitcoin"
 translationStatus: complete
 ---
 
-> [Quote from: lachesis on June 16, 2010, 06:14:05 AM](#msg1597)
+[Quote from: lachesis on June 16, 2010, 06:14:05 AM](#msg1597)
 > 問題を誤解していると思う。私のブラウザは常に127.0.0.1にアクセスできる（奇妙なIEの設定やウイルスがない限り）。URLバーにアドレスを入力するかリンクをクリックすれば、問題なく動作する。しかし、JavaScriptでドメイン間（または同一ドメイン上の異なるポート間）のPOSTリクエストを完了させることはできない。
 
 私もそう思っていた。
 
-> [Quote from: sirius-m on June 16, 2010, 08:26:14 AM](#msg1598)
+[Quote from: sirius-m on June 16, 2010, 08:26:14 AM](#msg1598)
 > ああ、言いたかったのはクロスドメインのJavaScript呼び出しは禁止されているということだ。つまり、127.0.0.1に存在しないJavaScriptから127.0.0.1を呼び出すことはできない。考えてみれば、もしブラウザが悪意あるクロスドメインJavaScriptで他人のFacebookページを変更できたら、かなり面白いことになるだろうな。
 
 JavaScriptが127.0.0.1へのクロスドメインPOSTリクエストを実行することが可能だという報告が入ってきた。他のドメインではなく、特にそのドメインだけだ。素晴らしい……

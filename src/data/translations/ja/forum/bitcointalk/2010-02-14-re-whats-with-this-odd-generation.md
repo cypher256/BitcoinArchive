@@ -17,11 +17,11 @@ threadId: "bt-what-s-with-this-odd-generation"
 translationStatus: complete
 ---
 
-> [Quote from: theymos on February 12, 2010, 08:31:52 AM](#msg318)
+[Quote from: theymos on February 12, 2010, 08:31:52 AM](#msg318)
 > 送信側クライアントは手数料を考慮してより多くのBitCoinを送信しますか（受取人が期待通りの額を受け取れるように）？
 はい。
 
-> [Quote from: SmokeTooMuch on February 12, 2010, 01:11:09 PM](#msg319)
+[Quote from: SmokeTooMuch on February 12, 2010, 01:11:09 PM](#msg319)
 > なぜ手数料が必要なのですか？手数料不要がBitcoinの利点の1つだと思っていたのですが？！
 ほぼすべてのトランザクションは無料だ。受け取った最大の支払い500個以上を合算して金額を作る必要がある場合に、トランザクションが最大サイズ制限を超える。サイズ制限を超えたトランザクションでも、少額の手数料を追加すれば送信できる。
 

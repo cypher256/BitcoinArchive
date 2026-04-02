@@ -17,7 +17,7 @@ threadId: "bt-stealing-coins"
 translationStatus: complete
 ---
 
-> [Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
+[Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
 > 公開鍵123456がハッシュABCDを生成すると分かったとして
 
 かつ

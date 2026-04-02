@@ -17,7 +17,7 @@ threadId: "bt-questions-about-addresses"
 translationStatus: complete
 ---
 
-> [Quote from: Sabunir on February 05, 2010, 05:31:30 PM](#msg246)
+[Quote from: Sabunir on February 05, 2010, 05:31:30 PM](#msg246)
 > これに対する機能があるべきでは？例えば、トランザクションが受取人によって長期間（1ヶ月？）受け入れられない場合、トランザクションがキャンセルされてコインが送信者に返されるとか？
 
 それは不可能だ。お金の管理を受取人の鍵ペアに渡してしまっている。その鍵だけがそれを管理できる。

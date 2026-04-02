@@ -23,8 +23,8 @@ translationStatus: complete
 
 最新のブロックが送信される10分程度ごとに、より速いノードに切り替える機会があるはずだ。最新のブロックがブロードキャストされると、他のノードに次の500ブロックを要求し、最も速く送信するノードからダウンロードを継続する。少なくとも、そのように動作するはずだ。
 
-> [Quote from: jgarzik on November 26, 2010, 02:07:43 AM](#msg24522)
-> [Quote from: satoshi on November 25, 2010, 05:51:39 PM](#msg24438)
+[Quote from: jgarzik on November 26, 2010, 02:07:43 AM](#msg24522)
+[Quote from: satoshi on November 25, 2010, 05:51:39 PM](#msg24438)
 > Berkeley DBの設定を調整して、キャッシュメモリを有効化または増加できるかもしれない。
 
 ダウンロード中に、[ACID](http://en.wikipedia.org/wiki/ACID)プロパティのどれが必要ですか？

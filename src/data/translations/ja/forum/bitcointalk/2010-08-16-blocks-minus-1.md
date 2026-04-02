@@ -27,8 +27,8 @@ translationStatus: complete
 ここで起きた混乱を軽減できるだろう：
 
 <!-- tone-skip -->
-> [Quote from: kencausey on August 15, 2010, 11:45:26 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-kencausey-msg9588/)
-> [Deleted] Quote from: davidonpda on August 15, 2010, 11:31:37 PM
+[Quote from: kencausey on August 15, 2010, 11:45:26 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-kencausey-msg9588/)
+[Deleted] Quote from: davidonpda on August 15, 2010, 11:31:37 PM
 > ... すでにブロック74638にいます。そのブロックは今は正しいものだということでしょうか？
 
 私自身もこの件で混乱があり、#bitcoin-devで明確化してもらいました：

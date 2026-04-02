@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: db on July 15, 2010, 08:39:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-15-db-msg3278/)
+[Quote from: db on July 15, 2010, 08:39:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-15-db-msg3278/)
 > listreceivedbyaddressとgetreceivedbyaddressコマンドがbitcoindのヘルプで重複しています。（0.3.0でも同様。）
 <!-- /tone-skip -->
 

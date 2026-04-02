@@ -17,7 +17,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: knightmb on July 23, 2010, 07:32:58 PM](#msg5369)
+[Quote from: knightmb on July 23, 2010, 07:32:58 PM](#msg5369)
 > 7万の最初の部分は約20分でダウンロードされ、残りの2000ブロックは約7分なので、0から100%までわずか27分。素晴らしい！ 最後の2000ブロックで停止する安全上の理由はあるのか、それとも例えば残り500ブロックで停止するよう調整できるか？
 > 参考までに、各ダウンロードバーストの平均ダウンロード速度は約3 Mbpsだった。
 

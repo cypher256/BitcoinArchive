@@ -17,7 +17,7 @@ threadId: "bt-bitcoin-address-collisions"
 translationStatus: complete
 ---
 
-> [Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](#msg450)
+[Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](#msg450)
 > 生成されたBitcoinは、メインのBitcoinウィンドウに現在表示されているアドレスで暗号化されますか？
 いいえ、生成された各トランザクションは新しい使い捨てアドレスを使用する。
 

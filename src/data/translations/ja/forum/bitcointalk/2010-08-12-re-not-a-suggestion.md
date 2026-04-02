@@ -17,8 +17,8 @@ threadId: "bt-not-a-suggestion"
 translationStatus: complete
 ---
 
-> [Quote from: Red on August 12, 2010, 01:10:19 AM](#msg8824)
-> [Quote from: satoshi on August 11, 2010, 09:07:59 PM](#msg8798)
+[Quote from: Red on August 12, 2010, 01:10:19 AM](#msg8824)
+[Quote from: satoshi on August 11, 2010, 09:07:59 PM](#msg8798)
 > クライアントは元の生成されたコインまでの全履歴を保持する必要があると思う。クライアントが全履歴を保持しなければならないという事実は、プライバシーの利点を減少させる。
 
 私も最初はそう思った。しかし、その後自分を納得させた。

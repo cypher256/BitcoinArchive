@@ -19,8 +19,8 @@ translationStatus: complete
 creighto：そのアイデアに同意する。数時間後には、ブロックの流れが偶然の範囲を超えて減少していないか、クライアントが気づけるようになるはずだ。世界のハム音が聞こえなくなったかどうかがわかるだろう。
 
 <!-- tone-skip -->
-> [Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-knightmb-msg7303/)
-> [Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-gavin-andresen-msg7293/)
+[Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-knightmb-msg7303/)
+[Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-gavin-andresen-msg7293/)
 > あるいは分断が十分長く続いた場合（100ブロック以上）、短い方のチェーンで生成されたコインを含むトランザクションは、マージ時に無効になります。
 
 興味深い情報です。つまり、二重支払いの問題以外は、ブロックチェーンが100ブロック程度（または16時間以上）分離しない限り、
@@ -28,7 +28,7 @@ creighto：そのアイデアに同意する。数時間後には、ブロック
 実際には、分断は非常に非対称になりやすい。世界を真っ二つに分けるのは難しいだろう。むしろ一国対それ以外の世界という形になりやすく、例えば1:10の分割とする。その場合、少数派フォークが100ブロック生成するのに10倍の時間がかかり、約7日になる。また、クライアントにとってブロック数が少なすぎて何かがおかしいと気づくのは非常に簡単だろう。
 
 <!-- tone-skip -->
-> [Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-knightmb-msg7303/)
+[Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-knightmb-msg7303/)
 > 分断遅延にハードコードされた制限はありますか？ つまり、小さなネットワークを公開ネットワークから分離して、コインを使い回し、数日後に公開ネットワークと同期させた場合（コイン生成を除いて）、トランザクションは問題ないですか？
 
 <!-- /tone-skip -->

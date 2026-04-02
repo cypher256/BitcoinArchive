@@ -19,7 +19,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: BioMike on August 25, 2010, 06:23:45 PM](#msg11162)
-> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)
+[Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)
 > > [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)
 > > > では、理論的にこれは<ある政府>がサトシを逮捕して鍵を引き渡すよう（またはコンピュータから取得して）要求し、ネットワーク全体をシャットダウンできる最初の制御システムなのか？
 > > > それとも不可能なのか？<ある政府>はどこまでできるのか？

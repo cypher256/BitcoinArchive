@@ -20,7 +20,7 @@ translationStatus: complete
 全員が同じIRCサーバーとチャネルに接続して、互いを見つけられるようにする必要がある。
 
 <!-- tone-skip -->
-> [Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
+[Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
 > Freenodeをフォールバックサーバーとして残しておいた方がいいかもしれません -- 彼のサーバーが動かない場合はFreenodeを使えるように。
 <!-- /tone-skip -->
 大量のユーザーが一度にFreenodeに殺到するのはよくないかもしれない。

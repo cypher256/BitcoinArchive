@@ -20,7 +20,7 @@ translationStatus: complete
 そうだ、SVNにはほぼリリース候補の0.2ソースがあり、Linux上でもビルド・実行が可能だ。FreeBSDではテストされていない。
 
 <!-- tone-skip -->
-> [Quote from: madhatter2 on December 11, 2009, 04:59:19 AM](#msg47)
+[Quote from: madhatter2 on December 11, 2009, 04:59:19 AM](#msg47)
 > 動作するバックエンドプロセスがFreeBSD上で実行できるようになれば、常時稼働のシードを運用できます。
 <!-- /tone-skip -->
 それは大きな助けになるだろう。TORユーザーはシードの取得方法を心配する必要がなくなり、IRCに依存しなくてもよくなる。

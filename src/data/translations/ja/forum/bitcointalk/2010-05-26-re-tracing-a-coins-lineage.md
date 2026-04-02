@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: Xunie on May 26, 2010, 12:50:04 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-05-26-xunie-msg1242/)
+[Quote from: Xunie on May 26, 2010, 12:50:04 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-05-26-xunie-msg1242/)
 > ユーザーに支払い受取時に新しいアドレスの使用を強制することはできませんか？
 支払いを受け取るたびに、アドレスバーに別のビットコインアドレスを表示する。（もちろんビットコインアドレス経由のトランザクションのみで、IPではない。IPでは意味がないからだ）
 実際のキーは保持され、同じアドレスに送金する人からの支払いもユーザーが引き続き受け取れるようにする。

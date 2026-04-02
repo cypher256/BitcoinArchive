@@ -19,7 +19,7 @@ translationStatus: complete
 
 Windowsにmmap(2)があるとは思えない。自作のものを作ってテストするよりも、既存のファイルコピー関数を呼び出す方が良い。
 
-> [Quote from: nelisky on August 27, 2010, 01:21:09 AM](#msg11346)
+[Quote from: nelisky on August 27, 2010, 01:21:09 AM](#msg11346)
 > しかし、boost::filesystemの機能をすでに使っているなら、そこからcopy_fileを使える。ただ、他のことで必要でなければ、少しやりすぎだと思うだけだ。
 
 ありがとう。どこかにあるだろうと思っていた。

@@ -17,7 +17,7 @@ threadId: "bt-version-0-3-9-rc1-please-test"
 translationStatus: complete
 ---
 
-> [Quote from: jgarzik on August 15, 2010, 05:46:27 PM](#msg9467)
+[Quote from: jgarzik on August 15, 2010, 05:46:27 PM](#msg9467)
 > 自分の功績でないところでクレジットは受けたくない :)
 > hashes/秒のパッチはlachesisによるもので、拡張ヘルプは自分のアイデアに基づいているかもしれないが、コードはかなり異なっていた。
 

@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: lachesis on August 10, 2010, 03:24:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-10-lachesis-msg8544/)
+[Quote from: lachesis on August 10, 2010, 03:24:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-10-lachesis-msg8544/)
 > また、BitcoinはBerkeleyDBを排他的に開き、ファイルロックの必要性を排除しているのか？そうではない -- 自分でテストした。
 
 BerkeleyDBを排他的に開く方法はあるか？

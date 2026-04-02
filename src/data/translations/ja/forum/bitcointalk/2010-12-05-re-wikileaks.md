@@ -21,7 +21,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: RHorning on December 04, 2010, 10:17:44 PM](#msg26876)
+[Quote from: RHorning on December 04, 2010, 10:17:44 PM](#msg26876)
 > 要するに、かかってこい。WikiLeaksにBitcoinの使用を勧めよう。その行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。
 > -- Robert S. Horning
 > ユタ州ローガン

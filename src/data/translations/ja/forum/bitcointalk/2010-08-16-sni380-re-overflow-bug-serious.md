@@ -17,7 +17,7 @@ threadId: "bt-overflow-bug-serious"
 translationStatus: complete
 ---
 
-> [Quote from: kosovito on August 16, 2010, 12:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-kosovito-msg9615/)
+[Quote from: kosovito on August 16, 2010, 12:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-kosovito-msg9615/)
 > すべての手順を実行した。現在クライアントは0.3.10で、ブロック74638で止まっている。これで問題ないか？
 
 まだ74638ブロックと表示されているなら、0.3.10のノードに接続されていない。

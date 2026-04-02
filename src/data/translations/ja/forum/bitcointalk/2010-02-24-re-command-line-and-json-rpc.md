@@ -17,8 +17,8 @@ threadId: "bt-command-line-and-json-rpc"
 translationStatus: complete
 ---
 
-> [Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
-> [Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)
+[Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
+[Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)
 > LinuxではGTK2.0-0がインストールされている必要がある。
 
 この要件はいつか解消されますか？GTKを扱いたくないのですが。

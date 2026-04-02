@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 [Quote from: Insti on August 10, 2010, 02:53:41 PM](#msg8541)
-> [Quote from: throughput on August 10, 2010, 10:13:30 AM](#msg8508)
+[Quote from: throughput on August 10, 2010, 10:13:30 AM](#msg8508)
 > > ところで、いつかネットワークをテストしないか？
 > > 既知のアドレスのリストに小さなトランザクションを送信するプロセスを自動化するのは簡単だ。
 > > ネットワークを酷使して、影響を正確に把握しよう。

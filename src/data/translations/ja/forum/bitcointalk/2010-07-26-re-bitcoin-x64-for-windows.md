@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: Olipro on July 26, 2010, 06:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-26-olipro-msg5815/)
+[Quote from: Olipro on July 26, 2010, 06:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-26-olipro-msg5815/)
 > SHAコンテキストのキャッシュ部分はtcatmの功績です -- これは見事なパフォーマンスを提供します。さらに、Intelコンパイラはここで真価を発揮し、その並列化能力がVisual Studioに対して大幅なパフォーマンス向上をもたらしています。
 
 パフォーマンス: 4コアで4700khash/s、これは結果が物語っていると思います。

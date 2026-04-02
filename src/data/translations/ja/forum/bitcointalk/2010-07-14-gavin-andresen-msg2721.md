@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 [Quote from: spaceshaker on July 14, 2010, 01:52:00 AM](#msg2714)
-> [Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
+[Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
 > > そしてほとんどの人は、ウォレットの保持、トランザクションの署名、そしてすべてのトランザクションを監視している超高速ノードへのトランザクションの送受信だけを行う軽量クライアントを使うことになるだろう。
 > 
 > 

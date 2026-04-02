@@ -17,7 +17,7 @@ threadId: "bt-bitdns-and-generalizing-bitcoin"
 translationStatus: complete
 ---
 
-> [Quote from: nanotube on December 09, 2010, 09:20:40 PM](#msg28700)
+[Quote from: nanotube on December 09, 2010, 09:20:40 PM](#msg28700)
 > マイナーは基本的に「追加の作業」をしなければならないようだ。その追加作業（当然メインのBitcoin作業を遅くする）に対するBitDNSマイニングからの報酬がないなら、マイナーがBitDNS（やその他のサイドチェーン）を含めるインセンティブは何か？
 > これについてのさらなる考えを聞くのがとても楽しみだ。 :)
 

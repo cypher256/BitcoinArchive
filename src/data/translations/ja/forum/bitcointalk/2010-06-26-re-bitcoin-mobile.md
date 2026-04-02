@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: sirius-m on June 10, 2010, 01:51:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-10-sirius-msg1452/)
+[Quote from: sirius-m on June 10, 2010, 01:51:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-10-sirius-msg1452/)
 > もちろん、信頼する範囲でvekja.netやmybitcoin.comのようなサービスをモバイルブラウザで使い、そこにお金を預けることができます。
 <!-- /tone-skip -->
 今のところそれが最善の選択肢だと思う。現金と同じで、全財産をポケットに入れて歩き回るのではなく、日常の少額出費用のお小遣いだけだ。

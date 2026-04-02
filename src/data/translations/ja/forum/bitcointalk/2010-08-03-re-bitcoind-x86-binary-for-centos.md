@@ -17,7 +17,7 @@ threadId: "bt-bitcoind-x86-binary-for-centos"
 translationStatus: complete
 ---
 
-> [Quote from: sgtstein on August 03, 2010, 05:30:37 PM](#msg7275)
+[Quote from: sgtstein on August 03, 2010, 05:30:37 PM](#msg7275)
 > 4.8でのビルドには成功した。4.7ではどうしてもダメだったが、4.8だと初期ブロックダウンロードをディスクに書き出す際にbitcoindがフリーズする。
 
 BDB 4.8を使わないよう強く勧める。あなたのビルドを使った人が公式ビルドに戻った場合、database/log0000*ファイルに互換性がなくなる。

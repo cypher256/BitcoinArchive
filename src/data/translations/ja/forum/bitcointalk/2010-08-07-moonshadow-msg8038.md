@@ -15,7 +15,7 @@ translationStatus: complete
 ---
 
 [Quote from: NewLibertyStandard on August 06, 2010, 11:55:47 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-06-newlibertystandard-msg8021/)
-> [Quote from: creighto on August 06, 2010, 11:42:31 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-06-moonshadow-msg8019/)
+[Quote from: creighto on August 06, 2010, 11:42:31 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-06-moonshadow-msg8019/)
 > > これらの例はすべて何らかの二者間の信頼を含むが、両者が第三者を信頼する必要があるものは1つもない。ブロックチェーンの検証さえも。
 >
 > 信頼できない相手と取引する際には、信頼できる第三者は非常に有用だ。

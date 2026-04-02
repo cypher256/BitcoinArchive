@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
+[Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
 > バグと思われるものを見つけました: ユーザー名とパスワードの組み合わせが十分に長い場合、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成します:
 
 Code:...

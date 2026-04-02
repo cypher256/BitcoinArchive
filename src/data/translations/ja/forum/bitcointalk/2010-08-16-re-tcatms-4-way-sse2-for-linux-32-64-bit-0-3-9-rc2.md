@@ -17,13 +17,13 @@ threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 translationStatus: complete
 ---
 
-> [Quote from: tcatm on August 16, 2010, 12:43:39 AM](#msg9617)
+[Quote from: tcatm on August 16, 2010, 12:43:39 AM](#msg9617)
 > sha256.cppを-O3 -march=amdfamk10でコンパイルすることを提案する（32ビットと64ビットの両方で動作する）。この命令セットをサポートするCPU（AMD Phenom、Intel i5以降）のみが-4wayの恩恵を受け、パフォーマンスが約9%向上する。
 
 GCC 4.3.3は-march=amdfamk10をサポートしていない。以下のエラーが出る：
 sha256.cpp:1: error: bad value (amdfamk10) for -march= switch
 
-> [Quote from: NewLibertyStandard on August 16, 2010, 01:49:01 AM](#msg9630)
+[Quote from: NewLibertyStandard on August 16, 2010, 01:49:01 AM](#msg9630)
 > ハイパースレッディングが有効かどうか、物理コア数、Bitcoinが使用しているコア数のカラムを追加した方がいいかもしれない。4wayなしだと、仮想コアの半分でハッシュした方がわずかに良い結果が出る。4wayありだと、すべての仮想コアを有効にした方がかなり良いパフォーマンスが出る。ハイパースレッディングをオフにすると、4wayの有無にかかわらず同じくらいのハッシュ量になると思う。
 
 おお、何か重要な発見をしたかもしれないな！

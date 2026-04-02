@@ -17,7 +17,7 @@ threadId: "bt-bitcoin-x86-for-windows"
 translationStatus: complete
 ---
 
-> [Quote from: Olipro on July 26, 2010, 01:04:41 PM](#msg5851)
+[Quote from: Olipro on July 26, 2010, 01:04:41 PM](#msg5851)
 > Crypto++ 5.6.0: [http://www.cryptopp.com/](http://www.cryptopp.com/)
 
 Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32)（これは他の場所でも公開されていると思いますが、IRCでリンクを教えてもらいました）

@@ -22,7 +22,7 @@ OK、wxBaseのみをリンクしGTKをリンクしないビルドターゲット
 ui.cppから初期化とシャットダウンの処理をinit.cppに分離したので、ui.cppは純粋なUIのみになった。ui.hはwxUSE_GUI=0の場合にインラインスタブを提供する。ノードからUIへのインターフェース関数は4つだけだ。bitcoindビルドでは、ui.oやuibase.oはリンクしない。
 
 <!-- tone-skip -->
-> [Quote from: sirius-m on February 25, 2010, 04:32:17 PM](#msg538)
+[Quote from: sirius-m on February 25, 2010, 04:32:17 PM](#msg538)
 > すぐに増加し始めました。valgrindが役立つか試してみます。
 <!-- /tone-skip -->
 何かUIの処理が失敗したか、正しく初期化されなかったために、wxWidgets内で無限にリトライしているような感じがする。初期化失敗を無視して実行を続けるハックは、未知の領域に入ることを意味する。このモードではwxをほとんど使用しないという事実に頼っている。wxGetTranslationやwxMutexなど、いくつかは引き続き使用している。

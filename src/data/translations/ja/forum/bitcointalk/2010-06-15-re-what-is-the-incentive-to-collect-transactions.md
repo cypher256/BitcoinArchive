@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: theymos on June 05, 2010, 04:26:09 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-05-theymos-msg1373/)
+[Quote from: theymos on June 05, 2010, 04:26:09 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-06-05-theymos-msg1373/)
 > 作業中のブロックにトランザクションを追加すると、生成速度が低下します
 <!-- /tone-skip -->
 前提が間違っている。作業中のブロックにトランザクションを追加しても、生成速度は低下しない。生成がハッシュをスキャンする際、ブロックのヘッダーのみをハッシュするが、これは固定サイズだ。ヘッダーにはトランザクションのハッシュ（Merkleルート）が含まれており、たまにしか更新されない。

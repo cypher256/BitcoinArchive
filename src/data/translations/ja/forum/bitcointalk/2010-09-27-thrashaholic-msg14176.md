@@ -15,7 +15,7 @@ translationStatus: complete
 ---
 
 [Quote from: kiba on September 23, 2010, 08:10:38 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-23-kiba-msg13869/)
-> [Quote from: mskwik on September 23, 2010, 07:14:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-23-mskwik-msg13855/)
+[Quote from: mskwik on September 23, 2010, 07:14:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-23-mskwik-msg13855/)
 > > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-23-kiba-msg13828/)
 > > > > 1. rapidshareや他のダウンロードサイト。不便なcaptchaとPayPalが必要。Bitcoinで両方を代替し効率化できる可能性。Kibaの提案。
 > > 
@@ -41,7 +41,7 @@ Bitcoinがcaptchaとして使えるとも思わない。それは人間確認用
 アゴリスト開発者募集中。
 
 [Quote from: kiba on September 26, 2010, 12:54:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-26-kiba-msg14114/)
-> [Quote from: Anonymous on September 26, 2010, 12:05:29 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-26-anonymous-msg14112/)
+[Quote from: Anonymous on September 26, 2010, 12:05:29 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-26-anonymous-msg14112/)
 > > 引用2. projectwonderful.comのような広告清算所。mskwikの提案。
 > > 
 > > Bitcoinビジネスディレクトリに取り組んでいるので広告清算所は自然に合う。もう1～2人のDrupal開発者がいればもっと早く完成する。

@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 [Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
-> [Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM](#msg14997)
+[Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM](#msg14997)
 > > それは良いが、自動4way検出がGentoo AMD 64版のクライアントで動いていない。
 > > 
 > > まだ"-4way"スイッチを追加する必要がある。

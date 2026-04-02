@@ -17,7 +17,7 @@ threadId: "bt-overflow-bug-serious"
 translationStatus: complete
 ---
 
-> [Quote from: trebronics on August 16, 2010, 01:02:35 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-goldrush-msg9625/)
+[Quote from: trebronics on August 16, 2010, 01:02:35 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-goldrush-msg9625/)
 > クライアントを実行しているほとんどの人はこのメッセージスレッドを読んでいない。では...素朴な質問だ：
 
 1) これはバージョン3.8.1（大災害前）の不正なブロックチェーンを持つクライアントにどのような影響を与え続けますか？

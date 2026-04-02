@@ -17,7 +17,7 @@ threadId: "bt-version-0-3-13-please-upgrade"
 translationStatus: complete
 ---
 
-> [Quote from: tcatm on October 03, 2010, 07:45:45 PM](#msg15111)
+[Quote from: tcatm on October 03, 2010, 07:45:45 PM](#msg15111)
 > ソースを含めてもらえないか？あるいはそれらのトランザクションのdiffの方がいい。自分の983 Mhash/sのマシンで実行できる。
 
 本当ですか？それはどんなハードウェアですか？

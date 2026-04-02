@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: Xunie on February 23, 2010, 12:28:27 PM](#msg439)
+[Quote from: Xunie on February 23, 2010, 12:28:27 PM](#msg439)
 > */etc/init.d/gdm start* でgdmが起動します！
 <!-- /tone-skip -->
 ああ、そうだ、元に戻った。

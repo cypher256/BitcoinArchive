@@ -19,7 +19,7 @@ translationStatus: complete
 
 まだであれば、thashのアラインを試してみてほしい。効果があるかもしれない。損にはならない。
 
-> [Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
+[Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
 > ツリーオプティマイザーのコンパイラバグを踏んでいるようだ。-O0でコンパイルしてみてくれないか？
 
 -O0でも効果なし、同じエラーだ。

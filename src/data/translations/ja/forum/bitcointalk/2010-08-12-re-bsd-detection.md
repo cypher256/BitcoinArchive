@@ -17,7 +17,7 @@ threadId: "bt-bsd-detection"
 translationStatus: complete
 ---
 
-> [Quote from: dkaparis on August 11, 2010, 11:00:16 PM](#msg8807)
+[Quote from: dkaparis on August 11, 2010, 11:00:16 PM](#msg8807)
 > headers.hにこのコードがある：
 
 #ifdef __WXMAC_OSX__

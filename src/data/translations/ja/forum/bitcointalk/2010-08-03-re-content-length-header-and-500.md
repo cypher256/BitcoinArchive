@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: gavinandresen on August 03, 2010, 06:56:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-gavin-andresen-msg7299/)
-> [Quote from: jgarzik on August 03, 2010, 06:09:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-jgarzik-msg7288/)
+[Quote from: gavinandresen on August 03, 2010, 06:56:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-gavin-andresen-msg7299/)
+[Quote from: jgarzik on August 03, 2010, 06:09:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-03-jgarzik-msg7288/)
 > bitcoinはContent-Lengthヘッダーを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダーがない場合、bitcoinは500 Internal Server Errorを返す。
 
 Content-Lengthを提供しないJSONライブラリを具体的に教えてもらえますか？ ドキュメント化できると良いのですが。

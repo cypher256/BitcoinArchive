@@ -17,7 +17,7 @@ threadId: "bt-0-3-almost-ready"
 translationStatus: complete
 ---
 
-> [Deleted] Quote from: davidonpda on June 22, 2010, 06:23:26 PM
+[Deleted] Quote from: davidonpda on June 22, 2010, 06:23:26 PM
 > EXCEPTION: 22DbRunRecoveryException
 DBENv::open: DB_RUNRECOVERY: Fatal error, run database recovery
 C:\Program Files\Bitcoin\bitcoin.exe in OnInit()

@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](#msg68)
+[Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](#msg68)
 > 最新バージョンのUbuntu Linuxでも同じstd::stringの問題が発生しています。
 <!-- /tone-skip -->
 それなら、wxWidgetsのビルドまたは設定で何か異なることをしているはずだ。

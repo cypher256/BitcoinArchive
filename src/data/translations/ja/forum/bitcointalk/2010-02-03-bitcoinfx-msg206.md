@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 [Quote from: sirius-m on February 02, 2010, 12:34:08 PM](#msg203)
-> [Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM](#msg202)
+[Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM](#msg202)
 > > ありがとう、それは理解している。ポート8333は24時間稼働のBitcoinマシンに正しくフォワードしてある。
 > > 
 > > しかし、同じIPで2台のマシンがBitcoinを動かしていて、どちらもポート8333がフォワードされていない場合はどうなるか？

@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: Xunie on May 14, 2010, 09:52:53 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-05-14-xunie-msg1124/)
+[Quote from: Xunie on May 14, 2010, 09:52:53 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-05-14-xunie-msg1124/)
 > ユーザーがプロキシを使用している間はIPトランザクションを無効にすることを提案します！
 <!-- /tone-skip -->
 安全のために。

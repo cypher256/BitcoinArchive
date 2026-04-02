@@ -22,7 +22,7 @@ translationStatus: complete
 
 より一般的な包括的な部分解決策は、受信ブロック数の異常な減少を検出するアイデアを実装することだ。そうすれば、攻撃者がDoS攻撃から利益を得るにはネットワークパワーのかなりの部分が必要になる。
 
-> [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-11-gavin-andresen-msg8761/)
+[Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-11-gavin-andresen-msg8761/)
 > BitcoinのP2Pネットワークはさまざまな種類のサービス拒否攻撃を受ける可能性がある。
 
 はい、そう言った。

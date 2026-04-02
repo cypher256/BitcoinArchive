@@ -17,7 +17,7 @@ threadId: "bt-overflow-bug-serious"
 translationStatus: complete
 ---
 
-> [Quote from: Joozero on August 15, 2010, 11:32:43 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-hostfat-msg9582/)
+[Quote from: Joozero on August 15, 2010, 11:32:43 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-hostfat-msg9582/)
 > これについて何か追加すべきだと思います：[http://bitcointalk.org/index.php?topic=259.0](http://bitcointalk.org/index.php?topic=259.0)
 
 必要な場合に警告メッセージを表示するラベルがクライアントにあるべきだ。

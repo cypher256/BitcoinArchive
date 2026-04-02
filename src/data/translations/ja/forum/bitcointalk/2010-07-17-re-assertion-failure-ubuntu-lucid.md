@@ -17,7 +17,7 @@ threadId: "bt-assertion-failure-ubuntu-lucid"
 translationStatus: complete
 ---
 
-> [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)
+[Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)
 > ブロックファイルを移動した…全部再処理している。コインが消えたが、最新まで追いつけば戻ってくると思っていいか？
 
 その通りだ。すべてのブロックのダウンロードが完了すれば再表示される。

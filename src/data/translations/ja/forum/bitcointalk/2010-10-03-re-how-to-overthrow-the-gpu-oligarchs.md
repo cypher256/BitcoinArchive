@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: theymos on October 02, 2010, 06:11:11 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-10-02-theymos-msg14966/)
-> [Quote from: lzsaver on October 02, 2010, 05:49:47 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-10-02-lz-msg14960/)
+[Quote from: theymos on October 02, 2010, 06:11:11 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-10-02-theymos-msg14966/)
+[Quote from: lzsaver on October 02, 2010, 05:49:47 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-10-02-lz-msg14960/)
 > これについてもっと教えてもらえますか：
 
 「extraNonceで奇妙なことをしなければならず、それがブロックヘッダのサイズを増加させる」

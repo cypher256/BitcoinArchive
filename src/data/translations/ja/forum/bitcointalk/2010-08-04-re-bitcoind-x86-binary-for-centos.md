@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: knightmb on August 03, 2010, 11:46:46 PM](#msg7365)
+[Quote from: knightmb on August 03, 2010, 11:46:46 PM](#msg7365)
 > 2つのバージョンがあります。1つはストックコードからビルドしたもの、もう1つは最大1,000ノードを受け入れるように変更したものです（そのためスーパーノードという名前です）
 <!-- /tone-skip -->
 

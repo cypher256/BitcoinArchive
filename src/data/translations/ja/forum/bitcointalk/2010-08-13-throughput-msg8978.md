@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 [Quote from: aceat64 on August 12, 2010, 05:02:43 PM](#msg8906)
-> [Quote from: throughput on August 12, 2010, 03:28:43 PM](#msg8897)
+[Quote from: throughput on August 12, 2010, 03:28:43 PM](#msg8897)
 > > 間違いなく、各ノードにネットワーク全体のhpsメーターが必要だ。
 > >
 > > やっとあの記事を見つけた：

@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM](#msg1203)
+[Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM](#msg1203)
 > Ubuntuの新しいデフォルトテーマではBitcoinの見た目が悪いです。テーマ設定の一部は反映されていますが、すべてではないようです。選択されていないファイルメニューは暗い背景に明るい文字であるべきですが、誤って明るい背景に明るい文字になっています。私のディスプレイでは読めないほど似ています。次の安定版リリースまでに修正すべきです。
 <!-- /tone-skip -->
 SVNバージョンで修正した。

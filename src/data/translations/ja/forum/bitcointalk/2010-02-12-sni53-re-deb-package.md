@@ -17,7 +17,7 @@ threadId: "bt-deb-package"
 translationStatus: complete
 ---
 
-> [Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM
+[Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM
 > 必要でしたら、コンパイル済みバイナリを提供できますよ。
 
 何か見落としているだろうか？bitcoin.orgの32ビットLinuxプリコンパイル済みバイナリに問題があるか？

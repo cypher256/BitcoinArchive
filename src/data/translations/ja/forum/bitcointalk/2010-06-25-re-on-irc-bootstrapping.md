@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: laszlo on June 14, 2010, 06:30:58 PM](#msg1580)
+[Quote from: laszlo on June 14, 2010, 06:30:58 PM](#msg1580)
 > 使えるIRCサーバーを運用しています。かなり安定していますが、冗長な接続はありません。今のところ2台のサーバーだけですが、特にいじったりはしていません。ただ動いています。
 
 私のマシンは専用のIRCサーバーです:

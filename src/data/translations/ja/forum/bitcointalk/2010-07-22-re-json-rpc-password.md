@@ -17,7 +17,7 @@ threadId: "bt-json-rpc-password"
 translationStatus: complete
 ---
 
-> [Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](#msg4908)
+[Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](#msg4908)
 > TODO: rpc.user/rpc.passwordが設定されていない場合、設定方法を説明するダイアログボックスまたはdebug.logの警告。
 
 このRPC関連の多くのコンテキストでは、fprintf(stdoutでコンソールに出力できる。このように:

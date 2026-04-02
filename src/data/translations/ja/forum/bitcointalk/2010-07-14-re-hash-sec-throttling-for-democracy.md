@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-> [Quote from: knightmb on July 14, 2010, 07:17:43 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-14-knightmb-msg2917/)
+[Quote from: knightmb on July 14, 2010, 07:17:43 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-14-knightmb-msg2917/)
 > つまり、あなたのコンピュータがブロック68000の解決に向けて1%しか進んでいなかったら
 これはよくある混乱のポイントだ。ブロック解決に向けて1%進んでいるというようなことはない。解決に向けて進捗することはないのだ。24時間作業した後でも、解決できる確率は開始時やどの瞬間と同じだ。
 

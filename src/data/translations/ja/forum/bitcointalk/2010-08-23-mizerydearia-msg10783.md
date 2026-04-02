@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 [Quote from: lfm on August 23, 2010, 05:28:14 AM](#msg10748)
-> [Quote from: FreeMoney on August 23, 2010, 05:23:13 AM](#msg10745)
+[Quote from: FreeMoney on August 23, 2010, 05:23:13 AM](#msg10745)
 > > 1人がメッセージを送信できるというアイデア自体が好きではない。今はその人を信頼していても、後で信頼しなくなるかもしれないし、別の人になるかもしれないし、拷問/買収/脅迫されるかもしれない。
 > 
 > 

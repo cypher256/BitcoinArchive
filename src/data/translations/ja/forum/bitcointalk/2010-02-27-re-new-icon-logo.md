@@ -18,7 +18,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-> [Quote from: Cdecker on February 27, 2010, 03:24:07 AM](#msg565)
+[Quote from: Cdecker on February 27, 2010, 03:24:07 AM](#msg565)
 > SVGバージョンはどうですか？それなら必要に応じて自動的に小さいバージョンや大きいバージョンを生成できます。
 <!-- /tone-skip -->
 SVGのやり方はわからないが、オリジナルは幅500ピクセル以上の非常に大きなサイズで作ったので、縮小できる。完成したらオリジナルを提供する。
