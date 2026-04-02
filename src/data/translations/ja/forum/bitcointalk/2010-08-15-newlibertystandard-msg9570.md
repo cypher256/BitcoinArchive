@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-[Quote from: davidonpda on August 15, 2010, 10:41:29 PM](https://bitcointalk.org/index.php?topic=823.msg9569#msg9569)
+[Deleted] Quote from: davidonpda on August 15, 2010, 10:41:29 PM
 > 74637でちょうど持っていると既に言った。
 >
 > サトシは74,000以前である必要があると言った。

@@ -18,7 +18,7 @@ threadId: "bt-28-days-without-generation-i-have-4200khash-s"
 
 Search debug.log for "proof-of-work found".  If you find any, then check for any errors right after that.
 
-[Quote from: davidonpda on August 19, 2010, 07:43:01 PM](https://bitcointalk.org/index.php?topic=862.msg10291#msg10291)
+[Deleted] Quote from: davidonpda on August 19, 2010, 07:43:01 PM
 > How big of a margin on the time is allowed for things to work right.
 
 The margin is 2 hours.

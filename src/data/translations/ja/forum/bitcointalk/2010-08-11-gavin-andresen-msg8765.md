@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-[Quote from: davidonpda on August 11, 2010, 04:19:43 PM](https://bitcointalk.org/index.php?topic=788.msg8764#msg8764)
+[Deleted] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
 > [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-11-gavin-andresen-msg8761/)
 > > + クライアント間の接続プロセスの一部としてある程度のプルーフ・オブ・ワークを要求する（「シビル」攻撃の防止に役立つ）。
 >

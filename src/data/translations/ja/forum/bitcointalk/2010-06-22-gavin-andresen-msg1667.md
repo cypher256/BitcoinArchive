@@ -15,7 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
-[Quote from: davidonpda on June 22, 2010, 02:55:37 PM](https://bitcointalk.org/index.php?topic=43.msg1666#msg1666)
+[Deleted] Quote from: davidonpda on June 22, 2010, 02:55:37 PM
 > オプションメニューでオンオフを切り替えられるようにして、表示頻度を分単位で指定できるようにするのはどうだろう？
 
 シンプルにしておくべきだ。選択肢が多ければ良いとは限らない。ほとんどのユーザーにとって圧倒的で混乱するだけだ。

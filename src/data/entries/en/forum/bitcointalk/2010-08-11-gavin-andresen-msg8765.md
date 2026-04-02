@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: davidonpda on August 11, 2010, 04:19:43 PM](https://bitcointalk.org/index.php?topic=788.msg8764#msg8764)
+[Deleted] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
 > [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-11-gavin-andresen-msg8761/)
 > > + require some proof-of-work as part of the client-to-client connection process (helps prevent 'Sybil' attacks).
 > 

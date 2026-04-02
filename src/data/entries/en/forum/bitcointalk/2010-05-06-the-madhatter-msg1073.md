@@ -21,5 +21,5 @@ Even in a worst case scenario where the block chain snapshot was compromised not
 
 It's ++good!
 
-[Quote from: davidonpda on May 03, 2010, 02:40:35 PM](https://bitcointalk.org/index.php?topic=125.msg1055#msg1055)
+[Deleted] Quote from: davidonpda on May 03, 2010, 02:40:35 PM
 > 34 MB... on a fast DSL plan, that should take a couple of minutes. Not 3 hours....

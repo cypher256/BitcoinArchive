@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Quote from: martin on July 16, 2010, 02:09:09 PM](https://bitcointalk.org/index.php?topic=364.msg3476#msg3476)
+[Deleted] Quote from: martin on July 16, 2010, 02:09:09 PM
 > It is, I hope that ultimately this is just a proof of concept, and once it's shown to work it can be integrated into the client (using the same port and URLs).
 
 *nods*  It's a good initiative, and ANY development in the interest of bitcoins right now is good development.

@@ -14,7 +14,7 @@ threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 ---
 
-[Quote from: davidonpda on June 22, 2010, 02:55:37 PM](https://bitcointalk.org/index.php?topic=43.msg1666#msg1666)
+[Deleted] Quote from: davidonpda on June 22, 2010, 02:55:37 PM
 > How about in the options menu you can turn it off or on, and specify an interval in minutes for how often it should display?
 
 I say keep it simple; more choices isn't always better, it just makes it overwhelming and confusing for most users.
