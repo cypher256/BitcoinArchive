@@ -23,6 +23,8 @@ const t = useTranslations(lang);
 </BaseLayout>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.6/dist/instantsearch.production.min.js"></script>
 
 <style>
   .container { max-width: 800px; margin: 0 auto; padding: 1rem; }
@@ -41,58 +43,55 @@ const t = useTranslations(lang);
 </style>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', async () => {
-    const s1 = document.createElement('script');
-    s1.src = 'https://cdn.jsdelivr.net/npm/algoliasearch@5/dist/lite/algoliasearch.lite.umd.js';
-    document.head.appendChild(s1);
-    const s2 = document.createElement('script');
-    s2.src = 'https://cdn.jsdelivr.net/npm/instantsearch.js@4';
-    document.head.appendChild(s2);
-    s2.onload = () => {
-      const searchClient = window.algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
+  document.addEventListener('DOMContentLoaded', function() {
+    var searchClient = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
 
-      const search = window.instantsearch({
-        indexName: 'bitcoin_archive_en',
-        searchClient,
-      });
+    var search = instantsearch({
+      indexName: 'bitcoin_archive_en',
+      searchClient: searchClient,
+    });
 
-      search.addWidgets([
-        window.instantsearch.widgets.searchBox({
-          container: '#searchbox',
-          placeholder: 'Search...',
-          autofocus: true,
-        }),
-        window.instantsearch.widgets.stats({
-          container: '#stats',
-          templates: {
-            text: (data) => `${data.nbHits} results (${data.processingTimeMS}ms)`,
+    search.addWidgets([
+      instantsearch.widgets.searchBox({
+        container: '#searchbox',
+        placeholder: 'Search...',
+        autofocus: true,
+      }),
+      instantsearch.widgets.stats({
+        container: '#stats',
+        templates: {
+          text: function(data) {
+            return data.nbHits + ' results (' + data.processingTimeMS + 'ms)';
           },
-        }),
-        window.instantsearch.widgets.hits({
-          container: '#hits',
-          templates: {
-            item: (hit, { html, components }) => html`
-              <div class="hit-item">
-                <a href="${hit.url}">
-                  <div class="hit-title">${components.Highlight({ hit, attribute: 'title' })}</div>
-                  <div class="hit-meta">
-                    <span class="${hit.isSatoshi ? 'satoshi' : ''}">${hit.author}</span>
-                    ${hit.date ? ` · ${new Date(hit.date).toLocaleDateString('en-US')}` : ''}
-                    ${hit.type ? ` · ${hit.type}` : ''}
-                  </div>
-                  <div class="hit-snippet">${components.Snippet({ hit, attribute: 'body' })}</div>
-                </a>
-              </div>
-            `,
-            empty: () => '<p>No results found</p>',
+        },
+      }),
+      instantsearch.widgets.hits({
+        container: '#hits',
+        templates: {
+          item: function(hit) {
+            var author = hit.isSatoshi
+              ? '<span class="satoshi">' + hit.author + '</span>'
+              : '<span>' + hit.author + '</span>';
+            var date = hit.date
+              ? ' · ' + new Date(hit.date).toLocaleDateString('en-US')
+              : '';
+            var type = hit.type ? ' · ' + hit.type : '';
+            var title = instantsearch.highlight({ attribute: 'title', hit: hit });
+            var snippet = instantsearch.snippet({ attribute: 'body', hit: hit });
+            return '<div class="hit-item"><a href="' + hit.url + '">'
+              + '<div class="hit-title">' + title + '</div>'
+              + '<div class="hit-meta">' + author + date + type + '</div>'
+              + '<div class="hit-snippet">' + snippet + '</div>'
+              + '</a></div>';
           },
-        }),
-        window.instantsearch.widgets.pagination({
-          container: '#pagination',
-        }),
-      ]);
+          empty: function() { return '<p>No results found</p>'; },
+        },
+      }),
+      instantsearch.widgets.pagination({
+        container: '#pagination',
+      }),
+    ]);
 
-      search.start();
-    };
+    search.start();
   });
 </script>

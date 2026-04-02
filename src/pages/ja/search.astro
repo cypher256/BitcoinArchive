@@ -23,6 +23,8 @@ const t = useTranslations(lang);
 </BaseLayout>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.6/dist/instantsearch.production.min.js"></script>
 
 <style>
   .container { max-width: 800px; margin: 0 auto; padding: 1rem; }
@@ -41,32 +43,12 @@ const t = useTranslations(lang);
 </style>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', async () => {
-    const { liteClient } = await import('https://cdn.jsdelivr.net/npm/algoliasearch@5/dist/lite/lite.esm.browser.js');
-    const { instantsearch, searchBox, hits, stats, pagination } = await import('https://cdn.jsdelivr.net/npm/instantsearch.js@4/es/index.js')
-      .catch(() => null) || {};
+  document.addEventListener('DOMContentLoaded', function() {
+    var searchClient = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
 
-    // Fallback: load via script tags if ESM import fails
-    if (!instantsearch) {
-      const s1 = document.createElement('script');
-      s1.src = 'https://cdn.jsdelivr.net/npm/algoliasearch@5/dist/lite/algoliasearch.lite.umd.js';
-      document.head.appendChild(s1);
-      const s2 = document.createElement('script');
-      s2.src = 'https://cdn.jsdelivr.net/npm/instantsearch.js@4';
-      document.head.appendChild(s2);
-      await new Promise(r => s2.onload = r);
-      startSearch(window.algoliasearch, window.instantsearch);
-    } else {
-      startSearch(liteClient, instantsearch);
-    }
-  });
-
-  function startSearch(algoliasearch, instantsearch) {
-    const searchClient = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
-
-    const search = instantsearch({
+    var search = instantsearch({
       indexName: 'bitcoin_archive_ja',
-      searchClient,
+      searchClient: searchClient,
     });
 
     search.addWidgets([
@@ -78,26 +60,31 @@ const t = useTranslations(lang);
       instantsearch.widgets.stats({
         container: '#stats',
         templates: {
-          text: (data) => `${data.nbHits}件の検索結果（${data.processingTimeMS}ms）`,
+          text: function(data) {
+            return data.nbHits + '件の検索結果（' + data.processingTimeMS + 'ms）';
+          },
         },
       }),
       instantsearch.widgets.hits({
         container: '#hits',
         templates: {
-          item: (hit, { html, components }) => html`
-            <div class="hit-item">
-              <a href="${hit.url}">
-                <div class="hit-title">${components.Highlight({ hit, attribute: 'title' })}</div>
-                <div class="hit-meta">
-                  <span class="${hit.isSatoshi ? 'satoshi' : ''}">${hit.author}</span>
-                  ${hit.date ? ` · ${new Date(hit.date).toLocaleDateString('ja-JP')}` : ''}
-                  ${hit.type ? ` · ${hit.type}` : ''}
-                </div>
-                <div class="hit-snippet">${components.Snippet({ hit, attribute: 'body' })}</div>
-              </a>
-            </div>
-          `,
-          empty: () => '<p>検索結果がありません</p>',
+          item: function(hit, bindEvent) {
+            var author = hit.isSatoshi
+              ? '<span class="satoshi">' + hit.author + '</span>'
+              : '<span>' + hit.author + '</span>';
+            var date = hit.date
+              ? ' · ' + new Date(hit.date).toLocaleDateString('ja-JP')
+              : '';
+            var type = hit.type ? ' · ' + hit.type : '';
+            var title = instantsearch.highlight({ attribute: 'title', hit: hit });
+            var snippet = instantsearch.snippet({ attribute: 'body', hit: hit });
+            return '<div class="hit-item"><a href="' + hit.url + '">'
+              + '<div class="hit-title">' + title + '</div>'
+              + '<div class="hit-meta">' + author + date + type + '</div>'
+              + '<div class="hit-snippet">' + snippet + '</div>'
+              + '</a></div>';
+          },
+          empty: function() { return '<p>検索結果がありません</p>'; },
         },
       }),
       instantsearch.widgets.pagination({
@@ -106,5 +93,5 @@ const t = useTranslations(lang);
     ]);
 
     search.start();
-  }
+  });
 </script>
