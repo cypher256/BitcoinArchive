@@ -13,15 +13,23 @@
 import { readdirSync, readFileSync } from 'fs';
 import { join, basename } from 'path';
 import { algoliasearch } from 'algoliasearch';
+import { getDeploymentConfig } from '../site-config.mjs';
 
-const APP_ID = process.env.ALGOLIA_APP_ID || 'FI2GZVF3TY';
-const ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY || '6da6bb0fbaa3bb11e0036aad909c7e33';
+const APP_ID = process.env.ALGOLIA_APP_ID;
+const ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY;
+
+if (!APP_ID || !ADMIN_KEY) {
+  console.error('Error: ALGOLIA_APP_ID and ALGOLIA_ADMIN_KEY environment variables are required.');
+  console.error('  ALGOLIA_APP_ID=xxx ALGOLIA_ADMIN_KEY=xxx node scripts/algolia-index.mjs');
+  process.exit(1);
+}
 
 const client = algoliasearch(APP_ID, ADMIN_KEY);
 
 const EN_DIR = 'src/data/entries/en';
 const JA_DIR = 'src/data/translations/ja';
-const BASE_URL = '/BitcoinArchive';
+const { base } = getDeploymentConfig();
+const BASE_URL = base === '/' ? '' : base.replace(/\/$/, '');
 
 function readEntries(baseDir, lang) {
   const entries = [];

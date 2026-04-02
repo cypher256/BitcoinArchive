@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist",
+    "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist && (node scripts/algolia-index.mjs || echo 'Algolia index skipped (no ALGOLIA_ADMIN_KEY)')",
     "check:image-alt": "node scripts/check-markdown-image-alt.mjs",
     "check:participants": "node scripts/check-participants.mjs",
     "check:ja-tone": "node scripts/check-ja-tone.mjs",

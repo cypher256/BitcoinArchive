@@ -46,9 +46,15 @@ const t = useTranslations(lang);
   document.addEventListener('DOMContentLoaded', function() {
     var searchClient = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
 
+    var urlParams = new URLSearchParams(window.location.search);
+    var initialQuery = urlParams.get('q') || '';
+
     var search = instantsearch({
       indexName: 'bitcoin_archive_ja',
       searchClient: searchClient,
+      initialUiState: initialQuery ? {
+        bitcoin_archive_ja: { query: initialQuery },
+      } : undefined,
     });
 
     search.addWidgets([
