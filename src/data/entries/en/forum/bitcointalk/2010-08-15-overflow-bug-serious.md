@@ -26,4 +26,4 @@ We need a fix asap
 Edit: 
 (satoshi)
 0.3.10 patch download links here:
-[[http://bitcointalk.org/index.php?topic=827.0](/BitcoinArchive/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/)]([http://bitcointalk.org/index.php?topic=827.0](/BitcoinArchive/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/))
+[http://bitcointalk.org/index.php?topic=827.0](http://bitcointalk.org/index.php?topic=827.0)

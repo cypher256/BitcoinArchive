@@ -27,4 +27,4 @@ translationStatus: complete
 編集：
 (satoshi)
 0.3.10パッチのダウンロードリンクはこちら：
-[[http://bitcointalk.org/index.php?topic=827.0](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/)]([http://bitcointalk.org/index.php?topic=827.0](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/))
+[http://bitcointalk.org/index.php?topic=827.0](http://bitcointalk.org/index.php?topic=827.0)

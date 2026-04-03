@@ -26,4 +26,4 @@ QuoteHow many hashes can I expect with a 24 core machine? I have a quad-core gen
 AMD Phenom (I think 4-core) CPUs are doing about 11,000khps with -4way, about 100% speedup.  24 cores should get 66,000khps.  AMD is the best choice because it has the best SSE2 implementation. (or maybe because tcatm had an AMD and optimised his code for that)
 
 There's been so much else to do that I haven't had time to make -4way automatic.  For now you still have to do it manually.
-[[http://bitcointalk.org/index.php?topic=820.0](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-ground-loop-msg9674/)]([http://bitcointalk.org/index.php?topic=820.0](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-ground-loop-msg9674/))
+[http://bitcointalk.org/index.php?topic=820.0](http://bitcointalk.org/index.php?topic=820.0)

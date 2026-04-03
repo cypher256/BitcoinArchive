@@ -18,6 +18,6 @@ translationStatus: complete
 
 0.3.1のリリース候補を試してほしい。少なくともlibcryptoの依存関係は解決されるはずだ:
 
-[[http://bitcointalk.org/index.php?topic=383.0](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-16-biomike-msg3581/)]([http://bitcointalk.org/index.php?topic=383.0](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-16-biomike-msg3581/))
+[http://bitcointalk.org/index.php?topic=383.0](http://bitcointalk.org/index.php?topic=383.0)
 
 動作するかどうか知らせてほしい。
