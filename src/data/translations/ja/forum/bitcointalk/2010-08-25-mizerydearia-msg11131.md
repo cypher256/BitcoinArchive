@@ -14,4 +14,4 @@ threadId: "bt-auto-backing-up-of-wallet-dat"
 tags: []
 translationStatus: complete
 ---
-http://bitcointalk.org/index.php?topic=873.msg10728#msg10728 がやや関連している。
+[http://bitcointalk.org/index.php?topic=873.msg10728#msg10728](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-22-re-need-a-post-writing-up-some-things-users-should-know/) がやや関連している。

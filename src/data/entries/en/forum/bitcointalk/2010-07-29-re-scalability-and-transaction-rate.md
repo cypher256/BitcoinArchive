@@ -21,4 +21,4 @@ The current system where every user is a network node is not the intended config
 > Besides, 10 minutes is too long to verify that payment is good.  It needs to be as fast as swiping a credit card is today.
 
 See the snack machine thread, I outline how a payment processor could verify payments well enough, actually really well (much lower fraud rate than credit cards), in something like 10 seconds or less.  If you don't believe me or don't get it, I don't have time to try to convince you, sorry.
-[http://bitcointalk.org/index.php?topic=423.msg3819#msg3819](http://bitcointalk.org/index.php?topic=423.msg3819#msg3819)
+[[http://bitcointalk.org/index.php?topic=423.msg3819#msg3819](/BitcoinArchive/entries/forum/bitcointalk/2010-07-17-newlibertystandard-msg3708/)]([http://bitcointalk.org/index.php?topic=423.msg3819#msg3819](/BitcoinArchive/entries/forum/bitcointalk/2010-07-17-newlibertystandard-msg3708/))

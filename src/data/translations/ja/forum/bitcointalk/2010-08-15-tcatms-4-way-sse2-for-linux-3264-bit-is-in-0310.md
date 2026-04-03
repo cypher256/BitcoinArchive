@@ -22,6 +22,6 @@ translationStatus: complete
 Linuxでのみ動作を確認できた。
 
 ダウンロード：
-0.3.10は[http://bitcointalk.org/index.php?topic=827.0](http://bitcointalk.org/index.php?topic=827.0)から入手可能。
+0.3.10は[[http://bitcointalk.org/index.php?topic=827.0](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/)]([http://bitcointalk.org/index.php?topic=827.0](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/))から入手可能。
 
 CPUと結果をぜひ報告してほしい！ Core 2以下では遅く、i5では速いことはかなり明らかだと思われる。i7の結果はまだ得られていないと思う。AMDやその他のあまり一般的でないCPUの各モデルについての情報が必要である。
