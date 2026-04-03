@@ -19,7 +19,7 @@ translationStatus: complete
 
 再ビルドした64ビット版のLinux用0.3.8.1をアップロードした。難易度1でテストを実行し、ブロックが生成された。
 
-[http://bitcointalk.org/index.php?topic=765.0](http://bitcointalk.org/index.php?topic=765.0)
+[[topic 765](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-10-ground-loop-msg8466/)]([topic 765](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-10-ground-loop-msg8466/))
 
 ダウンロード：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/bitcoin-0.3.8.1-linux.tar.gz/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/bitcoin-0.3.8.1-linux.tar.gz/download)

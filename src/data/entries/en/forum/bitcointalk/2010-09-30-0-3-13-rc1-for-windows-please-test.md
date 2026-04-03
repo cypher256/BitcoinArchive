@@ -20,7 +20,7 @@ threadId: "bt-0-3-13-rc1-for-windows-please-test"
 [http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe)
 
 - don't count or spend payments until they have 1 confirmation
-     [http://bitcointalk.org/index.php?topic=1306.0](http://bitcointalk.org/index.php?topic=1306.0)
+     [[topic 1306](/BitcoinArchive/entries/forum/bitcointalk/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now/)]([topic 1306](/BitcoinArchive/entries/forum/bitcointalk/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now/))
 - internal version number from 312 to 31300
 - only accept transactions sent by IP address if -allowreceivebyip is specified
 - dropped DB_PRIVATE Berkeley DB flag
