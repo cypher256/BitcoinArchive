@@ -21,6 +21,6 @@ Use the switch "-4way" to turn it on.  Without the switch you get Crypto++ ASM S
 I could only get this working with Linux.
 
 Download:
-Get 0.3.10 from [[topic 827](/BitcoinArchive/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/)]([topic 827](/BitcoinArchive/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/))
+Get 0.3.10 from [topic 827](/BitcoinArchive/entries/forum/bitcointalk/2010-08-15-version-0-3-10-block-74638-overflow-patch/)
 
 Please report back your CPU and results!  I think it's pretty clear that Core 2 and lower are slower, i5 faster.  I don't think we've heard any i7 results yet.  We need to know about the different models of AMD or other less common CPUs.

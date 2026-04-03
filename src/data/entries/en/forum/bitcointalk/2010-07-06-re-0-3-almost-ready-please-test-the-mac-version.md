@@ -17,4 +17,4 @@ threadId: "bt-0-3-almost-ready-please-test-the-mac-version"
 ---
 
 0.3 released
-[[topic 238](/BitcoinArchive/entries/forum/bitcointalk/2010-07-06-bitcoin-0-3-released/)]([topic 238](/BitcoinArchive/entries/forum/bitcointalk/2010-07-06-bitcoin-0-3-released/))
+[topic 238](/BitcoinArchive/entries/forum/bitcointalk/2010-07-06-bitcoin-0-3-released/)

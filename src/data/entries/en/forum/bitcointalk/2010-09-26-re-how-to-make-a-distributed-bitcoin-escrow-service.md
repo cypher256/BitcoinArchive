@@ -16,7 +16,7 @@ secondarySources:
 ---
 
 It's not implemented yet, but the network can support a transaction that requires two signatures.  It's described here:
-[[topic 750](/BitcoinArchive/entries/forum/bitcointalk/2010-08-11-re-escrow/)]([topic 750](/BitcoinArchive/entries/forum/bitcointalk/2010-08-11-re-escrow/))
+[topic 750](/BitcoinArchive/entries/forum/bitcointalk/2010-08-11-re-escrow/)
 
 It's absolutely safer than a straight payment without escrow, but not as good as a human arbitrated escrow, assuming you trust the human enough.
 

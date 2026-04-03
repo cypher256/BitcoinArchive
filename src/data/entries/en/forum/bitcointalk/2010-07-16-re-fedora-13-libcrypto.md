@@ -17,6 +17,6 @@ secondarySources:
 
 Please try the 0.3.1 release candidate, it should at least resolve the libcrypto dependency:
 
-[[topic 383](/BitcoinArchive/entries/forum/bitcointalk/2010-07-16-biomike-msg3581/)]([topic 383](/BitcoinArchive/entries/forum/bitcointalk/2010-07-16-biomike-msg3581/))
+[topic 383](/BitcoinArchive/entries/forum/bitcointalk/2010-07-16-biomike-msg3581/)
 
 Let me know if that works.

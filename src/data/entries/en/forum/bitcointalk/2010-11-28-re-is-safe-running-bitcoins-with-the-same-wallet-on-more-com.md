@@ -21,4 +21,4 @@ Very much not.  Using multiple copies of wallet.dat is not recommended or suppo
 If you're trying to consolidate your generated coins into one wallet, a better solution now is to run getwork miners on the additional systems.  jgarzik has a CPU miner, and it supports tcatm's 4-way SSE2, so on Windows it's up to twice as fast as the built-in SHA if you have an AMD or recent Intel (core 3, 5 or 7).
 
 New demonstration CPU miner available:
-[[topic 1925](/BitcoinArchive/entries/forum/bitcointalk/2010-11-26-jgarzik-msg24681/)]([topic 1925](/BitcoinArchive/entries/forum/bitcointalk/2010-11-26-jgarzik-msg24681/))
+[topic 1925](/BitcoinArchive/entries/forum/bitcointalk/2010-11-26-jgarzik-msg24681/)

@@ -20,4 +20,4 @@ translationStatus: complete
 Freenodeは目立ちすぎる。ユーザーやモデレーターが集まるど真ん中にある。Laszloのオプションの方が私たちにはずっと適している。
 
 freenodeの代わりにirc.lfnet.orgを使用する0.3.0.RC2を公開したので、切り替えたい方はどうぞ:
-[[topic 199](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-06-bitlex-msg2002/)]([topic 199](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-06-bitlex-msg2002/))
+[topic 199](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-06-bitlex-msg2002/)

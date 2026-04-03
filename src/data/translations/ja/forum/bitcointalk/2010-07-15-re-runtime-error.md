@@ -17,6 +17,6 @@ translationStatus: complete
 ---
 
 より直接的には、こちらだ:
-[[topic 246](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c/)]([topic 246](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c/))
+[topic 246](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c/)
 
 この修正を含む0.3.1のリリース候補を間もなく投稿する。試してみて、問題が解決するかどうか知らせてほしい。
