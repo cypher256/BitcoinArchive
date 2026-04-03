@@ -61,10 +61,17 @@ function readEntries(baseDir, lang) {
         const isSatoshi = get('isSatoshi') === 'true';
         const threadId = get('threadId');
 
-        // Build URL path
-        const slug = relPath + '/' + item.name.replace('.md', '');
+        // Build URL path (match Astro's slug generation: dots are removed)
+        const slug = relPath + '/' + item.name.replace('.md', '').replaceAll('.', '');
         const langPrefix = lang === 'ja' ? '/ja' : '';
-        const url = `${BASE_URL}${langPrefix}/entries/${slug}/`;
+
+        // Biographies link to participant page instead of entry page
+        const participantSlug = type === 'biography'
+          ? fm.match(/^\s+slug:\s*"?([^"\n]*)"?/m)?.[1]?.trim()
+          : null;
+        const url = participantSlug
+          ? `${BASE_URL}${langPrefix}/participants/${participantSlug}/`
+          : `${BASE_URL}${langPrefix}/entries/${slug}/`;
 
         // Clean body for indexing (remove markdown syntax)
         const cleanBody = body
