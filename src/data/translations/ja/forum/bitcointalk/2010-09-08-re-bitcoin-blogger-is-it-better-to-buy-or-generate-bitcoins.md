@@ -27,4 +27,4 @@ Quote:24コアのマシンではどれくらいのハッシュが期待できま
 AMD Phenom（確か4コア）CPUは-4wayで約11,000khpsを出しており、約100%の速度向上だ。24コアなら66,000khpsになるはずだ。AMDは最良のSSE2実装を持っているため最善の選択だ。（あるいはtcatmがAMDを持っていてそのコードをそれ向けに最適化したからかもしれない）
 
 他にやることが多すぎて-4wayを自動にする時間がなかった。今のところまだ手動で行う必要がある。
-[[tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-ground-loop-msg9674/)]([tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-16-ground-loop-msg9674/))
+[http://bitcointalk.org/index.php?topic=820.0](http://bitcointalk.org/index.php?topic=820.0)

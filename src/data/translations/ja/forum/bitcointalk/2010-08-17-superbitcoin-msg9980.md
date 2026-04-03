@@ -15,4 +15,4 @@ translationStatus: complete
 ---
 VIA C7でのブロック生成：
 
-[Deflationary spiral](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-10-re-natural-deflation/)
+http://bitcointalk.org/index.php?topic=758.0

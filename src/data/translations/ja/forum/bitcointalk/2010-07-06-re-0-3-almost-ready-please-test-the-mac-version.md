@@ -18,4 +18,4 @@ translationStatus: complete
 ---
 
 0.3リリースした
-[[Bitcoin 0.3 released!](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-06-bitcoin-0-3-released/)]([Bitcoin 0.3 released!](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-06-bitcoin-0-3-released/))
+[http://bitcointalk.org/index.php?topic=238.msg2004#msg2004](http://bitcointalk.org/index.php?topic=238.msg2004#msg2004)

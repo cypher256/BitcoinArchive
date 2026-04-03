@@ -14,4 +14,4 @@ threadId: "bt-auto-backing-up-of-wallet-dat"
 tags: []
 ---
 
-[Need a post writing up some things users should know](/BitcoinArchive/entries/forum/bitcointalk/2010-08-22-re-need-a-post-writing-up-some-things-users-should-know/) is somewhat related
+http://bitcointalk.org/index.php?topic=873.msg10728#msg10728 is somewhat related

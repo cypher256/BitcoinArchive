@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 まだ実装されていないが、ネットワークは2つの署名を必要とするトランザクションをサポートできる。ここに説明がある：
-[[Escrow](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-11-re-escrow/)]([Escrow](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-08-11-re-escrow/))
+[http://bitcointalk.org/index.php?topic=750.0](http://bitcointalk.org/index.php?topic=750.0)
 
 エスクローなしの直接支払いよりは絶対に安全だが、人間が仲裁するエスクローほどではない（もちろん、その人間を十分に信頼できると仮定した場合だが）。
 

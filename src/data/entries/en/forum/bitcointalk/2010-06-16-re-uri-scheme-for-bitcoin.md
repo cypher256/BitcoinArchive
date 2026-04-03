@@ -25,6 +25,6 @@ But as long as the link is already doing the typing for you, I don't see much be
 What would be nice about sending by domain is you could visually verify who it's going to.
 
 A more crucial issue is what if the browser isn't allowed to connect to 127.0.0.1:
-[[Command Line and JSON-RPC](/BitcoinArchive/entries/forum/bitcointalk/2010-03-02-the-madhatter-msg603/)]([Command Line and JSON-RPC](/BitcoinArchive/entries/forum/bitcointalk/2010-03-02-the-madhatter-msg603/))
+[http://bitcointalk.org/index.php?topic=63.msg1589#msg1589](http://bitcointalk.org/index.php?topic=63.msg1589#msg1589)
 
 and if that's true, then what about that example freenet link that had 127.0.0.1 in it?

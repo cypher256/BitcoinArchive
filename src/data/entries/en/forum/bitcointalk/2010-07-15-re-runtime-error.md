@@ -16,6 +16,6 @@ secondarySources:
 ---
 
 More directly, this:
-[[bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username](/BitcoinArchive/entries/forum/bitcointalk/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c/)]([bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username](/BitcoinArchive/entries/forum/bitcointalk/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c/))
+[http://bitcointalk.org/index.php?topic=246.0](http://bitcointalk.org/index.php?topic=246.0)
 
 I will be posting release candidate of 0.3.1 with this fix shortly.  Please try that and let me know if it fixes the problem.
