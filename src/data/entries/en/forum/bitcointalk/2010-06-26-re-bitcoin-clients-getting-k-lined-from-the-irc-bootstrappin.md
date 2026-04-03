@@ -19,4 +19,4 @@ threadId: "bt-bitcoin-clients-getting-k-lined-from-the-irc-boots"
 Freenode is too visible, right in the middle of where all those users and moderators are hanging out.  Laszlo's option is a much better fit for us.
 
 I made 0.3.0.RC2 available that uses irc.lfnet.org instead of freenode if you want to start switching over:
-[http://bitcointalk.org/index.php?topic=199.msg1787#msg1787](http://bitcointalk.org/index.php?topic=199.msg1787#msg1787)
+[[0.3 almost ready -- please test the Mac version!](/BitcoinArchive/entries/forum/bitcointalk/2010-07-06-bitlex-msg2002/)]([0.3 almost ready -- please test the Mac version!](/BitcoinArchive/entries/forum/bitcointalk/2010-07-06-bitlex-msg2002/))

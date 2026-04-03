@@ -26,6 +26,6 @@ translationStatus: complete
 ドメインで送信する良い点は、送信先を視覚的に確認できることだ。
 
 より重要な問題は、ブラウザが127.0.0.1に接続することを許可されていない場合はどうなるかということだ:
-[http://bitcointalk.org/index.php?topic=63.msg1589#msg1589](http://bitcointalk.org/index.php?topic=63.msg1589#msg1589)
+[[Command Line and JSON-RPC](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-03-02-the-madhatter-msg603/)]([Command Line and JSON-RPC](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-03-02-the-madhatter-msg603/))
 
 そして、もしそうだとすると、127.0.0.1が含まれていたFreenetリンクの例はどうなるのだろうか？

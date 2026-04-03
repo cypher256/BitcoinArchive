@@ -24,4 +24,4 @@ translationStatus: complete
 <!-- /tone-skip -->
 
 自動販売機のスレッドを見てほしい。支払い処理業者が十分に、実際にはかなりよく（クレジットカードよりもはるかに低い不正率で）、10秒程度かそれ以下で支払いを検証できる方法を概説している。信じないか理解できないなら、説得するための時間はない、すまない。
-[http://bitcointalk.org/index.php?topic=423.msg3819#msg3819](http://bitcointalk.org/index.php?topic=423.msg3819#msg3819)
+[[(quoted post by NewLibertyStandard)](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-17-newlibertystandard-msg3708/)]([(quoted post by NewLibertyStandard)](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-07-17-newlibertystandard-msg3708/))

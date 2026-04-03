@@ -21,7 +21,7 @@ translationStatus: complete
 [http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe)
 
 - 1回の承認があるまで支払いをカウントまたは使用しない
-     [http://bitcointalk.org/index.php?topic=1306.0](http://bitcointalk.org/index.php?topic=1306.0)
+     [[I broke my wallet, sends never confirm now.](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now/)]([I broke my wallet, sends never confirm now.](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now/))
 - 内部バージョン番号を312から31300に変更
 - -allowreceivebyipが指定された場合のみIPアドレスで送信されたトランザクションを受け入れる
 - DB_PRIVATE Berkeley DBフラグを廃止

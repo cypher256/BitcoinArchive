@@ -18,7 +18,7 @@ secondarySources:
 
 I uploaded 0.3.8.1 for Linux with re-built 64-bit.  I ran a difficulty 1 test with it and it has generated blocks.
 
-[http://bitcointalk.org/index.php?topic=765.0](http://bitcointalk.org/index.php?topic=765.0)
+[[Version 0.3.8.1 update for Linux 64-bit](/BitcoinArchive/entries/forum/bitcointalk/2010-08-10-ground-loop-msg8466/)]([Version 0.3.8.1 update for Linux 64-bit](/BitcoinArchive/entries/forum/bitcointalk/2010-08-10-ground-loop-msg8466/))
 
 Download:
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/bitcoin-0.3.8.1-linux.tar.gz/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.8/bitcoin-0.3.8.1-linux.tar.gz/download)

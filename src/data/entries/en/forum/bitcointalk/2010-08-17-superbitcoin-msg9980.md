@@ -15,4 +15,4 @@ tags: []
 
 block generation on the VIA C7:
 
-http://bitcointalk.org/index.php?topic=758.0
+[Deflationary spiral](/BitcoinArchive/entries/forum/bitcointalk/2010-08-10-re-natural-deflation/)
