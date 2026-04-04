@@ -39,7 +39,7 @@ Block 74638の単一トランザクションが **184,467,440,737.09551616 BTC**
 
 **バグの内容:** トランザクション検証コードは個々の出力が非負であることを確認していたが、出力の合計における整数オーバーフローをチェックしていなかった。64ビット符号付き整数の最大値（INT64_MAX ≈ 9.2 × 10¹⁸）に近い2つの出力を足すと負の値にオーバーフローし、検証チェックを通過した：0.5 BTC入力 ≥ -0.01 BTC出力（オーバーフロー後）。
 
-**対応:** 発見から約5時間以内に、サトシは[Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0.3.10-overflow-bug-fix/)を公開。`CheckTransaction()`に2つの新しいチェックを追加するソフトフォークだった：
+**対応:** 発見から約5時間以内に、サトシは[Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/)を公開。`CheckTransaction()`に2つの新しいチェックを追加するソフトフォークだった：
 
 1. 各出力はMAX_MONEY（21,000,000 BTC）を超えてはならない
 2. すべての出力の合計はMAX_MONEYを超えてはならない
