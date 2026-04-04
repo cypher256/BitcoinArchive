@@ -95,6 +95,7 @@ const authorHandleToSlug: Record<string, string> = {
   'laanwj': 'wladimir-van-der-laan',
   'slush': 'marek-palatinus',
   'harding': 'david-harding',
+  'satoshi': 'satoshi-nakamoto',
 };
 
 export function findAuthorParticipant(author: string, participants: Participant[]): Participant | undefined {
