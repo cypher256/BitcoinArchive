@@ -20,11 +20,14 @@ export interface GraphData {
 }
 
 export function computeGraphData(
-  entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean } }[],
+  entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean; threadId?: string } }[],
   lang: Lang = 'en',
 ): GraphData {
   const nodeCounts = new Map<string, { name: string; count: number; isSatoshi: boolean }>();
   const edgeCounts = new Map<string, number>();
+
+  // Collect all participants per thread
+  const threadParticipants = new Map<string, Set<string>>();
 
   for (const entry of entries) {
     const participants = entry.data.participants;
@@ -42,12 +45,40 @@ export function computeGraphData(
       }
     }
 
+    // Edge from co-occurrence within the same entry
     for (let i = 0; i < participants.length; i++) {
       for (let j = i + 1; j < participants.length; j++) {
         const a = participants[i].slug;
         const b = participants[j].slug;
         const key = a < b ? `${a}::${b}` : `${b}::${a}`;
         edgeCounts.set(key, (edgeCounts.get(key) || 0) + 1);
+      }
+    }
+
+    // Collect participants by threadId
+    const threadId = (entry.data as any).threadId;
+    if (threadId) {
+      if (!threadParticipants.has(threadId)) {
+        threadParticipants.set(threadId, new Set());
+      }
+      const threadSet = threadParticipants.get(threadId)!;
+      for (const p of participants) {
+        threadSet.add(p.slug);
+      }
+    }
+  }
+
+  // Edge from co-occurrence within the same thread
+  for (const [, slugs] of threadParticipants) {
+    const arr = Array.from(slugs);
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        const a = arr[i];
+        const b = arr[j];
+        const key = a < b ? `${a}::${b}` : `${b}::${a}`;
+        if (!edgeCounts.has(key)) {
+          edgeCounts.set(key, 1);
+        }
       }
     }
   }
