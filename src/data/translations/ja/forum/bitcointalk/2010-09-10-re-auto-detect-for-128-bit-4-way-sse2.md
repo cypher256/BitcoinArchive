@@ -22,9 +22,9 @@ translationStatus: complete
 > CallCPUID関数にx86アセンブラが含まれているため、他のアーキテクチャでビルドが壊れる。main.cppの2770行目を
 > #if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)
 > に変更して、少なくともARMで再びコンパイルできるようにした。
-
-#if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)
-
-少なくともARMで再びコンパイルできるようになりました。
+>
+> #if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)
+>
+> 少なくともARMで再びコンパイルできるようになりました。
 <!-- /tone-skip -->
 SVN rev 152に追加した。

@@ -20,19 +20,19 @@ translationStatus: complete
 <!-- tone-skip -->
 [Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
 > バグと思われるものを見つけました: ユーザー名とパスワードの組み合わせが十分に長い場合、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成します:
-
-Code:...
-Authorization: Basic YWJiYWJiYWFiYmE6aGVsbG93b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxkaGVsbG93
-b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk
-64文字ごとに改行が挿入され、明らかにAuthorizationヘッダーが壊れるため、「bitcoin getinfo」のようなコマンドが失敗します。サーバーは正しく動作するクライアントでは問題なく動作します。
-
-これはBase64Encode関数の結果から改行（およびおそらく''）を削除することで解決できます:
-
-```cpp
-result.erase(std::remove(result.begin(), result.end(), '
-'), result.end());
-result.erase(std::remove(result.begin(), result.end(), ''), result.end());
-```
+>
+> Code:...
+> Authorization: Basic YWJiYWJiYWFiYmE6aGVsbG93b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxkaGVsbG93
+> b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk
+> 64文字ごとに改行が挿入され、明らかにAuthorizationヘッダーが壊れるため、「bitcoin getinfo」のようなコマンドが失敗します。サーバーは正しく動作するクライアントでは問題なく動作します。
+>
+> これはBase64Encode関数の結果から改行（およびおそらく''）を削除することで解決できます:
+>
+> ```cpp
+> result.erase(std::remove(result.begin(), result.end(), '
+> '), result.end());
+> result.erase(std::remove(result.begin(), result.end(), ''), result.end());
+> ```
 <!-- /tone-skip -->
 
 このバグを見つけるほど長いパスワードを使っていたことに+1だ。
