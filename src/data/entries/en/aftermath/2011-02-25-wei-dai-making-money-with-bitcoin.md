@@ -26,7 +26,7 @@ secondarySources:
 
 *LessWrong "Making money with Bitcoin?" comment thread, February 25, 2011:*
 
-[Wei Dai](/BitcoinArchive/en/entries/aftermath/2008-08-22-wei-dai-biography/) — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — joined a discussion about Bitcoin's investment potential. His comments clarify his relationship to Bitcoin and reveal his first steps as a miner.
+[Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — joined a discussion about Bitcoin's investment potential. His comments clarify his relationship to Bitcoin and reveal his first steps as a miner.
 
 **On his connection to Bitcoin (responding to a direct question):**
 

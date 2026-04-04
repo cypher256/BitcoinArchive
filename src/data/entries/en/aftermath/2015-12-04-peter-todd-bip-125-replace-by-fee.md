@@ -35,7 +35,7 @@ The BIP's rationale explicitly traces the concept to Nakamoto's original Bitcoin
 
 **The December 2010 connection:**
 
-On December 10, 2010, [Peter Todd](/BitcoinArchive/en/entries/aftermath/2010-12-07-peter-todd-biography/) (then posting as ["retep"](/BitcoinArchive/en/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)) replied to Satoshi's description of transaction replacement with a technical correction:
+On December 10, 2010, [Peter Todd](/BitcoinArchive/participants/peter-todd/) (then posting as ["retep"](/BitcoinArchive/en/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)) replied to Satoshi's description of transaction replacement with a technical correction:
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 

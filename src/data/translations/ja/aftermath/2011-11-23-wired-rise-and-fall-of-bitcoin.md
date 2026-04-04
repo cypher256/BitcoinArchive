@@ -50,12 +50,12 @@ translationStatus: complete
 **ビットコインへの初期の評価：**
 
 <!-- speaker: narrator -->
-> [ウェイ・ダイ](/BitcoinArchive/ja/entries/aftermath/2008-08-22-wei-dai-biography/)（b-moneyの発明者）はビットコインを「非常に重要」と呼び、[ニック・サボ](/BitcoinArchive/ja/entries/aftermath/2005-12-29-nick-szabo-biography/)（ビットゴールドの考案者）は「世界への偉大な貢献」と称え、[ハル・フィニー](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-biography/)（RPOWを手がけた著名な暗号学者）は「世界を変える可能性がある」と述べた。
+> [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)（b-moneyの発明者）はビットコインを「非常に重要」と呼び、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)（ビットゴールドの考案者）は「世界への偉大な貢献」と称え、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（RPOWを手がけた著名な暗号学者）は「世界を変える可能性がある」と述べた。
 
 **初期コミュニティの精神：**
 
 <!-- speaker: narrator -->
-記事は、[ギャビン・アンドレセン](/BitcoinArchive/ja/entries/aftermath/2010-06-11-gavin-andresen-biography/)が1万BTCを50ドルで購入しBitcoin Faucetを作って無料配布したこと、[ラズロ・ハニエツ](/BitcoinArchive/ja/entries/aftermath/2010-05-22-laszlo-hanyecz-biography/)が[史上初の実世界ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として1万BTCでピザ2枚を購入したことを描写した。
+記事は、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が1万BTCを50ドルで購入しBitcoin Faucetを作って無料配布したこと、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)が[史上初の実世界ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として1万BTCでピザ2枚を購入したことを描写した。
 
 **サトシの正体について：**
 
@@ -110,7 +110,7 @@ translationStatus: complete
 **信頼とセキュリティの破綻：**
 
 <!-- speaker: Jeff Garzik -->
-[ジェフ・ガージック](/BitcoinArchive/ja/entries/aftermath/2010-07-15-jeff-garzik-biography/)：
+[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)：
 
 > 「仮想通貨なら、インターネット上の見知らぬ相手を信用できると勘違いしている人がいる」
 

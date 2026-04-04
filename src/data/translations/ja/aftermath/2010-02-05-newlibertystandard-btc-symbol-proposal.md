@@ -25,7 +25,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2010年2月5日、[NewLibertyStandard](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-biography/)がBitcoinTalkフォーラムでこう提案した。
+2010年2月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/)がBitcoinTalkフォーラムでこう提案した。
 
 > 「タイバーツの通貨記号 ฿ をビットコインの公式通貨記号として、BTCを公式の3文字通貨コードとして採用することを提案します」
 

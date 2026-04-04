@@ -27,7 +27,7 @@ translationStatus: complete
 
 *LessWrong「Making money with Bitcoin?」コメントスレッド、2011年2月25日：*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/entries/aftermath/2008-08-22-wei-dai-biography/) — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。
+[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。
 
 **ビットコインとの関係について（直接の質問に対する回答）：**
 

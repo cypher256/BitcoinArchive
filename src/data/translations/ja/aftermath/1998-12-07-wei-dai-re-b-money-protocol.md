@@ -32,7 +32,7 @@ translationStatus: complete
 
 *件名: Re: Wei Dei's "b-money" protocol*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/entries/aftermath/2008-08-22-wei-dai-biography/)は、b-moneyプロトコルに関する[アダム・バック](/BitcoinArchive/ja/entries/aftermath/2008-08-20-adam-back-biography/)の議論に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
+[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、b-moneyプロトコルに関する[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の議論に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
 
 **政府の暴力独占について：**
 

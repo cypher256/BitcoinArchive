@@ -46,7 +46,7 @@ translationStatus: complete
 > 「Martti（sirius-m）の開発作業すべてに深く感謝します。」
 
 **初のビットコイン-法定通貨取引：**
-[2009年10月12日](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)、マルミは5,050 BTCを[NewLibertyStandard](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-biography/)に$5.02でPayPal経由で売却した。これはビットコインと法定通貨の最初の既知の交換として広く認識されており、ビットコインに現実世界の金銭的価値があることを確立した。マルミは後にこの取引をTwitterで確認し、「世界初のビットコイン取引サービスの立ち上げを助けるため」に売却したと述べた。
+[2009年10月12日](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)、マルミは5,050 BTCを[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/)に$5.02でPayPal経由で売却した。これはビットコインと法定通貨の最初の既知の交換として広く認識されており、ビットコインに現実世界の金銭的価値があることを確立した。マルミは後にこの取引をTwitterで確認し、「世界初のビットコイン取引サービスの立ち上げを助けるため」に売却したと述べた。
 
 **その後：**
 マルミは2011年頃、他の開発者がより大きな役割を担うようになるにつれて、ビットコイン開発への関与を徐々に減らした。その後フィンランドのテクノロジー業界で働いている。2024年のCOPA対ライト裁判の手続きを通じて公開されたサトシとの初期のメールは、ビットコインの形成期とサトシの開発哲学に関する貴重な洞察を提供した。

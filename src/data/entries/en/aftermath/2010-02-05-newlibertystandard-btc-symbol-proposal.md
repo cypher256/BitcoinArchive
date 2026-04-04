@@ -24,7 +24,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/the-history-and-symbolism-behind-bitcoins-logo"
 ---
 
-On February 5, 2010, [NewLibertyStandard](/BitcoinArchive/en/entries/aftermath/2009-10-05-newlibertystandard-biography/) proposed on the BitcoinTalk forum:
+On February 5, 2010, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) proposed on the BitcoinTalk forum:
 
 > "I propose that we adopt the Thai baht currency symbol, ฿, as the official bitcoin currency symbol and BTC as the official bitcoin three letter currency code."
 

@@ -28,7 +28,7 @@ secondarySources:
     url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
 ---
 
-Fran Finney met [Hal Finney](/BitcoinArchive/en/entries/aftermath/2014-08-28-hal-finney-biography/) at the California Institute of Technology (Caltech). She was a junior when Hal arrived as a freshman. She first saw him during "rotation week": "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled how people would cluster around him for philosophical discussions: "When he spoke, what he said was usually worth listening to."
+Fran Finney met [Hal Finney](/BitcoinArchive/participants/hal-finney/) at the California Institute of Technology (Caltech). She was a junior when Hal arrived as a freshman. She first saw him during "rotation week": "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled how people would cluster around him for philosophical discussions: "When he spoke, what he said was usually worth listening to."
 
 **Bitcoin:**
 Fran witnessed Bitcoin's birth firsthand. When Hal downloaded and ran the software on January 9, 2009, she described his reaction: "This is cool. This is a fun game. Look! This is actually working!" She also recalled how Hal's early mining was cut short — she complained that the computer fan was too noisy at night.

@@ -44,7 +44,7 @@ Malmi's contributions were wide-ranging and foundational. He ported the Bitcoin 
 > "Many thanks to Martti (sirius-m) for all his development work."
 
 **First Bitcoin-to-Fiat Transaction:**
-On [October 12, 2009](/BitcoinArchive/en/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), Malmi sold 5,050 BTC to [NewLibertyStandard](/BitcoinArchive/en/entries/aftermath/2009-10-05-newlibertystandard-biography/) for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing that bitcoin had real-world monetary value. Malmi later confirmed this transaction on Twitter, stating he made the sale "to help him get the world's first bitcoin trading service started."
+On [October 12, 2009](/BitcoinArchive/en/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), Malmi sold 5,050 BTC to [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing that bitcoin had real-world monetary value. Malmi later confirmed this transaction on Twitter, stating he made the sale "to help him get the world's first bitcoin trading service started."
 
 **Later Years:**
 Malmi gradually reduced his involvement in Bitcoin development around 2011 as other developers took on larger roles. He went on to work in the technology industry in Finland. His early emails with Satoshi, published through the COPA v Wright trial proceedings in 2024, provided invaluable insight into Bitcoin's formative period and Satoshi's development philosophy.

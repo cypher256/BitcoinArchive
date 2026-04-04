@@ -25,7 +25,7 @@ secondarySources: []
 
 "Crypto Currency" by Andy Greenberg was one of the first major print magazine articles about Bitcoin.
 
-[Gavin Andresen](/BitcoinArchive/en/entries/aftermath/2010-06-11-gavin-andresen-biography/) told Forbes:
+[Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) told Forbes:
 
 > "Bitcoin is designed to bring us back to a decentralized currency of the people."
 >

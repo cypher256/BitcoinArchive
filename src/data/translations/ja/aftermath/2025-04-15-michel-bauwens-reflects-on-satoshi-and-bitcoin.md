@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2025年4月15日に Uncommons が公開したインタビューで、P2P Foundation 創設者の[ミシェル・バウエンス](/BitcoinArchive/ja/entries/aftermath/2009-02-12-michel-bauwens-biography/)は、サトシ・ナカモトとの短いが直接的な接触を振り返った。
+2025年4月15日に Uncommons が公開したインタビューで、P2P Foundation 創設者の[ミシェル・バウエンス](/BitcoinArchive/ja/participants/michel-bauwens/)は、サトシ・ナカモトとの短いが直接的な接触を振り返った。
 
 **サトシからのメールについて：**
 

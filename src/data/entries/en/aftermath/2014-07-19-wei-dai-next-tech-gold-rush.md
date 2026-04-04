@@ -26,7 +26,7 @@ secondarySources:
 
 *LessWrong post "Look for the Next Tech Gold Rush?", July 19, 2014:*
 
-[Wei Dai](/BitcoinArchive/en/entries/aftermath/2008-08-22-wei-dai-biography/) — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — described how he nearly missed Bitcoin entirely:
+[Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — described how he nearly missed Bitcoin entirely:
 
 **On Satoshi's direct outreach:**
 

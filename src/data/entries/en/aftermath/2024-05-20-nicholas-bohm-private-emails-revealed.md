@@ -28,7 +28,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/24/"
 ---
 
-One of the more interesting post-trial discoveries from **[COPA v Wright](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** concerns **[Nicholas Bohm](/BitcoinArchive/en/entries/aftermath/2009-01-25-nicholas-bohm-biography/)**.
+One of the more interesting post-trial discoveries from **[COPA v Wright](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** concerns **[Nicholas Bohm](/BitcoinArchive/participants/nicholas-bohm/)**.
 
 Before the trial, Bohm was publicly known mainly from a January 25, 2009 bitcoin-list message in which he reported software problems and Satoshi invited him to send a `debug.log` file directly. But Justice Mellor's May 2024 judgment records something more important:
 

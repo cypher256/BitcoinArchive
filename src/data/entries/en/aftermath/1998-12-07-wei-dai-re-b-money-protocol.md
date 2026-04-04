@@ -31,7 +31,7 @@ secondarySources:
 
 *Subject: Re: Wei Dei's "b-money" protocol*
 
-[Wei Dai](/BitcoinArchive/en/entries/aftermath/2008-08-22-wei-dai-biography/) replied to [Adam Back](/BitcoinArchive/en/entries/aftermath/2008-08-20-adam-back-biography/)'s discussion of the b-money protocol, addressing concerns about computational resource waste and the practical scope of the proposal:
+[Wei Dai](/BitcoinArchive/participants/wei-dai/) replied to [Adam Back](/BitcoinArchive/participants/adam-back/)'s discussion of the b-money protocol, addressing concerns about computational resource waste and the practical scope of the proposal:
 
 **On government monopoly of force:**
 

@@ -32,7 +32,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2016年1月14日、サトシ・ナカモトと直接書簡を交わした最初期のビットコイン貢献者の一人である[マイク・ハーン](/BitcoinArchive/ja/entries/aftermath/2009-04-12-mike-hearn-biography/)が、個人ブログ（blog.plan99.net、Medium上にホスト）に「The resolution of the Bitcoin experiment」と題する長文のブログ記事を公開した。
+2016年1月14日、サトシ・ナカモトと直接書簡を交わした最初期のビットコイン貢献者の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、個人ブログ（blog.plan99.net、Medium上にホスト）に「The resolution of the Bitcoin experiment」と題する長文のブログ記事を公開した。
 
 <!-- speaker: narrator -->
 記事の中で、ハーンはこう宣言した。
@@ -68,7 +68,7 @@ translationStatus: complete
 ハーンは、サトシの離脱が計画外のガバナンスの空白を残したと述べた。
 
 <!-- speaker: Mike Hearn -->
-> 「サトシが去る時、Bitcoin Coreと呼ばれるようになるプログラムの手綱を、初期の貢献者である[ギャビン・アンドレセン](/BitcoinArchive/ja/entries/aftermath/2010-06-11-gavin-andresen-biography/)に託した」
+> 「サトシが去る時、Bitcoin Coreと呼ばれるようになるプログラムの手綱を、初期の貢献者である[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に託した」
 
 <!-- speaker: narrator -->
 ギャビンの判断力を称賛し、ハーン自身がGoogleを辞めてビットコインにフルタイムで取り組む決断をした理由の一つだったと述べた上で、こう付け加えた。

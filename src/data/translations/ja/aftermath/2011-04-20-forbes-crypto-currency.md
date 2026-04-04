@@ -26,7 +26,7 @@ translationStatus: complete
 
 アンディ・グリーンバーグによる「Crypto Currency」は、ビットコインに関する最初の主要な印刷雑誌記事の一つだった。
 
-[ギャビン・アンドレセン](/BitcoinArchive/ja/entries/aftermath/2010-06-11-gavin-andresen-biography/)はForbesにこう語った。
+[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)はForbesにこう語った。
 
 > 「ビットコインは、人々の分散型通貨へ我々を戻すために設計されている」
 >

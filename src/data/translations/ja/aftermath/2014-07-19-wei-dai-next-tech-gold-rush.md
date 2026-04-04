@@ -27,7 +27,7 @@ translationStatus: complete
 
 *LessWrong投稿「Look for the Next Tech Gold Rush?」、2014年7月19日：*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/entries/aftermath/2008-08-22-wei-dai-biography/) — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインをほぼ見逃しかけた経緯を語った：
+[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインをほぼ見逃しかけた経緯を語った：
 
 **サトシからの直接の働きかけについて：**
 

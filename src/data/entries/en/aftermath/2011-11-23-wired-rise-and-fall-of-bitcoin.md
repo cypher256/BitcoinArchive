@@ -47,11 +47,11 @@ In November 2011, journalist Benjamin Wallace published "The Rise and Fall of Bi
 
 **On early praise for Bitcoin:**
 
-> [Wei Dai](/BitcoinArchive/en/entries/aftermath/2008-08-22-wei-dai-biography/), inventor of b-money, calls it "very significant"; [Nick Szabo](/BitcoinArchive/en/entries/aftermath/2005-12-29-nick-szabo-biography/), who created bit gold, hails bitcoin as "a great contribution to the world"; and [Hal Finney](/BitcoinArchive/en/entries/aftermath/2014-08-28-hal-finney-biography/), the eminent cryptographer behind RPOW, says it's "potentially world-changing."
+> [Wei Dai](/BitcoinArchive/participants/wei-dai/), inventor of b-money, calls it "very significant"; [Nick Szabo](/BitcoinArchive/participants/nick-szabo/), who created bit gold, hails bitcoin as "a great contribution to the world"; and [Hal Finney](/BitcoinArchive/participants/hal-finney/), the eminent cryptographer behind RPOW, says it's "potentially world-changing."
 
 **On early community spirit:**
 
-The article described how [Gavin Andresen](/BitcoinArchive/en/entries/aftermath/2010-06-11-gavin-andresen-biography/) bought 10,000 bitcoins for $50 and created the Bitcoin Faucet, giving them away. [Laszlo Hanyecz](/BitcoinArchive/en/entries/aftermath/2010-05-22-laszlo-hanyecz-biography/) conducted the [first real-world Bitcoin transaction](/BitcoinArchive/en/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — paying 10,000 BTC for two pizzas.
+The article described how [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) bought 10,000 bitcoins for $50 and created the Bitcoin Faucet, giving them away. [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) conducted the [first real-world Bitcoin transaction](/BitcoinArchive/en/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — paying 10,000 BTC for two pizzas.
 
 **On Satoshi's identity:**
 
@@ -91,7 +91,7 @@ Dan Kaminsky:
 
 **On trust and security failures:**
 
-[Jeff Garzik](/BitcoinArchive/en/entries/aftermath/2010-07-15-jeff-garzik-biography/):
+[Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/):
 
 > "People have the mistaken impression that virtual currency means you can trust a random person over the Internet."
 

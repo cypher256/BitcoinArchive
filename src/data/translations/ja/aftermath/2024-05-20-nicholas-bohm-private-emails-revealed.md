@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-**[COPA対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** の裁判記録から見えてきた発見のひとつが、 **[ニコラス・ボーム](/BitcoinArchive/ja/entries/aftermath/2009-01-25-nicholas-bohm-biography/)** に関するものだ。
+**[COPA対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** の裁判記録から見えてきた発見のひとつが、 **[ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)** に関するものだ。
 
 裁判以前、ニコラス・ボームは主に 2009年1月25日の bitcoin-list 投稿で知られていた。そこではソフトウェアの問題を報告し、サトシは `debug.log` を直接送ってほしいと返信していた。だが、2024年5月の メラー判決は、さらに重要な事実を明記している。
 
