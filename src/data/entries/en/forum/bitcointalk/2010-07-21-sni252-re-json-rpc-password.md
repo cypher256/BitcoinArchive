@@ -24,16 +24,21 @@ threadId: "bt-json-rpc-password"
 Thanks for that survey!
 
 I find "key value" a little unnatural.  There ought to be a more definite separator between key and value that suggests assignment.  The space people may just be getting lazy using their language's split function.
+```
 key=some full sentence with spaces in it.  # seems more clear
 key some full sentence with spaces in it.  # than this
+```
 
 Allright then, lets go with self-parsed mapConfig, syntax:
+```
 # comment
 key=value
+```
 
 file extension .conf.  What's the filename, is it ~/.bitcoin/settings.conf or ~/.bitcoin/bitcoin.conf or what?   
 
 I think we better strip whitespace at the beginning and end of the key and the value.
+```
 # user who likes column formatted 
 k            = value
 key         = value
@@ -41,5 +46,6 @@ longerkey =   this sentence would be this    # "this sentence would be this"
         key = value   # guess this is ok too
   nextkey = value
       right = justified
+```
 
 The normal syntax should be "key=value", but you can't blame people for the occasional "key = value".

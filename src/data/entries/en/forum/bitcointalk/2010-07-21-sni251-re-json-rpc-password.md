@@ -49,16 +49,22 @@ while (!eof)
 ```
 
 If we use the syntax:
+```
 # comment
 key : value
+```
 
 ...and don't allow whitespace indenting before the keys, I guess we would be a subset of YAML and could switch to YAML someday if we need more complexity. 
 
 If we go with self parsed, that doesn't mean we can't use JSON on particular parameter values as needed.  If an option needs a list or more structured data, it could always parse its value as json:
+```
 key : ["item1", "item2", "item3"]
+```
 
 Although it has to be all on one line then.
 
 I guess I'm leaning towards self parsed mapConfig:
+```
 # comment
 key : value
+```

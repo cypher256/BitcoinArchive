@@ -21,6 +21,7 @@ threadId: "bt-alert-upgrade-to-0-3-6-asap"
 
 I can't understand why you're having so much pain.  I just followed the instructions in build-unix.txt.  I made a couple little corrections for Boost 1.37, which I'll put on SVN the next time I update it, noted below:
 
+```
 Dependencies
 ------------
 sudo apt-get install build-essential
@@ -42,9 +43,11 @@ make
 sudo su
 make install
 ldconfig
+```
 
 added a comment in makefile.unix:
 
+```makefile
 # for boost 1.37, add -mt to the boost libraries
 LIBS= \<br>
  -Wl,-Bstatic \<br>
@@ -56,3 +59,4 @@ LIBS= \<br>
    -l crypto \<br>
  -Wl,-Bdynamic \<br>
    -l gthread-2.0
+```

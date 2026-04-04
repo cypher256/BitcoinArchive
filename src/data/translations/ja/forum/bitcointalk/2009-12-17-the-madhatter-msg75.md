@@ -15,6 +15,7 @@ tags: []
 translationStatus: complete
 ---
 
+```
 [madhatter@10 /home/madhatter/src/bitcoin]# diff -u headers.h.orig headers.h      
 --- headers.h.orig      2009-12-14 12:29:39.000000000 +0000
 +++ headers.h   2009-12-14 12:41:08.000000000 +0000
@@ -31,7 +32,9 @@ translationStatus: complete
  #include <memory>
  #define BOUNDSCHECK 1
  #include <sstream>
+```
 
+```
 [madhatter@10 /home/madhatter/src/bitcoin]# cat makefile.fbsd 
 # Copyright (c) 2009 Satoshi Nakamoto
 # Distributed under the MIT/X11 software license, see the accompanying
@@ -119,3 +122,4 @@ bitcoin: headers.h.gch $(OBJS)
 clean:
         -rm obj/*
         -rm headers.h.gch
+```

@@ -26,5 +26,7 @@ the universal comment character in the Linux world.
 
 My vote would be for:
 
+```
 # comment
 key1=value1
+```
