@@ -1,5 +1,5 @@
 ---
-title: "Re:（bytemasterの文脈投稿）"
+title: "Transaction Overload Solution"
 date: 2010-08-05T16:05:07.000Z
 type: "forum-post"
 source: "bitcointalk"

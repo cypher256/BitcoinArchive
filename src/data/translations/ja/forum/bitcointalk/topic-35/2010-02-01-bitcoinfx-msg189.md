@@ -1,5 +1,5 @@
 ---
-title: "Re:（BitcoinFXのコンテキスト投稿）"
+title: "Win32 CPU Cycles vs 'Live Protection' Engines ?"
 date: 2010-02-01T18:51:53.000Z
 type: "forum-post"
 source: "bitcointalk"

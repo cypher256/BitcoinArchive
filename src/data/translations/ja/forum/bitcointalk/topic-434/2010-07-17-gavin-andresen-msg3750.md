@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
+title: "Privacy versus Safety: handling change"
 date: 2010-07-17T14:13:46.000Z
 type: "forum-post"
 source: "bitcointalk"

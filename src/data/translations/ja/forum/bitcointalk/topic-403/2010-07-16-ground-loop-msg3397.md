@@ -1,5 +1,5 @@
 ---
-title: "Re: （Ground Loopのコンテキスト投稿）"
+title: "The dollar cost of bitmining energy"
 date: 2010-07-16T05:42:14.000Z
 type: "forum-post"
 source: "bitcointalk"

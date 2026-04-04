@@ -1,5 +1,5 @@
 ---
-title: "Re: （vishwambarのコンテキスト投稿）"
+title: "Error on Ubuntu 10.04"
 date: 2010-07-13T11:56:45.000Z
 type: "forum-post"
 source: "bitcointalk"

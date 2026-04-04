@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "BUG Report: Rounding glitch"
 date: 2010-07-17T14:10:03.000Z
 type: "forum-post"
 source: "bitcointalk"

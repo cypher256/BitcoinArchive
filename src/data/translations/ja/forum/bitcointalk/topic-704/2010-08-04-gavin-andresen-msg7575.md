@@ -1,5 +1,5 @@
 ---
-title: "Re:（Gavin Andresenの文脈投稿）"
+title: "Who's the Spanish jerk draining the Faucet?"
 date: 2010-08-04T20:40:55.000Z
 type: "forum-post"
 source: "bitcointalk"

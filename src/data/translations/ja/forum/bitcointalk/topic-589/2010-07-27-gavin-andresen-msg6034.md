@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの引用投稿）"
+title: "Running on a port other than 8333"
 date: 2010-07-27T14:08:17.000Z
 type: "forum-post"
 source: "bitcointalk"

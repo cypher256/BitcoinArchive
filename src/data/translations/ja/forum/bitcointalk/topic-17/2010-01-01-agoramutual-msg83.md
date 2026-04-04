@@ -1,5 +1,5 @@
 ---
-title: "Re:（AgoraMutualの引用投稿）"
+title: "Is my second Transaction working correctly? +Transfer Question"
 date: 2010-01-01T18:09:58.000Z
 type: "forum-post"
 source: "bitcointalk"
