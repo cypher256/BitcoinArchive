@@ -56,9 +56,9 @@ translationStatus: complete
 2004年、フィニーは最初のReusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。
 
 **ビットコイン：**
-2009年1月9日、フィニーはリリース当日にBitcoin v0.1をダウンロードし、サトシ・ナカモト以外でビットコインノードを稼働させた最初の人物となった。Block 70付近からマイニングを開始。2009年1月11日、「Running bitcoin」とツイート — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、Block 170でサトシから10 BTCを受信 — 史上初の個人間ビットコイン送金だった。
+2009年1月9日、フィニーはリリース当日に[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)をダウンロードし、サトシ・ナカモト以外でビットコインノードを稼働させた最初の人物となった。Block 70付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[Block 170でサトシから10 BTCを受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
 
 **ALSと最後の年月：**
-2009年8月、フィニーは筋萎縮性側索硬化症（ALS）と診断された。進行する麻痺にもかかわらず、ビットコインのコード作成を続けた — 最終的にはアイトラッキングソフトウェアを使用してコミュニケーションとプログラミングを行った。2011年初頭にPGP Corporation（Symantec）を退職。2013年3月19日、BitcoinTalkに「Bitcoin and Me」を投稿し、ビットコイン最初のユーザーとしての経験を記した。
+2009年8月、フィニーは筋萎縮性側索硬化症（ALS）と診断された。進行する麻痺にもかかわらず、ビットコインのコード作成を続けた — 最終的にはアイトラッキングソフトウェアを使用してコミュニケーションとプログラミングを行った。2011年初頭にPGP Corporation（Symantec）を退職。2013年3月19日、BitcoinTalkに[「Bitcoin and Me」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿し、ビットコイン最初のユーザーとしての経験を記した。
 
 ハル・フィニーは2014年8月28日午前8時50分、Arizona州Scottsdaleで死去。Alcor Life Extension Foundationにより128番目の患者（会員A-1436）として冷凍保存された。妻フラン、息子ジェイソン、娘エリンが遺された。

@@ -36,7 +36,7 @@ secondarySources:
 Jeff Garzik is a software engineer who studied computer science at Georgia Institute of Technology and worked at Red Hat, where he was a significant contributor to the Linux kernel. He discovered Bitcoin in July 2010 and became one of the most prolific early contributors to the project.
 
 **Discovery of Bitcoin:**
-Garzik discovered Bitcoin in July 2010 through a post on Slashdot, the popular technology news aggregation site. He quickly began studying the codebase and contributing patches. His Linux kernel development experience gave him a strong foundation for working on Bitcoin's C++ codebase.
+Garzik discovered Bitcoin in July 2010 through a [post on Slashdot](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), the popular technology news aggregation site. He quickly began studying the codebase and contributing patches. His Linux kernel development experience gave him a strong foundation for working on Bitcoin's C++ codebase.
 
 **Bitcoin Core Contributions:**
 Garzik became one of the top three most prolific contributors to Bitcoin Core by commit count, alongside Satoshi Nakamoto and Gavin Andresen. He was one of the earliest developers to receive commit access to the Bitcoin repository. His contributions spanned networking, mining, and protocol improvements.

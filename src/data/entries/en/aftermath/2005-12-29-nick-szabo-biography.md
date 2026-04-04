@@ -42,7 +42,7 @@ In 1998, Szabo conceived Bit Gold, a decentralized digital currency system based
 Bit Gold shared key concepts with Bitcoin — proof-of-work, chained puzzles, and decentralized verification — but had a significant security weakness: it did not solve the problem of preventing a single party from controlling the majority of nodes. Satoshi Nakamoto improved on this design.
 
 **Relationship to Bitcoin:**
-Szabo acknowledged Satoshi's improvement in his 2011 blog post: "Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes."
+Szabo acknowledged Satoshi's improvement in his [2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/): "Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes."
 
 Hal Finney, in his early email exchanges about Bitcoin, noted the similarity between Bitcoin and Szabo's Bit Gold. Satoshi discovered Szabo's work through Wei Dai, who suggested reviewing Bit Gold alongside his own b-money concept.
 

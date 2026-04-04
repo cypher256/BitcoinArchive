@@ -29,7 +29,7 @@ secondarySources:
 Jonathan Thornburg is an astrophysicist at Indiana University. He participated in the cryptography mailing list discussion about Bitcoin in January 2009, shortly after Satoshi Nakamoto released Bitcoin v0.1.
 
 **Mailing List Criticism:**
-On January 17, 2009, Thornburg posted a detailed response to Satoshi's email about Bitcoin's potential uses. He raised two fundamental concerns that would echo through Bitcoin's history:
+On January 17, 2009, Thornburg [posted a detailed response](/BitcoinArchive/entries/emails/cryptography/2009-01-17-re-bitcoin-v0-1-released-thornburg/) to Satoshi's email about Bitcoin's potential uses. He raised two fundamental concerns that would echo through Bitcoin's history:
 
 First, government regulation: "In the modern world, no major government wants to allow untracable international financial transactions above some fairly modest size thresholds." He cited the standard regulatory arguments — money laundering, tax evasion, and terrorism financing.
 
