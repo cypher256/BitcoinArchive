@@ -10,7 +10,7 @@
  *   node scripts/fetch-context-posts.mjs --topic=1735 --write
  */
 
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'fs';
 import { join, basename } from 'path';
 
 const ENTRIES_EN = 'src/data/entries/en/forum/bitcointalk';
@@ -45,10 +45,18 @@ function readFrontmatter(filePath) {
 
 function getAllEntries(dir) {
   if (!existsSync(dir)) return [];
-  return readdirSync(dir)
-    .filter(f => f.endsWith('.md'))
-    .map(f => ({ file: f, ...readFrontmatter(join(dir, f)) }))
-    .filter(Boolean);
+  const results = [];
+  function walk(d) {
+    for (const item of readdirSync(d, { withFileTypes: true })) {
+      if (item.isDirectory()) {
+        walk(join(d, item.name));
+      } else if (item.name.endsWith('.md')) {
+        results.push({ file: item.name, ...readFrontmatter(join(d, item.name)) });
+      }
+    }
+  }
+  walk(dir);
+  return results.filter(Boolean);
 }
 
 /** Extract msg ID from sourceUrl */
@@ -296,7 +304,7 @@ async function main() {
   }
 
   // Group Satoshi posts by topic
-  const satoshiByTopic = new Map(); // topicNum -> [{ msgId, threadId, quotedMsgIds }]
+  const satoshiByTopic = new Map(); // topicNum -> [{ msgId, quotedMsgIds }]
   for (const e of enEntries) {
     if (e.isSatoshi !== 'true') continue;
     const topic = extractTopic(e.sourceUrl);
@@ -308,7 +316,6 @@ async function main() {
     if (!satoshiByTopic.has(topic)) satoshiByTopic.set(topic, []);
     satoshiByTopic.get(topic).push({
       msgId,
-      threadId: e.threadId,
       quotedMsgIds,
       file: e.file,
     });
@@ -323,15 +330,12 @@ async function main() {
   for (const [topicNum, satoshiPosts] of satoshiByTopic) {
     console.log(`\n=== Topic ${topicNum} (${satoshiPosts.length} Satoshi posts) ===`);
 
-    // Derive thread title from existing entries (strip "Re: " prefix)
+    // Derive thread title from existing entries in this topic directory
     const threadTitle = (() => {
-      const threadId = satoshiPosts[0]?.threadId;
-      if (!threadId) return '';
-      const threadEntries = enEntries.filter(e => e.threadId === threadId);
-      // Find the first non-"Re:" title, or strip "Re:" from the first one
-      const original = threadEntries.find(e => e.title && !e.title.startsWith('Re:'));
+      const topicEntries = enEntries.filter(e => extractTopic(e.sourceUrl) === topicNum);
+      const original = topicEntries.find(e => e.title && !e.title.startsWith('Re:'));
       if (original) return original.title;
-      const first = threadEntries[0];
+      const first = topicEntries[0];
       return first?.title?.replace(/^Re:\s*/, '') || '';
     })();
 
@@ -414,11 +418,10 @@ async function main() {
         continue;
       }
 
-      // Determine threadId and topic for this post
+      // Determine topic for this post
       // Cross-topic quotes don't belong to the current thread
       const isCrossTopic = neededPosts.get(msgId)?.quoteTopic && neededPosts.get(msgId).quoteTopic !== topicNum;
       const postTopicNum = isCrossTopic ? neededPosts.get(msgId).quoteTopic : topicNum;
-      const threadId = isCrossTopic ? '' : (satoshiPosts[0]?.threadId || '');
 
       // Generate filename
       const datePrefix = post.dateISO ? post.dateISO.slice(0, 10) : 'unknown-date';
@@ -427,7 +430,6 @@ async function main() {
 
       // Generate frontmatter
       const displayTitle = threadTitle ? `Re: ${threadTitle}` : `Re: (context post by ${post.author})`;
-      const threadIdLine = threadId ? `\nthreadId: "${threadId}"` : '';
       const md = `---
 title: "${displayTitle.replace(/"/g, '\\"')}"
 date: ${post.dateISO || '2010-01-01T00:00:00Z'}
@@ -439,7 +441,7 @@ participants:
   - name: "${post.author}"
     slug: "${post.author.toLowerCase().replace(/\s+/g, '-')}"
 description: "Context post by ${post.author} in BitcoinTalk topic ${postTopicNum}. ${reason}."
-isSatoshi: false${threadIdLine}
+isSatoshi: false
 tags: []
 ---
 
@@ -449,7 +451,9 @@ ${body}
       console.log(`  ${doWrite ? 'WRITE' : 'DRY-RUN'}: ${fileName} (${reason})`);
 
       if (doWrite) {
-        const enPath = join(ENTRIES_EN, fileName);
+        const topicDir = join(ENTRIES_EN, `topic-${postTopicNum}`);
+        mkdirSync(topicDir, { recursive: true });
+        const enPath = join(topicDir, fileName);
         if (!existsSync(enPath)) {
           writeFileSync(enPath, md, 'utf8');
           totalWritten++;

@@ -9,7 +9,7 @@
  *   node scripts/fetch-quoted-posts.mjs --write   # write files
  */
 
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 const ENTRIES_EN = 'src/data/entries/en/forum/bitcointalk';
@@ -160,30 +160,37 @@ function htmlToMarkdown(html) {
 // --- Main ---
 
 async function main() {
-  // Build existing msg index
+  // Build existing msg index (recursive walk)
   const existing = new Set();
-  const files = readdirSync(ENTRIES_EN).filter(f => f.endsWith('.md'));
-  for (const f of files) {
-    const content = readFileSync(join(ENTRIES_EN, f), 'utf8');
+  const allFiles = []; // { path, relPath }
+  function walkDir(dir, rel = '') {
+    for (const item of readdirSync(dir, { withFileTypes: true })) {
+      if (item.isDirectory()) {
+        walkDir(join(dir, item.name), rel ? `${rel}/${item.name}` : item.name);
+      } else if (item.name.endsWith('.md')) {
+        allFiles.push({ path: join(dir, item.name), relPath: rel ? `${rel}/${item.name}` : item.name });
+      }
+    }
+  }
+  walkDir(ENTRIES_EN);
+
+  for (const { path } of allFiles) {
+    const content = readFileSync(path, 'utf8');
     const m = content.match(/sourceUrl:.*msg(\d+)#msg\1/);
     if (m) existing.add(m[1]);
   }
 
-  // Find missing quoted msgs across ALL entries (not just context posts)
-  const missing = new Map(); // msgId -> { topic, threadId, source }
-  for (const f of files) {
-    const content = readFileSync(join(ENTRIES_EN, f), 'utf8');
-    const parts = content.split('---', 2);
-    if (parts.length < 2) continue;
+  // Find missing quoted msgs across ALL entries
+  const missing = new Map(); // msgId -> { topic, sourcePath }
+  for (const { path, relPath } of allFiles) {
+    const content = readFileSync(path, 'utf8');
     const body = content.slice(content.indexOf('---', 4) + 3);
-    const threadM = content.match(/threadId:\s*"([^"]+)"/);
-    const threadId = threadM ? threadM[1] : '';
 
     const re = /\[Quote from:.*?\]\(https:\/\/bitcointalk\.org\/index\.php\?topic=(\d+)\.msg(\d+)/g;
     let m;
     while ((m = re.exec(body)) !== null) {
       if (!existing.has(m[2]) && !missing.has(m[2])) {
-        missing.set(m[2], { topic: m[1], threadId, source: f });
+        missing.set(m[2], { topic: m[1], sourcePath: path });
       }
     }
   }
@@ -229,12 +236,6 @@ async function main() {
         const slug = post.author.toLowerCase().replace(/[^a-z0-9]/g, '-');
         const fileName = `${datePrefix}-${slug}-msg${post.msgId}.md`;
 
-        // Cross-topic quotes don't get a threadId
-        const sourceTopicM = info.source ? readFileSync(join(ENTRIES_EN, info.source), 'utf8').match(/topic=(\d+)/) : null;
-        const sourceTopic = sourceTopicM ? sourceTopicM[1] : '';
-        const isCrossTopic = topic !== sourceTopic;
-        const threadIdLine = (!isCrossTopic && info.threadId) ? `\nthreadId: "${info.threadId}"` : '';
-
         const md = `---
 title: "Re: (quoted post by ${post.author})"
 date: ${post.dateISO}
@@ -246,7 +247,7 @@ participants:
   - name: "${post.author}"
     slug: "${slug}"
 description: "Quoted post by ${post.author} in BitcoinTalk topic ${topic}."
-isSatoshi: false${threadIdLine}
+isSatoshi: false
 tags: []
 ---
 
@@ -256,9 +257,11 @@ ${body}
         console.log(`  ${doWrite ? 'WRITE' : 'DRY-RUN'}: ${fileName}`);
 
         if (doWrite) {
-          const path = join(ENTRIES_EN, fileName);
-          if (!existsSync(path)) {
-            writeFileSync(path, md, 'utf8');
+          const topicDir = join(ENTRIES_EN, `topic-${topic}`);
+          mkdirSync(topicDir, { recursive: true });
+          const outPath = join(topicDir, fileName);
+          if (!existsSync(outPath)) {
+            writeFileSync(outPath, md, 'utf8');
             existing.add(post.msgId);
             totalWritten++;
           }
