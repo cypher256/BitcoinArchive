@@ -93,8 +93,8 @@ const structuredData = [
 ---
 
 <BaseLayout
-  title={`${participantName} - ${t('site.title')}`}
-  description={biographyEntry?.data.description ?? `${participantName}に関するエントリー一覧`}
+  title={`${participantName}${biographyEntry?.data.title.match(/—\s*(.+)/)?.[1] ? ` — ${biographyEntry.data.title.match(/—\s*(.+)/)[1]}` : ''} - ${t('site.title')}`}
+  description={biographyEntry?.data.description ?? `${participantName}のビットコイン初期における投稿・メール・技術的議論のアーカイブ`}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/participants/${participantSlug}/`, 'en') : undefined}
   structuredData={structuredData}
