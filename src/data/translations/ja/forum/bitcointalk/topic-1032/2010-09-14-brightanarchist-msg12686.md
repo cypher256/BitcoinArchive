@@ -1,5 +1,5 @@
 ---
-title: "Message Encryption as a built-in feature?"
+title: "メッセージ暗号化を組み込み機能として搭載すべきか？"
 date: 2010-09-14T05:44:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,16 @@ author: "BrightAnarchist"
 participants:
   - name: "BrightAnarchist"
     slug: "brightanarchist"
-description: "Thread starter by BrightAnarchist in BitcoinTalk topic 1032."
+description: "BrightAnarchistがスレッドを開始: BitcoinTalkトピック1032。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Bitcoin clients should have a built in simple message encryption/decryption system, perhaps based off of your actual Bitcoin addresses themselves.
+Bitcoinクライアントには、シンプルなメッセージの暗号化・復号システムが組み込まれているべきだと思う。おそらくBitcoinアドレス自体をベースにしたものが良いだろう。
 
-This would make doing trades on sites like biddingpond much easier, since you don't need to both agree on a separate app like PGP before communicating over email.
+これがあれば、biddingpondのようなサイトで取引をする際、メールでやり取りする前にPGPなどの別アプリについて合意する必要がなくなり、はるかに簡単になる。
 
-Most of the time I bet people don't even bother to use encryption, but I think it's a good idea to use it when doing trades in Bitcoins.
+ほとんどの場合、人々は暗号化を使う手間を惜しんでいると思うが、Bitcoinで取引する際には暗号化を使うのは良いアイデアだと思う。
 
-Thoughts?
+どう思う？

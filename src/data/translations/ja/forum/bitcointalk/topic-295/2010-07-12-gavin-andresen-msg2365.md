@@ -1,5 +1,5 @@
 ---
-title: "Donations to freebitcoins.appspot.com needed!"
+title: "freebitcoins.appspot.comへの寄付が必要！"
 date: 2010-07-12T19:15:46.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,16 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Thread starter by Gavin Andresen in BitcoinTalk topic 295."
+description: "Gavin Andresenがスレッドを開始: BitcoinTalkトピック295。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-The Bitcoin Faucet is handling the slashdotting really well... except that I'm running out of coins to give away.  over 5,000 have flowed out of the Faucet since I refilled it last night.
+Bitcoin Faucetはスラッシュドット効果をうまく処理している……が、配布するコインが足りなくなってきている。昨夜補充してから5,000以上がFaucetから流出した。
 
-Any of you early adopters who generated tens of thousands of coins back in the early days, are you willing to send a few to the Faucet to be given away so more people can try out Bitcoin?  I know that most of them are likely to be lost (I suspect there a lot of slashdot lookey-loos who won't stick around long enough to spend their 5 bitcoins), but if that's the case then that'll just increase the value of your other bitcoins, anyway...
+初期に何万ものコインを生成した初期採用者の皆さん、より多くの人がBitcoinを試せるよう、Faucetに配布用のコインをいくらか送ってもらえないだろうか？そのほとんどが失われるだろうことは分かっている（5 Bitcoinを使い切るほど長く留まらないSlashdotの見物人が多いと思う）が、もしそうなれば、それはあなたの他のBitcoinの価値を高めるだけだ……
 
-Fountain donation address is:  15VjRaDX9zpbA8LVnbrCAFzrVzN7ixHNsC
+Fountain寄付アドレス：15VjRaDX9zpbA8LVnbrCAFzrVzN7ixHNsC
 
-Depending on donations and how long the slashdotting lasts, I might have to start giving away bitnickels...
+寄付の状況とスラッシュドット効果がどれくらい続くかによっては、ビットニッケルの配布に切り替えなければならないかもしれない……

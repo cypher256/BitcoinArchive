@@ -1,5 +1,5 @@
 ---
-title: "HTTP status codes from the JSON-RPC api"
+title: "JSON-RPC APIからのHTTPステータスコード"
 date: 2010-09-01T20:28:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,22 +8,23 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Thread starter by Gavin Andresen in BitcoinTalk topic 969."
+description: "Gavin Andresenがスレッドを開始: BitcoinTalkトピック969。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-I just submitted a patch to Satoshi to make bitcoin follow the JSON RPC over HTTP spec, and to use the standardized error codes from the JSON-RPC 1.1/2.0 specs.
+BitcoinがJSON RPC over HTTPの仕様に準拠し、JSON-RPC 1.1/2.0の仕様で標準化されたエラーコードを使用するようにするパッチをSatoshiに提出した。
 
-If you talk directly to bitcoin via JSON-RPC calls, you might need to change your code to recognize the new HTTP status codes and the new format for the 'error' member of the JSON response.  For example:
+JSON-RPCコールで直接Bitcoinと通信している場合、新しいHTTPステータスコードとJSONレスポンスの'error'メンバーの新しいフォーマットを認識するようにコードを変更する必要があるかもしれない。例えば：
 
-BEFORE, send {"id":"123", "method": "nosuchmethod", "params": &#91;] } , get response:
+変更前：{"id":"123", "method": "nosuchmethod", "params": &#91;] } を送信した場合のレスポンス：
 Code:HTTP/1.1 500 Internal Server Error
 ...
 
-{"result":null,"error":"Method not found.","id":"123"}AFTER:Code:HTTP/1.1 404 
+{"result":null,"error":"Method not found.","id":"123"}変更後：Code:HTTP/1.1 404 
 ...
 
 {"result":null,"error":{"code":-32601,"message":"Method not found"},"id":"123"}
 
-I also removed the broken 'Batch' support, to simplify the code.  I had JSON-RPC-2.0 batch support working properly, but backed those changes out because JSON-RPC 2.0 is way too cutting-edge for bitcoin to support right now (none of the JSON-RPC glue libraries support it yet, and the spec is still changing a bit).
+コードを簡素化するために、壊れていた'Batch'サポートも削除した。JSON-RPC 2.0のバッチサポートを正しく動作させていたが、JSON-RPC 2.0は今のところBitcoinがサポートするには先進的すぎるため（JSON-RPCのグルーライブラリでまだサポートしているものがなく、仕様もまだ少し変わっている）、それらの変更を取り消した。

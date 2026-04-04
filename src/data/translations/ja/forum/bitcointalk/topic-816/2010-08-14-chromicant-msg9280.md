@@ -1,5 +1,5 @@
 ---
-title: "Big endinan code problems"
+title: "ビッグエンディアンのコード問題"
 date: 2010-08-14T22:08:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,12 @@ author: "chromicant"
 participants:
   - name: "chromicant"
     slug: "chromicant"
-description: "Thread starter by chromicant in BitcoinTalk topic 816."
+description: "chromicantがスレッドを開始: BitcoinTalkトピック816。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-I've seen a lot of messages about some big-endian "issues" (ok, no worky) with the bitcoin client. Before I sit and try to analyze all the source code, are there any known "bad bits" of the code that assume LE?
+Bitcoinクライアントにビッグエンディアンの「問題」（つまり動かない）があるというメッセージを多く見てきた。すべてのソースコードを分析する前に、リトルエンディアンを前提としている既知の「問題箇所」はあるだろうか？
 
-I have some idle G4 and Sparc machines that can happily be put to use...plus an old decrepit Alpha that needs to be tested to see if it still boots...
+遊んでいるG4やSparcマシンがあるので活用したい……さらに古いAlphaもあるが、まだ起動するかテストが必要だ……

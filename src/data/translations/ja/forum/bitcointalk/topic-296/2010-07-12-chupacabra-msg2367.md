@@ -1,5 +1,5 @@
 ---
-title: "Fedora 13 libcrypto"
+title: "Fedora 13のlibcrypto"
 date: 2010-07-12T19:27:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,22 +8,23 @@ author: "chupacabra"
 participants:
   - name: "chupacabra"
     slug: "chupacabra"
-description: "Thread starter by chupacabra in BitcoinTalk topic 296."
+description: "chupacabraがスレッドを開始: BitcoinTalkトピック296。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-I get this when trying to run bitcoin:
+Bitcoinを実行しようとすると以下のエラーが出る：
 
 [michael@fed13 64]$ ./bitcoin
 ./bitcoin: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory
 
-Fedora 13 uses this:
+Fedora 13ではこちらを使用している：
 
 /lib64/libcrypto.so.1.0.0a
 
-How can I get around this?
+これを回避するにはどうすればよいか？
 
-I tried a symlink and running ldd and ldconfig to no avail.
+シンボリックリンクを試し、lddとldconfigも実行したが効果がなかった。
 
-Thanks
+よろしく

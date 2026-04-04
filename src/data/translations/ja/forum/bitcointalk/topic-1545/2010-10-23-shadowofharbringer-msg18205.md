@@ -1,5 +1,5 @@
 ---
-title: "Suggestion: Allow short messages to be sent together with bitcoins ?"
+title: "提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T15:11:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,17 +8,18 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "Thread starter by ShadowOfHarbringer in BitcoinTalk topic 1545."
+description: "ShadowOfHarbringerがスレッドを開始: BitcoinTalkトピック1545。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Bitcoin is great, but it misses one thing that usual bank transfers have: payment title.
+Bitcoinは素晴らしいが、通常の銀行振込にはあってBitcoinにないものが一つある：振込名義だ。
 
-Perhaps it should be possible to include short (<=512 bytes) message for each transaction.
-The message could be encrypted with public/private keys so only the receiver can see its contents.
+各トランザクションに短い（512バイト以下の）メッセージを含められるようにすべきではないだろうか。
+メッセージは公開鍵/秘密鍵で暗号化し、受取人だけが内容を確認できるようにすることもできる。
 
-What do You think ?
+どう思う？
 
-PS.
-I might be wrong, but the messages could also be used to increase randomness of hashing process by the way, couldn't they ? If not, never mind.
+追伸：
+間違っているかもしれないが、メッセージはハッシュ処理のランダム性を高めるためにも使えるのではないだろうか？もし違うなら気にしないでくれ。

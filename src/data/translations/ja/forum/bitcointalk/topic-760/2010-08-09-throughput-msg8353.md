@@ -1,5 +1,5 @@
 ---
-title: "What could be the transition plan to Y2038 compliant Bitcoin? (it already is)"
+title: "Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）"
 date: 2010-08-09T12:25:35.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,9 +8,10 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "Thread starter by throughput in BitcoinTalk topic 760."
+description: "throughputがスレッドを開始: BitcoinTalkトピック760。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Or will it suddenly die then?
+それともその時点で突然死ぬのか？

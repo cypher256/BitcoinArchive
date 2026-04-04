@@ -1,5 +1,5 @@
 ---
-title: "Proposed change to sendtoaddress API call"
+title: "sendtoaddress APIコールの変更提案"
 date: 2010-08-13T19:28:23.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,22 +8,23 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Thread starter by Gavin Andresen in BitcoinTalk topic 807."
+description: "Gavin Andresenがスレッドを開始: BitcoinTalkトピック807。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-I'm proposing one small change to Bitcoin's JSON-RPC api:  return a transaction ID when Bitcoins are successfully sent.
+BitcoinのJSON-RPC APIに一つ小さな変更を提案する：Bitcoinの送信が成功した際にトランザクションIDを返すようにする。
 
-Why?  Because I want to keep a complete audit trail for any coins going into or coming out of my application's wallet; I want to keep track of the particular transactions in the bitcoin network that correspond to actions my application takes.  The alternative is to call sendtoaddress and then call listtransactions, but that won't work properly if two similar transactions (same amount to same address) occur at about the same time.
+なぜか？アプリケーションのウォレットに出入りするすべてのコインの完全な監査証跡を保持したいからだ。アプリケーションが行うアクションに対応するBitcoinネットワーク上の特定のトランザクションを追跡したい。代替案はsendtoaddressを呼んでからlisttransactionsを呼ぶことだが、2つの類似したトランザクション（同じ金額を同じアドレスに）がほぼ同時に発生した場合、正しく動作しない。
 
-So I propose doing the simplest thing possible: modify the JSON-RPC sendtoaddress call so it returns the string 'sent:' followed by the 256-bit-hexadecimal transactions id.
+そこで、最もシンプルなことを提案する：JSON-RPCのsendtoaddressコールを変更して、文字列'sent:'の後に256ビットの16進数トランザクションIDを返すようにする。
 
-This could break any applications that look for exactly the string 'sent' (which is what sendtoaddress does now).  The fix would be to modify the apps to see if the string began with 'sent'.
+これは、正確に文字列'sent'を探しているアプリケーションを壊す可能性がある（現在のsendtoaddressの返り値がそれだ）。修正は文字列が'sent'で始まるかどうかを確認するようにアプリを変更するだけだ。
 
-Alternatives I thought about but think I don't like:
- + make it a new api call so old apps do not break (sendtoaddress2 ? yuck)
- + return just the transaction id on successful send instead of 'sent:...'
- + return an array with more information (maybe [ "tx_id": "...", "fee" : 0.0 ] )
+考えたが良くないと思う代替案：
+ + 古いアプリを壊さないよう新しいAPIコールにする（sendtoaddress2？ダサい）
+ + 送信成功時に'sent:...'の代わりにトランザクションIDのみを返す
+ + より多くの情報を含む配列を返す（例えば [ "tx_id": "...", "fee" : 0.0 ]）
 
-Comments/criticisms?
+コメント/批判は？

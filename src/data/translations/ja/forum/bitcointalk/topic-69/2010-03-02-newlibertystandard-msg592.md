@@ -1,5 +1,5 @@
 ---
-title: "Money Transfer Regulations"
+title: "送金規制"
 date: 2010-03-02T07:22:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,20 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Thread starter by NewLibertyStandard in BitcoinTalk topic 69."
+description: "NewLibertyStandardがスレッドを開始: BitcoinTalkトピック69。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Does anyone happen to know what kinds of regulations are in place for people who buy and sell unofficial digital currencies such as Bitcoin? I'm particularly interested in United States regulations, but please mention any regulations of which you are aware.
+Bitcoinのような非公式デジタル通貨を売買する人に対してどのような規制があるか知っている人はいるだろうか？特にアメリカの規制に興味があるが、知っている規制があれば何でも教えてほしい。
 
-Registering a business or non-profit organization gives the advantage of being able to do transactions in the name of the business and forming a corporation limits liability. But it seems like it would be more trouble than it's worth to incorporate or register a business until the profits are large enough to hire employees.
+ビジネスや非営利団体を登録すれば、ビジネス名義で取引でき、法人化すれば責任を限定できるという利点がある。しかし、利益が従業員を雇えるほど大きくなるまでは、法人設立やビジネス登録はメリットに見合わないように思える。
 
-I noticed that in the United States, financial institutions are required to submit a currency transaction report for all transactions over $10,000 and a suspicious activity report for suspicious transactions. I don't think a private citizen would be required to submit either type of report. In any case, so long as the official currency part of the transaction is passing through a registered financial institution, the institution would already be submitting those reports for such transactions.
+アメリカでは、金融機関は10,000ドルを超えるすべての取引について通貨取引報告書を提出し、不審な取引については疑わしい活動報告書を提出することが義務付けられていることに気づいた。一般市民がどちらのタイプの報告書も提出する必要があるとは思えない。いずれにせよ、取引の法定通貨部分が登録金融機関を通過している限り、その機関がすでにそのような取引について報告書を提出しているはずだ。
 
-I have read about money laundering and it seems that so long as a person is not knowingly laundering money, then the person is not committing the crime.
+マネーロンダリングについて読んだところ、故意にマネーロンダリングを行っていない限り、犯罪にはならないようだ。
 
-Profits would need to be tracked for tax purposes but that can be accomplished easily enough using accounting software such as GnuCash.
+利益は税務目的で追跡する必要があるが、GnuCashのような会計ソフトを使えば十分に対応できる。
 
-Am I missing anything? Are there any regulations prohibiting me from sending money to and receiving money from random strangers who may be criminals unbeknownst to me?
+何か見落としているだろうか？自分が知らないうちに犯罪者かもしれない見知らぬ人との送受金を禁止する規制はあるだろうか？

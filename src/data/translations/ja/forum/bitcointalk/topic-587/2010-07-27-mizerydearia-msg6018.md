@@ -1,5 +1,5 @@
 ---
-title: "Difficulty"
+title: "難易度"
 date: 2010-07-27T10:11:51.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,9 +8,10 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "Thread starter by mizerydearia in BitcoinTalk topic 587."
+description: "mizerydearia がスレッドを開始: BitcoinTalkトピック587。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
 http://nullvoid.org/bitcoin/difficultiez.php

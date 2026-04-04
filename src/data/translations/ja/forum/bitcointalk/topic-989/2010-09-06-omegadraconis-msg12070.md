@@ -1,5 +1,5 @@
 ---
-title: "Switch to GPL"
+title: "GPLへの切り替え"
 date: 2010-09-06T02:54:49.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,19 +8,20 @@ author: "omegadraconis"
 participants:
   - name: "omegadraconis"
     slug: "omegadraconis"
-description: "Thread starter by omegadraconis in BitcoinTalk topic 989."
+description: "omegadraconisがスレッドを開始: BitcoinTalkトピック989。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-A thought has occurred to me that bitcoins client is released under mit which allows for closed source clients that would give someone an advantage over everyone by modifying the client and not releasing the code. If we changed to GPL this would force anyone who created a modified client to release the source code under the terms of the GPL.
+Bitcoinのクライアントはクローズドソースのクライアントを許可するMITライセンスでリリースされているという考えが浮かんだ。つまり、誰かがクライアントを改変してコードを公開せずに他の全員に対する優位性を得ることが可能だ。GPLに変更すれば、改変クライアントを作成した人はGPLの条件に基づいてソースコードを公開することが強制される。
 
-A few thoughts for discussion here:
+議論のためにいくつかの論点：
 
-Do you think switching to GPL would be a good idea?
+GPLへの切り替えは良いアイデアだと思うか？
 
-If someone released a closed source client how could we enforce the GPL?
+誰かがクローズドソースのクライアントをリリースした場合、GPLをどのように強制できるか？
 
-Would changing to a GPL stifle development in anyway?
+GPLへの変更は開発を何らかの形で阻害するか？
 
-Would this make it less likely for new clients to be developed?
+新しいクライアントが開発される可能性が低くなるか？

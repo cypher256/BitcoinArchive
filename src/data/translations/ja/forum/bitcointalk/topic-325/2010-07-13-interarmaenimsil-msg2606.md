@@ -1,5 +1,5 @@
 ---
-title: "Hash/sec Throttling for Democracy"
+title: "民主主義のためのハッシュ/秒スロットリング"
 date: 2010-07-13T18:23:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,14 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "Thread starter by InterArmaEnimSil in BitcoinTalk topic 325."
+description: "InterArmaEnimSilがスレッドを開始: BitcoinTalkトピック325。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-I've seen a number of posts complaining that coin generation on old machines is impractical (actually, the posts say impossible, but that's not correct).  A number of others have espoused the general idea that flops*luck=coins, which seems to me to be about right.  One even advocated for OpenCL/CUDA support, which seems to me like it would give those with OpenCL capable cards an incredible advantage in the "flops" category of flops*luck.  
+古いマシンではコイン生成が実用的ではないと不満を述べる投稿を多く見てきた（正確には不可能だと書いているが、それは正しくない）。他にも、FLOPS×運=コインという考えを支持する投稿がいくつかあり、それはおおむね正しいと思う。さらにOpenCL/CUDAのサポートを提唱する投稿もあったが、それはOpenCL対応カードを持つ人にFLOPSの面で信じられないほどの優位性を与えるように思える。
 
-Now, some have said "If you have no luck, you don't get coins...." but come on here...we're dealing with computers - RNGs have nothing, really, to do with luck.  They operate upon statistical averages.  (If BTC is using a true RNG based upon machine atmospheric noise, I could be wrong here, but I don't know that such a generator would be practical in that it would be too slow).  
+「運がなければコインは得られない……」という人もいるが、ちょっと待ってほしい……コンピュータを扱っているのだ。乱数生成器は運とは無関係だ。統計的平均に基づいて動作する。（もしBTCがマシンの大気ノイズに基づく真の乱数生成器を使っているなら間違っているかもしれないが、そのような生成器は遅すぎて実用的ではないと思う。）
 
-Therefore, why not cap the number of hashes per second?  If the operations were capped at say, 250khash/sec based upon system clock and not the available number of cycles, then anyone with the "minimum requirements" could participate in generation at no disadvantage to the guy with the TESLA cluster running CUDA (okay...so people aren't going to use TESLA clusters for this...but you see my point, I hope).  Of course, difficulty would need to be adjusted accordingly to keep block generation on pace, and checks for blocks generated clients violating the cap (and thus outpacing other clients by cheating) would be required, but these are matters solved with relative ease in the code.
+では、なぜ毎秒のハッシュ数に上限を設けないのか？例えば250khash/秒でシステムクロックに基づいて（利用可能なサイクル数ではなく）上限を設ければ、「最低要件」を満たす誰もが、CUDAを実行するTESLAクラスターを持つ人に対して不利にならずに生成に参加できる（いや……人々がTESLAクラスターをこれに使うわけはないが……言いたいことは分かるだろう）。もちろん、ブロック生成のペースを維持するために難易度を調整する必要があり、上限に違反しているクライアントが生成したブロック（つまり不正行為で他のクライアントを上回っている）のチェックも必要だが、これらはコードで比較的容易に解決できる問題だ。

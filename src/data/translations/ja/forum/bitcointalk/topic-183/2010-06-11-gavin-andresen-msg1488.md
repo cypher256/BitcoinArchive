@@ -1,5 +1,5 @@
 ---
-title: "Get 5 free bitcoins from freebitcoins.appspot.com"
+title: "freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
 date: 2010-06-11T17:38:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,16 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Thread starter by Gavin Andresen in BitcoinTalk topic 183."
+description: "Gavin Andresenがスレッドを開始: BitcoinTalkトピック183。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-For my first Bitcoin coding project, I decided to do something that sounds really dumb:  I created a web site that gives away Bitcoins.   It is at: https://freebitcoins.appspot.com/ 
+初めてのBitcoinコーディングプロジェクトとして、本当に馬鹿げたことに聞こえることをやることにした：Bitcoinを配布するウェブサイトを作った。こちら：https://freebitcoins.appspot.com/
 
-Five &#3647; per customer, first come first served, I've stocked it with &#3647;1,100 to start.  I'll add more once I'm sure it is working properly.
+一人あたり5 &#3647;、先着順で、最初に&#3647;1,100を用意した。正常に動作していることを確認できたら追加する。
 
-Why?  Because I want the Bitcoin project to succeed, and I think it is more likely to be a success if people can get a handful of coins to try it out.  It can be frustrating to wait until your node generates some coins (and that will get more frustrating in the future), and buying Bitcoins is still a little bit clunky.
+なぜか？Bitcoinプロジェクトが成功してほしいからだ。少量のコインを手にして試せるなら、成功の可能性が高まると思う。自分のノードがコインを生成するまで待つのはイライラするし（将来はさらにイライラするだろう）、Bitcoinを購入するのもまだ少し面倒だ。
 
-Please try it out and get some free coins, even if you already have more Bitcoins than you know what to do with.  You can get some and then donate them right back; the address is: 15VjRaDX9zpbA8LVnbrCAFzrVzN7ixHNsC
+ぜひ試して無料のコインを手に入れてほしい。すでに使い道に困るほどのBitcoinを持っていても構わない。もらってからそのまま寄付として返してくれても良い。アドレスは：15VjRaDX9zpbA8LVnbrCAFzrVzN7ixHNsC

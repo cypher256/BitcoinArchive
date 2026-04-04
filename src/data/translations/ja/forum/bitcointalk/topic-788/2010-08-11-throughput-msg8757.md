@@ -1,5 +1,5 @@
 ---
-title: "Where is the separate discussion devoted to possible Bitcoin weaknesses."
+title: "Bitcoinの潜在的な弱点に関する専用の議論はどこか"
 date: 2010-08-11T15:45:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,43 +8,44 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "Thread starter by throughput in BitcoinTalk topic 788."
+description: "throughputがスレッドを開始: BitcoinTalkトピック788。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Just to be able to ask "What if ...?" and have all ideas collected in one place.
+「もし……だったら？」と質問でき、すべてのアイデアを一箇所に集められる場が欲しい。
 
-For example.
+例えば。
 
-It seems, that a generating node does not need to receive all that transactions at all.
-The only data it needs is the previous block hash.
-Right?
+生成ノードはすべてのトランザクションを受信する必要はないように思える。
+必要なデータは前のブロックハッシュだけだ。
+そうだろう？
 
-Next.
-It is possible to connect to almost every publicly accessible node, right?
-We can collect their addresses and establish connections to almost all of them.
-And send them all the data we want.
-Like fake (or not so) transactions in huge volumes.
-What if it is possible to throttle their generating capability by forcing them to receive and verify
-very large amounts of (possibly invalid) transactions (or perhaps another trash)?
+次に。
+ほぼすべての公開アクセス可能なノードに接続できるだろう？
+そのアドレスを収集し、ほぼすべてのノードへの接続を確立できる。
+そして望むだけのデータを送りつけることができる。
+例えば、膨大な量の偽の（あるいはそうでない）トランザクション。
+大量の（おそらく無効な）トランザクション（あるいは別のゴミデータ）を受信・検証させることで、
+ノードの生成能力を絞ることは可能ではないか？
 
-If that is true, then we can lower the difficulty, right?
-Just do this for a long period of time.
-When it lowers to an acceptable for our supercomputer (botnet) value,
-we may connect it to the network, but not directly.
-Connect it via special node, that does forward messages in a special way, to filter the trash data we are still flooding.
-So, the supercomputer will receive the blocks and will participate in generation, the others will be flooded and will get
-only a small portion of generated BTCs.
+もしそれが可能なら、難易度を下げることができるのではないか？
+長期間これを行えば良い。
+自分のスーパーコンピュータ（ボットネット）にとって許容可能な値まで下がったら、
+ネットワークに接続する。ただし直接ではなく、
+特殊なノードを経由して接続する。そのノードはまだフラッディングしているゴミデータをフィルタリングする特殊な方法でメッセージを転送する。
+これにより、スーパーコンピュータはブロックを受信して生成に参加できるが、他のノードはフラッディングされたままで
+生成BTCのわずかな部分しか得られない。
 
-Then, if we are not interested in generated BTCs, we may start generating a blockchain fork.
-Immediately after the difficulty drops, we start to generate alternative version of blockchain in a isolated environment.
-Since difficulty does not change immediately, we can try to outperform the rest of the network, while they are chewing our
-trash data. Fast enough we present everybody with the longest chain, but then the difficulty raises back.
-By doing this  it is possible to wipe our previous spend transactions, if they are made after the blockchain fork.
-So, is it possible that we recover them and get back unspent transactions? And spend them again?
-How will previous transactions incorporate into the new blockchain if they were "respent" in that manner?
+次に、生成BTCに興味がない場合、ブロックチェーンフォークの生成を開始できる。
+難易度が下がった直後に、隔離された環境でブロックチェーンの代替バージョンを生成し始める。
+難易度はすぐには変わらないので、残りのネットワークがゴミデータを処理している間に
+ネットワークを上回ろうとできる。十分速く最長チェーンを全員に提示するが、その後難易度が上がる。
+これにより、ブロックチェーンフォーク後に行った以前の支払いトランザクションを消去できる。
+つまり、それらを回復して未使用のトランザクションを取り戻せるのではないか？そして再度使えるのか？
+以前のトランザクションがそのように「再支払い」された場合、新しいブロックチェーンにどう組み込まれるのか？
 
-And then it can be repeated.
-If I'm wrong, just say: "you are wrong".
-But you may also give me a hint why.
+そしてこれは繰り返せる。
+間違っているなら、「間違っている」と言ってほしい。
+しかし、なぜかヒントもくれると助かる。

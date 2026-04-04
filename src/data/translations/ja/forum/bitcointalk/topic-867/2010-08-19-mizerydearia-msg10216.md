@@ -1,5 +1,5 @@
 ---
-title: "Convert Bitcoin to GTK: Yes?  No?  wx is better?"
+title: "BitcoinをGTKに変換：賛成？反対？wxの方が良い？"
 date: 2010-08-19T07:23:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,27 +8,28 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "Thread starter by mizerydearia in BitcoinTalk topic 867."
+description: "mizerydearia がスレッドを開始: BitcoinTalkトピック867。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Who is skilled enough to convert official Linux Bitcoin client to use GTK instead of wx?
+公式のLinux版BitcoinクライアントをwxからGTKに変換できるスキルを持っている人はいるだろうか？
 
-Is this development worthy or desirable enough to pursue or is wx acceptable?
+この開発は追求する価値や需要があるのか、それともwxで問題ないのか？
 
-q: let me get this straight. You're asking if someone will put up a bounty for a conversion that you want? (bounty idea dismissed due to seeming weird/strange to some)
-a: I don't want it. Is GTK better than QT or anytihng else?  I'm not familiar.
+質問：ちょっと待ってくれ。自分が望む変換に対して誰かが報奨金を出すのを求めているのか？（報奨金のアイデアは奇妙/変だと思われたため却下）
+回答：自分が望んでいるわけではない。GTKはQTやその他のものより良いのか？よく分からない。
 
-"I would like it if Bitcoin used GTK instead of wxWidgets but I won't pretend that I have a clue about how hard or easy that change might be"
+「BitcoinがwxWidgetsの代わりにGTKを使ってくれたら嬉しいが、その変更がどれほど難しいか簡単かについてまったく見当がつかないとは言わない」
 
-someone: wx seems to work now as far as I can tell
-someone else: wx is an utter nightmare
+誰か：wxは今のところ問題なく動いているように見える
+別の誰か：wxは完全な悪夢だ
 
-q: why "convert" Satoshi's front end? Why not just build a new one that uses the rpc calls?
+質問：なぜSatoshiのフロントエンドを「変換」するのか？RPCコールを使って新しいものを構築すればいいのでは？
 
-there actually isn't much that needs to be done to make bitcoind's methods useful enough to do the same things the GUI does:
-in particular:
- * list sending addresses
- * show unaccepted blocks in listtransactions (maybe)
- * select a range of transactions to show
+実際、bitcoindのメソッドをGUIと同じことができるほど便利にするために必要なことはそれほど多くない：
+特に：
+ * 送金アドレスの一覧表示
+ * listtransactionsで未承認ブロックを表示する（おそらく）
+ * 表示するトランザクションの範囲を選択する

@@ -1,5 +1,5 @@
 ---
-title: "Network Size"
+title: "ネットワーク規模"
 date: 2010-07-16T23:04:44.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,9 +8,10 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "Thread starter by InterArmaEnimSil in BitcoinTalk topic 419."
+description: "InterArmaEnimSilがスレッドを開始: BitcoinTalkトピック419。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Is there any way to query the current size of the network, say, in connected clients, actively generating clients, FLOPS, or preferably, all three?  I see that my client is connected, and has been connected, to 15 clients for the past four days....yet somehow I doubt there are only 15 people generating coins.  I'm looking for this in the context of scalability assessments.
+現在のネットワークの規模を、例えば接続クライアント数、アクティブに生成しているクライアント数、FLOPS、あるいは理想的にはこれらすべてで照会する方法はあるだろうか？自分のクライアントは過去4日間ずっと15クライアントに接続されているが……コインを生成しているのが15人だけとは到底思えない。スケーラビリティの評価という観点でこれを調べたいと思っている。

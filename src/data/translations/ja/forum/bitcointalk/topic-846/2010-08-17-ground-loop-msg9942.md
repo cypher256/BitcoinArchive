@@ -1,5 +1,5 @@
 ---
-title: "Difficulty: More nodes active, or faster nodes?"
+title: "難易度：アクティブノードの増加か、より高速なノードか？"
 date: 2010-08-17T19:25:38.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,15 +8,16 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "Thread starter by Ground Loop in BitcoinTalk topic 846."
+description: "Ground Loopがスレッドを開始: BitcoinTalkトピック846。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-The recent upticks in difficulty have been remarkable.  At 511.77, I've even stopped off those machines where I don't pay for marginal power consumption.  My calculation is that the wear/tear from elevated temperatures and full-speed fans has more risk and cost than the BTC value.   (You can question my math.)
+最近の難易度の上昇は目覚ましい。511.77で、電気代を自分で支払っていないマシンでさえ停止した。私の計算では、温度上昇やフル回転のファンによる消耗・故障リスクの方が、BTC生成の価値よりも高い。（計算が間違っているかもしれないが。）
 
-But my question is this: Are we seeing the rise of mega-power machines, or just an exponential increase in the number of nodes?  That is, are the top-producing machines making leaps in power (over average), or are my machines still about average, just dwarfed by the number of participating machines?  Is there any way to tell? (node counts?)
+しかし疑問がある：超高性能マシンの台頭を見ているのか、それとも単にノード数の指数関数的増加なのか？つまり、トップの生成マシンが（平均に対して）性能の飛躍を遂げているのか、それとも私のマシンはまだ平均的で、単に参加マシン数に圧倒されているだけなのか？確認する方法はあるだろうか？（ノード数？）
 
-I totally understand that difficulty reflects the state-of-the-art in client khash improvements, but it's clear that my own computers also represent a rapidly diminishing part of the total network generation rate.  As the network gets larger, my chance of finding The Block every 10 minutes shrinks.  I'm thrilled, not bitter  , but I'm curious to understand what has transpired over the past three weeks to make it so dramatic.
+難易度がクライアントのkhash性能向上の最先端を反映していることは十分理解しているが、自分のコンピュータもネットワーク全体の生成レートにおいて急速に小さな割合になっていることは明らかだ。ネットワークが大きくなるにつれ、10分ごとにブロックを見つけるチャンスは縮小する。嬉しいし、不満はない。だが、過去3週間で何がこれほど劇的な変化をもたらしたのか知りたい。
 
-Cheers.
+乾杯。

@@ -1,5 +1,5 @@
 ---
-title: "What happens when network is split for prolonged time and reconnected?"
+title: "ネットワークが長期間分断された後に再接続されたらどうなるか？"
 date: 2010-08-01T11:07:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,12 @@ author: "em3rgentOrdr"
 participants:
   - name: "em3rgentOrdr"
     slug: "em3rgentordr"
-description: "Thread starter by em3rgentOrdr in BitcoinTalk topic 661."
+description: "em3rgentOrdrがスレッドを開始: BitcoinTalkトピック661。"
 isSatoshi: false
 tags: []
+translationStatus: complete
 ---
 
-Suppose that BitCoins are being widely used all across the globe.  Suppose that all internet connections between two countries are blocked (eg China and US go to war) and people still engage in transactions inside each network.  Now all transactions within each network are broadcasted to all nodes inside its network, but not to the other network.  Within each network, the longest chain in each would be considered valid, and the BitCoin economy would continue to exist inside each network.
+BitCoinが世界中で広く使われていると仮定する。2つの国の間のすべてのインターネット接続がブロックされ（例えば中国とアメリカが戦争する）、それでも各ネットワーク内で取引が行われ続けるとする。各ネットワーク内のすべてのトランザクションは、そのネットワーク内のすべてのノードにブロードキャストされるが、もう一方のネットワークには届かない。各ネットワーク内では、最長のチェーンが有効とみなされ、BitCoin経済は各ネットワーク内で存続し続けるだろう。
 
-Now after several years existing independently, what happens when the two networks are reconnected?
+さて、数年間独立して存在した後、2つのネットワークが再接続されたらどうなるだろうか？
