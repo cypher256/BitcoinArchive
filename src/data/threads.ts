@@ -24,6 +24,62 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'They want to delete the Wikipedia article',
     ja: 'Wikipediaの記事を削除しようとしている',
   },
+  'forum/p2pfoundation': {
+    en: 'Bitcoin open source implementation of P2P currency',
+    ja: 'ビットコイン：P2P通貨のオープンソース実装',
+  },
+  'correspondence/adam-back': {
+    en: 'Satoshi ↔ Adam Back Correspondence',
+    ja: 'サトシ ↔ アダム・バック 書簡',
+  },
+  'correspondence/dustin-trammell': {
+    en: 'Satoshi ↔ Dustin Trammell Correspondence',
+    ja: 'サトシ ↔ ダスティン・トランメル 書簡',
+  },
+  'correspondence/gavin-andresen': {
+    en: 'Satoshi ↔ Gavin Andresen Correspondence',
+    ja: 'サトシ ↔ ギャビン・アンドレセン 書簡',
+  },
+  'correspondence/hal-finney': {
+    en: 'Satoshi ↔ Hal Finney Correspondence',
+    ja: 'サトシ ↔ ハル・フィニー 書簡',
+  },
+  'correspondence/laszlo-hanyecz': {
+    en: 'Satoshi ↔ Laszlo Hanyecz Correspondence',
+    ja: 'サトシ ↔ ラズロ・ハニエツ 書簡',
+  },
+  'correspondence/martti-malmi': {
+    en: 'Satoshi ↔ Martti Malmi Correspondence',
+    ja: 'サトシ ↔ マルッティ・マルミ 書簡',
+  },
+  'correspondence/mike-hearn/questions': {
+    en: 'Satoshi ↔ Mike Hearn — Initial Questions',
+    ja: 'サトシ ↔ マイク・ハーン — 最初の質問',
+  },
+  'correspondence/mike-hearn/more-questions': {
+    en: 'Satoshi ↔ Mike Hearn — More Questions',
+    ja: 'サトシ ↔ マイク・ハーン — さらなる質問',
+  },
+  'correspondence/mike-hearn/bitcoinj': {
+    en: 'Satoshi ↔ Mike Hearn — BitcoinJ & Contracts',
+    ja: 'サトシ ↔ マイク・ハーン — BitcoinJとコントラクト',
+  },
+  'correspondence/mike-hearn/holding-coins': {
+    en: 'Satoshi ↔ Mike Hearn — Holding Coins & Farewell',
+    ja: 'サトシ ↔ マイク・ハーン — コイン保持と別れ',
+  },
+  'correspondence/mike-hearn/chargeback': {
+    en: 'Satoshi ↔ Mike Hearn — Chargeback & Escrow',
+    ja: 'サトシ ↔ マイク・ハーン — チャージバックとエスクロー',
+  },
+  'correspondence/nicholas-bohm': {
+    en: 'Satoshi ↔ Nicholas Bohm Correspondence',
+    ja: 'サトシ ↔ ニコラス・ボーム 書簡',
+  },
+  'correspondence/wei-dai': {
+    en: 'Satoshi ↔ Wei Dai Correspondence',
+    ja: 'サトシ ↔ ウェイ・ダイ 書簡',
+  },
 };
 
 function isReplyTitle(title: string): boolean {
