@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi decides to proceed with Drupal setup, argues against making the site HTTPS by default, and suggests offering SSL as an optional feature for privacy-conscious users."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

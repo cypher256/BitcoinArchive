@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi reports that a Django-powered prototype of bitcoinexchange.com is running and discusses plans for hyperbolic supply-demand pricing."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

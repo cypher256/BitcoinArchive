@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがBitcoin v0.2のリリースアナウンス草案を共有し、自身とマルミの貢献した新機能を一覧化。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

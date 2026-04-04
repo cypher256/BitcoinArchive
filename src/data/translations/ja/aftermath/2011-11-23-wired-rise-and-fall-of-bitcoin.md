@@ -67,7 +67,7 @@ translationStatus: complete
 
 > 「サトシっていう人とメールを何通かやり取りしたんだけどさ。本物の人間じゃないような感じがずっとしてたんだよね。返信も2週間おきくらいで、たまに誰かがチェックしてるような感じだった。ビットコインって、一人で作ったにしてはよくできすぎてるんだよ」
 
-**[サトシのWikileaksへの嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-12-05-re-wikileaks/)（2010年12月5日）：**
+**[サトシのWikileaksへの嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010年12月5日）：**
 
 <!-- speaker: Satoshi Nakamoto -->
 サトシ・ナカモト：

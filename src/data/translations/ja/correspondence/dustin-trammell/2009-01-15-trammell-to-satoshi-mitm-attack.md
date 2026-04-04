@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "トランメルがビットコインのIP送金機能について詳細なセキュリティ分析を実施し、ARPポイズニングやISPレベルの傍受を含む中間者攻撃の脆弱性を特定。IPアドレスではなく常にビットコインアドレスを使用することを推奨している。"
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

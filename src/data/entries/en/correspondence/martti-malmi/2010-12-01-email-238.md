@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "-------- Original Message --------"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

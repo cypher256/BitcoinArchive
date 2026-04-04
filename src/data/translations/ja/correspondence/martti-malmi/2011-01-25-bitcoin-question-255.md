@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Bitcoinに関する質問の転送メール"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

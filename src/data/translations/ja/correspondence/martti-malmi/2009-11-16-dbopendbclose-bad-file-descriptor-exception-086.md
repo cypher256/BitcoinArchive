@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがBerkeley DBの「Bad file descriptor」例外に対する回避策のアイデアを持っており、エラーが発生しているデータベースファイルの特定をLiberty Standardに依頼。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

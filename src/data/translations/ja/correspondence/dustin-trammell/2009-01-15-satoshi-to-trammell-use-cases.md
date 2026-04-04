@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "サトシがネットワーク上の動的IPについて議論し、会話をbitcoin-listおよび暗号技術メーリングリストにCCする許可を求め、ハル・フィニーの投資アイデアに言及し、送金メール付きのマイクロペイメントなどビットコインのユースケースを構想し、bitcoin-listメーリングリストの詳細を共有している。"
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "use-cases"

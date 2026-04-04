@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "トランメルがv0.1.0からv0.1.3へのアップグレード時に遭遇した2つの問題を報告。旧プロセスが終了しなかったことと、生成された4つのコインがすべて「Generated (not accepted)」と表示されるようになったこと――通信バグによる孤立ブロックが原因と考えられる。"
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

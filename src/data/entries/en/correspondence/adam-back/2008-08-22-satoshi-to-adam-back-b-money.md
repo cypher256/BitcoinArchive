@@ -12,7 +12,6 @@ participants:
     slug: "adam-back"
 description: "Satoshi thanks Adam Back for the b-money reference and reveals he was not previously aware of Wei Dai's proposal. He writes the historically significant line: 'my ideas start from exactly that point.' He also describes Bitcoin's proof-of-work chain mechanism."
 isSatoshi: true
-threadId: "satoshi-adam-back"
 tags:
   - "hashcash"
   - "adam-back"

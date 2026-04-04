@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがSourceForgeのBitweaverメニューエディタの不具合を報告し、フォーラムリンクをbitcoin.orgに更新するようマルミに依頼。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -13,7 +13,6 @@ isSatoshi: true
 tags:
   - "identity"
   - "dorian-nakamoto"
-threadId: "p2pfoundation-bitcoin-open-source"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/"

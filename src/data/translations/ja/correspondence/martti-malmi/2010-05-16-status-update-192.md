@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシが1ヶ月以上の不在から復帰し、マルミの初取引を祝福するとともに、0.3リリースとJSON APIの計画について議論する。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

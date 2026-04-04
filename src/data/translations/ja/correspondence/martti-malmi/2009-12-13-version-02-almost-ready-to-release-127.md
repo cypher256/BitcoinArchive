@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "今のところ問題なし。大丈夫そう"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

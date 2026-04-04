@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi analyzes a debug.log from Liberty Standard's Linux test, investigates a block download issue, and agrees to separate the minimize-to-tray and close-to-tray options."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

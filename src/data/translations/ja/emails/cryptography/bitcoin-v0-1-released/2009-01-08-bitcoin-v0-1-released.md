@@ -1,0 +1,60 @@
+---
+title: "ビットコイン v0.1 リリース"
+date: 2009-01-08T19:27:40Z
+type: "mailing-list"
+source: "cryptography-mailing-list"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "サトシがビットコインv0.1のリリースを発表。Windows向けのビットコインソフトウェア初の動作する実装で、ソースコードが含まれていた。"
+isSatoshi: true
+tags:
+  - "release"
+  - "v0.1"
+  - "software"
+  - "announcement"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
+translationStatus: complete
+---
+
+<!-- speaker: Satoshi Nakamoto -->
+ビットコイン v0.1 をリリースする。二重使用を防ぐためにP2Pネットワークを使用する新しい電子決済システムだ。完全に分散化されており、サーバーも中央機関もない。
+
+スクリーンショットはbitcoin.orgを参照。
+
+ダウンロードリンク：<br>
+http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
+
+現時点ではWindowsのみ。オープンソースのC++コードが含まれている。
+
+- ファイルをディレクトリに展開する
+- BITCOIN.EXEを実行する
+- 自動的に他のノードに接続する
+
+着信接続を受け入れるノードを稼働させ続けることができれば、ネットワークに大いに貢献できる。着信接続を受信するにはファイアウォールのポート8333を開放する必要がある。
+
+ソフトウェアはまだアルファ版で実験的だ。必要になった場合にシステムの状態をリスタートしなければならない保証はないが、拡張性とバージョニングを組み込むためにできる限りのことはした。
+
+コインを得るには、誰かに送ってもらうか、Options->Generate Coinsをオンにしてノードを実行しブロックを生成する。プルーフ・オブ・ワークの難易度を最初はとんでもなく簡単に設定したので、最初のうちは一般的なPCでもわずか数時間でコインを生成できるだろう。自動調整による難易度上昇で競争が激化すると、かなり難しくなる。生成されたコインは使用可能になるまで120ブロックの成熟を待つ必要がある。
+
+送金方法は2つある。受取人がオンラインの場合、IPアドレスを入力すると接続し、新しい公開鍵を取得してコメント付きでトランザクションを送信する。受取人がオフラインの場合、受取人が提供する公開鍵のハッシュであるビットコインアドレスに送金することが可能だ。受取人は次回接続してそのブロックを取得した際にトランザクションを受信する。この方法はコメント情報が送信されないこと、アドレスを複数回使用するとプライバシーが多少失われるという欠点があるが、両ユーザーが同時にオンラインになれない場合や受取人が着信接続を受信できない場合の有用な代替手段だ。
+
+総発行量は2100万枚。ノードがブロックを生成する際にネットワークノードに分配され、その量は4年ごとに半減する。
+
+最初の4年：10,500,000コイン<br>
+次の4年：5,250,000コイン<br>
+次の4年：2,625,000コイン<br>
+次の4年：1,312,500コイン<br>
+以下同様……
+
+それが尽きた場合、必要に応じてシステムはトランザクション手数料をサポートできる。オープンマーケットの競争に基づいており、無料でトランザクションを処理するノードは常に存在するだろう。
+
+Satoshi Nakamoto
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending "unsubscribe cryptography" to majordomo at metzdowd.com

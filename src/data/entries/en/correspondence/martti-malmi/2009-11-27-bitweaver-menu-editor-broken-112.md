@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi confirms he fixed the Bitweaver menu editor issue by updating the forum link directly in the database."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

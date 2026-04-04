@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "It was probably apt-get install libgtk2.0-0. You can search for"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

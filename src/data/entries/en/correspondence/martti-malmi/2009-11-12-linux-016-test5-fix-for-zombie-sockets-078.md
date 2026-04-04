@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "I added MSG_DONTWAIT to the send and recv calls in case they forgot the"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

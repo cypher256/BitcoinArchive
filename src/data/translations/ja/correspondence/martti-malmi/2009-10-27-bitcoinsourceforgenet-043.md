@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがBitweaverのIS_LIVE設定とSourceForgeホスティングの遅さを説明し、Boostのクロスプラットフォーム対応スレッド・ソケットライブラリの使用をサトシに提案する。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

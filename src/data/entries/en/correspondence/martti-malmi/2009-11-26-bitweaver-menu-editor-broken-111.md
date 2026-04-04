@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi reports that the Bitweaver menu editor on SourceForge is broken and asks Malmi for help updating the forum link to point to bitcoin.org."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

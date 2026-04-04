@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがbitcoin.orgサーバー上の必要なApache設定ファイルへのアクセス権限をサトシに付与したことを確認。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

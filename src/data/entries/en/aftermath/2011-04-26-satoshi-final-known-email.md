@@ -34,7 +34,7 @@ Satoshi Nakamoto's final known private communications took place over two emails
 
 **April 23, 2011 — to Mike Hearn:**
 
-Satoshi [wrote to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/), a Google engineer who had been corresponding with him since April 2009:
+Satoshi [wrote to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/), a Google engineer who had been corresponding with him since April 2009:
 
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 

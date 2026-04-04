@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi shares a temporary download link for Bitcoin 0.3.0 RC1, avoiding SourceForge, and asks Malmi to serve as the project's treasurer for incoming donations."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

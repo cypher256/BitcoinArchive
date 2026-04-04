@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi confirms he has granted Satoshi access to all the necessary Apache configuration files on the bitcoin.org server."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

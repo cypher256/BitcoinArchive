@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi urges Malmi not to switch hosting providers during the Slashdot traffic surge, and offers to send Bitcoin donations to cover costs."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

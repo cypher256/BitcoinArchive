@@ -21,7 +21,7 @@ export interface GraphData {
 }
 
 export function computeGraphData(
-  entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean; threadId?: string; sourceUrl?: string; source?: string } }[],
+  entries: { id: string; data: { participants: { name: string; slug: string }[]; isSatoshi: boolean } }[],
   lang: Lang = 'en',
 ): GraphData {
   const nodeCounts = new Map<string, { name: string; count: number; isSatoshi: boolean }>();

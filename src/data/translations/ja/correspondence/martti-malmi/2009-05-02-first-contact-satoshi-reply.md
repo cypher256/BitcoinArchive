@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "ビットコインへの協力を申し出たマルッティ・マルミへのサトシの最初の返信。サトシはビットコインに対するマルミの理解を称賛し、ウェブサイトのコンテンツとFAQの執筆への協力を求めた。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

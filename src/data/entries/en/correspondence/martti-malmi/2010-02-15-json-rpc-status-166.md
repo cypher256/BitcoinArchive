@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Just downloaded the python-json-rpc"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

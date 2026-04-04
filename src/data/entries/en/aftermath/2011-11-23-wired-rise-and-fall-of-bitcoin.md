@@ -61,7 +61,7 @@ Laszlo Hanyecz:
 
 > "I exchanged some emails with whoever Satoshi supposedly is. I always got the impression it almost wasn't a real person. I'd get replies maybe every two weeks, as if someone would check it once in a while. Bitcoin seems awfully well designed for one person to crank out."
 
-**On [Satoshi's Wikileaks plea](/BitcoinArchive/entries/forum/bitcointalk/2010-12-05-re-wikileaks/) (December 5, 2010):**
+**On [Satoshi's Wikileaks plea](/BitcoinArchive/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/) (December 5, 2010):**
 
 > "No, don't 'bring it on.' The project needs to grow gradually so the software can be strengthened along the way. I make this appeal to Wikileaks not to try to use bitcoin. Bitcoin is a small beta community in its infancy. You would not stand to get more than pocket change, and the heat you would bring would likely destroy us at this stage."
 

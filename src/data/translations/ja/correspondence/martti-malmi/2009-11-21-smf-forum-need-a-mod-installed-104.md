@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミが自身の経験からJoomlaよりもDrupalを推薦し、bitcoin.orgのDNSエントリ変更と無料SSL証明書の取得を提案。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

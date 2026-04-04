@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, absoluteUrl } from '../../../../i18n/utils';
+import { deriveThreadTitle, resolveThreadId } from '../../../../data/threads';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('entries_ja');
+  const threadMap = new Map<string, typeof entries>();
+
+  for (const entry of entries) {
+    const tid = resolveThreadId(entry);
+    if (tid) {
+      const list = threadMap.get(tid) || [];
+      list.push(entry);
+      threadMap.set(tid, list);
+    }
+  }
+
+  // 英語側に存在するスレッドIDを取得
+  const enEntries = await getCollection('entries');
+  const enThreadCounts = new Map<string, number>();
+  for (const entry of enEntries) {
+    const tid = resolveThreadId(entry);
+    if (tid) {
+      enThreadCounts.set(tid, (enThreadCounts.get(tid) || 0) + 1);
+    }
+  }
+
+  return [...threadMap.entries()]
+    .filter(([_, msgs]) => msgs.length >= 2)
+    .map(([threadId, msgs]) => {
+      msgs.sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime());
+      return {
+        params: { threadPath: threadId },
+        props: {
+          messages: msgs,
+          threadTitle: deriveThreadTitle(threadId, msgs, 'ja'),
+          hasEn: (enThreadCounts.get(threadId) || 0) >= 2,
+        },
+      };
+    });
+}
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const { messages, threadTitle, hasEn } = Astro.props;
+
+const rendered = await Promise.all(
+  messages.map(async (msg: any) => {
+    const { Content } = await render(msg);
+    return { entry: msg, Content };
+  })
+);
+
+const participantMap = new Map<string, { name: string; slug: string }>();
+for (const m of messages) {
+  for (const p of m.data.participants) {
+    if (!participantMap.has(p.slug)) {
+      participantMap.set(p.slug, p);
+    }
+  }
+}
+const participants = Array.from(participantMap.values());
+const dateRange = `${formatDate(messages[0].data.date, lang)} — ${formatDate(messages[messages.length - 1].data.date, lang)}`;
+const source = messages[0].data.source;
+const sourceLabel = t(`source.${source}` as any) || source;
+const breadcrumbs = [
+  { name: t('nav.home'), url: localePath('/', lang) },
+  { name: t('nav.entries'), url: localePath('/entries/', lang) },
+  { name: threadTitle, url: localePath(`/entries/threads/${Astro.params.threadPath}/`, lang) },
+];
+---
+
+<BaseLayout
+  title={`${threadTitle} — スレッド - ${t('site.title')}`}
+  description={`会話スレッド: ${threadTitle}（${messages.length}件）`}
+  lang={lang}
+  alternateEn={hasEn ? absoluteUrl(`/entries/threads/${Astro.params.threadPath}/`, 'en') : undefined}
+  breadcrumbs={breadcrumbs}
+>
+  <article class="container">
+    <header class="thread-header">
+      <h1>{threadTitle}</h1>
+      <div class="thread-meta">
+        <span class="thread-count">{messages.length} 件のメッセージ</span>
+        <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
+        <span class="thread-participants">
+          {participants.map((p, i) => (
+            <>
+              <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>{translateParticipantName(p.name, p.slug, lang)}</a>{i < participants.length - 1 && ', '}
+            </>
+          ))}
+        </span>
+        <span class="thread-dates">{dateRange}</span>
+      </div>
+    </header>
+
+    <div class="conversation-thread">
+      {rendered.map(({ entry, Content }: any, i: number) => (
+        <>
+          {i > 0 && <div class="thread-connector" />}
+          <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'} id={entry.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ''}>
+            <div class="message-header">
+              {(() => {
+                const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+                const displayName = translateParticipantName(ap?.name ?? entry.data.author, ap?.slug, lang);
+                const showHandle = ap && displayName !== entry.data.author;
+                return (
+                  <a href={localePath(`/participants/${ap?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: entry.data.isSatoshi }]}>
+                    {displayName}{showHandle && <span class="author-handle">（{entry.data.author}）</span>}
+                  </a>
+                );
+              })()}
+              <span class="message-date">{formatDate(entry.data.date, lang)}</span>
+              <span class="message-source">
+                <a href={entry.data.sourceUrl} target="_blank" rel="noopener">原文</a>
+                {' · '}
+                <a href={localePath(`/entries/${entry.id}/`, lang)}>個別ページ</a>
+              </span>
+            </div>
+            <div class="message-body">
+              <Content />
+            </div>
+          </div>
+        </>
+      ))}
+    </div>
+
+    <nav class="entry-nav">
+      <a href={localePath('/entries/', lang)}>
+        &larr; {t('nav.entries')}
+      </a>
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .thread-header {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .thread-header h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+  }
+  .thread-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+  .thread-count {
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+  .source-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    background: var(--color-source-bg);
+    border-radius: 3px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .source-badge:hover {
+    opacity: 0.85;
+  }
+  .participant-link {
+    text-decoration: none;
+    color: var(--color-text-muted);
+  }
+  .participant-link:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+  .participant-link.satoshi {
+    color: var(--color-satoshi);
+    font-weight: 600;
+  }
+  .author-name {
+    text-decoration: none;
+    color: inherit;
+  }
+  .author-name:hover {
+    text-decoration: underline;
+  }
+  .author-name.satoshi {
+    color: var(--color-satoshi);
+    font-weight: 600;
+  }
+  .author-handle {
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-text-muted);
+  }
+  .entry-nav {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+</style>

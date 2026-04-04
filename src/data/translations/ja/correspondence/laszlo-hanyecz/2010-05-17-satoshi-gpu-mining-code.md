@@ -12,7 +12,6 @@ participants:
     slug: "laszlo-hanyecz"
 description: "驚くべき展開として、サトシが独自に開発したGPUマイニングコードをラズロ・ハニエツと共有した。ネットワークへの潜在的な51%攻撃に対する防御手段としてGPUマイニングを独自に開発していたことが明らかになった。"
 isSatoshi: true
-threadId: "satoshi-laszlo-hanyecz"
 tags:
   - "correspondence"
   - "gpu-mining"

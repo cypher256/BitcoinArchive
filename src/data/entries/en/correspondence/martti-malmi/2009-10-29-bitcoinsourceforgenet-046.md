@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi plans to convert CriticalSection code to wxCriticalSection for cross-platform compatibility and agrees it is time to start the Linux build."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

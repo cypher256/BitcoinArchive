@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ギャビン・アンドレセンは2010年5月にビットコインを発見した後、サトシ・ナカモトとの書簡を開始し、コードの貢献を始めた。無料のBTCを配布して普及を促進するビットコイン・フォーセットを作成した。"
 isSatoshi: false
-threadId: "satoshi-gavin-andresen"
 tags:
   - "correspondence"
   - "bitcoin-faucet"

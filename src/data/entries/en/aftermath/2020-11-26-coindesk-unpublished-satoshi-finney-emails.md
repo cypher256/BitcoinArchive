@@ -41,7 +41,7 @@ Finney thanked Satoshi for corrections and asked about network scalability:
 This was during the pre-release code review period, two months before Bitcoin's public launch.
 
 **Email 2: [January 8, 2009](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/) (Satoshi → Finney)**
-Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — just hours after the [public announcement on the Cryptography Mailing List](/BitcoinArchive/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/):
+Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — just hours after the [public announcement on the Cryptography Mailing List](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
 > "Thought you'd like to know, the Bitcoin v0.1 release with EXE and full sourcecode is up on Sourceforge: http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org has release notes and screenshots. Satoshi"
 
 This email was sent from `satoshi@vistomail.com`.

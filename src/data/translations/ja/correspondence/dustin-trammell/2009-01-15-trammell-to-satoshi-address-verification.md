@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "トランメルがビットコインアドレスはIPベースの送金よりも安全であると主張。アドレスは複数のチャネルを通じて検証できるためである。システム障害によるビットコインデータの喪失について懸念を提起し、オプションのアドレス公開トグルを提案し、終了時のソケットクローズの問題を報告している。"
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "security"

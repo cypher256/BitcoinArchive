@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがBitcoinのTor接続の課題、着信接続を受け入れるノードの不足、ウェブサイトでのポートフォワーディング手順掲載の必要性を議論する。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

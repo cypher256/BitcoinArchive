@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "トランメルが職場と自宅のIPは固定であることを確認し、会話の公開CCに同意し、bitcoin-listへの参加を表明。ハル・フィニーのメッセージを読んで投資目的でもマイニングを開始したことを明かし、マイクロペイメントの普及における課題を議論している。"
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

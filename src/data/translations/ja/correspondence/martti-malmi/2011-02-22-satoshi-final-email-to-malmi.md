@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミへのサトシの最後の既知のメール。PGP署名とmailmanメーリングリストのパスワードが含まれていた。サトシが公的生活から完全に姿を消す前の最後の連絡の一つであった。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

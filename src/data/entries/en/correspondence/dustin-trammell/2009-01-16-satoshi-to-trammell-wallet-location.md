@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "Satoshi reveals the wallet data location (%appdata%\\Bitcoin), explains it uses a transactional database (DBM) safe from crash/power loss, comments on Microsoft's directory naming, and confirms he has already added socket cleanup code for the next release."
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "wallet"

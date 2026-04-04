@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi announces the creation of a Bitcoin forum on Zetaboards, shares admin credentials with Malmi, and outlines the initial subforum structure."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

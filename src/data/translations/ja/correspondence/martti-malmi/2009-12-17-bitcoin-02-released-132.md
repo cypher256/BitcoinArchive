@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがBitcoin v0.2の公式リリースアナウンスをマルミに転送。Linuxサポート、マルチプロセッサマイニング、TORプロキシ対応を含む。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

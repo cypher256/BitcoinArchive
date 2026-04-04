@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "I'm thinking of merging the bitcoin.org information with your site"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Wish I could figure out how to fix that.  What version of GLIBCXX does"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

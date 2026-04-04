@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi responds to Malmi's exchange plans, discussing programmatic Bitcoin address generation, address reuse concerns, and UI improvements for receiving payments."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

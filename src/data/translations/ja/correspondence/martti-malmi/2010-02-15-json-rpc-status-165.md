@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがマルミのPythonテスト成功を受けてJSON-RPCサーバーが一発で動作したことを喜び、テストに使ったPythonコードの共有を依頼する。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

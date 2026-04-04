@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

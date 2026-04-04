@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Yes. Tested with Python's JSON-RPC, and seems to work fine! Really"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

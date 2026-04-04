@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi explains the Bitweaver IS_LIVE setting and slow SourceForge hosting, then asks Satoshi about using Boost's cross-platform thread and socket libraries."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

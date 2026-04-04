@@ -39,11 +39,11 @@ On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a docume
 
 **The forum post theory:**
 
-The documentary's central piece of evidence was a December 2010 exchange on BitcoinTalk. Satoshi had described a concept for transaction replacement — what would later become Replace-by-Fee (RBF). Approximately 1.5 hours later, Todd (posting under the username ["retep,"](/BitcoinArchive/entries/forum/bitcointalk/2010-12-10-retep-re-fees-in-bitdns-confusion/) his name spelled backwards) replied with a technical correction:
+The documentary's central piece of evidence was a December 2010 exchange on BitcoinTalk. Satoshi had described a concept for transaction replacement — what would later become Replace-by-Fee (RBF). Approximately 1.5 hours later, Todd (posting under the username ["retep,"](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) his name spelled backwards) replied with a technical correction:
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
-This was only Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought, not a response to it. Both accounts fell silent in the days that followed. [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
+This was only Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought, not a response to it. Both accounts fell silent in the days that followed. [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
 
 **The RBF connection:**
 

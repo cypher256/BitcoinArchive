@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "This is working.  A few more things and I'll upload it."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

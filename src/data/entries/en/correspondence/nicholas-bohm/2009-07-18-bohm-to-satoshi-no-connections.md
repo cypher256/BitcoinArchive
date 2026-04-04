@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Bohm reports to Satoshi that Bitcoin has failed to establish any connections for over a day, despite restarts. He had been maintaining 3-5 node connections prior to July 15th."
 isSatoshi: false
-threadId: "satoshi-nicholas-bohm"
 tags:
   - "correspondence"
   - "network"

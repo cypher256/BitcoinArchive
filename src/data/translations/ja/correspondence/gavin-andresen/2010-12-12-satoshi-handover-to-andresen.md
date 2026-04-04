@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシ・ナカモトがギャビン・アンドレセンにソースコードリポジトリの管理権を与え、ビットコインプロジェクトのリーダーとして承認した。アンドレセンはBitcointalkフォーラムで移行を公式に発表した。"
 isSatoshi: false
-threadId: "satoshi-gavin-andresen"
 tags:
   - "correspondence"
   - "handover"

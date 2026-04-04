@@ -26,7 +26,7 @@ Mike Hearn, a Google engineer who became an early Bitcoin contributor, exchanged
 
 In their correspondence, Satoshi discussed technical aspects of Bitcoin's future, including how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to more specialized hardware.
 
-In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/):
+In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/):
 
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 

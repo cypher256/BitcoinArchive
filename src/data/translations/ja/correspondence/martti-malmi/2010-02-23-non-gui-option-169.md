@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "うまく動作している。あといくつか作業したらアップロードする。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

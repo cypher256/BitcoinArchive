@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Started very quickly when I got connected and downloaded quicker than"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがLiberty Standardのクラッシュ報告に対し問題はBitcoinではなくWineに起因すると回答し、マルミと共に次期リリースに取り組んでいることに言及する。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

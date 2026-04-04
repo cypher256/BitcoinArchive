@@ -1,57 +1,28 @@
 /**
- * Thread title overrides for threads whose grouping name
- * differs from any individual entry title.
- * Threads not listed here derive their title from the first
- * non-"Re:" message's title field.
+ * Thread title overrides for threads whose auto-derived title is incorrect.
+ * Key = directory path (= thread ID). Threads not listed here derive their
+ * title from the first non-"Re:" message's title field.
  */
 const threadMeta: Record<string, { en: string; ja: string }> = {
-  'p2pfoundation-bitcoin-open-source': {
-    en: 'Bitcoin open source implementation of P2P currency',
-    ja: 'ビットコイン：P2P通貨のオープンソース実装',
-  },
-  'bt-1735': {
+  'forum/bitcointalk/topic-1735': {
     en: 'WikiLeaks and the End of the Beginning',
     ja: 'WikiLeaksと始まりの終わり',
   },
-  'bt-6652': {
+  'forum/bitcointalk/topic-6652': {
     en: 'Gavin will visit the CIA',
     ja: 'ギャビン、CIAを訪問予定',
   },
-  'bt-626': {
+  'forum/bitcointalk/topic-626': {
     en: '*** ALERT *** Upgrade to 0.3.6 ASAP!',
     ja: '*** 警告 *** 0.3.6に今すぐアップグレードしてください！',
   },
-  'bt-7': {
+  'forum/bitcointalk/topic-7': {
     en: 'Request: Make this anonymous?',
     ja: 'リクエスト：これを匿名にできますか？',
   },
-  'bt-342': {
+  'forum/bitcointalk/topic-342': {
     en: 'They want to delete the Wikipedia article',
     ja: 'Wikipediaの記事を削除しようとしている',
-  },
-  'satoshi-adam-back': {
-    en: 'Satoshi ↔ Adam Back Correspondence',
-    ja: 'Satoshi ↔ Adam Back 書簡',
-  },
-  'satoshi-dustin-trammell': {
-    en: 'Satoshi ↔ Dustin Trammell Correspondence',
-    ja: 'Satoshi ↔ Dustin Trammell 書簡',
-  },
-  'satoshi-gavin-andresen': {
-    en: 'Satoshi ↔ Gavin Andresen Correspondence',
-    ja: 'Satoshi ↔ Gavin Andresen 書簡',
-  },
-  'satoshi-laszlo-hanyecz': {
-    en: 'Satoshi ↔ Laszlo Hanyecz Correspondence',
-    ja: 'Satoshi ↔ Laszlo Hanyecz 書簡',
-  },
-  'satoshi-martti-malmi': {
-    en: 'Satoshi ↔ Martti Malmi Correspondence',
-    ja: 'Satoshi ↔ Martti Malmi 書簡',
-  },
-  'satoshi-wei-dai': {
-    en: 'Satoshi ↔ Wei Dai Correspondence',
-    ja: 'Satoshi ↔ Wei Dai 書簡',
   },
 };
 
@@ -78,21 +49,36 @@ export function deriveThreadTitle(
 
 interface ThreadEntry {
   id: string;
-  data: { threadId?: string; type?: string; sourceUrl?: string; source?: string; date: Date; title: string };
+  data: { date: Date; title: string };
 }
 
 /**
- * Resolve the effective thread ID for an entry.
- * - If the entry has an explicit threadId in frontmatter, use it (correspondence, emails, etc.)
- * - If the entry is from BitcoinTalk, derive from sourceUrl's topic=NNN → "bt-NNN"
- * - Otherwise, no thread
+ * Resolve the effective thread ID for an entry from its directory structure.
+ *
+ * Rule: thread ID = parent directory path of the file.
+ * - correspondence/NAME/file.md          -> "correspondence/NAME"
+ * - correspondence/NAME/SUB/file.md      -> "correspondence/NAME/SUB"
+ * - forum/SOURCE/THREAD/file.md          -> "forum/SOURCE/THREAD"
+ * - emails/LIST/THREAD/file.md           -> "emails/LIST/THREAD"
+ * - emails/LIST/file.md                  -> no thread (file at list root)
+ * - aftermath/file.md, bip/file.md, etc. -> no thread
  */
-export function resolveThreadId(entry: { data: { threadId?: string; type?: string; sourceUrl?: string; source?: string } }): string | undefined {
-  if (entry.data.threadId) return entry.data.threadId;
-  if (entry.data.source === 'bitcointalk' && entry.data.type === 'forum-post' && entry.data.sourceUrl) {
-    const m = entry.data.sourceUrl.match(/topic=(\d+)/);
-    if (m) return `bt-${m[1]}`;
+export function resolveThreadId(entry: { id: string }): string | undefined {
+  const lastSlash = entry.id.lastIndexOf('/');
+  if (lastSlash < 0) return undefined;
+
+  const dir = entry.id.substring(0, lastSlash);
+
+  // correspondence: thread at depth 2+ (correspondence/NAME)
+  if (dir.startsWith('correspondence/')) {
+    return dir.split('/').length >= 2 ? dir : undefined;
   }
+
+  // forum, emails: thread at depth 3+ (forum/SOURCE/THREAD, emails/LIST/THREAD)
+  if (dir.startsWith('forum/') || dir.startsWith('emails/')) {
+    return dir.split('/').length >= 3 ? dir : undefined;
+  }
+
   return undefined;
 }
 
@@ -145,9 +131,7 @@ export function collapseThreads<T extends ThreadEntry>(
     if ((threadCounts.get(tid) || 0) < 2) return true;
     if (seen.has(tid)) return false;
     seen.add(tid);
-    // Prefer the official starter if present in the filtered set
     if (threadStarters.get(tid) === entry.id) return true;
-    // Otherwise this is the first matching entry for this thread
     return true;
   });
 }

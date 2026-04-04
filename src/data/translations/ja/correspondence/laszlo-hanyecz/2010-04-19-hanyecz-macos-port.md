@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ラズロ・ハニエツがビットコイン初のmacOS移植版を提供し、開発、バグ修正、ソフトウェアの技術的改善についてサトシ・ナカモトとメールのやり取りを始めた。"
 isSatoshi: false
-threadId: "satoshi-laszlo-hanyecz"
 tags:
   - "correspondence"
   - "early-developer"

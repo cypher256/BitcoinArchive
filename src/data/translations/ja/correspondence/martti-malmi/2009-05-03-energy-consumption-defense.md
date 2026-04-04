@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがビットコインのエネルギー消費に関する懸念に対処し、従来の銀行システムよりもはるかに少ないと主張しつつ、経済的自由と環境保全の間の緊張関係を認めた。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

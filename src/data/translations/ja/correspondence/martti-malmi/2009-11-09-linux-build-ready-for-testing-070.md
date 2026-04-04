@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "ブロックダウンロードは接続後すぐに開始し、Windows PCよりも速くダウンロードされたと報告。学校のプロジェクトのため、12月まで積極的な開発は難しいと連絡。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

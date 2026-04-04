@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Wei Dai replies to Satoshi's August 2008 email, confirming b-money was announced on the cypherpunks mailing list in 1998. He provides archive links and expresses interest in Satoshi's paper."
 isSatoshi: false
-threadId: "satoshi-wei-dai"
 tags:
   - "b-money"
   - "cypherpunks"

@@ -32,7 +32,7 @@ translationStatus: complete
 
 これは2010年11月のCableGateスキャンダルを受けてWikiLeaksに課された金融封鎖の後のことだった。Bank of America、Visa、MasterCard、PayPal、Western Unionがすべて同組織への寄付を遮断し、収入の推定95%を断ち切っていた。
 
-6か月前の2010年12月5日、サトシ・ナカモトはWikiLeaksのビットコイン採用に対して[コミュニティにこう警告していた](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-12-05-re-wikileaks/)。
+6か月前の2010年12月5日、サトシ・ナカモトはWikiLeaksのビットコイン採用に対して[コミュニティにこう警告していた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)。
 
 > 「プロジェクトは徐々に成長する必要がある。そうすれば途中でソフトウェアを強化できる。WikiLeaksにビットコインを使おうとしないよう訴える。」
 

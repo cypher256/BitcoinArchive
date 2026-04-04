@@ -12,7 +12,6 @@ participants:
     slug: "adam-back"
 description: "サトシはアダム・バックにb-moneyの参照を教えてくれたことに感謝し、ウェイ・ダイの提案を以前は知らなかったことを明かした。歴史的に重要な一文「私のアイデアはまさにその点から始まっている」を記した。"
 isSatoshi: true
-threadId: "satoshi-adam-back"
 tags:
   - "hashcash"
   - "adam-back"

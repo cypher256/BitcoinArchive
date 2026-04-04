@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Ok, I'll monitor it. Bandwidth hasn't been a problem so far - it's"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

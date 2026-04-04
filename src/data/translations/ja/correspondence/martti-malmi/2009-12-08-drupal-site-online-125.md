@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミが新しいbitcoin.orgの公開を祝福し、bitcoin.sourceforge.netを新サイトにリダイレクトしたことを確認。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

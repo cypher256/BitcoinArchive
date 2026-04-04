@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Gavin Andresen replies to Satoshi's final email, accepting the alert key and disclosing that he has been invited to present Bitcoin to US intelligence agencies. Satoshi never replies to this message."
 isSatoshi: false
-threadId: "satoshi-gavin-andresen"
 tags:
   - "correspondence"
   - "alert-key"

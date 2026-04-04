@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi proposes giving trusted translators Drupal user accounts on bitcoin.org so they can update translations directly, and discusses delegation of homepage maintenance."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

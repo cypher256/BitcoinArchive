@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがLinuxビルドの自動起動やトレイ機能などへのマルミの貢献に感謝し、今後の学校のC++プロジェクトの成功を祈る。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

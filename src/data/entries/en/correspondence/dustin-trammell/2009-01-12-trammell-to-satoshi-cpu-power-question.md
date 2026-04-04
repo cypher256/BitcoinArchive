@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Trammell asks what prevents the most powerful node from generating the majority of bitcoins — one of the earliest questions about mining centralization."
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

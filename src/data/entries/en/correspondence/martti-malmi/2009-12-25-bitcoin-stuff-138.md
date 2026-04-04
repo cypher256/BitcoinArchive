@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi corrects his earlier memory usage estimate for Bitcoin, confirming normal usage is only 17MB after mistakenly referencing a 250,000 block test run."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

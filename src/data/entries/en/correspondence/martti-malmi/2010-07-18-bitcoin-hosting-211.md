@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi agrees not to switch hosting and provides a Bitcoin address for donations to help cover bitcoin.org server costs."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

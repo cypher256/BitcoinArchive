@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi agrees with Gavin that the forum database should not be shared externally due to private messages and passwords, and supports encrypted backup storage."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

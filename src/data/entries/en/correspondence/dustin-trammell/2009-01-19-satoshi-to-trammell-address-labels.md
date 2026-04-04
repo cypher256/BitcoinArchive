@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "Satoshi explains the default address label is 'Your Address', suggests the mislabeling was a user error due to confusing UI, and acknowledges the fundamental UX challenge that creating per-payer receiving addresses has no real-world analogy."
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "usability"

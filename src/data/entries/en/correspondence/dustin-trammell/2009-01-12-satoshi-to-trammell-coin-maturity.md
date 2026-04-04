@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "Satoshi replies to Dustin Trammell, explaining the coin maturity system and recommending an upgrade to version 0.1.3 which had stabilized the software."
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

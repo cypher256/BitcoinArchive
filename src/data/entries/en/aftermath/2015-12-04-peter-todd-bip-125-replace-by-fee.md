@@ -39,7 +39,7 @@ On December 10, 2010, [Peter Todd](/BitcoinArchive/participants/peter-todd/) (th
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
-This was Todd's second-ever post on BitcoinTalk, made three days after registration. [Satoshi's last public forum post](/BitcoinArchive/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/) came two days later. Five years afterward, Todd formalized the very concept Satoshi had been describing.
+This was Todd's second-ever post on BitcoinTalk, made three days after registration. [Satoshi's last public forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later. Five years afterward, Todd formalized the very concept Satoshi had been describing.
 
 **How BIP 125 works:**
 

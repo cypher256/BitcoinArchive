@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがリビジョン追跡付きの権限で信頼できる翻訳者にDrupalアカウントを付与することに同意し、Xunieを最初の候補として提案する。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

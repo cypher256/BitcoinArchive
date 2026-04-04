@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Laszlo Hanyecz contributed the first macOS port of Bitcoin and began exchanging emails with Satoshi Nakamoto about development, bug fixes, and technical improvements to the software."
 isSatoshi: false
-threadId: "satoshi-laszlo-hanyecz"
 tags:
   - "correspondence"
   - "early-developer"

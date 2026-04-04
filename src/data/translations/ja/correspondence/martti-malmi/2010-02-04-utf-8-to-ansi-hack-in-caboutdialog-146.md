@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがwxWidgetsの著作権記号に関するAboutダイアログのUTF-8からANSIへの変換ハックのコード変更についてマルミに質問。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

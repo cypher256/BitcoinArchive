@@ -12,7 +12,6 @@ participants:
     slug: "nicholas-bohm"
 description: "サトシがボームに新しいルーターでポート8333を転送するよう助言した。オンライン上のノードのいずれも外部接続を受け付けられない場合、ネットワークが機能しなくなることを説明した。"
 isSatoshi: true
-threadId: "satoshi-nicholas-bohm"
 tags:
   - "correspondence"
   - "network"

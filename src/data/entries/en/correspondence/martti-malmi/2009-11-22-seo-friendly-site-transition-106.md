@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi outlines an SEO-friendly plan for transitioning bitcoin.org to a new server, emphasizing the importance of preserving search engine history and site start date."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

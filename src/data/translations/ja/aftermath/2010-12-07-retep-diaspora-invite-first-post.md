@@ -56,7 +56,7 @@ translationStatus: complete
 - 12月7日 09:13:47 — アカウント「retep」登録
 - 12月7日 09:14:28 — 最初の投稿（このDiaspora招待リクエスト）—— **41秒後**
 - 12月10日 01:27:59 — 2番目の投稿（サトシのトランザクション置換への返信）
-- 12月12日 — [サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/)
+- 12月12日 — [サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)
 
 <!-- speaker: narrator -->
 登録から最初の投稿まで41秒。メッセージは事前に用意されていたか、あるいはアカウントはこの投稿のためだけに作られたことを示唆している。

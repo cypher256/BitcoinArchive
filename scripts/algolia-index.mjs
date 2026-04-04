@@ -59,9 +59,6 @@ function readEntries(baseDir, lang) {
         const source = get('source');
         const description = get('description');
         const isSatoshi = get('isSatoshi') === 'true';
-        const threadId = type === 'forum-post' && source === 'bitcointalk'
-          ? (fm.match(/sourceUrl:.*topic=(\d+)/)?.[1] ? `bt-${fm.match(/sourceUrl:.*topic=(\d+)/)[1]}` : get('threadId'))
-          : get('threadId');
 
         // Build URL path (match Astro's slug generation: dots are removed)
         const slug = relPath + '/' + item.name.replace('.md', '').replaceAll('.', '');
@@ -105,7 +102,6 @@ function readEntries(baseDir, lang) {
           description,
           body: truncatedBody,
           isSatoshi,
-          threadId,
           url,
           lang,
         });

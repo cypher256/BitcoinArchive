@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがテストバージョン5だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況を説明。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルッティがEPCAカンファレンスの招待に返信し、担当者の手配を約束"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

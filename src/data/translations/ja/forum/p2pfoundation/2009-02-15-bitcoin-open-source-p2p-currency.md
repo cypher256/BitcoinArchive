@@ -16,7 +16,6 @@ tags:
   - "decentralization"
   - "trust"
   - "e-currency"
-threadId: "p2pfoundation-bitcoin-open-source"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"

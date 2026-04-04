@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "一般メンバー向けの返信通知と新規トピック通知を無効化したことの報告"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

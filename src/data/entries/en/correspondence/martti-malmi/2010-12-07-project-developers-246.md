@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi agrees to be listed on the Project Developers page and gives permission to include his email address."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -1,0 +1,30 @@
+---
+title: "Re: オーバーフローバグ 深刻"
+date: 2010-08-16T01:00:45.000Z
+type: "forum-post"
+source: "bitcointalk"
+sourceUrl: "https://bitcointalk.org/index.php?topic=823.msg9623#msg9623"
+author: "Satoshi Nakamoto"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "スレッド「オーバーフローバグ 深刻」におけるサトシ・ナカモトの返信。"
+isSatoshi: true
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/"
+translationStatus: complete
+---
+
+<!-- tone-skip -->
+[Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609/)
+> 影響についての質問：不正なブロックの後、不正なブロックチェーンを使って **トランザクション** を送信しました。
+>
+> そのトランザクションのステータスはどうなりますか？
+> 見たところ、（更新された）送信側のクライアントウォレットには差し引かれた金額が表示されています。
+>
+> 修正されたチェーンに再統合され、受信者はそれを使えるようになりますか？
+<!-- /tone-skip -->
+ああ、修正されたチェーンに再統合される。トランザクションは消えず、双方で引き続き表示されるが、確認数が0に戻り、再び増え始める。
+
+ブロック74638以降の不正なチェーンでブロックを生成した場合のみ、そのブロックからの50 BTCが消える。不正なチェーン内のブロックはまだ成熟していなかったはずだ。

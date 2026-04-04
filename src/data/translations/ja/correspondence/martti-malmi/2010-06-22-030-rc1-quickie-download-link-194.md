@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "了解です、監視しておきます。帯域幅は今のところ問題になっていません。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

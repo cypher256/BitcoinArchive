@@ -46,7 +46,7 @@ The post is maximally terse: no subject ("I"), no full word ("msg" for "message"
 - December 7, 09:13:47 — Account "retep" registered
 - December 7, 09:14:28 — First post (this Diaspora invite request) — 41 seconds later
 - December 10, 01:27:59 — Second post (reply to Satoshi on transaction replacement)
-- December 12 — [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/)
+- December 12 — [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)
 
 The 41-second gap between registration and first post suggests the message was composed in advance — or the account was created specifically to post it.
 

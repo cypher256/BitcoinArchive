@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがSSH経由でSMF File Managerのインストールに成功し、Drupalのテーマもアップロード。bitcoin.orgのCMSとしてDrupalとJoomlaを比較検討。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "お元気ですか？しばらく姿を見かけませんでしたね。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi asks Malmi about the cause of a bitcoin.org outage and inquires about backup procedures, suggesting a mirror backup arrangement."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

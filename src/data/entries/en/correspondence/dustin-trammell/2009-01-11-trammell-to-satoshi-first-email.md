@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Dustin Trammell's first email to Satoshi Nakamoto after downloading and running the Bitcoin alpha release. Trammell reports on his experience running the software, mentions a public timestamp service, and asks about the coin maturity system after seeing generated coins showing 0.00 credit."
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

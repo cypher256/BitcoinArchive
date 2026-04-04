@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Trammell reports confusion about a 100 BTC transfer he sent between his own two Bitcoin instances — the transaction details showed 'Satoshi' as a label, leading him to wonder if Satoshi had sent the coins or if the label came from block generation."
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

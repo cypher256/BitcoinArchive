@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi agrees to give trusted translators Drupal accounts with revision-tracking permissions, suggesting Xunie as the first candidate."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

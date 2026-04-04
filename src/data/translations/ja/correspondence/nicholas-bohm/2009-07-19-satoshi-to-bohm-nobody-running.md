@@ -12,7 +12,6 @@ participants:
     slug: "nicholas-bohm"
 description: "ボームの接続問題に対するサトシの率直な回答。他にノードを実行している人がいないかもしれないと認めた。IPアドレスが変わったかを尋ね、新しいユーザーが接続できるようサーバーをオンラインに保つよう勧めた。"
 isSatoshi: true
-threadId: "satoshi-nicholas-bohm"
 tags:
   - "correspondence"
   - "network"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがDrupalでのセットアップ続行を決定。サイトのHTTPSデフォルト化には反対し、プライバシーを重視するユーザー向けのオプション機能としてSSLを提供する方針を提案。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

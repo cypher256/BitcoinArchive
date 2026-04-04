@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "サトシがダスティン・トランメルに返信し、コインの成熟システムを説明するとともに、ソフトウェアを安定させたバージョン0.1.3へのアップグレードを推奨している。"
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

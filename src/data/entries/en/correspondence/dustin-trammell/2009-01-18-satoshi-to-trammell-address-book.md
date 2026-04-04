@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "Satoshi explains that the 'Satoshi' label Trammell saw was from his own address book, that transactions show which receiving address was used (not who sent them), and recommends creating different addresses for each payer to identify the source of payments."
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "usability"

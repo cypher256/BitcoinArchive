@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ボームがサトシに、再起動しても丸一日以上ビットコインが接続を確立できなくなったと報告した。7月15日以前は3〜5ノードの接続を維持できていた。"
 isSatoshi: false
-threadId: "satoshi-nicholas-bohm"
 tags:
   - "correspondence"
   - "network"

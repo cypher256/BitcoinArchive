@@ -32,7 +32,7 @@ translationStatus: complete
 
 **「1つの他のノード」の体験：**
 
-トランメルは、2009年1月9日の[暗号技術メーリングリストでのサトシの発表](/BitcoinArchive/ja/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/)後、ソフトウェアをダウンロードして実行した最初の瞬間を描写した：
+トランメルは、2009年1月9日の[暗号技術メーリングリストでのサトシの発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)後、ソフトウェアをダウンロードして実行した最初の瞬間を描写した：
 
 > 「最初に起動した時、1つの他のノードに接続しただけだった。約4〜6時間、1つの接続だけでそこに座っていて、それから他の接続が始まり、他のノードがオンラインになり始めた。」
 

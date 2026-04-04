@@ -12,7 +12,6 @@ participants:
     slug: "adam-back"
 description: "Satoshi writes to Adam Back for the final time, thanking him for the earlier paper suggestions and announcing that the Bitcoin software has been launched. He includes Hal Finney's overview of the project from the Cryptography mailing list."
 isSatoshi: true
-threadId: "satoshi-adam-back"
 tags:
   - "hashcash"
   - "adam-back"

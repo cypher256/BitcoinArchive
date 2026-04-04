@@ -36,7 +36,7 @@ On February 22, 2024, during Day 14 of the COPA v. Craig Wright trial at the UK 
 
 > "I worked on Bitcoin in the early days and as part of that I interacted with Satoshi Nakamoto, only ever by email, and we effectively worked together on the project for a brief period of time until he retreated from the project and told me he was done with it."
 
-Hearn stated that his communications with Satoshi spanned from [April 12, 2009](/BitcoinArchive/entries/correspondence/mike-hearn/2009-04-12-hearn-to-satoshi-questions/) to [April 23, 2011](/BitcoinArchive/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/). He had first discovered Bitcoin from a mailing list called rippleusers@googlegroups.com (unrelated to the later company Ripple), and contacted Satoshi because "there was a lot about Bitcoin that wasn't clear from the White Paper or the user interface of the app or the website."
+Hearn stated that his communications with Satoshi spanned from [April 12, 2009](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/) to [April 23, 2011](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/). He had first discovered Bitcoin from a mailing list called rippleusers@googlegroups.com (unrelated to the later company Ripple), and contacted Satoshi because "there was a lot about Bitcoin that wasn't clear from the White Paper or the user interface of the app or the website."
 
 **On meeting Craig Wright — the dinner (July 9, 2016):**
 

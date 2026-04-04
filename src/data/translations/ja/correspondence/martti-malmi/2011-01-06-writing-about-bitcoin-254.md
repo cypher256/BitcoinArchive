@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがメディア対応の責任をギャビン・アンドレセンに委任し、EFF（電子フロンティア財団）との良好な関係構築の重要性を強調。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

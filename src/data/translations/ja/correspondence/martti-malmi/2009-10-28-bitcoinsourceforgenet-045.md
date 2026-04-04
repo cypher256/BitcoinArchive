@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "現在のバージョンのBitweaverでは不可能です。Bitweaverのwikiとフォーラムパッケージはそれほど高度ではありません。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "了解です。11月23日から25日まで不在にします。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

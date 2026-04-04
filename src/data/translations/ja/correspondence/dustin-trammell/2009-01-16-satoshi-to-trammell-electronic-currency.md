@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "サトシがトランメルとの会話をbitcoin-listおよび暗号技術メーリングリストにCCし、ビットコインの将来に関するビジョンを共有した。「万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない」という有名な一節を含む。これはトランメルへの以前のプライベートメールの公開版である。"
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "use-cases"

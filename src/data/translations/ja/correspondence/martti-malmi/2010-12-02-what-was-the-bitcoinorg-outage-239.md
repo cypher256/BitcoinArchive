@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがbitcoin.orgの障害原因をマルミに尋ね、ミラーバックアップの導入を含むバックアップ体制について確認。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

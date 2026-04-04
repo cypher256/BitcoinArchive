@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがマルミの取引所計画に回答し、プログラムによるBitcoinアドレス生成、アドレスの使い回しの懸念、支払い受信のUI改善を議論。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがマルミのFAQ草案をレビューし、ビットコインを投資として位置づけることに警告した。「そのように売り込むことはできない」と述べた——ビットコインのポジショニングに関する歴史的に重要な姿勢。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

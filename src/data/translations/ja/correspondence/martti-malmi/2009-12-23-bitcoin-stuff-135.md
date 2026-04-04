@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "コインが受信されたかどうかを確認したり、コインを送金したりするためのコマンドラインツールも少なくとも必要です。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

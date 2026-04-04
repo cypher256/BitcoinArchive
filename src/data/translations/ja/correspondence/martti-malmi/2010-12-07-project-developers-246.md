@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがプロジェクト開発者ページへの掲載に同意し、メールアドレスの掲載も許可。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

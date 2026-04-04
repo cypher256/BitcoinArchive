@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Trammell argues Bitcoin addresses are more secure than IP-based sending because addresses can be verified through multiple channels. He raises concerns about Bitcoin data loss from system failures, proposes an optional address advertisement toggle, and reports unclean socket closure on exit."
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "security"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi shares research on running Bitcoin without a GUI, including GTK headless support, wxAppConsole, and IMPLEMENT_APP_NO_MAIN() approaches."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

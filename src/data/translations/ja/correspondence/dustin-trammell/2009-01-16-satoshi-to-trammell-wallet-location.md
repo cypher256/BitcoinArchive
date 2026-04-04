@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "サトシがウォレットデータの保存場所（%appdata%\\Bitcoin）を明かし、クラッシュや停電に安全なトランザクショナルデータベース（DBM）を使用していることを説明し、Microsoftのディレクトリ命名について言及し、次のリリースに向けてソケットクリーンアップコードを既に追加したことを確認した。"
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "wallet"

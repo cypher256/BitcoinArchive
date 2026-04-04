@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi notes that the server's sendmail has not been configured yet, so PHP mail functionality is not available but is not needed at this point."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

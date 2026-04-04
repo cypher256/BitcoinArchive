@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "How are you doing? Haven't seen you around in a while."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

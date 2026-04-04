@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "I don't know what it was. It started working again when I rebooted it."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがlinux-0.1.6-test5ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

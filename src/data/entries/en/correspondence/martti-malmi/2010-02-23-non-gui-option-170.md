@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "That seems good, I don't know of any standards about it."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

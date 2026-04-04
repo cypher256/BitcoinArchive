@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi sends the official Bitcoin 0.3 release announcement to the bitcoin-list mailing list, describing new features including daemon mode and JSON-RPC."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

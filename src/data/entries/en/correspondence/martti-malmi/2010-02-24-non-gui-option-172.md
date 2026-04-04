@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Good, that gives them a little sense of ownership and responsibility."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

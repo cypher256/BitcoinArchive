@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "トランメルが、混乱の原因となった「Satoshi」ラベルが自分自身の受信アドレスに付けられていたことに気づき、自宅に複数のアドレスがあることを確認し、自分でラベルを設定した覚えがないため「Satoshi」がデフォルトだったのかと質問した。"
 isSatoshi: false
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "usability"

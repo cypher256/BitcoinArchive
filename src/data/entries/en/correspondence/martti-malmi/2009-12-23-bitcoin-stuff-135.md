@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "I'd also need at least the command line tools to check if coins have"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

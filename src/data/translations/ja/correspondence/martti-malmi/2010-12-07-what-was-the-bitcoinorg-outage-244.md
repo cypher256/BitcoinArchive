@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがbitcoin.orgサーバーの暗号化されたrootパスワードを送信し、BitcoinExchangeのファイルとデータベースの新サーバーへの移行状況を報告。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

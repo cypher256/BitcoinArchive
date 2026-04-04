@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi emphasizes that autostart with minimize-to-tray is 'a must-have feature' for network growth, comparing it to early file-sharing network strategies. This feature was implemented by Malmi for Bitcoin 0.2."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

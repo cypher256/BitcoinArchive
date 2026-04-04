@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシが検索エンジンの履歴とサイト開始日を保持するためのbitcoin.orgのSEOフレンドリーなサーバー移行計画を説明。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

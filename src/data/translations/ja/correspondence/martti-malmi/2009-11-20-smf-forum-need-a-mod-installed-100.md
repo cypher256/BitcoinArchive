@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがフォーラム設定用にサトシにVPSへのSSHアクセスを提供し、公開を承認。自身のBitcoin取引所の立ち上げへの期待も表明。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

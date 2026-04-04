@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがAboutダイアログのUTF-8エンコーディング変更は意図的ではなく、エンコーディングの問題が原因だったと回答。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

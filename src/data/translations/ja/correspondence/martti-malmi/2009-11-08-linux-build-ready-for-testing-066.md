@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがLiberty StandardのLinuxテストにおけるdebug.logを分析し、ブロックダウンロードの問題を調査。トレイ最小化と閉じるオプションの分離にも同意。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

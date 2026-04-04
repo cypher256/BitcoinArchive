@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "サトシがDrupalのApache設定を修正するためにマルミにサーバーのアクセス権限を要求し、mod_rewriteのクリーンURL有効化の詳細な手順を提供。"
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

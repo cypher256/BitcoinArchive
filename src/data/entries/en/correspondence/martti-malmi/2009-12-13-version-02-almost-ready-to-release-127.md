@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "No problems so far. Seems fine."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

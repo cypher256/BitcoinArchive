@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "It's not possible with the current version of Bitweaver. Bitweaver's"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

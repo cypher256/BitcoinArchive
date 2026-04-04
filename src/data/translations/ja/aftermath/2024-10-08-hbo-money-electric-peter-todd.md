@@ -42,13 +42,13 @@ translationStatus: complete
 **フォーラム投稿理論：**
 
 <!-- speaker: narrator -->
-ドキュメンタリーの中心的な証拠は、2010年12月のBitcoinTalkでのやり取りだった。サトシがトランザクション置換——後にReplace-by-Fee（RBF）として知られる概念——を説明した。その約1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peterの逆綴り）が技術的な指摘で返信した。
+ドキュメンタリーの中心的な証拠は、2010年12月のBitcoinTalkでのやり取りだった。サトシがトランザクション置換——後にReplace-by-Fee（RBF）として知られる概念——を説明した。その約1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peterの逆綴り）が技術的な指摘で返信した。
 
 <!-- speaker: Peter Todd -->
 > 「もちろん、正確に言えば、2つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
 
 <!-- speaker: narrator -->
-これはトッドのBitcoinTalkでの2回目の投稿で、登録からわずか3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/2010-12-12-satoshi-final-post/)は2日後の12月12日だった。
+これはトッドのBitcoinTalkでの2回目の投稿で、登録からわずか3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は2日後の12月12日だった。
 
 **RBFとの接続：**
 

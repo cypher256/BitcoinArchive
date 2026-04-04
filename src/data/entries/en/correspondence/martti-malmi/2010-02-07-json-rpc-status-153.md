@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi reports progress on Bitcoin's JSON-RPC implementation using boost::asio and JSON Spirit, and notes the forum's rapid growth."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

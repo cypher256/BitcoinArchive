@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi celebrates the JSON-RPC server working on the first try after Malmi's successful Python test, and asks for the test code."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

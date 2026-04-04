@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "サトシがv0.1.3でバグが修正されたことをトランメルに伝え、IP送金機能を使ってコインを送ることを申し出た。最も初期に知られるビットコインの直接送金の一つ。"
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

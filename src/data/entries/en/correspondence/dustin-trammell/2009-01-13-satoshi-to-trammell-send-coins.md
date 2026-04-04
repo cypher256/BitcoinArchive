@@ -12,7 +12,6 @@ participants:
     slug: "dustin-trammell"
 description: "Satoshi informs Trammell that bugs are fixed in v0.1.3 and offers to send him some coins via the send-to-IP feature, one of the earliest known direct Bitcoin transfers."
 isSatoshi: true
-threadId: "satoshi-dustin-trammell"
 tags:
   - "correspondence"
   - "early-adopter"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi delegates press and media responsibilities to Gavin Andresen, emphasizing the importance of building a good relationship with the EFF."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "python-json-rpcをダウンロードして、Pythonインタプリタで直接テストしました。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

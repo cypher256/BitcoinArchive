@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi forwards a cheaper hosting offer from Thufir and compares it to Rackspace, noting the cost difference could be offset by the expected donation."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

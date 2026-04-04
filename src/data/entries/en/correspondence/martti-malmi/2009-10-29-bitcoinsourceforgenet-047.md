@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Would the Boost mutex be of any help here?"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

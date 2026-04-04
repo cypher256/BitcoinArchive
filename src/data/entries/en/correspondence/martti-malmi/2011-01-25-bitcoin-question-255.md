@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Email regarding Fwd: Bitcoin question"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Nicholas Bohm, a retired British solicitor and early Bitcoin user, writes to Satoshi that after installing a new router, his Bitcoin client can no longer connect to the network."
 isSatoshi: false
-threadId: "satoshi-nicholas-bohm"
 tags:
   - "correspondence"
   - "early-adopter"

@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Satoshi forwards the official Bitcoin v0.2 release announcement to Malmi, featuring Linux support, multi-processor mining, and TOR proxy support."
 isSatoshi: true
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

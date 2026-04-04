@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "マルミがJSON-RPCの進捗に好意的に反応し、取引所サービスのためにLiberty Reserve APIの勉強を始めると発表。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

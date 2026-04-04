@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだです。"
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"

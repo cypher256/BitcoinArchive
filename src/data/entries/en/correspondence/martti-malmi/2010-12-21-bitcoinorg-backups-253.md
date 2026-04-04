@@ -12,7 +12,6 @@ participants:
     slug: "martti-malmi"
 description: "Malmi provides the wget command and credentials for fetching the daily GPG-encrypted bitcoin.org backup file."
 isSatoshi: false
-threadId: "satoshi-martti-malmi"
 tags:
   - "correspondence"
   - "early-contributor"
