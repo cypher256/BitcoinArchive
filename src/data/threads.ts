@@ -24,7 +24,7 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'They want to delete the Wikipedia article',
     ja: 'Wikipediaの記事を削除しようとしている',
   },
-  'forum/p2pfoundation': {
+  'forum/p2pfoundation/bitcoin-open-source': {
     en: 'Bitcoin open source implementation of P2P currency',
     ja: 'ビットコイン：P2P通貨のオープンソース実装',
   },

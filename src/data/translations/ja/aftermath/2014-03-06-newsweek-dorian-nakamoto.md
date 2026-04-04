@@ -35,6 +35,6 @@ translationStatus: complete
 
 ドリアン・ナカモトはビットコインへの関与を断固として繰り返し否定した。記者の質問を誤解しており、以前の機密エンジニアリング業務について聞かれていると思ったと述べた。弁護士を雇い、AP通信の詳細なインタビューで否定を改めて表明した。
 
-翌日の2014年3月7日、[サトシ・ナカモトのP2P Foundationアカウント](/BitcoinArchive/ja/entries/forum/p2pfoundation/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency/)に「私はドリアン・ナカモトではない」というシンプルなメッセージが投稿された。この投稿の真正性は議論が分かれており、サトシのP2P Foundationアカウントが不正アクセスされていた可能性もある。
+翌日の2014年3月7日、[サトシ・ナカモトのP2P Foundationアカウント](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency/)に「私はドリアン・ナカモトではない」というシンプルなメッセージが投稿された。この投稿の真正性は議論が分かれており、サトシのP2P Foundationアカウントが不正アクセスされていた可能性もある。
 
 ビットコインコミュニティはドリアンを支持し、67BTC以上の寄付金を彼のために集めた。この事件は、サトシの正体に関する無責任な報道と、憶測に巻き込まれた無関係な個人への影響について、教訓的な事例となった。
