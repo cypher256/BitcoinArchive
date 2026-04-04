@@ -17,12 +17,11 @@ threadId: "bt-alert-upgrade-to-0-3-6-asap"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 [Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
 > [Quote from: satoshi on July 30, 2010, 07:53:06 PM](#msg6711)
-> > <!-- tone-skip -->
 > > [Quote from: knightmb on July 30, 2010, 07:24:07 PM](#msg6702)
 > > > これらのビルドを作るのにどれだけ苦労したか想像できます。Ubuntu 9.04の環境でプログラムをビルドしようとしていますが、パッケージをインストールしたりソースをコンパイルしたりしても、すべての依存関係を見つけられません（笑）。
-> > <!-- /tone-skip -->
 > >
 > > なぜそんなに苦労しているのか理解できない。build-unix.txtの手順に従っただけだ。Boost 1.37用にちょっとした修正を加えたが、次回SVNを更新する時にアップロードする。以下に記載する：
 > >
@@ -74,6 +73,7 @@ translationStatus: complete
 > **sudo apt-get install libboost1.37-dev**
 >
 > 余談だが、Ubuntu 64bitシステムでコンパイルしたので、できたプログラムは64bit対応になった。いくつかの64bitシステムでテスト中だ。
+<!-- /tone-skip -->
 
 **sudo apt-get install libboost1.37-dev**
 にすればいい
