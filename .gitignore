@@ -25,6 +25,7 @@ src/data/git-dates.json
 
 # temporary internal work files
 temp_*
+*_temp.md
 
 # jetbrains setting folder
 .idea/
