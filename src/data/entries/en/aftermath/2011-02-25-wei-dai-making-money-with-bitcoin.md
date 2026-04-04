@@ -26,7 +26,7 @@ secondarySources:
 
 *LessWrong "Making money with Bitcoin?" comment thread, February 25, 2011:*
 
-[Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — joined a discussion about Bitcoin's investment potential. His comments clarify his relationship to Bitcoin and reveal his first steps as a miner.
+[Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — joined a discussion about Bitcoin's investment potential. His comments clarify his relationship to Bitcoin and reveal his first steps as a miner.
 
 **On his connection to Bitcoin (responding to a direct question):**
 
@@ -48,4 +48,4 @@ Dai clarified that he did not create Bitcoin — he only described similar conce
 
 Dai contrasted b-money and Bitcoin with traditional e-cash protocols that require trusted bank intermediaries.
 
-*[Dai revealed in the thread that he purchased a Radeon 5870 GPU for mining after this discussion — the beginning of the mining activity he would later describe in his 2014 ["Look for the Next Tech Gold Rush?"](/BitcoinArchive/en/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/) post as turning ~$300 into six figures.]*
+*[Dai revealed in the thread that he purchased a Radeon 5870 GPU for mining after this discussion — the beginning of the mining activity he would later describe in his 2014 ["Look for the Next Tech Gold Rush?"](/BitcoinArchive/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/) post as turning ~$300 into six figures.]*

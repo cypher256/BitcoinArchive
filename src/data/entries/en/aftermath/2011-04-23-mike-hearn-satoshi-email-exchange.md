@@ -26,10 +26,10 @@ Mike Hearn, a Google engineer who became an early Bitcoin contributor, exchanged
 
 In their correspondence, Satoshi discussed technical aspects of Bitcoin's future, including how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to more specialized hardware.
 
-In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinArchive/en/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/):
+In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/):
 
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
-This was among the last known private communications from Satoshi before his complete disappearance. The email confirmed that Satoshi viewed [Gavin Andresen](/BitcoinArchive/en/participants/gavin-andresen/) as the appropriate successor to lead Bitcoin's development, and indicated a deliberate and voluntary withdrawal from the project rather than any sudden or forced departure.
+This was among the last known private communications from Satoshi before his complete disappearance. The email confirmed that Satoshi viewed [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) as the appropriate successor to lead Bitcoin's development, and indicated a deliberate and voluntary withdrawal from the project rather than any sudden or forced departure.
 
-Hearn would later [publish these emails in full in August 2017](/BitcoinArchive/en/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/), providing one of the most valuable primary sources for understanding Satoshi's technical vision and his state of mind as he left the project.
+Hearn would later [publish these emails in full in August 2017](/BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/), providing one of the most valuable primary sources for understanding Satoshi's technical vision and his state of mind as he left the project.

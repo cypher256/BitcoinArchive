@@ -43,7 +43,7 @@ secondarySources:
     url: "https://wired.jp/article/benjamin-wallace-interview-satoshi-nakamoto/"
 ---
 
-In November 2011, journalist Benjamin Wallace published "The Rise and Fall of Bitcoin" in Wired magazine (issue 19.12) — one of the earliest major feature articles on Bitcoin in mainstream media. The article traced Bitcoin's entire arc to date: from Satoshi Nakamoto's [whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/), through the mining boom and price explosion, to the hacks, scams, and disillusionment that followed.
+In November 2011, journalist Benjamin Wallace published "The Rise and Fall of Bitcoin" in Wired magazine (issue 19.12) — one of the earliest major feature articles on Bitcoin in mainstream media. The article traced Bitcoin's entire arc to date: from Satoshi Nakamoto's [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/), through the mining boom and price explosion, to the hacks, scams, and disillusionment that followed.
 
 **On early praise for Bitcoin:**
 
@@ -51,7 +51,7 @@ In November 2011, journalist Benjamin Wallace published "The Rise and Fall of Bi
 
 **On early community spirit:**
 
-The article described how [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) bought 10,000 bitcoins for $50 and created the Bitcoin Faucet, giving them away. [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) conducted the [first real-world Bitcoin transaction](/BitcoinArchive/en/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — paying 10,000 BTC for two pizzas.
+The article described how [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) bought 10,000 bitcoins for $50 and created the Bitcoin Faucet, giving them away. [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) conducted the [first real-world Bitcoin transaction](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — paying 10,000 BTC for two pizzas.
 
 **On Satoshi's identity:**
 
@@ -61,7 +61,7 @@ Laszlo Hanyecz:
 
 > "I exchanged some emails with whoever Satoshi supposedly is. I always got the impression it almost wasn't a real person. I'd get replies maybe every two weeks, as if someone would check it once in a while. Bitcoin seems awfully well designed for one person to crank out."
 
-**On [Satoshi's Wikileaks plea](/BitcoinArchive/en/entries/forum/bitcointalk/2010-12-05-re-wikileaks/) (December 5, 2010):**
+**On [Satoshi's Wikileaks plea](/BitcoinArchive/entries/forum/bitcointalk/2010-12-05-re-wikileaks/) (December 5, 2010):**
 
 > "No, don't 'bring it on.' The project needs to grow gradually so the software can be strengthened along the way. I make this appeal to Wikileaks not to try to use bitcoin. Bitcoin is a small beta community in its infancy. You would not stand to get more than pocket change, and the heat you would bring would likely destroy us at this stage."
 

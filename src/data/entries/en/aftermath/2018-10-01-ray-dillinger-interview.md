@@ -47,7 +47,7 @@ Satoshi's explanation: he was designing for JavaScript compatibility, where no o
 
 I would have preferred: screw Javascript, I want rounding errors to be impossible, and used integers.
 
-**On [Hal Finney](/BitcoinArchive/en/participants/hal-finney/)'s perspective:**
+**On [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s perspective:**
 
 Hal Finney, who had experience with exact math in floating point formats from PGP crypto work, was less concerned than I was. We discussed Bitcoin's divisibility: whether to enlarge satoshis for rounding-error cushion or keep them near precision limits so errors fail immediately, detectably, and hard.
 

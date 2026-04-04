@@ -36,7 +36,7 @@ On May 22, 2010, 19-year-old Jeremy Sturdivant (forum handle "jercos") accepted 
 
 At the time, 10,000 BTC was worth approximately $41. This was the first known purchase of a physical good with Bitcoin. Previous Bitcoin transactions had been digital-only — exchange rate calculations and peer-to-peer transfers. The pizza transaction proved that Bitcoin could function as a real-world medium of exchange.
 
-Hanyecz, a pioneer of [GPU mining](/BitcoinArchive/en/entries/correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining/), continued ordering pizzas with Bitcoin throughout the summer, spending approximately 79,000 BTC in total. When later asked if he regretted it, Hanyecz replied: "No. I don't regret it. I got to be part of Bitcoin's early history. That's pretty cool."
+Hanyecz, a pioneer of [GPU mining](/BitcoinArchive/entries/correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining/), continued ordering pizzas with Bitcoin throughout the summer, spending approximately 79,000 BTC in total. When later asked if he regretted it, Hanyecz replied: "No. I don't regret it. I got to be part of Bitcoin's early history. That's pretty cool."
 
 May 22 is now celebrated annually as "Bitcoin Pizza Day" by the Bitcoin community worldwide.
 

@@ -44,7 +44,7 @@ Gavin Andresen first discovered Bitcoin in 2010 and quickly became one of the mo
 
 **Satoshi's farewell:**
 
-In an [email to Mike Hearn](/BitcoinArchive/en/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/) on April 23, 2011, Satoshi wrote: "I've moved on to other things. It's in good hands with Gavin and everyone." Three days later, on April 26, Satoshi sent his [last known email directly to Gavin](/BitcoinArchive/en/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/), transferring the network alert key and writing: "I've moved on to other things and will probably be unavailable."
+In an [email to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/) on April 23, 2011, Satoshi wrote: "I've moved on to other things. It's in good hands with Gavin and everyone." Three days later, on April 26, Satoshi sent his [last known email directly to Gavin](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/), transferring the network alert key and writing: "I've moved on to other things and will probably be unavailable."
 
 **On visiting CIA headquarters (tweet, June 14, 2011):**
 

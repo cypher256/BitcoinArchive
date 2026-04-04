@@ -35,7 +35,7 @@ secondarySources:
 >
 > Hardly anybody actually understands money. Money just doesn't work like that, I was told fervently and often. Gold couldn't work as money until it was already shiny or useful for electronics or something else besides money, they told me. This common argument coming ironically from libertarians who misinterpreted Menger's account of the origin of money as being the only way it could arise (rather than an account of how it could arise) and, in the same way misapplying Mises' regression theorem.
 >
-> Myself, [Wei Dai](/BitcoinArchive/en/participants/wei-dai/), and [Hal Finney](/BitcoinArchive/en/participants/hal-finney/) were the only people I know of who liked the idea (or in Dai's case his related idea) enough to pursue it to any significant extent until Nakamoto (assuming Nakamoto is not really Finney or Dai). Only Finney ([RPOW](/BitcoinArchive/en/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)) and Nakamoto were motivated enough to actually implement such a scheme.
+> Myself, [Wei Dai](/BitcoinArchive/participants/wei-dai/), and [Hal Finney](/BitcoinArchive/participants/hal-finney/) were the only people I know of who liked the idea (or in Dai's case his related idea) enough to pursue it to any significant extent until Nakamoto (assuming Nakamoto is not really Finney or Dai). Only Finney ([RPOW](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)) and Nakamoto were motivated enough to actually implement such a scheme.
 >
 > Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes.
 >

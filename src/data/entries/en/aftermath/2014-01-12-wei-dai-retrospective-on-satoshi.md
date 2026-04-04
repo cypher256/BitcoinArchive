@@ -28,7 +28,7 @@ secondarySources:
 
 *From LessWrong "Ask Any LessWronger Anything" (AALWA) thread, January 12, 2014:*
 
-Wei Dai — creator of the [b-money proposal](/BitcoinArchive/en/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/en/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — shared his reflections on Satoshi Nakamoto:
+Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — shared his reflections on Satoshi Nakamoto:
 
 **On independent invention:**
 

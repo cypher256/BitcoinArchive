@@ -37,16 +37,16 @@ secondarySources:
 NewLibertyStandard is a pseudonymous individual whose real-world identity has never been publicly revealed. They are BitcoinTalk user #26 (registered January 19, 2010) and were active on the forum until December 2012. They are known for creating the first Bitcoin exchange rate, conducting the first bitcoin-for-fiat transaction, and proposing the BTC ticker symbol.
 
 **First Bitcoin Exchange Rate:**
-On [October 5, 2009](/BitcoinArchive/en/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), NewLibertyStandard published the first known Bitcoin-to-US-dollar exchange rate: $1.00 = 1,309.03 BTC (approximately $0.00076 per bitcoin). The rate was calculated using a cost-of-production formula based on the electricity required to mine Bitcoin. As described in BitcoinTalk thread #42: the formula divided the average annual electricity cost of running a computer at high CPU by 12 months and by the number of bitcoins mined over the preceding 30 days. This was the first time Bitcoin was assigned a dollar-denominated price.
+On [October 5, 2009](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), NewLibertyStandard published the first known Bitcoin-to-US-dollar exchange rate: $1.00 = 1,309.03 BTC (approximately $0.00076 per bitcoin). The rate was calculated using a cost-of-production formula based on the electricity required to mine Bitcoin. As described in BitcoinTalk thread #42: the formula divided the average annual electricity cost of running a computer at high CPU by 12 months and by the number of bitcoins mined over the preceding 30 days. This was the first time Bitcoin was assigned a dollar-denominated price.
 
 **First Bitcoin-to-Fiat Transaction:**
-On [October 12, 2009](/BitcoinArchive/en/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), Finnish developer [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing Bitcoin as an economic good with real-world monetary value.
+On [October 12, 2009](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), Finnish developer [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing Bitcoin as an economic good with real-world monetary value.
 
 **New Liberty Standard Exchange:**
 NewLibertyStandard operated a website (newlibertystandard.wikifoundry.com) that offered to buy and sell bitcoins for US dollars via PayPal. It was not a traditional exchange with a matching order book; rather, NewLibertyStandard set a fixed price and manually processed trades. It was the earliest known bitcoin trading service.
 
 **BTC Ticker Proposal:**
-On [February 5, 2010](/BitcoinArchive/en/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/), NewLibertyStandard posted on BitcoinTalk (thread #41) proposing the adoption of the Thai baht symbol (฿) and the three-letter currency code "BTC" for Bitcoin. While the symbol was debated, the BTC ticker code became the universally adopted standard.
+On [February 5, 2010](/BitcoinArchive/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/), NewLibertyStandard posted on BitcoinTalk (thread #41) proposing the adoption of the Thai baht symbol (฿) and the three-letter currency code "BTC" for Bitcoin. While the symbol was debated, the BTC ticker code became the universally adopted standard.
 
 **Acknowledged by Satoshi:**
 In the Bitcoin 0.2 release announcement (December 2009), Satoshi Nakamoto wrote:

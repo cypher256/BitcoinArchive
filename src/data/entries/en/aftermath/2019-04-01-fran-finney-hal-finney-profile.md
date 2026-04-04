@@ -34,7 +34,7 @@ In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life 
 **On meeting Hal at Caltech:**
 Fran met Hal during her junior year at Caltech, during "rotation week" in his freshman semester: "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled: "People would cluster around and get into all these philosophical discussions... When he spoke, what he said was usually worth listening to."
 
-**On [Bitcoin's launch](/BitcoinArchive/en/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/) in January 2009:**
+**On [Bitcoin's launch](/BitcoinArchive/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/) in January 2009:**
 Fran described Hal's reaction:
 
 > "This is cool. This is a fun game. Look! This is actually working!"

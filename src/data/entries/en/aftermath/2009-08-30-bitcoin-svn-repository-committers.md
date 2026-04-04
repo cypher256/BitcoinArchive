@@ -35,10 +35,10 @@ secondarySources:
     url: "https://github.com/research-note/bitcoin-legacy"
 ---
 
-Before Bitcoin [moved to GitHub](/BitcoinArchive/en/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.
+Before Bitcoin [moved to GitHub](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.
 
 **Prior to SVN:**
-Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceForge before the SVN repository existed. The SourceForge project was [registered on November 9, 2008](/BitcoinArchive/en/entries/sourceforge/2008-11-09-bitcoin-project-registered/), and Bitcoin v0.1 was [released on January 9, 2009](/BitcoinArchive/en/entries/sourceforge/2009-01-09-bitcoin-v0.1-released/). For the first eight months, source code was distributed as downloadable archives rather than through version control.
+Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceForge before the SVN repository existed. The SourceForge project was [registered on November 9, 2008](/BitcoinArchive/entries/sourceforge/2008-11-09-bitcoin-project-registered/), and Bitcoin v0.1 was [released on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v0.1-released/). For the first eight months, source code was distributed as downloadable archives rather than through version control.
 
 **SVN Committers (complete list):**
 
@@ -53,9 +53,9 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 
 **Satoshi Nakamoto (s_nakamoto)** committed 164 of the 252 revisions — by far the most of any contributor. His last release commit was r201 ("version 0.3.19 release") on December 13, 2010. Two days later, he made one final small fix — r202 ("get external ip from irc") on December 15, 2010. No s_nakamoto commits appear after r202.
 
-**Laszlo Hanyecz (laszloh)** — known for the [first real-world Bitcoin purchase](/BitcoinArchive/en/entries/aftermath/2010-05-22-bitcoin-pizza-day/) (10,000 BTC for two pizzas) and for pioneering GPU mining — made exactly one SVN commit: r123 on August 4, 2010, fixing macOS compilation issues.
+**Laszlo Hanyecz (laszloh)** — known for the [first real-world Bitcoin purchase](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) (10,000 BTC for two pizzas) and for pioneering GPU mining — made exactly one SVN commit: r123 on August 4, 2010, fixing macOS compilation issues.
 
-**Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. With 81 commits, he was the second most active committer after Satoshi. On December 3, 2010, Satoshi [wrote to Martti Malmi](/BitcoinArchive/en/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/):
+**Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. With 81 commits, he was the second most active committer after Satoshi. On December 3, 2010, Satoshi [wrote to Martti Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/):
 
 > "I think it should be Gavin. I trust him, he's responsible, professional, and technically much more Linux capable than me."
 

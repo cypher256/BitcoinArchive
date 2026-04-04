@@ -34,11 +34,11 @@ Adam Back — inventor of Hashcash (1997), the proof-of-work system cited in the
 
 **On the August 2008 email exchange:**
 
-In August 2008, Satoshi [contacted Back](/BitcoinArchive/en/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) to verify the citation for his Hashcash paper. [Back confirmed the citation](/BitcoinArchive/en/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) and suggested Satoshi look at [Wei Dai](/BitcoinArchive/en/participants/wei-dai/)'s b-money proposal.
+In August 2008, Satoshi [contacted Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) to verify the citation for his Hashcash paper. [Back confirmed the citation](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.
 
 > "I suggested looking into b-money, but it seemed he wasn't aware of it at that point."
 
-[Satoshi replied](/BitcoinArchive/en/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/):
+[Satoshi replied](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/):
 
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
@@ -56,6 +56,6 @@ Back opened the attached whitepaper, gave it a cursory glance, typed back a brie
 
 **COPA trial testimony (February 21, 2024):**
 
-During the [COPA v. Craig Wright trial](/BitcoinArchive/en/entries/aftermath/2024-03-14-copa-v-wright-ruling/), Back testified in person at the London High Court and submitted the complete five-email chain between himself and Satoshi as evidence. The emails — dating from August 20, 2008 onward — were made public for the first time.
+During the [COPA v. Craig Wright trial](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), Back testified in person at the London High Court and submitted the complete five-email chain between himself and Satoshi as evidence. The emails — dating from August 20, 2008 onward — were made public for the first time.
 
 *[Back later founded Blockstream in 2014, one of the most prominent Bitcoin infrastructure companies. Despite his regret at not engaging earlier, his Hashcash invention remains a fundamental building block of Bitcoin's proof-of-work consensus mechanism.]*

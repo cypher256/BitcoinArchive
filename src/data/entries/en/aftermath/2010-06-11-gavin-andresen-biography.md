@@ -40,15 +40,15 @@ secondarySources:
 Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software developer who became the lead maintainer of Bitcoin after Satoshi Nakamoto's departure. He grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and later founded Wasabi Software, a 3D graphics software company.
 
 **Discovery of Bitcoin:**
-Andresen first encountered Bitcoin in 2010. He quickly became one of the most active contributors, creating the Bitcoin Faucet — a website that gave away free bitcoins to help people learn about and start using the technology. He [announced the Faucet on the BitcoinTalk forum](/BitcoinArchive/en/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) on June 11, 2010. This was one of the earliest efforts to promote Bitcoin adoption.
+Andresen first encountered Bitcoin in 2010. He quickly became one of the most active contributors, creating the Bitcoin Faucet — a website that gave away free bitcoins to help people learn about and start using the technology. He [announced the Faucet on the BitcoinTalk forum](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) on June 11, 2010. This was one of the earliest efforts to promote Bitcoin adoption.
 
 **Satoshi's Chosen Successor:**
-Over the course of 2010, Satoshi Nakamoto increasingly trusted Andresen with greater responsibility in the project. By approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key. In an [email to developer Mike Hearn](/BitcoinArchive/en/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/) on April 23, 2011, Satoshi wrote:
+Over the course of 2010, Satoshi Nakamoto increasingly trusted Andresen with greater responsibility in the project. By approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key. In an [email to developer Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/2011-04-23-satoshi-to-hearn-moved-on/) on April 23, 2011, Satoshi wrote:
 
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 **Lead Maintainer (2011–2014):**
-After Satoshi's departure in April 2011, Andresen became the de facto leader of Bitcoin development. He received the [last known email from Satoshi](/BitcoinArchive/en/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, in which Satoshi handed over the CAlert key and wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure." Andresen later became the Chief Scientist of the Bitcoin Foundation when it was established in September 2012.
+After Satoshi's departure in April 2011, Andresen became the de facto leader of Bitcoin development. He received the [last known email from Satoshi](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, in which Satoshi handed over the CAlert key and wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure." Andresen later became the Chief Scientist of the Bitcoin Foundation when it was established in September 2012.
 
 **CIA Visit:**
 On June 14, 2011, Andresen presented about Bitcoin at CIA headquarters in Langley, Virginia, as part of an In-Q-Tel conference on emerging technologies. He had informed Satoshi of the invitation beforehand, after which Satoshi's communications became less frequent and eventually ceased entirely.

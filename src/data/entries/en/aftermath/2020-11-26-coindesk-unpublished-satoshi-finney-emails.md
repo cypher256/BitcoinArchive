@@ -34,19 +34,19 @@ On November 26, 2020, CoinDesk published "Previously Unpublished Emails of Satos
 
 **Chain of custody:** In March 2014, Fran Finney (Hal's widow) sent journalist Nathaniel Popper files from Hal's personal computer for his book *Digital Gold*. Popper later shared the email files with Kapilkov. CoinDesk confirmed the chain of custody directly with Fran Finney.
 
-**Email 1: [November 19, 2008](/BitcoinArchive/en/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/) (Finney → Satoshi)**
+**Email 1: [November 19, 2008](/BitcoinArchive/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/) (Finney → Satoshi)**
 Finney thanked Satoshi for corrections and asked about network scalability:
 > "How large do you envision it becoming? Tens of nodes? Thousands? Millions?"
 
 This was during the pre-release code review period, two months before Bitcoin's public launch.
 
-**Email 2: [January 8, 2009](/BitcoinArchive/en/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/) (Satoshi → Finney)**
-Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — just hours after the [public announcement on the Cryptography Mailing List](/BitcoinArchive/en/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/):
+**Email 2: [January 8, 2009](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/) (Satoshi → Finney)**
+Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — just hours after the [public announcement on the Cryptography Mailing List](/BitcoinArchive/entries/emails/cryptography/2009-01-08-bitcoin-v0-1-released/):
 > "Thought you'd like to know, the Bitcoin v0.1 release with EXE and full sourcecode is up on Sourceforge: http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org has release notes and screenshots. Satoshi"
 
 This email was sent from `satoshi@vistomail.com`.
 
-**Email 3: [January 10 (or 12), 2009](/BitcoinArchive/en/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) (Satoshi → Finney)**
+**Email 3: [January 10 (or 12), 2009](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) (Satoshi → Finney)**
 A follow-up after Bitcoin's launch:
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 
