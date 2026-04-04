@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック665におけるギャビン・アンドレセンの文脈投稿。msg18349の前。"
 isSatoshi: false
-threadId: "bt-multiple-wallets-one-computer"
 tags: []
 translationStatus: complete
 ---

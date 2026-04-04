@@ -10,7 +10,6 @@ participants:
     slug: "interarmaenimsil"
 description: "BitcoinTalkトピック286におけるInterArmaEnimSilのコンテキスト投稿。msg2947の前。"
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 translationStatus: complete
 ---

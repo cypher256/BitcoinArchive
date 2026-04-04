@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "tcatmがスレッドを開始: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
 isSatoshi: false
-threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 tags: []
 translationStatus: complete
 ---

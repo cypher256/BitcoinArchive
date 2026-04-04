@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "BitcoinTalkトピック43におけるDataWraithのコンテキスト投稿。msg1323の前。"
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 translationStatus: complete
 ---

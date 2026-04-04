@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "BitcoinTalkトピック34におけるBitcoinFXのコンテキスト投稿。msg222の前。"
 isSatoshi: false
-threadId: "bt-questions-about-addresses"
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/501/"
-threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 ---
 
 Thank you for limiting flood tests to the testnet.

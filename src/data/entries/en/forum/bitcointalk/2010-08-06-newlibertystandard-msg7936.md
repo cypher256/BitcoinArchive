@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Quoted post by NewLibertyStandard in BitcoinTalk topic 721."
 isSatoshi: false
-threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
 tags: []
 ---
 

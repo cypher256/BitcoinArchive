@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/366/"
-threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 ---
 
 I hope someone can test an i5 or AMD to check that I built it right.  I don't have either to test with.

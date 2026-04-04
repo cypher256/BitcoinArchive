@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック423におけるNewLibertyStandardの引用投稿。"
 isSatoshi: false
-threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 tags: []
 translationStatus: complete
 ---

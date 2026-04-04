@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/134/"
-threadId: "bt-0-3-almost-ready-please-test-the-mac-version"
 translationStatus: complete
 ---
 

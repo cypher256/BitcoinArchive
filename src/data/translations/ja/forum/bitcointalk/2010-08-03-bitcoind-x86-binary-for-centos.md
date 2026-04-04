@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "nimnulがスレッドを開始: CentOS用Bitcoind x86バイナリ"
 isSatoshi: false
-threadId: "bt-bitcoind-x86-binary-for-centos"
 tags: []
 translationStatus: complete
 ---

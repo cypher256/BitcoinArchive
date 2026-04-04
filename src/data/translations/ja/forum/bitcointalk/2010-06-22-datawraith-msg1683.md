@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "BitcoinTalkトピック199におけるDataWraithのコンテキスト投稿。msg1686の前。"
 isSatoshi: false
-threadId: "bt-1-3-almost-ready"
 tags: []
 translationStatus: complete
 ---

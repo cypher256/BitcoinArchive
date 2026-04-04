@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "NewLibertyStandardがスレッドを開始: Bitcoinアドレスの衝突"
 isSatoshi: false
-threadId: "bt-bitcoin-address-collisions"
 tags: []
 translationStatus: complete
 ---

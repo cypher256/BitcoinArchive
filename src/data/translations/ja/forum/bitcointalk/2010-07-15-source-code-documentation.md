@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "AndrewBuckがスレッドを開始: ソースコードのドキュメント"
 isSatoshi: false
-threadId: "bt-source-code-documentation"
 tags: []
 translationStatus: complete
 ---

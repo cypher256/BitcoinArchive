@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "eurekafagがスレッドを開始: メモリリーク"
 isSatoshi: false
-threadId: "bt-memory-leak"
 tags: []
 translationStatus: complete
 ---

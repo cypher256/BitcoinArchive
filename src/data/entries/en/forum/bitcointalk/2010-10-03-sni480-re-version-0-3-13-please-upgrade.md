@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/480/"
-threadId: "bt-version-0-3-13-please-upgrade"
 ---
 
 ShadowOfHarbringer, is yours faster with -4way?

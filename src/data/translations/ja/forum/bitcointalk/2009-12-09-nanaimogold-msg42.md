@@ -10,7 +10,6 @@ participants:
     slug: "nanaimogold"
 description: "BitcoinTalkトピック12におけるnanaimogoldのコンテキスト投稿。msg45の前。"
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 translationStatus: complete
 ---

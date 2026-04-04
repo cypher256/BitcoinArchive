@@ -10,7 +10,6 @@ participants:
     slug: "suggester"
 description: "Quoted post by Suggester in BitcoinTalk topic 43."
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 ---
 

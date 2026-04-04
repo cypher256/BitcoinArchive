@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzik starts a discussion: Always pay transaction fee?."
 isSatoshi: false
-threadId: "bt-always-pay-transaction-fee"
 tags: []
 ---
 

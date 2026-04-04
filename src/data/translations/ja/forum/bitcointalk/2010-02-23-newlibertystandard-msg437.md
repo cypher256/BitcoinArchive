@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック62におけるNewLibertyStandardのコンテキスト投稿。msg443の前。"
 isSatoshi: false
-threadId: "bt-bitcoin-address-collisions"
 tags: []
 translationStatus: complete
 ---

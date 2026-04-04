@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "dkaparis starts a discussion: BSD detection."
 isSatoshi: false
-threadId: "bt-bsd-detection"
 tags: []
 ---
 

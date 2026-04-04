@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/481/"
-threadId: "bt-memory-leak"
 ---
 
 You're connecting to yourself.  All 21 connection attempts were to a node with version 31300 (0.3.13).  Not everyone has 0.3.13 yet.

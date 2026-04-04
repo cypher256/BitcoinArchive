@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/203/"
-threadId: "bt-seticons-icon-bundle-doesn-t-contain-any-suitable-"
 ---
 
 That's surprising that we've never heard of that before now.

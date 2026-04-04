@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 151. before msg1259."
 isSatoshi: false
-threadId: "bt-website-translations"
 tags: []
 ---
 

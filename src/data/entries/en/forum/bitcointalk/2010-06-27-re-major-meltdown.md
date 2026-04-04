@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/160/"
-threadId: "bt-major-meltdown"
 ---
 
 Here's an answer to a similar question about how to recover from a major meltdown.

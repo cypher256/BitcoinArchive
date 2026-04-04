@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/83/"
-threadId: "bt-new-icon-logo"
 ---
 
 Good suggestion.  I made the B slightly lighter and the background slightly darker.  Very slightly.  The foreground is now exactly the same colour as the BC in the old one.

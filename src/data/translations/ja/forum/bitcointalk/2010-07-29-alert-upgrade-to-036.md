@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "satoshiがスレッドを開始: *** 警告 *** バージョン0.3.6"
 isSatoshi: true
-threadId: "bt-alert-version-0-3-6"
 tags: []
 translationStatus: complete
 ---

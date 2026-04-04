@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "theymos starts a discussion: What's with this odd generation?."
 isSatoshi: false
-threadId: "bt-what-s-with-this-odd-generation"
 tags: []
 ---
 

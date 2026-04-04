@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/179/"
-threadId: "bt-resource-hog"
 ---
 
 In Windows, you select the process in the task manager, right click, Set Priority.  Set it to BelowNormal or Low.  That shouldn't make a difference though.

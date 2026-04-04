@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/257/"
-threadId: "bt-bitcoind-not-responding-to-rpc"
 ---
 
 If I recall correctly, 500 is the prescribed status code for JSON-RPC error responses.  There is still a JSON response in the body of the reply telling the explanation of the error, which could be something like {"result":"","error":"bitcoin address not found","id":"1"}.

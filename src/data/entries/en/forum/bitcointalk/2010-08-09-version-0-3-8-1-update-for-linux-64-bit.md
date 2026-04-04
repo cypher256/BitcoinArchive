@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/332/"
-threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
 ---
 
 When we switched to Crypto++ 5.6.0 SHA-256 in version 0.3.6, generation got broken on the Linux 64-bit build.  Version 0.3.8.1 is on SourceForge with the 64-bit binary updated.

@@ -10,7 +10,6 @@ participants:
     slug: "andrewbuck"
 description: "Quoted post by AndrewBuck in BitcoinTalk topic 437."
 isSatoshi: false
-threadId: "bt-bitcoin-0-3-2-released"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/185/"
-threadId: "bt-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
 translationStatus: complete
 ---
 

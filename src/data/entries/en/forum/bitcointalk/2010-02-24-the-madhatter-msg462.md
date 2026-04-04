@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "Context post by The Madhatter in BitcoinTalk topic 55. before msg481."
 isSatoshi: false
-threadId: "bt-uri-scheme-for-bitcoin"
 tags: []
 ---
 

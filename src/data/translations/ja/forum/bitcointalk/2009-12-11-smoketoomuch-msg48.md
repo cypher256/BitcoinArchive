@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "BitcoinTalkトピック13におけるSmokeTooMuchのコンテキスト投稿。msg49の前。"
 isSatoshi: false
-threadId: "bt-questions-about-bitcoin"
 tags: []
 translationStatus: complete
 ---

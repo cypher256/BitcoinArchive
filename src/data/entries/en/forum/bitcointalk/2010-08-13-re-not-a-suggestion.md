@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/356/"
-threadId: "bt-not-a-suggestion"
 ---
 
 I'm not grasping your idea yet.  Does it hide any information from the public network?  What is the advantage?

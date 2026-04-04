@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/71/"
-threadId: "bt-command-line-and-json-rpc"
 ---
 
 Version 0.2.6 on SVN can now run as a daemon and be controlled by command line or JSON-RPC.

@@ -10,7 +10,6 @@ participants:
     slug: "spaceshaker"
 description: "Quoted post by spaceshaker in BitcoinTalk topic 286."
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "Context post by BitcoinFX in BitcoinTalk topic 48. before msg316."
 isSatoshi: false
-threadId: "bt-what-s-with-this-odd-generation"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/266/"
-threadId: "bt-a-simple-traffic-load-test-run"
 ---
 
 Was that on the test network?

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/424/"
-threadId: "bt-auto-backing-up-of-wallet-dat"
 ---
 
 I doubt there's an mmap(2) on Windows.  I'd rather call an existing file copy function than make and test my own.

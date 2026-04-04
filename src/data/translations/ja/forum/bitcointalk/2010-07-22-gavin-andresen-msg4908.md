@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの引用投稿。"
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 translationStatus: complete
 ---

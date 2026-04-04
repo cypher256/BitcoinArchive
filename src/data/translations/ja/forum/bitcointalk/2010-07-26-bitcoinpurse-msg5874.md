@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinpurse"
 description: "BitcoinTalkトピック572におけるBitCoinPurseの文脈投稿。msg5978の前。"
 isSatoshi: false
-threadId: "bt-bitcoin-x86-for-windows"
 tags: []
 translationStatus: complete
 ---

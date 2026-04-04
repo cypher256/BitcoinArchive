@@ -12,7 +12,6 @@ participants:
     slug: "davout"
 description: "RHorning explains that transaction replacement is theoretically possible via the version field, though not yet implemented in the UI. Once a transaction is included in a block, cancellation becomes impractical."
 isSatoshi: false
-threadId: "bt-fees-in-bitdns-confusion"
 inReplyTo: "forum/bitcointalk/2010-12-09-davout-re-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

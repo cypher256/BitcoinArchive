@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 665. before msg18508."
 isSatoshi: false
-threadId: "bt-multiple-wallets-one-computer"
 tags: []
 ---
 

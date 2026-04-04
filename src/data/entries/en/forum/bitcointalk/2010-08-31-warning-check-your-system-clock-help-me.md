@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "icaro starts a discussion: Warning : Check your system clock (help me)."
 isSatoshi: false
-threadId: "bt-warning-check-your-system-help-me"
 tags: []
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック820におけるNewLibertyStandardのコンテキスト投稿。msg9655に引用。"
 isSatoshi: false
-threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 tags: []
 translationStatus: complete
 ---

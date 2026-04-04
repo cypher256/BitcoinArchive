@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Red starts a discussion: Not a suggestion."
 isSatoshi: false
-threadId: "bt-not-a-suggestion"
 tags: []
 ---
 

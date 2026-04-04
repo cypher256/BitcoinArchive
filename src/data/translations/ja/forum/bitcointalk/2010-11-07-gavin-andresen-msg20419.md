@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック1668におけるギャビン・アンドレセンの引用投稿。"
 isSatoshi: false
-threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lfm starts a discussion: overflow bug SERIOUS."
 isSatoshi: false
-threadId: "bt-overflow-bug-serious"
 tags: []
 ---
 

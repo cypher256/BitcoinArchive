@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Quoted post by NewLibertyStandard in BitcoinTalk topic 342."
 isSatoshi: false
-threadId: "bt-they-want-to-delete-the-wikipedia-article"
 tags: []
 ---
 

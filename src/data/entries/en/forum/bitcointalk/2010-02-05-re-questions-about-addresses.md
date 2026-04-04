@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/"
-threadId: "bt-questions-about-addresses"
 ---
 
 [Quote from: Sabunir on February 05, 2010, 05:31:30 PM](#msg246)

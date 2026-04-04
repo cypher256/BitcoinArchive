@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "neliskyがスレッドを開始: wallet.datの自動バックアップ"
 isSatoshi: false
-threadId: "bt-auto-backing-up-of-wallet-dat"
 tags: []
 translationStatus: complete
 ---

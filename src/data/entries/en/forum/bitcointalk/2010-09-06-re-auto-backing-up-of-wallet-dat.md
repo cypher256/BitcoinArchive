@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/437/"
-threadId: "bt-auto-backing-up-of-wallet-dat"
 ---
 
 rpc backupwallet <destination> is in SVN rev 147.

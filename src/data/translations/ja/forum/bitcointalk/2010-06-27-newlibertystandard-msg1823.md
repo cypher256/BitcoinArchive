@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック217におけるNewLibertyStandardのコンテキスト投稿。msg1827の前。"
 isSatoshi: false
-threadId: "bt-beta"
 tags: []
 translationStatus: complete
 ---

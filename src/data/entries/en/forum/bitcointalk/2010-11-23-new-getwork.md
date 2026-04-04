@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/507/"
-threadId: "bt-new-getwork"
 ---
 
 I uploaded a redesign of m0mchil's getwork to SVN rev 189 (version 31601)

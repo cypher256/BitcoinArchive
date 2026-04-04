@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 195. quoted by msg1617."
 isSatoshi: false
-threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
 tags: []
 ---
 

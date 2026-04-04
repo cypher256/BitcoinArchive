@@ -10,7 +10,6 @@ participants:
     slug: "shadowofharbringer"
 description: "BitcoinTalkトピック2162におけるShadowOfHarbringerの文脈投稿。msg28549の前。"
 isSatoshi: false
-threadId: "bt-version-0-3-18"
 tags: []
 translationStatus: complete
 ---

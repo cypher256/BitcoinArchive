@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "grideconがスレッドを開始: Bitcoinの鋳造は熱力学的に逆説的"
 isSatoshi: false
-threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
 tags: []
 translationStatus: complete
 ---

@@ -10,7 +10,6 @@ participants:
     slug: "throughput"
 description: "Context post by throughput in BitcoinTalk topic 691. before msg9041."
 isSatoshi: false
-threadId: "bt-bitcoin-watchdog-service"
 tags: []
 ---
 

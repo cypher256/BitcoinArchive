@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "madhatter starts a discussion: A few suggestions."
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 ---
 

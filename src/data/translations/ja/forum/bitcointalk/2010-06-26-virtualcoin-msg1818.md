@@ -10,7 +10,6 @@ participants:
     slug: "virtualcoin"
 description: "BitcoinTalkトピック217におけるvirtualcoinのコンテキスト投稿。msg1827の前。"
 isSatoshi: false
-threadId: "bt-beta"
 tags: []
 translationStatus: complete
 ---

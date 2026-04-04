@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/416/"
-threadId: "bt-development-of-alert-system"
 ---
 
 [Quote from: jimbobway on August 25, 2010, 04:45:22 PM](#msg11153)

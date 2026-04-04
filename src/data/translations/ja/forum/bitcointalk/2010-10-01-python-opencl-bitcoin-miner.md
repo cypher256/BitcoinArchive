@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "m0mchilがスレッドを開始: 大衆向けOpenCLマイナー"
 isSatoshi: false
-threadId: "bt-opencl-miner-for-the-masses"
 tags: []
 translationStatus: complete
 ---

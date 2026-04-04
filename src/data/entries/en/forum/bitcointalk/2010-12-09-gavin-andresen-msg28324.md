@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 2151."
 isSatoshi: false
-threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
 ---
 

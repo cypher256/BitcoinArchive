@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/165/"
-threadId: "bt-feature-request-limiting-connections"
 ---
 
 I reduced max outbound connections from 15 to 8 in RC4.

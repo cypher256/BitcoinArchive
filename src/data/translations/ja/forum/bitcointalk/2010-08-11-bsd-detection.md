@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "dkaparisがスレッドを開始: BSD検出"
 isSatoshi: false
-threadId: "bt-bsd-detection"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "bytemasterがスレッドを開始: 複数のウォレット、1台のコンピュータ"
 isSatoshi: false
-threadId: "bt-multiple-wallets-one-computer"
 tags: []
 translationStatus: complete
 ---

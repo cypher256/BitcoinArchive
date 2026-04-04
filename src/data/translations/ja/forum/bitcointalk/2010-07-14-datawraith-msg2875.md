@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "BitcoinTalkトピック286におけるDataWraithの投稿。"
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 translationStatus: complete
 ---

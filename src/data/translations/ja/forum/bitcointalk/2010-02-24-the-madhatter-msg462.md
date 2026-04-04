@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック55におけるThe Madhatterのコンテキスト投稿。msg481の前。"
 isSatoshi: false
-threadId: "bt-uri-scheme-for-bitcoin"
 tags: []
 translationStatus: complete
 ---

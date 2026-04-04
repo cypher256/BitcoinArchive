@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "icaroがスレッドを開始: 警告：システムを確認してください（助けてください）"
 isSatoshi: false
-threadId: "bt-warning-check-your-system-help-me"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "fergalishがスレッドを開始: Bitcoinの自動renice"
 isSatoshi: false
-threadId: "bt-bitcoin-auto-renice-ing"
 tags: []
 translationStatus: complete
 ---

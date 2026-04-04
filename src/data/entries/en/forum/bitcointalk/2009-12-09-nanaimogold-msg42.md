@@ -10,7 +10,6 @@ participants:
     slug: "nanaimogold"
 description: "Context post by nanaimogold in BitcoinTalk topic 12. before msg45."
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 ---
 

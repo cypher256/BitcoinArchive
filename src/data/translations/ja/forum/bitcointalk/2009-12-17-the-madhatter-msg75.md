@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック12におけるThe Madhatterのコンテキスト投稿。msg77の前。"
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 translationStatus: complete
 ---

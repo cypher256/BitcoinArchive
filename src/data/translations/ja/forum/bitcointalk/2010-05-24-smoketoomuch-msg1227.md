@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "BitcoinTalkトピック151におけるSmokeTooMuchのコンテキスト投稿。msg1259の前。"
 isSatoshi: false
-threadId: "bt-website-translations"
 tags: []
 translationStatus: complete
 ---

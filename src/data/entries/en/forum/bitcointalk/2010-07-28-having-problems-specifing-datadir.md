@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "psyvenrix starts a discussion: Having problems specifing -datadir."
 isSatoshi: false
-threadId: "bt-having-problems-specifing-datadir"
 tags: []
 ---
 

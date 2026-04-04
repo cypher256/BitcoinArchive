@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "NewLibertyStandard starts a discussion: Bitcoin in Ubuntu 10.04."
 isSatoshi: false
-threadId: "bt-bitcoin-in-ubuntu-10-04"
 tags: []
 ---
 

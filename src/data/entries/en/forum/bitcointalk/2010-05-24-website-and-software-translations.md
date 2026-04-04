@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "HostFat starts a discussion: Website and software translations."
 isSatoshi: false
-threadId: "bt-website-translations"
 tags: []
 ---
 

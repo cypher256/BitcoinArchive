@@ -10,7 +10,6 @@ participants:
     slug: "ground-loop"
 description: "Context post by Ground Loop in BitcoinTalk topic 765. before msg8628."
 isSatoshi: false
-threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/23/"
-threadId: "bt-a-few-suggestions"
 translationStatus: complete
 ---
 

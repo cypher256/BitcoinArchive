@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 834. quoted by msg9843."
 isSatoshi: false
-threadId: "bt-checkpointing-the-block-chain"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/52/"
-threadId: "bt-what-s-with-this-odd-generation"
 translationStatus: complete
 ---
 

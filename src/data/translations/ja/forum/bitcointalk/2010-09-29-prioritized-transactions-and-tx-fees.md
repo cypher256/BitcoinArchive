@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzikがスレッドを開始: 優先トランザクションと取引手数料"
 isSatoshi: false
-threadId: "bt-prioritized-transactions-and-tx-fees"
 tags: []
 translationStatus: complete
 ---

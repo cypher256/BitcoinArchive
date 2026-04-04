@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/"
-threadId: "bt-assertion-failure-ubuntu-lucid"
 ---
 
 [Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)

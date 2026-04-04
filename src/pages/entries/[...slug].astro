@@ -5,6 +5,7 @@ import SourceCitation from '../../components/SourceCitation.astro';
 import AutoLinkNames from '../../components/AutoLinkNames.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, localePath, absoluteUrl } from '../../i18n/utils';
+import { resolveThreadId } from '../../data/threads';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -27,9 +28,9 @@ const currentIndex = sorted.findIndex((e) => e.id === entry.id);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
 
-const threadId = entry.data.threadId;
+const threadId = resolveThreadId(entry);
 const threadMessages = threadId
-  ? allEntries.filter((e) => e.data.threadId === threadId).length
+  ? allEntries.filter((e) => resolveThreadId(e) === threadId).length
   : 0;
 const breadcrumbs = [
   { name: t('nav.home'), url: localePath('/', lang) },

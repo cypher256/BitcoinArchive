@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/227/"
-threadId: "bt-bitcoin-0-3-1-released"
 translationStatus: complete
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's reply in the thread \"bitcoin generation broken in 0.3.8? (64-bit)\"."
 isSatoshi: true
-threadId: "bt-bitcoin-generation-broken-in-0-3-8"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/334/"

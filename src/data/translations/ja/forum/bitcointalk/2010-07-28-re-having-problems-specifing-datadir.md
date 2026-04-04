@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/284/"
-threadId: "bt-having-problems-specifing-datadir"
 translationStatus: complete
 ---
 

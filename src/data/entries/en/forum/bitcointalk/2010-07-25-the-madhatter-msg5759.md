@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "Context post by The Madhatter in BitcoinTalk topic 461. before msg5769."
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 ---
 

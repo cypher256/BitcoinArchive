@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "BitcoinTalkトピック45におけるBitcoinFXのコンテキスト投稿。msg507の前。"
 isSatoshi: false
-threadId: "bt-make-your-we-accept-bitcoin-logo"
 tags: []
 translationStatus: complete
 ---

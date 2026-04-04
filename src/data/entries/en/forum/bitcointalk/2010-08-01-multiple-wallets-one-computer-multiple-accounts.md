@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "bytemaster starts a discussion: Multiple Wallets, one computer (multiple accounts)."
 isSatoshi: false
-threadId: "bt-multiple-wallets-one-computer"
 tags: []
 ---
 

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "fergalish starts a discussion: bitcoin auto-renice-ing."
 isSatoshi: false
-threadId: "bt-bitcoin-auto-renice-ing"
 tags: []
 ---
 

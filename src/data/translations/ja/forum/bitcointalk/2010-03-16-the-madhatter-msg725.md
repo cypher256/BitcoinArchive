@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック84におけるThe Madhatterのコンテキスト投稿。msg729の前。"
 isSatoshi: false
-threadId: "bt-on-irc-bootstrapping"
 tags: []
 translationStatus: complete
 ---

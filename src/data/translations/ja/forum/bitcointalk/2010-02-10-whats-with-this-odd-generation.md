@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "theymosがスレッドを開始: この奇妙な生成は何ですか？"
 isSatoshi: false
-threadId: "bt-what-s-with-this-odd-generation"
 tags: []
 translationStatus: complete
 ---

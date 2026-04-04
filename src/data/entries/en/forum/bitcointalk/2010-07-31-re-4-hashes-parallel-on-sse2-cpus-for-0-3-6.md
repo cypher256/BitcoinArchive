@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/302/"
-threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 ---
 
 That's amazing... 

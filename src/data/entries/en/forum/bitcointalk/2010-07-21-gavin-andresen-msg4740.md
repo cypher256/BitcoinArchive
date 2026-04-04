@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 479. before msg5432."
 isSatoshi: false
-threadId: "bt-warning-dont-use-server-or-bitcoind"
 tags: []
 ---
 

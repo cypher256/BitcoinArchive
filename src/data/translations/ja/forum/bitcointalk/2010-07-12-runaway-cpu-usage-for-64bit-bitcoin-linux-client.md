@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "knightmbがスレッドを開始: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
 isSatoshi: false
-threadId: "bt-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
 tags: []
 translationStatus: complete
 ---

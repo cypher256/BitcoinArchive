@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzikがスレッドを開始: 常にトランザクション手数料を支払う？"
 isSatoshi: false
-threadId: "bt-always-pay-transaction-fee"
 tags: []
 translationStatus: complete
 ---

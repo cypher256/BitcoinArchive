@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 47. before msg389."
 isSatoshi: false
-threadId: "bt-bitcoin-client-and-website-translation"
 tags: []
 ---
 

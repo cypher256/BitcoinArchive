@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 62. before msg443."
 isSatoshi: false
-threadId: "bt-bitcoin-address-collisions"
 tags: []
 ---
 

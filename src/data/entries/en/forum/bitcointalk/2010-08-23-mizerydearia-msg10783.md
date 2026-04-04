@@ -10,7 +10,6 @@ participants:
     slug: "mizerydearia"
 description: "Quoted post by mizerydearia in BitcoinTalk topic 898."
 isSatoshi: false
-threadId: "bt-development-of-alert-system"
 tags: []
 ---
 

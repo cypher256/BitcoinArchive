@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "MoonShadowがスレッドを開始: Bitcoin監視サービス"
 isSatoshi: false
-threadId: "bt-bitcoin-watchdog-service"
 tags: []
 translationStatus: complete
 ---

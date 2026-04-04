@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 287."
 isSatoshi: false
-threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
 ---
 

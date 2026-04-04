@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "Quoted post by The Madhatter in BitcoinTalk topic 12."
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 ---
 

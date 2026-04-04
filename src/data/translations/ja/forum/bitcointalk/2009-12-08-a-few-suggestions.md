@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "madhatterがスレッドを開始: いくつかの提案"
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 translationStatus: complete
 ---

@@ -10,7 +10,6 @@ participants:
     slug: "andrewbuck"
 description: "BitcoinTalkトピック393におけるAndrewBuckのコンテキスト投稿。msg3828の前。"
 isSatoshi: false
-threadId: "bt-source-code-documentation"
 tags: []
 translationStatus: complete
 ---

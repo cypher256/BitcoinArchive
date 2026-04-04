@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/447/"
-threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
 ---
 
 The fix is in SVN rev 151.

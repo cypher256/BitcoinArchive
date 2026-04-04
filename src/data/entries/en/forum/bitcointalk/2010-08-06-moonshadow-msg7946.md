@@ -10,7 +10,6 @@ participants:
     slug: "moonshadow"
 description: "Context post by MoonShadow in BitcoinTalk topic 721. before msg8114."
 isSatoshi: false
-threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
 tags: []
 ---
 

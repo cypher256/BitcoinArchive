@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "BitcoinTalkトピック47におけるSmokeTooMuchの投稿。"
 isSatoshi: false
-threadId: "bt-bitcoin-client-and-website-translation"
 tags: []
 translationStatus: complete
 ---

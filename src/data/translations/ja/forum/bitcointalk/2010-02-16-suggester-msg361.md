@@ -10,7 +10,6 @@ participants:
     slug: "suggester"
 description: "BitcoinTalkトピック43におけるSuggesterの引用投稿。"
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "davuxがスレッドを開始: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
 isSatoshi: false
-threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
 translationStatus: complete
 ---

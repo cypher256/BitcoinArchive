@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック287におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
-threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
 translationStatus: complete
 ---

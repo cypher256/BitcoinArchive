@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzikがスレッドを開始: RFC: DB_PRIVATEフラグの削除"
 isSatoshi: false
-threadId: "bt-rfc-remove-db-private-flag"
 tags: []
 translationStatus: complete
 ---

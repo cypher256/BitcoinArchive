@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/31/"
-threadId: "bt-tor-and-i2p"
 ---
 
 I've been thinking about that for a while.  I want to add the backend support for .onion addresses and connecting to them, then go from there.

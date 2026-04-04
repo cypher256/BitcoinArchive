@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシ・ナカモトの投稿：「新しいBitcoinフォーラムへようこそ！」。"
 isSatoshi: true
-threadId: "bt-welcome-to-bitcoin-forum"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/5/"

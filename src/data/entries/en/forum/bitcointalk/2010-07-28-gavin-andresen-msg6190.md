@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 601. before msg6268."
 isSatoshi: false
-threadId: "bt-having-problems-specifing-datadir"
 tags: []
 ---
 

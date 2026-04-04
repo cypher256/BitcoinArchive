@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/"
-threadId: "bt-bitcoin-watchdog-service"
 translationStatus: complete
 ---
 

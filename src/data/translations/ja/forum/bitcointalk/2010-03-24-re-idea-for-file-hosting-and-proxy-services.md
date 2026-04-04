@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/97/"
-threadId: "bt-idea-for-file-hosting-and-proxy-services"
 translationStatus: complete
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "Context post by DataWraith in BitcoinTalk topic 43. before msg1323."
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 ---
 

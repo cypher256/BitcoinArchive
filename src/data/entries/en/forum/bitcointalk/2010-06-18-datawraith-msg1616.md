@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "Context post by DataWraith in BitcoinTalk topic 84. before msg1781."
 isSatoshi: false
-threadId: "bt-on-irc-bootstrapping"
 tags: []
 ---
 

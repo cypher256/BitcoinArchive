@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/68/"
-threadId: "bt-ui-improvements"
 ---
 
 There are now "Sending" and "Receiving" tabs in the Address Book.  Your addresses are referred to as "receiving addresses".

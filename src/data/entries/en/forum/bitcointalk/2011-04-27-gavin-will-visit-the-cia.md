@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Gavin Andresen announces he has been invited to give a presentation about Bitcoin at the CIA, which may have contributed to Satoshi's subsequent withdrawal from the project."
 isSatoshi: false
-threadId: "bitcointalk-6652-gavin-cia"
 tags:
   - "cia"
   - "gavin-andresen"

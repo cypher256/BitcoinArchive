@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/77/"
-threadId: "bt-command-line-and-json-rpc"
 ---
 
 When and how fast did memory usage increase?  Right away, slowly over a long time, or starting at some later event?

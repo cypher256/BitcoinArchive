@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/374/"
-threadId: "bt-overflow-bug-serious"
 ---
 
 Starting at 67000 is *perfect*.  

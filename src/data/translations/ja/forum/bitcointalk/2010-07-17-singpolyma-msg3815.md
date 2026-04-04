@@ -10,7 +10,6 @@ participants:
     slug: "singpolyma"
 description: "BitcoinTalkトピック400におけるsingpolymaの文脈投稿。msg3823に引用。"
 isSatoshi: false
-threadId: "bt-assertion-failure-ubuntu-lucid"
 tags: []
 translationStatus: complete
 ---

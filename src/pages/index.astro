@@ -5,7 +5,7 @@ import NetworkGraph from '../components/NetworkGraph.astro';
 import BtcPriceChart from '../components/BtcPriceChart.astro';
 import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../i18n/utils';
 import { computeGraphData } from '../lib/graphData';
-import { buildThreadInfo, collapseThreads } from '../data/threads';
+import { buildThreadInfo, collapseThreads, resolveThreadId } from '../data/threads';
 
 const lang = 'en';
 const t = useTranslations(lang);
@@ -187,7 +187,7 @@ function tagWeight(count: number, max: number): number {
         <a href={localePath('/entries/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
       </div>
       {featuredEntries.map((entry: any) => {
-        const tid = entry.data.threadId;
+        const tid = resolveThreadId(entry);
         const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
         const isThread = msgCount >= 2;
         return (

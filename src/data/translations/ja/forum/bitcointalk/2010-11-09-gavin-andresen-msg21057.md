@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック1668におけるGavin Andresenの文脈投稿。msg21959の前。"
 isSatoshi: false
-threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/339/"
-threadId: "bt-not-a-suggestion"
 ---
 
 This is a very interesting topic.  If a solution was found, a much better, easier, more convenient implementation of Bitcoin would be possible.

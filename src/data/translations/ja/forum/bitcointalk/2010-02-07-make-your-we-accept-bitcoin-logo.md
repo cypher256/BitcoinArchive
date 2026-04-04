@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "マルッティ・マルミ (sirius) がスレッドを開始: 「Bitcoin受付中」ロゴを作ろう"
 isSatoshi: false
-threadId: "bt-make-your-we-accept-bitcoin-logo"
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/292/"
-threadId: "bt-alert-upgrade-to-0-3-6-asap"
 ---
 
 0.3.6 Linux build is back to the old makefile.unix.  It static links libjpeg so that shouldn't be a problem.

@@ -10,7 +10,6 @@ participants:
     slug: "quantumplation"
 description: "BitcoinTalkトピック571におけるQuantumplationの文脈投稿。msg5724の前。"
 isSatoshi: false
-threadId: "bt-stealing-coins"
 tags: []
 translationStatus: complete
 ---

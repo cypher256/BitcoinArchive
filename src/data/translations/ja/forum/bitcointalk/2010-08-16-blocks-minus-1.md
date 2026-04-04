@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/"
-threadId: "bt-blocks-minus-1"
 translationStatus: complete
 ---
 

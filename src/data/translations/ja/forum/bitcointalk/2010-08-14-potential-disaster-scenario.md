@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "geblerがスレッドを開始: 潜在的な災害シナリオ"
 isSatoshi: false
-threadId: "bt-potential-disaster-scenario"
 tags: []
 translationStatus: complete
 ---

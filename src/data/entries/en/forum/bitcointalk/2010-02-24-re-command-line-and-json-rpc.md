@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/74/"
-threadId: "bt-command-line-and-json-rpc"
 ---
 
 [Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)

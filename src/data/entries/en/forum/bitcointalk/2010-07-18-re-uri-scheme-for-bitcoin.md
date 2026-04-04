@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/240/"
-threadId: "bt-uri-scheme-for-bitcoin"
 ---
 
 [Quote from: lachesis on June 16, 2010, 06:14:05 AM](#msg1597)

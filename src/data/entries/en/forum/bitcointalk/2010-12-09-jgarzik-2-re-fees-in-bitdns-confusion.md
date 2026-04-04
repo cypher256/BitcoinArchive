@@ -10,7 +10,6 @@ participants:
     slug: "jeff-garzik"
 description: "Jeff Garzik briefly references the discussion of locktime for transaction replacement, which Satoshi Nakamoto would correct in his next reply."
 isSatoshi: false
-threadId: "bt-fees-in-bitdns-confusion"
 tags:
   - "transaction-replacement"
   - "locktime"

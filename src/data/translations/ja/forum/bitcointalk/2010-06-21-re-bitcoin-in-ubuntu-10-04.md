@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/130/"
-threadId: "bt-bitcoin-in-ubuntu-10-04"
 translationStatus: complete
 ---
 

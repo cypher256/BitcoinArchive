@@ -10,7 +10,6 @@ participants:
     slug: "virtualcoin"
 description: "BitcoinTalkトピック149におけるvirtualcoinのコンテキスト投稿。msg1646の前。"
 isSatoshi: false
-threadId: "bt-bitcoin-in-ubuntu-10-04"
 tags: []
 translationStatus: complete
 ---

@@ -10,7 +10,6 @@ participants:
     slug: "the-doctor"
 description: "BitcoinTalkトピック12におけるThe Doctorのコンテキスト投稿。msg79の前。"
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 translationStatus: complete
 ---

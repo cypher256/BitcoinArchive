@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/51/"
-threadId: "bt-deb-package"
 ---
 
 Are you just trying to run the program or do you really need to compile it?  There's a 32-bit linux binary that can be run on 64-bit ubuntu if you "sudo apt-get ia32-libs".

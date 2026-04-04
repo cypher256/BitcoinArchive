@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/80/"
-threadId: "bt-command-line-and-json-rpc"
 ---
 
 OK, I made a build target bitcoind that only links wxBase and does not link GTK.  Version 0.2.7 on SVN.

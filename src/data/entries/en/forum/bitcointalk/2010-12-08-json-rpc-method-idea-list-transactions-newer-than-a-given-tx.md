@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "davux starts a discussion: JSON-RPC method idea: list transactions newer than a given txid."
 isSatoshi: false
-threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
 ---
 

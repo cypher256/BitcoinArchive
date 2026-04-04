@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "BitcoinTalkトピック665におけるSmokeTooMuchの文脈投稿。msg18508の前。"
 isSatoshi: false
-threadId: "bt-multiple-wallets-one-computer"
 tags: []
 translationStatus: complete
 ---

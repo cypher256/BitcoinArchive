@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Sabunir starts a discussion: Questions about Addresses."
 isSatoshi: false
-threadId: "bt-questions-about-addresses"
 tags: []
 ---
 

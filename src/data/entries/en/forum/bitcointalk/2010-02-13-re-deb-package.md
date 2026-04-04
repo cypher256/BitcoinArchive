@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/55/"
-threadId: "bt-deb-package"
 ---
 
 I couldn't get wxWidgets 2.8.9 to compile on Karmic 64-bit either.

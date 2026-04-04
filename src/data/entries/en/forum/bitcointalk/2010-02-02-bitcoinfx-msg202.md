@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "Context post by BitcoinFX in BitcoinTalk topic 34. before msg222."
 isSatoshi: false
-threadId: "bt-questions-about-addresses"
 tags: []
 ---
 

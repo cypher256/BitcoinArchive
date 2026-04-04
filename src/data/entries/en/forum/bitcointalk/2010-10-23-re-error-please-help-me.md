@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/493/"
-threadId: "bt-error-please-help-me"
 ---
 
 [Quote from: theymos on October 21, 2010, 10:00:26 PM](#msg17955)

@@ -14,7 +14,6 @@ tags:
   - "announcement"
   - "forum"
   - "properties"
-threadId: "bt-welcome-to-bitcoin-forum"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/1/"

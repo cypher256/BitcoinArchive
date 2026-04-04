@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック834におけるNewLibertyStandardのコンテキスト投稿。msg9843に引用。"
 isSatoshi: false
-threadId: "bt-checkpointing-the-block-chain"
 tags: []
 translationStatus: complete
 ---

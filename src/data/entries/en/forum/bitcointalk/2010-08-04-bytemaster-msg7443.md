@@ -10,7 +10,6 @@ participants:
     slug: "bytemaster"
 description: "Quoted post by bytemaster in BitcoinTalk topic 287."
 isSatoshi: false
-threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
 ---
 

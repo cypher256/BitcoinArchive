@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 43. before msg1669."
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 ---
 

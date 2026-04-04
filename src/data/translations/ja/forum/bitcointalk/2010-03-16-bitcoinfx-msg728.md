@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "BitcoinTalkトピック83におけるBitcoinFXのコンテキスト投稿。msg731の前。"
 isSatoshi: false
-threadId: "bt-idea-for-file-hosting-and-proxy-services"
 tags: []
 translationStatus: complete
 ---

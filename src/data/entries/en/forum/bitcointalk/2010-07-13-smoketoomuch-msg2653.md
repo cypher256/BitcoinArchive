@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 327. before msg2871."
 isSatoshi: false
-threadId: "bt-resource-hog"
 tags: []
 ---
 

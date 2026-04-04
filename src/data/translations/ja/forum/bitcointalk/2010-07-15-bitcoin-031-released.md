@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "satoshiがスレッドを開始: 0.3.1リリース候補、テストしてください"
 isSatoshi: true
-threadId: "bt-0-3-1-release-candidate-please-test"
 tags: []
 translationStatus: complete
 ---

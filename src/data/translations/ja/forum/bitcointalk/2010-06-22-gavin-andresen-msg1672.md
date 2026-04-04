@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック199におけるギャビン・アンドレセンのコンテキスト投稿。msg1675の前。"
 isSatoshi: false
-threadId: "bt-1-3-almost-ready"
 tags: []
 translationStatus: complete
 ---

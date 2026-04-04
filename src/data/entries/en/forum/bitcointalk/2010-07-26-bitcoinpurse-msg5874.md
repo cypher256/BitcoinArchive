@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinpurse"
 description: "Context post by BitCoinPurse in BitcoinTalk topic 572. before msg5978."
 isSatoshi: false
-threadId: "bt-bitcoin-x86-for-windows"
 tags: []
 ---
 

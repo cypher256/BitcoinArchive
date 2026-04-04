@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/465/"
-threadId: "bt-i-broke-my-wallet-sends-never-confirm-now"
 ---
 
 0.3.13 release candidate, please test:

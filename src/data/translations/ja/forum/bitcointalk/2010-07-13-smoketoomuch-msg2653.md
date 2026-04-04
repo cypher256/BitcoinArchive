@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "BitcoinTalkトピック327におけるSmokeTooMuchのコンテキスト投稿。msg2871の前。"
 isSatoshi: false
-threadId: "bt-resource-hog"
 tags: []
 translationStatus: complete
 ---

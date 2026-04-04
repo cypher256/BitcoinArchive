@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "kermitがスレッドを開始: ウォレットを壊してしまい、送金が承認されなくなった"
 isSatoshi: false
-threadId: "bt-i-broke-my-wallet-sends-never-confirm-now"
 tags: []
 translationStatus: complete
 ---

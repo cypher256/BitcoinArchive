@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/171/"
-threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
 ---
 
 Thanks for finding that.  We switched from ANSI in 0.2 to UTF-8 in version 0.3, so it must be related to that.

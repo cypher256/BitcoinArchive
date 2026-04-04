@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/70/"
-threadId: "bt-ui-improvements"
 ---
 
 [Quote from: Xunie on February 23, 2010, 12:28:27 PM](#msg439)

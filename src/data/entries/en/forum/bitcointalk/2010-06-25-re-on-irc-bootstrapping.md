@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/148/"
-threadId: "bt-on-irc-bootstrapping"
 ---
 
 [Quote from: laszlo on June 14, 2010, 06:30:58 PM](#msg1580)

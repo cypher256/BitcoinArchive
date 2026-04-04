@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/138/"
-threadId: "bt-0-3-almost-ready"
 ---
 
 [Quote from: lachesis on June 22, 2010, 06:20:02 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-06-22-lachesis-msg1658/)

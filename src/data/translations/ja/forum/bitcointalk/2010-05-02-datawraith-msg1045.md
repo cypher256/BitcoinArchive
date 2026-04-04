@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "BitcoinTalkトピック55におけるDataWraithの引用投稿。"
 isSatoshi: false
-threadId: "bt-uri-scheme-for-bitcoin"
 tags: []
 translationStatus: complete
 ---

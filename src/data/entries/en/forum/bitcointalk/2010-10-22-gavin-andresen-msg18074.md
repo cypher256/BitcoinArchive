@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 1530. quoted by msg18241."
 isSatoshi: false
-threadId: "bt-error-please-help-me"
 tags: []
 ---
 

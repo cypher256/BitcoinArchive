@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "wobberがスレッドを開始: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
 isSatoshi: false
-threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
 tags: []
 translationStatus: complete
 ---

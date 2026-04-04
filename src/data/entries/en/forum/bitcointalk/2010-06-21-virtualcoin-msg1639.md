@@ -10,7 +10,6 @@ participants:
     slug: "virtualcoin"
 description: "Context post by virtualcoin in BitcoinTalk topic 149. before msg1653."
 isSatoshi: false
-threadId: "bt-bitcoin-in-ubuntu-10-04"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/225/"
-threadId: "bt-proof-of-work-difficulty-increasing"
 ---
 
 Right, the difficulty adjustment is trying to keep it so the network as a whole generates an average of 6 blocks per hour.  The time for your block to mature will always be around 20 hours.

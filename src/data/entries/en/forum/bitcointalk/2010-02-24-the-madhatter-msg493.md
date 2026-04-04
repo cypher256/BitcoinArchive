@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "Context post by The Madhatter in BitcoinTalk topic 63. before msg509."
 isSatoshi: false
-threadId: "bt-command-line-and-json-rpc"
 tags: []
 ---
 

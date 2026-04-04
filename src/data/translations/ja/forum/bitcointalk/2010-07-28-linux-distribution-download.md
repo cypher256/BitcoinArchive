@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Odinがスレッドを開始: Linuxディストリビューションのダウンロード"
 isSatoshi: false
-threadId: "bt-linux-distribution-download"
 tags: []
 translationStatus: complete
 ---

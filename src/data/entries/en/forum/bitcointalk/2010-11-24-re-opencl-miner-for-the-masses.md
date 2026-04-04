@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/510/"
-threadId: "bt-opencl-miner-for-the-masses"
 ---
 
 A revised version of getwork is now in the official client, but the miners need to be updated a little to use it.

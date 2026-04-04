@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "AndrewBuck starts a discussion: Source code documentation."
 isSatoshi: false
-threadId: "bt-source-code-documentation"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ participants:
 description: "トランザクション置換に関するサトシ・ナカモトの投稿へのピーター・トッドの返信。約1.5時間後に投稿された。ユーザー名「retep」（Peterの逆）でのBitcoinTalkでの2番目の投稿だった。HBOのドキュメンタリー「Money Electric」（2024年）は後にこのやり取りをトッドがサトシである証拠として引用した。"
 isSatoshi: false
 isConversation: true
-threadId: "bt-fees-in-bitdns-confusion"
 inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"
 tags:
   - "replace-by-fee"

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/381/"
-threadId: "bt-overflow-bug-serious"
 ---
 
 [Quote from: trebronics on August 16, 2010, 01:02:35 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-goldrush-msg9625/)

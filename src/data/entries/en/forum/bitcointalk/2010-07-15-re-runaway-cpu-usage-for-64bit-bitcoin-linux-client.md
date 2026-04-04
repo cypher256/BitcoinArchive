@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/189/"
-threadId: "bt-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
 ---
 
 OK, the undocumented switch "-minimizetotray" which re-enables the option.

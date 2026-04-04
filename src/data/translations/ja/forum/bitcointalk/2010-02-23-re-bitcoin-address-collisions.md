@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/69/"
-threadId: "bt-bitcoin-address-collisions"
 translationStatus: complete
 ---
 

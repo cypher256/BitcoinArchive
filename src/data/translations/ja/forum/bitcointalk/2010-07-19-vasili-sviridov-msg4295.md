@@ -10,7 +10,6 @@ participants:
     slug: "vasili-sviridov"
 description: "BitcoinTalkトピック461におけるVasili Sviridovの文脈投稿。msg4646の前。"
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 translationStatus: complete
 ---

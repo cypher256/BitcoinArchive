@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ec starts a discussion: URI-scheme for bitcoin."
 isSatoshi: false
-threadId: "bt-uri-scheme-for-bitcoin"
 tags: []
 ---
 

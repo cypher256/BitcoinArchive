@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 43. before msg540."
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 ---
 

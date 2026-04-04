@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/41/"
-threadId: "bt-questions-about-addresses"
 ---
 
 Port forwarding forwards a port to one computer.  It tells the router which computer handles connections to that port.  So that's the computer receiving.

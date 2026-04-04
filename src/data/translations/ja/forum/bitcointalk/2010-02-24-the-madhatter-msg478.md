@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック63におけるThe Madhatterのコンテキスト投稿。msg482の前。"
 isSatoshi: false
-threadId: "bt-command-line-and-json-rpc"
 tags: []
 translationStatus: complete
 ---

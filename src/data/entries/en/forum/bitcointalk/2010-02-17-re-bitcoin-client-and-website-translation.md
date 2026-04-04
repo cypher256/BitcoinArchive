@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/62/"
-threadId: "bt-bitcoin-client-and-website-translation"
 ---
 
 I updated the SVN with changes to support translation.  Translatable strings are all enclosed in _(""), and we're using UTF-8 on all platforms.

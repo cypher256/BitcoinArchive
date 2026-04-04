@@ -10,7 +10,6 @@ participants:
     slug: "moonshadow"
 description: "Context post by MoonShadow in BitcoinTalk topic 834. before msg9843."
 isSatoshi: false
-threadId: "bt-checkpointing-the-block-chain"
 tags: []
 ---
 

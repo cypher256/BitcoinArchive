@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "soultcer starts a discussion: On IRC bootstrapping."
 isSatoshi: false
-threadId: "bt-on-irc-bootstrapping"
 tags: []
 ---
 

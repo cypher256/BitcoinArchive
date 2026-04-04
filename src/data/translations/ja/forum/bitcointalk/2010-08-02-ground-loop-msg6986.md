@@ -10,7 +10,6 @@ participants:
     slug: "ground-loop"
 description: "BitcoinTalkトピック648におけるGround Loopの投稿。"
 isSatoshi: false
-threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "appamattoがスレッドを開始: BitDNSとBitcoinの汎用化"
 isSatoshi: false
-threadId: "bt-bitdns-and-generalizing-bitcoin"
 tags: []
 translationStatus: complete
 ---

@@ -11,7 +11,6 @@ participants:
 description: "Satoshi advises on improving the Bitcoin Wikipedia article facing deletion. He describes Bitcoin as an 'implementation' of b-money and Bitgold, though he has acknowledged elsewhere that he developed Bitcoin independently before learning of these proposals."
 editorNote: "Satoshi describes Bitcoin as an 'implementation' of b-money and Bitgold here, but he has stated elsewhere that he learned of these proposals only after Bitcoin's implementation was already complete. Wei Dai was first introduced to him by Adam Back in August 2008."
 isSatoshi: true
-threadId: "bt-they-want-to-delete-the-wikipedia-article"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/249/"

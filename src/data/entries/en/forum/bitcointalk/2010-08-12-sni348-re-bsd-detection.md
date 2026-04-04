@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/348/"
-threadId: "bt-bsd-detection"
 ---
 
 This is in SVN rev 130.  Check that it compiles right.

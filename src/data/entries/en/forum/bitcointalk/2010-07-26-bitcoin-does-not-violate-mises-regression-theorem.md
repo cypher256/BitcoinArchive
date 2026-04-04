@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "xc starts a discussion: Bitcoin does NOT violate Mises' Regression Theorem."
 isSatoshi: false
-threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
 tags: []
 ---
 

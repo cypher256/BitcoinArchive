@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "riXがスレッドを開始: コイン送信時のBitcoinクラッシュ"
 isSatoshi: false
-threadId: "bt-bitcoin-crash-when-sending-coins"
 tags: []
 translationStatus: complete
 ---

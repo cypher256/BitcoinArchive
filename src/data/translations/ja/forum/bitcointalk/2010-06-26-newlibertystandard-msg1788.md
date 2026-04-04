@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック199におけるNewLibertyStandardのコンテキスト投稿。msg1806の前。"
 isSatoshi: false
-threadId: "bt-1-3-almost-ready"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "davout"
 description: "RHorningがトランザクション置換はバージョンフィールドにより理論的には可能だが、UIには未実装であると説明。トランザクションがブロックに含まれると、キャンセルは事実上不可能になると述べた。"
 isSatoshi: false
-threadId: "bt-fees-in-bitdns-confusion"
 inReplyTo: "forum/bitcointalk/2010-12-09-davout-re-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

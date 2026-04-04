@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/429/"
-threadId: "bt-version-0-3-11-with-upgrade-alerts"
 ---
 
 Version 0.3.11 is now available.

@@ -17,7 +17,6 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/199/"
-threadId: "bt-not-a-suggestion"
 translationStatus: complete
 ---
 

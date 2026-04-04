@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック461におけるGavin Andresenの文脈投稿。msg5771に引用。"
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 translationStatus: complete
 ---

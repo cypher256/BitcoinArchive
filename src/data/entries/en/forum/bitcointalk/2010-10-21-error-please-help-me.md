@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Dhaw starts a discussion: ERROR - PLEASE HELP ME!."
 isSatoshi: false
-threadId: "bt-error-please-help-me"
 tags: []
 ---
 

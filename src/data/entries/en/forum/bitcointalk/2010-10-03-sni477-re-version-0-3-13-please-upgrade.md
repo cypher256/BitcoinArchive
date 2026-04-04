@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/477/"
-threadId: "bt-version-0-3-13-please-upgrade"
 ---
 
 [Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzik starts a discussion: Prioritized transactions, and tx fees."
 isSatoshi: false
-threadId: "bt-prioritized-transactions-and-tx-fees"
 tags: []
 ---
 

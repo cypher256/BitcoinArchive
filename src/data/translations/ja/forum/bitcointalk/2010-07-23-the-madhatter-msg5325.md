@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック548におけるThe Madhatterの文脈投稿。msg5339の前。"
 isSatoshi: false
-threadId: "bt-bitcoind-not-responding-to-rpc"
 tags: []
 translationStatus: complete
 ---

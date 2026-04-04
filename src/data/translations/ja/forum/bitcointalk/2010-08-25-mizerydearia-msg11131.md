@@ -10,7 +10,6 @@ participants:
     slug: "mizerydearia"
 description: "BitcoinTalkトピック921におけるmizerydeariaのコンテキスト投稿。msg11228の前。"
 isSatoshi: false
-threadId: "bt-auto-backing-up-of-wallet-dat"
 tags: []
 translationStatus: complete
 ---

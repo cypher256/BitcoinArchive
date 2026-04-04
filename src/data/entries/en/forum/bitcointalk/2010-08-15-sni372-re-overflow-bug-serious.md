@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/372/"
-threadId: "bt-overflow-bug-serious"
 ---
 
 Don't update the block chain download.  When you take someone's block chain download, you don't want it right up to the end.  A somewhat old one is better so it can download and verify the most recent blocks.

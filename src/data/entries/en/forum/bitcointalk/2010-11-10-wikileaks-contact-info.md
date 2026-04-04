@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "genjix starts a discussion: Wikileaks contact info?."
 isSatoshi: false
-threadId: "bitcointalk-1735-wikileaks-cia"
 tags: []
 ---
 

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Redがスレッドを開始: 提案ではなく"
 isSatoshi: false
-threadId: "bt-not-a-suggestion"
 tags: []
 translationStatus: complete
 ---

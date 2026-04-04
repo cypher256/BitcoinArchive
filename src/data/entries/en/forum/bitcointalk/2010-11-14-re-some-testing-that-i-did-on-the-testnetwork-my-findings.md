@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/503/"
-threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 ---
 
 [Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](#msg21899)

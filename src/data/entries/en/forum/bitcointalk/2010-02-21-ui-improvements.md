@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/66/"
-threadId: "bt-ui-improvements"
 ---
 
 Uploaded some UI changes to SVN as version 0.2.5.

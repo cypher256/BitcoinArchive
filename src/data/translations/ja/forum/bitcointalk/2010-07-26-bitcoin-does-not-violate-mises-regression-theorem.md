@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "xcがスレッドを開始: Bitcoinはミーゼスの回帰定理に違反しない"
 isSatoshi: false
-threadId: "bt-bitcoin-does-not-violate-mises-regression-theorem"
 tags: []
 translationStatus: complete
 ---

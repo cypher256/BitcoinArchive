@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック18におけるThe Madhatterのコンテキスト投稿。msg174の前。"
 isSatoshi: false
-threadId: "bt-64bit-support"
 tags: []
 translationStatus: complete
 ---

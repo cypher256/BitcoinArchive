@@ -10,7 +10,6 @@ participants:
     slug: "davout"
 description: "davoutが、手数料なしの未確認トランザクションをキャンセルして手数料付きで再ブロードキャストできるかどうかを質問した。"
 isSatoshi: false
-threadId: "bt-fees-in-bitdns-confusion"
 inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

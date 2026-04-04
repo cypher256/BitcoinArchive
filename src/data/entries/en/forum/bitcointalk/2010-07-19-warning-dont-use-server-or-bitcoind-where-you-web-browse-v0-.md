@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto's post: \"Warning: don't use -server or bitcoind where you web browse (v0.3.2 and lower)\"."
 isSatoshi: true
-threadId: "bt-warning-dont-use-server-or-bitcoind"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/247/"

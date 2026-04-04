@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Olipro starts a discussion: A proposal for a semi-automated Escrow mechanism."
 isSatoshi: false
-threadId: "bt-a-proposal-for-a-semi-automated-escrow-mechanism"
 tags: []
 ---
 

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lfmがスレッドを開始: 0.3.8でBitcoin生成が壊れた？"
 isSatoshi: false
-threadId: "bt-bitcoin-generation-broken-in-0-3-8"
 tags: []
 translationStatus: complete
 ---

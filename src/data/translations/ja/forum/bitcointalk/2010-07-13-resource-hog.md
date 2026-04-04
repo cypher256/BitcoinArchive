@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "andy_3_913がスレッドを開始: リソースの大量消費"
 isSatoshi: false
-threadId: "bt-resource-hog"
 tags: []
 translationStatus: complete
 ---

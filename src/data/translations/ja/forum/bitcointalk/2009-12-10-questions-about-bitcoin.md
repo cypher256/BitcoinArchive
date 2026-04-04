@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "SmokeTooMuchがスレッドを開始: Bitcoinに関する質問"
 isSatoshi: false
-threadId: "bt-questions-about-bitcoin"
 tags: []
 translationStatus: complete
 ---

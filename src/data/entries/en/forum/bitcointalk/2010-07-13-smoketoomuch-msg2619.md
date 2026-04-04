@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 151. quoted by msg3247."
 isSatoshi: false
-threadId: "bt-website-translations"
 tags: []
 ---
 

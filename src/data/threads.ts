@@ -9,23 +9,23 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'Bitcoin open source implementation of P2P currency',
     ja: 'ビットコイン：P2P通貨のオープンソース実装',
   },
-  'bitcointalk-1735-wikileaks-cia': {
+  'bt-1735': {
     en: 'WikiLeaks and the End of the Beginning',
     ja: 'WikiLeaksと始まりの終わり',
   },
-  'bitcointalk-6652-gavin-cia': {
+  'bt-6652': {
     en: 'Gavin will visit the CIA',
     ja: 'ギャビン、CIAを訪問予定',
   },
-  'bt-alert-upgrade-to-0-3-6-asap': {
+  'bt-626': {
     en: '*** ALERT *** Upgrade to 0.3.6 ASAP!',
     ja: '*** 警告 *** 0.3.6に今すぐアップグレードしてください！',
   },
-  'bt-request-make-this-anonymous': {
+  'bt-7': {
     en: 'Request: Make this anonymous?',
     ja: 'リクエスト：これを匿名にできますか？',
   },
-  'bt-they-want-to-delete-the-wikipedia-article': {
+  'bt-342': {
     en: 'They want to delete the Wikipedia article',
     ja: 'Wikipediaの記事を削除しようとしている',
   },
@@ -78,7 +78,22 @@ export function deriveThreadTitle(
 
 interface ThreadEntry {
   id: string;
-  data: { threadId?: string; date: Date; title: string };
+  data: { threadId?: string; type?: string; sourceUrl?: string; source?: string; date: Date; title: string };
+}
+
+/**
+ * Resolve the effective thread ID for an entry.
+ * - If the entry has an explicit threadId in frontmatter, use it (correspondence, emails, etc.)
+ * - If the entry is from BitcoinTalk, derive from sourceUrl's topic=NNN → "bt-NNN"
+ * - Otherwise, no thread
+ */
+export function resolveThreadId(entry: { data: { threadId?: string; type?: string; sourceUrl?: string; source?: string } }): string | undefined {
+  if (entry.data.threadId) return entry.data.threadId;
+  if (entry.data.source === 'bitcointalk' && entry.data.type === 'forum-post' && entry.data.sourceUrl) {
+    const m = entry.data.sourceUrl.match(/topic=(\d+)/);
+    if (m) return `bt-${m[1]}`;
+  }
+  return undefined;
 }
 
 /**
@@ -92,7 +107,7 @@ export function buildThreadInfo<T extends ThreadEntry>(
   const threadGroups = new Map<string, T[]>();
 
   for (const entry of allEntries) {
-    const tid = entry.data.threadId;
+    const tid = resolveThreadId(entry);
     if (tid) {
       threadCounts.set(tid, (threadCounts.get(tid) || 0) + 1);
       const group = threadGroups.get(tid) || [];
@@ -125,7 +140,7 @@ export function collapseThreads<T extends ThreadEntry>(
 ): T[] {
   const seen = new Set<string>();
   return filtered.filter((entry) => {
-    const tid = entry.data.threadId;
+    const tid = resolveThreadId(entry);
     if (!tid) return true;
     if ((threadCounts.get(tid) || 0) < 2) return true;
     if (seen.has(tid)) return false;

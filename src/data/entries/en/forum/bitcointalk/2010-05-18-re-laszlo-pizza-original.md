@@ -10,7 +10,6 @@ participants:
     slug: "laszlo-hanyecz"
 description: "Laszlo Hanyecz posts his famous offer to pay 10,000 bitcoins for two pizzas, leading to the first known real-world Bitcoin transaction on May 22, 2010 — now celebrated as Bitcoin Pizza Day."
 isSatoshi: false
-threadId: "pizza-for-bitcoins"
 tags:
   - "pizza-day"
   - "first-purchase"

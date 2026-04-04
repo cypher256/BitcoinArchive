@@ -17,7 +17,6 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/103/"
-threadId: "bt-dealing-with-sha-256-collisions"
 ---
 
 SHA-256 is very strong. It's not like the incremental step from MD5 to SHA1. It can last several decades unless there's some massive breakthrough.

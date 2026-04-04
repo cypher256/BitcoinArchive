@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Red starts a discussion: Stealing Coins."
 isSatoshi: false
-threadId: "bt-stealing-coins"
 tags: []
 ---
 

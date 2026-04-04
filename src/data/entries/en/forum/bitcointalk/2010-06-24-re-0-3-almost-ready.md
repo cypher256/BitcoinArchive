@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/144/"
-threadId: "bt-0-3-almost-ready"
 ---
 
 Here's RC1 for linux for testing:

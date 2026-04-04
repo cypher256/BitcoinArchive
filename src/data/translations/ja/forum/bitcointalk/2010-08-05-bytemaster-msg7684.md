@@ -10,7 +10,6 @@ participants:
     slug: "bytemaster"
 description: "BitcoinTalkトピック287におけるbytemasterの文脈投稿。msg7696に引用。"
 isSatoshi: false
-threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
 translationStatus: complete
 ---

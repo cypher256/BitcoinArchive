@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/483/"
-threadId: "bt-website-and-software-translations"
 ---
 
 Thanks eurekafag, Russian translation added to SVN rev 160.

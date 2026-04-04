@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "BitcoinTalkトピック84におけるDataWraithのコンテキスト投稿。msg1781の前。"
 isSatoshi: false
-threadId: "bt-on-irc-bootstrapping"
 tags: []
 translationStatus: complete
 ---

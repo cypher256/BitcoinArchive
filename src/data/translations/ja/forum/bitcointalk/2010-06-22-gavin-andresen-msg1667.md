@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック43におけるギャビン・アンドレセンのコンテキスト投稿。msg1669の前。"
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 translationStatus: complete
 ---

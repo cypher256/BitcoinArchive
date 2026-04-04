@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/282/"
-threadId: "bt-bitcoin-x86-for-windows"
 ---
 
 [Quote from: BlackEye on July 25, 2010, 10:12:23 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-07-25-blackeye-msg5774/)

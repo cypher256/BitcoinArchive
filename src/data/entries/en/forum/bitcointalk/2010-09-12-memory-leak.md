@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "eurekafag starts a discussion: Memory leak."
 isSatoshi: false
-threadId: "bt-memory-leak"
 tags: []
 ---
 

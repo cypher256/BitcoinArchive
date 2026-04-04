@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 461."
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 ---
 

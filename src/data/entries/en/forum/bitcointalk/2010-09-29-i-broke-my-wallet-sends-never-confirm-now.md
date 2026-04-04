@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "kermit starts a discussion: I broke my wallet, sends never confirm now.."
 isSatoshi: false
-threadId: "bt-i-broke-my-wallet-sends-never-confirm-now"
 tags: []
 ---
 

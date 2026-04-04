@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 1668. before msg21896."
 isSatoshi: false
-threadId: "bt-some-testing-that-i-did-on-the-testnetwork-my-find"
 tags: []
 ---
 

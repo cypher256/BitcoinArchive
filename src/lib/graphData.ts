@@ -1,5 +1,6 @@
 import type { Lang } from '../i18n/ui';
 import { getJapaneseParticipantDisplayName } from '../i18n/participants';
+import { resolveThreadId } from '../data/threads';
 
 export interface GraphNode {
   id: string;
@@ -20,7 +21,7 @@ export interface GraphData {
 }
 
 export function computeGraphData(
-  entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean; threadId?: string } }[],
+  entries: { data: { participants: { name: string; slug: string }[]; isSatoshi: boolean; threadId?: string; sourceUrl?: string; source?: string } }[],
   lang: Lang = 'en',
 ): GraphData {
   const nodeCounts = new Map<string, { name: string; count: number; isSatoshi: boolean }>();
@@ -56,7 +57,7 @@ export function computeGraphData(
     }
 
     // Collect participants by threadId
-    const threadId = (entry.data as any).threadId;
+    const threadId = resolveThreadId(entry);
     if (threadId) {
       if (!threadParticipants.has(threadId)) {
         threadParticipants.set(threadId, new Set());

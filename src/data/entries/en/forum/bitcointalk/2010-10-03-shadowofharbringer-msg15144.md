@@ -10,7 +10,6 @@ participants:
     slug: "shadowofharbringer"
 description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 1327. before msg15147."
 isSatoshi: false
-threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
 ---
 

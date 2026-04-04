@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "soultcerがスレッドを開始: IRCブートストラッピングについて"
 isSatoshi: false
-threadId: "bt-on-irc-bootstrapping"
 tags: []
 translationStatus: complete
 ---

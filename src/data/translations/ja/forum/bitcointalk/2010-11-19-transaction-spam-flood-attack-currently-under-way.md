@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzikがスレッドを開始: トランザクション/スパムフラッド攻撃が現在進行中"
 isSatoshi: false
-threadId: "bt-transaction-spam-flood-attack"
 tags: []
 translationStatus: complete
 ---

@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック12におけるThe Madhatterの引用投稿。"
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 translationStatus: complete
 ---

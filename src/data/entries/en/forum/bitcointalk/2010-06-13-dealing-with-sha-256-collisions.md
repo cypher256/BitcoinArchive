@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lachesis starts a discussion: Dealing with SHA-256 Collisions."
 isSatoshi: false
-threadId: "bt-dealing-with-sha-256-collisions"
 tags: []
 ---
 

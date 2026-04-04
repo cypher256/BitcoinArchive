@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/412/"
-threadId: "bt-development-of-alert-system"
 ---
 
 If you're so paranoid that you're getting hysterical over this, then surely you're paranoid enough that if a warning message displays on the status bar, you'll check the website and forum.

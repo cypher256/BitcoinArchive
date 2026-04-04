@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lfm starts a discussion: bitcoin generation broken in 0.3.8?  (64-bit)."
 isSatoshi: false
-threadId: "bt-bitcoin-generation-broken-in-0-3-8"
 tags: []
 ---
 

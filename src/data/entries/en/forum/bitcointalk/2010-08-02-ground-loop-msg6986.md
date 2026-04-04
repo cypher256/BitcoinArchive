@@ -10,7 +10,6 @@ participants:
     slug: "ground-loop"
 description: "Quoted post by Ground Loop in BitcoinTalk topic 648."
 isSatoshi: false
-threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 tags: []
 ---
 

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "appamatto starts a discussion: BitDNS and Generalizing Bitcoin."
 isSatoshi: false
-threadId: "bt-bitdns-and-generalizing-bitcoin"
 tags: []
 ---
 

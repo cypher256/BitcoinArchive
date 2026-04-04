@@ -10,7 +10,6 @@ participants:
     slug: "spaceshaker"
 description: "Context post by spaceshaker in BitcoinTalk topic 286. before msg2947."
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 ---
 

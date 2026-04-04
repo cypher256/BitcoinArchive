@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック191におけるギャビン・アンドレセンのコンテキスト投稿。msg1614の前。"
 isSatoshi: false
-threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
 tags: []
 translationStatus: complete
 ---

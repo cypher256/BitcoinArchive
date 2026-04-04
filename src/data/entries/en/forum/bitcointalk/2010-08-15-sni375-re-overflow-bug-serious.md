@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/375/"
-threadId: "bt-overflow-bug-serious"
 ---
 
 [Quote from: Joozero on August 15, 2010, 11:32:43 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-15-hostfat-msg9582/)

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/525/"
-threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 ---
 
 Then how do you cope with the issues I listed in the message you quoted?

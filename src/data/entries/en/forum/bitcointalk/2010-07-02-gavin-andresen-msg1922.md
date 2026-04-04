@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 202. before msg2133."
 isSatoshi: false
-threadId: "bt-major-meltdown"
 tags: []
 ---
 

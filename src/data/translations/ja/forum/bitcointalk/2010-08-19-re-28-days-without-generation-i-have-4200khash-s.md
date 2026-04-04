@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/403/"
-threadId: "bt-28-days-without-generation-i-have-4200khash-s"
 translationStatus: complete
 ---
 

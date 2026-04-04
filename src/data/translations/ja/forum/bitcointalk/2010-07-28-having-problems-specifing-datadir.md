@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "psyvenrixがスレッドを開始: -datadirの指定で問題が発生"
 isSatoshi: false
-threadId: "bt-having-problems-specifing-datadir"
 tags: []
 translationStatus: complete
 ---

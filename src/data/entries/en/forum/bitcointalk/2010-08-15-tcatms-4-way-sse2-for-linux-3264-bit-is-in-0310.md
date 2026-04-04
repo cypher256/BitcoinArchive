@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto starts a discussion: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10."
 isSatoshi: true
-threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
 tags: []
 ---
 

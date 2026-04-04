@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/"
-threadId: "bt-overflow-bug-serious"
 ---
 
 [Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-ground-loop-msg9609/)

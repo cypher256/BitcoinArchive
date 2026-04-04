@@ -17,7 +17,6 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/370/"
-threadId: "bt-potential-disaster-scenario"
 translationStatus: complete
 ---
 

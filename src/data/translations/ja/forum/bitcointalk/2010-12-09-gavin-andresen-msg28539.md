@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック2162におけるGavin Andresenの文脈投稿。msg28549の前。"
 isSatoshi: false
-threadId: "bt-version-0-3-18"
 tags: []
 translationStatus: complete
 ---

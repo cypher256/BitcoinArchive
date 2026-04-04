@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "nimnul starts a discussion: Bitcoind x86 binary for CentOS."
 isSatoshi: false
-threadId: "bt-bitcoind-x86-binary-for-centos"
 tags: []
 ---
 

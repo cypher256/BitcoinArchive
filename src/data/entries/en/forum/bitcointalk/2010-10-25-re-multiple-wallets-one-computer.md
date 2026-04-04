@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/498/"
-threadId: "bt-multiple-wallets-one-computer"
 ---
 
 Here's some pseudocode of how you would use the account based commands.  It sure makes website integration a lot easier.

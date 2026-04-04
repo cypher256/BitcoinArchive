@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lachesis starts a discussion: Feature Request: Limiting Connections."
 isSatoshi: false
-threadId: "bt-feature-request-limiting-connections"
 tags: []
 ---
 

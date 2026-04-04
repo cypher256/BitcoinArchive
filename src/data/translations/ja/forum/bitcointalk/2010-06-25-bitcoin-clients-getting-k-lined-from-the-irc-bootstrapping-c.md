@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Xunieがスレッドを開始: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
 isSatoshi: false
-threadId: "bt-bitcoin-clients-getting-k-lined-from-the-irc-boots"
 tags: []
 translationStatus: complete
 ---

@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "llamaがスレッドを開始: 大規模なメルトダウン"
 isSatoshi: false
-threadId: "bt-major-meltdown"
 tags: []
 translationStatus: complete
 ---

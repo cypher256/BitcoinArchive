@@ -10,7 +10,6 @@ participants:
     slug: "spaceshaker"
 description: "BitcoinTalkトピック286におけるspaceshakerの投稿。"
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 translationStatus: complete
 ---

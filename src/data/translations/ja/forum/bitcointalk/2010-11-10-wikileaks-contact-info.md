@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "genjixがスレッドを開始: ギャビンのCIAプレゼンテーション計画"
 isSatoshi: false
-threadId: "bitcointalk-1735-wikileaks-cia"
 tags: []
 translationStatus: complete
 ---

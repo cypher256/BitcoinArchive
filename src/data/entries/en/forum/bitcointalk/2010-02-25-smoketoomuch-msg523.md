@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 64. before msg561."
 isSatoshi: false
-threadId: "bt-new-icon-logo"
 tags: []
 ---
 

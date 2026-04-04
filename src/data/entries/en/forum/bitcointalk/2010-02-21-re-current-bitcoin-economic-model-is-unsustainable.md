@@ -18,7 +18,6 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/"
-threadId: "bt-current-bitcoin-economic-model-is-unsustainable"
 ---
 
 Excellent analysis, xc.

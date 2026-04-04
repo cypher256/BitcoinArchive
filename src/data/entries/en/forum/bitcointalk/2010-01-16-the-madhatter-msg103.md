@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "Context post by The Madhatter in BitcoinTalk topic 18. before msg174."
 isSatoshi: false
-threadId: "bt-64bit-support"
 tags: []
 ---
 

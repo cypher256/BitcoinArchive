@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 199. before msg1675."
 isSatoshi: false
-threadId: "bt-1-3-almost-ready"
 tags: []
 ---
 

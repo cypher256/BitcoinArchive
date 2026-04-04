@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/300/"
-threadId: "bt-alert-upgrade-to-0-3-6-asap"
 ---
 
 [Quote from: knightmb on July 30, 2010, 07:24:07 PM](#msg6702)

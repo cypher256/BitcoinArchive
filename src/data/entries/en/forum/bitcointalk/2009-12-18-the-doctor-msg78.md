@@ -10,7 +10,6 @@ participants:
     slug: "the-doctor"
 description: "Context post by The Doctor in BitcoinTalk topic 12. before msg79."
 isSatoshi: false
-threadId: "bt-a-few-suggestions"
 tags: []
 ---
 

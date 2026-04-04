@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/253/"
-threadId: "bt-json-rpc-password"
 ---
 
 boost::program_options has the same "key=value" format.  Gavin pointed out we can use it in a simple way as a parser without getting into all the esoteric c++ syntax like typed value extraction.  We can use more features if we want later.

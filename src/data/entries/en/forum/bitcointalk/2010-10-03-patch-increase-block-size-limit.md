@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzik starts a discussion: [PATCH] increase block size limit."
 isSatoshi: false
-threadId: "bt-patch-increase-block-size-limit"
 tags: []
 ---
 

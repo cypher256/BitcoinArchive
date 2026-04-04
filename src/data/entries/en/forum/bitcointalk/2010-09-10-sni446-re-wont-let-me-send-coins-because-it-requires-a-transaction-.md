@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/446/"
-threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
 ---
 
 I think I know what happened.  Doubleclick on the generated transaction.  It probably has a sub-0.01 transaction fee in it.

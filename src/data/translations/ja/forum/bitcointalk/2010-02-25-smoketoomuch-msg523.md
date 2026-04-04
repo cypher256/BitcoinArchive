@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "BitcoinTalkトピック64におけるSmokeTooMuchのコンテキスト投稿。msg561の前。"
 isSatoshi: false
-threadId: "bt-new-icon-logo"
 tags: []
 translationStatus: complete
 ---

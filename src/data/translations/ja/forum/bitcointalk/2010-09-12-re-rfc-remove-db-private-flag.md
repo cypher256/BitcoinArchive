@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/450/"
-threadId: "bt-rfc-remove-db-private-flag"
 translationStatus: complete
 ---
 

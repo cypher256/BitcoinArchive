@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック1530におけるGavin Andresenの文脈投稿。msg18241で引用。"
 isSatoshi: false
-threadId: "bt-error-please-help-me"
 tags: []
 translationStatus: complete
 ---

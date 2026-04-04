@@ -10,7 +10,6 @@ participants:
     slug: "interarmaenimsil"
 description: "Context post by InterArmaEnimSil in BitcoinTalk topic 286. before msg2947."
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 ---
 

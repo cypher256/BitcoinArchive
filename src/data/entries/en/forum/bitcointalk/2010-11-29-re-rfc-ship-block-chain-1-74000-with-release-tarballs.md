@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/520/"
-threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
 ---
 
 It seems like you're inclined to assume everything is wrong more than is actually so.

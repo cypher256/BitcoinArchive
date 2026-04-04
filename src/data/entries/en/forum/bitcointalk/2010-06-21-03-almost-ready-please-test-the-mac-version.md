@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto starts a discussion: 0.3 almost ready -- please test the Mac version!."
 isSatoshi: true
-threadId: "bt-0-3-almost-ready"
 tags: []
 ---
 

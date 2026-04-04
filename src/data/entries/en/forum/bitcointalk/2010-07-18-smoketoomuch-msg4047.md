@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Quoted post by SmokeTooMuch in BitcoinTalk topic 431."
 isSatoshi: false
-threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
 tags: []
 ---
 

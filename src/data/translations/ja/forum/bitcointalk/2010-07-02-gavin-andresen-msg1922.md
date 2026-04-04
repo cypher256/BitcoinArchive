@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック202におけるギャビン・アンドレセンのコンテキスト投稿。msg2133の前。"
 isSatoshi: false
-threadId: "bt-major-meltdown"
 tags: []
 translationStatus: complete
 ---

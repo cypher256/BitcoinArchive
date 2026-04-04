@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/47/"
-threadId: "bt-make-your-we-accept-bitcoin-logo"
 ---
 
 No, sorry.  I've been meaning to redo it.  The largest icon that still looks good is the 20x20 one which is used for the tray icon in GNOME.  Any larger than that looks bad.  The 16x16 and 20x20 ones have quite a bit of hand tweaking to get the pixels to work out right.  If you just scale down a larger image, the pixels end up blurred and awkward in places where the lines in "BC" don't land square on a pixel.

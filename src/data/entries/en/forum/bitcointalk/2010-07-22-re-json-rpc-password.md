@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/254/"
-threadId: "bt-json-rpc-password"
 ---
 
 [Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](#msg4908)

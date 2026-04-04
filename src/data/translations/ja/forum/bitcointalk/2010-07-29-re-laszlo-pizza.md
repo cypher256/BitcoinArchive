@@ -12,7 +12,6 @@ participants:
     slug: "laszlo-hanyecz"
 description: "サトシ・ナカモトがラズロの有名なピザ購入についてコメントし、実際の商店がビットコインを受け入れるようになることへの期待を表明。"
 isSatoshi: true
-threadId: "pizza-for-bitcoins"
 tags:
   - "pizza"
   - "commerce"

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/201/"
-threadId: "bt-0-3-1-release-candidate-please-test"
 ---
 
 [Quote from: knightmb on July 15, 2010, 08:15:46 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-07-15-knightmb-msg3274/)

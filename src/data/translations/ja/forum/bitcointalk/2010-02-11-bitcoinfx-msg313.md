@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "BitcoinTalkトピック48におけるBitcoinFXのコンテキスト投稿。msg316の前。"
 isSatoshi: false
-threadId: "bt-what-s-with-this-odd-generation"
 tags: []
 translationStatus: complete
 ---

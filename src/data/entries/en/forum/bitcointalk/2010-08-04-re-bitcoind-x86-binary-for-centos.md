@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/314/"
-threadId: "bt-bitcoind-x86-binary-for-centos"
 ---
 
 [Quote from: knightmb on August 03, 2010, 11:46:46 PM](#msg7365)

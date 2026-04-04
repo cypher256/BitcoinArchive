@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/26/"
-threadId: "bt-a-few-suggestions"
 ---
 
 That's good, is it running fine on FreeBSD?

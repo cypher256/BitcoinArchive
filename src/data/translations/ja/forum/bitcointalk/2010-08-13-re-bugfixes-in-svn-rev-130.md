@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/353/"
-threadId: "bt-bugfixes-in-svn-rev-130"
 translationStatus: complete
 ---
 

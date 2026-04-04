@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/533/"
-threadId: "bt-bitdns-and-generalizing-bitcoin"
 ---
 
 [Quote from: nanotube on December 09, 2010, 09:20:40 PM](#msg28700)

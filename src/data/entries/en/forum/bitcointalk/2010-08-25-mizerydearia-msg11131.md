@@ -10,7 +10,6 @@ participants:
     slug: "mizerydearia"
 description: "Context post by mizerydearia in BitcoinTalk topic 921. before msg11228."
 isSatoshi: false
-threadId: "bt-auto-backing-up-of-wallet-dat"
 tags: []
 ---
 

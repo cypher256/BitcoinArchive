@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "HostFatがスレッドを開始: ウェブサイト翻訳"
 isSatoshi: false
-threadId: "bt-website-translations"
 tags: []
 translationStatus: complete
 ---

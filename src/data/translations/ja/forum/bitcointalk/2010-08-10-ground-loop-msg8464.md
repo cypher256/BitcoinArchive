@@ -10,7 +10,6 @@ participants:
     slug: "ground-loop"
 description: "BitcoinTalkトピック765におけるGround Loopの引用投稿。"
 isSatoshi: false
-threadId: "bt-version-0-3-8-1-update-for-linux-64-bit"
 tags: []
 translationStatus: complete
 ---

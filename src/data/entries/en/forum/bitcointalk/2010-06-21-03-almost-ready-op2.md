@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto announces version 0.3 is almost ready and requests testing of the Mac version."
 isSatoshi: true
-threadId: "bt-1-3-almost-ready"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/"
-threadId: "bt-checkpointing-the-block-chain"
 ---
 
 [Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](#msg9839)

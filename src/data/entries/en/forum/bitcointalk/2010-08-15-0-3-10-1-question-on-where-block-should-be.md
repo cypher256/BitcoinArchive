@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Original thread starter post. The content was later deleted by the author."
 isSatoshi: false
-threadId: "bt-0-3-10-1-question-on-where-block-should-be"
 tags: []
 ---
 

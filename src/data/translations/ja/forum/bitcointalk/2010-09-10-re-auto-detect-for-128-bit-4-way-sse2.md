@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/448/"
-threadId: "bt-auto-detect-for-128-bit-4-way-sse2"
 translationStatus: complete
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック601におけるGavin Andresenの文脈投稿。msg6268の前。"
 isSatoshi: false
-threadId: "bt-having-problems-specifing-datadir"
 tags: []
 translationStatus: complete
 ---

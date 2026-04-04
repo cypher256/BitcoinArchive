@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/364/"
-threadId: "bt-potential-disaster-scenario"
 ---
 
 Some places where generation will gravitate to:

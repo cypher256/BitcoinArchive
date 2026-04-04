@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Jeff Garzik starts a discussion: Transaction / spam flood attack currently under way."
 isSatoshi: false
-threadId: "bt-transaction-spam-flood-attack"
 tags: []
 ---
 

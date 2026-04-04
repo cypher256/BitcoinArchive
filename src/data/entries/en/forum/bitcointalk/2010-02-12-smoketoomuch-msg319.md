@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 48. quoted by msg327."
 isSatoshi: false
-threadId: "bt-what-s-with-this-odd-generation"
 tags: []
 ---
 

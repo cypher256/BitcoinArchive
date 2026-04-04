@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック47におけるNewLibertyStandardのコンテキスト投稿。msg389の前。"
 isSatoshi: false
-threadId: "bt-bitcoin-client-and-website-translation"
 tags: []
 translationStatus: complete
 ---

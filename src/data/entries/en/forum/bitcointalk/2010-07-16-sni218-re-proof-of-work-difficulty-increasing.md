@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/218/"
-threadId: "bt-proof-of-work-difficulty-increasing"
 ---
 
 It adjusted to 181.54 a few minutes ago.  Typical time to get a block is about a week now.

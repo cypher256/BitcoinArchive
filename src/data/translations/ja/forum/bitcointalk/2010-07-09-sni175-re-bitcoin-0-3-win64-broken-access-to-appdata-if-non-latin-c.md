@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/175/"
-threadId: "bt-bitcoin-0-3-win64-broken-access-to-appdata-if-non-"
 translationStatus: complete
 ---
 

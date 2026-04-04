@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Sabunirがスレッドを開始: アドレスに関する質問"
 isSatoshi: false
-threadId: "bt-questions-about-addresses"
 tags: []
 translationStatus: complete
 ---

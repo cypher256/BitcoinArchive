@@ -10,7 +10,6 @@ participants:
     slug: "max-stirner"
 description: "Context post by Max Stirner in BitcoinTalk topic 202. before msg1838."
 isSatoshi: false
-threadId: "bt-major-meltdown"
 tags: []
 ---
 

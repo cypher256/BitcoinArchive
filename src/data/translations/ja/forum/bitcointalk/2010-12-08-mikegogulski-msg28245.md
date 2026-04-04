@@ -10,7 +10,6 @@ participants:
     slug: "mikegogulski"
 description: "BitcoinTalkトピック2151におけるmikegogulskiの文脈投稿。msg28292の前。"
 isSatoshi: false
-threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
 translationStatus: complete
 ---

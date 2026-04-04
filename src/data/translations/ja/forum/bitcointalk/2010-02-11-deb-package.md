@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "nphyxがスレッドを開始: DEBパッケージ？"
 isSatoshi: false
-threadId: "bt-deb-package"
 tags: []
 translationStatus: complete
 ---

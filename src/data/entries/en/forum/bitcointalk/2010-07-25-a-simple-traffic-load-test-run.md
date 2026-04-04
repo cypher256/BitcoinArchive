@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lfm starts a discussion: a simple traffic load test run."
 isSatoshi: false
-threadId: "bt-a-simple-traffic-load-test-run"
 tags: []
 ---
 

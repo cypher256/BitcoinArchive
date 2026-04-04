@@ -10,7 +10,6 @@ participants:
     slug: "galeru"
 description: "galeruがトランザクション手数料の決定方法について疑問を提起。BitDNSに関する議論がマイナーの細かな手数料判断を前提としているが、非プログラマー向けの実装がないことを指摘した。"
 isSatoshi: false
-threadId: "bt-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"
   - "bitdns"

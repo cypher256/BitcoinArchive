@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "llama starts a discussion: Major Meltdown."
 isSatoshi: false
-threadId: "bt-major-meltdown"
 tags: []
 ---
 

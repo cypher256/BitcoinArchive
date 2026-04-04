@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "Context post by The Madhatter in BitcoinTalk topic 548. before msg5339."
 isSatoshi: false
-threadId: "bt-bitcoind-not-responding-to-rpc"
 tags: []
 ---
 

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/115/"
-threadId: "bt-proof-of-work-difficulty-increasing"
 ---
 
 That's a good idea.  I'm not sure where exactly to fit that in, but it could certainly calculate the expected average time between blocks generated, and then people would know what to expect.

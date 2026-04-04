@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "スレッド「警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
-threadId: "bt-warning-dont-use-server-or-bitcoind"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/263/"

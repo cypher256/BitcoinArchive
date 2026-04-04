@@ -10,7 +10,6 @@ participants:
     slug: "quantumplation"
 description: "Context post by Quantumplation in BitcoinTalk topic 571. before msg5724."
 isSatoshi: false
-threadId: "bt-stealing-coins"
 tags: []
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "virtualcoin"
 description: "Context post by virtualcoin in BitcoinTalk topic 217. before msg1827."
 isSatoshi: false
-threadId: "bt-beta"
 tags: []
 ---
 

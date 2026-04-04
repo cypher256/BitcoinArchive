@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック648におけるNewLibertyStandardのコンテキスト投稿。msg9145の前。"
 isSatoshi: false
-threadId: "bt-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
 tags: []
 translationStatus: complete
 ---

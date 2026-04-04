@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Dhawがスレッドを開始: エラー - 助けてください！"
 isSatoshi: false
-threadId: "bt-error-please-help-me"
 tags: []
 translationStatus: complete
 ---

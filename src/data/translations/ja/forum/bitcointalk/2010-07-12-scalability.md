@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "jibがスレッドを開始: スケーラビリティ"
 isSatoshi: false
-threadId: "bt-scalability"
 tags: []
 translationStatus: complete
 ---

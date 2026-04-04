@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/380/"
-threadId: "bt-overflow-bug-serious"
 ---
 
 [Quote from: kosovito on August 16, 2010, 12:39:17 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-16-kosovito-msg9615/)

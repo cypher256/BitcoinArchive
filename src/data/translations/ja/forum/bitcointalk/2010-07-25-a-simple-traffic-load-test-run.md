@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lfmがスレッドを開始: シンプルなトラフィック負荷テストの実行"
 isSatoshi: false
-threadId: "bt-a-simple-traffic-load-test-run"
 tags: []
 translationStatus: complete
 ---

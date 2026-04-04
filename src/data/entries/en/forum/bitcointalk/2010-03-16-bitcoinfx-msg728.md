@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "Context post by BitcoinFX in BitcoinTalk topic 83. before msg731."
 isSatoshi: false
-threadId: "bt-idea-for-file-hosting-and-proxy-services"
 tags: []
 ---
 

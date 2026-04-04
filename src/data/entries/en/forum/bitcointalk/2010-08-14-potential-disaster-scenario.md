@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "gebler starts a discussion: Potential disaster scenario."
 isSatoshi: false
-threadId: "bt-potential-disaster-scenario"
 tags: []
 ---
 

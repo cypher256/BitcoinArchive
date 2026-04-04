@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/515/"
-threadId: "bt-new-getwork"
 ---
 
 That's what it does, it returns true/false.

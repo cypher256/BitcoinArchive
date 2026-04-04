@@ -17,7 +17,6 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/110/"
-threadId: "bt-transactions-and-scripts-dup-hash160-equalverify-c"
 translationStatus: complete
 ---
 

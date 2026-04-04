@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Satoshi Nakamoto starts a discussion: Bitcoin 0.3.1 released."
 isSatoshi: true
-threadId: "bt-0-3-1-release-candidate-please-test"
 tags: []
 ---
 

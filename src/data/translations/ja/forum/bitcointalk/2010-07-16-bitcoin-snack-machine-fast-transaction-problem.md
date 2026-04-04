@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Instiがスレッドを開始: Bitcoin自動販売機（高速トランザクション問題）"
 isSatoshi: false
-threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 tags: []
 translationStatus: complete
 ---

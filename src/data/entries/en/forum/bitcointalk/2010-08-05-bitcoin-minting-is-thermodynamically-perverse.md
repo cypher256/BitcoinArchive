@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "gridecon starts a discussion: Bitcoin minting is thermodynamically perverse."
 isSatoshi: false
-threadId: "bt-bitcoin-minting-is-thermodynamically-perverse"
 tags: []
 ---
 

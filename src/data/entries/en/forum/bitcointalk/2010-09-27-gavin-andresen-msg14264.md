@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "Context post by Gavin Andresen in BitcoinTalk topic 665. before msg18349."
 isSatoshi: false
-threadId: "bt-multiple-wallets-one-computer"
 tags: []
 ---
 

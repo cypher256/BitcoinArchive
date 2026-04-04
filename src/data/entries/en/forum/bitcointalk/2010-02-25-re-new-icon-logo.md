@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/79/"
-threadId: "bt-new-icon-logo"
 ---
 
 [Quote from: Sabunir on February 25, 2010, 01:47:56 AM](#msg519)

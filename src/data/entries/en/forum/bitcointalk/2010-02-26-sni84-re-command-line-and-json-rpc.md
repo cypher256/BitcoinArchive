@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/84/"
-threadId: "bt-command-line-and-json-rpc"
 ---
 
 Are you using wxWidgets 2.9.0?  I don't recommend using anything other than 2.9.0.

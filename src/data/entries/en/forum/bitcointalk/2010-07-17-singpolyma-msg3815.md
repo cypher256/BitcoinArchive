@@ -10,7 +10,6 @@ participants:
     slug: "singpolyma"
 description: "Context post by singpolyma in BitcoinTalk topic 400. quoted by msg3823."
 isSatoshi: false
-threadId: "bt-assertion-failure-ubuntu-lucid"
 tags: []
 ---
 

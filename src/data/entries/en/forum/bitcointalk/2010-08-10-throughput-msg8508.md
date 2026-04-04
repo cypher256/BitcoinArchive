@@ -10,7 +10,6 @@ participants:
     slug: "throughput"
 description: "Context post by throughput in BitcoinTalk topic 287. before msg8810."
 isSatoshi: false
-threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
 ---
 

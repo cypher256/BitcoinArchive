@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 423. before msg3819."
 isSatoshi: false
-threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 tags: []
 ---
 

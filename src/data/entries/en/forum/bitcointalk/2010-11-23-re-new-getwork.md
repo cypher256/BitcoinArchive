@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/508/"
-threadId: "bt-new-getwork"
 ---
 
 It's not an exact drop-in replacement.  I wanted to clean up the interface a little.  It only requires a few changes.

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/54/"
-threadId: "bt-request-make-this-anonymous"
 ---
 
 True, sending by IP through Tor trades one problem for another.  The Tor exit node can see the text of your message and potentially MITM you.

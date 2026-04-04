@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "lachesisがスレッドを開始: 機能リクエスト: 接続数の制限"
 isSatoshi: false
-threadId: "bt-feature-request-limiting-connections"
 tags: []
 translationStatus: complete
 ---

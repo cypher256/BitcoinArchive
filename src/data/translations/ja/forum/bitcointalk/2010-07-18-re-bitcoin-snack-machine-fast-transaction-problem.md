@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/238/"
-threadId: "bt-bitcoin-snack-machine-fast-transaction-problem"
 translationStatus: complete
 ---
 

@@ -10,7 +10,6 @@ participants:
     slug: "virtualcoin"
 description: "BitcoinTalkトピック199におけるvirtualcoinのコンテキスト投稿。msg1760の前。"
 isSatoshi: false
-threadId: "bt-1-3-almost-ready"
 tags: []
 translationStatus: complete
 ---

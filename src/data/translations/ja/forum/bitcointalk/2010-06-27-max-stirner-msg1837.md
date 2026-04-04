@@ -10,7 +10,6 @@ participants:
     slug: "max-stirner"
 description: "BitcoinTalkトピック202におけるMax Stirnerのコンテキスト投稿。msg1838の前。"
 isSatoshi: false
-threadId: "bt-major-meltdown"
 tags: []
 translationStatus: complete
 ---

@@ -10,7 +10,6 @@ participants:
     slug: "shadowofharbringer"
 description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの文脈投稿。msg15102で引用。"
 isSatoshi: false
-threadId: "bt-version-0-3-13-please-upgrade"
 tags: []
 translationStatus: complete
 ---

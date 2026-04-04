@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "singpolyma starts a discussion: Assertion Failure - Ubuntu Lucid."
 isSatoshi: false
-threadId: "bt-assertion-failure-ubuntu-lucid"
 tags: []
 ---
 

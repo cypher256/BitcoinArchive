@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 199. before msg1806."
 isSatoshi: false
-threadId: "bt-1-3-almost-ready"
 tags: []
 ---
 

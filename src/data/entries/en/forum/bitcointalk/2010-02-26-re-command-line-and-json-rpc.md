@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/82/"
-threadId: "bt-command-line-and-json-rpc"
 ---
 
 wx/clipbrd.h isn't used, move it inside the #if wxUSE_GUI.

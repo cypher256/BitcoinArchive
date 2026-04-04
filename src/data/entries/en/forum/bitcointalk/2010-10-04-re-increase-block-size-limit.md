@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/485/"
-threadId: "bt-patch-increase-block-size-limit"
 ---
 
 It can be phased in, like:

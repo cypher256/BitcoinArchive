@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/196/"
-threadId: "bt-website-and-software-translations"
 ---
 
 [Quote from: aidos on July 15, 2010, 12:49:11 AM](/BitcoinArchive/entries/forum/bitcointalk/2010-07-15-aidos-msg3017/)

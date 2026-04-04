@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック2151におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
-threadId: "bt-json-rpc-method-idea-list-transactions-newer-than-"
 tags: []
 translationStatus: complete
 ---

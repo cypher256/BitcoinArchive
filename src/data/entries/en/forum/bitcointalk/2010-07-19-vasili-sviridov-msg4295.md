@@ -10,7 +10,6 @@ participants:
     slug: "vasili-sviridov"
 description: "Context post by Vasili Sviridov in BitcoinTalk topic 461. before msg4646."
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 ---
 

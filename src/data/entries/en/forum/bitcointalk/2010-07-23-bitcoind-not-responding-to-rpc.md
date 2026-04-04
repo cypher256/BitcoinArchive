@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "mtgox starts a discussion: bitcoind not responding to RPC."
 isSatoshi: false
-threadId: "bt-bitcoind-not-responding-to-rpc"
 tags: []
 ---
 

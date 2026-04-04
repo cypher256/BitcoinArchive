@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/236/"
-threadId: "bt-source-code-documentation"
 ---
 
 I didn't realize you were going to document all the intentionally undocumented commands.  They're unsupported and not intended to be used by users.

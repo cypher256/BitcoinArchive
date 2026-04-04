@@ -10,7 +10,6 @@ participants:
     slug: "throughput"
 description: "BitcoinTalkトピック287におけるthroughputのコンテキスト投稿。msg8810の前。"
 isSatoshi: false
-threadId: "bt-flood-attack-0-00000001-bc"
 tags: []
 translationStatus: complete
 ---

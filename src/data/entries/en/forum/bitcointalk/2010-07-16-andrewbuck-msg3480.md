@@ -10,7 +10,6 @@ participants:
     slug: "andrewbuck"
 description: "Context post by AndrewBuck in BitcoinTalk topic 393. before msg3534."
 isSatoshi: false
-threadId: "bt-source-code-documentation"
 tags: []
 ---
 

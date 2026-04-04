@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "singpolymaがスレッドを開始: アサーション失敗 - Ubuntu Lucid"
 isSatoshi: false
-threadId: "bt-assertion-failure-ubuntu-lucid"
 tags: []
 translationStatus: complete
 ---

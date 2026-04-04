@@ -10,7 +10,6 @@ participants:
     slug: "bitcoinfx"
 description: "BitcoinTalkトピック22におけるBitcoinFXのコンテキスト投稿。msg223の前。"
 isSatoshi: false
-threadId: "bt-tor-and-i2p"
 tags: []
 translationStatus: complete
 ---

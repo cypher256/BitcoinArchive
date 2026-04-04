@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/53/"
-threadId: "bt-deb-package"
 ---
 
 [Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM

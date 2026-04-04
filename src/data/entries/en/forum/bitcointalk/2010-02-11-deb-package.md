@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "nphyx starts a discussion: DEB Package?."
 isSatoshi: false
-threadId: "bt-deb-package"
 tags: []
 ---
 

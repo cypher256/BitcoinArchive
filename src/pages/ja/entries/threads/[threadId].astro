@@ -2,17 +2,18 @@
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, absoluteUrl } from '../../../../i18n/utils';
-import { deriveThreadTitle } from '../../../../data/threads';
+import { deriveThreadTitle, resolveThreadId } from '../../../../data/threads';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries_ja');
   const threadMap = new Map<string, typeof entries>();
 
   for (const entry of entries) {
-    if (entry.data.threadId) {
-      const list = threadMap.get(entry.data.threadId) || [];
+    const tid = resolveThreadId(entry);
+    if (tid) {
+      const list = threadMap.get(tid) || [];
       list.push(entry);
-      threadMap.set(entry.data.threadId, list);
+      threadMap.set(tid, list);
     }
   }
 
@@ -20,8 +21,9 @@ export async function getStaticPaths() {
   const enEntries = await getCollection('entries');
   const enThreadCounts = new Map<string, number>();
   for (const entry of enEntries) {
-    if (entry.data.threadId) {
-      enThreadCounts.set(entry.data.threadId, (enThreadCounts.get(entry.data.threadId) || 0) + 1);
+    const tid = resolveThreadId(entry);
+    if (tid) {
+      enThreadCounts.set(tid, (enThreadCounts.get(tid) || 0) + 1);
     }
   }
 

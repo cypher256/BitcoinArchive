@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/513/"
-threadId: "bt-rfc-ship-block-chain-1-74000-with-release-tarballs"
 ---
 
 I tested it on a slow 7 year old drive, where bandwidth and CPU were clearly not the bottleneck.  Initial download took 1 hour 20 minutes.

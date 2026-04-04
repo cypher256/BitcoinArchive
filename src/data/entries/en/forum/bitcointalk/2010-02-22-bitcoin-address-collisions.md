@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "NewLibertyStandard starts a discussion: Bitcoin Address Collisions."
 isSatoshi: false
-threadId: "bt-bitcoin-address-collisions"
 tags: []
 ---
 

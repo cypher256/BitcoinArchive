@@ -10,7 +10,6 @@ participants:
     slug: "the-madhatter"
 description: "BitcoinTalkトピック461におけるThe Madhatterの文脈投稿。msg5767の前。"
 isSatoshi: false
-threadId: "bt-json-rpc-password"
 tags: []
 translationStatus: complete
 ---

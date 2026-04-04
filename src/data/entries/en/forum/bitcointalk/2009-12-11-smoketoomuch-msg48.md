@@ -10,7 +10,6 @@ participants:
     slug: "smoketoomuch"
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 13. before msg49."
 isSatoshi: false
-threadId: "bt-questions-about-bitcoin"
 tags: []
 ---
 

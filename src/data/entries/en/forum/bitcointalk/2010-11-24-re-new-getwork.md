@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/509/"
-threadId: "bt-new-getwork"
 ---
 
 [Quote from: jgarzik on November 24, 2010, 04:47:42 AM](#msg24008)

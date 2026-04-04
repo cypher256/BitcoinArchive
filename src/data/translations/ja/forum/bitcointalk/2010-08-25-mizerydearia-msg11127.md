@@ -10,7 +10,6 @@ participants:
     slug: "mizerydearia"
 description: "BitcoinTalkトピック898におけるmizerydearia の引用投稿。"
 isSatoshi: false
-threadId: "bt-development-of-alert-system"
 tags: []
 translationStatus: complete
 ---

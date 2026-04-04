@@ -10,7 +10,6 @@ participants:
     slug: "datawraith"
 description: "Context post by DataWraith in BitcoinTalk topic 151. before msg1269."
 isSatoshi: false
-threadId: "bt-website-translations"
 tags: []
 ---
 

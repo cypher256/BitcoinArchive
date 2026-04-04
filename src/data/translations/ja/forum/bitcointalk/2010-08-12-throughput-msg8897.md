@@ -10,7 +10,6 @@ participants:
     slug: "throughput"
 description: "BitcoinTalkトピック691におけるthroughputのコンテキスト投稿。msg8922の前。"
 isSatoshi: false
-threadId: "bt-bitcoin-watchdog-service"
 tags: []
 translationStatus: complete
 ---

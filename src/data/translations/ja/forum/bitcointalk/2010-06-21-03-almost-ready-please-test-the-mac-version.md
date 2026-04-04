@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "satoshiがスレッドを開始: 0.3ほぼ完成"
 isSatoshi: true
-threadId: "bt-0-3-almost-ready"
 tags: []
 translationStatus: complete
 ---

@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/411/"
-threadId: "bt-tcatm-s-4-way-sse2-for-linux-32-64-bit-is-in-0-3-1"
 ---
 
 [Quote from: ArtForz on August 21, 2010, 04:56:31 PM](/BitcoinArchive/entries/forum/bitcointalk/2010-08-21-artforz-msg10609/)

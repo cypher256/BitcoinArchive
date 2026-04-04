@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ギャビン・アンドレセンがCIAでのビットコインに関するプレゼンテーションに招待されたことを発表。これがサトシのその後のプロジェクトからの撤退の一因となった可能性がある。"
 isSatoshi: false
-threadId: "bitcointalk-6652-gavin-cia"
 tags:
   - "cia"
   - "gavin-andresen"

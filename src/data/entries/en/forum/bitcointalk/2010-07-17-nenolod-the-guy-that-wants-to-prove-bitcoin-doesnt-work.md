@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "wobber starts a discussion: Nenolod, the guy that wants to prove Bitcoin doesn't work.."
 isSatoshi: false
-threadId: "bt-nenolod-the-guy-that-wants-to-prove-bitcoin-doesn-"
 tags: []
 ---
 

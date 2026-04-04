@@ -10,7 +10,6 @@ participants:
     slug: "andrewbuck"
 description: "BitcoinTalkトピック437におけるAndrewBuckの投稿。"
 isSatoshi: false
-threadId: "bt-bitcoin-0-3-2-released"
 tags: []
 translationStatus: complete
 ---

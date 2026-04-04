@@ -10,7 +10,6 @@ participants:
     slug: "rhorning"
 description: "RHorning advocates for UI tools to adjust fee schedules and mining policies, noting that free transactions currently work but may not be sustainable long-term."
 isSatoshi: false
-threadId: "bt-fees-in-bitdns-confusion"
 inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"

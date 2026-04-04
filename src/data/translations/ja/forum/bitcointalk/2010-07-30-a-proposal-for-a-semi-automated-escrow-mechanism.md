@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Oliproがスレッドを開始: 半自動エスクローメカニズムの提案"
 isSatoshi: false
-threadId: "bt-a-proposal-for-a-semi-automated-escrow-mechanism"
 tags: []
 translationStatus: complete
 ---

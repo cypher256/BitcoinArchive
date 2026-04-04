@@ -12,7 +12,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Odin starts a discussion: Linux distribution download."
 isSatoshi: false
-threadId: "bt-linux-distribution-download"
 tags: []
 ---
 

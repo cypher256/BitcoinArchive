@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Original thread starter post. The content was later deleted by the author."
 isSatoshi: false
-threadId: "bt-won-t-let-me-send-coins-because-it-requires-a-tran"
 tags: []
 ---
 

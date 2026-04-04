@@ -10,7 +10,6 @@ participants:
     slug: "gavin-andresen"
 description: "BitcoinTalkトピック479におけるGavin Andresenの文脈投稿。msg5432の前。"
 isSatoshi: false
-threadId: "bt-warning-dont-use-server-or-bitcoind"
 tags: []
 translationStatus: complete
 ---

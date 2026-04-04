@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/434/"
-threadId: "bt-warning-check-your-system-help-me"
 translationStatus: complete
 ---
 

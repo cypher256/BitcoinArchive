@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/271/"
-threadId: "bt-stealing-coins"
 ---
 
 [Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)

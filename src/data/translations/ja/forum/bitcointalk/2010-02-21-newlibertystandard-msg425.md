@@ -10,7 +10,6 @@ participants:
     slug: "newlibertystandard"
 description: "BitcoinTalkトピック43におけるNewLibertyStandardのコンテキスト投稿。msg540の前。"
 isSatoshi: false
-threadId: "bt-proof-of-work-difficulty-increasing"
 tags: []
 translationStatus: complete
 ---

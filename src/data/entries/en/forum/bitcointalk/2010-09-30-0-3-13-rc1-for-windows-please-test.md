@@ -13,7 +13,6 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/466/"
-threadId: "bt-0-3-13-rc1-for-windows-please-test"
 ---
 
 0.3.13 release candidate, to be released soon so please test:
