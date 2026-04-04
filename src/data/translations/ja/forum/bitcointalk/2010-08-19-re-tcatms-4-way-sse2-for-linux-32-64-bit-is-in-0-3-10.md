@@ -18,7 +18,9 @@ translationStatus: complete
 ---
 
 [Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](#msg10167)
-> Mac以外のi5への愛は？
+> Mac以外のi5は対応してくれないのか？
+> Windows i5 64ビットではこちらだと遅くなった。
+> [訂正――正しくない。Windowsには-4wayがなく、Linuxマシンの方はXeonだった。]
 
 Windows i5 64ビットではここでは遅くなった。
 i5で遅くなったと言う人を聞いたのは初めてだ。他の全員がi5では4wayの方が速いと言っている。ハイパースレッディングを有効にするとさらにだ。

@@ -16,7 +16,7 @@ translationStatus: complete
 ---
 
 [Quote from: lachesis on July 23, 2010, 06:22:08 PM](#msg5348)
-> パスワードは絶対に必須にすべきではない。
+> パスワードは絶対に必須にすべきではない。また、新しいコードは"rpcpassword="で動作しなくなる。設定ファイルがない場合、設定ファイルにrpcpassword行がない場合、または"rpcpassword="が含まれている場合は、パスワードを無効にすべきだ。
 
 強く反対する。ソフトウェアはデフォルトで安全であるべきであり、パスワードなしでbitcoindを実行する（またはbitcoin -server）のは明らかに安全ではない。
 

@@ -19,12 +19,22 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: madhatter2 on December 14, 2009, 03:01:39 PM](#msg66)
-> 誰かここを解説してくれませんか？
+> 誰かここについて教えてくれないか？
 >
-> g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D**__WXMAC__** -DNOPCH -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8" -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4" -I"/usr/local/ssl/include" -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch headers.h
-> ……
-> ui.h:430: error: no matching function for call to 'wxTextCtrl::SetValue(const **std::basic_string**<char, std::char_traits<char>, std::allocator<char> >&)'
-> /usr/local/include/wx-2.8/wx/textctrl.h:303: note: candidates are: virtual void wxTextCtrlBase::SetValue(**const wxString&**)
+> g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D__WXMAC__ -DNOPCH -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8" -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4" -I"/usr/local/ssl/include" -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch headers.h
+> ui.h: In constructor 'CGetTextFromUserDialog::CGetTextFromUserDialog(wxWindow*, const std::string&, const std::string&, const std::string&, const std::string&, const std::string&)':
+> ui.h:421: error: no matching function for call to 'CGetTextFromUserDialogBase::CGetTextFromUserDialogBase(wxWindow*&, <anonymous enum>, const std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+> uibase.h:673: note: candidates are: CGetTextFromUserDialogBase::CGetTextFromUserDialogBase(wxWindow*, wxWindowID, const wxString&, const wxPoint&, const wxSize&, long int)
+> uibase.h:651: note:                 CGetTextFromUserDialogBase::CGetTextFromUserDialogBase(const CGetTextFromUserDialogBase&)
+> ui.h:423: error: no matching function for call to 'wxStaticText::SetLabel(const std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+> /usr/local/include/wx-2.8/wx/mac/carbon/stattext.h:38: note: candidates are: virtual void wxStaticText::SetLabel(const wxString&)
+> ui.h:424: error: no matching function for call to 'wxTextCtrl::SetValue(const std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+> /usr/local/include/wx-2.8/wx/textctrl.h:303: note: candidates are: virtual void wxTextCtrlBase::SetValue(const wxString&)
+> ui.h:428: error: no matching function for call to 'wxStaticText::SetLabel(const std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+> /usr/local/include/wx-2.8/wx/mac/carbon/stattext.h:38: note: candidates are: virtual void wxStaticText::SetLabel(const wxString&)
+> ui.h:430: error: no matching function for call to 'wxTextCtrl::SetValue(const std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+> /usr/local/include/wx-2.8/wx/textctrl.h:303: note: candidates are: virtual void wxTextCtrlBase::SetValue(const wxString&)
+> make: *** [headers.h.gch] Error 1
 <!-- /tone-skip -->
 
 std::stringからwxStringへの暗黙の変換が機能していないようだ。これはあらゆるところで使用されており、変換が動作する必要がある。

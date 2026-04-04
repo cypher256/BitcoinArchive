@@ -19,9 +19,8 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: BitLex on July 25, 2010, 08:45:38 PM](#msg5753)
-> 私もPHPで動作させようとしていくつか問題を抱えています。
->
-> 今のところうまくいきません。Wikiのサンプル（jsonRPCClientがfopen([http://username:password@localhost:8332/](http://username:password@localhost:8332/))を試みる）も、curlのサンプル（setopt CURLOPT_HTTPAUTH, CURLAUTH_BASICを使用）もどちらも動作しないようです。
+> こちらでもPHPで動かそうとして問題が出ている。
+> wikiのサンプル（jsonRPCClientでfopen(http://username:password@localhost:8332/)を試みる方法）もcurlのサンプル（setopt CURLOPT_HTTPAUTH, CURLAUTH_BASICを使用）もうまくいかない。
 <!-- /tone-skip -->
 おかしいな。誰かがそれでうまく動くと言っていなかったか？（彼はどのライブラリを使っていたのだろうか？）何が問題かわかったら投稿してくれ。
 

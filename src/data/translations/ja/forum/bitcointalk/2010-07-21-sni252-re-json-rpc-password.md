@@ -18,7 +18,21 @@ translationStatus: complete
 ---
 
 [Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](#msg4709)
-> Debianシステムの/etc内の20個の.confファイルを簡単に調査したところ:
+> Linuxには「典型的な」設定ファイルというものはないと思う！
+>
+> 自分のDebianシステムの/etcにある20個の.confファイルを手短に調べてみたところ：
+>  1ファイルは"key value"を使用
+>  5ファイルは"key=value"を使用（実際にはいくつかは"key = value"で、"="の前後にスペースを許容）
+>  14ファイルは独自の方式
+>
+> 独自の方式の14ファイルは実に様々で、1行1値から"key:value"、本格的なXMLまであった。#はLinux世界における共通のコメント文字だ。
+>
+> 私の推しは：
+>
+> ```
+> # comment
+> key1=value1
+> ```
 
  1ファイルが"key value"を使用
  5ファイルが"key=value"を使用

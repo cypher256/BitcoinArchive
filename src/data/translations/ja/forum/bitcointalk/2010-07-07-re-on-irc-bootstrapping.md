@@ -21,7 +21,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
-> Freenodeをフォールバックサーバーとして残しておいた方がいいかもしれません -- 彼のサーバーが動かない場合はFreenodeを使えるように。
+> Freenodeをフォールバックサーバーとして残しておいた方がいいかもしれない――彼のサーバーが動かない場合はFreenodeのを使うように。
 <!-- /tone-skip -->
 大量のユーザーが一度にFreenodeに殺到するのはよくないかもしれない。
 

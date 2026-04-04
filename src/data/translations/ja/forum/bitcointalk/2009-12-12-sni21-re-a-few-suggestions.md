@@ -19,7 +19,15 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: madhatter2 on December 12, 2009, 06:34:21 AM](#msg51)
-> SVN 0.2をMac OS X 10.4.11/Intelでほぼコンパイルできるようになりました（PPC970マシンもあるのでPPCビルドも可能です）。ウィンドウシステムはwxwidgets経由のネイティブCarbonです！高速です！新しいmakefile（makefile.osx、もちろんmakefile.unixベース... autoconfの使用を検討したことはありますか？）を作成し、header.hにいくつかのifdefを追加しなければなりませんでした。パッチがあります。引き続きいじってみます。次はFreeBSDで試すかもしれません。
+> Mac OS X 10.4.11/Intel上でsvn 0.2のコンパイルがほぼ完了した（PPC970マシンもあるのでPPCビルドも可能だ）。ウィンドウ表示はwxwidgets経由のネイティブCarbonだ！速い！ Wink 新しいmakefile（makefile.osx、もちろんmakefile.unixベース……autoconfの使用は検討した？）を作成し、header.hにいくつかifdefを入れた。パッチがある。引き続きいじってみる。次はFreeBSDで試すかもしれない。
+>
+> TORとI2Pのノードを大量に運用しているので、このアプリを同じサーバーに追加するのは簡単だ。Smiley
+>
+> Bitcoinを2つのアプリに分割するのが理想的だと思う。wxwidgetsフロントエンド（大部分はすでにある）と、制御用TCPソケットにバインドするバックエンドだ。ソースコードを読んで分割がどれだけ難しいか検討しているが、かなり簡単にできると思う。もちろんAPIの開発が必要になるが。
+>
+> ソースコードをいじり続けて、何ができるか見てみる。
+>
+> Smiley
 <!-- /tone-skip -->
 Macサポートは良いな。wxWidgetsはクロスプラットフォームで本当に効果を発揮している。
 

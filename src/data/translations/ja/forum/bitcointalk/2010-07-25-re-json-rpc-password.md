@@ -19,20 +19,22 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
-> バグと思われるものを見つけました: ユーザー名とパスワードの組み合わせが十分に長い場合、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成します:
->
-> Code:...
+> バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成する：
+> Code:POST / HTTP/1.1
+> User-Agent: json-rpc/1.0
+> Host: 127.0.0.1
+> Content-Type: application/json
+> Content-Length: 40
+> Accept: application/json
 > Authorization: Basic YWJiYWJiYWFiYmE6aGVsbG93b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxkaGVsbG93
 > b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk
-> 64文字ごとに改行が挿入され、明らかにAuthorizationヘッダーが壊れるため、「bitcoin getinfo」のようなコマンドが失敗します。サーバーは正しく動作するクライアントでは問題なく動作します。
+> 64文字ごとに改行が挿入され、Authorizationヘッダーが壊れるため、「bitcoin getinfo」のようなコマンドが失敗する。サーバー側は正しく動作するクライアントからは問題なく動く。
 >
-> これはBase64Encode関数の結果から改行（およびおそらく''）を削除することで解決できます:
->
-> ```cpp
-> result.erase(std::remove(result.begin(), result.end(), '
-> '), result.end());
-> result.erase(std::remove(result.begin(), result.end(), ''), result.end());
-> ```
+> Base64Encode関数の末尾でresultから改行（および'\r'）を除去すれば解決できる：
+> Code:result.erase(std::remove(result.begin(), result.end(), '\n'), result.end());
+> result.erase(std::remove(result.begin(), result.end(), '\r'), result.end());
+> もっとエレガントな解決策があるかもしれないが、これで動く。パッチはこちら：
+> http://www.alloscomp.com/bitcoin/patches/bitcoin-svn-109-rpcbug-2010-07-25.patch
 <!-- /tone-skip -->
 
 このバグを見つけるほど長いパスワードを使っていたことに+1だ。

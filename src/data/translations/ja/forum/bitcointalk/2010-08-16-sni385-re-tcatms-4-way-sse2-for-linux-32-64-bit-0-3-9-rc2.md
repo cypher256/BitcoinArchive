@@ -18,7 +18,14 @@ translationStatus: complete
 ---
 
 [Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](#msg9660)
-> -march=amdfam10を試してみてくれ
+> [Quote from: satoshi on August 16, 2010, 02:57:57 AM](#msg9655)
+> [Quote from: tcatm on August 16, 2010, 12:43:39 AM](#msg9617)
+> > > sha256.cppを-O3 -march=amdfamk10でコンパイルすることを提案する（32ビットと64ビットの両方で動作する）。この命令セットをサポートするCPU（AMD Phenom、Intel i5以降）のみが-4wayの恩恵を受け、パフォーマンスが約9%向上する。
+> >
+> > GCC 4.3.3は-march=amdfamk10をサポートしていない。以下のエラーが出る：
+> > sha256.cpp:1: error: bad value (amdfamk10) for -march= switch
+>
+> -march=amdfam10を試してみてくれ。
 
 動いた。
 

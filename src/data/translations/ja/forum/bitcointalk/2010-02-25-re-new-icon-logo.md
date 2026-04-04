@@ -19,7 +19,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: Sabunir on February 25, 2010, 01:47:56 AM](#msg519)
-> 気に入りました。もっと高解像度のものはありますか？
+> 気に入った。もっと高解像度のものはあるか？
 <!-- /tone-skip -->
 はい、オリジナルは546x531ピクセルだ。
 

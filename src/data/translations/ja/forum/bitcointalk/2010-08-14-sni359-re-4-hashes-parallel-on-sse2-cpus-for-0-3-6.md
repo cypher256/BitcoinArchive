@@ -20,7 +20,19 @@ translationStatus: complete
 まだであれば、thashのアラインを試してみてほしい。効果があるかもしれない。損にはならない。
 
 [Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
-> ツリーオプティマイザーのコンパイラバグを踏んでいるようだ。-O0でコンパイルしてみてくれないか？
+> [Quote from: satoshi on August 14, 2010, 12:49:18 AM](#msg9145)
+> > Windows上のMinGWでコンパイルに問題があります：
+> >
+> > g++ -c -mthreads -O2 -w -Wno-invalid-offsetof -Wformat -g -D__WXDEBUG__ -DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH -I"/boost" -I"/db/build_unix" -I"/openssl/include" -I"/wxwidgets/lib/gcc_lib/mswud" -I"/wxwidgets/include" -msse2 -O3 -o obj/sha256.o sha256.cpp
+> >
+> > sha256.cpp: In function `long long int __vector__ Ch(long long int __vector__, long long int __vector__, long long int __vector__)':
+> > sha256.cpp:31: internal compiler error: in perform_integral_promotions, at cp/typeck.c:1454
+> > Please submit a full bug report,
+> > with preprocessed source if appropriate.
+> > See <URL:http://www.mingw.org/bugs.shtml> for instructions.
+> > make: *** [obj/sha256.o] Error 1
+>
+> ツリーオプティマイザーでコンパイラのバグを引き起こしているようだ。-O0でコンパイルしてみてくれないか？
 
 -O0でも効果なし、同じエラーだ。
 

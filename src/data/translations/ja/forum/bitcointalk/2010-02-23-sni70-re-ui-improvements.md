@@ -19,7 +19,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: Xunie on February 23, 2010, 12:28:27 PM](#msg439)
-> */etc/init.d/gdm start* でgdmが起動します！
+> TTY1-8（sirius-mが言っていたもの）の一つにログインして、*/etc/init.d/gdm start*を実行すればgdmが起動する！
 <!-- /tone-skip -->
 ああ、そうだ、元に戻った。
 
