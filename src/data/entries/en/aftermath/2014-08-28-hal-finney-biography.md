@@ -60,4 +60,4 @@ On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/sou
 **ALS and Final Years:**
 In August 2009, Finney was diagnosed with amyotrophic lateral sclerosis (ALS). Despite progressive paralysis, he continued writing code for Bitcoin — eventually using eye-tracking software to communicate and program. He retired from PGP Corporation (Symantec) in early 2011. On March 19, 2013, he published ["Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) on BitcoinTalk, describing his experience as Bitcoin's first user.
 
-Hal Finney died on August 28, 2014, at 8:50 AM in Scottsdale, Arizona. He was cryopreserved by Alcor Life Extension Foundation as their 128th patient (member A-1436). He is survived by his wife Fran, son Jason, and daughter Erin.
+Hal Finney [died on August 28, 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), at 8:50 AM in Scottsdale, Arizona. He was cryopreserved by Alcor Life Extension Foundation as their 128th patient (member A-1436). He is survived by his wife Fran, son Jason, and daughter Erin.

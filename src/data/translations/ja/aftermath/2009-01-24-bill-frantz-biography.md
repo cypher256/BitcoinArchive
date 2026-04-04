@@ -27,7 +27,7 @@ translationStatus: complete
 ビル・フランツは、サンフランシスコ・ベイエリアを拠点とするセキュリティコンサルタントで、Periwinkle（pwpconsult.com）の名で活動している。2009年1月、暗号学メーリングリストのビットコイン議論に参加した。
 
 **メーリングリストでの貢献：**
-2009年1月24日、フランツはプルーフ・オブ・ワーク・トークンがセキュリティにインセンティブを生むという[ハル・フィニー](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-biography/)の議論に[応答した](/BitcoinArchive/ja/entries/emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-frantz/)。ボットネットとネットワークセキュリティの関係について、特徴的な皮肉を込めた観察を行った。
+2009年1月24日、フランツはプルーフ・オブ・ワーク・トークンがセキュリティにインセンティブを生むという[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の議論に[応答した](/BitcoinArchive/ja/entries/emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-frantz/)。ボットネットとネットワークセキュリティの関係について、特徴的な皮肉を込めた観察を行った。
 
 > 「乗っ取られたマシンはネットワーク上で最もセキュアな部類に入る。なぜなら、ボットネット運営者は他者が『自分の』マシンを侵害するのを防ぐために懸命に努力するからだ」
 
