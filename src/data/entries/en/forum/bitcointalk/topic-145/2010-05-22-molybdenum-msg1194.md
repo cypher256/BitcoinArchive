@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by molybdenum)"
+title: "CLI bitcoin generation"
 date: 2010-05-22T18:44:20.000Z
 type: "forum-post"
 source: "bitcointalk"

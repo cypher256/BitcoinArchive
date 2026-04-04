@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by RogerRabbit)"
+title: "Number of connections?"
 date: 2010-01-16T14:27:15.000Z
 type: "forum-post"
 source: "bitcointalk"

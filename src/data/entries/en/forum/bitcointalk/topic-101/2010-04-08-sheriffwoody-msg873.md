@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by SheriffWoody)"
+title: "removing bitcoin addresses"
 date: 2010-04-08T14:56:25.000Z
 type: "forum-post"
 source: "bitcointalk"

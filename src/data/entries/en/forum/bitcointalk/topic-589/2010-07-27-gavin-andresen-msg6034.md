@@ -1,5 +1,5 @@
 ---
-title: "Re: (quoted post by Gavin Andresen)"
+title: "Running on a port other than 8333"
 date: 2010-07-27T14:08:17.000Z
 type: "forum-post"
 source: "bitcointalk"

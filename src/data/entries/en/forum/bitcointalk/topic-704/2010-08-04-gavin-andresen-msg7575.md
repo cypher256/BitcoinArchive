@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Who's the Spanish jerk draining the Faucet?"
 date: 2010-08-04T20:40:55.000Z
 type: "forum-post"
 source: "bitcointalk"
