@@ -204,3 +204,21 @@ const breadcrumbs = [
     font-size: 0.9rem;
   }
 </style>
+
+<script is:inline>
+// Rewrite in-thread links to anchor links
+(function() {
+  var msgIds = new Set();
+  document.querySelectorAll('.message[id]').forEach(function(el) {
+    if (el.id) msgIds.add(el.id);
+  });
+  document.querySelectorAll('.conversation-thread a[href]').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (!href) return;
+    var m = href.match(/msg(\d+)\/?$/);
+    if (m && msgIds.has('msg' + m[1])) {
+      a.setAttribute('href', '#msg' + m[1]);
+    }
+  });
+})();
+</script>
