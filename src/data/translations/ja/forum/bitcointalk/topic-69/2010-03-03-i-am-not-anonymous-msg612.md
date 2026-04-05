@@ -16,11 +16,11 @@ translationStatus: complete
 
 [Quote from: ihrhase on March 03, 2010, 03:15:31 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-69/2010-03-03-ihrhase-msg611/)
 > NLSを忘れないでくれ
-> 
+>
 > 法律には2種類ある…
-> 
+>
 > 読める法律と、政府があなたに適用することを選ぶ法律だ…
-> 
+>
 > あなたの弁護士の友人は正しいかもしれないが、ジョー・スタックの弁護士もそうだった。それでも彼は起訴された…
 
 励みになるね…全て正しくやっても投獄される可能性があると言っているわけだ。少数民族のような気分にさせてくれる！

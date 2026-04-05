@@ -18,7 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: NewLibertyStandard on July 17, 2010, 10:22:09 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-419/2010-07-17-newlibertystandard-msg3817/)
-> バージョン0.3ではポートフォワーディングされていないクライアントの外向き接続数を15から8に減らす予定でしたが、実際には実現しなかったと思います。確信はありません。間違っていたら訂正してください。
+> バージョン0.3はポートフォワーディングしていないクライアントの発信接続を15から8に減らすはずだったが、実際には起きていないと思う。確信は持てない。間違っていたら訂正してほしい。
 <!-- /tone-skip -->
 
 0.3.0では、8への変更はWindows版にのみ反映され、他のバージョンはまだ15のままだった。

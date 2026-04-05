@@ -18,7 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: sirius-m on June 10, 2010, 01:51:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-177/2010-06-10-sirius-msg1452/)
-> もちろん、信頼する範囲でvekja.netやmybitcoin.comのようなサービスをモバイルブラウザで使い、そこにお金を預けることができます。
+> もちろん、vekja.netやmybitcoin.comのようなサービスをモバイルブラウザで使い、信頼できる範囲でそこにお金を預けることはできます。しかし、ある意味ではモバイルウォレットの方がいいかもしれません。
 <!-- /tone-skip -->
 今のところそれが最善の選択肢だと思う。現金と同じで、全財産をポケットに入れて歩き回るのではなく、日常の少額出費用のお小遣いだけだ。
 

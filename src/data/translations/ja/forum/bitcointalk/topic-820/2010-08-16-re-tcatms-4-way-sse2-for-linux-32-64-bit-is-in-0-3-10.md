@@ -17,7 +17,20 @@ translationStatus: complete
 ---
 
 [Quote from: jgarzik on August 16, 2010, 03:35:28 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-820/2010-08-16-jgarzik-msg9665/)
-> Code:cpu family : 6
+> 以下のアップデート：
+> Code:cpu family	: 6
+> model		: 26
+> model name	: Genuine Intel(R) CPU             000  @ 3.20GHz
+> stepping	: 4
+> マシンは4コアで、各コアに2つのハイパースレッドがある。/proc/cpuinfoは8つの仮想プロセッサを表示する。
+>
+> -4wayなし、setgen 4:    5.7 Mhash/秒
+> -4wayなし、setgen 8:    5.0 Mhash/秒
+>
+> -4way付き、setgen 4:   7.0 Mhash/秒
+> -4way付き、setgen 8:   9.3 Mhash/秒
+>
+> したがって、「ハイパースレッディングは速度を低下させる」という古い常識は、このマシンでは覆された。
 
 ```
 cpu family : 6

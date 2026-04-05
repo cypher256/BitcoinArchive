@@ -18,7 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: db on July 15, 2010, 08:39:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-383/2010-07-15-db-msg3278/)
-> listreceivedbyaddressとgetreceivedbyaddressコマンドがbitcoindのヘルプで重複しています。（0.3.0でも同様。）
+> ブロックチェーンをダウンロードするのに何時間もかかっているのは普通だろうか？ 15接続中だ。
 <!-- /tone-skip -->
 
 はい、バグだ。次のバージョンで修正する必要がある。

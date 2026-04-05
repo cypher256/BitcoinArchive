@@ -17,7 +17,9 @@ translationStatus: complete
 ---
 
 [Quote from: Joozero on August 15, 2010, 11:32:43 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-hostfat-msg9582/)
-> これについて何か追加すべきだと思います：[http://bitcointalk.org/index.php?topic=259.0](http://bitcointalk.org/index.php?topic=259.0)
+> これについて何か追加すべきだと思う：http://bitcointalk.org/index.php?topic=259.0
+> 必要な時にクライアントに警告メッセージを表示するラベルが必要だ Smiley
+> 今は常にウェブサイトを確認しなければならず、これは良くないと思う。
 
 必要な場合に警告メッセージを表示するラベルがクライアントにあるべきだ。
 今は常にウェブサイトを確認しなければならず、それは良くないと思う。

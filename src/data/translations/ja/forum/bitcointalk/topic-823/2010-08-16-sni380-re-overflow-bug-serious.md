@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: kosovito on August 16, 2010, 12:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-kosovito-msg9615/)
-> すべての手順を実行した。現在クライアントは0.3.10で、ブロック74638で止まっている。これで問題ないか？
+> すべての手順を実行した。今、クライアントは0.3.10でブロック74638で停止した。これで問題ないのか？
 
 まだ74638ブロックと表示されているなら、0.3.10のノードに接続されていない。
 

@@ -27,8 +27,11 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: kencausey on August 15, 2010, 11:45:26 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588/)
-> [Deleted] Quote from: davidonpda on August 15, 2010, 11:31:37 PM
-> > ... すでにブロック74638にいます。そのブロックは今は正しいものだということでしょうか？
+> > ... すでにブロック74638に達している。これはそのブロックが正常なものになったということか？
+>
+> 自分もこの点について混乱していたが、#bitcoin-devで確認を得た。
+>
+> 不正なブロックは74638番で、最後の正常なブロックは74637番だった。番号は0から始まるため、クライアントが74638ブロックと表示している場合、ブロック74637番まで、つまり最後の正常なブロックまで取得済みということになる。
 <!-- /tone-skip -->
 
 私自身もこの件で混乱があり、#bitcoin-devで明確化してもらった：

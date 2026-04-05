@@ -50,7 +50,7 @@ function walkAndCheck(dir) {
 
       let i = 0;
       while (i < lines.length) {
-        const m = lines[i].match(/\[Quote from:.*#msg(\d+)\)/);
+        const m = lines[i].match(/\[Quote from:.*msg(\d+)/);
         if (!m) { i++; continue; }
 
         const msgId = m[1];

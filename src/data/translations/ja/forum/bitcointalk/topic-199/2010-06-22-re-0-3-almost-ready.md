@@ -17,7 +17,9 @@ translationStatus: complete
 ---
 
 [Quote from: lachesis on June 22, 2010, 06:20:02 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-199/2010-06-22-lachesis-msg1658/)
-> 次のリリースまでにlisttransactionsのRPCメソッドが完成するといいのですが。
+> 素晴らしい！ ハッシュメーター、RPCサポート、コマンドラインデーモンなど、明らかに大きな改善がある。ただ、次のリリースまでにlisttransactions RPCメソッドが完成していると良いのだが。また、JSON-RPCメソッドにdHashesPerSecを表示するコードも追加すべきだ。
+>
+> 素晴らしい仕事だサトシ！
 心配しているのは、多くのプログラマーが受取支払いの確認にそれを使おうとすることだ。その方法では決して信頼性がない。list/getreceivedbyaddress/label関数が信頼性のある唯一の方法だ。
 
 あらゆる可能な機能が完成するまで永遠にリリースを遅らせるべきではない。常にもう1つやるべきことがあるものだ。
