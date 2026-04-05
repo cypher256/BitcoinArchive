@@ -14,7 +14,9 @@ tags: []
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 [Quote from: satoshi on July 23, 2010, 05:07:40 PM](#msg5337)
-> <!-- tone-skip -->
+> ええ、それは本当にいいと思う。各開発者が自分で調べなくて済むように。Python、PHP、Javaそれぞれについて、json-rpcライブラリをインポートしてgetinfoなどを実行する簡単な例が必要だ。http認証の部分も含めて。
+<!-- /tone-skip -->
 
 分かった。PythonとPHPは書いた。Javaについては知っている限りのことを追加した。Java JSON-RPCを使ったことのある人、動く例でwikiページを更新してもらえないか？
