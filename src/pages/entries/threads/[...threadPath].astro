@@ -214,7 +214,7 @@ const breadcrumbs = [
   });
   document.querySelectorAll('.conversation-thread a[href]').forEach(function(a) {
     var href = a.getAttribute('href');
-    if (!href) return;
+    if (!href || href.startsWith('http')) return;
     var m = href.match(/msg(\d+)\/?$/);
     if (m && msgIds.has('msg' + m[1])) {
       a.setAttribute('href', '#msg' + m[1]);
