@@ -28,6 +28,10 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'Tax implications of Bitcoin',
     ja: 'ビットコインの税務上の影響',
   },
+  'forum/bitcointalk/topic-2216': {
+    en: 'PC World Article on Bitcoin',
+    ja: 'PC WorldのBitcoin記事',
+  },
   'forum/p2pfoundation/bitcoin-open-source': {
     en: 'Bitcoin open source implementation of P2P currency',
     ja: 'ビットコイン：P2P通貨のオープンソース実装',
