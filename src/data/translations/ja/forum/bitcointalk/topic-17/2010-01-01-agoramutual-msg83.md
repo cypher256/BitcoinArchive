@@ -1,5 +1,5 @@
 ---
-title: "Is my second Transaction working correctly? +Transfer Question"
+title: "2回目のトランザクションは正しく動作している？ ＋送金の質問"
 date: 2010-01-01T18:09:58.000Z
 type: "forum-post"
 source: "bitcointalk"

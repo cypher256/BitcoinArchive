@@ -1,5 +1,5 @@
 ---
-title: "Bug?  /usr/bin/bitcoind &quot;&quot;"
+title: "バグ？ /usr/bin/bitcoind &quot;&quot;"
 date: 2010-09-18T22:19:22.000Z
 type: "forum-post"
 source: "bitcointalk"

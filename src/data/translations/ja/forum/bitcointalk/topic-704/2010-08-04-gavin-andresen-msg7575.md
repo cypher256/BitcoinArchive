@@ -1,5 +1,5 @@
 ---
-title: "Who's the Spanish jerk draining the Faucet?"
+title: "Faucetを使い果たしているスペイン人は誰だ？"
 date: 2010-08-04T20:40:55.000Z
 type: "forum-post"
 source: "bitcointalk"

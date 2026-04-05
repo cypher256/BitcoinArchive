@@ -1,5 +1,5 @@
 ---
-title: "Error on Ubuntu 10.04"
+title: "Ubuntu 10.04でのエラー"
 date: 2010-07-13T11:56:45.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Running bitcoin"
+title: "Bitcoinの実行"
 date: 2009-01-11T22:33:00Z
 type: "correspondence"
 source: "x"

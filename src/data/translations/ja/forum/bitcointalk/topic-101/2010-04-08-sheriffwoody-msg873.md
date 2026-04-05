@@ -1,5 +1,5 @@
 ---
-title: "removing bitcoin addresses"
+title: "Bitcoinアドレスの削除"
 date: 2010-04-08T14:56:25.000Z
 type: "forum-post"
 source: "bitcointalk"

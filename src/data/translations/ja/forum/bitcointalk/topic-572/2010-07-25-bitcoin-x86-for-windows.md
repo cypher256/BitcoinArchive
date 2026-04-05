@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin x86 for Windows"
+title: "Windows用Bitcoin x86"
 date: 2010-07-25T23:17:20.000Z
 type: "forum-post"
 source: "bitcointalk"

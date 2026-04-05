@@ -1,5 +1,5 @@
 ---
-title: "Transaction Overload Solution"
+title: "トランザクション過負荷の解決策"
 date: 2010-08-05T16:05:07.000Z
 type: "forum-post"
 source: "bitcointalk"

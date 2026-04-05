@@ -1,5 +1,5 @@
 ---
-title: "CLI bitcoin generation"
+title: "CLIでのBitcoin生成"
 date: 2010-05-22T18:44:20.000Z
 type: "forum-post"
 source: "bitcointalk"

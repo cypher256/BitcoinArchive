@@ -1,5 +1,5 @@
 ---
-title: "The dollar cost of bitmining energy"
+title: "ビットマイニングのエネルギーコスト（ドル換算）"
 date: 2010-07-16T05:42:14.000Z
 type: "forum-post"
 source: "bitcointalk"
