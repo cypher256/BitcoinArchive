@@ -29,8 +29,8 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     ja: 'ビットコインの税務上の影響',
   },
   'forum/bitcointalk/topic-2216': {
-    en: 'PC World Article on Bitcoin',
-    ja: 'PC WorldのBitcoin記事',
+    en: 'WikiLeaks has kicked the hornet\'s nest',
+    ja: 'WikiLeaksは蜂の巣をつついた',
   },
   'forum/p2pfoundation/bitcoin-open-source': {
     en: 'Bitcoin open source implementation of P2P currency',
