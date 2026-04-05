@@ -19,10 +19,6 @@ translationStatus: complete
 <!-- tone-skip -->
 [Quote from: BlackEye on July 25, 2010, 10:12:23 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/)
 > Crypto++ 5.6.0のSHA256機能をBitcoinに統合することができた。SSE2アセンブリコードを使った最速のSHA256だ。Bitcoinがブロックハッシュ関数にアライメントされていないデータを送っていたため、MOVDQA命令をMOVDQUに変更する必要があった。
->
-> 現時点では、Crypto++ 5.6.0のSHA256機能を使うのが正しい方向だと思う。
->
-> http://www.filedropper.com/bitcoin-033
 <!-- /tone-skip -->
 
 Crypto++ 5.6.0のSHA256機能を使うのが今のところ最善の方向だと思う。

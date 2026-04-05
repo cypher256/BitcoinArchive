@@ -19,13 +19,5 @@ translationStatus: complete
 <!-- tone-skip -->
 [Quote from: Olipro on July 26, 2010, 06:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-501/2010-07-26-olipro-msg5815/)
 > さて、ここで絶対に驚異的なパフォーマンスを紹介する。
->
-> SHAコンテキストのキャッシュ部分はtcatmの功績だ——これは素晴らしいパフォーマンスを提供する。さらに、Intelコンパイラは並列化能力でVisual Studioに対して大幅なパフォーマンス向上を実現し、真価を発揮している。
->
-> パフォーマンス：4コアで4700khash/s、それ自体が物語っていると思う。
->
-> VSとIntelの両方のビルドを含めたが、比較にならない。IntelビルドはVSを完全に凌駕している。
->
-> SHA状態キャッシュ付きBitcoinはここから取得
 <!-- /tone-skip -->
 まだCrypto++をベースにしているか？これをメインのソースコードに取り込もう。
