@@ -115,6 +115,20 @@ The default rule is:
 - humans approve and review content changes
 - bulk prose rewrites require especially strong justification
 
+## Review Rule: Duplicate ID Warnings
+
+Do not treat Astro `glob-loader Duplicate id` warnings as findings by default.
+
+These warnings are non-issues when they are caused by:
+
+- matching EN/JA relative ids across separate collections
+- repeated loading of the same file without evidence of divergent content
+
+Only raise a finding if:
+
+- two different files in the same collection resolve to the same id
+- content is actually overwritten, missing, or routed incorrectly
+
 ## Language-Specific Guides
 
 - Japanese-specific rules: `STYLE_GUIDE_JA.md`

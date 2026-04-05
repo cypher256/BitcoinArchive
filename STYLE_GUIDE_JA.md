@@ -93,6 +93,20 @@ If a script flags a Japanese content issue, use the script to identify the
 target files, then review and edit the content itself deliberately. Treat the
 script as a detector, not as an auto-author of prose.
 
+## Duplicate ID Warnings
+
+Astro の `glob-loader Duplicate id` 警告は、デフォルトでは問題扱いしない。
+
+次の場合は non-issue とみなす:
+
+- `entries` と `entries_ja` の別 collection 間で相対 id が同じだけ
+- 同一ファイルが重複読込されているように見えるだけで、内容差や実害の証拠がない
+
+次の場合だけ review finding にする:
+
+- 同じ collection 内の別ファイルどうしが同じ id に解決される
+- 実際に上書き、欠落、誤ルーティングが確認できる
+
 ## Quotes And Blockquotes
 
 - Follow the shared quote/block formatting rules in `STYLE_GUIDE.md`.
