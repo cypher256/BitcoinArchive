@@ -19,16 +19,16 @@ translationStatus: complete
 無言で失敗するのは見栄えが悪いだろう。
 
 [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575/)
-> freebitcoins.appspot.comをシャットダウンした。スペインの誰かが、新しいIPアドレスとビットコインアドレスを取得し、CAPTCHAを解いて、それを何度も繰り返しているようだ：
+> 1. IPアドレスの最初のバイトに基づくレート制限（この場合は79.または81.）。
 
 間違いなく必要だ。どのくらいのレートを考えているか？ 最終的には、すべて流出させるよりもレート制限する方が良い。
 
 [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575/)
-> freebitcoins.appspot.comをシャットダウンした。スペインの誰かが、新しいIPアドレスとビットコインアドレスを取得し、CAPTCHAを解いて、それを何度も繰り返しているようだ：
+> 3. IPアドレスの逆引きDNSの最後の2つのドメインに基づくレート制限（この場合はrima-tde.net）。
 
 それは驚くほどうまく機能するかもしれない。うまくいけば、レート制限に引っかかるのを防ぐが、最終防衛線としてレート制限がある。
 
 [Quote from: gavinandresen on August 04, 2010, 08:40:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575/)
-> freebitcoins.appspot.comをシャットダウンした。スペインの誰かが、新しいIPアドレスとビットコインアドレスを取得し、CAPTCHAを解いて、それを何度も繰り返しているようだ：
+> 4. 標準配布量を0.5 Bitcoinにする（Faucetを始めてからBitcoinの価値は10倍に上がった）。
 
 間違いなく下げる時期だ。
