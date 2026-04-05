@@ -60,6 +60,39 @@ in Japanese entries.
   and similar technical strings where the original form is functionally
   necessary
 
+## Scripted Edits (Japanese Content)
+
+Japanese Markdown body text should not be bulk-rewritten by scripts as a
+normal workflow.
+
+In particular, do not use scripts to:
+
+- restore Japanese body text from older commits
+- combine current frontmatter with body text copied from another revision
+- rewrite quote blocks across many files at once
+- mass-replace translated prose based only on filename matching
+- repair tone or quote structure by blind global replacement
+
+This is especially dangerous for Japanese entries because one bulk edit can
+silently damage:
+
+- translated quote structure
+- tone-skip boundaries
+- speaker annotations
+- line breaks and paragraph rhythm
+- internal links added after the older revision
+
+Safe script usage for Japanese content is limited to:
+
+- validation and mismatch detection
+- read-only analysis
+- narrowly-scoped metadata updates
+- deterministic path and frontmatter changes
+
+If a script flags a Japanese content issue, use the script to identify the
+target files, then review and edit the content itself deliberately. Treat the
+script as a detector, not as an auto-author of prose.
+
 ## Quotes And Blockquotes
 
 - Follow the shared quote/block formatting rules in `STYLE_GUIDE.md`.

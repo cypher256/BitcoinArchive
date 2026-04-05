@@ -18,7 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
-> [Quote from: satoshi on July 30, 2010, 07:53:06 PM](#msg6711)
+> So that last command should simply be
 <!-- /tone-skip -->
 
 **sudo apt-get install libboost1.37-dev**

@@ -19,7 +19,7 @@ translationStatus: complete
 AMDでは2倍速で、Intelでは半分の速度ということか？
 
 [Quote from: tcatm on July 31, 2010, 10:12:38 AM](#msg6797)
-> [Quote from: satoshi on July 31, 2010, 12:29:20 AM](#msg6751)
+> ところで、\_\_attribute\_\_ ((aligned (16))) でコンパイル時にアラインを指定できるのに、なぜこのalignup\<16\>関数を使っているのか？
 
 試したが、スタック上のものには機能しない。いくつかテストを行った。
 

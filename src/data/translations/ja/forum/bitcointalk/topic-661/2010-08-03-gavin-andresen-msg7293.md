@@ -15,7 +15,7 @@ translationStatus: complete
 ---
 
 [Quote from: BeeCee1 on August 03, 2010, 03:12:42 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-beecee1-msg7249/)
-> [Quote from: throughput on August 03, 2010, 01:33:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-throughput-msg7230/)
+> それが良いことだとも言っていない。かなり長期間にわたる単一の分裂は人々に解決策を考え出す時間を与えるが、数時間ごとに起きる多くの分裂はトランザクションがランダムに消失し、システムへの信頼を損なうことを意味する。
 
 トランザクションが有効であれば消えることはない。より長いブロックチェーンに移動するだけだ。
 

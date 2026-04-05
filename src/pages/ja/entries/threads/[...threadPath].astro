@@ -208,16 +208,32 @@ const breadcrumbs = [
 <script is:inline>
 // Rewrite in-thread links to anchor links
 (function() {
+  // Build msgId set and path-to-anchor mapping
   var msgIds = new Set();
+  var pathToAnchor = {};
   document.querySelectorAll('.message[id]').forEach(function(el) {
-    if (el.id) msgIds.add(el.id);
+    if (!el.id) return;
+    msgIds.add(el.id);
+    // Find the permalink (個別ページ) link inside this message to map path -> anchor
+    var permalink = el.querySelector('.message-source a:last-child');
+    if (permalink) {
+      var path = permalink.getAttribute('href');
+      if (path) pathToAnchor[path.replace(/\/$/, '')] = '#' + el.id;
+    }
   });
   document.querySelectorAll('.conversation-thread a[href]').forEach(function(a) {
     var href = a.getAttribute('href');
     if (!href || href.startsWith('http')) return;
+    // Match by msgID in URL
     var m = href.match(/msg(\d+)\/?$/);
     if (m && msgIds.has('msg' + m[1])) {
       a.setAttribute('href', '#msg' + m[1]);
+      return;
+    }
+    // Match by entry path (for links without msgID)
+    var normalized = href.replace(/\/$/, '');
+    if (pathToAnchor[normalized]) {
+      a.setAttribute('href', pathToAnchor[normalized]);
     }
   });
 })();

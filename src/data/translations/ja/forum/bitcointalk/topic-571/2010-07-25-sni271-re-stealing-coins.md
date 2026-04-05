@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
-> [Quote from: Red on July 25, 2010, 07:22:14 PM](#msg5728)
+> 公開鍵123456がハッシュABCDを生成することを突き止めたとして
 
 かつ
 公開鍵654321もハッシュABCDを生成するとわかったとしても、

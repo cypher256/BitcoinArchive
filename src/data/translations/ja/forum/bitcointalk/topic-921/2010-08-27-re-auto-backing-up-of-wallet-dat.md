@@ -21,6 +21,6 @@ translationStatus: complete
 copyfile(const char* from, const char* to)やcopyfile(path from, path to)のような、できればBoostにあるものを探している。見つけてくれれば、実装にかかる可能性が高くなる。
 
 [Quote from: nelisky on August 26, 2010, 01:21:57 AM](#msg11232)
-> [Quote from: satoshi on August 26, 2010, 12:57:40 AM](#msg11228)
+> ファイルコピーについて、なぜBoostへの依存を増やすのか？コアライブラリは依存関係が少ない方がいい。
 
 JSONやwxWidgetsの依存関係を置き換える多数のものにBoostが必要だ。Boostは良い、ポータブルなもので、避けるべきではない。

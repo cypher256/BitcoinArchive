@@ -15,8 +15,8 @@ translationStatus: complete
 ---
 
 [Quote from: Insti on July 13, 2010, 11:34:03 PM](#msg2678)
-> [Quote from: knightmb on July 13, 2010, 10:08:58 PM](#msg2663)
-> > [Quote from: TopSoil on July 13, 2010, 09:37:33 PM](#msg2656)
+> 66663ブロック中の77428トランザクションは約46,752,464バイト。
+> これは1トランザクションあたり約600バイトになる（ブロックヘッダとデータベースのオーバーヘッドを含む）
 
 それくらいだろう。
 

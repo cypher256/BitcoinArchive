@@ -18,9 +18,6 @@ translationStatus: complete
 
 [Quote from: lachesis on July 29, 2010, 10:14:36 PM](#msg6515)
 > Debianテスティング32ビットで、いくつかのビルドエラーが出る。すべて以下に類似している：
-> Code:script.cpp:114: error: ʻOP_NOP1ʼ was not declared in this scope"make clean"または"make"を先にせずに"make bitcoind"しようとした時にこのエラーが出た。bitcoindのビルド手順はヘッダーを先にコンパイルしないが、headers.h.gchも削除しないので、存在する場合は古いヘッダーが使われるようだ。
->
-> このエラーが出た人は、"make clean"してからビルドを再試行するのが最も簡単な解決策だ。
 
 Code:script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出た。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようだが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用される。
 

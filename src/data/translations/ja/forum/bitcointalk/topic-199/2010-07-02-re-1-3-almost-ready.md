@@ -18,6 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: dkaparis on June 27, 2010, 10:02:25 PM](#msg1842)
-> [Quote from: satoshi on June 27, 2010, 03:30:13 PM](#msg1834)
+> 関連して、Visual C++でコンパイル可能なのか？ 時間ができたら試してみたいと思っている。
 <!-- /tone-skip -->
+
 可能だが、生成速度は2倍以上遅くなる。

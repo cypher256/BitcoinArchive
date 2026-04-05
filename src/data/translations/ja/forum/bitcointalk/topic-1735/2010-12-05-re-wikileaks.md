@@ -21,7 +21,7 @@ translationStatus: complete
 ---
 
 [Quote from: RHorning on December 04, 2010, 10:17:44 PM](#msg26876)
-> [Quote from: Hal on December 04, 2010, 08:43:07 PM](#msg26860)
+> 基本的に、どんとこい。WikiLeaksにビットコインを使うよう促そう。私はその行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。
 
 違う、挑発するな。
 

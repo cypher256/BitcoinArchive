@@ -18,16 +18,11 @@ translationStatus: complete
 
 [Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](#msg10167)
 > Mac以外のi5は対応してくれないのか？
-> Windows i5 64ビットではこちらだと遅くなった。
-> [訂正――正しくない。Windowsには-4wayがなく、Linuxマシンの方はXeonだった。]
 
 Windows i5 64ビットではここでは遅くなった。
 i5で遅くなったと言う人を聞いたのは初めてだ。他の全員がi5では4wayの方が速いと言っている。ハイパースレッディングを有効にするとさらにだ。
 
 [Quote from: nelisky on August 18, 2010, 11:02:25 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-820/2010-08-18-nelisky-msg10164/)
-> [Quote from: Ground Loop on August 18, 2010, 11:00:08 PM](#msg10163)
-> > つまり、今のところ-4wayで速度向上の恩恵を受けるのはIntel Core i7プロセッサと一部の（Phenom？）AMDプロセッサだけということで正しいか？
->
 > i5もだ。少なくとも私のMacBookProでは。
 
 良いな、ということはMacでも動作しているという確認だな？

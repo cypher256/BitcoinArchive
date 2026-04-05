@@ -77,6 +77,44 @@ just the original glyphs.
 - If a category develops a strong established pattern, follow that pattern
   unless there is a clear reason to improve it.
 
+## Scripted Edits Policy
+
+Scripts are allowed for inspection, reporting, and tightly-scoped metadata
+updates. Scripts are **not** the default tool for rewriting Markdown prose.
+
+Allowed without special justification:
+
+- validation and reporting scripts
+- read-only inventory scripts
+- path renames and directory moves
+- narrowly-scoped frontmatter updates
+- deterministic updates to clearly structured metadata fields
+
+Do not use scripts for:
+
+- replacing or restoring Markdown bodies in bulk
+- copying old body text from earlier commits into current files
+- bulk rewriting translated prose
+- mechanically rebuilding quote blocks, tone annotations, or paragraph layout
+- any change that mixes current frontmatter with old body content
+
+If a task affects quoted text, translation wording, blockquote structure,
+paragraph breaks, or tone, treat it as content editing work, not as a bulk
+script migration.
+
+When a script-assisted content change is unavoidable:
+
+- keep the write scope minimal and structurally precise
+- verify on a representative sample before applying broadly
+- review the resulting diff file by file
+- run the relevant checks after the change
+
+The default rule is:
+
+- scripts may propose changes
+- humans approve and review content changes
+- bulk prose rewrites require especially strong justification
+
 ## Language-Specific Guides
 
 - Japanese-specific rules: `STYLE_GUIDE_JA.md`

@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](#msg9660)
-> [Quote from: satoshi on August 16, 2010, 02:57:57 AM](#msg9655)
+> -march=amdfam10を試してみてくれ
 
 動いた。
 

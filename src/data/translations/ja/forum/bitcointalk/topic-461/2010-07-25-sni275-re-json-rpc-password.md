@@ -18,7 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: gavinandresen on July 25, 2010, 09:38:19 PM](#msg5768)
-> [Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
+> Great catch!  Simpler fix is to specify the BIO_FLAGS_BASE64_NO_NL in the rpc.cpp/EncodeBase64 function
 <!-- /tone-skip -->
 
 SVN リビジョン 111

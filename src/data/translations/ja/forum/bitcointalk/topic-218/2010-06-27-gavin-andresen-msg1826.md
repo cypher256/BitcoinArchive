@@ -15,12 +15,11 @@ translationStatus: complete
 ---
 
 [Quote from: HarryS on June 27, 2010, 01:43:37 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-218/2010-06-27-harrys-msg1825/)
-> ああ、いいね、ありがとう。
->
 > 実行すると、
+> Quote./bitcoind getaddressesbylabel ""
+> [
+> ]
 > 何も返ってこないのは正常だろうか？
->
-> getinfoだとこうなる
 
 うーん、おそらく正常だ。デフォルトのアドレスには空のラベルが付いていると思っていたが、間違いだった。"Your Address"というラベルが付けられている。
 なので：Code:./bitcoind getaddressesbylabel "Your Address" でうまくいくはずだ。

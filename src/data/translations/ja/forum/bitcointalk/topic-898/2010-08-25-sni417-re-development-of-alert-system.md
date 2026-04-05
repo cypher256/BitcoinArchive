@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: nelisky on August 25, 2010, 01:28:32 AM](#msg11092)
-> [Quote from: satoshi on August 24, 2010, 11:51:12 PM](#msg11074)
+> それで、管理者はbitcoindからどんな警告を受けるのか？debug.logからgrepできるものはあるか？あるいはrpc呼び出しが特定のエラーを発生させるのか？ユニットテストサービスのためにローカルでこれを強制的に発生させる方法はあるか？
 
 getinfoには、ステータスバーに表示されるアラートメッセージやその他のエラーを表示する新しいフィールドがある。
 
@@ -28,7 +28,7 @@ RPCメソッドは、エラー説明「Safe mode: 」に続いてアラートで
 これらは非常に新しいもので、まだ変更される可能性がある。
 
 [Quote from: mizerydearia on August 25, 2010, 12:11:50 AM](#msg11079)
-> [Quote from: satoshi on August 24, 2010, 11:51:12 PM](#msg11074)
+> [http://www.bitcoin.org/wiki/doku.php?id=man_page](http://www.bitcoin.org/wiki/doku.php?id=man_page) を発見したが、-disablesafemodeへの言及がない。追加すべきではないか！また-4wayなどの他のものも追加すべきだ。
 
 多くのスイッチは意図的にドキュメント化されていない。機能がまだ開発中だったり、名前がまだ確定していなかったり、リリース向けでないテストコードだったりする場合だ。
 

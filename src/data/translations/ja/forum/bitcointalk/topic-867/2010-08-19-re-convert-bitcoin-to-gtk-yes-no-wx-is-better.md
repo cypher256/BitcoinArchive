@@ -18,8 +18,6 @@ translationStatus: complete
 
 [Quote from: BioMike on August 19, 2010, 08:05:18 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-867/2010-08-19-biomike-msg10226/)
 > WxWidgetsは実際には問題ではない。問題は使用されているバージョン（2.9）で、多くのディストリビューションパッケージャーは不安定だと見なしている（WxWidgetsの開発者はそうではないと言っているが）。一方で、私の知る限りWxWidgetsはLinuxではgtkを使って描画しており、Bitcoin開発者にとってクロスプラットフォーム対応を容易にしている。
->
-> theymosと同じく、GUIとデーモンは分離すべきだと思う（あるいはプロトコルなどをさまざまな言語のバインディング付きのライブラリにするとか）。自分の「クライアント」はすでに動いている（http://bitcointalk.org/index.php?topic=851.0を参照）。デーモン（WxWidgetsは不要）と一緒に非常にうまく動作する。だから、私の場合はもうWxWidgetsへの依存はない。
 
 wxWidgets 2.9は彼らの最初のUTF-8バージョンだ。我々はWindows含むすべてのプラットフォームでUTF-8を使用している。
 

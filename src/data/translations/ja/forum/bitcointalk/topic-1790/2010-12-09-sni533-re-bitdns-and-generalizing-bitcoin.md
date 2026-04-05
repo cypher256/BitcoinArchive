@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: nanotube on December 09, 2010, 09:20:40 PM](#msg28700)
-> [Quote from: satoshi on December 09, 2010, 09:02:42 PM](#msg28696)
+> マイナーは基本的に「余分な作業」をしなければならないようだ。そしてその余分な作業（もちろんメインのBitcoin作業を遅くする）からbitdnsマイニングの報酬がないなら、マイナーがbitdns（やその他のサイドチェーン）を含めるインセンティブは何か？
 
 インセンティブは、同じ作業で追加のサイドチェーンからも報酬を得ることだ。
 

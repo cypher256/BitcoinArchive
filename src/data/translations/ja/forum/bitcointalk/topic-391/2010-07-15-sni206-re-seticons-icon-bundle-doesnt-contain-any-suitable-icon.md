@@ -17,6 +17,6 @@ translationStatus: complete
 ---
 
 [Quote from: bdonlan on July 15, 2010, 11:27:14 PM](#msg3320)
-> [Quote from: satoshi on July 15, 2010, 11:41:23 PM](#msg3323)
+> 120DPIモードで。
 
 「120DPIモード」とは何か？実際にどこかにある設定か？十分にマイナーな原因候補のようだな。左上隅のアイコンのサイズを埋めるために2倍の解像度のアイコンが必要なのだろう。提供されているのは1つのサイズだけだ。

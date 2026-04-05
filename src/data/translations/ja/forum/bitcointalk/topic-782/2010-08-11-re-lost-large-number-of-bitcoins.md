@@ -22,6 +22,6 @@ translationStatus: complete
 バックアップの数秒前（5秒程度）以内に何もしなかったり、支払いを受けたりしなければ、クライアントを停止せずにバックアップを取ることができる。
 
 [Quote from: gridecon on August 11, 2010, 08:46:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-782/2010-08-11-gridecon-msg8795/)
-> [Quote from: lachesis on August 11, 2010, 05:57:20 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-782/2010-08-11-lachesis-msg8772/)
+> 待ってくれ、また混乱した。驚きの本質は、Bitcoinが各トランザクションで「ウォレットを空にする」ようプログラムされていることだと思っていた。
 
 いいえ、通常は各トランザクションでウォレットを空にするわけではない。金額に近くなるように合計できる最小のコインセットを使う。この場合、残念ながら彼のウォレットには9000 BTCの単一の「紙幣」が入っており、1 BTCと8999 BTCのお釣りを得るために崩す必要があった。

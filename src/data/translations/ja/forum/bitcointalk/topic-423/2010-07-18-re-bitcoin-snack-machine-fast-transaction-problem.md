@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: llama on July 18, 2010, 12:03:29 AM](#msg3836)
-> [Quote from: satoshi on July 17, 2010, 10:29:13 PM](#msg3819)
+> これは良い出発点だが、まだ完全ではない。
 
 完全とは言っていない。十分に実用的だと言ったのだ。実際の損失はクレジットカードよりもはるかに少ないだろう。
 

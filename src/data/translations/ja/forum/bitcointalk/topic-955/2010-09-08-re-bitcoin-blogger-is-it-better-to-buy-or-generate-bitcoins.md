@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: BitLex on September 07, 2010, 08:10:54 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-955/2010-09-07-bitlex-msg12189/)
-> [Quote from: TTBit on September 07, 2010, 07:12:53 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-955/2010-09-07-ttbit-msg12180/)
+> AMD X3 @2.8ghz
 
 ->標準クライアント
 ~3800khs ~150ワット

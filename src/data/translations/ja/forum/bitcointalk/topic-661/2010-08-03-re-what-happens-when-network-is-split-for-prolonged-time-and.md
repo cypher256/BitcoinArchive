@@ -20,15 +20,13 @@ creighto：そのアイデアに同意する。数時間後には、ブロック
 
 <!-- tone-skip -->
 [Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-knightmb-msg7303/)
-> [Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-gavin-andresen-msg7293/)
 [Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-gavin-andresen-msg7293/)
-> [Quote from: BeeCee1 on August 03, 2010, 03:12:42 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-beecee1-msg7249/)
+> あるいは分断が十分長く続いた場合（100ブロック以上）、短い方のチェーンで生成されたコインを含むトランザクションはマージ時に無効になる。
 <!-- /tone-skip -->
 実際には、分断は非常に非対称になりやすい。世界を真っ二つに分けるのは難しいだろう。むしろ一国対それ以外の世界という形になりやすく、例えば1:10の分割とする。その場合、少数派フォークが100ブロック生成するのに10倍の時間がかかり、約7日になる。また、クライアントにとってブロック数が少なすぎて何かがおかしいと気づくのは非常に簡単だろう。
 
 <!-- tone-skip -->
 [Quote from: knightmb on August 03, 2010, 07:02:13 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-knightmb-msg7303/)
-> [Quote from: gavinandresen on August 03, 2010, 06:38:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-661/2010-08-03-gavin-andresen-msg7293/)
-
+> 分断の遅延にハードコードされた制限はあるのか？ つまり、パブリックネットワークから分離された小規模ネットワークがあり、コインを使い回してから数日後にパブリックネットワークと同期させた場合（コイン生成が起きた場合を除いて）、トランザクションは問題ないのか？
 <!-- /tone-skip -->
 時間制限はない。少数派フォークで生成されたコインを使ったり、受け取った誰かの二重支払いを使ったりしていない限り、あなたのトランザクションはいつでも後からもう一方のチェーンに取り込むことができる。

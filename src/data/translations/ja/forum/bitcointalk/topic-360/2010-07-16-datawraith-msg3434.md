@@ -15,7 +15,7 @@ translationStatus: complete
 ---
 
 [Quote from: Some Mouse on July 16, 2010, 12:13:52 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-360/2010-07-16-some-mouse-msg3334/)
-> [Quote from: knightmb on July 15, 2010, 11:42:49 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-360/2010-07-15-knightmb-msg3324/)
+> 可逆計算技術はエントロピーの限界を「回避」する。これにより、現在のコンピュータで可能なものをはるかに超える実効速度に到達でき、実質的に非決定的操作を実行できる。
 
 ちょっと待って？ 可逆計算は消費エネルギーが少ないだけだと思っていた。非決定性はどこから来るんだ？
 

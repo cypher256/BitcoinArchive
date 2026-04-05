@@ -17,6 +17,6 @@ translationStatus: complete
 ---
 
 [Quote from: knightmb on July 23, 2010, 07:32:58 PM](#msg5369)
-> [Quote from: satoshi on July 23, 2010, 06:24:56 PM](#msg5349)
+> 最後の2000ブロック以内で停止する安全上の理由はあるのか、それとも残り500ブロックに調整できるのか？
 
 特にない。次回は1000に変更する。

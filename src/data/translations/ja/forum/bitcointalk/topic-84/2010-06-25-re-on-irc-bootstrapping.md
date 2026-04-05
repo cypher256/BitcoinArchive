@@ -19,8 +19,6 @@ translationStatus: complete
 <!-- tone-skip -->
 [Quote from: laszlo on June 14, 2010, 06:30:58 PM](#msg1580)
 > 使えるIRCサーバーを運用している。かなり安定しているが、冗長な接続ではない。今のところ2つのサーバーだけだが、いじったりはしない。ただ動いている。
->
-> 俺のマシンは専用のIRCサーバーだ。
 <!-- /tone-skip -->
 これは良いアイデアだと思う。
 

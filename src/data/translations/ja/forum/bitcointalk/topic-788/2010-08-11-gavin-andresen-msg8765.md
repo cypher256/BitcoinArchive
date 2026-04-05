@@ -14,12 +14,12 @@ tags: []
 translationStatus: complete
 ---
 [Deleted] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
-[Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761/)
-> BitcoinのP2Pネットワークはさまざまなサービス拒否攻撃を受ける可能性がある。
->
-> はい、言った。
->
-> 修正方法について建設的な提案があるのか、それともできるからという理由で壊すのを楽しむタイプの人間なのか？
->
+> [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761/)
+> > + クライアント間の接続プロセスの一部として何らかのプルーフ・オブ・ワークを要求する（「シビル」攻撃の防止に役立つ）。
+> 
+> 
+> それは素晴らしいアイデアではないか？hashcashのような？
+> 
+> トランザクションの文字列をハッシュすることが要求される。プルーフ・オブ・ワーク付きで、例えば現代のPCで計算に5秒かかるような。bitcoinと同様にPOWのチェックは受信側マシンにとって簡単で非常に高速だが、攻撃者が無限のCPUパワーを持たない限りランダムデータによるフラッド攻撃を阻止できる。
 
 実は初回接続時に1分から3分のプルーフ・オブ・ワークを考えていたのであって、トランザクション送信時ではないが、ネットワークに送信されるすべてのトランザクションに何らかのプルーフ・オブ・ワークを要求するのは非常に興味深いアイデアだ！実装も簡単なはずだ（トランザクションにnonceと完全または部分的なハッシュを追加する）...

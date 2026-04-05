@@ -15,7 +15,7 @@ translationStatus: complete
 ---
 
 [Quote from: Macho on August 25, 2010, 03:03:03 AM](#msg11101)
-> [Quote from: satoshi on August 24, 2010, 11:51:12 PM](#msg11074)
+> 
 
 同意するが、ソースからコンパイルする場合、
 

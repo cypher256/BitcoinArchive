@@ -17,7 +17,7 @@ translationStatus: complete
 ---
 
 [Quote from: theymos on February 12, 2010, 08:31:52 AM](#msg318)
-> [Quote from: satoshi on February 12, 2010, 03:08:08 AM](#msg316)
+> 送信側クライアントは手数料を考慮して余分にBitCoinを送信するのか（受取人が期待通りの額を受け取れるように）？
 はい。
 
 [Quote from: SmokeTooMuch on February 12, 2010, 01:11:09 PM](#msg319)

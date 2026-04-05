@@ -16,15 +16,10 @@ translationStatus: complete
 
 [Quote from: spaceshaker on July 14, 2010, 01:52:00 AM](#msg2714)
 > [Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
-> > [Quote from: Insti on July 13, 2010, 11:34:03 PM](#msg2678)
-> > > [Quote from: knightmb on July 13, 2010, 10:08:58 PM](#msg2663)
-> > > > [Quote from: TopSoil on July 13, 2010, 09:37:33 PM](#msg2656)
-> > > > > 経済の議論はたぶん別スレッドでやるべきだから、これくらいにしておく。新しいスレッドを立てようとしたら、この人が自分の言いたいことをもっとうまく言ってくれていた：[topic 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/)
-[Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
-> [Quote from: Insti on July 13, 2010, 11:34:03 PM](#msg2678)
-> > [Quote from: knightmb on July 13, 2010, 10:08:58 PM](#msg2663)
-> > > [Quote from: TopSoil on July 13, 2010, 09:37:33 PM](#msg2656)
-> > > > 経済の議論はたぶん別スレッドでやるべきだから、これくらいにしておく。新しいスレッドを立てようとしたら、この人が自分の言いたいことをもっとうまく言ってくれていた：[topic 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/)
+> > そしてほとんどの人は、ウォレットの保持、トランザクションの署名、そしてすべてのトランザクションを監視している超高速ノードへのトランザクションの送受信だけを行う軽量クライアントを使うことになるだろう。
+> 
+> 
+> これは可能なのか？ どんな感じになる？ 技術的な観点から「軽量クライアント」はどのようなものか？ 私の理解では、Bitcoinクライアントは信頼を確立するためにブロックチェーン全体が必要だ。
 
 私のイメージはこうだ：
 
