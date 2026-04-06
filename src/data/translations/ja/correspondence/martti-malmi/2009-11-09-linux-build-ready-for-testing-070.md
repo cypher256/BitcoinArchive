@@ -22,20 +22,27 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > Martti、あなたが実行した時、ブロックのダウンロードが始まるまでどのくらい
 > かかったか、そしてどのくらいの速度でダウンロードしたか？
+
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 接続後すぐに開始し、CPUが遅いWindows PCよりも速くダウンロードしました。
 
 学校のプロジェクト（偶然にもC++のコーディング）に約1ヶ月集中しなければならないので、12月までは積極的な開発に使える時間があまりありません。とにかく連絡は取り合いましょう。
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> Liberty Standardの書き込み：
+> <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 >> ブロックが増え始めました。Windows版よりも増え始めるまでに確実に時間が
 >> かかります。また、Windows版よりも遅い速度で増えているかもしれません。
@@ -81,6 +88,8 @@ translationStatus: complete
 > 複数のプロセッサを使用する。
 >
 > これらのlibエラーが何なのかよく分からない。調べてみる。
+
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

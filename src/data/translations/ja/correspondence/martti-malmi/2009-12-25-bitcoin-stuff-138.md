@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
@@ -28,8 +31,8 @@ translationStatus: complete
 
 通常の実行ではメモリ使用量17MB、VMサイズ10MBと表示される。
 
-<!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >> 使えるメモリはどのくらいか？
 <!-- speaker: Martti Malmi -->
@@ -43,5 +46,7 @@ mmalmi@cc.hut.fi の書き込み:
 <!-- speaker: Martti Malmi -->
 > 本当ですか？こちらのWindowsタスクマネージャーではメモリ使用量は約13MBと表示されていますが。
 >
+
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

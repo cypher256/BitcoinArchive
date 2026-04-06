@@ -21,6 +21,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+  - id: "q2"
+    person: "Dec 20, 2010 at 10:55 AM,"
+    parent: "q1"
 translationStatus: complete
 ---
 
@@ -29,10 +35,10 @@ translationStatus: complete
 
 ちなみに、僕のPGP鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> Gavin Andresen wrote:
-<!-- speaker: Martti Malmi -->
->> Mon, Dec 20, 2010 at 10:55 AM に <mmalmi@cc.hut.fi> が書きました：
+> <!-- quote: q1 -->
+>> <!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 >>> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明している：
 >>> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
@@ -61,6 +67,8 @@ translationStatus: complete
 > +1
 >
 > 暗号化していたとしても、信頼できる保管場所の方が良い。
+
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

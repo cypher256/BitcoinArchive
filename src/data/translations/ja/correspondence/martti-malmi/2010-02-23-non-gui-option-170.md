@@ -20,11 +20,15 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 >> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >>
@@ -42,6 +46,8 @@ translationStatus: complete
 > 標準はあるか？今は以下を使っている：
 > -daemon（または-d）（RPCを有効にしてバックグラウンドで実行）
 > -server（RPCを有効にする）
+
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 良さそうですね。それに関する標準は知らないです。

@@ -20,12 +20,16 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
 了解です、切り替えはしません。Bitcoinでの寄付は助かりますので、14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U に送ってください。
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > 今は切り替えをしないと約束してほしい。今抱えているSlashdotからの殺到する作業に加えて、切り替えの手間まで増えるのは最も避けたいことだ。やるべきことが多すぎて頭がおかしくなりそうだ。
 >
@@ -35,7 +39,7 @@ translationStatus: complete
 >
 > 短期的にはBitcoinでの寄付が役に立つだろうか？
 >
-> mmalmi@cc.hut.fi の書き込み:
+> <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 >> Rackspaceは非常に良いサポート、良いバックエンド、良い接続性、そして
 >> うまくスケールするクラウドベースの仮想サーバーを持っています。Thufirからこんなオファーをもらいました：
@@ -69,5 +73,7 @@ translationStatus: complete
 >> 良いデータセンターと接続があるなら、検討の価値があります。$10/月はRackspaceより
 >> 約$20安いです。一方で、寄付が届くならRackspaceの料金は問題ありません。
 >>
+
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

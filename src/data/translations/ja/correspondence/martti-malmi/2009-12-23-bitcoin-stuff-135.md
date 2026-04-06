@@ -20,29 +20,39 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > プログラムから新しいBitcoinアドレスを生成できる方法を
 > 作る必要がある。あるいは、あなたのIPアドレスに送金
 > させることもできるが、その場合は相手がコメントに注文
 > 番号を入れてくれることに頼らなければならない。
 
+<!-- /tone-skip -->
+
 <!-- speaker: Martti Malmi -->
 コインが受信されたかどうかを確認したり、コインを送金したりするためのコマンドラインツールも少なくとも必要です。バックグラウンドで動作しているBitcoinプロセスと何らかの方法で通信する必要がありますね。どうすべきかは分かりませんが、RPCに関連する何かでしょうか。
 
 バックグラウンドプロセスが非グラフィカルであればとても助かります。現在のサービスレベルのVPSでは、X Window環境を動かすのに十分なメモリがないです。メモリを解放する方法を見つけない限りは。
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > 注文の確認と入力は、少なくとも最初は手動で行うつもりか？
 > 私ならそうする。
 
+<!-- /tone-skip -->
+
 <!-- speaker: Martti Malmi -->
 はい、少なくとも最初は、顧客がBitcoinを売ってドルを受け取る場合には手動で行います。スクリプトにドルの準備金へのアクセス権を軽々しく与えたくはないです。逆方向（顧客のドル→Bitcoin）はそれほど不安を感じないですし、顧客がすぐにBitcoinを受け取れる方が確実に良いですね。
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> mmalmi@cc.hut.fi の書き込み:
+> <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 >> ドメイン名bitcoinexchange.comを登録しました。余暇の活動として
 >> 近いうちにサービスのコーディングを始めるつもりです。登録不要で
@@ -59,5 +69,7 @@ translationStatus: complete
 >> メンテナンス用アカウントはまだ必要ですか？必要なら問題ありませんが、
 >> パスワードを別のものに変更してください。
 >>
+
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

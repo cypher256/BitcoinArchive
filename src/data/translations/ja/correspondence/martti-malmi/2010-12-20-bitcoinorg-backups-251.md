@@ -21,12 +21,19 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+  - id: "q2"
+    person: "Dec 20, 2010 at 10:55 AM,"
+    parent: "q1"
 translationStatus: complete
 ---
 
+<!-- quote: q1 -->
+<!-- tone-skip -->
 <!-- speaker: Gavin Andresen -->
-Gavin Andresen wrote:
-> Mon, Dec 20, 2010 at 10:55 AM に <mmalmi@cc.hut.fi> が書きました：
+> <!-- quote: q2 -->
 <!-- speaker: Martti Malmi -->
 >> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：
 >> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
@@ -35,6 +42,8 @@ Gavin Andresen wrote:
 >
 <!-- speaker: Gavin Andresen -->
 > それは問題を招くことになりそうだし、フォーラムに登録した全員の暗黙の信頼を裏切ることになると思う。
+
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 同意だ。データベースは手元から出さないでほしい。プライベートメッセージ、メールアドレス、パスワードが入っている。
@@ -45,12 +54,15 @@ Gavin Andresen wrote:
 8文字 = 25418の難易度
 
 
+<!-- tone-skip -->
 <!-- speaker: Martti Malmi -->
 >> もう一つの選択肢は
 >> > バックアップをPGPで暗号化して複数の場所に保管することです。
 >
 <!-- speaker: Gavin Andresen -->
 > その方が賢明だと思う。毎日のバックアップをどこかにコピーするのが正しいやり方だろう。合理的なサイズ（1ギガバイト未満）であれば、Amazon S3のストレージと帯域幅の費用を喜んで負担する。
+
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 +1

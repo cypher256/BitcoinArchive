@@ -111,6 +111,22 @@ function isHtmlMatch(node, re) {
   return node?.type === 'html' && re.test(node.value.trim());
 }
 
+const SPEAKER_RE = /^<!--\s*speaker:/;
+
+/**
+ * Find the next sibling that is not a speaker comment.
+ * Speaker comments (<!-- speaker: NAME -->) can appear between
+ * tone-skip and blockquote, so we skip them during validation.
+ */
+function getNextNonSpeaker(parent, startIndex) {
+  for (let i = startIndex; i < parent.children.length; i++) {
+    const child = parent.children[i];
+    if (child.type === 'html' && SPEAKER_RE.test(child.value.trim())) continue;
+    return child;
+  }
+  return null;
+}
+
 export function remarkQuoteBlocks() {
   const base = process.env.CF_PAGES ? '/' : '/BitcoinArchive/';
 
@@ -139,25 +155,27 @@ export function remarkQuoteBlocks() {
         );
       }
 
-      // Validate sibling ordering
+      // Validate sibling ordering (skip speaker comments)
       if (locale === 'ja') {
         const next1 = getSibling(parent, index, 1);
-        const next2 = getSibling(parent, index, 2);
         if (!isHtmlMatch(next1, TONE_SKIP_RE)) {
           throw new Error(
             `JA quote marker "${quoteId}" must be followed by <!-- tone-skip -->. File: ${vfile.path}`
           );
         }
-        if (next2?.type !== 'blockquote') {
+        // After tone-skip, find next non-speaker node (should be blockquote)
+        const nextAfterToneSkip = getNextNonSpeaker(parent, index + 2);
+        if (nextAfterToneSkip?.type !== 'blockquote') {
           throw new Error(
-            `JA quote marker "${quoteId}": <!-- tone-skip --> must be followed by blockquote. File: ${vfile.path}`
+            `JA quote marker "${quoteId}": <!-- tone-skip --> must be followed by blockquote (speaker comments are skipped). File: ${vfile.path}`
           );
         }
       } else {
-        const next1 = getSibling(parent, index, 1);
-        if (next1?.type !== 'blockquote') {
+        // After quote marker, find next non-speaker node (should be blockquote)
+        const nextNode = getNextNonSpeaker(parent, index + 1);
+        if (nextNode?.type !== 'blockquote') {
           throw new Error(
-            `EN quote marker "${quoteId}" must be followed by blockquote. File: ${vfile.path}`
+            `EN quote marker "${quoteId}" must be followed by blockquote (speaker comments are skipped). File: ${vfile.path}`
           );
         }
       }

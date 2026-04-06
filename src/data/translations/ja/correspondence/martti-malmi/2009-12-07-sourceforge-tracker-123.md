@@ -20,12 +20,16 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
 ロゴをローカルサーバーにコピーしましたので、グラフィックとして引き続き使えます。SFの商標ポリシーで禁止されていません。
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。
 > 別のものが欲しければ、以下に全リンクの一覧がある。
@@ -35,7 +39,7 @@ translationStatus: complete
 > 混合コンテンツ警告が出る。そもそも、Sourceforgeに全員を
 > トラッキングさせたいか？ない方がプライバシーに優しい。
 >
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 >> SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 >> フッターに追加できると良いですね。
@@ -51,5 +55,7 @@ translationStatus: complete
 >>
 >>
 >>
+
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -21,12 +21,14 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
-<!-- speaker: Martti Malmi -->
-
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 >> ノートパソコンを持っていないか？
@@ -34,6 +36,8 @@ mmalmi@cc.hut.fi wrote:
 <!-- speaker: Martti Malmi -->
 > はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！
 > 本当に使いやすいです。
+
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 

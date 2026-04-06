@@ -20,18 +20,22 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
 テストバージョン5だったと思いますが、完全には確かではありません。Linux版をノートパソコンで実行していて、異なる場所間で持ち運び、電源を切る代わりにハイバネート機能を使用しています。
 
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > ありがとう。db::open/closeのエラーはパターンを裏付けている。
 >
 > より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたか？test5のMSG_DONTWAITがLibertyのゾンビ問題を解決した。どのテストバージョンを実行していたか？（ログにテストバージョンを出力するようにすべきだな）
 >
-> mmalmi@cc.hut.fi の書き込み：
+> <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 >> まだ役に立つかもしれないので、ログをお送りします。
 >>
@@ -39,5 +43,7 @@ translationStatus: complete
 >>> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.logにエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datか、それともaddr.datやwallet.datも含まれるか？
 <!-- speaker: Martti Malmi -->
 >>
+
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

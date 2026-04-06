@@ -20,6 +20,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "--- On Mon, 1/24/11, mmalmi@cc.hut.fi"
+    parent: "q1"
 translationStatus: complete
 ---
 
@@ -29,8 +35,9 @@ translationStatus: complete
 誰かWikipediaを修正する必要がある。論文が2009年に公開されたと誤って記載されている。論文はソフトウェアよりも先にリリースされた。
 
 
-<!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
+
 > これについてコメントいただけますか？
 >
 <!-- speaker: Constance J. Wells -->
@@ -54,7 +61,7 @@ mmalmi@cc.hut.fi の書き込み：
 > Denver, CO   U.S.A.
 > 303-730-6609
 >
-> --- Mon, 1/24/11 に mmalmi@cc.hut.fi <mmalmi@cc.hut.fi> が書きました：
+> <!-- quote: q2 -->
 >
 <!-- speaker: Martti Malmi -->
 > From: mmalmi@cc.hut.fi <mmalmi@cc.hut.fi>
@@ -91,5 +98,7 @@ mmalmi@cc.hut.fi の書き込み：
 >
 >
 >
+
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
