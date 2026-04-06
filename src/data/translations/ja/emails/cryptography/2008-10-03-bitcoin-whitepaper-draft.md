@@ -3,7 +3,7 @@ title: "ビットコインホワイトペーパー初期草稿"
 date: 2008-10-03T00:00:00Z
 type: "whitepaper"
 source: "bitcoin-org"
-sourceUrl: "https://www.gwern.net/docs/bitcoin/2008-nakamoto"
+sourceUrl: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -25,7 +25,7 @@ pdfMetadata:
   checksum: "94B5A950BE82F71A76361664D9DA141F"
 secondarySources:
   - name: "Gwern's Bitcoin Archive"
-    url: "https://www.gwern.net/docs/bitcoin/2008-nakamoto"
+    url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 translationStatus: complete
 ---
 

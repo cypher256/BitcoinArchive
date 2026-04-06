@@ -3,7 +3,7 @@ title: "Re: （Ground Loopの文脈投稿）"
 date: 2010-07-15T01:05:01.000Z
 type: "forum-post"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=296.msg3025#msg3025"
+sourceUrl: "https://bitcointalk.org/index.php?topic=326.msg3025#msg3025"
 author: "Ground Loop"
 participants:
   - name: "Ground Loop"
