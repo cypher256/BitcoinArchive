@@ -27,8 +27,6 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-<!-- /tone-skip -->
-<!-- tone-skip -->
 > <!-- quote: q2 -->
 > > これについてもっと教えてくれないか：
 <!-- /tone-skip -->

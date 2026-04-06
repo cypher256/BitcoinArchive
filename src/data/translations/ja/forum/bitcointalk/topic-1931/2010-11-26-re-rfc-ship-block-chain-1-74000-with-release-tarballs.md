@@ -31,8 +31,6 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-<!-- /tone-skip -->
-<!-- tone-skip -->
 > <!-- quote: q2 -->
 > > 時間がかかるのはダウンロードではなく、検証とインデックス作成だ。
 <!-- /tone-skip -->
