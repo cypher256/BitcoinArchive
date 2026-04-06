@@ -30,7 +30,7 @@ check-markdown-image-alt → check-participants → check-ja-tone → check-ja-n
 ```
 
 - **check-markdown-image-alt** — Validates all Markdown images have alt text
-- **check-participants** — Validates participant slug consistency across entries
+- **check-participants** — Warns when EN entries have an author but no participants listed
 - **check-ja-tone** — Validates Japanese translation tone (だ/である vs ですます) per character rules
 - **check-ja-names** — Validates person names in JA files use katakana (not English)
 - **check-ja-titles** — Validates JA context post titles are in Japanese (not English)
