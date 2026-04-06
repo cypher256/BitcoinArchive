@@ -9,6 +9,11 @@ const fontPath = path.resolve('src/assets/fonts/NotoSansJP-Bold.ttf');
 const fontData = fs.readFileSync(fontPath);
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  // Skip OG image generation in local dev builds (CI sets this automatically)
+  if (process.env.CI !== 'true' && process.env.GENERATE_OG !== 'true') {
+    return [];
+  }
+
   const enEntries = await getCollection('entries');
   const jaEntries = await getCollection('entries_ja');
 
