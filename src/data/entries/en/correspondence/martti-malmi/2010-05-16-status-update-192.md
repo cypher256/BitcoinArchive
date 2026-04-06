@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 I've also been busy with other things for the last month and a half.  I 
@@ -40,7 +43,7 @@ upload server software as an example.  It would make sense to actually
 build one practical application with the API before releasing it.  You 
 don't realise the problems with an API until you actually try to use it.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > Hi!
 > 
 > How are you doing? Haven't seen you around in a while.

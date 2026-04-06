@@ -22,9 +22,12 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
 ---
 
-Mike Hearn wrote:
+<!-- quote: q1 -->
 
 > My best guess - it is the length of the global chain, and the rapid advance at the start is as the software downloads and verifies the preceding blocks in the chain as being valid.
 

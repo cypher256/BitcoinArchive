@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/7/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
-James A. Donald wrote:
+<!-- quote: q1 -->
 > The core concept is that lots of entities keep complete and consistent
 > information as to who owns which bitcoins.
 >

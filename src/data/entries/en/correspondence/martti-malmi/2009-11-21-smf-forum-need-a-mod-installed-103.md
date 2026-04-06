@@ -21,6 +21,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Thanks, that worked, I got File Manager installed with SSH.  I also 
@@ -36,7 +39,7 @@ engine friendly, Joomla not.
 Both have SMF bridge modules available.  For future reference, Drupal's 
 is named "SMFforum Integration".
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > I don't have the time to configure it today, but I made a temporary 
 > account "" with password "" and full permissions to 
 > /var/www/bitcoin. You can access it via ssh or sftp at port 30000.

@@ -13,9 +13,12 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/27/"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
-Hal Finney wrote:
+<!-- quote: q1 -->
 > That sounds good. I'd also like to be able to run multiple coin/block
 > generators on multiple machines, all behind a single NAT address. I
 > haven't tried this yet so I don't know if it works on the current

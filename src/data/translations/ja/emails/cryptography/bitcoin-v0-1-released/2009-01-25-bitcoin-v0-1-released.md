@@ -21,10 +21,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/18/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
 <!-- speaker: Hal Finney -->
-ハル・フィニーの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > > * スパマーのボットネットは送信ごとの支払いメールフィルターを
 > >   簡単に突破できるだろう
 > POWトークンが有用になり、特に通貨になれば、
@@ -35,6 +39,7 @@ translationStatus: complete
 > 気づかれやすくなるため、その世界ではユーザーは
 > コンピューターの保守とボットネット感染の駆除に
 > より注力するようになるだろう。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 POWトークンに価値がある場合にスパムを軽減するもう1つの要因：スパマーからPOWトークンを収穫するために、大量の偽メールアカウントを設置する金銭的動機が生まれる。本質的にスパマーに対する逆スパムであり、POWを収集しメッセージを読まない自動化されたメールボックスだ。偽メールボックスと実際の人の比率がスパムのコスト効率を下回るほど高くなる可能性がある。

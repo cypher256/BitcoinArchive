@@ -20,11 +20,14 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/13/"
+quotes:
+  - id: "q1"
+    person: "Ray Dillinger (Bear)"
 ---
 
 I'll try and hurry up and release the sourcecode as soon as possible to serve as a reference to help clear up all these implementation questions.
 
-Ray Dillinger (Bear) wrote:
+<!-- quote: q1 -->
 > When a coin is spent, the buyer and seller digitally sign a (blinded)
 > transaction record.
 

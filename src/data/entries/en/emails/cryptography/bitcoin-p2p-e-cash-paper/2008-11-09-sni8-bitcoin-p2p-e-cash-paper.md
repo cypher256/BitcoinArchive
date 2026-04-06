@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/8/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
-James A. Donald wrote:
+<!-- quote: q1 -->
 >OK, suppose one node incorporates a bunch of
 >transactions in its proof of work, all of them honest
 >legitimate single spends and another node incorporates a

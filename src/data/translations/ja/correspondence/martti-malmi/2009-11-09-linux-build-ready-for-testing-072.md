@@ -23,16 +23,21 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
 Linuxビルド、自動起動、トレイ最小化、セットアップなど、たくさんのことをやってくれて本当に感謝している。C++プロジェクトの成功を祈っている。
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 学校のプロジェクト（偶然にもC++のコーディング）に約1ヶ月集中しなければ
 > ならないので、12月までは積極的な開発に使える時間があまりありません。
 > とにかく連絡は取り合いましょう。
 >
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

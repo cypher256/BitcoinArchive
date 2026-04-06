@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Ok, I won't switch it. Donations in Bitcoin are helpful and can be  
@@ -38,7 +41,7 @@ sent to 14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U.
 >
 > Would a donation of bitcoins help in the short term?
 >
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 >> Rackspace has very good support, good backend, good connections and  
 >>  nicely scaling cloud based virtual servers. I got this offer from   
 >> Thufir:

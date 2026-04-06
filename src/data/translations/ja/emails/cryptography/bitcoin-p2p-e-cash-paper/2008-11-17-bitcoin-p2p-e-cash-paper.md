@@ -21,10 +21,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/15/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > > 幸い、現在の最良の分岐のための
 > > 保留トランザクションプールだけを保持すれば十分だ。
 >
@@ -32,6 +36,7 @@ James A. Donaldの投稿：
 > データストレージが正常に動作している誠実で
 > 行儀の良いピアが、現在の最良の分岐が何であるかを
 > 知っていることを要求する——
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 ノードは自分が持っている最良の分岐の保留トランザクションプールだけを持てばよいということだ。現在最良の分岐だと考えている分岐のことだ。それがブロックを作ろうとしている分岐であり、プールが必要なのはそのためだけだ。

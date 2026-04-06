@@ -21,9 +21,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/12/"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
-Hal Finney wrote:
+<!-- quote: q1 -->
 > I think it is necessary that nodes keep a separate
 > pending-transaction list associated with each candidate chain.
 > ... One might also ask ... how many candidate chains must

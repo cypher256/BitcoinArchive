@@ -20,10 +20,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/8/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 >あるノードがプルーフ・オブ・ワークに
 >正直で正当な単一支払いのトランザクション群を組み込み、
 >別のノードがプルーフ・オブ・ワークに
@@ -33,6 +37,7 @@ James A. Donaldの投稿：
 >生成されたとする。
 >
 >その場合はどうなるのか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 両方ともブロックをブロードキャストする。すべてのノードは両方を受信して保持するが、最初に受信した方にのみ取り組む。正確に半分が一方を先に受信し、残りの半分がもう一方を先に受信したとしよう。

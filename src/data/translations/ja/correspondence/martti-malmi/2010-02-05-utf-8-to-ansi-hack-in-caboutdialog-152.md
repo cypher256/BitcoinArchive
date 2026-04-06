@@ -21,6 +21,9 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -33,9 +36,11 @@ translationStatus: complete
 
 <!-- speaker: Martti Malmi -->
 
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 意図的に変更したわけではありません。エンコーディングの問題だったのでしょう。
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >> この変更の理由は何だったのか？
 >>

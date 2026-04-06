@@ -20,9 +20,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
+quotes:
+  - id: "q1"
+    person: "Martien van Steenbergen"
 ---
 
-Martien van Steenbergen wrote:
+<!-- quote: q1 -->
 > Would love to also see support for not having to supply and managing
 > money. Would make it easier and cheaper to maintain and results in have
 > sufficient money, always and everywhere. No scarcity, no abundance,

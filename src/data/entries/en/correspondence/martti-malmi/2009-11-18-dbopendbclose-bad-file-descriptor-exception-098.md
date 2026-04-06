@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 I think it was test version 5, not completely sure though. I'm running  
@@ -34,7 +37,7 @@ and use the hibernate-feature instead of powering down.
 > the zombie problem for Liberty.  What test version were you running?
 > (I should print the test version in the log)
 >
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 >> Here's the logs in case they're still useful.
 >>
 >>> I have an idea for a workaround, but it depends on what files the

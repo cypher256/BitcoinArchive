@@ -22,13 +22,16 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 You got a lot done with the Linux build, autostart, minimize to tray, 
 setup and everything, it's really appreciated.  Good luck on your C++ 
 project.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > I'll have to focus on a school project (coincidentally C++ coding) for 
 > about a month now, so I don't have that much time for active developing 
 > until December. Let's keep contact anyway.

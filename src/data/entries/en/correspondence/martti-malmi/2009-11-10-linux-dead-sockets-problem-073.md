@@ -21,6 +21,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
 ---
 
 I see what happened.  All your sockets went dead somehow.  You had no 
@@ -65,7 +71,7 @@ different nodes would not match.  The status number would no longer be
 coordinated with the maturity countdown on blocks either.  A lighter 
 option would be a special case only if all confirmations are your own.
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 > I just lost 6 sets of maturing coins! I had 10 sets of bitcoins 
 > maturing. The last set was generated at about 0:22. It got to 
 > 2/unconfirmed before bitcoin got stuck. At 10:10, the bitcoin which was 
@@ -83,7 +89,7 @@ Liberty Standard wrote:
 > 
 > 
 > On Tue, Nov 10, 2009 at 1:45 AM, Liberty Standard 
-> <newlibertystandard@gmail.com <mailto:newlibertystandard@gmail.com>> wrote:
+> <!-- quote: q2 -->
 > 
 >     The Linux build has generated a decent amount of bitcoins within the
 >     past 20 hours and I trust what you're telling me about database

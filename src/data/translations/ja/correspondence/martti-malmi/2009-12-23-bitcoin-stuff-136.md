@@ -21,10 +21,14 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > コインが受信されたかどうかを確認したり、コインを送金したりするための
 > コマンドラインツールも少なくとも必要です。バックグラウンドで動作している
 > Bitcoinプロセスと何らかの方法で通信する必要があります。どうすべきかは
@@ -33,6 +37,7 @@ mmalmi@cc.hut.fi の書き込み:
 > バックグラウンドプロセスが非グラフィカルであればとても助かります。現在の
 > サービスレベルのVPSでは、X Window環境を動かすのに十分なメモリがありません。
 > メモリを解放する方法を見つけない限りは。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 なぜ皆がUI無しにこだわるのか不思議に思っていた。Windowsではトレイに小さなアイコンを表示するだけで動かせるのに、これはWindowsのサーバーサービスでは一般的なことだ。つまりこれが理由だったのだな。誰も見ないデスクトップ上の小さなアイコンすら許容できないのは、Unix信奉者の気取りだと思っていた。

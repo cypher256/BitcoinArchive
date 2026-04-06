@@ -20,9 +20,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/10/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
-James A. Donald wrote:
+<!-- quote: q1 -->
 > So what happened to the coin that lost the race?
 >
 > ... it is a bit harsh if the guy who came second 

@@ -20,9 +20,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/18/"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
-Hal Finney wrote:
+<!-- quote: q1 -->
 > > * Spammer botnets could burn through pay-per-send email filters
 > >   trivially
 > If POW tokens do become useful, and especially if they become money,

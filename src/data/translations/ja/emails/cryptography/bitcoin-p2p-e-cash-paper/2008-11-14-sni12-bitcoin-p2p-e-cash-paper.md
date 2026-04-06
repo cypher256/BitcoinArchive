@@ -22,14 +22,19 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/12/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
 <!-- speaker: Hal Finney -->
-ハル・フィニーの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 各候補チェーンに関連付けた別々の
 > 保留トランザクションリストをノードが保持する必要があると思う。
 > ... また、任意の時点でノードはいくつの候補チェーンを
 > 追跡する必要があるのか平均的に尋ねたい。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 幸いにも、現在の最良ブランチに対する保留トランザクションプールのみを維持すれば十分だ。新しいブロックが最良ブランチに到着すると、ConnectBlockがそのブロックのトランザクションを保留トランザクションプールから削除する。別のブランチがより長くなった場合、フォークまでのメインブランチに対してDisconnectBlockを呼び出し、ブロックのトランザクションを保留トランザクションプールに戻し、新しいブランチに対してConnectBlockを呼び出し、両方のブランチに含まれていたトランザクションを吸い上げる。このような再編成は稀で浅いものになると予想される。

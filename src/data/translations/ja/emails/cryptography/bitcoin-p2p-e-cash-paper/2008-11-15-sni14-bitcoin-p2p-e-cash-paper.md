@@ -21,15 +21,20 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Ray Dillinger"
 ---
 
 <!-- speaker: Ray Dillinger -->
-レイ・ディリンジャーの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 1つの方法は、コインの受取人に非対称鍵ペアを生成させ、
 > その半分をトランザクションとともに公開することだ。
 > 後でコインを使うためには、非対称鍵ペアの
 > もう半分の所有を証明する必要がある。
 > おそらく新しい売り手が提供する鍵に署名することで。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 その通り、ECCデジタル署名だ。すべてのトランザクションで新しい鍵ペアが使用される。

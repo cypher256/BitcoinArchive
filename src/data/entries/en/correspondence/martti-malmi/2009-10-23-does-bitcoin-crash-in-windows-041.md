@@ -20,9 +20,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 ---
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 >  Do you Windows users experience occasional Bitcoin crashes?
 > Lately Bitcoin running in wine-1.0.1 has been crashing frequently. I was
 > just wondering whether this is a Wine issue or a Bitcoin issue. 

@@ -20,9 +20,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/15/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
-James A. Donald wrote:
+<!-- quote: q1 -->
 > > Fortunately, it's only necessary to keep a
 > > pending-transaction pool for the current best branch.
 > 

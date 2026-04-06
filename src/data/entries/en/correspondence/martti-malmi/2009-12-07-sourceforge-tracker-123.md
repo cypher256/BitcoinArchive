@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 I made a copy of the logo onto the local server, so we can still use  
@@ -33,7 +36,7 @@ it for graphics. It's not disallowed by the SF trademark policy.
 > and "contains unauthenticated content".  Anyway, do we really want
 > sourceforge tracking everyone?  It's more privacy friendly without it.
 >
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 >> It would be also great if you can get the Sourceforge logo from the  
 >>  SF project admin and add it to the site footer.
 >>

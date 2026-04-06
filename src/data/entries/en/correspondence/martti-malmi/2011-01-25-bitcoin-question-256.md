@@ -20,6 +20,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "--- On Mon, 1/24/11, mmalmi@cc.hut.fi"
+    parent: "q1"
 ---
 
 The paper was published in 2008.
@@ -28,7 +34,7 @@ Someone needs to correct Wikipedia; it incorrectly says the paper was
 published in 2009.  The paper was released earlier than the software.
 
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > Can you comment on this?
 > 
 > ----- Forwarded message from cjwells_1@yahoo.com -----
@@ -56,7 +62,7 @@ mmalmi@cc.hut.fi wrote:
 > Denver, CO   U.S.A.
 > 303-730-6609
 > 
-> --- On Mon, 1/24/11, mmalmi@cc.hut.fi <mmalmi@cc.hut.fi> wrote:
+> <!-- quote: q2 -->
 > 
 > From: mmalmi@cc.hut.fi <mmalmi@cc.hut.fi>
 > Subject: Re:

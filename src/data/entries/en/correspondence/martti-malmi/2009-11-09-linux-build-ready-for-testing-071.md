@@ -22,6 +22,15 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
+  - id: "q3"
+    person: ">"
+    parent: "q1"
 ---
 
 You really don't want to keep running in Wine, you're getting database 
@@ -37,7 +46,7 @@ SHA-256 code, there was a lot of hand tuned highly optimized SHA1 code
 available, but not so much for SHA-256 yet.  I should see if I can 
 upgrade MinGW to 4.3.x to get them on a level playing field.
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 > Everyone that contributed to making this Linux build really did a great 
 > job! Thanks for the hard work. It has started maturing some bitcoins, so 
 > I'm going to continue to run the Linux client for the time being until I 
@@ -46,7 +55,7 @@ Liberty Standard wrote:
 > 
 > 
 > On Mon, Nov 9, 2009 at 8:59 AM, Liberty Standard 
-> <newlibertystandard@gmail.com <mailto:newlibertystandard@gmail.com>> wrote:
+> <!-- quote: q2 -->
 > 
 >     Another instance when I would like to run multiple instances is when
 >     I upgrade bitcoin. I will uncheck the generate coin check box in the
@@ -59,7 +68,7 @@ Liberty Standard wrote:
 > 
 > 
 >     On Mon, Nov 9, 2009 at 7:42 AM, Satoshi Nakamoto <satoshin@gmx.com
->     <mailto:satoshin@gmx.com>> wrote:
+> <!-- quote: q3 -->
 > 
 >         Thanks for that, I see what happened.  Because the first one was
 >         slow, it ended up requesting the blocks from everybody else,

@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
-James A. Donald wrote:
+<!-- quote: q1 -->
 > It is not sufficient that everyone knows X. We also
 > need everyone to know that everyone knows X, and that
 > everyone knows that everyone knows that everyone knows X

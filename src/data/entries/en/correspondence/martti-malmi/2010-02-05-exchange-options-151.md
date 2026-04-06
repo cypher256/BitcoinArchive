@@ -21,6 +21,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Maybe the current difficulty of buying LR is already the limit of how 
@@ -56,7 +59,7 @@ only online currency that's both easy to cash out and easy to get a
 small amount.  It'll just be the usual harder difficulty to buy a large 
 amount.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > Liberty Reserve sounds good. I could first make a service that only 
 > accepts LR, and add more options later. The weakness is that buying LR 
 > is an extra step of inconvenience when the customer just wants to get 

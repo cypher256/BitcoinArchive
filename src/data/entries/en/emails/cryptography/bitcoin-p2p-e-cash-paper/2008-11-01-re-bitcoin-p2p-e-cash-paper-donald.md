@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/2/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
 ---
 
-Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > I've been working on a new electronic cash system that's fully
 > peer-to-peer, with no trusted third party.
 >

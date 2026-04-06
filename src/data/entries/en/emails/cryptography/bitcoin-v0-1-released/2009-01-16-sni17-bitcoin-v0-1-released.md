@@ -19,10 +19,16 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/17/"
+quotes:
+  - id: "q1"
+    person: "Dustin D. Trammell"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    parent: "q1"
 ---
 
-Dustin D. Trammell wrote:
-> Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > You know, I think there were a lot more people interested in the 90's,
 > > but after more than a decade of failed Trusted Third Party based systems
 > > (Digicash, etc), they see it as a lost cause.  I hope they can make the

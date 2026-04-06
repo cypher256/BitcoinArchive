@@ -24,11 +24,14 @@ secondarySources:
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+quotes:
+  - id: "q1"
+    person: "Satoshi"
 ---
 
 On April 26, 2011, Satoshi Nakamoto sent what would become his last known private email. Addressed to Gavin Andresen with the subject line "alert key," this message marked Satoshi's final transfer of authority and his farewell from the project he created.
 
-Satoshi wrote:
+<!-- quote: q1 -->
 
 > I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle. Maybe instead make it about the open source project and give more credit to your dev contributors; it helps motivate them.
 

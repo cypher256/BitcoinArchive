@@ -22,6 +22,9 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -48,9 +51,11 @@ Linux版をGTKなしで動作させるのは別の作業になる。
 
 <!-- speaker: Martti Malmi -->
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > それは素晴らしいですね！Liberty ReserveとそのAPIについて調べ始めます。
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >> JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使って
 >> いる。JSON-RPCはプレーンソケットでもHTTPでも可能だが、他のほとんどの

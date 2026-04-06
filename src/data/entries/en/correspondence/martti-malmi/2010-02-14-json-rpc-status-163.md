@@ -21,9 +21,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 >> I haven't tested my JSON-RPC server with anything else yet.  If you do,
 >> please tell me how it goes.  You're using Python, right?
 >>

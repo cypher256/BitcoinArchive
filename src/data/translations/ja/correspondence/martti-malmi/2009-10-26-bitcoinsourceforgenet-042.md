@@ -21,6 +21,11 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
+  - id: "q2"
+    person: "Liberty Standard"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -29,16 +34,20 @@ translationStatus: complete
 
 <!-- tone-skip -->
 Eugen Leitl の書き込み:
-On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
  > > bitcoin.sourceforge.netは今は正常に見える。SourceForgeが
+<!-- /tone-skip -->
 
 今は動作していない。
 
  > > メンテナンスをしていたのかもしれない。
 
 
-Liberty Standard の書き込み:
+<!-- quote: q2 -->
+<!-- tone-skip -->
  > ご存じないかもしれませんが、Bitcoinのウェブサイトがダウンしています。
+<!-- /tone-skip -->
  >
  > http://bitcoin.sourceforge.net/
  >

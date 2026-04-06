@@ -20,10 +20,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/6/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
 <!-- speaker: Hal Finney -->
-ハル・フィニーの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ブロードキャストされたトランザクションがすべてのノードに到達しなくても
 > 大丈夫で、やがてブロックチェーンに入ると述べられているが、これはどのように
 > 実現されるのだろうか——「次の」ブロックを作成するノード（hashcashの
@@ -32,6 +36,7 @@ translationStatus: complete
 > ノードによって追加された場合はどうなるのだろうか？トランザクションを聞いた
 > すべてのノードは、次の衝突を見つけるのに十分幸運になるまでそのトランザクションを
 > 保持し、ブロックに組み込もうとするのだろうか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 その通り、ノードはトランザクションをブロックに入るまでワーキングセットに保持する。トランザクションがノードの90%に到達した場合、新しいブロックが見つかるたびに、そのブロックに含まれる確率は90%だ。

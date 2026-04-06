@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Thanks for creating the maintenance account, it would have been 
@@ -53,7 +56,7 @@ it?" and maybe some explanation about why you shouldn't reuse addresses.
 Or maybe just a "New Address" button next to the address box that you 
 should hit each time to change it.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > I have registered the domain name bitcoinexchange.com and will start 
 > coding the service sometime soon as a nice leisure activity. I'm 
 > envisioning a simple Google-like interface with no registration and only 

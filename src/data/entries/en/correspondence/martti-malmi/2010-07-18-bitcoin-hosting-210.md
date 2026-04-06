@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Please promise me you won't make a switch now.  The last thing we need 
@@ -35,7 +38,7 @@ even that for a few days.
 
 Would a donation of bitcoins help in the short term?
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > Rackspace has very good support, good backend, good connections and 
 > nicely scaling cloud based virtual servers. I got this offer from Thufir:
 > 

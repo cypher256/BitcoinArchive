@@ -22,6 +22,11 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -38,7 +43,8 @@ translationStatus: complete
 
 <!-- speaker: Martti Malmi -->
 
-mmalmi@cc.hut.fi の書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > お客様向けにJoomlaサイトを作ったことがありますが、Drupalのほうが好きだと言わざるを得ません。主に管理インターフェースが使いやすく、メインサイトに統合されている点がいいです。
 >
 > https経由だと画像が正しく読み込まれません。時間があるときに確認します。
@@ -53,11 +59,12 @@ mmalmi@cc.hut.fi の書き込み：
 >>
 >> どちらもSMFブリッジモジュールが利用可能です。今後の参考のために、Drupal用のものは「SMFforum Integration」という名前です。
 >>
->> mmalmi@cc.hut.fi の書き込み：
+>> <!-- quote: q2 -->
 >>> 今日は設定する時間がありませんが、一時的なアカウント「」をパスワード「」で作成し、
 >>>  /var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
 >
 >
 >
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

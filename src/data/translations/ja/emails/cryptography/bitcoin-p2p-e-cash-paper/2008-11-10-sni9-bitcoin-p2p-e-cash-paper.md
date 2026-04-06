@@ -20,13 +20,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/9/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > さらに、提案されたシステムでは、誰がどのコインを持っているかを
 > 追跡する作業はシニョリッジによって賄われており、
 > これはインフレを必要とするため、機能させることはできない。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 インフレの問題で困っているなら、代わりにトランザクション手数料に調整するのは簡単だ。こう簡単なことだ：任意のトランザクションのアウトプット値をインプット値より1セント少なくする。クライアントソフトウェアが意図した支払い額より1セント多くトランザクションを自動的に書くか、受取人側から差し引くことができる。ノードがブロックのプルーフ・オブ・ワークを見つけた時のインセンティブ値は、ブロック内の手数料の合計になる。

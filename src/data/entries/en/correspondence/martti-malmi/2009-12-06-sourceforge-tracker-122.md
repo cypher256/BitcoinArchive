@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 I added the sourceforge tracker to bitcoin.sourceforge.net.  The 
@@ -98,7 +101,7 @@ width="150" height="40" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > It would be also great if you can get the Sourceforge logo from the SF 
 > project admin and add it to the site footer.
 > 

@@ -21,15 +21,20 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/13/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Ray Dillinger (Bear)"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
 できるだけ早くソースコードをリリースするよう急いでいる。これらの実装に関する疑問をすべて解消する参考になるだろう。
 
 <!-- speaker: Ray Dillinger -->
-レイ・ディリンジャー (Bear) の投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > コインが使われる際、買い手と売り手は（ブラインド化された）
 > トランザクション記録にデジタル署名する。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 署名するのは買い手のみであり、ブラインド化はない。

@@ -20,9 +20,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > Just a few clues I've found about running the same binary without a GUI:
 > 
 > 1) GTK supports running a program without display: 

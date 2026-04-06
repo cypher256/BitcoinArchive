@@ -20,16 +20,21 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 全員がXを知っているだけでは不十分だ。全員が
 > 全員がXを知っていることを知り、さらに
 > 全員が全員が全員がXを知っていることを知っていることを
 > 知っている必要もある
 > ——これはビザンチン将軍問題として知られる、
 > 分散データ処理の古典的な難問だ。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 プルーフ・オブ・ワークチェーンはビザンチン将軍問題の解決策だ。その文脈で言い換えてみよう。

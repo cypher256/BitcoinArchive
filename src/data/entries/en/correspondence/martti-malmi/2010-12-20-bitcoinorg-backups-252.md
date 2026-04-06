@@ -21,6 +21,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+  - id: "q2"
+    person: "Dec 20, 2010 at 10:55 AM,"
+    parent: "q1"
 ---
 
 Ok. I'll start backing up to another server I'm using. I'll send you  
@@ -29,8 +35,8 @@ server you want. The backup file size is about 50 MB atm.
 
 Here's my pgp key btw: http://www.bitcoin.org/mmalmi.asc
 
-> Gavin Andresen wrote:
->> On Mon, Dec 20, 2010 at 10:55 AM,  <mmalmi@cc.hut.fi> wrote:
+> <!-- quote: q1 -->
+>> <!-- quote: q2 -->
 >>> ShadowOfHarbringer described a way of mirroring the bitcoin.org website and
 >>> forum here:
 >>> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043

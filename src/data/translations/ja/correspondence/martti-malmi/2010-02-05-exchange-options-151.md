@@ -22,6 +22,9 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -38,7 +41,8 @@ translationStatus: complete
 
 <!-- speaker: Martti Malmi -->
 
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Liberty Reserveは良さそうですね。まずはLRのみを受け付けるサービスを
 > 作り、後からオプションを追加できます。弱点は、顧客が単にBitcoinを
 > 手に入れたいだけの場合に、LRを購入するのが余計な手間になることです。
@@ -58,5 +62,6 @@ mmalmi@cc.hut.fi の書き込み:
 > オプションを提供しているか調べることです。銀行振込はクレジットカードと
 > ほぼ同じくらい多くの顧客にリーチできるでしょう。
 >
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

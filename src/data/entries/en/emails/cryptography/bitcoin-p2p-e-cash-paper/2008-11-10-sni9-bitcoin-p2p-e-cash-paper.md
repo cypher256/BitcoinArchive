@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/9/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
-James A. Donald wrote:
+<!-- quote: q1 -->
 > Furthermore, it cannot be made to work, as in the proposed system the
 > work of tracking who owns what coins is paid for by seigniorage, which
 > requires inflation.

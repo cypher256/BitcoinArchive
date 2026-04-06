@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 > I need to make a way for you to programmatically get new generated
@@ -46,7 +49,7 @@ lightly. The other way around (customer's dollars -> bitcoins) it
 doesn't feel that insecure, and it's certainly nicer for the customer  
 to receive his bitcoins immediately.
 
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 >> I have registered the domain name bitcoinexchange.com and will   
 >> start coding the service sometime soon as a nice leisure activity.   
 >> I'm envisioning a simple Google-like interface with no registration  

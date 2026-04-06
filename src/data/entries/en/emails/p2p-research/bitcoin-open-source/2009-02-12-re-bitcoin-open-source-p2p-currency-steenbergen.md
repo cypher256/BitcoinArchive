@@ -20,9 +20,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
+quotes:
+  - id: "q1"
+    person: "Martien van Steenbergen"
 ---
 
-Martien van Steenbergen wrote:
+<!-- quote: q1 -->
 > Very interesting. Is this akin to David Chaum's anonymous digital money?
 > His concept makes sure money is anonymous unless it is compromised, i.e.
 > the same money spent more than once. As soon as it's compromised, the

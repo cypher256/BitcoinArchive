@@ -21,6 +21,9 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -97,10 +100,12 @@ secure and Free Open Source software downloads" /></a>
 
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 > フッターに追加できると良いですね。
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >> 現在のサイトレイアウトはすっきりしていて良いな。ロゴだけ
 >> 変更すべきだ。すぐに公開したいなら、とりあえずサイトタイトルに

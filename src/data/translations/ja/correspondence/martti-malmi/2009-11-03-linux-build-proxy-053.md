@@ -24,6 +24,11 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -45,7 +50,8 @@ bitcoin -proxy=127.0.0.1:9050 -addnode=<ノードのip>
 着信接続を受け入れられるノードが不足している。最近は2～4個程度だ。ルーターのポートフォワーディングを設定することの重要性を強調する必要がある。すべてのP2Pファイル共有プログラムにはその方法の説明がある。bitcoin.sourceforge.netのホームページに、着信接続を受け入れるためのポートフォワーディング設定を促す段落と、各ルーターでの方法を説明するサイトへのリンクを置くべきだ。
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ここまで移植した分をsvn/branchesにアップロードしました。Util、script、db
 > とヘッダーは完全にコンパイルできるようになり、net.cppは部分的にコンパイル
 > できるので、まだ作業が残っています。
@@ -71,7 +77,7 @@ mmalmi@cc.hut.fi の書き込み:
 >> ビルドできる状態のものができたら、テストする時間はある。今実施中の変更に
 >> 対するストレステストに含めることができるよ。
 >>
->> mmalmi@cc.hut.fi の書き込み:
+>> <!-- quote: q2 -->
 >>> util.hでQueryPerformanceCounterをLinuxのgettimeofdayに置き換える
 >>> #ifdefを作りました。Unicode/ANSIのエラーはwxWidgets 2.9にアップデート
 >>> したらコード変更なしで解決しました。現在Linuxで出ている唯一のコンパイル
@@ -93,5 +99,6 @@ mmalmi@cc.hut.fi の書き込み:
 >
 >
 >
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

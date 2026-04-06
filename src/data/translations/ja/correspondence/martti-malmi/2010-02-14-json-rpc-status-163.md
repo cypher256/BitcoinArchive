@@ -22,11 +22,15 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Martti Malmi -->
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 >> まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、
 >> 結果を教えてほしい。Pythonを使っているのか？
 >>
@@ -38,6 +42,7 @@ mmalmi@cc.hut.fi wrote:
 > （http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、
 > あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかも
 > しれません。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 

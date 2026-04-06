@@ -23,6 +23,11 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Great, I've been looking forward to working on the Linux build.
@@ -73,7 +78,7 @@ have a paragraph on the bitcoin.sourceforge.net homepage urging people
 to set up port forwarding to accept incoming connections, and a link to 
 a site that describes how to do it for each router.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > I uploaded what I've ported so far to the svn/branches. Util, script, db 
 > and the headers compile fully now and net.cpp partially, so there's 
 > still work to do.
@@ -102,7 +107,7 @@ mmalmi@cc.hut.fi wrote:
 >> buildable to test.  I can include it in the stress test I'm currently
 >> running on the changes so far.
 >>
->> mmalmi@cc.hut.fi wrote:
+>> <!-- quote: q2 -->
 >>> I made an #ifdef to replace QueryPerformanceCounter with Linux's  
 >>> gettimeofday in util.h. Some Unicode/ANSI errors were resolved  
 >>> without code changes when I updated to wxWidgets 2.9. The only  

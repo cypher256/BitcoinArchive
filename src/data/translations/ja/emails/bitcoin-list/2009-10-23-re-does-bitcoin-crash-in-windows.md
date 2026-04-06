@@ -16,13 +16,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/28/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 ---
 
 <!-- speaker: Liberty Standard -->
-Liberty Standard wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Windowsユーザーの方は時々Bitcoinがクラッシュすることがあるか？
 > 最近wine-1.0.1上で動作しているBitcoinが頻繁にクラッシュしている。
 > これがWineの問題なのかBitcoinの問題なのか気になった。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 v0.1.5でのクラッシュの報告は受けていない。Windows上では非常に安定して動作している。Wine関連の問題だと思う。Wine上で再びクラッシュしてターミナルに何か表示されたら、メールで送ってほしい。何が起きたか解明できるかもしれないし、回避策を見つけられるかもしれない。Marttiと私は間もなくリリースする新バージョンの作業を進めており、そこにWineの修正を含められると良い。

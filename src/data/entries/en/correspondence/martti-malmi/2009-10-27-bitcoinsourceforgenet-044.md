@@ -20,6 +20,15 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "Eugen Leitl"
+  - id: "q3"
+    person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
+  - id: "q4"
+    person: "Liberty Standard"
 ---
 
 Sourceforge is just so darn slow.  I don't know what else to do though. 
@@ -55,7 +64,7 @@ just uninstall the Startup folder one.  I guess it doesn't matter that
 much whether it installs and uninstalls the Startup folder icon or just 
 uninstalls it.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > IS_LIVE option was indeed set to false, but it only affects the 
 > visibility of error messages to user. I've noticed the site being slow 
 > at times, sometimes taking up to 30 seconds to load. I think it's 
@@ -69,8 +78,8 @@ mmalmi@cc.hut.fi wrote:
 >> Any idea what's going on with it?  Every time I look, it's fine.
 >>
 >>
->> Eugen Leitl wrote:
->> On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
+>> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> > bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing
 >>
 >> Doesn't work right now.
@@ -78,7 +87,7 @@ mmalmi@cc.hut.fi wrote:
 >>> > some maintenance.
 >>
 >>
->> Liberty Standard wrote:
+>> <!-- quote: q4 -->
 >>> In case you weren't aware, the Bitcoin website is down.
 >>>
 >>> http://bitcoin.sourceforge.net/

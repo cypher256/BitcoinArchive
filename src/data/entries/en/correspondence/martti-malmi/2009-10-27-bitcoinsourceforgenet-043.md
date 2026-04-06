@@ -20,6 +20,13 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Eugen Leitl"
+  - id: "q2"
+    person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
+  - id: "q3"
+    person: "Liberty Standard"
 ---
 
 IS_LIVE option was indeed set to false, but it only affects the  
@@ -35,8 +42,8 @@ windows-only-functions used in the code?
 > Any idea what's going on with it?  Every time I look, it's fine.
 >
 >
-> Eugen Leitl wrote:
-> On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
+> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> > bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing
 >
 > Doesn't work right now.
@@ -44,7 +51,7 @@ windows-only-functions used in the code?
 >> > some maintenance.
 >
 >
-> Liberty Standard wrote:
+> <!-- quote: q3 -->
 >> In case you weren't aware, the Bitcoin website is down.
 >>
 >> http://bitcoin.sourceforge.net/

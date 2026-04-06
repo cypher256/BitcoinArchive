@@ -21,14 +21,19 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/10/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > では、競争に負けたコインはどうなるのか？
 >
 > …2番目に来た人がコインを失う可能性が高いのは
 > 少し厳しい。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 同じトランザクションの複数の二重支払いバージョンがある場合、1つだけが有効となる。

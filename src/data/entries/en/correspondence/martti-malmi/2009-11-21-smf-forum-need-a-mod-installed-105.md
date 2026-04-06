@@ -21,6 +21,11 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 I'll go ahead with setting up Drupal then.
@@ -45,7 +50,7 @@ We can look into getting a certificate later when things have settled
 down.  With Class 1, no changes are allowed for a year, which is a risk 
 if we find issues with the current host and have to change IP.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > I've done a Joomla site for a customer, and I must say I like Drupal 
 > better, mostly for the admin interface which is easier to use and 
 > integrated into the main site.
@@ -73,7 +78,7 @@ mmalmi@cc.hut.fi wrote:
 >> Both have SMF bridge modules available.  For future reference, Drupal's
 >> is named "SMFforum Integration".
 >>
->> mmalmi@cc.hut.fi wrote:
+>> <!-- quote: q2 -->
 >>> I don't have the time to configure it today, but I made a temporary 
 >>>  account "" with password "" and full permissions to  
 >>> /var/www/bitcoin. You can access it via ssh or sftp at port 30000.

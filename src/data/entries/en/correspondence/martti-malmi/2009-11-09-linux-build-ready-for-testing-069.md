@@ -22,6 +22,15 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
+  - id: "q3"
+    person: "Liberty Standard"
+    parent: "q1"
 ---
 
 Thanks for that, I see what happened.  Because the first one was slow, 
@@ -61,11 +70,11 @@ bitcoin -datadir=/home/yourusername/.bitcoin
 You shouldn't normally have any need to use this switch.  It still won't 
 let you run two instances at once.
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 > On Mon, Nov 9, 2009 at 3:23 AM, Satoshi Nakamoto <satoshin@gmx.com 
-> <mailto:satoshin@gmx.com>> wrote:
+> <!-- quote: q2 -->
 > 
->     Liberty Standard wrote:
+> <!-- quote: q3 -->
 > 
 >         Ok, blocks have now started to increase. It definitely takes
 >         longer for them to start increasing than with the Windows

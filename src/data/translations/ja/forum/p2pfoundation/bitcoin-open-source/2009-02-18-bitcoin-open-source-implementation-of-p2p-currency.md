@@ -23,13 +23,22 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/3/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Joerg Baach"
+  - id: "q2"
+    person: "Sepp Hasslberger"
 ---
 
-Joerg Baachの書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > あなたのシステムについて理解できなかったのだが、これをどのように通貨として使うのだろうか？ 私の理解では、誰でも好きなようにコインを作成できるので、信頼できるトークン/コインの供給がないことになる。
+<!-- /tone-skip -->
 
-Sepp Hasslbergerの書き込み：
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > トークンの総量を決定する公式はあるか？ もしあるなら、その公式は何か？
+<!-- /tone-skip -->
 
 これはグローバルな分散データベースであり、参加者が従う一連のルールに基づいて、多数決の合意によりデータベースへの追加が行われる：
 

@@ -20,6 +20,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
 ---
 
 I have an idea for a workaround, but it depends on what files the errors 
@@ -27,14 +33,14 @@ are on.  If you've accumulated several errors in db.log, could you send
 it to me? (even if it's rather simple and boring)  Is the file listed 
 always blkindex.dat, or does it include addr.dat or wallet.dat too?
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 > I moved the data directory back to my SSD card and started bitcoin test 
 > 6. It encountered a segmentation fault today with Db::open in the log. I 
 > had changed the settings to only use one processor/core while I watched 
 > a 720p mkv movie. I noticed the segmentation fault after the film had ended.
 > 
 > On Sun, Nov 15, 2009 at 12:45 AM, Satoshi Nakamoto <satoshin@gmx.com 
-> <mailto:satoshin@gmx.com>> wrote:
+> <!-- quote: q2 -->
 > 
 >     Here's one where I linked Berkeley DB a different way.  It's worth a
 >     try.  Otherwise identical to test5.

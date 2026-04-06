@@ -23,15 +23,20 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 ---
 
 <!-- speaker: Liberty Standard -->
-Liberty Standardの書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ブロックが増え始めました。Windows版よりも増え始めるまでに確実に時間がかかります。
 > また、Windows版よりも遅い速度で増えているかもしれません。送ってくれたLinuxビルドで
 > デバッグが有効になっているのでしょうか？ブロックは毎秒約15ブロックのペースで増えて
 > います（時計を見ながらの目測です）。Windows版でどのくらい速かったかは計測して
 > いませんが、もっと速かった気がします。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 開始までどのくらいかかった？たまたま要求したノードが遅いだけかもしれない。遅い開始はダウンロード速度が遅いことと整合する。

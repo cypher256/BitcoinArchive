@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
+quotes:
+  - id: "q1"
+    person: "Michel Bauwens"
 ---
 
-Michel Bauwens wrote:
+<!-- quote: q1 -->
 > how operational is your project? how soon do you think people will be
 > able to use it in real life?
 

@@ -20,10 +20,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/7/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 核心的なコンセプトは、多数のエンティティが誰がどのビットコインを
 > 所有しているかについて完全で一貫した情報を保持するということだ。
 >
@@ -38,6 +42,7 @@ James A. Donaldの投稿：
 >
 > これをどのように行うか説明していたのに私が理解できなかったのか、
 > それともできると確信していたが詳細については少し曖昧だったのか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 プルーフ・オブ・ワークチェーンが同期化問題の解決策であり、誰も信頼することなくグローバルに共有されたビューが何であるかを知る方法だ。

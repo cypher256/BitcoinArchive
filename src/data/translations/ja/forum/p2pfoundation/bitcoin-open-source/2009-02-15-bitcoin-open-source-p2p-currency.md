@@ -20,14 +20,19 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Sepp Hasslberger"
 ---
 
-Sepp Hasslbergerの書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Danteがメールで、イギリスのOpen Coinというプロジェクトについて言及していた。似たような方向性のようだ。
 >
 > ビットコインとシナジーはありえるだろうか？
 >
 > http://opencoin.org/
+<!-- /tone-skip -->
 
 そうかもしれない。彼らは昔のチャウム式の中央造幣局のことを話しているが、それしか利用可能なものがなかったからかもしれない。新しい方向に進むことに興味を持つかもしれない。
 

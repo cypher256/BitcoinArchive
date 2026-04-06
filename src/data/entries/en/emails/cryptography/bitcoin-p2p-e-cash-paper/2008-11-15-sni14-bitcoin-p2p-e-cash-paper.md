@@ -20,9 +20,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"
+quotes:
+  - id: "q1"
+    person: "Ray Dillinger"
 ---
 
-Ray Dillinger wrote:
+<!-- quote: q1 -->
 > One way to do this would be
 > to have the person recieving the coin generate an asymmetric
 > key pair, and then have half of it published with the

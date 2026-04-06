@@ -21,6 +21,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 I uploaded my JSON-RPC and command line implementation to SVN.  I'm 
@@ -48,7 +51,7 @@ please tell me how it goes.  You're using Python, right?
 Getting the Linux version to run without the GTK installed will be a 
 separate task.
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > That's great! I'll start familiarizing myself with Liberty Reserve and 
 > its api.
 > 

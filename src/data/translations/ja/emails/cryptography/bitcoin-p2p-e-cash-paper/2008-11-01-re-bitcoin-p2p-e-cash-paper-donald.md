@@ -20,15 +20,20 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/2/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-Satoshi Nakamotoの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 新しい電子キャッシュシステムに取り組んできた。完全な
 > ピアツーピア方式で、信頼できる第三者を必要としない。
 >
 > 論文はこちらで公開している：
 > http://www.bitcoin.org/bitcoin.pdf
+<!-- /tone-skip -->
 
 <!-- speaker: James A. Donald -->
 こういうシステムは切実に必要だ。だが、この方式では必要な規模にスケールしないんじゃないか？

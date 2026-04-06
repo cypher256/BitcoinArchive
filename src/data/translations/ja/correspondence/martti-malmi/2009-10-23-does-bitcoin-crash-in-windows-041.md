@@ -21,13 +21,18 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-Liberty Standard の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > WindowsユーザーはBitcoinがたまにクラッシュすることがあるか？
 > 最近wine-1.0.1で実行しているBitcoinが頻繁にクラッシュしている。これが
 > Wineの問題なのかBitcoinの問題なのか気になった。
+<!-- /tone-skip -->
 
 v0.1.5でのクラッシュ報告は受けていない。Windowsでは非常に安定している。Wineに関連した問題だと思う。Wineでまたクラッシュしてターミナルに何か表示されたら、メールしてほしい。何が起きたか突き止められるかもしれないし、回避策を見つけられるかもしれない。Marttiと一緒に近くリリースする新しいバージョンに取り組んでいて、Wineの修正も入れられるといいんだけど。
 

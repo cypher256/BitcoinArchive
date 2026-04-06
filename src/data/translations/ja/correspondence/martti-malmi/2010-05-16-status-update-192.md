@@ -21,6 +21,9 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -31,7 +34,8 @@ translationStatus: complete
 JSON API関数は完成している。コミットする前に、もっと良い関数名がないか改めて見直したいと思っていた。特に受信トランザクションのポーリングについて、適切な使い方を示すサンプルコードを書くべきだな。中断した時点では、例として無料アップロードサーバーソフトウェアに決済メカニズムを組み込むことを考えていた。APIをリリースする前に、実際に1つの実用的なアプリケーションを構築することには意味がある。実際に使ってみないと、APIの問題点は分からないものだ。
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > こんにちは！
 >
 > お元気ですか？しばらく姿を見かけませんでしたね。
@@ -48,5 +52,6 @@ mmalmi@cc.hut.fi wrote:
 >
 > よろしくお願いします。
 >
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

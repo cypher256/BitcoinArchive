@@ -21,11 +21,16 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
 ---
 
 <!-- speaker: Gavin Andresen -->
-Gavin Andresen wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 喜んでRaineyと話すよ。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 素晴らしい

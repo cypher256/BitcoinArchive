@@ -23,6 +23,15 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
+  - id: "q3"
+    person: ">"
+    parent: "q1"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -31,14 +40,15 @@ translationStatus: complete
 LinuxビルドのGCC 4.3.3は、WindowsのGCC 3.4.5よりもSHA-256コードをうまく最適化したのだと思う。最適なSHA-256コードを探していた時、手動でチューニングされた高度に最適化されたSHA1コードはたくさんあったが、SHA-256についてはまだそれほど多くなかった。MinGWを4.3.xにアップグレードして同じ土俵に立てるか見てみるべきだな。
 
 <!-- speaker: Liberty Standard -->
-Liberty Standardの書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > このLinuxビルドの制作に貢献してくれた皆さん、本当に素晴らしい仕事をしてくれました！
 > 尽力に感謝します。Bitcoinの熟成が始まったので、当面はLinuxクライアントを実行し
 > 続けて、Wine上のWindows版と同等以上にコインを生成できるかどうか判断するつもりです。
 >
 >
 > 2009年11月9日 午前8:59、Liberty Standard
-> <newlibertystandard@gmail.com <mailto:newlibertystandard@gmail.com>> の書き込み：
+> <!-- quote: q2 -->
 >
 >     複数のインスタンスを実行したいもう一つの場面は、Bitcoinをアップグレード
 >     する時です。古いBitcoinでコイン生成のチェックボックスを外し、新しい
@@ -49,9 +59,10 @@ Liberty Standardの書き込み：
 >
 >
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >     2009年11月9日 午前7:42、Satoshi Nakamoto <satoshin@gmx.com
->     <mailto:satoshin@gmx.com>> の書き込み：
+> <!-- quote: q3 -->
 >
 >         ありがとう、何が起こったか分かった。最初のノードが
 >         遅かったため、他の全員にもブロックを要求してしまい、全体が

@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
+quotes:
+  - id: "q1"
+    person: "Sepp Hasslberger"
 ---
 
-Sepp Hasslberger wrote:
+<!-- quote: q1 -->
 > Dante, in an email, has mentioned a UK project called Open Coin. It seems to go in a similar direction.
 >
 > Could there be synergies with bitcoin?

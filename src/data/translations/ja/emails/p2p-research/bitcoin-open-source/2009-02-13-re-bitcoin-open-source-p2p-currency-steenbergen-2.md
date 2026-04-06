@@ -21,13 +21,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Martien van Steenbergen"
 ---
 
 <!-- speaker: Martien van Steenbergen -->
-Martien van Steenbergen wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 通貨の供給と管理が不要なサポートも見てみたい。維持がより簡単で安価になり、
 > いつでもどこでも十分な通貨量が得られる。希少性も過剰もなく、
 > 常に適切な量が自己組織化される。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 それは実現可能だ。あらゆるルールセットに従うようにプログラムできる。

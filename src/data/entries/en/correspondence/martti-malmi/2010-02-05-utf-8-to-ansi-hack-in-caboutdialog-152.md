@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Right, I'll change it to this so it doesn't get broken again:
@@ -29,7 +32,7 @@ Right, I'll change it to this so it doesn't get broken again:
          str.Remove(str.Find('\xC2'), 1);
 ```
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > I didn't change it knowingly, must have been some encoding problem.
 > 
 >> What was the reason for this change?

@@ -15,9 +15,12 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/28/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 ---
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 >  Do you Windows users experience occasional Bitcoin crashes?
 > Lately Bitcoin running in wine-1.0.1 has been crashing frequently. I was
 > just wondering whether this is a Wine issue or a Bitcoin issue. 

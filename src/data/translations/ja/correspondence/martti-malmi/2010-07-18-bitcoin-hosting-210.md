@@ -21,6 +21,9 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -33,9 +36,11 @@ translationStatus: complete
 短期的にはBitcoinでの寄付が役に立つか？
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Rackspaceは非常に良いサポート、良いバックエンド、良い接続性、そしてうまくスケールするクラウドベースの仮想サーバーを持っています。Thufirからこんなオファーをもらいました：
 >
+<!-- /tone-skip -->
 <!-- speaker: Thufir -->
 > -----
 > Hi Sirius、

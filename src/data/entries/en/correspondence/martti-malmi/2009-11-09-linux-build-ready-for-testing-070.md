@@ -22,6 +22,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
 ---
 
 > Martti, how long did it take to start downloading blocks when you ran
@@ -34,7 +37,7 @@ I'll have to focus on a school project (coincidentally C++ coding) for
 about a month now, so I don't have that much time for active  
 developing until December. Let's keep contact anyway.
 
-> Liberty Standard wrote:
+> <!-- quote: q1 -->
 >> Ok, blocks have now started to increase. It definitely takes longer  
 >>  for them to start increasing than with the Windows version. Also,  
 >> I  think they might be increasing at a slower rate than in with the  

@@ -21,12 +21,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/2/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
 ---
 
 <!-- speaker: James A. Donald -->
-James A. Donaldの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 我々はそのようなシステムを非常に、非常に必要としているが、私があなたの
 > 提案を理解する限り、必要な規模にスケールするようには見えない。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 ネットワークがそこまで大きくなるずっと前に、ユーザーは簡易支払い検証（セクション8）を使用して二重支払いをチェックすることが安全であり、これにはブロックヘッダーのチェーンのみ、つまり1日あたり約12KBしか必要としない。新しいコインを作成しようとする人だけがネットワークノードを実行する必要がある。当初はほとんどのユーザーがネットワークノードを実行するが、ネットワークがある程度以上に成長すると、専用ハードウェアのサーバーファームを持つ専門家にますます委ねられることになる。サーバーファームはネットワーク上に1つのノードを持つだけでよく、LANの残りはそのノードに接続する。

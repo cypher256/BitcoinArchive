@@ -22,6 +22,15 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
+  - id: "q3"
+    person: "Liberty Standard"
+    parent: "q1"
 ---
 
 In the debug.log, it requests the block list, receives the block list, 
@@ -43,7 +52,7 @@ You're right about the minimize on close option, there's no reason that
 can't be separate.  Martti originally had it separate and I made it a 
 sub-option, my bad.  I'll change it back.
 
-Liberty Standard wrote:
+<!-- quote: q1 -->
 > That is what I meant. The blocks displayed in the status bar did not 
 > increase at all while i ran the program. I have attached my debug.log.
 > 
@@ -64,9 +73,9 @@ Liberty Standard wrote:
 > 
 > 
 > On Sun, Nov 8, 2009 at 9:08 AM, Satoshi Nakamoto <satoshin@gmx.com 
-> <mailto:satoshin@gmx.com>> wrote:
+> <!-- quote: q2 -->
 > 
->     Liberty Standard wrote:
+> <!-- quote: q3 -->
 > 
 >         I downloaded it and it runs. It and it is using plenty of CPU,
 >         so I think it's working properly. It has not downloaded

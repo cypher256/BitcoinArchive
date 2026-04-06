@@ -20,11 +20,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/17/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Dustin D. Trammell"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    parent: "q1"
 ---
 
 <!-- speaker: Dustin D. Trammell -->
-Dustin D. Trammellの投稿：
-> Satoshi Nakamotoの投稿：
+<!-- quote: q1 -->
+<!-- tone-skip -->
+> <!-- quote: q2 -->
 > > ご存知の通り、90年代にはもっと多くの人が関心を持っていたと思うが、
 > > 10年以上にわたる信頼できる第三者ベースのシステム（Digicashなど）
 > > の失敗の後、失われた大義と見なしている。信頼に基づかないシステムを
@@ -34,6 +41,7 @@ Dustin D. Trammellの投稿：
 > ええ、それが私の目を引いた主な特徴だった。本当のコツは
 > 人々がBitCoinを実際に価値あるものとして評価し、
 > 通貨となるようにすることだろう。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 10年後に何らかの形の電子通貨を使用していなければ驚くだろう。信頼できる第三者が及び腰になった時に必然的に骨抜きにされない方法を知った今となっては。

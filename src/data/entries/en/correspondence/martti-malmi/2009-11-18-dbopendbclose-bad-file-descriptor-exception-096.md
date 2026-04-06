@@ -20,6 +20,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 Thanks.  The db::open/close errors confirm the pattern.
@@ -30,7 +33,7 @@ machine disconnected from the net?  MSG_DONTWAIT in test5 solved the
 zombie problem for Liberty.  What test version were you running?  (I 
 should print the test version in the log)
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
 > Here's the logs in case they're still useful.
 > 
 >> I have an idea for a workaround, but it depends on what files the

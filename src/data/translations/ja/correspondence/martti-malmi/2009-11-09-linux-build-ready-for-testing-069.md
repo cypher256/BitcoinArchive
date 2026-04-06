@@ -23,6 +23,15 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
+  - id: "q3"
+    person: "Liberty Standard"
+    parent: "q1"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -45,11 +54,12 @@ bitcoin -datadir=/home/yourusername/.bitcoin
 通常このスイッチを使う必要はないはずだ。それでも2つのインスタンスを同時に実行することはできない。
 
 <!-- speaker: Liberty Standard -->
-Liberty Standardの書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 2009年11月9日 午前3:23、Satoshi Nakamoto <satoshin@gmx.com
-> <mailto:satoshin@gmx.com>> の書き込み：
+> <!-- quote: q2 -->
 >
->     Liberty Standardの書き込み：
+> <!-- quote: q3 -->
 >
 >         ブロックが増え始めました。Windows版よりも増え始めるまでに確実に
 >         時間がかかります。また、Windows版よりも遅い速度で増えている
@@ -100,6 +110,7 @@ Liberty Standardの書き込み：
 >            Failed to load module: /usr/lib/gio/modules/libgiogconf.so
 >
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >     既にSO_REUSEADDRを使用しているので、閉じた後のTIME_WAIT状態でも
 >     ポートをバインドできる。バインドに失敗するのはプログラムが本当に

@@ -21,6 +21,15 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
+  - id: "q2"
+    person: "Eugen Leitl"
+  - id: "q3"
+    person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
+  - id: "q4"
+    person: "Liberty Standard"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -37,7 +46,8 @@ Linuxへの移植がしたくてうずうずしている？一度やってしま
 セットアップでスタートアップフォルダのアイコンをアンインストールするようにできる？通常のプログラムグループにアイコンをインストール・アンインストールして、スタートアップフォルダのものはアンインストールだけすればいいと思う。スタートアップフォルダのアイコンをインストール・アンインストール両方するか、アンインストールだけするかは、そこまで大きな問題ではないけど。
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > IS_LIVEオプションは確かにfalseに設定されていましたが、ユーザーへのエラー
 > メッセージの表示にしか影響しません。サイトが時々遅くなることに気づいていて、
 > 読み込みに最大30秒かかることもあります。SourceForgeのホスティングに関連して
@@ -51,8 +61,8 @@ mmalmi@cc.hut.fi の書き込み:
 >> 何が起きているか分かる？自分が見るたびに正常なんだけど。
 >>
 >>
->> Eugen Leitl の書き込み:
->> On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
+>> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> > bitcoin.sourceforge.netは今は正常に見える。SourceForgeが
 >>
 >> 今は動作していない。
@@ -60,7 +70,7 @@ mmalmi@cc.hut.fi の書き込み:
 >>> > メンテナンスをしていたのかもしれない。
 >>
 >>
->> Liberty Standard の書き込み:
+>> <!-- quote: q4 -->
 >>> ご存じないかもしれないが、Bitcoinのウェブサイトがダウンしている。
 >>>
 >>> http://bitcoin.sourceforge.net/
@@ -78,5 +88,6 @@ mmalmi@cc.hut.fi の書き込み:
 >
 >
 >
+<!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

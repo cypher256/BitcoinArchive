@@ -22,12 +22,17 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/3/"
+quotes:
+  - id: "q1"
+    person: "Joerg Baach"
+  - id: "q2"
+    person: "Sepp Hasslberger"
 ---
 
-Joerg Baach wrote:
+<!-- quote: q1 -->
 > What I did not understand about your system - how would you use it for a currency of any sort? Everybody can create a coin as they like, as far as I understood, so therefore there is no trusted supply of tokens / coins.
 
-Sepp Hasslberger wrote:
+<!-- quote: q2 -->
 > Is there a formula to decide on what should be the total amount of tokens, and if so, what is the formula?
 
 It is a global distributed database, with additions to the database by consent of the majority, based on a set of rules they follow:

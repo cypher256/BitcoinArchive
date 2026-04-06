@@ -22,12 +22,17 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Martti Malmi -->
-mmalmi@cc.hut.fi の書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > パスワードを送る準備ができました。平文で送らなくて済むように、PGP鍵を送ってもらえますか？
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 >> Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。
 >

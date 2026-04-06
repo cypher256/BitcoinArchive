@@ -14,13 +14,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/27/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
 <!-- speaker: Hal Finney -->
-Hal Finney wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > それは良いね。単一のNATアドレスの背後にある複数のマシンで
 > 複数のコイン/ブロック生成器を実行できるようにもしたい。
 > まだ試していないので、現在のソフトウェアで動作するかわからない。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 現在のバージョンで問題なく動作する。それぞれがインターネット経由で接続し、着信接続はポート8333がルーティングされているホストにのみ届く。

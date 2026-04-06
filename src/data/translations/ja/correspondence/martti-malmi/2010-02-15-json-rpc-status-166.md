@@ -22,10 +22,13 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-> mmalmi@cc.hut.fi wrote:
+> <!-- quote: q1 -->
 >>> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 >>> ノートパソコンを持っていないか？
 <!-- speaker: Martti Malmi -->

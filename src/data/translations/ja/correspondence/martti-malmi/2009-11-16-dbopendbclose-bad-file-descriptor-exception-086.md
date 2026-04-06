@@ -21,6 +21,12 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Liberty Standard"
+  - id: "q2"
+    person: ">"
+    parent: "q1"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -29,12 +35,14 @@ translationStatus: complete
 
 <!-- speaker: Liberty Standard -->
 
-Liberty Standard の書き込み：
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > データディレクトリをSSDカードに戻して、bitcoin test 6を開始しました。今日、ログにDb::openのセグメンテーションフォルトが発生しました。720pのmkv動画を見ている間、プロセッサ/コアを1つだけ使用する設定に変更していました。映画が終わった後にセグメンテーションフォルトに気づきました。
 >
+<!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > 2009年11月15日(日) 午前12:45、Satoshi Nakamoto <satoshin@gmx.com
-> <mailto:satoshin@gmx.com>> の書き込み：
+> <!-- quote: q2 -->
 >
 >     Berkeley DBを別の方法でリンクしたバージョンだ。試してみる価値はある。
 >     それ以外はtest5と同一だ。

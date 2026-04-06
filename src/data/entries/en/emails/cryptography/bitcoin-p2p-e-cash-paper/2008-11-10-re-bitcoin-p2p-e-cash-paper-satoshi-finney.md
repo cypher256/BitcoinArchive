@@ -19,9 +19,12 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/6/"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
 ---
 
-Hal Finney wrote:
+<!-- quote: q1 -->
 > it is mentioned that if a broadcast transaction does not reach all nodes,
 > it is OK, as it will get into the block chain before long. How does this
 > happen - what if the node that creates the "next" block (the first node

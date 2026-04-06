@@ -14,11 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/23/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Dustin D. Trammell"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-> Dustin D. Trammell wrote:
-> > Satoshi Nakamoto wrote:
+> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > ご存知の通り、90年代にはもっと多くの人が関心を持っていたと思うが、
 > > 10年以上にわたる信頼できる第三者に基づくシステム（Digicashなど）の
 > > 失敗の後、彼らはそれを失われた大義と見なしている。これが私の知る限り

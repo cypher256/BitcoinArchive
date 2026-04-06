@@ -20,12 +20,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Michel Bauwens"
 ---
 
 <!-- speaker: Michel Bauwens -->
-Michel Bauwens wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > プロジェクトはどの程度稼働していますか？実生活で使えるようになるのは
 > いつ頃だと思いますか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 完全に稼働しており、ネットワークは成長している。ソフトウェアを試してくれれば、あなたのビットコインアドレスにコインを送る。

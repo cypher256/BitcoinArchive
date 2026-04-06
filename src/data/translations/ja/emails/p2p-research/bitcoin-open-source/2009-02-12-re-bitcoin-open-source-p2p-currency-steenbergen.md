@@ -21,13 +21,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Martien van Steenbergen"
 ---
 
 <!-- speaker: Martien van Steenbergen -->
-Martien van Steenbergen wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 非常に興味深い。これはデイビッド・チャウムの匿名デジタルマネーに似ているか？
 > 彼のコンセプトでは、マネーが不正使用されない限り匿名性が保たれ、つまり
 > 同じマネーが複数回使われた場合、「偽造者」は直ちに公に晒される。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 デジタル署名をコインに使用するという点では似ているが、プライバシーと二重支払い防止のアプローチが異なる。ビットコインの支払いの受取人は、それが最初の支出かどうかを確認でき、二重支払いは受け入れられない。二重支払い者が事後に捕まえられて恥をかかせるオフラインモードはない。それには参加者がアイデンティティを持つ必要があるからだ。

@@ -20,9 +20,12 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
 ---
 
-Gavin Andresen wrote:
+<!-- quote: q1 -->
 > I'd be happy to talk to Rainey; 
 
 Great

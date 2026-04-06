@@ -21,16 +21,21 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mmalmi@cc.hut.fi"
 ---
 
 <!-- speaker: Martti Malmi -->
 
-mmalmi@cc.hut.fi wrote:
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >
 > 1) GTKはディスプレイなしでプログラムを実行することをサポートしています：
 > http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
 > ただし、wxWidgetsで可能かどうかまでは分かりません。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 
