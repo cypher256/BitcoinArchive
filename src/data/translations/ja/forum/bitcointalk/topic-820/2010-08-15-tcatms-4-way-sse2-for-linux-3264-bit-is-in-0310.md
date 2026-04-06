@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "satoshiがスレッドを開始: tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2"
+description: "サトシ・ナカモトがスレッドを開始: tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2"
 isSatoshi: true
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re: （SmokeTooMuchのコンテキスト投稿）"
+title: "Re: （SmokeTooMuchの文脈投稿）"
 date: 2010-07-14T11:34:52.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック343におけるSmokeTooMuchのコンテキスト投稿。msg2880の前。"
+description: "BitcoinTalkトピック343におけるSmokeTooMuchの文脈投稿。msg2880の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re: （Ground Loopのコンテキスト投稿）"
+title: "Re: （Ground Loopの文脈投稿）"
 date: 2010-07-15T01:05:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalkトピック296におけるGround Loopのコンテキスト投稿。msg3495の前。"
+description: "BitcoinTalkトピック296におけるGround Loopの文脈投稿。msg3495の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

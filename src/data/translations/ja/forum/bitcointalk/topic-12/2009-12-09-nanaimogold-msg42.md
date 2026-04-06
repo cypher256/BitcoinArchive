@@ -8,7 +8,7 @@ author: "nanaimogold"
 participants:
   - name: "nanaimogold"
     slug: "nanaimogold"
-description: "BitcoinTalkトピック12におけるnanaimogoldのコンテキスト投稿。msg45の前。"
+description: "BitcoinTalkトピック12におけるnanaimogoldの文脈投稿。msg45の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

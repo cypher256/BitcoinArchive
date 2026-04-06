@@ -8,7 +8,7 @@ author: "spaceshaker"
 participants:
   - name: "spaceshaker"
     slug: "spaceshaker"
-description: "BitcoinTalkトピック286におけるspaceshakerのコンテキスト投稿。msg2947の前。"
+description: "BitcoinTalkトピック286におけるspaceshakerの文脈投稿。msg2947の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

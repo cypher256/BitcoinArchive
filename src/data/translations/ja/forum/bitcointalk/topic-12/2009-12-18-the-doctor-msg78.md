@@ -8,7 +8,7 @@ author: "The Doctor"
 participants:
   - name: "The Doctor"
     slug: "the-doctor"
-description: "BitcoinTalkトピック12におけるThe Doctorのコンテキスト投稿。msg79の前。"
+description: "BitcoinTalkトピック12におけるThe Doctorの文脈投稿。msg79の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

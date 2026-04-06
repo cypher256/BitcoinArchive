@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "satoshiがスレッドを開始: *** 警告 *** バージョン0.3.6"
+description: "サトシ・ナカモトがスレッドを開始: *** 警告 *** バージョン0.3.6"
 isSatoshi: true
 tags: []
 translationStatus: complete

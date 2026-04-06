@@ -1,5 +1,5 @@
 ---
-title: "Re:（QuantumMechanicのコンテキスト投稿）"
+title: "Re:（QuantumMechanicの文脈投稿）"
 date: 2010-06-05T20:02:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "BitcoinTalkトピック165におけるQuantumMechanicのコンテキスト投稿。msg1595の前。"
+description: "BitcoinTalkトピック165におけるQuantumMechanicの文脈投稿。msg1595の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック43におけるNewLibertyStandardのコンテキスト投稿。msg540の前。"
+description: "BitcoinTalkトピック43におけるNewLibertyStandardの文脈投稿。msg540の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

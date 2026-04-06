@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "satoshiがスレッドを開始: 0.3ほぼ完成"
+description: "サトシ・ナカモトがスレッドを開始: 0.3ほぼ完成"
 isSatoshi: true
 tags: []
 translationStatus: complete

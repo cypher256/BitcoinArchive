@@ -8,7 +8,7 @@ author: "RogerRabbit"
 participants:
   - name: "RogerRabbit"
     slug: "rogerrabbit"
-description: "BitcoinTalkトピック21におけるRogerRabbitのコンテキスト投稿。msg112の前。"
+description: "BitcoinTalkトピック21におけるRogerRabbitの文脈投稿。msg112の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

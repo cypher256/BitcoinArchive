@@ -8,7 +8,7 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック84におけるDataWraithのコンテキスト投稿。msg1781の前。"
+description: "BitcoinTalkトピック84におけるDataWraithの文脈投稿。msg1781の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

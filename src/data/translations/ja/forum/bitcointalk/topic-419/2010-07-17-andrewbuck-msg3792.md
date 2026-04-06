@@ -1,5 +1,5 @@
 ---
-title: "Re: （AndrewBuckのコンテキスト投稿）"
+title: "Re: （AndrewBuckの文脈投稿）"
 date: 2010-07-17T19:46:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "BitcoinTalkトピック419におけるAndrewBuckのコンテキスト投稿。msg3830の前。"
+description: "BitcoinTalkトピック419におけるAndrewBuckの文脈投稿。msg3830の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

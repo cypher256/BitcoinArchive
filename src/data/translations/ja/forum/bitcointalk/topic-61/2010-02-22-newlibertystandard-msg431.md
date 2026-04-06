@@ -1,5 +1,5 @@
 ---
-title: "Re:（NewLibertyStandardのコンテキスト投稿）"
+title: "Re:（NewLibertyStandardの文脈投稿）"
 date: 2010-02-22T19:33:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック61におけるNewLibertyStandardのコンテキスト投稿。msg433の前。"
+description: "BitcoinTalkトピック61におけるNewLibertyStandardの文脈投稿。msg433の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re:（I-am-not-anonymousのコンテキスト投稿）"
+title: "Re:（I-am-not-anonymousの文脈投稿）"
 date: 2010-03-03T03:48:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "I-am-not-anonymous"
 participants:
   - name: "I-am-not-anonymous"
     slug: "i-am-not-anonymous"
-description: "BitcoinTalkトピック69におけるI-am-not-anonymousのコンテキスト投稿。msg614の前。"
+description: "BitcoinTalkトピック69におけるI-am-not-anonymousの文脈投稿。msg614の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

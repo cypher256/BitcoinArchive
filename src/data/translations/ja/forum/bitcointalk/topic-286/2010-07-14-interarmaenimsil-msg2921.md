@@ -8,7 +8,7 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "BitcoinTalkトピック286におけるInterArmaEnimSilのコンテキスト投稿。msg2947の前。"
+description: "BitcoinTalkトピック286におけるInterArmaEnimSilの文脈投稿。msg2947の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック191におけるギャビン・アンドレセンのコンテキスト投稿。msg1614の前。"
+description: "BitcoinTalkトピック191におけるギャビン・アンドレセンの文脈投稿。msg1614の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -8,7 +8,7 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "BitcoinTalkトピック393におけるAndrewBuckのコンテキスト投稿。msg3828の前。"
+description: "BitcoinTalkトピック393におけるAndrewBuckの文脈投稿。msg3828の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

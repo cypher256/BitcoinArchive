@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック151におけるSmokeTooMuchのコンテキスト投稿。msg3247で引用。"
+description: "BitcoinTalkトピック151におけるSmokeTooMuchの文脈投稿。msg3247で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete

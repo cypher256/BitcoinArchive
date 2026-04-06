@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック969におけるギャビン・アンドレセンのコンテキスト投稿。msg12130の前。"
+description: "BitcoinTalkトピック969におけるギャビン・アンドレセンの文脈投稿。msg12130の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

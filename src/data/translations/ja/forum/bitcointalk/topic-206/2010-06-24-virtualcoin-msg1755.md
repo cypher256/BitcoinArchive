@@ -1,5 +1,5 @@
 ---
-title: "Re: （virtualcoinのコンテキスト投稿）"
+title: "Re: （virtualcoinの文脈投稿）"
 date: 2010-06-24T22:07:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック206におけるvirtualcoinのコンテキスト投稿。msg1816の前。"
+description: "BitcoinTalkトピック206におけるvirtualcoinの文脈投稿。msg1816の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

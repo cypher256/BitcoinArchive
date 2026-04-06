@@ -1,5 +1,5 @@
 ---
-title: "Re: （XaviorPenguinのコンテキスト投稿）"
+title: "Re: （XaviorPenguinの文脈投稿）"
 date: 2010-07-14T01:05:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "XaviorPenguin"
 participants:
   - name: "XaviorPenguin"
     slug: "xaviorpenguin"
-description: "BitcoinTalkトピック295におけるXaviorPenguinのコンテキスト投稿。msg3350の前。"
+description: "BitcoinTalkトピック295におけるXaviorPenguinの文脈投稿。msg3350の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

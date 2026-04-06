@@ -6,17 +6,16 @@ Bitcoin Institute is a bilingual (English/Japanese) reference site that collects
 
 ## Contents
 
-The archive contains 2,300+ entries across 10 categories:
+The archive contains 2,300+ entries organized by type:
 
-- **Forum** (1,815 entries): BitcoinTalk forum posts (1,811) and P2P Foundation posts (4), including Satoshi's posts and context posts from other participants
-- **Correspondence** (337 entries): Private emails between Satoshi and 9 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Laszlo Hanyecz, Martti Malmi, Mike Hearn, Nicholas Bohm, Wei Dai
-- **Article** (72 entries): Analysis, media coverage, and research articles from various sources
-- **Emails** (46 entries): Mailing list posts — Cryptography (28), Bitcoin-list (15), P2P Research (3)
-- **Biography** (25 entries): Biographical profiles of key participants compiled from public sources
-- **SourceForge** (17 entries): Key development milestones from Bitcoin's SourceForge project
-- **BIP** (11 entries): Bitcoin Improvement Proposals relevant to Satoshi's design
-- **Court Document** (3 entries): COPA v Wright trial materials
-- **Whitepaper** (2 entries): Bitcoin whitepaper draft and final version
+- **Forum Posts** (1,815): BitcoinTalk (1,811) and P2P Foundation (4), including Satoshi's posts and context posts from other participants
+- **Correspondence** (337): Private emails between Satoshi and 9 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Laszlo Hanyecz, Martti Malmi, Mike Hearn, Nicholas Bohm, Wei Dai
+- **Articles** (72): Analysis, media coverage, research, and post-disappearance historical analysis
+- **Mailing List** (46): Cryptography mailing list (28), Bitcoin-list (15), P2P Research (3)
+- **Biographies** (25): Biographical profiles of key participants compiled from public sources
+- **BIPs** (11): Bitcoin Improvement Proposals relevant to Satoshi's design
+- **Court Documents** (3): COPA v Wright trial materials
+- **Whitepapers** (2): Bitcoin whitepaper draft and final version
 
 ## Key Pages
 

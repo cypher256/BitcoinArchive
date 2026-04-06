@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック648におけるNewLibertyStandardのコンテキスト投稿。msg9145の前。"
+description: "BitcoinTalkトピック648におけるNewLibertyStandardの文脈投稿。msg9145の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

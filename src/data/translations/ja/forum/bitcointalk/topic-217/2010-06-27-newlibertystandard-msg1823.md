@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック217におけるNewLibertyStandardのコンテキスト投稿。msg1827の前。"
+description: "BitcoinTalkトピック217におけるNewLibertyStandardの文脈投稿。msg1827の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

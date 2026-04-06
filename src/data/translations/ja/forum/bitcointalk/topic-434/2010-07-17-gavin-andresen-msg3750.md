@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック434におけるギャビン・アンドレセンのコンテキスト投稿。msg3770の前。"
+description: "BitcoinTalkトピック434におけるギャビン・アンドレセンの文脈投稿。msg3770の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

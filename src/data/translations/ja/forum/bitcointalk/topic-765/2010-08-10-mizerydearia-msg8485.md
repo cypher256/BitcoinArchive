@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック765におけるmizerydeariaのコンテキスト投稿。msg8628の前。"
+description: "BitcoinTalkトピック765におけるmizerydeariaの文脈投稿。msg8628の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

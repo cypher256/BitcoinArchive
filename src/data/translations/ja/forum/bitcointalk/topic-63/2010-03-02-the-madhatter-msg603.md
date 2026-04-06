@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック63におけるThe Madhatterのコンテキスト投稿。msg633の前。"
+description: "BitcoinTalkトピック63におけるThe Madhatterの文脈投稿。msg633の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

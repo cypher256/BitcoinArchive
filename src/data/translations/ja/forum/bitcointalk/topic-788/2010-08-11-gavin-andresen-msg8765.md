@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック788におけるギャビン・アンドレセンのコンテキスト投稿。msg8804の前。"
+description: "BitcoinTalkトピック788におけるギャビン・アンドレセンの文脈投稿。msg8804の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

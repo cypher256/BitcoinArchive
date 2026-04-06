@@ -8,7 +8,7 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック83におけるBitcoinFXのコンテキスト投稿。msg810の前。"
+description: "BitcoinTalkトピック83におけるBitcoinFXの文脈投稿。msg810の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

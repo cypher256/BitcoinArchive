@@ -8,7 +8,7 @@ author: "vishwambar"
 participants:
   - name: "vishwambar"
     slug: "vishwambar"
-description: "BitcoinTalkトピック318におけるvishwambarのコンテキスト投稿。msg2903の前。"
+description: "BitcoinTalkトピック318におけるvishwambarの文脈投稿。msg2903の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

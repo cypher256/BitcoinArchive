@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック820におけるNewLibertyStandardのコンテキスト投稿。msg9655に引用。"
+description: "BitcoinTalkトピック820におけるNewLibertyStandardの文脈投稿。msg9655に引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete

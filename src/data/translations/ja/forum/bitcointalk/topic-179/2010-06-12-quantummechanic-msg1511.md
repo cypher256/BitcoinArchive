@@ -8,7 +8,7 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "BitcoinTalkトピック165におけるQuantumMechanicのコンテキスト投稿。msg1595の前。"
+description: "BitcoinTalkトピック165におけるQuantumMechanicの文脈投稿。msg1595の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

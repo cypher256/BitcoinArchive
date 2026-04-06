@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック691におけるthroughputのコンテキスト投稿。msg9041の前。"
+description: "BitcoinTalkトピック691におけるthroughputの文脈投稿。msg9041の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

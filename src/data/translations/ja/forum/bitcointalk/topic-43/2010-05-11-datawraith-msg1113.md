@@ -8,7 +8,7 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック43におけるDataWraithのコンテキスト投稿。msg1323の前。"
+description: "BitcoinTalkトピック43におけるDataWraithの文脈投稿。msg1323の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

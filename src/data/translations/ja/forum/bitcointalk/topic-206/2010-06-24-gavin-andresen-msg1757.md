@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンのコンテキスト投稿）"
+title: "Re: （ギャビン・アンドレセンの文脈投稿）"
 date: 2010-06-24T23:13:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック206におけるギャビン・アンドレセンのコンテキスト投稿。msg1816の前。"
+description: "BitcoinTalkトピック206におけるギャビン・アンドレセンの文脈投稿。msg1816の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

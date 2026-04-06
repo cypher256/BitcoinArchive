@@ -59,13 +59,10 @@ Private email exchanges between Satoshi and key participants:
 - **P2P Research** (3 emails): Peer-to-peer technology discussions
 
 ### Articles (72 entries)
-Analysis, media coverage, and research articles from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
+Analysis, media coverage, research articles, and post-disappearance historical analysis from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
 
 ### Biographies (25 entries)
 Biographical profiles of key participants compiled from multiple public sources. These are not direct transcriptions of any single document.
-
-### SourceForge Milestones (17 entries)
-Key software releases and development milestones from Bitcoin's SourceForge project.
 
 ### Bitcoin Improvement Proposals (11 entries)
 BIPs relevant to Satoshi's original design and vision.

@@ -1,5 +1,5 @@
 ---
-title: "Re:（BitcoinFXのコンテキスト投稿）"
+title: "Re:（BitcoinFXの文脈投稿）"
 date: 2010-02-06T15:12:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック44におけるBitcoinFXのコンテキスト投稿。msg267の前。"
+description: "BitcoinTalkトピック44におけるBitcoinFXの文脈投稿。msg267の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

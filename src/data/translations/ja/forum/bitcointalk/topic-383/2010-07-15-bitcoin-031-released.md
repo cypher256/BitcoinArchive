@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "satoshiがスレッドを開始: 0.3.1リリース候補、テストしてください"
+description: "サトシ・ナカモトがスレッドを開始: 0.3.1リリース候補、テストしてください"
 isSatoshi: true
 tags: []
 translationStatus: complete

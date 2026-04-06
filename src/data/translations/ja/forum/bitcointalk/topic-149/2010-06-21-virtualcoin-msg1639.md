@@ -8,7 +8,7 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック149におけるvirtualcoinのコンテキスト投稿。msg1653の前。"
+description: "BitcoinTalkトピック149におけるvirtualcoinの文脈投稿。msg1653の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

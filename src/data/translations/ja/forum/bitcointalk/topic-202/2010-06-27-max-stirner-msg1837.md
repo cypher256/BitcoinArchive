@@ -8,7 +8,7 @@ author: "Max Stirner"
 participants:
   - name: "Max Stirner"
     slug: "max-stirner"
-description: "BitcoinTalkトピック202におけるMax Stirnerのコンテキスト投稿。msg1838の前。"
+description: "BitcoinTalkトピック202におけるMax Stirnerの文脈投稿。msg1838の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

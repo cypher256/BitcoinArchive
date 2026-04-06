@@ -1,5 +1,5 @@
 ---
-title: "Re: （Quantumplationのコンテキスト投稿）"
+title: "Re: （Quantumplationの文脈投稿）"
 date: 2010-07-16T14:14:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "BitcoinTalkトピック364におけるQuantumplationのコンテキスト投稿。msg3559の前。"
+description: "BitcoinTalkトピック364におけるQuantumplationの文脈投稿。msg3559の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

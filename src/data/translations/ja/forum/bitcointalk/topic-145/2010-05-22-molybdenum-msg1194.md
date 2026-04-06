@@ -8,7 +8,7 @@ author: "molybdenum"
 participants:
   - name: "molybdenum"
     slug: "molybdenum"
-description: "BitcoinTalkトピック145におけるmolybdenumのコンテキスト投稿。msg1256で引用。"
+description: "BitcoinTalkトピック145におけるmolybdenumの文脈投稿。msg1256で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete

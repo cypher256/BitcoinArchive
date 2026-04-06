@@ -8,7 +8,7 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalkトピック403におけるGround Loopのコンテキスト投稿。msg3545の前。"
+description: "BitcoinTalkトピック403におけるGround Loopの文脈投稿。msg3545の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

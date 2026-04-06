@@ -8,7 +8,7 @@ author: "SheriffWoody"
 participants:
   - name: "SheriffWoody"
     slug: "sheriffwoody"
-description: "BitcoinTalkトピック101におけるSheriffWoodyのコンテキスト投稿。msg1134の前。"
+description: "BitcoinTalkトピック101におけるSheriffWoodyの文脈投稿。msg1134の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
