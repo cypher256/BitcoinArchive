@@ -16,6 +16,22 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: '*** ALERT *** Upgrade to 0.3.6 ASAP!',
     ja: '*** 警告 *** 0.3.6に今すぐアップグレードしてください！',
   },
+  'forum/bitcointalk/topic-441': {
+    en: 'Did block generation crawl to a halt?',
+    ja: 'ブロック生成は停滞したのか？',
+  },
+  'forum/bitcointalk/topic-628': {
+    en: 'Implementation bug prior to 0.3.6',
+    ja: '0.3.6以前の実装バグ',
+  },
+  'forum/bitcointalk/topic-671': {
+    en: 'Tax implications of Bitcoin',
+    ja: 'Bitcoinの税務上の影響',
+  },
+  'forum/bitcointalk/topic-870': {
+    en: 'Hypothetical question on lost coins/transfers',
+    ja: '失われたコイン/送金に関する仮説的な質問',
+  },
   'forum/bitcointalk/topic-7': {
     en: 'Request: Make this anonymous?',
     ja: 'リクエスト：これを匿名にできますか？',
@@ -23,10 +39,6 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
   'forum/bitcointalk/topic-342': {
     en: 'They want to delete the Wikipedia article',
     ja: 'Wikipediaの記事を削除しようとしている',
-  },
-  'forum/bitcointalk/topic-671': {
-    en: 'Tax implications of Bitcoin',
-    ja: 'ビットコインの税務上の影響',
   },
   'forum/bitcointalk/topic-125': {
     en: 'Ummmm... where did my bitcoins go?',
