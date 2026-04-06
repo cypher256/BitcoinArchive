@@ -10,6 +10,7 @@
     "check:ja-tone": "node scripts/check-ja-tone.mjs",
     "check:ja-names": "node scripts/check-ja-names.mjs",
     "check:ja-titles": "node scripts/check-ja-titles.mjs",
+    "extract:quotes": "node scripts/extract-quotes.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
     "astro": "astro"
