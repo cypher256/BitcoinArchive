@@ -1,18 +1,10 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
-import satori from 'satori';
-import sharp from 'sharp';
-import fs from 'node:fs';
-import path from 'node:path';
 
-const fontPath = path.resolve('src/assets/fonts/NotoSansJP-Bold.ttf');
-const fontData = fs.readFileSync(fontPath);
+const skipOg = process.env.CI !== 'true' && process.env.GENERATE_OG !== 'true';
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Skip OG image generation in local dev builds (CI sets this automatically)
-  if (process.env.CI !== 'true' && process.env.GENERATE_OG !== 'true') {
-    return [];
-  }
+  if (skipOg) return [];
 
   const enEntries = await getCollection('entries');
   const jaEntries = await getCollection('entries_ja');
@@ -62,6 +54,15 @@ function truncate(text: string, maxLen: number): string {
 }
 
 export const GET: APIRoute = async ({ props }) => {
+  // Dynamic imports — only loaded when OG images are actually generated
+  const satori = (await import('satori')).default;
+  const sharp = (await import('sharp')).default;
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+
+  const fontPath = path.resolve('src/assets/fonts/NotoSansJP-Bold.ttf');
+  const fontData = fs.readFileSync(fontPath);
+
   const { title, author, date, isSatoshi, lang } = props as {
     title: string;
     author: string;
