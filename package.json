@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist && node scripts/algolia-index.mjs",
+    "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-quotes.mjs && node scripts/generate-git-dates.mjs && astro build && npx pagefind --site dist && node scripts/algolia-index.mjs",
 "check": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-quotes.mjs && astro sync",
     "check:image-alt": "node scripts/check-markdown-image-alt.mjs",
     "check:participants": "node scripts/check-participants.mjs",
