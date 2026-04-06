@@ -21,7 +21,7 @@ http://www.informit.com/articles/article.aspx?p=1237179
 Network splits are easier to produce, and happen more often, than many users on this forum think.
 You don't really need to cut any cable, nor hack into ISP's router to plug that ISP off Internet.
 You don't need to hack his peers either. All you need is BGP router in any AS (and some unwary BGP peers).
-I have one  Grin
+I have one  😄
 
 So, it is possible to talk about a short (1 - 3 hours) and controlled network split.
 Not just split in half, but split into ASes. After an hour or three-four most of ISPs will recover, but that

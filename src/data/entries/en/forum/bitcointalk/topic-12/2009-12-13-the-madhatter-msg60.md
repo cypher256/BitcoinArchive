@@ -15,4 +15,4 @@ tags: []
 
 Um, so command line only mode could be selected at compile-time? Perhaps with a define? And that would shut off the graphical UI stuff?
 
-Just want to be on the same page here. Smiley
+Just want to be on the same page here. 😊

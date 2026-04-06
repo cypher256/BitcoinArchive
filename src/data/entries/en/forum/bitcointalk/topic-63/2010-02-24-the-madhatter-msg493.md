@@ -15,4 +15,4 @@ tags: []
 
 Why would you install them? Because you currently have to. I know the feeling. I run minimalist FreeBSD servers and to clutter them with X libraries is a pain.
 
-However, installing them onto a X workstation is totally fine -- you usually have all of the correct dependancies already. Tongue
+However, installing them onto a X workstation is totally fine -- you usually have all of the correct dependancies already. 😛

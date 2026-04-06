@@ -13,6 +13,6 @@ isSatoshi: false
 tags: []
 ---
 
-That wchar thing was what I was stuck on for the OSX build. Cheesy
+That wchar thing was what I was stuck on for the OSX build. 😁
 
 Glad to see it is ironed out. I'll keep hacking away now.

@@ -15,4 +15,4 @@ tags: []
 
 Thanks SmokeTM.
 
-Both Micro donations were successfully received. Smiley
+Both Micro donations were successfully received. 😊

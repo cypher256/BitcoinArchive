@@ -15,4 +15,4 @@ tags: []
 
 wow ! Yeah looking really good Cool
 
-As well as GNU GPL why not attach a Creative Commons License http://creativecommons.org/ to them. You can reference the project address and request a Bitcoin donation for their reproduction. Smiley
+As well as GNU GPL why not attach a Creative Commons License http://creativecommons.org/ to them. You can reference the project address and request a Bitcoin donation for their reproduction. 😊

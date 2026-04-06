@@ -54,7 +54,7 @@ Java and some flash support is always an issue though !
 
 I would be happy to work on and share contributions for a 'bitcoin' proxy software, but have limited time and developer experience myself. Maybe you should contact the psiphon developers for a separate v1.6 style implementation yourself satoshi ?
 
-I understand that the Tor project is also looking for a payment / incentive system for it's server operators. Smiley
+I understand that the Tor project is also looking for a payment / incentive system for it's server operators. 😊
 
 Could you change the thread title to "Re: Idea for file hosting and proxy services". Thanks.
 

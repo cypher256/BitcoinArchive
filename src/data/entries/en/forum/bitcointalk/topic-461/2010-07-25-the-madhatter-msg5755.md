@@ -15,4 +15,4 @@ tags: []
 
 Hmm.. shouldn't it be using digest auth instead of basic auth?
 
-I usually wrap everything into SSL or IPSec anyway, but digest auth might keep noobs from getting pwned so easily. Tongue
+I usually wrap everything into SSL or IPSec anyway, but digest auth might keep noobs from getting pwned so easily. 😛

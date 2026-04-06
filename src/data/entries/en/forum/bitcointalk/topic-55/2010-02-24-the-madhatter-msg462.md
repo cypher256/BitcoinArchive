@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-Yeah, I had totally thought of that too. A magnet link scheme would be awesome. Cheesy
+Yeah, I had totally thought of that too. A magnet link scheme would be awesome. 😁

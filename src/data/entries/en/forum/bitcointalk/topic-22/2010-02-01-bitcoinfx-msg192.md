@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-OK So, I tried to set-up a sudo-anonymous crypto 'Bitcoin Bank' experiment using Tor. Grin
+OK So, I tried to set-up a sudo-anonymous crypto 'Bitcoin Bank' experiment using Tor. 😄
 
 Whilst it was mostly successful using the standard 9050 socks port 'default setup' i.e. I got connectivity to other Bitcoin nodes through Tor; I did encounter various issues and multiple Warning messages.
 
@@ -30,4 +30,4 @@ Connecting Bitcoin through Tor also makes Tor repeatedly change exit nodes looki
 
 Other P2P applications through Tor can 'ignore' IP addresses that they cannot connect to and the application can still get the job done without 'warning'. However, Bitcoin *must* try to connect with all nodes to check its not missing any blocks ! So, if an IP range where only 1 Bitcoin node is running is blocking Tor exit nodes, then presumably this will always be the case ?
 
-This is problematic for many reasons. Huh
+This is problematic for many reasons. 😕

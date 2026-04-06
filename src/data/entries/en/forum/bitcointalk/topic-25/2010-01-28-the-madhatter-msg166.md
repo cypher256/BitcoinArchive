@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-A balance between extended transaction data while NOT becoming an instant messenger client would be nice. Tongue
+A balance between extended transaction data while NOT becoming an instant messenger client would be nice. 😛

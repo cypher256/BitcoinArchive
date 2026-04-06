@@ -15,4 +15,4 @@ tags: []
 
 You'll want to renice +20 bitcoin then. I wouldn't dream of sharing a bitcoin in generation mode on a box that was playing videos. Choppy videos annoy the hell outta me.
 
-Tongue
+😛

@@ -13,6 +13,6 @@ isSatoshi: false
 tags: []
 ---
 
-You can have the 5 you gave me back.  I just wanted to see how this all works and all and hopefully, I will have some coins popping up every couple of days.  Smiley
+You can have the 5 you gave me back.  I just wanted to see how this all works and all and hopefully, I will have some coins popping up every couple of days.  😊
 
 Thank you for running a great program/incentive!  I appreciate it!

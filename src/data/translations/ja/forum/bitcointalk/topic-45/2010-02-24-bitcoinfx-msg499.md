@@ -16,4 +16,4 @@ translationStatus: complete
 
 おお！ とても良い出来だ。Cool
 
-GNU GPLに加えて、Creative Commonsライセンス http://creativecommons.org/ も付けたらどうか。プロジェクトアドレスを参照して、複製に対してBitcoinでの寄付を依頼できる。Smiley
+GNU GPLに加えて、Creative Commonsライセンス http://creativecommons.org/ も付けたらどうか。プロジェクトアドレスを参照して、複製に対してBitcoinでの寄付を依頼できる。😊

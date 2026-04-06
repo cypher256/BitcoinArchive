@@ -25,7 +25,7 @@ Now I'm confused again.  I thought your scheme didn't have blocks, just transact
 
 But standard DHTs are typically used to store chunks of MP3s or movies, indexed by a torrent file that has the hash for every piece.  So it is easy for me to tell whether or not I'm getting bad data from any particular DHT node.  I don't have to trust them.
 
-Huh?  Lets say the network has 10,000 nodes in it.  I query the network to find the network node closest to a transaction that I want to double-spend.
+😕?  Lets say the network has 10,000 nodes in it.  I query the network to find the network node closest to a transaction that I want to double-spend.
 
 So I generate a private key.  It has about a 1 in 10,000 chance of being closer than the current closest node.  So I keep generating private keys until I have 5 that are closer.  It's too late for me to figure out the odds, but lets say I generate 100,000 private keys, I'm pretty darn likely to find 5.  My wimpy laptop can generate at LEAST 100 ECC keys/second, so in under 20 minutes it could generate 100,000.
 

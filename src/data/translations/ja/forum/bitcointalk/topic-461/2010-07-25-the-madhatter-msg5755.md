@@ -16,4 +16,4 @@ translationStatus: complete
 
 うーん……basic認証ではなくdigest認証を使うべきではないか？
 
-私は普段すべてをSSLかIPSecで包んでいるが、digest認証なら初心者が簡単にやられるのを防げるかもしれない。Tongue
+私は普段すべてをSSLかIPSecで包んでいるが、digest認証なら初心者が簡単にやられるのを防げるかもしれない。😛

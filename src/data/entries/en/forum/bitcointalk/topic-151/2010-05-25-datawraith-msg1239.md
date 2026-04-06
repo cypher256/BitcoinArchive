@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-My pleasure. Smiley
+My pleasure. 😊
 
 I've fixed the problems SmokeTooMuch mentioned (thanks!) in the attached version. I also should have the FAQ translated soonish (first draft is done).
 

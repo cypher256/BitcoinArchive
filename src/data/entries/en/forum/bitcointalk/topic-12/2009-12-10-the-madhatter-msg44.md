@@ -21,15 +21,15 @@ Most modern P2P software tries UPnP by default. You can (of course) disable it (
 
 Hmm. I had thought about that as well. Your first idea is probably best. That way you can run the server daemon "headless" and have your choice of a front end. (One of the front ends could be a PHP [or C++ CGI] program that runs on your favorite webserver).
 
-This would also enable you to run the front end and back end on different machines. (Ex. headless on a linux server that has a static IP to make receiving payments easier [pay by ip mode] and a front end client for management that can be ran on windows/mac/or something else). Front ends can also be ran on clients with very low cpu power such as mobile phones. *nudge nudge* Wink
+This would also enable you to run the front end and back end on different machines. (Ex. headless on a linux server that has a static IP to make receiving payments easier [pay by ip mode] and a front end client for management that can be ran on windows/mac/or something else). Front ends can also be ran on clients with very low cpu power such as mobile phones. *nudge nudge* 😉
 
-One other thing I have thought of is the seeding. The app could be pre-seeded before downloading. You could prepare a new archive daily that is pre-seeded. That would do away with the IRC connection. (Or it could be used as a fallback, I suppose. I still haven't audited the IRC connection code. I am thinking of a few exploits but I don't want to mention them until I am sure they exist.) Pre-seeding would also cure the TOR+IRC problem. I know that people will want to run this system over I2P+TOR. Tongue
+One other thing I have thought of is the seeding. The app could be pre-seeded before downloading. You could prepare a new archive daily that is pre-seeded. That would do away with the IRC connection. (Or it could be used as a fallback, I suppose. I still haven't audited the IRC connection code. I am thinking of a few exploits but I don't want to mention them until I am sure they exist.) Pre-seeding would also cure the TOR+IRC problem. I know that people will want to run this system over I2P+TOR. 😛
 
 Also you could pre-seed the blocks so they won't have to be downloaded upon initial run. (Downloading 28,000 blocks on a slower ADSL takes forever I couldn't imagine how long it would take when there are millions of blocks -- a lifetime).
 
 Can you give me CVS access or something? (If not, can I send you patches?) I'd like to help out. I am mostly a Linux/BSD guy and I would like to lend my expertise in those areas.
 
-Cheers! Smiley
+Cheers! 😊
 
 <!-- quote: q1 -->
 > I'm looking forward to trying UPnP.  Do most P2P clients typically have UPnP enabled by default?

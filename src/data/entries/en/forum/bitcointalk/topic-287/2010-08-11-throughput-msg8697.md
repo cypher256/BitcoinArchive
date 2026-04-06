@@ -38,6 +38,6 @@ Hmm, I think the other guys may not ask your permission to abuse the real networ
 They will just do it.
 
 I'm sure, the Bitcoin is useless if it is vulnerable to such a simple intrusion.
-We should prove, that it is sustainable to real world threats. **Like me**  Grin
+We should prove, that it is sustainable to real world threats. **Like me**  😄
 
 Perhaps somebody just experimented already?

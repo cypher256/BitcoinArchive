@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-喜んで。Smiley
+喜んで。😊
 
 SmokeTooMuchが指摘した問題（ありがとう！）を添付バージョンで修正した。FAQの翻訳もそろそろ完了するはずだ（初稿は完了済み）。
 

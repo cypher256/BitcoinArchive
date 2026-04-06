@@ -16,4 +16,4 @@ translationStatus: complete
 
 了解、SFに登録した。ユーザー名は「madhatter2」だ。
 
-Smiley
+😊

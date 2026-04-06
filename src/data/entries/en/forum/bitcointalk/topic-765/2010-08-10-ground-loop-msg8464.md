@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-Hah!  This sure helps explain a long-standing mystery.. why my 10,000 khash/sec Linux 64-bit machine is the only one that has never, in two weeks, generated a block. Smiley
+Hah!  This sure helps explain a long-standing mystery.. why my 10,000 khash/sec Linux 64-bit machine is the only one that has never, in two weeks, generated a block. 😊

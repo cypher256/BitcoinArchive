@@ -14,6 +14,6 @@ tags: []
 translationStatus: complete
 ---
 
-あのwcharの問題は、俺がOSXビルドで行き詰まっていた部分だ。Cheesy
+あのwcharの問題は、俺がOSXビルドで行き詰まっていた部分だ。😁
 
 解決されたのを見てうれしい。引き続きハックしていこう。

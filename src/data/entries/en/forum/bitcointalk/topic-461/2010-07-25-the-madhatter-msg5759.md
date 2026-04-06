@@ -13,8 +13,8 @@ isSatoshi: false
 tags: []
 ---
 
-Hmm... I implemented digest auth into a custom webserver I wrote a decade ago. From what I remember, it was fairly easy. However, client support back then was rather shoddy. It has improved a lot since then. Smiley
+Hmm... I implemented digest auth into a custom webserver I wrote a decade ago. From what I remember, it was fairly easy. However, client support back then was rather shoddy. It has improved a lot since then. 😊
 
 Perhaps we could document a simple stunnel + bitcoin configuration on the wiki then? Under a section called "Securely using bitcoind from remote"?
 
-Just offering my 2c as usual. Tongue
+Just offering my 2c as usual. 😛

@@ -21,8 +21,8 @@ I have a lot of servers spread across the globe. If we can get to the point wher
 
 I really think that having the download package contain a daily seed snapshot will improve the bootstrapping. I have seen instances on new test installs here where the application will sit with 0 connections / 1 block. Upon inspecting the debug.log I find that the IRC server (freenode, I believe) claims I am already connected and refuses to let me seed the application. (Just an example).
 
-I think that a simple network monitor plugin for Nagios would be helpful as well. Something that can emulate a connecting client, and retrieve a valid status code from the backend process. I have a lot of ideas. Smiley
+I think that a simple network monitor plugin for Nagios would be helpful as well. Something that can emulate a connecting client, and retrieve a valid status code from the backend process. I have a lot of ideas. 😊
 
 In any event, I would like to help. I have a lot of time and a project like this one is very exciting.
 
-Thanks for letting me be a part of it. Smiley
+Thanks for letting me be a part of it. 😊

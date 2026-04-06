@@ -17,6 +17,6 @@ Good idea.
 
 I'll eventually be setting up a 'one hop', SSL, http, login protected proxy service (similar to the 1st Psiphon project) and accepting bitcoins as payment.
 
-I'm UK based so it will be good for using BBC iplayer etc. Smiley I will be giving bitcoin users priority service, as well as users from 'restricted' countries.
+I'm UK based so it will be good for using BBC iplayer etc. 😊 I will be giving bitcoin users priority service, as well as users from 'restricted' countries.
 
 I doubt I'll have the spare bandwidth for a file hosting service though, maybe.

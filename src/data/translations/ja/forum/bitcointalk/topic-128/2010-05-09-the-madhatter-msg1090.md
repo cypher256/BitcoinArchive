@@ -16,4 +16,4 @@ translationStatus: complete
 
 それならbitcoinをrenice +20すべきだ。動画を再生しているマシンで生成モードのbitcoinを共有するなんて、俺は夢にも思わない。カクカクした動画は本当にイライラする。
 
-Tongue
+😛

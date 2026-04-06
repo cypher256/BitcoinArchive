@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-Thanks, I understand that and my port 8333 is correctly forwarded to my 24/7 Bitcoin machine. Grin
+Thanks, I understand that and my port 8333 is correctly forwarded to my 24/7 Bitcoin machine. 😄
 
 However, lets say that I have 2 machines on the same IP running Bitcoin without port 8333 forwarded on either !
 

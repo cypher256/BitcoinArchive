@@ -14,4 +14,4 @@ tags: []
 ---
 
 I don't thinks it looks ugly.
-You can change the buttons back to the right side if you wish, just google for it. Smiley
+You can change the buttons back to the right side if you wish, just google for it. 😊

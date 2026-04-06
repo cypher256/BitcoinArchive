@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-That is odd !?! I've currently only had 50.00 generations myself.  Huh
+That is odd !?! I've currently only had 50.00 generations myself.  😕

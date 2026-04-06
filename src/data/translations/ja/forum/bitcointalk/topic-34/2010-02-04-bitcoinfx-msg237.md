@@ -16,4 +16,4 @@ translationStatus: complete
 
 ありがとうSmokeTM。
 
-少額寄付は2件とも無事に受信できた。Smiley
+少額寄付は2件とも無事に受信できた。😊

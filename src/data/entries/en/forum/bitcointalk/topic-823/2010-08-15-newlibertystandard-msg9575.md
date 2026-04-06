@@ -17,4 +17,4 @@ I can't stand the suspense! Do any Jr. Members or higher happen to have an unoff
 
 Edit: Updated the SVN version number as per satoshi's comment a moment ago.
 
-Ah, never mind. Since the SVN version was just updated and the Windows builds were just released, I'll wait. Embarrassed
+Ah, never mind. Since the SVN version was just updated and the Windows builds were just released, I'll wait. 😳

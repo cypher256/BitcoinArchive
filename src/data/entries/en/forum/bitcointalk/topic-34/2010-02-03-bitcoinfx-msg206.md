@@ -40,6 +40,6 @@ Not so ? I have had 2 machines connected (getting 4+ connections on each) and ge
 
 I think my original question was valid and thanks for clarifying this everyone. NewLibertyStandard I think is correct "If I remember correctly I think I was told that they would be sent to the first bitcoin application with whom the sender connects."
 
-I dislike communication on forums, it's hard to discuss topics sometimes when all parties mean the same thing and communicate it in a different way ! Smiley 
+I dislike communication on forums, it's hard to discuss topics sometimes when all parties mean the same thing and communicate it in a different way ! 😊 
 
-I have enough internet connections, routers and PC equipment - So, I'm off to make an 'official' test for myself whilst I RTM  Grin
+I have enough internet connections, routers and PC equipment - So, I'm off to make an 'official' test for myself whilst I RTM  😄

@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-[Edit: I later found that I was generating quite a bit more than that, just didn't realize it because of the "matures in xx more blocks" concept. I still think it will be a major headache when the difficulty significantly increases though. I apologize for my silliness Smiley]
+[Edit: I later found that I was generating quite a bit more than that, just didn't realize it because of the "matures in xx more blocks" concept. I still think it will be a major headache when the difficulty significantly increases though. I apologize for my silliness 😊]
 
 Satoshi, I figured it will take my modern core 2 duo about 20 hours of nonstop work to create 50.00! With older PCs it will take forever. People like to feel that they "own" something as soon as possible, is there a way to make the generation more divisible? So say, instead of making 50 every 20 hours, make 5 every 2 hours? 
 

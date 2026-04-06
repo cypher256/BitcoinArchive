@@ -61,7 +61,7 @@ Something like x amount of BTC per GB or MB (instead of a monthly membership), w
 
 I also don't see how bitcoin could be used as a captcha, those are used to make sure there's a human on the other end and not a spam bot...you could easily automate the payments. For this niche, it's paying for high bandwidth, concurrent downloads of pirated content; it just won't work otherwise IMO.
 
-Agorist developers apply within.  Grin
+Agorist developers apply within.  😄
 
 <!-- quote: q3 -->
 > <!-- quote: q4 -->

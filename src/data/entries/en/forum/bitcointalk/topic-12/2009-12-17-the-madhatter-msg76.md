@@ -17,4 +17,4 @@ To build on FreeBSD:
 
 Install all of the required software from /usr/ports and then compile using the makefile.fbsd
 
-"It just works". Smiley
+"It just works". 😊
