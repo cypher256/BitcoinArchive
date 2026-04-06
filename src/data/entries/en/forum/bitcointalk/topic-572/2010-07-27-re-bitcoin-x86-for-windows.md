@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/280/"
+quotes:
+  - id: "q1"
+    person: "Olipro"
+    date: "2010-07-26T04:04:41.000Z"
 ---
 
-[Quote from: Olipro on July 26, 2010, 01:04:41 PM](#msg5851)
+<!-- quote: q1 -->
 > Crypto++ 5.6.0: [http://www.cryptopp.com/](http://www.cryptopp.com/)
 
 Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32) (although I'm pretty sure this is publically submitted elsewhere, I was linked to it on IRC)

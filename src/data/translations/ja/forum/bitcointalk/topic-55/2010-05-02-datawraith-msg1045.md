@@ -12,12 +12,18 @@ description: "BitcoinTalkトピック55におけるDataWraithの引用投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Karmicads"
+    date: "2010-05-01T17:15:51.000Z"
 ---
 
 Karmicads、詳細な返信をありがとう。
 
-[Quote from: Karmicads on May 02, 2010, 02:15:51 AM](#msg1041)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > **速報：...**
+<!-- /tone-skip -->
 
 ああ、Freenetの利用について言っていたのはそういう意味だったのか。ユーザーがFreenetを実行し、BitcoinがFreenetの制御プロトコルを使って通信する。しかし、Freenetの実行にはかなりのコンピュータリソース、特に帯域幅が必要であり、個人的にはそれだけの理由でFreenetノードを動かしたくない。だからこれをオプションにしたかった。
 

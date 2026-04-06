@@ -11,9 +11,13 @@ participants:
 description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 1327. before msg15147."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-10-03T09:17:06.000Z"
 ---
 
-[Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
+<!-- quote: q1 -->
 > Forgot to say, I suspected the detect might not work on 64-bit AMD.  I found it hard to believe but AMD reports a different model number in 64-bit mode.
 > 
 > Could you grep CPUID your debug.log and tell me what it says?  (and anyone else with 64-bit AMD)  And what AMD chip do you have?

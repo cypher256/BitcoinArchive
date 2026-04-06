@@ -13,11 +13,15 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/307/"
+quotes:
+  - id: "q1"
+    person: "tcatm"
+    date: "2010-07-31T01:12:38.000Z"
 ---
 
 Is it 2x fast on AMD and 1/2 fast on Intel?
 
-[Quote from: tcatm on July 31, 2010, 10:12:38 AM](#msg6797)
+<!-- quote: q1 -->
 > Btw. Why are you using this alignup<16> function when __attribute__ ((aligned (16))) will tell the compiler to align at compiletime?
 
 Tried that, but it doesn't work for things on the stack.  I ran some tests.

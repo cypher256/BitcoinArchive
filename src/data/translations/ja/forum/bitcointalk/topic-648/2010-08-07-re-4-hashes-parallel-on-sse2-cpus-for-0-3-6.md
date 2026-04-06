@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/330/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "impossible7"
+    date: "2010-08-06T02:37:20.000Z"
 ---
 
-[Quote from: impossible7 on August 06, 2010, 11:37:20 AM](#msg7838)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > CRITICAL_BLOCKはforループを含むマクロだ。アサーション失敗は、ループ本体内でbreakが呼ばれたことを示している。このブロック内で唯一のbreak文は2762行目にある。オリジナルのソースファイルでは、このクリティカルブロック内にbreak文はない。2759-2762行を削除すべきだと思う。オリジナルのmain.cppにはそのようなものはない。
+<!-- /tone-skip -->
 
 申し訳ない。CRITICAL_BLOCKは完璧ではない。その中からbreakやcontinueしないよう注意が必要だ。breakを検出して警告するassertがある。使用していることを批判されるかもしれないが、これなしでは構文がはるかに冗長でエラーが起きやすくなる。
 

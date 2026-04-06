@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/386/"
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-08-15T18:35:28.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-jgarzik-msg9665"
 ---
 
-[Quote from: jgarzik on August 16, 2010, 03:35:28 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-820/2010-08-16-jgarzik-msg9665/)
+<!-- quote: q1 -->
 > Code:cpu family : 6
 
 model  : 26

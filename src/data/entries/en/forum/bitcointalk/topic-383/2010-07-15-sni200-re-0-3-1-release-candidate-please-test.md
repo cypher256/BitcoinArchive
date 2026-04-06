@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/200/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-15T10:37:10.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3269"
 ---
 
-[Quote from: knightmb on July 15, 2010, 07:37:10 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3269/)
+<!-- quote: q1 -->
 > On Windows, the priority of the Coin Generation is still net for normal. If you run BitCoin in Generate Coin mode, then load up something to eat up all the CPU (like CPU hog for example: [http://www.microtask.ca/cpuhog.html](http://www.microtask.ca/cpuhog.html)) you'll see that both BitCoin and CPU hog share the CPU 50/50 instead of CPU Hog taking all the CPU and BitCoin running only on idle/low process. The khash/s is also reduced in half, so further evidence that the threads are not running in a lower than normal prioirty.
 
 I was not able to reproduce this.  I have dual-proc, so I ran two memory hogs.  Bitcoin got 0% of CPU according to the task manager.  The khash/sec meter stayed stuck because it couldn't get any CPU to update it.

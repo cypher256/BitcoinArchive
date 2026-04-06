@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/385/"
+quotes:
+  - id: "q1"
+    person: "Vasiliev"
+    date: "2010-08-15T18:17:07.000Z"
 ---
 
-[Quote from: Vasiliev on August 16, 2010, 03:17:07 AM](#msg9660)
+<!-- quote: q1 -->
 > try -march=amdfam10
 
 That works.

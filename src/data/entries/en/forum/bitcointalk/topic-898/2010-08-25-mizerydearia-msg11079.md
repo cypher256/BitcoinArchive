@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by mizerydearia in BitcoinTalk topic 898."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-08-24T14:51:12.000Z"
 ---
 
-[Quote from: satoshi on August 24, 2010, 11:51:12 PM](#msg11074)
+<!-- quote: q1 -->
 > If you decide it's a false alarm and want to take your chances, you can use the "-disablesafemode" switch.
 
 I just discovered http://www.bitcoin.org/wiki/doku.php?id=man_page and don't see any reference to -disablesafemode.  Perhaps it should be added!  Also others liek -4way should be added as well.

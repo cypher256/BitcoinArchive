@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/271/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-25T10:44:02.000Z"
 ---
 
-[Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
+<!-- quote: q1 -->
 > If I figure out that Public Key 123456 generates Hash ABCD
 
 and

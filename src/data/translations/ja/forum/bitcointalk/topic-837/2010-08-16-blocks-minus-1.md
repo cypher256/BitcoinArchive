@@ -14,6 +14,11 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "kencausey"
+    date: "2010-08-15T14:45:26.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588"
 ---
 
 ステータスバーに表示されるブロック数を1減らしたいと思う。プログラムを最初にロードした時、1ではなく0ブロックと表示されるようになる：
@@ -25,8 +30,8 @@ translationStatus: complete
 
 ここで起きた混乱を軽減できるだろう：
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: kencausey on August 15, 2010, 11:45:26 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588/)
 > [削除済み] Quote from: davidonpda on August 15, 2010, 11:31:37 PM
 > > ... すでにブロック74638に達している。これはそのブロックが正常なものになったということか？
 <!-- /tone-skip -->

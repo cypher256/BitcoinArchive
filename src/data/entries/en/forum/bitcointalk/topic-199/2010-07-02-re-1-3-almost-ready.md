@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/162/"
+quotes:
+  - id: "q1"
+    person: "dkaparis"
+    date: "2010-06-27T13:02:25.000Z"
 ---
 
-[Quote from: dkaparis on June 27, 2010, 10:02:25 PM](#msg1842)
+<!-- quote: q1 -->
 > On a related note, is the thing compilable by Visual C++? I'm inclined to give it a try when I get around to it.
 
 It is, but generating is more than twice as slow.

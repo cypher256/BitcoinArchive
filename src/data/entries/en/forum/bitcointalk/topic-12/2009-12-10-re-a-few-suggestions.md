@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/16/"
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-10T05:00:17.000Z"
 ---
 
-[Quote from: madhatter2 on December 10, 2009, 02:00:17 PM](#msg44)
+<!-- quote: q1 -->
 > Front ends can also be ran on clients with very low cpu power such as mobile phones. 
 
 That's a good approach for mobile.  Programmatic API used by PHP (any language) to present a web UI covers remote admin, mobile and any other client that can't be online all the time with a static IP.  It would be like webmail.  It would be easier for new users to get started if they only need to create an account on a website, not install software.

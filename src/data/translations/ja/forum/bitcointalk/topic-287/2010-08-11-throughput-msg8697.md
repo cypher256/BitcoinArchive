@@ -12,9 +12,18 @@ description: "BitcoinTalkトピック287におけるthroughputのコンテキス
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Insti"
+    date: "2010-08-10T05:53:41.000Z"
+  - id: "q2"
+    person: "throughput"
+    date: "2010-08-10T01:13:30.000Z"
+    parent: "q1"
 ---
-[Quote from: Insti on August 10, 2010, 02:53:41 PM](#msg8541)
-> [Quote from: throughput on August 10, 2010, 10:13:30 AM](#msg8508)
+<!-- quote: q1 -->
+<!-- tone-skip -->
+> <!-- quote: q2 -->
 > > ところで、いつかネットワークをテストしないか？
 > > 既知のアドレスのリストに小さなトランザクションを送信するプロセスを自動化するのは簡単だ。
 > > ネットワークを酷使して、影響を正確に把握しよう。
@@ -23,6 +32,7 @@ translationStatus: complete
 > 
 > 
 > テストネットワークを使うべきだ。
+<!-- /tone-skip -->
 
 テストネットワークはテスト規模だ。
 

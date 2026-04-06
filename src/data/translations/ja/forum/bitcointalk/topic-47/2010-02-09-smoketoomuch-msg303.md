@@ -12,9 +12,15 @@ description: "BitcoinTalkトピック47におけるSmokeTooMuchの投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-02-09T07:08:39.000Z"
 ---
 
-[Quote from: sirius-m on February 09, 2010, 04:08:39 PM](#msg298)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > bitcoin.orgサイトの翻訳をプライベートメッセージで送ってくれ（長すぎる場合は、メールアドレスをPMで送る）。フロントページだけの翻訳でも構わない。
+<!-- /tone-skip -->
 
 プレーンテキストがいいのか、それとも.htmlや.phpファイルか？

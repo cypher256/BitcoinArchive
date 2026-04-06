@@ -14,16 +14,27 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/493/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-10-21T13:00:26.000Z"
+  - id: "q2"
+    person: "gavinandresen"
+    date: "2010-10-22T05:25:14.000Z"
 ---
 
-[Quote from: theymos on October 21, 2010, 10:00:26 PM](#msg17955)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Dhawがdebug.logファイルのいくつかを送ってくれた。見られた症状：
+<!-- /tone-skip -->
 
 彼は難易度1.0で無効なブロックを生成していた。blk0001.datまたはblkindex.datファイルに破損したエントリがあるはずだ。blk*.datを削除して再ダウンロードさせるだけで済む。
 
 安全ロックダウンが問題を検出し、受け入れられないより長いチェーンが存在することを確認したため「警告：表示されているトランザクションが正しくない可能性があります！」と表示していた。安全ロックダウンは生成を停止することはできない。そうすると攻撃の可能性を生み出してしまうからだ。
 
-[Quote from: gavinandresen on October 22, 2010, 02:25:14 PM](#msg18074)
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > Dhawはこれらのコインをすべて自分のマシンで生成した。
+<!-- /tone-skip -->
 
 良いアイデアだ。チェックポイントブロック74000より前では生成しないように変更した。

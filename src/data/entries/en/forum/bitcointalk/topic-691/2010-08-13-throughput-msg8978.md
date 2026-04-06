@@ -11,10 +11,21 @@ participants:
 description: "Context post by throughput in BitcoinTalk topic 691. before msg9041."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "aceat64"
+    date: "2010-08-12T08:02:43.000Z"
+  - id: "q2"
+    person: "throughput"
+    date: "2010-08-12T06:28:43.000Z"
+    parent: "q1"
+  - id: "q3"
+    person: "satoshi"
+    date: "2010-08-12T12:34:44.000Z"
 ---
 
-[Quote from: aceat64 on August 12, 2010, 05:02:43 PM](#msg8906)
-> [Quote from: throughput on August 12, 2010, 03:28:43 PM](#msg8897)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > Definitively, we need some overall network hps meter in every node.
 > > 
 > > And at last I've found that article:
@@ -39,7 +50,7 @@ Copy the wallet on another PC and use it anywhere!
 2. Why should network isolation only be used for double spending?
 Can't it be used to slow down block generation? Will that affect difficulty adjustment?
 
-[Quote from: satoshi on August 12, 2010, 09:34:44 PM](#msg8922)
+<!-- quote: q3 -->
 > True, there would probably be someone with a dial-up modem or satellite dish internet.  Rarer would be someone who has both that and the wired internet that has the outage, but if it's a big enough segment to matter, out of a million people there's bound to be a multi-home geek.
 
 But there will be no irc server to bootsrap from.

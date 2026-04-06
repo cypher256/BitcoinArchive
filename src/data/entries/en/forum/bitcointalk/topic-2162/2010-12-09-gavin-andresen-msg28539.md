@@ -11,9 +11,13 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 2162. before msg28549."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "chaord"
+    date: "2010-12-08T22:17:12.000Z"
 ---
 
-[Quote from: chaord on December 09, 2010, 07:17:12 AM](#msg28448)
+<!-- quote: q1 -->
 > by default disallow non-standard transactions that exceed 128 bytes (or whatever threshold is agreeable)?
 > 
 > I would like to hear why the above option was thrown out by the developers.

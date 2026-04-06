@@ -11,9 +11,14 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 199. before msg1675."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-06-21T19:01:53.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-199/2010-06-22-0-3-almost-ready-please-test-the-mac-version"
 ---
 
-[Quote from: satoshi on June 22, 2010, 04:01:53 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-199/2010-06-22-0-3-almost-ready-please-test-the-mac-version/)
+<!-- quote: q1 -->
 > I finished everything on my list to do for version 0.3.  The code on SVN is about ready to release.
 > Testing at this point is much appreciated.
 

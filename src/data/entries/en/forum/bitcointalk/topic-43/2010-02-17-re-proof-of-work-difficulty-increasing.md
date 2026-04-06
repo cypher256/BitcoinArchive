@@ -13,14 +13,21 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/61/"
+quotes:
+  - id: "q1"
+    person: "Sabunir"
+    date: "2010-02-15T23:51:51.000Z"
+  - id: "q2"
+    person: "Sabunir"
+    date: "2010-02-15T23:51:51.000Z"
 ---
 
-[Quote from: Sabunir on February 16, 2010, 08:51:51 AM](#msg372)
+<!-- quote: q1 -->
 > . Perhaps it has to do with my connection's very high latency (2000ms or more on average) 
 
 2 seconds of latency in both directions should reduce your generation success by less than 1%.
 
-[Quote from: Sabunir on February 16, 2010, 08:51:51 AM](#msg372)
+<!-- quote: q2 -->
 > and/or my high packet loss (sometimes up to 10% loss)?
 
 Probably OK, but I'm not sure.  The protocol is designed to resync to the next message, and messages get re-requested from all the other nodes you're connected to until received.  If you miss a block, it'll also keep requesting it every time another blocks comes in and it sees there's a gap.  Before the original release I did a test dropping 1 out of 4 random messages under heavy load until I could run it overnight without any nodes getting stuck.

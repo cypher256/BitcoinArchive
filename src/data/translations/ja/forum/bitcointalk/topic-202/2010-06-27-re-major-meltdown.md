@@ -14,13 +14,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/160/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-06-14T11:39:50.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-191/2010-06-17-re-bitcoin-generation"
 ---
 
 大規模なメルトダウンからの復旧方法に関する同様の質問への回答がこちらだ。
 [https://www.bitcoin.org/smf/index.php?topic=191.msg1585#msg1585](https://www.bitcoin.org/smf/index.php?topic=191.msg1585#msg1585)
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: satoshi on June 14, 2010, 08:39:50 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-191/2010-06-17-re-bitcoin-generation/)
 > もしSHA-256が完全に破られた場合、問題が始まる前の正直なブロックチェーンが何であったかについて合意に達し、それを固定して新しいハッシュ関数で継続できると思います。
 <!-- /tone-skip -->
 

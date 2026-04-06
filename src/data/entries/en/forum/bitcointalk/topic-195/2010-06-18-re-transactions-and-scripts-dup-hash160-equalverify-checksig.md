@@ -13,19 +13,26 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/127/"
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-06-17T10:58:14.000Z"
+  - id: "q2"
+    person: "laszlo"
+    date: "2010-06-17T09:50:31.000Z"
 ---
 
 A second version would be a massive development and maintenance hassle for me.  It's hard enough maintaining backward compatibility while upgrading the network without a second version locking things in.  If the second version screwed up, the user experience would reflect badly on both, although it would at least reinforce to users the importance of staying with the official version.  If someone was getting ready to fork a second version, I would have to air a lot of disclaimers about the risks of using a minority version.  This is a design where the majority version wins if there's any disagreement, and that can be pretty ugly for the minority version and I'd rather not go into it, and I don't have to as long as there's only one version.
 
 I know, most developers don't like their software forked, but I have real technical reasons in this case.
 
-[Quote from: gavinandresen on June 17, 2010, 07:58:14 PM](#msg1613)
+<!-- quote: q1 -->
 > I admire the flexibility of the scripts-in-a-transaction scheme, but my evil little mind immediately starts to think of ways I might abuse it.  I could encode all sorts of interesting information in the TxOut script, and if non-hacked clients validated-and-then-ignored those transactions it would be a useful covert broadcast communication channel.
 
 That's a cool feature until it gets popular and somebody decides it would be fun to flood the payment network with millions of transactions to transfer the latest Lady Gaga video to all their friends...
 That's one of the reasons for transaction fees.  There are other things we can do if necessary.
 
-[Quote from: laszlo on June 17, 2010, 06:50:31 PM](#msg1612)
+<!-- quote: q2 -->
 > How long have you been working on this design Satoshi?  It seems very well thought out, not the kind of thing you just sit down and code up without doing a lot of brainstorming and discussion on it first.  Everyone has the obvious questions looking for holes in it but it is holding up well 
 
 Since 2007.  At some point I became convinced there was a way to do this without any trust required at all and couldn't resist to keep thinking about it.  Much more of the work was designing than coding.

@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/228/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "hugolp"
+    date: "2010-05-08T01:38:51.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-128/2010-05-08-hugolp-msg1082"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: hugolp on May 08, 2010, 10:38:51 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-128/2010-05-08-hugolp-msg1082/)
 > Bitcoinを実行すると非常に動作が重くなり、ほとんど使い物にならない。Bitcoinを停止するとすべて正常に戻る。Ubuntu desktop 10.04 amd64でia32libsとbitcoin 0.20 tarballのバイナリを使用している。
 <!-- /tone-skip -->
 

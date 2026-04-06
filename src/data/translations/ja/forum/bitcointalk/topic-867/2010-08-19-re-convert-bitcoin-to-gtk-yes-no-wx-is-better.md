@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/400/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "BioMike"
+    date: "2010-08-18T23:05:18.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-867/2010-08-19-biomike-msg10226"
 ---
 
-[Quote from: BioMike on August 19, 2010, 08:05:18 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-867/2010-08-19-biomike-msg10226/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > WxWidgetsは実際には問題ではない。問題は使用されているバージョン（2.9）で、多くのディストリビューションパッケージャーは不安定だと見なしている（WxWidgetsの開発者はそうではないと言っているが）。一方で、私の知る限りWxWidgetsはLinuxではgtkを使って描画しており、Bitcoin開発者にとってクロスプラットフォーム対応を容易にしている。
+<!-- /tone-skip -->
 
 wxWidgets 2.9は彼らの最初のUTF-8バージョンだ。我々はWindows含むすべてのプラットフォームでUTF-8を使用している。
 

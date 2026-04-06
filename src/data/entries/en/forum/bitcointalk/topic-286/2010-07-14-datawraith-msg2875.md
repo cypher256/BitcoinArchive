@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by DataWraith in BitcoinTalk topic 286."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "TopSoil"
+    date: "2010-07-14T06:59:18.000Z"
 ---
 
-[Quote from: TopSoil on July 14, 2010, 03:59:18 PM](#msg2859)
+<!-- quote: q1 -->
 > QuoteWhy? E-Mail and Jabber work the same way. Everyone can run their own server, and many do, but most users prefer to use someone else's server(s).Sure it can work that way but is that the ideal? Doesn't that make the network less robust and more vulnerable to attacks and manipulation?
 
 Not really. If you're worried, you can always run your very own server. 

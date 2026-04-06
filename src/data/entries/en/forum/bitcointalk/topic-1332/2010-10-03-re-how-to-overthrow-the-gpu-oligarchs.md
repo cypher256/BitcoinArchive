@@ -13,10 +13,19 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/479/"
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-10-01T21:11:11.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1332/2010-10-02-theymos-msg14966"
+  - id: "q2"
+    person: "lzsaver"
+    date: "2010-10-01T20:49:47.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1332/2010-10-02-lz-msg14960"
 ---
 
-[Quote from: theymos on October 02, 2010, 06:11:11 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-1332/2010-10-02-theymos-msg14966/)
-[Quote from: lzsaver on October 02, 2010, 05:49:47 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-1332/2010-10-02-lz-msg14960/)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
 > Can you tell more about it:
 
 "they have to do weird things with extraNonce, which increases the size of the block header".

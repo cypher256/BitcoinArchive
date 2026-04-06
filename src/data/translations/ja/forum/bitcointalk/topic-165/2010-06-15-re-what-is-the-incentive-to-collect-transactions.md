@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/122/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-06-05T07:26:09.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-165/2010-06-05-theymos-msg1373"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: theymos on June 05, 2010, 04:26:09 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-165/2010-06-05-theymos-msg1373/)
 > 作業中のブロックにトランザクションを追加すると、生成速度が低下する。生成ノードの大多数がブロードキャストされたトランザクションを無視してネットワークを信頼性のないものにすることを防ぐものは何だろうか？
 <!-- /tone-skip -->
 前提が間違っている。作業中のブロックにトランザクションを追加しても、生成速度は低下しない。生成がハッシュをスキャンする際、ブロックのヘッダーのみをハッシュするが、これは固定サイズだ。ヘッダーにはトランザクションのハッシュ（Merkleルート）が含まれており、たまにしか更新されない。

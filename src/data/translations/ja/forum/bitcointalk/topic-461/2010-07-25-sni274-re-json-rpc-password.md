@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/274/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "BitLex"
+    date: "2010-07-25T11:45:38.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: BitLex on July 25, 2010, 08:45:38 PM](#msg5753)
 > こちらでもPHPで動かそうとして問題が出ている。
 <!-- /tone-skip -->
 おかしいな。誰かがそれでうまく動くと言っていなかったか？（彼はどのライブラリを使っていたのだろうか？）何が問題かわかったら投稿してくれ。

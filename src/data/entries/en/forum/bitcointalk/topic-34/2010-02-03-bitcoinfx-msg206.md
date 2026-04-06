@@ -11,10 +11,18 @@ participants:
 description: "Context post by BitcoinFX in BitcoinTalk topic 34. before msg222."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-02-02T03:34:08.000Z"
+  - id: "q2"
+    person: "BitcoinFX"
+    date: "2010-02-02T00:00:20.000Z"
+    parent: "q1"
 ---
 
-[Quote from: sirius-m on February 02, 2010, 12:34:08 PM](#msg203)
-> [Quote from: BitcoinFX on February 02, 2010, 09:00:20 AM](#msg202)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > Thanks, I understand that and my port 8333 is correctly forwarded to my 24/7 Bitcoin machine. 
 > > 
 > > However, lets say that I have 2 machines on the same IP running Bitcoin without port 8333 forwarded on either !

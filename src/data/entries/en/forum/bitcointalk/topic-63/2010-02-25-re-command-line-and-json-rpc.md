@@ -13,13 +13,17 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/80/"
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-02-25T07:32:17.000Z"
 ---
 
 OK, I made a build target bitcoind that only links wxBase and does not link GTK.  Version 0.2.7 on SVN.
 
 I split out the init and shutdown stuff from ui.cpp into init.cpp, so now ui.cpp is pure UI.  ui.h provides inline stubs if wxUSE_GUI=0.  We only have four functions that interface from the node to the UI.  In the bitcoind build, we don't link ui.o or uibase.o.
 
-[Quote from: sirius-m on February 25, 2010, 04:32:17 PM](#msg538)
+<!-- quote: q1 -->
 > It started increasing right away. I'll see if valgrind can help me.
 
 Sure feels like it could be something in wxWidgets retrying endlessly because some UI thing failed or something wasn't inited correctly.  Our hack to ignore the initialize failure and run anyway means we're in uncharted territory.  We're relying on the fact that we hardly use wx in this mode.  We do still use a few things like wxGetTranslation and wxMutex.

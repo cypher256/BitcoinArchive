@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/138/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-06-21T21:20:02.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-199/2010-06-22-lachesis-msg1658"
 ---
 
-[Quote from: lachesis on June 22, 2010, 06:20:02 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-199/2010-06-22-lachesis-msg1658/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ただ、次のリリースまでにlisttransactions RPCメソッドが完成していると良いのだが。
+<!-- /tone-skip -->
 心配しているのは、多くのプログラマーが受取支払いの確認にそれを使おうとすることだ。その方法では決して信頼性がない。list/getreceivedbyaddress/label関数が信頼性のある唯一の方法だ。
 
 あらゆる可能な機能が完成するまで永遠にリリースを遅らせるべきではない。常にもう1つやるべきことがあるものだ。

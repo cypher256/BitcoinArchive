@@ -14,15 +14,27 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "creighto"
+    date: "2010-11-19T11:29:12.000Z"
+  - id: "q2"
+    person: "FreeMoney"
+    date: "2010-11-19T08:39:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1842/2010-11-19-freemoney-msg22844"
 ---
 
-[Quote from: creighto on November 19, 2010, 08:29:12 PM](#msg22896)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 最近実装された年齢優先ルールに加えて、取引手数料なしの最低年齢ルールがあるべきかもしれない。別の言い方をすれば、無料取引は再び無料で送金される前に3ブロック深くなければならないという生成ルールだ。これでも実際のユーザーは必要に応じて新しい資金をすぐに使えるし、実際のユーザーがニーズに合わせて資金を再シャッフルすることも追加コストなしで許容される。現在進行中のスパム攻撃を大幅に抑制できると思う。
+<!-- /tone-skip -->
 
 そのようなことをしている。優先度は、あなたが説明しているコンセプトのより形式化されたバージョンだ。
 
-[Quote from: FreeMoney on November 19, 2010, 05:39:44 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1842/2010-11-19-freemoney-msg22844/)
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > 現状では、バージョン3.15には無料トランザクション用の領域が多く確保されており、その領域は[age]*[value]/[size]が最も高いトランザクションから優先的に割り当てられる、という理解で正しいだろうか？ 無料領域の一部について、[age]*[value]/[size] > C を要求するようにするのは妥当ではないだろうか。
+<!-- /tone-skip -->
 
 Cを設定して、標準的な1BTCトランザクションが次のブロックでメインの無料エリアに入れるようにする。そして0.1は約10ブロック待てば入れるようにする。そして[経過時間]*[価値]/[サイズ] < Cを許可するエリアに約12件程度のトランザクションを入れるようにする。
 はい、このような感じだ。そして優先度要件なしのエリアは3Kで、1ブロックあたり約12件のトランザクションだ。

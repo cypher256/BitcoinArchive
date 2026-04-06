@@ -12,10 +12,17 @@ description: "BitcoinTalkトピック723におけるMoonShadowの引用投稿。
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "mkrogh"
+    date: "2010-08-06T12:38:46.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-mkrogh-msg7982"
 ---
 
-[Quote from: mkrogh on August 06, 2010, 09:38:46 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-723/2010-08-06-mkrogh-msg7982/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > creighto、私は二重支払いがないことの検証についてだけ話している。もちろん、コインを受け取ってただ期待することはいつでもできる。それは明らかだ。
+<!-- /tone-skip -->
 
 ただ祈る以上のことがある。まず、既存のビジネス関係があり、誠実な過去の取引によって二者間に信頼が構築されている場合がある。
 

@@ -13,6 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/513/"
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-11-25T17:07:43.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-11-25T08:51:39.000Z"
 ---
 
 I tested it on a slow 7 year old drive, where bandwidth and CPU were clearly not the bottleneck.  Initial download took 1 hour 20 minutes.
@@ -21,8 +28,8 @@ If it's taking a lot longer than that, certainly 24 hours, then it must be downl
 
 Every 10 minutes or so when the latest block is sent, it should have the chance to change to a faster node.  When the latest block is broadcast, it requests the next 500 blocks from other nodes, and continues the download from the one that sends it fastest.  At least, that's how it should work.
 
-[Quote from: jgarzik on November 26, 2010, 02:07:43 AM](#msg24522)
-[Quote from: satoshi on November 25, 2010, 05:51:39 PM](#msg24438)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
 > Maybe Berkeley DB has some tweaks we can make to enable or increase cache memory.
 
 Which of the [ACID](http://en.wikipedia.org/wiki/ACID) properties do you need, while downloading?

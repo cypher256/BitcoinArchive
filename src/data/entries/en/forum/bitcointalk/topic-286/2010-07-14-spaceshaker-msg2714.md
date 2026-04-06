@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by spaceshaker in BitcoinTalk topic 286."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-13T15:42:32.000Z"
 ---
 
-[Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
+<!-- quote: q1 -->
 > And I expect most of us will be running lightweight clients that just keep our wallets, sign transactions, and send and receive transactions to the ultra-fast nodes that ARE looking at every transaction.
 
 Is this possible? What would this look like? From a technical perspective what does a "lightweight client" look like for you? My understanding is that the Bitcoin client needs the entire block chain in order to establish trust.

@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/148/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "laszlo"
+    date: "2010-06-14T09:30:58.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: laszlo on June 14, 2010, 06:30:58 PM](#msg1580)
 > 使えるIRCサーバーを運用している。かなり安定しているが、冗長な接続ではない。今のところ2つのサーバーだけだが、いじったりはしない。ただ動いている。
 <!-- /tone-skip -->
 これは良いアイデアだと思う。

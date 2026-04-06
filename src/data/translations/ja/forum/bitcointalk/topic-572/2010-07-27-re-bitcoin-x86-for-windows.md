@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/280/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Olipro"
+    date: "2010-07-26T04:04:41.000Z"
 ---
 
-[Quote from: Olipro on July 26, 2010, 01:04:41 PM](#msg5851)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Crypto++ 5.6.0: [http://www.cryptopp.com/](http://www.cryptopp.com/)
+<!-- /tone-skip -->
 
 Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32)（これは他の場所でも公開されていると思いますが、IRCでリンクを教えてもらいました）
 キャッシュされたSHA256の状態のアイデアをSVNのrev 113に追加した。高速化は約70%だ。x64スレッドでのあなたの投稿に基づいて、tcatmの功績とした。

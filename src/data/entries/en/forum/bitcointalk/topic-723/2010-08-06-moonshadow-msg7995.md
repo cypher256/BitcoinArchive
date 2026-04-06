@@ -11,9 +11,14 @@ participants:
 description: "Quoted post by MoonShadow in BitcoinTalk topic 723."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "mkrogh"
+    date: "2010-08-06T12:38:46.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-mkrogh-msg7982"
 ---
 
-[Quote from: mkrogh on August 06, 2010, 09:38:46 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-723/2010-08-06-mkrogh-msg7982/)
+<!-- quote: q1 -->
 > creighto, I am only talking about verifying the absence of double spending. Of course, you can always receive a coin and just hope. That is clear.
 
 There is more to it than just hoping.  For starters, you could already have an existing business relationship, and trust built between two parties due to honest prior trading.  

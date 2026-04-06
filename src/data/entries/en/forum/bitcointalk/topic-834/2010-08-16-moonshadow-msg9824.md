@@ -11,9 +11,13 @@ participants:
 description: "Context post by MoonShadow in BitcoinTalk topic 834. before msg9843."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "mkrogh"
+    date: "2010-08-16T11:54:47.000Z"
 ---
 
-[Quote from: mkrogh on August 16, 2010, 08:54:47 PM](#msg9822)
+<!-- quote: q1 -->
 > The software could just declare that there is a checkpoint 1000 blocks back. This is an individual checkpoint for each node, and the checkpoints would move forward every time a new block arrives. The checkpoint could never move backwards.
 > 
 > If a longer chain, predating the checkpoint arrived, the node would reject it.

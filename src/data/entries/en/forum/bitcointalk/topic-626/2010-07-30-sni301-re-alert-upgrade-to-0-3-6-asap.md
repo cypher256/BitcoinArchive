@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/301/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-30T11:04:19.000Z"
 ---
 
-[Quote from: knightmb on July 30, 2010, 08:04:19 PM](#msg6713)
+<!-- quote: q1 -->
 > So that last command should simply be
 
 **sudo apt-get install libboost1.37-dev**

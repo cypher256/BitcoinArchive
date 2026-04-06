@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/70/"
+quotes:
+  - id: "q1"
+    person: "Xunie"
+    date: "2010-02-23T03:28:27.000Z"
 ---
 
-[Quote from: Xunie on February 23, 2010, 12:28:27 PM](#msg439)
+<!-- quote: q1 -->
 > */etc/init.d/gdm start* and it will start gdm!
 
 Ah yes, there we go, back to normal again.

@@ -11,10 +11,18 @@ participants:
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 286."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "spaceshaker"
+    date: "2010-07-13T16:52:00.000Z"
+  - id: "q2"
+    person: "gavinandresen"
+    date: "2010-07-13T15:42:32.000Z"
+    parent: "q1"
 ---
 
-[Quote from: spaceshaker on July 14, 2010, 01:52:00 AM](#msg2714)
-> [Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > And I expect most of us will be running lightweight clients that just keep our wallets, sign transactions, and send and receive transactions to the ultra-fast nodes that ARE looking at every transaction.
 > 
 > 

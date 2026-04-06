@@ -11,9 +11,13 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg4577."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-07-19T07:20:50.000Z"
 ---
 
-[Quote from: satoshi on July 19, 2010, 04:20:50 PM](#msg4268)
+<!-- quote: q1 -->
 > So you drop a settings file in the ~/.bitcoin directory, that sounds better.  In the "no password is set" warning, it could tell you where the file is and what to do.
 > What is the most popular and common settings file format?
 

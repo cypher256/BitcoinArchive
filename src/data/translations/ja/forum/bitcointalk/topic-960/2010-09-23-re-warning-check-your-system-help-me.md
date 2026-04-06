@@ -14,11 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/459/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Cdecker"
+    date: "2010-09-19T11:14:08.000Z"
 ---
 
 理解できないのだが、このプログラムがシステム時計を設定するという認識をお持ちなのだろうか？そのようなことはしない。
 
-[Quote from: Cdecker on September 19, 2010, 08:14:08 PM](#msg13212)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > システム時刻を設定するのはダメだということには全員が同意していると思うが、内部的にオフセットを使って問題全体を回避することはできないのだろうか？ クライアントを（おおよそ）同期させる方法はすでにあるのだから、それを活用すればいいのではないか？
+<!-- /tone-skip -->
 
 他のノードの時刻の中央値に基づく内部オフセットを使用しているが、セキュリティ上の理由から、1時間以上のオフセットは許可していない。1時間以上ずれていることが示された場合は、ユーザーに時計を修正するよう警告する。

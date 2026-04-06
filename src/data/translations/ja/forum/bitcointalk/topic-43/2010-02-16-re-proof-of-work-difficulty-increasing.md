@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/60/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Suggester"
+    date: "2010-02-15T17:15:49.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Suggester on February 16, 2010, 02:15:49 AM](#msg361)
 > [追記：後でそれよりもかなり多く生成していたことが分かった。「あとxxブロックで成熟」という概念のせいで気づかなかっただけだった。しかし、難易度が大幅に上がると大きな問題になると今でも思っている。愚かなことですまない Smiley]
 <!-- /tone-skip -->
 それについて考えたが、より小さい増分を実現する実用的な方法がなかった。ブロック生成の頻度は、トランザクションをできるだけ早く確認することとネットワークのレイテンシーの間でバランスが取られている。

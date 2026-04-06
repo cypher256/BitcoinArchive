@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/273/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-07-25T10:52:35.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
 > バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成する：
 >
 > ```

@@ -12,10 +12,16 @@ description: "BitcoinTalkトピック1668におけるギャビン・アンドレ
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "ByteCoin"
+    date: "2010-11-07T17:31:22.000Z"
 ---
 
-[Quote from: ByteCoin on November 08, 2010, 02:31:22 AM](#msg20570)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 高額トランザクションを優先しても、大量のビットコインを自分のアドレス間で無限に送ることでスパムすることは完全に可能なので、問題の解決にはならない。
+<!-- /tone-skip -->
 
 いや、できない。送るたびに「新しい」ものになり、優先度は年齢に金額を掛けたものだからだ：
 Code:// Priority is sum(valuein * age) / txsize  (valuein is the size of the bitcoin input, age is # of blocks deep, and txsize is the number of bytes the transaction takes up)

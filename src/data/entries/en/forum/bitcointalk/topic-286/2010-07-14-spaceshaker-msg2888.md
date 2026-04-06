@@ -11,16 +11,23 @@ participants:
 description: "Context post by spaceshaker in BitcoinTalk topic 286. before msg2947."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "DataWraith"
+    date: "2010-07-14T07:42:16.000Z"
+  - id: "q2"
+    person: "gavinandresen"
+    date: "2010-07-13T17:20:45.000Z"
 ---
 
-[Quote from: DataWraith on July 14, 2010, 04:42:16 PM](#msg2875)
+<!-- quote: q1 -->
 > Quotespaceshaker: yes I agree there will have to be nodes that act as proxies for mobile devices. 
 > 
 > Um. That's exactly what a supernode server would do.
 
 Um. Sure. I think I've gone full circle. I think Gavin said it best:
 
-[Quote from: gavinandresen on July 14, 2010, 02:20:45 AM](#msg2721)
+<!-- quote: q2 -->
 > A lightweight client would have a wallet with coins in it (public+private key pairs).
 > 
 > And a secure way of sending messages to, and getting messages from, any of the ultra-fast, always-connected heavyweight nodes.

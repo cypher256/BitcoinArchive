@@ -18,10 +18,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/523/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "RHorning"
+    date: "2010-12-04T13:17:44.000Z"
 ---
 
-[Quote from: RHorning on December 04, 2010, 10:17:44 PM](#msg26876)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 基本的に、どんとこい。WikiLeaksにビットコインを使うよう促そう。私はその行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。
+<!-- /tone-skip -->
 
 違う、挑発するな。
 

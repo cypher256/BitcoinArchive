@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/443/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "BitLex"
+    date: "2010-09-07T11:10:54.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-955/2010-09-07-bitlex-msg12189"
 ---
 
-[Quote from: BitLex on September 07, 2010, 08:10:54 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-955/2010-09-07-bitlex-msg12189/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > AMD X3 @2.8ghz
+<!-- /tone-skip -->
 
 ->標準クライアント
 ~3800khs ~150ワット

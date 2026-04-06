@@ -11,11 +11,15 @@ participants:
 description: "Quoted post by DataWraith in BitcoinTalk topic 55."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Karmicads"
+    date: "2010-05-01T17:15:51.000Z"
 ---
 
 Karmicaids, thanks for taking the time for such a detailed reply.
 
-[Quote from: Karmicads on May 02, 2010, 02:15:51 AM](#msg1041)
+<!-- quote: q1 -->
 > It seems there is, as it just so happens, an existing protocol precisely for interacting with stored data files on freenet   
 
 Oh, I thought you meant that when you spoke of using freenet. The user runs freenet and Bitcoin would communicate with it using its control protocol. However, running Freenet requires considerable computer resources, especially bandwidth, and personally, I do not want to run a freenet node for that reason alone. That's why I wanted this to be optional.

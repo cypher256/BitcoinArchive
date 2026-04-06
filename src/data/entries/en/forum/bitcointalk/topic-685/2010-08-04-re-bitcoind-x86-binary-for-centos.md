@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/314/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-08-03T14:46:46.000Z"
 ---
 
-[Quote from: knightmb on August 03, 2010, 11:46:46 PM](#msg7365)
+<!-- quote: q1 -->
 > There are two versions, one built from stock code, the other modified to accept up to 1,000 nodes (hence the super node name)
 
 I'd rather you didn't make a build of the 1000 node connecting version available.  It won't take very many people running that before we have to make another release just to limit the incoming connections.

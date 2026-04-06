@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/392/"
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-08-16T06:25:54.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-832/2010-08-16-satoshi-msg9754"
 ---
 
-[Quote from: satoshi on August 16, 2010, 03:25:54 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-832/2010-08-16-satoshi-msg9754/)
+<!-- quote: q1 -->
 > It would probably be possible to initiate an AddToBlockIndex or Reorganize after the check, but it would require a lot more careful attention.  I probably should break out part of AddToBlockIndex that sets the new best block.  I'll probably end up doing that instead of the code below.
 
 This is what I ended up doing in SVN rev 139.

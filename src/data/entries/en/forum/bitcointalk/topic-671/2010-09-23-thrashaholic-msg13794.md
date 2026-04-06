@@ -11,10 +11,20 @@ participants:
 description: "Context post by thrashaholic in BitcoinTalk topic 671. before msg13844."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Babylon"
+    date: "2010-09-22T20:01:59.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-671/2010-09-23-babylon-msg13789"
+  - id: "q2"
+    person: "mtgox"
+    date: "2010-08-02T04:23:12.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-671/2010-08-02-mtgox-msg7004"
+    parent: "q1"
 ---
 
-[Quote from: Babylon on September 23, 2010, 05:01:59 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-671/2010-09-23-babylon-msg13789/)
-> [Quote from: mtgox on August 02, 2010, 01:23:12 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-671/2010-08-02-mtgox-msg7004/)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > I think bitcoin poker will really establish the BTC.
 > 
 > 

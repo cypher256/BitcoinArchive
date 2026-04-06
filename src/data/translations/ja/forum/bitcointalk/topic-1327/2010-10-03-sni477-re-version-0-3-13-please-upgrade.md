@@ -14,10 +14,22 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/477/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-10-03T11:09:51.000Z"
+  - id: "q2"
+    person: "theymos"
+    date: "2010-10-03T11:09:51.000Z"
+  - id: "q3"
+    person: "tcatm"
+    date: "2010-10-03T11:10:47.000Z"
 ---
 
-[Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ArtForzはすでに手数料なしで稼働しており、ネットワークのCPUパワーの20〜30%を持っている。ただし、元の壊れた取引を送った人はウォレットを削除し、ネットワークはこれらの過去の取引を忘れているため、これに基づく取引は承認されない。
+<!-- /tone-skip -->
 
 トランザクションは、ノードがブロックチェーンに戻るトランザクションのパスを持つまで、0/未承認として受け入れられたり表示されたりしない。
 
@@ -25,12 +37,16 @@ translationStatus: complete
 
 手数料なしのブロックがすでに生成されたのに解決しない場合は、何が問題なのか調べる必要がある。あまり使われないコードの部分だ。それらに依存するトランザクションを持つ全員のウォレットに記録されているはずだ。
 
-[Quote from: theymos on October 03, 2010, 08:09:51 PM](#msg15118)
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > 元の壊れた取引を送った人はウォレットを削除した
+<!-- /tone-skip -->
 
 はぁ……ウォレットを別の場所に移動して万が一のために古いコピーを保管しておくのではなく、なぜ削除するのだろうか？ウォレットは決して削除すべきではない。
 
-[Quote from: tcatm on October 03, 2010, 08:10:47 PM](#msg15119)
+<!-- quote: q3 -->
+<!-- tone-skip -->
 > 動いている。3時間以内にブロックが見つかるはずだ。
+<!-- /tone-skip -->
 
 再ブロードキャストされたトランザクションを収集するのに時間がかかるかもしれない。より多くのノードをリッスンできるよう、インバウンド接続を受け入れられるようにすると助けになる。3時間でブロックを見つけたとしても、少なくとも数日間は継続して実行し続けてくれ。

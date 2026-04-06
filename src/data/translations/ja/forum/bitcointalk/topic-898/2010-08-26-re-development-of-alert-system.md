@@ -14,11 +14,19 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/418/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "BioMike"
+    date: "2010-08-25T09:23:45.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-08-25T07:56:15.000Z"
+    parent: "q1"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: BioMike on August 25, 2010, 06:23:45 PM](#msg11162)
-> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)
+> <!-- quote: q2 -->
 > > [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)
 > > > で、理論的にはこれは<ある政府>がサトシを逮捕して鍵の引き渡しを要求し（あるいは彼のコンピュータから取得し）、ネットワーク全体をシャットダウンできる最初の制御システムということか？
 > > > それとも不可能なのか？<ある政府>はどこまでできるのか？

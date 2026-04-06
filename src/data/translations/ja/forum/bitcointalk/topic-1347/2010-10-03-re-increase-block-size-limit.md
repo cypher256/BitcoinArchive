@@ -18,10 +18,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-10-03T11:28:39.000Z"
 ---
 
-[Quote from: theymos on October 03, 2010, 08:28:39 PM](#msg15126)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > このパッチを適用すると、他のBitcoinクライアントと互換性がなくなる。
+<!-- /tone-skip -->
 
 +1 theymos。このパッチは使わないでくれ。ネットワークと互換性がなくなり、自分自身が不利益を被る。
 

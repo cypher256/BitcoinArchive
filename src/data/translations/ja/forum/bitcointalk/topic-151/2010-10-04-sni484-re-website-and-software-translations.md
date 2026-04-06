@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/484/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "eurekafag"
+    date: "2010-10-04T01:55:56.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-151/2010-10-04-eurekafag-msg15248"
 ---
 
-[Quote from: eurekafag on October 04, 2010, 10:55:56 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-151/2010-10-04-eurekafag-msg15248/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > それは嬉しい。翻訳を最新に保つための最新の英語.poファイルはどこで見つかるだろうか？
+<!-- /tone-skip -->
 
 poeditで行える。リリースからsrcディレクトリを取得するか、SVNでダウンロードしてくれ。srcディレクトリの3階層下に.poファイルを配置する。poeditで開いてCatalog->Update from sourcesを実行する。
 

@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/130/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-05-23T07:28:12.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM](#msg1203)
 > Ubuntuの新しいデフォルトテーマでビットコインの見た目が悪い。テーマ設定の一部は反映されているが、すべてではないようだ。選択されていないファイルメニューは暗い背景に明るいテキストであるべきだが、明るい背景に明るいテキストになっており正しくない。私のディスプレイでは両者が似すぎていて読めない。次の安定版リリースまでに修正すべきだ。
 <!-- /tone-skip -->
 SVNバージョンで修正した。

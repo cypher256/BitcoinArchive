@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/79/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Sabunir"
+    date: "2010-02-24T16:47:56.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Sabunir on February 25, 2010, 01:47:56 AM](#msg519)
 > 気に入った。もっと高解像度のものはあるか？
 <!-- /tone-skip -->
 はい、オリジナルは546x531ピクセルだ。

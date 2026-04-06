@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/130/"
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-05-23T07:28:12.000Z"
 ---
 
-[Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM](#msg1203)
+<!-- quote: q1 -->
 > Bitcoin looks ugly in Ubuntu's new default theme. It seems that some, but not all of the theme settings are being picked up. The unselected file menu should have light text with a dark background, but it incorrectly has light text with a light background. They're similar enough that it's unreadable on my display. It should be fixed before the next stable release.
 
 This is now fixed in the SVN version.

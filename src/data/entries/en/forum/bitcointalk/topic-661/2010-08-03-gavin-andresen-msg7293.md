@@ -11,9 +11,14 @@ participants:
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 661."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "BeeCee1"
+    date: "2010-08-03T06:12:42.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-beecee1-msg7249"
 ---
 
-[Quote from: BeeCee1 on August 03, 2010, 03:12:42 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-661/2010-08-03-beecee1-msg7249/)
+<!-- quote: q1 -->
 > I am also not saying it is a good thing.  having a single split for a fairly long period of time lets people come up with a solution, having many splits that each last for a few hours means that transactions randomly disappear and that hurts confidence in the system.
 
 Transactions won't disappear if they're valid.  They'll just move to the longer block chain.

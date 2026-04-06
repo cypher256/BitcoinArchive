@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/255/"
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-23T06:11:45.000Z"
 ---
 
-[Quote from: gavinandresen on July 23, 2010, 03:11:45 PM](#msg5296)
+<!-- quote: q1 -->
 > Question for everybody:  should I add a section to the wiki page describing, in detail, how to do HTTP Basic authentication?  PHP and Python make is really easy-- just use the [http://user:pass@host:port/](http://user:pass@host:port/) URL syntax.
 
 Yes, I think that would be really good so each dev doesn't have to figure it out themselves.  We need a simple example for each of Python, PHP and Java importing the json-rpc library and using it to do a getinfo or something, including doing the http authentication part.

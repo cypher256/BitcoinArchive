@@ -13,9 +13,16 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/100/"
+quotes:
+  - id: "q1"
+    person: "Karmicads"
+    date: "2010-04-30T21:06:53.000Z"
+  - id: "q2"
+    person: "DataWraith"
+    date: "2010-05-02T02:13:09.000Z"
 ---
 
-[Quote from: Karmicads on May 01, 2010, 06:06:53 AM](#msg1038)
+<!-- quote: q1 -->
 > A freenet URI is like this:
 
 [http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf](http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf)
@@ -25,7 +32,7 @@ There you go, we could easily do it the same way, like:
 
 Bitcoin can answer port 8330 on local loopback just as it does for JSON-RPC on 8332.  It would give an HTTP answer.
 
-[Quote from: DataWraith on May 02, 2010, 11:13:09 AM](#msg1045)
+<!-- quote: q2 -->
 > A bitcoin-link should be more like mailto: than magnet: IMHO.
 
 I think we can do that.

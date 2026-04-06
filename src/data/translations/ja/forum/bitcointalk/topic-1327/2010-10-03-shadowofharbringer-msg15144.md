@@ -12,14 +12,20 @@ description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの文脈
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-10-03T09:17:06.000Z"
 ---
 
-[Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 言い忘れたが、64ビットAMDでは検出が機能しないのではないかと思っていた。信じ難いが、AMDは64ビットモードで異なるモデル番号を報告する。
 > 
 > debug.logでCPUIDをgrepして何と表示されるか教えてもらえるか？（64ビットAMDを持つ他の人も）そしてどのAMDチップを使っているか？
 > 
 > 64ビットをサポートする全てのAMDにはより良いSSE2ハードウェアも搭載されているのか？
+<!-- /tone-skip -->
 
 これで十分だろうか？：
 

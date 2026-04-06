@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "dkaparis"
+    date: "2010-08-11T14:00:16.000Z"
 ---
 
-[Quote from: dkaparis on August 11, 2010, 11:00:16 PM](#msg8807)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > headers.hに以下のコードがある：
+<!-- /tone-skip -->
 
 #ifdef __WXMAC_OSX__
 #define __WXMAC__ 1

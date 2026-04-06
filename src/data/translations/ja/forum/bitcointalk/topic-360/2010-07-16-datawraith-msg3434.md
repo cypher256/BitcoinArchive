@@ -12,10 +12,17 @@ description: "BitcoinTalkトピック360におけるDataWraithのコンテキス
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Some Mouse"
+    date: "2010-07-15T15:13:52.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-360/2010-07-16-some-mouse-msg3334"
 ---
 
-[Quote from: Some Mouse on July 16, 2010, 12:13:52 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-360/2010-07-16-some-mouse-msg3334/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 可逆計算技術はエントロピーの限界を「回避」する。これにより、現在のコンピュータで可能なものをはるかに超える実効速度に到達でき、実質的に非決定的操作を実行できる。
+<!-- /tone-skip -->
 
 ちょっと待って？ 可逆計算は消費エネルギーが少ないだけだと思っていた。非決定性はどこから来るんだ？
 

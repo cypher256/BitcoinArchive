@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/533/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "nanotube"
+    date: "2010-12-09T12:20:40.000Z"
 ---
 
-[Quote from: nanotube on December 09, 2010, 09:20:40 PM](#msg28700)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > マイナーは基本的に「余分な作業」をしなければならないようだ。そしてその余分な作業（もちろんメインのBitcoin作業を遅くする）からbitdnsマイニングの報酬がないなら、マイナーがbitdns（やその他のサイドチェーン）を含めるインセンティブは何か？
+<!-- /tone-skip -->
 
 インセンティブは、同じ作業で追加のサイドチェーンからも報酬を得ることだ。
 

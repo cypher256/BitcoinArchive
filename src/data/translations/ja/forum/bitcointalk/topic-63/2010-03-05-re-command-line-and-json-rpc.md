@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/89/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-02-24T09:17:35.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: sirius-m on February 24, 2010, 06:17:35 PM](#msg502)
 > これはおかしいですね…64ビットLinuxサーバーでBitcoinをデーモンとして起動すると、残りの250MBのRAMと700MBのスワップをすべて食い尽くして、最終的にクラッシュします。32ビットのUbuntuデスクトップでは問題なく動作し、メモリ使用量は15MBに留まります。サーバーでは64ビットビルドのBitcoinを実行しています。ビルドに何か問題があるのかもしれません。
 <!-- /tone-skip -->
 sirius-mがこれをデバッグした。64ビット関連の問題だった。

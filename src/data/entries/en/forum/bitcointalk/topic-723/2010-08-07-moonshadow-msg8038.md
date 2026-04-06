@@ -11,10 +11,20 @@ participants:
 description: "Context post by MoonShadow in BitcoinTalk topic 723. before msg8103."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-08-06T14:55:47.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-newlibertystandard-msg8021"
+  - id: "q2"
+    person: "creighto"
+    date: "2010-08-06T14:42:31.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-moonshadow-msg8019"
+    parent: "q1"
 ---
 
-[Quote from: NewLibertyStandard on August 06, 2010, 11:55:47 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-723/2010-08-06-newlibertystandard-msg8021/)
-> [Quote from: creighto on August 06, 2010, 11:42:31 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-723/2010-08-06-moonshadow-msg8019/)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > All of these examples involve some kind of two party trust, but not one requires both parties trust a third.  Not even the verification of the blockchain.
 > 
 > Trusted third parties are very useful when trading with someone you don't trust.

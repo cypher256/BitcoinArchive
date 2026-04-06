@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/443/"
+quotes:
+  - id: "q1"
+    person: "BitLex"
+    date: "2010-09-07T11:10:54.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-955/2010-09-07-bitlex-msg12189"
 ---
 
-[Quote from: BitLex on September 07, 2010, 08:10:54 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-955/2010-09-07-bitlex-msg12189/)
+<!-- quote: q1 -->
 > AMD X3 @2.8ghz
 
 ->stock client

@@ -12,10 +12,16 @@ description: "BitcoinTalkトピック286におけるspaceshakerの投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-13T15:42:32.000Z"
 ---
 
-[Quote from: gavinandresen on July 14, 2010, 12:42:32 AM](#msg2696)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > そしてほとんどの人は、ウォレットの保持、トランザクションの署名、そしてすべてのトランザクションを監視している超高速ノードへのトランザクションの送受信だけを行う軽量クライアントを使うことになるだろう。
+<!-- /tone-skip -->
 
 それは可能なのか？どのようなものになるのか？技術的な観点から「軽量クライアント」はどういうものをイメージしているのか？私の理解では、Bitcoinクライアントは信頼を確立するためにブロックチェーン全体が必要だ。
 

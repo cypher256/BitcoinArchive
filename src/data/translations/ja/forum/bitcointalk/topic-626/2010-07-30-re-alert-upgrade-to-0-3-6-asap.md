@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/300/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-30T10:24:07.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: knightmb on July 30, 2010, 07:24:07 PM](#msg6702)
 > これらのビルドを作るのにどれだけ苦労したか想像できる。自分はUbuntu 9.04上でプログラムをビルドしようとしているが、パッケージをインストールしてソースをコンパイルし続けても、依存関係を全部見つけられない（笑）。
 <!-- /tone-skip -->
 

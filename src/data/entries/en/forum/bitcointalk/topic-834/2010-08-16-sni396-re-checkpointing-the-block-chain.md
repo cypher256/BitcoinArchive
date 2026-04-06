@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/"
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-08-16T13:42:28.000Z"
 ---
 
-[Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](#msg9839)
+<!-- quote: q1 -->
 > How is the strength of the chain calculated?
 
 Total proof-of-work.

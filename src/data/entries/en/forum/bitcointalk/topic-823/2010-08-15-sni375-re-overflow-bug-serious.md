@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/375/"
+quotes:
+  - id: "q1"
+    person: "Joozero"
+    date: "2010-08-15T14:32:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-hostfat-msg9582"
 ---
 
-[Quote from: Joozero on August 15, 2010, 11:32:43 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-hostfat-msg9582/)
+<!-- quote: q1 -->
 > I think that you should add something about this: [http://bitcointalk.org/index.php?topic=259.0](http://bitcointalk.org/index.php?topic=259.0)
 
 There must be a label on the client that show a warning message if needed 

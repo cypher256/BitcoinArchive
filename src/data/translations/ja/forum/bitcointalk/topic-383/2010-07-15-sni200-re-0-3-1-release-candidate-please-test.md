@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/200/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-15T10:37:10.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3269"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: knightmb on July 15, 2010, 07:37:10 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3269/)
 > Windows上では、コイン生成の優先度は依然として通常のままだ。BitCoinをコイン生成モードで実行し、CPUを全部食い尽くすもの（例えばCPU Hog: http://www.microtask.ca/cpuhog.html）を起動すると、BitCoinとCPU Hogが50/50でCPUを分け合い、CPU Hogが全CPUを取ってBitCoinがアイドル/低プロセスでのみ動くという状態にはならないことが分かる。khash/sも半分に減っているので、スレッドが通常より低い優先度で動いていないさらなる証拠だ。
 <!-- /tone-skip -->
 

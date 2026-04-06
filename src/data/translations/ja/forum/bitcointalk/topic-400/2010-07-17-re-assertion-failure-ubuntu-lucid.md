@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "singpolyma"
+    date: "2010-07-17T13:19:48.000Z"
 ---
 
-[Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ブロックファイルを移動した……全部もう一度処理し直している。コインが消えたが、最新まで追いつけば戻ってくると思う？
+<!-- /tone-skip -->
 
 その通りだ。すべてのブロックのダウンロードが完了すれば再表示される。

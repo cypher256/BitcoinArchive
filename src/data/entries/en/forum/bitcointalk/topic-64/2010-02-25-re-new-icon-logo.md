@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/79/"
+quotes:
+  - id: "q1"
+    person: "Sabunir"
+    date: "2010-02-24T16:47:56.000Z"
 ---
 
-[Quote from: Sabunir on February 25, 2010, 01:47:56 AM](#msg519)
+<!-- quote: q1 -->
 > I like them. Do they come in higher resolutions?
 
 Yes, the original is 546x531 pixels.

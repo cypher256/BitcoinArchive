@@ -12,9 +12,21 @@ description: "BitcoinTalkトピック691におけるthroughputのコンテキス
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "aceat64"
+    date: "2010-08-12T08:02:43.000Z"
+  - id: "q2"
+    person: "throughput"
+    date: "2010-08-12T06:28:43.000Z"
+    parent: "q1"
+  - id: "q3"
+    person: "satoshi"
+    date: "2010-08-12T12:34:44.000Z"
 ---
-[Quote from: aceat64 on August 12, 2010, 05:02:43 PM](#msg8906)
-> [Quote from: throughput on August 12, 2010, 03:28:43 PM](#msg8897)
+<!-- quote: q1 -->
+<!-- tone-skip -->
+> <!-- quote: q2 -->
 > > 間違いなく、各ノードにネットワーク全体のhpsメーターが必要だ。
 > >
 > > やっとあの記事を見つけた：
@@ -32,6 +44,7 @@ translationStatus: complete
 > > いずれにせよ、インターネットの安定性と持続的な接続性を当てにすべきではない。
 >
 > 攻撃者はこの分断中にどのようにして両側に接続してコインを使用するのか？そして攻撃者にそれができるなら、1つ以上の正直なノードが分断を橋渡しできる可能性もかなり高い。
+<!-- /tone-skip -->
 
 1. なぜ攻撃者が1台のPCを持つ一人の人間でなければならないのか？
 ウォレットを別のPCにコピーしてどこでも使える！
@@ -39,7 +52,9 @@ translationStatus: complete
 2. なぜネットワーク分離は二重支出のためだけに使われるのか？
 ブロック生成を遅くするために使えないのか？それは難易度調整に影響するだろうか？
 
-[Quote from: satoshi on August 12, 2010, 09:34:44 PM](#msg8922)
+<!-- quote: q3 -->
+<!-- tone-skip -->
 > 確かに、ダイヤルアップモデムや衛星インターネットを持っている人はいるだろう。それと障害が発生する有線インターネットの両方を持っている人はもっと珍しいが、十分な規模のセグメントであれば、100万人中にマルチホームのギークが必ずいるだろう。
+<!-- /tone-skip -->
 
 でもブートストラップ用のIRCサーバーはないだろう。

@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/282/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "BlackEye"
+    date: "2010-07-25T13:12:23.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: BlackEye on July 25, 2010, 10:12:23 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/)
 > Crypto++ 5.6.0のSHA256機能をBitcoinに統合することができた。SSE2アセンブリコードを使った最速のSHA256だ。Bitcoinがブロックハッシュ関数にアライメントされていないデータを送っていたため、MOVDQA命令をMOVDQUに変更する必要があった。
 <!-- /tone-skip -->
 

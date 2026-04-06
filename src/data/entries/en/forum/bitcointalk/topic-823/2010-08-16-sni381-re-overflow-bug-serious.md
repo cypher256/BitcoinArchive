@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/381/"
+quotes:
+  - id: "q1"
+    person: "trebronics"
+    date: "2010-08-15T16:02:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-goldrush-msg9625"
 ---
 
-[Quote from: trebronics on August 16, 2010, 01:02:35 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-16-goldrush-msg9625/)
+<!-- quote: q1 -->
 > Most people running clients are not reading this message thread.  So...  Silly questions:
 
 1) How will this continue to affect version 3.8.1 (pre-catastrophe) clients with bad block chain?

@@ -11,10 +11,18 @@ participants:
 description: "Context post by mizerydearia in BitcoinTalk topic 1327. before msg15147."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-10-03T09:17:06.000Z"
+  - id: "q2"
+    person: "ShadowOfHarbringer"
+    date: "2010-10-02T04:00:07.000Z"
+    parent: "q1"
 ---
 
-[Quote from: satoshi on October 03, 2010, 06:17:06 PM](#msg15102)
-> [Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM](#msg14997)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > That's nice, however the automatic 4way detection is not working on my Gentoo AMD 64 version client.
 > > 
 > > I still have to add the "-4way" switch.

@@ -11,9 +11,14 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 615. before msg6512."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Brre"
+    date: "2010-07-29T02:20:33.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-615/2010-07-29-brre-msg6361"
 ---
 
-[Quote from: Brre on July 29, 2010, 11:20:33 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-615/2010-07-29-brre-msg6361/)
+<!-- quote: q1 -->
 > I did a transaction about 2 hours ago and it is staying at 0/unconfirmed, the recipient has no credit showing or even an unconfirmed line... The coins seems to disapeared in the void...
 > Should I wait is this just a transaction that is going to take exceptionally long?
 

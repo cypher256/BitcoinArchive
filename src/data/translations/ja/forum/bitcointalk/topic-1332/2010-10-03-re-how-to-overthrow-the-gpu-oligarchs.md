@@ -14,11 +14,24 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/479/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-10-01T21:11:11.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1332/2010-10-02-theymos-msg14966"
+  - id: "q2"
+    person: "lzsaver"
+    date: "2010-10-01T20:49:47.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1332/2010-10-02-lz-msg14960"
 ---
 
-[Quote from: theymos on October 02, 2010, 06:11:11 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1332/2010-10-02-theymos-msg14966/)
-[Quote from: lzsaver on October 02, 2010, 05:49:47 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1332/2010-10-02-lz-msg14960/)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
+<!-- /tone-skip -->
+<!-- tone-skip -->
 > これについてもっと教えてくれないか：
+<!-- /tone-skip -->
 
 「extraNonceで奇妙なことをしなければならず、それがブロックヘッダのサイズを増加させる」
 生成する際は、ブロックヘッダのハッシュを計算する。より多くのデータをハッシュする方が少ないデータをハッシュするより遅いため、ブロックヘッダは1つの例外を除いて、すべての人にとって固定サイズであることが重要だ。これが混乱のポイントだ。extraNonceはブロックヘッダの一部ではなく、最初のトランザクションの一部だ。ハッシュ計算を遅くすることはない。ヘッダのサイズを変更することもない。

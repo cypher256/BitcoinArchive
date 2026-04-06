@@ -12,10 +12,16 @@ description: "BitcoinTalkトピック286におけるDataWraithの投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "TopSoil"
+    date: "2010-07-14T06:59:18.000Z"
 ---
 
-[Quote from: TopSoil on July 14, 2010, 03:59:18 PM](#msg2859)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 確かにそのように動作はするが、それが理想なのか？ネットワークの堅牢性が低下し、攻撃や操作に対してより脆弱にならないか？攻撃者がスーパーノードのクラスタを運用し始めたらどうなるのか？要点は、その必要がないのに、なぜこのより脆弱なアーキテクチャに依存するのかということだ。実装がより簡単というわけでもない。
+<!-- /tone-skip -->
 
 実際にはそうでもない。心配なら、自分自身のサーバーをいつでも運用できる。
 

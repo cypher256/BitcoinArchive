@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/252/"
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-21T03:11:10.000Z"
 ---
 
-[Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](#msg4709)
+<!-- quote: q1 -->
 > I just did a quick survey of 20 .conf files in /etc on my debian system, and found:
 
  1 file used "key value"

@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/"
+quotes:
+  - id: "q1"
+    person: "Ground Loop"
+    date: "2010-08-15T15:29:55.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609"
 ---
 
-[Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609/)
+<!-- quote: q1 -->
 > Question about fallout:  I had a **transaction** that I submitted after the bad block, using the bad block chain.
 
 What is the status of that transaction?

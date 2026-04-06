@@ -11,9 +11,14 @@ participants:
 description: "Context post by DataWraith in BitcoinTalk topic 360. before msg3520."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Some Mouse"
+    date: "2010-07-15T15:13:52.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-360/2010-07-16-some-mouse-msg3334"
 ---
 
-[Quote from: Some Mouse on July 16, 2010, 12:13:52 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-360/2010-07-16-some-mouse-msg3334/)
+<!-- quote: q1 -->
 > Reversible computing techniques 'cheat' around the entropy limit. This means they can reach effective speeds far, far beyond what are possible with current computers, as they are effectively capable of performing nondeterministic operations.
 
 Wait, what? I thought reversible computation just uses less energy. Where does the non-determinism come in?

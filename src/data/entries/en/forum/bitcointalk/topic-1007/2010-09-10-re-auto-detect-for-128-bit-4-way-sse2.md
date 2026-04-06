@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/448/"
+quotes:
+  - id: "q1"
+    person: "teknohog"
+    date: "2010-09-09T10:32:05.000Z"
 ---
 
-[Quote from: teknohog on September 09, 2010, 07:32:05 PM](#msg12336)
+<!-- quote: q1 -->
 > Since the function CallCPUID function contains x86 assembler, it breaks the build on other architectures. I've changed line 2770 in main.cpp to
 
 #if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)

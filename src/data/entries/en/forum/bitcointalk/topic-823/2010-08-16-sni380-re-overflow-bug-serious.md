@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/380/"
+quotes:
+  - id: "q1"
+    person: "kosovito"
+    date: "2010-08-15T15:39:17.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-kosovito-msg9615"
 ---
 
-[Quote from: kosovito on August 16, 2010, 12:39:17 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-16-kosovito-msg9615/)
+<!-- quote: q1 -->
 > I did all steps, now my client is 0.3.10 and it stopped at block 74638. Is all fine?
 
 If you still show 74638 blocks then you aren't connected to any 0.3.10 nodes.  

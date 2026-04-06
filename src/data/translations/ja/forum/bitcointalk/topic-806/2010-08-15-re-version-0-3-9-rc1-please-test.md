@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/365/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-08-15T08:46:27.000Z"
 ---
 
-[Quote from: jgarzik on August 15, 2010, 05:46:27 PM](#msg9467)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 拡張ヘルプは私のアイデアに基づいているかもしれないが、コードはかなり異なっていた。
+<!-- /tone-skip -->
 
 アイデアが主要な部分だった。あなたがパッチを投稿した時、「-?」の代わりにそのようにすべきだったと気付いた。「-?」はパラメータ値の可能な範囲に侵入するため、常に懸念を持っていた。また、ヘルプの応答はサーバーではなく呼び出し側のバージョンに基づいてしまう。

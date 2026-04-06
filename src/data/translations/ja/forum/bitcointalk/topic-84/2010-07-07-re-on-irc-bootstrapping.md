@@ -14,12 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/170/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Vasiliev"
+    date: "2010-06-25T14:50:15.000Z"
 ---
 
 全員が同じIRCサーバーとチャネルに接続して、互いを見つけられるようにする必要がある。
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
 > Freenodeをフォールバックサーバーとして残しておいた方がいいかもしれない――彼のサーバーが動かない場合はFreenodeのを使うように。
 <!-- /tone-skip -->
 大量のユーザーが一度にFreenodeに殺到するのはよくないかもしれない。

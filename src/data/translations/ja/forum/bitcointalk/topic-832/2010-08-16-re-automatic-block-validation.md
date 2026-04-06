@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/392/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-08-16T06:25:54.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-832/2010-08-16-satoshi-msg9754"
 ---
 
-[Quote from: satoshi on August 16, 2010, 03:25:54 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-832/2010-08-16-satoshi-msg9754/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > それは難しいアプローチだ。
+<!-- /tone-skip -->
 
 最終的にSVN rev 139でそのようにした。
 

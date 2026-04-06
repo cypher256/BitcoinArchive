@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/411/"
+quotes:
+  - id: "q1"
+    person: "ArtForz"
+    date: "2010-08-21T07:56:31.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-21-artforz-msg10609"
 ---
 
-[Quote from: ArtForz on August 21, 2010, 04:56:31 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-820/2010-08-21-artforz-msg10609/)
+<!-- quote: q1 -->
 > - AMD K10: 2 128bit units
 
 - intel nehalem: 3 128bit units

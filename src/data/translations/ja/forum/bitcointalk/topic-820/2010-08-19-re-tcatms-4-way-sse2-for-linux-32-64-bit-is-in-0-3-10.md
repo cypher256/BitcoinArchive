@@ -14,16 +14,28 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/402/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Ground Loop"
+    date: "2010-08-18T14:14:26.000Z"
+  - id: "q2"
+    person: "nelisky"
+    date: "2010-08-18T14:02:25.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-18-nelisky-msg10164"
 ---
 
-[Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](#msg10167)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Mac以外のi5は対応してくれないのか？
+<!-- /tone-skip -->
 
 Windows i5 64ビットではここでは遅くなった。
 i5で遅くなったと言う人を聞いたのは初めてだ。他の全員がi5では4wayの方が速いと言っている。ハイパースレッディングを有効にするとさらにだ。
 
-[Quote from: nelisky on August 18, 2010, 11:02:25 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-820/2010-08-18-nelisky-msg10164/)
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > i5もだ。少なくとも私のMacBookProでは。
+<!-- /tone-skip -->
 
 良いな、ということはMacでも動作しているという確認だな？
 

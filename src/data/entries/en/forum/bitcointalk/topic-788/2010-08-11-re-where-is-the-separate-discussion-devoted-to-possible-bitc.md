@@ -13,6 +13,11 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/344/"
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-08-11T07:10:56.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761"
 ---
 
 It doesn't have to be such a breaking change.  New nodes could accept old transactions for a long time until most nodes have already upgraded before starting to refuse transactions without PoW.  Or, they could always accept old transactions, but only a limited number per time period.
@@ -21,7 +26,7 @@ I've thought about PoW on transactions many times, but usually I end up thinking
 
 A more general umbrella partial solution would be to implement the idea where an unlikely dropoff in blocks received is detected.  Then an attacker would still need a substantial portion of the network's power to benefit from a DoS attack.
 
-[Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761/)
+<!-- quote: q1 -->
 > Bitcoin's p2p network is subject to various kinds of denial of service attacks.
 
 There, I said it.

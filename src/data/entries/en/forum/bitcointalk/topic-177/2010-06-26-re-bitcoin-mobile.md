@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/154/"
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-06-10T04:51:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-177/2010-06-10-sirius-msg1452"
 ---
 
-[Quote from: sirius-m on June 10, 2010, 01:51:16 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-177/2010-06-10-sirius-msg1452/)
+<!-- quote: q1 -->
 > You can of course use services like vekja.net or mybitcoin.com on a mobile browser, depositing money there to the extent you trust them. 
 
 I think that's the best option right now.  Like cash, you don't keep your entire net worth in your pocket, just walking around money for incidental expenses.

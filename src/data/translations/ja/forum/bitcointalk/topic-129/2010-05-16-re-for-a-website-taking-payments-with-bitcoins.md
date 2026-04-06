@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/99/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Xunie"
+    date: "2010-05-14T12:52:53.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-129/2010-05-14-xunie-msg1124"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Xunie on May 14, 2010, 09:52:53 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-129/2010-05-14-xunie-msg1124/)
 > ユーザーがプロキシを使用している間はIPトランザクションを無効にすることを提案する！
 <!-- /tone-skip -->
 安全のために。

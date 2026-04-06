@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/310/"
+quotes:
+  - id: "q1"
+    person: "sgtstein"
+    date: "2010-08-03T08:30:37.000Z"
 ---
 
-[Quote from: sgtstein on August 03, 2010, 05:30:37 PM](#msg7275)
+<!-- quote: q1 -->
 > I have successfully built it with 4.8, 4.7 never would but with 4.8 bitcoind locks up whenever it dumps the initial block download to disk. 
 
 I urge you not to use BDB 4.8.  The database/log0000* files will be incompatible if anyone uses your build and then goes back to the official build.

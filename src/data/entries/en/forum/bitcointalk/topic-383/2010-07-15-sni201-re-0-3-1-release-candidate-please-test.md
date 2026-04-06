@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/201/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-15T11:15:46.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3274"
 ---
 
-[Quote from: knightmb on July 15, 2010, 08:15:46 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3274/)
+<!-- quote: q1 -->
 > On the Linux client (64 bit), the "minimize on close" will still minimize to tray (causing X server hang after a short while by spawning multiple tray icons).
 
 I updated the first post with a link to rc2 for linux with the fix for this.  Please check that this is fixed for you.  Thanks!

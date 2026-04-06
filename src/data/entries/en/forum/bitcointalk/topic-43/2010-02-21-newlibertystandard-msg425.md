@@ -11,9 +11,13 @@ participants:
 description: "Context post by NewLibertyStandard in BitcoinTalk topic 43. before msg540."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Sabunir"
+    date: "2010-02-21T07:58:44.000Z"
 ---
 
-[Quote from: Sabunir on February 21, 2010, 04:58:44 PM](#msg424)
+<!-- quote: q1 -->
 > How do you adjust this difficulty, anyway? (Administrating a decentralized system?) And what would prevent an attacker from setting the difficulty very low or very high to interfere with the system?
 
 My understanding is that every Bitcoin client has the same algorithm (formula) built into it to automatically adjust the difficulty every so many blocks. Not only that, but I think that Bitcoin will not accept blocks generated at a different difficulty, so if a modified Bitcoin client tried to send out more easily generated blocks, all the authentic clients would reject the fake blocks.

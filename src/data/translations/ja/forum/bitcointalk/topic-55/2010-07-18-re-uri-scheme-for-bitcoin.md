@@ -14,15 +14,24 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/240/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-06-15T21:14:05.000Z"
+  - id: "q2"
+    person: "sirius-m"
+    date: "2010-06-15T23:26:14.000Z"
 ---
 
-[Quote from: lachesis on June 16, 2010, 06:14:05 AM](#msg1597)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 問題を誤解していると思う。ブラウザはいつでも127.0.0.1にアクセスできる（奇妙なIE設定やウイルスがなければ）。アドレスバーにアドレスを入力したりリンクをクリックしたりすれば問題なく動作する。しかし、JavaScriptを使ってドメイン間（または同一ドメインの異なるポート間）でPOSTリクエストを実行することはできない。
+<!-- /tone-skip -->
 
 私もそう思っていた。
 
+<!-- quote: q2 -->
 <!-- tone-skip -->
-[Quote from: sirius-m on June 16, 2010, 08:26:14 AM](#msg1598)
 > ええ、クロスドメインのJavaScript呼び出しは禁止されているということを言いたかったのです。つまり、127.0.0.1上にないJavaScriptから127.0.0.1を呼び出すことはできません。考えてみると、ブラウザが悪意のあるクロスドメインJavaScriptに人々のFacebookページを変更させたら、かなり面白いことになりますね。
 <!-- /tone-skip -->
 

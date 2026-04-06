@@ -13,6 +13,11 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/492/"
+quotes:
+  - id: "q1"
+    person: "eurekafag"
+    date: "2010-10-06T10:39:36.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-151/2010-10-06-eurekafag-msg15697"
 ---
 
 The order matters not to the program, but it matters to me maintaining it.  If it jumbles the order of the .po file then I can't diff for changes.  I have to update all 7 translation files when I change the English text in the program, and it's easier when they're all in the same order.
@@ -21,7 +26,7 @@ I can still put it back into normal order by making poedit rescan it.
 
 It is normal that untranslated strings are shown on top.
 
-[Quote from: eurekafag on October 06, 2010, 07:39:36 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-151/2010-10-06-eurekafag-msg15697/)
+<!-- quote: q1 -->
 > By the way, there are some similar lines that possibly may be replaced by one. They are very close by meaning and differs only by 1-2 words. Just a suggestion of course.
 
 I know, but not easily without complicating the sourcecode.

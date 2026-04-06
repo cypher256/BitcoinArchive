@@ -11,10 +11,20 @@ participants:
 description: "Context post by QuantumMechanic in BitcoinTalk topic 1268. before msg15741."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "kiba"
+    date: "2010-09-24T19:56:46.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-kiba-msg14004"
+  - id: "q2"
+    person: "dejayl"
+    date: "2010-09-24T19:14:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-quantummechanic-msg14002"
+    parent: "q1"
 ---
 
-[Quote from: kiba on September 25, 2010, 04:56:46 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-25-kiba-msg14004/)
-> [Quote from: dejayl on September 25, 2010, 04:14:44 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-25-quantummechanic-msg14002/)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > I'd like to see Bitcoin payments implemented into Tahoe-LAFS (distributed online storage), like Zooko was on here suggesting.  I would help, but I'm just learning how to program.
 > 
 > 

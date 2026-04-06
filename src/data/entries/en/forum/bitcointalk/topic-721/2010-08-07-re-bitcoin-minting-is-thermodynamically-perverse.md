@@ -13,13 +13,17 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/327/"
+quotes:
+  - id: "q1"
+    person: "gridecon"
+    date: "2010-08-06T07:48:00.000Z"
 ---
 
 It's the same situation as gold and gold mining.  The marginal cost of gold mining tends to stay near the price of gold.  Gold mining is a waste, but that waste is far less than the utility of having gold available as a medium of exchange.
 
 I think the case will be the same for Bitcoin.  The utility of the exchanges made possible by Bitcoin will far exceed the cost of electricity used.  Therefore, *not* having Bitcoin would be the net waste.
 
-[Quote from: gridecon on August 06, 2010, 04:48:00 PM](#msg7889)
+<!-- quote: q1 -->
 > As an overall point, I also do not agree with the idea that the very high computational burden of coin generation is in fact a necessity of the current system. As I understand it, currency creation is fundamentally metered by TIME - and if that is the fundamental controlling variable, what is the need for everyone to "roll as many dice as posible" within that given time period? The "chain of proof" for coin ownership and transactions doesn't depend on the method for spawning coins. 
 
 Each node's influence on the network is proportional to its CPU power.  The only way to show the network how much CPU power you have is to actually use it.

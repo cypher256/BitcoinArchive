@@ -13,10 +13,17 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/436/"
+quotes:
+  - id: "q1"
+    person: "Insti"
+    date: "2010-09-06T03:51:37.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-09-05T14:36:20.000Z"
 ---
 
-[Quote from: Insti on September 06, 2010, 12:51:37 PM](#msg12101)
-[Quote from: satoshi on September 05, 2010, 11:36:20 PM](#msg12063)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
 > Any suggestions for better text to put for this error message so the next person will be less likely to be confused?
 
 "Please check that your computer's date and time are correct. If your clock is wrong Bitcoin will not work properly."

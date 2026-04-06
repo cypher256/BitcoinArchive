@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/475/"
+quotes:
+  - id: "q1"
+    person: "tcatm"
+    date: "2010-10-03T10:45:45.000Z"
 ---
 
-[Quote from: tcatm on October 03, 2010, 07:45:45 PM](#msg15111)
+<!-- quote: q1 -->
 > 983 Mhash/s box.
 
 Seriously?  What hardware is that?

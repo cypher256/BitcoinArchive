@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/537/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Hal"
+    date: "2010-12-10T10:14:04.000Z"
 ---
 
-[Quote from: Hal on December 10, 2010, 07:14:04 PM](#msg28938)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > サトシ、追加のブロックチェーンがそれぞれ独自のコインを作り、それが取引所でビットコインと取引されるというアイデアを支持しているのか？ これらのチェーン固有のコインは、そのチェーンのマイナーへの報酬や、そのチェーンのドメイン内での何らかの権利や特権の購入に使われるのだろうか？
+<!-- /tone-skip -->
 
 そうだ、ドメインとビットコインの間の交換レートは変動するだろう。
 

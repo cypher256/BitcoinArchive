@@ -11,6 +11,10 @@ participants:
 description: "Context post by The Madhatter in BitcoinTalk topic 12. before msg50."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2009-12-09T09:45:10.000Z"
 ---
 
 Most modern P2P software tries UPnP by default. You can (of course) disable it (usually) in the options.
@@ -27,7 +31,7 @@ Can you give me CVS access or something? (If not, can I send you patches?) I'd l
 
 Cheers! Smiley
 
-[Quote from: satoshi on December 09, 2009, 06:45:10 PM](#msg41)
+<!-- quote: q1 -->
 > I'm looking forward to trying UPnP.  Do most P2P clients typically have UPnP enabled by default?
 > 
 > I'm still thinking about how best to structure the management interface.  Maybe command line commands to communicate with the background daemon to query transactions received and initiate sending transfers.  That would be more automation friendly.  Or what about an http interface on some port other than 80 to manage it with a browser?

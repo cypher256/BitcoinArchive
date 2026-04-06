@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/85/"
+quotes:
+  - id: "q1"
+    person: "Cdecker"
+    date: "2010-02-26T18:24:07.000Z"
 ---
 
-[Quote from: Cdecker on February 27, 2010, 03:24:07 AM](#msg565)
+<!-- quote: q1 -->
 > How about an SVG version? That way we could automatically generate smaller and larger versions as needed.
 
 I don't know how to do SVG, but I did the original very large, over 500 pixels across, so it can be scaled down.  I'll give the original when I'm finished.

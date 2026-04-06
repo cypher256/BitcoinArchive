@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/202/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "db"
+    date: "2010-07-15T11:39:08.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-db-msg3278"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: db on July 15, 2010, 08:39:08 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-383/2010-07-15-db-msg3278/)
 > ブロックチェーンをダウンロードするのに何時間もかかっているのは普通だろうか？ 15接続中だ。
 <!-- /tone-skip -->
 

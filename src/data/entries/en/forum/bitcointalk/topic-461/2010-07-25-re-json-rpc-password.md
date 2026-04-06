@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/273/"
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-07-25T10:52:35.000Z"
 ---
 
-[Quote from: lachesis on July 25, 2010, 07:52:35 PM](#msg5738)
+<!-- quote: q1 -->
 > I found what appears to be a bug: with a long enough username and password combination, the base64 encoder in bitcoind produces authorization headers that look like this:
 
 ```

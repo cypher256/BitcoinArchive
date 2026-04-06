@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/279/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Olipro"
+    date: "2010-07-25T21:39:17.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-501/2010-07-26-olipro-msg5815"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Olipro on July 26, 2010, 06:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-501/2010-07-26-olipro-msg5815/)
 > さて、ここで絶対に驚異的なパフォーマンスを紹介する。
 <!-- /tone-skip -->
 まだCrypto++をベースにしているか？これをメインのソースコードに取り込もう。

@@ -17,9 +17,13 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-10-03T11:28:39.000Z"
 ---
 
-[Quote from: theymos on October 03, 2010, 08:28:39 PM](#msg15126)
+<!-- quote: q1 -->
 > Applying this patch will make you incompatible with other Bitcoin clients.
 
 +1 theymos.  Don't use this patch, it'll make you incompatible with the network, to your own detriment.

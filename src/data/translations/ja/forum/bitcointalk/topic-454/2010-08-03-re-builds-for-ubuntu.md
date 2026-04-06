@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/309/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "nimnul"
+    date: "2010-08-03T08:51:15.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-454/2010-08-03-nimnul-msg7282"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: nimnul on August 03, 2010, 05:51:15 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-454/2010-08-03-nimnul-msg7282/)
 > サトシのnoWxパッチは0.3.7にもう入っているのか？以前はbitcoindにwxが必要で、それがtrunkに入ったとサトシが発表したのを見たことがない
 <!-- /tone-skip -->
 

@@ -14,9 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/489/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "kiba"
+    date: "2010-09-23T07:00:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13828"
 ---
 
-[Quote from: kiba on September 23, 2010, 04:00:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13828/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > これは「経済成長作戦」だ。我々の使命は、全員が狭い範囲の商品・サービスに特化することで、Bitcoin経済を成長させることだ。
+<!-- /tone-skip -->
 
 繰り返しになるが、そのためのオープンソースソフトウェアがあるので、Bitcoin決済メカニズムを組み込むだけで済む。見つけた良いものの一つがMihalism Multi Hostだ。無料ホスト向けに設計されているので、有料利用に見合うように制限を緩和するための微調整がいくつか必要になるだけだ。

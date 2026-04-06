@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/206/"
+quotes:
+  - id: "q1"
+    person: "bdonlan"
+    date: "2010-07-15T14:27:14.000Z"
 ---
 
-[Quote from: bdonlan on July 15, 2010, 11:27:14 PM](#msg3320)
+<!-- quote: q1 -->
 > in 120DPI mode. 
 
 What is "120DPI mode"?  Is that an actual setting somewhere?  Sounds like an obscure enough candidate.  I suppose it needs twice the resolution icon to fill the size of the upper left corner icon.  Only one size is provided.

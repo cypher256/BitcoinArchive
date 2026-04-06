@@ -13,11 +13,15 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/19/"
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-10T19:59:19.000Z"
 ---
 
 Right, the SVN has the almost-release-candidate 0.2 source, which can also be built and run on Linux.   It hasn't been tested on FreeBSD.
 
-[Quote from: madhatter2 on December 11, 2009, 04:59:19 AM](#msg47)
+<!-- quote: q1 -->
 > If we can get to the point where we have a working backend process that will run on FreeBSD I can run always-on seeds.
 
 That would be a big help.  TOR users wouldn't have to worry about how to get seeded, and we wouldn't depend on IRC.

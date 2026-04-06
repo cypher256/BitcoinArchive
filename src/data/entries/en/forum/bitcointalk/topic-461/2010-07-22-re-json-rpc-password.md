@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/254/"
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-21T16:11:26.000Z"
 ---
 
-[Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](#msg4908)
+<!-- quote: q1 -->
 > TODO: dialog box or debug.log warning if no rpc.user/rpc.password is set, explaining how to set.
 
 In many of the contexts of this RPC stuff, you can print to the console with fprintf(stdout, like this:

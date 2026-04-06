@@ -11,9 +11,13 @@ participants:
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 665. before msg18508."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "bytemaster"
+    date: "2010-08-01T11:14:29.000Z"
 ---
 
-[Quote from: bytemaster on August 01, 2010, 08:14:29 PM](#msg6928)
+<!-- quote: q1 -->
 > I want to have multiple "accounts" with unique balances and to send and receive coins on a per-account basis.  The equiv. of having multiple wallets running at the same time.   
 > 
 > It would help to simply list the balance for each 'receiving address' and to specify a 'source' address when sending coins.

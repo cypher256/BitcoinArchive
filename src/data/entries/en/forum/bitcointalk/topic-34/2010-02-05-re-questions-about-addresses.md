@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/"
+quotes:
+  - id: "q1"
+    person: "Sabunir"
+    date: "2010-02-05T08:31:30.000Z"
 ---
 
-[Quote from: Sabunir on February 05, 2010, 05:31:30 PM](#msg246)
+<!-- quote: q1 -->
 > Perhaps there should be a feature against this? For instance, if a transaction isn't accepted by the recipient for a long period of time (a month?), the transaction will be canceled and the coins returned to the one who sent them?
 
 That's not possible.  You've handed control of the money over to the recipient's keypair.  Only that key can control it.

@@ -14,11 +14,22 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/436/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Insti"
+    date: "2010-09-06T03:51:37.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-09-05T14:36:20.000Z"
 ---
 
-[Quote from: Insti on September 06, 2010, 12:51:37 PM](#msg12101)
-[Quote from: satoshi on September 05, 2010, 11:36:20 PM](#msg12063)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
+<!-- /tone-skip -->
+<!-- tone-skip -->
 > このエラーメッセージに使うより良いテキストの提案はあるか？次の人が混乱しにくくなるように。
+<!-- /tone-skip -->
 
 「コンピュータの日付と時刻が正しいか確認してください。時計が間違っているとBitcoinは正しく動作しません。」
 ありがとう。

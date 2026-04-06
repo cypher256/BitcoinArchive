@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/100/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Karmicads"
+    date: "2010-04-30T21:06:53.000Z"
+  - id: "q2"
+    person: "DataWraith"
+    date: "2010-05-02T02:13:09.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Karmicads on May 01, 2010, 06:06:53 AM](#msg1038)
 > このアイデアについて誰か何かしているのか気になっている。このスレッドとここで説明されている素晴らしい開発に従って、インターネットブラウザ機能の実装の可能性を調査しているところだ。まずこれを試して、Firefoxアドオンが発展する中で他の機能と一緒に含めるのが、より簡単な最初の一歩かもしれない（学びながら進めている）。
 <!-- /tone-skip -->
 
@@ -28,8 +35,8 @@ translationStatus: complete
 
 BitcoinはJSON-RPCのポート8332と同様に、ローカルループバックのポート8330で応答できる。HTTP応答を返すことになる。
 
+<!-- quote: q2 -->
 <!-- tone-skip -->
-[Quote from: DataWraith on May 02, 2010, 11:13:09 AM](#msg1045)
 > Karmicads、詳細な返信をありがとう。
 <!-- /tone-skip -->
 

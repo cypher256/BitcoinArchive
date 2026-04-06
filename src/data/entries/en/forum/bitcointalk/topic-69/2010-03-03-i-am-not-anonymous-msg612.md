@@ -11,9 +11,14 @@ participants:
 description: "Context post by I-am-not-anonymous in BitcoinTalk topic 69. before msg614."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "ihrhase"
+    date: "2010-03-02T18:15:31.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-69/2010-03-03-ihrhase-msg611"
 ---
 
-[Quote from: ihrhase on March 03, 2010, 03:15:31 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-69/2010-03-03-ihrhase-msg611/)
+<!-- quote: q1 -->
 > Remember NLS
 > 
 > There are two types of law...

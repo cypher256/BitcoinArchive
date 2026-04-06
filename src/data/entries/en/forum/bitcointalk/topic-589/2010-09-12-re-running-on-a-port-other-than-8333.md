@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/449/"
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-08-10T06:24:55.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-589/2010-08-10-lachesis-msg8544"
 ---
 
-[Quote from: lachesis on August 10, 2010, 03:24:55 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-589/2010-08-10-lachesis-msg8544/)
+<!-- quote: q1 -->
 > Also, does Bitcoin open the BerkeleyDB as exclusive, precluding the need for a file lock?It does not -- did my own tests.
 
 Is there a way to open BerkeleyDB exclusive?

@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/"
+quotes:
+  - id: "q1"
+    person: "dkaparis"
+    date: "2010-08-11T14:00:16.000Z"
 ---
 
-[Quote from: dkaparis on August 11, 2010, 11:00:16 PM](#msg8807)
+<!-- quote: q1 -->
 > There is this piece of code in headers.h:
 
 #ifdef __WXMAC_OSX__

@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Sabunir"
+    date: "2010-02-05T08:31:30.000Z"
 ---
 
-[Quote from: Sabunir on February 05, 2010, 05:31:30 PM](#msg246)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > おそらくこれに対する機能があるべきでは？ 例えば、トランザクションが長期間（1ヶ月？）受取人に承認されなかった場合、トランザクションをキャンセルして送信者にコインを返すとか？
+<!-- /tone-skip -->
 
 それは不可能だ。お金の管理を受取人の鍵ペアに渡してしまっている。その鍵だけがそれを管理できる。
 

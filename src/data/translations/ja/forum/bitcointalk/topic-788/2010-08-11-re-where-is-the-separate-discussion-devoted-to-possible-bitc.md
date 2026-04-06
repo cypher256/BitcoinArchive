@@ -14,6 +14,11 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/344/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-08-11T07:10:56.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761"
 ---
 
 そこまで破壊的な変更にする必要はない。新しいノードは、PoWなしのトランザクションの受け入れを拒否し始める前に、ほとんどのノードがすでにアップグレードされるまで長い間古いトランザクションを受け入れることができる。あるいは、常に古いトランザクションを受け入れるが、期間あたりの数を制限することもできる。
@@ -22,8 +27,10 @@ translationStatus: complete
 
 より一般的な包括的な部分解決策は、受信ブロック数の異常な減少を検出するアイデアを実装することだ。そうすれば、攻撃者がDoS攻撃から利益を得るにはネットワークパワーのかなりの部分が必要になる。
 
-[Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > BitcoinのP2Pネットワークはさまざまなサービス拒否攻撃を受ける可能性がある。
+<!-- /tone-skip -->
 
 はい、そう言った。
 +1

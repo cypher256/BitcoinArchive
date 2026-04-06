@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/202/"
+quotes:
+  - id: "q1"
+    person: "db"
+    date: "2010-07-15T11:39:08.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-db-msg3278"
 ---
 
-[Quote from: db on July 15, 2010, 08:39:08 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-383/2010-07-15-db-msg3278/)
+<!-- quote: q1 -->
 > The listreceivedbyaddress and getreceivedbyaddress commands are duplicated in bincoind help. (Same in 0.3.0.)
 
 Yes a bug.  It'll have to be fixed in the next version.

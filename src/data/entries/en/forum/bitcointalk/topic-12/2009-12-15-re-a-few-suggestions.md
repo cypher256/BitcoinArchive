@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/"
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-14T20:21:09.000Z"
 ---
 
-[Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](#msg68)
+<!-- quote: q1 -->
 > It is also throwing the same std::string issue on the latest version of Ubuntu Linux.
 
 Then it must be something you're doing differently with building or configuring wxWidgets.

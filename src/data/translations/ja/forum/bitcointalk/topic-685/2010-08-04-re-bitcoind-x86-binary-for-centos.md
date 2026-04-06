@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/314/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-08-03T14:46:46.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: knightmb on August 03, 2010, 11:46:46 PM](#msg7365)
 > バイナリをここにアップロードした（32ビットのみ - bitcoind）：
 <!-- /tone-skip -->
 

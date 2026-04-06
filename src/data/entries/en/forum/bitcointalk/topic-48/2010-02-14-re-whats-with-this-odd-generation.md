@@ -13,14 +13,21 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/56/"
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-02-11T23:31:52.000Z"
+  - id: "q2"
+    person: "SmokeTooMuch"
+    date: "2010-02-12T04:11:09.000Z"
 ---
 
-[Quote from: theymos on February 12, 2010, 08:31:52 AM](#msg318)
+<!-- quote: q1 -->
 > Does the sending client send more BitCoins to account for the fee (so the recipient gets what he's expecting)?
 
 Yes.
 
-[Quote from: SmokeTooMuch on February 12, 2010, 01:11:09 PM](#msg319)
+<!-- quote: q2 -->
 > why do we even need fees ? i thougt the no-fees-feature was one of the advantages of bitcoin ?!
 
 Almost all transactions are free.  A transaction is over the maximum size limit if it has to add up more than 500 of the largest payments you've received to make up the amount.  A transaction over the size limit can still be sent if a small fee is added.

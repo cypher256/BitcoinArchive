@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/"
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-08-05T10:00:30.000Z"
 ---
 
-[Quote from: jgarzik on August 05, 2010, 07:00:30 PM](#msg7723)
+<!-- quote: q1 -->
 > Due to that recourse, it is unlikely to be used as an escrow mechanism 
 
 Really?  Do you think people won't be able to understand the benefit?  (If your response is an argument that there's no benefit at all, I guess that will reinforce the case that people won't be able to understand it.)

@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/162/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "dkaparis"
+    date: "2010-06-27T13:02:25.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: dkaparis on June 27, 2010, 10:02:25 PM](#msg1842)
 > 関連して、Visual C++でコンパイル可能なのか？ 時間ができたら試してみたいと思っている。
 <!-- /tone-skip -->
 

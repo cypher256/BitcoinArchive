@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by mizerydearia in BitcoinTalk topic 898."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Macho"
+    date: "2010-08-24T18:03:03.000Z"
 ---
 
-[Quote from: Macho on August 25, 2010, 03:03:03 AM](#msg11101)
+<!-- quote: q1 -->
 > 
 
 I agree, however, if you compile from source, a single change from

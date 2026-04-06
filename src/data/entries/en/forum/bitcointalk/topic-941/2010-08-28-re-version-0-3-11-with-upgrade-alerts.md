@@ -13,16 +13,23 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/431/"
+quotes:
+  - id: "q1"
+    person: "torservers"
+    date: "2010-08-28T04:00:37.000Z"
+  - id: "q2"
+    person: "pavelo"
+    date: "2010-08-27T22:36:07.000Z"
 ---
 
-[Quote from: torservers on August 28, 2010, 01:00:37 PM](#msg11499)
+<!-- quote: q1 -->
 > The "About" dialog still shows 0.3.10.1 beta.
 
 What OS?  I ran the Windows and 64-bit Linux version and checked the about dialog.
 
 The Mac version is still 0.3.10.1.
 
-[Quote from: pavelo on August 28, 2010, 07:36:07 AM](#msg11481)
+<!-- quote: q2 -->
 > iirc, it is possible to specify -march on a per-function basis using some gcc __attribute__. That way, only the function in question would be optimized, and if the user doesn't specify -4way, everything else should be ok.
 
 I updated the first post to be more specific.  Only the -4way code is compiled this way.

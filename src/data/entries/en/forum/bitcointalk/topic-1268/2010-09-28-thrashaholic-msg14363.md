@@ -11,10 +11,20 @@ participants:
 description: "Context post by thrashaholic in BitcoinTalk topic 1268. before msg15741."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-09-26T16:14:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-27-theymos-msg14183"
+  - id: "q2"
+    person: "thrashaholic"
+    date: "2010-09-26T15:20:02.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-27-thrashaholic-msg14176"
+    parent: "q1"
 ---
 
-[Quote from: theymos on September 27, 2010, 01:14:45 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-27-theymos-msg14183/)
-> [Quote from: thrashaholic on September 27, 2010, 12:20:02 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-27-thrashaholic-msg14176/)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > I also don't see how bitcoin could be used as a captcha, those are used to make sure there's a human on the other end and not a spam bot...you could easily automate the payments. For this niche, it's paying for high bandwidth, concurrent downloads of pirated content; it just won't work otherwise IMO.
 > 
 > 

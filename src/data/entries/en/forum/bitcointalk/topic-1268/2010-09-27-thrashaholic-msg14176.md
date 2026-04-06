@@ -11,10 +11,29 @@ participants:
 description: "Quoted post by thrashaholic in BitcoinTalk topic 1268."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "kiba"
+    date: "2010-09-23T11:10:38.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13869"
+  - id: "q2"
+    person: "mskwik"
+    date: "2010-09-23T10:14:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-23-mskwik-msg13855"
+    parent: "q1"
+  - id: "q3"
+    person: "kiba"
+    date: "2010-09-26T03:54:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-26-kiba-msg14114"
+  - id: "q4"
+    person: "Anonymous"
+    date: "2010-09-26T03:05:29.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-26-anonymous-msg14112"
+    parent: "q3"
 ---
 
-[Quote from: kiba on September 23, 2010, 08:10:38 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13869/)
-> [Quote from: mskwik on September 23, 2010, 07:14:16 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-23-mskwik-msg13855/)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13828/)
 > > > > 1. Download site like rapidshare and other crappy host. Inconvenient captcha and required paypal. Bitcoin can possibly take both roles and streamline the whole process. Suggested by Kiba.
 > > 
@@ -39,8 +58,8 @@ I also don't see how bitcoin could be used as a captcha, those are used to make 
 
 Agorist developers apply within.  Grin
 
-[Quote from: kiba on September 26, 2010, 12:54:44 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-26-kiba-msg14114/)
-> [Quote from: Anonymous on September 26, 2010, 12:05:29 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-1268/2010-09-26-anonymous-msg14112/)
+<!-- quote: q3 -->
+> <!-- quote: q4 -->
 > > Quote2. Advertising clearing house like http://projectwonderful.com. Suggested by mskwik.(I used projectwonderful to make tiny bit of money. I wonder if I can get more money from a bitcoin advertising clearing house)
 > > 
 > > We are working on a bitcoin business directory so an advertising clearance house would be a natural fit with this. There is one developer working on the directory at the moment so another drupal developer or two to help us out would get it done a lot quicker.

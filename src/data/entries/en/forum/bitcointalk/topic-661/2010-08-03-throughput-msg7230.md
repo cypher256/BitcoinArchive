@@ -11,9 +11,14 @@ participants:
 description: "Quoted post by throughput in BitcoinTalk topic 661."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "BeeCee1"
+    date: "2010-08-03T04:07:23.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-beecee1-msg7223"
 ---
 
-[Quote from: BeeCee1 on August 03, 2010, 01:07:23 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-661/2010-08-03-beecee1-msg7223/)
+<!-- quote: q1 -->
 > If enough people are using the network, and the split were not due to open hostilities, it is possible that there would be intermittent connectivity between the two networks.  This would serve to re-sync the block chains but could hurt the reliability of the system with transactions disappearing at random.
 > 
 > Imagine a cable cut, or series of cable cuts that isolated a block of countries.

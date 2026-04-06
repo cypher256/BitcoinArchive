@@ -11,10 +11,15 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 788. before msg8804."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-08-11T07:10:56.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761"
 ---
 
 [Deleted] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
-> [Quote from: gavinandresen on August 11, 2010, 04:10:56 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761/)
+> <!-- quote: q1 -->
 > > + require some proof-of-work as part of the client-to-client connection process (helps prevent 'Sybil' attacks).
 > 
 > 

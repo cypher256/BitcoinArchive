@@ -14,12 +14,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/359/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "tcatm"
+    date: "2010-08-13T15:53:07.000Z"
 ---
 
 まだであれば、thashのアラインを試してみてほしい。効果があるかもしれない。損にはならない。
 
-[Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ツリーオプティマイザのコンパイラバグを踏んでいるようだ。-O0でコンパイルしてみてくれないか？
+<!-- /tone-skip -->
 
 -O0でも効果なし、同じエラーだ。
 

@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/380/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "kosovito"
+    date: "2010-08-15T15:39:17.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-kosovito-msg9615"
 ---
 
-[Quote from: kosovito on August 16, 2010, 12:39:17 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-kosovito-msg9615/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > すべての手順を実行した。今、クライアントは0.3.10でブロック74638で停止した。これで問題ないのか？
+<!-- /tone-skip -->
 
 まだ74638ブロックと表示されているなら、0.3.10のノードに接続されていない。
 

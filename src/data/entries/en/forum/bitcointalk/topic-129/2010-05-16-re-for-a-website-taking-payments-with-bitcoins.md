@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/99/"
+quotes:
+  - id: "q1"
+    person: "Xunie"
+    date: "2010-05-14T12:52:53.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-129/2010-05-14-xunie-msg1124"
 ---
 
-[Quote from: Xunie on May 14, 2010, 09:52:53 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-129/2010-05-14-xunie-msg1124/)
+<!-- quote: q1 -->
 > I suggest we disable IP transactions while the user uses a Proxy!
 
 Just to be on the safe side.

@@ -12,13 +12,25 @@ description: "BitcoinTalkトピック1268におけるQuantumMechanicの文脈投
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "kiba"
+    date: "2010-09-24T19:56:46.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-kiba-msg14004"
+  - id: "q2"
+    person: "dejayl"
+    date: "2010-09-24T19:14:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-quantummechanic-msg14002"
+    parent: "q1"
 ---
 
-[Quote from: kiba on September 25, 2010, 04:56:46 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1268/2010-09-25-kiba-msg14004/)
-> [Quote from: dejayl on September 25, 2010, 04:14:44 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1268/2010-09-25-quantummechanic-msg14002/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
+> <!-- quote: q2 -->
 > > Zookoがここで提案していたように、Tahoe-LAFS（分散型オンラインストレージ）にBitcoin支払いが実装されるのを見たい。手伝いたいが、まだプログラミングを学んでいるところだ。
 > 
 > 
 > これは既存のサービスに追加された支払いオプションなのか、それとも実際に新しいサービスなのか？
+<!-- /tone-skip -->
 
 そのサービスは存在するが、必要な会計スキームはまだ開発されていない。

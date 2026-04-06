@@ -11,9 +11,13 @@ participants:
 description: "Context post by DataWraith in BitcoinTalk topic 43. before msg1323."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "laszlo"
+    date: "2010-05-11T04:13:07.000Z"
 ---
 
-[Quote from: laszlo on May 11, 2010, 01:13:07 PM](#msg1112)
+<!-- quote: q1 -->
 > The way I understand it, since the data that's being hashed is pretty much random and because the hashing algorithm exhibits the 'avalanche effect' it probably doesn't matter if you keep starting with 1 and incrementing it or if you use pseudo random values instead, but I was wondering if anyone could support this or disprove it.
 
 Yep, your understanding here is correct. It does not matter what exactly gets hashed, and no, you can't cheat without first breaking SHA-256, which is considered difficult.

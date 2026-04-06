@@ -13,6 +13,11 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/"
+quotes:
+  - id: "q1"
+    person: "kencausey"
+    date: "2010-08-15T14:45:26.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588"
 ---
 
 I'd like to reduce the number of blocks displayed in the status bar by 1.   When you first load the program, it'll display 0 blocks instead of 1:
@@ -24,7 +29,7 @@ The main benefit is that blocks will be equal to the block number of the current
 
 It would reduce the confusion we had here:
 
-[Quote from: kencausey on August 15, 2010, 11:45:26 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588/)
+<!-- quote: q1 -->
 > [Deleted] Quote from: davidonpda on August 15, 2010, 11:31:37 PM
 > > ... It already is on block 74638. I assume that means that block is now a good one?
 

@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/365/"
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-08-15T08:46:27.000Z"
 ---
 
-[Quote from: jgarzik on August 15, 2010, 05:46:27 PM](#msg9467)
+<!-- quote: q1 -->
 > the extended-help might have been based on my idea, but the code was somewhat different.
 
 The idea was the main part.  When you posted your patch, I realized it should have been done that way instead of "-?".  I always had reservations about "-?" because it intrudes on the possible parameter values, and the help response is based on the version of the caller instead of the server.

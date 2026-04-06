@@ -11,9 +11,14 @@ participants:
 description: "Context post by MoonShadow in BitcoinTalk topic 846. before msg10076."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "lfm"
+    date: "2010-08-17T12:33:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-846/2010-08-17-lfm-msg9981"
 ---
 
-[Quote from: lfm on August 17, 2010, 09:33:14 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-846/2010-08-17-lfm-msg9981/)
+<!-- quote: q1 -->
 > QuoteThe successful coding of the sha-256 algorithim into a fpga and recoding of the bitcoin client's generation function to use one or more such fpga's would produce a khash per second rate that no desktop could match.  It would look like a super-computer from our perspectives.
 > A lot of hand waving there. For some concrete numbers it quotes 53 MB/s and since we only hash 192 bytes at a time, you might think it would do 27 mhash/s (but it probably would be less) which I beleive is actually within the range of a desktop with a couple GPUs.
 

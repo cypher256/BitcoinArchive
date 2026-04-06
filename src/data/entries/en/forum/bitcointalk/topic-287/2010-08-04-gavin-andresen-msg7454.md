@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 287."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "bytemaster"
+    date: "2010-08-03T21:22:56.000Z"
 ---
 
-[Quote from: bytemaster on August 04, 2010, 06:22:56 AM](#msg7443)
+<!-- quote: q1 -->
 > Well, right now nothing stops someone from creating a system where:
 > 
 > A sends  1.00000001 to B

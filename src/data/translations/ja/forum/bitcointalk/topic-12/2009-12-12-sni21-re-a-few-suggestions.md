@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/21/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-11T21:34:21.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: madhatter2 on December 12, 2009, 06:34:21 AM](#msg51)
 > Mac OS X 10.4.11/Intel上でsvn 0.2のコンパイルがほぼ完了した（PPC970マシンもあるのでPPCビルドも可能だ）。ウィンドウ表示はwxwidgets経由のネイティブCarbonだ！速い！ Wink 新しいmakefile（makefile.osx、もちろんmakefile.unixベース……autoconfの使用は検討した？）を作成し、header.hにいくつかifdefを入れた。パッチがある。引き続きいじってみる。次はFreeBSDで試すかもしれない。
 <!-- /tone-skip -->
 Macサポートは良いな。wxWidgetsはクロスプラットフォームで本当に効果を発揮している。

@@ -11,9 +11,13 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 461. before msg5383."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-07-23T09:22:08.000Z"
 ---
 
-[Quote from: lachesis on July 23, 2010, 06:22:08 PM](#msg5348)
+<!-- quote: q1 -->
 > The password definitely shouldn't be required.
 
 I strongly disagree; software should be secure by default, and running bitcoind without a password (or bitcoin -server) is definitely NOT secure.

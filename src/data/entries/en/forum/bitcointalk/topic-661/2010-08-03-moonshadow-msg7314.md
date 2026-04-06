@@ -11,9 +11,14 @@ participants:
 description: "Context post by MoonShadow in BitcoinTalk topic 661. before msg7356."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "throughput"
+    date: "2010-08-03T04:33:08.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-throughput-msg7230"
 ---
 
-[Quote from: throughput on August 03, 2010, 01:33:08 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-661/2010-08-03-throughput-msg7230/)
+<!-- quote: q1 -->
 > Yes...
 > But what you describe is only possible after someone have noticed and prooved the network split is happening.
 > Do you propose any method to detect the beginning of the network split?

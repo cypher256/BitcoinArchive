@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/449/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-08-10T06:24:55.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-589/2010-08-10-lachesis-msg8544"
 ---
 
-[Quote from: lachesis on August 10, 2010, 03:24:55 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-589/2010-08-10-lachesis-msg8544/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > SVNリビジョン125に対応した更新版のパッチはあるか？また、BerkeleyDBを排他モードで開いているなら、ファイルロックは不要ではないか？排他モードでは開いていない――自分でテストして確認した。
+<!-- /tone-skip -->
 
 BerkeleyDBを排他的に開く方法はあるか？
 

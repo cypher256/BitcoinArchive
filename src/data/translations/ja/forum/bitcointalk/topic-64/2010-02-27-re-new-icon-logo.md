@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/85/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Cdecker"
+    date: "2010-02-26T18:24:07.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Cdecker on February 27, 2010, 03:24:07 AM](#msg565)
 > SVGバージョンはどうだろうか？ そうすれば必要に応じて自動的に小さいバージョンや大きいバージョンを生成でき、ソース管理への保存も選択肢になる。
 <!-- /tone-skip -->
 SVGのやり方はわからないが、オリジナルは幅500ピクセル以上の非常に大きなサイズで作ったので、縮小できる。完成したらオリジナルを提供する。

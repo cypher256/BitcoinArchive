@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/457/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-09-08T08:30:14.000Z"
 ---
 
-[Quote from: satoshi on September 08, 2010, 05:30:14 PM](#msg12237)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 現在、手数料の支払いは-paytxfeeスイッチで手動制御されている。最近のブロックのサイズを自動的にチェックして手数料を支払うべきか判断させるのは非常に簡単だ。閾値に到達するにはまだほど遠いので、まだ必要ない。いずれにせよ、まず手動制御で状況を見るのは良いアイデアだ。
+<!-- /tone-skip -->
 
 この変更をSVN rev 157で実装した。
 

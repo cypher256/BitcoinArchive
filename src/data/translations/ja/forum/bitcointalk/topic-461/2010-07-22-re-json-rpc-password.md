@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/254/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-21T16:11:26.000Z"
 ---
 
-[Quote from: gavinandresen on July 22, 2010, 01:11:26 AM](#msg4908)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > この実装を自分から引き受けて、今日かなり進捗があった。サトシ：明日にはパッチを送れるはずだ。
+<!-- /tone-skip -->
 
 このRPC関連の多くのコンテキストでは、fprintf(stdoutでコンソールに出力できる。このように:
 

@@ -11,9 +11,14 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 206. before msg1816."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "virtualcoin"
+    date: "2010-06-24T13:07:30.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-206/2010-06-24-virtualcoin-msg1755"
 ---
 
-[Quote from: virtualcoin on June 24, 2010, 10:07:30 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-206/2010-06-24-virtualcoin-msg1755/)
+<!-- quote: q1 -->
 > Gavin, why don't you just block all served Bitcoin addresses?
 > Would it be easy to generate them automatically?
 

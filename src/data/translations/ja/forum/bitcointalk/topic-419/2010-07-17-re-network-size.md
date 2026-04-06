@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/237/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-07-17T13:22:09.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-419/2010-07-17-newlibertystandard-msg3817"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: NewLibertyStandard on July 17, 2010, 10:22:09 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-419/2010-07-17-newlibertystandard-msg3817/)
 > バージョン0.3はポートフォワーディングしていないクライアントの発信接続を15から8に減らすはずだったが、実際には起きていないと思う。確信は持てない。間違っていたら訂正してほしい。
 <!-- /tone-skip -->
 

@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/201/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-15T11:15:46.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3274"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: knightmb on July 15, 2010, 08:15:46 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-383/2010-07-15-knightmb-msg3274/)
 > Linuxクライアント（64ビット）では、「閉じる時に最小化」がまだトレイに最小化する（しばらくすると複数のトレイアイコンを生成してXサーバーがハングする）。
 <!-- /tone-skip -->
 

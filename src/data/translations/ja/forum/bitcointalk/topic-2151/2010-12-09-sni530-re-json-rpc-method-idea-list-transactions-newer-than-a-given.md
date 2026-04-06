@@ -14,10 +14,19 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/530/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-12-08T15:58:05.000Z"
+  - id: "q2"
+    person: "jgarzik"
+    date: "2010-12-09T07:13:50.000Z"
 ---
 
-[Quote from: jgarzik on December 09, 2010, 12:58:05 AM](#msg28330)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 「&lt;txid&gt;以降のtx」についてはあなたとサトシに同意する。私のlisttransactions（現在はxlisttransactions）パッチにはその機能は明確に含まれていないし、含まれたこともない。
+<!-- /tone-skip -->
 
 ユーザーに最近のN件のトランザクション履歴を表示するようなものに設計されている限り、問題ない。アカウント機能により正しい方法で支払い検出を行うことが容易になった今はなおさらだ。
 
@@ -30,7 +39,9 @@ listtransactions <JSON null type> [count]
 
 インターフェースの良い解決策が思いつかないのが問題だ。""のような特殊ケースとして"*"かもしれない。ユーザーがアカウント名"*"を作成できないようにする必要があるだろう。
 
-[Quote from: jgarzik on December 09, 2010, 04:13:50 PM](#msg28572)
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > もちろん、トランザクションで追跡するのは十分簡単だ。
+<!-- /tone-skip -->
 
 トランザクションで「簡単に」追跡できるというのがどういうことかわからない。

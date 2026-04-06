@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/503/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "ByteCoin"
+    date: "2010-11-13T14:55:11.000Z"
 ---
 
-[Quote from: ByteCoin on November 13, 2010, 11:55:11 PM](#msg21899)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > もちろん、ネットワークがフラッド攻撃を受けておらず、現在のトランザクションが遅延することを過度に心配していないのであれば、0承認トランザクションを優先的に使い、ネットワークが**実際に**フラッド攻撃を受けたときのために高い優先度のコインを「温存」しておく方がおそらく良いだろう。
+<!-- /tone-skip -->
 
 次のブロックの前にフラッド攻撃が来る場合に備えて、少なくともある程度の優先度は使うべきだ。
 

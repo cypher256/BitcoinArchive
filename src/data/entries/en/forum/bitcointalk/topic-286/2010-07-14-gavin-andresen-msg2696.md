@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 286."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Insti"
+    date: "2010-07-13T14:34:03.000Z"
 ---
 
-[Quote from: Insti on July 13, 2010, 11:34:03 PM](#msg2678)
+<!-- quote: q1 -->
 > 77428 transactions in 66663 blocks is about 46,752,464 bytes.
 > which works out to about 600 bytes per transaction (including block headers + database overheads)
 

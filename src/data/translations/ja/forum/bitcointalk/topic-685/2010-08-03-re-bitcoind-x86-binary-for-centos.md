@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/310/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "sgtstein"
+    date: "2010-08-03T08:30:37.000Z"
 ---
 
-[Quote from: sgtstein on August 03, 2010, 05:30:37 PM](#msg7275)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 4.8では正常にビルドできた。4.7ではだめだったが、4.8ではbitcoindが初期ブロックダウンロードをディスクにダンプする際にハングする。Undecided
+<!-- /tone-skip -->
 
 BDB 4.8を使わないよう強く勧める。あなたのビルドを使った人が公式ビルドに戻った場合、database/log0000*ファイルに互換性がなくなる。

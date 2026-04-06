@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-08-16T13:42:28.000Z"
 ---
 
-[Quote from: NewLibertyStandard on August 16, 2010, 10:42:28 PM](#msg9839)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > チェックサムは、新しいチェーンを開始して成長させることができるように、特定の単一ブロックのハッシュにすぎない。ただし、チェックサムが含まれたクライアントがそのブロック番号に到達すると、チェックサム以外のハッシュは受け入れない。
+<!-- /tone-skip -->
 
 合計プルーフ・オブ・ワークだ。

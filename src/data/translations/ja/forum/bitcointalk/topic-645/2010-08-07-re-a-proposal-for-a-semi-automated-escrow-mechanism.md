@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-08-05T10:00:30.000Z"
 ---
 
-[Quote from: jgarzik on August 05, 2010, 07:00:30 PM](#msg7723)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > その手段があるため、エスクロー機構として使われる可能性は低いだろう Smiley
+<!-- /tone-skip -->
 
 本当か？ 人々が利点を理解できないと思うか？（もしあなたの返答が利点が全くないという主張であれば、人々がそれを理解できないという主張を裏付けることになるだろう。）

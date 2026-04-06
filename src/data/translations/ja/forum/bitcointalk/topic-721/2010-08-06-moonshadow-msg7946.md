@@ -12,9 +12,15 @@ description: "BitcoinTalkトピック721におけるMoonShadowの文脈投稿。
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "gridecon"
+    date: "2010-08-06T10:30:32.000Z"
 ---
 
-[Quote from: gridecon on August 06, 2010, 07:30:32 PM](#msg7938)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Bitcoinの鋳造という活動は、スパム送信のような他のボットネット活動よりも害が少ないという議論さえできるだろう。
+<!-- /tone-skip -->
 
 彼はすでにそう主張していたと思うが。

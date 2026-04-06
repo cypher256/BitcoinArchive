@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/495/"
+quotes:
+  - id: "q1"
+    person: "Odin"
+    date: "2010-10-22T12:24:38.000Z"
 ---
 
-[Quote from: Odin on October 22, 2010, 09:24:38 PM](#msg18105)
+<!-- quote: q1 -->
 >   Fault Module Name:   mingwm10.dll
 
 This is the important clue.  I believe it's saying it crashed in that.  Maybe there are other versions of it to try.  mingwm10.dll is just a simple placeholder thing that satisfies some callback requirement for multithreaded apps.

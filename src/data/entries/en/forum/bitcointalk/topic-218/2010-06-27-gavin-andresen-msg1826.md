@@ -11,9 +11,14 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 218. before msg1828."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "HarryS"
+    date: "2010-06-26T16:43:37.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-218/2010-06-27-harrys-msg1825"
 ---
 
-[Quote from: HarryS on June 27, 2010, 01:43:37 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-218/2010-06-27-harrys-msg1825/)
+<!-- quote: q1 -->
 > When I run,
 > Quote./bitcoind getaddressesbylabel ""
 > [

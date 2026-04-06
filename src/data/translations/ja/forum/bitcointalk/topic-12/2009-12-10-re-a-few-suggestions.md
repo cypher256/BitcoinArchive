@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/16/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-10T05:00:17.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: madhatter2 on December 10, 2009, 02:00:17 PM](#msg44)
 > フロントエンドは携帯電話のような非常に低いCPUパワーのクライアントでも実行できる。
 <!-- /tone-skip -->
 これはモバイル向けの良いアプローチだ。PHP（任意の言語）が使用するプログラマティックAPIでWeb UIを提示すれば、リモート管理、モバイル、その他常時オンラインで静的IPを持てないあらゆるクライアントに対応できる。ウェブメールのようなものだ。ソフトウェアをインストールする必要がなく、ウェブサイトでアカウントを作成するだけで済むなら、新規ユーザーが始めやすくなるだろう。

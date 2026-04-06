@@ -14,12 +14,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/424/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "nelisky"
+    date: "2010-08-26T16:21:09.000Z"
 ---
 
 Windowsにmmap(2)があるとは思えない。自作のものを作ってテストするよりも、既存のファイルコピー関数を呼び出す方が良い。
 
-[Quote from: nelisky on August 27, 2010, 01:21:09 AM](#msg11346)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > しかしboost::filesystemの機能を既に使っているなら、そこからcopy_fileを使える。他に何かのために既に必要でなければ、少々大げさだと思うだけだ。
+<!-- /tone-skip -->
 
 ありがとう。どこかにあるだろうと思っていた。
 

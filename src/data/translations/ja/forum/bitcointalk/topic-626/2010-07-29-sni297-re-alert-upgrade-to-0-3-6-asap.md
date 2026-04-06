@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/297/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-07-29T13:14:36.000Z"
 ---
 
-[Quote from: lachesis on July 29, 2010, 10:14:36 PM](#msg6515)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Debianテスティング32ビットで、いくつかのビルドエラーが出る。すべて以下に類似している：
+<!-- /tone-skip -->
 
 Code:script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出た。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようだが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用される。
 

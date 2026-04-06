@@ -11,11 +11,16 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 179. before msg1588."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "nixoid"
+    date: "2010-06-10T11:38:13.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-179/2010-06-10-nixoid-msg1461"
 ---
 
 I'll try to answer what I can:
 
-[Quote from: nixoid on June 10, 2010, 08:38:13 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-179/2010-06-10-nixoid-msg1461/)
+<!-- quote: q1 -->
 > 0) Is it necessary to run a node if i want to have a wallet? Is it necessarily attached to some exact node or i can keep my wallet on flash drive for example and use it with any node? Where and in which form my account balance is stored?
 
 You either have to run a node or trust somebody else (like MyBitcoin.com) to keep a wallet for you.

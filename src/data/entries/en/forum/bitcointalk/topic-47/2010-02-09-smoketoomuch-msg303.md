@@ -11,9 +11,13 @@ participants:
 description: "Quoted post by SmokeTooMuch in BitcoinTalk topic 47."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-02-09T07:08:39.000Z"
 ---
 
-[Quote from: sirius-m on February 09, 2010, 04:08:39 PM](#msg298)
+<!-- quote: q1 -->
 > You can send me translations of the bitcoin.org site as private messages (or if it's too long, I'll pm you my e-mail address). If you can translate only the front page, it's ok too.
 
 Do you want it as plain-text or a .html or .php file ?

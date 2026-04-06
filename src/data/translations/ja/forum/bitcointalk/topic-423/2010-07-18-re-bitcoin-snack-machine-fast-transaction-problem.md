@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/238/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "llama"
+    date: "2010-07-17T15:03:29.000Z"
 ---
 
-[Quote from: llama on July 18, 2010, 12:03:29 AM](#msg3836)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > これは良い出発点だが、まだ完全ではない。
+<!-- /tone-skip -->
 
 完全とは言っていない。十分に実用的だと言ったのだ。実際の損失はクレジットカードよりもはるかに少ないだろう。
 

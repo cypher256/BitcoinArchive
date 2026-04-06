@@ -12,12 +12,18 @@ description: "BitcoinTalkトピック2162におけるギャビン・アンドレ
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "chaord"
+    date: "2010-12-08T22:17:12.000Z"
 ---
 
-[Quote from: chaord on December 09, 2010, 07:17:12 AM](#msg28448)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > デフォルトで128バイト（または合意できる閾値）を超える非標準トランザクションを不許可にするのは？
 > 
 > なぜ上記のオプションが開発者によって却下されたのか聞きたい。
+<!-- /tone-skip -->
 
 数ヶ月前、0.3.9のバグが発見された頃、受け入れ可能な取引タイプのホワイトリスト化の方が、問題を引き起こすことがわかった取引タイプのブラックリスト化よりも良い方法だとサトシに個人的に伝えた。
 

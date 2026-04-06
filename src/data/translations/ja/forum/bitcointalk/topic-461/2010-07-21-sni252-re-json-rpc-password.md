@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/252/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-21T03:11:10.000Z"
 ---
 
-[Quote from: gavinandresen on July 21, 2010, 12:11:10 PM](#msg4709)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Linuxには「典型的な」設定ファイルというものはないと思う！
+<!-- /tone-skip -->
 
  1ファイルが"key value"を使用
  5ファイルが"key=value"を使用

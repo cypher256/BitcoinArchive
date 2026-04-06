@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/23/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-14T06:01:39.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: madhatter2 on December 14, 2009, 03:01:39 PM](#msg66)
 > 誰かここについて教えてくれないか？
 <!-- /tone-skip -->
 

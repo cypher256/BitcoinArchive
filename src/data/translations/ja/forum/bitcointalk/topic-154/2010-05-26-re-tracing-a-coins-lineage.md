@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/108/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Xunie"
+    date: "2010-05-25T15:50:04.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-154/2010-05-26-xunie-msg1242"
 ---
 
-[Quote from: Xunie on May 26, 2010, 12:50:04 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-154/2010-05-26-xunie-msg1242/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 支払い受取時に新しいアドレスの使用をユーザーに強制できないだろうか？
+<!-- /tone-skip -->
 支払いを受け取るたびに、アドレスバーに別のビットコインアドレスを表示する。（もちろんビットコインアドレス経由のトランザクションのみで、IPではない。IPでは意味がないからだ）
 実際のキーは保持され、同じアドレスに送金する人からの支払いもユーザーが引き続き受け取れるようにする。
 これは私のリストに入っている。近いうちに「あなたのビットコインアドレス:」ウィンドウが、表示されているアドレスに何かを受信するたびに自動的に変更されるようにする。

@@ -14,10 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Ground Loop"
+    date: "2010-08-15T15:29:55.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: Ground Loop on August 16, 2010, 12:29:55 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609/)
 > 影響についての質問：不正なブロックの後、不正なブロックチェーンを使ってトランザクションを送信した。
 <!-- /tone-skip -->
 ああ、修正されたチェーンに再統合される。トランザクションは消えず、双方で引き続き表示されるが、確認数が0に戻り、再び増え始める。

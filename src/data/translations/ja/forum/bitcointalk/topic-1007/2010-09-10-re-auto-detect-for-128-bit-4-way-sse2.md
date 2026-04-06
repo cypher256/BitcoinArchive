@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/448/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "teknohog"
+    date: "2010-09-09T10:32:05.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: teknohog on September 09, 2010, 07:32:05 PM](#msg12336)
 > CallCPUID関数にx86アセンブラが含まれているため、他のアーキテクチャではビルドが失敗する。main.cppの2770行目を以下のように変更した
 <!-- /tone-skip -->
 SVN rev 152に追加した。

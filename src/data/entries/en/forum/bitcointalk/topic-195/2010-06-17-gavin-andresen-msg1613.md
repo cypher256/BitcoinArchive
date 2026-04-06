@@ -11,9 +11,13 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 195. quoted by msg1617."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-06-17T09:46:08.000Z"
 ---
 
-[Quote from: satoshi on June 17, 2010, 06:46:08 PM](#msg1611)
+<!-- quote: q1 -->
 > I don't believe a second, compatible implementation of Bitcoin will ever be a good idea.  So much of the design depends on all nodes getting exactly identical results in lockstep that a second implementation would be a menace to the network.  The MIT license is compatible with all other licenses and commercial uses, so there is no need to rewrite it from a licensing standpoint.
 
 Good idea or not, SOMEBODY will try to mess up the network (or co-opt it for their own use) sooner or later.  They'll either hack the existing code or write their own version, and will be a menace to the network.

@@ -13,10 +13,17 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/347/"
+quotes:
+  - id: "q1"
+    person: "Red"
+    date: "2010-08-11T16:10:19.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-08-11T12:07:59.000Z"
 ---
 
-[Quote from: Red on August 12, 2010, 01:10:19 AM](#msg8824)
-[Quote from: satoshi on August 11, 2010, 09:07:59 PM](#msg8798)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
 > I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  
 
 I thought this too at first. But then I convinced myself otherwise.

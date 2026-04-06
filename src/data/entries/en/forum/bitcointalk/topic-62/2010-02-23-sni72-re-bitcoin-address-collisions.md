@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/72/"
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-02-23T10:04:47.000Z"
 ---
 
-[Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](#msg450)
+<!-- quote: q1 -->
 > Are generated bitcoins encrypted with whichever address is currently displayed in the main Bitcoin window?
 
 No, each generated transaction uses a new, single-use address.

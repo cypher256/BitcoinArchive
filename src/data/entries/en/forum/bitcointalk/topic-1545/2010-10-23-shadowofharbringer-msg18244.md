@@ -11,9 +11,14 @@ participants:
 description: "Context post by ShadowOfHarbringer in BitcoinTalk topic 1545. before msg18250."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "grondilu"
+    date: "2010-10-23T09:07:41.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1545/2010-10-23-grondilu-msg18237"
 ---
 
-[Quote from: grondilu on October 23, 2010, 06:07:41 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-1545/2010-10-23-grondilu-msg18237/)
+<!-- quote: q1 -->
 > I very much don't like this idea of a message.  Since it is not necessary to the protocol, I'm not sure if it would be easy to find a place where it really fits.  I'm not a programmer though.  I'd be curious to have Satoshi's thought on this.
 
 Yeah, I'm curious of that too.

@@ -13,10 +13,18 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/418/"
+quotes:
+  - id: "q1"
+    person: "BioMike"
+    date: "2010-08-25T09:23:45.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-08-25T07:56:15.000Z"
+    parent: "q1"
 ---
 
-[Quote from: BioMike on August 25, 2010, 06:23:45 PM](#msg11162)
-> [Quote from: satoshi on August 25, 2010, 04:56:15 PM](#msg11155)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)
 > > > So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand that he hands over his key (or get it from his computer) and shut down the complete network?
 > > > Or is that not possible? How far would <some goverment> get?

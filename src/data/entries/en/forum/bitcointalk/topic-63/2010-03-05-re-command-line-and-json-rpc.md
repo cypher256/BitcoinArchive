@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/89/"
+quotes:
+  - id: "q1"
+    person: "sirius-m"
+    date: "2010-02-24T09:17:35.000Z"
 ---
 
-[Quote from: sirius-m on February 24, 2010, 06:17:35 PM](#msg502)
+<!-- quote: q1 -->
 > This is strange... When I start Bitcoin as a daemon on my 64 bit Linux server, it eats up all the 250MB of remaining RAM, 700MB of swap and eventually crashes. On my 32 bit Ubuntu desktop, it works fine and stays at 15MB of memory usage. The server is running a 64 bit build of Bitcoin. Maybe there's something wrong with the build or something.
 
 sirius-m debugged this, it was 64-bit related.  

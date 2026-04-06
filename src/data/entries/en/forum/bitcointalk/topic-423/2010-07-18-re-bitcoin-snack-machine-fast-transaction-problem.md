@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/238/"
+quotes:
+  - id: "q1"
+    person: "llama"
+    date: "2010-07-17T15:03:29.000Z"
 ---
 
-[Quote from: llama on July 18, 2010, 12:03:29 AM](#msg3836)
+<!-- quote: q1 -->
 > This is a good start, but still not impermeable.
 
 I didn't say impermeable, I said good-enough.  The loss in practice would be far lower than with credit cards.

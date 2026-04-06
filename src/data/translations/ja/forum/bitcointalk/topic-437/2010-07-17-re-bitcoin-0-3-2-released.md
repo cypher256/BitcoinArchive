@@ -14,17 +14,24 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/235/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "llama"
+    date: "2010-07-17T12:56:25.000Z"
+  - id: "q2"
+    person: "llama"
+    date: "2010-07-17T12:56:25.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: llama on July 17, 2010, 09:56:25 PM](#msg3810)
 > サトシ、
 <!-- /tone-skip -->
 
 約200ブロック前まで戻った。ブロックチェーンは分岐のないきれいな直線で、ロックされたブロックの既知のバージョンは1つだけだった。
 
+<!-- quote: q2 -->
 <!-- tone-skip -->
-[Quote from: llama on July 17, 2010, 09:56:25 PM](#msg3810)
 > サトシ、
 <!-- /tone-skip -->
 

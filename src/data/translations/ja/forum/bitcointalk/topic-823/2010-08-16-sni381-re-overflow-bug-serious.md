@@ -14,10 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/381/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "trebronics"
+    date: "2010-08-15T16:02:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-goldrush-msg9625"
 ---
 
-[Quote from: trebronics on August 16, 2010, 01:02:35 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-goldrush-msg9625/)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > クライアントを実行しているほとんどの人はこのメッセージスレッドを読んでいない。では...素朴な質問だ：
+<!-- /tone-skip -->
 
 1) これはバージョン3.8.1（大災害前）の不正なブロックチェーンを持つクライアントにどのような影響を与え続けますか？
 2) 3.8.10にアップグレードしたがブロックチェーンファイルを削除しないクライアントにどのような影響がありますか？

@@ -13,15 +13,23 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/402/"
+quotes:
+  - id: "q1"
+    person: "Ground Loop"
+    date: "2010-08-18T14:14:26.000Z"
+  - id: "q2"
+    person: "nelisky"
+    date: "2010-08-18T14:02:25.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-18-nelisky-msg10164"
 ---
 
-[Quote from: Ground Loop on August 18, 2010, 11:14:26 PM](#msg10167)
+<!-- quote: q1 -->
 > Any non-Mac i5 love?
 
 Windows i5 64-bit got slower here.
 That's the first I've heard anyone say i5 was slower.  Everyone else has said 4way was faster on i5.  Moreso with hyperthreading enabled.
 
-[Quote from: nelisky on August 18, 2010, 11:02:25 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-820/2010-08-18-nelisky-msg10164/)
+<!-- quote: q2 -->
 > And i5, at least on my macbookpro
 
 Good, so I take it that's a confirmation that it's working on Mac as well?

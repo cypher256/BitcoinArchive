@@ -11,9 +11,13 @@ participants:
 description: "Context post by Gavin Andresen in BitcoinTalk topic 1668. before msg21896."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "ByteCoin"
+    date: "2010-11-07T17:31:22.000Z"
 ---
 
-[Quote from: ByteCoin on November 08, 2010, 02:31:22 AM](#msg20570)
+<!-- quote: q1 -->
 > Prioritizing larger value transactions doesn't really solve the problem because it's perfectly possible to spam by sending large amounts of bitcoin from one of your addresses to another ad infinitum.
 
 No, you can't, because every time you send them they become "new", and the priority is age multiplied by amount:

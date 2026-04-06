@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/187/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-14T10:17:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-325/2010-07-14-knightmb-msg2917"
 ---
 
-[Quote from: knightmb on July 14, 2010, 07:17:43 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-325/2010-07-14-knightmb-msg2917/)
+<!-- quote: q1 -->
 >  So if your computer was only 1% towards solving block 68000 This is a common point of confusion.  There's no such thing as being 1% towards solving a block.  You don't make progress towards solving it.  After working on it for 24 hours, your chances of solving it are equal to what your chances were at the start or at any moment.
 
 It's like trying to flip 37 coins at once and have them all come up heads.  Each time you try, your chances of success are the same.

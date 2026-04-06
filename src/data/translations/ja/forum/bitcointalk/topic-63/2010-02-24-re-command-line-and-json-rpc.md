@@ -14,11 +14,22 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/74/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-02-23T18:07:37.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-02-23T13:15:41.000Z"
 ---
 
-[Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
-[Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
+<!-- /tone-skip -->
+<!-- tone-skip -->
 > SVN上のバージョン0.2.6はデーモンとして実行でき、コマンドラインまたはJSON-RPCで制御できるようになった。
+<!-- /tone-skip -->
 
 この要件はいつか解消されますか？GTKを扱いたくないのですが。
 GTKを「扱う」のに実際どれくらいの手間がかかるのだろうか？「sudo apt-get install libgtk2.0-0」をして、いくつかの余分なライブラリが置いてあるだけの問題ではないか？GTKは何もする必要はなく、ただそこにあればBitcoinが起動時にリンクでき、GUIがないためgtk-init-checkの呼び出しが失敗して、それで終わりだ。

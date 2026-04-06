@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/282/"
+quotes:
+  - id: "q1"
+    person: "BlackEye"
+    date: "2010-07-25T13:12:23.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774"
 ---
 
-[Quote from: BlackEye on July 25, 2010, 10:12:23 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/)
+<!-- quote: q1 -->
 > I was able to integrate the SHA256 functionality from Crypto++ 5.6.0 into Bitcoin.  This is the fastest SHA256 yet using the SSE2 assembly code.  Since Bitcoin was sending unaligned data to the block hash function, I had to change the MOVDQA instruction to MOVDQU.
 
 I think using the SHA256 functionality from Crypto++ 5.6.0 is the way forward right now.

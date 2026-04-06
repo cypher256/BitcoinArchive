@@ -14,14 +14,25 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/56/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-02-11T23:31:52.000Z"
+  - id: "q2"
+    person: "SmokeTooMuch"
+    date: "2010-02-12T04:11:09.000Z"
 ---
 
-[Quote from: theymos on February 12, 2010, 08:31:52 AM](#msg318)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 送信側クライアントは手数料を考慮して余分にBitCoinを送信するのか（受取人が期待通りの額を受け取れるように）？
+<!-- /tone-skip -->
 はい。
 
-[Quote from: SmokeTooMuch on February 12, 2010, 01:11:09 PM](#msg319)
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > なぜ手数料が必要なんだ？ 手数料不要がbitcoinの利点の一つだと思っていたが！？
+<!-- /tone-skip -->
 ほぼすべてのトランザクションは無料だ。受け取った最大の支払い500個以上を合算して金額を作る必要がある場合に、トランザクションが最大サイズ制限を超える。サイズ制限を超えたトランザクションでも、少額の手数料を追加すれば送信できる。
 
 平均的なトランザクション、および平均の500倍までの大きさのトランザクションは無料だ。

@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/259/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-23T10:32:58.000Z"
 ---
 
-[Quote from: knightmb on July 23, 2010, 07:32:58 PM](#msg5369)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 最後の2000ブロック以内で停止する安全上の理由はあるのか、それとも残り500ブロックに調整できるのか？
+<!-- /tone-skip -->
 
 特にない。次回は1000に変更する。

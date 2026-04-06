@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/72/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    date: "2010-02-23T10:04:47.000Z"
 ---
 
-[Quote from: NewLibertyStandard on February 23, 2010, 07:04:47 PM](#msg450)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 生成されたbitcoinは、Bitcoinのメインウィンドウに現在表示されているアドレスで暗号化されるのか？
+<!-- /tone-skip -->
 
 いいえ、生成された各トランザクションは新しい使い捨てアドレスを使用する。
 

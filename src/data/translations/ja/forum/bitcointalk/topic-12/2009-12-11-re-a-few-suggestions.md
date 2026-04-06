@@ -14,12 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/19/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-10T19:59:19.000Z"
 ---
 
 そうだ、SVNにはほぼリリース候補の0.2ソースがあり、Linux上でもビルド・実行が可能だ。FreeBSDではテストされていない。
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: madhatter2 on December 11, 2009, 04:59:19 AM](#msg47)
 > FreeBSDで動作するバックエンドプロセスを実現できれば、常時稼働のシードを運用できる。
 <!-- /tone-skip -->
 それは大きな助けになるだろう。TORユーザーはシードの取得方法を心配する必要がなくなり、IRCに依存しなくてもよくなる。

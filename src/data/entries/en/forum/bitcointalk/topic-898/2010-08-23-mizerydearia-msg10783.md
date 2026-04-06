@@ -11,10 +11,18 @@ participants:
 description: "Quoted post by mizerydearia in BitcoinTalk topic 898."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "lfm"
+    date: "2010-08-22T20:28:14.000Z"
+  - id: "q2"
+    person: "FreeMoney"
+    date: "2010-08-22T20:23:13.000Z"
+    parent: "q1"
 ---
 
-[Quote from: lfm on August 23, 2010, 05:28:14 AM](#msg10748)
-> [Quote from: FreeMoney on August 23, 2010, 05:23:13 AM](#msg10745)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > I really don't even like the idea of one person having ability to send messages. Even if I/we trust that person now, we might not later, or it might be a different person, or they might get tortured/bribed/blackmailed.
 > 
 > 

@@ -13,13 +13,17 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/185/"
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-12T13:39:13.000Z"
 ---
 
 After it initially tries incorrectly to set itself to the lowest priority, the generate thread only changes its priority again temporarily when it finds a block.  When you've found a block, you should want it to hurry up and broadcast it as soon a possible before someone else finds one and makes yours invalid.  The generate thread only changes to higher priority for less than a second every few days.
 
 There should be a 0.3.1 release for this soon.  There are a few other issues we need to look at fixing in 0.3.1 before making a release.
 
-[Quote from: knightmb on July 12, 2010, 10:39:13 PM](#msg2409)
+<!-- quote: q1 -->
 > On a side note, I've tracked down the other GUI issue.
 
 The "minimize to tray instead of taskbar" is what was eating up all the CPU on my system. After I turned this off, the issue was resolved with Runaway CPU.

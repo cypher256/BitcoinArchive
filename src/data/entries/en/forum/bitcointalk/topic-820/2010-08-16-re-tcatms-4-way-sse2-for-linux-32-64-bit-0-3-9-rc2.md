@@ -13,15 +13,22 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/384/"
+quotes:
+  - id: "q1"
+    person: "tcatm"
+    date: "2010-08-15T15:43:39.000Z"
+  - id: "q2"
+    person: "NewLibertyStandard"
+    date: "2010-08-15T16:49:01.000Z"
 ---
 
-[Quote from: tcatm on August 16, 2010, 12:43:39 AM](#msg9617)
+<!-- quote: q1 -->
 > I propose to compile sha256.cpp with -O3 -march=amdfamk10 (will work on 32bit and 64bit) as only CPUs supporting this instruction set (AMD Phenom, Intel i5 and newer) benefit from -4way and it'll improve performance by ~9%.
 
 GCC 4.3.3 doesn't support -march=amdfamk10.  I get:
 sha256.cpp:1: error: bad value (amdfamk10) for -march= switch
 
-[Quote from: NewLibertyStandard on August 16, 2010, 01:49:01 AM](#msg9630)
+<!-- quote: q2 -->
 > With 4way, I get significantly better performance when I have all my virtual cores enabled. I think I get about the same amount of hashes when hyper threading is turned off with or without 4way.
 
 Hey, you may be onto something!

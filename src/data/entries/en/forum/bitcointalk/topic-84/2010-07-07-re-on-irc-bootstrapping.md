@@ -13,11 +13,15 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/170/"
+quotes:
+  - id: "q1"
+    person: "Vasiliev"
+    date: "2010-06-25T14:50:15.000Z"
 ---
 
 Everybody needs to connect to the same IRC server and channel so they can find each other.
 
-[Quote from: Vasiliev on June 25, 2010, 11:50:15 PM](#msg1785)
+<!-- quote: q1 -->
 > You may want to leave Freenode in as a fallback server -- if his server doesn't work, use Freenode's.
 
 It might not be good if we suddenly rushed freenode with a ton of users all at once.

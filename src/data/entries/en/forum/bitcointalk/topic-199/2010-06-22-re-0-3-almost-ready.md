@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/138/"
+quotes:
+  - id: "q1"
+    person: "lachesis"
+    date: "2010-06-21T21:20:02.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-199/2010-06-22-lachesis-msg1658"
 ---
 
-[Quote from: lachesis on June 22, 2010, 06:20:02 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-199/2010-06-22-lachesis-msg1658/)
+<!-- quote: q1 -->
 > It would be nice if the listtransactions RPC method were finished before the next release, though. 
 
 My fear is too many programmers would latch onto that for checking for received payments.  It can never be reliable that way.  The list/getreceivedbyaddress/label functions are the only way to do it reliably.

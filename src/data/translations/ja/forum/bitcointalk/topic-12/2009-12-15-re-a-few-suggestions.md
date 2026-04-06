@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "madhatter2"
+    date: "2009-12-14T20:21:09.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: madhatter2 on December 15, 2009, 05:21:09 AM](#msg68)
 > 了解、std::stringの問題を調べてみる。最新バージョンのUbuntu Linuxでも同じstd::stringの問題が出ている。だからこれはOSXだけの問題ではない。俺の本来のバックグラウンドはCであってC++ではないので、C++のデータ型やヘッダーなどの詳細についてはまだ「やりながら」学んでいるところだ。Smiley
 <!-- /tone-skip -->
 それなら、wxWidgetsのビルドまたは設定で何か異なることをしているはずだ。

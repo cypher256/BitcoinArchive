@@ -14,6 +14,13 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/513/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    date: "2010-11-25T17:07:43.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-11-25T08:51:39.000Z"
 ---
 
 7年前の遅いドライブでテストしたが、帯域幅とCPUは明らかにボトルネックではなかった。初回ダウンロードは1時間20分かかった。
@@ -22,9 +29,13 @@ translationStatus: complete
 
 最新のブロックが送信される10分程度ごとに、より速いノードに切り替える機会があるはずだ。最新のブロックがブロードキャストされると、他のノードに次の500ブロックを要求し、最も速く送信するノードからダウンロードを継続する。少なくとも、そのように動作するはずだ。
 
-[Quote from: jgarzik on November 26, 2010, 02:07:43 AM](#msg24522)
-[Quote from: satoshi on November 25, 2010, 05:51:39 PM](#msg24438)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
+<!-- /tone-skip -->
+<!-- tone-skip -->
 > 時間がかかるのはダウンロードではなく、検証とインデックス作成だ。
+<!-- /tone-skip -->
 
 ダウンロード中に、[ACID](http://en.wikipedia.org/wiki/ACID)プロパティのどれが必要ですか？
 より多くの読み取りキャッシュが役立つかもしれない。インデックスを作成するためにblk0001.datとblkindex.dat全体をランダムに読み取る必要がある。ファイルがメモリより小さいと仮定することはできないが、現在はまだそうだ。ほとんどの依存関係が最近のものなので、キャッシュは効果的だろう。

@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/177/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "llama"
+    date: "2010-07-01T13:21:47.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: llama on July 01, 2010, 10:21:47 PM](#msg1920)
 > サトシ、
 <!-- /tone-skip -->
 確かに、突然起きた場合はそうだ。徐々に起きた場合は、より強力なものに移行することはまだ可能だ。アップグレードされたソフトウェアを初めて実行すると、新しいより強力な署名アルゴリズムであなたの全資金を再署名する。（より強力な署名で自分自身に送金するトランザクションを作成することにより）

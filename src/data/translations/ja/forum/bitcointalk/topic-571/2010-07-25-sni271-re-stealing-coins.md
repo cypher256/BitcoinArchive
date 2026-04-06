@@ -14,10 +14,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/271/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-07-25T10:44:02.000Z"
 ---
 
-[Quote from: knightmb on July 25, 2010, 07:44:02 PM](#msg5736)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 公開鍵123456がハッシュABCDを生成することを突き止めたとして
+<!-- /tone-skip -->
 
 かつ
 公開鍵654321もハッシュABCDを生成するとわかったとしても、

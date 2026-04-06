@@ -13,10 +13,17 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/74/"
+quotes:
+  - id: "q1"
+    person: "theymos"
+    date: "2010-02-23T18:07:37.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-02-23T13:15:41.000Z"
 ---
 
-[Quote from: theymos on February 24, 2010, 03:07:37 AM](#msg467)
-[Quote from: satoshi on February 23, 2010, 10:15:41 PM](#msg452)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
 > On Linux it needs libgtk2.0-0 installed
 
 Will this requirement be removed sometime? I'd rather not have to deal with GTK.

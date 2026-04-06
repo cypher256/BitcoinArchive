@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/"
+quotes:
+  - id: "q1"
+    person: "singpolyma"
+    date: "2010-07-17T13:19:48.000Z"
 ---
 
-[Quote from: singpolyma on July 17, 2010, 10:19:48 PM](#msg3815)
+<!-- quote: q1 -->
 > My coins disappeared, but I assume they'll come back when it's up to current?
 
 Right, they'll re-appear when it's finished downloading all the blocks.

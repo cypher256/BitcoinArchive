@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/484/"
+quotes:
+  - id: "q1"
+    person: "eurekafag"
+    date: "2010-10-04T01:55:56.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-151/2010-10-04-eurekafag-msg15248"
 ---
 
-[Quote from: eurekafag on October 04, 2010, 10:55:56 AM](/BitcoinArchive/entries/forum/bitcointalk/topic-151/2010-10-04-eurekafag-msg15248/)
+<!-- quote: q1 -->
 > Where can I find the latest English .po file to keep the translation up-to-date?
 
 poedit does it.  Either get the src directory from a release, or download it with SVN.  Place your .po file 3 directories deep under the src directory.  Open it with poedit and do Catalog->Update from sources.

@@ -14,10 +14,14 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/255/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "gavinandresen"
+    date: "2010-07-23T06:11:45.000Z"
 ---
 
+<!-- quote: q1 -->
 <!-- tone-skip -->
-[Quote from: gavinandresen on July 23, 2010, 03:11:45 PM](#msg5296)
 > RPC wikiページを更新して、Bitcoin 0.3.3でのパスワード機能の仕組みを説明した。
 <!-- /tone-skip -->
 

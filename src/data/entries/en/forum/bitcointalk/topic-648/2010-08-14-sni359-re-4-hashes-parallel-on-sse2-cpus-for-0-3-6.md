@@ -13,11 +13,15 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/359/"
+quotes:
+  - id: "q1"
+    person: "tcatm"
+    date: "2010-08-13T15:53:07.000Z"
 ---
 
 If you haven't already, try aligning thash.  It might matter.  Couldn't hurt.
 
-[Quote from: tcatm on August 14, 2010, 12:53:07 AM](#msg9147)
+<!-- quote: q1 -->
 > Looks like we're triggering a compiler bug in the tree optimizer. Can you try to compile it -O0?
 
 No help from -O0, same error.

@@ -11,9 +11,14 @@ participants:
 description: "Context post by BitcoinFX in BitcoinTalk topic 44. before msg267."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "BlueSky"
+    date: "2010-02-06T04:26:39.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-44/2010-02-06-bluesky-msg255"
 ---
 
-[Quote from: BlueSky on February 06, 2010, 01:26:39 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-44/2010-02-06-bluesky-msg255/)
+<!-- quote: q1 -->
 > ...Otherwise I would need to know the total amount of  in circulation and the amount of goods that can be purchased with it(this is a Austrian economist view of measuring the value I think?), just what is the amount in circulation? ...
 
 From the FAQ:

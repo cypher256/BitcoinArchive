@@ -11,9 +11,13 @@ participants:
 description: "Context post by MoonShadow in BitcoinTalk topic 721. before msg8114."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "gridecon"
+    date: "2010-08-06T10:30:32.000Z"
 ---
 
-[Quote from: gridecon on August 06, 2010, 07:30:32 PM](#msg7938)
+<!-- quote: q1 -->
 > You could even make the argument that minting bitcoins as an activity is less harmful than other botnet activities like sending out spam.
 
 I think that he already did.

@@ -14,9 +14,15 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/206/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "bdonlan"
+    date: "2010-07-15T14:27:14.000Z"
 ---
 
-[Quote from: bdonlan on July 15, 2010, 11:27:14 PM](#msg3320)
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 120DPIモードで。
+<!-- /tone-skip -->
 
 「120DPIモード」とは何か？実際にどこかにある設定か？十分にマイナーな原因候補のようだな。左上隅のアイコンのサイズを埋めるために2倍の解像度のアイコンが必要なのだろう。提供されているのは1つのサイズだけだ。

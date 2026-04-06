@@ -11,9 +11,14 @@ participants:
 description: "Quoted post by Gavin Andresen in BitcoinTalk topic 723."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Red"
+    date: "2010-08-06T14:08:28.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-red-msg8007"
 ---
 
-[Quote from: Red on August 06, 2010, 11:08:28 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-723/2010-08-06-red-msg8007/)
+<!-- quote: q1 -->
 > So for any new transaction, to verify it, you send it to the five closest nodes to each in-point on the transaction. They record the transaction and immediately tell you if they've seen a double spend. If any have, it's a bogus transaction, which gets broadcast to the other close nodes.
 
 What happens when they disagree about which transaction happened first?  Majority rule?  Who decides what the majority is, and can it change if 4 of the five nodes leave the network and are replaced by another 5 nodes?

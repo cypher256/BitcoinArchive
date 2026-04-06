@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/457/"
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    date: "2010-09-08T08:30:14.000Z"
 ---
 
-[Quote from: satoshi on September 08, 2010, 05:30:14 PM](#msg12237)
+<!-- quote: q1 -->
 > The current threshold is 200KB per block, or about 1000 transactions per block.  I think it should be lowered to 50KB per block.  That would still be more than 100 times the average transactions per block.
 
 I implemented this change in SVN rev 157.

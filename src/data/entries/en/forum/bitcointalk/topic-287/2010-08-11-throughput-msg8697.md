@@ -11,10 +11,18 @@ participants:
 description: "Context post by throughput in BitcoinTalk topic 287. before msg8810."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Insti"
+    date: "2010-08-10T05:53:41.000Z"
+  - id: "q2"
+    person: "throughput"
+    date: "2010-08-10T01:13:30.000Z"
+    parent: "q1"
 ---
 
-[Quote from: Insti on August 10, 2010, 02:53:41 PM](#msg8541)
-> [Quote from: throughput on August 10, 2010, 10:13:30 AM](#msg8508)
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > BTW, let's test the network someday?
 > > It is trivial to automate the process of sending small transactions to the list of known addresses.
 > > Let's abuse the network and know the effect precisely.

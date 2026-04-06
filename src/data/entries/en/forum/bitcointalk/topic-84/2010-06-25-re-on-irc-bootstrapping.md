@@ -13,9 +13,13 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/148/"
+quotes:
+  - id: "q1"
+    person: "laszlo"
+    date: "2010-06-14T09:30:58.000Z"
 ---
 
-[Quote from: laszlo on June 14, 2010, 06:30:58 PM](#msg1580)
+<!-- quote: q1 -->
 > I run an IRC server you can use, it's fairly stable but it's not on redundant connections or anything.  It is only two servers right now but we don't mess with it or anything, it just runs.
 
 My box is a dedicated irc server:

@@ -13,9 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/309/"
+quotes:
+  - id: "q1"
+    person: "nimnul"
+    date: "2010-08-03T08:51:15.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-454/2010-08-03-nimnul-msg7282"
 ---
 
-[Quote from: nimnul on August 03, 2010, 05:51:15 PM](/BitcoinArchive/entries/forum/bitcointalk/topic-454/2010-08-03-nimnul-msg7282/)
+<!-- quote: q1 -->
 > Is satoshi noWx patch in 0.3.7 already? Before that bitcoind required wx, and I never seen Satoshi announcing that it's in trunk
 
 Yes, 0.3.7 has it.  It was in rev 112.

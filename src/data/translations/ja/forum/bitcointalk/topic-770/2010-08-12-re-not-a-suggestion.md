@@ -14,11 +14,22 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/347/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Red"
+    date: "2010-08-11T16:10:19.000Z"
+  - id: "q2"
+    person: "satoshi"
+    date: "2010-08-11T12:07:59.000Z"
 ---
 
-[Quote from: Red on August 12, 2010, 01:10:19 AM](#msg8824)
-[Quote from: satoshi on August 11, 2010, 09:07:59 PM](#msg8798)
+<!-- quote: q1 -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
+<!-- /tone-skip -->
+<!-- tone-skip -->
 > まだこのアイデアを考え中だ……
+<!-- /tone-skip -->
 
 私も最初はそう思った。しかし、その後自分を納得させた。
 ここで既存のBitcoinシステムの話に戻っていますか？
