@@ -26,12 +26,15 @@ The world's most comprehensive archive of Satoshi Nakamoto's complete conversati
 ### Build Pipeline
 
 ```
-check-markdown-image-alt  →  check-participants  →  check-ja-tone  →  generate-git-dates  →  astro build  →  pagefind
+check-markdown-image-alt → check-participants → check-ja-tone → check-ja-names → check-ja-titles → check-quotes → generate-git-dates → astro build → pagefind
 ```
 
 - **check-markdown-image-alt** — Validates all Markdown images have alt text
 - **check-participants** — Validates participant slug consistency across entries
 - **check-ja-tone** — Validates Japanese translation tone (だ/である vs ですます) per character rules
+- **check-ja-names** — Validates person names in JA files use katakana (not English)
+- **check-ja-titles** — Validates JA context post titles are in Japanese (not English)
+- **check-quotes** — Validates quote attribution structure (frontmatter quotes[] + body markers)
 - **generate-git-dates** — Extracts git commit dates for "Added" / "Updated" sort
 
 ## Development
@@ -39,9 +42,12 @@ check-markdown-image-alt  →  check-participants  →  check-ja-tone  →  gene
 ```sh
 npm install
 npm run dev        # Start dev server at localhost:4321
-npm run build      # Build production site to ./dist/
+npm run check      # Run all validation checks (~3 seconds)
+npm run build      # Build production site to ./dist/ (4+ minutes, CI only)
 npm run preview    # Preview production build locally
 ```
+
+> **Note:** Use `npm run check` for local validation. `npm run build` generates 6,775+ static HTML pages and should only run in CI.
 
 ## Deployment
 
