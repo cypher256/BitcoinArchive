@@ -5,6 +5,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import { getDeploymentConfig } from './site-config.mjs';
 import { remarkRewriteBase } from './src/lib/remark-rewrite-base.mjs';
+import { remarkQuoteBlocks } from './src/lib/remark-quote-blocks.mjs';
 
 const { site, base } = getDeploymentConfig();
 
@@ -20,7 +21,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkRewriteBase, [remarkMath, { singleDollarTextMath: false }]],
+    remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, [remarkMath, { singleDollarTextMath: false }]],
     rehypePlugins: [rehypeKatex],
   },
   integrations: [sitemap({

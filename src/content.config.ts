@@ -18,6 +18,15 @@ const participantSchema = z.object({
   slug: z.string(),
 });
 
+const quoteSchema = z.object({
+  id: z.string(),
+  person: z.string().nullable().default(null),
+  personSlug: z.string().nullable().default(null),
+  date: z.coerce.date().nullable().default(null),
+  sourceEntryId: z.string().nullable().default(null),
+  parent: z.string().nullable().default(null),
+});
+
 const entrySchema = z.object({
   title: z.string(),
   date: z.coerce.date(),
@@ -50,6 +59,7 @@ const entrySchema = z.object({
   translationStatus: z.enum([
     'complete', 'partial', 'machine', 'pending',
   ]).optional(),
+  quotes: z.array(quoteSchema).default([]),
 });
 
 const entries = defineCollection({
