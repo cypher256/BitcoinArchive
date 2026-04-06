@@ -1,5 +1,5 @@
 ---
-title: "Re:（DataWraithの引用投稿）"
+title: "Re:（DataWraithの文脈投稿）"
 date: 2010-07-14T16:42:16.000Z
 type: "forum-post"
 source: "bitcointalk"

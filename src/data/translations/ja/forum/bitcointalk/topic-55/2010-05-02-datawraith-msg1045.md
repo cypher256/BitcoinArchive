@@ -1,5 +1,5 @@
 ---
-title: "Re:（DataWraithの引用投稿）"
+title: "Re:（DataWraithの文脈投稿）"
 date: 2010-05-02T11:13:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック55におけるDataWraithの引用投稿。"
+description: "BitcoinTalkトピック55におけるDataWraithの文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

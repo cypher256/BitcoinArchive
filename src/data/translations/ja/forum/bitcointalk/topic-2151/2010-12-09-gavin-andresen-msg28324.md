@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの引用投稿）"
+title: "Re:（ギャビン・アンドレセンの文脈投稿）"
 date: 2010-12-09T00:41:44.000Z
 type: "forum-post"
 source: "bitcointalk"

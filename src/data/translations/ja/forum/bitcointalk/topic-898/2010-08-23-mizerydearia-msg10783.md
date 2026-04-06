@@ -1,5 +1,5 @@
 ---
-title: "Re:（mizerydearia の引用投稿）"
+title: "Re:（mizerydearia の文脈投稿）"
 date: 2010-08-23T08:50:04.000Z
 type: "forum-post"
 source: "bitcointalk"

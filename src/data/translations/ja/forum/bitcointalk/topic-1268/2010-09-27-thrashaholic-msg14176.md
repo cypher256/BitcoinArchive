@@ -1,5 +1,5 @@
 ---
-title: "Re:（thrashaholicの引用投稿）"
+title: "Re:（thrashaholicの文脈投稿）"
 date: 2010-09-27T00:20:02.000Z
 type: "forum-post"
 source: "bitcointalk"

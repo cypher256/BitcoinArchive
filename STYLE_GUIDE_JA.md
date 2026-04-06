@@ -60,6 +60,66 @@ in Japanese entries.
   and similar technical strings where the original form is functionally
   necessary
 
+## BitcoinTalk Emoji Labels
+
+BitcoinTalk の顔文字テキストラベル（`Smiley`, `Cheesy`, `Wink` 等）は Unicode
+絵文字に変換する。元の投稿者の意図は顔文字を表示することであり、英単語を
+書くことではない。
+
+| Label | Emoji |
+|-------|-------|
+| Smiley | 😊 |
+| Cheesy | 😁 |
+| Grin | 😄 |
+| Tongue | 😛 |
+| Wink | 😉 |
+| Roll Eyes | 🙄 |
+| Huh | 😕 |
+| Angry | 😠 |
+| Embarrassed | 😳 |
+| Cool | 😎 |
+| Shocked | 😲 |
+| Undecided | 😐 |
+| Lips are sealed | 🤐 |
+
+EN / JA 両方で変換する。
+
+## Description Wording
+
+JA の description フィールドでは以下の表記に統一する:
+
+- コンテキスト投稿 → **文脈投稿**
+- 引用投稿 → **文脈投稿**
+- `satoshiがスレッドを開始` → **サトシ・ナカモトがスレッドを開始**
+
+## Quote Attribution Structure
+
+新規エントリーの引用は frontmatter `quotes[]` + body マーカーで記述する。
+body に `[Quote from:]`, `NAME wrote:`, `Quoting NAME:` を直接書かない。
+
+```yaml
+# frontmatter
+quotes:
+  - id: "q1"
+    person: "knightmb"
+    date: "2010-08-15T22:59:04Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-knightmb-msg9574"
+    parent: null
+```
+
+```markdown
+<!-- body -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
+> 引用テキスト...
+<!-- /tone-skip -->
+
+本文テキスト...
+```
+
+詳細は `temp_0406_quote_normalization_plan.md` を参照。`npm run check:quotes`
+がこの構造を検証する。レガシー形式はビルドエラーになる。
+
 ## Re-scrape / Re-generation Guard
 
 When re-scraping or regenerating context posts (EN or JA):

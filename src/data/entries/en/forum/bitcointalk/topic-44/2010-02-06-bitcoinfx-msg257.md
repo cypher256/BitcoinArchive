@@ -33,4 +33,4 @@ The number of blocks times the coin value of a block. The coin value is 50 bc pe
 
 As of October 30th 2009, there are about 26,000 blocks in the block chain, which means 26,000 * 50 bc = 1,300,000 bitcoins in existence. You can see the up-to-date number of blocks in the status bar of the Bitcoin main window.
 
-Current Block count as of 06th Feb. 2010 - 3.15 PM - GMT is 38,660 blocks. You can do the math Cool
+Current Block count as of 06th Feb. 2010 - 3.15 PM - GMT is 38,660 blocks. You can do the math 😎

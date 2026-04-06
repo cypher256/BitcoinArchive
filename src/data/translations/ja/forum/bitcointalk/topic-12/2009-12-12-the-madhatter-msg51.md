@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの引用投稿）"
+title: "Re:（The Madhatterの文脈投稿）"
 date: 2009-12-12T06:34:21.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの引用投稿。"
+description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

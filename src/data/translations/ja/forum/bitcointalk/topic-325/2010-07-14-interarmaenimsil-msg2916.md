@@ -1,5 +1,5 @@
 ---
-title: "Re:（InterArmaEnimSilの引用投稿）"
+title: "Re:（InterArmaEnimSilの文脈投稿）"
 date: 2010-07-14T19:07:03.000Z
 type: "forum-post"
 source: "bitcointalk"

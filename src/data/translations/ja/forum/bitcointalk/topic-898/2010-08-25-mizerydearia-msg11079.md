@@ -1,5 +1,5 @@
 ---
-title: "Re:（mizerydearia の引用投稿）"
+title: "Re:（mizerydearia の文脈投稿）"
 date: 2010-08-25T00:11:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック898におけるmizerydearia の引用投稿。"
+description: "BitcoinTalkトピック898におけるmizerydearia の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

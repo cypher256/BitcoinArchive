@@ -1,5 +1,5 @@
 ---
-title: "Re:（Suggesterの引用投稿）"
+title: "Re:（Suggesterの文脈投稿）"
 date: 2010-02-16T02:15:49.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Suggester"
 participants:
   - name: "Suggester"
     slug: "suggester"
-description: "BitcoinTalkトピック43におけるSuggesterの引用投稿。"
+description: "BitcoinTalkトピック43におけるSuggesterの文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

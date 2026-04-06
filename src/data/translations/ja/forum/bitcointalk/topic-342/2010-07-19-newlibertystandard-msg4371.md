@@ -1,5 +1,5 @@
 ---
-title: "Re:（NewLibertyStandardの引用投稿）"
+title: "Re:（NewLibertyStandardの文脈投稿）"
 date: 2010-07-19T22:27:32.000Z
 type: "forum-post"
 source: "bitcointalk"

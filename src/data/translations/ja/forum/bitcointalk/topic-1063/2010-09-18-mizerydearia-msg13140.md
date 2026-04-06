@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック1063におけるmizerydearia の引用投稿。"
+description: "BitcoinTalkトピック1063におけるmizerydearia の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re:（Ground Loopの引用投稿）"
+title: "Re:（Ground Loopの文脈投稿）"
 date: 2010-08-11T17:31:24.000Z
 type: "forum-post"
 source: "bitcointalk"

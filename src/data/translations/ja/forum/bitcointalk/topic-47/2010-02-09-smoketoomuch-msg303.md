@@ -1,5 +1,5 @@
 ---
-title: "Re:（SmokeTooMuchの引用投稿）"
+title: "Re:（SmokeTooMuchの文脈投稿）"
 date: 2010-02-09T21:33:33.000Z
 type: "forum-post"
 source: "bitcointalk"

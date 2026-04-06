@@ -1,5 +1,5 @@
 ---
-title: "Re: （MoonShadowの引用投稿）"
+title: "Re: （MoonShadowの文脈投稿）"
 date: 2010-08-06T22:27:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック723におけるMoonShadowの引用投稿。"
+description: "BitcoinTalkトピック723におけるMoonShadowの文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

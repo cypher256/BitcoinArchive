@@ -1,5 +1,5 @@
 ---
-title: "Re:（AndrewBuckの引用投稿）"
+title: "Re:（AndrewBuckの文脈投稿）"
 date: 2010-07-18T14:14:04.000Z
 type: "forum-post"
 source: "bitcointalk"

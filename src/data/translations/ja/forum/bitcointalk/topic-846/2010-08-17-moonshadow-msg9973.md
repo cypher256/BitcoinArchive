@@ -1,5 +1,5 @@
 ---
-title: "Re:（MoonShadowの引用投稿）"
+title: "Re:（MoonShadowの文脈投稿）"
 date: 2010-08-17T20:51:11.000Z
 type: "forum-post"
 source: "bitcointalk"

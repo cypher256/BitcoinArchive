@@ -8,7 +8,7 @@ author: "AgoraMutual"
 participants:
   - name: "AgoraMutual"
     slug: "agoramutual"
-description: "BitcoinTalkトピック17におけるAgoraMutualの引用投稿。"
+description: "BitcoinTalkトピック17におけるAgoraMutualの文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
