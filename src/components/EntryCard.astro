@@ -49,7 +49,7 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
       <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
       <span class="source-badge">{typeLabel}</span>
       {threadCount && threadCount >= 2 && (
-        <span class="thread-badge">{threadCount} messages</span>
+        <span class="thread-badge">{threadCount} {t('entry.messages' as any)}</span>
       )}
       {isBiography && (
         <span class="biography-badge">{t('entry.biography' as any)}</span>
