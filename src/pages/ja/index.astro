@@ -69,7 +69,7 @@ const structuredData = {
   "inLanguage": lang,
   "mainEntity": {
     "@type": "ItemList",
-    "name": "Featured entries",
+    "name": "注目のエントリー",
     "numberOfItems": featuredEntries.length,
     "itemListElement": featuredEntries.slice(0, 10).map((entry, index) => ({
       "@type": "ListItem",
@@ -128,7 +128,6 @@ function tagWeight(count: number, max: number): number {
         <span class="stat-number">{new Set(entries.flatMap(e => e.data.tags ?? [])).size}</span>
         <span class="stat-label">{t('nav.tags')}</span>
       </a>
-    </section>
     </section>
 
     <div class="dashboard-grid">
