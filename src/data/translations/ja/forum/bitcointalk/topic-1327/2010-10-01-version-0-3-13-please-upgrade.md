@@ -26,7 +26,7 @@ translationStatus: complete
 - 1セント未満の端数のお釣りで最後の1セントを送金する際の問題を修正。
 - Linuxでの128ビット4-way SSE2の自動検出。
 
-Gavin Andresen:
+ギャビン・アンドレセン:
 - 別のマシンからのJSON-RPC接続を受け入れるオプション -rpcallowip=。
 - LinuxでのSIGTERMによるクリーンシャットダウン。
 

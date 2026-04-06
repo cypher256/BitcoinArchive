@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jeff Garzikがスレッドを開始: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
+description: "ジェフ・ガージックがスレッドを開始: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
 isSatoshi: false
 tags: []
 translationStatus: complete

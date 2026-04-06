@@ -50,7 +50,7 @@ Satoshi Nakamoto<br>
 
 質問があれば http://www.bitcoin.org/smf/ に新しいフォーラムもある。
 
-コーディング作業と新サイト・フォーラムのホスティングをしてくれたMartti Malmi (sirius-m)に感謝する。また、Linuxバージョンのテストをしてくれた New Liberty Standardにも感謝する。
+コーディング作業と新サイト・フォーラムのホスティングをしてくれたマルッティ・マルミ (sirius-m)に感謝する。また、Linuxバージョンのテストをしてくれた New Liberty Standardにも感謝する。
 
 Satoshi Nakamoto
 

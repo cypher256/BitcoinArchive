@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Ray Dillinger -->
-Ray Dillinger：
+レイ・ディリンジャー：
 > 「通貨」はコンピューターが年間約35%速くなるため
 > 約35%のインフレ率である
 > …35%のインフレ率はテクノロジーによって

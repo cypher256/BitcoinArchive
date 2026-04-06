@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Gavin Andresenがスレッドを開始: トランザクションとスクリプト：DUP HASH160 ... EQUALVERIFY CHECKSIG"
+description: "ギャビン・アンドレセンがスレッドを開始: トランザクションとスクリプト：DUP HASH160 ... EQUALVERIFY CHECKSIG"
 isSatoshi: false
 tags: []
 translationStatus: complete

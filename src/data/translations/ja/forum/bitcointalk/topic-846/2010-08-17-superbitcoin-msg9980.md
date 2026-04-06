@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by superbitcoin)"
+title: "Re:（superbitcoinの文脈投稿）"
 date: 2010-08-17T21:28:28.000Z
 type: "forum-post"
 source: "bitcointalk"

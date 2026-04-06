@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Gavin Andresenがスレッドを開始: BitcoinTalkトピック295。"
+description: "ギャビン・アンドレセンがスレッドを開始: BitcoinTalkトピック295。"
 isSatoshi: false
 tags: []
 translationStatus: complete

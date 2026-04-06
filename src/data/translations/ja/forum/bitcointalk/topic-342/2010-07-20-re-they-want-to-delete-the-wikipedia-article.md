@@ -9,7 +9,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Wikipedia記事の削除議論に対し、サトシが記事の改善方法を提案。b-moneyとBitgoldの実装と述べているが、サトシ自身は論文公開前にこれらを知らなかったと別の場で認めている。"
-editorNote: "サトシはここでBitcoinをb-moneyとBitgoldの「実装」と述べているが、別の場でBitcoinの実装完了後にこれらの提案を知ったと認めている。Wei Daiの存在は2008年8月にAdam Backから紹介されたもので、実装は既に完成していた。"
+editorNote: "サトシはここでBitcoinをb-moneyとBitgoldの「実装」と述べているが、別の場でBitcoinの実装完了後にこれらの提案を知ったと認めている。ウェイ・ダイの存在は2008年8月にアダム・バックから紹介されたもので、実装は既に完成していた。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

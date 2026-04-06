@@ -30,7 +30,7 @@ secondarySources:
 >
 > http://www.bitcoin.org/smf/index.php?topic=2699.0
 >
-> Hal（Hal Finneyだと思うが）
+> ハル（ハル・フィニーだと思うが）
 
 <!-- speaker: Satoshi Nakamoto -->
 はい、彼だ。Cryptographyメーリングリストで支持的で、最初のノードの一つを運用していた。

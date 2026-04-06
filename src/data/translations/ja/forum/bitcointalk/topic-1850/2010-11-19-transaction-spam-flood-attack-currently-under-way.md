@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jeff Garzikがスレッドを開始: トランザクション/スパムフラッド攻撃が現在進行中"
+description: "ジェフ・ガージックがスレッドを開始: トランザクション/スパムフラッド攻撃が現在進行中"
 isSatoshi: false
 tags: []
 translationStatus: complete

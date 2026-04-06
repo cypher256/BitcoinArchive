@@ -17,6 +17,6 @@ translationStatus: complete
 ---
 
 [Quote from: knightmb on August 15, 2010, 10:59:04 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-knightmb-msg9574/)
-> ああ、少しわかりにくいな Huh
+> **[編集]** あなたの投稿を見た。では74,000未満のものをビルドする。少なくとも技術者の皆さんの新しいチェーンのダウンロード時間を数分節約できるはずだ。
 
 古いものはそのままにしてくれ！古いほうが良いのだ。何番のブロックだ？60000から74000のどこかであれば問題ない。しばらく前から公開していたものは検証済みで、最善の選択肢だ。

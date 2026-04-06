@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jeff Garzikがスレッドを開始: RFC: DB_PRIVATEフラグの削除"
+description: "ジェフ・ガージックがスレッドを開始: RFC: DB_PRIVATEフラグの削除"
 isSatoshi: false
 tags: []
 translationStatus: complete

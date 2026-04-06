@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jeff Garzikがスレッドを開始: 優先トランザクションと取引手数料"
+description: "ジェフ・ガージックがスレッドを開始: 優先トランザクションと取引手数料"
 isSatoshi: false
 tags: []
 translationStatus: complete

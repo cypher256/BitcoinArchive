@@ -45,4 +45,4 @@ translationStatus: complete
 
 このやり取りは特に示唆に富んでいる。なぜならサトシはイデオロギー的な理由でGPUマイニングに反対していたわけではなく、富の集中を気にしないと明言していたからだ。彼の懸念は純粋に戦略的なものであった：GPUの早すぎる普及は、一般ユーザーが参加するインセンティブを奪うことで初期のネットワーク成長を阻害する。
 
-*出典：CoinDesk（2025年）、Bitcoin Magazine、Cointelegraphなどとの複数のインタビューでLaszlo Hanyeczが共有したSatoshiのメールからの引用。完全なプライベート書簡は公開されていない。*
+*出典：CoinDesk（2025年）、Bitcoin Magazine、Cointelegraphなどとの複数のインタビューでラズロ・ハニエツが共有したSatoshiのメールからの引用。完全なプライベート書簡は公開されていない。*

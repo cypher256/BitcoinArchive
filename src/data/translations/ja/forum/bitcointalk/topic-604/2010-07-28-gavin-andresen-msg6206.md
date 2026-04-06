@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック604におけるGavin Andresenの文脈投稿。msg6273の前。"
+description: "BitcoinTalkトピック604におけるギャビン・アンドレセンの文脈投稿。msg6273の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

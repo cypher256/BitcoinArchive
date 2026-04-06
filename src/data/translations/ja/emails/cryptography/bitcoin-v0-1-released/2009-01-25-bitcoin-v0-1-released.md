@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Hal Finney -->
-Hal Finneyの投稿：
+ハル・フィニーの投稿：
 > > * スパマーのボットネットは送信ごとの支払いメールフィルターを
 > >   簡単に突破できるだろう
 > POWトークンが有用になり、特に通貨になれば、

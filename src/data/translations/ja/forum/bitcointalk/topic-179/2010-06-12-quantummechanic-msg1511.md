@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by QuantumMechanic)"
+title: "Re:（QuantumMechanicの文脈投稿）"
 date: 2010-06-12T02:11:15.000Z
 type: "forum-post"
 source: "bitcointalk"

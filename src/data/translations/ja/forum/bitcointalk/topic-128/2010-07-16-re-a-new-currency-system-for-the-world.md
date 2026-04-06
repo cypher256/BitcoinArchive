@@ -18,7 +18,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 [Quote from: hugolp on May 08, 2010, 10:38:51 AM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-128/2010-05-08-hugolp-msg1082/)
-> またもう一人のクレイジーなポーライトだ… Cheesy
+> Bitcoinを実行すると非常に動作が重くなり、ほとんど使い物にならない。Bitcoinを停止するとすべて正常に戻る。Ubuntu desktop 10.04 amd64でia32libsとbitcoin 0.20 tarballのバイナリを使用している。
 <!-- /tone-skip -->
 
 0.3.1でこれが修正された。生成スレッドを最低優先度に設定している。ダウンロードリンクは現在ホームページにある。

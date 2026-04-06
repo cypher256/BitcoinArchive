@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jeff Garzikがスレッドを開始: [パッチ] ブロックサイズ制限の引き上げ"
+description: "ジェフ・ガージックがスレッドを開始: [パッチ] ブロックサイズ制限の引き上げ"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -26,7 +26,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-Mike Hearnは次のように書いた：
+マイク・ハーンは次のように書いた：
 
 <!-- speaker: Mike Hearn -->
 > 私の推測では――グローバルチェーンの長さであり、最初の急速な進行は、ソフトウェアがチェーン内の先行ブロックをダウンロードし、有効であることを検証しているためだろう。

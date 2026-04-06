@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by NewLibertyStandard)"
+title: "Re:（NewLibertyStandardの文脈投稿）"
 date: 2010-08-15T22:44:55.000Z
 type: "forum-post"
 source: "bitcointalk"

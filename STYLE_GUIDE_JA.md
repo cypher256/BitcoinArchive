@@ -60,6 +60,24 @@ in Japanese entries.
   and similar technical strings where the original form is functionally
   necessary
 
+## Re-scrape / Re-generation Guard
+
+When re-scraping or regenerating context posts (EN or JA):
+
+1. **Before re-scrape**: create a backup branch of the current JA translations
+   (`git checkout -b backup/ja-pre-rescrape`)
+2. **After re-scrape**: run `git diff backup/ja-pre-rescrape -- src/data/translations/ja/`
+   to identify any translation loss
+3. **After re-translation**: run all JA checks before committing:
+   - `npm run check:ja-names` — person names must be katakana
+   - `npm run check:ja-titles` — context post titles must be Japanese
+   - `npm run check:ja-tone` — tone rules must pass
+4. **Manual review**: verify quote blocks match EN structure (same paragraphs quoted)
+
+Re-scrape commits that overwrite existing JA translations without preserving
+katakana names, translated titles, quote structure, and tone annotations are
+considered regressions.
+
 ## Scripted Edits (Japanese Content)
 
 Japanese Markdown body text should not be bulk-rewritten by scripts as a

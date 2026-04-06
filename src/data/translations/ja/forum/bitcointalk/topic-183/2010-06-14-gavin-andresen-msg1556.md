@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Gavin Andresen)"
+title: "Re:（ギャビン・アンドレセンの文脈投稿）"
 date: 2010-06-14T01:23:20.000Z
 type: "forum-post"
 source: "bitcointalk"

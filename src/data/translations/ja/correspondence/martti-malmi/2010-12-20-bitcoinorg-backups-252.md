@@ -30,7 +30,7 @@ translationStatus: complete
 ちなみに、僕のPGP鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
 
 <!-- speaker: Satoshi Nakamoto -->
-> Gavin Andresen の書き込み：
+> Gavin Andresen wrote:
 <!-- speaker: Martti Malmi -->
 >> Mon, Dec 20, 2010 at 10:55 AM に <mmalmi@cc.hut.fi> が書きました：
 <!-- speaker: Satoshi Nakamoto -->

@@ -1,5 +1,5 @@
 ---
-title: "Re:（Gavin Andresenの文脈投稿）"
+title: "Re:（ギャビン・アンドレセンの文脈投稿）"
 date: 2010-07-24T01:44:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック555におけるGavin Andresenの文脈投稿。msg5450の前。"
+description: "BitcoinTalkトピック555におけるギャビン・アンドレセンの文脈投稿。msg5450の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

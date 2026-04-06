@@ -8,7 +8,7 @@ author: "Jeff Garzik"
 participants:
   - name: "Jeff Garzik"
     slug: "jeff-garzik"
-description: "Jeff Garzikが、確認が遅ければトランザクション手数料を上げるべきと提案。非通貨トランザクション用のソフトウェアがユーザーフレンドリーな手数料インターフェースを提供するだろうと述べた。"
+description: "ジェフ・ガージックが、確認が遅ければトランザクション手数料を上げるべきと提案。非通貨トランザクション用のソフトウェアがユーザーフレンドリーな手数料インターフェースを提供するだろうと述べた。"
 isSatoshi: false
 inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:

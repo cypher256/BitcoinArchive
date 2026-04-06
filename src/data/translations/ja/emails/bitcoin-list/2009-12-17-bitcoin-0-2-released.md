@@ -24,7 +24,7 @@ http://sourceforge.net/projects/bitcoin/files/
 
 新機能
 
-Martti Malmi
+マルッティ・マルミ
   - システムトレイに最小化するオプション
   - 起動時の自動開始オプション（バックグラウンドで自動的に実行し続けられる）
   - 将来の拡張に向けた新しいオプションダイアログのレイアウト
@@ -37,6 +37,6 @@ Satoshi Nakamoto
 
 新しいフォーラムも http://www.bitcoin.org/smf/ に開設した。
 
-Martti（sirius-m）の開発作業全般と、Linux版のテストを手伝ってくれたNew Liberty Standardに大変感謝する。
+マルッティ・マルミ（sirius-m）の開発作業全般と、Linux版のテストを手伝ってくれたNew Liberty Standardに大変感謝する。
 
 Satoshi Nakamoto

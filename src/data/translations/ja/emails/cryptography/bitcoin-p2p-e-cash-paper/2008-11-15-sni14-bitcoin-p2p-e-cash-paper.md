@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Ray Dillinger -->
-Ray Dillingerの投稿：
+レイ・ディリンジャーの投稿：
 > 1つの方法は、コインの受取人に非対称鍵ペアを生成させ、
 > その半分をトランザクションとともに公開することだ。
 > 後でコインを使うためには、非対称鍵ペアの

@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック479におけるGavin Andresenの文脈投稿。msg5432の前。"
+description: "BitcoinTalkトピック479におけるギャビン・アンドレセンの文脈投稿。msg5432の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

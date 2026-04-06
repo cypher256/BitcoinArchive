@@ -28,6 +28,14 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'Tax implications of Bitcoin',
     ja: 'ビットコインの税務上の影響',
   },
+  'forum/bitcointalk/topic-125': {
+    en: 'Ummmm... where did my bitcoins go?',
+    ja: 'えーっと...私のビットコインはどこに行ったの？',
+  },
+  'forum/bitcointalk/topic-184': {
+    en: 'New binary release?',
+    ja: '新しいバイナリリリースは？',
+  },
   'forum/bitcointalk/topic-2216': {
     en: 'PC World Article on Bitcoin',
     ja: 'PC WorldのBitcoinに関する記事',

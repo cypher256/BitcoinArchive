@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jeff Garzikがスレッドを開始: 常にトランザクション手数料を支払う？"
+description: "ジェフ・ガージックがスレッドを開始: 常にトランザクション手数料を支払う？"
 isSatoshi: false
 tags: []
 translationStatus: complete

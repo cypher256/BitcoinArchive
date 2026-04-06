@@ -27,7 +27,7 @@ translationStatus: complete
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip](http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip)
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz)
 
-これらのバイナリには、Gavin AndresenのJSON-RPC HTTP認証機能と、0.3.2からのその他の重要なセキュリティ改善も含まれている。
+これらのバイナリには、ギャビン・アンドレセンのJSON-RPC HTTP認証機能と、0.3.2からのその他の重要なセキュリティ改善も含まれている。
 
 過去24時間にわたって、初期ブロックダウンロードを試みている最中に2〜60秒ごとにランダムに強制終了して再起動するテストを実行したが（かわいそうに）、問題なかった。
 

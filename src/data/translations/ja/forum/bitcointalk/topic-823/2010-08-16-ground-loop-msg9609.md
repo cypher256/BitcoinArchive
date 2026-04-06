@@ -1,5 +1,5 @@
 ---
-title: "Re: (context post by Ground Loop)"
+title: "Re:（Ground Loopの文脈投稿）"
 date: 2010-08-16T00:29:55.000Z
 type: "forum-post"
 source: "bitcointalk"

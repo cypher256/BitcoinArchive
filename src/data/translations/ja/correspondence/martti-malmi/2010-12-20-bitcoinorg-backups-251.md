@@ -25,7 +25,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Gavin Andresen -->
-Gavin Andresen の書き込み：
+Gavin Andresen wrote:
 > Mon, Dec 20, 2010 at 10:55 AM に <mmalmi@cc.hut.fi> が書きました：
 <!-- speaker: Martti Malmi -->
 >> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：

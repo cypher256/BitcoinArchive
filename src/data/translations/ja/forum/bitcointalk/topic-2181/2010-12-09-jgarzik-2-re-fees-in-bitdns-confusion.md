@@ -8,7 +8,7 @@ author: "Jeff Garzik"
 participants:
   - name: "Jeff Garzik"
     slug: "jeff-garzik"
-description: "Jeff Garzikがトランザクション置換のためのlocktimeの議論を参照した。サトシ・ナカモトは次の返信でこれを訂正することになる。"
+description: "ジェフ・ガージックがトランザクション置換のためのlocktimeの議論を参照した。サトシ・ナカモトは次の返信でこれを訂正することになる。"
 isSatoshi: false
 tags:
   - "transaction-replacement"

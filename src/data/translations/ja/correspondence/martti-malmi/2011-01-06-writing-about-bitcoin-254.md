@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Gavin Andresen -->
-Gavin Andresen の書き込み：
+Gavin Andresen wrote:
 > 喜んでRaineyと話すよ。
 
 <!-- speaker: Satoshi Nakamoto -->
