@@ -8,10 +8,10 @@ Bitcoin Institute is a bilingual (English/Japanese) reference site that collects
 
 The archive contains 2,300+ entries organized by type:
 
-- **Forum Posts** (1,815): BitcoinTalk (1,811) and P2P Foundation (4), including Satoshi's posts and context posts from other participants
+- **Forum Posts** (1,825): BitcoinTalk (1,812), SourceForge (9), P2P Foundation (4), including Satoshi's posts and context posts from other participants
 - **Correspondence** (337): Private emails between Satoshi and 9 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Laszlo Hanyecz, Martti Malmi, Mike Hearn, Nicholas Bohm, Wei Dai
 - **Articles** (72): Analysis, media coverage, research, and post-disappearance historical analysis
-- **Mailing List** (46): Cryptography mailing list (28), Bitcoin-list (15), P2P Research (3)
+- **Mailing List** (46): Cryptography mailing list (26), Bitcoin-list (16), P2P Research (4)
 - **Biographies** (25): Biographical profiles of key participants compiled from public sources
 - **BIPs** (11): Bitcoin Improvement Proposals relevant to Satoshi's design
 - **Court Documents** (3): COPA v Wright trial materials

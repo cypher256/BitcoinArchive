@@ -49,14 +49,15 @@ Private email exchanges between Satoshi and key participants:
 - **Wei Dai** (3 entries): Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
 - **Laszlo Hanyecz** (3 entries): Made the first real-world Bitcoin purchase (pizza transaction).
 
-### Forum Posts (1,815 entries)
-- **BitcoinTalk** (1,811 posts): Satoshi's posts and context posts from other participants — technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
+### Forum Posts (1,825 entries)
+- **BitcoinTalk** (1,812 posts): Satoshi's posts and context posts from other participants — technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
+- **SourceForge** (9 posts): Key development milestones from Bitcoin's SourceForge project
 - **P2P Foundation** (4 posts): Bitcoin announcement and early discussions
 
 ### Mailing List Emails (46 entries)
-- **Cryptography mailing list** (28 emails): Whitepaper announcement and technical debates
-- **Bitcoin-list** (15 emails): Development announcements
-- **P2P Research** (3 emails): Peer-to-peer technology discussions
+- **Cryptography mailing list** (26 emails): Whitepaper announcement and technical debates
+- **Bitcoin-list** (16 emails): Development announcements
+- **P2P Research** (4 emails): Peer-to-peer technology discussions
 
 ### Articles (72 entries)
 Analysis, media coverage, research articles, and post-disappearance historical analysis from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
