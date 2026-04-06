@@ -89,15 +89,14 @@ function checkFile(filePath, locale) {
 
   if (quotes.length === 0) {
     // Check for legacy patterns in files without quotes[]
-    for (const pat of LEGACY_PATTERNS) {
-      if (pat.test(body)) {
-        violations.push({
-          file: rel,
-          check: 'legacy-pattern',
-          level: 'warn',
-          msg: `Legacy attribution pattern found: ${pat}`,
-        });
-      }
+    // Only flag [Quote from:] — "wrote:" in prose is too common for false positives
+    if (/\[Quote from:/.test(body)) {
+      violations.push({
+        file: rel,
+        check: 'legacy-pattern',
+        level: 'warn',
+        msg: 'Legacy [Quote from:] attribution found (no quotes[] in frontmatter)',
+      });
     }
     return violations;
   }
@@ -228,16 +227,15 @@ function checkFile(filePath, locale) {
   }
   checkBlockquoteReachable(tree);
 
-  // 6. Legacy patterns in body (even with quotes[])
-  for (const pat of LEGACY_PATTERNS) {
-    if (pat.test(body)) {
-      violations.push({
-        file: rel,
-        check: 'legacy-with-quotes',
-        level: 'warn',
-        msg: `Legacy attribution pattern found alongside quotes[]: ${pat}`,
-      });
-    }
+  // 6. Legacy [Quote from:] in body (even with quotes[])
+  // Only check for [Quote from:] — "wrote:" in prose is a false positive
+  if (/\[Quote from:/.test(body)) {
+    violations.push({
+      file: rel,
+      check: 'legacy-with-quotes',
+      level: 'warn',
+      msg: 'Legacy [Quote from:] attribution found in body alongside quotes[]',
+    });
   }
 
   return violations;
