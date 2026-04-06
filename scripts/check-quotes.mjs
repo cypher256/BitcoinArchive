@@ -94,7 +94,7 @@ function checkFile(filePath, locale) {
       violations.push({
         file: rel,
         check: 'legacy-pattern',
-        level: 'warn',
+        level: 'error',
         msg: 'Legacy [Quote from:] attribution found (no quotes[] in frontmatter)',
       });
     }
@@ -233,7 +233,7 @@ function checkFile(filePath, locale) {
     violations.push({
       file: rel,
       check: 'legacy-with-quotes',
-      level: 'warn',
+      level: 'error',
       msg: 'Legacy [Quote from:] attribution found in body alongside quotes[]',
     });
   }

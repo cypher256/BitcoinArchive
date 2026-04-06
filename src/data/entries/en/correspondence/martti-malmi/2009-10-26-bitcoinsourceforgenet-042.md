@@ -22,7 +22,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
-    person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
+    person: "Eugen Leitl"
   - id: "q2"
     person: "Liberty Standard"
 ---
@@ -30,7 +30,6 @@ quotes:
 Any idea what's going on with it?  Every time I look, it's fine.
 
 
-Eugen Leitl wrote:
 <!-- quote: q1 -->
  > > bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing
 

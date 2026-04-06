@@ -31,12 +31,17 @@ quotes:
     date: "2010-09-26T03:05:29.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-26-anonymous-msg14112"
     parent: "q3"
+  - id: "q5"
+    person: "kiba"
+    date: "2010-09-23T16:00:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13828"
+    parent: "q2"
 ---
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > <!-- quote: q2 -->
-> > > [Quote from: kiba on September 23, 2010, 04:00:16 PM](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1268/2010-09-23-kiba-msg13828/)
+> > > <!-- quote: q5 -->
 > > > > 1. rapidshareやその他のひどいホストのようなダウンロードサイト。不便なキャプチャとPayPal必須。Bitcoinは両方の役割を果たしプロセス全体を効率化できる可能性がある。Kibaの提案。
 > > 
 > > 

@@ -21,11 +21,15 @@ quotes:
     person: "satoshi"
     date: "2010-08-25T07:56:15.000Z"
     parent: "q1"
+  - id: "q3"
+    person: "BioMike"
+    date: "2010-08-23T05:15:43.000Z"
+    parent: "q1"
 ---
 
 <!-- quote: q1 -->
 > <!-- quote: q2 -->
-> > [Quote from: BioMike on August 23, 2010, 05:15:43 AM](#msg10742)
+> > <!-- quote: q3 -->
 > > > So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand that he hands over his key (or get it from his computer) and shut down the complete network?
 > > > Or is that not possible? How far would <some goverment> get?
 > >

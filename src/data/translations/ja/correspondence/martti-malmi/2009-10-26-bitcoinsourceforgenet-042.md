@@ -23,7 +23,7 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
-    person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
+    person: "Eugen Leitl"
   - id: "q2"
     person: "Liberty Standard"
 ---
