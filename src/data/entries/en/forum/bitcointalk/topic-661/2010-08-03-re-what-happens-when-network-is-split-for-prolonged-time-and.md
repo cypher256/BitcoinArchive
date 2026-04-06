@@ -31,10 +31,11 @@ quotes:
 creighto: I agree with that idea.  After a few hours, it should be possible for the client to notice if the flow of blocks has dropped off by more than would be likely just by chance.  It could tell if it's not hearing the hum of the world anymore.
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-> Or if the split lasted long enough (more than 100 blocks), transactions that involve generated coins on the shorter chain would be invalid at the merge.
+> <!-- quote: q2 -->
+> > Or if the split lasted long enough (more than 100 blocks), transactions that involve generated coins on the shorter chain would be invalid at the merge.
+> 
+> Interesting info, so other than some double-spending issues, as long as the block chain isn't separated for more than 100 or so blocks (or 16+ hours), 
 
-Interesting info, so other than some double-spending issues, as long as the block chain isn't separated for more than 100 or so blocks (or 16+ hours), 
 In practice, splits are likely to be very asymmetrical.  It would be hard to split the world down the middle.  More likely it would be a single country vs the rest of the world, lets say a 1:10 split.  In that case, it would take the minority fork 10 times as long to generate 100 blocks, so about 7 days.  Also it would be super easy for the client to realize it's hearing way too few blocks and something must be wrong.
 
 <!-- quote: q3 -->

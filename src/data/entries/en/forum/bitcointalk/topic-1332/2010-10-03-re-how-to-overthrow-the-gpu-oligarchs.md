@@ -25,8 +25,8 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-> Can you tell more about it:
+> <!-- quote: q2 -->
+> > Can you tell more about it:
 
 "they have to do weird things with extraNonce, which increases the size of the block header".
 When you generate, you calculate hashes of the block header. Hashing more data is slower than hashing less data, so the block header is critically of a fixed size for everyone, with one exception.This is the point of confusion.  extraNonce is not part of the block header, it is part of the first transaction.  It does not slow down your hashing.  It does not change the size of the header.

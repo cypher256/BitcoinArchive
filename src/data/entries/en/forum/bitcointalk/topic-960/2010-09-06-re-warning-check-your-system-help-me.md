@@ -23,8 +23,8 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-> Any suggestions for better text to put for this error message so the next person will be less likely to be confused?
+> <!-- quote: q2 -->
+> > Any suggestions for better text to put for this error message so the next person will be less likely to be confused?
 
 "Please check that your computer's date and time are correct. If your clock is wrong Bitcoin will not work properly."
 Thanks.

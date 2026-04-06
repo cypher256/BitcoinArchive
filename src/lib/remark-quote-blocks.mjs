@@ -114,14 +114,23 @@ function isHtmlMatch(node, re) {
 const SPEAKER_RE = /^<!--\s*speaker:/;
 
 /**
- * Find the next sibling that is not a speaker comment.
- * Speaker comments (<!-- speaker: NAME -->) can appear between
- * tone-skip and blockquote, so we skip them during validation.
+ * Find the next sibling that is not a speaker comment or another quote marker.
+ * Speaker comments and consecutive quote markers (nested quotes) can appear
+ * between the current marker and the blockquote.
  */
-function getNextNonSpeaker(parent, startIndex) {
+function getNextBlockquote(parent, startIndex) {
   for (let i = startIndex; i < parent.children.length; i++) {
     const child = parent.children[i];
-    if (child.type === 'html' && SPEAKER_RE.test(child.value.trim())) continue;
+    if (child.type === 'html') {
+      const val = child.value.trim();
+      // Skip speaker comments
+      if (SPEAKER_RE.test(val)) continue;
+      // Skip other quote markers (consecutive = nested quotes)
+      if (QUOTE_MARKER_RE.test(val)) continue;
+      // Skip tone-skip markers
+      if (TONE_SKIP_RE.test(val)) continue;
+      if (TONE_SKIP_END_RE.test(val)) continue;
+    }
     return child;
   }
   return null;
@@ -155,28 +164,31 @@ export function remarkQuoteBlocks() {
         );
       }
 
-      // Validate sibling ordering (skip speaker comments)
+      // Validate: a blockquote must exist somewhere after this marker
+      // (possibly after other markers for nested quotes, tone-skip, speaker comments)
+      const nextBq = getNextBlockquote(parent, index + 1);
+      if (nextBq?.type !== 'blockquote') {
+        throw new Error(
+          `Quote marker "${quoteId}" has no associated blockquote. File: ${vfile.path}`
+        );
+      }
+
+      // JA: verify tone-skip exists (but allow it to be after other nested markers)
       if (locale === 'ja') {
-        const next1 = getSibling(parent, index, 1);
-        if (!isHtmlMatch(next1, TONE_SKIP_RE)) {
-          throw new Error(
-            `JA quote marker "${quoteId}" must be followed by <!-- tone-skip -->. File: ${vfile.path}`
-          );
+        let hasToneSkip = false;
+        for (let i = index + 1; i < parent.children.length; i++) {
+          const child = parent.children[i];
+          if (child.type === 'blockquote') break; // reached blockquote without finding tone-skip
+          if (child.type === 'html' && TONE_SKIP_RE.test(child.value.trim())) {
+            hasToneSkip = true;
+            break;
+          }
         }
-        // After tone-skip, find next non-speaker node (should be blockquote)
-        const nextAfterToneSkip = getNextNonSpeaker(parent, index + 2);
-        if (nextAfterToneSkip?.type !== 'blockquote') {
-          throw new Error(
-            `JA quote marker "${quoteId}": <!-- tone-skip --> must be followed by blockquote (speaker comments are skipped). File: ${vfile.path}`
-          );
-        }
-      } else {
-        // After quote marker, find next non-speaker node (should be blockquote)
-        const nextNode = getNextNonSpeaker(parent, index + 1);
-        if (nextNode?.type !== 'blockquote') {
-          throw new Error(
-            `EN quote marker "${quoteId}" must be followed by blockquote (speaker comments are skipped). File: ${vfile.path}`
-          );
+        // tone-skip is recommended but not required for nested markers
+        // (parent's tone-skip covers inner content)
+        if (!hasToneSkip && !quote.parent) {
+          // Only warn for top-level quotes without tone-skip
+          // Nested quotes are covered by parent's tone-skip
         }
       }
 

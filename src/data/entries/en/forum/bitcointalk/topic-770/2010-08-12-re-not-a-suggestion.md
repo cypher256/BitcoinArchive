@@ -23,11 +23,11 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-> I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  
-
-I thought this too at first. But then I convinced myself otherwise.
-Are you back to talking about the existing Bitcoin system here?
+> <!-- quote: q2 -->
+> > I believe the clients would have to keep the entire history back to the original generated coins.  The fact that clients have to keep the entire history reduces the privacy benefit.  
+> 
+> I thought this too at first. But then I convinced myself otherwise.
+> Are you back to talking about the existing Bitcoin system here?
 
 I was talking about in the hypothetical system I was describing, if the network doesn't know the values and lineage of the transactions, then it can't verify them and vouch for them, so the clients would have to keep the history all the way back.
 

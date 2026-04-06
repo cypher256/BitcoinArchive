@@ -25,10 +25,11 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-> bitcoin requires the Content-Length header, but several JSON-RPC libraries do not provide it.  When the Content-Length header is absent, bitcoin returns 500 Internal Server Error.
+> <!-- quote: q2 -->
+> > bitcoin requires the Content-Length header, but several JSON-RPC libraries do not provide it.  When the Content-Length header is absent, bitcoin returns 500 Internal Server Error.
+> 
+> Can you be more specific about which JSON libraries don't provide Content-Length ?  It'd be nice to document that.
 
-Can you be more specific about which JSON libraries don't provide Content-Length ?  It'd be nice to document that.
 I guess we should try to support the case where there's no Content-Length parameter.  I don't want to rip and replace streams though, even if it has to read one character at a time.
 
 Edit: That is, assuming there actually are any libraries that don't support Content-Length.

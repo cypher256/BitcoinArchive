@@ -26,14 +26,15 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-<!-- tone-skip -->
-<!-- /tone-skip -->
-<!-- tone-skip -->
-> bitcoinはContent-Lengthヘッダを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダがない場合、bitcoinは500 Internal Server Errorを返す。
-<!-- /tone-skip -->
+> <!-- quote: q2 -->
+> <!-- tone-skip -->
+> <!-- /tone-skip -->
+> <!-- tone-skip -->
+> > bitcoinはContent-Lengthヘッダを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダがない場合、bitcoinは500 Internal Server Errorを返す。
+> <!-- /tone-skip -->
+> 
+> Content-Lengthを提供しないJSONライブラリを具体的に教えてもらえますか？ ドキュメント化できると良いのですが。
 
-Content-Lengthを提供しないJSONライブラリを具体的に教えてもらえますか？ ドキュメント化できると良いのですが。
 Content-Lengthパラメータがない場合のサポートを試みるべきだろう。ただし、ストリームを全面的に書き換えたくはない。1文字ずつ読む必要があっても構わない。
 
 編集：つまり、Content-Lengthをサポートしないライブラリが実際にある場合の話だが。

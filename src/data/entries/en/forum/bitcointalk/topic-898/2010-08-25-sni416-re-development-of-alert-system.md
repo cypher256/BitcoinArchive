@@ -26,8 +26,8 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-> @mizerydearia, I think the quote button is easier to find then the reply one. 
+> <!-- quote: q2 -->
+> > @mizerydearia, I think the quote button is easier to find then the reply one. 
 
 So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand 
 that he hands over his key (or get it from his computer) and shut down the complete network?
