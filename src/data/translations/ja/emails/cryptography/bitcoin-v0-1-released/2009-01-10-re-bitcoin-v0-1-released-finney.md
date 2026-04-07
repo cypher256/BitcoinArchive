@@ -21,11 +21,19 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
 translationStatus: complete
 ---
 
+<!-- quote: q1 -->
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-Satoshi Nakamotoの投稿：
 > ビットコインの最初のリリースを発表する。ピアツーピアネットワークを使って
 > 二重支払いを防ぐ、新しい電子キャッシュシステムだ。
 > サーバーや中央権限を持たない、完全に分散型のシステムだ。
@@ -34,10 +42,13 @@ Satoshi Nakamotoの投稿：
 >
 > ダウンロードリンク：
 > http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
+<!-- /tone-skip -->
 
 <!-- speaker: Hal Finney -->
 最初のアルファ版リリースおめでとう、サトシ。試してみるのが楽しみなんだ。
 
+<!-- quote: q2 -->
+<!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > 総発行量は21,000,000コインになる。ネットワークノードが
 > ブロックを生成する際に配布され、4年ごとに半減する。
@@ -47,6 +58,7 @@ Satoshi Nakamotoの投稿：
 > 次の4年間: 2,625,000コイン
 > 次の4年間: 1,312,500コイン
 > 以下同様……
+<!-- /tone-skip -->
 
 <!-- speaker: Hal Finney -->
 生成されるコインの最大数を制限するようにシステムを構成できるというのは興味深いね。新しいコインを生成するために必要な作業量が時間とともに増えていくという考えだろう。

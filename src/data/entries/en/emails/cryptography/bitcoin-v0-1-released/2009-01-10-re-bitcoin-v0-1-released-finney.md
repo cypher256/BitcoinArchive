@@ -21,9 +21,16 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
 ---
 
-Satoshi Nakamoto writes:
+<!-- quote: q1 -->
 > Announcing the first release of Bitcoin, a new electronic cash
 > system that uses a peer-to-peer network to prevent double-spending.
 > It's completely decentralized with no server or central authority.
@@ -36,6 +43,7 @@ Satoshi Nakamoto writes:
 Congratulations to Satoshi on this first alpha release. I am looking
 forward to trying it out.
 
+<!-- quote: q2 -->
 > Total circulation will be 21,000,000 coins.  It'll be distributed
 > to network nodes when they make blocks, with the amount cut in half
 > every 4 years.

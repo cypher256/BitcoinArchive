@@ -67,7 +67,7 @@ translationStatus: complete
 >
 > Constanceさん、こんにちは。
 >
-> Bitcoinに興味を持っていただきありがとうございます。自由に引用してください。よりフォーマルな内容をお求めでしたら、Satoshi Nakamotoの論文が http://www.bitcoin.org/bitcoin.pdf で入手できます。論文が完成しましたらぜひお知らせください！
+> Bitcoinに興味を持っていただきありがとうございます。自由に引用してください。よりフォーマルな内容をお求めでしたら、サトシ・ナカモトの論文が http://www.bitcoin.org/bitcoin.pdf で入手できます。論文が完成しましたらぜひお知らせください！
 >
 >
 > -Martti
