@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 Please promise me you won't make a switch now.  The last thing we need 

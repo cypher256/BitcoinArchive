@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 I made a copy of the logo onto the local server, so we can still use  

@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "lfm"
+    personSlug: "lfm"
     date: "2010-08-22T20:28:14.000Z"
   - id: "q2"
     person: "FreeMoney"
+    personSlug: "freemoney"
     date: "2010-08-22T20:23:13.000Z"
     parent: "q1"
 ---

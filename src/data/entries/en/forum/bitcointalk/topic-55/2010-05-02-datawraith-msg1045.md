@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "Karmicads"
+    personSlug: "karmicads"
     date: "2010-05-01T17:15:51.000Z"
 ---
 

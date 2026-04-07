@@ -26,6 +26,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 <!-- speaker: Liberty Standard -->

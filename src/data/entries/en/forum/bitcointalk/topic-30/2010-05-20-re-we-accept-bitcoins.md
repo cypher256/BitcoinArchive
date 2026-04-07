@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "DataWraith"
+    personSlug: "datawraith"
     date: "2010-05-19T10:52:42.000Z"
     sourceEntryId: "forum/bitcointalk/topic-30/2010-05-19-datawraith-msg1161"
 ---

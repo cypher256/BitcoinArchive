@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "knightmb"
+    personSlug: "knightmb"
     date: "2010-07-14T10:17:43.000Z"
     sourceEntryId: "forum/bitcointalk/topic-325/2010-07-14-knightmb-msg2917"
 ---

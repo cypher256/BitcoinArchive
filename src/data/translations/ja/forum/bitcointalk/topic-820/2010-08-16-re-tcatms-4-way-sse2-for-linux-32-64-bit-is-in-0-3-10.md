@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "jgarzik"
+    personSlug: "jgarzik"
     date: "2010-08-15T18:35:28.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-jgarzik-msg9665"
 ---

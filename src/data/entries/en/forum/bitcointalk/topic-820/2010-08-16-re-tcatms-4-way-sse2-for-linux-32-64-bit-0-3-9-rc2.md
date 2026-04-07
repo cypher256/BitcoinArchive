@@ -16,9 +16,11 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "tcatm"
+    personSlug: "tcatm"
     date: "2010-08-15T15:43:39.000Z"
   - id: "q2"
     person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
     date: "2010-08-15T16:49:01.000Z"
 ---
 

@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "HarryS"
+    personSlug: "harrys"
     date: "2010-06-26T16:43:37.000Z"
     sourceEntryId: "forum/bitcointalk/topic-218/2010-06-27-harrys-msg1825"
 ---

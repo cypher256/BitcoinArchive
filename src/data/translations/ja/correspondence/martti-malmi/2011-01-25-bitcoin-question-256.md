@@ -23,9 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
-  - id: "q2"
-    person: "--- On Mon, 1/24/11, mmalmi@cc.hut.fi"
-    parent: "q1"
+    personSlug: "martti-malmi"
 translationStatus: complete
 ---
 
@@ -60,8 +58,6 @@ translationStatus: complete
 > Constance J. Wells, CeM, PMP: PMI certified
 > Denver, CO   U.S.A.
 > 303-730-6609
->
-> <!-- quote: q2 -->
 >
 <!-- speaker: Martti Malmi -->
 > From: mmalmi@cc.hut.fi <mmalmi@cc.hut.fi>

@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "kosovito"
+    personSlug: "kosovito"
     date: "2010-08-15T15:39:17.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-kosovito-msg9615"
 ---

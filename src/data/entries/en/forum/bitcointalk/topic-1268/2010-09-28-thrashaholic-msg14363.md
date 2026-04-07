@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "theymos"
+    personSlug: "theymos"
     date: "2010-09-26T16:14:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-27-theymos-msg14183"
   - id: "q2"
     person: "thrashaholic"
+    personSlug: "thrashaholic"
     date: "2010-09-26T15:20:02.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-27-thrashaholic-msg14176"
     parent: "q1"

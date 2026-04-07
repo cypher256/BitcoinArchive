@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 I added the sourceforge tracker to bitcoin.sourceforge.net.  The 

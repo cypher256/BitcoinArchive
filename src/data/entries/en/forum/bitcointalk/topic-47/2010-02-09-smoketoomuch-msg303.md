@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "sirius-m"
+    personSlug: "martti-malmi"
     date: "2010-02-09T07:08:39.000Z"
 ---
 

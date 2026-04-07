@@ -23,9 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
-  - id: "q2"
-    person: "--- On Mon, 1/24/11, mmalmi@cc.hut.fi"
-    parent: "q1"
+    personSlug: "martti-malmi"
 ---
 
 The paper was published in 2008.
@@ -61,8 +59,6 @@ published in 2009.  The paper was released earlier than the software.
 > Constance J. Wells, CeM, PMP: PMI certified
 > Denver, CO   U.S.A.
 > 303-730-6609
-> 
-> <!-- quote: q2 -->
 > 
 > From: mmalmi@cc.hut.fi <mmalmi@cc.hut.fi>
 > Subject: Re:

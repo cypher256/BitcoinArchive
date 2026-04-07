@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "BitLex"
+    personSlug: "bitlex"
     date: "2010-07-25T11:45:38.000Z"
 ---
 

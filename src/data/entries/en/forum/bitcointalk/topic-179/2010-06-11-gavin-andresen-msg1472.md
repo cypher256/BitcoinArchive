@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "nixoid"
+    personSlug: "nixoid"
     date: "2010-06-10T11:38:13.000Z"
     sourceEntryId: "forum/bitcointalk/topic-179/2010-06-10-nixoid-msg1461"
 ---

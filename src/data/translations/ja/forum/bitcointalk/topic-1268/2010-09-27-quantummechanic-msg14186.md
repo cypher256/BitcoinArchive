@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "kiba"
+    personSlug: "kiba"
     date: "2010-09-24T19:56:46.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-kiba-msg14004"
   - id: "q2"

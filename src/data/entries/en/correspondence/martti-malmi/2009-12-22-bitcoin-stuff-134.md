@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 Thanks for creating the maintenance account, it would have been 

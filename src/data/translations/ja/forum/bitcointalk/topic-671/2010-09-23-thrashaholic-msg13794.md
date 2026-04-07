@@ -15,10 +15,12 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Babylon"
+    personSlug: "babylon"
     date: "2010-09-22T20:01:59.000Z"
     sourceEntryId: "forum/bitcointalk/topic-671/2010-09-23-babylon-msg13789"
   - id: "q2"
     person: "mtgox"
+    personSlug: "mtgox"
     date: "2010-08-02T04:23:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-671/2010-08-02-mtgox-msg7004"
     parent: "q1"

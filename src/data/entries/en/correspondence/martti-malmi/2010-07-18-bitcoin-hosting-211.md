@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 Ok, I won't switch it. Donations in Bitcoin are helpful and can be  

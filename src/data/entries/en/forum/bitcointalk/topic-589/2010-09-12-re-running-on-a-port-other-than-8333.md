@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "lachesis"
+    personSlug: "lachesis"
     date: "2010-08-10T06:24:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-589/2010-08-10-lachesis-msg8544"
 ---

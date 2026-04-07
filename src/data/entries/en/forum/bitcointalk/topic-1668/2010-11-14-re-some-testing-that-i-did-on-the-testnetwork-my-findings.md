@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "ByteCoin"
+    personSlug: "bytecoin"
     date: "2010-11-13T14:55:11.000Z"
 ---
 

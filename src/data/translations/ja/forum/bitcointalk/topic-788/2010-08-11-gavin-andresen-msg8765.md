@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-08-11T07:10:56.000Z"
     sourceEntryId: "forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761"
 ---

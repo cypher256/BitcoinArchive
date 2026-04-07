@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "lfm"
+    personSlug: "lfm"
     date: "2010-08-17T12:33:14.000Z"
     sourceEntryId: "forum/bitcointalk/topic-846/2010-08-17-lfm-msg9981"
 ---

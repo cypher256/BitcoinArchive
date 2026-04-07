@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Hal"
+    personSlug: "hal-finney"
     date: "2010-12-10T10:14:04.000Z"
 ---
 

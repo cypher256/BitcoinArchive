@@ -23,8 +23,10 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Eugen Leitl"
+    personSlug: "eugen-leitl"
   - id: "q2"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 Any idea what's going on with it?  Every time I look, it's fine.

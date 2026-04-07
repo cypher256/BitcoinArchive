@@ -23,6 +23,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Michel Bauwens"
+    personSlug: "michel-bauwens"
 ---
 
 <!-- speaker: Michel Bauwens -->

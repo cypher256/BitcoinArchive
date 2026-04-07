@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Ray Dillinger (Bear)"
+    personSlug: "ray-dillinger"
 ---
 
 I'll try and hurry up and release the sourcecode as soon as possible to serve as a reference to help clear up all these implementation questions.

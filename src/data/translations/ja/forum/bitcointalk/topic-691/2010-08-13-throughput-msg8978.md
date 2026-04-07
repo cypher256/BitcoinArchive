@@ -15,13 +15,16 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "aceat64"
+    personSlug: "aceat64"
     date: "2010-08-12T08:02:43.000Z"
   - id: "q2"
     person: "throughput"
+    personSlug: "throughput"
     date: "2010-08-12T06:28:43.000Z"
     parent: "q1"
   - id: "q3"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-12T12:34:44.000Z"
 ---
 <!-- quote: q1 -->

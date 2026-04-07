@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-07-21T16:11:26.000Z"
 ---
 

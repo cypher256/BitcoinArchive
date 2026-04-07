@@ -16,14 +16,17 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "aidos"
+    personSlug: "aidos"
     date: "2010-07-14T15:49:11.000Z"
     sourceEntryId: "forum/bitcointalk/topic-151/2010-07-15-aidos-msg3017"
   - id: "q2"
     person: "aidos"
+    personSlug: "aidos"
     date: "2010-07-14T15:49:11.000Z"
     sourceEntryId: "forum/bitcointalk/topic-151/2010-07-15-aidos-msg3017"
   - id: "q3"
     person: "aidos"
+    personSlug: "aidos"
     date: "2010-07-14T15:49:11.000Z"
     sourceEntryId: "forum/bitcointalk/topic-151/2010-07-15-aidos-msg3017"
 ---

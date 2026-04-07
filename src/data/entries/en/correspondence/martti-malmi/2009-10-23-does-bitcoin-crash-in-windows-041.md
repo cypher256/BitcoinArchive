@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 <!-- quote: q1 -->

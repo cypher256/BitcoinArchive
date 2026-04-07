@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Cdecker"
+    personSlug: "cdecker"
     date: "2010-09-19T11:14:08.000Z"
 ---
 

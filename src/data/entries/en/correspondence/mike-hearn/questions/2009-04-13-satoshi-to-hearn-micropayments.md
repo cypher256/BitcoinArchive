@@ -25,6 +25,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Mike Hearn"
+    personSlug: "mike-hearn"
 ---
 
 <!-- quote: q1 -->

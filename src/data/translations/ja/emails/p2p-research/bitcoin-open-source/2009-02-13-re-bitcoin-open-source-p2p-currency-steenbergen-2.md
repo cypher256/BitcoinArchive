@@ -24,6 +24,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Martien van Steenbergen"
+    personSlug: "martien-van-steenbergen"
 ---
 
 <!-- speaker: Martien van Steenbergen -->

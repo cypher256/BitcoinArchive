@@ -24,6 +24,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 I've done a Joomla site for a customer, and I must say I like Drupal  

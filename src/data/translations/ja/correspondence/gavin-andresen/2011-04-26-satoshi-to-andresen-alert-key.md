@@ -27,6 +27,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Satoshi"
+    personSlug: "satoshi-nakamoto"
 translationStatus: complete
 ---
 

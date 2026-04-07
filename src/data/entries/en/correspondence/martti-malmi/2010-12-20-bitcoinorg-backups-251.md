@@ -24,8 +24,10 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
   - id: "q2"
-    person: "Dec 20, 2010 at 10:55 AM,"
+    person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
     parent: "q1"
 ---
 

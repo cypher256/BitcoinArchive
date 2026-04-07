@@ -26,11 +26,14 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
   - id: "q2"
-    person: ">"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
     parent: "q1"
   - id: "q3"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
     parent: "q1"
 ---
 

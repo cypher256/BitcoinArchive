@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "Insti"
+    personSlug: "insti"
     date: "2010-08-10T05:53:41.000Z"
   - id: "q2"
     person: "throughput"
+    personSlug: "throughput"
     date: "2010-08-10T01:13:30.000Z"
     parent: "q1"
 ---

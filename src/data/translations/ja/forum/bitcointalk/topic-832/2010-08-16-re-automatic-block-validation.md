@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-16T06:25:54.000Z"
     sourceEntryId: "forum/bitcointalk/topic-832/2010-08-16-satoshi-msg9754"
 ---

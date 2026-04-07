@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Ray Dillinger"
+    personSlug: "ray-dillinger"
 ---
 
 <!-- quote: q1 -->

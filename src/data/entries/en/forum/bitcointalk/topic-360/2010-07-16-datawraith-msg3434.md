@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "Some Mouse"
+    personSlug: "some-mouse"
     date: "2010-07-15T15:13:52.000Z"
     sourceEntryId: "forum/bitcointalk/topic-360/2010-07-16-some-mouse-msg3334"
 ---

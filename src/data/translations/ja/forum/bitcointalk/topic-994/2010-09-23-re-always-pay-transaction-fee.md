@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-09-08T08:30:14.000Z"
 ---
 

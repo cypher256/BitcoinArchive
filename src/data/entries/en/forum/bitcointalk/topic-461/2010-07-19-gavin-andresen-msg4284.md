@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-07-19T07:20:50.000Z"
 ---
 

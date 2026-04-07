@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "SmokeTooMuch"
+    personSlug: "smoketoomuch"
     date: "2010-07-13T09:55:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-151/2010-07-13-smoketoomuch-msg2619"
 ---

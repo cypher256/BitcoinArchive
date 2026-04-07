@@ -16,14 +16,17 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "knightmb"
+    personSlug: "knightmb"
     date: "2010-08-03T10:02:13.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-knightmb-msg7303"
   - id: "q2"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-08-03T09:38:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-gavin-andresen-msg7293"
   - id: "q3"
     person: "knightmb"
+    personSlug: "knightmb"
     date: "2010-08-03T10:02:13.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-knightmb-msg7303"
 ---

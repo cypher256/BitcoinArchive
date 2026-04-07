@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "TopSoil"
+    personSlug: "topsoil"
     date: "2010-07-14T06:59:18.000Z"
 ---
 

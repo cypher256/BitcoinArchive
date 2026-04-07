@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "theymos"
+    personSlug: "theymos"
     date: "2010-10-01T21:11:11.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1332/2010-10-02-theymos-msg14966"
   - id: "q2"

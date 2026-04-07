@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Xunie"
+    personSlug: "xunie"
     date: "2010-05-25T15:50:04.000Z"
     sourceEntryId: "forum/bitcointalk/topic-154/2010-05-26-xunie-msg1242"
 ---

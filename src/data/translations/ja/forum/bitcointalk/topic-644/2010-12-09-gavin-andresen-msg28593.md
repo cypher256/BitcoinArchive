@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Cdecker"
+    personSlug: "cdecker"
     date: "2010-07-30T09:31:48.000Z"
     sourceEntryId: "forum/bitcointalk/topic-644/2010-07-30-cdecker-msg6688"
 ---

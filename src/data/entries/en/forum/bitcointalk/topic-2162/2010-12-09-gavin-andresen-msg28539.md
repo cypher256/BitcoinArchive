@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "chaord"
+    personSlug: "chaord"
     date: "2010-12-08T22:17:12.000Z"
 ---
 

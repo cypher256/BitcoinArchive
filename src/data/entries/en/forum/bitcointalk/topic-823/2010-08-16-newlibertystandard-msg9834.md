@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "laszlo"
+    personSlug: "laszlo"
     date: "2010-08-16T13:13:00.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-laszlo-msg9833"
 ---

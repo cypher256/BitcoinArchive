@@ -23,6 +23,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

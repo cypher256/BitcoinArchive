@@ -24,6 +24,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
 ---
 
 <!-- speaker: Gavin Andresen -->

@@ -16,13 +16,16 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "BioMike"
+    personSlug: "biomike"
     date: "2010-08-25T09:23:45.000Z"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-25T07:56:15.000Z"
     parent: "q1"
   - id: "q3"
     person: "BioMike"
+    personSlug: "biomike"
     date: "2010-08-23T05:15:43.000Z"
     parent: "q1"
 ---

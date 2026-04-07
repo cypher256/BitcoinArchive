@@ -24,6 +24,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 I uploaded my JSON-RPC and command line implementation to SVN.  I'm 

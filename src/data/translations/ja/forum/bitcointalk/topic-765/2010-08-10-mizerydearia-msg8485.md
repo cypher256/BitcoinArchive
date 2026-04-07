@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Ground Loop"
+    personSlug: "ground-loop"
     date: "2010-08-09T18:38:23.000Z"
 ---
 <!-- quote: q1 -->

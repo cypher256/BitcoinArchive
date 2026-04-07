@@ -15,9 +15,11 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "spaceshaker"
+    personSlug: "spaceshaker"
     date: "2010-07-13T16:52:00.000Z"
   - id: "q2"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-07-13T15:42:32.000Z"
     parent: "q1"
 ---

@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "nanotube"
+    personSlug: "nanotube"
     date: "2010-12-09T12:20:40.000Z"
 ---
 

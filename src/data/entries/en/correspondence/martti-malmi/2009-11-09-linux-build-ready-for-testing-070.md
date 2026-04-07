@@ -25,6 +25,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 > Martti, how long did it take to start downloading blocks when you ran

@@ -24,6 +24,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Ray Dillinger (Bear)"
+    personSlug: "ray-dillinger"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

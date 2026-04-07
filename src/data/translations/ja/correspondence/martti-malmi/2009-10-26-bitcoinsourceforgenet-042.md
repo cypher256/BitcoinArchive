@@ -24,8 +24,10 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Eugen Leitl"
+    personSlug: "eugen-leitl"
   - id: "q2"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

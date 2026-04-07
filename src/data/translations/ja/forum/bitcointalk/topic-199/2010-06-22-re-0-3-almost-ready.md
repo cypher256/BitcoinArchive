@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "lachesis"
+    personSlug: "lachesis"
     date: "2010-06-21T21:20:02.000Z"
     sourceEntryId: "forum/bitcointalk/topic-199/2010-06-22-lachesis-msg1658"
 ---

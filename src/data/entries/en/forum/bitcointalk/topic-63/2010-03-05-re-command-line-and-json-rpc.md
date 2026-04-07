@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "sirius-m"
+    personSlug: "martti-malmi"
     date: "2010-02-24T09:17:35.000Z"
 ---
 

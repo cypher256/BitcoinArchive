@@ -25,6 +25,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 <!-- speaker: Martti Malmi -->

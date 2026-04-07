@@ -16,9 +16,11 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "theymos"
+    personSlug: "theymos"
     date: "2010-02-23T18:07:37.000Z"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-23T13:15:41.000Z"
 ---
 

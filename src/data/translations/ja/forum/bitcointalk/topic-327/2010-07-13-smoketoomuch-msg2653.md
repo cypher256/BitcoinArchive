@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "andy_3_913"
+    personSlug: "andy_3_913"
     date: "2010-07-13T10:19:47.000Z"
 ---
 

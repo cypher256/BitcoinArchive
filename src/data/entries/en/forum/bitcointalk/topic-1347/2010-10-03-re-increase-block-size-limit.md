@@ -20,6 +20,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "theymos"
+    personSlug: "theymos"
     date: "2010-10-03T11:28:39.000Z"
 ---
 

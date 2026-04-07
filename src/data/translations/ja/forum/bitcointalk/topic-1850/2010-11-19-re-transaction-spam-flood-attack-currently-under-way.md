@@ -20,6 +20,7 @@ quotes:
     date: "2010-11-19T11:29:12.000Z"
   - id: "q2"
     person: "FreeMoney"
+    personSlug: "freemoney"
     date: "2010-11-19T08:39:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1842/2010-11-19-freemoney-msg22844"
 ---

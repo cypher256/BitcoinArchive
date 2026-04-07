@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "ByteCoin"
+    personSlug: "bytecoin"
     date: "2010-11-07T17:31:22.000Z"
 ---
 

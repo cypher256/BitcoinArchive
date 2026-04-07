@@ -24,6 +24,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "James A. Donald"
+    personSlug: "james-donald"
 ---
 
 <!-- speaker: James A. Donald -->

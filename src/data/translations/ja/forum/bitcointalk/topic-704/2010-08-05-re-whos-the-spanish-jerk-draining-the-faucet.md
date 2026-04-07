@@ -17,14 +17,17 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-08-04T11:40:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
   - id: "q2"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-08-04T11:40:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
   - id: "q3"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-08-04T11:40:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
 ---

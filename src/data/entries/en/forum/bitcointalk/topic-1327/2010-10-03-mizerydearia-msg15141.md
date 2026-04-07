@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-10-03T09:17:06.000Z"
   - id: "q2"
     person: "ShadowOfHarbringer"
+    personSlug: "shadowofharbringer"
     date: "2010-10-02T04:00:07.000Z"
     parent: "q1"
 ---

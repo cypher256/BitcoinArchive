@@ -24,6 +24,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Ray Dillinger"
+    personSlug: "ray-dillinger"
 ---
 
 <!-- speaker: Ray Dillinger -->

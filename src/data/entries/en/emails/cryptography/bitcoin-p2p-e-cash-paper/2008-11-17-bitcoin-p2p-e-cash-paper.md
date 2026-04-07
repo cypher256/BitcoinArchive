@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "James A. Donald"
+    personSlug: "james-donald"
 ---
 
 <!-- quote: q1 -->

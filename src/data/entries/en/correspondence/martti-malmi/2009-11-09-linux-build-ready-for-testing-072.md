@@ -25,6 +25,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 You got a lot done with the Linux build, autostart, minimize to tray, 

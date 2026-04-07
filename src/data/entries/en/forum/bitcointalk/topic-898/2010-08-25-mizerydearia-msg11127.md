@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "Macho"
+    personSlug: "macho"
     date: "2010-08-24T18:03:03.000Z"
 ---
 

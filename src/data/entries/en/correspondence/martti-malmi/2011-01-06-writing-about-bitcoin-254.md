@@ -23,6 +23,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
 ---
 
 <!-- quote: q1 -->

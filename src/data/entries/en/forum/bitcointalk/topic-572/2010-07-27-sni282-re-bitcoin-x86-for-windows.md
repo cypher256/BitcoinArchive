@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "BlackEye"
+    personSlug: "blackeye"
     date: "2010-07-25T13:12:23.000Z"
     sourceEntryId: "forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774"
 ---

@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "grondilu"
+    personSlug: "grondilu"
     date: "2010-10-23T09:07:41.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1545/2010-10-23-grondilu-msg18237"
 ---

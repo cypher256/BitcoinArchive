@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "gridecon"
+    personSlug: "gridecon"
     date: "2010-08-06T07:48:00.000Z"
 ---
 

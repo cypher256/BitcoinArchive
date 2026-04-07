@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
     date: "2010-08-06T14:55:47.000Z"
     sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-newlibertystandard-msg8021"
   - id: "q2"

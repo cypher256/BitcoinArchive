@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "lachesis"
+    personSlug: "lachesis"
     date: "2010-07-29T13:14:36.000Z"
 ---
 

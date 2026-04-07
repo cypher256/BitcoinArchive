@@ -24,6 +24,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 Maybe the current difficulty of buying LR is already the limit of how 

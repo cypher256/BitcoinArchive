@@ -24,6 +24,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
 ---
 
 Thanks, that worked, I got File Manager installed with SSH.  I also 

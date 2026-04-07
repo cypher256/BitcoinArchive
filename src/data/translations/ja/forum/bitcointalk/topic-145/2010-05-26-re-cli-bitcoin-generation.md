@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "molybdenum"
+    personSlug: "molybdenum"
     date: "2010-05-22T09:44:20.000Z"
     sourceEntryId: "forum/bitcointalk/topic-145/2010-05-22-molybdenum-msg1194"
 ---

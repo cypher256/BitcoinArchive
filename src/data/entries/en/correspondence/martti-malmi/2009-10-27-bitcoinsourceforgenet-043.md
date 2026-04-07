@@ -23,10 +23,12 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Eugen Leitl"
+    personSlug: "eugen-leitl"
   - id: "q2"
     person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
   - id: "q3"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 IS_LIVE option was indeed set to false, but it only affects the  

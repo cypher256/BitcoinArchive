@@ -26,8 +26,10 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Joerg Baach"
+    personSlug: "joerg-baach"
   - id: "q2"
     person: "Sepp Hasslberger"
+    personSlug: "sepp-hasslberger"
 ---
 
 <!-- quote: q1 -->

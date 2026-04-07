@@ -16,9 +16,11 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-06-17T10:58:14.000Z"
   - id: "q2"
     person: "laszlo"
+    personSlug: "laszlo"
     date: "2010-06-17T09:50:31.000Z"
 ---
 

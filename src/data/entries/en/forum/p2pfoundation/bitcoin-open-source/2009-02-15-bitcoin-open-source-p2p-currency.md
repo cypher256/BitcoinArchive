@@ -22,6 +22,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Sepp Hasslberger"
+    personSlug: "sepp-hasslberger"
 ---
 
 <!-- quote: q1 -->

@@ -16,10 +16,12 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "sirius-m"
+    personSlug: "martti-malmi"
     date: "2010-08-10T17:01:53.000Z"
     sourceEntryId: "forum/bitcointalk/topic-782/2010-08-11-sirius-msg8657"
   - id: "q2"
     person: "gridecon"
+    personSlug: "gridecon"
     date: "2010-08-11T11:46:08.000Z"
     sourceEntryId: "forum/bitcointalk/topic-782/2010-08-11-gridecon-msg8795"
 ---

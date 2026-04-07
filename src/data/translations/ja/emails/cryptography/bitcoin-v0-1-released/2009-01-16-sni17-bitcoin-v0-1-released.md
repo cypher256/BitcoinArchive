@@ -23,8 +23,10 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Dustin D. Trammell"
+    personSlug: "dustin-trammell"
   - id: "q2"
     person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
     parent: "q1"
 ---
 

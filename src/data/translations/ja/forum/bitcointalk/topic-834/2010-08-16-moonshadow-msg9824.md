@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "mkrogh"
+    personSlug: "mkrogh"
     date: "2010-08-16T11:54:47.000Z"
 ---
 <!-- quote: q1 -->

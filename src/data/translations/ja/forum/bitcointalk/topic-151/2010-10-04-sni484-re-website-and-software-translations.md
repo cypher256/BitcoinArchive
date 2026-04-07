@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "eurekafag"
+    personSlug: "eurekafag"
     date: "2010-10-04T01:55:56.000Z"
     sourceEntryId: "forum/bitcointalk/topic-151/2010-10-04-eurekafag-msg15248"
 ---

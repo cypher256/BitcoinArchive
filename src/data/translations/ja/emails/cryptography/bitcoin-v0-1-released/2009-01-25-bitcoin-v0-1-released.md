@@ -24,6 +24,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "Hal Finney"
+    personSlug: "hal-finney"
 ---
 
 <!-- speaker: Hal Finney -->

@@ -22,6 +22,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "Michel Bauwens"
+    personSlug: "michel-bauwens"
 ---
 
 <!-- quote: q1 -->

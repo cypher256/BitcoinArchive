@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "mkrogh"
+    personSlug: "mkrogh"
     date: "2010-08-06T12:38:46.000Z"
     sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-mkrogh-msg7982"
 ---

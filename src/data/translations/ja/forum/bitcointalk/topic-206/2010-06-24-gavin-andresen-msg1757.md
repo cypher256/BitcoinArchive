@@ -15,6 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "virtualcoin"
+    personSlug: "virtualcoin"
     date: "2010-06-24T13:07:30.000Z"
     sourceEntryId: "forum/bitcointalk/topic-206/2010-06-24-virtualcoin-msg1755"
 ---

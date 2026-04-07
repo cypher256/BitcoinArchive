@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
     date: "2010-02-23T10:04:47.000Z"
 ---
 

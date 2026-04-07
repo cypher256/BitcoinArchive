@@ -24,12 +24,15 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
   - id: "q2"
     person: "Eugen Leitl"
+    personSlug: "eugen-leitl"
   - id: "q3"
     person: "Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto"
   - id: "q4"
     person: "Liberty Standard"
+    personSlug: "newlibertystandard"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

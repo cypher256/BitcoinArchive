@@ -16,6 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-06-14T11:39:50.000Z"
     sourceEntryId: "forum/bitcointalk/topic-191/2010-06-17-re-bitcoin-generation"
 ---

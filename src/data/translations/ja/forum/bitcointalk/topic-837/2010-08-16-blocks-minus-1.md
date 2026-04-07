@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "kencausey"
+    personSlug: "kencausey"
     date: "2010-08-15T14:45:26.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588"
 ---

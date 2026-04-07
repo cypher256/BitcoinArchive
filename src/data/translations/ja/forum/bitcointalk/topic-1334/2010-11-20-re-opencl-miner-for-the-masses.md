@@ -17,9 +17,11 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "m0mchil"
+    personSlug: "m0mchil"
     date: "2010-11-20T01:16:19.000Z"
   - id: "q2"
     person: "m0mchil"
+    personSlug: "m0mchil"
     date: "2010-11-16T01:30:41.000Z"
 ---
 
