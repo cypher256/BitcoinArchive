@@ -107,7 +107,35 @@ JA の description フィールドでは以下の表記に統一する:
 ## Quote Attribution Structure
 
 新規エントリーの引用は frontmatter `quotes[]` + body マーカーで記述する。
-body に `[Quote from:]`, `NAME wrote:`, `Quoting NAME:` を直接書かない。
+body に以下のレガシー attribution パターンを直接書かない:
+
+| パターン | ソース例 |
+|---------|---------|
+| `[Quote from: NAME on DATE](URL)` | BitcoinTalk |
+| `NAME wrote:` | メーリングリスト、correspondence |
+| `NAME writes:` | メーリングリスト（現在形） |
+| `Quoting NAME:` | Hushmail |
+| `Quoting NAME <email>:` | Hushmail（メール付き） |
+| `On DATE, NAME wrote:` | Gmail 系 |
+| `Lainaus NAME:` | Hushmail フィンランド語 |
+| `NAMEの投稿：` | 旧 JA 翻訳 |
+| `NAMEの書き込み：` | 旧 JA 翻訳 |
+| `NAMEの引用：` | 旧 JA 翻訳 |
+| `NAMEは次のように書いた：` | 旧 JA 翻訳 |
+
+これらは全て `<!-- quote: qN -->` マーカーに変換し、frontmatter `quotes[]` に
+構造化メタデータとして記録する。`check-quotes.mjs` がレガシー形式を検出する
+（現在は `[Quote from:]` のみエラー、その他は手動で検出）。
+
+**personSlug 必須**: `quotes[].person` を設定する際は、`participants.ts` に
+対応するエントリーがあれば必ず `personSlug` も設定する。これがないと JA 表示
+時にカタカナ変換されない。スクリプト `fill-person-slug.mjs` で一括補完できる。
+
+### 散文中の attribution
+
+地の文で「Satoshi wrote: ...」のように引用導入として書いている場合（aftermath
+や biography の英文ナレーション）は attribution ではなく散文。これは構造化
+不要。JA 翻訳時は「サトシは次のように書いた：」のような自然な日本語にする。
 
 ```yaml
 # frontmatter
