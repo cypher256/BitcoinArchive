@@ -102,17 +102,22 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
   .card-header {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
     font-family: var(--font-heading);
     font-size: 0.8rem;
     color: var(--color-text-muted);
     margin-bottom: 0.3rem;
+  }
+  .card-header time {
+    white-space: nowrap;
   }
   .source-badge {
     display: inline-block;
     padding: 0.1em 0.5em;
     background: var(--color-source-bg);
     border-radius: 3px;
+    white-space: nowrap;
   }
   .thread-badge {
     display: inline-block;
@@ -122,6 +127,7 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
     border-radius: 3px;
     font-weight: 600;
     font-size: 0.75rem;
+    white-space: nowrap;
   }
   .biography-badge {
     display: inline-block;
@@ -132,6 +138,7 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
     font-weight: 600;
     font-size: 0.75rem;
     opacity: 0.7;
+    white-space: nowrap;
   }
   .card-title {
     margin: 0 0 0.25rem;
