@@ -29,6 +29,29 @@ const LEGACY_PATTERNS = [
   /^Quoting /m,
 ];
 
+// Real person names that should always have personSlug set.
+// If quote.person matches one of these but personSlug is null,
+// the JA renderer will fall back to the English name instead of katakana.
+const REAL_NAMES_REQUIRING_SLUG = new Set([
+  'Satoshi Nakamoto', 'Satoshi', 'satoshi',
+  'Hal Finney', 'Hal',
+  'Adam Back',
+  'Wei Dai',
+  'Nick Szabo',
+  'Mike Hearn',
+  'Martti Malmi', 'sirius-m', 'Sirius', 'mmalmi@cc.hut.fi',
+  'Laszlo Hanyecz',
+  'Ray Dillinger', 'Ray Dillinger (Bear)',
+  'Jeff Garzik', 'jgarzik', 'gavinandresen',
+  'Gavin Andresen',
+  'Dustin Trammell', 'Dustin D. Trammell',
+  'Peter Todd',
+  'Craig Wright',
+  'James A. Donald', 'James Donald',
+  'Liberty Standard', 'NewLibertyStandard',
+  'Eugen Leitl',
+]);
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -178,6 +201,22 @@ function checkFile(filePath, locale) {
       }
       seen.add(current.parent);
       current = quotes.find(qq => qq.id === current.parent);
+    }
+  }
+
+  // 4b. personSlug missing for real person names
+  // If quote.person matches a known real name but personSlug is missing,
+  // JA pages will display raw English instead of katakana.
+  for (const q of quotes) {
+    if (!q.person) continue;
+    if (q.personSlug) continue;
+    if (REAL_NAMES_REQUIRING_SLUG.has(q.person)) {
+      violations.push({
+        file: rel,
+        check: 'person-slug-missing',
+        level: 'warn',
+        msg: `Quote "${q.id}" has person "${q.person}" but no personSlug. JA will not show katakana.`,
+      });
     }
   }
 
