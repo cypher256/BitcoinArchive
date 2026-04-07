@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-06-25T02:17:41.000Z"
     sourceEntryId: "forum/bitcointalk/topic-199/2010-06-25-re-0-3-almost-ready"
 ---
 
+<!-- quote: q1 -->
 > The 64-bit version shouldn't be any faster than the 32-bit version, but it would be great if someone could do a side-by-side comparison of the two linux versions and check.  SHA-256 is a 32-bit algorithm and nothing in BitcoinMiner uses 64-bit at all.
 
 But look here:

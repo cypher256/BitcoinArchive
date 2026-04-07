@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "Karmicads"
+    personSlug: "karmicads"
     date: "2010-05-01T06:06:53.000Z"
     sourceEntryId: "forum/bitcointalk/topic-55/2010-05-01-karmicads-msg1038"
 ---
 
+<!-- quote: q1 -->
 > Before this can happen there needs to be a consensus about what form the URI would take. [snip] ...the most suitable scheme, seems to be the magnet URI, which was designed to find a resource by the hash being a product of its content uniqueness, rather than by specific address.
 > [snip]The beauty of magnet is that it can be shared and is open in that sense.
 

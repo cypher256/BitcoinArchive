@@ -14,23 +14,28 @@ tags: []
 quotes:
   - id: "q1"
     person: "gridecon"
+    personSlug: "gridecon"
     date: "2010-08-16T03:15:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-gridecon-msg9659"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-16T02:57:57.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-re-tcatms-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
   - id: "q3"
     person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
     date: "2010-08-16T01:49:01.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-newlibertystandard-msg9630"
 ---
 
+<!-- quote: q1 -->
 > I have two quadcore Phenom II 64-bit linux machines (ubuntu 9.10 both) and the -4way option increases my hashing speed so much I'm suspicious. I get about 5-6khash/sec on these boxes previously and without -4way option. With -4way I get over 11khash/sec! In other words, the -4way switch almost DOUBLES the reported hashing speed. This level of improvement seems more than expected and makes me wonder if my boxes are really doing the hashing that much faster or if there could possible be an issue where the math operations are actually being skipped over for some reason, causing illusory speed and an inability to actually generate blocks?
 
 o_O... good luck hashing, you're gonna need it!
 
-> 
+<!-- quote: q2 -->
+> <!-- quote: q3 -->
 > > With 4way, I get significantly better performance when I have all my virtual cores enabled. I think I get about the same amount of hashes when hyper threading is turned off with or without 4way.
 > 
 > Hey, you may be onto something!

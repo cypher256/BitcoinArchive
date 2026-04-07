@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-05T19:44:46.000Z"
     sourceEntryId: "forum/bitcointalk/topic-34/2010-02-05-re-questions-about-addresses"
 ---
 
+<!-- quote: q1 -->
 > if you encrypt a file with AES and a strong password, and you lose the password.  The data is lost.
 
 "To have perfect freedom and yet to realize that responsibility is the price of freedom, is to be enlightened"

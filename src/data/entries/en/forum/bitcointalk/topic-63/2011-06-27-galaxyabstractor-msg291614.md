@@ -14,14 +14,18 @@ tags: []
 quotes:
   - id: "q1"
     person: "krepta3000"
+    personSlug: "krepta3000"
     date: "2011-06-26T14:47:21.000Z"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-23T22:15:41.000Z"
     sourceEntryId: "forum/bitcointalk/topic-63/2010-02-23-command-line-and-json-rpc"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
 > > Look at rpc.cpp for the list of commands.
 > 
 > 

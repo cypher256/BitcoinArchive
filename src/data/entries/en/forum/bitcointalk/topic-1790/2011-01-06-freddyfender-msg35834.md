@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-12-09T21:02:42.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1790/2010-12-09-re-bitdns-and-generalizing-bitcoin"
 ---
@@ -22,6 +23,7 @@ From what I can tell, the proposal located on domainchain: (see http://domaincha
 Many community members have stated that this is impractical and will leave bitcoin if attempts continue to include domainchain into bitcoin directly. 
 Satoshi asked that a new tree be created with a separate currency that floats its value according to demand with the bitcoin service.
 
+<!-- quote: q1 -->
 > I think it would be possible for BitDNS to be a completely separate network and separate block chain, yet share CPU power with Bitcoin.  The only overlap is to make it so miners can search for proof-of-work for both networks simultaneously.
 > 
 > The networks wouldn't need any coordination.  Miners would subscribe to both networks in parallel.  They would scan SHA such that if they get a hit, they potentially solve both at once.  A solution may be for just one of the networks if one network has a lower difficulty.

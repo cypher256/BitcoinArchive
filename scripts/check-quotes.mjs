@@ -78,13 +78,30 @@ function parseFrontmatterManual(content) {
   const body = match[2];
 
   // Extract quotes[] from YAML manually
+  // Find the quotes: line, then collect all subsequent lines that start with
+  // 2+ spaces (continuation) until a non-indented line or EOF.
   const quotes = [];
-  const quotesMatch = fmText.match(/^quotes:\n((?:  - [\s\S]*?)*)(?=\n\S|\n?$)/m);
-  if (quotesMatch) {
-    const quotesBlock = quotesMatch[1];
-    const entries = quotesBlock.split(/\n  - /).filter(Boolean);
+  const fmLines = fmText.split('\n');
+  let qStart = -1;
+  let qEnd = -1;
+  for (let i = 0; i < fmLines.length; i++) {
+    if (fmLines[i] === 'quotes:') {
+      qStart = i + 1;
+      qEnd = fmLines.length;
+      for (let j = i + 1; j < fmLines.length; j++) {
+        if (!/^\s/.test(fmLines[j])) {
+          qEnd = j;
+          break;
+        }
+      }
+      break;
+    }
+  }
+  if (qStart !== -1) {
+    const quotesBlock = fmLines.slice(qStart, qEnd).join('\n');
+    const entries = quotesBlock.split(/\n  - /).map(s => s.replace(/^  - /, '')).filter(Boolean);
     for (const entry of entries) {
-      const lines = entry.replace(/^- /, '').split('\n').map(l => l.replace(/^    /, ''));
+      const lines = entry.split('\n').map(l => l.replace(/^    /, ''));
       const quote = {};
       for (const line of lines) {
         const kv = line.match(/^(\w+):\s*"?([^"]*)"?\s*$/);

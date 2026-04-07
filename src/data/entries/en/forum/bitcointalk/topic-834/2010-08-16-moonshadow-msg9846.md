@@ -14,18 +14,24 @@ tags: []
 quotes:
   - id: "q1"
     person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
     date: "2010-08-16T23:25:57.000Z"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-16T23:01:48.000Z"
     sourceEntryId: "forum/bitcointalk/topic-834/2010-08-16-sni396-re-checkpointing-the-block-chain"
   - id: "q3"
     person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
     date: "2010-08-16T22:42:28.000Z"
     sourceEntryId: "forum/bitcointalk/topic-834/2010-08-16-newlibertystandard-msg9839"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
+> > <!-- quote: q3 -->
 > > > 
 > > > > How is the strength of the chain calculated?
 > > 

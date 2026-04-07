@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "kencausey"
+    personSlug: "kencausey"
     date: "2010-08-15T23:59:36.000Z"
 ---
 
+<!-- quote: q1 -->
 > 4b.  Currently the network has a combination of good and bad nodes (those running versions older than 0.3.10).  If you only connect to nodes running old versions, you will be stuck at 74638 blocks.  You can fix this by running the client with the options "-addnode=75.158.131.108 -addnode=99.27.237.13 -addnode=76.235.234.64 -addnode=74.137.15.169 -addnode=68.68.99.14"
 
 http://www.bitcoin.org/wiki/doku.php?do=show&id=74638_nodes

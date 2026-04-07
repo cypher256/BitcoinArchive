@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "Legion"
+    personSlug: "legion"
     date: "2010-02-26T06:44:40.000Z"
 ---
 
+<!-- quote: q1 -->
 > This overclocked i7 still hasn't generated any keys after 8 hours...
 
 It may take longer than 8 hours to generate a block.

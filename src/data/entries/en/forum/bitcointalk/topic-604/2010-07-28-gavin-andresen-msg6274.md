@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-07-28T21:23:23.000Z"
     sourceEntryId: "forum/bitcointalk/topic-604/2010-07-28-re-build-error-svn-r115-on-my-mac-workaround"
 ---
 
+<!-- quote: q1 -->
 > Was that the only thing I broke in the OSX build?!  Does it actually work after just that one change?
 
 I built a TEST-network bitcoind with the SVN r115 changes merged in, and yes, after that one change it's been happily generating coins all afternoon.

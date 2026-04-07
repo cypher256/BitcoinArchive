@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-07-23T20:39:03.000Z"
     sourceEntryId: "forum/bitcointalk/topic-461/2010-07-23-sni260-re-json-rpc-password"
 ---
 
+<!-- quote: q1 -->
 > BTW, I haven't tested it, but I hope having rpcpassword=  in the conf file is valid.  It's only if you use -server or -daemon or bitcoind that it should fail with a warning.  If it doesn't need the password, it should be fine.  Is that right?
 
 Yes, that's right, rpcpassword is only required if you use -server or -daemon or bitcoind (I just tested to be sure).

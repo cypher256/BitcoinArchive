@@ -27,6 +27,7 @@ quotes:
     personSlug: "gavin-andresen"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
     parent: "q1"
 translationStatus: complete
 ---
@@ -40,15 +41,15 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q1 -->
 >> <!-- quote: q2 -->
-<!-- speaker: Satoshi Nakamoto -->
+>> <!-- speaker: Satoshi Nakamoto -->
 >>> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明している：
 >>> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 >>>
 >>> この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきだろうか？
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >>
 >> それは問題を招くことになりそうですし、フォーラムに登録した全員の暗黙の信頼を裏切ることになると思います。
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 >
 > 同意だ。データベースは手元から出さないでほしい。プライベートメッセージ、メールアドレス、パスワードが入っている。
 >
@@ -59,11 +60,11 @@ translationStatus: complete
 >
 >
 >>> もう一つの選択肢は
-<!-- speaker: Martti Malmi -->
+>>> <!-- speaker: Martti Malmi -->
 >>>> バックアップをPGPで暗号化して複数の場所に保管することです。
 >>
 >> その方が賢明だと思います。毎日のバックアップをどこかにコピーするのが正しいやり方でしょう。合理的なサイズ（1ギガバイト未満）であれば、Amazon S3のストレージと帯域幅の費用を喜んで負担します。
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 >
 > +1
 >

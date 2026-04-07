@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2009-11-22T18:32:00.000Z"
     sourceEntryId: "forum/bitcointalk/topic-7/2009-11-22-repost-request-make-this-anonymous"
 ---
 
+<!-- quote: q1 -->
 > --------------------
 > anonguy54:
 > Request: Make this anonymous?

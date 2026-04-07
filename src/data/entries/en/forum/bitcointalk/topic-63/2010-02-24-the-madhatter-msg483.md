@@ -14,14 +14,17 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-24T06:17:23.000Z"
     sourceEntryId: "forum/bitcointalk/topic-63/2010-02-24-re-command-line-and-json-rpc"
   - id: "q2"
     person: "theymos"
+    personSlug: "theymos"
     date: "2010-02-24T03:07:37.000Z"
     sourceEntryId: "forum/bitcointalk/topic-63/2010-02-24-theymos-msg467"
   - id: "q3"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-23T22:15:41.000Z"
     sourceEntryId: "forum/bitcointalk/topic-63/2010-02-23-command-line-and-json-rpc"
 ---
@@ -30,7 +33,10 @@ quotes:
 
 A million ifdefs are not the answer either. Hmm.. more thought to this may be required.
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
+> > <!-- quote: q3 -->
 > > > 
 > > > > On Linux it needs libgtk2.0-0 installed
 > > 

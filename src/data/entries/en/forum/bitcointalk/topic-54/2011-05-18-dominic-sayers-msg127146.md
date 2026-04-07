@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-16T01:34:56.000Z"
     sourceEntryId: "forum/bitcointalk/topic-54/2010-02-16-re-setting-up-multiple-bitcoin-machines-behind-nat"
 ---
 
+<!-- quote: q1 -->
 > You can only set up your NAT to port-forward to one of the computers.
 > 
 > 

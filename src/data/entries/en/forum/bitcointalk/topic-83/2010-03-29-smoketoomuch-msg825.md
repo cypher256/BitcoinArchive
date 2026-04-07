@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "BitcoinFX"
+    personSlug: "bitcoinfx"
     date: "2010-03-25T18:20:45.000Z"
 ---
 
+<!-- quote: q1 -->
 > I use DynDNS.com updater, so that my IP is protected
 
 usually these services just forward your DynDNS name to your real ip.

@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "FreeMoney"
+    personSlug: "freemoney"
     date: "2010-08-03T22:28:27.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-freemoney-msg7351"
   - id: "q2"
@@ -22,7 +23,9 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-moonshadow-msg7314"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
 > > So if one block takes twice as long as average, followed by a series of blocks that take 75% longer than average, then you can be fairly certain that you are no longer on the majority network.
 > 
 > 

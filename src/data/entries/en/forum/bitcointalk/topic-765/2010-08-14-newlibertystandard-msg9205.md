@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "SEN-5241"
+    personSlug: "sen-5241"
     date: "2010-08-14T14:24:52.000Z"
 ---
 
+<!-- quote: q1 -->
 > I think the client should have a "test coin generation" feature.  It would essentially just generate some known block just to show everything is working properly.
 
 I agree. I have a second computer with which I can test difficulty 1 block generation, but I never actually do it. If there was a button to do it, I would.

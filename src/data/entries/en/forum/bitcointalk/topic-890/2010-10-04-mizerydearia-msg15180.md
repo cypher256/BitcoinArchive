@@ -14,11 +14,13 @@ tags: []
 quotes:
   - id: "q1"
     person: "BioMike"
+    personSlug: "biomike"
     date: "2010-10-04T05:23:40.000Z"
 ---
 
 I'll offer 5btc contribution for this project.  I know it's not much (yet!), but perhaps it will spark others to donate also.  Which address can I send to?
 
+<!-- quote: q1 -->
 > http://tahoe-lafs.org/trac/tahoe-lafs  Funny, I've send 10 btc also to them yesterday.
 
 Thanks! for pointing out obvious ^_^

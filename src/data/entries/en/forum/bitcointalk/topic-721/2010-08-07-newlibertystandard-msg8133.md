@@ -14,17 +14,21 @@ tags: []
 quotes:
   - id: "q1"
     person: "Red"
+    personSlug: "red"
     date: "2010-08-07T18:48:01.000Z"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-07T17:46:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse"
 ---
 
+<!-- quote: q1 -->
 > I say this half flippantly and half seriously. :-)
 > 
 > 
 > 
+> <!-- quote: q2 -->
 > > If there's something else each person has a finite amount of that we could count for one-person-one-vote, I can't think of it.  IP addresses... much easier to get lots of them than CPUs.
 > 
 > 

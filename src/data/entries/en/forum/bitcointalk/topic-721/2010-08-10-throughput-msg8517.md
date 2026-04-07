@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "jgarzik"
+    personSlug: "jgarzik"
     date: "2010-08-06T19:53:25.000Z"
     sourceEntryId: "forum/bitcointalk/topic-721/2010-08-06-jgarzik-msg7950"
 ---
@@ -24,6 +25,7 @@ invest even more resources in their business in case when BTCs generated will de
 What if Bitcoin operation will outperform the other activities?
 How can you imagine, that botnet building process is done in a way, that benefit the community?
 
+<!-- quote: q1 -->
 > Participation in the network as an honest node helps everyone.
 
 Yes, but only when it is not against the computer owner's will, he pays the electricity bill.

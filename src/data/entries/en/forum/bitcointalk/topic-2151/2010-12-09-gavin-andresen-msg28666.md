@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-12-09T18:08:08.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-09-sni530-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
 ---
 
+<!-- quote: q1 -->
 > Gavin, could listtransactions have an option to list transactions for all accounts?
 > 
 > I'm not sure what the interface could be, maybe:

@@ -27,6 +27,7 @@ quotes:
     personSlug: "gavin-andresen"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
     parent: "q1"
 ---
 

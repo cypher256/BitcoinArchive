@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-07-20T18:38:28.000Z"
     sourceEntryId: "forum/bitcointalk/topic-342/2010-07-20-re-they-want-to-delete-the-wikipedia-article"
 ---
 
+<!-- quote: q1 -->
 > Bitcoin is an implementation of Wei Dai's b-money proposal http://weidai.com/bmoney.txt on Cypherpunks http://en.wikipedia.org/wiki/Cypherpunks in 1998 and Nick Szabo's Bitgold proposal http://unenumerated.blogspot.com/2005/12/bit-gold.html
 > 
 > The timing is strange, just as we are getting a rapid increase in 3rd party coverage after getting slashdotted.  I hope there's not a big hurry to wrap the discussion and decide.  How long does Wikipedia typically leave a question like that open for comment?

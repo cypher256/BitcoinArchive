@@ -17,11 +17,14 @@ quotes:
     date: "2010-12-09T15:27:10.000Z"
   - id: "q2"
     person: "ShadowOfHarbringer"
+    personSlug: "shadowofharbringer"
     date: "2010-12-09T13:51:20.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2162/2010-12-09-shadowofharbringer-msg28519"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
 > > Just wait until somebody encodes kiddie porn into the chain - it would stay there forever.
 > 
 > It is impossible to completely prevent that kind of abuse unfortunately. 

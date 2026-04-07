@@ -14,15 +14,19 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-16T01:00:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-re-overflow-bug-serious"
   - id: "q2"
     person: "Ground Loop"
+    personSlug: "ground-loop"
     date: "2010-08-16T00:29:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
 > > Question about fallout:  I had a transaction that I submitted after the bad block, using the bad block chain.
 > > 
 > > What is the status of that transaction?

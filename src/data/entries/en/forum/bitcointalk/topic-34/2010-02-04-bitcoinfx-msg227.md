@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-04T00:07:07.000Z"
     sourceEntryId: "forum/bitcointalk/topic-34/2010-02-04-re-questions-about-addresses"
 ---
 
+<!-- quote: q1 -->
 > Someone should post their static IP so people can try out sending by IP and also give that user free money.
 
 Thanks for clarifying that satoshi.

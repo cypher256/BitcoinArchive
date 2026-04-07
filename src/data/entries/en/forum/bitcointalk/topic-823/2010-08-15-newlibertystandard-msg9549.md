@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "kencausey"
+    personSlug: "kencausey"
     date: "2010-08-15T21:36:30.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9545"
 ---
 
+<!-- quote: q1 -->
 > How about explaining to us stupid newbies what we would do with the blockchain once we download it?
 
 While Bitcoin is not running, you put it in your Bitcoin data directory. ~/.bitcoin on Linux. If you want to re-download the whole chain, you just delete the file from the data directory while Bitcoin is not running.

@@ -14,11 +14,13 @@ tags: []
 quotes:
   - id: "q1"
     person: "ArtForz"
+    personSlug: "artforz"
     date: "2010-08-04T14:21:22.000Z"
 ---
 
 Thanks ArtForz! ^_^
 
+<!-- quote: q1 -->
 > Code:import struct
 > 
 > def SetCompact(nCompact):

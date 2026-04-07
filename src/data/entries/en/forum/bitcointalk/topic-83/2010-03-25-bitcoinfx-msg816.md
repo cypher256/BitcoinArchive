@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-03-24T18:02:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-83/2010-03-24-re-idea-for-file-hosting-and-proxy-services"
 ---
 
+<!-- quote: q1 -->
 > ...
 > 
 > What do you think?  If I made a Bitcoin payment integration for this, would anyone be interested in running it?  It might be the first fully automated service available to buy with Bitcoins.  The advantage it could offer over the free services is general file upload hosting of large files without making downloading users go to the upload site and jump through hoops.  It would give a normal link directly to the file.

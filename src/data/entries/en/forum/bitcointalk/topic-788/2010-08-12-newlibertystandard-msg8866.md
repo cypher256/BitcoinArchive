@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "throughput"
+    personSlug: "throughput"
     date: "2010-08-12T09:04:25.000Z"
 ---
 
+<!-- quote: q1 -->
 > For example, I propose, that costs of operation of Bitcoin node is by design not affordable to a mediocre Joe with a PC.
 
 Generating bitcoins will always be affordable to the average Joe in the same way that SETI@home is always affordable to the average Joe. It may not always be profitable, but it will always be affordable. Right now it actually is profitable. 50 can easily go for $3.50, or more if you're patient. That is more than it costs the average Joe in electricity on his average computer which he already leaves on all the time and in excess Internet bandwidth which he never fully utilizes.

@@ -14,15 +14,19 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-12-05T09:08:08.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
   - id: "q2"
     person: "RHorning"
+    personSlug: "rhorning"
     date: "2010-12-04T22:17:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-04-rhorning-msg26876"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
 > > Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
 > 
 > No, don't "bring it on".

@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-14T06:28:03.000Z"
     sourceEntryId: "forum/bitcointalk/topic-48/2010-02-14-re-whats-with-this-odd-generation"
 ---
@@ -26,6 +27,7 @@ Edit: Here's the explanation I mentioned. It seems that if more than 500 bundles
 
 Since the sender pays the fee, I'd like to know what happens when a person sends all their bitcoins. I would expect that if there weren't enough bitcoins to cover the fee, then the amount of the fee which can not be paid would be subtracted from the payment. If this is not the case, then the fee could be avoided by sending all your coins to yourself before sending a large payment.
 
+<!-- quote: q1 -->
 > A transaction over the size limit can still be sent if a small fee is added.
 
 This makes it sound like a payment wouldn't send successfully if there were insufficient funds for the fee.

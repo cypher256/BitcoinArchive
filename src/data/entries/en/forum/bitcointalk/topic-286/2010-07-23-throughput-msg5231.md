@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-07-14T21:10:52.000Z"
     sourceEntryId: "forum/bitcointalk/topic-286/2010-07-14-re-scalability"
 ---
 
+<!-- quote: q1 -->
 > I anticipate there will never be more than 100K nodes, probably less.  It will reach an equilibrium where it's not worth it for more nodes to join in.  The rest will be lightweight clients, which could be millions.
 > 
 > At equilibrium size, many nodes will be server farms with one or two network nodes that feed the rest of the farm over a LAN.

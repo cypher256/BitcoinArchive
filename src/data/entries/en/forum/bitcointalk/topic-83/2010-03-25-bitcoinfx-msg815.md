@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-03-24T18:01:57.000Z"
 ---
 
+<!-- quote: q1 -->
 > Title changed.
 > 
 > It helps that we have someone with actual experience running a proxy service.  Do you think Psiphon is the best one currently?  (sometimes the one you run was the best when you started but you found better ones later)

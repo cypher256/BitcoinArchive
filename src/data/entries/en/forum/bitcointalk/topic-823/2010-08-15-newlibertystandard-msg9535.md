@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "gavinandresen"
+    personSlug: "gavin-andresen"
     date: "2010-08-15T21:10:33.000Z"
 ---
 
+<!-- quote: q1 -->
 > Looks good to me.
 > 
 > Can you easily hardcode a check for the bad block's hash at startup and orphan it and subsequent blocks if they're on the best-block chain?

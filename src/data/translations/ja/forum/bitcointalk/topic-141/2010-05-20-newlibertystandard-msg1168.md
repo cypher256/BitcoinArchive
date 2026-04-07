@@ -1,0 +1,36 @@
+---
+title: "Re: Odd amount of generated coins"
+date: 2010-05-20T21:03:55.000Z
+type: "forum-post"
+source: "bitcointalk"
+sourceUrl: "https://bitcointalk.org/index.php?topic=141.msg1168#msg1168"
+author: "NewLibertyStandard"
+participants:
+  - name: "NewLibertyStandard"
+    slug: "newlibertystandard"
+description: "BitcoinTalkトピック141におけるNewLibertyStandardの文脈投稿。サトシを引用."
+isSatoshi: false
+tags: []
+quotes:
+  - id: "q1"
+    person: "satoshi"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-14T06:28:03.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-48/2010-02-14-re-whats-with-this-odd-generation"
+translationStatus: complete
+---
+
+内部的には、ビットコインは50.00のパック、あるいはネットワーク経由で送られる任意の量にバンドルされている。ビットコインは送られるたびに通常、再バンドルが必要だ。ある非常に大きな数のビットコインバンドルを再バンドルする必要がある場合、送信者が支払う非常に小さな手数料がある。手数料は大規模な再バンドルを検証するbitcoinクライアント（この場合はあなたのもの）に行く。これはあまり知られていない挙動で、将来のバージョンでこのような手数料が課される前に警告や確認を表示することを願っている。
+
+どこかにもっと具体的な詳細を含む投稿がある。数分探してみて、見つかったらこの投稿を編集する。いつものように、オープンソースのソースコードが正確な挙動を明らかにする。コードは調べていないし、自分の説明は乏しい記憶に基づくので、正確ではないかもしれない。
+
+編集：以下が言及した説明だ。500個以上のビットコインバンドルが再バンドルされると、おおむね0.002%の手数料が発生するようだ。だからその10分間で、1人以上の人がそれぞれ500個のビットコインバンドルを再バンドルし、合計でおよそ132,000ビットコインになる。
+
+送信者が手数料を支払うので、人がすべてのビットコインを送る場合に何が起こるか知りたい。手数料をカバーするのに十分なビットコインがない場合、支払えない手数料の分が支払額から差し引かれると予想する。そうでなければ、大きな支払いを送る前に自分自身に全てのコインを送ることで手数料を回避できることになる。
+
+<!-- quote: q1 -->
+<!-- tone-skip -->
+> サイズ上限を超えるトランザクションでも、小額の手数料が追加されれば送信できる。
+<!-- /tone-skip -->
+
+これは、手数料のための資金が不十分なら支払いが正常に送信されない、というように聞こえる。

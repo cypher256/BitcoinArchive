@@ -19,6 +19,7 @@ quotes:
 
 Will the bug fix include the 4-way SSE2 patch of 0.3.9 rc2? Thanks for letting me know that it is included, theymos. Please release another release candidate when you have a moment if it is not included.
 
+<!-- quote: q1 -->
 > What about the transactions from 74000 to the invalid block. Are those all invalid now as well?
 
 Only the blocks including and after the invalid block are invalid. All previous blocks are valid.

@@ -14,21 +14,26 @@ tags: []
 quotes:
   - id: "q1"
     person: "mtgox"
+    personSlug: "mtgox"
     date: "2010-07-18T22:13:57.000Z"
   - id: "q2"
     person: "knightmb"
+    personSlug: "knightmb"
     date: "2010-07-18T22:34:46.000Z"
   - id: "q3"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-07-18T21:56:18.000Z"
     sourceEntryId: "forum/bitcointalk/topic-431/2010-07-18-re-nenolod-the-guy-that-wants-to-prove-bitcoin-doesnt-work"
 ---
 
+<!-- quote: q1 -->
 > Who gets the transaction fee? The person that solves the block your transaction is in?
 
 Yes
 
-> 
+<!-- quote: q2 -->
+> <!-- quote: q3 -->
 > > Typically, over 25,000 BTC.
 > 
 > Does the fee come out of thin air or is it taken to from the transaction so that it cost 25,009 to send 25,000 BTC?

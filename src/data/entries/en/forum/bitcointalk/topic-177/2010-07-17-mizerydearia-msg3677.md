@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "jago25_98"
+    personSlug: "jago25_98"
     date: "2010-06-26T19:56:59.000Z"
     sourceEntryId: "forum/bitcointalk/topic-177/2010-06-26-jago25-98-msg1809"
 ---
 
+<!-- quote: q1 -->
 > I think this idea deserves more recognition. 
 > 
 > A phone is much more accessible and widely available than a computer. There are many, many people for whom they only got a phone. 

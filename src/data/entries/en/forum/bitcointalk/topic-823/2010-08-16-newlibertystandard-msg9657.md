@@ -14,14 +14,18 @@ tags: []
 quotes:
   - id: "q1"
     person: "bdonlan"
+    personSlug: "bdonlan"
     date: "2010-08-16T02:39:55.000Z"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-16T02:16:10.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642"
 ---
 
+<!-- quote: q1 -->
 > 
+> <!-- quote: q2 -->
 > > The bad chain is also slowed down as more nodes upgrade.
 > > 
 > > We've already generated 14 blocks since 74638.  The builds of 0.3.10 were uploaded about 2 and 3 hours ago.  Of the nodes I'm connected to, more than half are already 0.3.10.  I would say we probably already have more power than the bad chain.

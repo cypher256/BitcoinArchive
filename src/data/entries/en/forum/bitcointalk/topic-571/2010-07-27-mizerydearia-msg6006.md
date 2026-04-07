@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "Bitcoiner"
+    personSlug: "bitcoiner"
     date: "2010-07-27T02:01:16.000Z"
 ---
 
+<!-- quote: q1 -->
 > I'm glad that there's guys like Red out there keeping a sharp eye out on things! This thread also makes me appreciative of open source software, since there's so many smart and interested people on this forums that can validate the software and place an additional degree of trust in it. Not sure that Bitcoin could be too successful if it was closed source!
 
 Actually, quite the opposite.  What you read may seem like intelligent conversation that makes sense and makes you feel more trustworthy, confident and excited about Bitcoin, but, like http://www.youtube.com/watch?v=lBp5ag6SJH4 it's just fabricated wording to sound good.</sarcasm>

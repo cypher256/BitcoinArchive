@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-11T23:28:50.000Z"
     sourceEntryId: "forum/bitcointalk/topic-287/2010-08-11-re-flood-attack-0-00000001-bc"
 ---
 
+<!-- quote: q1 -->
 > It would be nice to keep the blk*.dat files small as long as we can.
 > 
 > The eventual solution will be to not care how big it gets.

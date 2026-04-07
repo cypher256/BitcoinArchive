@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "jgarzik"
+    personSlug: "jgarzik"
     date: "2010-08-03T18:58:58.000Z"
     sourceEntryId: "forum/bitcointalk/topic-689/2010-08-03-jgarzik-msg7300"
 ---
 
+<!-- quote: q1 -->
 > The two JSON RPC libs available at CPAN (Perl), and a compliant C lib that I wrote locally to verify the behavior.
 
 Perl's LWP module definitely sets the Content-Length header.  I would've been surprised if it didn't, since it is required by HTTP 1.0 and the HTTP 1.1 spec says clients 'SHOULD' set it.

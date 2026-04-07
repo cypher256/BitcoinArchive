@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "ihrhase"
+    personSlug: "ihrhase"
     date: "2010-03-03T03:15:31.000Z"
     sourceEntryId: "forum/bitcointalk/topic-69/2010-03-03-ihrhase-msg611"
 ---
 
 The law *you can read*? Are you talking about legalese or English?
 
+<!-- quote: q1 -->
 > The Law you can read, and the one the government chooses to apply to you...

@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "knightmb"
+    personSlug: "knightmb"
     date: "2010-08-12T07:47:01.000Z"
 ---
 
+<!-- quote: q1 -->
 > Nope, no, and not yet. I've tried that myself, the clients just ignore it all.
 
 Is there no chance to try any better? We only need to slow down chain growth. The individual khps may stay the same.

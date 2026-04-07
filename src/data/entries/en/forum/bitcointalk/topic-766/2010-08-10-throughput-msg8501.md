@@ -14,19 +14,23 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-09T20:58:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-766/2010-08-09-connection-limits"
   - id: "q2"
     person: "knightmb"
+    personSlug: "knightmb"
     date: "2010-08-09T23:58:05.000Z"
 ---
 
+<!-- quote: q1 -->
 > I haven't really tested -maxconnections much, could someone test it?
 
 Is it maximum of outgoing connections or of total number of peer connections?
 
 Could it be useful to limit both separately, by different options?
 
+<!-- quote: q2 -->
 > transactions and block data;  not large files
 
 Did you mean "transactions and block data are not yet large files" ?

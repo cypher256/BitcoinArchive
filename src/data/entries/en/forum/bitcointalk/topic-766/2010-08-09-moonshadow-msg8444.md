@@ -17,6 +17,7 @@ quotes:
     date: "2010-08-09T21:32:31.000Z"
 ---
 
+<!-- quote: q1 -->
 > Wouldn't it make sense to enable connections to multiple a.b.?.? peers that are in the same subnet? That could add some speed.
 
 Speed is a secondary goal.

@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-10-03T21:43:20.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-sni480-re-version-0-3-13-please-upgrade"
 ---
 
+<!-- quote: q1 -->
 > ShadowOfHarbringer, is yours faster with -4way?
 
 Indeed, it is almost 2 x as fast with -4way as it is without.

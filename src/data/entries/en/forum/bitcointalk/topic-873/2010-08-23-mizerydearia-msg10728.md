@@ -14,21 +14,25 @@ tags: []
 quotes:
   - id: "q1"
     person: "nelisky"
+    personSlug: "nelisky"
     date: "2010-08-23T00:38:10.000Z"
     sourceEntryId: "forum/bitcointalk/topic-873/2010-08-23-nelisky-msg10725"
   - id: "q2"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-19T20:14:01.000Z"
     sourceEntryId: "forum/bitcointalk/topic-873/2010-08-19-need-a-post-writing-up-some-things-users-should-know"
   - id: "q3"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-19T20:14:01.000Z"
     sourceEntryId: "forum/bitcointalk/topic-873/2010-08-19-need-a-post-writing-up-some-things-users-should-know"
 ---
 
 **see http://bitcointalk.org/index.php?topic=921.0 for continued discussion about backups**
 
-> 
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 > > - Warning not to mess around with your wallet.dat file.  It's a database file, it's not as simple as you think.  In this Beta version, we haven't had time to try and tinker-proof it yet.  It may not work as expected if you start swapping it around.
 > 
 > 
@@ -40,6 +44,7 @@ This comment seems worthy of having this thread appear threaded so that discussi
 
 Actually, it's not so offtopic.
 
+<!-- quote: q3 -->
 > - Warning not to mess around with your wallet.dat file.  It's a database file, it's not as simple as you think.  In this Beta version, we haven't had time to try and tinker-proof it yet.  It may not work as expected if you start swapping it around.
 
 Instead of introducing a warning or establishing a precedence of caution and delay in handling wallet file or backups, as I suggested above, the implementation for backing up data/wallet file needs more thought/establishment.

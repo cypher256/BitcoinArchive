@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-08-13T23:39:14.000Z"
     sourceEntryId: "forum/bitcointalk/topic-807/2010-08-13-re-proposed-change-to-sendtoaddress-api-call"
 ---
 
+<!-- quote: q1 -->
 > It's too soon to start junking up the API for backward compatibility at all costs.
 > Just return "".
 

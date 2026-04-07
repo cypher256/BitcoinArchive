@@ -14,10 +14,12 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-10-23T19:02:57.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1545/2010-10-23-re-suggestion-allow-short-messages-to-be-sent-together-with-"
 ---
 
+<!-- quote: q1 -->
 > ECDSA can't encrypt messages, only sign signatures.
 > 
 > It would be unwise to have permanently recorded plaintext messages for everyone to see.  It would be an accident waiting to happen.

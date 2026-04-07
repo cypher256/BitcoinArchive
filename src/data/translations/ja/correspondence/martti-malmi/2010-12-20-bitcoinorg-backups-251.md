@@ -27,6 +27,7 @@ quotes:
     personSlug: "gavin-andresen"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
+    personSlug: "martti-malmi"
     parent: "q1"
 translationStatus: complete
 ---
@@ -35,13 +36,13 @@ translationStatus: complete
 <!-- tone-skip -->
 <!-- speaker: Gavin Andresen -->
 > <!-- quote: q2 -->
-<!-- speaker: Martti Malmi -->
+> <!-- speaker: Martti Malmi -->
 >> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：
 >> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 >>
 >> この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきでしょうか？
 >
-<!-- speaker: Gavin Andresen -->
+> <!-- speaker: Gavin Andresen -->
 > それは問題を招くことになりそうだし、フォーラムに登録した全員の暗黙の信頼を裏切ることになると思う。
 
 <!-- /tone-skip -->

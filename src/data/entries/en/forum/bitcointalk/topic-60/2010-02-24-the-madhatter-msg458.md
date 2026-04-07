@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "satoshi"
+    personSlug: "satoshi-nakamoto"
     date: "2010-02-23T01:16:28.000Z"
     sourceEntryId: "forum/bitcointalk/topic-60/2010-02-23-re-ui-improvements"
 ---
@@ -22,6 +23,7 @@ I have 0.2 running on FreeBSD windowed or non-windowed. I am also really close t
 
 Peace! Smiley
 
+<!-- quote: q1 -->
 > madhatter was working on building it on Mac.  He had errors probably caused by UTF-16 wxWidgets 2.8.  Should have better luck now with 2.9.0.  wxWidgets 2.9.0 is UTF-8 and wouldn't have that problem.
 > 
 > I think he had it working on FreeBSD, but he wanted a non-UI version.

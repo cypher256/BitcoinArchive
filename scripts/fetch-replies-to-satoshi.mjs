@@ -367,6 +367,7 @@ function extractStructuredQuotes(html) {
   const processed = processQuotes(html);
 
   // Convert remaining HTML to markdown
+  // BUG FIX: protect <!-- quote: qN --> markers before stripping HTML tags
   const bodyMarkdown = processed
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/p>/gi, '\n\n')
@@ -381,7 +382,8 @@ function extractStructuredQuotes(html) {
     .replace(/<i[^>]*>(.*?)<\/i>/gi, '*$1*')
     .replace(/<li[^>]*>/gi, '- ')
     .replace(/<\/li>/gi, '\n')
-    .replace(/<[^>]+>/g, '')
+    // Strip remaining HTML tags but PRESERVE <!-- ... --> comments
+    .replace(/<(?!!--)([^>]+)>/g, '')
     .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&#\d+;/g, '')
     .replace(/&nbsp;/g, ' ')

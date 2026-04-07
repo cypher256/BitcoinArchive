@@ -14,9 +14,11 @@ tags: []
 quotes:
   - id: "q1"
     person: "bytemaster"
+    personSlug: "bytemaster"
     date: "2010-08-05T18:12:02.000Z"
 ---
 
+<!-- quote: q1 -->
 > So I send a transaction of .001 BTC from me to Fred and .000001 BTC from me to A.   I send a different one to B and C.   
 > 
 > Now A, B, and C cannot make a profit by sending that transaction for anyone else to crunch on so if they want to collect they have to process it.
