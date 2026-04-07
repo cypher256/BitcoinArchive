@@ -44,6 +44,16 @@ const DEFAULT_MAX_FILES = 200;
 // historically relevant context for Satoshi's communications.
 const MAX_DATE = new Date('2012-01-01T00:00:00Z');
 
+// Maximum pages to fetch per thread.
+// Some threads grow into hundreds or thousands of pages over the years
+// (e.g. topic-1976 has 1,154 pages as of 2026). Without a limit, fetching
+// all pages takes hours and most pages are post-MAX_DATE garbage anyway.
+//
+// 50 pages = 1,000 posts, which covers Satoshi's active period (2010-2011)
+// for any thread he participated in. We also early-terminate when we hit
+// posts past MAX_DATE (BitcoinTalk threads are time-ordered).
+const MAX_PAGES_PER_THREAD = 50;
+
 // Whitelist for safeWrite — only files matching this pattern can be created
 const ALLOWED_WRITE_PATTERN = /^src\/data\/entries\/en\/forum\/bitcointalk\/topic-\d+\/\d{4}-\d{2}-\d{2}-[a-z0-9_.-]+-msg\d+\.md$/;
 
@@ -233,10 +243,15 @@ async function fetchAllPagesOfTopic(topicNum) {
   await sleep(DELAY_MS);
 
   const totalPages = extractPageCount(firstHtml);
-  console.log(`  Total pages: ${totalPages}`);
+  const pagesToFetch = Math.min(totalPages, MAX_PAGES_PER_THREAD);
+  if (totalPages > MAX_PAGES_PER_THREAD) {
+    console.log(`  Total pages: ${totalPages} (limiting to ${MAX_PAGES_PER_THREAD})`);
+  } else {
+    console.log(`  Total pages: ${totalPages}`);
+  }
 
-  // Remaining pages
-  for (let page = 1; page < totalPages; page++) {
+  // Remaining pages (with date-based early termination)
+  for (let page = 1; page < pagesToFetch; page++) {
     const offset = page * 20;
     const url = `https://bitcointalk.org/index.php?topic=${topicNum}.${offset}`;
     console.log(`  Fetching: ${url}`);
@@ -246,6 +261,16 @@ async function fetchAllPagesOfTopic(topicNum) {
       allPosts.set(post.msgId, post);
     }
     await sleep(DELAY_MS);
+
+    // Early termination: if all posts on this page are past MAX_DATE,
+    // subsequent pages will be too (BitcoinTalk threads are time-ordered).
+    const allPastMaxDate = posts.length > 0 && posts.every(p =>
+      p.dateISO && new Date(p.dateISO) >= MAX_DATE
+    );
+    if (allPastMaxDate) {
+      console.log(`  Stopped at page ${page}: all posts past MAX_DATE (${MAX_DATE.toISOString().slice(0,10)})`);
+      break;
+    }
   }
 
   return allPosts;

@@ -272,6 +272,37 @@ Past regressions in this codebase include:
 All of these would have been caught by the SHA-1 snapshot rule before
 they reached `main`.
 
+## BitcoinTalk Fetching: Thread Size Limits
+
+When fetching BitcoinTalk threads (e.g. `fetch-replies-to-satoshi.mjs`),
+limit the maximum pages per thread. Some threads grow into hundreds or
+thousands of pages over the years.
+
+### Known mega-threads (as of 2026)
+
+| Topic | Pages | Note |
+|-------|-------|------|
+| topic-1976 | 1,154+ | Long-running discussion thread |
+| topic-1334 | 56 | |
+| topic-287 | 73 | |
+
+### Required limits
+
+1. **`MAX_PAGES_PER_THREAD = 50`** — caps fetch at ~1,000 posts/thread.
+   This covers Satoshi's active period (2010-2011) for any thread he
+   participated in.
+
+2. **Date-based early termination** — if all posts on a fetched page are
+   past `MAX_DATE` (2012-01-01), stop fetching subsequent pages. BitcoinTalk
+   threads are time-ordered, so subsequent pages will also be past the date.
+
+### Why this matters
+
+Without these limits:
+- topic-1976 alone takes ~38 minutes (1,154 pages × 2 second delay)
+- Most pages are post-2012 garbage (filtered out anyway)
+- Single mega-thread can stall the entire fetch pipeline
+
 ## Re-scrape / Re-generation Guard
 
 When re-scraping or regenerating context posts (EN or JA):
