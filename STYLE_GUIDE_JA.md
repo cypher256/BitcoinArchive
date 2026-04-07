@@ -173,13 +173,25 @@ by scripts overwriting existing files that contained manual fixes. To make
 regression structurally impossible, all data-modifying scripts must follow
 these rules.
 
+### When scripts may modify data
+
+| Operation | Allowed? | Notes |
+|-----------|----------|-------|
+| Create new files only | ✅ Yes | Use `safeWrite()` (see below) |
+| Bulk frontmatter / metadata update on existing files | ⚠️ Conditional | Deterministic structural updates only (e.g. `personSlug` backfill); body must not change |
+| Bulk body / prose rewrite on existing files | ❌ No | See "Scripted Edits" rule below |
+| Edit a shipped script to fix a bug | ✅ Yes | As long as `existsSync()` still skips already-produced files |
+| Edit a shipped script to change its output format | ❌ No | Create a new script instead |
+
 ### Mandatory rules for any script that creates or modifies entry files
 
-1. **Never modify existing scripts that have shipped data.**
-   Once a fetch/migration script has produced files in `src/data/`, do not
-   edit that script to "improve" its output format. Create a new script
-   instead. Editing an existing script and re-running it is the #1 cause
-   of regressions in this codebase.
+1. **Bug fixes to existing scripts are fine. Format changes are not.**
+   You may fix bugs in a fetch/migration script that has already shipped
+   data, as long as `existsSync()` still skips already-produced files.
+   You must NOT change the output format (frontmatter shape, body
+   structure, etc.) of an existing script. Create a new script instead.
+   Format changes invite re-runs and re-runs cause regressions — that
+   is the #1 cause of past regressions in this codebase.
 
 2. **New scripts must use a `safeWrite()` helper with three guards:**
 
