@@ -166,6 +166,100 @@ quotes:
 詳細は `temp_0406_quote_normalization_plan.md` を参照。`npm run check:quotes`
 がこの構造を検証する。レガシー形式はビルドエラーになる。
 
+## Existing File Preservation Guarantee
+
+The most painful regressions in this project's history have all been caused
+by scripts overwriting existing files that contained manual fixes. To make
+regression structurally impossible, all data-modifying scripts must follow
+these rules.
+
+### Mandatory rules for any script that creates or modifies entry files
+
+1. **Never modify existing scripts that have shipped data.**
+   Once a fetch/migration script has produced files in `src/data/`, do not
+   edit that script to "improve" its output format. Create a new script
+   instead. Editing an existing script and re-running it is the #1 cause
+   of regressions in this codebase.
+
+2. **New scripts must use a `safeWrite()` helper with three guards:**
+
+   ```javascript
+   function safeWrite(filePath, content) {
+     // Guard 1: whitelist the write target by path pattern
+     const ALLOWED = /^src\/data\/entries\/en\/forum\/bitcointalk\/topic-\d+\/\d{4}-\d{2}-\d{2}-[a-z0-9_-]+-msg\d+\.md$/;
+     const rel = path.relative(process.cwd(), filePath);
+     if (!ALLOWED.test(rel)) {
+       throw new Error(`REFUSED: write target outside allowed pattern: ${rel}`);
+     }
+
+     // Guard 2: refuse to overwrite any existing file
+     if (existsSync(filePath)) {
+       throw new Error(`REFUSED: existing file would be overwritten: ${rel}`);
+     }
+
+     writeFileSync(filePath, content, 'utf8');
+   }
+   ```
+
+3. **`--apply` is opt-in. Default mode is dry-run.**
+   Scripts must default to dry-run (no writes). Writing only happens with
+   an explicit `--apply` flag.
+
+4. **Batch size limits.**
+   Scripts that create many files must enforce a `MAX_FILES_PER_RUN` limit
+   (typically 100–200) so that any unexpected behavior is caught before it
+   spreads across the whole dataset.
+
+### Mandatory verification: SHA-1 snapshot before/after
+
+Before running any data-modifying script:
+
+```bash
+# 1. Backup branch
+git checkout -b backup/before-<script-name>
+
+# 2. Confirm clean state
+git status                                # must be clean
+npm run check                             # must pass
+
+# 3. Snapshot existing files
+find src/data/entries/en/forum/bitcointalk -name "*.md" \
+  -exec sha1sum {} \; | sort > /tmp/before.sha1
+```
+
+After running the script:
+
+```bash
+# 4. Verify no existing file was modified
+bash scripts/verify-no-regression.sh /tmp/before.sha1
+# This script must report "✓ No existing files modified" and exit 0.
+# Any non-zero exit indicates a regression — git reset --hard immediately.
+
+# 5. Re-run all checks
+npm run check
+```
+
+If the verification fails:
+
+```bash
+git reset --hard backup/before-<script-name>
+```
+
+The backup branch is the safety net. Never delete it until the change has
+been verified in production.
+
+### Why this matters
+
+Past regressions in this codebase include:
+- `4c1fe988` re-scrape: overwrote 1,278 manually-translated JA files
+- Phase 2 quote migration: wrote broken `person: ">"` values from regex
+  bug; required manual fixes across 22 files
+- `personSlug` was forgotten in Phase 2 migration; 904 files needed
+  backfill
+
+All of these would have been caught by the SHA-1 snapshot rule before
+they reached `main`.
+
 ## Re-scrape / Re-generation Guard
 
 When re-scraping or regenerating context posts (EN or JA):
