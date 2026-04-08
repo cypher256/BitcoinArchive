@@ -13,6 +13,6 @@ isSatoshi: false
 tags: []
 ---
 
-Hi.  I'm considering endowing a cash prize for contribution to the development of a reliable open-source currency.  I'll look at your work soon when I have time.  
+Hi.  I'm considering endowing a cash prize for contribution to the development of a reliable open-source currency.  I'll look at your work soon when I have time.
 
 I'm interested in an algorithm for a weighted basket of all liquid tangibles (such as those listed on Comex).  Anonymity is a concern, but shared data about pricing of all transactions is vital, and prevention of fraud and counterfeiting is primary.

@@ -29,14 +29,14 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > <!-- quote: q3 -->
-> > > 
+> > >
 > > > > How is the strength of the chain calculated?
-> > 
+> >
 > > Total proof-of-work.
-> 
+>
 > So a very strong node could continuously reverse the last x blocks and only allow transactions which include a transaction fee over a certain amount, right?
 
 A strong enough of a node could do *anything*, the entire point of the proof-of-work is that as the bitcoin network grows, this kind of takeover becomes; if not really impossible, increasingly and astronomicly improbable.

@@ -21,13 +21,13 @@ quotes:
 
 <!-- quote: q1 -->
 > It would be nice to keep the blk*.dat files small as long as we can.
-> 
+>
 > The eventual solution will be to not care how big it gets.
-> 
+>
 > But for now, while it's still small, it's nice to keep it small so new users can get going faster.  When I eventually implement client-only mode, that won't matter much anymore.
-> 
+>
 > There's more work to do on transaction fees.  In the event of a flood, you would still be able to jump the queue and get your transactions into the next block by paying a 0.01 transaction fee.  However, I haven't had time yet to add that option to the UI.
-> 
+>
 > Scale or not, the test network will react in the same ways, but with much less wasted bandwidth and annoyance.
 
 OK, I get it. Not sure for the other jerks  Grin though.

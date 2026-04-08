@@ -25,13 +25,13 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > Couple of quick suggestions:
-> > 
+> >
 > > Using the key name "class" will cause problems for, at least, JavaScript, and probably other languages where "class" is a reserved word.  "type" or "variety" or some other synonym will cause fewer problems later.
-> 
-> 
+>
+>
 > Can you be more specific?  All mainstream programming language seem sensibly insensitive to abitrary string contents, JS included.  String content can certainly include language-reserved keywords and parsing tokens.
 
 It's pretty common to turn maps into objects, so you can use syntax like:

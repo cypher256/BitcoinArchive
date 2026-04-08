@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-MY LETTER TO THE AUTHOR OF THE ARTICLE:   ( <[keir@keirthomas.com](mailto:keir@keirthomas.com)>  author of   goo.gl/n0UQt ) 
+MY LETTER TO THE AUTHOR OF THE ARTICLE:   ( <[keir@keirthomas.com](mailto:keir@keirthomas.com)>  author of   goo.gl/n0UQt )
 
 I appreciate PC World finally doing an article about the most revolutionary and amazing new technology of the 21st Century so far --- Bitcoin.
 

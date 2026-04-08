@@ -24,10 +24,10 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > Nodes stop trying to initiate connections once they have 15.
-> 
+>
 > Are you sure about that? I get 30+ connections easily!
 > I have port 8333 open, but I can't exactly believe everynode of the network connects to me.
 > (I'm running version 0.2, downloaded from the website.)

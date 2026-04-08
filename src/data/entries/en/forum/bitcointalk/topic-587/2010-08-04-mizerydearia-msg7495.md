@@ -22,7 +22,7 @@ Thanks ArtForz! ^_^
 
 <!-- quote: q1 -->
 > Code:import struct
-> 
+>
 > def SetCompact(nCompact):
 > 	"""convert bc compact uint to number"""
 > 	nSize = (nCompact >> 24) & 0xFF

@@ -43,7 +43,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 > 前回 $(shell /usr/bin/wx-config) を試したとき、それに関するビルド問題ですぐに騒ぎになった。当時は調査する時間がなかった。
-> 
+>
 > $(shell /usr/bin/wx-config) の問題の一つは、たまたまそこにあるwxWidgetsの任意のバージョン（wx 2.8）と任意の構成（非UTF-8）を拾ってしまうことだ。-lwx_gtk2ud-2.9は正しい構成にしかマッチしない。wxWidgetsが間違った構成でビルドされていれば失敗する。
 
 参考までに、Gentooには特定のwxWidgetsバージョンに対して以下の回避策がある：

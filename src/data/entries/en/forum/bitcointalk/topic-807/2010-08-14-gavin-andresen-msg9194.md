@@ -23,7 +23,7 @@ quotes:
 > It's too soon to start junking up the API for backward compatibility at all costs.
 > Just return "".
 
-You'll never hear me argue with "keep it simple."  
+You'll never hear me argue with "keep it simple."
 
 Patch for that is trivial:
 Code:diff --git a/rpc.cpp b/rpc.cpp

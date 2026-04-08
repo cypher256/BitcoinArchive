@@ -19,9 +19,9 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> Sending 1 BTC back and forth a million times creates a single transaction chain, sending a million transactions of 0.000001 BTC makes a million nearly independant transactions which all must be remembered. Due to the way bitcoin can drop old deeply confirmed transactions the first is far less overhead than the second in the long run. There may be similar network cost but the disk space cost can be greatly reduced for the single chain. 
-> 
+> Sending 1 BTC back and forth a million times creates a single transaction chain, sending a million transactions of 0.000001 BTC makes a million nearly independant transactions which all must be remembered. Due to the way bitcoin can drop old deeply confirmed transactions the first is far less overhead than the second in the long run. There may be similar network cost but the disk space cost can be greatly reduced for the single chain.
+>
 > Only if the "dust" is combined back together and confirmed deeply enough again only then can the dust space be dropped.
 
-Improved attack would be : start with 1BTC then transfer 0.999999999BTC, then 0.999999998BTC, ... 
+Improved attack would be : start with 1BTC then transfer 0.999999999BTC, then 0.999999998BTC, ...
 It results 1 million accounts (minus 10000) with 0.000000001BTC each.

@@ -34,14 +34,14 @@ quotes:
 A million ifdefs are not the answer either. Hmm.. more thought to this may be required.
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > <!-- quote: q3 -->
-> > > 
+> > >
 > > > > On Linux it needs libgtk2.0-0 installed
-> > 
+> >
 > > Will this requirement be removed sometime? I'd rather not have to deal with GTK.
-> 
-> How much "dealing with" does GTK actually require?  Is it just a matter of "sudo apt-get install libgtk2.0-0" and having some extra libraries sitting around?  GTK doesn't have to do anything, just be there for bitcoin to link to when it loads up, have the gtk-init-check call fail because no GUI present, then it's done.  
-> 
+>
+> How much "dealing with" does GTK actually require?  Is it just a matter of "sudo apt-get install libgtk2.0-0" and having some extra libraries sitting around?  GTK doesn't have to do anything, just be there for bitcoin to link to when it loads up, have the gtk-init-check call fail because no GUI present, then it's done.
+>
 > It saves us butchering everything with ifdefs and a separate compile and binary to use wxBase just to try to avoid linking GTK.

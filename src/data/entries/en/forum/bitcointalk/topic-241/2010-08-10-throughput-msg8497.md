@@ -21,9 +21,9 @@ quotes:
 
 <!-- quote: q1 -->
 > It's hard to imagine the Internet getting segmented airtight.  It would have to be a country deliberately and totally cutting itself off from the rest of the world.
-> 
+>
 > Any node with access to both sides would automatically flow the block chain over, such as someone getting around the blockade with a dial-up modem or sat-phone.  It would only take one node to do it.  Anyone who wants to keep doing business would be motivated.
-> 
+>
 > If the network is segmented and then recombines, any transactions in the shorter fork that were not also in the longer fork are released into the transaction pool again and are eligible to get into future blocks.  Their number of confirmations would start over.
 
 It is easy to imagine some bug in implementation, that may be triggered by some invalid specially crafted network message,

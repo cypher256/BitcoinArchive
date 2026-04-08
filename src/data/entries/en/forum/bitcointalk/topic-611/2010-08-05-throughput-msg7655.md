@@ -21,7 +21,7 @@ quotes:
 
 <!-- quote: q1 -->
 > What are you needing to use listtransactions for?
-> 
+>
 > The reason I didn't implement listtransactions is I want to make sure web programmers don't use it.  It would be very easy to latch onto that for watching for received payments.  There is no reliable way to do it that way and make sure nothing can slip through the cracks.  Until we have solid example code using getreceivedbyaddress and getreceivedbylabel to point to and say "use this! use this! don't use listtransactions!", I don't think we should implement listtransactions.
 
 It seems, that you certainly prefer GUI in favor of CLI interfaces.

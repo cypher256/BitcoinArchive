@@ -23,11 +23,11 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > Just wait until somebody encodes kiddie porn into the chain - it would stay there forever.
-> 
-> It is impossible to completely prevent that kind of abuse unfortunately. 
+>
+> It is impossible to completely prevent that kind of abuse unfortunately.
 > For example, someone could encode information in the decimal figures of amount sent, or in a "vanity plate" Bitcoin address.
 
 Of course, but that is not my point.

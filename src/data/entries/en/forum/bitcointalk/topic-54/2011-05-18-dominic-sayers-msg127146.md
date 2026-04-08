@@ -21,9 +21,9 @@ quotes:
 
 <!-- quote: q1 -->
 > You can only set up your NAT to port-forward to one of the computers.
-> 
-> 
-> 
+>
+>
+>
 > For redundancy in case the first computer goes down, you could have two that connect out and the rest connect to both of them.  The first two are run normally, the rest are run like:
 > bitcoin -connect= -connect=
 

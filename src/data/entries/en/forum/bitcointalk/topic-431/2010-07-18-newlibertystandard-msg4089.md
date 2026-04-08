@@ -35,7 +35,7 @@ Yes
 <!-- quote: q2 -->
 > <!-- quote: q3 -->
 > > Typically, over 25,000 BTC.
-> 
+>
 > Does the fee come out of thin air or is it taken to from the transaction so that it cost 25,009 to send 25,000 BTC?
 
 The latter.

@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
-hmm...I wasn't able to apply the patch (I'm a noobie). Here's the command I ran from bitcoin-0.3.6/src # patch < XN1JDb53.txt 
+hmm...I wasn't able to apply the patch (I'm a noobie). Here's the command I ran from bitcoin-0.3.6/src # patch < XN1JDb53.txt
 
 Output:
 

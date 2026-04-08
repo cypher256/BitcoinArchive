@@ -20,7 +20,7 @@ quotes:
 
 <!-- quote: q1 -->
 > Looks good to me.
-> 
+>
 > Can you easily hardcode a check for the bad block's hash at startup and orphan it and subsequent blocks if they're on the best-block chain?
 > It's painful to have to re-download all or most of the chain to fix this...
 

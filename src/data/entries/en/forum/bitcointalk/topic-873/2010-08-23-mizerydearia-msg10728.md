@@ -34,10 +34,10 @@ quotes:
 <!-- quote: q1 -->
 > <!-- quote: q2 -->
 > > - Warning not to mess around with your wallet.dat file.  It's a database file, it's not as simple as you think.  In this Beta version, we haven't had time to try and tinker-proof it yet.  It may not work as expected if you start swapping it around.
-> 
-> 
+>
+>
 > So how simple is it? I'm just now thinking about foolproof backups on the lottery site I posted about yesterday, and I'm struggling to find information on this. Can bitcoind dump it in a safe state, or at least flush it on request? If I backup the file mid transaction, do I loose the whole thing or just the update in progress? When do I need to backup? Every outgoing transfer is obvious, there are key pairs created automagically, but what about transfers received? the key pair we already had, no new address needed to be created afaict. Or does bitcoin do the same change dance on the receive side too?
-> 
+>
 > This part is, I believe, the most critical of them all. While MSE and clock skews may prevent normal program usage, the wallet backup issues have made people loose a bunch of coins which, obviously, sucks and doesn't do much on supporting continued usage.
 
 This comment seems worthy of having this thread appear threaded so that discussion could expand exponentially.  In the case that this forum is not threaded, however, I will briefly state (without getting offtopic) that there should be some sort of established procedures or mechanisms to handle either regular interval or triggered backups without interrupting the Bitcoin process.  It seems that it is essential to "perfect" data reliability/availability as best as possible so as to provide more incentive for adoption.

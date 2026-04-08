@@ -20,7 +20,7 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> Front ends can also be ran on clients with very low cpu power such as mobile phones. 
+> Front ends can also be ran on clients with very low cpu power such as mobile phones.
 
 That's a good approach for mobile.  Programmatic API used by PHP (any language) to present a web UI covers remote admin, mobile and any other client that can't be online all the time with a static IP.  It would be like webmail.  It would be easier for new users to get started if they only need to create an account on a website, not install software.
 
@@ -32,7 +32,7 @@ There were some issues in 0.1.5 where the initial block download could get bogge
 
 The blocks increase linearly, it'll be decades before it's millions.  In theory, the block download time should top out 8 months from now when Moore's Law will be growing faster than the block chain.
 
-> Can you give me CVS access or something? (If not, can I send you patches?) I'd like to help out. 
+> Can you give me CVS access or something? (If not, can I send you patches?) I'd like to help out.
 It's SVN on sourceforge.  PM or e-mail me your sourceforge account and I'll give you access.
 
 > I am mostly a Linux/BSD guy and I would like to lend my expertise in those areas.

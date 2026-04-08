@@ -32,7 +32,7 @@ quotes:
 <!-- quote: q1 -->
 > <!-- quote: q2 -->
 > > How do you adjust this difficulty, anyway? (Administrating a decentralized system?) And what would prevent an attacker from setting the difficulty very low or very high to interfere with the system?
-> 
+>
 > My understanding is that every Bitcoin client has the same algorithm (formula) built into it to automatically adjust the difficulty every so many blocks.
 
 Then how is it dependent on how many CPU's are connected to the whole network?

@@ -25,17 +25,17 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > Question about fallout:  I had a transaction that I submitted after the bad block, using the bad block chain.
-> > 
+> >
 > > What is the status of that transaction?
 > > From what I can tell, my (updated) sending client wallet shows the deducted amount.
-> > 
+> >
 > > Will it get reincorporated into the fixed chain, and will the recipient be able to spend it?
-> 
+>
 > Right, it will get reincorporated into the fixed chain.  The transaction won't disappear, it'll still be visible on both sides, but the confirmation count will jump back to 0 and start counting up again.
-> 
+>
 > It's only if you generated a block in the bad chain after block 74638 that the 50 BTC from that will disappear.  Any blocks in the bad chain wouldn't have matured yet.
 
 Interesting.. fascinating to watch this work its way through the bowels of the system.

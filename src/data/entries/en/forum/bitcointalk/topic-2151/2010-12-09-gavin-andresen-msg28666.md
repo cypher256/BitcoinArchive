@@ -21,12 +21,12 @@ quotes:
 
 <!-- quote: q1 -->
 > Gavin, could listtransactions have an option to list transactions for all accounts?
-> 
+>
 > I'm not sure what the interface could be, maybe:
 > listtransactions  [count]
-> 
-> It would be hard to do that from the command line though. 
-> 
+>
+> It would be hard to do that from the command line though.
+>
 > I can't think of a good solution for the interface, that's the problem.  Maybe "*" special case like "" is.  Everyone would have to make sure no user can create account name "*".
 
 Yes, listtransactions "*" <count> is possible.  The other account routines could return a new "invalid account name" error if given "*".

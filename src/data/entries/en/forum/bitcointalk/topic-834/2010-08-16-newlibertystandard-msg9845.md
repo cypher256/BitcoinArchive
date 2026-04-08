@@ -25,10 +25,10 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > How is the strength of the chain calculated?
-> 
+>
 > Total proof-of-work.
 
 So a very strong node could continuously reverse the last x blocks and only allow transactions which include a transaction fee over a certain amount, right?

@@ -25,5 +25,5 @@ Peace! Smiley
 
 <!-- quote: q1 -->
 > madhatter was working on building it on Mac.  He had errors probably caused by UTF-16 wxWidgets 2.8.  Should have better luck now with 2.9.0.  wxWidgets 2.9.0 is UTF-8 and wouldn't have that problem.
-> 
+>
 > I think he had it working on FreeBSD, but he wanted a non-UI version.

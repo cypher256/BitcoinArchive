@@ -21,7 +21,7 @@ quotes:
 
 <!-- quote: q1 -->
 > ...
-> 
+>
 > What do you think?  If I made a Bitcoin payment integration for this, would anyone be interested in running it?  It might be the first fully automated service available to buy with Bitcoins.  The advantage it could offer over the free services is general file upload hosting of large files without making downloading users go to the upload site and jump through hoops.  It would give a normal link directly to the file.
 
 I'm looking to upgrade both my proxy hosting machine and service provider. ( lots of Chinese users will want to access google .com soon for their gmail accounts ! etc. ) I will be expanding the payment methods to accept Bitcoins. Grin

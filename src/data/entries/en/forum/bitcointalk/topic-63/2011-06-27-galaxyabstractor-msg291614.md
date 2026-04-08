@@ -24,11 +24,11 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > Look at rpc.cpp for the list of commands.
-> 
-> 
+>
+>
 > Seriously?  So, everyone knows C++ but me?  I don't understand where this list of commands is in this file.  *sigh* I have tried to understand C++ for years, things just are not clicking in my head for some reason.  Do you mean this stuff?
 > Code:        //
 >         // Special case non-string parameter types
@@ -66,7 +66,7 @@ quotes:
 >             params[1] = v.get_obj();
 >         }
 >         if (strMethod == "sendmany"                && n > 2) ConvertTo(params[2]);
-> 
+>
 > Well, there are comments throughout, so that's good, I really get annoyed by spaghetti code.
 
 Are you looking for this list? https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list

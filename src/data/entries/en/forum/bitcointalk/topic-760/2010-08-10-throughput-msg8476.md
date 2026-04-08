@@ -21,7 +21,7 @@ quotes:
 
 <!-- quote: q1 -->
 > unsigned int is good until 2106.  Surely the network will have to be totally revamped at least once by then.
-> 
+>
 > There should not be any signed int.  If you've found a signed int somewhere, please tell me (within the next 25 years please) and I'll change it to unsigned int.
 
 I have a better idea for timestamps, whatever their underlying type is, for the purposes of calculating the hash,

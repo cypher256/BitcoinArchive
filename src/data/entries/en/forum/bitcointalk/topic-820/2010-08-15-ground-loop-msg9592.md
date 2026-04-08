@@ -14,5 +14,5 @@ tags: []
 ---
 
 5,911 khash with -4way
-11,260 without 
+11,260 without
 (Dual Xeon E5450, 64-bit, 8 threads)

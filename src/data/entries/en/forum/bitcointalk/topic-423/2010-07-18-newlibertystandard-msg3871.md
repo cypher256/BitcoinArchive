@@ -25,7 +25,7 @@ quotes:
 
 <!-- quote: q1 -->
 > Even better than an escrow, you just fund the beverage machine company itself.
-> 
+>
 > Like this: you go to the company's website and send them 100 BC.  Then, they give you an ID.  They have plenty of time to get confirmations to build, and when you need a beverage you just use the ID they issued you and they debit it from your account.
 
 Yeah, that was my first suggestion, but a general purpose debit account would be more useful since it could be used at other places.

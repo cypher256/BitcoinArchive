@@ -19,10 +19,10 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> So I send a transaction of .001 BTC from me to Fred and .000001 BTC from me to A.   I send a different one to B and C.   
-> 
+> So I send a transaction of .001 BTC from me to Fred and .000001 BTC from me to A.   I send a different one to B and C.
+>
 > Now A, B, and C cannot make a profit by sending that transaction for anyone else to crunch on so if they want to collect they have to process it.
-> 
+>
 > The trick is enforcing the rule that 0.001 only flows from me to fred once and not in each block.
 
 I'm thoroughly confused on what, exactly, you're proposing.

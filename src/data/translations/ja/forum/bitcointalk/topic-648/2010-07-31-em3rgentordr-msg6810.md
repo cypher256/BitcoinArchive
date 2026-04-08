@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-うーん…パッチを適用できなかった（初心者なんだ）。自分がbitcoin-0.3.6/srcから実行したコマンドはこれだ # patch < XN1JDb53.txt 
+うーん…パッチを適用できなかった（初心者なんだ）。自分がbitcoin-0.3.6/srcから実行したコマンドはこれだ # patch < XN1JDb53.txt
 
 出力：
 

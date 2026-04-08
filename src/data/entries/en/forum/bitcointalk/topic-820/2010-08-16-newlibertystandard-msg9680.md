@@ -37,15 +37,15 @@ o_O... good luck hashing, you're gonna need it!
 <!-- quote: q2 -->
 > <!-- quote: q3 -->
 > > With 4way, I get significantly better performance when I have all my virtual cores enabled. I think I get about the same amount of hashes when hyper threading is turned off with or without 4way.
-> 
+>
 > Hey, you may be onto something!
-> 
+>
 > hyperthreading didn't help before because all the work was in the arithmetic and logic units, which the hyperthreads share.
-> 
+>
 > tcatm's SSE2 code must be a mix of normal x86 instructions and SSE2 instructions, so while one is doing x86 code, the other can do SSE2.
-> 
+>
 > How much of an improvement do you get with hyperthreading?
-> 
+>
 > Some numbers?  What CPU is that?
 
 Here are the results from my very poor memory on an i7 860 2.8 GHz with Ubuntu 10.04 amd64. Some of the numbers may be a bit off.

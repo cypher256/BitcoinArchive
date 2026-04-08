@@ -24,13 +24,13 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > So if one block takes twice as long as average, followed by a series of blocks that take 75% longer than average, then you can be fairly certain that you are no longer on the majority network.
-> 
-> 
+>
+>
 > Really? It seems to me more likely that a bunch of people left/crashed than a whole new network half the size of the legit one has gotten to you.
-> 
+>
 > I'm probably misunderstanding.
 
 Either you are misunderstanding or I am, both are possible.

@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-記事の著者に送った私の手紙：（ <[keir@keirthomas.com](mailto:keir@keirthomas.com)>  goo.gl/n0UQt の著者 ） 
+記事の著者に送った私の手紙：（ <[keir@keirthomas.com](mailto:keir@keirthomas.com)>  goo.gl/n0UQt の著者 ）
 
 PC Worldがついに、21世紀これまでで最も革命的かつ驚くべき新技術――Bitcoin――についての記事を書いてくれたことを感謝する。
 

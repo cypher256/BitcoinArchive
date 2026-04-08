@@ -24,12 +24,12 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > The bad chain is also slowed down as more nodes upgrade.
-> > 
+> >
 > > We've already generated 14 blocks since 74638.  The builds of 0.3.10 were uploaded about 2 and 3 hours ago.  Of the nodes I'm connected to, more than half are already 0.3.10.  I would say we probably already have more power than the bad chain.
-> 
+>
 > I think it'd probably be a good idea still to come out with another version that rejects connections from older versions - otherwise the network might remain rather fragmented for a while. :/
 
 We want to keep the older clients connected so that when the correct chain overtakes the incorrect chain, they will switch back to the correct chain. Although I don't know the specifics of how far back in the chain the old chain will accept a branched chain.

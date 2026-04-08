@@ -25,11 +25,11 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> 
+>
 > <!-- quote: q2 -->
 > > コマンドの一覧はrpc.cppを見てくれ。
-> 
-> 
+>
+>
 > 本気か？ つまり、自分以外みんなC++が分かるってことか？ このファイルのどこにコマンド一覧があるのか分からない。*ため息* 何年もC++を理解しようとしてきたが、どういうわけか頭にまるで入ってこない。あんたが言っているのはこれのことか？
 > Code:        //
 >         // Special case non-string parameter types
@@ -67,7 +67,7 @@ translationStatus: complete
 >             params[1] = v.get_obj();
 >         }
 >         if (strMethod == "sendmany"                && n > 2) ConvertTo(params[2]);
-> 
+>
 > まあ、全体にコメントが付いているのは良いことだ。スパゲッティコードは本当にうんざりするからな。
 
 探しているのはこの一覧か？ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list

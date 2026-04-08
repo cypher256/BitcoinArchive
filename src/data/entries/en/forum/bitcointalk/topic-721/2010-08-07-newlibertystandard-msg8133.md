@@ -25,15 +25,15 @@ quotes:
 
 <!-- quote: q1 -->
 > I say this half flippantly and half seriously. :-)
-> 
-> 
-> 
+>
+>
+>
 > <!-- quote: q2 -->
 > > If there's something else each person has a finite amount of that we could count for one-person-one-vote, I can't think of it.  IP addresses... much easier to get lots of them than CPUs.
-> 
-> 
+>
+>
 > If I were you, I would have considered a mapping that included, "For each entry into the bitcoin transaction recording/gold mining lottery, please send $10 to Satoshi."
-> 
+>
 > That would discourage botnet operators from thousands of nodes. And if it didn't you would have tens of thousands of dollars! ;-)
 
 I can't imagine a more splintered network. Wink

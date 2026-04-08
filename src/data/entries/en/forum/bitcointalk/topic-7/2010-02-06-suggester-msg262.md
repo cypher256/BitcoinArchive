@@ -24,9 +24,9 @@ quotes:
 > anonguy54:
 > Request: Make this anonymous?
 > Posted:Thu 15 of Oct, 2009 (19:58 UTC)
-> 
+>
 > Are there any plans to make this service anonymous?
-> 
+>
 > e.g; Being able to route BitCoin through Tor.
 
 Someone correct me people, but I thought it IS already anonymous! Can the person I'm transferring money to know my IP or something?

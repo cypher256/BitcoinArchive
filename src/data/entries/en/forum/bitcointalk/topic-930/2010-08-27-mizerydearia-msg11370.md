@@ -42,7 +42,7 @@ quotes:
 
 <!-- quote: q1 -->
 > Last time I tried $(shell /usr/bin/wx-config), there was immediate hollering about build problems with it.  There wasn't time to investigate at the time.
-> 
+>
 > One problem with $(shell /usr/bin/wx-config) is it will pick up any version (wx 2.8 ) and any configuration (non-UTF-8 ) of wxWidgets that happens to be there.  -lwx_gtk2ud-2.9 only matches the right configuration.  It fails if wxWidgets was built with the wrong configuration.
 
 For reference purpose, Gentoo has the following work-around for specific wxWidgets versions:

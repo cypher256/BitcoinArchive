@@ -23,7 +23,7 @@ I posted the above comment onto the wiki for posting a list these things users s
 
 <!-- quote: q1 -->
 > mizeryderia, you just copied and pasted satoshis post without adding any value.
-> 
+>
 > You could have tried to address the points he raised, or at least put up a note explaining why this page was on the wiki and what you wanted people to do with it.
 
 I apologize.  I wasn't sure what to add.
