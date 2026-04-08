@@ -75,33 +75,27 @@ sub-option, my bad.  I'll change it back.
 > minimize to tray check box being enabled.
 > 
 > 
-> On Sun, Nov 8, 2009 at 9:08 AM, Satoshi Nakamoto <satoshin@gmx.com 
-> <!-- quote: q2 -->
-> 
-> <!-- quote: q3 -->
-> 
->         I downloaded it and it runs. It and it is using plenty of CPU,
->         so I think it's working properly. It has not downloaded
->         previously generated blocks. Is that a bug or a new feature?
-> 
-> 
->     If you mean the blocks count in the status bar isn't working its way
->     up to around 26600, then that's a bug, you should send me your
->     debug.log. (which is at ~/.bitcoin/debug.log)
-> 
-> 
->         The system tray in Gnome is not very reliable. Sometimes an icon
->         will disappear leaving no way to get back to the program. I have
->         verified that this can happen with bitcoin. It would be nice if
->         starting bitcoin while it's already running would just bring up
->         the GUI of the already running bitcoin process.
-> 
-> 
->     We haven't figured out how to find and bring up the existing running
->     program yet on Linux like it does on Windows.  Given what you say, I
->     should at least turn off the minimize to tray option initially by
->     default.
-> 
+> On Sun, Nov 8, 2009 at 9:08 AM, Satoshi Nakamoto <satoshin@gmx.com
 >
+> <!-- quote: q2 -->
+>> If you mean the blocks count in the status bar isn't working its way
+>> up to around 26600, then that's a bug, you should send me your
+>> debug.log. (which is at ~/.bitcoin/debug.log)
+>>
+>> We haven't figured out how to find and bring up the existing running
+>> program yet on Linux like it does on Windows.  Given what you say, I
+>> should at least turn off the minimize to tray option initially by
+>> default.
+>
+> <!-- quote: q3 -->
+>> I downloaded it and it runs. It and it is using plenty of CPU,
+>> so I think it's working properly. It has not downloaded
+>> previously generated blocks. Is that a bug or a new feature?
+>>
+>> The system tray in Gnome is not very reliable. Sometimes an icon
+>> will disappear leaving no way to get back to the program. I have
+>> verified that this can happen with bitcoin. It would be nice if
+>> starting bitcoin while it's already running would just bring up
+>> the GUI of the already running bitcoin process.
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

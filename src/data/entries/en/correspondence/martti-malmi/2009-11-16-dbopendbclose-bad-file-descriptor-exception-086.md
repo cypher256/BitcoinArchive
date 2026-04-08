@@ -41,15 +41,13 @@ always blkindex.dat, or does it include addr.dat or wallet.dat too?
 > had changed the settings to only use one processor/core while I watched 
 > a 720p mkv movie. I noticed the segmentation fault after the film had ended.
 > 
-> On Sun, Nov 15, 2009 at 12:45 AM, Satoshi Nakamoto <satoshin@gmx.com 
-> <!-- quote: q2 -->
-> 
->     Here's one where I linked Berkeley DB a different way.  It's worth a
->     try.  Otherwise identical to test5.
-> 
->     (Keep the datadir on the hard drive at least until you get it to
->     fail the same way there.  That has a fair chance of success.)
-> 
+> On Sun, Nov 15, 2009 at 12:45 AM, Satoshi Nakamoto <satoshin@gmx.com
 >
+> <!-- quote: q2 -->
+>> Here's one where I linked Berkeley DB a different way.  It's worth a
+>> try.  Otherwise identical to test5.
+>>
+>> (Keep the datadir on the hard drive at least until you get it to
+>> fail the same way there.  That has a fair chance of success.)
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

@@ -92,16 +92,15 @@ option would be a special case only if all confirmations are your own.
 > 
 > On Tue, Nov 10, 2009 at 1:45 AM, Liberty Standard 
 > <!-- quote: q2 -->
-> 
->     The Linux build has generated a decent amount of bitcoins within the
->     past 20 hours and I trust what you're telling me about database
->     errors, so all signs point toward me running the Linux build from
->     now on. The only half annoying thing about the Linux build is that
->     my computer's fan has gone from 50% to 100%. :-P I know I can limit
->     the CPU, so if it gets on my nerves too much and if I can live with
->     less bitcoins being generated, perhaps I'll do that. Or maybe I just
->     need to start listening to more music...
-> 
+>
+>> The Linux build has generated a decent amount of bitcoins within the
+>> past 20 hours and I trust what you're telling me about database
+>> errors, so all signs point toward me running the Linux build from
+>> now on. The only half annoying thing about the Linux build is that
+>> my computer's fan has gone from 50% to 100%. :-P I know I can limit
+>> the CPU, so if it gets on my nerves too much and if I can live with
+>> less bitcoins being generated, perhaps I'll do that. Or maybe I just
+>> need to start listening to more music...
 ...
 > 
 >                    There's no risk in shutting down while there are

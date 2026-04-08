@@ -57,32 +57,29 @@ upgrade MinGW to 4.3.x to get them on a level playing field.
 > the Windows version running in Wine.
 > 
 > 
-> On Mon, Nov 9, 2009 at 8:59 AM, Liberty Standard 
-> <!-- quote: q2 -->
-> 
->     Another instance when I would like to run multiple instances is when
->     I upgrade bitcoin. I will uncheck the generate coin check box in the
->     outdated bitcoin, launch and start generating coins in the new
->     bitcoin using a separate data directory, then when the old
->     application's coins have matured I will send them to the new
->     application and then close the old application. I prefer do do clean
->     installs rather than upgrading while maintaining old data.
-> 
-> 
-> 
->     On Mon, Nov 9, 2009 at 7:42 AM, Satoshi Nakamoto <satoshin@gmx.com
-> <!-- quote: q3 -->
-> 
->         Thanks for that, I see what happened.  Because the first one was
->         slow, it ended up requesting the blocks from everybody else,
->         which only bogged everything down.  I can fix this, I just need
->         to think a while about the right way.
-> 
->         There's no risk in shutting down while there are unconfirmed.
->          When you make a transaction or new block, it immediately
->         broadcasts it to the network.  After that, the increasing
->         #/confirmed number is just monitoring the outcome.  There's
->         nothing your node does during that time to promote the acceptance.
+> On Mon, Nov 9, 2009 at 8:59 AM, Liberty Standard
 >
+> <!-- quote: q2 -->
+>> Another instance when I would like to run multiple instances is when
+>> I upgrade bitcoin. I will uncheck the generate coin check box in the
+>> outdated bitcoin, launch and start generating coins in the new
+>> bitcoin using a separate data directory, then when the old
+>> application's coins have matured I will send them to the new
+>> application and then close the old application. I prefer do do clean
+>> installs rather than upgrading while maintaining old data.
+>>
+>> On Mon, Nov 9, 2009 at 7:42 AM, Satoshi Nakamoto <satoshin@gmx.com
+>
+> <!-- quote: q3 -->
+>> Thanks for that, I see what happened.  Because the first one was
+>> slow, it ended up requesting the blocks from everybody else,
+>> which only bogged everything down.  I can fix this, I just need
+>> to think a while about the right way.
+>>
+>> There's no risk in shutting down while there are unconfirmed.
+>>  When you make a transaction or new block, it immediately
+>> broadcasts it to the network.  After that, the increasing
+>> #/confirmed number is just monitoring the outcome.  There's
+>> nothing your node does during that time to promote the acceptance.
 
 *Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

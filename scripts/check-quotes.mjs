@@ -238,6 +238,17 @@ function checkFile(filePath, locale) {
   }
 
   // 5. Blockquote reachability (check that markers have an associated blockquote)
+  //
+  // A `<!-- quote: qN -->` marker is "reachable" if a blockquote follows it,
+  // skipping over speaker/quote/tone-skip HTML comments. Two cases:
+  //
+  //   (a) Same-parent: a sibling blockquote later in the same parent.
+  //   (b) Ancestor fallback: when the marker is the last significant child
+  //       of its parent blockquote (because the email was nested), look at
+  //       the next sibling of the *parent* blockquote in the grandparent,
+  //       and so on up the chain. This handles nested email reply quoting
+  //       where a `<!-- speaker: -->` HTML comment between the marker's
+  //       blockquote and the next deeper quote breaks the AST nesting.
   function hasBlockquoteDescendant(node) {
     if (node.type === 'blockquote') return true;
     if (node.children) {
@@ -248,36 +259,55 @@ function checkFile(filePath, locale) {
     return false;
   }
 
-  function checkBlockquoteReachable(parent) {
-    if (!parent.children) return;
-    for (let i = 0; i < parent.children.length; i++) {
-      const child = parent.children[i];
+  const SKIPPABLE_HTML_RE = /^<!--\s*(speaker:|quote:|tone-skip|\/tone-skip)/;
+
+  // Look for a reachable blockquote starting from index `startIdx + 1` in
+  // `parent.children`, returning true if found (skipping skippable HTML).
+  // If we reach the end without finding one, walk up `ancestors` and look
+  // at the siblings after each ancestor's position in its own parent.
+  function findFollowingBlockquote(parent, startIdx, ancestors) {
+    // Phase 1: scan rest of current parent's children
+    for (let j = startIdx + 1; j < parent.children.length; j++) {
+      const sib = parent.children[j];
+      if (sib.type === 'blockquote') return true;
+      if (sib.type === 'html' && SKIPPABLE_HTML_RE.test(sib.value.trim())) continue;
+      return false; // non-skippable, non-blockquote node blocks reachability
+    }
+    // Phase 2: walked off the end of `parent`. Walk up ancestors.
+    for (let a = ancestors.length - 1; a >= 0; a--) {
+      const { parent: ancParent, index: ancIdx } = ancestors[a];
+      for (let j = ancIdx + 1; j < ancParent.children.length; j++) {
+        const sib = ancParent.children[j];
+        if (sib.type === 'blockquote') return true;
+        if (sib.type === 'html' && SKIPPABLE_HTML_RE.test(sib.value.trim())) continue;
+        return false;
+      }
+      // else: also walked off this ancestor's end, continue walking up
+    }
+    return false;
+  }
+
+  function checkBlockquoteReachable(node, ancestors = []) {
+    if (!node.children) return;
+    for (let i = 0; i < node.children.length; i++) {
+      const child = node.children[i];
       if (child.type === 'html') {
         const m = child.value.trim().match(QUOTE_MARKER_RE);
-        if (!m) continue;
-        // Look ahead for blockquote (skip speaker, tone-skip, other markers)
-        let found = false;
-        for (let j = i + 1; j < parent.children.length; j++) {
-          const sib = parent.children[j];
-          if (sib.type === 'blockquote') { found = true; break; }
-          if (sib.type === 'html') {
-            const val = sib.value.trim();
-            if (/^<!--\s*(speaker:|quote:|tone-skip|\/tone-skip)/.test(val)) continue;
+        if (m) {
+          const found = findFollowingBlockquote(node, i, ancestors);
+          if (!found) {
+            violations.push({
+              file: rel,
+              check: 'no-blockquote',
+              level: 'error',
+              msg: `Quote marker "${m[1]}" has no reachable blockquote`,
+            });
           }
-          break; // non-skippable node before blockquote
-        }
-        if (!found) {
-          violations.push({
-            file: rel,
-            check: 'no-blockquote',
-            level: 'error',
-            msg: `Quote marker "${m[1]}" has no reachable blockquote`,
-          });
         }
       }
-      // Recurse into blockquotes to check nested markers
+      // Recurse into blockquotes to check nested markers, tracking ancestor chain
       if (child.type === 'blockquote') {
-        checkBlockquoteReachable(child);
+        checkBlockquoteReachable(child, [...ancestors, { parent: node, index: i }]);
       }
     }
   }
