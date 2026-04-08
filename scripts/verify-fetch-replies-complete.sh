@@ -49,13 +49,20 @@ echo "   ✓ All EN files have JA counterparts"
 echo
 
 # ---------------------------------------------------------------------------
-# 3. Reply coverage for Satoshi posts
+# 3. Reply coverage for Satoshi posts (Rule A / Rule B per plan §3)
 # ---------------------------------------------------------------------------
-echo "3. Verifying Satoshi reply coverage..."
+# This is delegated to a Node script that re-implements the same logic as
+# fetch-replies-to-satoshi.mjs (in --verify mode it does NOT fetch the network;
+# it only inspects what is on disk and reports gaps).
+#
+# NOTE: This is a TODO. The previous shell loop only checked "any later msgId
+# in same topic" which is a weak approximation, not Rule A (3 immediately
+# after) nor Rule B (quotes Satoshi). Until the verify-mode script exists,
+# this section reports the weak approximation explicitly.
+echo "3. Verifying Satoshi reply coverage (WEAK APPROXIMATION — see plan §13)..."
 SATOSHI_COUNT=$(grep -rl '^author: "Satoshi Nakamoto"' src/data/entries/en/forum/bitcointalk/ | wc -l | tr -d ' ')
 echo "   Total Satoshi posts: $SATOSHI_COUNT"
 
-# Find Satoshi posts without any reply file in the same topic that has msgId > satoshi msgId
 NO_REPLY=0
 for satoshi_file in $(grep -rl '^author: "Satoshi Nakamoto"' src/data/entries/en/forum/bitcointalk/); do
   topic_dir=$(dirname "$satoshi_file")
@@ -74,14 +81,12 @@ for satoshi_file in $(grep -rl '^author: "Satoshi Nakamoto"' src/data/entries/en
 
   if [ "$has_reply" = false ]; then
     NO_REPLY=$((NO_REPLY + 1))
-    # Optionally print which: echo "   No reply: $satoshi_file"
   fi
 done
 
-echo "   Satoshi posts without any reply: $NO_REPLY"
-if [ "$NO_REPLY" -gt 0 ]; then
-  echo "   (May be the last post in a thread, or thread had no follow-ups)"
-fi
+echo "   Satoshi posts without any later msgId in topic: $NO_REPLY"
+echo "   ⚠️  This does NOT verify Rule A (3 immediately after) or Rule B (quotes Satoshi)."
+echo "   ⚠️  See temp_0406_fetch_replies_plan.md §13 — proper verifier is a TODO."
 echo
 
 # ---------------------------------------------------------------------------

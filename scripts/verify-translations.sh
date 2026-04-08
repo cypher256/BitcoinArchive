@@ -59,9 +59,7 @@ while IFS= read -r f; do
      grep -v '^>.*From:' | \
      grep -v 'msg[0-9]' | head -1 | grep -q .; then
     ENGLISH_REMNANTS=$((ENGLISH_REMNANTS + 1))
-    if [ "$ENGLISH_REMNANTS" -le 5 ]; then
-      echo "   ENGLISH: $f"
-    fi
+    echo "   ENGLISH: $f"
   fi
 done < "$TARGET_LIST"
 echo "   Files with possible English remnants: $ENGLISH_REMNANTS"
@@ -123,7 +121,7 @@ echo "English remnants: $ENGLISH_REMNANTS / $TOTAL"
 echo "Quote count mismatch: $BROKEN_QUOTES / $TOTAL"
 echo "Marker count mismatch: $BROKEN_MARKERS / $TOTAL"
 
-if [ "$STILL_PENDING" -eq 0 ] && [ "$BROKEN_QUOTES" -eq 0 ] && [ "$BROKEN_MARKERS" -eq 0 ]; then
+if [ "$STILL_PENDING" -eq 0 ] && [ "$BROKEN_QUOTES" -eq 0 ] && [ "$BROKEN_MARKERS" -eq 0 ] && [ "$ENGLISH_REMNANTS" -eq 0 ]; then
   echo
   echo "✓ All translations verified"
   exit 0
