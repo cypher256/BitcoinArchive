@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
-    person: "jgarzik"
-    personSlug: "jgarzik"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
     date: "2010-11-25T17:07:43.000Z"
   - id: "q2"
     person: "satoshi"

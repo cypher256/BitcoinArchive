@@ -15,8 +15,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/386/"
 quotes:
   - id: "q1"
-    person: "jgarzik"
-    personSlug: "jgarzik"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
     date: "2010-08-15T18:35:28.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-jgarzik-msg9665"
 ---

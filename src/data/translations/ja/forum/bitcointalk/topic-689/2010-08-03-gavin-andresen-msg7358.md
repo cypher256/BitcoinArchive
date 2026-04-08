@@ -13,8 +13,8 @@ isSatoshi: false
 tags: []
 quotes:
   - id: "q1"
-    person: "jgarzik"
-    personSlug: "jgarzik"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
     date: "2010-08-03T18:58:58.000Z"
     sourceEntryId: "forum/bitcointalk/topic-689/2010-08-03-jgarzik-msg7300"
 translationStatus: complete

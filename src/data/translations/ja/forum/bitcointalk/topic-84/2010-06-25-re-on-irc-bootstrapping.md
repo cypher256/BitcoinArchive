@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
-    person: "laszlo"
-    personSlug: "laszlo"
+    person: "Laszlo Hanyecz"
+    personSlug: "laszlo-hanyecz"
     date: "2010-06-14T09:30:58.000Z"
 ---
 

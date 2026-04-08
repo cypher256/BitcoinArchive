@@ -15,12 +15,12 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/518/"
 quotes:
   - id: "q1"
-    person: "jgarzik"
-    personSlug: "jgarzik"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
     date: "2010-11-27T17:33:29.000Z"
   - id: "q2"
-    person: "jgarzik"
-    personSlug: "jgarzik"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
     date: "2010-11-27T22:33:55.000Z"
 ---
 
