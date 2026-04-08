@@ -15,4 +15,4 @@ tags: []
 
 Great! *download*
 
-QuoteMulti-processor support for coin generationGreat, now i create much more coins than before ^^
+> Multi-processor support for coin generationGreat, now i create much more coins than before ^^

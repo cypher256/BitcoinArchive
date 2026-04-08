@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/272/"
 ---
 
-QuoteHere is a paper that claims to find SHA-1 collisions in 2^52 crypto operations. And optimally secure hash would take 2^80 operations. 2^52 time is still large, but it is getting into cluster and botnet range.
+> Here is a paper that claims to find SHA-1 collisions in 2^52 crypto operations. And optimally secure hash would take 2^80 operations. 2^52 time is still large, but it is getting into cluster and botnet range.
 2^80 is if you can use a birthday attack.  You can't use a birthday attack for this, so the difficulty is the full 2^160 bits.  Although, if you were trying to crack any one of 1 million (2^20) transactions, you could do a partial birthday attack 2^160/2^20 = 2^140.
 
 Bitcoin Addresses are the only place where 160-bit hash is used.  Everything else is SHA-256.  They're calculated as:

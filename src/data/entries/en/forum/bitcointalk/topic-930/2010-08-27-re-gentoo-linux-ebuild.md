@@ -21,10 +21,10 @@ Last time I tried $(shell /usr/bin/wx-config), there was immediate hollering abo
 
 One problem with $(shell /usr/bin/wx-config) is it will pick up any version (wx 2.8 ) and any configuration (non-UTF-8 ) of wxWidgets that happens to be there.  -lwx_gtk2ud-2.9 only matches the right configuration.  It fails if wxWidgets was built with the wrong configuration. 
 
-QuoteIirc, chatting in #wxwidgets on freenode, the devs there were baffled why that was used.
+> Iirc, chatting in #wxwidgets on freenode, the devs there were baffled why that was used.
 Did they say why they were baffled? 
 
-QuoteThis is because on my system the path is /usr/include/wx-2.9/wx/wx.h
+> This is because on my system the path is /usr/include/wx-2.9/wx/wx.h
 Why is it there?  Was it included by the OS, or did you have to build it?  If you built it, I wonder why it would put itself in a different place.
 
 Has wxWidgets 2.9 finally started to become available as a debian package?

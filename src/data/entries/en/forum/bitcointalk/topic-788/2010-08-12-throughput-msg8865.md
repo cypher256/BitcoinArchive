@@ -22,11 +22,11 @@ quotes:
 > Nope, no, and not yet. I've tried that myself, the clients just ignore it all.
 
 Is there no chance to try any better? We only need to slow down chain growth. The individual khps may stay the same.
-QuoteA lot of us have already attempted everything you've listed here. That's why we have a lot of security updates for releases  Wink
+> A lot of us have already attempted everything you've listed here. That's why we have a lot of security updates for releases  Wink
 Will you, a lot of us, share your experience, especially the results and conclusions?
 Good analysis with an experiment may be published as a scientific research paper, are you interested?
 
-QuoteAbout the only thing that will make any of that work is having more CPU power than the entire swarm and the currently difficulty. Reverse time chains, slow DoS, fast DoS, swarm manipulation, wormholes, and time travel have all been tried so far. But if you come up with some unique, we'll be glad to try it.
+> About the only thing that will make any of that work is having more CPU power than the entire swarm and the currently difficulty. Reverse time chains, slow DoS, fast DoS, swarm manipulation, wormholes, and time travel have all been tried so far. But if you come up with some unique, we'll be glad to try it.
 
 As soon, as design weaknesses (as opposed to implementation vulnerabilities) discussion will get it's section on some
 public forum and become more concentrated and accessible to the public, then I'll be happy to present other unique

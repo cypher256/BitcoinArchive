@@ -38,8 +38,8 @@ bitcoin -min -gen
 
 To get the generated bitcoins, you'd have to copy wallet.dat (with version 0.2) to a machine with a UI, swap in the wallet.dat, run bitcoin and transfer the coins to your main account.  (With version 0.1.5 you'd have to copy the whole "%appdata%/Bitcoin" directory.)  There is one caveat about copying wallet.dat: if you happened to kill the program at the exact moment that it generated a coin or received a payment, wallet.dat might not work by itself and you'd have to copy the whole directory.
 
-QuoteI really think that having the download package contain a daily seed snapshot will improve the bootstrapping. I have seen instances on new test installs here where the application will sit with 0 connections / 1 block. Upon inspecting the debug.log I find that the IRC server (freenode, I believe) claims I am already connected and refuses to let me seed the application. (Just an example).
+> I really think that having the download package contain a daily seed snapshot will improve the bootstrapping. I have seen instances on new test installs here where the application will sit with 0 connections / 1 block. Upon inspecting the debug.log I find that the IRC server (freenode, I believe) claims I am already connected and refuses to let me seed the application. (Just an example).
 I see, that would happen with multiple nodes using the same NAT or VPN or some ISP that funnels everyone through a few proxy servers.  I just committed a fix to SVN for this.  If it gets "433" name already in use (it was error 433, right?), it'll retry with a non-address random username.  
 
-QuoteIn any event, I would like to help. I have a lot of time and a project like this one is very exciting.
+> In any event, I would like to help. I have a lot of time and a project like this one is very exciting.
 That's great, any help is really appreciated!

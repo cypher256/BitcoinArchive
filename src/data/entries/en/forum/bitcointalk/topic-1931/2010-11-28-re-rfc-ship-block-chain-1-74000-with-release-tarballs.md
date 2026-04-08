@@ -25,7 +25,7 @@ quotes:
 ---
 
 Despite everything else said, the current next step is:
-QuoteSomeone should experiment with different Berkeley DB settings and see if there's something that makes the download substantially faster.  If something substantial is discovered, then we can work out the particulars.
+> Someone should experiment with different Berkeley DB settings and see if there's something that makes the download substantially faster.  If something substantial is discovered, then we can work out the particulars.
 In particular, I suspect that more read caching might help a lot.
 
 <!-- quote: q1 -->
@@ -33,7 +33,7 @@ In particular, I suspect that more read caching might help a lot.
 
 Then something more specific was wrong.  That's not due to normal initial download time.  Without more details, it can't be diagnosed.  If it was due to slow download, did it speed up after 10-20 minutes when the next block broadcast should have made it switch to a faster source?  debug.log might have clues.  How fast is their Internet connection?  Was it steadily slow, or just slow down at one point?
 
-QuoteWe have the hashes for genesis block through block 74000 hardcoded (compiled) into bitcoin, so there's no reason why we shouldn't be able to automatically download a compressed zipfile of the block database from *anywhere*, unpack it, verify it, and start running.
+> We have the hashes for genesis block through block 74000 hardcoded (compiled) into bitcoin, so there's no reason why we shouldn't be able to automatically download a compressed zipfile of the block database from *anywhere*, unpack it, verify it, and start running.
 The 74000 checkpoint is not enough to protect you, and does nothing if the download is already past 74000.  -checkblocks does more, but is still easily defeated.  You still must trust the supplier of the zipfile.
 
 If there was a "verify it" step, that would take as long as the current normal initial download, in which it is the indexing, not the data download, that is the bottleneck.
