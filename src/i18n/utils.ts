@@ -99,9 +99,19 @@ const authorHandleToSlug: Record<string, string> = {
 };
 
 export function findAuthorParticipant(author: string, participants: Participant[]): Participant | undefined {
-  return participants.find((p) => p.name === author)
-    || participants.find((p) => p.slug === authorHandleToSlug[author])
-    || participants.find((p) => p.slug === author)
+  // BitcoinTalk handles are not normalized for case (e.g. "Hal" vs "hal").
+  // We compare case-insensitively against participants[].name, against the
+  // authorHandleToSlug map, and against participants[].slug. This must be
+  // case-insensitive throughout because:
+  //   - participants[].name may be the canonical form ("Hal Finney") even
+  //     when author is the BitcoinTalk handle ("Hal"), so an exact name
+  //     match is not enough on its own.
+  //   - authorHandleToSlug is keyed in lowercase.
+  //   - participants[].slug is always lowercase by convention.
+  const authorLower = author.toLowerCase();
+  return participants.find((p) => p.name.toLowerCase() === authorLower)
+    || participants.find((p) => p.slug === authorHandleToSlug[authorLower])
+    || participants.find((p) => p.slug === authorLower)
     || undefined;
 }
 
