@@ -139,23 +139,8 @@ const t = useTranslations(lang);
       .style('pointer-events', 'none')
       .style('opacity', function(d) { return d.count > 3 ? 1 : d.count >= 2 ? 0.5 : 0.3; });
 
-    // Drag
-    var drag = d3.drag()
-      .on('start', function(event, d) {
-        if (!event.active) simulation.alphaTarget(0.3).restart();
-        d.fx = d.x; d.fy = d.y;
-      })
-      .on('drag', function(event, d) {
-        d.fx = event.x; d.fy = event.y;
-      })
-      .on('end', function(event, d) {
-        if (!event.active) simulation.alphaTarget(0);
-        d.fx = null; d.fy = null;
-      });
-    node.call(drag);
-
-    // Hover
-    node.on('mouseover', function(event, d) {
+    // Highlight helper (shared by hover and drag)
+    function highlightNode(d) {
       var neighbors = adjMap[d.id] || [];
       var neighborSet = {};
       for (var i = 0; i < neighbors.length; i++) neighborSet[neighbors[i]] = true;
@@ -169,6 +154,35 @@ const t = useTranslations(lang);
       label.style('opacity', function(n) {
         return n.id === d.id || neighborSet[n.id] ? 1 : 0.1;
       });
+    }
+
+    function unhighlightAll() {
+      node.attr('opacity', 1);
+      link.attr('stroke-opacity', 0.6);
+      label.style('opacity', function(d) { return d.count > 3 ? 1 : d.count >= 2 ? 0.5 : 0.3; });
+    }
+
+    // Drag
+    var drag = d3.drag()
+      .on('start', function(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x; d.fy = d.y;
+        highlightNode(d);
+      })
+      .on('drag', function(event, d) {
+        d.fx = event.x; d.fy = event.y;
+      })
+      .on('end', function(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null; d.fy = null;
+        unhighlightAll();
+        tooltip.style('opacity', 0);
+      });
+    node.call(drag);
+
+    // Hover
+    node.on('mouseover', function(event, d) {
+      highlightNode(d);
 
       var html = '<strong>' + d.name + '</strong><br>' + d.count + ' ' + entriesLabel;
       var connEdges = simEdges.filter(function(e) {
@@ -197,9 +211,7 @@ const t = useTranslations(lang);
         .style('top', (event.offsetY - 10) + 'px');
     })
     .on('mouseout', function() {
-      node.attr('opacity', 1);
-      link.attr('stroke-opacity', 0.6);
-      label.style('opacity', function(d) { return d.count > 3 ? 1 : d.count >= 2 ? 0.5 : 0.3; });
+      unhighlightAll();
       tooltip.style('opacity', 0);
     });
 
