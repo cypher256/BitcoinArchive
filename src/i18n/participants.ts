@@ -63,6 +63,16 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'twitter': 'Twitter',
   'wei-dai': 'ウェイ・ダイ',
   'wladimir-van-der-laan': 'ウラジミール・ファン・デル・ラーン',
+  // GitHub usernames (used as slugs in forum/github entries)
+  'gavinandresen': 'ギャビン・アンドレセン',
+  'jgarzik': 'ジェフ・ガージック',
+  'sipa': 'ピーター・ウィーユ',
+  'laanwj': 'ウラジミール・ファン・デル・ラーン',
+  'luke-jr': 'ルーク・ダッシュジュニア',
+  'gmaxwell': 'グレゴリー・マクスウェル',
+  'maaku': 'マーク・フリーデンバッハ',
+  'maflcko': 'マルコ・ファルケ',
+  'jtimon': 'ホルヘ・ティモン',
 };
 
 export const properNameTranslationsJa: Record<string, string> = {
