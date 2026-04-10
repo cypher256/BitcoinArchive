@@ -221,7 +221,7 @@ const breadcrumbs = [
       if (path) pathToAnchor[path.replace(/\/$/, '')] = '#' + el.id;
     }
   });
-  document.querySelectorAll('.conversation-thread a[href]').forEach(function(a) {
+  document.querySelectorAll('.message-body a[href]').forEach(function(a) {
     var href = a.getAttribute('href');
     if (!href || href.startsWith('http')) return;
     var m = href.match(/msg(\d+)\/?$/);
