@@ -98,6 +98,30 @@ vocabulary, so context matters:
 - Automated detection has high false-positive rate; manual review at scrape
   time is required
 
+## Reply Title Consistency
+
+JA `title` fields for reply posts (`Re: ...`) must use the same
+translated title as the thread starter within the same thread.
+
+**Rule:** look up the thread starter's JA `title`, then set all reply
+titles in the thread to `Re: {that title}`.
+
+**Bad:**
+```
+thread starter: title: "大規模なメルトダウン"
+reply:          title: "Re: 大崩壊"          ← different translation
+reply:          title: "Re: Major Meltdown"   ← untranslated
+```
+
+**Good:**
+```
+thread starter: title: "大規模なメルトダウン"
+reply:          title: "Re: 大規模なメルトダウン"
+reply:          title: "Re: 大規模なメルトダウン"
+```
+
+This is enforced by `npm run check:ja-titles`.
+
 ## Description Wording
 
 In JA `description` fields, use these unified terms:
