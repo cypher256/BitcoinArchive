@@ -1,5 +1,5 @@
 ---
-title: "Re:（throughputの文脈投稿）"
+title: "Re: ネットワークが長期間分断された後に再接続されたらどうなるか？"
 date: 2010-08-03T13:33:08.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Difficulty"
+title: "Re: 難易度"
 date: 2010-08-04T09:06:57.000Z
 type: "forum-post"
 source: "bitcointalk"

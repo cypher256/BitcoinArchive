@@ -1,5 +1,5 @@
 ---
-title: "Re: [パッチ] 自動ブロック検証"
+title: "Re: [PATCH] ブロックの自動検証"
 date: 2010-08-16T17:08:02.000Z
 type: "forum-post"
 source: "bitcointalk"

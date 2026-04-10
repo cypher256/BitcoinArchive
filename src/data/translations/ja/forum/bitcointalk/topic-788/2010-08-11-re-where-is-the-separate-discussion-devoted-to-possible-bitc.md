@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinの潜在的な弱点に関する個別の議論はどこですか"
+title: "Re: Bitcoinの潜在的な弱点に関する専用の議論はどこか"
 date: 2010-08-11T22:40:25.000Z
 type: "forum-post"
 source: "bitcointalk"

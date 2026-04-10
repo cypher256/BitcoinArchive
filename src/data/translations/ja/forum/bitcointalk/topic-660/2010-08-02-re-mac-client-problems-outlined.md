@@ -1,5 +1,5 @@
 ---
-title: "Re: Macクライアントの問題点..."
+title: "Re: Macクライアントの問題一覧……"
 date: 2010-08-02T18:02:20.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: sendtoaddress APIコールの変更提案"
 date: 2010-08-13T20:26:06.000Z
 type: "forum-post"
 source: "bitcointalk"

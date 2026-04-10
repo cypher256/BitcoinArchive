@@ -1,5 +1,5 @@
 ---
-title: "Re: プライバシー対安全性: おつりの取り扱い"
+title: "Re: プライバシー vs 安全性：おつりの扱い"
 date: 2010-07-17T16:27:39.000Z
 type: "forum-post"
 source: "bitcointalk"

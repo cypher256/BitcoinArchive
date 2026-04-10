@@ -1,5 +1,5 @@
 ---
-title: "Re: （XaviorPenguinの文脈投稿）"
+title: "Re: freebitcoins.appspot.comへの寄付が必要！"
 date: 2010-07-14T01:05:41.000Z
 type: "forum-post"
 source: "bitcointalk"

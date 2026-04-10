@@ -1,5 +1,5 @@
 ---
-title: "Re: Website and software translations"
+title: "Re: ウェブサイトとソフトウェアの翻訳"
 date: 2010-06-06T01:46:50.000Z
 type: "forum-post"
 source: "bitcointalk"

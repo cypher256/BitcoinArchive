@@ -1,5 +1,5 @@
 ---
-title: "Re: 支払いサーバー"
+title: "Re: 決済サーバー"
 date: 2010-01-28T23:26:09.000Z
 type: "forum-post"
 source: "bitcointalk"

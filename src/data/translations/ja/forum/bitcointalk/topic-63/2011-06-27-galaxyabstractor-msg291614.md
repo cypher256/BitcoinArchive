@@ -1,5 +1,5 @@
 ---
-title: "Re: Command Line and JSON-RPC"
+title: "Re: コマンドラインとJSON-RPC"
 date: 2011-06-27T12:16:26.000Z
 type: "forum-post"
 source: "bitcointalk"

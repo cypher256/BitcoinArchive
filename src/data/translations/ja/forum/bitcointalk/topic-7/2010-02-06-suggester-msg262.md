@@ -1,5 +1,5 @@
 ---
-title: "Re: Repost: Request: Make this anonymous?"
+title: "Re: 再投稿：リクエスト：これを匿名にできますか？"
 date: 2010-02-06T18:50:09.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: この奇妙な生成は何だ？"
+title: "Re: この奇妙な生成は何ですか？"
 date: 2010-02-10T19:06:17.000Z
 type: "forum-post"
 source: "bitcointalk"

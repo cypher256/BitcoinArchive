@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoind not responding to RPC"
+title: "Re: bitcoindがRPCに応答しない"
 date: 2011-06-24T23:53:25.000Z
 type: "forum-post"
 source: "bitcointalk"

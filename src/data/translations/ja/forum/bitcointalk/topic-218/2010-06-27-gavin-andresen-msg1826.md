@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンの文脈投稿）"
+title: "Re: IPv6、ヘッドレスクライアント、その他"
 date: 2010-06-27T01:55:07.000Z
 type: "forum-post"
 source: "bitcointalk"

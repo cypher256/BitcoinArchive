@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC password"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-23T21:18:05.000Z
 type: "forum-post"
 source: "bitcointalk"

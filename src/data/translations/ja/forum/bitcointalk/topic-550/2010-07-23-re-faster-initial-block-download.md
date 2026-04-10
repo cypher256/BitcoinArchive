@@ -1,5 +1,5 @@
 ---
-title: "Re: 初期ブロックダウンロードの高速化"
+title: "Re: 初期ブロックダウンロードの高速化（5倍高速）"
 date: 2010-07-23T20:13:27.000Z
 type: "forum-post"
 source: "bitcointalk"

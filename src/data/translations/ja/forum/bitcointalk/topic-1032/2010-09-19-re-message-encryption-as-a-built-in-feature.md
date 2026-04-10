@@ -1,5 +1,5 @@
 ---
-title: "Re: 組み込み機能としてのメッセージ暗号化？"
+title: "Re: メッセージ暗号化を組み込み機能として搭載すべきか？"
 date: 2010-09-19T22:47:00.000Z
 type: "forum-post"
 source: "bitcointalk"

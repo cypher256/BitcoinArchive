@@ -1,5 +1,5 @@
 ---
-title: "Re: Tor接続が安定しない、多くのシードノードがオフライン"
+title: "Re: Tor接続が不安定、多くのシードノードがオフライン"
 date: 2010-10-06T17:36:41.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Questions about Addresses"
+title: "Re: アドレスに関する質問"
 date: 2010-02-18T07:52:22.000Z
 type: "forum-post"
 source: "bitcointalk"

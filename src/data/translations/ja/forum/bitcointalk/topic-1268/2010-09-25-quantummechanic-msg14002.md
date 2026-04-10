@@ -1,5 +1,5 @@
 ---
-title: "Re:（QuantumMechanicの文脈投稿）"
+title: "Re: ニッチリスト"
 date: 2010-09-25T04:14:44.000Z
 type: "forum-post"
 source: "bitcointalk"

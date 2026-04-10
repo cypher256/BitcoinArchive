@@ -1,5 +1,5 @@
 ---
-title: "Re:（thrashaholicの文脈投稿）"
+title: "Re: ニッチリスト"
 date: 2010-09-28T05:16:15.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Linux版 => アップグレード後にGUIが表示されない"
+title: "Re: Linux版 =&gt; アップグレード後にGUIが表示されない"
 date: 2010-08-02T17:39:27.000Z
 type: "forum-post"
 source: "bitcointalk"

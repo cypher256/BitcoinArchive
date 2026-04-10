@@ -1,5 +1,5 @@
 ---
-title: "Re:（NewLibertyStandardの文脈投稿）"
+title: "Re: レイテンシーと局所性"
 date: 2010-08-06T23:55:47.000Z
 type: "forum-post"
 source: "bitcointalk"

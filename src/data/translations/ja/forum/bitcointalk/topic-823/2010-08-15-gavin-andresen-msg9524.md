@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: オーバーフローバグ 深刻"
 date: 2010-08-15T20:39:42.000Z
 type: "forum-post"
 source: "bitcointalk"

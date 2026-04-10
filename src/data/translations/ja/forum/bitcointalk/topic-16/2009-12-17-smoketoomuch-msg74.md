@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin 0.2 released!"
+title: "Re: Bitcoin 0.2 リリース！"
 date: 2009-12-17T11:36:36.000Z
 type: "forum-post"
 source: "bitcointalk"

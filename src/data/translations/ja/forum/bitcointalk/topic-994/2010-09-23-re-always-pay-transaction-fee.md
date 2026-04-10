@@ -1,5 +1,5 @@
 ---
-title: "Re: 常に取引手数料を支払う？"
+title: "Re: 常にトランザクション手数料を支払う？"
 date: 2010-09-23T16:08:35.000Z
 type: "forum-post"
 source: "bitcointalk"

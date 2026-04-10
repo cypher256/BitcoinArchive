@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: バグ？ /usr/bin/bitcoind &quot;&quot;"
 date: 2010-09-19T15:19:57.000Z
 type: "forum-post"
 source: "bitcointalk"

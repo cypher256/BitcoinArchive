@@ -1,5 +1,5 @@
 ---
-title: "Re:（InterArmaEnimSilの文脈投稿）"
+title: "Re: 民主主義のためのハッシュ/秒スロットリング"
 date: 2010-07-14T19:07:03.000Z
 type: "forum-post"
 source: "bitcointalk"

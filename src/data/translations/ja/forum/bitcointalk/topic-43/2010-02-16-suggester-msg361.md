@@ -1,5 +1,5 @@
 ---
-title: "Re:（Suggesterの文脈投稿）"
+title: "Re: Proof-of-work難易度の上昇"
 date: 2010-02-16T02:15:49.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinの鋳造は熱力学的に倒錯している"
+title: "Re: Bitcoinの鋳造は熱力学的に逆説的"
 date: 2010-08-06T19:48:31.000Z
 type: "forum-post"
 source: "bitcointalk"

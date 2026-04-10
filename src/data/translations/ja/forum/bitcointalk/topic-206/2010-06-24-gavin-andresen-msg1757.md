@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンの文脈投稿）"
+title: "Re: Bitcoin Faucetの変更"
 date: 2010-06-24T23:13:45.000Z
 type: "forum-post"
 source: "bitcointalk"

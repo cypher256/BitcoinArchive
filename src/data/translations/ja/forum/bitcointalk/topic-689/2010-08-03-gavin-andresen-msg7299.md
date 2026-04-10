@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: 認証、JSON RPCとPython"
 date: 2010-08-03T18:56:44.000Z
 type: "forum-post"
 source: "bitcointalk"

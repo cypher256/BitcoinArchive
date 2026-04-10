@@ -1,5 +1,5 @@
 ---
-title: "Re: \"SetIcons(): icon bundle doesn't contain any suitable icon\""
+title: "Re: \"SetIcons(): アイコンバンドルに適切なアイコンが含まれていない\""
 date: 2010-07-15T22:18:26.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Scalability and transaction rate"
+title: "Re: スケーラビリティとトランザクションレート"
 date: 2010-07-29T06:08:39.000Z
 type: "forum-post"
 source: "bitcointalk"

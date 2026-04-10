@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
 date: 2010-12-09T00:41:44.000Z
 type: "forum-post"
 source: "bitcointalk"

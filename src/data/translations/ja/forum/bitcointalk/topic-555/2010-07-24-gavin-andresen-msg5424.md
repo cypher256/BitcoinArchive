@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: ブロックの読み書きとFLATDATA"
 date: 2010-07-24T01:44:02.000Z
 type: "forum-post"
 source: "bitcointalk"

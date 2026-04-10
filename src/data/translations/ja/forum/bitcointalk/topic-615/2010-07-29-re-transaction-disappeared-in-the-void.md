@@ -1,5 +1,5 @@
 ---
-title: "Re: トランザクションが消えた..."
+title: "Re: トランザクションが消えた…"
 date: 2010-07-29T22:08:31.000Z
 type: "forum-post"
 source: "bitcointalk"

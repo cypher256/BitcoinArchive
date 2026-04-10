@@ -1,5 +1,5 @@
 ---
-title: "Re:（NewLibertyStandardの文脈投稿）"
+title: "Re: Bitcoinの鋳造は熱力学的に逆説的"
 date: 2010-08-06T19:20:47.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Beta?"
+title: "Re: ベータ？"
 date: 2010-06-28T12:17:51.000Z
 type: "forum-post"
 source: "bitcointalk"

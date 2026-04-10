@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: 自動ナイトリービルド"
 date: 2010-12-09T16:43:13.000Z
 type: "forum-post"
 source: "bitcointalk"

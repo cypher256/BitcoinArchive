@@ -1,5 +1,5 @@
 ---
-title: "Re: Wikipediaの記事を削除しようとしている"
+title: "Re: WikipediaのBitcoin記事"
 date: 2010-07-20T18:38:28.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: freebitcoins.appspot.comへの寄付を募集中！"
+title: "Re: freebitcoins.appspot.comへの寄付が必要！"
 date: 2010-07-16T02:02:07.000Z
 type: "forum-post"
 source: "bitcointalk"

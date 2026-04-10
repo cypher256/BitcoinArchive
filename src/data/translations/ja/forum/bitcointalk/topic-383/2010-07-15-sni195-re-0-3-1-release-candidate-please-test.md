@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.1リリース候補、テストしてください"
+title: "Re: Bitcoin 0.3.1 リリース"
 date: 2010-07-15T17:56:43.000Z
 type: "forum-post"
 source: "bitcointalk"

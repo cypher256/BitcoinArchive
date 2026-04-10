@@ -1,5 +1,5 @@
 ---
-title: "Re: （Ground Loopの文脈投稿）"
+title: "Re: 更新 - libcryptoとGLIBCXX_3.4.11の問題がある人向けLinux x64バイナリ"
 date: 2010-07-15T01:05:01.000Z
 type: "forum-post"
 source: "bitcointalk"

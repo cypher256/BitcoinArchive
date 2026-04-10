@@ -1,5 +1,5 @@
 ---
-title: "Re: （NewLibertyStandardの文脈投稿）"
+title: "Re: ネットワーク規模"
 date: 2010-07-17T22:22:09.000Z
 type: "forum-post"
 source: "bitcointalk"

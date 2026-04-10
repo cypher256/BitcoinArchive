@@ -1,5 +1,5 @@
 ---
-title: "Re: コインの系譜を追跡する"
+title: "Re: コインの来歴を追跡する"
 date: 2010-05-26T18:51:04.000Z
 type: "forum-post"
 source: "bitcointalk"

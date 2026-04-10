@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin自動renice"
+title: "Re: Bitcoinの自動renice"
 date: 2010-07-14T17:38:31.000Z
 type: "forum-post"
 source: "bitcointalk"

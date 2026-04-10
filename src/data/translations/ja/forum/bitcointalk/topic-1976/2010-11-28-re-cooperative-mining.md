@@ -1,5 +1,5 @@
 ---
-title: "Re: 協力マイニング"
+title: "Re: [4+ EH] Slush Pool (slushpool.com); Overt AsicBoost; 世界初のマイニングプール"
 date: 2010-11-28T16:03:30.000Z
 type: "forum-post"
 source: "bitcointalk"

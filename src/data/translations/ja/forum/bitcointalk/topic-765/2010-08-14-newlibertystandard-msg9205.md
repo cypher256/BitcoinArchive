@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.8.1 update for Linux 64-bit"
+title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
 date: 2010-08-14T14:54:57.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインアドレスの削除"
+title: "Re: Bitcoinアドレスの削除"
 date: 2010-05-16T23:34:40.000Z
 type: "forum-post"
 source: "bitcointalk"

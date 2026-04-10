@@ -1,5 +1,5 @@
 ---
-title: "Re: OSXでのbitcoindデーモン"
+title: "Re: OSXでbitcoindをデーモンとして実行"
 date: 2010-09-06T21:52:45.000Z
 type: "forum-post"
 source: "bitcointalk"

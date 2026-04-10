@@ -1,5 +1,5 @@
 ---
-title: "Re: Proposed change to sendtoaddress API call"
+title: "Re: sendtoaddress APIコールの変更提案"
 date: 2010-08-14T13:46:17.000Z
 type: "forum-post"
 source: "bitcointalk"

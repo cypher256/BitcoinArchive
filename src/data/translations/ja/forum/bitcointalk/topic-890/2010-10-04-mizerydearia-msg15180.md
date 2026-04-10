@@ -1,5 +1,5 @@
 ---
-title: "Re: integrating digital payments into p2p protocols"
+title: "Re: P2Pプロトコルへのデジタル決済の統合"
 date: 2010-10-04T02:07:13.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: バグ報告: 丸め誤差"
+title: "Re: バグ報告：丸め処理の不具合"
 date: 2010-07-17T16:06:12.000Z
 type: "forum-post"
 source: "bitcointalk"

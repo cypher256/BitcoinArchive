@@ -1,5 +1,5 @@
 ---
-title: "Re: [パッチ] 'listtransactions'の実装"
+title: "Re: [PATCH] 'xlisttransactions'の実装"
 date: 2010-07-30T19:40:54.000Z
 type: "forum-post"
 source: "bitcointalk"

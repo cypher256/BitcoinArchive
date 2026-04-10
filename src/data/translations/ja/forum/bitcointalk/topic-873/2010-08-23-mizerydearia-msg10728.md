@@ -1,5 +1,5 @@
 ---
-title: "Re: Need a post writing up some things users should know"
+title: "Re: ユーザーが知っておくべきことをまとめた投稿が必要"
 date: 2010-08-23T01:31:33.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Technical clarifications"
+title: "Re: 技術的な説明"
 date: 2010-07-18T03:47:36.000Z
 type: "forum-post"
 source: "bitcointalk"

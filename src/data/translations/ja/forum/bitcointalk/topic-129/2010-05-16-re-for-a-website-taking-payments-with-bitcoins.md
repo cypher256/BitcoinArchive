@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインで支払いを受け付けるウェブサイトについて..."
+title: "Re: Bitcoinで支払いを受けるウェブサイトにはIP方式とBitcoinアドレス方式のどちらが良い？"
 date: 2010-05-16T21:37:36.000Z
 type: "forum-post"
 source: "bitcointalk"

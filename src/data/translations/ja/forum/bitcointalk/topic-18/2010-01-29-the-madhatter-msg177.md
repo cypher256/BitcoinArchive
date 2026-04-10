@@ -1,5 +1,5 @@
 ---
-title: "Re: 64bit support"
+title: "Re: 64ビットサポート"
 date: 2010-01-29T02:08:41.000Z
 type: "forum-post"
 source: "bitcointalk"

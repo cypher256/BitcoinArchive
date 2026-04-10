@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインは普通株に最も似ている"
+title: "Re: ビットコインは普通株式に最も似ている"
 date: 2010-08-27T16:39:26.000Z
 type: "forum-post"
 source: "bitcointalk"

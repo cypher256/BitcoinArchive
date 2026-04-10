@@ -1,5 +1,5 @@
 ---
-title: "Re:（giikの文脈投稿）"
+title: "Re: 「Bitcoin受付中」ロゴを作ろう"
 date: 2010-02-26T02:46:29.000Z
 type: "forum-post"
 source: "bitcointalk"

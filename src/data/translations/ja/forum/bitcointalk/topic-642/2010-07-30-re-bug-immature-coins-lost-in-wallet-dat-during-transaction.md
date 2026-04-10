@@ -1,5 +1,5 @@
 ---
-title: "Re: バグ：トランザクション中にwallet.datで「未成熟な」コインが失われる"
+title: "Re: バグ：トランザクション中にwallet.datから&quot;未成熟&quot;コインが消失"
 date: 2010-07-30T19:19:05.000Z
 type: "forum-post"
 source: "bitcointalk"

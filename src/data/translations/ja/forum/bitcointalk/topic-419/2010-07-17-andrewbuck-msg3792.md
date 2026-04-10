@@ -1,5 +1,5 @@
 ---
-title: "Re: （AndrewBuckの文脈投稿）"
+title: "Re: ネットワーク規模"
 date: 2010-07-17T19:46:48.000Z
 type: "forum-post"
 source: "bitcointalk"

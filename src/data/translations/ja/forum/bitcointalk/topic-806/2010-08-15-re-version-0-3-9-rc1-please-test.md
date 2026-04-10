@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.9 rc1、テストをお願いします"
+title: "Re: バージョン0.3.9 rc1、テストお願いします"
 date: 2010-08-15T18:11:41.000Z
 type: "forum-post"
 source: "bitcointalk"

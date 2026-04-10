@@ -1,5 +1,5 @@
 ---
-title: "Re: Windows 7でのBitcoinビルドの問題"
+title: "Re: Windows 7でBitcoinのビルドに問題がある"
 date: 2010-09-19T18:46:46.000Z
 type: "forum-post"
 source: "bitcointalk"

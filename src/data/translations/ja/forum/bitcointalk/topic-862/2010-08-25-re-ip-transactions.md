@@ -1,5 +1,5 @@
 ---
-title: "Re: 接続制限"
+title: "Re: 28日間生成なし、4200khash/sあるのに"
 date: 2010-08-25T21:02:00Z
 type: "forum-post"
 source: "bitcointalk"

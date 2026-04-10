@@ -1,5 +1,5 @@
 ---
-title: "Re: 民主主義のためのHash/secスロットリング"
+title: "Re: 民主主義のためのハッシュ/秒スロットリング"
 date: 2010-07-14T20:25:06.000Z
 type: "forum-post"
 source: "bitcointalk"

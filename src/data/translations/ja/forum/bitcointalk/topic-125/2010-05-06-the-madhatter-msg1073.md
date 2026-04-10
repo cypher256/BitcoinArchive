@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: dasg"
 date: 2010-05-06T10:09:45.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロックがダウンロードされない...なぜ？"
+title: "Re: ブロックがダウンロードされない - Microsoft Security Essentialsユーザーは必読"
 date: 2010-07-14T16:22:03.000Z
 type: "forum-post"
 source: "bitcointalk"

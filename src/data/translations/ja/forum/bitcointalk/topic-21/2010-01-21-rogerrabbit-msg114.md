@@ -1,5 +1,5 @@
 ---
-title: "Re: Number of connections?"
+title: "Re: 接続数は？"
 date: 2010-01-21T17:30:39.000Z
 type: "forum-post"
 source: "bitcointalk"

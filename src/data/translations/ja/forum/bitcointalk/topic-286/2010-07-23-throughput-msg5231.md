@@ -1,5 +1,5 @@
 ---
-title: "Re: Scalability"
+title: "Re: スケーラビリティ"
 date: 2010-07-23T10:57:45.000Z
 type: "forum-post"
 source: "bitcointalk"

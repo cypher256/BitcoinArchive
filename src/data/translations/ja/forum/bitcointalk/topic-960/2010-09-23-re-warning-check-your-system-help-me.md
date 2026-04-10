@@ -1,5 +1,5 @@
 ---
-title: "Re: 警告: システムを確認してください（助けてください）"
+title: "Re: 警告：システムを確認してください（助けてください）"
 date: 2010-09-23T16:28:25.000Z
 type: "forum-post"
 source: "bitcointalk"

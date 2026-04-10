@@ -1,5 +1,5 @@
 ---
-title: "Re: Money Transfer Regulations"
+title: "Re: 送金規制"
 date: 2010-03-03T04:38:49.000Z
 type: "forum-post"
 source: "bitcointalk"

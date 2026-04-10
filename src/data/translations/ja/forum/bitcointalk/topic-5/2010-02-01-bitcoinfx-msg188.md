@@ -1,5 +1,5 @@
 ---
-title: "返信: ビットコイン：P2P通貨のオープンソース実装"
+title: "Re: Bitcoin：オープンソースのP2P通貨"
 date: 2010-02-01T17:37:29.000Z
 type: "forum-post"
 source: "bitcointalk"

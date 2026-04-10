@@ -1,5 +1,5 @@
 ---
-title: "Re: What could be the transition plan to Y2038 compliant Bitcoin? (it already is)"
+title: "Re: Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）"
 date: 2010-08-10T05:44:12.000Z
 type: "forum-post"
 source: "bitcointalk"

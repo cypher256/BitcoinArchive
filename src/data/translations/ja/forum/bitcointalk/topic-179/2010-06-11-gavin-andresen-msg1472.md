@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: 技術的な説明"
 date: 2010-06-11T01:34:11.000Z
 type: "forum-post"
 source: "bitcointalk"

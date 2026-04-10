@@ -1,5 +1,5 @@
 ---
-title: "Re: Development of alert system"
+title: "Re: アラートシステムの開発"
 date: 2010-08-23T05:04:50.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Wikileaks contact info?"
+title: "Re: ギャビンのCIAプレゼンテーション計画"
 date: 2010-12-05T14:39:23.000Z
 type: "forum-post"
 source: "bitcointalk"

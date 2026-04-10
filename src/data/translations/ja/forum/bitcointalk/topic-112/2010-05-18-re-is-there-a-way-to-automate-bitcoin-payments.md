@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインの支払いを自動化する方法はありますか..."
+title: "Re: ウェブサイトでBitcoin支払いを自動化する方法はあるか？"
 date: 2010-05-18T02:58:11.000Z
 type: "forum-post"
 source: "bitcointalk"

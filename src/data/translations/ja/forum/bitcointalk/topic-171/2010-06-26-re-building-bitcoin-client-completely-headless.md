@@ -1,5 +1,5 @@
 ---
-title: "Re: BitCoinクライアントを完全にヘッドレスでビルドする"
+title: "Re: Bitcoinクライアントを完全にヘッドレスでビルドする"
 date: 2010-06-26T21:06:06.000Z
 type: "forum-post"
 source: "bitcointalk"

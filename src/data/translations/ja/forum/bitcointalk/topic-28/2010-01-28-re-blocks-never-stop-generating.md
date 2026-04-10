@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロックの生成が止まらない？"
+title: "Re: ブロックは生成され続けるのか？"
 date: 2010-01-28T01:08:33.000Z
 type: "forum-post"
 source: "bitcointalk"

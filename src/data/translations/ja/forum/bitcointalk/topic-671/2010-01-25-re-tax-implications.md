@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinの税務上の影響"
+title: "Re: adf"
 date: 2010-01-25T18:27:00Z
 type: "forum-post"
 source: "bitcointalk"

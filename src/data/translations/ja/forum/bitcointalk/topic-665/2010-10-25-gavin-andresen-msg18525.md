@@ -1,5 +1,5 @@
 ---
-title: "Re: Multiple Wallets, one computer (multiple accounts)"
+title: "Re: 複数のウォレット、1台のコンピュータ"
 date: 2010-10-25T21:08:56.000Z
 type: "forum-post"
 source: "bitcointalk"

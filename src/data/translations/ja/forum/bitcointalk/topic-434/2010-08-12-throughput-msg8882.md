@@ -1,5 +1,5 @@
 ---
-title: "Re: Privacy versus Safety: handling change"
+title: "Re: プライバシー vs 安全性：おつりの扱い"
 date: 2010-08-12T12:52:15.000Z
 type: "forum-post"
 source: "bitcointalk"

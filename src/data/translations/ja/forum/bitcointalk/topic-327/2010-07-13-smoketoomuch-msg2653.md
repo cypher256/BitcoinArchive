@@ -1,5 +1,5 @@
 ---
-title: "Re: リソース食い"
+title: "Re: リソースの大量消費"
 date: 2010-07-13T21:28:06.000Z
 type: "forum-post"
 source: "bitcointalk"

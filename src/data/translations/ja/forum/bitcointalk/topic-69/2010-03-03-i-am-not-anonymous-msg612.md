@@ -1,5 +1,5 @@
 ---
-title: "Re:（I-am-not-anonymousの文脈投稿）"
+title: "Re: 送金規制"
 date: 2010-03-03T03:48:33.000Z
 type: "forum-post"
 source: "bitcointalk"

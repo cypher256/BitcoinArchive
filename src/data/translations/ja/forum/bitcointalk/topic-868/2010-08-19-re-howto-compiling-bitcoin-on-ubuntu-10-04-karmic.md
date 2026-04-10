@@ -1,5 +1,5 @@
 ---
-title: "Re: HOWTO: Ubuntu 10.04 (Karmic)でBitcoinをコンパイルする方法"
+title: "Re: HOWTO: Ubuntu 10.04 (Karmic) でBitcoinをコンパイルする方法"
 date: 2010-08-19T18:55:48.000Z
 type: "forum-post"
 source: "bitcointalk"

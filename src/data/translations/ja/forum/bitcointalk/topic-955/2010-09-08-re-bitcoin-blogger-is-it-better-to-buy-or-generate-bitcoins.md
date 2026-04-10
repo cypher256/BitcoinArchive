@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインブロガー：ビットコインは購入と生成のどちらが良いか？"
+title: "Re: Bitcoin Blogger: Bitcoinは購入と生成のどちらが良いか？"
 date: 2010-09-08T20:27:39.000Z
 type: "forum-post"
 source: "bitcointalk"

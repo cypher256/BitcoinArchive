@@ -1,5 +1,5 @@
 ---
-title: "Re: URI-scheme for bitcoin"
+title: "Re: Bitcoin用URIスキーム"
 date: 2010-02-24T06:39:16.000Z
 type: "forum-post"
 source: "bitcointalk"

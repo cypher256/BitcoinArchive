@@ -1,5 +1,5 @@
 ---
-title: "Re:（Quantumplationの文脈投稿）"
+title: "Re: トランザクションが消えた…"
 date: 2010-07-29T14:20:44.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Authentication, JSON RPC and Python"
+title: "Re: 認証、JSON RPCとPython"
 date: 2010-08-03T22:52:10.000Z
 type: "forum-post"
 source: "bitcointalk"

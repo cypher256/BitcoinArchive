@@ -1,5 +1,5 @@
 ---
-title: "Re:（MoonShadowの文脈投稿）"
+title: "Re: 難易度：アクティブノードの増加か、より高速なノードか？"
 date: 2010-08-17T21:52:06.000Z
 type: "forum-post"
 source: "bitcointalk"

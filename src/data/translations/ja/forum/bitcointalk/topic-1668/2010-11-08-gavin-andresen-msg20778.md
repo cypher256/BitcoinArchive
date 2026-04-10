@@ -1,5 +1,5 @@
 ---
-title: "Re: テストネットワークで行ったテストとその発見。"
+title: "Re: テストネットワークで行ったテスト、私の発見"
 date: 2010-11-08T23:57:37.000Z
 type: "forum-post"
 source: "bitcointalk"

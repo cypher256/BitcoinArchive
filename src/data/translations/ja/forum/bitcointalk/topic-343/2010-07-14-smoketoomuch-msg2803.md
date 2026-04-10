@@ -1,5 +1,5 @@
 ---
-title: "Re: （SmokeTooMuchの文脈投稿）"
+title: "Re: コインの生成が停止した"
 date: 2010-07-14T11:34:52.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: libcryptoの問題を抱える人向けの静的Linux x86_64バイナリ"
+title: "Re: 更新 - libcryptoとGLIBCXX_3.4.11の問題がある人向けLinux x64バイナリ"
 date: 2010-07-15T14:33:04.000Z
 type: "forum-post"
 source: "bitcointalk"

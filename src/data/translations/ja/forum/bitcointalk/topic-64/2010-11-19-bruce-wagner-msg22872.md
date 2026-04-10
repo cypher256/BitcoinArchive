@@ -1,5 +1,5 @@
 ---
-title: "Re: New icon/logo"
+title: "Re: 新しいアイコン/ロゴ"
 date: 2010-11-19T19:03:40.000Z
 type: "forum-post"
 source: "bitcointalk"

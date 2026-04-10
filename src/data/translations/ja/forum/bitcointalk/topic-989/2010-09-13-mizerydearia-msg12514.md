@@ -1,5 +1,5 @@
 ---
-title: "Re: Switch to GPL"
+title: "Re: GPLへの切り替え"
 date: 2010-09-13T03:59:09.000Z
 type: "forum-post"
 source: "bitcointalk"

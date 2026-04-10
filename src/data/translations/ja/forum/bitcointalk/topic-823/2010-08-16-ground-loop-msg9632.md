@@ -1,5 +1,5 @@
 ---
-title: "Re: overflow bug SERIOUS"
+title: "Re: オーバーフローバグ 深刻"
 date: 2010-08-16T02:02:07.000Z
 type: "forum-post"
 source: "bitcointalk"

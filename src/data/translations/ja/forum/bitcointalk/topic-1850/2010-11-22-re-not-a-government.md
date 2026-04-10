@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインの合法性について"
+title: "Re: トランザクション/スパムフラッド攻撃が現在進行中"
 date: 2010-11-22T19:54:00Z
 type: "forum-post"
 source: "bitcointalk"

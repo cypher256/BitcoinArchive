@@ -1,5 +1,5 @@
 ---
-title: "Re:（QuantumMechanicの文脈投稿）"
+title: "Re: トランザクションを収集するインセンティブは何か？"
 date: 2010-06-05T20:02:09.000Z
 type: "forum-post"
 source: "bitcointalk"

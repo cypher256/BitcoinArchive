@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: 複数のウォレット、1台のコンピュータ"
 date: 2010-09-27T15:14:55.000Z
 type: "forum-post"
 source: "bitcointalk"

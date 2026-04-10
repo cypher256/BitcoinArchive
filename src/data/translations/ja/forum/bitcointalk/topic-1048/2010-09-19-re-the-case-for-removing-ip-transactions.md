@@ -1,5 +1,5 @@
 ---
-title: "Re: IPトランザクション削除の根拠"
+title: "Re: IPトランザクション削除の主張"
 date: 2010-09-19T21:49:30.000Z
 type: "forum-post"
 source: "bitcointalk"

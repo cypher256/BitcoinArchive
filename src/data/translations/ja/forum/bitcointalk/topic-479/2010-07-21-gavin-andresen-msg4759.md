@@ -1,5 +1,5 @@
 ---
-title: "Re: 警告：ウェブ閲覧する環境で-serverやbitcoindを使わないこと（v0.3.2以下）"
+title: "Re: 警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）"
 date: 2010-07-21T16:10:32.000Z
 type: "forum-post"
 source: "bitcointalk"

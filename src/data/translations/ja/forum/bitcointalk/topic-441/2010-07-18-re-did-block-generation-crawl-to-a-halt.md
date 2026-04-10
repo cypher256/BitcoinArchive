@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロック生成は停滞したのか？"
+title: "Re: adg"
 date: 2010-07-18T23:35:27.000Z
 type: "forum-post"
 source: "bitcointalk"

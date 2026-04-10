@@ -1,5 +1,5 @@
 ---
-title: "Re: UI improvements"
+title: "Re: UIの改善"
 date: 2010-02-24T02:27:58.000Z
 type: "forum-post"
 source: "bitcointalk"

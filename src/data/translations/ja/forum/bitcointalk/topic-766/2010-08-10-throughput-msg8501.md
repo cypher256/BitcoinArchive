@@ -1,5 +1,5 @@
 ---
-title: "Re: Connection limits"
+title: "Re: 接続制限"
 date: 2010-08-10T09:06:09.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（NewLibertyStandardの文脈投稿）"
+title: "Re: オーバーフローバグ 深刻"
 date: 2010-08-15T21:29:08.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（spaceshakerの文脈投稿）"
+title: "Re: スケーラビリティ"
 date: 2010-07-14T01:52:00.000Z
 type: "forum-post"
 source: "bitcointalk"

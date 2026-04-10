@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: Tor接続が不安定、多くのシードノードがオフライン"
 date: 2010-10-06T03:01:14.000Z
 type: "forum-post"
 source: "bitcointalk"

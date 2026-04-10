@@ -1,5 +1,5 @@
 ---
-title: "Re: リクエスト: 1日あたりの予想ビットコイン表示"
+title: "Re: リクエスト：1日あたりの予想Bitcoin生成量の表示"
 date: 2010-07-16T16:47:14.000Z
 type: "forum-post"
 source: "bitcointalk"

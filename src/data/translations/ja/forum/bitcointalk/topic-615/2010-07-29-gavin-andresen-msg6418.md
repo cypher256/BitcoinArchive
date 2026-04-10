@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: トランザクションが消えた…"
 date: 2010-07-29T16:28:35.000Z
 type: "forum-post"
 source: "bitcointalk"

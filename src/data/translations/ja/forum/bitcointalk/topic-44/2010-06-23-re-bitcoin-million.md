@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインはどこまで分割できますか？"
+title: "Re: ビットコインの分割可能性と市場・経済に関する質問"
 date: 2010-06-23T15:12:00Z
 type: "forum-post"
 source: "bitcointalk"

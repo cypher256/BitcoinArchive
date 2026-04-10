@@ -1,5 +1,5 @@
 ---
-title: "Re: NAT背後での複数Bitcoinマシンのセットアップ"
+title: "Re: NAT環境下での複数Bitcoinマシンの設定"
 date: 2010-02-16T01:34:56.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: スケーラビリティ"
 date: 2010-07-14T02:20:45.000Z
 type: "forum-post"
 source: "bitcointalk"

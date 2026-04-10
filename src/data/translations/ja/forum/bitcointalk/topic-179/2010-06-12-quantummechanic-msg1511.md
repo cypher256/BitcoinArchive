@@ -1,5 +1,5 @@
 ---
-title: "Re:（QuantumMechanicの文脈投稿）"
+title: "Re: 技術的な説明"
 date: 2010-06-12T02:11:15.000Z
 type: "forum-post"
 source: "bitcointalk"

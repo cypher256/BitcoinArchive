@@ -1,5 +1,5 @@
 ---
-title: "Re:（bytemasterの文脈投稿）"
+title: "Re: 「コインリッピング」による初期トランザクション信頼の構築"
 date: 2010-08-04T00:17:33.000Z
 type: "forum-post"
 source: "bitcointalk"

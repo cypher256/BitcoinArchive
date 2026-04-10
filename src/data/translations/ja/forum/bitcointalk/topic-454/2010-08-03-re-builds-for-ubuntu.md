@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu用ビルド？"
+title: "Re: Ubuntu用ビルドは？"
 date: 2010-08-03T20:56:11.000Z
 type: "forum-post"
 source: "bitcointalk"

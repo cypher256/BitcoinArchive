@@ -1,5 +1,5 @@
 ---
-title: "Re: Faucetを使い果たしているスペインのやつは誰だ？"
+title: "Re: Faucetを使い果たしているスペイン人は誰だ？"
 date: 2010-08-05T17:06:03.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: IPアドレスの代わりにホスト名"
+title: "Re: IPアドレスの代わりにホスト名を"
 date: 2010-06-14T19:53:44.000Z
 type: "forum-post"
 source: "bitcointalk"

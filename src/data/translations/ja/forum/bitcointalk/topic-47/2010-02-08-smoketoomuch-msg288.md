@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin client and website translation"
+title: "Re: Bitcoinクライアントとウェブサイトの翻訳"
 date: 2010-02-08T21:36:01.000Z
 type: "forum-post"
 source: "bitcointalk"

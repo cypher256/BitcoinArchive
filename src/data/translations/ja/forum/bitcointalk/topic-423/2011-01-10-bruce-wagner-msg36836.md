@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin snack machine (fast transaction problem)"
+title: "Re: Bitcoin自動販売機（高速トランザクション問題）"
 date: 2011-01-10T05:03:06.000Z
 type: "forum-post"
 source: "bitcointalk"

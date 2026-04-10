@@ -1,5 +1,5 @@
 ---
-title: "Re: Setting up multiple bitcoin machines behind NAT"
+title: "Re: NAT環境下での複数Bitcoinマシンの設定"
 date: 2011-05-18T12:07:13.000Z
 type: "forum-post"
 source: "bitcointalk"

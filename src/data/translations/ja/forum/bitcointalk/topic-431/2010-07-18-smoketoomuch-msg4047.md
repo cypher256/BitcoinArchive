@@ -1,5 +1,5 @@
 ---
-title: "Re:（SmokeTooMuchの文脈投稿）"
+title: "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
 date: 2010-07-18T19:53:18.000Z
 type: "forum-post"
 source: "bitcointalk"

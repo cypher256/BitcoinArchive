@@ -1,5 +1,5 @@
 ---
-title: "Re: 最速のコンピュータはどのくらい速くビットコインを生成しますか？"
+title: "Re: 最速のコンピュータはどれくらいの速さでBitcoinを生成するのか？"
 date: 2010-06-22T04:35:26.000Z
 type: "forum-post"
 source: "bitcointalk"

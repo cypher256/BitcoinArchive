@@ -1,5 +1,5 @@
 ---
-title: "Re:（MoonShadowの文脈投稿）"
+title: "Re: Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）"
 date: 2010-08-09T20:12:02.000Z
 type: "forum-post"
 source: "bitcointalk"

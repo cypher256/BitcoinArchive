@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin.comは誰ですか"
+title: "Re: bitcoin.comは誰なのか"
 date: 2010-03-23T15:22:41.000Z
 type: "forum-post"
 source: "bitcointalk"

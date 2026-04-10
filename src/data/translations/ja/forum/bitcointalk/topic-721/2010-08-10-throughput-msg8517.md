@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin minting is thermodynamically perverse"
+title: "Re: Bitcoinの鋳造は熱力学的に逆説的"
 date: 2010-08-10T12:27:30.000Z
 type: "forum-post"
 source: "bitcointalk"

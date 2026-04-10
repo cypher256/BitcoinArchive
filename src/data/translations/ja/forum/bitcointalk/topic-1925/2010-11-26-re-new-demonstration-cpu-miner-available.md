@@ -1,5 +1,5 @@
 ---
-title: "Re: 新しいデモCPUマイナーが利用可能"
+title: "Re: 新しいデモンストレーション用CPUマイナーが利用可能に"
 date: 2010-11-26T22:02:41.000Z
 type: "forum-post"
 source: "bitcointalk"

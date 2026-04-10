@@ -1,5 +1,5 @@
 ---
-title: "Re: What's with this odd generation?"
+title: "Re: この奇妙な生成は何ですか？"
 date: 2010-02-24T02:54:25.000Z
 type: "forum-post"
 source: "bitcointalk"

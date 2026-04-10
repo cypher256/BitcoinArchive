@@ -1,5 +1,5 @@
 ---
-title: "Re: TOR and I2P"
+title: "Re: TORとI2P"
 date: 2010-02-01T21:36:47.000Z
 type: "forum-post"
 source: "bitcointalk"

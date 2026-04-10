@@ -1,5 +1,5 @@
 ---
-title: "Re: Exchange Methods"
+title: "Re: 両替方法"
 date: 2010-03-23T20:43:26.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: いくつかの提案"
 date: 2009-12-12T06:34:21.000Z
 type: "forum-post"
 source: "bitcointalk"

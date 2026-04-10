@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
 date: 2010-06-14T01:23:20.000Z
 type: "forum-post"
 source: "bitcointalk"

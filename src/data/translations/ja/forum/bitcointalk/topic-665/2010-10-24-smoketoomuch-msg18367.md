@@ -1,5 +1,5 @@
 ---
-title: "Re: 複数ウォレット、1台のコンピュータ（複数アカウント）"
+title: "Re: 複数のウォレット、1台のコンピュータ"
 date: 2010-10-24T20:58:32.000Z
 type: "forum-post"
 source: "bitcointalk"

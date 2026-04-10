@@ -1,5 +1,5 @@
 ---
-title: "Re: Version 0.3.18"
+title: "Re: バージョン0.3.18"
 date: 2010-12-09T17:03:09.000Z
 type: "forum-post"
 source: "bitcointalk"

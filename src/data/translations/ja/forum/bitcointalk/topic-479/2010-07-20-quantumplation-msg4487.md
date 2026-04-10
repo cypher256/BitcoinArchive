@@ -1,5 +1,5 @@
 ---
-title: "Re: Warning: don't use -server or bitcoind where you web browse (v0.3.2 and lower)"
+title: "Re: 警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）"
 date: 2010-07-20T16:59:46.000Z
 type: "forum-post"
 source: "bitcointalk"

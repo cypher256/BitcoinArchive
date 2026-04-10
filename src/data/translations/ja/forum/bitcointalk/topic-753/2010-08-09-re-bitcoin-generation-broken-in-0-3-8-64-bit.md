@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.8でBitcoin生成が壊れた？（64ビット）"
+title: "Re: 0.3.8でBitcoin生成が壊れた？"
 date: 2010-08-09T20:34:06.000Z
 type: "forum-post"
 source: "bitcointalk"

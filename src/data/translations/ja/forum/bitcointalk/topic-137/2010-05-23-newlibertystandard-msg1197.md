@@ -1,5 +1,5 @@
 ---
-title: "Re: Pizza for bitcoins?"
+title: "Re: ピザをビットコインで？"
 date: 2010-05-23T00:59:26.000Z
 type: "forum-post"
 source: "bitcointalk"

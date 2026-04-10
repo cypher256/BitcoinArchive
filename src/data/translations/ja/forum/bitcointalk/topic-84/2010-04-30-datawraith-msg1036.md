@@ -1,5 +1,5 @@
 ---
-title: "Re: On IRC bootstrapping"
+title: "Re: IRCブートストラッピングについて"
 date: 2010-04-30T14:51:14.000Z
 type: "forum-post"
 source: "bitcointalk"

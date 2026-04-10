@@ -1,5 +1,5 @@
 ---
-title: "Re: Anonymity"
+title: "Re: 匿名性"
 date: 2010-08-10T07:59:00.000Z
 type: "forum-post"
 source: "bitcointalk"

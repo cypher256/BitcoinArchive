@@ -1,5 +1,5 @@
 ---
-title: "Re: 8333以外のポートでの実行"
+title: "Re: 8333以外のポートで実行する"
 date: 2010-09-12T17:40:20.000Z
 type: "forum-post"
 source: "bitcointalk"

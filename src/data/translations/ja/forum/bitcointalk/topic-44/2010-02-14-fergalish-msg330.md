@@ -1,5 +1,5 @@
 ---
-title: "Re: How divisible are bitcoins and other market/economic questions"
+title: "Re: ビットコインの分割可能性と市場・経済に関する質問"
 date: 2010-02-14T16:46:18.000Z
 type: "forum-post"
 source: "bitcointalk"

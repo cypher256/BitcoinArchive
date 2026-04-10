@@ -1,5 +1,5 @@
 ---
-title: "Re: Flood attack 0.00000001 BC"
+title: "Re: フラッド攻撃 0.00000001 BC"
 date: 2010-08-05T16:37:53.000Z
 type: "forum-post"
 source: "bitcointalk"

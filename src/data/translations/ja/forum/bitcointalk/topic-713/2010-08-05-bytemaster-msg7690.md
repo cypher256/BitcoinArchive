@@ -1,5 +1,5 @@
 ---
-title: "Re:（bytemasterの文脈投稿）"
+title: "Re: トランザクション過負荷の解決策"
 date: 2010-08-05T16:14:00.000Z
 type: "forum-post"
 source: "bitcointalk"

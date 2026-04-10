@@ -1,5 +1,5 @@
 ---
-title: "Re: 現在のビットコイン経済モデルは持続不可能"
+title: "Re: この奇妙な生成は何ですか？"
 date: 2010-02-21T23:09:00Z
 type: "forum-post"
 source: "bitcointalk"

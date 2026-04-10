@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinのウェブサイト統合"
+title: "Re: BitcoinのWebサイト統合"
 date: 2010-07-16T18:23:04.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（NewLibertyStandardの文脈投稿）"
+title: "Re: 生成速度が劇的に低下"
 date: 2010-02-22T19:33:53.000Z
 type: "forum-post"
 source: "bitcointalk"

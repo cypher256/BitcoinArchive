@@ -1,5 +1,5 @@
 ---
-title: "Re: 提案：ビットコインと一緒に短いメッセージを送れるようにする？"
+title: "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T19:02:57.000Z
 type: "forum-post"
 source: "bitcointalk"

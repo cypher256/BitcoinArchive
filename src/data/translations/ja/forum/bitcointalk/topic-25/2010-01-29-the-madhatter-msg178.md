@@ -1,5 +1,5 @@
 ---
-title: "Re: A newb's test - anyone want to buy a picture for $1?"
+title: "Re: 初心者のテスト - 1ドルで写真を買いたい人はいる？"
 date: 2010-01-29T02:31:27.000Z
 type: "forum-post"
 source: "bitcointalk"

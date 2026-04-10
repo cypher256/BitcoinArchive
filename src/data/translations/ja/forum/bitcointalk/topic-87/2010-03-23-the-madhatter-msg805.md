@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: 両替方法"
 date: 2010-03-23T03:03:49.000Z
 type: "forum-post"
 source: "bitcointalk"

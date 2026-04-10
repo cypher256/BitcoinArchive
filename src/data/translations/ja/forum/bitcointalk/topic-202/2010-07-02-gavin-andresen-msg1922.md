@@ -1,5 +1,5 @@
 ---
-title: "Re: 大崩壊"
+title: "Re: 大規模なメルトダウン"
 date: 2010-07-02T00:21:53.000Z
 type: "forum-post"
 source: "bitcointalk"

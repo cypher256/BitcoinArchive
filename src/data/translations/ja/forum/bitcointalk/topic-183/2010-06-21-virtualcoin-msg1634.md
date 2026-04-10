@@ -1,5 +1,5 @@
 ---
-title: "Re: Get 5 free bitcoins from freebitcoins.appspot.com"
+title: "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
 date: 2010-06-21T09:55:13.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: checkpointing the block chain"
+title: "Re: ブロックチェーンのチェックポイント化"
 date: 2010-08-16T23:32:25.000Z
 type: "forum-post"
 source: "bitcointalk"

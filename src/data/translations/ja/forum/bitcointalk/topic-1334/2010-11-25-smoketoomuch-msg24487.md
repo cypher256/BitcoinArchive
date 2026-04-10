@@ -1,5 +1,5 @@
 ---
-title: "Re: python OpenCL bitcoin miner"
+title: "Re: 大衆向けOpenCLマイナー"
 date: 2010-11-25T22:14:06.000Z
 type: "forum-post"
 source: "bitcointalk"

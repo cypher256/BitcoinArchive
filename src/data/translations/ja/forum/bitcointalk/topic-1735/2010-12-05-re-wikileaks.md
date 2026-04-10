@@ -1,5 +1,5 @@
 ---
-title: "Re: WikiLeaksへのビットコイン寄付を歓迎しよう"
+title: "Re: ギャビンのCIAプレゼンテーション計画"
 date: 2010-12-05T09:08:08.000Z
 type: "forum-post"
 source: "bitcointalk"

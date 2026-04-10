@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: [PATCH] 'xlisttransactions'の実装"
 date: 2010-07-30T13:18:06.000Z
 type: "forum-post"
 source: "bitcointalk"

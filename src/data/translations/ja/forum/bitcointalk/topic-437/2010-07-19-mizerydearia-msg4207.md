@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin 0.3.2 released"
+title: "Re: Bitcoin 0.3.2 リリース"
 date: 2010-07-19T10:33:59.000Z
 type: "forum-post"
 source: "bitcointalk"

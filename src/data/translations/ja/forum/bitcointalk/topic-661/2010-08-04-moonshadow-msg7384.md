@@ -1,5 +1,5 @@
 ---
-title: "Re: What happens when network is split for prolonged time and reconnected?"
+title: "Re: ネットワークが長期間分断された後に再接続されたらどうなるか？"
 date: 2010-08-04T00:40:02.000Z
 type: "forum-post"
 source: "bitcointalk"

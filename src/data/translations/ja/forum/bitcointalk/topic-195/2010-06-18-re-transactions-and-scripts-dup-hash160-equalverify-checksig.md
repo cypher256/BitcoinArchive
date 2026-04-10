@@ -1,5 +1,5 @@
 ---
-title: "Re: トランザクションとスクリプト: DUP HASH160 ... EQUALVERIFY CHECKSIG"
+title: "Re: トランザクションとスクリプト：DUP HASH160 ... EQUALVERIFY CHECKSIG"
 date: 2010-06-18T16:17:14.000Z
 type: "forum-post"
 source: "bitcointalk"

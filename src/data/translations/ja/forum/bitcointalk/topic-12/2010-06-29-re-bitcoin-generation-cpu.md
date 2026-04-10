@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコイン生成とCPU使用率"
+title: "Re: いくつかの提案"
 date: 2010-06-29T17:55:00Z
 type: "forum-post"
 source: "bitcointalk"

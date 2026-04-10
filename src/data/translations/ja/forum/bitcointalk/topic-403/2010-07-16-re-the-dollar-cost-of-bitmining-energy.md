@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットマイニングのエネルギーのドルコスト"
+title: "Re: ビットマイニングのエネルギーコスト（ドル換算）"
 date: 2010-07-16T17:58:44.000Z
 type: "forum-post"
 source: "bitcointalk"

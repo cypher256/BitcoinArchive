@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNS and Generalizing Bitcoin"
+title: "Re: BitDNSとBitcoinの汎用化"
 date: 2011-01-06T15:55:15.000Z
 type: "forum-post"
 source: "bitcointalk"

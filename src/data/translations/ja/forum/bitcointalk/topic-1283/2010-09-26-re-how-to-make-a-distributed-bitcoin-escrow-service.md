@@ -1,5 +1,5 @@
 ---
-title: "Re: 分散型ビットコインエスクローサービスの作り方"
+title: "Re: 分散型BitCoinエスクローサービスの作り方"
 date: 2010-09-26T17:34:26.000Z
 type: "forum-post"
 source: "bitcointalk"

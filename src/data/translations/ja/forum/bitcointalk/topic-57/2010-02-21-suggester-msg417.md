@@ -1,5 +1,5 @@
 ---
-title: "Re: The current Bitcoin economic model doesn't work"
+title: "Re: 現在のBitcoin経済モデルは持続不可能"
 date: 2010-02-21T10:06:07.000Z
 type: "forum-post"
 source: "bitcointalk"

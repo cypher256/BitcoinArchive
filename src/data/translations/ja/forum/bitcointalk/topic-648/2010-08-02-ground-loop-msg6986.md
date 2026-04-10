@@ -1,5 +1,5 @@
 ---
-title: "Re:（Ground Loopの文脈投稿）"
+title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
 date: 2010-08-02T09:17:07.000Z
 type: "forum-post"
 source: "bitcointalk"

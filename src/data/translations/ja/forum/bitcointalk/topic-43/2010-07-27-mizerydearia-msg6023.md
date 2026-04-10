@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work difficulty increasing"
+title: "Re: Proof-of-work難易度の上昇"
 date: 2010-07-27T11:02:15.000Z
 type: "forum-post"
 source: "bitcointalk"

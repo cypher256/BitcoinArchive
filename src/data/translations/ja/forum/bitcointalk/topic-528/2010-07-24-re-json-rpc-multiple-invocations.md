@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPC複数呼び出し"
+title: "Re: JSON-RPCの複数呼び出し"
 date: 2010-07-24T00:59:08.000Z
 type: "forum-post"
 source: "bitcointalk"

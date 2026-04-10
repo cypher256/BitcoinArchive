@@ -1,5 +1,5 @@
 ---
-title: "Re:（mizerydearia の文脈投稿）"
+title: "Re: アラートシステムの開発"
 date: 2010-08-23T08:50:04.000Z
 type: "forum-post"
 source: "bitcointalk"

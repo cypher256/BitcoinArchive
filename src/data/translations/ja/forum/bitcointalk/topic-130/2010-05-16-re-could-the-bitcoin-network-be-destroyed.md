@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインネットワークは破壊できるのか..."
+title: "Re: Bitcoinアドレスを無限に生成し続けることでBitcoinネットワークは破壊されうるか"
 date: 2010-05-16T21:01:44.000Z
 type: "forum-post"
 source: "bitcointalk"

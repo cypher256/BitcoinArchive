@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: 初心者のテスト - 1ドルで写真を買いたい人はいる？"
 date: 2010-01-28T10:24:21.000Z
 type: "forum-post"
 source: "bitcointalk"

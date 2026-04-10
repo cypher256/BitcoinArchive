@@ -1,5 +1,5 @@
 ---
-title: "Re: （bitcoin2paysafeの文脈投稿）"
+title: "Re: ブロックがダウンロードされない - Microsoft Security Essentialsユーザーは必読"
 date: 2010-07-13T18:37:54.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 時間制限付きトランザクションを可能にするためにOP_BLOCKNUMBERが必要"
+title: "Re: 「時間」制限付きトランザクションを可能にするためにOP_BLOCKNUMBERが必要"
 date: 2010-11-15T18:37:44.000Z
 type: "forum-post"
 source: "bitcointalk"

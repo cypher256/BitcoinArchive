@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin mobile."
+title: "Re: Bitcoinモバイル"
 date: 2010-07-17T05:09:37.000Z
 type: "forum-post"
 source: "bitcointalk"

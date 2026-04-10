@@ -1,5 +1,5 @@
 ---
-title: "Re:（DataWraithの文脈投稿）"
+title: "Re: Bitcoin用URIスキーム"
 date: 2010-05-02T11:13:09.000Z
 type: "forum-post"
 source: "bitcointalk"

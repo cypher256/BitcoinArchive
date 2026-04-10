@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: JSON-RPCパスワード"
 date: 2010-07-22T01:11:26.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: （Quantumplationの文脈投稿）"
+title: "Re: BitcoinのWebサイト統合"
 date: 2010-07-16T14:02:55.000Z
 type: "forum-post"
 source: "bitcointalk"

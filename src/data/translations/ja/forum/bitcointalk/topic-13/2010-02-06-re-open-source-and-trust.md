@@ -1,5 +1,5 @@
 ---
-title: "Re: オープンソースと信頼"
+title: "Re: Bitcoinに関する質問"
 date: 2010-02-06T19:46:00Z
 type: "forum-post"
 source: "bitcointalk"

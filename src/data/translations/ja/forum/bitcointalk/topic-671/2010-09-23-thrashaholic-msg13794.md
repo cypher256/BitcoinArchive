@@ -1,5 +1,5 @@
 ---
-title: "Re:（thrashaholicの文脈投稿）"
+title: "Re: adf"
 date: 2010-09-23T05:06:50.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: Hash/sec Throttling for Democracy"
+title: "Re: 民主主義のためのハッシュ/秒スロットリング"
 date: 2010-07-14T20:45:10.000Z
 type: "forum-post"
 source: "bitcointalk"

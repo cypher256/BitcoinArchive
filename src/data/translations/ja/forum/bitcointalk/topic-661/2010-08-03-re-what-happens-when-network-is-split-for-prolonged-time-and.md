@@ -1,5 +1,5 @@
 ---
-title: "Re: ネットワークが長期間分断されて再接続された場合どうなるか？"
+title: "Re: ネットワークが長期間分断された後に再接続されたらどうなるか？"
 date: 2010-08-03T22:45:07.000Z
 type: "forum-post"
 source: "bitcointalk"

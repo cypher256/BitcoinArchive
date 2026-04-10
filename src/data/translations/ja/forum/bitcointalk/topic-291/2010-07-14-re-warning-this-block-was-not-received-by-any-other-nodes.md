@@ -1,5 +1,5 @@
 ---
-title: "Re: 警告: このブロックは他のノードに受信されませんでした"
+title: "Re: 警告：このブロックは他のどのノードにも受信されなかった"
 date: 2010-07-14T18:56:29.000Z
 type: "forum-post"
 source: "bitcointalk"

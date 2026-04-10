@@ -1,5 +1,5 @@
 ---
-title: "Re:（bytemasterの文脈投稿）"
+title: "Re: スケーラビリティとトランザクションレート"
 date: 2010-07-28T20:59:42.000Z
 type: "forum-post"
 source: "bitcointalk"

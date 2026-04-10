@@ -1,5 +1,5 @@
 ---
-title: "Re: （NewLibertyStandardの文脈投稿）"
+title: "Re: Bitcoin自動販売機（高速トランザクション問題）"
 date: 2010-07-17T08:36:19.000Z
 type: "forum-post"
 source: "bitcointalk"

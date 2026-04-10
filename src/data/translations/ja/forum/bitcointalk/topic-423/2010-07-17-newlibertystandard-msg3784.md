@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin自販機（高速トランザクション問題）"
+title: "Re: Bitcoin自動販売機（高速トランザクション問題）"
 date: 2010-07-17T18:37:58.000Z
 type: "forum-post"
 source: "bitcointalk"

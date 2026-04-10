@@ -1,5 +1,5 @@
 ---
-title: "Re: BUG Report: Rounding glitch"
+title: "Re: バグ報告：丸め処理の不具合"
 date: 2010-07-17T17:05:40.000Z
 type: "forum-post"
 source: "bitcointalk"

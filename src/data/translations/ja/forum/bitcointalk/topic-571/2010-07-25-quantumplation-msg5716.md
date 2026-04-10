@@ -1,5 +1,5 @@
 ---
-title: "Re: コインの窃取"
+title: "Re: コインの窃盗"
 date: 2010-07-25T18:09:40.000Z
 type: "forum-post"
 source: "bitcointalk"

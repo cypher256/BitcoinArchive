@@ -1,5 +1,5 @@
 ---
-title: "Re: Win7 64bit since last patch Tues now crashes"
+title: "Re: Win7 64bit 前回のパッチ火曜日以降クラッシュする"
 date: 2011-03-22T14:29:13.000Z
 type: "forum-post"
 source: "bitcointalk"

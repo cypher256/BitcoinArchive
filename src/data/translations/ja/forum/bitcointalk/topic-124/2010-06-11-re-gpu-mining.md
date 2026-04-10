@@ -1,5 +1,5 @@
 ---
-title: "Re: GPU マイニングが必要です！"
+title: "Re: Mac OS Xの完全なビルド手順と更新済みバイナリパッケージ"
 date: 2010-06-11T21:48:00Z
 type: "forum-post"
 source: "bitcointalk"

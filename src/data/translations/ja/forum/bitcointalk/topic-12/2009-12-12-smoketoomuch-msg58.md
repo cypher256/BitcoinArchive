@@ -1,5 +1,5 @@
 ---
-title: "Re: A few suggestions"
+title: "Re: いくつかの提案"
 date: 2009-12-12T20:46:14.000Z
 type: "forum-post"
 source: "bitcointalk"

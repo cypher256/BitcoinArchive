@@ -1,5 +1,5 @@
 ---
-title: "Re: Source code documentation"
+title: "Re: ソースコードのドキュメント"
 date: 2010-07-16T19:54:13.000Z
 type: "forum-post"
 source: "bitcointalk"

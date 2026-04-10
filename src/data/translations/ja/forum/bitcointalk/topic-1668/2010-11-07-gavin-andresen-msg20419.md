@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンの文脈投稿）"
+title: "Re: テストネットワークで行ったテスト、私の発見"
 date: 2010-11-07T02:14:29.000Z
 type: "forum-post"
 source: "bitcointalk"

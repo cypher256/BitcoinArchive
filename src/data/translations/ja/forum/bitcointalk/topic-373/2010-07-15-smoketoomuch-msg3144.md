@@ -1,5 +1,5 @@
 ---
-title: "Re: （SmokeTooMuchの文脈投稿）"
+title: "Re: [Bitcoin 0.3.0] ランタイムエラー"
 date: 2010-07-15T12:25:16.000Z
 type: "forum-post"
 source: "bitcointalk"

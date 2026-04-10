@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoindのIPアドレスへのトランザクション"
+title: "Re: bitcoindでIPアドレスへのトランザクション"
 date: 2010-08-05T17:28:40.000Z
 type: "forum-post"
 source: "bitcointalk"

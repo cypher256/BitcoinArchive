@@ -1,5 +1,5 @@
 ---
-title: "Re:（AndrewBuckの文脈投稿）"
+title: "Re: Bitcoin 0.3.2 リリース"
 date: 2010-07-18T14:14:04.000Z
 type: "forum-post"
 source: "bitcointalk"

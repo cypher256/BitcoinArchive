@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: JSON-RPC APIからのHTTPステータスコード"
 date: 2010-09-06T19:18:04.000Z
 type: "forum-post"
 source: "bitcointalk"

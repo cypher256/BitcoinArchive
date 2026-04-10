@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロックチェーンのチェックポイント"
+title: "Re: ブロックチェーンのチェックポイント化"
 date: 2010-08-16T22:42:28.000Z
 type: "forum-post"
 source: "bitcointalk"

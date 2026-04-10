@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンの文脈投稿）"
+title: "Re: レイテンシーと局所性"
 date: 2010-08-06T23:32:05.000Z
 type: "forum-post"
 source: "bitcointalk"

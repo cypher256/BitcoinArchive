@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work（プルーフ・オブ・ワーク）の難易度上昇"
+title: "Re: Proof-of-work難易度の上昇"
 date: 2010-07-27T03:04:58.000Z
 type: "forum-post"
 source: "bitcointalk"

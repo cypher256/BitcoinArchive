@@ -1,5 +1,5 @@
 ---
-title: "Re: Content-Lengthヘッダーと500エラー"
+title: "Re: 認証、JSON RPCとPython"
 date: 2010-08-03T21:26:26.000Z
 type: "forum-post"
 source: "bitcointalk"

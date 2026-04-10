@@ -1,5 +1,5 @@
 ---
-title: "Re: ネットワークサイズ"
+title: "Re: ネットワーク規模"
 date: 2010-07-17T23:25:16.000Z
 type: "forum-post"
 source: "bitcointalk"

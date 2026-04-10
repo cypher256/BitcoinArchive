@@ -1,5 +1,5 @@
 ---
-title: "Re: えーっと...私のビットコインはどこに行ったの？"
+title: "Re: dasg"
 date: 2010-05-18T20:06:46.000Z
 type: "forum-post"
 source: "bitcointalk"

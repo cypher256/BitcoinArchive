@@ -1,5 +1,5 @@
 ---
-title: "Re:（ギャビン・アンドレセンの文脈投稿）"
+title: "Re: Bitcoinの潜在的な弱点に関する専用の議論はどこか"
 date: 2010-08-11T16:10:56.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: フロントページに新しいスクリーンショットを？"
+title: "Re: トップページに新しいスクリーンショットを？"
 date: 2010-08-18T16:58:44.000Z
 type: "forum-post"
 source: "bitcointalk"

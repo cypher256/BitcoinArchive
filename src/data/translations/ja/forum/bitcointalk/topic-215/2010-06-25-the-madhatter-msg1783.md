@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin clients getting k-lined from the IRC bootstrapping channel"
+title: "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
 date: 2010-06-25T23:33:17.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 2回目のトランザクションは正しく動作していますか？"
+title: "Re: 2回目のトランザクションは正しく動作している？ ＋送金の質問"
 date: 2010-01-05T20:00:46.000Z
 type: "forum-post"
 source: "bitcointalk"

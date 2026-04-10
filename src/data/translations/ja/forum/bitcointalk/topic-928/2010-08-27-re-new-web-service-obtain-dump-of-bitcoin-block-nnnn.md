@@ -1,5 +1,5 @@
 ---
-title: "Re: 新しいWebサービス：ビットコインブロックNNNNのダンプを取得"
+title: "Re: 新しいWebサービス：Bitcoinブロック NNNNのダンプを取得"
 date: 2010-08-27T16:13:16.000Z
 type: "forum-post"
 source: "bitcointalk"

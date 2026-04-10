@@ -1,5 +1,5 @@
 ---
-title: "Re:（The Madhatterの文脈投稿）"
+title: "Re: 世界のための新しい通貨システム"
 date: 2010-05-09T04:39:07.000Z
 type: "forum-post"
 source: "bitcointalk"

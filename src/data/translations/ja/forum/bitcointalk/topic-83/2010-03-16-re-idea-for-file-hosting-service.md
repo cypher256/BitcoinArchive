@@ -1,5 +1,5 @@
 ---
-title: "Re: ファイルホスティングサービスのアイデア"
+title: "Re: ファイルホスティングとプロキシサービスのアイデア"
 date: 2010-03-16T20:17:34.000Z
 type: "forum-post"
 source: "bitcointalk"

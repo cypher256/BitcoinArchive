@@ -1,5 +1,5 @@
 ---
-title: "Re: Odd amount of generated coins"
+title: "Re: 生成されたコインの奇妙な量"
 date: 2010-05-20T21:03:55.000Z
 type: "forum-post"
 source: "bitcointalk"

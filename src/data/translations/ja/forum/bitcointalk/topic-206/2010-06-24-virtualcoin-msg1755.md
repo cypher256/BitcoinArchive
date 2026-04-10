@@ -1,5 +1,5 @@
 ---
-title: "Re: （virtualcoinの文脈投稿）"
+title: "Re: Bitcoin Faucetの変更"
 date: 2010-06-24T22:07:30.000Z
 type: "forum-post"
 source: "bitcointalk"

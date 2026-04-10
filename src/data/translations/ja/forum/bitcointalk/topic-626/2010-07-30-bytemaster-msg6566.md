@@ -1,5 +1,5 @@
 ---
-title: "Re: *** ALERT *** Upgrade to 0.3.6"
+title: "Re: *** 警告 *** 0.3.6にアップグレードしてください"
 date: 2010-07-30T01:05:40.000Z
 type: "forum-post"
 source: "bitcointalk"

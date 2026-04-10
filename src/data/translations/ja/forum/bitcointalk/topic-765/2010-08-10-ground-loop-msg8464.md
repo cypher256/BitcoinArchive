@@ -1,5 +1,5 @@
 ---
-title: "Re:（Ground Loopの文脈投稿）"
+title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
 date: 2010-08-10T03:38:23.000Z
 type: "forum-post"
 source: "bitcointalk"

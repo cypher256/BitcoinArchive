@@ -1,5 +1,5 @@
 ---
-title: "Re:（Suggesterの文脈投稿）"
+title: "Re: ビットコインの分割可能性と市場・経済に関する質問"
 date: 2010-02-06T18:25:15.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（BitcoinFXの文脈投稿）"
+title: "Re: 「Bitcoin受付中」ロゴを作ろう"
 date: 2010-02-24T16:07:20.000Z
 type: "forum-post"
 source: "bitcointalk"

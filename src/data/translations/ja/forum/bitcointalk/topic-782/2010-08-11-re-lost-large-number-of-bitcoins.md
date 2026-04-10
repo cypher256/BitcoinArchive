@@ -1,5 +1,5 @@
 ---
-title: "Re: 大量のビットコインを紛失"
+title: "Re: 大量のBitcoinを失った"
 date: 2010-08-11T21:46:51.000Z
 type: "forum-post"
 source: "bitcointalk"

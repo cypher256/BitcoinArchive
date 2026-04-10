@@ -1,5 +1,5 @@
 ---
-title: "Re:（mizerydeariaの文脈投稿）"
+title: "Re: 難易度"
 date: 2010-07-28T00:31:31.000Z
 type: "forum-post"
 source: "bitcointalk"

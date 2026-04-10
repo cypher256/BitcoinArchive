@@ -1,5 +1,5 @@
 ---
-title: "Re: wikiの登録メール？"
+title: "Re: Wikiの登録確認メール？"
 date: 2010-07-29T02:10:46.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（DataWraithの文脈投稿）"
+title: "Re: Bitcoinを受け付けています [bitcoin.it/wiki/Tradeに移動]"
 date: 2010-05-19T19:52:42.000Z
 type: "forum-post"
 source: "bitcointalk"

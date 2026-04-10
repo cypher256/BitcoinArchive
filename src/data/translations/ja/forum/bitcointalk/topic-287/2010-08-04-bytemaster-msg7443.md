@@ -1,5 +1,5 @@
 ---
-title: "Re:（bytemasterの文脈投稿）"
+title: "Re: フラッド攻撃 0.00000001 BC"
 date: 2010-08-04T06:22:56.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 難易度：アクティブなノードが増えたのか、より高速なノードか？"
+title: "Re: 難易度：アクティブノードの増加か、より高速なノードか？"
 date: 2010-08-18T18:01:40.000Z
 type: "forum-post"
 source: "bitcointalk"

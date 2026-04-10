@@ -1,5 +1,5 @@
 ---
-title: "Re: PC Worldのビットコインに関する記事"
+title: "Re: dfg"
 date: 2010-12-11T23:39:00Z
 type: "forum-post"
 source: "bitcointalk"

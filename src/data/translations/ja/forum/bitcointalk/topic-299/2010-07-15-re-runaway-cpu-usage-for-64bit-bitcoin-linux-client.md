@@ -1,5 +1,5 @@
 ---
-title: "Re: 64bit Bitcoin（Linuxクライアント）のCPU使用率暴走"
+title: "Re: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
 date: 2010-07-15T00:18:23.000Z
 type: "forum-post"
 source: "bitcointalk"

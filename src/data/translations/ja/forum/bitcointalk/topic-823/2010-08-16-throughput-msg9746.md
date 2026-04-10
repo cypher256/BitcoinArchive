@@ -1,5 +1,5 @@
 ---
-title: "Re:（throughputの文脈投稿）"
+title: "Re: オーバーフローバグ 深刻"
 date: 2010-08-16T14:35:10.000Z
 type: "forum-post"
 source: "bitcointalk"

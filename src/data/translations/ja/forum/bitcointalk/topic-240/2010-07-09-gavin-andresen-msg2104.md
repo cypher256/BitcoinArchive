@@ -1,5 +1,5 @@
 ---
-title: "Re: （ギャビン・アンドレセンの文脈投稿）"
+title: "Re: セキュリティ"
 date: 2010-07-09T18:11:27.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re:（ShadowOfHarbringerの文脈投稿）"
+title: "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T17:59:43.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコインはどこまで分割できるか - 技術的な側面"
+title: "Re: ビットコインの分割可能性 - 技術的な側面"
 date: 2010-09-23T18:39:56.000Z
 type: "forum-post"
 source: "bitcointalk"

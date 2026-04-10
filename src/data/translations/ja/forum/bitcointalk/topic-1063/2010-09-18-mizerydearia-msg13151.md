@@ -1,5 +1,5 @@
 ---
-title: "Re:（mizerydeaiaの文脈投稿）"
+title: "Re: バグ？ /usr/bin/bitcoind &quot;&quot;"
 date: 2010-09-18T23:42:52.000Z
 type: "forum-post"
 source: "bitcointalk"

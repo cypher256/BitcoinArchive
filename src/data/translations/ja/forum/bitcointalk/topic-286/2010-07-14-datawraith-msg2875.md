@@ -1,5 +1,5 @@
 ---
-title: "Re:（DataWraithの文脈投稿）"
+title: "Re: スケーラビリティ"
 date: 2010-07-14T16:42:16.000Z
 type: "forum-post"
 source: "bitcointalk"

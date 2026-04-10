@@ -1,5 +1,5 @@
 ---
-title: "Re:（superbitcoinの文脈投稿）"
+title: "Re: 難易度：アクティブノードの増加か、より高速なノードか？"
 date: 2010-08-17T21:28:28.000Z
 type: "forum-post"
 source: "bitcointalk"

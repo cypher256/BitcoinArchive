@@ -1,5 +1,5 @@
 ---
-title: "Re: Fedora 13 libcrypto"
+title: "Re: Fedora 13のlibcrypto"
 date: 2010-07-16T14:55:23.000Z
 type: "forum-post"
 source: "bitcointalk"

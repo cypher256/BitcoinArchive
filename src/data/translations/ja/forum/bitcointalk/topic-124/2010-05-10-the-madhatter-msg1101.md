@@ -1,5 +1,5 @@
 ---
-title: "Re: Mac OS X full build instructions and updated binary package"
+title: "Re: Mac OS Xの完全なビルド手順と更新済みバイナリパッケージ"
 date: 2010-05-10T12:41:06.000Z
 type: "forum-post"
 source: "bitcointalk"

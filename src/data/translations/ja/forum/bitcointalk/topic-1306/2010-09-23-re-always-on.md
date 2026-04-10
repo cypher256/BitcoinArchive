@@ -1,5 +1,5 @@
 ---
-title: "Re: 潜在的な災害シナリオ"
+title: "Re: ウォレットを壊してしまい、送金が承認されなくなった"
 date: 2010-09-23T16:09:00Z
 type: "forum-post"
 source: "bitcointalk"

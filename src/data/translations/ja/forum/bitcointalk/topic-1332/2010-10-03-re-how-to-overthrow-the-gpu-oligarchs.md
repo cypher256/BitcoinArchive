@@ -1,5 +1,5 @@
 ---
-title: "Re: GPU寡頭支配者を倒す方法"
+title: "Re: GPU寡頭制を打倒する方法"
 date: 2010-10-03T21:30:04.000Z
 type: "forum-post"
 source: "bitcointalk"

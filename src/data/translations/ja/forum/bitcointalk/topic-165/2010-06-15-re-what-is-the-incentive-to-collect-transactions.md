@@ -1,5 +1,5 @@
 ---
-title: "Re: トランザクションを収集するインセンティブは何ですか？"
+title: "Re: トランザクションを収集するインセンティブは何か？"
 date: 2010-06-15T23:41:29.000Z
 type: "forum-post"
 source: "bitcointalk"

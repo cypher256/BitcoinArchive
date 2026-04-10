@@ -1,5 +1,5 @@
 ---
-title: "Re: CryptoPPアサーションエラー"
+title: "Re: CryptoPPのアサーションエラー"
 date: 2010-09-05T23:25:32.000Z
 type: "forum-post"
 source: "bitcointalk"

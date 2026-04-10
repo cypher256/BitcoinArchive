@@ -1,5 +1,5 @@
 ---
-title: "Re: Build error SVN r115 on my Mac: workaround"
+title: "Re: MacでのSVN r115ビルドエラー：回避策"
 date: 2010-07-28T21:40:55.000Z
 type: "forum-post"
 source: "bitcointalk"

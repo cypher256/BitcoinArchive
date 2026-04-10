@@ -1,5 +1,5 @@
 ---
-title: "Re: Win32 CPU Cycles vs 'Live Protection' Engines ?"
+title: "Re: Win32 CPUサイクル vs 'ライブプロテクション'エンジン"
 date: 2010-02-03T23:41:02.000Z
 type: "forum-post"
 source: "bitcointalk"
