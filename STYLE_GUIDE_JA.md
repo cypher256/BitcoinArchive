@@ -32,33 +32,44 @@ Use katakana for person names in Japanese-facing editorial elements:
   - biography prose
   - explanatory text written by the archive editor
 
+## Name Rendering Inside Translated Text
+
+Person names inside translated Japanese text — including blockquoted
+emails, forum posts, and letters — should use katakana, consistent with
+the surrounding Japanese prose. Don't leave English names untranslated
+just because they appear inside a quote block; the quote block contents
+are still Japanese editorial text after translation.
+
 ## What Stays In The Original Language
 
-Do not force katakana in the following cases — but **translate the content
-itself into Japanese**. This section is about name rendering within translated
-text, not about leaving entire passages in English.
+These are *not* translated to Japanese even inside Japanese-facing pages.
+They stay in their original form:
 
-- Person names inside direct quotes — use katakana, consistent with the
-  rest of the Japanese text
 - Source titles and publication names
 - Organization, product, and project names when the original form is more
   natural
 - Handles, pseudonyms, and brand-like identifiers
   - examples: `Cobra`, `theymos`, `COPA`, `Twitter`
 - Slugs, URLs, file paths, and structured metadata fields
+- Structural attribution lines (see "Quote Attribution Lines" below):
+  `[Quote from: NAME on DATE]`, `NAME wrote:` — these are UI/reply
+  headers, not prose, and must stay in English
 
 ## Translation Completeness
 
-All text on Japanese pages must be in Japanese, including quoted material.
-The site provides language switching — users who want the English original
-can switch to the English version. Do not leave English passages untranslated
-in Japanese entries.
+All prose text on Japanese pages must be in Japanese, including quoted
+material. The site provides language switching — users who want the
+English original can switch to the English version. Do not leave English
+passages untranslated in Japanese entries.
 
-- Quoted emails, forum posts, and letters → translate into Japanese
+- Quoted emails, forum posts, and letters → translate body into Japanese
 - Blockquoted excerpts in aftermath/narrative entries → translate into Japanese
-- Only preserve English for: URLs, code, commands, email headers, file paths,
-  and similar technical strings where the original form is functionally
-  necessary
+- Preserve English only for:
+  - URLs, code, commands, email headers, file paths, and similar
+    technical strings where the original form is functionally necessary
+  - Structural attribution lines (`[Quote from: ...]`, `NAME wrote:`)
+    — these are structural markers, not prose. See "Quote Attribution
+    Lines" section below for the full rule.
 
 ## BitcoinTalk Emoji Labels
 
