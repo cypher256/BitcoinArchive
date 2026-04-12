@@ -26,6 +26,9 @@ secondarySources:
     url: "https://21ideas.org/en/hal-finney/"
   - name: "Cryonics Archive — Alcor Case Summary A-1436"
     url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
+relatedEntries:
+  - aftermath/2019-04-01-fran-finney-hal-finney-profile
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 Fran Finney met [Hal Finney](/BitcoinArchive/participants/hal-finney/) at the California Institute of Technology (Caltech). She was a junior when Hal arrived as a freshman. She first saw him during "rotation week": "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled how people would cluster around him for philosophical discussions: "When he spoke, what he said was usually worth listening to."

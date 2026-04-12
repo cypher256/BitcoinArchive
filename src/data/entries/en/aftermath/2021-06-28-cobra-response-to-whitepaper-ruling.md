@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "CoinDesk — UK Court Orders Bitcoin.org to Remove White Paper"
     url: "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"
+relatedEntries:
+  - "aftermath/2021-06-28-cobra-biography"
+  - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
 ---
 
 All your fiat based assets are ultimately secured by the same legal system that today made it illegal for me to host the Bitcoin whitepaper because a notorious liar swore before a judge that he's Satoshi. A system where 'justice' depends on who's got the bigger wallet.

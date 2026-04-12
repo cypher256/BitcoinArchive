@@ -27,6 +27,9 @@ secondarySources:
     url: "https://www.judiciary.uk/judgments/copa-v-wright/"
   - name: "Bitcoin.org"
     url: "https://bitcoin.org/"
+relatedEntries:
+  - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2021-06-28-cobra-response-to-whitepaper-ruling"
 translationStatus: complete
 ---
 

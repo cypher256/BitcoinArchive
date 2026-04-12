@@ -38,6 +38,8 @@ secondarySources:
     url: "https://b10c.me/blog/004-the-incomplete-history-of-bitcoin-development/"
   - name: "SourceForge — Bitcoin SVN r252 (final commit)"
     url: "https://sourceforge.net/p/bitcoin/code/252/"
+relatedEntries:
+  - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
 ---
 
 The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 2010**, while the [SourceForge SVN repository](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) was still in active use. For approximately nine months, development occurred in parallel across both platforms. On September 13, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) made the final SVN commit (r252) with the message: "Development has moved to github."

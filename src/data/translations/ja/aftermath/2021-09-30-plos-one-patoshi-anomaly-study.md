@@ -38,6 +38,7 @@ relatedEntries:
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
+  - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
 translationStatus: complete
 ---
 

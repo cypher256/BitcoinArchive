@@ -25,6 +25,13 @@ secondarySources:
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
   - name: "Whale Alert Satoshi analysis"
     url: "https://whale-alert.io/satoshi"
+relatedEntries:
+  - aftermath/2013-04-17-sergio-demian-lerner-biography
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
+  - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
+  - aftermath/2019-04-16-sergio-lerner-patoshi-naming
+  - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
+  - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
 ---
 
 Multiple independent analyses have attempted to quantify the number of bitcoins mined by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) during Bitcoin's earliest months. The most cited research, originally conducted by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) in 2013 and refined in subsequent years, identified a distinctive mining pattern that has become known as the "Patoshi pattern."

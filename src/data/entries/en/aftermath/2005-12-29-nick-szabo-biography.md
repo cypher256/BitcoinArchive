@@ -29,6 +29,9 @@ secondarySources:
     url: "https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html"
   - name: "Nick Szabo — 'Smart Contracts: Building Blocks for Digital Markets' (1996)"
     url: "https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html"
+relatedEntries:
+  - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
+  - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
 ---
 
 Nick Szabo is a computer scientist, legal scholar, and cryptographer known for his pioneering work on digital currency and smart contracts. His real identity and background remain largely private.

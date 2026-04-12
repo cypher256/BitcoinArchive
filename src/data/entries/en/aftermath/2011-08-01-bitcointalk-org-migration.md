@@ -25,6 +25,10 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/BitcoinTalk"
   - name: "BitcoinTalk Forum"
     url: "https://bitcointalk.org/"
+relatedEntries:
+  - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
 ---
 
 In August 2011, the Bitcoin Forum completed its migration from its original location at bitcoin.org/smf to the independent domain bitcointalk.org. This was a significant milestone in Bitcoin's community infrastructure, separating the primary discussion forum from the bitcoin.org website.

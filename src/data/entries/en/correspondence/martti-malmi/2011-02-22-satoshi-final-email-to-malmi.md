@@ -28,6 +28,9 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - aftermath/2011-08-01-bitcointalk-org-migration
 ---
 
 On February 22, 2011, Satoshi Nakamoto sent what would be his final email to Martti Malmi. The email included a PGP signature and provided the password for the Bitcoin project's mailman mailing list, effectively transferring another piece of project infrastructure.

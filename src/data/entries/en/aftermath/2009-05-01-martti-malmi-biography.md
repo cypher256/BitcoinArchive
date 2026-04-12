@@ -31,6 +31,10 @@ secondarySources:
     url: "https://www.opencrypto.org/"
   - name: "Satoshi's Bitcoin 0.2 release announcement (December 2009)"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/29/"
+relatedEntries:
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-08-01-bitcointalk-org-migration
 ---
 
 Martti Malmi (born 1988, Helsinki, Finland) is a software developer who became one of the earliest and most significant contributors to Bitcoin. He studied computer science at Helsinki University of Technology (now Aalto University).

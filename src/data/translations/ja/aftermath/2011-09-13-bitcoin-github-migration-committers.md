@@ -38,6 +38,8 @@ secondarySources:
     url: "https://b10c.me/blog/004-the-incomplete-history-of-bitcoin-development/"
   - name: "SourceForge — Bitcoin SVN r252 (final commit)"
     url: "https://sourceforge.net/p/bitcoin/code/252/"
+relatedEntries:
+  - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
 translationStatus: complete
 ---
 

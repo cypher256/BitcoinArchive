@@ -27,6 +27,9 @@ secondarySources:
     url: "https://21ideas.org/en/hal-finney/"
   - name: "Cryonics Archive — Alcor Case Summary A-1436"
     url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
+relatedEntries:
+  - aftermath/2014-08-28-fran-finney-biography
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life Extension Foundation), an extensive profile of [Hal Finney](/BitcoinArchive/participants/hal-finney/) was published based primarily on interviews with his wife, Fran Finney. The profile was subsequently adapted by Dan Held and republished on 21ideas.org on March 30, 2020.

@@ -22,6 +22,9 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin"
   - name: "CoinMarketCap — Satoshi Files: Nick Szabo"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-nick-szabo"
+relatedEntries:
+  - "aftermath/2005-12-29-nick-szabo-biography"
+  - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
 ---
 
 Bit gold would greatly benefit from a demo, an experimental market (with e.g. a trusted third party substituted for the complex security that would be needed for a real system). Anybody want to help me code one up?

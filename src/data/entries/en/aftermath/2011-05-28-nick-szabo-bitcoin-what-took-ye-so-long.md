@@ -25,6 +25,9 @@ tags:
 secondarySources:
   - name: "Gwern Mirror"
     url: "https://gwern.net/doc/www/unenumerated.blogspot.com/3ecbb48879787f383ef10206358e0a14adf2f5dd.html"
+relatedEntries:
+  - "aftermath/2005-12-29-nick-szabo-biography"
+  - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
 ---
 
 > While the security technology is very far from trivial, the "why" was by far the biggest stumbling block -- nearly everybody who heard the general idea thought it was a very bad idea.

@@ -33,6 +33,10 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
   - name: "Vice/Motherboard — Satoshi Nakamoto Emails (August 2017)"
     url: "https://www.vice.com/en/article/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails/"
+relatedEntries:
+  - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
+  - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
+  - aftermath/2017-08-11-mike-hearn-publishes-emails
 translationStatus: complete
 ---
 

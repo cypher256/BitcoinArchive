@@ -22,6 +22,8 @@ tags:
 secondarySources:
   - name: "Associated Press - Dorian Nakamoto denial"
     url: "https://apnews.com/article/8aa53f3e7be44e85945e284ab9942ce0"
+relatedEntries:
+  - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
 ---
 
 On March 6, 2014, Newsweek published a cover story titled "The Face Behind Bitcoin" by journalist Leah McGrath Goodman, claiming to have identified Bitcoin's creator. The article pointed to Dorian Prentice Satoshi Nakamoto, a 64-year-old Japanese-American physicist and systems engineer living in Temple City, California.

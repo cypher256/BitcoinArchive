@@ -22,6 +22,9 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin"
   - name: "CoinMarketCap — Satoshi Files: Nick Szabo"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-nick-szabo"
+relatedEntries:
+  - "aftermath/2005-12-29-nick-szabo-biography"
+  - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
 translationStatus: complete
 ---
 

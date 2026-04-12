@@ -32,8 +32,10 @@ relatedEntries:
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2014-08-28-hal-finney-passes-away
-  - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2019-08-21-hal-finney-rpow-recognition
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2014-08-28-fran-finney-biography
+  - aftermath/2019-04-01-fran-finney-hal-finney-profile
 ---
 
 On November 26, 2020, CoinDesk published "Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle" by Michael Kapilkov, revealing three emails between [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Hal Finney](/BitcoinArchive/participants/hal-finney/).

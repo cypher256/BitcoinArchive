@@ -21,7 +21,14 @@ interface Props {
 const { lang, relatedIds } = Astro.props;
 const t = useTranslations(lang);
 
-let targets: { id: string; title: string; date: Date }[] = [];
+interface Target {
+  id: string;
+  title: string;
+  date: Date;
+  href: string;
+}
+
+let targets: Target[] = [];
 
 if (relatedIds.length > 0) {
   const collectionName = lang === 'ja' ? 'entries_ja' : 'entries';
@@ -29,16 +36,30 @@ if (relatedIds.length > 0) {
   const byId = new Map(all.map((e) => [e.id, e]));
 
   targets = relatedIds
-    .map((id) => {
+    .map((id): Target | null => {
       const entry = byId.get(id);
       if (!entry) return null;
+
+      // Biography entries are not routed at /entries/{id}/ — they live at
+      // /participants/{slug}/. Use the primary participant slug from the
+      // biography frontmatter.
+      let href: string;
+      if (entry.data.type === 'biography') {
+        const primarySlug = entry.data.participants?.[0]?.slug;
+        if (!primarySlug) return null;
+        href = localePath(`/participants/${primarySlug}/`, lang);
+      } else {
+        href = localePath(`/entries/${entry.id}/`, lang);
+      }
+
       return {
         id: entry.id,
         title: entry.data.title,
         date: entry.data.date,
+        href,
       };
     })
-    .filter((x): x is { id: string; title: string; date: Date } => x !== null)
+    .filter((x): x is Target => x !== null)
     .sort((a, b) => a.date.getTime() - b.date.getTime());
 }
 ---
@@ -49,7 +70,7 @@ if (relatedIds.length > 0) {
     <ul>
       {targets.map((entry) => (
         <li>
-          <a href={localePath(`/entries/${entry.id}/`, lang)}>
+          <a href={entry.href}>
             <time datetime={entry.date.toISOString()}>{formatDate(entry.date, lang)}</time>
             <span class="related-title">{entry.title}</span>
           </a>

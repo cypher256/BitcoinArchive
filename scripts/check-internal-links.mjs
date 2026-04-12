@@ -147,11 +147,22 @@ function addEntry(baseDir, lang) {
   for (const file of files) {
     const rel = path.relative(baseDir, file);
     const id = computeEntryId(rel);
-    validPaths.add(`${langPrefix}/entries/${id}/`);
 
     const content = readFileSync(file, 'utf-8');
     const fm = parseFrontmatter(content);
-    if (!fm) continue;
+    if (!fm) {
+      validPaths.add(`${langPrefix}/entries/${id}/`);
+      continue;
+    }
+
+    // Biography entries are NOT routed at /entries/{id}/ — they live at
+    // /participants/{slug}/ only. See entries/[...slug].astro which filters
+    // out type === 'biography'. So we do not add the /entries/ path for
+    // biography entries; validators must route them via /participants/.
+    const isBiography = fm.type === 'biography';
+    if (!isBiography) {
+      validPaths.add(`${langPrefix}/entries/${id}/`);
+    }
 
     for (const p of fm.participants) {
       if (p.slug) validPaths.add(`${langPrefix}/participants/${p.slug}/`);
@@ -167,6 +178,8 @@ function addEntry(baseDir, lang) {
       file: path.relative(process.cwd(), file),
       relatedEntries: fm.relatedEntries || [],
       threadId,
+      type: fm.type,
+      isBiography,
     });
   }
 }

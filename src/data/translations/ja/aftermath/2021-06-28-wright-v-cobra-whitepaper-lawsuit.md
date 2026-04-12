@@ -26,6 +26,9 @@ secondarySources:
     url: "https://cointelegraph.com/news/craig-wright-wins-default-judgment-bitcoin-org-must-remove-bitcoin-whitepaper"
   - name: "Decrypt — Bitcoin inventor whitepaper lawsuit"
     url: "https://decrypt.co/74657/bitcoin-inventor-whitepaper-lawsuit-craig-wright-cobra"
+relatedEntries:
+  - "aftermath/2021-06-28-cobra-biography"
+  - "aftermath/2021-06-28-cobra-response-to-whitepaper-ruling"
 translationStatus: complete
 ---
 

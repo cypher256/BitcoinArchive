@@ -23,6 +23,10 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
   - name: "Slashdot — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails"
     url: "https://slashdot.org/story/17/08/11/1940213/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails"
+relatedEntries:
+  - aftermath/2009-04-12-mike-hearn-biography
+  - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
+  - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
 translationStatus: complete
 ---
 

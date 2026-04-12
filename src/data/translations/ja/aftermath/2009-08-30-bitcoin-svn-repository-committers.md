@@ -33,6 +33,8 @@ secondarySources:
     url: "https://github.com/bitcoin/bitcoin/issues/7512"
   - name: "research-note/bitcoin-legacy — Git mirror of Bitcoin SVN"
     url: "https://github.com/research-note/bitcoin-legacy"
+relatedEntries:
+  - "aftermath/2011-09-13-bitcoin-github-migration-committers"
 translationStatus: complete
 ---
 

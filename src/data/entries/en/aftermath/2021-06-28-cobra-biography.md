@@ -27,6 +27,9 @@ secondarySources:
     url: "https://www.judiciary.uk/judgments/copa-v-wright/"
   - name: "Bitcoin.org"
     url: "https://bitcoin.org/"
+relatedEntries:
+  - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2021-06-28-cobra-response-to-whitepaper-ruling"
 ---
 
 Cobra (also stylized as Cøbra) is the pseudonymous operator of bitcoin.org, the website registered by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) in August 2008. Cobra's real identity is unknown.

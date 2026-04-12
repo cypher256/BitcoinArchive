@@ -23,6 +23,10 @@ secondarySources:
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
   - name: "Slashdot — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails"
     url: "https://slashdot.org/story/17/08/11/1940213/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails"
+relatedEntries:
+  - aftermath/2009-04-12-mike-hearn-biography
+  - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
+  - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
 ---
 
 In August 2017, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/)'s complete email correspondence with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was made public. The emails were first shared on BitcoinTalk by a user named CipherionX, and subsequently published on Hearn's personal website. The emails span from early 2009 to April 2011 and cover topics including:

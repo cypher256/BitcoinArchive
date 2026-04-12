@@ -27,6 +27,9 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
+  - aftermath/2009-05-01-martti-malmi-biography
+  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-08-01-bitcointalk-org-migration
 translationStatus: complete
 ---
 <!-- tone-skip -->

@@ -18,6 +18,8 @@ tags:
 secondarySources:
   - name: "Newsweek Article"
     url: "https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html"
+relatedEntries:
+  - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
 ---
 
 I am not Dorian Nakamoto.
