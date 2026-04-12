@@ -22,6 +22,8 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---
 

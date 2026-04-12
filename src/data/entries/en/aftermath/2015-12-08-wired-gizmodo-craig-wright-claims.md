@@ -25,6 +25,11 @@ secondarySources:
     url: "https://gizmodo.com/this-australian-says-he-and-his-dead-friend-invented-bi-1746958692"
   - name: "Wired follow-up questioning evidence"
     url: "https://www.wired.com/2015/12/new-clues-suggest-satoshi-suspect-craig-wright-may-be-a-hoax/"
+relatedEntries:
+  - "aftermath/2016-05-02-craig-wright-biography"
+  - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
+  - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2024-03-14-copa-v-wright-ruling"
 ---
 
 On December 8, 2015, Wired and Gizmodo simultaneously published investigations identifying Australian computer scientist and businessman Craig Steven Wright as the likely creator of Bitcoin — i.e. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).

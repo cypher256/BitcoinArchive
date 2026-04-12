@@ -27,6 +27,11 @@ secondarySources:
     url: "https://www.vice.com/en/article/craig-wright-satoshi-nakamoto-evidence-signature-is-worthless/"
   - name: "Fortune — Bitcoin's 'Creator' Has Finally Unmasked Himself. (Maybe.)"
     url: "https://fortune.com/2016/05/02/bitcoin-satoshi-wright/"
+relatedEntries:
+  - "aftermath/2016-05-02-craig-wright-biography"
+  - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
+  - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2024-03-14-copa-v-wright-ruling"
 ---
 
 On May 2, 2016, Australian businessman Craig Wright publicly claimed to be Satoshi Nakamoto in coordinated interviews with the BBC, The Economist, and GQ magazine.

@@ -29,6 +29,9 @@ secondarySources:
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto Institute — Cryptography Mailing List Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/"
+relatedEntries:
+  - aftermath/2017-09-20-ray-dillinger-if-id-known
+  - aftermath/2018-10-01-ray-dillinger-interview
 ---
 
 Ray Dillinger is a computer scientist known by his online handles "bear" and "cryddit." He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades. He is one of two people — along with [Hal Finney](/BitcoinArchive/participants/hal-finney/) — known to have reviewed [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s Bitcoin source code before its public release.

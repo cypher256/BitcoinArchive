@@ -18,6 +18,8 @@ tags:
 secondarySources:
   - name: "Block 0 on Blockstream Explorer"
     url: "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
+relatedEntries:
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
 translationStatus: complete
 featured: true
 ---

@@ -34,6 +34,12 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/546/"
   - name: "Satoshi's final known email to Gavin Andresen (April 26, 2011)"
     url: "https://satoshi.nakamotoinstitute.org/emails/gavin-andresen/"
+relatedEntries:
+  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
+  - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - sourceforge/2009-01-03-genesis-block
+  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2011-04-26-satoshi-final-known-email
 translationStatus: complete
 ---
 

@@ -25,6 +25,9 @@ tags:
 secondarySources:
   - name: "Ramon Quesada Mirror"
     url: "https://ramonquesada.com/english/interview-with-ray-dillinger/"
+relatedEntries:
+  - aftermath/2008-11-06-ray-dillinger-biography
+  - aftermath/2017-09-20-ray-dillinger-if-id-known
 ---
 
 *Interviewer: Tim Swanson (Great Wall of Numbers)*

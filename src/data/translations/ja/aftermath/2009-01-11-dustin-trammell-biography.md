@@ -28,6 +28,9 @@ secondarySources:
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto's email to Trammell (January 13, 2009)"
     url: "https://satoshi.nakamotoinstitute.org/emails/dustin-trammell/3/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email
+  - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
 translationStatus: complete
 ---
 

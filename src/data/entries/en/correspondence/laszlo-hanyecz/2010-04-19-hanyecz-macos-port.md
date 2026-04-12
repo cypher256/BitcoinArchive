@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
 ---
 
 [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010.

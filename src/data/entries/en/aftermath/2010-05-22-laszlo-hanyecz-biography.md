@@ -30,6 +30,9 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2020/05/22/10-years-after-laszlo-hanyecz-bought-pizza-with-10k-bitcoin-he-has-no-regrets"
   - name: "Lightning Network Pizza Transaction (February 2018)"
     url: "https://bitcoinmagazine.com/articles/laszlo-hanyecz-spends-bitcoin-pizza-again-time-lightning-network"
+relatedEntries:
+  - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
+  - aftermath/2010-05-22-bitcoin-pizza-day
 ---
 
 Laszlo Hanyecz is a software developer based in Jacksonville, Florida, who made several foundational contributions to Bitcoin's early development. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on technical matters and is best known for the first real-world commercial Bitcoin transaction.

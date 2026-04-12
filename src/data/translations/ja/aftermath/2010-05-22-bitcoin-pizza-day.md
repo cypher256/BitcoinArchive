@@ -28,6 +28,7 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
   - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
 translationStatus: complete
 featured: true
 ---

@@ -28,6 +28,9 @@ secondarySources:
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto's email to Trammell (January 13, 2009)"
     url: "https://satoshi.nakamotoinstitute.org/emails/dustin-trammell/3/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email
+  - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
 ---
 
 Dustin D. Trammell is an information security researcher based in Austin, Texas. He has worked in the cybersecurity industry and is known in the infosec community for his research on vulnerabilities and exploit development. He was among the very first people to download and run Bitcoin after its public release.

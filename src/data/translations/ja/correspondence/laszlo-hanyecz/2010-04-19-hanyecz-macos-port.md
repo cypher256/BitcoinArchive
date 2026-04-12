@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
 translationStatus: complete
 ---
 

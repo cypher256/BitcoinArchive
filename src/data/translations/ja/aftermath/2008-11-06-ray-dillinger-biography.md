@@ -29,6 +29,9 @@ secondarySources:
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto Institute — Cryptography Mailing List Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/"
+relatedEntries:
+  - aftermath/2017-09-20-ray-dillinger-if-id-known
+  - aftermath/2018-10-01-ray-dillinger-interview
 translationStatus: complete
 ---
 

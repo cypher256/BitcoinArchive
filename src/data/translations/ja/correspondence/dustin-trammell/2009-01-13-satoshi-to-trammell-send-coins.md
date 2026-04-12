@@ -23,6 +23,8 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Dustin Trammell's Blog - Block 286"
     url: "https://blog.dustintrammell.com/block-286-and-satoshis-coins/"
+relatedEntries:
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---
 

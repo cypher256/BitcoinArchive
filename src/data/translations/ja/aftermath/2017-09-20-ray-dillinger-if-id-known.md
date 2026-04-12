@@ -27,6 +27,9 @@ secondarySources:
     url: "https://bitcoinvn.io/news/bitcoin-if-id-known-what-we-were-starting/"
   - name: "Hacker News Discussion"
     url: "https://news.ycombinator.com/item?id=15299849"
+relatedEntries:
+  - aftermath/2008-11-06-ray-dillinger-biography
+  - aftermath/2018-10-01-ray-dillinger-interview
 translationStatus: complete
 ---
 

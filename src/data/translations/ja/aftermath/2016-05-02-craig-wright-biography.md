@@ -26,6 +26,11 @@ secondarySources:
     url: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
   - name: "The Economist — Craig Wright claims to be Satoshi Nakamoto (May 2, 2016)"
     url: "https://www.economist.com/briefing/2016/05/02/craig-steven-wright-claims-to-be-satoshi-nakamoto"
+relatedEntries:
+  - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
+  - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
+  - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2024-03-14-copa-v-wright-ruling"
 translationStatus: complete
 ---
 

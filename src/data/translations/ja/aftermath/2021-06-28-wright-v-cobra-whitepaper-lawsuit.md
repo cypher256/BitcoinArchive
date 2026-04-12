@@ -29,6 +29,10 @@ secondarySources:
 relatedEntries:
   - "aftermath/2021-06-28-cobra-biography"
   - "aftermath/2021-06-28-cobra-response-to-whitepaper-ruling"
+  - "aftermath/2016-05-02-craig-wright-biography"
+  - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
+  - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
+  - "aftermath/2024-03-14-copa-v-wright-ruling"
 translationStatus: complete
 ---
 
