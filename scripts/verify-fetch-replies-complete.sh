@@ -1,10 +1,22 @@
 #!/bin/bash
-# verify-fetch-replies-complete.sh — Phase 7 final verification
+# verify-fetch-replies-complete.sh — Disk consistency check for fetch-replies
 #
-# Checks all completion criteria for the fetch-replies-to-satoshi pipeline:
+# IMPORTANT: This is NOT a completeness proof. It is a disk-only consistency
+# check with known limitations:
+#   - Rule A: verified relative to on-disk data (cannot detect fetch-phase
+#     bugs that consistently skipped msgIds we never knew existed)
+#   - Rule B: only a lower bound (on-disk posts that quote Satoshi). Proving
+#     no other quoting post exists requires re-running fetch-replies-to-satoshi.mjs
+#     against the live BitcoinTalk threads — which is slow and not done here.
+#
+# For authoritative Rule B verification (slow, network-dependent):
+#   bash scripts/verify-rule-b-authoritative.sh
+#   (wraps fetch-replies-to-satoshi.mjs dry-run and parses its output)
+#
+# Checks performed:
 #   1. (optional) Existing files unchanged (SHA-1 against snapshot)
 #   2. EN/JA pair existence (every new EN file has a JA counterpart)
-#   3. Rule A / Rule B coverage (delegated to verify-rule-ab.mjs)
+#   3. Rule A disk consistency (delegated to verify-rule-ab.mjs)
 #   4. npm run check passes
 #
 # Usage:
@@ -19,7 +31,10 @@
 
 set -e
 
-echo "=== Phase 7: Final Verification ==="
+echo "=== Disk Consistency Check (fetch-replies pipeline) ==="
+echo "NOTE: This is disk-only. Authoritative Rule B completeness requires"
+echo "      running fetch-replies-to-satoshi.mjs (dry-run) against the live"
+echo "      BitcoinTalk threads."
 echo
 
 EXIT_CODE=0
@@ -102,9 +117,10 @@ echo "BitcoinTalk JA files: $JA_TOTAL"
 echo
 
 if [ "$EXIT_CODE" -eq 0 ]; then
-  echo "✓ Phase 7 verification complete"
+  echo "✓ Disk consistency checks passed"
+  echo "  (Rule B completeness is NOT proven here — see header note.)"
 else
-  echo "✗ Phase 7 verification FAILED"
+  echo "✗ Disk consistency check FAILED"
 fi
 
 exit "$EXIT_CODE"
