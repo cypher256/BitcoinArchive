@@ -31,4 +31,4 @@ translationStatus: complete
 
 「昨年の投稿で、ラビンの情報分散スキームが信頼性の低いリメイラーネットワークを経由して大きなファイルを送信するのに有用だと提案したことのフォローアップとして、 **自分のCrypto++ライブラリ** からDisperse/Collectというシェアウェアパッケージを作成した。Disperseはファイルを冗長なピースに分割し、base 64でエンコードする。Collectはそれらをデコードし、元のファイルを再構成する。このソフトウェアは私のホームページ http://www.eskimo.com/~weidai からダウンロードできる。」
 
-*[この投稿は、1996年初頭までにウェイ・ダイがCrypto++暗号ライブラリを含む複数のソフトウェアプロジェクトを作成し公開していたことを確認する。Crypto++は後にMicrosoft Office GrooveやLastPassなどの商用製品に組み込まれるほどの完成度を持つライブラリとなった。ダイが後の1998年11月にb-moneyを実装なしで発表したのは、経験豊富なプログラマーによる意図的な選択であり、技術的な限界ではなかった。]*
+*[この投稿は、1996年初頭までに[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)がCrypto++暗号ライブラリを含む複数のソフトウェアプロジェクトを作成し公開していたことを確認する。Crypto++は後にMicrosoft Office GrooveやLastPassなどの商用製品に組み込まれるほどの完成度を持つライブラリとなった。ダイが後の1998年11月に[b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)を実装なしで発表したのは、経験豊富なプログラマーによる意図的な選択であり、技術的な限界ではなかった。]*

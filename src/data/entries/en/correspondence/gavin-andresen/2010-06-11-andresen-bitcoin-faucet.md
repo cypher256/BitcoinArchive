@@ -27,7 +27,7 @@ secondarySources:
     url: "https://coingeek.com/how-gavin-andresen-gave-away-19700-bitcoins-in-2010-the-bitcoin-faucet-turns-12/"
 ---
 
-Gavin Andresen, a software developer based in Amherst, Massachusetts, discovered Bitcoin in May 2010, approximately eighteen months after Satoshi published the whitepaper. He quickly became fascinated by the project and began corresponding with Satoshi via email and through the Bitcointalk forum.
+Gavin Andresen, a software developer based in Amherst, Massachusetts, discovered Bitcoin in May 2010, approximately eighteen months after Satoshi published [the whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). He quickly became fascinated by the project and began corresponding with Satoshi via email and through the Bitcointalk forum.
 
 After chatting with Satoshi about Bitcoin and its potential, Andresen identified a key barrier to adoption: new users needed a way to obtain coins without having to mine them. His solution was the Bitcoin Faucet -- a website that gave away free bitcoins (initially 5 BTC per visitor) to anyone who completed a CAPTCHA.
 

@@ -27,11 +27,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-On November 23, 2020, Doncho Karaivanov published a detailed analysis on Chain Bulletin arguing that Satoshi Nakamoto was based in London while developing Bitcoin. The article combines multiple lines of evidence.
+On November 23, 2020, Doncho Karaivanov published a detailed analysis on Chain Bulletin arguing that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was based in London while developing Bitcoin. The article combines multiple lines of evidence.
 
 **The Times headline evidence:**
 
-The Genesis Block contains the message: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks." Karaivanov demonstrates that this exact headline appeared only in the UK print edition of The Times of London — not in US distributions, which carried substantially different content and layout. In 2008, 770,000 of The Times' 1.8 million print readers (43%) were London-based, making the capital statistically the most likely access point for the physical newspaper.
+The [Genesis Block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/) contains the message: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks." Karaivanov demonstrates that this exact headline appeared only in the UK print edition of The Times of London — not in US distributions, which carried substantially different content and layout. In 2008, 770,000 of The Times' 1.8 million print readers (43%) were London-based, making the capital statistically the most likely access point for the physical newspaper.
 
 **Timestamp analysis:**
 

@@ -28,7 +28,7 @@ translationStatus: complete
 
 *BREAKER Magazine、2018年10月29日より：*
 
-ジェフ・ガージックは2010年7月のSlashdot投稿「Great Slashdotting」でビットコインv0.3を発見した。Red Hatで働きながら5年間ビットコインのコア開発者として活動した。ある時点では、ビットコインのコードベースへの貢献度はサトシ・ナカモトとギャビン・アンドレセンに次いで3番目だった。
+[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)は2010年7月の[Slashdot投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)「Great Slashdotting」でビットコインv0.3を発見した。Red Hatで働きながら5年間ビットコインのコア開発者として活動した。ある時点では、ビットコインのコードベースへの貢献度は[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次いで3番目だった。
 
 サトシは「実用的で正気であり、やり取りは非常に容易で快適だった」。
 

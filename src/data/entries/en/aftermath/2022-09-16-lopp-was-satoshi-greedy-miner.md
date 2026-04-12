@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-On September 16, 2022, Jameson Lopp published "Was Satoshi a Greedy Miner?" on his blog, directly challenging the narrative that Bitcoin's creator selfishly hoarded coins during the network's early days.
+On September 16, 2022, Jameson Lopp published "Was Satoshi a Greedy Miner?" on his blog, directly challenging the narrative that [Bitcoin's creator](/BitcoinArchive/participants/satoshi-nakamoto/) selfishly hoarded coins during the network's early days.
 
 **Key data points:**
 
@@ -47,4 +47,4 @@ Lopp models two alternative scenarios:
 
 The ~300-second pauses between consecutive blocks and the deliberate use of only 72.5% of available hashrate demonstrate that Satoshi prioritized network bootstrapping and decentralization over personal enrichment.
 
-Building on Sergio Demian Lerner's Patoshi pattern research, Lopp's analysis provided quantitative evidence that Satoshi's mining behavior was altruistic rather than extractive. The article concludes: "Anyone who claims that Satoshi was greedy simply hasn't done the math."
+Building on [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/)'s Patoshi pattern research, Lopp's analysis provided quantitative evidence that Satoshi's mining behavior was altruistic rather than extractive. The article concludes: "Anyone who claims that Satoshi was greedy simply hasn't done the math."

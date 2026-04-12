@@ -28,7 +28,7 @@ translationStatus: complete
 ミシェル・バウエンス（1958年3月21日生まれ）はベルギーの政治理論家、著述家であり、ピアプロダクション、ガバナンス、財産を研究するグローバル組織P2P Foundationの創設者である。ピアツーピア理論とコモンズベースのガバナンスの研究において著名な論者であり、エクアドル政府やゲント市のための移行計画を策定した。
 
 **サトシとのやり取り：**
-2009年2月12日、バウエンスは[P2P Researchメーリングリストにおけるサトシ・ナカモトのビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に最初に返信した人物であった。サトシにイニシアチブの共有を感謝し、コミュニティのより専門的なメンバーの意見を求めた。注目すべきことに、バウエンスはサトシが日本人であると想定し、P2P Foundationのウィキに日本のイニシアチブに関する情報を追加するよう依頼した。
+2009年2月12日、バウエンスは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の[P2P Researchメーリングリストにおけるビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に最初に返信した人物であった。サトシにイニシアチブの共有を感謝し、コミュニティのより専門的なメンバーの意見を求めた。注目すべきことに、バウエンスはサトシが日本人であると想定し、P2P Foundationのウィキに日本のイニシアチブに関する情報を追加するよう依頼した。
 
 2月13日、バウエンスはサトシに直接こう尋ねた。
 

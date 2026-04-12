@@ -28,11 +28,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-On October 1, 2024, Bitcoin Magazine's Pete Rizzo published an investigation into one of Bitcoin's most enduring technical mysteries: the approximately 5 days and 8 hours that elapsed between the Genesis Block (Block 0, January 3, 2009 at 18:15:05 UTC) and Block 1 (January 9, 2009 at 02:54:25 UTC).
+On October 1, 2024, Bitcoin Magazine's Pete Rizzo published an investigation into one of Bitcoin's most enduring technical mysteries: the approximately 5 days and 8 hours that elapsed between the [Genesis Block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/) (Block 0, January 3, 2009 at 18:15:05 UTC) and Block 1 (January 9, 2009 at 02:54:25 UTC).
 
 **The mystery:**
 
-Under normal mining conditions with Satoshi as the sole miner, the expected time between blocks would have been approximately 10 minutes. Yet the gap between Block 0 and Block 1 is roughly 750 times longer than expected. No blocks from this interval exist on the blockchain.
+Under normal mining conditions with [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) as the sole miner, the expected time between blocks would have been approximately 10 minutes. Yet the gap between Block 0 and Block 1 is roughly 750 times longer than expected. No blocks from this interval exist on the blockchain.
 
 **Prevailing theories:**
 
@@ -42,6 +42,6 @@ Under normal mining conditions with Satoshi as the sole miner, the expected time
 
 3. **Technical debugging** — Satoshi may have spent the intervening days fixing bugs discovered during initial testing, particularly in the peer-to-peer connection code that he later acknowledged had issues.
 
-4. **v0.1 preparation** — The gap aligns with the time needed to prepare the Bitcoin v0.1 software release (announced January 9 on the Cryptography Mailing List), suggesting Satoshi was packaging the software for public distribution.
+4. **v0.1 preparation** — The gap aligns with the time needed to prepare the [Bitcoin v0.1 software release](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) (announced January 9 on the Cryptography Mailing List), suggesting Satoshi was packaging the software for public distribution.
 
 The article notes that because the Genesis Block is hardcoded into Bitcoin's source code (unlike all subsequent blocks which are mined through proof-of-work), its timestamp may not represent the actual moment of creation. This technical distinction makes the true timeline of Bitcoin's birth fundamentally unknowable.

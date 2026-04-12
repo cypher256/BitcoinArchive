@@ -25,7 +25,7 @@ secondarySources:
 
 Hi Satoshi,
 
-I read your paper on BitCoin with great interest. I found it a bit confusing though - I believe it may be easier to follow if you provide some examples.
+I read [your paper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) on BitCoin with great interest. I found it a bit confusing though - I believe it may be easier to follow if you provide some examples.
 
 Specifically, it's not quite clear to me what blocks contain. If I understand correctly, there is only one (or maybe a few) global chain[s] into which all transactions are hashed. If there is only one chain recording "the story of the economy" so to speak, how does this scale? In an imaginary planet-wide deployment there would be millions of even billions of transactions per hour being hashed into the chain. I realize that each PoW can wrap many transactions in one block, nonetheless, that's a large amount of data to hash. If there are many chains, how are transactions assigned to each chain such that it is still difficult to overpower the network? Eg, if there are 10 global chains, the amount of cpu power you need to beat the system is only 10% of what it was previously.
 

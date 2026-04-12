@@ -27,11 +27,11 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/trammell-on-satoshi-bitcoin-white-paper-day"
 ---
 
-On October 23, 2021, Dustin D. Trammell appeared on the Stephan Livera Podcast (Episode 314: "The 2nd Node On The Bitcoin Network? The Early Days of Bitcoin") to provide the most detailed account of his experience as one of Bitcoin's very first users.
+On October 23, 2021, [Dustin D. Trammell](/BitcoinArchive/participants/dustin-trammell/) appeared on the Stephan Livera Podcast (Episode 314: "The 2nd Node On The Bitcoin Network? The Early Days of Bitcoin") to provide the most detailed account of his experience as one of Bitcoin's very first users.
 
 **The "one other node" experience:**
 
-Trammell described his first moments on the Bitcoin network after downloading and running the software shortly after Satoshi's January 9, 2009 [announcement on the Cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
+Trammell described his first moments on the Bitcoin network after downloading and running the software shortly after [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s January 9, 2009 [announcement on the Cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
 
 > "When it first started, it connected to one other node and that was it. It just sat there with one connection for about four to six hours, and then it started making other connections and other nodes began to come online."
 

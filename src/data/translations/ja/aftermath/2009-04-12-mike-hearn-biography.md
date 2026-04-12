@@ -36,7 +36,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-マイク・ハーンは、GoogleでGoogle Maps、Google Earth、Gmailのスパム対策システムなどのプロジェクトに従事したソフトウェアエンジニアである。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読みサトシ・ナカモトに直接連絡を取り、ビットコインの最初期の貢献者の一人となった。
+マイク・ハーンは、GoogleでGoogle Maps、Google Earth、Gmailのスパム対策システムなどのプロジェクトに従事したソフトウェアエンジニアである。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に直接連絡を取り、ビットコインの最初期の貢献者の一人となった。
 
 **サトシとの最初の接触：**
 2009年4月、ビットコインのローンチからわずか数ヶ月後、ハーンはホワイトペーパーを読んだ後にサトシ・ナカモトにメールを送った。これが2011年4月まで続く書簡の始まりとなった。ハーンは、初期のサイファーパンクサークル外からビットコインに本格的な技術的関心を寄せた最初期の人物の一人だった。

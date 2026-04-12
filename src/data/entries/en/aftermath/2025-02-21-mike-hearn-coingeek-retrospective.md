@@ -26,7 +26,7 @@ secondarySources:
     url: "https://www.coindesk.com/business/2021/02/12/former-bitcoin-developer-mike-hearn-steps-down-from-enterprise-blockchain-firm-r3"
 ---
 
-In a CoinGeek Weekly Livestream interview, Mike Hearn — one of the few people who [corresponded directly with Satoshi Nakamoto](/BitcoinArchive/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/) — offered rare personal reflections on Bitcoin's creator and the project's evolution.
+In a CoinGeek Weekly Livestream interview, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) — one of the few people who [corresponded directly with](/BitcoinArchive/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/) [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) — offered rare personal reflections on Bitcoin's creator and the project's evolution.
 
 **On Satoshi's personality:**
 

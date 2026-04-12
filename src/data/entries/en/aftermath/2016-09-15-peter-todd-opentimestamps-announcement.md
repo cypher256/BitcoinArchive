@@ -25,7 +25,7 @@ secondarySources:
     url: "https://lists.w3.org/Archives/Public/public-blockchain/2016Sep/0078.html"
 ---
 
-On September 15, 2016, Peter Todd announced OpenTimestamps, a system for creating cryptographic proofs that data existed at a specific point in time by anchoring timestamps to the Bitcoin blockchain.
+On September 15, 2016, [Peter Todd](/BitcoinArchive/participants/peter-todd/) announced OpenTimestamps, a system for creating cryptographic proofs that data existed at a specific point in time by anchoring timestamps to the Bitcoin blockchain.
 
 **How it works:**
 

@@ -24,7 +24,7 @@ secondarySources:
     url: "https://blog.dustintrammell.com/"
 ---
 
-Dustin D. Trammell, a security researcher using the handle "Druid," was among the very first people to download and run the Bitcoin software after Satoshi announced it on the Cryptography Mailing List on January 9, 2009.
+Dustin D. Trammell, a security researcher using the handle "Druid," was among the very first people to download and run the Bitcoin software after [Satoshi announced it on the Cryptography Mailing List on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).
 
 In this email dated January 11, 2009, Trammell wrote to Satoshi reporting on his experience with the alpha release. He mentioned that he was reading through the Bitcoin whitepaper and referenced the timestamp server section, sharing a link to publictimestamp.org as a potentially related resource.
 

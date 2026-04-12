@@ -34,7 +34,7 @@ On February 28, 2014, Mt. Gox — once the world's largest Bitcoin exchange, han
 
 At the press conference, Karpeles revealed that approximately **850,000 BTC** had been lost — 750,000 BTC belonging to customers and 100,000 BTC belonging to the company — worth approximately $450 million at the time. On March 20, 2014, Mt. Gox reported finding 199,999.99 BTC in an old wallet, reducing the total loss to approximately 650,000 BTC.
 
-The collapse was attributed to a long-running theft exploiting transaction malleability, though subsequent investigations revealed a more complex picture involving possible internal mismanagement.
+The collapse was attributed to a long-running theft exploiting transaction malleability, though subsequent investigations revealed a more complex picture involving possible internal mismanagement. In scale, the crisis dwarfed the [2010 value overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) — the previous largest Bitcoin-related incident.
 
 Media declared Bitcoin dead: "Bitcoin is finished." "It was a scam all along." Bitcoin's price crashed. But the protocol itself was unaffected — Mt. Gox was a centralized exchange, not a flaw in Bitcoin's decentralized network. The distinction between Bitcoin the protocol and centralized services built on top of it became a crucial lesson for the ecosystem.
 

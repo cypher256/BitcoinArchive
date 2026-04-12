@@ -28,7 +28,7 @@ secondarySources:
     url: "https://blockworks.co/news/satoshi-disappear-day-cia-bitcoin"
 ---
 
-In his reply to Satoshi's "alert key" email, Gavin Andresen addressed several points. He acknowledged reading a Forbes article and agreed that the "pirate currency" framing was problematic. He accepted Satoshi's suggestion to give more credit to other developer contributors.
+In his reply to [Satoshi's "alert key" email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/), Gavin Andresen addressed several points. He acknowledged reading a Forbes article and agreed that the "pirate currency" framing was problematic. He accepted Satoshi's suggestion to give more credit to other developer contributors.
 
 Andresen also accepted responsibility for the alert key, though he expressed concern about identifying trustworthy recipients to share it with.
 

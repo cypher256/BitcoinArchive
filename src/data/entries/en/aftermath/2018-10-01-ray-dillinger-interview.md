@@ -35,7 +35,7 @@ secondarySources:
 
 **On his code review of Bitcoin:**
 
-Satoshi sent me the proof chain code for examination. I found it solid.
+[Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) sent me the proof chain code for examination. I found it solid.
 
 I was interested in Bitcoin for four reasons: it was a digital cash protocol addressing challenges I'd long contemplated; it used a central proof chain (now called blockchain); Satoshi eventually convinced me he wasn't a scammer; and absolutely the clincher — it was very very INTERESTING, with an entirely new paradigm containing no Trusted Roles, something nobody had EVER come up with before.
 

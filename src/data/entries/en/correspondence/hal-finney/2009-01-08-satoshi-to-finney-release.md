@@ -34,7 +34,7 @@ Sent from satoshi@vistomail.com on Thursday, January 8, 2009 at 20:54:55 PST —
 >
 > Satoshi
 
-This brief personal email shows that Satoshi valued Finney's involvement enough to send a private notification in addition to the public announcement. Finney responded by downloading the software and posting his famous "Running bitcoin" tweet on January 11, 2009. The next day, January 12, Satoshi sent Finney 10 BTC in block 170 — the first known person-to-person Bitcoin transaction.
+This brief personal email shows that Satoshi valued Finney's involvement enough to send a private notification in addition to the public announcement. Finney responded by downloading the software and posting his famous ["Running bitcoin" tweet](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) on January 11, 2009. The next day, January 12, Satoshi sent Finney 10 BTC in block 170 — the [first known person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
 
 Hal Finney later recalled in his "Bitcoin and me" post (March 2013): "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them."
 

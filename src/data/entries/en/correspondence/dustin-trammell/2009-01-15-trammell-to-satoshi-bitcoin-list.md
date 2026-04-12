@@ -29,7 +29,7 @@ secondarySources:
 
 Trammell responded to Satoshi's request to CC the conversation publicly, confirming that the node with the changing IP was not him — his Bitcoin client at work used a static NAT address and his home IP had been stable for at least three days of testing transfers between the two.
 
-He agreed to have the conversation shared publicly and subscribed to bitcoin-list immediately. Trammell then revealed his investment-minded motivation for early mining, prompted by Hal Finney's public message:
+He agreed to have the conversation shared publicly and subscribed to bitcoin-list immediately. Trammell then revealed his investment-minded motivation for early mining, prompted by [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s public message:
 
 > Yes, I saw that message and was one of the other reasons I started up a node so quickly. My systems aren't doing much of anything else while idle, so why not create BitCoins? And if they're worth something someday...? Bonus!
 

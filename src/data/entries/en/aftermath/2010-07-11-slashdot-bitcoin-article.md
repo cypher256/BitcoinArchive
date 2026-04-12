@@ -29,4 +29,4 @@ The "Slashdot effect" was immediate and dramatic. Bitcoin software downloads sur
 
 This was both a milestone and a challenge. The sudden influx of users tested the network's capacity, exposing scalability limitations that had previously been theoretical. Satoshi and other developers worked to optimize the software, addressing bandwidth constraints, memory management, and transaction processing bottlenecks.
 
-The Slashdot article also attracted unwanted attention. Along with curious technologists came speculators, critics, and — as events would soon prove — attackers. One month later, the network would face its most serious crisis: the value overflow incident of August 15, 2010.
+The Slashdot article also attracted unwanted attention. Along with curious technologists came speculators, critics, and — as events would soon prove — attackers. One month later, the network would face its most serious crisis: the [value overflow incident of August 15, 2010](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/).

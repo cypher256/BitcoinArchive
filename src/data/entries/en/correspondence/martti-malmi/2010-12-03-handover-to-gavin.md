@@ -34,7 +34,7 @@ Satoshi's response was clear and decisive:
 
 Three days later, Malmi replied simply: "Ok, I'll ask him."
 
-This exchange is one of the most historically significant in Bitcoin's early development. Satoshi's explicit endorsement of Gavin Andresen as his successor formalized a leadership transition that had been gradually taking shape. Andresen went on to become the lead developer of Bitcoin and the primary maintainer of the Bitcoin Core software.
+This exchange is one of the most historically significant in Bitcoin's early development. Satoshi's explicit endorsement of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) as his successor formalized a leadership transition that had been gradually taking shape. Andresen went on to become the lead developer of Bitcoin and the primary maintainer of the Bitcoin Core software.
 
 The comment about Linux capability is also revealing - it confirms that Satoshi primarily worked on Windows and relied on others, particularly Malmi and later Andresen, for Linux-related development. Bitcoin had been initially released as a Windows-only application, with Linux support added in version 0.2 largely through Malmi's work.
 

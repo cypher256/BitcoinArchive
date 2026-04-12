@@ -32,7 +32,7 @@ secondarySources:
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 ---
 
-On April 17, 2013, Argentine Bitcoin researcher Sergio Demian Lerner published "The Well Deserved Fortune of Satoshi Nakamoto, Bitcoin creator, Visionary and Genius" on his blog Bitslog. The post presented the first systematic analysis of Bitcoin's earliest mining patterns.
+On April 17, 2013, Argentine Bitcoin researcher [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Well Deserved Fortune of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/), Bitcoin creator, Visionary and Genius" on his blog Bitslog. The post presented the first systematic analysis of Bitcoin's earliest mining patterns.
 
 **Method:**
 Lerner tracked the ExtraNonce field in coinbase transactions across blocks 0 through 36,288 (January 2009 to January 2010), using it as a "slow realtime clock" to identify when a miner's client was restarted. He found a single entity mining with consistent slope segments, restarting roughly every ~100 hours.

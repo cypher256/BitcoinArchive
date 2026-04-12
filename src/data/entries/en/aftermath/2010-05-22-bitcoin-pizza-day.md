@@ -28,7 +28,7 @@ secondarySources:
 featured: true
 ---
 
-On May 18, 2010, Laszlo Hanyecz posted on the BitcoinTalk forum:
+On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted on the BitcoinTalk forum:
 
 > "I'll pay 10,000 bitcoins for a couple of pizzas... like maybe 2 large ones so I have some left over for the next day. I like having left over pizza to nibble on later."
 

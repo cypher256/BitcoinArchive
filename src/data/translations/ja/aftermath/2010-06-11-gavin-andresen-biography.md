@@ -38,13 +38,13 @@ secondarySources:
 translationStatus: complete
 ---
 
-ギャビン・アンドレセン（本名ギャビン・ベル、1966年オーストラリア・メルボルン生まれ）は、サトシ・ナカモトの離脱後にビットコインのリードメンテナーとなったソフトウェア開発者である。アメリカで育ち、1988年にプリンストン大学でコンピュータサイエンスの学位を取得。その後、3DグラフィックスソフトウェアのWasabi Softwareを設立した。
+ギャビン・アンドレセン（本名ギャビン・ベル、1966年オーストラリア・メルボルン生まれ）は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の離脱後にビットコインのリードメンテナーとなったソフトウェア開発者である。アメリカで育ち、1988年にプリンストン大学でコンピュータサイエンスの学位を取得。その後、3DグラフィックスソフトウェアのWasabi Softwareを設立した。
 
 **ビットコインとの出会い：**
 アンドレセンは2010年にビットコインを知った。すぐに最も活発な貢献者の一人となり、Bitcoin Faucet — 無料でビットコインを配布し、人々がこの技術を学び使い始めるのを支援するウェブサイト — を作成した。[2010年6月11日にBitcoinTalkフォーラムでBitcoin Faucetを発表](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/)。これはビットコイン普及を促進する最初期の取り組みの一つだった。
 
 **サトシが選んだ後継者：**
-2010年を通じて、サトシ・ナカモトはアンドレセンにプロジェクトの責任を段階的に委ねていった。2010年9月〜10月頃までに、サトシはSourceForge上のビットコインソースコードリポジトリへのコミット権限とネットワークアラートキーを付与した。2011年4月23日、[開発者マイク・ハーンへのメール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)で、サトシはこう書いた。
+2010年を通じて、サトシ・ナカモトはアンドレセンにプロジェクトの責任を段階的に委ねていった。2010年9月〜10月頃までに、サトシはSourceForge上のビットコインソースコードリポジトリへのコミット権限とネットワークアラートキーを付与した。2011年4月23日、開発者[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)への[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)で、サトシはこう書いた。
 
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 

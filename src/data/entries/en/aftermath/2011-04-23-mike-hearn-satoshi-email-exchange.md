@@ -22,7 +22,7 @@ secondarySources:
     url: "https://plan99.net/~mike/satoshi-emails/thread5.html"
 ---
 
-Mike Hearn, a Google engineer who became an early Bitcoin contributor, exchanged a series of emails with Satoshi Nakamoto between 2009 and April 2011. Hearn had first contacted Satoshi after reading the Bitcoin white paper and becoming interested in the project.
+[Mike Hearn](/BitcoinArchive/participants/mike-hearn/), a Google engineer who became an early Bitcoin contributor, exchanged a series of emails with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) between 2009 and April 2011. Hearn had first contacted Satoshi after reading the Bitcoin white paper and becoming interested in the project.
 
 In their correspondence, Satoshi discussed technical aspects of Bitcoin's future, including how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to more specialized hardware.
 

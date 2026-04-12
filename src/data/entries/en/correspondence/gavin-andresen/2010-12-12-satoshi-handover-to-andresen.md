@@ -31,7 +31,7 @@ featured: true
 
 In late 2010, as Satoshi Nakamoto began stepping back from active involvement in Bitcoin, he made the pivotal decision to hand project leadership to Gavin Andresen. Satoshi gave Andresen control of the source code repository (SVN access) and endorsed him as the project's lead developer.
 
-This decision was consistent with what Satoshi had privately communicated to Martti Malmi on December 3, 2010, when asked who should take over development responsibilities:
+This decision was consistent with what Satoshi had privately communicated to [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) on December 3, 2010, when asked who should take over development responsibilities:
 
 > It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me.
 

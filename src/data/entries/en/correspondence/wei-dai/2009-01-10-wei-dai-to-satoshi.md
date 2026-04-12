@@ -21,7 +21,7 @@ secondarySources:
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 ---
 
-b-money was announced on the cypherpunks mailing list in 1998. Here's the archived post: https://cypherpunks.venona.com/date/1998/11/msg00941.html
+[b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) was announced on the cypherpunks mailing list in 1998. Here's the archived post: https://cypherpunks.venona.com/date/1998/11/msg00941.html
 
 There are some discussions of it at https://cypherpunks.venona.com/date/1998/12/msg00194.html.
 

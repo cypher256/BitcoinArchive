@@ -25,7 +25,7 @@ secondarySources:
     url: "https://slashdot.org/story/17/08/11/1940213/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails"
 ---
 
-In August 2017, Mike Hearn's complete email correspondence with Satoshi Nakamoto was made public. The emails were first shared on BitcoinTalk by a user named CipherionX, and subsequently published on Hearn's personal website. The emails span from early 2009 to April 2011 and cover topics including:
+In August 2017, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/)'s complete email correspondence with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was made public. The emails were first shared on BitcoinTalk by a user named CipherionX, and subsequently published on Hearn's personal website. The emails span from early 2009 to April 2011 and cover topics including:
 
 - How Satoshi envisioned Bitcoin scaling in the future
 - The role of simplified payment verification (SPV)

@@ -25,7 +25,7 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
 
-Nicholas Bohm, a retired commercial solicitor from a major City of London firm and an e-commerce policy adviser for Cyber-Rights & Cyber-Liberties (UK), had been running Bitcoin since its earliest days. He was one of the few early adopters who engaged directly with Satoshi via private email.
+[Nicholas Bohm](/BitcoinArchive/participants/nicholas-bohm/), a retired commercial solicitor from a major City of London firm and an e-commerce policy adviser for Cyber-Rights & Cyber-Liberties (UK), had been running Bitcoin since its earliest days. He was one of the few early adopters who engaged directly with [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) via private email.
 
 In this email, Bohm reported that after installing a new router, his Bitcoin client could no longer establish connections to the network.
 

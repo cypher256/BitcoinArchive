@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2016年9月15日、ピーター・トッドはOpenTimestampsを発表した。Bitcoinブロックチェーンにタイムスタンプをアンカリングすることで、特定の時点でデータが存在したことの暗号学的証明を作成するシステムである。
+2016年9月15日、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)はOpenTimestampsを発表した。Bitcoinブロックチェーンにタイムスタンプをアンカリングすることで、特定の時点でデータが存在したことの暗号学的証明を作成するシステムである。
 
 **仕組み：**
 

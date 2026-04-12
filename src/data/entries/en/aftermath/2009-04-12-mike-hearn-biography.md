@@ -35,7 +35,7 @@ secondarySources:
     url: "https://www.vice.com/en/article/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails/"
 ---
 
-Mike Hearn is a software engineer who worked at Google on projects including Google Maps, Google Earth, and Gmail's anti-spam systems. He became one of the earliest contributors to Bitcoin after reading the [white paper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and contacting Satoshi Nakamoto directly.
+Mike Hearn is a software engineer who worked at Google on projects including Google Maps, Google Earth, and Gmail's anti-spam systems. He became one of the earliest contributors to Bitcoin after reading the [white paper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and contacting [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) directly.
 
 **First Contact with Satoshi:**
 In April 2009, just months after Bitcoin's launch, Hearn emailed Satoshi Nakamoto after reading the Bitcoin white paper. This began a correspondence that would continue through April 2011. Hearn was among the very first people outside the initial cypherpunk circle to take a serious technical interest in Bitcoin.

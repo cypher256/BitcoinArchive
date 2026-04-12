@@ -41,7 +41,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-BitcoinのGitHubリポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVNリポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、ギャビン・アンドレセンが最終SVNコミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
+BitcoinのGitHubリポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVNリポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が最終SVNコミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
 
 **移行タイムライン：**
 - **2010-12-19:** GitHubリポジトリ `bitcoin/bitcoin` 作成。

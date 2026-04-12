@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-CoinGeek Weekly Livestreamのインタビューで、サトシ・ナカモトと[直接書簡を交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人であるマイク・ハーンが、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
+CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[直接書簡を交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
 
 **サトシの人物像について：**
 

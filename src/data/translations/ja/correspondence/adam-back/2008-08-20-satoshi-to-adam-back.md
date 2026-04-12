@@ -29,6 +29,6 @@ translationStatus: complete
 
 あなたのhashcash論文の引用が正しいか確認したいと思った。
 
-*[サトシは、後にビットコインホワイトペーパーとなるプレリリース版のリンクを添付した。]*
+*[サトシは、後に[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)となるプレリリース版のリンクを添付した。]*
 
 *[出典: このメールは2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックが証人陳述書の一部として完全なメールチェーンを提出した。]*

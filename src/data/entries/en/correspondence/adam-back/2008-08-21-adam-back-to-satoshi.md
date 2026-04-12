@@ -23,7 +23,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
 
-*[Adam Back confirmed the citation and suggested Satoshi look at Wei Dai's b-money proposal.]*
+*[Adam Back confirmed the citation and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.]*
 
 *[Satoshi subsequently replied: "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." He then contacted Wei Dai directly on August 22, 2008, and cited b-money in the Bitcoin whitepaper.]*
 

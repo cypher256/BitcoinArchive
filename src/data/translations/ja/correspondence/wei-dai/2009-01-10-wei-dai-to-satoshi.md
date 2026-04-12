@@ -25,4 +25,4 @@ translationStatus: complete
 <!-- speaker: Wei Dai -->
 論文のことを教えていただきありがとうございます。確認して、コメントや質問があればお知らせします。
 
-私のb-moneyページは1998年11月に作成しました。
+私の[b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)ページは1998年11月に作成しました。

@@ -28,11 +28,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-2021年10月23日、ダスティン・D・トランメルはStephan Liveraポッドキャスト（第314回：「ビットコインネットワークの2番目のノード？ビットコインの初期の日々」）に出演し、ビットコインの最初期のユーザーの一人としての体験を最も詳細に語った。
+2021年10月23日、[ダスティン・D・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)はStephan Liveraポッドキャスト（第314回：「ビットコインネットワークの2番目のノード？ビットコインの初期の日々」）に出演し、ビットコインの最初期のユーザーの一人としての体験を最も詳細に語った。
 
 **「1つの他のノード」の体験：**
 
-トランメルは、2009年1月9日の[暗号技術メーリングリストでのサトシの発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)後、ソフトウェアをダウンロードして実行した最初の瞬間を描写した：
+トランメルは、2009年1月9日の[暗号技術メーリングリストでの](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の発表後、ソフトウェアをダウンロードして実行した最初の瞬間を描写した：
 
 > 「最初に起動した時、1つの他のノードに接続しただけだった。約4〜6時間、1つの接続だけでそこに座っていて、それから他の接続が始まり、他のノードがオンラインになり始めた。」
 

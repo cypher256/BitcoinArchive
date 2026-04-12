@@ -32,7 +32,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/articles/laszlo-hanyecz-spends-bitcoin-pizza-again-time-lightning-network"
 ---
 
-Laszlo Hanyecz is a software developer based in Jacksonville, Florida, who made several foundational contributions to Bitcoin's early development. He corresponded directly with Satoshi Nakamoto on technical matters and is best known for the first real-world commercial Bitcoin transaction.
+Laszlo Hanyecz is a software developer based in Jacksonville, Florida, who made several foundational contributions to Bitcoin's early development. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on technical matters and is best known for the first real-world commercial Bitcoin transaction.
 
 **macOS Port:**
 In early 2010, Hanyecz [ported the Bitcoin client to macOS](/BitcoinArchive/entries/correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port/), making the software available on Apple's platform for the first time. He communicated with Satoshi Nakamoto about the port, and their correspondence reveals Satoshi's guidance on cross-platform compatibility and mining architecture.

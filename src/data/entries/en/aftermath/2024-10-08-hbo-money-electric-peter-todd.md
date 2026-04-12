@@ -35,7 +35,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
 ---
 
-On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a documentary directed by Cullen Hoback (known for "Q: Into the Storm"). The film named Bitcoin Core developer Peter Todd as a candidate for Bitcoin's pseudonymous creator, Satoshi Nakamoto.
+On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a documentary directed by Cullen Hoback (known for "Q: Into the Storm"). The film named Bitcoin Core developer [Peter Todd](/BitcoinArchive/participants/peter-todd/) as a candidate for Bitcoin's pseudonymous creator, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
 **The forum post theory:**
 

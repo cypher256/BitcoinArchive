@@ -28,6 +28,6 @@ I'm getting ready to release a paper that expands on your ideas into a complete 
 
 I wanted to make sure I have the citation to your hashcash paper right.
 
-*[Satoshi included a link to a pre-release draft of what would become the Bitcoin whitepaper. The draft was titled "Electronic Cash Without a Trusted Third Party" and filed as ecash.pdf — predating the October 3 draft which was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System."]*
+*[Satoshi included a link to a pre-release draft of what would become the Bitcoin whitepaper. The draft was titled "Electronic Cash Without a Trusted Third Party" and filed as ecash.pdf — predating the [October 3 draft](/BitcoinArchive/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/) which was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System."]*
 
 *[Source: This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. Adam Back filed the complete email chain as a witness statement.]*

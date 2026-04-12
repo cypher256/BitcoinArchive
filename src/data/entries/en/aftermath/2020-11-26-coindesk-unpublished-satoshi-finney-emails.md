@@ -30,7 +30,7 @@ secondarySources:
     url: "https://chainbulletin.com/no-coindesk-satoshis-local-time-zone-wasnt-utc8"
 ---
 
-On November 26, 2020, CoinDesk published "Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle" by Michael Kapilkov, revealing three emails between Satoshi Nakamoto and Hal Finney.
+On November 26, 2020, CoinDesk published "Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle" by Michael Kapilkov, revealing three emails between [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Hal Finney](/BitcoinArchive/participants/hal-finney/).
 
 **Chain of custody:** In March 2014, Fran Finney (Hal's widow) sent journalist Nathaniel Popper files from Hal's personal computer for his book *Digital Gold*. Popper later shared the email files with Kapilkov. CoinDesk confirmed the chain of custody directly with Fran Finney.
 

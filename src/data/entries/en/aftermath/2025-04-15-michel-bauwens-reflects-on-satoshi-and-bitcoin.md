@@ -26,7 +26,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/"
 ---
 
-In an interview published by Uncommons on April 15, 2025, P2P Foundation founder [Michel Bauwens](/BitcoinArchive/participants/michel-bauwens/) looked back on his brief but direct contact with Satoshi Nakamoto.
+In an interview published by Uncommons on April 15, 2025, P2P Foundation founder [Michel Bauwens](/BitcoinArchive/participants/michel-bauwens/) looked back on his brief but direct contact with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
 **On Satoshi's emails:**
 

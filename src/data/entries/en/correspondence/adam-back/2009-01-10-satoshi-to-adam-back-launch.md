@@ -26,9 +26,9 @@ secondarySources:
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
 ---
 
-Nearly five months after their last exchange, Satoshi wrote to Adam Back for the final time. Bitcoin v0.1 had been released on January 9, 2009, and Satoshi personally notified Back of the launch.
+Nearly five months after their last exchange, Satoshi wrote to Adam Back for the final time. [Bitcoin v0.1 had been released on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/), and Satoshi personally notified Back of the launch.
 
-*[Satoshi thanked Back again for suggesting the b-money and MicroMint papers during their August 2008 correspondence, and announced that the open-source Bitcoin software had been launched. He included Hal Finney's overview of the project from the Cryptography mailing list discussion.]*
+*[Satoshi thanked Back again for suggesting the b-money and MicroMint papers during their August 2008 correspondence, and announced that the open-source Bitcoin software had been launched. He included [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s overview of the project from the Cryptography mailing list discussion.]*
 
 This email is the last known direct communication between Satoshi and Adam Back. Back did not engage with Bitcoin at this time and would not become actively involved until 2013. He later founded Blockstream in 2014.
 

@@ -21,7 +21,7 @@ secondarySources:
     url: "https://historyheist.com/new-liberty-standard-publishes-first-exchange-rate-on-bitcoin-of-1309-03-btc-to-one-u-s-dollar-0-0008btc/"
 ---
 
-On October 5, 2009, NewLibertyStandard published the first-ever exchange rate for Bitcoin.
+On October 5, 2009, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) published the first-ever exchange rate for Bitcoin.
 
 **$1 = 1,309.03 BTC** ($0.000764 per BTC)
 
@@ -29,6 +29,6 @@ The methodology: divide $1.00 by the average amount of electricity required to r
 
 In other words, Bitcoin's first price was determined by the real-world cost of the electricity needed to mine it.
 
-Shortly after, on October 12, 2009, Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency.
+Shortly after, on October 12, 2009, [Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) via PayPal — the first known exchange of Bitcoin for fiat currency.
 
 *[At 2025 prices exceeding $100,000 per BTC, those 5,050 bitcoins would be worth over $500 million.]*

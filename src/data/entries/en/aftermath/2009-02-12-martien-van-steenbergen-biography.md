@@ -26,7 +26,7 @@ secondarySources:
 Martien van Steenbergen is a Dutch agile and lean trainer, coach, and founder of AardRock, a company focused on organizational transformation, disruptive innovation, and leadership. He has been active in the P2P research community and has an interest in alternative currency systems.
 
 **Interaction with Satoshi:**
-On February 12, 2009, van Steenbergen responded to [Satoshi Nakamoto's announcement of Bitcoin on the P2P Research mailing list](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/) with two key technical questions: whether Bitcoin resembled David Chaum's anonymous digital money system, and whether Bitcoin had a limited money supply or created money at the moment of transaction.
+On February 12, 2009, van Steenbergen responded to [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s [announcement of Bitcoin on the P2P Research mailing list](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/) with two key technical questions: whether Bitcoin resembled David Chaum's anonymous digital money system, and whether Bitcoin had a limited money supply or created money at the moment of transaction.
 
 Satoshi replied the same day with one of his most significant early statements:
 

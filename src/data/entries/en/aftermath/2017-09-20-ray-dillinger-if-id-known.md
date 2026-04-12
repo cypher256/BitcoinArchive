@@ -31,7 +31,7 @@ secondarySources:
 
 In November of 2008, I did a code review and security audit for the block chain portion of the Bitcoin source code.
 
-The division of labor went like this: I reviewed the blockchain code, [Hal Finney](/BitcoinArchive/participants/hal-finney/) reviewed the scripting language, and Satoshi alternated between answering our questions and asking his own.
+The division of labor went like this: I reviewed the blockchain code, [Hal Finney](/BitcoinArchive/participants/hal-finney/) reviewed the scripting language, and [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) alternated between answering our questions and asking his own.
 
 In May 1995, as a research paper in a graduate networking class, I had created what I believe is the first digital-cash protocol ever to use block chains.
 

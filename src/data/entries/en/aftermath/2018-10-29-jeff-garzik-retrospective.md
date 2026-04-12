@@ -27,7 +27,7 @@ secondarySources:
 
 *From BREAKER Magazine, October 29, 2018:*
 
-Jeff Garzik discovered Bitcoin through a Slashdot post announcing Bitcoin v0.3 in July 2010 — the "Great Slashdotting." He spent five years as a Bitcoin core developer while working at Red Hat. At one point, his fingerprint on Bitcoin's codebase was the third-largest after Satoshi Nakamoto and Gavin Andresen.
+[Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) discovered Bitcoin through a [Slashdot post announcing Bitcoin v0.3](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/) in July 2010 — the "Great Slashdotting." He spent five years as a Bitcoin core developer while working at Red Hat. At one point, his fingerprint on Bitcoin's codebase was the third-largest after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/).
 
 Satoshi was "practical and sane, which made interactions very easy and comfortable."
 

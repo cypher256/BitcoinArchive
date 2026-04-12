@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-ニコラス・ボームは、シティ・オブ・ロンドンの大手法律事務所を引退した商事弁護士であり、Cyber-Rights & Cyber-Liberties (UK)の電子商取引政策アドバイザーでもあった。彼は最初期からビットコインを実行しており、サトシと直接メールでやり取りした数少ない初期採用者の一人であった。
+[ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)は、シティ・オブ・ロンドンの大手法律事務所を引退した商事弁護士であり、Cyber-Rights & Cyber-Liberties (UK)の電子商取引政策アドバイザーでもあった。彼は最初期からビットコインを実行しており、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と直接メールでやり取りした数少ない初期採用者の一人であった。
 
 このメールで、ボームは新しいルーターを設置した後、ビットコインクライアントがネットワークに接続できなくなったと報告した。
 

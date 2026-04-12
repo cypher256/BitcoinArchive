@@ -22,13 +22,13 @@ secondarySources:
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 ---
 
-I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, Bitcoin v0.1. Details, download and screenshots are at www.bitcoin.org
+I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). Details, download and screenshots are at www.bitcoin.org
 
 I think it achieves nearly all the goals you set out to solve in your b-money paper.
 
 The system is entirely decentralized, without any server or trusted parties. The network infrastructure can support a full range of escrow transactions and contracts, but for now the focus is on the basics of money and transactions.
 
-There was a discussion of the design on the Cryptography mailing list. Hal Finney gave a good high-level overview:
+There was a discussion of the design on the Cryptography mailing list. [Hal Finney](/BitcoinArchive/participants/hal-finney/) gave a good high-level overview:
 
 > One thing I might mention is that in many ways bitcoin is two independent ideas: a way of solving the kinds of problems James lists here, of creating a globally consistent but decentralized database; and then using it for a system similar to Wei Dai's b-money (which is referenced in the paper) but transaction/coin based rather than account based. Solving the global, massively decentralized database problem is arguably the harder part, as James emphasizes. The use of proof-of-work as a tool for this purpose is a novel idea well worth further review IMO.
 

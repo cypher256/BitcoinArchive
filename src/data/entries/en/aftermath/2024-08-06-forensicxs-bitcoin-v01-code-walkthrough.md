@@ -23,7 +23,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/code/"
 ---
 
-On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of Satoshi Nakamoto's original Bitcoin source code released on January 9, 2009.
+On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original Bitcoin source code [released on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).
 
 **Scope:** The analysis covered all **31,794 lines** across 31 files of the Bitcoin v0.1 codebase, written in C++ and released under the MIT X11 license.
 

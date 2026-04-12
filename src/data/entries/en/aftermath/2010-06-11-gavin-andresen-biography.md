@@ -37,7 +37,7 @@ secondarySources:
     url: "https://x.com/gavinandresen/status/80785477342478336"
 ---
 
-Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software developer who became the lead maintainer of Bitcoin after Satoshi Nakamoto's departure. He grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and later founded Wasabi Software, a 3D graphics software company.
+Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software developer who became the lead maintainer of Bitcoin after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s departure. He grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and later founded Wasabi Software, a 3D graphics software company.
 
 **Discovery of Bitcoin:**
 Andresen first encountered Bitcoin in 2010. He quickly became one of the most active contributors, creating the Bitcoin Faucet — a website that gave away free bitcoins to help people learn about and start using the technology. He [announced the Faucet on the BitcoinTalk forum](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) on June 11, 2010. This was one of the earliest efforts to promote Bitcoin adoption.

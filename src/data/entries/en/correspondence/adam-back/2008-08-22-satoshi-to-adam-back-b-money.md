@@ -30,7 +30,7 @@ In this third email of the chain, Satoshi thanked Adam Back for pointing him to 
 
 > Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.
 
-This statement is important for two reasons: it establishes that Satoshi developed Bitcoin's core ideas independently of b-money before learning of Dai's work, and it confirms that b-money was added to the Bitcoin whitepaper's references only after Back's suggestion.
+This statement is important for two reasons: it establishes that Satoshi developed Bitcoin's core ideas independently of b-money before learning of [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s work, and it confirms that b-money was added to the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)'s references only after Back's suggestion.
 
 Satoshi also described the technical approach of his system:
 

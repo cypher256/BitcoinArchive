@@ -25,7 +25,7 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
 
-Approximately six weeks after the port forwarding fix, Bohm reported a new connectivity failure:
+Approximately six weeks after the port forwarding fix, [Bohm](/BitcoinArchive/participants/nicholas-bohm/) reported a new connectivity failure:
 
 > Bitcoin has failed to establish any connections for the last day or so, despite restarts.
 

@@ -29,4 +29,4 @@ ICOs were declared illegal fundraising mechanisms. All funds raised via ICOs wer
 
 The impact appeared devastating. China had been the dominant force in Bitcoin: Chinese exchanges handled the majority of global Bitcoin trading volume, and Chinese mining operations controlled a significant share of the network's hash rate. Bitcoin's price dropped sharply on the news.
 
-Yet Bitcoin survived. Miners relocated to Kazakhstan, the United States, Canada, and other countries. Trading shifted to international exchanges and decentralized platforms. Within months, Bitcoin's price had recovered and reached new highs. The episode demonstrated what Satoshi had designed: a system with no central point of failure that no single government could shut down.
+Yet Bitcoin survived. Miners relocated to Kazakhstan, the United States, Canada, and other countries. Trading shifted to international exchanges and decentralized platforms. Within months, Bitcoin's price had recovered and reached new highs. The episode demonstrated what [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) had designed: a system with no central point of failure that no single government could shut down.

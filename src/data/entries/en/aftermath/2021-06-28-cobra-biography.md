@@ -29,10 +29,10 @@ secondarySources:
     url: "https://bitcoin.org/"
 ---
 
-Cobra (also stylized as Cøbra) is the pseudonymous operator of bitcoin.org, the website registered by Satoshi Nakamoto in August 2008. Cobra's real identity is unknown.
+Cobra (also stylized as Cøbra) is the pseudonymous operator of bitcoin.org, the website registered by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) in August 2008. Cobra's real identity is unknown.
 
 **Role:**
-After Satoshi's disappearance and Martti Malmi's departure, Cobra became the custodian of bitcoin.org — maintaining the site, hosting the Bitcoin whitepaper, and managing the domain that serves as Bitcoin's primary public gateway. The position carries no formal authority over the Bitcoin protocol but holds symbolic significance as the steward of Satoshi's original website.
+After Satoshi's disappearance and [Martti Malmi](/BitcoinArchive/participants/martti-malmi/)'s departure, Cobra became the custodian of bitcoin.org — maintaining the site, hosting the Bitcoin whitepaper, and managing the domain that serves as Bitcoin's primary public gateway. The position carries no formal authority over the Bitcoin protocol but holds symbolic significance as the steward of Satoshi's original website.
 
 **Wright v. Cobra (2021):**
 In February 2021, Craig Wright [filed a copyright infringement lawsuit](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) against Cobra, claiming ownership of the Bitcoin whitepaper and demanding its removal from bitcoin.org. The London High Court allowed Wright to sue Cobra pseudonymously, but the procedural rules did not allow Cobra to defend himself without revealing his real identity.

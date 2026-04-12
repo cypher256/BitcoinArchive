@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-On April 16, 2019, Sergio Demian Lerner published "The Return of the Deniers and the Revenge of Patoshi," a major update to his ongoing blockchain forensics research that consolidated six years of findings and introduced the now-canonical "Patoshi" terminology.
+On April 16, 2019, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Return of the Deniers and the Revenge of Patoshi," a major update to his ongoing blockchain forensics research that consolidated six years of findings and introduced the now-canonical "Patoshi" terminology.
 
 **The "Patoshi" name:**
 

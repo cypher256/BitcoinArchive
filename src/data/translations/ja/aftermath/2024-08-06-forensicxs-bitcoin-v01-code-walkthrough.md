@@ -24,7 +24,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2024年8月6日、サイバーセキュリティ研究者Forensicxsが「Bitcoin Core v0.1: a code walkthrough」を公開した — 2009年1月9日にリリースされたサトシ・ナカモトのオリジナルのビットコインソースコードの包括的な分析である。
+2024年8月6日、サイバーセキュリティ研究者Forensicxsが「Bitcoin Core v0.1: a code walkthrough」を公開した — [2009年1月9日にリリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のオリジナルのビットコインソースコードの包括的な分析である。
 
 **範囲:** Bitcoin v0.1コードベースの全 **31,794行** 、31ファイルを分析。C++で記述され、MIT X11ライセンスの下でリリースされている。
 

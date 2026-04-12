@@ -31,7 +31,7 @@ secondarySources: []
 >
 > "This is like better gold than gold."
 
-The article described Bitcoin developers as Gavin's "underground cadre of cypherpunks" working on anonymous money. Satoshi Nakamoto reportedly objected to this characterization.
+The article described Bitcoin developers as Gavin's "underground cadre of cypherpunks" working on anonymous money. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) reportedly objected to this characterization.
 
 The article also described Bitcoin as potentially untraceable — an assessment Greenberg later acknowledged was incorrect, as cryptocurrency proved to be extremely traceable through blockchain analysis.
 

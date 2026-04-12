@@ -29,7 +29,7 @@ translationStatus: complete
 featured: true
 ---
 
-2010年5月18日、ラズロ・ハニエツはBitcoinTalkフォーラムに投稿した：
+2010年5月18日、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)はBitcoinTalkフォーラムに投稿した：
 
 > 「ピザ2枚と引き換えに10,000ビットコイン支払うよ。ラージサイズ2枚くらいで、次の日に残りを食べられるようにしたいんだよね。残りをちょっとずつ食べるのが好きなんだよ。」
 

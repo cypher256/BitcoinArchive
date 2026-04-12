@@ -22,7 +22,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2009年10月5日、NewLibertyStandardがビットコイン史上初の為替レートを公開した。
+2009年10月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/)がビットコイン史上初の為替レートを公開した。
 
 **1ドル = 1,309.03 BTC** （1BTCあたり0.00076ドル）
 
@@ -30,6 +30,6 @@ translationStatus: complete
 
 つまり、ビットコインの最初の価格は、それをマイニングするのに必要な電気の実際のコストによって決定された。
 
-その直後の2009年10月12日、マルッティ・マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した — ビットコインと法定通貨の最初の既知の交換だった。
+その直後の2009年10月12日、[マルッティ・マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) — ビットコインと法定通貨の最初の既知の交換だった。
 
 *[2025年の10万ドル超の価格では、その5,050ビットコインは5億ドル以上の価値がある。]*

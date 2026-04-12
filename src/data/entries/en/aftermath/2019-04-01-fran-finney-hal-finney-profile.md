@@ -29,7 +29,7 @@ secondarySources:
     url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
 ---
 
-In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life Extension Foundation), an extensive profile of Hal Finney was published based primarily on interviews with his wife, Fran Finney. The profile was subsequently adapted by Dan Held and republished on 21ideas.org on March 30, 2020.
+In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life Extension Foundation), an extensive profile of [Hal Finney](/BitcoinArchive/participants/hal-finney/) was published based primarily on interviews with his wife, Fran Finney. The profile was subsequently adapted by Dan Held and republished on 21ideas.org on March 30, 2020.
 
 **On meeting Hal at Caltech:**
 Fran met Hal during her junior year at Caltech, during "rotation week" in his freshman semester: "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled: "People would cluster around and get into all these philosophical discussions... When he spoke, what he said was usually worth listening to."

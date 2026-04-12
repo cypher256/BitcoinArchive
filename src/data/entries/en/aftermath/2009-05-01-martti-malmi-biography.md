@@ -36,7 +36,7 @@ secondarySources:
 Martti Malmi (born 1988, Helsinki, Finland) is a software developer who became one of the earliest and most significant contributors to Bitcoin. He studied computer science at Helsinki University of Technology (now Aalto University).
 
 **First Contact with Satoshi:**
-In May 2009, Malmi discovered Bitcoin and contacted Satoshi Nakamoto, offering to help with the project. Their correspondence would grow to approximately 260 emails — the largest known volume of communication between Satoshi and any single individual. These emails were entered into evidence during the [COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in February 2024.
+In May 2009, Malmi discovered Bitcoin and contacted [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/), offering to help with the project. Their correspondence would grow to approximately 260 emails — the largest known volume of communication between Satoshi and any single individual. These emails were entered into evidence during the [COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in February 2024.
 
 **Contributions to Bitcoin:**
 Malmi's contributions were wide-ranging and foundational. He ported the Bitcoin software to Linux, making it accessible beyond Windows for the first time. He set up and managed the bitcoin.org website, which served as the primary information hub for the project. He also created the original Bitcoin forum (which later evolved into BitcoinTalk), providing the community with its first dedicated discussion platform. Satoshi acknowledged Malmi's contributions in the Bitcoin 0.2 release announcement (December 2009):

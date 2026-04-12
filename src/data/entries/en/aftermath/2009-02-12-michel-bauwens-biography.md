@@ -27,7 +27,7 @@ secondarySources:
 Michel Bauwens (born March 21, 1958) is a Belgian political theorist, writer, and founder of the P2P Foundation, a global organization researching peer production, governance, and property. He has been a prominent voice in the study of peer-to-peer theory and commons-based governance, crafting transition plans for the government of Ecuador and the city of Ghent.
 
 **Interaction with Satoshi:**
-On February 12, 2009, Bauwens was the first to respond to [Satoshi Nakamoto's announcement of Bitcoin on the P2P Research mailing list](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/). He thanked Satoshi for sharing the initiative and invited the community's more expert members to weigh in. Notably, Bauwens assumed Satoshi was Japanese, asking him to contribute information about Japanese initiatives to the P2P Foundation wiki.
+On February 12, 2009, Bauwens was the first to respond to [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s [announcement of Bitcoin on the P2P Research mailing list](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/). He thanked Satoshi for sharing the initiative and invited the community's more expert members to weigh in. Notably, Bauwens assumed Satoshi was Japanese, asking him to contribute information about Japanese initiatives to the P2P Foundation wiki.
 
 On February 13, Bauwens asked Satoshi directly:
 

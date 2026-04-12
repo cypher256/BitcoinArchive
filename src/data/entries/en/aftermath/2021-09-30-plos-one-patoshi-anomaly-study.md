@@ -48,7 +48,7 @@ The paper identified two independent nonce anomalies in Bitcoin's coinbase trans
 
 The paper's most significant finding for the Patoshi debate was that **the extended Patoshi anomaly in the first nibble of the nonce appears in ALL of the first 64 blocks mined**. This is notable because Lerner's original 2013 ExtraNonce-based classification identified Block 12 as the first block mined by a "different user" based on its divergent ExtraNonce slope.
 
-The PLOS ONE finding means Block 12 exhibits the Patoshi nonce signature despite having a different ExtraNonce pattern. This is most consistently explained by Satoshi running both the custom Patoshi mining software and the standard Bitcoin v0.1 client simultaneously — the nonce partitioning signature persists across both configurations, while the ExtraNonce increment behavior differs.
+The PLOS ONE finding means Block 12 exhibits the Patoshi nonce signature despite having a different ExtraNonce pattern. This is most consistently explained by [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) running both the custom Patoshi mining software and the standard [Bitcoin v0.1 client](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) simultaneously — the nonce partitioning signature persists across both configurations, while the ExtraNonce increment behavior differs.
 
 **Scale of the anomalies:**
 

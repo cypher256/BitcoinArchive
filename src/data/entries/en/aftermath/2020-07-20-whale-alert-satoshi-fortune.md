@@ -31,7 +31,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-In July 2020, blockchain tracking service Whale Alert published "The Satoshi Fortune," an independent analysis of Satoshi Nakamoto's mining activity that largely corroborated earlier Patoshi research by Sergio Demian Lerner, while introducing its own interpretation of Satoshi's mining infrastructure.
+In July 2020, blockchain tracking service Whale Alert published "The Satoshi Fortune," an independent analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s mining activity that largely corroborated earlier Patoshi research by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/), while introducing its own interpretation of Satoshi's mining infrastructure.
 
 **Key findings:**
 
@@ -44,7 +44,7 @@ In July 2020, blockchain tracking service Whale Alert published "The Satoshi For
 
 Whale Alert found that Satoshi maintained a steady share of approximately **60% of the network hashrate** as the network grew, using an estimated **48 computers** (or CPU threads). Satoshi systematically adjusted processing power to mine approximately **3.6 blocks per hour**, ensuring sufficient hashrate to defend against a 51% attack while the network was still vulnerable.
 
-**Note on the "48 computers" claim:** One month after this report, Sergio Demian Lerner published "The Patoshi Mining Machine" (August 22, 2020), presenting a re-mining simulation that demonstrated the Patoshi miner used a **single high-end CPU with 5 parallel threads** — not 48+ separate computers. Lerner showed the nonce space was divided into 5 subranges with sequential scanning within each, producing a 78% high-value bias inconsistent with independent machines. Jameson Lopp's 2022 analysis further supported the single-PC thesis: during the "double helix" period (blocks 1400–1916), two mining instances competing for the same CPU cores produced only a 28% hashrate increase rather than the 100% expected from separate machines. The research consensus now favors a single multi-threaded PC.
+**Note on the "48 computers" claim:** One month after this report, Sergio Demian Lerner published ["The Patoshi Mining Machine"](/BitcoinArchive/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/) (August 22, 2020), presenting a re-mining simulation that demonstrated the Patoshi miner used a **single high-end CPU with 5 parallel threads** — not 48+ separate computers. Lerner showed the nonce space was divided into 5 subranges with sequential scanning within each, producing a 78% high-value bias inconsistent with independent machines. Jameson Lopp's 2022 analysis further supported the single-PC thesis: during the "double helix" period (blocks 1400–1916), two mining instances competing for the same CPU cores produced only a 28% hashrate increase rather than the 100% expected from separate machines. The research consensus now favors a single multi-threaded PC.
 
 **Intentional throttling:**
 

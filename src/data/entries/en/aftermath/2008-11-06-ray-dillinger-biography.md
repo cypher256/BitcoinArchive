@@ -31,10 +31,10 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/"
 ---
 
-Ray Dillinger is a computer scientist known by his online handles "bear" and "cryddit." He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades. He is one of two people — along with Hal Finney — known to have reviewed Satoshi Nakamoto's Bitcoin source code before its public release.
+Ray Dillinger is a computer scientist known by his online handles "bear" and "cryddit." He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades. He is one of two people — along with [Hal Finney](/BitcoinArchive/participants/hal-finney/) — known to have reviewed [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s Bitcoin source code before its public release.
 
 **Pre-Release Code Review:**
-In late 2008, Satoshi Nakamoto shared Bitcoin's source code privately with a small number of people before the public release in January 2009. Dillinger conducted a security audit of the code, examining it for potential vulnerabilities and attack vectors. Hal Finney simultaneously reviewed the code from a different perspective. In a later BitcoinTalk post, Dillinger recalled spending approximately two weeks reviewing the code, focusing on ways the system might be exploited.
+In late 2008, Satoshi Nakamoto shared Bitcoin's source code privately with a small number of people before the [public release in January 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). Dillinger conducted a security audit of the code, examining it for potential vulnerabilities and attack vectors. Hal Finney simultaneously reviewed the code from a different perspective. In a later BitcoinTalk post, Dillinger recalled spending approximately two weeks reviewing the code, focusing on ways the system might be exploited.
 
 **Block Size Limit:**
 Dillinger has been connected to the origin of Bitcoin's 1 MB block size limit, one of the most debated parameters in Bitcoin's history. In later public statements, he described how early discussions about potential denial-of-service attacks led to consideration of limiting block size to prevent spam transactions from overwhelming the network.

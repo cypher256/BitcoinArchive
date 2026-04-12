@@ -31,7 +31,7 @@ secondarySources:
 Fran Finney met [Hal Finney](/BitcoinArchive/participants/hal-finney/) at the California Institute of Technology (Caltech). She was a junior when Hal arrived as a freshman. She first saw him during "rotation week": "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled how people would cluster around him for philosophical discussions: "When he spoke, what he said was usually worth listening to."
 
 **Bitcoin:**
-Fran witnessed Bitcoin's birth firsthand. When Hal downloaded and ran the software on January 9, 2009, she described his reaction: "This is cool. This is a fun game. Look! This is actually working!" She also recalled how Hal's early mining was cut short — she complained that the computer fan was too noisy at night.
+Fran witnessed Bitcoin's birth firsthand. When Hal downloaded and ran the software [on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/), she described his reaction: "This is cool. This is a fun game. Look! This is actually working!" She also recalled how Hal's early mining was cut short — she complained that the computer fan was too noisy at night.
 
 **ALS and Caregiving:**
 In August 2009, Hal was diagnosed with amyotrophic lateral sclerosis (ALS). Fran became his primary caregiver as the disease progressed. She observed his cognitive decline: "It's not a normal kind of dementia, but the brain is involved. Hal felt that it was affecting his ability to do his fast thinking, to do his mental math. He felt like he was losing that, and he would lose more."

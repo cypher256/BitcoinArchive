@@ -25,13 +25,13 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
 
-In a follow-up the next day, Satoshi provided debugging information:
+In a follow-up the next day, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) provided debugging information:
 
 > I'm currently connected to 70.113.114.209 since yesterday.
 
-He noted that if Bohm wasn't connected to that IP, then the problem was on Bohm's end — he couldn't make outgoing connections either.
+He noted that if [Bohm](/BitcoinArchive/participants/nicholas-bohm/) wasn't connected to that IP, then the problem was on Bohm's end — he couldn't make outgoing connections either.
 
-The IP address 70.113.114.209 was later identified by researchers (documented in a Decashed analysis) as likely belonging to Dustin Trammell, who was based in the Round Rock/Austin, Texas area. This aligns with what is known about Trammell being one of the most consistent early Bitcoin node operators during this period.
+The IP address 70.113.114.209 was later identified by researchers (documented in a Decashed analysis) as likely belonging to [Dustin Trammell](/BitcoinArchive/participants/dustin-trammell/), who was based in the Round Rock/Austin, Texas area. This aligns with what is known about Trammell being one of the most consistent early Bitcoin node operators during this period.
 
 This exchange provides a rare operational snapshot of the Bitcoin network in July 2009: Satoshi's own node was connected to just a single other peer — one of the few remaining active nodes on the entire network.
 

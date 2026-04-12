@@ -25,7 +25,7 @@ secondarySources:
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 ---
 
-Laszlo Hanyecz, a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010.
+[Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010.
 
 Hanyecz and Satoshi Nakamoto exchanged hundreds of emails during Bitcoin's early days, making their correspondence one of the most extensive private communications Satoshi had with any individual. Hanyecz later described their exchanges as "mostly weird," noting that Satoshi would not respond to emails for weeks and then answer everything at once, often on Fridays.
 

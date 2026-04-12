@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-ジョナサン・ソーンバーグは、インディアナ大学の天体物理学者である。2009年1月、サトシ・ナカモトがBitcoin v0.1をリリースした直後、暗号学メーリングリストの議論に参加した。
+ジョナサン・ソーンバーグは、インディアナ大学の天体物理学者である。2009年1月、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が[Bitcoin v0.1をリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)した直後、暗号学メーリングリストの議論に参加した。
 
 **メーリングリストでの批判：**
 2009年1月17日、ソーンバーグはサトシのビットコインの潜在的用途に関するメールに対して[詳細な回答を投稿した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/)。その後のビットコインの歴史を通じて反響することになる、2つの根本的な懸念を提起した。

@@ -25,6 +25,6 @@ secondarySources:
 featured: true
 ---
 
-I've moved on to other things. It's in good hands with Gavin and everyone.
+I've moved on to other things. It's in good hands with [Gavin](/BitcoinArchive/participants/gavin-andresen/) and everyone.
 
 I do hope your BitcoinJ continues to be developed into an alternative client. It gives Java devs something to work on, and it's easier with a simpler foundation that doesn't have to do everything. It'll get critical mass when impatient new users can get started using it while the other one is still downloading the block chain.

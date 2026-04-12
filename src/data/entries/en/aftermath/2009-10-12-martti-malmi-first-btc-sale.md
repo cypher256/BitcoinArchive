@@ -25,9 +25,9 @@ secondarySources:
     url: "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
 ---
 
-On October 12, 2009, Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency.
+On October 12, 2009, [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) sold 5,050 BTC to [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency.
 
-One week earlier, on October 5, 2009, NewLibertyStandard had published the first-ever Bitcoin exchange rate ($1 = 1,309.03 BTC) and launched a rudimentary exchange website. Malmi's motivation was to help bootstrap the market: someone had to be the first seller for a market to exist.
+One week earlier, on October 5, 2009, NewLibertyStandard had [published the first-ever Bitcoin exchange rate](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/) ($1 = 1,309.03 BTC) and launched a rudimentary exchange website. Malmi's motivation was to help bootstrap the market: someone had to be the first seller for a market to exist.
 
 Malmi, a 20-year-old computer science student at the Helsinki University of Technology, had been Satoshi's closest collaborator since May 2009. He ported Bitcoin to Linux, built the `bitcoin.org` website, wrote the FAQ, and founded the BitcoinTalk forums. He was the first to sell — not for profit, but to prove that Bitcoin could function as a medium of exchange.
 

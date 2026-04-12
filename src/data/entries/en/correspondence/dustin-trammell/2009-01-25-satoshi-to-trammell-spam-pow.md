@@ -27,7 +27,7 @@ secondarySources:
     url: "https://blog.dustintrammell.com/"
 ---
 
-In the final email of the Satoshi-Trammell correspondence, sent nearly a week after the previous exchange, Satoshi discussed the economics of spam in a system where proof-of-work tokens have value. He quoted Hal Finney's observation that valuable POW tokens would make botnet infections more noticeable to computer owners.
+In the final email of the Satoshi-Trammell correspondence, sent nearly a week after the previous exchange, Satoshi discussed the economics of spam in a system where proof-of-work tokens have value. He quoted [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s observation that valuable POW tokens would make botnet infections more noticeable to computer owners.
 
 Satoshi then proposed a novel economic counter-mechanism — "reverse-spamming":
 

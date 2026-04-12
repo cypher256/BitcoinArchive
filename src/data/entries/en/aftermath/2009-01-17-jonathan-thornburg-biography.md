@@ -26,7 +26,7 @@ secondarySources:
     url: "https://astronomy.indiana.edu/"
 ---
 
-Jonathan Thornburg is an astrophysicist at Indiana University. He participated in the cryptography mailing list discussion about Bitcoin in January 2009, shortly after Satoshi Nakamoto released Bitcoin v0.1.
+Jonathan Thornburg is an astrophysicist at Indiana University. He participated in the cryptography mailing list discussion about Bitcoin in January 2009, shortly after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) released [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).
 
 **Mailing List Criticism:**
 On January 17, 2009, Thornburg [posted a detailed response](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) to Satoshi's email about Bitcoin's potential uses. He raised two fundamental concerns that would echo through Bitcoin's history:

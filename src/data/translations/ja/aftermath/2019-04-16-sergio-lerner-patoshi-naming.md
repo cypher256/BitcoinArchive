@@ -29,7 +29,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-2019年4月16日、セルジオ・デミアン・ラーナーは「The Return of the Deniers and the Revenge of Patoshi」を発表した。6年間の研究成果を統合し、今や標準的となった「Patoshi」という用語を導入した重要な更新論文である。
+2019年4月16日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は「The Return of the Deniers and the Revenge of Patoshi」を発表した。6年間の研究成果を統合し、今や標準的となった「Patoshi」という用語を導入した重要な更新論文である。
 
 **「Patoshi」の命名:**
 

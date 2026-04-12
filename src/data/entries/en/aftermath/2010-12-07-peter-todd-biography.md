@@ -45,7 +45,7 @@ Todd became an active Bitcoin Core contributor starting in April 2012, eventuall
 Todd proposed [BIP 65](/BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/), introducing a new opcode that allows transaction outputs to remain unspendable until a specified future time. Deployed as a soft fork, it became a building block for payment channels and the Lightning Network.
 
 **Replace-by-Fee (RBF) — BIP 125 (December 2015):**
-Todd is best known for championing Replace-by-Fee (RBF), which allows unconfirmed transactions to be replaced by new versions with higher fees. The concept was formalized in [BIP 125](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/), co-authored by David A. Harding and Peter Todd. The BIP's rationale explicitly traces the concept back to Satoshi Nakamoto's original transaction replacement mechanism.
+Todd is best known for championing Replace-by-Fee (RBF), which allows unconfirmed transactions to be replaced by new versions with higher fees. The concept was formalized in [BIP 125](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/), co-authored by David A. Harding and Peter Todd. The BIP's rationale explicitly traces the concept back to [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original transaction replacement mechanism.
 
 **[OpenTimestamps](/BitcoinArchive/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/) (September 2016):**
 Todd created OpenTimestamps, an open-source project that uses the Bitcoin blockchain to create tamper-proof timestamps, allowing anyone to prove that a document existed at a particular point in time. The project generalizes the timestamping function that Satoshi built into Bitcoin's core design.

@@ -31,7 +31,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-アダム・バック — Hashcash（1997年）の発明者であり、ビットコインホワイトペーパーで引用されたプルーフ・オブ・ワークシステムの考案者 — がサトシ・ナカモトとの最初期の交流を振り返った：
+[アダム・バック](/BitcoinArchive/ja/participants/adam-back/) — Hashcash（1997年）の発明者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)で引用されたプルーフ・オブ・ワークシステムの考案者 — が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との最初期の交流を振り返った：
 
 **2008年8月のメール交換について：**
 

@@ -49,7 +49,7 @@ translationStatus: complete
 
 Patoshi議論において最も重要な発見は、 **ノンスの最初のニブルにおける拡張Patoshi異常が、マイニングされた最初の64ブロック「すべて」に出現する** ことであった。これは注目に値する。なぜなら、ラーナーのオリジナルの2013年ExtraNonceベースの分類では、ExtraNonce勾配の相違に基づいてBlock 12を「別のユーザー」がマイニングした最初のブロックと特定していたからである。
 
-PLOS ONEの発見は、Block 12がExtraNonceパターンとは異なるにもかかわらずPatoshiノンス署名を示すことを意味する。これは、サトシがカスタムPatoshiマイニングソフトウェアと標準Bitcoin v0.1クライアントを同時に実行していたと解釈するのが最も整合的である。ノンス分割の署名は両方の設定で持続するが、ExtraNonceのインクリメント挙動は異なる。
+PLOS ONEの発見は、Block 12がExtraNonceパターンとは異なるにもかかわらずPatoshiノンス署名を示すことを意味する。これは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がカスタムPatoshiマイニングソフトウェアと標準[Bitcoin v0.1クライアント](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)を同時に実行していたと解釈するのが最も整合的である。ノンス分割の署名は両方の設定で持続するが、ExtraNonceのインクリメント挙動は異なる。
 
 **異常の規模：**
 
