@@ -181,10 +181,14 @@ const BASE_PATTERN = /\]\(\/BitcoinArchive(\/[^)#]*?)(#[^)]*)?\)/g;
 
 function scanLinks() {
   const broken = [];
-  const allFiles = [...walk(EN_DIR), ...walk(JA_DIR)];
+  const mixedLang = [];
+  const allFiles = [
+    ...walk(EN_DIR).map(f => ({ file: f, lang: 'en' })),
+    ...walk(JA_DIR).map(f => ({ file: f, lang: 'ja' })),
+  ];
   let totalLinks = 0;
 
-  for (const file of allFiles) {
+  for (const { file, lang } of allFiles) {
     const content = readFileSync(file, 'utf-8');
     // Strip frontmatter — only check body
     const bodyStart = content.indexOf('\n---\n', 4);
@@ -195,24 +199,47 @@ function scanLinks() {
     while ((match = BASE_PATTERN.exec(body)) !== null) {
       totalLinks++;
       const target = match[1];
+      const upto = body.slice(0, match.index);
+      const lineNum = upto.split('\n').length;
+      const relFile = path.relative(process.cwd(), file);
+
+      // Rule 1: target must exist in validPaths
       if (!validPaths.has(target)) {
-        // Line number of match
-        const upto = body.slice(0, match.index);
-        const line = upto.split('\n').length;
-        broken.push({
-          file: path.relative(process.cwd(), file),
-          line,
+        broken.push({ file: relFile, line: lineNum, target });
+        continue;
+      }
+
+      // Rule 2: locale must match the file's language.
+      // - EN files may only link to paths NOT starting with /ja/
+      //   (allowed: /entries/..., /participants/..., /documents/..., /images/...)
+      // - JA files may only link to paths starting with /ja/ OR to locale-agnostic
+      //   static assets (/documents/..., /images/...)
+      const isJaPath = target.startsWith('/ja/');
+      const isStaticAsset = target.startsWith('/documents/') || target.startsWith('/images/');
+
+      if (lang === 'en' && isJaPath) {
+        mixedLang.push({
+          file: relFile,
+          line: lineNum,
           target,
+          reason: 'EN file linking to /ja/... — use EN path instead',
+        });
+      } else if (lang === 'ja' && !isJaPath && !isStaticAsset) {
+        mixedLang.push({
+          file: relFile,
+          line: lineNum,
+          target,
+          reason: 'JA file linking to EN path — use /ja/... instead',
         });
       }
     }
   }
 
-  return { broken, totalLinks };
+  return { broken, mixedLang, totalLinks };
 }
 
 console.log('Scanning markdown bodies for internal links...');
-const { broken, totalLinks } = scanLinks();
+const { broken, mixedLang, totalLinks } = scanLinks();
 console.log(`  ${totalLinks} internal links scanned`);
 console.log();
 
@@ -220,16 +247,33 @@ console.log();
 // Report
 // ---------------------------------------------------------------------------
 
-if (broken.length === 0) {
-  console.log(`✓ All ${totalLinks} internal links resolve`);
-  process.exit(0);
-} else {
+let exitCode = 0;
+
+if (broken.length > 0) {
   console.error(`✗ Found ${broken.length} broken internal link(s):\n`);
   for (const b of broken) {
     console.error(`  ${b.file}:${b.line}`);
     console.error(`    ${b.target}`);
     console.error();
   }
-  console.error(`Total: ${broken.length} broken / ${totalLinks} links`);
-  process.exit(1);
+  exitCode = 1;
 }
+
+if (mixedLang.length > 0) {
+  console.error(`✗ Found ${mixedLang.length} mixed-language link(s):\n`);
+  for (const m of mixedLang) {
+    console.error(`  ${m.file}:${m.line}`);
+    console.error(`    ${m.target}`);
+    console.error(`    ${m.reason}`);
+    console.error();
+  }
+  exitCode = 1;
+}
+
+if (exitCode === 0) {
+  console.log(`✓ All ${totalLinks} internal links resolve and match file locale`);
+} else {
+  console.error(`Total: ${broken.length} broken, ${mixedLang.length} mixed-lang / ${totalLinks} links`);
+}
+
+process.exit(exitCode);
