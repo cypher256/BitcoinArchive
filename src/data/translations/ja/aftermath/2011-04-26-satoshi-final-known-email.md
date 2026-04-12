@@ -28,6 +28,11 @@ secondarySources:
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
   - name: "MIT Technology Review"
     url: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
+relatedEntries:
+  - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
+  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
 translationStatus: complete
 ---
 

@@ -26,7 +26,9 @@ secondarySources:
 relatedEntries:
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2019-08-21-hal-finney-rpow-recognition
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 I thought I'd write about the last four years, an eventful time for Bitcoin and me.

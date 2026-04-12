@@ -25,6 +25,8 @@ secondarySources:
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
   - name: "CoinGeek - Bitcoin Faucet Turns 12"
     url: "https://coingeek.com/how-gavin-andresen-gave-away-19700-bitcoins-in-2010-the-bitcoin-faucet-turns-12/"
+relatedEntries:
+  - aftermath/2010-06-11-gavin-andresen-biography
 ---
 
 Gavin Andresen, a software developer based in Amherst, Massachusetts, discovered Bitcoin in May 2010, approximately eighteen months after Satoshi published [the whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). He quickly became fascinated by the project and began corresponding with Satoshi via email and through the Bitcointalk forum.

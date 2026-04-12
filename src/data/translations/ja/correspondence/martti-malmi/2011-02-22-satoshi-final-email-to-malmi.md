@@ -26,6 +26,8 @@ secondarySources:
 relatedEntries:
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
+  - aftermath/2011-04-26-satoshi-final-known-email
 translationStatus: complete
 ---
 

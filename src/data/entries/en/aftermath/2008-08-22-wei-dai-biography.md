@@ -31,6 +31,11 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-a-first-draft-wei-dais-b-money-was-it"
   - name: "Less Wrong — Wei Dai's profile"
     url: "https://www.lesswrong.com/users/wei-dai"
+relatedEntries:
+  - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
+  - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
+  - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
 ---
 
 Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft.

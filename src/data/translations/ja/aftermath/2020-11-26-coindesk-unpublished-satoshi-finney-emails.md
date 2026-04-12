@@ -28,6 +28,12 @@ secondarySources:
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
   - name: "Chain Bulletin — 'No, CoinDesk, Satoshi's local time zone wasn't UTC+8'"
     url: "https://chainbulletin.com/no-coindesk-satoshis-local-time-zone-wasnt-utc8"
+relatedEntries:
+  - aftermath/2009-10-05-hal-finney-dying-outside
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2019-08-21-hal-finney-rpow-recognition
 translationStatus: complete
 ---
 

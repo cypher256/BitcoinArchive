@@ -30,6 +30,12 @@ secondarySources:
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
   - name: "Bitslog — The Patoshi Mining Machine (August 22, 2020)"
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
+relatedEntries:
+  - aftermath/2013-04-17-sergio-demian-lerner-biography
+  - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
+  - aftermath/2019-04-16-sergio-lerner-patoshi-naming
+  - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
+  - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
 translationStatus: complete
 ---
 

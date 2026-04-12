@@ -22,7 +22,9 @@ secondarySources:
 relatedEntries:
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2019-08-21-hal-finney-rpow-recognition
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 > A man goes in to see his doctor, and after some tests, the doctor says, "I'm sorry, but you have a fatal disease."

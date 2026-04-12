@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/34/"
+relatedEntries:
+  - sourceforge/2010-12-15-bitcoin-v0319-released
 ---
 
 This is a minor release to add some DoS protection.

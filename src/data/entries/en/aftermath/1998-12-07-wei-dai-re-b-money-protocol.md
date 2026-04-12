@@ -25,6 +25,11 @@ secondarySources:
     url: "http://cypherpunks.venona.com/archive/1998/12/msg00194.html"
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
+relatedEntries:
+  - "aftermath/2008-08-22-wei-dai-biography"
+  - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
+  - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
+  - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
 ---
 
 *From the Cypherpunks mailing list (cypherpunks@cyberpass.net), December 7, 1998:*

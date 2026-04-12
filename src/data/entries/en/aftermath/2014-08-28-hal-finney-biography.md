@@ -41,6 +41,12 @@ secondarySources:
     url: "https://x.com/halfin/status/1110302988"
   - name: "21ideas — Hal Finney Biography"
     url: "https://21ideas.org/en/hal-finney/"
+relatedEntries:
+  - aftermath/2009-10-05-hal-finney-dying-outside
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2019-08-21-hal-finney-rpow-recognition
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979.

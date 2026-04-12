@@ -35,6 +35,10 @@ secondarySources:
     url: "https://coingeek.com/how-gavin-andresen-gave-away-19700-bitcoins-in-2010-the-bitcoin-faucet-turns-12/"
   - name: "Gavin Andresen on Twitter — CIA talk (June 14, 2011)"
     url: "https://x.com/gavinandresen/status/80785477342478336"
+relatedEntries:
+  - correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit
 translationStatus: complete
 ---
 

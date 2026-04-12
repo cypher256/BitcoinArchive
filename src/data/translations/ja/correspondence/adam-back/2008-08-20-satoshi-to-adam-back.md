@@ -21,6 +21,9 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - "aftermath/2008-08-20-adam-back-biography"
+  - "aftermath/2024-02-21-adam-back-retrospective-testimony"
 translationStatus: complete
 ---
 

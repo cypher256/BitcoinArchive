@@ -23,6 +23,10 @@ secondarySources:
     url: "https://cointelegraph.com/magazine/5050-bitcoin-for-5-dollars-2009-helsinki-claim-to-crypto-fame-crypto-city-guide/"
   - name: "Bitcoin Magazine — Bitcoin's First Trade Now Worth $130 Million"
     url: "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
+relatedEntries:
+  - aftermath/2009-10-05-newlibertystandard-biography
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
 ---
 
 On October 12, 2009, [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) sold 5,050 BTC to [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency.

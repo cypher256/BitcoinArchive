@@ -26,6 +26,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "Blockworks - Satoshi Disappear Day"
     url: "https://blockworks.co/news/satoshi-disappear-day-cia-bitcoin"
+relatedEntries:
+  - aftermath/2010-06-11-gavin-andresen-biography
 translationStatus: complete
 ---
 

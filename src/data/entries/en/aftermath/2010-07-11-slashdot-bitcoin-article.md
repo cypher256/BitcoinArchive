@@ -21,6 +21,9 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/bitcoin-gets-slashdotted-creation-mt-gox-1432938208"
   - name: "Blockworks — Bitcoin's journey to the mainstream started 15 years ago"
     url: "https://blockworks.co/news/satoshi-slashdot-bitcoin-evolution"
+relatedEntries:
+  - sourceforge/2010-07-06-bitcoin-v03-released
+  - emails/bitcoin-list/2010-07-06-bitcoin-0-3-released
 ---
 
 On July 11, 2010, Slashdot published an article titled "Bitcoin Releases Version 0.3," marking Bitcoin's first significant coverage on a major technology news platform.

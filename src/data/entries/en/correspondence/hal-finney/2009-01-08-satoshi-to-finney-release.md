@@ -23,6 +23,11 @@ secondarySources:
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
   - name: "Bitcoin.com - Satoshi Archive: Email to Hal Finney"
     url: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
+relatedEntries:
+  - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
+  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
+  - aftermath/2009-01-12-first-bitcoin-transaction
 ---
 
 Sent from satoshi@vistomail.com on Thursday, January 8, 2009 at 20:54:55 PST — just hours after the public announcement on the Cryptography mailing list — Satoshi personally notified Hal Finney of the Bitcoin release:

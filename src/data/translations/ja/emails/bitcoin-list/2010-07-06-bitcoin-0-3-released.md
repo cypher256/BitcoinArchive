@@ -13,6 +13,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/30/"
+relatedEntries:
+  - sourceforge/2010-07-06-bitcoin-v03-released
+  - aftermath/2010-07-11-slashdot-bitcoin-article
 translationStatus: complete
 ---
 

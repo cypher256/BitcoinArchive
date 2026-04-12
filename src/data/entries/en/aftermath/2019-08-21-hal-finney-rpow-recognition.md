@@ -25,6 +25,8 @@ relatedEntries:
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s Reusable Proofs of Work (RPOW) system, first announced on August 15, 2004, has received growing posthumous recognition as one of the most important direct precursors to Bitcoin. Five years after [Finney's death from ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), the cryptographic community increasingly acknowledged RPOW's significance in the lineage of digital cash systems.

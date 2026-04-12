@@ -22,6 +22,10 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Bitcoin_symbol"
   - name: "Bitcoin Magazine — History and Symbolism Behind Bitcoin's Logo"
     url: "https://bitcoinmagazine.com/culture/the-history-and-symbolism-behind-bitcoins-logo"
+relatedEntries:
+  - aftermath/2009-10-05-newlibertystandard-biography
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
 ---
 
 On February 5, 2010, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) proposed on the BitcoinTalk forum:

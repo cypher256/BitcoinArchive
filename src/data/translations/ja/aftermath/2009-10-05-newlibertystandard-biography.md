@@ -32,6 +32,10 @@ secondarySources:
     url: "https://blockworks.co/news/new-liberty-standard-crypto-legacy"
   - name: "Guinness World Records — First Cryptocurrency Exchange"
     url: "https://www.guinnessworldrecords.com/world-records/696258-first-cryptocurrency-exchange"
+relatedEntries:
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
 translationStatus: complete
 ---
 

@@ -26,6 +26,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "Blockworks - Satoshi Disappear Day"
     url: "https://blockworks.co/news/satoshi-disappear-day-cia-bitcoin"
+relatedEntries:
+  - aftermath/2010-06-11-gavin-andresen-biography
 ---
 
 In his reply to [Satoshi's "alert key" email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/), Gavin Andresen addressed several points. He acknowledged reading a Forbes article and agreed that the "pirate currency" framing was problematic. He accepted Satoshi's suggestion to give more credit to other developer contributors.

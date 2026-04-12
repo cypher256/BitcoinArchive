@@ -24,8 +24,10 @@ secondarySources:
     url: "https://www.guinnessworldrecords.com/world-records/696243-first-bitcoin-transaction"
 relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
+  - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
+  - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
 translationStatus: complete
 featured: true
 ---

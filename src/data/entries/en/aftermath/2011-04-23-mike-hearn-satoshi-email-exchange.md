@@ -20,6 +20,11 @@ tags:
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"
     url: "https://plan99.net/~mike/satoshi-emails/thread5.html"
+relatedEntries:
+  - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
+  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-final-known-email
 ---
 
 [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), a Google engineer who became an early Bitcoin contributor, exchanged a series of emails with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) between 2009 and April 2011. Hearn had first contacted Satoshi after reading the Bitcoin white paper and becoming interested in the project.

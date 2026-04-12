@@ -19,6 +19,10 @@ tags:
 secondarySources:
   - name: "History Heist — First Exchange Rate"
     url: "https://historyheist.com/new-liberty-standard-publishes-first-exchange-rate-on-bitcoin-of-1309-03-btc-to-one-u-s-dollar-0-0008btc/"
+relatedEntries:
+  - aftermath/2009-10-05-newlibertystandard-biography
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
 translationStatus: complete
 ---
 

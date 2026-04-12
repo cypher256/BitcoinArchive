@@ -27,6 +27,12 @@ secondarySources:
     url: "https://whale-alert.medium.com/the-satoshi-fortune-e49cf73f9a9b"
   - name: "CoinDesk — Protection Over Profit: What Early Mining Patterns Suggest About Bitcoin's Inventor"
     url: "https://www.coindesk.com/tech/2020/08/31/protection-over-profit-what-early-mining-patterns-suggest-about-bitcoins-inventor"
+relatedEntries:
+  - aftermath/2013-04-17-sergio-demian-lerner-biography
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
+  - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
+  - aftermath/2019-04-16-sergio-lerner-patoshi-naming
+  - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
 translationStatus: complete
 ---
 

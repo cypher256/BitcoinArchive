@@ -31,6 +31,9 @@ secondarySources:
     url: "https://blockstream.com/about/"
   - name: "COPA v Wright Trial — Adam Back Testimony (February 2024)"
     url: "https://www.opencrypto.org/"
+relatedEntries:
+  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "aftermath/2024-02-21-adam-back-retrospective-testimony"
 translationStatus: complete
 ---
 

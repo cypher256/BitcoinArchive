@@ -19,8 +19,10 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
 relatedEntries:
+  - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
+  - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-12-first-bitcoin-transaction
 translationStatus: complete
 ---

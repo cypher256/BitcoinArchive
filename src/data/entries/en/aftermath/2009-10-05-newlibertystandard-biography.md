@@ -32,6 +32,10 @@ secondarySources:
     url: "https://blockworks.co/news/new-liberty-standard-crypto-legacy"
   - name: "Guinness World Records — First Cryptocurrency Exchange"
     url: "https://www.guinnessworldrecords.com/world-records/696258-first-cryptocurrency-exchange"
+relatedEntries:
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
 ---
 
 NewLibertyStandard is a pseudonymous individual whose real-world identity has never been publicly revealed. They are BitcoinTalk user #26 (registered January 19, 2010) and were active on the forum until December 2012. They are known for creating the first Bitcoin exchange rate, conducting the first bitcoin-for-fiat transaction, and proposing the BTC ticker symbol.

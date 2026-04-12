@@ -28,6 +28,9 @@ secondarySources:
     url: "https://www.thetokendispatch.com/p/adam-back-the-man-who-built-bitcoins"
   - name: "CoinShares — Interview: Adam Back, CEO of Blockstream"
     url: "https://coinshares.com/insights/the-node/interview-adam-back/"
+relatedEntries:
+  - "aftermath/2008-08-20-adam-back-biography"
+  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
 ---
 
 [Adam Back](/BitcoinArchive/participants/adam-back/) — inventor of Hashcash (1997), the proof-of-work system cited in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) — has reflected on his earliest interaction with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/):

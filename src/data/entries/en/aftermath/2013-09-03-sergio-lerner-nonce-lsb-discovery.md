@@ -23,6 +23,12 @@ secondarySources:
     url: "https://bitslog.com/2013/09/04/satoshi-machine-one-mystery-is-solved-and-another-opens/"
   - name: "Bitslog — The Well Deserved Fortune of Satoshi Nakamoto (April 17, 2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
+relatedEntries:
+  - aftermath/2013-04-17-sergio-demian-lerner-biography
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
+  - aftermath/2019-04-16-sergio-lerner-patoshi-naming
+  - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
+  - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
 translationStatus: complete
 ---
 

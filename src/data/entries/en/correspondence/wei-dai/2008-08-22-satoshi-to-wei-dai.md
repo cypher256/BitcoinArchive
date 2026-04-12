@@ -22,6 +22,11 @@ tags:
 secondarySources:
   - name: "Gwern's Archive"
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
+relatedEntries:
+  - "aftermath/2008-08-22-wei-dai-biography"
+  - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
+  - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
 ---
 
 I was very interested to read your b-money page. I'm getting ready to release a paper that expands on your ideas into a complete working system. [Adam Back](/BitcoinArchive/participants/adam-back/) (hashcash.org) noticed the similarities and pointed me to your site.

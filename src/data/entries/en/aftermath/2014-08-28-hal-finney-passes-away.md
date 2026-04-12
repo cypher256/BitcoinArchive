@@ -20,7 +20,9 @@ tags:
 relatedEntries:
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2019-08-21-hal-finney-rpow-recognition
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 Hal Finney passed away on August 28, 2014 at the age of 58, after a five-year struggle with ALS (amyotrophic lateral sclerosis). He was the first person besides [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run Bitcoin, mined some of the earliest blocks, and was the recipient of the [first Bitcoin transaction](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-11-first-bitcoin-transaction/) on January 12, 2009, when Satoshi sent him 10 bitcoins as a test.

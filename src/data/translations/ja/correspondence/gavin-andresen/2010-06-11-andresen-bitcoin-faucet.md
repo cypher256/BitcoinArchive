@@ -25,6 +25,8 @@ secondarySources:
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
   - name: "CoinGeek - Bitcoin Faucet Turns 12"
     url: "https://coingeek.com/how-gavin-andresen-gave-away-19700-bitcoins-in-2010-the-bitcoin-faucet-turns-12/"
+relatedEntries:
+  - aftermath/2010-06-11-gavin-andresen-biography
 translationStatus: complete
 ---
 
