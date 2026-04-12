@@ -22,6 +22,10 @@ secondarySources:
     url: "https://www.coindesk.com/opinion/2023/01/12/remembering-hal-finney-on-the-14th-anniversary-of-the-first-bitcoin-transaction"
   - name: "Guinness World Records — First Bitcoin Transaction"
     url: "https://www.guinnessworldrecords.com/world-records/696243-first-bitcoin-transaction"
+relatedEntries:
+  - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
+  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
 translationStatus: complete
 featured: true
 ---

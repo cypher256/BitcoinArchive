@@ -23,6 +23,10 @@ secondarySources:
     url: "https://nakamotoinstitute.org/bitcoin-and-me"
   - name: "Bit2me Academy — Bitcoin and Me by Hal Finney"
     url: "https://academy.bit2me.com/en/bitcoin-and-me-hal-finney/"
+relatedEntries:
+  - aftermath/2009-10-05-hal-finney-dying-outside
+  - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2019-08-21-hal-finney-rpow-recognition
 ---
 
 I thought I'd write about the last four years, an eventful time for Bitcoin and me.

@@ -26,6 +26,9 @@ secondarySources:
   - name: "CoinDesk — What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 featured: true
+relatedEntries:
+  - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
+  - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
 ---
 
 On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted on the BitcoinTalk forum:

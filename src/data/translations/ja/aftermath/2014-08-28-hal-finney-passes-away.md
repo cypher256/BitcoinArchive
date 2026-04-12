@@ -17,6 +17,10 @@ tags:
   - "obituary"
   - "als"
   - "cryonics"
+relatedEntries:
+  - aftermath/2009-10-05-hal-finney-dying-outside
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2019-08-21-hal-finney-rpow-recognition
 translationStatus: complete
 ---
 

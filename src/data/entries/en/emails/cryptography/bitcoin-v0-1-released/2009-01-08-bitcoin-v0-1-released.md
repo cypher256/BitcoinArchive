@@ -18,6 +18,10 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
+relatedEntries:
+  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
+  - aftermath/2009-01-12-first-bitcoin-transaction
 ---
 
 Announcing the first release of Bitcoin, a new electronic cash

@@ -23,6 +23,9 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
 translationStatus: complete
 ---
 

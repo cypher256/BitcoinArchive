@@ -28,6 +28,9 @@ quotes:
   - id: "q1"
     person: "Satoshi"
     personSlug: "satoshi-nakamoto"
+relatedEntries:
+  - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
+  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
 translationStatus: complete
 ---
 

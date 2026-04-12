@@ -21,6 +21,10 @@ secondarySources:
     url: "https://web.archive.org/web/20090217040012/http://rpow.net/"
   - name: "Finney's RPOW announcement on Cypherpunks list"
     url: "https://nakamotoinstitute.org/library/rpow/"
+relatedEntries:
+  - aftermath/2009-10-05-hal-finney-dying-outside
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2014-08-28-hal-finney-passes-away
 translationStatus: complete
 ---
 

@@ -19,6 +19,10 @@ tags:
 secondarySources:
   - name: "GreaterWrong Mirror"
     url: "https://www.greaterwrong.com/posts/bshZiaLefDejvPKuS/dying-outside"
+relatedEntries:
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2014-08-28-hal-finney-passes-away
+  - aftermath/2019-08-21-hal-finney-rpow-recognition
 ---
 
 > A man goes in to see his doctor, and after some tests, the doctor says, "I'm sorry, but you have a fatal disease."

@@ -23,6 +23,9 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/the-man-behind-bitcoin-pizza-day-is-more-than-a-meme-hes-a-mining-pioneer"
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
+relatedEntries:
+  - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
+  - aftermath/2010-05-22-bitcoin-pizza-day
 ---
 
 [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010.
