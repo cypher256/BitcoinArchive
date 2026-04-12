@@ -77,6 +77,68 @@ just the original glyphs.
 - If a category develops a strong established pattern, follow that pattern
   unless there is a clear reason to improve it.
 
+## Related Entries
+
+Entries can declare strong semantic cross-references via the `relatedEntries`
+frontmatter field. This is distinct from tags (broad topic grouping),
+participants (person-centric), threads (conversation flow), and inline
+markdown links (prose-level positional references).
+
+### When to use `relatedEntries`
+
+Use it for **entity-level strong cross-references** between 2-10 entries
+that record the same event, parallel events, or directly causally-linked
+events — cases where tags are too coarse and threads don't apply.
+
+Good candidates:
+
+- Same event recorded from different angles (e.g. a whitepaper document
+  and the mailing-list announcement email of that same paper)
+- Parallel events (e.g. Satoshi's three farewell emails to Hearn,
+  Andresen, and Malmi)
+- Sequential events across different directories (e.g. Bitcoin v0.1
+  release on SourceForge, the cryptography mailing-list announcement,
+  Hal Finney's "Running bitcoin" tweet, and the first BTC transaction)
+- Cause and effect (e.g. the 2010-08-15 value overflow incident and the
+  0.3.10 patch that fixed it)
+- Biography ↔ canonical primary-source entries for that person
+
+### When NOT to use `relatedEntries`
+
+| Situation | Use instead |
+|---|---|
+| Entries are in the same directory / thread | nothing — threads handle it automatically |
+| Broad topical grouping (20+ entries share a theme) | `tags` |
+| Person-centric aggregation | `participants` |
+| A single reference at a specific position in body prose | inline markdown link |
+
+### Rules
+
+1. **Maximum 10 per file.** If you need more, the grouping is too coarse —
+   use `tags` instead.
+2. **Bidirectional required.** If A declares B as related, B must also
+   declare A as related. Enforced by `npm run check:internal-links`.
+3. **No self-reference.** An entry cannot relate to itself.
+4. **No thread-internal relations.** If two entries are already in the
+   same thread (same directory), do not use `relatedEntries` for them.
+5. **Same `relatedEntries` in EN and JA mirrors.** Both language versions
+   of an entry must declare the same set of related entries.
+6. **Format is the entry ID** (path relative to `src/data/entries/en/`
+   without `.md`), e.g. `emails/cryptography/2008-10-31-bitcoin-whitepaper-final`.
+
+### Example
+
+```yaml
+# src/data/entries/en/emails/cryptography/2008-10-31-bitcoin-whitepaper-final.md
+relatedEntries:
+  - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
+```
+
+All three entries in the cluster declare each other, forming a closed
+bidirectional group. The site renders a "Related entries" section on
+each entry page automatically.
+
 ## Scripted Edits Policy
 
 Scripts are allowed for inspection, reporting, and tightly-scoped metadata

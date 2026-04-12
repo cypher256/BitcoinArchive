@@ -25,6 +25,9 @@ pdfMetadata:
 secondarySources:
   - name: "Gwern's Bitcoin Archive"
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
+relatedEntries:
+  - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
 ---
 
 **PDF:** [View the early draft (PDF)](/BitcoinArchive/documents/2008-10-03-nakamoto-bitcoindraft.pdf)

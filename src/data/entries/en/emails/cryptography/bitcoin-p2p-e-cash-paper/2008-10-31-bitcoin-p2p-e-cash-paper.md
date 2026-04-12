@@ -18,6 +18,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
+relatedEntries:
+  - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
+  - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
 ---
 
 I've been working on a new electronic cash system that's fully

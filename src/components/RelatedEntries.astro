@@ -1,0 +1,110 @@
+---
+/**
+ * RelatedEntries.astro — Renders the "Related entries" section on entry pages.
+ *
+ * Reads `relatedEntries` from frontmatter (array of entry IDs), fetches
+ * each target entry from the language-specific collection, and renders
+ * a list of links with title and date.
+ *
+ * Rules for the data are documented in STYLE_GUIDE.md and enforced by
+ * scripts/check-internal-links.mjs.
+ */
+import { getCollection } from 'astro:content';
+import { useTranslations, formatDate, localePath } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  relatedIds: string[];
+}
+
+const { lang, relatedIds } = Astro.props;
+const t = useTranslations(lang);
+
+let targets: { id: string; title: string; date: Date }[] = [];
+
+if (relatedIds.length > 0) {
+  const collectionName = lang === 'ja' ? 'entries_ja' : 'entries';
+  const all = await getCollection(collectionName as 'entries');
+  const byId = new Map(all.map((e) => [e.id, e]));
+
+  targets = relatedIds
+    .map((id) => {
+      const entry = byId.get(id);
+      if (!entry) return null;
+      return {
+        id: entry.id,
+        title: entry.data.title,
+        date: entry.data.date,
+      };
+    })
+    .filter((x): x is { id: string; title: string; date: Date } => x !== null)
+    .sort((a, b) => a.date.getTime() - b.date.getTime());
+}
+---
+
+{targets.length > 0 && (
+  <section class="related-entries">
+    <h2>{t('related.heading' as any)}</h2>
+    <ul>
+      {targets.map((entry) => (
+        <li>
+          <a href={localePath(`/entries/${entry.id}/`, lang)}>
+            <time datetime={entry.date.toISOString()}>{formatDate(entry.date, lang)}</time>
+            <span class="related-title">{entry.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<style>
+  .related-entries {
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+  }
+  .related-entries h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    font-family: var(--font-heading);
+    color: var(--color-text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .related-entries ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .related-entries li {
+    margin: 0.4rem 0;
+  }
+  .related-entries a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.5;
+  }
+  .related-entries a:hover .related-title {
+    color: var(--color-link);
+    text-decoration: underline;
+  }
+  .related-entries time {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 6.5rem;
+  }
+  .related-title {
+    font-size: 0.95rem;
+  }
+</style>

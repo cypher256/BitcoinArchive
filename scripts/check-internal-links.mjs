@@ -57,7 +57,7 @@ function walk(dir) {
 function parseFrontmatter(content) {
   const m = content.match(/^---\n([\s\S]*?)\n---/);
   if (!m) return null;
-  const fm = { participants: [], tags: [] };
+  const fm = { participants: [], tags: [], relatedEntries: [] };
   const fmText = m[1];
   const lines = fmText.split('\n');
   for (let i = 0; i < lines.length; i++) {
@@ -88,6 +88,14 @@ function parseFrontmatter(content) {
       }
       if (cur) fm.participants.push(cur);
     }
+    if (/^relatedEntries:/.test(line)) {
+      let j = i + 1;
+      while (j < lines.length && /^  - /.test(lines[j])) {
+        const m = lines[j].match(/^  -\s*"?([^"\s]+)"?\s*$/);
+        if (m) fm.relatedEntries.push(m[1]);
+        j++;
+      }
+    }
   }
   return fm;
 }
@@ -107,20 +115,40 @@ function computeEntryId(relPath) {
 }
 
 // ---------------------------------------------------------------------------
-// Build set of valid URLs
+// Build set of valid URLs and relatedEntries index
 // ---------------------------------------------------------------------------
 
 const validPaths = new Set();
+// Map<entryId, { file, relatedEntries, threadId, lang }>
+// Keyed by entryId (lang-agnostic). We store one entry per id per lang.
+const enEntries = new Map();  // id -> { file, relatedEntries, threadId }
+const jaEntries = new Map();
+
+function resolveThreadIdFromEntryId(id) {
+  const idParts = id.split('/');
+  if (idParts[0] === 'forum' && idParts.length >= 4) {
+    return idParts.slice(0, 3).join('/');
+  }
+  if (idParts[0] === 'emails' && idParts.length >= 4) {
+    return idParts.slice(0, 3).join('/');
+  }
+  if (idParts[0] === 'correspondence' && idParts.length >= 3) {
+    if (idParts.length >= 4) return idParts.slice(0, 3).join('/');
+    return idParts.slice(0, 2).join('/');
+  }
+  return null;
+}
 
 function addEntry(baseDir, lang) {
   const files = walk(baseDir);
+  const langPrefix = lang === 'ja' ? '/ja' : '';
+  const store = lang === 'ja' ? jaEntries : enEntries;
+
   for (const file of files) {
     const rel = path.relative(baseDir, file);
     const id = computeEntryId(rel);
-    const langPrefix = lang === 'ja' ? '/ja' : '';
     validPaths.add(`${langPrefix}/entries/${id}/`);
 
-    // Read frontmatter for participants / source / type
     const content = readFileSync(file, 'utf-8');
     const fm = parseFrontmatter(content);
     if (!fm) continue;
@@ -130,24 +158,16 @@ function addEntry(baseDir, lang) {
     }
     if (fm.source) validPaths.add(`${langPrefix}/sources/${fm.source}/`);
 
-    // Thread page: forum/SOURCE/THREAD or correspondence/NAME[/SUB] or emails/LIST/THREAD
-    const idParts = id.split('/');
-    let threadId = null;
-    if (idParts[0] === 'forum' && idParts.length >= 4) {
-      threadId = idParts.slice(0, 3).join('/');
-    } else if (idParts[0] === 'emails' && idParts.length >= 4) {
-      threadId = idParts.slice(0, 3).join('/');
-    } else if (idParts[0] === 'correspondence' && idParts.length >= 3) {
-      // depth 2+: correspondence/NAME or correspondence/NAME/SUB
-      if (idParts.length >= 4) {
-        threadId = idParts.slice(0, 3).join('/');
-      } else {
-        threadId = idParts.slice(0, 2).join('/');
-      }
-    }
+    const threadId = resolveThreadIdFromEntryId(id);
     if (threadId) {
       validPaths.add(`${langPrefix}/entries/threads/${threadId}/`);
     }
+
+    store.set(id, {
+      file: path.relative(process.cwd(), file),
+      relatedEntries: fm.relatedEntries || [],
+      threadId,
+    });
   }
 }
 
@@ -244,6 +264,81 @@ console.log(`  ${totalLinks} internal links scanned`);
 console.log();
 
 // ---------------------------------------------------------------------------
+// Validate relatedEntries frontmatter (EN drives, JA must mirror)
+// ---------------------------------------------------------------------------
+// Rules:
+//   1. Target entry id must exist in EN collection
+//   2. No self-reference
+//   3. Bidirectional: if A lists B, B must list A
+//   4. No thread-internal relations
+//   5. Max 10 per file
+//   6. JA file must declare the same relatedEntries as its EN mirror
+
+const MAX_RELATED = 10;
+const relatedIssues = [];
+
+console.log('Validating relatedEntries frontmatter...');
+
+for (const [id, entry] of enEntries) {
+  const related = entry.relatedEntries;
+  if (related.length === 0) continue;
+
+  if (related.length > MAX_RELATED) {
+    relatedIssues.push({
+      file: entry.file,
+      issue: `relatedEntries has ${related.length} items (max ${MAX_RELATED}). Use tags for broader grouping.`,
+    });
+  }
+
+  for (const target of related) {
+    if (!enEntries.has(target)) {
+      relatedIssues.push({
+        file: entry.file,
+        issue: `relatedEntries target does not exist: "${target}"`,
+      });
+      continue;
+    }
+    if (target === id) {
+      relatedIssues.push({
+        file: entry.file,
+        issue: `relatedEntries contains self-reference: "${target}"`,
+      });
+      continue;
+    }
+    const targetEntry = enEntries.get(target);
+    if (!targetEntry.relatedEntries.includes(id)) {
+      relatedIssues.push({
+        file: entry.file,
+        issue: `relatedEntries not bidirectional: "${target}" does not list "${id}" back`,
+      });
+    }
+    if (entry.threadId && targetEntry.threadId && entry.threadId === targetEntry.threadId) {
+      relatedIssues.push({
+        file: entry.file,
+        issue: `relatedEntries points within the same thread ("${entry.threadId}"): "${target}". Use threads instead.`,
+      });
+    }
+  }
+}
+
+for (const [id, jaEntry] of jaEntries) {
+  const enEntry = enEntries.get(id);
+  if (!enEntry) continue;
+  const enSet = new Set(enEntry.relatedEntries);
+  const jaSet = new Set(jaEntry.relatedEntries);
+  if (enSet.size !== jaSet.size || [...enSet].some(x => !jaSet.has(x))) {
+    relatedIssues.push({
+      file: jaEntry.file,
+      issue: `JA relatedEntries does not match EN mirror. EN: [${[...enSet].join(', ')}] JA: [${[...jaSet].join(', ')}]`,
+    });
+  }
+}
+
+const totalRelated = [...enEntries.values()].reduce((s, e) => s + e.relatedEntries.length, 0);
+console.log(`  ${totalRelated} relatedEntries references validated`);
+console.log();
+
+// ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
 
@@ -270,10 +365,23 @@ if (mixedLang.length > 0) {
   exitCode = 1;
 }
 
+if (relatedIssues.length > 0) {
+  console.error(`✗ Found ${relatedIssues.length} relatedEntries issue(s):\n`);
+  for (const r of relatedIssues) {
+    console.error(`  ${r.file}`);
+    console.error(`    ${r.issue}`);
+    console.error();
+  }
+  exitCode = 1;
+}
+
 if (exitCode === 0) {
   console.log(`✓ All ${totalLinks} internal links resolve and match file locale`);
+  if (totalRelated > 0) {
+    console.log(`✓ All ${totalRelated} relatedEntries references valid (bidirectional, non-self, non-thread, ≤${MAX_RELATED})`);
+  }
 } else {
-  console.error(`Total: ${broken.length} broken, ${mixedLang.length} mixed-lang / ${totalLinks} links`);
+  console.error(`Total: ${broken.length} broken, ${mixedLang.length} mixed-lang, ${relatedIssues.length} related-issue / ${totalLinks} links`);
 }
 
 process.exit(exitCode);

@@ -60,6 +60,7 @@ const entrySchema = z.object({
     'complete', 'partial', 'machine', 'pending',
   ]).optional(),
   quotes: z.array(quoteSchema).default([]),
+  relatedEntries: z.array(z.string()).default([]),
 });
 
 const entries = defineCollection({

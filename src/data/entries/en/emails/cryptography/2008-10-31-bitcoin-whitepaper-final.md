@@ -28,6 +28,9 @@ secondarySources:
     url: "https://bitcoin.org/bitcoin.pdf"
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/bitcoin.pdf"
+relatedEntries:
+  - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
 featured: true
 ---
 

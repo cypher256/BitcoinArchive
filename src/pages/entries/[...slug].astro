@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryMeta from '../../components/EntryMeta.astro';
 import SourceCitation from '../../components/SourceCitation.astro';
 import AutoLinkNames from '../../components/AutoLinkNames.astro';
+import RelatedEntries from '../../components/RelatedEntries.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, localePath, absoluteUrl } from '../../i18n/utils';
 import { resolveThreadId } from '../../data/threads';
@@ -93,6 +94,8 @@ const breadcrumbs = [
         </a>
       </div>
     )}
+
+    <RelatedEntries lang={lang} relatedIds={entry.data.relatedEntries ?? []} />
 
     <SourceCitation
       sourceUrl={entry.data.sourceUrl}
