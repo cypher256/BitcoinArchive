@@ -13,7 +13,11 @@
 import { readdirSync, readFileSync } from 'fs';
 import { join, basename } from 'path';
 import { algoliasearch } from 'algoliasearch';
-import { getDeploymentConfig } from '../site-config.mjs';
+
+// NOTE: URLs in the Algolia index are stored WITHOUT the deployment base
+// prefix (e.g. "/ja/entries/..." not "/BitcoinArchive/ja/entries/..."),
+// because the same index is shared between deployments with different
+// base paths. The search page prepends the runtime base at hit time.
 
 const APP_ID = process.env.ALGOLIA_APP_ID;
 const ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY;
@@ -27,8 +31,6 @@ const client = algoliasearch(APP_ID, ADMIN_KEY);
 
 const EN_DIR = 'src/data/entries/en';
 const JA_DIR = 'src/data/translations/ja';
-const { base } = getDeploymentConfig();
-const BASE_URL = base === '/' ? '' : base.replace(/\/$/, '');
 
 function readEntries(baseDir, lang) {
   const entries = [];
@@ -69,8 +71,8 @@ function readEntries(baseDir, lang) {
           ? fm.match(/^\s+slug:\s*"?([^"\n]*)"?/m)?.[1]?.trim()
           : null;
         const url = participantSlug
-          ? `${BASE_URL}${langPrefix}/participants/${participantSlug}/`
-          : `${BASE_URL}${langPrefix}/entries/${slug}/`;
+          ? `${langPrefix}/participants/${participantSlug}/`
+          : `${langPrefix}/entries/${slug}/`;
 
         // Clean body for indexing (remove markdown syntax)
         const cleanBody = body

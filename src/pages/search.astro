@@ -4,6 +4,7 @@ import { useTranslations, absoluteUrl } from '../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
@@ -42,7 +43,7 @@ const t = useTranslations(lang);
   .ais-Pagination-item--selected .ais-Pagination-link { font-weight: bold; color: #c45a2c; }
 </style>
 
-<script is:inline>
+<script is:inline define:vars={{ basePath }}>
   document.addEventListener('DOMContentLoaded', function() {
     var searchClient = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
 
@@ -84,7 +85,7 @@ const t = useTranslations(lang);
             var type = hit.type ? ' · ' + hit.type : '';
             var title = instantsearch.highlight({ attribute: 'title', hit: hit });
             var snippet = instantsearch.snippet({ attribute: 'body', hit: hit });
-            return '<div class="hit-item"><a href="' + hit.url + '">'
+            return '<div class="hit-item"><a href="' + basePath + hit.url + '">'
               + '<div class="hit-title">' + title + '</div>'
               + '<div class="hit-meta">' + author + date + type + '</div>'
               + '<div class="hit-snippet">' + snippet + '</div>'
