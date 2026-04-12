@@ -16,4 +16,3 @@ translationStatus: complete
 ---
 
 ヴラディミール・ファン・デル・ラーンに同意する。現状のままでよい。
-

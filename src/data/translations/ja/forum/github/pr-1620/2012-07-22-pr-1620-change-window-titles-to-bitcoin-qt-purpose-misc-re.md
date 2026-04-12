@@ -17,4 +17,3 @@ translationStatus: complete
 ---
 
 - これにより、ユーザーがクライアントの名称を「Bitcoin」だと誤解することを防げる
-

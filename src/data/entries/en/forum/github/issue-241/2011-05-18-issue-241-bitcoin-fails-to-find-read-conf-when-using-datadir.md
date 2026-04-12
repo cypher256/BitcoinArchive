@@ -17,7 +17,7 @@ tags:
 
 When i try to run bitcoin with -testnet and -datadir=someotherdir
 things get stored as expected, in someotherdir/testnet
-but if i try to run it with -server (or run bitcoind), it complains that it can't find rpcpassword, even though it is present in someotherdir/testnet. 
+but if i try to run it with -server (or run bitcoind), it complains that it can't find rpcpassword, even though it is present in someotherdir/testnet.
 
 Warning: To use the "-server" option, you must set rpcpassword=<password>
 in the configuration file: someotherdir/testnet/bitcoin.conf
