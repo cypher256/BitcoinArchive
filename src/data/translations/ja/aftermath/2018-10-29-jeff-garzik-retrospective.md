@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "CoinDesk — Jeff Garzik on Satoshi and the Future of Bitcoin (2013)"
     url: "https://www.coindesk.com/markets/2013/07/09/bitcoin-developer-jeff-garzik-on-satoshi-nakamoto-and-the-future-of-bitcoin"
+relatedEntries:
+  - aftermath/2010-07-15-jeff-garzik-biography
+  - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
 translationStatus: complete
 ---
 

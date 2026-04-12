@@ -24,6 +24,7 @@ secondarySources:
 relatedEntries:
   - sourceforge/2010-07-06-bitcoin-v03-released
   - emails/bitcoin-list/2010-07-06-bitcoin-0-3-released
+  - aftermath/2010-07-15-jeff-garzik-biography
 translationStatus: complete
 ---
 

@@ -25,6 +25,13 @@ secondarySources:
     url: "https://news.ycombinator.com/item?id=41784567"
   - name: "Bloomberg — Peter Toddインタビュー（2024年10月）"
     url: "https://www.bloomberg.com/news/videos/2024-10-09/peter-todd-denies-being-bitcoin-creator-satoshi-nakamoto"
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
+  - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
+  - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
+  - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
 translationStatus: complete
 ---
 

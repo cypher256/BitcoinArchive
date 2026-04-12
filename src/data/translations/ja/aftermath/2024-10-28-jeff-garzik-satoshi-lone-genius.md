@@ -24,6 +24,9 @@ secondarySources:
     url: "https://beincrypto.com/jeff-garzik-satoshi-nakamoto-was-clear-what-bitcoin-should-be/"
   - name: "Bad Crypto Podcast — Inside the Mind of a Bitcoin Pioneer with Jeff Garzik"
     url: "https://badcryptopodcast.com/2024/11/06/inside-the-mind-of-a-bitcoin-pioneer-with-jeff-garzik/"
+relatedEntries:
+  - aftermath/2010-07-15-jeff-garzik-biography
+  - aftermath/2018-10-29-jeff-garzik-retrospective
 translationStatus: complete
 ---
 

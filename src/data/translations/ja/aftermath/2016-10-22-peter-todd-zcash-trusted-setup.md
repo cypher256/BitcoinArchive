@@ -25,6 +25,13 @@ secondarySources:
     url: "https://x.com/peterktodd/status/1519428920000622592"
   - name: "GitHub — Reveal Peter Todd's involvement in the ceremony"
     url: "https://github.com/zcash/mpc/pull/1"
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2010-12-07-retep-diaspora-invite-first-post
+  - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
+  - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
+  - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
 translationStatus: complete
 ---
 

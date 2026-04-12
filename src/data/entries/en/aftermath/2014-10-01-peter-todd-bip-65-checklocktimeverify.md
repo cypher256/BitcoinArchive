@@ -23,6 +23,13 @@ secondarySources:
     url: "https://cointelegraph.com/news/peter-todd-and-the-expansion-of-bitcoin"
   - name: "Bitcoin-dev mailing list — BIP 65 discussion"
     url: "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-November/006948.html"
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2010-12-07-retep-diaspora-invite-first-post
+  - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
+  - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
+  - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
 ---
 
 On October 1, 2014, Peter Todd proposed BIP 65, introducing a new opcode called OP_CHECKLOCKTIMEVERIFY to Bitcoin's scripting system. The proposal redefined the existing NOP2 opcode to enable time-locked transaction outputs — outputs that cannot be spent until a specified block height or timestamp.

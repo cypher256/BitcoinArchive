@@ -33,6 +33,13 @@ secondarySources:
     url: "https://www.cnn.com/2024/10/08/investing/satoshi-nakamoto-identity/index.html"
   - name: "Money Electric: The Bitcoin Mystery — Wikipedia"
     url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2010-12-07-retep-diaspora-invite-first-post
+  - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
+  - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
+  - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
+  - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
 translationStatus: complete
 ---
 
