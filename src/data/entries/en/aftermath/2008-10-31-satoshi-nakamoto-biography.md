@@ -60,7 +60,49 @@ In late 2010, Satoshi began transferring project responsibilities to other devel
 Satoshi's P2P Foundation profile listed a date of birth of April 5, 1975, and a location of Japan. These details are unverified and widely considered to be fictitious. Satoshi wrote in fluent English with conventions consistent with British or Commonwealth usage. Analysis of posting timestamps has suggested various time zones, but no conclusive determination of location has been made.
 
 **Development Environment:**
-Bitcoin v0.1 was developed on Windows using Microsoft Visual C++ 6.0 and MinGW. The initial release was Windows-only, distributed as a .rar archive. Satoshi was primarily a Windows developer; from late 2009, with help from Martti Malmi, he began porting Bitcoin to Linux (Ubuntu). He personally set up Ubuntu test environments and debugged deep issues (pthread_cancel, MSG_DONTWAIT, Berkeley DB, GTK thread safety), but was unfamiliar with Linux conventions such as config file formats, daemon switch naming, and startup scripts. He wrote on the forum: "That's great because that's where I have less expertise" (December 2009, regarding Linux/FreeBSD testing). In a December 2010 email to Gavin Andresen, he described Gavin as "technically much more Linux capable than me." Mac support was entirely contributed by Laszlo Hanyecz; Satoshi had no Mac to test on. BSD knowledge was conceptual (socket origins) rather than hands-on. Despite these gaps, Satoshi steadily expanded cross-platform support throughout 2010, incorporating community-contributed patches for Linux, macOS, and FreeBSD.
+Bitcoin v0.1 was developed on Windows using Microsoft Visual C++ 6.0 SP6 and MinGW GCC 3.4.5. The initial release was Windows-only, distributed as a .rar archive — an unusual choice for an open-source project (see analysis below). No version control system was used for v0.1; SVN was introduced later with help from Martti Malmi and Gavin Andresen.
+
+From late 2009, Satoshi began porting Bitcoin to Linux (Ubuntu) with Martti Malmi's assistance. He personally set up Ubuntu test environments and debugged deep issues (pthread_cancel, MSG_DONTWAIT, Berkeley DB, GTK thread safety), but was unfamiliar with Linux conventions such as config file formats, daemon switch naming, and startup scripts. He wrote on the forum: "That's great because that's where I have less expertise" (December 2009, regarding Linux/FreeBSD testing). In a December 2010 email to Gavin Andresen, he described Gavin as "technically much more Linux capable than me." Mac support was entirely contributed by Laszlo Hanyecz; Satoshi had no Mac to test on. BSD knowledge was conceptual (socket origins) rather than hands-on. Despite these gaps, Satoshi steadily expanded cross-platform support throughout 2010, incorporating community-contributed patches for Linux, macOS, and FreeBSD.
 
 **Bitcoin Holdings:**
 Research by blockchain analysts has identified a pattern of early mining activity attributed to a single entity, often called the "Patoshi" pattern, believed to be Satoshi. The bitcoins mined during this period — estimated at approximately 1.1 million BTC — have never been moved.
+
+---
+
+**Behavioral Profile (editorial analysis):**
+
+The following observations are speculative analysis derived from Satoshi's actual development practices, communication patterns, and tooling choices — not established fact. They are included because they reveal a coherent and unusual profile that is rarely discussed despite being evident in the public record.
+
+*No version control — no team development experience:*
+In 2008, CVS and SVN were standard even for solo developers. SourceForge itself offered SVN/CVS hosting. Yet Bitcoin v0.1 shipped with no version control history. For someone capable of writing 31,000 lines of production-quality C++, this absence is highly unusual. It strongly suggests zero experience with team-based software development — no corporate employment, no open-source project participation, no academic collaboration.
+
+*Warez scene cultural affinity (consumer, not producer):*
+The .rar distribution format is the strongest cultural indicator. On SourceForge, virtually no open-source project used .rar — it was the standard format of the Warez scene (IRC/XDCC/Usenet distribution), fansub communities, and underground BBS/IRC culture. Compared against formal Warez scene release rules:
+
+| Scene convention | Satoshi's behavior | Match |
+|---|---|---|
+| .rar distribution | bitcoin-0.1.0.rar | ✅ |
+| Pseudonymous handle | Satoshi Nakamoto | ✅ |
+| Absolute identity concealment | Tor, anonymous email, trace elimination | ✅ |
+| Windows-only | v0.1–v0.1.5 | ✅ |
+| No installer (extract and run) | Extract .rar, run executable | ✅ |
+| GMX email | satoshi@gmx.com (popular in European scene) | ⚠️ |
+| NFO file with ASCII art | None | ❌ |
+| Group tag (-GROUPName) | None | ❌ |
+| SFV verification file | None | ❌ |
+
+The absence of NFO files, group tags, and SFV files rules out membership in a scene release group. But the .rar default, Windows-only development, and anonymity practices are consistent with someone who *consumed* scene releases — someone for whom .rar was simply the normal way to package software. VC++ 6.0 SP6 (obsolete by 2008) was widely available as a cracked release in the scene, reinforcing this reading.
+
+*Self-taught polymath without academic roots:*
+Satoshi knew Hashcash but was unaware of b-money and Bit Gold until directed to them by Adam Back and Wei Dai. This is not the behavior of someone embedded in academic cryptography, where systematic literature surveys are standard practice. Instead, it suggests a self-taught individual who pursued interests deeply but outside institutional frameworks — someone who learned from the internet rather than from universities or research groups.
+
+Despite lacking academic connections, Satoshi demonstrated working knowledge across cryptography, economics, distributed systems, and network programming. The combination of deep multi-domain expertise with no institutional affiliation or prior community participation is rare and distinctive.
+
+*"I'm better with code than with words":*
+Satoshi's self-assessment may reflect genuine preference rather than professional expertise. The code quality was high (Dan Kaminsky's assessment: "everything was anticipated"), but the development *process* was amateur — no version control, no issue tracker, .rar distribution, no CI. The profile is consistent with a brilliant self-taught programmer who had never worked in a professional software development environment.
+
+*Management capability without management experience:*
+Satoshi's communications on the cryptography mailing list and BitcoinTalk forum were calm, clear, and logically structured. He could prioritize, delegate, and make strategic decisions (e.g., declining WikiLeaks support, transitioning to Gavin). However, the handoff to Gavin suggests self-awareness that project *operations* required someone with different skills. Satoshi could design systems but chose not to run organizations.
+
+*Summary:*
+The behavioral evidence points to an isolated autodidact — self-taught across multiple technical domains, culturally immersed in 1990s–2000s underground/IRC/Warez internet culture, with no team development or organizational experience, but possessing genuine intellectual brilliance and quiet management instincts. Not a corporate developer, not an academic researcher, not a member of a development team — but someone who independently synthesized knowledge from cryptography, economics, and computer science into a working system that no one else had been able to build.
