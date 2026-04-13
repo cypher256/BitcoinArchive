@@ -16,6 +16,7 @@ secondarySources:
 ---
 
 > Will it be synchronized automatically?
+
 Very much not.  Using multiple copies of wallet.dat is not recommended or supported, in fact all of Bitcoin is designed to defeat that.  Both copies will get screwed up.
 
 If you're trying to consolidate your generated coins into one wallet, a better solution now is to run getwork miners on the additional systems.  jgarzik has a CPU miner, and it supports tcatm's 4-way SSE2, so on Windows it's up to twice as fast as the built-in SHA if you have an AMD or recent Intel (core 3, 5 or 7).
