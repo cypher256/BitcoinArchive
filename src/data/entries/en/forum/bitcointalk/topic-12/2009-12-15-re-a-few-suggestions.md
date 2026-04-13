@@ -27,4 +27,5 @@ Then it must be something you're doing differently with building or configuring 
 What options did you use on the wxWidgets "configure" script?  The options I used are in build-unix.txt.
 
 > One question: how do I enable the debug.log? I have tried stopping bitcoin and touching ~/.bitcoin/debug.log and starting bitcoin again. It never seems to write to the file. Am I missing something?
+
 Never heard of that happening.  Is there anything in debug.log?  If you touched the file, that sounds like something is there.  Does the program have write access to the file?

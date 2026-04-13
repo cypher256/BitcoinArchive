@@ -33,7 +33,7 @@ quotes:
 > Yea, that was the primary feature that caught my eye. The real trick
 > will be to get people to actually value the BitCoins so that they become
 > currency.
- 
+
 I would be surprised if 10 years from now we're not using
 electronic currency in some way, now that we know a way to do it
 that won't inevitably get dumbed down when the trusted third party

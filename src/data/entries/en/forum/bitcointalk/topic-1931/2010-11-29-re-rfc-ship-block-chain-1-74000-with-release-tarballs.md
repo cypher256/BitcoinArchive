@@ -23,6 +23,7 @@ Quote1) bitcoin should be opening databases, not just environment, at program st
 Already does that.  See CDB.  The lifetime of the (for instance) CTxDB object is only to support database transactions and to know if anything is still using the database at shutdown.
 
 > And, additionally, bitcoin forces a database checkpoint, pushing all transactions from log into main database.
+
 If it was doing that it would be much slower.  It's supposed to be only once a minute or 500 blocks:
 
 ```cpp

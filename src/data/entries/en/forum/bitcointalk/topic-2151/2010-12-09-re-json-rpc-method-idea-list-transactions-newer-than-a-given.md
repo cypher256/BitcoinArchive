@@ -42,6 +42,7 @@ It doesn't seem right to have a function that seems tailor made to be used a cer
 > > 3) A transaction can be replaced by a double-spend with a different txid.  You would count both spends.
 >
 >  listtransactions does not add anything to this problem, beyond that which is already vulnerable through listreceivedbyaddress.
+
 Suppose both spends are to the same address.  getreceivedbyaddress would always count only one or the other spend at any given time, never both.
 
 Using listtransactions, it would be very easy to count both.  You see the first spend, you count it.  You see the second spend, you count it.  Total is double counted.

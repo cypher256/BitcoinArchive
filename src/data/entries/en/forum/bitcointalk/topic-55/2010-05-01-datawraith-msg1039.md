@@ -26,6 +26,7 @@ quotes:
 I think that using magnet-links just because they are already somewhat popular does not outweigh the disadvantages. Magnet links were designed to reference a file or set of files on peer-to-peer networks, and as such all well-known parameters refer to files (file name, size, etc.). Bitcoin would have to rely on application-specific xBitcoin-parameter(s), and since we probably don't want to mix files with bitcoin transactions in a single link, there's no really compelling reason not to use our own, seperate format, especially since magnet-links aren't officially recognized either.
 
 > In the process of investigating URI's I was reminded of freenet and the magnet like system they use, and I ended up back there checking it out. [snip] Couldn't this be used for hooking the URI into a rich database of application specific data, that has been designed for the publishers own website functionality or business system? While your bitcoin node takes care of the actual transaction, the freenet node takes care of the individual data presented.
+
 Woah! Going from a lightweight URL-handler that brings up the Bitcoin client to requiring Freenet is a bit of a leap. This really should be optional.
 
 However, it really would be very nice to add additional information to a transaction. Building on ec's initial post, and the need for further details, I think we should have the following url parameters (or shorter versions of them):

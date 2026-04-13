@@ -18,5 +18,5 @@ In my opinion your translation is fine, DataWraith.
 Just two things:
 1. I think the "f" in Sourceforge should be uppercase. At least that`s what wikipedia tells me.
 2. It sounds better when you write it like this:
-Abh�ngig davon, wieviel CPU-Zeit **Sie im Leerlauf** beitragen k�nnen, kann es einige Tage dauern bis die ersten M�nzen erzeugt werden - haben Sie also bitte etwas Geduld.
+Abhängig davon, wieviel CPU-Zeit **Sie im Leerlauf** beitragen können, kann es einige Tage dauern bis die ersten Münzen erzeugt werden - haben Sie also bitte etwas Geduld.
 (the &endash; doesn`t get resolved correctly, you better check that again or replace it with a normal comma)

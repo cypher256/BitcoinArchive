@@ -23,6 +23,7 @@ quotes:
 
 Is there no chance to try any better? We only need to slow down chain growth. The individual khps may stay the same.
 > A lot of us have already attempted everything you've listed here. That's why we have a lot of security updates for releases  Wink
+
 Will you, a lot of us, share your experience, especially the results and conclusions?
 Good analysis with an experiment may be published as a scientific research paper, are you interested?
 

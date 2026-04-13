@@ -52,7 +52,7 @@ I should add a command to timestamp a file that way.
 > Right, and I'd like to see more of a library interface that could be
 > called from programming or scripting languages, on the client side as
 > well.
- 
+
 Exactly.
 
  

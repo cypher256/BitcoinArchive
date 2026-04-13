@@ -23,12 +23,14 @@ quotes:
 
 <!-- quote: q1 -->
 > AMD X3 @2.8ghz
+>
+> ->stock client
+> ~3800khs ~150Watt
 
-->stock client
-~3800khs ~150Watt
 Did you try -4way?
 
 > How many hashes can I expect with a 24 core machine? I have a quad-core generating 4,300 hashes-per-second, so I am estimating a 24-core machine could mine bitcoins at 25,000 hashes-per-second.
+
 AMD Phenom (I think 4-core) CPUs are doing about 11,000khps with -4way, about 100% speedup.  24 cores should get 66,000khps.  AMD is the best choice because it has the best SSE2 implementation. (or maybe because tcatm had an AMD and optimised his code for that)
 
 There's been so much else to do that I haven't had time to make -4way automatic.  For now you still have to do it manually.

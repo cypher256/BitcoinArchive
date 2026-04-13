@@ -23,6 +23,7 @@ secondarySources:
 ---
 
 > How much memory do you have to work with?
+
 The VPS has 320MB RAM, 50MB of which is currently free. There's also  
 500MB swap space.
 

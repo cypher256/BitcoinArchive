@@ -28,9 +28,11 @@ I'd lobby for using JSON; it's (mostly) a subset of YAML (which is a common choi
 I think the only big advantage is that it keeps authentication where it belongs in the transport layer, so if, in the future, you **do** want to go with full-fledged HTTPS with certificates the API doesn't have to change.
 No, I just confused "command" with "parameter", and did this:
 
-Code:> bitcoind help
+```
+> bitcoind help
 error: First parameter must be the password.
 > bitcoind <my password> help
 error: unknown command: <my password>
 >bitcoind help <my password>
  ... that works.
+```

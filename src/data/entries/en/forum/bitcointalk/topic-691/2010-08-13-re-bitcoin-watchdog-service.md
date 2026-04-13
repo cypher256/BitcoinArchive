@@ -16,6 +16,7 @@ secondarySources:
 ---
 
 > But there will be no irc server to bootstrap from.
+
 Which doesn't matter because you can't access sourceforge to download the software either.
 
 If you've ever been connected before, you don't need IRC to bootstrap anymore.  Even if you haven't, you can bootstrap from seed nodes.  IRC is completely redundant since 0.3.0.
