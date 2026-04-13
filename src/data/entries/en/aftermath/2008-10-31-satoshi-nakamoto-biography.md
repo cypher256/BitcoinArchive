@@ -69,40 +69,24 @@ Research by blockchain analysts has identified a pattern of early mining activit
 
 ---
 
-**Behavioral Profile (editorial analysis):**
+**Behavioral observations (editorial notes):**
 
-The following observations are speculative analysis derived from Satoshi's actual development practices, communication patterns, and tooling choices — not established fact. They are included because they reveal a coherent and unusual profile that is rarely discussed despite being evident in the public record.
+The following are observations drawn from Satoshi's publicly recorded development practices, communication patterns, and tooling choices. They are not conclusions about identity or background — they describe what can be seen in the record and note where it is unusual.
 
-*No version control — no team development experience:*
-In 2008, CVS and SVN were standard even for solo developers. SourceForge itself offered SVN/CVS hosting. Yet Bitcoin v0.1 shipped with no version control history. For someone capable of writing 31,000 lines of production-quality C++, this absence is highly unusual. It strongly suggests zero experience with team-based software development — no corporate employment, no open-source project participation, no academic collaboration.
+*Absence of version control:*
+Bitcoin v0.1 shipped with no version control history, despite SourceForge offering SVN/CVS hosting. By 2008, version control was common even for solo projects. This is an unusual choice for a developer capable of writing 31,000 lines of C++, and may suggest that Satoshi's development background did not include collaborative or institutional software projects.
 
-*Warez scene cultural affinity (consumer, not producer):*
-The .rar distribution format is the strongest cultural indicator. On SourceForge, virtually no open-source project used .rar — it was the standard format of the Warez scene (IRC/XDCC/Usenet distribution), fansub communities, and underground BBS/IRC culture. Compared against formal Warez scene release rules:
+*Unusual distribution format:*
+Bitcoin v0.1 was distributed as a .rar archive — a format rarely used on SourceForge, where .zip and .tar.gz were standard for open-source releases. The .rar format was more commonly associated with informal software distribution channels. The reason for this choice is unknown.
 
-| Scene convention | Satoshi's behavior | Match |
-|---|---|---|
-| .rar distribution | bitcoin-0.1.0.rar | ✅ |
-| Pseudonymous handle | Satoshi Nakamoto | ✅ |
-| Absolute identity concealment | Tor, anonymous email, trace elimination | ✅ |
-| Windows-only | v0.1–v0.1.5 | ✅ |
-| No installer (extract and run) | Extract .rar, run executable | ✅ |
-| GMX email | satoshi@gmx.com (popular in European scene) | ⚠️ |
-| NFO file with ASCII art | None | ❌ |
-| Group tag (-GROUPName) | None | ❌ |
-| SFV verification file | None | ❌ |
+*Learning path:*
+Satoshi knew Hashcash but was unaware of b-money and Bit Gold until directed to them by Adam Back and Wei Dai in August 2008. In academic cryptography, systematic literature surveys are standard practice, so this gap may suggest that Satoshi's knowledge was acquired outside institutional settings. Despite this, Satoshi demonstrated working knowledge across cryptography, economics, distributed systems, and network programming — an unusual breadth for someone with no visible prior community participation.
 
-The absence of NFO files, group tags, and SFV files rules out membership in a scene release group. But the .rar default, Windows-only development, and anonymity practices are consistent with someone who *consumed* scene releases — someone for whom .rar was simply the normal way to package software. VC++ 6.0 SP6 (obsolete by 2008) was widely available as a cracked release in the scene, reinforcing this reading.
+*Development process:*
+Satoshi's code quality was high (Dan Kaminsky's 2011 audit: "everything was anticipated"), but the development process lacked standard professional tooling — no version control, no issue tracker, no CI, .rar distribution. This combination of high code quality with informal process is distinctive.
 
-*Self-taught polymath without academic roots:*
-Satoshi knew Hashcash but was unaware of b-money and Bit Gold until directed to them by Adam Back and Wei Dai. This is not the behavior of someone embedded in academic cryptography, where systematic literature surveys are standard practice. Instead, it suggests a self-taught individual who pursued interests deeply but outside institutional frameworks — someone who learned from the internet rather than from universities or research groups.
+*Communication style:*
+Satoshi's communications on the cryptography mailing list and BitcoinTalk forum were calm, clear, and logically structured. He could prioritize, delegate, and make strategic decisions (e.g., declining WikiLeaks support, transitioning leadership to Gavin Andresen). The handoff to Gavin may suggest self-awareness that ongoing project operations required a different skill set.
 
-Despite lacking academic connections, Satoshi demonstrated working knowledge across cryptography, economics, distributed systems, and network programming. The combination of deep multi-domain expertise with no institutional affiliation or prior community participation is rare and distinctive.
-
-*"I'm better with code than with words":*
-Satoshi's self-assessment may reflect genuine preference rather than professional expertise. The code quality was high (Dan Kaminsky's assessment: "everything was anticipated"), but the development *process* was amateur — no version control, no issue tracker, .rar distribution, no CI. The profile is consistent with a brilliant self-taught programmer who had never worked in a professional software development environment.
-
-*Management capability without management experience:*
-Satoshi's communications on the cryptography mailing list and BitcoinTalk forum were calm, clear, and logically structured. He could prioritize, delegate, and make strategic decisions (e.g., declining WikiLeaks support, transitioning to Gavin). However, the handoff to Gavin suggests self-awareness that project *operations* required someone with different skills. Satoshi could design systems but chose not to run organizations.
-
-*Summary:*
-The behavioral evidence points to an isolated autodidact — self-taught across multiple technical domains, culturally immersed in 1990s–2000s underground/IRC/Warez internet culture, with no team development or organizational experience, but possessing genuine intellectual brilliance and quiet management instincts. Not a corporate developer, not an academic researcher, not a member of a development team — but someone who independently synthesized knowledge from cryptography, economics, and computer science into a working system that no one else had been able to build.
+*Summary of observations:*
+The public record shows a developer with deep multi-domain expertise, informal development practices, no visible institutional affiliations, and no prior participation in the cryptography or open-source communities. These observations are consistent with several possible backgrounds and do not, individually or collectively, establish any specific conclusion about Satoshi's identity, profession, or personal history.
