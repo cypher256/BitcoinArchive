@@ -77,7 +77,21 @@ The following are observations drawn from Satoshi's publicly recorded developmen
 Bitcoin v0.1 shipped with no version control history, despite SourceForge offering SVN/CVS hosting. By 2008, version control was common even for solo projects. This is an unusual choice for a developer capable of writing 31,000 lines of C++, and may suggest that Satoshi's development background did not include collaborative or institutional software projects.
 
 *Unusual distribution format:*
-Bitcoin v0.1 was distributed as a .rar archive — a format rarely used on SourceForge, where .zip and .tar.gz were standard for open-source releases. The .rar format was more commonly associated with informal software distribution channels. The reason for this choice is unknown.
+Bitcoin v0.1 was distributed as a .rar archive — a format rarely used on SourceForge, where .zip and .tar.gz were standard for open-source releases. The .rar format was more commonly associated with informal software distribution channels. The reason for this choice is unknown. For reference, the following table compares Satoshi's distribution practices with conventions common in informal distribution communities of the era:
+
+| Convention | Satoshi's practice | Match |
+|---|---|---|
+| .rar distribution | bitcoin-0.1.0.rar | ✅ |
+| Pseudonymous identity | Satoshi Nakamoto | ✅ |
+| Strong anonymity measures | Tor, anonymous email, trace elimination | ✅ |
+| Windows-only | v0.1–v0.1.5 | ✅ |
+| No installer (extract and run) | Extract .rar, run executable | ✅ |
+| GMX email | satoshin@gmx.com | ⚠️ |
+| NFO file with ASCII art | None | ❌ |
+| Group tag (-GROUPName) | None | ❌ |
+| SFV verification file | None | ❌ |
+
+Several practices overlap, while others do not. This pattern does not establish any specific affiliation — it may simply reflect the software distribution norms that Satoshi was familiar with.
 
 *Learning path:*
 Satoshi knew Hashcash but was unaware of b-money and Bit Gold until directed to them by Adam Back and Wei Dai in August 2008. In academic cryptography, systematic literature surveys are standard practice, so this gap may suggest that Satoshi's knowledge was acquired outside institutional settings. Despite this, Satoshi demonstrated working knowledge across cryptography, economics, distributed systems, and network programming — an unusual breadth for someone with no visible prior community participation.
