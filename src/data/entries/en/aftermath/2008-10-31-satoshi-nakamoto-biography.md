@@ -91,7 +91,7 @@ Bitcoin v0.1 was distributed as a .rar archive — a format rarely used on Sourc
 | Group tag (-GROUPName) | None | ❌ |
 | SFV verification file | None | ❌ |
 
-Several practices overlap, while others do not. This pattern does not establish any specific affiliation — it may simply reflect the software distribution norms that Satoshi was familiar with.
+Several practices overlap, while others do not. The absence of NFO files, group tags, and SFV checksums — all hallmarks of organized scene release groups — suggests Satoshi was not on the releaser side. The overlap with .rar packaging, anonymity practices, and Windows-only distribution may simply reflect the norms of someone who consumed software through these channels rather than produced releases for them.
 
 *Learning path:*
 Satoshi knew Hashcash but was unaware of b-money and Bit Gold until directed to them by Adam Back and Wei Dai in August 2008. In academic cryptography, systematic literature surveys are standard practice, so this gap may suggest that Satoshi's knowledge was acquired outside institutional settings. Despite this, Satoshi demonstrated working knowledge across cryptography, economics, distributed systems, and network programming — an unusual breadth for someone with no visible prior community participation.
