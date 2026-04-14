@@ -4,6 +4,7 @@ import EntryMeta from '../../../components/EntryMeta.astro';
 import SourceCitation from '../../../components/SourceCitation.astro';
 import AutoLinkNames from '../../../components/AutoLinkNames.astro';
 import RelatedEntries from '../../../components/RelatedEntries.astro';
+import SatoshiCodeAnalysis from '../../../components/SatoshiCodeAnalysis.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl } from '../../../i18n/utils';
 import { resolveThreadId } from '../../../data/threads';
@@ -86,6 +87,10 @@ const breadcrumbs = [
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
+
+    {entry.data.type === 'analysis' && entry.id.includes('satoshi-code') && (
+      <SatoshiCodeAnalysis lang={lang} />
+    )}
 
     {threadId && threadMessages >= 2 && (
       <div class="thread-banner">

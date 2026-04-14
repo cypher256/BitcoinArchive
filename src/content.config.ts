@@ -11,6 +11,7 @@ const typeEnum = z.enum([
   'article',
   'biography',
   'court-document',
+  'analysis',
 ]);
 
 const participantSchema = z.object({

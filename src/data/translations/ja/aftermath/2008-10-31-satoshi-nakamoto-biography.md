@@ -40,6 +40,7 @@ relatedEntries:
   - sourceforge/2009-01-03-genesis-block
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2011-04-26-satoshi-final-known-email
+  - analysis/2009-01-09-satoshi-code-analysis
 translationStatus: complete
 ---
 
@@ -63,7 +64,7 @@ translationStatus: complete
 **開発環境：**
 Bitcoin v0.1はWindows上でMicrosoft Visual C++ 6.0 SP6とMinGW GCC 3.4.5を使用して開発された。最初のリリースはWindows専用で、.rarアーカイブとして配布された — オープンソースプロジェクトとしては異例の選択である（下記分析を参照）。v0.1ではバージョン管理システムは使用されておらず、[SVNはマルッティ・マルミやギャビン・アンドレセンの助けを借りて後から導入された](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)。
 
-2009年後半から、サトシはマルッティ・マルミの支援を受けてLinux（Ubuntu）への移植を開始した。自らUbuntuのテスト環境を構築し、深い問題（pthread_cancel、MSG_DONTWAIT、Berkeley DB、GTKのスレッド安全性）をデバッグしたが、設定ファイルの形式やデーモンスイッチの命名規則、スタートアップスクリプトといったLinuxの慣習には不慣れだった。フォーラムでは「そこは自分の専門外だから助かる」（2009年12月、Linux/FreeBSDテストについて）と書いている。2010年12月のギャビン・アンドレセンへのメールでは、ギャビンを「技術的に自分よりはるかにLinuxに精通している」と評した。Mac対応はラズロ・ハニエツが全面的に貢献したもので、サトシにはテスト用のMacがなかった。BSDの知識はソケットの起源など概念的なもので、実践的ではなかった。これらの限界にもかかわらず、サトシは2010年を通じてコミュニティからのパッチを取り込み、Linux、macOS、FreeBSDのクロスプラットフォーム対応を着実に拡大していった。
+2009年後半から、サトシはマルッティ・マルミの支援を受けてLinux（Ubuntu）への移植を開始した。自らUbuntuのテスト環境を構築し、深い問題（pthread_cancel、MSG_DONTWAIT、Berkeley DB、GTKのスレッド安全性）をデバッグしたが、設定ファイルの形式やデーモンスイッチの命名規則、スタートアップスクリプトといったLinuxの慣習には不慣れだった。フォーラムでは「そこは自分の専門外だから助かる」（2009年12月、Linux/FreeBSDテストについて）と書いている。2010年12月のギャビン・アンドレセンへのメールでは、ギャビンを「技術的に自分よりはるかにLinuxに精通している」と評した。Mac対応はラズロ・ハニエツが全面的に貢献したもので、サトシにはテスト用のMacがなかった。BSDの知識はソケットの起源など概念的なもので、実践的ではなかった。これらの限界にもかかわらず、サトシは2010年を通じてコミュニティからのパッチを取り込み、Linux、macOS、FreeBSDのクロスプラットフォーム対応を着実に拡大していった。[サトシのソースコードの統計的分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) — コーディングスタイル、コミット時間帯パターン、v0.1.0からv0.3.19までのコード進化を網羅 — が別エントリとして公開されている。
 
 **ビットコイン保有量：**
 ブロックチェーンアナリストによる研究は、単一のエンティティに帰属する初期のマイニング活動のパターンを特定した。[「Patoshi」パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)と呼ばれ、サトシのものと考えられている。この期間にマイニングされたビットコイン — 約110万BTCと推定 — は一度も移動されていない。

@@ -1,0 +1,495 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const analysisData = await import('../data/satoshi-analysis/commit-data.json').then(m => m.default);
+
+const labels = {
+  en: {
+    heatmapTitle: 'Commit Time Heatmap (UTC)',
+    heatmapSub: 'Day of week × Hour — darker = more commits. The dead zone (06:00–12:00 UTC) suggests EST/CST timezone.',
+    monthlyTitle: 'Monthly Commit Frequency',
+    monthlySub: 'SVN commits by s_nakamoto. The 75-day gap (Mar–May 2010) and final decline are visible.',
+    growthTitle: 'Source Code Growth',
+    growthSub: 'Lines of code across versions. The v0.3.7 spike is the Crypto++ library integration.',
+    traitsTitle: 'Coding Style Fingerprint',
+    traitsSub: 'Distinctive patterns found consistently across all versions of Satoshi\'s code.',
+    commits: 'commits',
+    lines: 'lines',
+    files: 'files',
+    days: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
+    categories: { naming: 'Naming', style: 'Comments', macro: 'Macros', quirk: 'Quirks', format: 'Formatting', platform: 'Platform' },
+    timezoneNote: 'Timezone Analysis',
+    timezoneDesc: 'The near-total absence of commits between 06:00–12:00 UTC strongly suggests Satoshi lived in the EST (UTC-5) or CST (UTC-6) timezone. Under EST, this gap maps to 01:00–07:00 — normal sleep hours. Under GMT (UK), it would mean sleeping from 06:00–12:00 — a fully nocturnal schedule. Under JST (Japan), it would mean sleeping from 15:00–21:00 — which does not match any natural pattern.',
+  },
+  ja: {
+    heatmapTitle: 'コミット時間帯ヒートマップ（UTC）',
+    heatmapSub: '曜日×時刻 — 濃いほどコミットが多い。06:00〜12:00 UTCの不活動帯がEST/CSTを示唆。',
+    monthlyTitle: '月別コミット頻度',
+    monthlySub: 's_nakamotoのSVNコミット。75日間の空白（2010年3〜5月）と最終的な減少が見える。',
+    growthTitle: 'ソースコード行数の推移',
+    growthSub: 'バージョン別のコード行数。v0.3.7の急増はCrypto++ライブラリの組み込み。',
+    traitsTitle: 'コーディングスタイルの指紋',
+    traitsSub: 'サトシのコード全バージョンで一貫して見られる特徴的なパターン。',
+    commits: 'コミット',
+    lines: '行',
+    files: 'ファイル',
+    days: ['月','火','水','木','金','土','日'],
+    categories: { naming: '命名規則', style: 'コメント', macro: 'マクロ', quirk: '癖', format: 'フォーマット', platform: 'プラットフォーム' },
+    timezoneNote: 'タイムゾーン分析',
+    timezoneDesc: '06:00〜12:00 UTCにコミットがほぼ皆無であることから、サトシはEST（UTC-5）またはCST（UTC-6）に在住していた可能性が最も高い。EST仮定ではこの空白は01:00〜07:00（通常の睡眠時間）に相当する。GMT（英国）仮定では06:00〜12:00に睡眠（完全な夜型）、JST（日本）仮定では15:00〜21:00に睡眠となり、いずれも不自然。',
+  },
+};
+
+const l = labels[lang];
+const traits = analysisData.codingTraits[lang];
+---
+
+<div class="satoshi-analysis">
+  <!-- Heatmap -->
+  <section class="analysis-section">
+    <h3>{l.heatmapTitle}</h3>
+    <p class="analysis-desc">{l.heatmapSub}</p>
+    <div id="commit-heatmap" class="chart-container"></div>
+  </section>
+
+  <!-- Timezone note -->
+  <section class="analysis-section timezone-note">
+    <h4>{l.timezoneNote}</h4>
+    <p>{l.timezoneDesc}</p>
+  </section>
+
+  <!-- Monthly -->
+  <section class="analysis-section">
+    <h3>{l.monthlyTitle}</h3>
+    <p class="analysis-desc">{l.monthlySub}</p>
+    <div id="monthly-commits" class="chart-container"></div>
+  </section>
+
+  <!-- Code growth -->
+  <section class="analysis-section">
+    <h3>{l.growthTitle}</h3>
+    <p class="analysis-desc">{l.growthSub}</p>
+    <div id="code-growth" class="chart-container"></div>
+  </section>
+
+  <!-- Coding traits -->
+  <section class="analysis-section">
+    <h3>{l.traitsTitle}</h3>
+    <p class="analysis-desc">{l.traitsSub}</p>
+    <div id="coding-traits" class="traits-grid">
+      {Object.entries(l.categories).map(([cat, catLabel]) => {
+        const catTraits = traits.filter((t: any) => t.category === cat);
+        return catTraits.length > 0 && (
+          <div class="trait-category">
+            <h4 class="trait-category-label">{catLabel}</h4>
+            {catTraits.map((t: any) => (
+              <div class="trait-item">
+                <code class="trait-name">{t.trait}</code>
+                <span class="trait-desc">{t.desc}</span>
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <script type="application/json" id="satoshi-analysis-data" set:html={JSON.stringify({ ...analysisData, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('satoshi-analysis-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var l = data.labels;
+
+    // --- Heatmap ---
+    (function() {
+      var container = document.getElementById('commit-heatmap');
+      if (!container) return;
+
+      var margin = { top: 30, right: 20, bottom: 40, left: 40 };
+      var cellSize = Math.min(28, (container.clientWidth - margin.left - margin.right) / 24);
+      var width = cellSize * 24 + margin.left + margin.right;
+      var height = cellSize * 7 + margin.top + margin.bottom;
+
+      var svg = d3.select(container).append('svg')
+        .attr('viewBox', '0 0 ' + width + ' ' + height)
+        .attr('width', '100%');
+
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      // Build lookup
+      var lookup = {};
+      var maxVal = 0;
+      data.heatmap.forEach(function(d) {
+        var key = d[0] + '-' + d[1];
+        lookup[key] = d[2];
+        if (d[2] > maxVal) maxVal = d[2];
+      });
+
+      var color = d3.scaleSequential(d3.interpolateYlOrRd).domain([0, maxVal]);
+
+      // Day labels
+      g.selectAll('.day-label')
+        .data(l.days)
+        .enter().append('text')
+        .attr('x', -6)
+        .attr('y', function(d, i) { return i * cellSize + cellSize / 2; })
+        .attr('text-anchor', 'end')
+        .attr('dominant-baseline', 'central')
+        .style('font-size', '11px')
+        .style('fill', '#6b6b6b')
+        .text(function(d) { return d; });
+
+      // Hour labels
+      g.selectAll('.hour-label')
+        .data(d3.range(24))
+        .enter().append('text')
+        .attr('x', function(d) { return d * cellSize + cellSize / 2; })
+        .attr('y', -8)
+        .attr('text-anchor', 'middle')
+        .style('font-size', '10px')
+        .style('fill', '#6b6b6b')
+        .text(function(d) { return d; });
+
+      // Cells
+      var tooltip = d3.select(container).append('div')
+        .style('position', 'absolute')
+        .style('background', 'rgba(0,0,0,0.8)')
+        .style('color', '#fff')
+        .style('padding', '4px 8px')
+        .style('border-radius', '3px')
+        .style('font-size', '12px')
+        .style('pointer-events', 'none')
+        .style('opacity', 0);
+
+      for (var day = 1; day <= 7; day++) {
+        for (var hour = 0; hour < 24; hour++) {
+          var val = lookup[day + '-' + hour] || 0;
+          g.append('rect')
+            .attr('x', hour * cellSize)
+            .attr('y', (day - 1) * cellSize)
+            .attr('width', cellSize - 1)
+            .attr('height', cellSize - 1)
+            .attr('rx', 2)
+            .attr('fill', val === 0 ? '#f0efe8' : color(val))
+            .attr('data-day', day)
+            .attr('data-hour', hour)
+            .attr('data-val', val)
+            .on('mouseover', function() {
+              var d = d3.select(this);
+              var v = +d.attr('data-val');
+              var h = +d.attr('data-hour');
+              var dy = +d.attr('data-day');
+              tooltip.style('opacity', 1)
+                .html(l.days[dy - 1] + ' ' + h + ':00 UTC — ' + v + ' ' + l.commits);
+            })
+            .on('mousemove', function(event) {
+              tooltip
+                .style('left', (event.offsetX + 12) + 'px')
+                .style('top', (event.offsetY - 20) + 'px');
+            })
+            .on('mouseout', function() { tooltip.style('opacity', 0); });
+        }
+      }
+
+      // Dead zone highlight
+      g.append('rect')
+        .attr('x', 6 * cellSize)
+        .attr('y', 0)
+        .attr('width', 6 * cellSize)
+        .attr('height', 7 * cellSize)
+        .attr('fill', 'none')
+        .attr('stroke', '#b45309')
+        .attr('stroke-width', 2)
+        .attr('stroke-dasharray', '4,3')
+        .attr('rx', 3);
+    })();
+
+    // --- Monthly bar chart ---
+    (function() {
+      var container = document.getElementById('monthly-commits');
+      if (!container) return;
+
+      var margin = { top: 20, right: 20, bottom: 60, left: 50 };
+      var width = container.clientWidth;
+      var height = 280;
+
+      var svg = d3.select(container).append('svg')
+        .attr('viewBox', '0 0 ' + width + ' ' + height)
+        .attr('width', '100%');
+
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var innerW = width - margin.left - margin.right;
+      var innerH = height - margin.top - margin.bottom;
+
+      var x = d3.scaleBand()
+        .domain(data.monthly.map(function(d) { return d.month; }))
+        .range([0, innerW])
+        .padding(0.15);
+
+      var y = d3.scaleLinear()
+        .domain([0, d3.max(data.monthly, function(d) { return d.commits; })])
+        .nice()
+        .range([innerH, 0]);
+
+      g.append('g')
+        .attr('transform', 'translate(0,' + innerH + ')')
+        .call(d3.axisBottom(x))
+        .selectAll('text')
+        .attr('transform', 'rotate(-45)')
+        .style('text-anchor', 'end')
+        .style('font-size', '11px');
+
+      g.append('g')
+        .call(d3.axisLeft(y).ticks(6))
+        .selectAll('text')
+        .style('font-size', '11px');
+
+      // Gap annotations
+      var gaps = [
+        { start: '2010-03', end: '2010-05', label: '75-day gap' },
+      ];
+
+      g.selectAll('.bar')
+        .data(data.monthly)
+        .enter().append('rect')
+        .attr('x', function(d) { return x(d.month); })
+        .attr('y', function(d) { return y(d.commits); })
+        .attr('width', x.bandwidth())
+        .attr('height', function(d) { return innerH - y(d.commits); })
+        .attr('fill', function(d) {
+          if (d.month === '2010-07') return '#b45309';
+          if (d.month === '2010-12') return '#dc2626';
+          return '#1a56db';
+        })
+        .attr('rx', 2);
+
+      // Commit count on bars
+      g.selectAll('.bar-label')
+        .data(data.monthly)
+        .enter().append('text')
+        .attr('x', function(d) { return x(d.month) + x.bandwidth() / 2; })
+        .attr('y', function(d) { return y(d.commits) - 4; })
+        .attr('text-anchor', 'middle')
+        .style('font-size', '10px')
+        .style('fill', '#6b6b6b')
+        .text(function(d) { return d.commits > 0 ? d.commits : ''; });
+    })();
+
+    // --- Code growth area chart ---
+    (function() {
+      var container = document.getElementById('code-growth');
+      if (!container) return;
+
+      var margin = { top: 20, right: 80, bottom: 40, left: 60 };
+      var width = container.clientWidth;
+      var height = 280;
+
+      var svg = d3.select(container).append('svg')
+        .attr('viewBox', '0 0 ' + width + ' ' + height)
+        .attr('width', '100%');
+
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var innerW = width - margin.left - margin.right;
+      var innerH = height - margin.top - margin.bottom;
+
+      var parseDate = function(s) {
+        var parts = s.split('-');
+        return new Date(+parts[0], +parts[1] - 1);
+      };
+
+      var cg = data.codeGrowth.map(function(d) {
+        return { date: parseDate(d.date), lines: d.lines, version: d.version, files: d.files };
+      });
+
+      var x = d3.scaleTime()
+        .domain(d3.extent(cg, function(d) { return d.date; }))
+        .range([0, innerW]);
+
+      var y = d3.scaleLinear()
+        .domain([0, 35000])
+        .range([innerH, 0]);
+
+      g.append('g')
+        .attr('transform', 'translate(0,' + innerH + ')')
+        .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
+        .selectAll('text')
+        .style('font-size', '11px');
+
+      g.append('g')
+        .call(d3.axisLeft(y).ticks(5).tickFormat(function(d) { return d3.format(',')(d); }))
+        .selectAll('text')
+        .style('font-size', '11px');
+
+      // Area
+      var area = d3.area()
+        .x(function(d) { return x(d.date); })
+        .y0(innerH)
+        .y1(function(d) { return y(d.lines); })
+        .curve(d3.curveMonotoneX);
+
+      g.append('path')
+        .datum(cg)
+        .attr('fill', 'rgba(26, 86, 219, 0.15)')
+        .attr('d', area);
+
+      // Line
+      var line = d3.line()
+        .x(function(d) { return x(d.date); })
+        .y(function(d) { return y(d.lines); })
+        .curve(d3.curveMonotoneX);
+
+      g.append('path')
+        .datum(cg)
+        .attr('fill', 'none')
+        .attr('stroke', '#1a56db')
+        .attr('stroke-width', 2)
+        .attr('d', line);
+
+      // Dots + labels
+      g.selectAll('.dot')
+        .data(cg)
+        .enter().append('circle')
+        .attr('cx', function(d) { return x(d.date); })
+        .attr('cy', function(d) { return y(d.lines); })
+        .attr('r', 4)
+        .attr('fill', function(d) { return d.version === 'v0.3.7' ? '#b45309' : '#1a56db'; });
+
+      g.selectAll('.version-label')
+        .data(cg)
+        .enter().append('text')
+        .attr('x', function(d) { return x(d.date) + 6; })
+        .attr('y', function(d) { return y(d.lines) - 8; })
+        .style('font-size', '10px')
+        .style('fill', '#6b6b6b')
+        .text(function(d) { return d.version + ' (' + d3.format(',')(d.lines) + ')'; });
+    })();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+<style>
+  .satoshi-analysis {
+    position: relative;
+  }
+
+  .analysis-section {
+    margin: 2.5em 0;
+  }
+
+  .analysis-section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+  }
+
+  .analysis-desc {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+  }
+
+  .chart-container {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .timezone-note {
+    background: var(--color-bg-alt);
+    padding: 1em 1.25em;
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .timezone-note h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+  }
+
+  .timezone-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .traits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .trait-category {
+    background: var(--color-bg-alt);
+    border-radius: 6px;
+    padding: 1em 1.25em;
+  }
+
+  .trait-category-label {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    margin: 0 0 0.75em 0;
+  }
+
+  .trait-item {
+    margin-bottom: 0.75em;
+  }
+
+  .trait-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .trait-name {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 0.2em;
+    background: none;
+    padding: 0;
+  }
+
+  .trait-desc {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    font-family: var(--font-mono);
+    word-break: break-all;
+  }
+
+  @media (max-width: 768px) {
+    .traits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -40,6 +40,7 @@ relatedEntries:
   - sourceforge/2009-01-03-genesis-block
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2011-04-26-satoshi-final-known-email
+  - analysis/2009-01-09-satoshi-code-analysis
 ---
 
 Satoshi Nakamoto is the pseudonym used by the individual or group who created Bitcoin. Their true identity has never been confirmed.
@@ -62,7 +63,7 @@ Satoshi's P2P Foundation profile listed a date of birth of April 5, 1975, and a 
 **Development Environment:**
 Bitcoin v0.1 was developed on Windows using Microsoft Visual C++ 6.0 SP6 and MinGW GCC 3.4.5. The initial release was Windows-only, distributed as a .rar archive — an unusual choice for an open-source project (see analysis below). No version control system was used for v0.1; [SVN was introduced later](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) with help from Martti Malmi and Gavin Andresen.
 
-From late 2009, Satoshi began porting Bitcoin to Linux (Ubuntu) with Martti Malmi's assistance. He personally set up Ubuntu test environments and debugged deep issues (pthread_cancel, MSG_DONTWAIT, Berkeley DB, GTK thread safety), but was unfamiliar with Linux conventions such as config file formats, daemon switch naming, and startup scripts. He wrote on the forum: "That's great because that's where I have less expertise" (December 2009, regarding Linux/FreeBSD testing). In a December 2010 email to Gavin Andresen, he described Gavin as "technically much more Linux capable than me." Mac support was entirely contributed by Laszlo Hanyecz; Satoshi had no Mac to test on. BSD knowledge was conceptual (socket origins) rather than hands-on. Despite these gaps, Satoshi steadily expanded cross-platform support throughout 2010, incorporating community-contributed patches for Linux, macOS, and FreeBSD.
+From late 2009, Satoshi began porting Bitcoin to Linux (Ubuntu) with Martti Malmi's assistance. He personally set up Ubuntu test environments and debugged deep issues (pthread_cancel, MSG_DONTWAIT, Berkeley DB, GTK thread safety), but was unfamiliar with Linux conventions such as config file formats, daemon switch naming, and startup scripts. He wrote on the forum: "That's great because that's where I have less expertise" (December 2009, regarding Linux/FreeBSD testing). In a December 2010 email to Gavin Andresen, he described Gavin as "technically much more Linux capable than me." Mac support was entirely contributed by Laszlo Hanyecz; Satoshi had no Mac to test on. BSD knowledge was conceptual (socket origins) rather than hands-on. Despite these gaps, Satoshi steadily expanded cross-platform support throughout 2010, incorporating community-contributed patches for Linux, macOS, and FreeBSD. A [statistical analysis of Satoshi's source code](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) — covering coding style, commit time patterns, and code evolution from v0.1.0 to v0.3.19 — is available as a separate entry.
 
 **Bitcoin Holdings:**
 Research by blockchain analysts has identified a pattern of early mining activity attributed to a single entity, often called the ["Patoshi" pattern](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/), believed to be Satoshi. The bitcoins mined during this period — estimated at approximately 1.1 million BTC — have never been moved.
