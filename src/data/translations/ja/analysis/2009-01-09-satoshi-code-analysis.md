@@ -25,6 +25,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
+  - "aftermath/2008-08-22-wei-dai-biography"
 translationStatus: complete
 ---
 
