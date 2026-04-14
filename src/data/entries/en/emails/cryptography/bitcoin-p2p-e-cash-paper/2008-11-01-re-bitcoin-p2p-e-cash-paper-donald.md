@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/2/"
+relatedEntries:
+  - "aftermath/2008-11-02-james-donald-biography"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

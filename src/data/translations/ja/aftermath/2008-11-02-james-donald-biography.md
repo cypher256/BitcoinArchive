@@ -26,6 +26,8 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/James_A._Donald"
   - name: "Bitcoin Magazine — The Genesis Files: Hashcash or How Adam Back Designed Bitcoin's Motor Block"
     url: "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
+relatedEntries:
+  - "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
 translationStatus: complete
 ---
 

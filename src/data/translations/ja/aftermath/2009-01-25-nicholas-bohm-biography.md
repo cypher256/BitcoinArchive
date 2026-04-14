@@ -20,6 +20,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/"
   - name: "Nicholas Bohm — JILT (Journal of Information, Law and Technology)"
     url: "https://warwick.ac.uk/fac/soc/law/elj/jilt/1997_3/bohm/"
+relatedEntries:
+  - "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed"
 translationStatus: complete
 ---
 

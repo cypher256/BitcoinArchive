@@ -20,6 +20,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
+relatedEntries:
+  - "aftermath/2009-02-12-martien-van-steenbergen-biography"
 translationStatus: complete
 quotes:
   - id: "q1"

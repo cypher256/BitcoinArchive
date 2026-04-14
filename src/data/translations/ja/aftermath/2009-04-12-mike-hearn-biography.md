@@ -48,7 +48,7 @@ translationStatus: complete
 **サトシとの書簡：**
 2009年から2011年4月にかけて、ハーンとサトシはビットコインの技術的将来について一連のメールを交わした。サトシは、システムのスケーリング方法、簡易決済検証（SPV）クライアントの動作、CPUから専門的なハードウェアへのマイニングの進化について論じた。[最後のやり取りの一つ](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)（2011年4月23日）で、サトシはこう書いた。
 
-> 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
+> 「他のことに取り組むことにした。[ギャビン](/BitcoinArchive/ja/participants/gavin-andresen/)たちに任せれば、安心だ」
 
 これはサトシからの最後の私的通信の一つとして知られている。
 

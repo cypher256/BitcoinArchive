@@ -52,7 +52,7 @@ translationStatus: complete
 2009年1月3日、サトシは[ジェネシスブロック（Block 0）](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)を採掘し、The Times紙の一面から「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というテキストを埋め込んだ。2009年1月8日、[Bitcoin v0.1が公開リリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。2009年1月12日、サトシは[Block 170でハル・フィニーに10 BTCを送信した](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金である。
 
 **開発とコミュニケーション：**
-サトシは複数のプラットフォームで活動した：暗号学メーリングリスト、SourceForge上のbitcoin-listメーリングリスト、BitcoinTalkフォーラム（サトシとマルッティ・マルミが作成）、P2P Foundationフォーラム、そして私的なメールのやり取り。アダム・バック、ウェイ・ダイ、ハル・フィニー、ジェームズ・A・ドナルド、レイ・ディリンジャー、ダスティン・トランメル、マルッティ・マルミ、マイク・ハーン、ギャビン・アンドレセン、ラズロ・ハニエツ、ジェフ・ガージックらと直接通信した。2009年から2010年にかけて、サトシはビットコインの設計を説明し、技術的な質問に答え、開発を調整する数百のフォーラム投稿とメールを執筆した。
+サトシは複数のプラットフォームで活動した：暗号学メーリングリスト、SourceForge上のbitcoin-listメーリングリスト、BitcoinTalkフォーラム（サトシとマルッティ・マルミが作成）、P2P Foundationフォーラム、そして私的なメールのやり取り。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)、[レイ・ディリンジャー](/BitcoinArchive/ja/participants/ray-dillinger/)、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)らと直接通信した。2009年から2010年にかけて、サトシはビットコインの設計を説明し、技術的な質問に答え、開発を調整する数百のフォーラム投稿とメールを執筆した。
 
 **移行と消失：**
 2010年後半、サトシはプロジェクトの責任を他の開発者に移し始めた。ギャビン・アンドレセンにビットコインリポジトリへのコミットアクセスとネットワークアラートキーが付与された。BitcoinTalkでのサトシの[最後の既知の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は2010年12月12日である。私的なメールでは、2011年初頭まで少数の開発者との通信を続けた。2011年4月23日、サトシは[マイク・ハーンに](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」と書いた。2011年4月26日、サトシは[最後の既知のメールと考えられるものをギャビン・アンドレセンに送信し](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)、アラートキーを引き渡して「私のことを謎めいた影の人物として話し続けるのはやめてほしい」と書いた。以降、サトシからの確認された通信は記録されていない。
@@ -66,7 +66,7 @@ Bitcoin v0.1はWindows上でMicrosoft Visual C++ 6.0 SP6とMinGW GCC 3.4.5を使
 2009年後半から、サトシはマルッティ・マルミの支援を受けてLinux（Ubuntu）への移植を開始した。自らUbuntuのテスト環境を構築し、深い問題（pthread_cancel、MSG_DONTWAIT、Berkeley DB、GTKのスレッド安全性）をデバッグしたが、設定ファイルの形式やデーモンスイッチの命名規則、スタートアップスクリプトといったLinuxの慣習には不慣れだった。フォーラムでは「そこは自分の専門外だから助かる」（2009年12月、Linux/FreeBSDテストについて）と書いている。2010年12月のギャビン・アンドレセンへのメールでは、ギャビンを「技術的に自分よりはるかにLinuxに精通している」と評した。Mac対応はラズロ・ハニエツが全面的に貢献したもので、サトシにはテスト用のMacがなかった。BSDの知識はソケットの起源など概念的なもので、実践的ではなかった。これらの限界にもかかわらず、サトシは2010年を通じてコミュニティからのパッチを取り込み、Linux、macOS、FreeBSDのクロスプラットフォーム対応を着実に拡大していった。
 
 **ビットコイン保有量：**
-ブロックチェーンアナリストによる研究は、単一のエンティティに帰属する初期のマイニング活動のパターンを特定した。「Patoshi」パターンと呼ばれ、サトシのものと考えられている。この期間にマイニングされたビットコイン — 約110万BTCと推定 — は一度も移動されていない。
+ブロックチェーンアナリストによる研究は、単一のエンティティに帰属する初期のマイニング活動のパターンを特定した。[「Patoshi」パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)と呼ばれ、サトシのものと考えられている。この期間にマイニングされたビットコイン — 約110万BTCと推定 — は一度も移動されていない。
 
 ---
 
@@ -98,7 +98,7 @@ Bitcoin v0.1は.rarアーカイブとして配布された。SourceForgeでは.z
 サトシはHashcashを知っていたが、2008年8月にアダム・バックとウェイ・ダイに教えられるまでb-moneyやビットゴールドを知らなかった。学術的暗号学では体系的な文献調査が標準的であるため、このギャップはサトシの知識が制度的な場の外で獲得されたものである可能性を示唆している。にもかかわらず、サトシは暗号学、経済学、分散システム、ネットワークプログラミングにわたる実用的な知識を示した。これほどの幅広い専門性を持ちながら、コミュニティへの事前参加の痕跡がないことは異例である。
 
 *開発プロセス：*
-サトシのコード品質は高かった（ダン・カミンスキーの2011年の監査：「すべてが予測済みだった」）が、開発プロセスは標準的な専門ツールを欠いていた — バージョン管理なし、課題管理なし、CIなし、.rar配布。高いコード品質と非形式的なプロセスの組み合わせは際立った特徴である。
+サトシのコード品質は高かった（[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/)の[2011年の監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)：「すべてが予測済みだった」）が、開発プロセスは標準的な専門ツールを欠いていた — バージョン管理なし、課題管理なし、CIなし、.rar配布。高いコード品質と非形式的なプロセスの組み合わせは際立った特徴である。
 
 *コミュニケーションスタイル：*
 暗号学メーリングリストやBitcoinTalkフォーラムでのサトシのコミュニケーションは、冷静で明確、論理的に構造化されていた。優先順位をつけ、委任し、戦略的な判断を下すことができた（例：WikiLeaksのサポート辞退、ギャビン・アンドレセンへのリーダーシップ移行）。ギャビンへの引き継ぎは、継続的なプロジェクト運営には異なるスキルセットが必要だという自覚を示唆しているかもしれない。

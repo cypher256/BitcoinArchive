@@ -22,6 +22,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Michel_Bauwens"
   - name: "Michel Bauwens — P2P Foundation Wiki"
     url: "https://wiki.p2pfoundation.net/Michel_Bauwens"
+relatedEntries:
+  - "emails/p2p-research/bitcoin-open-source/2009-02-13-re-bitcoin-open-source-p2p-currency-bauwens"
 ---
 
 Michel Bauwens (born March 21, 1958) is a Belgian political theorist, writer, and founder of the P2P Foundation, a global organization researching peer production, governance, and property. He has been a prominent voice in the study of peer-to-peer theory and commons-based governance, crafting transition plans for the government of Ecuador and the city of Ghent.

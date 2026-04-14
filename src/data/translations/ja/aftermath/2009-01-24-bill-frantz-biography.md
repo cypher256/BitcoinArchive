@@ -21,6 +21,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Cryptography Mailing List Thread"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
+relatedEntries:
+  - "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz"
 translationStatus: complete
 ---
 

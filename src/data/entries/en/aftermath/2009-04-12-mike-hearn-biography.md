@@ -47,7 +47,7 @@ In April 2009, just months after Bitcoin's launch, Hearn emailed Satoshi Nakamot
 **Correspondence with Satoshi:**
 Between 2009 and April 2011, Hearn and Satoshi exchanged a series of emails covering Bitcoin's technical future. Satoshi discussed how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to specialized hardware. In one of the [final exchanges](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) (April 23, 2011), Satoshi wrote:
 
-> "I've moved on to other things. It's in good hands with Gavin and everyone."
+> "I've moved on to other things. It's in good hands with [Gavin](/BitcoinArchive/participants/gavin-andresen/) and everyone."
 
 This was among the last known private communications from Satoshi.
 

@@ -17,6 +17,8 @@ tags:
   - "botnet"
   - "security"
   - "proof-of-work"
+relatedEntries:
+  - "aftermath/2009-01-24-bill-frantz-biography"
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"

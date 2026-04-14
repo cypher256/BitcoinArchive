@@ -24,6 +24,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
   - name: "Indiana University — Department of Astronomy"
     url: "https://astronomy.indiana.edu/"
+relatedEntries:
+  - "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg"
 translationStatus: complete
 ---
 

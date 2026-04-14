@@ -21,6 +21,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Cryptography Mailing List Thread"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
+relatedEntries:
+  - "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz"
 ---
 
 Bill Frantz is a security consultant based in the San Francisco Bay Area, operating under the firm name Periwinkle (pwpconsult.com). He participated in the cryptography mailing list discussion about Bitcoin in January 2009.

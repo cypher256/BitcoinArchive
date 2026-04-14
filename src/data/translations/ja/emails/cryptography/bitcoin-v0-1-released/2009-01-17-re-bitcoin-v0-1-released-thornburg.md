@@ -21,6 +21,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
+relatedEntries:
+  - "aftermath/2009-01-17-jonathan-thornburg-biography"
 translationStatus: complete
 ---
 

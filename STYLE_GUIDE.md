@@ -139,6 +139,56 @@ All three entries in the cluster declare each other, forming a closed
 bidirectional group. The site renders a "Related entries" section on
 each entry page automatically.
 
+## Biography Linking
+
+Biographies serve as **navigation hubs** — a reader's entry point into a
+person's history in the archive. The body text should link to relevant
+participant pages and archive entries so readers can explore further.
+
+### Inline participant links
+
+When a person is named in a biography and has a participant page
+(`/BitcoinArchive/participants/{slug}/`), link the name at the first or
+most contextually important mention.
+
+- Do not link every occurrence — one per person is enough.
+- If a name first appears inside an entry link's text (e.g.
+  `[emailed Adam Back](/BitcoinArchive/entries/...)`), add the participant
+  link at the next natural mention instead of nesting links.
+
+### Inline entry links
+
+When the biography text mentions a specific event, document, or mailing-list
+post that exists as an archive entry, link it. Typical candidates:
+
+- emails and correspondence involving the person
+- forum posts, mailing-list messages
+- published analyses or retrospectives about the person
+
+Do not over-link: only link to entries that actually exist in the archive.
+
+### relatedEntries for biographies
+
+Follow the general `relatedEntries` rules above. For biographies
+specifically:
+
+- Include the person's **canonical primary-source entries** (their own
+  emails, posts, or the key events they participated in).
+- The bidirectional rule applies — the target entry must also declare
+  the biography as a related entry.
+- Small biographies (few or no canonical entries) may have 0–1
+  relatedEntries. That is acceptable.
+
+### Audit checklist
+
+When creating or editing a biography, verify:
+
+1. All named people with participant pages are linked (at least once).
+2. All mentioned events/documents with archive entries are linked.
+3. `relatedEntries` includes canonical entries for the person.
+4. EN and JA mirrors have matching `relatedEntries`.
+5. `npm run check:internal-links` passes after changes.
+
 ## Scripted Edits Policy
 
 Scripts are allowed for inspection, reporting, and tightly-scoped metadata

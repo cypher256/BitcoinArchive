@@ -26,6 +26,8 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
   - name: "Satoshi Nakamoto Institute — Re: [bitcoin-list] Problems"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/24/"
+relatedEntries:
+  - "aftermath/2009-01-25-nicholas-bohm-biography"
 translationStatus: complete
 ---
 

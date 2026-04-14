@@ -19,6 +19,8 @@ tags:
   - "bitcoin-list"
   - "network"
   - "early-adopter"
+relatedEntries:
+  - "aftermath/2009-01-25-nicholas-bohm-biography"
 secondarySources:
   - name: "Hugging Face — COPA v Wright raw trial documents"
     url: "https://huggingface.co/datasets/YL95/copa_v_wright_CPT_raw"

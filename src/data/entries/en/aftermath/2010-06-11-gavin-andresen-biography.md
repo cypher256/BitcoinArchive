@@ -47,7 +47,7 @@ Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software d
 Andresen first encountered Bitcoin in 2010. He quickly became one of the most active contributors, creating the Bitcoin Faucet — a website that gave away free bitcoins to help people learn about and start using the technology. He [announced the Faucet on the BitcoinTalk forum](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) on June 11, 2010. This was one of the earliest efforts to promote Bitcoin adoption.
 
 **Satoshi's Chosen Successor:**
-Over the course of 2010, Satoshi Nakamoto increasingly trusted Andresen with greater responsibility in the project. By approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key. In an [email to developer Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) on April 23, 2011, Satoshi wrote:
+Over the course of 2010, Satoshi Nakamoto increasingly trusted Andresen with greater responsibility in the project. By approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key. In an [email](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) to developer [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) on April 23, 2011, Satoshi wrote:
 
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
