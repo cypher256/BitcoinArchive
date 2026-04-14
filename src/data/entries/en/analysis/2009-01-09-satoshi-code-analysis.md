@@ -27,16 +27,15 @@ relatedEntries:
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
 ---
 
-This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010), covering the entire period of Satoshi's known development activity. The data is drawn from the original Bitcoin v0.1.0 source and the Bitcoin Core git repository (SVN history preserved via git-svn conversion).
+This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010). It combines two distinct data sets: **static source code analysis** of the v0.1.0 release (distributed without version control in January 2009), and **commit history analysis** from the SourceForge SVN repository, which was introduced in October 2009 with help from Martti Malmi. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history.
 
 **Data sources:**
-- 160 unique SVN commits by `s_nakamoto` (primary — preserves original timestamps)
-- 34 git commits by `Satoshi Nakamoto <satoshin@gmx.com>`
-- Full source code analysis of v0.1.0 through v0.3.19
+- **Source code:** Original Bitcoin v0.1.0 source and tagged releases through v0.3.19
+- **Commit history:** 160 unique SVN commits by `s_nakamoto` (primary — preserves original timestamps) + 34 git commits by `Satoshi Nakamoto <satoshin@gmx.com>`
 
 **Key findings:**
 - **Timezone:** The near-total absence of commits between 06:00–12:00 UTC strongly suggests residence in EST (UTC-5) or CST (UTC-6)
-- **Activity period:** 420 days (October 2009 – December 2010), with commits on 109 unique days
+- **Commit activity period (SVN):** 420 days (October 2009 – December 2010), with commits on 109 unique days
 - **Coding style:** Consistent use of Hungarian notation variants, quad-slash (`////`) TODO markers, custom macros (`loop`, `foreach`, `CRITICAL_BLOCK`), and Windows-first development patterns
 - **Code growth:** 19,901 → 31,909 lines (+60%) over 14 months
 - **Final activity:** Security hardening, DoS mitigation, removal of centralized safe mode — work characteristic of someone preparing to hand off a project
