@@ -36,6 +36,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
+  - "analysis/2009-01-09-satoshi-code-analysis"
 translationStatus: complete
 ---
 <!-- tone-skip -->
@@ -46,7 +47,7 @@ translationStatus: complete
 1998年11月、ダイは匿名の分散型電子キャッシュシステムの提案[「b-money」](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)をサイファーパンクスメーリングリストに公開した。b-money提案は、参加者が計算パズルの解を放送することで貨幣を作成できるシステムを記述した — ビットコインのプルーフ・オブ・ワーク・マイニングと概念的に類似する概念である。論文では2つのプロトコルを概説した：1つは同期的なブロードキャストチャネルを必要とするもの、もう1つは残高を追跡するサーバー群を使用するものである。b-moneyは実装されなかったが、ビットコインの主要な知的先駆者の一つとなった。
 
 **Crypto++：**
-ダイはCrypto++を作成・保守した。これは暗号アルゴリズムとスキームの包括的なコレクションを提供する無料のオープンソースC++ライブラリである。このライブラリは学術・商用プロジェクトで広く使用されており、利用可能な最も信頼される暗号ライブラリの一つであり続けている。
+ダイはCrypto++を作成・保守した。これは暗号アルゴリズムとスキームの包括的なコレクションを提供する無料のオープンソースC++ライブラリである。このライブラリは学術・商用プロジェクトで広く使用されており、利用可能な最も信頼される暗号ライブラリの一つであり続けている。サトシはv0.3.7（2010年7月）でCrypto++のサブセットをビットコインに直接組み込み、元のSHA-256実装を置き換えてハッシュ計算を2.5倍高速化した。つまりダイのビットコインへのコード貢献は二重であった：知的先駆者としてのb-moneyと、コードベースの直接的な依存関係としてのCrypto++である。
 
 **サトシの最初の接触：**
 2008年8月22日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ダイのb-moneyのアイデアを拡張する論文を発表する準備をしていると書いた。サトシはダイにb-moneyの発表年を尋ね、適切に引用するためだった。このメールは、2日前に[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)に送られた同様のメールとともに、サトシがビットコインホワイトペーパーの発表前に既存の暗号学者に接触した最も初期の既知の証拠である。2008年10月31日に発表された[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は、b-moneyを最初の参考文献として引用している。

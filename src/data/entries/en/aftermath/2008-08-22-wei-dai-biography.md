@@ -36,6 +36,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
+  - "analysis/2009-01-09-satoshi-code-analysis"
 ---
 
 Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft.
@@ -44,7 +45,7 @@ Wei Dai is a computer scientist and cryptographer known for two major contributi
 In November 1998, Dai published ["b-money"](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/), a proposal for an anonymous, distributed electronic cash system, on the cypherpunks mailing list. The b-money proposal described a system where participants could create money by broadcasting the solution to a computational puzzle — a concept conceptually similar to Bitcoin's proof-of-work mining. The paper outlined two protocols: one requiring a synchronous broadcast channel, and another using a set of servers to keep track of balances. B-money was never implemented, but it became one of the key intellectual precursors to Bitcoin.
 
 **Crypto++:**
-Dai created and maintained Crypto++, a free, open-source C++ library providing a comprehensive collection of cryptographic algorithms and schemes. The library is widely used in academic and commercial projects and remains one of the most respected cryptographic libraries available.
+Dai created and maintained Crypto++, a free, open-source C++ library providing a comprehensive collection of cryptographic algorithms and schemes. The library is widely used in academic and commercial projects and remains one of the most respected cryptographic libraries available. Satoshi integrated a subset of Crypto++ into Bitcoin itself in v0.3.7 (July 2010) to replace the original SHA-256 implementation, achieving a 2.5× speedup in hash computation. This means Dai's code contributions to Bitcoin were twofold: b-money as an intellectual precursor, and Crypto++ as a direct dependency in the codebase.
 
 **Satoshi's First Contact:**
 On August 22, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [emailed Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), writing that he was preparing to publish a paper expanding on Dai's b-money ideas. Satoshi asked Dai for the year of b-money's publication to properly cite it. This email, along with [a similar one](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) sent to [Adam Back](/BitcoinArchive/participants/adam-back/) two days earlier, represents the earliest known evidence of Satoshi reaching out to existing cryptographers before publishing the Bitcoin white paper. The [white paper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/), published on October 31, 2008, cites b-money as its first reference.
