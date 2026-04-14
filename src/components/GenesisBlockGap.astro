@@ -1,0 +1,175 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const labels = {
+  en: {
+    title: 'The 5-Day Gap',
+    subtitle: 'Block 0 (Genesis) to Block 1 — approximately 5 days and 8 hours vs. the expected ~10 minutes.',
+    block0: 'Genesis Block (Block 0)',
+    block0time: 'Jan 3, 2009 18:15:05 UTC',
+    block1: 'Block 1',
+    block1time: 'Jan 9, 2009 02:54:25 UTC',
+    gap: '5 days, 8 hours, 39 minutes',
+    expected: 'Expected: ~10 minutes',
+    ratio: '~750× longer than expected',
+    timesHeader: 'The Times 03/Jan/2009',
+    v01release: 'Bitcoin v0.1 released',
+    v01date: 'Jan 9, 2009',
+  },
+  ja: {
+    title: '5日間の空白',
+    subtitle: 'Block 0（ジェネシス）からBlock 1まで — 予想される約10分に対し、約5日と8時間。',
+    block0: 'ジェネシスブロック（Block 0）',
+    block0time: '2009年1月3日 18:15:05 UTC',
+    block1: 'Block 1',
+    block1time: '2009年1月9日 02:54:25 UTC',
+    gap: '5日 8時間 39分',
+    expected: '期待値: 約10分',
+    ratio: '期待値の約750倍',
+    timesHeader: 'The Times 03/Jan/2009',
+    v01release: 'Bitcoin v0.1 リリース',
+    v01date: '2009年1月9日',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="genesis-block-gap">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="genesis-gap-chart" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="genesis-gap-data" set:html={JSON.stringify(l)} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('genesis-gap-data');
+    if (!dataEl) return;
+    var l = JSON.parse(dataEl.textContent);
+
+    var container = document.getElementById('genesis-gap-chart');
+    if (!container) return;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 40, right: 30, bottom: 50, left: 30 };
+      var H = 220;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var t0 = new Date('2009-01-03T18:15:05Z');
+      var t1 = new Date('2009-01-09T02:54:25Z');
+      var tEnd = new Date('2009-01-10T00:00:00Z');
+
+      var x = d3.scaleTime().domain([t0, tEnd]).range([0, w]);
+
+      // Axis
+      g.append('g').attr('transform', 'translate(0,' + (h + 5) + ')')
+        .call(d3.axisBottom(x).ticks(7).tickFormat(d3.timeFormat('%b %d')))
+        .selectAll('text').attr('font-size', '10px');
+
+      // Gap bar
+      var barY = h / 2 - 15;
+      var barH = 30;
+      g.append('rect')
+        .attr('x', x(t0)).attr('y', barY)
+        .attr('width', x(t1) - x(t0)).attr('height', barH)
+        .attr('fill', '#fef3c7').attr('stroke', '#f59e0b').attr('stroke-width', 1).attr('rx', 4);
+
+      // Gap label
+      g.append('text')
+        .attr('x', (x(t0) + x(t1)) / 2).attr('y', barY + barH / 2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+        .attr('font-size', '12px').attr('font-weight', '700').attr('fill', '#92400e')
+        .text(l.gap);
+
+      // Block 0 marker
+      g.append('circle')
+        .attr('cx', x(t0)).attr('cy', barY + barH / 2)
+        .attr('r', 8).attr('fill', '#b45309').attr('stroke', '#fff').attr('stroke-width', 2);
+      g.append('text')
+        .attr('x', x(t0)).attr('y', barY - 18)
+        .attr('text-anchor', 'start').attr('font-size', '11px').attr('font-weight', '700')
+        .attr('fill', '#b45309').text(l.block0);
+      g.append('text')
+        .attr('x', x(t0)).attr('y', barY - 5)
+        .attr('text-anchor', 'start').attr('font-size', '9px').attr('fill', '#6b6b6b')
+        .text(l.block0time);
+
+      // Block 1 marker
+      g.append('circle')
+        .attr('cx', x(t1)).attr('cy', barY + barH / 2)
+        .attr('r', 8).attr('fill', '#2563eb').attr('stroke', '#fff').attr('stroke-width', 2);
+      g.append('text')
+        .attr('x', x(t1)).attr('y', barY + barH + 18)
+        .attr('text-anchor', 'middle').attr('font-size', '11px').attr('font-weight', '700')
+        .attr('fill', '#2563eb').text(l.block1);
+      g.append('text')
+        .attr('x', x(t1)).attr('y', barY + barH + 31)
+        .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#6b6b6b')
+        .text(l.block1time);
+
+      // Expected vs actual annotation
+      g.append('text')
+        .attr('x', w).attr('y', 0)
+        .attr('text-anchor', 'end').attr('font-size', '11px')
+        .attr('fill', '#dc2626').attr('font-weight', '600')
+        .text(l.ratio);
+
+      g.append('text')
+        .attr('x', w).attr('y', 15)
+        .attr('text-anchor', 'end').attr('font-size', '10px')
+        .attr('fill', '#9ca3af')
+        .text(l.expected);
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .genesis-block-gap {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

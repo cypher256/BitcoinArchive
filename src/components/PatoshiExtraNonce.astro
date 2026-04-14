@@ -1,0 +1,203 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+// Generate illustrative scatter data based on paper's description
+// Patoshi pattern: consistent slope segments that restart every ~100 hours (~14000 blocks)
+// Non-Patoshi: different linear progression
+const patoshiPoints: Array<{ x: number; y: number }> = [];
+const nonPatoshiPoints: Array<{ x: number; y: number }> = [];
+
+// Patoshi segments (restart every ~14000 blocks)
+const segments = [
+  { startBlock: 0, endBlock: 14000, slope: 0.00012, intercept: 1 },
+  { startBlock: 14500, endBlock: 28500, slope: 0.00013, intercept: 1 },
+  { startBlock: 29000, endBlock: 36288, slope: 0.00015, intercept: 1 },
+];
+
+for (const seg of segments) {
+  const step = Math.max(1, Math.floor((seg.endBlock - seg.startBlock) / 80));
+  for (let b = seg.startBlock; b <= seg.endBlock; b += step) {
+    const rel = b - seg.startBlock;
+    const y = seg.intercept + seg.slope * rel + (Math.random() - 0.5) * 0.08;
+    patoshiPoints.push({ x: b, y: Math.max(0, y) });
+  }
+}
+
+// Non-Patoshi: sparser, different slope starting from block ~12
+const nonPatoshiSegs = [
+  { startBlock: 12, endBlock: 36288, slope: 0.00004, intercept: 0.3 },
+];
+for (const seg of nonPatoshiSegs) {
+  const step = Math.max(1, Math.floor((seg.endBlock - seg.startBlock) / 120));
+  for (let b = seg.startBlock; b <= seg.endBlock; b += step) {
+    const rel = b - seg.startBlock;
+    const y = seg.intercept + seg.slope * rel + (Math.random() - 0.5) * 0.15;
+    nonPatoshiPoints.push({ x: b, y: Math.max(0, y) });
+  }
+}
+
+const labels = {
+  en: {
+    title: 'ExtraNonce Pattern Across First Year of Mining',
+    subtitle: 'Illustrative reconstruction of Lerner\'s ExtraNonce analysis across blocks 0–36,288. Patoshi blocks form consistent slope segments that restart every ~100 hours — a "slow realtime clock" fingerprint. Non-Patoshi blocks show a different linear progression.',
+    xLabel: 'Block number',
+    yLabel: 'ExtraNonce (normalized)',
+    patoshi: 'Patoshi blocks (~22,000 blocks)',
+    nonPatoshi: 'Non-Patoshi blocks',
+    note: 'Illustrative reconstruction — based on paper findings, not raw blockchain data',
+  },
+  ja: {
+    title: 'マイニング初年度の ExtraNonce パターン',
+    subtitle: 'Lernerの ExtraNonce 解析（ブロック 0〜36,288）の概念的再現。Patoshi ブロックは一貫した傾き区間を形成し、約100時間ごとに再開する — 「低速リアルタイムクロック」の指紋。非Patoshi ブロックは別の線形進行を示す。',
+    xLabel: 'ブロック番号',
+    yLabel: 'ExtraNonce（正規化）',
+    patoshi: 'Patoshi ブロック（約22,000ブロック）',
+    nonPatoshi: '非Patoshi ブロック',
+    note: '概念図 — 論文の知見に基づく再現であり、生のブロックチェーンデータではない',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="patoshi-extranonce">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="extranonce-chart" class="chart-container"></div>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-swatch" style="background:#b45309"></span>{l.patoshi}</span>
+      <span class="legend-item"><span class="legend-swatch" style="background:#9ca3af"></span>{l.nonPatoshi}</span>
+    </div>
+    <p class="chart-note">{l.note}</p>
+  </section>
+
+  <script type="application/json" id="extranonce-data" set:html={JSON.stringify({ patoshiPoints, nonPatoshiPoints, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('extranonce-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var l = data.labels;
+    var patoshi = data.patoshiPoints;
+    var nonPatoshi = data.nonPatoshiPoints;
+
+    var container = document.getElementById('extranonce-chart');
+    if (!container) return;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 700;
+      var margin = { top: 20, right: 30, bottom: 50, left: 60 };
+      var H = 360;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var x = d3.scaleLinear().domain([0, 36288]).range([0, w]);
+      var maxY = d3.max([].concat(patoshi, nonPatoshi), function(d) { return d.y; });
+      var y = d3.scaleLinear().domain([0, maxY]).nice().range([h, 0]);
+
+      // Axes
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(6).tickFormat(function(d) { return (d / 1000) + 'k'; }))
+        .selectAll('text').attr('font-size', '10px');
+      g.append('text').attr('x', w / 2).attr('y', h + 40)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', '#6b6b6b').text(l.xLabel);
+
+      g.append('g').call(d3.axisLeft(y).ticks(5))
+        .selectAll('text').attr('font-size', '10px');
+      g.append('text').attr('transform', 'rotate(-90)')
+        .attr('x', -h / 2).attr('y', -45)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', '#6b6b6b').text(l.yLabel);
+
+      // Non-Patoshi points (draw first, below)
+      g.selectAll('.non-patoshi')
+        .data(nonPatoshi)
+        .enter().append('circle')
+        .attr('cx', function(d) { return x(d.x); })
+        .attr('cy', function(d) { return y(d.y); })
+        .attr('r', 2).attr('fill', '#9ca3af').attr('opacity', 0.5);
+
+      // Patoshi points
+      g.selectAll('.patoshi')
+        .data(patoshi)
+        .enter().append('circle')
+        .attr('cx', function(d) { return x(d.x); })
+        .attr('cy', function(d) { return y(d.y); })
+        .attr('r', 2.5).attr('fill', '#b45309').attr('opacity', 0.75);
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .patoshi-extranonce {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .legend-swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+  .chart-note {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+</style>

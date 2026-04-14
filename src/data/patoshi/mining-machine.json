@@ -1,0 +1,20 @@
+{
+  "description": "Patoshi mining machine nonce subrange data. Based on Sergio Demian Lerner's August 2020 analysis.",
+  "source": "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/",
+  "subranges": [
+    { "id": 1, "start": 0, "end": 655000000, "highBias": 78 },
+    { "id": 2, "start": 655000000, "end": 1310000000, "highBias": 78 },
+    { "id": 3, "start": 1310000000, "end": 1965000000, "highBias": 78 },
+    { "id": 4, "start": 1965000000, "end": 2620000000, "highBias": 78 },
+    { "id": 5, "start": 2620000000, "end": 3275000000, "highBias": 78 }
+  ],
+  "comparison": {
+    "patoshiHashrate": 4.3,
+    "otherHashrate": 1.0,
+    "stockClientThreads": 1,
+    "patoshiThreads": 5,
+    "scanDirection": "high-to-low",
+    "highValueBias": 78,
+    "expectedIfRandom": 50
+  }
+}

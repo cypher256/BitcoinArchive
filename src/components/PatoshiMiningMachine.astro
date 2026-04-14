@@ -1,0 +1,294 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const machineData = await import('../data/patoshi/mining-machine.json').then(m => m.default);
+
+const labels = {
+  en: {
+    subrangeTitle: 'Nonce Space Partitioning — 5 Parallel Threads',
+    subrangeSub: 'The Patoshi miner divided the 4.3 billion nonce space into 5 subranges, each scanned by a separate thread. Within each subrange, nonces were scanned sequentially from high to low.',
+    biasTitle: 'High-Value Nonce Bias',
+    biasSub: 'Because each subrange was scanned from high to low, 78% of winning nonces fell in the upper half of their subrange. This is inconsistent with 48+ independent machines (which would produce ~50%).',
+    hashrateTitle: 'Hashrate Comparison',
+    hashrateSub: 'The Patoshi machine was approximately 4.3× faster than other early miners — consistent with a single quad-core CPU with SSE2 optimization vs. stock single-threaded client.',
+    thread: 'Thread',
+    nonceRange: 'Nonce range',
+    scanDir: 'Scan: high → low',
+    observed: 'Patoshi observed',
+    expected: 'Expected if random',
+    patoshi: 'Patoshi miner',
+    others: 'Other miners (stock client)',
+    mhps: 'Mhps',
+    threads: 'threads',
+    faster: '× faster',
+  },
+  ja: {
+    subrangeTitle: 'Nonce 空間の分割 — 5つの並列スレッド',
+    subrangeSub: 'Patoshiマイナーは43億のnonce空間を5つのサブレンジに分割し、それぞれを別スレッドでスキャンした。各サブレンジ内では、nonceは高い値から低い値へ順番にスキャンされた。',
+    biasTitle: '高値 Nonce バイアス',
+    biasSub: '各サブレンジが高い値からスキャンされるため、当選nonceの78%がサブレンジ上位半分に集中した。これは48台以上の独立マシンとは矛盾する（独立なら約50%になる）。',
+    hashrateTitle: 'ハッシュレート比較',
+    hashrateSub: 'Patoshiマシンは他の初期マイナーの約4.3倍高速だった。これはSSE2最適化を施したクアッドコアCPU1台と、標準のシングルスレッドクライアントとの差に一致する。',
+    thread: 'スレッド',
+    nonceRange: 'Nonce 範囲',
+    scanDir: 'スキャン: 高→低',
+    observed: 'Patoshi（実測値）',
+    expected: '均一分布の期待値',
+    patoshi: 'Patoshi マイナー',
+    others: '他のマイナー（標準クライアント）',
+    mhps: 'Mhps',
+    threads: 'スレッド',
+    faster: '倍高速',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="patoshi-mining-machine">
+  <!-- Nonce subranges -->
+  <section class="analysis-section">
+    <h3>{l.subrangeTitle}</h3>
+    <p class="analysis-desc">{l.subrangeSub}</p>
+    <div id="nonce-subranges" class="chart-container"></div>
+  </section>
+
+  <!-- High-value bias -->
+  <section class="analysis-section">
+    <h3>{l.biasTitle}</h3>
+    <p class="analysis-desc">{l.biasSub}</p>
+    <div id="nonce-bias" class="chart-container"></div>
+  </section>
+
+  <!-- Hashrate comparison -->
+  <section class="analysis-section">
+    <h3>{l.hashrateTitle}</h3>
+    <p class="analysis-desc">{l.hashrateSub}</p>
+    <div id="hashrate-compare" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="mining-machine-data" set:html={JSON.stringify({ ...machineData, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('mining-machine-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var l = data.labels;
+    var subranges = data.subranges;
+    var comp = data.comparison;
+
+    var threadColors = ['#2563eb', '#059669', '#d97706', '#7c3aed', '#dc2626'];
+
+    // --- Nonce Subranges ---
+    (function() {
+      var container = document.getElementById('nonce-subranges');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 30, right: 20, bottom: 30, left: 20 };
+        var H = 120;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var maxNonce = 4294967296;
+        var x = d3.scaleLinear().domain([0, maxNonce]).range([0, w]);
+
+        subranges.forEach(function(sr, i) {
+          var x1 = x(sr.start);
+          var x2 = x(sr.end);
+          g.append('rect')
+            .attr('x', x1).attr('y', 0)
+            .attr('width', x2 - x1 - 1).attr('height', h)
+            .attr('fill', threadColors[i]).attr('opacity', 0.75).attr('rx', 3);
+
+          g.append('text')
+            .attr('x', (x1 + x2) / 2).attr('y', h / 2)
+            .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+            .attr('fill', '#fff').attr('font-size', '13px').attr('font-weight', '700')
+            .text(l.thread + ' ' + sr.id);
+
+          // Arrow showing high→low scan direction
+          var arrowY = h / 2 + 18;
+          g.append('text')
+            .attr('x', (x1 + x2) / 2).attr('y', arrowY)
+            .attr('text-anchor', 'middle').attr('fill', 'rgba(255,255,255,0.7)')
+            .attr('font-size', '10px').text('← ' + l.scanDir);
+        });
+
+        // 0 and max labels
+        g.append('text').attr('x', 0).attr('y', -8)
+          .attr('font-size', '10px').attr('fill', '#6b6b6b').text('0');
+        g.append('text').attr('x', w).attr('y', -8)
+          .attr('text-anchor', 'end').attr('font-size', '10px').attr('fill', '#6b6b6b')
+          .text('2³² (4.3B)');
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+
+    // --- High-value bias ---
+    (function() {
+      var container = document.getElementById('nonce-bias');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 20, right: 20, bottom: 30, left: 150 };
+        var H = 130;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var items = [
+          { label: l.observed, value: comp.highValueBias, color: '#b45309' },
+          { label: l.expected, value: comp.expectedIfRandom, color: '#9ca3af' },
+        ];
+
+        var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
+        var x = d3.scaleLinear().domain([0, 100]).range([0, w]);
+
+        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+          .selectAll('text').attr('font-size', '12px');
+        g.append('g').attr('transform', 'translate(0,' + h + ')')
+          .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + '%'; }))
+          .selectAll('text').attr('font-size', '10px');
+
+        items.forEach(function(item) {
+          g.append('rect')
+            .attr('y', y(item.label)).attr('x', 0)
+            .attr('height', y.bandwidth()).attr('width', x(item.value))
+            .attr('fill', item.color).attr('rx', 2);
+          g.append('text')
+            .attr('y', y(item.label) + y.bandwidth() / 2)
+            .attr('x', x(item.value) + 6)
+            .attr('dominant-baseline', 'central')
+            .attr('font-size', '13px').attr('font-weight', '700')
+            .attr('fill', item.color)
+            .text(item.value + '%');
+        });
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+
+    // --- Hashrate comparison ---
+    (function() {
+      var container = document.getElementById('hashrate-compare');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 20, right: 80, bottom: 30, left: 200 };
+        var H = 130;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var items = [
+          { label: l.patoshi + '\n(' + comp.patoshiThreads + ' ' + l.threads + ', SSE2)', value: comp.patoshiHashrate, color: '#b45309' },
+          { label: l.others + '\n(1 ' + l.threads + ')', value: comp.otherHashrate, color: '#9ca3af' },
+        ];
+
+        var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
+        var x = d3.scaleLinear().domain([0, 5]).range([0, w]);
+
+        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+          .selectAll('text').attr('font-size', '11px').each(function() {
+            var text = d3.select(this);
+            var lines = text.text().split('\n');
+            if (lines.length > 1) {
+              text.text('');
+              text.append('tspan').attr('x', -8).attr('dy', '-0.3em').text(lines[0]);
+              text.append('tspan').attr('x', -8).attr('dy', '1.2em').text(lines[1]).attr('font-size', '9px').attr('fill', '#9ca3af');
+            }
+          });
+
+        g.append('g').attr('transform', 'translate(0,' + h + ')')
+          .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + ' ' + l.mhps; }))
+          .selectAll('text').attr('font-size', '10px');
+
+        items.forEach(function(item) {
+          g.append('rect')
+            .attr('y', y(item.label)).attr('x', 0)
+            .attr('height', y.bandwidth()).attr('width', x(item.value))
+            .attr('fill', item.color).attr('rx', 2);
+          g.append('text')
+            .attr('y', y(item.label) + y.bandwidth() / 2)
+            .attr('x', x(item.value) + 6)
+            .attr('dominant-baseline', 'central')
+            .attr('font-size', '13px').attr('font-weight', '700')
+            .attr('fill', item.color)
+            .text(item.value + ' ' + l.mhps);
+        });
+
+        // 4.3× label
+        g.append('text')
+          .attr('x', w / 2).attr('y', -5)
+          .attr('text-anchor', 'middle')
+          .attr('font-size', '12px').attr('font-weight', '700')
+          .attr('fill', '#b45309')
+          .text('4.3' + l.faster);
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+  }
+  init();
+})();
+</script>
+
+<style>
+  .patoshi-mining-machine {
+    margin: 2rem 0;
+  }
+  .analysis-section {
+    margin-bottom: 2rem;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

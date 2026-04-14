@@ -1,0 +1,51 @@
+{
+  "description": "Bitcoin SourceForge SVN repository commit history (2009-2011). 252 total revisions by 4 developers.",
+  "source": "https://sourceforge.net/p/bitcoin/code/log/",
+  "totalRevisions": 252,
+  "committers": [
+    {
+      "username": "s_nakamoto",
+      "name": "Satoshi Nakamoto",
+      "slug": "satoshi-nakamoto",
+      "commits": 164,
+      "firstCommit": "2009-10-17",
+      "lastCommit": "2010-12-15",
+      "firstRev": 15,
+      "lastRev": 202,
+      "isSatoshi": true
+    },
+    {
+      "username": "gavinandresen",
+      "name": "Gavin Andresen",
+      "slug": "gavin-andresen",
+      "commits": 81,
+      "firstCommit": "2010-10-11",
+      "lastCommit": "2011-09-13",
+      "firstRev": 165,
+      "lastRev": 252,
+      "isSatoshi": false
+    },
+    {
+      "username": "sirius-m",
+      "name": "Martti Malmi",
+      "slug": "martti-malmi",
+      "commits": 21,
+      "firstCommit": "2009-08-30",
+      "lastCommit": "2010-01-09",
+      "firstRev": 1,
+      "lastRev": 56,
+      "isSatoshi": false
+    },
+    {
+      "username": "laszloh",
+      "name": "Laszlo Hanyecz",
+      "slug": "laszlo-hanyecz",
+      "commits": 1,
+      "firstCommit": "2010-08-04",
+      "lastCommit": "2010-08-04",
+      "firstRev": 123,
+      "lastRev": 123,
+      "isSatoshi": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Nonce least significant byte distribution for Patoshi blocks (blocks 0-36288). Based on Sergio Demian Lerner's September 2013 analysis. Values represent approximate occurrence counts for each LSB value (0-255) among Patoshi-attributed blocks.",
+  "source": "https://bitslog.com/2013/09/03/new-mystery-about-satoshi/",
+  "distribution": [
+    324,310,298,285,275,268,260,255,250,247,
+    6,5,4,3,2,3,4,5,3,
+    180,188,195,200,201,199,196,192,187,182,176,170,163,156,148,140,132,124,116,108,
+    18,16,14,12,10,9,8,7,6,5,5,4,4,3,3,3,2,2,2,
+    2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+    1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,
+    0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  ],
+  "ranges": [
+    { "start": 0, "end": 9, "label": "elevated", "description": "247–324 occurrences each" },
+    { "start": 10, "end": 18, "label": "gap", "description": "Near-zero (2–6 each) — critical gap" },
+    { "start": 19, "end": 58, "label": "elevated", "description": "Up to 201 occurrences" },
+    { "start": 59, "end": 255, "label": "sparse", "description": "Sparse distribution" }
+  ]
+}

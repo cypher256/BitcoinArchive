@@ -1,0 +1,216 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const labels = {
+  en: {
+    blocksTitle: 'Share of First 54,316 Blocks',
+    blocksSub: 'Whale Alert identified 22,503 of the first 54,316 blocks (41%) as mined by Satoshi via the Patoshi pattern.',
+    spentTitle: 'Spent vs. Unspent Coins',
+    spentSub: 'Of 1,125,150 BTC mined, only 907 BTC (from 50 blocks) have ever been spent. The remaining 99.92% have never moved.',
+    patoshi: 'Patoshi blocks',
+    other: 'Other miners',
+    spent: 'Spent (907 BTC, 50 blocks)',
+    unspent: 'Unspent (1,122,693 BTC)',
+    btc: 'BTC',
+    blocks: 'blocks',
+  },
+  ja: {
+    blocksTitle: '最初の54,316ブロックの内訳',
+    blocksSub: 'Whale AlertはPatoshiパターンにより、最初の54,316ブロック中22,503（41%）をサトシがマイニングしたと特定。',
+    spentTitle: '使用済み vs. 未使用コイン',
+    spentSub: 'マイニングされた1,125,150 BTC のうち、使用されたのは50ブロックから907 BTC のみ。残り99.92%は一度も動いていない。',
+    patoshi: 'Patoshi ブロック',
+    other: '他のマイナー',
+    spent: '使用済み（907 BTC、50 ブロック）',
+    unspent: '未使用（1,122,693 BTC）',
+    btc: 'BTC',
+    blocks: 'ブロック',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="whale-alert-fortune">
+  <section class="analysis-section">
+    <h3>{l.blocksTitle}</h3>
+    <p class="analysis-desc">{l.blocksSub}</p>
+    <div id="blocks-donut" class="chart-container"></div>
+  </section>
+
+  <section class="analysis-section">
+    <h3>{l.spentTitle}</h3>
+    <p class="analysis-desc">{l.spentSub}</p>
+    <div id="spent-bar" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="whale-data" set:html={JSON.stringify(l)} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('whale-data');
+    if (!dataEl) return;
+    var l = JSON.parse(dataEl.textContent);
+
+    // --- Donut (blocks breakdown) ---
+    (function() {
+      var container = document.getElementById('blocks-donut');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var H = 260;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + W / 2 + ',' + H / 2 + ')');
+
+        var radius = Math.min(W, H) / 2 - 30;
+        var innerRadius = radius * 0.55;
+
+        var data = [
+          { label: l.patoshi, value: 22503, color: '#b45309' },
+          { label: l.other, value: 54316 - 22503, color: '#9ca3af' },
+        ];
+
+        var pie = d3.pie().value(function(d) { return d.value; }).sort(null);
+        var arc = d3.arc().innerRadius(innerRadius).outerRadius(radius);
+
+        g.selectAll('path').data(pie(data)).enter()
+          .append('path').attr('d', arc)
+          .attr('fill', function(d) { return d.data.color; })
+          .attr('stroke', '#fff').attr('stroke-width', 2);
+
+        // Center text
+        g.append('text')
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('y', -12)
+          .attr('font-size', '22px').attr('font-weight', '700')
+          .attr('fill', '#b45309').text('41%');
+        g.append('text')
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('y', 12)
+          .attr('font-size', '11px').attr('fill', '#6b6b6b')
+          .text('22,503 / 54,316');
+
+        // Labels on slices — place outside slice with leader line
+        var labelArc = d3.arc().innerRadius(radius + 10).outerRadius(radius + 10);
+        data.forEach(function(d, i) {
+          var slice = pie(data)[i];
+          var pos = labelArc.centroid(slice);
+          var midAngle = (slice.startAngle + slice.endAngle) / 2;
+          var isRight = midAngle < Math.PI;
+          var labelX = isRight ? pos[0] + 8 : pos[0] - 8;
+          g.append('text')
+            .attr('x', labelX).attr('y', pos[1])
+            .attr('text-anchor', isRight ? 'start' : 'end')
+            .attr('dominant-baseline', 'central')
+            .attr('fill', d.color).attr('font-size', '12px').attr('font-weight', '600')
+            .text(d.label);
+        });
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+
+    // --- Spent vs Unspent bar ---
+    (function() {
+      var container = document.getElementById('spent-bar');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 40, right: 20, bottom: 20, left: 20 };
+        var H = 110;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var total = 1125150;
+        var spent = 907;
+        var unspent = total - spent;
+        var pctUnspent = unspent / total;
+
+        // Unspent portion (huge)
+        g.append('rect')
+          .attr('x', 0).attr('y', 0)
+          .attr('width', w * pctUnspent).attr('height', h)
+          .attr('fill', '#b45309').attr('rx', 4).attr('opacity', 0.9);
+
+        // Spent portion (tiny - magnified indicator)
+        g.append('rect')
+          .attr('x', w * pctUnspent).attr('y', 0)
+          .attr('width', Math.max(w * (1 - pctUnspent), 4)).attr('height', h)
+          .attr('fill', '#dc2626').attr('rx', 4);
+
+        // Centered label on unspent
+        g.append('text')
+          .attr('x', (w * pctUnspent) / 2).attr('y', h / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('fill', '#fff').attr('font-size', '14px').attr('font-weight', '700')
+          .text('99.92% ' + l.unspent);
+
+        // Spent indicator (above)
+        g.append('line')
+          .attr('x1', w * pctUnspent + 3).attr('x2', w - 20)
+          .attr('y1', -10).attr('y2', -10)
+          .attr('stroke', '#dc2626').attr('stroke-width', 1);
+        g.append('text')
+          .attr('x', w - 20).attr('y', -15)
+          .attr('text-anchor', 'end').attr('font-size', '10px')
+          .attr('fill', '#dc2626').attr('font-weight', '600')
+          .text('0.08% ' + l.spent);
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+  }
+  init();
+})();
+</script>
+
+<style>
+  .whale-alert-fortune {
+    margin: 2rem 0;
+  }
+  .analysis-section {
+    margin-bottom: 2rem;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

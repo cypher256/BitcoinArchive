@@ -5,6 +5,18 @@ import SourceCitation from '../../components/SourceCitation.astro';
 import AutoLinkNames from '../../components/AutoLinkNames.astro';
 import RelatedEntries from '../../components/RelatedEntries.astro';
 import SatoshiCodeAnalysis from '../../components/SatoshiCodeAnalysis.astro';
+import PatoshiNonceLsb from '../../components/PatoshiNonceLsb.astro';
+import SvnCommitters from '../../components/SvnCommitters.astro';
+import PatoshiMiningMachine from '../../components/PatoshiMiningMachine.astro';
+import ValueOverflowTimeline from '../../components/ValueOverflowTimeline.astro';
+import GenesisBlockGap from '../../components/GenesisBlockGap.astro';
+import LoppHashrateAnalysis from '../../components/LoppHashrateAnalysis.astro';
+import PatoshiExtraNonce from '../../components/PatoshiExtraNonce.astro';
+import PlosPatoshiAnomaly from '../../components/PlosPatoshiAnomaly.astro';
+import GitHubMigrationTimeline from '../../components/GitHubMigrationTimeline.astro';
+import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsComparison.astro';
+import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
+import NlsExchangeRate from '../../components/NlsExchangeRate.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, localePath, absoluteUrl } from '../../i18n/utils';
 import { resolveThreadId } from '../../data/threads';
@@ -90,6 +102,54 @@ const breadcrumbs = [
 
     {entry.data.type === 'analysis' && entry.id.includes('satoshi-code') && (
       <SatoshiCodeAnalysis lang={lang} />
+    )}
+
+    {entry.id.includes('sergio-lerner-nonce-lsb') && (
+      <PatoshiNonceLsb lang={lang} />
+    )}
+
+    {entry.id.includes('bitcoin-svn-repository-committers') && (
+      <SvnCommitters lang={lang} />
+    )}
+
+    {entry.id.includes('sergio-lerner-patoshi-mining-machine') && (
+      <PatoshiMiningMachine lang={lang} />
+    )}
+
+    {entry.id.includes('value-overflow-incident') && (
+      <ValueOverflowTimeline lang={lang} />
+    )}
+
+    {entry.id.includes('genesis-block-5-day-mystery') && (
+      <GenesisBlockGap lang={lang} />
+    )}
+
+    {entry.id.includes('lopp-was-satoshi-greedy-miner') && (
+      <LoppHashrateAnalysis lang={lang} />
+    )}
+
+    {entry.id.includes('sergio-lerner-patoshi-analysis') && (
+      <PatoshiExtraNonce lang={lang} />
+    )}
+
+    {entry.id.includes('plos-one-patoshi-anomaly-study') && (
+      <PlosPatoshiAnomaly lang={lang} />
+    )}
+
+    {entry.id.includes('bitcoin-github-migration-committers') && (
+      <GitHubMigrationTimeline lang={lang} />
+    )}
+
+    {entry.id.includes('satoshi-bitcoin-holdings-analysis') && (
+      <SatoshiHoldingsComparison lang={lang} />
+    )}
+
+    {entry.id.includes('whale-alert-satoshi-fortune') && (
+      <WhaleAlertFortune lang={lang} />
+    )}
+
+    {entry.id.includes('newlibertystandard-first-exchange-rate') && (
+      <NlsExchangeRate lang={lang} />
     )}
 
     {threadId && threadMessages >= 2 && (

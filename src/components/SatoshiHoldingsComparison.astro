@@ -1,0 +1,143 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const estimates = [
+  { source: 'Lerner 2013', btc: 1000000, year: 2013, color: '#9ca3af' },
+  { source: 'BitMEX Research 2018', btc: 700000, year: 2018, color: '#9ca3af' },
+  { source: 'Lerner 2019', btc: 1100000, year: 2019, color: '#b45309' },
+  { source: 'Whale Alert 2020', btc: 1125150, year: 2020, color: '#2563eb' },
+];
+
+const labels = {
+  en: {
+    title: 'Independent Estimates of Satoshi\'s Holdings',
+    subtitle: 'Multiple independent blockchain analyses have converged on approximately 1.1 million BTC. None of these coins have ever been spent.',
+    btc: 'BTC',
+    convergence: 'Research consensus: ~1.1 million BTC',
+    unspent: '100% unspent since mining',
+  },
+  ja: {
+    title: 'サトシ保有量の独立推定値',
+    subtitle: '複数の独立したブロックチェーン解析が約110万BTCに収束している。このうち一度も使用されたコインはない。',
+    btc: 'BTC',
+    convergence: '研究コンセンサス: 約110万 BTC',
+    unspent: 'マイニング以来 100% 未使用',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="satoshi-holdings">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="holdings-chart" class="chart-container"></div>
+    <p class="convergence-note">{l.convergence} · {l.unspent}</p>
+  </section>
+
+  <script type="application/json" id="holdings-data" set:html={JSON.stringify({ estimates, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('holdings-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var estimates = data.estimates;
+    var l = data.labels;
+
+    var container = document.getElementById('holdings-chart');
+    if (!container) return;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 20, right: 100, bottom: 30, left: 180 };
+      var H = 200;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var y = d3.scaleBand().domain(estimates.map(function(d) { return d.source; })).range([0, h]).padding(0.3);
+      var x = d3.scaleLinear().domain([0, 1300000]).range([0, w]);
+
+      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '11px');
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return (d / 1000000).toFixed(1) + 'M'; }))
+        .selectAll('text').attr('font-size', '10px');
+
+      // Consensus marker at 1.1M
+      g.append('line')
+        .attr('x1', x(1100000)).attr('x2', x(1100000))
+        .attr('y1', 0).attr('y2', h)
+        .attr('stroke', '#b45309').attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.5);
+
+      estimates.forEach(function(e) {
+        g.append('rect')
+          .attr('y', y(e.source)).attr('x', 0)
+          .attr('height', y.bandwidth()).attr('width', x(e.btc))
+          .attr('fill', e.color).attr('rx', 2).attr('opacity', 0.85);
+
+        g.append('text')
+          .attr('y', y(e.source) + y.bandwidth() / 2)
+          .attr('x', x(e.btc) + 6)
+          .attr('dominant-baseline', 'central')
+          .attr('font-size', '12px').attr('font-weight', '700')
+          .attr('fill', e.color)
+          .text((e.btc / 1000).toFixed(0) + 'k ' + l.btc);
+      });
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .satoshi-holdings {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+  .convergence-note {
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    font-style: italic;
+  }
+</style>

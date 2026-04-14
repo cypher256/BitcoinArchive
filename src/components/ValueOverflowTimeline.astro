@@ -1,0 +1,184 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const labels = {
+  en: {
+    title: 'Incident Timeline',
+    subtitle: 'From discovery to resolution — the most serious crisis in Bitcoin\'s early history, resolved in under 19 hours.',
+    hours: 'h',
+    events: [
+      { time: '18:08', offset: 0, label: 'Jeff Garzik discovers anomaly in Block 74638', type: 'alert' },
+      { time: '~18:30', offset: 0.4, label: '184,467,440,737 BTC confirmed — 9,000× total supply', type: 'crisis' },
+      { time: '~23:00', offset: 4.9, label: 'Satoshi publishes Bitcoin v0.3.10 with fix', type: 'fix' },
+      { time: '~09:00+1', offset: 14.9, label: 'Corrected chain overtakes invalid chain at Block 74691', type: 'resolved' },
+    ],
+    blockReorg: '53 blocks reorganized',
+    duration: '~19 hours total',
+  },
+  ja: {
+    title: 'インシデントのタイムライン',
+    subtitle: '発見から解決まで — ビットコイン初期史上最も深刻な危機が19時間以内に解決された。',
+    hours: '時間',
+    events: [
+      { time: '18:08', offset: 0, label: 'ジェフ・ガージックがBlock 74638の異常を発見', type: 'alert' },
+      { time: '~18:30', offset: 0.4, label: '184,467,440,737 BTC確認 — 総供給量の9,000倍', type: 'crisis' },
+      { time: '~23:00', offset: 4.9, label: 'サトシがBitcoin v0.3.10（修正版）を公開', type: 'fix' },
+      { time: '~09:00+1', offset: 14.9, label: '修正チェーンがBlock 74691で不正チェーンを追い越す', type: 'resolved' },
+    ],
+    blockReorg: '53ブロックが再編成',
+    duration: '合計約19時間',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="value-overflow-timeline">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="overflow-timeline" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="overflow-timeline-data" set:html={JSON.stringify(l)} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('overflow-timeline-data');
+    if (!dataEl) return;
+    var l = JSON.parse(dataEl.textContent);
+    var events = l.events;
+
+    var container = document.getElementById('overflow-timeline');
+    if (!container) return;
+
+    var typeColors = { alert: '#f59e0b', crisis: '#dc2626', fix: '#2563eb', resolved: '#059669' };
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 50, right: 80, bottom: 40, left: 80 };
+      var H = 260;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var maxOffset = 19;
+      var x = d3.scaleLinear().domain([0, maxOffset]).range([0, w]);
+
+      // Axis
+      g.append('g').attr('transform', 'translate(0,' + (h - 10) + ')')
+        .call(d3.axisBottom(x).ticks(6).tickFormat(function(d) { return '+' + d + l.hours; }))
+        .selectAll('text').attr('font-size', '10px');
+
+      // Timeline bar
+      g.append('rect')
+        .attr('x', 0).attr('y', h / 2 - 3)
+        .attr('width', w).attr('height', 6)
+        .attr('fill', '#e5e7eb').attr('rx', 3);
+
+      // Crisis period (red)
+      g.append('rect')
+        .attr('x', x(0)).attr('y', h / 2 - 3)
+        .attr('width', x(4.9) - x(0)).attr('height', 6)
+        .attr('fill', '#fecaca').attr('rx', 3);
+
+      // Fix → resolved period (blue)
+      g.append('rect')
+        .attr('x', x(4.9)).attr('y', h / 2 - 3)
+        .attr('width', x(14.9) - x(4.9)).attr('height', 6)
+        .attr('fill', '#dbeafe').attr('rx', 3);
+
+      // Events
+      events.forEach(function(ev, i) {
+        var cx = x(ev.offset);
+        var color = typeColors[ev.type];
+        var above = i % 2 === 0;
+        var yText = above ? h / 2 - 28 : h / 2 + 35;
+        var yLine = above ? h / 2 - 12 : h / 2 + 12;
+
+        g.append('circle')
+          .attr('cx', cx).attr('cy', h / 2)
+          .attr('r', 7).attr('fill', color).attr('stroke', '#fff').attr('stroke-width', 2);
+
+        g.append('line')
+          .attr('x1', cx).attr('x2', cx)
+          .attr('y1', h / 2 + (above ? -8 : 8)).attr('y2', yLine)
+          .attr('stroke', color).attr('stroke-width', 1).attr('stroke-dasharray', '2,2');
+
+        g.append('text')
+          .attr('x', cx).attr('y', yText)
+          .attr('text-anchor', 'middle').attr('font-size', '10px')
+          .attr('fill', color).attr('font-weight', '600')
+          .text(ev.time);
+
+        g.append('text')
+          .attr('x', cx).attr('y', yText + 13)
+          .attr('text-anchor', 'middle').attr('font-size', '9px')
+          .attr('fill', '#6b6b6b')
+          .each(function() {
+            var text = d3.select(this);
+            var words = ev.label.split(' ');
+            var maxChars = 25;
+            var line1 = '';
+            var line2 = '';
+            words.forEach(function(word) {
+              if ((line1 + ' ' + word).trim().length <= maxChars && !line2) {
+                line1 = (line1 + ' ' + word).trim();
+              } else {
+                line2 = (line2 + ' ' + word).trim();
+              }
+            });
+            text.text('');
+            text.append('tspan').attr('x', cx).attr('dy', 0).text(line1);
+            if (line2) text.append('tspan').attr('x', cx).attr('dy', '1.1em').text(line2);
+          });
+      });
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .value-overflow-timeline {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+    padding: 0.5rem 0;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

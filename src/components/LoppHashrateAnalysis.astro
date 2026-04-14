@@ -1,0 +1,204 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const labels = {
+  en: {
+    title: 'Satoshi\'s Mining: Actual vs. Potential',
+    subtitle: 'Satoshi voluntarily throttled mining capacity. Full-power mining could have yielded ~2× the actual amount.',
+    actual: 'Actual mining',
+    fullCapacity: 'Full capacity (no pauses)',
+    maxCapacity: 'Maximum capacity (6 Mhps)',
+    blocks: 'blocks',
+    btc: 'BTC',
+    mhps: 'Mhps',
+    hashrateTitle: 'Hashrate Utilization',
+    hashrateSub: 'Satoshi used only 72.5% of available processing power.',
+    used: 'Used',
+    available: 'Available',
+    pctUsed: '72.5%',
+  },
+  ja: {
+    title: 'サトシのマイニング：実績 vs. 可能性',
+    subtitle: 'サトシは意図的にマイニング能力を抑制した。フルパワーなら実際の約2倍を獲得できた。',
+    actual: '実際のマイニング',
+    fullCapacity: 'フル稼働（ポーズなし）',
+    maxCapacity: '最大能力（6 Mhps）',
+    blocks: 'ブロック',
+    btc: 'BTC',
+    mhps: 'Mhps',
+    hashrateTitle: 'ハッシュレート使用率',
+    hashrateSub: 'サトシは利用可能な計算能力の72.5%しか使わなかった。',
+    used: '使用',
+    available: '利用可能',
+    pctUsed: '72.5%',
+  },
+};
+
+const l = labels[lang];
+
+const scenarios = [
+  { label: labels[lang].actual, blocks: 22000, btc: 1100000, mhps: 4.35, color: '#b45309' },
+  { label: labels[lang].fullCapacity, blocks: 31783, btc: 1590000, mhps: 4.35, color: '#6366f1' },
+  { label: labels[lang].maxCapacity, blocks: 43829, btc: 2190000, mhps: 6.0, color: '#9ca3af' },
+];
+---
+
+<div class="lopp-analysis">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="lopp-scenarios" class="chart-container"></div>
+  </section>
+
+  <section class="analysis-section">
+    <h3>{l.hashrateTitle}</h3>
+    <p class="analysis-desc">{l.hashrateSub}</p>
+    <div id="lopp-hashrate" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="lopp-data" set:html={JSON.stringify({ scenarios, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('lopp-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var scenarios = data.scenarios;
+    var l = data.labels;
+
+    // --- Scenario bars ---
+    (function() {
+      var container = document.getElementById('lopp-scenarios');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 20, right: 110, bottom: 30, left: 200 };
+        var H = 160;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var y = d3.scaleBand().domain(scenarios.map(function(s) { return s.label; })).range([0, h]).padding(0.3);
+        var x = d3.scaleLinear().domain([0, 2300000]).range([0, w]);
+
+        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+          .selectAll('text').attr('font-size', '11px');
+        g.append('g').attr('transform', 'translate(0,' + h + ')')
+          .call(d3.axisBottom(x).ticks(4).tickFormat(function(d) { return (d / 1000000).toFixed(1) + 'M ' + l.btc; }))
+          .selectAll('text').attr('font-size', '10px');
+
+        scenarios.forEach(function(s) {
+          g.append('rect')
+            .attr('y', y(s.label)).attr('x', 0)
+            .attr('height', y.bandwidth()).attr('width', x(s.btc))
+            .attr('fill', s.color).attr('rx', 2).attr('opacity', 0.85);
+
+          g.append('text')
+            .attr('y', y(s.label) + y.bandwidth() / 2)
+            .attr('x', x(s.btc) + 6)
+            .attr('dominant-baseline', 'central')
+            .attr('font-size', '12px').attr('font-weight', '700')
+            .attr('fill', s.color)
+            .text(d3.format(',')(s.btc) + ' ' + l.btc);
+        });
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+
+    // --- Hashrate gauge ---
+    (function() {
+      var container = document.getElementById('lopp-hashrate');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 20, right: 20, bottom: 30, left: 20 };
+        var H = 80;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        // Background bar (full capacity)
+        g.append('rect')
+          .attr('x', 0).attr('y', 0)
+          .attr('width', w).attr('height', h)
+          .attr('fill', '#e5e7eb').attr('rx', 4);
+
+        // Used bar
+        var pct = 4.35 / 6;
+        g.append('rect')
+          .attr('x', 0).attr('y', 0)
+          .attr('width', w * pct).attr('height', h)
+          .attr('fill', '#b45309').attr('rx', 4).attr('opacity', 0.85);
+
+        // Labels
+        g.append('text')
+          .attr('x', w * pct / 2).attr('y', h / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('font-size', '14px').attr('font-weight', '700').attr('fill', '#fff')
+          .text('4.35 ' + l.mhps + ' (' + l.pctUsed + ')');
+
+        g.append('text')
+          .attr('x', w * pct + (w * (1 - pct)) / 2).attr('y', h / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('font-size', '12px').attr('fill', '#6b6b6b')
+          .text('6.0 ' + l.mhps + ' ' + l.available);
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+  }
+  init();
+})();
+</script>
+
+<style>
+  .lopp-analysis {
+    margin: 2rem 0;
+  }
+  .analysis-section {
+    margin-bottom: 2rem;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

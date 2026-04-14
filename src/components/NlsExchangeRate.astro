@@ -1,0 +1,199 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const labels = {
+  en: {
+    title: 'Cost-of-Production Formula',
+    subtitle: 'Bitcoin\'s first price was derived from the real-world electricity cost required to mine it.',
+    kwhLabel: 'CPU electricity\n(1 year at high load)',
+    costLabel: 'US residential\nelectricity rate',
+    monthsLabel: 'Divide by months',
+    btcLabel: 'BTC mined\n(past 30 days)',
+    resultLabel: 'First Bitcoin price',
+    formula: 'Formula',
+    kwh: '1,331.5 kWh',
+    cost: '$0.1136 / kWh',
+    months: '12 months',
+    mined: '~198,000 BTC',
+    priceBtc: '$0.000764',
+    priceBtcFull: 'per BTC',
+    priceUsd: '$1 = 1,309.03 BTC',
+  },
+  ja: {
+    title: '電力原価方式の計算',
+    subtitle: 'ビットコインの最初の価格は、マイニングに必要な現実世界の電力コストから導かれた。',
+    kwhLabel: 'CPU 電力消費\n（1年間 高負荷時）',
+    costLabel: '米国家庭用\n電力料金',
+    monthsLabel: '月数で除算',
+    btcLabel: 'マイニング済 BTC\n（過去30日間）',
+    resultLabel: '初のビットコイン価格',
+    formula: '計算式',
+    kwh: '1,331.5 kWh',
+    cost: '$0.1136 / kWh',
+    months: '12 ヶ月',
+    mined: '約 198,000 BTC',
+    priceBtc: '$0.000764',
+    priceBtcFull: '/ BTC',
+    priceUsd: '$1 = 1,309.03 BTC',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="nls-exchange-rate">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="nls-formula" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="nls-data" set:html={JSON.stringify(l)} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('nls-data');
+    if (!dataEl) return;
+    var l = JSON.parse(dataEl.textContent);
+
+    var container = document.getElementById('nls-formula');
+    if (!container) return;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 700;
+      var H = 320;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g');
+
+      // Define the flow: 4 input boxes → operation → result
+      var boxW = Math.min(140, (W - 60) / 4);
+      var gap = (W - 4 * boxW) / 5;
+      var boxH = 70;
+      var topY = 30;
+      var resultY = 210;
+      var resultW = Math.min(240, W - 80);
+      var resultX = (W - resultW) / 2;
+      var resultH = 80;
+
+      var inputs = [
+        { label: l.kwhLabel, value: l.kwh, color: '#2563eb' },
+        { label: l.costLabel, value: l.cost, color: '#2563eb' },
+        { label: l.monthsLabel, value: l.months, color: '#6366f1' },
+        { label: l.btcLabel, value: l.mined, color: '#b45309' },
+      ];
+
+      // Input boxes
+      inputs.forEach(function(inp, i) {
+        var x = gap + i * (boxW + gap);
+        g.append('rect')
+          .attr('x', x).attr('y', topY)
+          .attr('width', boxW).attr('height', boxH)
+          .attr('fill', 'none').attr('stroke', inp.color).attr('stroke-width', 1.5).attr('rx', 6);
+
+        var labelLines = inp.label.split('\n');
+        g.append('text')
+          .attr('x', x + boxW / 2).attr('y', topY + 18)
+          .attr('text-anchor', 'middle').attr('font-size', '10px')
+          .attr('fill', '#6b6b6b').text(labelLines[0]);
+        if (labelLines[1]) {
+          g.append('text')
+            .attr('x', x + boxW / 2).attr('y', topY + 30)
+            .attr('text-anchor', 'middle').attr('font-size', '9px')
+            .attr('fill', '#9ca3af').text(labelLines[1]);
+        }
+        g.append('text')
+          .attr('x', x + boxW / 2).attr('y', topY + 55)
+          .attr('text-anchor', 'middle').attr('font-size', '13px')
+          .attr('fill', inp.color).attr('font-weight', '700').text(inp.value);
+
+        // Arrow down
+        g.append('line')
+          .attr('x1', x + boxW / 2).attr('x2', x + boxW / 2)
+          .attr('y1', topY + boxH + 5).attr('y2', resultY - 15)
+          .attr('stroke', '#9ca3af').attr('stroke-width', 1);
+        g.append('polygon')
+          .attr('points',
+            (x + boxW / 2 - 4) + ',' + (resultY - 20) + ' ' +
+            (x + boxW / 2 + 4) + ',' + (resultY - 20) + ' ' +
+            (x + boxW / 2) + ',' + (resultY - 12))
+          .attr('fill', '#9ca3af');
+
+        // Operator between boxes
+        if (i < inputs.length - 1) {
+          var opX = x + boxW + gap / 2;
+          var op = i === 0 ? '×' : (i === 1 ? '÷' : '÷');
+          g.append('text')
+            .attr('x', opX).attr('y', topY + boxH / 2)
+            .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+            .attr('font-size', '22px').attr('fill', '#6b6b6b')
+            .text(op);
+        }
+      });
+
+      // Result box
+      g.append('rect')
+        .attr('x', resultX).attr('y', resultY)
+        .attr('width', resultW).attr('height', resultH)
+        .attr('fill', '#fef3c7').attr('stroke', '#b45309').attr('stroke-width', 2).attr('rx', 6);
+
+      g.append('text')
+        .attr('x', W / 2).attr('y', resultY + 22)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', '#92400e').text(l.resultLabel);
+      g.append('text')
+        .attr('x', W / 2).attr('y', resultY + 48)
+        .attr('text-anchor', 'middle').attr('font-size', '20px')
+        .attr('fill', '#b45309').attr('font-weight', '700')
+        .text(l.priceBtc + ' ' + l.priceBtcFull);
+      g.append('text')
+        .attr('x', W / 2).attr('y', resultY + 68)
+        .attr('text-anchor', 'middle').attr('font-size', '13px')
+        .attr('fill', '#92400e').attr('font-weight', '600')
+        .text('(' + l.priceUsd + ')');
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .nls-exchange-rate {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

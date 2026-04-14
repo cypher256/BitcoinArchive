@@ -1,0 +1,160 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const committers = [
+  { name: 'Chris Moore', username: 'dooglus', start: '2011-01-21', end: '2011-03-31', color: '#dc2626' },
+  { name: 'Pieter Wuille', username: 'sipa', start: '2011-05-01', end: null, color: '#059669' },
+  { name: 'Jeff Garzik', username: 'jgarzik', start: '2011-05-06', end: null, color: '#2563eb' },
+  { name: 'Wladimir van der Laan', username: 'laanwj', start: '2011-06-05', end: null, color: '#7c3aed' },
+  { name: 'Nils Schneider', username: 'tcatm', start: '2011-09-19', end: '2012-05-31', color: '#d97706' },
+];
+
+const labels = {
+  en: {
+    title: 'GitHub Commit Access Timeline (2011–2012)',
+    subtitle: 'As Satoshi departed, Gavin Andresen distributed commit access to trusted contributors — a gradual decentralization of the development process.',
+    granted: 'Access granted',
+    ended: 'Access ended',
+    active: 'Still active',
+    finalSvn: 'Final SVN commit (r252)',
+  },
+  ja: {
+    title: 'GitHub コミットアクセスのタイムライン（2011〜2012）',
+    subtitle: 'サトシの離脱に伴い、ギャビン・アンドレセンは信頼できる貢献者にコミットアクセスを配布した — 開発プロセス自体の段階的な分散化。',
+    granted: 'アクセス付与',
+    ended: 'アクセス終了',
+    active: '継続中',
+    finalSvn: 'SVN 最終コミット (r252)',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="github-migration">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="github-timeline" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="github-timeline-data" set:html={JSON.stringify({ committers, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('github-timeline-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var committers = data.committers;
+    var l = data.labels;
+
+    var container = document.getElementById('github-timeline');
+    if (!container) return;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 700;
+      var margin = { top: 20, right: 80, bottom: 40, left: 180 };
+      var H = 220;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var parseDate = d3.timeParse('%Y-%m-%d');
+      var today = new Date();
+      var x = d3.scaleTime()
+        .domain([parseDate('2010-12-01'), parseDate('2012-07-01')])
+        .range([0, w]);
+      var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.3);
+
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
+        .selectAll('text').attr('font-size', '10px');
+
+      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '11px');
+
+      // Final SVN commit reference line
+      g.append('line')
+        .attr('x1', x(parseDate('2011-09-13'))).attr('x2', x(parseDate('2011-09-13')))
+        .attr('y1', 0).attr('y2', h)
+        .attr('stroke', '#b45309').attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.6);
+      g.append('text')
+        .attr('x', x(parseDate('2011-09-13'))).attr('y', -5)
+        .attr('text-anchor', 'middle').attr('font-size', '9px')
+        .attr('fill', '#b45309').text(l.finalSvn);
+
+      committers.forEach(function(c) {
+        var x1 = x(parseDate(c.start));
+        var x2 = c.end ? x(parseDate(c.end)) : w;
+        var isActive = !c.end;
+
+        g.append('rect')
+          .attr('x', x1).attr('y', y(c.name))
+          .attr('width', x2 - x1).attr('height', y.bandwidth())
+          .attr('fill', c.color).attr('rx', 3).attr('opacity', isActive ? 0.85 : 0.6);
+
+        if (isActive) {
+          g.append('text')
+            .attr('x', x2 - 5).attr('y', y(c.name) + y.bandwidth() / 2)
+            .attr('text-anchor', 'end').attr('dominant-baseline', 'central')
+            .attr('font-size', '10px').attr('fill', '#fff').attr('font-weight', '600')
+            .text('→ ' + l.active);
+        }
+
+        g.append('circle')
+          .attr('cx', x1).attr('cy', y(c.name) + y.bandwidth() / 2)
+          .attr('r', 4).attr('fill', c.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
+        if (!isActive) {
+          g.append('circle')
+            .attr('cx', x2).attr('cy', y(c.name) + y.bandwidth() / 2)
+            .attr('r', 4).attr('fill', c.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
+        }
+      });
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .github-migration {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

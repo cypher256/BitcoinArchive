@@ -1,0 +1,239 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const svnData = await import('../data/patoshi/svn-committers.json').then(m => m.default);
+
+const labels = {
+  en: {
+    barTitle: 'SVN Commit Distribution by Developer',
+    barSub: '252 total revisions across 4 committers. Satoshi authored 65% of all commits.',
+    timeTitle: 'Commit Access Timeline',
+    timeSub: 'Active period for each developer on the SourceForge SVN repository (2009–2011).',
+    commits: 'commits',
+    revisions: 'revisions',
+    of: 'of',
+    tooltipFirst: 'First commit',
+    tooltipLast: 'Last commit',
+  },
+  ja: {
+    barTitle: 'SVN コミット数の分布（開発者別）',
+    barSub: '4人のコミッターによる全252リビジョン。全コミットの65%をサトシが占める。',
+    timeTitle: 'コミットアクセスのタイムライン',
+    timeSub: 'SourceForge SVNリポジトリにおける各開発者の活動期間（2009〜2011年）。',
+    commits: 'コミット',
+    revisions: 'リビジョン',
+    of: '/',
+    tooltipFirst: '最初のコミット',
+    tooltipLast: '最後のコミット',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="svn-committers">
+  <section class="analysis-section">
+    <h3>{l.barTitle}</h3>
+    <p class="analysis-desc">{l.barSub}</p>
+    <div id="svn-bar-chart" class="chart-container"></div>
+  </section>
+
+  <section class="analysis-section">
+    <h3>{l.timeTitle}</h3>
+    <p class="analysis-desc">{l.timeSub}</p>
+    <div id="svn-timeline-chart" class="chart-container"></div>
+  </section>
+
+  <script type="application/json" id="svn-committers-data" set:html={JSON.stringify({ ...svnData, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('svn-committers-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var committers = data.committers;
+    var l = data.labels;
+    var total = data.totalRevisions;
+
+    var colors = ['#b45309', '#2563eb', '#059669', '#7c3aed'];
+
+    // --- Bar Chart ---
+    (function() {
+      var container = document.getElementById('svn-bar-chart');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 20, right: 80, bottom: 30, left: 160 };
+        var H = 180;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.35);
+        var x = d3.scaleLinear().domain([0, d3.max(committers, function(c) { return c.commits; })]).nice().range([0, w]);
+
+        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+          .selectAll('text').attr('font-size', '12px').attr('font-weight', function(d) {
+            return d === 'Satoshi Nakamoto' ? '700' : '400';
+          });
+
+        g.selectAll('.bar')
+          .data(committers)
+          .enter().append('rect')
+          .attr('y', function(d) { return y(d.name); })
+          .attr('x', 0)
+          .attr('height', y.bandwidth())
+          .attr('width', function(d) { return x(d.commits); })
+          .attr('fill', function(d, i) { return colors[i]; })
+          .attr('rx', 2);
+
+        g.selectAll('.label')
+          .data(committers)
+          .enter().append('text')
+          .attr('y', function(d) { return y(d.name) + y.bandwidth() / 2; })
+          .attr('x', function(d) { return x(d.commits) + 6; })
+          .attr('dominant-baseline', 'central')
+          .attr('font-size', '12px')
+          .attr('font-weight', '600')
+          .attr('fill', function(d, i) { return colors[i]; })
+          .text(function(d) { return d.commits + ' (' + Math.round(d.commits / total * 100) + '%)'; });
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+
+    // --- Timeline ---
+    (function() {
+      var container = document.getElementById('svn-timeline-chart');
+      if (!container) return;
+
+      function draw() {
+        container.innerHTML = '';
+        var rect = container.getBoundingClientRect();
+        var W = rect.width || 600;
+        var margin = { top: 20, right: 20, bottom: 40, left: 120 };
+        var H = 170;
+        var w = W - margin.left - margin.right;
+        var h = H - margin.top - margin.bottom;
+
+        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var parseDate = d3.timeParse('%Y-%m-%d');
+        var x = d3.scaleTime()
+          .domain([parseDate('2009-07-01'), parseDate('2011-11-01')])
+          .range([0, w]);
+        var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.4);
+
+        g.append('g').attr('transform', 'translate(0,' + h + ')')
+          .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
+          .selectAll('text').attr('font-size', '10px');
+
+        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+          .selectAll('text').attr('font-size', '11px');
+
+        committers.forEach(function(c, i) {
+          var x1 = x(parseDate(c.firstCommit));
+          var x2 = x(parseDate(c.lastCommit));
+          var barW = Math.max(x2 - x1, 3);
+
+          g.append('rect')
+            .attr('x', x1).attr('y', y(c.name))
+            .attr('width', barW).attr('height', y.bandwidth())
+            .attr('fill', colors[i]).attr('rx', 2).attr('opacity', 0.8);
+
+          // Start/end markers
+          g.append('circle').attr('cx', x1).attr('cy', y(c.name) + y.bandwidth() / 2)
+            .attr('r', 3.5).attr('fill', colors[i]).attr('stroke', '#fff').attr('stroke-width', 1);
+          if (barW > 6) {
+            g.append('circle').attr('cx', x2).attr('cy', y(c.name) + y.bandwidth() / 2)
+              .attr('r', 3.5).attr('fill', colors[i]).attr('stroke', '#fff').attr('stroke-width', 1);
+          }
+        });
+
+        // Tooltip
+        container.style.position = 'relative';
+        var tooltip = d3.select(container).append('div')
+          .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
+          .style('background', 'rgba(0,0,0,0.85)').style('color', '#fff')
+          .style('padding', '6px 10px').style('border-radius', '4px')
+          .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
+
+        svg.on('mousemove', function(event) {
+          var coords = d3.pointer(event, g.node());
+          var yPos = coords[1];
+          var found = null;
+          committers.forEach(function(c) {
+            var top = y(c.name);
+            var bot = top + y.bandwidth();
+            if (yPos >= top && yPos <= bot) found = c;
+          });
+          if (!found) { tooltip.style('opacity', 0); return; }
+          tooltip.html(
+            '<b>' + found.name + '</b> (' + found.username + ')<br>' +
+            found.commits + ' ' + l.commits + '<br>' +
+            l.tooltipFirst + ': r' + found.firstRev + ' (' + found.firstCommit + ')<br>' +
+            l.tooltipLast + ': r' + found.lastRev + ' (' + found.lastCommit + ')'
+          ).style('opacity', 1);
+
+          var cr = container.getBoundingClientRect();
+          var tx = event.clientX - cr.left + 14;
+          var ty = event.clientY - cr.top - 10;
+          if (tx + 260 > cr.width) tx = tx - 280;
+          tooltip.style('left', tx + 'px').style('top', ty + 'px');
+        }).on('mouseleave', function() {
+          tooltip.style('opacity', 0);
+        });
+      }
+      draw();
+      var timer;
+      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    })();
+  }
+  init();
+})();
+</script>
+
+<style>
+  .svn-committers {
+    margin: 2rem 0;
+  }
+  .analysis-section {
+    margin-bottom: 2rem;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+</style>

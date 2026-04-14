@@ -1,0 +1,234 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const nonceLsbData = await import('../data/patoshi/nonce-lsb.json').then(m => m.default);
+
+const labels = {
+  en: {
+    title: 'Nonce LSB Distribution (Patoshi Blocks)',
+    subtitle: 'Frequency of each least significant byte value (0–255) in Patoshi-attributed blocks. The restriction to ~50 values ([0..9] ∪ [19..58]) proves custom mining software with parallel thread nonce partitioning.',
+    yLabel: 'Occurrences',
+    xLabel: 'Nonce LSB value',
+    range0_9: 'Range 0–9: elevated (247–324)',
+    range10_18: 'Range 10–18: near-zero gap',
+    range19_58: 'Range 19–58: elevated (up to 201)',
+    range59_255: 'Range 59–255: sparse',
+    tooltipValue: 'LSB value',
+    tooltipCount: 'Occurrences',
+    expectedLabel: 'Expected if uniform',
+  },
+  ja: {
+    title: 'Nonce LSB 分布（Patoshi ブロック）',
+    subtitle: 'Patoshi帰属ブロックにおける各最下位バイト値（0〜255）の出現頻度。約50値（[0..9] ∪ [19..58]）への集中は、並列スレッドによるnonce空間分割を持つカスタムマイニングソフトウェアの使用を証明する。',
+    yLabel: '出現回数',
+    xLabel: 'Nonce LSB 値',
+    range0_9: '範囲 0–9: 高頻度（247–324）',
+    range10_18: '範囲 10–18: ほぼゼロ（ギャップ）',
+    range19_58: '範囲 19–58: 高頻度（最大201）',
+    range59_255: '範囲 59–255: まばら',
+    tooltipValue: 'LSB 値',
+    tooltipCount: '出現回数',
+    expectedLabel: '均一分布の場合の期待値',
+  },
+};
+
+const l = labels[lang];
+---
+
+<div class="patoshi-nonce-lsb">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+    <div id="nonce-lsb-chart" class="chart-container"></div>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-swatch" style="background:#2563eb"></span>{l.range0_9}</span>
+      <span class="legend-item"><span class="legend-swatch" style="background:#dc2626"></span>{l.range10_18}</span>
+      <span class="legend-item"><span class="legend-swatch" style="background:#2563eb"></span>{l.range19_58}</span>
+      <span class="legend-item"><span class="legend-swatch" style="background:#9ca3af"></span>{l.range59_255}</span>
+    </div>
+  </section>
+
+  <script type="application/json" id="nonce-lsb-data" set:html={JSON.stringify({ distribution: nonceLsbData.distribution, labels: l })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var dataEl = document.getElementById('nonce-lsb-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var dist = data.distribution;
+    var l = data.labels;
+
+    var container = document.getElementById('nonce-lsb-chart');
+    if (!container) return;
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 700;
+      var margin = { top: 20, right: 20, bottom: 50, left: 55 };
+      var H = Math.min(360, W * 0.5);
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg')
+        .attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var x = d3.scaleBand().domain(d3.range(256).map(String)).range([0, w]).padding(0.1);
+      var y = d3.scaleLinear().domain([0, d3.max(dist)]).nice().range([h, 0]);
+
+      // X axis — use sparse ticks to avoid overlap
+      var xTicks = [0, 10, 19, 58, 128, 255];
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).tickValues(xTicks.map(String)).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '10px');
+      g.append('text').attr('x', w / 2).attr('y', h + 40)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', '#6b6b6b').text(l.xLabel);
+
+      // Range annotations below axis
+      var rangeAnnotations = [
+        { start: 0, end: 9, label: '0–9', color: '#2563eb' },
+        { start: 10, end: 18, label: '10–18', color: '#dc2626' },
+        { start: 19, end: 58, label: '19–58', color: '#2563eb' },
+      ];
+      rangeAnnotations.forEach(function(r) {
+        var rx1 = x(String(r.start));
+        var rx2 = x(String(r.end));
+        if (!rx1 && rx1 !== 0) return;
+        var mid = ((rx1 || 0) + (rx2 || 0)) / 2 + x.bandwidth() / 2;
+        g.append('line')
+          .attr('x1', rx1).attr('x2', (rx2 || 0) + x.bandwidth())
+          .attr('y1', h + 18).attr('y2', h + 18)
+          .attr('stroke', r.color).attr('stroke-width', 2).attr('opacity', 0.5);
+      });
+
+      // Y axis
+      g.append('g').call(d3.axisLeft(y).ticks(5))
+        .selectAll('text').attr('font-size', '10px');
+      g.append('text').attr('transform', 'rotate(-90)')
+        .attr('x', -h / 2).attr('y', -42)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', '#6b6b6b').text(l.yLabel);
+
+      // Expected uniform line
+      var total = d3.sum(dist);
+      var expected = total / 256;
+      g.append('line')
+        .attr('x1', 0).attr('x2', w)
+        .attr('y1', y(expected)).attr('y2', y(expected))
+        .attr('stroke', '#f59e0b').attr('stroke-width', 1.5)
+        .attr('stroke-dasharray', '6,4').attr('stroke-opacity', 0.7);
+      g.append('text').attr('x', w - 4).attr('y', y(expected) - 5)
+        .attr('text-anchor', 'end').attr('font-size', '10px')
+        .attr('fill', '#f59e0b').text(l.expectedLabel);
+
+      // Color function
+      function barColor(i) {
+        if (i <= 9) return '#2563eb';
+        if (i <= 18) return '#dc2626';
+        if (i <= 58) return '#2563eb';
+        return '#9ca3af';
+      }
+
+      // Bars
+      g.selectAll('.bar')
+        .data(dist)
+        .enter().append('rect')
+        .attr('x', function(d, i) { return x(String(i)); })
+        .attr('y', function(d) { return y(d); })
+        .attr('width', x.bandwidth())
+        .attr('height', function(d) { return h - y(d); })
+        .attr('fill', function(d, i) { return barColor(i); })
+        .attr('opacity', 0.85);
+
+      // Tooltip
+      container.style.position = 'relative';
+      var tooltip = d3.select(container).append('div')
+        .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
+        .style('background', 'rgba(0,0,0,0.85)').style('color', '#fff')
+        .style('padding', '6px 10px').style('border-radius', '4px')
+        .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
+
+      svg.on('mousemove', function(event) {
+        var coords = d3.pointer(event, g.node());
+        var xPos = coords[0];
+        if (xPos < 0 || xPos > w) { tooltip.style('opacity', 0); return; }
+        var step = w / 256;
+        var idx = Math.min(255, Math.max(0, Math.floor(xPos / step)));
+        var val = dist[idx] || 0;
+
+        tooltip.html('<b>' + l.tooltipValue + ': ' + idx + '</b><br>' + l.tooltipCount + ': ' + val)
+          .style('opacity', 1);
+
+        var cr = container.getBoundingClientRect();
+        var tx = event.clientX - cr.left + 14;
+        var ty = event.clientY - cr.top - 10;
+        if (tx + 160 > cr.width) tx = tx - 180;
+        tooltip.style('left', tx + 'px').style('top', ty + 'px');
+      }).on('mouseleave', function() {
+        tooltip.style('opacity', 0);
+      });
+    }
+
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .patoshi-nonce-lsb {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .legend-swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+</style>
