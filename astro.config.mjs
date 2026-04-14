@@ -6,6 +6,7 @@ import rehypeKatex from 'rehype-katex';
 import { getDeploymentConfig } from './site-config.mjs';
 import { remarkRewriteBase } from './src/lib/remark-rewrite-base.mjs';
 import { remarkQuoteBlocks } from './src/lib/remark-quote-blocks.mjs';
+import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 
 const { site, base } = getDeploymentConfig();
 
@@ -22,7 +23,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, [remarkMath, { singleDollarTextMath: false }]],
-    rehypePlugins: [rehypeKatex],
+    rehypePlugins: [rehypeNoAutolinkEmail, rehypeKatex],
   },
   integrations: [sitemap({
     filter: (page) => !page.includes('/search/'),
