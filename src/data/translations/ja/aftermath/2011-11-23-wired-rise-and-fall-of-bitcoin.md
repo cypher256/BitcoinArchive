@@ -41,6 +41,9 @@ tags:
 secondarySources:
   - name: "Wired Japan — ベンジャミン・ウォレス「サトシ・ナカモト」特集"
     url: "https://wired.jp/article/benjamin-wallace-interview-satoshi-nakamoto/"
+relatedEntries:
+  - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
+  - aftermath/2011-04-20-forbes-crypto-currency
 translationStatus: complete
 ---
 

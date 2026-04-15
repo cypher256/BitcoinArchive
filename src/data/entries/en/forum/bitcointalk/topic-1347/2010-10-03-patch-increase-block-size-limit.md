@@ -13,6 +13,8 @@ participants:
 description: "Jeff Garzik starts a discussion: [PATCH] increase block size limit."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
 ---
 
 We should be able to at least match Paypal's average transaction rate...

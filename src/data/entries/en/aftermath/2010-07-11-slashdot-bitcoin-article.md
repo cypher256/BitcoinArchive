@@ -25,6 +25,7 @@ relatedEntries:
   - sourceforge/2010-07-06-bitcoin-v03-released
   - emails/bitcoin-list/2010-07-06-bitcoin-0-3-released
   - aftermath/2010-07-15-jeff-garzik-biography
+  - forum/bitcointalk/topic-1347/2010-10-04-jgarzik-msg15215
 ---
 
 On July 11, 2010, Slashdot published an article titled "Bitcoin Releases Version 0.3," marking Bitcoin's first significant coverage on a major technology news platform.

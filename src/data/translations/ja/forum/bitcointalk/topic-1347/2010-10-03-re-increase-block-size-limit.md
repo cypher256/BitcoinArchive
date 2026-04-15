@@ -23,6 +23,8 @@ quotes:
     person: "theymos"
     personSlug: "theymos"
     date: "2010-10-03T11:28:39.000Z"
+relatedEntries:
+  - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
 ---
 
 <!-- quote: q1 -->

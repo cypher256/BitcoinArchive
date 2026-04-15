@@ -15,6 +15,10 @@ tags:
   - "p2p-foundation"
   - "identity"
   - "account-activity"
+relatedEntries:
+  - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
+  - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
+  - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
 translationStatus: complete
 ---
 

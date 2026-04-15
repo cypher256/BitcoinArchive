@@ -19,6 +19,9 @@ tags:
   - "disappearance"
   - "media"
 secondarySources: []
+relatedEntries:
+  - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 translationStatus: complete
 ---
 

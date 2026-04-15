@@ -30,6 +30,8 @@ relatedEntries:
   - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
   - aftermath/2010-05-22-laszlo-hanyecz-biography
   - forum/bitcointalk/topic-137/2010-05-21-laszlo-msg1181
+  - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
+  - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
 translationStatus: complete
 featured: true
 ---

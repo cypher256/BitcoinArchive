@@ -15,6 +15,10 @@ tags:
   - "p2p-foundation"
   - "identity"
   - "account-activity"
+relatedEntries:
+  - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
+  - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
+  - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
 ---
 
 In December 2016, members of the Bitcoin community noticed that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s profile on the P2P Foundation social network showed recent login activity. The P2P Foundation was the platform where Satoshi had originally posted a link to the Bitcoin white paper on February 11, 2009, and where the "I am not Dorian Nakamoto" message had appeared on March 7, 2014.

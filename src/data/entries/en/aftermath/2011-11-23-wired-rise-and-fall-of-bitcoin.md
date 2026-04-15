@@ -41,6 +41,9 @@ tags:
 secondarySources:
   - name: "Wired Japan — ベンジャミン・ウォレス「サトシ・ナカモト」特集"
     url: "https://wired.jp/article/benjamin-wallace-interview-satoshi-nakamoto/"
+relatedEntries:
+  - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
+  - aftermath/2011-04-20-forbes-crypto-currency
 ---
 
 In November 2011, journalist Benjamin Wallace published "The Rise and Fall of Bitcoin" in Wired magazine (issue 19.12) — one of the earliest major feature articles on Bitcoin in mainstream media. The article traced Bitcoin's entire arc to date: from Satoshi Nakamoto's [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/), through the mining boom and price explosion, to the hacks, scams, and disillusionment that followed.

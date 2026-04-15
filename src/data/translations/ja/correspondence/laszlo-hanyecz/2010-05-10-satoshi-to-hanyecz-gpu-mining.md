@@ -25,6 +25,7 @@ secondarySources:
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 relatedEntries:
   - aftermath/2010-05-22-laszlo-hanyecz-biography
+  - aftermath/2010-05-22-bitcoin-pizza-day
 translationStatus: complete
 ---
 

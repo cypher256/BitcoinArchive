@@ -20,6 +20,8 @@ secondarySources:
     url: "https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html"
 relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
+  - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
+  - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
 translationStatus: complete
 ---
 

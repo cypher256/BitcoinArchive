@@ -23,6 +23,9 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2013/04/23/security-guru-confesses-i-couldnt-hack-bitcoin"
   - name: "Black Hat USA 2011 Slides"
     url: "https://www.slideshare.net/dakami/black-ops-of-tcpip-2011-black-hat-usa-2011"
+relatedEntries:
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
+  - aftermath/2011-04-20-forbes-crypto-currency
 translationStatus: complete
 ---
 

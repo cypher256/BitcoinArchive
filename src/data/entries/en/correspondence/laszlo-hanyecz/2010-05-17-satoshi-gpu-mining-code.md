@@ -23,6 +23,9 @@ secondarySources:
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
   - name: "InsideBitcoins - Laszlo Hanyecz Claims Satoshi Invented GPU Mining"
     url: "https://insidebitcoins.com/news/laszlo-hanyecs-claims-satoshi-invented-gpu-mining-to-prevent-51-attacks"
+relatedEntries:
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
+  - aftermath/2010-05-22-bitcoin-pizza-day
 ---
 
 In a remarkable exchange that occurred after Laszlo Hanyecz shared his GPU miner code with Satoshi, Satoshi reciprocated by sharing his own independently developed GPU mining code. This revelation showed that Satoshi had been working on GPU mining before Hanyecz's public announcement -- not to mine coins, but as a contingency plan to defend the network against potential 51% attacks.

@@ -23,6 +23,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Mt._Gox"
   - name: "CNBC — Mt. Gox begins repaying bitcoin to creditors a decade later"
     url: "https://www.cnbc.com/2024/07/05/mt-gox-begins-repaying-bitcoin-to-creditors-a-decade-on-from-collapse.html"
+relatedEntries:
+  - aftermath/2010-08-15-value-overflow-incident
 translationStatus: complete
 ---
 
