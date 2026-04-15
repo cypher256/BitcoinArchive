@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - bip/2015-11-03-bip-0125
 translationStatus: complete
 ---
 

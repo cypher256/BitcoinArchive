@@ -33,6 +33,7 @@ secondarySources:
 relatedEntries:
   - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
 translationStatus: complete
 ---
 

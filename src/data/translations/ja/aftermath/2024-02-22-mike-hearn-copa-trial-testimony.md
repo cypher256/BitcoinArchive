@@ -28,6 +28,9 @@ secondarySources:
     url: "https://www.judiciary.uk/judgments/copa-v-wright/"
   - name: "CoinDesk — Mike Hearn Steps Down from R3 (February 2021)"
     url: "https://www.coindesk.com/business/2021/02/12/former-bitcoin-developer-mike-hearn-steps-down-from-enterprise-blockchain-firm-r3"
+relatedEntries:
+  - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2024-03-14-copa-v-wright-ruling
 translationStatus: complete
 ---
 

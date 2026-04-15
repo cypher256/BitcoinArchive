@@ -41,6 +41,7 @@ relatedEntries:
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2011-04-26-satoshi-final-known-email
   - analysis/2009-01-09-satoshi-code-analysis
+  - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
 ---
 
 Satoshi Nakamoto is the pseudonym used by the individual or group who created Bitcoin. Their true identity has never been confirmed.

@@ -23,6 +23,8 @@ secondarySources:
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
+relatedEntries:
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
 ---
 
 After Laszlo Hanyecz announced his GPU mining discovery on the Bitcointalk forum on May 10, 2010, Satoshi Nakamoto emailed him privately expressing concern. Hanyecz had been the first person to successfully use a GPU (graphics processing unit) to mine Bitcoin, achieving dramatically higher hash rates than CPU mining allowed.

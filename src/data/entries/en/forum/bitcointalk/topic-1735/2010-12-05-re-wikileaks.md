@@ -22,6 +22,8 @@ quotes:
     person: "RHorning"
     personSlug: "rhorning"
     date: "2010-12-04T13:17:44.000Z"
+relatedEntries:
+  - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 ---
 
 <!-- quote: q1 -->

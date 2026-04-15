@@ -26,6 +26,8 @@ relatedEntries:
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2024-02-21-copa-trial-malmi-testimony"
+  - "aftermath/2024-02-22-mike-hearn-copa-trial-testimony"
 ---
 
 On March 14, 2024, Justice Mellor of the UK High Court delivered a landmark ruling in the case of COPA (Crypto Open Patent Alliance) v. Craig Steven Wright. The court found:

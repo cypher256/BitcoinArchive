@@ -23,6 +23,8 @@ secondarySources:
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
+relatedEntries:
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
 translationStatus: complete
 ---
 

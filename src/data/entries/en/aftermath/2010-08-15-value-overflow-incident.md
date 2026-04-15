@@ -30,6 +30,7 @@ secondarySources:
     url: "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"
 relatedEntries:
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-06-11-gavin-andresen-biography
 ---
 
 On August 15, 2010, at approximately 18:08 UTC, Bitcoin developer [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed an anomaly in Block 74638 and posted on the BitcoinTalk forum:

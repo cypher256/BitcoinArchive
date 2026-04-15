@@ -23,6 +23,8 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2014/09/16/assange-bitcoin-and-wikileaks-helped-keep-each-other-alive"
   - name: "Bitbo Calendar — WikiLeaks Bypasses Sanctions Using Bitcoin"
     url: "https://bitbo.io/calendar/wikileaks-bypasses-sanctions/"
+relatedEntries:
+  - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
 translationStatus: complete
 ---
 

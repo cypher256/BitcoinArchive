@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
+  - aftermath/2024-02-21-copa-trial-malmi-testimony
 ---
 
 Martti Malmi (born 1988, Helsinki, Finland) is a software developer who became one of the earliest and most significant contributors to Bitcoin. He studied computer science at Helsinki University of Technology (now Aalto University).

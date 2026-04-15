@@ -30,6 +30,7 @@ secondarySources:
     url: "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"
 relatedEntries:
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-06-11-gavin-andresen-biography
 translationStatus: complete
 ---
 

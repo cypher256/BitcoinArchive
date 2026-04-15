@@ -39,6 +39,8 @@ relatedEntries:
   - correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit
+  - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
+  - aftermath/2010-08-15-value-overflow-incident
 ---
 
 Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software developer who became the lead maintainer of Bitcoin after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s departure. He grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and later founded Wasabi Software, a 3D graphics software company.

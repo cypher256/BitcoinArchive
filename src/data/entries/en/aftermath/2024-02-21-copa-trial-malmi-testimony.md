@@ -30,6 +30,10 @@ secondarySources:
     url: "https://protos.com/copa-v-craig-wright-trial-analyzes-newly-published-satoshi-emails/"
   - name: "CryptoTimes — Bitcoin Icons Malmi and Back Take the Stand"
     url: "https://www.cryptotimes.io/2024/02/23/bitcoin-icons-malmi-and-back-take-the-stand-in-wright-trial/"
+relatedEntries:
+  - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2024-03-14-copa-v-wright-ruling
+  - aftermath/2009-05-01-martti-malmi-biography
 ---
 
 On February 21, 2024, during Day 13 of the COPA v. Craig Wright trial at the UK High Court of Justice, [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) testified via video link.
