@@ -22,10 +22,27 @@ import path from 'path';
 // Default: Archive's JA translations. Other repos (e.g. NovelBitCoin) can
 // invoke this script with their own JA directory as argument.
 //
+// Optional ignore file: a plain-text file listing terms that must not be
+// treated as deprecated within this target (one per line). Useful when the
+// target contains intentional domain-specific wording that overlaps with
+// a glossary rule (e.g. "量子コンピュータ" is a protected 改禁 term in
+// the novel, despite "コンピュータ" being a general deprecated form).
+//
+// Ignore file format (one rule per line):
+//   # Comment
+//   量子コンピュータ           # Skip violations where the matched span
+//                              # starts with this string
+//   採掘者                     # Skip this exact term
+//
 // Usage:
-//   node check-ja-glossary.mjs                    # scan src/data/translations/ja (default)
-//   node check-ja-glossary.mjs ../NovelBitCoin/src # scan arbitrary directory
-const JA_DIR = process.argv[2] || 'src/data/translations/ja';
+//   node check-ja-glossary.mjs
+//   node check-ja-glossary.mjs ../NovelBitCoin/src
+//   node check-ja-glossary.mjs ../NovelBitCoin/src --ignore-file .ja-glossary-ignore
+const args = process.argv.slice(2);
+const JA_DIR = args.find((a) => !a.startsWith('--')) || 'src/data/translations/ja';
+let IGNORE_FILE = null;
+const ignoreIdx = args.indexOf('--ignore-file');
+if (ignoreIdx !== -1 && args[ignoreIdx + 1]) IGNORE_FILE = args[ignoreIdx + 1];
 
 // Rule types:
 //   'literal' — plain substring match
@@ -75,6 +92,16 @@ function walk(dir) {
   return results;
 }
 
+// Load ignore patterns (one per line, # for comments)
+const ignorePatterns = [];
+if (IGNORE_FILE && existsSync(IGNORE_FILE)) {
+  const raw = readFileSync(IGNORE_FILE, 'utf8');
+  for (const line of raw.split('\n')) {
+    const trimmed = line.replace(/#.*$/, '').trim();
+    if (trimmed) ignorePatterns.push(trimmed);
+  }
+}
+
 function findViolations(content, rule) {
   const hits = [];
   const lines = content.split('\n');
@@ -86,8 +113,25 @@ function findViolations(content, rule) {
     pattern = new RegExp(rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
   }
   lines.forEach((line, i) => {
-    if (pattern.test(line)) hits.push(i + 1);
     pattern.lastIndex = 0;
+    let m;
+    while ((m = pattern.exec(line)) !== null) {
+      const matchStart = m.index;
+      const matchEnd = matchStart + rule.deprecated.length;
+      // Skip if any ignore pattern occurs in the line and overlaps with
+      // the current match position. An occurrence of `ig` covers
+      // [igIdx, igIdx + ig.length). It overlaps the match iff the match
+      // interval [matchStart, matchEnd) lies inside that span.
+      const skip = ignorePatterns.some((ig) => {
+        let igIdx = line.indexOf(ig);
+        while (igIdx !== -1) {
+          if (igIdx <= matchStart && matchEnd <= igIdx + ig.length) return true;
+          igIdx = line.indexOf(ig, igIdx + 1);
+        }
+        return false;
+      });
+      if (!skip) hits.push(i + 1);
+    }
   });
   return hits;
 }
