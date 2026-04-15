@@ -21,6 +21,9 @@ secondarySources:
     url: "https://github.com/trottier/original-bitcoin"
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
+relatedEntries:
+  - "analysis/2009-01-09-satoshi-code-analysis"
+  - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
 ---
 
 On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original Bitcoin source code [released on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).

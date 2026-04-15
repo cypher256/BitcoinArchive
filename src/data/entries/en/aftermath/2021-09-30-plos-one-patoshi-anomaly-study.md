@@ -39,6 +39,7 @@ relatedEntries:
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
 On September 30, 2021, Maria Oskarsdottir and Jacky Mallett of Reykjavik University's Department of Computer Science published "Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network" in PLOS ONE (DOI: 10.1371/journal.pone.0258001). This was the first peer-reviewed academic paper to formally analyze the [Patoshi mining pattern](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) originally identified by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) on his blog in 2013.

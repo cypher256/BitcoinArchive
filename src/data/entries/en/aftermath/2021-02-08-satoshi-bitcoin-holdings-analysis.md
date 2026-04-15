@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
 Multiple independent analyses have attempted to quantify the number of bitcoins mined by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) during Bitcoin's earliest months. The most cited research, originally conducted by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) in 2013 and refined in subsequent years, identified a distinctive mining pattern that has become known as the "Patoshi pattern."

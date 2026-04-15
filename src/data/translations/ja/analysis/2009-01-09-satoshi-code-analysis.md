@@ -26,6 +26,8 @@ secondarySources:
 relatedEntries:
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2008-08-22-wei-dai-biography"
+  - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
+  - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
 translationStatus: complete
 ---
 

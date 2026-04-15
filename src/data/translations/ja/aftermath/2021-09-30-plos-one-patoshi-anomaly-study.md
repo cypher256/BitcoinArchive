@@ -39,6 +39,7 @@ relatedEntries:
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 translationStatus: complete
 ---
 
