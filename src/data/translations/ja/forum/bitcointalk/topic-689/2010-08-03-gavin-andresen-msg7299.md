@@ -22,7 +22,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> bitcoinはContent-Lengthヘッダを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダがない場合、bitcoinは500 Internal Server Errorを返す。
+> bitcoinはContent-Lengthヘッダーを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダーがない場合、bitcoinは500 Internal Server Errorを返す。
 <!-- /tone-skip -->
 
 どのJSONライブラリがContent-Lengthを提供しないか、もう少し具体的に教えてもらえないか？ドキュメントに記載できると助かる。

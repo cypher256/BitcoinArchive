@@ -26,7 +26,7 @@ translationStatus: complete
 > listtransactions を実装しなかった理由は、Webプログラマに使ってほしくないからだ。受信した支払いを監視するために、簡単にこれに飛びついてしまうだろう。だがその方法では、取りこぼしがないことを確実に保証する信頼できるやり方は存在しない。getreceivedbyaddress と getreceivedbylabel を使った確かなサンプルコードがあって「これを使え！ これを使え！ listtransactions は使うな！」と示せるようになるまでは、listtransactions を実装すべきではないと思う。
 
 どうやら君は明らかにCLIよりGUIを好んでいるようだ。
-だがGUIは本当にひどいインターフェイスだ。例えばSSHアクセスできる5つのノードがあって、こんなふうにループで状態を定期的に収集したい場合などに：
+だがGUIは本当にひどいインターフェースだ。例えばSSHアクセスできる5つのノードがあって、こんなふうにループで状態を定期的に収集したい場合などに：
 Code:#!/bin/bash
 while read host;
 do

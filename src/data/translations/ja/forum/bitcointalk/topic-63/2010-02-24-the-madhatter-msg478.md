@@ -14,4 +14,4 @@ tags: []
 translationStatus: complete
 ---
 
-* madhatter2が鋭いヘックスエディタを取り出す
+* madhatter2が鋭いヘックスエディターを取り出す

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがネットワーク上の動的IPについて議論し、会話をbitcoin-listおよび暗号技術メーリングリストにCCする許可を求め、ハル・フィニーの投資アイデアに言及し、送金メール付きのマイクロペイメントなどビットコインのユースケースを構想し、bitcoin-listメーリングリストの詳細を共有している。"
+description: "サトシがネットワーク上の動的IPについて議論し、会話をbitcoin-listおよび暗号学メーリングリストにCCする許可を求め、ハル・フィニーの投資アイデアに言及し、送金メール付きのマイクロペイメントなどビットコインのユースケースを構想し、bitcoin-listメーリングリストの詳細を共有している。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -29,7 +29,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-このメールで、サトシはネットワーク上の少なくとも1つのノードが同じクラスBの範囲内で頻繁にIPアドレスを変更していることに言及し、これは予想していなかったと述べた。トランメルに対して会話をbitcoin-listまたは暗号技術メーリングリストにCCする許可を求め、bitcoin-listの購読詳細を共有した。
+このメールで、サトシはネットワーク上の少なくとも1つのノードが同じクラスBの範囲内で頻繁にIPアドレスを変更していることに言及し、これは予想していなかったと述べた。トランメルに対して会話をbitcoin-listまたは暗号学メーリングリストにCCする許可を求め、bitcoin-listの購読詳細を共有した。
 
 続いてサトシは、ビットコインを投資対象とする[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の以前の提案に言及した。
 
@@ -45,6 +45,6 @@ translationStatus: complete
 <!-- speaker: narrator -->
 サトシはビットコインの送金メール機能を既存のユースケースとして説明し、有名人がファンからのメッセージを読むためにビットコインの支払いを受け取ることや、サブスクリプションサイトが悪用防止のために無料トライアルにビットコインを課金することを構想した。
 
-このメールは、1月16日から17日にかけてbitcoin-listおよび暗号技術メーリングリストに公開メッセージとしてCCされたものの下書きである。
+このメールは、1月16日から17日にかけてbitcoin-listおよび暗号学メーリングリストに公開メッセージとしてCCされたものの下書きである。
 
 *出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

@@ -20,4 +20,4 @@ translationStatus: complete
 
 「Warning: displayed transactions may not be correct! you may need to upgrade, or other nodes may need to upgrade」
 
-ビットコインクライアントがエラー状態にある。約13,000 BTCを保有していた。これらのコインを別のコンピュータに転送しようとしたが、上記のエラーが発生した。ブロックの転送ができず、生成されるブロックが無効（invalid）となっている。どうすればよいのか？
+ビットコインクライアントがエラー状態にある。約13,000 BTCを保有していた。これらのコインを別のコンピューターに転送しようとしたが、上記のエラーが発生した。ブロックの転送ができず、生成されるブロックが無効（invalid）となっている。どうすればよいのか？

@@ -1,5 +1,5 @@
 ---
-title: "Re: メモリリーク"
+title: "Re: メモリーリーク"
 date: 2010-10-03T22:07:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「メモリリーク」におけるサトシ・ナカモトの返信。"
+description: "スレッド「メモリーリーク」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -16,4 +16,4 @@ translationStatus: complete
 
 chroot：保護されない。
 
-別のVMとして実行：保護されると思う。ただし、ブラウザがウェブから取得したページからlocalhostへのXMLHTTPRequestsを許可しないと思っていたので、テストすることを勧める。Bitcoin以外のVMから同じマシン上のBitcoinデーモンと通信できるか、"bitcoind getinfo"や"bitcoin getinfo"を実行して確認してみてほしい。
+別のVMとして実行：保護されると思う。ただし、ブラウザーがウェブから取得したページからlocalhostへのXMLHTTPRequestsを許可しないと思っていたので、テストすることを勧める。Bitcoin以外のVMから同じマシン上のBitcoinデーモンと通信できるか、"bitcoind getinfo"や"bitcoin getinfo"を実行して確認してみてほしい。

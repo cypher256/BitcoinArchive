@@ -54,9 +54,9 @@ Q: あるいは「ImportError: DLL load failed: The specified procedure could no
 
 OpenCLが正しくサポートされていない。原因はさまざまである。以前使用していた別ベンダーの古いドライバーやSDKをすべて削除すること。自分のGPUとOSの組み合わせで動作させる方法については、ウェブ検索を利用してほしい。
 
-*Q: 次のパラメータで実行しようとすると「'--host=http://mining.bitcoin.cz:8332'」で「nonnumeric port」エラーが出る。*
+*Q: 次のパラメーターで実行しようとすると「'--host=http://mining.bitcoin.cz:8332'」で「nonnumeric port」エラーが出る。*
 
-「http://」を削除すること。これはブラウザ用のものである（'--host=mining.bitcoin.cz'となる）。ポートの指定には「--port」を使用する（デフォルトは8332なので、使用しているプールが同じポートであれば指定する必要はない）。
+「http://」を削除すること。これはブラウザー用のものである（'--host=mining.bitcoin.cz'となる）。ポートの指定には「--port」を使用する（デフォルトは8332なので、使用しているプールが同じポートであれば指定する必要はない）。
 
 *Q: なぜCPU使用率が100%になるのか？*
 

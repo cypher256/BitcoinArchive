@@ -27,7 +27,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> このアイデアについて誰か何かしているのか気になっている。このスレッドとここで説明されている素晴らしい開発に従って、インターネットブラウザ機能の実装の可能性を調査しているところだ。まずこれを試して、Firefoxアドオンが発展する中で他の機能と一緒に含めるのが、より簡単な最初の一歩かもしれない（学びながら進めている）。
+> このアイデアについて誰か何かしているのか気になっている。このスレッドとここで説明されている素晴らしい開発に従って、インターネットブラウザー機能の実装の可能性を調査しているところだ。まずこれを試して、Firefoxアドオンが発展する中で他の機能と一緒に含めるのが、より簡単な最初の一歩かもしれない（学びながら進めている）。
 <!-- /tone-skip -->
 
 [http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf](http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf)

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitweaverメニューエディタが壊れている"
+title: "Re: Bitweaverメニューエディターが壊れている"
 date: 2009-11-27T00:46:50Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがデータベースを直接編集してBitweaverメニューエディタの問題を修正したことを確認。"
+description: "マルミがデータベースを直接編集してBitweaverメニューエディターの問題を修正したことを確認。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -27,7 +27,7 @@ translationStatus: complete
 修正しました。データベースを直接変更しました。
 
 <!-- speaker: Satoshi Nakamoto -->
-> Bitweaverのメニューエディタが壊れていて、フォーラムのリンクを変更できない。
+> Bitweaverのメニューエディターが壊れていて、フォーラムのリンクを変更できない。
 > 「create and edit menu items」のページが私の環境では空白で表示される：
 >
 > http://bitcoin.sourceforge.net/nexus/menu_items.php?menu_id=2

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがトランメルとの会話をbitcoin-listおよび暗号技術メーリングリストにCCし、ビットコインの将来に関するビジョンを共有した。「万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない」という有名な一節を含む。これはトランメルへの以前のプライベートメールの公開版である。"
+description: "サトシがトランメルとの会話をbitcoin-listおよび暗号学メーリングリストにCCし、ビットコインの将来に関するビジョンを共有した。「万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない」という有名な一節を含む。これはトランメルへの以前のプライベートメールの公開版である。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -32,7 +32,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-このメールはbitcoin-list@lists.sourceforge.netおよびmetzdowd.comの暗号技術メーリングリストの両方にCCされており、公開メッセージとなっている。これはサトシがトランメルに送った以前のプライベートメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
+このメールはbitcoin-list@lists.sourceforge.netおよびmetzdowd.comの暗号学メーリングリストの両方にCCされており、公開メッセージとなっている。これはサトシがトランメルに送った以前のプライベートメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
 
 サトシはトランメルがビットコインの価値について述べた以前の観察を引用し、自身のビジョンを共有した：
 
@@ -50,4 +50,4 @@ translationStatus: complete
 <!-- speaker: narrator -->
 サトシとトランメルのプライベートな書簡から生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。
 
-*出典：2013年11月にダスティン・トランメルにより公開。暗号技術メーリングリストおよびbitcoin-listにもアーカイブされている。完全なプライベート書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*
+*出典：2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全なプライベート書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

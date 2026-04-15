@@ -42,7 +42,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ギャビン・アンドレセン（本名ギャビン・ベル、1966年オーストラリア・メルボルン生まれ）は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の離脱後にビットコインのリードメンテナーとなったソフトウェア開発者である。アメリカで育ち、1988年にプリンストン大学でコンピュータサイエンスの学位を取得。その後、3DグラフィックスソフトウェアのWasabi Softwareを設立した。
+ギャビン・アンドレセン（本名ギャビン・ベル、1966年オーストラリア・メルボルン生まれ）は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の離脱後にビットコインのリードメンテナーとなったソフトウェア開発者である。アメリカで育ち、1988年にプリンストン大学でコンピューターサイエンスの学位を取得。その後、3DグラフィックスソフトウェアのWasabi Softwareを設立した。
 
 **ビットコインとの出会い：**
 アンドレセンは2010年にビットコインを知った。すぐに最も活発な貢献者の一人となり、Bitcoin Faucet — 無料でビットコインを配布し、人々がこの技術を学び使い始めるのを支援するウェブサイト — を作成した。[2010年6月11日にBitcoinTalkフォーラムでBitcoin Faucetを発表](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/)。これはビットコイン普及を促進する最初期の取り組みの一つだった。

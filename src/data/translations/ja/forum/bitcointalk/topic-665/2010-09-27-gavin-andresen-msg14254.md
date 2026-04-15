@@ -1,5 +1,5 @@
 ---
-title: "Re: 複数のウォレット、1台のコンピュータ"
+title: "Re: 複数のウォレット、1台のコンピューター"
 date: 2010-09-27T15:14:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -22,7 +22,7 @@ translationStatus: complete
 
 + 新しい送信メソッド：指定したBitcoinアドレスに、<label>に送られたBitcoinから具体的にFROMとして送信
   （生成されたおつりには自動的に<label>がタグ付けされる）
-+ getbalanceにオプションの[label]パラメータを追加
++ getbalanceにオプションの[label]パラメーターを追加
 + 新しいメソッド：listsentbylabel
   （[ "address" : "送信先BCアドレス", "amount" : x.yz, "confirmations": n ]の配列を返す）
 

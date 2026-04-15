@@ -1,5 +1,5 @@
 ---
-title: "Re: 複数のウォレット、1台のコンピュータ"
+title: "Re: 複数のウォレット、1台のコンピューター"
 date: 2010-10-24T19:17:51.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「複数のウォレット、1台のコンピュータ」におけるサトシ・ナカモトの返信。"
+description: "スレッド「複数のウォレット、1台のコンピューター」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

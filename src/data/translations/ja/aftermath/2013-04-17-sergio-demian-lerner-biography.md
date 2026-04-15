@@ -51,7 +51,7 @@ translationStatus: complete
 [「The Return of the Deniers and the Revenge of Patoshi」](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)で、ラーナーは「Patoshi」——PatternとSatoshiの合成語——という用語を提唱し、以降のすべての研究で標準的な呼称となった。推定を約22,000ブロック・約110万BTCに更新した。タイムスタンプ逆転分析により、ほぼ数学的な証明を提供した——連続するPatoshiブロック間のタイムスタンプ逆転がゼロであるのに対し、非Patoshiブロック間では224回であり、単一のPCクロックの使用が証明された。
 
 **マイニングマシン（2020年8月）：**
-ラーナーは、Patoshiマイナーが50台以上のネットワーク接続されたコンピュータではなく、マルチスレッドを備えた単一のハイエンドCPUを使用したと[結論づけた](/BitcoinArchive/ja/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/)。ナンス空間は5つのサブレンジに分割され、並列スレッドでスキャンされていた。SSE2の最適化が使用された可能性が高い。このマシンは他の初期マイナーの約4.3倍の速度であった。
+ラーナーは、Patoshiマイナーが50台以上のネットワーク接続されたコンピューターではなく、マルチスレッドを備えた単一のハイエンドCPUを使用したと[結論づけた](/BitcoinArchive/ja/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/)。ナンス空間は5つのサブレンジに分割され、並列スレッドでスキャンされていた。SSE2の最適化が使用された可能性が高い。このマシンは他の初期マイナーの約4.3倍の速度であった。
 
 **歴史的意義：**
 ラーナーの研究は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコインの総供給量2,100万の約5%を蓄積し、一度も使用しないことを選んだことを確立した。この発見は、ビットコインの経済性、サトシの動機、初期ビットコインの歴史の解釈に重大な意味を持つ。彼の研究は複数の研究者により独立して検証・拡張されている。

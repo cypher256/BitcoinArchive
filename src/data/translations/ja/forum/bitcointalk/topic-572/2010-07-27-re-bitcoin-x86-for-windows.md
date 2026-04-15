@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがキャッシュされたSHA256のアイデアをSVNに追加し約70%の高速化を達成したこと、およびCrypto++ 5.6.0のASM SHAコードのコンパイラ互換性について議論。"
+description: "サトシ・ナカモトがキャッシュされたSHA256のアイデアをSVNに追加し約70%の高速化を達成したこと、およびCrypto++ 5.6.0のASM SHAコードのコンパイラー互換性について議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -29,4 +29,4 @@ quotes:
 Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32)（これは他の場所でも公開されていると思いますが、IRCでリンクを教えてもらいました）
 キャッシュされたSHA256の状態のアイデアをSVNのrev 113に追加した。高速化は約70%だ。x64スレッドでのあなたの投稿に基づいて、tcatmの功績とした。
 
-Crypto++ 5.6.0のASM SHAコードをMinGWでコンパイルできるが、実行するとすぐにクラッシュする。MASM（Microsoftのアセンブラ）用と書かれており、サンプルのコマンドラインはVisual C++のもののようだ。MSVCとIntelコンパイラでしか動作しないのだろうか？
+Crypto++ 5.6.0のASM SHAコードをMinGWでコンパイルできるが、実行するとすぐにクラッシュする。MASM（Microsoftのアセンブラ）用と書かれており、サンプルのコマンドラインはVisual C++のもののようだ。MSVCとIntelコンパイラーでしか動作しないのだろうか？

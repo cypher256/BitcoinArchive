@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが128ビットレジスタを使用した4つの32ビットデータのSIMD並列処理のアイデアに感銘を受け、加算の桁上がり問題について言及。"
+description: "サトシ・ナカモトが128ビットレジスターを使用した4つの32ビットデータのSIMD並列処理のアイデアに感銘を受け、加算の桁上がり問題について言及。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,4 +18,4 @@ translationStatus: complete
 
 すごい……
 
-つまり、128ビットレジスタを使って4つの32ビットデータを一度にSIMD処理しているということか？ 長い間それを考えていたが、加算の桁上がりが隣の値に影響するため、不可能だと思っていた。
+つまり、128ビットレジスターを使って4つの32ビットデータを一度にSIMD処理しているということか？ 長い間それを考えていたが、加算の桁上がりが隣の値に影響するため、不可能だと思っていた。

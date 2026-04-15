@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシが以前のメモリ使用量の見積もりを修正。25万ブロックのテスト実行を誤って参照していたことを認め、通常使用量はわずか17MBと確認。"
+description: "サトシが以前のメモリー使用量の見積もりを修正。25万ブロックのテスト実行を誤って参照していたことを認め、通常使用量はわずか17MBと確認。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -30,22 +30,22 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 その通りだ。25万ブロックのテスト実行を見ていた…失礼。
 
-通常の実行ではメモリ使用量17MB、VMサイズ10MBと表示される。
+通常の実行ではメモリー使用量17MB、VMサイズ10MBと表示される。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
->> 使えるメモリはどのくらいか？
+>> 使えるメモリーはどのくらいか？
 <!-- speaker: Martti Malmi -->
 > VPSには320MBのRAMがあり、そのうち50MBが現在空いています。
 > 500MBのスワップ領域もあります。
 >
 <!-- speaker: Satoshi Nakamoto -->
->> Bitcoinはそれなりにメモリを必要とする。
+>> Bitcoinはそれなりにメモリーを必要とする。
 >> Windowsでは約75MBだ。問題になるか？
 >
 <!-- speaker: Martti Malmi -->
-> 本当ですか？こちらのWindowsタスクマネージャーではメモリ使用量は約13MBと表示されていますが。
+> 本当ですか？こちらのWindowsタスクマネージャーではメモリー使用量は約13MBと表示されていますが。
 >
 
 <!-- /tone-skip -->

@@ -20,7 +20,7 @@ bitcoindの残りわずかなwxBase依存を置き換えた。
 
 bitcoindはSVNリビジョン112でwxWidgetsやwxBaseなしでコンパイルできるようになった。
 
-main(int argc, char* argv[])がinit.cppに追加された。CMyAppとスタートアップフォルダ関連のコードはui.cppに移動された。ui.cppとuibase.cppはbitcoindではリンクされない。
+main(int argc, char* argv[])がinit.cppに追加された。CMyAppとスタートアップフォルダー関連のコードはui.cppに移動された。ui.cppとuibase.cppはbitcoindではリンクされない。
 
 MakefileではGUIの使用を制御するために-DGUIを使用している。
 

@@ -47,7 +47,7 @@ translationStatus: complete
 サトシ・ナカモトは、ビットコインを創造した個人またはグループが使用した仮名である。その正体は確認されていない。
 
 **ホワイトペーパー：**
-2008年8月20日、サトシはアダム・バックに新しい電子キャッシュシステムについて[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、ビットコインとなるものに関する最初の既知の通信となった。2008年10月31日、サトシはmetzdowd.comの暗号学メーリングリストに[「Bitcoin: A Peer-to-Peer Electronic Cash System」を発表した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)。この論文は、信頼される第三者なしにコンセンサスを達成するためプルーフ・オブ・ワークを使用する分散型デジタル通貨システムを記述した。
+2008年8月20日、サトシはアダム・バックに新しい電子キャッシュシステムについて[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、ビットコインとなるものに関する最初の既知の通信となった。2008年10月31日、サトシはmetzdowd.comの暗号学メーリングリストに[「Bitcoin: A Peer-to-Peer Electronic Cash System」を発表した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)。この論文は、信頼される第三者なしにコンセンサースを達成するためプルーフ・オブ・ワークを使用する分散型デジタル通貨システムを記述した。
 
 **ローンチ：**
 2009年1月3日、サトシは[ジェネシスブロック（Block 0）](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)を採掘し、The Times紙の一面から「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というテキストを埋め込んだ。2009年1月8日、[Bitcoin v0.1が公開リリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。2009年1月12日、サトシは[Block 170でハル・フィニーに10 BTCを送信した](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金である。

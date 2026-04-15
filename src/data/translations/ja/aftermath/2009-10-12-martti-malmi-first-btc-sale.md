@@ -38,7 +38,7 @@ translationStatus: complete
 
 1週間前の2009年10月5日、NewLibertyStandardは[ビットコイン史上初の為替レート](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)（1ドル = 1,309.03 BTC）を公開し、初歩的な取引所サイトを開設していた。マルミの動機は市場の立ち上げを支援することだった。市場が存在するには、誰かが最初の売り手にならなければならない。
 
-マルミは当時20歳のHelsinki University of Technologyのコンピュータサイエンス学生で、2009年5月以降サトシの最も親密な協力者だった。彼はビットコインのLinux移植、`bitcoin.org`ウェブサイトの構築、FAQ執筆、BitcoinTalkフォーラムの創設を行った。彼が売却したのは利益のためではなく、ビットコインが交換媒体として機能できることを証明するためだった。
+マルミは当時20歳のHelsinki University of Technologyのコンピューターサイエンス学生で、2009年5月以降サトシの最も親密な協力者だった。彼はビットコインのLinux移植、`bitcoin.org`ウェブサイトの構築、FAQ執筆、BitcoinTalkフォーラムの創設を行った。彼が売却したのは利益のためではなく、ビットコインが交換媒体として機能できることを証明するためだった。
 
 この取引でビットコイン初の実世界価格が確立された — 1BTCあたり約0.001ドル。
 

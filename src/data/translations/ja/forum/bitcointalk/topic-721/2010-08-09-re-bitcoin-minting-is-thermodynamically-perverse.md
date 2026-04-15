@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがコンピュータの排熱を暖房として利用することで無駄にならない可能性と、寒冷地での生成が本質的に無料になり得ると説明。"
+description: "サトシ・ナカモトがコンピューターの排熱を暖房として利用することで無駄にならない可能性と、寒冷地での生成が本質的に無料になり得ると説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-自宅を暖房する必要がある場合、コンピュータの排熱は無駄にならない。電気暖房を使っている場所に住んでいるなら、コンピュータの排熱は無駄ではない。コンピュータで熱を発生させても同じコストだ。
+自宅を暖房する必要がある場合、コンピューターの排熱は無駄にならない。電気暖房を使っている場所に住んでいるなら、コンピューターの排熱は無駄ではない。コンピューターで熱を発生させても同じコストだ。
 
 電気以外のより安い暖房がある場合、無駄はコストの差分のみだ。
 

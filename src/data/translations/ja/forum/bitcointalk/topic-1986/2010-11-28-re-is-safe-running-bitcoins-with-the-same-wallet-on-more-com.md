@@ -1,5 +1,5 @@
 ---
-title: "Re: 同じウォレットを複数のコンピュータで同時に使うのは安全か？"
+title: "Re: 同じウォレットを複数のコンピューターで同時に使うのは安全か？"
 date: 2010-11-28T18:06:39.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「複数のコンピュータで同じウォレットを同時に実行しても安全ですか？」におけるサトシ・ナカモトの返信。"
+description: "スレッド「複数のコンピューターで同じウォレットを同時に実行しても安全ですか？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

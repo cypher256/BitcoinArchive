@@ -141,6 +141,67 @@ In JA `description` fields, use these unified terms:
 - `引用投稿` → **`文脈投稿`**
 - `satoshiがスレッドを開始` → **`サトシ・ナカモトがスレッドを開始`**
 
+## 用語集 (Terminology Glossary)
+
+Japanese translations must use the canonical form for recurring technical
+terms. Deprecated forms are detected by `scripts/check-ja-glossary.mjs`
+and fail the build.
+
+Scope: this is a JA-only concern (EN source is consistent). Applies to
+body text, descriptions, titles, and any editorial prose.
+
+### 末尾長音符 (内閣告示 第2号, 2008)
+
+3音以上のカタカナ語は末尾に長音符を付ける。旧 JIS Z 8301 の「末尾長音省略」
+規則は現代日本語の技術文章では非推奨 (Microsoft・Apple・NHK・共同通信社等、
+主要媒体はすべて長音付きに統一済み)。
+
+| ✅ Canonical | ❌ Deprecated |
+|---|---|
+| コンピューター | コンピュータ |
+| サーバー | サーバ |
+| ユーザー | ユーザ |
+| メモリー | メモリ |
+| プロセッサー | プロセッサ |
+| パラメーター | パラメータ |
+| エディター | エディタ |
+| フォルダー | フォルダ |
+| ブラウザー | ブラウザ |
+| アダプター | アダプタ |
+| ヘッダー | ヘッダ |
+| フィルター | フィルタ |
+| レジスター | レジスタ |
+| コンパイラー | コンパイラ |
+| デバッガー | デバッガ |
+| センサー | センサ |
+| カウンター | カウンタ |
+| コネクター | コネクタ |
+| ルーター | ルータ |
+| プロバイダー | プロバイダ |
+
+### 訳語統一
+
+| English source | ✅ Canonical JA | ❌ Deprecated | Reason |
+|----------------|------------------|------------------|--------|
+| cryptography mailing list | 暗号学メーリングリスト | 暗号技術メーリングリスト | 学問分野名として「暗号学」で統一 |
+| double spending | 二重支払い | 二重支出 / 二重使用 | |
+| miner | マイナー | 採掘者 | ビットコインの文脈 |
+| wallet | ウォレット | 財布 | Bitcoin の文脈 |
+| interface | インターフェース | インタフェース / インターフェイス | |
+
+### ルール追加手順
+
+1. 同じ英語用語が複数の JA 表記で訳されていることに気付いたら確認
+2. 正準形を決定 (原則: 多数派 or 内閣告示準拠)
+3. 上表に 1 行追加
+4. `scripts/check-ja-glossary.mjs` の `RULES` 配列に追加
+   - 末尾長音符: `type: 'trailing-choon'` (負の先読みで部分一致回避)
+   - 単純置換: `type: 'literal'`
+5. 既存データを移行 (Perl 一括置換: `perl -i -CSD -Mutf8 -pe '...'`)
+6. `npm run check:ja-glossary` で違反ゼロを確認
+
+Enforced by `npm run check:ja-glossary` (runs as part of `npm run build`).
+
 ## Quote Attribution Structure
 
 New entries must use frontmatter `quotes[]` + body markers for quote

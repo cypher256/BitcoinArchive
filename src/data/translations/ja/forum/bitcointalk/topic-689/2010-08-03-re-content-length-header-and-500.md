@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがContent-Lengthパラメータがない場合のサポートについて議論。"
+description: "サトシ・ナカモトがContent-Lengthパラメーターがない場合のサポートについて議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -31,12 +31,12 @@ quotes:
 <!-- tone-skip -->
 > <!-- quote: q2 -->
 > <!-- tone-skip -->
-> > bitcoinはContent-Lengthヘッダを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダがない場合、bitcoinは500 Internal Server Errorを返す。
+> > bitcoinはContent-Lengthヘッダーを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダーがない場合、bitcoinは500 Internal Server Errorを返す。
 > <!-- /tone-skip -->
 > 
 > Content-Lengthを提供しないJSONライブラリを具体的に教えてもらえますか？ ドキュメント化できると良いのですが。
 <!-- /tone-skip -->
 
-Content-Lengthパラメータがない場合のサポートを試みるべきだろう。ただし、ストリームを全面的に書き換えたくはない。1文字ずつ読む必要があっても構わない。
+Content-Lengthパラメーターがない場合のサポートを試みるべきだろう。ただし、ストリームを全面的に書き換えたくはない。1文字ずつ読む必要があっても構わない。
 
 編集：つまり、Content-Lengthをサポートしないライブラリが実際にある場合の話だが。

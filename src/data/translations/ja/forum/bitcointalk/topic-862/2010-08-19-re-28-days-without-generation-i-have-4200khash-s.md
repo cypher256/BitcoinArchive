@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-コンピュータの日付と時刻が正しいことを確認してくれ。
+コンピューターの日付と時刻が正しいことを確認してくれ。

@@ -28,7 +28,7 @@ translationStatus: complete
 完了しました。すべてのファイルへのアクセス権限を付与しました。
 
 <!-- speaker: Satoshi Nakamoto -->
-> Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメータなしの
+> Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメーターなしの
 > クリーンURLを有効にしているが、Apacheが「AllowOverride All」に設定
 > されていないため、変更が拒否されて動作していない。これは、私たちが望む形で
 > Drupalを他のサイトと共存させるために必要だ。

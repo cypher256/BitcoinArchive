@@ -8,7 +8,7 @@ author: "Craig Wright"
 participants:
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "クレイグ・スティーブン・ライト（1970年10月生まれ）：2016年5月にサトシ・ナカモトであると公言したオーストラリアのコンピュータ科学者・実業家。2024年3月のCOPA対ライト裁判で、英国高等法院は彼の主張を完全に否定し、「大規模な証拠捏造」を認定した。"
+description: "クレイグ・スティーブン・ライト（1970年10月生まれ）：2016年5月にサトシ・ナカモトであると公言したオーストラリアのコンピューター科学者・実業家。2024年3月のCOPA対ライト裁判で、英国高等法院は彼の主張を完全に否定し、「大規模な証拠捏造」を認定した。"
 isSatoshi: false
 tags:
   - "craig-wright"
@@ -34,7 +34,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-クレイグ・スティーブン・ライトは、1970年10月にオーストラリア・ブリスベンで生まれたコンピュータ科学者・実業家である。
+クレイグ・スティーブン・ライトは、1970年10月にオーストラリア・ブリスベンで生まれたコンピューター科学者・実業家である。
 
 **偽りの主張：**
 2015年12月8日、[WiredとGizmodoがライトをビットコインの創設者である可能性があると同時に報じた](/BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/)。2016年5月2日、ライトはBBC、The Economist、GQ誌との連携インタビューで、自らが[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)であると公言した。ブログに暗号学的証明と称するものを公開した——初期のビットコインブロックに関連する鍵でメッセージに署名したと主張した。

@@ -40,7 +40,7 @@ translationStatus: complete
 アダム・バック（1970年、英国生まれ）は、暗号学者、サイファーパンク、そしてHashcashの発明者である。University of Exeterでコンピューターサイエンスの博士号を取得した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコインとなるものについて最初に連絡を取ったことが知られている人物である。
 
 **Hashcash（1997年）：**
-1997年3月、バックはメールスパムとサービス拒否攻撃に対抗するために設計されたプルーフ・オブ・ワーク・システムであるHashcashを提案した。このシステムは送信者がメール送信前に部分的なハッシュ衝突を計算することを要求し — 計算コストの高い操作 — 大量スパムを経済的に非現実的にした。Hashcashはデジタル通貨や決済システムではなく、純粋に計算コストのメカニズムであった。ビットコインは後にそのプルーフ・オブ・ワーク概念をマイニングとコンセンサスの基盤として採用したが、ビットコインの通貨・決済としての側面は別の知的系譜 — ウェイ・ダイのb-moneyやニック・サボのbit gold — に由来する。[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)はHashcashを主要な参考文献の一つとして引用している。
+1997年3月、バックはメールスパムとサービス拒否攻撃に対抗するために設計されたプルーフ・オブ・ワーク・システムであるHashcashを提案した。このシステムは送信者がメール送信前に部分的なハッシュ衝突を計算することを要求し — 計算コストの高い操作 — 大量スパムを経済的に非現実的にした。Hashcashはデジタル通貨や決済システムではなく、純粋に計算コストのメカニズムであった。ビットコインは後にそのプルーフ・オブ・ワーク概念をマイニングとコンセンサースの基盤として採用したが、ビットコインの通貨・決済としての側面は別の知的系譜 — ウェイ・ダイのb-moneyやニック・サボのbit gold — に由来する。[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)はHashcashを主要な参考文献の一つとして引用している。
 
 **サトシからの最初の連絡：**
 2008年8月20日、サトシ・ナカモトはバックに[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、彼をサトシがビットコインとなるアイデアについて連絡を取った最初の既知の人物とした。サトシはバックのHashcashに言及し、関連する先行研究について尋ねた。バックはサトシに[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の[b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)提案を紹介した。2日後の8月22日、サトシは[ウェイ・ダイにメールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)。この紹介の連鎖 — バックからダイへ — はサトシがビットコインの設計における主要な知的先駆者とつながる助けとなった。

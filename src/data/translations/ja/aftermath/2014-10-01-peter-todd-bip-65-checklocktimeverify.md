@@ -52,4 +52,4 @@ translationStatus: complete
 **意義：**
 
 <!-- speaker: narrator -->
-BIP 65はコンセンサスレベルのソフトフォークとしてデプロイされた。より高度なBitcoinスマートコントラクトの構成要素の一つであり、後にLightning Networkを支えるペイメントチャネルの基盤となった。BIP 125（Replace-by-Fee）と並んで、ピーター・トッドのBitcoinプロトコルへの最も重要な貢献である。
+BIP 65はコンセンサースレベルのソフトフォークとしてデプロイされた。より高度なBitcoinスマートコントラクトの構成要素の一つであり、後にLightning Networkを支えるペイメントチャネルの基盤となった。BIP 125（Replace-by-Fee）と並んで、ピーター・トッドのBitcoinプロトコルへの最も重要な貢献である。

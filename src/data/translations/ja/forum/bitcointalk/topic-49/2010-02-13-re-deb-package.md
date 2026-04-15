@@ -18,7 +18,7 @@ translationStatus: complete
 
 Karmic 64ビットでwxWidgets 2.8.9をコンパイルすることは私もできなかった。
 
-wxWidgets 2.9.0を使って最新のSVNをKarmic 64ビットでコンパイルしており、64ビットで問題なくコンパイルできる。build-unix.txtを読み、wxWidgetsに指定されたconfigureパラメータを使用して、付属のmakefile.unix.wx2.9を使用できるようにしてほしい。（--enable-debug --disable-shared --enable-monolithic）
+wxWidgets 2.9.0を使って最新のSVNをKarmic 64ビットでコンパイルしており、64ビットで問題なくコンパイルできる。build-unix.txtを読み、wxWidgetsに指定されたconfigureパラメーターを使用して、付属のmakefile.unix.wx2.9を使用できるようにしてほしい。（--enable-debug --disable-shared --enable-monolithic）
 
 2.9.0にはまだ修正が必要な表示上のバグが1つあり、ステータスの数値表示が何かの理由で詰まって表示される。──修正済み
 

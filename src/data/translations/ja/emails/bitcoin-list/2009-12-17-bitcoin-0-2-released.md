@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトによるBitcoin 0.2のリリース告知。Linux版の追加、マルチプロセッサ対応、プロキシサポートなどの新機能を含む。"
+description: "サトシ・ナカモトによるBitcoin 0.2のリリース告知。Linux版の追加、マルチプロセッサー対応、プロキシサポートなどの新機能を含む。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -33,7 +33,7 @@ http://sourceforge.net/projects/bitcoin/files/
   - Windows用セットアッププログラム
   - Linux版（Ubuntuでテスト済み）
 Satoshi Nakamoto
-  - コイン生成のマルチプロセッサ対応
+  - コイン生成のマルチプロセッサー対応
   - TOR使用のためのプロキシサポート
   - 初回ブロックダウンロード時の一部の速度低下を修正
 

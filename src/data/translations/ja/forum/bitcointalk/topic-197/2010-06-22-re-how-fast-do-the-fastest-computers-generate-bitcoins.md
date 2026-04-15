@@ -1,5 +1,5 @@
 ---
-title: "Re: 最速のコンピュータはどれくらいの速さでBitcoinを生成するのか？"
+title: "Re: 最速のコンピューターはどれくらいの速さでBitcoinを生成するのか？"
 date: 2010-06-22T04:35:26.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「最速のコンピュータはどのくらい速くビットコインを生成しますか？」におけるサトシ・ナカモトの返信。"
+description: "スレッド「最速のコンピューターはどのくらい速くビットコインを生成しますか？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,6 +18,6 @@ translationStatus: complete
 
 ハッシュ性能はCPU間で予想ほど差がないことに気づいた。古いCPUと比較して、新しいCPUは一般的なベンチマークほどにはハッシュの高速化を示さない。
 
-最近のCPU最適化はI/Oや分岐予測などに集中しているのだろう。ほとんどのプログラムはメモリアクセス、比較、分岐の集まりで、長い間数学の計算をし続けることはめったにない。
+最近のCPU最適化はI/Oや分岐予測などに集中しているのだろう。ほとんどのプログラムはメモリーアクセス、比較、分岐の集まりで、長い間数学の計算をし続けることはめったにない。
 
-最新のSVNバージョンにはkhash/s表示がある。プロセッサあたり約400 khash/sが典型的だ。
+最新のSVNバージョンにはkhash/s表示がある。プロセッサーあたり約400 khash/sが典型的だ。

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがBitcoin v0.2の公式リリースアナウンスをマルミに転送。Linuxサポート、マルチプロセッサマイニング、TORプロキシ対応を含む。"
+description: "サトシがBitcoin v0.2の公式リリースアナウンスをマルミに転送。Linuxサポート、マルチプロセッサーマイニング、TORプロキシ対応を含む。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -39,7 +39,7 @@ Martti Malmi<br>
   - Windows用セットアッププログラム<br>
   - Linuxバージョン（Ubuntuでテスト済み）<br>
 Satoshi Nakamoto<br>
-  - コイン生成のマルチプロセッササポート<br>
+  - コイン生成のマルチプロセッサーサポート<br>
   - TOR使用のためのプロキシサポート<br>
   - 初期ブロックダウンロードの一部の遅延を修正
 
