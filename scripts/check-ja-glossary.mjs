@@ -18,7 +18,14 @@
 import { readdirSync, readFileSync, statSync, existsSync } from 'fs';
 import path from 'path';
 
-const JA_DIR = 'src/data/translations/ja';
+// Accept optional target directory via CLI argument.
+// Default: Archive's JA translations. Other repos (e.g. NovelBitCoin) can
+// invoke this script with their own JA directory as argument.
+//
+// Usage:
+//   node check-ja-glossary.mjs                    # scan src/data/translations/ja (default)
+//   node check-ja-glossary.mjs ../NovelBitCoin/src # scan arbitrary directory
+const JA_DIR = process.argv[2] || 'src/data/translations/ja';
 
 // Rule types:
 //   'literal' — plain substring match
