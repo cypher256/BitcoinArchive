@@ -22,6 +22,9 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Wei_Dai"
   - name: "Bitcoin Wiki — Wei Dai"
     url: "https://en.bitcoin.it/wiki/Wei_Dai"
+relatedEntries:
+  - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
+  - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
 translationStatus: complete
 ---
 

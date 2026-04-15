@@ -25,6 +25,7 @@ relatedEntries:
   - "aftermath/2008-08-20-adam-back-biography"
   - "aftermath/2024-02-21-adam-back-retrospective-testimony"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
+  - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
 translationStatus: complete
 ---
 

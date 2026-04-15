@@ -24,6 +24,8 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - "correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen"
 ---
 
 On December 3, 2010, Malmi asked Satoshi whether they should recruit someone to take over more Bitcoin-related development and management activities. By this point, Satoshi was becoming increasingly less active and appeared to be preparing for his departure from the project.

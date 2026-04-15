@@ -21,6 +21,9 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
   - name: "Wei Dai — Wikipedia"
     url: "https://en.wikipedia.org/wiki/Wei_Dai"
+relatedEntries:
+  - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
+  - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
 ---
 
 *From LessWrong "Bitcoins are not digital greenbacks" comment thread, April 21, 2013:*

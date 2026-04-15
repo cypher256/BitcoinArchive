@@ -22,6 +22,9 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Wei_Dai"
   - name: "CoinMarketCap — Satoshi Files: Wei Dai"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-wei-dai"
+relatedEntries:
+  - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
+  - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
 ---
 
 *LessWrong "Making money with Bitcoin?" comment thread, February 25, 2011:*
