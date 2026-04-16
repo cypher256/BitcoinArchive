@@ -8,9 +8,10 @@
  * Scoring (simple, editor-intent based):
  *   +50  both entries inline-link each other in body (mutual reference)
  *        — added to both entries' derived lists
- *   +30  one-way inline link: if source cites target in body, source is
- *        added to target's derived list (so a reader on target discovers
- *        who cited it)
+ *   +30  one-way inline link (source cites target in body): added to
+ *        BOTH entries' derived lists so the relation surfaces from
+ *        either side. Reader on target discovers who cited it, and
+ *        reader on source discovers what it cited.
  *
  * The UI (RelatedEntries.astro) merges manual frontmatter.relatedEntries
  * (priority) with this derived list and caps at 10 items.
@@ -182,9 +183,12 @@ for (const [sourceId, targets] of inlineRefs) {
       addCandidate(sourceId, targetId, 50);
       addCandidate(targetId, sourceId, 50);
     } else {
-      // One-way: source cites target. Target's derived list gets source
-      // (reader landing on target can discover source that cited it).
+      // One-way inline link: surface the relation from both sides at
+      // score 30. Target's list gets source (so a reader on target
+      // discovers who cited it), and source's list gets target (so a
+      // reader on source discovers what it cited).
       addCandidate(targetId, sourceId, 30);
+      addCandidate(sourceId, targetId, 30);
     }
   }
 }
