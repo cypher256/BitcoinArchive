@@ -139,6 +139,11 @@ function resolveThreadIdFromEntryId(id) {
   return null;
 }
 
+// Map participant slug → biography entry id (EN side only). Used to resolve
+// inline /participants/{slug}/ links back to the biography entry they render,
+// so inline-reference gap detection covers biographies.
+const biographyBySlug = new Map();
+
 function addEntry(baseDir, lang) {
   const files = walk(baseDir);
   const langPrefix = lang === 'ja' ? '/ja' : '';
@@ -181,6 +186,11 @@ function addEntry(baseDir, lang) {
       type: fm.type,
       isBiography,
     });
+
+    // Index biography → slug (EN only; JA mirror is handled via id equality).
+    if (lang === 'en' && isBiography && fm.participants[0]?.slug) {
+      biographyBySlug.set(fm.participants[0].slug, id);
+    }
   }
 }
 
@@ -213,18 +223,25 @@ console.log(`  ${validPaths.size} valid paths indexed`);
 const BASE_PATTERN = /\]\(\/BitcoinArchive(\/[^)#]*?)(#[^)]*)?\)/g;
 
 // Extract entry ID from an internal link target. Returns null if target is not
-// an individual entry page (e.g., participants/, threads/, documents/, sources/).
-// Normalizes the basename using the same rule as computeEntryId() so IDs match
-// Astro's glob-loader collection IDs (which collapse dots in basename).
+// something that corresponds to an entry in the entries store.
+//
+// Accepts:
+//   /entries/{id}/          → direct entry reference
+//   /ja/entries/{id}/       → JA mirror
+//   /participants/{slug}/   → resolved via biographyBySlug → biography entry id
+//   /ja/participants/{slug}/ → same (JA mirror uses the same EN entry id)
+// Basename dots are stripped to match Astro's glob-loader id convention.
 function extractEntryIdFromTarget(target) {
-  // Accept /entries/{id}/ or /ja/entries/{id}/
-  const m = target.match(/^(?:\/ja)?\/entries\/(.+?)\/?$/);
-  if (!m) return null;
-  const raw = m[1];
-  // Exclude thread-aggregation pages
+  // Participant page → resolve to biography entry id if one exists.
+  const pm = target.match(/^(?:\/ja)?\/participants\/([^/]+)\/?$/);
+  if (pm) {
+    return biographyBySlug.get(pm[1]) || null;
+  }
+  // Entry page.
+  const em = target.match(/^(?:\/ja)?\/entries\/(.+?)\/?$/);
+  if (!em) return null;
+  const raw = em[1];
   if (raw.startsWith('threads/')) return null;
-  // Normalize basename: strip dots to match Astro's glob-loader id convention
-  // (e.g. "bitcoin-v0.1-released" in a URL → "bitcoin-v01-released" as entry ID)
   const parts = raw.split('/');
   const basename = parts.pop();
   return [...parts, basename.replaceAll('.', '')].join('/');
