@@ -212,9 +212,39 @@ console.log(`  ${validPaths.size} valid paths indexed`);
 
 const BASE_PATTERN = /\]\(\/BitcoinArchive(\/[^)#]*?)(#[^)]*)?\)/g;
 
+// Extract entry ID from an internal link target. Returns null if target is not
+// an individual entry page (e.g., participants/, threads/, documents/, sources/).
+// Normalizes the basename using the same rule as computeEntryId() so IDs match
+// Astro's glob-loader collection IDs (which collapse dots in basename).
+function extractEntryIdFromTarget(target) {
+  // Accept /entries/{id}/ or /ja/entries/{id}/
+  const m = target.match(/^(?:\/ja)?\/entries\/(.+?)\/?$/);
+  if (!m) return null;
+  const raw = m[1];
+  // Exclude thread-aggregation pages
+  if (raw.startsWith('threads/')) return null;
+  // Normalize basename: strip dots to match Astro's glob-loader id convention
+  // (e.g. "bitcoin-v0.1-released" in a URL → "bitcoin-v01-released" as entry ID)
+  const parts = raw.split('/');
+  const basename = parts.pop();
+  return [...parts, basename.replaceAll('.', '')].join('/');
+}
+
+// Derive a file's own entry ID from its path relative to EN_DIR or JA_DIR.
+// Uses computeEntryId() so the id matches Astro's collection id exactly.
+function entryIdFromFile(file) {
+  let rel;
+  if (file.startsWith(EN_DIR)) rel = path.relative(EN_DIR, file);
+  else if (file.startsWith(JA_DIR)) rel = path.relative(JA_DIR, file);
+  else return null;
+  return computeEntryId(rel);
+}
+
 function scanLinks() {
   const broken = [];
   const mixedLang = [];
+  // inlineRefs: Map<sourceEntryId, Set<targetEntryId>>
+  const inlineRefs = new Map();
   const allFiles = [
     ...walk(EN_DIR).map(f => ({ file: f, lang: 'en' })),
     ...walk(JA_DIR).map(f => ({ file: f, lang: 'ja' })),
@@ -226,6 +256,7 @@ function scanLinks() {
     // Strip frontmatter — only check body
     const bodyStart = content.indexOf('\n---\n', 4);
     const body = bodyStart > 0 ? content.slice(bodyStart + 5) : content;
+    const sourceEntryId = entryIdFromFile(file);
 
     let match;
     BASE_PATTERN.lastIndex = 0;
@@ -243,10 +274,6 @@ function scanLinks() {
       }
 
       // Rule 2: locale must match the file's language.
-      // - EN files may only link to paths NOT starting with /ja/
-      //   (allowed: /entries/..., /participants/..., /documents/..., /images/...)
-      // - JA files may only link to paths starting with /ja/ OR to locale-agnostic
-      //   static assets (/documents/..., /images/...)
       const isJaPath = target.startsWith('/ja/');
       const isStaticAsset = target.startsWith('/documents/') || target.startsWith('/images/');
 
@@ -265,14 +292,25 @@ function scanLinks() {
           reason: 'JA file linking to EN path — use /ja/... instead',
         });
       }
+
+      // Track source→target inline references (EN side only for relatedEntries
+      // check, since EN is the source of truth and JA mirrors it). Source must
+      // be an entry; target must be an entry (not participant/thread/doc).
+      if (lang === 'en' && sourceEntryId) {
+        const targetId = extractEntryIdFromTarget(target);
+        if (targetId && targetId !== sourceEntryId) {
+          if (!inlineRefs.has(sourceEntryId)) inlineRefs.set(sourceEntryId, new Set());
+          inlineRefs.get(sourceEntryId).add(targetId);
+        }
+      }
     }
   }
 
-  return { broken, mixedLang, totalLinks };
+  return { broken, mixedLang, totalLinks, inlineRefs };
 }
 
 console.log('Scanning markdown bodies for internal links...');
-const { broken, mixedLang, totalLinks } = scanLinks();
+const { broken, mixedLang, totalLinks, inlineRefs } = scanLinks();
 console.log(`  ${totalLinks} internal links scanned`);
 console.log();
 
@@ -352,6 +390,34 @@ console.log(`  ${totalRelated} relatedEntries references validated`);
 console.log();
 
 // ---------------------------------------------------------------------------
+// Detect inline-reference / relatedEntries gaps
+//
+// Rule: if entry A inline-links entry B in its body, B's relatedEntries
+// should list A (so a reader landing on B can discover A). Thread-internal
+// references are excluded (threads auto-link within a directory).
+//
+// This is reported as a WARNING, not an error, because:
+//   - Some inline references are passing mentions, not strong relations
+//   - Existing prose may reference many entries legitimately (e.g. biographies)
+//   - Fixing requires editorial judgment on which pairs deserve relatedEntries
+// ---------------------------------------------------------------------------
+
+const inlineGaps = [];
+for (const [sourceId, targets] of inlineRefs) {
+  const sourceEntry = enEntries.get(sourceId);
+  if (!sourceEntry) continue;
+  for (const targetId of targets) {
+    const targetEntry = enEntries.get(targetId);
+    if (!targetEntry) continue;
+    // Skip thread-internal (threads auto-link)
+    if (sourceEntry.threadId && targetEntry.threadId && sourceEntry.threadId === targetEntry.threadId) continue;
+    // Skip if target already lists source in relatedEntries
+    if (targetEntry.relatedEntries.includes(sourceId)) continue;
+    inlineGaps.push({ source: sourceId, target: targetId, targetFile: targetEntry.file });
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
 
@@ -395,6 +461,23 @@ if (exitCode === 0) {
   }
 } else {
   console.error(`Total: ${broken.length} broken, ${mixedLang.length} mixed-lang, ${relatedIssues.length} related-issue / ${totalLinks} links`);
+}
+
+if (inlineGaps.length > 0) {
+  const showCount = process.argv.includes('--inline-gaps') ? inlineGaps.length : Math.min(10, inlineGaps.length);
+  console.log();
+  console.log(`⚠ ${inlineGaps.length} inline-reference gap(s) detected — entries inline-linked from other bodies but not listed back in their own relatedEntries.`);
+  console.log(`  (Not an error. Editorial judgment required. Pass --inline-gaps to see all.)`);
+  console.log();
+  for (let i = 0; i < showCount; i++) {
+    const g = inlineGaps[i];
+    console.log(`  ${g.targetFile}`);
+    console.log(`    should list "${g.source}" in relatedEntries (it links here inline)`);
+  }
+  if (inlineGaps.length > showCount) {
+    console.log();
+    console.log(`  ... and ${inlineGaps.length - showCount} more (use --inline-gaps to see all)`);
+  }
 }
 
 process.exit(exitCode);
