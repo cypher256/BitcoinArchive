@@ -31,7 +31,7 @@ translationStatus: complete
 ロゴをローカルサーバーにコピーしましたので、グラフィックとして引き続き使えます。SFの商標ポリシーで禁止されていません。
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。
 > 別のものが欲しければ、以下に全リンクの一覧がある。
 >
@@ -41,18 +41,18 @@ translationStatus: complete
 > トラッキングさせたいか？ない方がプライバシーに優しい。
 >
 > <!-- quote: q1 -->
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >> SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 >> フッターに追加できると良いですね。
 >>
-<!-- speaker: Satoshi Nakamoto -->
+>>> <!-- speaker: Satoshi Nakamoto -->
 >>> 現在のサイトレイアウトはすっきりしていて良いな。ロゴだけ
 >>> 変更すべきだ。すぐに公開したいなら、とりあえずサイトタイトルに
 >>> 置き換えて、後でもっと良いロゴを作ればいいだろう。
 >>>
 >>> サイト管理やプロのウェブグラフィックアーティストとのコンタクトが
 >>> 必要なら、Daveに頼める。彼は仕事でDrupal関連のことをやっている。
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >>
 >>
 >>

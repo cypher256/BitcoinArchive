@@ -31,18 +31,18 @@ translationStatus: complete
 テストバージョン5だったと思いますが、完全には確かではありません。Linux版をノートパソコンで実行していて、異なる場所間で持ち運び、電源を切る代わりにハイバネート機能を使用しています。
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > ありがとう。db::open/closeのエラーはパターンを裏付けている。
 >
 > より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたか？test5のMSG_DONTWAITがLibertyのゾンビ問題を解決した。どのテストバージョンを実行していたか？（ログにテストバージョンを出力するようにすべきだな）
 >
 > <!-- quote: q1 -->
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >> まだ役に立つかもしれないので、ログをお送りします。
 >>
-<!-- speaker: Satoshi Nakamoto -->
+>>> <!-- speaker: Satoshi Nakamoto -->
 >>> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.logにエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datか、それともaddr.datやwallet.datも含まれるか？
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >>
 
 <!-- /tone-skip -->

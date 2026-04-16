@@ -30,7 +30,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > Martti、あなたが実行した時、ブロックのダウンロードが始まるまでどのくらい
 > かかったか、そしてどのくらいの速度でダウンロードしたか？
 
@@ -42,15 +42,15 @@ translationStatus: complete
 学校のプロジェクト（偶然にもC++のコーディング）に約1ヶ月集中しなければならないので、12月までは積極的な開発に使える時間があまりありません。とにかく連絡は取り合いましょう。
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q1 -->
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >> ブロックが増え始めました。Windows版よりも増え始めるまでに確実に時間が
 >> かかります。また、Windows版よりも遅い速度で増えているかもしれません。
 >> 送ってくれたLinuxビルドでデバッグが有効になっているのでしょうか？ブロックは
 >> 毎秒約15ブロックのペースで増えています（時計を見ながらの目測です）。
 >> Windows版でどのくらい速かったかは計測していませんが、もっと速かった気がします。
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 >
 > 開始までどのくらいかかった？たまたま要求したノードが遅いだけ
 > かもしれない。遅い開始はダウンロード速度が遅いことと整合する。
@@ -63,7 +63,7 @@ translationStatus: complete
 > Martti、あなたが実行した時、ブロックのダウンロードが始まるまでどのくらい
 > かかったか、そしてどのくらいの速度でダウンロードしたか？
 >
-<!-- speaker: Martti Malmi -->
+>>    <!-- speaker: Martti Malmi -->
 >>    Bitcoinを起動した時にBitcoinのポートが利用できないと、コマンドラインに
 >>    以下のメッセージが表示されます。Bitcoinのポートが利用できる時にはこれらの
 >>    メッセージは表示されません。デフォルトポートが使用中の場合にBitcoinが
@@ -79,7 +79,7 @@ translationStatus: complete
 >>    /usr/lib/gio/modules/libgioremote-volume-monitor.so
 >>    /usr/lib/gio/modules/libgiogconf.so: wrong ELF class: ELFCLASS64
 >>    Failed to load module: /usr/lib/gio/modules/libgiogconf.so
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 >
 > 既にSO_REUSEADDRを使用しているので、閉じた後のTIME_WAIT状態でも
 > ポートをバインドできる。バインドに失敗するのはプログラムが本当にまだ

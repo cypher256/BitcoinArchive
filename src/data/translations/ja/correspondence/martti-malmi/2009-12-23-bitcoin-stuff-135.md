@@ -28,7 +28,7 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > プログラムから新しいBitcoinアドレスを生成できる方法を
 > 作る必要がある。あるいは、あなたのIPアドレスに送金
 > させることもできるが、その場合は相手がコメントに注文
@@ -42,7 +42,7 @@ translationStatus: complete
 バックグラウンドプロセスが非グラフィカルであればとても助かります。現在のサービスレベルのVPSでは、X Window環境を動かすのに十分なメモリーがないです。メモリーを解放する方法を見つけない限りは。
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > 注文の確認と入力は、少なくとも最初は手動で行うつもりか？
 > 私ならそうする。
 
@@ -52,9 +52,9 @@ translationStatus: complete
 はい、少なくとも最初は、顧客がBitcoinを売ってドルを受け取る場合には手動で行います。スクリプトにドルの準備金へのアクセス権を軽々しく与えたくはないです。逆方向（顧客のドル→Bitcoin）はそれほど不安を感じないですし、顧客がすぐにBitcoinを受け取れる方が確実に良いですね。
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q1 -->
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >> ドメイン名bitcoinexchange.comを登録しました。余暇の活動として
 >> 近いうちにサービスのコーディングを始めるつもりです。登録不要で
 >> Googleのようなシンプルなインターフェースを構想しています。フロント

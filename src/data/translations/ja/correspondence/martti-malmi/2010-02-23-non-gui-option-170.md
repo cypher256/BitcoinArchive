@@ -28,15 +28,15 @@ translationStatus: complete
 ---
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q1 -->
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >>
 >> 1) GTKはディスプレイなしでプログラムを実行することをサポートしています：
 >> http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
 >> ただし、wxWidgetsで可能かどうかまでは分かりません。
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 >
 > wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
 >

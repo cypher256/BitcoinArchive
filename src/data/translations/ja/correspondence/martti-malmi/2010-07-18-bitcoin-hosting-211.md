@@ -31,7 +31,7 @@ translationStatus: complete
 了解です、切り替えはしません。Bitcoinでの寄付は助かりますので、14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U に送ってください。
 
 <!-- tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 > 今は切り替えをしないと約束してほしい。今抱えているSlashdotからの殺到する作業に加えて、切り替えの手間まで増えるのは最も避けたいことだ。やるべきことが多すぎて頭がおかしくなりそうだ。
 >
 > また、たった$20を節約するために、より小さくて信頼性の低いホストに移るのは最悪だ。
@@ -41,7 +41,7 @@ translationStatus: complete
 > 短期的にはBitcoinでの寄付が役に立つだろうか？
 >
 > <!-- quote: q1 -->
-<!-- speaker: Martti Malmi -->
+>> <!-- speaker: Martti Malmi -->
 >> Rackspaceは非常に良いサポート、良いバックエンド、良い接続性、そして
 >> うまくスケールするクラウドベースの仮想サーバーを持っています。Thufirからこんなオファーをもらいました：
 >>
