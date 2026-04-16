@@ -33,7 +33,8 @@ const OUTPUT = 'src/data/derived-related.json';
 function walk(dir) {
   const results = [];
   if (!existsSync(dir)) return results;
-  for (const entry of readdirSync(dir)) {
+  // Sort readdirSync output for deterministic traversal (across OS / FS).
+  for (const entry of readdirSync(dir).sort()) {
     const full = path.join(dir, entry);
     if (statSync(full).isDirectory()) results.push(...walk(full));
     else if (full.endsWith('.md')) results.push(full);
@@ -191,9 +192,13 @@ for (const [sourceId, targets] of inlineRefs) {
 // Convert to sorted arrays; cap per-entry at 20 items (UI takes top 10 after
 // merging with manual list, but we keep a small buffer for flexibility).
 const output = {};
-for (const [entryId, candidates] of derived) {
-  const sorted = [...candidates.entries()]
-    .sort((a, b) => b[1] - a[1])
+// Deterministic ordering: primary key = score desc, secondary key = id asc.
+// Without the secondary key, ties among many 30-point candidates would leave
+// the slice-20 outcome environment-dependent (readdir order, Map insertion).
+const sortedEntryIds = [...derived.keys()].sort();
+for (const entryId of sortedEntryIds) {
+  const sorted = [...derived.get(entryId).entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .slice(0, 20)
     .map(([id, score]) => ({ id, score }));
   output[entryId] = sorted;

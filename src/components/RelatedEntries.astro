@@ -2,14 +2,18 @@
 /**
  * RelatedEntries.astro — Renders the "Related entries" section on entry pages.
  *
- * Merges two sources (total capped at 10 items):
- *   1. Manual frontmatter.relatedEntries (editor-curated, priority)
- *   2. Auto-derived candidates from src/data/derived-related.json,
- *      computed by scripts/generate-derived-related.mjs based on inline
- *      link structure (mutual/one-way references across entry bodies)
+ * Selection policy (manual-first, cap 10):
+ *   1. Start from manual frontmatter.relatedEntries (editor-curated).
+ *   2. Append auto-derived candidates from src/data/derived-related.json
+ *      (computed by scripts/generate-derived-related.mjs from inline-link
+ *      structure) that are not already in the manual list.
+ *   3. Slice to 10 items. Manual entries are guaranteed to survive the cap
+ *      as long as they are ≤ 10.
  *
- * Rules for the manual list are documented in STYLE_GUIDE.md and enforced by
- * scripts/check-internal-links.mjs.
+ * Display order: chronological by entry date (not selection priority).
+ * Manual vs. derived is a selection-time distinction only; readers see a
+ * single uniformly-sorted list. Rules for the manual list are documented in
+ * STYLE_GUIDE.md and enforced by scripts/check-internal-links.mjs.
  */
 import { getCollection } from 'astro:content';
 import { useTranslations, formatDate, localePath } from '../i18n/utils';
@@ -28,8 +32,9 @@ interface Props {
 const { lang, entryId, relatedIds } = Astro.props;
 const t = useTranslations(lang);
 
-// Merge manual + derived: manual first (editor priority), then derived
-// candidates (already score-sorted) filtered to remove manual duplicates.
+// Build the selection set: manual first so they survive the cap, then
+// derived candidates (already score-sorted, with deterministic tiebreakers).
+// The final display is sorted chronologically further below.
 const seen = new Set(relatedIds);
 const derivedIds = (derivedMap[entryId] ?? [])
   .map((d) => d.id)

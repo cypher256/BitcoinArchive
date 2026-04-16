@@ -37,9 +37,673 @@
       "score": 30
     }
   ],
+  "aftermath/2009-01-11-hal-finney-running-bitcoin-tweet": [
+    {
+      "id": "aftermath/2009-01-12-first-bitcoin-transaction",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-08-28-hal-finney-biography",
+      "score": 30
+    },
+    {
+      "id": "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release",
+      "score": 30
+    }
+  ],
+  "aftermath/2009-01-12-first-bitcoin-transaction": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2009-01-11-dustin-trammell-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-08-28-hal-finney-biography",
+      "score": 30
+    },
+    {
+      "id": "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release",
+      "score": 30
+    }
+  ],
+  "aftermath/2009-08-30-bitcoin-svn-repository-committers": [
+    {
+      "id": "aftermath/2011-09-13-bitcoin-github-migration-committers",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
+      "score": 30
+    }
+  ],
+  "aftermath/2009-10-05-newlibertystandard-first-exchange-rate": [
+    {
+      "id": "aftermath/2009-10-12-martti-malmi-first-btc-sale",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2009-10-05-newlibertystandard-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2009-10-12-martti-malmi-first-btc-sale": [
+    {
+      "id": "aftermath/2009-10-05-newlibertystandard-first-exchange-rate",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2009-05-01-martti-malmi-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2009-10-05-newlibertystandard-biography",
+      "score": 30
+    },
+    {
+      "id": "correspondence/martti-malmi/2009-07-22-bitcoin-exchange-proposal",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal": [
+    {
+      "id": "aftermath/2009-10-05-newlibertystandard-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-05-22-bitcoin-pizza-day": [
+    {
+      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2010-05-22-laszlo-hanyecz-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-08-01-bitcointalk-org-migration",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-07-11-slashdot-bitcoin-article": [
+    {
+      "id": "aftermath/2010-07-15-jeff-garzik-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2018-10-29-jeff-garzik-retrospective",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-08-15-value-overflow-incident": [
+    {
+      "id": "aftermath/2010-07-11-slashdot-bitcoin-article",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-02-28-mt-gox-bankruptcy",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-12-07-retep-diaspora-invite-first-post": [
+    {
+      "id": "aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee",
+      "score": 30
+    }
+  ],
+  "aftermath/2011-04-23-mike-hearn-satoshi-email-exchange": [
+    {
+      "id": "aftermath/2025-02-21-mike-hearn-coingeek-retrospective",
+      "score": 30
+    }
+  ],
+  "aftermath/2011-04-26-satoshi-final-known-email": [
+    {
+      "id": "aftermath/2011-06-14-wikileaks-accepts-bitcoin",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-09-13-bitcoin-github-migration-committers",
+      "score": 30
+    }
+  ],
   "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long": [
     {
       "id": "aftermath/2005-12-29-nick-szabo-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2011-09-13-bitcoin-github-migration-committers": [
+    {
+      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
+      "score": 50
+    }
+  ],
+  "aftermath/2011-10-10-dan-kaminsky-bitcoin-security": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2013-03-19-bitcoin-and-me-hal-finney": [
+    {
+      "id": "aftermath/2014-08-28-hal-finney-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2013-04-17-sergio-lerner-patoshi-analysis": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2019-04-16-sergio-lerner-patoshi-naming",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2021-09-30-plos-one-patoshi-anomaly-study",
+      "score": 30
+    }
+  ],
+  "aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery": [
+    {
+      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2019-04-16-sergio-lerner-patoshi-naming",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2021-09-30-plos-one-patoshi-anomaly-study",
+      "score": 30
+    }
+  ],
+  "aftermath/2014-07-19-wei-dai-next-tech-gold-rush": [
+    {
+      "id": "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin",
+      "score": 30
+    }
+  ],
+  "aftermath/2014-08-28-hal-finney-passes-away": [
+    {
+      "id": "aftermath/2019-08-21-hal-finney-rpow-recognition",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2009-10-05-hal-finney-dying-outside",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-08-28-fran-finney-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-08-28-hal-finney-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify": [
+    {
+      "id": "aftermath/2010-12-07-peter-todd-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims": [
+    {
+      "id": "aftermath/2016-05-02-craig-wright-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment": [
+    {
+      "id": "aftermath/2009-04-12-mike-hearn-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2025-02-21-mike-hearn-coingeek-retrospective",
+      "score": 30
+    }
+  ],
+  "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2016-09-15-peter-todd-opentimestamps-announcement": [
+    {
+      "id": "aftermath/2010-12-07-peter-todd-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2017-08-11-mike-hearn-publishes-emails": [
+    {
+      "id": "aftermath/2009-04-12-mike-hearn-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-04-23-mike-hearn-satoshi-email-exchange",
+      "score": 30
+    }
+  ],
+  "aftermath/2017-09-20-ray-dillinger-if-id-known": [
+    {
+      "id": "aftermath/2008-11-06-ray-dillinger-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2019-04-16-sergio-lerner-patoshi-naming": [
+    {
+      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2019-08-21-hal-finney-rpow-recognition": [
+    {
+      "id": "aftermath/2014-08-28-hal-finney-passes-away",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
+      "score": 30
+    }
+  ],
+  "aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine": [
+    {
+      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2020-07-20-whale-alert-satoshi-fortune",
+      "score": 30
+    }
+  ],
+  "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit": [
+    {
+      "id": "aftermath/2016-05-02-craig-wright-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2021-06-28-cobra-biography",
+      "score": 30
+    }
+  ],
+  "aftermath/2024-02-21-adam-back-retrospective-testimony": [
+    {
+      "id": "aftermath/2008-08-20-adam-back-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-21-copa-trial-malmi-testimony",
+      "score": 30
+    }
+  ],
+  "aftermath/2024-03-14-copa-v-wright-ruling": [
+    {
+      "id": "aftermath/2009-05-01-martti-malmi-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-05-02-craig-wright-bbc-economist-claim",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-05-02-craig-wright-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2021-06-28-cobra-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-21-copa-trial-malmi-testimony",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-22-mike-hearn-copa-trial-testimony",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
+      "score": 30
+    }
+  ],
+  "aftermath/2024-10-08-hbo-money-electric-peter-todd": [
+    {
+      "id": "aftermath/2010-12-07-peter-todd-biography",
+      "score": 30
+    }
+  ],
+  "analysis/2009-01-09-satoshi-code-analysis": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    }
+  ],
+  "bip/2015-11-03-bip-0125": [
+    {
+      "id": "aftermath/2010-12-07-peter-todd-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
+      "score": 30
+    }
+  ],
+  "correspondence/adam-back/2008-08-20-satoshi-to-adam-back": [
+    {
+      "id": "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2008-08-20-adam-back-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2008-08-22-wei-dai-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-21-copa-trial-malmi-testimony",
+      "score": 30
+    }
+  ],
+  "correspondence/adam-back/2008-08-21-adam-back-to-satoshi": [
+    {
+      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
+      "score": 30
+    }
+  ],
+  "correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money": [
+    {
+      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
+      "score": 30
+    }
+  ],
+  "correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email": [
+    {
+      "id": "aftermath/2009-01-11-dustin-trammell-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2021-10-23-dustin-trammell-second-node-testimony",
+      "score": 30
+    }
+  ],
+  "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins": [
+    {
+      "id": "aftermath/2009-01-11-dustin-trammell-biography",
+      "score": 30
+    }
+  ],
+  "correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet": [
+    {
+      "id": "aftermath/2010-06-11-gavin-andresen-biography",
+      "score": 30
+    }
+  ],
+  "correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit": [
+    {
+      "id": "aftermath/2011-04-26-satoshi-final-known-email",
+      "score": 30
+    }
+  ],
+  "correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2010-06-11-gavin-andresen-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-04-20-forbes-crypto-currency",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-04-26-satoshi-final-known-email",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-05-02-gavin-andresen-satoshi-retrospective",
+      "score": 30
+    },
+    {
+      "id": "correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi",
+      "score": 30
+    }
+  ],
+  "correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability": [
+    {
+      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
+      "score": 30
+    }
+  ],
+  "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release": [
+    {
+      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
+      "score": 30
+    }
+  ],
+  "correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections": [
+    {
+      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
+      "score": 30
+    }
+  ],
+  "correspondence/hal-finney/2009-01-11-first-bitcoin-transaction": [
+    {
+      "id": "aftermath/2009-01-11-hal-finney-running-bitcoin-tweet",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-08-28-hal-finney-passes-away",
+      "score": 30
+    }
+  ],
+  "correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port": [
+    {
+      "id": "aftermath/2010-05-22-laszlo-hanyecz-biography",
+      "score": 30
+    }
+  ],
+  "correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining": [
+    {
+      "id": "aftermath/2010-05-22-bitcoin-pizza-day",
+      "score": 30
+    }
+  ],
+  "correspondence/martti-malmi/2010-05-14-status-update-191": [
+    {
+      "id": "analysis/2009-01-09-satoshi-code-analysis",
+      "score": 30
+    }
+  ],
+  "correspondence/martti-malmi/2010-05-16-status-update-192": [
+    {
+      "id": "analysis/2009-01-09-satoshi-code-analysis",
+      "score": 30
+    }
+  ],
+  "correspondence/martti-malmi/2010-12-03-handover-to-gavin": [
+    {
+      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
+      "score": 30
+    }
+  ],
+  "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2009-04-12-mike-hearn-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2010-06-11-gavin-andresen-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-04-23-mike-hearn-satoshi-email-exchange",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-04-26-satoshi-final-known-email",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-05-02-gavin-andresen-satoshi-retrospective",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-02-22-mike-hearn-copa-trial-testimony",
+      "score": 30
+    },
+    {
+      "id": "correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi",
+      "score": 30
+    }
+  ],
+  "correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions": [
+    {
+      "id": "aftermath/2024-02-22-mike-hearn-copa-trial-testimony",
+      "score": 30
+    }
+  ],
+  "correspondence/nicholas-bohm/2009-06-04-bohm-to-satoshi-router-issue": [
+    {
+      "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
+      "score": 30
+    }
+  ],
+  "correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running": [
+    {
+      "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
+      "score": 30
+    }
+  ],
+  "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai": [
+    {
+      "id": "aftermath/2008-08-20-adam-back-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2008-08-22-wei-dai-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique",
+      "score": 30
+    },
+    {
+      "id": "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft",
+      "score": 30
+    }
+  ],
+  "correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai": [
+    {
+      "id": "aftermath/2008-08-22-wei-dai-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-07-19-wei-dai-next-tech-gold-rush",
+      "score": 30
+    }
+  ],
+  "correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi": [
+    {
+      "id": "aftermath/2008-08-22-wei-dai-biography",
+      "score": 30
+    }
+  ],
+  "emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows": [
+    {
+      "id": "aftermath/2009-10-26-eugen-leitl-biography",
+      "score": 30
+    }
+  ],
+  "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft": [
+    {
+      "id": "correspondence/adam-back/2008-08-20-satoshi-to-adam-back",
+      "score": 50
+    },
+    {
+      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
+      "score": 50
+    }
+  ],
+  "emails/cryptography/2008-10-31-bitcoin-whitepaper-final": [
+    {
+      "id": "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft",
+      "score": 50
+    },
+    {
+      "id": "aftermath/2009-04-12-mike-hearn-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2014-07-19-wei-dai-next-tech-gold-rush",
       "score": 30
     }
   ],
@@ -85,73 +749,297 @@
       "score": 30
     }
   ],
-  "correspondence/adam-back/2008-08-20-satoshi-to-adam-back": [
+  "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald": [
     {
-      "id": "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft",
-      "score": 50
-    },
+      "id": "aftermath/2008-11-02-james-donald-biography",
+      "score": 30
+    }
+  ],
+  "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released": [
     {
-      "id": "aftermath/2008-08-20-adam-back-biography",
+      "id": "aftermath/2009-01-11-hal-finney-running-bitcoin-tweet",
       "score": 30
     },
     {
-      "id": "aftermath/2008-08-22-wei-dai-biography",
+      "id": "aftermath/2019-04-01-fran-finney-hal-finney-profile",
       "score": 30
     },
+    {
+      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2021-10-23-dustin-trammell-second-node-testimony",
+      "score": 30
+    }
+  ],
+  "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg": [
+    {
+      "id": "aftermath/2009-01-17-jonathan-thornburg-biography",
+      "score": 30
+    }
+  ],
+  "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz": [
+    {
+      "id": "aftermath/2009-01-24-bill-frantz-biography",
+      "score": 30
+    }
+  ],
+  "emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency": [
+    {
+      "id": "aftermath/2009-02-12-martien-van-steenbergen-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2009-02-12-michel-bauwens-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-1306/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now": [
+    {
+      "id": "forum/bitcointalk/topic-1322/2010-09-30-0-3-13-rc1-for-windows-please-test",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original": [
+    {
+      "id": "aftermath/2010-05-22-laszlo-hanyecz-biography",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-158/2010-06-14-re-hostnames-instead-of-ip-addresses": [
+    {
+      "id": "forum/bitcointalk/topic-55/2010-06-11-lachesis-msg1483",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks": [
+    {
+      "id": "aftermath/2011-06-14-wikileaks-accepts-bitcoin",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-1925/2010-11-26-jgarzik-msg24681": [
+    {
+      "id": "forum/bitcointalk/topic-1901/2010-11-25-jgarzik-msg24218",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-1986/2010-11-28-re-is-safe-running-bitcoins-with-the-same-wallet-on-more-com",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig": [
+    {
+      "id": "forum/bitcointalk/topic-635/2010-07-30-xc-msg6592",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-199/2010-07-06-bitlex-msg2002": [
+    {
+      "id": "forum/bitcointalk/topic-215/2010-06-26-re-bitcoin-clients-getting-k-lined-from-the-irc-bootstrappin",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-217/2010-07-02-re-beta",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion": [
+    {
+      "id": "aftermath/2010-12-07-peter-todd-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post": [
     {
       "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
       "score": 30
     },
     {
-      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
+      "id": "aftermath/2010-12-07-peter-todd-biography",
       "score": 30
     },
     {
-      "id": "aftermath/2024-02-21-copa-trial-malmi-testimony",
+      "id": "aftermath/2010-12-07-retep-diaspora-invite-first-post",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
       "score": 30
     }
   ],
-  "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai": [
+  "forum/bitcointalk/topic-238/2010-07-06-bitcoin-0-3-released": [
     {
-      "id": "aftermath/2008-08-20-adam-back-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2008-08-22-wei-dai-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique",
-      "score": 30
-    },
-    {
-      "id": "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft",
+      "id": "forum/bitcointalk/topic-199/2010-07-06-re-0-3-almost-ready-please-test-the-mac-version",
       "score": 30
     }
   ],
-  "aftermath/2024-02-21-adam-back-retrospective-testimony": [
+  "forum/bitcointalk/topic-246/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c": [
     {
-      "id": "aftermath/2008-08-20-adam-back-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-02-21-copa-trial-malmi-testimony",
+      "id": "forum/bitcointalk/topic-373/2010-07-15-re-runtime-error",
       "score": 30
     }
   ],
-  "correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai": [
+  "forum/bitcointalk/topic-30/2010-05-19-teppy-msg1163": [
     {
-      "id": "aftermath/2008-08-22-wei-dai-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-07-19-wei-dai-next-tech-gold-rush",
+      "id": "forum/bitcointalk/topic-890/2010-08-21-zooko-msg10593",
       "score": 30
     }
   ],
-  "correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi": [
+  "forum/bitcointalk/topic-325/2010-07-14-re-hash-sec-throttling-for-democracy": [
     {
-      "id": "aftermath/2008-08-22-wei-dai-biography",
+      "id": "forum/bitcointalk/topic-383/2010-07-15-insti-msg3210",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-35/2010-02-01-bitcoinfx-msg189": [
+    {
+      "id": "forum/bitcointalk/topic-291/2010-07-13-dkaparis-msg2661",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-305/2010-07-13-dkaparis-msg2667",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-323/2010-07-13-ksd5-msg2666",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-383/2010-07-16-biomike-msg3581": [
+    {
+      "id": "forum/bitcointalk/topic-296/2010-07-16-re-fedora-13-libcrypto",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-423/2010-07-17-newlibertystandard-msg3708": [
+    {
+      "id": "forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774": [
+    {
+      "id": "forum/bitcointalk/topic-572/2010-07-27-blackeye-msg6030",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable": [
+    {
+      "id": "forum/bitcointalk/topic-286/2010-07-13-knightmb-msg2663",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-286/2010-07-13-topsoil-msg2656",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-63/2010-03-02-the-madhatter-msg603": [
+    {
+      "id": "forum/bitcointalk/topic-55/2010-06-16-lachesis-msg1597",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-55/2010-06-16-re-uri-scheme-for-bitcoin",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-750/2010-08-11-re-escrow": [
+    {
+      "id": "forum/bitcointalk/topic-1283/2010-09-26-re-how-to-make-a-distributed-bitcoin-escrow-service",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-758/2010-08-10-re-natural-deflation": [
+    {
+      "id": "forum/bitcointalk/topic-846/2010-08-17-superbitcoin-msg9980",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-765/2010-08-10-ground-loop-msg8466": [
+    {
+      "id": "forum/bitcointalk/topic-753/2010-08-09-re-bitcoin-generation-broken-in-0-3-8-64-bit",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-820/2010-08-16-ground-loop-msg9674": [
+    {
+      "id": "forum/bitcointalk/topic-955/2010-09-08-re-bitcoin-blogger-is-it-better-to-buy-or-generate-bitcoins",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch": [
+    {
+      "id": "forum/bitcointalk/topic-820/2010-08-15-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-820/2010-08-15-tcatms-4-way-sse2-for-linux-3264-bit-is-in-0310",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-873/2010-08-22-re-need-a-post-writing-up-some-things-users-should-know": [
+    {
+      "id": "forum/bitcointalk/topic-921/2010-08-25-mizerydearia-msg11131",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-969/2010-09-06-re-http-status-codes-from-the-json-rpc-api": [
+    {
+      "id": "forum/bitcointalk/topic-999/2010-09-07-version-0-3-12",
+      "score": 30
+    }
+  ],
+  "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style": [
+    {
+      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012",
+      "score": 30
+    }
+  ],
+  "forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation": [
+    {
+      "id": "aftermath/2009-02-12-michel-bauwens-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin",
+      "score": 30
+    }
+  ],
+  "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency": [
+    {
+      "id": "aftermath/2014-03-06-newsweek-dorian-nakamoto",
+      "score": 30
+    }
+  ],
+  "sourceforge/2008-11-09-bitcoin-project-registered": [
+    {
+      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
       "score": 30
     }
   ],
@@ -235,897 +1123,9 @@
       "score": 30
     }
   ],
-  "aftermath/2009-01-12-first-bitcoin-transaction": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2009-01-11-dustin-trammell-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-08-28-hal-finney-biography",
-      "score": 30
-    },
-    {
-      "id": "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2010-12-07-peter-todd-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2010-12-07-retep-diaspora-invite-first-post",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
-      "score": 30
-    }
-  ],
-  "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2009-04-12-mike-hearn-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2010-06-11-gavin-andresen-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-04-23-mike-hearn-satoshi-email-exchange",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-04-26-satoshi-final-known-email",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2016-05-02-gavin-andresen-satoshi-retrospective",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-02-22-mike-hearn-copa-trial-testimony",
-      "score": 30
-    },
-    {
-      "id": "correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi",
-      "score": 30
-    }
-  ],
-  "correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2010-06-11-gavin-andresen-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-04-20-forbes-crypto-currency",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-04-26-satoshi-final-known-email",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2016-05-02-gavin-andresen-satoshi-retrospective",
-      "score": 30
-    },
-    {
-      "id": "correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi",
-      "score": 30
-    }
-  ],
-  "aftermath/2009-08-30-bitcoin-svn-repository-committers": [
-    {
-      "id": "aftermath/2011-09-13-bitcoin-github-migration-committers",
-      "score": 50
-    },
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
-      "score": 30
-    }
-  ],
-  "analysis/2009-01-09-satoshi-code-analysis": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2013-04-17-sergio-lerner-patoshi-analysis": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2019-04-16-sergio-lerner-patoshi-naming",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2021-09-30-plos-one-patoshi-anomaly-study",
-      "score": 30
-    }
-  ],
-  "aftermath/2011-10-10-dan-kaminsky-bitcoin-security": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    }
-  ],
-  "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012",
-      "score": 30
-    }
-  ],
-  "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012": [
-    {
-      "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
-      "score": 30
-    }
-  ],
-  "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald": [
-    {
-      "id": "aftermath/2008-11-02-james-donald-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2017-09-20-ray-dillinger-if-id-known": [
-    {
-      "id": "aftermath/2008-11-06-ray-dillinger-biography",
-      "score": 30
-    }
-  ],
-  "correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email": [
-    {
-      "id": "aftermath/2009-01-11-dustin-trammell-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2021-10-23-dustin-trammell-second-node-testimony",
-      "score": 30
-    }
-  ],
-  "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins": [
-    {
-      "id": "aftermath/2009-01-11-dustin-trammell-biography",
-      "score": 30
-    }
-  ],
-  "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released": [
-    {
-      "id": "aftermath/2009-01-11-hal-finney-running-bitcoin-tweet",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2019-04-01-fran-finney-hal-finney-profile",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2021-10-23-dustin-trammell-second-node-testimony",
-      "score": 30
-    }
-  ],
-  "correspondence/hal-finney/2009-01-11-first-bitcoin-transaction": [
-    {
-      "id": "aftermath/2009-01-11-hal-finney-running-bitcoin-tweet",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-08-28-hal-finney-passes-away",
-      "score": 30
-    }
-  ],
-  "aftermath/2009-01-11-hal-finney-running-bitcoin-tweet": [
-    {
-      "id": "aftermath/2009-01-12-first-bitcoin-transaction",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-08-28-hal-finney-biography",
-      "score": 30
-    },
-    {
-      "id": "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release",
-      "score": 30
-    }
-  ],
-  "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg": [
-    {
-      "id": "aftermath/2009-01-17-jonathan-thornburg-biography",
-      "score": 30
-    }
-  ],
-  "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz": [
-    {
-      "id": "aftermath/2009-01-24-bill-frantz-biography",
-      "score": 30
-    }
-  ],
-  "emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency": [
-    {
-      "id": "aftermath/2009-02-12-martien-van-steenbergen-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2009-02-12-michel-bauwens-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin",
-      "score": 30
-    }
-  ],
-  "forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation": [
-    {
-      "id": "aftermath/2009-02-12-michel-bauwens-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin",
-      "score": 30
-    }
-  ],
-  "emails/cryptography/2008-10-31-bitcoin-whitepaper-final": [
-    {
-      "id": "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft",
-      "score": 50
-    },
-    {
-      "id": "aftermath/2009-04-12-mike-hearn-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-07-19-wei-dai-next-tech-gold-rush",
-      "score": 30
-    }
-  ],
-  "aftermath/2017-08-11-mike-hearn-publishes-emails": [
-    {
-      "id": "aftermath/2009-04-12-mike-hearn-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-04-23-mike-hearn-satoshi-email-exchange",
-      "score": 30
-    }
-  ],
-  "aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment": [
-    {
-      "id": "aftermath/2009-04-12-mike-hearn-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2025-02-21-mike-hearn-coingeek-retrospective",
-      "score": 30
-    }
-  ],
-  "aftermath/2024-03-14-copa-v-wright-ruling": [
-    {
-      "id": "aftermath/2009-05-01-martti-malmi-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2016-05-02-craig-wright-bbc-economist-claim",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2016-05-02-craig-wright-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2021-06-28-cobra-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-02-21-copa-trial-malmi-testimony",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-02-22-mike-hearn-copa-trial-testimony",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
-      "score": 30
-    }
-  ],
-  "aftermath/2009-10-12-martti-malmi-first-btc-sale": [
-    {
-      "id": "aftermath/2009-10-05-newlibertystandard-first-exchange-rate",
-      "score": 50
-    },
-    {
-      "id": "aftermath/2009-05-01-martti-malmi-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2009-10-05-newlibertystandard-biography",
-      "score": 30
-    },
-    {
-      "id": "correspondence/martti-malmi/2009-07-22-bitcoin-exchange-proposal",
-      "score": 30
-    }
-  ],
-  "aftermath/2011-09-13-bitcoin-github-migration-committers": [
-    {
-      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
-      "score": 50
-    }
-  ],
-  "sourceforge/2008-11-09-bitcoin-project-registered": [
-    {
-      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
-      "score": 30
-    }
-  ],
-  "aftermath/2010-05-22-bitcoin-pizza-day": [
-    {
-      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2010-05-22-laszlo-hanyecz-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-08-01-bitcointalk-org-migration",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin",
-      "score": 30
-    }
-  ],
-  "correspondence/martti-malmi/2010-12-03-handover-to-gavin": [
-    {
-      "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
-      "score": 30
-    }
-  ],
-  "aftermath/2014-08-28-hal-finney-passes-away": [
-    {
-      "id": "aftermath/2019-08-21-hal-finney-rpow-recognition",
-      "score": 50
-    },
-    {
-      "id": "aftermath/2009-10-05-hal-finney-dying-outside",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-08-28-fran-finney-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-08-28-hal-finney-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2009-10-05-newlibertystandard-first-exchange-rate": [
-    {
-      "id": "aftermath/2009-10-12-martti-malmi-first-btc-sale",
-      "score": 50
-    },
-    {
-      "id": "aftermath/2009-10-05-newlibertystandard-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal": [
-    {
-      "id": "aftermath/2009-10-05-newlibertystandard-biography",
-      "score": 30
-    }
-  ],
-  "emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows": [
-    {
-      "id": "aftermath/2009-10-26-eugen-leitl-biography",
-      "score": 30
-    }
-  ],
-  "correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining": [
-    {
-      "id": "aftermath/2010-05-22-bitcoin-pizza-day",
-      "score": 30
-    }
-  ],
-  "correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port": [
-    {
-      "id": "aftermath/2010-05-22-laszlo-hanyecz-biography",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original": [
-    {
-      "id": "aftermath/2010-05-22-laszlo-hanyecz-biography",
-      "score": 30
-    }
-  ],
-  "correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet": [
-    {
-      "id": "aftermath/2010-06-11-gavin-andresen-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2010-08-15-value-overflow-incident": [
-    {
-      "id": "aftermath/2010-07-11-slashdot-bitcoin-article",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2014-02-28-mt-gox-bankruptcy",
-      "score": 30
-    }
-  ],
-  "aftermath/2010-07-11-slashdot-bitcoin-article": [
-    {
-      "id": "aftermath/2010-07-15-jeff-garzik-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2018-10-29-jeff-garzik-retrospective",
-      "score": 30
-    }
-  ],
   "sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix": [
     {
       "id": "aftermath/2010-08-15-value-overflow-incident",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion": [
-    {
-      "id": "aftermath/2010-12-07-peter-todd-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
-      "score": 30
-    }
-  ],
-  "aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify": [
-    {
-      "id": "aftermath/2010-12-07-peter-todd-biography",
-      "score": 30
-    }
-  ],
-  "bip/2015-11-03-bip-0125": [
-    {
-      "id": "aftermath/2010-12-07-peter-todd-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
-      "score": 30
-    }
-  ],
-  "aftermath/2016-09-15-peter-todd-opentimestamps-announcement": [
-    {
-      "id": "aftermath/2010-12-07-peter-todd-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2024-10-08-hbo-money-electric-peter-todd": [
-    {
-      "id": "aftermath/2010-12-07-peter-todd-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2014-07-19-wei-dai-next-tech-gold-rush": [
-    {
-      "id": "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin",
-      "score": 30
-    }
-  ],
-  "correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit": [
-    {
-      "id": "aftermath/2011-04-26-satoshi-final-known-email",
-      "score": 30
-    }
-  ],
-  "aftermath/2019-08-21-hal-finney-rpow-recognition": [
-    {
-      "id": "aftermath/2014-08-28-hal-finney-passes-away",
-      "score": 50
-    },
-    {
-      "id": "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks": [
-    {
-      "id": "aftermath/2011-06-14-wikileaks-accepts-bitcoin",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin",
-      "score": 30
-    }
-  ],
-  "aftermath/2011-04-26-satoshi-final-known-email": [
-    {
-      "id": "aftermath/2011-06-14-wikileaks-accepts-bitcoin",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2011-09-13-bitcoin-github-migration-committers",
-      "score": 30
-    }
-  ],
-  "aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery": [
-    {
-      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2019-04-16-sergio-lerner-patoshi-naming",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2021-09-30-plos-one-patoshi-anomaly-study",
-      "score": 30
-    }
-  ],
-  "aftermath/2019-04-16-sergio-lerner-patoshi-naming": [
-    {
-      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine": [
-    {
-      "id": "aftermath/2013-04-17-sergio-demian-lerner-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2020-07-20-whale-alert-satoshi-fortune",
-      "score": 30
-    }
-  ],
-  "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency": [
-    {
-      "id": "aftermath/2014-03-06-newsweek-dorian-nakamoto",
-      "score": 30
-    }
-  ],
-  "aftermath/2013-03-19-bitcoin-and-me-hal-finney": [
-    {
-      "id": "aftermath/2014-08-28-hal-finney-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2010-12-07-retep-diaspora-invite-first-post": [
-    {
-      "id": "aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee",
-      "score": 30
-    }
-  ],
-  "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims": [
-    {
-      "id": "aftermath/2016-05-02-craig-wright-biography",
-      "score": 30
-    }
-  ],
-  "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit": [
-    {
-      "id": "aftermath/2016-05-02-craig-wright-biography",
-      "score": 30
-    },
-    {
-      "id": "aftermath/2021-06-28-cobra-biography",
-      "score": 30
-    }
-  ],
-  "correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability": [
-    {
-      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
-      "score": 30
-    }
-  ],
-  "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release": [
-    {
-      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
-      "score": 30
-    }
-  ],
-  "correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections": [
-    {
-      "id": "aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails",
-      "score": 30
-    }
-  ],
-  "correspondence/adam-back/2008-08-21-adam-back-to-satoshi": [
-    {
-      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
-      "score": 30
-    }
-  ],
-  "correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money": [
-    {
-      "id": "aftermath/2024-02-21-adam-back-retrospective-testimony",
-      "score": 30
-    }
-  ],
-  "correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions": [
-    {
-      "id": "aftermath/2024-02-22-mike-hearn-copa-trial-testimony",
-      "score": 30
-    }
-  ],
-  "correspondence/nicholas-bohm/2009-06-04-bohm-to-satoshi-router-issue": [
-    {
-      "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
-      "score": 30
-    }
-  ],
-  "correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running": [
-    {
-      "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
-      "score": 30
-    }
-  ],
-  "aftermath/2011-04-23-mike-hearn-satoshi-email-exchange": [
-    {
-      "id": "aftermath/2025-02-21-mike-hearn-coingeek-retrospective",
-      "score": 30
-    }
-  ],
-  "correspondence/martti-malmi/2010-05-14-status-update-191": [
-    {
-      "id": "analysis/2009-01-09-satoshi-code-analysis",
-      "score": 30
-    }
-  ],
-  "correspondence/martti-malmi/2010-05-16-status-update-192": [
-    {
-      "id": "analysis/2009-01-09-satoshi-code-analysis",
-      "score": 30
-    }
-  ],
-  "emails/cryptography/2008-10-03-bitcoin-whitepaper-draft": [
-    {
-      "id": "correspondence/adam-back/2008-08-20-satoshi-to-adam-back",
-      "score": 50
-    },
-    {
-      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
-      "score": 50
-    }
-  ],
-  "forum/bitcointalk/topic-750/2010-08-11-re-escrow": [
-    {
-      "id": "forum/bitcointalk/topic-1283/2010-09-26-re-how-to-make-a-distributed-bitcoin-escrow-service",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-1306/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now": [
-    {
-      "id": "forum/bitcointalk/topic-1322/2010-09-30-0-3-13-rc1-for-windows-please-test",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-1925/2010-11-26-jgarzik-msg24681": [
-    {
-      "id": "forum/bitcointalk/topic-1901/2010-11-25-jgarzik-msg24218",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-1986/2010-11-28-re-is-safe-running-bitcoins-with-the-same-wallet-on-more-com",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-238/2010-07-06-bitcoin-0-3-released": [
-    {
-      "id": "forum/bitcointalk/topic-199/2010-07-06-re-0-3-almost-ready-please-test-the-mac-version",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-199/2010-07-06-bitlex-msg2002": [
-    {
-      "id": "forum/bitcointalk/topic-215/2010-06-26-re-bitcoin-clients-getting-k-lined-from-the-irc-bootstrappin",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-217/2010-07-02-re-beta",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable": [
-    {
-      "id": "forum/bitcointalk/topic-286/2010-07-13-knightmb-msg2663",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-286/2010-07-13-topsoil-msg2656",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-35/2010-02-01-bitcoinfx-msg189": [
-    {
-      "id": "forum/bitcointalk/topic-291/2010-07-13-dkaparis-msg2661",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-305/2010-07-13-dkaparis-msg2667",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-323/2010-07-13-ksd5-msg2666",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-383/2010-07-16-biomike-msg3581": [
-    {
-      "id": "forum/bitcointalk/topic-296/2010-07-16-re-fedora-13-libcrypto",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-246/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c": [
-    {
-      "id": "forum/bitcointalk/topic-373/2010-07-15-re-runtime-error",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-325/2010-07-14-re-hash-sec-throttling-for-democracy": [
-    {
-      "id": "forum/bitcointalk/topic-383/2010-07-15-insti-msg3210",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-423/2010-07-17-newlibertystandard-msg3708": [
-    {
-      "id": "forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-158/2010-06-14-re-hostnames-instead-of-ip-addresses": [
-    {
-      "id": "forum/bitcointalk/topic-55/2010-06-11-lachesis-msg1483",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-63/2010-03-02-the-madhatter-msg603": [
-    {
-      "id": "forum/bitcointalk/topic-55/2010-06-16-lachesis-msg1597",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-55/2010-06-16-re-uri-scheme-for-bitcoin",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774": [
-    {
-      "id": "forum/bitcointalk/topic-572/2010-07-27-blackeye-msg6030",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig": [
-    {
-      "id": "forum/bitcointalk/topic-635/2010-07-30-xc-msg6592",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-765/2010-08-10-ground-loop-msg8466": [
-    {
-      "id": "forum/bitcointalk/topic-753/2010-08-09-re-bitcoin-generation-broken-in-0-3-8-64-bit",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch": [
-    {
-      "id": "forum/bitcointalk/topic-820/2010-08-15-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-820/2010-08-15-tcatms-4-way-sse2-for-linux-3264-bit-is-in-0310",
-      "score": 30
-    },
-    {
-      "id": "forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-758/2010-08-10-re-natural-deflation": [
-    {
-      "id": "forum/bitcointalk/topic-846/2010-08-17-superbitcoin-msg9980",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-30/2010-05-19-teppy-msg1163": [
-    {
-      "id": "forum/bitcointalk/topic-890/2010-08-21-zooko-msg10593",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-873/2010-08-22-re-need-a-post-writing-up-some-things-users-should-know": [
-    {
-      "id": "forum/bitcointalk/topic-921/2010-08-25-mizerydearia-msg11131",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-820/2010-08-16-ground-loop-msg9674": [
-    {
-      "id": "forum/bitcointalk/topic-955/2010-09-08-re-bitcoin-blogger-is-it-better-to-buy-or-generate-bitcoins",
-      "score": 30
-    }
-  ],
-  "forum/bitcointalk/topic-969/2010-09-06-re-http-status-codes-from-the-json-rpc-api": [
-    {
-      "id": "forum/bitcointalk/topic-999/2010-09-07-version-0-3-12",
       "score": 30
     }
   ]
