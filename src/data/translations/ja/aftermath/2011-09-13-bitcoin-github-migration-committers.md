@@ -40,6 +40,7 @@ secondarySources:
     url: "https://sourceforge.net/p/bitcoin/code/252/"
 relatedEntries:
   - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
+  - "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012"
 translationStatus: complete
 ---
 

@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2011-04-20-forbes-crypto-currency
+  - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
 ---
 
 *From "The Crypto-Currency" by Joshua Davis, The New Yorker, October 10, 2011:*

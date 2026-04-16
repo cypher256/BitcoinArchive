@@ -42,6 +42,7 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-final-known-email
   - analysis/2009-01-09-satoshi-code-analysis
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
+  - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
 ---
 
 Satoshi Nakamoto is the pseudonym used by the individual or group who created Bitcoin. Their true identity has never been confirmed.
@@ -98,8 +99,16 @@ Several practices overlap, while others do not. The absence of NFO files, group 
 *Learning path:*
 Satoshi knew Hashcash but was unaware of b-money and Bit Gold until directed to them by Adam Back and Wei Dai in August 2008. In academic cryptography, systematic literature surveys are standard practice, so this gap may suggest that Satoshi's knowledge was acquired outside institutional settings. Despite this, Satoshi demonstrated working knowledge across cryptography, economics, distributed systems, and network programming — an unusual breadth for someone with no visible prior community participation.
 
-*Development process:*
-Satoshi's code quality was high ([Dan Kaminsky](/BitcoinArchive/participants/dan-kaminsky/)'s [2011 audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/): "everything was anticipated"), but the development process lacked standard professional tooling — no version control, no issue tracker, no CI, .rar distribution. This combination of high code quality with informal process is distinctive.
+*Code quality assessment:*
+Reviews of Satoshi's code have been mixed, and the picture is more nuanced than either "genius" or "amateur" alone.
+
+[Dan Kaminsky](/BitcoinArchive/participants/dan-kaminsky/)'s [2011 audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/), reported in The New Yorker, contained both criticism and praise. On formatting and readability, Kaminsky said the code was "dense and inscrutable" and that "the way the whole thing was formatted was insane. Only the most paranoid, painstaking coder in the world could avoid making mistakes." On security architecture, however, he found that for every potential exploit he identified, Satoshi had already added an "Attack Removed" comment with corresponding mitigation. He concluded: "Either there's a team of people who worked on this, or this guy is a genius."
+
+Subsequent Bitcoin Core developers have been more critical of specific implementation choices:
+- In August 2014, Wladimir van der Laan filed [PR #4641](/BitcoinArchive/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) to remove Satoshi's Hungarian-notation variable naming convention from new code, calling it a style that "has bugged me since the beginning." The PR was merged.
+- Pieter Wuille and Gregory Maxwell wrote [libsecp256k1](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) (initial commit March 2013) to replace OpenSSL for elliptic-curve operations. They concluded that "OpenSSL is not a suitable library for a consensus-critical system like Bitcoin" — its signature parsing inconsistencies could potentially cause unintended chain splits. libsecp256k1 became the default for wallet signing in Bitcoin Core v0.10 (2015) and for consensus ECDSA verification in v0.12 (January 2016), delivering 2.5–5.5× the verification speed.
+
+The picture that emerges: Satoshi's *security architecture* was remarkably foresighted (Kaminsky's nine attempted exploits were all pre-blocked), but several of his *implementation choices* — Hungarian notation, OpenSSL dependency, the absence of version control, no test suite, no issue tracker, .rar distribution — were superseded over the following decade by professional tooling and Bitcoin-specific libraries written by Core developers. The combination of foresighted security design with informal development process is distinctive: Satoshi clearly thought hard about what could go wrong, but did not work within the conventions of professional collaborative software engineering.
 
 *Communication style:*
 Satoshi's communications on the cryptography mailing list and BitcoinTalk forum were calm, clear, and logically structured. He could prioritize, delegate, and make strategic decisions (e.g., declining WikiLeaks support, transitioning leadership to Gavin Andresen). The handoff to Gavin may suggest self-awareness that ongoing project operations required a different skill set.
