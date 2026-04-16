@@ -26,6 +26,7 @@ relatedEntries:
   - emails/bitcoin-list/2010-07-06-bitcoin-0-3-released
   - aftermath/2010-07-15-jeff-garzik-biography
   - forum/bitcointalk/topic-1347/2010-10-04-jgarzik-msg15215
+  - aftermath/2010-08-15-value-overflow-incident
 translationStatus: complete
 ---
 

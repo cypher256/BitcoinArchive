@@ -26,6 +26,7 @@ secondarySources:
     url: "https://astronomy.indiana.edu/"
 relatedEntries:
   - "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg"
+  - sourceforge/2009-01-09-bitcoin-v01-released
 ---
 
 Jonathan Thornburg is an astrophysicist at Indiana University. He participated in the cryptography mailing list discussion about Bitcoin in January 2009, shortly after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) released [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).

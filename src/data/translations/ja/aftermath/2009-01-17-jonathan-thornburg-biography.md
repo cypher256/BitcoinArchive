@@ -26,6 +26,7 @@ secondarySources:
     url: "https://astronomy.indiana.edu/"
 relatedEntries:
   - "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg"
+  - sourceforge/2009-01-09-bitcoin-v01-released
 translationStatus: complete
 ---
 

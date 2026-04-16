@@ -28,6 +28,7 @@ relatedEntries:
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
   - "aftermath/2024-02-21-copa-trial-malmi-testimony"
   - "aftermath/2024-02-22-mike-hearn-copa-trial-testimony"
+  - aftermath/2009-05-01-martti-malmi-biography
 translationStatus: complete
 ---
 

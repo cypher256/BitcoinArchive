@@ -24,6 +24,8 @@ secondarySources:
     url: "https://wiki.p2pfoundation.net/Michel_Bauwens"
 relatedEntries:
   - "emails/p2p-research/bitcoin-open-source/2009-02-13-re-bitcoin-open-source-p2p-currency-bauwens"
+  - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
+  - forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation
 translationStatus: complete
 ---
 

@@ -19,6 +19,9 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
 translationStatus: complete
+relatedEntries:
+  - aftermath/2009-02-12-martien-van-steenbergen-biography
+  - aftermath/2009-02-12-michel-bauwens-biography
 ---
 
 私はBitcoinと呼ばれる新しいオープンソースのP2P電子キャッシュシステムを開発した。信頼ではなく暗号学的証明に基づいているため、中央サーバーや信頼できる第三者を必要とせず、完全に分散化されている。スクリーンショットや設計論文を見てみてほしい。

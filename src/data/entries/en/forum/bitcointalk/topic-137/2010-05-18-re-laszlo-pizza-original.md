@@ -21,6 +21,7 @@ secondarySources:
 relatedEntries:
   - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - aftermath/2010-05-22-laszlo-hanyecz-biography
 ---
 
 I'll pay 10,000 bitcoins for a couple of pizzas.. like maybe 2 large ones so I have some left over for the next day. I like having left over pizza to nibble on later. You can make the pizza yourself and bring it to my house or order it for me from a delivery place, but what I'm aiming for is getting food delivered in exchange for bitcoins where I don't have to order or prepare it myself, kind of like ordering a 'breakfast platter' at a hotel or something, they just bring you something to eat and you're happy!

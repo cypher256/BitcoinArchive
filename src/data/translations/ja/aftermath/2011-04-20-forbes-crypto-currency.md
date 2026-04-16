@@ -22,6 +22,8 @@ secondarySources: []
 relatedEntries:
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
+  - aftermath/2010-06-11-gavin-andresen-biography
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
 translationStatus: complete
 ---
 

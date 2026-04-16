@@ -35,6 +35,9 @@ secondarySources:
     url: "https://github.com/research-note/bitcoin-legacy"
 relatedEntries:
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"
+  - sourceforge/2008-11-09-bitcoin-project-registered
+  - aftermath/2010-05-22-bitcoin-pizza-day
+  - correspondence/martti-malmi/2010-12-03-handover-to-gavin
 translationStatus: complete
 ---
 

@@ -41,6 +41,8 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - aftermath/2010-08-15-value-overflow-incident
+  - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
+  - aftermath/2011-04-20-forbes-crypto-currency
 translationStatus: complete
 ---
 

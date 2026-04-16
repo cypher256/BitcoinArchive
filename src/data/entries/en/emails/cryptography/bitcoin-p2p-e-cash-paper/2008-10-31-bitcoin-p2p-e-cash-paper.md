@@ -21,6 +21,8 @@ secondarySources:
 relatedEntries:
   - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-11-02-james-donald-biography
 ---
 
 I've been working on a new electronic cash system that's fully

@@ -22,6 +22,7 @@ secondarySources:
     url: "https://warwick.ac.uk/fac/soc/law/elj/jilt/1997_3/bohm/"
 relatedEntries:
   - "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed"
+  - sourceforge/2009-01-09-bitcoin-v01-released
 translationStatus: complete
 ---
 

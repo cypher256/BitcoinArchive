@@ -16,6 +16,8 @@ tags:
   - "historic"
 translationStatus: complete
 featured: true
+relatedEntries:
+  - aftermath/2009-08-30-bitcoin-svn-repository-committers
 ---
 
 サトシ・ナカモトは2008年11月9日にSourceForge.netに「bitcoin」プロジェクトを登録した。これは、2008年10月31日に暗号学メーリングリストにビットコインのホワイトペーパーを公開してからわずか9日後のことであった。

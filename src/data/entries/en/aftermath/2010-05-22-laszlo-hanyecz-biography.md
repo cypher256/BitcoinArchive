@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2010-05-22-bitcoin-pizza-day
   - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
   - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
+  - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
 ---
 
 Laszlo Hanyecz is a software developer based in Jacksonville, Florida, who made several foundational contributions to Bitcoin's early development. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on technical matters and is best known for the first real-world commercial Bitcoin transaction.

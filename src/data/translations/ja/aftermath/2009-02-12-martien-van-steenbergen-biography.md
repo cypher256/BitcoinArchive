@@ -23,6 +23,7 @@ secondarySources:
     url: "https://aardrock.com/contact/martien-van-steenbergen/"
 relatedEntries:
   - "emails/p2p-research/bitcoin-open-source/2009-02-12-re-bitcoin-open-source-p2p-currency-steenbergen"
+  - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
 translationStatus: complete
 ---
 

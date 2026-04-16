@@ -38,6 +38,9 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion
+  - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
+  - bip/2015-11-03-bip-0125
 ---
 
 Peter Todd (Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media, and previously worked as an analog electronics designer at geophysics startup Gedex Inc. He registered a GitHub account in April 2008. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.

@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
 ---
 
 Bit gold would greatly benefit from a demo, an experimental market (with e.g. a trusted third party substituted for the complex security that would be needed for a real system). Anybody want to help me code one up?

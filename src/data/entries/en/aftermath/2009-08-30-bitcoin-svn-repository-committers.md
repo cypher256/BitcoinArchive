@@ -35,6 +35,9 @@ secondarySources:
     url: "https://github.com/research-note/bitcoin-legacy"
 relatedEntries:
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"
+  - sourceforge/2008-11-09-bitcoin-project-registered
+  - aftermath/2010-05-22-bitcoin-pizza-day
+  - correspondence/martti-malmi/2010-12-03-handover-to-gavin
 ---
 
 Before Bitcoin [moved to GitHub](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.

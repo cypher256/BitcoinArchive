@@ -20,6 +20,8 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+relatedEntries:
+  - aftermath/2009-10-26-eugen-leitl-biography
 ---
 
 <!-- speaker: Liberty Standard -->

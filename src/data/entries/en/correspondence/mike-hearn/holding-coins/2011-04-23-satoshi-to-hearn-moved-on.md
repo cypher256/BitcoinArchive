@@ -27,6 +27,7 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2010-06-11-gavin-andresen-biography
 featured: true
 ---
 

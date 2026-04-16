@@ -28,6 +28,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
 relatedEntries:
   - "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
 ---
 
 James A. Donald is a cryptographer and libertarian commentator known for his involvement in the cypherpunk and cryptography communities. He maintained the website jim.com, where he wrote extensively on topics including cryptography, political philosophy, and economics.

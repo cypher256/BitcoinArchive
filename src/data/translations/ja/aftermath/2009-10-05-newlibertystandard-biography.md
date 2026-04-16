@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
+  - aftermath/2009-05-01-martti-malmi-biography
 translationStatus: complete
 ---
 

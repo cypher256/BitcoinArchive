@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+  - aftermath/2010-08-15-value-overflow-incident
 ---
 
 Jeff Garzik is a software engineer who studied computer science at Georgia Institute of Technology and worked at Red Hat, where he was a significant contributor to the Linux kernel. He discovered Bitcoin in July 2010 and became one of the most prolific early contributors to the project.

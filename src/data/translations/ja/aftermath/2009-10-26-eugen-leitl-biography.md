@@ -22,6 +22,8 @@ secondarySources:
   - name: "Eugen Leitl — Brain Preservation Foundation"
     url: "https://www.brainpreservation.org/team/eugen-leitl/"
 translationStatus: complete
+relatedEntries:
+  - emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows
 ---
 
 オイゲン・ライトルはドイツの低温生物学者、コンピューター科学者であり、トランスヒューマニストおよびサイファーパンクコミュニティの著名な人物である。トランスヒューマニスト宣言（1998年）の原著者の一人であり、匿名性、暗号技術、ナノテクノロジー、脳保存に関する議論に貢献してきた。

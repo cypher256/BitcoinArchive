@@ -22,6 +22,7 @@ secondarySources:
     url: "https://warwick.ac.uk/fac/soc/law/elj/jilt/1997_3/bohm/"
 relatedEntries:
   - "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed"
+  - sourceforge/2009-01-09-bitcoin-v01-released
 ---
 
 Nicholas Bohm is a British commercial lawyer with experience in a major City of London firm of solicitors. He has been active in discussions on cryptography, electronic commerce, and digital signature policy in the UK, serving as E-Commerce Policy Adviser for Cyber-Rights & Cyber-Liberties (UK).

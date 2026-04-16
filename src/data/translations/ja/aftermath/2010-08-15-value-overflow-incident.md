@@ -32,6 +32,8 @@ relatedEntries:
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2014-02-28-mt-gox-bankruptcy
+  - aftermath/2010-07-11-slashdot-bitcoin-article
+  - aftermath/2010-07-15-jeff-garzik-biography
 translationStatus: complete
 ---
 

@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+  - aftermath/2010-08-15-value-overflow-incident
 translationStatus: complete
 ---
 

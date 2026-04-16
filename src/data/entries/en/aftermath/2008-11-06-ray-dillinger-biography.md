@@ -32,6 +32,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2017-09-20-ray-dillinger-if-id-known
   - aftermath/2018-10-01-ray-dillinger-interview
+  - sourceforge/2009-01-09-bitcoin-v01-released
 ---
 
 Ray Dillinger is a computer scientist known by his online handles "bear" and "cryddit." He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades. He is one of two people — along with [Hal Finney](/BitcoinArchive/participants/hal-finney/) — known to have reviewed [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s Bitcoin source code before its public release.

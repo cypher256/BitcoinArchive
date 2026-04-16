@@ -34,6 +34,7 @@ relatedEntries:
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2011-04-20-forbes-crypto-currency
 translationStatus: complete
 ---
 

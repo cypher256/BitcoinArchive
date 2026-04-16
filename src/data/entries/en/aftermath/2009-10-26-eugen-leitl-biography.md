@@ -21,6 +21,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/"
   - name: "Eugen Leitl — Brain Preservation Foundation"
     url: "https://www.brainpreservation.org/team/eugen-leitl/"
+relatedEntries:
+  - emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows
 ---
 
 Eugen Leitl is a German cryobiologist, computer scientist, and prominent figure in the transhumanist and cypherpunk communities. He was one of the original authors of the Transhumanist Declaration (1998) and has contributed to discussions on anonymity, cryptography, nanotechnology, and brain preservation.

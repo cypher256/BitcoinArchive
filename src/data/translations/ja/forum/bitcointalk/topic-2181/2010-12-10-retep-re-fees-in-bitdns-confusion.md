@@ -23,6 +23,8 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — スレッド"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/threads/255/"
 translationStatus: complete
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
 ---
 
 <!-- speaker: Peter Todd -->

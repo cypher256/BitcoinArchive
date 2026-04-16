@@ -28,6 +28,7 @@ relatedEntries:
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 featured: true
 ---

@@ -31,6 +31,8 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email
   - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
+  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-12-first-bitcoin-transaction
 translationStatus: complete
 ---
 

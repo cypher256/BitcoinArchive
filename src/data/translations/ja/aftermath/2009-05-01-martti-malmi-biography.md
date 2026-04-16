@@ -36,6 +36,8 @@ relatedEntries:
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
   - aftermath/2024-02-21-copa-trial-malmi-testimony
+  - aftermath/2024-03-14-copa-v-wright-ruling
+  - aftermath/2009-10-05-newlibertystandard-biography
 translationStatus: complete
 ---
 <!-- tone-skip -->

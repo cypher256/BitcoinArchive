@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
 ---
 
 > Will buy 1 invite for $2, msg privately.

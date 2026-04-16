@@ -26,6 +26,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - "correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen"
+  - aftermath/2009-08-30-bitcoin-svn-repository-committers
 translationStatus: complete
 ---
 

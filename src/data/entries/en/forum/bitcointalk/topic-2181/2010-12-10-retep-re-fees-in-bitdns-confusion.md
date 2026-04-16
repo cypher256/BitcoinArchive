@@ -22,6 +22,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Thread"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/threads/255/"
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
 ---
 
 Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee.

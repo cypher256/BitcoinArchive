@@ -33,6 +33,7 @@ relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-21-laszlo-msg1181
   - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
   - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
+  - aftermath/2009-08-30-bitcoin-svn-repository-committers
 ---
 
 On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted on the BitcoinTalk forum:

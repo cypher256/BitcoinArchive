@@ -19,6 +19,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/543/"
   - name: "BitcoinChaser — Satoshi's Last Message"
     url: "https://bitcoinchaser.com/satoshis-last-message/"
+relatedEntries:
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2010-12-07-retep-diaspora-invite-first-post
 ---
 
 There's more work to do on DoS, but I'm doing a quick build of what I have so far in case it's needed, before venturing into more complex ideas.

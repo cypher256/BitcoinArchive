@@ -18,6 +18,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
+relatedEntries:
+  - aftermath/2009-02-12-martien-van-steenbergen-biography
+  - aftermath/2009-02-12-michel-bauwens-biography
 ---
 
 I've developed a new open source P2P e-cash system called Bitcoin. It's completely decentralized, with no central server or trusted parties, because everything is based on crypto proof instead of trust. Give it a try, or take a look at the screenshots and design paper:

@@ -18,6 +18,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/"
+relatedEntries:
+  - aftermath/2009-02-12-michel-bauwens-biography
 ---
 
 I've developed a new open source P2P e-cash system called Bitcoin. It's completely decentralized, with no central server or trusted parties, because everything is based on crypto proof instead of trust.
