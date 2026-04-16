@@ -25,6 +25,8 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+relatedEntries:
+  - "analysis/2009-01-09-satoshi-code-analysis"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

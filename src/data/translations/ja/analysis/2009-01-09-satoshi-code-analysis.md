@@ -28,6 +28,7 @@ relatedEntries:
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
+  - "correspondence/martti-malmi/2010-05-16-status-update-192"
 translationStatus: complete
 ---
 
@@ -43,5 +44,11 @@ translationStatus: complete
 - **コーディングスタイル:** ハンガリアン記法の変種、四重スラッシュ（`////`）TODOマーカー、独自マクロ（`loop`、`foreach`、`CRITICAL_BLOCK`）、Windows中心開発の一貫した使用
 - **コード成長:** 14ヶ月で19,901行→31,909行（+60%）
 - **最終活動:** セキュリティ強化、DoS対策、中央集権的セーフモードの除去 — プロジェクトの引き渡しを準備する者の特徴的な作業
+
+**75日間の空白（2010年3月〜5月）：**
+
+以下の月別コミットチャートには、2010年3月初旬から5月中旬まで `s_nakamoto` のSVNコミットが一切行われなかった顕著な空白期間が見える。サトシ自身が2010年5月16日のメールでこの不在を認めて説明している。[マルッティ・マルミが消息を尋ねた](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-05-14-status-update-191/)後（「どうしているんですか？ しばらく見かけませんでしたね」）、サトシは[返信した](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-05-16-status-update-192/)。*「私もこの1ヶ月半、他のことで忙しくしていました。4月初めからのメールをたった今ダウンロードしたところです。ほぼ整理がついたので、まもなくBitcoinに戻れるはずです」*
+
+これはこの空白期間について残されている唯一の一人称の記録である。サトシは「他のこと」が何であったかは明示していない。
 
 以下のインタラクティブなビジュアライゼーションは、本分析の統計データを提示する。

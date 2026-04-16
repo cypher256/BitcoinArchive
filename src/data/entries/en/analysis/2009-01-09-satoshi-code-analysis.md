@@ -28,6 +28,7 @@ relatedEntries:
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
+  - "correspondence/martti-malmi/2010-05-16-status-update-192"
 ---
 
 This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010). It combines two distinct data sets: **static source code analysis** of the v0.1.0 release (distributed without version control in January 2009), and **commit history analysis** from the SourceForge SVN repository, which was introduced in October 2009 with help from Martti Malmi. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history.
@@ -42,5 +43,11 @@ This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (Janua
 - **Coding style:** Consistent use of Hungarian notation variants, quad-slash (`////`) TODO markers, custom macros (`loop`, `foreach`, `CRITICAL_BLOCK`), and Windows-first development patterns
 - **Code growth:** 19,901 → 31,909 lines (+60%) over 14 months
 - **Final activity:** Security hardening, DoS mitigation, removal of centralized safe mode — work characteristic of someone preparing to hand off a project
+
+**The 75-day gap (March–May 2010):**
+
+The monthly commit chart below shows a conspicuous gap from early March to mid-May 2010 during which no SVN commits were made by `s_nakamoto`. Satoshi himself acknowledged and explained this absence in a May 16, 2010 email: after [Martti Malmi checked in on him](/BitcoinArchive/entries/correspondence/martti-malmi/2010-05-14-status-update-191/) ("How are you doing? Haven't seen you around in a while."), Satoshi [replied](/BitcoinArchive/entries/correspondence/martti-malmi/2010-05-16-status-update-192/): *"I've also been busy with other things for the last month and a half. I just now downloaded my e-mail since the beginning of April. I mostly have things sorted and should be back to Bitcoin shortly."*
+
+This is the only first-person account of the gap in the public record. Satoshi does not specify what the "other things" were.
 
 The interactive visualizations below present the statistical data from this analysis.

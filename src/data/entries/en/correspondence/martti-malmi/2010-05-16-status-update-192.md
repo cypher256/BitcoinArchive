@@ -24,6 +24,8 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+relatedEntries:
+  - "analysis/2009-01-09-satoshi-code-analysis"
 ---
 
 I've also been busy with other things for the last month and a half.  I 
