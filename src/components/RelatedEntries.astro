@@ -2,24 +2,39 @@
 /**
  * RelatedEntries.astro — Renders the "Related entries" section on entry pages.
  *
- * Reads `relatedEntries` from frontmatter (array of entry IDs), fetches
- * each target entry from the language-specific collection, and renders
- * a list of links with title and date.
+ * Merges two sources (total capped at 10 items):
+ *   1. Manual frontmatter.relatedEntries (editor-curated, priority)
+ *   2. Auto-derived candidates from src/data/derived-related.json,
+ *      computed by scripts/generate-derived-related.mjs based on inline
+ *      link structure (mutual/one-way references across entry bodies)
  *
- * Rules for the data are documented in STYLE_GUIDE.md and enforced by
+ * Rules for the manual list are documented in STYLE_GUIDE.md and enforced by
  * scripts/check-internal-links.mjs.
  */
 import { getCollection } from 'astro:content';
 import { useTranslations, formatDate, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
+import derivedData from '../data/derived-related.json';
+
+const MAX_DISPLAY = 10;
+const derivedMap = derivedData as Record<string, { id: string; score: number }[]>;
 
 interface Props {
   lang: Lang;
+  entryId: string;
   relatedIds: string[];
 }
 
-const { lang, relatedIds } = Astro.props;
+const { lang, entryId, relatedIds } = Astro.props;
 const t = useTranslations(lang);
+
+// Merge manual + derived: manual first (editor priority), then derived
+// candidates (already score-sorted) filtered to remove manual duplicates.
+const seen = new Set(relatedIds);
+const derivedIds = (derivedMap[entryId] ?? [])
+  .map((d) => d.id)
+  .filter((id) => !seen.has(id));
+const mergedIds = [...relatedIds, ...derivedIds].slice(0, MAX_DISPLAY);
 
 interface Target {
   id: string;
@@ -30,12 +45,12 @@ interface Target {
 
 let targets: Target[] = [];
 
-if (relatedIds.length > 0) {
+if (mergedIds.length > 0) {
   const collectionName = lang === 'ja' ? 'entries_ja' : 'entries';
   const all = await getCollection(collectionName as 'entries');
   const byId = new Map(all.map((e) => [e.id, e]));
 
-  targets = relatedIds
+  targets = mergedIds
     .map((id): Target | null => {
       const entry = byId.get(id);
       if (!entry) return null;

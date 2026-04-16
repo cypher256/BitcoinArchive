@@ -160,7 +160,7 @@ const breadcrumbs = [
       </div>
     )}
 
-    <RelatedEntries lang={lang} relatedIds={entry.data.relatedEntries ?? []} />
+    <RelatedEntries lang={lang} entryId={entry.id} relatedIds={entry.data.relatedEntries ?? []} />
 
     <SourceCitation
       sourceUrl={entry.data.sourceUrl}
