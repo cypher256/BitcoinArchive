@@ -32,7 +32,7 @@ relatedEntries:
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
 ---
 
-This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010). It combines two distinct data sets: **static source code analysis** of the v0.1.0 release (distributed without version control in January 2009), and **commit history analysis** from the SourceForge SVN repository, which was introduced in October 2009 with help from Martti Malmi. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history.
+This analysis by Bitcoin Institute examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010). It combines two distinct data sets: **static source code analysis** of the v0.1.0 release (distributed without version control in January 2009), and **commit history analysis** from the SourceForge SVN repository, which was introduced in October 2009 with help from Martti Malmi. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history.
 
 **Data sources:**
 - **Source code:** Original Bitcoin v0.1.0 source and tagged releases through v0.3.19
