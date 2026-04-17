@@ -6,8 +6,8 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Michael Marquardt"
 participants:
-  - name: "theymos"
-    slug: "theymos"
+  - name: "Michael Marquardt"
+    slug: "michael-marquardt"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "The Bitcoin Forum, originally set up by Martti Malmi at bitcoin.org/smf using Simple Machines Forum (SMF) software, migrated to the independent domain bitcointalk.org in August 2011. The migration was managed by forum administrator Theymos (Michael Marquardt) and preserved all existing posts, threads, and user accounts."
@@ -26,7 +26,7 @@ secondarySources:
   - name: "BitcoinTalk Forum"
     url: "https://bitcointalk.org/"
 relatedEntries:
-  - aftermath/2010-02-10-theymos-biography
+  - aftermath/2010-02-10-michael-marquardt-biography
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi

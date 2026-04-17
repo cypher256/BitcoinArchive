@@ -6,8 +6,8 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?action=profile;u=35"
 author: "Michael Marquardt"
 participants:
-  - name: "theymos"
-    slug: "theymos"
+  - name: "Michael Marquardt"
+    slug: "michael-marquardt"
 description: "Michael Marquardt (theymos): BitcoinTalk forum administrator from 2010, Bitcoin Wiki administrator, and later r/Bitcoin moderator. Satoshi Nakamoto transferred forum administrative control to him before departing, and he managed the 2011 migration from bitcoin.org/smf to the independent bitcointalk.org domain."
 isSatoshi: false
 tags:

@@ -6,8 +6,8 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=33393.0"
 author: "Michael Marquardt"
 participants:
-  - name: "theymos"
-    slug: "theymos"
+  - name: "Michael Marquardt"
+    slug: "michael-marquardt"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "マルッティ・マルミがSimple Machines Forum（SMF）ソフトウェアを使用してbitcoin.org/smfに設置したBitcoin Forumが、2011年8月に独立ドメインbitcointalk.orgに移行した。移行はフォーラム管理者のTheymos（マイケル・マーカート）が管理し、既存の投稿、スレッド、ユーザーアカウントはすべて保存された。"
@@ -26,7 +26,7 @@ secondarySources:
   - name: "BitcoinTalk Forum"
     url: "https://bitcointalk.org/"
 relatedEntries:
-  - aftermath/2010-02-10-theymos-biography
+  - aftermath/2010-02-10-michael-marquardt-biography
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi

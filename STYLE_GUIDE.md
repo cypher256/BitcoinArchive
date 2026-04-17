@@ -139,6 +139,60 @@ All three entries in the cluster declare each other, forming a closed
 bidirectional group. The site renders a "Related entries" section on
 each entry page automatically.
 
+## Participant Slug Convention
+
+Each person has **exactly one canonical slug** used across every entry
+regardless of source platform. Source-specific handles (GitHub username,
+BitcoinTalk handle, etc.) are preserved only in the `author` field; the
+`participants[].slug` and `participants[].name` are always normalized to
+the canonical form below.
+
+### Slug selection
+
+1. **Real name publicly known** → real-name slug in kebab-case, used
+   for *all* entries by that person.
+   - Examples: `jeff-garzik`, `gavin-andresen`, `pieter-wuille`,
+     `wladimir-van-der-laan`, `michael-marquardt`.
+   - Applies to BitcoinTalk posts, email correspondence, mailing-list
+     messages, GitHub commits/PRs/comments, articles, and biographies.
+
+2. **Pseudonym only, no public real name** → the person's handle as slug.
+   - Examples: `cobra`, `newlibertystandard`.
+
+### Field responsibilities
+
+- `participants[].slug` — canonical slug per rule above.
+- `participants[].name` — display name. Real name when known; handle
+  otherwise. Must match the slug's identity.
+- `author` (top-level) — source-platform attribution, preserved
+  verbatim. May differ from `participants[].name` (e.g. a forum post
+  with `author: "jgarzik"` still uses `name: "Jeff Garzik"` and
+  `slug: "jeff-garzik"`).
+
+### When a real name becomes publicly known later
+
+A pseudonym-only participant may later have their real name revealed.
+To migrate, run these steps in order:
+
+1. Bulk-rename `participants[].slug` in all entries that reference the
+   person: old handle slug → new real-name slug.
+2. Update `participants[].name` in the same entries from the handle to
+   the real name.
+3. Update `src/i18n/participants.ts`:
+   - Add the new real-name slug entry with the JA display name.
+   - Keep the old handle slug as a legacy alias mapping to the same JA
+     display name so existing external links to
+     `/participants/{old-handle}/` don't silently change meaning.
+4. If a biography file exists, rename it to the new slug
+   (e.g. `YYYY-MM-DD-cobra-biography.md` →
+   `YYYY-MM-DD-<realname>-biography.md`). Update `relatedEntries`
+   references on both sides that point to the old filename.
+5. Do **not** rename source-entry filenames such as
+   `2010-02-10-theymos-msg318.md` — those preserve the source platform's
+   original handle for fidelity. Only the `slug` inside the frontmatter
+   changes.
+6. Run `npm run check` to verify bidirectional links and slug mappings.
+
 ## Biography Linking
 
 Biographies serve as **navigation hubs** — a reader's entry point into a
