@@ -1,0 +1,107 @@
+---
+import { characters } from '../data/characters';
+import { localePath } from '../i18n/utils';
+
+interface Props {
+  lang: 'ja' | 'en';
+}
+
+const { lang } = Astro.props;
+---
+
+<div class="character-grid">
+  {characters.map((c) => (
+    <a href={localePath(`/participants/${c.slug}/`, lang)} class="character-card">
+      <div class="character-head">
+        <span class="character-name">{c.name[lang]}</span>
+        <span class="character-epithet">{c.epithet[lang]}</span>
+      </div>
+      <p class="character-bio">{c.bio[lang]}</p>
+      {c.quote && (
+        <blockquote class="character-quote">
+          <span class="quote-text">&ldquo;{c.quote.text}&rdquo;</span>
+          {c.quote.attribution && (
+            <cite class="quote-cite">— {c.quote.attribution[lang]}</cite>
+          )}
+        </blockquote>
+      )}
+    </a>
+  ))}
+</div>
+
+<style>
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .character-card {
+    display: block;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .character-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  .character-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 0.7rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .character-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .character-epithet {
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    color: var(--color-accent);
+    font-style: italic;
+  }
+  .character-bio {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--color-text);
+  }
+  .character-quote {
+    margin: 0.7rem 0 0;
+    padding: 0.5rem 0.75rem;
+    border-left: 2px solid var(--color-accent);
+    background: rgba(180, 83, 9, 0.04);
+    border-radius: 0 4px 4px 0;
+  }
+  .quote-text {
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--color-text);
+    line-height: 1.55;
+  }
+  .quote-cite {
+    display: block;
+    margin-top: 0.3rem;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-style: normal;
+    color: var(--color-text-muted);
+  }
+  @media (max-width: 768px) {
+    .character-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

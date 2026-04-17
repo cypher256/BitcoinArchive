@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
 import BtcPriceChart from '../../components/BtcPriceChart.astro';
+import CharacterIntro from '../../components/CharacterIntro.astro';
 import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag, absoluteUrl } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
@@ -130,6 +131,15 @@ function tagWeight(count: number, max: number): number {
       </a>
     </section>
 
+    <section class="dashboard-section">
+      <div class="section-header">
+        <h2>{t('home.characters' as any)}</h2>
+        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      <p class="characters-subtitle">{t('home.charactersSubtitle' as any)}</p>
+      <CharacterIntro lang={lang} />
+    </section>
+
     <div class="dashboard-grid">
       <section class="dashboard-section">
         <div class="section-header">
@@ -236,6 +246,13 @@ function tagWeight(count: number, max: number): number {
   }
   .network-section {
     margin-bottom: 1.5rem;
+  }
+  .characters-subtitle {
+    margin: -0.3rem 0 0.9rem;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-style: italic;
   }
   /* Hero */
   .hero {

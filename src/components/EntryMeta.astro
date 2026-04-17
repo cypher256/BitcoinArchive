@@ -39,7 +39,7 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
 
 {participants.length > 0 && (
   <div class="participants-row">
-    <span class="participants-label">{lang === 'ja' ? '参加者:' : 'Participants:'}</span>
+    <span class="participants-label">{lang === 'ja' ? '人物:' : 'Figures:'}</span>
     {participants.map((p, i) => (
       <>
         <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>
