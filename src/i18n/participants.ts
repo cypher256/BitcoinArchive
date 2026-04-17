@@ -68,9 +68,11 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'twitter': 'Twitter',
   'wei-dai': 'ウェイ・ダイ',
   'wladimir-van-der-laan': 'ウラジミール・ファン・デル・ラーン',
-  // Legacy handle aliases (slugs migrated to real-name form per
-  // STYLE_GUIDE.md Participant Slug Convention — kept as aliases so
-  // /participants/{handle}/ URLs continue to resolve).
+  // Legacy handle entries — kept as a defensive fallback for any code
+  // that still looks up a display name by the old handle slug. These
+  // entries do NOT create participant pages (pages are generated only
+  // from slugs in entry frontmatter), so /participants/{handle}/ URLs
+  // 404 after slug migration. See STYLE_GUIDE.md for the convention.
   'gavinandresen': 'ギャビン・アンドレセン',
   'jgarzik': 'ジェフ・ガージック',
   'sipa': 'ピーター・ウィーユ',

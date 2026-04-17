@@ -216,9 +216,9 @@ To migrate, run these steps in order:
    the real name.
 3. Update `src/i18n/participants.ts`:
    - Add the new real-name slug entry with the JA display name.
-   - Keep the old handle slug as a legacy alias mapping to the same JA
-     display name so existing external links to
-     `/participants/{old-handle}/` don't silently change meaning.
+   - Keep the old handle slug entry as well (same JA display) as a
+     defensive fallback for any code path that still looks up a display
+     name by the old slug.
 4. If a biography file exists, rename it to the new slug
    (e.g. `YYYY-MM-DD-cobra-biography.md` →
    `YYYY-MM-DD-<realname>-biography.md`). Update `relatedEntries`
@@ -228,6 +228,14 @@ To migrate, run these steps in order:
    original handle for fidelity. Only the `slug` inside the frontmatter
    changes.
 6. Run `npm run check` to verify bidirectional links and slug mappings.
+
+A slug migration is a **breaking URL change** —
+`/participants/{old-handle}/` will no longer resolve after the migration
+because participant pages are statically generated only from slugs that
+currently appear in entry frontmatter. If there is a known external
+reference to a specific old URL, add a targeted redirect (e.g. via
+`astro.config.mjs`'s `redirects` option) as a one-off; do not build a
+general aliasing mechanism speculatively.
 
 ## Biography Linking
 
