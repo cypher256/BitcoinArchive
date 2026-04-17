@@ -14,7 +14,15 @@ const t = useTranslations(lang);
 
 <div class="network-graph-wrapper">
   <p class="graph-instructions">{t('network.instructions' as any)}</p>
-  <div id="network-graph"></div>
+  <div class="graph-stage">
+    <div id="network-graph"></div>
+    <div class="zoom-controls">
+      <button type="button" id="zoom-out" class="zoom-btn" aria-label="Zoom out">−</button>
+      <input type="range" id="zoom-slider" min="0.3" max="5" step="0.05" value="1" aria-label="Zoom level" />
+      <button type="button" id="zoom-in" class="zoom-btn" aria-label="Zoom in">+</button>
+      <button type="button" id="zoom-reset" class="zoom-btn zoom-reset" aria-label="Reset zoom">⟲</button>
+    </div>
+  </div>
   <script type="application/json" id="graph-data" set:html={JSON.stringify(graphData)} />
 </div>
 
@@ -28,8 +36,11 @@ const t = useTranslations(lang);
   var nodes = data.nodes;
   var edges = data.edges;
 
+  var abortCtrl = null;
   function draw() {
     container.innerHTML = '';
+    if (abortCtrl) abortCtrl.abort();
+    abortCtrl = new AbortController();
 
     // 固定のシミュレーション空間（viewBox で自動スケーリング）
     // scale: 1.0 = 等倍、2.0 = 2倍表示（viewBox を縮小して相対的に拡大）
@@ -72,10 +83,41 @@ const t = useTranslations(lang);
 
     var g = svg.append('g');
 
+    var slider = document.getElementById('zoom-slider');
+    var zoomIn = document.getElementById('zoom-in');
+    var zoomOut = document.getElementById('zoom-out');
+    var zoomReset = document.getElementById('zoom-reset');
+
     var zoom = d3.zoom()
       .scaleExtent([0.3, 5])
-      .on('zoom', function(event) { g.attr('transform', event.transform); });
+      .on('zoom', function(event) {
+        g.attr('transform', event.transform);
+        if (slider) slider.value = event.transform.k;
+      });
     svg.call(zoom);
+
+    var signal = abortCtrl.signal;
+    if (slider) {
+      slider.value = 1;
+      slider.addEventListener('input', function() {
+        svg.transition().duration(100).call(zoom.scaleTo, parseFloat(slider.value));
+      }, { signal: signal });
+    }
+    if (zoomIn) {
+      zoomIn.addEventListener('click', function() {
+        svg.transition().duration(200).call(zoom.scaleBy, 1.3);
+      }, { signal: signal });
+    }
+    if (zoomOut) {
+      zoomOut.addEventListener('click', function() {
+        svg.transition().duration(200).call(zoom.scaleBy, 1 / 1.3);
+      }, { signal: signal });
+    }
+    if (zoomReset) {
+      zoomReset.addEventListener('click', function() {
+        svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity);
+      }, { signal: signal });
+    }
 
     var tooltip = d3.select(container).append('div')
       .attr('class', 'graph-tooltip')
@@ -270,6 +312,9 @@ const t = useTranslations(lang);
     color: var(--color-text-muted);
     margin: 0 0 0.75rem;
   }
+  .graph-stage {
+    position: relative;
+  }
   #network-graph {
     position: relative;
     width: 100%;
@@ -280,6 +325,52 @@ const t = useTranslations(lang);
   }
   #network-graph :global(svg) {
     display: block;
+  }
+  .zoom-controls {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+  }
+  .zoom-btn {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .zoom-btn:hover {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+  }
+  .zoom-btn.zoom-reset {
+    font-size: 0.9rem;
+  }
+  #zoom-slider {
+    width: 120px;
+    cursor: pointer;
+  }
+  @media (max-width: 480px) {
+    #zoom-slider { width: 80px; }
+    .zoom-controls { gap: 0.25rem; padding: 0.25rem 0.4rem; }
   }
   #network-graph :global(.graph-tooltip) {
     position: absolute;
