@@ -1,6 +1,8 @@
-// Dramatis personae for the index page.
-// All content must be historical fact — no novel-sourced quotes or scenes.
-// Irony and humor come from the facts themselves.
+// Dossiers for the index page.
+// Content must be historically grounded — bios stick to facts, and every
+// quote is a verified published statement (emails, forum posts, blog posts,
+// tweets, court records, or interviews). No novel-sourced lines.
+// Irony and humor come from the facts themselves, not editorializing.
 
 export interface CharacterBio {
   slug: string;          // participants/<slug>/ link
@@ -123,8 +125,8 @@ export const characters: CharacterBio[] = [
     name: { ja: 'マイク・ハーン', en: 'Mike Hearn' },
     epithet: { ja: '去った実装者', en: 'The Departed Implementer' },
     bio: {
-      ja: 'Googleの上級ソフトウェアエンジニアを辞めて、ビットコイン開発に専念した男。2011年4月23日、サトシ最後の私信「I\'ve moved on to other things」を受け取った一人。2016年1月、ブロックサイズ戦争の末に全コインを売却して立ち去った。それから10年、ビットコインは失敗し続けている。',
-      en: 'He left a senior engineering job at Google to work on Bitcoin full time. On April 23, 2011, he was one of the last people to receive a private email from Satoshi: "I\'ve moved on to other things." In January 2016, after the block size wars, he sold every coin he owned and walked away. Bitcoin has been failing ever since.',
+      ja: 'Googleの上級ソフトウェアエンジニアを辞めて、ビットコイン開発に専念した男。2011年4月23日、サトシ最後の私信「I\'ve moved on to other things」を受け取った一人。2016年1月、ブロックサイズ戦争の末に「Bitcoin has failed」を宣言、全コインを売却して立ち去った。',
+      en: 'He left a senior engineering job at Google to work on Bitcoin full time. On April 23, 2011, he was one of the last people to receive a private email from Satoshi: "I\'ve moved on to other things." In January 2016, after the block size wars, he declared Bitcoin had failed, sold every coin he owned, and walked away.',
     },
     quote: {
       text: 'Bitcoin has failed.',
