@@ -188,6 +188,7 @@ body text, descriptions, titles, and any editorial prose.
 | miner | マイナー | 採掘者 | ビットコインの文脈 |
 | wallet | ウォレット | 財布 | Bitcoin の文脈 |
 | interface | インターフェース | インタフェース / インターフェイス | |
+| block height | ブロック高 | ブロックの高さ / 高さ | 技術用語として「ブロック高」で統一 (「高さ」は物理的な高さを表す一般語と衝突) |
 
 ### ルール追加手順
 

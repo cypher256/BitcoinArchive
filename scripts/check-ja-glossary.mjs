@@ -79,6 +79,7 @@ const RULES = [
   { type: 'literal', deprecated: '財布', canonical: 'ウォレット', reason: 'Bitcoin の文脈では「ウォレット」で統一' },
   { type: 'literal', deprecated: 'インタフェース', canonical: 'インターフェース' },
   { type: 'literal', deprecated: 'インターフェイス', canonical: 'インターフェース' },
+  { type: 'literal', deprecated: 'ブロックの高さ', canonical: 'ブロック高', reason: '"block height" の訳は「ブロック高」で統一' },
 ];
 
 function walk(dir) {
