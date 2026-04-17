@@ -69,12 +69,18 @@ $ /usr/bin/wx-config --version
 他のディストロについては分からないが。
 
 <!-- quote: q2 -->
-> Quoteこれは私のシステムではパスが /usr/include/wx-2.9/wx/wx.h だからだ
+> > これは私のシステムではパスが /usr/include/wx-2.9/wx/wx.h だからだ
+>
 > なぜそこにあるのか？ OSに含まれていたのか、それとも自分でビルドしたのか？ もし自分でビルドしたのなら、なぜ別の場所に置かれるのか不思議だ。
 
-Quote from: bonsaikitten<bonsaikitten> necrodearia: それは正しい場所だからそこにある
+bonsaikittenのIRCより：
+
+```
+<bonsaikitten> necrodearia: それは正しい場所だからそこにある
 <bonsaikitten> necrodearia: /usr/local にないのは、そこが正しい場所ではないからだ
 <bonsaikitten> さらなる質問はFHSを読めば解決するかもしれない
+```
+
 http://www.pathname.com/fhs/
 
 Gentoo Linuxは（99.99%の）パッケージをソースからコンパイルするように設計されているので、そう、私はGentoo Linuxのパッケージ管理ソフトウェアであるPortageのebuildを使ってwxGTKをコンパイルした。

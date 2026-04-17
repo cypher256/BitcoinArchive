@@ -24,20 +24,23 @@ quotes:
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > headers.hに以下のコードがある：
+>
+> ```
+> #ifdef __WXMAC_OSX__
+> #define __WXMAC__ 1
+> #define __WXOSX__ 1
+> #define __BSD__ 1
+> #endif
+> #endif
+> ```
 <!-- /tone-skip -->
-
-#ifdef __WXMAC_OSX__
-#define __WXMAC__ 1
-#define __WXOSX__ 1
-#define __BSD__ 1
-#endif
-#endif
 
 そのコードはそもそもよくないアイデアだったので、削除する。Mac用のコードは__WXMAC_OSX__のみを使用すべきで、__WXMAC__や__WXOSX__は使わず、__BSD__の使用もやめるべきだ。
 
-Quote
+```
 #if (defined(__unix__) || defined(unix)) && !defined(USG)
 #include <sys/param.h>
 #endif
+```
 
 これでMacでBSDが確実に定義されるだろうか？

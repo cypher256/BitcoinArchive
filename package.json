@@ -14,6 +14,7 @@
     "check:ja-glossary": "node scripts/check-ja-glossary.mjs",
     "check:quotes": "node scripts/check-quotes.mjs",
     "check:internal-links": "node scripts/check-internal-links.mjs",
+    "audit:inline-reference-gaps": "node scripts/check-internal-links.mjs --inline-gaps",
     "extract:quotes": "node scripts/extract-quotes.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",

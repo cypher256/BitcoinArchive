@@ -68,12 +68,18 @@ $ /usr/bin/wx-config --version
 I'm not sure about other distros though.
 
 <!-- quote: q2 -->
-> QuoteThis is because on my system the path is /usr/include/wx-2.9/wx/wx.h
+> > This is because on my system the path is /usr/include/wx-2.9/wx/wx.h
+>
 > Why is it there?  Was it included by the OS, or did you have to build it?  If you built it, I wonder why it would put itself in a different place.
 
-Quote from: bonsaikitten<bonsaikitten> necrodearia: it is there because that's the correct location
+From bonsaikitten on IRC:
+
+```
+<bonsaikitten> necrodearia: it is there because that's the correct location
 <bonsaikitten> necrodearia: it is not in /usr/local because that's not the correct location
 <bonsaikitten> further questions might be resolved by reading FHS
+```
+
 http://www.pathname.com/fhs/
 
 Gentoo Linux is designed so that all (99.99%) packages are compiled from source, so yes, I compiled wxGTK using an ebuild from Portage, the Gentoo Linux package management software.

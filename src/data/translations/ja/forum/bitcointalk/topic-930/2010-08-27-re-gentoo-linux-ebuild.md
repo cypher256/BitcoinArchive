@@ -22,10 +22,12 @@ translationStatus: complete
 
 $(shell /usr/bin/wx-config)の問題の一つは、そこにたまたまあるどのバージョン（wx 2.8）やどの設定（非UTF-8）のwxWidgetsでも拾ってしまうことだ。-lwx_gtk2ud-2.9は正しい設定にのみ一致する。wxWidgetsが間違った設定でビルドされていると失敗する。
 
-Quote:思い出せば、freenodeの#wxwidgetsでチャットした時、そこの開発者はなぜそれが使われているのか困惑していました。
+> 思い出せば、freenodeの#wxwidgetsでチャットした時、そこの開発者はなぜそれが使われているのか困惑していました。
+
 なぜ困惑していたか言っていたか？
 
-Quote:私のシステムではパスが/usr/include/wx-2.9/wx/wx.hだからです
+> 私のシステムではパスが/usr/include/wx-2.9/wx/wx.hだからです
+
 なぜそこにあるのか？OSに含まれていたのか、それともビルドする必要があったのか？ビルドした場合、なぜ別の場所にインストールされるのか不思議だ。
 
 wxWidgets 2.9はついにDebianパッケージとして利用可能になり始めたのか？

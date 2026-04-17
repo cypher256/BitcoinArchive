@@ -16,11 +16,12 @@ secondarySources:
 ---
 
 A little late, but in case anyone else has the same issue.  The compile dump had 2 warnings (that were 20 lines long) and 2 link errors.  The errors were:
-Quoteobj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x13): In function `wxArrayString::Item(unsigned long) const':
-/usr/local/include/wx-2.9/wx/buffer.h:42: undefined reference to `wxTheAssertHandler'
 
-obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x45): In function `wxArrayString::Item(unsigned long) const':
-/usr/src/bitcoin/trunk/uint256.h:526: undefined reference to `wxOnAssert(char const*, int, char const*, char const*, wchar_t const*)'
+> obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x13): In function `wxArrayString::Item(unsigned long) const':
+> /usr/local/include/wx-2.9/wx/buffer.h:42: undefined reference to `wxTheAssertHandler'
+>
+> obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x45): In function `wxArrayString::Item(unsigned long) const':
+> /usr/src/bitcoin/trunk/uint256.h:526: undefined reference to `wxOnAssert(char const*, int, char const*, char const*, wchar_t const*)'
 
 Those are probably due to switching to the release build of wxWidgets instead of debug.  They're moving towards only debug build and ditching the release build, so they probably don't care that their release build is broken by referring to non-existent assert stuff.  There's nothing to fear about the debug build.  It's fully suitable for releases.
 

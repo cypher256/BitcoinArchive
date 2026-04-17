@@ -45,7 +45,8 @@ If there was a "verify it" step, that would take as long as the current normal i
 
 80 bytes per header and no indexing work.  Might take 1 minute.
 
-Quoteuncompressed data using a protocol (bitcoin P2P) that wasn't designed for bulk data transfer.
+> uncompressed data using a protocol (bitcoin P2P) that wasn't designed for bulk data transfer.
+
 The data is mostly hashes and keys and signatures that are uncompressible.
 
 The speed of initial download is not a reflection of the bulk data transfer rate of the protocol.  The gating factor is the indexing while it downloads.

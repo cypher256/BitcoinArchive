@@ -13,5 +13,10 @@ isSatoshi: false
 tags: []
 ---
 
-> Do I need to deinstall it before 0.3.2 installation?No, you don't.
-> What about my bitcoins I already generated? Do I need to backup them and restore after installation?No, you don't, but it's always good to make a backup.
+> Do I need to deinstall it before 0.3.2 installation?
+
+No, you don't.
+
+> What about my bitcoins I already generated? Do I need to backup them and restore after installation?
+
+No, you don't, but it's always good to make a backup.

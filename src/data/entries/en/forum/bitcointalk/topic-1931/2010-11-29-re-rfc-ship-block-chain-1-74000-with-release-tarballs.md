@@ -19,7 +19,8 @@ It seems like you're inclined to assume everything is wrong more than is actuall
 
 Writing the block index is light work.  Building the tx index is much more random access per block.  I suspect reading all the prev txins is what's slow.  Read caching would help that.  It's best if the DB does that.  Maybe it has a setting for how much cache memory to use.
 
-Quote1) bitcoin should be opening databases, not just environment, at program startup, and closing database at program shutdown. 
+> 1) bitcoin should be opening databases, not just environment, at program startup, and closing database at program shutdown.
+
 Already does that.  See CDB.  The lifetime of the (for instance) CTxDB object is only to support database transactions and to know if anything is still using the database at shutdown.
 
 > And, additionally, bitcoin forces a database checkpoint, pushing all transactions from log into main database.
@@ -38,7 +39,8 @@ Probably should add this:
         dbenv.txn_checkpoint(0, nMinutes, 0);
 ```
 
-Quote2) For the initial block download, txn commit should occur once every N records, not every record.  I suggest N=1000.
+> 2) For the initial block download, txn commit should occur once every N records, not every record.  I suggest N=1000.
+
 Does transaction commit imply flush?  That seems surprising to me.  I assume a database op wrapped in a transaction would be logged like any other database op.  Many database applications need to wrap almost every pair of ops in a transaction, such as moving money from one account to another. (debit a, credit b)  I can't imagine they're required to batch all their stuff up themselves.
 
 In the following cases, would case 1 flush once and case 2 flush twice?

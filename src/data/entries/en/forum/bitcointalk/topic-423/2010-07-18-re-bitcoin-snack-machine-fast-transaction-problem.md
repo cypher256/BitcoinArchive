@@ -25,5 +25,6 @@ quotes:
 
 I didn't say impermeable, I said good-enough.  The loss in practice would be far lower than with credit cards.
 
-Quote(for example, by refusing to propogate word of the transaction at the vending machine)
+> (for example, by refusing to propogate word of the transaction at the vending machine)
+
 No, the vending machine talks to a big service provider (aka payment processor) that provides this service to many merchants.  Think something like a credit card processor with a new job.  They would have many well connected network nodes.

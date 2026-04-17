@@ -19,7 +19,9 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> QuoteWhy? E-Mail and Jabber work the same way. Everyone can run their own server, and many do, but most users prefer to use someone else's server(s).Sure it can work that way but is that the ideal? Doesn't that make the network less robust and more vulnerable to attacks and manipulation?
+> Why? E-Mail and Jabber work the same way. Everyone can run their own server, and many do, but most users prefer to use someone else's server(s).
+>
+> Sure it can work that way but is that the ideal? Doesn't that make the network less robust and more vulnerable to attacks and manipulation?
 
 Not really. If you're worried, you can always run your very own server. 
 

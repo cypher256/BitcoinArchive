@@ -23,6 +23,7 @@
  *
  * Usage:
  *   node scripts/check-internal-links.mjs
+ *   node scripts/check-internal-links.mjs --inline-gaps
  *
  * Exit codes:
  *   0 — all internal links resolve
@@ -480,20 +481,16 @@ if (exitCode === 0) {
   console.error(`Total: ${broken.length} broken, ${mixedLang.length} mixed-lang, ${relatedIssues.length} related-issue / ${totalLinks} links`);
 }
 
-if (inlineGaps.length > 0) {
-  const showCount = process.argv.includes('--inline-gaps') ? inlineGaps.length : Math.min(10, inlineGaps.length);
+if (process.argv.includes('--inline-gaps') && inlineGaps.length > 0) {
+  const showCount = inlineGaps.length;
   console.log();
   console.log(`⚠ ${inlineGaps.length} inline-reference gap(s) detected — entries inline-linked from other bodies but not listed back in their own relatedEntries.`);
-  console.log(`  (Not an error. Editorial judgment required. Pass --inline-gaps to see all.)`);
+  console.log(`  (Not an error. Editorial judgment required.)`);
   console.log();
   for (let i = 0; i < showCount; i++) {
     const g = inlineGaps[i];
     console.log(`  ${g.targetFile}`);
     console.log(`    should list "${g.source}" in relatedEntries (it links here inline)`);
-  }
-  if (inlineGaps.length > showCount) {
-    console.log();
-    console.log(`  ... and ${inlineGaps.length - showCount} more (use --inline-gaps to see all)`);
   }
 }
 
