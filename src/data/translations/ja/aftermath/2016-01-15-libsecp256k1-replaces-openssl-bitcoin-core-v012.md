@@ -12,7 +12,7 @@ participants:
     slug: "gregory-maxwell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2016年1月15日、Bitcoin Core v0.12 は合意クリティカルな ECDSA 署名検証の実装を OpenSSL から libsecp256k1 に置換した。ピーター・ウィユとグレゴリー・マクスウェルは約3年かけて Bitcoin 専用の楕円曲線ライブラリーを書き上げた。OpenSSL の署名解析の不整合が予期せぬチェーン分裂を引き起こす可能性があると結論したためである。検証速度は2.5〜5.5倍高速化し、サトシが選定した暗号ライブラリーの一つが置き換えられた。"
+description: "2016年1月15日、Bitcoin Core v0.12 は合意クリティカルな ECDSA 署名検証の実装を OpenSSL から libsecp256k1 に置換した。ピーター・ウィーユとグレゴリー・マクスウェルは約3年かけて Bitcoin 専用の楕円曲線ライブラリーを書き上げた。OpenSSL の署名解析の不整合が予期せぬチェーン分裂を引き起こす可能性があると結論したためである。検証速度は2.5〜5.5倍高速化し、サトシが選定した暗号ライブラリーの一つが置き換えられた。"
 isSatoshi: false
 tags:
   - "pieter-wuille"
@@ -30,9 +30,10 @@ secondarySources:
     url: "https://github.com/bitcoin-core/secp256k1"
   - name: "Bitcoin Core v0.12.0 release notes"
     url: "https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md"
-  - name: "CVE-2014-3570 — ピーター・ウィユが報告した OpenSSL BN_sqr バグ"
+  - name: "CVE-2014-3570 — ピーター・ウィーユが報告した OpenSSL BN_sqr バグ"
     url: "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570"
 relatedEntries:
+  - "aftermath/2011-03-17-pieter-wuille-biography"
   - "aftermath/2010-11-19-wladimir-van-der-laan-biography"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2011-10-10-dan-kaminsky-bitcoin-security"
@@ -48,7 +49,7 @@ translationStatus: complete
 
 **背景：**
 
-libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1週間でライブラリーは Bitcoin の全ブロックチェーンを検証可能になった（当時のブロック高は約225,000）。
+libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィーユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1週間でライブラリーは Bitcoin の全ブロックチェーンを検証可能になった（当時のブロック高は約225,000）。
 
 [グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、プロジェクトは性能実験から、OpenSSL の secp256k1 実装を完全に置き換える Bitcoin 専用ライブラリーへと拡大していった。
 
@@ -60,7 +61,7 @@ libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィユ](/
 2. **性能** — libsecp256k1 は最終的に署名検証で2.5〜5.5倍高速。署名検証は新ブロック検証コストの大部分を占める。
 3. **監査可能性** — 単一の曲線と Bitcoin が必要とする操作のみに焦点を絞ることで、ライブラリーは深く査読可能なサイズに収まり、サイドチャネル攻撃に対する定数時間実装も実現できた。
 
-2014年11月、ウィユは libsecp256k1 のテストを書きながら [CVE-2014-3570](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570) を発見・報告した。これは OpenSSL の BN_sqr（二乗）ルーチンの重大なバグで、長年 OpenSSL に潜在していた。
+2014年11月、ウィーユは libsecp256k1 のテストを書きながら [CVE-2014-3570](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570) を発見・報告した。これは OpenSSL の BN_sqr（二乗）ルーチンの重大なバグで、長年 OpenSSL に潜在していた。
 
 マクスウェルは Bitcoin Magazine の記事で結論をこうまとめた。「OpenSSL は Bitcoin のような合意クリティカルなシステムには適さないライブラリーだ」
 

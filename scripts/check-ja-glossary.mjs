@@ -80,6 +80,7 @@ const RULES = [
   { type: 'literal', deprecated: 'インタフェース', canonical: 'インターフェース' },
   { type: 'literal', deprecated: 'インターフェイス', canonical: 'インターフェース' },
   { type: 'literal', deprecated: 'ブロックの高さ', canonical: 'ブロック高', reason: '"block height" の訳は「ブロック高」で統一' },
+  { type: 'literal', deprecated: 'ウィユ', canonical: 'ウィーユ', reason: 'Pieter Wuille の JA 表記は「ピーター・ウィーユ」で統一 (participants.ts 正典)。短縮形「ウィユ」も同様。' },
 ];
 
 function walk(dir) {

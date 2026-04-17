@@ -189,6 +189,7 @@ body text, descriptions, titles, and any editorial prose.
 | wallet | ウォレット | 財布 | Bitcoin の文脈 |
 | interface | インターフェース | インタフェース / インターフェイス | |
 | block height | ブロック高 | ブロックの高さ / 高さ | 技術用語として「ブロック高」で統一 (「高さ」は物理的な高さを表す一般語と衝突) |
+| Pieter Wuille | ピーター・ウィーユ | ピーター・ウィユ | participants.ts 正典に合わせて長音付きで統一 |
 
 ### ルール追加手順
 
