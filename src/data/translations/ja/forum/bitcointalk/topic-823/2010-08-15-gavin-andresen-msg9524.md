@@ -14,7 +14,9 @@ tags: []
 translationStatus: complete
 ---
 より良い修正ができるまで...ほんの少しのテストの後、これでうまくいくようだ：
-Code:--- a/main.h
+
+```diff
+--- a/main.h
 +++ b/main.h
 @@ -473,8 +473,12 @@ public:
 
@@ -38,5 +40,6 @@ Code:--- a/main.h
              if (txout.nValue < 0)
                  throw runtime_error("CTransaction::GetValueOut() : negative value");
              nValueOut += txout.nValue;
+```
 
 不正なブロック以前のブロックチェーンの部分を再ダウンロードする必要がある -- blkindex.datとblk0001.datファイルを削除すること。私はknightmbのブロックチェーンスナップショットから始めた。

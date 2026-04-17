@@ -14,10 +14,12 @@ tags: []
 ---
 
 Until there is a better fix... after a very small amount of testing this seems to work:
-Code:--- a/main.h
+
+```diff
+--- a/main.h
 +++ b/main.h
 @@ -473,8 +473,12 @@ public:
- 
+
          // Check for negative values
          foreach(const CTxOut& txout, vout)
 + {
@@ -26,7 +28,7 @@ Code:--- a/main.h
 + if (txout.nValue > 21000000*COIN)
 + return error("CTransaction::CheckTransaction() : txout.nValue over-max");
 + }
- 
+
          if (IsCoinBase())
          {
 @@ -520,6 +524,8 @@ public:
@@ -38,5 +40,6 @@ Code:--- a/main.h
              if (txout.nValue < 0)
                  throw runtime_error("CTransaction::GetValueOut() : negative value");
              nValueOut += txout.nValue;
+```
 
 You'll need to re-download the part of the block chain before the bad block-- remove the blkindex.dat and blk0001.dat files.   I started with knightmb's blockchain snapshot.
