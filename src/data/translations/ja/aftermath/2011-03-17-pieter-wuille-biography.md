@@ -25,6 +25,7 @@ secondarySources:
   - name: "Who Controls Bitcoin Core? — Jameson Lopp"
     url: "https://blog.lopp.net/who-controls-bitcoin-core/"
 relatedEntries:
+  - aftermath/2013-03-05-gregory-maxwell-biography
   - bip/2012-02-11-bip-0032
   - bip/2015-12-21-bip-0141
   - bip/2020-01-19-bip-0340
