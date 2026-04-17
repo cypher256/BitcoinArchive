@@ -13,6 +13,8 @@ isSatoshi: false
 tags:
   - "github"
   - "pull-request"
+relatedEntries:
+  - aftermath/2012-07-22-luke-dashjr-biography
 translationStatus: complete
 ---
 
