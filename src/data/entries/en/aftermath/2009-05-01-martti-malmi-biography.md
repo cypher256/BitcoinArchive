@@ -32,6 +32,7 @@ secondarySources:
   - name: "Satoshi's Bitcoin 0.2 release announcement (December 2009)"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/29/"
 relatedEntries:
+  - aftermath/2010-02-10-theymos-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
