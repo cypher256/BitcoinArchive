@@ -17,11 +17,11 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "theymos"
-    personSlug: "theymos"
+    personSlug: "michael-marquardt"
     date: "2010-10-03T11:09:51.000Z"
   - id: "q2"
     person: "theymos"
-    personSlug: "theymos"
+    personSlug: "michael-marquardt"
     date: "2010-10-03T11:09:51.000Z"
   - id: "q3"
     person: "tcatm"

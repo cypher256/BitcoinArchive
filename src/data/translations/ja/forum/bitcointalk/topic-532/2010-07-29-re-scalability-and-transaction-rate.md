@@ -17,9 +17,11 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "bytemaster"
-    personSlug: "bytemaster"
+    personSlug: "daniel-larimer"
     date: "2010-07-28T11:59:42.000Z"
     sourceEntryId: "forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269"
+relatedEntries:
+  - aftermath/2010-07-28-daniel-larimer-biography
 ---
 
 すべてのユーザーがネットワークノードであるという現在のシステムは、大規模運用を想定した構成ではない。それはすべてのUsenetユーザーが自分のNNTPサーバーを運用するようなものだ。この設計はユーザーが単なるユーザーでいられるように対応している。ノードを運用する負担が大きくなるほど、ノードの数は少なくなる。その少数のノードは大規模なサーバーファームになるだろう。残りはトランザクションのみを行い生成はしないクライアントノードになる。

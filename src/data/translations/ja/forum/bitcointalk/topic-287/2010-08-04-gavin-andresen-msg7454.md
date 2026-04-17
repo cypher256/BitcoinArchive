@@ -15,7 +15,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "bytemaster"
-    personSlug: "bytemaster"
+    personSlug: "daniel-larimer"
     date: "2010-08-03T21:22:56.000Z"
 ---
 

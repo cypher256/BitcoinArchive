@@ -6,8 +6,8 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=626.msg6566#msg6566"
 author: "bytemaster"
 participants:
-  - name: "bytemaster"
-    slug: "bytemaster"
+  - name: "Daniel Larimer"
+    slug: "daniel-larimer"
 description: "BitcoinTalkトピック626におけるbytemasterの文脈投稿。msg6542の後。"
 isSatoshi: false
 tags: []

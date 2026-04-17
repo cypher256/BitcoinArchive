@@ -14,7 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "theymos"
-    personSlug: "theymos"
+    personSlug: "michael-marquardt"
     date: "2010-09-26T16:14:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-27-theymos-msg14183"
   - id: "q2"

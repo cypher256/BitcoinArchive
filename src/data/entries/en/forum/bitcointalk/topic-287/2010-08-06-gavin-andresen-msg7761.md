@@ -14,7 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "bytemaster"
-    personSlug: "bytemaster"
+    personSlug: "daniel-larimer"
     date: "2010-08-05T18:12:02.000Z"
 ---
 

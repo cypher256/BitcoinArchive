@@ -19,7 +19,7 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-sabunir-msg368"
   - id: "q2"
     person: "theymos"
-    personSlug: "theymos"
+    personSlug: "michael-marquardt"
     date: "2010-02-16T06:01:51.000Z"
     sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-theymos-msg371"
 translationStatus: complete

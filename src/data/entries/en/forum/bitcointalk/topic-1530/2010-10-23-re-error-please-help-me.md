@@ -16,7 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "theymos"
-    personSlug: "theymos"
+    personSlug: "michael-marquardt"
     date: "2010-10-21T13:00:26.000Z"
   - id: "q2"
     person: "gavinandresen"

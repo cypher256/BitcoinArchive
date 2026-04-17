@@ -6,8 +6,8 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=635.msg7374#msg7374"
 author: "bytemaster"
 participants:
-  - name: "bytemaster"
-    slug: "bytemaster"
+  - name: "Daniel Larimer"
+    slug: "daniel-larimer"
 description: "Context post by bytemaster in BitcoinTalk topic 635. before msg7385."
 isSatoshi: false
 tags: []

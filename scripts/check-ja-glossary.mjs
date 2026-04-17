@@ -108,8 +108,10 @@ function findViolations(content, rule) {
   const lines = content.split('\n');
   let pattern;
   if (rule.type === 'trailing-choon') {
-    // Match deprecated NOT followed by ー
-    pattern = new RegExp(rule.deprecated + '(?!ー)', 'g');
+    // Match deprecated NOT followed by ー, and not preceded by a
+    // katakana letter (which would mean the match is a substring of a
+    // longer unrelated word — e.g. センサ inside コンセンサス).
+    pattern = new RegExp('(?<![\\u30A0-\\u30FF])' + rule.deprecated + '(?!ー)', 'g');
   } else {
     pattern = new RegExp(rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
   }

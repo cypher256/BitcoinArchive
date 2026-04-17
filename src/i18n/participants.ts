@@ -55,6 +55,8 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'mark-friedenbach': 'マーク・フリーデンバッハ',
   'jorge-timon': 'ホルヘ・ティモン',
   'luke-dashjr': 'ルーク・ダッシュジュニア',
+  'daniel-larimer': 'ダニエル・ラリマー',
+  'bytemaster': 'ダニエル・ラリマー',
   'ray-dillinger': 'レイ・ディリンジャー',
   'sam-bankman-fried': 'サム・バンクマン＝フリード',
   'sam-biddle': 'サム・ビドル',

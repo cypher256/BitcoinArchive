@@ -6,8 +6,8 @@ source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=195.msg7143#msg7143"
 author: "bytemaster"
 participants:
-  - name: "bytemaster"
-    slug: "bytemaster"
+  - name: "Daniel Larimer"
+    slug: "daniel-larimer"
 description: "BitcoinTalkトピック195におけるbytemasterの文脈投稿。msg1617の後。"
 isSatoshi: false
 tags: []

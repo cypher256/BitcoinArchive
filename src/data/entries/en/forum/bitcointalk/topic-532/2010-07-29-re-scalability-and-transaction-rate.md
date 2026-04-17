@@ -16,9 +16,11 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "bytemaster"
-    personSlug: "bytemaster"
+    personSlug: "daniel-larimer"
     date: "2010-07-28T11:59:42.000Z"
     sourceEntryId: "forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269"
+relatedEntries:
+  - aftermath/2010-07-28-daniel-larimer-biography
 ---
 
 The current system where every user is a network node is not the intended configuration for large scale.  That would be like every Usenet user runs their own NNTP server.  The design supports letting users just be users.  The more burden it is to run a node, the fewer nodes there will be.  Those few nodes will be big server farms.  The rest will be client nodes that only do transactions and don't generate.
