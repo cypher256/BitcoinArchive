@@ -48,12 +48,14 @@ translationStatus: complete
 
 参考までに、Gentooには特定のwxWidgetsバージョンに対して以下の回避策がある：
 
-Code:$ eselect wxwidgets list
+```
+$ eselect wxwidgets list
 Available wxWidgets profiles:
   [1]   gtk2-ansi-release-2.6
   [2]   gtk2-unicode-2.9 *
   [3]   gtk2-unicode-release-2.6
   [4]   gtk2-unicode-release-2.8
+```
 
 $ /usr/bin/wx-config --version
 2.9.1

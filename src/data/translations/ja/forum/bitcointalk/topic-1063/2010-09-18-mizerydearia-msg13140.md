@@ -15,14 +15,23 @@ translationStatus: complete
 ---
 
 以下を実行すると
-Code:/usr/bin/bitcoindBitcoinデーモンが期待通りに起動する。
+
+```bash
+/usr/bin/bitcoindBitcoinデーモンが期待通りに起動する。
+```
 
 以下を実行すると
-Code:/usr/bin/bitcoind ""error: couldn't connect to server
+
+```bash
+/usr/bin/bitcoind ""error: couldn't connect to server
+```
 
 なぜだ？これはバグか？
 
 サトシ：**バグ追跡システムを用意してもらえないか？**（サトシに気づかれたため、もう目立つ必要がなくなりサイズを縮小。もともと少しユーモアのつもりだった。）
 
 自分のGentoo Linux initスクリプトでの回避策：
-Code:BITCOIN_OPTS="-min"これにより `bitcoind "-min"` として実行される。
+
+```ini
+BITCOIN_OPTS="-min"これにより `bitcoind "-min"` として実行される。
+```

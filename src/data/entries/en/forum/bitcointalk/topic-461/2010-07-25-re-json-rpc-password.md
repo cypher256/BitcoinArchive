@@ -24,7 +24,7 @@ quotes:
 > I found what appears to be a bug: with a long enough username and password combination, the base64 encoder in bitcoind produces authorization headers that look like this:
 
 ```
-Code:...
+...
 Authorization: Basic YWJiYWJiYWFiYmE6aGVsbG93b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxkaGVsbG93
 b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk
 ```
@@ -33,7 +33,7 @@ It inserts a newline every 64 characters, which obviously breaks the Authorizati
 This can be solved by removing the newlines (and maybe '
 's) from result at the end of the Base64Encode function:
 ```cpp
-Code:result.erase(std::remove(result.begin(), result.end(), '
+result.erase(std::remove(result.begin(), result.end(), '
 '), result.end());
 result.erase(std::remove(result.begin(), result.end(), '
 '), result.end());

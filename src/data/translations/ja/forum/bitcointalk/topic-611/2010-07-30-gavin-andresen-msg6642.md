@@ -23,6 +23,9 @@ translationStatus: complete
 各エントリはトランザクションを参照するので、"tx_id"としてSHA256の16進エンコードされたトランザクションIDを追加することを提案する。そうすればlisttransactionsがrefundtransaction JSON-RPC拡張（および将来のgettransactiondetailsでトランザクションの親、トランザクションが含まれるブロックなどを取得できるもの）とうまく連携する。
 
 コードは以下のようになる：
-Code:            uint256 tx_hash = transaction.GetHash();
+
+```cpp
+            uint256 tx_hash = transaction.GetHash();
             string tx_id = tx_hash.GetHex();
             mapJSONResponse.push_back(Pair("tx_id", tx_id));
+```

@@ -30,7 +30,8 @@ quotes:
 
 これで十分だろうか？：
 
-Code:cat /proc/cpuinfo
+```bash
+cat /proc/cpuinfo
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 16
@@ -56,8 +57,11 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
+```
 
 EDIT:
 CPUIDの確認方法もわかった：
 
-Code:CPUID 444d4163 family 16, model 2, stepping 3, fUseSSE2=0
+```
+CPUID 444d4163 family 16, model 2, stepping 3, fUseSSE2=0
+```

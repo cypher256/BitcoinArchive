@@ -27,7 +27,9 @@ translationStatus: complete
 
 どうやら君は明らかにCLIよりGUIを好んでいるようだ。
 だがGUIは本当にひどいインターフェースだ。例えばSSHアクセスできる5つのノードがあって、こんなふうにループで状態を定期的に収集したい場合などに：
-Code:#!/bin/bash
+
+```bash
+#!/bin/bash
 while read host;
 do
    ssh "$host" "hostname; bitcoind listtransactions"
@@ -35,3 +37,4 @@ do
 done > report.txt < hostlist
 そして report.txt を人間にメールで送る、といった使い方だ。
 これが君にとって正当なユースケースであることを願う。
+```

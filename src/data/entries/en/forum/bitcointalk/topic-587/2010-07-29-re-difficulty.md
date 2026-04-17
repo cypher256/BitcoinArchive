@@ -18,7 +18,7 @@ secondarySources:
 You were looking at the wrong code.  Here's the code that applies:
 
 ```cpp
-Code:bool CBlock::CheckBlock() const
+bool CBlock::CheckBlock() const
 {
 ...
     // Check timestamp

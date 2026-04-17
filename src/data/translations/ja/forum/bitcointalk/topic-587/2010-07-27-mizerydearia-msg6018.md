@@ -16,7 +16,8 @@ translationStatus: complete
 
 http://nullvoid.org/bitcoin/difficultiez.php
 
-Code:<?
+```php
+<?
 	header("Content-type: text/html");
 	require_once 'jsonRPCClient.php';
 	$data=new jsonRPCClient('http://127.0.0.1:8332');
@@ -72,3 +73,4 @@ Code:<?
   </pre>
  </body>
 </html>
+```

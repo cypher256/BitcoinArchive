@@ -25,6 +25,9 @@ quotes:
 <!-- /tone-skip -->
 
 いや、できない。送るたびに「新しい」ものになり、優先度は年齢に金額を掛けたものだからだ：
-Code:// Priority is sum(valuein * age) / txsize  (valuein is the size of the bitcoin input, age is # of blocks deep, and txsize is the number of bytes the transaction takes up)
+
+```bash
+// Priority is sum(valuein * age) / txsize  (valuein is the size of the bitcoin input, age is # of blocks deep, and txsize is the number of bytes the transaction takes up)
+```
 
 ウォレット内のコインをいじればいじるほど、（他の全員に比べて）それらは新しくなり、優先度は低くなる。深く考えてはいないが、コインをそのままにして必要に応じてお釣りを作る方がおそらく最善だと思う。しかし、ぜひ自分のクライアントを作成してテストネットワークで何かを壊してみてほしい！

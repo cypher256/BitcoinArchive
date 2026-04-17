@@ -22,6 +22,9 @@ Or, maybe better, get rid of that field and just report credits as positive numb
 Since each entry refers to a transaction, I'd suggest adding a "tx_id" SHA256 hex-encoded transaction id.  Then listtransactions would play nicely with the refundtransaction JSON-RPC extension (and maybe a future gettransactiondetails that let you get transaction parents, which block the transaction was in, and so on).
 
 Code to get that would look something like:
-Code:            uint256 tx_hash = transaction.GetHash();
+
+```cpp
+            uint256 tx_hash = transaction.GetHash();
             string tx_id = tx_hash.GetHex();
             mapJSONResponse.push_back(Pair("tx_id", tx_id));
+```

@@ -26,7 +26,9 @@ quotes:
 > Debianテスティング32ビットで、いくつかのビルドエラーが出る。すべて以下に類似している：
 <!-- /tone-skip -->
 
-Code:script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出た。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようだが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用される。
+```
+script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や「make」を先に行わずに「make bitcoind」を実行した時にこのエラーが出た。bitcoindのビルド手順ではヘッダーが先にコンパイルされないようだが、headers.h.gchも削除されないため、存在する場合は古いヘッダーが使用される。
+```
 
 他にもこのエラーが出た方がいれば、最も簡単な解決策は「make clean」してからビルドを再試行することだ。
 プリコンパイル済みヘッダーは実際には必要ない。コンパイルがわずかに速くなるだけだ。廃止しようと思う。それでも、残ったファイルを削除するために、もう一度「make -f makefile.unix clean」を実行するかheaders.h.gchを削除する必要がある。

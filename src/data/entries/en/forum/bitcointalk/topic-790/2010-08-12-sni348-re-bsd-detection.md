@@ -17,7 +17,8 @@ secondarySources:
 
 This is in SVN rev 130.  Check that it compiles right.
 
-Code:#if (defined(__unix__) || defined(unix)) && !defined(USG)
+```cpp
+#if (defined(__unix__) || defined(unix)) && !defined(USG)
 #include <sys/param.h>  // to get BSD define
 #endif
 #ifdef __WXMAC_OSX__
@@ -25,3 +26,4 @@ Code:#if (defined(__unix__) || defined(unix)) && !defined(USG)
 #define BSD 1
 #endif
 #endif
+```

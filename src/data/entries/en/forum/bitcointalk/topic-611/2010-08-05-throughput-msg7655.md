@@ -27,7 +27,9 @@ quotes:
 It seems, that you certainly prefer GUI in favor of CLI interfaces.
 GUI is really awful type of interface, when you have, say 5 nodes with SSH access to them and
 want to periodically collect some state in a loop like this:
-Code:#!/bin/bash
+
+```bash
+#!/bin/bash
 while read host;
 do
    ssh "$host" "hostname; bitcoind listtransactions"
@@ -35,3 +37,4 @@ do
 done > report.txt < hostlist
 Then, report.txt may be emailed to a human.
 I hope, that is a valid usecase for you.
+```

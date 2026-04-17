@@ -15,12 +15,17 @@ translationStatus: complete
 ---
 
 コードの重要な部分は：
-Code:fileout << FLATDATA(pchMessageStart) << nSize;
+
+```
+fileout << FLATDATA(pchMessageStart) << nSize;
 ...
 fileout << *this;pchMessageStartは4バイトのマジックバイトで、FLATDATAで書き込まれる。
+```
 
 CBlock自体は<< *thisで書き込まれ、main.hのIMPLEMENT_SERIALIZEで行われる：
-Code:    IMPLEMENT_SERIALIZE
+
+```cpp
+    IMPLEMENT_SERIALIZE
     (
         READWRITE(this->nVersion);
         nVersion = this->nVersion;
@@ -36,6 +41,7 @@ Code:    IMPLEMENT_SERIALIZE
         else if (fRead)
             const_cast<CBlock*>(this)->vtx.clear();
     )
+```
 
 READWRITEマクロは適切な処理を行い、メンバーをマシン非依存の方法で読み書きする。
 

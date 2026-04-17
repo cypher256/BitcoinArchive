@@ -18,7 +18,7 @@ secondarySources:
 The lines it's tripping on:
 
 ```cpp
-Code:ERROR extern map<string, string> mapAddressBook;
+ERROR extern map<string, string> mapAddressBook;
 ERROR extern CCriticalSection cs_mapAddressBook;
 ERROR extern vector<unsigned char> vchDefaultKey;
 OK extern bool fClient;

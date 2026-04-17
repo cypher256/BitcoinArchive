@@ -33,4 +33,7 @@ quotes:
 なので：Code:./bitcoind getaddressesbylabel "Your Address" でうまくいくはずだ。
 
 または、ラベル付きでもなしでも新しいアドレスを生成すればいい：
-Code:./bitcoind getnewaddress
+
+```bash
+./bitcoind getnewaddress
+```

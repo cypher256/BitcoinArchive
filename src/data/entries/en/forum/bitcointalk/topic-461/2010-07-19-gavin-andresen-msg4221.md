@@ -17,7 +17,9 @@ The Transmission BitTorrent client does authenticated JSON-RPC; see "Remote Cont
  https://trac.transmissionbt.com/wiki/ConfigurationParameters
 
 E.g. setting.json file might look like:
-Code:{
+
+```
+{
     "rpc-enabled":1
     "rpc-authentication-required": 1,
     "rpc-password": "xxxxxxxxxx",
@@ -27,3 +29,4 @@ Code:{
     "rpc-whitelist":"127.0.0.1,192.168.*.*"
 }
 It uses HTTP 'basic' authentication (Authorization: basic base64(username:password) in the HTTP headers).
+```

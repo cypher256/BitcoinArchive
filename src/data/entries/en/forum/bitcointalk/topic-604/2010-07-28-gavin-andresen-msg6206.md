@@ -14,7 +14,10 @@ tags: []
 ---
 
 I get:
-Code:/var/folders/n7/n7Do3Krz2RWPeE+1YxvhUU+++TM/-Tmp-//cc8PgHsQ.s:879:suffix or operands invalid for `call'
+
+```
+/var/folders/n7/n7Do3Krz2RWPeE+1YxvhUU+++TM/-Tmp-//cc8PgHsQ.s:879:suffix or operands invalid for `call'
 ... compiling cryptopp/sha.cpp (latest SVN source) on my Mac (gcc version 4.2.1).
+```
 
 I fixed it by adding -DCRYPTOPP_DISABLE_ASM  to my makefile; perhaps somebody with more experience compiling C++ on a Mac can figure out a better fix.

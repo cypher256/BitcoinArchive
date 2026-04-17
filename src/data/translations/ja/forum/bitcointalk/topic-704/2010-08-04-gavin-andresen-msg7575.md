@@ -16,9 +16,11 @@ translationStatus: complete
 
 freebitcoins.appspot.comをシャットダウンした。スペインの誰かが、新しいIPアドレスとビットコインアドレスを取得し、CAPTCHAを解いて、それを何度も繰り返しているようだ：
 
-Code:79.154.133.217 - - [04/Aug/2010:12:46:55 -0700]
+```
+79.154.133.217 - - [04/Aug/2010:12:46:55 -0700]
 "POST / HTTP/1.1" 200 1294 "https://freebitcoins.appspot.com/"
 "Opera/9.80 (Windows NT 6.0; U; es-LA) Presto/2.6.30 Version/10.60,gzip(gfe)"
+```
 
 79.146.112.13 - - [04/Aug/2010:12:45:20 -0700]
 "POST / HTTP/1.1" 200 1294 "https://freebitcoins.appspot.com/"

@@ -27,13 +27,22 @@ quotes:
 同意するが、ソースからコンパイルする場合、
 
 rpc.cpp
-Code:!mapArgs.count("-disablesafemode")
-を
-Code:mapArgs.count("-safemode")
-に変更するだけで
 
-Code:// Observe lockdown
+```
+!mapArgs.count("-disablesafemode")
+を
+```
+
+```
+mapArgs.count("-safemode")
+に変更するだけで
+```
+
+```cpp
+// Observe lockdown
 throw runtime_error(strWarning);
+```
+
 となる。
 コードはこちらで確認できる：http://bitcoin.svn.sourceforge.net/viewvc/bitcoin/trunk/rpc.cpp?revision=142&view=markup
 

@@ -16,7 +16,9 @@ tags: []
 I've been working on adding -port= / -rpcport=  command line / config file options to bitcoin.  The idea is to let you run multiple copies of bitcoind on one machine; I need this because I'm planning on having at least two Bitcoin-related web services (the Bitcoin Faucet and a service to be named later), I want them to have completely separate wallets, but I don't want to rent multiple servers to host them.
 
 Usage looks like this:
-Code:$ ./bitcoind getbalance  # The TEST network Faucet bitcoind
+
+```
+$ ./bitcoind getbalance  # The TEST network Faucet bitcoind
 40616.66159265000
 $ ./bitcoind -datadir=/home/bitcoin/.bitcoinTEST2 getbalance
 1000.000000000000
@@ -24,6 +26,7 @@ $ cat /home/bitcoin/.bitcoinTEST2/bitcoin.conf
 rpcpassword=.....
 port=18666
 rpcport=18665
+```
 
 Satoshi pointed out that allowing bitcoin/bitcoind to run on a non-standard port could be dangerous, because if misconfigured two bitcoins might both open and write to the same database.  To prevent that, the <datadir>/db.log file is used as a lock so only one bitcoin can access the same datadir at a time (uses boost::interprocess::file_lock, which is purported to be cross-platform and well-behaved, even if bitcoin crashes).
 

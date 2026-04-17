@@ -21,4 +21,3 @@ To clarify what I am saying any starting of the EXE immediately reports the cras
 
 Please also try to tag the application .EXE with the version information if possible, as you can see it is 0.0.0.0.
 
-Code:

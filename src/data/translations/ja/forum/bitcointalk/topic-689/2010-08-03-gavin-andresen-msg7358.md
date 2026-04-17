@@ -26,8 +26,11 @@ translationStatus: complete
 PerlのLWPモジュールは間違いなくContent-Lengthヘッダーを設定している。HTTP 1.0では必須で、HTTP 1.1の仕様でもクライアントは「SHOULD」設定すべきとされているので、設定していなかったらむしろ驚きだ。
 
 少し格闘した末に、CPANの最初のJSON::RPCライブラリで動かすことができた：
-Code:use JSON::RPC::Client;
+
+```
+use JSON::RPC::Client;
 use Data::Dumper;
+```
 
 my $client = new JSON::RPC::Client;
 

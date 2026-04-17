@@ -15,7 +15,10 @@ translationStatus: complete
 ---
 
 以下のエラーが出る：
-Code:/var/folders/n7/n7Do3Krz2RWPeE+1YxvhUU+++TM/-Tmp-//cc8PgHsQ.s:879:suffix or operands invalid for `call'
+
+```
+/var/folders/n7/n7Do3Krz2RWPeE+1YxvhUU+++TM/-Tmp-//cc8PgHsQ.s:879:suffix or operands invalid for `call'
 ……Mac（gccバージョン4.2.1）でcryptopp/sha.cpp（最新SVNソース）をコンパイルしている時だ。
+```
 
 makefileに-DCRYPTOPP_DISABLE_ASMを追加して修正した。MacでC++をコンパイルする経験が豊富な人なら、もっと良い修正を見つけられるかもしれない。

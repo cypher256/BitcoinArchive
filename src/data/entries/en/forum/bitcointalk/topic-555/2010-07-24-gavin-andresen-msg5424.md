@@ -14,12 +14,17 @@ tags: []
 ---
 
 They key bits of code are:
-Code:fileout << FLATDATA(pchMessageStart) << nSize;
+
+```
+fileout << FLATDATA(pchMessageStart) << nSize;
 ...
 fileout << *this;pchMessageStart are the four magic bytes, and those are written with FLATDATA.
+```
 
 The CBlock itself is written by << *this, and that's done by the IMPLEMENT_SERIALIZE in main.h:
-Code:    IMPLEMENT_SERIALIZE
+
+```cpp
+    IMPLEMENT_SERIALIZE
     (
         READWRITE(this->nVersion);
         nVersion = this->nVersion;
@@ -35,6 +40,7 @@ Code:    IMPLEMENT_SERIALIZE
         else if (fRead)
             const_cast<CBlock*>(this)->vtx.clear();
     )
+```
 
 The READWRITE macros Do The Right Thing, reading in or writing out the members in a machine-independent way.
 

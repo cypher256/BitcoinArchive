@@ -38,6 +38,8 @@ quotes:
 > 64ビットをサポートするすべてのAMDは、より良いSSE2ハードウェアも搭載しているか？
 <!-- /tone-skip -->
 
-Code:$ grep -i cpuid debug.log 
+```
+$ grep -i cpuid debug.log 
 CPUID 444d4163 family 16, model 5, stepping 2, fUseSSE2=0
 /proc/cpuinfo
+```

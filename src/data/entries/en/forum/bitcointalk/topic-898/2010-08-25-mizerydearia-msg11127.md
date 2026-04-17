@@ -24,13 +24,22 @@ quotes:
 I agree, however, if you compile from source, a single change from
 
 rpc.cpp
-Code:!mapArgs.count("-disablesafemode")
-to
-Code:mapArgs.count("-safemode")
-will then
 
-Code:// Observe lockdown
+```
+!mapArgs.count("-disablesafemode")
+to
+```
+
+```
+mapArgs.count("-safemode")
+will then
+```
+
+```cpp
+// Observe lockdown
 throw runtime_error(strWarning);
+```
+
 You can examine the code at http://bitcoin.svn.sourceforge.net/viewvc/bitcoin/trunk/rpc.cpp?revision=142&view=markup to see what is happening.
 
 It seems a bit strange to only show an error when -enablesafety is used.  Perhaps it is unsafe or insecure for this to happen?

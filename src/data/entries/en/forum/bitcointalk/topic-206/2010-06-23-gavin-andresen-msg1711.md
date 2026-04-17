@@ -17,11 +17,13 @@ So I've been watching the IP addresses of people getting 5 free bitcoins from th
 
 And I see some... uh, interesting patterns.  Like these successful requests for coins:
 
-Code:79.117.152.158 - - [21/Jun/2010:12:17:02 -0700] "POST / HTTP/1.1" 200 1234 
+```
+79.117.152.158 - - [21/Jun/2010:12:17:02 -0700] "POST / HTTP/1.1" 200 1234 
 79.117.159.197 - - [21/Jun/2010:12:16:24 -0700] "POST / HTTP/1.1" 200 1234 
 79.117.135.236 - - [21/Jun/2010:12:10:23 -0700] "POST / HTTP/1.1" 200 1234
 79.117.163.238 - - [21/Jun/2010:12:08:50 -0700] "POST / HTTP/1.1" 200 1234
 79.117.155.23 - - [21/Jun/2010:12:08:07 -0700] "POST / HTTP/1.1" 200 1234 
+```
 
 My apologies if there actually are a bunch of new bitcoin users using IP addresses in the 79.117 range...  but I'm guessing somebody there is getting more than their fair share of free bitcoins.
 

@@ -16,7 +16,7 @@ secondarySources:
 ---
 
 ```diff
-Code:diff -u old\main.cpp new\main.cpp
+diff -u old\main.cpp new\main.cpp
 --- old\main.cpp Sun Oct 03 20:57:20 2010
 +++ new\main.cpp Sun Oct 03 20:57:54 2010
 @@ -2831,6 +2831,10 @@

@@ -15,9 +15,11 @@ tags: []
 
 I just shut down freebitcoins.appspot.com; it looks like somebody in Spain is being a jerk and getting a new IP address, bitcoin address, and solving the captcha.  Over and over and over again:
 
-Code:79.154.133.217 - - [04/Aug/2010:12:46:55 -0700]
+```
+79.154.133.217 - - [04/Aug/2010:12:46:55 -0700]
 "POST / HTTP/1.1" 200 1294 "https://freebitcoins.appspot.com/"
 "Opera/9.80 (Windows NT 6.0; U; es-LA) Presto/2.6.30 Version/10.60,gzip(gfe)"
+```
 
 79.146.112.13 - - [04/Aug/2010:12:45:20 -0700]
 "POST / HTTP/1.1" 200 1294 "https://freebitcoins.appspot.com/"

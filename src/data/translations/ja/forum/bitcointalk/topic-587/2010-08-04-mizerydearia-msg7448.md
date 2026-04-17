@@ -15,7 +15,9 @@ translationStatus: complete
 ---
 
 C++のSetCompact(unsigned int nCompact)関数が以下のようだとして、
-Code:CBigNum& SetCompact(unsigned int nCompact) {
+
+```cpp
+CBigNum& SetCompact(unsigned int nCompact) {
     unsigned int nSize = nCompact >> 24;
     std::vector<unsigned char> vch(4 + nSize);
     vch[3] = nSize;
@@ -26,18 +28,27 @@ Code:CBigNum& SetCompact(unsigned int nCompact) {
     return *this;
 }
 これに対応するPythonが
-Code:def uint256_from_compact(c):
+```
+
+```python
+def uint256_from_compact(c):
 	nbytes = (c >> 24) & 0xFF
 	v = (c & 0xFFFFFFL) << (8 * (nbytes - 3))
 	return v
 対応するPHPが
-Code:function uint256_from_compact($c) {
+```
+
+```php
+function uint256_from_compact($c) {
 	$nbytes = ($c >> 24) & 0xFF;
 	return bcmul($c & 0xFFFFFF,bcpow(2,8 * ($nbytes - 3)));
 }
+```
 
 そして、C++のGetcompact()関数
-Code:unsigned int GetCompact() const {
+
+```cpp
+unsigned int GetCompact() const {
     unsigned int nSize = BN_bn2mpi(this, NULL);
     std::vector<unsigned char> vch(nSize);
     nSize -= 4;
@@ -48,10 +59,14 @@ Code:unsigned int GetCompact() const {
     if (nSize >= 3) nCompact |= (vch[6] << 0);
     return nCompact;
 }
+```
+
 であるとき、C++のGetcompact()関数に対応するPython/PHPの単純なコードはどう書けばいい？
 
 このphpスニペットの中で関数を使うつもりだ
-Code:function GetNextWorkRequired($block, $bits, $nActualTimespan) {
+
+```php
+function GetNextWorkRequired($block, $bits, $nActualTimespan) {
 	$nTargetTimespan = 60 * 60 * 24 * 14; // 2 weeks
 	if ($nActualTimespan < $nTargetTimespan / 4) { $nActualTimespan = $nTargetTimespan / 4; }
 	if ($nActualTimespan > $nTargetTimespan * 4) { $nActualTimespan = $nTargetTimespan * 4; }
@@ -61,3 +76,4 @@ Code:function GetNextWorkRequired($block, $bits, $nActualTimespan) {
 	$bits = uint256_to_compact($bits); // <-- Need to translate C++ code for GetCompact()
 	return $bits;
 }
+```

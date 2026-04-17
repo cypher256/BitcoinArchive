@@ -15,5 +15,8 @@ translationStatus: complete
 ---
 
 neliskyに同意する——バグではない。UNIXのcatコマンドが""についてこう言っている：
-Code:> cat ""
+
+```
+> cat ""
 cat: : No such file or directory
+```

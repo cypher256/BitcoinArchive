@@ -25,8 +25,11 @@ quotes:
 Perl's LWP module definitely sets the Content-Length header.  I would've been surprised if it didn't, since it is required by HTTP 1.0 and the HTTP 1.1 spec says clients 'SHOULD' set it.
 
 After some struggle, I got the first JSON::RPC library at CPAN to work:
-Code:use JSON::RPC::Client;
+
+```
+use JSON::RPC::Client;
 use Data::Dumper;
+```
 
 my $client = new JSON::RPC::Client;
 

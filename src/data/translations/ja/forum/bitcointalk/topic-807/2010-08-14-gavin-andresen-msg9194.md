@@ -27,7 +27,9 @@ translationStatus: complete
 「シンプルに保つ」に俺が反論することはない。
 
 そのためのパッチは些細なものだ。
-Code:diff --git a/rpc.cpp b/rpc.cpp
+
+```diff
+diff --git a/rpc.cpp b/rpc.cpp
 index 920fe90..35a336f 100644
 --- a/rpc.cpp
 +++ b/rpc.cpp
@@ -38,3 +40,4 @@ index 920fe90..35a336f 100644
 -    return "sent";
 +    return wtx.GetHash().ToString();
  }
+```

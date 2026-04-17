@@ -22,4 +22,3 @@ translationStatus: complete
 
 また、可能であればアプリケーションのEXEにバージョン情報を付与してほしい。現在は0.0.0.0となっている。
 
-Code:

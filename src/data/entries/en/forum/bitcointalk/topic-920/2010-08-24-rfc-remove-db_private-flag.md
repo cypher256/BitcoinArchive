@@ -17,4 +17,3 @@ tags: []
 
 Wallet backups and other DB examination are easily possible in a safe, atomic, transactional fashion...   if and only if DB_PRIVATE flag is removed.
 
-Code:

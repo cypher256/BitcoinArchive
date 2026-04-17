@@ -14,5 +14,8 @@ tags: []
 ---
 
 I agree with nelisky-- not a bug.  Here's what the unix cat command has to say about "":
-Code:> cat ""
+
+```
+> cat ""
 cat: : No such file or directory
+```

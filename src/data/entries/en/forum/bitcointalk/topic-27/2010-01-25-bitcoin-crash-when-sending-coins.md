@@ -17,4 +17,3 @@ tags: []
 
 Lately when I've been trying to send coins, the following popups twice, then the application terminates.
 
-Code:

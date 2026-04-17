@@ -30,4 +30,7 @@ Hmm, yeah, it's probably normal; I THOUGHT the default address was given an empt
 So:  Code:./bitcoind getaddressesbylabel "Your Address" should work.
 
 Or just generate a new address, either with or without a label:
-Code:./bitcoind getnewaddress
+
+```bash
+./bitcoind getnewaddress
+```

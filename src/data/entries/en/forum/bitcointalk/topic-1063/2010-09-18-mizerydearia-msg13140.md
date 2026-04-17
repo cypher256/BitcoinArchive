@@ -14,14 +14,23 @@ tags: []
 ---
 
 When I execute
-Code:/usr/bin/bitcoindbitcoin daemon starts as expected.
+
+```bash
+/usr/bin/bitcoindbitcoin daemon starts as expected.
+```
 
 When I execute
-Code:/usr/bin/bitcoind ""error: couldn't connect to server
+
+```bash
+/usr/bin/bitcoind ""error: couldn't connect to server
+```
 
 How come?  Is this a bug?
 
 Satoshi: **May we have a bug tracking system please?** (size reduced since it was noticed by satoshi and is no longer necessary to stand out, which was meant as a bit humorous anyhow.)
 
 Workaround for my gentoo linux init script:
-Code:BITCOIN_OPTS="-min"which will then execute as `bitcoind "-min"`
+
+```ini
+BITCOIN_OPTS="-min"which will then execute as `bitcoind "-min"`
+```

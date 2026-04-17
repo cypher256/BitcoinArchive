@@ -18,4 +18,3 @@ tags: []
 At 21:11 dutch time (CEST), around 10 minutes ago from when I made this post, the Bitcoin clients are getting k-lined.
 
 (note, times are CEST.)
-Code:

@@ -35,6 +35,8 @@ quotes:
 > 
 > Do all AMDs that support 64-bit have the better SSE2 hardware also?
 
-Code:$ grep -i cpuid debug.log 
+```
+$ grep -i cpuid debug.log 
 CPUID 444d4163 family 16, model 5, stepping 2, fUseSSE2=0
 /proc/cpuinfo
+```

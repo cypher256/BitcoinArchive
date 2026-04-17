@@ -19,4 +19,3 @@ translationStatus: complete
 オランダ時間（CEST）21:11、この投稿をした約10分前に、ビットコインクライアントがK-Lineされている。
 
 （注：時刻はCESTである。）
-Code:

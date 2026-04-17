@@ -22,6 +22,9 @@ quotes:
 > Prioritizing larger value transactions doesn't really solve the problem because it's perfectly possible to spam by sending large amounts of bitcoin from one of your addresses to another ad infinitum.
 
 No, you can't, because every time you send them they become "new", and the priority is age multiplied by amount:
-Code:// Priority is sum(valuein * age) / txsize  (valuein is the size of the bitcoin input, age is # of blocks deep, and txsize is the number of bytes the transaction takes up)
+
+```bash
+// Priority is sum(valuein * age) / txsize  (valuein is the size of the bitcoin input, age is # of blocks deep, and txsize is the number of bytes the transaction takes up)
+```
 
 Ummm... the more you mess around with the coins in your wallet, the newer they are, and the lower their priority (relative to everybody else who might want to get their transactions into the next block).  I haven't thought deeply about it, but I bet simply leaving your coins as they are and making change as necessary will work out best.  But please, create your own client and try to break things on the test network!

@@ -25,7 +25,9 @@ quotes:
 <!-- /tone-skip -->
 
 素晴らしい発見だ！より簡単な修正は、rpc.cpp/EncodeBase64関数でBIO_FLAGS_BASE64_NO_NLを指定することだ：
-Code:diff --git a/rpc.cpp b/rpc.cpp
+
+```diff
+diff --git a/rpc.cpp b/rpc.cpp
 index 72bdc50..703b757 100644
 --- a/rpc.cpp
 +++ b/rpc.cpp
@@ -45,3 +47,4 @@ index 72bdc50..703b757 100644
      BIO_free_all(b64);
  
      return result;
+```

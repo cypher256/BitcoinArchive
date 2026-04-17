@@ -21,7 +21,7 @@ It uses the CPUID instruction to get the CPU brand, family, model number and ste
 
 Here's what I ended up with:
 ```cpp
-Code:  // We need Intel Nehalem or AMD K10 or better for 128bit SSE2
+  // We need Intel Nehalem or AMD K10 or better for 128bit SSE2
   // Nehalem = i3/i5/i7 and some Xeon
   // K10 = Opterons with 4 or more cores, Phenom, Phenom II, Athlon II
   //  Intel Core i5  family 6, model 26 or 30

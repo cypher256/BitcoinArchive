@@ -16,8 +16,10 @@ translationStatus: complete
 
 Ubuntu 10.04でbitcoind 0.3を試したが、bitcoindを実行すると以下のエラーが出る
 
-Code:05:23:02  IST: Debug: ../src/common/intl.cpp(2554): assert "!m_strShort.empty()" failed in AddCatalog(): must initialize catalog first
+```
+05:23:02  IST: Debug: ../src/common/intl.cpp(2554): assert "!m_strShort.empty()" failed in AddCatalog(): must initialize catalog first
 [Debug] Generating a stack trace... please wait../src/common/intl.cpp(2554): assert "!m_strShort.empty()" failed in AddCatalog(): must initialize catalog first
+```
 
 Call stack:
 [00] 0x80ed73b

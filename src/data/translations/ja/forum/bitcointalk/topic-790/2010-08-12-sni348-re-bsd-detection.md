@@ -18,7 +18,8 @@ translationStatus: complete
 
 SVN rev 130に入っている。正しくコンパイルされるか確認してほしい。
 
-Code:#if (defined(__unix__) || defined(unix)) && !defined(USG)
+```cpp
+#if (defined(__unix__) || defined(unix)) && !defined(USG)
 #include <sys/param.h>  // BSD定義を取得するため
 #endif
 #ifdef __WXMAC_OSX__
@@ -26,3 +27,4 @@ Code:#if (defined(__unix__) || defined(unix)) && !defined(USG)
 #define BSD 1
 #endif
 #endif
+```

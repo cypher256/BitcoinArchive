@@ -19,4 +19,3 @@ relatedEntries:
 
 We should be able to at least match Paypal's average transaction rate...
 
-Code:

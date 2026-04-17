@@ -22,7 +22,9 @@ quotes:
 > I found what appears to be a bug: with a long enough username and password combination, the base64 encoder in bitcoind ... inserts a newline every 64 characters
 
 Great catch!  Simpler fix is to specify the BIO_FLAGS_BASE64_NO_NL in the rpc.cpp/EncodeBase64 function:
-Code:diff --git a/rpc.cpp b/rpc.cpp
+
+```diff
+diff --git a/rpc.cpp b/rpc.cpp
 index 72bdc50..703b757 100644
 --- a/rpc.cpp
 +++ b/rpc.cpp
@@ -42,3 +44,4 @@ index 72bdc50..703b757 100644
      BIO_free_all(b64);
  
      return result;
+```
