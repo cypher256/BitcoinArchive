@@ -39,6 +39,7 @@ secondarySources:
   - name: "SourceForge — Bitcoin SVN r252 (final commit)"
     url: "https://sourceforge.net/p/bitcoin/code/252/"
 relatedEntries:
+  - "aftermath/2010-11-19-wladimir-van-der-laan-biography"
   - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
   - "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012"
 translationStatus: complete

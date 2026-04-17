@@ -36,6 +36,7 @@ secondarySources:
   - name: "Gavin Andresen on Twitter — CIA talk (June 14, 2011)"
     url: "https://x.com/gavinandresen/status/80785477342478336"
 relatedEntries:
+  - aftermath/2010-11-19-wladimir-van-der-laan-biography
   - correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit

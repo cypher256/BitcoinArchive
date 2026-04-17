@@ -33,6 +33,7 @@ secondarySources:
   - name: "CVE-2014-3570 — OpenSSL BN_sqr bug reported by Pieter Wuille"
     url: "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570"
 relatedEntries:
+  - "aftermath/2010-11-19-wladimir-van-der-laan-biography"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2011-10-10-dan-kaminsky-bitcoin-security"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
