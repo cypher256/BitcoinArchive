@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/173"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "gavinandresenがbitcoin/bitcoin PR #173でスレッドを開始。"
 isSatoshi: false
 translationStatus: complete

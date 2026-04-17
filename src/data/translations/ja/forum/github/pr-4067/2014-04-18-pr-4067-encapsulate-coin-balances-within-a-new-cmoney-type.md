@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/4067"
 author: "maaku"
 participants:
-  - name: "maaku"
-    slug: "maaku"
+  - name: "Mark Friedenbach"
+    slug: "mark-friedenbach"
 description: "maakuがbitcoin/bitcoin PR #4067でスレッドを開始。"
 isSatoshi: false
 tags:

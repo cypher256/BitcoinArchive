@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/issues/108"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "gavinandresen がbitcoin/bitcoin Issue #108でスレッドを開始。"
 isSatoshi: false
 tags:

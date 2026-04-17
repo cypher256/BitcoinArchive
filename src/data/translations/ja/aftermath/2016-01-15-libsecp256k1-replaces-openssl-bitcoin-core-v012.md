@@ -9,7 +9,7 @@ participants:
   - name: "Pieter Wuille"
     slug: "pieter-wuille"
   - name: "Gregory Maxwell"
-    slug: "gmaxwell"
+    slug: "gregory-maxwell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "2016年1月15日、Bitcoin Core v0.12 は合意クリティカルな ECDSA 署名検証の実装を OpenSSL から libsecp256k1 に置換した。ピーター・ウィユとグレゴリー・マクスウェルは約3年かけて Bitcoin 専用の楕円曲線ライブラリーを書き上げた。OpenSSL の署名解析の不整合が予期せぬチェーン分裂を引き起こす可能性があると結論したためである。検証速度は2.5〜5.5倍高速化し、サトシが選定した暗号ライブラリーの一つが置き換えられた。"
@@ -49,7 +49,7 @@ translationStatus: complete
 
 libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1週間でライブラリーは Bitcoin の全ブロックチェーンを検証可能になった（当時のブロック高は約225,000）。
 
-[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gmaxwell/)が参加し、プロジェクトは性能実験から、OpenSSL の secp256k1 実装を完全に置き換える Bitcoin 専用ライブラリーへと拡大していった。
+[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、プロジェクトは性能実験から、OpenSSL の secp256k1 実装を完全に置き換える Bitcoin 専用ライブラリーへと拡大していった。
 
 **OpenSSL を置換する理由：**
 

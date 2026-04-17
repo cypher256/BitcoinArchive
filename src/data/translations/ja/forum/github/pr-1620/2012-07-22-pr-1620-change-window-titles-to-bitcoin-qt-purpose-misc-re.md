@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/1620"
 author: "luke-jr"
 participants:
-  - name: "luke-jr"
-    slug: "luke-jr"
+  - name: "Luke Dashjr"
+    slug: "luke-dashjr"
 description: "ルーク・ダッシュジュニアがbitcoin/bitcoin PR #1620でスレッドを開始。"
 isSatoshi: false
 tags:

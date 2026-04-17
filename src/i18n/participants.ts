@@ -51,6 +51,10 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'peter-todd': 'ピーター・トッド',
   'pete-rizzo': 'ピート・リゾ',
   'pieter-wuille': 'ピーター・ウィーユ',
+  'gregory-maxwell': 'グレゴリー・マクスウェル',
+  'mark-friedenbach': 'マーク・フリーデンバッハ',
+  'jorge-timon': 'ホルヘ・ティモン',
+  'luke-dashjr': 'ルーク・ダッシュジュニア',
   'ray-dillinger': 'レイ・ディリンジャー',
   'sam-bankman-fried': 'サム・バンクマン＝フリード',
   'sam-biddle': 'サム・ビドル',
@@ -64,7 +68,9 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'twitter': 'Twitter',
   'wei-dai': 'ウェイ・ダイ',
   'wladimir-van-der-laan': 'ウラジミール・ファン・デル・ラーン',
-  // GitHub usernames (used as slugs in forum/github entries)
+  // Legacy handle aliases (slugs migrated to real-name form per
+  // STYLE_GUIDE.md Participant Slug Convention — kept as aliases so
+  // /participants/{handle}/ URLs continue to resolve).
   'gavinandresen': 'ギャビン・アンドレセン',
   'jgarzik': 'ジェフ・ガージック',
   'sipa': 'ピーター・ウィーユ',
@@ -72,8 +78,10 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'luke-jr': 'ルーク・ダッシュジュニア',
   'gmaxwell': 'グレゴリー・マクスウェル',
   'maaku': 'マーク・フリーデンバッハ',
-  'maflcko': 'マルコ・ファルケ',
   'jtimon': 'ホルヘ・ティモン',
+  // maflcko: real name not verified per STYLE_GUIDE evidence bar,
+  // slug kept as handle until primary-source disclosure.
+  'maflcko': 'マルコ・ファルケ',
 };
 
 export const properNameTranslationsJa: Record<string, string> = {

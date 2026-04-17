@@ -9,7 +9,7 @@ participants:
   - name: "Pieter Wuille"
     slug: "pieter-wuille"
   - name: "Gregory Maxwell"
-    slug: "gmaxwell"
+    slug: "gregory-maxwell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "On January 15, 2016, Bitcoin Core v0.12 replaced OpenSSL with libsecp256k1 for consensus-critical ECDSA signature verification. Pieter Wuille and Gregory Maxwell had spent nearly three years writing a custom elliptic-curve library specifically for Bitcoin, after concluding that OpenSSL's signature parsing inconsistencies could potentially cause unintended chain splits. The change delivered 2.5–5.5× faster verification while removing one of Satoshi's original cryptographic dependencies."
@@ -48,7 +48,7 @@ On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blo
 
 The libsecp256k1 project was started by [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/) on March 5, 2013. The initial motivation was performance — Wuille wanted to test whether the GLV-method endomorphism could deliver a meaningful speedup over OpenSSL's general-purpose elliptic-curve code. Within one week, the library could verify the entire Bitcoin blockchain (block height ~225,000 at the time).
 
-[Gregory Maxwell](/BitcoinArchive/participants/gmaxwell/) joined the effort and the project expanded from a performance experiment into a full replacement for OpenSSL's secp256k1 implementation, focused entirely on Bitcoin's needs.
+[Gregory Maxwell](/BitcoinArchive/participants/gregory-maxwell/) joined the effort and the project expanded from a performance experiment into a full replacement for OpenSSL's secp256k1 implementation, focused entirely on Bitcoin's needs.
 
 **Why replace OpenSSL:**
 

@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/4641"
 author: "laanwj"
 participants:
-  - name: "laanwj"
-    slug: "laanwj"
+  - name: "Wladimir van der Laan"
+    slug: "wladimir-van-der-laan"
 description: "PR #4641 thread starter by laanwj in bitcoin/bitcoin."
 isSatoshi: false
 tags:

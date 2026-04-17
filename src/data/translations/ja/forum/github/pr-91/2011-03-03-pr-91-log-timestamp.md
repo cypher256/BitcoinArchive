@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/91"
 author: "jgarzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
 description: "jgarzikがbitcoin/bitcoin PR #91でスレッドを開始。"
 isSatoshi: false
 tags:

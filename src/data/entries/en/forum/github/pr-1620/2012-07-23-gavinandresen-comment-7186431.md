@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/1620#issuecomment-7186431"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin PR #1620. context for Satoshi mention."
 isSatoshi: false
 tags:

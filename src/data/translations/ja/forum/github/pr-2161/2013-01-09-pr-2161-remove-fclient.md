@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/2161"
 author: "sipa"
 participants:
-  - name: "sipa"
-    slug: "sipa"
+  - name: "Pieter Wuille"
+    slug: "pieter-wuille"
 description: "sipaがbitcoin/bitcoin PR #2161でスレッドを開始。"
 isSatoshi: false
 tags:

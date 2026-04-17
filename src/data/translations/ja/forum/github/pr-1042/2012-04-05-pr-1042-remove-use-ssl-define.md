@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/1042"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "gavinandresenがbitcoin/bitcoin PR #1042でスレッドを開始。"
 isSatoshi: false
 translationStatus: complete

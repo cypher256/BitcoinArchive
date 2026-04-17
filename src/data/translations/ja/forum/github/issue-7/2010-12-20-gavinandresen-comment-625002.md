@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/issues/7#issuecomment-625002"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "bitcoin/bitcoin Issue #7におけるgavinandresen のコメント。サトシへの言及。"
 isSatoshi: false
 tags:

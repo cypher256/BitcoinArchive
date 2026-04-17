@@ -169,6 +169,42 @@ the canonical form below.
   with `author: "jgarzik"` still uses `name: "Jeff Garzik"` and
   `slug: "jeff-garzik"`).
 
+### Evidence bar for "real name publicly known"
+
+To qualify as "publicly known" and trigger rule #1, the real name must
+be documented in at least one reliable primary source:
+
+- the archive itself (an existing biography or article that names them)
+- a court document or formal legal record (e.g. COPA v Wright evidence)
+- self-disclosure — the person's own website, verified social account,
+  or public conference talk / published paper under that name
+- major press coverage that cites a primary source
+
+Folklore, speculation, unverified internet claims, or third-party
+doxxing attempts do not qualify. When in doubt, keep the handle slug
+(rule #2) until stronger evidence appears.
+
+### Edge case: handle derived from real name
+
+A handle that closely resembles the real name still uses the real-name
+slug.
+
+- `luke-jr` (handle) → `luke-dashjr` (real-name slug)
+- `sipa` → `pieter-wuille`
+- `laanwj` → `wladimir-van-der-laan`
+
+The rationale: the slug is the participant-page URL. Real-name form
+keeps it predictable, searchable, and uniform regardless of how closely
+the handle resembles the name.
+
+### Edge case: handle only, real name never disclosed
+
+Some long-term participants are publicly known only by their handle
+(e.g. `maflcko`, `cobra`, `newlibertystandard`). Keep the handle slug
+per rule #2 until a verifiable real name appears in a primary source.
+Do not promote a handle that contains a real name ("MarcoFalke")
+unless the person has themselves claimed it as their legal name.
+
 ### When a real name becomes publicly known later
 
 A pseudonym-only participant may later have their real name revealed.

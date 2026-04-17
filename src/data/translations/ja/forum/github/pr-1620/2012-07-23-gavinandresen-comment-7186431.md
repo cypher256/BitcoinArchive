@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/1620#issuecomment-7186431"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "bitcoin/bitcoin PR #1620におけるギャビン・アンドレセンの文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
 tags:

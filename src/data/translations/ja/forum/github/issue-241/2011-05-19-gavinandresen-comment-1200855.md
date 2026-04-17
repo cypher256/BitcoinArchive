@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/issues/241#issuecomment-1200855"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "bitcoin/bitcoin Issue #241におけるgavinandresen の文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
 tags:

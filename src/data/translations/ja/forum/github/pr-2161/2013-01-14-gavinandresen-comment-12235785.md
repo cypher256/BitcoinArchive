@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/2161#issuecomment-12235785"
 author: "gavinandresen"
 participants:
-  - name: "gavinandresen"
-    slug: "gavinandresen"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
 description: "bitcoin/bitcoin PR #2161におけるgavinandresenのコメント。サトシへの言及。"
 isSatoshi: false
 tags:

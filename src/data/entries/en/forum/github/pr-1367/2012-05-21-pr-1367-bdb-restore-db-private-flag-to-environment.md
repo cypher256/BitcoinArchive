@@ -6,8 +6,8 @@ source: "github"
 sourceUrl: "https://github.com/bitcoin/bitcoin/pull/1367"
 author: "jgarzik"
 participants:
-  - name: "jgarzik"
-    slug: "jgarzik"
+  - name: "Jeff Garzik"
+    slug: "jeff-garzik"
 description: "PR #1367 thread starter by jgarzik in bitcoin/bitcoin."
 isSatoshi: false
 tags:
