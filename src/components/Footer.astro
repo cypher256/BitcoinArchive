@@ -1,5 +1,5 @@
 ---
-import { useTranslations } from '../i18n/utils';
+import { useTranslations, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Props {
@@ -13,6 +13,10 @@ const t = useTranslations(lang);
 <footer class="site-footer">
   <p class="footer-text">{t('footer.description')}</p>
   <p class="footer-links">
+    <a href={localePath('/novel/', lang)} class="novel-link">
+      {t('footer.novel')}
+    </a>
+    <span class="sep" aria-hidden="true">·</span>
     <a href="https://github.com/cypher256/BitcoinArchive" target="_blank" rel="noopener">
       {t('footer.github')}
     </a>
@@ -39,6 +43,16 @@ const t = useTranslations(lang);
     color: var(--color-text-muted);
   }
   .footer-links a:hover {
+    color: var(--color-text);
+  }
+  .footer-links .sep {
+    margin: 0 0.5rem;
+    color: var(--color-border);
+  }
+  .footer-links .novel-link {
+    color: var(--color-accent);
+  }
+  .footer-links .novel-link:hover {
     color: var(--color-text);
   }
 </style>

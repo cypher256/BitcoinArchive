@@ -1,0 +1,291 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { absoluteUrl } from '../../../i18n/utils';
+
+const lang = 'ja';
+const title = '小説『ジェネシス ― 創設者の消失と約束』';
+const description = 'サトシ・ナカモトの消失をめぐる、史実に基づいたフィクション。ビットコイン・インスティテュートが収集した一次資料を土台に、一人の開発者の選択と、残された者たちの物語を描く。';
+---
+
+<BaseLayout
+  title={`${title} - ビットコイン・インスティテュート`}
+  description={description}
+  lang={lang}
+  alternateEn={absoluteUrl('/novel/', 'en')}
+>
+  <div class="container novel-page">
+    <header class="hero">
+      <p class="eyebrow">小説</p>
+      <h1>ジェネシス<br /><span class="subtitle">― 創設者の消失と約束</span></h1>
+      <p class="tagline">ビットコインが残した意志と量子コンピュータの衝撃</p>
+    </header>
+
+    <section class="lead">
+      <p>
+        サトシ・ナカモト。<br />
+        名前だけが残り、顔も、声も、国籍も、年齢さえ、誰ひとり知らない。<br />
+        2011年の春、たった二行のメールを残して、彼は姿を消した。
+      </p>
+      <blockquote>
+        <p>I've moved on to other things.<br />It's in good hands with Gavin and everyone.</p>
+        <p class="ja-quote">他のことに取り組むことにした。ギャビンたちに任せれば、安心だ。</p>
+      </blockquote>
+      <p>
+        ――なぜ2100万枚だったのか。<br />
+        ――なぜ彼は去ったのか。<br />
+        ――なぜビットコインだけが、他の仮想通貨と違うのか。
+      </p>
+      <p>
+        2025年、東京。仮想通貨カンファレンスで投げかけられた三つの問いから、物語は動き始める。
+      </p>
+    </section>
+
+    <section>
+      <h2>史実に基づいたフィクション</h2>
+      <p>
+        2008年9月15日、リーマン・ブラザーズが破綻した夜に、ある一人の開発者が、
+        すでに一年以上書き続けていたコードを見つめていた。10月31日、Torを経由して
+        暗号学メーリングリストに九ページの論文が投稿される。2009年1月3日、
+        ジェネシスブロックが刻まれ、世界がまだ何も知らないうちに、ビットコインは動き出した。
+      </p>
+      <p>
+        翌年八月、存在しないはずの1844億BTCがネットワーク上に現れ、その修復の裏側で、
+        創設者は自分が残ってしまっている矛盾に気づいていく。2014年、Newsweek誌が
+        「ビットコインの創設者を発見」と誤報した日、P2P Foundationに一通の投稿が残された。
+        2016年、「私がサトシだ」と名乗る男が現れ、2024年、ロンドンの法廷で退場する。
+      </p>
+      <p>
+        本作は、ビットコイン論文、暗号学メーリングリストの投稿、BitcoinTalkフォーラムの記録、
+        サトシがマルッティ・マルミ、マイク・ハーン、アダム・バック、ハル・フィニーらと
+        交わした私信、そしてCOPA v Wright裁判の記録など、公開されている記録に基づいた
+        フィクションである。メール、フォーラム投稿、ブロックチェーンに刻まれたハッシュ値――
+        史実として検証できる断片を徹底して繋ぎ合わせ、その行間に、一人の開発者の選択を描いた。
+      </p>
+    </section>
+
+    <section>
+      <h2>交差する時間軸</h2>
+      <p>
+        物語は、複数の時間軸を行き来する。それぞれの場面は独立して読めるが、
+        やがて一本の線に繋がっていく。
+      </p>
+      <ul class="timeline">
+        <li><strong>2025年・東京</strong> ― 二十五歳の会社員・美咲が、サトシの沈黙の意味を独自に追い始める</li>
+        <li><strong>2007-2008年</strong> ― 一人の開発者が、一年半にわたって誰にも知られずコードを書き続ける</li>
+        <li><strong>2008年秋</strong> ― リーマンショックの最中、九ページの論文が暗号学メーリングリストへ投げ込まれる</li>
+        <li><strong>2009年1月</strong> ― ジェネシスブロックに、あるメッセージが刻まれる</li>
+        <li><strong>2010年8月</strong> ― 1844億BTCがネットワークを揺らし、見えない攻撃者の影が差す</li>
+        <li><strong>2011年春</strong> ― サトシはマイク・ハーンへのたった二行のメールを残して、消える</li>
+        <li><strong>2024年3月</strong> ― ロンドンの法廷で、「偽りのサトシ」が裁かれる</li>
+        <li><strong>2140年</strong> ― 最後のビットコインが生成される日、もう一つのメッセージが刻まれる</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>このアーカイブとの関係</h2>
+      <p>
+        いま読んでいるこのサイト――ビットコイン・インスティテュート――は、
+        本作に引用されている史実記録の一次ソースをそのまま掲載している。
+      </p>
+      <p>
+        小説に登場するサトシのフォーラム投稿、メーリングリストへの返信、
+        マルッティ・マルミやマイク・ハーンとの私信、ハル・フィニーの「Running bitcoin」、
+        ラズロ・ハニエツのピザの投稿、1844億BTC事件のスレッド、COPA裁判の判決文――
+        それらの原文は、<a href="/ja/entries/">全エントリー</a>や
+        <a href="/ja/participants/">人物ページ</a>から辿ることができる。
+      </p>
+      <p>
+        小説を読んだあとに記録を確かめることも、
+        記録を読んだあとに小説で行間を読むこともできる。
+        どちらから入っても、サトシ・ナカモトという<em>問い</em>の輪郭が、少しずつ見えてくるはずだ。
+      </p>
+    </section>
+
+    <section>
+      <h2>本作について</h2>
+      <p>
+        著者：柏原 真二<br />
+        原作言語：日本語（英語版あり）<br />
+        刊行：2025年
+      </p>
+      <p class="note">
+        本作は史実に基づいたフィクションである。日付、引用、数値、人物の発言、技術仕様など、
+        <em>史実として提示する情報</em>は公開記録に照らして正確であるよう努めた。
+        心情・動機・場面の詳細は創作で補完している。
+      </p>
+    </section>
+
+    <section class="buy">
+      <h2>読む</h2>
+      <p class="buy-lead">
+        Amazonで発売中。<strong>Kindle版は <a href="https://www.amazon.co.jp/kindle-dbs/hz/signup" target="_blank" rel="noopener">Kindle Unlimited</a> 会員なら読み放題（0円）。</strong>
+      </p>
+      <ul class="buy-links">
+        <li>
+          <a href="https://www.amazon.co.jp/dp/B0G6MCVMGX" target="_blank" rel="noopener">
+            <span class="edition">日本語版（Kindle）</span>
+            <span class="ku-badge">Kindle Unlimited で読み放題</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.amazon.co.jp/dp/B0GDDL1634" target="_blank" rel="noopener">
+            <span class="edition">日本語版（ペーパーバック）</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.amazon.co.jp/dp/B0GCSLMSWT" target="_blank" rel="noopener">
+            <span class="edition">English Edition (Kindle)</span>
+            <span class="ku-badge">Free with Kindle Unlimited</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.amazon.co.jp/dp/B0GDFZNBLK" target="_blank" rel="noopener">
+            <span class="edition">English Edition (Paperback)</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .novel-page {
+    max-width: 720px;
+  }
+  .hero {
+    text-align: center;
+    padding: 2.5rem 0 2rem;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 2rem;
+  }
+  .hero .eyebrow {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.75rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    margin: 0 0 0.75rem;
+  }
+  .hero .subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--color-text-muted);
+  }
+  .hero .tagline {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+  .lead blockquote {
+    border-left: 3px solid var(--color-accent);
+    margin: 1.5rem 0;
+    padding: 0.25rem 1rem;
+    color: var(--color-text-muted);
+  }
+  .lead blockquote p {
+    margin: 0.25rem 0;
+  }
+  .lead .ja-quote {
+    font-size: 0.95rem;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--color-border);
+    line-height: 1.7;
+  }
+  .timeline li:last-child {
+    border-bottom: none;
+  }
+  .timeline strong {
+    display: inline-block;
+    min-width: 10em;
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+  .note {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    border-left: 2px solid var(--color-border);
+    padding-left: 0.75rem;
+  }
+  .buy {
+    background: var(--color-bg-muted, rgba(0,0,0,0.02));
+    padding: 1.5rem;
+    border-radius: 4px;
+  }
+  .buy-lead {
+    margin-top: 0;
+  }
+  .buy-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .buy-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    text-decoration: none;
+  }
+  .buy-links a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .buy-links .ku-badge {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .buy-lead strong a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 1.7rem;
+    }
+    .hero .subtitle {
+      font-size: 1rem;
+    }
+    .timeline strong {
+      display: block;
+      min-width: auto;
+      margin-bottom: 0.25rem;
+    }
+  }
+</style>
