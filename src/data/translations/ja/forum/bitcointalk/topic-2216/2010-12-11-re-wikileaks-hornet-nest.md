@@ -1,5 +1,5 @@
 ---
-title: "Re: dfg"
+title: "「Re: PC World Article on Bitcoin」— サトシ「WikiLeaksがスズメバチの巣を蹴った」（2010-12-11）"
 date: 2010-12-11T23:39:00Z
 type: "forum-post"
 source: "bitcointalk"

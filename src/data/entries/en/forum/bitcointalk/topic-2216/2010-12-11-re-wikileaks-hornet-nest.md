@@ -1,5 +1,5 @@
 ---
-title: "Re: PC World Article on Bitcoin"
+title: "\"Re: PC World Article on Bitcoin\" — Satoshi: \"WikiLeaks has kicked the hornet's nest\" (December 11, 2010)"
 date: 2010-12-11T23:39:00Z
 type: "forum-post"
 source: "bitcointalk"
