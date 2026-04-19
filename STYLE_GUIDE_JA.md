@@ -507,6 +507,9 @@ body text, descriptions, titles, and any editorial prose.
 | interface | インターフェース | インタフェース / インターフェイス | |
 | block height | ブロック高 | ブロックの高さ / 高さ | 技術用語として「ブロック高」で統一（「高さ」は物理的な高さを表す一般語と衝突） |
 | Pieter Wuille | ピーター・ウィーユ | ピーター・ウィユ | participants.ts 正典に合わせて長音付きで統一 |
+| Merkle root | マークルルート | merkleルート / Merkleルート | コード識別子 `hashMerkleRoot` や姓 `R.C. Merkle` は対象外 |
+| Merkle tree | マークルツリー | マークル木 / merkleツリー / Merkle Tree | 全カタカナで統一。MAST の「マークル化抽象構文木」は別概念として保持 |
+| Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | コード識別子 `getmerklebranch` やタグ `merkle-branch` は対象外 |
 
 ### ルール追加手順
 

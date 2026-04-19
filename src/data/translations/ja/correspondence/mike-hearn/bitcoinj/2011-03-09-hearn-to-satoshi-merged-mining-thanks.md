@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがサトシに感謝し、ハル・フィニーがTx0のscriptSigにmerkleルートを格納するアプローチを正しく推測していたことを指摘する。"
+description: "マイク・ハーンがサトシに感謝し、ハル・フィニーがTx0のscriptSigにマークルルートを格納するアプローチを正しく推測していたことを指摘する。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -25,4 +25,4 @@ translationStatus: complete
 <!-- speaker: Mike Hearn -->
 改めてありがとう。
 
-ハル・フィニーは、あなたが新しいmerkleルートをTx0のscriptSigに格納するつもりだと推測していた。少なくとも彼は正しいアイデアを持っていたことが分かった :-)
+ハル・フィニーは、あなたが新しいマークルルートをTx0のscriptSigに格納するつもりだと推測していた。少なくとも彼は正しいアイデアを持っていたことが分かった :-)

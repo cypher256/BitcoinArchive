@@ -81,6 +81,18 @@ const RULES = [
   { type: 'literal', deprecated: 'インターフェイス', canonical: 'インターフェース' },
   { type: 'literal', deprecated: 'ブロックの高さ', canonical: 'ブロック高', reason: '"block height" の訳は「ブロック高」で統一' },
   { type: 'literal', deprecated: 'ウィユ', canonical: 'ウィーユ', reason: 'Pieter Wuille の JA 表記は「ピーター・ウィーユ」で統一 (participants.ts 正典)。短縮形「ウィユ」も同様。' },
+
+  // Merkle 関連（小説側 `マークルルート` と揃える全カタカナ統一）
+  // コード識別子 (hashMerkleRoot, CMerkleTx, getmerklebranch)、姓 (R.C. Merkle)、
+  // タグ (merkle-tree, merkle-branch)、画像ファイル名は対象外（literal match なので自然に除外される）。
+  // MAST 文脈の「マークル化抽象構文木」「マークル化ツリー」は 化 suffix を含むため未マッチで保持される。
+  { type: 'literal', deprecated: 'マークル木', canonical: 'マークルツリー', reason: 'Merkle tree はカタカナで統一' },
+  { type: 'literal', deprecated: 'マークル分岐', canonical: 'マークルブランチ', reason: 'Merkle branch はカタカナで統一' },
+  { type: 'literal', deprecated: 'merkleツリー', canonical: 'マークルツリー', reason: '"merkle" 部分もカタカナ化' },
+  { type: 'literal', deprecated: 'merkleブランチ', canonical: 'マークルブランチ', reason: '"merkle" 部分もカタカナ化' },
+  { type: 'literal', deprecated: 'merkleルート', canonical: 'マークルルート', reason: '"merkle" 部分もカタカナ化' },
+  { type: 'literal', deprecated: 'Merkleルート', canonical: 'マークルルート', reason: 'JA 本文では和訳「マークルルート」を使う' },
+  { type: 'literal', deprecated: 'Merkle Tree', canonical: 'マークルツリー', reason: 'JA 本文では和訳「マークルツリー」を使う。英文脈のまま残すケース（コード、姓）は literal match では自然に除外される' },
 ];
 
 function walk(dir) {
