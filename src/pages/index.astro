@@ -97,6 +97,30 @@ function tagWeight(count: number, max: number): number {
       <p class="description">{t('site.description')}</p>
     </section>
 
+    <section class="dashboard-section start-here">
+      <div class="section-header">
+        <h2>{t('home.startHere' as any)}</h2>
+      </div>
+      <p class="start-here-subtitle">{t('home.startHereSubtitle' as any)}</p>
+      <div class="start-grid">
+        <a href={localePath('/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/', lang)} class="start-card">
+          <span class="start-date">2008-10-31</span>
+          <span class="start-title">The whitepaper</span>
+          <span class="start-desc">Nine pages posted to the cryptography mailing list — the paper that described Bitcoin.</span>
+        </a>
+        <a href={localePath('/entries/sourceforge/2009-01-03-genesis-block/', lang)} class="start-card">
+          <span class="start-date">2009-01-03</span>
+          <span class="start-title">The genesis block</span>
+          <span class="start-desc">Block 0, inscribed with a <em>Times</em> headline about bank bailouts. Bitcoin begins running.</span>
+        </a>
+        <a href={localePath('/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/', lang)} class="start-card">
+          <span class="start-date">2011-04-23</span>
+          <span class="start-title">The two-line email</span>
+          <span class="start-desc">“I've moved on to other things.” The last known message from Satoshi to Mike Hearn.</span>
+        </a>
+      </div>
+    </section>
+
     <section class="dashboard-section network-section">
       <div class="section-header">
         <h2>{t('network.title' as any)}</h2>
@@ -229,12 +253,53 @@ function tagWeight(count: number, max: number): number {
     margin-bottom: 1.5rem;
   }
   .characters-subtitle,
-  .rank-subtitle {
+  .rank-subtitle,
+  .start-here-subtitle {
     margin: -0.3rem 0 0.9rem;
     font-family: var(--font-heading);
     font-size: 0.85rem;
     color: var(--color-text-muted);
     font-style: italic;
+  }
+  .start-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .start-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .start-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+  }
+  .start-card .start-date {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+  }
+  .start-card .start-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .start-card .start-desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
   }
   /* Hero */
   .hero {
