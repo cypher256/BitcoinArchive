@@ -30,11 +30,11 @@ const t = useTranslations(lang);
       <a href={localePath('/entries/', lang)}>{t('nav.entries')}</a>
       <details class="nav-dropdown">
         <summary>{t('nav.browse' as any)}<span class="chevron" aria-hidden="true">▾</span></summary>
-        <div class="nav-dropdown-menu" role="menu">
-          <a href={localePath('/types/', lang)} role="menuitem">{t('nav.types' as any)}</a>
-          <a href={localePath('/sources/', lang)} role="menuitem">{t('nav.sources')}</a>
-          <a href={localePath('/participants/', lang)} role="menuitem">{t('nav.participants')}</a>
-          <a href={localePath('/tags/', lang)} role="menuitem">{t('nav.tags')}</a>
+        <div class="nav-dropdown-menu">
+          <a href={localePath('/types/', lang)}>{t('nav.types' as any)}</a>
+          <a href={localePath('/sources/', lang)}>{t('nav.sources')}</a>
+          <a href={localePath('/participants/', lang)}>{t('nav.participants')}</a>
+          <a href={localePath('/tags/', lang)}>{t('nav.tags')}</a>
         </div>
       </details>
       <a href={localePath('/about/', lang)}>{t('nav.about')}</a>
