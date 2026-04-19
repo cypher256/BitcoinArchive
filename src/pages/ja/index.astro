@@ -145,6 +145,7 @@ function tagWeight(count: number, max: number): number {
           <h2>{t('home.topParticipants')}</h2>
           <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
         </div>
+        <p class="rank-subtitle">{t('home.topParticipantsSubtitle' as any)}</p>
         <div class="rank-list">
           {topParticipants.map(([slug, { name, count }]) => (
             <a href={localePath(`/participants/${slug}/`, lang)} class="rank-item">
@@ -161,6 +162,7 @@ function tagWeight(count: number, max: number): number {
           <h2>{t('home.topSources')}</h2>
           <a href={localePath('/sources/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
         </div>
+        <p class="rank-subtitle">{t('home.topSourcesSubtitle' as any)}</p>
         <div class="rank-list">
           {topSources.map(([source, count]) => (
             <a href={localePath(`/sources/${source}/`, lang)} class="rank-item">
@@ -228,7 +230,8 @@ function tagWeight(count: number, max: number): number {
   .network-section {
     margin-bottom: 1.5rem;
   }
-  .characters-subtitle {
+  .characters-subtitle,
+  .rank-subtitle {
     margin: -0.3rem 0 0.9rem;
     font-family: var(--font-heading);
     font-size: 0.85rem;
