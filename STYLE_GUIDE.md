@@ -79,32 +79,33 @@ just the original glyphs.
 
 ## Title Policy
 
-Every entry's `title` field is the page's identity across three audiences
-that matter, in addition to the readers who browse inside the site:
+Every entry's `title` field is the page's identity across three
+audiences, in addition to readers browsing inside the site:
 
-1. **Human readers arriving from search** — the title is the blue link in
-   Google results, the OG card in social shares, and the text the browser
-   tab renders. If it is cryptic in isolation, the click does not happen.
-2. **Search engines** — the title is the single strongest ranking signal
-   and the text most commonly displayed in SERP. Every title should
-   contain at least two primary identifiers a reader might actually
-   search for (person, date, event, core concept).
+1. **Human readers arriving from search** — the title is the blue link
+   in Google results, the OG card in social shares, and the text the
+   browser tab renders. If it is cryptic in isolation, the click does
+   not happen.
+2. **Search engines** — the title is the strongest ranking signal and
+   the text most commonly displayed in SERP. Google truncates the
+   displayed title around 50–60 characters but indexes the full string,
+   so the leading identifiers matter more than total length.
 3. **AI / AIO** (Perplexity, ChatGPT with browsing, Google AI Overview,
-   etc.) — the title is the citation label an LLM extracts for the page.
-   Ambiguous titles are less likely to be used as sources.
+   etc.) — the title is the citation label an LLM extracts for the
+   page. Ambiguous titles are less likely to be used as sources.
 
-Internal browsing convenience is a side-effect of the three above: a
-title that works for search-arrivers also works for someone scanning an
-entry list.
+Internal browsing convenience is a side-effect of the three above.
 
 ### Baseline criteria
 
 | Criterion | Target |
 |---|---|
-| Length | ≤ 60 characters (SERP truncation point) |
-| Identifiers | at least two of: person / date / event / source / iconic phrase |
+| Leading identifiers | at least two of: person / date / event / source / iconic phrase, in the **first half** of the title |
+| Length (EN) | soft cap ≤ 60 characters; over the cap is acceptable when the leading identifiers are in the first 50 characters |
+| Length (JA) | soft cap ≤ 30 characters; same leading-identifier rule applies |
 | Stand-alone clarity | understandable without the URL path or description |
-| Distinctiveness | visibly different from similar entries (same person, same date) |
+| Distinctiveness | visibly different from similar entries (same person / same date / same thread) |
+| History preservation | for mailing-list and forum entries, the original subject / topic title stays visible (see per-category rules below) |
 
 ### Treatment of iconic quotes
 
@@ -114,38 +115,100 @@ audience least in need of the page. Use a quote as a **supporting
 element after the identifying context**, not as the whole title.
 
 - ✗ `"I've moved on to other things"` — cryptic alone
-- ✓ `Satoshi's final email to Mike Hearn: "I've moved on to other things" (April 2011)`
+- ✓ `Satoshi's final email to Mike Hearn: "I've moved on to other things"`
 
-### Format templates by entry type
+### Per-category rules
 
-These are templates, not mandates. If an entry has a stronger natural
-title, use it.
+Title handling differs by entry type because thread structure and
+historical-subject preservation differ. The per-category rules below
+override the generic templates where they conflict.
 
-| Entry type | Template | Example |
-|---|---|---|
-| **correspondence** (private email) | `{Author}'s {description} to {recipient}` + optional quote / date | `Satoshi's reply to Adam Back about b-money citation (August 2008)` |
-| **mailing-list / forum post (starter)** | `{subject or action} — {venue} ({date})` | `Satoshi's first Bitcoin announcement — cryptography mailing list (Oct 2008)` |
-| **forum post (reply)** | `Re: {parent title}` | (follows parent) |
-| **whitepaper / BIP** | original formal title (optional `(Whitepaper)` / `(BIP N)` suffix) | `Bitcoin: A Peer-to-Peer Electronic Cash System (Whitepaper)` |
-| **biography** | `{Name} ({dates}) — {one-line role}` | `Hal Finney (1956–2014) — Cypherpunk, PGP developer, first Bitcoin recipient` |
-| **aftermath** (article, interview, court testimony) | original article title, lightly contextualized if needed | `Jameson Lopp analyzes whether Satoshi Nakamoto was a 'greedy' miner` |
-| **sourceforge release** | `Bitcoin v{N.N} released` or `{version}: {change summary}` | `Bitcoin v0.1 released (January 9, 2009)` |
+#### Forum threads (BitcoinTalk, GitHub issues, etc.)
+
+- Location: `src/data/entries/en/forum/*`
+- **Thread starter**: preserve the forum's topic title as the anchor.
+  Editorial context (venue, date) may be added as a suffix, but the
+  original topic string stays visible.
+  - ✓ `Major Meltdown (BitcoinTalk, Aug 2010)`
+  - ✗ `Satoshi's response to Mt. Gox crisis` — topic title replaced
+- **Reply** (`Re: ...`): must follow the thread starter. Cascade rule:
+  when the starter title changes, every `Re: {…}` in the same thread
+  must be updated in the same commit (EN and JA mirrors).
+- Enforced by `scripts/check-ja-titles.mjs` for `forum/*` paths.
+- Use `scripts/fix-ja-reply-titles.mjs --apply` to mass-update reply
+  titles once the starter is set.
+
+#### Mailing-list threads (cryptography, bitcoin-list, p2p-research)
+
+- Location: `src/data/entries/en/emails/*`
+- **Thread starter**: the original email subject line is historical
+  (it is the literal Subject: header of the archived email). Keep it
+  visible in the title; editorial wrapping is allowed, but do not
+  replace it.
+  - ✓ `"Bitcoin P2P e-cash paper" — Satoshi's first Bitcoin announcement (Oct 2008)`
+  - ✗ `Satoshi announces Bitcoin — cryptography mailing list (Oct 2008)` — subject line lost
+- **Reply** (`Re: ...`): keep the original `Re: {subject line}` form as
+  written in the email. Do **not** cascade editorial changes from the
+  starter into reply titles, because each reply literally had that
+  Subject: header in the email. (This is the key difference from
+  forum threads.)
+
+#### Private correspondence (non-thread emails)
+
+- Location: `src/data/entries/en/correspondence/*`
+- Each file usually stands alone; there is no thread-wide subject line.
+- Title template: `{Author}'s {description} to {recipient}` plus
+  optional quote and/or date.
+  - ✓ `Satoshi's reply to Adam Back about b-money citation (August 2008)`
+  - ✓ `Satoshi's final email to Mike Hearn: "I've moved on to other things"`
+
+#### Aftermath / article / analysis
+
+- Location: `src/data/entries/en/aftermath/*`, `.../analysis/*`
+- Preserve the original article or analysis title. Light contextual
+  prefixes/suffixes are acceptable when the original title is ambiguous
+  on its own.
+  - ✓ `Jameson Lopp analyzes whether Satoshi Nakamoto was a 'greedy' miner`
+
+#### Biographies
+
+- Pattern: `{Name} ({dates}) — {one-line role}`
+  - ✓ `Hal Finney (1956–2014) — Cypherpunk, PGP developer, first Bitcoin recipient`
+
+#### Whitepaper / BIP
+
+- Preserve the original formal title, with optional `(Whitepaper)` or
+  `(BIP N)` suffix.
+  - ✓ `Bitcoin: A Peer-to-Peer Electronic Cash System (Whitepaper)`
+  - ✓ `BIP 125: Opt-in Full Replace-by-Fee Signaling`
+
+#### SourceForge releases / genesis
+
+- `Bitcoin v{N.N} released ({date})` for releases.
+- Standalone entries (e.g. the genesis block) follow the generic rule:
+  identify the actor, object, and date.
+  - ✓ `Satoshi mines the Bitcoin genesis block (January 3, 2009)`
 
 ### What not to do
 
 - **Don't stuff keywords** (`"Satoshi Nakamoto Bitcoin whitepaper genesis block 2009"` — search engines penalize this).
-- **Don't include the site brand** — the layout prepends `— Bitcoin Institute` automatically. Adding it in `title` duplicates.
+- **Don't include the site brand** — the layout prepends `— Bitcoin Institute` automatically. Adding it to `title` duplicates.
 - **Don't lead with the date** — the primary identifier goes first; the date (when included) goes at the end or in parentheses.
-- **Don't force every title into one template** — the templates above are the default; a stronger natural title beats a formulaic one.
+- **Don't force every title into one template** — a stronger natural title beats a formulaic one.
+- **Don't replace the original email Subject on a mailing-list thread starter** — wrap it, don't drop it.
+- **Don't change a forum thread starter without updating all `Re: {…}` replies** in the same thread and the same commit.
 
 ### When a legacy title is changed
 
 - Changing a title changes the indexed link text but not the URL slug.
-- In JA mirrors, update the title too. See
-  `STYLE_GUIDE_JA.md § II.1 Title Policy` for Japanese-specific rules and
-  the reply-thread consistency rule.
-- If the entry is a thread starter, update every `Re: {…}` reply in the
-  same thread in the same commit.
+- Always update the JA mirror in the same commit.
+- If the entry is a **forum** thread starter, cascade to every reply
+  (EN and JA) in the same commit. The `check-ja-titles.mjs` build-time
+  check will flag inconsistencies in `forum/*` paths.
+- If the entry is a **mailing-list** thread starter, do **not**
+  cascade — replies keep their original `Re: {subject}` form.
+- See `STYLE_GUIDE_JA.md § II.1 Title Policy` for Japanese-specific
+  rules (character budget, katakana names in titles, etc.).
 
 ## Related Entries
 

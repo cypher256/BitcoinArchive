@@ -367,47 +367,55 @@ consistency.
 
 ## 1. Title Policy
 
-The overall title policy (target audiences, evaluation criteria, per-type
-templates) is defined in `STYLE_GUIDE.md § Title Policy`. Japanese titles
-follow the same principles. Only Japanese-specific concerns are documented
-below.
+全体方針（ターゲット読者・評価基準・カテゴリ別テンプレート・cascade ルール）は
+`STYLE_GUIDE.md § Title Policy` を参照。ここでは日本語固有の事項のみ。
 
-### Character budget
+### 文字数
 
-- ≤ 30 characters is the practical SERP-truncation limit in Japanese.
-- Japanese is information-dense but add contextual identifiers, not
-  rhetorical padding.
+- SERP 上の切り詰めは実用で **≤ 30 文字**。
+- 主要 identifier が前半にあれば、全体が 30 文字を超えても AIO/SEO には不利に
+  ならない（Google はタイトル全文をインデックスする）。
+- 情報密度の高い日本語で context を足す場合でも、読点や冗長な修飾を避ける。
 
-### Katakana for person names in titles
+### 人名のカタカナ化
 
-Person names in titles follow the katakana rule from § I.1:
-`サトシ・ナカモト`, `マイク・ハーン`, `ハル・フィニー`. The canonical
-mapping is in `src/i18n/participants.ts`.
+タイトル中の人名も § I.1 の katakana 規則に従う：`サトシ・ナカモト`、
+`マイク・ハーン`、`ハル・フィニー`。正典は `src/i18n/participants.ts`。
 
-### Quotation handling
+### 引用の扱い
 
-- Use `「…」` to mark quoted phrases.
-- Don't title an entry with a bare quote alone. Put the identifying
-  context first.
+- 直接引用は `「…」`。
+- 引用のみの title にしない。identifying context を前に置く。
 
 ```
 ✗ 「他のことに取り組むことにした」
-✓ サトシからマイク・ハーンへの最後のメール：「他のことに取り組むことにした」(2011-04)
+✓ サトシからマイク・ハーンへの最後のメール：「他のことに取り組むことにした」
 ```
 
-### Reply title consistency
+### カテゴリ別の cascade ルール
 
-JA `title` fields for reply posts (`Re: ...`) must use the same translated
-title as the thread starter within the same thread.
+`STYLE_GUIDE.md § Title Policy` のカテゴリ別ルールに JA も追従する。要点：
 
-**Rule:** look up the thread starter's JA `title`, then set all reply
-titles in the thread to `Re: {that title}`.
+| Directory | Reply cascade | JA title 更新範囲 |
+|---|---|---|
+| `forum/*`（BitcoinTalk 等） | **必要**（`check:ja-titles` が検出） | starter 変更時、同 thread の全 `Re: …` を同一コミットで更新 |
+| `emails/*`（mailing-list） | **不要**（元 email Subject 保持） | starter のみ更新、reply は触らない |
+| `correspondence/*` | **不要**（各エントリ独立） | 個別に editorial 更新 |
+| `aftermath/`, `biography`, `bip`, `analysis`, `sourceforge` | N/A（thread なし） | 個別更新 |
+
+### Reply title consistency（forum thread のみ）
+
+`forum/*` 配下の thread では、JA `title` 返信投稿（`Re: ...`）は thread
+starter の JA title と同じ翻訳を使う。
+
+**Rule:** thread starter の JA `title` を確認し、同 thread 内の全 reply
+title を `Re: {starter の JA title}` に揃える。
 
 **Bad:**
 ```
 thread starter: title: "大規模なメルトダウン"
-reply:          title: "Re: 大崩壊"          ← different translation
-reply:          title: "Re: Major Meltdown"  ← untranslated
+reply:          title: "Re: 大崩壊"          ← 異なる訳
+reply:          title: "Re: Major Meltdown"  ← 未翻訳
 ```
 
 **Good:**
@@ -417,9 +425,21 @@ reply:          title: "Re: 大規模なメルトダウン"
 reply:          title: "Re: 大規模なメルトダウン"
 ```
 
-Enforced by `npm run check:ja-titles`. When a thread-starter title is
-updated to better meet the Title Policy, update every `Re: {…}` in the
-same thread in the same commit.
+`npm run check:ja-titles` が `forum/*` でこれを検証する（mailing-list や
+correspondence は対象外）。thread-starter の title を Title Policy に沿って
+更新したら、同 thread の `Re: {…}` も同一コミットで更新する。一括更新には
+`scripts/fix-ja-reply-titles.mjs --apply` が使える。
+
+### mailing-list thread の特例
+
+`emails/*` 配下の mailing-list thread starter は editorial に改題しても、
+**reply の `Re: {元 Subject}` は変更しない**。これは元のメール Subject ヘッダが
+史実資料であるため。例：
+
+```
+starter (2008-10-31): title: "「Bitcoin P2P e-cash paper」— サトシのビットコイン初公開（2008-10）"
+reply   (2008-11-01): title: "Re: ビットコイン P2P 電子キャッシュ論文"   ← 元 Subject 訳、そのまま
+```
 
 ## 2. Description Wording
 
