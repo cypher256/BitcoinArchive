@@ -158,11 +158,29 @@ This is the basis of Block 0's un-attributability. Mechanism A is forced by cons
 
 **Reading A — implementation convenience.** Auto-construction lets a fresh node bootstrap without a live peer. The un-attributability is an unintended side effect of prioritizing the simplest bring-up path.
 
-**Reading B — deliberate un-attributability.** Given Satoshi's extensively documented anonymization practices (Tor, multiple email addresses, typing-pattern caution, mixed British/American spellings, voluntary withdrawal from the project), the choice of auto-construction is consistent with a policy of leaving no identifying trace — including at the moment of creation.
+**Reading B — un-ownership by design.** Block 0 is constructed so that authorship does not resolve to a well-defined subject at all. This is more precisely stated than "deliberate anonymization": the two are not synonyms.
 
-Source code alone cannot adjudicate between these readings. Both are technically consistent with what v0.1 actually does. The choice between them is interpretive.
+*Anonymization* presupposes an author whose identity is being concealed. It is a hiding operation on a signal that exists. Satoshi's other documented practices — Tor, multiple email addresses, mixed British/American spellings, typing-pattern caution, voluntary withdrawal, wallet.dat removal — all belong to this category.
 
-What the source code *does* establish is that un-attributability is a **consequence of an independent design decision**, not an inherent feature of block 0. A different, equally viable implementation would have produced a distributor. That decision was made by Satoshi.
+*Un-ownership by design* removes the author as a well-defined concept at the structural level. There is no hidden identity because there is no distributor, no transaction-semantics event, and no observable signal to hide. The question "was the genesis nonce found by Satoshi alone, by Satoshi and collaborators, or by someone else whose values Satoshi merely embedded?" does not have a privileged answer — not because the record is incomplete but because the design does not instantiate an author entity to single- or multi-value in the first place.
+
+Reading B places the genesis design in this second category, qualitatively deeper than Satoshi's other anonymization practices.
+
+### Source code is symmetric; behavioral evidence is not
+
+Source code alone cannot adjudicate between Readings A and B. Both are technically consistent with what v0.1 does. At that level the choice is interpretive.
+
+When the surrounding record is factored in, however, the interpretations are not equally weighted:
+
+1. **The alternative design is strictly smaller.** Hash-only verification plus peer-received genesis would reuse existing networking code and would not need an empty-DB branch at all. If implementation convenience were the actual motive, the smaller design would have been the natural choice. Auto-construction is the *larger* implementation; choosing it costs complexity the smaller design would have saved.
+2. **Consistency with documented behavior.** Tor, address-rotating email, mixed spellings, typing-pattern caution, voluntary withdrawal, and wallet.dat removal all point in the same direction: remove identifying signal. Reading one element of that pattern (the genesis design) as mere convenience while reading every other element as intentional is the one interpretation that breaks the symmetry of the record.
+3. **Shared-constant coinbase address.** A per-invocation coinbase address would have produced one more piece of individual signal. A shared constant embedded in the source is consistent with "leave no per-person trace."
+4. **The Times headline is the sole personal element.** The nonce, the address, and the processing structure are all de-personalized. The one element that carries individual voice is the coinbase payload text. A design otherwise careful to de-personalize, with one deliberate exception, is more easily read as intentional than as coincidentally uniform.
+5. **The same Occam's razor applied in §5.** §5 argues the coinbase unspendability is a consequence of treating Block 0 as initial state, not an oversight, because the "oversight" reading requires positing something the "initial state" reading does not. Applied symmetrically here: Reading B requires no added assumption; Reading A asks that the larger, non-required implementation was chosen for no particular reason on a project whose other choices are highly deliberate.
+
+At the source-code level A and B sit on the same footing. Over the full record, B is the reading that requires no added assumption. The rest of this analysis treats B as the more likely interpretation while continuing to mark it as interpretation rather than fact.
+
+What the source code *does* establish, independent of A-vs-B: un-attributability is a **consequence of an independent design decision**, not an inherent feature of Block 0. A different, equally viable implementation would have produced a distributor. That decision — larger implementation, no distributor — was made by Satoshi.
 
 ## 5. The unspendable 50 BTC: a bootstrap artifact
 
@@ -250,7 +268,7 @@ The constants are identical between v0.1 and current mainline Core.
 2. The five-day gap is consistent with the difference between the date the constants were fixed (Jan 3) and the date the live network started (Jan 9), not elapsed runtime.
 3. Who first searched for nonce `2083236893` cannot be determined from chain data. Attribution to Satoshi rests on circumstantial evidence.
 4. The hardcode has two independent mechanisms: hash verification (required for consensus) and auto-construction (not required). Un-attributability is a consequence of the second choice.
-5. Whether that choice was deliberate anonymization or implementation convenience is interpretive and not settled by the source code.
-6. The 50 BTC coinbase unspendability is best read as a consequence of treating Block 0 as network initial state rather than as a mined transaction event — the same bootstrap design that produces un-attributability. One design decision, two effects.
+5. Whether that choice was implementation convenience or un-ownership by design is not settled by the source code alone. Source-level evidence is symmetric; behavioral evidence (larger-than-necessary implementation, consistency with Satoshi's other de-personalizing choices, shared-constant coinbase address, headline as sole personal element) asymmetrically favors the un-ownership-by-design reading.
+6. The same bootstrap construction produces both: creative un-attribution (no author resolvable from chain data, §4) and economic un-attribution (coinbase never enters the UTXO set, §5). One design decision, two parallel absences.
 
-Block 0 is the most symbolic artifact in Bitcoin, and at the same time the most difficult to attribute cryptographically. The same bootstrap construction that creates that difficulty also prevents the 50 BTC coinbase from entering the transaction index. Both outcomes flow from a single line in `LoadBlockIndex()`. Whether that single design choice was driven by implementation convenience or by a deliberate policy of leaving no identifying trace at the moment of creation is the interpretive question §4 leaves open — and the only question the source code itself cannot answer.
+Block 0 is the most symbolic artifact in Bitcoin, and at the same time the one most difficult to attribute on either axis. No network-observable distributor — no resolvable author. No transaction-semantics event — no spendable output. Both outcomes flow from a single line in `LoadBlockIndex()`. Under Reading A the pairing is coincidence; under Reading B the pairing is the mechanism. The source code alone does not rule on which of those is the intended reading, but the surrounding body of evidence tilts the question — the interpretation that requires no added assumption is that Block 0 was placed in the world as something that was never meant to belong to a specific person, singly or plurally, at all.
