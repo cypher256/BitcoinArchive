@@ -1,5 +1,5 @@
 ---
-title: "Wei Dai to Satoshi on the Bitcoin v0.1 announcement (January 10, 2009)"
+title: "Wei Dai to Satoshi confirming b-money's 1998 cypherpunks announcement (January 10, 2009)"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "gwern"

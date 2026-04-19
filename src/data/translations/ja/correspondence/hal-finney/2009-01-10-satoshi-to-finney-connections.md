@@ -1,5 +1,5 @@
 ---
-title: "サトシからハル・フィニーへ：Bitcoin接続問題のトラブルシューティング（2009-01-10）"
+title: "サトシからハル・フィニーへ：自分のホストではincoming接続を受けられない旨を伝える（2009-01-10）"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "coindesk"

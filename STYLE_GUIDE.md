@@ -134,7 +134,19 @@ override the generic templates where they conflict.
 - **Reply** (`Re: ...`): must follow the thread starter. Cascade rule:
   when the starter title changes, every `Re: {…}` in the same thread
   must be updated in the same commit (EN and JA mirrors).
-- Enforced by `scripts/check-ja-titles.mjs` for `forum/*` paths.
+- **Checker scope (important).** `scripts/check-ja-titles.mjs` only
+  partially covers this rule:
+  - It scans `src/data/translations/ja/forum/*` only (JA files), not
+    the EN source tree.
+  - Mismatches are reported as **warnings**, not errors — the build
+    does not fail on a cascade drift.
+  - Thread starter detection is heuristic: the first entry whose
+    title does not begin with `Re:` / `返信:` is treated as the
+    starter. If a reply is retitled to also drop the `Re:` prefix,
+    the checker silently treats it as a second starter and skips
+    cascade verification for it. Do not retitle a reply into a
+    standalone editorial form to "route around" the checker —
+    cascade the starter instead.
 - Use `scripts/fix-ja-reply-titles.mjs --apply` to mass-update reply
   titles once the starter is set.
 
@@ -203,8 +215,11 @@ override the generic templates where they conflict.
 - Changing a title changes the indexed link text but not the URL slug.
 - Always update the JA mirror in the same commit.
 - If the entry is a **forum** thread starter, cascade to every reply
-  (EN and JA) in the same commit. The `check-ja-titles.mjs` build-time
-  check will flag inconsistencies in `forum/*` paths.
+  (EN and JA) in the same commit. The `check-ja-titles.mjs` script
+  warns on JA cascade drift but does not fail the build, so visually
+  diff the full thread before committing — do not rely on the
+  checker as a gate. See the checker-scope note under §Forum threads
+  above.
 - If the entry is a **mailing-list** thread starter, do **not**
   cascade — replies keep their original `Re: {subject}` form.
 - See `STYLE_GUIDE_JA.md § II.1 Title Policy` for Japanese-specific

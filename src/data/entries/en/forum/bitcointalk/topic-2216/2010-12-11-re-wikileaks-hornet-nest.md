@@ -1,5 +1,5 @@
 ---
-title: "\"Re: PC World Article on Bitcoin\" — Satoshi: \"WikiLeaks has kicked the hornet's nest\" (December 11, 2010)"
+title: "Re: PC World Article on Bitcoin"
 date: 2010-12-11T23:39:00Z
 type: "forum-post"
 source: "bitcointalk"
@@ -17,7 +17,7 @@ tags:
   - "near-final-post"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/539/"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/"
 ---
 
 It would have been nice to get this attention in any other context. WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us.

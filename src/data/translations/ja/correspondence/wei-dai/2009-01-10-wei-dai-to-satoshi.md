@@ -1,5 +1,5 @@
 ---
-title: "ウェイ・ダイからサトシへ：Bitcoin v0.1告知への返信（2009-01-10）"
+title: "ウェイ・ダイからサトシへ：b-moneyが1998年cypherpunksに公開された旨を確認（2009-01-10）"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "gwern"

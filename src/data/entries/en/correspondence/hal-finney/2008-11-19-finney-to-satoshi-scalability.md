@@ -1,5 +1,5 @@
 ---
-title: "Hal Finney to Satoshi on scalability concerns about the Bitcoin whitepaper (November 19, 2008)"
+title: "Hal Finney to Satoshi with foundational scalability questions during pre-release review (November 19, 2008)"
 date: 2008-11-19T00:00:00Z
 type: "correspondence"
 source: "coindesk"

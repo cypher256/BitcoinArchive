@@ -1,5 +1,5 @@
 ---
-title: "「[p2p-research] Bitcoin open source implementation of P2P currency」— サトシがP2P FoundationにBitcoinを紹介（2009-02）"
+title: "「[p2p-research] Bitcoin open source implementation of P2P currency」— サトシがP2P ResearchメーリングリストにBitcoinを紹介（2009-02）"
 date: 2009-02-11T22:27:00.000Z
 type: "mailing-list"
 source: "p2p-research-list"

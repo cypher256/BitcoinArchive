@@ -425,10 +425,19 @@ reply:          title: "Re: 大規模なメルトダウン"
 reply:          title: "Re: 大規模なメルトダウン"
 ```
 
-`npm run check:ja-titles` が `forum/*` でこれを検証する（mailing-list や
-correspondence は対象外）。thread-starter の title を Title Policy に沿って
-更新したら、同 thread の `Re: {…}` も同一コミットで更新する。一括更新には
-`scripts/fix-ja-reply-titles.mjs --apply` が使える。
+`npm run check:ja-titles` が `forum/*` でこれを検証するが**限界あり**：
+
+- 対象は `src/data/translations/ja/forum/*`（JA のみ）。EN 側は見ていない。
+- mismatch は **warning** で、build を fail させない。
+- Thread starter 検出は先頭の非 `Re:`/`返信:` エントリをヒューリスティックに
+  選ぶだけ。reply の title を編集的に改題して `Re:` 前置詞を外すと、
+  checker はそれを第2 starter とみなして cascade 検証をスキップする。
+  checker を「回避」するために reply を standalone 形に改題してはならない。
+
+mailing-list や correspondence は対象外。thread-starter の title を Title
+Policy に沿って更新したら、同 thread の `Re: {…}` も同一コミットで更新する。
+checker の warning を gate にせず、commit 前に thread 全体を目視 diff する
+こと。一括更新には `scripts/fix-ja-reply-titles.mjs --apply` が使える。
 
 ### mailing-list thread の特例
 

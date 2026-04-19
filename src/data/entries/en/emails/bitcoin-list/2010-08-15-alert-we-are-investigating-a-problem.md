@@ -1,5 +1,5 @@
 ---
-title: "\"[bitcoin-list] ALERT - we are investigating a problem\" — Satoshi's first notice of the value-overflow incident (August 2010)"
+title: "\"[bitcoin-list] ALERT - we are investigating a problem\" — Satoshi's bitcoin-list alert during the value-overflow incident (August 2010)"
 date: 2010-08-15T20:38:33.000Z
 type: "mailing-list"
 source: "bitcoin-list"

@@ -1,5 +1,5 @@
 ---
-title: "\"Running bitcoin\" — Hal Finney's iconic tweet as the first known Bitcoin node operator (January 11, 2009)"
+title: "\"Running bitcoin\" — Hal Finney's iconic tweet, the first known person besides Satoshi to run Bitcoin (January 11, 2009)"
 date: 2009-01-11T22:33:00Z
 type: "correspondence"
 source: "x"

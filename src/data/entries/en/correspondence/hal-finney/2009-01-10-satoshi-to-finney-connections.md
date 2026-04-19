@@ -1,5 +1,5 @@
 ---
-title: "Satoshi helps Hal Finney troubleshoot Bitcoin connection issues (January 10, 2009)"
+title: "Satoshi tells Hal Finney he cannot receive incoming Bitcoin connections (January 10, 2009)"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "coindesk"

@@ -1,5 +1,5 @@
 ---
-title: "Satoshi to Laszlo Hanyecz on GPU mining centralization concerns (May 10, 2010)"
+title: "Satoshi asks Laszlo Hanyecz to slow down premature GPU mining (May 10, 2010)"
 date: 2010-05-10T00:00:00Z
 type: "correspondence"
 source: "coindesk"

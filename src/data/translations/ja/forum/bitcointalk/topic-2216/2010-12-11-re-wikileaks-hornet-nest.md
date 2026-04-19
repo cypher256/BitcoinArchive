@@ -1,5 +1,5 @@
 ---
-title: "「Re: PC World Article on Bitcoin」— サトシ「WikiLeaksがスズメバチの巣を蹴った」（2010-12-11）"
+title: "Re: dfg"
 date: 2010-12-11T23:39:00Z
 type: "forum-post"
 source: "bitcointalk"
@@ -17,7 +17,7 @@ tags:
   - "near-final-post"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
-    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/539/"
+    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/"
 translationStatus: complete
 ---
 
