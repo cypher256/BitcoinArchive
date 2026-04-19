@@ -1,5 +1,5 @@
 ---
-title: "Merged mining acknowledgment and Hal Finney's insight"
+title: "Mike Hearn to Satoshi: thanks for merged mining (and Hal Finney's insight) (March 9, 2011)"
 date: 2011-03-09T19:52:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "SPVクライアントモードの実装"
+title: "サトシからマイク・ハーンへ：SPVクライアントモードの実装（2010-12-29）"
 date: 2010-12-29T22:42:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "GPUマイニングへの懸念"
+title: "サトシからラズロ・ハニエツへ：GPUマイニングの中央集権化懸念（2010-05-10）"
 date: 2010-05-10T00:00:00Z
 type: "correspondence"
 source: "coindesk"

@@ -1,5 +1,5 @@
 ---
-title: "Using Bitcoin as collateral for abuse prevention"
+title: "Mike Hearn to Satoshi on using Bitcoin as collateral for abuse prevention (April 18, 2011)"
 date: 2011-04-18T23:14:00Z
 type: "correspondence"
 source: "plan99"

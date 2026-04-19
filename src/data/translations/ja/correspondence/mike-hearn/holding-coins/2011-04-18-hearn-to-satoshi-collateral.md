@@ -1,5 +1,5 @@
 ---
-title: "不正利用防止のための担保としてのBitcoinの使用"
+title: "マイク・ハーンからサトシへ：不正利用防止のための担保としてのBitcoin利用（2011-04-18）"
 date: 2011-04-18T23:14:00Z
 type: "correspondence"
 source: "plan99"

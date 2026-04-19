@@ -1,5 +1,5 @@
 ---
-title: "Lack of chargeback support"
+title: "Mike Hearn to Satoshi on Bitcoin's lack of chargeback support (April 25, 2009)"
 date: 2009-04-25T21:30:00Z
 type: "correspondence"
 source: "plan99"

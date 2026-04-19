@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin macOS port and early development"
+title: "Laszlo Hanyecz to Satoshi on the Bitcoin macOS port and early development (April 19, 2010)"
 date: 2010-04-19T00:00:00Z
 type: "correspondence"
 source: "bitcoin-magazine"

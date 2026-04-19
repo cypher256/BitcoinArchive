@@ -1,5 +1,5 @@
 ---
-title: "ECDSA曲線の選択と開発の歴史"
+title: "サトシからマイク・ハーンへ：ECDSA曲線の選択と開発の歴史（2011-01-10）"
 date: 2011-01-10T20:47:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "BitcoinJのオープンソースリリースとプロトコルに関する質問"
+title: "マイク・ハーンからサトシへ：BitcoinJリリースとプロトコルに関する質問（2011-03-07）"
 date: 2011-03-07T14:13:00Z
 type: "correspondence"
 source: "plan99"

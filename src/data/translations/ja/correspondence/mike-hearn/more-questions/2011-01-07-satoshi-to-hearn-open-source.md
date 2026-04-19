@@ -1,5 +1,5 @@
 ---
-title: "初のクライアント専用実装"
+title: "サトシからマイク・ハーンへ：初のクライアント専用実装（2011-01-07）"
 date: 2011-01-07T13:00:00Z
 type: "correspondence"
 source: "plan99"

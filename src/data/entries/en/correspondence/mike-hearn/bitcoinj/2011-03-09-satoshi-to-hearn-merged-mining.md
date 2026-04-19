@@ -1,5 +1,5 @@
 ---
-title: "Merged mining, the abandoned marketplace, and independent chains"
+title: "Satoshi to Mike Hearn on merged mining, the abandoned marketplace, and independent chains (March 9, 2011)"
 date: 2011-03-09T19:39:00Z
 type: "correspondence"
 source: "plan99"

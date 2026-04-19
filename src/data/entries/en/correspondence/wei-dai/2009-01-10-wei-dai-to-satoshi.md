@@ -1,5 +1,5 @@
 ---
-title: "Re: Citation of your b-money page"
+title: "Wei Dai to Satoshi on the Bitcoin v0.1 announcement (January 10, 2009)"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "gwern"

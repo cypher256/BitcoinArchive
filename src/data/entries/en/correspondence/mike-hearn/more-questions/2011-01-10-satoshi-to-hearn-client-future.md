@@ -1,5 +1,5 @@
 ---
-title: "Client implementations and the 21 million coin limit"
+title: "Satoshi to Mike Hearn on client implementations and the 21 million coin limit (January 10, 2011)"
 date: 2011-01-10T16:34:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinの実行"
+title: "「Running bitcoin」 ―― ハル・フィニーによる最初の既知のBitcoinノード稼働を示す象徴的なツイート（2009-01-11）"
 date: 2009-01-11T22:33:00Z
 type: "correspondence"
 source: "x"

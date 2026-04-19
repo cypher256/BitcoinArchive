@@ -1,5 +1,5 @@
 ---
-title: "コントラクトのフォローアップ、Publish/Subscribe、マージドマイニング"
+title: "マイク・ハーンからサトシへ：コントラクト・Publish/Subscribe・マージドマイニング（2011-03-09）"
 date: 2011-03-09T17:39:00Z
 type: "correspondence"
 source: "plan99"

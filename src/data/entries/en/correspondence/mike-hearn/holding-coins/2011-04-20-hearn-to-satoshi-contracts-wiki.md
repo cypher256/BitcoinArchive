@@ -1,5 +1,5 @@
 ---
-title: "Contracts wiki page, transaction replacement, and mining economics"
+title: "Mike Hearn to Satoshi on the contracts wiki, transaction replacement, and mining economics (April 20, 2011)"
 date: 2011-04-20T13:55:00Z
 type: "correspondence"
 source: "plan99"

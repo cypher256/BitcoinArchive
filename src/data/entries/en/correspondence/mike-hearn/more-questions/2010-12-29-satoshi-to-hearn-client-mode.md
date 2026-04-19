@@ -1,5 +1,5 @@
 ---
-title: "SPV client-mode implementation"
+title: "Satoshi to Mike Hearn on SPV client-mode implementation (December 29, 2010)"
 date: 2010-12-29T22:42:00Z
 type: "correspondence"
 source: "plan99"

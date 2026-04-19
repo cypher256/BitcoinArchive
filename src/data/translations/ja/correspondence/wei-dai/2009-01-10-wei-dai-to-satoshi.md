@@ -1,5 +1,5 @@
 ---
-title: "Re: あなたのb-moneyページの引用について"
+title: "ウェイ・ダイからサトシへ：Bitcoin v0.1告知への返信（2009-01-10）"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "gwern"

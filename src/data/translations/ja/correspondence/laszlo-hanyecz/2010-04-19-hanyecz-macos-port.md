@@ -1,5 +1,5 @@
 ---
-title: "ビットコインのmacOS移植と初期の開発"
+title: "ラズロ・ハニエツからサトシへ：BitcoinのmacOS移植と初期の開発（2010-04-19）"
 date: 2010-04-19T00:00:00Z
 type: "correspondence"
 source: "bitcoin-magazine"

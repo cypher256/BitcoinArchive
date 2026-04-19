@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinコントラクト、シーケンス番号、高頻度取引"
+title: "サトシからマイク・ハーンへ：Bitcoinコントラクト・シーケンス番号・高頻度取引（2011-03-09）"
 date: 2011-03-09T17:15:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "SPV実装の進捗"
+title: "マイク・ハーンからサトシへ：SPV実装の進捗（2010-12-30）"
 date: 2010-12-30T00:27:00Z
 type: "correspondence"
 source: "plan99"

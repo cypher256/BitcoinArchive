@@ -1,5 +1,5 @@
 ---
-title: "Contracts follow-up, publish/subscribe, and merged mining"
+title: "Mike Hearn to Satoshi on contracts, publish/subscribe, and merged mining (March 9, 2011)"
 date: 2011-03-09T17:39:00Z
 type: "correspondence"
 source: "plan99"

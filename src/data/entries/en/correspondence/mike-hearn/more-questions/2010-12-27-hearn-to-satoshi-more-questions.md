@@ -1,5 +1,5 @@
 ---
-title: "More BitCoin questions"
+title: "Mike Hearn to Satoshi on more Bitcoin questions (December 27, 2010)"
 date: 2010-12-27T20:21:00Z
 type: "correspondence"
 source: "plan99"

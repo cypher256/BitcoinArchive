@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin v0.1 —— ハル・フィニーへの個人通知"
+title: "サトシからハル・フィニーへ：Bitcoin v0.1リリースの個人的通知（2009-01-08）"
 date: 2009-01-08T20:54:55Z
 type: "correspondence"
 source: "coindesk"

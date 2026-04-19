@@ -1,5 +1,5 @@
 ---
-title: "チャージバック機能の欠如"
+title: "マイク・ハーンからサトシへ：Bitcoinのチャージバック機能がないことについて（2009-04-25）"
 date: 2009-04-25T21:30:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "エスクロー取引と非可逆性"
+title: "サトシからマイク・ハーンへ：エスクロー取引と非可逆性（2009-04-27）"
 date: 2009-04-27T00:11:00Z
 type: "correspondence"
 source: "plan99"

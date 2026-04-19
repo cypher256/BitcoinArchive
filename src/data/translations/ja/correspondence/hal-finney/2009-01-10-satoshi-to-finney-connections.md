@@ -1,5 +1,5 @@
 ---
-title: "非公開メール —— 接続の問題"
+title: "サトシからハル・フィニーへ：Bitcoin接続問題のトラブルシューティング（2009-01-10）"
 date: 2009-01-10T00:00:00Z
 type: "correspondence"
 source: "coindesk"

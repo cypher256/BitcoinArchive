@@ -1,5 +1,5 @@
 ---
-title: "Citation of your b-money page"
+title: "Satoshi to Wei Dai on citing b-money in the Bitcoin whitepaper (August 22, 2008)"
 date: 2008-08-22T16:38:00Z
 type: "correspondence"
 source: "gwern"

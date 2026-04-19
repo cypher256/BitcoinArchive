@@ -1,5 +1,5 @@
 ---
-title: "Satoshi shares GPU mining code for network defense"
+title: "Satoshi to Laszlo Hanyecz: shares his own GPU mining code for network defense (May 17, 2010)"
 date: 2010-05-17T00:00:00Z
 type: "correspondence"
 source: "cointelegraph"

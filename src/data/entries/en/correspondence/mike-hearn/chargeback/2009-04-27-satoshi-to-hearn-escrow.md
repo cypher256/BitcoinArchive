@@ -1,5 +1,5 @@
 ---
-title: "Escrow transactions and non-reversibility"
+title: "Satoshi to Mike Hearn on escrow transactions and non-reversibility (April 27, 2009)"
 date: 2009-04-27T00:11:00Z
 type: "correspondence"
 source: "plan99"

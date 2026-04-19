@@ -1,5 +1,5 @@
 ---
-title: "BitcoinJ will be open source"
+title: "Mike Hearn to Satoshi on open-sourcing BitcoinJ (January 7, 2011)"
 date: 2011-01-07T13:24:00Z
 type: "correspondence"
 source: "plan99"

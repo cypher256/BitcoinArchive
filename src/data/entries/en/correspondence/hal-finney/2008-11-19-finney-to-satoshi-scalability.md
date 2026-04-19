@@ -1,5 +1,5 @@
 ---
-title: "Private email — scalability questions"
+title: "Hal Finney to Satoshi on scalability concerns about the Bitcoin whitepaper (November 19, 2008)"
 date: 2008-11-19T00:00:00Z
 type: "correspondence"
 source: "coindesk"

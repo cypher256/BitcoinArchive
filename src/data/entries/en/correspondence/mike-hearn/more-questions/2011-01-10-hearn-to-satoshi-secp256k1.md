@@ -1,5 +1,5 @@
 ---
-title: "Security of secp256k1 curve"
+title: "Mike Hearn to Satoshi on secp256k1 curve security (January 10, 2011)"
 date: 2011-01-10T16:48:00Z
 type: "correspondence"
 source: "plan99"

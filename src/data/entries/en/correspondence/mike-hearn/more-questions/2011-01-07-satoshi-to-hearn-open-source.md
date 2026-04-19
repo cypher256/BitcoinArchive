@@ -1,5 +1,5 @@
 ---
-title: "First client-only implementation"
+title: "Satoshi to Mike Hearn on the first client-only implementation (January 7, 2011)"
 date: 2011-01-07T13:00:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "Re: あなたのb-moneyページの引用について — Bitcoin v0.1リリース"
+title: "サトシからウェイ・ダイへ：Bitcoin v0.1リリースについて（2009-01-10）"
 date: 2009-01-10T11:17:00Z
 type: "correspondence"
 source: "gwern"

@@ -1,5 +1,5 @@
 ---
-title: "BitcoinJ open-source release and protocol questions"
+title: "Mike Hearn to Satoshi on the BitcoinJ release and protocol questions (March 7, 2011)"
 date: 2011-03-07T14:13:00Z
 type: "correspondence"
 source: "plan99"

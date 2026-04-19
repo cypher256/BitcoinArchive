@@ -1,5 +1,5 @@
 ---
-title: "SPV implementation progress"
+title: "Mike Hearn to Satoshi on SPV implementation progress (December 30, 2010)"
 date: 2010-12-30T00:27:00Z
 type: "correspondence"
 source: "plan99"

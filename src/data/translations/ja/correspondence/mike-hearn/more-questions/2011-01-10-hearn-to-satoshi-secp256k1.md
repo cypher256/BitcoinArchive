@@ -1,5 +1,5 @@
 ---
-title: "secp256k1曲線のセキュリティ"
+title: "マイク・ハーンからサトシへ：secp256k1曲線のセキュリティ（2011-01-10）"
 date: 2011-01-10T16:48:00Z
 type: "correspondence"
 source: "plan99"

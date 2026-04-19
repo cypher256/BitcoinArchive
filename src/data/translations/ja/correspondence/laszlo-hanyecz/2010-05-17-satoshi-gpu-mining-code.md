@@ -1,5 +1,5 @@
 ---
-title: "サトシがネットワーク防衛のためにGPUマイニングコードを共有"
+title: "サトシからラズロ・ハニエツへ：ネットワーク防衛のための自作GPUマイニングコードを共有（2010-05-17）"
 date: 2010-05-17T00:00:00Z
 type: "correspondence"
 source: "cointelegraph"

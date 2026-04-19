@@ -1,5 +1,5 @@
 ---
-title: "Multisig contract pattern for time-locked deposits"
+title: "Satoshi to Mike Hearn on a multisig contract pattern for time-locked deposits (April 20, 2011)"
 date: 2011-04-20T11:39:00Z
 type: "correspondence"
 source: "plan99"

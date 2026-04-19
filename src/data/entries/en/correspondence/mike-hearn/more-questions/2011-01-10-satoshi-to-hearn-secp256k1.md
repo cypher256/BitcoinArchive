@@ -1,5 +1,5 @@
 ---
-title: "ECDSA curve choice and development history"
+title: "Satoshi to Mike Hearn on ECDSA curve choice and development history (January 10, 2011)"
 date: 2011-01-10T20:47:00Z
 type: "correspondence"
 source: "plan99"

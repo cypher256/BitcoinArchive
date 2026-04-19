@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin contracts, sequence numbers, and high-frequency trading"
+title: "Satoshi to Mike Hearn on Bitcoin contracts, sequence numbers, and high-frequency trading (March 9, 2011)"
 date: 2011-03-09T17:15:00Z
 type: "correspondence"
 source: "plan99"

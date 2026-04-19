@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin v0.1 — personal notification to Hal Finney"
+title: "Satoshi personally notifies Hal Finney of the Bitcoin v0.1 release (January 8, 2009)"
 date: 2009-01-08T20:54:55Z
 type: "correspondence"
 source: "coindesk"
