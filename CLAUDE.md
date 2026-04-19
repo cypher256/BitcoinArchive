@@ -8,7 +8,9 @@ Write in English. (public repository)
 
 **NEVER run `npm run build`. Use `npm run check` instead.**
 
-`npm run build` takes 4+ minutes (generates 6,775 static HTML pages). Use `npm run check` (~3 seconds) for validation. Full builds run only in CI (GitHub Actions).
+`npm run build` is slow (it generates the whole static site — thousands of
+pages). Use `npm run check` for validation; it runs in seconds. Full
+builds run only in CI (GitHub Actions).
 
 ## Editorial Rules
 
