@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Technical analysis of Bitcoin's genesis block from the v0.1 source code: the hardcode auto-construction mechanism, the five-day-gap reinterpreted as a timestamp artifact, a two-layer reading of authorship (epistemic vs ontological — distinguishing anonymization from un-ownership by design), PoW surplus as a third non-required design choice, and the separable dimension of private-key possession."
+description: "Technical analysis of Bitcoin's genesis block from the v0.1 source code: the hardcode auto-construction mechanism, the five-day-gap reinterpreted as a timestamp artifact, a two-layer reading of authorship (epistemic vs ontological — distinguishing anonymization from un-ownership by design), the numerical PoW headroom of the genesis hash as a softer secondary observation, and the separable dimension of private-key possession."
 isSatoshi: false
 featured: true
 tags:
@@ -215,7 +215,7 @@ A plausible alternative design:
 
 This is structurally the same mechanism used for every other block. It is a strictly smaller implementation; it reuses existing networking code rather than adding a special empty-DB branch.
 
-Under this alternative, Block 0 has a distributor. Whoever ran the nonce search becomes the sole source of the block data, observable via the P2P layer as the node from which every early peer received Block 0. If Satoshi had been the only node holding Block 0 initially, Satoshi would be identifiable as the block's origin via networking alone.
+Under this alternative, Block 0 has a distributor. Whoever ran the nonce search becomes the sole source of the block data, and that source leaves a P2P-layer trace — each early peer has a first receipt from some specific node. Whether that trace would have been enough to *uniquely* identify the origin in real network conditions is a separate empirical question. The structural point is narrower and sufficient for this analysis: the concept of a distributor would exist. Mechanism B eliminates the concept itself.
 
 ### 5.3 Source code is symmetric; behavioral evidence is not
 
@@ -252,31 +252,34 @@ Several non-exclusive reasons are plausible:
 
 The decomposition here is offered as an independent observation grounded directly in the v0.1 source.
 
-### 5.5 A third non-required choice: PoW surplus
+### 5.5 A secondary observation: PoW headroom
 
-Mechanism B is not the only non-required design choice visible in Block 0. The surplus leading zeros in the genesis hash are a second, independent non-required choice — and one that points in the *opposite* direction from mechanism B.
+Mechanism B is not the only non-required design choice visible in Block 0. The genesis hash also sits well below the difficulty-1 target, which is a smaller, more interpretive observation but worth stating precisely.
 
-Three layers of the leading-zero requirement:
+Three layers, stated in terms of what each layer actually checks:
 
-| Layer | Leading-zero requirement |
+| Layer | What is checked |
 |---|---|
-| v0.1 consensus on Block 0 | **None.** The empty-DB branch in `LoadBlockIndex()` runs `assert(block.GetHash() == hashGenesisBlock);` — equality check only. No PoW check is invoked for Block 0. |
-| PoW-verification form (satisfying difficulty-1 target `0x00000000ffff0000...`) | **8 hex digits.** |
-| Actual genesis hash `0x000000000019d6689c...` | **10 hex digits** (~256× the work required to satisfy difficulty-1, well above any consensus-layer requirement). |
+| v0.1 consensus on Block 0 | Hash equality only. The empty-DB branch in `LoadBlockIndex()` runs `assert(block.GetHash() == hashGenesisBlock);` — no PoW comparison is invoked for Block 0. |
+| PoW validity at difficulty 1 | The hash, interpreted as a 256-bit integer, must be numerically ≤ the difficulty-1 target `0x00000000ffff0000...`. This is a numerical comparison, not a prefix-count. |
+| Actual genesis hash `0x000000000019d6689c...` | Numerically well below the difficulty-1 target (the first non-zero 16-bit chunk is `0x0019`, far under the target's `0xffff`). |
 
-At the v0.1 consensus level, Block 0 only needs hash equality. In principle, Satoshi could have hardcoded a hash with far fewer leading zeros, or even none, and the network would still have functioned. To let external observers reproduce the PoW verification at difficulty-1, 8 zeros are the minimum. Satoshi went to 10.
+At the v0.1 consensus level Block 0 only needs hash equality; even an arbitrary hash value would have functioned in-protocol. The actual genesis hash comfortably satisfies the difficulty-1 bound, with meaningful numerical headroom. Whether that headroom is best read as a deliberate design signal is a softer question than the distributor question of §5.3:
 
-This fits a broader pattern. Alongside mechanism B, it gives three non-required choices visible in Block 0:
+- Under Reading A, the headroom is plausibly a conservative engineering choice — let external observers run the standard PoW check against difficulty 1 and have it pass unambiguously, rather than land right at the boundary.
+- Under Reading B, the same headroom reads as a weight-ascribing mark: inside an otherwise de-personalized design, leave a visibly sub-target hash paired with the editorial *Times* headline as the two deliberate individual elements the design still carries.
 
-| Non-required choice | What it produces | Direction |
-|---|---|---|
-| **Mechanism B** (auto-construction) | No distributor, no network-observable source | Removal |
-| **PoW surplus** (leading zeros beyond requirement) | Added, intentional weight to the genesis event | Addition |
-| **The *Times* headline** in the coinbase | Personal voice / editorial content | Addition |
+Source code does not sharply distinguish these. The observation is **compatible** with Reading B — especially paired with the headline, which is the one unambiguously personal element — but it does not by itself rule out the conservative-engineering reading. Unlike §5.3 where a smaller alternative implementation exists and was not chosen, here the alternative (a hash landing near the difficulty-1 boundary) is stylistic rather than structural.
 
-Mechanism B removes; the PoW surplus and the headline deliberately add. Under Reading A, Satoshi would have stopped the nonce search at the first hash satisfying any consensus requirement, since convenience was the motive. Under Reading B, the asymmetric pattern is coherent: the design de-personalizes by default, but Satoshi reserves a small number of deliberate marks (the extra zeros, the headline) as the two elements of "personal weight" permitted within the de-personalized frame.
+The pattern worth noting, then, is narrower than "Satoshi added intentional weight to the genesis":
 
-The three together reinforce Reading B more than any one would in isolation: un-ownership is not an unconsidered side effect of a minimal implementation but part of a larger set of choices in which each non-required decision is internally consistent with a specific design intent.
+| Non-required choice | Structural diagnosticity for Reading B |
+|---|---|
+| **Mechanism B** (auto-construction) | Strong — the smaller alternative was not chosen |
+| **The *Times* headline** in the coinbase | Strong — unambiguously personal content in an otherwise de-personalized design |
+| **PoW headroom** (hash well under target) | Weaker — compatible with both readings; more noticeable paired with the headline than in isolation |
+
+Stating the observation at this weaker strength is more honest than the "8 digits required, 10 observed" framing used in earlier drafts, which conflated a numerical comparison with a prefix count.
 
 ## 6. The unspendable 50 BTC: a bootstrap artifact
 
@@ -401,7 +404,7 @@ Constants are identical between v0.1 and current mainline Core.
    - **Ontological**: the structural conditions that make "miner = author" meaningful for every other block (PoW as construction event, peer as distribution source, UTXO as ownership mechanism) are absent by design. "Single author" is not a well-defined concept applied to Block 0.
 4. The hardcode decomposes into two independent mechanisms: hash verification (required for consensus) and auto-construction (not required). Un-attributability is a consequence of the second.
 5. Whether that choice was implementation convenience (Reading A) or un-ownership by design (Reading B) is not settled by the source code alone. Behavioral evidence — larger-than-necessary implementation, consistency with Satoshi's other de-personalizing choices, shared-constant coinbase address, the *Times* headline as sole personal element, and the same Occam's razor used in §6 — asymmetrically favors Reading B.
-6. Block 0 exhibits a third non-required design choice: PoW surplus (10 leading zeros vs. 8 required, 0 required for consensus on Block 0 itself). Unlike mechanism B, this *adds* rather than removes — a deliberate personal mark, paired with the *Times* headline, inside an otherwise de-personalized design.
+6. Block 0 exhibits a secondary observation: the genesis hash sits numerically well below the difficulty-1 target, and the v0.1 consensus on Block 0 is equality-only, not a PoW comparison. Read as "deliberate weight-ascribing", this is compatible with Reading B's pattern; read as "conservative engineering so the PoW form check passes unambiguously for external observers", it is compatible with Reading A. The observation is less sharply diagnostic than mechanism B alone — more noticeable when paired with the *Times* headline than in isolation.
 7. The same bootstrap construction that produces un-attribution on the creative axis (§4) also produces un-attribution on the economic axis (§6): the coinbase output never enters the UTXO set because Block 0 is an initial-state artifact, not a transaction event. One design decision, two parallel absences.
 8. Private-key possession for the Block 0 coinbase address (`1A1zP1eP5...`) is a separable dimension from the above. It remains empirically open — no valid signature has been demonstrated, the Craig Wright / COPA case foreclosed one high-profile claim, and the structural un-ownership argument does not depend on any particular answer to this question.
 
