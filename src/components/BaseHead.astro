@@ -25,7 +25,13 @@ interface Props {
 const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, author, noindex = false, ogImage, breadcrumbs = [], structuredData } = Astro.props;
 const t = useTranslations(lang as Lang);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const pagePath = Astro.url.pathname.replace(/^\/BitcoinArchive/, '');
+const BASE_PREFIX_RE = /^\/BitcoinArchive(\/|$)/;
+// Strip the /BitcoinArchive build-time base prefix when emitting
+// primary-origin URLs (canonical, og:url, JSON-LD). The site deploys at
+// the root on bitcoin-institute.pages.dev, even though Astro builds
+// under base: '/BitcoinArchive/' for GitHub Pages compatibility.
+const stripBase = (path: string) => path.replace(BASE_PREFIX_RE, '/');
+const pagePath = stripBase(Astro.url.pathname);
 const resolvedCanonical = canonicalUrl || `${primaryOrigin}${pagePath}`;
 const ogImageUrl = ogImage ? `${primaryOrigin}${ogImage}` : `${primaryOrigin}/images/og-default.png`;
 const organizationId = `${primaryOrigin}/#organization`;
@@ -43,7 +49,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
   "@type": "ListItem",
   "position": index + 1,
   "name": item.name,
-  "item": new URL(item.url, primaryOrigin).toString(),
+  "item": new URL(stripBase(item.url), primaryOrigin).toString(),
 }));
 ---
 
