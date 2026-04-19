@@ -16,12 +16,27 @@ const t = useTranslations(lang);
     <a href={localePath('/', lang)} class="site-title">
       <strong>{t('site.title')}</strong>
     </a>
-    <nav class="main-nav">
+    <button
+      type="button"
+      class="mobile-menu-toggle"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label={t('nav.menu' as any)}
+    >
+      <span class="menu-icon menu-icon-open" aria-hidden="true">☰</span>
+      <span class="menu-icon menu-icon-close" aria-hidden="true">✕</span>
+    </button>
+    <nav class="main-nav" id="site-nav">
       <a href={localePath('/entries/', lang)}>{t('nav.entries')}</a>
-      <a href={localePath('/types/', lang)}>{t('nav.types' as any)}</a>
-      <a href={localePath('/sources/', lang)}>{t('nav.sources')}</a>
-      <a href={localePath('/participants/', lang)}>{t('nav.participants')}</a>
-      <a href={localePath('/tags/', lang)}>{t('nav.tags')}</a>
+      <details class="nav-dropdown">
+        <summary>{t('nav.browse' as any)}<span class="chevron" aria-hidden="true">▾</span></summary>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href={localePath('/types/', lang)} role="menuitem">{t('nav.types' as any)}</a>
+          <a href={localePath('/sources/', lang)} role="menuitem">{t('nav.sources')}</a>
+          <a href={localePath('/participants/', lang)} role="menuitem">{t('nav.participants')}</a>
+          <a href={localePath('/tags/', lang)} role="menuitem">{t('nav.tags')}</a>
+        </div>
+      </details>
       <a href={localePath('/about/', lang)}>{t('nav.about')}</a>
       <a href={localePath('/search/', lang)}>{t('nav.search')}</a>
       <LanguageSwitch lang={lang} />
@@ -63,24 +78,193 @@ const t = useTranslations(lang);
     font-family: var(--font-heading);
     font-size: 0.9rem;
   }
-  .main-nav a {
+  .main-nav > a {
     color: var(--color-text-muted);
     text-decoration: none;
     white-space: nowrap;
   }
-  .main-nav a:hover {
+  .main-nav > a:hover {
     color: var(--color-text);
     text-decoration: none;
   }
+
+  /* Browse ドロップダウン */
+  .nav-dropdown {
+    position: relative;
+  }
+  .nav-dropdown > summary {
+    color: var(--color-text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    list-style: none; /* Firefox, Chrome 等の一般ブラウザ */
+  }
+  /* Safari / 旧Chrome */
+  .nav-dropdown > summary::-webkit-details-marker {
+    display: none;
+  }
+  /* モダンブラウザの ::marker（Safari 18+ 等） */
+  .nav-dropdown > summary::marker {
+    content: '';
+  }
+  .nav-dropdown > summary:hover {
+    color: var(--color-text);
+  }
+  .nav-dropdown .chevron {
+    font-size: 0.7em;
+    transition: transform 0.15s;
+  }
+  .nav-dropdown[open] > summary {
+    color: var(--color-text);
+  }
+  .nav-dropdown[open] .chevron {
+    transform: rotate(180deg);
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 180px;
+    padding: 0.4rem 0;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    z-index: 101;
+  }
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .nav-dropdown-menu a:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  /* ハンバーガーボタン（デスクトップでは非表示） */
+  .mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.3rem 0.55rem;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  .mobile-menu-toggle:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .mobile-menu-toggle .menu-icon-close {
+    display: none;
+  }
+  .mobile-menu-toggle[aria-expanded="true"] .menu-icon-open {
+    display: none;
+  }
+  .mobile-menu-toggle[aria-expanded="true"] .menu-icon-close {
+    display: inline;
+  }
+
   @media (max-width: 768px) {
     .header-inner {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 0.5rem;
     }
+    .mobile-menu-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* モバイルではナビを畳む（ハンバーガーで開閉） */
     .main-nav {
-      flex-wrap: wrap;
-      gap: 0.75rem;
+      display: none;
+      flex-basis: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.25rem;
+      padding: 0.75rem 0 0.25rem;
+      margin-top: 0.5rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.95rem;
+    }
+    .main-nav.is-open {
+      display: flex;
+    }
+    .main-nav > a,
+    .nav-dropdown > summary {
+      padding: 0.55rem 0.25rem;
+      border-radius: 4px;
+    }
+    .main-nav > a:hover,
+    .nav-dropdown > summary:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+    /* モバイル時 Browse dropdown はインライン展開（overlay でなく縦に追加） */
+    .nav-dropdown-menu {
+      position: static;
+      min-width: auto;
+      margin: 0.25rem 0 0.25rem 1rem;
+      padding: 0.15rem 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav-dropdown-menu a {
+      padding: 0.4rem 0.5rem;
+      border-radius: 4px;
     }
   }
 </style>
+
+<script is:inline>
+(function() {
+  // ハンバーガー: モバイルメニュー開閉
+  var toggle = document.querySelector('.mobile-menu-toggle');
+  var nav = document.getElementById('site-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+
+  // Browse ドロップダウン: クリック外で閉じる
+  document.addEventListener('click', function(e) {
+    document.querySelectorAll('details.nav-dropdown[open]').forEach(function(d) {
+      if (!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+
+  // ESC: Browse ドロップダウン → モバイルメニューの順に閉じる
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    var openDropdown = document.querySelector('details.nav-dropdown[open]');
+    if (openDropdown) {
+      openDropdown.removeAttribute('open');
+      var summary = openDropdown.querySelector('summary');
+      if (summary) summary.focus();
+      return;
+    }
+    if (nav && nav.classList.contains('is-open')) {
+      nav.classList.remove('is-open');
+      if (toggle) {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    }
+  });
+})();
+</script>
