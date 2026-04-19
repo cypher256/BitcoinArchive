@@ -164,23 +164,38 @@ Source code alone cannot adjudicate between these readings. Both are technically
 
 What the source code *does* establish is that un-attributability is a **consequence of an independent design decision**, not an inherent feature of block 0. A different, equally viable implementation would have produced a distributor. That decision was made by Satoshi.
 
-## 5. The unspendable 50 BTC
+## 5. The unspendable 50 BTC: a bootstrap artifact
 
 The Block 0 coinbase reward of 50 BTC has never moved, and cannot. In both v0.1 and modern Bitcoin Core, the empty-DB genesis construction writes Block 0 to the block database but does not write its coinbase output to the UTXO set. The modern `chainparams.cpp` comments note this explicitly: *"the output of its generation transaction cannot be spent since it did not originally exist in the database."*
 
-The Bitcoin Wiki records the consensus that *"it is not known if this was done intentionally or accidentally."*
+The Bitcoin Wiki records the community's cautious position: *"it is not known if this was done intentionally or accidentally."*
 
-Reading the v0.1 source, the accidental reading has the stronger case:
+Read as an inconsistency in an otherwise mining-based block processor, the behavior looks like a gap. For any normal block, `ProcessBlock → AcceptBlock → AddToBlockIndex → ConnectBlock → ConnectInputs → txdb.AddTxIndex` is a single chain. The genesis empty-DB branch runs only `block.WriteToDisk` and `block.AddToBlockIndex` — it does not call `ConnectBlock`, so `AddTxIndex` is never invoked, and the coinbase never enters the transaction index.
 
-1. **Processing asymmetry.** For any normal block, `ProcessBlock → AcceptBlock → AddToBlockIndex → ConnectBlock → ConnectInputs → txdb.AddTxIndex` is a single chain. The genesis empty-DB branch runs only `block.WriteToDisk` and `block.AddToBlockIndex` — it does not call `ConnectBlock`, so `AddTxIndex` is never invoked. The genesis coinbase simply never enters the transaction index.
-2. **No comment explaining the omission.** The v0.1 file contains no remark indicating that the absence is intended. The modern Core comment is retrospective.
-3. **`//// debug print, delete this later`** appears at L1472 of v0.1 `main.cpp`. Satoshi's own TODO marker, left in the released code, suggests this function was not polished to final state.
-4. **Low stakes at release time.** In January 2009, 50 BTC had no market value; whether the coinbase was indexable was not a visible concern.
-5. **Frozen by compatibility.** Once noticed, the behavior could not be corrected without a hard fork. It became permanent.
+A different framing changes what is being described. Block 0 is not "the first mined block." It is **the network's initial state** — a bootstrap construction from constants, not a received mining event. Under that framing, the five signals most often read as evidence of oversight are instead expected behavior:
 
-The Wiki's "unknown" is a fair, conservative phrasing. The source itself does not point to intent; it points to an under-polished function whose side effect became canonical.
+| Observation | Under bootstrap framing |
+|---|---|
+| `ConnectBlock` is not called | Expected. `ConnectBlock` processes transactions entering the network; bootstrap initialization is a distinct code path by design. |
+| Coinbase output not in the UTXO set | Expected. No UTXO-creating event occurred. The block is not a mining event — it is a given starting condition. UTXOs track the unspent outputs of real transactions. |
+| No source comment explaining the omission | Expected. Nothing is being omitted; this is what initialization does. A comment would only be needed if the code were working against its own intent. |
+| The processing asymmetry itself | Expected. Initialization and transaction handling are semantically different operations. Symmetry between them would be surprising. |
+| Unchanged through 17 years of Core development | Expected. It is not a bug to fix. |
 
-Tip transactions sent to `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` after the fact (over 100 BTC cumulative) are *not* subject to the UTXO omission — those are ordinary outputs. None of them have ever moved either. This is weak evidence that no one has actively used the private key, if one exists.
+This reading pairs directly with §4. The same design decision — treat Block 0 as a construction from constants, rather than a block that arrives over the P2P layer — produces two consistent consequences:
+
+- No network-observable source for the block → cryptographic un-attributability of its creator (§4).
+- No transaction-semantics event → coinbase output never enters the UTXO set (§5).
+
+One design choice, two consistent effects, traceable to the same branch in `LoadBlockIndex()`.
+
+The modern Core comment, re-read under this framing, is not an apology for a legacy quirk. *"Did not originally exist in the database"* is flat description: Block 0 was never a transaction event, so its output was never indexed as one.
+
+Occam's razor favors the bootstrap reading. The accidental reading has to posit an oversight in a v0.1 release whose edge-case handling elsewhere is notably thorough. The bootstrap reading posits nothing: every observed behavior follows from a single semantic choice. The Wiki's "unknown" is a reasonable conservative phrasing for public reference, but against the source code alone, the bootstrap interpretation is the internally more economical one.
+
+(Earlier drafts of this analysis read §5 as "probably accidental based on five source-level signals." That reading was shallow: each signal flips sign once Block 0 is understood as initial state rather than first mined block. The current text is the corrected view.)
+
+Tip transactions sent to `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` after the fact (over 100 BTC cumulative) are *not* subject to the initial-state exclusion — they are ordinary outputs. None of them have ever moved either. This is weak evidence that no one has actively used the private key, if one exists.
 
 ## 6. Why this framing has not been formalized
 
@@ -236,6 +251,6 @@ The constants are identical between v0.1 and current mainline Core.
 3. Who first searched for nonce `2083236893` cannot be determined from chain data. Attribution to Satoshi rests on circumstantial evidence.
 4. The hardcode has two independent mechanisms: hash verification (required for consensus) and auto-construction (not required). Un-attributability is a consequence of the second choice.
 5. Whether that choice was deliberate anonymization or implementation convenience is interpretive and not settled by the source code.
-6. The 50 BTC coinbase is likely unspendable by accident of implementation rather than by design, based on internal source-code signals.
+6. The 50 BTC coinbase unspendability is best read as a consequence of treating Block 0 as network initial state rather than as a mined transaction event — the same bootstrap design that produces un-attributability. One design decision, two effects.
 
-Block 0 is the most symbolic artifact in Bitcoin, and at the same time the most difficult to attribute cryptographically. If that difficulty was a design choice, it is continuous with the rest of Satoshi's anonymization posture. If it was a side effect, it is a particularly fortunate one.
+Block 0 is the most symbolic artifact in Bitcoin, and at the same time the most difficult to attribute cryptographically. The same bootstrap construction that creates that difficulty also prevents the 50 BTC coinbase from entering the transaction index. Both outcomes flow from a single line in `LoadBlockIndex()`. Whether that single design choice was driven by implementation convenience or by a deliberate policy of leaving no identifying trace at the moment of creation is the interpretive question §4 leaves open — and the only question the source code itself cannot answer.
