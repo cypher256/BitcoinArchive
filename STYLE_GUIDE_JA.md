@@ -510,7 +510,7 @@ body text, descriptions, titles, and any editorial prose.
 5. 既存データを移行（Perl 一括置換: `perl -i -CSD -Mutf8 -pe '...'`）
 6. `npm run check:ja-glossary` で違反ゼロを確認
 
-Enforced by `npm run check:ja-glossary` (runs as part of `npm run build`).
+Enforced by `npm run check:ja-glossary` (runs as part of `npm run check`).
 
 ## 4. Cross-Project Consistency (Novel)
 
