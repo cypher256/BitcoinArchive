@@ -1,5 +1,5 @@
 ---
-title: "[p2p-research] Bitcoin open source implementation of P2P currency"
+title: "\"[p2p-research] Bitcoin open source implementation of P2P currency\" — Satoshi introduces Bitcoin to the P2P Foundation (February 2009)"
 date: 2009-02-11T22:27:00.000Z
 type: "mailing-list"
 source: "p2p-research-list"

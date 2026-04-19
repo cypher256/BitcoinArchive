@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin v0.1 Alpha release notes"
+title: "\"[bitcoin-list] Bitcoin v0.1 Alpha release notes\" — Satoshi's early Alpha release notes (January 2009)"
 date: 2009-01-12T20:20:47.000Z
 type: "mailing-list"
 source: "bitcoin-list"

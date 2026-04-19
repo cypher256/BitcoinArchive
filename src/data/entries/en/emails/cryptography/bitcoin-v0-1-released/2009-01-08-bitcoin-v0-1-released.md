@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin v0.1 released"
+title: "\"Bitcoin v0.1 released\" — Satoshi announces the first Bitcoin release to the cryptography list (January 2009)"
 date: 2009-01-08T19:27:40Z
 type: "mailing-list"
 source: "cryptography-mailing-list"

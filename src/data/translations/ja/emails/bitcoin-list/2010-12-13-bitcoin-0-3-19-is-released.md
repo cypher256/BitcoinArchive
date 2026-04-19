@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin 0.3.19 リリース"
+title: "「[bitcoin-list] Bitcoin 0.3.19 is released」— サトシがv0.3.19リリースを告知（2010-12）"
 date: 2010-12-13T16:12:09.000Z
 type: "mailing-list"
 source: "bitcoin-list"

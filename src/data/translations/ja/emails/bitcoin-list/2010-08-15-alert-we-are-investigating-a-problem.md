@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] 警告 - 問題を調査中です"
+title: "「[bitcoin-list] ALERT - we are investigating a problem」— サトシによる1844億BTC事件の最初の公告（2010-08）"
 date: 2010-08-15T20:38:33.000Z
 type: "mailing-list"
 source: "bitcoin-list"

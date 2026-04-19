@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin v0.1 Alphaリリースノート"
+title: "「[bitcoin-list] Bitcoin v0.1 Alpha release notes」— サトシによる初期アルファ版リリースノート（2009-01）"
 date: 2009-01-12T20:20:47.000Z
 type: "mailing-list"
 source: "bitcoin-list"

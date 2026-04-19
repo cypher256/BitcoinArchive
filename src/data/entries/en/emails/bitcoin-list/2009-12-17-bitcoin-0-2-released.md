@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin 0.2 released"
+title: "\"[bitcoin-list] Bitcoin 0.2 released\" — Satoshi announces the v0.2 release (December 2009)"
 date: 2009-12-17T06:52:09.000Z
 type: "mailing-list"
 source: "bitcoin-list"

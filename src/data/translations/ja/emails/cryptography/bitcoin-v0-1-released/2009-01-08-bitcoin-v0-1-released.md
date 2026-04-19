@@ -1,5 +1,5 @@
 ---
-title: "ビットコイン v0.1 リリース"
+title: "「Bitcoin v0.1 released」— サトシが暗号学メーリングリストにビットコイン初版リリースを告知（2009-01）"
 date: 2009-01-08T19:27:40Z
 type: "mailing-list"
 source: "cryptography-mailing-list"

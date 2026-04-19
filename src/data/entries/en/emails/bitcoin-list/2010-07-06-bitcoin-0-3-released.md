@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin 0.3 released!"
+title: "\"[bitcoin-list] Bitcoin 0.3 released!\" — Satoshi announces the v0.3 release (July 2010)"
 date: 2010-07-06T21:53:53.000Z
 type: "mailing-list"
 source: "bitcoin-list"

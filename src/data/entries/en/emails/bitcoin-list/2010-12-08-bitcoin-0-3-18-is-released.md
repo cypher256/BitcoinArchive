@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin 0.3.18 is released"
+title: "\"[bitcoin-list] Bitcoin 0.3.18 is released\" — Satoshi announces the v0.3.18 release (December 2010)"
 date: 2010-12-08T23:11:55.000Z
 type: "mailing-list"
 source: "bitcoin-list"

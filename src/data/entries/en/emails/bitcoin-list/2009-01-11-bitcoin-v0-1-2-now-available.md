@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin v0.1.2 now available"
+title: "\"[bitcoin-list] Bitcoin v0.1.2 now available\" — Satoshi announces the v0.1.2 release (January 2009)"
 date: 2009-01-11T22:32:18.000Z
 type: "mailing-list"
 source: "bitcoin-list"
