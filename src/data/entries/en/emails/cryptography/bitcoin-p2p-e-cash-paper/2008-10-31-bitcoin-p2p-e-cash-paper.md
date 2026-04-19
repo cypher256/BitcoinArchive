@@ -61,3 +61,7 @@ Full paper at:<br>
 http://www.bitcoin.org/bitcoin.pdf
 
 Satoshi Nakamoto
+
+---
+
+**See also:** [Archived Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)

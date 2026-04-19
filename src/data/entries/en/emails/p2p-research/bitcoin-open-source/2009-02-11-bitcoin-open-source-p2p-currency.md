@@ -41,3 +41,7 @@ The result is a distributed system with no single point of failure. Users hold t
 
 Satoshi Nakamoto
 http://www.bitcoin.org
+
+---
+
+**See also:** [Archived Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)

@@ -98,3 +98,7 @@ translationStatus: complete
 <!-- /tone-skip -->
 
 *出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
+
+---
+
+**関連:** [アーカイブ収蔵のホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)

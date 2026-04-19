@@ -48,3 +48,7 @@ naively implemented, requires each peer to have most past transactions,
 or most past transactions that occurred recently. If hundreds of
 millions of people are doing transactions, that is a lot of bandwidth -
 each must know all, or a substantial part thereof.
+
+---
+
+**See also:** [Archived Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)

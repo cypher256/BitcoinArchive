@@ -33,3 +33,7 @@ The solution Bitcoin proposes is to use a peer-to-peer network to check for doub
 For more details on how it works, see the design paper at http://www.bitcoin.org/bitcoin.pdf or visit http://www.bitcoin.org where you can download the software and try it out.
 
 Satoshi Nakamoto
+
+---
+
+**See also:** [Archived Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)

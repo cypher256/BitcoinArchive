@@ -47,3 +47,7 @@ http://www.bitcoin.org/bitcoin.pdf
 http://www.bitcoin.org/bitcoin.pdf
 
 サトシ・ナカモト
+
+---
+
+**関連:** [アーカイブ収蔵のホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)
