@@ -27,6 +27,7 @@ relatedEntries:
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
+  - "analysis/2009-01-03-genesis-block-hardcode-analysis"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
   - "correspondence/martti-malmi/2010-05-14-status-update-191"
   - "correspondence/martti-malmi/2010-05-16-status-update-192"

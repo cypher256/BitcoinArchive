@@ -43,6 +43,7 @@ relatedEntries:
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2011-04-26-satoshi-final-known-email
   - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
 translationStatus: complete

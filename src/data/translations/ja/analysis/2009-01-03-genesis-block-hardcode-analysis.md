@@ -1,0 +1,242 @@
+---
+title: "ジェネシスブロック分析：ハードコードされたパラメーター・5日間の空白・Block 0 の未帰属性"
+date: 2009-01-03T18:15:05Z
+type: "analysis"
+source: "github"
+sourceUrl: "https://github.com/trottier/original-bitcoin"
+author: "Bitcoin Institute"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "Bitcoin v0.1 ソースコードから見たジェネシスブロックの技術分析：ハードコードされたパラメーターと決定論的自動構築機構、Block 0 と Block 1 の「5日間の空白」をハードコード・タイムスタンプのアーティファクトとして再解釈する視点、そして Block 0 は暗号学的に帰属不可能であり、それはコンセンサスには不要な独立した実装選択（自動構築）の副産物であるという、これまで明示されてこなかった論点。"
+isSatoshi: false
+featured: true
+tags:
+  - "genesis-block"
+  - "source-code"
+  - "bitcoin-v0.1"
+  - "analysis"
+  - "attribution"
+  - "hardcode"
+  - "blockchain"
+secondarySources:
+  - name: "Original Bitcoin v0.1 source (trottier/original-bitcoin)"
+    url: "https://github.com/trottier/original-bitcoin"
+  - name: "Modern Bitcoin Core chainparams.cpp"
+    url: "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp"
+  - name: "Bitcoin Wiki — Genesis block"
+    url: "https://en.bitcoin.it/wiki/Genesis_block"
+  - name: "Lerner (2013) — A new mystery about Satoshi"
+    url: "https://bitslog.com/2013/09/03/new-mystery-about-satoshi/"
+  - name: "Lerner (2019) — The Return of the Deniers and the Revenge of Patoshi"
+    url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
+  - name: "Lerner (2020) — The Patoshi Mining Machine"
+    url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
+  - name: "PLOS ONE (2021) — Strangely mined bitcoins"
+    url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
+relatedEntries:
+  - "sourceforge/2009-01-03-genesis-block"
+  - "aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery"
+  - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
+  - "analysis/2009-01-09-satoshi-code-analysis"
+  - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
+  - "aftermath/2008-10-31-satoshi-nakamoto-biography"
+translationStatus: complete
+---
+
+本分析は、Bitcoin v0.1 のソースコードが空のブロックデータベースを検出した際に実際に行う処理を精査し、その機構が従来から謎とされてきた Block 0 と Block 1 の間の「5日間の空白」に対して何を示唆するか、さらにより本質的な問題として、ジェネシスブロックの作成者を暗号学的に特定することが原理的に可能かを検討する。
+
+技術的事実は Bitcoin v0.1 ソースコードで検証可能。解釈的部分はその旨を明記する。
+
+## 1. ハードコードされたパラメーター
+
+Bitcoin v0.1 の `src/main.cpp` では、Block 0 の全フィールドがコンパイル時定数として埋め込まれている。
+
+- `hashGenesisBlock` = `0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f`（L24）
+- `nTime` = `1231006505`（2009-01-03 18:15:05 UTC）
+- `nBits` = `0x1d00ffff`
+- `nNonce` = `2083236893`
+- `pszTimestamp` = `"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"`
+- 期待される Merkle root と期待されるブロックハッシュも定数として `assert` される
+
+v0.1 には `MineGenesisBlock()` 関数は存在しない。ランタイムでジェネシスの nonce を探索するコードパスは存在しない。`LoadBlockIndex()` が空のデータベースを検出すると、上記定数からジェネシスブロックを決定論的に再構築し、ハッシュを `assert()` で検証してディスクに書き込むだけである。
+
+現代の Bitcoin Core（`src/kernel/chainparams.cpp`）も同じ4つの定数（1231006505, 2083236893, 0x1d00ffff, 1）を使用する。この機構は 17 年間変わっていない。
+
+実用上の帰結：これまで空のブロックデータベースで起動した全 Bitcoin ノードは、各自のローカル環境でバイト単位で同一の Block 0 を構築してきた。どのノードも Block 0 を「他者から受信」していない。
+
+## 2. 5日間の空白
+
+Block 0 のタイムスタンプは 2009-01-03 18:15:05 UTC、Block 1 は 2009-01-09 02:54:25 UTC。間隔は 5日 8時間 39分で、想定されている 10 分間隔の約 770 倍に相当する。
+
+従来の仮説群（[Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) 等で整理されている）：
+
+1. **バックデート説。** サトシはある程度前から Bitcoin を開発しており、1月3日の *The Times* 一面記事を埋め込むために、ジェネシスのタイムスタンプを 1月3日に合わせた。1月3日は象徴的な日付であり、実際の創造の瞬間ではない。最有力説
+2. **天地創造説。** 聖書の天地創造との類比を意図した間
+3. **美しいハッシュ説。** ハッシュの先頭ゼロが要求条件より大幅に多く、見栄えの良いハッシュを探すのに時間を要した
+4. **プレネット仮説。** 1月3日〜9日にプライベートなテストネットワークが走っており、テストブロックはメインネット起動時に破棄された
+5. **ピア発見要件説。** v0.1 `main.cpp`（L2195〜2199）は `while (vNodes.empty()) { Sleep(1000); ... }` でピアが見つかるまで採掘を待機する設計。単独ノードでは開始しないが、2 ノード構成（あるいは 1 台上の 2 プロセス）であればこの条件は即座に満たされる。1月9日からハル・フィニー参加（1月10日頃）までサトシが 1 人で数十ブロックを採掘している史実と整合
+
+### ハードコード・アーティファクトとしての再定式化
+
+ハードコード機構を踏まえると、よりシンプルな読み方が成立する。これは新しい立場ではなく、上記のバックデート説と本質的に同じだが、実装のどの部分に依拠しているかを明示する：
+
+> **5日間の空白は、ハードコード値が決定された日と、ライブネットワークが初めて起動した日の差である。ライブチェーン上で実際に経過した時間ではない。**
+
+この視点での整理：
+
+| 日付 | 出来事 | Block 0 の状態 |
+|---|---|---|
+| 2009-01-03 以前 | どこかのタイミングで nonce `2083236893` を探索・発見 | ローカル／一時的 |
+| 2009-01-03 | *The Times* 見出しを coinbase に埋め込み決定、`nTime = 1231006505` 固定、値をソースに書き込み | ソースコード上の定数として存在 |
+| 2009-01-03〜08 | コード整備・テスト・パッケージング、live chain は未起動 | 定数のまま、ライブブロックではない |
+| 2009-01-08 | v0.1 を SourceForge で公開、暗号学メーリングリストに告知 | 同上、定数のまま |
+| 2009-01-09 02:44 UTC | サトシが初めて live network を起動 | 定数から Block 0 が決定論的に再構築される — サトシ自身のマシン上でもこの瞬間が初めての実体化 |
+| 2009-01-09 02:54 UTC | Block 1 がマイニングされる | |
+
+この読み方では、Block 0 と Block 1 は同一の夜に生まれた実質的な兄弟である。「サトシが 5 日間 Block 0 だけを抱えて待っていた」というイメージは、空白を経過時間として読むことで生じたアーティファクトにすぎない。
+
+## 3. Block 0 は誰が作ったのか
+
+決定論的再構築にはもう一つ、あまり明示されない帰結がある：
+
+> Block 0 は、どのノードも、そのノード自身のコードが定数から構築する。Block 0 を「作成する」ことに採掘は要求されない。
+
+実際に採掘（すなわち PoW 探索）を要したのは、nonce `2083236893` を発見するための初回の探索**のみ**である。この探索は v0.1 リリース以前のどこかで、一度だけ行われた。どのマシンでも、リリース日より前であればいつでも可能であった。
+
+その探索をサトシが行ったという帰属は、状況証拠に依拠している：
+
+- サトシが定数を含むソースコードを公開した → サトシが値を決定した、もしくは知っていた
+- *The Times* 一面の引用がコインベースを特定の日付以降に固定する — サトシは当該期間に活動が確認されている
+- coinbase の出力アドレス `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` はサトシのものとされるが、対応する秘密鍵からの署名提示は一度もない
+- [Lerner の Patoshi パターン](https://bitslog.com/2013/09/03/new-mystery-about-satoshi/) が初期約 64 ブロックを単一マイナーに結びつけており、連続性からそのマイナーが Block 0 の nonce 探索も行ったと推定される
+
+ただし：
+
+- Patoshi パターンは **Block 1 以降**からしか復元できない。Block 0 の coinbase 構造は特殊で、統計的手法の適用対象外である。これは [PLOS ONE 2021 の論文](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001) 及び Lerner 自身の記述で明記されている
+- Lerner 自身は「Patoshi」と「Satoshi」を同一視する主張を明確に回避している
+
+チェーンデータから**区別できない**こと：
+
+- Block 0 が v0.1 リリース前にローカルで構築され一度破棄されたのか、それともリリース後にサトシ運用のノード上で初めて実体化したのか
+- nonce 探索を行ったのは誰か
+- nonce 探索が完了したのはいつか
+
+暗号学的証明のレベルでは、**Block 0 の作者は不定**である。存在するのは、十分に強い状況証拠の集積のみ。
+
+## 4. 核心の論点：独立した2つの機構
+
+v0.1 のジェネシス処理は、論理的に独立な 2 つの機構に分解できる：
+
+| 機構 | 何をするか | 必須か |
+|---|---|---|
+| **A. ハッシュをハードコード**（`hashGenesisBlock` 定数） | 全ノードが「正しい Block 0」をハッシュで合意 | **必須。** 共通のジェネシスがなければ分散合意は開始しない |
+| **B. 全パラメーターをハードコード＋決定論的自動構築**（`nTime`, `nNonce`, `nBits`, `pszTimestamp` ＋ `LoadBlockIndex()` の空 DB 分岐） | 空 DB のノードが、ピア接続なしで Block 0 をローカル再構築 | **必須ではない。** 新ノードがピアから Block 0 を受信し、ハッシュを A で検証するだけの設計でもコンセンサスは成立する |
+
+### ハッシュ一致検証だけで済ませる代替設計
+
+想定可能な代替案：
+
+1. ソースコードには `hashGenesisBlock` のハッシュ定数のみ埋め込む
+2. 空 DB で起動した新ノードは、最初のピアから Block 0 データを受信する
+3. 受信データのハッシュを計算し、定数と一致すれば採用、一致しなければ拒否
+
+これは他の全ブロックで使われる通常の処理と同じ構造を Block 0 にも適用するだけで、実装的にはむしろ小さい。新規に空 DB 分岐を加える必要がなく、既存のネットワーキング処理の再利用で済む。
+
+この代替設計では、Block 0 には**配布元が存在する**。最初に nonce を発見した人（＝ Block 0 の最初の実体化者）だけが Block 0 のデータを持ち、その人を起点に P2P 経由で配布される。初期のピアが Block 0 を誰から受信したかを追跡すれば、**Block 0 のデータ発信源が P2P 層の観察だけで特定できる**。もし Block 0 を持つ最初のノードがサトシなら、サトシは P2P ネットワーク上の痕跡だけで Block 0 の起源として識別される。
+
+### 機構 B によって実際に得られるもの
+
+サトシは代替案ではなく機構 B を選んだ。その結果は構造的である：
+
+- 誰でも、いつでも、ピア接続なしに Block 0 を生成できる
+- 配布元が存在しない — ネットワーク観察できるデータ発信源がない
+- 「Block 0 を最初に配布したのは誰か」という問いには**答えが存在しない**（誰も配布していないから）
+
+これが Block 0 未帰属性の根拠である。機構 A はコンセンサスから強制される。機構 B は**帰属性に顕著な副作用を持つ自由選択**である。
+
+### この選択をめぐる 2 つの解釈
+
+**解釈 A — 実装上の便宜。** 自動構築は、新ノードがライブピアなしで bootstrap できるようにするための素直な実装。未帰属性は、最短 bring-up を優先した結果として生じた**意図しない副産物**。
+
+**解釈 B — 意図的な匿名化設計。** サトシの他の匿名化実践（Tor、複数メールアドレス、打鍵パターンへの配慮、イギリス英語とアメリカ英語の混在、プロジェクトからの自発的離脱）との整合性から、自動構築の選択は「創始の瞬間にも識別可能な痕跡を残さない」という一貫した匿名化方針の一環として解釈できる。
+
+ソースコードだけではこの 2 つの解釈を判別することはできない。v0.1 が実際に行っていることは両解釈と技術的に矛盾しない。どちらを採るかは解釈的判断である。
+
+ただしソースコードが**はっきり示している**ことがある。未帰属性は **Block 0 に内在する性質ではなく、独立した設計判断の帰結**である。別の、同等に成立する実装であれば配布元が存在していた。その判断を下したのはサトシである。
+
+## 5. 使用不能な 50 BTC
+
+Block 0 の 50 BTC 報酬は一度も動いていない、かつ動かせない。v0.1 でも現代の Bitcoin Core でも、空 DB からのジェネシス構築は Block 0 をブロックデータベースには書くが、coinbase 出力を UTXO セットには書かない。現代 `chainparams.cpp` のコメントに明記されている： *"the output of its generation transaction cannot be spent since it did not originally exist in the database."*
+
+Bitcoin Wiki は *"it is not known if this was done intentionally or accidentally"*（意図的か偶発的か不明）と記述している。
+
+v0.1 のソースコードを読むと、偶発的（accidental）とする読み方の方が根拠が強い：
+
+1. **処理の非対称性。** 通常ブロックの処理は `ProcessBlock → AcceptBlock → AddToBlockIndex → ConnectBlock → ConnectInputs → txdb.AddTxIndex` と一本の連鎖で構成される。ジェネシスの空 DB 分岐は `block.WriteToDisk` と `block.AddToBlockIndex` だけ走り、`ConnectBlock` を呼ばない。したがって `AddTxIndex` も呼ばれず、ジェネシス coinbase はトランザクションインデックスに入らない
+2. **省略を説明するコメントが存在しない。** v0.1 の当該ファイルには、この欠落を意図的に書いた旨の記述が一切ない。現代 Core のコメントは後付けである
+3. **`//// debug print, delete this later`** が v0.1 `main.cpp` L1472 に残っている。サトシ自身の「後で消す」TODO マーカーが公開コードに残されていること自体、この関数が完成段階まで磨き上げられていなかった証左
+4. **リリース時点では軽視されうる問題。** 2009年1月時点では 50 BTC に市場価値はなく、coinbase がインデックス可能かどうかは関心の対象にならない
+5. **後方互換性で固定。** 気づいた後に修正すればハードフォークとなる。互換性維持のため、そのまま残った
+
+Bitcoin Wiki の「不明」は控えめで適切な表現である。ソースコード自身は意図を示さない。示すのは、副作用が正典化されてしまった未整備な関数である。
+
+なお、事後的に `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` アドレスに送られたチップ（累計 100 BTC 超）は通常の出力であり、UTXO 省略の対象にはならず、秘密鍵保有者なら使用可能。それらも一度も動いていない。秘密鍵が実在するとしても、その保有者が無活動であることの弱い傍証。
+
+## 6. なぜこの論点は明示的に論文化されていないのか
+
+妥当な疑問：Block 0 の未帰属性が v0.1 ソースから暗黙に導かれるのであれば、なぜ Satoshi research の既存文献で明示的に書かれていないのか。
+
+排他的ではない複数の理由が考えられる：
+
+1. **Patoshi 研究の射程。** Lerner の研究対象は Block 1 以降の採掘パターンである。Block 0 の特殊な coinbase 構造は手法の適用外となる。Lerner プログラム内では「Block 0 はハードコード、所与として扱う」という枠組みが自然に成立し、この枠組みが後続の読者に引き継がれる。Lerner を信頼の起点として受け取る読者は、この前提も自動的に引き継ぐ
+2. **帰属の暗黙化。** 「サトシが Bitcoin を作った」という命題に「サトシが Block 0 を生成した」が暗黙に含まれる。後者が独立の検証対象として浮上しない
+3. **明らかな payoff の不在。** チェーンデータからこの問いを反証することはできず、またサトシ帰属を支持する状況証拠は実際に強い。暗号学的には不定であると指摘しても、実務的結論は変わらない
+4. **単に指摘されていない可能性。** 文献サーベイでは、ハードコード機構を「A ハッシュ検証（必須）」と「B 自動構築（選択）」に明示的に分解し、未帰属性を B に帰属させる記述が見当たらない
+
+§4 の分解は、v0.1 のソースコードに直接根拠を置く独立した観察として提示している。
+
+## 7. ソースコードによる検証（引証）
+
+### Bitcoin v0.1 `src/main.cpp`
+
+- L24：`const uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");`
+- L1420〜1489：`LoadBlockIndex()` — 空 DB 分岐でジェネシスブロックを構築・書き込み
+- L1455〜1470：
+  ```cpp
+  char* pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+  ...
+  block.nTime    = 1231006505;
+  block.nBits    = 0x1d00ffff;
+  block.nNonce   = 2083236893;
+  ```
+- L1472：`//// debug print, delete this later`
+- L1478：`assert(block.hashMerkleRoot == uint256("0x4a5e1e..."));`
+- L1480：`assert(block.GetHash() == hashGenesisBlock);`
+- L1485：`block.WriteToDisk(...)`
+- L1487：`block.AddToBlockIndex(...)` — この経路では `ConnectBlock()` は呼ばれない
+- L2195〜2199：`while (vNodes.empty()) { Sleep(1000); ... }` — 採掘開始前のピア待機
+
+### 現代 Bitcoin Core `src/kernel/chainparams.cpp`
+
+- L57〜60：*"Build the genesis block. Note that the output of its generation transaction cannot be spent since it did not originally exist in the database."*
+- L126：`CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, ...)`
+
+v0.1 と現行 Core で定数値は同一である。
+
+## 8. 未解決の論点
+
+- Patoshi ExtraNonce パターンが Block 0 を形式的に含むか（PLOS ONE 2021 論文は「最初の 64 ブロック」と言及するが、Block 0 の扱いを完全には明示していない）
+- `nTime = 1231006505` が nonce 探索時の実マシン時刻なのか、*The Times* 掲載日に合わせて事後設定された値なのか。チェーンデータだけでは判定できない
+- 2009年1月3日〜8日にプライベートなテストネットワークが走っていたか（プレネット仮説）。§2 で示したコード整備のみだったとする解釈と競合するが、どちらも現在までの証拠と矛盾しない
+
+## 9. まとめ
+
+1. Block 0 のパラメーターはハードコードされている。全ノードはそれをローカル再構築する。Block 0 を他ノードから受信したノードは存在しない
+2. 5日間の空白は、定数を固定した日（1月3日）と live network が起動した日（1月9日）の差として自然に説明できる。チェーン上の経過時間ではない
+3. nonce `2083236893` を最初に探索したのが誰かは、チェーンデータから決定できない。サトシへの帰属は状況証拠に依拠する
+4. ハードコードには独立した 2 つの機構がある。ハッシュ検証（コンセンサス必須）と自動構築（必須ではない）。未帰属性は後者の選択の帰結である
+5. その選択が意図的な匿名化だったのか実装上の便宜だったのかは解釈的問題であり、ソースコードからは判別できない
+6. 50 BTC の coinbase が使用不能なのは、内部のソースレベル信号からは、設計意図というより実装未整備の副産物である可能性が高い
+
+Block 0 は Bitcoin の中で最も象徴的なアーティファクトであり、同時に暗号学的な帰属が最も困難なブロックでもある。もしその困難さが設計判断の結果であれば、それはサトシの他の匿名化姿勢と地続きである。もし副産物であれば、それは相当に都合のよい副産物である。

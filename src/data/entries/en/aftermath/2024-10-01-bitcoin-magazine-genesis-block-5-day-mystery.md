@@ -25,6 +25,8 @@ secondarySources:
     url: "https://bitslog.com/2020/06/22/a-new-mystery-in-patoshi-timestamps/"
   - name: "Bitcoin Wiki — Genesis Block"
     url: "https://en.bitcoin.it/wiki/Genesis_block"
+relatedEntries:
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
 translationStatus: complete
 ---
 
