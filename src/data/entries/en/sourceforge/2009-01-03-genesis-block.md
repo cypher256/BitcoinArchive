@@ -1,5 +1,5 @@
 ---
-title: "Genesis block mined"
+title: "Satoshi mines the Bitcoin genesis block (January 3, 2009)"
 date: 2009-01-03T18:15:05Z
 type: "forum-post"
 source: "sourceforge"

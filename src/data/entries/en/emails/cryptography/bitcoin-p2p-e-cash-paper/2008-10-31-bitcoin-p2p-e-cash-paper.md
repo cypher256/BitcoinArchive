@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin P2P e-cash paper"
+title: "\"Bitcoin P2P e-cash paper\" — Satoshi's first Bitcoin announcement (Oct 2008)"
 date: 2008-10-31T18:10:00Z
 type: "mailing-list"
 source: "cryptography-mailing-list"

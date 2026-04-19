@@ -1,5 +1,5 @@
 ---
-title: "\"I've moved on to other things\""
+title: "Satoshi's final email to Mike Hearn: \"I've moved on to other things\""
 date: 2011-04-23T15:40:00Z
 type: "correspondence"
 source: "plan99"

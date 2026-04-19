@@ -1,5 +1,5 @@
 ---
-title: "ジェネシスブロックの採掘"
+title: "サトシがビットコインのジェネシスブロックを採掘（2009-01-03）"
 date: 2009-01-03T18:15:05Z
 type: "forum-post"
 source: "sourceforge"

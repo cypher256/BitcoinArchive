@@ -1,5 +1,5 @@
 ---
-title: "ビットコイン P2P 電子キャッシュ論文"
+title: "「Bitcoin P2P e-cash paper」— サトシのビットコイン初公開（2008-10）"
 date: 2008-10-31T18:10:00Z
 type: "mailing-list"
 source: "cryptography-mailing-list"
