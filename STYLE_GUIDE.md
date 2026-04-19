@@ -77,6 +77,76 @@ just the original glyphs.
 - If a category develops a strong established pattern, follow that pattern
   unless there is a clear reason to improve it.
 
+## Title Policy
+
+Every entry's `title` field is the page's identity across three audiences
+that matter, in addition to the readers who browse inside the site:
+
+1. **Human readers arriving from search** — the title is the blue link in
+   Google results, the OG card in social shares, and the text the browser
+   tab renders. If it is cryptic in isolation, the click does not happen.
+2. **Search engines** — the title is the single strongest ranking signal
+   and the text most commonly displayed in SERP. Every title should
+   contain at least two primary identifiers a reader might actually
+   search for (person, date, event, core concept).
+3. **AI / AIO** (Perplexity, ChatGPT with browsing, Google AI Overview,
+   etc.) — the title is the citation label an LLM extracts for the page.
+   Ambiguous titles are less likely to be used as sources.
+
+Internal browsing convenience is a side-effect of the three above: a
+title that works for search-arrivers also works for someone scanning an
+entry list.
+
+### Baseline criteria
+
+| Criterion | Target |
+|---|---|
+| Length | ≤ 60 characters (SERP truncation point) |
+| Identifiers | at least two of: person / date / event / source / iconic phrase |
+| Stand-alone clarity | understandable without the URL path or description |
+| Distinctiveness | visibly different from similar entries (same person, same date) |
+
+### Treatment of iconic quotes
+
+A quote from the body is rarely a sufficient title on its own. It is
+memorable for readers who already know the context — exactly the
+audience least in need of the page. Use a quote as a **supporting
+element after the identifying context**, not as the whole title.
+
+- ✗ `"I've moved on to other things"` — cryptic alone
+- ✓ `Satoshi's final email to Mike Hearn: "I've moved on to other things" (April 2011)`
+
+### Format templates by entry type
+
+These are templates, not mandates. If an entry has a stronger natural
+title, use it.
+
+| Entry type | Template | Example |
+|---|---|---|
+| **correspondence** (private email) | `{Author}'s {description} to {recipient}` + optional quote / date | `Satoshi's reply to Adam Back about b-money citation (August 2008)` |
+| **mailing-list / forum post (starter)** | `{subject or action} — {venue} ({date})` | `Satoshi's first Bitcoin announcement — cryptography mailing list (Oct 2008)` |
+| **forum post (reply)** | `Re: {parent title}` | (follows parent) |
+| **whitepaper / BIP** | original formal title (optional `(Whitepaper)` / `(BIP N)` suffix) | `Bitcoin: A Peer-to-Peer Electronic Cash System (Whitepaper)` |
+| **biography** | `{Name} ({dates}) — {one-line role}` | `Hal Finney (1956–2014) — Cypherpunk, PGP developer, first Bitcoin recipient` |
+| **aftermath** (article, interview, court testimony) | original article title, lightly contextualized if needed | `Jameson Lopp analyzes whether Satoshi Nakamoto was a 'greedy' miner` |
+| **sourceforge release** | `Bitcoin v{N.N} released` or `{version}: {change summary}` | `Bitcoin v0.1 released (January 9, 2009)` |
+
+### What not to do
+
+- **Don't stuff keywords** (`"Satoshi Nakamoto Bitcoin whitepaper genesis block 2009"` — search engines penalize this).
+- **Don't include the site brand** — the layout prepends `— Bitcoin Institute` automatically. Adding it in `title` duplicates.
+- **Don't lead with the date** — the primary identifier goes first; the date (when included) goes at the end or in parentheses.
+- **Don't force every title into one template** — the templates above are the default; a stronger natural title beats a formulaic one.
+
+### When a legacy title is changed
+
+- Changing a title changes the indexed link text but not the URL slug.
+- In JA mirrors, update the title too. See
+  `STYLE_GUIDE_JA.md § II.1 Title Policy` for Japanese-specific rules and
+  the reply-thread consistency rule.
+- If the entry is a thread starter, update every `Re: {…}` reply in the
+  same thread in the same commit.
+
 ## Related Entries
 
 Entries can declare strong semantic cross-references via the `relatedEntries`
