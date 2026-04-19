@@ -30,37 +30,53 @@ const description = 'A historical fiction about the disappearance of Satoshi Nak
         <p>I've moved on to other things.<br />It's in good hands with Gavin and everyone.</p>
       </blockquote>
       <p>
-        — Why 21 million?<br />
-        — Why did he leave?<br />
-        — Why is Bitcoin different from every cryptocurrency that followed?
+        What he left behind: a nine-page paper, roughly thirty thousand lines of C++,
+        hundreds of emails and forum posts — and about 1.1 million bitcoins that have
+        not moved for sixteen years.
+      </p>
+      <p class="inner-questions">
+        — What was he thinking?<br />
+        — What did he struggle with, what did he give up, what did he choose?<br />
+        — Why did he never say a word about himself?<br />
+        — Why did he never show emotion?<br />
+        — Why did he disappear?
       </p>
       <p>
-        Tokyo, 2025. Three questions raised at a crypto conference are the point where the story begins.
+        Tokyo, 2025. The story begins with three outer questions raised at a crypto conference
+        — "Why 21 million?", "Why did he leave?", "Why is Bitcoin different from every
+        cryptocurrency that followed?" — but what the reader actually ends up following is
+        the layer beneath them: the <em>inner</em> questions of one developer.
       </p>
     </section>
 
     <section>
-      <h2>Historical fiction, grounded in the record</h2>
+      <h2>A developer reading a developer</h2>
       <p>
-        On the night of September 15, 2008, as Lehman Brothers filed for bankruptcy, a developer
-        who had already been writing code for more than a year looked at his screen. On October 31,
-        a nine-page paper reached the cryptography mailing list through Tor. On January 3, 2009,
-        the genesis block was inscribed, and Bitcoin began running while the world knew nothing.
+        This book is not a retelling of Bitcoin's history.<br />
+        <strong>It is an attempt to read, through one developer's choices, what he was thinking</strong>
+        — and the author's note says so in plain words.
       </p>
       <p>
-        The following August, 184.467 billion BTC — coins that should not have existed — appeared
-        on the network. In the quiet hours that followed the patch, the creator began to see the
-        contradiction of his own presence. In 2014, the day <em>Newsweek</em> reported it had
-        "found" the creator of Bitcoin, a single post appeared on P2P Foundation. In 2016, a man
-        walked out claiming "I am Satoshi." In March 2024, a London courtroom walked him back off.
+        The author is a developer too, and that is what makes certain readings possible.
+        Why was the paper cut down to nine pages? Why was a 200-byte reserved field left in place?
+        Why was the hashing code deliberately left sub-optimal? Why, in the earliest commits,
+        was there no version control, no issue tracker, no CI?
+        Why was the last commit message not a farewell, but one quiet technical line?
       </p>
       <p>
-        This novel is a work of fiction grounded in public records: the Bitcoin whitepaper,
-        the cryptography mailing list, BitcoinTalk, private correspondence with Martti Malmi,
-        Mike Hearn, Adam Back and Hal Finney, and the full record of <em>COPA v. Wright</em>.
-        Emails, forum posts, hashes inscribed on the blockchain — the story is stitched
-        from fragments that can be verified, and reads the space between them as the choices
-        of one developer.
+        The novel draws on public records: the Bitcoin whitepaper, the cryptography mailing list,
+        BitcoinTalk, private correspondence with Martti Malmi, Mike Hearn, Adam Back and Hal Finney,
+        and the full record of <em>COPA v. Wright</em>. Emails, forum posts, commit timestamps,
+        small tics of prose, the Patoshi pattern inscribed into the early blockchain — the
+        verifiable fragments are read in full, and the story is written into the
+        <em>space between them</em>: the thought, the hesitation, the decision of one developer.
+      </p>
+      <p>
+        In public, Satoshi Nakamoto never showed emotion. He kept to technical discussion
+        and never let a personal line slip. And yet — exactly once, he made an exception.
+        The genesis block. The first block of the chain, with a <em>Times</em> headline inscribed
+        into it. Why was that the one place he allowed himself to feel? This novel begins its
+        reading of his <em>shape of silence</em> from that single point.
       </p>
     </section>
 
@@ -100,8 +116,8 @@ const description = 'A historical fiction about the disappearance of Satoshi Nak
       </p>
       <p>
         You can read the novel first and check the record afterwards, or read the record first
-        and let the novel read between the lines. From either direction, the shape of the
-        <em>question</em> called Satoshi Nakamoto comes slowly into view.
+        and let the novel read between the lines. From either direction, the shape of one
+        <em>question</em> — what was Satoshi Nakamoto thinking — comes slowly into view.
       </p>
     </section>
 
@@ -199,6 +215,13 @@ const description = 'A historical fiction about the disappearance of Satoshi Nak
   }
   .lead blockquote p {
     margin: 0.25rem 0;
+  }
+  .lead .inner-questions {
+    border-left: 3px solid var(--color-accent);
+    margin: 1.75rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.95;
   }
   section {
     margin-bottom: 2.5rem;
