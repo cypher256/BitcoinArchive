@@ -139,6 +139,9 @@ const t = useTranslations(lang);
       return { source: e.source, target: e.target, weight: e.weight };
     });
 
+    // 描画順: count 昇順ソートで登場回数の多いノード（Satoshi 等）を前面に
+    simNodes.sort(function(a, b) { return a.count - b.count; });
+
     var cx = simW / 2, cy = simH / 2;
     var simulation = d3.forceSimulation(simNodes)
       .force('link', d3.forceLink(simEdges).id(function(d) { return d.id; })
