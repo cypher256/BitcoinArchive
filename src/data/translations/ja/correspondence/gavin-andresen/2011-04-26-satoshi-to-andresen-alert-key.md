@@ -1,5 +1,5 @@
 ---
-title: "アラートキー"
+title: "サトシがビットコインのアラートキーをギャビン・アンドレセンに引き渡し（2011-04-26）"
 date: 2011-04-26T10:29:00Z
 type: "correspondence"
 source: "riski-wiki"

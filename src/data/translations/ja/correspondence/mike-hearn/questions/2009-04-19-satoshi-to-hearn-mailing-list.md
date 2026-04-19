@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "サトシからマイク・ハーンへ：メーリングリストの扱い（2009-04-19）"
 date: 2009-04-19T02:14:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "マイク・ハーンからサトシへ：UIとマーケットプレイス（2009-04-13）"
 date: 2009-04-13T23:18:00Z
 type: "correspondence"
 source: "plan99"

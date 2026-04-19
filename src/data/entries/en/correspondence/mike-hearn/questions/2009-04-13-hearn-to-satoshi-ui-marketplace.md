@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Mike Hearn to Satoshi on UI and marketplace (April 13, 2009)"
 date: 2009-04-13T23:18:00Z
 type: "correspondence"
 source: "plan99"

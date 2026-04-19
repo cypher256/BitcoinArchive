@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Satoshi to Mike Hearn on mailing list access (April 19, 2009)"
 date: 2009-04-19T02:14:00Z
 type: "correspondence"
 source: "plan99"

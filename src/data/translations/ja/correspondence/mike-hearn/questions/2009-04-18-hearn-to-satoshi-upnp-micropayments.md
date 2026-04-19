@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "マイク・ハーンからサトシへ：UPnPとマイクロペイメント（2009-04-18）"
 date: 2009-04-18T23:23:00Z
 type: "correspondence"
 source: "plan99"

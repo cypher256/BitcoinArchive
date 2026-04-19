@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "サトシからマイク・ハーンへ：スケーラビリティ（2009-04-12）"
 date: 2009-04-12T22:44:00Z
 type: "correspondence"
 source: "plan99"

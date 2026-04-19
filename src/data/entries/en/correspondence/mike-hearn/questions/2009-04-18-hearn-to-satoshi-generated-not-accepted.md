@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Mike Hearn to Satoshi on \"Generated\" not accepted (April 18, 2009)"
 date: 2009-04-18T21:25:00Z
 type: "correspondence"
 source: "plan99"

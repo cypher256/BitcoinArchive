@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Satoshi to Mike Hearn on micropayments (April 13, 2009)"
 date: 2009-04-13T23:00:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Mike Hearn to Satoshi on null blocks (April 13, 2009)"
 date: 2009-04-13T22:51:00Z
 type: "correspondence"
 source: "plan99"

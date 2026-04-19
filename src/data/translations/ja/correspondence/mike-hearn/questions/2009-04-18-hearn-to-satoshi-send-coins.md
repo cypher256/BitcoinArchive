@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "マイク・ハーンからサトシへ：送金フロー（2009-04-18）"
 date: 2009-04-18T15:08:00Z
 type: "correspondence"
 source: "plan99"

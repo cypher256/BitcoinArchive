@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Mike Hearn to Satoshi on testing Bitcoin (April 13, 2009)"
 date: 2009-04-13T13:39:00Z
 type: "correspondence"
 source: "plan99"

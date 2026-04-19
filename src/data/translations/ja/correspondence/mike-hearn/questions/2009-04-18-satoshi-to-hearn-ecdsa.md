@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "サトシからマイク・ハーンへ：ECDSA曲線の選択（2009-04-18）"
 date: 2009-04-18T18:16:00Z
 type: "correspondence"
 source: "plan99"

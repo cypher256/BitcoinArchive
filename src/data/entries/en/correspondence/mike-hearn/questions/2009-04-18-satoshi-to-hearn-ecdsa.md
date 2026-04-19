@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Satoshi to Mike Hearn on ECDSA curve choice (April 18, 2009)"
 date: 2009-04-18T18:16:00Z
 type: "correspondence"
 source: "plan99"

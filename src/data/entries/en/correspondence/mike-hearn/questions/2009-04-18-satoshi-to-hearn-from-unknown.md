@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Satoshi to Mike Hearn on \"from unknown\" handling (April 18, 2009)"
 date: 2009-04-18T22:52:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Satoshi to Mike Hearn on peer-to-peer marketplace (April 14, 2009)"
 date: 2009-04-14T19:41:00Z
 type: "correspondence"
 source: "plan99"

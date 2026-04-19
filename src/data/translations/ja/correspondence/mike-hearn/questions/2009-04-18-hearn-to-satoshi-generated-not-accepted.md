@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "マイク・ハーンからサトシへ：「Generated」の不採用（2009-04-18）"
 date: 2009-04-18T21:25:00Z
 type: "correspondence"
 source: "plan99"

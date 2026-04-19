@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "サトシからマイク・ハーンへ：「from unknown」処理（2009-04-18）"
 date: 2009-04-18T22:52:00Z
 type: "correspondence"
 source: "plan99"

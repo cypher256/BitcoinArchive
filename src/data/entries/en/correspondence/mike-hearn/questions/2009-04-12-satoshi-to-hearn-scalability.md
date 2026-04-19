@@ -1,5 +1,5 @@
 ---
-title: "Questions about BitCoin"
+title: "Satoshi to Mike Hearn on Bitcoin scalability (April 12, 2009)"
 date: 2009-04-12T22:44:00Z
 type: "correspondence"
 source: "plan99"

@@ -1,5 +1,5 @@
 ---
-title: "BitCoinに関する質問"
+title: "サトシからマイク・ハーンへ：空のブロック（2009-04-13）"
 date: 2009-04-13T23:11:00Z
 type: "correspondence"
 source: "plan99"

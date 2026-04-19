@@ -1,5 +1,5 @@
 ---
-title: "alert key"
+title: "Satoshi hands over the Bitcoin alert key to Gavin Andresen (April 26, 2011)"
 date: 2011-04-26T10:29:00Z
 type: "correspondence"
 source: "riski-wiki"
