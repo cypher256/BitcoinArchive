@@ -96,6 +96,10 @@ const breadcrumbs = [
       <p class="editor-note">{entry.data.editorNote}</p>
     )}
 
+    {entry.id.includes('value-overflow-incident') && (
+      <ValueOverflowTimeline lang={lang} />
+    )}
+
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -114,10 +118,6 @@ const breadcrumbs = [
 
     {entry.id.includes('sergio-lerner-patoshi-mining-machine') && (
       <PatoshiMiningMachine lang={lang} />
-    )}
-
-    {entry.id.includes('value-overflow-incident') && (
-      <ValueOverflowTimeline lang={lang} />
     )}
 
     {entry.id.includes('genesis-block-5-day-mystery') && (

@@ -13,6 +13,9 @@ participants:
 description: "lfm starts a discussion: overflow bug SERIOUS."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - aftermath/2010-08-15-value-overflow-incident
+  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
 ---
 
 seems a block at height 74638 has expoited a bug in the net. It uses an integer overflow to make a negative total transaction. The two transaction outputs are: 

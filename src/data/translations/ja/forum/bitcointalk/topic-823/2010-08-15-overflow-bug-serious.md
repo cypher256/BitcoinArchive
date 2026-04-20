@@ -13,6 +13,9 @@ participants:
 description: "lfmがスレッドを開始: オーバーフローバグ 深刻"
 isSatoshi: false
 tags: []
+relatedEntries:
+  - aftermath/2010-08-15-value-overflow-incident
+  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
 translationStatus: complete
 ---
 
