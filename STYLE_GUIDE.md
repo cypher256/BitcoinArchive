@@ -487,6 +487,58 @@ Only raise a finding if:
 - two different files in the same collection resolve to the same id
 - content is actually overwritten, missing, or routed incorrectly
 
+## Technical-Review Robustness
+
+Entries must withstand review by readers familiar with the material they describe. Before publishing or editing, self-audit against the following categories.
+
+**In scope:**
+
+- Technical facts (cryptography, protocol, source code, blockchain behavior, numerical specifications)
+- Historical facts (dates, quotes, statements, numerical values, timelines)
+- Internal consistency (no contradictions across an entry or between related entries)
+- Arithmetic (elapsed times, BTC quantities, conversion rates, block heights — anything that can be cross-checked)
+- Category integrity (don't list propositions of different kinds under one heading — e.g., "causes" and "period-of-activity" questions are distinct; don't mix them in a single list of "hypotheses")
+- Fact vs interpretation (interpretive framings must be labeled as such, not asserted as history; use hedges like "under this reading", "on this view")
+- Source attribution (claims traceable to sources cited in `secondarySources` / `sourceUrl`)
+
+**Out of scope (handled elsewhere, not this rule):**
+
+- Stylistic preferences (see house-style sections)
+- Translation tone choices (see voice sections)
+- Editorial framing decisions already adopted for an entry
+
+**Test:**
+
+Would a reader familiar with the material flag the passage for a factual error, a cross-check failure, or a category mix-up? If yes, fix it before the edit lands.
+
+**Common failures observed:**
+
+- Arithmetic mismatch: claiming "the gap from Jan 3 to Jan 8 is five days" when the actual gap endpoint is Jan 9 (different endpoint, different duration)
+- Category error: listing five "hypotheses" as parallel candidates for one phenomenon when in fact only one addresses the cause and the rest are separate period-activity questions
+- Interpretive framing asserted as fact: presenting a new or speculative reading as historical without hedging markers
+- Narrative dramatization leaking in: phrasing that treats a speculative reconstruction as an eyewitness account
+
+**Factual claims about real people: quote or narrative, both need sources.**
+
+Any factual claim about a real person — direct quote, reported speech, narrated action, stated reaction, inner feeling, sequence of events, sensory detail, physical descriptor — must be traceable to a source listed in the entry's `secondarySources` / `sourceUrl`, or to a primary record (mailing-list archive, forum post, interview transcript, court document, published essay) publicly linkable by other means. Narrative prose does not exempt a claim from verification; narrative voice is more dangerous because unverified claims blend invisibly into editorial summary. **The rule fires on claim-making, not on punctuation.** Paraphrasing a quote into narrative does not fix a missing source — it hides it. If you cannot cite the source, do not write the claim, even as "context" or "atmosphere."
+
+*In scope:*
+
+- Reconstructed dialogue, dramatized statements, imagined internal monologue
+- Narrated actions not documented in any cited source
+- Sensory details or atmosphere added for color (the smell of coffee, the sound of a fan)
+- Sequence implications (who reacted to what, when) not documented in any source
+- Body language and physical descriptors inferred rather than recorded
+
+*Out of scope for this rule (handled elsewhere):*
+
+- Editorial analysis and interpretation of documented events (see the "fact vs interpretation" rule above)
+- Summaries of what a cited source says, with attribution made clear
+
+**Mandatory verification step (not optional).**
+
+Before writing any factual claim about a real person — in any form — explicitly name the source (a URL, an `sourceUrl` field, a `secondarySources` entry, or a named primary record) and confirm the claim appears at that source. This is a required procedural step, not a principle to apply when in doubt. Extended exposure to narrative reconstructions (novels, dramatizations, documentaries, AI-generated biographical prose) blurs the boundary between fictional and historical content **in both directions** — you may import fiction as fact, or flag a real quote as fabricated. The "does this feel canonical" instinct becomes unreliable in both directions. The verification step exists precisely because that instinct fails. If you cannot perform the verification, drop the claim entirely — do not try to rescue it by paraphrase or by removing quotation marks.
+
 ## Language-Specific Guides
 
 - Japanese-specific rules: `STYLE_GUIDE_JA.md`

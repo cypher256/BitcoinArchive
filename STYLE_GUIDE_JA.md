@@ -552,6 +552,58 @@ Quotes and source text should not be rewritten just to match the house
 style. See `STYLE_GUIDE.md § Consistency Rule` for the cross-language
 version of this principle.
 
+## 6. 技術的検証耐性 (Technical-Review Robustness)
+
+エントリは、扱っている題材に詳しい読者の検証に耐える内容でなければならない。公開・編集の前に、以下のカテゴリで self-audit を行う。
+
+**対象**:
+
+- 技術的事実（暗号・プロトコル・ソースコード・ブロックチェーンの振る舞い・数値仕様）
+- 史実（日付・引用・発言・数値・時系列）
+- 内部整合性（同一エントリ内・関連エントリ間で矛盾がないか）
+- 算術（経過時間・BTC 量・換算レート・ブロック高など cross-check 可能な数値）
+- カテゴリ整合（異なる種類の命題を同じ見出しに並べていないか — 例: 「原因」と「期間中の活動」は別問いで、同じ「仮説」リストに混ぜない）
+- 事実と解釈の区別（解釈的 framing を史実のように断定していないか — "under this view"、"この読みでは" 等の hedge を明示する）
+- 出典辿り（`secondarySources` / `sourceUrl` で検証可能な形か）
+
+**対象外（本ルールでは扱わない）**:
+
+- 文体の好み（house-style の各節で扱う）
+- 翻訳口調の選択（voice 節で扱う）
+- すでに採用された編集的 framing そのものの選択
+
+**判定基準**:
+
+題材に詳しい読者が、事実誤認・cross-check 失敗・カテゴリ混在のいずれかを理由にその箇所を flag する余地があるか。あれば edit が land する前に直す。
+
+**これまでに観測された典型的な失敗**:
+
+- 算術の食い違い: 「1/3 から 1/8 の差 = 5 日間」と書いたが、実際のエンドポイントは 1/9。違うエンドポイントで違う duration
+- カテゴリエラー: 1 つの現象に対する 5 つの「仮説」を並列候補として列挙したが、実際には 1 つだけが原因を扱い、残り 4 つは別問い（期間中活動など）
+- 解釈を事実として断定: 新しい / 思弁的な読みを hedging なしで史実として書く
+- 語りのドラマ化が混入: 思弁的再構成を目撃証言のように書く表現
+
+**実在人物に関する factual claim: 引用も narrative も source が必要**:
+
+実在人物に関する factual claim — 直接引用、paraphrase、narrated action、reaction、内的感情、出来事の順序、感覚的ディテール、身体的特徴 — は、当該エントリの `secondarySources` / `sourceUrl` に掲載された出典、もしくは他の経路で公開リンク可能な一次記録（メーリングリストアーカイブ・フォーラム投稿・インタビュー逐語録・法廷文書・公開エッセイ等）から検証可能でなければならない。narrative prose は verification を免除しない。むしろ narrative voice の方が危険で、unverified claim が editorial summary に見分けつかず紛れ込む。**rule は claim の有無で発動する、punctuation の有無ではない**。quote を paraphrase で narrative に溶かしても source 欠如は治らない、隠れるだけ。出典を示せないものは書かない — 「文脈」や「雰囲気」のためであっても。
+
+*対象*:
+
+- 再構成された dialogue、ドラマ化された発言、想像された内的独白
+- cited source に存在しない narrated action
+- 彩りとして追加された感覚的ディテール・雰囲気描写（コーヒーの香り、ファンの音など）
+- documented でない sequence implication（誰が何にいつ反応したか）
+- 記録ではなく推定で書かれた body language・身体的特徴
+
+*本 rule の対象外（別 rule で扱う）*:
+
+- documented event の editorial analysis・解釈（上述の「事実と解釈の区別」rule で扱う）
+- cited source の要約で、attribution が明確なもの
+
+**必須の verification step（オプションではない）**:
+
+実在人物に関する factual claim を書く**前に**（形式を問わず）、出典を明示的に名指しする — URL、`sourceUrl` フィールド、`secondarySources` エントリ、または named primary record のいずれか。そのうえで、書こうとしている claim が source に存在するかを確認する。これは「疑わしいときにだけやる」principle ではなく、**mandatory な procedural step**。narrative reconstruction（小説・ドラマ化・ドキュメンタリー・AI 生成の biographical prose 等）に長く触れると、創作内容と史実内容の境界が**両方向**に薄れる — 創作を史実として取り込むだけでなく、本物の quote を fabricated と疑う方向にも失敗する。「これは canonical に感じる / しない」という直感は両方向で信頼できない。verification step は、その直感が失敗する前提で存在する。verification ができないときは、その claim は**書かない** — paraphrase に逃げたり quotation mark を外したりして rescue しない。
+
 ---
 
 # III. 運用規則 (Operational Rules)
