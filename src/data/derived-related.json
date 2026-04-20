@@ -407,6 +407,16 @@
       "score": 30
     }
   ],
+  "aftermath/2010-02-10-michael-marquardt-biography": [
+    {
+      "id": "aftermath/2011-08-01-bitcointalk-org-migration",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-48/2010-02-10-whats-with-this-odd-generation",
+      "score": 30
+    }
+  ],
   "aftermath/2010-05-22-bitcoin-pizza-day": [
     {
       "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
@@ -471,9 +481,29 @@
       "score": 30
     }
   ],
+  "aftermath/2010-07-12-knightmb-biography": [
+    {
+      "id": "aftermath/2010-08-15-value-overflow-incident",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524",
+      "score": 30
+    }
+  ],
   "aftermath/2010-07-15-jeff-garzik-biography": [
     {
       "id": "aftermath/2010-07-11-slashdot-bitcoin-article",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-07-28-daniel-larimer-biography": [
+    {
+      "id": "forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269",
       "score": 30
     }
   ],
@@ -483,11 +513,29 @@
       "score": 30
     },
     {
+      "id": "aftermath/2010-07-12-knightmb-biography",
+      "score": 30
+    },
+    {
       "id": "aftermath/2014-02-28-mt-gox-bankruptcy",
       "score": 30
     },
     {
       "id": "sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix",
+      "score": 30
+    }
+  ],
+  "aftermath/2010-11-19-wladimir-van-der-laan-biography": [
+    {
+      "id": "aftermath/2011-09-13-bitcoin-github-migration-committers",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012",
+      "score": 30
+    },
+    {
+      "id": "forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887",
       "score": 30
     }
   ],
@@ -538,6 +586,36 @@
     },
     {
       "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
+      "score": 30
+    }
+  ],
+  "aftermath/2011-03-17-pieter-wuille-biography": [
+    {
+      "id": "aftermath/2011-09-13-bitcoin-github-migration-committers",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012",
+      "score": 30
+    },
+    {
+      "id": "bip/2012-02-11-bip-0032",
+      "score": 30
+    },
+    {
+      "id": "bip/2015-12-21-bip-0141",
+      "score": 30
+    },
+    {
+      "id": "bip/2020-01-19-bip-0340",
+      "score": 30
+    },
+    {
+      "id": "bip/2020-01-19-bip-0341",
+      "score": 30
+    },
+    {
+      "id": "forum/github/pr-122/2011-03-17-pr-122-spent-per-txout",
       "score": 30
     }
   ],
@@ -605,6 +683,10 @@
   ],
   "aftermath/2011-08-01-bitcointalk-org-migration": [
     {
+      "id": "aftermath/2010-02-10-michael-marquardt-biography",
+      "score": 30
+    },
+    {
       "id": "aftermath/2010-05-22-bitcoin-pizza-day",
       "score": 30
     }
@@ -613,6 +695,14 @@
     {
       "id": "aftermath/2009-08-30-bitcoin-svn-repository-committers",
       "score": 50
+    },
+    {
+      "id": "aftermath/2010-11-19-wladimir-van-der-laan-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
+      "score": 30
     },
     {
       "id": "aftermath/2011-04-26-satoshi-final-known-email",
@@ -639,7 +729,23 @@
       "score": 30
     }
   ],
+  "aftermath/2012-07-22-luke-dashjr-biography": [
+    {
+      "id": "forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re",
+      "score": 30
+    }
+  ],
+  "aftermath/2013-03-05-gregory-maxwell-biography": [
+    {
+      "id": "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012",
+      "score": 30
+    }
+  ],
   "aftermath/2013-03-19-bitcoin-and-me-hal-finney": [
+    {
+      "id": "aftermath/2014-08-28-fran-finney-biography",
+      "score": 30
+    },
     {
       "id": "aftermath/2014-08-28-hal-finney-biography",
       "score": 30
@@ -771,6 +877,10 @@
   ],
   "aftermath/2014-08-28-fran-finney-biography": [
     {
+      "id": "aftermath/2013-03-19-bitcoin-and-me-hal-finney",
+      "score": 30
+    },
+    {
       "id": "aftermath/2014-08-28-hal-finney-passes-away",
       "score": 30
     },
@@ -858,6 +968,18 @@
   "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012": [
     {
       "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2010-11-19-wladimir-van-der-laan-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
+      "score": 30
+    },
+    {
+      "id": "aftermath/2013-03-05-gregory-maxwell-biography",
       "score": 30
     },
     {
@@ -1135,6 +1257,10 @@
     {
       "id": "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed",
       "score": 30
+    },
+    {
+      "id": "analysis/2009-01-03-genesis-block-hardcode-analysis",
+      "score": 30
     }
   ],
   "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed": [
@@ -1209,6 +1335,12 @@
       "score": 30
     }
   ],
+  "analysis/2009-01-03-genesis-block-hardcode-analysis": [
+    {
+      "id": "aftermath/2024-03-14-copa-v-wright-ruling",
+      "score": 30
+    }
+  ],
   "analysis/2009-01-09-satoshi-code-analysis": [
     {
       "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
@@ -1223,6 +1355,12 @@
       "score": 30
     }
   ],
+  "bip/2012-02-11-bip-0032": [
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
+      "score": 30
+    }
+  ],
   "bip/2015-11-03-bip-0125": [
     {
       "id": "aftermath/2010-12-07-peter-todd-biography",
@@ -1230,6 +1368,24 @@
     },
     {
       "id": "aftermath/2024-10-08-hbo-money-electric-peter-todd",
+      "score": 30
+    }
+  ],
+  "bip/2015-12-21-bip-0141": [
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
+      "score": 30
+    }
+  ],
+  "bip/2020-01-19-bip-0340": [
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
+      "score": 30
+    }
+  ],
+  "bip/2020-01-19-bip-0341": [
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
       "score": 30
     }
   ],
@@ -1423,6 +1579,12 @@
       "score": 30
     }
   ],
+  "correspondence/martti-malmi/2011-01-25-bitcoin-question-256": [
+    {
+      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
+      "score": 30
+    }
+  ],
   "correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi": [
     {
       "id": "correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key",
@@ -1583,6 +1745,26 @@
     {
       "id": "aftermath/2014-07-19-wei-dai-next-tech-gold-rush",
       "score": 30
+    },
+    {
+      "id": "correspondence/martti-malmi/2011-01-25-bitcoin-question-256",
+      "score": 30
+    },
+    {
+      "id": "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper",
+      "score": 30
+    },
+    {
+      "id": "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald",
+      "score": 30
+    },
+    {
+      "id": "emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency",
+      "score": 30
+    },
+    {
+      "id": "forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation",
+      "score": 30
     }
   ],
   "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper": [
@@ -1625,11 +1807,19 @@
     {
       "id": "correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions",
       "score": 30
+    },
+    {
+      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
+      "score": 30
     }
   ],
   "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald": [
     {
       "id": "aftermath/2008-11-02-james-donald-biography",
+      "score": 30
+    },
+    {
+      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
       "score": 30
     }
   ],
@@ -1674,6 +1864,10 @@
     },
     {
       "id": "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin",
+      "score": 30
+    },
+    {
+      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
       "score": 30
     }
   ],
@@ -1841,6 +2035,12 @@
       "score": 30
     }
   ],
+  "forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client": [
+    {
+      "id": "aftermath/2010-07-12-knightmb-biography",
+      "score": 30
+    }
+  ],
   "forum/bitcointalk/topic-30/2010-05-19-teppy-msg1163": [
     {
       "id": "forum/bitcointalk/topic-890/2010-08-21-zooko-msg10593",
@@ -1909,6 +2109,18 @@
       "score": 30
     }
   ],
+  "forum/bitcointalk/topic-48/2010-02-10-whats-with-this-odd-generation": [
+    {
+      "id": "aftermath/2010-02-10-michael-marquardt-biography",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269": [
+    {
+      "id": "aftermath/2010-07-28-daniel-larimer-biography",
+      "score": 30
+    }
+  ],
   "forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate": [
     {
       "id": "forum/bitcointalk/topic-423/2010-07-17-newlibertystandard-msg3708",
@@ -1965,6 +2177,12 @@
       "score": 30
     }
   ],
+  "forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887": [
+    {
+      "id": "aftermath/2010-11-19-wladimir-van-der-laan-biography",
+      "score": 30
+    }
+  ],
   "forum/bitcointalk/topic-750/2010-08-11-re-escrow": [
     {
       "id": "forum/bitcointalk/topic-1283/2010-09-26-re-how-to-make-a-distributed-bitcoin-escrow-service",
@@ -2004,6 +2222,12 @@
   "forum/bitcointalk/topic-820/2010-08-16-ground-loop-msg9674": [
     {
       "id": "forum/bitcointalk/topic-955/2010-09-08-re-bitcoin-blogger-is-it-better-to-buy-or-generate-bitcoins",
+      "score": 30
+    }
+  ],
+  "forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524": [
+    {
+      "id": "aftermath/2010-07-12-knightmb-biography",
       "score": 30
     }
   ],
@@ -2069,6 +2293,18 @@
       "score": 30
     }
   ],
+  "forum/github/pr-122/2011-03-17-pr-122-spent-per-txout": [
+    {
+      "id": "aftermath/2011-03-17-pieter-wuille-biography",
+      "score": 30
+    }
+  ],
+  "forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re": [
+    {
+      "id": "aftermath/2012-07-22-luke-dashjr-biography",
+      "score": 30
+    }
+  ],
   "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style": [
     {
       "id": "aftermath/2008-10-31-satoshi-nakamoto-biography",
@@ -2086,6 +2322,10 @@
     },
     {
       "id": "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin",
+      "score": 30
+    },
+    {
+      "id": "emails/cryptography/2008-10-31-bitcoin-whitepaper-final",
       "score": 30
     }
   ],
