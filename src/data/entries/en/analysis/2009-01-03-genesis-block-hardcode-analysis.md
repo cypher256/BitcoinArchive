@@ -89,21 +89,20 @@ Practical consequences:
 
 Block 0 is timestamped 2009-01-03 18:15:05 UTC. Block 1 is timestamped 2009-01-09 02:54:25 UTC. The gap is 5 days, 8 hours, 39 minutes — roughly 770× the intended 10-minute block interval.
 
-The established hypotheses (surveyed on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) and elsewhere):
+Various hypotheses have been proposed on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) and elsewhere: backdate, genesis narrative, vanity hash, private testnet, peer-discovery requirement. Treating these as parallel options for "what caused the gap" is a category error. Technically, two distinct questions are conflated:
 
-1. **Backdate.** Satoshi had been developing Bitcoin for some time and backdated the genesis timestamp to January 3 specifically to embed the January 3 *Times* headline. January 3 is a symbolic date, not the moment of creation. Dominant view.
-2. **Genesis narrative.** An intentional allusion to the biblical creation.
-3. **Vanity hash.** The hash leads with substantially more zeros than the target required; searching for an aesthetically pleasing hash took time.
-4. **Private testnet.** A pre-release test network ran privately between January 3 and January 9; those blocks were discarded when the public chain launched.
-5. **Peer-discovery requirement.** v0.1 `main.cpp` (L2195–2199) waits in `while (vNodes.empty()) { Sleep(1000); ... }` before mining — a single node with no peers could not begin. A two-node configuration (or two processes on one host) would have satisfied this immediately, which is consistent with Satoshi mining dozens of blocks alone between January 9 and Hal Finney joining around January 10.
+- **Q1. Why does the gap exist at all?**
+- **Q2. What was Satoshi doing during those five days?**
 
-### Hardcode-artifact framing
+Q1 is structurally nearly determined. Q2 remains empirically open from the public record. This section treats them separately.
 
-The hardcode mechanism makes a simpler reading available. It is the same position as the backdate hypothesis, stated in terms of the implementation it actually rests on:
+### 3.1 Q1 (the cause): the difference between hardcode date and release date
+
+Q1 is not a choice among hypotheses; it is a structure readable directly from the source code:
 
 > **The five-day gap is the difference between the day the hardcoded values were decided and the day the live network was first started. It is not elapsed runtime on a live chain.**
 
-Under this view:
+Timeline:
 
 | Date | Event | State of Block 0 |
 |---|---|---|
@@ -115,6 +114,28 @@ Under this view:
 | 2009-01-09 02:54 UTC | Block 1 is mined | |
 
 Block 0 and Block 1 are effectively siblings from the same night. The image of Satoshi sitting alone for five days with only Block 0 in his database is an artifact of reading the gap as elapsed chain time.
+
+The "backdate hypothesis," the "retroactive timestamp aligned to the *Times* headline," and the "hardcode artifact" framing are all the same structure restated in different words. They are not competing hypotheses; they are multiple names for a single phenomenon.
+
+### 3.2 Inverting Q1: why was 2009-01-03 missed?
+
+Inverted, Q1 becomes a more substantive question — *why was the release not ready by January 3?* Choosing the January 3 timestamp implicitly set January 3 as the target. Actual release was January 8, and the live network started January 9 at 02:44 UTC. The five-day slip is a developer's slip against his own target date.
+
+The public signals — only about four hours between the January 8 mailing list announcement and the January 9 02:44 UTC network start — weakly suggest "tight finish" over "generously buffered plan." This is speculative and cannot be decided from source code or chain data alone.
+
+### 3.3 Q2 (the activity): empirically indeterminate
+
+Independent of Q1, what exactly Satoshi was doing between 2009-01-03 and 01-08 cannot be determined from the public record. Of the hypotheses listed above, every item except the backdate belongs under Q2, not Q1:
+
+| Hypothesis | Contribution to Q2 | Assessment |
+|---|---|---|
+| **Testing / debugging / packaging** | Code hardening | SourceForge registration, documentation, binary builds were required. The most plausible Q2 activity |
+| **Vanity hash** | Nonce search time | The hash comfortably clears the difficulty-1 target (see §5.5). When the nonce `2083236893` was actually found cannot be determined from chain data |
+| **Private testnet** | Private test network | A private testnet may have run between 1/3 and 1/9; nothing remains on chain to confirm or refute (see §8 Open questions) |
+| **Peer-discovery requirement** | Mining start condition | v0.1 `main.cpp` (L2195–2199) waits in `while (vNodes.empty()) { Sleep(1000); ... }`, but a two-node configuration (or two processes on one host) satisfies this immediately. Satoshi could have launched two processes himself on 1/9 — this does not determine the gap |
+| **Genesis narrative** | Symbolic allusion | Folk interpretation. No technical grounding; no contribution to Q2 |
+
+These items are informational inputs for Q2 (what he was doing), not candidate causes for Q1 (why the gap exists). Listing them in a single "five hypotheses for the gap" inflates the five-day interval into one mystery, when in fact it decomposes cleanly into a structurally determined Q1 and an empirically open Q2.
 
 ## 4. "Who is the author of Block 0?"
 
