@@ -47,7 +47,7 @@ relatedEntries:
   - "aftermath/2016-05-02-craig-wright-biography"
 ---
 
-This analysis examines what the Bitcoin v0.1 source code actually does when a node encounters an empty block database, and what that mechanism implies for three long-discussed questions: the five-day gap between Block 0 and Block 1, the cryptographic attribution of Block 0, and the unspendable 50 BTC coinbase.
+This analysis examines what the Bitcoin v0.1 source code actually does when a node encounters an empty block database, and what that mechanism implies for three long-discussed questions about the [Bitcoin genesis block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/): the five-day gap between Block 0 and Block 1, the cryptographic attribution of Block 0, and the unspendable 50 BTC coinbase.
 
 Technical claims are verifiable against the Bitcoin v0.1 source. Interpretive sections are labeled as such.
 
@@ -89,7 +89,7 @@ Practical consequences:
 
 Block 0 is timestamped 2009-01-03 18:15:05 UTC. Block 1 is timestamped 2009-01-09 02:54:25 UTC. The gap is 5 days, 8 hours, 39 minutes — roughly 770× the intended 10-minute block interval.
 
-Various hypotheses have been proposed on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) and elsewhere: backdate, genesis narrative, vanity hash, private testnet, peer-discovery requirement. Treating these as parallel options for "what caused the gap" is a category error. Technically, two distinct questions are conflated:
+Various hypotheses have been surveyed on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) and in [Pete Rizzo's 2024 Bitcoin Magazine article](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/): backdate, genesis narrative, vanity hash, private testnet, peer-discovery requirement. Treating these as parallel options for "what caused the gap" is a category error. Technically, two distinct questions are conflated:
 
 - **Q1. Why does the gap exist at all?**
 - **Q2. What was Satoshi doing during those five days?**

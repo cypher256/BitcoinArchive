@@ -100,6 +100,10 @@ const breadcrumbs = [
       <ValueOverflowTimeline lang={lang} />
     )}
 
+    {entry.id.includes('genesis-block-5-day-mystery') && (
+      <GenesisBlockGap lang={lang} />
+    )}
+
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -118,10 +122,6 @@ const breadcrumbs = [
 
     {entry.id.includes('sergio-lerner-patoshi-mining-machine') && (
       <PatoshiMiningMachine lang={lang} />
-    )}
-
-    {entry.id.includes('genesis-block-5-day-mystery') && (
-      <GenesisBlockGap lang={lang} />
     )}
 
     {entry.id.includes('lopp-was-satoshi-greedy-miner') && (
