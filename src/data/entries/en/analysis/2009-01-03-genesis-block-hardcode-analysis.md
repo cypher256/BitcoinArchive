@@ -39,11 +39,13 @@ secondarySources:
 relatedEntries:
   - "sourceforge/2009-01-03-genesis-block"
   - "aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery"
+  - "aftermath/2022-10-06-serhack-alternative-genesis-block"
+  - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
-  - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2024-03-14-copa-v-wright-ruling"
+  - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2016-05-02-craig-wright-biography"
 ---
 
@@ -131,7 +133,7 @@ Independent of Q1, what exactly Satoshi was doing between 2009-01-03 and 01-08 c
 |---|---|---|
 | **Testing / debugging / packaging** | Code hardening | SourceForge registration, documentation, binary builds were required. The most plausible Q2 activity |
 | **Vanity hash** | Nonce search time | The hash comfortably clears the difficulty-1 target (see §5.5). When the nonce `2083236893` was actually found cannot be determined from chain data |
-| **Private testnet** | Private test network | A private testnet may have run between 1/3 and 1/9; nothing remains on chain to confirm or refute (see §8 Open questions) |
+| **Private testnet** | Private test network | A private testnet may have run between 1/3 and 1/9; nothing remains on chain to confirm or refute (see §8 Open questions). An [alternative pre-release genesis block dated September 10, 2008](/BitcoinArchive/entries/aftermath/2022-10-06-serhack-alternative-genesis-block/) exists in source Satoshi shared privately, establishing that test genesis blocks did occur during development |
 | **Peer-discovery requirement** | Mining start condition | v0.1 `main.cpp` (L2195–2199) waits in `while (vNodes.empty()) { Sleep(1000); ... }`, but a two-node configuration (or two processes on one host) satisfies this immediately. Satoshi could have launched two processes himself on 1/9 — this does not determine the gap |
 | **Genesis narrative** | Symbolic allusion | Folk interpretation. No technical grounding; no contribution to Q2 |
 
@@ -253,7 +255,7 @@ When the surrounding record is factored in, the weights are not equal:
 1. **The alternative design is strictly smaller.** Hash-only + peer-received genesis would reuse existing networking code and would not need an empty-DB branch. If implementation convenience were the motive, the smaller design would have been the natural choice. Auto-construction is the *larger* implementation; choosing it costs complexity the smaller design would have saved.
 2. **Consistency with documented behavior.** Tor, address-rotating email, mixed British/American spellings, typing-pattern caution, voluntary withdrawal, and wallet.dat removal all point in the same direction: remove identifying signal. Reading one element of that pattern (the genesis design) as mere convenience while reading every other element as intentional is the one interpretation that breaks the symmetry of the record.
 3. **Shared-constant coinbase address.** A per-invocation coinbase address would have produced one more piece of individual signal. A shared constant embedded in the source is consistent with "leave no per-person trace."
-4. **The Times headline is the sole personal element.** The nonce, the address, and the processing structure are all de-personalized. The one element carrying individual voice is the coinbase payload text. A design otherwise careful to de-personalize, with one deliberate exception, is more easily read as intentional than as coincidentally uniform.
+4. **The Times headline is the sole personal element.** The nonce, the address, and the processing structure are all de-personalized. The one element carrying individual voice is the coinbase payload text. A design otherwise careful to de-personalize, with one deliberate exception, is more easily read as intentional than as coincidentally uniform. Separately, [Chain Bulletin's 2020 analysis](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/) treats the same headline as geographic evidence (British paper, British spelling conventions) supporting a London-based Satoshi — the same surviving signal, read for location rather than for intent.
 5. **The same Occam's razor applied in §6.** §6 argues the coinbase unspendability is a consequence of treating Block 0 as initial state, not an oversight, because "oversight" requires positing an overlooked side effect. Applied symmetrically here: Reading B requires no added assumption; Reading A asks that the larger, non-required implementation was chosen for no particular reason on a project whose other choices are highly deliberate.
 
 At the source-code level A and B sit on the same footing. Over the full record, B is the reading that requires no added assumption. The rest of this analysis treats B as the more likely interpretation, while continuing to mark it as interpretation rather than fact.

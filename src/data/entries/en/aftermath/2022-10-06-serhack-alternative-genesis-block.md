@@ -26,6 +26,10 @@ secondarySources:
     url: "https://bitcointalk.org/index.php?topic=382374.0"
   - name: "Bitcoin Wiki — Genesis block"
     url: "https://en.bitcoin.it/wiki/Genesis_block"
+relatedEntries:
+  - sourceforge/2009-01-03-genesis-block
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
 ---
 
 On October 6, 2022, security researcher SerHack published "The Story Behind the Alternative Genesis Block of Bitcoin," analyzing a pre-release version of Bitcoin's genesis block that predated the official launch by nearly four months.

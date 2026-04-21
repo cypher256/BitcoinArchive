@@ -23,6 +23,9 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
+  - aftermath/2022-10-06-serhack-alternative-genesis-block
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 featured: true
 ---
 
@@ -30,7 +33,7 @@ On January 3, 2009, Satoshi Nakamoto mined the first block of the Bitcoin blockc
 
 "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
 
-This message, a headline from the front page of The Times newspaper published on that date, serves dual purposes. It acts as a timestamp proving the block could not have been mined before January 3, 2009, and it provides a pointed commentary on the instability of the traditional banking system -- the very problem Bitcoin was designed to address.
+This message, a headline from the front page of The Times newspaper published on that date, serves dual purposes. It acts as a timestamp proving the block could not have been mined before January 3, 2009, and it provides a pointed commentary on the instability of the traditional banking system -- the very problem Bitcoin was designed to address. The headline's origin (a British newspaper) has also been [treated as geographic evidence](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/) in later analyses of Satoshi's likely location.
 
 The Genesis Block is [hardcoded into the Bitcoin software](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) and is the foundation upon which the entire blockchain is built. Unlike all subsequent blocks, the 50 BTC reward from the Genesis Block's coinbase transaction is unspendable due to the bootstrap-initialization structure of the original code.
 

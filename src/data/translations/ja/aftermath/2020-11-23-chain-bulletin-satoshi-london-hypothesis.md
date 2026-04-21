@@ -24,6 +24,9 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Genesis_block"
   - name: "The Times January 3, 2009 — Archived front page"
     url: "https://www.thetimes03jan2009.com/"
+relatedEntries:
+  - sourceforge/2009-01-03-genesis-block
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
 translationStatus: complete
 ---
 

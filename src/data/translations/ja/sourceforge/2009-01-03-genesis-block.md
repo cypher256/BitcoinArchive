@@ -23,6 +23,9 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
+  - aftermath/2022-10-06-serhack-alternative-genesis-block
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 translationStatus: complete
 featured: true
 ---
@@ -31,7 +34,7 @@ featured: true
 
 「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」
 
-このメッセージは、その日に発行されたThe Times紙の一面の見出しであり、二重の目的を果たしている。このブロックが2009年1月3日より前に採掘されたものではないことを証明するタイムスタンプとして機能すると同時に、従来の銀行システムの不安定性――まさにビットコインが解決するために設計された問題――に対する鋭い論評を提供している。
+このメッセージは、その日に発行された The Times 紙の一面の見出しであり、二重の目的を果たしている。このブロックが 2009 年 1 月 3 日より前に採掘されたものではないことを証明するタイムスタンプとして機能すると同時に、従来の銀行システムの不安定性 —— まさにビットコインが解決するために設計された問題 —— に対する鋭い論評を提供している。なお同じ見出しは後年の分析で、サトシの所在地を推定する[地理的証拠として扱われている](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)（英国紙という点から）。
 
 ジェネシスブロックは[ビットコインソフトウェアにハードコード](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)されており、ブロックチェーン全体が構築される基盤となっている。後続のすべてのブロックとは異なり、ジェネシスブロックのコインベーストランザクションからの 50 BTC 報酬は、元のコードの bootstrap 初期化構造により使用不可能となっている。
 
