@@ -132,7 +132,7 @@ Independent of Q1, what exactly Satoshi was doing between 2009-01-03 and 01-08 c
 | Hypothesis | Contribution to Q2 | Assessment |
 |---|---|---|
 | **Testing / debugging / packaging** | Code hardening | SourceForge registration, documentation, binary builds were required. The most plausible Q2 activity |
-| **Vanity hash** | Nonce search time | The hash comfortably clears the difficulty-1 target (see §5.5). When the nonce `2083236893` was actually found cannot be determined from chain data |
+| **Vanity hash** | Nonce search time | The hash comfortably clears the difficulty-1 target (see §5.5). At 2009-era CPU SHA-256d rates (~1–10 MH/s, consistent with [Lerner's Patoshi estimate](https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/)), reaching a 10-hex-zero prefix has expected search time on the order of hours to a few days. When the nonce `2083236893` was actually found cannot be determined from chain data |
 | **Private testnet** | Private test network | A private testnet may have run between 1/3 and 1/9; nothing remains on chain to confirm or refute (see §8 Open questions). An [alternative pre-release genesis block dated September 10, 2008](/BitcoinArchive/entries/aftermath/2022-10-06-serhack-alternative-genesis-block/) exists in source Satoshi shared privately, establishing that test genesis blocks did occur during development |
 | **Peer-discovery requirement** | Mining start condition | v0.1 `main.cpp` (L2195–2199) waits in `while (vNodes.empty()) { Sleep(1000); ... }`, but a two-node configuration (or two processes on one host) satisfies this immediately. Satoshi could have launched two processes himself on 1/9 — this does not determine the gap |
 | **Genesis narrative** | Symbolic allusion | Folk interpretation. No technical grounding; no contribution to Q2 |
@@ -304,6 +304,13 @@ The pattern worth noting, then, is narrower than "Satoshi added intentional weig
 
 Stating the observation at this weaker strength is more honest than the "8 digits required, 10 observed" framing used in earlier drafts, which conflated a numerical comparison with a prefix count.
 
+**Search-mode consideration.** At the order of magnitude of 2009-era CPU SHA-256d hash rates (~1–10 MH/s, consistent with Lerner's Patoshi estimates), the nonce search for the observed genesis hash falls on the scale of hours to a few days. Two search modes are consistent with the observed result and not distinguishable from chain data:
+
+- **Target-based.** Search until a hash with the desired number of leading zeros appears, then stop. Expected completion time for 10 hex leading zeros is on the order of a day or two at the rates above.
+- **Harvest-best.** Run the search over a fixed wall-clock interval and adopt the best-seen value at the end. Over an interval on the scale of the Jan 3 → Jan 9 gap, the expected best leading-zero count falls near 10 hex digits — a numerical size-match for the observed hash.
+
+The harvest-best reading is a genuine alternative to the "chose depth N deliberately" reading: under it, the 10-digit outcome is the statistical product of the chosen search duration rather than a separately selected target. This does not change §5.3's argument about mechanism B — which turns on the existence of a smaller-but-not-chosen alternative design, not on how the specific hash depth was arrived at. It does, however, make the PoW headroom compatible with Reading B under either interpretive path (target-based as deliberate depth; harvest-best as deliberate duration), and in that sense somewhat firms up the observation as a design-scale signal even while leaving the specific mode indeterminate.
+
 ## 6. The unspendable 50 BTC: a bootstrap artifact
 
 ### 6.1 Technical behavior
@@ -415,6 +422,7 @@ Constants are identical between v0.1 and current mainline Core.
 
 - Whether the Patoshi ExtraNonce pattern formally includes Block 0 (the PLOS ONE 2021 paper mentions "first 64 blocks" without fully specifying Block 0's treatment).
 - Whether `nTime = 1231006505` corresponds to the actual machine clock during the nonce search, or was set retrospectively to match the *Times* publication date. Not determinable from chain data alone.
+- Whether the nonce search was conducted as target-based (stop at first hash meeting the intended depth) or harvest-best (run for a fixed wall-clock interval and adopt the best-seen value). Both modes are consistent with the observed nonce and the Jan 3–9 timing, and chain data does not distinguish between them (§5.5).
 - Whether a private test network ran during January 3–8, 2009 (the pre-net hypothesis), as distinct from the interpretation in §3 under which only code preparation occurred. Both remain compatible with the evidence.
 - Whether anyone holds the Block 0 coinbase private key, and if so who (§6.5). No valid signature has been demonstrated.
 
