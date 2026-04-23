@@ -24,6 +24,8 @@ secondarySources:
     url: "https://chainbulletin.com/no-coindesk-satoshis-local-time-zone-wasnt-utc8"
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
+relatedEntries:
+  - analysis/2009-01-10-satoshi-launch-environment
 ---
 
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:

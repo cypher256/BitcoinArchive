@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2014-08-28-fran-finney-biography
+  - analysis/2009-01-10-satoshi-launch-environment
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
 ---
 

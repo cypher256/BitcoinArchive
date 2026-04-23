@@ -53,6 +53,8 @@ This analysis examines what the Bitcoin v0.1 source code actually does when a no
 
 Technical claims are verifiable against the Bitcoin v0.1 source. Interpretive sections are labeled as such.
 
+For a separate forensic reading of Satoshi's *personal operational environment* during the January 8-12, 2009 launch week — a topic adjacent in time but different in object — see [Satoshi's launch-period environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/).
+
 ## 1. Key distinctions used in this analysis
 
 | Term | Meaning |

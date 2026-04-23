@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/20/"
+relatedEntries:
+  - analysis/2009-01-10-satoshi-launch-environment
 ---
 
 Bitcoin v0.1.2 is now available for download.
