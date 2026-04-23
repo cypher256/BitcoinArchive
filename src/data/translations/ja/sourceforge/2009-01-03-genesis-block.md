@@ -42,4 +42,4 @@ featured: true
 
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
 
-ジェネシスブロックは、次のブロック（ブロック1）が 2009 年 1 月 9 日に採掘されるまでの 6 日間の間隔を置いて採掘された。1 月 9 日はビットコイン v0.1 が一般公開された日でもある。この間隔の原因は、ジェネシス分析で[ハードコード・タイムスタンプのアーティファクト](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)として検討されており、[ピート・リゾの 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)では複数の有力な仮説が整理されている。
+ジェネシスブロックは、次のブロック（ブロック1）が 2009 年 1 月 9 日に採掘されるまでの 6 日間の間隔を置いて採掘された。ビットコイン v0.1 は前日の 1 月 8 日に暗号学メーリングリストで公開発表されている。この間隔の原因は、ジェネシス分析で[ハードコード・タイムスタンプのアーティファクト](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)として検討されており、[ピート・リゾの 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)では複数の有力な仮説が整理されている。
