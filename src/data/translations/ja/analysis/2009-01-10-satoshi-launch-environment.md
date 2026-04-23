@@ -44,7 +44,7 @@ translationStatus: complete
 
 ### 1.1 メールの表現（一次資料）
 
-2009 年 1 月 10 日、サトシはハル・フィニーに私信を送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは [サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)。該当箇所:
+2009 年 1 月中旬、サトシはハル・フィニーに私信を送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは [サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期ウィンドウの内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
 
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 >
@@ -153,7 +153,7 @@ translationStatus: complete
 
 ## 7. まとめ
 
-- 一次資料: サトシ → フィニー, 2009-01-10。初公開は CoinDesk 2020 年 11 月記事
+- 一次資料: サトシ → フィニー宛私信。送信は 2009 年 1 月中旬（資料間で 2009-01-10 か 2009-01-12 か食い違いあり。いずれも本分析が扱うリリース期ウィンドウの内側）。初公開は CoinDesk 2020 年 11 月記事
 - 該当句: **"from where I am"** — 本分析は場所依存的かつ時制的な読みを採り、サトシの日常の設定の恒常的な性質としては読まない
 - 1/8-12 の活動密度（4 日間に 3 リリース）と組み合わせると、リリース週のサトシが「一時的な場所で、専念できる時間を持って」運用していた、という読みと整合する
 - 読みは編者による推論である。整合する環境の空間を狭くはするが特定の一つに決定はしない。サトシの身元・国籍・職業・個人史について主張しない

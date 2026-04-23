@@ -43,7 +43,7 @@ This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArc
 
 ### 1.1 The email phrase (primary source)
 
-On January 10, 2009, Satoshi sent a private email to Hal Finney. The text was first published by [CoinDesk in November 2020](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/), obtained from Finney's personal computer via his widow Fran Finney. The archive records it as [Satoshi → Finney, January 10, 2009](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/). The operative passage:
+In mid-January 2009, Satoshi sent a private email to Hal Finney. The text was first published by [CoinDesk in November 2020](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/), obtained from Finney's personal computer via his widow Fran Finney. The archive records it as [Satoshi → Finney, January 10, 2009](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/); the exact send date is disputed across sources, placed at either January 10 or January 12, 2009. Both candidate dates fall inside the Jan 8–12 launch window that this analysis is concerned with, so the ambiguity does not affect the reading below. The operative passage:
 
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 
@@ -148,7 +148,7 @@ What this analysis *does* contribute is a concrete forensic reading of a passage
 
 ## 7. Summary
 
-- Primary source: Satoshi → Finney, 2009-01-10, first published in CoinDesk's November 2020 article.
+- Primary source: Satoshi → Finney private email, sent mid-January 2009 (date disputed between 2009-01-10 and 2009-01-12 — both fall within the launch window this analysis addresses), first published in CoinDesk's November 2020 article.
 - Operative phrase: **"from where I am"** — read here as location-contingent, not as a permanent property of Satoshi's everyday setup.
 - Combined with Jan 8-12 activity intensity (three releases in four days), this is consistent with Satoshi operating from a temporary location with dedicated time during the launch week.
 - The reading is editorial. It narrows the space of compatible environments without determining any specific one, and makes no claim about Satoshi's identity, country, profession, or personal history.
