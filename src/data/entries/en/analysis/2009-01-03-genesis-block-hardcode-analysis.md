@@ -112,8 +112,8 @@ Timeline:
 | 2009-01-03 | *Times* headline committed to the coinbase; `nTime = 1231006505` fixed; values written into the source code | Exists as constants in the code |
 | 2009-01-03 → 08 | Code hardening, testing, packaging; no live chain running | Constants, not a live block |
 | 2009-01-08 | v0.1 released on SourceForge and announced on the cryptography mailing list | Still just constants |
-| 2009-01-09 02:44 UTC | Satoshi starts the live network for the first time | Block 0 is deterministically reconstructed from the constants — first materialization even on Satoshi's own machine |
-| 2009-01-09 02:54 UTC | Block 1 is mined | |
+| 2009-01-09 (estimated: minutes before Block 1) | Satoshi starts the live network for the first time | Block 0 is deterministically reconstructed from the constants — first materialization even on Satoshi's own machine. The exact start time is not recorded on chain |
+| 2009-01-09 02:54:25 UTC | Block 1 is mined (on-chain: `nTime`) | |
 
 Block 0 and Block 1 are effectively siblings from the same night. The image of Satoshi sitting alone for five days with only Block 0 in his database is an artifact of reading the gap as elapsed chain time.
 
@@ -121,9 +121,9 @@ The "backdate hypothesis," the "retroactive timestamp aligned to the *Times* hea
 
 ### 3.2 Inverting Q1: why was 2009-01-03 missed?
 
-Inverted, Q1 becomes a more substantive question — *why was the release not ready by January 3?* Choosing the January 3 timestamp implicitly set January 3 as the target. Actual release was January 8, and the live network started January 9 at 02:44 UTC. The five-day slip is a developer's slip against his own target date.
+Inverted, Q1 becomes a more substantive question — *why was the release not ready by January 3?* Choosing the January 3 timestamp implicitly set January 3 as the target. Actual release was January 8, and Block 1 was mined January 9 at 02:54:25 UTC (on-chain `nTime`; Satoshi's node must have started some minutes earlier, though this is not recorded on chain). The five-day slip is a developer's slip against his own target date.
 
-The public signals — only about four hours between the January 8 mailing list announcement and the January 9 02:44 UTC network start — weakly suggest "tight finish" over "generously buffered plan." This is speculative and cannot be decided from source code or chain data alone.
+The public signals — only about seven and a half hours between the January 8 19:27:40 UTC mailing list announcement ([metzdowd.com archive](https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html)) and the January 9 02:54:25 UTC Block 1 mining — weakly suggest "tight finish" over "generously buffered plan." This is speculative and cannot be decided from source code or chain data alone.
 
 ### 3.3 Q2 (the activity): empirically indeterminate
 
