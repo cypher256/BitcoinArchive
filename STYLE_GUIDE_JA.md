@@ -322,38 +322,84 @@ Use `speaker:` when one entry contains inline text by a different person
 
 ## 8. Technical Term Localization
 
-Technical terms that have established Japanese katakana forms use the
-katakana form in Japanese editorial text and descriptions. Terms
-universally used in their English form in the Japanese Bitcoin community
-stay in English.
+**方針**: 日本語本文は日本語として読めること。英語のままになっている語は、以下の
+4 カテゴリのいずれかに該当する時だけ許容する。それ以外はカタカナ化するか和訳する。
+個別単語の列挙では無限になるので、本節は**カテゴリの基準**で運用する。
 
-### When to use katakana
+### 英語のまま残してよい 4 カテゴリ
 
-- The term has a widely recognized katakana form in Japanese technical
-  writing
-- Using the English form would make the Japanese text harder to read
-- The term refers to a concept (algorithm, protocol, cryptographic scheme)
-  rather than a product name or brand
+1. **コード識別子** — ソースコードから引用した識別子そのもの。
+   例: `LoadBlockIndex`, `hashGenesisBlock`, `nNonce`, `assert()`, `ProcessBlock`
+2. **固有名詞・ブランド・プロトコル名・製品名** — 固有の名前として英語が正典。
+   例: Bitcoin, Bitcoin Core, SegWit, Taproot, Lightning Network, COPA,
+   The Times, SourceForge, BIP 125
+3. **標準的な技術略語** — JA Bitcoin コミュニティで英語略語のまま流通している
+   もの。展開形が日本語で使われないレベル。
+   例: PoW, UTXO, SHA-256, ECDSA, DDoS, JSON-RPC, URL, TCP/IP
+4. **引用・出典の原表記** — secondarySources の name, 直接引用中の語, URL,
+   タグ slug, frontmatter メタデータ
 
-### What stays in English
+### 英語のまま残してはいけない（= カタカナ化または和訳する）
 
-- Product names, protocol names, brand identifiers: Bitcoin, Taproot,
-  SegWit, Lightning Network
-- BIP titles and formal specification names (keep original for precision)
-- Tags, slugs, URLs, metadata fields
-- Secondary source names and URLs
-- Terms universally used in English in the Japanese Bitcoin community:
-  hash, nonce, mining, block, node, fork, P2P, ECDSA, SHA-256
+本文の散文（table の説明文含む）で概念語として使う以下は、カテゴリ 1〜4 に
+当たらない限りカタカナ化 or 和訳する:
 
-### Canonical mappings
+- **一般的技術語のカタカナ化**: ナンス, マイニング, マイナー, ブロック, ノード,
+  フォーク, ハッシュ, ブートストラップ, トランザクション, ウォレット, タイムスタンプ
+- **外国人名のカタカナ化**: ピート・リゾ, セルジオ・ラーナー, オッカム, サトシ・ナカモト
+  （中黒 `・` 区切り、姓名の区切りは日本語慣習に従う）
+- **抽象概念の和訳**: categorical error → カテゴリー エラー / カテゴリーの誤り,
+  well-defined → 構造的に定まる / well-defined な（専門用語として残す場合は
+  初出で注釈）, epistemic / ontological → 認識論的 / 存在論的（または初出のみ
+  `認識論的 (epistemic) 層` のように併記）, bootstrap 初期化 → ブートストラップ
+  初期化
+
+### 冗長グロスの禁止
+
+`target-based（目標ベース）` のような **英語 + 日本語の併記グロスを本文に複数回書かない**。
+- 初出に限って `認識論的（epistemic）` のように**片方だけカッコで注釈**する形は可
+- 2 回目以降はどちらか一方だけにする
+- 同じ段落内で同じ語を英日両方書くのは避ける
+
+### 判定フローチャート（迷った時）
+
+```
+この語は...
+├── コード識別子 (バッククォート内) か？ → 英語のまま
+├── 固有名詞・製品名か？ → 英語のまま
+├── PoW / UTXO / SHA-256 レベルの標準略語か？ → 英語のまま
+├── 引用元 / 出典 / メタデータか？ → 英語のまま
+└── それ以外 → カタカナ化または和訳する
+    ├── 一般的な技術語 → カタカナ
+    ├── 人名 → カタカナ（中黒区切り）
+    └── 抽象概念 → 既存の和訳があればそれ、なければ初出のみ `和訳 (英語)` 注釈
+```
+
+### 運用上の典型的違反
+
+以下は頻繁に発生する翻訳もれ。対応カタカナ／和訳を用いる:
+
+| 違反例（本文に英語のまま） | 正しい形 |
+|---|---|
+| `nonce 探索` | `ナンス探索` |
+| `Pete Rizzo` | `ピート・リゾ` |
+| `Lerner` | `ラーナー`（セルジオ・ラーナー） |
+| `Occam の剃刀` | `オッカムの剃刀` |
+| `epistemic 層` / `ontological 層` | `認識論的層` / `存在論的層`（初出のみ英語併記可） |
+| `bootstrap 初期化` | `ブートストラップ初期化` |
+| `distributor` | `配布元` |
+| `target-based（目標ベース）` | どちらか一方（例: `ターゲットベース`） |
+| `well-defined` (本文散文) | `構造的に定まる` / `well-defined な` + 初出注釈 |
+| `PoW headroom` | `PoW ヘッドルーム`（`PoW` は略語カテゴリ 3 なので残す） |
+
+上表は「個別ルール列挙」ではなく**上のフローチャート適用結果の例示**として読む。
+新語が出てきた時は列に追加せず、フローチャートで判定する。
+
+### Canonical mappings（固定済み訳）
 
 | English | Japanese | Notes |
 |---------|----------|-------|
 | Schnorr (signature) | シュノア（署名） | Japanese Bitcoin community standard |
-
-Add new entries to this table as they arise. When in doubt, check how
-bitcoin.org/ja, bitcoinops.org, and major Japanese Bitcoin media use the
-term.
 
 Canonical JA terminology for translated prose lives in § II.3 Terminology
 Glossary below.
