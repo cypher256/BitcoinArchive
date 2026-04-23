@@ -30,7 +30,7 @@ quotes:
 > C言語で簡単なCPUマイナーの作成を開始した。主にデモンストレーション用で、「getwork」を理解するためだ。
 <!-- /tone-skip -->
 
-getworkがバイト反転を行う。midstate、data、hash1はすでにビッグエンディアンで、dataを返す時もビッグエンディアンのままなので、ビッグエンディアンで作業し、バイト反転は不要だ。これらはScanHash_関数に渡されるのと同じデータだ。midstate、data、hash1を16バイトアラインされたバッファに入れてScanHash_関数に渡すことができる。例えばScanHash(pmidstate, pdata + 64, phash1, nHashesDone)のように。nonceが見つかったらdataにパッチしてgetworkを呼び出す。
+getworkがバイト反転を行う。midstate、data、hash1はすでにビッグエンディアンで、dataを返す時もビッグエンディアンのままなので、ビッグエンディアンで作業し、バイト反転は不要だ。これらはScanHash_関数に渡されるのと同じデータだ。midstate、data、hash1を16バイトアラインされたバッファに入れてScanHash_関数に渡すことができる。例えばScanHash(pmidstate, pdata + 64, phash1, nHashesDone)のように。ナンスが見つかったらdataにパッチしてgetworkを呼び出す。
 
 ScanHash_関数がpdata + 64ではなくpdataを使うように変更して一貫性を持たせるべきかもしれない。
 

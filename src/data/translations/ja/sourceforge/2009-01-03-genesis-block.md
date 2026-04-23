@@ -36,10 +36,10 @@ featured: true
 
 このメッセージは、その日に発行された The Times 紙の一面の見出しであり、二重の目的を果たしている。このブロックが 2009 年 1 月 3 日より前に採掘されたものではないことを証明するタイムスタンプとして機能すると同時に、従来の銀行システムの不安定性 —— まさにビットコインが解決するために設計された問題 —— に対する鋭い論評を提供している。なお同じ見出しは後年の分析で、サトシの所在地を推定する[地理的証拠として扱われている](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)（英国紙という点から）。
 
-ジェネシスブロックは[ビットコインソフトウェアにハードコード](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)されており、ブロックチェーン全体が構築される基盤となっている。後続のすべてのブロックとは異なり、ジェネシスブロックのコインベーストランザクションからの 50 BTC 報酬は、元のコードの bootstrap 初期化構造により使用不可能となっている。
+ジェネシスブロックは[ビットコインソフトウェアにハードコード](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)されており、ブロックチェーン全体が構築される基盤となっている。後続のすべてのブロックとは異なり、ジェネシスブロックのコインベーストランザクションからの 50 BTC 報酬は、元のコードの ブートストラップ 初期化構造により使用不可能となっている。
 
 ブロックハッシュは以下の通りである：
 
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
 
-ジェネシスブロックは、次のブロック（ブロック1）が 2009 年 1 月 9 日に採掘されるまでの 6 日間の間隔を置いて採掘された。1 月 9 日はビットコイン v0.1 が一般公開された日でもある。この間隔の原因は、ジェネシス分析で[ハードコード・タイムスタンプのアーティファクト](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)として検討されており、[Pete Rizzo の 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)では複数の有力な仮説が整理されている。
+ジェネシスブロックは、次のブロック（ブロック1）が 2009 年 1 月 9 日に採掘されるまでの 6 日間の間隔を置いて採掘された。1 月 9 日はビットコイン v0.1 が一般公開された日でもある。この間隔の原因は、ジェネシス分析で[ハードコード・タイムスタンプのアーティファクト](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)として検討されており、[ピート・リゾの 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)では複数の有力な仮説が整理されている。

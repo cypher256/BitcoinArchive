@@ -93,6 +93,14 @@ const RULES = [
   { type: 'literal', deprecated: 'merkleルート', canonical: 'マークルルート', reason: '"merkle" 部分もカタカナ化' },
   { type: 'literal', deprecated: 'Merkleルート', canonical: 'マークルルート', reason: 'JA 本文では和訳「マークルルート」を使う' },
   { type: 'literal', deprecated: 'Merkle Tree', canonical: 'マークルツリー', reason: 'JA 本文では和訳「マークルツリー」を使う。英文脈のまま残すケース（コード、姓）は literal match では自然に除外される' },
+
+  // section 8 policy enforcement — general technical terms in prose should be
+  // katakana. Use `type: 'word'` so code identifiers like `nNonce` /
+  // `getbootstrap` are not false-positive flagged.
+  { type: 'word', deprecated: 'nonce', canonical: 'ナンス', reason: '§8 方針に従い本文散文ではカタカナ化。code identifier (nNonce 等) は word boundary で除外' },
+  { type: 'word', deprecated: 'bootstrap', canonical: 'ブートストラップ', reason: '§8 方針。ただし "intentional bootstrap" 等の英語ラベルは例外として維持する (.ja-glossary-ignore で除外)' },
+  { type: 'word', deprecated: 'Occam', canonical: 'オッカム', reason: '§8 方針。固有名・人名扱い' },
+  { type: 'literal', deprecated: 'ノンス', canonical: 'ナンス', reason: 'カタカナ綴り揺れの統一（82 ナンス vs 27 ノンス → ナンスへ統一）' },
 ];
 
 function walk(dir) {
@@ -116,15 +124,78 @@ if (IGNORE_FILE && existsSync(IGNORE_FILE)) {
   }
 }
 
+// Strip out contexts that are not Japanese body prose before running
+// glossary rules. Per STYLE_GUIDE_JA section 8, the following surfaces
+// are Category 4 (stays English): frontmatter, code blocks, inline
+// code spans, markdown link URLs, raw URLs. We blank them out with
+// spaces so line/column numbers stay aligned for error reporting.
+function maskNonProse(content) {
+  const out = content.split('\n');
+  let inFrontmatter = false;
+  let frontmatterEnded = false;
+  let inFence = false;
+  for (let i = 0; i < out.length; i++) {
+    const line = out[i];
+    if (i === 0 && line === '---') {
+      inFrontmatter = true;
+      out[i] = ' '.repeat(line.length);
+      continue;
+    }
+    if (inFrontmatter) {
+      if (line === '---') {
+        inFrontmatter = false;
+        frontmatterEnded = true;
+      }
+      out[i] = ' '.repeat(line.length);
+      continue;
+    }
+    if (!frontmatterEnded && i > 0) {
+      // File without frontmatter: nothing to mask at top
+      frontmatterEnded = true;
+    }
+    // Fence toggles
+    if (line.trimStart().startsWith('```')) {
+      inFence = !inFence;
+      out[i] = ' '.repeat(line.length);
+      continue;
+    }
+    if (inFence) {
+      out[i] = ' '.repeat(line.length);
+      continue;
+    }
+    // Mask inline code `...` spans
+    let masked = line.replace(/`[^`]*`/g, (m) => ' '.repeat(m.length));
+    // Mask markdown link URLs: [text](URL)
+    masked = masked.replace(
+      /\]\(([^)]+)\)/g,
+      (m) => ']' + '(' + ' '.repeat(m.length - 3) + ')',
+    );
+    // Mask raw URLs (http:// or https://)
+    masked = masked.replace(
+      /https?:\/\/\S+/g,
+      (m) => ' '.repeat(m.length),
+    );
+    out[i] = masked;
+  }
+  return out.join('\n');
+}
+
 function findViolations(content, rule) {
   const hits = [];
-  const lines = content.split('\n');
+  const lines = maskNonProse(content).split('\n');
   let pattern;
   if (rule.type === 'trailing-choon') {
     // Match deprecated NOT followed by ー, and not preceded by a
     // katakana letter (which would mean the match is a substring of a
     // longer unrelated word — e.g. センサ inside コンセンサス).
     pattern = new RegExp('(?<![\\u30A0-\\u30FF])' + rule.deprecated + '(?!ー)', 'g');
+  } else if (rule.type === 'word') {
+    // Word-boundary match so lowercase English terms like "nonce" are
+    // caught in prose ("nonce 探索") but not inside camelCase code
+    // identifiers ("nNonce"). Word boundaries \b only apply to ASCII
+    // word characters, which is what we want here.
+    const escaped = rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    pattern = new RegExp('\\b' + escaped + '\\b', 'g');
   } else {
     pattern = new RegExp(rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
   }

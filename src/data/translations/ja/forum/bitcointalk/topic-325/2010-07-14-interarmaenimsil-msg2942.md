@@ -14,6 +14,6 @@ tags: []
 translationStatus: complete
 ---
 
-nonce + your_address + ガベージデータ = クライアントごとに変わるランダム性、というわけだ。
+ナンス + your_address + ガベージデータ = クライアントごとに変わるランダム性、というわけだ。
 
 了解した。みんなありがとう。システムへの信頼が回復した。

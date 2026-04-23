@@ -8,7 +8,7 @@ author: "Bruce Wagner"
 participants:
   - name: "Bruce Wagner"
     slug: "bruce-wagner"
-description: "BitcoinTalkトピック423におけるBruce Wagnerの文脈投稿。msg3867の後。"
+description: "BitcoinTalkトピック423におけるブルース・ワグナーの文脈投稿。msg3867の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

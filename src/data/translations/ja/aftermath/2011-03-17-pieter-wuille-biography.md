@@ -44,7 +44,7 @@ translationStatus: complete
 ウィーユはサトシ離脱後の Bitcoin 進化の驚くほど広い範囲をカバーする4本の BIP の著者または共著者である。
 
 - **[BIP-32](/BitcoinArchive/ja/entries/bip/2012-02-11-bip-0032/)**（2012年）— 階層的決定性ウォレット（HDウォレット）。1つのマスターシードから鍵ツリー全体を導出することで「頻繁なウォレットバックアップ」問題を解消。現代のあらゆる Bitcoin ウォレットの基盤。
-- **[BIP-141](/BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/)**（2015年、Eric Lombrozo・Johnson Lau と共著）— Segregated Witness（SegWit）。トランザクションの Malleability を修正し、Lightning を可能にし、実効ブロック容量を増加。
+- **[BIP-141](/BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/)**（2015年、エリック・ロンブロゾ・ジョンソン・ラウ と共著）— Segregated Witness（SegWit）。トランザクションの Malleability を修正し、Lightning を可能にし、実効ブロック容量を増加。
 - **[BIP-340](/BitcoinArchive/ja/entries/bip/2020-01-19-bip-0340/)**（2020年）— secp256k1 曲線上のシュノア署名。
 - **[BIP-341](/BitcoinArchive/ja/entries/bip/2020-01-19-bip-0341/)**（2020年）— Taproot。2021年11月に有効化。
 

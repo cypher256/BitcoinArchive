@@ -8,7 +8,7 @@ author: "Bruce Wagner"
 participants:
   - name: "Bruce Wagner"
     slug: "bruce-wagner"
-description: "BitcoinTalkトピック1735におけるBruce Wagnerの文脈投稿。サトシを引用."
+description: "BitcoinTalkトピック1735におけるブルース・ワグナーの文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

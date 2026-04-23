@@ -18,23 +18,41 @@ const jaDir = path.resolve(__dirname, '../src/data/translations/ja');
 
 // -------------------------------------------------------------------------
 // Person name mappings: English → Katakana
+//
+// Loaded from the authoritative list in src/i18n/participants.ts
+// (properNameTranslationsJa). The file is parsed as text to keep this
+// checker runnable under plain Node without TS tooling. Keeping both
+// the checker and the runtime page code reading the same source of
+// truth avoids drift.
 // -------------------------------------------------------------------------
-const NAME_MAP = {
-  'Gavin Andresen': 'ギャビン・アンドレセン',
-  'Hal Finney': 'ハル・フィニー',
-  'Adam Back': 'アダム・バック',
-  'Wei Dai': 'ウェイ・ダイ',
-  'Nick Szabo': 'ニック・サボ',
-  'Mike Hearn': 'マイク・ハーン',
-  'Martti Malmi': 'マルッティ・マルミ',
-  'Laszlo Hanyecz': 'ラズロ・ハニエツ',
-  'Ray Dillinger': 'レイ・ディリンジャー',
-  'Jeff Garzik': 'ジェフ・ガージック',
-  'Dustin Trammell': 'ダスティン・トランメル',
-  'Peter Todd': 'ピーター・トッド',
-  'Craig Wright': 'クレイグ・ライト',
-  'James Donald': 'ジェームズ・ドナルド',
-};
+const participantsFile = path.resolve(
+  __dirname,
+  '../src/i18n/participants.ts',
+);
+const participantsTxt = readFileSync(participantsFile, 'utf-8');
+
+function loadNameMap() {
+  const map = {};
+  // Extract the properNameTranslationsJa object body
+  const m = participantsTxt.match(
+    /properNameTranslationsJa\s*:\s*Record<[^>]+>\s*=\s*\{([\s\S]*?)\};/,
+  );
+  if (!m) {
+    throw new Error(
+      'Failed to parse properNameTranslationsJa from participants.ts',
+    );
+  }
+  for (const entry of m[1].matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)) {
+    // Skip identity-mapped entries where the canonical JA form is the
+    // English string itself (handles, brand names like NewLibertyStandard,
+    // Twitter, Theymos). Flagging these would produce false positives.
+    if (entry[1] === entry[2]) continue;
+    map[entry[1]] = entry[2];
+  }
+  return map;
+}
+
+const NAME_MAP = loadNameMap();
 
 // -------------------------------------------------------------------------
 // Lines / patterns to skip (not body text)
@@ -59,6 +77,49 @@ function isMetadataOrExcluded(line, inFrontmatter, inCodeBlock) {
 
   // Email addresses
   if (/<[^>]+@[^>]+>/.test(trimmed)) return true;
+
+  // Multi-line email signature lines where the closing '>' wraps to the
+  // next line, e.g., "> 2009年11月8日 午前9:08、Satoshi Nakamoto <satoshin@gmx.com"
+  // Pattern: leading '>', a date chunk, then a name followed by <local@
+  if (/^>.*\d{4}年.*<[^>\s]+@/.test(trimmed)) return true;
+
+  // "X の書き込み:" — Japanese equivalent of "X wrote:"
+  if (/の書き込み:/.test(trimmed)) return true;
+
+  // Japanese article / book titles enclosed in 「」 containing English names
+  // (citations, not prose). Matches when the run is primarily English + ASCII
+  // punctuation inside the 「」 pair.
+  if (/「[^」]*[A-Za-z][^」]*」/.test(trimmed)) {
+    // Only skip if the 「」 content is substantially English (>= 60% ASCII)
+    const content = trimmed.match(/「([^」]*)」/)?.[1] ?? '';
+    if (content.length > 0) {
+      const asciiChars = content.match(/[\x20-\x7E]/g)?.length ?? 0;
+      if (asciiChars / content.length >= 0.6) return true;
+    }
+  }
+
+  // Organization names containing a person name, e.g., "Satoshi Nakamoto Institute"
+  // These are brand/organization category (stays in English).
+  if (/Satoshi Nakamoto Institute/.test(trimmed)) return true;
+
+  // Standalone English name line (email signature footer).
+  // Matches a line whose only content is a 2-4 word capitalized English
+  // name, optionally preceded by a '>' blockquote marker. Common in
+  // quoted email signatures where the name appears alone on its line.
+  if (/^>?\s*[A-Z][A-Za-z.]+(?:\s+[A-Z][A-Za-z.]+){1,3}\s*$/.test(trimmed)) return true;
+
+  // Lines with no Japanese characters at all (quoted foreign-language
+  // content, e.g., Polish or German marketing pages reproduced verbatim).
+  // If the line has no hiragana, katakana, or CJK unified ideographs,
+  // treat it as foreign-language quoted content where English names are
+  // carried through from the source.
+  if (!/[぀-ゟ゠-ヿ一-鿿]/.test(trimmed)) return true;
+
+  // Lines containing a raw URL (http:// or https://) in JA prose are
+  // typically citations of external titles (YouTube, articles, etc.)
+  // where English names carry through from the cited resource. Markdown
+  // links [text](URL) are a different shape and are not matched here.
+  if (/(?<!\]\()https?:\/\//.test(trimmed)) return true;
 
   // Email signatures (NAME<br> pattern)
   if (/<br>/.test(trimmed)) return true;
