@@ -17,18 +17,26 @@ interface Props {
   secondarySources?: { name: string; url: string }[];
   pdfMetadata?: PdfMetadata;
   lang: Lang;
+  entryType?: string;
 }
 
-const { sourceUrl, secondarySources, pdfMetadata, lang } = Astro.props;
+const { sourceUrl, secondarySources, pdfMetadata, lang, entryType } = Astro.props;
 const t = useTranslations(lang);
+
+// For derivative, Bitcoin-Institute-authored entry types, the `sourceUrl`
+// and `secondarySources` are references the entry discusses, not the
+// original of a transcribed text. Switch labels accordingly.
+const isDerivativeType = entryType === 'analysis' || entryType === 'biography';
+const primaryLabel = isDerivativeType ? 'entry.referenceSource' : 'entry.originalSource';
+const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.secondarySources';
 ---
 
 <div class="source-citation">
-  <h3>{t('entry.originalSource')}</h3>
+  <h3>{t(primaryLabel as any)}</h3>
   <a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl}</a>
   {secondarySources && secondarySources.length > 0 && (
     <div class="secondary-sources">
-      <h4>{t('entry.secondarySources')}</h4>
+      <h4>{t(secondaryLabel as any)}</h4>
       <ul>
         {secondarySources.map((s) => (
           <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>

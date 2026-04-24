@@ -36,6 +36,16 @@ const otherParticipants = authorParticipant
   ? participants.filter((p) => p.slug !== authorParticipant.slug)
   : participants.filter((p) => p.name !== author);
 const displayAuthor = translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
+
+// The `isSatoshi` frontmatter flag means "this entry is about or by
+// Satoshi" (used for featured highlighting site-wide). It must not be
+// used to color the author name, because for derivative types like
+// `analysis` or `biography` the author is Bitcoin Institute, not
+// Satoshi, even when isSatoshi is true. Color the author slot only
+// when the specific author is Satoshi.
+const isSatoshiAuthor =
+  authorParticipant?.slug === 'satoshi-nakamoto' ||
+  author.toLowerCase() === 'satoshi nakamoto';
 ---
 
 <article
@@ -59,9 +69,9 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
   </a>
   <p class="card-author">
     {authorParticipant ? (
-      <a href={localePath(`/participants/${authorParticipant.slug}/`, lang)} class:list={["author-link", { satoshi: isSatoshi }]}>{displayAuthor}</a>
+      <a href={localePath(`/participants/${authorParticipant.slug}/`, lang)} class:list={["author-link", { satoshi: isSatoshiAuthor }]}>{displayAuthor}</a>
     ) : (
-      <span class:list={[{ satoshi: isSatoshi }]}>{displayAuthor}</span>
+      <span class:list={[{ satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
     )}
     {otherParticipants.length > 0 && (
       <span class="participants-with">
