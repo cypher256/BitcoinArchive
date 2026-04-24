@@ -72,6 +72,13 @@ export const GET: APIRoute = async ({ props }) => {
     lang: 'en' | 'ja';
   };
 
+  // Color the author name in the Satoshi accent only when the author
+  // actually is Satoshi. The `isSatoshi` frontmatter flag means "this
+  // entry is about or by Satoshi" — for derivative types (analysis,
+  // biography) that flag is true while the author is Bitcoin Institute.
+  // Same logic as EntryCard / EntryMeta / search (see commit 0efcc45e).
+  const isSatoshiAuthor = author.toLowerCase() === 'satoshi nakamoto';
+
   const displayTitle = truncate(title, 80);
   const displayDate = formatDate(date, lang);
   const accentColor = '#f7931a';
@@ -185,9 +192,9 @@ export const GET: APIRoute = async ({ props }) => {
                         type: 'span',
                         props: {
                           style: {
-                            color: isSatoshi ? accentColor : '#aaa',
+                            color: isSatoshiAuthor ? accentColor : '#aaa',
                             fontSize: '22px',
-                            fontWeight: isSatoshi ? 700 : 400,
+                            fontWeight: isSatoshiAuthor ? 700 : 400,
                           },
                           children: author,
                         },
