@@ -28,7 +28,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-セキュリティ研究者であり、「Druid」というハンドルネームを使うダスティン・D・トランメルは、[2009年1月9日にサトシが暗号学メーリングリストでビットコインを発表した](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)後、最も早くソフトウェアをダウンロードして実行した人物の一人であった。
+セキュリティ研究者であり、「Druid」というハンドルネームを使うダスティン・D・トランメルは、[2009年1月8日にサトシが暗号学メーリングリストでビットコインを発表した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)後、最も早くソフトウェアをダウンロードして実行した人物の一人であった。
 
 2009年1月11日付のこのメールで、トランメルはアルファ版の使用体験についてサトシに報告した。ビットコインのホワイトペーパーを読み進めていることに触れ、タイムスタンプサーバーのセクションに言及して、関連するリソースとしてpublictimestamp.orgへのリンクを共有した。
 

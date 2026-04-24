@@ -31,7 +31,7 @@ On October 23, 2021, [Dustin D. Trammell](/BitcoinArchive/participants/dustin-tr
 
 **The "one other node" experience:**
 
-Trammell described his first moments on the Bitcoin network after downloading and running the software shortly after [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s January 9, 2009 [announcement on the Cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
+Trammell described his first moments on the Bitcoin network after downloading and running the software shortly after [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s January 8, 2009 [announcement on the Cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
 
 > "When it first started, it connected to one other node and that was it. It just sat there with one connection for about four to six hours, and then it started making other connections and other nodes began to come online."
 
