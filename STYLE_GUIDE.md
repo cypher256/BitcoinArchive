@@ -477,15 +477,46 @@ The default rule is:
 
 Do not treat Astro `glob-loader Duplicate id` warnings as findings by default.
 
-These warnings are non-issues when they are caused by:
+**Root cause (Astro 5.17 bug):** the warning is a structural false positive from
+the incremental sync path of `node_modules/astro/dist/content/loaders/glob.js`.
+Walking lines 80–110:
 
-- matching EN/JA relative ids across separate collections
-- repeated loading of the same file without evidence of divergent content
+```js
+const existingEntry = store.get(id);     // entry from PREVIOUS sync's cache
+const digest = generateDigest(contents); // digest of CURRENT file contents
+if (existingEntry && existingEntry.digest === digest && existingEntry.filePath) {
+  return; // unchanged file → short-circuit, no warning
+}
+// any modified file falls through to here
+if (store.has(id)) {                     // always true on a modified file
+  logger.warn(`Duplicate id "${id}" found in ${filePath}. ...`);
+}
+store.set({ id, ... });                  // overwrite is correct
+```
 
-Only raise a finding if:
+The intent of `store.has(id)` is "another file in this same load run already
+claimed this id," but the cache holds entries from the previous run, so
+*every modified file* trips the check. Behavior signature:
 
-- two different files in the same collection resolve to the same id
-- content is actually overwritten, missing, or routed incorrectly
+- Warnings appear only on files that were modified since last sync.
+- Re-running `astro sync` (or `npm run check`) immediately makes them disappear.
+- Within each warning, exactly one file is named (the cache + that one file).
+
+**Real id collisions look different:** two distinct source files in the same
+collection resolve to the same normalized id. `scripts/check-duplicate-ids.mjs`
+(wired into `npm run check` and `npm run build`) detects these independently
+of Astro and fails the build if any are found. Astro normalizes ids by
+running each path segment through `github-slugger`, which strips dots and
+other special characters — so e.g. `bitcoin-v0.1-released.md` and
+`bitcoin-v01-released.md` would collide and silently overwrite.
+
+**Decision rule for reviewers:**
+
+- Astro `Duplicate id` warning, but `npm run check:duplicate-ids` passes →
+  false positive, do not flag.
+- `check:duplicate-ids` fails → real collision, must fix before merging.
+- Repro: stash your changes, run `npx astro sync` → no Astro warnings.
+  Pop, sync again → warnings reappear on exactly the modified files.
 
 ## Technical-Review Robustness
 
