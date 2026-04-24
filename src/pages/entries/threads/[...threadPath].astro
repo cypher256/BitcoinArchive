@@ -107,8 +107,13 @@ const breadcrumbs = [
                 const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
                 const displayName = ap?.name ?? entry.data.author;
                 const showHandle = ap && displayName !== entry.data.author;
+                // Color the author name only when the author actually is
+                // Satoshi. Same logic as EntryCard/EntryMeta/search.
+                const isSatoshiAuthor =
+                  ap?.slug === 'satoshi-nakamoto' ||
+                  entry.data.author.toLowerCase() === 'satoshi nakamoto';
                 return (
-                  <a href={localePath(`/participants/${ap?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: entry.data.isSatoshi }]}>
+                  <a href={localePath(`/participants/${ap?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: isSatoshiAuthor }]}>
                     {displayName}{showHandle && <span class="author-handle"> ({entry.data.author})</span>}
                   </a>
                 );
