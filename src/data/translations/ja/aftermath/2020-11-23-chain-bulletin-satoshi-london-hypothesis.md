@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Doncho Karaivanov"
     slug: "doncho-karaivanov"
-description: "ドンチョ・カライヴァノフが、サトシの投稿・コミット・メール742件の活動インスタンスを分析し、The Timesの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
+description: "ドンチョ・カライヴァノフが、サトシの投稿・コミット・メール742件の活動インスタンスを分析し、タイムズの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -32,9 +32,9 @@ translationStatus: complete
 
 2020年11月23日、ドンチョ・カライヴァノフはChain Bulletinにて、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコイン開発中にロンドンを拠点としていたと論じる詳細な分析を発表した。記事は複数の証拠を組み合わせている。
 
-**The Timesの見出し証拠：**
+**タイムズの見出し証拠：**
 
-[ジェネシスブロック](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)には「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というメッセージが含まれている。カライヴァノフは、この正確な見出しがThe Times of Londonの英国版印刷版にのみ掲載されたことを示した — 米国版は大幅に異なる内容とレイアウトであった。2008年、The Timesの180万人の印刷版読者のうち77万人（43%）がロンドン在住であり、物理的な新聞へのアクセス地点として統計的にロンドンが最も可能性が高い。
+[ジェネシスブロック](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)には「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というメッセージが含まれている。カライヴァノフは、この正確な見出しがタイムズの英国版印刷版にのみ掲載されたことを示した — 米国版は大幅に異なる内容とレイアウトであった。2008年、タイムズの180万人の印刷版読者のうち77万人（43%）がロンドン在住であり、物理的な新聞へのアクセス地点として統計的にロンドンが最も可能性が高い。
 
 **タイムスタンプ分析：**
 
@@ -54,4 +54,4 @@ translationStatus: complete
 
 **結論：**
 
-単一の証拠だけでは決定的ではないが、The Timesの物理的新聞へのアクセス、GMTと一致する活動パターン、英国式の言語的特徴の収束が、ビットコイン開発中のサトシの活動拠点としてロンドンを支持する状況証拠を構築している。
+単一の証拠だけでは決定的ではないが、タイムズの物理的新聞へのアクセス、GMTと一致する活動パターン、英国式の言語的特徴の収束が、ビットコイン開発中のサトシの活動拠点としてロンドンを支持する状況証拠を構築している。

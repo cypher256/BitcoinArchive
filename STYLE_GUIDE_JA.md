@@ -556,6 +556,7 @@ body text, descriptions, titles, and any editorial prose.
 | Merkle root | マークルルート | merkleルート / Merkleルート | コード識別子 `hashMerkleRoot` や姓 `R.C. Merkle` は対象外 |
 | Merkle tree | マークルツリー | マークル木 / merkleツリー / Merkle Tree | 全カタカナで統一。MAST の「マークル化抽象構文木」は別概念として保持 |
 | Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | コード識別子 `getmerklebranch` やタグ `merkle-branch` は対象外 |
+| The Times (英紙) | タイムズ | The Times（本文中） | ジェネシスブロック coinbase 内の文字列 `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks` は史実として原文保持。secondarySources の name フィールドも原文保持 |
 
 ### ルール追加手順
 

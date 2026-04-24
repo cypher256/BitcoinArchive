@@ -101,6 +101,14 @@ const RULES = [
   { type: 'word', deprecated: 'bootstrap', canonical: 'ブートストラップ', reason: '§8 方針。ただし "intentional bootstrap" 等の英語ラベルは例外として維持する (.ja-glossary-ignore で除外)' },
   { type: 'word', deprecated: 'Occam', canonical: 'オッカム', reason: '§8 方針。固有名・人名扱い' },
   { type: 'literal', deprecated: 'ノンス', canonical: 'ナンス', reason: 'カタカナ綴り揺れの統一（82 ナンス vs 27 ノンス → ナンスへ統一）' },
+  // The Times (英紙) — 本文中はカタカナ「タイムズ」で統一。
+  // 例外: ジェネシスブロック coinbase の literal 史実引用
+  // `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks`
+  // は word-boundary の "The Times" と一致するが、maskNonProse() で扱えない
+  // ため、現状は「次が " 03/Jan/2009"」を別途許容する負のlookaheadで除外
+  // できないので、type: 'word' ではなく該当本文を運用で守る方針とする。
+  // secondarySources `name:` フィールド (frontmatter) は maskNonProse で除外済み。
+  { type: 'word', deprecated: 'The Times', canonical: 'タイムズ', reason: '英紙 The Times は JA 本文ではカタカナ「タイムズ」。コインベース史実引用 "The Times 03/Jan/2009..." は史実保持のため運用で別管理（一括化禁止）' },
 ];
 
 function walk(dir) {
@@ -173,6 +181,15 @@ function maskNonProse(content) {
     // Mask raw URLs (http:// or https://)
     masked = masked.replace(
       /https?:\/\/\S+/g,
+      (m) => ' '.repeat(m.length),
+    );
+    // Mask the literal Bitcoin genesis coinbase headline.
+    // This is a fixed historical quotation that must appear verbatim in
+    // any JA prose that reproduces the coinbase payload. It contains
+    // the substring "The Times" which the glossary rule "The Times → タイムズ"
+    // would otherwise flag.
+    masked = masked.replace(
+      /The Times 03\/Jan\/2009 Chancellor on brink of second bailout for banks/g,
       (m) => ' '.repeat(m.length),
     );
     out[i] = masked;
