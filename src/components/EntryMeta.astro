@@ -25,12 +25,21 @@ const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
 const authorParticipant = findAuthorParticipant(author, participants);
 const displayAuthor = translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
+
+// Color the author name in the Satoshi accent only when the author
+// actually is Satoshi. The `isSatoshi` frontmatter flag means "this
+// entry is about / by Satoshi" — for derivative types (analysis,
+// biography) that flag is true while the author is Bitcoin Institute,
+// so it must not drive the author color. Same logic as EntryCard.
+const isSatoshiAuthor =
+  authorParticipant?.slug === 'satoshi-nakamoto' ||
+  author.toLowerCase() === 'satoshi nakamoto';
 ---
 
 <div class="entry-meta">
   <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
   <span class="meta-sep">&middot;</span>
-  <span class:list={['author', { satoshi: isSatoshi }]}>{displayAuthor}</span>
+  <span class:list={['author', { satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
   <span class="meta-sep">&middot;</span>
   <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge">{typeLabel}</a>
   <span class="meta-sep">&middot;</span>

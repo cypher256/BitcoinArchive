@@ -76,7 +76,14 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
         container: '#hits',
         templates: {
           item: function(hit) {
-            var author = hit.isSatoshi
+            // Color the author only when the author actually is Satoshi.
+            // The hit.isSatoshi flag marks entries about/by Satoshi,
+            // which for derivative types (analysis/biography) is true
+            // even though the author is Bitcoin Institute. Same logic
+            // as EntryCard/EntryMeta.
+            var isSatoshiAuthor = hit.author
+              && hit.author.toLowerCase() === 'satoshi nakamoto';
+            var author = isSatoshiAuthor
               ? '<span class="satoshi">' + hit.author + '</span>'
               : '<span>' + hit.author + '</span>';
             var date = hit.date
