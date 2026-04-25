@@ -72,6 +72,8 @@ relatedEntries:
 
 Satoshi Nakamoto
 
+*[ここでサトシ自身が述べる「コーディングしながらこの 1 年半」という時間軸は、設計作業を 2007 年半ばから 2008 年末の期間に位置づける — 3 か月前にウェイ・ダイへ送ったメールで本人が「b-money を知らなかった」と述べたのと同じ期間である。これは[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)が依拠する一次資料の観察の一つである。]*
+
 ---------------------------------------------------------------------
 The Cryptography Mailing List
 Unsubscribe by sending "unsubscribe cryptography" to majordomo at metzdowd.com

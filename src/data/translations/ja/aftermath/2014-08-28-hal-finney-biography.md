@@ -59,7 +59,7 @@ translationStatus: complete
 フィニーはExtropy Instituteのクライオニクス、延命、宇宙移住、ナノテクノロジー、人工知能に関する議論の積極的な参加者だった。Caltech在学中の1年生の時からクライオニクスに興味を持っていた。1992年10月15日、妻フランとともにCalifornia州RiversideでAlcorクライオニクスの会員登録書類に署名。以後20年以上Alcor会員だった。
 
 **Reusable Proof-of-Work：**
-2004年、フィニーは最初のReusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。
+2004年、フィニーは最初のReusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。アダム・バックのHashcashから、ウェイ・ダイのb-money、ニック・サボのBit Gold、そしてRPOWを経てビットコインへと至る技術系譜は、サトシ自身がその運動に対してどのような位置にいたかという問いとあわせて、[サイファーパンク核心とサトシの知的位置についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)で精査されている。
 
 **ビットコイン：**
 2009年1月9日、フィニーはリリース当日に[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外でビットコインノードを稼働させた最初の人物となった。Block 70付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[Block 170でサトシから10 BTCを受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。

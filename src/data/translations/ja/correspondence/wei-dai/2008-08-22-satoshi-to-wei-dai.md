@@ -39,3 +39,5 @@ translationStatus: complete
 
 よろしく頼む、
 Satoshi
+
+*[ここでサトシ本人が述べていること — アダム・バックの紹介でようやく b-money を知った、それも設計作業の後で — は、[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)が依拠する一次資料の観察の一つである。]*

@@ -36,4 +36,6 @@ I wanted to make sure I have the citation to your hashcash paper right.
 
 *[Satoshi included a link to a pre-release draft of what would become the Bitcoin whitepaper. The draft was titled "Electronic Cash Without a Trusted Third Party" and filed as ecash.pdf — predating the [October 3 draft](/BitcoinArchive/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/) which was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System."]*
 
+This email is the earliest documented contact between Satoshi and a central cypherpunk figure, and is examined in the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).
+
 *[Source: This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. Adam Back filed the complete email chain as a witness statement.]*

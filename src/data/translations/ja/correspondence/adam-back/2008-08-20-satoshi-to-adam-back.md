@@ -37,4 +37,6 @@ translationStatus: complete
 
 *[サトシは、後に[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)となるプレリリース版のリンクを添付した。]*
 
+このメールは、サトシとサイファーパンク運動の中心人物との公開記録上で最も早い接触であり、[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)で検討されている。
+
 *[出典: このメールは2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックが証人陳述書の一部として完全なメールチェーンを提出した。]*

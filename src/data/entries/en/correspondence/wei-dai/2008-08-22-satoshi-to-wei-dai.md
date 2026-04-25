@@ -47,3 +47,5 @@ I need to find out the year of publication of your b-money page for the citation
 
 Thanks,
 Satoshi
+
+*[Satoshi's own statement here — that he learned of b-money only through Adam Back's referral, after the design work — is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).]*
