@@ -33,6 +33,9 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+inlineLinkKeywords:
+  - "from where I am"
+  - "launch-period environment"
 ---
 
 This analysis reads two converging pieces of public evidence from the week of the Bitcoin v0.1 launch — a phrase in Satoshi's January 10, 2009 email to [Hal Finney](/BitcoinArchive/participants/hal-finney/), and the density of Satoshi's public activity during that week — and asks what the combination implies about Satoshi's operational environment at that time. The reading is editorial: it does not establish Satoshi's location or identity, and the primary sources underdetermine the conclusion in multiple ways noted below.

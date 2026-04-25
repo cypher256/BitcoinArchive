@@ -31,6 +31,12 @@ relatedEntries:
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
   - "correspondence/martti-malmi/2010-05-14-status-update-191"
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
+inlineLinkKeywords:
+  - "サトシのコーディングスタイル"
+  - "コーディングスタイルの指紋"
+  - "コミット時刻パターン"
+  - "英米スペル混在"
+  - "コードの進化"
 translationStatus: complete
 ---
 

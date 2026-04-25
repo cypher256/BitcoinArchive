@@ -435,6 +435,73 @@ When creating or editing a biography, verify:
 4. EN and JA mirrors have matching `relatedEntries`.
 5. `npm run check:internal-links` passes after changes.
 
+## Inline-Link Coverage for Analysis and Biography Pages
+
+Analysis and biography pages carry interpretive value that is easy to
+miss if readers find them only through the `relatedEntries` sidebar.
+The policy is to surface these pages from the **body prose** of every
+entry that touches their topic, not just from frontmatter.
+
+### When this applies
+
+Trigger an inline-link sweep whenever:
+
+- A new analysis or biography entry is added.
+- An existing analysis or biography is significantly expanded
+  (e.g., a new section that introduces a new topic keyword).
+- An entry that touches a known analysis/biography topic is created
+  or substantially edited.
+
+### How it is enforced
+
+Each analysis or biography entry declares topic keywords in its
+frontmatter:
+
+```yaml
+inlineLinkKeywords:
+  - "five-day gap"
+  - "un-attributability"
+  - "Genesis Block hardcode"
+```
+
+The keywords are language-specific — the EN file lists English phrases,
+the JA mirror lists the Japanese equivalents. Pick phrases specific
+enough to almost always indicate the topic when they appear in another
+entry's body prose. Avoid words so generic that they will produce
+false positives across the archive.
+
+`scripts/check-inline-link-coverage.mjs` walks every entry body in the
+same locale, and reports any case where a keyword appears but the body
+does not link back to the source analysis/biography. The script runs
+under `npm run check` as informational output (always exits 0), and
+under `npm run check:inline-link-coverage` standalone. Pass `--strict`
+to make it fail when gaps exist (useful in targeted CI gating).
+
+### How to act on a reported gap
+
+A reported gap is a *candidate* for an inline link, not an automatic
+edit instruction. Read the surrounding prose and decide:
+
+- If the body genuinely references the analysis/biography topic, add
+  an inline link at the first or most contextually important mention.
+- If the keyword appears in a different sense (false positive), no
+  edit is needed. Optionally narrow the keyword in the source entry's
+  `inlineLinkKeywords` to reduce future noise.
+
+Do not bulk-replace. Each gap is a per-occurrence editorial judgment.
+
+### relatedEntries vs inline links
+
+These two mechanisms are not interchangeable:
+
+- `relatedEntries` populates the "see also" sidebar — useful for
+  readers who finish an entry and want adjacent reading.
+- Inline body links surface analysis/biography pages **at the moment
+  the topic is mentioned**, while the reader is still engaged with
+  that thread of the narrative.
+
+Both should be present for analysis and biography hub pages.
+
 ## Scripted Edits Policy
 
 Scripts are allowed for inspection, reporting, and tightly-scoped metadata

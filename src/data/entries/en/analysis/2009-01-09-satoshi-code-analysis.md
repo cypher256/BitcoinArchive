@@ -31,6 +31,12 @@ relatedEntries:
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
   - "correspondence/martti-malmi/2010-05-14-status-update-191"
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
+inlineLinkKeywords:
+  - "Satoshi's coding style"
+  - "coding style fingerprint"
+  - "commit time pattern"
+  - "British spelling"
+  - "code evolution"
 ---
 
 This analysis by Bitcoin Institute examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010). It combines two distinct data sets: **static source code analysis** of the v0.1.0 release (distributed without version control in January 2009), and **commit history analysis** from the SourceForge SVN repository, which was introduced in October 2009 with help from Martti Malmi. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history.

@@ -47,6 +47,13 @@ relatedEntries:
   - "aftermath/2024-03-14-copa-v-wright-ruling"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2016-05-02-craig-wright-biography"
+inlineLinkKeywords:
+  - "5日間の空白"
+  - "5 日間の空白"
+  - "脱帰属設計"
+  - "未帰属性"
+  - "ジェネシスブロック・ハードコード"
+  - "使用不能な 50 BTC"
 translationStatus: complete
 ---
 

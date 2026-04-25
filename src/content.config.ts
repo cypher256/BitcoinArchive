@@ -62,6 +62,7 @@ const entrySchema = z.object({
   ]).optional(),
   quotes: z.array(quoteSchema).default([]),
   relatedEntries: z.array(z.string()).default([]),
+  inlineLinkKeywords: z.array(z.string()).optional(),
 });
 
 const entries = defineCollection({

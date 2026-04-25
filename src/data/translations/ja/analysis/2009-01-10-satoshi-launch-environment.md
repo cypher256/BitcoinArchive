@@ -33,6 +33,9 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+inlineLinkKeywords:
+  - "from where I am"
+  - "リリース期環境"
 translationStatus: complete
 ---
 

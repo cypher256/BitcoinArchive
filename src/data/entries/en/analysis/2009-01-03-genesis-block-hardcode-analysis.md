@@ -47,6 +47,13 @@ relatedEntries:
   - "aftermath/2024-03-14-copa-v-wright-ruling"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2016-05-02-craig-wright-biography"
+inlineLinkKeywords:
+  - "five-day gap"
+  - "5-day gap"
+  - "un-attributability"
+  - "un-ownership by design"
+  - "Genesis Block hardcode"
+  - "unspendable 50 BTC"
 ---
 
 This analysis examines what the Bitcoin v0.1 source code actually does when a node encounters an empty block database, and what that mechanism implies for three long-discussed questions about the [Bitcoin genesis block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/): the five-day gap between Block 0 and Block 1, the cryptographic attribution of Block 0, and the unspendable 50 BTC coinbase.
