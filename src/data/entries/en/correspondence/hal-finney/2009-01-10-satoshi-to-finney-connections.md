@@ -32,7 +32,7 @@ In this email, sent in the earliest days of the Bitcoin network, Satoshi disclos
 
 > Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult.
 
-This admission reveals that Satoshi was operating behind a firewall or NAT that blocked incoming TCP connections on port 8333, making his own node dependent on outgoing connections to other peers. This would have complicated debugging and testing the network in its infancy when there were only a handful of nodes.
+This admission reveals that Satoshi was operating behind a firewall or NAT that blocked incoming TCP connections on port 8333, making his own node dependent on outgoing connections to other peers. This would have complicated debugging and testing the network in its infancy when there were only a handful of nodes. The phrase "from where I am" is examined more broadly as a [forensic reading of Satoshi's launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) alongside the cadence of his public activity during the launch week.
 
 The email headers contained a timezone of UTC+8, which triggered speculation about Satoshi's location. However, Chain Bulletin journalist Doncho Karaivanov demonstrated that the UTC+8 timestamp originated from AnonymousSpeech.com's email relay server (based in Tokyo since 1996, using Asia/Hong_Kong timezone), not from Satoshi's local machine.
 

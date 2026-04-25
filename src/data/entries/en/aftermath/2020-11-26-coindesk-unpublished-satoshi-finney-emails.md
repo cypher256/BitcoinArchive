@@ -59,5 +59,7 @@ This email was sent from `satoshi@vistomail.com`.
 A follow-up after Bitcoin's launch:
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 
+The phrase "from where I am" is examined alongside the cadence of Satoshi's launch-week activity in a [forensic reading of his launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/).
+
 **The Timezone Mystery:**
 Satoshi's January 2009 email headers showed a timezone **eight hours ahead of GMT (UTC+8)** — inconsistent with Japan's UTC+9 offset. This initially fueled speculation about Satoshi's location. However, Doncho Karaivanov of Chain Bulletin argued the UTC+8 timestamp came from AnonymousSpeech.com's email server (based in Tokyo since 1996), not Satoshi's local machine. When using webmail, the Date header timezone reflects the server, not the user's location.

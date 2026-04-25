@@ -112,6 +112,17 @@ function bodyLinksTo(body, entryId, linkPrefix) {
          body.includes(linkPrefix + entryId + '"');
 }
 
+function makeKeywordPattern(kw) {
+  // Word-boundary anchoring: only enforce on sides whose terminal
+  // character is ASCII alphanumeric. This prevents "5-day gap" from
+  // matching inside "75-day gap" (digit-prefix collision) while still
+  // allowing JA keywords like "脱帰属設計" to match without a Latin \b.
+  const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const prefix = /[A-Za-z0-9]/.test(kw[0]) ? '(?<![A-Za-z0-9])' : '';
+  const suffix = /[A-Za-z0-9]/.test(kw[kw.length - 1]) ? '(?![A-Za-z0-9])' : '';
+  return new RegExp(prefix + escaped + suffix);
+}
+
 let totalSources = 0;
 let totalGaps = 0;
 const gapsByLocale = { en: 0, ja: 0 };
@@ -135,6 +146,7 @@ for (const { name, base, linkPrefix } of COLLECTIONS) {
         file,
         id: entryIdFromPath(file, base),
         keywords: kw,
+        keywordPatterns: kw.map((k) => ({ kw: k, re: makeKeywordPattern(k) })),
       });
     }
   }
@@ -150,7 +162,9 @@ for (const { name, base, linkPrefix } of COLLECTIONS) {
       if (file === src.file) continue;
       const body = fileToBody.get(file);
       if (bodyLinksTo(body, src.id, linkPrefix)) continue;
-      const matched = src.keywords.filter((kw) => body.includes(kw));
+      const matched = src.keywordPatterns
+        .filter((kp) => kp.re.test(body))
+        .map((kp) => kp.kw);
       if (matched.length === 0) continue;
       gaps.push({
         targetId: entryIdFromPath(file, base),

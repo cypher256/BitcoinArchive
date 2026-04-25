@@ -93,7 +93,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 > その後、ナカモトはアンドレセンのメールにすら返信しなくなった。ビットコイナーたちは嘆くように問うた。なぜ彼は去ったのか。だがその頃には、彼の創造物は独自の生命を持ち始めていた。
 
-**サトシのコーディングスタイルと年齢：**
+**サトシの[コーディングスタイル](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と年齢：**
 
 <!-- speaker: Amir Taaki -->
 アミール・ターキ：

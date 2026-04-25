@@ -35,7 +35,6 @@ inlineLinkKeywords:
   - "サトシのコーディングスタイル"
   - "コーディングスタイルの指紋"
   - "コミット時刻パターン"
-  - "英米スペル混在"
   - "コードの進化"
 translationStatus: complete
 ---

@@ -78,7 +78,7 @@ Wallace described how Andresen was one of the last people Satoshi communicated w
 
 > Then Nakamoto stopped replying even to Andresen's emails. Bitcoiners wondered plaintively why he had left them. But by then his creation had taken on a life of its own.
 
-**On Satoshi's coding style and age:**
+**On Satoshi's [coding style](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and age:**
 
 Amir Taaki:
 

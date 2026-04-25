@@ -35,7 +35,6 @@ inlineLinkKeywords:
   - "Satoshi's coding style"
   - "coding style fingerprint"
   - "commit time pattern"
-  - "British spelling"
   - "code evolution"
 ---
 
