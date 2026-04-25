@@ -26,6 +26,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
 translationStatus: complete
 ---
 

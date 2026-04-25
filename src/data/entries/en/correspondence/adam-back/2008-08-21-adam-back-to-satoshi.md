@@ -21,6 +21,8 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
 ---
 
 *[Adam Back confirmed the citation and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.]*

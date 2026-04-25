@@ -28,6 +28,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
 ---
 
 I was very interested to read your b-money page. I'm getting ready to release a paper that expands on your ideas into a complete working system. [Adam Back](/BitcoinArchive/participants/adam-back/) (hashcash.org) noticed the similarities and pointed me to your site.

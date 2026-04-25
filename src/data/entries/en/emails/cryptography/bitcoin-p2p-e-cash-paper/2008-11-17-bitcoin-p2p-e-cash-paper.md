@@ -24,6 +24,8 @@ quotes:
   - id: "q1"
     person: "James A. Donald"
     personSlug: "james-donald"
+relatedEntries:
+  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
 ---
 
 <!-- quote: q1 -->

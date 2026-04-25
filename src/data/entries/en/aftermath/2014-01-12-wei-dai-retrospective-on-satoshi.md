@@ -29,6 +29,7 @@ relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
+  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
 ---
 
 *From LessWrong "Ask Any LessWronger Anything" (AALWA) thread, January 12, 2014:*
