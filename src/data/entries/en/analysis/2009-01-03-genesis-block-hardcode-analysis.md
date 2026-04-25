@@ -113,8 +113,8 @@ Timeline:
 | Before 2009-01-03 | Nonce search performed at some point; `2083236893` found | Local / ephemeral |
 | 2009-01-03 | *Times* headline committed to the coinbase; `nTime = 1231006505` fixed; values written into the source code | Exists as constants in the code |
 | 2009-01-03 → 08 | Code hardening, testing, packaging; no live chain running | Constants, not a live block |
-| 2009-01-08 | v0.1 released on SourceForge and announced on the cryptography mailing list | Still just constants |
-| 2009-01-09 (estimated: minutes before Block 1) | Satoshi starts the live network for the first time | Block 0 is deterministically reconstructed from the constants — first materialization even on Satoshi's own machine. The exact start time is not recorded on chain |
+| 2009-01-08 | v0.1 announced on the cryptography mailing list | Still just constants |
+| 2009-01-09 (SourceForge release; estimated live start: minutes before Block 1) | Satoshi starts the live network for the first time | Block 0 is deterministically reconstructed from the constants — first materialization even on Satoshi's own machine. The exact start time is not recorded on chain |
 | 2009-01-09 02:54:25 UTC | Block 1 is mined (on-chain: `nTime`) | |
 
 Block 0 and Block 1 are effectively siblings from the same night. The image of Satoshi sitting alone for five days with only Block 0 in his database is an artifact of reading the gap as elapsed chain time.
