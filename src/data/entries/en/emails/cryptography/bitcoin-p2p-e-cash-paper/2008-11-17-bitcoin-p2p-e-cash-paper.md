@@ -25,7 +25,7 @@ quotes:
     person: "James A. Donald"
     personSlug: "james-donald"
 relatedEntries:
-  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 ---
 
 <!-- quote: q1 -->
@@ -75,7 +75,7 @@ sourcecode is coming soon.  I sent you the main files.
 
 Satoshi Nakamoto
 
-*[Editor: Satoshi's "year and a half while coding it" timeline locates the design work between mid-2007 and late 2008 — the same window in which, by his own statement to Wei Dai three months earlier, he was unaware of b-money. This is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).]*
+*[Editor: Satoshi's "year and a half while coding it" timeline locates the design work between mid-2007 and late 2008 — the same window in which, by his own statement to Wei Dai three months earlier, he was unaware of b-money. This is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
 
 ---------------------------------------------------------------------
 The Cryptography Mailing List

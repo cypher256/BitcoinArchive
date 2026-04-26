@@ -29,7 +29,7 @@ relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
-  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 translationStatus: complete
 ---
 
@@ -45,7 +45,7 @@ translationStatus: complete
 
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
 
-*[編者注：ここでのウェイ・ダイの推認 — サトシはサイファーパンクのコミュニティに以前から積極的に参加していた人物ではない — は、[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)が依拠する 3 つの一次資料観察のうちの一つである。]*
+*[編者注：ここでのウェイ・ダイの推認 — サトシはサイファーパンクのコミュニティに以前から積極的に参加していた人物ではない — は、[サトシとサイファーパンク運動との関係についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)が依拠する 3 つの一次資料観察のうちの一つである。]*
 
 **サトシの動機について：**
 

@@ -26,7 +26,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
-  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 translationStatus: complete
 ---
 
@@ -40,4 +40,4 @@ translationStatus: complete
 よろしく頼む、
 Satoshi
 
-*[編者注：ここでサトシ本人が述べていること — アダム・バックの紹介でようやく b-money を知った、それも設計作業の後で — は、[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)が依拠する一次資料の観察の一つである。]*
+*[編者注：ここでサトシ本人が述べていること — アダム・バックの紹介でようやく b-money を知った、それも設計作業の後で — は、[サトシとサイファーパンク運動との関係についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)が依拠する一次資料の観察の一つである。]*

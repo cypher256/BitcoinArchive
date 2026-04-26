@@ -28,7 +28,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
-  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 ---
 
 I was very interested to read your b-money page. I'm getting ready to release a paper that expands on your ideas into a complete working system. [Adam Back](/BitcoinArchive/participants/adam-back/) (hashcash.org) noticed the similarities and pointed me to your site.
@@ -48,4 +48,4 @@ I need to find out the year of publication of your b-money page for the citation
 Thanks,
 Satoshi
 
-*[Editor: Satoshi's own statement here — that he learned of b-money only through Adam Back's referral, after the design work — is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).]*
+*[Editor: Satoshi's own statement here — that he learned of b-money only through Adam Back's referral, after the design work — is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*

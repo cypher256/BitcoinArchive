@@ -23,7 +23,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "このメールは2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。完全なメールチェーン（全5通）はアダム・バックが証人陳述書として提出した"
 relatedEntries:
-  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 translationStatus: complete
 ---
 
@@ -32,4 +32,4 @@ translationStatus: complete
 
 *[補足：サトシはその後、次のように返信した：「ありがとう。b-moneyのページは知らなかったが、私のアイデアはまさにその点から始まっている。」彼はその後、2008年8月22日にウェイ・ダイに直接連絡を取り、ビットコインホワイトペーパーにb-moneyを引用した。]*
 
-このやり取り — ホワイトペーパー公開の 2 か月前にアダム・バックがサトシに b-money を紹介した — は、[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)の一次資料の一つであり、サトシがサイファーパンクのコミュニティに事前に深く関与せずに設計空間に到達していたことを記録している。
+このやり取り — ホワイトペーパー公開の 2 か月前にアダム・バックがサトシに b-money を紹介した — は、[サトシとサイファーパンク運動との関係についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料の一つであり、サトシがサイファーパンクのコミュニティに事前に深く関与せずに設計空間に到達していたことを記録している。

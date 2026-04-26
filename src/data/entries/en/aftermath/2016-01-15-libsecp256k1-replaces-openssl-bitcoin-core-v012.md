@@ -36,7 +36,6 @@ relatedEntries:
   - "aftermath/2011-03-17-pieter-wuille-biography"
   - "aftermath/2013-03-05-gregory-maxwell-biography"
   - "aftermath/2010-11-19-wladimir-van-der-laan-biography"
-  - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2011-10-10-dan-kaminsky-bitcoin-security"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"

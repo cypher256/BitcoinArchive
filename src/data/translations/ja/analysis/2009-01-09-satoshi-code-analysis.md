@@ -11,6 +11,7 @@ participants:
 description: "サトシ・ナカモトのBitcoinソースコード（v0.1.0〜v0.3.19）の統計的分析。コーディングスタイルの指紋、EST/CSTタイムゾーンを示唆するコミット時間帯パターン、14ヶ月で19,901行から31,909行へのコード進化、失踪前の最終コミットの特徴。"
 isSatoshi: true
 featured: true
+homeOrder: 4
 tags:
   - "satoshi-nakamoto"
   - "source-code"

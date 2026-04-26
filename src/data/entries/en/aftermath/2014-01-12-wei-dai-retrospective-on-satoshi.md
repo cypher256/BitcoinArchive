@@ -29,7 +29,7 @@ relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
-  - "analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 ---
 
 *From LessWrong "Ask Any LessWronger Anything" (AALWA) thread, January 12, 2014:*
@@ -44,7 +44,7 @@ Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/
 
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
-*[Editor: Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).]*
+*[Editor: Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
 
 **On Satoshi's motivation:**
 

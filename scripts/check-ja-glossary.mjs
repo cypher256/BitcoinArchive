@@ -109,6 +109,16 @@ const RULES = [
   // できないので、type: 'word' ではなく該当本文を運用で守る方針とする。
   // secondarySources `name:` フィールド (frontmatter) は maskNonProse で除外済み。
   { type: 'word', deprecated: 'The Times', canonical: 'タイムズ', reason: '英紙 The Times は JA 本文ではカタカナ「タイムズ」。コインベース史実引用 "The Times 03/Jan/2009..." は史実保持のため運用で別管理（一括化禁止）' },
+
+  // --- 「signature」の意味別訳語統一 ---
+  // 「署名」は本サイトでは crypto signature (Schnorr 署名 / ECDSA 署名 / message signing 等) として
+  // canonical。pseudonym/byline 意 と forensic fingerprint 意 で「署名」を使うと crypto と混同するため、
+  // 意味別に別訳語へ分離する。
+  // - signature (pseudonym/byline) → 「仮名」
+  // - signature (forensic fingerprint/pattern, e.g. Patoshi mining signature) → 「指紋」
+  { type: 'literal', deprecated: 'という署名', canonical: 'という仮名', reason: 'pseudonym/byline 意の signature は「仮名」で統一。crypto 意の「署名」（Schnorr 署名等）と区別する' },
+  { type: 'literal', deprecated: 'マイニング署名', canonical: 'マイニング指紋', reason: 'Patoshi 等 forensic fingerprint 意の signature は「指紋」で統一。crypto 意の「署名」と区別する' },
+  { type: 'literal', deprecated: 'ナンス署名', canonical: 'ナンス指紋', reason: 'forensic fingerprint 意の signature は「指紋」で統一。crypto 意の「署名」と区別する' },
 ];
 
 function walk(dir) {

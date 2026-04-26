@@ -41,7 +41,7 @@ translationStatus: complete
 
 **「Patoshi」の命名:**
 
-ラーナーは **「Patoshi」** — 「Pattern」と「Satoshi」を組み合わせた造語 — を使い、[2013年から研究してきた](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)特徴的なマイニング署名を呼んだ。この名称は、その後のサトシのマイニング行動に関するすべての学術的・コミュニティ議論における標準的な呼称となった。
+ラーナーは **「Patoshi」** — 「Pattern」と「Satoshi」を組み合わせた造語 — を使い、[2013年から研究してきた](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)特徴的なマイニング指紋を呼んだ。この名称は、その後のサトシのマイニング行動に関するすべての学術的・コミュニティ議論における標準的な呼称となった。
 
 **更新された推定:**
 

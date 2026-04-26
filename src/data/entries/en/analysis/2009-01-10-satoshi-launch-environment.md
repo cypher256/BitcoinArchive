@@ -12,6 +12,7 @@ participants:
     slug: "hal-finney"
 description: "An editorial forensic reading of Satoshi's operational environment during the Bitcoin v0.1 launch week (January 8-12, 2009), built from two converging primary-source signals: the location-specific phrasing 'from where I am' in the January 10 email to Hal Finney, and the unusually dense cadence of public activity during the same period. This is an interpretive reading, not a historical claim about Satoshi's identity or location."
 isSatoshi: false
+homeOrder: 5
 tags:
   - "analysis"
   - "satoshi-identity"

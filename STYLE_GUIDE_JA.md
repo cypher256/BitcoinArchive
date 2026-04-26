@@ -557,6 +557,9 @@ body text, descriptions, titles, and any editorial prose.
 | Merkle tree | マークルツリー | マークル木 / merkleツリー / Merkle Tree | 全カタカナで統一。MAST の「マークル化抽象構文木」は別概念として保持 |
 | Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | コード識別子 `getmerklebranch` やタグ `merkle-branch` は対象外 |
 | The Times (英紙) | タイムズ | The Times（本文中） | ジェネシスブロック coinbase 内の文字列 `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks` は史実として原文保持。secondarySources の name フィールドも原文保持 |
+| signature (crypto) | 署名 | — | Schnorr/ECDSA/message signing 等の暗号学的署名は「署名」で canonical |
+| signature (pseudonym/byline) | 仮名 | 署名 | 「『サトシ・ナカモト』という署名」のような pen name 意は crypto 「署名」と混同するため「仮名」で統一 |
+| signature (forensic fingerprint) | 指紋 | 署名 | 「マイニング署名」「ナンス署名」のような Patoshi 等の forensic fingerprint 意は「指紋」で統一 |
 
 ### ルール追加手順
 
