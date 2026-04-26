@@ -44,6 +44,7 @@ const entrySchema = z.object({
   secondarySources: z.array(z.object({
     name: z.string(),
     url: z.string().url(),
+    note: z.string().optional(),
   })).optional(),
   featured: z.boolean().optional(),
   editorNote: z.string().optional(),

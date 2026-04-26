@@ -29,6 +29,13 @@ In other words:
 - `>` / `<blockquote>` answers: "this block is quoted or excerpted material"
 - quotation marks answer: "these words are being presented as a direct quote"
 
+This section is the top-level partition between "quoted material" and
+"the editor's own words." For the editor's-own-words side, the
+[Editorial Markers](#editorial-markers) section below defines the
+canonical sub-categories (page-level note, in-body interpretation,
+in-body context, source attribution, quotation metadata, and the
+untouchable original-poster edit notes).
+
 ## Primary-Source Entries
 
 For emails, letters, forum posts, release notes, and similar primary-source
@@ -45,7 +52,21 @@ Use extra quotation marks only when the source itself uses them or when a short
 excerpt is being called out as a quoted utterance rather than presented as the
 body of the source.
 
+**Original-poster edit notes are part of the source record.** Markers like
+`edit:`, `[edit]`, `Edit:`, `編集:`, `[編集]` written by the original
+author of a forum post, mailing-list message, or private email are part
+of the historical record and must not be normalized as if they were
+Archive editor notes. See category **F** in the
+[Editorial Markers](#editorial-markers) section.
+
 ## Editorial / Narrative Entries
+
+This section covers the **quotation form** used inside editor-written
+narrative entries (aftermath, biographies, retrospectives). For the
+**editor-note markers** that appear inside these same entries (the
+markers that say "this paragraph is the editor's interpretation, not
+quoted material"), see the [Editorial Markers](#editorial-markers)
+section below.
 
 For editor-written narrative entries such as aftermath pages, biographies, and
 retrospectives:
@@ -70,12 +91,104 @@ just the original glyphs.
 - If the source block functions as a highlighted utterance in narrative prose,
   use the target language's quotation punctuation.
 
+For **editor-note markers** ([Editorial Markers](#editorial-markers)),
+the JA/EN canonical pairs use locale-specific punctuation:
+
+- EN uses half-width colon (`:`); JA uses full-width colon (`：`).
+- Mixing is not allowed: a JA file must not carry an EN marker form,
+  and vice versa.
+- The label and the note text are separated by exactly one half-width
+  space, in both locales (e.g. `*[Editor: text]*`, `*[編者注：text]*`).
+
 ## Consistency Rule
 
 - Do not rewrite untouched legacy material just for stylistic cleanup.
 - When an entry is being edited, normalize the touched portion to this guide.
 - If a category develops a strong established pattern, follow that pattern
   unless there is a clear reason to improve it.
+
+For the [Editorial Markers](#editorial-markers) audit, the same logic
+applies: the `check:editorial-markers` script runs in informational
+mode by default. It must not be flipped to `--strict` (hard-fail)
+until the existing legacy is normalized end-to-end. Flipping it before
+that point would block unrelated commits.
+
+## Editorial Markers
+
+This section partitions the editor's-own-words side of the
+[Core Distinction](#core-distinction-blockquotes-vs-quotation-marks).
+A reader must be able to tell, from formatting alone, which of the
+following roles a given line plays:
+
+1. Page-level editorial commentary by Bitcoin Institute
+2. In-body editor interpretation (Bitcoin Institute opinion / reading)
+3. In-body historical context supplement (third-party facts adjacent
+   to the entry)
+4. Source attribution for the entry's primary material
+5. Quotation metadata inside or adjacent to a blockquote
+6. Original-poster edit notes that are part of the source record (not
+   Archive editor notes)
+
+Each role has exactly one canonical form. Anything else is to be
+normalized.
+
+### The six roles and their canonical forms
+
+| Role | Description | EN canonical | JA canonical | Position |
+|---|---|---|---|---|
+| **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
+| **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` | same | rendered at the end of the entry by `<SourceCitation />` |
+| **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
+| **D** | In-body historical context | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
+| **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
+| **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
+
+### Rules
+
+1. JA uses full-width colon (`：`); EN uses half-width (`:`). No mixing.
+2. The label and the body text are separated by exactly one half-width
+   space (e.g. `*Source: text*`, `*[編者注：text]*`).
+3. (B) is provided by the existing `<SourceCitation />` component
+   driven by `frontmatter.sourceUrl` + `secondarySources[]`. Inline
+   `*Source: ...*` / `*出典：...*` lines in body content are forbidden
+   as a **canonical** form. Existing legacy occurrences are migrated
+   to `secondarySources[].note` or to (D) during normalization.
+4. (C) and (D) require the label prefix. Unlabeled `*[...]*` is
+   forbidden.
+5. (A) is for entry-wide commentary (one box per entry). For local
+   commentary, use (C) inline.
+6. Bold-label forms (`**Source:**`, `**Note:**`, `**Editor:**`,
+   `**Author:**` as an editor marker) are forbidden.
+7. Plain-bracket forms (`[Source: ...]`, `[Note: ...]`) are forbidden.
+8. Dash-trailer forms (`— Source: ...`, `-- Source: ...`) are
+   forbidden.
+9. Bracketed source-attribution forms (`*[Source: ...]*`,
+   `*[出典：...]*`) are forbidden — use (B) via the component machinery.
+10. HTML comments (`<!-- ... -->`) are reserved for semantic markup
+    (`<!-- speaker: ... -->`, `<!-- quote: ... -->`). They must not
+    contain editor commentary.
+11. Plain keyword usage in prose (`〜より`, `via`, `according to`,
+    etc.) is acceptable. Add (C) or (D) markup only when the
+    surrounding sentence carries Bitcoin Institute's interpretation
+    rather than factual reportage.
+12. **(F) Original-poster edit notes are part of the source record;
+    Archive editors must not change or normalize them.** This rule is
+    the [Primary-Source Entries](#primary-source-entries) preservation
+    principle applied to inline edit markers.
+
+### Audit
+
+`scripts/check-editorial-markers.mjs` enforces these rules. It runs
+under `npm run check` informationally; pass `--strict` to make it fail.
+The audit excludes blockquote interiors, code blocks, URLs, and HTML
+comments to avoid false positives on primary-source content.
+
+A separate `--report-f-candidates` mode lists every `edit:` / `編集:`
+occurrence inside `forum-post`, `mailing-list`, and `correspondence`
+entries. The auto-classifier treats these as F (preserved) by default,
+but the report lets a human verify that no Archive-editor note has
+been mis-classified as a poster's note. Full review of the F-candidate
+report is required before flipping `--strict` on.
 
 ## Title Policy
 

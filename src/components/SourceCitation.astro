@@ -14,7 +14,7 @@ interface PdfMetadata {
 
 interface Props {
   sourceUrl: string;
-  secondarySources?: { name: string; url: string }[];
+  secondarySources?: { name: string; url: string; note?: string }[];
   pdfMetadata?: PdfMetadata;
   lang: Lang;
   entryType?: string;
@@ -39,7 +39,12 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
       <h4>{t(secondaryLabel as any)}</h4>
       <ul>
         {secondarySources.map((s) => (
-          <li><a href={s.url} target="_blank" rel="noopener">{s.name}</a></li>
+          <li>
+            <a href={s.url} target="_blank" rel="noopener">{s.name}</a>
+            {s.note && (
+              <span class="source-note">{lang === 'ja' ? `（${s.note}）` : ` — ${s.note}`}</span>
+            )}
+          </li>
         ))}
       </ul>
     </div>
@@ -106,6 +111,11 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
   }
   .secondary-sources li {
     margin-bottom: 0.25rem;
+  }
+  .source-note {
+    color: var(--color-text-muted);
+    font-size: 0.85em;
+    margin-left: 0.25em;
   }
   .pdf-metadata {
     margin-top: 1rem;
