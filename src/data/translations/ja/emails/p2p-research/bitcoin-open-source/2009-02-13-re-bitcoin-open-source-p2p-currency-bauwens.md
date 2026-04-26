@@ -21,6 +21,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
 relatedEntries:
   - "aftermath/2009-02-12-michel-bauwens-biography"
+  - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
 translationStatus: complete
 quotes:
   - id: "q1"

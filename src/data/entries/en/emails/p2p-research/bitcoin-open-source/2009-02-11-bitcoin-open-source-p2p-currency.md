@@ -21,6 +21,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2009-02-12-martien-van-steenbergen-biography
   - aftermath/2009-02-12-michel-bauwens-biography
+  - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
 ---
 
 I've developed a new open source P2P e-cash system called Bitcoin. It's completely decentralized, with no central server or trusted parties, because everything is based on crypto proof instead of trust. Give it a try, or take a look at the screenshots and design paper:

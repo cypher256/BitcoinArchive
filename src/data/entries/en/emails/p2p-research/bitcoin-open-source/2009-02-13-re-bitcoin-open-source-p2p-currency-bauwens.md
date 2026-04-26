@@ -18,6 +18,7 @@ tags:
   - "network"
 relatedEntries:
   - "aftermath/2009-02-12-michel-bauwens-biography"
+  - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"

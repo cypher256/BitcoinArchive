@@ -26,6 +26,7 @@ relatedEntries:
   - "emails/p2p-research/bitcoin-open-source/2009-02-13-re-bitcoin-open-source-p2p-currency-bauwens"
   - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
   - forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation
+  - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
 translationStatus: complete
 ---
 

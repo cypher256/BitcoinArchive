@@ -18,13 +18,14 @@
  *   sourceforge                     -> 'sourceforge'
  *   other                           -> 'other'
  */
-import { readdirSync, readFileSync, statSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), '..');
 const ENTRIES_DIR = path.join(ROOT, 'src/data/entries/en');
+const JA_ENTRIES_DIR = path.join(ROOT, 'src/data/translations/ja');
 const OUT_DIR = path.join(ROOT, 'src/data/satoshi-timeline');
 const OUT_FILE = path.join(OUT_DIR, 'timeline.json');
 
@@ -71,10 +72,18 @@ function classifyChannel(relPath) {
   return 'other';
 }
 
+function readJaTitle(relPath) {
+  const jaPath = path.join(JA_ENTRIES_DIR, relPath + '.md');
+  if (!existsSync(jaPath)) return null;
+  const fm = parseFrontmatter(readFileSync(jaPath, 'utf8'));
+  return fm && fm.title ? fm.title : null;
+}
+
 const files = walk(ENTRIES_DIR);
 const events = [];
 let skippedNoDate = 0;
 let skippedNotSatoshi = 0;
+let jaTitleCount = 0;
 
 for (const fullPath of files) {
   const content = readFileSync(fullPath, 'utf8');
@@ -86,11 +95,15 @@ for (const fullPath of files) {
   const relPath = path.relative(ENTRIES_DIR, fullPath).replace(/\.md$/, '');
   const channel = classifyChannel(relPath);
   const dateIso = new Date(fm.date).toISOString();
+  const enTitle = fm.title || '';
+  const jaTitle = readJaTitle(relPath);
+  if (jaTitle) jaTitleCount++;
 
   events.push({
     date: dateIso,
     channel,
-    title: fm.title || '',
+    title: enTitle,
+    titleJa: jaTitle || enTitle,
     slug: relPath,
   });
 }
@@ -112,6 +125,7 @@ writeFileSync(OUT_FILE, JSON.stringify(output, null, 2));
 
 console.log(`✓ Wrote ${events.length} Satoshi events to ${path.relative(ROOT, OUT_FILE)}`);
 console.log(`  date range: ${events[0]?.date} → ${events[events.length - 1]?.date}`);
+console.log(`  JA titles found: ${jaTitleCount} / ${events.length}`);
 console.log('  by channel:');
 for (const [c, n] of Object.entries(channelCounts).sort((a, b) => b[1] - a[1])) {
   console.log(`    ${c.padEnd(20)} ${n}`);

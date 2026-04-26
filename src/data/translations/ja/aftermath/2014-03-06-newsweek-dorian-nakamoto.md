@@ -26,6 +26,7 @@ relatedEntries:
   - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
+  - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
 translationStatus: complete
 ---
 

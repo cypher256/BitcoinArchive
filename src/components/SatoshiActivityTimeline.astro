@@ -13,8 +13,12 @@ const labels = {
   en: {
     title: 'Satoshi Activity Timeline (2008-2014)',
     subtitle: `${timelineData.total} documented events authored by Satoshi across all public channels`,
-    swimlaneTitle: 'Channel × Time',
-    swimlaneSub: 'Each dot is one Satoshi event. Hover for the title; click to open the entry. The vertical bands separate channels.',
+    swimlaneTitle: '1. Channel × Time Swimlane',
+    swimlaneSub: 'Each dot is one Satoshi event. Hover for the title; click to open the entry. Vertical dashed lines mark major milestones.',
+    recipientsTitle: '2. Private Correspondence by Recipient',
+    recipientsSub: 'Private emails only, split by who Satoshi was writing to. The channel-only view above lumps these into a single "Private email" lane; here each major recipient gets a lane, showing how Satoshi\'s closest correspondents shifted over time.',
+    cumulativeTitle: '3. Cumulative Activity',
+    cumulativeSub: 'Running total of events. The shape shows the steep mid-period ramp and the abrupt 2011 plateau when Satoshi stepped away.',
     instructions: 'Tip: hover any dot to see what Satoshi posted that day. Click to open the source entry.',
     channels: {
       'cryptography-ml': 'Cryptography ML',
@@ -27,13 +31,40 @@ const labels = {
       'github': 'GitHub',
       'other': 'Other',
     },
-    countSuffix: 'events',
+    eventsSuffix: 'events',
+    milestones: [
+      { date: '2008-08-20', label: 'First contact (Adam Back)', slug: 'correspondence/adam-back/2008-08-20-satoshi-to-adam-back' },
+      { date: '2008-10-31', label: 'Whitepaper', slug: 'emails/cryptography/2008-10-31-bitcoin-whitepaper-final' },
+      { date: '2009-01-03', label: 'Genesis Block', slug: 'sourceforge/2009-01-03-genesis-block' },
+      { date: '2009-01-09', label: 'Bitcoin v0.1', slug: 'sourceforge/2009-01-09-bitcoin-v01-released' },
+      { date: '2009-01-12', label: 'First transaction', slug: 'aftermath/2009-01-12-first-bitcoin-transaction' },
+      { date: '2010-08-15', label: 'v0.3.10 overflow fix', slug: 'sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix' },
+      { date: '2010-12-12', label: 'Final BitcoinTalk post', slug: 'forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post' },
+      { date: '2011-04-26', label: 'Final email to Gavin', slug: 'correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key' },
+      { date: '2014-03-07', label: '(disputed) Dorian rebuttal', slug: 'aftermath/2014-03-07-satoshi-p2p-foundation-return' },
+    ],
+    recipientLabels: {
+      'martti-malmi': 'Martti Malmi',
+      'mike-hearn': 'Mike Hearn',
+      'dustin-trammell': 'Dustin Trammell',
+      'gavin-andresen': 'Gavin Andresen',
+      'hal-finney': 'Hal Finney',
+      'wei-dai': 'Wei Dai',
+      'adam-back': 'Adam Back',
+      'laszlo-hanyecz': 'Laszlo Hanyecz',
+      'nicholas-bohm': 'Nicholas Bohm',
+    },
+    otherRecipientsLabel: 'Other recipients',
   },
   ja: {
     title: 'サトシ活動タイムライン（2008〜2014）',
     subtitle: `公開チャネル全体で記録されたサトシ著作 ${timelineData.total} 件のイベント`,
-    swimlaneTitle: 'チャネル × 時間',
-    swimlaneSub: '各ドットはサトシのイベント 1 件。ホバーでタイトル表示、クリックでエントリへ。縦の帯がチャネルを分ける。',
+    swimlaneTitle: '1. チャネル × 時間（Swimlane）',
+    swimlaneSub: '各ドットはサトシのイベント 1 件。ホバーでタイトル表示、クリックでエントリへ。縦の破線が主要マイルストーン。',
+    recipientsTitle: '2. 私信の受信者別タイムライン',
+    recipientsSub: '私信のみを抽出し、サトシが「誰に」書いていたかでレーン分割。上のチャネル別 swimlane では「私信」1 本に集約されていた情報を、主要な相手ごとに分解する — どの時期にサトシがどの相手と最も多く話していたかが見える。',
+    cumulativeTitle: '3. 累積活動カーブ',
+    cumulativeSub: 'イベントの累計件数。中期の急増と 2011 年のサトシ離脱に伴う急停止の形状が見える。',
     instructions: 'ヒント: ドットにマウスを置くとその日にサトシが何を投稿したか表示。クリックでソースエントリを開く。',
     channels: {
       'cryptography-ml': 'cryptography ML',
@@ -46,13 +77,35 @@ const labels = {
       'github': 'GitHub',
       'other': 'その他',
     },
-    countSuffix: '件',
+    eventsSuffix: '件',
+    milestones: [
+      { date: '2008-08-20', label: '最初の接触（アダム・バック）', slug: 'correspondence/adam-back/2008-08-20-satoshi-to-adam-back' },
+      { date: '2008-10-31', label: 'ホワイトペーパー', slug: 'emails/cryptography/2008-10-31-bitcoin-whitepaper-final' },
+      { date: '2009-01-03', label: 'ジェネシスブロック', slug: 'sourceforge/2009-01-03-genesis-block' },
+      { date: '2009-01-09', label: 'Bitcoin v0.1', slug: 'sourceforge/2009-01-09-bitcoin-v01-released' },
+      { date: '2009-01-12', label: '最初の送金', slug: 'aftermath/2009-01-12-first-bitcoin-transaction' },
+      { date: '2010-08-15', label: 'v0.3.10 オーバーフロー修正', slug: 'sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix' },
+      { date: '2010-12-12', label: 'BitcoinTalk 最終投稿', slug: 'forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post' },
+      { date: '2011-04-26', label: 'ギャビン宛 最終メール', slug: 'correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key' },
+      { date: '2014-03-07', label: '(議論あり) ドリアン反論', slug: 'aftermath/2014-03-07-satoshi-p2p-foundation-return' },
+    ],
+    recipientLabels: {
+      'martti-malmi': 'マルティ・マルミ',
+      'mike-hearn': 'マイク・ハーン',
+      'dustin-trammell': 'ダスティン・トランメル',
+      'gavin-andresen': 'ギャビン・アンドレセン',
+      'hal-finney': 'ハル・フィニー',
+      'wei-dai': 'ウェイ・ダイ',
+      'adam-back': 'アダム・バック',
+      'laszlo-hanyecz': 'ラズロ・ハニエツ',
+      'nicholas-bohm': 'ニコラス・ボーム',
+    },
+    otherRecipientsLabel: 'その他の相手',
   },
 } as const;
 
 const l = labels[lang];
 
-// Channel display order (top to bottom). High-frequency channels at the bottom for visual weight.
 const channelOrder = [
   'cryptography-ml',
   'bitcoin-list-ml',
@@ -65,7 +118,6 @@ const channelOrder = [
   'other',
 ];
 
-// URL prefix per locale
 const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchive/entries/';
 ---
 
@@ -79,14 +131,31 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
     <div id="satoshi-timeline-swimlane" class="chart-container"></div>
   </section>
 
+  <section>
+    <h3>{l.recipientsTitle}</h3>
+    <p class="chart-sub">{l.recipientsSub}</p>
+    <div id="satoshi-timeline-recipients" class="chart-container"></div>
+  </section>
+
+  <section>
+    <h3>{l.cumulativeTitle}</h3>
+    <p class="chart-sub">{l.cumulativeSub}</p>
+    <div id="satoshi-timeline-cumulative" class="chart-container"></div>
+  </section>
+
   <p class="hint">{l.instructions}</p>
 
-  <script type="application/json" id="satoshi-timeline-data" set:html={JSON.stringify({
-    events: timelineData.events,
+  <script type="application/json" id="satoshi-timeline-data" is:inline set:html={JSON.stringify({
+    events: lang === 'ja'
+      ? timelineData.events.map((e) => ({ date: e.date, channel: e.channel, slug: e.slug, title: e.titleJa || e.title }))
+      : timelineData.events.map((e) => ({ date: e.date, channel: e.channel, slug: e.slug, title: e.title })),
     channelOrder,
     channelLabels: l.channels,
+    milestones: l.milestones,
+    recipientLabels: l.recipientLabels,
+    otherRecipientsLabel: l.otherRecipientsLabel,
     linkBase,
-    countSuffix: l.countSuffix,
+    eventsSuffix: l.eventsSuffix,
   })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
@@ -105,7 +174,7 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
   margin-bottom: 1em;
 }
 .satoshi-timeline h3 {
-  font-size: 1.1em;
+  font-size: 1.05em;
   margin-top: 1.5em;
   margin-bottom: 0.3em;
 }
@@ -140,19 +209,10 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
     var events = data.events;
     var channelOrder = data.channelOrder;
     var channelLabels = data.channelLabels;
+    var milestones = data.milestones;
     var linkBase = data.linkBase;
+    var eventsSuffix = data.eventsSuffix;
 
-    var container = document.getElementById('satoshi-timeline-swimlane');
-    if (!container) return;
-
-    // Layout
-    var margin = { top: 20, right: 20, bottom: 50, left: 130 };
-    var laneHeight = 32;
-    var height = laneHeight * channelOrder.length + margin.top + margin.bottom;
-    var width = container.clientWidth;
-    if (width < 320) width = 320;
-
-    // Color scale per channel — distinct hues, neutral saturation
     var palette = {
       'cryptography-ml':  '#3a7ca5',
       'bitcoin-list-ml':  '#2a9d8f',
@@ -165,134 +225,413 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
       'other':            '#888888',
     };
 
-    // X scale: time
-    var dateExtent = d3.extent(events, function(d) { return new Date(d.date); });
-    // Pad domain by 15 days each side
-    dateExtent[0] = new Date(dateExtent[0].getTime() - 15 * 86400000);
-    dateExtent[1] = new Date(dateExtent[1].getTime() + 15 * 86400000);
-    var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
-
-    // Y scale: channel lane (band)
-    var y = d3.scaleBand().domain(channelOrder).range([margin.top, margin.top + laneHeight * channelOrder.length]).padding(0.15);
-
-    // Build SVG
-    var svg = d3.select(container).append('svg')
-      .attr('viewBox', '0 0 ' + width + ' ' + height)
-      .attr('width', '100%')
-      .style('display', 'block')
-      .style('font-family', 'inherit');
-
-    // Lane background bands
-    svg.selectAll('.lane-bg')
-      .data(channelOrder)
-      .enter().append('rect')
-      .attr('x', margin.left)
-      .attr('y', function(c) { return y(c); })
-      .attr('width', width - margin.left - margin.right)
-      .attr('height', y.bandwidth())
-      .attr('fill', function(c, i) { return i % 2 === 0 ? '#f5f3ec' : '#efece4'; });
-
-    // Lane labels (left)
-    var channelTotals = {};
-    events.forEach(function(e) { channelTotals[e.channel] = (channelTotals[e.channel] || 0) + 1; });
-    svg.selectAll('.lane-label')
-      .data(channelOrder)
-      .enter().append('text')
-      .attr('x', margin.left - 8)
-      .attr('y', function(c) { return y(c) + y.bandwidth() / 2; })
-      .attr('text-anchor', 'end')
-      .attr('dominant-baseline', 'central')
-      .style('font-size', '11px')
-      .style('fill', '#444')
-      .text(function(c) {
-        var n = channelTotals[c] || 0;
-        return channelLabels[c] + '  (' + n + ')';
-      });
-
-    // X axis (time)
-    var xAxis = d3.axisBottom(x)
-      .ticks(d3.timeYear.every(1))
-      .tickFormat(d3.timeFormat('%Y'));
-    svg.append('g')
-      .attr('transform', 'translate(0,' + (margin.top + laneHeight * channelOrder.length) + ')')
-      .call(xAxis)
-      .selectAll('text')
-      .style('font-size', '11px')
-      .style('fill', '#444');
-
-    // Minor ticks (months)
-    var monthAxis = d3.axisBottom(x)
-      .ticks(d3.timeMonth.every(3))
-      .tickSize(4)
-      .tickFormat(function() { return ''; });
-    svg.append('g')
-      .attr('class', 'minor-axis')
-      .attr('transform', 'translate(0,' + (margin.top + laneHeight * channelOrder.length) + ')')
-      .call(monthAxis)
-      .selectAll('line')
-      .attr('stroke', '#aaa');
-
-    // Tooltip
-    var tooltip = d3.select(container).append('div')
-      .style('position', 'absolute')
-      .style('background', 'rgba(20, 20, 20, 0.92)')
-      .style('color', '#fff')
-      .style('padding', '6px 10px')
-      .style('border-radius', '3px')
-      .style('font-size', '12px')
-      .style('line-height', '1.4')
-      .style('pointer-events', 'none')
-      .style('opacity', 0)
-      .style('max-width', '380px')
-      .style('z-index', 10);
-
-    // Dots — jitter inside lane to reduce overlap
-    function jitter(seed) {
-      var x = Math.sin(seed * 9301 + 49297) * 233280;
-      return x - Math.floor(x);
-    }
-
-    var dots = svg.selectAll('.event-dot')
-      .data(events)
-      .enter().append('circle')
-      .attr('cx', function(d) { return x(new Date(d.date)); })
-      .attr('cy', function(d, i) {
-        var laneTop = y(d.channel);
-        var bw = y.bandwidth();
-        // Jitter ±35% of band height around center
-        var offset = (jitter(i + 1) - 0.5) * bw * 0.7;
-        return laneTop + bw / 2 + offset;
-      })
-      .attr('r', 2.6)
-      .attr('fill', function(d) { return palette[d.channel] || '#888'; })
-      .attr('fill-opacity', 0.7)
-      .attr('stroke', 'none')
-      .style('cursor', 'pointer')
-      .on('mouseover', function(event, d) {
-        d3.select(this).attr('r', 5).attr('fill-opacity', 1);
-        var dateStr = new Date(d.date).toISOString().slice(0, 10);
-        tooltip.style('opacity', 1)
-          .html('<strong>' + dateStr + '</strong> · ' + (channelLabels[d.channel] || d.channel) + '<br/>' + escapeHtml(d.title));
-      })
-      .on('mousemove', function(event) {
-        var rect = container.getBoundingClientRect();
-        var px = event.clientX - rect.left + 12;
-        var py = event.clientY - rect.top + 12;
-        tooltip.style('left', px + 'px').style('top', py + 'px');
-      })
-      .on('mouseout', function() {
-        d3.select(this).attr('r', 2.6).attr('fill-opacity', 0.7);
-        tooltip.style('opacity', 0);
-      })
-      .on('click', function(event, d) {
-        window.location.href = linkBase + d.slug + '/';
-      });
-
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, function(c) {
         return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
       });
     }
+
+    function makeTooltip(container) {
+      return d3.select(container).append('div')
+        .style('position', 'absolute')
+        .style('background', 'rgba(20, 20, 20, 0.92)')
+        .style('color', '#fff')
+        .style('padding', '6px 10px')
+        .style('border-radius', '3px')
+        .style('font-size', '12px')
+        .style('line-height', '1.4')
+        .style('pointer-events', 'none')
+        .style('opacity', 0)
+        .style('max-width', '380px')
+        .style('z-index', 10);
+    }
+
+    function moveTooltip(tooltip, container, event) {
+      var rect = container.getBoundingClientRect();
+      tooltip.style('left', (event.clientX - rect.left + 12) + 'px')
+             .style('top', (event.clientY - rect.top + 12) + 'px');
+    }
+
+    var dateExtent = d3.extent(events, function(d) { return new Date(d.date); });
+    dateExtent[0] = new Date(dateExtent[0].getTime() - 15 * 86400000);
+    dateExtent[1] = new Date(dateExtent[1].getTime() + 15 * 86400000);
+
+    // ---- Panel 1: Swimlane + Milestones ----
+    (function() {
+      var container = document.getElementById('satoshi-timeline-swimlane');
+      if (!container) return;
+
+      var margin = { top: 72, right: 20, bottom: 50, left: 130 };
+      var laneHeight = 32;
+      var height = laneHeight * channelOrder.length + margin.top + margin.bottom;
+      var width = container.clientWidth;
+      if (width < 320) width = 320;
+
+      var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+      var y = d3.scaleBand().domain(channelOrder)
+        .range([margin.top, margin.top + laneHeight * channelOrder.length])
+        .padding(0.15);
+
+      var svg = d3.select(container).append('svg')
+        .attr('viewBox', '0 0 ' + width + ' ' + height)
+        .attr('width', '100%')
+        .style('display', 'block');
+
+      // Lane backgrounds
+      svg.selectAll('.lane-bg').data(channelOrder).enter().append('rect')
+        .attr('x', margin.left)
+        .attr('y', function(c) { return y(c); })
+        .attr('width', width - margin.left - margin.right)
+        .attr('height', y.bandwidth())
+        .attr('fill', function(_c, i) { return i % 2 === 0 ? '#f5f3ec' : '#efece4'; });
+
+      // Lane labels with counts
+      var channelTotals = {};
+      events.forEach(function(e) { channelTotals[e.channel] = (channelTotals[e.channel] || 0) + 1; });
+      svg.selectAll('.lane-label').data(channelOrder).enter().append('text')
+        .attr('x', margin.left - 8)
+        .attr('y', function(c) { return y(c) + y.bandwidth() / 2; })
+        .attr('text-anchor', 'end')
+        .attr('dominant-baseline', 'central')
+        .style('font-size', '11px')
+        .style('fill', '#444')
+        .text(function(c) { return channelLabels[c] + '  (' + (channelTotals[c] || 0) + ')'; });
+
+      // Milestone overlay (vertical dashed lines + labels stacked above)
+      var laneTopY = margin.top;
+      var laneBottomY = margin.top + laneHeight * channelOrder.length;
+
+      // Estimate label width: CJK chars wider than ASCII
+      function estimateLabelWidth(text) {
+        var w = 0;
+        for (var ci = 0; ci < text.length; ci++) {
+          var code = text.charCodeAt(ci);
+          w += (code > 127) ? 11 : 5.8;
+        }
+        return w + 8;
+      }
+
+      // Sort milestones by date, then greedy row-assign to avoid horizontal overlap.
+      // For each milestone, decide anchor side: if right-anchoring keeps it inside
+      // the chart and left-anchoring would overflow, anchor right.
+      var chartLeftX = margin.left;
+      var chartRightX = width - margin.right;
+      var sortedMs = milestones.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+      var rows = [];
+      var msLayout = sortedMs.map(function(m) {
+        var px = x(new Date(m.date));
+        var labelW = estimateLabelWidth(m.label);
+        var leftAnchorRight = px + 3 + labelW;
+        var rightAnchorLeft = px - 3 - labelW;
+        // Prefer left anchor unless it would overflow the right edge AND right anchor fits.
+        // Flip a bit earlier than the exact edge to absorb font-width estimate slop
+        var anchorEnd = (leftAnchorRight > chartRightX - 6) && (rightAnchorLeft >= chartLeftX);
+        var labelLeft  = anchorEnd ? rightAnchorLeft : (px + 3);
+        var labelRight = anchorEnd ? (px - 3) : leftAnchorRight;
+        for (var r = 0; r < rows.length; r++) {
+          var collides = rows[r].some(function(rng) { return !(labelRight < rng.x1 || labelLeft > rng.x2); });
+          if (!collides) {
+            rows[r].push({ x1: labelLeft, x2: labelRight });
+            return { milestone: m, row: r, px: px, anchorEnd: anchorEnd };
+          }
+        }
+        rows.push([{ x1: labelLeft, x2: labelRight }]);
+        return { milestone: m, row: rows.length - 1, px: px, anchorEnd: anchorEnd };
+      });
+
+      var rowSpacing = 14;
+      var bottomLabelY = laneTopY - 6;
+
+      msLayout.forEach(function(item) {
+        var labelY = bottomLabelY - item.row * rowSpacing;
+        var g = svg.append('g')
+          .attr('class', 'milestone')
+          .attr('transform', 'translate(' + item.px + ',0)');
+        g.append('line')
+          .attr('x1', 0).attr('x2', 0)
+          .attr('y1', laneTopY).attr('y2', laneBottomY)
+          .attr('stroke', '#9a3a3a')
+          .attr('stroke-width', 1)
+          .attr('stroke-dasharray', '3,3')
+          .attr('opacity', 0.55);
+        if (item.row > 0) {
+          g.append('line')
+            .attr('x1', 0).attr('x2', 0)
+            .attr('y1', labelY + 3).attr('y2', laneTopY)
+            .attr('stroke', '#9a3a3a')
+            .attr('stroke-width', 0.5)
+            .attr('opacity', 0.4);
+        }
+        var labelEl = item.milestone.slug
+          ? g.append('a')
+              .attr('href', linkBase + item.milestone.slug + '/')
+              .style('cursor', 'pointer')
+              .append('text')
+          : g.append('text');
+        labelEl
+          .attr('x', item.anchorEnd ? -3 : 3)
+          .attr('y', labelY)
+          .attr('text-anchor', item.anchorEnd ? 'end' : 'start')
+          .style('font-size', '9.5px')
+          .style('fill', '#9a3a3a')
+          .style('text-decoration', item.milestone.slug ? 'underline' : 'none')
+          .text(item.milestone.label);
+      });
+
+      // X axis
+      var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+      svg.append('g')
+        .attr('transform', 'translate(0,' + laneBottomY + ')')
+        .call(xAxis)
+        .selectAll('text').style('font-size', '11px').style('fill', '#444');
+      var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
+      svg.append('g')
+        .attr('transform', 'translate(0,' + laneBottomY + ')')
+        .call(monthAxis)
+        .selectAll('line').attr('stroke', '#aaa');
+
+      var tooltip = makeTooltip(container);
+
+      function jitter(seed) {
+        var r = Math.sin(seed * 9301 + 49297) * 233280;
+        return r - Math.floor(r);
+      }
+
+      svg.selectAll('.event-dot').data(events).enter().append('circle')
+        .attr('cx', function(d) { return x(new Date(d.date)); })
+        .attr('cy', function(d, i) {
+          var laneTop = y(d.channel);
+          var bw = y.bandwidth();
+          var offset = (jitter(i + 1) - 0.5) * bw * 0.7;
+          return laneTop + bw / 2 + offset;
+        })
+        .attr('r', 2.6)
+        .attr('fill', function(d) { return palette[d.channel] || '#888'; })
+        .attr('fill-opacity', 0.7)
+        .style('cursor', 'pointer')
+        .on('mouseover', function(_event, d) {
+          d3.select(this).attr('r', 5).attr('fill-opacity', 1);
+          var dateStr = new Date(d.date).toISOString().slice(0, 10);
+          tooltip.style('opacity', 1).html(
+            '<strong>' + dateStr + '</strong> · ' + (channelLabels[d.channel] || d.channel) +
+            '<br/>' + escapeHtml(d.title));
+        })
+        .on('mousemove', function(event) { moveTooltip(tooltip, container, event); })
+        .on('mouseout', function() { d3.select(this).attr('r', 2.6).attr('fill-opacity', 0.7); tooltip.style('opacity', 0); })
+        .on('click', function(_event, d) { window.location.href = linkBase + d.slug + '/'; });
+    })();
+
+    // ---- Panel 2: Per-recipient swimlane (private email only) ----
+    (function() {
+      var container = document.getElementById('satoshi-timeline-recipients');
+      if (!container) return;
+
+      var recipientLabels = data.recipientLabels;
+      var otherLabel = data.otherRecipientsLabel;
+
+      // Filter to private email and tag with recipient slug from path
+      var privateEvents = [];
+      events.forEach(function(e) {
+        if (e.channel !== 'private-email') return;
+        var parts = e.slug.split('/');
+        var recipient = parts.length >= 2 ? parts[1] : 'unknown';
+        privateEvents.push({ date: e.date, title: e.title, slug: e.slug, recipient: recipient });
+      });
+
+      // Count per recipient
+      var counts = {};
+      privateEvents.forEach(function(e) { counts[e.recipient] = (counts[e.recipient] || 0) + 1; });
+
+      // Top N recipients by count, others bucketed
+      var sortedRecipients = Object.keys(counts).sort(function(a, b) { return counts[b] - counts[a]; });
+      var TOP_N = 7;
+      var topSet = {};
+      sortedRecipients.slice(0, TOP_N).forEach(function(r) { topSet[r] = true; });
+      var otherKey = '__other__';
+      var otherCount = 0;
+      var laneOrder = sortedRecipients.slice(0, TOP_N);
+      privateEvents.forEach(function(e) {
+        if (!topSet[e.recipient]) {
+          e.lane = otherKey;
+          otherCount++;
+        } else {
+          e.lane = e.recipient;
+        }
+      });
+      if (otherCount > 0) laneOrder.push(otherKey);
+
+      function laneDisplay(key) {
+        if (key === otherKey) return otherLabel + ' (' + otherCount + ')';
+        var name = recipientLabels[key] || key;
+        return name + ' (' + counts[key] + ')';
+      }
+
+      var margin = { top: 20, right: 20, bottom: 50, left: 160 };
+      var laneHeight = 26;
+      var height = laneHeight * laneOrder.length + margin.top + margin.bottom;
+      var width = container.clientWidth;
+      if (width < 320) width = 320;
+
+      var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+      var y = d3.scaleBand().domain(laneOrder)
+        .range([margin.top, margin.top + laneHeight * laneOrder.length])
+        .padding(0.18);
+
+      var svg = d3.select(container).append('svg')
+        .attr('viewBox', '0 0 ' + width + ' ' + height)
+        .attr('width', '100%')
+        .style('display', 'block');
+
+      // Lane backgrounds
+      svg.selectAll('.lane-bg-r').data(laneOrder).enter().append('rect')
+        .attr('x', margin.left)
+        .attr('y', function(k) { return y(k); })
+        .attr('width', width - margin.left - margin.right)
+        .attr('height', y.bandwidth())
+        .attr('fill', function(_k, i) { return i % 2 === 0 ? '#f5f3ec' : '#efece4'; });
+
+      // Lane labels
+      svg.selectAll('.lane-label-r').data(laneOrder).enter().append('text')
+        .attr('x', margin.left - 8)
+        .attr('y', function(k) { return y(k) + y.bandwidth() / 2; })
+        .attr('text-anchor', 'end')
+        .attr('dominant-baseline', 'central')
+        .style('font-size', '11px')
+        .style('fill', '#444')
+        .text(function(k) { return laneDisplay(k); });
+
+      // Color: gold per the channel palette for private email, but darker variants per recipient
+      var recipColor = d3.scaleOrdinal()
+        .domain(laneOrder)
+        .range(['#d4a017', '#b87333', '#8e6b1f', '#bd8c2c', '#a8732b', '#cc9c2e', '#7e5a14', '#9e8155']);
+
+      // X axis (year + minor quarter ticks)
+      var laneBottomY = margin.top + laneHeight * laneOrder.length;
+      var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+      svg.append('g')
+        .attr('transform', 'translate(0,' + laneBottomY + ')')
+        .call(xAxis)
+        .selectAll('text').style('font-size', '11px').style('fill', '#444');
+      var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
+      svg.append('g')
+        .attr('transform', 'translate(0,' + laneBottomY + ')')
+        .call(monthAxis)
+        .selectAll('line').attr('stroke', '#aaa');
+
+      // Milestone vertical guides (subtle, no labels here — they're on panel 1)
+      svg.selectAll('.r-milestone').data(milestones).enter().append('line')
+        .attr('x1', function(d) { return x(new Date(d.date)); })
+        .attr('x2', function(d) { return x(new Date(d.date)); })
+        .attr('y1', margin.top).attr('y2', laneBottomY)
+        .attr('stroke', '#9a3a3a').attr('stroke-width', 0.6).attr('stroke-dasharray', '2,3').attr('opacity', 0.35);
+
+      var tooltip = makeTooltip(container);
+
+      function jitter(seed) {
+        var r = Math.sin(seed * 9301 + 49297) * 233280;
+        return r - Math.floor(r);
+      }
+
+      svg.selectAll('.r-event-dot').data(privateEvents).enter().append('circle')
+        .attr('cx', function(d) { return x(new Date(d.date)); })
+        .attr('cy', function(d, i) {
+          var laneTop = y(d.lane);
+          var bw = y.bandwidth();
+          var offset = (jitter(i + 1) - 0.5) * bw * 0.7;
+          return laneTop + bw / 2 + offset;
+        })
+        .attr('r', 2.6)
+        .attr('fill', function(d) { return recipColor(d.lane); })
+        .attr('fill-opacity', 0.75)
+        .style('cursor', 'pointer')
+        .on('mouseover', function(_event, d) {
+          d3.select(this).attr('r', 5).attr('fill-opacity', 1);
+          var dateStr = new Date(d.date).toISOString().slice(0, 10);
+          var who = d.lane === otherKey ? (recipientLabels[d.recipient] || d.recipient) : (recipientLabels[d.lane] || d.lane);
+          tooltip.style('opacity', 1).html(
+            '<strong>' + dateStr + '</strong> · → ' + who +
+            '<br/>' + escapeHtml(d.title));
+        })
+        .on('mousemove', function(event) { moveTooltip(tooltip, container, event); })
+        .on('mouseout', function() { d3.select(this).attr('r', 2.6).attr('fill-opacity', 0.75); tooltip.style('opacity', 0); })
+        .on('click', function(_event, d) { window.location.href = linkBase + d.slug + '/'; });
+    })();
+
+    // ---- Panel 3: Cumulative curve ----
+    (function() {
+      var container = document.getElementById('satoshi-timeline-cumulative');
+      if (!container) return;
+
+      var sorted = events.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+      var cumulative = sorted.map(function(e, i) { return { date: new Date(e.date), n: i + 1 }; });
+
+      var margin = { top: 20, right: 20, bottom: 50, left: 60 };
+      var height = 220;
+      var width = container.clientWidth;
+      if (width < 320) width = 320;
+
+      var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+      var y = d3.scaleLinear().domain([0, cumulative[cumulative.length - 1].n]).range([height - margin.bottom, margin.top]);
+
+      var svg = d3.select(container).append('svg')
+        .attr('viewBox', '0 0 ' + width + ' ' + height)
+        .attr('width', '100%')
+        .style('display', 'block');
+
+      // Y grid
+      var yTicks = y.ticks(5);
+      svg.selectAll('.y-grid').data(yTicks).enter().append('line')
+        .attr('x1', margin.left).attr('x2', width - margin.right)
+        .attr('y1', function(d) { return y(d); })
+        .attr('y2', function(d) { return y(d); })
+        .attr('stroke', '#e8e6df').attr('stroke-width', 0.6);
+
+      // Milestone overlays (subtle)
+      var laneTopY = margin.top;
+      var laneBottomY = height - margin.bottom;
+      svg.selectAll('.cm-milestone').data(milestones).enter().append('line')
+        .attr('x1', function(d) { return x(new Date(d.date)); })
+        .attr('x2', function(d) { return x(new Date(d.date)); })
+        .attr('y1', laneTopY).attr('y2', laneBottomY)
+        .attr('stroke', '#9a3a3a').attr('stroke-width', 0.6).attr('stroke-dasharray', '2,3').attr('opacity', 0.4);
+
+      // Curve
+      var line = d3.line()
+        .x(function(d) { return x(d.date); })
+        .y(function(d) { return y(d.n); })
+        .curve(d3.curveStepAfter);
+
+      svg.append('path')
+        .datum(cumulative)
+        .attr('fill', 'none')
+        .attr('stroke', '#264653')
+        .attr('stroke-width', 1.5)
+        .attr('d', line);
+
+      // X axis
+      var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+      svg.append('g')
+        .attr('transform', 'translate(0,' + (height - margin.bottom) + ')')
+        .call(xAxis)
+        .selectAll('text').style('font-size', '11px').style('fill', '#444');
+
+      // Y axis
+      var yAxis = d3.axisLeft(y).ticks(5);
+      svg.append('g')
+        .attr('transform', 'translate(' + margin.left + ',0)')
+        .call(yAxis)
+        .selectAll('text').style('font-size', '11px').style('fill', '#444');
+
+      // Y axis label
+      svg.append('text')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -(margin.top + (height - margin.top - margin.bottom) / 2))
+        .attr('y', 16)
+        .attr('text-anchor', 'middle')
+        .style('font-size', '11px')
+        .style('fill', '#6b6b6b')
+        .text('cumulative ' + eventsSuffix);
+    })();
   }
   init();
 })();

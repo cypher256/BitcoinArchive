@@ -24,6 +24,13 @@ secondarySources:
     url: "https://blockworks.co/news/why-satoshi-was-smarter-than-average-libertarian"
   - name: "Satoshi Nakamoto Institute — P2P Research List Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/"
+relatedEntries:
+  - aftermath/2009-02-12-michel-bauwens-biography
+  - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
+  - emails/p2p-research/bitcoin-open-source/2009-02-13-re-bitcoin-open-source-p2p-currency-bauwens
+  - aftermath/2014-03-07-satoshi-p2p-foundation-return
+  - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - analysis/2008-08-20-satoshi-activity-timeline
 translationStatus: complete
 ---
 
