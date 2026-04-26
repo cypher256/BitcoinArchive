@@ -219,7 +219,7 @@ export const ui = {
     'type.article': '記事',
     'type.biography': '人物紹介',
     'type.court-document': '裁判文書',
-    'type.analysis': 'ソースコード分析',
+    'type.analysis': '分析',
     'source.bitcointalk': 'BitcoinTalk',
     'source.p2pfoundation': 'P2P Foundation',
     'source.sourceforge': 'SourceForge',
