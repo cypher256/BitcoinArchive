@@ -49,7 +49,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-# ビットコイン：ピアツーピア電子キャッシュシステム
+## ビットコイン：ピアツーピア電子キャッシュシステム
 
 Satoshi Nakamoto<br>
 satoshi@vistomail.com<br>

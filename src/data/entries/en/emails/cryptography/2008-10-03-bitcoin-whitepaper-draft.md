@@ -47,7 +47,7 @@ This early draft predates the final published version by nearly a month. It was 
 
 ---
 
-# Bitcoin: A Peer-to-Peer Electronic Cash System
+## Bitcoin: A Peer-to-Peer Electronic Cash System
 
 Satoshi Nakamoto<br>
 satoshi@vistomail.com<br>

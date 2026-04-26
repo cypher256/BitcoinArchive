@@ -43,7 +43,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-# ビットコイン：ピアツーピア電子キャッシュシステム
+## ビットコイン：ピアツーピア電子キャッシュシステム
 
 Satoshi Nakamoto<br>
 satoshin@gmx.com<br>
