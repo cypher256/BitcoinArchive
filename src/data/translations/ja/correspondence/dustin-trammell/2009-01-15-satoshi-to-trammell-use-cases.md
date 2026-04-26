@@ -23,6 +23,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -46,5 +47,3 @@ translationStatus: complete
 サトシはビットコインの送金メール機能を既存のユースケースとして説明し、有名人がファンからのメッセージを読むためにビットコインの支払いを受け取ることや、サブスクリプションサイトが悪用防止のために無料トライアルにビットコインを課金することを構想した。
 
 このメールは、1月16日から17日にかけてbitcoin-listおよび暗号学メーリングリストに公開メッセージとしてCCされたものの下書きである。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -42,5 +43,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 この短いやり取りは、ビットコイン最初期におけるサトシの迅速な開発サイクルを示している — トランメルがバグを報告し、サトシは返信する時点で既に修正コードを書き上げていた。DBM（Berkeley DB）データベースの選択は、2013年3月にデータベースのロック制限の問題がチェーンのフォークを引き起こした際に重要な意味を持つことになる。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

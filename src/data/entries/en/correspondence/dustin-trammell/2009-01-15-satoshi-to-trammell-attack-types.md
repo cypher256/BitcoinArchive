@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -43,5 +44,3 @@ Satoshi proposed a combined approach for the future:
 > One solution would be to use both the IP and Bitcoin addresses when sending (maybe 1.2.3.4-1Kn8iojk...), where the recipient uses the public key of the Bitcoin address to sign the new public key to prove that you're sending to who you think you are.
 
 He also confirmed that sending to a Bitcoin address worked by computing the transaction into the blockchain for the recipient to discover, and mentioned wallet encryption as a future feature.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

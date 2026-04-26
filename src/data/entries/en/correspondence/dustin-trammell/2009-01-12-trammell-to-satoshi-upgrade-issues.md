@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -35,5 +36,3 @@ More concerning was the loss of his generated coins:
 > Upon opening version 0.1.3, all four of my transaction entries still say 'unconfirmed', but now the Descriptions say 'Generated (not accepted)'. Does this mean that some other node had extended the chain first and my coins were generated in a dead branch? If so, why did the previous instance of the software not detect this immediately and begin generating coins in the winning branch? Bug in 0.1.0?
 
 Trammell had correctly diagnosed the problem — the communications bug in v0.1.0 had prevented his node from broadcasting blocks to the network, causing all his mined blocks to be orphaned. Satoshi confirmed this in his next reply.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

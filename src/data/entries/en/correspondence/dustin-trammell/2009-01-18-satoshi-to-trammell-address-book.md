@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -34,5 +35,3 @@ He explained the address book labeling system:
 > It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change..." button to the right of your Bitcoin address.
 
 This email contains one of the earliest explanations of Bitcoin's pseudonymous nature — the protocol has no concept of sender identity, and the best practice for identifying payers is to create unique receiving addresses for each counterparty. This concept would become fundamental to Bitcoin privacy best practices.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

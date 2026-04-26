@@ -20,6 +20,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -39,5 +40,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 このサブスレッド最後のやり取りは、初期のビットコイン開発における協力的な性質を示している。実際のユーザーフィードバックがUI改善に直接反映された。トランメルの「address」や「payment to」を表示テキストに追加する提案は、「誰が送ったのか」と「自分のどのアドレスで受け取ったのか」の曖昧さに対処するものであり、この区別はビットコインウォレットの設計において今なお重要である。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

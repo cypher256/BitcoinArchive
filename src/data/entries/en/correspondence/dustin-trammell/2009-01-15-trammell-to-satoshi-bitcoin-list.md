@@ -23,6 +23,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -38,5 +39,3 @@ On Satoshi's micropayment use cases, Trammell raised a practical adoption barrie
 > I can see how various types of sites that have a need for micropayments could use them, however I also see an impedement to adoption if they want to use an existing BitCoin peer group rather than a closed system since they would first have to generate enough coins to support what they intend to do (or buy them from someone else). A closed system obviously doesn't have that problem.
 
 This is notable as one of the earliest discussions of the Bitcoin bootstrapping problem — how to get enough liquidity into circulation for the system to function as a medium of exchange.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

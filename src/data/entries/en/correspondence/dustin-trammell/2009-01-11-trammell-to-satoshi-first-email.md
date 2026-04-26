@@ -20,6 +20,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 relatedEntries:
@@ -33,5 +34,3 @@ In this email dated January 11, 2009, Trammell wrote to Satoshi reporting on his
 Trammell reported that he had been running the software and had seen two "Generated" messages, but the credit field showed 0.00 and his balance had not changed. He asked whether this was related to a maturity requirement for newly generated coins.
 
 This email initiated one of the earliest known private correspondences with Satoshi Nakamoto and established Trammell as one of Bitcoin's very first users and miners. Trammell published the entirety of his email correspondence with Satoshi in November 2013.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

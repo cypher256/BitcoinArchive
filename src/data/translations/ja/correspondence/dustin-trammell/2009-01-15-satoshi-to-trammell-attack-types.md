@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -51,5 +52,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 また、ビットコインアドレスへの送金は受信者が発見できるようにトランザクションをブロックチェーンに計算して組み込む仕組みであることを確認し、ウォレット暗号化を将来の機能として言及した。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

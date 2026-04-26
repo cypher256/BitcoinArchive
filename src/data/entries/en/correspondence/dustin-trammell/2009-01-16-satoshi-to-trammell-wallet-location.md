@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -36,5 +37,3 @@ Regarding the unclean socket closure Trammell had reported:
 > Just now added code to the next release for that.
 
 This brief exchange demonstrates Satoshi's rapid development cycle in Bitcoin's earliest days — Trammell reported a bug and Satoshi had already coded a fix by the time he replied. The DBM (Berkeley DB) database choice would later prove significant when a database lock limit issue caused a chain fork in March 2013.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

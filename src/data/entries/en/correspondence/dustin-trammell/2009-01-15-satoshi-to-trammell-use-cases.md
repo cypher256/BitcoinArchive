@@ -23,6 +23,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -40,5 +41,3 @@ He outlined several potential use cases for Bitcoin, even if it didn't gain imme
 Satoshi described Bitcoin's pay-to-send email feature as an existing use case, envisioning that famous people could accept bitcoin payments to read fan messages, and subscription sites could charge bitcoins for free trials to prevent abuse.
 
 This email is the draft of what would later be CC'd to the bitcoin-list and Cryptography mailing lists as a public message on January 16-17, 2009.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

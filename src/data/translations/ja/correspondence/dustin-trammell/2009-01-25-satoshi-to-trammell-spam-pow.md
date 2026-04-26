@@ -23,6 +23,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -46,5 +47,3 @@ translationStatus: complete
 サトシはまた既存のシステムとの類似点を指摘し、e-goldでは既に「ダスティング」と呼ばれるスパムの一形態が存在しており、スパマーがトランザクションのコメント欄にメッセージを含めるために微量のゴールドダストを送金していたことに言及した。その解決策として、設定可能な最低支払い閾値を提案した。
 
 このメールはサトシの最も創造的な経済的思考の一つを表している。ゲーム理論をスパム経済学に適用し、プルーフ・オブ・ワークシステムにおいて市場の力がいかに自然に悪用を軽減しうるかを示した。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

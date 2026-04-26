@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -34,5 +35,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 トランメルは表示されたビットコインアドレスに覚えがなく、アプリケーションに名前を入力した記憶もないのにソフトウェアがどうしてサトシの名前を知っているのか不思議に思った。この混乱は、ビットコインのアドレス帳とトランザクション表示における初期のユーザービリティの問題を浮き彫りにし、サトシが返信で対処することになる。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

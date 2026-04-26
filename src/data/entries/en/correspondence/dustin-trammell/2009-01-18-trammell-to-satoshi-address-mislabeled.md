@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -32,5 +33,3 @@ He confirmed that 'Satoshi' was indeed associated with the receiving address und
 > I don't recall setting that value though, is that the default or something? (this is the first, default, address that the application generated itself when I first ran it)
 
 This exchange highlights the early usability challenges of Bitcoin — even a technically sophisticated user like Trammell, who was a security researcher comfortable with cryptographic concepts, found the address book and transaction display confusing enough to misidentify the source of his own self-transfer.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

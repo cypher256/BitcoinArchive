@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -37,5 +38,3 @@ Trammell then raised an important concern about data loss — one of the earlies
 > One thing that came to mind on this topic is the potential for BitCoin loss if you have a system failure. The application doesn't seem to store any data in the directory that it runs in, so I assume it's stored in the registry and other places ... so it may be a good idea to have the application be able to export everything that it needs for recovery to a file that could be backed up off of the system.
 
 He also proposed an optional "Advertise my BitCoin address to the network" toggle as a privacy-preserving way to enable address resolution, and reported that the application wasn't cleanly closing its network sockets on exit (TCP RSTs).
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

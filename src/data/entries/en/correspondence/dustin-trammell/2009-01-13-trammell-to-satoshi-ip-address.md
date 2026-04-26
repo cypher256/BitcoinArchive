@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -41,5 +42,3 @@ This IP address was used the following day (January 14, 2009) when Satoshi sent 
 On the mining explanation, Trammell coined a vivid analogy:
 
 > Ahh I see... So each guess is like the spin of a roulette wheel, completely independent from all other guesses and the extra CPU power just translates to more successful guesses than anyone else. Unfortunately my ability to understand complex mathematics is conversely proportional to how interested I am in cryptography (:
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

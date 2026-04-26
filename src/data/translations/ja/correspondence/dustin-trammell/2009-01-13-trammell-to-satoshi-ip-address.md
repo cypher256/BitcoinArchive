@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -48,5 +49,3 @@ translationStatus: complete
 
 <!-- speaker: Dustin Trammell -->
 > ああ、なるほど……つまり各推測はルーレットのスピンのようなもので、他のすべての推測から完全に独立していて、CPUパワーの余剰分は単に他の誰よりも多くの当たりを引けるということになるわけか。残念ながら、俺の複雑な数学を理解する能力は暗号技術への興味に反比例しているんだが (:
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

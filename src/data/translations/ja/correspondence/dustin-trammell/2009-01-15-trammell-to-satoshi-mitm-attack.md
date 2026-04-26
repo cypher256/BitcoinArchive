@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -47,5 +48,3 @@ translationStatus: complete
 また、代替案として、ノードがビットコインアドレスに関連付けられたIPアドレスを検索できるネットワークベースの名前解決サービスを提案し、既存の鍵ペアを認証に使用することを提案した。
 
 このメールは、ビットコインソフトウェアに対する最も初期のセキュリティ監査の一つとして重要である。IP送金機能はトランメルが提起したようなセキュリティ上の懸念も一因となり、最終的にビットコインから削除された。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

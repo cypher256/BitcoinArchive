@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -41,5 +42,3 @@ Trammell's recommendation was clear:
 He also proposed an alternative: a network-based resolution service where nodes could look up the IP address associated with a Bitcoin address, using the key pairs already in place for authentication.
 
 This email is significant as one of the earliest security audits of the Bitcoin software. The send-to-IP feature was eventually removed from Bitcoin, partly informed by security concerns like those raised by Trammell.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

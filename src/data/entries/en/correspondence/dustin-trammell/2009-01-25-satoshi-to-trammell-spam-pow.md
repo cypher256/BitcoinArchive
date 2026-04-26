@@ -23,6 +23,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -40,5 +41,3 @@ He noted this process could paradoxically help establish the token's value:
 Satoshi also drew a parallel to existing systems, noting that e-gold already experienced a form of spam called "dusting" where spammers sent tiny amounts of gold dust to include messages in transaction comment fields. He suggested a configurable minimum payment threshold as a solution.
 
 This email represents some of Satoshi's most creative economic thinking, applying game theory to spam economics and showing how market forces could naturally mitigate abuse in a proof-of-work system.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

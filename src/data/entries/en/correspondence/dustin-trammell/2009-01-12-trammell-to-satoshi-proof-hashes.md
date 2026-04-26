@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---
@@ -34,5 +35,3 @@ On the credit field display question, Trammell preferred showing $0.00 over a bl
 Trammell reported he had been running version 0.1.1 and would upgrade to 0.1.3, suggesting an auto-update feature. He expressed strong enthusiasm:
 
 > Electronic currency and cryptography are two things that I am very interested in so as you would assume I was drawn to this project immediately when I saw it posted to the Cryptography email list. Feel free to ping me for feedback or to test out new features, I'll be happy to help out.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete
@@ -38,5 +39,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 このやり取りは、ビットコインの初期におけるユーザービリティの課題を浮き彫りにしている — セキュリティ研究者として暗号技術の概念に精通した技術的に高度なユーザーであるトランメルでさえ、アドレス帳とトランザクション表示に混乱し、自分自身への送金の送信元を誤認するほどであった。
-
-*出典：2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*
