@@ -16,7 +16,6 @@ participants:
     slug: "gavin-andresen"
 description: "Complete record of all four developers who had commit access to Bitcoin's SourceForge SVN repository. 252 revisions were recorded from August 30, 2009 to September 13, 2011."
 isSatoshi: true
-featured: true
 tags:
   - "sourceforge"
   - "svn"
@@ -38,6 +37,7 @@ relatedEntries:
   - sourceforge/2008-11-09-bitcoin-project-registered
   - aftermath/2010-05-22-bitcoin-pizza-day
   - correspondence/martti-malmi/2010-12-03-handover-to-gavin
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
 ---
 
 Before Bitcoin [moved to GitHub](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.

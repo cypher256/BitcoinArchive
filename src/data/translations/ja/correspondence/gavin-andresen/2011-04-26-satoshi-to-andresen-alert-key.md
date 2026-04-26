@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-04-20-forbes-crypto-currency
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 

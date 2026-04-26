@@ -34,7 +34,6 @@ relatedEntries:
   - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
 translationStatus: complete
-featured: true
 ---
 
 2010年5月18日、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)はBitcoinTalkフォーラムに投稿した：

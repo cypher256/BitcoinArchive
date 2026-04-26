@@ -22,6 +22,7 @@ relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
+  - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
 I am not Dorian Nakamoto.

@@ -46,7 +46,6 @@ const entrySchema = z.object({
     url: z.string().url(),
     note: z.string().optional(),
   })).optional(),
-  featured: z.boolean().optional(),
   homeOrder: z.number().optional(),
   editorNote: z.string().optional(),
   tags: z.array(z.string()).optional(),

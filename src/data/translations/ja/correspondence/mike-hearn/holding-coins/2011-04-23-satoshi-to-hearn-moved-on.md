@@ -28,8 +28,8 @@ relatedEntries:
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2010-06-11-gavin-andresen-biography
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
-featured: true
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

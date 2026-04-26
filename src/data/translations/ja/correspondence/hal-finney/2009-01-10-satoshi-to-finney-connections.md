@@ -27,6 +27,7 @@ secondarySources:
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
 relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 

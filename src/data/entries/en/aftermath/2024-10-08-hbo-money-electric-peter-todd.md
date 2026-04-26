@@ -14,7 +14,6 @@ participants:
     slug: "adam-back"
 description: "HBO documentary 'Money Electric: The Bitcoin Mystery,' directed by Cullen Hoback, names Peter Todd as a Satoshi Nakamoto candidate. The film's central evidence was a 2010 BitcoinTalk forum post where Todd replied to Satoshi's description of Replace-by-Fee, and Todd's later formalization of RBF in BIP 125. Todd denied the claim, calling it 'ludicrous.' The documentary was widely criticized by the Bitcoin community."
 isSatoshi: false
-featured: true
 tags:
   - "peter-todd"
   - "satoshi-identity"

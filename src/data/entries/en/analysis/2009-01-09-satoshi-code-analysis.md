@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Statistical analysis of Satoshi Nakamoto's Bitcoin source code (v0.1.0–v0.3.19): coding style fingerprint, commit time patterns suggesting EST/CST timezone, code evolution from 19,901 to 31,909 lines over 14 months, and the characteristics of Satoshi's final commits before disappearing."
 isSatoshi: true
-featured: true
 homeOrder: 4
 tags:
   - "satoshi-nakamoto"
@@ -32,6 +31,7 @@ relatedEntries:
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
   - "correspondence/martti-malmi/2010-05-14-status-update-191"
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
+  - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
 inlineLinkKeywords:
   - "Satoshi's coding style"
   - "coding style fingerprint"

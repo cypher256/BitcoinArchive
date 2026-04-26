@@ -42,6 +42,7 @@ relatedEntries:
   - "bip/2015-12-21-bip-0141"
   - "bip/2020-01-19-bip-0340"
   - "bip/2020-01-19-bip-0341"
+  - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
 ---
 
 On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) seven years earlier.

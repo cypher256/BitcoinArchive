@@ -17,6 +17,7 @@ relatedEntries:
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
   - "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012"
+  - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
 ---
 
 This crazy naming style has bugged me since the beginning and it should no longer be used in new code.

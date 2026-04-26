@@ -42,6 +42,7 @@ relatedEntries:
   - "bip/2015-12-21-bip-0141"
   - "bip/2020-01-19-bip-0340"
   - "bip/2020-01-19-bip-0341"
+  - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
 translationStatus: complete
 ---
 

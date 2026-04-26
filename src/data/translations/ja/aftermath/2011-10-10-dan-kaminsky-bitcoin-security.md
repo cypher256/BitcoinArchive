@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2011-04-20-forbes-crypto-currency
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
 translationStatus: complete
 ---
 

@@ -12,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "Technical analysis of Bitcoin's genesis block from the v0.1 source code: the hardcode auto-construction mechanism, the five-day-gap reinterpreted as a timestamp artifact, a two-layer reading of authorship (epistemic vs ontological — distinguishing anonymization from un-ownership by design), the numerical PoW headroom of the genesis hash as a softer secondary observation, and the separable dimension of private-key possession."
 isSatoshi: false
-featured: true
 homeOrder: 3
 tags:
   - "genesis-block"

@@ -28,9 +28,7 @@ relatedEntries:
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-12-first-bitcoin-transaction
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
-  - aftermath/2008-10-31-satoshi-nakamoto-biography
 translationStatus: complete
-featured: true
 ---
 
 > Running bitcoin

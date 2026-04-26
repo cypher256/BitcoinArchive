@@ -26,7 +26,6 @@ relatedEntries:
   - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
   - aftermath/2022-10-06-serhack-alternative-genesis-block
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
-featured: true
 ---
 
 On January 3, 2009, Satoshi Nakamoto mined the first block of the Bitcoin blockchain, known as the Genesis Block or Block 0. The block's coinbase transaction contained the following embedded text:

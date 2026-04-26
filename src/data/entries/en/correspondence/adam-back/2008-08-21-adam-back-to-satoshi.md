@@ -24,6 +24,7 @@ secondarySources:
     note: "This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. The complete email chain (5 emails total) was filed by Adam Back as a witness statement. Only the first two emails (Satoshi's initial contact and Back's reply) are archived here; the remaining three have not been published in full"
 relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
+  - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
 *[Context: Adam Back confirmed the citation and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.]*

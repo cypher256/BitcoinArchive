@@ -27,7 +27,6 @@ relatedEntries:
   - aftermath/2022-10-06-serhack-alternative-genesis-block
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 translationStatus: complete
-featured: true
 ---
 
 2009年1月3日、サトシ・ナカモトはビットコインブロックチェーンの最初のブロックを採掘した。ジェネシスブロックまたはブロック0として知られるこのブロックのコインベーストランザクションには、以下のテキストが埋め込まれていた：

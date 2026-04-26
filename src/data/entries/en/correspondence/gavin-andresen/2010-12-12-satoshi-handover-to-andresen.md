@@ -27,7 +27,6 @@ secondarySources:
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"
     url: "https://mmalmi.github.io/satoshi/"
-featured: true
 relatedEntries:
   - "correspondence/martti-malmi/2010-12-03-handover-to-gavin"
 ---

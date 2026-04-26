@@ -29,6 +29,7 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
+  - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
 I was very interested to read your b-money page. I'm getting ready to release a paper that expands on your ideas into a complete working system. [Adam Back](/BitcoinArchive/participants/adam-back/) (hashcash.org) noticed the similarities and pointed me to your site.

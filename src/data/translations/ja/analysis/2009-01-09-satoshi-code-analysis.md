@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシ・ナカモトのBitcoinソースコード（v0.1.0〜v0.3.19）の統計的分析。コーディングスタイルの指紋、EST/CSTタイムゾーンを示唆するコミット時間帯パターン、14ヶ月で19,901行から31,909行へのコード進化、失踪前の最終コミットの特徴。"
 isSatoshi: true
-featured: true
 homeOrder: 4
 tags:
   - "satoshi-nakamoto"
@@ -32,6 +31,7 @@ relatedEntries:
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
   - "correspondence/martti-malmi/2010-05-14-status-update-191"
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
+  - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
 inlineLinkKeywords:
   - "サトシのコーディングスタイル"
   - "コーディングスタイルの指紋"

@@ -18,7 +18,6 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/1/"
 translationStatus: complete
-featured: true
 ---
 
 私は2007年からBitcoinの設計に取り組んできた。ある時点で、信頼を一切必要としない方法でこれを実現できると確信し、考え続けずにはいられなくなった。作業の大部分はコーディングよりも設計だった。

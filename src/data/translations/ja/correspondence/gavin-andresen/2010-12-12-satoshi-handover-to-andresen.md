@@ -30,7 +30,6 @@ secondarySources:
 relatedEntries:
   - "correspondence/martti-malmi/2010-12-03-handover-to-gavin"
 translationStatus: complete
-featured: true
 ---
 
 <!-- speaker: narrator -->

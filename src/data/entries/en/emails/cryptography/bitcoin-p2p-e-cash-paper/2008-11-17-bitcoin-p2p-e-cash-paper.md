@@ -26,6 +26,7 @@ quotes:
     personSlug: "james-donald"
 relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
+  - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
 <!-- quote: q1 -->

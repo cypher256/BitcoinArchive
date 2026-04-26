@@ -15,7 +15,6 @@ tags:
   - "project-registration"
   - "historic"
 translationStatus: complete
-featured: true
 relatedEntries:
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
 ---

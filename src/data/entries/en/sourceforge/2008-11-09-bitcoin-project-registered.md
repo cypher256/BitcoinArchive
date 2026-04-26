@@ -14,7 +14,6 @@ tags:
   - "sourceforge"
   - "project-registration"
   - "historic"
-featured: true
 relatedEntries:
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
 ---
