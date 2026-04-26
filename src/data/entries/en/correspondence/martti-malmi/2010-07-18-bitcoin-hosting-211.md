@@ -18,6 +18,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
@@ -80,5 +81,3 @@ sent to 14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U.
 >> costs. On the other hand, Rackspace prices are no problem if the   
 >> donation is to arrive.
 >>
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

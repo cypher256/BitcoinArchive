@@ -18,6 +18,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
@@ -62,5 +63,3 @@ the comments text for an order number is another possibility.  There's
 polled, asking what has been received to the given bitcoin address, and 
 event driven.  I guess in event driven, bitcoin would be told to run a 
 command line when a certain amount is received to a certain bitcoin address.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

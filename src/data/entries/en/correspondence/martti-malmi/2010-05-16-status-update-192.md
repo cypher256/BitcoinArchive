@@ -18,6 +18,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
@@ -74,5 +75,3 @@ don't realise the problems with an API until you actually try to use it.
 > 
 > Best regards.
 >
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -30,5 +31,3 @@ Malmi replied to Satoshi agreeing to take on the website and FAQ development. In
 Later that same day, Satoshi responded by granting Malmi developer access to the Bitcoin SourceForge project. Satoshi endorsed the private key encryption feature as "absolutely essential" for future security. He also provided Malmi with an extensive compilation of Q&A material addressing common inquiries about blockchain mechanics, transaction confirmation times, the 21-million coin limit, and scaling.
 
 This rapid exchange demonstrated the productive dynamic that would characterize their working relationship over the next two years.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

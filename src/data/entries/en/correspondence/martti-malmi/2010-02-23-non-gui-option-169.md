@@ -18,6 +18,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -38,5 +39,3 @@ This is working.  A few more things and I'll upload it.
 We'll need to tell people to install the GTK libraries.  Do you remember 
 the apt-get command to install GTK, and can you install it without 
 having a GUI installed?
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

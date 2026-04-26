@@ -18,6 +18,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -28,5 +29,3 @@ For "normal members" I disabled "Request notification on replies" and
 I'm pretty sure there's a notification option for when you receive PMs, 
 but I don't see a way to disable it.  If we have to, I guess we could 
 edit the php code.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

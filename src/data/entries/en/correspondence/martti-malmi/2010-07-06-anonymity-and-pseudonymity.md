@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 ---
@@ -37,5 +38,3 @@ Satoshi elaborated on the potential consequences of overpromising privacy:
 This exchange is historically significant for several reasons. Satoshi clearly distinguished between anonymity (complete identity concealment) and pseudonymity (using an alternate identity that could potentially be linked to a real identity through analysis). His warning proved remarkably prescient, as blockchain analysis later became a major industry, and many early Bitcoin users who assumed complete anonymity had their transactions traced.
 
 The note about "sending by IP" refers to an early Bitcoin feature where transactions could be sent directly to an IP address. As the network shifted to address-based transactions, the privacy model changed in ways Satoshi felt needed to be clearly communicated.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

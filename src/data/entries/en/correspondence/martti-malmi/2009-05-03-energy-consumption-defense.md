@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 ---
@@ -39,5 +40,3 @@ Satoshi also explained the economics of mining, noting that the value of bitcoin
 He maintained that proof-of-work was "unfortunately" the only method that could ensure Bitcoin would work without trusted intermediaries, calling it "fundamental" to preventing double-spending.
 
 These early reflections on energy use foreshadowed debates that would intensify over the following decade as Bitcoin's network grew and mining became an industrial-scale activity.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 ---
@@ -34,5 +35,3 @@ Most notably, Satoshi introduced the term "cryptocurrency" in this exchange:
 The following day, Malmi replied that "it sounds good" and proposed "P2P Cryptocurrency" as a marketing tagline for Bitcoin. This exchange is historically significant because it challenges the assumption that Satoshi himself coined the term "cryptocurrency" - instead, he was relaying a term someone else had suggested, asking for Malmi's opinion on adopting it.
 
 During this period, Malmi had been actively improving the bitcoin.org website infrastructure, having installed Bitweaver to support wikis, forums, and community features. Satoshi registered the username "satoshi" with moderator permissions on the new site.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

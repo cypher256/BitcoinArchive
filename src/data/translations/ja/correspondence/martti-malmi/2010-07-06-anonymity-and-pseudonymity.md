@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 translationStatus: complete
@@ -39,5 +40,3 @@ translationStatus: complete
 このやり取りはいくつかの理由で歴史的に重要である。サトシは匿名性（完全な身元の隠蔽）と仮名性（分析によって実際の身元と結びつけられる可能性のある代替的な身元の使用）を明確に区別した。ブロックチェーン分析が後に大きな産業となり、完全な匿名性を想定していた多くの初期ビットコインユーザーのトランザクションが追跡されたことで、彼の警告は驚くほど先見性があったことが証明された。
 
 「IP送金」についての言及は、トランザクションをIPアドレスに直接送信できた初期のビットコイン機能を指している。ネットワークがアドレスベースのトランザクションに移行するにつれて、プライバシーモデルはサトシが明確に伝える必要があると感じた方法で変化した。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -18,6 +18,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -49,5 +50,3 @@ quotes:
 あなたが最適な人物だ。
 
 EFFは本当に重要だ。彼らとは良い関係を築きたい。私たちは彼らが好むタイプのプロジェクトだ。彼らはTORプロジェクトを支援し、P2Pファイル共有の保護に多大な貢献をしてきた。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

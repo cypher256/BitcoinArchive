@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -35,5 +36,3 @@ manager even if GTK libraries are installed. I asked about it at
 wxWidgets forum (http://wxforum.shadonet.com/viewtopic.php?t=26954)  
 but they didn't have much clue. Maybe we'll just need to make two  
 different binaries.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -32,5 +33,3 @@ In this reply dated May 2, 2009, Satoshi responded positively, praising Malmi's 
 Satoshi offered to provide Malmi with a compilation of his previous replies to questions from emails and forums to use as source material for the FAQ.
 
 This exchange marked the beginning of one of the most important collaborations in Bitcoin's early history. Malmi would go on to become the first person other than Satoshi to have commit access to Bitcoin's code, the administrator of bitcoin.org, and a key contributor to Bitcoin's development through early 2011.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

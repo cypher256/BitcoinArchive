@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -33,6 +34,4 @@ translationStatus: complete
 同日後ほど、サトシはマルミにビットコインのSourceForgeプロジェクトへの開発者アクセスを付与して応じた。サトシは秘密鍵の暗号化機能を将来のセキュリティにとって「絶対に不可欠」なものとして支持した。また、ブロックチェーンの仕組み、トランザクション確認時間、2,100万枚のコイン上限、スケーリングに関する一般的な質問に対応する広範なQ&A資料をマルミに提供した。
 
 この迅速なやり取りは、その後2年間にわたって彼らの協力関係を特徴づける生産的なダイナミクスを示していた。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
 <!-- /tone-skip -->

@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 translationStatus: complete
@@ -41,5 +42,3 @@ translationStatus: complete
 プルーフ・オブ・ワークは「残念ながら」信頼できる仲介者なしにビットコインが機能することを保証できる唯一の方法であり、二重支払いを防ぐために「基本的」なものであると主張した。
 
 エネルギー使用に関するこれらの初期の考察は、ビットコインのネットワークが成長しマイニングが産業規模の活動になるにつれて、その後の10年間で激化する議論を予見するものであった。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

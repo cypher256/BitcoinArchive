@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -39,5 +40,3 @@ pw: B98VzUUA
 SSLには対応していないが、どこも対応していない。見苦しいデフォルトのオレンジと青のテーマをFrosteeテーマに変更した。徹底的に探した結果、見つけられた唯一のまともなテーマだった。テーマを探すのは無駄だ。何千もの粗悪なテーマがある。結局、解決策はテーマではなくボタンセットを見ることだと分かった（http://resources.zetaboards.com/forum/1000328/）。
 
 最初はサブフォーラムを2つだけ作った。必要に応じて新しいものを作る予定だ。サブセクションを設ける十分な項目が揃うまでは、フラットな名前空間で始めるのが好みだ。テクニカルサポートを別のセクションにするのは理にかなっている。そうしたものをメインの目立つ場所から外して、みんなの前に汚れ物をさらさないようにし、バグ報告をしやすくするためだ。テクニカルサポートセクションを読む必要があるのは主に開発者とバグを確認している人だけだ。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

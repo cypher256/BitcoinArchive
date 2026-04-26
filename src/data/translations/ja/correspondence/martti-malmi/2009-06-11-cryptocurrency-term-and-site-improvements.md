@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 translationStatus: complete
@@ -36,5 +37,3 @@ translationStatus: complete
 翌日、マルミは「いい感じです」と返信し、ビットコインのマーケティングタグラインとして「P2P暗号通貨（P2P Cryptocurrency）」を提案した。このやり取りは歴史的に重要である。なぜなら、サトシ自身が「暗号通貨」という用語を造語したという想定に疑問を投げかけるからだ。実際には、他の誰かが提案した用語を伝え、採用についてマルミの意見を求めていた。
 
 この時期、マルミはbitcoin.orgのウェブサイトインフラの改善に積極的に取り組んでおり、ウィキ、フォーラム、コミュニティ機能をサポートするためにBitweaverをインストールしていた。サトシは新しいサイトでモデレーター権限付きの「satoshi」というユーザー名を登録した。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

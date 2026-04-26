@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -37,5 +38,3 @@ translationStatus: complete
 2009年9月16日までに、マルミはタスクトレイ最小化機能を実装したコードをSVNブランチにコミットしたと報告した。10月までに、自動起動とタスクトレイ最小化の両方の機能を備えたWindowsインストーラーを作成した。
 
 これらの機能はLinuxサポートも含む2009年12月リリースのビットコインバージョン0.2に含まれた。サトシはリリースノートの中でマルミの貢献を公に認めた：「Martti（Sirius-m）のすべての開発作業に深く感謝する。」
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

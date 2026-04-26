@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -30,5 +31,3 @@ translationStatus: complete
 余分なメモリーはただのディスクキャッシュか何かかもしれないな。
 
 例の寄付者からまだ何も届いていないのか？彼は送るつもりだったし、もしかするとそれ以上の金額も、とかなり確信していたようだったが。（もし何か届いたら、寄付を受け取った事実は彼のために秘密にしておく必要がある）
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

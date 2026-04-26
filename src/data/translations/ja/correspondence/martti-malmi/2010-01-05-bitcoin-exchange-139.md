@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -28,5 +29,3 @@ translationStatus: complete
 bitcoinexchange.comサービスのプロトタイプが動作するようになりました（認証: bitcoin/bit）。Python搭載のDjango Webアプリケーションフレームワークで動いており、PHPと比べて使い心地が良いですよ。
 
 これから数日間勉強する必要がありますが、その後取引所サービスの作業に戻れます。とりわけ、手持ちのBitcoinの在庫がゼロに近づくにつれて価格が無限大に向かって上昇するように価格設定を修正するつもりです。そうすることで市場レートを見つけ、需要と供給が一致する点に留まることができますね。双曲線型の価格曲線のパラメーターをどうすべきか、まだ完全には決まっていないので、考える必要があります。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

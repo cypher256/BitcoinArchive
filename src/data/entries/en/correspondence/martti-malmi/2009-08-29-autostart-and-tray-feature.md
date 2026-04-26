@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -35,5 +36,3 @@ Satoshi emphasized that autostart with system tray minimization was "a must-have
 By September 16, 2009, Malmi reported that he had committed code implementing the minimize-to-tray features to SVN branches. By October, he had created a Windows installer with both autostart and minimize-to-tray functionality.
 
 These features were included in Bitcoin version 0.2, released in December 2009, which also included Linux support. Satoshi publicly acknowledged Malmi's contribution in the release notes: "Many thanks to Martti (Sirius-m) for all his development work."
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

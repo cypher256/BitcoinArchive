@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -32,5 +33,3 @@ translationStatus: complete
 
 <!-- speaker: Martti Malmi -->
 はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだしていないです。GTKライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgetsフォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかもしれないです。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

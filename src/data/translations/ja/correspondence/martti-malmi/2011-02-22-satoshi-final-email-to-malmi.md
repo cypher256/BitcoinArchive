@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
@@ -42,5 +43,3 @@ translationStatus: complete
 2009年5月から2011年2月にわたるサトシとマルミの書簡は、約260通のメールで構成され、ビットコインの創造者との直接的なコミュニケーションの最も広範な記録の一つである。この書簡はサトシがビットコインに積極的に関与していたほぼ全期間を網羅している——ユーザーがほんの一握りしかいなかった初期から、プロジェクトが複数の開発者を抱える機能的なオープンソースコミュニティへと成長した時点まで。
 
 マルミはこれらのメールを10年以上にわたって非公開にしてきた。2024年に「以前はプライベートな書簡を共有することに抵抗がありました」と説明したが、証人として出廷した英国でのCOPA対ライト裁判のために公開することを決めた。完全なアーカイブは2024年2月23日にGitHubで公開された。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
@@ -34,5 +35,3 @@ On August 24, 2009, Satoshi provided detailed feedback on the exchange proposal,
 Malmi went on to create and operate Bitcoinexchange.com, one of the earliest Bitcoin exchanges. The newly published emails revealed that Satoshi had been a key advisor throughout the exchange's development, not merely a passive observer.
 
 This collaboration directly led to what is considered the [first known Bitcoin-to-USD transaction](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/): on October 12, 2009, Malmi sold 5,050 BTC for $5.02 via PayPal through his exchange service, valuing each bitcoin at approximately $0.001 - establishing one of the earliest recorded price points for Bitcoin.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

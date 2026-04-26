@@ -20,6 +20,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
@@ -81,5 +82,3 @@ upgrade MinGW to 4.3.x to get them on a level playing field.
 >> broadcasts it to the network.  After that, the increasing
 >> #/confirmed number is just monitoring the outcome.  There's
 >> nothing your node does during that time to promote the acceptance.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

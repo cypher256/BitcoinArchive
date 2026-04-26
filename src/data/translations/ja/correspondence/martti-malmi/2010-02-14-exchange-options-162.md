@@ -19,6 +19,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -29,5 +30,3 @@ translationStatus: complete
 ZayPayが提供するSMS決済で顧客がコインを購入する場合にのみ、取引を自動化する方向で進めています。Pecunixは準備金を保管するのに十分な信頼性と実用性を備えた唯一の電子通貨ですが、交換手数料がかなり高いです（約5%）。
 
 コインを買い取る際の推奨支払い方法はIBAN送金にするつもりです。「他の支払い方法で売買したい場合はお問い合わせください」と記載して、各注文を個別に処理することもできますね。PayPalでも個別の注文を手動で受け付けることは可能です。ただし、そこにお金を保管せず、顧客が手数料を負担する限りにおいてですけど。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*

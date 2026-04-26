@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 ---
@@ -33,5 +34,3 @@ Satoshi praised the FAQ but raised a critical concern about how Bitcoin was bein
 > There are a lot of things you can say on the sourceforge site that I can't say on my own site ... Even so, I'm uncomfortable with explicitly saying 'consider it an investment'. That's a dangerous thing to say and you should delete that bullet point. It's OK if they come to that conclusion on their own, but we can't pitch it as that.
 
 This exchange reveals Satoshi's careful approach to regulatory risk and his deliberate effort to position Bitcoin as a technology and payment system rather than as a speculative investment vehicle. This stance has been widely cited in discussions about Bitcoin's intended purpose and the cryptocurrency regulatory landscape.
-
-*Source: Published by Martti Malmi on GitHub in February 2024 as part of his testimony in the COPA v. Wright trial. The full correspondence archive is available at mmalmi.github.io/satoshi/.*

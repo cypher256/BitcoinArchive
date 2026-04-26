@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Martti Malmi's Published Email Archive"
     url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
@@ -34,5 +35,3 @@ translationStatus: complete
 サトシはFAQのソース資料として、メールやフォーラムでの質問に対する過去の回答をまとめたものをマルミに提供することを申し出た。
 
 このやり取りは、ビットコインの初期の歴史における最も重要な協力関係の一つの始まりとなった。マルミはその後、サトシ以外でビットコインのコードへのコミットアクセスを持つ最初の人物、bitcoin.orgの管理者、そして2011年初頭までのビットコイン開発への重要な貢献者となった。
-
-*出典：COPA対ライト裁判の証言の一環として、2024年2月にマルッティ・マルミによりGitHubで公開。完全な書簡アーカイブはmmalmi.github.io/satoshi/で閲覧可能。*
