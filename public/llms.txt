@@ -14,7 +14,7 @@ The archive contains 3,100+ entries organized by type:
 - **Mailing List** (46): Cryptography mailing list (28), Bitcoin-list (16), P2P Research (4)
 - **Biographies** (32): Biographical profiles of key participants compiled from public sources
 - **BIPs** (11): Bitcoin Improvement Proposals relevant to Satoshi's design
-- **Analysis** (8): Editorial readings by Bitcoin Institute on Satoshi's intellectual position relative to the cypherpunk movement, the techno-orientalist symbolic field of the "Satoshi Nakamoto" pseudonym, the genesis block hardcode mechanism, the v0.1 source code, the launch-period operational environment, distribution and tooling anomalies, and Satoshi's self-statements 2008-2011
+- **Analysis** (8): Editorial readings by Bitcoin Institute on Satoshi's intellectual position relative to the cypherpunk movement, the techno-orientalist symbolic field of the "Satoshi Nakamoto" pseudonym, the chronological activity timeline 2008-2014, the genesis block hardcode mechanism, the v0.1 source code, the launch-period operational environment, distribution and tooling anomalies, and Satoshi's self-statements 2008-2011
 - **Court Documents** (3): COPA v Wright trial materials
 - **Whitepapers** (2): Bitcoin whitepaper draft and final version
 

@@ -26,14 +26,14 @@ Languages: English, Japanese
 ### 2010
 - **May 22**: First real-world Bitcoin purchase (10,000 BTC for two pizzas by Laszlo Hanyecz)
 - **August 15**: The 184 billion BTC incident — integer overflow vulnerability exploited, patched by Satoshi within 5 hours via soft fork
-- **December 5**: WikiLeaks donation controversy — Satoshi posted: "WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us"
-- **December 12**: Last known forum post on BitcoinTalk
+- **December 5**: First WikiLeaks comment — Satoshi discouraged the community from actively seeking WikiLeaks adoption, arguing that Bitcoin was still immature and the attention could be harmful
+- **December 11**: WikiLeaks "hornet's nest" post — "WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us"
+- **December 12**: Source code repository control handed over to Gavin Andresen; last known public BitcoinTalk post
 
 ### 2011
-- **February**: Handed over network alert key and source code repository access to Gavin Andresen
-- **March 7**: Mike Hearn announced BitcoinJ release; Satoshi replied with technical details about contracts and nLockTime
-- **April 23**: Last known email to Mike Hearn: "I've moved on to other things. It's in good hands with Gavin and everyone."
-- **April 26**: Last known email to Gavin Andresen about CIA visit concerns
+- **March 7**: Mike Hearn announced BitcoinJ release; Satoshi replied (March 9) with technical details about contracts and nLockTime
+- **April 23**: Email to Mike Hearn: "I've moved on to other things. It's in good hands with Gavin and everyone."
+- **April 26**: Last known email — to Gavin Andresen, transferring the network alert key: "I've moved on to other things and will probably be unavailable." Andresen replied disclosing a CIA presentation invitation; Satoshi never replied.
 
 ## Entry Categories
 
