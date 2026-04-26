@@ -49,10 +49,15 @@ function walk(dir) {
 }
 
 function splitFm(content) {
-  if (!content.startsWith('---\n')) return { fm: '', body: content };
+  if (!content.startsWith('---\n')) return { fm: '', body: content, bodyStartLine: 1 };
   const end = content.indexOf('\n---\n', 4);
-  if (end < 0) return { fm: '', body: content };
-  return { fm: content.slice(4, end), body: content.slice(end + 5) };
+  if (end < 0) return { fm: '', body: content, bodyStartLine: 1 };
+  // Count newlines in the frontmatter region so we can offset body line
+  // numbers back to actual file line numbers (so editor-friendly file:line
+  // jumps land on the right line, not the body-relative line).
+  const fmRegion = content.slice(0, end + 5); // through closing ---\n
+  const bodyStartLine = fmRegion.split('\n').length; // 1-indexed line of first body line
+  return { fm: content.slice(4, end), body: content.slice(end + 5), bodyStartLine };
 }
 
 function getField(fm, key) {
@@ -100,7 +105,7 @@ for (const { lang, base } of COLLECTIONS) {
   const files = walk(base);
   for (const file of files) {
     const content = readFileSync(file, 'utf-8');
-    const { fm, body } = splitFm(content);
+    const { fm, body, bodyStartLine } = splitFm(content);
     const type = getField(fm, 'type') || '';
     const masked = maskNonProse(body);
     const lines = masked.split('\n');
@@ -109,7 +114,7 @@ for (const { lang, base } of COLLECTIONS) {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       const raw = rawLines[i];
-      const lineNo = i + 1;
+      const lineNo = bodyStartLine + i;
       if (!line.trim()) continue;
 
       // Rule 4: Unlabeled *[...]*
@@ -231,7 +236,7 @@ for (const { lang, base } of COLLECTIONS) {
             file: path.relative(ROOT, file),
             lang,
             type,
-            lineNo: i + 1,
+            lineNo: bodyStartLine + i,
             content: line.trim().slice(0, 240),
           });
         }

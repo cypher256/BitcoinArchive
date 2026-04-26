@@ -93,7 +93,10 @@ const breadcrumbs = [
     </header>
 
     {entry.data.editorNote && (
-      <p class="editor-note">{entry.data.editorNote}</p>
+      <aside class="editor-note">
+        <span class="editor-note-label">📝 編者注（ビットコイン・インスティテュート）</span>
+        <p>{entry.data.editorNote}</p>
+      </aside>
     )}
 
     {entry.id.includes('value-overflow-incident') && (
@@ -196,6 +199,7 @@ const breadcrumbs = [
     font-size: 2rem;
   }
   .editor-note {
+    display: block;
     font-size: 0.9rem;
     color: var(--color-text-muted);
     line-height: 1.6;
@@ -203,6 +207,18 @@ const breadcrumbs = [
     padding: 0.75rem 1rem;
     border-left: 3px solid var(--color-border);
     background: var(--color-bg-alt);
+  }
+  .editor-note p {
+    margin: 0;
+  }
+  .editor-note-label {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    margin-right: 0.5em;
+    margin-bottom: 0.25em;
+    font-weight: 600;
   }
   .entry-content { line-height: 1.8; }
   .entry-nav {

@@ -147,7 +147,7 @@ normalized.
 
 1. JA uses full-width colon (`：`); EN uses half-width (`:`). No mixing.
 2. The label and the body text are separated by exactly one half-width
-   space (e.g. `*Source: text*`, `*[編者注：text]*`).
+   space (e.g. `*[Editor: text]*`, `*[編者注：text]*`).
 3. (B) is provided by the existing `<SourceCitation />` component
    driven by `frontmatter.sourceUrl` + `secondarySources[]`. Inline
    `*Source: ...*` / `*出典：...*` lines in body content are forbidden
