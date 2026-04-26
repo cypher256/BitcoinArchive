@@ -107,11 +107,12 @@ the JA/EN canonical pairs use locale-specific punctuation:
 - If a category develops a strong established pattern, follow that pattern
   unless there is a clear reason to improve it.
 
-For the [Editorial Markers](#editorial-markers) audit, the same logic
-applies: the `check:editorial-markers` script runs in informational
-mode by default. It must not be flipped to `--strict` (hard-fail)
-until the existing legacy is normalized end-to-end. Flipping it before
-that point would block unrelated commits.
+For the [Editorial Markers](#editorial-markers) audit, the
+`check:editorial-markers` script now runs in `--strict` (hard-fail)
+mode under `npm run check`, since the existing legacy was normalized
+end-to-end during the 2026-04 migration. New entries must satisfy
+the canonical-form rules from the start; any violation will block
+the build.
 
 ## Editorial Markers
 
@@ -178,17 +179,18 @@ normalized.
 
 ### Audit
 
-`scripts/check-editorial-markers.mjs` enforces these rules. It runs
-under `npm run check` informationally; pass `--strict` to make it fail.
-The audit excludes blockquote interiors, code blocks, URLs, and HTML
-comments to avoid false positives on primary-source content.
+`scripts/check-editorial-markers.mjs` enforces these rules under
+`npm run check` in `--strict` mode (hard-fail). The audit excludes
+blockquote interiors, code blocks, URLs, and HTML comments to avoid
+false positives on primary-source content.
 
 A separate `--report-f-candidates` mode lists every `edit:` / `編集:`
 occurrence inside `forum-post`, `mailing-list`, and `correspondence`
 entries. The auto-classifier treats these as F (preserved) by default,
-but the report lets a human verify that no Archive-editor note has
-been mis-classified as a poster's note. Full review of the F-candidate
-report is required before flipping `--strict` on.
+and a full human review of the candidate report was completed during
+the 2026-04 migration: all 75 occurrences were confirmed to be
+original-poster edit notes. Re-run the report mode (`npm run
+audit:f-candidates`) whenever new entries of these types are added.
 
 ## Title Policy
 

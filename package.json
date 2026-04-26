@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-glossary.mjs && node scripts/check-quotes.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/generate-derived-related.mjs && node scripts/generate-git-dates.mjs && astro build && node scripts/algolia-index.mjs",
-    "check": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-glossary.mjs && node scripts/check-quotes.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/check-inline-link-coverage.mjs && node scripts/check-editorial-markers.mjs && astro sync",
+    "check": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-glossary.mjs && node scripts/check-quotes.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/check-inline-link-coverage.mjs && node scripts/check-editorial-markers.mjs --strict && astro sync",
     "check:image-alt": "node scripts/check-markdown-image-alt.mjs",
     "check:participants": "node scripts/check-participants.mjs",
     "check:ja-tone": "node scripts/check-ja-tone.mjs",
