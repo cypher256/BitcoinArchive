@@ -171,6 +171,15 @@ function tagWeight(count: number, max: number): number {
       </div>
     </section>
 
+    <section class="dashboard-section">
+      <div class="section-header">
+        <h2>{t('home.characters' as any)}</h2>
+        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      <p class="characters-subtitle">{t('home.charactersSubtitle' as any)}</p>
+      <CharacterIntro lang={lang} />
+    </section>
+
     <section class="dashboard-section analyses-section">
       <div class="section-header">
         <h2>{t('home.analyses' as any)}</h2>
@@ -196,38 +205,6 @@ function tagWeight(count: number, max: number): number {
         <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
       </div>
       <NetworkGraph graphData={graphData} lang={lang} />
-    </section>
-
-    <section class="stats">
-      <a href={localePath('/entries/', lang)} class="stat">
-        <span class="stat-number">{entries.length}</span>
-        <span class="stat-label">{t('nav.entries')}</span>
-      </a>
-      <a href={localePath('/types/', lang)} class="stat">
-        <span class="stat-number">{new Set(entries.map(e => e.data.type)).size}</span>
-        <span class="stat-label">{t('nav.types' as any)}</span>
-      </a>
-      <a href={localePath('/sources/', lang)} class="stat">
-        <span class="stat-number">{new Set(entries.map(e => e.data.source)).size}</span>
-        <span class="stat-label">{t('nav.sources')}</span>
-      </a>
-      <a href={localePath('/participants/', lang)} class="stat">
-        <span class="stat-number">{new Set(entries.flatMap(e => e.data.participants.map(p => p.slug))).size}</span>
-        <span class="stat-label">{t('nav.participants')}</span>
-      </a>
-      <a href={localePath('/tags/', lang)} class="stat">
-        <span class="stat-number">{new Set(entries.flatMap(e => e.data.tags ?? [])).size}</span>
-        <span class="stat-label">{t('nav.tags')}</span>
-      </a>
-    </section>
-
-    <section class="dashboard-section">
-      <div class="section-header">
-        <h2>{t('home.characters' as any)}</h2>
-        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
-      </div>
-      <p class="characters-subtitle">{t('home.charactersSubtitle' as any)}</p>
-      <CharacterIntro lang={lang} />
     </section>
 
     <div class="dashboard-grid">
@@ -285,6 +262,29 @@ function tagWeight(count: number, max: number): number {
       </div>
     </section>
 
+    <section class="stats">
+      <a href={localePath('/entries/', lang)} class="stat">
+        <span class="stat-number">{entries.length}</span>
+        <span class="stat-label">{t('nav.entries')}</span>
+      </a>
+      <a href={localePath('/types/', lang)} class="stat">
+        <span class="stat-number">{new Set(entries.map(e => e.data.type)).size}</span>
+        <span class="stat-label">{t('nav.types' as any)}</span>
+      </a>
+      <a href={localePath('/sources/', lang)} class="stat">
+        <span class="stat-number">{new Set(entries.map(e => e.data.source)).size}</span>
+        <span class="stat-label">{t('nav.sources')}</span>
+      </a>
+      <a href={localePath('/participants/', lang)} class="stat">
+        <span class="stat-number">{new Set(entries.flatMap(e => e.data.participants.map(p => p.slug))).size}</span>
+        <span class="stat-label">{t('nav.participants')}</span>
+      </a>
+      <a href={localePath('/tags/', lang)} class="stat">
+        <span class="stat-number">{new Set(entries.flatMap(e => e.data.tags ?? [])).size}</span>
+        <span class="stat-label">{t('nav.tags')}</span>
+      </a>
+    </section>
+
   </div>
 </BaseLayout>
 
@@ -311,8 +311,8 @@ function tagWeight(count: number, max: number): number {
   .start-card {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 1.1rem 1.2rem;
+    gap: 0.6rem;
+    padding: 1.4rem 1.5rem;
     border: 1px solid var(--color-border);
     border-radius: 8px;
     background: var(--color-bg);
@@ -334,12 +334,12 @@ function tagWeight(count: number, max: number): number {
   }
   .start-card .start-title {
     font-family: var(--font-heading);
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-text);
   }
   .start-card .start-desc {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.55;
     color: var(--color-text-muted);
   }
@@ -426,11 +426,11 @@ function tagWeight(count: number, max: number): number {
   .stats {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    padding: 1.5rem 0;
+    gap: 2rem;
+    padding: 0.75rem 0;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .stat {
     text-align: center;
@@ -442,13 +442,13 @@ function tagWeight(count: number, max: number): number {
   .stat-number {
     display: block;
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--color-accent);
   }
   .stat-label {
     font-family: var(--font-heading);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: var(--color-text-muted);
   }
 
