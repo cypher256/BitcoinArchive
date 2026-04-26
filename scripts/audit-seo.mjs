@@ -4,15 +4,45 @@
  *
  * Read-only inspection. Does not modify any files.
  *
- * Reports:
- *   - title too long (SERP truncation risk)
- *   - description missing / too short / too long
- *   - description duplicates across entries (templated copy-paste)
+ * ## Policy (per maintainer guidance, 2026)
  *
- * Thresholds tuned for both EN and JA:
- *   - title chars > 80      (covers EN ~60 chars and JA mixed)
- *   - description chars < 50  (too short, weak SERP snippet)
- *   - description chars > 200 (too long, gets truncated; lead keywords lost)
+ * Description:
+ *   - Length per se is NOT a SEO concern. Modern search engines weight
+ *     description as a snippet hint, not a ranking signal; SERP
+ *     truncation is purely cosmetic. Long or short descriptions on
+ *     this archive are acceptable.
+ *   - Duplicate descriptions across entries are acceptable when the
+ *     entries are genuinely variations of the same thing (thread
+ *     replies, bulk-imported records of one event, etc.). Templated
+ *     copy is an integrity question, not an SEO one.
+ *   - INACCURATE description content IS a real defect — the page
+ *     describes itself wrongly. That is a page-level correctness
+ *     issue, not an SEO issue, and must be fixed when found. This
+ *     audit cannot detect inaccuracy; manual review per entry.
+ *
+ * Title:
+ *   - Length per se is NOT a SEO concern. Search engines read the
+ *     full title regardless of SERP truncation.
+ *   - BUT: the portion that survives SERP truncation (~roughly the
+ *     first 30 full-width JA chars or first 60 half-width EN chars)
+ *     MUST carry enough information for a human to know what the
+ *     entry is about. If the essence (who / what / which event) only
+ *     arrives in trailing tokens, the truncated SERP card becomes
+ *     unparseable, and a Japanese reader who does not parse English
+ *     loses the whole identification. This is the real bar.
+ *   - That bar is a human judgment call this audit cannot enforce
+ *     mechanically. The length report below is left in as an
+ *     informational signal — it surfaces titles that may need a
+ *     manual front-loading review, not titles that need shortening.
+ *
+ * The numeric thresholds below are therefore informational only.
+ * They are NOT violation lines. Treat the report as a list of
+ * candidates for manual review, not as a list of bugs to fix.
+ *
+ * Reports (informational, no exit code change):
+ *   - title length signals (long titles to spot-check for front-loading)
+ *   - description length signals (very short / very long, for sanity)
+ *   - description duplicate clusters (for integrity spot-check)
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
@@ -26,9 +56,11 @@ const COLLECTIONS = [
   { lang: 'ja', base: path.join(ROOT, 'src/data/translations/ja') },
 ];
 
-const TITLE_MAX = 80;
-const DESC_MIN = 50;
-const DESC_MAX = 200;
+// Informational thresholds — see file header. NOT violation lines.
+// These exist to surface candidates for manual review, not bugs.
+const TITLE_MAX = 80;   // EN/JA mixed; flags titles that likely truncate in SERP
+const DESC_MIN = 50;    // very short descriptions worth spot-checking for accuracy
+const DESC_MAX = 200;   // very long descriptions worth spot-checking for content drift
 
 function walk(dir) {
   const out = [];
@@ -116,15 +148,17 @@ function pad(n, w = 5) {
   return String(n).padStart(w, ' ');
 }
 
-console.log('=== SEO / AIO Audit ===\n');
+console.log('=== SEO / AIO Audit (informational; not violations) ===');
+console.log('See file header for policy. Length is not a defect; review for');
+console.log('content accuracy and front-loading of titles.\n');
 for (const lang of ['en', 'ja']) {
   const r = reportByLang[lang];
   console.log(`--- Locale: ${lang} (${r.total} files) ---`);
-  console.log(`  Title too long  (> ${TITLE_MAX} chars): ${pad(r.issues.titleTooLong.length)}`);
-  console.log(`  Description missing            : ${pad(r.issues.descMissing.length)}`);
-  console.log(`  Description too short (< ${DESC_MIN}) : ${pad(r.issues.descTooShort.length)}`);
-  console.log(`  Description too long  (> ${DESC_MAX}): ${pad(r.issues.descTooLong.length)}`);
-  console.log(`  Description duplicate clusters : ${pad(r.descDuplicates.length)}`);
+  console.log(`  Long titles    (> ${TITLE_MAX} chars, review for front-loading): ${pad(r.issues.titleTooLong.length)}`);
+  console.log(`  Description missing                                 : ${pad(r.issues.descMissing.length)}`);
+  console.log(`  Description very short (< ${DESC_MIN}, spot-check accuracy)  : ${pad(r.issues.descTooShort.length)}`);
+  console.log(`  Description very long  (> ${DESC_MAX}, spot-check content) : ${pad(r.issues.descTooLong.length)}`);
+  console.log(`  Description duplicate clusters (integrity spot-check): ${pad(r.descDuplicates.length)}`);
   console.log('');
 }
 
