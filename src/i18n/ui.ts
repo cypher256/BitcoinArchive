@@ -213,7 +213,7 @@ export const ui = {
     'nav.types': 'タイプ別',
     'type.forum-post': 'フォーラム投稿',
     'type.mailing-list': 'メーリングリスト',
-    'type.correspondence': '個人書簡',
+    'type.correspondence': '個人メール',
     'type.whitepaper': 'ホワイトペーパー',
     'type.bip': 'BIP（ビットコイン改善提案）',
     'type.article': '記事',
