@@ -36,7 +36,7 @@ relatedEntries:
 
 This early draft predates the final published version by nearly a month. It was shared privately by Satoshi Nakamoto with selected individuals before the public announcement on the Cryptography Mailing List on October 31, 2008.
 
-**Note:** This is not the earliest known draft. In August 2008, Satoshi shared an even earlier version titled "Electronic Cash Without a Trusted Third Party" (ecash.pdf) with [Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) (August 20) and [Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (August 22). The paper was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System" by the time of this October 3 draft.
+*[Context: This is not the earliest known draft. In August 2008, Satoshi shared an even earlier version titled "Electronic Cash Without a Trusted Third Party" (ecash.pdf) with [Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) (August 20) and [Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (August 22). The paper was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System" by the time of this October 3 draft.]*
 
 **Key differences from the final version:**
 - Contact email: satoshi@vistomail.com (vs. satoshin@gmx.com in final)

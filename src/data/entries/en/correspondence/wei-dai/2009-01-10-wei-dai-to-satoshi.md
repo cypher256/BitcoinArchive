@@ -27,4 +27,4 @@ There are some discussions of it at https://cypherpunks.venona.com/date/1998/12/
 
 Thanks for letting me know about your paper. I'll take a look at it and let you know if I have any comments or questions.
 
-*[Note: This email is undated in the original source (Gwern's archive). It was sent sometime between August 22, 2008 and January 10, 2009. The date 2009-01-10 used in this archive is a placeholder based on the next known email in the thread.]*
+*[Context: This email is undated in the original source (Gwern's archive). It was sent sometime between August 22, 2008 and January 10, 2009. The date 2009-01-10 used in this archive is a placeholder based on the next known email in the thread.]*

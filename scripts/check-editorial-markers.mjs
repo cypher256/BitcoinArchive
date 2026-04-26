@@ -166,16 +166,21 @@ for (const { lang, base } of COLLECTIONS) {
         }
       }
 
-      // Rule 6: Bold-label forms
-      if (lang === 'en') {
-        if (/\*\*(Source|Note|Editor|Author):\*\*/.test(line)) {
-          addV(file, lang, lineNo, raw, 'bold-label',
-            `Bold-label forms forbidden (rule 6).`);
-        }
-      } else {
-        if (/\*\*(出典|注|編注|編者注|補足|編者)[:：]\*\*/.test(line)) {
-          addV(file, lang, lineNo, raw, 'bold-label',
-            `Bold-label forms forbidden (rule 6).`);
+      // Rule 6: Bold-label forms.
+      // BIP entries use **Author:** / **Status:** etc. as part of the BIP-0001
+      // formal header convention; these are primary-source structure, not
+      // editor markers, and are preserved per Primary-Source Entries.
+      if (type !== 'bip') {
+        if (lang === 'en') {
+          if (/\*\*(Source|Note|Editor|Author):\*\*/.test(line)) {
+            addV(file, lang, lineNo, raw, 'bold-label',
+              `Bold-label forms forbidden (rule 6).`);
+          }
+        } else {
+          if (/\*\*(出典|注|編注|編者注|補足|編者)[:：]\*\*/.test(line)) {
+            addV(file, lang, lineNo, raw, 'bold-label',
+              `Bold-label forms forbidden (rule 6).`);
+          }
         }
       }
 

@@ -110,4 +110,4 @@ Garzik on the end of the mining gold rush:
 
 > But Garzik, the developer, says that the most dedicated bitcoiners have stopped trying to hunt down Nakamoto. "We really don't care," he says. It's not the individuals behind the code who matter, but the code itself. And while people have stolen and cheated and abandoned the bitcoiners, the code has remained true.
 
-*[Note: The final passage blends Garzik's direct quote ("We really don't care") with Wallace's own journalistic reflection. The sentences after "he says" are Wallace's narration, not Garzik's direct words.]*
+*[Editor: The final passage blends Garzik's direct quote ("We really don't care") with Wallace's own journalistic reflection. The sentences after "he says" are Wallace's narration, not Garzik's direct words.]*
