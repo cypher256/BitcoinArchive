@@ -60,7 +60,7 @@ Available wxWidgets profiles:
 $ /usr/bin/wx-config --version
 2.9.1
 
-# eselect wxwidgets set 1
+\# eselect wxwidgets set 1
 
 Setting wxWidgets profile to gtk2-ansi-release-2.6
 
