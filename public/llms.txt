@@ -1,19 +1,20 @@
 # Bitcoin Institute
 
-> The world's most comprehensive archive of Satoshi Nakamoto's complete conversations, emails, forum posts, and related historical documents.
+> The Satoshi Nakamoto reference — primary sources, conversations, and editorial readings.
 
-Bitcoin Institute is a bilingual (English/Japanese) reference site that collects and preserves every known public communication by Satoshi Nakamoto, the pseudonymous creator of Bitcoin, along with related historical documents.
+Bitcoin Institute is a bilingual (English/Japanese) reference site that collects and preserves primary-source material on Satoshi Nakamoto, the pseudonymous creator of Bitcoin, alongside editorial readings of source code, primary records, and Satoshi's documented footprint. Coverage spans the cypherpunks-era predecessors through the post-Satoshi years.
 
 ## Contents
 
-The archive contains 2,300+ entries organized by type:
+The archive contains 3,100+ entries organized by type:
 
-- **Forum Posts** (1,825): BitcoinTalk (1,812), SourceForge (9), P2P Foundation (4), including Satoshi's posts and context posts from other participants
+- **Forum Posts** (2,609): BitcoinTalk (2,531), GitHub PRs (64), SourceForge (9), P2P Foundation (4), including Satoshi's posts and context posts from other participants
 - **Correspondence** (337): Private emails between Satoshi and 9 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Laszlo Hanyecz, Martti Malmi, Mike Hearn, Nicholas Bohm, Wei Dai
-- **Articles** (72): Analysis, media coverage, research, and post-disappearance historical analysis
-- **Mailing List** (46): Cryptography mailing list (26), Bitcoin-list (16), P2P Research (4)
-- **Biographies** (25): Biographical profiles of key participants compiled from public sources
+- **Articles** (73): Media coverage, research, and post-disappearance historical analysis
+- **Mailing List** (46): Cryptography mailing list (28), Bitcoin-list (16), P2P Research (4)
+- **Biographies** (32): Biographical profiles of key participants compiled from public sources
 - **BIPs** (11): Bitcoin Improvement Proposals relevant to Satoshi's design
+- **Analysis** (8): Editorial readings by Bitcoin Institute on Satoshi's intellectual position relative to the cypherpunk movement, the techno-orientalist symbolic field of the "Satoshi Nakamoto" pseudonym, the genesis block hardcode mechanism, the v0.1 source code, the launch-period operational environment, distribution and tooling anomalies, and Satoshi's self-statements 2008-2011
 - **Court Documents** (3): COPA v Wright trial materials
 - **Whitepapers** (2): Bitcoin whitepaper draft and final version
 
@@ -21,6 +22,7 @@ The archive contains 2,300+ entries organized by type:
 
 - Home: https://bitcoin-institute.pages.dev/
 - All Entries: https://bitcoin-institute.pages.dev/entries/
+- Analyses: https://bitcoin-institute.pages.dev/types/analysis/
 - Sources: https://bitcoin-institute.pages.dev/sources/
 - Participants: https://bitcoin-institute.pages.dev/participants/
 - Tags: https://bitcoin-institute.pages.dev/tags/
@@ -32,6 +34,7 @@ The archive contains 2,300+ entries organized by type:
 
 - Home: https://bitcoin-institute.pages.dev/ja/
 - All Entries: https://bitcoin-institute.pages.dev/ja/entries/
+- Analyses: https://bitcoin-institute.pages.dev/ja/types/analysis/
 - Search: https://bitcoin-institute.pages.dev/ja/search/
 - Price Chart: https://bitcoin-institute.pages.dev/ja/chart/
 
@@ -40,4 +43,4 @@ The archive contains 2,300+ entries organized by type:
 - Satoshi Nakamoto was active from October 2008 to April 2011
 - Satoshi mined an estimated 1.1 million BTC, none of which have ever been moved
 - The last known communication was an email to Mike Hearn on April 23, 2011: "I've moved on to other things."
-- All entries include original source URLs for verification
+- All primary entries include original source URLs for verification; editorial analyses cite their sources for each claim
