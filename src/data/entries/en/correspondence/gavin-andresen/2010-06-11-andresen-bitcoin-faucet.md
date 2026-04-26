@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Based on publicly available information from Wikipedia, MIT Technology Review, and other published accounts. The specific private emails between Andresen and Satoshi from this period have not been publicly released in full"
   - name: "MIT Technology Review - The Man Who Really Built Bitcoin"
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
   - name: "CoinGeek - Bitcoin Faucet Turns 12"
@@ -36,5 +37,3 @@ After chatting with Satoshi about Bitcoin and its potential, Andresen identified
 Andresen announced his "really dumb" idea on the Bitcointalk forum on June 11, 2010. Over the lifetime of the faucet, he gave away approximately 19,700 BTC. Far from being dumb, the faucet became one of the most effective tools for early Bitcoin adoption, allowing newcomers to experience the technology firsthand.
 
 Andresen quickly proved himself as a capable and prolific developer, regularly submitting code to improve the Bitcoin software. His technical competence and responsible approach to development caught Satoshi's attention, leading to an increasingly close working relationship throughout 2010.
-
-*Source: Based on publicly available information from Wikipedia, MIT Technology Review, and other published accounts. The specific private emails between Andresen and Satoshi from this period have not been publicly released in full.*

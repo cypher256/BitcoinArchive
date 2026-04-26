@@ -24,6 +24,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全なプライベート書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
   - name: "Cryptography Mailing List Archive"
@@ -49,5 +50,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 サトシとトランメルのプライベートな書簡から生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。
-
-*出典：2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全なプライベート書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
     url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 translationStatus: complete
@@ -34,5 +35,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 ボームは7月15日以前は3〜5ノードの接続を維持できていたと述べており、2009年半ばのアクティブなビットコインネットワークの規模を示す貴重なデータポイントを提供している。適切にポート転送を設定した接続済みノードですらすべてのピアを失う可能性があったという事実は、この時期のネットワークが極めて小規模であったことを示唆している。
-
-*[出典: COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。]*

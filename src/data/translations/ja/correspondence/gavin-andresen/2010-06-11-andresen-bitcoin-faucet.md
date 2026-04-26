@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Wikipedia、MIT Technology Review、およびその他の公開された記録に基づく。この時期のアンドレセンとサトシ間の個別のプライベートメールは完全には公開されていない"
   - name: "MIT Technology Review - The Man Who Really Built Bitcoin"
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
   - name: "CoinGeek - Bitcoin Faucet Turns 12"
@@ -38,5 +39,3 @@ translationStatus: complete
 アンドレセンは2010年6月11日にBitcointalkフォーラムで自身の「実にばかげた」アイデアを発表した。フォーセットの運用期間を通じて、約19,700 BTCを配布した。ばかげたどころか、フォーセットはビットコイン初期の普及において最も効果的なツールの一つとなり、新規参入者がこの技術を直接体験することを可能にした。
 
 アンドレセンは有能で多作な開発者としてすぐに頭角を現し、ビットコインソフトウェアの改善のために定期的にコードを提出した。彼の技術的能力と責任ある開発姿勢はサトシの注目を集め、2010年を通じてますます緊密な協力関係へと発展した。
-
-*出典：Wikipedia、MIT Technology Review、およびその他の公開された記録に基づく。この時期のアンドレセンとサトシ間の個別のプライベートメールは完全には公開されていない。*

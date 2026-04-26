@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
     url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 translationStatus: complete
@@ -37,5 +38,3 @@ translationStatus: complete
 彼は[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)のIPアドレスが変わったかどうかを尋ね、新しいユーザーがソフトウェアを起動した際に少なくとも一つのノードに接続できるよう、サーバーをオンラインに保つことを勧めた。
 
 このやり取りは、2009年7月のビットコインの危うい存在を鮮明に描いている。ローンチから約6ヶ月後、ネットワークは極めて小規模であり、サトシは他にアクティブなノードが存在しない可能性を本気で心配していた。この時期のビットコインの存続は、ボーム、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)といった少数の献身的な初期採用者がノードを稼働し続けることにかかっていた。
-
-*[出典: COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。]*

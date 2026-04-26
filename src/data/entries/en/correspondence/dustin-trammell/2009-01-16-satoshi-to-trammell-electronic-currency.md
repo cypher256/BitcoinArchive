@@ -24,6 +24,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013. Also archived on the Cryptography mailing list and bitcoin-list. The full private correspondence is on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
   - name: "Cryptography Mailing List Archive"
@@ -43,5 +44,3 @@ The email contains what became one of Satoshi's most famous lines:
 > It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
 
 This public email, originating from Satoshi's private correspondence with Trammell, became one of the most frequently cited Satoshi writings in Bitcoin history.
-
-*Source: Published by Dustin Trammell in November 2013. Also archived on the Cryptography mailing list and bitcoin-list. The full private correspondence is on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails.*

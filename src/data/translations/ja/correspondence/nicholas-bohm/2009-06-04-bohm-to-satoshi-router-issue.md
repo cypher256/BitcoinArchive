@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
     url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA対クレイグ・ライト裁判の証拠。ボームの証人陳述書は{C/10/1}として提出された。メラー判事はパラグラフ271.9において、ボーム氏が「裁判開始の直前に残念ながら亡くなった」と記した"
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 translationStatus: complete
@@ -34,5 +35,3 @@ translationStatus: complete
 *[このメールの具体的な文面はCOPA対クレイグ・ライト裁判で証拠として提出されたが、全文は公開されていない。ボームの証人陳述書（C/10/1）にはサトシとの非公開メールのやり取りが含まれていた。]*
 
 ボームは以前、2009年1月にbitcoin-listメーリングリストを通じてサトシにバグを報告しており、それがBitcoin v0.1.5に含まれる修正につながった。サトシはv0.1.5のリリースノートでボームの名前を挙げて感謝している。「ニコラスが抱えていた問題の修正を含む」と記した。
-
-*[出典: COPA対クレイグ・ライト裁判の証拠。ボームの証人陳述書は{C/10/1}として提出された。メラー判事はパラグラフ271.9において、ボーム氏が「裁判開始の直前に残念ながら亡くなった」と記した。]*

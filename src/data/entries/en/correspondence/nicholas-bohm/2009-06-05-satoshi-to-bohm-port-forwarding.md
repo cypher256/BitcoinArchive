@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
     url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}"
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
@@ -30,5 +31,3 @@ secondarySources:
 Satoshi noted that if nobody currently online could accept inbound connections, nodes would fail to connect to the network entirely — highlighting just how fragile the Bitcoin network was in mid-2009 with only a handful of active nodes.
 
 *[The specific text of this email was entered as exhibit evidence in the COPA v. Craig Wright trial but has not been published in full.]*
-
-*[Source: COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}.]*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
     url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。IPアドレスの分析はDecashed（2025年3月）による"
   - name: "Decashed - Node IP Disclosed in COPA Case Likely Belonged to Dustin Trammell"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 translationStatus: complete
@@ -38,5 +39,3 @@ translationStatus: complete
 IPアドレス70.113.114.209は、後に研究者によって（Decashedの分析で文書化）、テキサス州ラウンドロック/オースティン地域に拠点を置いていた[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)のものである可能性が高いと特定された。これは、トランメルがこの時期に最も安定して稼働していた初期のビットコインノード運用者の一人であったという知見と一致している。
 
 このやり取りは、2009年7月のビットコインネットワークの運用状況を示す貴重なスナップショットを提供している。サトシ自身のノードは、たった一つの他のピアにのみ接続していた——ネットワーク全体で残り数台のアクティブなノードの一つであった。
-
-*[出典: COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。IPアドレスの分析はDecashed（2025年3月）による。]*

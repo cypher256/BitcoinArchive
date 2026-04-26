@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+    note: "Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21) included the complete five-email chain"
   - name: "Bitstamp - Who is Adam Back?"
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
 ---
@@ -33,5 +34,3 @@ Nearly five months after their last exchange, Satoshi wrote to Adam Back for the
 This email is the last known direct communication between Satoshi and Adam Back. Back did not engage with Bitcoin at this time and would not become actively involved until 2013. He later founded Blockstream in 2014.
 
 The five-email chain between Satoshi and Adam Back — spanning from August 20, 2008 to January 10, 2009 — documents one of the most significant intellectual connections in Bitcoin's prehistory: Satoshi's outreach to the creator of Hashcash, which led to the discovery of Wei Dai's b-money and shaped the final Bitcoin whitepaper.
-
-*[Source: Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21) included the complete five-email chain.]*

@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+    note: "Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21) included the complete five-email chain. Back's regret about not reading the paper was discussed in a Cointelegraph interview"
   - name: "Cointelegraph - Adam Back on Satoshi Emails"
     url: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 ---
@@ -32,5 +33,3 @@ In this fourth email of the chain, Adam Back suggested another paper Satoshi mig
 Notably, Back had still not read Satoshi's attached draft paper (ecash.pdf) at this point. He later publicly acknowledged this oversight in a Cointelegraph interview, saying it was "probably my biggest mistake." Back would not actively engage with Bitcoin until 2013, missing the opportunity to be involved from the very beginning despite being one of the first people Satoshi contacted.
 
 The exchange ended here for nearly five months, until Satoshi wrote again on January 10, 2009 — the day after Bitcoin's public launch.
-
-*[Source: Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21) included the complete five-email chain. Back's regret about not reading the paper was discussed in a Cointelegraph interview.]*

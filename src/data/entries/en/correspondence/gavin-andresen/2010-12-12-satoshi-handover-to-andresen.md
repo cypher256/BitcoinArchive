@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Based on Gavin Andresen's public Bitcointalk forum post (December 2010), Martti Malmi's published email archive (mmalmi.github.io/satoshi/), and multiple published accounts of the transition"
   - name: "CoinMarketCap - Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"
@@ -42,5 +43,3 @@ Andresen formally stepped into the leadership role and announced it publicly on 
 > With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for Bitcoin.
 
 This moment represents one of the most significant transitions in Bitcoin's history. Satoshi's endorsement of Andresen was not arbitrary -- it reflected months of working together and Satoshi's confidence in Andresen's technical abilities, professionalism, and alignment with Bitcoin's goals. Andresen went on to become the primary maintainer of what would later be called Bitcoin Core, guiding the project through a critical period of growth.
-
-*Source: Based on Gavin Andresen's public Bitcointalk forum post (December 2010), Martti Malmi's published email archive (mmalmi.github.io/satoshi/), and multiple published accounts of the transition.*

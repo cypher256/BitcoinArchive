@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+    note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21、2023年11月7日付）に5通の完全なメールチェーンが含まれていた。Bitcoin Magazineで公開"
   - name: "CryptoSlate - Adam Back files previously unseen Satoshi emails"
     url: "https://cryptoslate.com/adam-back-files-previously-unseen-satoshi-nakamoto-emails-in-craig-wright-trial/"
 translationStatus: complete
@@ -41,5 +42,3 @@ translationStatus: complete
 *[サトシは、コイン生成とネットワークのタイムスタンプにプルーフ・オブ・ワークを使用する仕組みを説明し、多数派の合意を自明に証明するためにハッシュベースのプルーフ・オブ・ワーク・チェーンを用いることを述べた。]*
 
 この交換の後、サトシは2008年8月22日にウェイ・ダイに直接連絡を取り、b-moneyがビットコインホワイトペーパーの参考文献[1]として引用されることにつながる別の書簡を開始した。
-
-*[出典: 2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21、2023年11月7日付）に5通の完全なメールチェーンが含まれていた。Bitcoin Magazineで公開。]*

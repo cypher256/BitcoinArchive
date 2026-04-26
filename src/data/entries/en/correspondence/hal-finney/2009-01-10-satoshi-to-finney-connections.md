@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Chain Bulletin - Satoshi's timezone analysis"
     url: "https://chainbulletin.com/no-coindesk-satoshis-local-time-zone-wasnt-utc8"
+    note: "Published by CoinDesk, November 26, 2020. There is a date discrepancy across sources — this email may have been sent on January 10 or January 12, 2009"
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
 relatedEntries:
@@ -37,5 +38,3 @@ This admission reveals that Satoshi was operating behind a firewall or NAT that 
 The email headers contained a timezone of UTC+8, which triggered speculation about Satoshi's location. However, Chain Bulletin journalist Doncho Karaivanov demonstrated that the UTC+8 timestamp originated from AnonymousSpeech.com's email relay server (based in Tokyo since 1996, using Asia/Hong_Kong timezone), not from Satoshi's local machine.
 
 This email is part of the private correspondence recovered from Hal Finney's personal computer files. Finney described the broader exchange in his "Bitcoin and me" post: "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them." Only three of these private emails have been published; the remainder presumably exist in the files Fran Finney provided to journalist Nathaniel Popper in March 2014.
-
-*[Source: Published by CoinDesk, November 26, 2020. There is a date discrepancy across sources — this email may have been sent on January 10 or January 12, 2009.]*

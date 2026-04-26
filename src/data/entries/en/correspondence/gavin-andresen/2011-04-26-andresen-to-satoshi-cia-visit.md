@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Gavin Andresen's Blog - Eleven Years Ago Today"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
+    note: "Published by Gavin Andresen on his blog on April 26, 2022, the eleventh anniversary of the email exchange"
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "Blockworks - Satoshi Disappear Day"
@@ -45,5 +46,3 @@ Satoshi never replied to this message and was never heard from again.
 The timing of Satoshi's disappearance following this disclosure has fueled years of speculation. Some believe Satoshi's departure was motivated by concern over government attention to Bitcoin. Others note that Satoshi had already been gradually withdrawing for months and that the April 26 email's tone -- "I've moved on to other things" -- suggests the departure was planned regardless of Andresen's CIA disclosure.
 
 Andresen followed through on his promise and presented at CIA headquarters on June 14, 2011.
-
-*Source: Published by Gavin Andresen on his blog on April 26, 2022, the eleventh anniversary of the email exchange.*

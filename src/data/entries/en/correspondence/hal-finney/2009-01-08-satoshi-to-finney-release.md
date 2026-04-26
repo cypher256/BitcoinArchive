@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
+    note: "Published by CoinDesk, November 26, 2020. Original files from Hal Finney's personal computer, provided by Fran Finney to Nathaniel Popper in March 2014"
   - name: "Bitcoin.com - Satoshi Archive: Email to Hal Finney"
     url: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 relatedEntries:
@@ -42,5 +43,3 @@ Sent from satoshi@vistomail.com on Thursday, January 8, 2009 at 20:54:55 PST —
 This brief personal email shows that Satoshi valued Finney's involvement enough to send a private notification in addition to the public announcement. Finney responded by downloading the software and posting his famous ["Running bitcoin" tweet](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) on January 11, 2009. The next day, January 12, Satoshi sent Finney 10 BTC in block 170 — the [first known person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
 
 Hal Finney later recalled in his "Bitcoin and me" post (March 2013): "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them."
-
-*[Source: Published by CoinDesk, November 26, 2020. Original files from Hal Finney's personal computer, provided by Fran Finney to Nathaniel Popper in March 2014.]*

@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Gavin Andresen's Blog - Eleven Years Ago Today"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
+    note: "2022年4月26日、メール交換の11周年にギャビン・アンドレセンが自身のブログで公開"
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "Blockworks - Satoshi Disappear Day"
@@ -49,5 +50,3 @@ translationStatus: complete
 この開示の後にサトシが姿を消したタイミングは、長年にわたる憶測を呼んだ。サトシの離脱はビットコインへの政府の関心に対する懸念が動機だったと考える人もいる。一方で、サトシは数ヶ月前から徐々に身を引いており、4月26日のメールの口調——「他のことに取り組むことにした」——は、アンドレセンのCIA開示とは無関係に離脱が計画されていたことを示唆しているという指摘もある。
 
 アンドレセンは約束を果たし、2011年6月14日にCIA本部でプレゼンテーションを行った。
-
-*出典：2022年4月26日、メール交換の11周年にギャビン・アンドレセンが自身のブログで公開。*

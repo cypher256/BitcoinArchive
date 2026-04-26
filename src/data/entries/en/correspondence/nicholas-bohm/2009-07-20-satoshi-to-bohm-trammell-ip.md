@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
     url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}. IP address analysis by Decashed (March 2025)"
   - name: "Decashed - Node IP Disclosed in COPA Case Likely Belonged to Dustin Trammell"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
@@ -34,5 +35,3 @@ He noted that if [Bohm](/BitcoinArchive/participants/nicholas-bohm/) wasn't conn
 The IP address 70.113.114.209 was later identified by researchers (documented in a Decashed analysis) as likely belonging to [Dustin Trammell](/BitcoinArchive/participants/dustin-trammell/), who was based in the Round Rock/Austin, Texas area. This aligns with what is known about Trammell being one of the most consistent early Bitcoin node operators during this period.
 
 This exchange provides a rare operational snapshot of the Bitcoin network in July 2009: Satoshi's own node was connected to just a single other peer — one of the few remaining active nodes on the entire network.
-
-*[Source: COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}. IP address analysis by Decashed (March 2025).]*

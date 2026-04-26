@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Gavin Andresen's Blog - Eleven Years Ago Today"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
+    note: "Published by Gavin Andresen on his blog on April 26, 2022, the eleventh anniversary of the email. Originally sent from satoshin@gmx.com"
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 quotes:
@@ -56,5 +57,3 @@ The CAlert key was a powerful tool that enabled its holder to broadcast emergenc
 This email reveals several important aspects of Satoshi's thinking in his final days of involvement: his discomfort with personal attention, his desire for Bitcoin to be recognized as a collaborative open source project rather than the creation of one mysterious individual, and his conviction that the project could sustain itself without him.
 
 Satoshi never replied to Andresen's subsequent response.
-
-*Source: Published by Gavin Andresen on his blog on April 26, 2022, the eleventh anniversary of the email. Originally sent from satoshin@gmx.com.*

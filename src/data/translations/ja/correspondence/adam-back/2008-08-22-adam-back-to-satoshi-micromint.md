@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+    note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21）に5通の完全なメールチェーンが含まれていた。論文を読まなかったことへの後悔はCointelegraphのインタビューで語られた"
   - name: "Cointelegraph - Adam Back on Satoshi Emails"
     url: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 translationStatus: complete
@@ -34,5 +35,3 @@ translationStatus: complete
 注目すべきは、バックがこの時点でもサトシの添付論文（ecash.pdf）を読んでいなかったことである。彼は後にCointelegraphのインタビューでこの見落としを公に認め、「おそらく人生最大の失敗だった」と語った。バックが積極的にビットコインに関わるようになったのは2013年になってからであり、最初にサトシが連絡を取った人物の一人であったにもかかわらず、最初期から参加する機会を逃してしまった。
 
 このメールのやり取りはここで約5ヶ月間途絶え、ビットコインの公開ローンチの翌日である2009年1月10日にサトシが再び手紙を書くことになる。
-
-*[出典: 2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21）に5通の完全なメールチェーンが含まれていた。論文を読まなかったことへの後悔はCointelegraphのインタビューで語られた。]*

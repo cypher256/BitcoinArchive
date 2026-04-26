@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
+    note: "Cointelegraphおよびその他のメディアとのインタビューにおけるラズロ・ハニエツの公開発言に基づく。完全なプライベートメールは公開されていないが、ハニエツは複数のインタビューでこれらの詳細を共有している"
   - name: "InsideBitcoins - Laszlo Hanyecz Claims Satoshi Invented GPU Mining"
     url: "https://insidebitcoins.com/news/laszlo-hanyecs-claims-satoshi-invented-gpu-mining-to-prevent-51-attacks"
 relatedEntries:
@@ -47,5 +48,3 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 このやり取りはサトシの戦略的思考の魅力的な一面を明らかにしている：アクセシビリティを守るために公のGPUマイニングを抑制しつつ、敵対的な攻撃に対する保険としてプライベートにGPUマイニング能力を維持していた。これは、サトシが潜在的な攻撃ベクトルについて深く考え、事前に防御策を準備していたことを示している。
-
-*出典：Cointelegraphおよびその他のメディアとのインタビューにおけるラズロ・ハニエツの公開発言に基づく。完全なプライベートメールは公開されていないが、ハニエツは複数のインタビューでこれらの詳細を共有している。*

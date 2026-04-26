@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails. Transaction details documented on Trammell's blog"
   - name: "Dustin Trammell's Blog - Block 286"
     url: "https://blog.dustintrammell.com/block-286-and-satoshis-coins/"
 relatedEntries:
@@ -40,5 +41,3 @@ Trammell responded later that day (January 13, 2009, at 18:40 UTC) with his IP a
 The following day, January 14, 2009 at 19:46 UTC, Satoshi sent Trammell 25.0 BTC in a single transaction (txid: d71fd2f64c0b34465b7518d240c00e83f6a5b10138a7079d1252858fe7e6b577). This transaction was sent from address 1Jhk2DHosaaZx1E4CbnTGcKM7FC88YHYv9 to Trammell's address 1DCbY2GYVaAMCBpuBNN5GVg3a47pNK1wdi.
 
 Their subsequent correspondence also touched on the insecurities of sending bitcoin by IP address. Satoshi ultimately dropped the send-to-IP feature from the software entirely, partly informed by these discussions.
-
-*Source: Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails. Transaction details documented on Trammell's blog.*

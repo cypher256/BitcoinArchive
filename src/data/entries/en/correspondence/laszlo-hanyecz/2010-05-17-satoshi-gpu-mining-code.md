@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
+    note: "Based on Laszlo Hanyecz's public statements in interviews with Cointelegraph and other outlets. The full private email correspondence has not been publicly released, but Hanyecz has shared these details in multiple interviews"
   - name: "InsideBitcoins - Laszlo Hanyecz Claims Satoshi Invented GPU Mining"
     url: "https://insidebitcoins.com/news/laszlo-hanyecs-claims-satoshi-invented-gpu-mining-to-prevent-51-attacks"
 relatedEntries:
@@ -41,5 +42,3 @@ Hanyecz noted that his own GPU code actually performed better than Satoshi's ver
 > And I got the feeling, that part of it was that he didn't want to prematurely optimize it because he didn't want to run up the difficulty on the network.
 
 This exchange reveals a fascinating aspect of Satoshi's strategic thinking: he was simultaneously discouraging public GPU mining to protect accessibility while privately maintaining GPU mining capability as insurance against adversarial attacks. It demonstrates that Satoshi had thought deeply about potential attack vectors and had prepared defensive measures well in advance.
-
-*Source: Based on Laszlo Hanyecz's public statements in interviews with Cointelegraph and other outlets. The full private email correspondence has not been publicly released, but Hanyecz has shared these details in multiple interviews.*

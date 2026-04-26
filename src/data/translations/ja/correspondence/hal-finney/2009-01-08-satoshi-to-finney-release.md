@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
+    note: "CoinDesk、2020年11月26日公開。ハル・フィニーの個人コンピューターの原本ファイルから。2014年3月にフラン・フィニーがナサニエル・ポッパーに提供"
   - name: "Bitcoin.com - Satoshi Archive: Email to Hal Finney"
     url: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 relatedEntries:
@@ -46,5 +47,3 @@ translationStatus: complete
 この簡潔な個人メールは、サトシがフィニーの関与を十分に重視し、公開アナウンスに加えて個別の通知を送るほどであったことを示している。フィニーはソフトウェアをダウンロードして応答し、2009年1月11日に有名な[「Running bitcoin」ツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)を投稿した。翌日の1月12日、サトシはブロック170でフィニーに10 BTCを送金した——これが知られている[最初の個人間ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
 
 ハル・フィニーは後に「Bitcoin and me」の投稿（2013年3月）で次のように回想している。「その後数日間、サトシとメールのやり取りを続けた。主に私がバグを報告し、彼がそれを修正するという内容だった。」
-
-*[出典: CoinDesk、2020年11月26日公開。ハル・フィニーの個人コンピューターの原本ファイルから。2014年3月にフラン・フィニーがナサニエル・ポッパーに提供。]*

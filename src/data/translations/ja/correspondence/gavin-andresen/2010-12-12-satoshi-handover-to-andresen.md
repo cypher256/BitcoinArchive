@@ -22,6 +22,7 @@ tags:
 secondarySources:
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "ギャビン・アンドレセンのBitcointalkフォーラム公開投稿（2010年12月）、マルッティ・マルミの公開メールアーカイブ（mmalmi.github.io/satoshi/）、および移行に関する複数の公開された記録に基づく"
   - name: "CoinMarketCap - Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"
@@ -48,5 +49,3 @@ featured: true
 
 <!-- speaker: narrator -->
 この瞬間はビットコインの歴史における最も重要な転換点の一つである。サトシのアンドレセン承認は恣意的なものではなく、数ヶ月にわたる共同作業と、アンドレセンの技術力、プロフェッショナリズム、そしてビットコインの目標への共感に対するサトシの信頼を反映していた。アンドレセンはその後、後にBitcoin Coreと呼ばれるようになるプロジェクトの主要メンテナーとなり、重要な成長期を通じてプロジェクトを導いた。
-
-*出典：ギャビン・アンドレセンのBitcointalkフォーラム公開投稿（2010年12月）、マルッティ・マルミの公開メールアーカイブ（mmalmi.github.io/satoshi/）、および移行に関する複数の公開された記録に基づく。*

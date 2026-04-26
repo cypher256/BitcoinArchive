@@ -21,6 +21,7 @@ tags:
 secondarySources:
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
+    note: "CoinDesk（2025年）、Bitcoin Magazine、Cointelegraphなどとの複数のインタビューでラズロ・ハニエツが共有したSatoshiのメールからの引用。完全なプライベート書簡は公開されていない"
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 relatedEntries:
@@ -47,5 +48,3 @@ translationStatus: complete
 ハニエツは後に自身の発見の影響について罪悪感を感じたことを回想している。2019年のインタビューで彼は語った：「その後、[GPUマイニングの]宣伝はやめた。『あなたのプロジェクトを台無しにしてしまった気がする。ごめん』という気持ちだった。彼はCPUでブロックをマイニングできないことで落胆する人がいるかもしれないと心配していた。」
 
 このやり取りは特に示唆に富んでいる。なぜならサトシはイデオロギー的な理由でGPUマイニングに反対していたわけではなく、富の集中を気にしないと明言していたからだ。彼の懸念は純粋に戦略的なものであった：GPUの早すぎる普及は、一般ユーザーが参加するインセンティブを奪うことで初期のネットワーク成長を阻害する。
-
-*出典：CoinDesk（2025年）、Bitcoin Magazine、Cointelegraphなどとの複数のインタビューでラズロ・ハニエツが共有したSatoshiのメールからの引用。完全なプライベート書簡は公開されていない。*
