@@ -3,7 +3,8 @@ title: "Satoshi Nakamoto's P2P Foundation return: 'I am not Dorian Nakamoto'"
 date: 2014-03-07T12:21:00Z
 type: "article"
 source: "p2pfoundation"
-sourceUrl: "http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
+sourceUrl: "https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
+sourceStatus: "archived"
 author: "Satoshi Nakamoto (disputed)"
 participants:
   - name: "Satoshi Nakamoto"

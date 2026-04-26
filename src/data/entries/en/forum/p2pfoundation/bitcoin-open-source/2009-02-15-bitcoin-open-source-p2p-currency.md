@@ -3,7 +3,8 @@ title: "Bitcoin open source implementation of P2P currency"
 date: 2009-02-15T16:42:00Z
 type: "forum-post"
 source: "p2pfoundation"
-sourceUrl: "http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"
+sourceUrl: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
+sourceStatus: "archived"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

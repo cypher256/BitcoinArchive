@@ -3,7 +3,8 @@ title: "Satoshi Nakamoto's P2P Foundation account shows login activity (2016) â€
 date: 2016-12-12T00:00:00Z
 type: "article"
 source: "p2pfoundation"
-sourceUrl: "http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
+sourceUrl: "https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
+sourceStatus: "archived"
 author: "Unknown"
 participants:
   - name: "Satoshi Nakamoto"

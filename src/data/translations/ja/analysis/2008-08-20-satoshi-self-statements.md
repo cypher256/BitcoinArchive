@@ -16,8 +16,8 @@ tags:
   - "self-statements"
   - "analysis"
 secondarySources:
-  - name: "P2P Foundation — Satoshi Nakamoto profile"
-    url: "https://p2pfoundation.ning.com/profile/SatoshiNakamoto"
+  - name: "P2P Foundation — Satoshi Nakamoto profile (Wayback Machine snapshot; original offline since the Ning network was taken down)"
+    url: "https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
   - name: "Adam Back's complete emails with Satoshi (Bitcoin Magazine)"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
   - name: "Satoshi Nakamoto Institute — Complete Works"
@@ -61,9 +61,9 @@ translationStatus: complete
 
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
-| 生年月日：1975 年 4 月 5 日 | [P2P Foundation プロフィール](http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | プロフィール作成 2009 年 | プロフィール項目。架空のものと広く考えられている |
-| 国籍：日本人 | [P2P Foundation プロフィール](http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | 同上 | プロフィール項目。英連邦慣習の英文と矛盾 |
-| 所在地：日本 | [P2P Foundation プロフィール](http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | 同上 | プロフィール項目。投稿タイムスタンプ分析と矛盾 |
+| 生年月日：1975 年 4 月 5 日 | [P2P Foundation プロフィール（Wayback）](https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | プロフィール作成 2009 年 | プロフィール項目。架空のものと広く考えられている |
+| 国籍：日本人 | [P2P Foundation プロフィール（Wayback）](https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | 同上 | プロフィール項目。英連邦慣習の英文と矛盾 |
+| 所在地：日本 | [P2P Foundation プロフィール（Wayback）](https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | 同上 | プロフィール項目。投稿タイムスタンプ分析と矛盾 |
 
 3 つの識別子主張はすべて単一のアーティファクト（P2P Foundation プロフィール）にまとまっており、公開記録の他の場所には現れない。
 
