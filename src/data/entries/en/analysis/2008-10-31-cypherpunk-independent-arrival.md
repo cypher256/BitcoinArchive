@@ -113,7 +113,7 @@ Adam Back's reply on August 21, 2008 introduced Satoshi to b-money for the first
 
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
-This is a primary-source confirmation, in Satoshi's own words, that during the 18 months of design and coding he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
+This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the 18 months of design and coding he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
 
 ### 2.3 What this constrains
 
