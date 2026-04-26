@@ -22,18 +22,54 @@ const { source, hasEn } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const sourceLabel = t(`source.${source}` as any) || source;
+
+const pageDescription = `${sourceLabel}に由来するコミュニケーションのアーカイブ。サトシ・ナカモトと初期ビットコイン貢献者のフォーラム投稿・メール・技術的議論を、原典を保持して収録。`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${sourceLabel} - ${t('site.title')}`,
+  "url": absoluteUrl(`/sources/${source}/`, lang),
+  "description": pageDescription,
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": sourceLabel,
+    "numberOfItems": displayEntries.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
+  },
+};
 ---
 
 <BaseLayout
   title={`${sourceLabel} - ${t('site.title')}`}
-  description={`${sourceLabel}におけるサトシ・ナカモトの投稿・メール・技術的議論のアーカイブ（2008〜2010年）`}
+  description={pageDescription}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/sources/${source}/`, 'en') : undefined}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{sourceLabel}</h1>
+    <p class="page-lead">この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。</p>
     <p class="entry-count">{displayEntries.length} エントリー</p>
     {displayEntries.map((entry) => {
       const tid = resolveThreadId(entry);
@@ -60,6 +96,12 @@ const sourceLabel = t(`source.${source}` as any) || source;
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;

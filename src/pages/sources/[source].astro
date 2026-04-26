@@ -22,18 +22,54 @@ const { source, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const sourceLabel = t(`source.${source}` as any) || source;
+
+const pageDescription = `Archive of communications originating from ${sourceLabel} — Satoshi Nakamoto and early Bitcoin contributors' forum posts, emails, and technical discussions, with original sources preserved.`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${sourceLabel} - ${t('site.title')}`,
+  "url": absoluteUrl(`/sources/${source}/`, lang),
+  "description": pageDescription,
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": sourceLabel,
+    "numberOfItems": displayEntries.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
+  },
+};
 ---
 
 <BaseLayout
   title={`${sourceLabel} - ${t('site.title')}`}
-  description={`Archive of Satoshi Nakamoto's communications from ${sourceLabel} — forum posts, emails, and technical discussions (2008–2010)`}
+  description={pageDescription}
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/sources/${source}/`, 'ja') : undefined}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{sourceLabel}</h1>
+    <p class="page-lead">Entries originating from this channel. The source axis lets you trace the venues Satoshi and contemporaries used over time.</p>
     <p class="entry-count">{displayEntries.length} entries</p>
     {displayEntries.map((entry) => {
       const tid = resolveThreadId(entry);
@@ -60,6 +96,12 @@ const sourceLabel = t(`source.${source}` as any) || source;
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;

@@ -22,18 +22,54 @@ const { type, hasEn } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const typeLabel = t(`type.${type}` as any) || type;
+
+const pageDescription = `${typeLabel}形式のエントリー。サトシ・ナカモトと初期ビットコイン貢献者によるこの形式の通信を、原典とともにアーカイブから集約。`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${typeLabel} - ${t('site.title')}`,
+  "url": absoluteUrl(`/types/${type}/`, lang),
+  "description": pageDescription,
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": typeLabel,
+    "numberOfItems": displayEntries.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
+  },
+};
 ---
 
 <BaseLayout
   title={`${typeLabel} - ${t('site.title')}`}
-  description={`${typeLabel} — サトシ・ナカモトと初期ビットコイン貢献者のコミュニケーションを原文とともにアーカイブ`}
+  description={pageDescription}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/types/${type}/`, 'en') : undefined}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{typeLabel}</h1>
+    <p class="page-lead">この形式（タイプ）のエントリー集約。形式軸で時間を追うと、ビットコイン黎明期のコミュニケーション様式の変遷が見えます。</p>
     <p class="entry-count">{displayEntries.length} エントリー</p>
     {displayEntries.map((entry) => {
       const tid = resolveThreadId(entry);
@@ -61,6 +97,12 @@ const typeLabel = t(`type.${type}` as any) || type;
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;

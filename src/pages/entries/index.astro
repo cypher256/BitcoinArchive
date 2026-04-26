@@ -18,37 +18,51 @@ const gitDates: Record<string, { createdAt: string; updatedAt: string }> = exist
   ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
   : {};
 const hasGitDates = Object.keys(gitDates).length > 0;
+const pageDescription = "Complete chronological archive of Satoshi Nakamoto and early Bitcoin contributors' communications — forum posts, mailing-list discussions, private correspondence, and primary historical records, all with original sources preserved.";
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": `${t('nav.entries')} - ${t('site.title')}`,
   "url": absoluteUrl('/entries/', lang),
-  "description": t('site.description'),
+  "description": pageDescription,
   "inLanguage": lang,
   "mainEntity": {
     "@type": "ItemList",
     "name": t('nav.entries'),
     "numberOfItems": displayEntries.length,
     "itemListOrder": "https://schema.org/ItemListOrderDescending",
-    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "url": absoluteUrl(`/entries/${entry.id}/`, lang),
-      "name": entry.data.title,
-    })),
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
   },
 };
 ---
 
 <BaseLayout
   title={`${t('nav.entries')} - ${t('site.title')}`}
-  description={t('site.description')}
+  description={pageDescription}
   lang={lang}
   alternateJa={absoluteUrl('/entries/', 'ja')}
   structuredData={structuredData}
 >
   <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
+    <p class="page-lead">Every primary-source record in this archive, sorted chronologically. Filter by tag, type, or source to narrow.</p>
     <div class="entries-header">
       <p class="entry-count">{entries.length} entries</p>
       <div class="sort-controls">
@@ -158,6 +172,12 @@ const structuredData = {
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entries-header {
     display: flex;
     align-items: center;

@@ -33,17 +33,54 @@ const { tag, hasEn } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
+const tagLabel = translateTag(tag, lang);
+
+const pageDescription = `「${tagLabel}」タグの付いたエントリー。ビットコイン黎明期のサトシ・ナカモトの投稿・メール・関連する歴史的記録を、このトピックの下に集約。`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${tagLabel} - ${t('site.title')}`,
+  "url": absoluteUrl(`/tags/${tag}/`, lang),
+  "description": pageDescription,
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": tagLabel,
+    "numberOfItems": displayEntries.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
+  },
+};
 ---
 
 <BaseLayout
-  title={`${translateTag(tag, lang)} - ${t('site.title')}`}
-  description={`「${translateTag(tag, lang)}」に関するサトシ・ナカモトの投稿・メール・歴史的記録`}
+  title={`${tagLabel} - ${t('site.title')}`}
+  description={pageDescription}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/tags/${tag}/`, 'en') : undefined}
+  structuredData={structuredData}
 >
   <div class="container">
-    <h1>{translateTag(tag, lang)}</h1>
+    <h1>{tagLabel}</h1>
+    <p class="page-lead">このトピックでタグ付けされたエントリー。タイプ・ソースを横断し、人物・出来事・テーマの関連を辿れます。</p>
     <p class="entry-count">{displayEntries.length} エントリー</p>
     {displayEntries.map((entry) => {
       const tid = resolveThreadId(entry);
@@ -70,6 +107,12 @@ const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;

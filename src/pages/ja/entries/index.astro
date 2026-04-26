@@ -20,37 +20,51 @@ const gitDates: Record<string, { createdAt: string; updatedAt: string }> = exist
   ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
   : {};
 const hasGitDates = Object.keys(gitDates).length > 0;
+const pageDescription = "サトシ・ナカモトと初期ビットコイン貢献者によるコミュニケーションの完全な時系列アーカイブ。フォーラム投稿、メーリングリスト、私信、一次資料を、原典を保持した形で収録。";
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": `${t('nav.entries')} - ${t('site.title')}`,
   "url": absoluteUrl('/entries/', lang),
-  "description": t('site.description'),
+  "description": pageDescription,
   "inLanguage": lang,
   "mainEntity": {
     "@type": "ItemList",
     "name": t('nav.entries'),
     "numberOfItems": displayEntries.length,
     "itemListOrder": "https://schema.org/ItemListOrderDescending",
-    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "url": absoluteUrl(`/entries/${entry.id}/`, lang),
-      "name": entry.data.title,
-    })),
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
   },
 };
 ---
 
 <BaseLayout
   title={`${t('nav.entries')} - ${t('site.title')}`}
-  description={t('site.description')}
+  description={pageDescription}
   lang={lang}
   alternateEn={absoluteUrl('/entries/', 'en')}
   structuredData={structuredData}
 >
   <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
+    <p class="page-lead">このアーカイブに収録された全ての一次資料を時系列で表示。タグ・タイプ・ソースで絞り込めます。</p>
     <div class="entries-header">
       <p class="entry-count">{entries.length} 件</p>
       <div class="sort-controls">
@@ -160,6 +174,12 @@ const structuredData = {
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entries-header {
     display: flex;
     align-items: center;

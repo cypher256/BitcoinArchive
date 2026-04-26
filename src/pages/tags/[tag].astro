@@ -33,17 +33,53 @@ const { tag, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
+
+const pageDescription = `Entries tagged "${tag}" — Satoshi Nakamoto's posts, emails, and related historical records from Bitcoin's earliest days, surfaced under this topic.`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${tag} - ${t('site.title')}`,
+  "url": absoluteUrl(`/tags/${tag}/`, lang),
+  "description": pageDescription,
+  "inLanguage": lang,
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": tag,
+    "numberOfItems": displayEntries.length,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      const itemUrl = isThread
+        ? absoluteUrl(`/entries/threads/${tid}/`, lang)
+        : absoluteUrl(`/entries/${entry.id}/`, lang);
+      const itemName = isThread
+        ? (threadTitles.get(tid!) || entry.data.title)
+        : entry.data.title;
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": itemUrl,
+        "name": itemName,
+      };
+    }),
+  },
+};
 ---
 
 <BaseLayout
   title={`${tag} - ${t('site.title')}`}
-  description={`Entries about "${tag}" — Satoshi Nakamoto's posts, emails, and related historical records from Bitcoin's earliest days`}
+  description={pageDescription}
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/tags/${tag}/`, 'ja') : undefined}
+  structuredData={structuredData}
 >
   <div class="container">
     <h1>{tag}</h1>
+    <p class="page-lead">Entries tagged with this topic. Spans across types and sources — explore connections between people, events, and themes.</p>
     <p class="entry-count">{displayEntries.length} entries</p>
     {displayEntries.map((entry) => {
       const tid = resolveThreadId(entry);
@@ -70,6 +106,12 @@ const displayEntries = collapseThreads(filtered, threadCounts, threadStarters);
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    max-width: 70ch;
+  }
   .entry-count {
     font-family: var(--font-heading);
     font-size: 0.9rem;
