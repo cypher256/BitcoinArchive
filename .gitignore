@@ -15,6 +15,7 @@ pnpm-debug.log*
 
 # generated at build time
 src/data/git-dates.json
+src/data/derived-related.json
 
 # environment variables
 .env
