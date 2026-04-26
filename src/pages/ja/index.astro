@@ -1,18 +1,55 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import EntryCard from '../../components/EntryCard.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
 import CharacterIntro from '../../components/CharacterIntro.astro';
 import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag, absoluteUrl } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
-import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 
 const lang = 'ja';
 const t = useTranslations(lang);
 const jaEntries = await getDisplayEntries(lang);
 const enEntries = await getDisplayEntries('en');
 const entries = jaEntries.length > 0 ? jaEntries : enEntries;
-const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
+
+// Start-here: 6 hand-picked entries that trace Satoshi's documented arc.
+const startHereEntries = [
+  {
+    id: 'threads/emails/cryptography/bitcoin-p2p-e-cash-paper',
+    date: '2008-10-31',
+    title: 'ホワイトペーパー公開',
+    desc: '暗号学メーリングリストに投稿された、ビットコインを記述した九ページの論文。',
+  },
+  {
+    id: 'sourceforge/2009-01-03-genesis-block',
+    date: '2009-01-03',
+    title: 'ジェネシスブロック',
+    desc: '銀行救済を報じた <em>The Times</em> の見出しが刻まれた、チェーン最初の1ブロック。ここからビットコインが動き出した。',
+  },
+  {
+    id: 'aftermath/2009-01-11-hal-finney-running-bitcoin-tweet',
+    date: '2009-01-11',
+    title: '「Running bitcoin」',
+    desc: 'ハル・フィニーの三語。サトシの外側で動くネットワーク、その最初の証言。',
+  },
+  {
+    id: 'aftermath/2010-05-22-bitcoin-pizza-day',
+    date: '2010-05-22',
+    title: 'ビットコイン・ピザの日',
+    desc: 'ピザ 2 枚に 10,000 BTC。実世界で初めてのビットコイン取引。',
+  },
+  {
+    id: 'correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen',
+    date: '2010-12-12',
+    title: 'メンテナの引き継ぎ',
+    desc: 'サトシがギャビン・アンドレセンを後継のメンテナに指名。プロジェクトでの彼の存在が、静かに終わる。',
+  },
+  {
+    id: 'correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on',
+    date: '2011-04-23',
+    title: '二行のメール',
+    desc: '「他のことに取り組むことにした」 ― サトシからマイク・ハーンへの、最後の既知のメッセージ。',
+  },
+];
 
 // Tag counts
 const tagCounts = new Map<string, number>();
@@ -54,9 +91,28 @@ const topParticipants = Array.from(participantMap.entries())
   .slice(0, TOP_N);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
-// Featured entries (sorted by date)
-const featuredSorted = [...entries].filter(e => e.data.featured).sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
-const featuredEntries = collapseThreads(featuredSorted, threadCounts, threadStarters);
+// Analyses for the home page.
+// Order rule: entries with an explicit homeOrder (ascending: 1 = topmost),
+// then everything else by git creation date (newest first), capped at 6 items.
+import { existsSync as _existsSync, readFileSync as _readFileSync } from 'fs';
+import { join as _join } from 'path';
+const _gitDatesPath = _join(process.cwd(), 'src/data/git-dates.json');
+const _gitDates: Record<string, { createdAt: string; updatedAt: string }> = _existsSync(_gitDatesPath)
+  ? JSON.parse(_readFileSync(_gitDatesPath, 'utf-8'))
+  : {};
+const allAnalyses = entries.filter((e: any) => e.data.type === 'analysis');
+const orderedAnalyses = allAnalyses
+  .filter((e: any) => typeof e.data.homeOrder === 'number')
+  .sort((a: any, b: any) => a.data.homeOrder - b.data.homeOrder);
+const remainingAnalyses = allAnalyses
+  .filter((e: any) => typeof e.data.homeOrder !== 'number')
+  .sort((a: any, b: any) => {
+    const aDate = _gitDates[a.id]?.createdAt || '';
+    const bDate = _gitDates[b.id]?.createdAt || '';
+    return bDate.localeCompare(aDate);
+  });
+const homeAnalyses = [...orderedAnalyses, ...remainingAnalyses].slice(0, 6);
+const hasMoreAnalyses = allAnalyses.length > 6;
 
 // Network graph data
 const graphData = computeGraphData(entries, lang);
@@ -69,13 +125,13 @@ const structuredData = {
   "inLanguage": lang,
   "mainEntity": {
     "@type": "ItemList",
-    "name": "注目のエントリー",
-    "numberOfItems": featuredEntries.length,
-    "itemListElement": featuredEntries.slice(0, 10).map((entry, index) => ({
+    "name": "ここから読む",
+    "numberOfItems": startHereEntries.length,
+    "itemListElement": startHereEntries.map((entry, index) => ({
       "@type": "ListItem",
       "position": index + 1,
       "url": absoluteUrl(`/entries/${entry.id}/`, lang),
-      "name": entry.data.title,
+      "name": entry.title,
     })),
   },
 };
@@ -105,21 +161,32 @@ function tagWeight(count: number, max: number): number {
       </div>
       <p class="start-here-subtitle">{t('home.startHereSubtitle' as any)}</p>
       <div class="start-grid">
-        <a href={localePath('/entries/threads/emails/cryptography/bitcoin-p2p-e-cash-paper/', lang)} class="start-card">
-          <span class="start-date">2008-10-31</span>
-          <span class="start-title">ホワイトペーパー公開</span>
-          <span class="start-desc">暗号学メーリングリストに投稿された、ビットコインを記述した九ページの論文。</span>
-        </a>
-        <a href={localePath('/entries/sourceforge/2009-01-03-genesis-block/', lang)} class="start-card">
-          <span class="start-date">2009-01-03</span>
-          <span class="start-title">ジェネシスブロック</span>
-          <span class="start-desc">銀行救済を報じた <em>The Times</em> の見出しが刻まれた、チェーン最初の1ブロック。ここからビットコインが動き出した。</span>
-        </a>
-        <a href={localePath('/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/', lang)} class="start-card">
-          <span class="start-date">2011-04-23</span>
-          <span class="start-title">二行のメール</span>
-          <span class="start-desc">「他のことに取り組むことにした」——サトシからマイク・ハーンへの、最後の既知のメッセージ。</span>
-        </a>
+        {startHereEntries.map((entry) => (
+          <a href={localePath(`/entries/${entry.id}/`, lang)} class="start-card">
+            <span class="start-date">{entry.date}</span>
+            <span class="start-title">{entry.title}</span>
+            <span class="start-desc" set:html={entry.desc} />
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="dashboard-section analyses-section">
+      <div class="section-header">
+        <h2>{t('home.analyses' as any)}</h2>
+        {hasMoreAnalyses && (
+          <a href={localePath('/types/analysis/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+        )}
+      </div>
+      <p class="analyses-subtitle">{t('home.analysesSubtitle' as any)}</p>
+      <div class="analyses-grid">
+        {homeAnalyses.map((entry: any) => (
+          <a href={localePath(`/entries/${entry.id}/`, lang)} class="analysis-card">
+            <span class="analysis-date">{new Date(entry.data.date).toISOString().slice(0, 10)}</span>
+            <span class="analysis-title">{entry.data.title}</span>
+            <span class="analysis-desc">{entry.data.description}</span>
+          </a>
+        ))}
       </div>
     </section>
 
@@ -218,33 +285,6 @@ function tagWeight(count: number, max: number): number {
       </div>
     </section>
 
-    <section class="dashboard-section">
-      <div class="section-header">
-        <h2>{t('home.latestEntries')}</h2>
-        <a href={localePath('/entries/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
-      </div>
-      {featuredEntries.map((entry: any) => {
-        const tid = resolveThreadId(entry);
-        const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
-        const isThread = msgCount >= 2;
-        return (
-          <EntryCard
-            id={entry.id}
-            title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
-            date={entry.data.date}
-            author={entry.data.author}
-            source={entry.data.source}
-            description={entry.data.description}
-            isSatoshi={entry.data.isSatoshi}
-            lang={lang}
-            threadId={isThread ? tid : undefined}
-            threadCount={isThread ? msgCount : undefined}
-            participants={entry.data.participants}
-          />
-        );
-      })}
-    </section>
-
   </div>
 </BaseLayout>
 
@@ -265,7 +305,7 @@ function tagWeight(count: number, max: number): number {
   }
   .start-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 1rem;
   }
   .start-card {
@@ -302,6 +342,62 @@ function tagWeight(count: number, max: number): number {
     font-size: 0.9rem;
     line-height: 1.55;
     color: var(--color-text-muted);
+  }
+  /* Analyses section: same card style as start-here, distinct accent */
+  .analyses-subtitle {
+    margin: -0.3rem 0 0.9rem;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+  .analyses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1rem;
+  }
+  .analysis-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .analysis-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+  }
+  .analysis-card .analysis-date {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+  }
+  .analysis-card .analysis-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .analysis-card .analysis-desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   /* Hero */
   .hero {

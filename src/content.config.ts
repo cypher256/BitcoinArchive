@@ -47,6 +47,7 @@ const entrySchema = z.object({
     note: z.string().optional(),
   })).optional(),
   featured: z.boolean().optional(),
+  homeOrder: z.number().optional(),
   editorNote: z.string().optional(),
   tags: z.array(z.string()).optional(),
   pdfMetadata: z.object({
