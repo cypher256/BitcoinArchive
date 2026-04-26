@@ -101,7 +101,7 @@ translationStatus: complete
 
 サトシ本人が設計・実装期間を特定した記録は二つある:
 
-- 2008 年 11 月 17 日、cryptography メーリングリスト（ホワイトペーパー投稿の 6 週間後）: "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them"（[アーカイブ済み投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)）
+- 2008 年 11 月 17 日、cryptography メーリングリスト（ホワイトペーパー投稿の 17 日後）: "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them"（[アーカイブ済み投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)）
 - 2009 年 7 月 21 日、マルティ・マルミ宛私信: "need a break from it after 18 months development"（[アーカイブ済み](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)）
 
 両方の発言から、設計の開始時期は 2007 年半ば頃と推定できる。

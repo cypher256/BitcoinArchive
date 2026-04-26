@@ -100,7 +100,7 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 
 Satoshi himself dated the design and implementation period twice in the public record:
 
-- November 17, 2008, on the cryptography mailing list (six weeks after the whitepaper was posted): "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them" ([archived post](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)).
+- November 17, 2008, on the cryptography mailing list (17 days after the whitepaper was posted): "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them" ([archived post](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)).
 - July 21, 2009, in a private email to Martti Malmi: "need a break from it after 18 months development" ([archived](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)).
 
 Both statements place the start of design work around mid-2007.
