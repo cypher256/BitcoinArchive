@@ -1,5 +1,5 @@
 ---
-title: "ルーク・ダッシュジュニア（生年不明）— 長期にわたる Bitcoin Core 貢献者、Bitcoin Knots メンテナー、Ocean マイニングプール共同創業者"
+title: "ルーク・ダッシュジュニア — Bitcoin Core 長期貢献者、Bitcoin Knots メンテナー、Ocean マイニングプール共同創業者（生年不明）"
 date: 2012-07-22T21:35:45Z
 type: "biography"
 source: "wikipedia"

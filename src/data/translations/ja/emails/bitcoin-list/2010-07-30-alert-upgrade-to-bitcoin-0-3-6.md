@@ -1,5 +1,5 @@
 ---
-title: "「[bitcoin-list] Alert: upgrade to bitcoin 0.3.6」— サトシによるv0.3.6への緊急アップグレード警告（2010-07）"
+title: "サトシによるv0.3.6への緊急アップグレード警告 — 「[bitcoin-list] Alert: upgrade to bitcoin 0.3.6」（2010-07）"
 date: 2010-07-30T06:02:38.000Z
 type: "mailing-list"
 source: "bitcoin-list"

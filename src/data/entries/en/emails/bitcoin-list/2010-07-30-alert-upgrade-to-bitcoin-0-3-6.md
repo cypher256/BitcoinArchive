@@ -1,5 +1,5 @@
 ---
-title: "\"[bitcoin-list] Alert: upgrade to bitcoin 0.3.6\" — Satoshi's urgent v0.3.6 upgrade alert (July 2010)"
+title: "Satoshi's urgent v0.3.6 upgrade alert — \"[bitcoin-list] Alert: upgrade to bitcoin 0.3.6\" (July 2010)"
 date: 2010-07-30T06:02:38.000Z
 type: "mailing-list"
 source: "bitcoin-list"

@@ -1,5 +1,5 @@
 ---
-title: "「[bitcoin-list] ALERT - we are investigating a problem」— サトシがvalue overflow 事件中にbitcoin-listへ出したアラート（2010-08）"
+title: "サトシがvalue overflow 事件中にbitcoin-listへ出したアラート — 「[bitcoin-list] ALERT - we are investigating a problem」（2010-08）"
 date: 2010-08-15T20:38:33.000Z
 type: "mailing-list"
 source: "bitcoin-list"

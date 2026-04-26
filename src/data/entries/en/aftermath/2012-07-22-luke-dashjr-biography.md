@@ -1,5 +1,5 @@
 ---
-title: "Luke Dashjr (dates unknown) — Long-tenured Bitcoin Core contributor, Bitcoin Knots maintainer, and Ocean mining pool co-founder"
+title: "Luke Dashjr — Long-tenured Bitcoin Core contributor, Bitcoin Knots maintainer, and Ocean mining pool co-founder (dates unknown)"
 date: 2012-07-22T21:35:45Z
 type: "biography"
 source: "wikipedia"
