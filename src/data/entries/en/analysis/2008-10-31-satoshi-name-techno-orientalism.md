@@ -44,7 +44,7 @@ Representative works in the assemblage:
 | 1984 | *Neuromancer* (Gibson) | Chiba City as the opening ground of cyberspace; matrix-jockeys, ICE, and a Japanese-corporate substrate |
 | 1988 | *AKIRA* (Otomo, manga 1982-1990; film 1988) | Neo-Tokyo as the canonical post-collapse / post-singular city |
 | 1995 | *Ghost in the Shell* (Oshii film, Nov 1995) | Networked intelligences without bodies, operating from a Japanese urban substrate |
-| 1989-93 | Wired-magazine-era cyberpunk discourse | Japanese loanwords (sōkaiya, salaryman, otaku) and Tokyo as the emblematic future city |
+| 1989-93 | *Mondo 2000* cyberpunk discourse | Japanese loanwords (sōkaiya, salaryman, otaku) and Tokyo as the emblematic future city |
 
 By the time Bitcoin was designed (mid-2007 onward), this assemblage had been settled cultural background for a generation. The symbolic claim it carried was specific: *the deep network is opaque, anonymous, intelligent, and reads as Japanese*.
 
@@ -70,7 +70,7 @@ Three analytic facts follow without requiring an intent claim:
 
 ## 5. Summary
 
-- Independent of intent, the "Satoshi Nakamoto" pseudonym lands inside the techno-orientalist symbolic field of the 1980s-90s assembled by *Blade Runner*, *Neuromancer*, *AKIRA*, *Ghost in the Shell*, and the Wired-era cyberpunk discourse.
+- Independent of intent, the "Satoshi Nakamoto" pseudonym lands inside the techno-orientalist symbolic field of the 1980s-90s assembled by *Blade Runner*, *Neuromancer*, *AKIRA*, *Ghost in the Shell*, and *Mondo 2000*-era cyberpunk discourse.
 - This is a structural observation about reception, not evidence of Japanese authorship or any specific identity.
 - Three analytic consequences follow without an intent claim: pre-shaped reception, biased identity-hypothesis evaluation, and an independent layer of cultural meaning carried by the pseudonym.
 - The entry contributes a description of what symbolic space the name inhabits. It makes no claim about Satoshi's identity, country, or background. The companion entry [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) addresses the intellectual position from which the system was designed.
