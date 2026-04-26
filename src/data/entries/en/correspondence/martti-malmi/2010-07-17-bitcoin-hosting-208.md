@@ -51,6 +51,7 @@ It scales linerally just like linnodes, so for 2048 MB of memory, I would
 charge $40, etc.
 
 Later!
+
 -----
 
 That would be worth considering, if they have good datacenters and  
