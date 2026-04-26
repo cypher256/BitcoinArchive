@@ -38,6 +38,7 @@ relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
   - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2008-08-20-satoshi-activity-timeline
 inlineLinkKeywords:
   - ".rar パッケージング"
   - "Warez シーン慣習との重なり"

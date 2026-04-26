@@ -5,6 +5,7 @@ import SourceCitation from '../../../components/SourceCitation.astro';
 import AutoLinkNames from '../../../components/AutoLinkNames.astro';
 import RelatedEntries from '../../../components/RelatedEntries.astro';
 import SatoshiCodeAnalysis from '../../../components/SatoshiCodeAnalysis.astro';
+import SatoshiActivityTimeline from '../../../components/SatoshiActivityTimeline.astro';
 import PatoshiNonceLsb from '../../../components/PatoshiNonceLsb.astro';
 import SvnCommitters from '../../../components/SvnCommitters.astro';
 import PatoshiMiningMachine from '../../../components/PatoshiMiningMachine.astro';
@@ -113,6 +114,10 @@ const breadcrumbs = [
 
     {entry.data.type === 'analysis' && entry.id.includes('satoshi-code') && (
       <SatoshiCodeAnalysis lang={lang} />
+    )}
+
+    {entry.data.type === 'analysis' && entry.id.includes('satoshi-activity-timeline') && (
+      <SatoshiActivityTimeline lang={lang} />
     )}
 
     {entry.id.includes('sergio-lerner-nonce-lsb') && (

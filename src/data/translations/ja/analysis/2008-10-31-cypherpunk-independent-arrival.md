@@ -42,6 +42,7 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2008-08-20-satoshi-activity-timeline
 inlineLinkKeywords:
   - "サイファーパンク宣言"
   - "Cypherpunk's Manifesto"

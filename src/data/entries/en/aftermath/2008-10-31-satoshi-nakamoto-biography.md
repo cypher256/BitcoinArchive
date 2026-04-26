@@ -44,9 +44,9 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-cypherpunk-independent-arrival
-  - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2008-08-20-satoshi-activity-timeline
 ---
 
 Satoshi Nakamoto is the pseudonym used by the individual or group who created Bitcoin. Their true identity has never been confirmed.

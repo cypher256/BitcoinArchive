@@ -1,0 +1,52 @@
+---
+title: "Satoshi activity timeline 2008-2014: every documented event in chronological view"
+date: 2008-08-20T00:00:00Z
+type: "analysis"
+source: "metzdowd"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html"
+author: "Bitcoin Institute"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "An interactive D3 timeline of every documented Satoshi Nakamoto event in the Archive — correspondence, mailing-list posts, BitcoinTalk and P2P Foundation forum posts, and SourceForge releases — from the first known email (August 20, 2008) to the disputed 2014 P2P Foundation post. Channels are laid out as horizontal lanes; each dot is one event; hover for the title; click to open the source entry. The chronological surface makes the burst-and-fade rhythm of Satoshi's activity visible in a single view."
+isSatoshi: false
+tags:
+  - "satoshi-identity"
+  - "timeline"
+  - "master-index"
+  - "visualization"
+  - "analysis"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute — Complete Works"
+    url: "https://satoshi.nakamotoinstitute.org/"
+  - name: "Martti Malmi's published email archive"
+    url: "https://mmalmi.github.io/satoshi/"
+relatedEntries:
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2009-01-10-satoshi-launch-environment
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
+inlineLinkKeywords:
+  - "Satoshi activity timeline"
+translationStatus: complete
+---
+
+This entry is a chronological master index of every documented Satoshi Nakamoto event in the Archive, rendered as an interactive D3 timeline.
+
+**What is included:** every Archive entry where Satoshi was the author (`isSatoshi: true` in the frontmatter) — covering private correspondence, mailing-list posts (cryptography, bitcoin-list, p2p-research), BitcoinTalk and P2P Foundation forum posts, and SourceForge releases. The timeline does not include third-party writing about Satoshi.
+
+**How to read the chart:** each dot is one event. The horizontal axis is time (August 2008 to early 2014). The vertical lanes are communication channels. Hover any dot to see the title and date; click to open the source entry. The dot density per lane shows where Satoshi spent attention at each moment; the gaps show silences.
+
+**What the shape reveals at a glance:**
+
+- The pre-launch ramp on the cryptography mailing list and Bitcoin-list (October 2008 – January 2009).
+- The explosion of BitcoinTalk activity from late 2009 through 2010 — the densest stretch of Satoshi's documented life.
+- The 75-day SourceForge SVN gap in March–May 2010 (separately analyzed in [the source-code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/)).
+- The rapid tail-off in early 2011, ending with the April 2011 farewells to Mike Hearn and Gavin Andresen.
+- The single disputed 2014 P2P Foundation post (the Dorian rebuttal), which sits alone three years after everything else.
+
+For the editorial reading of *what Satoshi said about himself* across this corpus, see [the self-references analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/).

@@ -31,7 +31,6 @@ secondarySources:
 relatedEntries:
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
   - correspondence/martti-malmi/2009-07-21-bitcoin-024
@@ -39,6 +38,7 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - analysis/2008-08-20-satoshi-activity-timeline
 inlineLinkKeywords:
   - "サトシの自己言及"
   - "サトシ自身の言葉"

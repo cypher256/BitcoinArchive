@@ -1,0 +1,299 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const timelineData = await import('../data/satoshi-timeline/timeline.json').then(m => m.default);
+
+const labels = {
+  en: {
+    title: 'Satoshi Activity Timeline (2008-2014)',
+    subtitle: `${timelineData.total} documented events authored by Satoshi across all public channels`,
+    swimlaneTitle: 'Channel × Time',
+    swimlaneSub: 'Each dot is one Satoshi event. Hover for the title; click to open the entry. The vertical bands separate channels.',
+    instructions: 'Tip: hover any dot to see what Satoshi posted that day. Click to open the source entry.',
+    channels: {
+      'cryptography-ml': 'Cryptography ML',
+      'bitcoin-list-ml': 'Bitcoin-list ML',
+      'p2p-research-ml': 'p2p-research ML',
+      'p2pfoundation': 'P2P Foundation',
+      'bitcointalk': 'BitcoinTalk',
+      'private-email': 'Private email',
+      'sourceforge': 'SourceForge release',
+      'github': 'GitHub',
+      'other': 'Other',
+    },
+    countSuffix: 'events',
+  },
+  ja: {
+    title: 'サトシ活動タイムライン（2008〜2014）',
+    subtitle: `公開チャネル全体で記録されたサトシ著作 ${timelineData.total} 件のイベント`,
+    swimlaneTitle: 'チャネル × 時間',
+    swimlaneSub: '各ドットはサトシのイベント 1 件。ホバーでタイトル表示、クリックでエントリへ。縦の帯がチャネルを分ける。',
+    instructions: 'ヒント: ドットにマウスを置くとその日にサトシが何を投稿したか表示。クリックでソースエントリを開く。',
+    channels: {
+      'cryptography-ml': 'cryptography ML',
+      'bitcoin-list-ml': 'bitcoin-list ML',
+      'p2p-research-ml': 'p2p-research ML',
+      'p2pfoundation': 'P2P Foundation',
+      'bitcointalk': 'BitcoinTalk',
+      'private-email': '私信',
+      'sourceforge': 'SourceForge リリース',
+      'github': 'GitHub',
+      'other': 'その他',
+    },
+    countSuffix: '件',
+  },
+} as const;
+
+const l = labels[lang];
+
+// Channel display order (top to bottom). High-frequency channels at the bottom for visual weight.
+const channelOrder = [
+  'cryptography-ml',
+  'bitcoin-list-ml',
+  'p2p-research-ml',
+  'p2pfoundation',
+  'github',
+  'sourceforge',
+  'private-email',
+  'bitcointalk',
+  'other',
+];
+
+// URL prefix per locale
+const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchive/entries/';
+---
+
+<div class="satoshi-timeline">
+  <h2>{l.title}</h2>
+  <p class="subtitle">{l.subtitle}</p>
+
+  <section>
+    <h3>{l.swimlaneTitle}</h3>
+    <p class="chart-sub">{l.swimlaneSub}</p>
+    <div id="satoshi-timeline-swimlane" class="chart-container"></div>
+  </section>
+
+  <p class="hint">{l.instructions}</p>
+
+  <script type="application/json" id="satoshi-timeline-data" set:html={JSON.stringify({
+    events: timelineData.events,
+    channelOrder,
+    channelLabels: l.channels,
+    linkBase,
+    countSuffix: l.countSuffix,
+  })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<style>
+.satoshi-timeline {
+  margin: 2em 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+.satoshi-timeline h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.3em;
+}
+.satoshi-timeline .subtitle {
+  color: #6b6b6b;
+  margin-bottom: 1em;
+}
+.satoshi-timeline h3 {
+  font-size: 1.1em;
+  margin-top: 1.5em;
+  margin-bottom: 0.3em;
+}
+.satoshi-timeline .chart-sub {
+  color: #6b6b6b;
+  font-size: 0.9em;
+  margin-bottom: 0.6em;
+}
+.satoshi-timeline .chart-container {
+  position: relative;
+  width: 100%;
+  background: #fafaf7;
+  border: 1px solid #e8e6df;
+  border-radius: 4px;
+  padding: 12px;
+}
+.satoshi-timeline .hint {
+  color: #6b6b6b;
+  font-size: 0.85em;
+  margin-top: 0.8em;
+  font-style: italic;
+}
+</style>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+    var dataEl = document.getElementById('satoshi-timeline-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var events = data.events;
+    var channelOrder = data.channelOrder;
+    var channelLabels = data.channelLabels;
+    var linkBase = data.linkBase;
+
+    var container = document.getElementById('satoshi-timeline-swimlane');
+    if (!container) return;
+
+    // Layout
+    var margin = { top: 20, right: 20, bottom: 50, left: 130 };
+    var laneHeight = 32;
+    var height = laneHeight * channelOrder.length + margin.top + margin.bottom;
+    var width = container.clientWidth;
+    if (width < 320) width = 320;
+
+    // Color scale per channel — distinct hues, neutral saturation
+    var palette = {
+      'cryptography-ml':  '#3a7ca5',
+      'bitcoin-list-ml':  '#2a9d8f',
+      'p2p-research-ml':  '#8e7cc3',
+      'p2pfoundation':    '#a23b72',
+      'bitcointalk':      '#e76f51',
+      'private-email':    '#d4a017',
+      'sourceforge':      '#5e548e',
+      'github':           '#264653',
+      'other':            '#888888',
+    };
+
+    // X scale: time
+    var dateExtent = d3.extent(events, function(d) { return new Date(d.date); });
+    // Pad domain by 15 days each side
+    dateExtent[0] = new Date(dateExtent[0].getTime() - 15 * 86400000);
+    dateExtent[1] = new Date(dateExtent[1].getTime() + 15 * 86400000);
+    var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+
+    // Y scale: channel lane (band)
+    var y = d3.scaleBand().domain(channelOrder).range([margin.top, margin.top + laneHeight * channelOrder.length]).padding(0.15);
+
+    // Build SVG
+    var svg = d3.select(container).append('svg')
+      .attr('viewBox', '0 0 ' + width + ' ' + height)
+      .attr('width', '100%')
+      .style('display', 'block')
+      .style('font-family', 'inherit');
+
+    // Lane background bands
+    svg.selectAll('.lane-bg')
+      .data(channelOrder)
+      .enter().append('rect')
+      .attr('x', margin.left)
+      .attr('y', function(c) { return y(c); })
+      .attr('width', width - margin.left - margin.right)
+      .attr('height', y.bandwidth())
+      .attr('fill', function(c, i) { return i % 2 === 0 ? '#f5f3ec' : '#efece4'; });
+
+    // Lane labels (left)
+    var channelTotals = {};
+    events.forEach(function(e) { channelTotals[e.channel] = (channelTotals[e.channel] || 0) + 1; });
+    svg.selectAll('.lane-label')
+      .data(channelOrder)
+      .enter().append('text')
+      .attr('x', margin.left - 8)
+      .attr('y', function(c) { return y(c) + y.bandwidth() / 2; })
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'central')
+      .style('font-size', '11px')
+      .style('fill', '#444')
+      .text(function(c) {
+        var n = channelTotals[c] || 0;
+        return channelLabels[c] + '  (' + n + ')';
+      });
+
+    // X axis (time)
+    var xAxis = d3.axisBottom(x)
+      .ticks(d3.timeYear.every(1))
+      .tickFormat(d3.timeFormat('%Y'));
+    svg.append('g')
+      .attr('transform', 'translate(0,' + (margin.top + laneHeight * channelOrder.length) + ')')
+      .call(xAxis)
+      .selectAll('text')
+      .style('font-size', '11px')
+      .style('fill', '#444');
+
+    // Minor ticks (months)
+    var monthAxis = d3.axisBottom(x)
+      .ticks(d3.timeMonth.every(3))
+      .tickSize(4)
+      .tickFormat(function() { return ''; });
+    svg.append('g')
+      .attr('class', 'minor-axis')
+      .attr('transform', 'translate(0,' + (margin.top + laneHeight * channelOrder.length) + ')')
+      .call(monthAxis)
+      .selectAll('line')
+      .attr('stroke', '#aaa');
+
+    // Tooltip
+    var tooltip = d3.select(container).append('div')
+      .style('position', 'absolute')
+      .style('background', 'rgba(20, 20, 20, 0.92)')
+      .style('color', '#fff')
+      .style('padding', '6px 10px')
+      .style('border-radius', '3px')
+      .style('font-size', '12px')
+      .style('line-height', '1.4')
+      .style('pointer-events', 'none')
+      .style('opacity', 0)
+      .style('max-width', '380px')
+      .style('z-index', 10);
+
+    // Dots — jitter inside lane to reduce overlap
+    function jitter(seed) {
+      var x = Math.sin(seed * 9301 + 49297) * 233280;
+      return x - Math.floor(x);
+    }
+
+    var dots = svg.selectAll('.event-dot')
+      .data(events)
+      .enter().append('circle')
+      .attr('cx', function(d) { return x(new Date(d.date)); })
+      .attr('cy', function(d, i) {
+        var laneTop = y(d.channel);
+        var bw = y.bandwidth();
+        // Jitter ±35% of band height around center
+        var offset = (jitter(i + 1) - 0.5) * bw * 0.7;
+        return laneTop + bw / 2 + offset;
+      })
+      .attr('r', 2.6)
+      .attr('fill', function(d) { return palette[d.channel] || '#888'; })
+      .attr('fill-opacity', 0.7)
+      .attr('stroke', 'none')
+      .style('cursor', 'pointer')
+      .on('mouseover', function(event, d) {
+        d3.select(this).attr('r', 5).attr('fill-opacity', 1);
+        var dateStr = new Date(d.date).toISOString().slice(0, 10);
+        tooltip.style('opacity', 1)
+          .html('<strong>' + dateStr + '</strong> · ' + (channelLabels[d.channel] || d.channel) + '<br/>' + escapeHtml(d.title));
+      })
+      .on('mousemove', function(event) {
+        var rect = container.getBoundingClientRect();
+        var px = event.clientX - rect.left + 12;
+        var py = event.clientY - rect.top + 12;
+        tooltip.style('left', px + 'px').style('top', py + 'px');
+      })
+      .on('mouseout', function() {
+        d3.select(this).attr('r', 2.6).attr('fill-opacity', 0.7);
+        tooltip.style('opacity', 0);
+      })
+      .on('click', function(event, d) {
+        window.location.href = linkBase + d.slug + '/';
+      });
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, function(c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+  }
+  init();
+})();
+</script>

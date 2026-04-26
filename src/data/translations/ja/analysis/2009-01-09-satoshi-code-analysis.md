@@ -32,6 +32,7 @@ relatedEntries:
   - "correspondence/martti-malmi/2010-05-14-status-update-191"
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
+  - "analysis/2008-08-20-satoshi-activity-timeline"
 inlineLinkKeywords:
   - "サトシのコーディングスタイル"
   - "コーディングスタイルの指紋"

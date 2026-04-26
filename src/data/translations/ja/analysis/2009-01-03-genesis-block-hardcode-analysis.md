@@ -46,7 +46,7 @@ relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2024-03-14-copa-v-wright-ruling"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
-  - "aftermath/2016-05-02-craig-wright-biography"
+  - "analysis/2008-08-20-satoshi-activity-timeline"
 inlineLinkKeywords:
   - "5日間の空白"
   - "5 日間の空白"

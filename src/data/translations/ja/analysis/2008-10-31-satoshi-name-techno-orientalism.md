@@ -21,8 +21,8 @@ secondarySources:
   - name: "David S. Roh, Betsy Huang, Greta A. Niu (eds.) — Techno-Orientalism: Imagining Asia in Speculative Fiction, History, and Media (Rutgers UP, 2015)"
     url: "https://www.rutgersuniversitypress.org/techno-orientalism/9780813570631"
 relatedEntries:
-  - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-08-20-satoshi-activity-timeline
 inlineLinkKeywords:
   - "テクノオリエンタリズム"
 translationStatus: complete
