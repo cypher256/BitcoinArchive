@@ -162,6 +162,31 @@ for (const lang of ['en', 'ja']) {
   console.log('');
 }
 
+// --check-titles: front-loading review mode for long titles.
+// Splits each long title at the SERP-truncation point (EN ~60 half-width,
+// JA ~30 full-width) and shows the visible portion + the tail. Lets a
+// reviewer judge whether the essence is in the visible portion.
+const CHECK_TITLES = process.argv.includes('--check-titles');
+if (CHECK_TITLES) {
+  const SERP_EN = 60;
+  const SERP_JA = 30;
+  for (const lang of ['en', 'ja']) {
+    const r = reportByLang[lang];
+    if (r.issues.titleTooLong.length === 0) continue;
+    const cut = lang === 'en' ? SERP_EN : SERP_JA;
+    console.log(`\n========== Title front-loading review: ${lang} (${r.issues.titleTooLong.length} titles, cut at ~${cut} chars) ==========`);
+    for (const x of r.issues.titleTooLong.sort((a,b)=>b.len-a.len)) {
+      const cps = [...x.value];
+      const visible = cps.slice(0, cut).join('');
+      const tail = cps.slice(cut).join('');
+      console.log(`\n  ${x.rel}  (len=${x.len})`);
+      console.log(`    VISIBLE  : ${visible}`);
+      console.log(`    TRUNCATED: ${tail}`);
+    }
+  }
+  process.exit(0);
+}
+
 const VERBOSE = process.argv.includes('--verbose') || process.argv.includes('-v');
 if (VERBOSE) {
   for (const lang of ['en', 'ja']) {
