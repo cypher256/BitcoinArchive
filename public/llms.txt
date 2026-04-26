@@ -42,5 +42,5 @@ The archive contains 3,100+ entries organized by type:
 
 - Satoshi Nakamoto was active from October 2008 to April 2011
 - Satoshi mined an estimated 1.1 million BTC, none of which have ever been moved
-- The last known communication was an email to Mike Hearn on April 23, 2011: "I've moved on to other things."
+- The last known email was to Gavin Andresen on April 26, 2011, transferring the network alert key: "I've moved on to other things and will probably be unavailable." Three days earlier (April 23), Satoshi told Mike Hearn "I've moved on to other things. It's in good hands with Gavin and everyone."
 - All primary entries include original source URLs for verification; editorial analyses cite their sources for each claim
