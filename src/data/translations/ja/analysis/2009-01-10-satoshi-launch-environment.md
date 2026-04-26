@@ -1,5 +1,5 @@
 ---
-title: "サトシのリリース期環境分析：『from where I am』からの推論的読解（2009年1月）"
+title: "サトシのリリース期環境分析：『from where I am（今いる場所）』からの推論的読解（2009年1月）"
 date: 2009-01-10T00:00:00Z
 type: "analysis"
 source: "coindesk"
