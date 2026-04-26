@@ -40,4 +40,4 @@ A description of PipeNet 1.1 is available at http://www.eskimo.com/~weidai.
 
 Also available there is a description of b-money, a new protocol for monetary exchange and contract enforcement for pseudonyms."
 
-*[The b-money proposal — which would later become one of the most cited precursors to Bitcoin — was introduced in a single sentence at the end of a post primarily about PipeNet, an anonymous routing protocol. [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s main interest at the time was clearly PipeNet, not digital currency.]*
+*[Context: The b-money proposal — which would later become one of the most cited precursors to Bitcoin — was introduced in a single sentence at the end of a post primarily about PipeNet, an anonymous routing protocol. [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s main interest at the time was clearly PipeNet, not digital currency.]*

@@ -36,4 +36,4 @@ The proposal sparked discussion among early community members, with some concern
 
 Later, on November 1, 2010, forum user "bitboy" designed what became the iconic Bitcoin logo: the ฿ rendered in white on an orange circle, rotated 14 degrees clockwise.
 
-*[Both "BTC" and the ฿ symbol remain in universal use today. The currency code "XBT" was later proposed as an ISO 4217-compliant alternative (since "BT" is Bhutan's country code), but "BTC" remains far more widely recognized.]*
+*[Context: Both "BTC" and the ฿ symbol remain in universal use today. The currency code "XBT" was later proposed as an ISO 4217-compliant alternative (since "BT" is Bhutan's country code), but "BTC" remains far more widely recognized.]*

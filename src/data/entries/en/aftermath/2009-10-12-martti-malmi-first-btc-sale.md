@@ -40,4 +40,4 @@ Malmi, a 20-year-old computer science student at the Helsinki University of Tech
 
 The transaction established Bitcoin's first real-world price: approximately $0.001 per BTC.
 
-*[At 2025 prices exceeding $100,000 per BTC, those 5,050 bitcoins would be worth over $500 million.]*
+*[Context: At 2025 prices exceeding $100,000 per BTC, those 5,050 bitcoins would be worth over $500 million.]*

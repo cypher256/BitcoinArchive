@@ -48,4 +48,4 @@ Hanyecz, a pioneer of [GPU mining](/BitcoinArchive/entries/correspondence/laszlo
 
 May 22 is now celebrated annually as "Bitcoin Pizza Day" by the Bitcoin community worldwide.
 
-*[At 2025 prices exceeding $100,000 per BTC, those 10,000 bitcoins would be worth over $1 billion — often called the most expensive pizzas in history.]*
+*[Context: At 2025 prices exceeding $100,000 per BTC, those 10,000 bitcoins would be worth over $1 billion — often called the most expensive pizzas in history.]*

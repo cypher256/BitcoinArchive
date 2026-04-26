@@ -40,4 +40,4 @@ The collapse was attributed to a long-running theft exploiting transaction malle
 
 Media declared Bitcoin dead: "Bitcoin is finished." "It was a scam all along." Bitcoin's price crashed. But the protocol itself was unaffected — Mt. Gox was a centralized exchange, not a flaw in Bitcoin's decentralized network. The distinction between Bitcoin the protocol and centralized services built on top of it became a crucial lesson for the ecosystem.
 
-*[Mt. Gox began repaying creditors in Bitcoin in July 2024, over a decade after the collapse.]*
+*[Context: Mt. Gox began repaying creditors in Bitcoin in July 2024, over a decade after the collapse.]*

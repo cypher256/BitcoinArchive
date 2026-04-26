@@ -36,6 +36,6 @@ translationStatus: complete
 
 あなたのhashcash論文の引用が正しいか確認したいと思った。
 
-*[サトシは、後に[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)となるプレリリース版のリンクを添付した。]*
+*[補足：サトシは、後に[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)となるプレリリース版のリンクを添付した。]*
 
 このメールは、サトシとサイファーパンク運動の中心人物との公開記録上で最も早い接触であり、[サトシとサイファーパンク運動との関係およびその署名の記号空間に関する分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/)で検討されている。

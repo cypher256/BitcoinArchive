@@ -52,4 +52,4 @@ In the aftermath, over 3,000 altcoins followed. Most of them do know what they'r
 
 Many ICOs resemble blatant stock price manipulation and insider trading. Legitimate blockchain use cases have become caught in the fire and burned by scam association.
 
-*[Published on LinkedIn, September 20, 2017. Reached the front page of Hacker News on September 21, 2017, receiving 329 points and 86 comments.]*
+*[Context: Published on LinkedIn, September 20, 2017. Reached the front page of Hacker News on September 21, 2017, receiving 329 points and 86 comments.]*

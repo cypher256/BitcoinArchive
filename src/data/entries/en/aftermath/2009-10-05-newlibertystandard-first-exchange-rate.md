@@ -35,4 +35,4 @@ In other words, Bitcoin's first price was determined by the real-world cost of t
 
 Shortly after, on October 12, 2009, [Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) via PayPal — the first known exchange of Bitcoin for fiat currency.
 
-*[At 2025 prices exceeding $100,000 per BTC, those 5,050 bitcoins would be worth over $500 million.]*
+*[Context: At 2025 prices exceeding $100,000 per BTC, those 5,050 bitcoins would be worth over $500 million.]*

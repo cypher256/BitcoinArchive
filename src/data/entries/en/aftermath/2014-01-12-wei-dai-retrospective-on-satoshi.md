@@ -44,7 +44,7 @@ Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/
 
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
-*[Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).]*
+*[Editor: Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement and the symbolic field of his signature](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-techno-orientalism-satoshi-signature/).]*
 
 **On Satoshi's motivation:**
 
@@ -52,7 +52,7 @@ Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/
 
 He noted that if Satoshi were primarily motivated by money, "he would have sold at least some of his mined Bitcoins in order to spend or to diversify."
 
-*[Wei Dai also expressed that Satoshi "might have been motivated more by a distrust of financial institutions and government monetary authorities and wanted to create a monetary system that didn't have to depend on such trust."]*
+*[Context: Wei Dai also expressed that Satoshi "might have been motivated more by a distrust of financial institutions and government monetary authorities and wanted to create a monetary system that didn't have to depend on such trust."]*
 
 ---
 

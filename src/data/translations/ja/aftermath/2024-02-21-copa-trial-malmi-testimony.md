@@ -51,4 +51,4 @@ translationStatus: complete
 
 メールは、ビットコインの最初期の開発の詳細を明らかにした：インフラの決定、ウェブサイトのデザイン、最初の取引所の提案、エネルギー消費に関する議論、匿名性に関する議論、そしてサトシのプロジェクトからの最終的な撤退。
 
-*[COPA対ライト裁判は[2024年3月14日に終結](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)し、メラー判事はクレイグ・ライトがサトシ・ナカモトではないと判決を下した。]*
+*[補足：COPA対ライト裁判は[2024年3月14日に終結](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)し、メラー判事はクレイグ・ライトがサトシ・ナカモトではないと判決を下した。]*

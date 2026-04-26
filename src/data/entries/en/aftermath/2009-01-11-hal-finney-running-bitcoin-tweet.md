@@ -34,6 +34,6 @@ featured: true
 
 > Running bitcoin
 
-*[@halfin — January 10, 2009 10:33 PM PST / January 11, 2009 06:33 UTC]*
+*[Context: @halfin — January 10, 2009 10:33 PM PST / January 11, 2009 06:33 UTC]*
 
-*[This two-word tweet is widely considered the first tweet ever about Bitcoin. [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted it from his home in Santa Barbara, California, the same day the [Bitcoin v0.1 software was publicly released](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/). Two days later, on January 12, 2009, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) sent Hal the [first-ever Bitcoin transaction](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-11-first-bitcoin-transaction/): 10 BTC (Transaction ID: f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16). The tweet received virtually no reaction at the time.]*
+*[Context: This two-word tweet is widely considered the first tweet ever about Bitcoin. [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted it from his home in Santa Barbara, California, the same day the [Bitcoin v0.1 software was publicly released](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/). Two days later, on January 12, 2009, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) sent Hal the [first-ever Bitcoin transaction](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-11-first-bitcoin-transaction/): 10 BTC (Transaction ID: f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16). The tweet received virtually no reaction at the time.]*

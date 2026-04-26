@@ -50,4 +50,4 @@ Malmi subsequently published the full email archive on GitHub, explaining that h
 
 The emails revealed intimate details of Bitcoin's earliest development: infrastructure decisions, website design, the first exchange proposals, energy consumption debates, anonymity discussions, and Satoshi's eventual withdrawal from the project.
 
-*[The COPA v. Wright trial [concluded on March 14, 2024](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), with Justice Mellor ruling that Craig Wright is not Satoshi Nakamoto.]*
+*[Context: The COPA v. Wright trial [concluded on March 14, 2024](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), with Justice Mellor ruling that Craig Wright is not Satoshi Nakamoto.]*

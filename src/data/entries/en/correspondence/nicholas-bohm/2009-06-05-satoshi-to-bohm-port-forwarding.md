@@ -30,4 +30,4 @@ secondarySources:
 
 Satoshi noted that if nobody currently online could accept inbound connections, nodes would fail to connect to the network entirely — highlighting just how fragile the Bitcoin network was in mid-2009 with only a handful of active nodes.
 
-*[The specific text of this email was entered as exhibit evidence in the COPA v. Craig Wright trial but has not been published in full.]*
+*[Context: The specific text of this email was entered as exhibit evidence in the COPA v. Craig Wright trial but has not been published in full.]*

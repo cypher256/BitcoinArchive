@@ -80,7 +80,7 @@ The documentary was widely criticized by the Bitcoin community. Bitcoin Magazine
 
 Todd later described the film's methodology as "coincidence-based conspiracy thinking."
 
-*[The documentary was Hoback's second investigation into pseudonymous internet figures, following his 2021 series "Q: Into the Storm" about the QAnon movement. Unlike that investigation, which was generally well-received, "Money Electric" was broadly rejected by both the Bitcoin community and mainstream reviewers.]*
+*[Context: The documentary was Hoback's second investigation into pseudonymous internet figures, following his 2021 series "Q: Into the Storm" about the QAnon movement. Unlike that investigation, which was generally well-received, "Money Electric" was broadly rejected by both the Bitcoin community and mainstream reviewers.]*
 
 ---
 

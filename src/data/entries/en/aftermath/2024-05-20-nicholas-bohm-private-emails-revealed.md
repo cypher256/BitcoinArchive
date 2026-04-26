@@ -52,4 +52,4 @@ Satoshi also encouraged Bohm to keep his server online so new users would have s
 
 Other exhibit snippets show Bohm privately reporting unusual "Generated +50.10" output and Satoshi discussing "not accepted" blocks and UI ideas for hiding unaccepted generation results.
 
-*[These exhibits are important not only because they add new Satoshi correspondence, but because they materially deepen our understanding of how small and fragile the network still was in mid-2009. They also answer a question the public January 2009 mailing-list exchange could not: Nicholas Bohm was not merely a list participant; he remained a direct private correspondent of Satoshi.]*
+*[Editor: These exhibits are important not only because they add new Satoshi correspondence, but because they materially deepen our understanding of how small and fragile the network still was in mid-2009. They also answer a question the public January 2009 mailing-list exchange could not: Nicholas Bohm was not merely a list participant; he remained a direct private correspondent of Satoshi.]*

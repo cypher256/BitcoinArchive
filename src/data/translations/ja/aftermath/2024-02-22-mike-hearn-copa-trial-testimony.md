@@ -74,4 +74,4 @@ translationStatus: complete
 
 反対尋問で、COPA側の弁護士は一つだけ質問した：「あなたはサトシ・ナカモトですか？」ハーンは笑って否定した。
 
-*[COPA対ライト裁判は[2024年3月14日に終結](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)し、メラー判事はクレイグ・ライトがサトシ・ナカモトではないと決定的な判決を下した。]*
+*[補足：COPA対ライト裁判は[2024年3月14日に終結](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)し、メラー判事はクレイグ・ライトがサトシ・ナカモトではないと決定的な判決を下した。]*

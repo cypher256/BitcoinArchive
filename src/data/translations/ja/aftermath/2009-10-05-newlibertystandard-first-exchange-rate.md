@@ -36,4 +36,4 @@ translationStatus: complete
 
 その直後の2009年10月12日、[マルッティ・マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) — ビットコインと法定通貨の最初の既知の交換だった。
 
-*[2025年の10万ドル超の価格では、その5,050ビットコインは5億ドル以上の価値がある。]*
+*[補足：2025年の10万ドル超の価格では、その5,050ビットコインは5億ドル以上の価値がある。]*

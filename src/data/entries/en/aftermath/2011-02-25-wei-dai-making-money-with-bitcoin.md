@@ -51,4 +51,4 @@ Dai clarified that he did not create Bitcoin — he only described similar conce
 
 Dai contrasted b-money and Bitcoin with traditional e-cash protocols that require trusted bank intermediaries.
 
-*[Dai revealed in the thread that he purchased a Radeon 5870 GPU for mining after this discussion — the beginning of the mining activity he would later describe in his 2014 ["Look for the Next Tech Gold Rush?"](/BitcoinArchive/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/) post as turning ~$300 into six figures.]*
+*[Context: Dai revealed in the thread that he purchased a Radeon 5870 GPU for mining after this discussion — the beginning of the mining activity he would later describe in his 2014 ["Look for the Next Tech Gold Rush?"](/BitcoinArchive/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/) post as turning ~$300 into six figures.]*

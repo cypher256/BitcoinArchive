@@ -30,6 +30,6 @@ secondarySources:
 
 In this email, Bohm reported that after installing a new router, his Bitcoin client could no longer establish connections to the network.
 
-*[The specific text of this email was entered as exhibit evidence in the COPA v. Craig Wright trial but has not been published in full. Bohm's witness statement (C/10/1) included his private email correspondence with Satoshi.]*
+*[Context: The specific text of this email was entered as exhibit evidence in the COPA v. Craig Wright trial but has not been published in full. Bohm's witness statement (C/10/1) included his private email correspondence with Satoshi.]*
 
 Bohm had previously reported bugs to Satoshi via the bitcoin-list mailing list in January 2009, which led to fixes included in Bitcoin v0.1.5. Satoshi acknowledged Bohm by name in the v0.1.5 release notes: "includes the fix for the problem Nicholas had."

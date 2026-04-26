@@ -48,4 +48,4 @@ Hearn said that if he could go back, he "would have pushed back harder against s
 
 He also regretted adopting the term "Bitcoin Core," suggesting the naming reinforced an unhealthy power dynamic within the project.
 
-*[By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect. Despite his [2016 departure from Bitcoin](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), he remained one of the most historically significant witnesses to Bitcoin's earliest period.]*
+*[Context: By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect. Despite his [2016 departure from Bitcoin](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), he remained one of the most historically significant witnesses to Bitcoin's earliest period.]*

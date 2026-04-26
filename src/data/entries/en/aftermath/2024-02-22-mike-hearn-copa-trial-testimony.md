@@ -73,4 +73,4 @@ Hearn asked Wright about SIGHASH_SINGLE, a signing mode Satoshi had implemented 
 
 During cross-examination, COPA's attorney asked only one question: "Are you Satoshi Nakamoto?" Hearn laughed and denied the claim.
 
-*[The COPA v. Wright trial [concluded on March 14, 2024](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), with Justice Mellor ruling definitively that Craig Wright is not Satoshi Nakamoto.]*
+*[Context: The COPA v. Wright trial [concluded on March 14, 2024](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), with Justice Mellor ruling definitively that Craig Wright is not Satoshi Nakamoto.]*

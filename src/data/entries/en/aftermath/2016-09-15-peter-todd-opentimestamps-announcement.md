@@ -56,4 +56,4 @@ OpenTimestamps uses Merkle tree aggregation to combine an unlimited number of do
 
 The project was funded by Verisart (art provenance) and BTCC (Bitcoin mining firm). Todd noted the project was a rewrite of his earlier 2012 timestamping work. In 2017, he demonstrated the system by "carbon dating" the Internet Archive, timestamping large portions of the Wayback Machine.
 
-*[OpenTimestamps reflects a core insight that Satoshi built into Bitcoin itself: that a blockchain is fundamentally a timestamping system. The Bitcoin whitepaper's title refers to a "peer-to-peer electronic cash system," but Section 3 is titled "Timestamp Server." Todd's project extracts and generalizes this timestamping capability for arbitrary data.]*
+*[Editor: OpenTimestamps reflects a core insight that Satoshi built into Bitcoin itself: that a blockchain is fundamentally a timestamping system. The Bitcoin whitepaper's title refers to a "peer-to-peer electronic cash system," but Section 3 is titled "Timestamp Server." Todd's project extracts and generalizes this timestamping capability for arbitrary data.]*

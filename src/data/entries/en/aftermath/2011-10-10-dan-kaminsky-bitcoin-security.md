@@ -47,4 +47,4 @@ relatedEntries:
 
 ---
 
-*[Dan Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas. In 2013, he told CoinDesk: "The core technology actually works, and has continued to work, to a degree not everyone predicted." Kaminsky was famous for discovering a critical DNS vulnerability in 2008. He passed away on April 23, 2021.]*
+*[Context: Dan Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas. In 2013, he told CoinDesk: "The core technology actually works, and has continued to work, to a degree not everyone predicted." Kaminsky was famous for discovering a critical DNS vulnerability in 2008. He passed away on April 23, 2021.]*

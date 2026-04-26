@@ -42,5 +42,5 @@ PipeNet 1.1の説明は http://www.eskimo.com/~weidai で閲覧できる。
 
 また同じ場所に、b-moneyの説明も掲載している。仮名による貨幣交換と契約執行のための新しいプロトコルだ。」
 
-*[後にビットコインの最も重要な先駆けの一つとなるb-moneyの提案は、主にPipeNet（匿名ルーティングプロトコル）に関する投稿の末尾、わずか一文で紹介された。当時の[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の主な関心はPipeNetであり、デジタル通貨ではなかったことが明らかだ。]*
+*[補足：後にビットコインの最も重要な先駆けの一つとなるb-moneyの提案は、主にPipeNet（匿名ルーティングプロトコル）に関する投稿の末尾、わずか一文で紹介された。当時の[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の主な関心はPipeNetであり、デジタル通貨ではなかったことが明らかだ。]*
 <!-- /tone-skip -->

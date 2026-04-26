@@ -54,4 +54,4 @@ The original Bitcoin was Windows-only, poorly portable, and "a jumble of source 
 
 Several features required immediate disabling upon public release because they were "obviously exploitable."
 
-*[Garzik's initial work focused on optimizing blockchain downloads, creating code that "increased the speed of the initial download by 10x-100x." He later became CEO of Bloq and Hemi Network.]*
+*[Context: Garzik's initial work focused on optimizing blockchain downloads, creating code that "increased the speed of the initial download by 10x-100x." He later became CEO of Bloq and Hemi Network.]*

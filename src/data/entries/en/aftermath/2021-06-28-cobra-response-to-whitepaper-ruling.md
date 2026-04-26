@@ -32,6 +32,6 @@ All your fiat based assets are ultimately secured by the same legal system that 
 
 I don't think you could get a better advertisement of *why* Bitcoin is necessary than what happened today. Rules enforced through cryptography are far more superior than rules based on whoever can spend hundreds of thousands of dollars in court.
 
-*[@CobraBitcoin — June 28, 2021]*
+*[Context: @CobraBitcoin — June 28, 2021]*
 
-*[Cobra posted this on Twitter hours after the London High Court issued a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper. He had chosen to lose the case rather than reveal his identity. Despite the court order, the whitepaper remained on bitcoin.org. In March 2024, the UK High Court ruled in COPA v. Wright that Craig Wright is not Satoshi Nakamoto, rendering the 2021 judgment meaningless.]*
+*[Context: Cobra posted this on Twitter hours after the London High Court issued a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper. He had chosen to lose the case rather than reveal his identity. Despite the court order, the whitepaper remained on bitcoin.org. In March 2024, the UK High Court ruled in COPA v. Wright that Craig Wright is not Satoshi Nakamoto, rendering the 2021 judgment meaningless.]*

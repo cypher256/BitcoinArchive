@@ -28,7 +28,7 @@ secondarySources:
 
 In this fourth email of the chain, Adam Back suggested another paper Satoshi might find interesting: "MicroMint" by Ron Rivest et al. (1996), which explored extracting k-way hash collisions rather than the partial pre-images used by Hashcash and Bitcoin.
 
-*[Back suggested the MicroMint paper as a related work on computational puzzles for digital currency.]*
+*[Context: Back suggested the MicroMint paper as a related work on computational puzzles for digital currency.]*
 
 Notably, Back had still not read Satoshi's attached draft paper (ecash.pdf) at this point. He later publicly acknowledged this oversight in a Cointelegraph interview, saying it was "probably my biggest mistake." Back would not actively engage with Bitcoin until 2013, missing the opportunity to be involved from the very beginning despite being one of the first people Satoshi contacted.
 
