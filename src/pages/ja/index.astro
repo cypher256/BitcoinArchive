@@ -4,6 +4,7 @@ import NetworkGraph from '../../components/NetworkGraph.astro';
 import CharacterIntro from '../../components/CharacterIntro.astro';
 import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag, absoluteUrl } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
+import { getHomeAnalyses } from '../../lib/homeAnalyses';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -91,28 +92,7 @@ const topParticipants = Array.from(participantMap.entries())
   .slice(0, TOP_N);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
-// Analyses for the home page.
-// Order rule: entries with an explicit homeOrder (ascending: 1 = topmost),
-// then everything else by git creation date (newest first), capped at 6 items.
-import { existsSync as _existsSync, readFileSync as _readFileSync } from 'fs';
-import { join as _join } from 'path';
-const _gitDatesPath = _join(process.cwd(), 'src/data/git-dates.json');
-const _gitDates: Record<string, { createdAt: string; updatedAt: string }> = _existsSync(_gitDatesPath)
-  ? JSON.parse(_readFileSync(_gitDatesPath, 'utf-8'))
-  : {};
-const allAnalyses = entries.filter((e: any) => e.data.type === 'analysis');
-const orderedAnalyses = allAnalyses
-  .filter((e: any) => typeof e.data.homeOrder === 'number')
-  .sort((a: any, b: any) => a.data.homeOrder - b.data.homeOrder);
-const remainingAnalyses = allAnalyses
-  .filter((e: any) => typeof e.data.homeOrder !== 'number')
-  .sort((a: any, b: any) => {
-    const aDate = _gitDates[a.id]?.createdAt || '';
-    const bDate = _gitDates[b.id]?.createdAt || '';
-    return bDate.localeCompare(aDate);
-  });
-const homeAnalyses = [...orderedAnalyses, ...remainingAnalyses].slice(0, 6);
-const hasMoreAnalyses = allAnalyses.length > 6;
+const { homeAnalyses, hasMoreAnalyses } = getHomeAnalyses(entries);
 
 // Network graph data
 const graphData = computeGraphData(entries, lang);
