@@ -58,27 +58,27 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
   },
   'correspondence/adam-back': {
     en: 'Satoshi ↔ Adam Back Correspondence',
-    ja: 'サトシ ↔ アダム・バック 書簡',
+    ja: 'サトシ ↔ アダム・バック メール',
   },
   'correspondence/dustin-trammell': {
     en: 'Satoshi ↔ Dustin Trammell Correspondence',
-    ja: 'サトシ ↔ ダスティン・トランメル 書簡',
+    ja: 'サトシ ↔ ダスティン・トランメル メール',
   },
   'correspondence/gavin-andresen': {
     en: 'Satoshi ↔ Gavin Andresen Correspondence',
-    ja: 'サトシ ↔ ギャビン・アンドレセン 書簡',
+    ja: 'サトシ ↔ ギャビン・アンドレセン メール',
   },
   'correspondence/hal-finney': {
     en: 'Satoshi ↔ Hal Finney Correspondence',
-    ja: 'サトシ ↔ ハル・フィニー 書簡',
+    ja: 'サトシ ↔ ハル・フィニー メール',
   },
   'correspondence/laszlo-hanyecz': {
     en: 'Satoshi ↔ Laszlo Hanyecz Correspondence',
-    ja: 'サトシ ↔ ラズロ・ハニエツ 書簡',
+    ja: 'サトシ ↔ ラズロ・ハニエツ メール',
   },
   'correspondence/martti-malmi': {
     en: 'Satoshi ↔ Martti Malmi Correspondence',
-    ja: 'サトシ ↔ マルッティ・マルミ 書簡',
+    ja: 'サトシ ↔ マルッティ・マルミ メール',
   },
   'correspondence/mike-hearn/questions': {
     en: 'Satoshi ↔ Mike Hearn — Initial Questions',
@@ -102,11 +102,11 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
   },
   'correspondence/nicholas-bohm': {
     en: 'Satoshi ↔ Nicholas Bohm Correspondence',
-    ja: 'サトシ ↔ ニコラス・ボーム 書簡',
+    ja: 'サトシ ↔ ニコラス・ボーム メール',
   },
   'correspondence/wei-dai': {
     en: 'Satoshi ↔ Wei Dai Correspondence',
-    ja: 'サトシ ↔ ウェイ・ダイ 書簡',
+    ja: 'サトシ ↔ ウェイ・ダイ メール',
   },
 };
 

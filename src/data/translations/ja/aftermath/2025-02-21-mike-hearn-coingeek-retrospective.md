@@ -27,7 +27,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[直接書簡を交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
+CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[直接メールを交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
 
 **サトシの人物像について：**
 
@@ -39,7 +39,7 @@ CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](
 
 > 「福音主義的な人物たちが現れると、彼は苛立ちを覚えたようで、理解できることだが姿を消した」
 
-この評価 — サトシが外部からの脅威ではなく、自身のコミュニティ内の狂信性によって立ち去った — は、書簡を通じてサトシを直接知る人物からの最も直接的な証言の一つである。
+この評価 — サトシが外部からの脅威ではなく、自身のコミュニティ内の狂信性によって立ち去った — は、メールを通じてサトシを直接知る人物からの最も直接的な証言の一つである。
 
 **もし過去に戻れたら：**
 

@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "2013年11月にダスティン・トランメルにより公開。完全な書簡はBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。取引の詳細はトランメルのブログに記録されている"
+    note: "2013年11月にダスティン・トランメルにより公開。完全なメールはBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。取引の詳細はトランメルのブログに記録されている"
   - name: "Dustin Trammell's Blog - Block 286"
     url: "https://blog.dustintrammell.com/block-286-and-satoshis-coins/"
 relatedEntries:

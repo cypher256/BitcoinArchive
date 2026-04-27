@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
-    note: "CoinDesk（2025年）、Bitcoin Magazine、Cointelegraphなどとの複数のインタビューでラズロ・ハニエツが共有したSatoshiのメールからの引用。完全なプライベート書簡は公開されていない"
+    note: "CoinDesk（2025年）、Bitcoin Magazine、Cointelegraphなどとの複数のインタビューでラズロ・ハニエツが共有したSatoshiのメールからの引用。完全な私的メールは公開されていない"
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 relatedEntries:

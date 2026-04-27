@@ -48,7 +48,7 @@ export const tagTranslations: Record<string, string> = {
   'copa-trial': 'COPA裁判',
   'copyright': '著作権',
   'core-developer': 'コア開発者',
-  'correspondence': '書簡',
+  'correspondence': 'メール',
   'cost': 'コスト',
   'court-ruling': '裁判判決',
   'court-testimony': '裁判証言',
@@ -83,11 +83,11 @@ export const tagTranslations: Record<string, string> = {
   'draft': '草稿',
 
   // E
-  'earliest-correspondence': '最初期の書簡',
+  'earliest-correspondence': '最初期のメール',
   'early-adopter': '初期採用者',
   'early-bitcoin': '初期ビットコイン',
   'early-contributor': '初期貢献者',
-  'early-correspondence': '初期の書簡',
+  'early-correspondence': '初期のメール',
   'early-developer': '初期開発者',
   'economics': '経済学',
   'electricity': '電力',
@@ -220,7 +220,7 @@ export const tagTranslations: Record<string, string> = {
   'proof-of-work': 'プルーフ・オブ・ワーク',
   'properties': '特性',
   'pseudonymity': '匿名性',
-  'published-correspondence': '公開書簡',
+  'published-correspondence': '公開メール',
 
   // R
   'quantum-computing': '量子コンピューティング',
