@@ -18,7 +18,7 @@ participants:
     slug: "timothy-may"
 description: "サトシとサイファーパンク運動との関係についての編者による読解。3 つの一次資料による観察を組み合わせる: (1) 18 か月の設計期間中、サトシは b-money を知らなかったという本人自認、(2) サトシはサイファーパンクのコミュニティに「以前から積極的に参加していた人物ではない」というウェイ・ダイの推測、(3) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 項目の思想核との異例に密な整合。仮名そのものの記号論的読解は対になる別エントリで扱う。"
 isSatoshi: false
-homeOrder: 1
+homeOrder: 2
 tags:
   - "cypherpunk"
   - "satoshi-identity"

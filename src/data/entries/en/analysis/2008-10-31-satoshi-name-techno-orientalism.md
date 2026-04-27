@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "A descriptive reading of the 'Satoshi Nakamoto' pseudonym against the cyberpunk and techno-orientalist symbolic field of the 1980s-90s. The entry presents structural observations about the symbolic space the name occupies, not claims about authorial intent. A companion entry covers Satoshi's intellectual position relative to the cypherpunk movement."
 isSatoshi: false
-homeOrder: 2
+homeOrder: 1
 tags:
   - "cyberpunk"
   - "techno-orientalism"

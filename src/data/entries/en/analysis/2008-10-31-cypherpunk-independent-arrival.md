@@ -18,7 +18,7 @@ participants:
     slug: "timothy-may"
 description: "An editorial reading of Satoshi's relationship to the cypherpunk movement, built from three converging primary-source observations: (1) Satoshi's own admission that he did not know b-money during 18 months of design work, (2) Wei Dai's testimony that Satoshi was 'not previously active' in cypherpunk communities, and (3) the unusually tight alignment between Satoshi's documented practices and the six-point ideological core articulated in Eric Hughes's 1993 Cypherpunk's Manifesto. A companion entry covers the separate descriptive reading of the pseudonym against the techno-orientalist symbolic field."
 isSatoshi: false
-homeOrder: 1
+homeOrder: 2
 tags:
   - "cypherpunk"
   - "satoshi-identity"
