@@ -33,3 +33,5 @@ The build for this is version 0.3.19.
 As Gavin and I have said clearly before, the software is not at all resistant to denial-of-service. This is one improvement, but there are still more ways to attack than I can count.
 
 I'm doing a few more things, then I plan to pass the baton.
+
+*[Editor: Satoshi's last known public post on BitcoinTalk. The "pass the baton" line foreshadowed the private departure announcements four months later — the [April 23, 2011 message to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) ("I've moved on to other things") and the [April 26, 2011 final email to Gavin Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) (alert-key handover, "probably be unavailable"). For the full chronology of Satoshi's documented activity see the [activity timeline analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-activity-timeline/); for the inventory of self-references including "pass the baton" see the [self-statements analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/).]*
