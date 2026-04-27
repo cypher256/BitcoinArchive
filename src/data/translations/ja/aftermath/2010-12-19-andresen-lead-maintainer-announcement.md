@@ -46,7 +46,7 @@ translationStatus: complete
 
 同日、ギャビンは [`bitcoin/bitcoin` GitHub リポジトリ](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)を作成した — 9 か月にわたる SVN／GitHub 並列開発期間の始まりであり、SVN が 2011 年 9 月に廃止されるまで続いた。
 
-この公式告知は、リーダーシップ移行の対外的な arc の締めに当たる。時系列:
+この公式告知は、リーダーシップ移行の対外的な流れの締めくくりに当たる。時系列:
 
 - **2010 年 12 月 3 日**: サトシは [マルティ・マルミ宛の私信](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦 — 「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」
 - **2010 年 12 月 12 日**: SVN アクセスの引き継ぎ。サトシの [BitcoinTalk 最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) は「バトンを渡す予定だ」で締めくくられる
@@ -55,4 +55,4 @@ translationStatus: complete
 
 サトシは [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) との[私信](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。私的な側は 4 か月後の 2011 年 4 月 26 日に [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
 
-*[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。元の BitcoinTalk トピック URL は本アーカイブの調査範囲では復元できず、引用テキストは [ギャビン・アンドレセンの回顧記事](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/) と Wikipedia ／ CoinMarketCap の citation 経由で保全されている。今後 URL が判明した場合、本エントリーは type を `article` から `forum-post` に格上げし、primary BitcoinTalk URL を sourceUrl に設定すべきである。]*
+*[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。元の BitcoinTalk トピック URL は本アーカイブの調査範囲では復元できず、引用テキストは [ギャビン・アンドレセンの回顧記事](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/) と Wikipedia ／ CoinMarketCap の引用経由で保全されている。今後 URL が判明した場合、本エントリーは type を `article` から `forum-post` に格上げし、一次資料の BitcoinTalk URL を sourceUrl に設定すべきである。]*
