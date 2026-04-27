@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ最後のソースコミット（12/15）から 4 日後、SVN 引き継ぎ（12/12）から 7 日後、ギャビン・アンドレセンが BitcoinTalk フォーラムで「プロジェクト管理を本格的に引き受ける」ことを公式に告知した。冒頭は「サトシの祝福を受けて、そして大いなる気乗りのなさをもって、私はビットコインのプロジェクト管理をより積極的に行い始める」。同日、ギャビンは bitcoin/bitcoin GitHub リポジトリを作成し、9 か月にわたる SVN／GitHub 並列開発期間が始まった。"
+description: "サトシ最後のソースコミット（12/15）から 4 日後、SVN 引き継ぎ（12/12）から 7 日後、ギャビン・アンドレセンが BitcoinTalk フォーラムで「プロジェクト管理を本格的に引き受ける」ことを公式に告知した。冒頭は「サトシの祝福を受けて、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする」。同日、ギャビンは bitcoin/bitcoin GitHub リポジトリを作成し、9 か月にわたる SVN／GitHub 並列開発期間が始まった。"
 isSatoshi: false
 tags:
   - "gavin-andresen"
@@ -40,7 +40,7 @@ translationStatus: complete
 >
 > Everyone please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved in.
 >
-> （サトシの祝福を受けて、そして大いなる気乗りのなさをもって、私はビットコインのプロジェクト管理をより積極的に行い始める。皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。）
+> （サトシの祝福を受けて、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。）
 
 （[ウィキペディア「ギャビン・アンドレセン」記事](https://en.wikipedia.org/wiki/Gavin_Andresen) および [CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」記事](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen) で引用。元の BitcoinTalk トピック URL は本アーカイブの記録には残っていない。）
 
