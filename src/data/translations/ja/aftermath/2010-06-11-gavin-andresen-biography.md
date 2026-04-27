@@ -55,12 +55,12 @@ translationStatus: complete
 アンドレセンは2010年にビットコインを知った。すぐに最も活発な貢献者の一人となり、Bitcoin Faucet — 無料でビットコインを配布し、人々がこの技術を学び使い始めるのを支援するウェブサイト — を作成した。[2010年6月11日にBitcoinTalkフォーラムでBitcoin Faucetを発表](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/)。これはビットコイン普及を促進する最初期の取り組みの一つだった。
 
 **サトシが選んだ後継者：**
-2010年を通じて、サトシ・ナカモトはアンドレセンにプロジェクトの責任を段階的に委ねていった。2010年9月〜10月頃までに、サトシはSourceForge上のビットコインソースコードリポジトリへのコミット権限とネットワークアラートキーを付与した。2011年4月23日、開発者[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)への[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)で、サトシはこう書いた。
+2010年を通じて、サトシ・ナカモトはアンドレセンにプロジェクトの責任を段階的に委ねていった。[2010年9月、サトシはアンドレセンに「他のプロジェクトに取り組んでいる」と私的に伝えた](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) — サトシが第一線から退く意思を示した、公開記録上最も早いシグナル。続く数か月のあいだに、サトシはSourceForge上のビットコインソースコードリポジトリへのコミット権限とネットワークアラートキーを付与した。2011年4月23日、開発者[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)への[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)で、サトシはこう書いた。
 
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
-**リードメンテナー（2011–2014）：**
-2011年4月のサトシの離脱後、アンドレセンはビットコイン開発の事実上のリーダーとなった。2011年4月26日、[サトシからの最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)を受信。そのメールでサトシはCAlertキーを引き渡し、「私のことを謎めいた影の人物として話し続けるのはやめてほしい」と記した。2012年9月にBitcoin Foundationが設立されると、チーフサイエンティストに就任した。
+**リードメンテナー（2010年12月〜2014年4月）：**
+[2010年12月19日、サトシ最後のソースコミットから4日後、アンドレセンはビットコインのプロジェクト管理を本格的に引き受けることを公的に告知した](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) — 「サトシの祝福を受けて、そして大いなる気乗りのなさをもって、私はビットコインのプロジェクト管理をより積極的に行い始める」。アンドレセンはその時点からビットコイン開発を表立って牽引することになり、サトシは2011年初頭まで私信を続けた。2011年4月26日、アンドレセンは[サトシからの最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)を受信。そのメールでサトシはCAlertキーを正式に引き渡し、「私のことを謎めいた影の人物として話し続けるのはやめてほしい」と記した。2012年9月にBitcoin Foundationが設立されると、アンドレセンはチーフサイエンティストに就任した。
 
 **CIAでの講演：**
 2011年6月14日、アンドレセンはバージニア州ラングレーのCIA本部でビットコインについてプレゼンテーションを行った。これはIn-Q-Tel主催の新興技術カンファレンスの一環だった。事前にサトシにこの招待について伝えていたが、その後サトシの通信頻度は減少し、最終的に完全に途絶えた。
