@@ -42,6 +42,7 @@ relatedEntries:
   - "aftermath/2010-11-19-wladimir-van-der-laan-biography"
   - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
   - "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012"
+  - aftermath/2010-12-19-andresen-lead-maintainer-announcement
 translationStatus: complete
 ---
 

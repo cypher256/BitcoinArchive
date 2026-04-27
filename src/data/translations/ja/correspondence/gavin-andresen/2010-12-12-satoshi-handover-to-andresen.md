@@ -29,6 +29,8 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
 relatedEntries:
   - "correspondence/martti-malmi/2010-12-03-handover-to-gavin"
+  - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
+  - aftermath/2010-12-19-andresen-lead-maintainer-announcement
 translationStatus: complete
 ---
 

@@ -28,6 +28,7 @@ secondarySources:
 relatedEntries:
   - "correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen"
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
+  - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
 ---
 
 On December 3, 2010, Malmi asked Satoshi whether they should recruit someone to take over more Bitcoin-related development and management activities. By this point, Satoshi was becoming increasingly less active and appeared to be preparing for his departure from the project.

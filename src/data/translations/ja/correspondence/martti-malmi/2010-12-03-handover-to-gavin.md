@@ -28,6 +28,7 @@ secondarySources:
 relatedEntries:
   - "correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen"
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
+  - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
 translationStatus: complete
 ---
 

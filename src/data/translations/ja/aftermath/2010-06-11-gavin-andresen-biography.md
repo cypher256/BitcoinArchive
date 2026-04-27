@@ -44,6 +44,8 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-20-forbes-crypto-currency
+  - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
+  - aftermath/2010-12-19-andresen-lead-maintainer-announcement
 translationStatus: complete
 ---
 

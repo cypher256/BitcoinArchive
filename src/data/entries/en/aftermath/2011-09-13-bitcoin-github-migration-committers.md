@@ -42,6 +42,7 @@ relatedEntries:
   - "aftermath/2010-11-19-wladimir-van-der-laan-biography"
   - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
   - "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012"
+  - aftermath/2010-12-19-andresen-lead-maintainer-announcement
 ---
 
 The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 2010**, while the [SourceForge SVN repository](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) was still in active use. For approximately nine months, development occurred in parallel across both platforms. On September 13, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) made the final SVN commit (r252) with the message: "Development has moved to github."

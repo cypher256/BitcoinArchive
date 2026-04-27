@@ -22,6 +22,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
+  - aftermath/2010-12-19-andresen-lead-maintainer-announcement
 ---
 
 There's more work to do on DoS, but I'm doing a quick build of what I have so far in case it's needed, before venturing into more complex ideas.
