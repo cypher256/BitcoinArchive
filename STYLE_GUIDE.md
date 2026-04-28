@@ -805,20 +805,30 @@ entries list and a tag-filtered list.
 
 ### Prose constraint inside containers
 
-Use `.prose` (or set `max-width: var(--max-width-prose)` directly) to
-constrain paragraph elements when the parent container is wider than
-prose-readable. Example: a `.page-lead` subtitle on a 1200px list page.
+Use `.prose` (or set `max-width: var(--max-width-prose)` directly) on
+**body paragraphs** that would otherwise stretch across a wide
+container, where line length matters for reading flow.
 
 ```html
 <div class="container-wide">
   <h1>{{title}}</h1>
-  <p class="page-lead prose">Short page descriptor…</p>
+  <div class="prose">
+    <p>Long-form body paragraph that benefits from a 640px width
+       constraint so the eye does not have to traverse the full
+       1200px container width…</p>
+  </div>
   <div class="entries-grid">…</div>
 </div>
 ```
 
-On `.container` (800px) pages, the container itself already constrains
-prose, so `.prose` is usually redundant.
+**Do not apply `.prose` to short subtitles like `.page-lead`.** A
+single-sentence subtitle does not need a prose-width constraint —
+the constraint only causes mid-word wraps without improving
+readability. Let the container constrain subtitles. The current
+`.page-lead` style intentionally has no `max-width`.
+
+On `.container` (800px) pages, the container itself already
+constrains prose, so `.prose` is usually redundant.
 
 ### Responsive
 
