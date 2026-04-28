@@ -55,4 +55,16 @@ translationStatus: complete
 
 サトシは [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) との[私信](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。私的な側は 4 か月後の 2011 年 4 月 26 日に [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
 
+**リードメンテナーの地位はどう確立されたか：**
+
+リードメンテナーという地位は、コミュニティ投票・公的承認・組織化された引き継ぎプロセスの産物ではない。3 つの要素が重なって成立した:
+
+- **前任者の祝福** — サトシによる [2010 年 12 月 3 日のマルティ・マルミ宛の私的推薦](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) と、[12 月 12 日の SVN アクセス譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)
+- **自己宣言** — 本エントリで扱う 12 月 19 日の告知。アンドレセン自身が新しい active project manager と名乗った
+- **コミュニティの暗黙の受容** — 反対表明や対抗主張が記録に残っていないこと、加えて他開発者・ユーザーによる継続的な参加
+
+2010 年末の Bitcoin コミュニティ（フォーラム参加者は数百人規模）には、形式的なガバナンス・プロセスが存在しなかった — メンテナー選挙も、コミュニティ投票も、リーダーシップ確認のための組織化されたスレッドも、本アーカイブの調査範囲では復元されていない。リードメンテナー役を確立した de facto なパターン（前任者の祝福 + 自己宣言 + 利用継続によるコミュニティ受容）は、9 か月後の [SVN → GitHub 移行](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/) でも同じく現れる: 基盤的・指導的判断は、コミット権を持つ開発者によって下され、コミュニティはその後の可視化を通じて受け入れる、という型である。
+
+この役割は 2012 年 9 月の Bitcoin Foundation 設立に伴い、アンドレセンが同財団のチーフサイエンティストに就任した時点で制度化された。
+
 *[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。元の BitcoinTalk トピック URL は本アーカイブの調査範囲では復元できず、引用テキストは [ギャビン・アンドレセンの回顧記事](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/) と Wikipedia ／ CoinMarketCap の引用経由で保全されている。今後 URL が判明した場合、本エントリーは type を `article` から `forum-post` に格上げし、一次資料の BitcoinTalk URL を sourceUrl に設定すべきである。]*
