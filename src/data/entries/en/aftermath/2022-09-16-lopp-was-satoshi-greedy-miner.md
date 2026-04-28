@@ -34,6 +34,7 @@ relatedEntries:
   - "aftermath/2021-09-30-plos-one-patoshi-anomaly-study"
   - "aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis"
   - "analysis/2009-01-10-satoshi-launch-environment"
+  - "aftermath/2023-10-21-lopp-hal-finney-not-satoshi"
 translationStatus: complete
 ---
 

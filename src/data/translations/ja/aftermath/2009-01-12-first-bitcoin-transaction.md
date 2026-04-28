@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
 translationStatus: complete
 ---
 

@@ -20,6 +20,8 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+relatedEntries:
+  - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
 translationStatus: complete
 ---
 

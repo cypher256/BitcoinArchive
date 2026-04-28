@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
+  - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
 ---
 
 I thought I'd write about the last four years, an eventful time for Bitcoin and me.
