@@ -67,7 +67,7 @@ const structuredData = {
   alternateEn={hasEn ? absoluteUrl(`/types/${type}/`, 'en') : undefined}
   structuredData={structuredData}
 >
-  <div class="container">
+  <div class="container-wide">
     <h1>{typeLabel}</h1>
     <p class="page-lead">この形式（タイプ）のエントリー集約。形式軸で時間を追うと、ビットコイン黎明期のコミュニケーション様式の変遷が見えます。</p>
     <p class="entry-count">{displayEntries.length} エントリー</p>
@@ -101,7 +101,7 @@ const structuredData = {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
-    max-width: 70ch;
+    max-width: var(--max-width-prose);
   }
   .entry-count {
     font-family: var(--font-heading);

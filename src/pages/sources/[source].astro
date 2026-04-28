@@ -67,7 +67,7 @@ const structuredData = {
   alternateJa={hasJa ? absoluteUrl(`/sources/${source}/`, 'ja') : undefined}
   structuredData={structuredData}
 >
-  <div class="container">
+  <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">Entries originating from this channel. The source axis lets you trace the venues Satoshi and contemporaries used over time.</p>
     <p class="entry-count">{displayEntries.length} entries</p>
@@ -100,7 +100,7 @@ const structuredData = {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
-    max-width: 70ch;
+    max-width: var(--max-width-prose);
   }
   .entry-count {
     font-family: var(--font-heading);

@@ -67,7 +67,7 @@ const structuredData = {
   alternateJa={hasJa ? absoluteUrl(`/types/${type}/`, 'ja') : undefined}
   structuredData={structuredData}
 >
-  <div class="container">
+  <div class="container-wide">
     <h1>{typeLabel}</h1>
     <p class="page-lead">Entries of this type, gathered from across the archive. Use the type axis to compare communication formats over time.</p>
     <p class="entry-count">{displayEntries.length} entries</p>
@@ -101,7 +101,7 @@ const structuredData = {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
-    max-width: 70ch;
+    max-width: var(--max-width-prose);
   }
   .entry-count {
     font-family: var(--font-heading);

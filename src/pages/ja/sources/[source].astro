@@ -67,7 +67,7 @@ const structuredData = {
   alternateEn={hasEn ? absoluteUrl(`/sources/${source}/`, 'en') : undefined}
   structuredData={structuredData}
 >
-  <div class="container">
+  <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。</p>
     <p class="entry-count">{displayEntries.length} エントリー</p>
@@ -100,7 +100,7 @@ const structuredData = {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
-    max-width: 70ch;
+    max-width: var(--max-width-prose);
   }
   .entry-count {
     font-family: var(--font-heading);

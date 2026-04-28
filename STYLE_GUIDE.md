@@ -752,6 +752,109 @@ Any factual claim about a real person — direct quote, reported speech, narrate
 
 Before writing any factual claim about a real person — in any form — explicitly name the source (a URL, an `sourceUrl` field, a `secondarySources` entry, or a named primary record) and confirm the claim appears at that source. This is a required procedural step, not a principle to apply when in doubt. Extended exposure to narrative reconstructions (novels, dramatizations, documentaries, AI-generated biographical prose) blurs the boundary between fictional and historical content **in both directions** — you may import fiction as fact, or flag a real quote as fabricated. The "does this feel canonical" instinct becomes unreliable in both directions. The verification step exists precisely because that instinct fails. If you cannot perform the verification, drop the claim entirely — do not try to rescue it by paraphrase or by removing quotation marks.
 
+## Layout Width Policy
+
+The site uses a two-tier container system plus a separate prose-width
+constraint. The two concerns — page-tier width and prose readability —
+are handled by independent tokens so neither has to do double duty.
+
+### Tokens
+
+Defined at `:root` in `src/styles/global.css`:
+
+| Token | Value | Concern |
+|---|---|---|
+| `--max-width-prose` | 640px | Prose paragraph readability (env- and language-independent) |
+| `--max-width-read` | 800px | Reading-tier page (single document) |
+| `--max-width-wide` | 1200px | Dashboard-tier page (lists, viz) |
+
+`--max-width` is kept as an alias for `--max-width-read` for backward
+compatibility. Prefer the tier-specific tokens in new code.
+
+**Why fixed `px`, not `ch`?** The `ch` unit measures the width of the
+"0" glyph in the active font. It is environment-dependent (different
+font fallback chains produce different widths) and language-dependent
+(Japanese full-width characters are roughly 2× the width assumed by
+`ch`). Use `px` for layout boundaries.
+
+### Page-tier allocation
+
+`.container-wide` (1200px) — list / hub / search / dashboard:
+
+- top page (`/`)
+- search (`/search/`)
+- chart (`/chart/`)
+- entries index (`/entries/`)
+- participants index (`/participants/`)
+- tags index, tags filter (`/tags/`, `/tags/{tag}/`)
+- types index, types filter (`/types/`, `/types/{type}/`)
+- sources index, sources filter (`/sources/`, `/sources/{source}/`)
+
+`.container` (800px) — single-document reading pages:
+
+- about
+- 404
+- entry detail (`/entries/{slug}/`)
+- thread detail (`/entries/threads/{id}/`)
+- participant biography (`/participants/{slug}/`)
+
+**Rule:** EntryCard list pages all use `.container-wide`. The same
+content type should not appear at different widths across the site —
+that breaks visual rhythm when navigating between, say, the full
+entries list and a tag-filtered list.
+
+### Prose constraint inside containers
+
+Use `.prose` (or set `max-width: var(--max-width-prose)` directly) to
+constrain paragraph elements when the parent container is wider than
+prose-readable. Example: a `.page-lead` subtitle on a 1200px list page.
+
+```html
+<div class="container-wide">
+  <h1>{{title}}</h1>
+  <p class="page-lead prose">Short page descriptor…</p>
+  <div class="entries-grid">…</div>
+</div>
+```
+
+On `.container` (800px) pages, the container itself already constrains
+prose, so `.prose` is usually redundant.
+
+### Responsive
+
+| Breakpoint | Behavior |
+|---|---|
+| ≥1200 | Containers at fixed max-width (800 / 1200) |
+| 768–1199 | Containers fluid to viewport (`max-width: 100%`), padding 1.5rem |
+| <768 | Containers full-width, padding 1rem, font-size 15px |
+
+Implemented in `src/styles/global.css` with two `@media` queries
+(`max-width: 1199px` and `max-width: 767px`). The 1199 query covers
+tablet landscape and small laptops; the 767 query covers phones.
+
+### Header
+
+The site header is always `.container-wide` (1200px) regardless of
+the page tier below it. The header is global navigation, not page
+content — keeping it at the wide tier matches the industry pattern
+(GitHub, Notion, Linear) where chrome is consistent across page types.
+
+The Header component has its own `@media (max-width: 768px)` rule
+that switches to a hamburger menu. This is a separate UX concern from
+container fluid behavior and intentionally uses a different breakpoint.
+
+### What this policy does not cover
+
+- Hybrid pages (analysis with embedded D3 visualizations) currently
+  live on `.container` (800px). If a viz needs more than ~750px to
+  render legibly, introduce a `--max-width-hybrid` token (~1100px)
+  and a `.container-hybrid` utility rather than widening the reading
+  tier.
+- Ultrawide monitors (>1440px viewport) are not fluid-scaled; the
+  1200px ceiling holds. Card grids and prose stay readable; left/right
+  whitespace is acceptable.
+- Print styles are not addressed.
+
 ## Language-Specific Guides
 
 - Japanese-specific rules: `STYLE_GUIDE_JA.md`

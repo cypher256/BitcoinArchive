@@ -78,7 +78,7 @@ const structuredData = {
   alternateEn={hasEn ? absoluteUrl(`/tags/${tag}/`, 'en') : undefined}
   structuredData={structuredData}
 >
-  <div class="container">
+  <div class="container-wide">
     <h1>{tagLabel}</h1>
     <p class="page-lead">このトピックでタグ付けされたエントリー。タイプ・ソースを横断し、人物・出来事・テーマの関連を辿れます。</p>
     <p class="entry-count">{displayEntries.length} エントリー</p>
@@ -111,7 +111,7 @@ const structuredData = {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
-    max-width: 70ch;
+    max-width: var(--max-width-prose);
   }
   .entry-count {
     font-family: var(--font-heading);

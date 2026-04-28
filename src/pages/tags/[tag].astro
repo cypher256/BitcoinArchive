@@ -77,7 +77,7 @@ const structuredData = {
   alternateJa={hasJa ? absoluteUrl(`/tags/${tag}/`, 'ja') : undefined}
   structuredData={structuredData}
 >
-  <div class="container">
+  <div class="container-wide">
     <h1>{tag}</h1>
     <p class="page-lead">Entries tagged with this topic. Spans across types and sources — explore connections between people, events, and themes.</p>
     <p class="entry-count">{displayEntries.length} entries</p>
@@ -110,7 +110,7 @@ const structuredData = {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
-    max-width: 70ch;
+    max-width: var(--max-width-prose);
   }
   .entry-count {
     font-family: var(--font-heading);
