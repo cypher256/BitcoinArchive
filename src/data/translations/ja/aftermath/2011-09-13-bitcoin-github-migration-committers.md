@@ -49,9 +49,12 @@ translationStatus: complete
 BitcoinのGitHubリポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVNリポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が最終SVNコミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
 
 **移行タイムライン：**
-- **2010-12-19:** GitHubリポジトリ `bitcoin/bitcoin` 作成。
-- **2011-01〜2011-09:** SVNとGitHubで並行開発。
-- **2011-09-13:** 最終SVNコミット。GitHubが唯一のリポジトリとなる。
+- **2010-12-19:** GitHub リポジトリ `bitcoin/bitcoin` 作成 — [ギャビンがプロジェクト管理を公的に引き受けた日](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)と同日。
+- **2011-01〜2011-09:** SVN と GitHub で並行開発。
+- **2011-09-13:** 最終 SVN コミット（r252）、メッセージは「Development has moved to github.」。GitHub が唯一のリポジトリとなる。
+
+**移行の意思決定について：**
+SVN → GitHub 移行を明示的に議論あるいは告知した BitcoinTalk スレッドや bitcoin-list メーリングリストへの投稿は、本アーカイブの調査範囲では復元できていない。利用可能な証拠は、新リードメンテナーとなったギャビンが developer 側の判断として単独で進め、9 か月の並行開発期間のあいだに公的な告知イベントを伴わずに静かに完了させた、という像と整合する。基盤的変更としては大きく — pull request ベースのコードレビューにより適したプラットフォームへ Bitcoin 開発を移行し、新しい貢献者をプロジェクトに引き入れた — その意思決定そのものはコミット権を持つ開発者の判断であって、コミュニティの審議を経たものではない。これはギャビン初期のプロジェクト運営に共通するパターン（メンテナーが技術判断を下し、コミュニティはその後可視化される）と整合する。今後、明示的な公的告知や議論の文書が判明した場合、本エントリーは更新されるべきである。
 
 **2011年のGitHubコミットアクセス付与：**
 

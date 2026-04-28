@@ -48,9 +48,12 @@ relatedEntries:
 The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 2010**, while the [SourceForge SVN repository](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) was still in active use. For approximately nine months, development occurred in parallel across both platforms. On September 13, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) made the final SVN commit (r252) with the message: "Development has moved to github."
 
 **Migration timeline:**
-- **2010-12-19:** GitHub repository `bitcoin/bitcoin` created.
+- **2010-12-19:** GitHub repository `bitcoin/bitcoin` created — the same day Andresen [publicly assumed project management](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/).
 - **2011-01 to 2011-09:** Parallel development on both SVN and GitHub.
-- **2011-09-13:** Final SVN commit. GitHub becomes the sole repository.
+- **2011-09-13:** Final SVN commit (r252) with the message "Development has moved to github." GitHub becomes the sole repository.
+
+**The migration decision:**
+No public BitcoinTalk thread or bitcoin-list mailing list message has been recovered for this archive that explicitly discusses or announces the SVN → GitHub migration. The available evidence is consistent with a unilateral developer-side decision by Andresen as the new lead maintainer, executed quietly during the nine-month parallel-development period without a discrete public announcement event. The infrastructural change was significant — it shifted Bitcoin's development to a platform that better supported pull-request-based code review and brought new contributors into the project — but the decision-making itself appears to have been made by the developers who held commit access, not through community deliberation. This is consistent with the broader pattern of Andresen's early stewardship: technical decisions made by the maintainer with subsequent community visibility, rather than upfront community vote. If documentation of an explicit public announcement or discussion surfaces in future research, this entry should be updated to reflect it.
 
 **GitHub commit access grants in 2011:**
 
