@@ -198,13 +198,13 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 #### Peter Todd
 
-**Background.** Canadian Bitcoin Core developer (born 1985), contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work.
+**Background.** Canadian Bitcoin Core developer, contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work.
 
 **The hypothesis.** Identified as a Satoshi candidate in the [2024 HBO documentary *Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024). The documentary's argument rested in part on a December 2010 BitcoinTalk thread in which Todd's reply appeared to complete or extend a partially-edited Satoshi post in a way the documentary read as same-author behavior.
 
 **Argument for.** Bitcoin Core implementation capability (post-2012). The HBO documentary's December 2010 BitcoinTalk thread reading.
 
-**Argument against.** Todd would have been 22 years old in mid-2007 when Satoshi's documented 18-month design window started — a fact frequently raised in critiques of the HBO documentary. No documented cypherpunk-mailing-list presence pre-2012. His Bitcoin Core contributions began ~2012, after Satoshi's withdrawal. No documented BTC-adjacent intellectual work pre-2010. Todd has publicly denied being Satoshi; the documentary's evidence has been widely critiqued in the Bitcoin technical community as circumstantial.
+**Argument against.** Todd was an undergraduate at OCAD University (Integrated Media, graduated 2011) during Satoshi's documented 18-month design window starting in mid-2007 — an OCAD-undergraduate-as-Bitcoin-designer profile that has been frequently raised in critiques of the HBO documentary. No documented cypherpunk-mailing-list presence pre-2012. His Bitcoin Core contributions began ~2012, after Satoshi's withdrawal. No documented BTC-adjacent intellectual work pre-2010. Todd has publicly denied being Satoshi; the documentary's evidence has been widely critiqued in the Bitcoin technical community as circumstantial.
 
 **External status.** Self-denied (post-HBO); community critique of evidence as circumstantial.
 
