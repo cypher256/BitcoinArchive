@@ -54,7 +54,7 @@ This overview covers seven named-candidate hypotheses that appear repeatedly in 
 
 The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, with a Japanese-form pseudonym, and silent in public correspondence after April 26, 2011.
 
-| Candidate | Cypherpunk fora | BTC lineage | English | JP name | Timing | Low visibility | External status |
+| Candidate | Cypherpunk fora | BTC lineage | English level | JP name | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|
 | Hal Finney | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
 | Nick Szabo | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
@@ -64,7 +64,7 @@ The dimensions below are derived from what the public record establishes about S
 | Peter Todd | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | Isamu Kaneko | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | Open |
 
-🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *English* = near-native register in the Bitcoin documents; *JP name* = pseudonym fits a Japanese given+family pair; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
+🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *English level* = near-native register in the Bitcoin documents; *JP name* = pseudonym fits a Japanese given+family pair; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
 
 A note on reading the table: profile-match is a *necessary but not sufficient* condition. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of profile match. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
