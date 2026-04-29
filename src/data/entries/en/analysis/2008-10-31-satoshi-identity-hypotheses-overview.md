@@ -64,7 +64,7 @@ The dimensions below are derived from what the public record establishes about S
 
 | Candidate | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | JP name | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|---|
-| Adam Back | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
+| Adam Back | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
 | Wei Dai | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied |
 | Hal Finney | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
 | Nick Szabo | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
@@ -72,7 +72,7 @@ The dimensions below are derived from what the public record establishes about S
 | Craig Wright | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
 | Paul Le Roux | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | Open (incarcerated 2012–) |
 | Len Sassaman | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 🟢 | Open |
-| Peter Todd | 🔴 | 🔴 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
+| Peter Todd | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | Isamu Kaneko | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | Open |
 
 🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *Implementation* = documented lifetime track record of shipping software at a scale comparable to Bitcoin v0.1's ~20,000-line C++ codebase (cryptographic libraries, P2P systems, anonymity networks, or complete applications). Lifetime, not strictly pre-2008, because Satoshi-as-pseudonym hides any pre-2008 implementation work the actual person had done; demonstrated post-launch capability is treated as evidence of the underlying capability; *Monetary design* = documented thinking about digital-cash / monetary-system mechanisms (proof-of-work tokens, scarcity, fee markets, mining incentives, distributed issuance). A separate dimension from Implementation because Bitcoin v0.1 required both code-shipping skill *and* coherent monetary-mechanism design; *English level* = near-native register in the Bitcoin documents; *JP name* = pseudonym fits a Japanese given+family pair; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
