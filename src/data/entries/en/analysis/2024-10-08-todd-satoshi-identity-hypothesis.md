@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the Peter Todd = Satoshi Nakamoto identity hypothesis, articulated in HBO's 2024 documentary 'Money Electric: The Bitcoin Mystery' (Cullen Hoback, October 8, 2024). The hypothesis rests on a December 2010 BitcoinTalk thread where Todd's reply appeared to complete a partially-edited Satoshi post, the connection between that exchange and Todd's later RBF / BIP 125 work, a notable shift in Todd's writing style across three periods, and a gap in Todd's documented development activity overlapping with Satoshi's active period. The counter-evidence — Todd's status as an OCAD University undergraduate (Integrated Media, graduated 2011) during Bitcoin's design, no documented cypherpunk-mailing-list presence pre-2012, public self-denial, and broad technical-community critique of the documentary's evidence as circumstantial — is set out at the same level of detail."
+description: "Documentation of the Peter Todd = Satoshi Nakamoto identity hypothesis, articulated in HBO's 2024 documentary 'Money Electric: The Bitcoin Mystery' (Cullen Hoback, October 8, 2024). The hypothesis rests on a December 2010 BitcoinTalk thread where Todd's reply appeared to complete a partially-edited Satoshi post, the connection between that exchange and Todd's later RBF / BIP 125 work, a notable shift in Todd's writing style across three periods, and a gap in Todd's documented development activity overlapping with Satoshi's active period. The counter-evidence — Todd's age (22 in mid-2007, OCAD University undergraduate, Integrated Media, graduated 2011), no documented cypherpunk-mailing-list presence pre-2012, public self-denial, and broad technical-community critique of the documentary's evidence as circumstantial — is set out at the same level of detail."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -26,6 +26,8 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous"
   - name: "Cointelegraph — Everything HBO's Bitcoin doc got wrong about Peter Todd and Satoshi"
     url: "https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto"
+  - name: "Wikidata — Peter Todd (Q130523424)"
+    url: "https://www.wikidata.org/wiki/Q130523424"
 relatedEntries:
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - aftermath/2010-12-07-peter-todd-biography
@@ -77,7 +79,7 @@ Todd's public writing appears to shift noticeably across three periods:
 
 The progression — from no personality, to neutral precision, to an unmistakably idiosyncratic style — is the documentary-supporting reading: most writers, the argument runs, show more personality early and develop restraint over time, not the reverse.
 
-The objection: a single classified-ad-style first post followed by a single technical-correction second post is too small a sample to establish a writer's range. A person's mature public-writing voice typically forms over their early adulthood, and the absence of Todd's later confrontational register in two short BitcoinTalk posts during his undergraduate years is consistent with that voice not yet being formed, rather than with that voice being deliberately suppressed.
+The objection: a single classified-ad-style first post followed by a single technical-correction second post is too small a sample to establish a writer's range. A person's mature public-writing voice typically forms over their early-to-mid twenties, and the absence of Todd's later confrontational register in two short BitcoinTalk posts at age 25 is consistent with that voice not yet being formed, rather than with that voice being deliberately suppressed.
 
 ### 2.4 Development-activity timeline
 
@@ -123,9 +125,9 @@ The objection: an undergraduate's nearly-empty public GitHub commit graph during
 
 ## 3. The counter-evidence
 
-### 3.1 OCAD undergraduate timeline
+### 3.1 Age and OCAD timeline
 
-Todd's birth year is not in the public record this archive can verify. What is in the record: in mid-2007, when Satoshi's [documented 18-month Bitcoin design window](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) starts, Todd was an undergraduate at OCAD University pursuing an Integrated Media (fine arts) degree. He graduated in 2011. The hypothesis requires this person to have, in parallel with the OCAD program, designed a novel consensus mechanism, written the whitepaper, shipped the v0.1 codebase, run the network, and corresponded as Satoshi for two and a half years — while leaving no documented cryptographic or distributed-systems coursework, mailing-list activity, or other technical-protocol work in his pre-2012 public record. Possible, but not without cost.
+Todd was born on March 14, 1985 in Vancouver, Canada (Wikidata Q130523424). In mid-2007, when Satoshi's [documented 18-month Bitcoin design window](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) starts, Todd was 22 years old, an undergraduate at OCAD University pursuing an Integrated Media (fine arts) degree. He graduated in 2011. The hypothesis requires this person to have, in parallel with the OCAD program, designed a novel consensus mechanism, written the whitepaper, shipped the v0.1 codebase, run the network, and corresponded as Satoshi for two and a half years — while leaving no documented cryptographic or distributed-systems coursework, mailing-list activity, or other technical-protocol work in his pre-2012 public record. Possible, but not without cost.
 
 ### 3.2 No documented cypherpunk presence pre-2012
 

@@ -17,6 +17,8 @@ tags:
   - "opentimestamps"
   - "bitcoin-core"
 secondarySources:
+  - name: "Wikidata — Peter Todd (Q130523424)"
+    url: "https://www.wikidata.org/wiki/Q130523424"
   - name: "Peter Todd — OpenTimestamps"
     url: "https://opentimestamps.org/"
   - name: "BIP 125 — Opt-in Full Replace-by-Fee Signaling"
@@ -44,7 +46,7 @@ relatedEntries:
   - bip/2015-11-03-bip-0125
 ---
 
-Peter Todd (Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media, and previously worked as an analog electronics designer at geophysics startup Gedex Inc. He registered a GitHub account in April 2008. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.
+Peter Todd (born March 14, 1985 in Vancouver, Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media, and previously worked as an analog electronics designer at geophysics startup Gedex Inc. He registered a GitHub account in April 2008. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.
 
 **BitcoinTalk and Satoshi:**
 Todd registered on BitcoinTalk on December 7, 2010 under the username "retep." At the time, few noticed that the handle was Peter spelled backwards — Bitcoin Core developer Gregory Maxwell commented in October 2024 on Hacker News that "it took me nearly a decade to realize retep was peter backwards." Years later, Todd changed the account's username to "Peter Todd." Three days after registration, on December 10, he [replied to a Satoshi Nakamoto post](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) in the "Fees in BitDNS confusion" thread, where Satoshi had described a concept for transaction replacement — what would later become known as Replace-by-Fee. This was only Todd's second post on the forum. Satoshi's [last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
