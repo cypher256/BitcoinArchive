@@ -31,9 +31,8 @@ relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
-  - analysis/2008-10-31-cypherpunk-independent-arrival
-  - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:
   - "Sassaman hypothesis"
   - "Sassaman = Satoshi"
@@ -98,20 +97,6 @@ Patterson's silence on the identity claim is information. If she knew the hypoth
 
 Sassaman was an active PhD candidate at KU Leuven during 2008–2011 — the period of Bitcoin's design and early operation. The 18 months of intensive Bitcoin design (mid-2007 through August 2008, [per Satoshi's own documented timeline](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)) overlap with the period a PhD candidate at COSIC would normally be at the highest workload of their academic career. The hypothesis requires Sassaman to have done both — the PhD work *and* an 18-month intensive Bitcoin-design effort — concurrently. Possible, but not without cost.
 
-### 3.4 Comparison with other identity hypotheses
-
-The Sassaman hypothesis sits in a family of named-candidate hypotheses, each with characteristic strengths and weaknesses:
-
-| Candidate | Hypothesis-strength evidence | Hypothesis-weakness evidence |
-|---|---|---|
-| Hal Finney | First non-Satoshi node, neighbor of someone named "Dorian Satoshi Nakamoto" | Finney denied being Satoshi; mining-pattern analysis (Patoshi) doesn't match Finney |
-| Nick Szabo | Bit Gold designer with overlapping idea-space | Szabo denied being Satoshi |
-| Dorian Nakamoto | Name match | Newsweek 2014 story largely retracted; no technical fit |
-| Craig Wright | Self-claim with attempted cryptographic proof | Cryptographic claims publicly debunked; COPA v Wright trial ruled against |
-| **Len Sassaman** | **Timing of death + cypherpunk profile** | **No direct documentary link; widow's silence; KU Leuven workload overlap** |
-
-The Sassaman hypothesis is *not* the strongest in this family on the kind of evidence that has narrowed other identity hypotheses. It is the most narratively compelling — the timing of death three months after Satoshi's last email is a striking literary fact — but striking is not the same as evidentially decisive.
-
 ## 4. Within the broader documentary record
 
 The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during design, support a "not a visibly active cypherpunk during 2007–2008" reading.
@@ -119,6 +104,8 @@ The strongest claim the public record supports about Satoshi himself is that he 
 That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Whether Sassaman's KU Leuven and Mixmaster work in 2007–2008 was visible enough in the cypherpunk discussion fora to qualify is a question this archive does not have the data to answer.
 
 The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies equally regardless of whether the person behind the pseudonym was Sassaman, someone else, or a group.
+
+For comparison with other named-candidate Satoshi-identity hypotheses (Finney, Szabo, Dorian, Wright, Kaneko), see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single profile-match comparison and external-status notes for each candidate.
 
 ## 5. Limits of this entry
 

@@ -27,8 +27,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Winny"
 relatedEntries:
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
-  - analysis/2008-10-31-cypherpunk-independent-arrival
-  - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:
   - "Kaneko hypothesis"
   - "Kaneko = Satoshi"
@@ -107,23 +106,6 @@ Bitcoin's intellectual genealogy — Hashcash (Adam Back, 1997), b-money (Wei Da
 
 Kaneko's death (July 6, 2013) is two years and two months after Satoshi's last documented email (April 26, 2011). The Sassaman hypothesis's strongest argument is the three-month interval between Satoshi's last email and Sassaman's death; the equivalent argument for Kaneko depends on a much longer interval, and the intervening period contains his Supreme Court acquittal (December 2011), his return to active commercial software work (joining the Dreamboat / SAMURAI development effort, 2012), and roughly eighteen months of public technical activity. The "withdrawal followed by death" narrative that gives the Sassaman timing argument its rhetorical force does not transfer to Kaneko: the public record shows him *re-engaging* with software work after Satoshi's silence, not withdrawing.
 
-### 4.5 Comparison with the Sassaman hypothesis
-
-The Kaneko and Sassaman hypotheses share a structural form: a deceased technically-capable figure with a profile adjacent to (but not within) the cypherpunk research conversation is proposed retrospectively as Satoshi. They differ on the weights of individual pieces of evidence:
-
-| Argument class | Sassaman | Kaneko |
-|---|---|---|
-| Documented cypherpunk-mailing-list participation | ● Strong (Mixmaster lineage) | ○ Weak (none) |
-| Intellectual lineage adjacent to Bitcoin's | ● Strong (anonymity / cryptography) | ○ Weak (P2P routing) |
-| Near-native English register | ● Strong | ○ Weak |
-| Pseudonym-name fit (Japanese form) | ○ Weak (no fit) | ● Strong (only candidate with fit) |
-| Tight timing relative to Satoshi's silence | ● Strong (3 months) | ○ Weak (2 years) |
-| Low public visibility during design period | ● Strong (PhD work, no public spotlight) | ○ Weak (convicted defendant on appeal) |
-
-(● = the dimension favors the hypothesis; ○ = it weighs against. The dots visualize the same Strong / Weak judgments stated in the cell text.)
-
-The two hypotheses' strengths are not symmetric. The Kaneko hypothesis has one argument that no other named candidate can make (the pseudonym fit), but is weaker on most other dimensions where the Sassaman hypothesis is at least average.
-
 ## 5. Within the broader documentary record
 
 The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money / Bit Gold intellectual lineage.
@@ -131,6 +113,8 @@ The strongest claim the public record supports about Satoshi himself is that he 
 Kaneko fits the "outside the visible cypherpunk community" condition (he was not in those forums) but does not fit the "near-native English" or "Hashcash / b-money / Bit Gold lineage" conditions on the documentary evidence available.
 
 The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies regardless of whether the person behind the pseudonym was Japanese, used a Japanese-form pseudonym deliberately, or some other configuration.
+
+For comparison with other named-candidate Satoshi-identity hypotheses (Finney, Szabo, Dorian, Wright, Sassaman), see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single profile-match comparison and external-status notes for each candidate.
 
 ## 6. Limits of this entry
 

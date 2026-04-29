@@ -48,6 +48,7 @@ relatedEntries:
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 translationStatus: complete
 ---
 
