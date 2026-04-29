@@ -62,20 +62,20 @@ This overview covers ten named-candidate hypotheses that appear repeatedly in pu
 
 The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, with a Japanese-form pseudonym, and silent in public correspondence after April 26, 2011.
 
-| Candidate | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | JP name | Timing | Low visibility | External status |
-|---|---|---|---|---|---|---|---|---|---|
-| Adam Back | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
-| Wei Dai | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied |
-| Hal Finney | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
-| Nick Szabo | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
-| Dorian Nakamoto | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🟢 | 🔴 | 🟢 | Newsweek retraction; denied |
-| Craig Wright | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
-| Paul Le Roux | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | Open (incarcerated 2012–) |
-| Len Sassaman | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 🟡 | Open |
-| Peter Todd | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
-| Isamu Kaneko | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | Open |
+| Candidate | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
+|---|---|---|---|---|---|---|---|---|
+| Adam Back | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
+| Wei Dai | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
+| Hal Finney | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
+| Nick Szabo | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
+| Dorian Nakamoto | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Newsweek retraction; denied |
+| Craig Wright | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
+| Paul Le Roux | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
+| Len Sassaman | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
+| Peter Todd | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
+| Isamu Kaneko | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
-🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *Implementation* = documented lifetime track record of shipping software at a scale comparable to Bitcoin v0.1's ~20,000-line C++ codebase (cryptographic libraries, P2P systems, anonymity networks, or complete applications). Lifetime, not strictly pre-2008, because Satoshi-as-pseudonym hides any pre-2008 implementation work the actual person had done; demonstrated post-launch capability is treated as evidence of the underlying capability; *Monetary design* = documented thinking about digital-cash / monetary-system mechanisms (proof-of-work tokens, scarcity, fee markets, mining incentives, distributed issuance). A separate dimension from Implementation because Bitcoin v0.1 required both code-shipping skill *and* coherent monetary-mechanism design; *English level* = near-native register in the Bitcoin documents; *JP name* = pseudonym fits a Japanese given+family pair; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
+🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *Implementation* = documented lifetime track record of shipping software at a scale comparable to Bitcoin v0.1's ~20,000-line C++ codebase (cryptographic libraries, P2P systems, anonymity networks, or complete applications). Lifetime, not strictly pre-2008, because Satoshi-as-pseudonym hides any pre-2008 implementation work the actual person had done; demonstrated post-launch capability is treated as evidence of the underlying capability; *Monetary design* = documented thinking about digital-cash / monetary-system mechanisms (proof-of-work tokens, scarcity, fee markets, mining incentives, distributed issuance). A separate dimension from Implementation because Bitcoin v0.1 required both code-shipping skill *and* coherent monetary-mechanism design; *English level* = near-native register in the Bitcoin documents; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
 
 A note on reading the table: profile-match is a *necessary but not sufficient* condition. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of profile match. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
@@ -88,7 +88,6 @@ Profile-match dimensions are derived from what the public record establishes abo
 - *Implementation capability*: documented lifetime track record of shipping software at a scale comparable to Bitcoin v0.1's 19,901-line C++ codebase — cryptographic libraries, P2P systems, anonymity networks, or complete shipping applications of similar size and engineering complexity. The dimension is specifically about *Bitcoin-source-level* capability, not general programming literacy. Lifetime rather than strictly pre-2008: Satoshi-as-pseudonym hides any pre-2008 implementation work the actual person had done, so demonstrated post-launch capability (in Bitcoin Core, related cryptographic projects, or major engineering positions) counts as evidence of the underlying capability. The dimension distinguishes candidates with a documented multi-thousand-line shipping record from theorists, scholars, or small-scale contributors.
 - *Monetary system design*: documented thinking about digital-cash / monetary-system mechanisms — proof-of-work tokens, scarcity mechanisms, fee markets, mining incentives, distributed issuance schemes. Bitcoin v0.1 required not only cryptographic and distributed-systems engineering (covered by Implementation) but also coherent thinking about monetary mechanism design; this dimension separates that aspect. A theorist who designed a monetary mechanism without shipping code (Szabo with Bit Gold, for example) scores 🟢 here even with 🔴 on Implementation; an implementer with no monetary-system work in their record (Sassaman with Mixmaster, Le Roux with E4M, Kaneko with Winny) scores the inverse.
 - *Near-native English register*: idiom, register-shift, and literary fluency comparable to Satoshi's white paper, BitcoinTalk posts, and email correspondence.
-- *Pseudonym-name fit (Japanese form)*: whether the candidate's documented name is itself a plausible Japanese given+family name pair.
 - *Tight timing vs Satoshi's silence*: closeness of a documented major life event (death, retirement, etc.) to Satoshi's last known correspondence (April 26, 2011 email to Gavin Andresen).
 - *Low public visibility during 2007–2008 design*: degree to which the candidate could plausibly have undertaken the 18-month intensive design period without leaving public traces in their documented activity.
 
