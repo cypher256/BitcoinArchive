@@ -41,7 +41,7 @@ The Sassaman and Kaneko hypotheses have dedicated entries in this archive for de
 
 This entry does not name "the most likely Satoshi candidate."
 
-## 1. Ten candidate profiles
+## 1. Candidate profiles
 
 ### Adam Back
 
