@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An overview of the named-candidate Satoshi-identity hypotheses that recur in public discourse: Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Len Sassaman, Isamu Kaneko. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a profile-match comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
+description: "An overview of the named-candidate Satoshi-identity hypotheses that recur in public discourse: Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Len Sassaman, Isamu Kaneko, Peter Todd. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a profile-match comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
 isSatoshi: false
 homeOrder: 2
 tags:
@@ -40,7 +40,7 @@ This entry does not name "the most likely Satoshi candidate." It documents the s
 
 ## 1. Candidates documented in this overview
 
-This overview covers six named-candidate hypotheses that appear repeatedly in public discourse:
+This overview covers seven named-candidate hypotheses that appear repeatedly in public discourse:
 
 - **[Hal Finney](/BitcoinArchive/participants/hal-finney/)** (1956–2014): cypherpunk, PGP Inc. employee, ran early proof-of-work / hashcash variants, and became the first non-Satoshi Bitcoin node on January 11, 2009. He coincidentally lived a few blocks from Dorian Prentice Satoshi Nakamoto in Temple City, California. Self-denied being Satoshi in his March 2013 essay *Bitcoin and Me*; the Patoshi mining-pattern analysis (Sergio Demian Lerner, April 2013) identifies a hashing fingerprint inconsistent with Finney's documented mining setup.
 - **Nick Szabo**: legal scholar and cypherpunk-adjacent essayist; designer of *Bit Gold* (1998 / refined 2005), a digital-currency proposal with overlapping idea-space to Bitcoin. Self-denied being Satoshi.
@@ -48,19 +48,20 @@ This overview covers six named-candidate hypotheses that appear repeatedly in pu
 - **Craig Wright**: Australian computer-security figure who began claiming to be Satoshi in late 2015 / 2016. His attempted cryptographic proofs were publicly debunked within hours of release. The COPA v Wright trial (UK High Court, judgment by Justice Mellor, March 14, 2024) ruled on the evidence that Wright is not Satoshi; Wright was subsequently found in contempt of court.
 - **[Len Sassaman](/BitcoinArchive/participants/len-sassaman/)** (1980–2011): cypherpunk cryptographer, lead developer of the Mixmaster anonymous remailer, KU Leuven PhD candidate. Died by suicide on July 3, 2011 — three months after Satoshi's last documented private email. The hypothesis is a recurring topic in English-language discourse. See the [Sassaman = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) for full treatment.
 - **Isamu Kaneko** (1970–2013): Japanese researcher, developer of the *Winny* P2P file-sharing system (2002), defendant in a high-profile criminal case from 2004 to 2011 (acquitted by the Supreme Court of Japan, December 2011). Died of myocardial infarction on July 6, 2013. The hypothesis circulates predominantly in Japanese-language discourse. See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for full treatment.
+- **Peter Todd** (born 1985): Canadian Bitcoin Core developer, contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work. Identified as a Satoshi candidate in the 2024 HBO documentary *Money Electric: The Bitcoin Mystery* (directed by Cullen Hoback, released October 8, 2024). The documentary's argument rested in part on a December 2010 BitcoinTalk thread in which Todd's reply appeared to complete or extend a partially-edited Satoshi post in a way the documentary read as same-author behavior. Todd has publicly denied being Satoshi; the documentary's evidence has been widely critiqued in the Bitcoin technical community as circumstantial.
 
 ## 2. Profile-match comparison
 
 The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, with a Japanese-form pseudonym, and silent in public correspondence after April 26, 2011.
 
-| Dimension | Finney | Szabo | Dorian | Wright | Sassaman | Kaneko |
-|---|---|---|---|---|---|---|
-| Cypherpunk forum participation | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
-| Bitcoin-adjacent intellectual lineage | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | 🔴 |
-| Near-native English register | 🟢 | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 |
-| Pseudonym-name fit (Japanese form) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 |
-| Tight timing vs Satoshi's silence | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 |
-| Low public visibility during 2007–2008 design | 🔴 | 🟡 | 🟢 | 🟢 | 🟢 | 🔴 |
+| Dimension | Finney | Szabo | Dorian | Wright | Sassaman | Kaneko | Todd |
+|---|---|---|---|---|---|---|---|
+| Cypherpunk forum participation | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 |
+| Bitcoin-adjacent intellectual lineage | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | 🔴 | 🔴 |
+| Near-native English register | 🟢 | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🟢 |
+| Pseudonym-name fit (Japanese form) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
+| Tight timing vs Satoshi's silence | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 |
+| Low public visibility during 2007–2008 design | 🔴 | 🟡 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 |
 
 (🟢 = the dimension matches Satoshi's documented profile; 🔴 = it does not; 🟡 = mixed or partial fit. Colors visualize qualitative judgments; for cells corresponding to candidates without a dedicated hypothesis entry in this archive, the placement reflects the most widely-held reading of the public record.)
 
@@ -76,6 +77,7 @@ For some candidates, external evidence is decisive regardless of profile-match.
 - **Craig Wright**: cryptographic proofs publicly debunked in 2016. COPA v Wright (UK High Court, March 14, 2024) ruled on the evidence that Wright is not Satoshi. Wright was subsequently found in contempt of court (July 2024). Combined effect: the hypothesis is judicially closed in the UK jurisdiction and broadly rejected in the technical community.
 - **Len Sassaman**: open. No external refutation. Sassaman's widow Meredith Patterson (cryptographer and computer-security researcher) has neither confirmed nor denied the hypothesis; her public statements after Sassaman's death have addressed only the manner of death. See the [Sassaman hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/).
 - **Isamu Kaneko**: open. No external refutation. See the [Kaneko hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/).
+- **Peter Todd**: identified by the 2024 HBO documentary *Money Electric: The Bitcoin Mystery*. Todd has publicly denied being Satoshi. The Bitcoin technical community has broadly judged the documentary's evidence as circumstantial; the most-cited piece (the December 2010 BitcoinTalk thread continuation) is consistent with multiple non-same-author readings.
 
 ## 4. Methodology
 
