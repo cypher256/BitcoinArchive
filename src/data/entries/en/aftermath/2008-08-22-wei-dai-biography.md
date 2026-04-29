@@ -37,6 +37,7 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2009-01-09-satoshi-code-analysis"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 ---
 
 Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft.

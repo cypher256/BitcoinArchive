@@ -37,6 +37,7 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2009-01-09-satoshi-code-analysis"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 translationStatus: complete
 ---
 <!-- tone-skip -->
