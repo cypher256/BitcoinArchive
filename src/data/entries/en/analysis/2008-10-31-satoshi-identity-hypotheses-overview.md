@@ -56,7 +56,7 @@ The dimensions below are derived from what the public record establishes about S
 | Dimension | Finney | Szabo | Dorian | Wright | Sassaman | Kaneko |
 |---|---|---|---|---|---|---|
 | Cypherpunk forum participation | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
-| Bitcoin-adjacent intellectual lineage | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
+| Bitcoin-adjacent intellectual lineage | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | 🔴 |
 | Near-native English register | 🟢 | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 |
 | Pseudonym-name fit (Japanese form) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 |
 | Tight timing vs Satoshi's silence | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 |
