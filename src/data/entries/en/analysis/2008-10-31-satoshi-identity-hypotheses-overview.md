@@ -60,7 +60,7 @@ This overview covers ten named-candidate hypotheses that appear repeatedly in pu
 
 ## 2. Candidate profile comparison
 
-The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, and silent in public correspondence after April 26, 2011.
+The seven-dimension comparison below is grounded in the documented public record about each candidate. Per-column criteria and the underlying argument (cypherpunk-independent-arrival analysis, Wei Dai's identifiability argument, etc.) are stated in §3 Methodology — that section is the single source for the table's conceptual framing. See also the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 | Candidate | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|
@@ -79,16 +79,9 @@ The dimensions below are derived from what the public record establishes about S
 
 **How to read the table:**
 
-The dimensions split into two groups that pull in different directions:
-
-- **Background / capability** (Cypherpunk fora, BTC lineage, Implementation, Monetary design, English level): 🟢 means the candidate had the intellectual milieu, technical skills, and writing fluency Bitcoin's design required.
-- **Covertness** (Timing, Low visibility): 🟢 means the candidate's visibility profile is consistent with Wei Dai's identifiability argument — Satoshi was specifically *not* a publicly active cypherpunk during 2007–2008.
-
-These two groups conflict structurally: the more visible a candidate was as a cypherpunk thinker, the harder it is for them to also have been hidden enough to escape identification. **A candidate scoring 🟢 across all dimensions in both groups is structurally rare** (someone who was simultaneously deeply embedded in cypherpunk capability and completely invisible during the design window). **Counting 🟢 across all dimensions and treating the total as a single Satoshi-likeness score is therefore misleading.**
-
-Sassaman scoring high on both groups, for example, comes partly from a specialty difference: his 2007–2008 public visibility was in the *anonymity-research* specialty (Mixmaster, KU Leuven), which is adjacent to but distinct from Bitcoin's *digital-cash* specialty — he could be visible in his own field while remaining invisible in Bitcoin's. See §3 Methodology for the full structural argument.
-
-Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
+- The dimensions split into two groups that pull against each other: background-and-capability (5 columns) and covertness (2 columns). **Counting 🟢 across all columns and treating the total as a single Satoshi-likeness score is misleading.** Both groups' definitions, the structural conflict, the highest-scoring candidate (Wei Dai, 6 🟢) and how external status still rules him out, and the Sassaman specialty-separation case are all stated in §3 Methodology.
+- Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of the profile comparison.
+- Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
 ## 3. Methodology
 
@@ -99,9 +92,12 @@ The dimensions below split into two groups:
 1. *Background and capability* — Cypherpunk fora, BTC lineage, Implementation, Monetary design, English level. 🟢 here means the candidate had what Bitcoin's design required: cypherpunk-style intellectual milieu, digital-cash thinking, code-shipping ability at the relevant scale, and a near-native English register.
 2. *Covertness* — Timing, Low visibility. 🟢 here means the candidate's documented profile fits Wei Dai's 2014 identifiability argument that Satoshi was *not* a publicly active cypherpunk during the 2007–2008 design window, and that some life event aligns with Satoshi's April 2011 silence.
 
-These two groups pull against each other. The more visibly active a candidate was as a cypherpunk thinker (group 1), the less plausibly they could also have been hidden enough to escape identification (group 2). A candidate scoring 🟢 across both groups is therefore structurally rare — they would have to have been simultaneously deeply embedded in cypherpunk capability and completely invisible during the design window. Reading the table requires holding the two groups separately rather than summing green counts.
+These two groups pull against each other. The more visibly active a candidate was as a cypherpunk thinker (group 1), the less plausibly they could also have been hidden enough to escape identification (group 2). Reading the table requires holding the two groups separately rather than summing green counts.
 
-A practical consequence: **Sassaman's high score in both groups is partly an artifact of specialty separation**. His 2007–2008 public activity was in the anonymity-research specialty (Mixmaster, KU Leuven, 24C3 and Black Hat 2007 talks on anonymity), which is adjacent to but distinct from Bitcoin's digital-cash specialty. He could be visible in his own field (group-1 🟢 on cypherpunk fora) while remaining invisible in Bitcoin's specifically (group-2 🟡 on low visibility). Most candidates do not get this specialty-separation benefit and pay the trade-off more directly.
+**Highest-scoring candidates and how they got there:**
+
+- **Wei Dai (6 🟢; External status: self-denied)** — out of seven dimensions, only Timing is 🔴. All five background-and-capability dimensions are 🟢, and Low visibility is also 🟢. After the 1998 b-money proposal, his mailing-list posting frequency dropped and during 2007–2008 he focused on Crypto++ maintenance, which naturally placed him in the "invisible" zone. However, Wei Dai has self-denied being Satoshi, and he is one of the two known recipients of Satoshi's August 2008 pre-launch correspondence (the same third-party-correspondence argument that applies to Adam Back). **Wei Dai is the candidate closest to "near-all-🟢" — a structurally rare profile — and he is still ruled out on external status.**
+- **Len Sassaman (4 🟢, 2 🟡, 1 🔴; External status: open)** — a different pattern of high scores in both groups. His 2007–2008 public activity was in the anonymity-research specialty (Mixmaster, KU Leuven, 24C3 and Black Hat 2007 talks on anonymity), which is adjacent to but distinct from Bitcoin's digital-cash specialty. He could be visible in his own field (group-1 🟢 on Cypherpunk fora) while remaining invisible in Bitcoin's specifically (group-2 🟡 on Low visibility) — a specialty-separation byproduct. Most candidates do not get this specialty-separation benefit and pay the trade-off more directly. Sassaman is the only high-scoring candidate without external refutation.
 
 **Dimension definitions:**
 
@@ -123,5 +119,3 @@ Profile-comparison dimensions are derived from what the public record establishe
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
 - For full treatment of the Sassaman and Kaneko hypotheses, see the individual entries. Other candidates do not yet have dedicated hypothesis entries in this archive.
-
-*[Editor: this entry consolidates two comparison tables that were previously embedded in the Sassaman and Kaneko hypothesis entries (Sassaman §3.4 and Kaneko §4.5) into a single navigation point for the named-candidate space. The intent is single-source-of-truth comparison and easier discovery for readers landing on any one hypothesis. Future additions: dedicated hypothesis entries for Finney, Szabo, Dorian, and Wright as documentation is consolidated; periodic refresh of the external-status section as new rulings or evidence emerges.]*
