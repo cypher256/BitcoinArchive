@@ -113,12 +113,14 @@ The Kaneko and Sassaman hypotheses share a structural form: a deceased technical
 
 | Argument class | Sassaman | Kaneko |
 |---|---|---|
-| Documented cypherpunk-mailing-list participation | Strong (Mixmaster lineage) | Weak (none) |
-| Intellectual lineage adjacent to Bitcoin's | Strong (anonymity / cryptography) | Weak (P2P routing) |
-| Near-native English register | Strong | Weak |
-| Pseudonym-name fit (Japanese form) | Weak (no fit) | Strong (only candidate with fit) |
-| Tight timing relative to Satoshi's silence | Strong (3 months) | Weak (2 years) |
-| Public visibility / scrutiny during design period | Low (PhD work, no public spotlight) | High (convicted defendant on appeal) |
+| Documented cypherpunk-mailing-list participation | ● Strong (Mixmaster lineage) | ○ Weak (none) |
+| Intellectual lineage adjacent to Bitcoin's | ● Strong (anonymity / cryptography) | ○ Weak (P2P routing) |
+| Near-native English register | ● Strong | ○ Weak |
+| Pseudonym-name fit (Japanese form) | ○ Weak (no fit) | ● Strong (only candidate with fit) |
+| Tight timing relative to Satoshi's silence | ● Strong (3 months) | ○ Weak (2 years) |
+| Low public visibility during design period | ● Strong (PhD work, no public spotlight) | ○ Weak (convicted defendant on appeal) |
+
+(● = the dimension favors the hypothesis; ○ = it weighs against. The dots visualize the same Strong / Weak judgments stated in the cell text.)
 
 The two hypotheses' strengths are not symmetric. The Kaneko hypothesis has one argument that no other named candidate can make (the pseudonym fit), but is weaker on most other dimensions where the Sassaman hypothesis is at least average.
 
