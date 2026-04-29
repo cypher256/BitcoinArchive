@@ -10,7 +10,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "Following the death of cypherpunk and cryptographer Len Sassaman on July 3, 2011, security researcher Dan Kaminsky embedded an ASCII-art memorial to Sassaman into the Bitcoin blockchain. The tribute was announced on July 30, 2011 and publicly revealed at Black Hat USA 2011 (Las Vegas). It was one of the earliest large memorial inscriptions stored in Bitcoin's permanent ledger -- a use of the blockchain as durable cultural artifact rather than monetary record."
+description: "Following the death of cypherpunk and cryptographer Len Sassaman on July 3, 2011, security researcher Dan Kaminsky embedded an ASCII-art tribute to Sassaman into the Bitcoin blockchain. The tribute was announced on July 30, 2011 and publicly revealed at Black Hat USA 2011 (Las Vegas). The technique pre-dates Bitcoin Core's formal OP_RETURN mechanism (added in 2014); specific block heights, transaction hashes, and the full inscribed ASCII-art content have not been independently verified by this archive."
 isSatoshi: false
 tags:
   - "dan-kaminsky"
@@ -34,13 +34,12 @@ relatedEntries:
 
 Within weeks, [Dan Kaminsky](/BitcoinArchive/participants/dan-kaminsky/) — the security researcher who had earlier [reviewed the Bitcoin v0.1 code and concluded "either there's a team of people who worked on this, or this guy is a genius"](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) — embedded an ASCII-art memorial to Sassaman directly into the Bitcoin blockchain. The tribute was announced on July 30, 2011, and publicly revealed at the Black Hat USA 2011 conference in Las Vegas.
 
-The technique used the blockchain as a durable, censorship-resistant medium for non-monetary content: the inscription was encoded across transaction outputs in such a way that the data persists permanently in every full Bitcoin node's copy of the ledger, even though no transaction was ever expected to spend those outputs. This was several years before `OP_RETURN` was formally added to Bitcoin Core (2014) as a sanctioned mechanism for embedding small payloads, so Kaminsky's encoding worked through then-existing transaction-script primitives.
+According to the Wikipedia citation and the Black Hat USA 2011 presentation materials, the inscription was encoded across transaction outputs so that the data persists in every full Bitcoin node's copy of the ledger. The technique pre-dates the formal `OP_RETURN` mechanism, which was added to Bitcoin Core in 2014 as a sanctioned way to embed small payloads. Specific block heights, transaction hashes, and the full inscribed ASCII-art content have not been independently verified by this archive; the technique is described at the level the secondary sources support.
 
-**Significance:**
+**Context:**
 
-- It is one of the earliest publicly-known cultural inscriptions stored in the Bitcoin blockchain at scale, predating the formal `OP_RETURN` mechanism.
-- It established a pattern — the blockchain as a permanent memorial substrate — that has since been used for many other purposes (artwork, dedications, political messages, NFTs).
-- It connected two distinct streams of Bitcoin's early environment: Kaminsky as the most prominent external-security reviewer of v0.1, and Sassaman as a senior figure of the cypherpunk movement whose work on remailers and anonymity tooling had run for two decades.
+- The tribute pre-dates the formal `OP_RETURN` mechanism added to Bitcoin Core in March 2014.
+- The event connected two streams of Bitcoin's early environment: Kaminsky as the most prominent external-security reviewer of v0.1, and Sassaman as a senior figure in the cypherpunk movement whose work on remailers and anonymity tooling had run for roughly two decades.
 
 **On the Satoshi-identity question:**
 

@@ -52,8 +52,11 @@ The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 
 - **2011-01 to 2011-09:** Parallel development on both SVN and GitHub.
 - **2011-09-13:** Final SVN commit (r252) with the message "Development has moved to github." GitHub becomes the sole repository.
 
-**The migration decision:**
-No public BitcoinTalk thread or bitcoin-list mailing list message has been recovered for this archive that explicitly discusses or announces the SVN → GitHub migration. The available evidence is consistent with a unilateral developer-side decision by Andresen as the new lead maintainer, executed quietly during the nine-month parallel-development period without a discrete public announcement event. The infrastructural change was significant — it shifted Bitcoin's development to a platform that better supported pull-request-based code review and brought new contributors into the project — but the decision-making itself appears to have been made by the developers who held commit access, not through community deliberation. This is consistent with the broader pattern of Andresen's early stewardship: technical decisions made by the maintainer with subsequent community visibility, rather than upfront community vote. If documentation of an explicit public announcement or discussion surfaces in future research, this entry should be updated to reflect it.
+**The migration decision (what the documented record shows):**
+
+What the archive can confirm: (1) the GitHub repository `bitcoin/bitcoin` was created on December 19, 2010; (2) the nine-month parallel-development period occurred; (3) the final SVN commit on September 13, 2011 carried the message "Development has moved to github."; (4) no public BitcoinTalk thread or bitcoin-list mailing list message that explicitly discusses or announces the migration has been recovered for this archive.
+
+What the archive cannot directly confirm: whether the migration decision was deliberated privately among multiple developers, whether community consultation occurred through channels not preserved in this archive (private email, IRC, etc.), or whether the migration was a unilateral developer-side decision. Inferring "unilateral decision" or "no community deliberation" from the absence of recovered public discussion is plausible but is reasoning from absence of evidence rather than from direct documentary proof. If documentation of an explicit public announcement or private deliberation surfaces in future research, this entry should be updated to reflect it.
 
 **GitHub commit access grants in 2011:**
 
