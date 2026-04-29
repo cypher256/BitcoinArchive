@@ -25,6 +25,7 @@ src/data/derived-related.json
 .DS_Store
 
 # temporary internal work files
+temp/
 temp_*
 *_temp.md
 

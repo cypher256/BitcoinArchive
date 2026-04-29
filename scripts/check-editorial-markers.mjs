@@ -19,15 +19,17 @@
  *                      Archive editor notes
  *
  * Output files:
- *   temp_MMDD_editorial_violations.md   (informational mode)
- *   temp_MMDD_f_candidates.md           (--report-f-candidates mode)
+ *   temp/temp_MMDD_editorial_violations.md   (informational mode)
+ *   temp/temp_MMDD_f_candidates.md           (--report-f-candidates mode)
  */
-import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), '..');
+const TEMP_DIR = path.join(ROOT, 'temp');
+mkdirSync(TEMP_DIR, { recursive: true });
 
 const COLLECTIONS = [
   { lang: 'en', base: path.join(ROOT, 'src/data/entries/en') },
@@ -286,8 +288,8 @@ if (REPORT_F) {
     r += `- \`${x.file}:${x.lineNo}\` [${x.lang}, ${x.type}]\n  > ${x.content}\n`;
   }
 
-  writeFileSync(path.join(ROOT, `temp_${mmdd}_f_candidates.md`), r, 'utf-8');
-  console.log(`Written: temp_${mmdd}_f_candidates.md`);
+  writeFileSync(path.join(TEMP_DIR, `temp_${mmdd}_f_candidates.md`), r, 'utf-8');
+  console.log(`Written: temp/temp_${mmdd}_f_candidates.md`);
   console.log(`F-candidate occurrences: ${fCandidates.length}`);
 } else {
   let r = `# Editorial markers audit\n\n`;
@@ -311,8 +313,8 @@ if (REPORT_F) {
     r += `No violations.\n`;
   }
 
-  writeFileSync(path.join(ROOT, `temp_${mmdd}_editorial_violations.md`), r, 'utf-8');
-  console.log(`Written: temp_${mmdd}_editorial_violations.md`);
+  writeFileSync(path.join(TEMP_DIR, `temp_${mmdd}_editorial_violations.md`), r, 'utf-8');
+  console.log(`Written: temp/temp_${mmdd}_editorial_violations.md`);
   console.log(`Editorial-marker violations: ${violations.length}`);
   console.log(`  by kind:`);
   for (const [k, n] of tally(violations, 'kind')) console.log(`    ${k}: ${n}`);
