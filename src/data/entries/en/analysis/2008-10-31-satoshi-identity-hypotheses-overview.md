@@ -46,40 +46,29 @@ This overview covers seven named-candidate hypotheses that appear repeatedly in 
 - **Nick Szabo**: legal scholar and cypherpunk-adjacent essayist; designer of *Bit Gold* (1998 / refined 2005), a digital-currency proposal with overlapping idea-space to Bitcoin. Self-denied being Satoshi.
 - **Dorian Prentice Satoshi Nakamoto** (born 1949 in Beppu, Japan; immigrated to the United States 1959): Japanese-American engineer with a defense-systems background. Identified by Newsweek (Leah McGrath Goodman, March 6, 2014) as a Satoshi candidate primarily on name match. Newsweek's identification was largely retracted within days; Dorian Nakamoto issued a public statement denying any involvement with Bitcoin and saying he had only learned of it three weeks prior to the article. No technical evidence connects him to the codebase.
 - **Craig Wright**: Australian computer-security figure who began claiming to be Satoshi in late 2015 / 2016. His attempted cryptographic proofs were publicly debunked within hours of release. The COPA v Wright trial (UK High Court, judgment by Justice Mellor, March 14, 2024) ruled on the evidence that Wright is not Satoshi; Wright was subsequently found in contempt of court.
-- **[Len Sassaman](/BitcoinArchive/participants/len-sassaman/)** (1980–2011): cypherpunk cryptographer, lead developer of the Mixmaster anonymous remailer, KU Leuven PhD candidate. Died by suicide on July 3, 2011 — three months after Satoshi's last documented private email. The hypothesis is a recurring topic in English-language discourse. See the [Sassaman = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) for full treatment.
-- **Isamu Kaneko** (1970–2013): Japanese researcher, developer of the *Winny* P2P file-sharing system (2002), defendant in a high-profile criminal case from 2004 to 2011 (acquitted by the Supreme Court of Japan, December 2011). Died of myocardial infarction on July 6, 2013. The hypothesis circulates predominantly in Japanese-language discourse. See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for full treatment.
+- **[Len Sassaman](/BitcoinArchive/participants/len-sassaman/)** (1980–2011): cypherpunk cryptographer, lead developer of the Mixmaster anonymous remailer, KU Leuven PhD candidate. Died by suicide on July 3, 2011 — three months after Satoshi's last documented private email. The hypothesis is a recurring topic in English-language discourse. No external refutation; Sassaman's widow Meredith Patterson (cryptographer and computer-security researcher) has neither confirmed nor denied the hypothesis. The hypothesis remains open. See the [Sassaman = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) for full treatment.
+- **Isamu Kaneko** (1970–2013): Japanese researcher, developer of the *Winny* P2P file-sharing system (2002), defendant in a high-profile criminal case from 2004 to 2011 (acquitted by the Supreme Court of Japan, December 2011). Died of myocardial infarction on July 6, 2013. The hypothesis circulates predominantly in Japanese-language discourse. No external refutation; the hypothesis remains open. See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for full treatment.
 - **Peter Todd** (born 1985): Canadian Bitcoin Core developer, contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work. Identified as a Satoshi candidate in the 2024 HBO documentary *Money Electric: The Bitcoin Mystery* (directed by Cullen Hoback, released October 8, 2024). The documentary's argument rested in part on a December 2010 BitcoinTalk thread in which Todd's reply appeared to complete or extend a partially-edited Satoshi post in a way the documentary read as same-author behavior. Todd has publicly denied being Satoshi; the documentary's evidence has been widely critiqued in the Bitcoin technical community as circumstantial.
 
 ## 2. Profile-match comparison
 
 The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, with a Japanese-form pseudonym, and silent in public correspondence after April 26, 2011.
 
-| Dimension | Finney | Szabo | Dorian | Wright | Sassaman | Kaneko | Todd |
+| Candidate | Cypherpunk fora | BTC lineage | English | JP name | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|
-| Cypherpunk forum participation | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 |
-| Bitcoin-adjacent intellectual lineage | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | 🔴 | 🔴 |
-| Near-native English register | 🟢 | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 | 🟢 |
-| Pseudonym-name fit (Japanese form) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
-| Tight timing vs Satoshi's silence | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 |
-| Low public visibility during 2007–2008 design | 🔴 | 🟡 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 |
+| Hal Finney | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
+| Nick Szabo | 🟢 | 🟢 | 🟢 | 🔴 | 🔴 | 🟡 | Self-denied |
+| Dorian Nakamoto | 🔴 | 🔴 | 🟡 | 🟢 | 🔴 | 🟢 | Newsweek retraction; denied |
+| Craig Wright | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
+| Len Sassaman | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | Open |
+| Isamu Kaneko | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | Open |
+| Peter Todd | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 
-(🟢 = the dimension matches Satoshi's documented profile; 🔴 = it does not; 🟡 = mixed or partial fit. Colors visualize qualitative judgments; for cells corresponding to candidates without a dedicated hypothesis entry in this archive, the placement reflects the most widely-held reading of the public record.)
+🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *English* = near-native register in the Bitcoin documents; *JP name* = pseudonym fits a Japanese given+family pair; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
 
-A note on reading the table: profile-match is a *necessary but not sufficient* condition. A candidate scoring ● on every profile-match dimension can still be ruled out by external status (self-denial, court ruling, technical disproof). External status is documented separately in §3.
+A note on reading the table: profile-match is a *necessary but not sufficient* condition. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of profile match. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
-## 3. External status
-
-For some candidates, external evidence is decisive regardless of profile-match.
-
-- **Hal Finney**: self-denied in *Bitcoin and Me* (March 2013) and other public statements. The Patoshi mining-pattern analysis (Lerner, 2013) identifies a hashing fingerprint in Bitcoin's earliest blocks (mid-2009 through early 2010) that does not match Finney's documented mining setup. Combined effect: Finney is widely treated as not-Satoshi.
-- **Nick Szabo**: self-denied. Stylometric analyses have at times pointed to Szabo's writing register, but Szabo himself has consistently rejected the identification.
-- **Dorian Prentice Satoshi Nakamoto**: Newsweek identification (March 2014) was largely retracted by Newsweek itself within days of publication. Dorian Nakamoto issued a public statement denying any involvement with Bitcoin and saying he had only learned of Bitcoin three weeks before the article. No technical evidence connects him to the codebase or design.
-- **Craig Wright**: cryptographic proofs publicly debunked in 2016. COPA v Wright (UK High Court, March 14, 2024) ruled on the evidence that Wright is not Satoshi. Wright was subsequently found in contempt of court (July 2024). Combined effect: the hypothesis is judicially closed in the UK jurisdiction and broadly rejected in the technical community.
-- **Len Sassaman**: open. No external refutation. Sassaman's widow Meredith Patterson (cryptographer and computer-security researcher) has neither confirmed nor denied the hypothesis; her public statements after Sassaman's death have addressed only the manner of death. See the [Sassaman hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/).
-- **Isamu Kaneko**: open. No external refutation. See the [Kaneko hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/).
-- **Peter Todd**: identified by the 2024 HBO documentary *Money Electric: The Bitcoin Mystery*. Todd has publicly denied being Satoshi. The Bitcoin technical community has broadly judged the documentary's evidence as circumstantial; the most-cited piece (the December 2010 BitcoinTalk thread continuation) is consistent with multiple non-same-author readings.
-
-## 4. Methodology
+## 3. Methodology
 
 Profile-match dimensions are derived from what the public record establishes about Satoshi:
 
@@ -90,13 +79,13 @@ Profile-match dimensions are derived from what the public record establishes abo
 - *Tight timing vs Satoshi's silence*: closeness of a documented major life event (death, retirement, etc.) to Satoshi's last known correspondence (April 26, 2011 email to Gavin Andresen).
 - *Low public visibility during 2007–2008 design*: degree to which the candidate could plausibly have undertaken the 18-month intensive design period without leaving public traces in their documented activity.
 
-## 5. Limits of this entry
+## 4. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material into one comparison.
 - This entry does not name "the most likely Satoshi candidate." Profile-match is necessary but not sufficient; external status is in some cases decisive.
-- Profile-match labels (●, ○, ◐) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
+- Profile-match labels (🟢, 🔴, 🟡) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
-- The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the six most-discussed.
+- The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the seven most-discussed.
 - For full treatment of the Sassaman and Kaneko hypotheses, see the individual entries. Other candidates do not yet have dedicated hypothesis entries in this archive.
 
 *[Editor: this entry consolidates two comparison tables that were previously embedded in the Sassaman and Kaneko hypothesis entries (Sassaman §3.4 and Kaneko §4.5) into a single navigation point for the named-candidate space. The intent is single-source-of-truth comparison and easier discovery for readers landing on any one hypothesis. Future additions: dedicated hypothesis entries for Finney, Szabo, Dorian, and Wright as documentation is consolidated; periodic refresh of the external-status section as new rulings or evidence emerges.]*
