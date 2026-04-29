@@ -55,14 +55,14 @@ The dimensions below are derived from what the public record establishes about S
 
 | Dimension | Finney | Szabo | Dorian | Wright | Sassaman | Kaneko |
 |---|---|---|---|---|---|---|
-| Cypherpunk forum participation | ● | ● | ○ | ○ | ● | ○ |
-| Bitcoin-adjacent intellectual lineage | ● | ● | ○ | ○ | ● | ○ |
-| Near-native English register | ● | ● | ◐ | ● | ● | ○ |
-| Pseudonym-name fit (Japanese form) | ○ | ○ | ● | ○ | ○ | ● |
-| Tight timing vs Satoshi's silence | ○ | ○ | ○ | ○ | ● | ○ |
-| Low public visibility during 2007–2008 design | ○ | ◐ | ● | ● | ● | ○ |
+| Cypherpunk forum participation | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
+| Bitcoin-adjacent intellectual lineage | 🟢 | 🟢 | 🔴 | 🔴 | 🟢 | 🔴 |
+| Near-native English register | 🟢 | 🟢 | 🟡 | 🟢 | 🟢 | 🔴 |
+| Pseudonym-name fit (Japanese form) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🟢 |
+| Tight timing vs Satoshi's silence | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 |
+| Low public visibility during 2007–2008 design | 🔴 | 🟡 | 🟢 | 🟢 | 🟢 | 🔴 |
 
-(● = the dimension matches Satoshi's documented profile; ○ = it does not; ◐ = mixed or partial fit. The dots visualize qualitative judgments; for cells corresponding to candidates without a dedicated hypothesis entry in this archive, the placement reflects the most widely-held reading of the public record.)
+(🟢 = the dimension matches Satoshi's documented profile; 🔴 = it does not; 🟡 = mixed or partial fit. Colors visualize qualitative judgments; for cells corresponding to candidates without a dedicated hypothesis entry in this archive, the placement reflects the most widely-held reading of the public record.)
 
 A note on reading the table: profile-match is a *necessary but not sufficient* condition. A candidate scoring ● on every profile-match dimension can still be ruled out by external status (self-denial, court ruling, technical disproof). External status is documented separately in §3.
 
