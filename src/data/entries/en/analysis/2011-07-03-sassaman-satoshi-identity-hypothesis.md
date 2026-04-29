@@ -1,5 +1,5 @@
 ---
-title: "The Sassaman = Satoshi identity hypothesis: a critical reading"
+title: "The Sassaman = Satoshi identity hypothesis"
 date: 2011-07-03T00:00:00Z
 type: "analysis"
 source: "wikipedia"
@@ -10,7 +10,7 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An editorial reading of the recurring public hypothesis that Len Sassaman (cypherpunk cryptographer, died July 3, 2011) was the person behind Satoshi Nakamoto. The entry lays out the timing argument and the cypherpunk-credentials argument that the hypothesis depends on, and the counter-evidence (no direct documentary link, no comment by Sassaman's widow on the identity claim, evidence-strength compared with other Satoshi-identity hypotheses). Bitcoin Institute does not endorse the hypothesis; this entry documents it because it is one of the most-discussed Satoshi-identity hypotheses in public discourse."
+description: "Documentation of the recurring public hypothesis that Len Sassaman (cypherpunk cryptographer, died July 3, 2011) was the person behind Satoshi Nakamoto. The entry lays out the timing argument and the cypherpunk-credentials argument the hypothesis depends on, and the counter-evidence (no direct documentary link, no comment by Sassaman's widow on the identity claim, evidence-strength compared with other Satoshi-identity hypotheses) at the same level of detail. The hypothesis is one of the most-discussed Satoshi-identity claims in public discourse."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -39,7 +39,7 @@ inlineLinkKeywords:
   - "Sassaman = Satoshi"
 ---
 
-This entry documents the recurring public hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) — cypherpunk cryptographer, lead developer of the Mixmaster anonymous remailer, who [died by suicide on July 3, 2011](/BitcoinArchive/participants/len-sassaman/) — was the person behind Satoshi Nakamoto. **Bitcoin Institute does not endorse this hypothesis**. The entry exists because the hypothesis is one of the most-discussed Satoshi-identity claims in public discourse, and a Satoshi-reference archive that does not address it would be incomplete. The claim is laid out, the supporting arguments are described as their advocates make them, and the counter-evidence is set out at the same level of detail. The reader is left to weigh the case.
+This entry documents the recurring public hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) — cypherpunk cryptographer, lead developer of the Mixmaster anonymous remailer, who [died by suicide on July 3, 2011](/BitcoinArchive/participants/len-sassaman/) — was the person behind Satoshi Nakamoto. The hypothesis is one of the most-discussed Satoshi-identity claims in public discourse. The claim is laid out, the supporting arguments are described as their advocates make them, and the counter-evidence is set out at the same level of detail. The reader is left to weigh.
 
 ## 1. What the hypothesis claims
 
@@ -92,7 +92,7 @@ Sassaman's widow Meredith Patterson is herself a cryptographer and an active pub
 - Have not at any point claimed, hinted at, or publicly endorsed the Sassaman-as-Satoshi hypothesis.
 - Have not directly denied the hypothesis either, leaving it formally unresolved from her side.
 
-Patterson's silence on the identity claim is information. If she knew the hypothesis to be true, the strongest reading of her behavior is that she has chosen not to confirm; if she knew it to be false, she has chosen not to deny. Bitcoin Institute does not assign a posterior probability to either; the silence is data rather than evidence.
+Patterson's silence on the identity claim is information. If she knew the hypothesis to be true, the strongest reading of her behavior is that she has chosen not to confirm; if she knew it to be false, she has chosen not to deny. The silence is data rather than evidence; on its own, it does not move the posterior probability in either direction.
 
 ### 3.3 KU Leuven workload
 
@@ -112,28 +112,19 @@ The Sassaman hypothesis sits in a family of named-candidate hypotheses, each wit
 
 The Sassaman hypothesis is *not* the strongest in this family on the kind of evidence that has narrowed other identity hypotheses. It is the most narratively compelling — the timing of death three months after Satoshi's last email is a striking literary fact — but striking is not the same as evidentially decisive.
 
-## 4. Bitcoin Institute's position
+## 4. Within the broader documentary record
 
-Bitcoin Institute does not endorse the Sassaman = Satoshi hypothesis.
+The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during design, support a "not a visibly active cypherpunk during 2007–2008" reading.
 
-The hypothesis is documented here because:
+That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Whether Sassaman's KU Leuven and Mixmaster work in 2007–2008 was visible enough in the cypherpunk discussion fora to qualify is a question this archive does not have the data to answer.
 
-- It is one of the most-discussed Satoshi-identity hypotheses in public discourse.
-- Refusing to address it is not editorial neutrality; it is editorial omission.
-- The cypherpunk-credentials argument is a serious one even though it does not narrow to one person.
-- The timing argument is striking even though it is not decisive.
-
-Bitcoin Institute's general stance on Satoshi-identity hypotheses, applied here:
-
-- The strongest claim the public record supports is that Satoshi was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during design, support a "not a visibly active cypherpunk during 2007–2008" reading.
-- That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Whether Sassaman's KU Leuven and Mixmaster work in 2007–2008 was visible enough in the cypherpunk discussion fora to qualify is a question this archive does not have the data to answer.
-- The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies equally regardless of whether the person behind the pseudonym was Sassaman, someone else, or a group.
+The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies equally regardless of whether the person behind the pseudonym was Sassaman, someone else, or a group.
 
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
-- This entry is not a refutation of the hypothesis. It is an attempt to set out the hypothesis fairly and the counter-evidence fairly, leaving the reader to weigh.
-- This entry does not name "the most likely Satoshi candidate." It is not the position of Bitcoin Institute that any specific named-candidate hypothesis has reached the threshold of likely-true.
+- This entry sets out the hypothesis fairly and the counter-evidence fairly, leaving the reader to weigh.
+- This entry does not name "the most likely Satoshi candidate."
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Sassaman's other published code, comments by Patterson or other witnesses — this entry should be updated.
 
-*[Editor: this is the most speculation-adjacent entry in the analysis section. It is included because the alternative is silent omission of a hypothesis that the public discourse around Satoshi engages with regularly. The framing is deliberately conservative: the hypothesis is laid out, supporting arguments are described as their advocates make them, counter-evidence is set out at equal detail, and Bitcoin Institute's position is stated explicitly as non-endorsement. If readers would prefer this archive not to host even framed-as-speculation discussion of named-candidate identity hypotheses, that editorial decision is defensible too; the choice made here is the inclusion-with-explicit-non-endorsement option, not the silence option.]*
+*[Editor: this is the most speculation-adjacent entry in the analysis section. The framing is deliberately conservative: the hypothesis is laid out, supporting arguments are described as their advocates make them, and counter-evidence is set out at equal detail. The entry does not draw an editorial conclusion about whether the hypothesis is more likely true or false; readers who want a direct verdict will not find one.]*

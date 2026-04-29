@@ -1,5 +1,5 @@
 ---
-title: "The Kaneko Isamu = Satoshi identity hypothesis: a critical reading"
+title: "The Kaneko Isamu = Satoshi identity hypothesis"
 date: 2013-07-06T00:00:00Z
 type: "analysis"
 source: "wikipedia"
@@ -10,7 +10,7 @@ participants:
     slug: "isamu-kaneko"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An editorial reading of the Japanese-language hypothesis that Isamu Kaneko (the developer of the Winny peer-to-peer file-sharing system, who was prosecuted in Japan from 2004 and died on July 6, 2013) was the person behind Satoshi Nakamoto. The entry sets out the supporting arguments (Japanese-name fit, Winny P2P expertise, Japanese-English bilingual capability, anti-establishment posture) and the counter-evidence (active criminal-case scrutiny during Bitcoin's design period, intellectual-lineage gap, English-register difference, code-language traces, loose timing relative to Satoshi's silence) at the same level of detail. Bitcoin Institute does not endorse the hypothesis. The entry exists because the hypothesis circulates in Japanese-language public discourse where Kaneko is one of the most-named domestic candidates."
+description: "Documentation of the Japanese-language hypothesis that Isamu Kaneko (the developer of the Winny peer-to-peer file-sharing system, who was prosecuted in Japan from 2004 and died on July 6, 2013) was the person behind Satoshi Nakamoto. The entry sets out the supporting arguments (Japanese-name fit, Winny P2P expertise, Japanese-English bilingual capability, anti-establishment posture) and the counter-evidence (active criminal-case scrutiny during Bitcoin's design period, intellectual-lineage gap, English-register difference, code-language traces, loose timing relative to Satoshi's silence) at the same level of detail. The hypothesis circulates in Japanese-language public discourse where Kaneko is one of the most-named domestic candidates."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -34,7 +34,7 @@ inlineLinkKeywords:
   - "Kaneko = Satoshi"
 ---
 
-This entry documents a hypothesis that exists primarily in Japanese-language discourse: that Isamu Kaneko (1970–2013), the Japanese researcher who created the Winny peer-to-peer file-sharing system in 2002 and was the defendant in a high-profile criminal trial from 2004 to 2011, was the person behind the Satoshi Nakamoto pseudonym. **Bitcoin Institute does not endorse this hypothesis**. The entry exists because the hypothesis circulates extensively in Japanese forum and tech-press discussion (where Kaneko is one of the most-named domestic candidates), and a Satoshi-reference archive that addresses the [Sassaman hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) on the English-language side but is silent on the equivalent Japanese-language hypothesis would be editorially asymmetric across the languages it serves. The claim is laid out, the supporting arguments are described as their advocates make them, and the counter-evidence is set out at the same level of detail. The reader is left to weigh.
+This entry documents a hypothesis that exists primarily in Japanese-language discourse: that Isamu Kaneko (1970–2013), the Japanese researcher who created the Winny peer-to-peer file-sharing system in 2002 and was the defendant in a high-profile criminal trial from 2004 to 2011, was the person behind the Satoshi Nakamoto pseudonym. The hypothesis circulates extensively in Japanese forum and tech-press discussion, where Kaneko is one of the most-named domestic candidates, and is largely unknown in English-language Bitcoin coverage. This entry is a companion to the [Sassaman hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/). The claim is laid out, the supporting arguments are described as their advocates make them, and the counter-evidence is set out at the same level of detail. The reader is left to weigh.
 
 ## 1. Who Kaneko was
 
@@ -122,28 +122,20 @@ The Kaneko and Sassaman hypotheses share a structural form: a deceased technical
 
 The two hypotheses' strengths are not symmetric. The Kaneko hypothesis has one argument that no other named candidate can make (the pseudonym fit), but is weaker on most other dimensions where the Sassaman hypothesis is at least average.
 
-## 5. Bitcoin Institute's position
+## 5. Within the broader documentary record
 
-Bitcoin Institute does not endorse the Kaneko = Satoshi hypothesis.
+The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money / Bit Gold intellectual lineage.
 
-The hypothesis is documented here because:
+Kaneko fits the "outside the visible cypherpunk community" condition (he was not in those forums) but does not fit the "near-native English" or "Hashcash / b-money / Bit Gold lineage" conditions on the documentary evidence available.
 
-- It is the most-discussed Satoshi-identity hypothesis in Japanese-language public discourse.
-- An archive that addresses the Sassaman hypothesis (English-language) but ignores the Kaneko hypothesis (Japanese-language) would be editorially asymmetric across the languages the archive serves.
-- The Japanese-name argument, while not on its own sufficient, is the single argument no other named candidate can make.
-
-Bitcoin Institute's general stance on Satoshi-identity hypotheses, applied here:
-
-- The strongest claim the public record supports is that Satoshi was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money / Bit Gold intellectual lineage.
-- Kaneko fits the "outside the visible cypherpunk community" condition (he was not in those forums) but does not fit the "near-native English" or "Hashcash / b-money / Bit Gold lineage" conditions on the documentary evidence available.
-- The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies regardless of whether the person behind the pseudonym was Japanese, used a Japanese-form pseudonym deliberately, or some other configuration.
+The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies regardless of whether the person behind the pseudonym was Japanese, used a Japanese-form pseudonym deliberately, or some other configuration.
 
 ## 6. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
-- This entry is not a refutation of the hypothesis. It is an attempt to set out the hypothesis fairly and the counter-evidence fairly, leaving the reader to weigh.
-- This entry does not name "the most likely Satoshi candidate." It is not the position of Bitcoin Institute that any specific named-candidate hypothesis has reached the threshold of likely-true.
+- This entry sets out the hypothesis fairly and the counter-evidence fairly, leaving the reader to weigh.
+- This entry does not name "the most likely Satoshi candidate."
 - This entry does not engage with statements made by Kaneko's surviving family. The editorial choice is to keep family commentary out of the hypothesis frame; if those statements eventually become part of the documentary public record on the identity question (rather than personal recollection), that decision should be revisited.
 - This entry does not draw any narrative connection between Kaneko's death and the Bitcoin-authorship question. The cause of death (myocardial infarction) is documented, the timing relative to Satoshi's silence is two years, and the entry does not treat the death as material to the hypothesis.
 
-*[Editor: this entry exists in symmetry with the Sassaman = Satoshi hypothesis entry. Both are framed as inclusion-with-explicit-non-endorsement. The Kaneko hypothesis circulates predominantly in Japanese-language discourse and is largely unknown to English-language Bitcoin readers; the editorial decision is to document it on both sides of the archive, rather than to leave it absent from the English side and present in Japanese forum discussion. The framing is deliberately conservative: no death-date narrative, the Winny criminal case is treated as historical fact rather than as part of the Bitcoin-authorship argument, and statements from surviving family are deliberately left outside the frame. Updates to this entry should preserve those constraints unless the public record changes materially.]*
+*[Editor: this entry exists in symmetry with the Sassaman = Satoshi hypothesis entry. The Kaneko hypothesis circulates predominantly in Japanese-language discourse and is largely unknown to English-language Bitcoin readers. The framing is deliberately conservative: no death-date narrative, the Winny criminal case is treated as historical fact rather than as part of the Bitcoin-authorship argument, and statements from surviving family are deliberately left outside the frame. The entry does not draw an editorial conclusion about whether the hypothesis is more likely true or false. Updates should preserve those constraints unless the public record changes materially.]*
