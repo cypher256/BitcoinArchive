@@ -8,6 +8,8 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Paul Le Roux"
+    slug: "paul-le-roux"
 description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry lays out each candidate's core argument and external status (self-denials, court rulings, technical disproofs), and aligns them in a seven-dimension candidate profile comparison table. The Sassaman, Kaneko, and Todd hypotheses have dedicated entries for deeper treatment. The entry does not name the most likely Satoshi candidate."
 isSatoshi: false
 homeOrder: 1
@@ -75,16 +77,16 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 | Candidate | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|
-| Adam Back | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
-| Wei Dai | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
-| Hal Finney | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
-| Nick Szabo | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
-| Dorian Nakamoto | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Newsweek retraction; denied |
-| Craig Wright | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
-| Paul Le Roux | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
-| Len Sassaman | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
-| Peter Todd | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
-| Isamu Kaneko | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
+| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Newsweek retraction; denied |
+| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
+| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
+| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
+| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
 **Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit (per-column criteria in §1 Methodology).
 

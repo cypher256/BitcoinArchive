@@ -8,6 +8,8 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Paul Le Roux"
+    slug: "paul-le-roux"
 description: "サトシ・ナカモトの正体候補 10 名を比較する。対象：アダム・バック、ウェイ・ダイ、ハル・フィニー、ニック・サボ、ドリアン・プレンティス・サトシ・ナカモト、クレイグ・ライト、ポール・ルルー、レン・サッサマン、ピーター・トッド、金子勇。各候補の核となる論点と外部的状況（自己否定、判決、技術的論破）を整理し、7 次元のプロファイル比較表で並列する。サッサマン、金子勇、トッドの仮説については本アーカイブに個別の仮説エントリーがあり、深い扱いはそちらに譲る。本エントリーは「最も蓋然性の高いサトシ候補」 を指名しない。"
 isSatoshi: false
 homeOrder: 1
@@ -76,16 +78,16 @@ translationStatus: complete
 
 | 候補 | サイファーパンク | ビットコイン系譜 | 実装能力 | 貨幣設計 | 英語水準 | タイミング | 可視性低 | 外部的状況 |
 |---|---|---|---|---|---|---|---|---|
-| アダム・バック | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定 |
-| ウェイ・ダイ | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
-| ハル・フィニー | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
-| ニック・サボ | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
-| ドリアン・ナカモト | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Newsweek 撤回／本人否定 |
-| クレイグ・ライト | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
-| ポール・ルルー | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
-| レン・サッサマン | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
-| ピーター・トッド | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
-| 金子勇 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Newsweek 撤回／本人否定 |
+| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
+| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
 
 **色の意味：** 🟢＝サトシの公的プロファイルと整合／🔴＝整合しない／🟡＝部分的または混在する整合（各列の判定基準は §1 方法論を参照）。
 
