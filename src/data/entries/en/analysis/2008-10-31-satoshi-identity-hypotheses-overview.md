@@ -81,7 +81,7 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
-| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Newsweek retraction; denied |
+| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
 | [Craig Wright](/BitcoinArchive/participants/craig-wright/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
 | [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
 | [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
@@ -180,9 +180,9 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 **Argument for.** Name match (literally "Satoshi Nakamoto"). Defense-systems engineering background. Geographic proximity to Hal Finney could support a pseudonym-source theory.
 
-**Argument against.** No technical evidence connects him to the codebase. No cypherpunk credentials, no BTC-adjacent intellectual lineage, no documented programming work at Bitcoin v0.1 scale. Newsweek's identification was largely retracted within days; Dorian Nakamoto issued a public statement denying any involvement with Bitcoin and saying he had only learned of it three weeks prior to the article. The day after the Newsweek piece, [the Satoshi p2pfoundation account briefly returned to post "I am not Dorian Nakamoto"](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/).
+**Argument against.** No technical evidence connects him to the codebase. No cypherpunk credentials, no BTC-adjacent intellectual lineage, no documented programming work at Bitcoin v0.1 scale. Dorian Nakamoto firmly and repeatedly denied any involvement with Bitcoin in interviews after the Newsweek article (he retained a lawyer and gave a detailed interview to the Associated Press reaffirming his denial); he said he had misunderstood Goodman's doorstep question and thought she was asking about his prior classified defense work. The day after the Newsweek piece, [the Satoshi p2pfoundation account briefly returned to post "I am not Dorian Nakamoto"](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) (post authenticity remains debated; the account may have been compromised). The Bitcoin community raised over 67 BTC in donations for Dorian Nakamoto.
 
-**External status.** Newsweek retraction; self-denied; p2pfoundation return.
+**External status.** Self-denied; p2pfoundation return.
 
 #### Craig Wright
 
@@ -192,9 +192,9 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 **Argument for.** Self-claim (no other supporting evidence).
 
-**Argument against.** Wright's attempted cryptographic proofs were publicly debunked within hours of release. The [COPA v Wright trial (UK High Court, judgment by Justice Mellor, March 14, 2024)](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) ruled on the evidence that Wright is not Satoshi; Wright was subsequently found in contempt of court. Documents and email evidence presented by Wright were repeatedly shown in court to be forged. No documented cypherpunk-mailing-list presence in the 1990s; no pre-2008 BTC-adjacent intellectual work in his public record.
+**Argument against.** Wright's attempted [cryptographic 'proof' (May 2016)](/BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/) was quickly debunked — he had reused a signature from a 2009 transaction rather than producing a new one. The [COPA v Wright trial (UK High Court, judgment by Justice Mellor, March 14, 2024)](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) ruled four findings: Wright is not the author of the Bitcoin whitepaper, not the person operating as Satoshi 2008–2011, not the creator of the Bitcoin system, and not the author of the initial Bitcoin software. The judgment concluded Wright had engaged in "deliberate and extensive forgery of documents to support his false claim of being Satoshi Nakamoto." No documented cypherpunk-mailing-list presence in the 1990s; no pre-2008 BTC-adjacent intellectual work in his public record.
 
-**External status.** COPA v Wright (2024) ruled against; contempt finding; debunked cryptographic proofs.
+**External status.** COPA v Wright (2024) ruled against on four findings; deliberate document forgery established by court; debunked cryptographic proof.
 
 #### Peter Todd
 
@@ -239,7 +239,7 @@ See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis
 - **Wei Dai is the candidate closest to "all-🟢" — and external status still rules him out.** Six of seven dimensions are 🟢; only Timing is 🔴. After the 1998 b-money proposal, his mailing-list posting frequency dropped and during 2007–2008 he focused on Crypto++ maintenance, naturally placing him in the "invisible" zone. However, he has self-denied, and the August 2008 pre-launch correspondence reads as Wei Dai receiving Satoshi's proposal as a third party (the same argument that applies to Adam Back). Profile-match alone, even at near-maximum, does not decide.
 - **Sassaman is the only externally-open high-scorer — and his pattern is a specialty-separation byproduct.** His 2007–2008 public activity was in the anonymity-research specialty (Mixmaster, KU Leuven, 24C3 and Black Hat 2007), adjacent to but distinct from Bitcoin's digital-cash specialty. He could be visible in his own field while remaining invisible in Bitcoin's. Most candidates do not get this specialty-separation benefit and pay the capability-vs-covertness trade-off more directly.
 - **An "all-🟢" candidate is structurally rare.** The capability-vs-covertness opposition makes it nearly impossible to be simultaneously deeply embedded in cypherpunk capability *and* completely invisible during the design window. Wei Dai approaches it through specialty-shift (active mailing-list participation in late 1990s, retreat to Crypto++ maintenance during 2007–2008). Sassaman approaches it through specialty-separation (visible in anonymity research, invisible in digital-cash).
-- **Name-match (Dorian) and self-claim (Wright) have both been publicly refuted.** Group C's two highest-profile claims share a structural pattern: both relied on a single line of evidence (name or self-claim) without underlying technical or intellectual fit, and both were demolished by external evidence (Newsweek retraction; COPA ruling). Group C candidates who remain open (Le Roux, Kaneko, Todd) do so on capability + covertness arguments rather than identification-by-claim.
+- **Name-match (Dorian) and self-claim (Wright) have both been publicly refuted.** Group C's two highest-profile claims share a structural pattern: both relied on a single line of evidence (name or self-claim) without underlying technical or intellectual fit. The Newsweek identification was demolished by Dorian's repeated denial (with lawyer and AP interview), the p2pfoundation account post "I am not Dorian Nakamoto," and broad criticism of the journalistic methodology. The Wright self-claim was demolished by the COPA v Wright ruling. Group C candidates who remain open (Le Roux, Kaneko, Todd) do so on capability + covertness arguments rather than identification-by-claim.
 - **Profile-match is necessary but not sufficient.** No candidate is ruled in by profile-match alone, and no candidate is ruled out by profile-match alone. The combination of profile-match with external status (and, for low-scoring candidates, the absence of supporting evidence) is what determines current discourse standing.
 
 ## 5. Limits of this entry
