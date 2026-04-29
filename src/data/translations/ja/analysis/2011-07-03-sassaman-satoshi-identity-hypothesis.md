@@ -33,6 +33,7 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
 inlineLinkKeywords:
   - "サッサマン仮説"
   - "サッサマン＝サトシ"
