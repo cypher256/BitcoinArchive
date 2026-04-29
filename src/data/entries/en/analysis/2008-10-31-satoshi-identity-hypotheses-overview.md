@@ -60,7 +60,7 @@ This overview covers ten named-candidate hypotheses that appear repeatedly in pu
 
 ## 2. Profile-match comparison
 
-The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, with a Japanese-form pseudonym, and silent in public correspondence after April 26, 2011.
+The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, and silent in public correspondence after April 26, 2011.
 
 | Candidate | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|
@@ -75,11 +75,48 @@ The dimensions below are derived from what the public record establishes about S
 | Peter Todd | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | Isamu Kaneko | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
-🟢 = matches Satoshi's documented profile; 🔴 = does not; 🟡 = mixed or partial fit. Column abbreviations: *Cypherpunk fora* = documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora; *BTC lineage* = documented work in the Hashcash / b-money / Bit Gold digital-cash lineage; *Implementation* = documented lifetime track record of shipping software at a scale comparable to Bitcoin v0.1's ~20,000-line C++ codebase (cryptographic libraries, P2P systems, anonymity networks, or complete applications). Lifetime, not strictly pre-2008, because Satoshi-as-pseudonym hides any pre-2008 implementation work the actual person had done; demonstrated post-launch capability is treated as evidence of the underlying capability; *Monetary design* = documented thinking about digital-cash / monetary-system mechanisms (proof-of-work tokens, scarcity, fee markets, mining incentives, distributed issuance). A separate dimension from Implementation because Bitcoin v0.1 required both code-shipping skill *and* coherent monetary-mechanism design; *English level* = near-native register in the Bitcoin documents; *Timing* = tight alignment with Satoshi's April 26, 2011 silence; *Low visibility* = low public visibility during the 2007–2008 design period. Full dimension definitions are in §3 Methodology; full candidate context is in §1.
+**Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit.
 
-A note on reading the table: profile-match is a *necessary but not sufficient* condition. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of profile match. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
+**Column abbreviations** (one-line each — full definitions and rationale in §3 Methodology):
+
+- *Cypherpunk fora* — documented presence in cypherpunks mailing list, metzdowd Cryptography List, or related fora
+- *BTC lineage* — documented work in the Hashcash / b-money / Bit Gold digital-cash lineage
+- *Implementation* — lifetime track record of shipping Bitcoin-scale code (~20K lines C++ / cryptography / P2P / anonymity / complete applications)
+- *Monetary design* — documented thinking about monetary-system mechanisms (PoW tokens, scarcity, fee markets, mining incentives, distributed issuance)
+- *English level* — near-native register in the Bitcoin documents
+- *Timing* — tight alignment with Satoshi's April 26, 2011 silence
+- *Low visibility* — low public visibility during the 2007–2008 design window
+- *External status* — self-denials, court rulings, technical disproofs
+
+(Candidate-by-candidate context for each cell is in §1.)
+
+**How to read the table:**
+
+The dimensions split into two groups that pull in different directions:
+
+- **Background / capability** (Cypherpunk fora, BTC lineage, Implementation, Monetary design, English level): 🟢 means the candidate had the intellectual milieu, technical skills, and writing fluency Bitcoin's design required.
+- **Covertness** (Timing, Low visibility): 🟢 means the candidate's visibility profile is consistent with Wei Dai's identifiability argument — Satoshi was specifically *not* a publicly active cypherpunk during 2007–2008.
+
+These two groups conflict structurally: the more visible a candidate was as a cypherpunk thinker, the harder it is for them to also have been hidden enough to escape identification. **A candidate scoring 🟢 across all dimensions in both groups is structurally rare** (someone who was simultaneously deeply embedded in cypherpunk capability and completely invisible during the design window). **Counting 🟢 across all dimensions and treating the total as a single Satoshi-likeness score is therefore misleading.**
+
+Sassaman scoring high on both groups, for example, comes partly from a specialty difference: his 2007–2008 public visibility was in the *anonymity-research* specialty (Mixmaster, KU Leuven), which is adjacent to but distinct from Bitcoin's *digital-cash* specialty — he could be visible in his own field while remaining invisible in Bitcoin's. See §3 Methodology for the full structural argument.
+
+Profile-match is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
 ## 3. Methodology
+
+**On internal tension between dimensions:**
+
+The dimensions below split into two groups:
+
+1. *Background and capability* — Cypherpunk fora, BTC lineage, Implementation, Monetary design, English level. 🟢 here means the candidate had what Bitcoin's design required: cypherpunk-style intellectual milieu, digital-cash thinking, code-shipping ability at the relevant scale, and a near-native English register.
+2. *Covertness* — Timing, Low visibility. 🟢 here means the candidate's documented profile fits Wei Dai's 2014 identifiability argument that Satoshi was *not* a publicly active cypherpunk during the 2007–2008 design window, and that some life event aligns with Satoshi's April 2011 silence.
+
+These two groups pull against each other. The more visibly active a candidate was as a cypherpunk thinker (group 1), the less plausibly they could also have been hidden enough to escape identification (group 2). A candidate scoring 🟢 across both groups is therefore structurally rare — they would have to have been simultaneously deeply embedded in cypherpunk capability and completely invisible during the design window. Reading the table requires holding the two groups separately rather than summing green counts.
+
+A practical consequence: **Sassaman's high score in both groups is partly an artifact of specialty separation**. His 2007–2008 public activity was in the anonymity-research specialty (Mixmaster, KU Leuven, 24C3 and Black Hat 2007 talks on anonymity), which is adjacent to but distinct from Bitcoin's digital-cash specialty. He could be visible in his own field (group-1 🟢 on cypherpunk fora) while remaining invisible in Bitcoin's specifically (group-2 🟡 on low visibility). Most candidates do not get this specialty-separation benefit and pay the trade-off more directly.
+
+**Dimension definitions:**
 
 Profile-match dimensions are derived from what the public record establishes about Satoshi:
 
