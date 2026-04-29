@@ -110,15 +110,15 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 #### Adam Back
 
-**Background.** British cryptographer, inventor of *Hashcash* (1997), the proof-of-work function cited as a primary precedent in Bitcoin's whitepaper. CEO of Blockstream (founded 2014). Long-tenure cypherpunk presence from the mid-1990s onwards.
+**Background.** British cryptographer (born 1970), PhD in computer science from the University of Exeter, inventor of *Hashcash* (1997), the proof-of-work function cited as a primary precedent in Bitcoin's whitepaper. Co-founder and CEO of Blockstream (2014).
 
 **The hypothesis.** Back is one of the cypherpunks Satoshi explicitly cited in the original whitepaper, and one of two known recipients of [Satoshi's pre-launch correspondence in August 2008](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/). The combination — Hashcash citation, pre-launch contact, capability, BTC-adjacent intellectual lineage — has periodically been read as evidence that Back was Satoshi.
 
 **Argument for.** Hashcash is the proof-of-work primitive Bitcoin reuses, so authorship correlation with Hashcash is the strongest forensic-fit argument. Back is a long-tenure cypherpunk with cryptographic-protocol design experience, near-native English (British), and BTC-adjacent intellectual lineage.
 
-**Argument against.** The pre-launch correspondence (August 20, 2008) is itself the strongest counter-evidence: Back's replies to Satoshi read as a third party engaging with an external proposal rather than as same-author scaffolding. Back has publicly self-denied being Satoshi.
+**Argument against.** The pre-launch correspondence (August 20–22, 2008) is itself the strongest counter-evidence: Back asked Satoshi about Hashcash citation and pointed Satoshi to Wei Dai's b-money (which Satoshi had not heard of) — third-party-reception behavior, not same-author scaffolding. Back has publicly treated Satoshi as a separate person, most prominently in his [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), where he submitted his complete email correspondence with Satoshi as witness evidence.
 
-**External status.** Self-denied; pre-launch correspondence reads as third-party reception.
+**External status.** Self-denied (most prominently via COPA v Wright testimony submitting his Satoshi correspondence as evidence); pre-launch correspondence reads as third-party reception.
 
 #### Wei Dai
 
@@ -136,7 +136,7 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 #### Hal Finney
 
-**Background.** Cypherpunk (1956–2014), PGP Inc. employee, ran early proof-of-work / hashcash variants (RPOW), and became the first non-Satoshi Bitcoin node on January 11, 2009. He coincidentally lived a few blocks from Dorian Prentice Satoshi Nakamoto in Temple City, California.
+**Background.** Cypherpunk (Harold Thomas Finney II, May 4, 1956 – August 28, 2014), Caltech engineering graduate, principal developer of PGP 2.0, creator of Reusable Proof-of-Work (RPOW). On January 9, 2009 (Bitcoin v0.1 release day) Finney downloaded the software and became the first person other than Satoshi to run a Bitcoin node; on January 11, 2009 he tweeted "Running bitcoin"; on January 12, 2009 he received 10 BTC from Satoshi in Block 170 — the first person-to-person Bitcoin transaction. He lived for almost a decade in Temple City, California — the same town where Newsweek would later identify Dorian Prentice Satoshi Nakamoto, "blocks apart."
 
 **The hypothesis.** Finney's deep cypherpunk credentials, pre-Bitcoin proof-of-work work (RPOW), early adoption of Bitcoin (first non-Satoshi node), and geographic proximity to a person literally named "Satoshi Nakamoto" combine into one of the most-discussed Satoshi-identity hypotheses in cryptocurrency journalism (most prominently in Andy Greenberg's 2014 *Forbes* investigation).
 
@@ -148,13 +148,13 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 #### Nick Szabo
 
-**Background.** Legal scholar and cypherpunk-adjacent essayist; designer of [*Bit Gold*](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) (1998 / refined 2005), a digital-currency proposal with overlapping idea-space to Bitcoin. Maintains the Unenumerated blog with extensive writing on monetary mechanism design.
+**Background.** Computer scientist, legal scholar, and cryptographer (born 1964). Coined the term "smart contracts" (1994). Designer of [*Bit Gold*](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), a decentralized digital-currency proposal based on proof-of-work conceived in 1998 and published in full on his Unenumerated blog on December 29, 2005.
 
-**The hypothesis.** Bit Gold is the closest pre-Bitcoin design conceptually — proof-of-work tokens, scarcity mechanism, distributed issuance — to Bitcoin's mechanism design. Stylometric analyses of Satoshi's whitepaper and Szabo's writing have periodically claimed similarities. The combination of Bit Gold proximity, near-native English at a sophisticated literary register, and BTC-adjacent intellectual lineage has produced a recurring hypothesis that Szabo was Satoshi.
+**The hypothesis.** Bit Gold is the closest pre-Bitcoin design conceptually — proof-of-work, chained puzzles, decentralized verification — to Bitcoin's mechanism design. The combination of Bit Gold's conceptual proximity and Szabo's literary writing register on Unenumerated has produced a recurring hypothesis that Szabo was Satoshi.
 
-**Argument for.** Bit Gold's mechanism design overlaps with Bitcoin's more directly than Hashcash or b-money on monetary aspects specifically. Szabo's near-native English at a literary register is comparable to Satoshi's. His thinking about digital scarcity mechanisms predates Bitcoin by a decade.
+**Argument for.** Bit Gold's mechanism design overlaps with Bitcoin's on monetary-mechanism aspects (proof-of-work, scarcity, decentralized issuance) more directly than Hashcash (anti-spam) or b-money (general digital cash). Szabo's writing register on Unenumerated is at a sophisticated literary level. His thinking about digital scarcity mechanisms predates Bitcoin by a decade.
 
-**Argument against.** Szabo has publicly self-denied being Satoshi multiple times. Bit Gold remained a conceptual proposal — Szabo did not ship code at Bitcoin v0.1 scale, and his documented work record is in writing and legal scholarship, not implementation. Szabo's continued public writing (Unenumerated blog) throughout 2007–2008 is documented activity during the design window.
+**Argument against.** Szabo has publicly denied being Satoshi (per his Wikipedia biography and recurring public statements). Bit Gold remained a conceptual proposal — in [April 2008](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) Szabo himself asked publicly "Anybody want to help me code one up?" for a bit gold demo, indicating he had not implemented it. His documented work is in writing and legal scholarship, not implementation. Szabo's continued public writing (Unenumerated blog) throughout 2007–2008 is documented activity during the design window. Szabo also acknowledged in his [May 2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) that "Nakamoto improved a significant security shortcoming that my design had" — treating Satoshi as a separate person who improved on his work.
 
 **External status.** Self-denied.
 
