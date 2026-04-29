@@ -114,7 +114,7 @@ Kaneko fits the "outside the visible cypherpunk community" condition (he was not
 
 The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies regardless of whether the person behind the pseudonym was Japanese, used a Japanese-form pseudonym deliberately, or some other configuration.
 
-For comparison with other named-candidate Satoshi-identity hypotheses (Finney, Szabo, Dorian, Wright, Sassaman), see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single profile-match comparison and external-status notes for each candidate.
+For comparison with other named-candidate Satoshi-identity hypotheses (Finney, Szabo, Dorian, Wright, Sassaman), see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single candidate profile comparison and external-status notes for each candidate.
 
 ## 6. Limits of this entry
 

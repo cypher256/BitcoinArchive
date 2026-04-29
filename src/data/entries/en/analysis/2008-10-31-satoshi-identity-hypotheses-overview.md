@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a profile-match comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
+description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a candidate profile comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -38,7 +38,7 @@ inlineLinkKeywords:
 This entry is an overview of the named-candidate hypotheses about Satoshi Nakamoto's identity that recur in public discourse. It exists to:
 
 - Document each named-candidate hypothesis at a uniform level of detail.
-- Provide a single profile-match comparison across the candidates.
+- Provide a single candidate profile comparison across the candidates.
 - Serve as a navigation hub to the individual hypothesis entries (where they exist).
 
 This entry does not name "the most likely Satoshi candidate." It documents the set; reading the individual hypothesis entries (linked below) is required to evaluate any one in depth.
@@ -58,7 +58,7 @@ This overview covers ten named-candidate hypotheses that appear repeatedly in pu
 - **Peter Todd** (born 1985): Canadian Bitcoin Core developer, contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work. Identified as a Satoshi candidate in the [2024 HBO documentary *Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024). The documentary's argument rested in part on a December 2010 BitcoinTalk thread in which Todd's reply appeared to complete or extend a partially-edited Satoshi post in a way the documentary read as same-author behavior. Todd has publicly denied being Satoshi; the documentary's evidence has been widely critiqued in the Bitcoin technical community as circumstantial.
 - **Isamu Kaneko** (1970–2013): Japanese researcher, developer of the *Winny* P2P file-sharing system (2002), defendant in a high-profile criminal case from 2004 to 2011 (acquitted by the Supreme Court of Japan, December 2011). Died of myocardial infarction on July 6, 2013. The hypothesis circulates predominantly in Japanese-language discourse. No external refutation; the hypothesis remains open. See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for full treatment.
 
-## 2. Profile-match comparison
+## 2. Candidate profile comparison
 
 The dimensions below are derived from what the public record establishes about Satoshi: structurally outside the visible cypherpunk community during the Bitcoin design period (per [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), near-native English-language register, working from the Hashcash / b-money / Bit Gold intellectual lineage, and silent in public correspondence after April 26, 2011.
 
@@ -75,20 +75,7 @@ The dimensions below are derived from what the public record establishes about S
 | Peter Todd | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | Isamu Kaneko | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
-**Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit.
-
-**Column abbreviations** (one-line each — full definitions and rationale in §3 Methodology):
-
-- *Cypherpunk fora* — documented presence in cypherpunks mailing list, metzdowd Cryptography List, or related fora
-- *BTC lineage* — documented work in the Hashcash / b-money / Bit Gold digital-cash lineage
-- *Implementation* — lifetime track record of shipping Bitcoin-scale code (~20K lines C++ / cryptography / P2P / anonymity / complete applications)
-- *Monetary design* — documented thinking about monetary-system mechanisms (PoW tokens, scarcity, fee markets, mining incentives, distributed issuance)
-- *English level* — near-native register in the Bitcoin documents
-- *Timing* — tight alignment with Satoshi's April 26, 2011 silence
-- *Low visibility* — low public visibility during the 2007–2008 design window
-- *External status* — self-denials, court rulings, technical disproofs
-
-(Candidate-by-candidate context for each cell is in §1.)
+**Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit (per-column criteria and rationale in §3 Methodology).
 
 **How to read the table:**
 
@@ -101,7 +88,7 @@ These two groups conflict structurally: the more visible a candidate was as a cy
 
 Sassaman scoring high on both groups, for example, comes partly from a specialty difference: his 2007–2008 public visibility was in the *anonymity-research* specialty (Mixmaster, KU Leuven), which is adjacent to but distinct from Bitcoin's *digital-cash* specialty — he could be visible in his own field while remaining invisible in Bitcoin's. See §3 Methodology for the full structural argument.
 
-Profile-match is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
+Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently. Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
 ## 3. Methodology
 
@@ -118,7 +105,7 @@ A practical consequence: **Sassaman's high score in both groups is partly an art
 
 **Dimension definitions:**
 
-Profile-match dimensions are derived from what the public record establishes about Satoshi:
+Profile-comparison dimensions are derived from what the public record establishes about Satoshi:
 
 - *Cypherpunk forum participation*: documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora. Wei Dai's 2014 identifiability argument (in his LessWrong AALWA thread) suggests Satoshi was *not* visibly active in these fora during the 2007–2008 design period.
 - *Bitcoin-adjacent intellectual lineage*: documented work in or extended citation of Hashcash, b-money, Bit Gold, RPOW, or related digital-cash / proof-of-work proposals.
@@ -131,8 +118,8 @@ Profile-match dimensions are derived from what the public record establishes abo
 ## 4. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material into one comparison.
-- This entry does not name "the most likely Satoshi candidate." Profile-match is necessary but not sufficient; external status is in some cases decisive.
-- Profile-match labels (🟢, 🔴, 🟡) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
+- This entry does not name "the most likely Satoshi candidate." Profile-comparison is necessary but not sufficient; external status is in some cases decisive.
+- Profile-comparison labels (🟢, 🔴, 🟡) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
 - For full treatment of the Sassaman and Kaneko hypotheses, see the individual entries. Other candidates do not yet have dedicated hypothesis entries in this archive.
