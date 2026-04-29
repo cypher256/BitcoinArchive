@@ -24,6 +24,8 @@ secondarySources:
   - name: "Black Hat USA 2011 Slides"
     url: "https://www.slideshare.net/dakami/black-ops-of-tcpip-2011-black-hat-usa-2011"
 relatedEntries:
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2011-04-20-forbes-crypto-currency
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
@@ -49,4 +51,4 @@ translationStatus: complete
 
 ---
 
-*[補足：ダン・カミンスキーは2011年8月のBlack Hat USA 2011（ラスベガス）でもビットコインの分析を発表した。2013年にはCoinDeskに対し「コア技術は実際に機能しており、誰もが予測したわけではない程度にまで機能し続けている」と語った。カミンスキーは2008年に重大なDNS脆弱性を発見したことで有名だった。2021年4月23日に亡くなった。]*
+*[補足：ダン・カミンスキーは 2011 年 8 月の Black Hat USA 2011（ラスベガス）でもビットコインの分析を発表した。同じ Black Hat の場で、3 か月前に亡くなった [レン・サスマンへの ASCII アート追悼をビットコインのブロックチェーンに埋め込んだ件](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) も別途公開している。2013 年には CoinDesk に対し「コア技術は実際に機能しており、誰もが予測したわけではない程度にまで機能し続けている」と語った。カミンスキーは 2008 年に重大な DNS 脆弱性を発見したことで有名だった。2021 年 4 月 23 日に亡くなった。]*

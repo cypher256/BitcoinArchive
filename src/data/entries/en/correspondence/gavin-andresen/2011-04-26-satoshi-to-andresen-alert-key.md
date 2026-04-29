@@ -37,6 +37,7 @@ relatedEntries:
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-04-20-forbes-crypto-currency
   - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
 ---
 
 On April 26, 2011, Satoshi Nakamoto sent what would become his last known private email. Addressed to Gavin Andresen with the subject line "alert key," this message marked Satoshi's final transfer of authority and his farewell from the project he created.

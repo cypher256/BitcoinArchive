@@ -24,6 +24,8 @@ secondarySources:
   - name: "Black Hat USA 2011 Slides"
     url: "https://www.slideshare.net/dakami/black-ops-of-tcpip-2011-black-hat-usa-2011"
 relatedEntries:
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2011-04-20-forbes-crypto-currency
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
@@ -48,4 +50,4 @@ relatedEntries:
 
 ---
 
-*[Context: Dan Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas. In 2013, he told CoinDesk: "The core technology actually works, and has continued to work, to a degree not everyone predicted." Kaminsky was famous for discovering a critical DNS vulnerability in 2008. He passed away on April 23, 2021.]*
+*[Context: Dan Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas, where he separately revealed an [ASCII-art memorial to Len Sassaman that he had embedded in the Bitcoin blockchain](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) following Sassaman's death three months earlier. In 2013, he told CoinDesk: "The core technology actually works, and has continued to work, to a degree not everyone predicted." Kaminsky was famous for discovering a critical DNS vulnerability in 2008. He passed away on April 23, 2021.]*
