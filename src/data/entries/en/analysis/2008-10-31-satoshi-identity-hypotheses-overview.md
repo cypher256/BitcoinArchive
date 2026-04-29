@@ -1,5 +1,5 @@
 ---
-title: "Named-candidate Satoshi-identity hypotheses: an overview"
+title: "Who is Satoshi Nakamoto? Seven candidate hypotheses compared"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An overview of the named-candidate Satoshi-identity hypotheses that recur in public discourse: Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Len Sassaman, Peter Todd, Isamu Kaneko. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a profile-match comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
+description: "A comparison of seven Satoshi Nakamoto identity candidates that recur in public discourse: Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Len Sassaman, Peter Todd, Isamu Kaneko. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a profile-match comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
 isSatoshi: false
 homeOrder: 2
 tags:
@@ -25,6 +25,9 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
 inlineLinkKeywords:
+  - "Satoshi Nakamoto candidates"
+  - "Satoshi Nakamoto identity candidates"
+  - "candidate hypotheses compared"
   - "named-candidate hypotheses"
   - "Satoshi-identity hypotheses overview"
   - "identity hypotheses overview"
