@@ -38,6 +38,7 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
   - bip/2015-11-03-bip-0125

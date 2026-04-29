@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:
   - "サッサマン仮説"

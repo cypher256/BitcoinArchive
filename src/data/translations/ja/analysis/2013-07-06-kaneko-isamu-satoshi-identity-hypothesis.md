@@ -27,6 +27,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
 relatedEntries:
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:
   - "金子仮説"
