@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry serves as a single navigation hub to the individual hypothesis entries (where they exist), provides a profile-match comparison table across all candidates, and documents external status (self-denials, court rulings, technical disproofs) for each. The entry does not name the most likely Satoshi candidate."
 isSatoshi: false
-homeOrder: 2
+homeOrder: 1
 tags:
   - "satoshi-identity"
   - "analysis"
