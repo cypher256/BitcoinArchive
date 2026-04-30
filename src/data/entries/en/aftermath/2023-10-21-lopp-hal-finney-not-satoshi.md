@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
     note: "The earlier Forbes feature where Fran Finney first showed race photographs as evidence Hal could not have been Satoshi. Greenberg's piece predates Lopp's analysis by nearly a decade and is the original public documentation of the race-day alibi."
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2013-03-19-bitcoin-and-me-hal-finney"
   - "aftermath/2014-08-28-hal-finney-biography"
   - "aftermath/2009-01-12-first-bitcoin-transaction"

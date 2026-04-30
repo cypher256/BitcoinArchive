@@ -23,7 +23,9 @@ secondarySources:
   - name: "Associated Press - Dorian Nakamoto denial"
     url: "https://apnews.com/article/8aa53f3e7be44e85945e284ab9942ce0"
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"

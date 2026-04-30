@@ -31,6 +31,9 @@ secondarySources:
 relatedEntries:
   - "aftermath/2008-08-20-adam-back-biography"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
 ---
 
 [Adam Back](/BitcoinArchive/participants/adam-back/) — inventor of Hashcash (1997), the proof-of-work system cited in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) — has reflected on his earliest interaction with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/):
