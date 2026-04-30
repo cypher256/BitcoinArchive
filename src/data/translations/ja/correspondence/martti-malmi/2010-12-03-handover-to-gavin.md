@@ -1,5 +1,5 @@
 ---
-title: "Re: ビットコイン - 後継者としてギャビン・アンドレセンを推薦"
+title: "Re: ビットコイン - 開発と管理の引き継ぎ先としてギャビン・アンドレセンを推薦"
 date: 2010-12-03T19:58:40Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼は信頼できる、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——ビットコインのリーダーシップ移行における極めて重要な瞬間。"
+description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼は信頼できる、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——以後数週間で正式化するリーダーシップ移行の早期シグナルであり、12 月 12 日の SVN 譲渡、12 月 19 日の公的告知へとつながった。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -43,6 +43,6 @@ translationStatus: complete
 <!-- speaker: narrator -->
 3日後、マルミは簡潔に返信した：「了解です、彼に聞いてみます。」
 
-このやり取りは、ビットコインの初期開発において最も歴史的に重要なものの一つである。サトシによる後継者としての[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)の明示的な承認は、徐々に形作られてきたリーダーシップの移行を正式なものにした。アンドレセンはその後、ビットコインのリード開発者およびBitcoin Coreソフトウェアの主要メンテナーとなった。
+このやり取りは、ビットコインの初期開発において最も歴史的に重要なものの一つである。サトシによる、こうした責任を引き継ぐ相手としての[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)の明示的な推薦は、その 9 日後の[2010 年 12 月 12 日 SVN 権限譲渡と承認メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)で正式化し、[2010 年 12 月 19 日のアンドレセンによる「サトシの祝福を受けて」 公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)で公開化された、リーダーシップ移行の早期シグナルだった。アンドレセンはその後、ビットコインのリード開発者および Bitcoin Core ソフトウェアの主要メンテナーとなった。
 
 Linuxの能力に関する発言も示唆に富んでいる——サトシが主にWindows上で作業し、Linux関連の開発についてはマルミ、そして後にアンドレセンに頼っていたことを裏付けている。ビットコインは当初Windowsのみのアプリケーションとしてリリースされ、Linuxサポートは主にマルミの作業によりバージョン0.2で追加された。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin - Recommending Gavin Andresen as successor"
+title: "Re: Bitcoin - Recommending Gavin Andresen to take over development and management"
 date: 2010-12-03T19:58:40Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "When Malmi asks who should take over Bitcoin development responsibilities, Satoshi recommends Gavin Andresen, stating 'I trust him, he's responsible, professional' - a pivotal moment in Bitcoin's leadership transition."
+description: "When Malmi asks who should take over Bitcoin development responsibilities, Satoshi recommends Gavin Andresen, stating 'I trust him, he's responsible, professional' - an early signal of the leadership transition that would formalize over the following weeks with the December 12 SVN handover and the December 19 public announcement."
 isSatoshi: true
 tags:
   - "correspondence"
@@ -39,6 +39,6 @@ Satoshi's response was clear and decisive:
 
 Three days later, Malmi replied simply: "Ok, I'll ask him."
 
-This exchange is one of the most historically significant in Bitcoin's early development. Satoshi's explicit endorsement of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) as his successor formalized a leadership transition that had been gradually taking shape. Andresen went on to become the lead developer of Bitcoin and the primary maintainer of the Bitcoin Core software.
+This exchange is one of the most historically significant in Bitcoin's early development. Satoshi's explicit recommendation of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) for these responsibilities was an early signal of the leadership transition that would formalize nine days later with the [December 12, 2010 SVN access handover and endorsement email](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/), and become public on December 19, 2010 when Andresen [announced taking over project management with Satoshi's blessing](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/). Andresen went on to become the lead developer of Bitcoin and the primary maintainer of the Bitcoin Core software.
 
 The comment about Linux capability is also revealing - it confirms that Satoshi primarily worked on Windows and relied on others, particularly Malmi and later Andresen, for Linux-related development. Bitcoin had been initially released as a Windows-only application, with Linux support added in version 0.2 largely through Malmi's work.
