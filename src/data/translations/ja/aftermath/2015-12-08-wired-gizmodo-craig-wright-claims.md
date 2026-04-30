@@ -26,6 +26,8 @@ secondarySources:
   - name: "Wired follow-up questioning evidence"
     url: "https://www.wired.com/2015/12/new-clues-suggest-satoshi-suspect-craig-wright-may-be-a-hoax/"
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2016-05-02-craig-wright-biography"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"

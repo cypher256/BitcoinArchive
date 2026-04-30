@@ -30,6 +30,9 @@ relatedEntries:
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+  - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-08-20-satoshi-self-statements
 ---
 
 Gavin Andresen first discovered Bitcoin in 2010 and quickly became one of the most active contributors. Satoshi Nakamoto recognized his talent and commitment, eventually giving him access to the Bitcoin source code repository and naming him lead developer.

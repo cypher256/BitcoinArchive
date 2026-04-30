@@ -67,6 +67,10 @@ relatedEntries:
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2015-12-08-wired-gizmodo-craig-wright-claims
+  - aftermath/2016-05-02-craig-wright-bbc-economist-claim
+  - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
+  - aftermath/2016-12-12-satoshi-p2pfoundation-profile-login
   - aftermath/2017-09-04-china-ico-ban
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 inlineLinkKeywords:

@@ -42,6 +42,7 @@ relatedEntries:
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
+  - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi

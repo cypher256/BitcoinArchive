@@ -49,6 +49,7 @@ relatedEntries:
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2009-01-03-genesis-block-hardcode-analysis

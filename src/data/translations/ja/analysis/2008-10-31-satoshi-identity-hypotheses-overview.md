@@ -38,6 +38,8 @@ relatedEntries:
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - aftermath/2015-12-08-wired-gizmodo-craig-wright-claims
+  - aftermath/2016-05-02-craig-wright-bbc-economist-claim
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis

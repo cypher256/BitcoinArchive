@@ -28,6 +28,8 @@ secondarySources:
   - name: "Fortune — Bitcoin's 'Creator' Has Finally Unmasked Himself. (Maybe.)"
     url: "https://fortune.com/2016/05/02/bitcoin-satoshi-wright/"
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2016-05-02-craig-wright-biography"
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"

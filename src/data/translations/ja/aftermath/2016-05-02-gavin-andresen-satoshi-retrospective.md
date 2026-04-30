@@ -30,6 +30,9 @@ relatedEntries:
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+  - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 
