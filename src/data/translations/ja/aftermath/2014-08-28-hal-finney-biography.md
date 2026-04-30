@@ -49,22 +49,27 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2009-01-10-satoshi-launch-environment
 translationStatus: complete
 ---
 
-ハロルド・トーマス・フィニー二世は1956年5月4日、California州Coalingaに生まれ、Arcadiaで育った。1974年にArcadia High Schoolを首席（valedictorian）で卒業し、1979年にCalifornia Institute of Technology（Caltech）でエンジニアリングの理学士号を取得した。
+ハロルド・トーマス・フィニー二世は1956年5月4日、カリフォルニア州コアリンガに生まれ、アーケイディアで育った。1974年にアーケイディア高校を首席で卒業し、1979年にカリフォルニア工科大学（Caltech）でエンジニアリングの理学士号を取得した。
 
 **暗号学とPGP：**
-1991年、フィニーはフィル・ジマーマンのPretty Good Privacy（PGP）プロジェクトに無償でコードを書くボランティアとして参加。PGP 2.0の主要開発者の一人となった。1996年にジマーマンがPGP Inc.を設立した際、最初期の従業員として雇用された（後にSymantecに買収）。
+1991年、フィニーはフィル・ジマーマンのPretty Good Privacy（PGP）プロジェクトに無償でコードを書くボランティアとして参加。PGP 2.0の主要開発者の一人となった。1996年にジマーマンがPGP社を設立した際、最初期の従業員として雇用された（後にシマンテックに買収）。
 
-**Extropianismとクライオニクス：**
-フィニーはExtropy Instituteのクライオニクス、延命、宇宙移住、ナノテクノロジー、人工知能に関する議論の積極的な参加者だった。Caltech在学中の1年生の時からクライオニクスに興味を持っていた。1992年10月15日、妻フランとともにCalifornia州RiversideでAlcorクライオニクスの会員登録書類に署名。以後20年以上Alcor会員だった。
+**エクストロピアニズムとクライオニクス：**
+フィニーはエクストロピー研究所のクライオニクス、延命、宇宙移住、ナノテクノロジー、人工知能に関する議論の積極的な参加者だった。Caltech在学中の1年生の時からクライオニクスに興味を持っていた。1992年10月15日、妻フランとともにカリフォルニア州リバーサイドでアルコー・クライオニクスの会員登録書類に署名。以後20年以上アルコー会員だった。
 
 **Reusable Proof-of-Work：**
 2004年、フィニーは最初のReusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。アダム・バックのHashcashから、ウェイ・ダイのb-money、ニック・サボのBit Gold、そしてRPOWを経てビットコインへと至る技術系譜は、サトシ自身がその運動に対してどのような位置にいたかという問いとあわせて、[サイファーパンク核心とサトシの知的位置についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で精査されている。
 
 **ビットコイン：**
-2009年1月9日、フィニーはリリース当日に[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外でビットコインノードを稼働させた最初の人物となった。Block 70付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[Block 170でサトシから10 BTCを受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
+2009年1月9日、フィニーはリリース当日に[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外でビットコインノードを稼働させた最初の人物となった。ブロック70付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック170でサトシから10 BTCを受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
 
 **ALSと最後の年月：**
 2009年8月、フィニーは筋萎縮性側索硬化症（ALS）と診断された。進行する麻痺にもかかわらず、ビットコインのコード作成を続けた — 最終的にはアイトラッキングソフトウェアを使用してコミュニケーションとプログラミングを行った。2011年初頭にPGP Corporation（Symantec）を退職。2013年3月19日、BitcoinTalkに[「Bitcoin and Me」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿し、ビットコイン最初のユーザーとしての経験を記した。
