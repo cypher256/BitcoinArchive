@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 /**
  * Generate git-dates.json from git history.
- * For each entry .md file, extract:
- *   - createdAt: date of the first commit that added the file
- *   - updatedAt: date of the most recent commit that touched the file
+ * For each entry, track createdAt and updatedAt **separately for EN and JA**:
+ *   - en.createdAt / en.updatedAt: from src/data/entries/en/<id>.md history
+ *   - ja.createdAt / ja.updatedAt: from src/data/translations/ja/<id>.md history
+ *
+ * EN and JA are usually edited together, so the two updatedAt values are typically
+ * identical, but they diverge legitimately when only one side is touched (e.g. a
+ * JA-only translation pass, or an EN-only fact correction). Each language page
+ * shows its own updatedAt so the displayed date reflects what was actually edited
+ * in that language.
  *
  * Runs a single `git log` command for efficiency (batch processing).
  */
@@ -62,28 +68,25 @@ function run() {
     }
   }
 
-  // Build output keyed by entry ID (relative path without .md, under en/)
-  /** @type {Record<string, { createdAt: string, updatedAt: string }>} */
+  // Build output keyed by entry ID with separate per-language records.
+  /** @type {Record<string, { en?: { createdAt: string, updatedAt: string }, ja?: { createdAt: string, updatedAt: string } }>} */
   const result = {};
 
   for (const [filePath, dates] of fileMap) {
     let entryId = '';
+    let lang = '';
     if (filePath.startsWith(EN_PREFIX)) {
       entryId = filePath.slice(EN_PREFIX.length).replace(/\.md$/, '');
+      lang = 'en';
     } else if (filePath.startsWith(JA_PREFIX)) {
       // JA shares the same entry ID as EN
       entryId = filePath.slice(JA_PREFIX.length).replace(/\.md$/, '');
+      lang = 'ja';
     }
-    if (!entryId) continue;
+    if (!entryId || !lang) continue;
 
-    // Merge: use earliest createdAt and latest updatedAt across EN/JA
-    const existing = result[entryId];
-    if (!existing) {
-      result[entryId] = { createdAt: dates.createdAt, updatedAt: dates.updatedAt };
-    } else {
-      if (dates.createdAt < existing.createdAt) existing.createdAt = dates.createdAt;
-      if (dates.updatedAt > existing.updatedAt) existing.updatedAt = dates.updatedAt;
-    }
+    if (!result[entryId]) result[entryId] = {};
+    result[entryId][lang] = { createdAt: dates.createdAt, updatedAt: dates.updatedAt };
   }
 
   // Sort keys for stable output

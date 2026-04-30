@@ -19,7 +19,7 @@ import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsCompariso
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
 import NlsExchangeRate from '../../components/NlsExchangeRate.astro';
 import { getCollection, render } from 'astro:content';
-import { useTranslations, formatDate, localePath, absoluteUrl } from '../../i18n/utils';
+import { useTranslations, localePath, absoluteUrl } from '../../i18n/utils';
 import { resolveThreadId } from '../../data/threads';
 import gitDates from '../../data/git-dates.json';
 
@@ -56,7 +56,13 @@ const breadcrumbs = [
 
 // Content last-updated date from git history (separate axis from
 // frontmatter.date which is the entry's anchor to the historical event).
-const gitDateRecord = (gitDates as Record<string, { createdAt: string; updatedAt: string }>)[entry.id];
+// git-dates.json keys per-language records (en / ja). EN and JA are usually
+// edited together so the two updatedAt values are typically identical, but they
+// diverge legitimately when only one side is touched (e.g. a JA-only translation
+// pass). Each language page reads its own record.
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDateRecord = (gitDates as Record<string, GitDateRecord>)[entry.id]?.en;
 const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) : undefined;
 ---
 

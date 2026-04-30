@@ -12,9 +12,16 @@ const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const displayEntries = collapseThreads(entries, threadCounts, threadStarters).reverse();
 
-// Load git dates (generated at build time)
+// Load git dates (generated at build time). git-dates.json keys each entry by id
+// and stores per-language records (en / ja). EN and JA are usually edited together
+// so the two updatedAt values are typically identical, but they diverge legitimately
+// when only one side is touched (e.g. a JA-only translation pass) — each language
+// page reads its own record so the displayed date reflects what was actually edited
+// in that language.
 const gitDatesPath = join(process.cwd(), 'src/data/git-dates.json');
-const gitDates: Record<string, { createdAt: string; updatedAt: string }> = existsSync(gitDatesPath)
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDates: Record<string, GitDateRecord> = existsSync(gitDatesPath)
   ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
   : {};
 const hasGitDates = Object.keys(gitDates).length > 0;
@@ -80,7 +87,7 @@ const structuredData = {
         const tid = resolveThreadId(entry);
         const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
         const isThread = msgCount >= 2;
-        const gd = gitDates[entry.id];
+        const gd = gitDates[entry.id]?.en;
         return (
           <EntryCard
             id={entry.id}

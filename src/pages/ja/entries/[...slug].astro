@@ -56,7 +56,16 @@ const breadcrumbs = [
 
 // Content last-updated date from git history (separate axis from
 // frontmatter.date which is the entry's anchor to the historical event).
-const gitDateRecord = (gitDates as Record<string, { createdAt: string; updatedAt: string }>)[entry.id];
+// git-dates.json keys per-language records (en / ja). EN and JA are usually
+// edited together so the two updatedAt values are typically identical, but they
+// diverge legitimately when only one side is touched (e.g. a JA-only translation
+// pass). Each language page reads its own record (JA falls back to EN if the JA
+// file isn't yet in git history).
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDateRecord =
+  (gitDates as Record<string, GitDateRecord>)[entry.id]?.ja ??
+  (gitDates as Record<string, GitDateRecord>)[entry.id]?.en;
 const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) : undefined;
 ---
 

@@ -92,7 +92,7 @@ const topParticipants = Array.from(participantMap.entries())
   .slice(0, TOP_N);
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
-const { homeAnalyses, hasMoreAnalyses } = getHomeAnalyses(entries);
+const { homeAnalyses, hasMoreAnalyses } = getHomeAnalyses(entries, 6, 'en');
 
 // Network graph data
 const graphData = computeGraphData(entries, lang);
