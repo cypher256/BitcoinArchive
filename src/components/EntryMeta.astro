@@ -47,7 +47,15 @@ const isSatoshiAuthor =
 ---
 
 <div class="entry-meta">
+  <span class="date-label">{t('entry.event' as any)}</span>
   <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
+  {updatedAt && (
+    <>
+      <span class="meta-sep">&middot;</span>
+      <span class="date-label">{t('entry.updated' as any)}</span>
+      <time datetime={updatedAt.toISOString()}>{formatDate(updatedAt, lang)}</time>
+    </>
+  )}
   <span class="meta-sep">&middot;</span>
   <span class:list={['author', { satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
   <span class="meta-sep">&middot;</span>
@@ -55,13 +63,6 @@ const isSatoshiAuthor =
   <span class="meta-sep">&middot;</span>
   <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
 </div>
-
-{updatedAt && (
-  <div class="entry-meta-updated">
-    <span class="updated-label">{t('entry.lastUpdated' as any)}:</span>
-    <time datetime={updatedAt.toISOString()}>{formatDate(updatedAt, lang)}</time>
-  </div>
-)}
 
 {participants.length > 0 && (
   <div class="participants-row">
@@ -98,19 +99,9 @@ const isSatoshiAuthor =
     color: var(--color-text-muted);
     margin-bottom: 0.5rem;
   }
-  .entry-meta-updated {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.35rem;
-    font-family: var(--font-heading);
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    margin-bottom: 0.5rem;
-    opacity: 0.85;
-  }
-  .updated-label {
+  .date-label {
     font-weight: 600;
+    margin-right: -0.15rem;
   }
   .meta-sep {
     color: var(--color-border);
