@@ -119,6 +119,14 @@ const RULES = [
   { type: 'literal', deprecated: 'という署名', canonical: 'という仮名', reason: 'pseudonym/byline 意の signature は「仮名」で統一。crypto 意の「署名」（Schnorr 署名等）と区別する' },
   { type: 'literal', deprecated: 'マイニング署名', canonical: 'マイニング指紋', reason: 'Patoshi 等 forensic fingerprint 意の signature は「指紋」で統一。crypto 意の「署名」と区別する' },
   { type: 'literal', deprecated: 'ナンス署名', canonical: 'ナンス指紋', reason: 'forensic fingerprint 意の signature は「指紋」で統一。crypto 意の「署名」と区別する' },
+
+  // --- private email/correspondence の訳語統一 ---
+  // 日本語では「メール」 単体で個人的・私的な含意を含むので、「私信」「プライベートメール」 等の
+  // 補助語は不要。カテゴリラベル（src/i18n/ui.ts: type.correspondence = '個人メール'）は対比上
+  // 必要なので別管理。本文散文では「メール」 で統一する。
+  { type: 'literal', deprecated: '私信メール', canonical: 'メール', reason: '私信 = 私的な手紙/メール の意を内包するため「私信メール」 は重複表現。本文散文では「メール」 で統一' },
+  { type: 'literal', deprecated: '私信', canonical: 'メール', reason: '「私信」 は現代日本語では稀で archaic。日本語では「メール」 単体でプライベートな含意を持つため「メール」 で統一' },
+  { type: 'literal', deprecated: 'プライベートメール', canonical: 'メール', reason: '日本語では「メール」 単体でプライベートな含意を持つため「プライベート」 修飾は不要。「メール」 で統一' },
 ];
 
 function walk(dir) {

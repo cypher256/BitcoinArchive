@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがトランメルとの会話をbitcoin-listおよび暗号学メーリングリストにCCし、ビットコインの将来に関するビジョンを共有した。「万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない」という有名な一節を含む。これはトランメルへの以前のプライベートメールの公開版である。"
+description: "サトシがトランメルとの会話をbitcoin-listおよび暗号学メーリングリストにCCし、ビットコインの将来に関するビジョンを共有した。「万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない」という有名な一節を含む。これはトランメルへの以前のメールの公開版である。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -33,7 +33,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-このメールはbitcoin-list@lists.sourceforge.netおよびmetzdowd.comの暗号学メーリングリストの両方にCCされており、公開メッセージとなっている。これはサトシがトランメルに送った以前のプライベートメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
+このメールはbitcoin-list@lists.sourceforge.netおよびmetzdowd.comの暗号学メーリングリストの両方にCCされており、公開メッセージとなっている。これはサトシがトランメルに送った以前のメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
 
 サトシはトランメルがビットコインの価値について述べた以前の観察を引用し、自身のビジョンを共有した：
 

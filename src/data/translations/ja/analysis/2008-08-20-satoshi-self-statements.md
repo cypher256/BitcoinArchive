@@ -97,7 +97,7 @@ translationStatus: complete
 | "Unfortunately, I can't receive incoming connections from where I am"（残念だけど、今いる場所からは外部からの接続が受けられない） | [→ ハル・フィニー](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10（または 12、議論あり） | 運用状態の自己開示。[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で扱う |
 | "Hal isn't currently actively involved... pretty busy with work, and need a break from it after 18 months development"（ハルは現在は積極的には関わっていない… 仕事で忙しく、18 か月の開発の後で休みが必要だ） | [→ マルティ・マルミ 2009-07-21](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | 18 か月のタイムラインを再確認。疲労の自己開示 |
 | "That's where I have less expertise"（そこは自分の専門外だ）（Linux/FreeBSD テストについて） | BitcoinTalk フォーラム投稿、2009 年 12 月 | 2009-12 | クロスプラットフォームでの専門性ギャップ |
-| "[Gavin is] technically much more Linux capable than me"（ギャビンは技術的に自分よりはるかに Linux に精通している） | ギャビン・アンドレセン宛の私信、2010 年 12 月 | 2010-12 | サトシ自身による比較的自己評価（自分の Linux 能力をギャビンと比べた本人の評価） |
+| "[Gavin is] technically much more Linux capable than me"（ギャビンは技術的に自分よりはるかに Linux に精通している） | ギャビン・アンドレセン宛のメール、2010 年 12 月 | 2010-12 | サトシ自身による比較的自己評価（自分の Linux 能力をギャビンと比べた本人の評価） |
 
 ### 1.4 撤退表明
 
@@ -194,7 +194,7 @@ translationStatus: complete
 
 ## 5. 限界
 
-- **この目録は公開された分に限定される**。サトシと他者（特にマイク・ハーンとギャビン・アンドレセン）の間の私信は部分的または全体的に未公開のものが多く残る。新しい自己言及が出現する可能性がある
+- **この目録は公開された分に限定される**。サトシと他者（特にマイク・ハーンとギャビン・アンドレセン）の間のメールは部分的または全体的に未公開のものが多く残る。新しい自己言及が出現する可能性がある
 - **「authenticity 議論あり」の項目はきれいに分類できない**。2014 年のドリアン反論はその典型 — 元のプロフィール認証情報がサトシ本人に再使用されたなら自己言及、入手または推測されたなら自己言及ではない
 - **何気ない発言を読み込みすぎる危険**。一部の項目（例: 1.3 の Linux 能力に関する発言）は技術スレッド内の応答的な発言であり、意図的な識別子開示ではない。これらを伝記的証拠として扱うには注意が要る
 - **身元仮説は導かれない**。本エントリはサトシの実際の身元を絞り込まない。サトシが *語ったこと* と、それらの発言が記録の *示すもの* とどう関係するかを整理する。身元仮説の選択は本エントリの範囲外の証拠を必要とする

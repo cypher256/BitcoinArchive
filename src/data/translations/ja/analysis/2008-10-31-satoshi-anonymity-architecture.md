@@ -87,7 +87,7 @@ translationStatus: complete
 
 - `satoshi@anonymousspeech.com` — 2008 年 8 月、アダム・バックとウェイ・ダイへの最初のコンタクトで使用。
 - `satoshi@vistomail.com` — 2008 年 10 月、初期ドラフト論文と暗号学メーリングリスト投稿で使用。Vistomail は運営元不明の匿名メールサービスで、現在は閉鎖されている。
-- `satoshin@gmx.com` — 2008 年 10 月以降、最終版論文・BitcoinTalk フォーラム・P2P Foundation アカウント登録・私信、および 2014 年 3 月の Newsweek 誤報否定投稿 (「I am not Dorian Nakamoto」) で使用。2014 年の投稿は本人かアカウント侵害かの真偽が議論されている。
+- `satoshin@gmx.com` — 2008 年 10 月以降、最終版論文・BitcoinTalk フォーラム・P2P Foundation アカウント登録・メール、および 2014 年 3 月の Newsweek 誤報否定投稿 (「I am not Dorian Nakamoto」) で使用。2014 年の投稿は本人かアカウント侵害かの真偽が議論されている。
 
 3 つのアドレスは公開記録上確立した事実として扱う (Wikipedia「サトシ・ナカモト」 エントリ、`mmalmi.github.io/satoshi`・`plan99.net`・Bitcoin Magazine が公開したアダム・バック宛メール群によって裏付けられる)。
 
@@ -136,7 +136,7 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 - Subversion リポジトリは Linux 移植期間中にマルッティ・マルミの協力で SourceForge プロジェクト上にセットアップされた。サトシ自身ではない。リポジトリで保存されている最古のコミットは 2009 年 10 月以降である ([コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) のコミット履歴整理を参照)。
 - GitHub 上の `bitcoin/bitcoin` リポジトリは引き継ぎ期間中の 2010 年 12 月にギャビン・アンドレセンによって作成された。サトシの最終 SVN コミット (revision 202、2010 年 12 月 15 日) の後である。
 
-2010 年 12 月のギャビン・アンドレセン宛私信で、サトシは「[Gavin is] technically much more Linux capable than me (ギャビンの方が私より技術的に Linux に習熟している)」 と自己評価している ([自己言及エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/) に整理あり)。この記述は v0.1 コードベースの Windows 環境パターンと整合している。
+2010 年 12 月のギャビン・アンドレセン宛メールで、サトシは「[Gavin is] technically much more Linux capable than me (ギャビンの方が私より技術的に Linux に習熟している)」 と自己評価している ([自己言及エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/) に整理あり)。この記述は v0.1 コードベースの Windows 環境パターンと整合している。
 
 ## 5. ジェネシスブロックの定数化 (起源の脱帰属化層)
 
@@ -154,19 +154,19 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 
 | 日付 (UTC) | 出来事 | 出典 |
 |---|---|---|
-| 2010 年 9 月 | サトシ → ギャビン・アンドレセンへ私信「他のプロジェクトに取り組んでいる」。具体的な日付・媒体は公開記録になく、アンドレセンの後年の回想からの再構成。 | ギャビン・アンドレセンのインタビュー ([CoinMarketCap「Satoshi Files: ギャビン・アンドレセン」](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
+| 2010 年 9 月 | サトシ → ギャビン・アンドレセンへメール「他のプロジェクトに取り組んでいる」。具体的な日付・媒体は公開記録になく、アンドレセンの後年の回想からの再構成。 | ギャビン・アンドレセンのインタビュー ([CoinMarketCap「Satoshi Files: ギャビン・アンドレセン」](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
 | 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビンが適任だ」。プロジェクトマネージャーとしてアンドレセンを推薦。 | [`mmalmi.github.io/satoshi`](https://mmalmi.github.io/satoshi/) 公開メール |
 | 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」 スレッドへのサトシの公的反対投稿: 「No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way.」 | [BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280) |
 | 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (私的)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「I'm doing a few more things, then I plan to pass the baton.」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | 2010 年 12 月 15 日 | サトシ最終 SVN コミット (revision 202) — IRC 経由の外部 IP 取得処理の小さな修正。 | SourceForge SVN 履歴 |
 | 2010 年 12 月 19 日 | アンドレセンがリードメンテナーとしての就任を公式に発表。同日、GitHub `bitcoin/bitcoin` リポジトリ作成。 | BitcoinTalk アナウンスメント |
 | 2010 年 12 月 27 日 | マイク・ハーン → サトシ、クリスマスメッセージと 21M コイン上限・10 分ブロック目標・500 KB ブロックサイズ上限への質問。 | [`plan99.net`](https://plan99.net/~mike/satoshi-emails/) 公開メール |
-| 2010 年 12 月 29 日 | サトシ → マイク・ハーン、長文私信。完全な SPV / クライアントモード設計の解説、21M の「Educated guess」 説明、ブロックサイズ拡大に対するムーアの法則の引用。サトシが書いた最後の長文私信。 | `plan99.net` |
+| 2010 年 12 月 29 日 | サトシ → マイク・ハーン、長文メール。完全な SPV / クライアントモード設計の解説、21M の「Educated guess」 説明、ブロックサイズ拡大に対するムーアの法則の引用。サトシが書いた最後の長文メール。 | `plan99.net` |
 | 2011 年 4 月 23 日 | サトシ → マイク・ハーン: 「I've moved on to other things. It's in good hands with Gavin and everyone.」 | `plan99.net` |
 | 2011 年 4 月 26 日 | サトシ → ギャビン・アンドレセン: 「謎の影の人物として語らないでほしい」 と要請、CAlert キーとブロードキャストコード (ネットワーク非常停止権限 — サトシが最後まで保持していた技術的権限) を譲渡。 | ギャビン・アンドレセンの後年公開 ([CoinMarketCap](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
 | 2014 年 3 月 6 日 | サトシ P2P Foundation アカウントから「I am not Dorian Nakamoto」 投稿。本人かアカウント侵害かの真偽は議論されている。 | [P2P Foundation スレッド](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source) |
 
-7 ヶ月の経過は構造的に特異である: 2010 年 9 月にギャビン・アンドレセン宛私信で「他のプロジェクトに取り組んでいる」 という退場シグナルが出され、コード管理権限の正式譲渡そのものは続く数か月のあいだに段階的に進む (公開記録上完了するのは 12 月 12 日)。同じ 12 月 12 日に日常的な技術スレッドのなかで公開向け予告が控えめに置かれ、12 月 15 日に最終コミット、そして 2011 年 4 月 26 日にネットワーク非常停止権限である CAlert キーが — 最後の梃子として — 解放される。劇的な別れの宣言はない。BitcoinTalk への公開告別投稿もない。このパターンはアーキテクチャ全体と整合している: 影響力と可視性は、それ自体がフォレンジック・イベントとなるような単一の瞬間に断ち切られるのではなく、段階的に縮減される。
+7 ヶ月の経過は構造的に特異である: 2010 年 9 月にギャビン・アンドレセン宛メールで「他のプロジェクトに取り組んでいる」 という退場シグナルが出され、コード管理権限の正式譲渡そのものは続く数か月のあいだに段階的に進む (公開記録上完了するのは 12 月 12 日)。同じ 12 月 12 日に日常的な技術スレッドのなかで公開向け予告が控えめに置かれ、12 月 15 日に最終コミット、そして 2011 年 4 月 26 日にネットワーク非常停止権限である CAlert キーが — 最後の梃子として — 解放される。劇的な別れの宣言はない。BitcoinTalk への公開告別投稿もない。このパターンはアーキテクチャ全体と整合している: 影響力と可視性は、それ自体がフォレンジック・イベントとなるような単一の瞬間に断ち切られるのではなく、段階的に縮減される。
 
 別の観察として: 同じ 4 月 26 日のメッセージのなかで、サトシは「謎の影の人物として語らないでほしい」 と明示的に要請した。これもアーキテクチャ全体と整合している。象徴的な焦点となること自体が、プロジェクトの設計 (「分散」) と構造的に矛盾し、身元仮説言説の温床となる — 本エントリが整理しているまさにその層である。
 

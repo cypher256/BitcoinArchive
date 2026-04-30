@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "アーカイブに収録されたサトシ・ナカモト著作の全イベント — 私信、メーリングリスト投稿、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリース — を、最古の既知メール（2008 年 8 月 20 日）から 2014 年の議論ありの P2P Foundation 投稿まで、D3 によるインタラクティブなタイムラインで表示する。チャネルを横方向のレーンとして配置、各ドットが 1 イベント、ホバーでタイトル表示、クリックでソースエントリへ。年代順に並べた表面が、サトシの活動の急増と衰退のリズムを 1 つの画面で可視化する。"
+description: "アーカイブに収録されたサトシ・ナカモト著作の全イベント — メール、メーリングリスト投稿、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリース — を、最古の既知メール（2008 年 8 月 20 日）から 2014 年の議論ありの P2P Foundation 投稿まで、D3 によるインタラクティブなタイムラインで表示する。チャネルを横方向のレーンとして配置、各ドットが 1 イベント、ホバーでタイトル表示、クリックでソースエントリへ。年代順に並べた表面が、サトシの活動の急増と衰退のリズムを 1 つの画面で可視化する。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -41,7 +41,7 @@ translationStatus: complete
 
 本エントリは、アーカイブに収録されたサトシ・ナカモト著作の全イベントを年代順に並べた master index であり、D3 によるインタラクティブなタイムラインとして提示する。
 
-**収録範囲:** サトシが著者として記録されているアーカイブエントリすべて — 私信、メーリングリスト投稿（cryptography、bitcoin-list、p2p-research）、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリースを含む。サトシについて第三者が書いたものは含まない。
+**収録範囲:** サトシが著者として記録されているアーカイブエントリすべて — メール、メーリングリスト投稿（cryptography、bitcoin-list、p2p-research）、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリースを含む。サトシについて第三者が書いたものは含まない。
 
 **チャートの読み方:** 各ドットは 1 イベント。横軸は時間（2008 年 8 月から 2014 年初頭）。縦のレーンが通信チャネル。任意のドットにホバーするとタイトルと日付が表示され、クリックでソースエントリが開く。レーンごとのドット密度はサトシがその時々にどこへ注意を向けていたかを示し、ギャップは沈黙を示す。
 
@@ -51,6 +51,6 @@ translationStatus: complete
 - 2009 年後半から 2010 年にかけての BitcoinTalk 活動の爆発 — 記録上のサトシの生涯で最も密度の高い期間
 - 2010 年 3 〜 5 月の 75 日間の SourceForge SVN 空白（別途 [ソースコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) で扱う）
 - 2011 年初頭の急速な衰退、2011 年 4 月のマイク・ハーンとギャビン・アンドレセン宛の別れの言葉で終了
-- 2014 年の議論ありの単一の P2P Foundation 投稿（ドリアン・ナカモトへの反論）— 他のすべてから 3 年離れて単独で立つ。ミシェル・バウエンスは [2025 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/) でその時期サトシから直接メールが届き、Newsweek が特定した人物ではないと否定したと回想している — その私信はアーカイブに収録されていない（公開された写しが存在しない）が、孤立した 2014 年のドットに欠けていた文脈を補完する
+- 2014 年の議論ありの単一の P2P Foundation 投稿（ドリアン・ナカモトへの反論）— 他のすべてから 3 年離れて単独で立つ。ミシェル・バウエンスは [2025 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/) でその時期サトシから直接メールが届き、Newsweek が特定した人物ではないと否定したと回想している — そのメールはアーカイブに収録されていない（公開された写しが存在しない）が、孤立した 2014 年のドットに欠けていた文脈を補完する
 
 このコーパスにおいて *サトシが自分について何を語ったか* の編者による読みについては、[自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/) を参照。

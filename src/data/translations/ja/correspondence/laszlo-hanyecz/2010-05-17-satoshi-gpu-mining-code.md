@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
-    note: "Cointelegraphおよびその他のメディアとのインタビューにおけるラズロ・ハニエツの公開発言に基づく。完全なプライベートメールは公開されていないが、ハニエツは複数のインタビューでこれらの詳細を共有している"
+    note: "Cointelegraphおよびその他のメディアとのインタビューにおけるラズロ・ハニエツの公開発言に基づく。完全なメールは公開されていないが、ハニエツは複数のインタビューでこれらの詳細を共有している"
   - name: "InsideBitcoins - Laszlo Hanyecz Claims Satoshi Invented GPU Mining"
     url: "https://insidebitcoins.com/news/laszlo-hanyecs-claims-satoshi-invented-gpu-mining-to-prevent-51-attacks"
 relatedEntries:

@@ -48,12 +48,12 @@ translationStatus: complete
 
 この公式告知は、リーダーシップ移行の対外的な流れの締めくくりに当たる。時系列:
 
-- **2010 年 12 月 3 日**: サトシは [マルティ・マルミ宛の私信](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦 — 「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」
+- **2010 年 12 月 3 日**: サトシは [マルティ・マルミ宛のメール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦 — 「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」
 - **2010 年 12 月 12 日**: SVN アクセスの引き継ぎ。サトシの [BitcoinTalk 最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) は「バトンを渡す予定だ」で締めくくられる
 - **2010 年 12 月 15 日**: 最後のソースコミット（v0.3.19）
 - **2010 年 12 月 19 日**: ギャビンの公的承諾（本エントリー）と GitHub リポジトリ作成
 
-サトシは [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) との[私信](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。私的な側は 4 か月後の 2011 年 4 月 26 日に [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
+サトシは [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) との[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。私的な側は 4 か月後の 2011 年 4 月 26 日に [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
 
 **リードメンテナーの地位はどう確立されたか（編集的な読解）：**
 
