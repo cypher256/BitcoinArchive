@@ -154,9 +154,11 @@ export const tagTranslations: Record<string, string> = {
   'interview': 'インタビュー',
   'inventory': 'インベントリ',
   'investment': '投資',
+  'issue': 'イシュー',
 
   // K-L
   'jeff-garzik': 'ジェフ・ガージック',
+  'kaminsky-audit': 'カミンスキーによる検証',
   'keys': '鍵',
   'last-post': '最後の投稿',
   'lawsuit': '訴訟',
@@ -165,15 +167,18 @@ export const tagTranslations: Record<string, string> = {
   'lesswrong': 'LessWrong',
   'libertarian': 'リバタリアン',
   'liberty': '自由',
+  'locktime': 'ロックタイム',
   'longest-chain': '最長チェーン',
   'lost-coins': '消失コイン',
 
   // M
   'mainstream': '主流',
   'mainstream-media': '主流メディア',
+  'master-index': '総索引',
   'media': 'メディア',
   'media-attention': 'メディア注目',
   'memoir': '回顧録',
+  'memorial': '追悼',
   'mining': 'マイニング',
   'mining-difficulty': 'マイニング難易度',
   'mining-migration': 'マイニング移転',
@@ -214,6 +219,7 @@ export const tagTranslations: Record<string, string> = {
   'precursor': '先駆',
   'presentation': 'プレゼンテーション',
   'price-discovery': '価格発見',
+  'primary-source-inventory': '一次資料目録',
   'privacy': 'プライバシー',
   'project-management': 'プロジェクト管理',
   'project-registration': 'プロジェクト登録',
@@ -235,6 +241,7 @@ export const tagTranslations: Record<string, string> = {
 
   // S
   'safety': '安全性',
+  'satoshi-anonymity': 'サトシの匿名性',
   'satoshi-identity': 'サトシの正体',
   'satoshi-fortune': 'サトシの資産',
   'satoshi-holdings': 'サトシの保有量',
@@ -244,6 +251,7 @@ export const tagTranslations: Record<string, string> = {
   'script': 'スクリプト',
   'security': 'セキュリティ',
   'security-breach': 'セキュリティ侵害',
+  'self-statements': '自己言及',
   'smart-contracts': 'スマートコントラクト',
   'soft-fork': 'ソフトフォーク',
   'software': 'ソフトウェア',
@@ -261,6 +269,7 @@ export const tagTranslations: Record<string, string> = {
   'technical': '技術的',
   'technology-progress': '技術的進歩',
   'timezone-mystery': 'タイムゾーンの謎',
+  'tooling': '開発ツール',
   'transaction-fees': 'トランザクション手数料',
   'transaction-finality': 'トランザクション確定性',
   'transactions': 'トランザクション',
@@ -277,8 +286,10 @@ export const tagTranslations: Record<string, string> = {
   'vending': '自動販売',
   'verification': '検証',
   'version-update': 'バージョン更新',
+  'visualization': '可視化',
 
   // W-Z
+  'warez-scene': 'ウェアーズ・シーン',
   'website': 'ウェブサイト',
   'whitepaper': 'ホワイトペーパー',
   'zero-confirmation': 'ゼロ確認',
@@ -303,6 +314,7 @@ export const tagTranslations: Record<string, string> = {
   'analysis': '分析',
   'android': 'Android',
   'api': 'API',
+  'asymmetry': '非対称性',
   'attack-classification': '攻撃分類',
   'attribution': '帰属',
   'b-money': 'b-money',
