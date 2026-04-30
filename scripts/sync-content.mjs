@@ -26,7 +26,7 @@
  * the relatedEntries-cap reform.
  *
  * ============================================================
- *   WHY NOT JUST ONE PASS, OR WHY NOT GREP IT OUT?
+ *   WHY TWO PASSES AND NOT JUST ONE WITH A GREP FILTER?
  * ============================================================
  *
  * Running `astro sync` once and accepting the noise is unacceptable
@@ -34,14 +34,19 @@
  * and the transient noise look identical to a casual reader. CI logs
  * become hard to read; reviewers waste time chasing phantom failures.
  *
- * Running once and grepping out `Duplicate id` lines is brittle — it
- * would silently swallow a *real* future duplicate. We must not lose
- * that signal.
+ * Running once with a grep filter on stderr is brittle: a *real*
+ * future duplicate would also be filtered out and silently swallowed.
+ * That signal must not be lost.
  *
- * Running `astro sync` twice is the only option that (a) produces
- * clean output, (b) preserves any real issue Astro flags, and (c)
- * costs essentially nothing because the second pass hits a warm cache
- * (~1 second).
+ * The two-pass design solves both: the first pass is the warm-up and
+ * we filter its stderr (the transient duplicate-id warnings only —
+ * any other stderr line is passed through, so real errors on the
+ * first pass are still visible). The second pass is the canonical
+ * pass and runs with `stdio: 'inherit'` — no filtering. If a real
+ * duplicate id appears, it will surface on the second pass and reach
+ * the user.
+ *
+ * Cost is essentially zero: the second pass hits a warm cache (~1s).
  *
  * ============================================================
  *   WHAT ABOUT REAL DUPLICATE IDS?
@@ -71,7 +76,48 @@
 
 import { spawnSync } from 'node:child_process';
 
-function runSync(label) {
+/**
+ * Lines we recognize as the transient cross-collection duplicate-id
+ * warning from Astro v5's glob-loader. Anything else is passed through
+ * (so real errors on the first pass are still visible).
+ */
+const TRANSIENT_PATTERNS = [
+  /\[WARN\]\s+\[glob-loader\]\s+Duplicate id\b/,
+  /Later items with the same id will overwrite earlier ones/,
+];
+
+function isTransientLine(line) {
+  return TRANSIENT_PATTERNS.some((re) => re.test(line));
+}
+
+function runSync(label, { suppressTransient }) {
+  if (suppressTransient) {
+    // Pipe both streams so we can filter the duplicate-id warnings out
+    // of the first pass. stdout (sync progress) is discarded entirely
+    // since the second pass will print its own canonical progress.
+    const result = spawnSync('npx', ['astro', 'sync'], {
+      encoding: 'utf8',
+      shell: false,
+    });
+    const stderr = (result.stderr ?? '')
+      .split('\n')
+      .filter((line) => line.length > 0 && !isTransientLine(line))
+      .join('\n');
+    if (stderr.trim().length > 0) {
+      process.stderr.write(stderr + '\n');
+    }
+    if (result.status !== 0) {
+      console.error(`astro sync (${label}) failed with exit code ${result.status}`);
+      // Fall back to printing whatever stdout we captured, so the user
+      // sees the failure context even though we suppressed transient noise.
+      if (result.stdout) process.stdout.write(result.stdout);
+      process.exit(result.status);
+    }
+    return;
+  }
+
+  // Canonical pass: stream the output directly so the user sees the
+  // real `[content] Synced content` / `[types] Generated` lines.
   const result = spawnSync('npx', ['astro', 'sync'], {
     stdio: 'inherit',
     shell: false,
@@ -82,11 +128,12 @@ function runSync(label) {
   }
 }
 
-// First pass: warms the .astro/ cache. Transient cross-collection
-// duplicate-id warnings from the glob-loader may appear here; they are
-// not real duplicates (see header comment).
-runSync('first pass — cache warm-up');
+// First pass: warms the .astro/ cache. Suppresses the transient
+// cross-collection duplicate-id warnings from the glob-loader (see
+// header comment for why those are not real duplicates). Real errors
+// on the first pass are still printed.
+runSync('first pass — cache warm-up', { suppressTransient: true });
 
 // Second pass: produces the canonical output. Any warnings here would
 // indicate a real issue.
-runSync('second pass — canonical');
+runSync('second pass — canonical', { suppressTransient: false });
