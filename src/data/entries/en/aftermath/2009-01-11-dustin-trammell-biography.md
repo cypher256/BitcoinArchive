@@ -33,6 +33,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-12-first-bitcoin-transaction
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2009-01-10-satoshi-launch-environment
 ---
 
 Dustin D. Trammell is an information security researcher based in Austin, Texas. He has worked in the cybersecurity industry and is known in the infosec community for his research on vulnerabilities and exploit development. He was among the very first people to download and run Bitcoin after its public release.

@@ -29,6 +29,10 @@ relatedEntries:
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-cypherpunk-independent-arrival
 ---
 
 Len Sassaman (1980 – July 3, 2011) was an American cryptographer, cypherpunk, and privacy researcher. He is documented in this archive primarily because of two posthumous Bitcoin-related events: [Dan Kaminsky's blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) embedded shortly after his death, and the later [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) that has connected his name to Satoshi Nakamoto in public discourse since 2013.

@@ -32,6 +32,10 @@ secondarySources:
 relatedEntries:
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 ---
 
 Nick Szabo is a computer scientist, legal scholar, and cryptographer known for his pioneering work on digital currency and smart contracts. His real identity and background remain largely private.

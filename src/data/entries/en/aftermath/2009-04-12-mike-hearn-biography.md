@@ -37,6 +37,8 @@ relatedEntries:
   - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2017-08-11-mike-hearn-publishes-emails
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-10-31-satoshi-anonymity-architecture
 ---
 
 Mike Hearn is a software engineer who worked at Google on projects including Google Maps, Google Earth, and Gmail's anti-spam systems. He became one of the earliest contributors to Bitcoin after reading the [white paper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and contacting [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) directly.

@@ -39,6 +39,9 @@ relatedEntries:
   - aftermath/2024-02-21-copa-trial-malmi-testimony
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2009-10-05-newlibertystandard-biography
+  - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2008-08-20-satoshi-self-statements
 ---
 
 Martti Malmi (born 1988, Helsinki, Finland) is a software developer who became one of the earliest and most significant contributors to Bitcoin. He studied computer science at Helsinki University of Technology (now Aalto University).

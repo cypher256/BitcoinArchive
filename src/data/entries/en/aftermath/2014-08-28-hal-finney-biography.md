@@ -49,6 +49,11 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2009-01-10-satoshi-launch-environment
 ---
 
 Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979.
