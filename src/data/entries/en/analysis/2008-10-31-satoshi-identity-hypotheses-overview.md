@@ -240,7 +240,7 @@ See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis
 
 #### Paul Le Roux
 
-*[Context: This archive does not yet hold dedicated Le Roux entries (biography, E4M announcement, criminal-case documents, or Mastermind references). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
+*[Context: This archive does not hold dedicated Le Roux entries (biography, E4M announcement, criminal-case documents, or Mastermind references). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
 
 **Background.** South African / Zimbabwean ex-encryption-software developer (creator of *E4M* open-source disk encryption in 1999, later forked into TrueCrypt). Transitioned around 2002 to running an international criminal enterprise (online pharmacies, weapons trafficking, methamphetamine production). Arrested by US authorities in September 2012; serving a long federal prison sentence per public reporting.
 
@@ -267,4 +267,4 @@ See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis
 - Profile-comparison labels (🟢, 🔴, 🟡) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
-- For full treatment of the Sassaman, Kaneko, and Todd hypotheses, see the individual entries. Other candidates do not yet have dedicated hypothesis entries in this archive.
+- For full treatment of the Sassaman, Kaneko, and Todd hypotheses, see the individual entries. Other candidates do not have dedicated hypothesis entries in this archive.

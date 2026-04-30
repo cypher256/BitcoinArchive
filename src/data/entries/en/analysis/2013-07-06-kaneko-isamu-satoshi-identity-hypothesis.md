@@ -40,7 +40,7 @@ This entry documents a hypothesis that exists primarily in Japanese-language dis
 
 ## 1. Who Kaneko was
 
-For readers outside Japan, brief background (per [Kaneko's Wikipedia entry](https://en.wikipedia.org/wiki/Isamu_Kaneko) and the [Winny Wikipedia entry](https://en.wikipedia.org/wiki/Winny); this archive does not yet hold dedicated entries on Kaneko, Winny, or the criminal-case court rulings):
+For readers outside Japan, brief background (per [Kaneko's Wikipedia entry](https://en.wikipedia.org/wiki/Isamu_Kaneko) and the [Winny Wikipedia entry](https://en.wikipedia.org/wiki/Winny); this archive does not hold a dedicated biography of Kaneko, a dedicated entry on Winny itself, or dedicated entries on the criminal-case court rulings — this hypothesis entry covers the hypothesis only and is not a substitute for those):
 
 Isamu Kaneko (金子 勇, 1970–2013) was a Japanese researcher and software developer. He served as a research assistant at the University of Tokyo's Graduate School of Information Science and Technology and was the developer of **Winny**, a peer-to-peer file-sharing system released on the 2channel forum in May 2002. Winny used a routing scheme designed for plausible deniability of who originated each piece of content, and at peak the network had on the order of millions of users in Japan.
 
