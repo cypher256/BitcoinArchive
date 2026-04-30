@@ -72,6 +72,6 @@ translationStatus: complete
 2009年1月9日、フィニーはリリース当日に[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外でビットコインノードを稼働させた最初の人物となった。ブロック70付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック170でサトシから10 BTCを受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
 
 **ALSと最後の年月：**
-2009年8月、フィニーは筋萎縮性側索硬化症（ALS）と診断された。進行する麻痺にもかかわらず、ビットコインのコード作成を続けた — 最終的にはアイトラッキングソフトウェアを使用してコミュニケーションとプログラミングを行った。2011年初頭にPGP Corporation（Symantec）を退職。2013年3月19日、BitcoinTalkに[「Bitcoin and Me」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿し、ビットコイン最初のユーザーとしての経験を記した。
+2009年8月、フィニーは筋萎縮性側索硬化症（ALS）と診断された。進行する麻痺にもかかわらず、ビットコインのコード作成を続けた — 最終的にはアイトラッキングソフトウェアを使用してコミュニケーションとプログラミングを行った。2011年初頭にPGP社（シマンテック）を退職。2013年3月19日、BitcoinTalkに[「Bitcoin and Me」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿し、ビットコイン最初のユーザーとしての経験を記した。
 
-ハル・フィニーは[2014年8月28日](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)午前8時50分、Arizona州Scottsdaleで死去。Alcor Life Extension Foundationにより128番目の患者（会員A-1436）として冷凍保存された。妻[フラン](/BitcoinArchive/ja/participants/fran-finney/)、息子ジェイソン、娘エリンが遺された。
+ハル・フィニーは[2014年8月28日](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)午前8時50分、アリゾナ州スコッツデールで死去。アルコー延命財団により128番目の患者（会員A-1436）として冷凍保存された。妻[フラン](/BitcoinArchive/ja/participants/fran-finney/)、息子ジェイソン、娘エリンが遺された。
