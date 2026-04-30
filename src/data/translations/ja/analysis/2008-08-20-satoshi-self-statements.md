@@ -31,7 +31,18 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-08-20-satoshi-activity-timeline
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
+  - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2009-04-12-mike-hearn-biography
+  - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper

@@ -26,6 +26,8 @@ relatedEntries:
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 translationStatus: complete
 ---
 

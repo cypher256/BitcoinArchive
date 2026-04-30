@@ -34,7 +34,9 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
 relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
   - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify

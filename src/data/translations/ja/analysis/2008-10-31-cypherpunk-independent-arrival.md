@@ -37,8 +37,15 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - aftermath/2005-12-29-nick-szabo-biography
+  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
@@ -56,7 +63,7 @@ translationStatus: complete
 
 対になる別エントリ [「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) は、仮名そのものを 1980〜90 年代のサイバーパンク／テクノオリエンタリズム的な記号空間の内側で読む別軸の分析である。本エントリは、サトシがシステムを設計した**知的位置**そのものに焦点を絞る。
 
-本エントリは [ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) および [リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/) とも対をなす。それらが Block 0 という対象物・リリース週という出来事を扱うのに対し、本エントリはサトシがシステムを設計した知的位置を扱う。
+本エントリは [ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) および [リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/) と関連する。それらが Block 0 という対象物・リリース週という出来事を扱うのに対し、本エントリはサトシがシステムを設計した知的位置を扱う。
 
 ## 1. サイファーパンク：歴史・核心・技術系譜
 

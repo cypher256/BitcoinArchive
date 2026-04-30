@@ -29,6 +29,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+  - analysis/2009-01-10-satoshi-launch-environment
 translationStatus: complete
 ---
 

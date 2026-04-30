@@ -33,6 +33,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-12-first-bitcoin-transaction
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2009-01-10-satoshi-launch-environment
 translationStatus: complete
 ---
 

@@ -32,6 +32,7 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Bitcoin_0.1"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
@@ -40,6 +41,8 @@ relatedEntries:
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2008-08-20-satoshi-activity-timeline
+  - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
 inlineLinkKeywords:
   - ".rar パッケージング"
   - "Warez シーン慣習との重なり"

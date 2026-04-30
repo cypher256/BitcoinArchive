@@ -44,6 +44,9 @@ relatedEntries:
   - forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
   - bip/2015-11-03-bip-0125
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-satoshi-anonymity-architecture
 translationStatus: complete
 ---
 

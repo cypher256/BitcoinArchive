@@ -32,6 +32,8 @@ secondarySources:
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2009-01-09-satoshi-code-analysis
   - aftermath/2013-04-17-sergio-demian-lerner-biography
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming

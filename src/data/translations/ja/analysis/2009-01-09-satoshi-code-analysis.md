@@ -25,6 +25,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
@@ -34,6 +35,11 @@ relatedEntries:
   - "correspondence/martti-malmi/2010-05-16-status-update-192"
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
   - "analysis/2008-08-20-satoshi-activity-timeline"
+  - "aftermath/2009-05-01-martti-malmi-biography"
+  - "aftermath/2009-08-30-bitcoin-svn-repository-committers"
+  - "aftermath/2010-06-11-gavin-andresen-biography"
+  - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
+  - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
 inlineLinkKeywords:
   - "サトシのコーディングスタイル"
   - "コーディングスタイルの指紋"

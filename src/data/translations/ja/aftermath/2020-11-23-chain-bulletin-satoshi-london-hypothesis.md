@@ -27,6 +27,8 @@ secondarySources:
 relatedEntries:
   - sourceforge/2009-01-03-genesis-block
   - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2009-01-09-satoshi-code-analysis
 translationStatus: complete
 ---
 

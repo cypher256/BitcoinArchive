@@ -38,6 +38,7 @@ secondarySources:
     url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "sourceforge/2009-01-03-genesis-block"
   - "analysis/2009-01-09-satoshi-code-analysis"
@@ -48,6 +49,7 @@ relatedEntries:
   - "aftermath/2022-10-06-serhack-alternative-genesis-block"
   - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
   - "analysis/2008-08-20-satoshi-activity-timeline"
+  - "aftermath/2016-05-02-craig-wright-biography"
 inlineLinkKeywords:
   - "5日間の空白"
   - "5 日間の空白"

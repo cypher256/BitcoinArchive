@@ -26,7 +26,29 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - aftermath/2005-12-29-nick-szabo-biography
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2009-04-12-mike-hearn-biography
+  - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
+  - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
+  - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+  - aftermath/2024-02-21-adam-back-retrospective-testimony
+  - aftermath/2024-03-14-copa-v-wright-ruling
+  - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2009-01-03-genesis-block-hardcode-analysis
@@ -48,7 +70,7 @@ translationStatus: complete
 
 本エントリは記述的である。下に整理する 6 層が特定の意図によって組まれた、と主張するものではない。「サトシ・ナカモト」 という仮名が、設計期間 (2007 年中頃〜2008 年 8 月)・公の活動期間 (2008 年 10 月〜2010 年 12 月)・段階的撤退 (2010 年 9 月〜2011 年 4 月) を通じて身元を特定されないでいる手段を、公開記録から観察可能な痕跡として 6 層に整理する。
 
-本エントリは [身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) と**対のエントリ**である。そちらは「サトシは誰か」 を問い、10 名の候補を公開記録上のサトシ像に対して比較する。本エントリは逆向きで、**いずれの候補も公開記録上のサトシ像を完全には満たさない理由**を、非特定化の手段を 6 層に組織化することで示す。
+本エントリは [身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) および [識別の非対称性](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) と互いに補完する: 総覧は「サトシは誰か」 を問い候補を比較する。識別の非対称性は「これだけの追跡試行と材料があるのになぜ不明状態が続くのか」 を扱う。本エントリは「サトシはどう匿名であり続けたのか」 — に対して、非特定化の手段を 6 層に組織化することで答える: **いずれの候補も公開記録上のサトシ像を完全には満たさない理由**を構造的に示す。
 
 本エントリは最も有力なサトシ候補を名指さず、新しい候補を提案せず、特定の層が意図的に選ばれたとも主張しない。6 層を意図とは独立に観察可能なものとして扱う。
 
@@ -166,7 +188,7 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 - サトシが明示的に引用した候補 (アダム・バック、ウェイ・ダイ) はサイファーパンク参加と BTC 系譜という背景の層 (層 1・2 の背景) で整合するが、彼ら自身とサトシとのリリース前のやりとりが決定的な反証になる (同一著者の足場ではなく、第三者受信としての挙動)。
 - 2007〜2008 年に公開活動が記録されている能力適合候補 (ハル・フィニー、ニック・サボ) は段階的撤退層 (時間整合) と、ウェイ・ダイの 2014 年の指摘 (「設計期間中にサイファーパンクとして公的に活動していた人物ではないと思う」) が示す設計期間不可視性の期待で整合しない。
 - 自己主張型候補 (クレイグ・ライト) と名前一致候補 (ドリアン・ナカモト) は複数層で同時に整合しない。
-- 能力のみ適合の候補 (ピーター・トッド、金子勇、ポール・ル・ルー) は 1〜2 層 (実装能力、日本人名一致) で整合し、他で整合しない。
+- 能力のみ適合の候補 (ピーター・トッド、金子勇、ポール・ルルー) は 1〜2 層 (実装能力、日本人名一致) で整合し、他で整合しない。
 
 各場合、整合しない層は公開記録から観察可能である。構造的観察は、いずれの候補も 6 層を同時には満たさない、ということ。本エントリの枠組みでは、層構造はこの結果の**原因**ではない — しかし、原因が公開記録に現れる**形式**である。
 

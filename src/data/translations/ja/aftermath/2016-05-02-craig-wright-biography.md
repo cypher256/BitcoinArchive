@@ -33,6 +33,10 @@ relatedEntries:
   - "aftermath/2024-03-14-copa-v-wright-ruling"
   - "aftermath/2024-02-21-copa-trial-malmi-testimony"
   - "aftermath/2024-02-22-mike-hearn-copa-trial-testimony"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2009-01-03-genesis-block-hardcode-analysis"
 translationStatus: complete
 ---
 

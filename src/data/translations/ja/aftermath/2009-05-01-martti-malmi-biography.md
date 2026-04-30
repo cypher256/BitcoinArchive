@@ -39,11 +39,14 @@ relatedEntries:
   - aftermath/2024-02-21-copa-trial-malmi-testimony
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2009-10-05-newlibertystandard-biography
+  - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 <!-- tone-skip -->
 
-マルッティ・マルミ（1988年、フィンランド・ヘルシンキ生まれ）は、ビットコインの最も初期かつ重要な貢献者の一人となったソフトウェア開発者である。Helsinki University of Technology（現Aalto University）でコンピューターサイエンスを学んだ。
+マルッティ・マルミ（1988年、フィンランド・ヘルシンキ生まれ）は、ビットコインの最も初期かつ重要な貢献者の一人となったソフトウェア開発者である。ヘルシンキ工科大学（現アールト大学）でコンピューターサイエンスを学んだ。
 
 **サトシとの最初の接触：**
 2009年5月、マルミはビットコインを発見し、プロジェクトへの協力を申し出て[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に連絡を取った。彼らのやり取りは約260通のメールに及び、サトシと単一の個人との間で知られる最大量の通信となった。これらのメールは2024年2月の[COPA対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で証拠として提出された。

@@ -35,6 +35,10 @@ relatedEntries:
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
   - "aftermath/2024-02-21-adam-back-retrospective-testimony"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
+  - "analysis/2008-08-20-satoshi-self-statements"
 translationStatus: complete
 ---
 

@@ -32,6 +32,10 @@ secondarySources:
 relatedEntries:
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
 translationStatus: complete
 ---
 

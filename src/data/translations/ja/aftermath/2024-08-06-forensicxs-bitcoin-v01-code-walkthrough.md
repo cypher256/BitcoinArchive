@@ -23,7 +23,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
   - "analysis/2009-01-09-satoshi-code-analysis"
+  - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
 translationStatus: complete
 ---

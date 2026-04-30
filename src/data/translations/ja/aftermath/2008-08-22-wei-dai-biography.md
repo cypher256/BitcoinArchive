@@ -38,6 +38,10 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-cypherpunk-independent-arrival"
+  - "analysis/2008-08-20-satoshi-self-statements"
 translationStatus: complete
 ---
 <!-- tone-skip -->

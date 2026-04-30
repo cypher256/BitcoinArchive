@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
     note: "ハルの妻フランがレース当日の写真を証拠として最初に見せた、Forbesの先行記事。グリーンバーグの記事はロップの分析より約9年前に発表されており、レース日アリバイの最初の公開ドキュメント。"
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2013-03-19-bitcoin-and-me-hal-finney"
   - "aftermath/2014-08-28-hal-finney-biography"
   - "aftermath/2009-01-12-first-bitcoin-transaction"

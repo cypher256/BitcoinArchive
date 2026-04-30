@@ -31,6 +31,9 @@ secondarySources:
 relatedEntries:
   - "aftermath/2008-08-20-adam-back-biography"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
 translationStatus: complete
 ---
 

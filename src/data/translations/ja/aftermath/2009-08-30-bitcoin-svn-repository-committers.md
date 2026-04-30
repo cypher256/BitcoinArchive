@@ -38,6 +38,7 @@ relatedEntries:
   - aftermath/2010-05-22-bitcoin-pizza-day
   - correspondence/martti-malmi/2010-12-03-handover-to-gavin
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2009-01-09-satoshi-code-analysis
 translationStatus: complete
 ---
 

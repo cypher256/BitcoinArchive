@@ -37,6 +37,7 @@ relatedEntries:
   - aftermath/2014-08-28-fran-finney-biography
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
   - analysis/2009-01-10-satoshi-launch-environment
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 

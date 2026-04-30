@@ -38,12 +38,34 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2008-08-20-satoshi-activity-timeline
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2009-01-10-satoshi-launch-environment
+  - aftermath/2005-12-29-nick-szabo-biography
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2014-03-07-satoshi-p2p-foundation-return
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+  - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
+  - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
-  - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2017-09-04-china-ico-ban
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
@@ -110,7 +132,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
   - ハル・フィニー宛 4 通
   - ウェイ・ダイ宛 3 通 (Gwern アーカイブ)
   - ダスティン・トランメル、ギャビン・アンドレセン、ラズロ・ハニエツ、ニコラス・ボーム、その他への小規模な通信
-- **Bitcoin v0.1 コードベースの 31,794 行の C++**、加えて `s_nakamoto` に帰属可能な SVN 160 ユニークコミットおよび `Satoshi Nakamoto <satoshin@gmx.com>` 署名の git 34 コミット。詳細は [コード分析エントリ](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) 参照。
+- **Bitcoin v0.1 コードベース (19,901 行の C++、v0.3.19 までで 31,909 行に成長)**、加えて `s_nakamoto` に帰属可能な SVN 160 ユニークコミットおよび `Satoshi Nakamoto <satoshin@gmx.com>` 署名の git 34 コミット。詳細は [コード分析エントリ](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) 参照。
 - **ホワイトペーパー PDF メタデータ** に記録されている作成タイムスタンプ、タイムゾーンオフセット (2008 年 10 月の `-07:00`、2009 年 3 月の `-06:00`)、`Language: en-GB`。文書とメールのやりとりには 3 つの匿名メールアドレス (`satoshi@anonymousspeech.com`、`satoshi@vistomail.com`、`satoshin@gmx.com`) が紐付いている。
 - **ジェネシスブロックのパラメーター** がソースコード内に定数としてハードコードされている — タイムスタンプ、ナンス、ハッシュ、coinbase メッセージ — 2009 年 1 月以降、すべてのノードで原文どおり保存されている。詳細は [ジェネシスブロック ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) 参照。
 
@@ -120,7 +142,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 
 §1 の試行と §2 の材料を踏まえた現状は次のとおり:
 
-- [身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) は 10 名の候補を並列で保持している。確定された候補はない。
+- [身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) は固有名候補を並列で保持している。確定された候補はない。
 - 最有力のサイファーパンク被引用候補 (アダム・バック、ウェイ・ダイ) は彼ら自身のリリース前のやりとり (第三者受信であって著者性ではない) によって除外され、自己否定もしている。
 - 最有力の能力適合候補 (ハル・フィニー、ニック・サボ) は、それぞれアリバイ (フィニーのレース当日) と自己否定によって除外されている。
 - 法廷で検証された唯一の自己主張 (ライト) は 4 つの認定で否定された (§1.2)。
