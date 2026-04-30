@@ -2,7 +2,7 @@
 /**
  * check-ja-glossary.mjs — Japanese terminology consistency checker
  *
- * Enforces the canonical JA forms listed in STYLE_GUIDE_JA.md "用語集" section.
+ * Enforces the canonical JA forms listed in STYLE_GUIDE_JA.md § II.3 "Terminology Glossary".
  * Detects deprecated/alternative forms of the same term and fails the build
  * so translations stay consistent across all entries.
  *
@@ -143,10 +143,11 @@ if (IGNORE_FILE && existsSync(IGNORE_FILE)) {
 }
 
 // Strip out contexts that are not Japanese body prose before running
-// glossary rules. Per STYLE_GUIDE_JA section 8, the following surfaces
-// are Category 4 (stays English): frontmatter, code blocks, inline
-// code spans, markdown link URLs, raw URLs. We blank them out with
-// spaces so line/column numbers stay aligned for error reporting.
+// glossary rules. Per STYLE_GUIDE_JA § I.2 (What Stays In English),
+// the following surfaces are Category 4 (stays English): frontmatter,
+// code blocks, inline code spans, markdown link URLs, raw URLs. We blank
+// them out with spaces so line/column numbers stay aligned for error
+// reporting.
 function maskNonProse(content) {
   const out = content.split('\n');
   let inFrontmatter = false;
@@ -272,5 +273,5 @@ for (const v of violations) {
   console.error(`    "${v.rule.deprecated}" → "${v.rule.canonical}"`);
   if (v.rule.reason) console.error(`    Reason: ${v.rule.reason}`);
 }
-console.error(`\nSee STYLE_GUIDE_JA.md "用語集" section.`);
+console.error(`\nSee STYLE_GUIDE_JA.md § II.3 "Terminology Glossary".`);
 process.exit(1);

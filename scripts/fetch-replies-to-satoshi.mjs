@@ -10,7 +10,7 @@
  * matching the post-Phase-3 quote normalization format. No legacy
  * `[Quote from:]` text is written to body.
  *
- * SAFETY GUARANTEES (per STYLE_GUIDE_JA "Existing File Preservation Guarantee"):
+ * SAFETY GUARANTEES (per STYLE_GUIDE_JA_OPS.md § 1 "Existing File Preservation Guarantee"):
  * - safeWrite() refuses to overwrite any existing file
  * - safeWrite() whitelists write paths by pattern
  * - --apply is opt-in; default is dry-run

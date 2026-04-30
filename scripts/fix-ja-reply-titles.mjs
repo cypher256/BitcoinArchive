@@ -9,7 +9,7 @@
  * - Only modifies the `title:` line in frontmatter
  * - Body text is never touched
  * - Dry-run by default; use --apply to write
- * - SHA-1 verification recommended (see STYLE_GUIDE_JA.md)
+ * - SHA-1 verification recommended (see STYLE_GUIDE_JA_OPS.md § 1)
  *
  * Usage:
  *   node scripts/fix-ja-reply-titles.mjs              # dry-run
