@@ -21,6 +21,7 @@ secondarySources:
   - name: "Wikipedia (English) — Satoshi Nakamoto"
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2014-08-28-hal-finney-biography

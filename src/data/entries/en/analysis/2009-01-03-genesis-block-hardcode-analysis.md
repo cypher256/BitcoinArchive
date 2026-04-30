@@ -12,7 +12,7 @@ participants:
     slug: "craig-wright"
 description: "Technical analysis of Bitcoin's genesis block from the v0.1 source code: the hardcode auto-construction mechanism, the five-day-gap reinterpreted as a timestamp artifact, a two-layer reading of authorship (epistemic vs ontological — distinguishing anonymization from un-ownership by design), the numerical PoW headroom of the genesis hash as a softer secondary observation, and the separable dimension of private-key possession."
 isSatoshi: false
-homeOrder: 4
+homeOrder: 5
 tags:
   - "genesis-block"
   - "source-code"
@@ -37,6 +37,7 @@ secondarySources:
   - name: "PLOS ONE (2021) — Strangely mined bitcoins"
     url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "sourceforge/2009-01-03-genesis-block"
   - "aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery"
   - "aftermath/2022-10-06-serhack-alternative-genesis-block"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "A descriptive reading of the 'Satoshi Nakamoto' pseudonym against the cyberpunk and techno-orientalist symbolic field of the 1980s-90s. The entry presents structural observations about the symbolic space the name occupies, not claims about authorial intent. A companion entry covers Satoshi's intellectual position relative to the cypherpunk movement."
 isSatoshi: false
-homeOrder: 2
+homeOrder: 3
 tags:
   - "cyberpunk"
   - "techno-orientalism"
@@ -21,6 +21,7 @@ secondarySources:
   - name: "David S. Roh, Betsy Huang, Greta A. Niu (eds.) — Techno-Orientalism: Imagining Asia in Speculative Fiction, History, and Media (Rutgers UP, 2015)"
     url: "https://www.rutgersuniversitypress.org/techno-orientalism/9780813570631"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-08-20-satoshi-activity-timeline
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
