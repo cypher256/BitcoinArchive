@@ -391,10 +391,10 @@ Use `speaker:` when one entry contains inline text by a different person
 | `target-based（目標ベース）` | どちらか一方（例: `ターゲットベース`） |
 | `well-defined` (本文散文) | `構造的に定まる` / `well-defined な` + 初出注釈 |
 | `PoW headroom` | `PoW ヘッドルーム`（`PoW` は略語カテゴリ 3 なので残す） |
-| `California州Coalingaに生まれ` | `カリフォルニア州コアリンガに生まれ` (米国の州名・市名はカタカナ) |
+| `California州Coalingaに生まれ` | `カリフォルニア州コアリンガに生まれ` (US state and city names use katakana) |
 | `Arizona州Scottsdaleで死去` | `アリゾナ州スコッツデールで死去` |
-| `Vancouver` / `Berlin` / `Las Vegas`（本文中） | `バンクーバー` / `ベルリン` / `ラスベガス`（地名はカタカナ） |
-| `California Institute of Technology` | `カリフォルニア工科大学`（短縮形 `Caltech` は固有略称として保持可） |
+| `Vancouver` / `Berlin` / `Las Vegas` (in body prose) | `バンクーバー` / `ベルリン` / `ラスベガス` (foreign place names use katakana) |
+| `California Institute of Technology` | `カリフォルニア工科大学` (the short form `Caltech` may be kept as a recognized proper-name abbreviation) |
 | `Helsinki University of Technology` | `ヘルシンキ工科大学` |
 | `Aalto University` | `アールト大学` |
 | `Georgia Institute of Technology` | `ジョージア工科大学` |
@@ -402,7 +402,7 @@ Use `speaker:` when one entry contains inline text by a different person
 | `Symantec` | `シマンテック` |
 | `Alcor Life Extension Foundation` | `アルコー延命財団` |
 | `Extropy Institute` | `エクストロピー研究所` |
-| `Block 70` / `Block 170`（本文中） | `ブロック 70` / `ブロック 170` |
+| `Block 70` / `Block 170` (in body prose) | `ブロック 70` / `ブロック 170` |
 
 上表は「個別ルール列挙」ではなく**上のフローチャート適用結果の例示**として読む。
 新語が出てきた時は列に追加せず、フローチャートで判定する。
