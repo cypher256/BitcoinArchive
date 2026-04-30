@@ -31,11 +31,16 @@ secondarySources:
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
   - analysis/2008-08-20-satoshi-activity-timeline
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2014-08-28-fran-finney-biography
+  - aftermath/2014-08-28-hal-finney-biography
 inlineLinkKeywords:
   - "from where I am"
   - "launch-period environment"

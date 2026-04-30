@@ -23,6 +23,7 @@ secondarySources:
     url: "https://mmalmi.github.io/satoshi/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
@@ -31,6 +32,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2014-03-07-satoshi-p2p-foundation-return
   - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
 inlineLinkKeywords:
   - "Satoshi activity timeline"

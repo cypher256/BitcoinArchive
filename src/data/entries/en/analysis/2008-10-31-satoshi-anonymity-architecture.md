@@ -26,7 +26,29 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - aftermath/2005-12-29-nick-szabo-biography
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2009-04-12-mike-hearn-biography
+  - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
+  - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
+  - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+  - aftermath/2024-02-21-adam-back-retrospective-testimony
+  - aftermath/2024-03-14-copa-v-wright-ruling
+  - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2009-01-03-genesis-block-hardcode-analysis
@@ -47,7 +69,7 @@ inlineLinkKeywords:
 
 This entry is descriptive. It does not claim that any specific intent organized the layers below; it organizes the observable traces left in the public record into a structural reading of how the pseudonym 'Satoshi Nakamoto' remained unidentified through the design window (mid-2007 through August 2008), the public phase (October 2008 through December 2010), and the staged withdrawal (September 2010 through April 2011).
 
-This entry is the **pair** to the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/). That entry asks "who is Satoshi" and compares ten named candidates against the documented public-record outline. This entry asks the inverse question — **why no candidate simultaneously satisfies the full outline** — by organizing the means of non-identification into six layers and noting that any single identity hypothesis must reconcile all of them at once.
+This entry complements the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the [identification asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/). The overview asks "who is Satoshi" and compares named candidates against the documented public-record outline. The asymmetry analysis asks "given so much surviving material and so many public attempts, why does the gap persist." This entry answers "how did Satoshi stay anonymous" — by organizing the means of non-identification into six layers and noting that **any single identity hypothesis must reconcile all of them at once**.
 
 This entry does not name the most likely Satoshi candidate, propose a new candidate, or argue that any specific layer was deliberately chosen. It treats the six layers as observable, regardless of intent.
 

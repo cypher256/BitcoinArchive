@@ -34,6 +34,8 @@ relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
 inlineLinkKeywords:
   - "Sassaman hypothesis"
   - "Sassaman = Satoshi"
@@ -106,7 +108,7 @@ That reading does not rule out Sassaman, but it does not select him either. It s
 
 The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies equally regardless of whether the person behind the pseudonym was Sassaman, someone else, or a group.
 
-For comparison with other named-candidate Satoshi-identity hypotheses (Finney, Szabo, Dorian, Wright, Kaneko), see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single candidate profile comparison and external-status notes for each candidate.
+For comparison with other named-candidate Satoshi-identity hypotheses, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single candidate profile comparison and external-status notes for each candidate.
 
 ## 5. Limits of this entry
 

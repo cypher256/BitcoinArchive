@@ -38,12 +38,34 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2008-08-20-satoshi-activity-timeline
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2009-01-10-satoshi-launch-environment
+  - aftermath/2005-12-29-nick-szabo-biography
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2014-03-07-satoshi-p2p-foundation-return
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+  - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
+  - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
-  - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2017-09-04-china-ico-ban
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
@@ -109,7 +131,7 @@ The body of public material attached to Satoshi Nakamoto is, by the standards of
   - 4 emails to Hal Finney
   - 3 emails to Wei Dai (Gwern archive)
   - Smaller batches to Dustin Trammell, Gavin Andresen, Laszlo Hanyecz, Nicholas Bohm, and others
-- **31,794 lines of C++** in the Bitcoin v0.1 codebase, plus 160 unique SVN commits attributable to `s_nakamoto` and 34 git commits signed `Satoshi Nakamoto <satoshin@gmx.com>`. Detailed in [the code analysis entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).
+- **Bitcoin's C++ codebase (19,901 lines at v0.1, growing to 31,909 lines by v0.3.19)**, plus 160 unique SVN commits attributable to `s_nakamoto` and 34 git commits signed `Satoshi Nakamoto <satoshin@gmx.com>`. Detailed in [the code analysis entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).
 - **Whitepaper PDF metadata** containing creation timestamps, time-zone offsets (`-07:00` in October 2008, `-06:00` in March 2009), and `Language: en-GB`. Three pseudonymous email addresses (`satoshi@anonymousspeech.com`, `satoshi@vistomail.com`, `satoshin@gmx.com`) are attached to the document and correspondence stream.
 - **Genesis-block parameters** hard-coded into the source as constants — timestamp, nonce, hash, coinbase message — preserved verbatim in every node since January 2009. Detailed in [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/).
 
@@ -119,7 +141,7 @@ The forensic surface is not the surface of an absent figure. Every category that
 
 After the attempts in §1 and against the material in §2, the public record's current state is:
 
-- The [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) holds ten named candidates in parallel; none has been ruled in.
+- The [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) holds named candidates in parallel; none has been ruled in.
 - The strongest cypherpunk-cited candidates (Adam Back, Wei Dai) are ruled out by their own pre-launch correspondence (third-party reception, not authorship), and have self-denied.
 - The strongest capability-fit candidates (Hal Finney, Nick Szabo) are ruled out by alibi (Finney's race-day) and by self-denial respectively.
 - The single court-tested self-claim (Wright) has been ruled against on four findings (§1.2).

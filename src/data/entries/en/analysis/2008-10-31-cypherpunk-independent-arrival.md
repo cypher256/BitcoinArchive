@@ -37,8 +37,15 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - aftermath/2005-12-29-nick-szabo-biography
+  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-08-20-adam-back-biography
+  - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
@@ -55,7 +62,7 @@ This entry assembles three converging observations from the public record and re
 
 A companion analysis, [The "Satoshi Nakamoto" pseudonym and AKIRA: a techno-orientalist reading](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/), addresses the *pseudonym* itself as a separate, descriptive reading against the cyberpunk / techno-orientalist symbolic field of the 1980s-90s. This entry stays focused on the *intellectual position* from which Satoshi designed the system.
 
-This entry is also companion to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) and the [launch-period environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/). Where those entries focus on Block 0 as object and the launch week as event, this one concerns the intellectual ground.
+This entry is also related to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) and the [launch-period environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/). Where those entries focus on Block 0 as object and the launch week as event, this one concerns the intellectual ground.
 
 ## 1. Cypherpunk: history, core, technical lineage
 
