@@ -2,6 +2,16 @@
 
 Internal editorial rules for the Japanese edition of Bitcoin Institute.
 
+> **Document language convention.** Rule prose in this file is written in
+> **English** — section headings, paragraph descriptions, parenthetical
+> notes, table column headers, flowchart labels, and any meta-explanation
+> of a rule. **Japanese text appears only as data**: example violations,
+> correct katakana / kanji forms, canonical mappings, and quoted source
+> material. When extending this file, never write a rule statement in
+> Japanese; only the words being illustrated as Japanese-style data may
+> appear in Japanese. This convention exists because the file is publicly
+> published and read by international contributors.
+
 ## Purpose
 
 This file defines how Japanese-language pages should handle names, titles,
