@@ -30,6 +30,7 @@ quotes:
     person: "Satoshi"
     personSlug: "satoshi-nakamoto"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange

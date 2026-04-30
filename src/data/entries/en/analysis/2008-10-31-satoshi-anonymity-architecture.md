@@ -33,6 +33,10 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
+  - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
 inlineLinkKeywords:
   - "anonymity architecture"
   - "Satoshi anonymity architecture"
@@ -73,7 +77,7 @@ The publication channels are similarly distributed:
 
 The pattern of multiple unrelated email providers, an anonymous-registration intermediary, and a distribution among five public channels (cryptography ML, SourceForge, BitcoinTalk, P2P Foundation, p2p-research) leaves no single channel through which a holistic identity profile could be assembled.
 
-**On Tor.** Tor use is widely asserted in secondary discussion of Satoshi's communication infrastructure but is not confirmed by primary statements from Satoshi. References to Tor in Bitcoin secondary literature are generally inferred from the operational requirements of an anonymous-email + anonymous-registration + multi-channel posting setup rather than from documented technical evidence. This entry treats Tor use as plausibly inferred but not directly verified.
+**On Tor.** Two separate questions need to be distinguished. (a) *Did Satoshi engage with Tor as a technical topic?* Yes — Satoshi participated in the BitcoinTalk "[TOR and I2P](/BitcoinArchive/entries/forum/bitcointalk/topic-22/2010-01-20-re-tor-and-i2p/)" thread (January 20, 2010 and [February 4, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-22/2010-02-04-re-tor-and-i2p/) replies), discussing `.onion` backend support, the Tor SOCKS port 9050, and Bitcoin's behavior under a Tor proxy in technical detail. Engagement with Tor as a topic is on the public record. (b) *Did Satoshi personally route his own communications through Tor?* This is widely asserted in secondary discussion of Satoshi's operational profile but is not directly confirmed by any primary statement from Satoshi about his own routing. The inference rests on the operational requirements of an anonymous-email + anonymous-registration + multi-channel posting setup, not on a documented self-statement. This entry treats personal-routing Tor use as plausibly inferred but not directly verified, while noting that Satoshi's technical familiarity with Tor is verifiable.
 
 ## 3. Linguistic and temporal traces (linguistic layer)
 

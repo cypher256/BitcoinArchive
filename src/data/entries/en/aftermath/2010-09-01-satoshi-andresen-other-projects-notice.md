@@ -28,6 +28,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
     note: "Andresen biography in this archive notes that 'by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key.'"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography
   - correspondence/martti-malmi/2010-12-03-handover-to-gavin
   - correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen

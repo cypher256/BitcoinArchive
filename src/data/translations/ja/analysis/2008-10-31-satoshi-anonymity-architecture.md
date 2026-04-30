@@ -33,6 +33,10 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
+  - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
+  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
 inlineLinkKeywords:
   - "匿名性のアーキテクチャ"
   - "サトシ匿名性のアーキテクチャ"
@@ -74,7 +78,7 @@ translationStatus: complete
 
 互いに無関係な複数のメールプロバイダー、匿名登録仲介、5 つのチャネルへの投稿の分散 (暗号学メーリングリスト・SourceForge・BitcoinTalk・P2P Foundation・p2p-research) — このパターンは、いずれか単一のチャネルから一貫した身元プロファイルを組み立てることを許さない構造になっている。
 
-**Tor について。** サトシの通信インフラに関する二次的な言説では Tor の利用が広く主張されているが、サトシ本人による一次資料での明言は確認されていない。Bitcoin 関連の二次文献における Tor への言及は、匿名メール + 匿名登録 + 複数チャネル投稿の運用要件からの推測であって、技術的証拠ではないものが大半である。本エントリでは Tor の利用を「妥当に推測されるが直接の確認は取れていない」 として扱う。
+**Tor について。** 2 つの別の問いを区別する必要がある。(a) *サトシは Tor を技術的話題として論じたか?* — はい。サトシは BitcoinTalk の「[TOR and I2P](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-22/2010-01-20-re-tor-and-i2p/)」 スレッドに参加し (2010 年 1 月 20 日と [2 月 4 日](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-22/2010-02-04-re-tor-and-i2p/) の返信)、`.onion` のバックエンドサポート、Tor SOCKS ポート 9050、Tor プロキシ経由での Bitcoin の挙動を技術的に詳しく論じている。Tor を話題として扱ったことは公開記録上確認できる。(b) *サトシ自身の通信を Tor 経由で送出していたか?* — これはサトシの運用プロファイルに関する二次的言説で広く主張されているが、サトシ自身の経路選択についてはサトシ本人による一次資料での明言は確認されていない。この推測は匿名メール + 匿名登録 + 複数チャネル投稿の運用要件に基づくものであって、自己言及によるものではない。本エントリでは個人通信の Tor 経由利用を「妥当に推測されるが直接の確認は取れていない」 として扱いつつ、サトシの Tor に対する技術的習熟は検証可能であることを併記する。
 
 ## 3. 言語的痕跡と時間的痕跡 (言語層)
 

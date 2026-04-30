@@ -41,6 +41,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - sourceforge/2009-01-03-genesis-block
   - sourceforge/2009-01-09-bitcoin-v01-released
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-cypherpunk-independent-arrival

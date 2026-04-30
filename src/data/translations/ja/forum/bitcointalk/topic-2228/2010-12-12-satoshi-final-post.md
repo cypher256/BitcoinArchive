@@ -21,6 +21,7 @@ secondarySources:
     url: "https://bitcoinchaser.com/satoshis-last-message/"
 translationStatus: complete
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
