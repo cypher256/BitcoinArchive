@@ -59,7 +59,7 @@ This entry is the **third pair** to the [identity-hypotheses overview](/BitcoinA
 
 ## 1. Repeated public attempts and recorded interest
 
-Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the attention of named institutions, span 2013 through the present. The list below restricts itself to attempts and interest that are part of the public record.
+Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the attention of named institutions, span the early 2010s through the present (the earliest entries in the list below are the WikiLeaks pressure dynamic of late 2010 and the In-Q-Tel / CIA conference invitation of April–June 2011). The list below restricts itself to attempts and interest that are part of the public record.
 
 ### 1.1 Journalism
 
@@ -109,7 +109,7 @@ The body of public material attached to Satoshi Nakamoto is, by the standards of
   - 4 emails to Hal Finney
   - 3 emails to Wei Dai (Gwern archive)
   - Smaller batches to Dustin Trammell, Gavin Andresen, Laszlo Hanyecz, Nicholas Bohm, and others
-- **31,794 lines of C++** in the Bitcoin v0.1 codebase, plus 164 SVN commits attributable to `s_nakamoto` and 34 git commits signed `Satoshi Nakamoto <satoshin@gmx.com>`. Detailed in [the code analysis entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).
+- **31,794 lines of C++** in the Bitcoin v0.1 codebase, plus 160 unique SVN commits attributable to `s_nakamoto` and 34 git commits signed `Satoshi Nakamoto <satoshin@gmx.com>`. Detailed in [the code analysis entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).
 - **Whitepaper PDF metadata** containing creation timestamps, time-zone offsets (`-07:00` in October 2008, `-06:00` in March 2009), and `Language: en-GB`. Three pseudonymous email addresses (`satoshi@anonymousspeech.com`, `satoshi@vistomail.com`, `satoshin@gmx.com`) are attached to the document and correspondence stream.
 - **Genesis-block parameters** hard-coded into the source as constants — timestamp, nonce, hash, coinbase message — preserved verbatim in every node since January 2009. Detailed in [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/).
 

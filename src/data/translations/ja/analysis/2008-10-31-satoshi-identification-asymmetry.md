@@ -60,7 +60,7 @@ translationStatus: complete
 
 ## 1. 公開された追跡試行・関心の反復
 
-サトシ・ナカモトを特定しようとする試行、またはビットコインを名指された機関の関心下に置いた事象は、2013 年から現在まで公開記録に並んでいる。以下のリストは公開記録に残るものに限定する。
+サトシ・ナカモトを特定しようとする試行、またはビットコインを名指された機関の関心下に置いた事象は、2010 年代前半から現在まで公開記録に並んでいる (以下のリストの最も初期の事例は 2010 年末の WikiLeaks 圧力経路と、2011 年 4〜6 月の In-Q-Tel / CIA カンファレンス招待である)。以下のリストは公開記録に残るものに限定する。
 
 ### 1.1 ジャーナリズム経路
 
@@ -110,7 +110,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
   - ハル・フィニー宛 4 通
   - ウェイ・ダイ宛 3 通 (Gwern アーカイブ)
   - ダスティン・トランメル、ギャビン・アンドレセン、ラズロ・ハニエツ、ニコラス・ボーム、その他への小規模な通信
-- **Bitcoin v0.1 コードベースの 31,794 行の C++**、加えて `s_nakamoto` に帰属可能な SVN 164 コミットおよび `Satoshi Nakamoto <satoshin@gmx.com>` 署名の git 34 コミット。詳細は [コード分析エントリ](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) 参照。
+- **Bitcoin v0.1 コードベースの 31,794 行の C++**、加えて `s_nakamoto` に帰属可能な SVN 160 ユニークコミットおよび `Satoshi Nakamoto <satoshin@gmx.com>` 署名の git 34 コミット。詳細は [コード分析エントリ](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) 参照。
 - **ホワイトペーパー PDF メタデータ** に記録されている作成タイムスタンプ、タイムゾーンオフセット (2008 年 10 月の `-07:00`、2009 年 3 月の `-06:00`)、`Language: en-GB`。文書および書簡ストリームには 3 つの匿名メールアドレス (`satoshi@anonymousspeech.com`、`satoshi@vistomail.com`、`satoshin@gmx.com`) が紐付いている。
 - **ジェネシスブロックのパラメーター** がソースコード内に定数としてハードコードされている — タイムスタンプ、ナンス、ハッシュ、coinbase メッセージ — 2009 年 1 月以降、すべてのノードで原文どおり保存されている。詳細は [ジェネシスブロック ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) 参照。
 
