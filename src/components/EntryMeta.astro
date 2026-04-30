@@ -17,9 +17,19 @@ interface Props {
   lang: Lang;
   participants?: Participant[];
   tags?: string[];
+  /**
+   * Content last-updated date, derived from git history (see
+   * scripts/generate-git-dates.mjs and src/data/git-dates.json).
+   * Conceptually distinct from `date`: `date` is the entry's anchor
+   * to the historical event it describes, while `updatedAt` is the
+   * date of the most recent edit to the entry's source file.
+   * Optional — entries without a git-history record (e.g. previews)
+   * simply don't show the line.
+   */
+  updatedAt?: Date;
 }
 
-const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [] } = Astro.props;
+const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [], updatedAt } = Astro.props;
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
@@ -45,6 +55,13 @@ const isSatoshiAuthor =
   <span class="meta-sep">&middot;</span>
   <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
 </div>
+
+{updatedAt && (
+  <div class="entry-meta-updated">
+    <span class="updated-label">{t('entry.lastUpdated' as any)}:</span>
+    <time datetime={updatedAt.toISOString()}>{formatDate(updatedAt, lang)}</time>
+  </div>
+)}
 
 {participants.length > 0 && (
   <div class="participants-row">
@@ -80,6 +97,20 @@ const isSatoshiAuthor =
     font-size: 0.85rem;
     color: var(--color-text-muted);
     margin-bottom: 0.5rem;
+  }
+  .entry-meta-updated {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
+  }
+  .updated-label {
+    font-weight: 600;
   }
   .meta-sep {
     color: var(--color-border);

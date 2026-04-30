@@ -21,6 +21,7 @@ import NlsExchangeRate from '../../../components/NlsExchangeRate.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl } from '../../../i18n/utils';
 import { resolveThreadId } from '../../../data/threads';
+import gitDates from '../../../data/git-dates.json';
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection('entries_ja');
@@ -52,6 +53,11 @@ const breadcrumbs = [
   { name: t('nav.entries'), url: localePath('/entries/', lang) },
   { name: entry.data.title, url: localePath(`/entries/${entry.id}/`, lang) },
 ];
+
+// Content last-updated date from git history (separate axis from
+// frontmatter.date which is the entry's anchor to the historical event).
+const gitDateRecord = (gitDates as Record<string, { createdAt: string; updatedAt: string }>)[entry.id];
+const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) : undefined;
 ---
 
 <BaseLayout
@@ -90,6 +96,7 @@ const breadcrumbs = [
         lang={lang}
         participants={entry.data.participants}
         tags={entry.data.tags}
+        updatedAt={updatedAt}
       />
     </header>
 
