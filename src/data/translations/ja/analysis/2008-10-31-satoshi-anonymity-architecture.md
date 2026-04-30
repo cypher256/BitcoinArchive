@@ -85,7 +85,7 @@ translationStatus: complete
 
 公開記録から観察可能な、独立した 2 つの不一致がある。
 
-**英文体の不一致。** サトシの文章は BitcoinTalk 投稿とメール書簡のなかでイギリス英語とアメリカ英語の綴りを混在させている。イギリス式 (`colour`、`favour`、`grey`、`optimise`) とアメリカ式 (`characterized`) が共存する。口語表現には英・豪のスラング (`bloody hard` — BitcoinTalk 投稿、`flat`、`maths`) が混じる一方、ソースコードの慣習は一貫してアメリカ式 (`color`、`catalog`)。このパターンは長文形式のサトシ身元分析で繰り返し言及されている。
+**英文体の不一致。** サトシの文章は BitcoinTalk 投稿とメールのやりとりのなかでイギリス英語とアメリカ英語の綴りを混在させている。イギリス式 (`colour`、`favour`、`grey`、`optimise`) とアメリカ式 (`characterized`) が共存する。口語表現には英・豪のスラング (`bloody hard` — BitcoinTalk 投稿、`flat`、`maths`) が混じる一方、ソースコードの慣習は一貫してアメリカ式 (`color`、`catalog`)。このパターンは長文形式のサトシ身元分析で繰り返し言及されている。
 
 **タイムスタンプ・タイムゾーンの不一致。** 論文 PDF メタデータの 2 つのドラフトで、タイムゾーンオフセットが異なる:
 
@@ -132,12 +132,12 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 | 日付 (UTC) | 出来事 | 出典 |
 |---|---|---|
 | 2010 年 9 月 | サトシ → ギャビン・アンドレセンへ私信「他のプロジェクトに取り組んでいる」。具体的な日付・媒体は公開記録になく、アンドレセンの後年の回想からの再構成。 | ギャビン・アンドレセンのインタビュー ([CoinMarketCap「Satoshi Files: ギャビン・アンドレセン」](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
-| 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビンが適任だ」。プロジェクトマネージャーとしてアンドレセンを推薦。 | [`mmalmi.github.io/satoshi`](https://mmalmi.github.io/satoshi/) 公開書簡 |
+| 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビンが適任だ」。プロジェクトマネージャーとしてアンドレセンを推薦。 | [`mmalmi.github.io/satoshi`](https://mmalmi.github.io/satoshi/) 公開メール |
 | 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」 スレッドへのサトシの公的反対投稿: 「No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way.」 | [BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280) |
 | 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (私的)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「I'm doing a few more things, then I plan to pass the baton.」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | 2010 年 12 月 15 日 | サトシ最終 SVN コミット (revision 202) — IRC 経由の外部 IP 取得処理の小さな修正。 | SourceForge SVN 履歴 |
 | 2010 年 12 月 19 日 | アンドレセンがリードメンテナーとしての就任を公式に発表。同日、GitHub `bitcoin/bitcoin` リポジトリ作成。 | BitcoinTalk アナウンスメント |
-| 2010 年 12 月 27 日 | マイク・ハーン → サトシ、クリスマスメッセージと 21M コイン上限・10 分ブロック目標・500 KB ブロックサイズ上限への質問。 | [`plan99.net`](https://plan99.net/~mike/satoshi-emails/) 公開書簡 |
+| 2010 年 12 月 27 日 | マイク・ハーン → サトシ、クリスマスメッセージと 21M コイン上限・10 分ブロック目標・500 KB ブロックサイズ上限への質問。 | [`plan99.net`](https://plan99.net/~mike/satoshi-emails/) 公開メール |
 | 2010 年 12 月 29 日 | サトシ → マイク・ハーン、長文私信。完全な SPV / クライアントモード設計の解説、21M の「Educated guess」 説明、ブロックサイズ拡大に対するムーアの法則の引用。サトシが書いた最後の長文私信。 | `plan99.net` |
 | 2011 年 4 月 23 日 | サトシ → マイク・ハーン: 「I've moved on to other things. It's in good hands with Gavin and everyone.」 | `plan99.net` |
 | 2011 年 4 月 26 日 | サトシ → ギャビン・アンドレセン: 「謎の影の人物として語らないでほしい」 と要請、CAlert キーとブロードキャストコード (ネットワーク非常停止権限 — サトシが最後まで保持していた技術的権限) を譲渡。 | ギャビン・アンドレセンの後年公開 ([CoinMarketCap](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
@@ -163,7 +163,7 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 
 **[身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) を層構造から読む。** 個別の候補は、いずれかの層で整合し、別の層で整合しない:
 
-- サトシが明示的に引用した候補 (アダム・バック、ウェイ・ダイ) はサイファーパンク参加と BTC 系譜という背景の層 (層 1・2 の背景) で整合するが、彼ら自身とサトシとのリリース前書簡が決定的な反証になる (同一著者の足場ではなく、第三者受信としての挙動)。
+- サトシが明示的に引用した候補 (アダム・バック、ウェイ・ダイ) はサイファーパンク参加と BTC 系譜という背景の層 (層 1・2 の背景) で整合するが、彼ら自身とサトシとのリリース前のやりとりが決定的な反証になる (同一著者の足場ではなく、第三者受信としての挙動)。
 - 2007〜2008 年に公開活動が記録されている能力適合候補 (ハル・フィニー、ニック・サボ) は段階的撤退層 (時間整合) と、ウェイ・ダイの 2014 年の指摘 (「設計期間中にサイファーパンクとして公的に活動していた人物ではないと思う」) が示す設計期間不可視性の期待で整合しない。
 - 自己主張型候補 (クレイグ・ライト) と名前一致候補 (ドリアン・ナカモト) は複数層で同時に整合しない。
 - 能力のみ適合の候補 (ピーター・トッド、金子勇、ポール・ル・ルー) は 1〜2 層 (実装能力、日本人名一致) で整合し、他で整合しない。
