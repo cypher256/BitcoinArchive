@@ -51,13 +51,13 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 | Username | Developer | First Commit | Last Commit | Commits |
 |----------|-----------|-------------|-------------|---------|
 | sirius-m | Martti Malmi | r1 (2009-08-30) | r56 | 21 |
-| s_nakamoto | Satoshi Nakamoto | r15 | r202 (2010-12-15) | 164 |
+| s_nakamoto | Satoshi Nakamoto | r15 | r202 (2010-12-15) | ~160 (counts vary by mirror / dedup method) |
 | laszloh | Laszlo Hanyecz | r123 (2010-08-04) | r123 | 1 |
 | gavinandresen | Gavin Andresen | r165 (2010-10-11) | r252 (2011-09-13) | 81 |
 
 **Martti Malmi (sirius-m)** created the SVN repository with the "First commit" at r1 on August 30, 2009. He ported the Bitcoin codebase — which Satoshi had developed on Windows using Visual C++ 6.0 — to Linux, and contributed 21 revisions before stepping back from active development.
 
-**Satoshi Nakamoto (s_nakamoto)** committed 164 of the 252 revisions — by far the most of any contributor. His last release commit was r201 ("version 0.3.19 release") on December 13, 2010. Two days later, he made one final small fix — r202 ("get external ip from irc") on December 15, 2010. No s_nakamoto commits appear after r202.
+**Satoshi Nakamoto (s_nakamoto)** committed roughly 160 of the 252 revisions — by far the most of any contributor (the [code-analysis entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) treats this as 160 unique SVN commits; the figure 164 also circulates from mirror-side counts — values differ depending on whether branches are included and how mirror-derived duplicates are deduplicated). His last release commit was r201 ("version 0.3.19 release") on December 13, 2010. Two days later, he made one final small fix — r202 ("get external ip from irc") on December 15, 2010. No s_nakamoto commits appear after r202.
 
 **Laszlo Hanyecz (laszloh)** — known for the [first real-world Bitcoin purchase](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) (10,000 BTC for two pizzas) and for pioneering GPU mining — made exactly one SVN commit: r123 on August 4, 2010, fixing macOS compilation issues.
 
