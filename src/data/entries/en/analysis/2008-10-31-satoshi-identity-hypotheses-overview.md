@@ -225,7 +225,7 @@ See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis
 
 #### Paul Le Roux
 
-*[Archive note: This archive does not yet hold dedicated Le Roux entries (biography, E4M announcement, criminal-case documents, or Mastermind references). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
+*[Context: This archive does not yet hold dedicated Le Roux entries (biography, E4M announcement, criminal-case documents, or Mastermind references). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
 
 **Background.** South African / Zimbabwean ex-encryption-software developer (creator of *E4M* open-source disk encryption in 1999, later forked into TrueCrypt). Transitioned around 2002 to running an international criminal enterprise (online pharmacies, weapons trafficking, methamphetamine production). Arrested by US authorities in September 2012; serving a long federal prison sentence per public reporting.
 
