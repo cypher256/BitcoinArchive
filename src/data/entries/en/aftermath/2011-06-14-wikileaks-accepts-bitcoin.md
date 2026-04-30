@@ -24,6 +24,7 @@ secondarySources:
   - name: "Bitbo Calendar — WikiLeaks Bypasses Sanctions Using Bitcoin"
     url: "https://bitbo.io/calendar/wikileaks-bypasses-sanctions/"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
 ---
 

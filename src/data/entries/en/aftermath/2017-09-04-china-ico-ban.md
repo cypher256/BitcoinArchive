@@ -21,6 +21,8 @@ secondarySources:
     url: "https://maint.loc.gov/law/help/cryptocurrency/china.php"
   - name: "CryptoNews — Is crypto banned in China? Full history"
     url: "https://crypto.news/china-crypto-bans-a-complete-history/"
+relatedEntries:
+  - analysis/2008-10-31-satoshi-identification-asymmetry
 ---
 
 On September 4, 2017, seven Chinese central government regulators — led by the People's Bank of China (PBOC) — jointly issued the "Announcement on Preventing Financial Risks from Initial Coin Offerings," effectively banning all ICOs and cryptocurrency exchange operations in China.

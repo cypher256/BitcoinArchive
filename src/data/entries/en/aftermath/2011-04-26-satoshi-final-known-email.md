@@ -29,6 +29,7 @@ secondarySources:
   - name: "MIT Technology Review"
     url: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key

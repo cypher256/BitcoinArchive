@@ -12,7 +12,7 @@ participants:
     slug: "hal-finney"
 description: "2009 年 1 月、Bitcoin v0.1 リリース週 (1/8-12) のサトシの運用環境についての、編者による推論的な読解。2 つの一次資料からの手がかり — 1/10 のハル・フィニー宛メールにある場所依存的な表現『from where I am』と、同じ週の公開活動の密度 — を組み合わせて読む。これは解釈的な読解であり、サトシの所在地や身元を確定する歴史的主張ではない。"
 isSatoshi: false
-homeOrder: 7
+homeOrder: 8
 tags:
   - "analysis"
   - "satoshi-identity"

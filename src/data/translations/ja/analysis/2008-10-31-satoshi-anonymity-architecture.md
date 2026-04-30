@@ -25,6 +25,7 @@ secondarySources:
     url: "https://www.lopp.net/pdf/Was-Satoshi-Greedy.pdf"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-10-31-cypherpunk-independent-arrival
