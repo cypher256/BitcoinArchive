@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがbitcoin-listメーリングリストに緊急アラートを発し、重大な問題の調査中ブロック74638以降のトランザクションを信用しないよう警告。"
+description: "サトシがbitcoin-listメーリングリストに緊急アラートを発し、重大な問題の調査中ブロック 74638以降のトランザクションを信用しないよう警告。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -25,7 +25,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-*** 警告 ***  問題を調査中だ。問題が解決するまで、2010年8月15日 17:05 UTC（ブロック74638）以降に発生した全てのトランザクションを信用しないでほしい。
+*** 警告 ***  問題を調査中だ。問題が解決するまで、2010年8月15日 17:05 UTC（ブロック 74638）以降に発生した全てのトランザクションを信用しないでほしい。
 
 ------------------------------------------------------------------------------<br>
 This SF.net email is sponsored by<br>

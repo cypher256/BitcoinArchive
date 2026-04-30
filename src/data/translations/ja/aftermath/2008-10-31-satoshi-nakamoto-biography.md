@@ -28,9 +28,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/"
   - name: "Satoshi Nakamoto — P2P Foundation Profile (Wayback Machine snapshot; original offline since the Ning network was taken down)"
     url: "https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
-  - name: "Bitcoin Genesis Block — Block 0 (mempool.space)"
+  - name: "Bitcoin Genesis Block — ブロック 0 (mempool.space)"
     url: "https://mempool.space/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
-  - name: "Bitcoin Genesis Block — Block 0 (blockstream.info)"
+  - name: "Bitcoin Genesis Block — ブロック 0 (blockstream.info)"
     url: "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
   - name: "Satoshi's final known BitcoinTalk post (December 12, 2010)"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/546/"
@@ -61,7 +61,7 @@ translationStatus: complete
 2008年8月20日、サトシはアダム・バックに新しい電子キャッシュシステムについて[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、ビットコインとなるものに関する最初の既知の通信となった。2008年10月31日、サトシはmetzdowd.comの暗号学メーリングリストに[「Bitcoin: A Peer-to-Peer Electronic Cash System」を発表した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)。この論文は、信頼される第三者なしにコンセンサースを達成するためプルーフ・オブ・ワークを使用する分散型デジタル通貨システムを記述した。
 
 **ローンチ：**
-2009年1月3日、サトシは[ジェネシスブロック（Block 0）](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)のパラメーターを定義し、タイムズ紙の一面から「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というテキストを埋め込んだ（Block 0 はソースコードに定数としてハードコードされており、各ノードがローカルに再構築する — 詳細は [ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) 参照）。2009年1月8日、[Bitcoin v0.1が公開リリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。2009年1月12日、サトシは[Block 170でハル・フィニーに10 BTCを送信した](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金である。
+2009年1月3日、サトシは[ジェネシスブロック（ブロック 0）](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)のパラメーターを定義し、タイムズ紙の一面から「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というテキストを埋め込んだ（ブロック 0 はソースコードに定数としてハードコードされており、各ノードがローカルに再構築する — 詳細は [ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) 参照）。2009年1月8日、[Bitcoin v0.1が公開リリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。2009年1月12日、サトシは[ブロック 170でハル・フィニーに10 BTCを送信した](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金である。
 
 **開発とコミュニケーション：**
 サトシは複数のプラットフォームで活動した：暗号学メーリングリスト、SourceForge上のbitcoin-listメーリングリスト、BitcoinTalkフォーラム（サトシとマルッティ・マルミが作成）、P2P Foundationフォーラム、そして私的なメールのやり取り。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)、[レイ・ディリンジャー](/BitcoinArchive/ja/participants/ray-dillinger/)、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)らと直接通信した。2009年から2010年にかけて、サトシはビットコインの設計を説明し、技術的な質問に答え、開発を調整する数百のフォーラム投稿とメールを執筆した。

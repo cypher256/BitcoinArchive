@@ -20,5 +20,5 @@ translationStatus: complete
 
 最近の調整により、再び1時間あたり約6ブロックに近づいた。
 
-ブロック間の時間を確認できるサイトがあり、ブロック68545以降は1ブロックあたり約10分に近くなっている:
+ブロック間の時間を確認できるサイトがあり、ブロック 68545以降は1ブロックあたり約10分に近くなっている:
 [http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php)

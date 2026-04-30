@@ -14,7 +14,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "レイキャビク大学の研究者がPatoshiパターンに関する最初の査読付き学術論文をPLOS ONEに発表。「P異常」（拡張Patoshi）と「Z異常」（ゼロノンス）の2つの独立したノンス異常を特定し、決定的な発見としてP異常が最初の64ブロック「すべて」に出現することを示した。これにはExtraNonce分析で非PatoshiとされていたBlock 12も含まれる。"
+description: "レイキャビク大学の研究者がPatoshiパターンに関する最初の査読付き学術論文をPLOS ONEに発表。「P異常」（拡張Patoshi）と「Z異常」（ゼロノンス）の2つの独立したノンス異常を特定し、決定的な発見としてP異常が最初の64ブロック「すべて」に出現することを示した。これにはExtraNonce分析で非Patoshiとされていたブロック 12も含まれる。"
 isSatoshi: false
 tags:
   - "patoshi"
@@ -55,9 +55,9 @@ translationStatus: complete
 
 **決定的な発見 — 最初の64ブロック：**
 
-Patoshi議論において最も重要な発見は、 **ナンスの最初のニブルにおける拡張Patoshi異常が、マイニングされた最初の64ブロック「すべて」に出現する** ことであった。これは注目に値する。なぜなら、ラーナーのオリジナルの2013年ExtraNonceベースの分類では、ExtraNonce勾配の相違に基づいてBlock 12を「別のユーザー」がマイニングした最初のブロックと特定していたからである。
+Patoshi議論において最も重要な発見は、 **ナンスの最初のニブルにおける拡張Patoshi異常が、マイニングされた最初の64ブロック「すべて」に出現する** ことであった。これは注目に値する。なぜなら、ラーナーのオリジナルの2013年ExtraNonceベースの分類では、ExtraNonce勾配の相違に基づいてブロック 12を「別のユーザー」がマイニングした最初のブロックと特定していたからである。
 
-PLOS ONEの発見は、Block 12がExtraNonceパターンとは異なるにもかかわらずPatoshiナンス指紋を示すことを意味する。これは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がカスタムPatoshiマイニングソフトウェアと標準[Bitcoin v0.1クライアント](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)を同時に実行していたと解釈するのが最も整合的である。ナンス分割の指紋は両方の設定で持続するが、ExtraNonceのインクリメント挙動は異なる。
+PLOS ONEの発見は、ブロック 12がExtraNonceパターンとは異なるにもかかわらずPatoshiナンス指紋を示すことを意味する。これは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がカスタムPatoshiマイニングソフトウェアと標準[Bitcoin v0.1クライアント](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)を同時に実行していたと解釈するのが最も整合的である。ナンス分割の指紋は両方の設定で持続するが、ExtraNonceのインクリメント挙動は異なる。
 
 **異常の規模：**
 

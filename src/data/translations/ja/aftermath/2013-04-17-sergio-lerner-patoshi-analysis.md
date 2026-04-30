@@ -48,12 +48,12 @@ translationStatus: complete
 2013年4月17日、アルゼンチンのビットコイン研究者[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)がブログ Bitslog に「The Well Deserved Fortune of [Satoshi Nakamoto](/BitcoinArchive/ja/participants/satoshi-nakamoto/), Bitcoin creator, Visionary and Genius」を発表した。ビットコイン最初期のマイニングパターンに関する最初の体系的分析である。
 
 **手法：**
-ラーナーはBlock 0からBlock 36,288（2009年1月〜2010年1月）のcoinbaseトランザクションのExtraNonceフィールドを追跡し、「slow realtime clock」としてマイナーのクライアント再起動タイミングを特定した。単一のエンティティが一貫した勾配セグメントでマイニングし、約100時間ごとに再起動していることを発見した。
+ラーナーはブロック 0からブロック 36,288（2009年1月〜2010年1月）のcoinbaseトランザクションのExtraNonceフィールドを追跡し、「slow realtime clock」としてマイナーのクライアント再起動タイミングを特定した。単一のエンティティが一貫した勾配セグメントでマイニングし、約100時間ごとに再起動していることを発見した。
 
 **主な発見：**
 - 単一のエンティティが最初の1年間に約 **100万BTC** をマイニング（2013年4月24日のフォローアップで~98万BTCに修正）
 - 同期間に付与された全1,814,400 BTCのうち、1,148,800 BTCが未使用のまま
-- Block 1がこのエンティティの最初のブロック；Block 12が別のユーザーの最初のブロック
+- ブロック 1がこのエンティティの最初のブロック；ブロック 12が別のユーザーの最初のブロック
 - このエンティティから約100 BTC（ブロック報酬2つ分）のみが使用された形跡
 
 **ナンスの謎（2013年9月）：**

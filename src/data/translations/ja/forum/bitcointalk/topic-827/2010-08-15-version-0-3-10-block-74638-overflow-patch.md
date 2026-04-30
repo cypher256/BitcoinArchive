@@ -1,5 +1,5 @@
 ---
-title: "バージョン0.3.10 - ブロック74638オーバーフローパッチ！"
+title: "バージョン0.3.10 - ブロック 74638オーバーフローパッチ！"
 date: 2010-08-15T23:48:22.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿：「バージョン0.3.10 - ブロック74638オーバーフローパッチ！」。"
+description: "サトシ・ナカモトの投稿：「バージョン0.3.10 - ブロック 74638オーバーフローパッチ！」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン0.3.10はブロック74638のオーバーフローバグを修正する。[http://bitcointalk.org/index.php?topic=823](http://bitcointalk.org/index.php?topic=823)
+バージョン0.3.10はブロック 74638のオーバーフローバグを修正する。[http://bitcointalk.org/index.php?topic=823](http://bitcointalk.org/index.php?topic=823)
 
 Linux版にはtcatmの4-way SSE2 SHA-256が含まれており、i5、i7（ハイパースレッディング対応）、AMD CPUでの生成が高速になる。「-4way」スイッチを試して有効にし、お使いの環境で高速かどうか確認してほしい。
 

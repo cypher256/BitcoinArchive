@@ -49,7 +49,7 @@ translationStatus: complete
 
 本分析は、Bitcoin v0.1 リリース週の公開記録から 2 つの手がかりを取り出して組み合わせる — 2009 年 1 月 10 日にサトシが[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)へ送った私信にある場所依存的な表現と、同じ週のサトシの公開活動の密度。その組み合わせから、**当該時期のサトシの運用環境が何と整合し何と整合しないか**を検討する。読みは編者による推論である。サトシの所在地や身元を確定するものではなく、一次資料は後述する複数の意味で結論を一意に定めきれていない。
 
-本エントリは[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。ただし対象は分離している: 前者は Block 0 という**対象物**の構造分析で、本エントリは同週のサトシという**人物**の環境読みである。
+本エントリは[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。ただし対象は分離している: 前者は ブロック 0 という**対象物**の構造分析で、本エントリは同週のサトシという**人物**の環境読みである。
 
 ## 1. 二つの手がかり
 
@@ -70,7 +70,7 @@ translationStatus: complete
 | UTC タイムスタンプ | 出来事 | チャンネル |
 |---|---|---|
 | 2009-01-08 19:27 | [Bitcoin v0.1 リリース告知](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) | 暗号学メーリングリスト |
-| 2009-01-09 02:54:25 | Block 1 採掘（チェーン上の `nTime`。ノード起動はその数分前と推定） | — |
+| 2009-01-09 02:54:25 | ブロック 1 採掘（チェーン上の `nTime`。ノード起動はその数分前と推定） | — |
 | 2009-01-10 | [サトシ → フィニー：「from where I am」](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) | 私信 |
 | 2009-01-11 22:32 | [Bitcoin v0.1.2 リリース告知](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available/) | bitcoin-list |
 | 2009-01-12 20:20 | Bitcoin v0.1 Alpha release notes | bitcoin-list |
