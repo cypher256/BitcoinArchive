@@ -1,5 +1,5 @@
 ---
-title: "The architecture of Satoshi Nakamoto's anonymity — Layered means by which the pseudonym remained unidentified"
+title: "How did Satoshi Nakamoto stay anonymous? The layered architecture of an unidentifiable pseudonym"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
