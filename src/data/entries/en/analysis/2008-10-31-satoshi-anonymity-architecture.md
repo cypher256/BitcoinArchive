@@ -86,7 +86,7 @@ Two independent inconsistencies in the documentary record are observable from pu
 - The October 2008 draft has `Language: en-GB` and `CreationDate: 2008:10:03 13:49:58-07:00` (Pacific time zone).
 - The March 2009 final has `Language: en-GB` and `CreationDate: 2009:03:24 11:33:15-06:00` (Mountain or Central time zone, depending on daylight-saving alignment).
 
-BitcoinTalk forum-post timestamps further distribute across the 24-hour clock with one consistent gap: Satoshi's posting activity is markedly sparse in the UTC 05:00–12:00 window. This pattern can be derived from the BitcoinTalk public archive of the 575 posts.
+BitcoinTalk forum-post timestamps further distribute across the 24-hour clock with one consistent gap: Satoshi's posting activity is markedly sparse in the UTC 06:00–12:00 window. This pattern can be derived from the BitcoinTalk public archive of the 575 posts. Independent timestamp analysis of Satoshi's source-code commits (v0.1.0–v0.3.19) shows the same gap and reads it as suggestive of EST (UTC-5) or CST (UTC-6) residence — under those assumptions the gap maps to roughly 01:00–07:00 local time (a typical sleep window). Other time-zone hypotheses (GMT, JST) place the gap at unnaturally inverted hours. See the [code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) for the commit-pattern derivation.
 
 The combined linguistic-and-temporal pattern is internally inconsistent in the sense that no single national / linguistic / time-zone profile aligns with all of the traces. Any identity hypothesis must either treat these as deliberate noise or supply an explanation in which the same person produced them organically.
 

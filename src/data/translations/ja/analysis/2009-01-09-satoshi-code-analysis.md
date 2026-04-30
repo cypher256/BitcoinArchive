@@ -24,6 +24,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
+  - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough"
