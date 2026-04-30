@@ -108,10 +108,10 @@ Detailed treatment of these traces is in the [launch-environment analysis](/Bitc
 The version-control history shows two related properties:
 
 - The 2007 through January 2009 development period is not under version control in any publicly inspectable form. The initial January 2009 v0.1 release was a single `.rar` archive on SourceForge, not a repository snapshot.
-- The Subversion repository was created on August 30, 2009, by Martti Malmi during the Linux port — not by Satoshi.
+- The Subversion repository was set up on the SourceForge project during the Linux port with help from Martti Malmi — not by Satoshi. The earliest preserved commits in the repository date from October 2009; see the [code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) for the commit-history breakdown.
 - The GitHub `bitcoin/bitcoin` repository was created in December 2010 by Gavin Andresen during the handover, after Satoshi's last Subversion commit (revision 202, December 15, 2010).
 
-In a remark in correspondence with Martti Malmi, Satoshi noted that Gavin Andresen was technically more proficient than himself on Linux ("Linuxに関しては技術的にも、私よりずっと上だ" in the Japanese-translation rendering of `mmalmi.github.io/satoshi` correspondence; the original English is consistent with this paraphrase). The remark is consistent with the Windows-environment pattern in the v0.1 codebase.
+Satoshi's December 2010 private email to Gavin Andresen contains the self-evaluation "[Gavin is] technically much more Linux capable than me" — catalogued in the [self-statements entry](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/). The remark is consistent with the Windows-environment pattern in the v0.1 codebase.
 
 ## 5. Genesis-block parameter constants (origin de-attribution layer)
 
@@ -141,7 +141,7 @@ Satoshi's withdrawal from the project does not occur as a single event. The docu
 | April 26, 2011 | Satoshi → Gavin Andresen: requests Andresen stop describing him as "a mysterious shadowy figure"; transmits the CAlert key and broadcast code (the network-emergency authority — the last technical capability Satoshi had retained). | Gavin Andresen statement ([CoinMarketCap](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
 | March 6, 2014 | A post from the Satoshi P2P Foundation account: "I am not Dorian Nakamoto." Authenticity contested; the account may have been compromised. | [P2P Foundation thread](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source) |
 
-The seven-month sequence is structurally specific: code-management authority transfers in September 2010, a public-facing pre-announcement is delivered within a routine technical thread on December 12, a final code commit follows on December 15, and the network-emergency CAlert key — the last lever — is released on April 26, 2011. There is no single dramatic farewell. There is no public goodbye post on BitcoinTalk. The pattern matches the rest of the architecture: leverage and visibility are reduced gradually, not severed in a moment that would itself be a forensic event.
+The seven-month sequence is structurally specific: a private withdrawal signal ("moving on to other projects") goes to Gavin Andresen in September 2010, with the formal code-management transfer itself unfolding over the following months and reaching public-record completion on December 12; a public-facing pre-announcement is delivered within a routine technical thread on the same date; a final code commit follows on December 15; and the network-emergency CAlert key — the last lever — is released on April 26, 2011. There is no single dramatic farewell. There is no public goodbye post on BitcoinTalk. The pattern matches the rest of the architecture: leverage and visibility are reduced gradually, not severed in a moment that would itself be a forensic event.
 
 A separate observation worth noting: in the same April 26 message, Satoshi's expressed objection ("I wish you wouldn't keep talking about me as a mysterious shadowy figure...") is consistent with the rest of the architecture. Becoming a focal symbolic figure is structurally inconsistent with the project's design ("decentralized") and provides a substrate for identity-hypothesis discourse — the very layer this entry catalogs.
 
