@@ -37,17 +37,17 @@ secondarySources:
   - name: "Satoshi's final known email to Gavin Andresen (April 26, 2011)"
     url: "https://satoshi.nakamotoinstitute.org/emails/gavin-andresen/"
 relatedEntries:
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-08-20-satoshi-activity-timeline
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - sourceforge/2009-01-03-genesis-block
   - sourceforge/2009-01-09-bitcoin-v01-released
-  - analysis/2008-10-31-satoshi-anonymity-architecture
-  - analysis/2009-01-09-satoshi-code-analysis
-  - analysis/2009-01-03-genesis-block-hardcode-analysis
-  - analysis/2008-10-31-cypherpunk-independent-arrival
-  - analysis/2008-08-20-satoshi-self-statements
-  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
-  - analysis/2008-08-20-satoshi-activity-timeline
+  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
 translationStatus: complete
 ---
 

@@ -31,6 +31,7 @@ secondarySources:
   - name: "Bitcoin Wiki — Bitcoin v0.1.0"
     url: "https://en.bitcoin.it/wiki/Bitcoin_0.1"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - sourceforge/2009-01-09-bitcoin-v01-released
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security

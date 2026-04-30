@@ -35,15 +35,16 @@ secondarySources:
   - name: "Wei Dai — AALWA thread on LessWrong (2014)"
     url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
-  - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
-  - aftermath/2008-10-31-satoshi-nakamoto-biography
-  - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-08-20-satoshi-activity-timeline
-  - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:
   - "サイファーパンク宣言"
   - "Cypherpunk's Manifesto"

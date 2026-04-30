@@ -29,6 +29,9 @@ secondarySources:
   - name: "Gavin Andresen — Eleven Years Ago Today (alert key handover)"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 relatedEntries:
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-08-20-satoshi-activity-timeline
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
@@ -37,8 +40,6 @@ relatedEntries:
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
-  - aftermath/2008-10-31-satoshi-nakamoto-biography
-  - analysis/2008-08-20-satoshi-activity-timeline
 inlineLinkKeywords:
   - "Satoshi's self-statements"
   - "self-statements inventory"

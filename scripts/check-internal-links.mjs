@@ -340,10 +340,11 @@ console.log();
 //   2. No self-reference
 //   3. Bidirectional: if A lists B, B must list A
 //   4. No thread-internal relations
-//   5. Max 10 per file
+//   5. (No data-side cap — see STYLE_GUIDE "Why no data-side cap".
+//      The list is priority-ordered; the renderer slices to the top 10
+//      for display. The data layer remains a complete graph.)
 //   6. JA file must declare the same relatedEntries as its EN mirror
 
-const MAX_RELATED = 10;
 const relatedIssues = [];
 
 console.log('Validating relatedEntries frontmatter...');
@@ -351,13 +352,6 @@ console.log('Validating relatedEntries frontmatter...');
 for (const [id, entry] of enEntries) {
   const related = entry.relatedEntries;
   if (related.length === 0) continue;
-
-  if (related.length > MAX_RELATED) {
-    relatedIssues.push({
-      file: entry.file,
-      issue: `relatedEntries has ${related.length} items (max ${MAX_RELATED}). Use tags for broader grouping.`,
-    });
-  }
 
   for (const target of related) {
     if (!enEntries.has(target)) {
@@ -475,7 +469,7 @@ if (relatedIssues.length > 0) {
 if (exitCode === 0) {
   console.log(`✓ All ${totalLinks} internal links resolve and match file locale`);
   if (totalRelated > 0) {
-    console.log(`✓ All ${totalRelated} relatedEntries references valid (bidirectional, non-self, non-thread, ≤${MAX_RELATED})`);
+    console.log(`✓ All ${totalRelated} relatedEntries references valid (bidirectional, non-self, non-thread; display cap is at the renderer layer, see RelatedEntries.astro)`);
   }
 } else {
   console.error(`Total: ${broken.length} broken, ${mixedLang.length} mixed-lang, ${relatedIssues.length} related-issue / ${totalLinks} links`);

@@ -377,17 +377,51 @@ Good candidates:
 
 ### Rules
 
-1. **Maximum 10 per file.** If you need more, the grouping is too coarse —
-   use `tags` instead.
-2. **Bidirectional required.** If A declares B as related, B must also
+1. **No data-side cap; ordered by priority.** `relatedEntries` accepts
+   any number of items. The list is treated as **priority-ordered**: the
+   entry at index 0 is the most important relation, the entry at the end
+   is the least important. The renderer (`RelatedEntries.astro`) selects
+   the top 10 items for display (manual entries always survive this cap
+   first; auto-derived candidates from `src/data/derived-related.json`
+   fill any remaining slots). Display order is then chronological. If
+   the manual list ever exceeds 10, the lowest-priority items are not
+   shown but remain in the data layer for future reorganization,
+   downstream tooling, and reverse-link integrity.
+2. **Priority ordering convention.** Place items in this order so that
+   the top-of-list slots reach the display layer first:
+   1. Pair entry / direct counterpart (e.g. `identity-hypotheses-overview`
+      ↔ `anonymity-architecture`).
+   2. Biography or canonical catalog entry for the central participant.
+   3. Cause-and-effect partner (e.g. the 2010-08-15 overflow incident
+      and the 0.3.10 patch that fixed it).
+   4. Same event recorded from a different channel (e.g. whitepaper
+      document ↔ announcement email).
+   5. Specific event referenced in body prose. **If the entry is also
+      reached via an inline markdown link in the body, prefer to lean on
+      the inline link and place the relation low in priority** — the
+      reader already has a body-level path to the entry.
+3. **Bidirectional required.** If A declares B as related, B must also
    declare A as related. Enforced by `npm run check:internal-links`.
-3. **No self-reference.** An entry cannot relate to itself.
-4. **No thread-internal relations.** If two entries are already in the
+4. **No self-reference.** An entry cannot relate to itself.
+5. **No thread-internal relations.** If two entries are already in the
    same thread (same directory), do not use `relatedEntries` for them.
-5. **Same `relatedEntries` in EN and JA mirrors.** Both language versions
-   of an entry must declare the same set of related entries.
-6. **Format is the entry ID** (path relative to `src/data/entries/en/`
+6. **Same `relatedEntries` in EN and JA mirrors.** Both language versions
+   of an entry must declare the same set of related entries (and in the
+   same priority order).
+7. **Format is the entry ID** (path relative to `src/data/entries/en/`
    without `.md`), e.g. `emails/cryptography/2008-10-31-bitcoin-whitepaper-final`.
+
+### Why no data-side cap
+
+A hard cap forces a delete decision every time a new strong relation
+is added. Deletion has nontrivial cost: the reverse link must also be
+removed, downstream tooling that walks the graph loses information,
+and edits become a seesaw of add-here / remove-there. By moving the
+cap to the **display** layer and treating the list as priority-ordered,
+adding a new relation becomes a single insert (at the priority slot it
+deserves), and the renderer enforces the visible limit automatically.
+The data layer remains a complete graph; the UI shows the most relevant
+slice.
 
 ### Example
 

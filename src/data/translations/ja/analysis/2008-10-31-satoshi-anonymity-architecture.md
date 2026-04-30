@@ -25,18 +25,18 @@ secondarySources:
     url: "https://www.lopp.net/pdf/Was-Satoshi-Greedy.pdf"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
-  - analysis/2008-08-20-satoshi-activity-timeline
-  - analysis/2008-08-20-satoshi-self-statements
-  - analysis/2008-10-31-cypherpunk-independent-arrival
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2009-01-09-satoshi-code-analysis
-  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
-  - analysis/2009-01-10-satoshi-launch-environment
-  - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - analysis/2008-08-20-satoshi-activity-timeline
+  - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - analysis/2009-01-10-satoshi-launch-environment
 inlineLinkKeywords:
   - "匿名性のアーキテクチャ"
   - "サトシ匿名性のアーキテクチャ"

@@ -30,6 +30,7 @@ secondarySources:
   - name: "Lerner (2013) — The Well Deserved Fortune of Satoshi Nakamoto"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-anonymity-architecture
   - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
