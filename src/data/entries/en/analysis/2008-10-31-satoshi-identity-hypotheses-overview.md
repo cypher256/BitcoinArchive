@@ -122,21 +122,15 @@ The ten candidates fall into three groups by how they entered Satoshi-identity d
 - **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
 - **C. Third-party discovery, self-claim, or name-match** — Dorian Prentice Satoshi Nakamoto, Craig Wright, Peter Todd, Isamu Kaneko, Paul Le Roux
 
-Each profile follows the same micro-structure: background, the hypothesis (proposer and timing), the strongest argument for, the strongest argument against, external status.
+Each profile shares the same micro-structure: background, the hypothesis (proposer and timing), the strongest argument for, the strongest argument against, external status. For candidates with a dedicated hypothesis entry (linked from the "Hypothesis entry" column above), the §3 profile here keeps only background and external status — the full claim/arguments/counter-evidence/broader-record treatment is in the dedicated entry, which follows the same template (§1 claim → §2 arguments → §3 counter-evidence → §4 broader documentary record → §5 limits) at greater depth.
 
 ### A. Cypherpunks Satoshi explicitly cited
 
 #### Adam Back
 
-**Background.** British cryptographer (born 1970), PhD in computer science from the University of Exeter, inventor of *Hashcash* (1997), the proof-of-work function cited as a primary precedent in Bitcoin's whitepaper. Co-founder and CEO of Blockstream (2014).
+**Background.** British cryptographer (born 1970), PhD in computer science from the University of Exeter, inventor of *Hashcash* (1997). Co-founder and CEO of Blockstream (2014). The first known person Satoshi contacted about Bitcoin (August 20, 2008).
 
-**The hypothesis.** Back is one of the cypherpunks Satoshi explicitly cited in the original whitepaper, and one of two known recipients of [Satoshi's pre-launch correspondence in August 2008](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/). The combination — Hashcash citation, pre-launch contact, capability, BTC-adjacent intellectual lineage — has periodically been read as evidence that Back was Satoshi.
-
-**Argument for.** Hashcash is the proof-of-work primitive Bitcoin reuses, so authorship correlation with Hashcash is the strongest forensic-fit argument. Back is a long-tenure cypherpunk with cryptographic-protocol design experience, near-native English (British), and BTC-adjacent intellectual lineage.
-
-**Argument against.** The pre-launch correspondence (August 20–22, 2008) is itself the strongest counter-evidence: Back asked Satoshi about Hashcash citation and pointed Satoshi to Wei Dai's b-money (which Satoshi had not heard of) — third-party-reception behavior, not same-author scaffolding. Back has publicly treated Satoshi as a separate person, most prominently in his [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), where he submitted his complete email correspondence with Satoshi as witness evidence.
-
-**External status.** Self-denied (most prominently via COPA v Wright testimony submitting his Satoshi correspondence as evidence); pre-launch correspondence reads as third-party reception.
+**External status.** Self-denied (most prominently via [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) submitting his Satoshi correspondence as witness evidence under oath); the pre-launch correspondence reads as third-party reception. → See [Adam Back = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the Hashcash authorship-correlation argument, the August 2008 email-structure counter-evidence, and the [April 2026 NYT stylometric investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) treatment.
 
 #### Wei Dai
 
@@ -178,15 +172,9 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 #### Len Sassaman
 
-**Background.** Cypherpunk cryptographer (1980–2011), lead developer of the Mixmaster anonymous remailer, KU Leuven PhD candidate.
+**Background.** Cypherpunk cryptographer (1980–2011), lead developer of the Mixmaster anonymous remailer, KU Leuven PhD candidate. Died by suicide on July 3, 2011 — three months after Satoshi's last documented private email.
 
-**The hypothesis.** Sassaman's death by suicide on July 3, 2011 — three months after Satoshi's last documented private email — combined with his cypherpunk credentials, capability with adversarial-environment cryptographic systems, and the silence of his widow Meredith Patterson (a cryptographer herself) on the identity claim, has made this hypothesis a recurring topic in English-language discourse. The most prominent recent articulation is Evan Hatch's 2021 piece.
-
-**Argument for.** Timing fits: Satoshi's April 2011 silence aligning with a death three months later is unusual among Satoshi candidates. Sassaman's capability with cryptographic protocol design (Mixmaster) and adversarial-environment systems matches the Bitcoin v0.1 profile. Patterson's silence on the identity claim has not been used to deny it.
-
-**Argument against.** Sassaman's 2007–2008 public activity is documented in his [Wikipedia entry](https://en.wikipedia.org/wiki/Len_Sassaman) and conference proceedings: he gave *Anonymity for 2015* at 24C3 in Berlin (December 2007) and *Anonymity and its Discontents* at Black Hat USA 2007 in Las Vegas, and coauthored *The Byzantine Postman Problem* with Bart Preneel (May 2008) — though all in the anonymity-networks specialty rather than digital-cash discussion specifically. Mixmaster (anonymity routing) and Bitcoin (digital cash) overlap in cryptographic primitives but diverge in architecture. Sassaman's KU Leuven PhD workload during 2008–2011 conflicts with an 18-month intensive Bitcoin design effort. No direct documentary link between Sassaman and Satoshi has surfaced. Patterson's silence is information but ambiguous (could be either non-confirmation or non-denial).
-
-**External status.** Open. See the [Sassaman = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) for full treatment.
+**External status.** Open. → See the [Sassaman = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) for the timing argument, the cypherpunk-credentials argument, and the counter-evidence (no direct documentary link, KU Leuven workload, Patterson's silence on the identity question).
 
 ### C. Third-party discovery, self-claim, or name-match
 
@@ -216,29 +204,15 @@ Each profile follows the same micro-structure: background, the hypothesis (propo
 
 #### Peter Todd
 
-**Background.** Canadian Bitcoin Core developer (born 1985), contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work.
+**Background.** Canadian Bitcoin Core developer (born 1985), contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work. OCAD University graduate (Integrated Media, 2011). Joined BitcoinTalk on December 7, 2010 as "retep".
 
-**The hypothesis.** Identified as a Satoshi candidate in the [2024 HBO documentary *Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024). The documentary's argument rested in part on a December 2010 BitcoinTalk thread in which Todd's reply appeared to complete or extend a partially-edited Satoshi post in a way the documentary read as same-author behavior.
-
-**Argument for.** Bitcoin Core implementation capability (post-2012). The HBO documentary's December 2010 BitcoinTalk thread reading.
-
-**Argument against.** Todd was 22 years old in mid-2007 when Satoshi's documented 18-month design window started, an undergraduate at OCAD University (Integrated Media, graduated 2011) — a profile frequently raised in critiques of the HBO documentary. No documented cypherpunk-mailing-list presence pre-2012. His Bitcoin Core contributions began ~2012, after Satoshi's withdrawal. No documented BTC-adjacent intellectual work pre-2010. Todd has publicly denied being Satoshi; the documentary's evidence has been widely critiqued in the Bitcoin technical community as circumstantial.
-
-**External status.** Self-denied (post-HBO); community critique of evidence as circumstantial.
-
-See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) for full treatment.
+**External status.** Self-denied (post-HBO); community critique of evidence as circumstantial. → See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) for the analytical treatment of the [HBO 2024 documentary's claims](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/).
 
 #### Isamu Kaneko
 
 **Background.** Japanese researcher (1970–2013), developer of the *Winny* P2P file-sharing system (2002), defendant in a high-profile criminal case from 2004 to 2011 (acquitted by the Supreme Court of Japan, December 2011). Died of myocardial infarction on July 6, 2013.
 
-**The hypothesis.** Circulates predominantly in Japanese-language discourse, supported by Kaneko's P2P system development capability and Japanese-name match.
-
-**Argument for.** P2P system development capability (Winny). Japanese-name match raises the pseudonym-choice question. Technical sophistication on file-sharing and distributed-systems aspects.
-
-**Argument against.** Limited English fluency: Kaneko's documented research record is Japanese-language, with no documented near-native English writing matching Satoshi's register. No documented cypherpunk-mailing-list presence. Winny is file-sharing, not digital cash — no BTC-adjacent intellectual lineage. Hyper-visible during 2007–2008: ongoing high-profile criminal trial proceedings, public defense, inconsistent with "structurally outside the visible cypherpunk community" during the design window. No documented monetary-design work. No direct documentary link.
-
-**External status.** Open. See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for full treatment.
+**External status.** Open. → See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for the analytical treatment.
 
 #### Paul Le Roux
 
