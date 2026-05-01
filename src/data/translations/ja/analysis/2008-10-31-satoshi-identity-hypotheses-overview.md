@@ -67,13 +67,36 @@ translationStatus: complete
 - 2007 年央から 2008 年 8 月までの 18 か月にわたる集中的な設計期間；
 - 2011 年 4 月の撤退。
 
-7 次元のプロファイル比較表（§2）は、10 名の候補をこの輪郭に照らして並列する。サッサマン、金子勇、トッドの仮説については本アーカイブに個別の仮説エントリーがあり、深い扱いはそちらに譲る。残り 7 名は本エントリー内で扱う。
+7 次元のプロファイル比較表（§1）は、10 名の候補をこの輪郭に照らして並列する。サッサマン、金子勇、トッドの仮説については本アーカイブに個別の仮説エントリーがあり、深い扱いはそちらに譲る。残り 7 名は本エントリー内で扱う。
 
 本エントリーは「最も蓋然性の高いサトシ候補」 を指名しない。
 
-## 1. 方法論
+## 1. 候補プロファイル比較表
 
-**プロファイル整合の次元。** §2 の比較表で用いる 7 次元は、サトシに関する公的記録の輪郭から導出される：
+| 候補 | 個別 | サイファーパンク | ビットコイン系譜 | 実装能力 | 貨幣設計 | 英語水準 | タイミング | 可視性低 | 外部的状況 |
+|---|---|---|---|---|---|---|---|---|---|
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
+| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [正体](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [正体](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
+| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
+
+**色の意味：** 🟢＝サトシの公的プロファイルと整合／🔴＝整合しない／🟡＝部分的または混在する整合（各列の判定基準は §2 方法論を参照）。
+
+**表の読み方：**
+
+- 次元は二つのグループに分かれて互いに引っ張り合う（背景・能力 vs 隠匿性）。**🟢 数を全列で単純合計して「サトシ度」 として扱うのは誤解を招く**。詳しくは §2 方法論を参照。
+- プロファイル比較は *必要だが十分ではない* 条件。「外部的状況」 列は外部的証拠（自己否定、判決、技術的論破）を示し、プロファイル比較とは独立に候補を除外する場合がある。
+- 本アーカイブに個別の仮説エントリーがない候補のセルは、公的記録の最も広く受け入れられた読みに基づく配置である。
+
+## 2. 方法論
+
+**プロファイル整合の次元。** §1 の比較表で用いる 7 次元は、サトシに関する公的記録の輪郭から導出される：
 
 - *サイファーパンクフォーラムへの参加*：サイファーパンクメーリングリスト、metzdowd Cryptography List、または関連フォーラムへの記録された参加。ウェイ・ダイの 2014 年の識別性論（LessWrong の AALWA スレッド）は、サトシが 2007〜2008 年の設計期間中、これらのフォーラムで *目に見えて* 活動してはいなかった、という読解を支持する。
 - *ビットコインに隣接する知的系譜*：Hashcash、b-money、Bit Gold、RPOW、または関連するデジタルキャッシュ／プルーフ・オブ・ワーク提案に関する記録された仕事、もしくは詳細な引用。
@@ -91,29 +114,6 @@ translationStatus: complete
 サイファーパンク思想家として可視に活動していた候補ほど（グループ 1）、識別を逃れて隠れ続けていた可能性は低い（グループ 2）。表を読む際は 🟢 数を合計するのではなく、両グループを別個に保持して読む必要がある。「両グループ全 🟢」 の候補は構造的に稀である：サイファーパンク能力に深く埋め込まれていながら *かつ* 設計期間中は完全に不可視だった、という像を同時に満たす人物。
 
 **プロファイル整合は必要だが十分ではない。** プロファイル整合だけで仮説が決まることはない。「外部的状況」 列（自己否定、判決、技術的論破）は独立に作用し、いくつかの候補では決定的になる。プロファイル整合と外部的状況を組み合わせて見たときの個別候補の解釈は §4 横断的な観察を参照。
-
-## 2. 候補プロファイル比較表
-
-| 候補 | 個別 | サイファーパンク | ビットコイン系譜 | 実装能力 | 貨幣設計 | 英語水準 | タイミング | 可視性低 | 外部的状況 |
-|---|---|---|---|---|---|---|---|---|---|
-| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定 |
-| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
-| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
-| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
-| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
-| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
-| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
-| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [正体](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
-| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [正体](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
-| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
-
-**色の意味：** 🟢＝サトシの公的プロファイルと整合／🔴＝整合しない／🟡＝部分的または混在する整合（各列の判定基準は §1 方法論を参照）。
-
-**表の読み方：**
-
-- 次元は二つのグループに分かれて互いに引っ張り合う（背景・能力 vs 隠匿性）。**🟢 数を全列で単純合計して「サトシ度」 として扱うのは誤解を招く**。詳しくは §1 方法論を参照。
-- プロファイル比較は *必要だが十分ではない* 条件。「外部的状況」 列は外部的証拠（自己否定、判決、技術的論破）を示し、プロファイル比較とは独立に候補を除外する場合がある。
-- 本アーカイブに個別の仮説エントリーがない候補のセルは、公的記録の最も広く受け入れられた読みに基づく配置である。
 
 ## 3. 候補プロファイル
 

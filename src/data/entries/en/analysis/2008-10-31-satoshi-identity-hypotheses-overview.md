@@ -66,13 +66,36 @@ This entry compares the ten named candidates for Satoshi Nakamoto's identity tha
 - the 18-month intensive design window from mid-2007 through August 2008;
 - the April 2011 withdrawal.
 
-The seven-dimension profile comparison table (§2) aligns the ten candidates against this outline. The Sassaman, Kaneko, and Todd hypotheses have dedicated entries in this archive for deeper treatment; the other seven candidates are treated within this entry.
+The seven-dimension profile comparison table (§1) aligns the ten candidates against this outline. The Sassaman, Kaneko, and Todd hypotheses have dedicated entries in this archive for deeper treatment; the other seven candidates are treated within this entry.
 
 This entry does not name "the most likely Satoshi candidate."
 
-## 1. Methodology
+## 1. Candidate profile comparison
 
-**Profile-match dimensions.** The seven dimensions in §2's comparison table are derived from the public-record outline of Satoshi:
+| Candidate | Entry | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
+|---|---|---|---|---|---|---|---|---|---|
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | [Identity](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
+| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
+| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
+| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | [Identity](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
+| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Identity](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
+| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Identity](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
+
+**Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit (per-column criteria in §2 Methodology).
+
+**How to read the table:**
+
+- The dimensions split into two groups that pull against each other (background-and-capability vs covertness). Counting 🟢 across all columns and treating the total as a single Satoshi-likeness score is misleading. See §2 Methodology.
+- Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of the profile comparison.
+- Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
+
+## 2. Methodology
+
+**Profile-match dimensions.** The seven dimensions in §1's comparison table are derived from the public-record outline of Satoshi:
 
 - *Cypherpunk forum participation*: documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora. Wei Dai's 2014 identifiability argument (in his LessWrong AALWA thread) suggests Satoshi was *not* visibly active in these fora during the 2007–2008 design period.
 - *Bitcoin-adjacent intellectual lineage*: documented work in or extended citation of Hashcash, b-money, Bit Gold, RPOW, or related digital-cash / proof-of-work proposals.
@@ -90,29 +113,6 @@ This entry does not name "the most likely Satoshi candidate."
 The more visibly active a candidate was as a cypherpunk thinker (group 1), the less plausibly they could also have been hidden enough to escape identification (group 2). Reading the comparison requires holding the two groups separately rather than summing green counts. An "all-🟢" candidate is structurally rare: someone simultaneously deeply embedded in cypherpunk capability *and* completely invisible during the design window.
 
 **Profile-match is necessary but not sufficient.** Profile-match alone never decides a hypothesis. The *External status* column (self-denials, court rulings, technical disproofs) operates independently and is in some cases decisive. Cross-cutting observations on how profile-match and external status combine for individual candidates are in §4.
-
-## 2. Candidate profile comparison
-
-| Candidate | Entry | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
-|---|---|---|---|---|---|---|---|---|---|
-| [Adam Back](/BitcoinArchive/participants/adam-back/) | [Identity](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
-| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
-| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
-| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
-| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
-| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
-| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
-| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | [Identity](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
-| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Identity](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
-| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Identity](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
-
-**Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit (per-column criteria in §1 Methodology).
-
-**How to read the table:**
-
-- The dimensions split into two groups that pull against each other (background-and-capability vs covertness). Counting 🟢 across all columns and treating the total as a single Satoshi-likeness score is misleading. See §1 Methodology.
-- Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of the profile comparison.
-- Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
 ## 3. Candidate profiles
 
