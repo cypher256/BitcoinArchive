@@ -25,6 +25,9 @@ secondarySources:
     note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21、2023年11月7日付）に5通の完全なメールチェーンが含まれていた。Bitcoin Magazineで公開"
   - name: "CryptoSlate - Adam Back files previously unseen Satoshi emails"
     url: "https://cryptoslate.com/adam-back-files-previously-unseen-satoshi-nakamoto-emails-in-craig-wright-trial/"
+relatedEntries:
+  - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
+  - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
 translationStatus: complete
 ---
 

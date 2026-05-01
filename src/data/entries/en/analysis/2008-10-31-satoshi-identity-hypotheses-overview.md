@@ -21,6 +21,8 @@ secondarySources:
   - name: "Wikipedia (English) — Satoshi Nakamoto"
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2005-12-29-nick-szabo-biography
@@ -93,7 +95,7 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 | Candidate | Entry | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|---|
-| [Adam Back](/BitcoinArchive/participants/adam-back/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | [Identity](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied |
 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |

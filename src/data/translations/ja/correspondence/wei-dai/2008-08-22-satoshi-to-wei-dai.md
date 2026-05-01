@@ -21,6 +21,7 @@ secondarySources:
   - name: "Gwern's Archive"
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 relatedEntries:
+  - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"

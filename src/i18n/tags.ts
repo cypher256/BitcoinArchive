@@ -616,4 +616,7 @@ export const tagTranslations: Record<string, string> = {
   'wladimir-van-der-laan': 'ウラジミール・ファン・デア・ラーン',
   'zcash': 'Zcash',
   'zero-conf': 'ゼロ確認',
+  'new-york-times': 'ニューヨーク・タイムズ',
+  'stylometric-analysis': '文体計量分析',
+  'investigation': '調査',
 };

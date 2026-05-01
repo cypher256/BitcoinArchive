@@ -29,6 +29,8 @@ secondarySources:
   - name: "CoinShares — Interview: Adam Back, CEO of Blockstream"
     url: "https://coinshares.com/insights/the-node/interview-adam-back/"
 relatedEntries:
+  - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
+  - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "aftermath/2008-08-20-adam-back-biography"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"

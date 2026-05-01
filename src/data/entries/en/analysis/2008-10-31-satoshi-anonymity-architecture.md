@@ -24,6 +24,8 @@ secondarySources:
   - name: "Jameson Lopp — Was Satoshi Greedy? (2022)"
     url: "https://www.lopp.net/pdf/Was-Satoshi-Greedy.pdf"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis

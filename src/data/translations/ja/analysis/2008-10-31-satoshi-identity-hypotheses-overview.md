@@ -21,6 +21,8 @@ secondarySources:
   - name: "Wikipedia（英語）— Satoshi Nakamoto"
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2005-12-29-nick-szabo-biography
@@ -94,7 +96,7 @@ translationStatus: complete
 
 | 候補 | 個別 | サイファーパンク | ビットコイン系譜 | 実装能力 | 貨幣設計 | 英語水準 | タイミング | 可視性低 | 外部的状況 |
 |---|---|---|---|---|---|---|---|---|---|
-| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定 |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |

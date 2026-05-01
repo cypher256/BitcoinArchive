@@ -32,6 +32,8 @@ secondarySources:
   - name: "COPA v Wright Trial — Adam Back Testimony (February 2024)"
     url: "https://www.opencrypto.org/"
 relatedEntries:
+  - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
+  - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
   - "aftermath/2024-02-21-adam-back-retrospective-testimony"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"

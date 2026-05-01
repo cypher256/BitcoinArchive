@@ -29,6 +29,7 @@ secondarySources:
   - name: "Wikidata — Peter Todd (Q130523424)"
     url: "https://www.wikidata.org/wiki/Q130523424"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2010-12-07-retep-diaspora-invite-first-post

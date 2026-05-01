@@ -36,6 +36,8 @@ secondarySources:
   - name: "FBI — Silk Road takedown (October 2013)"
     url: "https://www.fbi.gov/contact-us/field-offices/newyork/news/press-releases/manhattan-u.s.-attorney-announces-seizure-of-additional-28-million-worth-of-bitcoins-belonging-to-ross-william-ulbricht-alleged-owner-and-operator-of-silk-road-website"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
@@ -92,6 +94,7 @@ Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the at
 - **Newsweek (March 6, 2014)** — Leah McGrath Goodman identified Dorian Prentice Satoshi Nakamoto as the Bitcoin creator on the basis of name match and a doorstep encounter. Dorian denied the claim repeatedly, including via the Associated Press. See [the Newsweek/Dorian entry](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/).
 - **Forbes (March 25, 2014)** — Andy Greenberg's investigation, including the Hal Finney "race-day alibi" element that was later formalized by Jameson Lopp (see §1.3). Forbes treated Hal Finney as the strongest candidate at the time and presented the case in long-form journalism.
 - **HBO *Money Electric: The Bitcoin Mystery* (October 8, 2024)** — Cullen Hoback's documentary named Peter Todd as a Satoshi candidate, drawing on a December 2010 BitcoinTalk thread reading. Todd publicly denied the claim and the technical community widely critiqued the evidence as circumstantial. See [the HBO documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/).
+- **The New York Times — John Carreyrou investigation (April 8, 2026)** — Pulitzer Prize–winning journalist Carreyrou named Blockstream CEO Adam Back as the strongest candidate after an 18-month stylometric investigation. Back denied the identification publicly, and the analysis's own commissioned linguistic review was internally described as inconclusive (Hal Finney nearly tied). See [the NYT investigation entry](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/).
 
 ### 1.2 Litigation
 

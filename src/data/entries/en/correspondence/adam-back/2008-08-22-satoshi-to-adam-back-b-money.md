@@ -25,6 +25,9 @@ secondarySources:
     note: "Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21, dated November 7, 2023) included the complete five-email chain. Published in Bitcoin Magazine"
   - name: "CryptoSlate - Adam Back files previously unseen Satoshi emails"
     url: "https://cryptoslate.com/adam-back-files-previously-unseen-satoshi-nakamoto-emails-in-craig-wright-trial/"
+relatedEntries:
+  - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
+  - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
 ---
 
 In this third email of the chain, Satoshi thanked Adam Back for pointing him to Wei Dai's b-money proposal and made a historically significant admission:

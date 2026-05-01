@@ -35,6 +35,8 @@ secondarySources:
   - name: "Wei Dai — AALWA thread on LessWrong (2014)"
     url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry

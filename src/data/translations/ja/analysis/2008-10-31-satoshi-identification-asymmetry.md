@@ -36,6 +36,8 @@ secondarySources:
   - name: "FBI — Silk Road takedown (October 2013)"
     url: "https://www.fbi.gov/contact-us/field-offices/newyork/news/press-releases/manhattan-u.s.-attorney-announces-seizure-of-additional-28-million-worth-of-bitcoins-belonging-to-ross-william-ulbricht-alleged-owner-and-operator-of-silk-road-website"
 relatedEntries:
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
@@ -93,6 +95,7 @@ translationStatus: complete
 - **Newsweek (2014 年 3 月 6 日)** — リア・マクグラス・グッドマンがドリアン・プレンティス・サトシ・ナカモトを名前一致と訪問取材によりサトシ候補として特定。ドリアンは AP 通信を含む複数の場でこの主張を否定した。詳細は [Newsweek/ドリアン エントリ](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) 参照。
 - **Forbes (2014 年 3 月 25 日)** — アンディ・グリーンバーグの長文取材記事。後にジェイムソン・ロップが定式化することになる「ハル・フィニーのレース当日アリバイ」 を含む。当時の最有力候補としてハル・フィニーを扱い、長文ジャーナリズムとして提示した。
 - **HBO『Money Electric: The Bitcoin Mystery』 (2024 年 10 月 8 日)** — カレン・ホーバック監督によるドキュメンタリー。2010 年 12 月の BitcoinTalk スレッドの読み込みを根拠に、ピーター・トッドをサトシ候補として名指した。トッドは公的に否定し、技術コミュニティは証拠を状況証拠的と批判した。詳細は [HBO ドキュメンタリー エントリ](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) 参照。
+- **ニューヨーク・タイムズ — John Carreyrou による調査 (2026 年 4 月 8 日)** — ピューリッツァー賞受賞ジャーナリスト Carreyrou が 18 か月の文体計量分析を経て、Blockstream CEO のアダム・バックを最有力候補として名指した。バックは公的に否定し、委託先言語学者の独立分析は内部で「不確定」 と評された（ハル・フィニーがほぼ並んだ）。詳細は [NYT 調査エントリ](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) 参照。
 
 ### 1.2 法的経路
 
