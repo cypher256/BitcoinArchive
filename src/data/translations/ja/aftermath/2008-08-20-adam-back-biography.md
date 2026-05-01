@@ -32,7 +32,7 @@ secondarySources:
   - name: "COPA v Wright Trial — Adam Back Testimony (February 2024)"
     url: "https://www.opencrypto.org/"
 relatedEntries:
-  - "aftermath/1997-05-01-adam-back-hashcash-announcement"
+  - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"

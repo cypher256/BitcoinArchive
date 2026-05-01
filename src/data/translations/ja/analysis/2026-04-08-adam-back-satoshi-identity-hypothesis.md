@@ -41,7 +41,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Adam Back Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
-  - aftermath/1997-05-01-adam-back-hashcash-announcement
+  - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
@@ -126,7 +126,7 @@ Hashcash に含まれない各構成要素が**実際にどこから来たのか
 
 | 年 | 一次資料 | バックが Hashcash と貨幣について述べた内容 |
 |---|---|---|
-| 1997-05 | [Hashcash アナウンス](/BitcoinArchive/ja/entries/aftermath/1997-05-01-adam-back-hashcash-announcement/)（サイファーパンクリスト・cypherspace.org） | Hashcash を「digicash がより広く使われるまでの応急措置」 と位置づけ |
+| 1997-03-28 | [Hashcash アナウンス](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)（サイファーパンクリスト） | アナウンスの「How does this fit in with digicash」 節で Hashcash を「digicash がより広く使われるまでの応急措置」 と位置づけ |
 | 1998-12-06 | [サイファーパンクリスト b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | b-money の貨幣設計上の 7 論点を指摘；「to create value you burn CPU time, just like with hashcash」 を提案 |
 | 2002-08-01 | [Hashcash 論文 §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | 「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に **mint** の語を用いる」；§7 がウェイ・ダイの b-money 鋳造機構としての応用を列挙 |
 | 2008-08-20 | [サトシからアダム・バックへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | サトシがビットコインホワイトペーパー向けの Hashcash 引用形式についてバックに問い合わせる |

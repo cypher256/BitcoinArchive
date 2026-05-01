@@ -29,7 +29,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Bitcoin, Adam Back and the Quest for Digital Cash"
     url: "https://bitcoinmagazine.com/culture/bitcoin-adam-back-and-digital-cash"
 relatedEntries:
-  - "aftermath/1997-05-01-adam-back-hashcash-announcement"
+  - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2008-08-20-adam-back-biography"
@@ -46,7 +46,7 @@ translationStatus: complete
 
 *差出人：アダム・バック &lt;aba@dcs.ex.ac.uk&gt;*
 
-[アダム・バック](/BitcoinArchive/ja/participants/adam-back/) は [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) の [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) に対し、貨幣設計上の批評で返信した。バックは提案上の 7 つの個別論点を指摘し、同時に自身の [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-05-01-adam-back-hashcash-announcement/) を当該システムの鋳造機構の候補として明示的に提案した。
+[アダム・バック](/BitcoinArchive/ja/participants/adam-back/) は [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) の [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) に対し、貨幣設計上の批評で返信した。バックは提案上の 7 つの個別論点を指摘し、同時に自身の [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) を当該システムの鋳造機構の候補として明示的に提案した。
 
 **Hashcash を b-money の鋳造機構として：**
 

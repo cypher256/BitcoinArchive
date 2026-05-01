@@ -23,7 +23,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "このメールは2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックが証人陳述書の一部として完全なメールチェーンを提出した"
 relatedEntries:
-  - "aftermath/1997-05-01-adam-back-hashcash-announcement"
+  - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"

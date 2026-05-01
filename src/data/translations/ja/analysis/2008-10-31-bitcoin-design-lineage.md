@@ -36,7 +36,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 relatedEntries:
-  - aftermath/1997-05-01-adam-back-hashcash-announcement
+  - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back

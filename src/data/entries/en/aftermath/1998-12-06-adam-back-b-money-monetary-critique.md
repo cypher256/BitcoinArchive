@@ -29,7 +29,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Bitcoin, Adam Back and the Quest for Digital Cash"
     url: "https://bitcoinmagazine.com/culture/bitcoin-adam-back-and-digital-cash"
 relatedEntries:
-  - "aftermath/1997-05-01-adam-back-hashcash-announcement"
+  - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2008-08-20-adam-back-biography"
@@ -45,7 +45,7 @@ relatedEntries:
 
 *From: Adam Back &lt;aba@dcs.ex.ac.uk&gt;*
 
-[Adam Back](/BitcoinArchive/participants/adam-back/) replied to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) with a substantive monetary-design critique. Back identified seven distinct issues in the proposal as it stood, while explicitly proposing his own [Hashcash](/BitcoinArchive/entries/aftermath/1997-05-01-adam-back-hashcash-announcement/) as the candidate minting mechanism for the system.
+[Adam Back](/BitcoinArchive/participants/adam-back/) replied to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) with a substantive monetary-design critique. Back identified seven distinct issues in the proposal as it stood, while explicitly proposing his own [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) as the candidate minting mechanism for the system.
 
 **Hashcash as b-money's minting mechanism:**
 

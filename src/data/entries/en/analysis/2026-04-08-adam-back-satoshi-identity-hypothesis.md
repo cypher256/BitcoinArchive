@@ -41,7 +41,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Adam Back Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
-  - aftermath/1997-05-01-adam-back-hashcash-announcement
+  - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
@@ -125,7 +125,7 @@ Distinct from §2.2 (the Hashcash-author = Bitcoin-author forensic-fit argument)
 
 | Year | Primary source | What Back said about Hashcash and money |
 |---|---|---|
-| 1997-05 | [Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-05-01-adam-back-hashcash-announcement/) (Cypherpunks list, cypherspace.org) | Positioned Hashcash as a "stop-gap measure until digicash becomes more widely used" |
+| 1997-03-28 | [Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) (Cypherpunks list) | Positioned Hashcash as a "stop gap measure until digicash becomes more widely used" in the announcement's *How does this fit in with digicash* section |
 | 1998-12-06 | [Cypherpunks-list b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | Identified seven monetary-design issues in b-money; proposed "to create value you burn CPU time, just like with hashcash" |
 | 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
 | 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |

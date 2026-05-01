@@ -27,7 +27,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
-  - "aftermath/1997-05-01-adam-back-hashcash-announcement"
+  - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"

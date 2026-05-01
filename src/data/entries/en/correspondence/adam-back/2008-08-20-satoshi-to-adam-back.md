@@ -24,7 +24,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. Adam Back filed the complete email chain as a witness statement"
 relatedEntries:
-  - "aftermath/1997-05-01-adam-back-hashcash-announcement"
+  - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
