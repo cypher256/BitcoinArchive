@@ -230,6 +230,7 @@ export const tagTranslations: Record<string, string> = {
 
   // R
   'quantum-computing': '量子コンピューティング',
+  'recollection': '回想',
   'regret': '後悔',
   'regulation': '規制',
   'regulatory': '規制',

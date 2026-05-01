@@ -19,7 +19,7 @@ secondarySources:
   - name: "Bitcoin Wiki - Laszlo Hanyecz"
     url: "https://en.bitcoin.it/wiki/Laszlo_Hanyecz"
 relatedEntries:
-  - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
+  - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
   - aftermath/2010-05-22-laszlo-hanyecz-biography
 translationStatus: complete

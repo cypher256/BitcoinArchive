@@ -31,17 +31,17 @@ secondarySources:
   - name: "Lightning Network Pizza Transaction (February 2018)"
     url: "https://bitcoinmagazine.com/articles/laszlo-hanyecz-spends-bitcoin-pizza-again-time-lightning-network"
 relatedEntries:
-  - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
+  - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
-  - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
-  - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
+  - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
+  - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
 ---
 
 Laszlo Hanyecz is a software developer based in Jacksonville, Florida, who made several foundational contributions to Bitcoin's early development. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on technical matters and is best known for the first real-world commercial Bitcoin transaction.
 
 **macOS Port:**
-In early 2010, Hanyecz [ported the Bitcoin client to macOS](/BitcoinArchive/entries/correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port/), making the software available on Apple's platform for the first time. He communicated with Satoshi Nakamoto about the port, and their correspondence reveals Satoshi's guidance on cross-platform compatibility and mining architecture.
+In early 2010, Hanyecz [ported the Bitcoin client to macOS](/BitcoinArchive/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/), making the software available on Apple's platform for the first time. He communicated with Satoshi Nakamoto about the port, and their correspondence reveals Satoshi's guidance on cross-platform compatibility and mining architecture.
 
 **GPU Mining Pioneer:**
 Hanyecz was the first person known to have successfully used a GPU (graphics processing unit) to mine Bitcoin, dramatically increasing mining efficiency compared to CPU-only mining. He discussed this development directly with Satoshi, who expressed concern about an "arms race" in mining hardware, preferring that mining remain accessible to ordinary computers for as long as possible.

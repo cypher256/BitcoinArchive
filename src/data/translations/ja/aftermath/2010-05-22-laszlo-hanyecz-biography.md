@@ -31,10 +31,10 @@ secondarySources:
   - name: "Lightning Network Pizza Transaction (February 2018)"
     url: "https://bitcoinmagazine.com/articles/laszlo-hanyecz-spends-bitcoin-pizza-again-time-lightning-network"
 relatedEntries:
-  - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
+  - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
-  - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
-  - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
+  - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
+  - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
 translationStatus: complete
 ---
@@ -42,7 +42,7 @@ translationStatus: complete
 ラズロ・ハニエツは、フロリダ州ジャクソンビル在住のソフトウェア開発者で、ビットコインの初期開発にいくつかの基盤的な貢献を行った。技術的な問題について[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と直接やり取りし、ビットコインによる初の実商取引で最もよく知られている。
 
 **macOS移植：**
-2010年初頭、ハニエツは[ビットコインクライアントをmacOSに移植し](/BitcoinArchive/ja/entries/correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port/)、Appleのプラットフォームで初めてソフトウェアを利用可能にした。移植についてサトシ・ナカモトとやり取りし、彼らのメールにはクロスプラットフォーム互換性とマイニングアーキテクチャに関するサトシの指針が記されている。
+2010年初頭、ハニエツは[ビットコインクライアントをmacOSに移植し](/BitcoinArchive/ja/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/)、Appleのプラットフォームで初めてソフトウェアを利用可能にした。移植についてサトシ・ナカモトとやり取りし、彼らのメールにはクロスプラットフォーム互換性とマイニングアーキテクチャに関するサトシの指針が記されている。
 
 **GPUマイニングの先駆者：**
 ハニエツは、GPU（グラフィックス・プロセッシング・ユニット）を使用してビットコインのマイニングに成功した最初の人物として知られ、CPUのみのマイニングと比較してマイニング効率を劇的に向上させた。この開発についてサトシと直接議論し、サトシはマイニングハードウェアの「軍拡競争」への懸念を表明し、マイニングができるだけ長く一般のコンピューターでアクセス可能であることを望んだ。

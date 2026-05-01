@@ -1,35 +1,39 @@
 ---
-title: "Satoshi to Laszlo Hanyecz: shares his own GPU mining code for network defense (May 17, 2010)"
+title: "Laszlo Hanyecz recalls Satoshi sharing his own defensive GPU mining code (May 2010)"
 date: 2010-05-17T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "cointelegraph"
 sourceUrl: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
-author: "Satoshi Nakamoto"
+author: "Laszlo Hanyecz"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "In a surprising turn, Satoshi shares his own GPU mining code with Laszlo Hanyecz, revealing that he had independently developed GPU mining as a defensive measure against potential 51% attacks on the network."
-isSatoshi: true
+description: "A recollection-based account from Laszlo Hanyecz: Satoshi reciprocated Hanyecz's GPU miner code by sharing Satoshi's own independently developed GPU mining code, kept as a contingency defense against potential 51% attacks rather than for mining coins. The full private email correspondence has not been publicly released; what appears here is Hanyecz's recall of the exchange as shared in interviews with Cointelegraph and InsideBitcoins. The May 17, 2010 date is approximate, anchored on Hanyecz's narrative timeline relative to his May 10 GPU announcement."
+isSatoshi: false
 tags:
-  - "correspondence"
   - "gpu-mining"
   - "network-defense"
   - "51-percent-attack"
   - "early-developer"
+  - "recollection"
 secondarySources:
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
-    note: "Based on Laszlo Hanyecz's public statements in interviews with Cointelegraph and other outlets. The full private email correspondence has not been publicly released, but Hanyecz has shared these details in multiple interviews"
+    note: "Based on Laszlo Hanyecz's public statements in interviews with Cointelegraph and other outlets. The full private email correspondence has not been publicly released; the quotes here are Hanyecz's recall of what Satoshi said and shared."
   - name: "InsideBitcoins - Laszlo Hanyecz Claims Satoshi Invented GPU Mining"
     url: "https://insidebitcoins.com/news/laszlo-hanyecs-claims-satoshi-invented-gpu-mining-to-prevent-51-attacks"
 relatedEntries:
+  - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
+  - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
   - aftermath/2010-05-22-laszlo-hanyecz-biography
   - aftermath/2010-05-22-bitcoin-pizza-day
 ---
 
-In a remarkable exchange that occurred after Laszlo Hanyecz shared his GPU miner code with Satoshi, Satoshi reciprocated by sharing his own independently developed GPU mining code. This revelation showed that Satoshi had been working on GPU mining before Hanyecz's public announcement -- not to mine coins, but as a contingency plan to defend the network against potential 51% attacks.
+*[Editor: this entry is a recollection-based article, not a primary-source private email record. The full private email correspondence between Satoshi and Hanyecz has not been publicly released. The exchange below — Satoshi's reciprocal sharing of GPU mining code, his stated defensive rationale, his deliberate non-optimization choice — is reconstructed from Hanyecz's later interview accounts (Cointelegraph, InsideBitcoins). The May 17, 2010 date is approximate, anchored to Hanyecz's narrative ordering relative to his May 10 Bitcointalk GPU announcement.]*
+
+In a remarkable exchange that — per Laszlo Hanyecz's later recall — occurred after Hanyecz shared his GPU miner code with Satoshi, Satoshi reciprocated by sharing his own independently developed GPU mining code. As Hanyecz tells it, this revelation showed that Satoshi had been working on GPU mining before Hanyecz's public announcement -- not to mine coins, but as a contingency plan to defend the network against potential 51% attacks.
 
 As Hanyecz later recounted:
 

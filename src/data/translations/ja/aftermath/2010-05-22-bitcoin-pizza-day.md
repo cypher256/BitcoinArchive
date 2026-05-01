@@ -27,11 +27,11 @@ secondarySources:
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
-  - correspondence/laszlo-hanyecz/2010-04-19-hanyecz-macos-port
+  - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-laszlo-hanyecz-biography
   - forum/bitcointalk/topic-137/2010-05-21-laszlo-msg1181
-  - correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining
-  - correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code
+  - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
+  - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
 translationStatus: complete
 ---
@@ -46,7 +46,7 @@ translationStatus: complete
 
 当時の10,000 BTCは約41ドルだった。これはビットコインによる最初の物理的商品の購入として知られている。それ以前のビットコイン取引はデジタルのみ — 為替レート計算やP2P送金 — だった。ピザ取引は、ビットコインが実世界の交換媒体として機能できることを証明した。
 
-ハニエツは[GPUマイニング](/BitcoinArchive/ja/entries/correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining/)の先駆者であり、夏の間もビットコインでピザを注文し続け、合計約79,000 BTCを使った。後に後悔しているかと聞かれた際、ハニエツはこう答えた。
+ハニエツは[GPUマイニング](/BitcoinArchive/ja/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/)の先駆者であり、夏の間もビットコインでピザを注文し続け、合計約79,000 BTCを使った。後に後悔しているかと聞かれた際、ハニエツはこう答えた。
 
 > 「後悔？ してないよ。ビットコインの最初の歴史に関われたんだ。最高じゃん」
 
