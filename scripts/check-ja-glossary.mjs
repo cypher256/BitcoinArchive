@@ -127,6 +127,12 @@ const RULES = [
   { type: 'literal', deprecated: '私信メール', canonical: 'メール', reason: '私信 = 私的な手紙/メール の意を内包するため「私信メール」 は重複表現。本文散文では「メール」 で統一' },
   { type: 'literal', deprecated: '私信', canonical: 'メール', reason: '「私信」 は現代日本語では稀で archaic。日本語では「メール」 単体でプライベートな含意を持つため「メール」 で統一' },
   { type: 'literal', deprecated: 'プライベートメール', canonical: 'メール', reason: '日本語では「メール」 単体でプライベートな含意を持つため「プライベート」 修飾は不要。「メール」 で統一' },
+
+  // --- 「ペンネーム」 vs 「仮名」 ---
+  // STYLE_GUIDE_JA.md § II.3 Canonical mappings で signature (pseudonym/byline)
+  // の正典訳語は「仮名」。「ペンネーム」 は作家・作者の語感に偏り、サトシのような
+  // 「システム作者・実装者・運用者」 の総体を指す pseudonym 意では狭すぎる。
+  { type: 'literal', deprecated: 'ペンネーム', canonical: '仮名', reason: 'pseudonym/byline 意は「仮名」 で統一（§ II.3 Canonical mappings）。「ペンネーム」 は作家寄りの語感で、サトシのようなシステム作者・実装者・運用者の総体には狭い' },
 ];
 
 function walk(dir) {

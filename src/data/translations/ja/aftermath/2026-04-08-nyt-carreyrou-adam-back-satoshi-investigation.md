@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2026 年 4 月 8 日、ニューヨーク・タイムズはピューリッツァー賞受賞ジャーナリスト John Carreyrou による調査記事を掲載し、アダム・バックがサトシ・ナカモトのペンネームの中の人として最も可能性が高いと結論づけた。本調査は 18 か月にわたって NYT の AI 専門家 Dylan Freedman と協働で実施され、1992〜2008 年のサイファーパンクメーリングリスト 3 件のアーカイブを文体計量分析にかけ、ビットコイン以前の暗号学メーリングリストに 10 件以上投稿した 620 人の書き手のうちで、バックがサトシの文体に最も近い一致を示した。委託先の言語学者 Florian Cafiero による独立分析は、12 名の候補のうちバックを最上位に位置づけたが、結果は不確定であり、ハル・フィニーがほぼ並んだと述べた。バックはエルサルバドルでの 2 時間の対面インタビューで Carreyrou に対し 6 回以上にわたって正体を否定し、記事公開後の複数のインタビューで否定を繰り返した。"
+description: "2026 年 4 月 8 日、ニューヨーク・タイムズはピューリッツァー賞受賞ジャーナリスト John Carreyrou による調査記事を掲載し、アダム・バックがサトシ・ナカモトの仮名の中の人として最も可能性が高いと結論づけた。本調査は 18 か月にわたって NYT の AI 専門家 Dylan Freedman と協働で実施され、1992〜2008 年のサイファーパンクメーリングリスト 3 件のアーカイブを文体計量分析にかけ、ビットコイン以前の暗号学メーリングリストに 10 件以上投稿した 620 人の書き手のうちで、バックがサトシの文体に最も近い一致を示した。委託先の言語学者 Florian Cafiero による独立分析は、12 名の候補のうちバックを最上位に位置づけたが、結果は不確定であり、ハル・フィニーがほぼ並んだと述べた。バックはエルサルバドルでの 2 時間の対面インタビューで Carreyrou に対し 6 回以上にわたって正体を否定し、記事公開後の複数のインタビューで否定を繰り返した。"
 isSatoshi: false
 tags:
   - "adam-back"
@@ -50,7 +50,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2026 年 4 月 8 日、[John Carreyrou](https://en.wikipedia.org/wiki/John_Carreyrou) — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のペンネームの中の人として最も可能性が高いと結論づけた。バックは正体を否定した。
+2026 年 4 月 8 日、[John Carreyrou](https://en.wikipedia.org/wiki/John_Carreyrou) — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人として最も可能性が高いと結論づけた。バックは正体を否定した。
 
 **調査の方法論：**
 

@@ -600,7 +600,7 @@ NHK, and Kyodo News all standardize on the trailing form.
 | Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | Code identifier `getmerklebranch` and tag `merkle-branch` are out of scope |
 | The Times (newspaper) | タイムズ | The Times (in body prose) | The genesis-block coinbase string `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks` is preserved verbatim as historical record. `secondarySources` `name` fields are also preserved |
 | signature (crypto) | 署名 | — | Schnorr / ECDSA / message-signing senses use `署名` as canonical |
-| signature (pseudonym / byline) | 仮名 | 署名 | The pen-name sense (e.g. "the signature 'Satoshi Nakamoto'") collides with the cryptographic sense; use `仮名` |
+| signature (pseudonym / byline) | 仮名 | 署名, ペンネーム | The pen-name sense (e.g. "the signature 'Satoshi Nakamoto'") collides with the cryptographic sense; use `仮名`. `ペンネーム` is also deprecated — it carries a writer/author register, too narrow for a pseudonym that covers system-design, implementation, and operational identity (Satoshi authored the whitepaper, but also the v0.1 codebase and the operational network). |
 | signature (forensic fingerprint) | 指紋 | 署名 | Patoshi-style forensic fingerprints (e.g. mining signature, nonce signature) use `指紋` |
 
 ### Canonical mappings
