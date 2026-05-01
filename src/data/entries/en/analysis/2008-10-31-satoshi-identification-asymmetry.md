@@ -1,5 +1,5 @@
 ---
-title: "Why has Satoshi Nakamoto never been identified? Repeated public attempts, surviving material, and a persistent gap — an asymmetry analysis"
+title: "Why hasn't Satoshi been found? An asymmetry analysis of the public record"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"

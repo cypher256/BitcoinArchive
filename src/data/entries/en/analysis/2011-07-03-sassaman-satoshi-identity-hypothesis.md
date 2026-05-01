@@ -1,5 +1,5 @@
 ---
-title: "The Sassaman = Satoshi identity hypothesis"
+title: "Was Len Sassaman Satoshi? Final communications three months before his death"
 date: 2011-07-03T00:00:00Z
 type: "analysis"
 source: "wikipedia"

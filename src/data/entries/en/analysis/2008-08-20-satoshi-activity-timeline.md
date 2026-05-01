@@ -1,5 +1,5 @@
 ---
-title: "Satoshi activity timeline 2008-2014: every documented event in chronological view"
+title: "Tracing Satoshi: every documented event from 2008 to 2014"
 date: 2008-08-20T00:00:00Z
 type: "analysis"
 source: "metzdowd"

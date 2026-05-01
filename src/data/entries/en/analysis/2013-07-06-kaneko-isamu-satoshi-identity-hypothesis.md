@@ -1,5 +1,5 @@
 ---
-title: "The Kaneko Isamu = Satoshi identity hypothesis"
+title: "Was Kaneko Isamu Satoshi? Examining the Winny developer hypothesis"
 date: 2013-07-06T00:00:00Z
 type: "analysis"
 source: "wikipedia"

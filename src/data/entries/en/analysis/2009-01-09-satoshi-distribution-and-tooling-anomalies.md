@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin v0.1 distribution and tooling: editorial reading of the .rar packaging, missing version control, and Warez-scene overlap"
+title: "Why did Satoshi distribute Bitcoin as a .rar? The Warez-scene parallel"
 date: 2009-01-09T00:00:00Z
 type: "analysis"
 source: "sourceforge"

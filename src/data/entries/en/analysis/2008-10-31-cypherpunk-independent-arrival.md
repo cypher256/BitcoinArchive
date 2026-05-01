@@ -1,5 +1,5 @@
 ---
-title: "Independent arrival at the cypherpunk core: Satoshi's documented knowledge and ideological synchrony"
+title: "What did Satoshi know? Bitcoin's connection to cypherpunk core ideas"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "metzdowd"

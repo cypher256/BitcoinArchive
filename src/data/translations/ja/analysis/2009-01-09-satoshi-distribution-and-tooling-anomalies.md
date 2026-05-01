@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin v0.1 の配布形式と開発環境の異例性 — `.rar` パッケージング、バージョン管理の不在、Warez シーン慣習との重なりについての編者による読解"
+title: "なぜサトシは Bitcoin を `.rar` で配ったのか — Warez シーンとの共通点"
 date: 2009-01-09T00:00:00Z
 type: "analysis"
 source: "sourceforge"

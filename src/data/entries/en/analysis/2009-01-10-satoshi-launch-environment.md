@@ -1,5 +1,5 @@
 ---
-title: "Satoshi's launch-period environment: forensic reading of 'from where I am' (January 2009)"
+title: "Satoshi's 'from where I am' — geographic traces in the January 2009 launch week"
 date: 2009-01-10T00:00:00Z
 type: "analysis"
 source: "coindesk"

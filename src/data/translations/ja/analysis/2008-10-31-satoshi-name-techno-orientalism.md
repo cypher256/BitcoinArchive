@@ -1,5 +1,5 @@
 ---
-title: "「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解"
+title: "なぜ「サトシ・ナカモト」 は日本人名だったのか — 『AKIRA』 の系譜から読む"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "metzdowd"

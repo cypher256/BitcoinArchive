@@ -1,5 +1,5 @@
 ---
-title: "サッサマン＝サトシ正体仮説"
+title: "サッサマンはサトシだったのか — 死の 3 か月前に途絶えた通信"
 date: 2011-07-03T00:00:00Z
 type: "analysis"
 source: "wikipedia"

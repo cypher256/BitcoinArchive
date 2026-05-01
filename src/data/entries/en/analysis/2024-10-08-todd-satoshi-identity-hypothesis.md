@@ -1,5 +1,5 @@
 ---
-title: "The Peter Todd = Satoshi identity hypothesis"
+title: "Was Peter Todd Satoshi? Examining HBO's 2024 documentary claim"
 date: 2024-10-08T00:00:00Z
 type: "analysis"
 source: "hbo"

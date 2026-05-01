@@ -1,5 +1,5 @@
 ---
-title: "Satoshi Nakamoto's Source Code Analysis — Coding Style, Commit Patterns, and Code Evolution (v0.1.0–v0.3.19)"
+title: "What Satoshi's code reveals — coding style, commit patterns, and evolution from v0.1.0 to v0.3.19"
 date: 2009-01-09T00:00:00Z
 type: "analysis"
 source: "github"

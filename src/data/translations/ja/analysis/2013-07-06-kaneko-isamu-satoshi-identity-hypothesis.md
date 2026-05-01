@@ -1,5 +1,5 @@
 ---
-title: "金子勇＝サトシ正体仮説"
+title: "金子勇はサトシだったのか — Winny 開発者をめぐる正体仮説"
 date: 2013-07-06T00:00:00Z
 type: "analysis"
 source: "wikipedia"

@@ -1,5 +1,5 @@
 ---
-title: "Genesis Block Analysis: Hardcoded Parameters, the Five-Day Gap, and Block 0's Un-Attributability"
+title: "The genesis block puzzle: why hardcoded, why five days unmined?"
 date: 2009-01-03T18:15:05Z
 type: "analysis"
 source: "github"

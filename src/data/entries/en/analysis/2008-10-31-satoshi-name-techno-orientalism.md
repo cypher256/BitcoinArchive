@@ -1,5 +1,5 @@
 ---
-title: "The 'Satoshi Nakamoto' pseudonym and AKIRA: a techno-orientalist reading"
+title: "Why is 'Satoshi Nakamoto' a Japanese name? A techno-orientalist reading from AKIRA's lineage"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "metzdowd"
