@@ -80,7 +80,24 @@ The two findings that bear directly on the hypothesis weighing are: (a) Back ran
 
 Hashcash is the proof-of-work primitive Bitcoin reuses for mining and consensus, and the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) cites it as a primary precedent. Authorship correlation between the cited primitive and the system reusing it is structurally consistent with the documentary record.
 
-The objection: the whitepaper also cites Wei Dai's b-money. By the same forensic-fit argument, Wei Dai would be a parallel candidate. The argument selects "the cypherpunks Satoshi explicitly cited" as a candidate set rather than Back uniquely (the [hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) treats Back and Wei Dai together as Group A for this reason).
+**The scope of "Hashcash author = Bitcoin author".** What Hashcash actually contains is narrower than the colloquial reading of its name suggests. The "cash" in *Hashcash* is a computational-postage metaphor — Adam Back's 1997 paper proposed it as an anti-spam denial-of-service counter-measure, not a currency. The system is a self-contained proof-of-work stamp scheme; it has no ledger, no transfers between parties, no consensus mechanism, no monetary supply, no concept of balance. Bitcoin reuses the proof-of-work primitive and either redesigns or independently invents essentially everything else:
+
+| Bitcoin component | In Hashcash? | Origin |
+|---|---|---|
+| Proof of work | ✅ yes | from Hashcash |
+| Blockchain (the ledger) | ❌ no | Bitcoin |
+| Decentralized consensus | ❌ no | Bitcoin |
+| UTXO model | ❌ no | Bitcoin |
+| Mining-reward issuance | ❌ no | Bitcoin |
+| 21-million monetary cap | ❌ no | Bitcoin |
+| P2P network propagation | ❌ no | Bitcoin |
+| Public-key transactions (ECDSA) | ❌ no | Bitcoin (the cypherpunk public-key-cash literature is older but is not in Hashcash) |
+| Difficulty adjustment | ❌ no | Bitcoin |
+| Block timestamping and chain ordering | ❌ no | Bitcoin |
+
+Authoring Hashcash means designing one of Bitcoin's many components — the spam-deterrence stamp scheme that Bitcoin repurposes as the basis for mining. The forensic-fit argument tightens or weakens depending on whether the reader counts that component as *the* design idea Bitcoin needed or as *one of* the design ideas Bitcoin needed.
+
+The objection from candidate-set scope: the whitepaper also cites Wei Dai's b-money. By the same forensic-fit argument, Wei Dai would be a parallel candidate. The argument selects "the cypherpunks Satoshi explicitly cited" as a candidate set rather than Back uniquely (the [hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) treats Back and Wei Dai together as Group A for this reason).
 
 ### 2.3 Cypherpunk credentials, capability, and English level
 
