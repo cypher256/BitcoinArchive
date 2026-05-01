@@ -101,9 +101,9 @@ translationStatus: complete
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
 | [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
-| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [詳細](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
-| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [詳細](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
-| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | [詳細](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [正体](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [正体](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
+| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
 
 **色の意味：** 🟢＝サトシの公的プロファイルと整合／🔴＝整合しない／🟡＝部分的または混在する整合（各列の判定基準は §1 方法論を参照）。
 

@@ -100,9 +100,9 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 | [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
 | [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
 | [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
-| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | [Details](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
-| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Details](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
-| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Details](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | [Identity](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
+| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Identity](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
+| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Identity](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
 **Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit (per-column criteria in §1 Methodology).
 
