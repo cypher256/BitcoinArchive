@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Paul Le Roux"
     slug: "paul-le-roux"
-description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry lays out each candidate's core argument and external status (self-denials, court rulings, technical disproofs), and aligns them in a seven-dimension candidate profile comparison table. The Sassaman, Kaneko, and Todd hypotheses have dedicated entries for deeper treatment. The entry does not name the most likely Satoshi candidate."
+description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry lays out each candidate's core argument and external status (self-denials, court rulings, technical disproofs), and aligns them in a seven-dimension candidate profile comparison table. Candidates with dedicated hypothesis entries are treated more deeply there (see the \"Individual\" column in the table). The entry does not name the most likely Satoshi candidate."
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -67,7 +67,7 @@ This entry compares the ten named candidates for Satoshi Nakamoto's identity tha
 - the 18-month intensive development window from mid-2007 through August 2008;
 - the April 2011 withdrawal.
 
-The seven-dimension profile comparison table (§1) aligns the ten candidates against this outline. The Sassaman, Kaneko, and Todd hypotheses have dedicated entries in this archive for deeper treatment; the other seven candidates are treated within this entry.
+The seven-dimension profile comparison table (§1) aligns the ten candidates against this outline. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Individual" column in the table); the other candidates are treated within this entry.
 
 This entry does not name "the most likely Satoshi candidate."
 
@@ -244,4 +244,4 @@ Each profile shares the same micro-structure: background, the hypothesis (propos
 - Profile-comparison labels (🟢, 🔴, 🟡) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
-- For full treatment of the Sassaman, Kaneko, and Todd hypotheses, see the individual entries. Other candidates do not have dedicated hypothesis entries in this archive.
+- For full treatment of candidates with dedicated entries, see the "Individual" column in the table. Other candidates do not have dedicated hypothesis entries in this archive.
