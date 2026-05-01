@@ -57,8 +57,6 @@ translationStatus: complete
 
 2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは [サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期ウィンドウの内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
 
-> "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
->
 > 残念だけど、**今いる場所からは**外部からの接続が受けられず、それで少し厄介なことになっている。
 
 本分析で注目するのは **"from where I am"（今いる場所からは）** の句。
@@ -78,8 +76,6 @@ translationStatus: complete
 
 1 月 11 日の v0.1.2 リリース告知で、サトシ本人が以下のように述べている:
 
-> "All the problems I've been finding are in the code that automatically finds and connects to other nodes, since I wasn't able to test it in the wild until now. There are many more ways for connections to get screwed up on the real Internet."
->
 > 見つけた問題はすべて、他ノードの自動検出・接続コードに関するものだ。今まで実環境でテストできなかったから。実際のインターネットには、接続がおかしくなる経路がもっとたくさんある。
 
 このリリースノートは、同じ週にサトシ本人がピア接続の問題を再現し、原因を追跡し、修正を出荷したことを記録している — 具体的には「ファイアウォール背後で 1 接続しか受けられず、2 本目が切断と再接続を繰り返す」シナリオに対する個別の修正を含む。

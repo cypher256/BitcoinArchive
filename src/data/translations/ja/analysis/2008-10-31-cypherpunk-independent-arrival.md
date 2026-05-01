@@ -125,9 +125,7 @@ translationStatus: complete
 
 アダム・バックの 2008 年 8 月 21 日の返信が、サトシに b-money を初めて教えた。サトシの返信は COPA 対ライト裁判の証拠にそのまま記録されている:
 
-> "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
->
-> （ありがとう、b-money のページは知らなかった。でも私のアイデアはまさにそこから出発している）
+> ありがとう、b-money のページは知らなかった。でも私のアイデアはまさにそこから出発している。
 
 これが、設計と実装の 18 か月間に b-money — 設計空間上で最も近い先行提案 — を知らなかったことを、[サトシ自身の言葉](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で確認する一次資料である。サトシはこれを知った後、翌日（2008 年 8 月 22 日）にウェイ・ダイへ直接連絡し、ホワイトペーパーに [1] として引用を追加した。
 
@@ -145,9 +143,7 @@ translationStatus: complete
 
 ウェイ・ダイの 2014 年 1 月の回想（[アーカイブ済み](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)）が、独立した第二の制約を与える:
 
-> "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
->
-> （私の推測では、サトシは学術的な暗号研究やサイファーパンクのコミュニティに以前から積極的に参加していた人物ではない。もしそうなら、文体やコーディングスタイルから既に身元が特定されているはずだ）
+> 私の推測では、サトシは学術的な暗号研究やサイファーパンクのコミュニティに以前から積極的に参加していた人物ではない。もしそうなら、文体やコーディングスタイルから既に身元が特定されているはずだ。
 
 二つの独立した観察 — サトシ自身の b-money 不知の自認と、ダイの識別性論証 — が同じ像に収束する: サイファーパンクのコミュニティでの可視的な参加の外で、開発期間中に技術系譜の中心提案のうち一つ（Hashcash）だけを知って作業していた設計者の像。
 

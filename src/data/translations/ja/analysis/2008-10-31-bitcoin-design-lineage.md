@@ -62,7 +62,7 @@ translationStatus: complete
 
 ホワイトペーパーの 8 引用を区分する前に、サトシの記録された開発過程の特徴を 1 つ確認しておく必要がある。なぜならそれが各区分の名前付けに影響するからである。サトシは [2008 年 11 月 10 日](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)、ハル・フィニーが暗号学メーリングリストで最初の技術的質問を投げかけた翌日に、こう書いている：
 
-> "I appreciate your questions. I actually did this kind of backwards. I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper. I think I will be able to release the code sooner than I could write a detailed spec."（質問はありがたい。実は私はこれを逆順でやった。全問題を解けると自分で納得するためにまず全コードを書く必要があり、それから論文を書いた。詳細仕様を書くより、コードを公開する方が早いと思う）
+> 質問はありがたい。実は私はこれを逆順でやった。全問題を解けると自分で納得するためにまず全コードを書く必要があり、それから論文を書いた。詳細仕様を書くよりもコードを公開する方が早いと思う。
 
 これはホワイトペーパーがサトシの過程の*終わり*に位置することを示す — *始まり*ではない。論文は動作するコードベースを文書化したものであり、引用文献はその文書化された仕事を既存の文献に位置づけるために集められたものである。「開発期間」 という慣習的な意味（コード以前の独立した段階）は本エントリーの枠組みでは正確ではない — サトシは概念的な仕事をコードと一緒に進めていた。以下では「**開発期間**」 という用語で、サトシがビットコインを構築していた期間（コードを書き、設計上の問題を解決し、最終的にその結果を文書化する論文を書いた期間）を指す。
 
