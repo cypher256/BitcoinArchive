@@ -1,5 +1,5 @@
 ---
-title: "サトシ活動タイムライン 2008〜2014 — 記録された全イベントの年代順 master index"
+title: "サトシ活動タイムライン 2008〜2014 — 記録された全イベントの年代順総合索引"
 date: 2008-08-20T00:00:00Z
 type: "analysis"
 source: "metzdowd"
@@ -39,7 +39,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリは、アーカイブに収録されたサトシ・ナカモト著作の全イベントを年代順に並べた master index であり、D3 によるインタラクティブなタイムラインとして提示する。
+本エントリは、アーカイブに収録されたサトシ・ナカモト著作の全イベントを年代順に並べた総合索引であり、D3 によるインタラクティブなタイムラインとして提示する。
 
 **収録範囲:** サトシが著者として記録されているアーカイブエントリすべて — メール、メーリングリスト投稿（cryptography、bitcoin-list、p2p-research）、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリースを含む。サトシについて第三者が書いたものは含まない。
 
