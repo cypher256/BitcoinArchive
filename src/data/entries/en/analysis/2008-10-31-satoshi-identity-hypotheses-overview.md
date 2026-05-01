@@ -67,7 +67,7 @@ This entry compares the ten named candidates for Satoshi Nakamoto's identity tha
 - the 18-month intensive development window from mid-2007 through August 2008;
 - the April 2011 withdrawal.
 
-The seven-dimension profile comparison table (§1) aligns the ten candidates against this outline. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Individual" column in the table); the other candidates are treated within this entry.
+The seven-dimension profile comparison table (§1) aligns the candidates against this outline. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Individual" column in the table); the other candidates are treated within this entry.
 
 This entry does not name "the most likely Satoshi candidate."
 
@@ -117,7 +117,7 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 ## 3. Candidate profiles
 
-The ten candidates fall into three groups by how they entered Satoshi-identity discourse:
+The candidates fall into three groups by how they entered Satoshi-identity discourse:
 
 - **A. Cypherpunks Satoshi explicitly cited** — Adam Back, Wei Dai
 - **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
