@@ -19,6 +19,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-design-lineage
   - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request

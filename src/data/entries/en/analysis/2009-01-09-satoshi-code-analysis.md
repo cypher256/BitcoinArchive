@@ -24,6 +24,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
+  - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"

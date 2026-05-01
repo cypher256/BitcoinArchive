@@ -21,6 +21,7 @@ secondarySources:
   - name: "Wikipedia (English) — Satoshi Nakamoto"
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-anonymity-architecture

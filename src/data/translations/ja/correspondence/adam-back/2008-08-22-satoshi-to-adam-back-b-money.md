@@ -26,6 +26,7 @@ secondarySources:
   - name: "CryptoSlate - Adam Back files previously unseen Satoshi emails"
     url: "https://cryptoslate.com/adam-back-files-previously-unseen-satoshi-nakamoto-emails-in-craig-wright-trial/"
 relatedEntries:
+  - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
 translationStatus: complete

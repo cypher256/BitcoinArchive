@@ -619,4 +619,6 @@ export const tagTranslations: Record<string, string> = {
   'new-york-times': 'ニューヨーク・タイムズ',
   'stylometric-analysis': '文体計量分析',
   'investigation': '調査',
+  'bitcoin': 'ビットコイン',
+  'design-lineage': '設計系譜',
 };
