@@ -1,5 +1,5 @@
 ---
-title: "ピーター・トッド＝サトシ仮説"
+title: "ピーター・トッド＝サトシ正体仮説"
 date: 2024-10-08T00:00:00Z
 type: "analysis"
 source: "hbo"
