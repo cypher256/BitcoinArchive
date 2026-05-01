@@ -5,6 +5,7 @@ import { absoluteUrl } from '../../i18n/utils';
 const lang = 'en';
 const title = 'Novel — Genesis: The Disappearance of the Founder and the Promise';
 const description = 'A historical fiction about the disappearance of Satoshi Nakamoto. Built on the primary sources archived by Bitcoin Institute, the novel reads the silence of one developer and the choices he left behind.';
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
@@ -108,8 +109,8 @@ const description = 'A historical fiction about the disappearance of Satoshi Nak
         Martti Malmi and Mike Hearn, Hal Finney's "Running bitcoin," Laszlo Hanyecz's pizza
         thread, the BitcoinTalk thread on the 184 billion BTC overflow, the judgement in
         <em>COPA v. Wright</em> — all of these are reachable from the
-        <a href="/entries/">entries index</a> and the
-        <a href="/participants/">figures index</a>.
+        <a href={`${basePath}/entries/`}>entries index</a> and the
+        <a href={`${basePath}/participants/`}>figures index</a>.
       </p>
       <p>
         You can read the novel first and check the record afterwards, or read the record first
