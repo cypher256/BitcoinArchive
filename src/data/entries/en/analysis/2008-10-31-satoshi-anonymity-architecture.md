@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A structural reading of the layered means by which the pseudonym 'Satoshi Nakamoto' remained unidentified across the design window, the public phase, and the staged withdrawal. The entry organizes observable traces (pseudonym choice, communication channels, linguistic patterns, development environment, genesis-block parameter constants, staged handover) into six layers and asks why no single identity hypothesis simultaneously explains all of them. The pair entry to the identity-hypotheses overview: that entry asks 'who is Satoshi'; this entry asks 'why are the leads dispersed.'"
+description: "A structural reading of the layered means by which the pseudonym 'Satoshi Nakamoto' remained unidentified across the development window, the public phase, and the staged withdrawal. The entry organizes observable traces (pseudonym choice, communication channels, linguistic patterns, development environment, genesis-block parameter constants, staged handover) into six layers and asks why no single identity hypothesis simultaneously explains all of them. The pair entry to the identity-hypotheses overview: that entry asks 'who is Satoshi'; this entry asks 'why are the leads dispersed.'"
 isSatoshi: false
 homeOrder: 2
 tags:
@@ -70,7 +70,7 @@ inlineLinkKeywords:
   - "anonymity layers"
 ---
 
-This entry is descriptive. It does not claim that any specific intent organized the layers below; it organizes the observable traces left in the public record into a structural reading of how the pseudonym 'Satoshi Nakamoto' remained unidentified through the design window (mid-2007 through August 2008), the public phase (October 2008 through December 2010), and the staged withdrawal (September 2010 through April 2011).
+This entry is descriptive. It does not claim that any specific intent organized the layers below; it organizes the observable traces left in the public record into a structural reading of how the pseudonym 'Satoshi Nakamoto' remained unidentified through the development window (mid-2007 through August 2008), the public phase (October 2008 through December 2010), and the staged withdrawal (September 2010 through April 2011).
 
 This entry complements the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the [identification asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/). The overview asks "who is Satoshi" and compares named candidates against the documented public-record outline. The asymmetry analysis asks "given so much surviving material and so many public attempts, why does the gap persist." This entry answers "how did Satoshi stay anonymous" — by organizing the means of non-identification into six layers and noting that **any single identity hypothesis must reconcile all of them at once**.
 
@@ -188,7 +188,7 @@ The six layers are independent in the sense that each can be separately observed
 **Reading the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) through the layered structure.** Each named candidate aligns with some subset of the layers and fails to align with others:
 
 - Cypherpunk-cited candidates (Adam Back, Wei Dai) align with the cypherpunk-fora and BTC-lineage backgrounds (layers 1 and 2 background) but their pre-launch correspondence with Satoshi is itself the primary evidence against (third-party-reception behavior, not same-author scaffolding).
-- Capability-fit candidates with documented 2007–2008 visibility (Hal Finney, Nick Szabo) fail the staged-withdrawal layer (timing) and the design-window invisibility expectation that Wei Dai's 2014 LessWrong remark articulated.
+- Capability-fit candidates with documented 2007–2008 visibility (Hal Finney, Nick Szabo) fail the staged-withdrawal layer (timing) and the development-window invisibility expectation that Wei Dai's 2014 LessWrong remark articulated.
 - Self-claim candidates (Craig Wright) and name-match candidates (Dorian Nakamoto) fail multiple layers simultaneously.
 - Capability-only candidates (Peter Todd, Isamu Kaneko, Paul Le Roux) align with one or two layers (implementation capability, Japanese-name match) and fail the others.
 

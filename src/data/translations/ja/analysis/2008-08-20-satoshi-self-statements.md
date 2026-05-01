@@ -85,7 +85,7 @@ translationStatus: complete
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
 | "I'm getting ready to release a paper that expands on your ideas into a complete working system"（あなたのアイデアを完全に動作するシステムに拡張する論文を公開する準備をしている） | [→ アダム・バック 2008-08-20](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | 著者性と意図の自己帰属。後続のホワイトペーパー公開で確定 |
-| "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point"（b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている） | [→ アダム・バック 2008-08-21](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | 設計期間中の特定の知識ギャップの自己開示 |
+| "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point"（b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている） | [→ アダム・バック 2008-08-21](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | 開発期間中の特定の知識ギャップの自己開示 |
 | "I was very interested to read your b-money page"（あなたの b-money ページを非常に興味深く読んだ）（バックの紹介後） | [→ ウェイ・ダイ 2008-08-22](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 2008-08-22 | 上の行と内部的に整合 |
 | "I believe I've worked through all those little details over the last year and a half while coding it"（コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきた） | [cryptography メーリングリスト 2008-11-17](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 2008-11-17 | 設計開始を 2007 年半ば頃に特定 |
 | "I've developed a new open source P2P e-cash system called Bitcoin... It's completely decentralized... because everything is based on crypto proof instead of trust"（Bitcoin と呼ぶ新しいオープンソース P2P 電子キャッシュシステムを開発した。完全に分散化されている、なぜならすべてが信頼ではなく暗号学的証明に基づいているからだ） | [P2P Foundation フォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) | 2009-02-11 | 一人称による公的著者性の表明。プロジェクトを制度的信頼に対立する位置に置く |
@@ -130,7 +130,7 @@ translationStatus: complete
 これらは形式的な識別子宣言ではなく技術的会話のなかでの何気ない発言であるため、最も証拠的価値が高い:
 
 - 「1 年半」のタイムライン（cryptography メーリングリスト 2008-11-17 + マルミ 2009-07-21）は設計作業を 2007 年半ば頃以降に位置づける
-- 「I wasn't aware of the b-money page」の自己開示（アダム・バック 2008-08-21）は設計期間中のサトシのサイファーパンク技術系譜への露出範囲を絞り込む — [サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で詳しく扱う
+- 「I wasn't aware of the b-money page」の自己開示（アダム・バック 2008-08-21）は開発期間中のサトシのサイファーパンク技術系譜への露出範囲を絞り込む — [サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で詳しく扱う
 - 一人称による著者性の表明（バック宛「I'm getting ready to release a paper...」、P2P Foundation「I've developed... Bitcoin」）は、作業を一貫して単一個人に帰属させており、チームへの帰属ではない
 
 ### 2.3 運用状態と能力の自己開示
@@ -159,8 +159,8 @@ translationStatus: complete
 
 **サトシ自身の発言から確立されること:**
 
-- 設計タイムライン: 2007 年半ば頃から 2008 年 8 月までの実装期間
-- 設計時点の知識境界: ハッシュキャッシュは知っていた、b-money は知らなかった
+- 開発タイムライン: 2007 年半ば頃から 2008 年 8 月までの実装期間
+- 開発時点の知識境界: ハッシュキャッシュは知っていた、b-money は知らなかった
 - リリース週の運用状態: 場所依存的な接続制約
 - 能力プロファイル: Linux より Windows のほうが快適
 - 撤退時の心理状態: 退く準備ができている、個人的な注目という枠組みに不快感
@@ -202,7 +202,7 @@ translationStatus: complete
 ## 6. まとめ
 
 - サトシによる識別子主張（日本人、年齢、所在地）は単一の P2P Foundation プロフィールに集中しており、記録の他の場所では裏付けられない。広い合意の読みは、これらが伝記的真実ではなく誤誘導するように設計されたプロフィール項目だというもの
-- 設計過程、知識境界、運用状態についてのサトシの自己言及は何気なく、かつ裏付けられている。それらは作業を 2007 年頃以降に位置づけ、設計時のサイファーパンク知識への露出を絞り込み、Linux 経験の限定された Windows 中心の開発者像を描く
+- 開発過程、知識境界、運用状態についてのサトシの自己言及は何気なく、かつ裏付けられている。それらは作業を 2007 年頃以降に位置づけ、開発時のサイファーパンク知識への露出を絞り込み、Linux 経験の限定された Windows 中心の開発者像を描く
 - サトシは動機の表明をほとんど行わなかった。プロジェクトの制度的信頼への対立的枠組みは、明示的な自己叙述よりも、コードと設計選択を通じて伝わってきた
 - 2011 年 4 月の撤退の一連の発言は、3 つの独立した受信者経路（マイク・ハーン、ギャビン・アンドレセン、その後に続いた BitcoinTalk の沈黙）を通して整合している
 - 自己言及が行動的証拠と収束する場所では、両者は同じ開発者像を描く。乖離する場所では、その乖離は識別子位置づけ的な主張に完全に集中している — それはまさに設計された仮名による乖離パターンである

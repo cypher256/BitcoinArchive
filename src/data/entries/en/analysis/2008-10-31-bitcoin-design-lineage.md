@@ -36,6 +36,8 @@ secondarySources:
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 relatedEntries:
+  - aftermath/1997-05-01-adam-back-hashcash-announcement
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
@@ -57,10 +59,16 @@ Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cyp
 
 ## 1. Citation categories
 
-The whitepaper's eight references fall into three categories with respect to Satoshi's documented design process. A fourth category — novel components — is not represented in the references list because there is nothing to cite.
+Before splitting the eight whitepaper references into categories, one feature of Satoshi's documented process matters for how the categories are named. Satoshi told Hal Finney on [November 10, 2008](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/), the day after Hal's first technical questions on the cryptography mailing list:
 
-1. **Used during design (primary-source-confirmed).** Satoshi was demonstrably aware of the reference and using its concepts during the design period. The August 20–22, 2008 email exchange between Satoshi and [Adam Back](/BitcoinArchive/participants/adam-back/) establishes [Hashcash](http://www.hashcash.org/papers/hashcash.pdf) in this category.
-2. **Cited post-hoc (primary-source-confirmed).** Satoshi was *not* aware of the reference during the design period, learned of it later, and added the citation to the whitepaper's reference list. The August 22, 2008 email exchange confirms [Wei Dai's b-money](http://www.weidai.com/bmoney.txt) in this category.
+> "I appreciate your questions. I actually did this kind of backwards. I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper. I think I will be able to release the code sooner than I could write a detailed spec."
+
+This places the whitepaper at the *end* of Satoshi's process, not the start. The paper documented a working code base; the references were assembled to anchor the documented work in existing literature. "Design period" in the conventional sense — a discrete pre-implementation phase — is not the right frame; Satoshi was building Bitcoin in code while doing the conceptual work. We use "development period" below to mean the period in which Satoshi was building Bitcoin (writing code, working through the design problems, and ultimately writing the paper that documents the result).
+
+With that frame, the whitepaper's eight references fall into three categories with respect to Satoshi's documented process. A fourth category — novel components — is not represented in the references list because there is nothing to cite.
+
+1. **Used during development (primary-source-confirmed).** Satoshi was demonstrably aware of the reference and using its concepts while building Bitcoin. The August 20–22, 2008 email exchange between Satoshi and [Adam Back](/BitcoinArchive/participants/adam-back/) establishes [Hashcash](http://www.hashcash.org/papers/hashcash.pdf) in this category.
+2. **Cited post-hoc (primary-source-confirmed).** Satoshi was *not* aware of the reference during development, learned of it later, and added the citation to the whitepaper's reference list. The August 22, 2008 email exchange confirms [Wei Dai's b-money](http://www.weidai.com/bmoney.txt) in this category.
 3. **General computer-science knowledge (background).** The reference belongs to standard cryptography or probability theory available to any well-read computer scientist of the period. Whether Satoshi consulted the specific cited paper or arrived at the concept via general training is not recoverable from primary sources. Merkle trees (1980), Haber-Stornetta linked timestamping (1991–1997), and Feller's probability-theory textbook (1957) fall here.
 4. **Novel components (no citation possible).** Components Bitcoin invents without precedent. Decentralized consensus by longest-chain rule weighted by PoW, the UTXO model, mining-reward block-subsidy issuance, the 21-million cap, the difficulty-adjustment algorithm, and the operational P2P network all fall here.
 
@@ -68,7 +76,7 @@ The whitepaper's eight references fall into three categories with respect to Sat
 
 | Bitcoin component | Cited reference | Use category | Notes |
 |---|---|---|---|
-| Proof of work | [6] Hashcash (Back 1997, rev. 2002) | Used during design | Confirmed by Aug 20–22, 2008 emails between Satoshi and Back |
+| Proof of work | [6] Hashcash (Back 1997, rev. 2002) | Used during development | Confirmed by Aug 20–22, 2008 emails between Satoshi and Back |
 | Linked timestamping / chain ordering | [2-5] Haber-Stornetta 1991, 1993, 1997 + Massias 1999 | General CS knowledge | Standard 1990s timestamping literature; Bitcoin's chain-of-blocks concept resembles linked timestamping |
 | Merkle trees in block headers | [7] Merkle 1980 | General CS knowledge | Standard CS textbook concept; used for transaction-set efficiency |
 | Probability analysis of double-spend | [8] Feller 1957 | General CS knowledge | Standard probability textbook; used in whitepaper §11 Calculations |
@@ -85,15 +93,15 @@ The novel components are not in the whitepaper's reference list because no one h
 
 ## 3. Primary-source evidence for the citation categories
 
-### 3.1 Hashcash: used during design
+### 3.1 Hashcash: used during development
 
-Satoshi's [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) asked specifically about the correct citation format for Hashcash. The email body describes early Bitcoin design in detail and references Hashcash as an existing primitive Satoshi was reusing. This places Hashcash usage *during* design, not *after*.
+Satoshi's [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) asked specifically about the correct citation format for Hashcash. The email body describes Bitcoin's mechanism in detail and references Hashcash as an existing primitive Satoshi was reusing in the code. This places Hashcash usage *during* development, not *after* it.
 
 The "cash" in *Hashcash* is a computational-postage metaphor (Back's 1997 anti-spam denial-of-service counter-measure), not a currency. The system contains only the proof-of-work primitive — no ledger, no transfers, no consensus, no monetary supply. Bitcoin reuses the primitive and builds the rest separately; see the [Adam Back hypothesis entry §2.2](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the implications for the Hashcash-author-equals-Bitcoin-author argument.
 
 ### 3.2 b-money: cited post-hoc
 
-Satoshi's [August 22, 2008 reply to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) opens with "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." This is direct primary-source evidence that b-money was added to the whitepaper's reference list *after* the design was substantially complete. The same day, Satoshi [emailed Wei Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) about the proposal.
+Satoshi's [August 22, 2008 reply to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) opens with "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." This is direct primary-source evidence that b-money was added to the whitepaper's reference list *after* the code was substantially complete (per the November 10, 2008 letter to Hal Finney quoted in §1, the code preceded the paper). The same day, Satoshi [emailed Wei Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) about the proposal.
 
 The citation that appears in the whitepaper is reference [1] — Wei Dai, "b-money," 1998. The numerical position is editorial; the content was added late. [Wei Dai's 2014 retrospective on the AALWA thread](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) is consistent with this: Wei Dai indicates Satoshi was "not previously active" in cypherpunk communities — a framing that fits a designer who had to discover b-money via referral.
 
@@ -110,7 +118,7 @@ Decentralized consensus by longest-chain rule weighted by proof-of-work, the UTX
 The component-level breakdown bears directly on identity-hypothesis weighting. Two specific implications:
 
 - **Authoring Hashcash means designing one of Bitcoin's many components.** The PoW primitive is one cited contribution in a system that contains many novel components. The forensic-fit argument that "Hashcash author = Bitcoin author" can therefore weight Hashcash as a partial contribution but not as the whole. See the [Adam Back = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/).
-- **Authoring b-money similarly does not mean authoring Bitcoin's design.** The b-money citation was added after Satoshi learned of it from Adam Back's referral; b-money's concepts did not influence Bitcoin's design during the design period. See the [hypotheses overview's Wei Dai profile](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
+- **Authoring b-money similarly does not mean authoring Bitcoin's design.** The b-money citation was added after Satoshi learned of it from Adam Back's referral; b-money's concepts did not influence Bitcoin's design during the development period. See the [hypotheses overview's Wei Dai profile](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 Other named-candidate hypotheses (Sassaman, Kaneko, Todd, Wright, etc.) are not directly tied to whitepaper-reference authorship and are evaluated on different grounds (timing, capability, visibility, external denials). See the [hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 

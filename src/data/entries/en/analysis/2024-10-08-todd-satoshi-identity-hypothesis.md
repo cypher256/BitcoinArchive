@@ -130,7 +130,7 @@ The objection: an undergraduate's nearly-empty public GitHub commit graph during
 
 ### 3.1 Age and OCAD timeline
 
-Todd was born on March 14, 1985 in Vancouver, Canada (Wikidata Q130523424). In mid-2007, when Satoshi's [documented 18-month Bitcoin design window](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) starts, Todd was 22 years old, an undergraduate at OCAD University pursuing an Integrated Media (fine arts) degree. He graduated in 2011. The hypothesis requires this person to have, in parallel with the OCAD program, designed a novel consensus mechanism, written the whitepaper, shipped the v0.1 codebase, run the network, and corresponded as Satoshi for two and a half years — while leaving no documented cryptographic or distributed-systems coursework, mailing-list activity, or other technical-protocol work in his pre-2012 public record. Possible, but not without cost.
+Todd was born on March 14, 1985 in Vancouver, Canada (Wikidata Q130523424). In mid-2007, when Satoshi's [documented 18-month Bitcoin development window](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) starts, Todd was 22 years old, an undergraduate at OCAD University pursuing an Integrated Media (fine arts) degree. He graduated in 2011. The hypothesis requires this person to have, in parallel with the OCAD program, designed a novel consensus mechanism, written the whitepaper, shipped the v0.1 codebase, run the network, and corresponded as Satoshi for two and a half years — while leaving no documented cryptographic or distributed-systems coursework, mailing-list activity, or other technical-protocol work in his pre-2012 public record. Possible, but not without cost.
 
 ### 3.2 No documented cypherpunk presence pre-2012
 
@@ -150,7 +150,7 @@ The technical-community rejection of the documentary's evidence does not by itse
 
 ## 4. Within the broader documentary record
 
-The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during design, support a "not a visibly active cypherpunk during 2007–2008" reading.
+The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during development, support a "not a visibly active cypherpunk during 2007–2008" reading.
 
 That reading does not rule out Todd, but it does not select him either. The capability profile Bitcoin v0.1 demonstrates (cryptographic protocol design, distributed-systems engineering, monetary mechanism design, Bitcoin-source-level shipping in C++, near-native English) is what one would expect of someone with deep cypherpunk-cryptographic experience, not someone whose documented record consists of hardware-electronics projects and an OCAD fine-arts program.
 

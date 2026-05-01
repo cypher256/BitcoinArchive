@@ -10,7 +10,7 @@ participants:
     slug: "isamu-kaneko"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the Japanese-language hypothesis that Isamu Kaneko (the developer of the Winny peer-to-peer file-sharing system, who was prosecuted in Japan from 2004 and died on July 6, 2013) was the person behind Satoshi Nakamoto. The entry sets out the supporting arguments (Japanese-name fit, Winny P2P expertise, Japanese-English bilingual capability, anti-establishment posture) and the counter-evidence (active criminal-case scrutiny during Bitcoin's design period, intellectual-lineage gap, English-register difference, code-language traces, loose timing relative to Satoshi's silence) at the same level of detail. The hypothesis circulates in Japanese-language public discourse where Kaneko is one of the most-named domestic candidates."
+description: "Documentation of the Japanese-language hypothesis that Isamu Kaneko (the developer of the Winny peer-to-peer file-sharing system, who was prosecuted in Japan from 2004 and died on July 6, 2013) was the person behind Satoshi Nakamoto. The entry sets out the supporting arguments (Japanese-name fit, Winny P2P expertise, Japanese-English bilingual capability, anti-establishment posture) and the counter-evidence (active criminal-case scrutiny during Bitcoin's development period, intellectual-lineage gap, English-register difference, code-language traces, loose timing relative to Satoshi's silence) at the same level of detail. The hypothesis circulates in Japanese-language public discourse where Kaneko is one of the most-named domestic candidates."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -85,17 +85,17 @@ The objection: ideological alignment with cypherpunk principles is widespread am
 
 ## 4. The counter-evidence
 
-### 4.1 Active criminal-case scrutiny during Bitcoin's design period
+### 4.1 Active criminal-case scrutiny during Bitcoin's development period
 
-The strongest counter-evidence is the timing of Kaneko's legal proceedings against Bitcoin's design and launch period:
+The strongest counter-evidence is the timing of Kaneko's legal proceedings against Bitcoin's development and launch period:
 
 | Period | Kaneko status | Bitcoin status |
 |---|---|---|
-| 2004-05 to 2006-12 | Arrested, pre-trial, district-court trial | (pre-design) |
-| 2006-12 to 2009-10 | Convicted, on appeal at Osaka High Court | **Bitcoin designed; white paper Oct 2008; v0.1 released Jan 2009** |
+| 2004-05 to 2006-12 | Arrested, pre-trial, district-court trial | (pre-development) |
+| 2006-12 to 2009-10 | Convicted, on appeal at Osaka High Court | **Bitcoin development; white paper Oct 2008; v0.1 released Jan 2009** |
 | 2009-10 to 2011-12 | Acquitted at High Court, prosecution appealed to Supreme Court | **Satoshi most active forum/code period; departs Dec 2010 / Apr 2011** |
 
-For the entire 18-month intensive design period (mid-2007 through August 2008, [per Satoshi's own documented timeline](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), Kaneko was a convicted defendant on appeal, under sustained scrutiny from the Japanese police, the prosecution, his legal team, the technical press, and the academic community that was watching his case. The hypothesis requires that during this period he secretly designed and built a system that, if attributed to him, would have constituted a major item of personal news. The probability of this remaining undisclosed across his counsel, his university supervisors, and his social environment is low.
+For the entire 18-month intensive development period (mid-2007 through August 2008, [per Satoshi's own documented timeline](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), Kaneko was a convicted defendant on appeal, under sustained scrutiny from the Japanese police, the prosecution, his legal team, the technical press, and the academic community that was watching his case. The hypothesis requires that during this period he secretly designed and built a system that, if attributed to him, would have constituted a major item of personal news. The probability of this remaining undisclosed across his counsel, his university supervisors, and his social environment is low.
 
 ### 4.2 Intellectual-lineage gap
 
@@ -112,7 +112,7 @@ Kaneko's death (July 6, 2013) is two years and two months after Satoshi's last d
 
 ## 5. Within the broader documentary record
 
-The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin design period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money / Bit Gold intellectual lineage.
+The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money / Bit Gold intellectual lineage.
 
 Kaneko fits the "outside the visible cypherpunk community" condition (he was not in those forums) but does not fit the "near-native English" or "Hashcash / b-money / Bit Gold lineage" conditions on the documentary evidence available.
 

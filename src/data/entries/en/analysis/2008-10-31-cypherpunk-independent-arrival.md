@@ -16,7 +16,7 @@ participants:
     slug: "eric-hughes"
   - name: "Timothy May"
     slug: "timothy-may"
-description: "An editorial reading of Satoshi's relationship to the cypherpunk movement, built from three converging primary-source observations: (1) Satoshi's own admission that he did not know b-money during 18 months of design work, (2) Wei Dai's testimony that Satoshi was 'not previously active' in cypherpunk communities, and (3) the unusually tight alignment between Satoshi's documented practices and the six-point ideological core articulated in Eric Hughes's 1993 Cypherpunk's Manifesto. A companion entry covers the separate descriptive reading of the pseudonym against the techno-orientalist symbolic field."
+description: "An editorial reading of Satoshi's relationship to the cypherpunk movement, built from three converging primary-source observations: (1) Satoshi's own admission that he did not know b-money during 18 months of development work, (2) Wei Dai's testimony that Satoshi was 'not previously active' in cypherpunk communities, and (3) the unusually tight alignment between Satoshi's documented practices and the six-point ideological core articulated in Eric Hughes's 1993 Cypherpunk's Manifesto. A companion entry covers the separate descriptive reading of the pseudonym against the techno-orientalist symbolic field."
 isSatoshi: false
 homeOrder: 5
 tags:
@@ -105,9 +105,9 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 | 2004 | Hal Finney | RPOW (Reusable Proof-of-Work) | Centralized server issuing reusable PoW tokens; Finney later became Bitcoin's first non-Satoshi node operator |
 | 2008 | Satoshi Nakamoto | Bitcoin | The synthesis |
 
-§2 examines what of this lineage Satoshi actually knew during the design period, and what he did not.
+§2 examines what of this lineage Satoshi actually knew during the development period, and what he did not.
 
-## 2. What Satoshi documented knowing — and not knowing — during the design period
+## 2. What Satoshi documented knowing — and not knowing — during the development period
 
 ### 2.1 The 18-month claim
 
@@ -130,9 +130,9 @@ This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/
 
 ### 2.3 What this constrains
 
-The chronology constrains what can be said about Satoshi's relationship to the cypherpunk technical lineage during design:
+The chronology constrains what can be said about Satoshi's relationship to the cypherpunk technical lineage during development:
 
-| Source | Status during design period (mid-2007 to 2008-08-20) |
+| Source | Status during development period (mid-2007 to 2008-08-20) |
 |---|---|
 | Hashcash (Back 1997) | **Known** — Satoshi sought the citation himself |
 | b-money (Dai 1998) | **Not known** — Satoshi's own admission to Back |
@@ -144,7 +144,7 @@ Wei Dai's January 2014 retrospective ([archived](/BitcoinArchive/entries/afterma
 
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
-Two independent strands — Satoshi's own b-money disclaimer and Dai's identifiability argument — converge on the same picture: a designer working substantially outside the cypherpunk community's visible participation, knowing one (Hashcash) of the technical lineage's central proposals during design.
+Two independent strands — Satoshi's own b-money disclaimer and Dai's identifiability argument — converge on the same picture: a designer working substantially outside the cypherpunk community's visible participation, knowing one (Hashcash) of the technical lineage's central proposals during development.
 
 ## 3. Documented practice and the cypherpunk core: an alignment table
 
@@ -165,7 +165,7 @@ The alignment is unusually tight on all six points. None of the matches is engin
 
 Three observations now sit on the table:
 
-- (a) Satoshi did not know b-money during the 18-month design period (own admission, August 2008).
+- (a) Satoshi did not know b-money during the 18-month development period (own admission, August 2008).
 - (b) Satoshi was likely not previously active in cypherpunk communities (Wei Dai's identifiability argument, 2014).
 - (c) Satoshi's documented practice maps point-by-point onto the cypherpunk philosophical core (§3 alignment).
 
@@ -175,9 +175,9 @@ But the reading should be held in three tiers, not collapsed into a single claim
 
 | Tier | Claim | Status |
 |---|---|---|
-| Established | Satoshi did not know b-money during the design period | Primary-source confirmation in own words (Aug 21, 2008) |
+| Established | Satoshi did not know b-money during the development period | Primary-source confirmation in own words (Aug 21, 2008) |
 | Strongly supported | Satoshi was not a visible cypherpunk community participant | Wei Dai testimony + identifiability argument + absence of pre-2008 Satoshi-attributable mailing list activity |
-| Genuinely open | Whether Satoshi was a passive *reader* of cypherpunk material — books, archived list discussion, Mondo 2000, the manifestos — during or before the design period | The public record neither establishes nor refutes this |
+| Genuinely open | Whether Satoshi was a passive *reader* of cypherpunk material — books, archived list discussion, Mondo 2000, the manifestos — during or before the development period | The public record neither establishes nor refutes this |
 
 The "independent arrival" reading is compatible with the open tier in either direction. A reader who absorbed the manifestos quietly and built a system that operationalizes them would equally fit the documented record. What the record rules out is *visible community membership*, not exposure to the ideas.
 
@@ -192,7 +192,7 @@ This matters because it limits how strong a claim the alignment in §3 can suppo
 
 ## 6. Summary
 
-- During the 18-month Bitcoin design period (mid-2007 to August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
+- During the 18-month Bitcoin development period (mid-2007 to August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
 - Wei Dai's 2014 retrospective adds a second independent constraint: Satoshi was probably not previously active in cypherpunk communities, by an identifiability argument.
 - Satoshi's documented practice in 2008-2011 maps point-by-point onto the six-axis cypherpunk philosophical core articulated in Eric Hughes's 1993 *A Cypherpunk's Manifesto*.
 - The most parsimonious reading is *independent arrival* — convergence on the same answers from outside the visible community — but the question of passive readership remains open in the public record.

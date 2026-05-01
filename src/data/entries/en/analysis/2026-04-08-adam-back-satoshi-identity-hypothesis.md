@@ -41,6 +41,8 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Adam Back Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
+  - aftermath/1997-05-01-adam-back-hashcash-announcement
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - aftermath/2008-08-20-adam-back-biography
@@ -67,7 +69,7 @@ This entry documents the recurring public hypothesis that [Adam Back](/BitcoinAr
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Back authored Bitcoin under the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) and the [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — were stagecraft to maintain the pseudonym. Under this reading, Back has been the sole or principal author of Bitcoin from its design phase (mid-2007 onward) through Satoshi's withdrawal in 2011, and has run Blockstream since 2014 while continuing to publicly deny authorship.
+The hypothesis is that Back authored Bitcoin under the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) and the [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — were stagecraft to maintain the pseudonym. Under this reading, Back has been the sole or principal author of Bitcoin from its development phase (mid-2007 onward) through Satoshi's withdrawal in 2011, and has run Blockstream since 2014 while continuing to publicly deny authorship.
 
 ## 2. The arguments the hypothesis rests on
 
@@ -106,6 +108,34 @@ Back is a long-tenure cypherpunk with documented cryptographic-protocol design e
 
 The objection: this profile applies to many senior cypherpunks of the period. It narrows the candidate set substantially but does not select Back specifically over (for instance) Wei Dai, Hal Finney, or Nick Szabo. Several of those candidates are also accommodated by Cafiero's "Hal Finney nearly tied" stylometric outcome.
 
+### 2.4 Eleven years of Hashcash's monetary-category positioning (1997–2008)
+
+Distinct from §2.2 (the Hashcash-author = Bitcoin-author forensic-fit argument) and §2.3 (cypherpunk credentials), this subsection collects the specific primary-source record of Back framing Hashcash within the digital-cash conversation, and engaging substantively with monetary-system design, before Bitcoin's 2008 launch.
+
+**Mapping Back's 1998-12-06 b-money critique to Bitcoin's design ten years later:**
+
+| Back 1998-12-06 issue | Bitcoin's resolution |
+|---|---|
+| ❶ Moore's-Law mint-cost decline → inflation pressure | **Difficulty adjustment** — re-targeted every 2016 blocks to keep block-time approximately constant against compute-power growth, decoupling mint-rate from hardware-cost decline |
+| ❹ Economy-of-scale custom-hardware advantage | **Unresolved** — surfaced later as the mining-ASIC concentration question in Bitcoin's operational history |
+| ❼ Resource-waste overhead equivalent to circulating value | **Live debate** — the energy-consumption critique that has continued to attach to Bitcoin's proof-of-work since launch |
+| Central proposal: "to create value you burn CPU time, just like with hashcash" | **Bitcoin's central mechanism** — Bitcoin couples a Hashcash-style PoW primitive with a decentralized digital-cash ledger and uses block-subsidy issuance for mint allocation |
+
+**Eleven-year arc:**
+
+| Year | Primary source | What Back said about Hashcash and money |
+|---|---|---|
+| 1997-05 | [Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-05-01-adam-back-hashcash-announcement/) (Cypherpunks list, cypherspace.org) | Positioned Hashcash as a "stop-gap measure until digicash becomes more widely used" |
+| 1998-12-06 | [Cypherpunks-list b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | Identified seven monetary-design issues in b-money; proposed "to create value you burn CPU time, just like with hashcash" |
+| 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
+| 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
+
+In Back's own retrospective framing in the [April 2026 X post](https://x.com/adam3us/status/2041811857732768148) responding to the NYT investigation: "I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash."
+
+The strength of the argument: this is documented, primary-source-verifiable, decade-long pre-Bitcoin engagement with the exact design space Bitcoin would occupy — proof-of-work as a digital-cash minting mechanism. Back identified Moore's-Law inflation pressure (issue ❶) ten years before Bitcoin's difficulty-adjustment algorithm resolved it. Back enumerated "hashcash as a minting mechanism for b-money" in a 2002 paper.
+
+The objection: identifying problems is not the same as solving them. The 1998 critique enumerates seven issues with b-money but proposes resolutions to none of them. The 2002 paper proposes b-money minting as an application but does not implement it. The Hashcash + b-money combination Bitcoin would later realize requires the integrated synthesis — the longest-chain consensus rule, the difficulty-adjustment algorithm that resolves issue ❶, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap — which is documented as Satoshi's contribution in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/). Back's pre-2008 record is of analysis and positioning; Bitcoin v0.1 is of integrated implementation. The same observation applies to other cypherpunks (Wei Dai, Nick Szabo) who proposed conceptual designs without implementing them — capability for analysis does not by itself select the analyst as the implementer.
+
 ## 3. The counter-evidence
 
 ### 3.1 The 2008 emails read as third-party reception
@@ -117,6 +147,11 @@ The strongest archive-internal counter-evidence is the structure of the [August 
 - August 22: [Satoshi to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) — replied "I wasn't aware of the b-money page" and the same day [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
 
 If Back authored Bitcoin under the Satoshi pseudonym, the structure does not naturally make sense: Back would not need to ask "Back" for citation guidance, and Back would not need to "discover" b-money via his own referral to himself. The simpler reading is that the exchange is what it appears to be — Satoshi asking Back for help, Back responding as a third party with relevant pointers, Satoshi following the pointers.
+
+**Two further structural observations strengthen the third-party reading:**
+
+- *The contact was minimal in scope.* Satoshi asked Back only about citation format. Back had spent the prior decade publicly engaging with monetary-system design — the [1998-12-06 b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) enumerated seven monetary-design issues in b-money (Moore's-Law inflation pressure, custom-hardware economy of scale, fiat on/off-ramp privacy, resource-waste overhead, etc.) and the [2002 Hashcash paper §7](http://www.hashcash.org/papers/hashcash.pdf) listed b-money minting as an application — yet Satoshi did not ask Back about any of these issues, nor about the resolution of issue ❶ (which Bitcoin's difficulty-adjustment algorithm in fact addresses). The exchange treats Back as a citation source, not as a technical collaborator. If the same person is on both sides, it is not obvious why the staging would be limited to citation format rather than including substantive engagement that would make the exchange more convincing as plausible-deniability cover.
+- *Back did not read the attached draft paper, and later publicly characterized that as a mistake.* The August 22 email contained the prelaunch draft (`ecash.pdf`); Back acknowledged later in a Cointelegraph interview that not reading it was "probably my biggest mistake." Under the staging hypothesis (Back writes both sides; the audience is third-party readers like the COPA court, NYT investigators, and future researchers), the staging needs to look convincing to those third parties. A self-staged exchange would naturally include enthusiastic engagement with the attached draft, since both that engagement and any subsequent retrospective commentary about it would be under the staging author's control. The actual record contains the opposite: minimal initial engagement, and a later admission that not engaging was "my biggest mistake" — a public self-criticism of one's own staged decision that the staging hypothesis cannot easily accommodate. Under the third-party reading, the same behavior is unsurprising — a busy researcher received an unsolicited prepublication draft from someone he did not know, deprioritized it, and later regretted not catching the significance.
 
 ### 3.2 February 2024 COPA v Wright sworn testimony
 
@@ -136,7 +171,7 @@ In the same post-publication interviews, Back has framed the question against th
 
 ## 4. Within the broader documentary record
 
-Wei Dai's [2014 retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) on the AALWA thread argues that Satoshi was "not previously active" in the visible cypherpunk community during the design period — a framing that selects against any candidate visibly active in cypherpunk discussion during 2007–2008. Back was visibly active in cypherpunk-list discussions (this is exactly what the NYT stylometric analysis depends on), so the [identifiability argument](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) counts against Back as a candidate, alongside Sassaman and other visibly-active cypherpunks of the period.
+Wei Dai's [2014 retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) on the AALWA thread argues that Satoshi was "not previously active" in the visible cypherpunk community during the development period — a framing that selects against any candidate visibly active in cypherpunk discussion during 2007–2008. Back was visibly active in cypherpunk-list discussions (this is exactly what the NYT stylometric analysis depends on), so the [identifiability argument](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) counts against Back as a candidate, alongside Sassaman and other visibly-active cypherpunks of the period.
 
 Satoshi's own statement to Back in August 2008 — "I wasn't aware of the b-money page" — independently selects against the Back-as-Satoshi reading. If Back were Satoshi, the email would be a self-deception of no visible benefit to either party.
 

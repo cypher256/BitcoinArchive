@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A consolidated inventory of statements in which Satoshi Nakamoto referred to himself, across the public record (August 2008 – April 2011). Five subcategories: identity claims on the P2P Foundation profile, design-process self-disclosures, operational state self-disclosures (including expertise self-assessments), farewell statements, and authenticity-disputed entries. Each row is anchored to a primary source with an explicit verifiability assessment. The entry separates what Satoshi said about himself from what the behavioral record independently shows, and notes where the two converge or diverge. Out of scope: pure business announcements that contain no self-reference."
+description: "A consolidated inventory of statements in which Satoshi Nakamoto referred to himself, across the public record (August 2008 – April 2011). Five subcategories: identity claims on the P2P Foundation profile, development-process self-disclosures, operational state self-disclosures (including expertise self-assessments), farewell statements, and authenticity-disputed entries. Each row is anchored to a primary source with an explicit verifiability assessment. The entry separates what Satoshi said about himself from what the behavioral record independently shows, and notes where the two converge or diverge. Out of scope: pure business announcements that contain no self-reference."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -58,7 +58,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-This entry consolidates the statements in which Satoshi Nakamoto referred to himself across the documented public record (August 2008 – April 2011). The scope is broader than just identity claims: it includes design-process self-disclosures, operational-state self-disclosures (including expertise self-assessments), and farewell statements — anything where Satoshi was the subject of his own sentence in a non-trivial way.
+This entry consolidates the statements in which Satoshi Nakamoto referred to himself across the documented public record (August 2008 – April 2011). The scope is broader than just identity claims: it includes development-process self-disclosures, operational-state self-disclosures (including expertise self-assessments), and farewell statements — anything where Satoshi was the subject of his own sentence in a non-trivial way.
 
 **Inclusion criterion:** the statement contains a self-reference (Satoshi's own state, position, capability, intent, or identity).
 
@@ -80,14 +80,14 @@ Five subcategories, in chronological order within each. "Status" indicates how t
 
 All three identity claims appear together on a single artifact and nowhere else in the documented record.
 
-### 1.2 Design-process self-disclosures
+### 1.2 Development-process self-disclosures
 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
 | "I'm getting ready to release a paper that expands on your ideas into a complete working system" | [→ Adam Back, 2008-08-20](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | Self-attribution of authorship and intent; confirmed by subsequent publication |
-| "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point" | [→ Adam Back, 2008-08-21](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | Self-disclosure of a specific knowledge gap during design |
+| "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point" | [→ Adam Back, 2008-08-21](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | Self-disclosure of a specific knowledge gap during development |
 | "I was very interested to read your b-money page" (after Back's referral) | [→ Wei Dai, 2008-08-22](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 2008-08-22 | Internally consistent with the prior row |
-| "I believe I've worked through all those little details over the last year and a half while coding it" | [cryptography ML, 2008-11-17](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 2008-11-17 | Locates design start around mid-2007 |
+| "I believe I've worked through all those little details over the last year and a half while coding it" | [cryptography ML, 2008-11-17](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 2008-11-17 | Locates development start around mid-2007 |
 | "I've developed a new open source P2P e-cash system called Bitcoin... It's completely decentralized... because everything is based on crypto proof instead of trust" | [P2P Foundation forum](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) | 2009-02-11 | First-person public authorship statement; positions the project against institutional trust |
 
 ### 1.3 Operational state and expertise self-disclosures
@@ -125,12 +125,12 @@ The three claims that locate Satoshi as a person — Japanese, born April 5, 197
 
 The profile claims are best read as **declared identity material that the rest of the record does not confirm** — not as "Satoshi's actual biography."
 
-### 2.2 Design-process self-disclosures
+### 2.2 Development-process self-disclosures
 
 These are the most evidentially valuable self-references because they are casual asides in technical conversation, not formal identity declarations:
 
-- The "year and a half" timeline (cryptography ML 2008-11-17 + Malmi 2009-07-21) places design work in roughly mid-2007 onward.
-- The "I wasn't aware of the b-money page" disclosure (Adam Back 2008-08-21) bounds Satoshi's exposure to the cypherpunk technical lineage during design — analyzed in detail in [the cypherpunk independent-arrival entry](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+- The "year and a half" timeline (cryptography ML 2008-11-17 + Malmi 2009-07-21) places development work in roughly mid-2007 onward.
+- The "I wasn't aware of the b-money page" disclosure (Adam Back 2008-08-21) bounds Satoshi's exposure to the cypherpunk technical lineage during development — analyzed in detail in [the cypherpunk independent-arrival entry](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 - The first-person authorship statements ("I'm getting ready to release a paper..." to Back; "I've developed... Bitcoin" on P2P Foundation) consistently attribute the work to a single individual, not a team.
 
 ### 2.3 Operational state and expertise self-disclosures
@@ -160,7 +160,7 @@ The disputed 2014 P2P Foundation post is the single ambiguous addition: brief, c
 **Established by Satoshi's own statements:**
 
 - Design timeline: roughly mid-2007 to August 2008 for the implementation work
-- Knowledge boundary at design time: knew Hashcash, did not know b-money
+- Knowledge boundary at development time: knew Hashcash, did not know b-money
 - Operational state during launch week: location-contingent connection constraint
 - Expertise profile: more comfortable on Windows than Linux
 - Psychological state at departure: ready to step back, uncomfortable with personal-attention framing
@@ -202,7 +202,7 @@ The systematic pattern: **operational and technical self-statements converge wit
 ## 6. Summary
 
 - Satoshi's self-statements about basic identity (Japanese, age, location) are concentrated on a single P2P Foundation profile and are not corroborated elsewhere in the record. The consensus reading is that they are designed-to-mislead profile fields, not biographical truth.
-- Satoshi's self-statements about the design process, knowledge boundaries, and operational state are casual and corroborated. They locate the work in roughly 2007 onward, bound the cypherpunk-knowledge exposure during design, and describe a Windows-centered developer with limited Linux experience.
+- Satoshi's self-statements about the development process, knowledge boundaries, and operational state are casual and corroborated. They locate the work in roughly 2007 onward, bound the cypherpunk-knowledge exposure during development, and describe a Windows-centered developer with limited Linux experience.
 - Satoshi made very few motivational statements; the project's anti-trust framing came through code and design choices more than through explicit self-description.
 - The departure sequence in April 2011 is consistent across three independent recipient channels (Mike Hearn, Gavin Andresen, and the BitcoinTalk silence that followed).
 - Where self-statements converge with behavioral evidence, both describe the developer. Where they diverge, the divergence is concentrated entirely in identity-locating claims — exactly the divergence pattern of a designed pseudonym.
