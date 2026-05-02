@@ -9,9 +9,12 @@
  * even though the archive itself has a dedicated internal entry. Those
  * body links should be redirected to the internal entry path.
  *
- * Reports each finding with the source file, the link text, the external
- * URL, and the internal entry id that should replace it. Same-language
- * preference: a JA body links to the JA mirror, an EN body to EN.
+ * Reports each finding with the source file, the file-relative line number,
+ * the link text, the external URL, and the internal entry id that should
+ * replace it. Same-language preference: a JA body links to the JA mirror,
+ * an EN body to EN. When multiple internal entries share the same
+ * sourceUrl, all candidates are listed and the human picks; the script
+ * never silently auto-selects across distinct entries.
  *
  * Excludes:
  *   - Frontmatter links (only body markdown is scanned)
@@ -119,7 +122,8 @@ const findings = [];
 for (const f of allFiles) {
   const c = readFileSync(f, 'utf-8');
   const fmEnd = c.indexOf('\n---\n', 4);
-  const body = fmEnd > 0 ? c.slice(fmEnd + 5) : c;
+  const bodyStart = fmEnd > 0 ? fmEnd + 5 : 0;
+  const body = c.slice(bodyStart);
 
   const lang = f.startsWith(JA_DIR) ? 'ja' : 'en';
   const selfId = entryIdFromFile(f);
@@ -132,18 +136,26 @@ for (const f of allFiles) {
     if (EXCLUDE_URLS.has(url)) continue;
     if (!urlIndex.has(url)) continue;
 
-    const candidates = urlIndex.get(url);
-    // Prefer same-language entry; fall back to EN if no JA mirror.
-    const target = candidates.find(e => e.lang === lang) || candidates[0];
-    if (target.id === selfId) continue;
+    // Drop self-links from candidates first, then pick same-language preference
+    // from what remains. If multiple distinct entries share this sourceUrl,
+    // we report all of them — the human chooses, the script does not guess.
+    const all = urlIndex.get(url).filter(e => e.id !== selfId);
+    if (all.length === 0) continue;
+    const sameLang = all.filter(e => e.lang === lang);
+    const targets = sameLang.length > 0 ? sameLang : all;
 
-    const lineNo = body.slice(0, m.index).split('\n').length;
+    // File-relative line number (not body-relative): so that grep / editors /
+    // GitHub line links land on the actual line in the file.
+    const absIndex = bodyStart + m.index;
+    const lineNo = c.slice(0, absIndex).split('\n').length;
+
     findings.push({
       file: path.relative(process.cwd(), f),
       line: lineNo,
       text,
       url,
-      shouldLinkTo: target.id,
+      candidates: targets.map(t => t.id),
+      ambiguous: targets.length > 1,
       lang,
     });
   }
@@ -165,7 +177,12 @@ for (const f of findings) {
   console.error(`  ${f.file}:${f.line}`);
   console.error(`    text: "${f.text.slice(0, 80)}"`);
   console.error(`    external: ${f.url}`);
-  console.error(`    should link to: ${f.shouldLinkTo}`);
+  if (f.ambiguous) {
+    console.error(`    ambiguous — multiple internal entries share this sourceUrl, pick one:`);
+    for (const c of f.candidates) console.error(`      - ${c}`);
+  } else {
+    console.error(`    should link to: ${f.candidates[0]}`);
+  }
   console.error();
 }
 
