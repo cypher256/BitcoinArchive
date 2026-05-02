@@ -64,7 +64,7 @@ translationStatus: complete
 
 本アーカイブは、ポパーの特定とサボの否定の双方に直接関わる一次資料を保持している：
 
-- [サボの 2008 年 4 月 27 日の暗号学メーリングリスト投稿](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) — ビットコイン白書の半年前 — Bit Gold の実装について「誰か手伝ってコードを書いてくれないか？」 と公的に協力者を募集している。本投稿は特定に対する単独で最も強い反証信号である：2008 年 4 月時点でサボは、ビットコイン白書が同年 10 月に提示する設計よりも建築的に単純な系の実装協力を、公的に要請している。
+- [サボの 2008 年 4 月 27 日の Unenumerated ブログでのコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) — ビットコイン白書の半年前 — Bit Gold の実装について「誰か手伝ってコードを書いてくれないか？」 と公的に協力者を募集している。本コメントは特定に対する単独で最も強い反証信号である：2008 年 4 月時点でサボは、ビットコイン白書が同年 10 月に提示する設計よりも建築的に単純な系の実装協力を、公的に要請している。
 - [サボの 2011 年 5 月 28 日 Unenumerated 投稿「Bitcoin, what took ye so long?」](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — その中でサボは「ナカモトは私の設計が抱えていた重要な安全上の欠陥を改善した（Nakamoto improved a significant security shortcoming that my design had）」 と書いており、Bit Gold の設計を自身の功として認めつつ、ナカモトを三人称で論じている。
 - [サボのプロフィールページ](/BitcoinArchive/ja/participants/nick-szabo/) — Unenumerated および Bit Gold の全記録を含む。
 

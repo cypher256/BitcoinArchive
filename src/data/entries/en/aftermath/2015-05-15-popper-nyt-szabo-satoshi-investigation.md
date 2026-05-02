@@ -63,7 +63,7 @@ The Popper piece marked the point at which the Szabo-as-Satoshi hypothesis cross
 
 The archive holds primary-source material that bears directly on Popper's identification and on Szabo's denial:
 
-- [Szabo's April 27, 2008 post on the Cryptography mailing list](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) — six months before the Bitcoin whitepaper — asking "anybody want to help me code one up?" for Bit Gold. This post is the strongest single counter-signal to the identification: it places Szabo, in April 2008, publicly soliciting implementation help for a system architecturally simpler than the one the Bitcoin whitepaper would describe in October.
+- [Szabo's April 27, 2008 comment on his Unenumerated blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) — six months before the Bitcoin whitepaper — asking "anybody want to help me code one up?" for Bit Gold. The comment is the strongest single counter-signal to the identification: it places Szabo, in April 2008, publicly soliciting implementation help for a system architecturally simpler than the one the Bitcoin whitepaper would describe in October.
 - [Szabo's May 28, 2011 Unenumerated post "Bitcoin, what took ye so long?"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/), in which Szabo wrote "Nakamoto improved a significant security shortcoming that my design had" — discussing Nakamoto in the third person while crediting himself with Bit Gold's design.
 - [The Szabo biography page](/BitcoinArchive/participants/nick-szabo/) covering the full Unenumerated and Bit Gold record.
 
