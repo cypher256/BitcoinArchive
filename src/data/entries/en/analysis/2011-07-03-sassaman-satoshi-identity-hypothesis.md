@@ -21,9 +21,9 @@ tags:
 secondarySources:
   - name: "Wikipedia — Len Sassaman (Satoshi-identity section)"
     url: "https://en.wikipedia.org/wiki/Len_Sassaman"
-  - name: "Evan Hatch — Sassaman / Satoshi article (2021)"
-    url: "https://en.wikipedia.org/wiki/Len_Sassaman"
-    note: "Hatch's 2021 piece is referenced in Wikipedia as the most prominent recent articulation of the hypothesis. The original article URL has not been preserved in this archive's research."
+  - name: "Evan Hatch — 'Len Sassaman and Satoshi: a Cypherpunk history' (Medium, February 22, 2021)"
+    url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"
+    note: "The most prominent and most-cited public articulation of the Sassaman-as-Satoshi hypothesis. Foundational citation in subsequent journalism and Wikipedia."
   - name: "BitcoinTalk thread referencing the hypothesis (March 15, 2013)"
     url: "https://bitcointalk.org/"
     note: "Wikipedia identifies a March 15, 2013 BitcoinTalk thread as the earliest public discussion of the Sassaman-as-Satoshi hypothesis recovered in its sources. The specific topic URL has not been preserved here."
@@ -31,6 +31,7 @@ relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
@@ -49,7 +50,7 @@ This entry documents the recurring public hypothesis that [Len Sassaman](/Bitcoi
 
 The hypothesis is that Sassaman was the person behind the Satoshi Nakamoto pseudonym, withdrew from the project shortly before his death, and that the [final email to Gavin Andresen on April 26, 2011](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) — three months before Sassaman's suicide — was the closing of his Bitcoin life rather than a step away from one of many concurrent projects.
 
-The earliest public discussion identified in this archive's research is a [BitcoinTalk thread from March 15, 2013](https://bitcointalk.org/) (per Wikipedia). The most prominent later articulation is an article by developer Evan Hatch in 2021, which Wikipedia cites and which received coverage in cryptocurrency-focused media.
+The earliest public discussion identified in this archive's research is a [BitcoinTalk thread from March 15, 2013](https://bitcointalk.org/) (per Wikipedia). The most prominent later articulation is [Evan Hatch's February 22, 2021 Medium article *"Len Sassaman and Satoshi: a Cypherpunk history"*](/BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/), which Wikipedia cites and which received coverage in cryptocurrency-focused media.
 
 ## 2. The arguments the hypothesis rests on
 

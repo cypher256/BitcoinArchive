@@ -26,6 +26,7 @@ secondarySources:
     url: "https://www.slideshare.net/dakami/black-ops-of-tcpip-2011-black-hat-usa-2011"
 relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
 ---

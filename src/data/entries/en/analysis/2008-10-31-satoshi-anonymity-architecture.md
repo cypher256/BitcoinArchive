@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric"
   - "aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation"

@@ -27,6 +27,7 @@ secondarySources:
     url: "https://www.esat.kuleuven.be/cosic/"
 relatedEntries:
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

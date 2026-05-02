@@ -21,9 +21,9 @@ tags:
 secondarySources:
   - name: "Wikipedia — Len Sassaman（サトシ正体問題の節）"
     url: "https://en.wikipedia.org/wiki/Len_Sassaman"
-  - name: "エヴァン・ハッチ — サッサマン／サトシの記事（2021）"
-    url: "https://en.wikipedia.org/wiki/Len_Sassaman"
-    note: "ハッチによる 2021 年の記事は、近年の本仮説の最も目立つ定式化として Wikipedia から参照されている。原記事の URL は本アーカイブの調査範囲では復元できなかった。"
+  - name: "エヴァン・ハッチ — 「レン・サッサマンとサトシ：サイファーパンク史」（Medium、2021 年 2 月 22 日）"
+    url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"
+    note: "サッサマン＝サトシ仮説の最も注目度が高く最も多く引用される公的定式化。後続のジャーナリズムおよび Wikipedia における基礎参照源。"
   - name: "本仮説に言及した BitcoinTalk スレッド（2013 年 3 月 15 日）"
     url: "https://bitcointalk.org/"
     note: "Wikipedia は、サッサマン＝サトシ仮説に関する公的議論として、出典で復元できる最古のものとして 2013 年 3 月 15 日の BitcoinTalk スレッドを特定している。具体的なトピック URL は本アーカイブの記録には残っていない。"
@@ -31,6 +31,7 @@ relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
@@ -50,7 +51,7 @@ translationStatus: complete
 
 仮説の主張は、サッサマンがサトシ・ナカモトの仮名の中の人物だったというもの。彼は死の少し前にプロジェクトから退き、[2011 年 4 月 26 日のギャビン・アンドレセン宛て最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（サッサマン自殺の 3 か月前）が、複数の同時並行プロジェクトから一歩離れる動きではなく、彼のビットコインとしての人生を閉じる動作だった、というのがこの仮説の構造である。
 
-本アーカイブの調査で特定できた最古の公的議論は [2013 年 3 月 15 日の BitcoinTalk スレッド](https://bitcointalk.org/)（Wikipedia の引用）。最も目立つ後の定式化は、開発者エヴァン・ハッチによる 2021 年の記事であり、Wikipedia に引用され、暗号通貨関連メディアで一定の取り上げを受けた。
+本アーカイブの調査で特定できた最古の公的議論は [2013 年 3 月 15 日の BitcoinTalk スレッド](https://bitcointalk.org/)（Wikipedia の引用）。最も目立つ後の定式化は[エヴァン・ハッチによる 2021 年 2 月 22 日の Medium 記事「レン・サッサマンとサトシ：サイファーパンク史」](/BitcoinArchive/ja/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/)であり、Wikipedia に引用され、暗号通貨関連メディアで一定の取り上げを受けた。
 
 ## 2. 仮説が依拠する論点
 

@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
