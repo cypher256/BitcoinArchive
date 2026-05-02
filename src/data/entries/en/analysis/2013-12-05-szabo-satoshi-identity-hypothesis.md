@@ -55,6 +55,8 @@ relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
+  - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
+  - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis

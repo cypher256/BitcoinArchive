@@ -45,6 +45,8 @@ relatedEntries:
   - aftermath/2016-05-02-craig-wright-bbc-economist-claim
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
+  - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival

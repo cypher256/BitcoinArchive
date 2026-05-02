@@ -26,6 +26,8 @@ secondarySources:
   - name: "Gwern Mirror"
     url: "https://gwern.net/doc/www/unenumerated.blogspot.com/3ecbb48879787f383ef10206358e0a14adf2f5dd.html"
 relatedEntries:
+  - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
+  - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"

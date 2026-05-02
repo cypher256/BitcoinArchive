@@ -23,6 +23,8 @@ secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Nick Szabo"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-nick-szabo"
 relatedEntries:
+  - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
+  - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
