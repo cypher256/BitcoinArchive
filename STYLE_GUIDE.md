@@ -81,6 +81,36 @@ Typical pattern:
 - English: `> "..."` for short excerpted speech or statements
 - Japanese: `> 「...」` for short excerpted speech or statements
 
+## When a Hypothesis-Related Article Deserves Its Own Aftermath Entry
+
+Coverage of Satoshi-identity hypotheses (Skye Grey 2013 for Szabo, Hatch 2021
+for Sassaman, Carreyrou 2026 for Adam Back, HBO 2024 for Todd, etc.) accumulates
+quickly. Not every article warrants a standalone aftermath entry. Use this
+distinction:
+
+- **Claim events get a standalone entry.** The original articulation, a
+  major-press tier amplification with substantive new framing (NYT, HBO,
+  book), or a new methodological articulation (algorithmic stylometry vs.
+  manual stylometry) — these are documentary milestones in the hypothesis's
+  public history and route via `aftermath/`.
+- **Response events stay in `secondarySources`.** A named candidate's denial
+  to a journalist, a brief reactive comment, a "no I am not Satoshi" repeated
+  to multiple outlets — these belong in the hypothesis entry's
+  `secondarySources` with a `note:` capturing the verbatim line if needed.
+  They do not get their own aftermath unless **(a)** the response is a
+  formal sworn record (deposition, court filing, COPA witness testimony,
+  Patterson-style on-record family denial) or **(b)** the response is itself
+  a long-form public statement that introduces new framing (e.g., a candidate
+  publishing their own essay in response).
+
+Operational test: would a future reader want to navigate *to* this article
+as a destination, or would they want it cited *from* the hypothesis entry?
+Destinations get their own entry; citations live in `secondarySources`.
+
+When in doubt, default to `secondarySources` — promotion to a standalone
+aftermath is cheap if the article gains weight later, but pruning a
+proliferation of thin reactive aftermath entries is editorial work.
+
 ## Translation Principle
 
 When translating quoted material, preserve the function of the formatting, not
