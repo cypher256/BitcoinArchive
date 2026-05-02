@@ -38,7 +38,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2015 年 5 月 15 日、*ニューヨーク・タイムズ*は同紙の暗号通貨記者[ナサニエル・ポパー](https://en.wikipedia.org/wiki/Nathaniel_Popper)による「サトシ・ナカモトの謎とビットコイン誕生を読み解く（Decoding the Enigma of Satoshi Nakamoto and the Birth of Bitcoin）」 を掲載した。本記事はポパーの著書『デジタル・ゴールド：マネー再発明を試みた変人と億万長者たちの内幕』（Harper、同月刊行）からの抜粋であり、サイファーパンク時代の暗号学者で Bit Gold（1998 年構想、2005 年 12 月 29 日に Unenumerated ブログで完全公開）を設計し、1994 年に「スマートコントラクト」 という用語を命名した[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物として最も可能性が高い、と結論づけた。
+2015 年 5 月 15 日、*ニューヨーク・タイムズ*は同紙の暗号通貨記者[ナサニエル・ポパー](https://en.wikipedia.org/wiki/Nathaniel_Popper)による「サトシ・ナカモトの謎とビットコイン誕生を読み解く」 を掲載した。本記事はポパーの著書『デジタル・ゴールド：マネー再発明を試みた変人と億万長者たちの内幕』（Harper、同月刊行）からの抜粋であり、サイファーパンク時代の暗号学者で Bit Gold（1998 年構想、2005 年 12 月 29 日に Unenumerated ブログで完全公開）を設計し、1994 年に「スマートコントラクト」 という用語を命名した[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物として最も可能性が高い、と結論づけた。
 
 **取材の方法：**
 
