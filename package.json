@@ -22,6 +22,7 @@
     "check:editorial-markers": "node scripts/check-editorial-markers.mjs",
     "audit:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs",
     "audit:inline-reference-gaps": "node scripts/check-internal-links.mjs --inline-gaps",
+    "audit:external-link-redundancy": "node scripts/check-external-link-redundancy.mjs",
     "audit:f-candidates": "node scripts/check-editorial-markers.mjs --report-f-candidates",
     "extract:quotes": "node scripts/extract-quotes.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
