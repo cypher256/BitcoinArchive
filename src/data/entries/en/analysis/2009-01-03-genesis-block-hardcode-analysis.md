@@ -135,7 +135,7 @@ The "backdate hypothesis," the "retroactive timestamp aligned to the *Times* hea
 
 Inverted, Q1 becomes a more substantive question — *why was the release not ready by January 3?* Choosing the January 3 timestamp implicitly set January 3 as the target. Actual release was January 8, and Block 1 was mined January 9 at 02:54:25 UTC (on-chain `nTime`; Satoshi's node must have started some minutes earlier, though this is not recorded on chain). The five-day slip is a developer's slip against his own target date.
 
-The public signals — only about seven and a half hours between the January 8 19:27:40 UTC mailing list announcement ([metzdowd.com archive](https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html)) and the January 9 02:54:25 UTC Block 1 mining — weakly suggest "tight finish" over "generously buffered plan." This is speculative and cannot be decided from source code or chain data alone.
+The public signals — only about seven and a half hours between the January 8 19:27:40 UTC mailing list announcement ([metzdowd.com archive](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)) and the January 9 02:54:25 UTC Block 1 mining — weakly suggest "tight finish" over "generously buffered plan." This is speculative and cannot be decided from source code or chain data alone.
 
 ### 3.3 Q2 (the activity): empirically indeterminate
 
@@ -144,7 +144,7 @@ Independent of Q1, what exactly Satoshi was doing between 2009-01-03 and 01-08 c
 | Hypothesis | Contribution to Q2 | Assessment |
 |---|---|---|
 | **Testing / debugging / packaging** | Code hardening | SourceForge registration, documentation, binary builds were required. The most plausible Q2 activity |
-| **Vanity hash** | Nonce search time | The hash comfortably clears the difficulty-1 target (see §5.5). At 2009-era CPU SHA-256d rates (~1–10 MH/s, consistent with [Lerner's Patoshi estimate](https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/)), reaching a 10-hex-zero prefix has expected search time on the order of hours to a few days. When the nonce `2083236893` was actually found cannot be determined from chain data |
+| **Vanity hash** | Nonce search time | The hash comfortably clears the difficulty-1 target (see §5.5). At 2009-era CPU SHA-256d rates (~1–10 MH/s, consistent with [Lerner's Patoshi estimate](/BitcoinArchive/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)), reaching a 10-hex-zero prefix has expected search time on the order of hours to a few days. When the nonce `2083236893` was actually found cannot be determined from chain data |
 | **Mining program endurance testing** | Incidental nonce search | The mining program itself was one of the components shipped in v0.1. Exercising it under prolonged continuous operation is a reasonable part of final verification, independent of any intent to search for a "better" nonce. Under such a run, the best-hash search continues as a side effect. This is consistent with the harvest-best reading in §5.5 but attributes the motive to code endurance rather than depth targeting or ceremony duration. Both motives produce observations compatible with the actual nonce; chain data cannot separate them |
 | **Private testnet** | Private test network | A private testnet may have run between 1/3 and 1/9; nothing remains on chain to confirm or refute (see §8 Open questions). An [alternative pre-release genesis block dated September 10, 2008](/BitcoinArchive/entries/aftermath/2022-10-06-serhack-alternative-genesis-block/) exists in source Satoshi shared privately, establishing that test genesis blocks did occur during development |
 | **Peer-discovery requirement** | Mining start condition | v0.1 `main.cpp` (L2195–2199) waits in `while (vNodes.empty()) { Sleep(1000); ... }`, but a two-node configuration (or two processes on one host) satisfies this immediately. Satoshi could have launched two processes himself on 1/9 — this does not determine the gap |
@@ -178,11 +178,11 @@ Attribution of that search to Satoshi rests on circumstantial grounds:
 - Satoshi published the source code containing the constants — Satoshi decided or knew the values.
 - The *Times* headline pins the coinbase payload to a date from which Satoshi is known to have been active.
 - The coinbase output address `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` is widely attributed to Satoshi, but no one has produced a valid signature from its private key.
-- [Lerner's Patoshi pattern](https://bitslog.com/2013/09/03/new-mystery-about-satoshi/) links most of the first ~64 blocks to a single miner. By continuity, that miner is presumed to have run the genesis nonce search as well.
+- [Lerner's Patoshi pattern](/BitcoinArchive/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/) links most of the first ~64 blocks to a single miner. By continuity, that miner is presumed to have run the genesis nonce search as well.
 
 However:
 
-- The Patoshi pattern is recoverable only from **Block 1 onward**; Block 0's coinbase structure is special and the statistical technique does not apply. Stated explicitly in the [PLOS ONE 2021 paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001) and in Lerner's own writings.
+- The Patoshi pattern is recoverable only from **Block 1 onward**; Block 0's coinbase structure is special and the statistical technique does not apply. Stated explicitly in the [PLOS ONE 2021 paper](/BitcoinArchive/entries/aftermath/2021-09-30-plos-one-patoshi-anomaly-study/) and in Lerner's own writings.
 - Lerner explicitly keeps "Patoshi" distinct from "Satoshi" as an identity claim.
 
 What chain data cannot distinguish:

@@ -160,8 +160,8 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 | 日付 (UTC) | 出来事 | 出典 |
 |---|---|---|
 | 2010 年 9 月 | サトシ → ギャビン・アンドレセンへメール「他のプロジェクトに取り組んでいる」。具体的な日付・媒体は公開記録になく、アンドレセンの後年の回想からの再構成。 | ギャビン・アンドレセンのインタビュー ([CoinMarketCap「Satoshi Files: ギャビン・アンドレセン」](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
-| 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビンが適任だ」。プロジェクトマネージャーとしてアンドレセンを推薦。 | [`mmalmi.github.io/satoshi`](https://mmalmi.github.io/satoshi/) 公開メール |
-| 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」 スレッドへのサトシの公的反対投稿: 「No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way.」 | [BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280) |
+| 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビンが適任だ」。プロジェクトマネージャーとしてアンドレセンを推薦。 | [`mmalmi.github.io/satoshi` 公開メール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-02-first-contact-satoshi-reply/) |
+| 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」 スレッドへのサトシの公的反対投稿: 「No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way.」 | [BitcoinTalk スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/) |
 | 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (私的)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「I'm doing a few more things, then I plan to pass the baton.」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | 2010 年 12 月 15 日 | サトシ最終 SVN コミット (revision 202) — IRC 経由の外部 IP 取得処理の小さな修正。 | SourceForge SVN 履歴 |
 | 2010 年 12 月 19 日 | アンドレセンがリードメンテナーとしての就任を公式に発表。同日、GitHub `bitcoin/bitcoin` リポジトリ作成。 | BitcoinTalk アナウンスメント |

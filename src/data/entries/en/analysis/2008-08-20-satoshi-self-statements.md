@@ -74,9 +74,9 @@ Five subcategories, in chronological order within each. "Status" indicates how t
 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
-| Birth date: April 5, 1975 | [P2P Foundation profile (Wayback)](https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | profile creation, 2009 | Profile field; widely considered fictitious |
-| Nationality: Japanese | [P2P Foundation profile (Wayback)](https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | same | Profile field; contradicted by British/Commonwealth English usage |
-| Location: Japan | [P2P Foundation profile (Wayback)](https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto) | same | Profile field; contradicted by posting-timestamp analysis |
+| Birth date: April 5, 1975 | [P2P Foundation profile (Wayback)](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) | profile creation, 2009 | Profile field; widely considered fictitious |
+| Nationality: Japanese | [P2P Foundation profile (Wayback)](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) | same | Profile field; contradicted by British/Commonwealth English usage |
+| Location: Japan | [P2P Foundation profile (Wayback)](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) | same | Profile field; contradicted by posting-timestamp analysis |
 
 All three identity claims appear together on a single artifact and nowhere else in the documented record.
 
