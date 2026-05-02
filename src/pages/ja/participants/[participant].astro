@@ -58,6 +58,10 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
+const hypothesisEntry = filtered.find((e) =>
+  e.data.type === 'analysis' &&
+  e.id.includes('-satoshi-identity-hypothesis')
+);
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
@@ -109,6 +113,14 @@ const structuredData = [
       ) : <span />}
     </nav>
     <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
+
+    {hypothesisEntry && (
+      <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
+        <span class="hypothesis-icon">🔍</span>
+        <span class="hypothesis-label">サトシ正体仮説</span>
+        <span class="hypothesis-arrow">&rarr;</span>
+      </a>
+    )}
 
     {biographyContent && (
       <section class="biography-section">
@@ -162,6 +174,26 @@ const structuredData = [
   .life-dates {
     font-weight: normal;
     font-size: 0.6em;
+    color: var(--color-text-muted);
+  }
+  .hypothesis-callout {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+    padding: 0.4rem 0.9rem;
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 3px 3px 0;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-link);
+  }
+  .hypothesis-callout:hover {
+    text-decoration: underline;
+  }
+  .hypothesis-callout .hypothesis-arrow {
     color: var(--color-text-muted);
   }
   .biography-section {
