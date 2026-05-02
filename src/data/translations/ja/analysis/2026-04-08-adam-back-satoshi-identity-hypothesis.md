@@ -54,6 +54,7 @@ relatedEntries:
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture

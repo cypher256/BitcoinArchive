@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-08-20-satoshi-activity-timeline
   - analysis/2008-08-20-satoshi-self-statements

@@ -45,6 +45,7 @@ relatedEntries:
   - aftermath/2016-05-02-craig-wright-bbc-economist-claim
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
@@ -78,7 +79,7 @@ This entry does not name "the most likely Satoshi candidate."
 | [Adam Back](/BitcoinArchive/participants/adam-back/) | [Identity](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied (NYT 2026 investigation) |
 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
-| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | [Identity](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
 | [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
 | [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
 | [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
@@ -163,13 +164,7 @@ Each profile shares the same micro-structure: background, the hypothesis (propos
 
 **Background.** Computer scientist, legal scholar, and cryptographer (born 1964). Coined the term "smart contracts" (1994). Designer of [*Bit Gold*](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), a decentralized digital-currency proposal based on proof-of-work conceived in 1998 and published in full on his Unenumerated blog on December 29, 2005.
 
-**The hypothesis.** Bit Gold is the closest pre-Bitcoin design conceptually — proof-of-work, chained puzzles, decentralized verification — to Bitcoin's mechanism design. The combination of Bit Gold's conceptual proximity and Szabo's literary writing register on Unenumerated has produced a recurring hypothesis that Szabo was Satoshi.
-
-**Argument for.** Bit Gold's mechanism design overlaps with Bitcoin's on monetary-mechanism aspects (proof-of-work, scarcity, decentralized issuance) more directly than Hashcash (anti-spam) or b-money (general digital cash). Szabo's writing register on Unenumerated is at a sophisticated literary level. His thinking about digital scarcity mechanisms predates Bitcoin by a decade.
-
-**Argument against.** Szabo has publicly denied being Satoshi (per his Wikipedia biography and recurring public statements). Bit Gold remained a conceptual proposal — in [April 2008](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) Szabo himself asked publicly "Anybody want to help me code one up?" for a bit gold demo, indicating he had not implemented it. His documented work is in writing and legal scholarship, not implementation. Szabo's continued public writing (Unenumerated blog) throughout 2007–2008 is documented activity during the development window. Szabo also acknowledged in his [May 2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) that "Nakamoto improved a significant security shortcoming that my design had" — treating Satoshi as a separate person who improved on his work.
-
-**External status.** Self-denied.
+**External status.** Self-denied (multiple times: Frisby email 2014, NYT/Popper email response 2015, Tim Ferriss Show 2017). → See the [Szabo = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) for the Bit Gold conceptual-proximity argument, stylometric analyses (Skye Grey 2013, Aston University 2014, NYT/Popper 2015), circumstantial pattern matches (April 5 birthday coincidence, Hungarian descent, Tim Ferriss "I designed bitcoi…gold" slip), and the counter-evidence (the April 2008 Bit Gold implementation-request comment, the May 2011 "Nakamoto improved my design" blog, continuous Unenumerated activity during 2007–2008, and the absence of a C++ shipping record).
 
 #### Len Sassaman
 

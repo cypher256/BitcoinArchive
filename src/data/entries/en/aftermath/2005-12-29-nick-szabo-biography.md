@@ -30,6 +30,7 @@ secondarySources:
   - name: "Nick Szabo — 'Smart Contracts: Building Blocks for Digital Markets' (1996)"
     url: "https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html"
 relatedEntries:
+  - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"

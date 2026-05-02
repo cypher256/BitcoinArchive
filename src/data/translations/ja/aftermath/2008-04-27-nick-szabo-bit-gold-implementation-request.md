@@ -23,6 +23,7 @@ secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Nick Szabo"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-nick-szabo"
 relatedEntries:
+  - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper

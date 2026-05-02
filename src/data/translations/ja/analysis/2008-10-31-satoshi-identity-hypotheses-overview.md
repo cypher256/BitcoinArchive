@@ -45,6 +45,7 @@ relatedEntries:
   - aftermath/2016-05-02-craig-wright-bbc-economist-claim
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
+  - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
@@ -79,7 +80,7 @@ translationStatus: complete
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定（NYT 2026 調査） |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
-| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | — | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
 | [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
@@ -164,13 +165,7 @@ translationStatus: complete
 
 **経歴。** 計算機科学者・法学者・暗号学者（1964 年生まれ）。「スマートコントラクト」 という用語を 1994 年に提唱。プルーフ・オブ・ワークに基づく分散型デジタル通貨提案 [*Bit Gold*](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) の設計者で、1998 年に構想、2005 年 12 月 29 日に Unenumerated ブログで完全な設計を公開。
 
-**仮説。** Bit Gold は、ビットコインの機構設計に概念的に最も近い設計 — プルーフ・オブ・ワーク、連鎖パズル、分散検証 — と読まれている。Bit Gold の概念的近さと、Unenumerated でのサボの文学的水準の文体の組合せが、サボがサトシだったという仮説を繰り返し生んできた。
-
-**支持論点。** Bit Gold の機構設計は、貨幣メカニズム面（プルーフ・オブ・ワーク、希少性、分散発行）でビットコインに直接重なる — Hashcash（迷惑メール対策）や b-money（一般的なデジタルキャッシュ）よりも直接的。サボの Unenumerated での文体は洗練された文学的水準。デジタル希少性メカニズムに関する思考はビットコインの 10 年前から記録される。
-
-**反証。** サボはサトシであることを公的に否定している（Wikipedia 伝記および繰り返しの公的発言による）。Bit Gold は概念的提案のままにとどまった — [2008 年 4 月](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) にサボ本人が「Anybody want to help me code one up?」 と bit gold のデモ実装の手伝いを公的に募集しており、自身でも実装していなかったことを示す。彼の記録された仕事は文章と法学であり実装ではない。サボの 2007〜2008 年中の継続的な公開執筆（Unenumerated ブログ）は、開発期間中の記録された活動。サボは [2011 年 5 月のブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) で「Nakamoto improved a significant security shortcoming that my design had」 と認めており — サトシを別人として、自分の設計を改善した人物として扱っている。
-
-**外部的状況。** 自己否定。
+**外部的状況。** 自己否定（複数回：2014 年フリスビー宛メール、2015 年 NYT ポッパー宛メール返信、2017 年 Tim Ferriss Show ほか）。→ [サボ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) に Bit Gold の概念的近接論点、文体計量分析（Skye Grey 2013、アストン大学 2014、NYT ポッパー 2015）、状況証拠的なパターン一致（April 5 誕生日一致・ハンガリー系の系譜・Tim Ferriss「I designed bitcoi…gold」 言い間違え）、反証（2008 年 4 月の Bit Gold 実装支援募集コメント、2011 年 5 月「Nakamoto improved my design」 ブログ、2007〜2008 年の継続的な Unenumerated 活動、C++ 公開コードの不在）の検討を記載。
 
 #### レン・サッサマン
 
