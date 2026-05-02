@@ -69,7 +69,7 @@ This entry documents the recurring public hypothesis that [Adam Back](/BitcoinAr
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Back authored Bitcoin under the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) and the [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — were stagecraft to maintain the pseudonym. Under this reading, Back has been the sole or principal author of Bitcoin from its development phase (mid-2007 onward) through Satoshi's withdrawal in 2011, and has run Blockstream since 2014 while continuing to publicly deny authorship.
+The hypothesis is that Back is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) and the [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — were stagecraft to maintain the pseudonym. Under this reading, Back has been the person operating as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal, and has run Blockstream since 2014 while continuing to publicly deny being Satoshi.
 
 ## 2. The arguments the hypothesis rests on
 
@@ -146,7 +146,7 @@ The strongest archive-internal counter-evidence is the structure of the [August 
 - August 21: [Back to Satoshi](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) — provided the requested citation and suggested Satoshi look at Wei Dai's b-money proposal.
 - August 22: [Satoshi to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) — replied "I wasn't aware of the b-money page" and the same day [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
 
-If Back authored Bitcoin under the Satoshi pseudonym, the structure does not naturally make sense: Back would not need to ask "Back" for citation guidance, and Back would not need to "discover" b-money via his own referral to himself. The simpler reading is that the exchange is what it appears to be — Satoshi asking Back for help, Back responding as a third party with relevant pointers, Satoshi following the pointers.
+If Back were the person behind the Satoshi pseudonym, the structure does not naturally make sense: Back would not need to ask "Back" for citation guidance, and Back would not need to "discover" b-money via his own referral to himself. The simpler reading is that the exchange is what it appears to be — Satoshi asking Back for help, Back responding as a third party with relevant pointers, Satoshi following the pointers.
 
 **Two further structural observations strengthen the third-party reading:**
 

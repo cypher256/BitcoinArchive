@@ -112,7 +112,7 @@ translationStatus: complete
 
 ### 2.1 「18 か月」の自認
 
-サトシ本人が設計・実装期間を特定した記録は二つある:
+サトシ本人が開発期間を特定した記録は二つある:
 
 - 2008 年 11 月 17 日、cryptography メーリングリスト（ホワイトペーパー投稿の 17 日後）: "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them"（[アーカイブ済み投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)）
 - 2009 年 7 月 21 日、マルティ・マルミ宛メール: "need a break from it after 18 months development"（[アーカイブ済み](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)）
@@ -127,7 +127,7 @@ translationStatus: complete
 
 > ありがとう、b-money のページは知らなかった。でも私のアイデアはまさにそこから出発している。
 
-これが、設計と実装の 18 か月間に b-money — 設計空間上で最も近い先行提案 — を知らなかったことを、[サトシ自身の言葉](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で確認する一次資料である。サトシはこれを知った後、翌日（2008 年 8 月 22 日）にウェイ・ダイへ直接連絡し、ホワイトペーパーに [1] として引用を追加した。
+これが、開発の 18 か月間に b-money — 設計空間上で最も近い先行提案 — を知らなかったことを、[サトシ自身の言葉](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で確認する一次資料である。サトシはこれを知った後、翌日（2008 年 8 月 22 日）にウェイ・ダイへ直接連絡し、ホワイトペーパーに [1] として引用を追加した。
 
 ### 2.3 ここから絞り込まれること
 

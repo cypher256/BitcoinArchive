@@ -50,7 +50,7 @@ This entry documents the [Peter Todd](/BitcoinArchive/participants/peter-todd/) 
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Todd authored Bitcoin under the Satoshi Nakamoto pseudonym, that his publicly-stated start of Bitcoin work in 2014 misrepresents an earlier involvement, and that the December 2010 BitcoinTalk thread cited by the documentary captures a moment of accidental same-author scaffolding.
+The hypothesis is that Todd is the person behind the Satoshi Nakamoto pseudonym, that his publicly-stated start of Bitcoin work in 2014 misrepresents an earlier involvement, and that the December 2010 BitcoinTalk thread cited by the documentary captures a moment of accidental same-person scaffolding.
 
 The earliest public articulation of the hypothesis identified in this archive's research is the HBO documentary itself (October 8, 2024). The documentary attracted broad press coverage and was rejected by both the Bitcoin technical community and mainstream reviewers within days of release.
 

@@ -46,7 +46,7 @@ This entry documents the recurring public hypothesis that [Len Sassaman](/Bitcoi
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Sassaman authored Bitcoin under the Satoshi Nakamoto pseudonym, withdrew from the project shortly before his death, and that the [final email to Gavin Andresen on April 26, 2011](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) — three months before Sassaman's suicide — was the closing of his Bitcoin life rather than a step away from one of many concurrent projects.
+The hypothesis is that Sassaman was the person behind the Satoshi Nakamoto pseudonym, withdrew from the project shortly before his death, and that the [final email to Gavin Andresen on April 26, 2011](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) — three months before Sassaman's suicide — was the closing of his Bitcoin life rather than a step away from one of many concurrent projects.
 
 The earliest public discussion identified in this archive's research is a [BitcoinTalk thread from March 15, 2013](https://bitcointalk.org/) (per Wikipedia). The most prominent later articulation is an article by developer Evan Hatch in 2021, which Wikipedia cites and which received coverage in cryptocurrency-focused media.
 

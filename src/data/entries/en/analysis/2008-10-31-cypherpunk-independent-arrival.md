@@ -111,7 +111,7 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 
 ### 2.1 The 18-month claim
 
-Satoshi himself dated the design and implementation period twice in the public record:
+Satoshi himself dated the development period twice in the public record:
 
 - November 17, 2008, on the cryptography mailing list (17 days after the whitepaper was posted): "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them" ([archived post](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)).
 - July 21, 2009, in a private email to Martti Malmi: "need a break from it after 18 months development" ([archived](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)).
@@ -126,7 +126,7 @@ Adam Back's reply on August 21, 2008 introduced Satoshi to b-money for the first
 
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
-This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the 18 months of design and coding he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
+This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the 18 months of development he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
 
 ### 2.3 What this constrains
 

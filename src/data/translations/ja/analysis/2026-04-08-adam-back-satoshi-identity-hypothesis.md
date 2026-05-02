@@ -70,7 +70,7 @@ translationStatus: complete
 
 ## 1. 仮説が主張する内容
 
-仮説の主張は、バックがサトシ・ナカモトの仮名でビットコインを設計・実装したというもの。バックの「サトシ」 との文書化された公的記録上のやり取り — [2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)や[2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、バックは開発期間（2007 年央以降）からサトシの撤退（2011 年）までビットコインの単独または主要な作者であり、2014 年以降 Blockstream を運営しつつ公的には著作を否定し続けている、ということになる。
+仮説の主張は、バックがサトシ・ナカモトの仮名の中の人物だったというもの。バックの「サトシ」 との文書化された公的記録上のやり取り — [2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)や[2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、バックは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、2014 年以降 Blockstream を運営しつつ公的には正体を否定し続けている、ということになる。
 
 ## 2. 仮説が依拠する論点
 
@@ -147,7 +147,7 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に投稿した 
 - 8 月 21 日：[バックからサトシへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) — 求められた引用情報を提供し、ウェイ・ダイの b-money 提案を見るよう示唆。
 - 8 月 22 日：[サトシからバックへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 と返信し、同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送信。
 
-バックがサトシの仮名でビットコインを設計・実装したのなら、この構造は自然には成立しない：バックが「バック」 に引用ガイダンスを尋ねる必要はないし、自分から自分への紹介経由で b-money を「発見する」 必要もない。シンプルな読みは、通信が見たままのもの — サトシがバックに助けを求め、バックが第三者として関連するポインターを返し、サトシがそれを追ったというもの。
+バックがサトシ本人だったのなら、この構造は自然には成立しない：バックが「バック」 に引用ガイダンスを尋ねる必要はないし、自分から自分への紹介経由で b-money を「発見する」 必要もない。シンプルな読みは、通信が見たままのもの — サトシがバックに助けを求め、バックが第三者として関連するポインターを返し、サトシがそれを追ったというもの。
 
 **第三者応答という読みを強化する 2 つの構造的観察：**
 
