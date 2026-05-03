@@ -96,7 +96,25 @@ The strongest counter-evidence is the timing of Kaneko's legal proceedings again
 | 2006-12 to 2009-10 | Convicted, on appeal at Osaka High Court | **Bitcoin development; white paper Oct 2008; v0.1 released Jan 2009** |
 | 2009-10 to 2011-12 | Acquitted at High Court, prosecution appealed to Supreme Court | **Satoshi most active forum/code period; departs Dec 2010 / Apr 2011** |
 
-For the entire 18-month intensive development period (mid-2007 through August 2008, [per Satoshi's own documented timeline](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), Kaneko was a convicted defendant on appeal, under sustained scrutiny from the Japanese police, the prosecution, his legal team, the technical press, and the academic community that was watching his case. The hypothesis requires that during this period he secretly developed a system that, if attributed to him, would have constituted a major item of personal news. The probability of this remaining undisclosed across his counsel, his university supervisors, and his social environment is low.
+```mermaid
+gantt
+    title Kaneko legal case timeline overlaid on Bitcoin development
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    section Kaneko legal case
+        Arrest, pre-trial, district court trial            :k1, 2004-05-10, 2006-12-13
+        Convicted, on appeal at Osaka High Court           :k2, 2006-12-13, 2009-10-08
+        High Court acquittal, prosecution appeals          :k3, 2009-10-08, 2011-12-19
+        Supreme Court upholds acquittal                    :milestone, 2011-12-20, 0d
+    section Bitcoin development
+        Intensive development window (per Satoshi)         :b0, 2007-06-01, 2008-09-01
+        Whitepaper                                         :milestone, 2008-10-31, 0d
+        v0.1 released                                      :milestone, 2009-01-09, 0d
+        Satoshi forum and code activity                    :b1, 2009-01-09, 2010-12-12
+        Last documented email                              :milestone, 2011-04-26, 0d
+```
+
+The visual overlap is the §4.1 argument made spatial: the Kaneko legal case lane occupies the entire 2004 - 2011 horizontal span, and the Bitcoin development lane sits inside that span. The whitepaper, v0.1 release, and Satoshi's most-active period all land while Kaneko was a convicted defendant on appeal under sustained scrutiny. The hypothesis requires that during this period he secretly developed a system that, if attributed to him, would have constituted a major item of personal news. The probability of this remaining undisclosed across his counsel, his university supervisors, and his social environment is low.
 
 ### 4.2 Intellectual-lineage gap
 
