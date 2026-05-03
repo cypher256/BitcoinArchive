@@ -1,0 +1,329 @@
+{
+  "source": "Bas van Dorst, Where is Satoshi? (April 2024) \u2014 comparison.xlsx",
+  "sourceUrl": "https://github.com/basvandorst/where-is-satoshi",
+  "method": "Authors with >= 10 chunks of writing, chunk-weighted Burrows Delta to Satoshi reference",
+  "stats": {
+    "totalAuthors": 12739,
+    "mean": 0.14435,
+    "median": 0.14437,
+    "stdev": 0.00016,
+    "min": 0.14228,
+    "max": 0.14605,
+    "binCount": 50,
+    "binWidth": 7.6e-05
+  },
+  "bins": [
+    {
+      "x0": 0.142278,
+      "x1": 0.142353,
+      "count": 1
+    },
+    {
+      "x0": 0.142353,
+      "x1": 0.142429,
+      "count": 0
+    },
+    {
+      "x0": 0.142429,
+      "x1": 0.142505,
+      "count": 0
+    },
+    {
+      "x0": 0.142505,
+      "x1": 0.14258,
+      "count": 0
+    },
+    {
+      "x0": 0.14258,
+      "x1": 0.142656,
+      "count": 0
+    },
+    {
+      "x0": 0.142656,
+      "x1": 0.142731,
+      "count": 1
+    },
+    {
+      "x0": 0.142731,
+      "x1": 0.142807,
+      "count": 0
+    },
+    {
+      "x0": 0.142807,
+      "x1": 0.142882,
+      "count": 0
+    },
+    {
+      "x0": 0.142882,
+      "x1": 0.142958,
+      "count": 1
+    },
+    {
+      "x0": 0.142958,
+      "x1": 0.143033,
+      "count": 1
+    },
+    {
+      "x0": 0.143033,
+      "x1": 0.143109,
+      "count": 1
+    },
+    {
+      "x0": 0.143109,
+      "x1": 0.143184,
+      "count": 1
+    },
+    {
+      "x0": 0.143184,
+      "x1": 0.14326,
+      "count": 2
+    },
+    {
+      "x0": 0.14326,
+      "x1": 0.143335,
+      "count": 2
+    },
+    {
+      "x0": 0.143335,
+      "x1": 0.143411,
+      "count": 4
+    },
+    {
+      "x0": 0.143411,
+      "x1": 0.143487,
+      "count": 2
+    },
+    {
+      "x0": 0.143487,
+      "x1": 0.143562,
+      "count": 3
+    },
+    {
+      "x0": 0.143562,
+      "x1": 0.143638,
+      "count": 12
+    },
+    {
+      "x0": 0.143638,
+      "x1": 0.143713,
+      "count": 20
+    },
+    {
+      "x0": 0.143713,
+      "x1": 0.143789,
+      "count": 51
+    },
+    {
+      "x0": 0.143789,
+      "x1": 0.143864,
+      "count": 77
+    },
+    {
+      "x0": 0.143864,
+      "x1": 0.14394,
+      "count": 134
+    },
+    {
+      "x0": 0.14394,
+      "x1": 0.144015,
+      "count": 181
+    },
+    {
+      "x0": 0.144015,
+      "x1": 0.144091,
+      "count": 283
+    },
+    {
+      "x0": 0.144091,
+      "x1": 0.144166,
+      "count": 422
+    },
+    {
+      "x0": 0.144166,
+      "x1": 0.144242,
+      "count": 895
+    },
+    {
+      "x0": 0.144242,
+      "x1": 0.144317,
+      "count": 1972
+    },
+    {
+      "x0": 0.144317,
+      "x1": 0.144393,
+      "count": 3258
+    },
+    {
+      "x0": 0.144393,
+      "x1": 0.144469,
+      "count": 3111
+    },
+    {
+      "x0": 0.144469,
+      "x1": 0.144544,
+      "count": 1602
+    },
+    {
+      "x0": 0.144544,
+      "x1": 0.14462,
+      "count": 514
+    },
+    {
+      "x0": 0.14462,
+      "x1": 0.144695,
+      "count": 105
+    },
+    {
+      "x0": 0.144695,
+      "x1": 0.144771,
+      "count": 37
+    },
+    {
+      "x0": 0.144771,
+      "x1": 0.144846,
+      "count": 18
+    },
+    {
+      "x0": 0.144846,
+      "x1": 0.144922,
+      "count": 7
+    },
+    {
+      "x0": 0.144922,
+      "x1": 0.144997,
+      "count": 4
+    },
+    {
+      "x0": 0.144997,
+      "x1": 0.145073,
+      "count": 4
+    },
+    {
+      "x0": 0.145073,
+      "x1": 0.145148,
+      "count": 1
+    },
+    {
+      "x0": 0.145148,
+      "x1": 0.145224,
+      "count": 3
+    },
+    {
+      "x0": 0.145224,
+      "x1": 0.145299,
+      "count": 1
+    },
+    {
+      "x0": 0.145299,
+      "x1": 0.145375,
+      "count": 2
+    },
+    {
+      "x0": 0.145375,
+      "x1": 0.145451,
+      "count": 1
+    },
+    {
+      "x0": 0.145451,
+      "x1": 0.145526,
+      "count": 2
+    },
+    {
+      "x0": 0.145526,
+      "x1": 0.145602,
+      "count": 0
+    },
+    {
+      "x0": 0.145602,
+      "x1": 0.145677,
+      "count": 0
+    },
+    {
+      "x0": 0.145677,
+      "x1": 0.145753,
+      "count": 0
+    },
+    {
+      "x0": 0.145753,
+      "x1": 0.145828,
+      "count": 0
+    },
+    {
+      "x0": 0.145828,
+      "x1": 0.145904,
+      "count": 2
+    },
+    {
+      "x0": 0.145904,
+      "x1": 0.145979,
+      "count": 0
+    },
+    {
+      "x0": 0.145979,
+      "x1": 0.146055,
+      "count": 1
+    }
+  ],
+  "namedCandidates": [
+    {
+      "label": "Nick Szabo",
+      "file": "szabo_netcom_com.txt",
+      "key": "szabo_netcom",
+      "burrow": 0.1440487692307692,
+      "chunks": 130,
+      "rank": 595,
+      "totalAuthors": 12739,
+      "percentile": 4.67
+    },
+    {
+      "label": "Hal Finney",
+      "file": "hfinney_shell_portal_com.txt",
+      "key": "hfinney_shell_portal",
+      "burrow": 0.1441108308383234,
+      "chunks": 1336,
+      "rank": 878,
+      "totalAuthors": 12739,
+      "percentile": 6.89
+    },
+    {
+      "label": "Adam Back",
+      "file": "adam_cypherspace_org.txt",
+      "key": "adam_cypherspace_org",
+      "burrow": 0.14413516272189347,
+      "chunks": 676,
+      "rank": 1003,
+      "totalAuthors": 12739,
+      "percentile": 7.87
+    },
+    {
+      "label": "Adam Back",
+      "file": "aba_dcs_ex_ac_uk.txt",
+      "key": "aba_dcs_ex_ac_uk",
+      "burrow": 0.1441511804613298,
+      "chunks": 1474,
+      "rank": 1092,
+      "totalAuthors": 12739,
+      "percentile": 8.57
+    },
+    {
+      "label": "Wei Dai",
+      "file": "weidai_eskimo_com.txt",
+      "key": "weidai_eskimo",
+      "burrow": 0.14427962732919253,
+      "chunks": 161,
+      "rank": 2929,
+      "totalAuthors": 12739,
+      "percentile": 22.99
+    },
+    {
+      "label": "Len Sassaman",
+      "file": "rabbi_quickie_net.txt",
+      "key": "rabbi_quickie",
+      "burrow": 0.14428399999999997,
+      "chunks": 65,
+      "rank": 3034,
+      "totalAuthors": 12739,
+      "percentile": 23.82
+    }
+  ]
+}

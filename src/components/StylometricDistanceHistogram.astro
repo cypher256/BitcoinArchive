@@ -1,0 +1,322 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const data = await import('../data/derived/van-dorst-burrows-distribution.json').then(m => m.default);
+
+const labels = {
+  en: {
+    title: "Burrows' Delta distribution: Satoshi vs. 12,739 mailing-list authors (van Dorst 2024)",
+    subtitle: "Each bar is the count of mailing-list-active authors (≥10 chunks of writing) in that Burrows' Delta range. Lower delta = closer match to Satoshi's reference profile. The five most-cited Satoshi-identity named candidates are marked. Corpus mean line shown for reference.",
+    yLabel: 'Authors per bin',
+    xLabel: "Burrows' Delta to Satoshi (lower = closer)",
+    meanLabel: 'Corpus mean',
+    medianLabel: 'Corpus median',
+    namedLabel: 'Named candidates',
+    tooltipBin: 'Bin',
+    tooltipCount: 'Authors',
+    tooltipBurrow: 'Burrows Δ',
+    tooltipRank: 'Rank',
+    tooltipChunks: 'chunks',
+    statsLine: 'Corpus: 12,739 authors with ≥10 chunks · mean 0.14456 · σ 0.00027 · range [0.14128, 0.14617]',
+    insightHeading: 'What this shows',
+    insight1: 'All five named candidates fall in the upper (left-side) tail of the distribution — closer to Satoshi than the corpus mean.',
+    insight2: 'Nick Szabo at top 4.67% leads the named-candidate group; Hal Finney (6.89%) and Adam Back (7.87%) follow closely.',
+    insight3: 'But 594 authors rank closer than Szabo. Most of those upper-tail authors are noise (e-commerce accounts, anonymous remailers, disposable accounts), not viable candidates — see the §3 noise-tail discussion below.',
+  },
+  ja: {
+    title: "Burrows' Delta 分布：サトシ vs メーリングリスト書き手 12,739 名（ヴァン・ドルスト 2024）",
+    subtitle: '各バーは、その Burrows\' Delta 範囲に位置するメーリングリスト活動書き手（10 チャンク以上）の数。Delta が低いほどサトシ参照プロファイルに近い。最も多く引用されるサトシ正体候補 5 名を縦線でマーキング。コーパス平均も参考表示。',
+    yLabel: 'バーごとの著者数',
+    xLabel: "サトシへの Burrows' Delta（低いほど近い）",
+    meanLabel: 'コーパス平均',
+    medianLabel: 'コーパス中央値',
+    namedLabel: '名指し候補',
+    tooltipBin: '区間',
+    tooltipCount: '著者数',
+    tooltipBurrow: 'Burrows Δ',
+    tooltipRank: '順位',
+    tooltipChunks: 'チャンク',
+    statsLine: 'コーパス：10 チャンク以上の著者 12,739 名／平均 0.14456／σ 0.00027／範囲 [0.14128, 0.14617]',
+    insightHeading: 'この図が示すもの',
+    insight1: '名指し 5 候補はすべて分布の上位（左側）に位置 — コーパス平均よりサトシに近い。',
+    insight2: 'ニック・サボが上位 4.67% で名指し集団の首位。ハル・フィニー（6.89%）、アダム・バック（7.87%）が僅差で続く。',
+    insight3: 'ただしサボより近い著者が 594 人いる。その上位陣の大半はノイズ（EC アカウント、匿名リメイラー、使い捨てアカウント）であって妥当な候補ではない — §3 のノイズ層議論を参照。',
+  },
+};
+
+// @ts-ignore — lang is 'en' | 'ja' but TS may not infer correctly through Astro.props
+const l = labels[lang as 'en' | 'ja'] || labels.en;
+
+// Color per candidate
+const candidateColors: Record<string, string> = {
+  'Nick Szabo': '#dc2626',     // red — leads named group
+  'Hal Finney': '#ea580c',     // orange
+  'Adam Back': '#ca8a04',      // gold
+  'Wei Dai': '#16a34a',        // green
+  'Len Sassaman': '#2563eb',   // blue
+};
+---
+
+<div class="stylometric-histogram analysis-section">
+  <section>
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+
+    <div id="stylometric-hist-chart" class="chart-container" style="width:100%; min-height:400px;"></div>
+
+    <p class="stats-line">{l.statsLine}</p>
+
+    <div class="legend">
+      <span class="legend-item"><span class="legend-line legend-mean"></span>{l.meanLabel}</span>
+      {data.namedCandidates.map((c: any) => (
+        <span class="legend-item">
+          <span class="legend-line" style={`background:${candidateColors[c.label] || '#666'};`}></span>
+          <strong>{c.label}</strong> ({c.percentile}%)
+        </span>
+      ))}
+    </div>
+
+    <div class="insight">
+      <strong>{l.insightHeading}:</strong>
+      <ul>
+        <li>{l.insight1}</li>
+        <li>{l.insight2}</li>
+        <li>{l.insight3}</li>
+      </ul>
+    </div>
+  </section>
+
+  <script type="application/json" id="stylometric-hist-data" set:html={JSON.stringify({
+    bins: data.bins,
+    stats: data.stats,
+    namedCandidates: data.namedCandidates,
+    candidateColors,
+    labels: l,
+  })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+    var dataEl = document.getElementById('stylometric-hist-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var bins = data.bins;
+    var stats = data.stats;
+    var named = data.namedCandidates;
+    var colors = data.candidateColors;
+    var l = data.labels;
+
+    var container = document.getElementById('stylometric-hist-chart');
+    if (!container) return;
+    container.style.position = 'relative';
+
+    function draw() {
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 700;
+      var margin = { top: 30, right: 24, bottom: 60, left: 60 };
+      var H = Math.min(440, Math.max(360, W * 0.55));
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg')
+        .attr('width', W).attr('height', H)
+        .attr('viewBox', '0 0 ' + W + ' ' + H);
+
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var x = d3.scaleLinear()
+        .domain([stats.min, stats.max])
+        .range([0, w]);
+
+      var maxCount = d3.max(bins, function(b) { return b.count; });
+      var y = d3.scaleLinear()
+        .domain([0, maxCount * 1.1])
+        .range([h, 0]);
+
+      // Bars
+      g.selectAll('.bar')
+        .data(bins)
+        .enter().append('rect')
+        .attr('class', 'bar')
+        .attr('x', function(d) { return x(d.x0); })
+        .attr('y', function(d) { return y(d.count); })
+        .attr('width', function(d) { return Math.max(0, x(d.x1) - x(d.x0) - 1); })
+        .attr('height', function(d) { return h - y(d.count); })
+        .attr('fill', '#94a3b8')
+        .attr('opacity', 0.7);
+
+      // Mean line
+      g.append('line')
+        .attr('x1', x(stats.mean)).attr('x2', x(stats.mean))
+        .attr('y1', 0).attr('y2', h)
+        .attr('stroke', '#475569').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+
+      g.append('text')
+        .attr('x', x(stats.mean)).attr('y', -8)
+        .attr('text-anchor', 'middle')
+        .attr('fill', '#475569').attr('font-size', '11px')
+        .text(l.meanLabel + ' ' + stats.mean.toFixed(5));
+
+      // Named candidate vertical lines + labels
+      named.forEach(function(c, i) {
+        var color = colors[c.label] || '#666';
+        var cx = x(c.burrow);
+        g.append('line')
+          .attr('x1', cx).attr('x2', cx)
+          .attr('y1', 0).attr('y2', h)
+          .attr('stroke', color).attr('stroke-width', 2);
+
+        // Triangle marker at top
+        g.append('path')
+          .attr('d', 'M' + cx + ',0 L' + (cx - 5) + ',-7 L' + (cx + 5) + ',-7 Z')
+          .attr('fill', color);
+
+        // Label staggered to avoid overlap
+        var labelY = h + 28 + (i % 3) * 13;
+        g.append('text')
+          .attr('x', cx).attr('y', labelY)
+          .attr('text-anchor', 'middle')
+          .attr('fill', color).attr('font-size', '10px').attr('font-weight', 'bold')
+          .text(c.label + ' (' + c.percentile + '%)');
+      });
+
+      // X axis
+      g.append('g').attr('class', 'axis x')
+        .attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(8).tickFormat(function(d) { return d.toFixed(4); }));
+
+      // X label
+      svg.append('text')
+        .attr('x', margin.left + w / 2).attr('y', H - 5)
+        .attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#475569')
+        .text(l.xLabel);
+
+      // Y axis
+      g.append('g').attr('class', 'axis y').call(d3.axisLeft(y).ticks(6));
+
+      // Y label
+      svg.append('text')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -(margin.top + h / 2)).attr('y', 16)
+        .attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#475569')
+        .text(l.yLabel);
+
+      // Tooltip
+      var tooltip = d3.select(container).append('div')
+        .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
+        .style('background', 'rgba(0,0,0,0.88)').style('color', '#fff')
+        .style('padding', '7px 10px').style('border-radius', '4px')
+        .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
+
+      g.selectAll('.bar')
+        .on('mousemove', function(event, d) {
+          tooltip.html(
+            '<b>' + l.tooltipBin + ': ' + d.x0.toFixed(5) + '–' + d.x1.toFixed(5) + '</b><br>' +
+            l.tooltipCount + ': ' + d.count
+          ).style('opacity', 1);
+          var cr = container.getBoundingClientRect();
+          var tx = event.clientX - cr.left + 14;
+          var ty = event.clientY - cr.top - 10;
+          if (tx + 200 > cr.width) tx = tx - 220;
+          tooltip.style('left', tx + 'px').style('top', ty + 'px');
+        })
+        .on('mouseleave', function() { tooltip.style('opacity', 0); });
+    }
+
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .stylometric-histogram {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+    padding: 0.5rem;
+  }
+  .chart-container :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .chart-container :global(.axis path),
+  .chart-container :global(.axis line) {
+    stroke: #cbd5e1;
+  }
+  .chart-container :global(.axis text) {
+    fill: #475569;
+    font-size: 10px;
+  }
+  .stats-line {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    margin: 0.5rem 0 0.6rem;
+    text-align: center;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.1rem;
+    margin: 0.75rem 0;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .legend-line {
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    border-radius: 1px;
+  }
+  .legend-mean {
+    background: #475569;
+    background-image: linear-gradient(to right, #475569 4px, transparent 4px, transparent 7px, #475569 7px);
+    background-size: 7px 100%;
+  }
+  .insight {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg-subtle, #f8fafc);
+    border-left: 3px solid #2563eb;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.88rem;
+  }
+  .insight ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.2rem;
+  }
+  .insight li {
+    margin-bottom: 0.3rem;
+  }
+</style>
