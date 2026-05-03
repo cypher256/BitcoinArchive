@@ -152,7 +152,7 @@ quadrantChart
     "Wei Dai": [0.95, 0.55]
     "Adam Back": [0.9, 0.25]
     "Hal Finney": [0.9, 0.05]
-    "Nick Szabo": [0.8, 0.25]
+    "Nick Szabo": [0.78, 0.18]
     "Len Sassaman": [0.6, 0.75]
     "Paul Le Roux": [0.5, 0.55]
     "Peter Todd": [0.5, 0.4]
