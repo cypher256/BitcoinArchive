@@ -58,6 +58,7 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - aftermath/2013-07-06-isamu-kaneko-biography
 inlineLinkKeywords:
   - "サトシ・ナカモトは誰か"
   - "サトシ・ナカモト正体候補"
@@ -123,9 +124,10 @@ translationStatus: complete
 
 サトシが各候補と実際にどの程度通信したかは、能力プロファイルや文体計量とは独立した観察可能な事実として記録できる。アーカイブ収録の通信を候補ごとに集計すると、対比が明確になる：4 名の候補が何らかの形で記録された通信を持ち（うち 1 名はサトシ・スレッドへの返信のみ）、6 名の候補はサトシとの直接接触の記録が一切ない。
 
+**名指し候補とサトシの直接通信記録（アーカイブ収録分）**
+
 ```mermaid
 gantt
-    title 名指し候補とサトシの直接通信記録（アーカイブ収録分）
     dateFormat YYYY-MM-DD
     axisFormat %Y/%m
 
@@ -184,9 +186,10 @@ gantt
 
 各候補を、能力スコア（x 軸、能力 5 次元の平均）と隠匿性スコア（y 軸、隠匿性 2 次元の平均）の 2 次元空間にプロット。🟢 = 1、🟡 = 0.5、🔴 = 0 で換算。マップは §4 の横断的観察を空間的に可視化する：サトシが引用したサイファーパンク候補（アダム・バック、ウェイ・ダイ、ハル・フィニー、サボ）は能力高・隠匿性低の帯に集中、サッサマンが能力高・隠匿性高の象限に唯一位置、ライト・ドリアン・金子勇は能力低の領域。
 
+**候補プロファイル、能力 vs 隠匿性**
+
 ```mermaid
 quadrantChart
-    title 候補プロファイル、能力 vs 隠匿性
     x-axis "能力低" --> "能力高"
     y-axis "隠匿性低" --> "隠匿性高"
     quadrant-1 "高度整合 (稀)"

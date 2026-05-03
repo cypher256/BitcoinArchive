@@ -41,6 +41,21 @@ relatedEntries:
 
 Craig Steven Wright is an Australian computer scientist and businessman, born in October 1970 in Brisbane, Australia.
 
+**Craig Wright's Bitcoin-relevant timeline**
+
+```mermaid
+timeline
+    1970 : Born in Brisbane (Oct)
+    2015 : Wired and Gizmodo report Wright as possible Satoshi (Dec 8)
+    2016 : Wright publicly claims to be Satoshi via BBC, The Economist, GQ (May 2)
+         : "Proof" debunked as reused signature from a 2009 Bitcoin transaction
+    2021 : Sues Cobra (bitcoin.org operator) over whitepaper copyright (Feb)
+         : Default judgment for Wright; Cobra chose anonymity over identity disclosure (Jun 28)
+    2024 : COPA v Wright trial - Martti Malmi testifies (Feb 21)
+         : Mike Hearn testifies (Feb 22)
+         : Justice Mellor rules industrial-scale forgery; Wright loses (Mar 14)
+```
+
 **False Claim:**
 On December 8, 2015, [Wired and Gizmodo simultaneously published investigations](/BitcoinArchive/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/) identifying Wright as the possible creator of Bitcoin. On May 2, 2016, Wright publicly declared himself to be [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) in coordinated interviews with the BBC, The Economist, and GQ magazine. He published a blog post offering what he claimed was cryptographic proof — a digitally signed message using keys associated with early Bitcoin blocks.
 

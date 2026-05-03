@@ -33,6 +33,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - aftermath/2013-07-06-isamu-kaneko-biography
 inlineLinkKeywords:
   - "金子仮説"
   - "金子＝サトシ"
@@ -43,7 +44,7 @@ translationStatus: complete
 
 ## 1. 金子勇とは誰か
 
-日本国外の読者向けに、簡単な背景（[金子勇の Wikipedia 項目](https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87) および [Winny の Wikipedia 項目](https://ja.wikipedia.org/wiki/Winny) による。本アーカイブには金子の伝記、Winny 自体、刑事裁判判決の個別エントリーは存在しない — 本仮説エントリーは仮説そのものを扱うものでこれらの代替ではない）：
+日本国外の読者向けに、簡単な背景（[金子勇の Wikipedia 項目](https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87) および [Winny の Wikipedia 項目](https://ja.wikipedia.org/wiki/Winny) による。経歴と裁判タイムラインの全体は [金子勇の伝記](/BitcoinArchive/ja/participants/isamu-kaneko/) を参照。本仮説エントリーは仮説そのものを扱うものであり、伝記の代替ではない）：
 
 金子勇（1970 – 2013 年）は日本の研究者・ソフトウェア開発者である。東京大学大学院情報理工学系研究科の助手を務め、2002 年 5 月に 2 ちゃんねる上で **Winny** と呼ばれる P2P ファイル共有システムを公開した。Winny は、各コンテンツの発信元を否認可能にするように設計されたルーティング方式を採用しており、ピーク時には日本国内で数百万のユーザーを擁するネットワークとなった。
 
@@ -97,9 +98,10 @@ Winny 刑事裁判における金子の立場 — ツール開発者はユーザ
 | 2006 年 12 月 – 2009 年 10 月 | 有罪判決、大阪高裁で控訴中 | **ビットコイン開発期。ホワイトペーパー 2008 年 10 月、v0.1 公開 2009 年 1 月** |
 | 2009 年 10 月 – 2011 年 12 月 | 高裁で逆転無罪、検察側が最高裁に上告 | **サトシのフォーラム／コード活動最盛期。2010 年 12 月／2011 年 4 月に離脱** |
 
+**金子の刑事裁判年表とビットコイン開発の重なり**
+
 ```mermaid
 gantt
-    title 金子の刑事裁判年表とビットコイン開発の重なり
     dateFormat YYYY-MM-DD
     axisFormat %Y
     section 金子刑事裁判

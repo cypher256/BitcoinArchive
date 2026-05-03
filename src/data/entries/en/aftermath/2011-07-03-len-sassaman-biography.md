@@ -38,6 +38,22 @@ relatedEntries:
 
 Len Sassaman (1980 – July 3, 2011) was an American cryptographer, cypherpunk, and privacy researcher. He is documented in this archive primarily because of two posthumous Bitcoin-related events: [Dan Kaminsky's blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) embedded shortly after his death, and the later [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) that has connected his name to Satoshi Nakamoto in public discourse since 2013.
 
+**Len Sassaman's Bitcoin-relevant timeline**
+
+```mermaid
+timeline
+    1980 : Born in the United States
+    Late 1990s : Begins activity in the cypherpunk community
+    1999 : Joins PGP Inc., works alongside Hal Finney and others
+    2002 : Co-founds CodeCon with Bram Cohen
+    2004 : KU Leuven COSIC PhD program (advised by David Chaum)
+    2011 : Satoshi's last known email (Apr 26)
+         : Death (Jul 3, in Belgium, suicide)
+         : Dan Kaminsky reveals blockchain tribute at Black Hat USA (Jul 30)
+    2013 : Sassaman-as-Satoshi hypothesis surfaces on BitcoinTalk
+    2021 : Evan Hatch publishes structured Sassaman hypothesis (Feb 22)
+```
+
 **Cypherpunk and cryptography work:**
 
 Sassaman was active in the cypherpunk community from his teenage years and contributed to a series of privacy-focused projects spanning roughly a decade and a half:

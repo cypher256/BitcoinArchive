@@ -44,9 +44,10 @@ translationStatus: complete
 
 ニック・サボは、デジタル通貨とスマートコントラクトの先駆的研究で知られるコンピューター科学者・法学者・暗号学者である。彼の経歴の詳細は非公開のままである。
 
+**ニック・サボのビットコイン関連年表**
+
 ```mermaid
 timeline
-    title ニック・サボのビットコイン関連年表
     1994 : 「スマートコントラクト」 用語を提唱
     1996 : 論文「Smart Contracts: Building Blocks for Digital Markets」 発表
     1998 : Bit Gold を構想 (libtech 非公開メーリングリスト)

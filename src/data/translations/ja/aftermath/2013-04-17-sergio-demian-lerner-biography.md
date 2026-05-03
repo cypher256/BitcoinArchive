@@ -41,6 +41,18 @@ translationStatus: complete
 
 セルジオ・デミアン・ラーナーは、アルゼンチンの暗号学者・ブロックチェーン研究者である。ブログBitslog（bitslog.com）で研究を発表しており、ビットコイン史上最も重要なブロックチェーンフォレンジック分析を行ったことで知られる。
 
+**セルジオ・デミアン・ラーナーのビットコイン関連年表**
+
+```mermaid
+timeline
+    1972 : 誕生 (アルゼンチン)
+    2013 : 「The Well Deserved Fortune of Satoshi」 — 初の Patoshi 分析、 約 100 万 BTC (4月17日)
+         : ナンス LSB の発見 — 第二の独立した指紋 (9月3日)
+    2019 : 「Patoshi」 命名 + 推定 22,000 ブロック / 110 万 BTC に更新 (4月16日)
+    2020 : Patoshi マイニングマシン分析 — 単一 CPU マルチスレッド (8月22日)
+    2021 : PLOS ONE 査読付き論文 — 初期ナンス分布の異常 (9月30日)
+```
+
 **最初のPatoshi分析（2013年4月）：**
 2013年4月17日、ラーナーは[「The Well Deserved Fortune of Satoshi Nakamoto」](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を発表した——ビットコインの最初期のマイニングパターンに関する初の体系的分析である。最初の36,288ブロックにわたるコインベーストランザクションのExtraNonceフィールドを追跡し、ビットコインの最初の1年間に約100万BTCを採掘した単一のエンティティを特定した。これらのコインは事実上一度も使用されていなかった。
 

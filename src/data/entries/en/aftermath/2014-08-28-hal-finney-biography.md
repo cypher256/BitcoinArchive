@@ -60,9 +60,10 @@ relatedEntries:
 
 Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979. His combination of cypherpunk credentials, his 2004 Reusable Proof-of-Work system, his role as recipient of the first person-to-person Bitcoin transaction, and his geographic proximity to Dorian Nakamoto have made him one of the most-discussed Satoshi-identity candidates — documented as the [Hal Finney = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), with the [April 18, 2009 race-day alibi](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and Patoshi-scale inconsistency as the principal counter-evidence.
 
+**Hal Finney's Bitcoin-relevant timeline**
+
 ```mermaid
 timeline
-    title Hal Finney's Bitcoin-relevant timeline
     1956 : Born in Coalinga, California (May)
     1979 : BS Engineering, Caltech (Arcadia HS valedictorian 1974)
     1991 : Joins Pretty Good Privacy (PGP) project as volunteer

@@ -63,9 +63,10 @@ The hypothesis is that Finney is the person behind the Satoshi Nakamoto pseudony
 
 Two events are alibi-class for the hypothesis: the April 18, 2009 race-day window and the August 14–15, 2010 Singularity Summit window. Their position relative to Satoshi's documented activity:
 
+**Hal vs Satoshi - alibi-relevant events**
+
 ```mermaid
 timeline
-    title Hal vs Satoshi - alibi-relevant events
     2007 : Satoshi development window begins (mid-2007 per his own timeline)
     2008 : Whitepaper published; Satoshi never asks Hal anything (Oct)
          : Hal first replies to whitepaper as third party on crypto list (Nov)

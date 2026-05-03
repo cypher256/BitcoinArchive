@@ -29,6 +29,20 @@ relatedEntries:
 
 Gregory Maxwell, known online as **gmaxwell**, is a long-time Bitcoin Core contributor whose personal biographical details are not widely published. He rose to prominence through years of technically dense writing on BitcoinTalk, IRC, and the Bitcoin Core GitHub repository, and for co-founding [Blockstream](https://en.wikipedia.org/wiki/Blockstream) with [Adam Back](/BitcoinArchive/participants/adam-back/) and others in 2014.
 
+**Gregory Maxwell's Bitcoin-relevant timeline**
+
+```mermaid
+timeline
+    2013 : Joins libsecp256k1 with Wuille (Mar 5)
+         : Proposes CoinJoin, an input-merging privacy construction (Aug)
+    2014 : Co-founds Blockstream with Adam Back, Pieter Wuille
+    2015 : Designs Confidential Transactions (Pedersen commitments)
+    2016 : libsecp256k1 ships as Bitcoin Core v0.12 default backend (Jan 15)
+         : Liquid sidechain released by Blockstream
+    2017 : Major reviewer for SegWit activation
+    2018 : Steps back from Blockstream; continues Bitcoin Core review individually
+```
+
 **libsecp256k1:**
 Shortly after [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/) started the [libsecp256k1 library](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) on March 5, 2013, Maxwell joined the effort. Under their joint work the library expanded from a performance experiment into a purpose-built replacement for OpenSSL's secp256k1 implementation, shipping as the default backend in Bitcoin Core v0.12 on January 15, 2016.
 

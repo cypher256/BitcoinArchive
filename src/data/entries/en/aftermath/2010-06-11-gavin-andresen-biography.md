@@ -55,9 +55,10 @@ relatedEntries:
 
 Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software developer who became the lead maintainer of Bitcoin after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s departure. He grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and later founded Wasabi Software, a 3D graphics software company.
 
+**Gavin Andresen's Bitcoin-relevant timeline**
+
 ```mermaid
 timeline
-    title Gavin Andresen's Bitcoin-relevant timeline
     2010 : Bitcoin Faucet launched - one of the earliest adoption tools (Jun)
          : Satoshi's first private withdrawal signal (Sep)
          : Handover - SVN access + public lead-maintainer announcement (Dec)

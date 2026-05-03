@@ -110,9 +110,10 @@ The analysis confirms that the named-candidate studies are not finding noise: th
 
 The four investigations as a timeline:
 
+**Stylometric Satoshi-identification studies**
+
 ```mermaid
 timeline
-    title Stylometric Satoshi-identification studies
     2013 : Skye Grey single-hypothesis test  - Szabo as top match
     2014 : Aston University Project Bitcoin - Szabo top of 11 candidates
     2024 : van Dorst Where is Satoshi - 75,000+ corpus, no top named

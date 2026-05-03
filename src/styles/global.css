@@ -330,6 +330,18 @@ a[href^="#"]:hover {
      container; let it overflow (and scroll) when wider. */
   margin: 0 auto;
 }
+/* Tighten the gap when an immediately-preceding paragraph contains only a
+   <strong> (the title-above-diagram convention from STYLE_GUIDE.md
+   "Mermaid diagram titles outside the block"). The bold paragraph
+   functions as a heading for the diagram; treating it as a separate
+   block of prose with full 1.5em + paragraph margin produces too much
+   white space between the title and the chart. */
+p:has(> strong:only-child) + .mermaid-scroll {
+  margin-top: 0.25em;
+}
+p:has(> strong:only-child):has(+ .mermaid-scroll) {
+  margin-bottom: 0.25em;
+}
 
 /* Responsive — see STYLE_GUIDE.md § Layout Width Policy
    ≥1200: containers at fixed max-width

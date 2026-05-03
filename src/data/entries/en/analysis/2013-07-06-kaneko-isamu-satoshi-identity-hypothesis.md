@@ -33,6 +33,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - aftermath/2013-07-06-isamu-kaneko-biography
 inlineLinkKeywords:
   - "Kaneko hypothesis"
   - "Kaneko = Satoshi"
@@ -42,7 +43,7 @@ This entry documents a hypothesis that exists primarily in Japanese-language dis
 
 ## 1. Who Kaneko was
 
-For readers outside Japan, brief background (per [Kaneko's Wikipedia entry](https://en.wikipedia.org/wiki/Isamu_Kaneko) and the [Winny Wikipedia entry](https://en.wikipedia.org/wiki/Winny); this archive does not hold a dedicated biography of Kaneko, a dedicated entry on Winny itself, or dedicated entries on the criminal-case court rulings — this hypothesis entry covers the hypothesis only and is not a substitute for those):
+For readers outside Japan, brief background (per [Kaneko's Wikipedia entry](https://en.wikipedia.org/wiki/Isamu_Kaneko) and the [Winny Wikipedia entry](https://en.wikipedia.org/wiki/Winny); for full biographical and trial-timeline coverage see the [Isamu Kaneko biography](/BitcoinArchive/participants/isamu-kaneko/). This hypothesis entry covers the hypothesis only and is not a substitute for the biography):
 
 Isamu Kaneko (金子勇, 1970–2013) was a Japanese researcher and software developer. He served as a research assistant at the University of Tokyo's Graduate School of Information Science and Technology and was the developer of **Winny**, a peer-to-peer file-sharing system released on the 2channel forum in May 2002. Winny used a routing scheme designed for plausible deniability of who originated each piece of content, and at peak the network had on the order of millions of users in Japan.
 
@@ -96,9 +97,10 @@ The strongest counter-evidence is the timing of Kaneko's legal proceedings again
 | 2006-12 to 2009-10 | Convicted, on appeal at Osaka High Court | **Bitcoin development; white paper Oct 2008; v0.1 released Jan 2009** |
 | 2009-10 to 2011-12 | Acquitted at High Court, prosecution appealed to Supreme Court | **Satoshi most active forum/code period; departs Dec 2010 / Apr 2011** |
 
+**Kaneko legal case timeline overlaid on Bitcoin development**
+
 ```mermaid
 gantt
-    title Kaneko legal case timeline overlaid on Bitcoin development
     dateFormat YYYY-MM-DD
     axisFormat %Y
     section Kaneko legal case

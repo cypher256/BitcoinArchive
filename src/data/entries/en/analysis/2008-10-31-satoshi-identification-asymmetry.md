@@ -96,9 +96,10 @@ This entry is the **third pair** to the [identity-hypotheses overview](/BitcoinA
 
 Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the attention of named institutions, span the early 2010s through the present (the earliest entries in the list below are the WikiLeaks pressure dynamic of late 2010 and the In-Q-Tel / CIA conference invitation of April–June 2011). The list below restricts itself to attempts and interest that are part of the public record.
 
+**Public attempts and recorded interest, 2010-2026**
+
 ```mermaid
 timeline
-    title Public attempts and recorded interest, 2010-2026
     2010 : WikiLeaks pressure dynamic begins (state)
     2011 : Andresen presents Bitcoin at CIA / In-Q-Tel (state)
     2013 : Lerner — Patoshi mining pattern (technical)

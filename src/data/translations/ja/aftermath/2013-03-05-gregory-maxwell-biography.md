@@ -30,6 +30,20 @@ translationStatus: complete
 
 グレゴリー・マクスウェル（オンライン名 **gmaxwell**）は長年にわたる Bitcoin Core 貢献者で、個人の伝記的情報はあまり公表されていない。彼は、BitcoinTalk・IRC・Bitcoin Core GitHub リポジトリー上での技術的に密度の高い文章を長年にわたって蓄積することで知名度を得て、2014年には[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)らとともに [Blockstream](https://en.wikipedia.org/wiki/Blockstream) を共同創業した。
 
+**グレゴリー・マクスウェルのビットコイン関連年表**
+
+```mermaid
+timeline
+    2013 : libsecp256k1 への参加 — ウィーユと共同開発 (3月5日)
+         : CoinJoin 提案 (8月、 入力結合 プライバシー手法)
+    2014 : Blockstream 共同創業 — アダム・バック、 ウィーユらと
+    2015 : Confidential Transactions 設計 (Pedersen コミットメント)
+    2016 : libsecp256k1 が v0.12 デフォルト として出荷 (1月15日)
+         : Liquid サイドチェーン Blockstream から リリース
+    2017 : SegWit 有効化への 主要レビュアー
+    2018 : Blockstream 退任、 個人で Bitcoin Core 貢献継続
+```
+
 **libsecp256k1：**
 [ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)が2013年3月5日に [libsecp256k1 ライブラリー](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)を開始した直後、マクスウェルはこの取り組みに参加した。二人の共同作業のもとで、ライブラリーは性能実験から、OpenSSL の secp256k1 実装を専用に置き換える存在へと拡大し、2016年1月15日に Bitcoin Core v0.12 のデフォルトバックエンドとして出荷された。
 

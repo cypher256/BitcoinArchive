@@ -31,6 +31,21 @@ relatedEntries:
 
 Wladimir van der Laan, known online as **laanwj**, is a Dutch software developer who became Bitcoin Core's second lead maintainer after [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). Beyond his public role in Bitcoin development, his personal biographical details remain largely outside published record.
 
+**Wladimir van der Laan's Bitcoin-relevant timeline**
+
+```mermaid
+timeline
+    2010 : First archive appearance, Bitcoin client icon discussion (Nov 19)
+    2011 : Creates bitcoin-qt repository (May 15)
+         : Granted GitHub commit access, fourth maintainer (Jun 5)
+    2014 : Succeeds Andresen as lead maintainer (Apr 8)
+    2015 : Block-size war begins
+    2016 : libsecp256k1 ships as v0.12 default backend (Jan 15)
+    2017 : SegWit activates
+    2022 : Steps down as lead maintainer; cites burnout and decentralization goals (Aug)
+    2023 : Removes own merge access from repository - Bitcoin Core enters lead-vacant state (Feb)
+```
+
 **Early Involvement:**
 Van der Laan first appears in the archive on November 19, 2010, in [a discussion about the Bitcoin client's icons](/BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/), where he asked for SVG versions so they could be rescaled — a small but characteristic request from someone approaching the software from a polish-and-quality angle. Over the following months he contributed patches to the Qt-based GUI client, and on May 15, 2011, he created a separate `bitcoin-qt` repository to organize that work. This repository was later merged back into the main `bitcoin/bitcoin` project.
 

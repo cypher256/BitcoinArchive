@@ -58,6 +58,7 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
+  - aftermath/2013-07-06-isamu-kaneko-biography
 inlineLinkKeywords:
   - "Satoshi Nakamoto candidates"
   - "Satoshi Nakamoto identity candidates"
@@ -122,9 +123,10 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 How much each candidate actually exchanged words with Satoshi is an observable fact independent of capability profile and stylometric distance. Tabulating the archive's documented communication per candidate makes the contrast clear: four candidates have some form of documented exchange (one of them only as a reply in a Satoshi-started thread), and six candidates have no record of direct contact with Satoshi at all.
 
+**Documented direct correspondence between named candidates and Satoshi (archive coverage)**
+
 ```mermaid
 gantt
-    title Documented direct correspondence between named candidates and Satoshi (archive coverage)
     dateFormat YYYY-MM-DD
     axisFormat %Y/%m
 
@@ -183,9 +185,10 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. The map makes the §4 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
 
+**Candidate profiles, capability vs covertness**
+
 ```mermaid
 quadrantChart
-    title Candidate profiles, capability vs covertness
     x-axis "Low capability" --> "High capability"
     y-axis "Low covertness" --> "High covertness"
     quadrant-1 "Strong fit (rare)"

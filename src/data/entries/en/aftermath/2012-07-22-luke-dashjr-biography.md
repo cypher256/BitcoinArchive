@@ -27,6 +27,20 @@ relatedEntries:
 
 Luke Dashjr, known on GitHub and BitcoinTalk as **Luke-Jr**, is an American software developer and long-tenured Bitcoin Core contributor. His personal biographical details outside his public Bitcoin work are not in wide circulation.
 
+**Luke Dashjr's Bitcoin-relevant timeline**
+
+```mermaid
+timeline
+    Early 2010s : Begins Bitcoin Core contribution
+    2012 : First archive appearance PR #1620, bitcoin-qt window titles (Jul 22)
+    2013 : Coordinates chain reunification after v0.8 consensus bug (Mar)
+         : Begins maintaining the Bitcoin Knots derivative client
+    2015 : Block-size war - prominent small-block voice
+    2017 : OP_RETURN restriction debate - prominent voice
+    2022 : Personal wallet drained - approximately 216.93 BTC, attributed to PGP-key compromise (late Dec)
+    2023 : Co-founds Ocean mining pool - transparent block templates
+```
+
 **Bitcoin Core:**
 Dashjr appears in the archive starting July 22, 2012, opening [PR #1620](/BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) on bitcoin-qt window titles. He has been a consistent Bitcoin Core contributor since the early 2010s, reviewing patches, proposing improvements, and pushing back against changes he considered inconsistent with Bitcoin's original intent. In March 2013, when a consensus bug in v0.8 caused Bitcoin to split into two incompatible chains, Dashjr helped coordinate the community response that reverted nodes to v0.7-compatible behavior and reunited the chain.
 

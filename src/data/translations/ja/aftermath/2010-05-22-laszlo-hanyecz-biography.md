@@ -41,6 +41,18 @@ translationStatus: complete
 
 ラズロ・ハニエツは、フロリダ州ジャクソンビル在住のソフトウェア開発者で、ビットコインの初期開発にいくつかの基盤的な貢献を行った。技術的な問題について[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と直接やり取りし、ビットコインによる初の実商取引で最もよく知られている。
 
+**ラズロ・ハニエツのビットコイン関連年表**
+
+```mermaid
+timeline
+    2010 : macOS 移植、 サトシとの メール往復 (4月)
+         : 初の GPU マイニング、 サトシは 「マイニング 軍拡競争」 懸念 (5月10日)
+         : サトシが GPU 防衛コードを ハニエツに 共有 (5月17日)
+         : BitcoinTalk ピザ募集 投稿 (5月18日)
+         : ピザデー — 10,000 BTC で ピザ 2 枚 (5月22日、 jercos が受注)
+    2018 : Lightning Network で 2 度目のピザ購入 (2月)
+```
+
 **macOS移植：**
 2010年初頭、ハニエツは[ビットコインクライアントをmacOSに移植し](/BitcoinArchive/ja/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/)、Appleのプラットフォームで初めてソフトウェアを利用可能にした。移植についてサトシ・ナカモトとやり取りし、彼らのメールにはクロスプラットフォーム互換性とマイニングアーキテクチャに関するサトシの指針が記されている。
 

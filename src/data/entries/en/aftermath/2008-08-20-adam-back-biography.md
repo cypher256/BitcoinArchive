@@ -47,9 +47,10 @@ relatedEntries:
 
 Adam Back (born 1970, United Kingdom) is a cryptographer, cypherpunk, and the inventor of Hashcash. He earned a PhD in computer science from the University of Exeter. He is the first person known to have been contacted by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) about what would become Bitcoin.
 
+**Adam Back's Bitcoin-relevant timeline**
+
 ```mermaid
 timeline
-    title Adam Back's Bitcoin-relevant timeline
     1997 : Hashcash announced on the cypherpunks mailing list (Mar)
     1998 : Cypherpunks-list b-money critique - 7 monetary-design issues (Dec)
     2002 : Hashcash paper revised - 'mint' framing for cost tokens (Aug)

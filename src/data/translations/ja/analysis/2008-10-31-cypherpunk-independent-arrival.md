@@ -58,6 +58,7 @@ relatedEntries:
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - analysis/2008-08-20-satoshi-activity-timeline
+  - aftermath/2013-07-06-isamu-kaneko-biography
 inlineLinkKeywords:
   - "サイファーパンク宣言"
   - "Cypherpunk's Manifesto"

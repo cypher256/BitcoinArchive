@@ -41,6 +41,21 @@ translationStatus: complete
 
 ジェフ・ガージックは、ジョージア工科大学でコンピューターサイエンスを学び、Red Hat で働いたソフトウェアエンジニアで、Linux カーネルへの重要な貢献者だった。2010 年 7 月にビットコインを発見し、プロジェクトの最も多作な初期貢献者の一人となった。
 
+**ジェフ・ガージックのビットコイン関連年表**
+
+```mermaid
+timeline
+    1974 : 誕生
+    2010 : Slashdot で ビットコイン発見 (7月11日)
+         : Bitcoin Core 貢献開始 (7月15日)
+         : cpuminer (CPU マイニング) 公開
+    2011 : GitHub コミット権限 付与、 3 番目の メンテナー
+         : サトシと BitcoinTalk + コードで やり取り
+    2015 : Bloq エンタープライズ ブロックチェーン企業 共同設立
+    2018 : 「Looking Back」 retrospective 公開 (10月)
+    2024 : 「サトシは独狼の天才」 発言 — CryptoNews / Bad Crypto Podcast (10月28日)
+```
+
 **ビットコインの発見：**
 ガージックは2010年7月、人気のテクノロジーニュースアグリゲーションサイト[Slashdotの投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)を通じてビットコインを発見した。すぐにコードベースの研究とパッチの貢献を開始した。Linuxカーネル開発の経験は、ビットコインのC++コードベースでの作業に強固な基盤を与えた。
 

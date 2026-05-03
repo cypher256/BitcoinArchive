@@ -35,6 +35,17 @@ translationStatus: complete
 
 Cobra（Cøbraとも表記）は、2008年8月に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が登録したbitcoin.orgの匿名運営者である。Cobraの正体は不明である。
 
+**Cobra のビットコイン関連年表**
+
+```mermaid
+timeline
+    2008 : サトシが bitcoin.org を 登録 (8月)
+    2010年代前半 : サトシ消失と マルッティ・マルミの 離脱後、 Cobra が bitcoin.org の 管理を引き継ぐ
+    2021 : クレイグ・ライトが Cobra を ホワイトペーパー著作権 訴訟で提訴 (2月)
+         : 匿名性保護を選び 欠席判決受諾 — bitcoin.org は ホワイトペーパー削除命令 (6月28日)
+    2024 : COPA 対ライト判決 — ライトはサトシではないと 確定、 2021 年判決の根拠が消滅 (3月14日)
+```
+
 **役割：**
 サトシの消失と[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)の離脱後、Cobraはbitcoin.orgの管理者となった——サイトの維持、ビットコインホワイトペーパーのホスティング、ビットコインの主要な公開窓口であるドメインの管理を行っている。この立場はビットコインプロトコルに対する公式な権限を持たないが、サトシのオリジナルウェブサイトの管理人として象徴的な意義を持つ。
 

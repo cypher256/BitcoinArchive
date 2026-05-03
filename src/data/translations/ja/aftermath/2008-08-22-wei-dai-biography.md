@@ -51,9 +51,10 @@ translationStatus: complete
 
 ウェイ・ダイは、デジタル通貨のb-money提案と暗号ライブラリCrypto++という2つの主要な貢献で知られるコンピューターサイエンティスト・暗号学者である。ワシントン大学でコンピューターサイエンスを学び、Microsoftで働いた。b-money がビットコインホワイトペーパーの参考文献 [1] として引用されたこと、Crypto++ がビットコイン v0.1 のコードベース依存となっていること、ウェイ・ダイが公開前にサトシが接触した 2 番目の人物だったことから、繰り返しサトシ正体候補となってきた — 詳細は[ウェイ・ダイ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) を参照。主要な自己否定は[2014 年 1 月の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)。
 
+**ウェイ・ダイのビットコイン関連年表**
+
 ```mermaid
 timeline
-    title ウェイ・ダイのビットコイン関連年表
     1998 : b-money 提案を サイファーパンク・ メーリングリストで発表 (11月)
          : アダム・バックが b-money の貨幣設計を 批判 (サイファーパンク・ メーリングリスト、 12月)
     2008 : サトシからのメール - ホワイトペーパーへの b-money 引用年を確認 (8月22日)

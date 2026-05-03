@@ -43,9 +43,10 @@ relatedEntries:
 
 Nick Szabo is a computer scientist, legal scholar, and cryptographer known for his pioneering work on digital currency and smart contracts. His real identity and background remain largely private.
 
+**Nick Szabo's Bitcoin-relevant timeline**
+
 ```mermaid
 timeline
-    title Nick Szabo's Bitcoin-relevant timeline
     1994 : Coins term "smart contracts"
     1996 : Publishes "Smart Contracts - Building Blocks for Digital Markets"
     1998 : Conceives Bit Gold (libtech private mailing list)

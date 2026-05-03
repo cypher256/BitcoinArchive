@@ -44,6 +44,21 @@ translationStatus: complete
 
 マイク・ハーンは、GoogleでGoogle Maps、Google Earth、Gmailのスパム対策システムなどのプロジェクトに従事したソフトウェアエンジニアである。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に直接連絡を取り、ビットコインの最初期の貢献者の一人となった。
 
+**マイク・ハーンのビットコイン関連年表**
+
+```mermaid
+timeline
+    2009 : ホワイトペーパー読了、 サトシに 最初の連絡 (4月12日)
+    2010 : サトシとの 技術メール継続 (スケーリング / SPV / マイニング)
+    2011 : サトシ最後のメールの一つ 「他のことに 移った」 (4月23日)
+    2012 : BitcoinJ 開発 (ビットコイン Java 実装)
+    2016 : 「The resolution of the Bitcoin experiment」 公開、 BTC 全売却 (1月14日)
+         : R3 参加、 Corda 開発共同主導
+    2017 : サトシとの メール公開 (8月11日)
+    2021 : R3 退任 (2月)
+    2024 : COPA 対ライト裁判 証言 (2月22日)
+```
+
 **サトシとの最初の接触：**
 2009年4月、ビットコインのローンチからわずか数ヶ月後、ハーンはホワイトペーパーを読んだ後にサトシ・ナカモトにメールを送った。これが2011年4月まで続くやり取りの始まりとなった。ハーンは、初期のサイファーパンクサークル外からビットコインに本格的な技術的関心を寄せた最初期の人物の一人だった。
 

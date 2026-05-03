@@ -49,9 +49,10 @@ relatedEntries:
 
 Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft. The b-money citation as reference [1] in the Bitcoin whitepaper, the Crypto++ codebase dependency in Bitcoin v0.1, and Wei Dai's status as the second person Satoshi contacted before launch have made him a recurring Satoshi-identity candidate — documented in the [Wei Dai = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/), with the [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) as the principal self-denial.
 
+**Wei Dai's Bitcoin-relevant timeline**
+
 ```mermaid
 timeline
-    title Wei Dai's Bitcoin-relevant timeline
     1998 : b-money proposal published on the cypherpunks mailing list (Nov)
          : Adam Back publishes critique of b-money's monetary design (Dec)
     2008 : Email from Satoshi - asks about b-money citation year for the whitepaper (Aug 22)

@@ -37,6 +37,22 @@ translationStatus: complete
 
 ピーター・ウィーユ（GitHub と IRC 上のハンドル名 **sipa** で広く知られる）はベルギーのソフトウェア技術者で、サトシ離脱後の Bitcoin Core で最も生産的かつ影響力のある貢献者の一人となった。公に流通している個人伝記的情報は、彼の公開された職業活動以上には多くない。
 
+**ピーター・ウィーユのビットコイン関連年表**
+
+```mermaid
+timeline
+    2011 : 最初の貢献 PR #122 (3月17日)
+         : GitHub コミット権限 付与、 アンドレセン に次ぐ 2 人目 (5月1日)
+    2012 : BIP-32 階層的決定性 ウォレット (HD ウォレット)
+    2013 : libsecp256k1 開始 (3月5日、 後にマクスウェルが参加)
+    2014 : Blockstream 共同創業
+         : Bitcoin Core 組み込み SHA-256/SHA-512 実装追加 (4月20日)
+    2015 : BIP-141 SegWit 共著 (12月)
+    2016 : libsecp256k1 が v0.12 デフォルト として出荷 (1月15日)
+    2020 : BIP-340 シュノア署名 / BIP-341 Taproot
+    2021 : Taproot 有効化 (11月)
+```
+
 **初期の貢献（2011年）：**
 ウィーユのアーカイブにおける最初の貢献は、[2011年3月17日の PR #122](/BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/) である。ウォレット構造の変更により、トランザクション出力ごとに使用済み状態を個別に追跡できるようにし、部分的な使用を可能にする変更だった。2011年5月1日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が彼に [GitHub コミット権限を付与](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)した。これによりウィーユは、アンドレセン自身の次、そして[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)よりも前の、長期メンテナーとして2人目の地位を得た。
 

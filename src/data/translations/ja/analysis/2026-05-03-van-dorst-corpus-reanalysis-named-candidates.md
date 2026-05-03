@@ -111,9 +111,10 @@ translationStatus: complete
 
 4 件の調査をタイムラインで：
 
+**文体計量によるサトシ特定研究の系譜**
+
 ```mermaid
 timeline
-    title 文体計量によるサトシ特定研究の系譜
     2013 : Skye Grey の単独仮説検証 - サボを首位
     2014 : アストン大学 Project Bitcoin - 11 候補でサボを首位
     2024 : ヴァン・ドルスト Where is Satoshi - 75,000+ コーパス、指名なし
