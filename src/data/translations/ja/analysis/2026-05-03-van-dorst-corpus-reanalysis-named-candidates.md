@@ -19,7 +19,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 isSatoshi: false
-description: "バス・ヴァン・ドルストが 2024 年 4 月に公開したオープンソース・スタイロメトリー（計量文体論）コーパス『Where is Satoshi?』 の数値データに対する Bitcoin Institute による独自再分析。著者は候補順位の公表を拒否しているが、基底のデータは 43 MB の XLSX（76,407 行（著者・出典）× 76 列）として公開されている。本エントリーは最も多く引用されるサトシ正体候補 5 名（アダム・バック、ウェイ・ダイ、ハル・フィニー、ニック・サボ、レン・サッサマン）のバローズ・デルタおよびジャッカード類似度を抽出し、出典横断のチャンク数加重で著者単位に集計、執筆量 10 チャンク以上の著者 12,739 名に対する順位を計算した。所見：5 名全員が上位 25% 以内、4 名が上位 10% 以内、ニック・サボが上位 4.67% で名指し候補内首位 — Skye Grey 2013 およびアストン 2014 の結論と整合。ただし、サボより近い無名著者が 594 人存在し、コーパス最近接 Top 20 はイタリア／スペイン EC アカウント、匿名リメイラー出力、使い捨てアカウントが占める — 信号ではなくノイズである。本分析はヴァン・ドルストの「100% 確信できない」 留保を 4 つの相互作用する問題（指標のノイズ感受性、著者帰属の精度、主題語彙が個人スタイルを支配、これらすべての複合）として読み解き、なぜ名指し候補の文体計量研究（Skye Grey、アストン、カフィエロ）が異なる首位候補に到達する一方、ヴァン・ドルストの広範で方法論的に透明な比較が単一指名を拒否するのかを説明する。"
+description: "バス・ヴァン・ドルストの『Where is Satoshi?』 スタイロメトリー（計量文体論）コーパスからサトシ正体候補 5 名（アダム・バック、ウェイ・ダイ、ハル・フィニー、ニック・サボ、レン・サッサマン）のバローズ・デルタおよびジャッカード類似度を抽出した Bitcoin Institute による独自再分析。所見：ニック・サボが 12,739 名コーパスの上位 4.67% で名指し候補内首位、Skye Grey 2013 およびアストン 2014 と整合。ただし、サボより近い無名著者が 594 名存在し、コーパス最近接 Top 20 はノイズ（EC アカウント、リメイラー出力、捨てアカウント）が占める — 信号ではない。"
 tags:
   - "satoshi-identity"
   - "stylometric-analysis"
@@ -41,6 +41,7 @@ relatedEntries:
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
