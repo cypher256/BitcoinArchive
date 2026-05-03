@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"

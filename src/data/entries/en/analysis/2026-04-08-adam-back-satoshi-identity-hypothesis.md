@@ -46,6 +46,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - aftermath/2008-08-20-adam-back-biography
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi

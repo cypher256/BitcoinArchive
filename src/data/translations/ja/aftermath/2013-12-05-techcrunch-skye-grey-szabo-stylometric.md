@@ -33,6 +33,7 @@ relatedEntries:
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - aftermath/2014-04-16-aston-university-szabo-stylometric-study
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry

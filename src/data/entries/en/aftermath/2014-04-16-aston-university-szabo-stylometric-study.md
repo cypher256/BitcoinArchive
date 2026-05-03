@@ -40,6 +40,7 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

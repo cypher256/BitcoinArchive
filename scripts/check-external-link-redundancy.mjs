@@ -54,6 +54,12 @@ const EXCLUDE_URLS = new Set([
   // BitcoinTalk root URL — too generic; matches any entry whose
   // sourceUrl is bitcointalk.org/ exactly (not a specific thread).
   'https://bitcointalk.org/',
+  // Bas van Dorst's "Where is Satoshi?" repository is the sourceUrl for
+  // both the aftermath entry (the primary record of the project's release)
+  // and the Bitcoin Institute reanalysis entry (which analyzes the same
+  // project's published data). Body links from the aftermath to the GitHub
+  // page should remain external (linking out to the source).
+  'https://github.com/basvandorst/where-is-satoshi',
 ]);
 
 // ---------------------------------------------------------------------------

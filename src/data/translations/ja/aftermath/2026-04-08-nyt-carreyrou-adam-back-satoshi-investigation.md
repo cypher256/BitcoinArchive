@@ -49,6 +49,7 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - aftermath/2014-04-16-aston-university-szabo-stylometric-study
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
 translationStatus: complete
 ---
 
