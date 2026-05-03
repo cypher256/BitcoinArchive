@@ -91,6 +91,19 @@ Bitcoin v0.1 の `src/main.cpp` では、ブロック 0 の全フィールドが
 
 v0.1 には `MineGenesisBlock()` 関数は存在しない。ランタイムでジェネシスのナンスを探索するコードパスは存在しない。`LoadBlockIndex()` が空のデータベースを検出すると、上記定数からジェネシスブロックを決定論的に再構築し、ハッシュを `assert()` で検証してディスクに書き込むだけである。
 
+```mermaid
+flowchart TD
+    A["ノード起動"] --> B["LoadBlockIndex"]
+    B --> C{"ブロックDB が空?"}
+    C -->|Yes| D["定数からブロック 0 をローカル再構築 (nTime, nBits, nNonce, pszTimestamp, 期待マークルルート)"]
+    D --> E["assert(block.GetHash() == hashGenesisBlock)"]
+    E --> F["ブロック 0 をディスクに書き込み"]
+    F --> G["通常のブロック処理に進む"]
+    C -->|No| G
+```
+
+`Yes` 経路の分岐はノードのライフタイムで一度だけ実行される — 空 DB での初回起動時のみ。ピアとの接続は不要、PoW 検証も呼ばれない。ブロック 0 のコンセンサスはハッシュ等価性のみ。
+
 現代の Bitcoin Core（`src/kernel/chainparams.cpp`）も同じ4つの定数（1231006505, 2083236893, 0x1d00ffff, 1）を使用する。この機構は17年間変わっていない。
 
 実用上の帰結：
