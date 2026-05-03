@@ -27,7 +27,7 @@ relatedEntries:
 <!-- speaker: Liberty Standard -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Windowsユーザーの方は時々Bitcoinがクラッシュすることがあるか？
+> Windowsユーザーは時々Bitcoinがクラッシュすることがあるか？
 > 最近wine-1.0.1上で動作しているBitcoinが頻繁にクラッシュしている。
 > これがWineの問題なのかBitcoinの問題なのか気になった。
 <!-- /tone-skip -->

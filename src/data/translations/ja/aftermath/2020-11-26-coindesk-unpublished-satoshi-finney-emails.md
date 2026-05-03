@@ -53,7 +53,7 @@ translationStatus: complete
 
 **メール2：[2009年1月8日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
 件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
-> 「お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された：http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。サトシ」
+> 「お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された: http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。Satoshi」
 
 このメールは`satoshi@vistomail.com`から送信された。
 

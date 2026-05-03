@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ブロックチェーンをダウンロードするのに何時間もかかっているのは普通だろうか？ 15接続中だ。
+> listreceivedbyaddressとgetreceivedbyaddressコマンドがbitcoindのヘルプで重複している。（0.3.0でも同様。）
 <!-- /tone-skip -->
 
 はい、バグだ。次のバージョンで修正する必要がある。
