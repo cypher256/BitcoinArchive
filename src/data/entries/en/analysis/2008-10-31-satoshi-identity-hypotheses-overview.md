@@ -107,11 +107,11 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 | Candidate | [Skye Grey 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) (single-hypothesis) | [Aston 2014](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) (11 candidates) | [van Dorst 2024](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) (75,000+) / [reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [Cafiero / Carreyrou NYT 2026](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (12; broader pool 620) |
 |---|---|---|---|---|
-| Adam Back | — | rank not published | 3rd | **top match** (Hal Finney near tie); inconclusive |
-| Wei Dai | — | rank not published | 4th (tied) | rank not published |
-| Hal Finney | — | rank not published | 2nd | near tie with Adam Back |
-| Nick Szabo | **top match** | **top match** | **top** | rank not published |
-| Len Sassaman | — | not in candidate set | 4th (tied) | not in candidate set |
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | — | rank not published | 3rd | **top** |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | rank not published | 4th (tied) | rank not published |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | rank not published | 2nd | 2nd (close) |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | **top match** | **top match** | **top** | rank not published |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | — | not in candidate set | 4th (tied) | not in candidate set |
 
 **Reading the stylometric layer:** Szabo emerges as the most-frequently-top-ranked candidate — three of the four investigations place Szabo highest among the named candidates: Skye Grey 2013 (named), Aston 2014 (named), and the [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of van Dorst's published data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, with Cafiero describing that result as inconclusive (Hal Finney near tie). The convergence is partial, however: [van Dorst's full 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) contains 594 unnamed authors closer to Satoshi than Szabo, and van Dorst himself declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
 
