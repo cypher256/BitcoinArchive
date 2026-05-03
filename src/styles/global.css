@@ -316,6 +316,21 @@ a[href^="#"]:hover {
   display: inline;
 }
 
+/* Mermaid SVGs render at natural pixel size (rehype-mermaid is configured
+   with useMaxWidth: false). The wrapper provides horizontal scroll for
+   charts that exceed the prose container, so dense timelines stay
+   readable instead of getting squashed into ~800px of width. */
+.mermaid-scroll {
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+.mermaid-scroll > svg[id^="mermaid-"] {
+  display: block;
+  /* Keep SVG centered within the wrapper when it's narrower than the
+     container; let it overflow (and scroll) when wider. */
+  margin: 0 auto;
+}
+
 /* Responsive — see STYLE_GUIDE.md § Layout Width Policy
    ≥1200: containers at fixed max-width
    768–1199: containers fluid to viewport, padding 1.5rem

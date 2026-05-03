@@ -976,6 +976,32 @@ timelines, flowcharts, sequence diagrams, state diagrams, Gantt charts,
 mindmaps, class/ER diagrams. Any writer can add a Mermaid block in
 markdown without touching component code.
 
+#### Sizing and overflow
+
+Mermaid SVGs render at their natural pixel size (per-diagram-type
+`useMaxWidth: false` is set in `astro.config.mjs`). A custom rehype
+plugin (`src/lib/rehype-mermaid-wrapper.mjs`) wraps each rendered SVG
+in a `<div class="mermaid-scroll">`, and `.mermaid-scroll` has
+`overflow-x: auto` in `global.css`.
+
+The combined effect:
+
+- Diagrams that are narrower than the prose container display at
+  natural size, centered (no scroll).
+- Diagrams wider than the container (e.g. dense timelines with 20+
+  events at ~3000px natural width) keep their full size and scroll
+  horizontally inside the wrapper, so readers can pan to see all
+  events at readable text size.
+
+Without this wrapper, dense timelines collapse into tiny illegible
+text when constrained to the 800px reading-tier container.
+
+If a specific diagram is too dense even with horizontal scroll
+(common signal: still need to zoom the browser to read it), prefer
+splitting it into multiple smaller diagrams over forcing it into one.
+Splitting strategies that have worked: by decade, by category, or by
+phase.
+
 #### Validation
 
 The pipeline `npm run check` includes `check:mermaid`, which extracts

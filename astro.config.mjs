@@ -9,6 +9,7 @@ import { remarkRewriteBase } from './src/lib/remark-rewrite-base.mjs';
 import { remarkQuoteBlocks } from './src/lib/remark-quote-blocks.mjs';
 import { remarkEditorialMarker } from './src/lib/remark-editorial-marker.mjs';
 import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
+import { rehypeMermaidWrapper } from './src/lib/rehype-mermaid-wrapper.mjs';
 
 const { site, base } = getDeploymentConfig();
 
@@ -32,7 +33,26 @@ export default defineConfig({
     rehypePlugins: [
       rehypeNoAutolinkEmail,
       rehypeKatex,
-      [rehypeMermaid, { strategy: 'inline-svg' }],
+      // mermaidConfig disables `useMaxWidth` per diagram type so the rendered
+      // SVG keeps its natural pixel width instead of stretching to 100%. The
+      // wrapper plugin below then puts each SVG inside a scrollable div, so
+      // dense charts (e.g. 20-event timelines) stay readable instead of
+      // getting squashed into the prose container width.
+      [rehypeMermaid, {
+        strategy: 'inline-svg',
+        mermaidConfig: {
+          themeVariables: { fontSize: '14px' },
+          flowchart: { useMaxWidth: false },
+          sequence: { useMaxWidth: false },
+          gantt: { useMaxWidth: false },
+          timeline: { useMaxWidth: false },
+          quadrantChart: { useMaxWidth: false },
+          classDiagram: { useMaxWidth: false },
+          stateDiagram: { useMaxWidth: false },
+          mindmap: { useMaxWidth: false },
+        },
+      }],
+      rehypeMermaidWrapper,
     ],
     // Tell Shiki to skip 'mermaid' code blocks. Without this, Shiki converts
     // them to <pre class="astro-code"> with span-wrapped tokens, stripping
