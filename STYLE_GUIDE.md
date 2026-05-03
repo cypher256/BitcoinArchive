@@ -412,11 +412,11 @@ because Google auto-generates from body content.
 Counted by `String.length` (each character counts as 1, regardless of
 half-width / full-width). Enforced by
 `scripts/check-description-length.mjs`, wired into `npm run build`
-and `npm run check`. The script currently runs in **WARN mode** (lists
-violations but exits 0) while the existing 384 violations from prior
-authoring practice are being cleaned up. Once the legacy violations
-reach zero, the invocation in `package.json` will be switched to
-`--strict` so that future overflows fail the build.
+and `npm run check` in `--strict` mode (a single overflow fails the
+build). The script previously ran in WARN mode while the legacy
+backlog of 384 violations from prior authoring practice was being
+remediated; the switch to `--strict` happened once the backlog
+reached zero.
 
 ### When the cap forces information out of description
 
@@ -1099,6 +1099,79 @@ In `flowchart`, node labels with brackets/parens/colons must be quoted
 `timeline`, the event text after `:` is plain text — quoting it
 displays the quotes literally inside the rendered card. Avoid
 quoting timeline events; use the syntax above.
+
+#### Title conventions and required diagrams: biographies and hypothesis pages
+
+Two specific entry types have standardized Mermaid timeline conventions:
+biographies and hypothesis-page entries
+(`analysis/*-satoshi-identity-hypothesis.md`). Both the trigger for
+adding a Mermaid and the title format are codified so the page type is
+legible from the diagram alone.
+
+**Biographies — required when scope is multi-decade or candidate-relevant.**
+
+Required for: biographies of Satoshi-identity candidates (Adam Back,
+Wei Dai, Hal Finney, Nick Szabo, Sassaman, Peter Todd, Kaneko, etc.)
+and biographies of core protocol-development participants with
+multi-decade scope (Satoshi Nakamoto, Gavin Andresen). Short-scope
+biographies (single-event participants, brief mailing-list contacts)
+are not required to have a Mermaid timeline. The trigger is multi-decade
+narrative or ≥ 6 distinct dated events worth surfacing.
+
+Title — canonical form:
+
+- EN: `<Full Name>'s Bitcoin-relevant timeline`
+- JA: `<人物名>のビットコイン関連年表`
+
+The timeline covers Bitcoin-relevant events across the person's
+documented life. Even when the active window is narrow (e.g. Andresen
+2010–2014), the title remains the generic form; the date range is
+visible from the events themselves.
+
+**Hypothesis pages — only when ≥ 2 alibi-relevant events exist.**
+
+A hypothesis-page Mermaid timeline is warranted only when at least
+two documented *alibi-relevant* events — events showing the
+candidate's documented activity in time-conflict with Satoshi's
+documented activity at the same moment — are available to populate
+it. The Mermaid is for **physical / time-conflict alibi**, not
+general chronology, capability gaps, denials, or third-party
+reception patterns. Those structural arguments belong in prose; only
+physical / time alibi belongs in the Mermaid.
+
+If the hypothesis page has 0 or 1 alibi-relevant events, do not add a
+Mermaid. The candidate's biography Mermaid covers the chronology, and
+duplicating it on the hypothesis page adds no information.
+
+Title — canonical form:
+
+- EN: `<Candidate> vs Satoshi - alibi-relevant events`
+- JA: `<候補名> vs サトシ - アリバイ関連イベント`
+
+Use the candidate's commonly-referenced short name where unambiguous
+(`Hal` / 「ハル」, `Szabo` / 「サボ」), or the full name where shorter
+forms are ambiguous (`Wei Dai` / 「ウェイ・ダイ」).
+
+**Currently qualifying.** Hal Finney is the only candidate with ≥ 2
+documented physical-alibi events: the April 18, 2009 Santa Barbara
+race day (timestamped photograph by Fran Finney) versus Satoshi's
+contemporaneous Hearn email and transaction broadcast, and the August
+14–15, 2010 SF Singularity Summit (public attendance record) versus
+Satoshi's 4 commits and 17 forum posts on the same two days.
+
+Other candidates (Adam Back, Wei Dai, Szabo, Sassaman, Todd, Kaneko)
+do not currently have ≥ 2 alibi-relevant events documented and so do
+not have hypothesis-page Mermaids. New documented physical alibis can
+trigger an addition; structural counter-evidence (capability gaps,
+self-denials, third-party reception) cannot.
+
+**Audit.** When adding or renaming such an entry, grep the corpus for
+existing title conventions to confirm consistency:
+
+```bash
+grep -rn "title.*ビットコイン関連年表\|title.*Bitcoin-relevant timeline" src/data
+grep -rn "title.*vs サトシ\|title.*vs Satoshi" src/data
+```
 
 ### d3 components: numerical and custom visualizations
 

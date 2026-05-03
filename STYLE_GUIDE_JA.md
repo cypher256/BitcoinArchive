@@ -553,9 +553,10 @@ documented in `STYLE_GUIDE.md § Description Policy` — that section is
 the authoritative source; do not re-derive the rationale here.
 
 Enforced by `scripts/check-description-length.mjs`, wired into
-`npm run build` and `npm run check` in WARN mode while existing
-violations are remediated; will switch to `--strict` once the legacy
-backlog reaches zero.
+`npm run build` and `npm run check` in `--strict` mode (a single
+overflow fails the build). Previously ran in WARN mode while the
+384-entry legacy backlog was being remediated; the switch to
+`--strict` happened once the backlog reached zero.
 
 When a description currently exceeds the cap, **rewrite to fit**, do
 not relax the cap. If the over-length content carries body-summary
@@ -649,6 +650,36 @@ The half-width `;` inside code blocks, frontmatter, URLs, and quoted
 English text is out of scope (the source language allows it).
 
 Enforced by `npm run check:ja-glossary` (rule: `；` → `、 / 。 / — / 改行`).
+
+### Half-width space convention — JA × ASCII boundaries only
+
+Insert a half-width space at boundaries between Japanese and ASCII
+characters; do **not** insert one between two Japanese characters.
+
+| Boundary | Convention | Example |
+|---|---|---|
+| JA → ASCII | half-width space | `本仮説は A 群` / `ビットコイン v0.1` |
+| ASCII → JA | half-width space | `A 群` / `v0.1 公開` |
+| JA → JA | **no space** | `A 群候補` (not `A 群 候補`)<br>`A 群として` (not `A 群 として`) |
+| ASCII → ASCII | ASCII rules | `Bitcoin v0.1` |
+
+The trap to avoid is leaving a trailing space behind after a
+substitution. Replacements that change `グループ A` → `A 群` move the
+ASCII letter from the right edge of the token to the left edge — the
+space that was correctly between `A` and the following Japanese word
+in the original now sits between two Japanese characters in the new
+form, where it is meaningless. Trim it.
+
+Bulk substitutions across JA × ASCII spans are the source of these
+stranded spaces. **Fix existing violations one occurrence at a time**,
+inspecting the surrounding context — never with another bulk
+replacement, since that is how stranded spaces appeared in the first
+place.
+
+Enforced by `npm run check:ja-spacing`. The script scans all JA
+markdown bodies, skips fenced code blocks (so Mermaid timeline
+intentional spacing is preserved), and fails the build on any
+half-width space between two Japanese letters.
 
 ### Mermaid timeline labels — Japanese line wrapping
 
