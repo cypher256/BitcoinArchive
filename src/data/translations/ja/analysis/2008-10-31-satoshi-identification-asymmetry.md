@@ -27,7 +27,7 @@ secondarySources:
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "Jameson Lopp — Was Satoshi Greedy? (2022)"
     url: "https://www.lopp.net/pdf/Was-Satoshi-Greedy.pdf"
-  - name: "Strangely Mined Bitcoins — University of Iceland, PLOS ONE (2021)"
+  - name: "Strangely Mined Bitcoins — アイスランド大学、PLOS ONE (2021)"
     url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
   - name: "US SEC — Statement on the approval of spot Bitcoin ETPs (2024-01-10)"
     url: "https://www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023"

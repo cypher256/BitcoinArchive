@@ -50,7 +50,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ピーター・トッド（1985年3月14日、カナダ・バンクーバー生まれ）は暗号学者、応用暗号コンサルタント、Bitcoin Core開発者である。2011年にOCAD University（Ontario College of Art and Design）のIntegrated Media専攻を卒業し、以前は地球物理学スタートアップGedex Inc.でアナログ電子工学の設計者として勤務していた。2008年4月にGitHubアカウントを登録している。Bitcoinプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
+ピーター・トッド（1985年3月14日、カナダ・バンクーバー生まれ）は暗号学者、応用暗号コンサルタント、Bitcoin Core開発者である。2011年にOCAD大学（オンタリオ・カレッジ・オブ・アート・アンド・デザイン）のIntegrated Media専攻を卒業し、以前は地球物理学スタートアップGedex Inc.でアナログ電子工学の設計者として勤務していた。2008年4月にGitHubアカウントを登録している。Bitcoinプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
 
 **BitcoinTalkとサトシ：**
 トッドは2010年12月7日にユーザー名「retep」でBitcoinTalkに登録した。当時、このハンドルネームがPeterの逆綴りであることに気づいた者はほとんどいなかった（Bitcoin Core開発者のグレゴリー・マクスウェルですら「気づくのに10年近くかかった」と2024年にHacker Newsで述べている）。数年後、トッドはこのアカウントのユーザー名を自ら「Peter Todd」に変更した。3日後の12月10日、「Fees in BitDNS confusion」スレッドで[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の[投稿に返信した](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)。サトシはそこでトランザクション置換の概念 — 後にReplace-by-Feeとして知られるもの — を説明していた。これはトッドのフォーラムでの2番目の投稿だった。サトシの[最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)はその2日後の2010年12月12日だった。

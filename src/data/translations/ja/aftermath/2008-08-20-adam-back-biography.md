@@ -46,7 +46,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-アダム・バック（1970年、英国生まれ）は、暗号学者、サイファーパンク、そしてHashcashの発明者である。University of Exeterでコンピューターサイエンスの博士号を取得した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコインとなるものについて最初に連絡を取ったことが知られている人物である。
+アダム・バック（1970年、英国生まれ）は、暗号学者、サイファーパンク、そしてHashcashの発明者である。エクセター大学でコンピューターサイエンスの博士号を取得した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコインとなるものについて最初に連絡を取ったことが知られている人物である。
 
 ```mermaid
 timeline

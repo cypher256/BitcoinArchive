@@ -47,7 +47,7 @@ translationStatus: complete
 ---
 <!-- tone-skip -->
 
-ウェイ・ダイは、デジタル通貨のb-money提案と暗号ライブラリCrypto++という2つの主要な貢献で知られるコンピューターサイエンティスト・暗号学者である。University of Washingtonでコンピューターサイエンスを学び、Microsoftで働いた。
+ウェイ・ダイは、デジタル通貨のb-money提案と暗号ライブラリCrypto++という2つの主要な貢献で知られるコンピューターサイエンティスト・暗号学者である。ワシントン大学でコンピューターサイエンスを学び、Microsoftで働いた。
 
 ```mermaid
 timeline

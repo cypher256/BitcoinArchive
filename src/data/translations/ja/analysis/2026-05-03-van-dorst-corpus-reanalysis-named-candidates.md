@@ -74,7 +74,7 @@ translationStatus: complete
 | ウェイ・ダイ | `weidai_eskimo_com.txt`（既知のサイファーパンクアドレス） |
 | ハル・フィニー | `hfinney_shell_portal_com.txt`（サイファーパンクメーリングリストアドレス） |
 | ニック・サボ | `szabo_netcom_com.txt`、`szabo_techbook_com.txt` |
-| レン・サッサマン | `len_sassaman_esat_kuleuven_be.txt`（KU Leuven 博士課程）、`rabbi_quickie_net.txt`（サイファーパンクハンドル） |
+| レン・サッサマン | `len_sassaman_esat_kuleuven_be.txt`（ルーヴェン・カトリック大学博士課程）、`rabbi_quickie_net.txt`（サイファーパンクハンドル） |
 
 5 名のうち 2 名が複数のメールアドレスで出現 — ヴァン・ドルストの README 自身が指摘する複数アドレス問題（「一部の著者は複数の名前・メールアドレスで活動していた」）が表面化した可視の事例である。
 
