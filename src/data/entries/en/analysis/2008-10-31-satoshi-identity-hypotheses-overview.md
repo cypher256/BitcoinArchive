@@ -107,11 +107,11 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 | Candidate | [Skye Grey 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) (single-hypothesis) | [Aston 2014](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) (11 candidates) | [van Dorst 2024](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) (75,000+) / [reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [Cafiero / Carreyrou NYT 2026](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (12; broader pool 620) |
 |---|---|---|---|---|
-| Adam Back | — | examined | top 7.87% (rank 1003 / 12,739) | **top match** (Hal Finney near tie); inconclusive |
-| Wei Dai | — | examined | top 22.99% (rank 2929 / 12,739) | examined |
-| Hal Finney | — | examined | top 6.89% (rank 878 / 12,739) | near tie with Adam Back |
-| Nick Szabo | **top match** | **top match** | **leads named group** at top 4.67% (rank 595 / 12,739) | examined |
-| Len Sassaman | — | not in candidate set | top 23.82% (rank 3034 / 12,739) | not in candidate set |
+| Adam Back | — | examined | 3rd | **top match** (Hal Finney near tie); inconclusive |
+| Wei Dai | — | examined | 4th (tied) | examined |
+| Hal Finney | — | examined | 2nd | near tie with Adam Back |
+| Nick Szabo | **top match** | **top match** | **top** | examined |
+| Len Sassaman | — | not in candidate set | 4th (tied) | not in candidate set |
 
 **Reading the stylometric layer:** the divergence — Szabo, Szabo, no name, Adam Back — is itself the empirical observation. No single methodological choice has produced a stable identification, and the wider, methodology-transparent comparison ([van Dorst's 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)) explicitly declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
 

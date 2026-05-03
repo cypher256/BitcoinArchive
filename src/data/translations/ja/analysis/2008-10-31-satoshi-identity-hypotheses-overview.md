@@ -108,11 +108,11 @@ translationStatus: complete
 
 | 候補 | [Skye Grey 2013](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（単独仮説） | [アストン 2014](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（11 候補） | [ヴァン・ドルスト 2024](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（75,000+）／[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [Cafiero／Carreyrou NYT 2026](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)（12 候補；広範プール 620） |
 |---|---|---|---|---|
-| アダム・バック | — | 検討対象 | 上位 7.87%（順位 1003／12,739） | **首位**（ハル・フィニーがほぼ同点）／不確定 |
-| ウェイ・ダイ | — | 検討対象 | 上位 22.99%（順位 2929／12,739） | 検討対象 |
-| ハル・フィニー | — | 検討対象 | 上位 6.89%（順位 878／12,739） | アダム・バックとほぼ同点 |
-| ニック・サボ | **首位** | **首位** | **名指し候補内首位** 上位 4.67%（順位 595／12,739） | 検討対象 |
-| レン・サッサマン | — | 候補集合に未収録 | 上位 23.82%（順位 3034／12,739） | 候補集合に未収録 |
+| アダム・バック | — | 検討対象 | 3 位 | **首位**（ハル・フィニーがほぼ同点）／不確定 |
+| ウェイ・ダイ | — | 検討対象 | 4 位（同点） | 検討対象 |
+| ハル・フィニー | — | 検討対象 | 2 位 | アダム・バックとほぼ同点 |
+| ニック・サボ | **首位** | **首位** | **首位** | 検討対象 |
+| レン・サッサマン | — | 候補集合に未収録 | 4 位（同点） | 候補集合に未収録 |
 
 **文体計量レイヤの読み方：** 結果の分散 — サボ、サボ、指名なし、アダム・バック — それ自体が経験的観察である。単一の方法論的選択が安定的な特定を生み出してはおらず、より広範で方法論的に透明な比較（[ヴァン・ドルストの 75,000 人著者コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)）は首位候補の指名そのものを意図的に避けている。文体計量は候補空間を絞り込むが、単一の人物を特定はしない。
 
