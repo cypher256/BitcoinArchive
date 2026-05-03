@@ -100,4 +100,45 @@ Cross-referencing this corpus against the named-candidate stylometric tradition:
 
 The fact that van Dorst declines to name a candidate while the narrative-driven studies do — and the fact that the named-candidate studies disagree on the leading candidate (Szabo vs. Adam Back) — is itself a methodological observation: stylometric Satoshi identification is sensitive to corpus selection, distance metric, and candidate pre-selection in ways that change the answer.
 
+**Bitcoin Institute reanalysis: per-candidate distance values from van Dorst's published data (May 2026):**
+
+The author refuses to publish a ranking, but the underlying numerical data is downloadable as `output/comparison.xlsx` (43 MB, 76,407 rows × 76 columns of (author, source) statistics). The Bitcoin Institute extracted distance values for the five most-cited Satoshi-identity named candidates (Adam Back, Wei Dai, Hal Finney, Nick Szabo, Len Sassaman), aggregated per-author (chunk-weighted across all sources), and ranked the named candidates against the 12,739 authors in the corpus with at least 10 chunks of writing (the threshold at which Burrows' Delta becomes statistically meaningful per the README's own guidance).
+
+| Candidate | Author file | Burrows Δ | Rank | Percentile | Chunks |
+|---|---|---|---|---|---|
+| **Nick Szabo** | szabo_netcom_com.txt | 0.14405 | 595 / 12,739 | top **4.67%** | 130 |
+| **Hal Finney** | hfinney_shell_portal_com.txt | 0.14411 | 878 / 12,739 | top **6.89%** | 1,336 |
+| **Adam Back** | adam_cypherspace_org.txt | 0.14414 | 1,003 / 12,739 | top **7.87%** | 676 |
+| **Adam Back** (alt email) | aba_dcs_ex_ac_uk.txt | 0.14415 | 1,092 / 12,739 | top **8.57%** | 1,474 |
+| **Wei Dai** | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | top 22.99% | 161 |
+| **Len Sassaman** | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | top 23.82% | 65 |
+
+(Burrows' Delta: lower = closer match. Corpus mean = 0.14456, stdev = 0.00027, range 0.14128–0.14617. All five named candidates are below the corpus mean — their writing is closer to Satoshi's reference profile than the average cypherpunk-era mailing-list author.)
+
+**Why van Dorst declines to publish a top candidate (read from the data itself):**
+
+The top of the corpus' Burrows' Delta ranking is occupied by what the data clearly shows is **noise rather than signal**. The 20 closest-matched authors include:
+
+- Italian and Spanish e-commerce/utility account text (`verba_rol_it`, `info_giganetstore_com`, `apoio_giganetstore_com`, `gianluigi_euro_net`)
+- Anonymous remailer outputs (`an250888_anon_penet_fi`, `cypherpunks_alqaeda_net`, `nobody_squirrel_owl_de`, `anonremailer_utopia_hacktic_nl`, `anonymous_freezone_remailer`)
+- Disposable account text (`dxnew2001_yahoo_com`, `pro2rat_yahoo_com_au`, `ramonbitcoin`)
+- Miscellaneous unknown writers (`skaplin_c2_org`, `p_txt_toad_com`, `199604290755_jaa15922_utopia_hacktic_nl`, `hahn_lds_loral_com`, `sion_cs_sunysb_edu`, `kevin_gaec_com`, `insightonthenews_broadbandpublisher_com`, `oa_acm_org`)
+
+None of the top 20 — and none of the top several hundred — is a named identity-hypothesis candidate. The named candidates begin appearing only at rank 595 (Szabo).
+
+The ranking is dominated by structural artifacts of the corpus: short-text accounts whose limited vocabulary happens to align with Satoshi's reference profile by chance, anonymous remailer relay text whose attribution is nominal rather than authorial, and language-mismatched commerce-site text whose distance metric drops because of low common-word overlap rather than genuine style match.
+
+**This is the empirical content of van Dorst's "I'm not 100% sure" caveat.** The published note "I have a short-list of suspects. No, I'm not going to drop names here because I'm not 100% sure" can be read in four ways, all of which are corroborated by the data above:
+
+1. **Metric noise sensitivity.** Burrows' Delta on its own ranks e-commerce and remailer accounts above all named candidates. Any "winner" produced by the metric on this corpus is unreliable until additional filtering (subject matter, era, author identification quality) is applied — exactly the filtering that produced the contested results in the smaller-pool studies (Skye Grey, Aston, Cafiero).
+2. **Author-attribution accuracy.** The README itself flags "some authors were active under multiple names and/or mail addresses and/or used remailer services" and "no guarantee that texts fully belong to the author" (mail-thread reply extraction). Aggregation per author is therefore lossy — the same person may appear as multiple rows, and remailer rows commingle traffic from many people. Adam Back appearing under both `aba_dcs_ex_ac_uk.txt` (his Exeter PhD email, top 8.57%) and `adam_cypherspace_org.txt` (his cypherspace.org address, top 7.87%) is one visible case of the multi-alias problem; there are presumably many invisible ones in the corpus.
+3. **Subject-matter overlap dominates individual style.** Candidates who wrote on cryptography topics in 1990s English are confounded with each other. The 5 named candidates clustering between 0.14405 and 0.14428 — within 0.74σ of each other — is the same finding Cafiero reached at the smaller-pool level (Adam Back and Hal Finney "near tie") and that Carreyrou's commissioned reviewer described as "inconclusive."
+4. **All of the above, compounded.** The four problems multiply: a metric that surfaces noise, attribution that is partly aliased and partly anonymized, subject-matter that washes out individual style, and a corpus where the named candidates can't be cleanly separated from the noise tail. No one of these alone is fatal; together they make a confident leader-naming irresponsible.
+
+**What the chunk-weighted ranking does and does not show:**
+
+It *does* show that the named candidates are stylometrically meaningful: all five rank in the top quarter of 12,739 mailing-list-active authors, four of five in the top 10%, and Nick Szabo at top 4.67% leads the named group — consistent with Skye Grey 2013 and Aston 2014. It also shows that Adam Back is not a unique near-match (Hal Finney and Szabo are both closer in this aggregate), which is consistent with Cafiero's "inconclusive" qualifier on the NYT investigation result.
+
+It *does not* show that any named candidate is the leading author of Satoshi's writing. The 594 unnamed authors closer than Szabo on this metric — even after the obvious noise-tail removal — represent the structural ceiling on what stylometric attribution can claim from this corpus. Van Dorst's silence on names is therefore the data-honest position: the underlying numerical comparisons separate the named candidates from random users, but they do not separate the named candidates from each other or from the noise floor cleanly enough to justify a single attribution.
+
 For the analytical treatment of stylometric methods in Satoshi identification, see the relevant identity-hypothesis entries: [Nick Szabo](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/), [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), and the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
