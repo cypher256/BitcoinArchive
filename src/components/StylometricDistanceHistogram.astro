@@ -8,9 +8,21 @@ interface Props {
 const { lang } = Astro.props;
 const data = await import('../data/derived/van-dorst-burrows-distribution.json').then(m => m.default);
 
+// Stats summary text is derived from the JSON's stats block at render time
+// so it stays in sync with the data when the corpus is regenerated. The only
+// hardcoded number left is the methodology constant ">= 10 chunks", which is
+// the filter applied during extraction (not a derived statistic).
+const s = data.stats;
+const totalAuthorsEN = s.totalAuthors.toLocaleString('en-US');
+const totalAuthorsJA = s.totalAuthors.toLocaleString('ja-JP');
+const meanStr = s.mean.toFixed(5);
+const stdevStr = s.stdev.toFixed(5);
+const minStr = s.min.toFixed(5);
+const maxStr = s.max.toFixed(5);
+
 const labels = {
   en: {
-    title: "Burrows' Delta distribution: Satoshi vs. 12,739 mailing-list authors (van Dorst 2024)",
+    title: `Burrows' Delta distribution: Satoshi vs. ${totalAuthorsEN} mailing-list authors (van Dorst 2024)`,
     subtitle: "Each bar is the count of mailing-list-active authors (≥10 chunks of writing) in that Burrows' Delta range. Lower delta = closer match to Satoshi's reference profile. The most-cited Satoshi-identity named candidates are marked with colored horizontal lines. Corpus mean line shown for reference.",
     xLabel: 'Authors per bin',
     yLabel: "Burrows' Delta to Satoshi (lower = closer, top = closest)",
@@ -23,7 +35,7 @@ const labels = {
     tooltipBurrow: 'Burrows Δ',
     tooltipRank: 'Rank',
     tooltipChunks: 'chunks',
-    statsLine: 'Corpus: 12,739 authors with ≥10 chunks · mean 0.14456 · σ 0.00027 · range [0.14128, 0.14617]',
+    statsLine: `Corpus: ${totalAuthorsEN} authors with ≥10 chunks · mean ${meanStr} · σ ${stdevStr} · range [${minStr}, ${maxStr}]`,
     insightHeading: 'What this shows',
     insight1: 'All named candidates fall in the upper (top-side) tail of the distribution — closer to Satoshi than the corpus mean.',
     insight2: 'Nick Szabo at top 4.67% leads the named-candidate group; Hal Finney (6.89%) and Adam Back (7.87%) follow closely.',
@@ -37,7 +49,7 @@ const labels = {
     } as Record<string, string>,
   },
   ja: {
-    title: "Burrows' Delta 分布：サトシ vs メーリングリスト書き手 12,739 名（ヴァン・ドルスト 2024）",
+    title: `Burrows' Delta 分布：サトシ vs メーリングリスト書き手 ${totalAuthorsJA} 名（ヴァン・ドルスト 2024）`,
     subtitle: '各バーは、その Burrows\' Delta 範囲に位置するメーリングリスト活動書き手（10 チャンク以上）の数。Delta が低いほどサトシ参照プロファイルに近い。最も多く引用されるサトシ正体候補を色付き水平線で示す。コーパス平均も参考表示。',
     xLabel: 'バーごとの著者数',
     yLabel: "サトシへの Burrows' Delta（低いほど近い、上方ほど近い）",
@@ -50,7 +62,7 @@ const labels = {
     tooltipBurrow: 'Burrows Δ',
     tooltipRank: '順位',
     tooltipChunks: 'チャンク',
-    statsLine: 'コーパス：10 チャンク以上の著者 12,739 名／平均 0.14456／σ 0.00027／範囲 [0.14128, 0.14617]',
+    statsLine: `コーパス：10 チャンク以上の著者 ${totalAuthorsJA} 名／平均 ${meanStr}／σ ${stdevStr}／範囲 [${minStr}, ${maxStr}]`,
     insightHeading: 'この図が示すもの',
     insight1: '名指し候補はすべて分布の上方（サトシ側）に位置 — コーパス平均よりサトシに近い。',
     insight2: 'ニック・サボが上位 4.67% で名指し集団の首位。ハル・フィニー（6.89%）、アダム・バック（7.87%）が僅差で続く。',
