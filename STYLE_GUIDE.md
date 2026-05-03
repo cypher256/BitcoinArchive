@@ -411,8 +411,12 @@ because Google auto-generates from body content.
 
 Counted by `String.length` (each character counts as 1, regardless of
 half-width / full-width). Enforced by
-`scripts/check-description-length.mjs` (WARN by default, `--strict`
-flag fails the build).
+`scripts/check-description-length.mjs`, wired into `npm run build`
+and `npm run check`. The script currently runs in **WARN mode** (lists
+violations but exits 0) while the existing 384 violations from prior
+authoring practice are being cleaned up. Once the legacy violations
+reach zero, the invocation in `package.json` will be switched to
+`--strict` so that future overflows fail the build.
 
 ### When the cap forces information out of description
 

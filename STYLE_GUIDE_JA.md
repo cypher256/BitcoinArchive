@@ -552,8 +552,10 @@ JA `description` fields are capped at **100 characters** (counted by
 documented in `STYLE_GUIDE.md § Description Policy` — that section is
 the authoritative source; do not re-derive the rationale here.
 
-Enforced by `scripts/check-description-length.mjs` (WARN by default,
-`--strict` flag fails the build).
+Enforced by `scripts/check-description-length.mjs`, wired into
+`npm run build` and `npm run check` in WARN mode while existing
+violations are remediated; will switch to `--strict` once the legacy
+backlog reaches zero.
 
 When a description currently exceeds the cap, **rewrite to fit**, do
 not relax the cap. If the over-length content carries body-summary
