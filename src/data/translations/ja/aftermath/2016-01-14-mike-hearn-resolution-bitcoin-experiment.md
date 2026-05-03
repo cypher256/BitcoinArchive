@@ -73,7 +73,7 @@ translationStatus: complete
 ハーンは、サトシの離脱が計画外のガバナンスの空白を残したと述べた。
 
 <!-- speaker: Mike Hearn -->
-> 「サトシが去る時、Bitcoin Coreと呼ばれるようになるプログラムの手綱を、初期の貢献者である[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に託した」
+> 「サトシが去ったとき、彼は現在 Bitcoin Core と呼んでいるプログラムの手綱を、初期の貢献者の一人である[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に引き渡した」
 
 <!-- speaker: narrator -->
 ギャビンの判断力を称賛し、ハーン自身がGoogleを辞めてビットコインにフルタイムで取り組む決断をした理由の一つだったと述べた上で、こう付け加えた。
