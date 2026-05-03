@@ -100,6 +100,7 @@ translationStatus: complete
 
 - **Newsweek (2014 年 3 月 6 日)** — リア・マクグラス・グッドマンがドリアン・プレンティス・サトシ・ナカモトを名前一致と訪問取材によりサトシ候補として特定。ドリアンは AP 通信を含む複数の場でこの主張を否定した。詳細は [Newsweek/ドリアン エントリ](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) 参照。
 - **Forbes (2014 年 3 月 25 日)** — アンディ・グリーンバーグの長文取材記事。後にジェイムソン・ロップが定式化することになる「ハル・フィニーのレース当日アリバイ」 を含む。当時の最有力候補としてハル・フィニーを扱い、長文ジャーナリズムとして提示した。
+- **ニューヨーク・タイムズ — ナサニエル・ポパー／『Digital Gold』 (2015 年 5 月 15 日)** — ポパーの NYT 記事は著書『Digital Gold』 からの抜粋であり、ニック・サボを最有力サトシ候補として名指した。サボはメールで否定し、1 年後にポパーが再質問した際も否定を繰り返した。2026 年の NYT カレイロウによるアダム・バック特定以前で最も多く引用される主流大手紙によるサボ特定。詳細は [ポパー NYT 余波エントリ](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) 参照。
 - **HBO『Money Electric: The Bitcoin Mystery』 (2024 年 10 月 8 日)** — カレン・ホーバック監督によるドキュメンタリー。2010 年 12 月の BitcoinTalk スレッドの読み込みを根拠に、ピーター・トッドをサトシ候補として名指した。トッドは公的に否定し、技術コミュニティは証拠を状況証拠的と批判した。詳細は [HBO ドキュメンタリー エントリ](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) 参照。
 - **ニューヨーク・タイムズ — ジョン・カレイロウによる調査 (2026 年 4 月 8 日)** — ピューリッツァー賞受賞ジャーナリストのカレイロウが 18 か月の文体計量分析を経て、Blockstream CEO のアダム・バックを最有力候補として名指した。バックは公的に否定し、委託先言語学者の独立分析は内部で「不確定」 と評された（ハル・フィニーがほぼ並んだ）。詳細は [NYT 調査エントリ](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) 参照。
 
@@ -114,6 +115,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 - **セルジオ・デミアン・ラーナー — Patoshi マイニングパターン (2013 年 4 月、2019 年・2020 年に追加分析)** — ラーナーは初期ブロックの coinbase データに 2 つの独立した指紋を発見した: ExtraNonce の傾きと、ナンス最下位バイトの分布が約 50 個の特定値に限定されていること。これらは一貫して 1 人の初期マイナーを示している。分析では Patoshi マイナーの保有量を 22,503 ブロックにわたる約 110 万 BTC と推定している。詳細は [Patoshi 分析エントリ](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) 参照。
 - **ジェイムソン・ロップ — *Was Satoshi Greedy?* (2022) およびハル・フィニーのレース当日分析 (2023)** — ロップの 2022 年の研究は Patoshi マイナーの行動 (利益最大化ではなくネットワーク防衛のための意図的なハッシュレート抑制) を再構成する。2023 年のハル・フィニー分析は「レース当日アリバイ」 — フィニーがサンタバーバラで 10 マイルレースを走っていた時間帯にサトシがビットコインネットワーク上で活動していた — を、ハル・フィニー = サトシ仮説に対する構造化された反論に定式化した。
 - **アイスランド大学 — *Strangely Mined Bitcoins*、PLOS ONE (2021)** — 査読付き論文。初期ビットコインのナンス分布 (先頭ニブル) に追加の統計的異常を発見し、Lerner の Patoshi パターンを別の方法論レベルで裏付けた。
+- **文体計量による特定の試み (2013〜2026)** — 文体計量・法言語学的分析によりサトシを執筆パターンから特定しようとする方法論的系譜が並行して存在する。最も多く引用される 4 件： [Skye Grey の 2013 年 12 月 LikeInAMirror 調査](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（手作業による句の比較、サボ単独仮説検証）；[Aston University の 2014 年 4 月「Project Bitcoin」 研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（ジャック・グリーヴ博士指導下の法言語学授業課題、11 候補、サボを最上位）；[バス・ヴァン・ドルストの 2024 年 4 月「Where is Satoshi?」 オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（メーリングリスト書き手 75,000 人以上＋ Reddit コメント 750 万件以上、数値データの全面公開、首位候補の指名を意図的に拒否）； 2026 年の Carreyrou／Cafiero による NYT 調査（上記 §1.1）。これら 4 件は候補プールの設計・分析手法に応じて異なる首位候補を生んでいる — サボ、サボ、指名なし、アダム・バック — このパターン自体が文体計量帰属の推論的射程についての経験的観察である。
 
 ### 1.4 国家・準国家機関の関心
 
