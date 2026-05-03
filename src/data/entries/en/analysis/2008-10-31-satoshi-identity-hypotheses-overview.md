@@ -150,9 +150,9 @@ quadrantChart
     quadrant-3 "Visible and underqualified"
     quadrant-4 "Visible cypherpunks"
     "Wei Dai": [0.88, 0.55]
-    "Adam Back": [0.9, 0.25]
-    "Hal Finney": [0.9, 0.05]
-    "Nick Szabo": [0.78, 0.18]
+    "Adam Back": [0.83, 0.25]
+    "Hal Finney": [0.83, 0.05]
+    "Nick Szabo": [0.71, 0.18]
     "Len Sassaman": [0.6, 0.75]
     "Paul Le Roux": [0.5, 0.55]
     "Peter Todd": [0.5, 0.4]
