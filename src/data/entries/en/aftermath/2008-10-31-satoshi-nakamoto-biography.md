@@ -56,6 +56,21 @@ relatedEntries:
 
 Satoshi Nakamoto is the pseudonym used by the individual or group who created Bitcoin. Their true identity has never been confirmed.
 
+```mermaid
+timeline
+    title Satoshi's documented activity, 2008 - 2011
+    2008-08 : "Earliest known email - to Adam Back about an electronic cash system"
+    2008-10 : "Bitcoin whitepaper published to the cryptography mailing list"
+    2009-01 : "Genesis block parameters defined (Jan 3)"
+            : "Bitcoin v0.1 released (Jan 8 - 9)"
+            : "First person-to-person transaction: 10 BTC to Hal Finney (Jan 12)"
+    2010-09 : "Tells Andresen privately about working on other projects (earliest withdrawal signal)"
+    2010-12 : "Final BitcoinTalk post (Dec 12) - 'I plan to pass the baton'"
+            : "Andresen publicly announces lead maintainer role (Dec 19)"
+    2011-04 : "'I've moved on' email to Mike Hearn (Apr 23)"
+            : "Final known email - to Andresen, alert-key handover (Apr 26)"
+```
+
 **White Paper:**
 On August 20, 2008, Satoshi [emailed Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) about a new electronic cash system, marking the earliest known communication about what would become Bitcoin. On October 31, 2008, Satoshi [published "Bitcoin: A Peer-to-Peer Electronic Cash System"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) to the cryptography mailing list at metzdowd.com. The paper described a decentralized digital currency system using proof-of-work to achieve consensus without a trusted third party.
 

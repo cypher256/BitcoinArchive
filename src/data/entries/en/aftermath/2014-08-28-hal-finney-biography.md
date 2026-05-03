@@ -58,6 +58,24 @@ relatedEntries:
 
 Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979.
 
+```mermaid
+timeline
+    title Hal Finney's life and Bitcoin involvement
+    1956-05 : "Born in Coalinga, California"
+    1979 : "BS Engineering, Caltech (Arcadia HS valedictorian 1974)"
+    1991 : "Joins Pretty Good Privacy (PGP) project as volunteer"
+    1992 : "Signs Alcor cryonics membership with wife Fran"
+    1996 : "Hired at PGP Inc., one of the first employees"
+    2004 : "Creates Reusable Proof-of-Work (RPOW)"
+    2009-01 : "Downloads Bitcoin v0.1 on release day, first non-Satoshi node"
+            : "Tweets 'Running bitcoin' (Jan 11)"
+            : "Receives 10 BTC from Satoshi in Block 170 - first P2P transaction (Jan 12)"
+    2009-08 : "Diagnosed with ALS"
+    2011 : "Retires from PGP Corporation (Symantec)"
+    2013-03 : "Publishes 'Bitcoin and Me' on BitcoinTalk"
+    2014-08 : "Dies; cryopreserved by Alcor as 128th patient (A-1436)"
+```
+
 **Cryptography and PGP:**
 In 1991, Finney began volunteering for Phil Zimmermann's Pretty Good Privacy (PGP) project, writing code for free. He became one of the principal developers of PGP 2.0. When Zimmermann founded PGP Inc. in 1996, Finney was hired as one of the first employees (the company later became part of Symantec through acquisitions).
 

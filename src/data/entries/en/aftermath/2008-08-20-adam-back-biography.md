@@ -47,6 +47,19 @@ relatedEntries:
 
 Adam Back (born 1970, United Kingdom) is a cryptographer, cypherpunk, and the inventor of Hashcash. He earned a PhD in computer science from the University of Exeter. He is the first person known to have been contacted by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) about what would become Bitcoin.
 
+```mermaid
+timeline
+    title Adam Back's Bitcoin-relevant timeline
+    1997-03 : "Hashcash announced on the cypherpunks mailing list"
+    1998-12 : "Cypherpunks-list b-money critique - 7 monetary-design issues"
+    2002-08 : "Hashcash paper revised - 'mint' framing for cost tokens"
+    2008-08 : "First known email from Satoshi (Aug 20) - earliest Bitcoin contact"
+            : "Refers Satoshi to Wei Dai's b-money; Satoshi emails Wei Dai (Aug 22)"
+    2014 : "Co-founds Blockstream, becomes CEO"
+    2024-02 : "COPA v Wright trial - testifies under oath"
+    2026-04 : "Named as strongest Satoshi candidate by NYT/Carreyrou; self-denies"
+```
+
 **Hashcash (1997):**
 In March 1997, Back proposed Hashcash, a proof-of-work system originally designed to combat email spam and denial-of-service attacks. The system required senders to compute a partial hash collision — a computationally expensive operation — before sending an email, making mass spam economically impractical. Hashcash was not a digital currency or payment system — it was purely a computational cost mechanism. Bitcoin later adopted its proof-of-work concept as the basis for mining and consensus, but the monetary and payment aspects of Bitcoin came from other intellectual lineages, including Wei Dai's b-money and Nick Szabo's bit gold. The [Bitcoin white paper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) cites Hashcash as one of its key references.
 

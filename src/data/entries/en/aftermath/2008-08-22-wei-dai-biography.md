@@ -47,6 +47,18 @@ relatedEntries:
 
 Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft.
 
+```mermaid
+timeline
+    title Wei Dai's Bitcoin-relevant timeline
+    1998-11 : "b-money proposal published on the cypherpunks mailing list"
+    1998-12 : "Adam Back publishes critique of b-money's monetary design (cypherpunks list)"
+    2008-08 : "Email from Satoshi (Aug 22) - asks about b-money citation year for the whitepaper"
+    2008-10 : "Bitcoin whitepaper cites b-money as its first reference"
+    2009-01 : "Bitcoin v0.1 ships with Crypto++ 5.5.2 SHA-256; Dai exchanges further emails with Satoshi"
+    2010-07 : "Bitcoin v0.3.6 integrates Crypto++ 5.6.0 SSE2-optimized SHA-256"
+    2014-01 : "LessWrong retrospective - Satoshi was 'not previously active' in cypherpunk communities"
+```
+
 **b-money (1998):**
 In November 1998, Dai published ["b-money"](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/), a proposal for an anonymous, distributed electronic cash system, on the cypherpunks mailing list. The b-money proposal described a system where participants could create money by broadcasting the solution to a computational puzzle — a concept conceptually similar to Bitcoin's proof-of-work mining. The paper outlined two protocols: one requiring a synchronous broadcast channel, and another using a set of servers to keep track of balances. B-money was never implemented, but it became one of the key intellectual precursors to Bitcoin.
 
