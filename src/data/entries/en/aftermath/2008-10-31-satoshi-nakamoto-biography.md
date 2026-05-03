@@ -59,16 +59,16 @@ Satoshi Nakamoto is the pseudonym used by the individual or group who created Bi
 ```mermaid
 timeline
     title Satoshi's documented activity, 2008 - 2011
-    2008-08 : Earliest known email - to Adam Back about an electronic cash system
-    2008-10 : Bitcoin whitepaper published to the cryptography mailing list
-    2009-01 : Genesis block parameters defined (Jan 3)
-            : Bitcoin v0.1 released (Jan 8 - 9)
-            : First person-to-person transaction - 10 BTC to Hal Finney (Jan 12)
-    2010-09 : Tells Andresen privately about working on other projects (earliest withdrawal signal)
-    2010-12 : Final BitcoinTalk post (Dec 12) - 'I plan to pass the baton'
-            : Andresen publicly announces lead maintainer role (Dec 19)
-    2011-04 : 'I've moved on' email to Mike Hearn (Apr 23)
-            : Final known email - to Andresen, alert-key handover (Apr 26)
+    2008 : Earliest known email - to Adam Back about an electronic cash system (Aug)
+         : Bitcoin whitepaper published to the cryptography mailing list (Oct)
+    2009 : Genesis block parameters defined (Jan 3)
+         : Bitcoin v0.1 released (Jan 8 - 9)
+         : First person-to-person transaction - 10 BTC to Hal Finney (Jan 12)
+    2010 : Tells Andresen privately about working on other projects - earliest withdrawal signal (Sep)
+         : Final BitcoinTalk post - 'I plan to pass the baton' (Dec 12)
+         : Andresen publicly announces lead maintainer role (Dec 19)
+    2011 : 'I've moved on' email to Mike Hearn (Apr 23)
+         : Final known email - alert key handover to Andresen (Apr 26)
 ```
 
 **White Paper:**

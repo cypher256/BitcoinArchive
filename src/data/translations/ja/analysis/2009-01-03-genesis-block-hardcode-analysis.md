@@ -98,7 +98,7 @@ flowchart TD
     C -->|Yes| D["定数からブロック 0 をローカル再構築 (nTime, nBits, nNonce, pszTimestamp, 期待マークルルート)"]
     D --> E["assert(block.GetHash() == hashGenesisBlock)"]
     E --> F["ブロック 0 をディスクに書き込み"]
-    F --> G["通常のブロック処理に進む"]
+    F --> G["通常のブロック処理に 進む"]
     C -->|No| G
 ```
 

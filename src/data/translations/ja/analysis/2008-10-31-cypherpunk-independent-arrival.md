@@ -86,12 +86,12 @@ translationStatus: complete
 
 | # | サイファーパンクの原理 | 出典の表現 |
 |---|---|---|
-| 1 | **プライバシーは秘匿ではない；プライバシーは力である** | "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know"（ヒューズ 1993） |
+| 1 | **プライバシーは秘匿ではない、プライバシーは力である** | "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know"（ヒューズ 1993） |
 | 2 | **コードを書くことが行動の形である** | "Cypherpunks write code... We publish our code so that our fellow Cypherpunks may practice and play with it"（ヒューズ 1993） |
 | 3 | **信頼は機関に拡張するのではなく、数学に置き換える** | "We must defend our own privacy if we expect to have any... We the Cypherpunks are dedicated to building anonymous systems"（ヒューズ 1993） |
 | 4 | **構造的な抗中央集権** | 「追跡不能なデジタル通貨」と P2P 取引が メイ／ヒューズ ビジョンの中心。中央集権的な仲介者が脅威モデル |
 | 5 | **公的場における正当な基盤としての仮名性** | "Our code is free for all to use, worldwide. We don't much care if you don't approve of the software we write"（ヒューズ 1993）。仮名による経済・言論への参加は、回避ではなく正当な形として扱われる |
-| 6 | **情報の自由な流通；検閲耐性のある通信** | "We must come together and create systems which allow anonymous transactions to take place... Information longs to be free"（ヒューズ 1993、より広いサイファーパンクの格言の言い換え） |
+| 6 | **情報の自由な流通と検閲耐性のある通信** | "We must come together and create systems which allow anonymous transactions to take place... Information longs to be free"（ヒューズ 1993、より広いサイファーパンクの格言の言い換え） |
 
 これら 6 項目が、§3 でサトシの公開記録上の実践と比較する軸となる。
 

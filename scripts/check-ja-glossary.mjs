@@ -133,6 +133,16 @@ const RULES = [
   // の正典訳語は「仮名」。「ペンネーム」 は作家・作者の語感に偏り、サトシのような
   // 「システム作者・実装者・運用者」 の総体を指す pseudonym 意では狭すぎる。
   { type: 'literal', deprecated: 'ペンネーム', canonical: '仮名', reason: 'pseudonym/byline 意は「仮名」 で統一（§ II.3 Canonical mappings）。「ペンネーム」 は作家寄りの語感で、サトシのようなシステム作者・実装者・運用者の総体には狭い' },
+
+  // --- 禁止記号: 全角セミコロン ---
+  // 日本語タイポグラフィに「；」 は存在しない。英語ソースの ";" を機械的に
+  // 全角化すると発生するが、日本語では文脈に応じて以下のいずれかに置換する:
+  //   - 並列・列挙の区切り → 「、」
+  //   - 文の終わり → 「。」
+  //   - 補足・別文の橋渡し → 「 — 」 (全角ダッシュ二倍ダーシ)
+  //   - 別項目化が自然 → 改行・箇条書き
+  // canonical は文脈依存なので「適切な日本語句読点」 とする。
+  { type: 'literal', deprecated: '；', canonical: '、 / 。 / — / 改行', reason: '日本語タイポグラフィに「；」 は存在しない。英語の ";" の機械的全角化を禁止。文脈に応じて 「、」「。」「 — 」「改行」 のいずれかに置換する' },
 ];
 
 function walk(dir) {
@@ -167,6 +177,7 @@ function maskNonProse(content) {
   let inFrontmatter = false;
   let frontmatterEnded = false;
   let inFence = false;
+  let fenceIsMermaid = false;
   for (let i = 0; i < out.length; i++) {
     const line = out[i];
     if (i === 0 && line === '---') {
@@ -186,13 +197,21 @@ function maskNonProse(content) {
       // File without frontmatter: nothing to mask at top
       frontmatterEnded = true;
     }
-    // Fence toggles
-    if (line.trimStart().startsWith('```')) {
+    // Fence toggles. Mermaid fences are kept visible because their
+    // content is rendered to readers (not literal source). Other fences
+    // (```js, ```python, plain ```) are masked because they are literal
+    // code where deprecated terms may be valid identifiers.
+    const trimmed = line.trimStart();
+    if (trimmed.startsWith('```')) {
+      if (!inFence) {
+        fenceIsMermaid = /^```mermaid\b/.test(trimmed);
+      }
       inFence = !inFence;
-      out[i] = ' '.repeat(line.length);
+      if (!fenceIsMermaid) out[i] = ' '.repeat(line.length);
+      if (!inFence) fenceIsMermaid = false;
       continue;
     }
-    if (inFence) {
+    if (inFence && !fenceIsMermaid) {
       out[i] = ' '.repeat(line.length);
       continue;
     }

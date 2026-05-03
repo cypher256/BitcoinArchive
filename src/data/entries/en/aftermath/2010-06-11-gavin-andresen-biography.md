@@ -57,13 +57,13 @@ Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software d
 ```mermaid
 timeline
     title Andresen's Bitcoin involvement, 2010 - 2014
-    2010 : Bitcoin Faucet launched (Jun)
-         : Satoshi's first withdrawal signal (Sep)
-         : SVN handover + lead-maintainer role (Dec)
-    2011 : CAlert key transfer (Apr)
-         : CIA / In-Q-Tel conference (Jun)
-    2012 : Bitcoin Foundation co-founded (Sep)
-    2014 : Steps down, role passes to van der Laan (Apr)
+    2010 : Bitcoin Faucet launched - one of the earliest adoption tools (Jun)
+         : Satoshi's first private withdrawal signal (Sep)
+         : Handover - SVN access + public lead-maintainer announcement (Dec)
+    2011 : Satoshi's last private email - CAlert key transfer (Apr)
+         : CIA / In-Q-Tel conference, after Satoshi went silent (Jun)
+    2012 : Bitcoin Foundation co-founded; Andresen as Chief Scientist (Sep)
+    2014 : Steps down as lead maintainer, role passes to Wladimir van der Laan (Apr)
 ```
 
 **Discovery of Bitcoin:**

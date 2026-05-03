@@ -58,13 +58,13 @@ translationStatus: complete
 ```mermaid
 timeline
     title アンドレセンのビットコイン関与 (2010-2014)
-    2010 : Bitcoin Faucet 公開 (6月)
-         : サトシ最初の撤退シグナル (9月)
-         : SVN 引き継ぎ + リードメンテナー宣言 (12月)
-    2011 : CAlert キー譲渡 (4月)
-         : CIA / In-Q-Tel カンファレンス (6月)
-    2012 : Bitcoin Foundation 共同設立 (9月)
-    2014 : リードメンテナー退任 (4月)
+    2010 : Bitcoin Faucet 公開 - 最初期の普及ツール (6月)
+         : サトシからの 最初の私的撤退シグナル (9月)
+         : 引き継ぎ - SVN アクセス + リードメンテナー公式宣言 (12月)
+    2011 : サトシの最後の私的メール - CAlert キー譲渡 (4月)
+         : CIA / In-Q-Tel カンファレンス、 サトシ沈黙後 (6月)
+    2012 : Bitcoin Foundation 共同設立 - アンドレセンは チーフサイエンティスト 就任 (9月)
+    2014 : リードメンテナー退任 - ヴラディーミル・ ヴァン・デア・ラーンへ 引き継ぎ (4月)
 ```
 
 **ビットコインとの出会い：**
@@ -79,7 +79,7 @@ timeline
 | 2010-12-03 | [マルミ宛メールでアンドレセンを開発・管理の引き継ぎ先として推薦](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) | 推薦 |
 | 2010-12-12 朝 | [SVN 権限譲渡 + リーダーシップ承認メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/) | コードベース + 私的承認 |
 | 2010-12-12 18:22 UTC | [BitcoinTalk フォーラム最終投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | 最後の公開発信 |
-| 2010-12-19 | [アンドレセン公的告知「サトシの祝福を受けて」](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) | 役割の公的引き受け；同日 `bitcoin/bitcoin` GitHub リポジトリを作成 |
+| 2010-12-19 | [アンドレセン公的告知「サトシの祝福を受けて」](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) | 役割の公的引き受け。同日 `bitcoin/bitcoin` GitHub リポジトリを作成 |
 | 2011-04-23 | [マイク・ハーン宛メール「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 撤退表明（アンドレセンへの信任）。当時は非公開、後年公開 |
 | 2011-04-26 10:29 UTC | [最後のメール：CAlert キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | ネットワーク非常停止権限 |
 

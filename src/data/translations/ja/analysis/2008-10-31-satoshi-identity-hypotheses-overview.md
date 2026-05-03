@@ -67,13 +67,13 @@ translationStatus: complete
 
 本エントリーは、公的議論で繰り返し取り上げられる、サトシ・ナカモトの正体候補を比較する。各候補は、サトシに関する公的記録から導出される輪郭に照らして測られる：
 
-- ホワイトペーパーで明示的に引用された Hashcash と b-money；
-- 2008 年 8 月のアダム・バックとウェイ・ダイとの公開前通信；
-- 2014 年のウェイ・ダイの識別性論 — サトシは 2007〜2008 年の開発期間中、可視のサイファーパンクとして活動していなかった、という読み（[サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) と整合）；
-- 19,901 行の v0.1 C++ コードベース；
-- ネイティブ水準の英語の文体；
-- 2007 年央から 2008 年 8 月までの 18 か月にわたる集中的な開発期間；
-- 2011 年 4 月の撤退。
+- ホワイトペーパーで明示的に引用された Hashcash と b-money
+- 2008 年 8 月のアダム・バックとウェイ・ダイとの公開前通信
+- 2014 年のウェイ・ダイの識別性論 — サトシは 2007〜2008 年の開発期間中、可視のサイファーパンクとして活動していなかった、という読み（[サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) と整合）
+- 19,901 行の v0.1 C++ コードベース
+- ネイティブ水準の英語の文体
+- 2007 年央から 2008 年 8 月までの 18 か月にわたる集中的な開発期間
+- 2011 年 4 月の撤退
 
 7 次元のプロファイル比較表（§1）は、候補をこの輪郭に照らして並列する。個別の仮説エントリーがある候補については、深い扱いはそちらに譲る (表の「個別」 列を参照)。それ以外の候補は本エントリー内で扱う。
 
@@ -106,7 +106,7 @@ translationStatus: complete
 
 文体計量によるサトシ特定の研究は、上の構造的プロファイル比較表とは別の方法論的系譜である。最も多く引用される 4 件は、候補プールの設計・距離指標・コーパスの境界に応じて異なる首位候補を生んでいる。構造的比較表（英語水準・サイファーパンクフォーラム等）は前提条件を記述するもので、下の文体計量の記録は結果を記述するものである — 両者は同じレイヤではない。
 
-| 候補 | [Skye Grey 2013](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（単独仮説） | [アストン 2014](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（11 候補） | [ヴァン・ドルスト 2024](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（75,000+）／[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [カフィエロ／カレイロウ NYT 2026](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)（12 候補；広範プール 620） |
+| 候補 | [Skye Grey 2013](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（単独仮説） | [アストン 2014](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（11 候補） | [ヴァン・ドルスト 2024](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（75,000+）／[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [カフィエロ／カレイロウ NYT 2026](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)（12 候補、広範プール 620） |
 |---|---|---|---|---|
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | — | 順位非公開 | 3 位 | **首位** |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 順位非公開 | 4 位 | 順位非公開 |
@@ -149,7 +149,7 @@ quadrantChart
     quadrant-1 "高度整合 (稀)"
     quadrant-2 "隠れているが能力不足"
     quadrant-3 "可視で能力不足"
-    quadrant-4 "可視のサイファーパンク"
+    quadrant-4 "可視の サイファーパンク"
     "ウェイ・ダイ": [0.88, 0.55]
     "アダム・バック": [0.83, 0.25]
     "ハル・フィニー": [0.83, 0.05]

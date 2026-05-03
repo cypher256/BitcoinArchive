@@ -611,6 +611,62 @@ Long-term fixed translations beyond the deprecation table above:
 |---|---|---|
 | Schnorr (signature) | シュノア（署名） | Japanese Bitcoin community standard |
 
+### Forbidden punctuation
+
+#### `；` (full-width semicolon)
+
+Japanese typography does not use the full-width semicolon. It almost
+always appears as a mechanical full-width conversion of an English `;`
+and must always be replaced. The replacement is context-dependent:
+
+| Context | Use |
+|---|---|
+| Listing parallel items | `、` |
+| End of a thought | `。` |
+| Bridging clauses, supplementary remark | ` — ` (em dash) |
+| Items distinct enough to stand apart | line break or bullet |
+
+Bulk substitution is forbidden — every occurrence is judged in context.
+The half-width `;` inside code blocks, frontmatter, URLs, and quoted
+English text is out of scope (the source language allows it).
+
+Enforced by `npm run check:ja-glossary` (rule: `；` → `、 / 。 / — / 改行`).
+
+### Mermaid timeline labels — Japanese line wrapping
+
+Mermaid wraps timeline labels only at ASCII whitespace. Japanese has no
+inter-word spaces, so any unbroken Japanese span longer than the column
+width overflows the box on render. Examples that overflowed in production:
+
+| Unbroken span | Length | What rendered |
+|---|---:|---|
+| `サトシ最有力候補と名指される；` | 14 chars | First/last char clipped outside the box |
+| `アンドレセンはチーフサイエンティスト` | 17 chars | Tail clipped, "(9月)" pushed off |
+| `ヴラディーミル・ヴァン・デア・ラーンへ引き継ぎ` | 22 chars | Tail clipped, multi-line overflow |
+
+`・` (middle dot) and `、` are **not** wrap points — Mermaid only breaks
+at ASCII space `U+0020`. Insert ASCII spaces at semantic break points
+inside long Japanese labels:
+
+```text
+✅  サトシ最有力候補と 名指される
+❌  サトシ最有力候補と名指される
+
+✅  ヴラディーミル・ ヴァン・デア・ラーンへ 引き継ぎ
+❌  ヴラディーミル・ヴァン・デア・ラーンへ引き継ぎ
+```
+
+Threshold: any token containing CJK characters longer than **12
+zenkaku** is flagged. The rule applies to all Mermaid block types
+(timeline, flowchart, etc.), since the underlying wrap behavior is the
+same. The `title` keyword line is exempt — title rendering uses a
+different, wider layout.
+
+Enforced by `npm run check:mermaid-ja-wrap` (runs as part of `npm run
+check`). Pair with `npm run check:bios-rendering` (visual confirmation
+via Playwright — requires `npm run dev` to be running and `playwright`
+installed).
+
 ### Adding a new rule
 
 1. Confirm that the same English term is being translated multiple ways

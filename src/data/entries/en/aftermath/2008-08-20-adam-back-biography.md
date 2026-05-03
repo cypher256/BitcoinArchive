@@ -50,14 +50,14 @@ Adam Back (born 1970, United Kingdom) is a cryptographer, cypherpunk, and the in
 ```mermaid
 timeline
     title Adam Back's Bitcoin-relevant timeline
-    1997-03 : Hashcash announced on the cypherpunks mailing list
-    1998-12 : Cypherpunks-list b-money critique - 7 monetary-design issues
-    2002-08 : Hashcash paper revised - 'mint' framing for cost tokens
-    2008-08 : First known email from Satoshi (Aug 20) - earliest Bitcoin contact
-            : Refers Satoshi to Wei Dai's b-money; Satoshi emails Wei Dai (Aug 22)
+    1997 : Hashcash announced on the cypherpunks mailing list (Mar)
+    1998 : Cypherpunks-list b-money critique - 7 monetary-design issues (Dec)
+    2002 : Hashcash paper revised - 'mint' framing for cost tokens (Aug)
+    2008 : First known email from Satoshi (Aug 20) - earliest Bitcoin contact
+         : Refers Satoshi to Wei Dai's b-money; Satoshi emails Wei Dai (Aug 22)
     2014 : Co-founds Blockstream, becomes CEO
-    2024-02 : COPA v Wright trial - testifies under oath
-    2026-04 : Named as strongest Satoshi candidate by NYT/Carreyrou; self-denies
+    2024 : COPA v Wright trial - testifies under oath (Feb)
+    2026 : Named as strongest Satoshi candidate by NYT / Carreyrou; self-denies (Apr)
 ```
 
 **Hashcash (1997):**
