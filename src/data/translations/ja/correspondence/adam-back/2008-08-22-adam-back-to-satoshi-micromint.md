@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "アダム・バックがサトシにロン・リベストの1996年のMicroMint論文（k-wayハッシュ衝突に関する研究）を紹介した。注目すべきは、バックがこの時点でもサトシの添付論文を読んでいなかったことであり、後に「おそらく人生最大の失敗」と振り返っている。"
+description: "アダム・バックがサトシにロン・リベストの1996年MicroMint論文（k-wayハッシュ衝突）を紹介。バックはこの時点でサトシの添付論文を未読、後に「人生最大の失敗」 と振り返ることになる。"
 isSatoshi: false
 tags:
   - "hashcash"

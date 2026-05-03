@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "Satoshi writes to Adam Back for the final time, thanking him for the earlier paper suggestions and announcing that the Bitcoin software has been launched. He includes Hal Finney's overview of the project from the Cryptography mailing list."
+description: "Satoshi writes Adam Back for the final time, thanking him for paper suggestions and announcing the Bitcoin software launch. Includes Hal Finney's project overview from the Cryptography mailing list."
 isSatoshi: true
 tags:
   - "hashcash"

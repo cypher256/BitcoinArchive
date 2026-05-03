@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Adam Back suggests Satoshi look at Ron Rivest's 1996 MicroMint paper on k-way hash collisions. Notably, Back admits he still has not read Satoshi's attached draft paper — a decision he would later call 'probably my biggest mistake.'"
+description: "Adam Back suggests Satoshi look at Ron Rivest's 1996 MicroMint paper on k-way hash collisions. Back admits he has not yet read the draft — a decision he later called 'probably my biggest mistake.'"
 isSatoshi: false
 tags:
   - "hashcash"

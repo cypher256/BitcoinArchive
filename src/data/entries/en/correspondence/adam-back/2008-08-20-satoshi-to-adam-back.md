@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "Satoshi Nakamoto's earliest known email. He contacts Adam Back to verify the correct citation for the Hashcash paper and shares a pre-release draft titled 'Electronic Cash Without a Trusted Third Party' (ecash.pdf)."
+description: "Satoshi Nakamoto's earliest known email. He contacts Adam Back to verify the Hashcash paper citation and shares a pre-release draft titled 'Electronic Cash Without a Trusted Third Party' (ecash.pdf)."
 isSatoshi: true
 tags:
   - "hashcash"

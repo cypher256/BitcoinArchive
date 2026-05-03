@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "サトシがアダム・バックに最後のメールを送り、以前の論文紹介への感謝を述べるとともに、ビットコインソフトウェアのローンチを報告した。暗号学メーリングリストでのハル・フィニーによるプロジェクト概要も添付された。"
+description: "サトシがアダム・バックに最後のメール。以前の論文紹介への感謝とビットコインソフトウェアのローンチ報告。暗号学MLでのハル・フィニーによるプロジェクト概要も添付。"
 isSatoshi: true
 tags:
   - "hashcash"
