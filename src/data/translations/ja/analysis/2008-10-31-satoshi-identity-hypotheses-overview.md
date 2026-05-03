@@ -22,6 +22,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-anonymity-architecture
@@ -85,7 +87,7 @@ translationStatus: complete
 |---|---|---|---|---|---|---|---|---|---|
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定（NYT 2026 調査） |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
-| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致 |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | [正体](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致／レース日のアリバイ |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
@@ -200,13 +202,7 @@ quadrantChart
 
 **経歴。** サイファーパンク（ハロルド・トーマス・フィニー二世、1956 年 5 月 4 日〜2014 年 8 月 28 日）、カリフォルニア工科大学工学卒、PGP 2.0 の主要開発者の一人、Reusable Proof-of-Work（RPOW）の考案者。2009 年 1 月 9 日（ビットコイン v0.1 のリリース日）にフィニーはソフトウェアをダウンロードし、サトシ以外で最初にビットコインノードを稼働させた人物となった。2009 年 1 月 11 日には「Running bitcoin」 とツイート。2009 年 1 月 12 日にはサトシからブロック 170 で 10 BTC を受け取った — 人類初の人物間ビットコイン取引。フィニーはカリフォルニア州テンプル市に約 10 年間居住しており — Newsweek が後にドリアン・プレンティス・サトシ・ナカモトを特定したのと同じ町で「数ブロック先」 だった。
 
-**仮説。** フィニーの深いサイファーパンク経歴、ビットコイン以前のプルーフ・オブ・ワーク関連の仕事（RPOW）、ビットコインの早期採用（最初のサトシ以外のノード）、文字通り「サトシ・ナカモト」 と名乗る人物への地理的近接性 — これらが組み合わさって、暗号通貨ジャーナリズムで最も多く議論されるサトシ正体仮説の一つとなった（最も目立つ提唱は 2014 年のアンディ・グリーンバーグの *Forbes* 調査）。
-
-**支持論点。** フィニーは暗号工学に深い能力を持つ（PGP Inc.、RPOW）。1990 年代初頭からのサイファーパンクメーリングリスト参加が記録されている。ドリアン・ナカモトへの地理的近接性は仮名由来説を生む。ビットコイン公開時に最も自然な早期採用者だった。
-
-**反証。** 2009 年 4 月 18 日、フィニーは [サトシがビットコインネットワーク上で活動していた時間帯にサンタバーバラで 10 マイルのレースを走っていた](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) — レース日のアリバイは 2014 年のアンディ・グリーンバーグの Forbes 記事が初出、2023 年のジェイムソン・ロップの分析でタイムスタンプの議論として構造化された。[Patoshi マイニングパターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)（セルジオ・デミアン・ラーナー、2013 年 4 月）は、フィニーの記録されたマイニング構成と一致しない、ハッシュ指紋を特定している。フィニーは 2007〜2008 年中、暗号関連で公的に可視（RPOW、メーリングリスト活動）であり、「可視のサイファーパンクコミュニティの構造的に外側」 という読みと整合しない。2013 年 3 月のエッセイ [*Bitcoin and Me*](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)（死の少し前に書かれた）でサトシであることを否定。
-
-**外部的状況。** 自己否定／Patoshi 技術的論破／レース日のアリバイ。
+**外部的状況。** 自己否定（2013 年 3 月の[*Bitcoin and Me*](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) でサトシを別人として記述）／[Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) と記録された控えめな保有量の不整合／2009 年 4 月 18 日のレース当日アリバイの当時記録。 → [ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) で、RPOW 先駆論、レース当日アリバイ（[グリーンバーグ 2014 Forbes 記事](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が初出、[ロップ 2023](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) が構造化）、*Bitcoin and Me* の第三者的記述、Patoshi 規模の不整合、2010 年 8 月の特異点サミット／ALS 進行のアリバイを全文の詳細で扱う。
 
 #### ニック・サボ
 

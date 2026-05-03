@@ -22,6 +22,7 @@ secondarySources:
   - name: "Finney's RPOW announcement on Cypherpunks list"
     url: "https://nakamotoinstitute.org/library/rpow/"
 relatedEntries:
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2014-08-28-hal-finney-passes-away

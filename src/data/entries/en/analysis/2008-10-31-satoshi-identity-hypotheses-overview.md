@@ -22,6 +22,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-anonymity-architecture
@@ -84,7 +86,7 @@ This entry does not name "the most likely Satoshi candidate."
 |---|---|---|---|---|---|---|---|---|---|
 | [Adam Back](/BitcoinArchive/participants/adam-back/) | [Identity](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied (NYT 2026 investigation) |
 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
-| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | [Identity](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch; race-day alibi |
 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | [Identity](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
 | [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
 | [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
@@ -199,13 +201,7 @@ Each profile shares the same micro-structure: background, the hypothesis (propos
 
 **Background.** Cypherpunk (Harold Thomas Finney II, May 4, 1956 – August 28, 2014), Caltech engineering graduate, principal developer of PGP 2.0, creator of Reusable Proof-of-Work (RPOW). On January 9, 2009 (Bitcoin v0.1 release day) Finney downloaded the software and became the first person other than Satoshi to run a Bitcoin node; on January 11, 2009 he tweeted "Running bitcoin"; on January 12, 2009 he received 10 BTC from Satoshi in Block 170 — the first person-to-person Bitcoin transaction. He lived for almost a decade in Temple City, California — the same town where Newsweek would later identify Dorian Prentice Satoshi Nakamoto, "blocks apart."
 
-**The hypothesis.** Finney's deep cypherpunk credentials, pre-Bitcoin proof-of-work work (RPOW), early adoption of Bitcoin (first non-Satoshi node), and geographic proximity to a person literally named "Satoshi Nakamoto" combine into one of the most-discussed Satoshi-identity hypotheses in cryptocurrency journalism (most prominently in Andy Greenberg's 2014 *Forbes* investigation).
-
-**Argument for.** Finney was capability-deep on cryptography (PGP Inc., RPOW). His cypherpunk-mailing-list presence is documented from the early 1990s. His geographic proximity to Dorian Nakamoto raises a pseudonym-source theory. He was the most natural early adopter when Bitcoin launched.
-
-**Argument against.** On April 18, 2009, Finney was [running a 10-mile race in Santa Barbara during a window when Satoshi was active on the Bitcoin network](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) — a race-day alibi first reported by Andy Greenberg (Forbes, 2014) and formalized into a structured analysis by Jameson Lopp (2023). The [Patoshi mining-pattern analysis](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) (Sergio Demian Lerner, April 2013) identifies a hashing fingerprint inconsistent with Finney's documented mining setup. Finney was publicly visible in cryptography during 2007–2008 (RPOW work, mailing-list activity), inconsistent with "structurally outside the visible cypherpunk community." Self-denied being Satoshi in his March 2013 essay [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/), written shortly before his death.
-
-**External status.** Self-denied; Patoshi technical disproof; race-day alibi.
+**External status.** Self-denied (March 2013 [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) treats Satoshi as a separate person); [Patoshi mining-pattern](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) inconsistent with Finney's modest documented holdings; April 18, 2009 race-day alibi documented contemporaneously. → See [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) for the RPOW-precursor argument, the race-day alibi (originally reported in [Greenberg's 2014 Forbes feature](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and formalized by [Lopp 2023](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/)), the *Bitcoin and Me* third-party framing, the Patoshi-scale inconsistency, and the August 2010 Singularity Summit / ALS-progression alibi at full detail.
 
 #### Nick Szabo
 

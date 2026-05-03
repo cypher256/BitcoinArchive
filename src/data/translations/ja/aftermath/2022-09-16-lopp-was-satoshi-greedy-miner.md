@@ -27,6 +27,7 @@ secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi Mining Machine (2020)"
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 relatedEntries:
+  - "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"

@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
     note: "The earlier Forbes feature where Fran Finney first showed race photographs as evidence Hal could not have been Satoshi. Greenberg's piece predates Lopp's analysis by nearly a decade and is the original public documentation of the race-day alibi."
 relatedEntries:
+  - "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
+  - "aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "aftermath/2013-03-19-bitcoin-and-me-hal-finney"
@@ -35,7 +37,7 @@ relatedEntries:
   - "aftermath/2022-09-16-lopp-was-satoshi-greedy-miner"
 ---
 
-On October 21, 2023, Bitcoin researcher Jameson Lopp published "Hal Finney Was Not Satoshi Nakamoto" on his blog, presenting a detailed multi-pronged argument against the long-running speculation that [Hal Finney](/BitcoinArchive/participants/hal-finney/) was the pseudonym behind Bitcoin's creation.
+On October 21, 2023, Bitcoin researcher Jameson Lopp published "Hal Finney Was Not Satoshi Nakamoto" on his blog, presenting a detailed multi-pronged argument against the long-running speculation that [Hal Finney](/BitcoinArchive/participants/hal-finney/) was the pseudonym behind Bitcoin's creation. The full hypothesis-side / counter-evidence treatment is in the [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/); this article documents Lopp's specific contribution to the counter-evidence side.
 
 **The race-day alibi (April 18, 2009):**
 
@@ -45,7 +47,7 @@ During this same window, Lopp argues, [Satoshi Nakamoto](/BitcoinArchive/partici
 
 The Archive holds the [related Satoshi-to-Hearn email from April 18, 2009](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/) in which Satoshi acknowledges sending coins back to Hearn ("I sent back 32.51 and 50.00").
 
-*[Editor: The race-day alibi was first reported publicly by Andy Greenberg in his 2014 Forbes feature "Nakamoto's Neighbor," based on race photographs Fran Finney showed him during an in-person visit. Lopp's 2023 analysis revisits the timing question with explicit timestamp tables and adds independent corroborating arguments. The two pieces are complementary: Greenberg established the human and photographic record; Lopp formalized the timestamp argument into a structured analysis.]*
+*[Editor: The race-day alibi was first reported publicly by Andy Greenberg in his 2014 Forbes feature ["Nakamoto's Neighbor"](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/), based on race photographs Fran Finney showed him during an in-person visit. Lopp's 2023 analysis revisits the timing question with explicit timestamp tables and adds independent corroborating arguments. The two pieces are complementary: Greenberg established the human and photographic record; Lopp formalized the timestamp argument into a structured analysis.]*
 
 **Other arguments Lopp presents:**
 

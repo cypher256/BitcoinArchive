@@ -41,6 +41,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Adam Back Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage
@@ -185,7 +186,7 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 - This entry does not present new evidence. It compiles material from the 2026 NYT investigation, Back's responses, and existing archive material on the August 2008 email exchange and the 2024 COPA testimony.
 - The entry sets out the hypothesis fairly and the counter-evidence fairly, leaving the reader to weigh.
 - This entry does not name "the most likely Satoshi candidate."
-- Cafiero's "Hal Finney nearly tied" outcome is treated as material evidence against the *uniqueness* of the Back identification (see the [Hal Finney profile in the overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the documented [race-day alibi](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) that argues against Finney specifically).
+- Cafiero's "Hal Finney nearly tied" outcome is treated as material evidence against the *uniqueness* of the Back identification (see the [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) and the documented [race-day alibi](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) that argues against Finney specifically).
 - If new evidence surfaces — direct documentary links beyond the August 2008 emails, technical fingerprints in Bitcoin v0.1 matching Back's other published code, or comments by Back contradicting his prior public position — this entry should be updated.
 
 *[Editor: this entry uses the April 2026 NYT investigation as the prominent recent articulation of a longstanding hypothesis. The framing is deliberately conservative: the hypothesis is laid out, supporting arguments are described as their advocates make them, and counter-evidence is set out at equal detail. The entry does not draw an editorial conclusion about whether the hypothesis is more likely true or false; readers who want a direct verdict will not find one.]*

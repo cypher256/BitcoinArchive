@@ -48,6 +48,8 @@ relatedEntries:
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
+  - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
@@ -56,7 +58,7 @@ relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
 ---
 
-Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979.
+Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979. His combination of cypherpunk credentials, his 2004 Reusable Proof-of-Work system, his role as recipient of the first person-to-person Bitcoin transaction, and his geographic proximity to Dorian Nakamoto have made him one of the most-discussed Satoshi-identity candidates — documented as the [Hal Finney = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), with the [April 18, 2009 race-day alibi](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and Patoshi-scale inconsistency as the principal counter-evidence.
 
 ```mermaid
 timeline

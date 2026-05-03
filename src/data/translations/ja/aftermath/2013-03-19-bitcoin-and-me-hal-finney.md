@@ -24,6 +24,8 @@ secondarySources:
   - name: "Bit2me Academy — Bitcoin and Me by Hal Finney"
     url: "https://academy.bit2me.com/en/bitcoin-and-me-hal-finney/"
 relatedEntries:
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2014-08-28-hal-finney-passes-away
   - aftermath/2014-08-28-hal-finney-biography

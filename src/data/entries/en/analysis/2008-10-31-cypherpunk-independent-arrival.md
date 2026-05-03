@@ -36,6 +36,7 @@ secondarySources:
     url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 relatedEntries:
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation

@@ -41,6 +41,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Adam Back Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage

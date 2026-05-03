@@ -27,6 +27,7 @@ secondarySources:
   - name: "Cryonics Archive — Alcor Case Summary A-1436"
     url: "https://www.cryonicsarchive.org/library/complete-list-of-alcor-cryopreservations/case-summary-a-1436/"
 relatedEntries:
+  - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - analysis/2009-01-10-satoshi-launch-environment
