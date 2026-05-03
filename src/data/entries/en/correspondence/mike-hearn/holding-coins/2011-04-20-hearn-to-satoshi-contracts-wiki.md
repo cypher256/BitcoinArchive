@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearn offers to write a wiki page on Bitcoin contracts, asks about re-enabling transaction replacement, and asks whether Satoshi plans to rejoin the community. He raises the tragedy of the commons concern about mining fees."
+description: "Mike Hearn offers to write a wiki page on Bitcoin contracts, asks about re-enabling transaction replacement, asks if Satoshi plans to rejoin, and raises the tragedy-of-the-commons concern on fees."
 isSatoshi: false
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがネットワーク上の動的IPについて議論し、会話をbitcoin-listおよび暗号学メーリングリストにCCする許可を求め、ハル・フィニーの投資アイデアに言及し、送金メール付きのマイクロペイメントなどビットコインのユースケースを構想し、bitcoin-listメーリングリストの詳細を共有している。"
+description: "サトシが動的IPについて議論し、bitcoin-listと暗号学メーリングリストへのCC許可を求め、送金型メールやマイクロペイメントなどビットコインのユースケースを構想する。"
 isSatoshi: true
 tags:
   - "correspondence"

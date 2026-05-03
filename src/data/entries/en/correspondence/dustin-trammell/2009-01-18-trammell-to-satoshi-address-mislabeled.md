@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell realizes the confusing 'Satoshi' label was on his own receiving address, confirms he has multiple addresses at home, and asks whether 'Satoshi' was the default label since he doesn't recall setting it."
+description: "Trammell realizes the confusing 'Satoshi' label was on his own receiving address, confirms he has multiple addresses at home, and asks if 'Satoshi' was the default since he doesn't recall setting it."
 isSatoshi: false
 tags:
   - "correspondence"

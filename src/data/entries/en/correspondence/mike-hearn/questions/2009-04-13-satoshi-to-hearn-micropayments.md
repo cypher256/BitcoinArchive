@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshi explains that micropayments can be safely accepted immediately, describes how merchants can detect double-spend attempts, and clarifies that proof-of-work difficulty is hardcoded rather than communicated."
+description: "Satoshi explains micropayments can be safely accepted immediately, describes how merchants detect double-spends, and clarifies that proof-of-work difficulty is hardcoded rather than transmitted."
 isSatoshi: true
 tags:
   - "correspondence"

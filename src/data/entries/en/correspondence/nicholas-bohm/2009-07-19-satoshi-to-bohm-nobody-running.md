@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "Satoshi's candid response to Bohm's connectivity issue, admitting that there may be no other nodes running at that moment. He asks if Bohm's IP changed and encourages him to keep his server online so new users have someone to connect to."
+description: "Satoshi's candid reply to Bohm's connectivity issue, admitting there may be no other nodes running at that moment. He encourages Bohm to keep his server online so new users have someone to connect to."
 isSatoshi: true
 tags:
   - "correspondence"

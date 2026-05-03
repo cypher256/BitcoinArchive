@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell confirms his IP is static at work/home, agrees to CC conversations publicly, announces he'll join bitcoin-list, reveals he started mining partly as an investment after reading Hal Finney's message, and discusses micropayment adoption challenges."
+description: "Trammell confirms his IP is static, agrees to CC publicly, says he'll join bitcoin-list, reveals he started mining as an investment after Hal Finney's message, and discusses micropayment uptake."
 isSatoshi: false
 tags:
   - "correspondence"

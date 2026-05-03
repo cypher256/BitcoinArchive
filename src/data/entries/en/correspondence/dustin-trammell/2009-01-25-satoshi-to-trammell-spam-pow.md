@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "Satoshi responds to Hal Finney's point about botnets and pay-per-send email, proposing an economic argument where fake mailboxes could 'reverse-spam' spammers by harvesting their POW tokens, creating a self-defeating cycle. He also describes e-gold's 'dusting' spam problem."
+description: "Satoshi responds to Hal Finney's botnet/pay-per-send point, proposing that fake mailboxes could 'reverse-spam' spammers by harvesting their POW tokens. He also describes e-gold's 'dusting' problem."
 isSatoshi: true
 tags:
   - "correspondence"

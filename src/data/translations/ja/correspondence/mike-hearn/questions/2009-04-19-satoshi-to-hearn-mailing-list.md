@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシがbitcoin-listメーリングリストの情報を提供し、マイクのマイクロペイメントアプローチに同意し、セキュリティ上の理由からprotocol buffersではなくカスタムシリアライゼーション形式を選んだ理由を説明する。"
+description: "サトシがbitcoin-listメーリングリスト情報を提供し、マイクのマイクロペイメント方針に同意。protocol buffersではなくカスタム形式を選んだセキュリティ上の理由を説明。"
 isSatoshi: true
 tags:
   - "correspondence"

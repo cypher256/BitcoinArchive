@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがビットコインの開発責任を誰が引き継ぐべきか尋ねた際、サトシは「彼は信頼できる、責任感があり、プロフェッショナル」と述べてギャビン・アンドレセンを推薦した——以後数週間で正式化するリーダーシップ移行の早期シグナルであり、12 月 12 日の SVN 譲渡、12 月 19 日の公的告知へとつながった。"
+description: "マルミの問いに、サトシは「彼は信頼できる、責任感があり、プロフェッショナル」 と述べてギャビン・アンドレセンを推薦。12 月 12 日の SVN 譲渡へつながる早期シグナル。"
 isSatoshi: true
 tags:
   - "correspondence"

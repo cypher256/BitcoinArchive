@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "サトシがIP 70.113.114.209に接続中であることを報告し、ボームがそのアドレスに接続できていなければ発信接続に問題がある可能性を指摘した。このIPアドレスは後にテキサス州オースティンのダスティン・トランメルのものである可能性が高いと特定された。"
+description: "サトシがIP 70.113.114.209に接続中と報告し、ボームが接続できなければ発信接続に問題ありと指摘。同IPは後にテキサス州オースティンのダスティン・トランメルのものと特定された。"
 isSatoshi: true
 tags:
   - "correspondence"

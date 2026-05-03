@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルが職場と自宅のIPは固定であることを確認し、会話の公開CCに同意し、bitcoin-listへの参加を表明。ハル・フィニーのメッセージを読んで投資目的でもマイニングを開始したことを明かし、マイクロペイメントの普及における課題を議論している。"
+description: "トランメルが職場と自宅のIPは固定と確認、公開CCに同意、bitcoin-list参加を表明。ハル・フィニーのメッセージ後に投資目的でもマイニング開始したと明かし、マイクロペイメント普及の課題を議論。"
 isSatoshi: false
 tags:
   - "correspondence"

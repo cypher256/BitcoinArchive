@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Gavin Andresen begins corresponding with Satoshi Nakamoto after discovering Bitcoin in May 2010 and starts submitting code contributions. He creates the Bitcoin Faucet to give away free BTC and boost adoption."
+description: "Gavin Andresen begins corresponding with Satoshi after discovering Bitcoin in May 2010 and starts submitting code contributions. He creates the Bitcoin Faucet to give away free BTC and boost adoption."
 isSatoshi: false
 tags:
   - "correspondence"

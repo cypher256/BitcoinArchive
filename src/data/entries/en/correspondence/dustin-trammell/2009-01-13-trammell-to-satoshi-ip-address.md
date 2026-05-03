@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell provides his IP address for Satoshi to send coins, explains the proof-hashes group is open for posting, discusses Bitcoin's early vulnerability, gives his IP address, and compares mining to a roulette wheel."
+description: "Trammell provides his IP address for Satoshi to send coins, explains the proof-hashes group is open for posting, discusses Bitcoin's early vulnerability, and compares mining to a roulette wheel."
 isSatoshi: false
 tags:
   - "correspondence"

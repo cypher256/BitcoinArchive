@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがトランメルとの会話をbitcoin-listおよび暗号学メーリングリストにCCし、ビットコインの将来に関するビジョンを共有した。「万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない」という有名な一節を含む。これはトランメルへの以前のメールの公開版である。"
+description: "サトシがトランメルとの会話をbitcoin-listと暗号学メーリングリストにCC。「万が一普及した場合に備え、いくらか手に入れておくのは理にかなっているかも」 という有名な一節を含む公開版。"
 isSatoshi: true
 tags:
   - "correspondence"

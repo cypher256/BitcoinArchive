@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "Satoshi reveals the wallet data location (%appdata%\\Bitcoin), explains it uses a transactional database (DBM) safe from crash/power loss, comments on Microsoft's directory naming, and confirms he has already added socket cleanup code for the next release."
+description: "Satoshi reveals the wallet location (%appdata%\\Bitcoin), explains it uses a transactional database (DBM) safe from crash/power loss, and confirms socket cleanup code is added for the next release."
 isSatoshi: true
 tags:
   - "correspondence"

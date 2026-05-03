@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "リリース前のコードレビュー期間中にハル・フィニーがサトシに送った非公開メール。ビットコインのスケーラビリティについて根本的な質問を投げかけた。「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」"
+description: "リリース前のコードレビュー期間中にハル・フィニーがサトシへ送った非公開メール。「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」 と根本的な質問を投げた。"
 isSatoshi: false
 tags:
   - "correspondence"

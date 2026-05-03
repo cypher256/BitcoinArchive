@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがトランメルの中間者攻撃分析に応答し、攻撃を2つのタイプ（通信経路上の攻撃とインターネット上の誰もが行える攻撃）に分類。IP送金の脆弱性を認め、IPとビットコインアドレスを組み合わせた解決策を提案し、ウォレット暗号化の計画に言及している。"
+description: "サトシがトランメルの中間者攻撃分析に応答。攻撃を2タイプ（通信経路上、インターネット上の任意の者）に分類、IP送金の脆弱性を認め、IPとアドレス併用案を提示、ウォレット暗号化に言及。"
 isSatoshi: true
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "暗号学メーリングリストでの公開アナウンスの数時間後、サトシが個人的にハル・フィニーにBitcoin v0.1のリリースを通知した。SourceForgeのダウンロードリンクとbitcoin.orgのリリースノートを案内した。"
+description: "暗号学メーリングリストでの公開告知の数時間後、サトシが個人的にハル・フィニーへBitcoin v0.1リリースを通知。SourceForgeのリンクとbitcoin.orgのリリースノートを案内。"
 isSatoshi: true
 tags:
   - "correspondence"

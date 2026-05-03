@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがBitcoinコントラクトに関するWikiページの執筆を申し出、トランザクション置換の再有効化について質問し、サトシがコミュニティに戻る予定があるか尋ねる。マイニング手数料に関する共有地の悲劇の懸念を提起する。"
+description: "マイク・ハーンがBitcoinコントラクトのWikiページ執筆を申し出、トランザクション置換の再有効化を質問、サトシの復帰予定を尋ね、マイニング手数料の共有地の悲劇への懸念を提起。"
 isSatoshi: false
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Satoshi Nakamoto's last known private email. He transfers the Bitcoin network alert key to Gavin Andresen, asks him to stop portraying him as a 'mysterious shadowy figure,' and announces he has moved on to other things."
+description: "Satoshi's last known private email. He transfers the Bitcoin network alert key to Gavin Andresen, asks him to stop portraying him as a 'mysterious shadowy figure,' and says he has moved on."
 isSatoshi: true
 tags:
   - "correspondence"

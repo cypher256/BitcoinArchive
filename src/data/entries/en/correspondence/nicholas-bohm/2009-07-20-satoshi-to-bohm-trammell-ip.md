@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "Satoshi follows up that he is currently connected to IP 70.113.114.209, and notes that if Bohm is not connected to that address, he may have an outgoing connection problem. The IP was later identified as likely belonging to Dustin Trammell in Austin, Texas."
+description: "Satoshi follows up that he is connected to IP 70.113.114.209 and notes Bohm may have an outgoing-connection issue if not. The IP was later identified as likely Dustin Trammell's in Austin, Texas."
 isSatoshi: true
 tags:
   - "correspondence"

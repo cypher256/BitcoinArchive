@@ -23,6 +23,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. The complete email chain (5 emails total) was filed by Adam Back as a witness statement. Only the first two emails (Satoshi's initial contact and Back's reply) are archived here; the remaining three have not been published in full"
 relatedEntries:
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"

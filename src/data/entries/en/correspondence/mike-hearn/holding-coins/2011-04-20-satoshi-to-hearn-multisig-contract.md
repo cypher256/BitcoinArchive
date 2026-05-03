@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshi explains why stateful script opcodes would enable chain-forking attacks, then presents a detailed step-by-step multisig contract pattern using nLockTime for safe time-locked deposits without trust."
+description: "Satoshi explains why stateful script opcodes would enable chain-forking attacks, then presents a step-by-step multisig contract pattern using nLockTime for safe time-locked deposits without trust."
 isSatoshi: true
 tags:
   - "correspondence"

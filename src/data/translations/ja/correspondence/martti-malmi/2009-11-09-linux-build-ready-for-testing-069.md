@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがブロックダウンロードのボトルネックを診断し、未確認トランザクションがある状態でのシャットダウンにリスクはないと説明。バックグラウンドでのデータベースシャットダウンやデータディレクトリの指定方法についても解説。"
+description: "サトシがブロックダウンロードのボトルネックを診断し、未確認トランザクションがある状態のシャットダウンに危険はないと説明。バックグラウンドDBシャットダウンやデータディレクトリ指定法も解説。"
 isSatoshi: true
 tags:
   - "correspondence"

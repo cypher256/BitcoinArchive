@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "Satoshi discusses dynamic IPs on the network, asks permission to CC the conversation to bitcoin-list and the Cryptography mailing list, references Hal Finney's investment idea, envisions Bitcoin use cases including pay-to-send email and micropayments, and shares the bitcoin-list mailing list details."
+description: "Satoshi discusses dynamic IPs, asks permission to CC the conversation to bitcoin-list and the Cryptography mailing list, and envisions Bitcoin use cases including pay-to-send email and micropayments."
 isSatoshi: true
 tags:
   - "correspondence"

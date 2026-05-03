@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Satoshi emails Wei Dai asking about the correct citation for b-money, revealing that he learned of b-money from Adam Back's reference. The email included a link to the pre-release draft 'Electronic Cash Without a Trusted Third Party' (ecash.pdf) hosted at upload.ae."
+description: "Satoshi emails Wei Dai asking for the correct b-money citation, revealing he learned of it via Adam Back. The email linked the pre-release draft 'Electronic Cash Without a Trusted Third Party'."
 isSatoshi: true
 tags:
   - "b-money"
@@ -23,6 +23,7 @@ secondarySources:
   - name: "Gwern's Archive"
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 relatedEntries:
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2008-08-22-wei-dai-biography"

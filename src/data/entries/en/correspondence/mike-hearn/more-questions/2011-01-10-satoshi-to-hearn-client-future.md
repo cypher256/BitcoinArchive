@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshi predicts the original software will become the industrial tool for GPU farms while client implementations drive UI innovation. He reveals the mathematical reasoning behind the 21 million coin limit."
+description: "Satoshi predicts the original software will become the industrial tool for GPU farms while client implementations drive UI innovation. He reveals the math reasoning behind the 21 million coin limit."
 isSatoshi: true
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell acknowledges the mislabeling was his error, suggests changing 'Received with' to 'Received payment to' for clarity, and draws a PayPal analogy as the closest real-world comparison to multiple receiving addresses."
+description: "Trammell admits the mislabeling was his error, suggests changing 'Received with' to 'Received payment to' for clarity, and draws a PayPal analogy as the closest parallel to multiple addresses."
 isSatoshi: false
 tags:
   - "correspondence"

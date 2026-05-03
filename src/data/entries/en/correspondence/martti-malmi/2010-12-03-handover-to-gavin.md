@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "When Malmi asks who should take over Bitcoin development responsibilities, Satoshi recommends Gavin Andresen, stating 'I trust him, he's responsible, professional' - an early signal of the leadership transition that would formalize over the following weeks with the December 12 SVN handover and the December 19 public announcement."
+description: "When Malmi asks who should take over Bitcoin development, Satoshi recommends Gavin Andresen as 'responsible, professional' — early signal of the transition formalized by the December 12 SVN handover."
 isSatoshi: true
 tags:
   - "correspondence"

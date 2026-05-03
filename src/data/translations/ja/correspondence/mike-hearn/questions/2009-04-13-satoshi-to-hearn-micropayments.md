@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシが、マイクロペイメントは即座に安全に受け入れられることを説明し、マーチャントが二重支払い攻撃を検出する方法を説明し、プルーフ・オブ・ワークの難易度は伝達されるのではなくハードコードされていることを明確にする。"
+description: "サトシがマイクロペイメントは即座に安全に受け入れられると説明、マーチャントが二重支払い攻撃を検出する方法を解説、難易度は伝達ではなくハードコードされていると明確化。"
 isSatoshi: true
 tags:
   - "correspondence"

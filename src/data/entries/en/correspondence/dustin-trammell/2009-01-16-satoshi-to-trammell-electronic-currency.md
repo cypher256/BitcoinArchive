@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "Satoshi CC's his conversation with Trammell to bitcoin-list and the Cryptography mailing list, sharing his vision for Bitcoin's future including the famous line 'It might make sense just to get some in case it catches on.' This is the public version of his earlier private email to Trammell."
+description: "Satoshi CC's his Trammell exchange to bitcoin-list and the Cryptography list, sharing his Bitcoin vision including the famous line 'It might make sense just to get some in case it catches on.'"
 isSatoshi: true
 tags:
   - "correspondence"

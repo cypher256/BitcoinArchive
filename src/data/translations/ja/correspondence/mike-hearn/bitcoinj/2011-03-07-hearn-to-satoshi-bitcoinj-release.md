@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがApache 2ライセンスの下でBitcoinJをオープンソースとしてリリースしたことを発表し、マークルブランチ検証、スクリプト言語のアイデア、トランザクション置換が無効化された理由について質問する。"
+description: "マイク・ハーンがApache 2ライセンスでBitcoinJをオープンソース公開したと発表し、マークルブランチ検証、スクリプト言語案、トランザクション置換が無効化された理由について質問。"
 isSatoshi: false
 tags:
   - "correspondence"

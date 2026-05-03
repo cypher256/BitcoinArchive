@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ギャビン・アンドレセンがサトシの最後のメールに返信し、アラートキーを受け入れるとともに、米国情報機関にビットコインをプレゼンテーションするよう招待されたことを明かした。サトシはこのメッセージに返信することはなかった。"
+description: "ギャビン・アンドレセンがサトシの最後のメールに返信し、アラートキーを受け入れるとともに、米国情報機関にビットコインをプレゼンするよう招待されたと明かす。サトシは返信しなかった。"
 isSatoshi: false
 tags:
   - "correspondence"

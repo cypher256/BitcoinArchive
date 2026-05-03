@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "Satoshi responds to Trammell's MITM analysis by classifying attacks into two types (chain-of-communication vs. anyone on the Internet), acknowledges send-to-IP vulnerabilities, proposes a combined IP+Bitcoin address solution, and mentions plans for wallet encryption."
+description: "Satoshi responds to Trammell's MITM analysis by classifying attacks into two types (chain-of-communication vs. anyone on the Internet), proposes a combined IP+address fix, and notes wallet encryption."
 isSatoshi: true
 tags:
   - "correspondence"

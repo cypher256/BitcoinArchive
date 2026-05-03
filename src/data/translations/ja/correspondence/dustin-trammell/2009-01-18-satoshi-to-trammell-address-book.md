@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシが、トランメルに表示された「Satoshi」ラベルはトランメル自身のアドレス帳に由来するものであると説明し、トランザクションは送信者ではなく使用された受信アドレスを表示することを解説し、支払い元を特定するために各支払者ごとに異なるアドレスを作成することを推奨した。"
+description: "サトシが「Satoshi」 ラベルはトランメル自身のアドレス帳由来であることを説明。トランザクションは送信者ではなく受信アドレスを示すと解説、支払者ごとに異なるアドレスを推奨。"
 isSatoshi: true
 tags:
   - "correspondence"

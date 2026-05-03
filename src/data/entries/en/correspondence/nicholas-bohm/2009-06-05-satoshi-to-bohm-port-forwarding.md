@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "Satoshi advises Bohm to forward port 8333 on his new router so his Bitcoin node can receive incoming connections, explaining that if no online nodes can accept inbound connections, the network fails to function."
+description: "Satoshi advises Bohm to forward port 8333 on his new router so his Bitcoin node can receive incoming connections, explaining that without inbound-capable nodes online, the network fails to function."
 isSatoshi: true
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがハル・フィニーのボットネットと送金時課金型メールに関する指摘に応答し、偽のメールボックスがスパマーのPOWトークンを回収することで「リバース・スパミング」を行い、自滅的なサイクルを生み出すという経済的議論を提案した。また、e-goldの「ダスティング」スパム問題についても言及した。"
+description: "サトシがハル・フィニーのボットネット指摘に応答し、偽メールボックスがスパマーのPOWトークンを回収する「リバース・スパミング」 案を提示。e-goldの「ダスティング」 問題にも言及。"
 isSatoshi: true
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell conducts a detailed security analysis of Bitcoin's send-to-IP feature, identifying man-in-the-middle vulnerabilities including ARP poisoning and ISP-level interception. He recommends always using Bitcoin addresses instead of IP addresses."
+description: "Trammell's detailed security analysis of Bitcoin's send-to-IP feature, identifying MITM vulnerabilities including ARP poisoning and ISP-level interception. Recommends always using Bitcoin addresses."
 isSatoshi: false
 tags:
   - "correspondence"

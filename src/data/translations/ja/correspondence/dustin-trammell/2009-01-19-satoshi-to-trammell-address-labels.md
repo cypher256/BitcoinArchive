@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがデフォルトのアドレスラベルは「Your Address」であると説明し、誤ラベルは紛らわしいUIに起因するユーザーの操作ミスであったと示唆し、支払者ごとに受信アドレスを作成するという概念は現実世界に類似するものがないという根本的なUXの課題を認めた。"
+description: "サトシがデフォルトラベルは「Your Address」 と説明し、誤ラベルは紛らわしいUIに起因すると示唆。支払者ごとに受信アドレスを作る概念には現実世界の類似がないUX課題を認める。"
 isSatoshi: true
 tags:
   - "correspondence"

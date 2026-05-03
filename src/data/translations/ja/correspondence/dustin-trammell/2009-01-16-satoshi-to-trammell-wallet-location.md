@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがウォレットデータの保存場所（%appdata%\\Bitcoin）を明かし、クラッシュや停電に安全なトランザクショナルデータベース（DBM）を使用していることを説明し、Microsoftのディレクトリ命名について言及し、次のリリースに向けてソケットクリーンアップコードを既に追加したことを確認した。"
+description: "サトシがウォレット保存場所（%appdata%\\Bitcoin）を明かし、トランザクショナルDB（DBM）でクラッシュや停電に安全と説明、次回リリースのソケットクリーンアップ追加も確認。"
 isSatoshi: true
 tags:
   - "correspondence"
