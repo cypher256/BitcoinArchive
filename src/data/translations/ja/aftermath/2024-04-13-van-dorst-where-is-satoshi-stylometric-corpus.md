@@ -99,9 +99,9 @@ translationStatus: complete
 | [Skye Grey](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) | 2013 | サボ単独（仮説検証型） | サボ | 否（語句リストの叙述のみ） |
 | [Aston University](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) | 2014 | 11 候補 | サボ | 否（プレスリリース上の結論のみ） |
 | カフィエロ／[カレイロウ NYT](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) | 2026 | 12 候補（焦点）／620（広範） | アダム・バック（ハル・フィニーがほぼ同点） | 否（NYT 記事内に結果要約） |
-| **ヴァン・ドルスト** | **2024** | **75,000+** | **指名なし** | **可（CSV/XLSX 計 280 MB）** |
+| **ヴァン・ドルスト** | **2024** | **75,000+** | **公表上は指名なし**（[Bitcoin Institute による再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)では名指し候補 5 名中サボが首位） | **可（CSV/XLSX 計 280 MB）** |
 
-ヴァン・ドルストが候補を指名せず、物語的研究は指名している事実 — そして指名する研究同士で首位候補が一致しない（サボ vs アダム・バック）事実 — は、それ自体が方法論的観察である：サトシの文体計量による特定は、コーパス選定・距離指標・候補者の事前選定によって答えが変わる感受性を持つ。
+ヴァン・ドルストが候補を公的に指名せず、物語的研究は指名している事実 — そして名指し候補研究を Bitcoin Institute による再分析と併せて読むと、4 件のうち 3 件がサボに収束し、Cafiero／Carreyrou のみがアダム・バックを首位とする外れ値である事実 — は、それ自体が方法論的観察である：サトシの文体計量による特定はコーパス選定・距離指標・候補者の事前選定に感受性を持つ一方、手法を横断して最も持続する信号は名指し候補内でサボを最上位に置く。
 
 **本コーパスからの候補別値（Bitcoin Institute による再分析）：**
 

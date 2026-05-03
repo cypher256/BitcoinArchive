@@ -98,9 +98,9 @@ Cross-referencing this corpus against the named-candidate stylometric tradition:
 | [Skye Grey](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) | 2013 | Szabo (single-hypothesis) | Szabo | No (narrative phrase list) |
 | [Aston University](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) | 2014 | 11 candidates | Szabo | No (results in press releases only) |
 | Cafiero / [Carreyrou NYT](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) | 2026 | 12 candidates (focus); 620 (broader) | Adam Back (Hal Finney near tie) | No (results summarized in NYT article) |
-| **van Dorst** | **2024** | **75,000+** | **Not named** | **Yes — 280 MB CSV/XLSX** |
+| **van Dorst** | **2024** | **75,000+** | **Not named publicly** (Szabo top of 5 named candidates per [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)) | **Yes — 280 MB CSV/XLSX** |
 
-The fact that van Dorst declines to name a candidate while the narrative-driven studies do — and the fact that the named-candidate studies disagree on the leading candidate (Szabo vs. Adam Back) — is itself a methodological observation: stylometric Satoshi identification is sensitive to corpus selection, distance metric, and candidate pre-selection in ways that change the answer.
+The fact that van Dorst declines to publicly name a candidate while the narrative-driven studies do — and the fact that the named-candidate studies, when read alongside the Bitcoin Institute reanalysis, mostly converge on Szabo (3 of 4) with Cafiero / Carreyrou as the Adam Back outlier — is itself a methodological observation: stylometric Satoshi identification is sensitive to corpus selection, distance metric, and candidate pre-selection, but the most persistent signal across methods places Szabo highest among the named candidates.
 
 **Per-candidate values from this corpus (Bitcoin Institute reanalysis):**
 

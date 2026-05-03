@@ -108,13 +108,13 @@ translationStatus: complete
 
 | 候補 | [Skye Grey 2013](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（単独仮説） | [アストン 2014](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（11 候補） | [ヴァン・ドルスト 2024](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（75,000+）／[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [Cafiero／Carreyrou NYT 2026](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)（12 候補；広範プール 620） |
 |---|---|---|---|---|
-| アダム・バック | — | 検討対象 | 3 位 | **首位**（ハル・フィニーがほぼ同点）／不確定 |
-| ウェイ・ダイ | — | 検討対象 | 4 位（同点） | 検討対象 |
-| ハル・フィニー | — | 検討対象 | 2 位 | アダム・バックとほぼ同点 |
-| ニック・サボ | **首位** | **首位** | **首位** | 検討対象 |
+| アダム・バック | — | 順位非公開 | 3 位 | **首位**（ハル・フィニーがほぼ同点）／不確定 |
+| ウェイ・ダイ | — | 順位非公開 | 4 位（同点） | 順位非公開 |
+| ハル・フィニー | — | 順位非公開 | 2 位 | アダム・バックとほぼ同点 |
+| ニック・サボ | **首位** | **首位** | **首位** | 順位非公開 |
 | レン・サッサマン | — | 候補集合に未収録 | 4 位（同点） | 候補集合に未収録 |
 
-**文体計量レイヤの読み方：** 結果の分散 — サボ、サボ、指名なし、アダム・バック — それ自体が経験的観察である。単一の方法論的選択が安定的な特定を生み出してはおらず、より広範で方法論的に透明な比較（[ヴァン・ドルストの 75,000 人著者コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)）は首位候補の指名そのものを意図的に避けている。文体計量は候補空間を絞り込むが、単一の人物を特定はしない。
+**文体計量レイヤの読み方：** サボが最も高頻度で首位に位置づけられる候補として浮上する — 4 件のうち 3 件が名指し候補内でサボを最上位に置く：Skye Grey 2013（名指し）、アストン 2014（名指し）、[Bitcoin Institute による再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)によるヴァン・ドルストの公開データ（5 名中サボが首位）。アダム・バックを名指したのは Cafiero／Carreyrou 2026 のみであり、カフィエロ自身がその結果を「不確定」 と評している（ハル・フィニーがほぼ同点）。ただし収束は部分的である：[ヴァン・ドルストの 75,000 人著者コーパス全体](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)では、サボより近い無名著者が 594 名存在し、ヴァン・ドルスト本人は首位候補の指名を避けている。文体計量は候補空間を絞り込むが、単一の人物を特定はしない。
 
 ## 2. 方法論
 
