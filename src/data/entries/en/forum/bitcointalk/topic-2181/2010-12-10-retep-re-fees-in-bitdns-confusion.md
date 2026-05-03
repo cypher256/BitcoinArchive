@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Peter Todd's reply to Satoshi Nakamoto's post about transaction replacement, posted approximately 1.5 hours later. This was only Todd's second post on BitcoinTalk, made under the username \"retep\" (Peter spelled backwards). The HBO documentary \"Money Electric\" (2024) later cited this exchange as evidence that Todd might be Satoshi."
+description: "Peter Todd's reply (~1.5h later) to Satoshi's transaction-replacement post. Todd's 2nd BitcoinTalk post as \"retep\" (Peter reversed). HBO's \"Money Electric\" (2024) cited it as Todd-is-Satoshi evidence."
 isSatoshi: false
 isConversation: true
 inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"

@@ -9,7 +9,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "After years of silence, Satoshi Nakamoto briefly returns to the P2P Foundation forum to deny being Dorian Nakamoto, following Newsweek's controversial cover story identifying a California man as Bitcoin's creator."
+description: "After years of silence, Satoshi Nakamoto briefly returns to the P2P Foundation forum to deny being Dorian Nakamoto, after Newsweek's cover story identifying a California man as Bitcoin's creator."
 isSatoshi: true
 tags:
   - "identity"

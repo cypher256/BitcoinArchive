@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランザクション置換に関するサトシ・ナカモトの投稿へのピーター・トッドの返信。約1.5時間後に投稿された。ユーザー名「retep」（Peterの逆）でのBitcoinTalkでの2番目の投稿だった。HBOのドキュメンタリー「Money Electric」（2024年）は後にこのやり取りをトッドがサトシである証拠として引用した。"
+description: "サトシの置換投稿へのトッドの返信、1.5時間後。「retep」(Peter逆)名義のBitcoinTalk2番目投稿。HBO「Money Electric」(2024)がトッド=サトシ説の証拠に引用。"
 isSatoshi: false
 isConversation: true
 inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"

@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sepp Hasslberger"
     slug: "sepp-hasslberger"
-description: "サトシがゼップ・ハスルベルガーのOpen Coinプロジェクトに関する質問に回答し、過去の電子通貨の失敗は中央集権的な性質が原因であり、ビットコインは分散型で信頼を必要としないシステムの最初の試みであると述べています。"
+description: "サトシがゼップ・ハスルベルガーのOpen Coinに関する質問に回答。過去の電子通貨の失敗は中央集権が原因、ビットコインは初の分散型・無信頼システムだと述べた。"
 isSatoshi: true
 tags:
   - "decentralization"

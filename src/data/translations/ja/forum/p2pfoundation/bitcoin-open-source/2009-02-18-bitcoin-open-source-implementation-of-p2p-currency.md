@@ -13,7 +13,7 @@ participants:
     slug: "joerg-baach"
   - name: "Sepp Hasslberger"
     slug: "sepp-hasslberger"
-description: "ヨルク・バッハとゼップ・ハスルベルガーの質問に回答し、ビットコインのプルーフ・オブ・ワークによるマイニング、半減期スケジュール、固定供給量について説明。供給量があらかじめ決められ価値が変動する貴金属に例えています。"
+description: "ヨルク・バッハとゼップ・ハスルベルガーの質問に回答。ビットコインのPoWマイニング、半減期、固定供給量を説明し、供給があらかじめ決まり価値が変動する貴金属に例えた。"
 isSatoshi: true
 tags:
   - "mining"

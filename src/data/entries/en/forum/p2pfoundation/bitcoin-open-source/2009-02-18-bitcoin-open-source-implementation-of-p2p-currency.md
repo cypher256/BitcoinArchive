@@ -13,7 +13,7 @@ participants:
     slug: "joerg-baach"
   - name: "Sepp Hasslberger"
     slug: "sepp-hasslberger"
-description: "Satoshi explains Bitcoin's proof-of-work mining, halving schedule, and fixed supply in response to questions from Joerg Baach and Sepp Hasslberger, comparing it to a precious metal where supply is predetermined and value changes."
+description: "Satoshi explains Bitcoin's proof-of-work mining, halving schedule, and fixed supply to Joerg Baach and Sepp Hasslberger, comparing it to a precious metal with predetermined supply and varying value."
 isSatoshi: true
 tags:
   - "mining"

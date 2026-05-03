@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "サトシ・ナカモトがトランザクション置換の可能な設計を説明 — 手数料の高い二重支払いで元のトランザクションを置き換える仕組み。この概念は後にReplace-by-Fee（RBF）として知られるようになる。ピーター・トッドが約1.5時間後にこの投稿に返信した。"
+description: "サトシ・ナカモトがトランザクション置換の設計案を説明。手数料の高い二重支払いで元を置き換える、後のReplace-by-Fee（RBF）の原型。ピーター・トッドが約1.5時間後に返信。"
 isSatoshi: true
 inReplyTo: "forum/bitcointalk/2010-12-09-jgarzik-2-re-fees-in-bitdns-confusion"
 tags:

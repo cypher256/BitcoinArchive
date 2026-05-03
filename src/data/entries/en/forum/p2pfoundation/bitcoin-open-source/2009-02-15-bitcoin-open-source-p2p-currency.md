@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sepp Hasslberger"
     slug: "sepp-hasslberger"
-description: "Satoshi responds to Sepp Hasslberger's question about the Open Coin project, arguing that previous e-currency failures were due to centralization, and that Bitcoin represents the first decentralized, non-trust-based system."
+description: "Satoshi responds to Sepp Hasslberger about Open Coin, arguing previous e-currency failures were due to centralization and Bitcoin is the first decentralized, non-trust-based system."
 isSatoshi: true
 tags:
   - "decentralization"

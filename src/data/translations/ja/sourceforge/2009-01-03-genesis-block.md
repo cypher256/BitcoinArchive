@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトは、ビットコインのジェネシスブロック（ブロック 0）のパラメーターをハードコードし、タイムズ紙の有名な見出し「Chancellor on brink of second bailout for banks（財務大臣、銀行への二度目の救済措置を検討）」を埋め込んだ。"
+description: "サトシ・ナカモトがジェネシスブロック（ブロック 0）にタイムズ紙見出し「Chancellor on brink of second bailout for banks」 をハードコードした。"
 isSatoshi: true
 tags:
   - "sourceforge"
