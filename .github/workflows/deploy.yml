@@ -32,7 +32,22 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Build
-        run: npm run build
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee build.log
+
+      - name: Fail build on per-page render errors
+        run: |
+          # Astro logs `[ERROR] [glob-loader] Error rendering ...` per failing
+          # page but exits 0, so the workflow would record "success" even
+          # when Mermaid pages or markdown rendering blew up. Promote any
+          # such line to a hard failure so the artifact upload does not
+          # publish a half-rendered dist/.
+          if grep -E '\[ERROR\]|browserType\.launch:|Cannot find|EISDIR|MODULE_NOT_FOUND' build.log; then
+            echo "::error::Astro reported render errors during build (see lines above). Failing the deploy."
+            exit 1
+          fi
+          echo "No render errors detected in build log."
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
