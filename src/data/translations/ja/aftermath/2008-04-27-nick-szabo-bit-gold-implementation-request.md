@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ニック・サボが自身のブログ「Unenumerated」のコメント欄で、1998年に設計したデジタル通貨bit goldの実装への協力を求めた。公に応じる者はいなかった。6ヶ月後、サトシ・ナカモトがビットコインのホワイトペーパーを公開した。"
+description: "ニック・サボが自身のブログでbit goldの実装協力を求めるが反応なし。6ヶ月後、サトシ・ナカモトがビットコイン論文を公開した。"
 isSatoshi: false
 tags:
   - "nick-szabo"

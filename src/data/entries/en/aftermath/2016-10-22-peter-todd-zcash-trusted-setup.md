@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd participated as one of six individuals in the Zcash trusted setup ceremony in October 2016, then published a detailed account criticizing the process. He conducted his computation while driving across British Columbia, shielded his laptop in a Faraday cage, and destroyed the hardware with a propane torch afterward — yet concluded the ceremony was fundamentally flawed because the deterministic builds were unaudited and collusion was unprovable."
+description: "Peter Todd participated in the Zcash trusted setup ceremony in October 2016 — driving across BC, shielding his laptop in a Faraday cage, and torching the hardware — then criticized the process."
 isSatoshi: false
 tags:
   - "peter-todd"

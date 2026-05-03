@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "2009 年 1 月、Bitcoin v0.1 リリース週 (1/8-12) のサトシの運用環境についての、編者による推論的な読解。2 つの一次資料からの手がかり — 1/10 のハル・フィニー宛メールにある場所依存的な表現『from where I am』と、同じ週の公開活動の密度 — を組み合わせて読む。これは解釈的な読解であり、サトシの所在地や身元を確定する歴史的主張ではない。"
+description: "Bitcoin v0.1 リリース週（2009 年 1 月 8〜12 日）のサトシ運用環境を 2 一次資料から読む: 1 月 10 日のフィニー宛「from where I am」、同週の活動密度。"
 isSatoshi: false
 homeOrder: 8
 tags:

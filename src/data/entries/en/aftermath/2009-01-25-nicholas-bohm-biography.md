@@ -8,7 +8,7 @@ author: "Nicholas Bohm"
 participants:
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "Nicholas Bohm: British commercial lawyer and electronic commerce policy adviser who reported problems running Bitcoin on the bitcoin-list mailing list in January 2009, prompting a direct response from Satoshi Nakamoto."
+description: "British commercial lawyer and electronic commerce policy adviser who reported problems running Bitcoin on the bitcoin-list mailing list in January 2009, prompting a direct response from Satoshi."
 isSatoshi: false
 tags:
   - "nicholas-bohm"

@@ -10,7 +10,7 @@ participants:
     slug: "wei-dai"
   - name: "Adam Back"
     slug: "adam-back"
-description: "サイファーパンクメーリングリストでのアダム・バックへのウェイ・ダイの返信。b-moneyの実用上の限界について議論し、「b-moneyはせいぜいニッチな通貨/契約執行メカニズムにしかなりません」と認め、「今では政府の暴力独占は差し引きでプラスだと思うようになりました」と政治的見解の変化を明かした。"
+description: "ウェイ・ダイがアダム・バックへ返信。b-moneyはニッチに留まると認め、政府の暴力独占を差し引きでプラスと見る政治的変化も明かした。"
 isSatoshi: false
 tags:
   - "wei-dai"

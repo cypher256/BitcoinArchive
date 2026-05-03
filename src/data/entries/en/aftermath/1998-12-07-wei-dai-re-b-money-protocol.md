@@ -10,7 +10,7 @@ participants:
     slug: "wei-dai"
   - name: "Adam Back"
     slug: "adam-back"
-description: "Wei Dai's reply to Adam Back on the Cypherpunks mailing list, discussing b-money's practical limitations. Dai acknowledged that 'b-money will at most be a niche currency/contract enforcement mechanism' and revealed a shift in his political views, stating 'I now tend to think that the government monopoly of force is a net benefit.'"
+description: "Wei Dai replies to Adam Back on Cypherpunks, conceding b-money would be at most a niche mechanism and revealing his shift toward viewing the government monopoly of force as a net benefit."
 isSatoshi: false
 tags:
   - "wei-dai"

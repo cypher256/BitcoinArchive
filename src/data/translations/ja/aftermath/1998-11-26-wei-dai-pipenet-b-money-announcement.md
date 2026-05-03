@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サイファーパンクメーリングリストにおけるウェイ・ダイのb-money初出アナウンス。注目すべきは、b-moneyがPipeNet 1.1（匿名ルーティングプロトコル）の付随的な項目として言及されたことだ。後にビットコインのインスピレーションとなるb-moneyの提案は、投稿末尾のわずか一文で紹介された。"
+description: "ウェイ・ダイがb-moneyをサイファーパンクリストで発表。本命のPipeNet 1.1に付随する一文として末尾で紹介された。"
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -26,6 +26,7 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "analysis/2008-10-31-bitcoin-design-lineage"

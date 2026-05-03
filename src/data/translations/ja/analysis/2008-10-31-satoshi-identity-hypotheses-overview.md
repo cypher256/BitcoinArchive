@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Paul Le Roux"
     slug: "paul-le-roux"
-description: "サトシ・ナカモトの正体候補を比較する。対象：アダム・バック、ウェイ・ダイ、ハル・フィニー、ニック・サボ、ドリアン・プレンティス・サトシ・ナカモト、クレイグ・ライト、ポール・ルルー、レン・サッサマン、ピーター・トッド、金子勇。各候補の核となる論点と外部的状況（自己否定、判決、技術的論破）を整理し、7 次元のプロファイル比較表で並列する。個別の仮説エントリーがある候補については、深い扱いはそちらに譲る (表の「個別」 列を参照)。本エントリーは「最も蓋然性の高いサトシ候補」 を指名しない。"
+description: "サトシ正体候補 10 名（バック、ウェイ・ダイ、フィニー、サボ、ドリアン、ライト、ルルー、サッサマン、トッド、金子）を 7 次元プロファイル比較表で並列。最有力候補は指名しない。"
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -22,6 +22,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
@@ -86,7 +87,7 @@ translationStatus: complete
 | 候補 | 個別 | サイファーパンク | ビットコイン系譜 | 実装能力 | 貨幣設計 | 英語水準 | タイミング | 可視性低 | 外部的状況 |
 |---|---|---|---|---|---|---|---|---|---|
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定（NYT 2026 調査） |
-| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定 |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [正体](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定／公開前通信は第三者応答として読める |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | [正体](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致／レース日のアリバイ |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
@@ -188,13 +189,7 @@ quadrantChart
 
 **経歴。** 中国系米国人の暗号学者、Crypto++ ライブラリ（広く使われているオープンソース暗号ライブラリ）の作者、デジタルキャッシュ提案 *b-money*（1998 年）の設計者。b-money は Hashcash とともにビットコインのホワイトペーパーで引用された。1990 年代後半のサイファーパンクメーリングリスト参加者。
 
-**仮説。** ウェイ・ダイはサトシがホワイトペーパーで明示的に引用したもう一人のサイファーパンクで、[2008 年 8 月のサトシによる公開前通信](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) の二人目の既知の受信者。b-money の引用、公開前接触、デジタルキャッシュの知的系譜 — この組合せが、ウェイ・ダイがサトシだったという読みを繰り返し生んできた。
-
-**支持論点。** b-money の設計空間はビットコインと特に重なる（プルーフ・オブ・ワーク付きデジタルキャッシュ） — Hashcash よりも直接に重なる。ビットコイン v0.1 は SHA-256 実装にウェイ・ダイの Crypto++ ライブラリを直接バンドルしており（`src/sha.cpp` / `src/sha.h` は Crypto++ 5.5.2 から切り出され、`namespace CryptoPP` の帰属表示が付く）、知的系譜にとどまらないコードベースレベルの直接依存になっている。長期サイファーパンク参加者。
-
-**反証。** [2014 年の LessWrong での回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) で、サトシは「サイファーパンクのコミュニティに以前から積極的に活動していた人物ではない」 と示唆しており、これは「ウェイ・ダイがサトシだった」 という前提と整合しない。アダム・バックと同じ公開前通信の議論が適用される：ウェイ・ダイがサトシへ返した内容は、第三者として外部の提案を受け止める応答として読める。サトシのウェイ・ダイへの公開前メールは、サトシがアダム・バックの紹介経由で b-money を最近知ったばかりであることを示しており — サトシ＝ウェイ・ダイなら整合しない事実。Crypto++ のコードベース依存は単独では見かけほど強くない：Crypto++ は 2007〜2008 年当時の C++ 暗号ライブラリの事実上の標準であり（C++ 開発者にとって自然な選択）、v0.3.6（2010 年 7 月）の SSE2 アセンブリ最適化アップグレードは BitcoinTalk のメンバー「blackeye」 の提案であり、サトシ単独の判断ではない。
-
-**外部的状況。** 自己否定／公開前通信は第三者応答として読める／2014 年回想は自己作者と整合しない。
+**外部的状況。** 自己否定（[2014 年 1 月の LessWrong AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) で自身をサトシと明示的に区別）／2008 年 8 月の公開前通信は第三者応答として読める／2014 年回想の「サトシは以前から活動していた人物ではない」 という記述は自己作者と整合しない。 → [ウェイ・ダイ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) で、b-money 概念近接論点、Crypto++ コードベース依存論点、2008 年 8 月の通信構造による反証、文体計量での距離（広範コーパスで上位 22.99%）の検討を全文で扱う。
 
 ### B. 能力整合の高いサイファーパンク
 

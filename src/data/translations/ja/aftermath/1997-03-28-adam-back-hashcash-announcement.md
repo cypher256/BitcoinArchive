@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "1997 年 3 月 28 日、アダム・バックがサイファーパンクメーリングリストで Hashcash を公開した — 部分ハッシュ衝突に基づく郵便料金方式。スパムメールおよびリメイラー濫用への対抗策として提案されたプルーフ・オブ・ワーク基本要素。アナウンス（hashcash.org/papers/announce.txt に保存）はデジタルキャッシュ議論の中に明示的に位置づけている：「これは digicash とどう関係するか」 という独立した節で、Hashcash を「digicash がより広く使われるまでの応急措置」 として、また digicash が違法化または身元エスクロー化を要求された場合のフォールバックとして枠組みづける。1997 年のアナウンスは 11 年にわたる流れの始点 — バックの 1998 年 12 月 b-money 批評と、2002 年 8 月 Hashcash 論文 §7 で「ウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構としての hashcash」 を列挙したことを経て、2008 年 8 月 20 日にサトシ・ナカモトが Hashcash の引用形式についてバックに問い合わせる場面まで続く。"
+description: "アダム・バックがサイファーパンクリストで Hashcash を公開。スパム対策のプルーフ・オブ・ワーク方式で、デジタルキャッシュ議論の中に位置づけられた。"
 isSatoshi: false
 tags:
   - "adam-back"

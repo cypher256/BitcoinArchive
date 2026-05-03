@@ -12,7 +12,7 @@ participants:
     slug: "gregory-maxwell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "On January 15, 2016, Bitcoin Core v0.12 replaced OpenSSL with libsecp256k1 for consensus-critical ECDSA signature verification. Pieter Wuille and Gregory Maxwell had spent nearly three years writing a custom elliptic-curve library specifically for Bitcoin, after concluding that OpenSSL's signature parsing inconsistencies could potentially cause unintended chain splits. The change delivered 2.5–5.5× faster verification while removing one of Satoshi's original cryptographic dependencies."
+description: "On January 15, 2016, Bitcoin Core v0.12 replaced OpenSSL with libsecp256k1 — Wuille and Maxwell's custom elliptic-curve library — for consensus-critical ECDSA verification."
 isSatoshi: false
 tags:
   - "pieter-wuille"

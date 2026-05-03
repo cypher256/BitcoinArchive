@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "HBOドキュメンタリー「Money Electric: The Bitcoin Mystery」（カレン・ホーバック監督）が、ピーター・トッドをサトシ・ナカモト候補として名指しした。中心的な証拠は2010年のBitcoinTalkフォーラム投稿とBIP 125でのRBF実装だったが、トッドは「馬鹿げている」と否定。ビットコインコミュニティから酷評された。"
+description: "HBO「Money Electric」（カレン・ホーバック監督）がピーター・トッドをサトシ候補と名指し。2010 年 BitcoinTalk 投稿と BIP 125 が根拠。トッドは否定。"
 isSatoshi: false
 tags:
   - "peter-todd"

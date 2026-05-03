@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Paul Le Roux"
     slug: "paul-le-roux"
-description: "A comparison of ten Satoshi Nakamoto identity candidates that recur in public discourse: Adam Back, Wei Dai, Hal Finney, Nick Szabo, Dorian Prentice Satoshi Nakamoto, Craig Wright, Paul Le Roux, Len Sassaman, Peter Todd, Isamu Kaneko. The entry lays out each candidate's core argument and external status (self-denials, court rulings, technical disproofs), and aligns them in a seven-dimension candidate profile comparison table. Candidates with dedicated hypothesis entries are treated more deeply there (see the \"Individual\" column in the table). The entry does not name the most likely Satoshi candidate."
+description: "Comparison of ten recurring Satoshi candidates: Adam Back, Wei Dai, Hal Finney, Szabo, Dorian, Wright, Le Roux, Sassaman, Todd, Kaneko. Aligned in a seven-dimension table. Names no most likely."
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -22,6 +22,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
@@ -85,7 +86,7 @@ This entry does not name "the most likely Satoshi candidate."
 | Candidate | Entry | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|---|
 | [Adam Back](/BitcoinArchive/participants/adam-back/) | [Identity](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | Self-denied (NYT 2026 investigation) |
-| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | [Identity](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied; pre-launch correspondence reads third-party |
 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | [Identity](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch; race-day alibi |
 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | [Identity](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
 | [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
@@ -187,13 +188,7 @@ Each profile shares the same micro-structure: background, the hypothesis (propos
 
 **Background.** Chinese-American cryptographer, author of the Crypto++ library (a widely-deployed open-source cryptographic library), designer of *b-money* (1998), the digital-cash proposal Bitcoin's whitepaper cites alongside Hashcash. Active cypherpunk-mailing-list presence in the late 1990s.
 
-**The hypothesis.** Wei Dai is the other cypherpunk Satoshi explicitly cited in the whitepaper, and the second known recipient of [Satoshi's pre-launch correspondence in August 2008](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/). The b-money citation, the pre-launch contact, and the digital-cash intellectual lineage have periodically been read as evidence that Wei Dai was Satoshi.
-
-**Argument for.** b-money's design space overlaps with Bitcoin's specifically (digital-cash with proof-of-work) more directly than Hashcash. Bitcoin v0.1 directly bundled Wei Dai's Crypto++ library for its SHA-256 implementation (`src/sha.cpp` / `src/sha.h` extracted from Crypto++ 5.5.2 with `namespace CryptoPP` attribution) — a documented codebase dependency on Wei Dai's library, not just intellectual lineage. Long-tenure cypherpunk presence.
-
-**Argument against.** In a [2014 retrospective on LessWrong](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/), Wei Dai indicated that Satoshi was "not previously active" in cypherpunk communities — a framing inconsistent with Wei Dai himself having been Satoshi. The same pre-launch correspondence argument as for Adam Back applies: Wei Dai's replies read as a third party receiving an external proposal. Satoshi's pre-launch email to Wei Dai indicates Satoshi had only recently learned of b-money via Adam Back's referral — a fact that would not make sense if Satoshi = Wei Dai. The Crypto++ codebase dependency is weaker than it appears in isolation: Crypto++ was the most-deployed open-source C++ cryptographic library in 2007–2008 (a standard selection for any C++ developer), and the v0.3.6 SSE2-assembly upgrade (July 2010) was proposed by BitcoinTalk member "blackeye," not Satoshi independently.
-
-**External status.** Self-denied; pre-launch correspondence reads as third-party reception; 2014 retrospective inconsistent with self-authorship.
+**External status.** Self-denied (most prominently via the [January 2014 AALWA retrospective on LessWrong](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) explicitly distinguishing himself from Satoshi); the August 2008 pre-launch correspondence reads as third-party reception; the 2014 retrospective's "not previously active" framing is inconsistent with Wei Dai's own candidacy. → See [Wei Dai = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) for the b-money conceptual-proximity argument, the Crypto++ codebase-dependency argument, the August 2008 email-structure counter-evidence, and the broader-corpus stylometric distance (Wei Dai ranks at top 22.99% of the 12,739-author corpus, the most distant of the named candidates) at full detail.
 
 ### B. Cypherpunks with capability fit
 

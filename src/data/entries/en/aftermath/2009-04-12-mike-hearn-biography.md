@@ -8,7 +8,7 @@ author: "Mike Hearn"
 participants:
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Mike Hearn: Software engineer who worked at Google on Maps, Earth, and Gmail anti-spam systems. He contacted Satoshi Nakamoto in April 2009 after reading the Bitcoin white paper and became one of the earliest contributors. He later developed BitcoinJ, the first major alternative implementation, and in 2017 his email correspondence with Satoshi was made public."
+description: "Software engineer at Google (Maps, Earth, Gmail anti-spam) who contacted Satoshi in April 2009, became an early contributor, and built BitcoinJ. His Satoshi correspondence was made public in 2017."
 isSatoshi: false
 tags:
   - "mike-hearn"

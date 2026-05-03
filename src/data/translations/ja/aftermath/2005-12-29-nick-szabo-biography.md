@@ -8,7 +8,7 @@ author: "Nick Szabo"
 participants:
   - name: "Nick Szabo"
     slug: "nick-szabo"
-description: "ニック・サボ：コンピューター科学者・法学者・暗号学者。ビットコインの直接的な先駆者であるBit Gold（1998年）を構想し、「スマートコントラクト」という用語を生み出した。分散型デジタル希少性に関する彼の研究は、ビットコイン設計の知的基盤を築いた。"
+description: "コンピューター科学者・法学者・暗号学者（1964-）。Bit Gold（1998年）を構想し、「スマートコントラクト」という用語を生み出した。"
 isSatoshi: false
 tags:
   - "nick-szabo"

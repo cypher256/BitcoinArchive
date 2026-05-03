@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "On May 15, 2015, the New York Times published 'Decoding the Enigma of Satoshi Nakamoto and the Birth of Bitcoin' by Nathaniel Popper, an excerpt from his book Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money (Harper, May 2015). The article walked readers through Popper's reporting on Satoshi candidates and concluded that Nick Szabo, the cypherpunk-era cryptographer who designed Bit Gold, was the most likely individual behind the pseudonym. Szabo, contacted by Popper during the reporting, denied the identification by email. The piece is the highest-profile mainstream-press identification of Szabo as Satoshi to date and the most-cited reference for the Szabo-as-Satoshi hypothesis in subsequent journalism."
+description: "On May 15, 2015, the New York Times published Nathaniel Popper's Decoding the Enigma of Satoshi Nakamoto — a Digital Gold excerpt naming Bit Gold designer Nick Szabo as Satoshi. Szabo denied it."
 isSatoshi: false
 tags:
   - "nick-szabo"

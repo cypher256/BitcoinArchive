@@ -10,7 +10,7 @@ participants:
     slug: "isamu-kaneko"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the Japanese-language hypothesis that Isamu Kaneko (the developer of the Winny peer-to-peer file-sharing system, who was prosecuted in Japan from 2004 and died on July 6, 2013) was the person behind Satoshi Nakamoto. The entry sets out the supporting arguments (Japanese-name fit, Winny P2P expertise, Japanese-English bilingual capability, anti-establishment posture) and the counter-evidence (active criminal-case scrutiny during Bitcoin's development period, intellectual-lineage gap, English-register difference, code-language traces, loose timing relative to Satoshi's silence) at the same level of detail. The hypothesis circulates in Japanese-language public discourse where Kaneko is one of the most-named domestic candidates."
+description: "The Japanese-language hypothesis that Isamu Kaneko (Winny P2P developer, prosecuted from 2004, died July 2013) was Satoshi. Counter: criminal-case scrutiny, English-register difference."
 isSatoshi: false
 tags:
   - "satoshi-identity"

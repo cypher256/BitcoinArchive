@@ -12,7 +12,7 @@ participants:
     slug: "ray-dillinger"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "SerHackが2008年9月10日のプレリリース版ビットコインジェネシスブロックの分析を発表した。サトシが2008年11月に非公開で共有したソースコードから発見されたもので、完全に異なるハッシュ、極めて容易な難易度、10,000ユニットのブロック報酬を持っていた。9月10日はLehman Brothersが39億ドルの損失を発表した日と一致する。"
+description: "SerHack が 2008 年 9 月 10 日付のプレリリース・ジェネシスブロックを分析。サトシが 11 月に共有したソースから発見。Lehman の損失発表日と一致。"
 isSatoshi: false
 tags:
   - "genesis-block"

@@ -12,7 +12,7 @@ participants:
     slug: "hal-finney"
   - name: "Fran Finney"
     slug: "fran-finney"
-description: "CoinDesk published previously unpublished emails between Satoshi Nakamoto and Hal Finney, obtained from Hal's personal computer via his widow Fran Finney. The emails included Finney asking Satoshi about network scalability in November 2008, Satoshi personally notifying Finney of the v0.1 release on January 8, 2009, and a follow-up where Satoshi mentioned being unable to receive incoming connections."
+description: "CoinDesk published previously unseen Satoshi-Finney emails (obtained via widow Fran Finney): Finney's November 2008 scalability question and Satoshi's personal v0.1 release notice on January 8, 2009."
 isSatoshi: false
 tags:
   - "satoshi-finney-emails"

@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "LessWrongの投稿「Bitcoins are not digital greenbacks」へのウェイ・ダイのコメント。ビットコインは「金融政策に関して失敗しました」と論じ、価格変動の問題を指摘。さらに2008年にサトシからの論文レビュー依頼のメールに返信しなかったことを明かし、「固定マネーサプライのアイデアを思いとどまらせることができたかもしれません」と後悔を述べた。"
+description: "ウェイ・ダイの LessWrong コメント。ビットコインの金融政策は失敗と論じ、2008 年のサトシのレビュー依頼に返信しなかったことを後悔。"
 isSatoshi: false
 tags:
   - "wei-dai"

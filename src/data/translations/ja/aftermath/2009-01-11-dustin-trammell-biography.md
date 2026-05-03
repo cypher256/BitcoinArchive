@@ -8,7 +8,7 @@ author: "Dustin Trammell"
 participants:
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "ダスティン・D・トランメル：テキサス州オースティン在住の情報セキュリティ研究者で、ビットコインのリリース後に最初期に稼働させた人物の一人。2009年1月11日にサトシ・ナカモトにメールを送り、サトシから直接25 BTCを受信した — 最初期の既知の個人間ビットコイン送金の一つ。"
+description: "テキサス州オースティンの情報セキュリティ研究者。リリース直後にビットコインを稼働させ、サトシから25 BTCを受信。最初期の個人間送金の一つ。"
 isSatoshi: false
 tags:
   - "dustin-trammell"

@@ -10,7 +10,7 @@ participants:
     slug: "michel-bauwens"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "In an April 2025 interview, P2P Foundation founder Michel Bauwens recalled that Satoshi emailed him several times, offered him a few bitcoins, and explained why he was publishing the white paper on the P2P Foundation site. Bauwens also gave a mature retrospective on Bitcoin: he remained skeptical of its energy costs, but saw it as the first globally scalable, socially sovereign currency not issued by a firm or state."
+description: "In an April 2025 interview, P2P Foundation founder Michel Bauwens recalled receiving several emails from Satoshi (who offered him a few bitcoins) and gave a retrospective on Bitcoin's significance."
 isSatoshi: false
 tags:
   - "michel-bauwens"

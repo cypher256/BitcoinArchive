@@ -10,7 +10,7 @@ participants:
     slug: "nicholas-bohm"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ニコラス・ボームは、これまで2009年1月の bitcoin-list における公開バグ報告で知られていたが、COPA対ライト裁判の証拠開示により、実際にはサトシとメールでも継続的にやり取りしていたことが判明した。提出資料には、ルーター設定、ポート8333、'not accepted' ブロック、2009年7月時点のネットワークの極端な小ささに関するやり取りが含まれている。"
+description: "COPA 対ライト裁判の証拠開示で、ニコラス・ボームが 2009 年 1 月の bitcoin-list バグ報告だけでなくサトシと私的メールでも継続してやり取りしていたことが判明。"
 isSatoshi: false
 tags:
   - "nicholas-bohm"

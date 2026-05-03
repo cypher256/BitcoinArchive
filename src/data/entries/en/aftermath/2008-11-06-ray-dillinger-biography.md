@@ -8,7 +8,7 @@ author: "Ray Dillinger"
 participants:
   - name: "Ray Dillinger"
     slug: "ray-dillinger"
-description: "Ray Dillinger (online handle 'bear' / 'cryddit'): Computer scientist who, along with Hal Finney, reviewed Satoshi Nakamoto's Bitcoin source code before its public release. He focused on security auditing and is credited with contributing to the origin of the 1 MB block size limit."
+description: "Computer scientist (handle bear / cryddit) who, with Hal Finney, reviewed Satoshi's source code before public release. Focused on security auditing; credited with input on the 1 MB block size limit."
 isSatoshi: false
 tags:
   - "ray-dillinger"

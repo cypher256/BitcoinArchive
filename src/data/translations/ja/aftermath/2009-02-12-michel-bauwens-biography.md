@@ -8,7 +8,7 @@ author: "Michel Bauwens"
 participants:
   - name: "Michel Bauwens"
     slug: "michel-bauwens"
-description: "ミシェル・バウエンス：2009年2月にP2P Researchメーリングリストでサトシ・ナカモトとやり取りし、ビットコインの稼働状況について質問したベルギーの政治理論家、P2P Foundation創設者。"
+description: "ベルギーの政治理論家（1958-）、P2P Foundation創設者。2009年2月のP2P Researchメーリングリストでサトシと対話し、稼働状況を尋ねた。"
 isSatoshi: false
 tags:
   - "michel-bauwens"

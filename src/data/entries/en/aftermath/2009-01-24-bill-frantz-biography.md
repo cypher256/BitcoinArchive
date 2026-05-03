@@ -10,7 +10,7 @@ participants:
     slug: "bill-frantz"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Bill Frantz: Security consultant at Periwinkle (pwpconsult.com) who participated in the cryptography mailing list discussion about Bitcoin in January 2009, making the ironic observation that botnet-controlled machines are 'among the most secure on the network.'"
+description: "Security consultant at Periwinkle who joined the cryptography list discussion of Bitcoin in January 2009, ironically observing that botnet-controlled machines are among the most secure on the network."
 isSatoshi: false
 tags:
   - "bill-frantz"

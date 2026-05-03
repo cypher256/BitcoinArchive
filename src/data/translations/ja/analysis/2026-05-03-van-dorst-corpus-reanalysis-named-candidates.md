@@ -19,7 +19,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 isSatoshi: false
-description: "バス・ヴァン・ドルストの『Where is Satoshi?』 スタイロメトリー（計量文体論）コーパスからサトシ正体候補 5 名（アダム・バック、ウェイ・ダイ、ハル・フィニー、ニック・サボ、レン・サッサマン）のバローズ・デルタおよびジャッカード類似度を抽出した Bitcoin Institute による独自再分析。所見：ニック・サボが 12,739 名コーパスの上位 4.67% で名指し候補内首位、Skye Grey 2013 およびアストン 2014 と整合。ただし、サボより近い無名著者が 594 名存在し、コーパス最近接 Top 20 はノイズ（EC アカウント、リメイラー出力、捨てアカウント）が占める — 信号ではない。"
+description: "ヴァン・ドルストの『Where is Satoshi?』 文体計量コーパスから候補 5 名を抽出した再分析。所見: サボが 12,739 名中 4.67% で首位、ただし 594 名の無名がより近接。"
 tags:
   - "satoshi-identity"
   - "stylometric-analysis"
@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry

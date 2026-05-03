@@ -10,7 +10,7 @@ participants:
     slug: "martti-malmi"
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency. The transaction established a real-world price of approximately $0.001 per BTC."
+description: "Martti Malmi sells 5,050 BTC to NewLibertyStandard for $5.02 via PayPal — the first known Bitcoin-to-fiat exchange, establishing a real-world price of ~$0.001 per BTC."
 isSatoshi: false
 tags:
   - "martti-malmi"

@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが自分自身に言及した発言を、公開記録（2008 年 8 月 〜 2011 年 4 月）から整理する一次資料の参照表。5 つのサブカテゴリーで分類: P2P Foundation プロフィール上の識別子主張、設計過程の自己開示、運用状態の自己開示（能力自己評価を含む）、撤退表明、authenticity 議論ありのもの。各行は一次資料へのリンクと検証可能性の評価を併記。サトシが「自分について語ったこと」と「公開記録から独立に見えること」を分離し、両者の収束と乖離を整理する。収録範囲外: 自己言及を含まない純粋な業務発信。"
+description: "サトシの全自己言及を公開記録（2008 年 8 月〜2011 年 4 月）から整理。識別主張、開発過程、運用状態、撤退表明、真正性議論つき。各行は一次資料に紐付け。"
 isSatoshi: false
 tags:
   - "satoshi-identity"

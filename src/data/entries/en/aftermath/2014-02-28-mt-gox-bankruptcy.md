@@ -8,7 +8,7 @@ author: "NPR"
 participants:
   - name: "Mark Karpeles"
     slug: "mark-karpeles"
-description: "Mt. Gox, once the world's largest Bitcoin exchange handling approximately 70% of all Bitcoin transactions, filed for bankruptcy in Tokyo. CEO Mark Karpeles revealed that approximately 850,000 BTC (worth ~$450 million) had been lost. The collapse was the most significant crisis Bitcoin had faced since the 2010 value overflow incident."
+description: "Mt. Gox — once the world's largest Bitcoin exchange handling ~70% of transactions — filed for bankruptcy in Tokyo. CEO Mark Karpeles revealed ~850,000 BTC (~$450M) had been lost."
 isSatoshi: false
 tags:
   - "mt-gox"

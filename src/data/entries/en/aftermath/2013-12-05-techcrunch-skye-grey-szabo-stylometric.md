@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "On December 1, 2013, the pseudonymous blogger Skye Grey published 'Satoshi Nakamoto is (probably) Nick Szabo' on the LikeInAMirror.wordpress.com blog — the first publicly circulated stylometric investigation identifying Nick Szabo as the most likely person behind the Satoshi Nakamoto pseudonym. On December 5, 2013, TechCrunch reported the investigation in 'Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer' (John Biggs), introducing the hypothesis to the broader cryptocurrency and technology press. The Skye Grey article catalogued statistically distinctive phrasings — 'of course', 'preclude', 'chain of', and roughly 70 other markers — shared between Szabo's Unenumerated blog corpus and the Satoshi Bitcoin whitepaper, alongside the conceptual proximity between Szabo's Bit Gold proposal and Bitcoin. The article became the foundational citation for the Szabo-as-Satoshi hypothesis, subsequently picked up by The Guardian (March 2014), the Aston University forensic-linguistic study (April 2014), and Nathaniel Popper's New York Times investigation and Digital Gold book (May 2015)."
+description: "On December 1, 2013, blogger Skye Grey published Satoshi Nakamoto is (probably) Nick Szabo — the first public stylometric study naming Szabo as Satoshi, reported by TechCrunch on December 5."
 isSatoshi: false
 tags:
   - "nick-szabo"

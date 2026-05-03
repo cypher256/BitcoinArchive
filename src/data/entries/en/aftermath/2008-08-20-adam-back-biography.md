@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "Adam Back (born 1970): British cryptographer and cypherpunk who invented Hashcash (1997), the proof-of-work system cited in the Bitcoin white paper. On August 20, 2008, he became the first known person Satoshi Nakamoto contacted about Bitcoin. He later co-founded Blockstream in 2014."
+description: "British cryptographer and cypherpunk (born 1970) who invented Hashcash (1997). The first known person Satoshi contacted about Bitcoin (August 20, 2008). Co-founded Blockstream in 2014."
 isSatoshi: false
 tags:
   - "adam-back"

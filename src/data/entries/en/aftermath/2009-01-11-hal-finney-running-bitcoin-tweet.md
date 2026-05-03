@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "The first known tweet about Bitcoin. Hal Finney posted 'Running bitcoin' on January 10, 2009 (PST) / January 11, 2009 (UTC), the same day the Bitcoin v0.1 software was publicly released. He was the first person other than Satoshi to run Bitcoin."
+description: "The first known tweet about Bitcoin. Hal Finney posted 'Running bitcoin' on the day Bitcoin v0.1 was released (January 10/11, 2009). He was the first person other than Satoshi to run it."
 isSatoshi: false
 tags:
   - "hal-finney"

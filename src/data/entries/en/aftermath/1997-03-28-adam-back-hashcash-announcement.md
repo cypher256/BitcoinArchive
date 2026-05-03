@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "On March 28, 1997, Adam Back announced Hashcash to the Cypherpunks mailing list as 'a partial hash collision based postage scheme' — a proof-of-work primitive proposed against email spam and remailer abuse. The announcement (preserved at hashcash.org/papers/announce.txt) explicitly positioned Hashcash within the digital-cash conversation: a 'How does this fit in with digicash' section frames Hashcash as a 'stop gap measure until digicash becomes more widely used' and as a fallback if digicash 'goes sour (gets outlawed or required to escrow user identities).' The 1997 announcement is the chronological starting point of an eleven-year arc that runs through Back's December 1998 b-money critique and August 2002 Hashcash paper §7 listing 'hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal' to Satoshi Nakamoto's August 20, 2008 contact about Hashcash citation format."
+description: "Adam Back announces Hashcash to the Cypherpunks list — a proof-of-work postage scheme against spam, framed within the digital-cash discourse as a stop-gap or fallback for digicash."
 isSatoshi: false
 tags:
   - "adam-back"

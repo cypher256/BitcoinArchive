@@ -10,7 +10,7 @@ participants:
     slug: "newlibertystandard"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "NewLibertyStandardがBitcoinTalkでタイバーツの通貨記号（฿）をビットコインの公式記号とし、「BTC」を3文字の通貨コードとすることを提案。この提案は今日まで使われ続ける通貨表記を確立した。"
+description: "NewLibertyStandardがBitcoinTalkでタイバーツ記号（฿）と「BTC」コードを提案。今日まで使われる通貨表記を確立した。"
 isSatoshi: false
 tags:
   - "newlibertystandard"

@@ -10,7 +10,7 @@ participants:
     slug: "jonathan-thornburg"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ジョナサン・ソーンバーグ：インディアナ大学の天体物理学者。2009年1月17日、暗号学メーリングリストでビットコインに対する政府規制とボットネット悪用の懸念を提起した——ビットコインに対する最も初期の実質的な批判の一つ。"
+description: "インディアナ大学の天体物理学者。2009年1月17日に暗号学メーリングリストで政府規制とボットネット悪用の懸念を提起。最も初期の実質的批判の一つ。"
 isSatoshi: false
 tags:
   - "jonathan-thornburg"

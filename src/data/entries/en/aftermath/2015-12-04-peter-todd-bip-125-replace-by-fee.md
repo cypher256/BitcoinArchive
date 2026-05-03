@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "BIP 125 formalized opt-in Replace-by-Fee (RBF), allowing Bitcoin transaction senders to signal that their unconfirmed transactions may be replaced by higher-fee versions. The concept traces directly to Satoshi Nakamoto's original transaction replacement mechanism described on BitcoinTalk in December 2010 — the same thread where Peter Todd made his second-ever forum post."
+description: "BIP 125 formalized opt-in Replace-by-Fee (RBF), tracing directly to Satoshi's December 2010 BitcoinTalk replacement mechanism — the thread where Peter Todd made his second-ever forum post."
 isSatoshi: false
 tags:
   - "peter-todd"

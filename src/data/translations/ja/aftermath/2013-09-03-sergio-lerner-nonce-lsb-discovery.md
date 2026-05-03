@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ExtraNonce分析から5か月後、ラーナーはサトシのノンス値の最下位バイト（LSB）が非ランダムな分布を示すことを発見 — [0..9]と[19..58]の約50個の値に制限されていた。ExtraNonceとは独立した第二の指紋であり、サトシがノンス空間を分割した独自のマイニングソフトウェアを使用していたことを証明した。"
+description: "ExtraNonce 分析の 5 か月後、ラーナーがサトシのノンス LSB 分布の非ランダム性（256 中約 50 値に限定）を発見。独自マイニングソフトウェアの第二の指紋。"
 isSatoshi: false
 tags:
   - "patoshi"

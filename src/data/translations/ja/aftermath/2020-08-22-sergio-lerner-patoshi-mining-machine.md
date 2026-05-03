@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ラーナーが「The Patoshi Mining Machine」を発表し、再マイニングシミュレーションにより、サトシが50台以上のネットワーク接続されたコンピューターではなく、5つの並列スレッドを持つ単一の高性能CPUでマイニングしていたことを実証。ナンス空間が5つのサブレンジに分割され、各サブレンジ内で順次スキャンされ、78%の高値バイアスが独立したマシンとは整合しないことを証明した。Whale Alertの2020年7月の約48台のコンピューターという主張を直接否定。"
+description: "ラーナー「The Patoshi Mining Machine」 発表。再マイニングシミュレーションで、サトシが 50 台超ではなく 5 並列スレッド単一高性能 CPU でマイニングしたと実証。"
 isSatoshi: false
 tags:
   - "patoshi"

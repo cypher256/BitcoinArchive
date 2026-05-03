@@ -10,7 +10,7 @@ participants:
     slug: "newlibertystandard"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "NewLibertyStandard proposed adopting the Thai baht currency symbol (฿) as Bitcoin's official symbol and 'BTC' as the three-letter currency code. This proposal on BitcoinTalk established the currency notation still used today."
+description: "NewLibertyStandard proposes adopting the Thai baht symbol (฿) as Bitcoin's symbol and BTC as the three-letter code on BitcoinTalk, establishing the notation still in use today."
 isSatoshi: false
 tags:
   - "newlibertystandard"

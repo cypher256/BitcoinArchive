@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "NewLibertyStandardがビットコイン史上初の為替レートを公開：1ドル = 1,309.03 BTC（1BTCあたり0.00764ドル）。レートはビットコインのマイニングに必要な電気代に基づいて計算された — 原始的だが歴史的に重要な、ビットコインに金銭的価値を初めて付与する試み。"
+description: "NewLibertyStandardが初の為替レートを公開：1ドル = 1,309.03 BTC。マイニング電気代から算出した原始的だが歴史的な初の価値付与。"
 isSatoshi: false
 tags:
   - "newlibertystandard"

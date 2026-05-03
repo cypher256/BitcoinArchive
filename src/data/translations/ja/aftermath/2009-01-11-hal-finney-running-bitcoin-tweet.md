@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ビットコインに関する最初の既知のツイート。ハル・フィニーは2009年1月10日（太平洋標準時）/ 1月11日（UTC）に「Running bitcoin」と投稿した。Bitcoin v0.1ソフトウェアが公開されたその日、サトシ以外で初めてビットコインを動かした人物となった。"
+description: "ビットコイン関連で最初に知られるツイート。ハル・フィニーが「Running bitcoin」と投稿。Bitcoin v0.1公開と同日、サトシ以外で初めてビットコインを動かした。"
 isSatoshi: false
 tags:
   - "hal-finney"

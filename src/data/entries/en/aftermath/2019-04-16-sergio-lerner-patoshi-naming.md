@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Six years after his original analysis, Lerner published 'The Return of the Deniers and the Revenge of Patoshi,' coining the term 'Patoshi' (Pattern + Satoshi), updating his estimate to ~22,000 blocks / ~1.1 million BTC, and providing new evidence: zero timestamp inversions between Patoshi blocks versus 224 among non-Patoshi blocks, proving a single PC clock."
+description: "Six years after his original analysis, Lerner published The Return of the Deniers and the Revenge of Patoshi, coining the term Patoshi and proving a single PC clock via timestamp-inversion evidence."
 isSatoshi: false
 tags:
   - "patoshi"

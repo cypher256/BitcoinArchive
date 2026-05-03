@@ -8,7 +8,7 @@ author: "Eugen Leitl"
 participants:
   - name: "Eugen Leitl"
     slug: "eugen-leitl"
-description: "オイゲン・ライトル：2009年10月にbitcoin-listメーリングリストの議論に参加し、サトシ・ナカモトの投稿に返信してDebianパッケージについて質問したドイツの低温生物学者、トランスヒューマニスト、サイファーパンク。"
+description: "ドイツの低温生物学者、トランスヒューマニスト、サイファーパンク。2009年10月のbitcoin-listでサトシに返信、Debianパッケージを尋ねた。"
 isSatoshi: false
 tags:
   - "eugen-leitl"

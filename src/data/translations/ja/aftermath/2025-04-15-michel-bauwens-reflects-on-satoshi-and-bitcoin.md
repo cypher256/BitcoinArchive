@@ -10,7 +10,7 @@ participants:
     slug: "michel-bauwens"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2025年4月のインタビューで、P2P Foundation 創設者のミシェル・バウエンスは、サトシから数回メールを受け取り、P2P Foundation に論文を載せる理由を説明され、さらに数ビットコインを送ると提案されていたと回想した。同時に、企業でも国家でもない主体が生んだ、世界規模でスケール可能な「社会的に主権的な通貨」としてビットコインを評価した。"
+description: "2025 年 4 月、P2P Foundation 創設者ミシェル・バウエンスがサトシから複数メールを受領し数ビットコインを提案された経験と、ビットコイン評価を回顧。"
 isSatoshi: false
 tags:
   - "michel-bauwens"

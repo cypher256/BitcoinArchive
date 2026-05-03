@@ -10,7 +10,7 @@ participants:
     slug: "wei-dai"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Wei Dai's reflections on Satoshi Nakamoto and on why b-money was never implemented, from a LessWrong Q&A thread. Dai stated that Satoshi 'didn't even read my article before reinventing the idea himself,' and later explained that b-money 'wasn't a complete practical design yet' and that he had 'grown somewhat disillusioned with cryptoanarchy' by the time he finished writing it up."
+description: "Wei Dai's LessWrong Q&A reflections: Satoshi did not read the b-money paper before reinventing the idea, and Dai had grown disillusioned with cryptoanarchy by the time he wrote it up."
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -25,6 +25,7 @@ secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Wei Dai"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-wei-dai"
 relatedEntries:
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2008-08-22-wei-dai-biography"

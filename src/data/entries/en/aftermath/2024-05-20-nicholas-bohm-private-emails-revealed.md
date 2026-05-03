@@ -10,7 +10,7 @@ participants:
     slug: "nicholas-bohm"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "The COPA v Wright record revealed that Nicholas Bohm, previously known only for a public January 2009 bitcoin-list bug report, had also exchanged a series of private emails with Satoshi Nakamoto. The exhibits show direct troubleshooting about routing, port forwarding, unaccepted blocks, and network isolation, including Satoshi's remark that there might have been almost nobody else running Bitcoin in July 2009."
+description: "The COPA v Wright record revealed that Nicholas Bohm — previously known only for a January 2009 bitcoin-list bug report — also exchanged a private series of troubleshooting emails with Satoshi."
 isSatoshi: false
 tags:
   - "nicholas-bohm"

@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "NewLibertyStandard：2009年10月5日にマイニングの電力コストに基づく最初の既知のビットコイン-米ドル為替レート（$1 = 1,309.03 BTC）を公開した匿名の人物。マルッティ・マルミとの初の既知のビットコイン-法定通貨取引を行い、BTCティッカーシンボルを提案した。"
+description: "匿名人物。2009年10月5日に電力コストに基づく初のBTC-USDレート（$1 = 1,309.03 BTC）を公開。マルミとの初取引を実施、BTCティッカーを提案。"
 isSatoshi: false
 tags:
   - "newlibertystandard"

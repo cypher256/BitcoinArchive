@@ -8,7 +8,7 @@ author: "Hal Finney"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Hal Finney's essay on LessWrong, written approximately two months after his ALS diagnosis in August 2009. Despite facing a terminal illness, Finney expressed hope and determination, dreaming of contributing to open-source software even from within an immobile body."
+description: "Hal Finney's essay on LessWrong, written ~two months after his ALS diagnosis in August 2009. He expressed hope and determination, dreaming of continuing to contribute to open-source software."
 isSatoshi: false
 tags:
   - "hal-finney"

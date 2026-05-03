@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd announced OpenTimestamps, an open-source infrastructure for creating cryptographic timestamps using the Bitcoin blockchain. The system can timestamp an unlimited number of documents in a single Bitcoin transaction through Merkle tree aggregation, providing free, scalable, trust-minimized proof that data existed at a specific point in time."
+description: "Peter Todd announced OpenTimestamps, an open-source infrastructure using the Bitcoin blockchain to timestamp unlimited documents per transaction via Merkle tree aggregation."
 isSatoshi: false
 tags:
   - "peter-todd"

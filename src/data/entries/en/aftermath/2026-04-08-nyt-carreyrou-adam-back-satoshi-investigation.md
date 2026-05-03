@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "On April 8, 2026, the New York Times published an investigation by Pulitzer Prize-winning reporter John Carreyrou identifying Adam Back as the most likely person behind the Satoshi Nakamoto pseudonym. The investigation, conducted over 18 months in collaboration with NYT AI expert Dylan Freedman, used stylometric analysis of three cypherpunk mailing-list archives covering 1992-2008 and ranked Back as the closest writing-style match to Satoshi among 620 cryptography-mailing-list writers. Independent analysis by linguist Florian Cafiero ranked Back highest among 12 candidates but described the result as inconclusive (Hal Finney nearly tied for top). Back, interviewed by Carreyrou for two hours in El Salvador, denied the identification more than six times and reiterated the denial across multiple post-publication interviews."
+description: "On April 8, 2026, the New York Times published John Carreyrou's investigation naming Adam Back as the most likely Satoshi based on stylometric analysis. Back denied the identification."
 isSatoshi: false
 tags:
   - "adam-back"

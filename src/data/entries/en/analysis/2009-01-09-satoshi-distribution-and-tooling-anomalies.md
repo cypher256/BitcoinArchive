@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An editorial reading of the unusual distribution and development-tooling choices in Bitcoin v0.1: .rar packaging, absence of version control, no test suite or issue tracker, Hungarian-notation variable naming, and OpenSSL dependency. Compares Satoshi's distribution practices with Warez-scene conventions of the era and examines the Kaminsky 2011 security audit alongside subsequent Bitcoin Core developer critiques. The entry distinguishes 'foresighted security architecture' from 'informal development process' as separable observations about Satoshi's working style — neither sufficient on its own to establish identity, both robust as observations about practice."
+description: "Editorial reading of unusual distribution and tooling in Bitcoin v0.1: .rar packaging, no version control, no test suite, Hungarian notation. Compares Warez-scene conventions, Kaminsky 2011."
 isSatoshi: false
 homeOrder: 9
 tags:

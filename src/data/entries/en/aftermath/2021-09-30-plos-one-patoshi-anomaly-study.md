@@ -14,7 +14,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Reykjavik University researchers publish the first peer-reviewed academic study of the Patoshi pattern in PLOS ONE. The paper identifies two distinct nonce anomalies — the 'P anomaly' (extended Patoshi) and the 'Z anomaly' (zerononce) — and crucially finds that the P anomaly appears in ALL of the first 64 blocks mined, including Block 12 which was previously classified as non-Patoshi by ExtraNonce analysis."
+description: "Reykjavik University researchers published the first peer-reviewed PLOS ONE study of the Patoshi pattern, identifying two nonce anomalies (P and Z) and finding the P anomaly in all 64 first blocks."
 isSatoshi: false
 tags:
   - "patoshi"

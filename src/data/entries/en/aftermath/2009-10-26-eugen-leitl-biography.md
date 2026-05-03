@@ -8,7 +8,7 @@ author: "Eugen Leitl"
 participants:
   - name: "Eugen Leitl"
     slug: "eugen-leitl"
-description: "Eugen Leitl: German cryobiologist, transhumanist, and cypherpunk who participated in the bitcoin-list mailing list discussion in October 2009, replying to Satoshi Nakamoto's post about Bitcoin stability and asking about Debian packages."
+description: "German cryobiologist, transhumanist, and cypherpunk who joined the bitcoin-list discussion in October 2009, replying to Satoshi's post about Bitcoin stability and asking about Debian packages."
 isSatoshi: false
 tags:
   - "eugen-leitl"

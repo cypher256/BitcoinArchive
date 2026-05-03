@@ -8,7 +8,7 @@ author: "James A. Donald"
 participants:
   - name: "James A. Donald"
     slug: "james-donald"
-description: "ジェームズ・A・ドナルド：2008年11月2日、暗号学メーリングリストでサトシ・ナカモトのビットコインホワイトペーパーに最初に公に返信した暗号学者・リバタリアン評論家。スケーラビリティに関する技術的懐疑論により、サトシに主要な設計決定を明確に説明させた。"
+description: "暗号学者・リバタリアン評論家。2008年11月2日、暗号学メーリングリストでサトシの論文に最初に返信。スケーラビリティへの懐疑が設計説明を促した。"
 isSatoshi: false
 tags:
   - "james-donald"

@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2013 年 12 月 1 日、匿名ブロガーの Skye Grey が LikeInAMirror.wordpress.com 上に「サトシ・ナカモトは（おそらく）ニック・サボである」 を公開した — ニック・サボがサトシ・ナカモト仮名の中の人として最も可能性が高いと特定する、公的に流通した最初の文体計量調査である。2013 年 12 月 5 日、TechCrunch はジョン・ビッグスによる「真のサトシ・ナカモトとは何者か？ ある研究者が答えを見つけたかもしれない」 で本調査を報じ、本仮説を暗号通貨およびテック報道の広い読者層に紹介した。Skye Grey の記事は、サボの Unenumerated ブログのコーパスとサトシのビットコイン白書との間で、統計的に特徴ある言い回し — 「of course」「preclude」「chain of」 およびその他およそ 70 個の指標 — の共有を整理するとともに、サボの Bit Gold 提案とビットコインの概念的近接を併せ示した。本記事はサボ＝サトシ仮説の基礎参照となり、その後のガーディアン（2014 年 3 月）、Aston University の法言語学的研究（2014 年 4 月）、ナサニエル・ポパーのニューヨーク・タイムズ調査記事および書籍『デジタル・ゴールド』（2015 年 5 月）に引き継がれた。"
+description: "2013 年 12 月 1 日、ブロガー Skye Grey が「サトシは（おそらく）ニック・サボ」 を公開。サボ＝サトシ仮説の最初の公的文体計量研究で、TechCrunch が 5 日報道。"
 isSatoshi: false
 tags:
   - "nick-szabo"

@@ -10,7 +10,7 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "On February 22, 2021, Evan Hatch (founder of the Worlds.org cryptocurrency platform) published 'Len Sassaman and Satoshi: a Cypherpunk history' on Medium. This is the most prominent and most-cited public articulation of the Len Sassaman = Satoshi Nakamoto hypothesis. The piece compiles the case in inferential form — late-night posting timezone alignment with Sassaman's Belgium residence, British-spelling and Euro-referencing patterns, technical overlap (remailer development, P2P networking, PGP cryptography, Byzantine fault problems), Sassaman's Cypherpunk-network embedding (collaboration with Hal Finney, Adam Back, Bram Cohen), the academic-paper formatting of the Bitcoin whitepaper paralleling Sassaman's PhD work at COSIC under David Chaum (2004–2011), and the two-month gap between Satoshi's final May 2011 message and Sassaman's death on July 3, 2011. Hatch frames the piece as speculative — 'I think there is a real possibility that Len was a direct contributor to Bitcoin' — not as a definitive identification. The hypothesis was subsequently amplified by HBO's 2024 Money Electric documentary's promotional cycle and by mainstream press follow-up, but the Hatch 2021 article remains the foundational citation for the Sassaman-as-Satoshi case in subsequent journalism. Sassaman's widow Meredith Patterson has denied the identification."
+description: "On February 22, 2021, Evan Hatch published Len Sassaman and Satoshi: a Cypherpunk history on Medium — the most-cited public articulation of the Sassaman = Satoshi Nakamoto hypothesis."
 isSatoshi: false
 tags:
   - "len-sassaman"

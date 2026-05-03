@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Statistical analysis of Satoshi Nakamoto's Bitcoin source code (v0.1.0–v0.3.19): coding style fingerprint, commit time patterns suggesting EST/CST timezone, code evolution from 19,901 to 31,909 lines over 14 months, and the characteristics of Satoshi's final commits before disappearing."
+description: "Statistical analysis of Satoshi's Bitcoin source (v0.1.0–v0.3.19): coding-style fingerprint, commit times suggesting EST/CST, growth from 19,901 to 31,909 lines over 14 months, final-commit traits."
 isSatoshi: true
 homeOrder: 7
 tags:

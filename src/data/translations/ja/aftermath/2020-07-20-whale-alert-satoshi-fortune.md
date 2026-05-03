@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ブロックチェーン追跡サービスWhale Alertが独立した分析を発表し、サトシが最初の54,316ブロックのうち22,503ブロックで1,125,150 BTCをマイニングしたことを確認。約48台のコンピューター（またはCPUスレッド）を使用したと主張したが、翌月ラーナーの再マイニングシミュレーションにより単一のマルチスレッドPCであることが実証された。サトシが利益ではなくネットワーク保護のためにマイニングしたという核心的結論は、研究コンセンサースと一致している。"
+description: "Whale Alert は、サトシが最初の 54,316 ブロックのうち 22,503 ブロックで 1,125,150 BTC をマイニングしたと確認（48 台説は後にラーナー単一 PC で反証）。"
 isSatoshi: false
 tags:
   - "patoshi"

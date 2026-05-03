@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the recurring public hypothesis that Nick Szabo (computer scientist, legal scholar, creator of Bit Gold and the term 'smart contracts') was the person behind the Satoshi Nakamoto pseudonym. The hypothesis received its first major stylometric articulation in pseudonymous blogger Skye Grey's December 2013 article 'Satoshi Nakamoto is (probably) Nick Szabo' (LikeInAMirror.com), reported by TechCrunch on December 5, 2013, and was reinforced by an April 2014 forensic-linguistic analysis by researchers at Aston University. The entry lays out the supporting arguments — Bit Gold conceptual proximity, stylometric matches, polymath-profile fit covering CS / cryptography / monetary economics / legal scholarship — and the counter-evidence (Szabo's April 2008 public request for help to implement Bit Gold, his May 2011 'Nakamoto improved my design' blog post treating Nakamoto as a separate person, his continuously visible Unenumerated blog activity throughout 2007–2008, his consistent self-denials, and the architectural gap between Bit Gold and Bitcoin v0.1)."
+description: "The hypothesis that Nick Szabo (Bit Gold creator, \"smart contracts\" coiner) was Satoshi. Frame: Skye Grey 2013 stylometric article. Counter: Szabo's 2008 Bit Gold help request and self-denials."
 isSatoshi: false
 tags:
   - "satoshi-identity"

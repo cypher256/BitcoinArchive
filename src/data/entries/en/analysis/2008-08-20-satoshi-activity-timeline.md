@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An interactive D3 timeline of every documented Satoshi Nakamoto event in the Archive — correspondence, mailing-list posts, BitcoinTalk and P2P Foundation forum posts, and SourceForge releases — from the first known email (August 20, 2008) to the disputed 2014 P2P Foundation post. Channels are laid out as horizontal lanes; each dot is one event; hover for the title; click to open the source entry. The chronological surface makes the burst-and-fade rhythm of Satoshi's activity visible in a single view."
+description: "Interactive D3 timeline of every documented Satoshi event — correspondence, mailing lists, BitcoinTalk, P2P Foundation, SourceForge — from August 20, 2008 to the disputed 2014 P2P Foundation post."
 isSatoshi: false
 tags:
   - "satoshi-identity"

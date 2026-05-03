@@ -12,7 +12,7 @@ participants:
     slug: "adam-back"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cypherpunk system (Hashcash), borrows several general-purpose computer-science components (Merkle trees, linked timestamping, probability theory) without inheriting them from any single cited reference, and synthesizes the rest (decentralized consensus, the UTXO model, mining-reward issuance, the 21-million monetary cap, P2P propagation, ECDSA-based transactions, difficulty adjustment) as new design. This entry walks through what Bitcoin actually contains and where each component came from, separating documented contemporaneous use (Hashcash, primary-source-confirmed) from post-hoc citation (b-money, primary-source-confirmed) from general-CS reuse (Merkle, Haber-Stornetta, Feller — undetermined) from novel synthesis (no whitepaper citation possible)."
+description: "Bitcoin v0.1 reuses one cypherpunk primitive (PoW from Hashcash), borrows general CS components (Merkle trees, linked timestamping), and synthesizes the rest (UTXO, mining, 21M cap, P2P, ECDSA)."
 isSatoshi: false
 tags:
   - "bitcoin"
@@ -36,6 +36,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 relatedEntries:
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique

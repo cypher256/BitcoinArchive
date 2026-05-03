@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Blockchain tracking service Whale Alert published an independent analysis confirming Satoshi mined 1,125,150 BTC across 22,503 of the first 54,316 blocks. The report claimed Satoshi used ~48 computers (or CPU threads), though this was disputed one month later by Lerner's re-mining simulation proving a single multi-threaded PC. The report's core finding — that Satoshi mined to protect the network, not for profit — aligns with the broader research consensus."
+description: "Whale Alert independent analysis confirmed Satoshi mined 1,125,150 BTC across 22,503 of the first 54,316 blocks, claiming ~48 computers (later disputed by Lerner's single-PC simulation)."
 isSatoshi: false
 tags:
   - "patoshi"

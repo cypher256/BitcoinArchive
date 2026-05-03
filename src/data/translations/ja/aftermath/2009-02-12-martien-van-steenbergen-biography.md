@@ -8,7 +8,7 @@ author: "Martien van Steenbergen"
 participants:
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "マルティエン・ファン・ステーンベルゲン：P2P Researchメーリングリストでの質問により、サトシ・ナカモトにビットコインの発行上限2,100万枚を初めて公に明言させたオランダ人アジャイルコーチ、AardRock創業者。"
+description: "オランダ人アジャイルコーチ、AardRock創業者。P2P Researchメーリングリストでの質問が、サトシに2,100万枚の発行上限を初めて公に明言させた。"
 isSatoshi: false
 tags:
   - "martien-van-steenbergen"

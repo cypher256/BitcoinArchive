@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Adam Back's December 6, 1998 reply on the Cypherpunks mailing list, identifying seven monetary-design issues in Wei Dai's b-money proposal — Moore's-Law inflation pressure on hardware mint cost, borrowed-resource exploitation, transaction linkability, economy-of-scale custom-hardware advantage, fiat on-ramp privacy leakage, fiat off-ramp identity exposure, and resource-waste overhead. Back proposed Hashcash explicitly as the candidate minting mechanism: 'to create value you burn CPU time, just like with hashcash.' The post is a substantive monetary-system-design analysis ten years before Bitcoin, anticipating issues Bitcoin's difficulty-adjustment algorithm would later resolve and others (mining-ASIC concentration, PoW energy use) that remain live debates."
+description: "Adam Back replies to Wei Dai on Cypherpunks, identifying seven monetary-design issues in b-money and proposing Hashcash as the minting mechanism — a substantive analysis ten years before Bitcoin."
 isSatoshi: false
 tags:
   - "adam-back"

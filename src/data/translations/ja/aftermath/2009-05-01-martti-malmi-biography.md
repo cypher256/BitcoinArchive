@@ -8,7 +8,7 @@ author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルッティ・マルミ（1988年生まれ）：2009年5月にサトシ・ナカモトに連絡を取り、ビットコイン初期の最も多作な貢献者となったフィンランドのソフトウェア開発者。サトシと約260通のメールを交換し、bitcoin.orgの構築、Linuxへの移植、BitcoinTalkフォーラムの作成、そして初の既知のビットコイン-法定通貨取引を行った。"
+description: "フィンランドのソフトウェア開発者（1988-）。サトシと約260通のメールを交換、bitcoin.org構築、Linux移植、初のBTC-法定通貨取引。"
 isSatoshi: false
 tags:
   - "martti-malmi"

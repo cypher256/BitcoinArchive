@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモト：ビットコインホワイトペーパー（2008年10月31日）を執筆し、ビットコインソフトウェアを作成、ジェネシスブロック（2009年1月3日）のパラメーターを定義し、2011年4月に姿を消すまでプロジェクトの初期開発を主導した匿名の個人またはグループ。その正体は不明のままである。"
+description: "ビットコイン論文（2008年10月31日）の執筆者、ソフトウェア作成者、ジェネシスブロックの作成者。2011年4月に姿を消した匿名人物または集団。"
 isSatoshi: true
 tags:
   - "satoshi-nakamoto"

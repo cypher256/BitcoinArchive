@@ -12,7 +12,7 @@ participants:
     slug: "gregory-maxwell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2016年1月15日、Bitcoin Core v0.12 は合意クリティカルな ECDSA 署名検証の実装を OpenSSL から libsecp256k1 に置換した。ピーター・ウィーユとグレゴリー・マクスウェルは約3年かけて Bitcoin 専用の楕円曲線ライブラリーを書き上げた。OpenSSL の署名解析の不整合が予期せぬチェーン分裂を引き起こす可能性があると結論したためである。検証速度は2.5〜5.5倍高速化し、サトシが選定した暗号ライブラリーの一つが置き換えられた。"
+description: "2016 年 1 月 15 日、Bitcoin Core v0.12 が ECDSA 署名検証で OpenSSL を libsecp256k1（ウィーユ・マクスウェル開発）に置換。"
 isSatoshi: false
 tags:
   - "pieter-wuille"

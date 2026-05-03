@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the Peter Todd = Satoshi Nakamoto identity hypothesis, articulated in HBO's 2024 documentary 'Money Electric: The Bitcoin Mystery' (Cullen Hoback, October 8, 2024). The hypothesis rests on a December 2010 BitcoinTalk thread where Todd's reply appeared to complete a partially-edited Satoshi post, the connection between that exchange and Todd's later RBF / BIP 125 work, a notable shift in Todd's writing style across three periods, and a gap in Todd's documented development activity overlapping with Satoshi's active period. The counter-evidence — Todd's age (22 in mid-2007, OCAD University undergraduate, Integrated Media, graduated 2011), no documented cypherpunk-mailing-list presence pre-2012, public self-denial, and broad technical-community critique of the documentary's evidence as circumstantial — is set out at the same level of detail."
+description: "The Peter Todd = Satoshi hypothesis from HBO 2024 \"Money Electric.\" Frame: a Dec 2010 BitcoinTalk thread where Todd seemed to complete a Satoshi post. Counter: Todd was 22 and an undergrad in 2007."
 isSatoshi: false
 tags:
   - "satoshi-identity"

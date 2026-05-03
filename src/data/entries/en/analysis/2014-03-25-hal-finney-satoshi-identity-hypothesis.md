@@ -11,7 +11,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 isSatoshi: false
-description: "Documentation of the recurring public hypothesis that Hal Finney (cypherpunk, PGP 2.0 developer, RPOW author, recipient of the first person-to-person Bitcoin transaction, longtime Temple City resident geographically adjacent to Dorian Nakamoto) was the person behind the Satoshi pseudonym. The most-cited public articulation is Andy Greenberg's March 25, 2014 Forbes feature 'Nakamoto's Neighbor,' which framed the speculation around Finney's geographic proximity to Dorian Nakamoto. The entry lays out the supporting arguments — RPOW authorship, geographic proximity, stylometric near-tie in the 2026 NYT-commissioned analysis, first-transaction recipient status, cypherpunk credentials and English level — and the counter-evidence (the April 18, 2009 race-day alibi documented by Fran Finney's photographs, Finney's 2013 'Bitcoin and Me' first-person framing of Satoshi as a separate person, the Patoshi mining-scale inconsistency with Finney's documented modest Bitcoin holdings, the broader-corpus stylometric reanalysis placing Nick Szabo ahead of Finney, and Finney's wife Fran's consistent denials) at equal detail."
+description: "The hypothesis that Hal Finney — RPOW author and Dorian Nakamoto's Temple City neighbor — was Satoshi. Frame: Greenberg 2014 Forbes \"Nakamoto's Neighbor.\" Counter: April 18, 2009 race-day alibi."
 tags:
   - "satoshi-identity"
   - "hal-finney"
@@ -37,6 +37,7 @@ secondarySources:
     url: "https://nakamotoinstitute.org/finney/rpow/"
 relatedEntries:
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi

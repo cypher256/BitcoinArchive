@@ -12,7 +12,7 @@ participants:
     slug: "ray-dillinger"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "SerHack published an analysis of a pre-release Bitcoin genesis block dated September 10, 2008 — discovered in source code Satoshi shared privately in November 2008. The test block had a completely different hash, trivially easy difficulty, and an initial block reward of 10,000 units. The September 10 date coincides with Lehman Brothers announcing $3.9 billion in losses."
+description: "SerHack analyzed a pre-release Bitcoin genesis block dated September 10, 2008 — found in source code Satoshi shared in November 2008. The date matched Lehman's $3.9B loss report."
 isSatoshi: false
 tags:
   - "genesis-block"

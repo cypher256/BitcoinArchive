@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A descriptive reading of the 'Satoshi Nakamoto' pseudonym against the cyberpunk and techno-orientalist symbolic field of the 1980s-90s. The entry presents structural observations about the symbolic space the name occupies, not claims about authorial intent. A companion entry covers Satoshi's intellectual position relative to the cypherpunk movement."
+description: "Descriptive reading of the \"Satoshi Nakamoto\" pseudonym against the cyberpunk and techno-orientalist symbolic field of the 1980s-90s. Structural observations, not claims about authorial intent."
 isSatoshi: false
 homeOrder: 4
 tags:

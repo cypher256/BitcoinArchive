@@ -11,7 +11,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 isSatoshi: false
-description: "ハル・フィニー（サイファーパンク、PGP 2.0 主要開発者、RPOW 考案者、人類初のビットコイン取引の受領者、ドリアン・ナカモトから数ブロック離れた場所に住んでいたカリフォルニア州テンプル市の長期居住者）がサトシ仮名の主体だったとする、繰り返し公的に提起される仮説の記録。最も多く引用される公的提唱は 2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」。仮説を支える論点（RPOW 著者性、地理的近接、2026 年 NYT 委託カフィエロ分析でのアダム・バックとほぼ同点、最初のビットコイン取引受領、サイファーパンクの資質と英語の水準）と反証（フラン・フィニーの写真で記録された 2009 年 4 月 18 日のレース当日アリバイ、2013 年エッセイ「ビットコインと私」 でフィニーがサトシを別人として記述、フィニーが記録した控えめなビットコイン保有量と Patoshi マイニング規模の不整合、2010 年 8 月の特異点サミット出席と ALS 進行、IP アドレス・コーディングスタイル・英米綴り・OS 環境の構造的不整合、フラン・フィニーの一貫した否定）を同等の詳細で並べる。"
+description: "ハル・フィニー（RPOW 開発、ドリアン・ナカモトの隣人）= サトシ仮説。提唱: グリーンバーグ 2014 Forbes。反証: 2009 年 4 月 18 日レース当日アリバイ。"
 tags:
   - "satoshi-identity"
   - "hal-finney"
@@ -37,6 +37,7 @@ secondarySources:
     url: "https://nakamotoinstitute.org/finney/rpow/"
 relatedEntries:
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi

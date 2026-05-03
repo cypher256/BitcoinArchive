@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "BIP 125はオプトイン方式のReplace-by-Fee（RBF）を正式化し、Bitcoin送信者が未確認トランザクションをより手数料の高いバージョンに置換できることを通知するシグナリングを導入した。この概念はサトシ・ナカモトが2010年12月にBitcoinTalkで説明したオリジナルのトランザクション置換メカニズムに直接遡る——ピーター・トッドがフォーラムで2番目の投稿をしたまさにそのスレッドである。"
+description: "BIP 125 はオプトイン Replace-by-Fee（RBF）を正式化。サトシの 2010 年 12 月 BitcoinTalk 提案を起源とし、トッドのフォーラム 2 件目投稿のスレッド。"
 isSatoshi: false
 tags:
   - "peter-todd"

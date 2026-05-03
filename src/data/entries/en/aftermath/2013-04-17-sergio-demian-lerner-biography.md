@@ -10,7 +10,7 @@ participants:
     slug: "sergio-demian-lerner"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Sergio Demian Lerner: Argentine cryptographer and blockchain researcher who conducted the most significant blockchain forensic analysis in Bitcoin's history — the 'Patoshi' analysis. His work identified a single dominant miner in Bitcoin's earliest blocks, attributed to Satoshi Nakamoto, who accumulated approximately 1.1 million BTC and never spent them."
+description: "Sergio Demian Lerner (1972–): Argentine cryptographer and blockchain researcher whose Patoshi analysis identified Satoshi as a single dominant early miner accumulating ~1.1M BTC, never spent."
 isSatoshi: false
 tags:
   - "sergio-demian-lerner"

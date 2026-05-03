@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Technical analysis of Bitcoin's genesis block from the v0.1 source code: the hardcode auto-construction mechanism, the five-day-gap reinterpreted as a timestamp artifact, a two-layer reading of authorship (epistemic vs ontological — distinguishing anonymization from un-ownership by design), the numerical PoW headroom of the genesis hash as a softer secondary observation, and the separable dimension of private-key possession."
+description: "Technical analysis of Bitcoin's genesis block from v0.1 source: hardcode auto-construction, the five-day gap as timestamp artifact, two-layer authorship reading, PoW headroom, key possession."
 isSatoshi: false
 homeOrder: 6
 tags:

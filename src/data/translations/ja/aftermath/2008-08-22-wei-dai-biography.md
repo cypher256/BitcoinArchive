@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "ウェイ・ダイ：最初期のデジタル通貨提案の一つであるb-money（1998年）と暗号ライブラリCrypto++を作成したコンピューターサイエンティスト・暗号学者。サトシ・ナカモトは2008年8月22日にダイにメールを送り、ビットコインホワイトペーパーではb-moneyを基礎的参考文献として引用している。"
+description: "コンピューター科学者・暗号学者。b-money（1998年）とCrypto++ライブラリを作成。サトシは論文公開前にメールを送った。"
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -39,6 +39,7 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
@@ -47,7 +48,7 @@ translationStatus: complete
 ---
 <!-- tone-skip -->
 
-ウェイ・ダイは、デジタル通貨のb-money提案と暗号ライブラリCrypto++という2つの主要な貢献で知られるコンピューターサイエンティスト・暗号学者である。ワシントン大学でコンピューターサイエンスを学び、Microsoftで働いた。
+ウェイ・ダイは、デジタル通貨のb-money提案と暗号ライブラリCrypto++という2つの主要な貢献で知られるコンピューターサイエンティスト・暗号学者である。ワシントン大学でコンピューターサイエンスを学び、Microsoftで働いた。b-money がビットコインホワイトペーパーの参考文献 [1] として引用されたこと、Crypto++ がビットコイン v0.1 のコードベース依存となっていること、ウェイ・ダイが公開前にサトシが接触した 2 番目の人物だったことから、繰り返しサトシ正体候補となってきた — 詳細は[ウェイ・ダイ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) を参照。主要な自己否定は[2014 年 1 月の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)。
 
 ```mermaid
 timeline

@@ -14,7 +14,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Bitcoin researcher Jameson Lopp publishes a detailed analysis arguing that Hal Finney could not have been Satoshi Nakamoto. Lopp's central evidence is a timing alibi: on April 18, 2009, Finney was running a 10-mile race in Santa Barbara at the same window during which Satoshi was active on the Bitcoin network. Lopp also presents IP-address analysis from early debug logs, coding-style differences, persona inconsistencies, and other corroborating arguments."
+description: "Jameson Lopp argues Hal Finney could not have been Satoshi: on April 18, 2009, Finney was running a 10-mile race in Santa Barbara during a window of Satoshi network activity."
 isSatoshi: false
 tags:
   - "hal-finney"

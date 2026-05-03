@@ -10,7 +10,7 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the recurring public hypothesis that Len Sassaman (cypherpunk cryptographer, died July 3, 2011) was the person behind Satoshi Nakamoto. The entry lays out the timing argument and the cypherpunk-credentials argument the hypothesis depends on, and the counter-evidence (no direct documentary link, no comment by Sassaman's widow on the identity claim, evidence-strength compared with other Satoshi-identity hypotheses) at the same level of detail. The hypothesis is one of the most-discussed Satoshi-identity claims in public discourse."
+description: "The hypothesis that Len Sassaman (cypherpunk cryptographer, died July 3, 2011) was Satoshi. Frame: timing argument and cypherpunk credentials. Counter: no direct documentary link, no widow comment."
 isSatoshi: false
 tags:
   - "satoshi-identity"

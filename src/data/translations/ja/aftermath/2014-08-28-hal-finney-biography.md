@@ -8,7 +8,7 @@ author: "The Santa Barbara Independent"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ハロルド・トーマス・フィニー2世（1956年5月4日 – 2014年8月28日）：Caltechエンジニアリング卒、PGP 2.0の主要開発者の一人、Extropian、クライオニクス支持者、Reusable Proof-of-Work（RPOW）の考案者、サトシ以外でビットコインを初めて稼働させた人物、そして最初のビットコイン送金の受信者。2009年8月にALSと診断された後も車椅子からビットコインへの貢献を続けた。Alcorによりpatient A-1436として冷凍保存。"
+description: "ハロルド・トーマス・フィニー2世（1956–2014）：Caltech 工学卒、PGP 2.0 開発者、Extropian、クライオニクス支持者、RPOW 考案者、ビットコイン最初の受信者。"
 isSatoshi: false
 tags:
   - "hal-finney"

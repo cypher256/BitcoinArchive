@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd proposed BIP 65, introducing the OP_CHECKLOCKTIMEVERIFY opcode that allows Bitcoin transaction outputs to remain unspendable until a specified future time. The proposal redefined the existing NOP2 opcode and was deployed as a soft fork, enabling use cases including escrow with delayed access, two-factor wallets, and payment channels."
+description: "Peter Todd proposed BIP 65, introducing OP_CHECKLOCKTIMEVERIFY — an opcode locking transaction outputs until a future time. Deployed as a soft fork, enabling escrow and payment channels."
 isSatoshi: false
 tags:
   - "peter-todd"

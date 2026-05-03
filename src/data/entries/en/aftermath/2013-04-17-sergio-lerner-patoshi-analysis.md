@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Bitcoin researcher Sergio Demian Lerner published 'The Well Deserved Fortune of Satoshi Nakamoto,' identifying a distinctive mining pattern (later named 'Patoshi') in Bitcoin's earliest blocks. The analysis linked approximately 22,000 blocks (~1.1 million BTC) to a single miner presumed to be Satoshi Nakamoto. Virtually none of these coins have ever been spent."
+description: "Sergio Demian Lerner published The Well Deserved Fortune of Satoshi, identifying a distinctive mining pattern (later named Patoshi) linking ~22,000 blocks (~1.1M BTC) to a single miner."
 isSatoshi: false
 tags:
   - "patoshi"

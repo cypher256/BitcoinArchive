@@ -10,7 +10,7 @@ participants:
     slug: "bill-frantz"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ビル・フランツ：Periwinkle（pwpconsult.com）のセキュリティコンサルタント。2009年1月、暗号学メーリングリストのビットコイン議論に参加し、ボットネットに支配されたマシンが「ネットワーク上で最もセキュアである」という皮肉な観察を行った。"
+description: "Periwinkle のセキュリティコンサルタント。2009年1月の暗号学メーリングリストでビットコインを議論し、ボットネット支配のマシンは最もセキュアと皮肉った。"
 isSatoshi: false
 tags:
   - "bill-frantz"

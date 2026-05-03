@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ビットコイン研究者セルジオ・デミアン・ラーナーが「The Well Deserved Fortune of サトシ・ナカモト」を発表し、ビットコイン最初期のブロックに特徴的なマイニングパターン（後に「Patoshi」と命名）を特定した。約22,000ブロック（~110万BTC）がサトシ・ナカモトと推定される単一のマイナーに紐付けられた。これらのコインは事実上一度も使用されていない。"
+description: "セルジオ・デミアン・ラーナーが初期マイニングパターン（後の Patoshi）を特定し、約 22,000 ブロック（約 110 万 BTC）を単一マイナーに紐付けた。"
 isSatoshi: false
 tags:
   - "patoshi"

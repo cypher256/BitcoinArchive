@@ -10,7 +10,7 @@ participants:
     slug: "martti-malmi"
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "マルッティ・マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した。ビットコインと法定通貨の最初の既知の交換であり、1BTCあたり約0.001ドルの実世界価格が確立された。"
+description: "マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却。初のBTC-法定通貨交換、約0.001ドル/BTCの実世界価格を確立。"
 isSatoshi: false
 tags:
   - "martti-malmi"

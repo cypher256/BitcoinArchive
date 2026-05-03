@@ -8,7 +8,7 @@ author: "Michel Bauwens"
 participants:
   - name: "Michel Bauwens"
     slug: "michel-bauwens"
-description: "Michel Bauwens: Belgian political theorist and founder of the P2P Foundation who engaged with Satoshi Nakamoto on the P2P Research mailing list in February 2009, asking about Bitcoin's operational readiness."
+description: "Belgian political theorist (1958-) and founder of the P2P Foundation, who engaged with Satoshi on the P2P Research list in February 2009, asking about Bitcoin's operational readiness."
 isSatoshi: false
 tags:
   - "michel-bauwens"

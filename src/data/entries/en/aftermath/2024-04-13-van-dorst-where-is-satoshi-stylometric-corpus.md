@@ -8,7 +8,7 @@ author: "Bas van Dorst"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "On April 13, 2024, Bas van Dorst published 'Where is Satoshi?', a large-scale open-source stylometric comparison of Satoshi Nakamoto's writing against more than 75,000 cryptography mailing-list authors and over 70,000 Reddit /r/Bitcoin commenters. The repository is the largest publicly-released numerical-data corpus of Satoshi-vs-candidates stylometric comparison: 500,000+ mailing-list posts (10+ lists, 1992–2000), 7,500,000+ Reddit comments (2005–2019), and 81,500 words of known Satoshi writing (whitepaper, emails, BitcoinTalk posts, code comments). Metrics computed across the full corpus include n-gram analysis (1/2/3-grams), Burrows' Delta, Jaccard similarity, five readability indices (Flesch, Gunning Fog, Dale-Chall, Coleman, SMOG), punctuation patterns, word-length frequency distributions, personal-pronoun usage, hyphenation patterns, and British vs. American spelling variants. The complete numerical results are released as downloadable XLSX (40 MB) and CSV (240 MB) files. The author deliberately refrains from naming a candidate ('Yes, I have a short-list of suspects. No, I'm not going to drop names here because I'm not 100% sure'), prioritizing methodology and data transparency over identification claims. The project is methodologically the most rigorous numerical multi-candidate stylometric resource on Satoshi authorship in the public record."
+description: "On April 13, 2024, Bas van Dorst published Where is Satoshi?, a large-scale stylometric corpus comparing Satoshi against 75,000+ cryptography mailing-list authors and 70,000+ Reddit commenters."
 isSatoshi: false
 tags:
   - "satoshi-identity"

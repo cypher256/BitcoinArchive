@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "公的議論で繰り返し提案される仮説、すなわちアダム・バック（イギリスの暗号学者、Hashcash の発明者、サトシ・ナカモトが最初に接触した既知の人物）がサトシ・ナカモトの仮名の中の人だった、という仮説の記録。本仮説の最も目立つ近年の定式化は、2026 年 4 月のニューヨーク・タイムズによるジョン・カレイロウの調査記事で、サイファーパンクメーリングリスト・アーカイブの文体計量分析に基づく。本エントリーは、支持論点（NYT による文体計量結果、Hashcash の発明者としての関連、サイファーパンクとしての経歴と英語水準）と反証（2008 年 8 月のメール通信そのものが第三者応答として読める構造、バックが 2024 年 2 月の COPA 対ライト裁判で完全な通信記録を宣誓のもと証拠提出した事実、文体計量分析が委託先の言語学者自身により「不確定」 と評された事実、NYT 公開後インタビューでのバックの自己整理）を同じ詳細度で示す。"
+description: "アダム・バック（Hashcash 発明、サトシが最初に接触）= サトシ仮説。提唱: 2026 年 4 月 NYT 文体計量。反証: 2024 年 2 月 COPA 対ライト裁判での宣誓証言。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -42,6 +42,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage

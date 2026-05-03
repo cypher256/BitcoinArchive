@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "In a comment on his Unenumerated blog, Nick Szabo asked for help implementing bit gold — the digital currency concept he had designed in 1998. No one publicly responded. Six months later, Satoshi Nakamoto published the Bitcoin whitepaper."
+description: "On his Unenumerated blog, Nick Szabo asks for help implementing bit gold — his 1998 digital currency design. No one publicly responds. Six months later, Satoshi publishes the Bitcoin whitepaper."
 isSatoshi: false
 tags:
   - "nick-szabo"

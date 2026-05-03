@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ピーター・トッド＝サトシ・ナカモト仮説（HBO の 2024 年ドキュメンタリー『Money Electric: The Bitcoin Mystery』、カレン・ホーバック監督、2024 年 10 月 8 日公開で提唱）の記録。仮説の根拠は、2010 年 12 月の BitcoinTalk スレッドでトッドの返信がサトシの編集中の投稿を補完したように見える点、そのやり取りとトッドが後に手がけた RBF／BIP 125 との接続、3 つの時期にまたがるトッドの文体の顕著な変遷、そしてサトシの活動期間と重なるトッドの開発活動の空白期間。反証 — トッドの年齢（2007 年央に 22 歳、OCAD 大学の学部生、Integrated Media 専攻、2011 年卒）、2012 年以前のサイファーパンクメーリングリスト参加記録の不在、本人による公的否定、ドキュメンタリーの根拠を状況証拠と評する技術コミュニティからの広範な批判 — も同等の詳細度で整理する。"
+description: "ピーター・トッド= サトシ仮説（HBO 2024『Money Electric』）。提唱: 2010 年 12 月 BitcoinTalk のトッド返信。反証: 2007 年に 22 歳学部生。"
 isSatoshi: false
 tags:
   - "satoshi-identity"

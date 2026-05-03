@@ -10,7 +10,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A recollection-based account of Laszlo Hanyecz's correspondence with Satoshi Nakamoto during Bitcoin's early development, anchored on his April 19, 2010 macOS port. The full private email correspondence between Hanyecz and Satoshi has not been publicly released; the quotes here are from Hanyecz's later interview accounts (Bitcoin Magazine, CoinDesk 2025, and others), not from the primary email record. Hanyecz characterized the exchanges as 'mostly weird' and described Satoshi's communication style as 'paranoid,' 'bossy,' and 'a little bit weird.'"
+description: "Hanyecz recalls his Satoshi correspondence around the April 19, 2010 macOS port. The private emails are unreleased; quotes are from later interviews. He called Satoshi paranoid, bossy, and weird."
 isSatoshi: false
 tags:
   - "early-developer"

@@ -8,7 +8,7 @@ author: "Ray Dillinger"
 participants:
   - name: "Ray Dillinger"
     slug: "ray-dillinger"
-description: "レイ・ディリンジャー（オンラインハンドル名「bear」/「cryddit」）：ハル・フィニーとともに、サトシ・ナカモトのビットコインソースコードを公開リリース前にレビューしたコンピューターサイエンティスト。セキュリティ監査に注力し、1MBブロックサイズ制限の起源に貢献したとされる。"
+description: "コンピューター科学者（ハンドル名 bear / cryddit）。ハル・フィニーとともにビットコインのソースコードを公開前にレビュー。1MBブロックサイズ制限に関与。"
 isSatoshi: false
 tags:
   - "ray-dillinger"

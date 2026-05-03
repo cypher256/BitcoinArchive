@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Wei Dai's original announcement of b-money on the Cypherpunks mailing list. Notably, b-money was mentioned as a secondary item alongside PipeNet 1.1 — an anonymous routing protocol that was Dai's primary focus. The b-money proposal that would later inspire Bitcoin was introduced in a single sentence at the end of this post."
+description: "Wei Dai announces b-money on the Cypherpunks list as a secondary item alongside PipeNet 1.1, his primary focus. The proposal later cited in Bitcoin appears in a single sentence at the end of the post."
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -26,6 +26,7 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "analysis/2008-10-31-bitcoin-design-lineage"

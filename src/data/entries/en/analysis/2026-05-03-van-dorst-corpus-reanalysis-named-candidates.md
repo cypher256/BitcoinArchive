@@ -19,7 +19,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 isSatoshi: false
-description: "A Bitcoin Institute reanalysis of Bas van Dorst's open-source 'Where is Satoshi?' stylometric corpus, extracting Burrows' Delta and Jaccard similarity for the five most-cited Satoshi-identity named candidates (Adam Back, Wei Dai, Hal Finney, Nick Szabo, Len Sassaman). Finding: Nick Szabo ranks top among named candidates at the 4.67th percentile of a 12,739-author distribution, consistent with Skye Grey 2013 and Aston 2014. However, 594 unnamed authors rank closer than Szabo, and the corpus' top 20 closest-matched authors are dominated by noise (e-commerce accounts, anonymous remailer output, disposable accounts) — not signal."
+description: "Bitcoin Institute reanalysis of van Dorst's stylometric corpus for the five most-cited candidates. Finding: Szabo top at 4.67th percentile of 12,739 authors; 594 unnamed rank closer; corpus is noisy."
 tags:
   - "satoshi-identity"
   - "stylometric-analysis"
@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry

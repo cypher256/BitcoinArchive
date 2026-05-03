@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "A descriptive reading of the asymmetry between (a) the documented public attempts to identify Satoshi Nakamoto, (b) the surviving material trail Satoshi left behind, and (c) the persistent identification gap. The third pair entry to the identity-hypotheses overview ('who is Satoshi') and the anonymity architecture ('how did Satoshi remain anonymous'); this entry asks the inverse question — given so many public attempts and so much surviving material, why does the gap persist? The entry catalogs only what is observable in the public record. Conjectural inferences (off-record state-actor pursuit, conspiratorial readings) are kept out of the main argument and confined to the limits section."
+description: "Reads the asymmetry between public attempts to identify Satoshi, the surviving material trail, and the persistent identification gap. Pair entry to the identity-hypotheses overview."
 isSatoshi: false
 homeOrder: 3
 tags:

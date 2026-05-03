@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Five months after his initial ExtraNonce analysis, Lerner discovered that Satoshi's nonce values had a highly non-random least significant byte (LSB) distribution — restricted to values [0..9] and [19..58], approximately 50 out of 256 possible values. This second fingerprint, independent of ExtraNonce, proved Satoshi used custom mining software with parallelized nonce space partitioning."
+description: "Five months after his ExtraNonce analysis, Lerner discovered Satoshi's nonce values had a non-random LSB distribution — a second fingerprint of custom mining software with nonce partitioning."
 isSatoshi: false
 tags:
   - "patoshi"

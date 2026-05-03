@@ -12,7 +12,7 @@ participants:
     slug: "hal-finney"
   - name: "Fran Finney"
     slug: "fran-finney"
-description: "CoinDeskがサトシ・ナカモトとハル・フィニーの間の未公開メールを公表した。ハルの未亡人フラン・フィニーを通じてハルのパーソナルコンピューターから入手されたもので、2008年11月のフィニーによるネットワーク拡張性の質問、2009年1月8日のサトシによるv0.1リリース個人通知、サトシが外部接続を受信できないと述べたフォローアップが含まれていた。"
+description: "CoinDesk がサトシとハル・フィニーの未公開メールを公表（フラン経由でハルの PC から入手）。2008 年 11 月の拡張性質問と 2009 年 1 月 8 日の v0.1 通知を含む。"
 isSatoshi: false
 tags:
   - "satoshi-finney-emails"

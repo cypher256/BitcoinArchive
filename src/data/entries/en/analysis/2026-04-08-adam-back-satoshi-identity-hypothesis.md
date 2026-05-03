@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Documentation of the recurring public hypothesis that Adam Back (British cryptographer, inventor of Hashcash, the first known person Satoshi Nakamoto contacted) was the person behind the Satoshi pseudonym. The hypothesis received its most prominent recent articulation in an April 2026 New York Times investigation by John Carreyrou using stylometric analysis of cypherpunk-mailing-list archives. The entry lays out the supporting arguments — the NYT stylometric findings, Hashcash authorship correlation, cypherpunk credentials and English level — and the counter-evidence (the August 2008 email exchange itself reading as third-party reception, Back's February 2024 COPA v Wright testimony submitting his Satoshi correspondence as evidence under oath, the stylometric analysis being internally described as inconclusive, and Back's direct articulation of his own position in the post-NYT interview circuit) at equal detail."
+description: "The hypothesis that Adam Back (Hashcash inventor, first Satoshi contact) was Satoshi. Frame: April 2026 NYT stylometric investigation by Carreyrou. Counter: Back's 2024 COPA v Wright sworn testimony."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -42,6 +42,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - analysis/2008-10-31-bitcoin-design-lineage

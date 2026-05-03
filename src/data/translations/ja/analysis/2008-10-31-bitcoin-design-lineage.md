@@ -12,7 +12,7 @@ participants:
     slug: "adam-back"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "ビットコイン v0.1 は、引用されたサイファーパンクシステム（Hashcash）から 1 つの暗号学的基本要素（プルーフ・オブ・ワーク）を再利用し、複数の汎用コンピューターサイエンス構成要素（マークルツリー、連鎖タイムスタンプ、確率論）を引用文献を経由するか否かを問わず借用し、残りの大半（分散型合意形成、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、P2P 伝播、ECDSA トランザクション、難易度調整）を独自設計として合成している。本エントリーは、ビットコインの実際の中身と各構成要素の由来を構成要素別に整理し、開発中の使用が確定しているもの（Hashcash、一次資料で確認）、後付けでの引用追加が確定しているもの（b-money、一次資料で確認）、汎用 CS 知識の再利用（Merkle・Haber-Stornetta・Feller — 確定不能）、独自合成（引用不能）の 4 区分に分ける。"
+description: "ビットコイン v0.1 は、Hashcash から PoW を再利用、汎用 CS 部品（マークルツリー等）を借用、残り（UTXO、報酬発行、2,100 万上限、P2P、ECDSA）は独自合成。"
 isSatoshi: false
 tags:
   - "bitcoin"
@@ -36,6 +36,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 relatedEntries:
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique

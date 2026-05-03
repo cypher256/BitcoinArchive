@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Wei Dai's comments on the LessWrong post 'Bitcoins are not digital greenbacks,' in which he argued that Bitcoin has 'failed with regard to its monetary policy' due to price volatility, and revealed that he never responded to Satoshi's 2008 email asking for comments — regretting that he 'could have dissuaded him (or them) from the fixed supply of money idea.'"
+description: "Wei Dai LessWrong comments: Bitcoin's monetary policy has failed due to volatility, and he never replied to Satoshi's 2008 review email — regretting he could have dissuaded the fixed-supply choice."
 isSatoshi: false
 tags:
   - "wei-dai"

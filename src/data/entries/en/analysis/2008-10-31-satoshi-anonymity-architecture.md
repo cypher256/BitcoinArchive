@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A structural reading of the layered means by which the pseudonym 'Satoshi Nakamoto' remained unidentified across the development window, the public phase, and the staged withdrawal. The entry organizes observable traces (pseudonym choice, communication channels, linguistic patterns, development environment, genesis-block parameter constants, staged handover) into six layers and asks why no single identity hypothesis simultaneously explains all of them. The pair entry to the identity-hypotheses overview: that entry asks 'who is Satoshi'; this entry asks 'why are the leads dispersed.'"
+description: "Structural reading of how \"Satoshi Nakamoto\" remained unidentified across development, public phase, and withdrawal. Six layers: pseudonym, channels, language, env, genesis constants, handover."
 isSatoshi: false
 homeOrder: 2
 tags:

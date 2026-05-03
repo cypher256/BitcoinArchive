@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "ピーター・トッドがOpenTimestampsを発表。Bitcoinブロックチェーンを利用して暗号タイムスタンプを作成するオープンソースのインフラストラクチャ。マークルツリーの集約により、単一のBitcoinトランザクションで無制限のドキュメントにタイムスタンプを付与でき、特定の時点でデータが存在したことの無料でスケーラブル、トラスト最小化された証明を提供する。"
+description: "ピーター・トッドが OpenTimestamps を発表。Bitcoin ブロックチェーンを利用しマークルツリー集約で文書数無制限の暗号タイムスタンプを生成するインフラ。"
 isSatoshi: false
 tags:
   - "peter-todd"

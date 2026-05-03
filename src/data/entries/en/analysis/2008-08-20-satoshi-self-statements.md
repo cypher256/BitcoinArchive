@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A consolidated inventory of statements in which Satoshi Nakamoto referred to himself, across the public record (August 2008 – April 2011). Five subcategories: identity claims on the P2P Foundation profile, development-process self-disclosures, operational state self-disclosures (including expertise self-assessments), farewell statements, and authenticity-disputed entries. Each row is anchored to a primary source with an explicit verifiability assessment. The entry separates what Satoshi said about himself from what the behavioral record independently shows, and notes where the two converge or diverge. Out of scope: pure business announcements that contain no self-reference."
+description: "Inventory of every Satoshi self-reference in the public record (Aug 2008 – Apr 2011): identity claims, dev disclosures, operational state, farewells, authenticity-disputed. Each row anchored."
 isSatoshi: false
 tags:
   - "satoshi-identity"

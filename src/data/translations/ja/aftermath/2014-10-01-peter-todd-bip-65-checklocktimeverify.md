@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "ピーター・トッドがBIP 65を提案。OP_CHECKLOCKTIMEVERIFYオペコードを導入し、Bitcoinトランザクションの出力を指定された将来の時点まで使用不能にすることを可能にした。既存のNOP2オペコードを再定義し、ソフトフォークとしてデプロイされた。エスクロー、二要素ウォレット、ペイメントチャネルなどのユースケースを実現した。"
+description: "ピーター・トッドが BIP 65（OP_CHECKLOCKTIMEVERIFY）を提案。出力を指定将来時点まで使用不能とする命令を導入し、エスクローやペイメントチャネルを実現。"
 isSatoshi: false
 tags:
   - "peter-todd"

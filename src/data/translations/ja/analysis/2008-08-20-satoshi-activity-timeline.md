@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "アーカイブに収録されたサトシ・ナカモトによる全イベント — メール、メーリングリスト投稿、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリース — を、最古の既知メール（2008 年 8 月 20 日）から 2014 年の議論ありの P2P Foundation 投稿まで、D3 によるインタラクティブなタイムラインで表示する。チャネルを横方向のレーンとして配置、各ドットが 1 イベント、ホバーでタイトル表示、クリックでソースエントリへ。年代順に並べた表面が、サトシの活動の急増と衰退のリズムを 1 つの画面で可視化する。"
+description: "アーカイブ収録のサトシ全イベント（メール、メーリングリスト、BitcoinTalk、SourceForge）を 2008 年 8 月 20 日から 2014 年まで D3 で可視化。"
 isSatoshi: false
 tags:
   - "satoshi-identity"

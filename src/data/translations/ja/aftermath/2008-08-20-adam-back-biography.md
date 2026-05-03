@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "アダム・バック（1970年生まれ）：ビットコインホワイトペーパーで引用されたプルーフ・オブ・ワーク・システムであるHashcash（1997年）を発明した英国の暗号学者・サイファーパンク。2008年8月20日、サトシ・ナカモトがビットコインについて最初に連絡を取った既知の人物となった。2014年にBlockstreamを共同設立。"
+description: "英国の暗号学者・サイファーパンク（1970-）。Hashcash（1997年）を発明。サトシが最初に連絡した人物（2008年8月20日）。2014年Blockstream共同設立。"
 isSatoshi: false
 tags:
   - "adam-back"

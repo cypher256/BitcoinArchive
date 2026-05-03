@@ -8,7 +8,7 @@ author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Martti Malmi (born 1988): Finnish software developer who contacted Satoshi Nakamoto in May 2009 and became Bitcoin's most prolific early contributor. He exchanged approximately 260 emails with Satoshi, set up bitcoin.org, ported Bitcoin to Linux, created the original BitcoinTalk forum, and conducted the first known bitcoin-to-fiat transaction."
+description: "Finnish developer (born 1988); Bitcoin's most prolific early contributor after Satoshi. Exchanged ~260 emails with Satoshi, ran bitcoin.org, ported to Linux, did the first BTC-to-fiat sale."
 isSatoshi: false
 tags:
   - "martti-malmi"

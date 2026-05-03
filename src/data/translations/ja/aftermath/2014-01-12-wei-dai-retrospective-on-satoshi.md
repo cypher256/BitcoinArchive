@@ -10,7 +10,7 @@ participants:
     slug: "wei-dai"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "LessWrongのQ&Aスレッドでのサトシ・ナカモトおよびb-moneyが実装されなかった理由に関するウェイ・ダイの考察。ダイは、サトシが「私の論文を読まずにアイデアを独自に再発明しました」と述べ、さらにb-moneyは「完全な実用的設計ではありませんでした」こと、「書き上げた時点でクリプトアナーキーへの幻滅を感じていました」ことを説明した。"
+description: "LessWrong Q&A でのウェイ・ダイのサトシと b-money に関する考察。サトシは b-money 論文を読まずに同案を再発明、ダイは執筆時にクリプトアナーキーへの幻滅を抱いていた。"
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -25,6 +25,7 @@ secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Wei Dai"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-wei-dai"
 relatedEntries:
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2008-08-22-wei-dai-biography"

@@ -8,7 +8,7 @@ author: "Michael Marquardt"
 participants:
   - name: "Michael Marquardt"
     slug: "michael-marquardt"
-description: "マイケル・マーカート（theymos）：2010年から BitcoinTalk フォーラム管理人、Bitcoin Wiki 管理人、後には r/Bitcoin モデレーター。サトシ・ナカモトは離脱前にフォーラムの管理権を彼に譲渡し、2011年には bitcoin.org/smf から独立ドメイン bitcointalk.org への移行を主導した。"
+description: "BitcoinTalkフォーラム管理人（theymos）、Bitcoin Wiki管理人、後にr/Bitcoinモデレーター。サトシから管理権を継承、2011年の独立移行を主導。"
 isSatoshi: false
 tags:
   - "theymos"

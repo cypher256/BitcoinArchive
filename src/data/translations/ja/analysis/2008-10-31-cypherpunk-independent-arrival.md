@@ -16,7 +16,7 @@ participants:
     slug: "eric-hughes"
   - name: "Timothy May"
     slug: "timothy-may"
-description: "サトシとサイファーパンク運動との関係についての編者による読解。3 つの一次資料による観察を組み合わせる: (1) 18 か月の開発期間中、サトシは b-money を知らなかったという本人自認、(2) サトシはサイファーパンクのコミュニティに「以前から積極的に参加していた人物ではない」というウェイ・ダイの推測、(3) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 項目の思想核との異例に密な整合。仮名そのものの記号論的読解は対になる別エントリで扱う。"
+description: "サトシとサイファーパンクの関係を 3 つの一次資料観察から読む: b-money を知らなかった本人自認、ウェイ・ダイの「以前から積極的でない」 推測、ヒューズ 1993 マニフェストとの密な整合。"
 isSatoshi: false
 homeOrder: 5
 tags:
@@ -35,6 +35,7 @@ secondarySources:
   - name: "Wei Dai — AALWA thread on LessWrong (2014)"
     url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 relatedEntries:
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2008-10-31-bitcoin-design-lineage

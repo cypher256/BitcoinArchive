@@ -10,7 +10,7 @@ participants:
     slug: "jonathan-thornburg"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Jonathan Thornburg: Astrophysicist at Indiana University who posted on the cryptography mailing list on January 17, 2009, raising concerns about government regulation and botnet exploitation of Bitcoin — among the earliest substantive criticisms of the system."
+description: "Astrophysicist at Indiana University who posted on the cryptography list (Jan 17, 2009), raising concerns about government regulation and botnet exploitation — an early substantive Bitcoin critique."
 isSatoshi: false
 tags:
   - "jonathan-thornburg"

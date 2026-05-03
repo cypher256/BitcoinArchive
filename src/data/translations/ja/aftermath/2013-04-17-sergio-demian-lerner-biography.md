@@ -10,7 +10,7 @@ participants:
     slug: "sergio-demian-lerner"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "セルジオ・デミアン・ラーナー：アルゼンチンの暗号学者・ブロックチェーン研究者。ビットコイン史上最も重要なブロックチェーンフォレンジック分析——「Patoshi」分析——を行った。ビットコインの最初期のブロックにおける単一の支配的マイナーを特定し、サトシ・ナカモトに帰属するとされる約110万BTCを蓄積しながら一度も使用しなかったことを証明した。"
+description: "セルジオ・デミアン・ラーナー（1972–）：アルゼンチンの暗号学者・ブロックチェーン研究者。Patoshi 分析で約 110 万 BTC を単一マイナー（サトシ）に紐付けた。"
 isSatoshi: false
 tags:
   - "sergio-demian-lerner"

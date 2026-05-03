@@ -8,7 +8,7 @@ author: "The Santa Barbara Independent"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Harold Thomas Finney II (May 4, 1956 – August 28, 2014): Caltech engineering graduate, one of the principal developers of PGP 2.0, Extropian, cryonics advocate, creator of Reusable Proof-of-Work (RPOW), first person other than Satoshi to run Bitcoin, and recipient of the first Bitcoin transaction. Diagnosed with ALS in August 2009, he continued contributing to Bitcoin from a wheelchair. Cryopreserved by Alcor as patient A-1436."
+description: "Harold Thomas Finney II (1956–2014): Caltech engineer, PGP 2.0 developer, Extropian, cryonics advocate, RPOW creator, first Bitcoin recipient and first person other than Satoshi to run Bitcoin."
 isSatoshi: false
 tags:
   - "hal-finney"

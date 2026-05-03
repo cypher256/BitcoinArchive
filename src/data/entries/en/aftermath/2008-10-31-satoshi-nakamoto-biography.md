@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi Nakamoto: Pseudonymous individual or group who authored the Bitcoin white paper (October 31, 2008), created the Bitcoin software, defined the genesis block parameters (January 3, 2009), and guided the project's early development before disappearing in April 2011. Their true identity remains unknown."
+description: "Pseudonymous individual or group who authored the Bitcoin white paper (October 31, 2008), wrote the software, mined the genesis block, and guided early development before disappearing in April 2011."
 isSatoshi: true
 tags:
   - "satoshi-nakamoto"

@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サイファーパンクメーリングリストにおけるウェイ・ダイのDisperse/Collect 1.0の発表。この投稿は「my own Crypto++ library（自分のCrypto++ライブラリ）」と明示的に言及しており、ダイが理論家ではなく、実際にソフトウェアを作成しリリースしていたプログラマーであったことを確認する。この文脈は、彼が後にb-moneyを実装しなかった理由を理解する上で不可欠だ。"
+description: "サイファーパンクメーリングリストでのDisperse/Collect 1.0発表。自作のCrypto++ライブラリ使用と明記し、ダイが理論家ではなく実装者であったことを示す。"
 isSatoshi: false
 tags:
   - "wei-dai"

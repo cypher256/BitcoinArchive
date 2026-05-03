@@ -14,7 +14,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "レイキャビク大学の研究者がPatoshiパターンに関する最初の査読付き学術論文をPLOS ONEに発表。「P異常」（拡張Patoshi）と「Z異常」（ゼロノンス）の2つの独立したノンス異常を特定し、決定的な発見としてP異常が最初の64ブロック「すべて」に出現することを示した。これにはExtraNonce分析で非Patoshiとされていたブロック 12も含まれる。"
+description: "レイキャビク大学が Patoshi パターンに関する最初の査読論文を PLOS ONE に発表。「P 異常」 と「Z 異常」 を特定し、P 異常が最初の 64 ブロックすべてに出現することを示した。"
 isSatoshi: false
 tags:
   - "patoshi"

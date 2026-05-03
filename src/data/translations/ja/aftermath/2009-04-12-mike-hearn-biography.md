@@ -8,7 +8,7 @@ author: "Mike Hearn"
 participants:
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーン：Google Maps、Google Earth、Gmailのスパム対策システムに従事したソフトウェアエンジニア。ビットコインのホワイトペーパーを読み、2009年4月にサトシ・ナカモトに連絡を取り、最初期の貢献者の一人となった。後にBitcoinJ（最初の主要な代替実装）を開発し、2017年にサトシとのメールのやり取りが公開された。"
+description: "Googleエンジニア（Maps、Earth、Gmailスパム対策）。2009年4月にサトシへ連絡し、初期貢献者となる。BitcoinJを開発、メールは2017年に公開。"
 isSatoshi: false
 tags:
   - "mike-hearn"

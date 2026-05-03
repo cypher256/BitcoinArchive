@@ -15,7 +15,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 isSatoshi: false
-description: "The March 25, 2014 Forbes feature in which Andy Greenberg visited Hal and Fran Finney's home in Temple City, California, examined the geographic-proximity speculation linking Hal Finney to the Newsweek-named Dorian Nakamoto, and was shown by Fran the April 18, 2009 race-day photographs that Greenberg presented as the principal counter-evidence against the Hal Finney = Satoshi hypothesis. The piece is the foundational mainstream-press articulation of the Hal Finney candidacy and the original public publication of the race-day-alibi photographs that Jameson Lopp would later formalize into a structured timestamp argument in 2023."
+description: "March 25, 2014 Forbes feature by Andy Greenberg visiting Hal and Fran Finney in Temple City, examining the Hal-as-Satoshi geographic theory and publishing the April 18, 2009 race-day alibi photos."
 tags:
   - "hal-finney"
   - "satoshi-identity"
