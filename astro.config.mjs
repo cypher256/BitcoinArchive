@@ -32,8 +32,16 @@ export default defineConfig({
     rehypePlugins: [
       rehypeNoAutolinkEmail,
       rehypeKatex,
-      [rehypeMermaid, { strategy: 'inline-svg', errorFallback: undefined }],
+      [rehypeMermaid, { strategy: 'inline-svg' }],
     ],
+    // Tell Shiki to skip 'mermaid' code blocks. Without this, Shiki converts
+    // them to <pre class="astro-code"> with span-wrapped tokens, stripping
+    // the `language-mermaid` class that rehype-mermaid needs to detect.
+    // (Astro 5.5+ default already excludes 'math'; we add 'mermaid'.)
+    syntaxHighlight: {
+      type: 'shiki',
+      excludeLangs: ['math', 'mermaid'],
+    },
   },
   integrations: [sitemap({
     filter: (page) => !page.includes('/search/'),
