@@ -27,8 +27,8 @@ relatedEntries:
 
 Eugen Leitl is a German cryobiologist, computer scientist, and prominent figure in the transhumanist and cypherpunk communities. He was one of the original authors of the Transhumanist Declaration (1998) and has contributed to discussions on anonymity, cryptography, nanotechnology, and brain preservation.
 
-**Interaction with Bitcoin:**
+### Interaction with Bitcoin
 On October 26, 2009, Leitl replied to a thread on the bitcoin-list mailing list titled ["Does Bitcoin Crash in Windows?"](/BitcoinArchive/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/) in which [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had responded to Liberty Standard's report of crashes under Wine. Leitl quoted Satoshi's remark that "bitcoin.sourceforge.net looks fine now" and noted that the site was not working when he checked. He also asked: "Still no .deb packages for Bitcoin?" — highlighting early demand for Linux packaging of the software.
 
-**Significance:**
+### Significance
 Leitl's participation illustrates that Bitcoin was attracting attention from the cypherpunk and transhumanist communities within months of its release. His request for Debian packages reflects the early Linux-oriented user base that was interested in running Bitcoin but lacked convenient installation methods.

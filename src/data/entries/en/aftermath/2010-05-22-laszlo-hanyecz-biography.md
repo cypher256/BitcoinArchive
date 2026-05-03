@@ -40,14 +40,14 @@ relatedEntries:
 
 Laszlo Hanyecz is a software developer based in Jacksonville, Florida, who made several foundational contributions to Bitcoin's early development. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on technical matters and is best known for the first real-world commercial Bitcoin transaction.
 
-**macOS Port:**
+### macOS Port
 In early 2010, Hanyecz [ported the Bitcoin client to macOS](/BitcoinArchive/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/), making the software available on Apple's platform for the first time. He communicated with Satoshi Nakamoto about the port, and their correspondence reveals Satoshi's guidance on cross-platform compatibility and mining architecture.
 
-**GPU Mining Pioneer:**
+### GPU Mining Pioneer
 Hanyecz was the first person known to have successfully used a GPU (graphics processing unit) to mine Bitcoin, dramatically increasing mining efficiency compared to CPU-only mining. He discussed this development directly with Satoshi, who expressed concern about an "arms race" in mining hardware, preferring that mining remain accessible to ordinary computers for as long as possible.
 
-**Bitcoin Pizza Day:**
+### Bitcoin Pizza Day
 On May 18, 2010, Hanyecz [posted on the BitcoinTalk forum](/BitcoinArchive/entries/forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original/) offering 10,000 BTC for two large pizzas. On [May 22, 2010](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/), a user named jercos (Jeremy Sturdivant) accepted the offer, ordering two Papa John's pizzas delivered to Hanyecz's home. This is recognized as the first known real-world commercial transaction using Bitcoin. The date is now celebrated annually as "Bitcoin Pizza Day." At the time, the 10,000 BTC was worth approximately $41; at Bitcoin's peak valuations, the same amount would be worth hundreds of millions of dollars.
 
-**Later Years:**
+### Later Years
 In February 2018, Hanyecz made another symbolic pizza purchase — this time using the Lightning Network, Bitcoin's layer-2 scaling solution. He has stated publicly that he has no regrets about the original pizza transaction, viewing it as an important milestone in demonstrating that Bitcoin could function as a medium of exchange.

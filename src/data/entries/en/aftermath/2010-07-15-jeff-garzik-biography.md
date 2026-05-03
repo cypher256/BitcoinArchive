@@ -40,20 +40,20 @@ relatedEntries:
 
 Jeff Garzik is a software engineer who studied computer science at Georgia Institute of Technology and worked at Red Hat, where he was a significant contributor to the Linux kernel. He discovered Bitcoin in July 2010 and became one of the most prolific early contributors to the project.
 
-**Discovery of Bitcoin:**
+### Discovery of Bitcoin
 Garzik discovered Bitcoin in July 2010 through a [post on Slashdot](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), the popular technology news aggregation site. He quickly began studying the codebase and contributing patches. His Linux kernel development experience gave him a strong foundation for working on Bitcoin's C++ codebase.
 
-**Bitcoin Core Contributions:**
+### Bitcoin Core Contributions
 Garzik became one of the top three most prolific contributors to Bitcoin Core by commit count, alongside [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). He was one of the earliest developers to receive commit access to the Bitcoin repository. His contributions spanned networking, mining, and protocol improvements.
 
-**cpuminer:**
+### cpuminer
 Garzik created cpuminer, a widely-used open-source CPU mining software for Bitcoin. The tool was one of the first standalone mining applications, enabling users to mine without running the full Bitcoin client.
 
-**Interaction with Satoshi:**
+### Interaction with Satoshi
 Garzik interacted with Satoshi Nakamoto on the BitcoinTalk forum and through code contributions during the period when Satoshi was still active. He submitted patches directly to the project and received feedback from Satoshi on protocol design decisions.
 
-**Bitcoin Improvement Proposals:**
+### Bitcoin Improvement Proposals
 Garzik authored multiple Bitcoin Improvement Proposals (BIPs), including BIP 100, which proposed a dynamic block size limit determined by miner voting. His scaling proposals were part of the broader debate about Bitcoin's transaction capacity that became a central issue in the Bitcoin community.
 
-**Later Career:**
+### Later Career
 In 2015, Garzik co-founded Bloq, a blockchain technology company providing enterprise solutions. He continued to be active in the cryptocurrency industry, advocating for pragmatic approaches to Bitcoin's technical evolution.

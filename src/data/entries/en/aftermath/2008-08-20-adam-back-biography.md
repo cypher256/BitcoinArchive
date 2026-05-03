@@ -47,8 +47,6 @@ relatedEntries:
 
 Adam Back (born 1970, United Kingdom) is a cryptographer, cypherpunk, and the inventor of Hashcash. He earned a PhD in computer science from the University of Exeter. He is the first person known to have been contacted by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) about what would become Bitcoin.
 
-**Adam Back's Bitcoin-relevant timeline**
-
 ```mermaid
 timeline
     1997 : Hashcash announced on the cypherpunks mailing list (Mar)
@@ -61,17 +59,17 @@ timeline
     2026 : Named as strongest Satoshi candidate by NYT / Carreyrou; self-denies (Apr)
 ```
 
-**Hashcash (1997):**
+### Hashcash (1997)
 In March 1997, Back proposed Hashcash, a proof-of-work system originally designed to combat email spam and denial-of-service attacks. The system required senders to compute a partial hash collision — a computationally expensive operation — before sending an email, making mass spam economically impractical. Hashcash was not a digital currency or payment system — it was purely a computational cost mechanism. Bitcoin later adopted its proof-of-work concept as the basis for mining and consensus, but the monetary and payment aspects of Bitcoin came from other intellectual lineages, including Wei Dai's b-money and Nick Szabo's bit gold. The [Bitcoin white paper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) cites Hashcash as one of its key references.
 
-**First Contact from Satoshi:**
+### First Contact from Satoshi
 On August 20, 2008, Satoshi Nakamoto [emailed Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/), making him the first known person Satoshi contacted about the ideas that would become Bitcoin. Satoshi referenced Back's Hashcash and asked about related prior work. Back directed Satoshi to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/). Two days later, on August 22, Satoshi [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/). This chain of referrals — from Back to Dai — helped Satoshi connect with the key intellectual precursors to Bitcoin's design. Satoshi's same-day reply to Back — "I wasn't aware of the b-money page" — places Bitcoin's development substantially complete before this referral and serves as a primary-source anchor for [an analysis of where Satoshi stood relative to the cypherpunk movement during development](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
-**Testimony and Email Publication:**
+### Testimony and Email Publication
 Back's email correspondence with Satoshi was published by Bitcoin Magazine, providing important primary source documentation of Bitcoin's earliest conceptual phase. In February 2024, Back [testified in the COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) in London, providing first-hand testimony about his interactions with Satoshi and the timeline of Bitcoin's creation.
 
-**Blockstream:**
+### Blockstream
 In 2014, Back co-founded Blockstream, a blockchain technology company focused on Bitcoin infrastructure. He has served as the company's CEO. Blockstream developed the Liquid Network sidechain and has been involved in satellite-based Bitcoin broadcasting and other Bitcoin infrastructure projects.
 
-**Significance:**
+### Significance
 Back's contribution to Bitcoin was specifically the proof-of-work concept — the idea that computational cost can serve as a scarce, verifiable resource. Hashcash provided this mechanism; the currency design, peer-to-peer payment system, and monetary policy were separate innovations. His position as the first person Satoshi contacted places him at the very beginning of Bitcoin's documented creation history.

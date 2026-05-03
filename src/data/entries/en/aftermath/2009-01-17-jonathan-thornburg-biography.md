@@ -31,7 +31,7 @@ relatedEntries:
 
 Jonathan Thornburg is an astrophysicist at Indiana University. He participated in the cryptography mailing list discussion about Bitcoin in January 2009, shortly after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) released [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).
 
-**Mailing List Criticism:**
+### Mailing List Criticism
 On January 17, 2009, Thornburg [posted a detailed response](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) to Satoshi's email about Bitcoin's potential uses. He raised two fundamental concerns that would echo through Bitcoin's history:
 
 First, government regulation: "In the modern world, no major government wants to allow untracable international financial transactions above some fairly modest size thresholds." He cited the standard regulatory arguments — money laundering, tax evasion, and terrorism financing.
@@ -40,5 +40,5 @@ Second, botnet exploitation: "But if each machine in a million-node botnet sends
 
 He also raised concerns about botnets burning through pay-per-send email filters and botnet operators profiting from Bitcoin mining.
 
-**Significance:**
+### Significance
 Thornburg's criticisms represented the mainstream security community's initial skepticism toward Bitcoin. His concerns about government regulation proved prescient — governments worldwide have since imposed extensive cryptocurrency regulations. His botnet concerns also materialized, as cryptocurrency mining malware became widespread in subsequent years. Satoshi responded to his concerns directly on the mailing list.

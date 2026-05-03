@@ -41,8 +41,6 @@ relatedEntries:
 
 Craig Steven Wright is an Australian computer scientist and businessman, born in October 1970 in Brisbane, Australia.
 
-**Craig Wright's Bitcoin-relevant timeline**
-
 ```mermaid
 timeline
     1970 : Born in Brisbane (Oct)
@@ -56,14 +54,14 @@ timeline
          : Justice Mellor rules industrial-scale forgery; Wright loses (Mar 14)
 ```
 
-**False Claim:**
+### False Claim
 On December 8, 2015, [Wired and Gizmodo simultaneously published investigations](/BitcoinArchive/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/) identifying Wright as the possible creator of Bitcoin. On May 2, 2016, Wright publicly declared himself to be [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) in coordinated interviews with the BBC, The Economist, and GQ magazine. He published a blog post offering what he claimed was cryptographic proof — a digitally signed message using keys associated with early Bitcoin blocks.
 
-**Debunked Proof:**
+### Debunked Proof
 The cryptographic "proof" was quickly debunked by the Bitcoin community. Security researchers demonstrated that Wright had reused an existing signature from a 2009 Bitcoin transaction rather than producing a new signature with the claimed keys. Wright promised further evidence but never delivered. He published a post stating: "I believed that I could put the years of anonymity and hiding behind me. But I can't."
 
-**Whitepaper Lawsuit:**
+### Whitepaper Lawsuit
 In February 2021, Wright [sued](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) the pseudonymous operator of bitcoin.org ([Cobra](/BitcoinArchive/participants/cobra/)) over Bitcoin whitepaper copyright. On June 28, 2021, the court issued a default judgment in Wright's favor — not because the claim had merit, but because Cobra chose to protect his anonymity rather than reveal his identity to defend himself.
 
-**COPA v. Wright (2024):**
+### COPA v. Wright (2024)
 On March 14, 2024, Justice Mellor of the UK High Court delivered a [definitive ruling](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in the case brought by the Crypto Open Patent Alliance (COPA). The court found that Wright is not the author of the Bitcoin whitepaper, is not the person who operated under the pseudonym Satoshi Nakamoto, did not create the Bitcoin system, and did not author the initial versions of the Bitcoin software. The judge found that Wright had engaged in "deliberate and extensive forgery of documents" and was "an extremely dishonest witness."

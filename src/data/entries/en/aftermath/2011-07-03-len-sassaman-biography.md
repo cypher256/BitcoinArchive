@@ -38,8 +38,6 @@ relatedEntries:
 
 Len Sassaman (1980 – July 3, 2011) was an American cryptographer, cypherpunk, and privacy researcher. He is documented in this archive primarily because of two posthumous Bitcoin-related events: [Dan Kaminsky's blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) embedded shortly after his death, and the later [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) that has connected his name to Satoshi Nakamoto in public discourse since 2013.
 
-**Len Sassaman's Bitcoin-relevant timeline**
-
 ```mermaid
 timeline
     1980 : Born in the United States
@@ -54,8 +52,7 @@ timeline
     2021 : Evan Hatch publishes structured Sassaman hypothesis (Feb 22)
 ```
 
-**Cypherpunk and cryptography work:**
-
+### Cypherpunk and cryptography work
 Sassaman was active in the cypherpunk community from his teenage years and contributed to a series of privacy-focused projects spanning roughly a decade and a half:
 
 - **Mixmaster anonymous remailer** — Sassaman became the lead developer and maintainer of Mixmaster, a Type-II anonymous remailer designed to defeat traffic analysis. The project was a continuation of Lance Cottrell's original work and a central artifact of cypherpunk-era anonymity tooling.
@@ -64,16 +61,13 @@ Sassaman was active in the cypherpunk community from his teenage years and contr
 - **CodeCon** — co-founded the conference series with Bram Cohen (BitTorrent), focused on running-code presentations of new privacy and security technology.
 - **KU Leuven COSIC** — at the time of his death, was a PhD candidate at the Computer Security and Industrial Cryptography (COSIC) research group at KU Leuven in Belgium, working on remailer design and cryptographic protocols.
 
-**Marriage:**
-
+### Marriage
 Sassaman was married to the cryptographer and computer scientist Meredith L. Patterson, herself an active researcher in language-theoretic security and parser-related vulnerabilities.
 
-**Death:**
-
+### Death
 Sassaman was reported dead on July 3, 2011, in Belgium. Patterson confirmed in public statements that the death was "unambiguously suicide." He was 31 years old.
 
-**Posthumous Bitcoin connection:**
-
+### Posthumous Bitcoin connection
 The Bitcoin-relevant context for this archive is entirely posthumous:
 
 1. On July 30, 2011, [Dan Kaminsky publicly announced](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) an ASCII-art tribute to Sassaman that he had embedded into the Bitcoin blockchain. The tribute was revealed at Black Hat USA 2011.
