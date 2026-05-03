@@ -545,6 +545,22 @@ In JA `description` fields, use these unified terms:
 - `引用投稿` → **`文脈投稿`**
 - `satoshi がスレッドを開始` → **`サトシ・ナカモトがスレッドを開始`**
 
+### Length cap
+
+JA `description` fields are capped at **100 characters** (counted by
+`String.length`). Rationale and the EN counterpart (200 characters) are
+documented in `STYLE_GUIDE.md § Description Policy` — that section is
+the authoritative source; do not re-derive the rationale here.
+
+Enforced by `scripts/check-description-length.mjs` (WARN by default,
+`--strict` flag fails the build).
+
+When a description currently exceeds the cap, **rewrite to fit**, do
+not relax the cap. If the over-length content carries body-summary
+material, move that material into the body. The description should
+give a search-result reader, SNS preview viewer, or entry-list browser
+just enough to decide whether to open the entry.
+
 ## 3. Terminology Glossary
 
 Japanese translations must use the canonical form for recurring technical

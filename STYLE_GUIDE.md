@@ -370,6 +370,59 @@ override the generic templates where they conflict.
 - See `STYLE_GUIDE_JA.md § II.1 Title Policy` for Japanese-specific
   rules (character budget, katakana names in titles, etc.).
 
+## Description Policy
+
+The frontmatter `description` field has multiple consumers, both
+external and internal. The length cap is set at the intersection of
+the *effective* display windows, not at the strictest theoretical SEO
+sweet spot.
+
+### Where description is consumed
+
+**External (emitted to HTML head, read by external tools and crawlers):**
+
+| Output | Source | Effective display window |
+|---|---|---|
+| `<meta name="description">` | `BaseHead.astro` | Google SERP truncates ~155-160 half-width / ~70-80 full-width chars by pixel. **Note:** Google increasingly auto-generates SERP snippets from body content, so the meta tag is no longer the dominant SERP source. |
+| `<meta property="og:description">` | `BaseHead.astro` | Facebook ~110-200, LinkedIn ~150-200, Slack unfurls show near-full text. |
+| `<meta name="twitter:description">` | `BaseHead.astro` | X `summary_large_image` card: ~200. |
+| JSON-LD `Article.description` | `BaseHead.astro` | Structured data; no display truncation. |
+
+**Internal (rendered as visible UI on the site itself):**
+
+| Output | Source | Truncation |
+|---|---|---|
+| Entry-list card body `.card-description` | `EntryCard.astro` | **None — verbatim, no `-webkit-line-clamp`, no JS truncation.** |
+| Homepage analysis section `.analysis-desc` | `pages/index.astro`, `pages/ja/index.astro` | None. |
+| Participant page biography description | `pages/participants/[participant].astro` | None. |
+
+### Length caps
+
+The dominant practical constraints are (a) social-share preview windows
+(OGP / Twitter Card, ~200 chars) and (b) entry-list card legibility
+(verbatim render, must fit within roughly 1-2 lines on the card).
+Google's strict SERP cap (160/80) is no longer the binding constraint
+because Google auto-generates from body content.
+
+| Language | Cap | Rationale |
+|---|---|---|
+| **EN** | **200 characters** | OGP/Twitter Card display window; ~1-2 lines on entry-list cards. |
+| **JA** | **100 characters** | Same effective visual width as EN 200, accounting for full-width character pixel ratio. |
+
+Counted by `String.length` (each character counts as 1, regardless of
+half-width / full-width). Enforced by
+`scripts/check-description-length.mjs` (WARN by default, `--strict`
+flag fails the build).
+
+### When the cap forces information out of description
+
+If the description currently carries body-summary content that pushes
+it past the cap, **move that content into the body** rather than
+relaxing the cap or splitting into multiple short sentences that lose
+meaning. The description's job is to give a search-result reader (or
+SNS preview viewer, or entry-list browser) enough to decide whether to
+open the entry. Anything beyond that belongs in the body.
+
 ## Related Entries
 
 Entries can declare strong semantic cross-references via the `relatedEntries`
