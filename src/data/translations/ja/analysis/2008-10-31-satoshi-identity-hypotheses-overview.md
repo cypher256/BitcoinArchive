@@ -110,7 +110,7 @@ translationStatus: complete
 |---|---|---|---|---|
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | — | 順位非公開 | 3 位 | **首位** |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 順位非公開 | 4 位 | 順位非公開 |
-| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 順位非公開 | 2 位 | 2 位（僅差） |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | — | 順位非公開 | 2 位 | 2 位 |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | **首位** | **首位** | **首位** | 順位非公開 |
 | [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | — | 候補集合に未収録 | 5 位 | 候補集合に未収録 |
 

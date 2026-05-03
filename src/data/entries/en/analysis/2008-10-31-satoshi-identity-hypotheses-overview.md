@@ -109,7 +109,7 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 |---|---|---|---|---|
 | [Adam Back](/BitcoinArchive/participants/adam-back/) | — | rank not published | 3rd | **top** |
 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | rank not published | 4th | rank not published |
-| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | rank not published | 2nd | 2nd (close) |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | rank not published | 2nd | 2nd |
 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | **top match** | **top match** | **top** | rank not published |
 | [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | — | not in candidate set | 5th | not in candidate set |
 
