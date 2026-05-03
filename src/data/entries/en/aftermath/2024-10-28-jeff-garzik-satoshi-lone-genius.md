@@ -10,7 +10,7 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Early Bitcoin developer Jeff Garzik released a series of videos detailing his time working with Satoshi Nakamoto, describing the creator as a self-taught, solitary genius who never revealed any personal information."
+description: "Early Bitcoin developer Jeff Garzik released videos detailing his time working with Satoshi, describing the creator as a self-taught, solitary genius who never revealed any personal information."
 isSatoshi: false
 tags:
   - "jeff-garzik"

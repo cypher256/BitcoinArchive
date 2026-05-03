@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "オーストラリアの実業家クレイグ・ライトが、BBC、The Economist、GQとの連携インタビューでサトシ・ナカモトを名乗った。ブログで暗号学的な「証明」を提示したが、即座に論破された — 新しい署名を生成するのではなく、2009年のトランザクションの署名を再利用していた。"
+description: "クレイグ・ライトが BBC・Economist・GQ の連携取材でサトシを名乗る。ブログの暗号証明は 2009 年取引署名の再利用だったため即座に論破された。"
 isSatoshi: false
 tags:
   - "craig-wright"

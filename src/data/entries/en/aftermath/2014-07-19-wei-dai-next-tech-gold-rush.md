@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Wei Dai's LessWrong post revealing that Satoshi Nakamoto emailed him personally in early 2009 announcing Bitcoin v0.1, but he ignored it because he 'was more interested in Less Wrong than Cypherpunks at that point.' He later started mining in 2011 after seeing a LW article, turning ~$300 into six figures."
+description: "Wei Dai LessWrong post revealing Satoshi emailed him about Bitcoin v0.1 in early 2009, but Dai ignored it because he was more interested in Less Wrong than Cypherpunks at the time."
 isSatoshi: false
 tags:
   - "wei-dai"

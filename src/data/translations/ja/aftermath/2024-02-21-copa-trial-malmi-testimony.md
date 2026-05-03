@@ -14,7 +14,7 @@ participants:
     slug: "craig-wright"
   - name: "Adam Back"
     slug: "adam-back"
-description: "COPA対クレイグ・ライト裁判の第13日、マルッティ・マルミがビデオリンクで証言し、2009年5月から2011年2月にかけてサトシ・ナカモトと交わした260通のメール（14万語）を提出した。完全なメールアーカイブはGitHubで公開された。"
+description: "COPA 対ライト裁判 13 日目、マルッティ・マルミがビデオ証言し、2009 年 5 月から 2011 年 2 月のサトシとの 260 通メールを提出。GitHub で公開。"
 isSatoshi: false
 tags:
   - "copa-trial"

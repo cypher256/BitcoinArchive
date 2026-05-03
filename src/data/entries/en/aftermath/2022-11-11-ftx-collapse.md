@@ -8,7 +8,7 @@ author: "CNBC"
 participants:
   - name: "Sam Bankman-Fried"
     slug: "sam-bankman-fried"
-description: "FTX, the world's second-largest cryptocurrency exchange, filed for Chapter 11 bankruptcy. Founder Sam Bankman-Fried resigned as CEO. Approximately $8 billion in customer funds had been misappropriated. SBF was later convicted on all seven criminal counts and sentenced to 25 years in prison."
+description: "FTX, the world's second-largest crypto exchange, filed for Chapter 11 bankruptcy. Founder SBF resigned. ~$8B in customer funds had been misappropriated; he was later sentenced to 25 years."
 isSatoshi: false
 tags:
   - "ftx"

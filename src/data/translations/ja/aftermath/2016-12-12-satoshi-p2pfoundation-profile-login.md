@@ -9,7 +9,7 @@ author: "Unknown"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトのP2P Foundationプロフィールに2016年末にログイン活動が確認された。2014年の「私はドリアン・ナカモトではない」という投稿以来、数年ぶりの動きであり、アカウントのセキュリティに関する憶測が再燃した。"
+description: "サトシの P2P Foundation プロフィールに 2016 年末ログイン活動が確認された。2014 年の「私はドリアンではない」 投稿以来の動きで、アカウント乗っ取り憶測が再燃。"
 isSatoshi: false
 tags:
   - "satoshi-nakamoto"

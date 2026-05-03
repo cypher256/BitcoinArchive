@@ -8,7 +8,7 @@ author: "CNBC"
 participants:
   - name: "People's Bank of China"
     slug: "pboc"
-description: "Seven Chinese government regulators jointly banned all ICOs and ordered domestic cryptocurrency exchanges to shut down. China had been the world's largest Bitcoin mining hub and trading market. Bitcoin's price dropped sharply, but miners relocated to other countries and trading shifted to decentralized platforms."
+description: "Seven Chinese government regulators jointly banned all ICOs and ordered domestic crypto exchanges shut. Bitcoin's price fell sharply but miners relocated and trading moved to decentralized platforms."
 isSatoshi: false
 tags:
   - "china-ban"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ラーナー「The Return of the Deniers and the Revenge of Patoshi」 発表。「Patoshi」 を命名し、タイムスタンプ逆転ゼロという新証拠で単一 PC クロックを証明。"
+description: "ラーナー「The Return of the Deniers and the Revenge of Patoshi」 公開。「Patoshi」 を命名しタイムスタンプ逆転ゼロで単一 PC を証明。"
 isSatoshi: false
 tags:
   - "patoshi"

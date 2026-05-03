@@ -14,7 +14,7 @@ participants:
     slug: "craig-wright"
   - name: "Adam Back"
     slug: "adam-back"
-description: "During Day 13 of the COPA v. Craig Wright trial, Martti Malmi testified via video link and submitted 260 emails (140,000 words) exchanged with Satoshi Nakamoto between May 2009 and February 2011. The complete email archive was published on GitHub."
+description: "During Day 13 of COPA v Wright, Martti Malmi testified via video link and submitted 260 emails (140,000 words) exchanged with Satoshi between May 2009 and February 2011, published on GitHub."
 isSatoshi: false
 tags:
   - "copa-trial"

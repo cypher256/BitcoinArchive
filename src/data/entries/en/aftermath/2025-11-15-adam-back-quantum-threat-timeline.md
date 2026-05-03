@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "Blockstream CEO Adam Back stated that Bitcoin faces no quantum computing threat for roughly 20–40 years, pointing to NIST-standardized post-quantum signatures like SLH-DSA that Bitcoin can adopt well before any threat materializes."
+description: "Blockstream CEO Adam Back stated Bitcoin faces no quantum computing threat for ~20–40 years, pointing to NIST post-quantum signatures like SLH-DSA that Bitcoin can adopt before threats materialize."
 isSatoshi: false
 tags:
   - "adam-back"

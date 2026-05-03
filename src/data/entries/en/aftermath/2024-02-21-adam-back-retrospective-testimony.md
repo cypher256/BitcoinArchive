@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Adam Back reflects on his August 2008 email exchange with Satoshi Nakamoto, his regret at not reading the Bitcoin whitepaper carefully, and his testimony during the COPA v. Wright trial where the complete email chain was made public."
+description: "Adam Back reflects on his August 2008 email exchange with Satoshi, his regret at not reading the whitepaper carefully, and his COPA v Wright testimony where the complete chain became public."
 isSatoshi: false
 tags:
   - "adam-back"

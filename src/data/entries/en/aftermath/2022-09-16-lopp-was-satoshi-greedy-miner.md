@@ -12,7 +12,7 @@ participants:
     slug: "jameson-lopp"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Bitcoin researcher Jameson Lopp demonstrates that Satoshi deliberately throttled mining capacity, earning only ~1.1 million BTC when full-capacity mining could have yielded ~2.19 million BTC. Lopp concludes: 'Anyone who claims that Satoshi was greedy simply hasn't done the math.'"
+description: "Jameson Lopp shows Satoshi deliberately throttled mining capacity, earning ~1.1M BTC when full capacity could have yielded ~2.19M BTC. Anyone claiming Satoshi was greedy hasn't done the math."
 isSatoshi: false
 tags:
   - "patoshi"

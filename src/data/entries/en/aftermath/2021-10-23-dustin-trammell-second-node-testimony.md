@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "In a detailed podcast interview, security researcher Dustin Trammell ('Druid') describes his experience as possibly the second node on the Bitcoin network. He recalls seeing only 'one other node' for 4-6 hours after first connecting, not realizing mining was disabled by default, and not starting to mine until 4-5 days later."
+description: "In a podcast interview, security researcher Dustin Trammell (Druid) describes being possibly the second node on the Bitcoin network — seeing only one other node for hours after first connecting."
 isSatoshi: false
 tags:
   - "early-adopter"

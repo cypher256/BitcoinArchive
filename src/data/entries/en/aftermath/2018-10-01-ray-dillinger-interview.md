@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Comprehensive interview with Ray Dillinger by Tim Swanson, marking the 10th anniversary of the Bitcoin whitepaper. Dillinger reveals technical details of his code review, including the famous floating-point discovery and Satoshi's reasoning for using double-precision floats."
+description: "Tim Swanson's comprehensive interview with Ray Dillinger for the Bitcoin whitepaper's 10th anniversary. Dillinger reveals technical details of his code review, including the floating-point discovery."
 isSatoshi: false
 tags:
   - "ray-dillinger"

@@ -8,7 +8,7 @@ author: "Craig Wright"
 participants:
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Craig Steven Wright (born October 1970): Australian computer scientist and businessman who publicly claimed to be Satoshi Nakamoto in May 2016. His claim was definitively rejected by the UK High Court in COPA v. Wright (March 2024), which found he had fabricated evidence on a grand scale."
+description: "Craig Steven Wright (born 1970): Australian computer scientist who publicly claimed to be Satoshi in May 2016. UK High Court (COPA v Wright, March 2024) found he fabricated evidence on a grand scale."
 isSatoshi: false
 tags:
   - "craig-wright"

@@ -10,7 +10,7 @@ participants:
     slug: "cobra"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Cobra (also known as Cøbra): Pseudonymous operator and guardian of bitcoin.org, the website originally registered by Satoshi Nakamoto in 2008. Chose to lose a copyright lawsuit by default rather than reveal his identity — then was vindicated when Craig Wright was ruled not to be Satoshi."
+description: "Cobra (also Cøbra): Pseudonymous operator and guardian of bitcoin.org, the website originally registered by Satoshi in 2008. Chose to lose a copyright suit by default rather than reveal his identity."
 isSatoshi: false
 tags:
   - "cobra"

@@ -8,7 +8,7 @@ author: "Craig Wright"
 participants:
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "クレイグ・スティーブン・ライト（1970年10月生まれ）：2016年5月にサトシ・ナカモトであると公言したオーストラリアのコンピューター科学者・実業家。2024年3月のCOPA対ライト裁判で、英国高等法院は彼の主張を完全に否定し、「大規模な証拠捏造」を認定した。"
+description: "クレイグ・スティーブン・ライト（1970–）：2016 年 5 月にサトシを公言したオーストラリアの計算機科学者。2024 年 3 月 COPA 対ライト裁判で英国高等法院は大規模捏造を認定。"
 isSatoshi: false
 tags:
   - "craig-wright"

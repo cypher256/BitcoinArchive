@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Australian businessman Craig Wright publicly declared himself to be Satoshi Nakamoto in coordinated interviews with BBC, The Economist, and GQ. He provided a cryptographic 'proof' on his blog that was quickly debunked — he had reused a signature from a 2009 transaction rather than producing a new one."
+description: "Craig Wright publicly declared himself Satoshi in BBC, Economist and GQ interviews. His blog cryptographic proof was quickly debunked — he had reused a 2009 transaction signature."
 isSatoshi: false
 tags:
   - "craig-wright"

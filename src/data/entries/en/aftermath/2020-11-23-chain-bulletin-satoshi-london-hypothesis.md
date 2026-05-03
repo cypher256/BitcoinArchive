@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Doncho Karaivanov"
     slug: "doncho-karaivanov"
-description: "Doncho Karaivanov analyzes 742 activity instances across Satoshi's posts, commits, and emails, combined with The Times headline evidence and British spelling conventions, to argue Satoshi was based in London."
+description: "Doncho Karaivanov analyzes 742 activity instances across Satoshi's posts, commits, and emails, plus The Times headline and British spelling, to argue Satoshi was based in London."
 isSatoshi: false
 tags:
   - "satoshi-identity"

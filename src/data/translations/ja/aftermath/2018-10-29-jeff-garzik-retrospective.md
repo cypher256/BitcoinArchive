@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "ビットコインの最初期のコア開発者の一人であるジェフ・ガージックが、サトシ・ナカモトとの直接の交流を振り返る。2010年7月のSlashdot投稿でビットコインを発見し、コードベースへの貢献度で上位3人に入る開発者となった。"
+description: "ビットコイン最初期コア開発者のジェフ・ガージックがサトシとの交流を回顧。2010 年 7 月の Slashdot 投稿でビットコインを発見し、上位 3 貢献者となった。"
 isSatoshi: false
 tags:
   - "jeff-garzik"

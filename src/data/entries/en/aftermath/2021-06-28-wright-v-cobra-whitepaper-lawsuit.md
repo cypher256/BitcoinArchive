@@ -12,7 +12,7 @@ participants:
     slug: "cobra"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Craig Wright sued the pseudonymous operator of bitcoin.org (Cobra) over Bitcoin whitepaper copyright. Cobra refused to reveal his identity to defend himself, resulting in a default judgment on June 28, 2021. The court ordered bitcoin.org to remove the whitepaper."
+description: "Craig Wright sued bitcoin.org operator Cobra over Bitcoin whitepaper copyright. Cobra refused to reveal his identity, resulting in a default judgment ordering bitcoin.org to remove the whitepaper."
 isSatoshi: false
 tags:
   - "craig-wright"

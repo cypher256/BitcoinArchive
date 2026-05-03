@@ -10,7 +10,7 @@ participants:
     slug: "mike-hearn"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Mike Hearn publishes 'The resolution of the Bitcoin experiment,' declaring that Bitcoin has failed due to governance breakdown and the block size stalemate. He announces he has sold all his coins and is leaving the project."
+description: "Mike Hearn published The Resolution of the Bitcoin Experiment, declaring Bitcoin had failed due to governance breakdown and the block-size stalemate. He sold all his coins and left the project."
 isSatoshi: false
 tags:
   - "mike-hearn"

@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Fran Finney"
     slug: "fran-finney"
-description: "Cryonics Magazineが妻フラン・フィニーへのインタビューに基づくハル・フィニーの詳細なプロフィールを掲載。Caltechでの出会い、PGP Corporationでのキャリア、ビットコイン開始時の興奮、ALS診断、そしてAlcorによる冷凍保存について語られた。"
+description: "Cryonics Magazine が妻フラン・フィニーへの取材に基づくハル・フィニーの詳細プロフィールを掲載。Caltech での出会い、PGP 期、ALS 診断、Alcor 冷凍保存を扱う。"
 isSatoshi: false
 tags:
   - "hal-finney"

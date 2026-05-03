@@ -8,7 +8,7 @@ author: "CNBC"
 participants:
   - name: "People's Bank of China"
     slug: "pboc"
-description: "中国の7つの政府規制機関がすべてのICOを共同で禁止し、国内の暗号通貨取引所に閉鎖を命令した。中国は世界最大のビットコインマイニング拠点であり取引市場だった。ビットコイン価格は急落したが、マイナーは他国に移転し、取引は分散型プラットフォームに移行した。"
+description: "中国の 7 規制機関が ICO を共同禁止し国内取引所に閉鎖を命令。ビットコイン価格は急落したが、マイナーは他国に移転、取引は分散型プラットフォームへ移行した。"
 isSatoshi: false
 tags:
   - "china-ban"

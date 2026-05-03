@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Ray Dillinger's retrospective on his role in Bitcoin's earliest days: reviewing the blockchain code, his division of labor with Hal Finney, and his reflections on Satoshi's integrity — 'He wasn't selling coins, he was giving them away for solving hashes.'"
+description: "Ray Dillinger's retrospective on his role in Bitcoin's earliest days: reviewing the blockchain code, his division of labor with Hal Finney, and his reflections on Satoshi's integrity."
 isSatoshi: false
 tags:
   - "ray-dillinger"

@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Fran Finney"
     slug: "fran-finney"
-description: "Cryonics Magazine published an extensive profile of Hal Finney based on interviews with his wife Fran Finney. The profile covered their meeting at Caltech, Hal's career at PGP Corporation, his excitement about Bitcoin's launch, his ALS diagnosis, and his cryopreservation by Alcor."
+description: "Cryonics Magazine published a profile of Hal Finney based on interviews with wife Fran — Caltech, his PGP Corporation career, his Bitcoin excitement, his ALS diagnosis, and Alcor cryopreservation."
 isSatoshi: false
 tags:
   - "hal-finney"

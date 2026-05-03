@@ -10,7 +10,7 @@ participants:
     slug: "mike-hearn"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "マイク・ハーンが「The resolution of the Bitcoin experiment」を公開し、ガバナンスの崩壊とブロックサイズの膠着状態を理由にビットコインは失敗したと宣言。全コインを売却しプロジェクトを離脱した。"
+description: "マイク・ハーンが「The Resolution of the Bitcoin Experiment」 を公開。ガバナンス崩壊とブロックサイズ膠着を理由に失敗を宣言、全コインを売却し離脱。"
 isSatoshi: false
 tags:
   - "mike-hearn"

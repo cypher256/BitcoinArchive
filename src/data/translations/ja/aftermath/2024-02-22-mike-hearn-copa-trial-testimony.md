@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "マイク・ハーンがCOPA対クレイグ・ライト裁判で証言。サトシ・ナカモトとの直接のやり取りを回顧し、2016年のライトとの夕食でチェック質問にすべて不合格だったと述べた。ライトにはサトシのメールに見られた思考の明晰さがなかったと結論付けた。"
+description: "マイク・ハーンが COPA 対ライト裁判で証言。サトシとの直接やり取りを回顧し、2016 年の夕食でライトがチェック質問に不合格だったと述べた。"
 isSatoshi: false
 tags:
   - "mike-hearn"

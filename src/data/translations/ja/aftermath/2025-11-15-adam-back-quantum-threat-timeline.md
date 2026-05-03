@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "Blockstream CEOのアダム・バックは、ビットコインが量子コンピューティングの脅威に直面するのはおよそ20〜40年先であり、NISTが標準化した耐量子署名SLH-DSAを脅威が現実化するはるか前に導入できると述べた。"
+description: "Blockstream CEO アダム・バックが、ビットコインの量子コンピューティング脅威はおよそ 20〜40 年先で、NIST 耐量子署名 SLH-DSA を事前に導入できると述べた。"
 isSatoshi: false
 tags:
   - "adam-back"

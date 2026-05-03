@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Jeff Garzik, one of Bitcoin's earliest core developers, reflects on his experience working directly with Satoshi Nakamoto. He discovered Bitcoin through a Slashdot post in July 2010 and became one of the top three contributors to Bitcoin's codebase."
+description: "Jeff Garzik, one of Bitcoin's earliest core developers, reflects on his work with Satoshi. He discovered Bitcoin via a July 2010 Slashdot post and became one of the top three contributors."
 isSatoshi: false
 tags:
   - "jeff-garzik"

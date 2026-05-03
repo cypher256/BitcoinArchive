@@ -12,7 +12,7 @@ participants:
     slug: "jameson-lopp"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ビットコイン研究者ジェイムソン・ロップが、サトシは意図的にマイニング能力を制限しており、フル稼働なら約219万BTCを得られたところを約110万BTCに留めたことを示した。「サトシが欲張りだったと言う人は、単に計算をしていないだけだ」と結論。"
+description: "ジェイムソン・ロップが、サトシが意図的にマイニング能力を制限し、フル稼働なら約 219 万 BTC のところを約 110 万 BTC に留めたことを示した。"
 isSatoshi: false
 tags:
   - "patoshi"

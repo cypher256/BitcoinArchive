@@ -10,7 +10,7 @@ participants:
     slug: "fran-finney"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Fran Finney: Wife of Hal Finney, the first person other than Satoshi to run Bitcoin. She witnessed Bitcoin's earliest moments firsthand, cared for Hal through his ALS diagnosis, and became the primary keeper of his legacy after his death and cryopreservation in 2014."
+description: "Fran Finney: wife of Hal Finney (the first person other than Satoshi to run Bitcoin). She witnessed Bitcoin's earliest moments, cared for Hal through ALS, and became the keeper of his legacy."
 isSatoshi: false
 tags:
   - "fran-finney"

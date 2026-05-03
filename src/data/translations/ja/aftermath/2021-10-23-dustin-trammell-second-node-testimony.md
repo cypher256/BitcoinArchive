@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "セキュリティ研究者のダスティン・トランメル（「Druid」）が詳細なポッドキャストインタビューで、ビットコインネットワークの2番目のノードであった可能性のある体験を語った。最初の接続時に4〜6時間「1つの他のノード」しか見えなかったこと、マイニングがデフォルトで無効だと気づかなかったこと、マイニングを開始するまで4〜5日かかったことを回想した。"
+description: "セキュリティ研究者ダスティン・トランメル（Druid）が、ビットコインネットワークの 2 番目のノードであった可能性を回想。最初の接続時に他のノードは 1 つだけだった。"
 isSatoshi: false
 tags:
   - "early-adopter"

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "Lerner published The Patoshi Mining Machine, using re-mining simulation to prove Satoshi mined on a single high-end CPU with 5 parallel threads — not 50+ networked computers — refuting the Whale Alert claim."
+description: "Lerner published The Patoshi Mining Machine, using re-mining simulation to prove Satoshi mined on a single high-end CPU with 5 parallel threads — refuting the Whale Alert claim."
 isSatoshi: false
 tags:
   - "patoshi"

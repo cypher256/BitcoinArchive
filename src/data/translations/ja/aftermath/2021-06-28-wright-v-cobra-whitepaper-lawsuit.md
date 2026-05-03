@@ -12,7 +12,7 @@ participants:
     slug: "cobra"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "クレイグ・ライトがbitcoin.orgの匿名運営者（Cobra）をビットコインホワイトペーパーの著作権侵害で訴えた。Cobraは身元を守るため法廷に出頭せず、2021年6月28日に欠席判決が下された。裁判所はbitcoin.orgにホワイトペーパーの削除を命じた。"
+description: "クレイグ・ライトが bitcoin.org の匿名運営者 Cobra を白書著作権侵害で提訴。Cobra は身元を守るため出頭せず欠席判決。裁判所は白書削除を命じた。"
 isSatoshi: false
 tags:
   - "craig-wright"

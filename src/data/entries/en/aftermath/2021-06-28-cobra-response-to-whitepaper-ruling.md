@@ -10,7 +10,7 @@ participants:
     slug: "cobra"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "After the London High Court ordered bitcoin.org to remove the Bitcoin whitepaper, Cobra responded on Twitter with a scathing critique of the legal system and a declaration that cryptographic rules are superior to court-enforced rules."
+description: "After the London High Court ordered bitcoin.org to remove the Bitcoin whitepaper, Cobra responded on Twitter with a critique declaring cryptographic rules superior to court-enforced ones."
 isSatoshi: false
 tags:
   - "cobra"

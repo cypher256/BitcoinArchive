@@ -8,7 +8,7 @@ author: "CNBC"
 participants:
   - name: "Sam Bankman-Fried"
     slug: "sam-bankman-fried"
-description: "世界第2位の暗号通貨取引所FTXが連邦破産法第11章の適用を申請。創業者サム・バンクマン＝フリードはCEOを辞任。約80億ドルの顧客資金が流用されていた。SBFはその後7つの刑事罪すべてで有罪判決を受け、禁固25年の刑を宣告された。"
+description: "世界第 2 位の暗号通貨取引所 FTX が連邦破産法第 11 章を申請。創業者サム・バンクマン＝フリードは辞任し、約 80 億ドルの顧客資金流用が判明。後に禁固 25 年。"
 isSatoshi: false
 tags:
   - "ftx"

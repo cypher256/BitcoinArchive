@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "レイ・ディリンジャーによるビットコイン最初期の回顧録：ブロックチェーンコードのレビュー、ハル・フィニーとの分業、そしてサトシの誠実さへの考察 — 「彼はコインを売っていたのではない。ハッシュを解いた者に与えていたのだ」"
+description: "レイ・ディリンジャーがビットコイン最初期の役割を回顧。ブロックチェーンコードのレビュー、ハル・フィニーとの分業、サトシの誠実さについて語る。"
 isSatoshi: false
 tags:
   - "ray-dillinger"

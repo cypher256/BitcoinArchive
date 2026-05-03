@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "Mike Hearn testifies at the COPA v. Craig Wright trial, recounting his direct interactions with Satoshi Nakamoto and describing how Craig Wright failed his technical 'check questions' at a 2016 dinner. He concludes that Wright lacked the clarity of thought present in Satoshi's emails."
+description: "Mike Hearn testifies at the COPA v Wright trial, recounting his direct interactions with Satoshi and describing how Wright failed his technical check questions at a 2016 dinner."
 isSatoshi: false
 tags:
   - "mike-hearn"
