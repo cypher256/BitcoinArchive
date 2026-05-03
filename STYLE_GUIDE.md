@@ -929,33 +929,62 @@ container fluid behavior and intentionally uses a different breakpoint.
   whitespace is acceptable.
 - Print styles are not addressed.
 
-## Mermaid Diagrams
+## Visual Representation
 
-The archive renders ` ```mermaid ` code blocks to inline SVG at build time
-(`rehype-mermaid` in `astro.config.mjs`). Syntax errors fail the build, so
-no runtime "Syntax error in graph" red boxes can reach production.
+Long entries — biographies, hypothesis pages, multi-source analyses —
+lose readers when they are walls of prose. Default to visual expression
+wherever the content can be carried by something other than running
+sentences. The bias is toward USE, not toward "is text fine here?"
 
-### When to use Mermaid vs. d3 components
+This is a content-shape policy, not a tooling policy. The rest of this
+section is about which tool fits which shape, but the principle stands
+on its own: a long analysis without visual structure is a defect to fix,
+not a stylistic choice to defend. The cost of an extra table or
+diagram is small; the cost of losing a reader halfway through a
+2,000-word page is permanent.
 
-- **Mermaid**: timelines, flowcharts, sequence diagrams, state diagrams,
-  Gantt charts, mindmaps, class/ER diagrams. Editor-friendly: any writer
-  can add a diagram in markdown without touching component code.
-- **d3 Astro components** (under `src/components/`): data visualizations
-  that need actual numbers, custom axes, interactive scales — histograms,
-  scatter plots, network graphs from data, heatmaps. Reserve for cases
-  where Mermaid's templates are insufficient.
+### When to reach for non-text expression
 
-The two are complementary, not competing. A page can use both.
+Trigger a visual representation when the content has any of:
 
-### Validation
+| Content shape | Tool of choice |
+|---|---|
+| Timeline, chronology | Mermaid `timeline` |
+| Flow, decision sequence, process | Mermaid `flowchart` |
+| Comparison across discrete items (≥3) | Markdown table |
+| Numeric distribution, scoring, measurement | d3 component |
+| Relationships between entities | Mermaid `graph` / `classDiagram` |
+| State transitions, sequence of interactions | Mermaid `sequenceDiagram` / `stateDiagram` |
+| Tree / hierarchy | Mermaid `mindmap` |
+
+Prose remains the right tool for argumentation, narrative, nuance, and
+contextual color. The signals that prose has stopped being the right
+tool: writing the same paragraph structure three times in a row (that's
+a table); narrating a chain of dated events in body sentences (that's a
+timeline); listing 5+ candidates with attributes (that's a table or
+chart). When you notice these shapes mid-draft, switch — do not finish
+the prose version "for now."
+
+### Mermaid: editor-friendly diagrams
+
+The archive renders ` ```mermaid ` code blocks to inline SVG at build
+time (`rehype-mermaid` in `astro.config.mjs`). Syntax errors fail the
+build, so no runtime "Syntax error in graph" red boxes reach production.
+
+Use Mermaid for diagrams that fit one of its built-in shapes:
+timelines, flowcharts, sequence diagrams, state diagrams, Gantt charts,
+mindmaps, class/ER diagrams. Any writer can add a Mermaid block in
+markdown without touching component code.
+
+#### Validation
 
 The pipeline `npm run check` includes `check:mermaid`, which extracts
 every ` ```mermaid ` block in the corpus and parses it through
-`@mermaid-js/mermaid-cli`. Failures are reported with file path, line
-number, and the parse error. Run `npm run check:mermaid` directly to
-iterate on a diagram without the full check.
+`@mermaid-js/mermaid-cli`. Failures report file path, line number, and
+parse error. Run `npm run check:mermaid` directly to iterate on a
+diagram without the full check.
 
-### Japanese content gotchas
+#### Japanese content gotchas
 
 Mermaid v10+ handles Unicode well, but a few patterns trip JA editors.
 Quote node labels with `"..."` whenever the label contains anything
@@ -969,7 +998,7 @@ that overlaps Mermaid syntax characters.
 | Tab vs. space indentation mix | Some diagram parsers are whitespace-sensitive | Use 4 spaces consistently; no tabs |
 | Diagram height unexpectedly cut off | Default theme styling | Generally not an editor issue; report if it shows up |
 
-### Authoring example (timeline with mixed JA/EN)
+#### Authoring example (timeline with mixed JA/EN)
 
 ````markdown
 ```mermaid
@@ -983,6 +1012,69 @@ timeline
 ````
 
 Quoting every label is the safe-by-default rule for JA content.
+
+### d3 components: numerical and custom visualizations
+
+When the content needs actual numbers — distributions, axes with units,
+named-candidate annotation, custom interaction — Mermaid's templates
+fall short. Reach for an Astro component under `src/components/` that
+uses d3 instead.
+
+Existing examples (browse the directory for current state):
+
+- `StylometricDistanceHistogram.astro` — author distribution with named
+  candidates plotted in
+- `LoppHashrateAnalysis.astro` — hashrate / nonce-LSB time series
+- `ValueOverflowTimeline.astro` — incident-event time series
+- `SatoshiCodeAnalysis.astro` — comment-density and code-fingerprint
+  metrics
+
+Each component owns its EN/JA labels (a `lang` prop plus an internal
+`labels` map keyed by locale). Render at build time when the data is
+fixed; client-side d3 is acceptable for components that need
+viewport-driven sizing or user interaction.
+
+Component subtitles describe **what the chart means**, not **how the
+chart is laid out**. A line like "labels in the left margin" or
+"legend below" is a layout note for the developer, not the reader —
+the reader can see the layout. Keep the subtitle focused on the
+data and what to look for.
+
+#### Layout width consideration
+
+By default analysis pages use `.container` (800px). If a chart needs
+more horizontal room than ~750px to render legibly, follow the
+[Layout Width Policy](#layout-width-policy) escape hatch
+(`--max-width-hybrid` token, `.container-hybrid` utility) rather than
+widening the reading tier for prose pages.
+
+### Tables: the lowest-cost visual structure
+
+Markdown tables are the cheapest visual tool available — no extra
+dependencies, no build-time renderer, no language pairing concerns.
+Use them freely for any content that compares ≥3 items across ≥2
+attributes. A table is almost always more legible than a paragraph
+that says "X does A, Y does B, Z does C."
+
+Failure modes to avoid:
+
+- **Single-column tables** — that's a list, use bullets.
+- **Single-row tables** — that's a sentence with extra steps.
+- **Tables of free-form prose cells** — if every cell is a paragraph,
+  the table structure is decorative; restructure into headed
+  paragraphs or convert the comparison into a chart.
+
+JA tables follow the same syntactic rules as EN. Mixed-locale rows
+are fine when the comparison is explicitly bilingual (e.g. an English
+term and its JA translation in adjacent cells).
+
+### Combining tools
+
+A single page can use all three. A typical analysis page might open
+with a Mermaid timeline as a TL;DR, embed a d3 distribution chart in
+the methodology section, and use markdown tables in the comparison
+section. The tools are complementary; the choice is per-shape, not
+per-page.
 
 ## Language-Specific Guides
 
