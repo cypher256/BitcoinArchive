@@ -619,6 +619,7 @@ export const tagTranslations: Record<string, string> = {
   'zero-conf': 'ゼロ確認',
   'new-york-times': 'ニューヨーク・タイムズ',
   'stylometric-analysis': '文体計量分析',
+  'race-day-alibi': 'レース日のアリバイ',
   'investigation': '調査',
   'bitcoin': 'ビットコイン',
   'design-lineage': '設計系譜',
