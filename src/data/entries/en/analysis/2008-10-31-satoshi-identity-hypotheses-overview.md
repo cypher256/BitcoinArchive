@@ -1,5 +1,5 @@
 ---
-title: "Who is Satoshi Nakamoto? Ten candidate hypotheses compared"
+title: "Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"

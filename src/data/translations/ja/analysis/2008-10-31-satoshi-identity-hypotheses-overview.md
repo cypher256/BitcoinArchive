@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモトは誰か：正体候補 10 名の比較"
+title: "サトシ・ナカモトは誰か：10人の天才たちと世紀のミステリー"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
