@@ -23,7 +23,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> RPC wikiページを更新して、Bitcoin 0.3.3でのパスワード機能の仕組みを説明した。
+> 皆に質問だ：HTTP Basic認証のやり方を詳しく説明するセクションをwikiページに追加すべきだろうか？ PHPとPythonでは [http://user:pass@host:port/](http://user:pass@host:port/) というURL構文を使うだけで非常に簡単にできる。
 <!-- /tone-skip -->
 
 はい、各開発者が自分で調べなくて済むように、それは本当に良いと思う。Python、PHP、Javaそれぞれでjson-rpcライブラリをインポートしてgetinfoなどを実行する簡単な例が必要だ。HTTP認証部分も含めて。

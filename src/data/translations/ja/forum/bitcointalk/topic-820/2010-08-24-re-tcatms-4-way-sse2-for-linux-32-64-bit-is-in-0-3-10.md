@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 新しいCPUと古いCPUの違いはかなり簡単に説明できる。
+> - AMD K10: 128ビットユニット2つ
 <!-- /tone-skip -->
 
 - Intel Nehalem: 128ビットユニット3つ
