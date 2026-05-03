@@ -11,12 +11,13 @@ const data = await import('../data/derived/van-dorst-burrows-distribution.json')
 const labels = {
   en: {
     title: "Burrows' Delta distribution: Satoshi vs. 12,739 mailing-list authors (van Dorst 2024)",
-    subtitle: "Each bar is the count of mailing-list-active authors (≥10 chunks of writing) in that Burrows' Delta range. Lower delta = closer match to Satoshi's reference profile. The five most-cited Satoshi-identity named candidates are marked. Corpus mean line shown for reference.",
-    yLabel: 'Authors per bin',
-    xLabel: "Burrows' Delta to Satoshi (lower = closer)",
+    subtitle: "Each bar is the count of mailing-list-active authors (≥10 chunks of writing) in that Burrows' Delta range. Lower delta = closer match to Satoshi's reference profile. The most-cited Satoshi-identity named candidates are marked with colored horizontal lines. Corpus mean line shown for reference.",
+    xLabel: 'Authors per bin',
+    yLabel: "Burrows' Delta to Satoshi (lower = closer, top = closest)",
     meanLabel: 'Corpus mean',
     medianLabel: 'Corpus median',
     namedLabel: 'Named candidates',
+    directionLabel: '↑ Closer to Satoshi',
     tooltipBin: 'Bin',
     tooltipCount: 'Authors',
     tooltipBurrow: 'Burrows Δ',
@@ -24,18 +25,26 @@ const labels = {
     tooltipChunks: 'chunks',
     statsLine: 'Corpus: 12,739 authors with ≥10 chunks · mean 0.14456 · σ 0.00027 · range [0.14128, 0.14617]',
     insightHeading: 'What this shows',
-    insight1: 'All five named candidates fall in the upper (left-side) tail of the distribution — closer to Satoshi than the corpus mean.',
+    insight1: 'All named candidates fall in the upper (top-side) tail of the distribution — closer to Satoshi than the corpus mean.',
     insight2: 'Nick Szabo at top 4.67% leads the named-candidate group; Hal Finney (6.89%) and Adam Back (7.87%) follow closely.',
     insight3: 'But 594 authors rank closer than Szabo. Most of those upper-tail authors are noise (e-commerce accounts, anonymous remailers, disposable accounts), not viable candidates — see the §3 noise-tail discussion below.',
+    candidateNames: {
+      'Nick Szabo': 'Nick Szabo',
+      'Hal Finney': 'Hal Finney',
+      'Adam Back': 'Adam Back',
+      'Wei Dai': 'Wei Dai',
+      'Len Sassaman': 'Len Sassaman',
+    } as Record<string, string>,
   },
   ja: {
     title: "Burrows' Delta 分布：サトシ vs メーリングリスト書き手 12,739 名（ヴァン・ドルスト 2024）",
-    subtitle: '各バーは、その Burrows\' Delta 範囲に位置するメーリングリスト活動書き手（10 チャンク以上）の数。Delta が低いほどサトシ参照プロファイルに近い。最も多く引用されるサトシ正体候補 5 名を縦線でマーキング。コーパス平均も参考表示。',
-    yLabel: 'バーごとの著者数',
-    xLabel: "サトシへの Burrows' Delta（低いほど近い）",
+    subtitle: '各バーは、その Burrows\' Delta 範囲に位置するメーリングリスト活動書き手（10 チャンク以上）の数。Delta が低いほどサトシ参照プロファイルに近い。最も多く引用されるサトシ正体候補を色付き水平線で示す。コーパス平均も参考表示。',
+    xLabel: 'バーごとの著者数',
+    yLabel: "サトシへの Burrows' Delta（低いほど近い、上方ほど近い）",
     meanLabel: 'コーパス平均',
     medianLabel: 'コーパス中央値',
     namedLabel: '名指し候補',
+    directionLabel: '↑ サトシに近い',
     tooltipBin: '区間',
     tooltipCount: '著者数',
     tooltipBurrow: 'Burrows Δ',
@@ -43,9 +52,16 @@ const labels = {
     tooltipChunks: 'チャンク',
     statsLine: 'コーパス：10 チャンク以上の著者 12,739 名／平均 0.14456／σ 0.00027／範囲 [0.14128, 0.14617]',
     insightHeading: 'この図が示すもの',
-    insight1: '名指し 5 候補はすべて分布の上位（左側）に位置 — コーパス平均よりサトシに近い。',
+    insight1: '名指し候補はすべて分布の上方（サトシ側）に位置 — コーパス平均よりサトシに近い。',
     insight2: 'ニック・サボが上位 4.67% で名指し集団の首位。ハル・フィニー（6.89%）、アダム・バック（7.87%）が僅差で続く。',
     insight3: 'ただしサボより近い著者が 594 人いる。その上位陣の大半はノイズ（EC アカウント、匿名リメイラー、使い捨てアカウント）であって妥当な候補ではない — §3 のノイズ層議論を参照。',
+    candidateNames: {
+      'Nick Szabo': 'ニック・サボ',
+      'Hal Finney': 'ハル・フィニー',
+      'Adam Back': 'アダム・バック',
+      'Wei Dai': 'ウェイ・ダイ',
+      'Len Sassaman': 'レン・サッサマン',
+    } as Record<string, string>,
   },
 };
 
@@ -70,16 +86,6 @@ const candidateColors: Record<string, string> = {
     <div id="stylometric-hist-chart" class="chart-container" style="width:100%; min-height:400px;"></div>
 
     <p class="stats-line">{l.statsLine}</p>
-
-    <div class="legend">
-      <span class="legend-item"><span class="legend-line legend-mean"></span>{l.meanLabel}</span>
-      {data.namedCandidates.map((c: any) => (
-        <span class="legend-item">
-          <span class="legend-line" style={`background:${candidateColors[c.label] || '#666'};`}></span>
-          <strong>{c.label}</strong> ({c.percentile}%)
-        </span>
-      ))}
-    </div>
 
     <div class="insight">
       <strong>{l.insightHeading}:</strong>
@@ -110,7 +116,20 @@ const candidateColors: Record<string, string> = {
     var data = JSON.parse(dataEl.textContent);
     var bins = data.bins;
     var stats = data.stats;
-    var named = data.namedCandidates;
+    // Dedupe named candidates by label for chart display: when one author has
+    // multiple email accounts in the corpus (e.g. Adam Back: adam@cypherspace
+    // and aba@dcs.ex.ac.uk), the chart shows only the closest-to-Satoshi
+    // account (lowest Burrows Δ). The detailed per-account breakdown lives in
+    // the entry's table — the chart's job is to place the named candidates
+    // visually in the distribution, where one row per author is clearer.
+    var named = (function dedupe(list) {
+      var byLabel = {};
+      list.forEach(function(c) {
+        var prev = byLabel[c.label];
+        if (!prev || c.burrow < prev.burrow) byLabel[c.label] = c;
+      });
+      return Object.keys(byLabel).map(function(k) { return byLabel[k]; });
+    })(data.namedCandidates);
     var colors = data.candidateColors;
     var l = data.labels;
 
@@ -122,8 +141,15 @@ const candidateColors: Record<string, string> = {
       container.innerHTML = '';
       var rect = container.getBoundingClientRect();
       var W = rect.width || 700;
-      var margin = { top: 30, right: 24, bottom: 60, left: 60 };
-      var H = Math.min(440, Math.max(360, W * 0.55));
+      // Horizontal-bar layout: Y axis is Burrows Delta (top = lowest = closest
+      // to Satoshi), X axis is author count. Wide left margin holds candidate
+      // labels; vertical stagger with leader lines bridges the cluster.
+      // Margin left budget:
+      //   ~210px = candidate label area (~150px) + leader line space (~25px)
+      //          + Y-axis tick numbers (~35px). No rotated Y-axis label —
+      //          the description above the chart already explains the axis.
+      var margin = { top: 28, right: 24, bottom: 46, left: 200 };
+      var H = Math.min(640, Math.max(480, W * 0.65));
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
@@ -133,84 +159,143 @@ const candidateColors: Record<string, string> = {
 
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
+      // Y domain zoomed to mean ± 2.5σ — outside that range bins are nearly
+      // empty (the corpus tails extend to ~12σ on the low side from outliers
+      // but contain almost no authors). Top of chart = lowest delta = closest
+      // to Satoshi. Named candidates span 0.14405-0.14428 (mean − 1.9σ to
+      // mean − 1.0σ), all comfortably inside the zoomed range.
+      var yMin = stats.mean - 2.5 * stats.stdev;
+      var yMax = stats.mean + 2.5 * stats.stdev;
+      var y = d3.scaleLinear()
+        .domain([yMin, yMax])
+        .range([0, h]);
+
+      // Filter out bins whose Δ range falls entirely outside [yMin, yMax].
+      // Without this, far-tail bins still render but get clipped to y < 0 or
+      // y > h, leaving stray slivers that visually collide with the X axis.
+      var visibleBins = bins.filter(function(b) {
+        return b.x1 > yMin && b.x0 < yMax;
+      });
+
+      var maxCount = d3.max(visibleBins, function(b) { return b.count; });
       var x = d3.scaleLinear()
-        .domain([stats.min, stats.max])
+        .domain([0, maxCount * 1.1])
         .range([0, w]);
 
-      var maxCount = d3.max(bins, function(b) { return b.count; });
-      var y = d3.scaleLinear()
-        .domain([0, maxCount * 1.1])
-        .range([h, 0]);
-
-      // Bars
+      // Horizontal bars: each bin is a rect spanning from x=0 to x(count),
+      // vertically positioned at y(bin.x0)..y(bin.x1). Clamp the bin's Δ
+      // edges to [yMin, yMax] so bins straddling the visible boundary stop
+      // exactly at the chart edge instead of leaking into the X-axis area.
       g.selectAll('.bar')
-        .data(bins)
+        .data(visibleBins)
         .enter().append('rect')
         .attr('class', 'bar')
-        .attr('x', function(d) { return x(d.x0); })
-        .attr('y', function(d) { return y(d.count); })
-        .attr('width', function(d) { return Math.max(0, x(d.x1) - x(d.x0) - 1); })
-        .attr('height', function(d) { return h - y(d.count); })
+        .attr('x', 0)
+        .attr('y', function(d) { return y(Math.max(yMin, d.x0)); })
+        .attr('width', function(d) { return x(d.count); })
+        .attr('height', function(d) {
+          var top = y(Math.max(yMin, d.x0));
+          var bot = y(Math.min(yMax, d.x1));
+          return Math.max(0, bot - top - 1);
+        })
         .attr('fill', '#94a3b8')
         .attr('opacity', 0.7);
 
-      // Mean line
+      // Direction annotation in the top-left margin: "↑ Closer to Satoshi".
+      // Sits just above the chart in the top margin so it doesn't overlap the
+      // first bar. Positioned at x=2 (chart left edge) so it reads alongside
+      // the Y axis. It tells the reader at a glance that "up = closer to
+      // Satoshi", which the bar layout alone doesn't convey.
+      g.append('text')
+        .attr('x', 2).attr('y', -10)
+        .attr('text-anchor', 'start').attr('fill', '#475569').attr('font-size', '11px')
+        .attr('font-weight', '600')
+        .text(l.directionLabel);
+
+      // Corpus mean: horizontal dashed line spanning the whole chart width.
+      var meanY = y(stats.mean);
       g.append('line')
-        .attr('x1', x(stats.mean)).attr('x2', x(stats.mean))
-        .attr('y1', 0).attr('y2', h)
+        .attr('y1', meanY).attr('y2', meanY)
+        .attr('x1', 0).attr('x2', w)
         .attr('stroke', '#475569').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
 
       g.append('text')
-        .attr('x', x(stats.mean)).attr('y', -8)
-        .attr('text-anchor', 'middle')
-        .attr('fill', '#475569').attr('font-size', '11px')
+        .attr('x', w - 4).attr('y', meanY - 4)
+        .attr('text-anchor', 'end').attr('fill', '#475569').attr('font-size', '11px')
         .text(l.meanLabel + ' ' + stats.mean.toFixed(5));
 
-      // Named candidate vertical lines + labels
-      named.forEach(function(c, i) {
-        var color = colors[c.label] || '#666';
-        var cx = x(c.burrow);
-        g.append('line')
-          .attr('x1', cx).attr('x2', cx)
-          .attr('y1', 0).attr('y2', h)
-          .attr('stroke', color).attr('stroke-width', 2);
+      // Named candidate horizontal lines.
+      // For label placement, sort candidates by Y position, then evenly
+      // distribute label slots around the cluster center to avoid overlap.
+      // Each label shows: name + percentile. A leader line connects from the
+      // candidate's actual Y on chart to the staggered label Y in the left
+      // margin.
+      var sorted = named.slice().sort(function(a, b) { return a.burrow - b.burrow; });
+      var minLabelGap = 22;
+      var clusterCenterY = sorted.reduce(function(s, c) { return s + y(c.burrow); }, 0) / sorted.length;
+      var totalSpan = (sorted.length - 1) * minLabelGap;
+      var firstLabelY = clusterCenterY - totalSpan / 2;
+      // Clamp into chart vertical area
+      if (firstLabelY < 8) firstLabelY = 8;
+      if (firstLabelY + totalSpan > h - 8) firstLabelY = h - 8 - totalSpan;
 
-        // Triangle marker at top
-        g.append('path')
-          .attr('d', 'M' + cx + ',0 L' + (cx - 5) + ',-7 L' + (cx + 5) + ',-7 Z')
-          .attr('fill', color);
-
-        // Label staggered to avoid overlap
-        var labelY = h + 28 + (i % 3) * 13;
-        g.append('text')
-          .attr('x', cx).attr('y', labelY)
-          .attr('text-anchor', 'middle')
-          .attr('fill', color).attr('font-size', '10px').attr('font-weight', 'bold')
-          .text(c.label + ' (' + c.percentile + '%)');
+      sorted.forEach(function(c, i) {
+        c._cy = y(c.burrow);
+        c._labelY = firstLabelY + i * minLabelGap;
       });
+
+      // Candidate horizontal lines (drawn first, behind labels).
+      sorted.forEach(function(c) {
+        var color = colors[c.label] || '#666';
+        g.append('line')
+          .attr('y1', c._cy).attr('y2', c._cy)
+          .attr('x1', 0).attr('x2', w)
+          .attr('stroke', color).attr('stroke-width', 1.5)
+          .attr('opacity', 0.7);
+
+        // Triangle marker pointing right, at left edge of plot area
+        g.append('path')
+          .attr('d', 'M0,' + c._cy + ' L-7,' + (c._cy - 5) + ' L-7,' + (c._cy + 5) + ' Z')
+          .attr('fill', color);
+      });
+
+      // Labels in left margin. No leader lines — each candidate's horizontal
+      // line on the chart is drawn in the candidate's color, and the label
+      // text uses the same color, so the reader matches by color directly.
+      // Labels are RIGHT-aligned (text-anchor='end') so all label right edges
+      // line up neatly near labelRightX. labelRightX is placed left of the
+      // Y-axis tick numbers (which sit at x ≈ -9 with text-anchor='end',
+      // extending leftward to roughly x=-45) so the two layers don't overlap.
+      var labelRightX = -52;
+      sorted.forEach(function(c) {
+        var color = colors[c.label] || '#666';
+        var displayName = (l.candidateNames && l.candidateNames[c.label]) || c.label;
+        var labelText = displayName + ' (' + c.percentile + '%)';
+
+        g.append('text')
+          .attr('x', labelRightX).attr('y', c._labelY)
+          .attr('text-anchor', 'end')
+          .attr('fill', color).attr('font-size', '11px').attr('font-weight', '600')
+          .text(labelText);
+      });
+
+      // Y axis (tick numbers only, no rotated axis label — the chart
+      // description above explains the axis).
+      g.append('g').attr('class', 'axis y')
+        .call(d3.axisLeft(y).ticks(6).tickFormat(function(d) { return d.toFixed(4); }));
 
       // X axis
       g.append('g').attr('class', 'axis x')
         .attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(8).tickFormat(function(d) { return d.toFixed(4); }));
+        .call(d3.axisBottom(x).ticks(6));
 
       // X label
       svg.append('text')
-        .attr('x', margin.left + w / 2).attr('y', H - 5)
+        .attr('x', margin.left + w / 2).attr('y', H - 8)
         .attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#475569')
         .text(l.xLabel);
 
-      // Y axis
-      g.append('g').attr('class', 'axis y').call(d3.axisLeft(y).ticks(6));
-
-      // Y label
-      svg.append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('x', -(margin.top + h / 2)).attr('y', 16)
-        .attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#475569')
-        .text(l.yLabel);
-
-      // Tooltip
+      // Tooltip on bars (still useful for hovering specific bins)
       var tooltip = d3.select(container).append('div')
         .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
         .style('background', 'rgba(0,0,0,0.88)').style('color', '#fff')
