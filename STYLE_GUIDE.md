@@ -1030,14 +1030,18 @@ that overlaps Mermaid syntax characters.
 ```mermaid
 timeline
     title 文体計量研究の系譜
-    2013 : "Skye Grey (LikeInAMirror) — Szabo を首位"
-    2014 : "アストン大学 Project Bitcoin — Szabo を首位 (11 候補)"
-    2024 : "ヴァン・ドルスト Where is Satoshi? — 公表上は指名なし"
-    2026 : "カフィエロ／カレイロウ NYT — Adam Back を首位"
+    2013 : Skye Grey (LikeInAMirror) — Szabo を首位
+    2014 : アストン大学 Project Bitcoin — Szabo を首位 (11 候補)
+    2024 : ヴァン・ドルスト Where is Satoshi? — 公表上は指名なし
+    2026 : カフィエロ／カレイロウ NYT — Adam Back を首位
 ```
 ````
 
-Quoting every label is the safe-by-default rule for JA content.
+In `flowchart`, node labels with brackets/parens/colons must be quoted
+(`node["..."]`) because those characters are flowchart syntax. In
+`timeline`, the event text after `:` is plain text — quoting it
+displays the quotes literally inside the rendered card. Avoid
+quoting timeline events; use the syntax above.
 
 ### d3 components: numerical and custom visualizations
 

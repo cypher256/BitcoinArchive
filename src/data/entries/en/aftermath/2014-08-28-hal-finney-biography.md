@@ -61,19 +61,19 @@ Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and gr
 ```mermaid
 timeline
     title Hal Finney's life and Bitcoin involvement
-    1956-05 : "Born in Coalinga, California"
-    1979 : "BS Engineering, Caltech (Arcadia HS valedictorian 1974)"
-    1991 : "Joins Pretty Good Privacy (PGP) project as volunteer"
-    1992 : "Signs Alcor cryonics membership with wife Fran"
-    1996 : "Hired at PGP Inc., one of the first employees"
-    2004 : "Creates Reusable Proof-of-Work (RPOW)"
-    2009-01 : "Downloads Bitcoin v0.1 on release day, first non-Satoshi node"
-            : "Tweets 'Running bitcoin' (Jan 11)"
-            : "Receives 10 BTC from Satoshi in Block 170 - first P2P transaction (Jan 12)"
-    2009-08 : "Diagnosed with ALS"
-    2011 : "Retires from PGP Corporation (Symantec)"
-    2013-03 : "Publishes 'Bitcoin and Me' on BitcoinTalk"
-    2014-08 : "Dies; cryopreserved by Alcor as 128th patient (A-1436)"
+    1956-05 : Born in Coalinga, California
+    1979 : BS Engineering, Caltech (Arcadia HS valedictorian 1974)
+    1991 : Joins Pretty Good Privacy (PGP) project as volunteer
+    1992 : Signs Alcor cryonics membership with wife Fran
+    1996 : Hired at PGP Inc., one of the first employees
+    2004 : Creates Reusable Proof-of-Work (RPOW)
+    2009-01 : Downloads Bitcoin v0.1 on release day, first non-Satoshi node
+            : Tweets 'Running bitcoin' (Jan 11)
+            : Receives 10 BTC from Satoshi in Block 170 - first P2P transaction (Jan 12)
+    2009-08 : Diagnosed with ALS
+    2011 : Retires from PGP Corporation (Symantec)
+    2013-03 : Publishes 'Bitcoin and Me' on BitcoinTalk
+    2014-08 : Dies; cryopreserved by Alcor as 128th patient (A-1436)
 ```
 
 **Cryptography and PGP:**

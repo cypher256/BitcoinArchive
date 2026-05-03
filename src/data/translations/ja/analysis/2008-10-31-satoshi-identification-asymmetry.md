@@ -100,28 +100,28 @@ translationStatus: complete
 ```mermaid
 timeline
     title 公開された試行と記録された関心 (2010-2026)
-    2010 : "WikiLeaks 圧力経路の開始 (国家)"
-    2011 : "アンドレセンが CIA / In-Q-Tel でビットコインを発表 (国家)"
-    2013 : "ラーナー — Patoshi マイニングパターン (技術)"
-         : "FBI — Silk Road 押収 (国家)"
-         : "Skye Grey — 最初の文体計量サボ調査 (技術)"
-    2014 : "Newsweek — ドリアン・ナカモト (ジャーナリズム)"
-         : "Forbes — グリーンバーグ / ハル・フィニー (ジャーナリズム)"
-         : "アストン大学 — Project Bitcoin (技術)"
-    2015 : "NYT / ポパー — サボ (ジャーナリズム)"
-         : "ライト自己主張開始 — Wired / Gizmodo (自己主張)"
-    2016 : "ライト — BBC / Economist (自己主張)"
-    2017 : "中国 — ICO・取引所禁止 (国家)"
-    2021 : "PLOS ONE — Strangely Mined Bitcoins (技術)"
-    2022 : "ロップ — Was Satoshi Greedy? (技術)"
-    2023 : "ロップ — ハル・フィニー レース当日分析 (技術)"
-    2024 : "米国 SEC — ビットコイン ETP 承認 (国家)"
-         : "COPA v ライト — 4 認定で否定 (訴訟)"
-         : "ヴァン・ドルスト — Where is Satoshi コーパス (技術)"
-         : "HBO — Money Electric / ピーター・トッド (ジャーナリズム)"
-    2025 : "米国 Strategic Bitcoin Reserve (国家)"
-    2026 : "NYT / カレイロウ — アダム・バック (ジャーナリズム)"
-         : "Bitcoin Institute — ヴァン・ドルスト再分析 (技術)"
+    2010 : WikiLeaks 圧力経路の開始 (国家)
+    2011 : アンドレセンが CIA / In-Q-Tel でビットコインを発表 (国家)
+    2013 : ラーナー — Patoshi マイニングパターン (技術)
+         : FBI — Silk Road 押収 (国家)
+         : Skye Grey — 最初の文体計量サボ調査 (技術)
+    2014 : Newsweek — ドリアン・ナカモト (ジャーナリズム)
+         : Forbes — グリーンバーグ / ハル・フィニー (ジャーナリズム)
+         : アストン大学 — Project Bitcoin (技術)
+    2015 : NYT / ポパー — サボ (ジャーナリズム)
+         : ライト自己主張開始 — Wired / Gizmodo (自己主張)
+    2016 : ライト — BBC / Economist (自己主張)
+    2017 : 中国 — ICO・取引所禁止 (国家)
+    2021 : PLOS ONE — Strangely Mined Bitcoins (技術)
+    2022 : ロップ — Was Satoshi Greedy? (技術)
+    2023 : ロップ — ハル・フィニー レース当日分析 (技術)
+    2024 : 米国 SEC — ビットコイン ETP 承認 (国家)
+         : COPA v ライト — 4 認定で否定 (訴訟)
+         : ヴァン・ドルスト — Where is Satoshi コーパス (技術)
+         : HBO — Money Electric / ピーター・トッド (ジャーナリズム)
+    2025 : 米国 Strategic Bitcoin Reserve (国家)
+    2026 : NYT / カレイロウ — アダム・バック (ジャーナリズム)
+         : Bitcoin Institute — ヴァン・ドルスト再分析 (技術)
 ```
 
 ### 1.1 ジャーナリズム経路

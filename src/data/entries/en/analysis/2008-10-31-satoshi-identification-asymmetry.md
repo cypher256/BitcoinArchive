@@ -99,28 +99,28 @@ Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the at
 ```mermaid
 timeline
     title Public attempts and recorded interest, 2010-2026
-    2010 : "WikiLeaks pressure dynamic begins (state)"
-    2011 : "Andresen presents Bitcoin at CIA / In-Q-Tel (state)"
-    2013 : "Lerner — Patoshi mining pattern (technical)"
-         : "FBI — Silk Road takedown (state)"
-         : "Skye Grey — first stylometric Szabo case (technical)"
-    2014 : "Newsweek — Dorian Nakamoto (journalism)"
-         : "Forbes — Greenberg / Hal Finney (journalism)"
-         : "Aston University — Project Bitcoin (technical)"
-    2015 : "NYT / Popper — Szabo (journalism)"
-         : "Wright self-claims begin — Wired / Gizmodo (self-claim)"
-    2016 : "Wright — BBC / Economist (self-claim)"
-    2017 : "China — ICO and exchange ban (state)"
-    2021 : "PLOS ONE — Strangely Mined Bitcoins (technical)"
-    2022 : "Lopp — Was Satoshi Greedy? (technical)"
-    2023 : "Lopp — Hal Finney race-day analysis (technical)"
-    2024 : "US SEC — Bitcoin ETP approval (state)"
-         : "COPA v Wright — four rulings against (litigation)"
-         : "van Dorst — Where is Satoshi corpus (technical)"
-         : "HBO — Money Electric / Peter Todd (journalism)"
-    2025 : "US Strategic Bitcoin Reserve (state)"
-    2026 : "NYT / Carreyrou — Adam Back (journalism)"
-         : "Bitcoin Institute — van Dorst reanalysis (technical)"
+    2010 : WikiLeaks pressure dynamic begins (state)
+    2011 : Andresen presents Bitcoin at CIA / In-Q-Tel (state)
+    2013 : Lerner — Patoshi mining pattern (technical)
+         : FBI — Silk Road takedown (state)
+         : Skye Grey — first stylometric Szabo case (technical)
+    2014 : Newsweek — Dorian Nakamoto (journalism)
+         : Forbes — Greenberg / Hal Finney (journalism)
+         : Aston University — Project Bitcoin (technical)
+    2015 : NYT / Popper — Szabo (journalism)
+         : Wright self-claims begin — Wired / Gizmodo (self-claim)
+    2016 : Wright — BBC / Economist (self-claim)
+    2017 : China — ICO and exchange ban (state)
+    2021 : PLOS ONE — Strangely Mined Bitcoins (technical)
+    2022 : Lopp — Was Satoshi Greedy? (technical)
+    2023 : Lopp — Hal Finney race-day analysis (technical)
+    2024 : US SEC — Bitcoin ETP approval (state)
+         : COPA v Wright — four rulings against (litigation)
+         : van Dorst — Where is Satoshi corpus (technical)
+         : HBO — Money Electric / Peter Todd (journalism)
+    2025 : US Strategic Bitcoin Reserve (state)
+    2026 : NYT / Carreyrou — Adam Back (journalism)
+         : Bitcoin Institute — van Dorst reanalysis (technical)
 ```
 
 ### 1.1 Journalism
