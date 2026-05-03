@@ -45,6 +45,11 @@ const linkData = Array.from(nameMap.entries())
     if (node.nodeType === 3) {
       callback(node);
     } else if (node.nodeType === 1 && node.tagName !== 'A' && node.tagName !== 'SCRIPT') {
+      // Skip SVG subtrees. Inserting an HTML <a> as a child of an SVG <text>
+      // element produces zero-bounding-box text in SVG and the label vanishes
+      // visually (verified against Mermaid quadrantChart labels). The
+      // auto-linking is for prose, so SVG charts are not in scope.
+      if (typeof SVGElement !== 'undefined' && node instanceof SVGElement) return;
       var children = Array.from(node.childNodes);
       for (var i = 0; i < children.length; i++) {
         walkTextNodes(children[i], callback);
