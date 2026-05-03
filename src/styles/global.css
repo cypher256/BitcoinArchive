@@ -330,6 +330,24 @@ a[href^="#"]:hover {
      container; let it overflow (and scroll) when wider. */
   margin: 0 auto;
 }
+@media (min-width: 1200px) {
+  /* At viewports where the .container reading tier is fixed at 800px,
+     let Mermaid figures break out of that container and extend toward
+     the viewport edges. Text stays in the 800px column for line-length
+     readability; figures use whatever horizontal space is available.
+     The previous `--max-width-wide` (1200px) cap is intentionally
+     removed for Mermaid: a wide diagram benefits from more horizontal
+     space, and the SVG renders at its natural width regardless of
+     wrapper size, so a wider wrapper just removes the need for
+     horizontal scroll. Below 1200px the container itself is fluid;
+     the breakout would push the wrapper past the viewport edge, so
+     the rule does not apply at those widths. */
+  .mermaid-scroll {
+    --mermaid-breakout: calc((100vw - var(--max-width-read) - 3rem) / 2);
+    margin-left: calc(-1 * var(--mermaid-breakout));
+    margin-right: calc(-1 * var(--mermaid-breakout));
+  }
+}
 /* Tighten the gap when an immediately-preceding paragraph contains only a
    <strong> (the title-above-diagram convention from STYLE_GUIDE.md
    "Mermaid diagram titles outside the block"). The bold paragraph
