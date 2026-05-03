@@ -8,7 +8,7 @@ author: "Slashdot"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "当時最も影響力のあるテクノロジーニュースサイトの一つであるSlashdotが、Bitcoin v0.3に関する記事を掲載した。「Slashdot効果」によりダウンロード数と新規ユーザーが急増し、ビットコインにとって初の重要なテックメディア露出となった。"
+description: "Slashdotが Bitcoin v0.3 記事を掲載。ダウンロード急増を招いたビットコイン初の大手テックメディア露出。"
 isSatoshi: false
 tags:
   - "slashdot"

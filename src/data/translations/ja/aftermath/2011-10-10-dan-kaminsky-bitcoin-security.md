@@ -10,7 +10,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "著名なセキュリティ研究者ダン・カミンスキーがビットコインの脆弱性を見つけようとして失敗した記録。「美しいバグを見つけた。だがコードを攻撃するたびに、問題に対処する一行があった」彼は結論づけた：「チームで作ったか、天才の仕業だ」"
+description: "著名なセキュリティ研究者カミンスキーが脆弱性を探すも失敗。「美しいバグを見つけたが、攻撃するたびに対処する一行があった」"
 isSatoshi: false
 tags:
   - "dan-kaminsky"

@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "ピーター・トッドのBitcoinTalkでの最初の投稿。ユーザー名「retep」で登録してからわずか1分後に投稿された。Diasporaソーシャルネットワークの招待状を2ドルで買いたいという一文のみ。スレッド内の他の購入者が0.5〜2 BTCを提示していたのに対し、トッドだけがUSD建てだった。3日後の2番目の投稿は、サトシ・ナカモトのトランザクション置換の説明への技術的な返信となる。"
+description: "ピーター・トッドのBitcoinTalk初投稿。retep登録1分後、Diaspora招待状を2ドル（他者は0.5〜2 BTC）で買いたいと一文のみ。3日後にサトシへ技術返信。"
 isSatoshi: false
 tags:
   - "peter-todd"

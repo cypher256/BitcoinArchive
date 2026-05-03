@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "A recollection-based account of Satoshi Nakamoto's private pushback on Laszlo Hanyecz's premature publication of GPU mining for Bitcoin. The verifiable primary-source element is Hanyecz's GPU mining announcement on Bitcointalk on May 10, 2010. The Satoshi side of the exchange — including the quoted emails about CPU/GPU accessibility and network growth — is from Hanyecz's later interview accounts (CoinDesk 2025, Bitcoin Magazine, Cointelegraph), not from the primary email record. The full private correspondence has not been publicly released."
+description: "Hanyecz recalls Satoshi's private pushback on his May 10, 2010 BitcoinTalk GPU-mining announcement. The verifiable element is the announcement; Satoshi's side comes from Hanyecz's later interviews."
 isSatoshi: false
 tags:
   - "gpu-mining"

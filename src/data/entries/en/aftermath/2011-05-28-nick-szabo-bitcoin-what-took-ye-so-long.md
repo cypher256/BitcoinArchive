@@ -14,7 +14,7 @@ participants:
     slug: "wei-dai"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Nick Szabo discusses why Bitcoin took so long to be invented, the similarities and differences between bit gold and Bitcoin, and why 'nearly everybody who heard the general idea thought it was a very bad idea.'"
+description: "Nick Szabo discusses why Bitcoin took so long, the similarities and differences between bit gold and Bitcoin, and why \"nearly everybody who heard the general idea thought it was a very bad idea.\""
 isSatoshi: false
 tags:
   - "nick-szabo"

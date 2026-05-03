@@ -10,7 +10,7 @@ participants:
     slug: "michael-marquardt"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "The Bitcoin Forum, originally set up by Martti Malmi at bitcoin.org/smf using Simple Machines Forum (SMF) software, migrated to the independent domain bitcointalk.org in August 2011. The migration was managed by forum administrator Theymos (Michael Marquardt) and preserved all existing posts, threads, and user accounts."
+description: "The Bitcoin Forum, set up by Martti Malmi at bitcoin.org/smf, migrates to the independent bitcointalk.org domain in August 2011. Theymos managed the migration; all posts and accounts were preserved."
 isSatoshi: false
 tags:
   - "bitcointalk"

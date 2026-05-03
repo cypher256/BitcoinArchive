@@ -8,7 +8,7 @@ author: "Wladimir van der Laan"
 participants:
   - name: "Wladimir van der Laan"
     slug: "wladimir-van-der-laan"
-description: "ウラジミール・ファン・デル・ラーン（laanwj）：オランダのソフトウェア開発者。2011年6月に Bitcoin GitHub のコミット権限を取得し、オリジナルの bitcoin-qt GUI クライアントを構築、2014年4月にギャビン・アンドレセンの後を継いで Bitcoin Core のリードメンテナーに就任、2022年8月まで務めた。2023年2月には自らのマージ権限も撤去し、以降プロジェクトは複数開発者による分散メンテナンス体制に移行した。"
+description: "オランダのソフトウェア開発者（laanwj）。bitcoin-qt GUI開発、2014年4月から2022年8月までBitcoin Coreリードメンテナー、2023年2月にマージ権限を撤去。"
 isSatoshi: false
 tags:
   - "wladimir-van-der-laan"

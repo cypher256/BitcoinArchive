@@ -8,7 +8,7 @@ author: "Luke Dashjr"
 participants:
   - name: "Luke Dashjr"
     slug: "luke-dashjr"
-description: "ルーク・ダッシュジュニア（luke-jr）：アメリカのソフトウェア開発者、長期にわたる Bitcoin Core 貢献者。2013年3月のチェーン分裂への対応を調整し、Bitcoin Knots（メンプール・フィルター設定可能な Core 派生クライアント）を維持し、2023年には Ocean マイニングプールを共同創業。2022年12月から2023年1月にかけて、350万ドル超相当のウォレット盗難被害に遭い、PGP 鍵の侵害が原因と説明している。"
+description: "アメリカのソフトウェア開発者（luke-jr）。長期Bitcoin Core貢献者、Bitcoin Knots維持、Ocean共同創業（2023）。2022年末に350万ドル超のウォレット盗難。"
 isSatoshi: false
 tags:
   - "luke-dashjr"

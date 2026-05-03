@@ -8,7 +8,7 @@ author: "Laszlo Hanyecz"
 participants:
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "ラズロ・ハニエツ：フロリダ州ジャクソンビル在住のソフトウェア開発者。ビットコインのmacOS移植、GPUマイニングの開拓を行い、2010年5月22日に10,000 BTCでピザ2枚を購入する初の既知の実商取引を行った。この日は毎年「ビットコイン・ピザ・デー」として祝われている。"
+description: "フロリダ州のソフトウェア開発者。macOS移植、GPUマイニング開拓、2010年5月22日に10,000 BTCでピザ2枚を購入（ビットコイン・ピザデー）。"
 isSatoshi: false
 tags:
   - "laszlo-hanyecz"

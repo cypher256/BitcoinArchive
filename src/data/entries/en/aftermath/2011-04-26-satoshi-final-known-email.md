@@ -12,7 +12,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "Satoshi Nakamoto's final known private communications: on April 23, 2011, he told Mike Hearn 'I've moved on to other things. It's in good hands with Gavin and everyone.' Three days later, on April 26, he sent his last known email to Gavin Andresen, transferring the network alert key and writing 'I've moved on to other things and will probably be unavailable.'"
+description: "Satoshi's final known private messages: April 23, 2011 to Mike Hearn — \"in good hands with Gavin.\" April 26 to Andresen, transferring the alert key and saying he would probably be unavailable."
 isSatoshi: true
 tags:
   - "final-communication"

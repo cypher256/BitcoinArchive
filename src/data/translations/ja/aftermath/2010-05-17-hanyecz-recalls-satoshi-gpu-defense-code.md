@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "ラズロ・ハニエツの回想に基づく記事：サトシはハニエツの GPU マイナーコードに対し、自身が独自に開発した GPU マイニングコードを返礼として共有した。コインをマイニングするためではなく、潜在的な 51% 攻撃に対する備えとして保持していたものであるという。完全な私的メールは公開されておらず、本記事の内容は Cointelegraph・InsideBitcoins のインタビューでハニエツが共有した回想に基づく。2010 年 5 月 17 日という日付は、ハニエツの 5 月 10 日 GPU 発表との前後関係から推定したもので近似値である。"
+description: "ハニエツの回想：サトシが返礼として自作のGPUマイニングコードを共有。マイニングではなく51%攻撃への備えとされた。日付は近似値、後年の取材に基づく。"
 isSatoshi: false
 tags:
   - "gpu-mining"

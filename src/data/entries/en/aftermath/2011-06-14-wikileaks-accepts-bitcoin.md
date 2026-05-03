@@ -10,7 +10,7 @@ participants:
     slug: "julian-assange"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "WikiLeaks announced it would accept Bitcoin donations, circumventing a financial blockade imposed by Bank of America, Visa, MasterCard, PayPal, and Western Union. Satoshi had warned against this six months earlier, saying it would bring unwanted government attention to the still-nascent network."
+description: "WikiLeaks announces Bitcoin donations, bypassing the Bank of America/Visa/MasterCard/PayPal/Western Union blockade. Satoshi had warned against this six months earlier, fearing government attention."
 isSatoshi: false
 tags:
   - "wikileaks"

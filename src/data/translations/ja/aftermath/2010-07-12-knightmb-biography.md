@@ -8,7 +8,7 @@ author: "knightmb"
 participants:
   - name: "knightmb"
     slug: "knightmb"
-description: "knightmb：2010年当時、最も大規模かつ安定した Bitcoin ノードの一つを運用し、他ユーザーの高速同期用にブロックチェーン・スナップショットを公開していた匿名の初期ユーザー。BitcoinTalk フォーラムでは活発な技術的回答者でもあった。2010年8月のバリュー・オーバーフロー事件でギャビン・アンドレセンが復旧パッチを試験する際の起点となったのは、彼のスナップショットだった。"
+description: "匿名の初期ユーザー。2010年当時に大規模ノードを運営、公開スナップショットがバリュー・オーバーフロー事件の復旧パッチの起点となった。"
 isSatoshi: false
 tags:
   - "knightmb"

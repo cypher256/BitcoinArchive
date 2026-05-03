@@ -8,7 +8,7 @@ author: "Luke Dashjr"
 participants:
   - name: "Luke Dashjr"
     slug: "luke-dashjr"
-description: "Luke Dashjr (luke-jr): American software developer and long-tenured Bitcoin Core contributor. Helped coordinate the response to the March 2013 chain split, maintains Bitcoin Knots (an alternative Core client with configurable mempool filters), and co-founded the Ocean mining pool in 2023. In December 2022 / January 2023 he suffered a $3.5M+ wallet theft he attributed to a compromised PGP key."
+description: "American developer (luke-jr), long-tenured Bitcoin Core contributor. Maintains Bitcoin Knots; co-founded Ocean mining pool (2023). Suffered a $3.5M+ wallet theft in late 2022 (compromised PGP key)."
 isSatoshi: false
 tags:
   - "luke-dashjr"

@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "One of the first major print magazine articles about Bitcoin, published in Forbes. Andy Greenberg interviewed Gavin Andresen, who described Bitcoin as 'better gold than gold.' The article brought significant mainstream media attention and may have contributed to Satoshi's decision to withdraw from public communication."
+description: "One of the first major print magazine features on Bitcoin. Greenberg interviews Andresen, who calls Bitcoin \"better gold than gold.\" The mainstream attention may have driven Satoshi's withdrawal."
 isSatoshi: false
 tags:
   - "forbes"

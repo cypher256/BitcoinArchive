@@ -8,7 +8,7 @@ author: "Pieter Wuille"
 participants:
   - name: "Pieter Wuille"
     slug: "pieter-wuille"
-description: "Pieter Wuille (sipa): Belgian software engineer, Bitcoin Core committer since May 2011, and author or co-author of four of the most consequential Bitcoin Improvement Proposals — BIP-32 (HD wallets, 2012), BIP-141 (SegWit, 2015), BIP-340 (Schnorr, 2020), and BIP-341 (Taproot, 2020). Initiator of the libsecp256k1 library that replaced OpenSSL as Bitcoin's ECDSA backend in 2016. Co-founder of Blockstream."
+description: "Belgian software engineer (sipa), Bitcoin Core committer since 2011. Author/co-author of BIP-32, BIP-141 (SegWit), BIP-340/341 (Schnorr/Taproot). Initiator of libsecp256k1; Blockstream co-founder."
 isSatoshi: false
 tags:
   - "pieter-wuille"

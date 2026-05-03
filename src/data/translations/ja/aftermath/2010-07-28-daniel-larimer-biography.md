@@ -8,7 +8,7 @@ author: "Daniel Larimer"
 participants:
   - name: "Daniel Larimer"
     slug: "daniel-larimer"
-description: "ダニエル・ラリマー（bytemaster）：アメリカのソフトウェア開発者。2010年中頃に BitcoinTalk に参加し、オンチェーン決済はマイクロペイメントには遅く高価すぎると主張した。同じ論は、彼が後に手がけた BitShares（2013–2016）、Steem（2016）、EOS.IO（2017）の設計思想の根幹を成す。"
+description: "ソフトウェア開発者（bytemaster、1980-）。2010年中頃BitcoinTalk参加、オンチェーン決済を遅すぎと主張。BitShares・Steem・EOS設計の起点。"
 isSatoshi: false
 tags:
   - "daniel-larimer"

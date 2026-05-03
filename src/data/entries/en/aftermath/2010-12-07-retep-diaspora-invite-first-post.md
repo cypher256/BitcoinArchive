@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd's very first post on BitcoinTalk, made one minute after registering under the username 'retep.' A single sentence offering to buy a Diaspora social network invite for $2 — notably in USD, not BTC, unlike other buyers in the thread who offered 0.5–2 BTC. Three days later, his second post would be a technical reply to Satoshi Nakamoto's description of transaction replacement."
+description: "Peter Todd's first BitcoinTalk post, one minute after registering as retep — offering $2 USD (not BTC, unlike others) for a Diaspora invite. His second post was a technical reply to Satoshi."
 isSatoshi: false
 tags:
   - "peter-todd"

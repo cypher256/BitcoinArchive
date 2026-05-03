@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "整数オーバーフローバグ（CVE-2010-5139）が悪用され、ブロック 74638の単一トランザクションで184,467,440,737.09551616 BTCが生成された。サトシ・ナカモトは発見から5時間以内に修正を公開し、修正チェーンは15時間以内に無効なチェーンを追い越した。ビットコイン史上最も深刻な危機だった。"
+description: "整数オーバーフローバグ（CVE-2010-5139）の悪用でブロック 74638 に 1,840 億 BTC が生成された。サトシは 5 時間以内に修正、15 時間以内に正常チェーンが追い越した。"
 isSatoshi: false
 tags:
   - "overflow-bug"

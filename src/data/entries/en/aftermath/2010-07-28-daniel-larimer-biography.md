@@ -8,7 +8,7 @@ author: "Daniel Larimer"
 participants:
   - name: "Daniel Larimer"
     slug: "daniel-larimer"
-description: "Daniel Larimer (bytemaster): American software developer who joined BitcoinTalk in mid-2010 and argued that on-chain settlement was too slow and expensive for micropayments — the same thesis that later drove his creation of BitShares (2013–2016), Steem (2016), and EOS.IO (2017)."
+description: "Software developer (bytemaster, born 1980) who joined BitcoinTalk in mid-2010 arguing on-chain settlement was too slow for micropayments — the thesis behind his later BitShares, Steem, and EOS."
 isSatoshi: false
 tags:
   - "daniel-larimer"

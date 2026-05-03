@@ -44,6 +44,24 @@ translationStatus: complete
 
 ニック・サボは、デジタル通貨とスマートコントラクトの先駆的研究で知られるコンピューター科学者・法学者・暗号学者である。彼の経歴の詳細は非公開のままである。
 
+```mermaid
+timeline
+    title ニック・サボのビットコイン関連年表
+    1994 : 「スマートコントラクト」 用語を提唱
+    1996 : 論文「Smart Contracts: Building Blocks for Digital Markets」 発表
+    1998 : Bit Gold を構想 (libtech 私的 メーリングリスト)
+    2005 : Bit Gold 完全設計を Unenumerated ブログで公開 (12月29日)
+    2008 : 「誰か Bit Gold を実装してくれないか」 Unenumerated コメント (4月27日)
+    2009 : Bitcoin v0.1 公開、 サボは Unenumerated 継続 (1月)
+    2011 : 「Nakamoto improved my design」 Unenumerated 投稿 (5月28日)
+    2013 : Skye Grey + TechCrunch サボ＝サトシ説 (12月)
+    2014 : アストン大学 文体計量研究 サボを首位 (4月)
+         : フリスビー宛 メール返信「残念ながら 間違いだ」 (否定)
+    2015 : NYT ポッパー 『Digital Gold』 抜粋 - サボを最有力候補と示唆 (5月)
+    2017 : ティム・フェリス・ショウ #244 出演 (6月)
+    2018 : Fortune 10 周年 特集 - 肯定的扱い
+```
+
 **スマートコントラクト：**
 1994年、サボは「スマートコントラクト」という用語を提唱した——契約条件がコードに直接記述された自己実行型の契約である。この概念は時代を数十年先取りしており、後にEthereumなどのプラットフォームの基盤となった。
 

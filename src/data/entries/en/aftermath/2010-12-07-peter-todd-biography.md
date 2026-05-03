@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd: Canadian cryptographer and Bitcoin Core developer known for proposing Replace-by-Fee (RBF) and creating OpenTimestamps. He registered on BitcoinTalk on December 7, 2010 under the username \"retep\" and replied to one of Satoshi Nakamoto's posts three days later. In October 2024, an HBO documentary named him as a Satoshi Nakamoto candidate, which he denied."
+description: "Canadian cryptographer, Bitcoin Core developer (born 1985). Proposed Replace-by-Fee, built OpenTimestamps. Joined BitcoinTalk as retep in Dec 2010. Named a Satoshi candidate by HBO in 2024 (denied)."
 isSatoshi: false
 tags:
   - "peter-todd"

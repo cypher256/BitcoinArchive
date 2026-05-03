@@ -10,7 +10,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "Following the death of cypherpunk and cryptographer Len Sassaman on July 3, 2011, security researcher Dan Kaminsky embedded an ASCII-art tribute to Sassaman into the Bitcoin blockchain. The tribute was announced on July 30, 2011 and publicly revealed at Black Hat USA 2011 (Las Vegas). The technique pre-dates Bitcoin Core's formal OP_RETURN mechanism (added in 2014); specific block heights, transaction hashes, and the full inscribed ASCII-art content have not been independently verified by this archive."
+description: "After Len Sassaman's death (July 3, 2011), security researcher Dan Kaminsky embedded an ASCII-art tribute into the Bitcoin blockchain, announced July 30 and revealed at Black Hat USA 2011."
 isSatoshi: false
 tags:
   - "dan-kaminsky"

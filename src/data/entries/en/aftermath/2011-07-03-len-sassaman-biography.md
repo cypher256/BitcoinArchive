@@ -8,7 +8,7 @@ author: "Len Sassaman"
 participants:
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "Len Sassaman (1980–2011): American cryptographer, cypherpunk, and lead developer of the Mixmaster anonymous remailer. KU Leuven PhD candidate working on privacy-preserving systems. Died by suicide on July 3, 2011 — three months after Satoshi Nakamoto's last known communication. His death prompted Dan Kaminsky's blockchain tribute, and his cypherpunk profile later seeded a documented Satoshi-identity hypothesis."
+description: "American cryptographer (1980-2011), Mixmaster lead developer, KU Leuven PhD candidate. Died by suicide three months after Satoshi's last known message. Later named in a Satoshi-identity hypothesis."
 isSatoshi: false
 tags:
   - "len-sassaman"

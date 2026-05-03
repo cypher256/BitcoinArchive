@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ最後のソースコミット（12/15）から 4 日後、SVN 引き継ぎ（12/12）から 7 日後、ギャビン・アンドレセンが BitcoinTalk フォーラムで「プロジェクト管理を本格的に引き受ける」ことを公式に告知した。冒頭は「サトシの祝福を受けて、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする」。同日、ギャビンは bitcoin/bitcoin GitHub リポジトリを作成し、9 か月にわたる SVN／GitHub 並列開発期間が始まった。"
+description: "アンドレセンがBitcoinTalkで「サトシの祝福を受けて」プロジェクト管理引き継ぎを公式告知。同日 bitcoin/bitcoin GitHub 作成。"
 isSatoshi: false
 tags:
   - "gavin-andresen"

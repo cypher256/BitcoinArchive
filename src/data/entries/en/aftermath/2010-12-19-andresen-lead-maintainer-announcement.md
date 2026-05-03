@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Four days after Satoshi's last source-code commit and seven days after the SVN handover, Gavin Andresen formally announced on the BitcoinTalk forum that he would take over active project management for Bitcoin. The announcement opened: 'With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin.' Same day, Andresen created the bitcoin/bitcoin GitHub repository, beginning nine months of parallel SVN/GitHub development before SVN was retired."
+description: "Gavin Andresen announces on BitcoinTalk he will take over active project management: \"With Satoshi's blessing, and with great reluctance, I will begin to do more active project management.\""
 isSatoshi: false
 tags:
   - "gavin-andresen"

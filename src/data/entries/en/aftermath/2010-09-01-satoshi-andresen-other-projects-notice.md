@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "In September 2010, Satoshi Nakamoto privately told Gavin Andresen he was working on other projects -- the earliest documented signal of Satoshi's intent to step back from active leadership of Bitcoin. Over the next few months, Satoshi gave Andresen control of the SourceForge code repository and the project's network alert key. The exact date within September is not preserved in the public record; the fact is anchored to Wikipedia's account and Andresen's later interviews."
+description: "In September 2010, Satoshi privately tells Andresen he is working on other projects — the earliest documented signal of his intent to step back. He soon handed Andresen the repository and alert key."
 isSatoshi: false
 tags:
   - "gavin-andresen"

@@ -10,7 +10,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Renowned security researcher Dan Kaminsky attempted to find vulnerabilities in Bitcoin and failed. 'I came up with beautiful bugs. But every time I went after the code there was a line that addressed the problem.' He concluded: 'Either there's a team of people who worked on this, or this guy is a genius.'"
+description: "Security researcher Dan Kaminsky tries to find vulnerabilities in Bitcoin and fails. \"I came up with beautiful bugs. But every time I went after the code there was a line that addressed the problem.\""
 isSatoshi: false
 tags:
   - "dan-kaminsky"

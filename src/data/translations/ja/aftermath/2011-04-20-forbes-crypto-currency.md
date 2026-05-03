@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Forbesに掲載されたビットコインに関する最初の主要な印刷雑誌記事の一つ。アンディ・グリーンバーグがギャビン・アンドレセンにインタビューし、アンドレセンはビットコインを「金よりも優れた金」と表現した。この記事は大きな主流メディアの注目を集め、サトシの公の場からの撤退に寄与した可能性がある。"
+description: "ビットコイン関連で初の主要印刷雑誌特集（Forbes）。アンドレセンがビットコインを「金より優れた金」と表現。サトシの撤退に寄与した可能性。"
 isSatoshi: false
 tags:
   - "forbes"

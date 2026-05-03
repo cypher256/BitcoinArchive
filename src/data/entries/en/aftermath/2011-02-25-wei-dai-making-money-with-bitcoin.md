@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Wei Dai's comments on the LessWrong 'Making money with Bitcoin?' thread. He clarified that he did not create Bitcoin but 'only described a similar idea more than a decade ago' and that Satoshi independently reinvented the concept. He revealed purchasing a Radeon 5870 GPU for mining after this thread, and warned that 'not many other cryptographers have analyzed its security.'"
+description: "On LessWrong, Wei Dai clarifies he did not create Bitcoin — \"only described a similar idea more than a decade ago\" — buys a Radeon 5870 to mine, and warns Bitcoin lacks cryptographer security review."
 isSatoshi: false
 tags:
   - "wei-dai"

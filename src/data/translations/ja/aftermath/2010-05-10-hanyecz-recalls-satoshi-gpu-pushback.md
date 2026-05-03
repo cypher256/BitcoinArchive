@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "ラズロ・ハニエツがビットコインの GPU マイニングを公的に発表したことに対し、サトシ・ナカモトが私的に示した懸念について、ハニエツの後年のインタビュー（CoinDesk 2025 年、Bitcoin Magazine、Cointelegraph 等）に基づく回想記事。一次資料で検証可能なのは、2010 年 5 月 10 日の Bitcointalk でのハニエツによる GPU マイニング発表のみ。サトシ側のメールについては原文は公開されておらず、本記事の引用文はすべてハニエツの回想による。"
+description: "ハニエツが2010年5月10日のGPUマイニング公開発表に対するサトシの私的懸念を回想。原文未公開、後年の取材に基づく。"
 isSatoshi: false
 tags:
   - "gpu-mining"

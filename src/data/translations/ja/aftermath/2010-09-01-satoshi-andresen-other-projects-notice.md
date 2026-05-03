@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "2010 年 9 月、サトシ・ナカモトはギャビン・アンドレセンに「他のプロジェクトに取り組んでいる」と私的に伝えた — サトシがビットコインの第一線から退く意思を示した、公開記録上最も早いシグナル。続く数か月のあいだに、サトシは SourceForge のコードリポジトリと alert key（ネットワーク警報鍵）の管理権をギャビンへ譲渡していった。9 月のうち正確に何日かは公開記録上保存されておらず、本事実は Wikipedia の記述とギャビンの後年のインタビューに依拠する。"
+description: "2010年9月、サトシがアンドレセンに「他のプロジェクトに取り組んでいる」と通知。第一線から退く意思を示した最も早いシグナル。数か月後にコードと警報鍵を譲渡。"
 isSatoshi: false
 tags:
   - "gavin-andresen"

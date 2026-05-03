@@ -8,7 +8,7 @@ author: "Laszlo Hanyecz"
 participants:
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "Laszlo Hanyecz: Software developer from Jacksonville, Florida, who ported Bitcoin to macOS, pioneered GPU mining, and made the first known real-world commercial Bitcoin transaction — purchasing two pizzas for 10,000 BTC on May 22, 2010, a date now celebrated annually as 'Bitcoin Pizza Day.'"
+description: "Software developer from Jacksonville, Florida who ported Bitcoin to macOS, pioneered GPU mining, and made the first known real-world purchase — two pizzas for 10,000 BTC on May 22, 2010 (Pizza Day)."
 isSatoshi: false
 tags:
   - "laszlo-hanyecz"

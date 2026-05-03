@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "ギャビン・アンドレセン（1966年生まれ）：ソフトウェア開発者、Wasabi Software創業者、Bitcoin Faucetの作成者、そしてサトシ・ナカモトがプロジェクトのリーダーシップを委ねた人物。ビットコインリポジトリのコミット権限を付与され、2011年から2014年までリードメンテナーを務めた。"
+description: "ソフトウェア開発者（1966-）、Wasabi Software創業者、Bitcoin Faucet作成者。サトシから引き継ぎ、2011-2014年リードメンテナー。"
 isSatoshi: false
 tags:
   - "gavin-andresen"

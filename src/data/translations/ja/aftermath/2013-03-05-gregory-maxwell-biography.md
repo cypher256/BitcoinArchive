@@ -8,7 +8,7 @@ author: "Gregory Maxwell"
 participants:
   - name: "Gregory Maxwell"
     slug: "gregory-maxwell"
-description: "グレゴリー・マクスウェル（gmaxwell）：長年の Bitcoin Core 貢献者、2014年の Blockstream 共同創業者、OpenSSL を Bitcoin の ECDSA バックエンドから置き換えた libsecp256k1 ライブラリーの共同開発者。CoinJoin プライバシー構成の提案者、Confidential Transactions の共同設計者。BitcoinTalk と IRC における技術的に濃密な長文投稿で Bitcoin コミュニティに広く知られる。"
+description: "Bitcoin Core貢献者（gmaxwell）、Blockstream共同創業、libsecp256k1共同開発、CoinJoinおよびConfidential Transactions設計者。"
 isSatoshi: false
 tags:
   - "gregory-maxwell"

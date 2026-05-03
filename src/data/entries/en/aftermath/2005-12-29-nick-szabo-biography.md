@@ -43,6 +43,24 @@ relatedEntries:
 
 Nick Szabo is a computer scientist, legal scholar, and cryptographer known for his pioneering work on digital currency and smart contracts. His real identity and background remain largely private.
 
+```mermaid
+timeline
+    title Nick Szabo's Bitcoin-relevant timeline
+    1994 : Coins term "smart contracts"
+    1996 : Publishes "Smart Contracts - Building Blocks for Digital Markets"
+    1998 : Conceives Bit Gold (libtech private mailing list)
+    2005 : Publishes Bit Gold full design on Unenumerated blog (Dec 29)
+    2008 : "Anybody want to help me code one up" Unenumerated comment (Apr 27)
+    2009 : Bitcoin v0.1 released; Szabo continues Unenumerated (Jan)
+    2011 : "Nakamoto improved my design" Unenumerated post (May 28)
+    2013 : Skye Grey + TechCrunch articulate Szabo = Satoshi (Dec)
+    2014 : Aston University stylometric study names Szabo top candidate (Apr)
+         : Replies to Frisby - "I'm afraid you got it wrong" (denial)
+    2015 : NYT - Popper Digital Gold excerpt points to Szabo (May)
+    2017 : Tim Ferriss Show 244 appearance (Jun)
+    2018 : Fortune 10th anniversary feature - affirmative coverage
+```
+
 **Smart Contracts:**
 In 1994, Szabo coined the term "smart contracts" — self-executing agreements with the terms directly written into code. This concept, decades ahead of its time, would later become the foundation of platforms like Ethereum.
 

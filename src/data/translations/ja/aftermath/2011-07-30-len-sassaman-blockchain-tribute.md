@@ -10,7 +10,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "サイファーパンクで暗号学者のレン・サッサマンが 2011 年 7 月 3 日に亡くなった後、セキュリティ研究者のダン・カミンスキーは、ビットコインのブロックチェーンに ASCII アートの追悼を埋め込んだ。発表は 2011 年 7 月 30 日、公的な発表は Black Hat USA 2011（ラスベガス）。本技法はビットコインコアの公式な OP_RETURN 機構（2014 年追加）に先行する。具体的なブロック高、トランザクションハッシュ、刻印された ASCII アートの全文は、本アーカイブが独立に検証していない。"
+description: "サッサマン死去後、ダン・カミンスキーがビットコインブロックチェーンにASCIIアート追悼を埋め込む。Black Hat USA 2011で公表。"
 isSatoshi: false
 tags:
   - "dan-kaminsky"

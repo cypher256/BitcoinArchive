@@ -26,7 +26,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Amir Taaki"
     slug: "amir-taaki"
-description: "ベンジャミン・ウォレスによるWired誌の特集記事。主要メディアによるビットコインの本格的な記事としては最初期のもの。サトシのホワイトペーパーからマイニングブーム、Mt.Goxのハッキング、コミュニティの成長痛までを辿り、ジェフ・ガージックの「本当にどうだっていい」で締めくくられた。"
+description: "ウォレスによるWired誌特集。主要メディアでのビットコイン本格記事としては初期。ホワイトペーパー、Mt.Gox、コミュニティ成長痛を辿り「どうだっていい」で締めくくる。"
 isSatoshi: false
 tags:
   - "media"

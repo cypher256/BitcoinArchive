@@ -8,7 +8,7 @@ author: "Len Sassaman"
 participants:
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "レン・サッサマン（1980–2011）：アメリカの暗号学者、サイファーパンク、Mixmaster 匿名リメイラーのリード開発者。KU ルーヴェン大学の博士課程在籍者として、プライバシー保護システムの研究に従事していた。2011 年 7 月 3 日、サトシ・ナカモトの最後の既知の通信から 3 か月後に自殺。彼の死を受けてダン・カミンスキーがブロックチェーン追悼を実施し、彼のサイファーパンクとしての経歴は後にサトシ正体仮説の一つの候補として記録されている。"
+description: "アメリカの暗号学者、サイファーパンク（1980-2011）。Mixmaster開発、KU Leuven博士課程。サトシ最後通信3か月後に自殺。後にサトシ仮説候補。"
 isSatoshi: false
 tags:
   - "len-sassaman"

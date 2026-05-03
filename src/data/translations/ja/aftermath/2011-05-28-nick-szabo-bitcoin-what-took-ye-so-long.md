@@ -14,7 +14,7 @@ participants:
     slug: "wei-dai"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ニック・サボが、ビットコインの発明にこれほど時間がかかった理由、bit goldとビットコインの類似点と相違点、そして「一般的なアイデアを聞いたほぼ全員が、それは非常に悪いアイデアだと思った」理由を論じる。"
+description: "ニック・サボがビットコイン発明の遅延、bit goldとの類似点と相違点、「ほぼ全員が悪いアイデアだと思った」理由を論じる。"
 isSatoshi: false
 tags:
   - "nick-szabo"

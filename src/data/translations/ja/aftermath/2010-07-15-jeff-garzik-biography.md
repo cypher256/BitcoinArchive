@@ -8,7 +8,7 @@ author: "Jeff Garzik"
 participants:
   - name: "Jeff Garzik"
     slug: "jeff-garzik"
-description: "ジェフ・ガージック：2010年7月にSlashdotでビットコインを発見したソフトウェアエンジニア、Linuxカーネル貢献者、Red Hat従業員。Bitcoin Coreのトップ3の貢献者の一人となり、cpuminerを作成、複数のBIPを起草し、後にBloqを共同設立した。"
+description: "ソフトウェアエンジニア（1974-）、Linuxカーネル貢献者。2010年7月にSlashdotで知る。Bitcoin Core主要貢献者、cpuminer作者、Bloq共同設立。"
 isSatoshi: false
 tags:
   - "jeff-garzik"

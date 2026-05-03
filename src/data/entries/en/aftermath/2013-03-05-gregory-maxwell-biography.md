@@ -8,7 +8,7 @@ author: "Gregory Maxwell"
 participants:
   - name: "Gregory Maxwell"
     slug: "gregory-maxwell"
-description: "Gregory Maxwell (gmaxwell): Long-time Bitcoin Core contributor, co-founder of Blockstream in 2014, and co-developer of the libsecp256k1 library that replaced OpenSSL as Bitcoin's ECDSA backend. Authored the CoinJoin privacy construction and co-designed Confidential Transactions. Known throughout the Bitcoin community for deeply technical write-ups on BitcoinTalk and IRC."
+description: "Long-time Bitcoin Core contributor (gmaxwell), Blockstream co-founder, co-developer of libsecp256k1. Authored CoinJoin, co-designed Confidential Transactions. Known for deep technical write-ups."
 isSatoshi: false
 tags:
   - "gregory-maxwell"

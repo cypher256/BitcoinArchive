@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "ピーター・トッド：カナダの暗号学者でBitcoin Core開発者。Replace-by-Fee（RBF）の提唱やOpenTimestampsの開発で知られる。2010年12月7日にユーザー名「retep」でBitcoinTalkに登録し、3日後にサトシ・ナカモトの投稿に返信した。2024年10月、HBOのドキュメンタリーでサトシ・ナカモト候補として取り上げられたが、本人は否定した。"
+description: "カナダの暗号学者、Bitcoin Core開発者（1985-）。Replace-by-Fee提唱、OpenTimestamps開発。2024年HBOにサトシ候補として挙げられたが本人は否定。"
 isSatoshi: false
 tags:
   - "peter-todd"

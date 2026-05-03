@@ -8,7 +8,7 @@ author: "Wladimir van der Laan"
 participants:
   - name: "Wladimir van der Laan"
     slug: "wladimir-van-der-laan"
-description: "Wladimir van der Laan (laanwj): Dutch software developer who received Bitcoin GitHub commit access in June 2011, built the original bitcoin-qt GUI client, and succeeded Gavin Andresen as Bitcoin Core lead maintainer from April 2014 to August 2022. Formally withdrew his merge privileges in February 2023, leaving the project under distributed maintenance."
+description: "Dutch developer (handle laanwj). Built the original bitcoin-qt GUI; succeeded Gavin Andresen as Bitcoin Core lead maintainer (April 2014 - August 2022); withdrew merge privileges in February 2023."
 isSatoshi: false
 tags:
   - "wladimir-van-der-laan"

@@ -8,7 +8,7 @@ author: "knightmb"
 participants:
   - name: "knightmb"
     slug: "knightmb"
-description: "knightmb: Pseudonymous early Bitcoin user who ran one of the largest and most reliable Bitcoin nodes in 2010, publicly hosted blockchain snapshots that other users relied on for fast sync, and was an active technical responder on the BitcoinTalk forum. His snapshot was the starting point for Gavin Andresen's recovery patch after the August 2010 value overflow incident."
+description: "Pseudonymous early Bitcoin user who ran one of the largest 2010 nodes and hosted public blockchain snapshots. His snapshot seeded Gavin Andresen's recovery patch after the value overflow incident."
 isSatoshi: false
 tags:
   - "knightmb"

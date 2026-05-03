@@ -10,7 +10,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Jeremy Sturdivant"
     slug: "jeremy-sturdivant"
-description: "Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas — the first purchase of a physical good with Bitcoin. The transaction, completed on May 22, 2010, is celebrated annually as 'Bitcoin Pizza Day.' At the time, 10,000 BTC was worth approximately $41."
+description: "Laszlo Hanyecz pays 10,000 BTC for two Papa John's pizzas — the first purchase of a physical good with Bitcoin. Completed May 22, 2010 and celebrated annually as Bitcoin Pizza Day. ~$41 at the time."
 isSatoshi: false
 tags:
   - "laszlo-hanyecz"

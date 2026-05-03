@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "An integer overflow bug (CVE-2010-5139) was exploited to create 184,467,440,737.09551616 BTC in a single transaction in Block 74638. Satoshi Nakamoto published a fix within 5 hours, and the corrected chain overtook the invalid chain within 15 hours — the most serious crisis in Bitcoin's history."
+description: "An integer overflow bug (CVE-2010-5139) was exploited to create 184 billion BTC in Block 74638. Satoshi published a fix within 5 hours; the corrected chain overtook the invalid one within 15 hours."
 isSatoshi: false
 tags:
   - "overflow-bug"

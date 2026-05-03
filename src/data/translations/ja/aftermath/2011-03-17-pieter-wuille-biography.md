@@ -8,7 +8,7 @@ author: "Pieter Wuille"
 participants:
   - name: "Pieter Wuille"
     slug: "pieter-wuille"
-description: "ピーター・ウィーユ（sipa）：ベルギーのソフトウェア技術者。2011年5月から Bitcoin Core コミッター、Bitcoin の最も重要な改善提案のうち4本──BIP-32（HDウォレット、2012）、BIP-141（SegWit、2015）、BIP-340（シュノア、2020）、BIP-341（Taproot、2020）──の著者または共著者。2016年に OpenSSL を Bitcoin の ECDSA バックエンドから置き換えた libsecp256k1 ライブラリーの発起人。Blockstream 共同創業者。"
+description: "ベルギーのソフトウェア技術者（sipa）。BIP-32、SegWit、Schnorr、Taprootの著者/共著者、libsecp256k1発起人、Blockstream共同創業。"
 isSatoshi: false
 tags:
   - "pieter-wuille"

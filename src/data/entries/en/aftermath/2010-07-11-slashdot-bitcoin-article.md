@@ -8,7 +8,7 @@ author: "Slashdot"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Slashdot, one of the most influential technology news sites at the time, published an article about Bitcoin v0.3. The resulting 'Slashdot effect' caused a massive surge in downloads and new users, marking Bitcoin's first significant mainstream tech media exposure."
+description: "Slashdot, an influential tech news site at the time, publishes an article about Bitcoin v0.3. The Slashdot effect causes a surge in downloads — Bitcoin's first major mainstream tech media exposure."
 isSatoshi: false
 tags:
   - "slashdot"

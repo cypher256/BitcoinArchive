@@ -10,7 +10,7 @@ participants:
     slug: "julian-assange"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "WikiLeaksがビットコインでの寄付受付を開始し、Bank of America、Visa、MasterCard、PayPal、Western Unionによる金融封鎖を回避した。サトシは6か月前にこれに警告を発し、政府の不要な注目をまだ未成熟なネットワークに集めることになると述べていた。"
+description: "WikiLeaksがビットコイン寄付受付を開始、金融封鎖を回避。サトシは6か月前に政府の注目を招くと警告していた。"
 isSatoshi: false
 tags:
   - "wikileaks"

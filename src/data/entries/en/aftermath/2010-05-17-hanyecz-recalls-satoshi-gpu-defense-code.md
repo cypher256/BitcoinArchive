@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "A recollection-based account from Laszlo Hanyecz: Satoshi reciprocated Hanyecz's GPU miner code by sharing Satoshi's own independently developed GPU mining code, kept as a contingency defense against potential 51% attacks rather than for mining coins. The full private email correspondence has not been publicly released; what appears here is Hanyecz's recall of the exchange as shared in interviews with Cointelegraph and InsideBitcoins. The May 17, 2010 date is approximate, anchored on Hanyecz's narrative timeline relative to his May 10 GPU announcement."
+description: "Hanyecz recalls Satoshi reciprocating his GPU miner code by sharing his own GPU mining code, kept as defense against potential 51% attacks rather than for mining. From later interviews."
 isSatoshi: false
 tags:
   - "gpu-mining"

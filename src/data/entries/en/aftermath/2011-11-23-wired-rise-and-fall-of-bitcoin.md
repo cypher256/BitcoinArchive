@@ -26,7 +26,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Amir Taaki"
     slug: "amir-taaki"
-description: "Benjamin Wallace's feature in Wired magazine — one of the earliest major mainstream articles on Bitcoin. It traced the arc from Satoshi's whitepaper through the mining boom, the Mt. Gox hack, and the community's growing pains, and closed with Jeff Garzik's iconic line: 'We really don't care.'"
+description: "Benjamin Wallace's Wired feature — an early major mainstream article on Bitcoin. Traces the whitepaper, mining boom, Mt. Gox hack, and growing pains, ending with Garzik's \"We really don't care.\""
 isSatoshi: false
 tags:
   - "media"

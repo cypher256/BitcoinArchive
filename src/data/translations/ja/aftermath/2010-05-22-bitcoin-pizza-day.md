@@ -10,7 +10,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Jeremy Sturdivant"
     slug: "jeremy-sturdivant"
-description: "ラズロ・ハニエツがPapa John'sのピザ2枚を10,000 BTCで購入した。ビットコインによる最初の物理的商品の購入であり、2010年5月22日に成立したこの取引は毎年「ビットコインピザデー」として祝われている。当時の10,000 BTCは約41ドルだった。"
+description: "ハニエツがピザ2枚を10,000 BTCで購入。ビットコインによる初の物理商品購入として毎年「ビットコインピザデー」として祝われる。当時約41ドル。"
 isSatoshi: false
 tags:
   - "laszlo-hanyecz"

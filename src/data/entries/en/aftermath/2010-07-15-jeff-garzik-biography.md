@@ -8,7 +8,7 @@ author: "Jeff Garzik"
 participants:
   - name: "Jeff Garzik"
     slug: "jeff-garzik"
-description: "Jeff Garzik: Software engineer, Linux kernel contributor, and Red Hat employee who discovered Bitcoin via Slashdot in July 2010. He became one of the top three most prolific Bitcoin Core contributors, created cpuminer, authored multiple BIPs, and later co-founded Bloq."
+description: "Software engineer (born 1974), Linux kernel contributor, Red Hat employee. Discovered Bitcoin via Slashdot in July 2010. Top-3 Bitcoin Core contributor, built cpuminer, wrote BIPs, co-founded Bloq."
 isSatoshi: false
 tags:
   - "jeff-garzik"
