@@ -10,7 +10,7 @@ participants:
     slug: "mike-hearn"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "マイク・ハーンがサトシ・ナカモトとの私的なメールのやり取りを公開し、サトシのビットコインの技術的な将来についての考えに関する貴重な洞察を提供した。"
+description: "マイク・ハーンがサトシ・ナカモトとのメールのやり取りを公開し、サトシのビットコインの技術的な将来についての考えに関する貴重な洞察を提供した。"
 isSatoshi: false
 tags:
   - "mike-hearn"

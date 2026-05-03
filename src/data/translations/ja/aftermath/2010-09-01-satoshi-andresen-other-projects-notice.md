@@ -37,7 +37,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)のビットコインへの初期関与に関する Wikipedia の記述によれば、2010 年 9 月にサトシ・ナカモトはギャビンに「他のプロジェクトに取り組んでいる」と私的に伝えた:
+[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)のビットコインへの初期関与に関する Wikipedia の記述によれば、2010 年 9 月にサトシ・ナカモトはギャビンに「他のプロジェクトに取り組んでいる」とメールで伝えた:
 
 > In September 2010, Nakamoto told Andresen he was working on other projects, and over the next few months, he gave Andresen control of the SourceForge code repository, and the project's "alert key" as well.
 >
@@ -53,6 +53,6 @@ translationStatus: complete
 - **2010 年 12 月 19 日**: [ギャビンによるプロジェクト管理引き継ぎの公的承諾](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)
 - **2011 年 4 月 26 日**: [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）
 
-公開記録上、サトシの撤退の起点を 12 月ではなく **2010 年 9 月** に置くと、12 月の各イベントの読み方が実質的に変わる。12 月 12 日の「バトンを渡す」発言は突発的な告知ではなく、3 か月にわたって私的に進行していた移行の対外的な締めくくりに当たる。
+公開記録上、サトシの撤退の起点を 12 月ではなく **2010 年 9 月** に置くと、12 月の各イベントの読み方が実質的に変わる。12 月 12 日の「バトンを渡す」発言は突発的な告知ではなく、3 か月にわたって非公開で進行していた移行の対外的な締めくくりに当たる。
 
 *[編者注：本エントリーは、Wikipedia がギャビンの回想を引用する形で記述している事実を、独立した移行イベントとして記録するためのもの。9 月の通信そのものは逐語では公開記録に存在しない。日付 2010-09-01 は代表的なプレースホルダーであり、9 月のうちの正確な日付は公開記録上保存されていない。]*

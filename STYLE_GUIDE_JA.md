@@ -612,6 +612,7 @@ NHK, and Kyodo News all standardize on the trailing form.
 | miner | マイナー | 採掘者 | Bitcoin context |
 | wallet | ウォレット | 財布 | Bitcoin context |
 | interface | インターフェース | インタフェース / インターフェイス | |
+| private email / private correspondence | メール | 私的メール / 個人メール / プライベートメール / 私的(な)コミュニケーション / 私的(な)やり取り / 私的(な)通信 | In Japanese, `メール` implies one-to-one private correspondence by default. Public mailing-list posts use `メーリングリスト` / `ML`; forum posts use `フォーラム投稿`. CC and BCC do not change the private nature, only the recipient set. The `私的` / `個人` / `プライベート` qualifier in front of `メール` is therefore redundant in JA, even though `private email` is needed in EN to disambiguate from list-broadcast emails. For non-email senses of `private` (invite-only mailing list, private deliberation, non-public records, etc.) use `非公開` / `個別` / `個人的に` per context. |
 | block height | ブロック高 | ブロックの高さ / 高さ | Use `ブロック高` as a technical term; the literal `高さ` collides with general physical-height usage |
 | Pieter Wuille | ピーター・ウィーユ | ピーター・ウィユ | Match `participants.ts` (long-vowel form) |
 | Merkle root | マークルルート | merkleルート / Merkleルート | Code identifier `hashMerkleRoot` and surname `R.C. Merkle` are out of scope |

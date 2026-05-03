@@ -49,7 +49,7 @@ timeline
     title ニック・サボのビットコイン関連年表
     1994 : 「スマートコントラクト」 用語を提唱
     1996 : 論文「Smart Contracts: Building Blocks for Digital Markets」 発表
-    1998 : Bit Gold を構想 (libtech 私的 メーリングリスト)
+    1998 : Bit Gold を構想 (libtech 非公開メーリングリスト)
     2005 : Bit Gold 完全設計を Unenumerated ブログで公開 (12月29日)
     2008 : 「誰か Bit Gold を実装してくれないか」 Unenumerated コメント (4月27日)
     2009 : Bitcoin v0.1 公開、 サボは Unenumerated 継続 (1月)

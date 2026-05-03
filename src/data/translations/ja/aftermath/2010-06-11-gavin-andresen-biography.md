@@ -60,9 +60,9 @@ translationStatus: complete
 timeline
     title ギャビン・アンドレセンのビットコイン関連年表
     2010 : Bitcoin Faucet 公開 - 最初期の普及ツール (6月)
-         : サトシからの 最初の私的撤退シグナル (9月)
+         : サトシからの 最初の メールでの 撤退シグナル (9月)
          : 引き継ぎ - SVN アクセス + リードメンテナー公式宣言 (12月)
-    2011 : サトシの最後の私的メール - CAlert キー譲渡 (4月)
+    2011 : サトシの最後のメール - CAlert キー譲渡 (4月)
          : CIA / In-Q-Tel カンファレンス、 サトシ沈黙後 (6月)
     2012 : Bitcoin Foundation 共同設立 - アンドレセンは チーフサイエンティスト 就任 (9月)
     2014 : リードメンテナー退任 - ヴラディーミル・ ヴァン・デア・ラーンへ 引き継ぎ (4月)
@@ -78,7 +78,7 @@ timeline
 |------|------|------|
 | 2010-09-01 | [アンドレセン宛メール「他のプロジェクトに取り組んでいる」](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | 公開記録上最も早い撤退シグナル |
 | 2010-12-03 | [マルミ宛メールでアンドレセンを開発・管理の引き継ぎ先として推薦](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) | 推薦 |
-| 2010-12-12 朝 | [SVN 権限譲渡 + リーダーシップ承認メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/) | コードベース + 私的承認 |
+| 2010-12-12 朝 | [SVN 権限譲渡 + リーダーシップ承認メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/) | コードベース + メール承認 |
 | 2010-12-12 18:22 UTC | [BitcoinTalk フォーラム最終投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | 最後の公開発信 |
 | 2010-12-19 | [アンドレセン公的告知「サトシの祝福を受けて」](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) | 役割の公的引き受け。同日 `bitcoin/bitcoin` GitHub リポジトリを作成 |
 | 2011-04-23 | [マイク・ハーン宛メール「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 撤退表明（アンドレセンへの信任）。当時は非公開、後年公開 |

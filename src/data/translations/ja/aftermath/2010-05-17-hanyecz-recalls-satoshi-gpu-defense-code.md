@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
-    note: "Cointelegraph およびその他のメディアとのインタビューにおけるラズロ・ハニエツの公開発言に基づく。完全な私的メールは公開されておらず、本記事の引用はハニエツがサトシの発言や共有内容について思い出した回想である。"
+    note: "Cointelegraph およびその他のメディアとのインタビューにおけるラズロ・ハニエツの公開発言に基づく。完全なメールは公開されておらず、本記事の引用はハニエツがサトシの発言や共有内容について思い出した回想である。"
   - name: "InsideBitcoins - Laszlo Hanyecz Claims Satoshi Invented GPU Mining"
     url: "https://insidebitcoins.com/news/laszlo-hanyecs-claims-satoshi-invented-gpu-mining-to-prevent-51-attacks"
 relatedEntries:
@@ -32,7 +32,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-*[編者注：本エントリーは回想に基づく記事であり、メールの一次資料ではない。サトシとハニエツの完全な私的メールは公開されていない。以下に記すやり取り — サトシが GPU マイニングコードを返礼として共有したこと、防衛目的の動機、意図的に最適化を避けた選択 — は、ハニエツの後年のインタビュー（Cointelegraph、InsideBitcoins）から再構成したものである。2010 年 5 月 17 日という日付は、ハニエツの 5 月 10 日 Bitcointalk GPU 発表との前後関係から推定した近似値。]*
+*[編者注：本エントリーは回想に基づく記事であり、メールの一次資料ではない。サトシとハニエツの完全なメールは公開されていない。以下に記すやり取り — サトシが GPU マイニングコードを返礼として共有したこと、防衛目的の動機、意図的に最適化を避けた選択 — は、ハニエツの後年のインタビュー（Cointelegraph、InsideBitcoins）から再構成したものである。2010 年 5 月 17 日という日付は、ハニエツの 5 月 10 日 Bitcointalk GPU 発表との前後関係から推定した近似値。]*
 
 <!-- speaker: narrator -->
 ラズロ・ハニエツの後年の回想によれば、ハニエツがサトシに GPU マイナーのコードを共有した後に注目すべきやり取りがあったという。サトシは独自に開発した GPU マイニングコードを返礼として共有してきた。ハニエツが伝えるところでは、この事実は、サトシがハニエツの公開発表より前から GPU マイニングに取り組んでいたことを示すものであった — コインをマイニングするためではなく、ネットワークを潜在的な 51% 攻撃から防衛するための備えとしてである。

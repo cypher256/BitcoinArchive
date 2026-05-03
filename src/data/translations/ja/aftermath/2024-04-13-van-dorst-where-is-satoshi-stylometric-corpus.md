@@ -45,7 +45,7 @@ translationStatus: complete
 
 - **メーリングリストコーパス：** 暗号学関連メーリングリスト 10 件以上における 1992〜2000 年の投稿 500,000 件以上。書き手 75,000 人以上を網羅。
 - **Reddit コーパス：** /r/Bitcoin の 2005〜2019 年のコメント 7,500,000 件以上。書き手 70,000 人以上を網羅。
-- **サトシコーパス：** [ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)、[BitcoinTalk フォーラム投稿](/BitcoinArchive/ja/participants/satoshi-nakamoto/)、[私的メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、[v0.1 ソース公開](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のコードコメントを含む 81,500 語。
+- **サトシコーパス：** [ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)、[BitcoinTalk フォーラム投稿](/BitcoinArchive/ja/participants/satoshi-nakamoto/)、[メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、[v0.1 ソース公開](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のコードコメントを含む 81,500 語。
 
 **文体計量指標：**
 

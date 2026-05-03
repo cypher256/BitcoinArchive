@@ -24,7 +24,7 @@ tags:
 secondarySources:
   - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全な私的メールはBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"
+    note: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全なメールはBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
   - name: "Cryptography Mailing List Archive"
@@ -49,4 +49,4 @@ translationStatus: complete
 > 万が一普及した場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない。十分な数の人々が同じように考えれば、それは自己実現的予言となる。一度ブートストラップされれば、自動販売機にコインを入れるように気軽にウェブサイトに数セント支払えるようになった場合、非常に多くの応用が可能になる。
 
 <!-- speaker: narrator -->
-サトシとトランメルの私的なやり取りから生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。
+サトシとトランメルのメールのやり取りから生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。

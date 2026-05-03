@@ -54,7 +54,7 @@ translationStatus: complete
 - **2010 年 12 月 15 日**: 最後のソースコミット（v0.3.19）
 - **2010 年 12 月 19 日**: ギャビンの公的承諾（本エントリー）と GitHub リポジトリ作成
 
-サトシは [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) との[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。私的な側は 4 か月後の 2011 年 4 月 26 日に [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
+サトシは [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) との[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。メール側は 4 か月後の 2011 年 4 月 26 日に [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
 
 **リードメンテナーの地位はどう確立されたか（編集的な読解）：**
 
@@ -62,7 +62,7 @@ translationStatus: complete
 
 公的記録に残るのは以下の要素：
 
-- サトシによる [2010 年 12 月 3 日のマルティ・マルミ宛の私的推薦](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) と、[12 月 12 日の SVN アクセス譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)。
+- サトシによる [2010 年 12 月 3 日のマルティ・マルミ宛のメールでの推薦](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) と、[12 月 12 日の SVN アクセス譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)。
 - 本エントリーで扱う 12 月 19 日の告知で、アンドレセン自身が「ビットコインのプロジェクト管理にもっと積極的に関わっていく」 と宣言したこと（同日付の英文原文に "more active project management" の表現あり）。
 - 他開発者・ユーザーによる継続的な参加、および反対表明や対抗主張が（本アーカイブの調査範囲では）記録に残っていないこと。
 

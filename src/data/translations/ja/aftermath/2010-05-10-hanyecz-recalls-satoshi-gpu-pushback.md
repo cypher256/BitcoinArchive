@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "ハニエツが2010年5月10日のGPUマイニング公開発表に対するサトシの私的懸念を回想。原文未公開、後年の取材に基づく。"
+description: "ハニエツが2010年5月10日のGPUマイニング公開発表に対するサトシのメールでの懸念を回想。原文未公開、後年の取材に基づく。"
 isSatoshi: false
 tags:
   - "gpu-mining"
@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
-    note: "本記事中でサトシに帰属させた引用は、CoinDesk（2025 年）・Bitcoin Magazine・Cointelegraph 等のインタビューでラズロ・ハニエツが共有した回想に基づく。完全な私的メールは公開されていない。"
+    note: "本記事中でサトシに帰属させた引用は、CoinDesk（2025 年）・Bitcoin Magazine・Cointelegraph 等のインタビューでラズロ・ハニエツが共有した回想に基づく。完全なメールは公開されていない。"
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 relatedEntries:
@@ -35,7 +35,7 @@ translationStatus: complete
 *[編者注：本エントリーは回想に基づく記事であり、メールの一次資料ではない。一次資料で検証可能なのは、ハニエツによる GPU マイニング発表（2010 年 5 月 10 日、Bitcointalk フォーラム公開記録）のみ。サトシ側のやり取り — 本記事で引用されるメール — はハニエツの後年のインタビューでの回想に依拠する。元のメール文言は公開されておらず、以下に掲載するのは CoinDesk（2025 年）、Bitcoin Magazine、Cointelegraph 等のインタビューでハニエツが思い出した語感と内容である。]*
 
 <!-- speaker: narrator -->
-2010 年 5 月 10 日にラズロ・ハニエツが Bitcointalk フォーラムで GPU マイニングの発見を発表した後、ハニエツの後年のインタビュー証言によれば、サトシ・ナカモトは懸念を示すメールを私的に送ってきた。ハニエツは初めて GPU（グラフィックス・プロセッシング・ユニット）を使ったビットコインのマイニングに成功した人物であり、CPU マイニングよりも劇的に高いハッシュレートを達成していた。
+2010 年 5 月 10 日にラズロ・ハニエツが Bitcointalk フォーラムで GPU マイニングの発見を発表した後、ハニエツの後年のインタビュー証言によれば、サトシ・ナカモトは懸念を示すメールを送ってきた。ハニエツは初めて GPU（グラフィックス・プロセッシング・ユニット）を使ったビットコインのマイニングに成功した人物であり、CPU マイニングよりも劇的に高いハッシュレートを達成していた。
 
 ハニエツの回想によれば、サトシは次のように書いてきたという：
 

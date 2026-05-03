@@ -120,7 +120,7 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 ### Direct-correspondence record (separate layer, reference)
 
-How much each candidate actually exchanged words with Satoshi is an observable fact independent of capability profile and stylometric distance. Tabulating the archive's documented communication per candidate makes the contrast clear: only three candidates have any documented exchange, while six candidates have no record of direct contact with Satoshi at all.
+How much each candidate actually exchanged words with Satoshi is an observable fact independent of capability profile and stylometric distance. Tabulating the archive's documented communication per candidate makes the contrast clear: four candidates have some form of documented exchange (one of them only as a reply in a Satoshi-started thread), and six candidates have no record of direct contact with Satoshi at all.
 
 ```mermaid
 gantt

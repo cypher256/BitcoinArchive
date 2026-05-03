@@ -12,7 +12,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシの最後の既知の私的通信：2011年4月23日ハーンへ「ギャビンたちに任せれば安心」、4月26日アンドレセンへアラートキー移譲し「連絡が取れなくなる」と書く。"
+description: "サトシの最後の既知のメール：2011年4月23日ハーンへ「ギャビンたちに任せれば安心」、4月26日アンドレセンへアラートキー移譲し「連絡が取れなくなる」と書く。"
 isSatoshi: true
 tags:
   - "final-communication"
@@ -40,7 +40,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知の私的通信は、2011年4月に送られた2通のメールである。
+[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知のメールは、2011年4月に送られた2通のメールである。
 
 **2011年4月23日 — マイク・ハーン宛：**
 
