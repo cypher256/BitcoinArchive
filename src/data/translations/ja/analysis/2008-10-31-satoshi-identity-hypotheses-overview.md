@@ -203,7 +203,7 @@ quadrantChart
 
 **経歴。** 計算機科学者・法学者・暗号学者（1964 年生まれ）。「スマートコントラクト」 という用語を 1994 年に提唱。プルーフ・オブ・ワークに基づく分散型デジタル通貨提案 [*Bit Gold*](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) の設計者で、1998 年に構想、2005 年 12 月 29 日に Unenumerated ブログで完全な設計を公開。
 
-**外部的状況。** 自己否定（複数回：2014 年フリスビー宛メール、2015 年 NYT ポッパー宛メール返信、2017 年ティム・フェリス・ショウほか）。→ [サボ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) に Bit Gold の概念的近接論点、文体計量分析（Skye Grey 2013、アストン大学 2014、NYT ポッパー 2015）、状況証拠的なパターン一致（4 月 5 日 誕生日一致・ハンガリー系の系譜・ティム・フェリス・ショウ番組内の「I designed bitcoi…gold」 言い間違え）、反証（2008 年 4 月の Bit Gold 実装支援募集コメント、2011 年 5 月「Nakamoto improved my design」 ブログ、2007〜2008 年の継続的な Unenumerated 活動、C++ 公開コードの不在）の検討を記載。
+**外部的状況。** 自己否定（複数回：2014 年フリスビー宛メール、2015 年 NYT ポッパー宛メール返信、2017 年ティム・フェリス・ショウほか）。→ [サボ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) に Bit Gold の概念的近接論点、文体計量分析（Skye Grey 2013、アストン大学 2014、NYT ポッパー 2015）、状況証拠的なパターン一致（4 月 5 日誕生日一致・ハンガリー系の系譜・ティム・フェリス・ショウ番組内の「I designed bitcoi…gold」 言い間違え）、反証（2008 年 4 月の Bit Gold 実装支援募集コメント、2011 年 5 月「Nakamoto improved my design」 ブログ、2007〜2008 年の継続的な Unenumerated 活動、C++ 公開コードの不在）の検討を記載。
 
 #### レン・サッサマン
 

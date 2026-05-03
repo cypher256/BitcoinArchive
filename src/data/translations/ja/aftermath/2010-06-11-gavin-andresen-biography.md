@@ -57,7 +57,7 @@ translationStatus: complete
 
 ```mermaid
 timeline
-    title アンドレセンのビットコイン関与 (2010-2014)
+    title ギャビン・アンドレセンのビットコイン関連年表
     2010 : Bitcoin Faucet 公開 - 最初期の普及ツール (6月)
          : サトシからの 最初の私的撤退シグナル (9月)
          : 引き継ぎ - SVN アクセス + リードメンテナー公式宣言 (12月)

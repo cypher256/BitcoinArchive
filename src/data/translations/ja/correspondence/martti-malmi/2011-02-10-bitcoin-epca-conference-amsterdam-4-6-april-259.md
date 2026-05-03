@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin @ EPCAカンファレンス アムステルダム 4月4-6日？"
+title: "Re: Bitcoin @ EPCAカンファレンス・アムステルダム 4月4-6日？"
 date: 2011-02-10T20:35:22Z
 type: "correspondence"
 source: "malmi-email-archive"

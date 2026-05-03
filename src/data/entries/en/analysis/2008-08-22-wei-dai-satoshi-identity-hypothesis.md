@@ -58,23 +58,6 @@ This entry documents the recurring public hypothesis that [Wei Dai](/BitcoinArch
 
 The hypothesis is that Wei Dai is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 22, 2008 email from Satoshi](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), Wei Dai's response with b-money publication history, and Satoshi's January 10, 2009 follow-up ("achieves nearly all the goals you set out to solve in your b-money paper") — were stagecraft to maintain the pseudonym. Under this reading, Wei Dai operated as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal while continuing his Crypto++ maintenance and other public scholarship as a public-record decoy, and his [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) was a calculated public denial.
 
-The hypothesis chronology against Bitcoin's:
-
-```mermaid
-timeline
-    title Wei Dai vs Satoshi - documented record
-    1998 : b-money published on cypherpunks list (Nov 26)
-         : Adam Back's b-money critique on cypherpunks list (Dec 6)
-    2007 : Satoshi development window begins (mid-2007 per his own timeline)
-    2008 : Satoshi to Adam Back; Back refers Satoshi to Wei Dai (Aug 20-21)
-         : Satoshi to Wei Dai - "I wasn't aware of the b-money page" (Aug 22)
-         : Whitepaper published; b-money cited as reference [1] (Oct 31)
-    2009 : Bitcoin v0.1 bundles Crypto++ 5.5.2 SHA-256 (Jan)
-         : Satoshi to Wei Dai - "achieves nearly all the goals" of b-money (Jan 10)
-    2010 : v0.3.6 integrates Crypto++ 5.6.0 SSE2-optimized SHA-256 (Jul)
-    2014 : Wei Dai AALWA retrospective - says Satoshi "not previously active" (Jan 12)
-```
-
 ## 2. The arguments the hypothesis rests on
 
 ### 2.1 b-money's conceptual proximity to Bitcoin

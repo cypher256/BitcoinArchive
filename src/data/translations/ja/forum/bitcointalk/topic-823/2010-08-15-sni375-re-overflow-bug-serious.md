@@ -1,5 +1,5 @@
 ---
-title: "Re: オーバーフローバグ 深刻"
+title: "Re: オーバーフローバグ深刻"
 date: 2010-08-15T23:37:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「オーバーフローバグ 深刻」におけるサトシ・ナカモトの返信。"
+description: "スレッド「オーバーフローバグ深刻」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

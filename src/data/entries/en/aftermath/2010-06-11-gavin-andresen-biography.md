@@ -56,7 +56,7 @@ Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software d
 
 ```mermaid
 timeline
-    title Andresen's Bitcoin involvement, 2010 - 2014
+    title Gavin Andresen's Bitcoin-relevant timeline
     2010 : Bitcoin Faucet launched - one of the earliest adoption tools (Jun)
          : Satoshi's first private withdrawal signal (Sep)
          : Handover - SVN access + public lead-maintainer announcement (Dec)

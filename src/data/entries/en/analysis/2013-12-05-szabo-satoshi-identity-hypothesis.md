@@ -92,6 +92,25 @@ The argument: among all pre-Bitcoin proposals, Bit Gold maps onto Bitcoin's desi
 
 The objection: forensic fit on a single dimension does not select uniquely. The whitepaper cites Hashcash and b-money but does not cite Bit Gold — which is the awkward fact for the Szabo-as-Satoshi reading, since Szabo would not need to omit citing himself but would have an incentive to cite Bit Gold as a self-misdirection. The omission cuts either way and does not by itself decide.
 
+**Component-level comparison.** What Bit Gold contains and what Bitcoin v0.1 added:
+
+| Bitcoin component | Bit Gold (1998 / 2005) | Bitcoin (2009) |
+|---|---|---|
+| Proof of work | ✅ | ✅ |
+| Chained PoW (linked solved puzzles) | ✅ — concept | ✅ |
+| Decentralized timestamping | ✅ — concept | ✅ |
+| Anti-trust monetary framing | ✅ | ✅ |
+| Longest-chain consensus rule | ❌ | ✅ |
+| UTXO model | ❌ | ✅ |
+| Difficulty adjustment | ❌ | ✅ |
+| 21-million supply cap | ❌ | ✅ |
+| Mining-reward block-subsidy issuance | ❌ | ✅ |
+| ECDSA-based transactions | ❌ | ✅ |
+| Operational P2P network | ❌ | ✅ |
+| Working implementation | ❌ — concept never built | ✅ — 19,901 lines of C++ |
+
+The conceptual overlap (top section of the table) is what the forensic-fit argument rests on. The contributions Bitcoin had to add over Bit Gold (bottom section) are documented in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) as Satoshi's novel contributions, not inheritable from Bit Gold. Whether the conceptual overlap is decisive depends on whether the reader counts "Bit Gold conceived" as the same kind of capability as "Bitcoin shipped" — the §3.5 architectural-gap argument expands on this.
+
 ### 2.2 Stylometric analyses and mainstream press coverage (Skye Grey 2013, Aston University 2014, NYT/Popper 2015)
 
 Pseudonymous blogger **Skye Grey** published *"Satoshi Nakamoto is (probably) Nick Szabo"* on LikeInAMirror.com in December 2013. The methodology:
@@ -107,6 +126,17 @@ In **April 2014**, [forensic-linguistic researchers at Aston University reported
 In **May 2015**, [Nathaniel Popper of *The New York Times* published an excerpt from his book *Digital Gold*](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) in which he wrote that, across his interviews with early Bitcoin participants, "I encountered a quiet but widely held belief that much of the most convincing evidence pointed to a reclusive American man of Hungarian descent named Nick Szabo." This brought the hypothesis into the major-press tier — comparable to the role the [April 2026 Carreyrou NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) later played for Adam Back. Szabo replied to Popper: "I am not Satoshi." A year later, when Popper asked again by email, Szabo repeated the denial.
 
 The objection: Skye Grey's analysis is a self-published blog post by a pseudonymous author, not a peer-reviewed academic paper. Its candidate selection is opportunistic (selecting cryptography researchers known to have written about digital cash) rather than systematic. The Aston University report is more formal but its candidate set is also limited and its methodology contested. As later critics including [David Gerard](https://davidgerard.co.uk/blockchain/2018/12/16/no-nick-szabo-wasnt-satoshi-in-2014-either/) noted, stylometric analyses on candidate sets defined by topical overlap (writers who wrote about digital cash) inherently confound shared subject-matter vocabulary with shared individual style. The 2026 NYT investigation into [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), with its much larger candidate pool (620 cryptography-mailing-list writers) and explicit treatment of the confirmation-bias risk, illustrates the methodological tension. [Bas van Dorst's 2024 'Where is Satoshi?' open-source corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) takes the opposite design choice — 75,000+ authors with no topical pre-filtering, full numerical data release, and an author who explicitly declines to name a leading candidate — and stands as the methodological contrast against which the candidate-pool-narrow studies (Skye Grey, Aston) are measured.
+
+**Stylometric studies summary — Szabo's result in each of the four most-cited investigations:**
+
+| Stylometric study | Szabo's result |
+|---|---|
+| Skye Grey 2013 (single-hypothesis test on Szabo) | "Only 0.1% of cryptography researchers" — top match by Skye Grey's framing |
+| Aston University 2014 (11 candidates, Project Bitcoin) | Named **top of 11**, publicly identified |
+| van Dorst 2024 / [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (75,000+) | Rank **595 / 12,739** — top **4.67%**, **highest** of named candidates |
+| Cafiero / Carreyrou NYT 2026 (12 candidates) | Rank not published; Adam Back placed top with Hal Finney near tie |
+
+Across the four investigations, Szabo is named top in three (Skye Grey, Aston, Bitcoin Institute reanalysis). The fourth (Cafiero / Carreyrou 2026) places Adam Back top — but Cafiero himself qualified the result as inconclusive, and the NYT investigation's candidate pool design was the methodological inverse of the broader-corpus reanalysis that places Szabo first.
 
 ### 2.3 Polymath profile fit
 
@@ -171,13 +201,15 @@ The argument-against-the-objection: Unenumerated could itself have been an elabo
 
 ### 3.4 Self-denial across multiple statements
 
-Szabo has consistently denied being Satoshi Nakamoto. Documented denials include:
+Szabo has consistently denied being Satoshi Nakamoto. Documented denials:
 
-- **2014 email to Dominic Frisby** (after Frisby's *Bitcoin: The Future of Money?* book named Szabo as Satoshi): "I'm afraid you got it wrong doxing me as Satoshi, but I'm used to it."
-- **2014 Twitter denials** following the wave of Skye Grey / Aston University coverage.
-- **2015 *New York Times* response to Nathaniel Popper** (in the *Digital Gold* excerpt context): "I am not Satoshi." Repeated to Popper a year later by email.
-- **2017 Tim Ferriss Show podcast appearance** (#244, "The Quiet Master of Cryptocurrency," co-hosted by Naval Ravikant): Szabo discussed cryptocurrency at length without claiming Bitcoin authorship; his consistent framing throughout treats Satoshi as a separate person.
-- **Recurring Wikipedia-cited public statements** denying the identification.
+| Year | Source | Direct quote / context |
+|---|---|---|
+| 2014 | Email to Dominic Frisby (after the *Bitcoin: The Future of Money?* book named Szabo) | "I'm afraid you got it wrong doxing me as Satoshi, but I'm used to it." |
+| 2014 | Twitter | Multiple denials following the wave of Skye Grey / Aston University coverage |
+| 2015 | NYT / Popper *Digital Gold* email response | "I am not Satoshi." Repeated by email a year later when Popper asked again |
+| 2017 | [Tim Ferriss Show #244](https://tim.blog/2017/06/04/nick-szabo/) (co-hosted by Naval Ravikant) | Long-form crypto discussion; consistent framing of Satoshi as a separate person; no claim of Bitcoin authorship |
+| ongoing | Wikipedia-cited public statements | Recurring denials |
 
 Self-denial is not by itself dispositive — Wright self-claimed and was demonstrably lying; Dorian Nakamoto self-denied and was demonstrably correct; the value of a denial depends on what surrounds it. Szabo's denials are surrounded by the May 2011 "Nakamoto improved my design" framing, the continued Unenumerated activity, the April 2008 implementation-request comment, and the absence of any contradictory action — all of which are internally consistent with Szabo not being Satoshi.
 

@@ -24,7 +24,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
-  - name: "本アーカイブ ギャビン・アンドレセン伝"
+  - name: "本アーカイブのギャビン・アンドレセン伝"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
     note: "本アーカイブのギャビン・アンドレセン伝に「2010 年 9 月から 10 月にかけて、サトシは SourceForge のコードリポジトリへのコミット権と、ネットワーク警報鍵をギャビンに付与した」と記述されている。"
 relatedEntries:

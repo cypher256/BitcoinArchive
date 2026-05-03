@@ -126,10 +126,10 @@ timeline
 
 ### 1.1 ジャーナリズム経路
 
-- **Newsweek (2014 年 3 月 6 日)** — リア・マクグラス・グッドマンがドリアン・プレンティス・サトシ・ナカモトを名前一致と訪問取材によりサトシ候補として特定。ドリアンは AP 通信を含む複数の場でこの主張を否定した。詳細は [Newsweek/ドリアン エントリ](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) 参照。
+- **Newsweek (2014 年 3 月 6 日)** — リア・マクグラス・グッドマンがドリアン・プレンティス・サトシ・ナカモトを名前一致と訪問取材によりサトシ候補として特定。ドリアンは AP 通信を含む複数の場でこの主張を否定した。詳細は [Newsweek／ドリアンのエントリ](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) 参照。
 - **Forbes (2014 年 3 月 25 日)** — アンディ・グリーンバーグの長文取材記事。後にジェイムソン・ロップが定式化することになる「ハル・フィニーのレース当日アリバイ」 を含む。当時の最有力候補としてハル・フィニーを扱い、長文ジャーナリズムとして提示した。
 - **ニューヨーク・タイムズ — ナサニエル・ポパー／『Digital Gold』 (2015 年 5 月 15 日)** — ポパーの NYT 記事は著書『Digital Gold』 からの抜粋であり、ニック・サボを最有力サトシ候補として名指した。サボはメールで否定し、1 年後にポパーが再質問した際も否定を繰り返した。2026 年の NYT カレイロウによるアダム・バック特定以前で最も多く引用される主流大手紙によるサボ特定。詳細は [ポパー NYT 余波エントリ](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) 参照。
-- **HBO『Money Electric: The Bitcoin Mystery』 (2024 年 10 月 8 日)** — カレン・ホーバック監督によるドキュメンタリー。2010 年 12 月の BitcoinTalk スレッドの読み込みを根拠に、ピーター・トッドをサトシ候補として名指した。トッドは公的に否定し、技術コミュニティは証拠を状況証拠的と批判した。詳細は [HBO ドキュメンタリー エントリ](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) 参照。
+- **HBO『Money Electric: The Bitcoin Mystery』 (2024 年 10 月 8 日)** — カレン・ホーバック監督によるドキュメンタリー。2010 年 12 月の BitcoinTalk スレッドの読み込みを根拠に、ピーター・トッドをサトシ候補として名指した。トッドは公的に否定し、技術コミュニティは証拠を状況証拠的と批判した。詳細は [HBO ドキュメンタリーのエントリ](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) 参照。
 - **ニューヨーク・タイムズ — ジョン・カレイロウによる調査 (2026 年 4 月 8 日)** — ピューリッツァー賞受賞ジャーナリストのカレイロウが 18 か月の文体計量分析を経て、Blockstream CEO のアダム・バックを最有力候補として名指した。バックは公的に否定し、委託先言語学者の独立分析は内部で「不確定」 と評された（ハル・フィニーがほぼ並んだ）。詳細は [NYT 調査エントリ](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) 参照。
 
 ### 1.2 法的経路
@@ -143,19 +143,19 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 - **セルジオ・デミアン・ラーナー — Patoshi マイニングパターン (2013 年 4 月、2019 年・2020 年に追加分析)** — ラーナーは初期ブロックの coinbase データに 2 つの独立した指紋を発見した: ExtraNonce の傾きと、ナンス最下位バイトの分布が約 50 個の特定値に限定されていること。これらは一貫して 1 人の初期マイナーを示している。分析では Patoshi マイナーの保有量を 22,503 ブロックにわたる約 110 万 BTC と推定している。詳細は [Patoshi 分析エントリ](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) 参照。
 - **ジェイムソン・ロップ — *Was Satoshi Greedy?* (2022) およびハル・フィニーのレース当日分析 (2023)** — ロップの 2022 年の研究は Patoshi マイナーの行動 (利益最大化ではなくネットワーク防衛のための意図的なハッシュレート抑制) を再構成する。2023 年のハル・フィニー分析は「レース当日アリバイ」 — フィニーがサンタバーバラで 10 マイルレースを走っていた時間帯にサトシがビットコインネットワーク上で活動していた — を、[ハル・フィニー = サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) に対する構造化された反論に定式化した。
 - **アイスランド大学 — *Strangely Mined Bitcoins*、PLOS ONE (2021)** — 査読付き論文。初期ビットコインのナンス分布 (先頭ニブル) に追加の統計的異常を発見し、Lerner の Patoshi パターンを別の方法論レベルで裏付けた。
-- **文体計量による特定の試み (2013〜2026)** — 文体計量・法言語学的分析によりサトシを執筆パターンから特定しようとする方法論的系譜が並行して存在する。最も多く引用される 4 件： [Skye Grey の 2013 年 12 月 LikeInAMirror 調査](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（手作業による句の比較、サボ単独仮説検証）、[Aston University の 2014 年 4 月「Project Bitcoin」 研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（ジャック・グリーヴ博士指導下の法言語学授業課題、11 候補、サボを最上位）、[バス・ヴァン・ドルストの 2024 年 4 月「Where is Satoshi?」 オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（メーリングリスト書き手 75,000 人以上＋ Reddit コメント 750 万件以上、数値データの全面公開、首位候補の指名を意図的に拒否）、 2026 年の カレイロウ／カフィエロ による NYT 調査（上記 §1.1）。4 件のうち 3 件がサボを名指し候補内の最上位に置く（Skye Grey 2013 はサボを名指し、アストン 2014 もサボを名指し、[Bitcoin Institute による再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)はヴァン・ドルストの公開データで 5 名中サボを首位とする）。アダム・バックを名指したのは カフィエロ／カレイロウ 2026 のみであり、カフィエロ自身がその結果を「不確定」 と評している（ハル・フィニーがほぼ同点）。ただし名指し候補内での収束は部分的である：ヴァン・ドルストの 75,000 人著者コーパス全体では、サボより近い無名著者が 594 名存在するため、文体計量帰属は候補空間を絞り込むが、単一の人物を一意に特定するものではない。
+- **文体計量による特定の試み (2013〜2026)** — 文体計量・法言語学的分析によりサトシを執筆パターンから特定しようとする方法論的系譜が並行して存在する。最も多く引用される 4 件： [Skye Grey の 2013 年 12 月 LikeInAMirror 調査](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（手作業による句の比較、サボ単独仮説検証）、[Aston University の 2014 年 4 月「Project Bitcoin」 研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（ジャック・グリーヴ博士指導下の法言語学授業課題、11 候補、サボを最上位）、[バス・ヴァン・ドルストの 2024 年 4 月「Where is Satoshi?」 オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（メーリングリスト書き手 75,000 人以上＋ Reddit コメント 750 万件以上、数値データの全面公開、首位候補の指名を意図的に拒否）、 2026 年のカレイロウ／カフィエロによる NYT 調査（上記 §1.1）。4 件のうち 3 件がサボを名指し候補内の最上位に置く（Skye Grey 2013 はサボを名指し、アストン 2014 もサボを名指し、[Bitcoin Institute による再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)はヴァン・ドルストの公開データで 5 名中サボを首位とする）。アダム・バックを名指したのはカフィエロ／カレイロウ 2026 のみであり、カフィエロ自身がその結果を「不確定」 と評している（ハル・フィニーがほぼ同点）。ただし名指し候補内での収束は部分的である：ヴァン・ドルストの 75,000 人著者コーパス全体では、サボより近い無名著者が 594 名存在するため、文体計量帰属は候補空間を絞り込むが、単一の人物を一意に特定するものではない。
 
 ### 1.4 国家・準国家機関の関心
 
 以下は公開記録に記載のあるもの。**ビットコイン全般に対する国家アクターの関心**として記載する (サトシ個人を国家アクターが追跡しているという主張ではない。後者は推論であり §6 で扱う)。
 
-- **CIA / In-Q-Tel (2011 年 6 月 14 日)** — ギャビン・アンドレセンがバージニア州ラングレーの CIA 本部で、In-Q-Tel の新興技術カンファレンスの一環としてビットコインのプレゼンテーションを行った。アンドレセンは事前にサトシに招待を伝えており、その通知は 2011 年 4 月 26 日のメール — CAlert キーを譲渡したのと同じメール — に含まれていた。サトシは返信しなかった。**CIA カンファレンスへの招待は、プロジェクト参加者からサトシへ届いたことが確認できる最後の話題である**。詳細は [アンドレセン伝記 (CIA Visit セクション)](/BitcoinArchive/ja/participants/gavin-andresen/) と [最後の既知メール エントリ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/) 参照。
+- **CIA / In-Q-Tel (2011 年 6 月 14 日)** — ギャビン・アンドレセンがバージニア州ラングレーの CIA 本部で、In-Q-Tel の新興技術カンファレンスの一環としてビットコインのプレゼンテーションを行った。アンドレセンは事前にサトシに招待を伝えており、その通知は 2011 年 4 月 26 日のメール — CAlert キーを譲渡したのと同じメール — に含まれていた。サトシは返信しなかった。**CIA カンファレンスへの招待は、プロジェクト参加者からサトシへ届いたことが確認できる最後の話題である**。詳細は [アンドレセン伝記 (CIA Visit セクション)](/BitcoinArchive/ja/participants/gavin-andresen/) と [最後の既知メールのエントリ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/) 参照。
 - **米国証券取引委員会 (SEC) (2024 年 1 月 10 日)** — SEC がスポット・ビットコイン上場投資商品 (ETP) を承認。承認によりビットコインが米国規制下の証券取引所に乗り、公的な規制マイルストーンとなった。
 - **米国 Strategic Bitcoin Reserve (2025 年 3 月 6 日)** — 大統領令により Strategic Bitcoin Reserve および United States Digital Asset Stockpile が設立された。ビットコインを米国の主権的準備金政策の対象として正式に位置づけたもの。
-- **中華人民共和国 — ICO・取引所禁止 (2017 年 9 月 4 日)** — 中国規制当局が ICO を禁止し、国内のビットコイン取引所を閉鎖した。詳細は [中国 ICO 禁止 エントリ](/BitcoinArchive/ja/entries/aftermath/2017-09-04-china-ico-ban/) 参照。
-- **米国 — WikiLeaks 圧力経路 (2010 年 12 月〜2011 年 6 月)** — 米政府主導の金融サービス圧力により WikiLeaks の支払いチャネルが遮断された後、コミュニティで提起された「WikiLeaks がビットコイン寄付を受け付けるべき」 という提案にサトシが公的に反対し (「No, don't 'bring it on'...」)、プロジェクトの脆弱性を理由として挙げた。WikiLeaks がビットコインを受け付け始めたのはサトシ撤退後の 2011 年 6 月である。詳細は [WikiLeaks 採用 エントリ](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) 参照。
+- **中華人民共和国 — ICO・取引所禁止 (2017 年 9 月 4 日)** — 中国規制当局が ICO を禁止し、国内のビットコイン取引所を閉鎖した。詳細は [中国 ICO 禁止のエントリ](/BitcoinArchive/ja/entries/aftermath/2017-09-04-china-ico-ban/) 参照。
+- **米国 — WikiLeaks 圧力経路 (2010 年 12 月〜2011 年 6 月)** — 米政府主導の金融サービス圧力により WikiLeaks の支払いチャネルが遮断された後、コミュニティで提起された「WikiLeaks がビットコイン寄付を受け付けるべき」 という提案にサトシが公的に反対し (「No, don't 'bring it on'...」)、プロジェクトの脆弱性を理由として挙げた。WikiLeaks がビットコインを受け付け始めたのはサトシ撤退後の 2011 年 6 月である。詳細は [WikiLeaks 採用のエントリ](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) 参照。
 - **DPRK / Lazarus Group の仮想通貨活動** — FBI および国連 Panel of Experts によって DPRK 関連の Lazarus Group に帰属とされた大規模な仮想通貨窃盗の連続 (2017 年以降の複数事件)。これらはビットコイン関連の犯罪活動を国家アクターに公的記録上で帰属させている。
-- **米国 連邦捜査局 (FBI) — Silk Road 押収 (2013 年 10 月)** — FBI が Silk Road ダークネット市場を押収しロス・ウルブリヒトを逮捕。米国連邦のビットコイン関連法執行作戦として公的記録に入った主要事例。
+- **米国連邦捜査局 (FBI) — Silk Road 押収 (2013 年 10 月)** — FBI が Silk Road ダークネット市場を押収しロス・ウルブリヒトを逮捕。米国連邦のビットコイン関連法執行作戦として公的記録に入った主要事例。
 
 ### 1.5 自己主張・名前一致への対応
 
@@ -175,7 +175,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 | `s_nakamoto` 帰属の SVN コミット | 160 ユニーク | 2009 年〜2010 年 | (同上) |
 | `Satoshi Nakamoto <satoshin@gmx.com>` 署名 git コミット | 34 件 | (SVN 移行後) | (同上) |
 | ホワイトペーパー PDF メタデータ + 3 つの匿名メールアドレス (`satoshi@anonymousspeech.com`、`satoshi@vistomail.com`、`satoshin@gmx.com`) | 1 PDF; タイムスタンプ; TZ オフセット `-07:00` (2008 年 10 月)、`-06:00` (2009 年 3 月); `Language: en-GB` | 2008 年 10 月〜2009 年 3 月 | (PDF メタデータ + 通信記録) |
-| ジェネシスブロック ハードコード定数 | 4 個 (タイムスタンプ、ナンス、ハッシュ、coinbase メッセージ) | 2009 年 1 月 3 日以降、原文どおり | [ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) |
+| ジェネシスブロックのハードコード定数 | 4 個 (タイムスタンプ、ナンス、ハッシュ、coinbase メッセージ) | 2009 年 1 月 3 日以降、原文どおり | [ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) |
 
 通信相手別メール内訳:
 
@@ -221,7 +221,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 
 ### (a) 匿名性のアーキテクチャが本当に十分強固
 
-[匿名性のアーキテクチャ エントリ](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) に照らして読むと、サトシの 6 層 (仮名、通信チャネル、言語的・時間的痕跡、開発環境、ジェネシスブロックの定数化、段階的撤退) は独立しており、いずれか一層を破ってもその他は崩れない。§4 の非対称性は、可視の試行が到達できなかったレベルで動作する、層化された多次元の匿名性構築の予測可能な帰結となる。これは最も保守的な読みである: 公開外の推論なしに、公開記録のみで非対称性を説明する。
+[匿名性のアーキテクチャのエントリ](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) に照らして読むと、サトシの 6 層 (仮名、通信チャネル、言語的・時間的痕跡、開発環境、ジェネシスブロックの定数化、段階的撤退) は独立しており、いずれか一層を破ってもその他は崩れない。§4 の非対称性は、可視の試行が到達できなかったレベルで動作する、層化された多次元の匿名性構築の予測可能な帰結となる。これは最も保守的な読みである: 公開外の推論なしに、公開記録のみで非対称性を説明する。
 
 ### (b) 検出方法がフォレンジック・サーフェスにまだ追いついていない
 

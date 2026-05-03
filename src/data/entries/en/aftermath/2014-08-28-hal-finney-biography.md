@@ -62,7 +62,7 @@ Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and gr
 
 ```mermaid
 timeline
-    title Hal Finney's life and Bitcoin involvement
+    title Hal Finney's Bitcoin-relevant timeline
     1956 : Born in Coalinga, California (May)
     1979 : BS Engineering, Caltech (Arcadia HS valedictorian 1974)
     1991 : Joins Pretty Good Privacy (PGP) project as volunteer

@@ -1,5 +1,5 @@
 ---
-title: "オーバーフローバグ 深刻"
+title: "オーバーフローバグ深刻"
 date: 2010-08-15T10:04:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "lfm"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "lfmがスレッドを開始: オーバーフローバグ 深刻"
+description: "lfmがスレッドを開始: オーバーフローバグ深刻"
 isSatoshi: false
 tags: []
 relatedEntries:

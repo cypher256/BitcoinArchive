@@ -63,7 +63,7 @@ translationStatus: complete
 
 ```mermaid
 timeline
-    title ハル・フィニーの人生とビットコイン関与
+    title ハル・フィニーのビットコイン関連年表
     1956 : カリフォルニア州 コアリンガで誕生 (5月)
     1979 : Caltech で エンジニアリング理学士 (1974 アーケイディア高校 首席卒業)
     1991 : Pretty Good Privacy (PGP) プロジェクトに ボランティア参加

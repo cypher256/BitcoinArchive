@@ -58,7 +58,7 @@ Satoshi Nakamoto is the pseudonym used by the individual or group who created Bi
 
 ```mermaid
 timeline
-    title Satoshi's documented activity, 2008 - 2011
+    title Satoshi Nakamoto's Bitcoin-relevant timeline
     2008 : Earliest known email - to Adam Back about an electronic cash system (Aug)
          : Bitcoin whitepaper published to the cryptography mailing list (Oct)
     2009 : Genesis block parameters defined (Jan 3)
