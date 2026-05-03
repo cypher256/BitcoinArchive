@@ -54,7 +54,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリーは、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — 中国系米国人の暗号学者、[b-money デジタルキャッシュ提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998 年 11 月）の著者で[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) で参考文献 [1] として引用、ビットコイン v0.1 が SHA-256 用にバンドルする[Crypto++ ライブラリ](https://www.cryptopp.com/) の作者、ビットコイン公開前にサトシ・ナカモトが接触した 2 番目の人物 — がサトシ仮名の主体だったとする、繰り返し公的に提起される仮説を記録する。本仮説は A 群候補（サトシがホワイトペーパーで明示的に引用した人物）の一つで、暗号通貨ジャーナリズムで少なくとも 2010 年以降議論されてきた。ウェイ・ダイは一貫してサトシであることを否定しており、最も顕著な自己否定は[2014 年 1 月の LessWrong AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) である。本エントリーは仮説の主張を提示し、支持論点を提唱者の言い分どおりに記述し、反証を同等の詳細で並べる。判断は読者に委ねる。
+本エントリーは、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — 中国系米国人の暗号学者、[b-money デジタルキャッシュ提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998 年 11 月）の著者で[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) で参考文献 [1] として引用、ビットコイン v0.1 が SHA-256 用にバンドルする[Crypto++ ライブラリ](https://www.cryptopp.com/) の作者、ビットコイン公開前にサトシ・ナカモトが接触した 2 番目の人物 — がサトシ仮名の主体だったとする、繰り返し公的に提起される仮説を記録する。本仮説は候補プロファイル群 A（サトシがホワイトペーパーで明示的に引用した人物）の候補の一つで、暗号通貨ジャーナリズムで少なくとも 2010 年以降議論されてきた。ウェイ・ダイは一貫してサトシであることを否定しており、最も顕著な自己否定は[2014 年 1 月の LessWrong AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) である。本エントリーは仮説の主張を提示し、支持論点を提唱者の言い分どおりに記述し、反証を同等の詳細で並べる。判断は読者に委ねる。
 
 ## 1. 仮説の主張
 
@@ -68,7 +68,7 @@ translationStatus: complete
 
 論点: ビットコイン以前のすべての提案の中で、b-money はビットコインの貨幣機構に最も密接に対応する。フォレンジック整合論の読みでは、b-money を書いた人物が、ビットコインを作った人物の自然な候補となる。ホワイトペーパーの明示的な引用がそれを補強する — サトシは b-money を主要な先行研究として特に挙げた。
 
-反論: 設計近接性は単独で候補を選ばない。同じくホワイトペーパーで引用された[アダム・バックの Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) は、ビットコインがマイニングに再利用するプルーフ・オブ・ワーク基本要素を提供する。同じフォレンジック整合論で、アダム・バックも並列の候補となる。[仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) はウェイ・ダイとアダム・バックを A 群としてまとめて扱う。ビットコイン v0.1 のコンポーネント別の出所（b-money からも Hashcash からも継承していない部分を含む）については[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) を参照。
+反論: 設計近接性は単独で候補を選ばない。同じくホワイトペーパーで引用された[アダム・バックの Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) は、ビットコインがマイニングに再利用するプルーフ・オブ・ワーク基本要素を提供する。同じフォレンジック整合論で、アダム・バックも並列の候補となる。[仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) はウェイ・ダイとアダム・バックを候補プロファイル群 A としてまとめて扱う。ビットコイン v0.1 のコンポーネント別の出所（b-money からも Hashcash からも継承していない部分を含む）については[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) を参照。
 
 ### 2.2 ビットコイン v0.1 の Crypto++ コードベース依存
 
@@ -167,7 +167,7 @@ Crypto++ の組み込み（§2.2）は構造的整合だが、著者性の強い
 
 最も多く引用される 4 件の文体計量調査において、5 名すべてを公的に順位付けする唯一の調査（ヴァン・ドルスト／Bitcoin Institute 再分析）でウェイ・ダイは名指し候補の中でサトシから*最も遠い*位置に置かれている。2008 年 8 月のメールのやり取り、「b-money のページは知らなかった」 という自認、ウェイ・ダイ自身の 2014 年回顧 — 仮説が覆さなければならない一貫した第三者応答の読みを構成する。
 
-ウェイ・ダイの候補空間での構造的位置は他の候補と異なる: 彼は候補集合の構成上 A 群（サトシがホワイトペーパーで明示的に引用）に属するが、引用経路を確立する同じ一次資料メールが、ウェイ・ダイが第三者としてビットコインをサトシから受け取ったこと（彼が起源ではないこと）も同時に確立する。
+ウェイ・ダイの候補空間での構造的位置は他の候補と異なる: 彼は候補集合の構成上候補プロファイル群 A（サトシがホワイトペーパーで明示的に引用）に属するが、引用経路を確立する同じ一次資料メールが、ウェイ・ダイが第三者としてビットコインをサトシから受け取ったこと（彼が起源ではないこと）も同時に確立する。
 
 他の名指し候補仮説との比較については、[サトシ正体仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) および個別エントリーの[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ハル・フィニー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)、[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)、[サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) を参照。
 

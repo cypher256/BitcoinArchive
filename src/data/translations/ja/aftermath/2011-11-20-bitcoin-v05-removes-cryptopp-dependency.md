@@ -54,7 +54,7 @@ translationStatus: complete
 
 サトシの[2011 年 4 月の引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)後にプロジェクトのリードメンテナーとなっていた[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が、**2011 年 10 月 5 日**にブランチをマージした (コミット `b898c8fc`、「Merge branch 'no-cryptopp' of https://github.com/tcatm/bitcoin」)。マージにより Bitcoin Core のメインラインは以降 SHA-256 については OpenSSL のみとなった。ビットコイン v0.5.0 は 2011 年 11 月 20 日にタグ付けされ、6 週間後にユーザーへ出荷された。
 
-**何が削除されたか、文脈の中で。**
+**削除されたもの、その位置づけ。**
 
 ビットコインは最古の保管リリース以来、Crypto++ SHA-256 サブセットをバンドルしてきた。サトシは [v0.3.6 (2010 年 7 月) で Crypto++ 5.5.2 から Crypto++ 5.6.0 SSE2 最適化アセンブリへの移行を自ら段取りし](/BitcoinArchive/ja/participants/wei-dai/)、自身のコミットメッセージで依存を明示的に追跡していた:「Crypto++ 5.6.0 ライブラリのサブセットを SVN に追加した。SHA と 11 個の汎用依存ファイルだけに削ぎ落とした」。コードアーカイブの観点で平たく言えば、Crypto++ はビットコインがこれまで直接依存した、サトシ正体候補のうち唯一の著作物である。
 
