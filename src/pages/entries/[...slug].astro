@@ -110,7 +110,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
     {entry.data.editorNote && (
       <aside class="editor-note">
         <span class="editor-note-label">📝 Editor's note (Bitcoin Institute)</span>
-        <p>{entry.data.editorNote}</p>
+        <p set:html={entry.data.editorNote.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')}></p>
       </aside>
     )}
 
