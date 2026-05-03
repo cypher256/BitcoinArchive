@@ -58,6 +58,28 @@ const linkData = Array.from(nameMap.entries())
   }
 
   var replaced = new Set();
+
+  // First pass: scan existing <a> tags inside each container and mark any
+  // name found in their textContent as already-linked. Without this, the
+  // walker (which skips <a> subtrees) never sees text inside manual
+  // markdown links like [Peter Todd](/.../) and would still auto-link a
+  // later plain occurrence of the same name, violating the
+  // "one link per name per container" invariant.
+  containers.forEach(function(container) {
+    var anchors = container.querySelectorAll('a');
+    for (var ai = 0; ai < anchors.length; ai++) {
+      var anchorText = anchors[ai].textContent;
+      for (var di = 0; di < data.length; di++) {
+        var dname = data[di][0];
+        if (anchorText.indexOf(dname) !== -1) {
+          replaced.add(container.className + '::' + dname);
+        }
+      }
+    }
+  });
+
+  // Second pass: walk text nodes (skipping <a> subtrees) and add auto-links
+  // for names that have not yet been linked in the container.
   containers.forEach(function(container) {
     for (var i = 0; i < data.length; i++) {
       var name = data[i][0];
