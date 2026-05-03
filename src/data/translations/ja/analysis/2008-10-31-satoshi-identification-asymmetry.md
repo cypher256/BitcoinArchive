@@ -97,6 +97,33 @@ translationStatus: complete
 
 サトシ・ナカモトを特定しようとする試行、またはビットコインを名指された機関の関心下に置いた事象は、2010 年代前半から現在まで公開記録に並んでいる (以下のリストの最も初期の事例は 2010 年末の WikiLeaks 圧力経路と、2011 年 4〜6 月の In-Q-Tel / CIA カンファレンス招待である)。以下のリストは公開記録に残るものに限定する。
 
+```mermaid
+timeline
+    title 公開された試行と記録された関心 (2010-2026)
+    2010 : "WikiLeaks 圧力経路の開始 (国家)"
+    2011 : "アンドレセンが CIA / In-Q-Tel でビットコインを発表 (国家)"
+    2013 : "ラーナー — Patoshi マイニングパターン (技術)"
+         : "FBI — Silk Road 押収 (国家)"
+         : "Skye Grey — 最初の文体計量サボ調査 (技術)"
+    2014 : "Newsweek — ドリアン・ナカモト (ジャーナリズム)"
+         : "Forbes — グリーンバーグ / ハル・フィニー (ジャーナリズム)"
+         : "アストン大学 — Project Bitcoin (技術)"
+    2015 : "NYT / ポパー — サボ (ジャーナリズム)"
+         : "ライト自己主張開始 — Wired / Gizmodo (自己主張)"
+    2016 : "ライト — BBC / Economist (自己主張)"
+    2017 : "中国 — ICO・取引所禁止 (国家)"
+    2021 : "PLOS ONE — Strangely Mined Bitcoins (技術)"
+    2022 : "ロップ — Was Satoshi Greedy? (技術)"
+    2023 : "ロップ — ハル・フィニー レース当日分析 (技術)"
+    2024 : "米国 SEC — ビットコイン ETP 承認 (国家)"
+         : "COPA v ライト — 4 認定で否定 (訴訟)"
+         : "ヴァン・ドルスト — Where is Satoshi コーパス (技術)"
+         : "HBO — Money Electric / ピーター・トッド (ジャーナリズム)"
+    2025 : "米国 Strategic Bitcoin Reserve (国家)"
+    2026 : "NYT / カレイロウ — アダム・バック (ジャーナリズム)"
+         : "Bitcoin Institute — ヴァン・ドルスト再分析 (技術)"
+```
+
 ### 1.1 ジャーナリズム経路
 
 - **Newsweek (2014 年 3 月 6 日)** — リア・マクグラス・グッドマンがドリアン・プレンティス・サトシ・ナカモトを名前一致と訪問取材によりサトシ候補として特定。ドリアンは AP 通信を含む複数の場でこの主張を否定した。詳細は [Newsweek/ドリアン エントリ](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) 参照。
@@ -140,17 +167,26 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 
 サトシ・ナカモトに紐付けられた公開材料は、いかなる公人調査の基準から見ても非常に大きい。
 
-- **575 件の BitcoinTalk フォーラム投稿** (2009 年 11 月 22 日〜2010 年 12 月 12 日)。移行後の bitcointalk.org に保存されている。詳細は [BitcoinTalk 移行エントリ](/BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/) 参照。
-- **既知の通信相手への約 304 通のメール** (公開されたアーカイブ):
-  - マルッティ・マルミ宛 260 通以上 (`mmalmi.github.io/satoshi`)
-  - マイク・ハーン宛 33 通 (`plan99.net/~mike/satoshi-emails/`)
-  - アダム・バック宛 5 通 (Bitcoin Magazine 公開、COPA 証拠)
-  - ハル・フィニー宛 4 通
-  - ウェイ・ダイ宛 3 通 (Gwern アーカイブ)
-  - ダスティン・トランメル、ギャビン・アンドレセン、ラズロ・ハニエツ、ニコラス・ボーム、その他への小規模な通信
-- **Bitcoin v0.1 コードベース (19,901 行の C++、v0.3.19 までで 31,909 行に成長)**、加えて `s_nakamoto` に帰属可能な SVN 160 ユニークコミットおよび `Satoshi Nakamoto <satoshin@gmx.com>` 署名の git 34 コミット。詳細は [コード分析エントリ](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) 参照。
-- **ホワイトペーパー PDF メタデータ** に記録されている作成タイムスタンプ、タイムゾーンオフセット (2008 年 10 月の `-07:00`、2009 年 3 月の `-06:00`)、`Language: en-GB`。文書とメールのやりとりには 3 つの匿名メールアドレス (`satoshi@anonymousspeech.com`、`satoshi@vistomail.com`、`satoshin@gmx.com`) が紐付いている。
-- **ジェネシスブロックのパラメーター** がソースコード内に定数としてハードコードされている — タイムスタンプ、ナンス、ハッシュ、coinbase メッセージ — 2009 年 1 月以降、すべてのノードで原文どおり保存されている。詳細は [ジェネシスブロック ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) 参照。
+| 材料 | 量 | 期間 | 参照 |
+|---|---|---|---|
+| BitcoinTalk フォーラム投稿 | 575 件 | 2009 年 11 月 22 日〜2010 年 12 月 12 日 | [BitcoinTalk 移行エントリ](/BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/) |
+| 既知の通信相手へのメール | 約 304 通 | 2008 年〜2011 年 | 内訳は下表 |
+| Bitcoin C++ コードベース | 19,901 行 → 31,909 行 | v0.1 → v0.3.19 | [コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) |
+| `s_nakamoto` 帰属の SVN コミット | 160 ユニーク | 2009 年〜2010 年 | (同上) |
+| `Satoshi Nakamoto <satoshin@gmx.com>` 署名 git コミット | 34 件 | (SVN 移行後) | (同上) |
+| ホワイトペーパー PDF メタデータ + 3 つの匿名メールアドレス (`satoshi@anonymousspeech.com`、`satoshi@vistomail.com`、`satoshin@gmx.com`) | 1 PDF; タイムスタンプ; TZ オフセット `-07:00` (2008 年 10 月)、`-06:00` (2009 年 3 月); `Language: en-GB` | 2008 年 10 月〜2009 年 3 月 | (PDF メタデータ + 通信記録) |
+| ジェネシスブロック ハードコード定数 | 4 個 (タイムスタンプ、ナンス、ハッシュ、coinbase メッセージ) | 2009 年 1 月 3 日以降、原文どおり | [ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) |
+
+通信相手別メール内訳:
+
+| 相手 | メール数 | 出典 |
+|---|---|---|
+| マルッティ・マルミ | 260 通以上 | `mmalmi.github.io/satoshi` |
+| マイク・ハーン | 33 通 | `plan99.net/~mike/satoshi-emails/` |
+| アダム・バック | 5 通 | Bitcoin Magazine 公開、COPA 証拠 |
+| ハル・フィニー | 4 通 | (複数出典) |
+| ウェイ・ダイ | 3 通 | Gwern アーカイブ |
+| ダスティン・トランメル、ギャビン・アンドレセン、ラズロ・ハニエツ、ニコラス・ボーム、その他 | 小規模な通信 | (各種) |
 
 このフォレンジック・サーフェスは、不在の人物が残すサーフェスではない。敵対的帰属研究が通常依拠するすべてのカテゴリ — 大量の長文プロース、プログラミングスタイル、タイムゾーンの署名、バージョン管理履歴、言語レジスターの不整合 — がサトシに関する公開記録上に存在する。
 

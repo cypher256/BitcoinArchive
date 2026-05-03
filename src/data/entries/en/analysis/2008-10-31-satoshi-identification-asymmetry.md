@@ -96,6 +96,33 @@ This entry is the **third pair** to the [identity-hypotheses overview](/BitcoinA
 
 Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the attention of named institutions, span the early 2010s through the present (the earliest entries in the list below are the WikiLeaks pressure dynamic of late 2010 and the In-Q-Tel / CIA conference invitation of April–June 2011). The list below restricts itself to attempts and interest that are part of the public record.
 
+```mermaid
+timeline
+    title Public attempts and recorded interest, 2010-2026
+    2010 : "WikiLeaks pressure dynamic begins (state)"
+    2011 : "Andresen presents Bitcoin at CIA / In-Q-Tel (state)"
+    2013 : "Lerner — Patoshi mining pattern (technical)"
+         : "FBI — Silk Road takedown (state)"
+         : "Skye Grey — first stylometric Szabo case (technical)"
+    2014 : "Newsweek — Dorian Nakamoto (journalism)"
+         : "Forbes — Greenberg / Hal Finney (journalism)"
+         : "Aston University — Project Bitcoin (technical)"
+    2015 : "NYT / Popper — Szabo (journalism)"
+         : "Wright self-claims begin — Wired / Gizmodo (self-claim)"
+    2016 : "Wright — BBC / Economist (self-claim)"
+    2017 : "China — ICO and exchange ban (state)"
+    2021 : "PLOS ONE — Strangely Mined Bitcoins (technical)"
+    2022 : "Lopp — Was Satoshi Greedy? (technical)"
+    2023 : "Lopp — Hal Finney race-day analysis (technical)"
+    2024 : "US SEC — Bitcoin ETP approval (state)"
+         : "COPA v Wright — four rulings against (litigation)"
+         : "van Dorst — Where is Satoshi corpus (technical)"
+         : "HBO — Money Electric / Peter Todd (journalism)"
+    2025 : "US Strategic Bitcoin Reserve (state)"
+    2026 : "NYT / Carreyrou — Adam Back (journalism)"
+         : "Bitcoin Institute — van Dorst reanalysis (technical)"
+```
+
 ### 1.1 Journalism
 
 - **Newsweek (March 6, 2014)** — Leah McGrath Goodman identified Dorian Prentice Satoshi Nakamoto as the Bitcoin creator on the basis of name match and a doorstep encounter. Dorian denied the claim repeatedly, including via the Associated Press. See [the Newsweek/Dorian entry](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/).
@@ -139,17 +166,26 @@ The following are documented in the public record. They are listed here as state
 
 The body of public material attached to Satoshi Nakamoto is, by the standards of any public-figure investigation, very large.
 
-- **575 BitcoinTalk forum posts** (November 22, 2009 – December 12, 2010), preserved on the migrated bitcointalk.org. Documented in [the BitcoinTalk migration entry](/BitcoinArchive/entries/aftermath/2011-08-01-bitcointalk-org-migration/).
-- **Approximately 304 emails to known correspondents** in published archives:
-  - 260+ emails to Martti Malmi (`mmalmi.github.io/satoshi`)
-  - 33 emails to Mike Hearn (`plan99.net/~mike/satoshi-emails/`)
-  - 5 emails to Adam Back (Bitcoin Magazine release, COPA exhibit)
-  - 4 emails to Hal Finney
-  - 3 emails to Wei Dai (Gwern archive)
-  - Smaller batches to Dustin Trammell, Gavin Andresen, Laszlo Hanyecz, Nicholas Bohm, and others
-- **Bitcoin's C++ codebase (19,901 lines at v0.1, growing to 31,909 lines by v0.3.19)**, plus 160 unique SVN commits attributable to `s_nakamoto` and 34 git commits signed `Satoshi Nakamoto <satoshin@gmx.com>`. Detailed in [the code analysis entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).
-- **Whitepaper PDF metadata** containing creation timestamps, time-zone offsets (`-07:00` in October 2008, `-06:00` in March 2009), and `Language: en-GB`. Three pseudonymous email addresses (`satoshi@anonymousspeech.com`, `satoshi@vistomail.com`, `satoshin@gmx.com`) are attached to the document and correspondence stream.
-- **Genesis-block parameters** hard-coded into the source as constants — timestamp, nonce, hash, coinbase message — preserved verbatim in every node since January 2009. Detailed in [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/).
+| Material | Quantity | Window | Reference |
+|---|---|---|---|
+| BitcoinTalk forum posts | 575 | Nov 22, 2009 – Dec 12, 2010 | [migration entry](/BitcoinArchive/entries/aftermath/2011-08-01-bitcointalk-org-migration/) |
+| Emails to known correspondents | ~304 | 2008 – 2011 | breakdown table below |
+| Bitcoin C++ codebase | 19,901 → 31,909 lines | v0.1 → v0.3.19 | [code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) |
+| SVN commits as `s_nakamoto` | 160 unique | 2009 – 2010 | (same as above) |
+| Git commits signed `Satoshi Nakamoto <satoshin@gmx.com>` | 34 | (post-SVN-migration) | (same as above) |
+| Whitepaper PDF metadata + 3 pseudonymous email aliases (`satoshi@anonymousspeech.com`, `satoshi@vistomail.com`, `satoshin@gmx.com`) | 1 PDF; timestamps; TZ offsets `-07:00` (Oct 2008), `-06:00` (Mar 2009); `Language: en-GB` | Oct 2008 – Mar 2009 | (PDF metadata + correspondence) |
+| Genesis-block hardcoded constants | 4 (timestamp, nonce, hash, coinbase) | Jan 3, 2009 onward, verbatim | [hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) |
+
+Email correspondents breakdown:
+
+| Recipient | Email count | Source |
+|---|---|---|
+| Martti Malmi | 260+ | `mmalmi.github.io/satoshi` |
+| Mike Hearn | 33 | `plan99.net/~mike/satoshi-emails/` |
+| Adam Back | 5 | Bitcoin Magazine release, COPA exhibit |
+| Hal Finney | 4 | (multiple sources) |
+| Wei Dai | 3 | Gwern archive |
+| Dustin Trammell, Gavin Andresen, Laszlo Hanyecz, Nicholas Bohm, others | smaller batches | (various) |
 
 The forensic surface is not the surface of an absent figure. Every category that adversarial-attribution research normally relies on — long-form prose at scale, programming style, time-zone signatures, version-control history, and language-register inconsistencies — is present in the documentary record on Satoshi.
 
