@@ -40,7 +40,7 @@ translationStatus: complete
 この決定は、2010年12月3日にサトシが[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)にメールで伝えた内容と一致している。開発の責任を誰が引き継ぐべきかと問われた際、サトシは次のように答えた：
 
 <!-- speaker: Satoshi Nakamoto -->
-> Gavin [Andresen]にすべきだ。彼を信頼している。責任感があり、プロフェッショナルで、技術的にLinuxの扱いは私よりはるかに優れている。
+> ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては私よりずっと上だ。
 
 <!-- speaker: narrator -->
 アンドレセンは正式にリーダーの役割に就き、2010年12月にBitcointalkフォーラムで公に発表した：

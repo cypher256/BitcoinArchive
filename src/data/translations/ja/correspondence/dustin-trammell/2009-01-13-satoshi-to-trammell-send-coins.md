@@ -42,7 +42,7 @@ translationStatus: complete
 トランメルはその日の後ほど（2009年1月13日、UTC 18:40）にIPアドレスを返信した：
 
 <!-- speaker: Dustin Trammell -->
-> 現在24.28.79.95にいるが、動的なので変わるかもしれない。
+> 現在は24.28.79.95だが、動的なので変わるかもしれない。
 
 <!-- speaker: narrator -->
 翌日の2009年1月14日UTC 19:46に、サトシは1回の取引でトランメルに25.0 BTCを送金した（txid: d71fd2f64c0b34465b7518d240c00e83f6a5b10138a7079d1252858fe7e6b577）。この取引はアドレス1Jhk2DHosaaZx1E4CbnTGcKM7FC88YHYv9からトランメルのアドレス1DCbY2GYVaAMCBpuBNN5GVg3a47pNK1wdiへ送られた。
