@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "The final published Bitcoin whitepaper, 'Bitcoin: A Peer-to-Peer Electronic Cash System,' the foundational document describing the design of Bitcoin. Originally hosted at bitcoin.org/bitcoin.pdf and announced on the Cryptography Mailing List on October 31, 2008."
+description: "The final Bitcoin whitepaper, 'Bitcoin: A Peer-to-Peer Electronic Cash System,' published October 31, 2008. Hosted at bitcoin.org/bitcoin.pdf, announced on the Cryptography Mailing List."
 isSatoshi: true
 tags:
   - "whitepaper"

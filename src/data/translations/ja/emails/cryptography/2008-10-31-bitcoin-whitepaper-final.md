@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "最終公開版のビットコインホワイトペーパー『ビットコイン：ピアツーピア電子キャッシュシステム』。ビットコインの設計を記述した基盤文書。元々bitcoin.org/bitcoin.pdfでホストされ、2008年10月31日に暗号学メーリングリストで発表された。"
+description: "最終版ビットコインホワイトペーパー『ビットコイン：ピアツーピア電子キャッシュシステム』。基盤文書、bitcoin.org/bitcoin.pdfでホスト、2008年10月31日に暗号学MLで発表。"
 isSatoshi: true
 tags:
   - "whitepaper"

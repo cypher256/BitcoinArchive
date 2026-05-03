@@ -10,7 +10,7 @@ participants:
     slug: "bill-frantz"
   - name: "Dan Geer"
     slug: "dan-geer"
-description: "サイバーセキュリティの専門家ダン・ギアが、ボットネットの議論を生物学的メタファーで拡張。「寄生者は宿主を殺す理由がない」と主張し、ボットネットが制御下のマシンに厳密なセキュリティを維持していると指摘。Lynn Margulisの言葉「生命は戦闘ではなくネットワーキングによって地球を支配した」を引用し、Daniel Suarezの小説『Daemon』を推薦した。"
+description: "ダン・ギアがボットネット議論を生物学的に拡張——「寄生者は宿主を殺す理由がない」——Lynn Margulis「生命は戦闘でなくネットワーキングで地球を支配」を引用、小説『Daemon』を推薦。"
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-frantz"
 isSatoshi: false
 tags:

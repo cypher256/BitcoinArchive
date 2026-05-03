@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Hal Finney congratulates Satoshi on the first alpha release and performs his famous thought experiment: if Bitcoin becomes the world's dominant payment system, each coin would be worth approximately $10 million — making early mining 'quite a good bet, with a payoff of something like 100 million to 1.'"
+description: "Hal Finney congratulates Satoshi on the first alpha and his famous thought experiment: if Bitcoin becomes the dominant payment system, each coin would be ~$10M — early mining a 100M-to-1 payoff bet."
 inReplyTo: "emails/cryptography/2009-01-08-bitcoin-v0-1-released"
 isSatoshi: false
 tags:

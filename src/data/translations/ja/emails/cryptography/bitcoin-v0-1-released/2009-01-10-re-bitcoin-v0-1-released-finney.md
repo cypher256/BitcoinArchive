@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ハル・フィニーが最初のアルファ版リリースに祝意を表し、有名な思考実験を行った：ビットコインが世界の支配的な決済システムになれば、各コインの価値は約1000万ドルになる——早期のマイニングは「1億対1のリターンが見込める、かなり良い賭け」だと。"
+description: "ハル・フィニーが初アルファリリースに祝意を表し、有名な思考実験を披露: ビットコインが世界の支配的決済になれば各コインは約1000万ドル——早期マイニングは1億対1の賭け、と述べた。"
 inReplyTo: "emails/cryptography/2009-01-08-bitcoin-v0-1-released"
 isSatoshi: false
 tags:

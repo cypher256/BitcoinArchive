@@ -12,7 +12,7 @@ participants:
     slug: "hal-finney"
   - name: "Jonathan Thornburg"
     slug: "jonathan-thornburg"
-description: "ハル・フィニーがソーンバーグの規制に関する懸念に反論。ビットコインには単一障害点がない——「召喚状を送って逮捕し、閉鎖できる役員のいる造幣局も会社もない」と主張。「分散型のグローバルで不可逆なトランザクションデータベース」をビットコインの核心的イノベーションとして特定し、後のブロックチェーン運動を先見的に予言した。"
+description: "ハル・フィニーがソーンバーグに反論。ビットコインに単一障害点なし——「召喚できる役員の造幣局も会社もない」。「分散・グローバル・不可逆なデータベース」を核心と特定、後のブロックチェーンを予言。"
 inReplyTo: "emails/cryptography/2009-01-17-re-bitcoin-v0-1-released-thornburg"
 isSatoshi: false
 tags:

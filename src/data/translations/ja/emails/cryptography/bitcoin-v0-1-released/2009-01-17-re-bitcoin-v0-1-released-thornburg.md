@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Jonathan Thornburg"
     slug: "jonathan-thornburg"
-description: "インディアナ大学の天体物理学者ジョナサン・ソーンバーグが、ビットコインに対する政府規制とボットネットによる悪用への懸念を提起。主要な政府は追跡不可能な国際送金を許さないだろうと主張し、100万ノードのボットネットが各10セントを送れば10万ドルを移動できると指摘した。"
+description: "インディアナ大学の天体物理学者ジョナサン・ソーンバーグが政府規制とボットネット悪用への懸念を提起。主要政府は追跡不能な国際送金を許さない、100万ノードが各10セント送れば10万ドル移動可能と指摘。"
 inReplyTo: "emails/cryptography/2009-01-16-sni17-bitcoin-v0-1-released"
 isSatoshi: false
 tags:

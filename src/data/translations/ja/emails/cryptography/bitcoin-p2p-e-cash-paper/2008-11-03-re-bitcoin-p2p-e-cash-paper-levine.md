@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "John Levine"
     slug: "john-levine"
-description: "インターネットの専門家ジョン・レヴィンがビットコインのセキュリティの前提を否定。ボットネット運営者が日常的に10万台以上のゾンビファームを制御しており、hashcashも同じ理由で失敗した——悪者は善人よりはるかに多くの計算能力を持っている——と主張した。"
+description: "ジョン・レヴィンがビットコインの安全性前提を否定。ボットネット運営者は10万台超のゾンビファームを日常的に制御、hashcashも同理由で失敗——悪者が善人より計算力で勝る、と主張。"
 inReplyTo: "emails/cryptography/2008-10-31-bitcoin-p2p-e-cash-paper"
 isSatoshi: false
 tags:

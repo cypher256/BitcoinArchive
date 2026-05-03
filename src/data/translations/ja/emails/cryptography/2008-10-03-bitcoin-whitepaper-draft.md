@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2008年10月3日付のビットコインホワイトペーパーの初期草稿。最終版より約1ヶ月前に作成されたもの。2008年10月31日の暗号学メーリングリストでの公開発表に先立ち、ウェイ・ダイを含む選ばれた受信者に個人的に共有された。"
+description: "2008年10月3日付のビットコインホワイトペーパー初期草稿。最終版より約1ヶ月前に作成、選ばれた受信者に個人共有された後10月31日に公開発表。"
 isSatoshi: true
 tags:
   - "whitepaper"

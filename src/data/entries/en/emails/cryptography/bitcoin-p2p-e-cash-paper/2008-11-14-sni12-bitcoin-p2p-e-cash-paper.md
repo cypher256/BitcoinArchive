@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Satoshi explains that only the current best branch's pending-transaction pool needs to be maintained, discusses TCP reliability for block propagation, and notes the system aligns with libertarian principles."
+description: "Satoshi explains only the current best branch's pending-transaction pool needs maintaining, discusses TCP reliability for block propagation, and notes the system aligns with libertarian principles."
 isSatoshi: true
 tags:
   - "pending-transactions"

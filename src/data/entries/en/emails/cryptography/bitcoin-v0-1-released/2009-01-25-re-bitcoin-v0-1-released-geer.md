@@ -10,7 +10,7 @@ participants:
     slug: "bill-frantz"
   - name: "Dan Geer"
     slug: "dan-geer"
-description: "Cybersecurity expert Dan Geer extends the botnet discussion with a biological metaphor, arguing that 'parasites have no reason to kill their hosts' and that botnets maintain strict security on controlled machines. He quotes Lynn Margulis — 'Life did not take over the globe by combat, but by networking' — and recommends Daniel Suarez's novel Daemon."
+description: "Dan Geer extends the botnet discussion biologically — 'parasites have no reason to kill their hosts' — citing Lynn Margulis ('Life took over by networking') and recommending Suarez's novel Daemon."
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-frantz"
 isSatoshi: false
 tags:

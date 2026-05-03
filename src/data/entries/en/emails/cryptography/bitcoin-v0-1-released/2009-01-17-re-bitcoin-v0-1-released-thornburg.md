@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Jonathan Thornburg"
     slug: "jonathan-thornburg"
-description: "Indiana University astrophysicist Jonathan Thornburg raises concerns about government regulation and botnet exploitation of Bitcoin, arguing that no major government would allow untraceable international transfers and that botnets could move $100K by having a million nodes each send 10 cents."
+description: "Astrophysicist Jonathan Thornburg raises concerns: no major government allows untraceable international transfers, and a million-node botnet could move $100K at 10¢ each."
 inReplyTo: "emails/cryptography/2009-01-16-sni17-bitcoin-v0-1-released"
 isSatoshi: false
 tags:

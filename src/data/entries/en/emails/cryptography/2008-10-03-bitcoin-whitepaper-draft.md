@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "An early draft of the Bitcoin whitepaper dated October 3, 2008, predating the final version by nearly a month. This draft was shared privately with selected recipients before the public announcement on the Cryptography Mailing List on October 31, 2008."
+description: "An early draft of the Bitcoin whitepaper dated October 3, 2008, predating the final by ~a month. Shared privately before the Cryptography ML announcement on October 31, 2008."
 isSatoshi: true
 tags:
   - "whitepaper"

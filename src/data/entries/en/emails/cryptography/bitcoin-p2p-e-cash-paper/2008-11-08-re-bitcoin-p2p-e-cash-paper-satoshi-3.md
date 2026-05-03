@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Ray Dillinger"
     slug: "ray-dillinger"
-description: "Satoshi responds to Ray Dillinger's claim that Bitcoin would be inflationary at 35%, explaining how difficulty adjustment keeps production constant and how transaction fees provide an alternative incentive."
+description: "Satoshi responds to Ray Dillinger's 35% inflation claim, explaining how difficulty adjustment keeps production constant and how transaction fees provide an alternative incentive."
 isSatoshi: true
 tags:
   - "difficulty-adjustment"

@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Bill Frantz"
     slug: "bill-frantz"
-description: "Security consultant Bill Frantz makes the ironic observation that botnet-controlled machines are 'among the most secure on the network' because operators work hard to keep others from compromising 'their' machines, and speculates that botnet operators could evolve into legitimate security firms funded by proof-of-work rewards."
+description: "Bill Frantz ironically observes botnet-controlled machines are 'among the most secure' because operators keep rivals out, speculating operators could become legitimate PoW-funded security firms."
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-finney"
 isSatoshi: false
 tags:

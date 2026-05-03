@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi introduces Bitcoin to the P2P Research mailing list, explaining the problems with trust-based conventional currency and how Bitcoin uses cryptographic proof and a peer-to-peer network to solve double-spending."
+description: "Satoshi introduces Bitcoin to the P2P Research mailing list, explaining trust-based currency problems and how Bitcoin uses cryptographic proof and a peer-to-peer network to solve double-spending."
 isSatoshi: true
 tags:
   - "announcement"

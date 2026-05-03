@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "John Levine"
     slug: "john-levine"
-description: "Internet expert John Levine dismisses Bitcoin's security assumption, arguing that botnet operators routinely control zombie farms of 100,000+ machines and that hashcash failed for the same reason — the bad guys have vastly more computational firepower than the good guys."
+description: "John Levine dismisses Bitcoin's security assumption — botnet operators control 100,000+ machine zombie farms, and hashcash failed for the same reason: bad guys outweigh good guys computationally."
 inReplyTo: "emails/cryptography/2008-10-31-bitcoin-p2p-e-cash-paper"
 isSatoshi: false
 tags:

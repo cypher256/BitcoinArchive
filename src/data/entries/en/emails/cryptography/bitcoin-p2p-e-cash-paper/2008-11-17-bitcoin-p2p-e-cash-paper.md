@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "Satoshi describes the inventory-based broadcast mechanism where nodes exchange hash lists of new blocks and transactions, and notes that the source code will be released soon after a year and a half of development."
+description: "Satoshi describes the inventory-based broadcast where nodes exchange hash lists of new blocks and transactions, and notes the source code will be released soon after a year and a half of development."
 isSatoshi: true
 tags:
   - "networking"

@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Bill Frantz"
     slug: "bill-frantz"
-description: "セキュリティコンサルタントのビル・フランツが、ボットネットに制御されたマシンは他者による侵害を防ぐためにオペレーターが懸命に管理しているため「ネットワーク上で最も安全な部類に入る」という皮肉な観察を行い、ボットネット運営者がプルーフ・オブ・ワーク報酬を原資とする正規のセキュリティ企業に進化し得ると推測した。"
+description: "ビル・フランツが皮肉な観察を提示: ボットネット制御マシンは運営者が他者の侵害を防ぐため「ネット上で最も安全な部類」、運営者がPoW報酬で正規セキュリティ企業に進化し得ると推測。"
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-finney"
 isSatoshi: false
 tags:

@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Satoshi clarifies that Bitcoin uses Hashcash-style SHA-256 proof-of-work (not signatures), explains the proportional mining chances, and addresses identity and double-spending prevention."
+description: "Satoshi clarifies Bitcoin uses Hashcash-style SHA-256 proof-of-work (not signatures), explains proportional mining chances, and addresses identity and double-spending prevention."
 isSatoshi: true
 tags:
   - "proof-of-work"

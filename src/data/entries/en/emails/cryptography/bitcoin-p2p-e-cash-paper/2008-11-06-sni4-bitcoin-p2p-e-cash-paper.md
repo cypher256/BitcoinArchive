@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "Satoshi argues that Bitcoin represents 'a major battle in the arms race' for financial freedom, noting that decentralized P2P networks like Gnutella and Tor have proven resilient against government shutdown."
+description: "Satoshi argues Bitcoin represents 'a major battle in the arms race' for financial freedom, citing Gnutella and Tor as decentralized P2P networks proven resilient against government shutdown."
 isSatoshi: true
 tags:
   - "cryptography"
