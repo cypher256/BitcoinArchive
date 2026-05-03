@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2011-09-13-bitcoin-github-migration-committers
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
 Wladimir van der Laan, known online as **laanwj**, is a Dutch software developer who became Bitcoin Core's second lead maintainer after [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). Beyond his public role in Bitcoin development, his personal biographical details remain largely outside published record.

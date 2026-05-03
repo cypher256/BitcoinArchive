@@ -51,6 +51,7 @@ relatedEntries:
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 translationStatus: complete
 ---
 

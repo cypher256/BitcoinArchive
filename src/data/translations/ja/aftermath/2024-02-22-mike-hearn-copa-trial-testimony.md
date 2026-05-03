@@ -31,6 +31,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2024-03-14-copa-v-wright-ruling
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 translationStatus: complete
 ---
 

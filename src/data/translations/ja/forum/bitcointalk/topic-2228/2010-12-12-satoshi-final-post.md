@@ -25,6 +25,7 @@ relatedEntries:
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+  - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
 ---
 
 DoS対策はまだ続くが、より複雑なアイデアに着手する前に、必要になった場合に備えて、今あるもので簡易ビルドを作る。

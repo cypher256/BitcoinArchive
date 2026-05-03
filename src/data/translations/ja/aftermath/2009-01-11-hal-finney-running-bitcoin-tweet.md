@@ -28,6 +28,7 @@ relatedEntries:
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-12-first-bitcoin-transaction
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 translationStatus: complete
 ---
 

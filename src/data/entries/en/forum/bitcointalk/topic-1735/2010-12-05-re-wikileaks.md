@@ -24,6 +24,8 @@ quotes:
     date: "2010-12-04T13:17:44.000Z"
 relatedEntries:
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
+  - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
+  - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
 ---
 
 <!-- quote: q1 -->

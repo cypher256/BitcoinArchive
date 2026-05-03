@@ -1,5 +1,5 @@
 ---
-title: "Re: ギャビンのCIAプレゼンテーション計画"
+title: "Re: WikiLeaks へのビットコイン寄付を推進しよう"
 date: 2010-12-05T09:08:08.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -25,11 +25,13 @@ quotes:
     date: "2010-12-04T13:17:44.000Z"
 relatedEntries:
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
+  - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
+  - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
 ---
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 基本的に、どんとこい。WikiLeaksにビットコインを使うよう促そう。私はその行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。
+> 基本的に、望むところだ。WikiLeaks にビットコインを使うよう促そう。私はその行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。
 <!-- /tone-skip -->
 
 違う、挑発するな。

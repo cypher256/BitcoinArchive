@@ -32,6 +32,7 @@ relatedEntries:
   - forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit
   - forum/bitcointalk/topic-1347/2010-10-03-patch-increase-block-size-limit
   - bip/2015-12-21-bip-0141
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 translationStatus: complete
 ---
 

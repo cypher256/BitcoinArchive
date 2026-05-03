@@ -31,6 +31,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2024-03-14-copa-v-wright-ruling
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
 On February 22, 2024, during Day 14 of the COPA v. Craig Wright trial at the UK High Court, Mike Hearn testified. His written witness statement, dated November 10, 2023, had been submitted in advance with five exhibits (MCH-1 through MCH-5).

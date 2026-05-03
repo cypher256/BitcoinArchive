@@ -32,6 +32,7 @@ relatedEntries:
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+  - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 translationStatus: complete
 ---
 
