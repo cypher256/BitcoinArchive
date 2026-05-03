@@ -57,7 +57,7 @@ translationStatus: complete
 
 2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは [サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期ウィンドウの内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
 
-> 残念だけど、**今いる場所からは**外部からの接続が受けられず、それで少し厄介なことになっている。
+> 「残念ながら、**今いる場所からは**外部からの接続を受け付けることができず、そのせいで作業がより困難になっている」
 
 本分析で注目するのは **"from where I am"（今いる場所からは）** の句。
 

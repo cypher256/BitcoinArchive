@@ -49,7 +49,7 @@ translationStatus: complete
 
 [サトシは返信した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/)：
 
-> 「ありがとう。b-moneyのページは知らなかったが、私のアイデアはまさにその点から始まっている」
+> 「ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」
 
 **最大の後悔について：**
 
