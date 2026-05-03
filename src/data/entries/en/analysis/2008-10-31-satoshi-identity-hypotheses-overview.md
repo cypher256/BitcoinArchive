@@ -106,12 +106,11 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 | Candidate | [Skye Grey 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) (single-hypothesis) | [Aston 2014](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) (11 candidates) | [van Dorst 2024](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) (75,000+) | [Cafiero / Carreyrou NYT 2026](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (12; broader pool 620) |
 |---|---|---|---|---|
-| Adam Back | — | examined | within corpus | **top match** (Hal Finney near tie); inconclusive |
-| Wei Dai | — | examined | within corpus | examined |
-| Hal Finney | — | examined | within corpus | near tie with Adam Back |
-| Nick Szabo | **top match** | **top match** | within corpus | examined |
-| Len Sassaman | — | not in candidate set | within corpus | not in candidate set |
-| (others) | — | — | within corpus | — |
+| Adam Back | — | examined | included; no top named | **top match** (Hal Finney near tie); inconclusive |
+| Wei Dai | — | examined | included; no top named | examined |
+| Hal Finney | — | examined | included; no top named | near tie with Adam Back |
+| Nick Szabo | **top match** | **top match** | included; no top named | examined |
+| Len Sassaman | — | not in candidate set | included; no top named | not in candidate set |
 
 **Reading the stylometric layer:** the divergence — Szabo, Szabo, no name, Adam Back — is itself the empirical observation. No single methodological choice has produced a stable identification, and the wider, methodology-transparent comparison ([van Dorst's 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)) explicitly declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
 
