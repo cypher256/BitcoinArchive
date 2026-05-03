@@ -118,6 +118,46 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 **Reading the stylometric layer:** Szabo emerges as the most-frequently-top-ranked candidate — three of the four investigations place Szabo highest among the named candidates: Skye Grey 2013 (named), Aston 2014 (named), and the [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of van Dorst's published data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, with Cafiero describing that result as inconclusive (Hal Finney near tie). The convergence is partial, however: [van Dorst's full 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) contains 594 unnamed authors closer to Satoshi than Szabo, and van Dorst himself declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
 
+### Direct-correspondence record (separate layer, reference)
+
+How much each candidate actually exchanged words with Satoshi is an observable fact independent of capability profile and stylometric distance. Tabulating the archive's documented communication per candidate makes the contrast clear: only three candidates have any documented exchange, while six candidates have no record of direct contact with Satoshi at all.
+
+```mermaid
+gantt
+    title Documented direct correspondence between named candidates and Satoshi (archive coverage)
+    dateFormat YYYY-MM-DD
+    axisFormat %Y/%m
+
+    section Context
+    Satoshi development to v0.1 release :crit, 2007-06-01, 2009-01-09
+    v0.1 release to last known email :crit, 2009-01-09, 2011-04-26
+
+    section Group A
+    Adam Back (5 private emails) :2008-08-20, 2009-01-11
+    Wei Dai (3 private emails) :2008-08-22, 2009-01-11
+
+    section Group B
+    Hal Finney (4 emails + 4 public ML + many BitcoinTalk) :2008-11-07, 2010-03-31
+
+    section Group C
+    Peter Todd (1 reply in a Satoshi-started thread) :2010-12-09, 2010-12-13
+```
+
+Broken down by **type of contact**, the structure differs:
+
+| Type | Candidates | Character |
+|---|---|---|
+| **Private email exchange** | Adam Back, Wei Dai | Satoshi reached out as a third party shortly before the whitepaper, citing prior-art lineage |
+| **Email + public discourse** | Hal Finney | Sustained technical engagement as the RPOW author, across private email, the cryptography mailing list, and BitcoinTalk |
+| **Reply in a Satoshi-started forum thread** | Peter Todd | One reply by the `retep` account in a Satoshi proposal thread. Not "direct contact" in the private sense, but cited as identification evidence by the [HBO documentary](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) |
+| **No record of direct contact** | Nick Szabo, Len Sassaman, Isamu Kaneko, Dorian Nakamoto, Craig Wright, Paul Le Roux | Satoshi's pre-launch outreach traced the prior-art lineage via **Adam Back → Wei Dai** only and reached none of these six |
+
+**Reading the direct-correspondence layer:** the presence or absence of correspondence is double-edged for hypothesis evaluation:
+- **Contact exists** can also serve as evidence that Satoshi treated them as third parties — Satoshi's pre-launch emails to Back and Wei Dai function as the central counter-evidence in both hypotheses (Back-as-Satoshi, Wei-Dai-as-Satoshi) (see [Satoshi identification asymmetry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2).
+- **No contact** splits into two readings — successful concealment or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
+
+The presence-or-absence of correspondence does not by itself select a hypothesis, but combined with the capability profile and the stylometric layer it functions as a third structural layer that locates each candidate's position in the candidate space.
+
 ## 2. Methodology
 
 **Profile-match dimensions.** The seven dimensions in §1's comparison table are derived from the public-record outline of Satoshi:
