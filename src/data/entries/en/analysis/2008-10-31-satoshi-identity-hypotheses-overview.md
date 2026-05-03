@@ -136,6 +136,33 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 **Profile-match is necessary but not sufficient.** Profile-match alone never decides a hypothesis. The *External status* column (self-denials, court rulings, technical disproofs) operates independently and is in some cases decisive. Cross-cutting observations on how profile-match and external status combine for individual candidates are in §4.
 
+### Capability vs covertness map
+
+Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. The map makes the §4 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
+
+```mermaid
+quadrantChart
+    title Candidate profiles, capability vs covertness
+    x-axis "Low capability" --> "High capability"
+    y-axis "Low covertness" --> "High covertness"
+    quadrant-1 "Strong fit (rare)"
+    quadrant-2 "Hidden but underqualified"
+    quadrant-3 "Visible and underqualified"
+    quadrant-4 "Visible cypherpunks"
+    "Wei Dai": [0.95, 0.55]
+    "Adam Back": [0.9, 0.25]
+    "Hal Finney": [0.9, 0.05]
+    "Nick Szabo": [0.8, 0.25]
+    "Len Sassaman": [0.6, 0.75]
+    "Paul Le Roux": [0.5, 0.55]
+    "Peter Todd": [0.5, 0.4]
+    "Craig Wright": [0.2, 0.45]
+    "Dorian Nakamoto": [0.1, 0.55]
+    "Isamu Kaneko": [0.2, 0.05]
+```
+
+The cluster pattern is the same observation §4 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
+
 ## 3. Candidate profiles
 
 The candidates fall into three groups by how they entered Satoshi-identity discourse:
