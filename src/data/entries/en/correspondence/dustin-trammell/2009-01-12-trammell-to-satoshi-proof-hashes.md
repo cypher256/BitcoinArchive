@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell tells Satoshi about the proof-hashes Google Group he runs, offers feedback on the credit field display, reports he was running v0.1.1 and will upgrade, and volunteers to help test new features."
+description: "Trammell tells Satoshi about his proof-hashes Google Group, gives feedback on the credit field display, reports running v0.1.1 and will upgrade, and offers to help test new features."
 isSatoshi: false
 tags:
   - "correspondence"

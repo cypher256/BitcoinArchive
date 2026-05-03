@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルがサトシに自身が管理するproof-hashes Googleグループについて説明し、クレジット欄の表示についてフィードバックを提供し、v0.1.1を実行中であったことを報告してアップグレードを予定していると伝え、新機能のテストに協力を申し出ている。"
+description: "トランメルがサトシに自身が運営するproof-hashes Googleグループを紹介、クレジット欄表示にフィードバック、v0.1.1実行中でアップグレード予定、新機能テスト協力を申し出。"
 isSatoshi: false
 tags:
   - "correspondence"

@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Trammell reports two issues when upgrading from v0.1.0 to v0.1.3: the old process wouldn't exit, and all four generated coins now showed 'Generated (not accepted)' — likely orphaned blocks from the communications bug."
+description: "Trammell reports two issues upgrading from v0.1.0 to v0.1.3: the old process wouldn't exit, and all four generated coins showed 'Generated (not accepted)' — likely orphans from the communications bug."
 isSatoshi: false
 tags:
   - "correspondence"

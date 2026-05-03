@@ -10,7 +10,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Dustin Trammell's first email to Satoshi Nakamoto after downloading and running the Bitcoin alpha release. Trammell reports on his experience running the software, mentions a public timestamp service, and asks about the coin maturity system after seeing generated coins showing 0.00 credit."
+description: "Dustin Trammell's first email to Satoshi after running the Bitcoin alpha. Reports usage, mentions a public timestamp service, and asks about coin maturity (generated coins showing 0.00 credit)."
 isSatoshi: false
 tags:
   - "correspondence"
