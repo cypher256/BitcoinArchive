@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Reads the asymmetry between public attempts to identify Satoshi, the surviving material trail, and the persistent identification gap. Pair entry to the identity-hypotheses overview."
+description: "Reads the asymmetry between public attempts to identify Satoshi, the surviving material trail, and the persistent identification gap. Companion entry to the identity-hypotheses overview."
 isSatoshi: false
 homeOrder: 3
 tags:

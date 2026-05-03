@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Paul Le Roux"
     slug: "paul-le-roux"
-description: "Comparison of ten recurring Satoshi candidates: Adam Back, Wei Dai, Hal Finney, Szabo, Dorian, Wright, Le Roux, Sassaman, Todd, Kaneko. Aligned in a seven-dimension table. Names no most likely."
+description: "Comparison of recurring Satoshi candidates aligned in a seven-dimension profile table. The Individual column links each candidate's hypothesis page; this entry names no leading candidate."
 isSatoshi: false
 homeOrder: 1
 tags:

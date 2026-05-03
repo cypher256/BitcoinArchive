@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Paul Le Roux"
     slug: "paul-le-roux"
-description: "サトシ正体候補 10 名（バック、ウェイ・ダイ、フィニー、サボ、ドリアン、ライト、ルルー、サッサマン、トッド、金子）を 7 次元プロファイル比較表で並列。最有力候補は指名しない。"
+description: "サトシ正体候補をプロファイル比較表（7 次元）で並列。各候補の人物像と仮説ページは表内のリンクから。最有力候補は指名しない。"
 isSatoshi: false
 homeOrder: 1
 tags:
