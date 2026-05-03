@@ -622,4 +622,7 @@ export const tagTranslations: Record<string, string> = {
   'investigation': '調査',
   'bitcoin': 'ビットコイン',
   'design-lineage': '設計系譜',
+  'methodology': '方法論',
+  'dataset': 'データセット',
+  'forensic-linguistics': '法言語学',
 };

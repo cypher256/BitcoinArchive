@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
+  - aftermath/2014-04-16-aston-university-szabo-stylometric-study
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
@@ -53,7 +55,7 @@ Popper contacted Szabo during the reporting. Szabo denied the identification by 
 
 **Reception:**
 
-The Popper piece marked the point at which the Szabo-as-Satoshi hypothesis crossed from cypherpunk-community discussion (Skye Grey's December 2013 LikeInAMirror article, the April 2014 Aston University forensic-linguistic study) into the mainstream U.S. paper of record. *Digital Gold* itself became the standard journalistic history of Bitcoin's origin period. The book's framing of Szabo as the most plausible Satoshi candidate has been cited continuously since, including in:
+The Popper piece marked the point at which the Szabo-as-Satoshi hypothesis crossed from cypherpunk-community discussion ([Skye Grey's December 2013 LikeInAMirror article](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/), the [April 2014 Aston University forensic-linguistic study](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)) into the mainstream U.S. paper of record. *Digital Gold* itself became the standard journalistic history of Bitcoin's origin period. The book's framing of Szabo as the most plausible Satoshi candidate has been cited continuously since, including in:
 
 - The April 2014 *Guardian* coverage of Skye Grey's work (which used a similar Szabo-leading framing).
 - Hannah Murphy / *Fortune*, "Is There Any Doubt This Man Created Bitcoin?" (October 31, 2018).

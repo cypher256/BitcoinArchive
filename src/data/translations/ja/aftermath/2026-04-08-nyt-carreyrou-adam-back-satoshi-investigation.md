@@ -47,6 +47,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - aftermath/2014-04-16-aston-university-szabo-stylometric-study
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
 translationStatus: complete
 ---
 

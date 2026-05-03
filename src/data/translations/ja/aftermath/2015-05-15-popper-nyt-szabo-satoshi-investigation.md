@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
+  - aftermath/2014-04-16-aston-university-szabo-stylometric-study
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
@@ -54,7 +56,7 @@ translationStatus: complete
 
 **反響：**
 
-ポパーの記事は、サボ＝サトシ仮説がサイファーパンク社会内の議論（Skye Grey の 2013 年 12 月の LikeInAMirror 記事、2014 年 4 月の Aston University による法言語学的研究）から、米国主流大手紙へ越境した転換点となった。書籍の*デジタル・ゴールド*はビットコイン創成期の標準的ジャーナリズム史として定着した。本書がサボを最も妥当なサトシ候補と位置づけた枠組みは、以後継続して参照されており、以下の媒体を含む：
+ポパーの記事は、サボ＝サトシ仮説がサイファーパンク社会内の議論（[Skye Grey の 2013 年 12 月の LikeInAMirror 記事](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[2014 年 4 月の Aston University による法言語学的研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)）から、米国主流大手紙へ越境した転換点となった。書籍の*デジタル・ゴールド*はビットコイン創成期の標準的ジャーナリズム史として定着した。本書がサボを最も妥当なサトシ候補と位置づけた枠組みは、以後継続して参照されており、以下の媒体を含む：
 
 - 2014 年 4 月の*ガーディアン*による Skye Grey 取材（同様にサボを首位とする枠組み）。
 - ハンナ・マーフィー / *Fortune*「Is There Any Doubt This Man Created Bitcoin?」（2018 年 10 月 31 日）。

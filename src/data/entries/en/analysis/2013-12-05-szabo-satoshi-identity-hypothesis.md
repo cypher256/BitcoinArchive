@@ -57,6 +57,8 @@ relatedEntries:
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
+  - aftermath/2014-04-16-aston-university-szabo-stylometric-study
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
@@ -77,7 +79,7 @@ This entry documents the recurring public hypothesis that [Nick Szabo](/BitcoinA
 
 The hypothesis is that Szabo is the person behind the Satoshi Nakamoto pseudonym, and that his continuously documented public-record interactions with Bitcoin — including the [April 2008 Unenumerated comment asking for help implementing Bit Gold](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) and the [May 2011 blog post acknowledging "Nakamoto improved a significant security shortcoming that my design had"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — were stagecraft to maintain the pseudonym. Under this reading, Szabo has been the person operating as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal, while continuing his Unenumerated blog and public scholarship as a public-record decoy.
 
-The earliest prominent stylometric articulation is the [December 2013 LikeInAMirror.com article *"Satoshi Nakamoto is (probably) Nick Szabo"* by pseudonymous blogger Skye Grey, given mainstream coverage by TechCrunch on December 5, 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/). It was reinforced by an [April 16, 2014 CoinDesk report](https://www.coindesk.com/markets/2014/04/16/linguistic-researchers-name-nick-szabo-as-author-of-bitcoin-whitepaper) on a forensic-linguistic study by researchers at Aston University.
+The earliest prominent stylometric articulation is the [December 2013 LikeInAMirror.com article *"Satoshi Nakamoto is (probably) Nick Szabo"* by pseudonymous blogger Skye Grey, given mainstream coverage by TechCrunch on December 5, 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/). It was reinforced by an [April 2014 forensic-linguistic study at Aston University](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) reported by CoinDesk and ScienceDaily.
 
 ## 2. The arguments the hypothesis rests on
 
@@ -99,7 +101,7 @@ Pseudonymous blogger **Skye Grey** published *"Satoshi Nakamoto is (probably) Ni
 
 Skye Grey's stated finding: the patterns matched Szabo's Unenumerated writings strongly enough that, in Skye Grey's framing, "only 0.1% of cryptography researchers" could have produced Satoshi's text.
 
-In **April 2014**, [forensic-linguistic researchers at Aston University](https://www.coindesk.com/markets/2014/04/16/linguistic-researchers-name-nick-szabo-as-author-of-bitcoin-whitepaper) reported a separate stylometric study citing Grey's earlier work and concluding that Szabo was the most likely author of the Bitcoin whitepaper among the candidates they examined.
+In **April 2014**, [forensic-linguistic researchers at Aston University reported a separate stylometric study](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) — "Project Bitcoin," led by Dr. Jack Grieve — citing Grey's earlier work and concluding that Szabo was the most likely author of the Bitcoin whitepaper among the 11 candidates they examined.
 
 In **May 2015**, [Nathaniel Popper of *The New York Times* published an excerpt from his book *Digital Gold*](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) in which he wrote that, across his interviews with early Bitcoin participants, "I encountered a quiet but widely held belief that much of the most convincing evidence pointed to a reclusive American man of Hungarian descent named Nick Szabo." This brought the hypothesis into the major-press tier — comparable to the role the [April 2026 Carreyrou NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) later played for Adam Back. Szabo replied to Popper: "I am not Satoshi." A year later, when Popper asked again by email, Szabo repeated the denial.
 

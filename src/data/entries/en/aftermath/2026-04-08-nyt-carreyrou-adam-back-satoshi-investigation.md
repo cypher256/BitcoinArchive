@@ -47,6 +47,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - aftermath/2014-04-16-aston-university-szabo-stylometric-study
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
 ---
 
 On April 8, 2026, [John Carreyrou](https://en.wikipedia.org/wiki/John_Carreyrou) — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.

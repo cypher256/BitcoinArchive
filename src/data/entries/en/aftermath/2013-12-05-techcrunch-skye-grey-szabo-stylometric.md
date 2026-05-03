@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
+  - aftermath/2014-04-16-aston-university-szabo-stylometric-study
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
@@ -39,7 +41,7 @@ relatedEntries:
 
 On December 1, 2013, an anonymous blogger writing under the handle "Skye Grey" published an article titled ["Satoshi Nakamoto is (probably) Nick Szabo"](https://likeinamirror.wordpress.com/2013/12/01/satoshi-nakamoto-is-probably-nick-szabo/) on the LikeInAMirror.wordpress.com blog. On December 5, 2013, TechCrunch's John Biggs reported the investigation under the headline ["Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer"](https://techcrunch.com/2013/12/05/who-is-the-real-satoshi-nakamoto-one-researcher-may-have-found-the-answer/), introducing the hypothesis to the broader cryptocurrency and technology press.
 
-This is the foundational stylometric event in the Szabo-as-Satoshi hypothesis record. Every subsequent mainstream identification of [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) as [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) — the April 2014 Aston University forensic-linguistic study, the [May 2015 New York Times investigation by Nathaniel Popper](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) and his book *Digital Gold*, the October 2018 Hannah Murphy / *Fortune* feature — traces back to or amplifies Skye Grey's December 2013 starting analysis.
+This is the foundational stylometric event in the Szabo-as-Satoshi hypothesis record. Every subsequent mainstream identification of [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) as [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) — the [April 2014 Aston University forensic-linguistic study](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/), the [May 2015 New York Times investigation by Nathaniel Popper](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) and his book *Digital Gold*, the October 2018 Hannah Murphy / *Fortune* feature — traces back to or amplifies Skye Grey's December 2013 starting analysis.
 
 **The Skye Grey methodology:**
 
