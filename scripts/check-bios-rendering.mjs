@@ -103,7 +103,15 @@ await browser.close();
 let exit = 0;
 for (const r of results) {
   if (r.status === 'ok') console.log(`✓ ${r.slug} → ${r.file}`);
-  else if (r.status === 'no-mermaid') console.log(`- ${r.slug} (no .mermaid-scroll)`);
+  else if (r.status === 'no-mermaid') {
+    // All target bios are expected to contain a .mermaid-scroll diagram.
+    // Missing one usually means the page rendered as 404 (e.g. dev server
+    // running on a fallback port like 4322 instead of 4321) or the
+    // diagram failed to render. Either way it must fail the check, not
+    // pass silently.
+    console.error(`✗ ${r.slug}: no .mermaid-scroll element found (404? wrong port? render failure?)`);
+    exit = 1;
+  }
   else {
     console.error(`✗ ${r.slug}: ${r.error}`);
     exit = 1;
