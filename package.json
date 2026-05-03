@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node scripts/generate-derived-related.mjs && node scripts/generate-git-dates.mjs && astro dev",
     "build": "node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-tags.mjs && node scripts/check-ja-participant-slugs.mjs && node scripts/check-ja-block-notation.mjs && node scripts/check-ja-glossary.mjs && node scripts/check-quotes.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/generate-derived-related.mjs && node scripts/generate-git-dates.mjs && astro build && node scripts/algolia-index.mjs",
-    "check": "node scripts/generate-derived-related.mjs && node scripts/generate-git-dates.mjs && node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-tags.mjs && node scripts/check-ja-participant-slugs.mjs && node scripts/check-ja-block-notation.mjs && node scripts/check-ja-glossary.mjs && node scripts/check-quotes.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/check-inline-link-coverage.mjs && node scripts/check-editorial-markers.mjs --strict && node scripts/sync-content.mjs",
+    "check": "node scripts/generate-derived-related.mjs && node scripts/generate-git-dates.mjs && node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-tags.mjs && node scripts/check-ja-participant-slugs.mjs && node scripts/check-ja-block-notation.mjs && node scripts/check-ja-glossary.mjs && node scripts/check-quotes.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/check-inline-link-coverage.mjs && node scripts/check-mermaid.mjs && node scripts/check-editorial-markers.mjs --strict && node scripts/sync-content.mjs",
     "check:image-alt": "node scripts/check-markdown-image-alt.mjs",
     "check:participants": "node scripts/check-participants.mjs",
     "check:ja-tone": "node scripts/check-ja-tone.mjs",
@@ -20,6 +20,7 @@
     "check:internal-links": "node scripts/check-internal-links.mjs",
     "check:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs",
     "check:editorial-markers": "node scripts/check-editorial-markers.mjs",
+    "check:mermaid": "node scripts/check-mermaid.mjs",
     "audit:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs",
     "audit:inline-reference-gaps": "node scripts/check-internal-links.mjs --inline-gaps",
     "audit:external-link-redundancy": "node scripts/check-external-link-redundancy.mjs",
@@ -38,5 +39,10 @@
     "remark-math": "^6.0.0",
     "satori": "^0.25.0",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.14.0",
+    "playwright": "^1.59.1",
+    "rehype-mermaid": "^3.0.0"
   }
 }

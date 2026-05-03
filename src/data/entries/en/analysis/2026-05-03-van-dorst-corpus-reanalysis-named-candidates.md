@@ -106,6 +106,18 @@ All five named candidates rank in the top 25% of the 12,739-author corpus, four 
 
 The analysis confirms that the named-candidate studies are not finding noise: the same five candidates are stylometrically meaningful in the wider 75,000-author corpus too. It also reveals that three of the four named-candidate studies actually converge on Szabo as the closest match — Skye Grey 2013 (named), Aston 2014 (named), and this reanalysis of van Dorst's data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, and Cafiero himself qualified that result as inconclusive (Hal Finney near tie). The differences between the named candidates remain small enough that the leading candidate is not robustly determined by the metric alone — but the data is more consistent with Szabo as the closest of the named candidates than the published-headlines reading ("Szabo / Szabo / no name / Adam Back") would suggest.
 
+The four investigations as a timeline:
+
+```mermaid
+timeline
+    title Stylometric Satoshi-identification studies
+    2013 : Skye Grey single-hypothesis test  - Szabo as top match
+    2014 : Aston University Project Bitcoin - Szabo top of 11 candidates
+    2024 : van Dorst Where is Satoshi - 75,000+ corpus, no top named
+         : Bitcoin Institute reanalysis - Szabo top of 5 named candidates
+    2026 : Carreyrou and Cafiero NYT - Adam Back top of 12, inconclusive
+```
+
 ## 3. Top of the corpus: noise rather than signal
 
 A finding that does not appear in any of the named-candidate stylometric studies, and that becomes visible only when the candidate pool is the whole 75,000-author corpus rather than a small pre-selected subset:

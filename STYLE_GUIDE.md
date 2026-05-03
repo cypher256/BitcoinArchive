@@ -929,6 +929,61 @@ container fluid behavior and intentionally uses a different breakpoint.
   whitespace is acceptable.
 - Print styles are not addressed.
 
+## Mermaid Diagrams
+
+The archive renders ` ```mermaid ` code blocks to inline SVG at build time
+(`rehype-mermaid` in `astro.config.mjs`). Syntax errors fail the build, so
+no runtime "Syntax error in graph" red boxes can reach production.
+
+### When to use Mermaid vs. d3 components
+
+- **Mermaid**: timelines, flowcharts, sequence diagrams, state diagrams,
+  Gantt charts, mindmaps, class/ER diagrams. Editor-friendly: any writer
+  can add a diagram in markdown without touching component code.
+- **d3 Astro components** (under `src/components/`): data visualizations
+  that need actual numbers, custom axes, interactive scales — histograms,
+  scatter plots, network graphs from data, heatmaps. Reserve for cases
+  where Mermaid's templates are insufficient.
+
+The two are complementary, not competing. A page can use both.
+
+### Validation
+
+The pipeline `npm run check` includes `check:mermaid`, which extracts
+every ` ```mermaid ` block in the corpus and parses it through
+`@mermaid-js/mermaid-cli`. Failures are reported with file path, line
+number, and the parse error. Run `npm run check:mermaid` directly to
+iterate on a diagram without the full check.
+
+### Japanese content gotchas
+
+Mermaid v10+ handles Unicode well, but a few patterns trip JA editors.
+Quote node labels with `"..."` whenever the label contains anything
+that overlaps Mermaid syntax characters.
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| Parse error on a node like `node[Skye Greyの記事]` containing parens / brackets / colons | Mermaid treats `[]:()` as syntax; full-width forms `「」（）：` mostly OK but mixing is fragile | Always quote: `node["Skye Greyの記事"]` |
+| Stray `→` arrow in flowchart syntax | Mermaid expects `-->` `==>` `-.->` etc. for edges; `→` inside an *unquoted* label can confuse parsers | Use `-->` for edges; if `→` appears as text inside a label, wrap label in `"..."` |
+| Full-width colon `：` used as a Mermaid syntax separator | Mermaid expects half-width `:` (e.g. in `timeline` event lines) | Always use half-width `:` `;` `(` `)` `[` `]` for syntax positions; full-width forms are fine *inside* quoted labels |
+| Tab vs. space indentation mix | Some diagram parsers are whitespace-sensitive | Use 4 spaces consistently; no tabs |
+| Diagram height unexpectedly cut off | Default theme styling | Generally not an editor issue; report if it shows up |
+
+### Authoring example (timeline with mixed JA/EN)
+
+````markdown
+```mermaid
+timeline
+    title 文体計量研究の系譜
+    2013 : "Skye Grey (LikeInAMirror) — Szabo を首位"
+    2014 : "アストン大学 Project Bitcoin — Szabo を首位 (11 候補)"
+    2024 : "ヴァン・ドルスト Where is Satoshi? — 公表上は指名なし"
+    2026 : "カフィエロ／カレイロウ NYT — Adam Back を首位"
+```
+````
+
+Quoting every label is the safe-by-default rule for JA content.
+
 ## Language-Specific Guides
 
 - Japanese-specific rules: `STYLE_GUIDE_JA.md`
