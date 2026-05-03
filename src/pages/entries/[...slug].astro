@@ -22,6 +22,7 @@ import StylometricDistanceHistogram from '../../components/StylometricDistanceHi
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl } from '../../i18n/utils';
 import { resolveThreadId } from '../../data/threads';
+import { renderEditorNote } from '../../lib/editor-note';
 import gitDates from '../../data/git-dates.json';
 
 export async function getStaticPaths() {
@@ -110,7 +111,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
     {entry.data.editorNote && (
       <aside class="editor-note">
         <span class="editor-note-label">📝 Editor's note (Bitcoin Institute)</span>
-        <p set:html={entry.data.editorNote.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')}></p>
+        <p set:html={renderEditorNote(entry.data.editorNote)}></p>
       </aside>
     )}
 
