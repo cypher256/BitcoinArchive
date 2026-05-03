@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトのBitcoinソースコード（v0.1.0〜v0.3.19）の統計的分析。コーディングスタイルの指紋、EST/CSTタイムゾーンを示唆するコミット時間帯パターン、14ヶ月で19,901行から31,909行へのコード進化、失踪前の最終コミットの特徴。"
+description: "サトシの Bitcoin ソース（v0.1.0〜v0.3.19）の統計分析。コーディングスタイル指紋、EST/CST 示唆のコミット時間、19,901→31,909 行進化、最終コミットの特徴。"
 isSatoshi: true
 homeOrder: 7
 tags:
