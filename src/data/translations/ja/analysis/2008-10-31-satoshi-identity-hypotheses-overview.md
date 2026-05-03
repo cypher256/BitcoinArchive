@@ -200,7 +200,7 @@ quadrantChart
 
 #### ハル・フィニー
 
-**経歴。** サイファーパンク（ハロルド・トーマス・フィニー二世、1956 年 5 月 4 日〜2014 年 8 月 28 日）、カリフォルニア工科大学工学卒、PGP 2.0 の主要開発者の一人、Reusable Proof-of-Work（RPOW）の考案者。2009 年 1 月 9 日（ビットコイン v0.1 のリリース日）にフィニーはソフトウェアをダウンロードし、サトシ以外で最初にビットコインノードを稼働させた人物となった。2009 年 1 月 11 日には「Running bitcoin」 とツイート。2009 年 1 月 12 日にはサトシからブロック 170 で 10 BTC を受け取った — 人類初の人物間ビットコイン取引。フィニーはカリフォルニア州テンプル市に約 10 年間居住しており — Newsweek が後にドリアン・プレンティス・サトシ・ナカモトを特定したのと同じ町で「数ブロック先」 だった。
+**経歴。** サイファーパンク（ハロルド・トーマス・フィニー二世、1956 年 5 月 4 日〜2014 年 8 月 28 日）、カリフォルニア工科大学工学卒、PGP 2.0 の主要開発者の一人、Reusable Proof-of-Work（RPOW）の考案者。2009 年 1 月 9 日（ビットコイン v0.1 のリリース日）にフィニーはソフトウェアをダウンロードし、サトシ以外で最初にビットコインノードを稼働させた人物となった。2009 年 1 月 11 日には「Running bitcoin」 とツイート。2009 年 1 月 12 日にはサトシからブロック 170 で 10 BTC を受け取った — 人類初のビットコイン取引。フィニーはカリフォルニア州テンプル市に約 10 年間居住しており — Newsweek が後にドリアン・プレンティス・サトシ・ナカモトを特定したのと同じ町で「数ブロック先」 だった。
 
 **外部的状況。** 自己否定（2013 年 3 月の[*Bitcoin and Me*](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) でサトシを別人として記述）／[Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) と記録された控えめな保有量の不整合／2009 年 4 月 18 日のレース当日アリバイの当時記録。 → [ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) で、RPOW 先駆論、レース当日アリバイ（[グリーンバーグ 2014 Forbes 記事](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が初出、[ロップ 2023](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) が構造化）、*Bitcoin and Me* の第三者的記述、Patoshi 規模の不整合、2010 年 8 月の特異点サミット／ALS 進行のアリバイを全文の詳細で扱う。
 

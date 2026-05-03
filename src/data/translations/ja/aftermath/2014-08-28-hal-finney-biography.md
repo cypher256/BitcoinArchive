@@ -59,7 +59,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ハロルド・トーマス・フィニー二世は1956年5月4日、カリフォルニア州コアリンガに生まれ、アーケイディアで育った。1974年にアーケイディア高校を首席で卒業し、1979年にカリフォルニア工科大学（Caltech）でエンジニアリングの理学士号を取得した。サイファーパンクとしての経歴、2004 年の Reusable Proof-of-Work、人類初の人物間ビットコイン取引の受領、ドリアン・ナカモトへの地理的近接性 — これらが組み合わさり、最も多く議論されるサトシ正体候補の一人となった。詳細は[ハル・フィニー = サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) を参照。主要な反証は[2009 年 4 月 18 日のレース当日アリバイ](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) および Patoshi 規模の不整合。
+ハロルド・トーマス・フィニー二世は1956年5月4日、カリフォルニア州コアリンガに生まれ、アーケイディアで育った。1974年にアーケイディア高校を首席で卒業し、1979年にカリフォルニア工科大学（Caltech）でエンジニアリングの理学士号を取得した。サイファーパンクとしての経歴、2004 年の Reusable Proof-of-Work、人類初のビットコイン取引の受領、ドリアン・ナカモトへの地理的近接性 — これらが組み合わさり、最も多く議論されるサトシ正体候補の一人となった。詳細は[ハル・フィニー = サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) を参照。主要な反証は[2009 年 4 月 18 日のレース当日アリバイ](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) および Patoshi 規模の不整合。
 
 ```mermaid
 timeline
