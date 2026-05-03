@@ -8,10 +8,17 @@ interface Props {
 const { lang } = Astro.props;
 const svnData = await import('../data/patoshi/svn-committers.json').then(m => m.default);
 
+// Derive headline figures from the JSON so the subtitle stays in sync if the
+// data is regenerated.
+const totalRevisions: number = svnData.totalRevisions;
+const committerCount: number = svnData.committers.length;
+const satoshiCommits: number = svnData.committers.find((c: any) => c.isSatoshi)?.commits ?? 0;
+const satoshiPct = Math.round((satoshiCommits / totalRevisions) * 100);
+
 const labels = {
   en: {
     barTitle: 'SVN Commit Distribution by Developer',
-    barSub: '252 total revisions across 4 committers. Satoshi authored 65% of all commits.',
+    barSub: `${totalRevisions.toLocaleString('en-US')} total revisions across ${committerCount} committers. Satoshi authored ${satoshiPct}% of all commits.`,
     timeTitle: 'Commit Access Timeline',
     timeSub: 'Active period for each developer on the SourceForge SVN repository (2009–2011).',
     commits: 'commits',
@@ -22,7 +29,7 @@ const labels = {
   },
   ja: {
     barTitle: 'SVN コミット数の分布（開発者別）',
-    barSub: '4人のコミッターによる全252リビジョン。全コミットの65%をサトシが占める。',
+    barSub: `${committerCount}人のコミッターによる全${totalRevisions.toLocaleString('ja-JP')}リビジョン。全コミットの${satoshiPct}%をサトシが占める。`,
     timeTitle: 'コミットアクセスのタイムライン',
     timeSub: 'SourceForge SVNリポジトリにおける各開発者の活動期間（2009〜2011年）。',
     commits: 'コミット',

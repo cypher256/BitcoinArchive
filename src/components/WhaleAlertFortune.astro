@@ -7,34 +7,71 @@ interface Props {
 
 const { lang } = Astro.props;
 
+// Single source of truth for the figures. All labels and the chart code
+// derive from these constants so the numbers cannot drift apart (a previous
+// version had the unspent label hardcoded to 1,122,693 while the chart
+// computed 1,125,150 - 907 = 1,124,243).
+const figures = {
+  totalBlocks: 54316,
+  patoshiBlocks: 22503,
+  totalMined: 1125150,
+  spent: 907,
+  spentBlocks: 50,
+};
+const unspent = figures.totalMined - figures.spent;
+const patoshiPct = Math.round((figures.patoshiBlocks / figures.totalBlocks) * 100);
+const unspentPct = ((unspent / figures.totalMined) * 100).toFixed(2);
+const spentPct = ((figures.spent / figures.totalMined) * 100).toFixed(2);
+
+const fmtEN = (n: number) => n.toLocaleString('en-US');
+const fmtJA = (n: number) => n.toLocaleString('ja-JP');
+
 const labels = {
   en: {
-    blocksTitle: 'Share of First 54,316 Blocks',
-    blocksSub: 'Whale Alert identified 22,503 of the first 54,316 blocks (41%) as mined by Satoshi via the Patoshi pattern.',
+    blocksTitle: `Share of First ${fmtEN(figures.totalBlocks)} Blocks`,
+    blocksSub: `Whale Alert identified ${fmtEN(figures.patoshiBlocks)} of the first ${fmtEN(figures.totalBlocks)} blocks (${patoshiPct}%) as mined by Satoshi via the Patoshi pattern.`,
     spentTitle: 'Spent vs. Unspent Coins',
-    spentSub: 'Of 1,125,150 BTC mined, only 907 BTC (from 50 blocks) have ever been spent. The remaining 99.92% have never moved.',
+    spentSub: `Of ${fmtEN(figures.totalMined)} BTC mined, only ${fmtEN(figures.spent)} BTC (from ${figures.spentBlocks} blocks) have ever been spent. The remaining ${unspentPct}% have never moved.`,
     patoshi: 'Patoshi blocks',
     other: 'Other miners',
-    spent: 'Spent (907 BTC, 50 blocks)',
-    unspent: 'Unspent (1,122,693 BTC)',
+    spent: `Spent (${fmtEN(figures.spent)} BTC, ${figures.spentBlocks} blocks)`,
+    unspent: `Unspent (${fmtEN(unspent)} BTC)`,
     btc: 'BTC',
     blocks: 'blocks',
+    centerPct: `${patoshiPct}%`,
+    centerRatio: `${fmtEN(figures.patoshiBlocks)} / ${fmtEN(figures.totalBlocks)}`,
+    barUnspentLabel: `${unspentPct}%`,
+    barSpentLabel: `${spentPct}%`,
   },
   ja: {
-    blocksTitle: '最初の54,316ブロックの内訳',
-    blocksSub: 'Whale AlertはPatoshiパターンにより、最初の54,316ブロック中22,503（41%）をサトシがマイニングしたと特定。',
+    blocksTitle: `最初の${fmtJA(figures.totalBlocks)}ブロックの内訳`,
+    blocksSub: `Whale AlertはPatoshiパターンにより、最初の${fmtJA(figures.totalBlocks)}ブロック中${fmtJA(figures.patoshiBlocks)}（${patoshiPct}%）をサトシがマイニングしたと特定。`,
     spentTitle: '使用済み vs. 未使用コイン',
-    spentSub: 'マイニングされた1,125,150 BTC のうち、使用されたのは50ブロックから907 BTC のみ。残り99.92%は一度も動いていない。',
+    spentSub: `マイニングされた${fmtJA(figures.totalMined)} BTC のうち、使用されたのは${figures.spentBlocks}ブロックから${fmtJA(figures.spent)} BTC のみ。残り${unspentPct}%は一度も動いていない。`,
     patoshi: 'Patoshi ブロック',
     other: '他のマイナー',
-    spent: '使用済み（907 BTC、50 ブロック）',
-    unspent: '未使用（1,122,693 BTC）',
+    spent: `使用済み（${fmtJA(figures.spent)} BTC、${figures.spentBlocks} ブロック）`,
+    unspent: `未使用（${fmtJA(unspent)} BTC）`,
     btc: 'BTC',
     blocks: 'ブロック',
+    centerPct: `${patoshiPct}%`,
+    centerRatio: `${fmtJA(figures.patoshiBlocks)} / ${fmtJA(figures.totalBlocks)}`,
+    barUnspentLabel: `${unspentPct}%`,
+    barSpentLabel: `${spentPct}%`,
   },
 };
 
 const l = labels[lang];
+
+const chartData = {
+  totalBlocks: figures.totalBlocks,
+  patoshiBlocks: figures.patoshiBlocks,
+  totalMined: figures.totalMined,
+  spent: figures.spent,
+  unspent,
+  unspentPctNumeric: unspent / figures.totalMined,
+  labels: l,
+};
 ---
 
 <div class="whale-alert-fortune">
@@ -50,7 +87,7 @@ const l = labels[lang];
     <div id="spent-bar" class="chart-container"></div>
   </section>
 
-  <script type="application/json" id="whale-data" set:html={JSON.stringify(l)} />
+  <script type="application/json" id="whale-data" set:html={JSON.stringify(chartData)} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
@@ -61,7 +98,8 @@ const l = labels[lang];
 
     var dataEl = document.getElementById('whale-data');
     if (!dataEl) return;
-    var l = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent);
+    var l = data.labels;
 
     // --- Donut (blocks breakdown) ---
     (function() {
@@ -80,35 +118,35 @@ const l = labels[lang];
         var radius = Math.min(W, H) / 2 - 30;
         var innerRadius = radius * 0.55;
 
-        var data = [
-          { label: l.patoshi, value: 22503, color: '#b45309' },
-          { label: l.other, value: 54316 - 22503, color: '#9ca3af' },
+        var pieData = [
+          { label: l.patoshi, value: data.patoshiBlocks, color: '#b45309' },
+          { label: l.other, value: data.totalBlocks - data.patoshiBlocks, color: '#9ca3af' },
         ];
 
         var pie = d3.pie().value(function(d) { return d.value; }).sort(null);
         var arc = d3.arc().innerRadius(innerRadius).outerRadius(radius);
 
-        g.selectAll('path').data(pie(data)).enter()
+        g.selectAll('path').data(pie(pieData)).enter()
           .append('path').attr('d', arc)
           .attr('fill', function(d) { return d.data.color; })
           .attr('stroke', '#fff').attr('stroke-width', 2);
 
-        // Center text
+        // Center text — values flow from the same figures block as the labels
         g.append('text')
           .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
           .attr('y', -12)
           .attr('font-size', '22px').attr('font-weight', '700')
-          .attr('fill', '#b45309').text('41%');
+          .attr('fill', '#b45309').text(l.centerPct);
         g.append('text')
           .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
           .attr('y', 12)
           .attr('font-size', '11px').attr('fill', '#6b6b6b')
-          .text('22,503 / 54,316');
+          .text(l.centerRatio);
 
         // Labels on slices — place outside slice with leader line
         var labelArc = d3.arc().innerRadius(radius + 10).outerRadius(radius + 10);
-        data.forEach(function(d, i) {
-          var slice = pie(data)[i];
+        pieData.forEach(function(d, i) {
+          var slice = pie(pieData)[i];
           var pos = labelArc.centroid(slice);
           var midAngle = (slice.startAngle + slice.endAngle) / 2;
           var isRight = midAngle < Math.PI;
@@ -143,10 +181,7 @@ const l = labels[lang];
         var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
         var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var total = 1125150;
-        var spent = 907;
-        var unspent = total - spent;
-        var pctUnspent = unspent / total;
+        var pctUnspent = data.unspentPctNumeric;
 
         // Unspent portion (huge)
         g.append('rect')
@@ -165,7 +200,7 @@ const l = labels[lang];
           .attr('x', (w * pctUnspent) / 2).attr('y', h / 2)
           .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
           .attr('fill', '#fff').attr('font-size', '14px').attr('font-weight', '700')
-          .text('99.92% ' + l.unspent);
+          .text(l.barUnspentLabel + ' ' + l.unspent);
 
         // Spent indicator (above)
         g.append('line')
@@ -176,7 +211,7 @@ const l = labels[lang];
           .attr('x', w - 20).attr('y', -15)
           .attr('text-anchor', 'end').attr('font-size', '10px')
           .attr('fill', '#dc2626').attr('font-weight', '600')
-          .text('0.08% ' + l.spent);
+          .text(l.barSpentLabel + ' ' + l.spent);
       }
       draw();
       var timer;
