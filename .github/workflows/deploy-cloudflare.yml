@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright Chromium (required by rehype-mermaid for SVG render)
+        run: npx playwright install --with-deps chromium
+
       - name: Build
         env:
           CF_PAGES: "1"
