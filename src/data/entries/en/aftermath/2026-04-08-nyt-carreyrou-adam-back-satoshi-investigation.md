@@ -58,7 +58,7 @@ On April 8, 2026, [John Carreyrou](https://en.wikipedia.org/wiki/John_Carreyrou)
 
 Carreyrou spent 18 months on the investigation, working with NYT AI expert Dylan Freedman. The methodology centered on stylometric comparison of cypherpunk-era writing:
 
-- Compiled correspondence from three cypherpunk mailing lists spanning roughly 1992 through 2008.
+- Compiled correspondence from three cypherpunk mailing lists spanning roughly 1992 through 2008: the **Cypherpunks** list, the **Cryptography** list (metzdowd.com), and the **Hashcash** mailing list. The third list — Hashcash — was the announce/discussion list for Adam Back's own 1997 proof-of-work proposal, which means Back's writing volume on that list is structurally elevated for reasons unrelated to whether Back is Satoshi. Back has himself flagged this as the central methodological problem: "I wrote prolifically about electronic cash for over a decade ... my archived writing provides far more material for pattern-matching algorithms to latch onto than the writing of less active contributors. The match is an artefact of volume, not authorship."
 - Filtered to the 620 writers who had posted at least 10 messages on cryptography mailing lists before Bitcoin's 2008 launch.
 - Ran per-writer stylistic-fingerprint comparisons against Satoshi's known writing.
 - Identified three markers where Back's writing matched Satoshi's distinctively: double-spacing after periods, British spellings (with Satoshi's same mixed British/American pattern), and a specific class of hyphenation misuse.
