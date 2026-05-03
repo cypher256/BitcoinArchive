@@ -43,6 +43,7 @@ relatedEntries:
   - "bip/2020-01-19-bip-0340"
   - "bip/2020-01-19-bip-0341"
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
+  - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 translationStatus: complete
 ---
 

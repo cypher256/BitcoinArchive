@@ -47,6 +47,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
 inlineLinkKeywords:
   - "ウェイ・ダイ仮説"
   - "ウェイ・ダイ = サトシ"
@@ -77,8 +78,9 @@ translationStatus: complete
 |---|---|---|
 | v0.1 | 2009-01-09 | Crypto++ 5.5.2 SHA-256 をスタンドアロン (`sha.cpp`、`sha.h`) としてバンドル |
 | v0.3.6 | 2010-07-29 | Crypto++ 5.6.0 SSE2 最適化 SHA-256 を統合 (約 2.5 倍高速化) |
+| v0.5.0 | 2011-11-20 | [Crypto++ サブセット撤去、OpenSSL SHA-256 に置換](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/) (ニルス・シュナイダーのコミットをギャビン・アンドレセンがマージ) |
 
-これはビットコイン v0.1 が名指し候補の公開コードに対して持つ唯一の直接的なコードベースレベルの依存である。論点: (a) b-money が参考文献 [1]、(b) Crypto++ がビットコインのハッシュ基本要素を提供、(c) ウェイ・ダイが両者の唯一の共著者 — これらの組合せが、他のいずれの候補も占めない構造的位置にウェイ・ダイを置く。
+このコードベース依存は 22 か月の稼働窓 (v0.1 2009 年 1 月〜v0.4.x) を持ち、サトシの 2011 年 4 月離脱から約 6 か月後に終了した。下記の論点はこの窓に対して有効であり、現在稼働中の Bitcoin Core には及ばない。これはビットコイン v0.1 が名指し候補の公開コードに対して持つ唯一の直接的なコードベースレベルの依存である。論点: (a) b-money が参考文献 [1]、(b) Crypto++ がビットコインのハッシュ基本要素を提供、(c) ウェイ・ダイが両者の唯一の共著者 — これらの組合せが、他のいずれの候補も占めない構造的位置にウェイ・ダイを置く。
 
 反論: Crypto++ は 2000 年代後半の C++ 暗号ライブラリの事実上の標準であった。当時の C++ プロジェクトで SHA-256 を使うために Crypto++ を選ぶのは通常のエンジニアリング判断であり、自己著者性の信号ではない。v0.3.6 の SSE2 最適化アップグレードは[BitcoinTalk のメンバー「BlackEye」 が提案した](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/) ものであり、サトシ単独の判断ではない。サトシがすべてのコードベース判断を制御する自己演出読みでは、これは整合させにくい事実である。
 

@@ -502,6 +502,7 @@ export const tagTranslations: Record<string, string> = {
   'nlocktime': 'nLockTime',
   'node-count': 'ノード数',
   'node-operator': 'ノード運用者',
+  'cryptopp': 'Crypto++',
   'ocean': 'Ocean',
   'openssl': 'OpenSSL',
   'opentimestamps': 'OpenTimestamps',

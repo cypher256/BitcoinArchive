@@ -44,6 +44,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 translationStatus: complete
 ---
 <!-- tone-skip -->

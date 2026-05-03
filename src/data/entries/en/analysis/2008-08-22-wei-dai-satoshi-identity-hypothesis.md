@@ -47,6 +47,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
 inlineLinkKeywords:
   - "Wei Dai hypothesis"
   - "Wei Dai = Satoshi"
@@ -76,8 +77,9 @@ Wei Dai created and maintained [Crypto++](https://www.cryptopp.com/), a free ope
 |---|---|---|
 | v0.1 | 2009-01-09 | Bundled Crypto++ 5.5.2 SHA-256 as standalone files (`sha.cpp`, `sha.h`) |
 | v0.3.6 | 2010-07-29 | Integrated Crypto++ 5.6.0 SSE2-optimized SHA-256 (~2.5× speedup) |
+| v0.5.0 | 2011-11-20 | [Crypto++ subset removed; replaced by OpenSSL SHA-256](/BitcoinArchive/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/) (Nils Schneider commit, merged by Gavin Andresen) |
 
-This is the only direct codebase-level dependency Bitcoin v0.1 has on a named candidate's published code. The argument: combining (a) b-money cited as reference [1], (b) Crypto++ providing Bitcoin's hash primitive, (c) the fact that Wei Dai is the sole common author of both, places him in a structural position no other candidate occupies.
+The codebase dependency had a 22-month operational window (v0.1 January 2009 through v0.4.x) and ended approximately six months after Satoshi's April 2011 departure. The argument below applies to that window, not to running Bitcoin Core today. This is the only direct codebase-level dependency Bitcoin v0.1 has on a named candidate's published code. The argument: combining (a) b-money cited as reference [1], (b) Crypto++ providing Bitcoin's hash primitive, (c) the fact that Wei Dai is the sole common author of both, places him in a structural position no other candidate occupies.
 
 The objection: Crypto++ was the de-facto standard C++ cryptographic library of the late 2000s. Choosing Crypto++ for SHA-256 in a C++ project of that era was a routine engineering decision, not a signal of self-authorship. The v0.3.6 SSE2 optimization upgrade was [proposed by BitcoinTalk member "BlackEye"](/BitcoinArchive/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/), not by Satoshi alone, which is hard to reconcile with a self-staging reading where Satoshi controls all the codebase decisions.
 

@@ -36,6 +36,7 @@ relatedEntries:
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
+  - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
 ---
 
 [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s final known private communications took place over two emails in April 2011.

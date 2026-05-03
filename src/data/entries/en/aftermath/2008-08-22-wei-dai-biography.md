@@ -44,6 +44,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 ---
 
 Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft. The b-money citation as reference [1] in the Bitcoin whitepaper, the Crypto++ codebase dependency in Bitcoin v0.1, and Wei Dai's status as the second person Satoshi contacted before launch have made him a recurring Satoshi-identity candidate — documented in the [Wei Dai = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/), with the [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) as the principal self-denial.
