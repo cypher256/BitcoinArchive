@@ -37,7 +37,7 @@ translationStatus: complete
 
 6か月前の2010年12月5日、サトシ・ナカモトはWikiLeaksのビットコイン採用に対して[コミュニティにこう警告していた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)。
 
-> 「プロジェクトは徐々に成長する必要がある。そうすれば途中でソフトウェアを強化できる。WikiLeaksにビットコインを使おうとしないよう訴える。」
+> 「プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。」
 
 WikiLeaksはサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から2か月後だったことだ。
 

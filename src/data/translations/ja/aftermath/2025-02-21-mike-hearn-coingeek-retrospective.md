@@ -54,7 +54,7 @@ CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](
 
 サトシは翌日 [直接反論した](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/):
 
-> 違う、挑発するな。... もたらされる注目はこの段階で我々を破壊してしまう可能性が高い。
+> 違う、挑発するな。... もたらす火種は、この段階で我々を破壊しかねない。
 
 サトシの反論から 7 日後の 2010 年 12 月 12 日、サトシは [最終公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) で「バトンを渡す予定だ」 と告げ、その後私的メールを 4 か月続けた末に姿を消した。皮肉にも、サトシ撤退から 6 か月後の [2011 年 6 月、WikiLeaks はサトシの反対を押し切ってビットコイン寄付を受け付け始めた](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)。
 
