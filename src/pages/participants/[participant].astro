@@ -142,7 +142,7 @@ const structuredData = [
     {hypothesisEntry && (
       <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
         <span class="hypothesis-icon">🔍</span>
-        <span class="hypothesis-label">Identity hypothesis</span>
+        <span class="hypothesis-label">{hypothesisEntry.id === overviewId ? 'Identity hypotheses overview' : 'Identity hypothesis'}</span>
         <span class="hypothesis-arrow">&rarr;</span>
       </a>
     )}
