@@ -49,6 +49,7 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
+  - aftermath/2014-03-06-dorian-nakamoto-biography
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture

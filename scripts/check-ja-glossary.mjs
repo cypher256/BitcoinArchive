@@ -215,6 +215,16 @@ function maskNonProse(content) {
       out[i] = ' '.repeat(line.length);
       continue;
     }
+    // Mask Mermaid `%% link:` comment annotations (used by the
+    // rehype-mermaid wrapper to attach click-through URLs to timeline
+    // / Gantt events). The comment line is metadata, not user-visible
+    // prose, and the URL slug it contains may include English code
+    // identifiers (e.g., entry slugs like "...sergio-lerner-nonce-lsb-
+    // discovery") that the glossary rules should not flag.
+    if (inFence && fenceIsMermaid && /^\s*%%\s*link:/.test(line)) {
+      out[i] = ' '.repeat(line.length);
+      continue;
+    }
     // Mask inline code `...` spans
     let masked = line.replace(/`[^`]*`/g, (m) => ' '.repeat(m.length));
     // Mask markdown link URLs: [text](URL)

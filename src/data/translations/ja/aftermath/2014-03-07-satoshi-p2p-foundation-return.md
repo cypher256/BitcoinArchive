@@ -27,6 +27,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-08-20-satoshi-activity-timeline"
   - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
+  - "aftermath/2014-03-06-dorian-nakamoto-biography"
 translationStatus: complete
 ---
 

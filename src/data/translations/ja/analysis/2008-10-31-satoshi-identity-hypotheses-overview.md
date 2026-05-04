@@ -37,7 +37,9 @@ relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2014-03-06-dorian-nakamoto-biography
   - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2019-02-19-paul-le-roux-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
@@ -294,7 +296,7 @@ quadrantChart
 
 #### ポール・ルルー
 
-*[補足：本アーカイブにはルルーの個別エントリー（伝記・E4M 告知・刑事事件文書・Mastermind 関連）が存在しない。以下の概略は外部ソース — 主にジャーナリストのエヴァン・ラトリフの『The Mastermind』（Random House、2019 年）および Atavist の長編記事 — と公開記録に基づく。具体的な日付や記述はアーカイブ検証ではなく外部由来として扱われたい。]*
+*[補足：本アーカイブには[ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/) を保持しているが、それ以外のルルーの一次資料エントリー（E4M サイファーパンク告知・刑事事件文書・Mastermind 章抜粋）は保持していない。以下の概略は外部ソース — 主にジャーナリストのエヴァン・ラトリフの『The Mastermind』（Random House、2019 年）および Atavist の長編記事 — と公開記録に基づく。具体的な日付や記述はアーカイブ検証ではなく外部由来として扱われたい。]*
 
 **経歴。** 南アフリカ／ジンバブエ出身の元暗号ソフトウェア開発者（1999 年に *E4M* というオープンソースのディスク暗号化ソフトウェアを開発、後の TrueCrypt の基盤）。2002 年頃から、オンライン薬局、武器密売、覚醒剤製造を含む国際的な犯罪組織の運営に転じた。2012 年 9 月に米国当局に逮捕、公的報道によれば長期の連邦刑期に服している。
 

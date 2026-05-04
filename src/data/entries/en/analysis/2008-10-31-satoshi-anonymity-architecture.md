@@ -46,8 +46,10 @@ relatedEntries:
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2011-07-03-len-sassaman-biography
+  - aftermath/2014-03-06-dorian-nakamoto-biography
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2019-02-19-paul-le-roux-biography
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi

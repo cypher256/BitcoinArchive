@@ -48,6 +48,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2014-03-06-dorian-nakamoto-biography
 inlineLinkKeywords:
   - "ハル・フィニー仮説"
   - "フィニー = サトシ"

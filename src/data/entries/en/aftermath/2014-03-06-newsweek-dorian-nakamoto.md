@@ -31,6 +31,7 @@ relatedEntries:
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
   - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
+  - "aftermath/2014-03-06-dorian-nakamoto-biography"
 ---
 
 On March 6, 2014, Newsweek published a cover story titled "The Face Behind Bitcoin" by journalist Leah McGrath Goodman, claiming to have identified Bitcoin's creator. The article pointed to Dorian Prentice Satoshi Nakamoto, a 64-year-old Japanese-American physicist and systems engineer living in Temple City, California.

@@ -19,6 +19,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/"
 relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
+  - "aftermath/2014-03-06-dorian-nakamoto-biography"
   - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
 ---

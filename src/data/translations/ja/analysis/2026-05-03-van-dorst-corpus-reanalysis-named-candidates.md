@@ -39,6 +39,7 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2014-04-16-aston-university-szabo-stylometric-study
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
+  - aftermath/2019-02-19-paul-le-roux-biography
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis

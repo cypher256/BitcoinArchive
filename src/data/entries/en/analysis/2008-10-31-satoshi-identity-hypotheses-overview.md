@@ -37,7 +37,9 @@ relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - aftermath/2014-08-28-hal-finney-biography
+  - aftermath/2014-03-06-dorian-nakamoto-biography
   - aftermath/2016-05-02-craig-wright-biography
+  - aftermath/2019-02-19-paul-le-roux-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
@@ -293,7 +295,7 @@ Each profile shares the same micro-structure: background, the hypothesis (propos
 
 #### Paul Le Roux
 
-*[Context: This archive does not hold dedicated Le Roux entries (biography, E4M announcement, criminal-case documents, or Mastermind references). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
+*[Context: This archive holds the [Le Roux biography](/BitcoinArchive/participants/paul-le-roux/), but no further dedicated Le Roux primary-source entries (E4M cypherpunks announcement, criminal-case court documents, or Mastermind chapter excerpts). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
 
 **Background.** South African / Zimbabwean ex-encryption-software developer (creator of *E4M* open-source disk encryption in 1999, later forked into TrueCrypt). Transitioned around 2002 to running an international criminal enterprise (online pharmacies, weapons trafficking, methamphetamine production). Arrested by US authorities in September 2012; serving a long federal prison sentence per public reporting.
 

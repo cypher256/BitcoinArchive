@@ -34,6 +34,7 @@ relatedEntries:
   - aftermath/2014-08-28-fran-finney-biography
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2014-03-06-dorian-nakamoto-biography
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:
