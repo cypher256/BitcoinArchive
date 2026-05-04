@@ -295,7 +295,7 @@ const traits = analysisData.codingTraits[lang];
       var container = document.getElementById('code-growth');
       if (!container) return;
 
-      var margin = { top: 20, right: 80, bottom: 40, left: 60 };
+      var margin = { top: 20, right: 80, bottom: 60, left: 60 };
       var width = container.clientWidth;
       var height = 280;
 
@@ -329,6 +329,8 @@ const traits = analysisData.codingTraits[lang];
         .attr('transform', 'translate(0,' + innerH + ')')
         .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
         .selectAll('text')
+        .attr('transform', 'rotate(-45)')
+        .style('text-anchor', 'end')
         .style('font-size', '11px');
 
       g.append('g')
