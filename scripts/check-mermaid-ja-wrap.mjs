@@ -27,6 +27,10 @@
  *   - flowchart, graph, etc.   — diagram-type declarations
  *   - %% ...                   — comments
  *   - section <text>           — Gantt/timeline section header
+ *   - click ID href "URL"      — click directives carry URLs, not labels;
+ *                                 also handled at the rehype layer (the
+ *                                 directives are stripped before mermaid
+ *                                 renders, see remark-mermaid-extract-click)
  *
  * CJK ranges checked:
  *   - U+3040–U+309F (Hiragana)
@@ -61,7 +65,7 @@ const THRESHOLD = parseInt(flag('--threshold', '12'), 10);
 const QUIET = args.includes('--quiet');
 
 const CJK_RE = /[぀-ゟ゠-ヿ㐀-䶿一-鿿]/;
-const KEYWORD_RE = /^(title|flowchart|graph|classDiagram|sequenceDiagram|stateDiagram|gantt|gitGraph|pie|journey|erDiagram|mindmap|timeline|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|C4Deployment|theme|section|%%)\b/;
+const KEYWORD_RE = /^(title|flowchart|graph|classDiagram|sequenceDiagram|stateDiagram|gantt|gitGraph|pie|journey|erDiagram|mindmap|timeline|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|C4Deployment|theme|section|click|%%)\b/;
 
 function walk(dir) {
   const out = [];

@@ -89,9 +89,20 @@ for (const file of allFiles) {
   for (let i = 0; i < blocks.length; i++) {
     totalBlocks++;
     const { startLine, code } = blocks[i];
+    // Strip `click ID href "URL"` directives before validation. They are
+    // handled by the remark-mermaid-extract-click / rehype-mermaid-inject-click
+    // pipeline at build time and the mermaid source proper would crash mmdc
+    // when click is combined with `:milestone, ID, ...` (Mermaid 11.14 bug:
+    // "Cannot read properties of undefined (reading 'type')"). Keeping the
+    // directives in the .md is correct; we just hide them from the parser
+    // here so the rest of the syntax can be validated.
+    const validatable = code.replace(
+      /^[ \t]*click[ \t]+\S+[ \t]+href[ \t]+"[^"]+"(?:[ \t]+"[^"]*")?[ \t]*$/gm,
+      ''
+    );
     const inputFile = path.join(tmpDir, `block-${totalBlocks}.mmd`);
     const outputFile = path.join(tmpDir, `block-${totalBlocks}.svg`);
-    writeFileSync(inputFile, code);
+    writeFileSync(inputFile, validatable);
 
     const result = spawnSync(
       'npx',
