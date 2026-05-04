@@ -37,7 +37,13 @@ function walkDir(dir) {
 const files = walkDir(jaDir);
 const violations = [];
 
-const ENGLISH_TITLE_PATTERN = /^title:\s*"Re:\s*\(context post by /;
+// Catches both the canonical `Re: (context post by NAME)` form and the
+// older `Re: (quoted post by NAME)` variant. Both are formally
+// recognized as exception (a) in the EN side per
+// STYLE_GUIDE.md § Forum threads — the JA mirror for either is
+// `Re:（NAMEの文脈投稿）`, so any English-form leak in JA must be
+// caught regardless of which variant was used in the source.
+const ENGLISH_TITLE_PATTERN = /^title:\s*"Re:\s*\((context|quoted) post by /;
 
 for (const file of files) {
   const content = readFileSync(file, 'utf-8');
