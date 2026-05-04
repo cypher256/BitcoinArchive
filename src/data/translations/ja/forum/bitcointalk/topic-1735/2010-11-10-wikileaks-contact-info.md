@@ -1,5 +1,5 @@
 ---
-title: "ギャビンのCIAプレゼンテーション計画"
+title: "WikiLeaks の連絡先情報？"
 date: 2010-11-10T03:49:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "genjix"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "genjixがスレッドを開始: ギャビンのCIAプレゼンテーション計画"
+description: "genjixがスレッドを開始: WikiLeaks の連絡先情報？"
 isSatoshi: false
 tags: []
 translationStatus: complete

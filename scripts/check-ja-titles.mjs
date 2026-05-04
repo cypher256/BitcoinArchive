@@ -62,9 +62,34 @@ for (const file of files) {
 // find the thread starter title (non-"Re:" title) and verify all reply
 // titles use "Re: {starter title}".
 //
+// Recognized exceptions (skipped without warning):
+//   (a) JA "(quoted post by X)" form: titles like "Re:（NAMEの文脈投稿）".
+//       These intentionally deviate from the cascade because the reply
+//       quotes a non-starter post; matches the EN convention
+//       "Re: (quoted post by NAME)".
+//   (b) Mirrored EN deviations: if the JA file's EN counterpart also has
+//       a non-cascade reply title (e.g., the original poster changed the
+//       subject line in BitcoinTalk for that specific reply), the JA
+//       title is allowed to mirror the same deviation.
+//
 // Only warns (does not fail the build) for existing inconsistencies,
 // but errors for new entries created after this check was added.
 // -------------------------------------------------------------------------
+const enDir = path.resolve(__dirname, '../src/data/entries/en');
+
+const QUOTED_POST_JA_PATTERN = /^Re:\s*[（(][^（）()]+の文脈投稿[）)]\s*$/;
+
+function readEnTitle(jaFile) {
+  const rel = path.relative(jaDir, jaFile);
+  const enFile = path.join(enDir, rel);
+  try {
+    const content = readFileSync(enFile, 'utf-8');
+    const m = content.match(/^title:\s*"(.+?)"\s*$/m);
+    return m ? m[1] : null;
+  } catch {
+    return null;
+  }
+}
 const threadDirs = new Map(); // dirPath -> files[]
 
 for (const file of files) {
@@ -96,18 +121,30 @@ for (const [threadDir, threadFiles] of threadDirs) {
   if (!starter) continue;
 
   const expectedReply = `Re: ${starter.title}`;
+  const enStarterTitle = readEnTitle(starter.file);
 
   for (const entry of entries) {
     if (entry === starter) continue;
     if (!entry.title.startsWith('Re:') && !entry.title.startsWith('返信:')) continue;
-    if (entry.title !== expectedReply) {
-      titleMismatches.push({
-        file: path.relative(process.cwd(), entry.file),
-        actual: entry.title,
-        expected: expectedReply,
-        thread: threadDir,
-      });
+    if (entry.title === expectedReply) continue;
+
+    // Exception (a): JA "(quoted post by X)" → "Re:（X の文脈投稿）"
+    if (QUOTED_POST_JA_PATTERN.test(entry.title)) continue;
+
+    // Exception (b): EN counterpart also deviates from EN starter
+    // (BitcoinTalk reply where the original poster changed the subject
+    // for that specific reply — must mirror, not cascade).
+    if (enStarterTitle) {
+      const enReplyTitle = readEnTitle(entry.file);
+      if (enReplyTitle && enReplyTitle !== `Re: ${enStarterTitle}`) continue;
     }
+
+    titleMismatches.push({
+      file: path.relative(process.cwd(), entry.file),
+      actual: entry.title,
+      expected: expectedReply,
+      thread: threadDir,
+    });
   }
 }
 
