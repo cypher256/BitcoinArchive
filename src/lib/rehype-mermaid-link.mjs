@@ -171,6 +171,22 @@ const HANDLERS = {
 // Plugin orchestrator.
 // ---------------------------------------------------------------------------
 
+// Mirror `src/lib/remark-rewrite-base.mjs`: markdown content authors
+// write paths as `/BitcoinArchive/...` (the GitHub Pages base path),
+// and the deploy environment rewrites them to the actual base. The
+// remark plugin handles markdown `image` / `link` AST nodes; this
+// plugin's `%% link: URL` directives live inside Mermaid code fences,
+// which the remark plugin does not descend into, so the same
+// rewriting has to be reapplied here. Without it, Mermaid anchors on
+// Cloudflare Pages (base `/`) point to `/BitcoinArchive/...` and 404.
+function rewriteBase(url) {
+  const base = process.env.CF_PAGES ? '/' : '/BitcoinArchive/';
+  if (typeof url === 'string' && url.startsWith('/BitcoinArchive/')) {
+    return base + url.slice('/BitcoinArchive/'.length);
+  }
+  return url;
+}
+
 export function rehypeMermaidLink() {
   return (tree, vfile) => {
     const source = String(vfile?.value ?? '');
@@ -182,7 +198,7 @@ export function rehypeMermaidLink() {
     const blockRe = new RegExp(MERMAID_BLOCK_RE.source, 'g');
     let m;
     while ((m = blockRe.exec(source)) !== null) {
-      urlListsPerBlock.push(parseLinkComments(m[1]));
+      urlListsPerBlock.push(parseLinkComments(m[1]).map(rewriteBase));
     }
     if (urlListsPerBlock.every((u) => u.length === 0)) return;
 
