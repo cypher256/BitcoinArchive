@@ -67,7 +67,6 @@ timeline
     2011 : Satoshi's last private email - CAlert key transfer (Apr)
     %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
          : CIA / In-Q-Tel conference, after Satoshi went silent (Jun)
-    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/
     2012 : Bitcoin Foundation co-founded; Andresen as Chief Scientist (Sep)
     2014 : Steps down as lead maintainer, role passes to Wladimir van der Laan (Apr)
 ```

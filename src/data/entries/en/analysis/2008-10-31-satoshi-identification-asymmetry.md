@@ -101,9 +101,8 @@ Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the at
 ```mermaid
 timeline
     2010 : WikiLeaks pressure dynamic begins (state)
-    %% link: /BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/
     2011 : Andresen presents Bitcoin at CIA / In-Q-Tel (state)
-    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-6652/2011-04-27-gavin-will-visit-the-cia/
     2013 : Lerner — Patoshi mining pattern (technical)
     %% link: /BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
          : FBI — Silk Road takedown (state)

@@ -52,7 +52,6 @@ timeline
          : ダン・カミンスキーが ブロックチェーン追悼を Black Hat USA で公開 (7月30日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/
     2013 : BitcoinTalk で サトシ正体仮説 初出
-    %% link: /BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/
     2021 : エヴァン・ハッチが サッサマン仮説を 体系化 (2月22日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/
 ```

@@ -102,9 +102,8 @@ translationStatus: complete
 ```mermaid
 timeline
     2010 : WikiLeaks 圧力経路の開始 (国家)
-    %% link: /BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/
     2011 : アンドレセンが CIA / In-Q-Tel でビットコインを発表 (国家)
-    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-6652/2011-04-27-gavin-will-visit-the-cia/
     2013 : ラーナー — Patoshi マイニングパターン (技術)
     %% link: /BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
          : FBI — Silk Road 押収 (国家)
