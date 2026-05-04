@@ -58,11 +58,17 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
-const hypothesisEntry = filtered.find((e) =>
-  e.data.type === 'analysis' &&
-  e.id.includes('-satoshi-identity-hypothesis') &&
-  e.data.participants[0]?.slug === participantSlug
-);
+// For candidates: link to the candidate's individual hypothesis entry.
+// For Satoshi himself: link to the candidates overview (he isn't his own
+// candidate, so the per-candidate finder returns nothing — point to the
+// overview entry that compares all candidates instead).
+const hypothesisEntry = participantSlug === 'satoshi-nakamoto'
+  ? allEntries.find((e) => e.id === 'analysis/2008-10-31-satoshi-identity-hypotheses-overview')
+  : filtered.find((e) =>
+      e.data.type === 'analysis' &&
+      e.id.includes('-satoshi-identity-hypothesis') &&
+      e.data.participants[0]?.slug === participantSlug
+    );
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
