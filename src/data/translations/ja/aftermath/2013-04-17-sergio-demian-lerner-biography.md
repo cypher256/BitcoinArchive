@@ -45,10 +45,15 @@ translationStatus: complete
 timeline
     1972 : 誕生 (アルゼンチン)
     2013 : 「The Well Deserved Fortune of Satoshi」 — 初の Patoshi 分析、 約 100 万 BTC (4月17日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
          : ナンス LSB の発見 — 第二の独立した指紋 (9月3日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/
     2019 : 「Patoshi」 命名 + 推定 22,000 ブロック / 110 万 BTC に更新 (4月16日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/
     2020 : Patoshi マイニングマシン分析 — 単一 CPU マルチスレッド (8月22日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/
     2021 : PLOS ONE 査読付き論文 — 初期ナンス分布の異常 (9月30日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2021-09-30-plos-one-patoshi-anomaly-study/
 ```
 
 ### 最初のPatoshi分析（2013年4月）

@@ -44,10 +44,15 @@ translationStatus: complete
 ```mermaid
 timeline
     2010 : macOS 移植、 サトシとの メール往復 (4月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/
          : 初の GPU マイニング、 サトシは 「マイニング 軍拡競争」 懸念 (5月10日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/
          : サトシが GPU 防衛コードを ハニエツに 共有 (5月17日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code/
          : BitcoinTalk ピザ募集 投稿 (5月18日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original/
          : ピザデー — 10,000 BTC で ピザ 2 枚 (5月22日、 jercos が受注)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/
     2018 : Lightning Network で 2 度目のピザ購入 (2月)
 ```
 

@@ -54,12 +54,19 @@ translationStatus: complete
 ```mermaid
 timeline
     1998 : b-money 提案を サイファーパンク・ メーリングリストで発表 (11月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
          : アダム・バックが b-money の貨幣設計を 批判 (サイファーパンク・ メーリングリスト、 12月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2008 : サトシからのメール - ホワイトペーパーへの b-money 引用年を確認 (8月22日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/
          : ビットコイン・ ホワイトペーパーが b-money を 最初の参考文献として引用 (10月)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : Bitcoin v0.1 が Crypto++ 5.5.2 の SHA-256 を組み込み — ダイがサトシと さらにメール往復 (1月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/
     2010 : Bitcoin v0.3.6 で Crypto++ 5.6.0 の SSE2 最適化 SHA-256 を統合 (7月)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/
     2014 : LessWrong での回想 - サトシは 「サイファーパンク・ コミュニティで以前 活動していなかった」 (1月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/
 ```
 
 ### b-money（1998年）

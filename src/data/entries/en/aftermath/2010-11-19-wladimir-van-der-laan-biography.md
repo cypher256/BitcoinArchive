@@ -35,11 +35,13 @@ Wladimir van der Laan, known online as **laanwj**, is a Dutch software developer
 ```mermaid
 timeline
     2010 : First archive appearance, Bitcoin client icon discussion (Nov 19)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/
     2011 : Creates bitcoin-qt repository (May 15)
          : Granted GitHub commit access, fourth maintainer (Jun 5)
     2014 : Succeeds Andresen as lead maintainer (Apr 8)
     2015 : Block-size war begins
     2016 : libsecp256k1 ships as v0.12 default backend (Jan 15)
+    %% link: /BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2017 : SegWit activates
     2022 : Steps down as lead maintainer; cites burnout and decentralization goals (Aug)
     2023 : Removes own merge access from repository - Bitcoin Core enters lead-vacant state (Feb)

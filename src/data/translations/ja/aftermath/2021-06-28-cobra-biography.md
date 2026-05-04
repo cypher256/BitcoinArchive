@@ -40,8 +40,11 @@ timeline
     2008 : サトシが bitcoin.org を 登録 (8月)
     2010年代前半 : サトシ消失と マルッティ・マルミの 離脱後、 Cobra が bitcoin.org の 管理を引き継ぐ
     2021 : クレイグ・ライトが Cobra を ホワイトペーパー著作権 訴訟で提訴 (2月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/
          : 匿名性保護を選び 欠席判決受諾 — bitcoin.org は ホワイトペーパー削除命令 (6月28日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/
     2024 : COPA 対ライト判決 — ライトはサトシではないと 確定、 2021 年判決の根拠が消滅 (3月14日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
 ```
 
 ### 役割

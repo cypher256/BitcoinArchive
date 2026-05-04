@@ -57,15 +57,23 @@ timeline
     1985 : Born in Vancouver (Mar 14)
     2008 : Registers GitHub account (Apr)
     2010 : Registers BitcoinTalk handle "retep" (Dec 7)
+    %% link: /BitcoinArchive/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/
          : Replies to Satoshi's BitDNS thread (Dec 10)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/
          : Satoshi's last public post (Dec 12)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
     2011 : Graduates OCAD University, Integrated Media
     2012 : Begins active Bitcoin Core contribution (Apr)
     2014 : Proposes BIP 65 OP_CHECKLOCKTIMEVERIFY (Oct)
+    %% link: /BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/
     2015 : Co-authors BIP 125 Replace-by-Fee (Dec)
+    %% link: /BitcoinArchive/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/
     2016 : Releases OpenTimestamps (Sep)
+    %% link: /BitcoinArchive/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/
          : Participates in Zcash trusted-setup ceremony (Oct)
+    %% link: /BitcoinArchive/entries/aftermath/2016-10-22-peter-todd-zcash-trusted-setup/
     2024 : HBO documentary names Todd as Satoshi candidate; Todd denies (Oct 8)
+    %% link: /BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
 ```
 
 ### BitcoinTalk and Satoshi

@@ -115,10 +115,14 @@ The four investigations as a timeline:
 ```mermaid
 timeline
     2013 : Skye Grey single-hypothesis test  - Szabo as top match
+    %% link: /BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
     2014 : Aston University Project Bitcoin - Szabo top of 11 candidates
+    %% link: /BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/
     2024 : van Dorst Where is Satoshi - 75,000+ corpus, no top named
+    %% link: /BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/
          : Bitcoin Institute reanalysis - Szabo top of 5 named candidates
     2026 : Carreyrou and Cafiero NYT - Adam Back top of 12, inconclusive
+    %% link: /BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
 ```
 
 ## 3. Top of the corpus: noise rather than signal

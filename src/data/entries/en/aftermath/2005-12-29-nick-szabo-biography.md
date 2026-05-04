@@ -50,12 +50,18 @@ timeline
     1998 : Conceives Bit Gold (libtech private mailing list)
     2005 : Publishes Bit Gold full design on Unenumerated blog (Dec 29)
     2008 : "Anybody want to help me code one up" Unenumerated comment (Apr 27)
+    %% link: /BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 released; Szabo continues Unenumerated (Jan)
+    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
     2011 : "Nakamoto improved my design" Unenumerated post (May 28)
+    %% link: /BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
     2013 : Skye Grey + TechCrunch articulate Szabo = Satoshi (Dec)
+    %% link: /BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
     2014 : Aston University stylometric study names Szabo top candidate (Apr)
+    %% link: /BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/
          : Replies to Frisby - "I'm afraid you got it wrong" (denial)
     2015 : NYT - Popper Digital Gold excerpt points to Szabo (May)
+    %% link: /BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/
     2017 : Tim Ferriss Show 244 appearance (Jun)
     2018 : Fortune 10th anniversary feature - affirmative coverage
 ```

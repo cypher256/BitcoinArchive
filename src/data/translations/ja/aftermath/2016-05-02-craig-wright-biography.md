@@ -46,13 +46,19 @@ translationStatus: complete
 timeline
     1970 : ブリスベン誕生 (10月)
     2015 : Wired と Gizmodo が ライトをサトシ候補と 報道 (12月8日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/
     2016 : ライト自身が BBC / Economist / GQ で 「自分がサトシ」 公言 (5月2日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/
          : 「証明」 が 2009 年取引からの 署名再利用と 即時否定
     2021 : Cobra (bitcoin.org 運営者) に対し ホワイトペーパー著作権 訴訟 (2月)
          : 欠席判決でライト勝訴 (Cobra 身元保護優先、 6月28日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/
     2024 : COPA 対ライト裁判 マルッティ・マルミ 証言 (2月21日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/
          : マイク・ハーン 証言 (2月22日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
          : メラー判事 大規模偽造認定 ライト敗訴 (3月14日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
 ```
 
 ### 偽りの主張

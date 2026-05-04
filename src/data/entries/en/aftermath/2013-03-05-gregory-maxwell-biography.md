@@ -36,6 +36,7 @@ timeline
     2014 : Co-founds Blockstream with Adam Back, Pieter Wuille
     2015 : Designs Confidential Transactions (Pedersen commitments)
     2016 : libsecp256k1 ships as Bitcoin Core v0.12 default backend (Jan 15)
+    %% link: /BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
          : Liquid sidechain released by Blockstream
     2017 : Major reviewer for SegWit activation
     2018 : Steps back from Blockstream; continues Bitcoin Core review individually

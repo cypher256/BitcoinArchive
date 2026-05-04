@@ -46,14 +46,20 @@ Mike Hearn is a software engineer who worked at Google on projects including Goo
 ```mermaid
 timeline
     2009 : Reads whitepaper; first email to Satoshi (Apr 12)
+    %% link: /BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/
     2010 : Sustained technical email with Satoshi (scaling, SPV, mining)
+    %% link: /BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions/
     2011 : One of Satoshi's last emails - "I've moved on" (Apr 23)
+    %% link: /BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
     2012 : Develops BitcoinJ (Java implementation of Bitcoin)
     2016 : Publishes "The resolution of the Bitcoin experiment"; sells all BTC (Jan 14)
+    %% link: /BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
          : Joins R3, co-leads Corda development
     2017 : Publishes Satoshi email correspondence (Aug 11)
+    %% link: /BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/
     2021 : Steps down from R3 (Feb)
     2024 : Testifies in COPA v Wright trial (Feb 22)
+    %% link: /BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
 ```
 
 ### First Contact with Satoshi

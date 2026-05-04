@@ -50,13 +50,20 @@ Martti Malmi (born 1988, Helsinki, Finland) is a software developer who became o
 timeline
     1988 : Born in Helsinki
     2009 : First contact with Satoshi; offers to help (May)
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-05-02-first-contact-satoshi-reply/
          : Linux port + bitcoin.org + the original Bitcoin forum (later BitcoinTalk)
          : 5,050 BTC sold for $5.02 - first known BTC-fiat exchange (Oct 12)
+    %% link: /BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/
          : Satoshi credits Malmi in Bitcoin 0.2 release announcement (Dec)
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-12-17-bitcoin-02-released-132/
     2010 : Successor discussion with Satoshi - "It should be Gavin" (Dec 3)
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/
     2011 : Last known email from Satoshi to Malmi (Feb 22)
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi/
          : BitcoinTalk.org migration (Aug 1)
+    %% link: /BitcoinArchive/entries/aftermath/2011-08-01-bitcointalk-org-migration/
     2024 : Testifies and submits email evidence in COPA v Wright (Feb 21)
+    %% link: /BitcoinArchive/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/
 ```
 
 ### First Contact with Satoshi

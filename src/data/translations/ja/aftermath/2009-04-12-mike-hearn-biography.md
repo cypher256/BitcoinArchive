@@ -47,14 +47,20 @@ translationStatus: complete
 ```mermaid
 timeline
     2009 : ホワイトペーパー読了、 サトシに 最初の連絡 (4月12日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/
     2010 : サトシとの 技術メール継続 (スケーリング / SPV / マイニング)
+    %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions/
     2011 : サトシ最後のメールの一つ 「他のことに 移った」 (4月23日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
     2012 : BitcoinJ 開発 (ビットコイン Java 実装)
     2016 : 「The resolution of the Bitcoin experiment」 公開、 BTC 全売却 (1月14日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
          : R3 参加、 Corda 開発共同主導
     2017 : サトシとの メール公開 (8月11日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/
     2021 : R3 退任 (2月)
     2024 : COPA 対ライト裁判 証言 (2月22日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
 ```
 
 ### サトシとの最初の接触

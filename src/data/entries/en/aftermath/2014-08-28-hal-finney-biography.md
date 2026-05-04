@@ -69,12 +69,17 @@ timeline
     1996 : Hired at PGP Inc., one of the first employees
     2004 : Creates Reusable Proof-of-Work (RPOW)
     2009 : Downloads Bitcoin v0.1 on release day, first non-Satoshi node (Jan 9)
+    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : Tweets 'Running bitcoin' (Jan 11)
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/
          : Receives 10 BTC from Satoshi in Block 170 - first P2P transaction (Jan 12)
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/
          : Diagnosed with ALS (Aug)
     2011 : Retires from PGP Corporation (Symantec)
     2013 : Publishes 'Bitcoin and Me' on BitcoinTalk (Mar)
+    %% link: /BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/
     2014 : Dies; cryopreserved by Alcor as 128th patient (A-1436) (Aug)
+    %% link: /BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/
 ```
 
 ### Cryptography and PGP

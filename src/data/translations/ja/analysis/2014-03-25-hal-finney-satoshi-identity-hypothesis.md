@@ -70,17 +70,25 @@ translationStatus: complete
 timeline
     2007 : サトシ 開発期間開始 (本人の年表では 2007 年半ば)
     2008 : ホワイトペーパー発表 - サトシは ハルに何も尋ねず (10月)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : ハルが 暗号学リストで 第三者として 初の応答 (11月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/
     2009 : Bitcoin v0.1 - ハルが 最初の サトシ以外のノードに (1月)
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : ハルがサンタバーバラで 10 マイルレース - サトシは ハーン宛メール送信 + 取引ブロードキャスト (4月18日) [アリバイ 1]
+    %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/
          : ハル ALS 診断 (8月)
     2010 : ハル 車椅子・タイピング 指でつつく程度 (8月時点)
          : ハル SF 特異点サミット - サトシ 同 2 日で 4 コミット + 17 フォーラム投稿 (8月14-15日) [アリバイ 2]
          : サトシ 最後の公的 BitcoinTalk 投稿 (12月12日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
     2011 : サトシ 最後のメール - アンドレセンへ 警告キー譲渡 (4月26日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
          : ハル ALS により PGP社退職
     2013 : ハル「ビットコインと私」 - サトシを 第三者として記述 (3月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/
     2014 : ハル死去 - アルコー患者 A-1436 として 冷凍保存 (8月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/
 ```
 
 ## 2. 仮説を支える論点

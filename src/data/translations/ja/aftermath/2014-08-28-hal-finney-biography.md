@@ -70,12 +70,17 @@ timeline
     1996 : PGP 社の 最初期従業員として雇用
     2004 : Reusable Proof-of-Work (RPOW) 考案
     2009 : Bitcoin v0.1 を公開日にダウンロード、 サトシ以外で最初のノード (1月9日)
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : 「Running bitcoin」 ツイート (1月11日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/
          : ブロック 170 でサトシから 10 BTC 受信 - 史上初の P2P 送金 (1月12日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/
          : ALS 診断 (8月)
     2011 : PGP コーポレーション (シマンテック) を退職
     2013 : BitcoinTalk に 「ビットコインと私」 を投稿 (3月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/
     2014 : 逝去、 アルコーで 128 番目の冷凍保存患者 (A-1436) (8月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/
 ```
 
 ### 暗号学とPGP

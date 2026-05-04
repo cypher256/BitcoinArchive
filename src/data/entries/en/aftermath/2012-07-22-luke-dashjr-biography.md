@@ -31,6 +31,7 @@ Luke Dashjr, known on GitHub and BitcoinTalk as **Luke-Jr**, is an American soft
 timeline
     Early 2010s : Begins Bitcoin Core contribution
     2012 : First archive appearance PR #1620, bitcoin-qt window titles (Jul 22)
+    %% link: /BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/
     2013 : Coordinates chain reunification after v0.8 consensus bug (Mar)
          : Begins maintaining the Bitcoin Knots derivative client
     2015 : Block-size war - prominent small-block voice

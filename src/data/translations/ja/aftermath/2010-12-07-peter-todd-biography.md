@@ -58,15 +58,23 @@ timeline
     1985 : バンクーバー誕生 (3月14日)
     2008 : GitHub アカウント登録 (4月)
     2010 : BitcoinTalk 「retep」 登録 (12月7日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/
          : サトシスレッド BitDNS に返信 (12月10日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/
          : サトシ最終公開投稿 (12月12日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
     2011 : OCAD 大学 Integrated Media 専攻 卒業
     2012 : Bitcoin Core 活発な貢献開始 (4月)
     2014 : BIP 65 OP_CHECKLOCKTIMEVERIFY 提案 (10月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/
     2015 : BIP 125 Replace-by-Fee 共著 (12月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/
     2016 : OpenTimestamps 公開 (9月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/
          : Zcash トラステッドセットアップ 参加 (10月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-10-22-peter-todd-zcash-trusted-setup/
     2024 : HBO ドキュメンタリー サトシ候補と 名指し、 本人否定 (10月8日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
 ```
 
 ### BitcoinTalkとサトシ

@@ -101,27 +101,46 @@ Documented attempts to identify Satoshi Nakamoto, or to put Bitcoin under the at
 ```mermaid
 timeline
     2010 : WikiLeaks pressure dynamic begins (state)
+    %% link: /BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/
     2011 : Andresen presents Bitcoin at CIA / In-Q-Tel (state)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-6652/2011-04-27-gavin-will-visit-the-cia/
     2013 : Lerner — Patoshi mining pattern (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
          : FBI — Silk Road takedown (state)
          : Skye Grey — first stylometric Szabo case (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
     2014 : Newsweek — Dorian Nakamoto (journalism)
+    %% link: /BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/
          : Forbes — Greenberg / Hal Finney (journalism)
+    %% link: /BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/
          : Aston University — Project Bitcoin (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/
     2015 : NYT / Popper — Szabo (journalism)
+    %% link: /BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/
          : Wright self-claims begin — Wired / Gizmodo (self-claim)
+    %% link: /BitcoinArchive/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/
     2016 : Wright — BBC / Economist (self-claim)
+    %% link: /BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/
     2017 : China — ICO and exchange ban (state)
+    %% link: /BitcoinArchive/entries/aftermath/2017-09-04-china-ico-ban/
     2021 : PLOS ONE — Strangely Mined Bitcoins (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2021-09-30-plos-one-patoshi-anomaly-study/
     2022 : Lopp — Was Satoshi Greedy? (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2022-09-16-lopp-was-satoshi-greedy-miner/
     2023 : Lopp — Hal Finney race-day analysis (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/
     2024 : US SEC — Bitcoin ETP approval (state)
          : COPA v Wright — four rulings against (litigation)
+    %% link: /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
          : van Dorst — Where is Satoshi corpus (technical)
+    %% link: /BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/
          : HBO — Money Electric / Peter Todd (journalism)
+    %% link: /BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
     2025 : US Strategic Bitcoin Reserve (state)
     2026 : NYT / Carreyrou — Adam Back (journalism)
+    %% link: /BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
          : Bitcoin Institute — van Dorst reanalysis (technical)
+    %% link: /BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/
 ```
 
 ### 1.1 Journalism

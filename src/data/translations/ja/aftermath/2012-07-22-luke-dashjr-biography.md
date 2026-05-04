@@ -32,6 +32,7 @@ translationStatus: complete
 timeline
     2010年代初頭 : Bitcoin Core 貢献開始
     2012 : アーカイブ初登場 PR #1620 bitcoin-qt ウィンドウタイトル (7月22日)
+    %% link: /BitcoinArchive/ja/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/
     2013 : v0.8 コンセンサスバグ後の チェーン再統合調整 (3月)
          : Bitcoin Knots 派生クライアントの 維持開始
     2015 : ブロックサイズ論争 — 小ブロック側 主要論者

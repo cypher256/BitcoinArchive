@@ -51,12 +51,18 @@ timeline
     1998 : Bit Gold を構想 (libtech 非公開メーリングリスト)
     2005 : Bit Gold 完全設計を Unenumerated ブログで公開 (12月29日)
     2008 : 「誰か Bit Gold を実装してくれないか」 Unenumerated コメント (4月27日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 公開、 サボは Unenumerated 継続 (1月)
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
     2011 : 「Nakamoto improved my design」 Unenumerated 投稿 (5月28日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
     2013 : Skye Grey + TechCrunch サボ＝サトシ説 (12月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
     2014 : アストン大学 文体計量研究 サボを首位 (4月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/
          : フリスビー宛 メール返信「残念ながら 間違いだ」 (否定)
     2015 : NYT ポッパー 『Digital Gold』 抜粋 - サボを最有力候補と示唆 (5月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/
     2017 : ティム・フェリス・ショウ #244 出演 (6月)
     2018 : Fortune 10 周年 特集 - 肯定的扱い
 ```

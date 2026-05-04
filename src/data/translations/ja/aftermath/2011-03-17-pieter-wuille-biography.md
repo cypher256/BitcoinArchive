@@ -40,6 +40,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2011 : 最初の貢献 PR #122 (3月17日)
+    %% link: /BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/
          : GitHub コミット権限 付与、 アンドレセン に次ぐ 2 人目 (5月1日)
     2012 : BIP-32 階層的決定性 ウォレット (HD ウォレット)
     2013 : libsecp256k1 開始 (3月5日、 後にマクスウェルが参加)
@@ -47,6 +48,7 @@ timeline
          : Bitcoin Core 組み込み SHA-256/SHA-512 実装追加 (4月20日)
     2015 : BIP-141 SegWit 共著 (12月)
     2016 : libsecp256k1 が v0.12 デフォルト として出荷 (1月15日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2020 : BIP-340 シュノア署名 / BIP-341 Taproot
     2021 : Taproot 有効化 (11月)
 ```

@@ -45,13 +45,19 @@ Craig Steven Wright is an Australian computer scientist and businessman, born in
 timeline
     1970 : Born in Brisbane (Oct)
     2015 : Wired and Gizmodo report Wright as possible Satoshi (Dec 8)
+    %% link: /BitcoinArchive/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/
     2016 : Wright publicly claims to be Satoshi via BBC, The Economist, GQ (May 2)
+    %% link: /BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/
          : "Proof" debunked as reused signature from a 2009 Bitcoin transaction
     2021 : Sues Cobra (bitcoin.org operator) over whitepaper copyright (Feb)
          : Default judgment for Wright; Cobra chose anonymity over identity disclosure (Jun 28)
+    %% link: /BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/
     2024 : COPA v Wright trial - Martti Malmi testifies (Feb 21)
+    %% link: /BitcoinArchive/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/
          : Mike Hearn testifies (Feb 22)
+    %% link: /BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
          : Justice Mellor rules industrial-scale forgery; Wright loses (Mar 14)
+    %% link: /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
 ```
 
 ### False Claim

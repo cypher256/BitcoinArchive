@@ -45,13 +45,16 @@ translationStatus: complete
 timeline
     1974 : 誕生
     2010 : Slashdot で ビットコイン発見 (7月11日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/
          : Bitcoin Core 貢献開始 (7月15日)
          : cpuminer (CPU マイニング) 公開
     2011 : GitHub コミット権限 付与、 3 番目の メンテナー
          : サトシと BitcoinTalk + コードで やり取り
     2015 : Bloq エンタープライズ ブロックチェーン企業 共同設立
     2018 : 「Looking Back」 retrospective 公開 (10月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2018-10-29-jeff-garzik-retrospective/
     2024 : 「サトシは独狼の天才」 発言 — CryptoNews / Bad Crypto Podcast (10月28日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius/
 ```
 
 ### ビットコインの発見

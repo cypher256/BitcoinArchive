@@ -47,6 +47,7 @@ timeline
     2012 : Joins Dreamboat Inc., contributes to SAMURAI development
     2013 : Dies of myocardial infarction (Jul 6, age 42)
          : Japan-domestic Satoshi-identity hypothesis discussion resurges
+    %% link: /BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/
 ```
 
 ### Winny (2002)

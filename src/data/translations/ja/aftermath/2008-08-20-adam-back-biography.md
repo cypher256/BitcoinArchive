@@ -51,13 +51,19 @@ translationStatus: complete
 ```mermaid
 timeline
     1997 : Hashcash を サイファーパンク・ メーリングリストで発表 (3月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/
     1998 : サイファーパンク・ メーリングリストで b-money 批判 - 貨幣設計上の 7 つの論点を提示 (12月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2002 : Hashcash 論文の改訂版 - コストトークンを 「mint」 として位置付け (8月)
     2008 : サトシからの 最初の既知メール (8月20日) - 最初期のビットコイン接触
+    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
          : サトシをウェイ・ダイの b-money に紹介、 サトシがウェイ・ダイに メール (8月22日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/
     2014 : Blockstream を共同設立、 CEO 就任
     2024 : COPA v ライト裁判で 宣誓証言 (2月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/
     2026 : NYT / カレイロウによって サトシ最有力候補と 名指される — 自己否定 (4月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
 ```
 
 ### Hashcash（1997年）

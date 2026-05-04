@@ -52,12 +52,19 @@ Wei Dai is a computer scientist and cryptographer known for two major contributi
 ```mermaid
 timeline
     1998 : b-money proposal published on the cypherpunks mailing list (Nov)
+    %% link: /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
          : Adam Back publishes critique of b-money's monetary design (Dec)
+    %% link: /BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2008 : Email from Satoshi - asks about b-money citation year for the whitepaper (Aug 22)
+    %% link: /BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/
          : Bitcoin whitepaper cites b-money as its first reference (Oct)
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : Bitcoin v0.1 ships with Crypto++ 5.5.2 SHA-256; Dai exchanges further emails with Satoshi (Jan)
+    %% link: /BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/
     2010 : Bitcoin v0.3.6 integrates Crypto++ 5.6.0 SSE2-optimized SHA-256 (Jul)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/
     2014 : LessWrong retrospective - Satoshi was 'not previously active' in cypherpunk communities (Jan)
+    %% link: /BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/
 ```
 
 ### b-money (1998)

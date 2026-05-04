@@ -60,10 +60,15 @@ translationStatus: complete
 ```mermaid
 timeline
     2010 : Bitcoin Faucet 公開 - 最初期の普及ツール (6月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/
          : サトシからの 最初の メールでの 撤退シグナル (9月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/
          : 引き継ぎ - SVN アクセス + リードメンテナー公式宣言 (12月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/
     2011 : サトシの最後のメール - CAlert キー譲渡 (4月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
          : CIA / In-Q-Tel カンファレンス、 サトシ沈黙後 (6月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/
     2012 : Bitcoin Foundation 共同設立 - アンドレセンは チーフサイエンティスト 就任 (9月)
     2014 : リードメンテナー退任 - ヴラディーミル・ ヴァン・デア・ラーンへ 引き継ぎ (4月)
 ```

@@ -48,6 +48,7 @@ timeline
     2012 : 株式会社 ドリームボートで SAMURAI 開発に参加
     2013 : 心筋梗塞で死去 (7月6日、 42 歳)
          : 日本語圏で サトシ仮説候補として 議論再燃
+    %% link: /BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/
 ```
 
 ### Winny（2002 年）

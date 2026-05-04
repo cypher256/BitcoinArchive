@@ -52,13 +52,20 @@ translationStatus: complete
 timeline
     1988 : ヘルシンキ誕生
     2009 : サトシに 最初の連絡、 協力申し出 (5月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-02-first-contact-satoshi-reply/
          : Linux 移植 + bitcoin.org + フォーラム (後の BitcoinTalk) 構築
          : 5,050 BTC を $5.02 で売却 — 初の BTC-法定通貨取引 (10月12日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/
          : サトシが Bitcoin 0.2 リリースで マルミの貢献を称える (12月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-12-17-bitcoin-02-released-132/
     2010 : サトシとの 後継者議論 (サトシ 「ギャビンであるべき」 と返答、 12月3日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/
     2011 : サトシから マルミへの 最後の既知メール (2月22日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi/
          : BitcoinTalk.org 移行 (8月1日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/
     2024 : COPA 対ライト裁判 証言 + メール証拠 提出 (2月21日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/
 ```
 
 ### サトシとの最初の接触

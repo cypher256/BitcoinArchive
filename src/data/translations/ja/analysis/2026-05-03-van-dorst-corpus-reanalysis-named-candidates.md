@@ -116,10 +116,14 @@ translationStatus: complete
 ```mermaid
 timeline
     2013 : Skye Grey の単独仮説検証 - サボを首位
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
     2014 : アストン大学 Project Bitcoin - 11 候補でサボを首位
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/
     2024 : ヴァン・ドルスト Where is Satoshi - 75,000+ コーパス、指名なし
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/
          : Bitcoin Institute による再分析 - 5 名中サボを首位
     2026 : カレイロウとカフィエロ NYT - 12 候補で アダム・バック首位、 不確定
+    %% link: /BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
 ```
 
 ## 3. コーパス上位：信号ではなくノイズ

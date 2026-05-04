@@ -69,17 +69,25 @@ Two events are alibi-class for the hypothesis: the April 18, 2009 race-day windo
 timeline
     2007 : Satoshi development window begins (mid-2007 per his own timeline)
     2008 : Whitepaper published; Satoshi never asks Hal anything (Oct)
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : Hal first replies to whitepaper as third party on crypto list (Nov)
+    %% link: /BitcoinArchive/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/
     2009 : Bitcoin v0.1 - Hal becomes first non-Satoshi node (Jan)
+    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : Hal runs 10-mile race in Santa Barbara - Satoshi sends Hearn email + broadcasts tx (Apr 18) [alibi 1]
+    %% link: /BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/
          : Hal diagnosed with ALS (Aug)
     2010 : Hal in wheelchair, finger-peck typing (per Aug)
          : Hal at Singularity Summit SF; Satoshi 4 commits + 17 forum posts same days (Aug 14-15) [alibi 2]
          : Satoshi's last public BitcoinTalk post (Dec 12)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
     2011 : Satoshi's last private email - Andresen alert-key handover (Apr 26)
+    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
          : Hal retires from PGP due to ALS
     2013 : Hal publishes Bitcoin and Me - frames Satoshi in third person (Mar)
+    %% link: /BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/
     2014 : Hal dies - cryopreserved as Alcor patient A-1436 (Aug)
+    %% link: /BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/
 ```
 
 ## 2. The arguments the hypothesis rests on

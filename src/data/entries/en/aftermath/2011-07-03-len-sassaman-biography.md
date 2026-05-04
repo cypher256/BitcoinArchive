@@ -46,10 +46,14 @@ timeline
     2002 : Co-founds CodeCon with Bram Cohen
     2004 : KU Leuven COSIC PhD program (advised by David Chaum)
     2011 : Satoshi's last known email (Apr 26)
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/
          : Death (Jul 3, in Belgium, suicide)
          : Dan Kaminsky reveals blockchain tribute at Black Hat USA (Jul 30)
+    %% link: /BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/
     2013 : Sassaman-as-Satoshi hypothesis surfaces on BitcoinTalk
+    %% link: /BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/
     2021 : Evan Hatch publishes structured Sassaman hypothesis (Feb 22)
+    %% link: /BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/
 ```
 
 ### Cypherpunk and cryptography work

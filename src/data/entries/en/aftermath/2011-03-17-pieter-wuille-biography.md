@@ -39,6 +39,7 @@ Pieter Wuille, widely known by his GitHub and IRC handle **sipa**, is a Belgian 
 ```mermaid
 timeline
     2011 : First contribution PR #122 (Mar 17)
+    %% link: /BitcoinArchive/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/
          : Granted GitHub commit access, second long-term maintainer (May 1)
     2012 : BIP-32 hierarchical deterministic wallets (HD wallets)
     2013 : Starts libsecp256k1 (Mar 5; Maxwell joins shortly after)
@@ -46,6 +47,7 @@ timeline
          : Adds built-in SHA-256/SHA-512 implementation to Bitcoin Core (Apr 20)
     2015 : Co-authors BIP-141 SegWit (Dec)
     2016 : libsecp256k1 ships as v0.12 default backend (Jan 15)
+    %% link: /BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2020 : BIP-340 Schnorr signatures / BIP-341 Taproot
     2021 : Taproot activates (Nov)
 ```

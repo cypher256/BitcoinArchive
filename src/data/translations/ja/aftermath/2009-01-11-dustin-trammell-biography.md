@@ -43,12 +43,18 @@ translationStatus: complete
 ```mermaid
 timeline
     2009 : Bitcoin v0.1 公開 (1月9日)
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : ダウンロード・稼働、 サトシに 最初メール (1月11日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email/
          : サトシから 25 BTC 受信、 テスト送金 (1月14日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins/
          : サトシとの 技術メール 多数 (コイン成熟ルール、 ブロック処理)
+    %% link: /BitcoinArchive/ja/entries/correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity/
          : 「電子通貨」 公開メール (1月16日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency/
     2013 : サトシとの メール全文公開 (11月)
     2021 : 「第二のノード」 証言公開 (10月23日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2021-10-23-dustin-trammell-second-node-testimony/
 ```
 
 ### サトシとの最初の接触

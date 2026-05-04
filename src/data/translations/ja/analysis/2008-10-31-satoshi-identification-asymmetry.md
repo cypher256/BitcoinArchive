@@ -102,27 +102,46 @@ translationStatus: complete
 ```mermaid
 timeline
     2010 : WikiLeaks 圧力経路の開始 (国家)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/
     2011 : アンドレセンが CIA / In-Q-Tel でビットコインを発表 (国家)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-6652/2011-04-27-gavin-will-visit-the-cia/
     2013 : ラーナー — Patoshi マイニングパターン (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
          : FBI — Silk Road 押収 (国家)
          : Skye Grey — 最初の文体計量サボ調査 (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
     2014 : Newsweek — ドリアン・ナカモト (ジャーナリズム)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/
          : Forbes — グリーンバーグ / ハル・フィニー (ジャーナリズム)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/
          : アストン大学 — Project Bitcoin (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/
     2015 : NYT / ポパー — サボ (ジャーナリズム)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/
          : ライト自己主張開始 — Wired / Gizmodo (自己主張)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/
     2016 : ライト — BBC / Economist (自己主張)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/
     2017 : 中国 — ICO・取引所禁止 (国家)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-09-04-china-ico-ban/
     2021 : PLOS ONE — Strangely Mined Bitcoins (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2021-09-30-plos-one-patoshi-anomaly-study/
     2022 : ロップ — Was Satoshi Greedy? (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2022-09-16-lopp-was-satoshi-greedy-miner/
     2023 : ロップ — ハル・フィニー レース当日分析 (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/
     2024 : 米国 SEC — ビットコイン ETP 承認 (国家)
          : COPA v ライト — 4 認定で否定 (訴訟)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
          : ヴァン・ドルスト — Where is Satoshi コーパス (技術)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/
          : HBO — Money Electric / ピーター・トッド (ジャーナリズム)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
     2025 : 米国 Strategic Bitcoin Reserve (国家)
     2026 : NYT / カレイロウ — アダム・バック (ジャーナリズム)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
          : Bitcoin Institute — ヴァン・ドルスト再分析 (技術)
+    %% link: /BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/
 ```
 
 ### 1.1 ジャーナリズム経路
