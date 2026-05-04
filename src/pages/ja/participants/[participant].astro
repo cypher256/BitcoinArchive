@@ -58,17 +58,35 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
-// For candidates: link to the candidate's individual hypothesis entry.
-// For Satoshi himself: link to the candidates overview (he isn't his own
-// candidate, so the per-candidate finder returns nothing — point to the
-// overview entry that compares all candidates instead).
-const hypothesisEntry = participantSlug === 'satoshi-nakamoto'
-  ? allEntries.find((e) => e.id === 'analysis/2008-10-31-satoshi-identity-hypotheses-overview')
-  : filtered.find((e) =>
-      e.data.type === 'analysis' &&
-      e.id.includes('-satoshi-identity-hypothesis') &&
-      e.data.participants[0]?.slug === participantSlug
-    );
+// Hypothesis-callout target. Three branches, in priority order:
+//   1. Satoshi himself: link to the candidates overview (he is the
+//      subject of all hypotheses, not a candidate within any one of
+//      them).
+//   2. Candidates with their own dedicated hypothesis page (Wei Dai,
+//      Hal Finney, Szabo, Sassaman, Peter Todd, Kaneko, Adam Back):
+//      link to the per-candidate page — the most specific destination.
+//   3. Candidates listed in the overview but without a dedicated page
+//      (e.g., Craig Wright): fall back to the overview. Detected via
+//      the bio's relatedEntries containing the overview ID — every
+//      candidate biography links back to the overview, and no
+//      non-candidate biography does, so this acts as the recognized
+//      "this person is a candidate" marker.
+const overviewId = 'analysis/2008-10-31-satoshi-identity-hypotheses-overview';
+let hypothesisEntry: typeof allEntries[number] | undefined;
+if (participantSlug === 'satoshi-nakamoto') {
+  hypothesisEntry = allEntries.find((e) => e.id === overviewId);
+} else {
+  const individual = filtered.find((e) =>
+    e.data.type === 'analysis' &&
+    e.id.includes('-satoshi-identity-hypothesis') &&
+    e.data.participants[0]?.slug === participantSlug
+  );
+  if (individual) {
+    hypothesisEntry = individual;
+  } else if (biographyEntry?.data.relatedEntries?.includes(overviewId)) {
+    hypothesisEntry = allEntries.find((e) => e.id === overviewId);
+  }
+}
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
@@ -104,7 +122,7 @@ const structuredData = [
 ---
 
 <BaseLayout
-  title={`${participantName}${biographyEntry?.data.title.match(/—\s*(.+)/)?.[1] ? ` — ${biographyEntry.data.title.match(/—\s*(.+)/)[1]}` : ''} - ${t('site.title')}`}
+  title={`${participantName}${biographyEntry?.data.title.match(/—\s*(.+)/)?.[1] ? ` — ${biographyEntry.data.title.match(/—\s*(.+)/)![1]}` : ''} - ${t('site.title')}`}
   description={biographyEntry?.data.description ?? `${participantName}のビットコイン初期における投稿・メール・技術的議論のアーカイブ`}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/participants/${participantSlug}/`, 'en') : undefined}

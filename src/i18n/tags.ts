@@ -631,4 +631,10 @@ export const tagTranslations: Record<string, string> = {
   'methodology': '方法論',
   'dataset': 'データセット',
   'forensic-linguistics': '法言語学',
+  'criminal-enterprise': '犯罪組織',
+  'denied': '本人否定',
+  'e4m': 'E4M',
+  'incarcerated': '服役中',
+  'name-match': '名前一致',
+  'truecrypt-precursor': 'TrueCrypt前身',
 };
