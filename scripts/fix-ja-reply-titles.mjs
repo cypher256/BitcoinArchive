@@ -20,8 +20,33 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs';
 import path from 'path';
 
 const JA_DIR = 'src/data/translations/ja';
+const EN_DIR = 'src/data/entries/en';
 const args = process.argv.slice(2);
 const doApply = args.includes('--apply');
+
+// Recognized cascade exceptions — must match scripts/check-ja-titles.mjs.
+// See STYLE_GUIDE.md § Forum threads / "Recognized cascade exceptions"
+// and STYLE_GUIDE_JA.md § Reply title consistency / "Recognized cascade
+// exceptions (forum threads)".
+//
+// (a) Context-post replies titled `Re:（NAMEの文脈投稿）` (mirror of EN
+//     `Re: (context post by NAME)` / `Re: (quoted post by NAME)`).
+// (b) Subject-deviation replies whose EN counterpart also deviates from
+//     the EN starter (poster manually changed the BitcoinTalk Subject
+//     for that reply; the JA mirror translates that historical Subject).
+const QUOTED_POST_JA_PATTERN = /^Re:\s*[（(][^（）()]+の文脈投稿[）)]\s*$/;
+
+function readEnTitle(jaFile) {
+  const rel = path.relative(JA_DIR, jaFile);
+  const enFile = path.join(EN_DIR, rel);
+  try {
+    const content = readFileSync(enFile, 'utf-8');
+    const m = content.match(/^title:\s*"(.+?)"\s*$/m);
+    return m ? m[1] : null;
+  } catch {
+    return null;
+  }
+}
 
 function walkDir(dir) {
   const results = [];
@@ -73,12 +98,24 @@ for (const [threadDir, threadFiles] of threadDirs) {
   if (!starter) continue;
 
   const expectedReply = `Re: ${starter.title}`;
+  const enStarterTitle = readEnTitle(starter.file);
   let threadFixed = 0;
 
   for (const entry of entries) {
     if (entry === starter) continue;
     if (!entry.title.startsWith('Re:') && !entry.title.startsWith('返信:')) continue;
     if (entry.title === expectedReply) continue;
+
+    // Exception (a): JA "(quoted post by X)" → "Re:（X の文脈投稿）"
+    if (QUOTED_POST_JA_PATTERN.test(entry.title)) continue;
+
+    // Exception (b): EN counterpart also deviates from EN starter
+    // (BitcoinTalk reply where the original poster changed the subject
+    // for that specific reply — must mirror, not cascade).
+    if (enStarterTitle) {
+      const enReplyTitle = readEnTitle(entry.file);
+      if (enReplyTitle && enReplyTitle !== `Re: ${enStarterTitle}`) continue;
+    }
 
     const rel = path.relative(process.cwd(), entry.file);
     console.log(`${doApply ? 'FIX' : 'DRY-RUN'}: ${rel}`);

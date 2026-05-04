@@ -279,21 +279,50 @@ override the generic templates where they conflict.
 - **Reply** (`Re: ...`): must follow the thread starter. Cascade rule:
   when the starter title changes, every `Re: {…}` in the same thread
   must be updated in the same commit (EN and JA mirrors).
-- **Checker scope (important).** `scripts/check-ja-titles.mjs` only
-  partially covers this rule:
+- **Recognized cascade exceptions.** Two reply-title patterns are
+  legitimately allowed to deviate from the starter and must be
+  preserved across renames; the cascade enforcement (script and
+  bulk-fix tool) skips them by design. These are not loopholes — they
+  encode historical reality the cascade would otherwise erase.
+  - **(a) Context-post replies.** A reply that quotes a *non-starter*
+    post (i.e., quotes another reply rather than the original topic)
+    is titled `Re: (context post by NAME)` (preferred) or the older
+    variant `Re: (quoted post by NAME)`. The JA mirror is
+    `Re:（NAMEの文脈投稿）`. This pattern is heavily used across the
+    EN forum tree and is the canonical Archive editorial form for
+    replies whose anchor is a specific in-thread quote rather than
+    the topic itself.
+  - **(b) Subject-deviation replies.** When a forum reply's actual
+    Subject line in the original BitcoinTalk thread differs from the
+    starter's (e.g., the poster manually changed the subject), the
+    historical Subject is preserved as the reply's title, and the JA
+    mirror translates that historical Subject — not the cascaded
+    starter. This is the same principle as the mailing-list rule
+    below (preserve the original Subject as historical evidence), but
+    applied per-reply within a forum thread when the original poster
+    overrode the subject.
+- **Checker scope (important).** `scripts/check-ja-titles.mjs`
+  partially enforces the cascade with the two exceptions above:
   - It scans `src/data/translations/ja/forum/*` only (JA files), not
     the EN source tree.
   - Mismatches are reported as **warnings**, not errors — the build
     does not fail on a cascade drift.
+  - Exception (a) is detected by a JA-side regex match on
+    `Re:（…の文脈投稿）`. Exception (b) is detected by reading the
+    JA file's EN counterpart and verifying the EN reply title also
+    deviates from the EN starter. Either match silences the warning.
   - Thread starter detection is heuristic: the first entry whose
     title does not begin with `Re:` / `返信:` is treated as the
     starter. If a reply is retitled to also drop the `Re:` prefix,
     the checker silently treats it as a second starter and skips
     cascade verification for it. Do not retitle a reply into a
     standalone editorial form to "route around" the checker —
-    cascade the starter instead.
+    cascade the starter instead. (The two recognized exceptions
+    above keep the `Re:` prefix.)
 - Use `scripts/fix-ja-reply-titles.mjs --apply` to mass-update reply
-  titles once the starter is set.
+  titles once the starter is set. The bulk fixer respects the same
+  two exceptions as the checker, so context-post and subject-deviation
+  replies are skipped during cascade rewrites.
 
 #### Mailing-list threads (cryptography, bitcoin-list, p2p-research)
 
@@ -353,18 +382,19 @@ override the generic templates where they conflict.
 - **Don't lead with the date** — the primary identifier goes first; the date (when included) goes at the end or in parentheses.
 - **Don't force every title into one template** — a stronger natural title beats a formulaic one.
 - **Don't replace the original email Subject on a mailing-list thread starter** — wrap it, don't drop it.
-- **Don't change a forum thread starter without updating all `Re: {…}` replies** in the same thread and the same commit.
+- **Don't change a forum thread starter without updating all `Re: {…}` replies** in the same thread and the same commit. (Replies covered by the two recognized cascade exceptions — context-post and subject-deviation — are excluded from this requirement; see the §Forum threads exception block above.)
 
 ### When a legacy title is changed
 
 - Changing a title changes the indexed link text but not the URL slug.
 - Always update the JA mirror in the same commit.
 - If the entry is a **forum** thread starter, cascade to every reply
-  (EN and JA) in the same commit. The `check-ja-titles.mjs` script
-  warns on JA cascade drift but does not fail the build, so visually
-  diff the full thread before committing — do not rely on the
-  checker as a gate. See the checker-scope note under §Forum threads
-  above.
+  (EN and JA) in the same commit, except the two recognized
+  exceptions (context-post replies and subject-deviation replies; see
+  §Forum threads). The `check-ja-titles.mjs` script warns on JA
+  cascade drift but does not fail the build, so visually diff the
+  full thread before committing — do not rely on the checker as a
+  gate. See the checker-scope note under §Forum threads above.
 - If the entry is a **mailing-list** thread starter, do **not**
   cascade — replies keep their original `Re: {subject}` form.
 - See `STYLE_GUIDE_JA.md § II.1 Title Policy` for Japanese-specific

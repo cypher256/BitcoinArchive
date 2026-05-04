@@ -509,22 +509,61 @@ reply:          title: "Re: 大規模なメルトダウン"
 reply:          title: "Re: 大規模なメルトダウン"
 ```
 
+### Recognized cascade exceptions (forum threads)
+
+The cascade rule above has two formally allowed exceptions, mirroring
+the EN side. The cascade enforcement (`check:ja-titles` warning and
+the `fix-ja-reply-titles` bulk fixer) skips these by design — they
+encode historical / editorial reality the cascade would otherwise
+erase. See `STYLE_GUIDE.md § Forum threads` for the cross-language
+description; this section documents the JA surface forms.
+
+**Exception (a) — Context-post replies (`Re:（NAMEの文脈投稿）`).**
+A reply that quotes a non-starter post (i.e., quotes another reply,
+not the topic itself) keeps the canonical Archive form
+`Re:（NAMEの文脈投稿）` instead of cascading the starter. The EN side
+uses `Re: (context post by NAME)` (preferred) or `Re: (quoted post by
+NAME)` (older variant); both are mirrored to the same JA form.
+
+```
+thread starter: title: "WikiLeaks の連絡先情報？"
+reply (cascades): title: "Re: WikiLeaks の連絡先情報？"
+reply (context-post): title: "Re:（farmer_boyの文脈投稿）"   ← exception (a)
+```
+
+**Exception (b) — Subject-deviation replies.** When the EN counterpart
+of a JA reply has a title that does not match `Re: {EN starter title}`
+(e.g., the BitcoinTalk poster manually changed the subject for that
+reply), the JA reply translates that historical Subject and is
+allowed to deviate from the JA cascade.
+
+```
+EN starter:    title: "Wikileaks contact info?"
+EN reply:      title: "Re: Bring on the bitcoins donations to Wikileaks"   ← Satoshi changed Subject
+JA starter:    title: "WikiLeaks の連絡先情報？"
+JA reply:      title: "Re: WikiLeaks へのビットコイン寄付を推進しよう"      ← exception (b)
+```
+
 `npm run check:ja-titles` validates this for `forum/*`, with
 **limitations**:
 
-- It scans `src/data/translations/ja/forum/*` only (JA side; ignores EN).
+- It scans `src/data/translations/ja/forum/*` only (JA side); for
+  exception (b) it also reads the EN counterpart to verify the
+  deviation is mirrored.
 - Mismatches are emitted as warnings, not build failures.
 - Thread-starter detection is heuristic: the first non-`Re:` / non-`返信:`
   entry is treated as the starter. If a reply title is editorially
   rewritten without the `Re:` prefix, the checker treats it as a second
   starter and stops cascade validation. Do not strip the `Re:` prefix to
-  evade the checker.
+  evade the checker. (Both recognized exceptions above keep the `Re:`
+  prefix.)
 
 `emails/*` and `correspondence/*` are out of scope. After updating a
 starter's title per the title policy, update the same thread's
-`Re: {…}` replies in the same commit. Do not rely on the checker
-warning as a gate; visually diff the whole thread before committing.
-`scripts/fix-ja-reply-titles.mjs --apply` handles bulk updates.
+`Re: {…}` replies in the same commit (excluding the two recognized
+exceptions). Do not rely on the checker warning as a gate; visually
+diff the whole thread before committing. `scripts/fix-ja-reply-titles.mjs
+--apply` handles bulk updates and respects the same exceptions.
 
 ### Mailing-list thread exception
 
