@@ -97,33 +97,26 @@ gantt
     axisFormat %Y-%m
 
     section コードベース
-    v0.1 公開 (名称 「Bitcoin」)             :milestone, v01,    2009-01-09, 1d
-    Bitcoin-Qt (v0.5 で Qt GUI)             :milestone, v05,    2011-11-20, 1d
-    PR #3408 マージ (Core への改名)         :milestone, pr3408, 2013-12-16, 1d
-    v0.9.0 公開 (公式に 「Core」)            :milestone, v090,   2014-03-19, 1d
+    v0.1 公開 (名称 「Bitcoin」)             :milestone, 2009-01-09, 1d
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    Bitcoin-Qt (v0.5 で Qt GUI)             :milestone, 2011-11-20, 1d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/
+    PR #3408 マージ (Core への改名)         :milestone, 2013-12-16, 1d
+    v0.9.0 公開 (公式に 「Core」)            :milestone, 2014-03-19, 1d
 
     section フォーク (代替実装)
-    Bitcoin XT                              :milestone, xt,      2015-08-15, 1d
-    Bitcoin Classic                         :milestone, classic, 2016-02-10, 1d
-    Bitcoin Unlimited (活発化)              :milestone, bu,      2016-10-14, 1d
-    Bitcoin Cash ハードフォーク             :milestone, bch,     2017-08-01, 1d
+    Bitcoin XT                              :milestone, 2015-08-15, 1d
+    Bitcoin Classic                         :milestone, 2016-02-10, 1d
+    Bitcoin Unlimited (活発化)              :milestone, 2016-10-14, 1d
+    Bitcoin Cash ハードフォーク             :milestone, 2017-08-01, 1d
 
     section ハーンの証言
-    「Resolution」 離脱記事                 :milestone, h2016,   2016-01-14, 1d
-    COPA 裁判証言                           :milestone, h2024,   2024-02-22, 1d
-    CoinGeek 回顧インタビュー               :milestone, h2025,   2025-02-21, 1d
-
-    click v01    href "/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/"
-    click v05    href "/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/"
-    click pr3408 href "https://github.com/bitcoin/bitcoin/pull/3408"
-    click v090   href "https://bitcoin.org/en/release/v0.9.0"
-    click xt     href "https://ja.wikipedia.org/wiki/Bitcoin_XT"
-    click classic href "https://ja.wikipedia.org/wiki/Bitcoin_Classic"
-    click bu     href "https://ja.wikipedia.org/wiki/Bitcoin_Unlimited"
-    click bch    href "https://ja.wikipedia.org/wiki/ビットコインキャッシュ"
-    click h2016  href "/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/"
-    click h2024  href "/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/"
-    click h2025  href "/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/"
+    「Resolution」 離脱記事                 :milestone, 2016-01-14, 1d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
+    COPA 裁判証言                           :milestone, 2024-02-22, 1d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
+    CoinGeek 回顧インタビュー               :milestone, 2025-02-21, 1d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/
 ```
 
 ## 2. 改名が導入した意味の変化

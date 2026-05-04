@@ -60,15 +60,25 @@ translationStatus: complete
 ```mermaid
 timeline
     2008 : アダム・バックへの 最初の既知メール - 電子キャッシュ システムの相談 (8月)
+    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
          : ビットコイン ホワイトペーパーを 暗号学メーリングリストに 発表 (10月)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : ジェネシスブロックの パラメーター定義 (1月3日)
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/
          : Bitcoin v0.1 公開 (1月8〜9日)
+    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : 史上初の 個人間送金 - ハル・フィニーへ 10 BTC (1月12日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/
     2010 : アンドレセンに 「他プロジェクトに 取り組んでいる」 とメールで伝達 - 最初の撤退シグナル (9月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/
          : 最後の BitcoinTalk 投稿 「バトンを渡そうと 考えている」 (12月12日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
          : アンドレセンが正式に リードメンテナーを宣言 (12月19日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/
     2011 : 「他のことに移った」 メールを マイク・ハーンへ (4月23日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
          : 最後の既知メール - アンドレセンへの 警告キー譲渡 (4月26日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
 ```
 
 ### ホワイトペーパー

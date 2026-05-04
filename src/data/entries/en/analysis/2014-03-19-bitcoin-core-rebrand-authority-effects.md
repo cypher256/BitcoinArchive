@@ -100,33 +100,26 @@ gantt
     axisFormat %Y-%m
 
     section Codebase
-    v0.1 release (named "Bitcoin")          :milestone, v01,    2009-01-09, 1d
-    Bitcoin-Qt (Qt GUI in v0.5)             :milestone, v05,    2011-11-20, 1d
-    PR #3408 merged (rebrand to Core)       :milestone, pr3408, 2013-12-16, 1d
-    v0.9.0 released (publicly "Core")       :milestone, v090,   2014-03-19, 1d
+    v0.1 release (named "Bitcoin")          :milestone, 2009-01-09, 1d
+    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    Bitcoin-Qt (Qt GUI in v0.5)             :milestone, 2011-11-20, 1d
+    %% link: /BitcoinArchive/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/
+    PR #3408 merged (rebrand to Core)       :milestone, 2013-12-16, 1d
+    v0.9.0 released (publicly "Core")       :milestone, 2014-03-19, 1d
 
     section Forks (alt-implementations)
-    Bitcoin XT                              :milestone, xt,      2015-08-15, 1d
-    Bitcoin Classic                         :milestone, classic, 2016-02-10, 1d
-    Bitcoin Unlimited (active)              :milestone, bu,      2016-10-14, 1d
-    Bitcoin Cash hard fork                  :milestone, bch,     2017-08-01, 1d
+    Bitcoin XT                              :milestone, 2015-08-15, 1d
+    Bitcoin Classic                         :milestone, 2016-02-10, 1d
+    Bitcoin Unlimited (active)              :milestone, 2016-10-14, 1d
+    Bitcoin Cash hard fork                  :milestone, 2017-08-01, 1d
 
     section Hearn witness statements
-    "Resolution" essay                      :milestone, h2016,   2016-01-14, 1d
-    COPA trial testimony                    :milestone, h2024,   2024-02-22, 1d
-    CoinGeek retrospective                  :milestone, h2025,   2025-02-21, 1d
-
-    click v01    href "/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/"
-    click v05    href "/BitcoinArchive/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/"
-    click pr3408 href "https://github.com/bitcoin/bitcoin/pull/3408"
-    click v090   href "https://bitcoin.org/en/release/v0.9.0"
-    click xt     href "https://en.wikipedia.org/wiki/Bitcoin_XT"
-    click classic href "https://en.wikipedia.org/wiki/Bitcoin_Classic"
-    click bu     href "https://en.wikipedia.org/wiki/Bitcoin_Unlimited"
-    click bch    href "https://en.wikipedia.org/wiki/Bitcoin_Cash"
-    click h2016  href "/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/"
-    click h2024  href "/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/"
-    click h2025  href "/BitcoinArchive/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/"
+    "Resolution" essay                      :milestone, 2016-01-14, 1d
+    %% link: /BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
+    COPA trial testimony                    :milestone, 2024-02-22, 1d
+    %% link: /BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
+    CoinGeek retrospective                  :milestone, 2025-02-21, 1d
+    %% link: /BitcoinArchive/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/
 ```
 
 ## 2. The semantic shift the name introduced

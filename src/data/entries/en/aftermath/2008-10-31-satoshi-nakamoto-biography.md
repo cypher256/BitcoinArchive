@@ -59,15 +59,25 @@ Satoshi Nakamoto is the pseudonym used by the individual or group who created Bi
 ```mermaid
 timeline
     2008 : Earliest known email - to Adam Back about an electronic cash system (Aug)
+    %% link: /BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
          : Bitcoin whitepaper published to the cryptography mailing list (Oct)
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : Genesis block parameters defined (Jan 3)
+    %% link: /BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/
          : Bitcoin v0.1 released (Jan 8 - 9)
+    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : First person-to-person transaction - 10 BTC to Hal Finney (Jan 12)
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/
     2010 : Tells Andresen privately about working on other projects - earliest withdrawal signal (Sep)
+    %% link: /BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/
          : Final BitcoinTalk post - 'I plan to pass the baton' (Dec 12)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
          : Andresen publicly announces lead maintainer role (Dec 19)
+    %% link: /BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/
     2011 : 'I've moved on' email to Mike Hearn (Apr 23)
+    %% link: /BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
          : Final known email - alert key handover to Andresen (Apr 26)
+    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
 ```
 
 ### White Paper
