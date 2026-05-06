@@ -64,50 +64,9 @@ This entry catalogs (a) every protocol fork of Bitcoin that produced a chain tha
 
 The list is observational. It does not endorse any one chain as "the real Bitcoin"; the canonical chain in this archive is the one whose Genesis block was mined on January 3, 2009 with hash `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` ([genesis-block analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)).
 
-## 1. Branch genealogy
+The interactive chart at the top of this entry plots every listed chain on a true time axis: the launch date, the parent chain it forked from, the operational range, and whether the chain is still producing blocks today or halted within months of launch. Each chain row in the chart links to the corresponding archive entry where one exists. The §1 and §2 tables below record each chain's per-attribute status (block-size cap, hashrate share, governance, etc.).
 
-The full branching tree of derived chains and adjacent cryptocurrencies:
-
-```mermaid
-gitGraph
-    commit id: "Bitcoin v0.1 (2009-01-09)"
-    commit id: "1 MB block limit (2010-09)"
-    branch namecoin
-    commit id: "Namecoin (2011-04-18)"
-    checkout main
-    branch litecoin
-    commit id: "Litecoin (2011-10-13)"
-    branch dogecoin
-    commit id: "Dogecoin (2013-12-06)"
-    checkout main
-    commit id: "Bitcoin Core 0.9 rebrand (2014-03)"
-    branch bitcoin-xt
-    commit id: "Bitcoin XT (2015-08-15)"
-    checkout main
-    branch bitcoin-classic
-    commit id: "Bitcoin Classic (2016-02-10)"
-    checkout main
-    branch bitcoin-unlimited
-    commit id: "Bitcoin Unlimited (2016-10)"
-    checkout main
-    commit id: "SegWit activation (2017-08-24)"
-    branch bitcoin-cash
-    commit id: "Bitcoin Cash (2017-08-01)"
-    branch bitcoin-sv
-    commit id: "Bitcoin SV (2018-11-15)"
-    checkout main
-    branch bitcoin-gold
-    commit id: "Bitcoin Gold (2017-10-24)"
-    checkout main
-    commit id: "(SegWit2x cancelled 2017-11-08)"
-    commit id: "Taproot activation (2021-11)"
-```
-
-**Reading the diagram.** Each branch line shows where a chain split off from its parent, not how long the chain has continued operating. A branch ending visually does **not** mean the chain stopped: most of the listed chains are still producing blocks as of 2026 — Namecoin, Litecoin, Dogecoin, Bitcoin Cash, Bitcoin SV, and Bitcoin Gold all continue to operate, although several carry only nominal hashrate. The genuine exceptions are Bitcoin XT, Bitcoin Classic, and Bitcoin Unlimited, which effectively halted within months of launch, and SegWit2x, which was cancelled before forking at all. The §2 and §3 tables below record each chain's status as of 2026.
-
-The branch ordering is chronological by fork event, not by surviving network share. In 2026 the Bitcoin chain ("main") carries the overwhelming majority of network hashrate and economic activity; the visible branches in the diagram are smaller chains.
-
-## 2. Bitcoin protocol forks
+## 1. Bitcoin protocol forks
 
 Hard forks of the Bitcoin protocol that produced a separate chain. Soft forks (SegWit, Taproot) that activated on the main chain are not listed here.
 
@@ -125,7 +84,7 @@ The 2015-2017 entries are the **block-size war** chapter — block size was the 
 
 The 2018 BSV split from BCH was a separate war within the BCH community, ultimately resolved by hashrate (the SV chain split off and continued separately). [Craig Wright](/BitcoinArchive/participants/craig-wright/)'s extended Satoshi-claim — refuted in [COPA v Wright (2024)](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) — and the BSV chain are tightly coupled in popular reception, but the chain itself is a technical artifact of the 2018 hash war and continues to operate independently of the COPA outcome.
 
-## 3. Adjacent cryptocurrencies
+## 2. Adjacent cryptocurrencies
 
 Cryptocurrencies whose design lineage starts from Bitcoin's source code or core design. Conceptually-distinct chains (Ripple's consensus, Monero's CryptoNote, IOTA's Tangle) are not included.
 
@@ -138,7 +97,7 @@ Cryptocurrencies whose design lineage starts from Bitcoin's source code or core 
 
 Ethereum is included because it is the most-cited "next-generation" chain whose design starts from observing Bitcoin's strengths and limits, even though the codebase is independent. The numerous Bitcoin-codebase forks not listed here (Peercoin, Primecoin, dozens of ERC-20-era altcoins built on Bitcoin code, etc.) are out of scope; this table records the ones whose cultural or technical significance recurs in mainstream Bitcoin discourse.
 
-## 4. Block-size war timeline (2010–2017)
+## 3. Block-size war timeline (2010–2017)
 
 The critical sequence that produced the 2017 hard-fork rupture:
 
@@ -165,7 +124,7 @@ timeline
 
 After 2018-11 no further protocol-fork chains have produced lasting share; Bitcoin Core's conservative protocol-evolution model (soft-fork only, Taproot 2021) has held the main chain.
 
-## 5. Why the canonical chain endured
+## 4. Why the canonical chain endured
 
 Three structural factors are commonly cited to explain why none of the breakaway chains displaced Bitcoin:
 
@@ -175,7 +134,7 @@ Three structural factors are commonly cited to explain why none of the breakaway
 
 These observations are descriptive, not prescriptive. They do not rule out a future fork that gains share, only record what happened in the 2009-2024 record.
 
-## 6. Limits of this entry
+## 5. Limits of this entry
 
 - **Coverage.** This entry catalogs the protocol forks that left surviving chains and the adjacent cryptocurrencies that recur in mainstream Bitcoin discourse. The hundreds of thinly-traded Bitcoin-codebase forks (Peercoin, Primecoin, Auroracoin, etc.) are out of scope; the conceptually-distinct chains (Ripple, Monero, IOTA, Cardano) are also out of scope.
 - **End-state status.** Surviving-chain status is recorded as of the entry's last edit. A chain listed here as "surviving" can stop producing blocks at any time; the genealogy is historical, not a forward-looking endorsement.

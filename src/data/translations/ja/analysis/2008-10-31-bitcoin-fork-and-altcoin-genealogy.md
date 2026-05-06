@@ -64,50 +64,9 @@ inlineLinkKeywords:
 
 このリストは観察的なものであり、いずれかのチェーンを「真のビットコイン」 と認定するものではない。本アーカイブにおける正典のチェーンは、2009年1月3日に採掘されハッシュ値 `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` を持つジェネシスブロックから始まる連鎖である ([ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/))。
 
-## 1. 分岐系譜
+本エントリー冒頭のインタラクティブチャートは、掲載される各チェーンを実時間軸の上に描画する ─ ローンチ日、分岐元の親チェーン、稼働期間、現在もブロックを生成しているか、ローンチ後数か月で停止したか。チャート内のチェーン行は対応するアーカイブエントリーが存在する場合にリンクされる。各チェーンの属性ごとの状態 (ブロックサイズ上限、ハッシュレート占有率、ガバナンス等) は §1・§2 の表に記録される。
 
-派生チェーンと隣接する暗号通貨の分岐ツリー全体:
-
-```mermaid
-gitGraph
-    commit id: "Bitcoin v0.1 (2009-01-09)"
-    commit id: "1 MB block limit (2010-09)"
-    branch namecoin
-    commit id: "Namecoin (2011-04-18)"
-    checkout main
-    branch litecoin
-    commit id: "Litecoin (2011-10-13)"
-    branch dogecoin
-    commit id: "Dogecoin (2013-12-06)"
-    checkout main
-    commit id: "Bitcoin Core 0.9 rebrand (2014-03)"
-    branch bitcoin-xt
-    commit id: "Bitcoin XT (2015-08-15)"
-    checkout main
-    branch bitcoin-classic
-    commit id: "Bitcoin Classic (2016-02-10)"
-    checkout main
-    branch bitcoin-unlimited
-    commit id: "Bitcoin Unlimited (2016-10)"
-    checkout main
-    commit id: "SegWit activation (2017-08-24)"
-    branch bitcoin-cash
-    commit id: "Bitcoin Cash (2017-08-01)"
-    branch bitcoin-sv
-    commit id: "Bitcoin SV (2018-11-15)"
-    checkout main
-    branch bitcoin-gold
-    commit id: "Bitcoin Gold (2017-10-24)"
-    checkout main
-    commit id: "(SegWit2x cancelled 2017-11-08)"
-    commit id: "Taproot activation (2021-11)"
-```
-
-**図の読み方**。各分岐の線は、そのチェーンが親から分かれた**地点**を示すもので、その後どれだけ長く動作し続けたかを示すものではない。図上で線が右で止まっていても、それは**チェーンが停止した意味にはならない**。掲載されているチェーンの大半は 2026 年時点でも稼働中である ─ Namecoin・Litecoin・Dogecoin・Bitcoin Cash・Bitcoin SV・Bitcoin Gold はすべて現在もブロックを生成し続けている (一部は名目的なハッシュレートに留まっている)。実際に停止しているのは、ローンチ後数か月で事実上停止した Bitcoin XT・Bitcoin Classic・Bitcoin Unlimited の 3 本と、フォーク前に中止された SegWit2x である。各チェーンの 2026 年時点の状態は、§2・§3 の表に記録されている。
-
-分岐の順序は、生き残ったチェーンのネットワーク占有率ではなく、分岐イベントの時系列に従う。2026 年時点では、ビットコイン本体チェーン (「main」) が圧倒的多数のネットワークハッシュレートと経済活動を担っており、図に表示されている分岐はそれより規模の小さいチェーン群である。
-
-## 2. ビットコインのプロトコル分岐
+## 1. ビットコインのプロトコル分岐
 
 別のチェーンを生んだビットコインプロトコルのハードフォーク。本体チェーン上で有効化されたソフトフォーク (SegWit、Taproot) はここには載せない。
 
@@ -125,7 +84,7 @@ gitGraph
 
 2018 年の BSV による BCH からの分裂は BCH コミュニティ内部の別の戦争であり、最終的にハッシュレートで決着した (SV 側のチェーンが分かれて独立に継続)。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) によるサトシ主張は [COPA v Wright (2024)](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/) で否定されたが、BSV チェーンと一般的な受け止めの中では密接に結びつけられている。とはいえ、チェーンそのものは 2018 年のハッシュ戦争の技術的副産物であり、COPA 判決とは独立に動作し続けている。
 
-## 3. 隣接する暗号通貨
+## 2. 隣接する暗号通貨
 
 ビットコインのソースコードまたは中核設計から系譜が始まる暗号通貨。概念的に独立したチェーン (Ripple のコンセンサス、Monero の CryptoNote、IOTA の Tangle) は含まない。
 
@@ -138,7 +97,7 @@ gitGraph
 
 Ethereum を含めたのは、コードベースは独立しているものの、ビットコインの強みと限界の観察から設計が始まった「次世代」 チェーンとして最も多く引用されるためである。ここに載せていないビットコインのコードベース由来のフォークは多数 (Peercoin、Primecoin、ERC-20 時代のビットコイン由来アルトコイン等) 存在するが、それらは対象外とする。本表が記録するのは、ビットコイン本流の言説で文化的または技術的な意義が繰り返し参照される銘柄に限定される。
 
-## 4. ブロックサイズ戦争の経緯 (2010 ~ 2017)
+## 3. ブロックサイズ戦争の経緯 (2010 ~ 2017)
 
 2017 年のハードフォーク決裂を生んだ重要な順序:
 
@@ -165,7 +124,7 @@ timeline
 
 2018 年 11 月以降、新たなプロトコル分岐チェーンで継続的な占有率を獲得したものはない。Bitcoin Core の保守的なプロトコル進化モデル (ソフトフォークのみ、Taproot 2021) が本体チェーンを保持してきた。
 
-## 5. 正典のチェーンが生き残った理由
+## 4. 正典のチェーンが生き残った理由
 
 分裂したいずれのチェーンもビットコインに取って代わらなかった理由として、構造的な要因が三つ挙げられる:
 
@@ -175,7 +134,7 @@ timeline
 
 これらの観察は記述的なものであり、規範的なものではない。将来のいずれかの分岐が占有率を獲得する可能性を排除するものではなく、2009 ~ 2024 年の記録において何が起きたかを記録するに留まる。
 
-## 6. 本エントリーの限界
+## 5. 本エントリーの限界
 
 - **取扱範囲**。本エントリーは、生き残ったチェーンを残したプロトコル分岐と、ビットコイン本流の言説で繰り返し参照される隣接する暗号通貨を記録する。出来高の薄いビットコインのコードベース由来のフォーク (Peercoin、Primecoin、Auroracoin 等) は数百あるが対象外。概念的に独立したチェーン (Ripple、Monero、IOTA、Cardano) も対象外。
 - **生存状態**。生存チェーンの状態は、本エントリーの最終編集時点のもの。ここで「生存中」 と記録されたチェーンも任意の時点でブロック生成を停止する可能性がある。本系譜は史実であり、将来を保証する推奨ではない。

@@ -19,6 +19,7 @@ import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsCompariso
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
 import NlsExchangeRate from '../../components/NlsExchangeRate.astro';
 import StylometricDistanceHistogram from '../../components/StylometricDistanceHistogram.astro';
+import BitcoinForkGenealogy from '../../components/BitcoinForkGenealogy.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl } from '../../i18n/utils';
 import { resolveThreadId } from '../../data/threads';
@@ -125,6 +126,10 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
 
     {entry.id.includes('van-dorst-corpus-reanalysis-named-candidates') && (
       <StylometricDistanceHistogram lang={lang} />
+    )}
+
+    {entry.id.includes('bitcoin-fork-and-altcoin-genealogy') && (
+      <BitcoinForkGenealogy lang={lang} />
     )}
 
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>

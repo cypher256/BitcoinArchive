@@ -1,0 +1,409 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const labels = {
+  en: {
+    title: "Bitcoin protocol forks and adjacent cryptocurrencies",
+    subtitle: "Each chain's launch, fork lineage, and operational range on a true time axis. Active chains extend to the right edge; halted chains end at the date their network share collapsed. Vertical connectors at each fork point trace the parent chain. Click a chain or milestone to open the corresponding archive entry.",
+    todayLabel: "today",
+    statusActive: "active",
+    statusHalted: "halted",
+    sectionLabels: {
+      bitcoin: "Bitcoin",
+      altcoin: "Altcoins",
+      forkActive: "Active forks",
+      forkHalted: "Halted forks",
+    },
+    chains: [
+      { id: 'main', name: 'Bitcoin', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+      { id: 'namecoin', name: 'Namecoin (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+      { id: 'litecoin', name: 'Litecoin (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+      { id: 'dogecoin', name: 'Dogecoin (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+      { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
+      { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
+      { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
+      { id: 'bitcoin-cash', name: 'Bitcoin Cash (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+      { id: 'bitcoin-gold', name: 'Bitcoin Gold (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+      { id: 'bitcoin-sv', name: 'Bitcoin SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+    ],
+    milestones: [
+      { date: '2010-09-01', label: '1 MB block limit', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
+      { date: '2014-03-19', label: 'Bitcoin Core 0.9 rebrand', slug: 'analysis/2014-03-19-bitcoin-core-rebrand-authority-effects' },
+      { date: '2017-08-24', label: 'SegWit activation', slug: 'bip/2015-12-21-bip-0141' },
+      { date: '2017-11-08', label: 'SegWit2x cancelled', slug: 'aftermath/2017-11-08-segwit2x-cancellation' },
+      { date: '2021-11-14', label: 'Taproot activation', slug: null },
+    ],
+  },
+  ja: {
+    title: "ビットコインのプロトコル分岐と隣接する暗号通貨",
+    subtitle: "各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名やマイルストーンをクリックすると、対応するアーカイブエントリーが開く。",
+    todayLabel: "現在",
+    statusActive: "稼働中",
+    statusHalted: "停止",
+    sectionLabels: {
+      bitcoin: "ビットコイン",
+      altcoin: "アルトコイン",
+      forkActive: "稼働中のフォーク",
+      forkHalted: "停止したフォーク",
+    },
+    chains: [
+      { id: 'main', name: 'Bitcoin', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+      { id: 'namecoin', name: 'Namecoin (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+      { id: 'litecoin', name: 'Litecoin (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+      { id: 'dogecoin', name: 'Dogecoin (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+      { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
+      { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
+      { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
+      { id: 'bitcoin-cash', name: 'Bitcoin Cash (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+      { id: 'bitcoin-gold', name: 'Bitcoin Gold (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+      { id: 'bitcoin-sv', name: 'Bitcoin SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+    ],
+    milestones: [
+      { date: '2010-09-01', label: '1 MB ブロック制限', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
+      { date: '2014-03-19', label: 'Bitcoin Core 0.9 改名', slug: 'analysis/2014-03-19-bitcoin-core-rebrand-authority-effects' },
+      { date: '2017-08-24', label: 'SegWit 有効化', slug: 'bip/2015-12-21-bip-0141' },
+      { date: '2017-11-08', label: 'SegWit2x 中止', slug: 'aftermath/2017-11-08-segwit2x-cancellation' },
+      { date: '2021-11-14', label: 'Taproot 有効化', slug: null },
+    ],
+  },
+} as const;
+
+const l = labels[lang];
+const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchive/entries/';
+---
+
+<div class="fork-genealogy">
+  <h3>{l.title}</h3>
+  <p class="chart-sub">{l.subtitle}</p>
+  <div class="chart-scroll">
+    <div id="fork-genealogy-chart" class="chart-container"></div>
+  </div>
+
+  <script type="application/json" id="fork-genealogy-data" is:inline set:html={JSON.stringify({
+    chains: l.chains,
+    milestones: l.milestones,
+    todayLabel: l.todayLabel,
+    statusActive: l.statusActive,
+    statusHalted: l.statusHalted,
+    linkBase,
+  })} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+    var dataEl = document.getElementById('fork-genealogy-data');
+    if (!dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var chains = data.chains;
+    var milestones = data.milestones;
+    var linkBase = data.linkBase;
+    var todayLabel = data.todayLabel;
+    var statusActive = data.statusActive;
+    var statusHalted = data.statusHalted;
+
+    var container = document.getElementById('fork-genealogy-chart');
+    if (!container) return;
+
+    // Chain palette — vivid for active, muted gray for halted.
+    var chainColor = {
+      'main': '#1a4570',
+      'namecoin': '#b8860b',
+      'litecoin': '#9aa3b3',
+      'dogecoin': '#c0a234',
+      'bitcoin-xt': '#9a9a9a',
+      'bitcoin-classic': '#9a9a9a',
+      'bitcoin-unlimited': '#9a9a9a',
+      'bitcoin-cash': '#0ac18e',
+      'bitcoin-gold': '#d4af37',
+      'bitcoin-sv': '#e8a317',
+    };
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, function(c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    function makeTooltip(parent) {
+      return d3.select(parent).append('div')
+        .style('position', 'absolute')
+        .style('background', 'rgba(20, 20, 20, 0.92)')
+        .style('color', '#fff')
+        .style('padding', '6px 10px')
+        .style('border-radius', '3px')
+        .style('font-size', '12px')
+        .style('line-height', '1.4')
+        .style('pointer-events', 'none')
+        .style('opacity', 0)
+        .style('max-width', '320px')
+        .style('z-index', 10);
+    }
+
+    function moveTooltip(tooltip, parent, event) {
+      var rect = parent.getBoundingClientRect();
+      tooltip.style('left', (event.clientX - rect.left + 12) + 'px')
+             .style('top', (event.clientY - rect.top + 12) + 'px');
+    }
+
+    function draw() {
+      // Wipe and redraw on resize
+      container.innerHTML = '';
+
+      var today = new Date();
+      var dateExtent = [new Date('2008-10-01'), today];
+
+      var margin = { top: 80, right: 80, bottom: 40, left: 180 };
+      var laneHeight = 30;
+      var chartHeight = laneHeight * chains.length + margin.top + margin.bottom;
+
+      // Aim for ~1100px natural width; container scrolls horizontally on
+      // narrower viewports via .chart-scroll { overflow-x: auto }.
+      var containerWidth = container.clientWidth || 800;
+      var chartWidth = Math.max(containerWidth, 1080);
+
+      var x = d3.scaleTime().domain(dateExtent).range([margin.left, chartWidth - margin.right]);
+      var y = d3.scaleBand().domain(chains.map(function(c) { return c.id; }))
+        .range([margin.top, margin.top + laneHeight * chains.length])
+        .padding(0.35);
+
+      var svg = d3.select(container).append('svg')
+        .attr('width', chartWidth)
+        .attr('height', chartHeight)
+        .style('display', 'block')
+        .style('font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif');
+
+      // Lane backgrounds (alternating tint)
+      svg.selectAll('.lane-bg').data(chains).enter().append('rect')
+        .attr('x', margin.left)
+        .attr('y', function(c) { return y(c.id) - y.bandwidth() * 0.25; })
+        .attr('width', chartWidth - margin.left - margin.right)
+        .attr('height', laneHeight)
+        .attr('fill', function(_c, i) { return i % 2 === 0 ? '#f5f3ec' : '#efece4'; });
+
+      // X axis (years on top of chart-bottom)
+      var laneBottomY = margin.top + laneHeight * chains.length;
+      var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+      svg.append('g')
+        .attr('transform', 'translate(0,' + laneBottomY + ')')
+        .call(xAxis)
+        .selectAll('text').style('font-size', '11px').style('fill', '#444');
+      var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
+      svg.append('g')
+        .attr('transform', 'translate(0,' + laneBottomY + ')')
+        .call(monthAxis)
+        .selectAll('line').attr('stroke', '#aaa');
+
+      // Today vertical line
+      var todayX = x(today);
+      svg.append('line')
+        .attr('x1', todayX).attr('x2', todayX)
+        .attr('y1', margin.top - 16).attr('y2', laneBottomY)
+        .attr('stroke', '#3a6e3a').attr('stroke-width', 1).attr('stroke-dasharray', '2,3').attr('opacity', 0.55);
+      svg.append('text')
+        .attr('x', todayX).attr('y', margin.top - 22)
+        .attr('text-anchor', 'middle').style('font-size', '10px').style('fill', '#3a6e3a')
+        .text(todayLabel);
+
+      // Milestone overlay (vertical dashed lines + stacked labels above)
+      function estimateLabelWidth(text) {
+        var w = 0;
+        for (var ci = 0; ci < text.length; ci++) {
+          w += (text.charCodeAt(ci) > 127) ? 11 : 5.8;
+        }
+        return w + 8;
+      }
+      var sortedMs = milestones.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
+      var rows = [];
+      var msLayout = sortedMs.map(function(m) {
+        var px = x(new Date(m.date));
+        var labelW = estimateLabelWidth(m.label);
+        var leftAnchorRight = px + 3 + labelW;
+        var rightAnchorLeft = px - 3 - labelW;
+        var anchorEnd = (leftAnchorRight > chartWidth - margin.right - 6) && (rightAnchorLeft >= margin.left);
+        var labelLeft = anchorEnd ? rightAnchorLeft : (px + 3);
+        var labelRight = anchorEnd ? (px - 3) : leftAnchorRight;
+        for (var r = 0; r < rows.length; r++) {
+          var collides = rows[r].some(function(rng) { return !(labelRight < rng.x1 || labelLeft > rng.x2); });
+          if (!collides) {
+            rows[r].push({ x1: labelLeft, x2: labelRight });
+            return { milestone: m, row: r, px: px, anchorEnd: anchorEnd };
+          }
+        }
+        rows.push([{ x1: labelLeft, x2: labelRight }]);
+        return { milestone: m, row: rows.length - 1, px: px, anchorEnd: anchorEnd };
+      });
+      var rowSpacing = 13;
+      var bottomLabelY = margin.top - 30;
+      msLayout.forEach(function(item) {
+        var labelY = bottomLabelY - item.row * rowSpacing;
+        var g = svg.append('g').attr('transform', 'translate(' + item.px + ',0)');
+        g.append('line')
+          .attr('x1', 0).attr('x2', 0)
+          .attr('y1', margin.top - 8).attr('y2', laneBottomY)
+          .attr('stroke', '#9a3a3a').attr('stroke-width', 1).attr('stroke-dasharray', '3,3').attr('opacity', 0.5);
+        if (item.row > 0) {
+          g.append('line')
+            .attr('x1', 0).attr('x2', 0)
+            .attr('y1', labelY + 3).attr('y2', margin.top - 8)
+            .attr('stroke', '#9a3a3a').attr('stroke-width', 0.5).attr('opacity', 0.4);
+        }
+        var labelEl = item.milestone.slug
+          ? g.append('a').attr('href', linkBase + item.milestone.slug + '/').style('cursor', 'pointer').append('text')
+          : g.append('text');
+        labelEl
+          .attr('x', item.anchorEnd ? -3 : 3)
+          .attr('y', labelY)
+          .attr('text-anchor', item.anchorEnd ? 'end' : 'start')
+          .style('font-size', '10px')
+          .style('fill', '#9a3a3a')
+          .style('text-decoration', item.milestone.slug ? 'underline' : 'none')
+          .text(item.milestone.label);
+      });
+
+      var chainById = {};
+      chains.forEach(function(c) { chainById[c.id] = c; });
+
+      // Chain row labels (left margin, clickable when slug exists)
+      chains.forEach(function(c) {
+        var cy = y(c.id) + y.bandwidth() / 2;
+        var tooltipDate = new Date(c.launch).toISOString().slice(0, 10);
+        var tooltipText = c.name + ' · ' + (c.status === 'active' ? statusActive : statusHalted) + ' · ' + tooltipDate;
+        var label = c.slug
+          ? svg.append('a').attr('href', linkBase + c.slug + '/').style('cursor', 'pointer').append('text')
+          : svg.append('text');
+        label
+          .attr('x', margin.left - 10)
+          .attr('y', cy)
+          .attr('text-anchor', 'end')
+          .attr('dominant-baseline', 'central')
+          .style('font-size', '11px')
+          .style('fill', c.status === 'halted' ? '#666' : '#222')
+          .style('text-decoration', c.slug ? 'underline' : 'none')
+          .style('font-weight', c.id === 'main' ? '600' : '400')
+          .text(c.name)
+          .append('title').text(tooltipText);
+      });
+
+      // Fork connectors (vertical line from parent row to child row at launch)
+      chains.forEach(function(c) {
+        if (!c.parent) return;
+        var parent = chainById[c.parent];
+        if (!parent) return;
+        var px = x(new Date(c.launch));
+        var py = y(parent.id) + y.bandwidth() / 2;
+        var cy = y(c.id) + y.bandwidth() / 2;
+        svg.append('path')
+          .attr('d', 'M' + px + ',' + py + ' L' + px + ',' + cy)
+          .attr('stroke', chainColor[c.id] || '#888')
+          .attr('stroke-width', 1.6)
+          .attr('fill', 'none')
+          .attr('opacity', c.status === 'halted' ? 0.55 : 0.9);
+      });
+
+      // Tooltip surface
+      var tooltip = makeTooltip(container.parentNode || container);
+
+      // Chain bars (operational range)
+      chains.forEach(function(c) {
+        var startX = x(new Date(c.launch));
+        var endX = c.halt ? x(new Date(c.halt)) : x(today);
+        var cy = y(c.id) + y.bandwidth() / 2;
+        var color = chainColor[c.id] || '#888';
+        var barHeight = c.status === 'halted' ? 4 : 6;
+
+        var barG = svg.append('g').style('cursor', c.slug ? 'pointer' : 'default');
+
+        // Bar
+        barG.append('rect')
+          .attr('x', startX)
+          .attr('y', cy - barHeight / 2)
+          .attr('width', Math.max(2, endX - startX))
+          .attr('height', barHeight)
+          .attr('fill', color)
+          .attr('opacity', c.status === 'halted' ? 0.55 : 0.95)
+          .attr('rx', 2);
+
+        // Launch dot
+        barG.append('circle')
+          .attr('cx', startX).attr('cy', cy).attr('r', 4)
+          .attr('fill', color)
+          .attr('stroke', '#fff').attr('stroke-width', 1.5);
+
+        // End cap: × for halted, > arrow tip for active
+        if (c.status === 'halted') {
+          var ex = endX, hh = 4.5;
+          barG.append('path')
+            .attr('d', 'M' + (ex - hh) + ',' + (cy - hh) + ' L' + (ex + hh) + ',' + (cy + hh) +
+                       ' M' + (ex - hh) + ',' + (cy + hh) + ' L' + (ex + hh) + ',' + (cy - hh))
+            .attr('stroke', '#7a3030').attr('stroke-width', 1.5).attr('fill', 'none');
+        } else {
+          // small triangular arrow indicating "continues"
+          barG.append('path')
+            .attr('d', 'M' + endX + ',' + (cy - 4) + ' L' + (endX + 6) + ',' + cy + ' L' + endX + ',' + (cy + 4) + ' Z')
+            .attr('fill', color);
+        }
+
+        // Hover area covering the full bar + dots for tooltip + click
+        barG.append('rect')
+          .attr('x', startX - 4).attr('y', cy - 8)
+          .attr('width', endX - startX + 12).attr('height', 16)
+          .attr('fill', 'transparent')
+          .on('mouseover', function(event) {
+            var statusText = c.status === 'active'
+              ? statusActive + ' · ' + new Date(c.launch).toISOString().slice(0, 10) + ' → ' + todayLabel
+              : statusHalted + ' · ' + new Date(c.launch).toISOString().slice(0, 10) + ' → ' + (c.halt ? new Date(c.halt).toISOString().slice(0, 10) : '');
+            tooltip.style('opacity', 1).html('<strong>' + escapeHtml(c.name) + '</strong><br/>' + statusText);
+            moveTooltip(tooltip, container.parentNode || container, event);
+          })
+          .on('mousemove', function(event) { moveTooltip(tooltip, container.parentNode || container, event); })
+          .on('mouseout', function() { tooltip.style('opacity', 0); })
+          .on('click', function() { if (c.slug) window.location.href = linkBase + c.slug + '/'; });
+      });
+    }
+    draw();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .fork-genealogy {
+    margin: 2rem 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+  .fork-genealogy h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .fork-genealogy .chart-sub {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .fork-genealogy .chart-scroll {
+    position: relative;
+    overflow-x: auto;
+    background: #fafaf7;
+    border: 1px solid #e8e6df;
+    border-radius: 4px;
+  }
+  .fork-genealogy .chart-container {
+    position: relative;
+    min-width: 1080px;
+  }
+  .fork-genealogy .chart-container :global(svg) {
+    display: block;
+  }
+</style>
