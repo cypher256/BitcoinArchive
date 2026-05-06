@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがSourceForgeの遅さ、標準Cを使ったBitcoinの移植性アプローチ、今後のプロトコル変更、Linuxポートへの関心の高まりについて議論する。"
+description: "サトシがSourceForgeの遅さ、標準Cを使ったビットコインの移植性アプローチ、今後のプロトコル変更、Linuxポートへの関心の高まりについて議論する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -73,7 +73,7 @@ Linuxへの移植がしたくてうずうずしている？一度やってしま
 >>
 >>
 >> <!-- quote: q4 -->
->>> ご存じないかもしれないが、Bitcoinのウェブサイトがダウンしている。
+>>> ご存じないかもしれないが、ビットコインのウェブサイトがダウンしている。
 >>>
 >>> http://bitcoin.sourceforge.net/
 >>>

@@ -47,7 +47,7 @@ Eugen Leitl の書き込み:
 
 <!-- quote: q2 -->
 <!-- tone-skip -->
- > ご存じないかもしれませんが、Bitcoinのウェブサイトがダウンしています。
+ > ご存じないかもしれませんが、ビットコインのウェブサイトがダウンしています。
 <!-- /tone-skip -->
  >
  > http://bitcoin.sourceforge.net/

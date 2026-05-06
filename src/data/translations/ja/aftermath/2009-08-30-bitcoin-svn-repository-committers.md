@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin SourceForge SVNリポジトリ — コミッター全記録（2009–2011）"
+title: "ビットコイン SourceForge SVNリポジトリ — コミッター全記録（2009–2011）"
 date: 2009-08-30T00:00:00Z
 type: "article"
 source: "sourceforge"
@@ -14,7 +14,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinのSourceForge SVNリポジトリにコミット権を持っていた全4名の開発者の完全な記録。2009年8月30日から2011年9月13日までの252リビジョンを網羅。"
+description: "ビットコインのSourceForge SVNリポジトリにコミット権を持っていた全4名の開発者の完全な記録。2009年8月30日から2011年9月13日までの252リビジョンを網羅。"
 isSatoshi: true
 tags:
   - "sourceforge"
@@ -42,7 +42,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-Bitcoinが[GitHubに移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)以前、すべての開発はSourceForgeでホストされたSubversion（SVN）リポジトリで行われていた。リポジトリは2009年8月30日に作成され、2011年9月13日の最終コミットまでに252リビジョンが記録された。このリポジトリにコードをコミットしたのは、わずか4人だった。
+ビットコインが[GitHubに移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)以前、すべての開発はSourceForgeでホストされたSubversion（SVN）リポジトリで行われていた。リポジトリは2009年8月30日に作成され、2011年9月13日の最終コミットまでに252リビジョンが記録された。このリポジトリにコードをコミットしたのは、わずか4人だった。
 
 **SVN以前：**
 サトシ・ナカモトはSVNリポジトリが存在する前、SourceForge上で`.rar`アーカイブとしてソースコードを配布していた。SourceForgeプロジェクトは[2008年11月9日に登録](/BitcoinArchive/ja/entries/sourceforge/2008-11-09-bitcoin-project-registered/)され、Bitcoin v0.1は[2009年1月9日にリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)された。最初の8ヶ月間、ソースコードはバージョン管理システムではなく、ダウンロード可能なアーカイブとして配布されていた。

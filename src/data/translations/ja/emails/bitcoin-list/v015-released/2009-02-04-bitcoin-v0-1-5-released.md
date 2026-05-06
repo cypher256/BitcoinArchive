@@ -37,7 +37,7 @@ http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441
 - メッセージテキストの再フォーマットをわずかに改善
 - トランザクション詳細ダイアログのフォントを変更
 - 生成されたコインのトランザクション詳細に説明テキストを追加
-- Bitcoinアドレスで受信したトランザクションの説明文を修正
+- ビットコインアドレスで受信したトランザクションの説明文を修正
 
 Satoshi Nakamoto<br>
 http://www.bitcoin.org

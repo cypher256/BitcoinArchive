@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトによるBitcoin 0.3のリリース告知。P2P暗号通貨としてのBitcoinの説明と、コマンドライン制御、Mac OS X版などの新機能。"
+description: "サトシ・ナカモトによるBitcoin 0.3のリリース告知。P2P暗号通貨としてのビットコインの説明と、コマンドライン制御、Mac OS X版などの新機能。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -20,7 +20,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-P2P暗号通貨、Bitcoinのバージョン0.3を発表する！ Bitcoinは、信頼できる中央サーバーの必要性を置き換えるために暗号技術と分散ネットワークを使用するデジタル通貨だ。中央管理された通貨の恣意的なインフレリスクから逃れよう！ Bitcoinの総発行量は2,100万コインに制限されている。コインは、ノードが提供するCPUパワーに基づいてネットワークのノードに徐々にリリースされるため、アイドル状態のCPU時間を提供することでコインの一部を得ることができる。
+P2P暗号通貨、ビットコインのバージョン0.3を発表する！ ビットコインは、信頼できる中央サーバーの必要性を置き換えるために暗号技術と分散ネットワークを使用するデジタル通貨だ。中央管理された通貨の恣意的なインフレリスクから逃れよう！ ビットコインの総発行量は2,100万コインに制限されている。コインは、ノードが提供するCPUパワーに基づいてネットワークのノードに徐々にリリースされるため、アイドル状態のCPU時間を提供することでコインの一部を得ることができる。
 
 新機能：
 - コマンドラインおよびJSON-RPC制御

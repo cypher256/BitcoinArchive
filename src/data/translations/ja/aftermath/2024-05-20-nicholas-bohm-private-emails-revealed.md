@@ -43,7 +43,7 @@ translationStatus: complete
 
 提出資料によれば、ニコラス・ボームとサトシは 2009年を通じて、実際のノード運用上の問題について直接メールを交わしていた。
 
-- **[2009年6月4日](/BitcoinArchive/ja/entries/correspondence/nicholas-bohm/2009-06-04-bohm-to-satoshi-router-issue/)** 、ニコラス・ボームは新しいルーターを導入して以来、Bitcoin が接続できなくなったと報告した。
+- **[2009年6月4日](/BitcoinArchive/ja/entries/correspondence/nicholas-bohm/2009-06-04-bohm-to-satoshi-router-issue/)** 、ニコラス・ボームは新しいルーターを導入して以来、ビットコインが接続できなくなったと報告した。
 - **2009年6月5日** 、サトシは **ポート8333** を転送設定して、ノードが着信接続を受けられるようにすべきだと返信した。オンラインのノードが誰も着信を受けられなければ、接続できなくなるとも説明している。
 - **[2009年7月18日〜19日](/BitcoinArchive/ja/entries/correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running/)** 、ニコラス・ボームは「ここ1日ほど」接続が一切確立できないと報告した。これに対しサトシは、IPアドレスが変わったのではないかと尋ね、さらにこう述べた。
 

@@ -48,7 +48,7 @@ timeline
          : サトシ P2P Foundation 投稿 「私は ドリアン・ナカモト ではない」 (3月7日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/
          : APに詳細インタビュー、 否定を再確認、 弁護士起用
-         : Bitcoin コミュニティが 67BTC超を寄付
+         : ビットコイン コミュニティが 67BTC超を寄付
 ```
 
 ### Newsweek による特定

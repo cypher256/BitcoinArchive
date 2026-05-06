@@ -66,7 +66,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリは公開記録から得られる 3 つの観察を組み合わせて読む: (1) サトシ自身の言として、Bitcoin 設計の 18 か月間、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を知らなかった。(2) ウェイ・ダイの後年の評価として、サトシは「サイファーパンクのコミュニティに以前から積極的に参加していた人物ではない」推認。(3) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 項目の思想核との、異例に密な整合。組み合わせると構造的な問いが立ち上がる: サイファーパンクのコミュニティに参加した形跡が見えない設計者が、その創設宣言にほぼ一対一で対応するシステムにどう到達したのか。
+本エントリは公開記録から得られる 3 つの観察を組み合わせて読む: (1) サトシ自身の言として、ビットコイン設計の 18 か月間、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を知らなかった。(2) ウェイ・ダイの後年の評価として、サトシは「サイファーパンクのコミュニティに以前から積極的に参加していた人物ではない」推認。(3) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 項目の思想核との、異例に密な整合。組み合わせると構造的な問いが立ち上がる: サイファーパンクのコミュニティに参加した形跡が見えない設計者が、その創設宣言にほぼ一対一で対応するシステムにどう到達したのか。
 
 対になる別エントリ [「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) は、仮名そのものを 1980〜90 年代のサイバーパンク／テクノオリエンタリズム的な記号空間の内側で読む別軸の分析である。本エントリは、サトシがシステムを設計した**知的位置**そのものに焦点を絞る。
 
@@ -76,7 +76,7 @@ translationStatus: complete
 
 ### 1.1 起源と命名
 
-サイファーパンク運動は 1992 年、サンフランシスコ・ベイエリアのサイグナス・ソリューションズ社内で、エリック・ヒューズ／ティモシー・C・メイ／ジョン・ギルモアによって創設された。「サイファーパンク」という名称は、雑誌『Mondo 2000』の編集者で 1970 年代の Community Memory プロジェクトの古参でもあるジュディス・ミルホン（"St. Jude"）が、"cipher"（暗号）と"cyberpunk"の合成語として命名した。サイファーパンクメーリングリストは 1992 年 9 月から 2001 年まで運営され、購読者数千名・投稿数万通の規模だった。その後継 `cryptography@metzdowd.com` こそ、サトシが 2008 年 10 月 31 日に Bitcoin ホワイトペーパーの告知を投稿した場所である。
+サイファーパンク運動は 1992 年、サンフランシスコ・ベイエリアのサイグナス・ソリューションズ社内で、エリック・ヒューズ／ティモシー・C・メイ／ジョン・ギルモアによって創設された。「サイファーパンク」という名称は、雑誌『Mondo 2000』の編集者で 1970 年代の Community Memory プロジェクトの古参でもあるジュディス・ミルホン（"St. Jude"）が、"cipher"（暗号）と"cyberpunk"の合成語として命名した。サイファーパンクメーリングリストは 1992 年 9 月から 2001 年まで運営され、購読者数千名・投稿数万通の規模だった。その後継 `cryptography@metzdowd.com` こそ、サトシが 2008 年 10 月 31 日にビットコインのホワイトペーパーの告知を投稿した場所である。
 
 ### 1.2 思想の核
 
@@ -98,17 +98,17 @@ translationStatus: complete
 
 これら 6 項目が、§3 でサトシの公開記録上の実践と比較する軸となる。
 
-### 1.3 Bitcoin への技術系譜
+### 1.3 ビットコインへの技術系譜
 
-サイファーパンク運動は、Bitcoin に至る 10 年あまりの間に、デジタル通貨と PoW に関する一連の提案を生み出した。各提案は本アーカイブにエントリがある:
+サイファーパンク運動は、ビットコインに至る 10 年あまりの間に、デジタル通貨と PoW に関する一連の提案を生み出した。各提案は本アーカイブにエントリがある:
 
-| 年 | 著者 | 提案 | Bitcoin との関係 |
+| 年 | 著者 | 提案 | ビットコインとの関係 |
 |---|---|---|---|
-| 1997 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [Hashcash](/BitcoinArchive/ja/participants/adam-back/) | スパム／シビル攻撃対策としての PoW。Bitcoin ホワイトペーパー [6] で引用 |
-| 1998 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | 同報配信型台帳と計算パズル発行に基づく分散デジタル通貨。Bitcoin ホワイトペーパー [1] で引用 |
+| 1997 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [Hashcash](/BitcoinArchive/ja/participants/adam-back/) | スパム／シビル攻撃対策としての PoW。ビットコインホワイトペーパー [6] で引用 |
+| 1998 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | 同報配信型台帳と計算パズル発行に基づく分散デジタル通貨。ビットコインホワイトペーパー [1] で引用 |
 | 1998 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | Bit Gold | 連鎖的な PoW トークン。ホワイトペーパーには引用がないが、サトシは後年のフォーラム投稿で言及している |
-| 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後に Bitcoin の最初のサトシ以外のノード運用者となる |
-| 2008 | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | Bitcoin | 統合 |
+| 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後にビットコインの最初のサトシ以外のノード運用者となる |
+| 2008 | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | ビットコイン | 統合 |
 
 §2 では、この系譜のうち何をサトシが実際に開発期間中に知っていたか、そして何を知らなかったかを精査する。
 
@@ -197,7 +197,7 @@ translationStatus: complete
 
 ## 6. まとめ
 
-- Bitcoin 設計の 18 か月間（2007 年半ば〜 2008 年 8 月）、サトシは Hashcash を知っており、b-money を知らなかった — 2008 年 8 月 21 日のアダム・バック宛の言葉で確定
+- ビットコイン設計の 18 か月間（2007 年半ば〜 2008 年 8 月）、サトシは Hashcash を知っており、b-money を知らなかった — 2008 年 8 月 21 日のアダム・バック宛の言葉で確定
 - ウェイ・ダイの 2014 年回想が独立した第二の制約を与える: 識別性論証から、サトシはおそらくサイファーパンクのコミュニティの能動的参加者ではなかった
 - 2008-2011 年のサトシの公開記録上の実践は、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 軸の思想核に一対一で対応する
 - 最も簡素な読みは**独立到達** — 可視的なコミュニティの外側から同じ答えに収束した — だが、受動的な読み手だった可能性は公開記録上で開いたまま残る

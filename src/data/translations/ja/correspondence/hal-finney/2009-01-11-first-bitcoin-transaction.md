@@ -1,5 +1,5 @@
 ---
-title: "「Running bitcoin」 ―― サトシ以外でBitcoinを動かした最初の既知の人物・ハル・フィニーによる象徴的なツイート（2009-01-11）"
+title: "「Running bitcoin」 ―― サトシ以外でビットコインを動かした最初の既知の人物・ハル・フィニーによる象徴的なツイート（2009-01-11）"
 date: 2009-01-11T22:33:00Z
 type: "correspondence"
 source: "x"

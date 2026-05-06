@@ -1,5 +1,5 @@
 ---
-title: "BitcoinがGitHubへ移行 — 初期コミッターのアクセス権付与記録（2010–2011）"
+title: "ビットコインがGitHubへ移行 — 初期コミッターのアクセス権付与記録（2010–2011）"
 date: 2011-09-13T00:00:00Z
 type: "article"
 source: "github"
@@ -18,7 +18,7 @@ participants:
     slug: "wladimir-van-der-laan"
   - name: "Nils Schneider"
     slug: "nils-schneider"
-description: "BitcoinのSourceForge SVNからGitHubへの移行と、2011年にGitHubリポジトリへのコミットアクセスを付与された開発者の時系列記録。"
+description: "ビットコインのSourceForge SVNからGitHubへの移行と、2011年にGitHubリポジトリへのコミットアクセスを付与された開発者の時系列記録。"
 isSatoshi: false
 tags:
   - "github"
@@ -47,7 +47,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-BitcoinのGitHubリポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVNリポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が最終SVNコミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
+ビットコインのGitHubリポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVNリポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が最終SVNコミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
 
 **移行タイムライン：**
 - **2010-12-19:** GitHub リポジトリ `bitcoin/bitcoin` 作成 — [ギャビンがプロジェクト管理を公的に引き受けた日](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)と同日。

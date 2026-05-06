@@ -111,22 +111,22 @@ inlineLinkKeywords:
 
 ```mermaid
 timeline
-    2010-09 : サトシが 1 MB ブロックサイズ制限を 導入 (スパム対策)
+    2010-09 : サトシが 1 MB ブロックサイズ制限を導入 (スパム対策)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit/
-    2014    : ブロック充填が 常態化し始める
+    2014    : ブロック充填が深刻化
     2015-08 : マイク・ハーン / アンドレセンが Bitcoin XT (8 MB) を立ち上げ
     %% link: /BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/
-    2016-01 : マイク・ハーンが 「ビットコイン 実験の終結」 を公開 — 全 BTC 売却
+    2016-01 : ハーンが ビットコイン離脱を表明 — 全 BTC 売却
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
-    2016-02 : Bitcoin Classic (2 MB) が ローンチ
-    2017-05 : ニューヨーク合意 (NYA) — SegWit + 2 MB ハードフォーク 妥協案
-    2017-08-01 : ビットコインキャッシュ が 分岐 (8 MB、SegWit なし)
+    2016-02 : Bitcoin Classic (2 MB) ローンチ
+    2017-05 : ニューヨーク合意 (NYA) — SegWit + 2 MB ハードフォーク妥協案
+    2017-08-01 : BCH 分岐 (8 MB、SegWit なし)
     %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
-    2017-08-24 : SegWit が 本体チェーンで 有効化
+    2017-08-24 : SegWit が本体チェーンで有効化
     %% link: /BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/
-    2017-11-08 : SegWit2x が 予定ハードフォーク 3 日前に 中止
+    2017-11-08 : SegWit2x が予定ハードフォーク 3 日前に中止
     %% link: /BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/
-    2018-11-15 : ビットコインSV が ビットコインキャッシュ から 分岐 (128 MB、「オリジナル プロトコル」)
+    2018-11-15 : BSV が BCH から分岐 (128 MB、 オリジナルオペコード復活)
     %% link: /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
 ```
 

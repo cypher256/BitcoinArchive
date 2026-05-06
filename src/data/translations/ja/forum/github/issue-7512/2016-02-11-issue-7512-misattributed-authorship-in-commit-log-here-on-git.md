@@ -16,7 +16,7 @@ tags:
 translationStatus: complete
 ---
 
-こちら（Bitcoinの最も古いコミットの現在のページ）を見ると、
+こちら（ビットコインの最も古いコミットの現在のページ）を見ると、
 
 https://github.com/bitcoin/bitcoin/commits/master?page=289
 
