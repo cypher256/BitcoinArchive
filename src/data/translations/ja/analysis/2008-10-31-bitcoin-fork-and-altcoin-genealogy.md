@@ -56,6 +56,10 @@ relatedEntries:
   - aftermath/2013-12-06-dogecoin-launch
   - aftermath/2011-09-01-vitalik-buterin-biography
   - aftermath/2012-05-01-bitcoin-magazine-launch
+  - aftermath/2011-04-01-roger-ver-biography
+  - aftermath/2011-08-01-jihan-wu-biography
+  - aftermath/2015-01-01-amaury-sechet-biography
+  - aftermath/2013-10-01-mike-belshe-biography
 inlineLinkKeywords:
   - "ビットコイン分岐の系譜"
   - "ブロックサイズ戦争"
@@ -77,9 +81,9 @@ inlineLinkKeywords:
 | 2015-08-15 | [Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) | [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/) | BIP 101: 8 MB ブロック、2 年ごとに倍増 | 2016 年 1 月までに事実上停止 ([ハーンの「ビットコイン実験の終結」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)) |
 | 2016-02-10 | Bitcoin Classic | ジョナサン・トゥーミン他 | ハードフォークで 2 MB ブロック | 2016 年末までに事実上停止 |
 | 2016-10-13 | Bitcoin Unlimited | アンドリュー・ストーン他 | 可変ブロックサイズ、マイナー主導 | 2018 年までに無視できる占有率 |
-| 2017-08-01 | [Bitcoin Cash (BCH)](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | ロジャー・ヴァー (初期のビットコイン投資家、bitcoin.com 運用者)、ジハン・ウー (Bitmain 共同創業者、ビットコイン採掘ハードウェア)、アモリー・セシェ (Bitcoin Core 寄稿者、Bitcoin ABC リード) | 8 MB ブロック、SegWit なし、ブロック 478558 で分岐 | 規模の小さい生存チェーン。2018 年にさらに分裂 |
+| 2017-08-01 | [Bitcoin Cash (BCH)](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | [ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/) (初期のビットコイン投資家、bitcoin.com 運用者)、[ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/) (Bitmain 共同創業者、ビットコイン採掘ハードウェア)、[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/) (Bitcoin Core 寄稿者、Bitcoin ABC リード) | 8 MB ブロック、SegWit なし、ブロック 478558 で分岐 | 規模の小さい生存チェーン。2018 年にさらに分裂 |
 | 2017-10-24 | Bitcoin Gold (BTG) | ジャック・リャオ (LightningASIC) | Equihash PoW (ASIC 耐性)、ブロック 491407 で分岐 | ニッチな生存チェーン。2018 年・2020 年に 51% 攻撃を受けた |
-| 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | マイク・ベルシェ (BitGo 共同創業者、ビットコイン保管事業) 他 (ニューヨーク合意の主要ビットコイン事業者の署名者) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化 3 日前に中止。分岐は発生せず |
+| 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | [マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/) (BitGo 共同創業者、ビットコイン保管事業) 他 (ニューヨーク合意の主要ビットコイン事業者の署名者) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化 3 日前に中止。分岐は発生せず |
 | 2018-11-15 | [Bitcoin SV (BSV)](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | クレイグ・ライト、カルヴィン・エア (nChain) | 128 MB ブロック、「オリジナル」 オペコードを復活 | 2018 年の BCH ハッシュ戦争分裂を生き残る。COPA v Wright (2024) でライト敗訴後、占有率はさらに減少 |
 
 2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い問いはプロトコルガバナンスにあった ─ 開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という問いである。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちが Bitcoin Cash として分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html)による土壇場での中止が、本体チェーン側の論争を終わらせた。

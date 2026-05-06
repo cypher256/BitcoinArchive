@@ -33,6 +33,9 @@ relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - aftermath/2018-11-15-bitcoin-sv-fork
   - bip/2015-12-21-bip-0141
+  - aftermath/2011-04-01-roger-ver-biography
+  - aftermath/2011-08-01-jihan-wu-biography
+  - aftermath/2015-01-01-amaury-sechet-biography
 ---
 
 2017 年 8 月 1 日、ビットコインのチェーンが分裂した。12:37 UTC 頃に ViaBTC マイニングプールが採掘したブロック 478558 で、Bitcoin ABC ソフトウェアを動かしていたクライアント群が 1 MB サイズ制限を超えるブロックを受け入れ、ビットコイン本体チェーンから分岐した新しいチェーンを作った。新しいチェーンは Bitcoin Cash (BCH) と名付けられた。

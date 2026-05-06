@@ -24,6 +24,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2024-03-14-copa-v-wright-ruling
+  - aftermath/2015-01-01-amaury-sechet-biography
 ---
 
 2018 年 11 月 15 日、Bitcoin Cash が分裂した。Bitcoin Cash ブロックチェーン — それ自体が [2017 年 8 月のビットコインからのフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) — は、互いに競合する二つのチェーンに割れた。Bitcoin ABC (既存クライアントで、BCH のティッカーを保持) と、[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) とカルヴィン・エアの nChain 組織が率いる Bitcoin SV (Satoshi Vision) である。

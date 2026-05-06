@@ -36,6 +36,6 @@ relatedEntries:
 
 ブテリンが 2014 年に Ethereum プロジェクト主導のため離脱した後、Bitcoin Magazine は別の編集体制で継続運営された。2015 年に BTC Inc. に買収され (アーロン・ファン・ヴィルダム、ピート・リゾらが後年に編集を引き継ぐ)、2026 年時点でも運営が続いている。
 
-本媒体の Bitcoin Archive におけるドキュメント上の意義は二つ。第一に、2012 ~ 2014 年期の記事アーカイブは、ビットコインのローンチ期とブロックサイズ戦争の間の同時代的一次資料としてかなりの規模を占める。第二に、ここはブテリンが最も活発だったビットコイン期の年月を過ごした場であり ─ [Ethereum 白書](/BitcoinArchive/ja/participants/vitalik-buterin/) (2013 年末) と、その後に続く [分岐とアルトコインの系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) の起点となった作品群を生み出した。
+本媒体の Bitcoin Archive におけるドキュメント上の意義は二つ。第一に、2012 ~ 2014 年期の記事アーカイブは、ビットコインのローンチ期とブロックサイズ戦争の間の同時代的一次資料としてかなりの規模を占める。第二に、ここはブテリンが最も活発だったビットコイン期の年月を過ごした場であり ─ Ethereum 白書 (2013 年末。原本 URL は [ブテリン参加者ページ](/BitcoinArchive/ja/participants/vitalik-buterin/) の `secondarySources` にリンク) と、その後に続く [分岐とアルトコインの系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) の起点となった作品群を生み出した。
 
 *[編者注：本エントリーで用いている 2012-05-01 という日付は、初の印刷版に対する代表的なプレースホルダーである。2012 年 5 月号の正確な発行日は二次資料間で一意に確定しておらず、オンライン版の開始は印刷版より数か月先行した可能性が高いものの、公開記録上の正規ローンチ日は存在しない。]*

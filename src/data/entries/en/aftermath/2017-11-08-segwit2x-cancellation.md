@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2015-08-15-bitcoin-xt-launch
   - aftermath/2017-08-01-bitcoin-cash-fork
   - bip/2015-12-21-bip-0141
+  - aftermath/2013-10-01-mike-belshe-biography
 ---
 
 On November 8, 2017, [Mike Belshe](https://en.wikipedia.org/wiki/SegWit2x) announced on the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list that the SegWit2x hard fork — scheduled for block 494784, approximately three days later — was being suspended. The full message:

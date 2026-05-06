@@ -56,6 +56,10 @@ relatedEntries:
   - aftermath/2013-12-06-dogecoin-launch
   - aftermath/2011-09-01-vitalik-buterin-biography
   - aftermath/2012-05-01-bitcoin-magazine-launch
+  - aftermath/2011-04-01-roger-ver-biography
+  - aftermath/2011-08-01-jihan-wu-biography
+  - aftermath/2015-01-01-amaury-sechet-biography
+  - aftermath/2013-10-01-mike-belshe-biography
 inlineLinkKeywords:
   - "Bitcoin fork genealogy"
   - "block-size war"
@@ -77,9 +81,9 @@ Hard forks of the Bitcoin protocol that produced a separate chain. Soft forks (S
 | 2015-08-15 | [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) | [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) | BIP 101: 8 MB blocks, doubling every 2 years | Effectively dead by 2016-01 ([Hearn's resolution essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)) |
 | 2016-02-10 | Bitcoin Classic | Jonathan Toomim et al. | 2 MB blocks via hard fork | Effectively dead by late 2016 |
 | 2016-10-13 | Bitcoin Unlimited | Andrew Stone et al. | Flexible block size, miner-driven | Negligible share by 2018 |
-| 2017-08-01 | [Bitcoin Cash (BCH)](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | Roger Ver (early Bitcoin investor, bitcoin.com operator), Jihan Wu (Bitmain co-founder, Bitcoin mining hardware), Amaury Séchet (Bitcoin Core contributor, Bitcoin ABC lead) | 8 MB blocks, no SegWit, fork at block 478558 | Surviving smaller chain; further split in 2018 |
+| 2017-08-01 | [Bitcoin Cash (BCH)](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | [Roger Ver](/BitcoinArchive/participants/roger-ver/) (early Bitcoin investor, bitcoin.com operator), [Jihan Wu](/BitcoinArchive/participants/jihan-wu/) (Bitmain co-founder, Bitcoin mining hardware), [Amaury Séchet](/BitcoinArchive/participants/amaury-sechet/) (Bitcoin Core contributor, Bitcoin ABC lead) | 8 MB blocks, no SegWit, fork at block 478558 | Surviving smaller chain; further split in 2018 |
 | 2017-10-24 | Bitcoin Gold (BTG) | Jack Liao (LightningASIC) | Equihash PoW (ASIC-resistant), fork at block 491407 | Surviving niche chain; suffered 51% attacks 2018 / 2020 |
-| 2017-11-08 | [SegWit2x — cancelled](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) | Mike Belshe (BitGo co-founder, Bitcoin custody) et al. (New York Agreement signatories from major Bitcoin companies) | Planned 2 MB hard fork at block 494784 | Cancelled three days before activation; no fork occurred |
+| 2017-11-08 | [SegWit2x — cancelled](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) | [Mike Belshe](/BitcoinArchive/participants/mike-belshe/) (BitGo co-founder, Bitcoin custody) et al. (New York Agreement signatories from major Bitcoin companies) | Planned 2 MB hard fork at block 494784 | Cancelled three days before activation; no fork occurred |
 | 2018-11-15 | [Bitcoin SV (BSV)](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | Craig Wright, Calvin Ayre (nChain) | 128 MB blocks, restored "original" opcodes | Survived 2018 hash war split from BCH; further reduced share after Wright loses COPA v Wright (2024) |
 
 The 2015-2017 entries are the **block-size war** chapter — block size was the explicit issue, but the deeper question was protocol governance: who decides Bitcoin's parameters when the network's developers, miners, and businesses disagree. The eventual answer was that the conservative Bitcoin Core development culture held the main chain (with SegWit instead of a block-size hard fork), and the proposers who wanted larger blocks split off via Bitcoin Cash. SegWit2x was the New York Agreement compromise that would have shipped a 2 MB hard fork on the main chain three months after SegWit; its 11th-hour cancellation by [Mike Belshe](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html) ended the dispute on the main-chain side.

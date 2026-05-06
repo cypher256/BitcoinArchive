@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2015-08-15-bitcoin-xt-launch
   - aftermath/2017-08-01-bitcoin-cash-fork
   - bip/2015-12-21-bip-0141
+  - aftermath/2013-10-01-mike-belshe-biography
 ---
 
 2017 年 11 月 8 日、[マイク・ベルシェ](https://en.wikipedia.org/wiki/SegWit2x) は `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストで、約 3 日後のブロック 494784 で予定されていた SegWit2x ハードフォークの中止を告知した。投稿全文:

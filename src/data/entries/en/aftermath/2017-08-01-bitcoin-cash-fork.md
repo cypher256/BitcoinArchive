@@ -33,6 +33,9 @@ relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - aftermath/2018-11-15-bitcoin-sv-fork
   - bip/2015-12-21-bip-0141
+  - aftermath/2011-04-01-roger-ver-biography
+  - aftermath/2011-08-01-jihan-wu-biography
+  - aftermath/2015-01-01-amaury-sechet-biography
 ---
 
 On August 1, 2017, the Bitcoin chain split. At block 478558 — mined by the ViaBTC mining pool at approximately 12:37 UTC — clients running Bitcoin ABC software accepted a block that exceeded the 1 MB size limit, creating a new chain that diverged from the Bitcoin main chain. The new chain was named Bitcoin Cash (BCH).
