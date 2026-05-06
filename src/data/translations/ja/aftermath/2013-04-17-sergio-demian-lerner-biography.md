@@ -21,8 +21,6 @@ tags:
   - "satoshi-fortune"
   - "historic"
 secondarySources:
-  - name: "Bitslog — The Well Deserved Fortune of Satoshi Nakamoto (April 17, 2013)"
-    url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "Bitslog — A New Mystery about Satoshi (September 3, 2013)"
     url: "https://bitslog.com/2013/09/03/new-mystery-about-satoshi/"
   - name: "Bitslog — The Return of the Deniers and the Revenge of Patoshi (April 16, 2019)"

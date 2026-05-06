@@ -19,9 +19,6 @@ tags:
   - "bug-fixes"
   - "recollection"
 secondarySources:
-  - name: "Bitcoin Magazine - The Man Behind Bitcoin Pizza Day"
-    url: "https://bitcoinmagazine.com/culture/the-man-behind-bitcoin-pizza-day-is-more-than-a-meme-hes-a-mining-pioneer"
-    note: "Based on interviews with Laszlo Hanyecz published by Bitcoin Magazine, CoinDesk, and other outlets. The full private email correspondence between Hanyecz and Satoshi has not been publicly released, though Hanyecz has shared numerous quotes and details in interviews"
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 relatedEntries:

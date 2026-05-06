@@ -18,9 +18,6 @@ tags:
   - "steem"
   - "eos"
   - "historic"
-secondarySources:
-  - name: "EOS.IO — Wikipedia"
-    url: "https://en.wikipedia.org/wiki/EOS.IO"
 relatedEntries:
   - forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate
 translationStatus: complete

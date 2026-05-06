@@ -28,8 +28,6 @@ secondarySources:
     url: "https://bitcoinmagazine.com/print/the-core-issue-libsecp256k1-bitcoins-cryptographic-heart"
   - name: "GitHub — bitcoin-core/secp256k1"
     url: "https://github.com/bitcoin-core/secp256k1"
-  - name: "Bitcoin Core v0.12.0 release notes"
-    url: "https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md"
   - name: "CVE-2014-3570 — OpenSSL BN_sqr bug reported by Pieter Wuille"
     url: "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570"
 relatedEntries:

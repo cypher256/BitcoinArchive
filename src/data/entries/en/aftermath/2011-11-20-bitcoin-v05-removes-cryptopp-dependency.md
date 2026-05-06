@@ -28,8 +28,6 @@ tags:
   - "cryptography"
   - "code-quality"
 secondarySources:
-  - name: "Commit 6ccff2cbde — remove cryptopp dependency (Nils Schneider, 2011-09-27)"
-    url: "https://github.com/bitcoin/bitcoin/commit/6ccff2cbdebca38e4913b679784a4865edfbb12a"
   - name: "Merge commit b898c8fce6 — Merge branch 'no-cryptopp' (Gavin Andresen, 2011-10-05)"
     url: "https://github.com/bitcoin/bitcoin/commit/b898c8fce687de9320bfae8dd2392e92c5464831"
   - name: "Bitcoin v0.5.0 release (2011-11-20)"

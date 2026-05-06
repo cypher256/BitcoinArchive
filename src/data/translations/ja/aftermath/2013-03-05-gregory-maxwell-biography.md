@@ -19,9 +19,6 @@ tags:
   - "confidential-transactions"
   - "libsecp256k1"
   - "historic"
-secondarySources:
-  - name: "Blockstream — Wikipedia"
-    url: "https://en.wikipedia.org/wiki/Blockstream"
 relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - aftermath/2011-03-17-pieter-wuille-biography
