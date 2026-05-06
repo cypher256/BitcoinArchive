@@ -80,5 +80,4 @@ Bit Goldはビットコインと重要な概念を共有していた——プル
 
 [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は、ビットコインに関する初期のメールのやり取りの中で、ビットコインとサボのBit Goldの類似性に言及した。サトシは、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)を通じてサボの研究を知った。ダイは自身の[b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)の概念と合わせてBit Goldのレビューを提案した。
 
-### サトシ推測
-Bit Goldとビットコインの深い概念的類似性から、サボがサトシ・ナカモトではないかと推測する者もいる。サボはこれを否定している。サボとサトシの間の確認された直接的な通信は公開されていない。
+Bit Goldとビットコインの深い概念的類似性、公開された直接的なサボ–サトシ通信が存在しないこと、2007〜2008年を通じての Unenumerated ブログでの旺盛な執筆活動から、サボはサトシ正体仮説の最有力候補の一人として繰り返し議論されてきた — [サボ = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) に詳述。主要な裏付け論考として [スカイ・グレイ / TechCrunch 2013 文体計量分析](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[アストン大学 2014 研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[ポッパー / NYT 2015 『Digital Gold』 抜粋](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) があり、反証としてはサボ自身の一貫した否定 (例: 2014 年ドミニク・フリスビー宛「残念ながら間違いだ」 の返信) がある。
