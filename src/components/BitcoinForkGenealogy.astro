@@ -272,11 +272,17 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
       var chainById = {};
       chains.forEach(function(c) { chainById[c.id] = c; });
 
-      // Chain row labels (left margin, clickable when slug exists)
+      // Chain row labels (left margin, clickable when slug exists).
+      // No text-decoration on the SVG <text>: combining text-decoration:
+      // underline with dominant-baseline: central (and an SVG <a>
+      // wrapper that may inherit user-agent link styling) renders the
+      // underline above the visible glyphs in some browsers. Click
+      // affordance comes from cursor: pointer plus a hover color shift.
       chains.forEach(function(c) {
         var cy = y(c.id) + y.bandwidth() / 2;
         var tooltipDate = new Date(c.launch).toISOString().slice(0, 10);
         var tooltipText = c.name + ' · ' + (c.status === 'active' ? statusActive : statusHalted) + ' · ' + tooltipDate;
+        var fill = c.slug ? '#1a4570' : (c.status === 'halted' ? '#666' : '#222');
         var label = c.slug
           ? svg.append('a').attr('href', linkBase + c.slug + '/').style('cursor', 'pointer').append('text')
           : svg.append('text');
@@ -286,11 +292,15 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
           .attr('text-anchor', 'end')
           .attr('dominant-baseline', 'central')
           .style('font-size', '11px')
-          .style('fill', c.status === 'halted' ? '#666' : '#222')
-          .style('text-decoration', c.slug ? 'underline' : 'none')
+          .style('fill', fill)
+          .style('text-decoration', 'none')
           .style('font-weight', c.id === 'main' ? '600' : '400')
           .text(c.name)
           .append('title').text(tooltipText);
+        if (c.slug) {
+          label.on('mouseover', function() { d3.select(this).style('fill', '#0a3463').style('text-decoration', 'underline'); })
+               .on('mouseout', function() { d3.select(this).style('fill', fill).style('text-decoration', 'none'); });
+        }
       });
 
       // Fork connectors (vertical line from parent row to child row at launch)
