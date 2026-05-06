@@ -53,7 +53,6 @@ inlineLinkKeywords:
   - "Hal Finney hypothesis"
   - "Finney = Satoshi"
   - "race-day alibi"
-  - "Nakamoto's Neighbor"
 ---
 
 This entry documents the recurring public hypothesis that [Hal Finney](/BitcoinArchive/participants/hal-finney/) — Caltech-trained cryptographer, principal developer of PGP 2.0, creator of [Reusable Proof-of-Work (RPOW, 2004)](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/), the first person other than Satoshi to run Bitcoin, recipient of the first person-to-person Bitcoin transaction (10 BTC, January 12, 2009), and a longtime Temple City, California resident living blocks from Dorian Nakamoto — was the person behind the Satoshi pseudonym. The most-cited public articulation is Andy Greenberg's [March 25, 2014 Forbes feature *"Nakamoto's Neighbor"*](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/), which structured the speculation around the geographic coincidence and presented Fran Finney's race-day photographs as the principal counter-evidence. The hypothesis surfaced again in Florian Cafiero's 2026 stylometric analysis commissioned for the New York Times investigation into Adam Back, in which Finney was reported as nearly tied with Back for closest match. The claim is laid out, the supporting arguments are described as their advocates make them, and the counter-evidence is set out at equal detail. The reader is left to weigh.

@@ -100,16 +100,6 @@ function maskNonProse(body) {
   // them don't trigger gap reports.
   let out = body.replace(/```[\s\S]*?```/g, (m) => ' '.repeat(m.length));
   out = out.replace(/`[^`\n]*`/g, (m) => ' '.repeat(m.length));
-  // Blank out the text inside markdown links that point to archive entries
-  // or participants (`/BitcoinArchive/...`). When a keyword appears inside
-  // an existing link, the reader is already given a way to navigate from
-  // that position — the mention is not orphaned, even if the link target
-  // happens to be a different archive entry than the audit source. The
-  // URL portion `(...)` is preserved so `bodyLinksTo` still works.
-  out = out.replace(
-    /\[([^\]]+)\](\(\/BitcoinArchive\/[^)]+\))/g,
-    (_m, text, urlPart) => '[' + ' '.repeat(text.length) + ']' + urlPart,
-  );
   return out;
 }
 

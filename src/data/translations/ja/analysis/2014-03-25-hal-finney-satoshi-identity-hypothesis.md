@@ -53,7 +53,6 @@ inlineLinkKeywords:
   - "ハル・フィニー仮説"
   - "フィニー = サトシ"
   - "レース日のアリバイ"
-  - "Nakamoto's Neighbor"
 translationStatus: complete
 ---
 
