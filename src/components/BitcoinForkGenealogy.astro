@@ -10,7 +10,7 @@ const { lang } = Astro.props;
 const labels = {
   en: {
     title: "Bitcoin protocol forks and adjacent cryptocurrencies",
-    subtitle: "Each chain's launch, fork lineage, and operational range on a true time axis. Active chains extend to the right edge; halted chains end at the date their network share collapsed. Vertical connectors at each fork point trace the parent chain. Click a chain or milestone to open the corresponding archive entry.",
+    subtitle: "Each chain's launch, fork lineage, and operational range on a true time axis. Active chains extend to the right edge; halted chains end at the date their network share collapsed. Vertical connectors at each fork point trace the parent chain. Chain rows and milestones link to the corresponding archive entry where one exists; chains without a dedicated entry (Bitcoin Classic, Bitcoin Unlimited, Bitcoin Gold) are display-only.",
     todayLabel: "today",
     statusActive: "active",
     statusHalted: "halted",
@@ -42,7 +42,7 @@ const labels = {
   },
   ja: {
     title: "ビットコインのプロトコル分岐と隣接する暗号通貨",
-    subtitle: "各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名やマイルストーンをクリックすると、対応するアーカイブエントリーが開く。",
+    subtitle: "各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名とマイルストーンは、対応するアーカイブエントリーが存在する場合にリンクされる (Bitcoin Classic・Bitcoin Unlimited・Bitcoin Gold は専用エントリーがないため表示のみ)。",
     todayLabel: "現在",
     statusActive: "稼働中",
     statusHalted: "停止",
