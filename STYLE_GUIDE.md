@@ -1061,11 +1061,14 @@ container fluid behavior and intentionally uses a different breakpoint.
 
 ### What this policy does not cover
 
-- Hybrid pages (analysis with embedded D3 visualizations) currently
-  live on `.container` (800px). If a viz needs more than ~750px to
-  render legibly, introduce a `--max-width-hybrid` token (~1100px)
-  and a `.container-hybrid` utility rather than widening the reading
-  tier.
+- Hybrid pages (analysis with embedded D3 visualizations) live on
+  `.container` (800px). When a chart is wider than that, the page
+  tier does **not** change — the chart wrapper extends at the element
+  level, the same pattern as `.mermaid-scroll` and `.table-scroll`.
+  See § d3 components → Layout width consideration for the canonical
+  CSS recipe. Switching the entire page to a wider tier widens the
+  prose column too, which defeats the line-length argument for
+  keeping analysis pages at 800px.
 - Ultrawide monitors (>1440px viewport) are not fluid-scaled; the
   1200px ceiling holds. Card grids and prose stay readable; left/right
   whitespace is acceptable.
@@ -1287,11 +1290,51 @@ data and what to look for.
 
 #### Layout width consideration
 
-By default analysis pages use `.container` (800px). If a chart needs
-more horizontal room than ~750px to render legibly, follow the
-[Layout Width Policy](#layout-width-policy) escape hatch
-(`--max-width-hybrid` token, `.container-hybrid` utility) rather than
-widening the reading tier for prose pages.
+Analysis pages use `.container` (800px) so prose stays at a readable
+line length. When a chart is wider than that, **break out at the
+element level** rather than widening the page tier — the same pattern
+already used for Mermaid (`.mermaid-scroll`) and tables
+(`.table-scroll`).
+
+For d3 components, use the **capped variant** of the breakout (matching
+`.table-scroll`, not `.mermaid-scroll`):
+
+```css
+@media (min-width: 1200px) {
+  .my-viz .chart-scroll {
+    --chart-breakout: min(
+      calc((100vw - var(--max-width-read) - 3rem) / 2),
+      calc((var(--max-width-wide) - var(--max-width-read)) / 2)
+    );
+    margin-left: calc(-1 * var(--chart-breakout));
+    margin-right: calc(-1 * var(--chart-breakout));
+  }
+}
+```
+
+The 1200px cap is essential for d3 because a typical d3 component
+sizes its SVG to the wrapper's clientWidth (so an ultrawide viewport
+would stretch the chart linearly, producing huge empty horizontal
+bands and uselessly long bars). The cap keeps the chart at a
+comfortable maximum width regardless of monitor size while still
+giving it more room than the 800px reading tier on normal desktop
+viewports. Below 1200px the `.container` is fluid, the wrapper sits
+inside it naturally, and `overflow-x: auto` on the wrapper lets the
+SVG scroll horizontally if its minimum natural width exceeds the
+available space.
+
+| Wrapper class    | Cap     | Reason |
+|---|---|---|
+| `.mermaid-scroll` | none   | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); a wider wrapper just adds whitespace, so capping is unnecessary. |
+| `.table-scroll`  | 1200px | `inline-table` expands long-text cells when given more width; the cap prevents one-line overflow on ultrawide viewports. |
+| `.chart-scroll` (d3) | 1200px | The chart sizes its SVG to the wrapper width and would stretch indefinitely on ultrawide viewports without the cap. |
+
+This rule replaces an earlier draft that proposed switching the page
+to a `.container-hybrid` (~1100px) tier. That approach widens the
+prose column too, defeating the line-length argument for keeping
+analysis pages at 800px in the first place. Element-level breakout
+keeps prose at the reading tier and lets the chart use the available
+space — the same trade-off Mermaid and tables already adopt.
 
 ### Tables: the lowest-cost visual structure
 

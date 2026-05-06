@@ -407,4 +407,25 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
   .fork-genealogy .chart-container :global(svg) {
     display: block;
   }
+  /* Capped viewport-breakout, matching .table-scroll (not the uncapped
+     .mermaid-scroll variant). The chart's SVG sizes itself to the
+     wrapper's clientWidth (chartWidth = max(containerWidth, 1080)), so
+     an uncapped wrapper on an ultrawide viewport would stretch the
+     chart linearly with the viewport — months of empty horizontal
+     space and uselessly long bars. The 1200px cap (via min() with the
+     viewport-edge breakout) keeps the chart at a comfortable maximum
+     width regardless of how wide the monitor is, while still giving
+     it more room than the 800px reading tier on normal-sized desktop
+     viewports. Below 1200px the container is fluid; the breakout
+     would push past the viewport edge, so the rule does not apply. */
+  @media (min-width: 1200px) {
+    .fork-genealogy .chart-scroll {
+      --chart-breakout: min(
+        calc((100vw - var(--max-width-read) - 3rem) / 2),
+        calc((var(--max-width-wide) - var(--max-width-read)) / 2)
+      );
+      margin-left: calc(-1 * var(--chart-breakout));
+      margin-right: calc(-1 * var(--chart-breakout));
+    }
+  }
 </style>
