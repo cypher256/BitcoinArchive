@@ -1,190 +1,131 @@
-# Japanese Style Guide
+# 日本語版スタイルガイド
 
-Internal editorial rules for the Japanese edition of Bitcoin Institute.
+Bitcoin Institute 日本語版の編集規則。
 
-> **Document language convention.** Rule prose in this file is written in
-> **English** — section headings, paragraph descriptions, parenthetical
-> notes, table column headers, flowchart labels, and any meta-explanation
-> of a rule. **Japanese text appears only as data**: example violations,
-> correct katakana / kanji forms, canonical mappings, and quoted source
-> material. When extending this file, never write a rule statement in
-> Japanese; only the words being illustrated as Japanese-style data may
-> appear in Japanese. This convention exists because the file is publicly
-> published and read by international contributors.
+> **Note for international readers.** This file is the JA-edition style
+> guide for Japanese contributors and is therefore written in Japanese.
+> Cross-language editorial conventions (independent of locale) live in
+> `STYLE_GUIDE.md`, which is in English.
 
-## Purpose
+## 目的
 
-This file defines how Japanese-language pages should handle names, titles,
-quoted material, voice, and terminology so the site can be normalized over
-time without changing slugs, URLs, or source metadata.
+このファイルは、日本語ページにおける人名・タイトル・引用文・語調・用語の扱いを定義する。スラッグ・URL・ソースメタデータを変更することなく、サイト全体を時間をかけて正規化していくための規則集。
 
-Cross-language editorial rules (blockquote vs quotation mark semantics,
-related entries, participant slug convention, etc.) live in
-`STYLE_GUIDE.md`. Refer to that file first; this file only documents
-Japanese-specific rules.
+言語非依存の編集規則 (引用ブロック対カギカッコの意味、関連エントリー、参加者スラッグ規約など) は `STYLE_GUIDE.md` に置かれている。まずそちらを参照すること。本ファイルは日本語固有の規則のみを扱う。
 
-## Core Rule
+## 中核規則
 
-- In Japanese UI and editorial text, person names are written in katakana.
-- Canonical metadata — slugs, URLs, source records, frontmatter structural
-  fields — remain in their original language.
-- Japanese display forms are a presentation layer on top of the canonical
-  metadata, not a replacement for it.
+- 日本語の UI および編集テキストでは、人名はカタカナで記載する。
+- 正規メタデータ — スラッグ・URL・ソース記録・冒頭メタデータの構造的フィールド — は元の言語のまま保持する。
+- 日本語の表示形は正規メタデータの上に乗る表示層であり、その置換ではない。
 
-The canonical person-name mappings live in `src/i18n/participants.ts`. Do
-not duplicate them here.
+正規の人名対応表は `src/i18n/participants.ts` に置かれている。本ファイルでは複製しない。
 
 ---
 
-# I. Style Rules
+# I. 文体規則
 
-Rules about how Japanese text looks and reads.
+日本語テキストの見え方・読み心地に関する規則。
 
-## 1. Person Names — Katakana
+## 1. 人名 — カタカナ表記
 
-Use katakana for person names in Japanese-facing editorial elements:
+日本語向けの編集要素で人名を扱うときはカタカナを用いる。
 
-- **UI labels that display person names**: participant lists, participant
-  page headings, author / participant lines on cards and entry pages,
-  person-tag labels.
-- **Edited Japanese copy**: titles, descriptions, editor notes, biography
-  prose, explanatory text written by the archive editor.
-- **Inside translated quoted material**: blockquoted emails, forum posts,
-  and letters that have been translated into Japanese. A quote block whose
-  body is now Japanese prose should not leave English names sitting in
-  it; the whole block is editorial Japanese text after translation.
+- **人名を表示する UI ラベル**: 参加者一覧、参加者ページの見出し、カードやエントリーページの著者・参加者欄、人物タグのラベル。
+- **編集された日本語本文**: タイトル、description、編者注、伝記散文、編者が書いた解説文。
+- **翻訳された引用文の中**: 日本語に訳された引用ブロック内のメール・フォーラム投稿・書簡。本文が日本語散文になった引用ブロックの中に英語名を残してはならない。翻訳後の引用ブロック全体は編集された日本語テキストとして扱う。
 
-Enforced by `npm run check:ja-names`.
+`npm run check:ja-names` により検査される。
 
-In titles specifically, person names follow the same katakana rule (e.g.
-`サトシ・ナカモト`, `マイク・ハーン`, `ハル・フィニー`). Canonical mappings
-live in `src/i18n/participants.ts`.
+タイトル中の人名も同じカタカナ規則に従う (例: `サトシ・ナカモト`、`マイク・ハーン`、`ハル・フィニー`)。正規対応表は `src/i18n/participants.ts`。
 
-## 2. What Stays In English
+## 2. 英語のまま残す対象
 
-The following stay in their original English form even inside Japanese-facing
-pages. These are organized as four categories; if a word fits one of these,
-it remains English. Otherwise, it must be katakana-ized or translated (see
-§ 8).
+以下は日本語向けページの中でも元の英語形のまま残す。4 種類に整理されている。語句がいずれかに該当すればそのまま、該当しなければカタカナ化または日本語訳が必要になる (§ 8 参照)。
 
-1. **Code identifiers** — identifiers quoted directly from source code.
-   Examples: `LoadBlockIndex`, `hashGenesisBlock`, `nNonce`, `assert()`,
-   `ProcessBlock`.
-2. **Proper nouns, brand, protocol, and product names** — names where
-   English is canonical.
-   Examples: `Bitcoin`, `Bitcoin Core`, `SegWit`, `Taproot`,
-   `Lightning Network`, `COPA`, `The Times`, `SourceForge`, `BIP 125`.
-   Also handles, pseudonyms, and brand-like identifiers (e.g. `Cobra`,
-   `theymos`, `Twitter`).
-3. **Standard technical abbreviations** — abbreviations that circulate in
-   the JA Bitcoin community in English form, where the expanded form is
-   not used in Japanese.
-   Examples: `PoW`, `UTXO`, `SHA-256`, `ECDSA`, `DDoS`, `JSON-RPC`, `URL`,
-   `TCP/IP`.
-4. **Citation and source-attribution surface forms** — the `name` field
-   of `secondarySources`, words inside direct quotations, URLs, tag slugs,
-   and frontmatter metadata. Also structural attribution lines such as
-   `[Quote from: NAME on DATE]` and `NAME wrote:` (see § 4 Quotes).
+1. **コード識別子** — ソースコードからそのまま引用される識別子。
+   例: `LoadBlockIndex`、`hashGenesisBlock`、`nNonce`、`assert()`、`ProcessBlock`。
+2. **固有名詞、ブランド名、プロトコル名、製品名** — 英語が正規である名前。
+   例: `Bitcoin`、`Bitcoin Core`、`SegWit`、`Taproot`、`Lightning Network`、`COPA`、`The Times`、`SourceForge`、`BIP 125`。
+   ハンドル名・仮名・ブランド類似の識別子も同じ扱い (例: `Cobra`、`theymos`、`Twitter`)。
+3. **標準的な技術略語** — 日本のビットコインコミュニティで英語形のまま流通しており、展開形が日本語で使われない略語。
+   例: `PoW`、`UTXO`、`SHA-256`、`ECDSA`、`DDoS`、`JSON-RPC`、`URL`、`TCP/IP`。
+4. **引用と出典表示の表面形** — `secondarySources` の `name` フィールド、引用文中の語、URL、タグスラッグ、冒頭メタデータ。`[Quote from: NAME on DATE]` や `NAME wrote:` のような構造的な引用先表示行も含む (§ 4 参照)。
 
-Slugs, URLs, file paths, and structured metadata fields always stay
-English regardless of the four-category rule above; they are canonical
-identifiers, not prose.
+スラッグ・URL・ファイルパス・構造化メタデータフィールドは上記の 4 区分とは無関係に常に英語のまま保持する。これらは正規識別子であり散文ではない。
 
-## 3. Translation Completeness
+## 3. 翻訳の完全性
 
-All prose text on Japanese pages must be in Japanese, including quoted
-material. The site provides language switching — users who want the
-English original can switch to the English version. Do not leave English
-passages untranslated in Japanese entries.
+日本語ページの散文はすべて日本語でなければならない。引用文も含む。サイトには言語切替があり、英語原文を読みたい利用者は英語版に切り替えることができる。日本語エントリーの中に英語の段落を翻訳せず残してはならない。
 
-- Quoted emails, forum posts, and letters → translate body into Japanese.
-- Blockquoted excerpts in aftermath / narrative entries → translate into
-  Japanese.
-- Preserve English only for:
-  - URLs, code, commands, email headers, file paths, and similar technical
-    strings where the original form is functionally necessary.
-  - Structural attribution lines (`[Quote from: ...]`, `NAME wrote:`) —
-    these are structural markers, not prose (see § 4).
+- 引用されたメール・フォーラム投稿・書簡 → 本文を日本語に訳す。
+- aftermath / 物語型エントリーの引用ブロック抜粋 → 日本語に訳す。
+- 英語のまま残してよいのは以下に限る:
+  - URL、コード、コマンド、メールヘッダー、ファイルパス、その他元の形が機能上必要な技術的文字列。
+  - 構造的な引用先表示行 (`[Quote from: ...]`、`NAME wrote:`) — これは構造マーカーであり散文ではない (§ 4 参照)。
 
-## 4. Quotes And Blockquotes
+## 4. 引用と引用ブロック
 
-Follow the shared quote / block formatting rules in `STYLE_GUIDE.md`. In
-Japanese prose specifically:
+`STYLE_GUIDE.md` の引用・ブロック整形に関する共通規則に従う。日本語散文では追加で以下を守る。
 
-- `> ` (blockquote) marks quoted or source-derived block content.
-- `「…」` marks a direct quotation in Japanese prose.
-- These do not mean the same thing and are often used together.
+- `> ` (引用ブロック) は引用されたブロック、または出典由来のブロック内容を示す。
+- `「…」` は日本語散文中の直接引用を示す。
+- 両者は同じ意味ではなく、しばしば併用される。
 
-### Usage
+### 用法
 
-- Inline quotations use `「…」`.
-- Nested quotations use `『…』`.
-- In narrative entries such as aftermath pages, short excerpted statements
-  normally use `> 「…」`.
-- In primary-source translations presented as the body of an email, letter,
-  forum post, or log excerpt, blockquotes normally do not need `「」` unless
-  the source or context specifically calls for them.
-- Do not add `「」` to URLs, email headers, commands, log lines, handles,
-  or UI strings unless they are being quoted as language.
+- インライン引用には `「…」` を用いる。
+- 入れ子の引用には `『…』` を用いる。
+- aftermath ページなどの物語型エントリーで短い抜粋発言を引用する場合、通常は `> 「…」` を用いる。
+- メール・書簡・フォーラム投稿・ログ抜粋の本文として提示される一次資料の翻訳では、引用ブロックには通常 `「」` を付けない (出典または文脈が特に求める場合を除く)。
+- URL、メールヘッダー、コマンド、ログ行、ハンドル名、UI 文字列には、それらが言語として引用されているのでない限り `「」` を付けない。
 
-For title-level quote handling, see § II.1 (Title Policy).
+タイトル内の引用処理については § II.1 (タイトル方針) を参照。
 
-### Quote attribution — structural UI elements stay in English
+### 引用先表示 — 構造的 UI 要素は英語のまま
 
-BitcoinTalk and mailing-list attribution lines are structural, not prose.
-Keep them in their original English form even inside Japanese pages:
+BitcoinTalk とメーリングリストの引用先表示行は構造であり散文ではない。日本語ページの中でも元の英語形のまま保持する。
 
-| Source | Attribution format | Rule |
+| 出典 | 引用先表示の形式 | 規則 |
 |--------|-------------------|------|
-| BitcoinTalk | `[Quote from: NAME on DATE](URL)` | Keep English |
-| Mailing lists | `NAME wrote:` | Keep English |
-| Correspondence | `> ` inline quotes | Translate as body text |
+| BitcoinTalk | `[Quote from: NAME on DATE](URL)` | 英語のまま |
+| メーリングリスト | `NAME wrote:` | 英語のまま |
+| 書簡 | インラインの `> ` 引用 | 本文として翻訳する |
 
-Example:
+例:
 
 ```markdown
 > [Quote from: RHorning on December 04, 2010, 10:17:44 PM](https://...)
 > 引用テキストは日本語に翻訳する。
 ```
 
-The quoted **body text** that follows an attribution is translated to
-Japanese as normal.
+引用先表示行に続く**引用本文**は通常通り日本語に訳す。
 
-### Prose attribution vs structured attribution
+### 散文中の引用先表示 vs 構造的な引用先表示
 
-Sentences like "Satoshi wrote:" used as a narrative lead-in (in aftermath
-or biography prose) are **not** quote attributions — they are normal
-English prose. In JA translations, render as natural Japanese prose like
-`「サトシは次のように書いた：」`.
+aftermath や伝記散文の中で導入文として使われる "Satoshi wrote:" のような文は、引用先表示**ではなく**通常の英語散文。日本語訳では `「サトシは次のように書いた：」` のような自然な日本語散文として描写する。
 
-### Structured quote metadata (frontmatter)
+### 構造化された引用メタデータ (冒頭メタデータ)
 
-New entries use frontmatter `quotes[]` + body markers for quote
-attributions. Legacy flat patterns must not be re-introduced:
+新規エントリーは冒頭メタデータの `quotes[]` と本文マーカーで引用先表示を持つ。旧形式のフラットなパターンを再導入してはならない。
 
-| Legacy pattern | Typical source |
+| 旧パターン | 典型的な出典 |
 |----------------|----------------|
 | `[Quote from: NAME on DATE](URL)` | BitcoinTalk |
-| `NAME wrote:` | Mailing lists, correspondence |
-| `NAME writes:` | Mailing lists (present tense) |
+| `NAME wrote:` | メーリングリスト、書簡 |
+| `NAME writes:` | メーリングリスト (現在形) |
 | `Quoting NAME:` | Hushmail |
-| `Quoting NAME <email>:` | Hushmail (with address) |
-| `On DATE, NAME wrote:` | Gmail-style replies |
-| `Lainaus NAME:` | Hushmail (Finnish "Quoting") |
-| `NAMEの投稿：` | Legacy JA translation |
-| `NAMEの書き込み：` | Legacy JA translation |
-| `NAMEの引用：` | Legacy JA translation |
-| `NAMEは次のように書いた：` | Legacy JA translation |
+| `Quoting NAME <email>:` | Hushmail (アドレス付き) |
+| `On DATE, NAME wrote:` | Gmail 形式の返信 |
+| `Lainaus NAME:` | Hushmail (フィンランド語の "Quoting") |
+| `NAMEの投稿：` | 旧 JA 翻訳 |
+| `NAMEの書き込み：` | 旧 JA 翻訳 |
+| `NAMEの引用：` | 旧 JA 翻訳 |
+| `NAMEは次のように書いた：` | 旧 JA 翻訳 |
 
-All of these must be converted to `<!-- quote: qN -->` markers, with the
-structured metadata recorded in frontmatter `quotes[]`.
-`check-quotes.mjs` detects legacy forms (`[Quote from:]` is currently
-enforced as an error; the rest must be reviewed manually).
+これらはすべて `<!-- quote: qN -->` マーカーに変換し、構造化メタデータを冒頭メタデータの `quotes[]` に記録する。`check-quotes.mjs` は旧形式を検出する (`[Quote from:]` は現在エラーとして強制される。それ以外は手動で確認する必要がある)。
 
-**`personSlug` is required**: when setting `quotes[].person`, always set
-`personSlug` if a matching entry exists in `participants.ts`. Without it,
-JA pages will display the raw English `person` string instead of the
-katakana mapping. Use `scripts/fill-person-slug.mjs` to backfill in bulk.
+**`personSlug` は必須**: `quotes[].person` を設定する際は、`participants.ts` に対応するエントリーが存在すれば必ず `personSlug` も設定する。これがないと、日本語ページではカタカナ表示への対応がなされず、英語の `person` 文字列が生のまま表示される。一括補完には `scripts/fill-person-slug.mjs` を用いる。
 
 ```yaml
 # frontmatter
@@ -207,17 +148,13 @@ quotes:
 本文テキスト...
 ```
 
-`npm run check:quotes` validates this structure.
+`npm run check:quotes` がこの構造を検証する。
 
-## 5. BitcoinTalk Emoji Labels
+## 5. BitcoinTalk 絵文字ラベル
 
-BitcoinTalk forum's text-based emoticon labels (`Smiley`, `Cheesy`, `Wink`,
-etc.) must be converted to Unicode emoji. The original posters intended to
-display emoji, not the English label words — the labels are only the alt
-text from `<img alt="Smiley" />` tags that survived HTML-to-Markdown
-scraping.
+BitcoinTalk フォーラムのテキスト形式の絵文字ラベル (`Smiley`、`Cheesy`、`Wink` 等) は Unicode 絵文字に変換する。元の投稿者は絵文字を表示することを意図していたのであり、英語のラベル単語を表示しようとしたのではない。これらのラベルは HTML から Markdown へのスクレイピングの過程で残った `<img alt="Smiley" />` タグの代替テキストにすぎない。
 
-| Label | Emoji |
+| ラベル | 絵文字 |
 |-------|-------|
 | Smiley | 😊 |
 | Cheesy | 😁 |
@@ -234,191 +171,147 @@ scraping.
 | Lips are sealed | 🤐 |
 | Cry | 😢 |
 
-Convert in both EN and JA files.
+EN 版・JA 版の両方で変換する。
 
-### Detection criteria
+### 検出基準
 
-The conversion target is "BitcoinTalk emoticon alt text" — not "any
-English word at end of line". Labels like `Cool` and `Cry` overlap with
-normal English vocabulary, so context matters:
+変換対象は「BitcoinTalk の絵文字代替テキスト」 であり、「行末に置かれた英単語」 ではない。`Cool` や `Cry` のようなラベルは通常の英単語と重なるため、文脈による判定が必要。
 
-- An isolated word surrounded by spaces / punctuation that does not make
-  sense as English in context → convert.
-- A word used naturally in English prose → leave alone (e.g. `That's
-  cool`).
-- Automated detection has high false-positive rate; manual review at
-  scrape time is required.
+- 前後がスペースや句読点で区切られた孤立した単語で、文脈上英語として意味が通らない → 変換する。
+- 英語散文の中で自然に使われている語 → 触らない (例: `That's cool`)。
+- 自動検出の誤検知率は高いため、スクレイピング時の手動確認が必要。
 
-## 6. Voice
+## 6. 語調・話者性
 
-Preserve each speaker's register. Do not flatten distinct voices into the
-same neutral Japanese tone.
+各話者の語調を保つ。異なる声を均一な中立的日本語に押し均してはならない。
 
-### Principles
+### 原則
 
-- Preserve meaning first. Also preserve tone where the source clearly
-  supports it: concise, polite, blunt, warm, skeptical, casual, formal,
-  or technical.
-- Prefer natural Japanese over rigid word-for-word calques, but do not
-  add drama, personality, or emotion that is not present in the source.
-- In editor-written narrative entries such as aftermath pages, short
-  translated quotations may be lightly smoothed for readability, but they
-  should still sound like the same person.
-- In primary-source entries, avoid "novelizing" the speaker. Keep the
-  wording close to the source and let the original voice carry the
-  personality.
+- 意味の正確さを最優先する。出典が明確に支持する範囲で、語調も保つ: 簡潔・丁寧・無愛想・温かい・懐疑的・くだけた・形式的・技術的、いずれの語調も対象。
+- 直訳的な逐語対応より自然な日本語を優先するが、出典に存在しない劇的演出・人格・感情を加えてはならない。
+- aftermath ページのような編者執筆の物語型エントリーでは、短い翻訳引用は読みやすさのために軽くなめらかに整えてもよい。ただし依然として同じ人物が話しているように聞こえなければならない。
+- 一次資料エントリーでは話者を「小説化」 しない。出典に近い語遣いを保ち、原文の声に人格を運ばせる。
 
-### Frequent-participant voice notes
+### 頻出参加者の語調メモ
 
-- `Satoshi Nakamoto`: concise, dry, understated, technical. Avoid
-  theatrical phrasing.
-- `Hal Finney`: warm, curious, encouraging, humane even when technical.
-- `Adam Back`: terse, professional, low-friction.
-- `Wei Dai`: analytical, matter-of-fact, epistemic hedging.
-- `Martti Malmi`: polite, earnest, respectful, especially in early
-  exchanges.
-- `Gavin Andresen`: calm, practical, low-drama, solutions-oriented.
-- `Laszlo Hanyecz`: casual, relaxed, conversational.
-- `Ray Dillinger`: blunt, sharp, skeptical, but technically serious.
-- `James A. Donald`: combative, probing, insistent.
-- `Mike Hearn`: direct, reasoned, energetic, sometimes forceful.
-- `Nick Szabo`: intellectual, essayistic, slightly formal.
+- `Satoshi Nakamoto`: 簡潔、ドライ、抑制的、技術的。芝居がかった言い回しを避ける。
+- `Hal Finney`: 温かい、好奇心旺盛、励ます、技術的場面でも人間味を保つ。
+- `Adam Back`: 短く、業務的、摩擦を生まない。
+- `Wei Dai`: 分析的、淡々、認識論的に慎重 (epistemic hedging)。
+- `Martti Malmi`: 礼儀正しく、誠実、敬意を持つ。特に初期のやり取りで顕著。
+- `Gavin Andresen`: 穏やか、実務的、劇的でなく、解決志向。
+- `Laszlo Hanyecz`: くだけた、リラックスした、会話的。
+- `Ray Dillinger`: 無愛想、鋭い、懐疑的、しかし技術的には真摯。
+- `James A. Donald`: 闘争的、執拗、追及的。
+- `Mike Hearn`: 直接的、論理的、エネルギッシュ、時に強い。
+- `Nick Szabo`: 知的、エッセイ調、やや形式的。
 
-### Do / don't
+### 守ること / 避けること
 
-- Do keep differences in politeness, bluntness, and warmth when visible
-  in the source.
-- Do keep technical speakers technically precise.
-- Do keep casual speakers casual when the source is casual.
-- Do not make archive prose read like fiction.
-- Do not add slang, swagger, or emotional intensity unless the source
-  clearly justifies it.
-- Do not over-normalize distinct voices into uniform textbook Japanese.
+- 出典に見える丁寧さ・無愛想さ・温かさの差を保つ。
+- 技術的な話者は技術的に厳密に保つ。
+- くだけた話者は出典がくだけているならくだけたまま保つ。
+- アーカイブ散文を小説のように読ませない。
+- 出典が明確に正当化していないスラング・誇張・感情の強さを加えない。
+- 異なる声を教科書的な均質な日本語に過度に正規化しない。
 
-## 7. Japanese Tone (だ/である vs ですます)
+## 7. 日本語の文末口調 (だ/である vs ですます)
 
-The canonical tone rule for each character — whether to use だ/である調 or
-ですます調 — is defined in `scripts/check-ja-tone.mjs` (`CHARACTER_RULES`).
-Run `npm run check:ja-tone` to validate Japanese translations against
-these rules.
+各キャラクターについての正規の口調規則 — だ/である調を使うか、ですます調を使うか — は `scripts/check-ja-tone.mjs` の `CHARACTER_RULES` に定義されている。`npm run check:ja-tone` で日本語訳をこの規則と照らし合わせて検査する。
 
-### Summary
+### 一覧
 
-| Person | Tone | Notes |
+| 人物 | 口調 | 補足 |
 |--------|------|-------|
-| Satoshi Nakamoto | だ/である | 穏やか・抑制的 |
+| Satoshi Nakamoto | だ/である | 冷静・淡々・技術的 |
 | Hal Finney | だ/である | 温かい楽観主義者 |
 | Ray Dillinger | だ/である | 皮肉屋でぶっきらぼう |
 | James Donald | だ/である | 攻撃的な懐疑論者 |
 | Gavin Andresen | だ/である | 穏やかな実務家 |
-| Martti Malmi | **ですます** | 丁寧で控えめ（意図的な色付け） |
+| Martti Malmi | **ですます** | 丁寧で控えめ (意図的な色付け) |
 | Adam Back | だ/である | 極めて簡潔 |
 | Wei Dai | **ですます** | 丁寧・事務的・分析的 |
+| Liberty Standard | **ですます** | 丁寧で実務的 |
 | Nick Szabo | だ/である | 学者口調 |
 | Mike Hearn | だ/である | 情熱的で論理的 |
 | Laszlo Hanyecz | だ/である | カジュアル |
 | Dustin Trammell | だ/である | カジュアル・技術者同士 |
+| Peter Todd | だ/である | くだけた皮肉屋 (※2010 年の 2 投稿は `tone-skip` で除外) |
 | Cøbra | だ/である | 反骨精神 |
 | Craig Wright | だ/である | 尊大 |
 
-When adding a new participant or changing a tone rule, update
-`scripts/check-ja-tone.mjs` first — it is the single source of truth for
-automated checks.
+本表は要約。口調規則と例示語遣いの正規定義は `scripts/check-ja-tone.mjs` の `CHARACTER_RULES`。新しい参加者を追加する場合や口調規則を変える場合は、まず `CHARACTER_RULES` を更新する — それが自動検査の唯一の真実源。
 
-### Tone annotations
+### 口調注釈
 
-The tone checker supports HTML-comment annotations in markdown body text
-to handle cases where the default author-based tone rule doesn't apply:
+口調検査は、既定の著者ベースの口調規則が当てはまらない場合に対応するため、Markdown 本文中の HTML コメント注釈をサポートする。
 
-| Annotation | Effect |
+| 注釈 | 効果 |
 |------------|--------|
-| `<!-- tone-skip -->` | Start skipping tone checks (for quoted text, code, editorial narrative) |
-| `<!-- /tone-skip -->` | Resume tone checking |
-| `<!-- speaker: Hal Finney -->` | Override speaker for subsequent lines (use when quoting another person inline) |
-| `<!-- speaker: reset -->` | Reset speaker to the frontmatter author |
+| `<!-- tone-skip -->` | 口調検査の停止を開始 (引用文・コード・編集者の物語等) |
+| `<!-- /tone-skip -->` | 口調検査を再開 |
+| `<!-- speaker: Hal Finney -->` | 後続の行について話者を上書き (引用ブロックを使わずに別人物の発言を引用する場合に用いる) |
+| `<!-- speaker: reset -->` | 話者を冒頭メタデータの著者に戻す |
 
-Use `tone-skip` for content not authored by the entry's author: forwarded
-emails, third-party quotes not in blockquotes, documentation excerpts, or
-UI text examples. Every `tone-skip` should have a clear reason — do not
-use it to silence genuine violations.
+エントリーの著者以外による内容には `tone-skip` を用いる: 転送されたメール、引用ブロックに入っていない第三者の引用、文書の抜粋、UI テキストの例など。すべての `tone-skip` には明確な理由が必要。本物の違反を黙らせるために用いてはならない。
 
-Use `speaker:` when one entry contains inline text by a different person
-(e.g., Satoshi quoting Hal's words without blockquote formatting).
+`speaker:` は、一つのエントリーに別人物によるインラインのテキストが含まれる場合に用いる (例: サトシが引用ブロックを用いずにハルの言葉を引用する場合)。
 
-## 8. Technical Term Localization
+## 8. 技術用語の日本語化
 
-**Principle:** Japanese body prose must read as Japanese. English
-remaining in the prose is acceptable only when it falls into one of the
-four categories listed in § 2 above. Otherwise it must be katakana-ized
-or translated. Because individual-word enumeration is unbounded, this
-section operates by category criteria, not by an exhaustive list.
+**原則**: 日本語の本文散文は日本語として読めなければならない。本文散文に英語が残ってよいのは、§ 2 の 4 区分のいずれかに当てはまるときのみ。それ以外はカタカナ化または日本語訳が必要。個別語の列挙には限りがないため、本節は網羅的な単語表ではなく、区分基準で動く。
 
-### What must be katakana-ized or translated
+### カタカナ化または日本語訳が必須となるもの
 
-In body prose (including table descriptions), the following must not stay
-in English unless they fit § 2 categories:
+本文散文 (表の説明文を含む) では、以下は § 2 の区分に当てはまらない限り英語のまま残してはならない。
 
-- **General technical terms → katakana**: `ナンス`, `マイニング`,
-  `マイナー`, `ブロック`, `ノード`, `フォーク`, `ハッシュ`,
-  `ブートストラップ`, `トランザクション`, `ウォレット`, `タイムスタンプ`.
-- **Foreign person names → katakana**: `ピート・リゾ`, `セルジオ・ラーナー`,
-  `オッカム`, `サトシ・ナカモト` (separator: middle dot `・`; family /
-  given order follows Japanese convention).
-- **Abstract concepts → translation**: `categorical error` →
-  `カテゴリー エラー` / `カテゴリーの誤り`; `well-defined` → `構造的に
-  定まる` / `well-defined な` (with first-occurrence annotation if kept
-  as a technical term); `epistemic` / `ontological` → `認識論的` /
-  `存在論的` (or first-occurrence parenthetical such as `認識論的
-  (epistemic) 層`); `bootstrap 初期化` → `ブートストラップ初期化`.
+- **一般的な技術用語 → カタカナ**: `ナンス`、`マイニング`、`マイナー`、`ブロック`、`ノード`、`フォーク`、`ハッシュ`、`ブートストラップ`、`トランザクション`、`ウォレット`、`タイムスタンプ`。
+- **外国人名 → カタカナ**: `ピート・リゾ`、`セルジオ・ラーナー`、`オッカム`、`サトシ・ナカモト` (区切りは中黒 `・`、姓名の順は日本語慣習に従う)。
+- **抽象概念 → 日本語訳**: `categorical error` → `カテゴリーエラー` / `カテゴリーの誤り`、`well-defined` → `構造的に定まる` / `well-defined な` (技術用語として保持する場合は初出時に注釈)、`epistemic` / `ontological` → `認識論的` / `存在論的` (または `認識論的 (epistemic) 層` のような初出時の括弧書き)、`bootstrap 初期化` → `ブートストラップ初期化`。
 
-### Forbidden: redundant gloss
+### 禁止: 冗長な併記
 
-Do not write the same word in English **and** Japanese in body prose
-multiple times in the same passage (e.g. `target-based（目標ベース）`
-repeated).
+本文散文の中で、同じ単語を英語と日本語の両方で繰り返し書いてはならない (例: `target-based (目標ベース)` を繰り返す)。
 
-- A single first-occurrence parenthetical such as `認識論的（epistemic）`
-  is acceptable.
-- After the first occurrence, use only one form.
-- Within a single paragraph, do not present the same term in both English
-  and Japanese.
+- `認識論的 (epistemic)` のような初出時の一回のみの括弧書きは許容される。
+- 初出以降は片方の形のみを用いる。
+- 同一段落の中で、同じ語を英語と日本語の両形で提示してはならない。
 
-### Decision flowchart
+### 判断フロー
 
 ```
-For each non-Japanese word in body prose:
-├── Code identifier (inside backticks)? → keep English
-├── Proper noun / brand / product name? → keep English
-├── Standard abbreviation (PoW / UTXO / SHA-256 level)? → keep English
-├── Citation source / metadata field? → keep English
-└── Otherwise → katakana-ize or translate
-    ├── General technical term → katakana
-    ├── Person name → katakana (middle-dot separated)
-    └── Abstract concept → use existing translation; if none, annotate
-        first occurrence as `和訳 (English)`
+本文散文中の各非日本語単語について:
+├── コード識別子 (バッククォート内)? → 英語のまま
+├── 固有名詞 / ブランド / 製品名? → 英語のまま
+├── 標準略語 (PoW / UTXO / SHA-256 級)? → 英語のまま
+├── 引用先 / メタデータフィールド? → 英語のまま
+└── それ以外 → カタカナ化または日本語訳
+    ├── 一般的な技術用語 → カタカナ
+    ├── 人名 → カタカナ (中黒区切り)
+    └── 抽象概念 → 既存訳を用いる。なければ初出時に
+        `和訳 (English)` の形で注釈する
 ```
 
-### Common violations in practice
+### 実例で頻出する違反
 
-The table below illustrates frequent translation lapses. New cases apply
-the flowchart above; do not extend this table on every new word.
+下表は頻発する翻訳の漏れを例示する。新規ケースには上記フローを適用する。新語ごとに本表を拡張しない。
 
-| Violation (English left in body) | Correct form |
+| 違反 (本文に英語が残った形) | 正しい形 |
 |---|---|
 | `nonce 探索` | `ナンス探索` |
 | `Pete Rizzo` | `ピート・リゾ` |
 | `Lerner` | `ラーナー` (`セルジオ・ラーナー`) |
 | `Occam の剃刀` | `オッカムの剃刀` |
-| `epistemic 層` / `ontological 層` | `認識論的層` / `存在論的層` (first occurrence may include English in parentheses) |
+| `epistemic 層` / `ontological 層` | `認識論的層` / `存在論的層` (初出時に括弧書きで英語を併記してよい) |
 | `bootstrap 初期化` | `ブートストラップ初期化` |
 | `distributor` | `配布元` |
-| `target-based（目標ベース）` | one form only (e.g. `ターゲットベース`) |
-| `well-defined` (body prose) | `構造的に定まる` / `well-defined な` + first-occurrence annotation |
-| `PoW headroom` | `PoW ヘッドルーム` (`PoW` stays per category 3) |
-| `California州Coalingaに生まれ` | `カリフォルニア州コアリンガに生まれ` (US state and city names use katakana) |
+| `target-based (目標ベース)` | 一形のみ (例: `ターゲットベース`) |
+| `well-defined` (本文散文) | `構造的に定まる` / `well-defined な` + 初出時の注釈 |
+| `PoW headroom` | `PoW ヘッドルーム` (`PoW` は区分 3 によりそのまま) |
+| `California州Coalingaに生まれ` | `カリフォルニア州コアリンガに生まれ` (米国の州名・都市名はカタカナ) |
 | `Arizona州Scottsdaleで死去` | `アリゾナ州スコッツデールで死去` |
-| `Vancouver` / `Berlin` / `Las Vegas` (in body prose) | `バンクーバー` / `ベルリン` / `ラスベガス` (foreign place names use katakana) |
-| `California Institute of Technology` | `カリフォルニア工科大学` (the short form `Caltech` may be kept as a recognized proper-name abbreviation) |
+| `Vancouver` / `Berlin` / `Las Vegas` (本文散文) | `バンクーバー` / `ベルリン` / `ラスベガス` (外国地名はカタカナ) |
+| `California Institute of Technology` | `カリフォルニア工科大学` (略称 `Caltech` は固有名詞略称として保持してよい) |
 | `Helsinki University of Technology` | `ヘルシンキ工科大学` |
 | `Aalto University` | `アールト大学` |
 | `Georgia Institute of Technology` | `ジョージア工科大学` |
@@ -426,200 +319,139 @@ the flowchart above; do not extend this table on every new word.
 | `Symantec` | `シマンテック` |
 | `Alcor Life Extension Foundation` | `アルコー延命財団` |
 | `Extropy Institute` | `エクストロピー研究所` |
-| `Block 70` / `Block 170` (body prose) | `ブロック 70` / `ブロック 170` |
+| `Block 70` / `Block 170` (本文散文) | `ブロック 70` / `ブロック 170` |
 
-The table is illustrative, not enumerative. New terms apply the
-flowchart, not table extension.
+本表は例示であり網羅ではない。新語には本表の拡張ではなく判断フローを適用する。
 
-Canonical mappings (long-term fixed translations such as `Schnorr`) live
-in § II.3 Terminology Glossary below.
+正規対応表 (`Schnorr` のような長期固定の訳語) は下記 § II.3 用語集に置かれている。
 
 ---
 
-# II. Content Rules
+# II. 内容規則
 
-Rules about what Japanese text says — titles, descriptions, cross-file
-consistency.
+日本語テキストが何を言うか — タイトル、description、ファイル横断の整合性 — に関する規則。
 
-## 1. Title Policy
+## 1. タイトル方針
 
-The cross-language title policy (target audience, evaluation criteria,
-per-category templates, cascade rules) lives in
-`STYLE_GUIDE.md § Title Policy`. This section adds Japanese-specific
-items only.
+言語非依存のタイトル方針 (対象読者、評価基準、カテゴリー別テンプレート、カスケード規則) は `STYLE_GUIDE.md § Title Policy` に置かれている。本節では日本語固有の事項のみを追加する。
 
-### Character count
+### 文字数
 
-- The practical SERP truncation point is **≤ 30 Japanese characters**.
-  Longer titles still index in full (Google indexes the entire title
-  field), so titles whose primary identifier appears in the first 30
-  characters remain SEO/AIO-effective even when the total length exceeds
-  30. Avoid superfluous commas and adjectives when adding context.
+- 検索結果の実用的な切り詰め点は **30 文字以下**。それより長いタイトルもインデックスは全文走る (Google はタイトルフィールド全体を索引する) ため、主要な識別子が先頭 30 文字以内に現れていれば、合計が 30 文字を超えていても SEO/AIO の効果は保たれる。文脈を加える際の不要な読点や形容修飾を避ける。
 
-### Person names
+### 人名
 
-Title-level person names follow § I.1 (`サトシ・ナカモト`,
-`マイク・ハーン`, `ハル・フィニー`). Source of truth:
-`src/i18n/participants.ts`.
+タイトル中の人名は § I.1 に従う (`サトシ・ナカモト`、`マイク・ハーン`、`ハル・フィニー`)。真実源は `src/i18n/participants.ts`。
 
-### Quote handling in titles
+### タイトル中の引用処理
 
-- Direct quotation → `「…」`.
-- Do not use a bare quote as the entire title; place an identifying
-  context before it.
+- 直接引用 → `「…」`。
+- 裸の引用句のみをタイトルに据えてはならない。識別可能な文脈をその前に置く。
 
 ```
 ✗ 「他のことに取り組むことにした」
 ✓ サトシからマイク・ハーンへの最後のメール：「他のことに取り組むことにした」
 ```
 
-### Per-category cascade rules
+### カテゴリー別カスケード規則
 
-Japanese follows the per-category cascade rules defined in
-`STYLE_GUIDE.md § Title Policy`. Summary:
+日本語版は `STYLE_GUIDE.md § Title Policy` で定義されたカテゴリー別カスケード規則に従う。要約:
 
-| Directory | Reply cascade | JA title update scope |
+| ディレクトリ | 返信のカスケード | JA タイトル更新の範囲 |
 |---|---|---|
-| `forum/*` (BitcoinTalk and similar) | **Required** (`check:ja-titles` detects mismatches) | When the starter's title changes, update all `Re: …` replies in the same thread in the same commit |
-| `emails/*` (mailing lists) | **Not required** (preserve original email Subject) | Update starter only; do not touch replies |
-| `correspondence/*` | **Not required** (each entry independent) | Edit individually |
-| `aftermath/`, `biography`, `bip`, `analysis`, `sourceforge` | N/A (no thread structure) | Edit individually |
+| `forum/*` (BitcoinTalk 等) | **必須** (`check:ja-titles` が不一致を検出) | スレッドの起点投稿のタイトルが変わったら、同スレッド内のすべての `Re: …` 返信を同じコミットで更新する |
+| `emails/*` (メーリングリスト) | **不要** (元のメール Subject を保持) | 起点のみ更新する。返信には触れない |
+| `correspondence/*` | **不要** (各エントリーは独立) | 個別に編集 |
+| `aftermath/`、`bip`、`analysis`、`sourceforge` | 該当なし (スレッド構造がない) | 個別に編集 |
 
-### Reply title consistency (forum threads)
+### 返信タイトルの整合性 (フォーラムスレッド)
 
-In `forum/*` threads, JA reply titles (`Re: ...`) must use the same
-translation as the thread starter's JA title.
+`forum/*` スレッドでは、JA の返信タイトル (`Re: ...`) はスレッド起点の JA タイトルと同じ訳語を用いなければならない。
 
-**Rule:** Inspect the thread starter's JA `title`. Update every reply
-title in the same thread to `Re: {starter JA title}`.
+**規則**: スレッド起点の JA `title` を確認する。同スレッドのすべての返信タイトルを `Re: {起点 JA タイトル}` に更新する。
 
-**Bad:**
+**悪い例**:
 
 ```
-thread starter: title: "大規模なメルトダウン"
-reply:          title: "Re: 大崩壊"          ← different translation
-reply:          title: "Re: Major Meltdown"  ← untranslated
+スレッド起点:   title: "大規模なメルトダウン"
+返信:           title: "Re: 大崩壊"          ← 訳語が異なる
+返信:           title: "Re: Major Meltdown"  ← 未翻訳
 ```
 
-**Good:**
+**良い例**:
 
 ```
-thread starter: title: "大規模なメルトダウン"
-reply:          title: "Re: 大規模なメルトダウン"
-reply:          title: "Re: 大規模なメルトダウン"
+スレッド起点:   title: "大規模なメルトダウン"
+返信:           title: "Re: 大規模なメルトダウン"
+返信:           title: "Re: 大規模なメルトダウン"
 ```
 
-### Recognized cascade exceptions (forum threads)
+### カスケード規則の例外 (フォーラムスレッド)
 
-The cascade rule above has two formally allowed exceptions, mirroring
-the EN side. The cascade enforcement (`check:ja-titles` warning and
-the `fix-ja-reply-titles` bulk fixer) skips these by design — they
-encode historical / editorial reality the cascade would otherwise
-erase. See `STYLE_GUIDE.md § Forum threads` for the cross-language
-description; this section documents the JA surface forms.
+上記のカスケード規則には EN 側と対をなす公式の例外が二つある。カスケードの強制 (`check:ja-titles` の警告および `fix-ja-reply-titles` の一括修正ツール) は設計上これらをスキップする。これらはカスケードが消し去ってしまう歴史的・編集的な現実を符号化したもの。言語非依存の説明は `STYLE_GUIDE.md § Forum threads` を参照すること。本節は JA 側の表面形を文書化する。
 
-**Exception (a) — Context-post replies (`Re:（NAMEの文脈投稿）`).**
-A reply that quotes a non-starter post (i.e., quotes another reply,
-not the topic itself) keeps the canonical Archive form
-`Re:（NAMEの文脈投稿）` instead of cascading the starter. The EN side
-uses `Re: (context post by NAME)` (preferred) or `Re: (quoted post by
-NAME)` (older variant); both are mirrored to the same JA form.
+**例外 (a) — 文脈投稿への返信 (`Re:（NAMEの文脈投稿）`)**。
+起点ではない投稿を引用する返信 (つまり、トピックそのものではなく別の返信を引用する場合) は、起点へのカスケードに従わず、Archive 正規形の `Re:（NAMEの文脈投稿）` を保持する。EN 側は `Re: (context post by NAME)` (推奨) または `Re: (quoted post by NAME)` (旧形) を用いる。両者とも同一の JA 形に対応する。
 
 ```
-thread starter: title: "WikiLeaks の連絡先情報？"
-reply (cascades): title: "Re: WikiLeaks の連絡先情報？"
-reply (context-post): title: "Re:（farmer_boyの文脈投稿）"   ← exception (a)
+スレッド起点:        title: "WikiLeaks の連絡先情報？"
+返信 (カスケード):    title: "Re: WikiLeaks の連絡先情報？"
+返信 (文脈投稿):      title: "Re:（farmer_boyの文脈投稿）"   ← 例外 (a)
 ```
 
-**Exception (b) — Subject-deviation replies.** When the EN counterpart
-of a JA reply has a title that does not match `Re: {EN starter title}`
-(e.g., the BitcoinTalk poster manually changed the subject for that
-reply), the JA reply translates that historical Subject and is
-allowed to deviate from the JA cascade.
+**例外 (b) — 件名逸脱の返信**。JA 返信の EN 対応版が `Re: {EN 起点タイトル}` と一致しないタイトルを持つ場合 (例: BitcoinTalk の投稿者がその返信のために件名を手動で変更した場合)、JA 返信もその歴史的件名を翻訳し、JA カスケードから逸脱することが許される。
 
 ```
-EN starter:    title: "Wikileaks contact info?"
-EN reply:      title: "Re: Bring on the bitcoins donations to Wikileaks"   ← Satoshi changed Subject
-JA starter:    title: "WikiLeaks の連絡先情報？"
-JA reply:      title: "Re: WikiLeaks へのビットコイン寄付を推進しよう"      ← exception (b)
+EN 起点:   title: "Wikileaks contact info?"
+EN 返信:   title: "Re: Bring on the bitcoins donations to Wikileaks"   ← サトシが件名を変更
+JA 起点:   title: "WikiLeaks の連絡先情報？"
+JA 返信:   title: "Re: WikiLeaks へのビットコイン寄付を推進しよう"      ← 例外 (b)
 ```
 
-`npm run check:ja-titles` validates this for `forum/*`, with
-**limitations**:
+`npm run check:ja-titles` が `forum/*` についてこれを検証する。**制限事項**:
 
-- It scans `src/data/translations/ja/forum/*` only (JA side); for
-  exception (b) it also reads the EN counterpart to verify the
-  deviation is mirrored.
-- Mismatches are emitted as warnings, not build failures.
-- Thread-starter detection is heuristic: the first non-`Re:` / non-`返信:`
-  entry is treated as the starter. If a reply title is editorially
-  rewritten without the `Re:` prefix, the checker treats it as a second
-  starter and stops cascade validation. Do not strip the `Re:` prefix to
-  evade the checker. (Both recognized exceptions above keep the `Re:`
-  prefix.)
+- 検査は `src/data/translations/ja/forum/*` (JA 側) のみを走査する。例外 (b) については EN 対応版も読み込み、逸脱が両側で対応していることを確認する。
+- 不一致は警告として出力され、ビルド失敗にはならない。
+- スレッド起点の検出はヒューリスティック。`Re:` でも `返信:` でもない最初のエントリーを起点として扱う。返信タイトルが編集上の判断で `Re:` 接頭辞を外して書き直された場合、検査ツールはそれを二つ目の起点と認識し、カスケードの検証を停止する。検査を回避するために `Re:` 接頭辞を外してはならない (上記の二つの公認例外はいずれも `Re:` 接頭辞を保持する)。
 
-`emails/*` and `correspondence/*` are out of scope. After updating a
-starter's title per the title policy, update the same thread's
-`Re: {…}` replies in the same commit (excluding the two recognized
-exceptions). Do not rely on the checker warning as a gate; visually
-diff the whole thread before committing. `scripts/fix-ja-reply-titles.mjs
---apply` handles bulk updates and respects the same exceptions.
+`emails/*` と `correspondence/*` は対象外。タイトル方針に従って起点のタイトルを更新したら、同じコミットで同スレッドの `Re: {…}` 返信も更新する (二つの公認例外を除く)。検査ツールの警告をゲートとして頼ってはならない。コミット前にスレッド全体を目視で差分確認する。`scripts/fix-ja-reply-titles.mjs --apply` は一括更新を扱い、同じ例外を尊重する。
 
-### Mailing-list thread exception
+### メーリングリストスレッドの例外
 
-In `emails/*` threads, the starter may be editorially retitled, but
-**reply titles `Re: {original Subject}` stay unchanged**. The original
-email Subject header is itself historical evidence:
+`emails/*` スレッドでは、起点のタイトルが編集上の判断で書き直されることがある。ただし**返信タイトル `Re: {元の件名}` は変更しない**。元のメールの件名ヘッダーそのものが歴史的証拠であるため。
 
 ```
-starter (2008-10-31): title: "「Bitcoin P2P e-cash paper」— サトシのビットコイン初公開（2008-10）"
-reply   (2008-11-01): title: "Re: ビットコイン P2P 電子キャッシュ論文"   ← original Subject translation, unchanged
+起点 (2008-10-31):   title: "「Bitcoin P2P e-cash paper」— サトシのビットコイン初公開 (2008-10)"
+返信 (2008-11-01):   title: "Re: ビットコイン P2P 電子キャッシュ論文"   ← 元の件名の翻訳、変更しない
 ```
 
-## 2. Description Wording
+## 2. description フィールドの語彙
 
-In JA `description` fields, use these unified terms:
+JA の `description` フィールドでは、以下の統一語を用いる。
 
 - `コンテキスト投稿` → **`文脈投稿`**
 - `引用投稿` → **`文脈投稿`**
 - `satoshi がスレッドを開始` → **`サトシ・ナカモトがスレッドを開始`**
 
-### Length cap
+### 文字数上限
 
-JA `description` fields are capped at **100 characters** (counted by
-`String.length`). Rationale and the EN counterpart (200 characters) are
-documented in `STYLE_GUIDE.md § Description Policy` — that section is
-the authoritative source; do not re-derive the rationale here.
+JA の `description` フィールドは **100 文字** までに制限される (`String.length` で計測)。根拠と EN 側の対応 (200 文字) は `STYLE_GUIDE.md § Description Policy` に文書化されている。そちらが正規の出典。ここでは根拠を再導出しない。
 
-Enforced by `scripts/check-description-length.mjs`, wired into
-`npm run build` and `npm run check` in `--strict` mode (a single
-overflow fails the build). Previously ran in WARN mode while the
-384-entry legacy backlog was being remediated; the switch to
-`--strict` happened once the backlog reached zero.
+`scripts/check-description-length.mjs` により強制され、`--strict` モードで `npm run build` と `npm run check` に組み込まれている (一件の超過でビルドが失敗する)。以前は 384 件の旧来の蓄積を解消する間 WARN モードで動いていた。蓄積が 0 になった時点で `--strict` に切り替わった。
 
-When a description currently exceeds the cap, **rewrite to fit**, do
-not relax the cap. If the over-length content carries body-summary
-material, move that material into the body. The description should
-give a search-result reader, SNS preview viewer, or entry-list browser
-just enough to decide whether to open the entry.
+description が現状で上限を超えている場合は、**収まるように書き直す**。上限を緩めない。超過した内容に本文要約の素材が含まれている場合は、その素材を本文に移す。description は検索結果の読者・SNS のプレビュー視聴者・エントリー一覧の閲覧者が、エントリーを開くかどうかを判断するのに足るだけの情報を与える。
 
-## 3. Terminology Glossary
+## 3. 用語集
 
-Japanese translations must use the canonical form for recurring technical
-terms. Deprecated forms are detected by `scripts/check-ja-glossary.mjs`
-and fail the build.
+日本語訳は、繰り返し出現する技術用語について正規形を用いなければならない。非推奨形は `scripts/check-ja-glossary.mjs` により検出され、ビルドが失敗する。
 
-Scope: this is a JA-only concern (EN source is consistent). It applies to
-body text, descriptions, titles, and any editorial prose.
+範囲: これは JA のみの問題 (EN 側のソースは一貫している)。本文・description・タイトル、その他すべての編集散文に適用される。
 
-### Trailing chouon (内閣告示 第 2 号, 2008)
+### 末尾長音符 (内閣告示 第 2 号、2008)
 
-Katakana words of three or more morae require a trailing chouon (`ー`).
-The legacy "drop trailing chouon" convention from the old JIS Z 8301 is
-no longer used in modern Japanese technical writing — Microsoft, Apple,
-NHK, and Kyodo News all standardize on the trailing form.
+3 モーラ以上のカタカナ語は末尾に長音符 (`ー`) を要する。旧 JIS Z 8301 に由来する「末尾長音符を落とす」 旧慣習は現代日本語の技術文書では用いられない — Microsoft、Apple、NHK、共同通信のすべてが末尾長音符を付ける形に標準化している。
 
-| ✅ Canonical | ❌ Deprecated |
+| ✅ 正規 | ❌ 非推奨 |
 |---|---|
 | コンピューター | コンピュータ |
 | サーバー | サーバ |
@@ -642,100 +474,79 @@ NHK, and Kyodo News all standardize on the trailing form.
 | ルーター | ルータ |
 | プロバイダー | プロバイダ |
 
-### Translation unification
+### 訳語の統一
 
-| English source | ✅ Canonical JA | ❌ Deprecated | Reason |
+| 英語原文 | ✅ 正規 JA | ❌ 非推奨 | 理由 |
 |---|---|---|---|
-| cryptography mailing list | 暗号学メーリングリスト | 暗号技術メーリングリスト | Use `暗号学` as the field-of-study name |
+| cryptography mailing list | 暗号学メーリングリスト | 暗号技術メーリングリスト | 学問分野名としての `暗号学` を用いる |
 | double spending | 二重支払い | 二重支出 / 二重使用 | |
-| miner | マイナー | 採掘者 | Bitcoin context |
-| wallet | ウォレット | 財布 | Bitcoin context |
+| miner | マイナー | 採掘者 | ビットコイン文脈 |
+| wallet | ウォレット | 財布 | ビットコイン文脈 |
 | interface | インターフェース | インタフェース / インターフェイス | |
-| private email / private correspondence | メール | 私的メール / 個人メール / プライベートメール / 私的(な)コミュニケーション / 私的(な)やり取り / 私的(な)通信 | In Japanese, `メール` implies one-to-one private correspondence by default. Public mailing-list posts use `メーリングリスト` / `ML`; forum posts use `フォーラム投稿`. CC and BCC do not change the private nature, only the recipient set. The `私的` / `個人` / `プライベート` qualifier in front of `メール` is therefore redundant in JA, even though `private email` is needed in EN to disambiguate from list-broadcast emails. For non-email senses of `private` (invite-only mailing list, private deliberation, non-public records, etc.) use `非公開` / `個別` / `個人的に` per context. |
-| block height | ブロック高 | ブロックの高さ / 高さ | Use `ブロック高` as a technical term; the literal `高さ` collides with general physical-height usage |
-| Pieter Wuille | ピーター・ウィーユ | ピーター・ウィユ | Match `participants.ts` (long-vowel form) |
-| Merkle root | マークルルート | merkleルート / Merkleルート | Code identifier `hashMerkleRoot` and surname `R.C. Merkle` are out of scope |
-| Merkle tree | マークルツリー | マークル木 / merkleツリー / Merkle Tree | Use the all-katakana form. The MAST term `マークル化抽象構文木` is a separate concept |
-| Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | Code identifier `getmerklebranch` and tag `merkle-branch` are out of scope |
-| The Times (newspaper) | タイムズ | The Times (in body prose) | The genesis-block coinbase string `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks` is preserved verbatim as historical record. `secondarySources` `name` fields are also preserved |
-| signature (crypto) | 署名 | — | Schnorr / ECDSA / message-signing senses use `署名` as canonical |
-| signature (pseudonym / byline) | 仮名 | 署名, ペンネーム | The pen-name sense (e.g. "the signature 'Satoshi Nakamoto'") collides with the cryptographic sense; use `仮名`. `ペンネーム` is also deprecated — it carries a writer/author register, too narrow for a pseudonym that covers system-design, implementation, and operational identity (Satoshi authored the whitepaper, but also the v0.1 codebase and the operational network). |
-| signature (forensic fingerprint) | 指紋 | 署名 | Patoshi-style forensic fingerprints (e.g. mining signature, nonce signature) use `指紋` |
+| private email / private correspondence | メール | 私的メール / 個人メール / プライベートメール / 私的(な)コミュニケーション / 私的(な)やり取り / 私的(な)通信 | 日本語では `メール` が既定で 1 対 1 の私的書簡を含意する。公開メーリングリスト投稿は `メーリングリスト` / `ML`、フォーラム投稿は `フォーラム投稿` を用いる。CC や BCC は私的性を変えない (受信者集合のみが変わる)。`メール` の前に置く `私的` / `個人` / `プライベート` の修飾は JA では冗長 — EN ではリスト配信メールと区別するために `private email` が必要なのに対して、JA では既に区別が織り込まれている。`private` の非メール語義 (招待制メーリングリスト、私的な議論、非公開記録など) には文脈に応じて `非公開` / `個別` / `個人的に` を用いる。 |
+| block height | ブロック高 | ブロックの高さ / 高さ | 技術用語として `ブロック高` を用いる。直訳の `高さ` は物理的高さの一般用法と衝突する |
+| Pieter Wuille | ピーター・ウィーユ | ピーター・ウィユ | `participants.ts` (長母音形) と一致させる |
+| Merkle root | マークルルート | merkleルート / Merkleルート | コード識別子 `hashMerkleRoot` と人名 `R.C. Merkle` は対象外 |
+| Merkle tree | マークルツリー | マークル木 / merkleツリー / Merkle Tree | 全カタカナ形を用いる。MAST 用語の `マークル化抽象構文木` は別概念 |
+| Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | コード識別子 `getmerklebranch` とタグ `merkle-branch` は対象外 |
+| The Times (newspaper) | タイムズ | The Times (本文散文中) | ジェネシスブロックのコインベース文字列 `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks` は史実の記録としてそのまま保持する。`secondarySources` の `name` フィールドもそのまま保持する |
+| signature (暗号学的) | 署名 | — | Schnorr / ECDSA / メッセージ署名の語義は `署名` を正規とする |
+| signature (仮名 / 署名行) | 仮名 | 署名、ペンネーム | 仮名としての語義 (例: "the signature 'Satoshi Nakamoto'") は暗号学的語義と衝突するため `仮名` を用いる。`ペンネーム` も非推奨 — 作家・著者の語感が強く、システム設計・実装・運用の身元 (サトシは白書だけでなく v0.1 コードベースとネットワーク運用の身元でもある) を覆う仮名には狭すぎる。 |
+| signature (フォレンジック指紋) | 指紋 | 署名 | Patoshi 系のフォレンジック指紋 (例: マイニング指紋、ナンス指紋) は `指紋` を用いる |
 
-### Canonical mappings
+### 正規対応
 
-Long-term fixed translations beyond the deprecation table above:
+上の非推奨表を超える、長期固定の訳語:
 
-| English | Japanese | Notes |
+| 英語 | 日本語 | 補足 |
 |---|---|---|
-| Schnorr (signature) | シュノア（署名） | Japanese Bitcoin community standard |
+| Schnorr (signature) | シュノア (署名) | 日本のビットコインコミュニティ標準 |
 
-### Forbidden punctuation
+### 禁止句読点
 
-#### `；` (full-width semicolon)
+#### `；` (全角セミコロン)
 
-Japanese typography does not use the full-width semicolon. It almost
-always appears as a mechanical full-width conversion of an English `;`
-and must always be replaced. The replacement is context-dependent:
+日本語の組版に全角セミコロンは存在しない。これはほぼ必ず英語の `;` を機械的に全角変換した結果として現れるものであり、必ず置換しなければならない。置換先は文脈に依存する。
 
-| Context | Use |
+| 文脈 | 用いる |
 |---|---|
-| Listing parallel items | `、` |
-| End of a thought | `。` |
-| Bridging clauses, supplementary remark | ` — ` (em dash) |
-| Items distinct enough to stand apart | line break or bullet |
+| 並列項目の列挙 | `、` |
+| 思考の終端 | `。` |
+| 節と節を橋渡しする補足 | ` — ` (全角ダッシュ) |
+| 独立して立つほど区別される項目 | 改行または箇条書き |
 
-Bulk substitution is forbidden — every occurrence is judged in context.
-The half-width `;` inside code blocks, frontmatter, URLs, and quoted
-English text is out of scope (the source language allows it).
+一括置換は禁止 — 各出現を文脈で判断する。コードブロック・冒頭メタデータ・URL・引用された英語テキストの中の半角 `;` は対象外 (元の言語ではそれが許される)。
 
-Enforced by `npm run check:ja-glossary` (rule: `；` → `、 / 。 / — / 改行`).
+`npm run check:ja-glossary` (規則: `；` → `、 / 。 / — / 改行`) により強制される。
 
-### Half-width space convention — JA × ASCII boundaries only
+### 半角スペースの規約 — JA × ASCII の境界のみ
 
-Insert a half-width space at boundaries between Japanese and ASCII
-characters; do **not** insert one between two Japanese characters.
+日本語と ASCII 文字の境界に半角スペースを挿入する。日本語と日本語の間にはスペースを**入れない**。
 
-| Boundary | Convention | Example |
+| 境界 | 規約 | 例 |
 |---|---|---|
-| JA → ASCII | half-width space | `本仮説は A 群` / `ビットコイン v0.1` |
-| ASCII → JA | half-width space | `A 群` / `v0.1 公開` |
-| JA → JA | **no space** | `A 群候補` (not `A 群 候補`)<br>`A 群として` (not `A 群 として`) |
-| ASCII → ASCII | ASCII rules | `Bitcoin v0.1` |
+| JA → ASCII | 半角スペース | `本仮説は A 群` / `ビットコイン v0.1` |
+| ASCII → JA | 半角スペース | `A 群` / `v0.1 公開` |
+| JA → JA | **スペースなし** | `A 群候補` (`A 群 候補` ではない)<br>`A 群として` (`A 群 として` ではない) |
+| ASCII → ASCII | ASCII 規則 | `Bitcoin v0.1` |
 
-The trap to avoid is leaving a trailing space behind after a
-substitution. Replacements that change `グループ A` → `A 群` move the
-ASCII letter from the right edge of the token to the left edge — the
-space that was correctly between `A` and the following Japanese word
-in the original now sits between two Japanese characters in the new
-form, where it is meaningless. Trim it.
+避けるべき罠は、置換の後に取り残される末尾スペース。`グループ A` → `A 群` のような置換は ASCII 文字をトークンの右端から左端に移動させる — 元の形では `A` と続く日本語の間に正しく置かれていたスペースが、新しい形では二つの日本語の間に残ってしまい、意味を失う。これを取り除く。
 
-Bulk substitutions across JA × ASCII spans are the source of these
-stranded spaces. **Fix existing violations one occurrence at a time**,
-inspecting the surrounding context — never with another bulk
-replacement, since that is how stranded spaces appeared in the first
-place.
+JA × ASCII にまたがる一括置換が、こうした取り残しスペースの発生源。**既存の違反は、周囲の文脈を確認しながら 1 件ずつ修正する** — 別の一括置換で直してはならない。それこそが取り残しスペースの最初の原因だった。
 
-Enforced by `npm run check:ja-spacing`. The script scans all JA
-markdown bodies, skips fenced code blocks (so Mermaid timeline
-intentional spacing is preserved), and fails the build on any
-half-width space between two Japanese letters.
+`npm run check:ja-spacing` により強制される。スクリプトはすべての JA Markdown 本文を走査し、フェンス付きコードブロックをスキップする (Mermaid タイムラインの意図的な空白を保つため)。日本語の文字 2 字の間に半角スペースが入っているとビルドが失敗する。
 
-### Mermaid timeline labels — Japanese line wrapping
+### Mermaid タイムラインのラベル — 日本語の改行
 
-Mermaid wraps timeline labels only at ASCII whitespace. Japanese has no
-inter-word spaces, so any unbroken Japanese span longer than the column
-width overflows the box on render. Examples that overflowed in production:
+Mermaid はタイムラインのラベルを ASCII の空白文字でしか改行しない。日本語には単語間スペースがないため、列幅より長い切れ目のない日本語の塊はレンダリング時にボックスからはみ出す。本番ではみ出した実例:
 
-| Unbroken span | Length | What rendered |
+| 切れ目のない塊 | 文字数 | 描画結果 |
 |---|---:|---|
-| `サトシ最有力候補と名指される；` | 14 chars | First/last char clipped outside the box |
-| `アンドレセンはチーフサイエンティスト` | 17 chars | Tail clipped, "(9月)" pushed off |
-| `ヴラディーミル・ヴァン・デア・ラーンへ引き継ぎ` | 22 chars | Tail clipped, multi-line overflow |
+| `サトシ最有力候補と名指される；` | 14 文字 | 先頭または末尾の文字がボックスの外で切れる |
+| `アンドレセンはチーフサイエンティスト` | 17 文字 | 末尾が切れ、`(9月)` が押し出される |
+| `ヴラディーミル・ヴァン・デア・ラーンへ引き継ぎ` | 22 文字 | 末尾が切れ、複数行のはみ出し |
 
-`・` (middle dot) and `、` are **not** wrap points — Mermaid only breaks
-at ASCII space `U+0020`. Insert ASCII spaces at semantic break points
-inside long Japanese labels:
+`・` (中黒) や `、` は改行点に**ならない** — Mermaid は ASCII スペース `U+0020` でしか改行しない。長い日本語ラベルの中の意味的な区切り点に ASCII スペースを挿入する:
 
 ```text
 ✅  サトシ最有力候補と 名指される
@@ -745,185 +556,110 @@ inside long Japanese labels:
 ❌  ヴラディーミル・ヴァン・デア・ラーンへ引き継ぎ
 ```
 
-Threshold: any token containing CJK characters longer than **12
-zenkaku** is flagged. The rule applies to all Mermaid block types
-(timeline, flowchart, etc.), since the underlying wrap behavior is the
-same. The `title` keyword line is exempt — title rendering uses a
-different, wider layout.
+しきい値: CJK を含むトークンが**全角 12 文字**を超えると検出対象になる。規則はすべての Mermaid ブロック種別 (timeline、flowchart 等) に適用される — 改行挙動の根は同じ。`title` キーワード行は対象外 — タイトルのレンダリングは別の、より幅の広いレイアウトを用いるため。
 
-Enforced by `npm run check:mermaid-ja-wrap` (runs as part of `npm run
-check`). Pair with `npm run check:bios-rendering` (visual confirmation
-via Playwright — requires `npm run dev` to be running and `playwright`
-installed).
+`npm run check:mermaid-ja-wrap` により強制される (`npm run check` の一部として動作する)。`npm run check:bios-rendering` (Playwright による視覚確認 — `npm run dev` の実行と `playwright` のインストールが必要) と組み合わせる。
 
-### Adding a new rule
+### 新規規則の追加手順
 
-1. Confirm that the same English term is being translated multiple ways
-   in JA files.
-2. Decide the canonical form (default: majority usage, or the
-   government-recommended form per 内閣告示).
-3. Add one row to the relevant table above.
-4. Add a rule to the `RULES` array in
-   `scripts/check-ja-glossary.mjs`:
-   - Trailing chouon: `type: 'trailing-choon'` (uses negative lookahead
-     to avoid partial-match false positives).
-   - Direct substitution: `type: 'literal'`.
-5. Migrate existing data
-   (one-shot bulk edit: `perl -i -CSD -Mutf8 -pe '...'`).
-6. Confirm with `npm run check:ja-glossary` that violations are zero.
+1. 同じ英語の語が JA ファイルで複数の形に訳されていることを確認する。
+2. 正規形を決める (既定: 多数派の用法、または内閣告示が推奨する形)。
+3. 該当する上記の表に 1 行追加する。
+4. `scripts/check-ja-glossary.mjs` の `RULES` 配列に規則を追加する。
+   - 末尾長音符: `type: 'trailing-choon'` (部分一致による誤検知を避けるため、否定先読みを用いる)。
+   - 直接置換: `type: 'literal'`。
+5. 既存データを移行する (一括編集の例: `perl -i -CSD -Mutf8 -pe '...'`)。
+6. `npm run check:ja-glossary` で違反が 0 になることを確認する。
 
-Enforced by `npm run check:ja-glossary` (runs as part of `npm run
-check`).
+`npm run check:ja-glossary` により強制される (`npm run check` の一部として動作する)。
 
-## 4. Cross-Project Consistency
+## 4. プロジェクト横断の整合性
 
-When the same Satoshi-Nakamoto quote appears in multiple places (this
-archive plus another translation venue, an academic citation, a book,
-etc.), keep the Japanese translation consistent across venues so that a
-reader citing one of them does not get a different wording from another.
+同一のサトシ・ナカモトの引用文が複数の場所 (本アーカイブと別の翻訳掲載先、学術引用、書籍など) に現れる場合、ある掲載を引用した読者が別の掲載で異なる言い回しを目にしないよう、JA 訳を掲載先間で一貫させる。
 
-This is a translation-quality concern, not a normative dependency on any
-specific external project. Resolve any cross-venue discrepancy by
-deliberate editorial choice — pick the most accurate translation and use
-it everywhere — rather than by reference to a private or unverifiable
-external document.
+これは翻訳品質の懸案であり、特定の外部プロジェクトへの規範的依存ではない。掲載先間の不一致は、私的または検証不能な外部文書を参照することによってではなく、編集上の意図的な判断 — 最も正確な訳を選び、それを各所で用いる — によって解決する。
 
-Canonical example — Satoshi's final message to Mike Hearn:
+正規例 — サトシからマイク・ハーンへの最後のメッセージ:
 
-- English source: `"I've moved on to other things. It's in good hands
-  with Gavin and everyone."`
+- 英語原文: `"I've moved on to other things. It's in good hands with Gavin and everyone."`
 - Archive JA: `「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」`
 
-## 5. Translation Priority
+## 5. 翻訳の優先順位
 
-When editing existing Japanese content, normalize in this order:
+既存の日本語コンテンツを編集する際は、以下の順で正規化する。
 
-1. UI labels and page headings.
-2. Titles and descriptions.
-3. Biography and editor-written prose.
-4. Legacy mixed usage inside older entries as they are touched.
+1. UI ラベルとページ見出し。
+2. タイトルと description。
+3. 伝記と編者執筆の散文。
+4. 旧来エントリー内の混在用法は、触れた機会に正規化する。
 
-Quotes and source text should not be rewritten just to match the house
-style. See `STYLE_GUIDE.md § Consistency Rule` for the cross-language
-version of this principle.
+引用文や出典本文は、ハウススタイルに合わせるためだけに書き直してはならない。言語非依存の同原則は `STYLE_GUIDE.md § Consistency Rule` を参照。
 
-## 6. Technical-Review Robustness
+## 6. 技術的検証への耐性
 
-Entries must withstand scrutiny from readers who know the subject. Before
-publishing or committing edits, run a self-audit across the categories
-below.
+エントリーは題材を熟知した読者の精査に耐えなければならない。公開やコミットの前に、以下のカテゴリーを横断する自己検証を回す。
 
-**In scope:**
+**対象範囲**:
 
-- Technical facts (cryptography, protocol, source code, blockchain
-  behavior, numeric specs).
-- Historical facts (dates, citations, statements, numbers, sequences).
-- Internal consistency (no contradictions within a single entry or
-  across related entries).
-- Arithmetic (elapsed time, BTC amounts, exchange-rate conversions,
-  block heights — anything cross-checkable).
-- Category alignment (do not mix different kinds of propositions under
-  the same heading — e.g. "cause" and "activity during the period" are
-  different questions and should not appear in the same hypothesis
-  list).
-- Fact / interpretation distinction (do not state interpretive framing
-  as historical fact — explicit hedges such as "under this view," "in
-  this reading" are required).
-- Source traceability (every claim should be reachable from
-  `secondarySources` / `sourceUrl`, or a named primary record).
+- 技術的事実 (暗号、プロトコル、ソースコード、ブロックチェーンの挙動、数値仕様)。
+- 史実 (日付、引用、発言、数値、出来事の順序)。
+- 内部整合 (単一エントリー内、または関連エントリー間で矛盾しない)。
+- 算術 (経過時間、BTC 金額、為替換算、ブロック高 — 相互参照可能なすべて)。
+- カテゴリーの整合 (異なる種類の命題を同じ見出しの下に混ぜない — 例: 「原因」 と「期間中の活動」 は異なる問いであり、同じ仮説リストに並べない)。
+- 事実 / 解釈の区別 (解釈的な枠組みを史実として述べない — 「この見方では」「この読みでは」 のような明示的な留保が必要)。
+- 出典への辿りやすさ (すべての主張は `secondarySources` / `sourceUrl`、または名指された一次資料に到達可能であるべき)。
 
-**Out of scope** (handled elsewhere in this guide):
+**対象外** (本ガイドの他所で扱う):
 
-- Style preferences (handled per-section in this file).
-- Translation register choices (see § I.6 Voice).
-- Already-adopted editorial framing decisions.
+- 文体の好み (本ファイルの各節で扱う)。
+- 翻訳の語調選択 (§ I.6 語調・話者性 を参照)。
+- 採用済みの編集枠組みの判断。
 
-**Bar:** Could a subject-matter-expert reader flag this passage for
-factual error, failed cross-check, or category mixing? If yes, fix it
-before the edit lands.
+**判定基準**: その題材の読者が、この箇所を事実誤認・相互参照の失敗・カテゴリー混在として指摘しうるか。指摘されうるなら、編集が反映される前に直す。
 
-**Failure modes observed in past edits:**
+**過去の編集で観察された失敗パターン**:
 
-- Arithmetic mismatch: writing `1/3 から 1/8 = 5 days`, but the actual
-  endpoint is `1/9`. Wrong endpoint produces wrong duration.
-- Category error: listing five "hypotheses" as parallel candidates when
-  only one addresses cause and the other four address a different
-  question (such as activity during the period).
-- Interpretation stated as fact: writing a new or speculative reading as
-  established history without hedging.
-- Narrative dramatization leaking in: presenting speculative
-  reconstruction as if it were eyewitness testimony.
+- 算術の不一致: `1/3 から 1/8 = 5 days` と書いたが、実際の終端は `1/9`。終端を誤れば期間も誤る。
+- カテゴリーの誤り: 5 件の「仮説」 を並列の候補として列挙したが、実際は 1 件だけが原因に答え、他の 4 件は別の問い (期間中の活動など) に答えていた。
+- 解釈を事実として述べる: 新規または推測的な読みを留保なく確立した史実として書く。
+- 物語の劇化が混入: 推測的再構成を、目撃者の証言であるかのように提示する。
 
-### Factual claims about real people: every claim — quote or narrative —
-needs a source
+### 実在人物に関する事実主張: 引用であれ叙述であれ、すべての主張に出典が要る
 
-Factual claims about real people — direct quotations, paraphrases,
-narrated actions, reactions, internal feelings, sequences of events,
-sensory details, physical descriptions — must be verifiable from sources
-listed in the entry's `secondarySources` / `sourceUrl`, or from a
-publicly linkable primary record (mailing-list archive, forum post,
-interview transcript, court document, published essay, etc.). Narrative
-prose does not exempt a claim from verification — narrative voice is
-*more* dangerous, because an unverified claim can blend invisibly into
-editorial summary. **The rule fires on claims, not on punctuation.** A
-quote dissolved into paraphrase or unmarked narration does not lose its
-need for a source — it only hides the gap. If a claim cannot be
-sourced, do not write it, even for "context" or "atmosphere."
+実在人物に関する事実主張 — 直接引用、言い換え、叙述された行動、反応、内面の感情、出来事の順序、感覚的詳細、身体的描写 — は、エントリーの `secondarySources` / `sourceUrl` に列挙された出典、または公的に指し示せる一次資料 (メーリングリスト保存庫、フォーラム投稿、インタビュー記録、法廷文書、刊行されたエッセイなど) から検証可能でなければならない。叙述形式が主張を検証義務から免除するわけではない — むしろ叙述の声は*より危険*。検証されていない主張が編集要約の中に見えない形で溶け込んでしまうため。**規則は主張で発動し、引用符で発動しない**。引用を言い換えに溶かしたり、引用符のない叙述に変えたりしても、出典の不在は治らない — 隠れるだけ。主張を出典に紐付けられないなら、「文脈」 や「雰囲気」 のためであっても書かない。
 
-**In scope of this rule:**
+**本規則の対象範囲**:
 
-- Reconstructed dialogue, dramatized statements, imagined inner
-  monologue.
-- Narrated actions not in the cited source.
-- Sensory / atmospheric details added for color (e.g. `the smell of
-  coffee`, `the noise of fans`).
-- Sequence implications not documented (who reacted to what, when).
-- Body language and physical description written from inference rather
-  than record.
+- 再構成された会話、劇化された発言、想像された内面の独白。
+- 引用元に存在しない、叙述された行動。
+- 色付けのために加えられた感覚的・雰囲気的詳細 (例: `コーヒーの匂い`、`ファンの音`)。
+- 文書化されていない順序の含意 (誰が何にいつ反応したか)。
+- 記録ではなく推測から書かれた身振りや身体的描写。
 
-**Out of scope of this rule** (handled elsewhere):
+**本規則の対象外** (他所で扱う):
 
-- Editorial analysis or interpretation of documented events (handled by
-  the "fact / interpretation" distinction above).
-- Summaries of cited sources where attribution is explicit.
+- 文書化された出来事の編集的分析や解釈 (前述の「事実 / 解釈」 の区別で扱う)。
+- 出典明示のある引用済み出典の要約。
 
-**Mandatory verification step (not optional):**
+**必須の検証手順 (任意ではない)**:
 
-Before writing a factual claim about a real person — in any form —
-explicitly name the source: a URL, the `sourceUrl` field, a
-`secondarySources` entry, or a named primary record. Then check whether
-the intended claim is actually present in that source. This is not a
-"do it when in doubt" principle; it is a **mandatory procedural step**.
-Prolonged exposure to narrative reconstruction (novels, dramatizations,
-documentaries, AI-generated biographical prose) erodes the boundary
-between fictional and historical content in *both* directions — not
-only does fiction get absorbed as history, but real quotes get
-suspected as fabrications. The intuition "this feels canonical" / "this
-feels invented" is unreliable in either direction. The verification
-step exists because the intuition fails. If verification cannot be
-performed, the claim **must not be written** — do not "rescue" it by
-paraphrasing or by removing quotation marks.
+実在人物に関する事実主張を — どの形式であれ — 書く前に、出典を明示的に名指す: URL、`sourceUrl` フィールド、`secondarySources` の項目、または名指された一次資料。次に、書こうとしている主張がその出典に実際に存在するかを確認する。これは「疑わしいときに行う」 原則ではない。**必須の手続き的ステップ**。物語的再構成への長期的な接触 (小説、劇化、ドキュメンタリー、AI が生成した伝記散文) は、フィクションと史実の境界を*両方向に*侵食する — フィクションが史実として吸収されるだけでなく、本物の引用が捏造として疑われるようになる。「これは正典に感じる」「これは作り話に感じる」 という直感はどちらの方向にも信頼できない。検証手順が存在するのは、直感が機能しないため。検証が行えないなら、その主張は**書いてはならない** — 言い換えで救済したり、引用符を外して救済したりしない。
 
 ---
 
-# III. Operational Rules
+# III. 運用規則
 
-Operational procedures for scripts that modify Japanese content —
-including the existing-file preservation guarantee, SHA-1 verification,
-BitcoinTalk fetching limits, and re-scrape guard — are documented
-separately for readability:
+日本語コンテンツを変更するスクリプトの運用手順 — 既存ファイル保護の保証、SHA-1 検証、BitcoinTalk 取得の上限、再スクレイプの保護機構 — は読みやすさのため別ファイルに分離されている。
 
-→ See [`STYLE_GUIDE_JA_OPS.md`](STYLE_GUIDE_JA_OPS.md).
+→ [`STYLE_GUIDE_JA_OPS.md`](STYLE_GUIDE_JA_OPS.md) を参照。
 
-That document is the source of truth for any script that creates or
-modifies entries under `src/data/translations/ja/`. The rules there are
-required, not advisory.
+このファイルは `src/data/translations/ja/` 配下のエントリーを作成または変更するスクリプトの真実源。そこに書かれた規則は推奨ではなく必須。
 
 ---
 
-# References
+# 参照
 
-Cross-language rules (not duplicated here):
+言語非依存の規則 (本ファイルでは複製しない):
 
 - `STYLE_GUIDE.md § Core Distinction: Blockquotes vs Quotation Marks`
 - `STYLE_GUIDE.md § Primary-Source Entries` / `§ Editorial / Narrative Entries`

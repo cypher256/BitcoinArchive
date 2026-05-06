@@ -1,73 +1,54 @@
-# Japanese Content Operational Rules
+# 日本語コンテンツ運用規則
 
-Operational procedures for any script that creates or modifies entries
-under `src/data/translations/ja/`. This document is the companion to
-`STYLE_GUIDE_JA.md`: the style guide defines how Japanese content
-should look; this document defines how scripts may safely modify
-Japanese content.
+`src/data/translations/ja/` 配下のエントリーを作成または変更するスクリプトの運用手順。本ファイルは `STYLE_GUIDE_JA.md` の伴走文書: スタイルガイドが「日本語コンテンツがどう見えるべきか」 を定義するのに対し、本文書は「スクリプトが日本語コンテンツをどう安全に変更してよいか」 を定義する。
 
-> **Document language convention.** The same convention as
-> `STYLE_GUIDE_JA.md` applies here: rule prose is written in English;
-> Japanese text appears only as data (path examples, error messages
-> being illustrated, file content being shown).
+> **Note for international readers.** This file is the JA-edition
+> operational rule book for scripts that touch Japanese content and is
+> therefore written in Japanese. Cross-language scripted-edits policy
+> lives in `STYLE_GUIDE.md § Scripted Edits Policy`, which is in English.
 
-## Why this document exists
+## 本文書が存在する理由
 
-The most painful regressions in this project's history have all been
-caused by scripts overwriting existing files that contained manual
-fixes. To make regression structurally impossible, all data-modifying
-scripts must follow the rules below.
+このプロジェクトの歴史で最も痛みを伴った退行は、すべて、手動修正を含む既存ファイルをスクリプトが上書きしたことに起因する。退行を構造的に不可能にするため、データを変更するスクリプトはすべて以下の規則に従わなければならない。
 
-Past regressions in this codebase include:
+このコードベースで起きた過去の退行:
 
-- `4c1fe988` re-scrape: overwrote 1,278 manually-translated JA files.
-- Phase 2 quote migration: wrote broken `person: ">"` values from a
-  regex bug; required manual fixes across 22 files.
-- `personSlug` was forgotten in Phase 2 migration; 904 files needed
-  backfill.
+- `4c1fe988` の再スクレイプ: 手動翻訳済みの JA ファイル 1,278 件を上書きした。
+- フェーズ 2 の引用移行: 正規表現のバグから壊れた `person: ">"` 値を書き込んだ。22 ファイルの手動修正が必要となった。
+- `personSlug` がフェーズ 2 移行で忘れられた。904 ファイルの後続補完が必要となった。
 
-All of these would have been caught by the SHA-1 snapshot rule below
-before they reached `main`.
+これらはすべて、後述の SHA-1 スナップショット規則によって `main` に到達する前に検出可能だった。
 
-## 1. Existing File Preservation Guarantee
+## 1. 既存ファイル保護の保証
 
-### When scripts may modify data
+### スクリプトがデータを変更してよい場合
 
-| Operation | Allowed? | Notes |
+| 操作 | 許可? | 補足 |
 |---|---|---|
-| Create new files only | ✅ Yes | Use `safeWrite()` (see below) |
-| Bulk frontmatter / metadata update on existing files | ⚠️ Conditional | Deterministic structural updates only (e.g. `personSlug` backfill); body must not change |
-| Bulk body / prose rewrite on existing files | ❌ No | See § 2 Scripted Edits below |
-| Edit a shipped script to fix a bug | ✅ Yes | As long as `existsSync()` still skips already-produced files |
-| Edit a shipped script to change its output format | ❌ No | Create a new script instead |
+| 新規ファイルのみ作成 | ✅ 可 | `safeWrite()` を用いる (後述) |
+| 既存ファイルの冒頭メタデータ・メタデータの一括更新 | ⚠️ 条件付き | 確定的・構造的な更新のみ (例: `personSlug` の補完)。本文を変更してはならない |
+| 既存ファイルの本文・散文の一括書き換え | ❌ 不可 | § 2 のスクリプト編集 を参照 |
+| 出荷済みスクリプトを編集してバグを修正 | ✅ 可 | `existsSync()` が引き続き既出力ファイルをスキップする限り |
+| 出荷済みスクリプトを編集して出力形式を変更 | ❌ 不可 | 別のスクリプトを新規作成する |
 
-### Mandatory rules for any script that creates or modifies entry files
+### エントリーファイルを作成・変更するスクリプトの必須規則
 
-1. **Bug fixes to existing scripts are fine. Format changes are not.**
-   You may fix bugs in a fetch / migration script that has already
-   shipped data, as long as `existsSync()` still skips already-produced
-   files. You must NOT change the output format (frontmatter shape, body
-   structure, etc.) of an existing script. Create a new script instead.
-   Format changes invite re-runs and re-runs cause regressions — that is
-   the #1 cause of past regressions in this codebase.
+1. **既存スクリプトのバグ修正は可。形式変更は不可**。
+   既にデータを出荷した取得・移行スクリプトのバグ修正は構わない。`existsSync()` が引き続き既出力ファイルをスキップする限り。ただし既存スクリプトの出力形式 (冒頭メタデータの形、本文構造など) を変更してはならない。代わりに新規スクリプトを作る。形式変更は再実行を誘発し、再実行は退行を引き起こす — これがこのコードベースで過去退行の最大原因。
 
-2. **New scripts must use a `safeWrite()` helper with three guards.**
-   The example below is for a JA translation script that writes under
-   `src/data/translations/ja/`. Adjust the path pattern to whatever
-   directory the script writes to (e.g. `src/data/entries/en/forum/...`
-   for an EN-side scraper that produces source content the JA workflow
-   later translates).
+2. **新規スクリプトは三重のガードを持つ `safeWrite()` ヘルパーを使う**。
+   下の例は `src/data/translations/ja/` 配下に書き込む JA 翻訳スクリプト向け。スクリプトが書き込む先のディレクトリに合わせてパスのパターンを調整する (例: JA 翻訳の元になるソース内容を生成する EN 側スクレイパーであれば `src/data/entries/en/forum/...` 等)。
 
    ```javascript
    function safeWrite(filePath, content) {
-     // Guard 1: whitelist the write target by path pattern
+     // ガード 1: 書き込み先をパスのパターンで限定する
      const ALLOWED = /^src\/data\/translations\/ja\/forum\/bitcointalk\/topic-\d+\/\d{4}-\d{2}-\d{2}-[a-z0-9_-]+-msg\d+\.md$/;
      const rel = path.relative(process.cwd(), filePath);
      if (!ALLOWED.test(rel)) {
        throw new Error(`REFUSED: write target outside allowed pattern: ${rel}`);
      }
 
-     // Guard 2: refuse to overwrite any existing file
+     // ガード 2: 既存ファイルの上書きを拒否する
      if (existsSync(filePath)) {
        throw new Error(`REFUSED: existing file would be overwritten: ${rel}`);
      }
@@ -76,69 +57,56 @@ before they reached `main`.
    }
    ```
 
-3. **`--apply` is opt-in. Default mode is dry-run.**
-   Scripts must default to dry-run (no writes). Writing only happens
-   with an explicit `--apply` flag.
+3. **`--apply` はオプトイン。既定モードはドライラン**。
+   スクリプトは既定でドライラン (書き込みなし) でなければならない。書き込みは明示的な `--apply` フラグでのみ起こる。
 
-4. **Batch size limits.**
-   Scripts that create many files must enforce a `MAX_FILES_PER_RUN`
-   limit (typically 100–200) so that any unexpected behavior is caught
-   before it spreads across the whole dataset.
+4. **バッチサイズの上限**。
+   多くのファイルを生成するスクリプトは `MAX_FILES_PER_RUN` の上限 (典型的には 100〜200) を強制する。予期しない挙動がデータセット全体に広がる前に検出するため。
 
-### Mandatory verification: SHA-1 snapshot before / after
+### 必須の検証: 実行前後の SHA-1 スナップショット
 
-Any data-modifying script run must be preceded by a **backup branch**
-checkpoint and followed by a **SHA-1 verification** that no existing
-file was modified.
+データを変更するスクリプトの実行は、必ず**バックアップブランチ**のチェックポイントを前置し、**SHA-1 検証**で既存ファイルが変更されなかったことを後から確認する。
 
-#### Step 1 — Create the backup branch (before running the script)
+#### 手順 1 — バックアップブランチを作る (スクリプト実行前)
 
-The backup branch records the working tree state immediately before the
-script runs. Name it after the script that will run, so that a future
-reader can match the backup to the operation it protects:
+バックアップブランチはスクリプト実行直前の作業ツリー状態を記録する。後の読者が、どのスクリプトのバックアップかを操作と対応付けられるよう、これから走らせるスクリプトに因んで命名する:
 
 ```bash
 git checkout -b backup/before-<script-name>
 ```
 
-For example, before running `scripts/fetch-replies-to-satoshi.mjs`,
-create `backup/before-fetch-replies-to-satoshi`.
+例: `scripts/fetch-replies-to-satoshi.mjs` を走らせる前には `backup/before-fetch-replies-to-satoshi` を作る。
 
-The current branch you were on (typically `main` or a feature branch)
-is **not** the backup. The new `backup/before-<script-name>` branch is
-the only record of pre-script state.
+直前にいたブランチ (典型的には `main` または機能ブランチ) はバックアップ**ではない**。新たに作る `backup/before-<script-name>` ブランチが、スクリプト実行前状態の唯一の記録。
 
-#### Step 2 — Confirm the working tree is clean
+#### 手順 2 — 作業ツリーがクリーンであることを確認する
 
 ```bash
-git status                     # must report: "nothing to commit, working tree clean"
-npm run check                  # must exit 0
+git status                     # "nothing to commit, working tree clean" を返さなければならない
+npm run check                  # 0 で終了しなければならない
 ```
 
-If either reports any deviation, resolve it before continuing. Do not
-run the script with uncommitted changes — the SHA-1 snapshot below
-cannot distinguish your in-flight work from script output.
+いずれかが何らかの逸脱を報告する場合、続行前に解消する。コミットされていない変更を抱えた状態でスクリプトを走らせてはならない — 後述の SHA-1 スナップショットでは、進行中の作業とスクリプト出力を区別できないため。
 
-#### Step 3 — Snapshot existing files
+#### 手順 3 — 既存ファイルのスナップショット
 
-For a JA translation script (the primary case for this document):
+JA 翻訳スクリプト (本文書の主要ケース) の場合:
 
 ```bash
 find src/data/translations/ja/forum/bitcointalk -name "*.md" \
   -exec sha1sum {} \; | sort > /tmp/before.sha1
 ```
 
-For an EN-side scraping script that produces source content the JA
-workflow later translates, snapshot the EN entries directory instead:
+JA 翻訳の元になるソース内容を生成する EN 側スクレイピングスクリプトの場合は、代わりに EN エントリーディレクトリをスナップショットする:
 
 ```bash
 find src/data/entries/en/forum/bitcointalk -name "*.md" \
   -exec sha1sum {} \; | sort > /tmp/before.sha1
 ```
 
-Always snapshot the same path the script writes under.
+スクリプトが書き込む先と同じパスをスナップショットする。
 
-#### Step 4 — Run the script with `--apply`, then verify
+#### 手順 4 — `--apply` でスクリプトを走らせ、検証する
 
 ```bash
 node scripts/<script-name>.mjs --apply
@@ -146,159 +114,123 @@ node scripts/<script-name>.mjs --apply
 bash scripts/verify-no-regression.sh /tmp/before.sha1
 ```
 
-`verify-no-regression.sh` re-computes SHA-1 hashes for the same path
-set and compares against the snapshot. It must report
-`✓ No existing files modified` and exit 0.
+`verify-no-regression.sh` は同じパス集合に対して SHA-1 ハッシュを再計算し、スナップショットと比較する。`✓ No existing files modified` を報告し、0 で終了しなければならない。
 
-If `verify-no-regression.sh` exits non-zero, the script has overwritten
-or modified an existing file — this is the regression we are trying to
-prevent. Stop here and roll back (Step 5).
+`verify-no-regression.sh` が 0 以外で終了した場合、スクリプトは既存ファイルを上書きまたは変更している — 防ごうとしている退行そのもの。ここで停止し、ロールバックする (手順 5)。
 
-#### Step 5 — Roll back if verification failed (only when it failed)
+#### 手順 5 — 検証が失敗した場合のロールバック (失敗時のみ)
 
-This step is **only** for the failure case in Step 4. If verification
-passed, skip directly to Step 6.
+この手順は手順 4 の失敗ケース**のみ**を対象とする。検証が通った場合は手順 6 に直接進む。
 
-Roll back by checking out the backup branch you created in Step 1, then
-discarding the post-script working tree:
+ロールバックは、手順 1 で作ったバックアップブランチをチェックアウトし、その後にスクリプト実行後の作業ツリーを破棄することで行う:
 
 ```bash
-# Confirm you are on the post-script branch (the script was run on the branch you created the backup from)
+# スクリプト実行後のブランチにいることを確認する (スクリプトはバックアップ作成元のブランチで実行された)
 git status
 
-# Restore the working tree to the pre-script state recorded in backup/before-<script-name>
+# 作業ツリーを backup/before-<script-name> に記録された実行前状態に戻す
 git reset --hard backup/before-<script-name>
 ```
 
-`git reset --hard` discards uncommitted changes and post-script commits
-on the current branch. Use it only when verification has confirmed a
-regression. The branch name `backup/before-<script-name>` is the
-specific reference being restored — do not run `git reset --hard` with
-no arguments or with `HEAD~` syntax for this purpose, as those discard
-work without targeting the backup checkpoint.
+`git reset --hard` は、現在のブランチ上のコミットされていない変更とスクリプト実行後のコミットを破棄する。検証で退行が確認された場合にのみ用いる。`backup/before-<script-name>` というブランチ名が、復元対象の具体的な参照点。引数なしの `git reset --hard` や `HEAD~` 構文をこの目的で用いてはならない — それらはバックアップのチェックポイントを目標とせずに作業を破棄してしまうため。
 
-After rollback, investigate the root cause in the script (`safeWrite`
-guard misconfiguration, `existsSync` bypass, etc.) before retrying.
+ロールバック後、再試行の前にスクリプト側の根本原因 (`safeWrite` ガードの設定誤り、`existsSync` の回避など) を調査する。
 
-#### Step 6 — Re-run all checks (verification passed case)
+#### 手順 6 — すべての検査を再実行する (検証成功時)
 
 ```bash
 npm run check
 ```
 
-If all checks pass, the script run is complete. Keep
-`backup/before-<script-name>` until the change is reviewed and merged
-to `main`; delete the branch only after verification has held in
-production.
+すべての検査が通れば、スクリプト実行は完了。`backup/before-<script-name>` は変更が本番でも維持されることが確認されるまで残す。`main` への取り込みと検証保持の両方が済んでから初めてブランチを削除する。
 
-## 2. Scripted Edits (Japanese Content)
+## 2. スクリプト編集 (日本語コンテンツ)
 
-Japanese Markdown body text must not be bulk-rewritten by scripts as a
-normal workflow.
+日本語の Markdown 本文は通常の作業手順としてスクリプトで一括書き換えしてはならない。
 
-In particular, do not use scripts to:
+特に、以下の用途でスクリプトを使ってはならない:
 
-- Restore Japanese body text from older commits.
-- Combine current frontmatter with body text copied from another
-  revision.
-- Rewrite quote blocks across many files at once.
-- Mass-replace translated prose based only on filename matching.
-- Repair tone or quote structure by blind global replacement.
+- 過去のコミットから日本語本文を復元する。
+- 現在の冒頭メタデータと、別リビジョンからコピーした本文を結合する。
+- 引用ブロックを多数のファイルに渡って一括書き換えする。
+- ファイル名の一致だけを根拠に翻訳済み散文を一括置換する。
+- 盲目的なグローバル置換で口調や引用構造を修復する。
 
-This is especially dangerous for Japanese entries because one bulk edit
-can silently damage:
+これは特に日本語エントリーで危険。一度の一括編集が、以下を黙って破壊しうる:
 
-- Translated quote structure.
-- `tone-skip` boundaries.
-- Speaker annotations.
-- Line breaks and paragraph rhythm.
-- Internal links added after the older revision.
+- 翻訳済みの引用構造。
+- `tone-skip` の境界。
+- 話者注釈。
+- 改行と段落のリズム。
+- 旧リビジョン以後に追加された内部リンク。
 
-Safe script usage for Japanese content is limited to:
+日本語コンテンツに対する安全なスクリプト用途は以下に限られる:
 
-- Validation and mismatch detection.
-- Read-only analysis.
-- Narrowly-scoped metadata updates.
-- Deterministic path and frontmatter changes.
+- 検証と不一致検出。
+- 読み取り専用の分析。
+- 範囲を限定したメタデータ更新。
+- 確定的なパスと冒頭メタデータの変更。
 
-If a script flags a Japanese content issue, use the script to identify
-the target files, then review and edit the content itself deliberately.
-Treat the script as a detector, not as an auto-author of prose.
+スクリプトが日本語コンテンツの問題を検出した場合、対象ファイルの特定にスクリプトを用い、その後に内容そのものを意識的に確認・編集する。スクリプトを検出器として扱い、散文の自動著者として扱わない。
 
-See also `STYLE_GUIDE.md § Scripted Edits Policy` for the cross-language
-version of this principle.
+言語非依存の同原則は `STYLE_GUIDE.md § Scripted Edits Policy` を参照。
 
-## 3. BitcoinTalk Fetching: Thread Size Limits
+## 3. BitcoinTalk 取得: スレッドサイズの上限
 
-When fetching BitcoinTalk threads (e.g. `fetch-replies-to-satoshi.mjs`),
-limit the maximum pages per thread. Some threads grow into hundreds or
-thousands of pages over the years.
+BitcoinTalk スレッドを取得するとき (例: `fetch-replies-to-satoshi.mjs`)、スレッドあたりの最大ページ数を制限する。一部のスレッドは長年の経過で数百〜数千ページに膨らむ。
 
-### Known mega-threads (as of 2026)
+### 既知の巨大スレッド (2026 年時点)
 
-| Topic | Pages | Note |
+| トピック | ページ数 | 補足 |
 |---|---|---|
-| topic-1976 | 1,154+ | Long-running discussion thread |
+| topic-1976 | 1,154+ | 長期に渡る議論スレッド |
 | topic-1334 | 56 | |
 | topic-287 | 73 | |
 
-### Required limits
+### 必須の上限
 
-1. **`MAX_PAGES_PER_THREAD = 50`** — caps fetch at ~1,000 posts per
-   thread. This covers Satoshi's active period (2010–2011) for any
-   thread he participated in.
-2. **Date-based early termination** — if all posts on a fetched page
-   are past `MAX_DATE` (2012-01-01), stop fetching subsequent pages.
-   BitcoinTalk threads are time-ordered, so subsequent pages will also
-   be past the date.
+1. **`MAX_PAGES_PER_THREAD = 50`** — スレッドあたり ~1,000 投稿で取得を打ち切る。サトシが参加した任意のスレッドについて、彼の活動期 (2010〜2011) を網羅する。
+2. **日付ベースの早期打ち切り** — 取得したページの全投稿が `MAX_DATE` (2012-01-01) より後であれば、後続ページの取得を停止する。BitcoinTalk のスレッドは時系列順なので、後続ページもすべて当該日付以降になる。
 
-### Why this matters
+### この上限が重要な理由
 
-Without these limits:
+これらの上限がないと:
 
-- topic-1976 alone takes ~38 minutes (1,154 pages × 2 second delay).
-- Most pages are post-2012 garbage (filtered out anyway).
-- A single mega-thread can stall the entire fetch pipeline.
+- topic-1976 だけで ~38 分かかる (1,154 ページ × 2 秒のディレイ)。
+- 大半のページは 2012 年以降の不要内容 (どのみち除外される)。
+- 一つの巨大スレッドが取得パイプライン全体を停滞させる。
 
-## 4. Re-scrape / Re-generation Guard
+## 4. 再スクレイプ・再生成のガード
 
-When re-scraping or regenerating context posts (EN or JA):
+文脈投稿 (EN または JA) を再スクレイプ・再生成するとき:
 
-1. **Before re-scrape**: create a backup branch of the current JA
-   translations:
+1. **再スクレイプ前**: 現在の JA 翻訳のバックアップブランチを作る:
 
    ```bash
    git checkout -b backup/ja-pre-rescrape
    ```
 
-   (Same backup-branch convention as § 1 Step 1; the name records what
-   the branch is protecting.)
+   (§ 1 手順 1 と同じバックアップブランチ命名規約。ブランチ名が何を保護しているかを記録する。)
 
-2. **After re-scrape**: run
+2. **再スクレイプ後**: 以下を実行して翻訳の損失を特定する。
 
    ```bash
    git diff backup/ja-pre-rescrape -- src/data/translations/ja/
    ```
 
-   to identify any translation loss.
+3. **再翻訳後**: コミット前にすべての JA 検査を実行する:
+   - `npm run check:ja-names` — 人名はカタカナでなければならない。
+   - `npm run check:ja-titles` — 文脈投稿のタイトルは日本語でなければならない。
+   - `npm run check:ja-tone` — 口調規則を満たさなければならない。
+   - `npm run check:ja-glossary` — 用語集を満たさなければならない。
 
-3. **After re-translation**: run all JA checks before committing:
-   - `npm run check:ja-names` — person names must be katakana.
-   - `npm run check:ja-titles` — context post titles must be Japanese.
-   - `npm run check:ja-tone` — tone rules must pass.
-   - `npm run check:ja-glossary` — terminology glossary must pass.
+4. **手動確認**: 引用ブロックが EN 側の構造と一致することを確認 (同じ段落が引用されている)。
 
-4. **Manual review**: verify quote blocks match EN structure (same
-   paragraphs quoted).
-
-Re-scrape commits that overwrite existing JA translations without
-preserving katakana names, translated titles, quote structure, and tone
-annotations are considered regressions.
+カタカナ化された人名・翻訳済みタイトル・引用構造・口調注釈を保持せずに既存の JA 翻訳を上書きする再スクレイプのコミットは退行と見なされる。
 
 ---
 
-# References
+# 参照
 
-- `STYLE_GUIDE_JA.md` — editorial style rules for Japanese content.
-- `STYLE_GUIDE.md § Scripted Edits Policy` — cross-language version of
-  the scripted-edits principle.
+- `STYLE_GUIDE_JA.md` — 日本語コンテンツの編集スタイル規則。
+- `STYLE_GUIDE.md § Scripted Edits Policy` — スクリプト編集原則の言語非依存版。
