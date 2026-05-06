@@ -112,7 +112,7 @@ translationStatus: complete
 
 文体計量によるサトシ特定の研究は、上の構造的プロファイル比較表とは別の方法論的系譜である。最も多く引用される 4 件は、候補プールの設計・距離指標・コーパスの境界に応じて異なる首位候補を生んでいる。構造的比較表（英語水準・サイファーパンクフォーラム等）は前提条件を記述するもので、下の文体計量の記録は結果を記述するものである — 両者は同じレイヤではない。
 
-| 候補 | [Skye Grey 2013](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)（単独仮説） | [アストン 2014](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)（11 候補） | [ヴァン・ドルスト 2024](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)（75,000+）／[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [カフィエロ／カレイロウ NYT 2026](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)（12 候補、広範プール 620） |
+| 候補 | [Skye Grey 2013](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)<br>（単独仮説） | [アストン 2014](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)<br>（11 候補） | [ヴァン・ドルスト 2024](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)<br>（75,000+）／[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [カフィエロ／カレイロウ NYT 2026](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)<br>（12 候補、広範プール 620） |
 |---|---|---|---|---|
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | — | 順位非公開 | 3 位 | **首位** |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | — | 順位非公開 | 4 位 | 順位非公開 |

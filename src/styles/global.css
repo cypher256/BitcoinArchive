@@ -144,6 +144,15 @@ th, td {
   padding: 0.5rem 0.75rem;
   text-align: left;
   vertical-align: top;
+  /* Soften JA line-break rules inside table cells. The default
+     `line-break: strict` keeps full-width opening brackets such as
+     `（` and `「` from sitting at end-of-line, which packs short
+     header strings like `Skye Grey 2013（単独仮説）` onto a single
+     line and forces the column to widen. `loose` allows the break
+     before the opening bracket so the parenthetical wraps onto the
+     next line, giving a slimmer column without sacrificing
+     readability. */
+  line-break: loose;
 }
 
 th {
