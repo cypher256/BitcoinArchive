@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2011-09-01-vitalik-buterin-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
 *Bitcoin Magazine* は 2012 年、ミハイ・アリシエと [ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/) によって共同創刊され、初の印刷版は 2012 年 5 月に発行された。ビットコインに特化した最初の印刷媒体であり、業界で最長期に運営されているビットコイン専門ジャーナリズム媒体の一つ。

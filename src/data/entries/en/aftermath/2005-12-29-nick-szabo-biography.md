@@ -67,7 +67,7 @@ timeline
 ```
 
 ### Smart Contracts
-In 1994, Szabo coined the term "smart contracts" — self-executing agreements with the terms directly written into code. This concept, decades ahead of its time, would later become the foundation of platforms like Ethereum.
+In 1994, Szabo coined the term "smart contracts" — self-executing agreements with the terms directly written into code. This concept, decades ahead of its time, would later become the foundation of platforms like [Ethereum](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/).
 
 ### Bit Gold
 In 1998, Szabo conceived Bit Gold, a decentralized digital currency system based on proof-of-work. He published the full design on his Unenumerated blog on December 29, 2005. Bit Gold addressed the fundamental problem of creating digital scarcity without a trusted third party — the same problem Bitcoin would solve. Szabo later reflected: "Nearly everybody who heard the general idea thought it was a very bad idea."

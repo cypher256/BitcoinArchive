@@ -60,6 +60,7 @@ relatedEntries:
   - aftermath/2011-08-01-jihan-wu-biography
   - aftermath/2015-01-01-amaury-sechet-biography
   - aftermath/2013-10-01-mike-belshe-biography
+  - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 inlineLinkKeywords:
   - "ビットコイン分岐の系譜"
   - "ブロックサイズ戦争"
@@ -99,7 +100,7 @@ inlineLinkKeywords:
 | 2011-04-18 | [ネームコイン](/BitcoinArchive/ja/entries/aftermath/2011-04-18-namecoin-launch/) | ヴィンセント・ダラム (BitcoinTalk のハンドル `vinced`) | ソースコードの直接フォーク (最初のアルトコイン)。[BitcoinTalk の BitDNS スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/) を起点とする | 分散型 DNS / 名前登録。ビットコインとマージマイニング |
 | 2011-10-13 | [ライトコイン (LTC)](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/) | チャーリー・リー (Google エンジニア、BitcoinTalk のハンドル `coblee`) | ビットコインのソースコードフォーク | Scrypt PoW (ASIC 耐性を意図)、2.5 分ブロック、上限 8400 万 |
 | 2013-12-06 | [ドージコイン (DOGE)](/BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/) | ビリー・マーカス (IBM エンジニア、ビットコイン愛好家)、ジャクソン・パーマー (Adobe Sydney マーケティング) | ライトコイン (ビットコインの派生) のソースコードフォーク | 当初はジョーク / ミーム。大規模なインフレ供給。文化的影響 |
-| 2015-07-30 | イーサリアム (ETH) | [ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/) 他 ─ 17 歳でビットコインコミュニティに参入、[Bitcoin Magazine 共同創設](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/)、ビットコインソフトウェア (`pybitcointools`) に寄稿、ビットコインのスクリプト言語拡張を主張した後イーサリアムへ転向 | コードベースは独立、設計の出発点はビットコインコミュニティ | チューリング完全なスマートコントラクト、アカウントモデル (UTXO ではなく) |
+| 2015-07-30 | [イーサリアム (ETH)](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/) | [ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/) 他 ─ 17 歳でビットコインコミュニティに参入、[Bitcoin Magazine 共同創設](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/)、ビットコインソフトウェア (`pybitcointools`) に寄稿、ビットコインのスクリプト言語拡張を主張した後イーサリアムへ転向 | コードベースは独立、設計の出発点はビットコインコミュニティ | チューリング完全なスマートコントラクト、アカウントモデル (UTXO ではなく) |
 
 イーサリアムを本表に含めたのは、チェーンの起源そのものがビットコインを**経由している**ため。[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/) は 2011 年 17 歳でビットコインに出会い、ミハイ・アリシエと [*Bitcoin Magazine* を共同創設](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) (初の印刷版は 2012 年 5 月)、広く使われた `pybitcointools` ライブラリ等のビットコインソフトウェアに寄稿し、2013 年を通してビットコインのスクリプト言語に汎用計算を載せる拡張について Bitcoin Magazine の記事や Mastercoin チームとの対話で広く論じた。ビットコイン開発コミュニティはその方向に収束せず、Mastercoin プロトコルを汎化する提案も採用されなかった。ブテリンは 2013 年末のイーサリアム白書序文でこの結論を記録し、スクリプト構想を新規コードベースに持ち込む別チェーンの立ち上げに関わった。イーサリアムのアカウントモデル・EVM 設計・ガス課金は独立したエンジニアリングだが、**動機** ─ ビットコインに似た合意機構に任意の計算を載せる ─ はブテリンの Bitcoin Magazine 期の思考から直接出ている。他のイーサリアム共同創業者 (ギャヴィン・ウッド、チャールズ・ホスキンソン、ジョセフ・ルビン、アンソニー・ディ・イオリオ、ミハイ・アリシエ、アミール・チェトリット) も、イーサリアム以前にビットコイン / サイファーパンク圏で活動していた。
 

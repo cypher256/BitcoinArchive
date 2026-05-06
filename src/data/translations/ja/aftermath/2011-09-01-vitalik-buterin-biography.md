@@ -31,6 +31,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2012-05-01-bitcoin-magazine-launch
+  - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
 ヴィタリック・ブテリン (1994 年 1 月 31 日、ロシア・コロムナ生まれ。6 歳でカナダへ移住) は、2011 年 17 歳でビットコインコミュニティに加わり、初期最も多作のビットコイン記者の一人となった後、2014 年にイーサリアムを立ち上げたプログラマーである。本伝記の Bitcoin Archive 範囲は、ブテリンの公的活動が主にビットコイン中心だった 2011 ~ 2014 年期に絞る。

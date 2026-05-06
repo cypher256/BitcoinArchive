@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2011-09-01-vitalik-buterin-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
 *Bitcoin Magazine* was co-founded in 2012 by Mihai Alisie and [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/), with the first print issue published in May 2012. It is the earliest dedicated print publication focused on Bitcoin, and one of the longest-running Bitcoin-specific journalism outlets in the field.

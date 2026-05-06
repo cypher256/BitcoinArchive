@@ -31,6 +31,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2012-05-01-bitcoin-magazine-launch
+  - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
 Vitalik Buterin (born January 31, 1994, in Kolomna, Russia; raised in Canada from age 6) is a programmer who entered the Bitcoin community in 2011 at age 17 and went on to become one of its most prolific early journalists before founding Ethereum in 2014. The Bitcoin Archive scope of this biography is the 2011–2014 period during which Buterin's primary public activity was Bitcoin-focused.
