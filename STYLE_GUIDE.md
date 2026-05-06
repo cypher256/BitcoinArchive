@@ -59,6 +59,28 @@ of the historical record and must not be normalized as if they were
 Archive editor notes. See category **F** in the
 [Editorial Markers](#editorial-markers) section.
 
+### Body must contain the actual source content — no placeholder bodies
+
+A primary-source entry's body must hold the actual source content
+(email body, forum post text, BIP body, release notes — verbatim in
+the canonical-locale file, translated in the JA mirror). Editor-only
+placeholder bodies that summarize the source and direct the reader to
+the source URL are forbidden: they violate the about-page
+content-preservation policy (*archived content persists permanently
+even when the original source URL becomes unavailable*) and hold
+nothing of value the moment the source URL goes down.
+
+If the source content is not yet imported, fetch it before writing
+the entry. Available fetch scripts (BitcoinTalk thread-starters,
+context-post replies, replies to Satoshi, Satoshi Nakamoto Institute
+archive, GitHub Satoshi mentions) are inventoried in
+[`STYLE_GUIDE_JA_OPS.md`](STYLE_GUIDE_JA_OPS.md). When no existing
+script covers the target source, retrieve the page directly (browser,
+`curl`, or `WebFetch`) and paste the content into the entry body.
+Editor framing (`*[Editor: ...]*`, `*[Context: ...]*`) goes around
+the actual content as supplementary context, never as a substitute
+for it.
+
 ## Editorial / Narrative Entries
 
 This section covers the **quotation form** used inside editor-written
@@ -80,6 +102,46 @@ Typical pattern:
 
 - English: `> "..."` for short excerpted speech or statements
 - Japanese: `> 「...」` for short excerpted speech or statements
+
+## Link Integrity
+
+Inline links in body prose must satisfy a simple invariant: the
+**visible link text and the destination URL describe the same
+thing**. A reader hovering over `[Ethereum whitepaper](.../participants/vitalik-buterin/)`
+sees text that promises a whitepaper and a URL that goes to a
+participant page; this is a misleading link and must be fixed.
+
+Common failure shapes to watch for:
+
+- Linking a famous artifact name (whitepaper, paper, talk, post) to
+  the author's biography or participant page, when no archive entry
+  for the artifact itself exists.
+- Linking an event name (conference, hard fork, announcement) to a
+  general analysis or biography rather than the specific event entry.
+- Linking a chain name (Bitcoin Cash, Ethereum) to a person's
+  participant page rather than the chain's own announcement entry.
+
+These accumulate when an editor knows a related destination exists
+elsewhere and reaches for any link anchor in the sentence to surface
+it. The fix is per-link: each `[text](url)` should be checked against
+the question "does the URL describe the text?".
+
+When the desired destination doesn't exist as an archive entry, pick
+the resolution that preserves accuracy:
+
+- Drop the link entirely and use plain text.
+- Move the link to a destination whose content genuinely matches the
+  text (e.g., the participant page for a person whose name is the
+  text).
+- Restate the link text to describe the actual destination
+  (e.g., `[Buterin participant page](.../participants/vitalik-buterin/)`
+  instead of `[Ethereum whitepaper](.../participants/vitalik-buterin/)`).
+
+The biography-cross-link rule in [§ Biography Linking](#biography-linking)
+and the inline-keyword rule in
+[§ Inline-Link Coverage for Analysis and Biography Pages](#inline-link-coverage-for-analysis-and-biography-pages)
+both presuppose this integrity invariant; they say *where* to link, not
+*how* to mismatch text and URL.
 
 ## Source Citation: `sourceUrl` vs `secondarySources`
 
@@ -746,6 +808,29 @@ specifically:
 - Small biographies (few or no canonical entries) may have 0–1
   relatedEntries. That is acceptable.
 
+### Body integration for Satoshi-candidate biographies
+
+A biography of a person named in any
+`analysis/*-satoshi-identity-hypothesis.md` entry is a Satoshi-candidate
+biography. The candidacy mention must be **integrated into the main
+biography prose** (typically the closing paragraph of the
+relationship-to-Bitcoin section) — not placed in a standalone trailing
+"Satoshi Speculation" / "サトシ推測" section. The integrated paragraph
+names: why the person is a recurring candidate (Bit Gold lineage, RPOW
++ first Bitcoin recipient, b-money reference [1], etc.), the
+hypothesis entry as the principal destination (linked inline), the
+principal supporting articulations (Skye Grey 2013, Aston 2014,
+Cafiero / Carreyrou 2026, each linked where an archive entry exists),
+and the principal counter-evidence (alibi, denial, capability gap,
+Patoshi-scale inconsistency — likewise linked).
+
+Existing examples to mirror: Wei Dai, Hal Finney, Sassaman, Kaneko,
+Szabo biographies. A standalone trailing "Speculation" section is the
+deprecated form; migrate existing ones to the integrated form when the
+bio is touched. The candidate-status mention is part of the person's
+documented public reception, not an editorial footnote — it belongs in
+the same narrative register as the rest of the bio.
+
 ### Audit checklist
 
 When creating or editing a biography, verify:
@@ -1187,6 +1272,18 @@ In `flowchart`, node labels with brackets/parens/colons must be quoted
 `timeline`, the event text after `:` is plain text — quoting it
 displays the quotes literally inside the rendered card. Avoid
 quoting timeline events; use the syntax above.
+
+#### Period headers: year-only
+
+All Mermaid timelines in this archive use **year-only period headers**
+(`YYYY`) and group multiple same-year events via the `: Event`
+continuation pattern (see the authoring example above). Per-event
+headers like `YYYY-MM` or `YYYY-MM-DD` are not used — they fragment
+the diagram into one column per event and make the year-by-year ramp
+invisible. Within-year ordering and month / day specificity are
+preserved by writing `(Jan)`, `(Aug 1)`, etc. inline in each event
+description. The convention is the same across biographies,
+hypothesis pages, and analysis entries.
 
 #### Title conventions and required diagrams: biographies and hypothesis pages
 

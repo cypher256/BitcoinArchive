@@ -4,12 +4,21 @@
 
 **Before doing any of the following — proposing, planning, editing,
 adding entries, choosing tools, picking visualizations, writing
-commit messages — Claude MUST have read these three files in full,
-top to bottom, in this session:**
+commit messages — Claude MUST have read these files in full, top to
+bottom, in this session:**
 
-- `STYLE_GUIDE.md` (~1300 lines)
-- `STYLE_GUIDE_JA.md` (~700 lines)
-- `STYLE_GUIDE_JA_OPS.md` (~240 lines)
+- `STYLE_GUIDE.md`
+- `STYLE_GUIDE_JA.md`
+- `STYLE_GUIDE_JA_OPS.md`
+- `src/pages/about.astro` and `src/pages/ja/about.astro`
+
+The about pages are the canonical source of the archive's mission and
+content-preservation policy ("archived content persists permanently
+even when the original source URL becomes unavailable"). Without
+reading them, the operational rules in the style guides are
+ungrounded — and editorial decisions like writing a placeholder
+primary-source entry, or framing instead of preserving content, will
+quietly violate the mission while passing the style-guide checks.
 
 "In full" means line 1 to the last line via the `Read` tool, advancing
 `offset` until end of file. **`grep` / search is not a substitute for
@@ -27,9 +36,9 @@ should read, what the source-citation rules are, when JA pages may
 include English original text, how scripted edits must be guarded,
 and so on. Skipping the read leads to wrong tool choices, broken
 cross-language conventions, regressions on previously-fixed issues,
-and rework. The cost of reading ~2,300 lines once per session is
-trivial compared to the cost of producing a non-conforming change
-and having to redo it.
+and rework. The cost of reading the listed files once per session is
+trivial compared to the cost of producing a non-conforming change and
+having to redo it.
 
 If a session has been long-running and the guides have already been
 read fully, this gate is satisfied; do not re-read on every prompt.
