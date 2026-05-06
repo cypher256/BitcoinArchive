@@ -75,6 +75,9 @@
  * the bare form leaves the transformer unregistered.
  */
 import { visit } from 'unist-util-visit';
+import { MIRROR_BASE } from '../../site-config.mjs';
+
+const SOURCE_PREFIX = `${MIRROR_BASE}/`;
 
 // ---------------------------------------------------------------------------
 // Source parsing — pull `%% link: URL` lines and pair them to items.
@@ -180,9 +183,9 @@ const HANDLERS = {
 // rewriting has to be reapplied here. Without it, Mermaid anchors on
 // Cloudflare Pages (base `/`) point to `/BitcoinArchive/...` and 404.
 function rewriteBase(url) {
-  const base = process.env.CF_PAGES ? '/' : '/BitcoinArchive/';
-  if (typeof url === 'string' && url.startsWith('/BitcoinArchive/')) {
-    return base + url.slice('/BitcoinArchive/'.length);
+  const base = process.env.CF_PAGES ? '/' : SOURCE_PREFIX;
+  if (typeof url === 'string' && url.startsWith(SOURCE_PREFIX)) {
+    return base + url.slice(SOURCE_PREFIX.length);
   }
   return url;
 }

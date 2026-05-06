@@ -1,5 +1,6 @@
 ---
 import type { Lang } from '../i18n/ui';
+import { MIRROR_BASE } from '../lib/constants';
 
 interface Props {
   lang: Lang;
@@ -118,7 +119,7 @@ const channelOrder = [
   'other',
 ];
 
-const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchive/entries/';
+const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/entries/`;
 ---
 
 <div class="satoshi-timeline">

@@ -27,6 +27,7 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { MIRROR_BASE } from '../site-config.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), '..');
@@ -35,12 +36,12 @@ const COLLECTIONS = [
   {
     name: 'en',
     base: path.join(ROOT, 'src/data/entries/en'),
-    linkPrefix: '/BitcoinArchive/entries/',
+    linkPrefix: `${MIRROR_BASE}/entries/`,
   },
   {
     name: 'ja',
     base: path.join(ROOT, 'src/data/translations/ja'),
-    linkPrefix: '/BitcoinArchive/ja/entries/',
+    linkPrefix: `${MIRROR_BASE}/ja/entries/`,
   },
 ];
 

@@ -25,6 +25,7 @@
  */
 import { visit } from 'unist-util-visit';
 import { participantDisplayNamesJaBySlug } from '../i18n/participants.ts';
+import { MIRROR_BASE } from '../../site-config.mjs';
 
 const QUOTE_MARKER_RE = /^<!--\s*quote:\s*(\w+)\s*-->$/;
 const TONE_SKIP_RE = /^<!--\s*tone-skip\s*-->$/;
@@ -137,7 +138,7 @@ function getNextBlockquote(parent, startIndex) {
 }
 
 export function remarkQuoteBlocks() {
-  const base = process.env.CF_PAGES ? '/' : '/BitcoinArchive/';
+  const base = process.env.CF_PAGES ? '/' : `${MIRROR_BASE}/`;
 
   return (tree, vfile) => {
     const frontmatter = vfile.data?.astro?.frontmatter;
