@@ -1,5 +1,5 @@
 ---
-title: "サトシからウェイ・ダイへ：Bitcoinホワイトペーパーでのb-money引用について（2008-08-22）"
+title: "サトシからウェイ・ダイへ：ビットコインホワイトペーパーでのb-money引用について（2008-08-22）"
 date: 2008-08-22T00:00:00Z
 type: "correspondence"
 source: "gwern"

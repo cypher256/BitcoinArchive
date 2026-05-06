@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがBitcoin Linux 0.1.6-test1ビルドをメール添付でマルミに送付し、テストを依頼。"
+description: "サトシがビットコインLinux 0.1.6-test1ビルドをメール添付でマルミに送付し、テストを依頼。"
 isSatoshi: true
 tags:
   - "correspondence"

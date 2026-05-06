@@ -111,22 +111,22 @@ The critical sequence that produced the 2017 hard-fork rupture:
 
 ```mermaid
 timeline
-    2010-09 : Satoshi commits the 1 MB block size limit (anti-spam)
+    2010 : Satoshi commits the 1 MB block size limit (Sep, anti-spam)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit/
-    2014    : Block fullness becomes occasional
-    2015-08 : Mike Hearn / Gavin Andresen launch Bitcoin XT (8 MB)
+    2014 : Block fullness becomes occasional
+    2015 : Mike Hearn / Gavin Andresen launch Bitcoin XT (Aug, 8 MB)
     %% link: /BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/
-    2016-01 : Mike Hearn publishes "The resolution of the Bitcoin experiment" — sells all BTC
+    2016 : Mike Hearn publishes "The resolution of the Bitcoin experiment" (Jan) — sells all BTC
     %% link: /BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
-    2016-02 : Bitcoin Classic (2 MB) launches
-    2017-05 : New York Agreement (NYA) — SegWit + 2 MB hard fork compromise
-    2017-08-01 : Bitcoin Cash forks (8 MB, no SegWit)
+         : Bitcoin Classic launches (Feb, 2 MB)
+    2017 : New York Agreement / NYA (May, SegWit + 2 MB hard fork compromise)
+         : Bitcoin Cash forks (Aug 1, 8 MB, no SegWit)
     %% link: /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
-    2017-08-24 : SegWit activates on main chain
+         : SegWit activates on main chain (Aug 24)
     %% link: /BitcoinArchive/entries/bip/2015-12-21-bip-0141/
-    2017-11-08 : SegWit2x cancelled three days before scheduled hard fork
+         : SegWit2x cancelled three days before scheduled hard fork (Nov 8)
     %% link: /BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/
-    2018-11-15 : Bitcoin SV splits from Bitcoin Cash (128 MB, "original protocol")
+    2018 : Bitcoin SV splits from Bitcoin Cash (Nov 15, 128 MB, "original protocol")
     %% link: /BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/
 ```
 

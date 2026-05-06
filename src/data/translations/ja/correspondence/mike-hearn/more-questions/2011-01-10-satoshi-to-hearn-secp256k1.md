@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシがハル・フィニーは初期の支援者であったことを確認し、Bitcoinはリリース前に2年間の開発を要したことを明かし、ECDSA曲線と鍵サイズの選択理由を説明する。"
+description: "サトシがハル・フィニーは初期の支援者であったことを確認し、ビットコインはリリース前に2年間の開発を要したことを明かし、ECDSA曲線と鍵サイズの選択理由を説明する。"
 isSatoshi: true
 tags:
   - "correspondence"

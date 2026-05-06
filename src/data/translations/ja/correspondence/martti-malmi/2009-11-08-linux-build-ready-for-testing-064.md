@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがLinuxビルドの正常動作を確認し、BitcoinがLinuxで動作するという重要なマイルストーンの達成を祝福。"
+description: "マルミがLinuxビルドの正常動作を確認し、ビットコインがLinuxで動作するという重要なマイルストーンの達成を祝福。"
 isSatoshi: false
 tags:
   - "correspondence"
