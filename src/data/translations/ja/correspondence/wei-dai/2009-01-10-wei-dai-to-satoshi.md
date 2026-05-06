@@ -16,9 +16,6 @@ tags:
   - "b-money"
   - "feedback"
   - "origins"
-secondarySources:
-  - name: "Gwern's Archive"
-    url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 translationStatus: complete
 ---
 

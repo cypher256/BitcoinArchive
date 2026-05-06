@@ -19,9 +19,6 @@ tags:
   - "code-contributions"
   - "adoption"
 secondarySources:
-  - name: "Wikipedia - Gavin Andresen"
-    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
-    note: "Based on publicly available information from Wikipedia, MIT Technology Review, and other published accounts. The specific private emails between Andresen and Satoshi from this period have not been publicly released in full"
   - name: "MIT Technology Review - The Man Who Really Built Bitcoin"
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
   - name: "CoinGeek - Bitcoin Faucet Turns 12"

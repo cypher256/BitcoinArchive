@@ -17,9 +17,6 @@ tags:
   - "earliest-correspondence"
   - "adam-back"
   - "origins"
-secondarySources:
-  - name: "Gwern's Archive"
-    url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 relatedEntries:
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"

@@ -22,9 +22,6 @@ tags:
   - "bitcoin-list"
   - "cryptography-mailing-list"
 secondarySources:
-  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
-    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全なメールはBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
   - name: "Cryptography Mailing List Archive"

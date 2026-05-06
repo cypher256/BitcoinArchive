@@ -19,9 +19,6 @@ tags:
   - "privacy"
   - "multiple-addresses"
 secondarySources:
-  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
-    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---

@@ -19,9 +19,6 @@ tags:
   - "send-to-ip"
   - "v0.1.3"
 secondarySources:
-  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
-    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails. Transaction details documented on Trammell's blog"
   - name: "Dustin Trammell's Blog - Block 286"
     url: "https://blog.dustintrammell.com/block-286-and-satoshis-coins/"
 relatedEntries:

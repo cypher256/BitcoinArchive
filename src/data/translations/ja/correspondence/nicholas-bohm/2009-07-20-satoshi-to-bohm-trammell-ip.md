@@ -19,9 +19,6 @@ tags:
   - "early-network"
   - "dustin-trammell"
 secondarySources:
-  - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
-    url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
-    note: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。IPアドレスの分析はDecashed（2025年3月）による"
   - name: "Decashed - Node IP Disclosed in COPA Case Likely Belonged to Dustin Trammell"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 translationStatus: complete

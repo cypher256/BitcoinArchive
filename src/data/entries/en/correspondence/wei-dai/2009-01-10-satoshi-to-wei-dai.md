@@ -17,9 +17,6 @@ tags:
   - "bitcoin-release"
   - "hal-finney"
   - "origins"
-secondarySources:
-  - name: "Gwern's Archive"
-    url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 ---
 
 I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). Details, download and screenshots are at www.bitcoin.org

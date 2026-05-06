@@ -19,9 +19,6 @@ tags:
   - "connectivity"
   - "bug-report"
 secondarySources:
-  - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
-    url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
-    note: "COPA v. Craig Wright trial evidence. Bohm's witness statement was filed as {C/10/1}. Justice Mellor noted at paragraph 271.9 that Mr. Bohm \"sadly died just before the Trial commenced.\""
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
