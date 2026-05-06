@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "ビットコインをプログラム可能なP2Pソーシャル通貨の基盤と位置づけ、Pekunioとの類似点やRippleについて議論し、ビットコインの信頼不要な設計を説明。"
+description: "ビットコインをプログラム可能なP2Pソーシャル通貨の基盤と位置づけ、Pekunioとの類似点やリップルについて議論し、ビットコインの信頼不要な設計を説明。"
 isSatoshi: true
 tags:
   - "programmable-currency"
@@ -51,10 +51,10 @@ quotes:
 確かに、ネットワーク上の多数のピアにすべての取引の冗長コピーを散布するというコンセプトはPekunioに非常に似ているが、実装はWizard Rabbit Treasurerのようなレピュテーションネットワークではない。実際、ビットコインはレピュテーションをまったく使用しない。ネットワークを単なる大きな群衆と見なし、誰と話すか、誰が何かを教えてくれるかをあまり気にしない。ネットワーク上でブロードキャストされている情報を少なくとも一人が中継してくれる限り問題ない。嘘をつく方法がないので気にしないのだ。暗号学的証明を伝えるか、無視されるかのどちらかだ。
 
 <!-- speaker: Martien van Steenbergen -->
-> _Rippleを知っているか？_
+> _リップルを知っているか？_
 
 <!-- speaker: Satoshi Nakamoto -->
-信頼システムとしては、Rippleは信頼を集中させるのではなく分散させるという点でユニークだ。
+信頼システムとしては、リップルは信頼を集中させるのではなく分散させるという点でユニークだ。
 
 <!-- speaker: Martien van Steenbergen -->
 > _ビットコインはプロトコル仕様としても利用可能か（異なる言語バインディングと実装を容易にする — 仕様で統一し、実装で競争する）。_

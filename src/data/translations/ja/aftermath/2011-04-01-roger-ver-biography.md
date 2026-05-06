@@ -1,5 +1,5 @@
 ---
-title: "ロジャー・ヴァー (1979–) — Memory Dealers 創業者、初期ビットコインエンジェル投資家、bitcoin.com 運用者、Bitcoin Cash 推進者、通称「Bitcoin Jesus」"
+title: "ロジャー・ヴァー (1979–) — Memory Dealers 創業者、初期ビットコインエンジェル投資家、bitcoin.com 運用者、ビットコインキャッシュ推進者、通称「Bitcoin Jesus」"
 date: 2011-04-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
@@ -29,7 +29,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-ロジャー・キース・ヴァー (1979 年 1 月 27 日、カリフォルニア州サンノゼ生まれ) は、2011 年のビットコイン参入を通じて初期最大級の個人保有者の一人となり、ビットコイン最初期の商業受け入れ経路の運用者 (Memory Dealers)、ビットコイン事業の創業期世代へのエンジェル投資家として知られる。2017 年までに [Bitcoin Cash](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) ハードフォークの最も公的な推進者となり、彼が以前から取得していた bitcoin.com ドメインは同チェーンの主要な広報媒体となった。
+ロジャー・キース・ヴァー (1979 年 1 月 27 日、カリフォルニア州サンノゼ生まれ) は、2011 年のビットコイン参入を通じて初期最大級の個人保有者の一人となり、ビットコイン最初期の商業受け入れ経路の運用者 (Memory Dealers)、ビットコイン事業の創業期世代へのエンジェル投資家として知られる。2017 年までに [ビットコインキャッシュ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) ハードフォークの最も公的な推進者となり、彼が以前から取得していた bitcoin.com ドメインは同チェーンの主要な広報媒体となった。
 
 ## Memory Dealers とビットコイン参入 (2002 ~ 2011)
 
@@ -37,13 +37,13 @@ relatedEntries:
 
 ## エンジェル投資 (2011 ~ 2014)
 
-2011 ~ 2014 年にかけてヴァーは、当時の創業期ビットコイン事業の多くに早期投資を行った ─ BitInstant (チャーリー・シュレムの取引所)、Blockchain.info (ブロックエクスプローラー / ウォレット)、Kraken (取引所)、Bitpay (決済処理事業)、Bitcoin Magazine 自身、その他多数。Ripple (当時は別系統の決済プロトコル) にも初期出資した。当時彼は広く「ビットコインのエンジェル投資家」 と称され、「Bitcoin Jesus」 という通称も ─ 自称の場合もあれば、ジャーナリスト命名の場合もあるが ─ カンファレンスや YouTube 動画での伝道師的なスタイルから定着した。
+2011 ~ 2014 年にかけてヴァーは、当時の創業期ビットコイン事業の多くに早期投資を行った ─ BitInstant (チャーリー・シュレムの取引所)、Blockchain.info (ブロックエクスプローラー / ウォレット)、Kraken (取引所)、Bitpay (決済処理事業)、Bitcoin Magazine 自身、その他多数。リップル (当時は別系統の決済プロトコル) にも初期出資した。当時彼は広く「ビットコインのエンジェル投資家」 と称され、「Bitcoin Jesus」 という通称も ─ 自称の場合もあれば、ジャーナリスト命名の場合もあるが ─ カンファレンスや YouTube 動画での伝道師的なスタイルから定着した。
 
 2014 年、ヴァーは米国籍を放棄しセントクリストファー・ネイビス国籍を取得した。税務上および政治的理由を挙げている。この国籍放棄は後に 2024 年の米税務詐欺容疑の構造的要素となる (後述)。
 
-## ブロックサイズ戦争と Bitcoin Cash (2015 ~ 2017)
+## ブロックサイズ戦争とビットコインキャッシュ (2015 ~ 2017)
 
-2015 年までにヴァーは bitcoin.com (ドメイン) を、より大きなブロックサイズを推進する公開プラットフォームとして位置づけていた。[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) を通してヴァーは、ビットコインの当時の 1 MB 上限がチェーンを日常決済として機能させない要因だと最も声高に主張する一人だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年) と Bitcoin Classic (2016 年) が有効化に失敗し、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協案が崩壊した後、より大きなブロックを望む陣営は 2017 年 8 月 1 日の [Bitcoin Cash ハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) で分裂した。ヴァーは最も目立つ公的推進者であり、bitcoin.com は BCH 推進の主要な媒体となった。彼の「BCH こそサトシが描いた本物のビットコイン」 という枠付けは広範なビットコインコミュニティ内で持続的な論争を生んだ。
+2015 年までにヴァーは bitcoin.com (ドメイン) を、より大きなブロックサイズを推進する公開プラットフォームとして位置づけていた。[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) を通してヴァーは、ビットコインの当時の 1 MB 上限がチェーンを日常決済として機能させない要因だと最も声高に主張する一人だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年) と Bitcoin Classic (2016 年) が有効化に失敗し、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協案が崩壊した後、より大きなブロックを望む陣営は 2017 年 8 月 1 日の [ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) で分裂した。ヴァーは最も目立つ公的推進者であり、bitcoin.com は BCH 推進の主要な媒体となった。彼の「BCH こそサトシが描いた本物のビットコイン」 という枠付けは広範なビットコインコミュニティ内で持続的な論争を生んだ。
 
 ## 米税務詐欺容疑 (2024 年)
 

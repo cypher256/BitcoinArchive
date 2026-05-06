@@ -41,6 +41,6 @@ BIP 101 は、ビットコインの 1 MB ブロックサイズ制限を 2016 年
 
 Bitcoin XT は 2015 年末に約 1,000 ノードを一時的に集めたが、75% の有効化閾値には決して近づかなかった。2016 年 1 月までにノード数は 30 を下回るまで崩落し、ハーンは [「ビットコイン実験の終結」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) を公開してビットコインの失敗を宣言、保有していた全コインを売却した。XT は小規模なネットワークとして存続したが、Bitcoin Core への対抗としては事実上停止した。
 
-ブロックサイズ戦争は XT で終わらなかった。[Bitcoin Classic](https://en.wikipedia.org/wiki/Bitcoin_Classic) が 2016 年 2 月に同様の 2 MB 提案で立ち上がり、Bitcoin Unlimited が 2016 年 10 月にマイナー主導の可変方式で続いた。2017 年 5 月の[ニューヨーク合意](https://en.wikipedia.org/wiki/SegWit2x) は SegWit + 2 MB の妥協を試みた。論争は 2017 年 8 月 1 日の [Bitcoin Cash ハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) で頂点に達した。全経緯は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) に記録されている。
+ブロックサイズ戦争は XT で終わらなかった。[Bitcoin Classic](https://en.wikipedia.org/wiki/Bitcoin_Classic) が 2016 年 2 月に同様の 2 MB 提案で立ち上がり、Bitcoin Unlimited が 2016 年 10 月にマイナー主導の可変方式で続いた。2017 年 5 月の[ニューヨーク合意](https://en.wikipedia.org/wiki/SegWit2x) は SegWit + 2 MB の妥協を試みた。論争は 2017 年 8 月 1 日の [ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) で頂点に達した。全経緯は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) に記録されている。
 
 XT のリリースは、論争の公開フォーク段階の時系列上の起点である。それ以前にもメーリングリストや BitcoinTalk スレッドに不一致は存在したが、2015 年 8 月 15 日は、Bitcoin Core のフォークが、インストール可能なバイナリと公開された有効化スケジュールを伴って製品ソフトウェアとしてリリースされた日付である。

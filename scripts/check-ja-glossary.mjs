@@ -134,6 +134,29 @@ const RULES = [
   // 「システム作者・実装者・運用者」 の総体を指す pseudonym 意では狭すぎる。
   { type: 'literal', deprecated: 'ペンネーム', canonical: '仮名', reason: 'pseudonym/byline 意は「仮名」 で統一（§ II.3 Canonical mappings）。「ペンネーム」 は作家寄りの語感で、サトシのようなシステム作者・実装者・運用者の総体には狭い' },
 
+  // --- 暗号資産名 (派生通貨・他通貨) のカナ化 ---
+  // STYLE_GUIDE_JA.md § II.3 用語集に従い、日本では一般名としてカナが定着している
+  // 派生通貨・アルトコイン名はカナ形に統一する。Wikipedia ja・主要取引所が出典。
+  //
+  // 対象外 (本ルールでは検出されないか、誤検出を避ける):
+  // - secondarySources.name フィールド (frontmatter は maskNonProse で除外済み)
+  // - URL・コードブロック・インラインコード (maskNonProse で除外済み)
+  // - 製品名・ソフトウェア実装名・組織名 (Bitcoin Core / Bitcoin XT / Bitcoin Magazine
+  //   等は本ルールに含まれない)
+  // - 略号 (BTC / ETH / BCH / XEM / XRP / NMC) は英語大文字略号として § I.2 区分 3 で維持
+  //
+  // Mermaid 本文・引用ブロック・タイトル・description は読者向け表示なので検出対象。
+  // 自動規則化が困難な範囲 (Bitcoin 単独・Bitcoin SV) は別途手動レビューで対応。
+  { type: 'literal', deprecated: 'Litecoin', canonical: 'ライトコイン', reason: 'Wikipedia ja 主表記。日本では一般名としてカナが定着' },
+  { type: 'literal', deprecated: 'Dogecoin', canonical: 'ドージコイン', reason: 'Wikipedia ja 主表記' },
+  { type: 'literal', deprecated: 'Ethereum', canonical: 'イーサリアム', reason: 'Wikipedia ja 主表記' },
+  { type: 'literal', deprecated: 'Ripple', canonical: 'リップル', reason: 'Wikipedia ja 主表記。略号 XRP は対象外 (§ I.2 区分 3)' },
+  { type: 'literal', deprecated: 'Namecoin', canonical: 'ネームコイン', reason: '民間情報源 (jpbitcoin / floc.jp 等) で広く使用' },
+  { type: 'literal', deprecated: 'Bitcoin Cash', canonical: 'ビットコインキャッシュ', reason: 'Wikipedia ja 主表記 (空白なし)' },
+  { type: 'literal', deprecated: 'Bitcoin Gold', canonical: 'ビットコインゴールド', reason: 'Wikipedia ja 主表記 (空白なし)' },
+  { type: 'literal', deprecated: 'Cardano', canonical: 'カルダノ', reason: 'Wikipedia ja 主表記' },
+  { type: 'literal', deprecated: 'Monero', canonical: 'モネロ', reason: 'Wikipedia ja 本文併記、日本の取引所・ニュースで広く使用' },
+
   // --- 禁止記号: 全角セミコロン ---
   // 日本語タイポグラフィに「；」 は存在しない。英語ソースの ";" を機械的に
   // 全角化すると発生するが、日本語では文脈に応じて以下のいずれかに置換する:

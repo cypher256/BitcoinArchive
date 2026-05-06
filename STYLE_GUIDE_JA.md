@@ -46,8 +46,9 @@ Bitcoin Institute 日本語版の編集規則。
 1. **コード識別子** — ソースコードからそのまま引用される識別子。
    例: `LoadBlockIndex`、`hashGenesisBlock`、`nNonce`、`assert()`、`ProcessBlock`。
 2. **固有名詞、ブランド名、プロトコル名、製品名** — 英語が正規である名前。
-   例: `Bitcoin`、`Bitcoin Core`、`SegWit`、`Taproot`、`Lightning Network`、`COPA`、`The Times`、`SourceForge`、`BIP 125`。
+   例: `Bitcoin Core`、`Bitcoin Magazine`、`Bitcoin XT`、`Bitcoin Classic`、`Bitcoin Unlimited`、`BitcoinTalk`、`SegWit`、`Taproot`、`Lightning Network`、`COPA`、`The Times`、`SourceForge`、`BIP 125`。
    ハンドル名・仮名・ブランド類似の識別子も同じ扱い (例: `Cobra`、`theymos`、`Twitter`)。
+   **注**: 単独の `Bitcoin` (通貨・プロトコル・ネットワーク言及) は本区分の対象外。日本では一般名としてカナ「ビットコイン」 が定着しているため § II.3 用語集の規則に従う。複合名 (`Bitcoin Core` 等の製品名・組織名) は本区分のとおり英語形維持。
 3. **標準的な技術略語** — 日本のビットコインコミュニティで英語形のまま流通しており、展開形が日本語で使われない略語。
    例: `PoW`、`UTXO`、`SHA-256`、`ECDSA`、`DDoS`、`JSON-RPC`、`URL`、`TCP/IP`。
 4. **引用と出典表示の表面形** — `secondarySources` の `name` フィールド、引用文中の語、URL、タグスラッグ、冒頭メタデータ。`[Quote from: NAME on DATE]` や `NAME wrote:` のような構造的な引用先表示行も含む (§ 4 参照)。
@@ -537,6 +538,18 @@ description が現状で上限を超えている場合は、**収まるように
 | signature (暗号学的) | 署名 | — | Schnorr / ECDSA / メッセージ署名の語義は `署名` を正規とする |
 | signature (仮名 / 署名行) | 仮名 | 署名、ペンネーム | 仮名としての語義 (例: "the signature 'Satoshi Nakamoto'") は暗号学的語義と衝突するため `仮名` を用いる。`ペンネーム` も非推奨 — 作家・著者の語感が強く、システム設計・実装・運用の身元 (サトシは白書だけでなく v0.1 コードベースとネットワーク運用の身元でもある) を覆う仮名には狭すぎる。 |
 | signature (フォレンジック指紋) | 指紋 | 署名 | Patoshi 系のフォレンジック指紋 (例: マイニング指紋、ナンス指紋) は `指紋` を用いる |
+| Bitcoin (通貨・プロトコル・ネットワーク言及) | ビットコイン | Bitcoin (本文中) | 日本では一般名としてカナが定着 (Wikipedia ja・bitFlyer・Coincheck)。製品名・組織名・公式リリース表記は英語形を維持 (§ I.2 区分 2)。Mermaid・d3 のラベルもカナ化対象 (読者向け表示) |
+| Bitcoin Cash (通貨そのもの) | ビットコインキャッシュ | Bitcoin Cash (本文中)、ビットコイン キャッシュ (空白あり) | Wikipedia ja 主表記 (空白なし)。`secondarySources.name` は引用名として英語形維持 |
+| Bitcoin Gold (通貨そのもの) | ビットコインゴールド | Bitcoin Gold (本文中) | Wikipedia ja 主表記 (空白なし) |
+| Bitcoin SV (通貨そのもの) | ビットコインSV | Bitcoin SV (本文中)、ビットコイン SV (空白あり) | Wikipedia ja 主表記 (空白なし)。nChain によるソフトウェア実装名・略号展開 `Bitcoin SV (Satoshi Vision)` は英語形維持 |
+| Litecoin | ライトコイン | Litecoin (本文中) | Wikipedia ja・主要取引所 |
+| Dogecoin | ドージコイン | Dogecoin (本文中) | Wikipedia ja・Coincheck |
+| Ethereum | イーサリアム | Ethereum (本文中) | Wikipedia ja・Coincheck |
+| Ripple | リップル | Ripple (本文中) | Wikipedia ja・Coincheck (XRP の場合は略号として英語形維持) |
+| NEM (一般言及) | ネム | NEM (本文中) | Coincheck「ネム（XEM）」。略号としての `NEM` (英大文字) は § I.2 区分 3 で英語形維持 |
+| Namecoin | ネームコイン | Namecoin (本文中) | 民間情報源で広く使用 (jpbitcoin / floc.jp 等) |
+| Cardano | カルダノ | Cardano (本文中) | Wikipedia ja 主表記 (「カルダノ (ブロックチェーン)」 で立項) |
+| Monero | モネロ | Monero (本文中) | Wikipedia ja 本文「Monero（モネロ）」 と併記。日本の取引所・ニュースで「モネロ」 が広く使用。略号としての英大文字使用は対象外 |
 
 ### 正規対応
 
@@ -579,6 +592,18 @@ description が現状で上限を超えている場合は、**収まるように
 JA × ASCII にまたがる一括置換が、こうした取り残しスペースの発生源。**既存の違反は、周囲の文脈を確認しながら 1 件ずつ修正する** — 別の一括置換で直してはならない。それこそが取り残しスペースの最初の原因だった。
 
 `npm run check:ja-spacing` により強制される。スクリプトはすべての JA Markdown 本文を走査し、フェンス付きコードブロックをスキップする (Mermaid タイムラインの意図的な空白を保つため)。日本語の文字 2 字の間に半角スペースが入っているとビルドが失敗する。
+
+#### 例外: 派生通貨カナ複合名は内部空白なしの一語扱い
+
+固有複合名としての派生通貨カナ表記は、JA → ASCII 境界規則を適用しない。Wikipedia ja の表記慣習に従う。
+
+| ✅ 正規 | ❌ 誤り | 根拠 |
+|---|---|---|
+| ビットコインキャッシュ | ビットコイン キャッシュ | Wikipedia ja 表記 |
+| ビットコインゴールド | ビットコイン ゴールド | Wikipedia ja 表記 |
+| ビットコインSV | ビットコイン SV | Wikipedia ja 表記 |
+
+区別の根拠: `ビットコイン v0.1` の `v0.1` はバージョン番号 (一般属性付与) で空白あり。`ビットコインSV` の `SV` は通貨名の構成要素 (固有名の一部) で空白なし。
 
 ### Mermaid タイムラインのラベル — 日本語の改行
 

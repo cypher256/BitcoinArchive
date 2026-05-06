@@ -41,7 +41,7 @@ translationStatus: complete
 
 > 「私は初期のビットコインに携わり、その過程でサトシ・ナカモトとやり取りした。メールのみだったが、事実上プロジェクトで共同作業を行い、短い期間を経て彼はプロジェクトから退き、もう終わりだと伝えてきた」
 
-ハーンの証言によると、サトシとの通信は[2009年4月12日](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)から[2011年4月23日](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)まで続いた。ビットコインの存在を知ったのはrippleusers@googlegroups.comというメーリングリスト（後のRipple社とは無関係）を通じてだった。サトシに連絡した理由として「ホワイトペーパーやアプリのユーザーインターフェース、ウェブサイトからは分からないことがビットコインには多くあった」と述べた。
+ハーンの証言によると、サトシとの通信は[2009年4月12日](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)から[2011年4月23日](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)まで続いた。ビットコインの存在を知ったのはrippleusers@googlegroups.comというメーリングリスト（後のリップル社とは無関係）を通じてだった。サトシに連絡した理由として「ホワイトペーパーやアプリのユーザーインターフェース、ウェブサイトからは分からないことがビットコインには多くあった」と述べた。
 
 **クレイグ・ライトとの出会い — 夕食会（2016年7月9日）：**
 

@@ -45,11 +45,11 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)以来7年間、Bitcoin の依存ライブラリーであり続けていた。
+2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)以来7年間、ビットコインの依存ライブラリーであり続けていた。
 
 **背景：**
 
-libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィーユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1週間でライブラリーは Bitcoin の全ブロックチェーンを検証可能になった（当時のブロック高は約225,000）。
+libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィーユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1週間でライブラリーはビットコインの全ブロックチェーンを検証可能になった（当時のブロック高は約225,000）。
 
 [グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、プロジェクトは性能実験から、OpenSSL の secp256k1 実装を完全に置き換える Bitcoin 専用ライブラリーへと拡大していった。
 

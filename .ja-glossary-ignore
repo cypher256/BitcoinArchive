@@ -1,0 +1,16 @@
+# Archive 固有の例外: 用語集ルールから除外する表記
+# scripts/check-ja-glossary.mjs が読み込む。
+#
+# 形式: 1行1パターン。# でコメント。空行・コメントのみの行は無視。
+# 各パターンは「違反として報告しない文字列」 として扱われる。
+# マッチ箇所が ignore パターンの中に完全に含まれる場合のみスキップされる。
+
+# Bitcoin Cash ABC: BCH 内部分裂後の Amaury Séchet 実装/通貨名 (後の eCash)。
+# 固有複合実装名として英語形維持 (STYLE_GUIDE_JA.md § I.2 区分 2)。
+# `Bitcoin Cash` 規則の誤発火を回避。
+Bitcoin Cash ABC
+
+# Ripple社: 会社/組織名としての言及 (Ripple Labs Inc. / Ripple Inc.)。
+# 通貨/プロトコル言及はカナ「リップル」 だが、組織名は英語形維持
+# (STYLE_GUIDE_JA.md § I.2 区分 2)。`Ripple` 規則の誤発火を回避。
+Ripple社

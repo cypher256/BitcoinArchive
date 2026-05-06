@@ -281,7 +281,7 @@ quadrantChart
 
 #### ピーター・トッド
 
-**経歴。** カナダ人のビットコインコア開発者（1985 年生まれ）、2012 年頃以降の主要な貢献者の一人で、Replace-by-Fee（RBF）などコアプロトコルの仕事で知られる。OCAD University 卒（Integrated Media 専攻、2011 年）。BitcoinTalk への登録は 2010 年 12 月 7 日、ユーザー名「retep」。
+**経歴。** カナダ人の Bitcoin Core 開発者（1985 年生まれ）、2012 年頃以降の主要な貢献者の一人で、Replace-by-Fee（RBF）などコアプロトコルの仕事で知られる。OCAD University 卒（Integrated Media 専攻、2011 年）。BitcoinTalk への登録は 2010 年 12 月 7 日、ユーザー名「retep」。
 
 **外部的状況。** 自己否定（HBO 後）／コミュニティによる根拠の批判。→ [ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) に [HBO 2024 ドキュメンタリーの主張](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)の分析的扱いを記載。
 

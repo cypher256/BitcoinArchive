@@ -173,7 +173,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 - **米国 Strategic Bitcoin Reserve (2025 年 3 月 6 日)** — 大統領令により Strategic Bitcoin Reserve および United States Digital Asset Stockpile が設立された。ビットコインを米国の主権的準備金政策の対象として正式に位置づけたもの。
 - **中華人民共和国 — ICO・取引所禁止 (2017 年 9 月 4 日)** — 中国規制当局が ICO を禁止し、国内のビットコイン取引所を閉鎖した。詳細は [中国 ICO 禁止のエントリ](/BitcoinArchive/ja/entries/aftermath/2017-09-04-china-ico-ban/) 参照。
 - **米国 — WikiLeaks 圧力経路 (2010 年 12 月〜2011 年 6 月)** — 米政府主導の金融サービス圧力により WikiLeaks の支払いチャネルが遮断された後、コミュニティで提起された「WikiLeaks がビットコイン寄付を受け付けるべき」 という提案にサトシが公的に反対し (「No, don't 'bring it on'...」)、プロジェクトの脆弱性を理由として挙げた。WikiLeaks がビットコインを受け付け始めたのはサトシ撤退後の 2011 年 6 月である。詳細は [WikiLeaks 採用のエントリ](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) 参照。
-- **DPRK / Lazarus Group の仮想通貨活動** — FBI および国連 Panel of Experts によって DPRK 関連の Lazarus Group に帰属とされた大規模な仮想通貨窃盗の連続 (2017 年以降の複数事件)。これらはビットコイン関連の犯罪活動を国家アクターに公的記録上で帰属させている。
+- **DPRK / Lazarus Group の暗号資産活動** — FBI および国連 Panel of Experts によって DPRK 関連の Lazarus Group に帰属とされた大規模な暗号資産窃盗の連続 (2017 年以降の複数事件)。これらはビットコイン関連の犯罪活動を国家アクターに公的記録上で帰属させている。
 - **米国連邦捜査局 (FBI) — Silk Road 押収 (2013 年 10 月)** — FBI が Silk Road ダークネット市場を押収しロス・ウルブリヒトを逮捕。米国連邦のビットコイン関連法執行作戦として公的記録に入った主要事例。
 
 ### 1.5 自己主張・名前一致への対応

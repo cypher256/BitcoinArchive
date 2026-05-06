@@ -42,7 +42,7 @@ const labels = {
   },
   ja: {
     title: "ビットコインのプロトコル分岐と隣接する暗号通貨",
-    subtitle: "各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名とマイルストーンは、対応するアーカイブエントリーが存在する場合にリンクされる (Bitcoin Classic・Bitcoin Unlimited・Bitcoin Gold は専用エントリーがないため表示のみ)。",
+    subtitle: "各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名とマイルストーンは、対応するアーカイブエントリーが存在する場合にリンクされる (Bitcoin Classic・Bitcoin Unlimited・ビットコインゴールドは専用エントリーがないため表示のみ)。",
     todayLabel: "現在",
     statusActive: "稼働中",
     statusHalted: "停止",
@@ -53,16 +53,16 @@ const labels = {
       forkHalted: "停止したフォーク",
     },
     chains: [
-      { id: 'main', name: 'Bitcoin', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
-      { id: 'namecoin', name: 'Namecoin (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
-      { id: 'litecoin', name: 'Litecoin (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
-      { id: 'dogecoin', name: 'Dogecoin (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+      { id: 'main', name: 'ビットコイン', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+      { id: 'namecoin', name: 'ネームコイン (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+      { id: 'litecoin', name: 'ライトコイン (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+      { id: 'dogecoin', name: 'ドージコイン (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
       { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
       { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
       { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
-      { id: 'bitcoin-cash', name: 'Bitcoin Cash (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
-      { id: 'bitcoin-gold', name: 'Bitcoin Gold (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
-      { id: 'bitcoin-sv', name: 'Bitcoin SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+      { id: 'bitcoin-cash', name: 'ビットコインキャッシュ (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+      { id: 'bitcoin-gold', name: 'ビットコインゴールド (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+      { id: 'bitcoin-sv', name: 'ビットコインSV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
     ],
     milestones: [
       { date: '2010-09-01', label: '1 MB ブロック制限', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
@@ -161,7 +161,18 @@ const linkBase = lang === 'ja' ? '/BitcoinArchive/ja/entries/' : '/BitcoinArchiv
       var today = new Date();
       var dateExtent = [new Date('2008-10-01'), today];
 
-      var margin = { top: 80, right: 80, bottom: 40, left: 180 };
+      // Calculate left margin based on longest chain name. JA labels (e.g.,
+      // "ビットコインキャッシュ (BCH)") are wider than EN equivalents, so
+      // hardcoded margin would clip them. Chain labels render at 14px.
+      var maxLabelWidth = chains.reduce(function(max, c) {
+        var w = 0;
+        for (var ci = 0; ci < c.name.length; ci++) {
+          w += (c.name.charCodeAt(ci) > 127) ? 14 : 7.5;
+        }
+        return Math.max(max, w);
+      }, 0);
+      var leftMargin = Math.max(180, Math.ceil(maxLabelWidth) + 24);
+      var margin = { top: 80, right: 80, bottom: 40, left: leftMargin };
       var laneHeight = 30;
       var chartHeight = laneHeight * chains.length + margin.top + margin.bottom;
 
