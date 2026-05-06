@@ -11,6 +11,7 @@ import { remarkEditorialMarker } from './src/lib/remark-editorial-marker.mjs';
 import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
 import { rehypeMermaidWrapper } from './src/lib/rehype-mermaid-wrapper.mjs';
+import { rehypeTableWrapper } from './src/lib/rehype-table-wrapper.mjs';
 
 const { site, base } = getDeploymentConfig();
 
@@ -57,6 +58,11 @@ export default defineConfig({
       // comments in the source. See plugin header for the full design.
       [rehypeMermaidLink, {}],
       rehypeMermaidWrapper,
+      // Wrap each <table> in `<div class="table-scroll">` so wide tables
+      // scroll horizontally inside the wrapper instead of pushing the
+      // whole page into a body-level horizontal scroll on small
+      // viewports. See `.table-scroll` CSS in `src/styles/global.css`.
+      rehypeTableWrapper,
     ],
     // Tell Shiki to skip 'mermaid' code blocks. Without this, Shiki converts
     // them to <pre class="astro-code"> with span-wrapped tokens, stripping

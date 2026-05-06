@@ -124,8 +124,16 @@ hr {
   margin: 2em 0;
 }
 
+/* Table sizing — pairs with `.table-scroll` (rehype-table-wrapper.mjs).
+   - `width: auto` lets the table size to its content: a narrow table
+     stays narrow (no forced 100% stretch), a wider table grows to
+     fill the wrapper and overflows into horizontal scroll only when
+     it exceeds the wrapper.
+   The pairing is the same pattern as `.mermaid-scroll` for figures:
+   the wrapper handles overflow + viewport breakout, the inner element
+   sizes to its natural content. */
 table {
-  width: 100%;
+  width: auto;
   border-collapse: collapse;
   margin: 1em 0;
   font-size: 0.95rem;
@@ -141,6 +149,51 @@ th, td {
 th {
   background: rgba(180, 83, 9, 0.06);
   font-weight: 600;
+}
+
+/* Table overflow wrapper — applied by `rehype-table-wrapper.mjs`.
+   Scrollbar appears only when the table is wider than this wrapper
+   (i.e., wider than the prose container); narrow tables show no
+   scrollbar. Prevents wide tables from triggering body-level
+   horizontal scroll on small viewports. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1em 0;
+  /* Center the inner inline-table horizontally; table contents are
+     reset to left-aligned in the rule below. */
+  text-align: center;
+}
+.table-scroll > table {
+  /* `inline-table` makes the table size to its natural content width
+     instead of the browser's block-level table sizing (which expands
+     to the parent's full width by default). The wrapper's
+     `text-align: center` then centers the inline-table, giving:
+     - narrow table → narrow box, centered, with symmetric breathing
+       room left and right (no awkward "left-stuck" look)
+     - wide table → grows to its natural width and the wrapper's
+       overflow-x kicks in when it exceeds the wrapper.
+     Reset text alignment back to left for cell contents. */
+  display: inline-table;
+  text-align: left;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  /* Same viewport-breakout pattern as `.mermaid-scroll`, but capped
+     at `--max-width-wide` (1200px) so ultra-wide viewports don't
+     stretch the table beyond a comfortable reading range. Without
+     the cap, a 2400px viewport would push the wrapper to ~2300px
+     and the inline-table inside would expand long-text cells to one
+     unwrapped line, killing legibility. The cap is implemented with
+     `min()`: take the smaller of the viewport-edge breakout and the
+     1200px-frame breakout. Below 1200px the rule does not apply. */
+  .table-scroll {
+    --table-breakout: min(
+      calc((100vw - var(--max-width-read) - 3rem) / 2),
+      calc((var(--max-width-wide) - var(--max-width-read)) / 2)
+    );
+    margin-left: calc(-1 * var(--table-breakout));
+    margin-right: calc(-1 * var(--table-breakout));
+  }
 }
 
 /* Utility */
