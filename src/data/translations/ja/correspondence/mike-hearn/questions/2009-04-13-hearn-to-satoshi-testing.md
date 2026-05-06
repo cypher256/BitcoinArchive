@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがMac上のWineでBitcoinをテストしたことを報告し、ブロック数、マイクロペイメントの承認時間、プルーフ・オブ・ワークの調整、難易度調整について質問する。"
+description: "マイク・ハーンがMac上のWineでビットコインをテストしたことを報告し、ブロック数、マイクロペイメントの承認時間、プルーフ・オブ・ワークの調整、難易度調整について質問する。"
 isSatoshi: false
 tags:
   - "correspondence"

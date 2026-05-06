@@ -1,5 +1,5 @@
 ---
-title: "マイク・ハーンからサトシへ：不正利用防止のための担保としてのBitcoin利用（2011-04-18）"
+title: "マイク・ハーンからサトシへ：不正利用防止のための担保としてのビットコイン利用（2011-04-18）"
 date: 2011-04-18T23:14:00Z
 type: "correspondence"
 source: "plan99"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがGoogleの不正利用対策チームでの業務について述べ、スパム防止のためにアカウントの担保としてBitcoinを使用することを提案し、コインのタイムロックについて質問する。"
+description: "マイク・ハーンがGoogleの不正利用対策チームでの業務について述べ、スパム防止のためにアカウントの担保としてビットコインを使用することを提案し、コインのタイムロックについて質問する。"
 isSatoshi: false
 tags:
   - "correspondence"

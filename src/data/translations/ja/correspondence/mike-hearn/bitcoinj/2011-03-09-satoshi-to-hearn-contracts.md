@@ -1,5 +1,5 @@
 ---
-title: "サトシからマイク・ハーンへ：Bitcoinコントラクト・シーケンス番号・高頻度取引（2011-03-09）"
+title: "サトシからマイク・ハーンへ：ビットコインコントラクト・シーケンス番号・高頻度取引（2011-03-09）"
 date: 2011-03-09T17:15:00Z
 type: "correspondence"
 source: "plan99"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシがBitcoinコントラクト、シーケンス番号、nLockTime、高頻度取引チャネルについて最も詳細な説明を行う。マークルブランチ検証だけでは二重支払いを防止できない理由を説明する。"
+description: "サトシがビットコインコントラクト、シーケンス番号、nLockTime、高頻度取引チャネルについて最も詳細な説明を行う。マークルブランチ検証だけでは二重支払いを防止できない理由を説明する。"
 isSatoshi: true
 tags:
   - "correspondence"

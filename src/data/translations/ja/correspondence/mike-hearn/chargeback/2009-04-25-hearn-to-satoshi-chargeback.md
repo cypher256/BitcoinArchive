@@ -1,5 +1,5 @@
 ---
-title: "マイク・ハーンからサトシへ：Bitcoinのチャージバック機能がないことについて（2009-04-25）"
+title: "マイク・ハーンからサトシへ：ビットコインのチャージバック機能がないことについて（2009-04-25）"
 date: 2009-04-25T21:30:00Z
 type: "correspondence"
 source: "plan99"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがサトシに、Electronic Funds Transfer ActがBitcoinに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
+description: "マイク・ハーンがサトシに、Electronic Funds Transfer Actがビットコインに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
 isSatoshi: false
 tags:
   - "correspondence"
