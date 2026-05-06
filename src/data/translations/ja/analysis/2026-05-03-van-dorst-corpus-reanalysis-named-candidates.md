@@ -73,11 +73,11 @@ translationStatus: complete
 
 | 候補 | コーパス内で見つかった著者ファイル |
 |---|---|
-| アダム・バック | `aba_dcs_ex_ac_uk.txt`（エクセター大博士課程メール）、`adam_cypherspace_org.txt` |
-| ウェイ・ダイ | `weidai_eskimo_com.txt`（既知のサイファーパンクアドレス） |
-| ハル・フィニー | `hfinney_shell_portal_com.txt`（サイファーパンクメーリングリストアドレス） |
-| ニック・サボ | `szabo_netcom_com.txt`、`szabo_techbook_com.txt` |
-| レン・サッサマン | `len_sassaman_esat_kuleuven_be.txt`（ルーヴェン・カトリック大学博士課程）、`rabbi_quickie_net.txt`（サイファーパンクハンドル） |
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | `aba_dcs_ex_ac_uk.txt`（エクセター大博士課程メール）、`adam_cypherspace_org.txt` |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | `weidai_eskimo_com.txt`（既知のサイファーパンクアドレス） |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | `hfinney_shell_portal_com.txt`（サイファーパンクメーリングリストアドレス） |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | `szabo_netcom_com.txt`、`szabo_techbook_com.txt` |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | `len_sassaman_esat_kuleuven_be.txt`（ルーヴェン・カトリック大学博士課程）、`rabbi_quickie_net.txt`（サイファーパンクハンドル） |
 
 5 名のうち 2 名が複数のメールアドレスで出現 — ヴァン・ドルストの README 自身が指摘する複数アドレス問題（「一部の著者は複数の名前・メールアドレスで活動していた」）が表面化した可視の事例である。
 

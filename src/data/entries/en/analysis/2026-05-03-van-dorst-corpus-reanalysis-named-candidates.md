@@ -72,11 +72,11 @@ Each named candidate's mailing-list email address was located by substring searc
 
 | Candidate | Author file(s) located in corpus |
 |---|---|
-| Adam Back | `aba_dcs_ex_ac_uk.txt` (Exeter PhD email), `adam_cypherspace_org.txt` |
-| Wei Dai | `weidai_eskimo_com.txt` (well-known cypherpunk address) |
-| Hal Finney | `hfinney_shell_portal_com.txt` (cypherpunk-list address) |
-| Nick Szabo | `szabo_netcom_com.txt`, `szabo_techbook_com.txt` |
-| Len Sassaman | `len_sassaman_esat_kuleuven_be.txt` (KU Leuven PhD), `rabbi_quickie_net.txt` (cypherpunk handle) |
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | `aba_dcs_ex_ac_uk.txt` (Exeter PhD email), `adam_cypherspace_org.txt` |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | `weidai_eskimo_com.txt` (well-known cypherpunk address) |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | `hfinney_shell_portal_com.txt` (cypherpunk-list address) |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | `szabo_netcom_com.txt`, `szabo_techbook_com.txt` |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | `len_sassaman_esat_kuleuven_be.txt` (KU Leuven PhD), `rabbi_quickie_net.txt` (cypherpunk handle) |
 
 Two of the five candidates appear under more than one email — a visible instance of the multi-alias problem van Dorst's README itself flags ("some authors were active under multiple names and/or mail addresses").
 
