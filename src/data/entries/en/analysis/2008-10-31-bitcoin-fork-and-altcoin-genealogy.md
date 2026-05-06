@@ -103,7 +103,9 @@ gitGraph
     commit id: "Taproot activation (2021-11)"
 ```
 
-The branch ordering is chronological by fork event, not by surviving network share. In 2026 the Bitcoin chain ("main") carries the overwhelming majority of network hashrate and economic activity; the visible branches in the diagram are smaller chains, several of which now carry only nominal hash power.
+**Reading the diagram.** Each branch line shows where a chain split off from its parent, not how long the chain has continued operating. A branch ending visually does **not** mean the chain stopped: most of the listed chains are still producing blocks as of 2026 — Namecoin, Litecoin, Dogecoin, Bitcoin Cash, Bitcoin SV, and Bitcoin Gold all continue to operate, although several carry only nominal hashrate. The genuine exceptions are Bitcoin XT, Bitcoin Classic, and Bitcoin Unlimited, which effectively halted within months of launch, and SegWit2x, which was cancelled before forking at all. The §2 and §3 tables below record each chain's status as of 2026.
+
+The branch ordering is chronological by fork event, not by surviving network share. In 2026 the Bitcoin chain ("main") carries the overwhelming majority of network hashrate and economic activity; the visible branches in the diagram are smaller chains.
 
 ## 2. Bitcoin protocol forks
 
