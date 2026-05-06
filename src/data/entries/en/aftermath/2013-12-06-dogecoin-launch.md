@@ -5,7 +5,11 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Dogecoin"
 author: "Billy Markus, Jackson Palmer"
-participants: []
+participants:
+  - name: "Billy Markus"
+    slug: "billy-markus"
+  - name: "Jackson Palmer"
+    slug: "jackson-palmer"
 description: "Markus and Palmer launched Dogecoin on December 6, 2013 as a Litecoin fork around the 'Doge' Shiba Inu meme. Initially a satire of crypto speculation, it grew into a top-10 cryptocurrency."
 isSatoshi: false
 tags:

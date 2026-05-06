@@ -5,7 +5,9 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Namecoin"
 author: "Vincent Durham"
-participants: []
+participants:
+  - name: "Vincent Durham"
+    slug: "vincent-durham"
 description: "ヴィンセント・ダラムが 2011 年 4 月 18 日に Namecoin をローンチ。最初のアルトコインで、BitDNS 提案を実装した分散型の名前登録システム。"
 isSatoshi: false
 tags:

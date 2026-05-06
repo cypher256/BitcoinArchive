@@ -5,7 +5,13 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
 author: "Bitcoin ABC project"
-participants: []
+participants:
+  - name: "Roger Ver"
+    slug: "roger-ver"
+  - name: "Jihan Wu"
+    slug: "jihan-wu"
+  - name: "Amaury Séchet"
+    slug: "amaury-sechet"
 description: "Bitcoin Cash forked from Bitcoin at block 478558, mined by ViaBTC around 12:37 UTC. The 8 MB, no-SegWit chain became the first protocol fork to leave a lasting separate network."
 isSatoshi: false
 tags:

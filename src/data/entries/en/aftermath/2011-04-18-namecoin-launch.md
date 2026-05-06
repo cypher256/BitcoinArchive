@@ -5,7 +5,9 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Namecoin"
 author: "Vincent Durham"
-participants: []
+participants:
+  - name: "Vincent Durham"
+    slug: "vincent-durham"
 description: "Vincent Durham launched Namecoin on April 18, 2011 — the first altcoin and first fork of the Bitcoin codebase. It implemented the BitDNS proposal as a decentralized name registration system."
 isSatoshi: false
 tags:

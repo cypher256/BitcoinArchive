@@ -5,7 +5,9 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Litecoin"
 author: "Charlie Lee"
-participants: []
+participants:
+  - name: "Charlie Lee"
+    slug: "charlie-lee"
 description: "チャーリー・リーが 2011 年 10 月 13 日に Litecoin をローンチ。Scrypt PoW、2.5 分ブロック、上限 8400 万枚で「ビットコインの金に対する銀」 と位置づけた。"
 isSatoshi: false
 tags:

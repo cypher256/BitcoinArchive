@@ -5,7 +5,9 @@ type: "mailing-list"
 source: "linuxfoundation"
 sourceUrl: "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html"
 author: "Mike Belshe"
-participants: []
+participants:
+  - name: "Mike Belshe"
+    slug: "mike-belshe"
 description: "Mike Belshe suspended the SegWit2x hard fork on the mailing list, three days before the planned 2 MB activation at block 494784. The New York Agreement collapsed without a chain split."
 isSatoshi: false
 tags:

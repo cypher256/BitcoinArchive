@@ -5,7 +5,9 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Litecoin"
 author: "Charlie Lee"
-participants: []
+participants:
+  - name: "Charlie Lee"
+    slug: "charlie-lee"
 description: "Charlie Lee launched Litecoin on October 13, 2011 as a Bitcoin-codebase fork with Scrypt PoW, 2.5-minute blocks, and 84 M cap. He framed it as 'silver to Bitcoin's gold'."
 isSatoshi: false
 tags:

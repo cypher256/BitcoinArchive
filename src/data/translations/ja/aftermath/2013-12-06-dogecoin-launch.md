@@ -5,7 +5,11 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Dogecoin"
 author: "Billy Markus, Jackson Palmer"
-participants: []
+participants:
+  - name: "Billy Markus"
+    slug: "billy-markus"
+  - name: "Jackson Palmer"
+    slug: "jackson-palmer"
 description: "マーカスとパーマーが 2013 年 12 月 6 日、柴犬ミーム「Doge」 で Litecoin をフォークして Dogecoin をローンチ。投機の風刺から時価総額上位 10 位の暗号通貨へ成長。"
 isSatoshi: false
 tags:

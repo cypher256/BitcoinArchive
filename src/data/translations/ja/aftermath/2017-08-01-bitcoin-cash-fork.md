@@ -5,7 +5,13 @@ type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
 author: "Bitcoin ABC project"
-participants: []
+participants:
+  - name: "Roger Ver"
+    slug: "roger-ver"
+  - name: "Jihan Wu"
+    slug: "jihan-wu"
+  - name: "Amaury Séchet"
+    slug: "amaury-sechet"
 description: "Bitcoin Cash が 12:37 UTC 頃 ViaBTC のブロック 478558 で分岐。8 MB・SegWit なしの永続的な別ネットワークを残した最初のプロトコル分岐。"
 isSatoshi: false
 tags:

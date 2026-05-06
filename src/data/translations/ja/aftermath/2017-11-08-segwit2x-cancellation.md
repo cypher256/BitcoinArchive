@@ -5,7 +5,9 @@ type: "mailing-list"
 source: "linuxfoundation"
 sourceUrl: "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html"
 author: "Mike Belshe"
-participants: []
+participants:
+  - name: "Mike Belshe"
+    slug: "mike-belshe"
 description: "マイク・ベルシェがメーリングリストで SegWit2x ハードフォーク中止を告知。ブロック 494784 での 2 MB 有効化予定の 3 日前。ニューヨーク合意はチェーン分裂を生まず崩壊した。"
 isSatoshi: false
 tags:
