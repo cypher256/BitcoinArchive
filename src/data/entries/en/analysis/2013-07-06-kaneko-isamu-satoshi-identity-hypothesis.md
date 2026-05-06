@@ -19,8 +19,6 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
-  - name: "Wikipedia (English) — Isamu Kaneko"
-    url: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
   - name: "Wikipedia (Japanese) — 金子勇 (Kaneko Isamu)"
     url: "https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87"
   - name: "Wikipedia (English) — Winny"

@@ -20,8 +20,6 @@ tags:
   - "obituary"
   - "historic"
 secondarySources:
-  - name: "Wikipedia — Len Sassaman"
-    url: "https://en.wikipedia.org/wiki/Len_Sassaman"
   - name: "Black Hat USA 2011 — Black Ops of TCP/IP（カミンスキー資料）"
     url: "https://www.slideshare.net/dakami/black-ops-of-tcpip-2011-black-hat-usa-2011"
 relatedEntries:

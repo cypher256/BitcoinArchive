@@ -20,8 +20,6 @@ tags:
   - "bip-32"
   - "historic"
 secondarySources:
-  - name: "Pieter Wuille on GitHub"
-    url: "https://github.com/sipa"
   - name: "Who Controls Bitcoin Core? — Jameson Lopp"
     url: "https://blog.lopp.net/who-controls-bitcoin-core/"
 relatedEntries:

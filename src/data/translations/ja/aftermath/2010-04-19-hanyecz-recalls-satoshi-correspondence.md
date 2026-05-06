@@ -4,6 +4,7 @@ date: 2010-04-19T00:00:00Z
 type: "article"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/culture/the-man-behind-bitcoin-pizza-day-is-more-than-a-meme-hes-a-mining-pioneer"
+sourceNote: "Bitcoin Magazine、CoinDesk、およびその他のメディアで公開されたラズロ・ハニエツのインタビューに基づく。ハニエツとサトシ間の完全なメールは公開されていないが、ハニエツはインタビューで多数の引用と詳細を共有している"
 author: "Laszlo Hanyecz"
 participants:
   - name: "Laszlo Hanyecz"
@@ -19,9 +20,6 @@ tags:
   - "bug-fixes"
   - "recollection"
 secondarySources:
-  - name: "Bitcoin Magazine - The Man Behind Bitcoin Pizza Day"
-    url: "https://bitcoinmagazine.com/culture/the-man-behind-bitcoin-pizza-day-is-more-than-a-meme-hes-a-mining-pioneer"
-    note: "Bitcoin Magazine、CoinDesk、およびその他のメディアで公開されたラズロ・ハニエツのインタビューに基づく。ハニエツとサトシ間の完全なメールは公開されていないが、ハニエツはインタビューで多数の引用と詳細を共有している"
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 relatedEntries:

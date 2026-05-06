@@ -22,8 +22,6 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
-  - name: "Wikipedia — Adam Back"
-    url: "https://en.wikipedia.org/wiki/Adam_Back"
   - name: "The New York Times (@nytimes) — investigation announcement post"
     url: "https://x.com/nytimes/status/2041824640071323724"
     note: "The NYT investigation by John Carreyrou ran on April 8, 2026, identifying Back as the strongest stylometric match to Satoshi among 620 cryptography-mailing-list writers. The X post is used here as a stable pointer to the article."

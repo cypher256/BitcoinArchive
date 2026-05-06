@@ -4,6 +4,7 @@ date: 2011-04-26T10:29:00Z
 type: "correspondence"
 source: "riski-wiki"
 sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
+sourceNote: "2022年4月26日、メール交換の11周年にギャビン・アンドレセンが自身のブログで公開。元のメールはsatoshin@gmx.comから送信された"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -20,9 +21,6 @@ tags:
   - "disappearance"
   - "historic"
 secondarySources:
-  - name: "Gavin Andresen's Blog - Eleven Years Ago Today"
-    url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
-    note: "2022年4月26日、メール交換の11周年にギャビン・アンドレセンが自身のブログで公開。元のメールはsatoshin@gmx.comから送信された"
   - name: "Wikipedia - Gavin Andresen"
     url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 quotes:

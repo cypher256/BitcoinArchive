@@ -21,8 +21,6 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
-  - name: "Wikipedia — Nick Szabo (Satoshi-identity speculation section)"
-    url: "https://en.wikipedia.org/wiki/Nick_Szabo"
   - name: "Skye Grey — 'Satoshi Nakamoto is (probably) Nick Szabo' (LikeInAMirror, December 2013)"
     url: "https://likeinamirror.wordpress.com/2013/12/01/satoshi-nakamoto-is-probably-nick-szabo/"
   - name: "TechCrunch — 'Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer' (December 5, 2013)"
@@ -39,9 +37,6 @@ secondarySources:
   - name: "Tim Ferriss Show #244 — 'The Quiet Master of Cryptocurrency — Nick Szabo' (June 4, 2017)"
     url: "https://tim.blog/2017/06/04/nick-szabo/"
     note: "Long-form podcast appearance co-hosted by Naval Ravikant. Wide-ranging conversation on cryptocurrency, smart contracts, and the intellectual history of digital cash. The episode is the most extensive Szabo audio interview in the public record."
-  - name: "Dominic Frisby — Bitcoin: The Future of Money? (2014, with Szabo email response)"
-    url: "https://en.wikipedia.org/wiki/Nick_Szabo"
-    note: "Frisby's 2014 book named Szabo as Satoshi. Szabo replied by email: 'I'm afraid you got it wrong doxing me as Satoshi, but I'm used to it.' Quote widely cited in subsequent Wikipedia and journalism coverage."
   - name: "news.bitcoin.com — 'I designed bitcoi…' The many facts pointing to Nick being Satoshi"
     url: "https://news.bitcoin.com/i-designed-bitcoi-gold-the-many-facts-pointing-to-nick-being-satoshi/"
     note: "Catalogues the often-cited circumstantial indicators: April 5 birthday coincidence, Hungarian descent, Tim Ferriss podcast slip, Bit Gold timestamp anomaly. Pro-hypothesis framing."

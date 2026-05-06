@@ -4,6 +4,7 @@ date: 2009-01-12T18:52:45Z
 type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+sourceNote: "Published by Dustin Trammell in November 2013"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -19,9 +20,6 @@ tags:
   - "coin-maturity"
   - "v0.1.3"
 secondarySources:
-  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
-    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---

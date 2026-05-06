@@ -19,8 +19,6 @@ tags:
   - "asymmetry"
   - "analysis"
 secondarySources:
-  - name: "Wikipedia (English) — Satoshi Nakamoto"
-    url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
   - name: "Andy Greenberg — Forbes investigation of Satoshi (2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (2013)"

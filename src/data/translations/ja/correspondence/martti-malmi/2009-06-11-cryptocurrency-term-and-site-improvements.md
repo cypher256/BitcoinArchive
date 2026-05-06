@@ -4,6 +4,7 @@ date: 2009-06-11T21:24:25Z
 type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
+sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -19,9 +20,6 @@ tags:
   - "branding"
   - "bitcoin-org"
 secondarySources:
-  - name: "Martti Malmi's Published Email Archive"
-    url: "https://mmalmi.github.io/satoshi/"
-    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 translationStatus: complete

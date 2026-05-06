@@ -19,8 +19,6 @@ tags:
   - "obituary"
   - "historic"
 secondarySources:
-  - name: "Wikipedia — Len Sassaman"
-    url: "https://en.wikipedia.org/wiki/Len_Sassaman"
   - name: "Mixmaster anonymous remailer (project page)"
     url: "https://en.wikipedia.org/wiki/Mixmaster_anonymous_remailer"
   - name: "KU Leuven COSIC research group"

@@ -4,6 +4,7 @@ date: 2009-08-29T17:31:05Z
 type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
+sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -20,9 +21,6 @@ tags:
   - "network-growth"
   - "bitcoin-0.2"
 secondarySources:
-  - name: "Martti Malmi's Published Email Archive"
-    url: "https://mmalmi.github.io/satoshi/"
-    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete

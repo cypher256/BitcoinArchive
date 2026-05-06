@@ -4,6 +4,7 @@ date: 2026-05-03T00:00:00Z
 type: "analysis"
 source: "github"
 sourceUrl: "https://github.com/basvandorst/where-is-satoshi"
+sourceNote: "本再分析の入力となった方法論・データセット・43 MB の comparison.xlsx 集計（76,407 著者・出典行 × 76 列）。"
 author: "Bitcoin Institute"
 participants:
   - name: "Adam Back"
@@ -30,10 +31,6 @@ tags:
   - "nick-szabo"
   - "adam-back"
   - "hal-finney"
-secondarySources:
-  - name: "Bas van Dorst — 'Where is Satoshi?' GitHub リポジトリ（基底データ）"
-    url: "https://github.com/basvandorst/where-is-satoshi"
-    note: "本再分析の入力となった方法論・データセット・43 MB の comparison.xlsx 集計（76,407 著者・出典行 × 76 列）。"
 relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric

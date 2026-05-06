@@ -4,6 +4,7 @@ date: 2009-01-16T12:35:31Z
 type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+sourceNote: "Published by Dustin Trammell in November 2013. Also archived on the Cryptography mailing list and bitcoin-list. The full private correspondence is on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -22,9 +23,6 @@ tags:
   - "bitcoin-list"
   - "cryptography-mailing-list"
 secondarySources:
-  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
-    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "Published by Dustin Trammell in November 2013. Also archived on the Cryptography mailing list and bitcoin-list. The full private correspondence is on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
   - name: "Cryptography Mailing List Archive"

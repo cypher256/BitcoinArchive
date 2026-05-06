@@ -21,8 +21,6 @@ tags:
   - "correspondence"
   - "linguistic-signal"
 secondarySources:
-  - name: "CoinDesk (2020) — Previously unpublished Satoshi-Finney emails"
-    url: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
   - name: "Satoshi's v0.1.2 release announcement (bitcoin-list, January 11, 2009)"
     url: "https://sourceforge.net/p/bitcoin/mailman/message/21303153/"
   - name: "Lopp (2022) — Was Satoshi a Greedy Miner?"

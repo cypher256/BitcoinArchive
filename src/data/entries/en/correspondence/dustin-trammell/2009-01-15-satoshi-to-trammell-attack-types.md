@@ -4,6 +4,7 @@ date: 2009-01-15T13:46:35Z
 type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+sourceNote: "Published by Dustin Trammell in November 2013"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -20,9 +21,6 @@ tags:
   - "wallet-encryption"
   - "attack-classification"
 secondarySources:
-  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
-    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-    note: "Published by Dustin Trammell in November 2013"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 ---

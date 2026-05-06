@@ -20,13 +20,8 @@ tags:
   - "handover"
   - "historic"
 secondarySources:
-  - name: "Wikipedia — Gavin Andresen"
-    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
-  - name: "本アーカイブのギャビン・アンドレセン伝"
-    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
-    note: "本アーカイブのギャビン・アンドレセン伝に「2010 年 9 月から 10 月にかけて、サトシは SourceForge のコードリポジトリへのコミット権と、ネットワーク警報鍵をギャビンに付与した」と記述されている。"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography

@@ -20,8 +20,6 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Dustin Trammell Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/dustin-trammell/"
-  - name: "Dustin Trammell — Bitcoin Wiki"
-    url: "https://en.bitcoin.it/wiki/Dustin_Trammell"
   - name: "Dustin Trammell's website"
     url: "https://www.dustintrammell.com/"
   - name: "CoinDesk — Who Was Bitcoin's Second User?"

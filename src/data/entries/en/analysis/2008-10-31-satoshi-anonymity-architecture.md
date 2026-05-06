@@ -17,8 +17,6 @@ tags:
   - "satoshi-identity"
   - "analysis"
 secondarySources:
-  - name: "Wikipedia (English) — Satoshi Nakamoto"
-    url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (April 2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "Jameson Lopp — Was Satoshi Greedy? (2022)"

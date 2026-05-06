@@ -17,9 +17,6 @@ tags:
   - "running-bitcoin"
   - "tweet"
   - "historic"
-secondarySources:
-  - name: "Hal Finney's Twitter Archive"
-    url: "https://twitter.com/halfin/status/1110302988"
 relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - sourceforge/2009-01-09-bitcoin-v01-released

@@ -26,8 +26,6 @@ tags:
   - "bitcoin-foundation"
   - "analysis"
 secondarySources:
-  - name: "GitHub — Pull Request #3408 'Rebrand to Bitcoin Core'"
-    url: "https://github.com/bitcoin/bitcoin/pull/3408"
   - name: "bitcoin.org — Bitcoin Core 0.9.0 release notes"
     url: "https://bitcoin.org/en/release/v0.9.0"
   - name: "Wikipedia — Bitcoin Core"

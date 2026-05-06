@@ -17,8 +17,6 @@ tags:
   - "newsweek"
   - "denied"
 secondarySources:
-  - name: "Newsweek — 'The Face Behind Bitcoin' (Leah McGrath Goodman, March 6, 2014)"
-    url: "https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html"
   - name: "Associated Press — Dorian Nakamoto denial (March 2014)"
     url: "https://apnews.com/article/8aa53f3e7be44e85945e284ab9942ce0"
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"

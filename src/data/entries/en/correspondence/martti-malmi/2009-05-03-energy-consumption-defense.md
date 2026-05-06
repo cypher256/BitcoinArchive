@@ -4,6 +4,7 @@ date: 2009-05-03T22:32:26Z
 type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
+sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -20,9 +21,6 @@ tags:
   - "proof-of-work"
   - "economics"
 secondarySources:
-  - name: "Martti Malmi's Published Email Archive"
-    url: "https://mmalmi.github.io/satoshi/"
-    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 ---
