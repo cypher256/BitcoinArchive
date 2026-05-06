@@ -3,7 +3,8 @@ title: "Mike Belshe — HTTP/2 contributor, BitGo co-founder and CEO, signed and
 date: 2013-10-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/SegWit2x"
+sourceUrl: "https://en.wikipedia.org/wiki/BitGo"
+sourceNote: "Belshe has no dedicated Wikipedia entry of his own; the BitGo company page is the closest stable institutional reference, and lists him as co-founder and CEO. The SegWit2x cancellation post under `secondarySources` is the canonical primary record of his most-public Bitcoin governance action."
 author: "Bitcoin Institute"
 participants:
   - name: "Mike Belshe"

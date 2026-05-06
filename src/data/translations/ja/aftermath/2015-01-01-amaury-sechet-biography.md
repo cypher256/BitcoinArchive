@@ -2,8 +2,9 @@
 title: "アモリー・セシェ — Bitcoin Core 寄稿者、Bitcoin ABC リード開発者、Bitcoin Cash ハードフォークの設計者"
 date: 2015-01-01T00:00:00Z
 type: "biography"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
+source: "github"
+sourceUrl: "https://github.com/deadalnix"
+sourceNote: "セシェの GitHub プロフィール (`deadalnix`) が人物軸の正規参照。2015 年頃以降の Bitcoin Core 寄稿、2017 年 8 月の BCH ハードフォークを生んだ Bitcoin ABC リポジトリのコミット履歴、2020 年以降の Bitcoin Cash ABC / eCash 関連作業がここに集約されている。本人の Wikipedia エントリーはないため、補足の BCH および Bitcoin ABC への参照は `secondarySources` に置く。"
 author: "Bitcoin Institute"
 participants:
   - name: "Amaury Séchet"
@@ -18,10 +19,10 @@ tags:
   - "ecash"
   - "block-size-war"
 secondarySources:
+  - name: "Wikipedia — Bitcoin Cash (セシェの BCH リード役職の文脈)"
+    url: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
   - name: "Bitcoin ABC — official site"
     url: "https://www.bitcoinabc.org/"
-  - name: "GitHub — deadalnix (Amaury Séchet)"
-    url: "https://github.com/deadalnix"
   - name: "CoinDesk — Bitcoin Cash hard-fork lead developer Amaury Séchet"
     url: "https://www.coindesk.com/markets/2017/07/29/bitcoin-cash-hard-fork-the-week-ahead/"
 relatedEntries:

@@ -3,7 +3,8 @@ title: "マイク・ベルシェ — HTTP/2 寄稿者、BitGo 共同創業者兼
 date: 2013-10-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/SegWit2x"
+sourceUrl: "https://en.wikipedia.org/wiki/BitGo"
+sourceNote: "ベルシェ本人の Wikipedia エントリーはなく、BitGo 企業ページが彼を共同創業者兼 CEO として記載する最も安定した制度的参照となる。`secondarySources` に置いた SegWit2x 中止投稿は、彼の最も公的なビットコインガバナンス行為の正規一次記録。"
 author: "Bitcoin Institute"
 participants:
   - name: "Mike Belshe"
