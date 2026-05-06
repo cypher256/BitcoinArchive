@@ -19,8 +19,6 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
-  - name: "Wikipedia — Len Sassaman (Satoshi-identity section)"
-    url: "https://en.wikipedia.org/wiki/Len_Sassaman"
   - name: "Evan Hatch — 'Len Sassaman and Satoshi: a Cypherpunk history' (Medium, February 22, 2021)"
     url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"
     note: "The most prominent and most-cited public articulation of the Sassaman-as-Satoshi hypothesis. Foundational citation in subsequent journalism and Wikipedia."

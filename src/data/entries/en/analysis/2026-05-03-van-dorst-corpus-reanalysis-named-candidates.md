@@ -30,10 +30,6 @@ tags:
   - "nick-szabo"
   - "adam-back"
   - "hal-finney"
-secondarySources:
-  - name: "Bas van Dorst — 'Where is Satoshi?' GitHub repository (source data)"
-    url: "https://github.com/basvandorst/where-is-satoshi"
-    note: "Methodology, dataset, and 43 MB comparison.xlsx aggregate (76,407 author-source rows × 76 columns) used as input to this reanalysis."
 relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
