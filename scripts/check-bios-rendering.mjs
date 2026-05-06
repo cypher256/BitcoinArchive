@@ -43,6 +43,7 @@
 
 import { chromium } from 'playwright';
 import { existsSync, mkdirSync } from 'fs';
+import { MIRROR_BASE } from '../site-config.mjs';
 
 const args = process.argv.slice(2);
 function flag(name, fallback) {
@@ -54,7 +55,7 @@ function flag(name, fallback) {
 const WIDTH = parseInt(flag('--width', '1100'), 10);
 const HEIGHT = parseInt(flag('--height', '1500'), 10);
 const OUT = flag('--out', '/tmp');
-const BASE = flag('--base', 'http://localhost:4321/BitcoinArchive');
+const BASE = flag('--base', `http://localhost:4321${MIRROR_BASE}`);
 const DEFAULT_SLUGS = [
   'satoshi-nakamoto',
   'gavin-andresen',

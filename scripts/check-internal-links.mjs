@@ -32,6 +32,10 @@
 
 import { readdirSync, readFileSync, statSync, existsSync } from 'fs';
 import path from 'path';
+import { MIRROR_BASE } from '../site-config.mjs';
+
+// Escape MIRROR_BASE for embedding in a regex literal.
+const MIRROR_BASE_RE = MIRROR_BASE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 const EN_DIR = 'src/data/entries/en';
 const JA_DIR = 'src/data/translations/ja';
@@ -221,7 +225,7 @@ console.log(`  ${validPaths.size} valid paths indexed`);
 // Scan all markdown files for internal links
 // ---------------------------------------------------------------------------
 
-const BASE_PATTERN = /\]\(\/BitcoinArchive(\/[^)#]*?)(#[^)]*)?\)/g;
+const BASE_PATTERN = new RegExp(`\\]\\(${MIRROR_BASE_RE}(\\/[^)#]*?)(#[^)]*)?\\)`, 'g');
 
 // Extract entry ID from an internal link target. Returns null if target is not
 // something that corresponds to an entry in the entries store.

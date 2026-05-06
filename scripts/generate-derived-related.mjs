@@ -23,6 +23,10 @@
 
 import { readdirSync, readFileSync, statSync, existsSync, writeFileSync, mkdirSync } from 'fs';
 import path from 'path';
+import { MIRROR_BASE } from '../site-config.mjs';
+
+// Escape MIRROR_BASE for embedding in a regex literal.
+const MIRROR_BASE_RE = MIRROR_BASE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 const EN_DIR = 'src/data/entries/en';
 const OUTPUT = 'src/data/derived-related.json';
@@ -115,7 +119,7 @@ for (const file of walk(EN_DIR)) {
 // Scan inline links: build sourceId -> Set<targetId>
 // ---------------------------------------------------------------------------
 
-const BASE_PATTERN = /\]\(\/BitcoinArchive(\/[^)#]*?)(#[^)]*)?\)/g;
+const BASE_PATTERN = new RegExp(`\\]\\(${MIRROR_BASE_RE}(\\/[^)#]*?)(#[^)]*)?\\)`, 'g');
 
 function extractEntryIdFromTarget(target) {
   const pm = target.match(/^(?:\/ja)?\/participants\/([^/]+)\/?$/);

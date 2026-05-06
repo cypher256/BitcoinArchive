@@ -20,10 +20,16 @@
 import { readdirSync, readFileSync, writeFileSync, statSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { MIRROR_BASE } from '../site-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const enDir = path.resolve(__dirname, '../src/data/entries/en/forum/bitcointalk');
 const jaDir = path.resolve(__dirname, '../src/data/translations/ja/forum/bitcointalk');
+
+// Escape MIRROR_BASE for embedding in a regex literal.
+const MIRROR_BASE_RE = MIRROR_BASE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const ENTRIES_PREFIX_RE = new RegExp(`^${MIRROR_BASE_RE}/entries/`);
+const JA_ENTRIES_PREFIX_RE = new RegExp(`^${MIRROR_BASE_RE}/ja/entries/`);
 
 // ---------------------------------------------------------------------------
 // Pattern
@@ -58,8 +64,8 @@ function parseFrontmatter(content) {
 
 function extractSourceEntryId(url) {
   return url
-    .replace(/^\/BitcoinArchive\/entries\//, '')
-    .replace(/^\/BitcoinArchive\/ja\/entries\//, '')
+    .replace(ENTRIES_PREFIX_RE, '')
+    .replace(JA_ENTRIES_PREFIX_RE, '')
     .replace(/\/$/, '')
     .replace(/^#msg\d+$/, '') || null;
 }
