@@ -34,6 +34,7 @@ const entrySchema = z.object({
   type: typeEnum,
   source: z.string(),
   sourceUrl: z.string().url(),
+  sourceNote: z.string().optional(),
   sourceStatus: z.enum(['available', 'archived', 'unavailable']).default('available'),
   author: z.string(),
   participants: z.array(participantSchema).default([]),

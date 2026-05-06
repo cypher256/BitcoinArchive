@@ -90,15 +90,21 @@ sections at the foot of the entry:
   reference. Rendered under 「関連ソース」 / "Related source". Pick
   the URL a reader should open first (archived original, Wikipedia
   biography, BitcoinTalk topic, GitHub PR, etc.).
+- **`sourceNote`** (optional) — short caveat or context for the
+  primary reference (provenance, publication route, dataset
+  description, legal-document role, etc.). Rendered as a muted
+  block immediately under the `sourceUrl` link, so the reader sees
+  the explanatory text without having to click through.
 - **`secondarySources[]`** (optional) — list of additional
   references with `name`, `url`, optional `note`. Rendered under
   「その他の関連ソース」 / "Other related sources".
 
 **Rule.** The same URL must not appear in both fields. If it did,
 the citation block would list the link twice. When tempted to
-duplicate, decide which role the URL plays for this entry — the
-canonical "open first" or one of several supporting references —
-and keep it in only the matching field.
+duplicate (e.g. because the existing `secondarySources[]` entry
+carries a useful `note`), move the `note` text into the entry's
+`sourceNote` field instead and remove the duplicate
+`secondarySources[]` row.
 
 **Enforcement.** `scripts/check-source-duplication.mjs` fails when
 an entry's `sourceUrl` matches any of its own `secondarySources[].url`.

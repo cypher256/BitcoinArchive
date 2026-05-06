@@ -14,13 +14,14 @@ interface PdfMetadata {
 
 interface Props {
   sourceUrl: string;
+  sourceNote?: string;
   secondarySources?: { name: string; url: string; note?: string }[];
   pdfMetadata?: PdfMetadata;
   lang: Lang;
   entryType?: string;
 }
 
-const { sourceUrl, secondarySources, pdfMetadata, lang, entryType } = Astro.props;
+const { sourceUrl, sourceNote, secondarySources, pdfMetadata, lang, entryType } = Astro.props;
 const t = useTranslations(lang);
 
 // For derivative, Bitcoin-Institute-authored entry types, the `sourceUrl`
@@ -34,6 +35,9 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
 <div class="source-citation">
   <h3>{t(primaryLabel as any)}</h3>
   <a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl}</a>
+  {sourceNote && (
+    <div class="source-note-block">{sourceNote}</div>
+  )}
   {secondarySources && secondarySources.length > 0 && (
     <div class="secondary-sources">
       <h4>{t(secondaryLabel as any)}</h4>
@@ -116,6 +120,12 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
     color: var(--color-text-muted);
     font-size: 0.85em;
     margin-left: 0.25em;
+  }
+  .source-note-block {
+    margin-top: 0.4rem;
+    color: var(--color-text-muted);
+    font-size: 0.85em;
+    line-height: 1.5;
   }
   .pdf-metadata {
     margin-top: 1rem;
