@@ -51,6 +51,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2009-01-09-satoshi-code-analysis
+  - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 inlineLinkKeywords:
   - "Bitcoin design lineage"
   - "what Bitcoin reuses"

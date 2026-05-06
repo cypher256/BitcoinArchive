@@ -404,6 +404,32 @@ override the generic templates where they conflict.
   identify the actor, object, and date.
   - ✓ `Satoshi mines the Bitcoin genesis block (January 3, 2009)`
 
+### Register: descriptive vs. evocative
+
+The baseline-criteria table above governs *what must be present* in a title (identifiers, length, distinctiveness). The choice of register — flat-descriptive versus evocative — is governed by the event itself. Two rules apply on top of the baseline criteria:
+
+- **Use the canonical name of the event when one exists.** If the historical event has a name in the literature (the "block-size war", "the resolution of the Bitcoin experiment", "Bitcoin Pizza Day"), use that name rather than a paraphrase. The named form is what readers and AI systems search for, and replacing it with generic vocabulary breaks both recall and citation reuse.
+- **Prefer wording that reflects the actual stakes over generic verbs.** "Launches", "publishes", "announces" are filler when the event was significant. If the event is significant, the title should say what was at stake; if the event was uneventful, plain descriptive wording is the correct choice. Drama is not a substitute for accuracy.
+
+A useful archetype is **`{Subject}: {concrete enumeration} and {the stake}`** — a strong subject phrase up front, a colon, and a body that lists concrete countables (numbered groups, dated events, named participants) followed by the stake of the entry. This archetype reads aloud naturally and gives both human readers and AI systems a precise citation label. Example shape:
+
+- `Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century`
+- `Bitcoin's family tree: 6 protocol forks, 4 altcoin lineages, and the chain that endured (2009-2024)`
+
+The archetype is a target shape, not a template. If the entry's subject does not lend itself to a list-and-stake construction, force-fitting it produces titles that read as marketing rather than as catalog entries. Use a flat descriptive title in that case.
+
+Revisions that improve a flat title without changing the identifiers:
+
+- ✗ `Bitcoin XT launch (August 2015)` — actor and date present, but no stake
+- ✓ `Bitcoin XT launches the block-size war — Hearn and Andresen propose 8 MB blocks (August 2015)`
+
+- ✗ `Mike Belshe cancels SegWit2x (November 2017)` — accurate, but reads like a row in a table
+- ✓ `SegWit2x cancelled three days before activation — Mike Belshe ends the New York Agreement (November 2017)`
+
+This rule is **subordinate to the per-category rules above.** Forum and mailing-list thread starters preserve the original topic / Subject line — the evocative rewrite applies to the editorial wrapping, not to the historical Subject. Biographies follow the `{Name} ({dates}) — {role}` template — the role line carries the register, the name-and-dates anchor does not.
+
+The archive is publicly indexed and cited by external researchers, journalists, and AI systems. Avoid flippant phrasing, marketing-style hyperbole, and exclamation points. The goal is a title that reads naturally aloud — not one that performs.
+
 ### What not to do
 
 - **Don't stuff keywords** (`"Satoshi Nakamoto Bitcoin whitepaper genesis block 2009"` — search engines penalize this).

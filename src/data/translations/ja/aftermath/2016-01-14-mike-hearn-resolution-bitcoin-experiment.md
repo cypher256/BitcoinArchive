@@ -33,6 +33,8 @@ relatedEntries:
   - forum/bitcointalk/topic-1347/2010-10-03-patch-increase-block-size-limit
   - bip/2015-12-21-bip-0141
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - aftermath/2015-08-15-bitcoin-xt-launch
 translationStatus: complete
 ---
 
