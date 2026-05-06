@@ -75,9 +75,9 @@ inlineLinkKeywords:
 | 2015-08-15 | [Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) | [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/) | BIP 101: 8 MB ブロック、2 年ごとに倍増 | 2016 年 1 月までに事実上停止 ([ハーンの「ビットコイン実験の終結」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)) |
 | 2016-02-10 | Bitcoin Classic | ジョナサン・トゥーミン他 | ハードフォークで 2 MB ブロック | 2016 年末までに事実上停止 |
 | 2016-10-13 | Bitcoin Unlimited | アンドリュー・ストーン他 | 可変ブロックサイズ、マイナー主導 | 2018 年までに無視できる占有率 |
-| 2017-08-01 | [Bitcoin Cash (BCH)](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | ロジャー・ヴァー、ジハン・ウー、アモリー・セシェ | 8 MB ブロック、SegWit なし、ブロック 478558 で分岐 | 規模の小さい生存チェーン。2018 年にさらに分裂 |
+| 2017-08-01 | [Bitcoin Cash (BCH)](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | ロジャー・ヴァー (初期のビットコイン投資家、bitcoin.com 運用者)、ジハン・ウー (Bitmain 共同創業者、ビットコイン採掘ハードウェア)、アモリー・セシェ (Bitcoin Core 寄稿者、Bitcoin ABC リード) | 8 MB ブロック、SegWit なし、ブロック 478558 で分岐 | 規模の小さい生存チェーン。2018 年にさらに分裂 |
 | 2017-10-24 | Bitcoin Gold (BTG) | ジャック・リャオ (LightningASIC) | Equihash PoW (ASIC 耐性)、ブロック 491407 で分岐 | ニッチな生存チェーン。2018 年・2020 年に 51% 攻撃を受けた |
-| 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | マイク・ベルシェ他 (ニューヨーク合意) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化 3 日前に中止。分岐は発生せず |
+| 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | マイク・ベルシェ (BitGo 共同創業者、ビットコイン保管事業) 他 (ニューヨーク合意の主要ビットコイン事業者の署名者) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化 3 日前に中止。分岐は発生せず |
 | 2018-11-15 | [Bitcoin SV (BSV)](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | クレイグ・ライト、カルヴィン・エア (nChain) | 128 MB ブロック、「オリジナル」 オペコードを復活 | 2018 年の BCH ハッシュ戦争分裂を生き残る。COPA v Wright (2024) でライト敗訴後、占有率はさらに減少 |
 
 2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い問いはプロトコルガバナンスにあった ─ 開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という問いである。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちが Bitcoin Cash として分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html)による土壇場での中止が、本体チェーン側の論争を終わらせた。
@@ -90,12 +90,14 @@ inlineLinkKeywords:
 
 | ローンチ | コイン | 創設者 | ビットコインからの系譜 | 設計上の差異 |
 |---|---|---|---|---|
-| 2011-04-18 | [Namecoin](/BitcoinArchive/ja/entries/aftermath/2011-04-18-namecoin-launch/) | ヴィンセント・ダラム | ソースコードの直接フォーク (最初のアルトコイン)。[BitcoinTalk の BitDNS スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/) を起点とする | 分散型 DNS / 名前登録。ビットコインとマージマイニング |
-| 2011-10-13 | [Litecoin (LTC)](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/) | チャーリー・リー | ビットコインのソースコードフォーク | Scrypt PoW (ASIC 耐性を意図)、2.5 分ブロック、上限 8400 万 |
-| 2013-12-06 | [Dogecoin (DOGE)](/BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/) | ビリー・マーカス、ジャクソン・パーマー | Litecoin (ビットコインの派生) のソースコードフォーク | 当初はジョーク / ミーム。大規模なインフレ供給。文化的影響 |
-| 2015-07-30 | Ethereum (ETH) | ヴィタリック・ブテリン他 | コードベースは独立、設計はビットコインに影響を受ける | チューリング完全なスマートコントラクト、アカウントモデル (UTXO ではなく) |
+| 2011-04-18 | [Namecoin](/BitcoinArchive/ja/entries/aftermath/2011-04-18-namecoin-launch/) | ヴィンセント・ダラム (BitcoinTalk のハンドル `vinced`) | ソースコードの直接フォーク (最初のアルトコイン)。[BitcoinTalk の BitDNS スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/) を起点とする | 分散型 DNS / 名前登録。ビットコインとマージマイニング |
+| 2011-10-13 | [Litecoin (LTC)](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/) | チャーリー・リー (Google エンジニア、BitcoinTalk のハンドル `coblee`) | ビットコインのソースコードフォーク | Scrypt PoW (ASIC 耐性を意図)、2.5 分ブロック、上限 8400 万 |
+| 2013-12-06 | [Dogecoin (DOGE)](/BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/) | ビリー・マーカス (IBM エンジニア、ビットコイン愛好家)、ジャクソン・パーマー (Adobe Sydney マーケティング) | Litecoin (ビットコインの派生) のソースコードフォーク | 当初はジョーク / ミーム。大規模なインフレ供給。文化的影響 |
+| 2015-07-30 | Ethereum (ETH) | ヴィタリック・ブテリン他 ─ ブテリンは 2011 年 (17 歳) に Bitcoin Magazine を共同創設し、ビットコインソフトウェアに寄稿、ビットコインのスクリプト言語拡張を提案した後 Ethereum へ転向 | コードベースは独立、設計の出発点はビットコインコミュニティ | チューリング完全なスマートコントラクト、アカウントモデル (UTXO ではなく) |
 
-Ethereum を含めたのは、コードベースは独立しているものの、ビットコインの強みと限界の観察から設計が始まった「次世代」 チェーンとして最も多く引用されるためである。ここに載せていないビットコインのコードベース由来のフォークは多数 (Peercoin、Primecoin、ERC-20 時代のビットコイン由来アルトコイン等) 存在するが、それらは対象外とする。本表が記録するのは、ビットコイン本流の言説で文化的または技術的な意義が繰り返し参照される銘柄に限定される。
+Ethereum を本表に含めたのは、チェーンの起源そのものがビットコインを**経由している**ため。ヴィタリック・ブテリンは 2011 年 17 歳でビットコインに出会い、同年に *Bitcoin Magazine* を共同創設、ビットコインソフトウェアに寄稿し、ビットコインのスクリプト言語に汎用計算を載せる拡張提案を提出した。ビットコイン開発コミュニティがその方向を採用しないことが明らかになったとき、ブテリンは 2013 年末に Ethereum 白書を公開し、スクリプト構想を新規コードベースに持ち込む別チェーンの立ち上げに関わった。Ethereum のアカウントモデル・EVM 設計・ガス課金は独立したエンジニアリングだが、**動機** ─ ビットコインに似た合意機構に任意の計算を載せる ─ はブテリンの Bitcoin Magazine 期の思考から直接出ている。他の Ethereum 共同創業者 (ギャヴィン・ウッド、チャールズ・ホスキンソン、ジョセフ・ルビン、アンソニー・ディ・イオリオ、ミハイ・アリシエ、アミール・チェトリット) も、Ethereum 以前にビットコイン / サイファーパンク圏で活動していた。
+
+本表に載せていないビットコインコードベース由来のフォークは多数 (Peercoin、Primecoin、ERC-20 時代のビットコイン由来アルトコイン等) 存在するが、それらは対象外とする。本表が記録するのは、ビットコイン本流の言説で文化的または技術的な意義が繰り返し参照される銘柄に限定される。
 
 ## 3. ブロックサイズ戦争の経緯 (2010 ~ 2017)
 
