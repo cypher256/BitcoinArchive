@@ -104,11 +104,11 @@ translationStatus: complete
 
 | 年 | 著者 | 提案 | Bitcoin との関係 |
 |---|---|---|---|
-| 1997 | アダム・バック | [Hashcash](/BitcoinArchive/ja/participants/adam-back/) | スパム／シビル攻撃対策としての PoW。Bitcoin ホワイトペーパー [6] で引用 |
-| 1998 | ウェイ・ダイ | [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | 同報配信型台帳と計算パズル発行に基づく分散デジタル通貨。Bitcoin ホワイトペーパー [1] で引用 |
-| 1998 | ニック・サボ | Bit Gold | 連鎖的な PoW トークン。ホワイトペーパーには引用がないが、サトシは後年のフォーラム投稿で言及している |
-| 2004 | ハル・フィニー | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後に Bitcoin の最初のサトシ以外のノード運用者となる |
-| 2008 | サトシ・ナカモト | Bitcoin | 統合 |
+| 1997 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [Hashcash](/BitcoinArchive/ja/participants/adam-back/) | スパム／シビル攻撃対策としての PoW。Bitcoin ホワイトペーパー [6] で引用 |
+| 1998 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | 同報配信型台帳と計算パズル発行に基づく分散デジタル通貨。Bitcoin ホワイトペーパー [1] で引用 |
+| 1998 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | Bit Gold | 連鎖的な PoW トークン。ホワイトペーパーには引用がないが、サトシは後年のフォーラム投稿で言及している |
+| 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後に Bitcoin の最初のサトシ以外のノード運用者となる |
+| 2008 | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | Bitcoin | 統合 |
 
 §2 では、この系譜のうち何をサトシが実際に開発期間中に知っていたか、そして何を知らなかったかを精査する。
 

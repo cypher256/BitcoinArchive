@@ -90,12 +90,12 @@ translationStatus: complete
 
 | 候補 | 著者ファイル | バローズ Δ | 順位 | 上位 % | チャンク数 |
 |---|---|---|---|---|---|
-| **ニック・サボ** | szabo_netcom_com.txt | 0.14405 | 595 / 12,739 | 上位 **4.67%** | 130 |
-| **ハル・フィニー** | hfinney_shell_portal_com.txt | 0.14411 | 878 / 12,739 | 上位 **6.89%** | 1,336 |
-| **アダム・バック** | adam_cypherspace_org.txt | 0.14414 | 1,003 / 12,739 | 上位 **7.87%** | 676 |
-| **アダム・バック**（別アドレス） | aba_dcs_ex_ac_uk.txt | 0.14415 | 1,092 / 12,739 | 上位 **8.57%** | 1,474 |
-| **ウェイ・ダイ** | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | 上位 22.99% | 161 |
-| **レン・サッサマン** | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | 上位 23.82% | 65 |
+| [**ニック・サボ**](/BitcoinArchive/ja/participants/nick-szabo/) | szabo_netcom_com.txt | 0.14405 | 595 / 12,739 | 上位 **4.67%** | 130 |
+| [**ハル・フィニー**](/BitcoinArchive/ja/participants/hal-finney/) | hfinney_shell_portal_com.txt | 0.14411 | 878 / 12,739 | 上位 **6.89%** | 1,336 |
+| [**アダム・バック**](/BitcoinArchive/ja/participants/adam-back/) | adam_cypherspace_org.txt | 0.14414 | 1,003 / 12,739 | 上位 **7.87%** | 676 |
+| [**アダム・バック**](/BitcoinArchive/ja/participants/adam-back/)（別アドレス） | aba_dcs_ex_ac_uk.txt | 0.14415 | 1,092 / 12,739 | 上位 **8.57%** | 1,474 |
+| [**ウェイ・ダイ**](/BitcoinArchive/ja/participants/wei-dai/) | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | 上位 22.99% | 161 |
+| [**レン・サッサマン**](/BitcoinArchive/ja/participants/len-sassaman/) | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | 上位 23.82% | 65 |
 
 ### 2.2 表が確立する事実
 

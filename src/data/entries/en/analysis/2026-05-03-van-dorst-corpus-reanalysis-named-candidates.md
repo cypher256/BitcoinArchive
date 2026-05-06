@@ -89,12 +89,12 @@ Burrows' Delta: lower = closer match to Satoshi's reference profile. Corpus mean
 
 | Candidate | Author file | Burrows Δ | Rank | Percentile | Chunks |
 |---|---|---|---|---|---|
-| **Nick Szabo** | szabo_netcom_com.txt | 0.14405 | 595 / 12,739 | top **4.67%** | 130 |
-| **Hal Finney** | hfinney_shell_portal_com.txt | 0.14411 | 878 / 12,739 | top **6.89%** | 1,336 |
-| **Adam Back** | adam_cypherspace_org.txt | 0.14414 | 1,003 / 12,739 | top **7.87%** | 676 |
-| **Adam Back** (alt email) | aba_dcs_ex_ac_uk.txt | 0.14415 | 1,092 / 12,739 | top **8.57%** | 1,474 |
-| **Wei Dai** | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | top 22.99% | 161 |
-| **Len Sassaman** | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | top 23.82% | 65 |
+| [**Nick Szabo**](/BitcoinArchive/participants/nick-szabo/) | szabo_netcom_com.txt | 0.14405 | 595 / 12,739 | top **4.67%** | 130 |
+| [**Hal Finney**](/BitcoinArchive/participants/hal-finney/) | hfinney_shell_portal_com.txt | 0.14411 | 878 / 12,739 | top **6.89%** | 1,336 |
+| [**Adam Back**](/BitcoinArchive/participants/adam-back/) | adam_cypherspace_org.txt | 0.14414 | 1,003 / 12,739 | top **7.87%** | 676 |
+| [**Adam Back**](/BitcoinArchive/participants/adam-back/) (alt email) | aba_dcs_ex_ac_uk.txt | 0.14415 | 1,092 / 12,739 | top **8.57%** | 1,474 |
+| [**Wei Dai**](/BitcoinArchive/participants/wei-dai/) | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | top 22.99% | 161 |
+| [**Len Sassaman**](/BitcoinArchive/participants/len-sassaman/) | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | top 23.82% | 65 |
 
 ### 2.2 What the table establishes
 

@@ -50,10 +50,10 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 
 | Username | Developer | First Commit | Last Commit | Commits |
 |----------|-----------|-------------|-------------|---------|
-| sirius-m | Martti Malmi | r1 (2009-08-30) | r56 | 21 |
-| s_nakamoto | Satoshi Nakamoto | r15 | r202 (2010-12-15) | ~160 (counts vary by mirror / dedup method) |
-| laszloh | Laszlo Hanyecz | r123 (2010-08-04) | r123 | 1 |
-| gavinandresen | Gavin Andresen | r165 (2010-10-11) | r252 (2011-09-13) | 81 |
+| sirius-m | [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) | r1 (2009-08-30) | r56 | 21 |
+| s_nakamoto | [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) | r15 | r202 (2010-12-15) | ~160 (counts vary by mirror / dedup method) |
+| laszloh | [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) | r123 (2010-08-04) | r123 | 1 |
+| gavinandresen | [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) | r165 (2010-10-11) | r252 (2011-09-13) | 81 |
 
 **Martti Malmi (sirius-m)** created the SVN repository with the "First commit" at r1 on August 30, 2009. He ported the Bitcoin codebase — which Satoshi had developed on Windows using Visual C++ 6.0 — to Linux, and contributed 21 revisions before stepping back from active development.
 

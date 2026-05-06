@@ -103,11 +103,11 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 
 | Year | Author | Proposal | Relation to Bitcoin |
 |---|---|---|---|
-| 1997 | Adam Back | [Hashcash](/BitcoinArchive/participants/adam-back/) | Proof-of-work as anti-spam/anti-Sybil mechanism. Cited as reference [6] in the Bitcoin whitepaper |
-| 1998 | Wei Dai | [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | Distributed digital cash with broadcast-based ledger and computational-puzzle issuance. Cited as reference [1] in the Bitcoin whitepaper |
-| 1998 | Nick Szabo | Bit Gold | Chained proof-of-work tokens; not cited in the whitepaper but acknowledged by Satoshi in later forum posts |
-| 2004 | Hal Finney | RPOW (Reusable Proof-of-Work) | Centralized server issuing reusable PoW tokens; Finney later became Bitcoin's first non-Satoshi node operator |
-| 2008 | Satoshi Nakamoto | Bitcoin | The synthesis |
+| 1997 | [Adam Back](/BitcoinArchive/participants/adam-back/) | [Hashcash](/BitcoinArchive/participants/adam-back/) | Proof-of-work as anti-spam/anti-Sybil mechanism. Cited as reference [6] in the Bitcoin whitepaper |
+| 1998 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | Distributed digital cash with broadcast-based ledger and computational-puzzle issuance. Cited as reference [1] in the Bitcoin whitepaper |
+| 1998 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | Bit Gold | Chained proof-of-work tokens; not cited in the whitepaper but acknowledged by Satoshi in later forum posts |
+| 2004 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | RPOW (Reusable Proof-of-Work) | Centralized server issuing reusable PoW tokens; Finney later became Bitcoin's first non-Satoshi node operator |
+| 2008 | [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) | Bitcoin | The synthesis |
 
 §2 examines what of this lineage Satoshi actually knew during the development period, and what he did not.
 

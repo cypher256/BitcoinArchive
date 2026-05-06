@@ -51,10 +51,10 @@ Bitcoinが[GitHubに移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-1
 
 | ユーザー名 | 開発者 | 最初のコミット | 最後のコミット | コミット数 |
 |-----------|--------|-------------|-------------|-----------|
-| sirius-m | マルッティ・マルミ | r1（2009-08-30） | r56 | 21 |
-| s_nakamoto | サトシ・ナカモト | r15 | r202（2010-12-15） | 約160（ミラーや重複除外の数え方で差あり） |
-| laszloh | ラズロ・ハニエツ | r123（2010-08-04） | r123 | 1 |
-| gavinandresen | ギャビン・アンドレセン | r165（2010-10-11） | r252（2011-09-13） | 81 |
+| sirius-m | [マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/) | r1（2009-08-30） | r56 | 21 |
+| s_nakamoto | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | r15 | r202（2010-12-15） | 約160（ミラーや重複除外の数え方で差あり） |
+| laszloh | [ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/) | r123（2010-08-04） | r123 | 1 |
+| gavinandresen | [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/) | r165（2010-10-11） | r252（2011-09-13） | 81 |
 
 **マルッティ・マルミ（sirius-m）** はr1の"First commit"でSVNリポジトリを作成した。サトシがVisual C++ 6.0を使用してWindows上で開発したコードベースをLinuxに移植し、56リビジョンまでに21のコミットを行った。
 
