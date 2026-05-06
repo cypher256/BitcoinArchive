@@ -60,7 +60,7 @@ inlineLinkKeywords:
   - "altcoin lineage"
 ---
 
-This entry catalogs (a) every protocol fork of Bitcoin that produced a chain that survived the launch event with non-trivial network share, and (b) the adjacent cryptocurrencies whose design lineage starts from Bitcoin's source code or design. Failed-launch forks (no surviving chain) and conceptually-distinct chains that did not derive from Bitcoin (e.g. Ripple, Monero) are out of scope.
+This entry catalogs (a) every protocol fork of Bitcoin that produced a chain that survived the launch event with non-trivial network share, and (b) the adjacent cryptocurrencies whose design lineage starts from Bitcoin's source code or design. Out of scope: failed-launch forks (no surviving chain) and chains whose technical design originates independently of Bitcoin. The latter category is large — thousands of such chains exist (Ripple's federated consensus, Monero's CryptoNote ring signatures, IOTA's DAG, Cardano's Ouroboros PoS are commonly-cited examples in mainstream discourse, but they are illustrations of the category, not its boundary).
 
 The list is observational. It does not endorse any one chain as "the real Bitcoin"; the canonical chain in this archive is the one whose Genesis block was mined on January 3, 2009 with hash `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` ([genesis-block analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)).
 
@@ -86,7 +86,7 @@ The 2018 BSV split from BCH was a separate war within the BCH community, ultimat
 
 ## 2. Adjacent cryptocurrencies
 
-Cryptocurrencies whose design lineage starts from Bitcoin's source code or core design. Conceptually-distinct chains (Ripple's consensus, Monero's CryptoNote, IOTA's Tangle) are not included.
+Cryptocurrencies whose design lineage starts from Bitcoin's source code or core design. Chains whose design originates independently of Bitcoin (Ripple's federated consensus, Monero's CryptoNote, IOTA's Tangle, and many thousands of others) are not included — they predate Bitcoin or were built on different cryptographic / consensus foundations.
 
 | Launch | Coin | Founder(s) | Lineage from Bitcoin | Distinguishing design |
 |---|---|---|---|---|
@@ -136,6 +136,6 @@ These observations are descriptive, not prescriptive. They do not rule out a fut
 
 ## 5. Limits of this entry
 
-- **Coverage.** This entry catalogs the protocol forks that left surviving chains and the adjacent cryptocurrencies that recur in mainstream Bitcoin discourse. The hundreds of thinly-traded Bitcoin-codebase forks (Peercoin, Primecoin, Auroracoin, etc.) are out of scope; the conceptually-distinct chains (Ripple, Monero, IOTA, Cardano) are also out of scope.
+- **Coverage.** This entry catalogs the protocol forks that left surviving chains and the adjacent cryptocurrencies that recur in mainstream Bitcoin discourse. The hundreds of thinly-traded Bitcoin-codebase forks (Peercoin, Primecoin, Auroracoin, etc.) are out of scope; the thousands of independently-designed chains whose origin does not trace back to Bitcoin (Ripple, Monero, IOTA, Cardano are commonly-cited examples in this category) are also out of scope.
 - **End-state status.** Surviving-chain status is recorded as of the entry's last edit. A chain listed here as "surviving" can stop producing blocks at any time; the genealogy is historical, not a forward-looking endorsement.
 - **Sociopolitical framing.** The block-size war narrative above leans on documents the participants themselves left behind ([Hearn 2016-01 essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), [Belshe 2017-11 cancellation post](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html), GitHub PR threads). It does not claim to settle which side was correct on the technical merits; that is a separate normative question, not within this catalog's scope.
