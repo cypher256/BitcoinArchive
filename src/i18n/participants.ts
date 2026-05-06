@@ -47,6 +47,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'martien-van-steenbergen': 'マルティエン・ファン・ステーンベルゲン',
   'martti-malmi': 'マルッティ・マルミ',
   'michel-bauwens': 'ミシェル・バウエンス',
+  'mihai-alisie': 'ミハイ・アリシエ',
   'mike-belshe': 'マイク・ベルシェ',
   'mike-hearn': 'マイク・ハーン',
   'newlibertystandard': 'NewLibertyStandard',
@@ -79,6 +80,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'timothy-may': 'ティモシー・メイ',
   'twitter': 'Twitter',
   'vincent-durham': 'ヴィンセント・ダラム',
+  'vitalik-buterin': 'ヴィタリック・ブテリン',
   'wei-dai': 'ウェイ・ダイ',
   'wladimir-van-der-laan': 'ウラジミール・ファン・デル・ラーン',
   // Legacy handle entries — kept as a defensive fallback for any code
