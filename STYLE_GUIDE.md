@@ -81,6 +81,29 @@ Typical pattern:
 - English: `> "..."` for short excerpted speech or statements
 - Japanese: `> 「...」` for short excerpted speech or statements
 
+## Source Citation: `sourceUrl` vs `secondarySources`
+
+`<SourceCitation />` renders the two frontmatter fields as separate
+sections at the foot of the entry:
+
+- **`sourceUrl`** (required) — the single canonical primary
+  reference. Rendered under 「関連ソース」 / "Related source". Pick
+  the URL a reader should open first (archived original, Wikipedia
+  biography, BitcoinTalk topic, GitHub PR, etc.).
+- **`secondarySources[]`** (optional) — list of additional
+  references with `name`, `url`, optional `note`. Rendered under
+  「その他の関連ソース」 / "Other related sources".
+
+**Rule.** The same URL must not appear in both fields. If it did,
+the citation block would list the link twice. When tempted to
+duplicate, decide which role the URL plays for this entry — the
+canonical "open first" or one of several supporting references —
+and keep it in only the matching field.
+
+**Enforcement.** `scripts/check-source-duplication.mjs` fails when
+an entry's `sourceUrl` matches any of its own `secondarySources[].url`.
+Wired into `npm run check` in `--strict` mode.
+
 ## When a Hypothesis-Related Article Deserves Its Own Aftermath Entry
 
 Coverage of Satoshi-identity hypotheses (Skye Grey 2013 for Szabo, Hatch 2021
@@ -168,7 +191,7 @@ normalized.
 | Role | Description | EN canonical | JA canonical | Position |
 |---|---|---|---|---|
 | **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
-| **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` | same | rendered at the end of the entry by `<SourceCitation />` |
+| **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` (role split between the two fields: see [§ Source Citation](#source-citation-sourceurl-vs-secondarysources)) | same | rendered at the end of the entry by `<SourceCitation />` |
 | **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
 | **D** | In-body historical context | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
