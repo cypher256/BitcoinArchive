@@ -1,5 +1,5 @@
 ---
-title: "Satoshi Nakamoto Stylometric Analysis: Per-Candidate Distance Values from van Dorst's 'Where is Satoshi?' Corpus — Bitcoin Institute Reanalysis of Adam Back, Wei Dai, Hal Finney, Nick Szabo, and Len Sassaman (May 2026)"
+title: "Bitcoin Institute reanalysis of van Dorst's Satoshi stylometry: 5 named candidates ranked against 12,739 mailing-list authors (May 2026)"
 date: 2026-05-03T00:00:00Z
 type: "analysis"
 source: "github"
@@ -48,7 +48,7 @@ relatedEntries:
 inlineLinkKeywords:
   - "van Dorst per-candidate reanalysis"
   - "Bitcoin Institute reanalysis"
-  - "75,000-author corpus reanalysis"
+  - "van Dorst corpus reanalysis"
 ---
 
 [Bas van Dorst's April 2024 'Where is Satoshi?' open-source stylometric corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) is the largest publicly-released numerical-data resource on Satoshi-Nakamoto authorship to date — 75,000+ mailing-list authors, 70,000+ Reddit commenters, full per-author Burrows' Delta and Jaccard similarity values released as 280 MB of CSV/XLSX. The author declines to publish a candidate ranking, citing both methodological limits and personal uncertainty: *"I have a short-list of suspects. No, I'm not going to drop names here because I'm not 100% sure."*
@@ -104,7 +104,7 @@ All five named candidates rank in the top 25% of the 12,739-author corpus, four 
 
 [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) leads the named group at top 4.67% — consistent with the conclusions of [Skye Grey's December 2013 LikeInAMirror investigation](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) and the [April 2014 Aston University 'Project Bitcoin' study](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/), both of which named Szabo as the closest match. [Hal Finney](/BitcoinArchive/participants/hal-finney/) (6.89%) and [Adam Back](/BitcoinArchive/participants/adam-back/) (7.87%) follow closely. The proximity of Hal Finney to Adam Back in this aggregate is consistent with Florian Cafiero's "near tie" qualifier on his commissioned 12-candidate review for the [2026 Carreyrou NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/), which named Adam Back as the leading candidate but described the result as inconclusive.
 
-The analysis confirms that the named-candidate studies are not finding noise: the same five candidates are stylometrically meaningful in the wider 75,000-author corpus too. It also reveals that three of the four named-candidate studies actually converge on Szabo as the closest match — Skye Grey 2013 (named), Aston 2014 (named), and this reanalysis of van Dorst's data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, and Cafiero himself qualified that result as inconclusive (Hal Finney near tie). The differences between the named candidates remain small enough that the leading candidate is not robustly determined by the metric alone — but the data is more consistent with Szabo as the closest of the named candidates than the published-headlines reading ("Szabo / Szabo / no name / Adam Back") would suggest.
+The analysis confirms that the named-candidate studies are not finding noise: the same five candidates remain stylometrically meaningful when ranked against the 12,739-author filtered distribution drawn from van Dorst's wider corpus. It also reveals that three of the four named-candidate studies actually converge on Szabo as the closest match — Skye Grey 2013 (named), Aston 2014 (named), and this reanalysis of van Dorst's data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, and Cafiero himself qualified that result as inconclusive (Hal Finney near tie). The differences between the named candidates remain small enough that the leading candidate is not robustly determined by the metric alone — but the data is more consistent with Szabo as the closest of the named candidates than the published-headlines reading ("Szabo / Szabo / no name / Adam Back") would suggest.
 
 The four investigations as a timeline:
 
@@ -125,7 +125,7 @@ timeline
 
 ## 3. Top of the corpus: noise rather than signal
 
-A finding that does not appear in any of the named-candidate stylometric studies, and that becomes visible only when the candidate pool is the whole 75,000-author corpus rather than a small pre-selected subset:
+A finding that does not appear in any of the named-candidate stylometric studies, and that becomes visible only when the candidate pool is the full van Dorst release (here 12,739 authors after the >=10-chunk filter, drawn from a source corpus of 75,000+ mailing-list authors) rather than a small pre-selected subset:
 
 **The 20 authors closest to Satoshi by aggregate Burrows' Delta are not stylometric "matches" in any meaningful sense — they are corpus noise.**
 
