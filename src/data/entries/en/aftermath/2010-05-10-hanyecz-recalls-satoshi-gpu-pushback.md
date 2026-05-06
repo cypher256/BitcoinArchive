@@ -19,6 +19,9 @@ tags:
   - "mining-difficulty"
   - "recollection"
 secondarySources:
+  - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"
+    url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
+    note: "Quotes attributed to Satoshi here are from Laszlo Hanyecz's recall as shared in multiple interviews (CoinDesk 2025, Bitcoin Magazine, Cointelegraph). The full private correspondence has not been publicly released."
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
     url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 relatedEntries:

@@ -14,6 +14,9 @@ isSatoshi: true
 tags:
   - "identity"
   - "dorian-nakamoto"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/"
 relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
   - "aftermath/2014-03-06-dorian-nakamoto-biography"

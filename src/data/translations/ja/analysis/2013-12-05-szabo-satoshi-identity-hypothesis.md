@@ -21,6 +21,8 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "Wikipedia — Nick Szabo（サトシ正体仮説の節）"
+    url: "https://en.wikipedia.org/wiki/Nick_Szabo"
   - name: "Skye Grey — 「Satoshi Nakamoto is (probably) Nick Szabo」（LikeInAMirror、2013 年 12 月）"
     url: "https://likeinamirror.wordpress.com/2013/12/01/satoshi-nakamoto-is-probably-nick-szabo/"
   - name: "TechCrunch — 「Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer」（2013 年 12 月 5 日）"
@@ -37,6 +39,9 @@ secondarySources:
   - name: "Tim Ferriss Show #244 — 「The Quiet Master of Cryptocurrency — Nick Szabo」（2017 年 6 月 4 日）"
     url: "https://tim.blog/2017/06/04/nick-szabo/"
     note: "ナバル・ラビカントが共同司会を務めた長尺ポッドキャスト。暗号通貨・スマートコントラクト・デジタルキャッシュの知的史を縦横に論じる、サボの公開記録上最も網羅的な音声インタビュー。"
+  - name: "ドミニク・フリスビー — 『Bitcoin: The Future of Money?』（2014、サボのメール返信付き）"
+    url: "https://en.wikipedia.org/wiki/Nick_Szabo"
+    note: "フリスビーの 2014 年の著書はサボをサトシとして名指しした。サボはメールで返信：「残念ながら私をサトシだと暴露するのは間違いだ。慣れているけれど」。後年の Wikipedia 記述やジャーナリズム取材で広く引用されている。"
   - name: "news.bitcoin.com — 「I designed bitcoi…」 The many facts pointing to Nick being Satoshi"
     url: "https://news.bitcoin.com/i-designed-bitcoi-gold-the-many-facts-pointing-to-nick-being-satoshi/"
     note: "4 月 5 日誕生日一致・ハンガリー系の系譜・Tim Ferriss ポッドキャストの言い間違え・Bit Gold タイムスタンプ異常など、しばしば引き合いに出される状況証拠を整理。仮説支持の枠組み。"

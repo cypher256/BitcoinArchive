@@ -19,6 +19,8 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "Wikipedia — Len Sassaman（サトシ正体問題の節）"
+    url: "https://en.wikipedia.org/wiki/Len_Sassaman"
   - name: "エヴァン・ハッチ — 「レン・サッサマンとサトシ：サイファーパンク史」（Medium、2021 年 2 月 22 日）"
     url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"
     note: "サッサマン＝サトシ仮説の最も注目度が高く最も多く引用される公的定式化。後続のジャーナリズムおよび Wikipedia における基礎参照源。"

@@ -20,6 +20,8 @@ tags:
   - "media"
   - "investigation"
 secondarySources:
+  - name: "The New York Times (@nytimes) — investigation announcement post"
+    url: "https://x.com/nytimes/status/2041824640071323724"
   - name: "Yahoo Finance — Adam Back explains why he's not bitcoin creator Satoshi Nakamoto (April 10, 2026)"
     url: "https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html"
   - name: "TechCrunch — British cryptographer Adam Back denies NYT report (April 8, 2026)"

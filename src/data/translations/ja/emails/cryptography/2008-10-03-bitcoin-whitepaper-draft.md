@@ -23,6 +23,9 @@ pdfMetadata:
   creationDate: "2008-10-03T20:49:58Z"
   pages: 8
   checksum: "94B5A950BE82F71A76361664D9DA141F"
+secondarySources:
+  - name: "Gwern's Bitcoin Archive"
+    url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
 relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper

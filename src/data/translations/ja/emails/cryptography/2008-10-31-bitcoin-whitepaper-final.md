@@ -24,6 +24,8 @@ pdfMetadata:
   pages: 9
   checksum: "6F72EA7514DFAD23FABCC7A550021AF7"
 secondarySources:
+  - name: "Bitcoin.org"
+    url: "https://bitcoin.org/bitcoin.pdf"
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/bitcoin.pdf"
 relatedEntries:

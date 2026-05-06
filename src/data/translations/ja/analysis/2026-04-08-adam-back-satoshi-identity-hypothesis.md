@@ -22,6 +22,8 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "Wikipedia — Adam Back"
+    url: "https://en.wikipedia.org/wiki/Adam_Back"
   - name: "The New York Times (@nytimes) — 調査記事の告知投稿"
     url: "https://x.com/nytimes/status/2041824640071323724"
     note: "ジョン・カレイロウによる NYT の調査記事は 2026 年 4 月 8 日に公開され、ビットコイン以前の暗号学メーリングリストに 10 件以上投稿していた 620 人の書き手のうちでバックがサトシの文体に最も近い一致を示すと特定した。X 投稿は記事の安定したポインターとして使用。"

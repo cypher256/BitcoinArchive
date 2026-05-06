@@ -20,6 +20,9 @@ tags:
   - "svn-access"
   - "project-management"
 secondarySources:
+  - name: "Wikipedia - Gavin Andresen"
+    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Based on Gavin Andresen's public Bitcointalk forum post (December 2010), Martti Malmi's published email archive (mmalmi.github.io/satoshi/), and multiple published accounts of the transition"
   - name: "CoinMarketCap - Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"

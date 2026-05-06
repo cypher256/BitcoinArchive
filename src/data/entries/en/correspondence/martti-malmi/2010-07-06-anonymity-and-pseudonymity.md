@@ -20,6 +20,9 @@ tags:
   - "pseudonymity"
   - "bitcoin-org"
 secondarySources:
+  - name: "Martti Malmi's Published Email Archive"
+    url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 ---

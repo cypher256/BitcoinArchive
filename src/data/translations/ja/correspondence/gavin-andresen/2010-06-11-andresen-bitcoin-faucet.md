@@ -19,6 +19,9 @@ tags:
   - "code-contributions"
   - "adoption"
 secondarySources:
+  - name: "Wikipedia - Gavin Andresen"
+    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Wikipedia、MIT Technology Review、およびその他の公開された記録に基づく。この時期のアンドレセンとサトシ間の個別のメールは完全には公開されていない"
   - name: "MIT Technology Review - The Man Who Really Built Bitcoin"
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
   - name: "CoinGeek - Bitcoin Faucet Turns 12"

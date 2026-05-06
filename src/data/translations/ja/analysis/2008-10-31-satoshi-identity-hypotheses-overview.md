@@ -17,6 +17,9 @@ tags:
   - "satoshi-identity"
   - "analysis"
   - "disputed"
+secondarySources:
+  - name: "Wikipedia（英語）— Satoshi Nakamoto"
+    url: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis

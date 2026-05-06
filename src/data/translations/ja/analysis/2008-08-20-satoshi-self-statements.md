@@ -18,6 +18,8 @@ tags:
 secondarySources:
   - name: "P2P Foundation — Satoshi Nakamoto profile (Wayback Machine snapshot; original offline since the Ning network was taken down)"
     url: "https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto"
+  - name: "Adam Back's complete emails with Satoshi (Bitcoin Magazine)"
+    url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
   - name: "Satoshi Nakamoto Institute — Complete Works"
     url: "https://satoshi.nakamotoinstitute.org/"
   - name: "Martti Malmi's published email archive"

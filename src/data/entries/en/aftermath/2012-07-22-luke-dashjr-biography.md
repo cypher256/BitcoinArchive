@@ -18,6 +18,9 @@ tags:
   - "ocean"
   - "mining-pool"
   - "historic"
+secondarySources:
+  - name: "Luke Dashjr — Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Luke_Dashjr"
 relatedEntries:
   - forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re
 ---

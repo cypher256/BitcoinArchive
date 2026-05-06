@@ -25,6 +25,9 @@ tags:
   - "race-day-alibi"
   - "journalism"
   - "historic"
+secondarySources:
+  - name: "Forbes — 「Nakamoto's Neighbor: My Hunt For Bitcoin's Creator Led To A Paralyzed Crypto Genius」"
+    url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
 relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2014-08-28-hal-finney-biography

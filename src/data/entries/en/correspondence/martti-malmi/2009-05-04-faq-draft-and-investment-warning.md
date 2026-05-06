@@ -20,6 +20,9 @@ tags:
   - "regulatory"
   - "positioning"
 secondarySources:
+  - name: "Martti Malmi's Published Email Archive"
+    url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 ---

@@ -20,8 +20,13 @@ tags:
   - "handover"
   - "historic"
 secondarySources:
+  - name: "Wikipedia — Gavin Andresen"
+    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
+  - name: "Gavin Andresen biography (this archive)"
+    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Andresen biography in this archive notes that 'by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key.'"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography

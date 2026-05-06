@@ -17,6 +17,9 @@ tags:
   - "early-contributor"
   - "api"
 secondarySources:
+  - name: "Martti Malmi's Published Email Archive"
+    url: "https://mmalmi.github.io/satoshi/"
+    note: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete

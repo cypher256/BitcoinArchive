@@ -19,6 +19,8 @@ tags:
   - "leadership"
   - "historic"
 secondarySources:
+  - name: "Bitcoin Core — Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Bitcoin_Core"
   - name: "Who Controls Bitcoin Core? — Jameson Lopp"
     url: "https://blog.lopp.net/who-controls-bitcoin-core/"
 relatedEntries:

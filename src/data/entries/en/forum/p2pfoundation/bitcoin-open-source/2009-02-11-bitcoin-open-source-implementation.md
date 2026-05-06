@@ -16,6 +16,9 @@ tags:
   - "trust"
   - "central-banking"
   - "cryptographic-proof"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/"
 relatedEntries:
   - aftermath/2009-02-12-michel-bauwens-biography
 ---

@@ -19,6 +19,8 @@ tags:
   - "cypherpunk"
   - "historic"
 secondarySources:
+  - name: "Ray Dillinger — 'If I'd known then...' (BitcoinTalk, September 2017)"
+    url: "https://bitcointalk.org/index.php?topic=2216771.0"
   - name: "SerHack — 'Alternative Genesis Block' interview (October 2022)"
     url: "https://serhack.me/articles/alternative-genesis-block/"
   - name: "Ray Dillinger — Bitcoin P2P e-cash paper (Cryptography Mailing List, November 2008)"

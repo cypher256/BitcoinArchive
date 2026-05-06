@@ -17,6 +17,9 @@ tags:
   - "decentralization"
   - "trust"
   - "e-currency"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/"
 translationStatus: complete
 quotes:
   - id: "q1"

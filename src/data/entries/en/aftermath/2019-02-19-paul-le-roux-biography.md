@@ -22,6 +22,8 @@ secondarySources:
     url: "https://www.penguinrandomhouse.com/books/238295/the-mastermind-by-evan-ratliff/"
   - name: "The Atavist Magazine — The Mastermind (Evan Ratliff long-form series, 2016)"
     url: "https://magazine.atavist.com/the-mastermind/"
+  - name: "Wikipedia — Paul Le Roux"
+    url: "https://en.wikipedia.org/wiki/Paul_Le_Roux"
   - name: "Wikipedia — E4M (Encryption for the Masses)"
     url: "https://en.wikipedia.org/wiki/E4M"
 relatedEntries:

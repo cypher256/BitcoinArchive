@@ -20,6 +20,9 @@ tags:
   - "supply-limit"
   - "proof-of-work"
   - "monetary-policy"
+secondarySources:
+  - name: "Satoshi Nakamoto Institute"
+    url: "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/3/"
 quotes:
   - id: "q1"
     person: "Joerg Baach"

@@ -24,6 +24,8 @@ tags:
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"
     url: "https://plan99.net/~mike/satoshi-emails/thread5.html"
+  - name: "Gavin Andresen's Blog — Eleven Years Ago Today"
+    url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
   - name: "MIT Technology Review"
     url: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
 relatedEntries:

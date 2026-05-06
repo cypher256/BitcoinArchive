@@ -21,6 +21,8 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "Wikipedia — Wei Dai"
+    url: "https://en.wikipedia.org/wiki/Wei_Dai"
   - name: "Wei Dai — b-money proposal (November 1998)"
     url: "http://www.weidai.com/bmoney.txt"
   - name: "Wei Dai — AALWA thread on LessWrong (January 12, 2014)"

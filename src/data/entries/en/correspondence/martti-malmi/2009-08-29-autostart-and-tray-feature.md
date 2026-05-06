@@ -20,6 +20,9 @@ tags:
   - "network-growth"
   - "bitcoin-0.2"
 secondarySources:
+  - name: "Martti Malmi's Published Email Archive"
+    url: "https://mmalmi.github.io/satoshi/"
+    note: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---

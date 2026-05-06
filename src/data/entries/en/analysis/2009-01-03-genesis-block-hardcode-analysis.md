@@ -22,6 +22,8 @@ tags:
   - "hardcode"
   - "blockchain"
 secondarySources:
+  - name: "Original Bitcoin v0.1 source (trottier/original-bitcoin)"
+    url: "https://github.com/trottier/original-bitcoin"
   - name: "Modern Bitcoin Core chainparams.cpp"
     url: "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp"
   - name: "Bitcoin Wiki — Genesis block"

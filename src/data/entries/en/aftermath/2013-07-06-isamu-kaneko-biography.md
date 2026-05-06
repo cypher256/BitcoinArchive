@@ -19,6 +19,8 @@ tags:
   - "japan"
   - "historic"
 secondarySources:
+  - name: "Wikipedia (English) — Isamu Kaneko"
+    url: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
   - name: "Wikipedia (Japanese) — Isamu Kaneko"
     url: "https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87"
   - name: "Wikipedia (Japanese) — Winny"

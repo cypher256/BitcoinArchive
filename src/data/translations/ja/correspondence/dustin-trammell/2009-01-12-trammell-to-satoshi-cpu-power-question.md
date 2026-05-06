@@ -19,6 +19,9 @@ tags:
   - "centralization"
   - "proof-of-work"
 secondarySources:
+  - name: "Bitcoin Wiki - Trammell/Nakamoto Emails"
+    url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
+    note: "2013 年 11 月にダスティン・トランメルにより公開"
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
 translationStatus: complete

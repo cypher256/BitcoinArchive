@@ -20,6 +20,9 @@ tags:
   - "node-count"
   - "famous-quote"
 secondarySources:
+  - name: "COPA v Wright Judgment [2024] EWHC 1198 (Ch)"
+    url: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
+    note: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 translationStatus: complete
