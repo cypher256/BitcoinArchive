@@ -165,28 +165,37 @@ console.log(`Scanning ${allUrls.length} unique URLs from ${[...new Set([...urlIn
 // ---------------------------------------------------------------------------
 // HTTP check
 // ---------------------------------------------------------------------------
+// Status codes where HEAD is unsupported but the URL itself is likely fine
+// when accessed with GET. Many CDN / app-server stacks reply 405 to HEAD
+// or 501 (no HEAD implementation) while serving the same path normally
+// for GET. Retrying on these status codes (not just on thrown errors)
+// avoids classifying live URLs as client-error.
+const HEAD_RETRY_STATUSES = new Set([405, 501]);
+
 async function checkUrl(url) {
   const result = { url, status: null, finalUrl: null, verdict: null, error: null };
   try {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+    const fetchOpts = {
+      redirect: 'follow',
+      signal: controller.signal,
+      headers: { 'User-Agent': 'BitcoinArchive-link-audit/1.0' },
+    };
     let response;
     try {
-      response = await fetch(url, {
-        method: 'HEAD',
-        redirect: 'follow',
-        signal: controller.signal,
-        headers: { 'User-Agent': 'BitcoinArchive-link-audit/1.0' },
-      });
+      response = await fetch(url, { ...fetchOpts, method: 'HEAD' });
+      // HEAD returned but with a status that suggests HEAD itself is the
+      // problem, not the URL. Retry with GET before classifying.
+      if (HEAD_RETRY_STATUSES.has(response.status)) {
+        response = await fetch(url, { ...fetchOpts, method: 'GET' });
+      }
     } catch (e) {
-      // some servers reject HEAD; retry with GET
+      // HEAD threw (network reset, connection refused, server hung up,
+      // etc.). Retry once with GET before giving up — except on timeout,
+      // which the outer catch handles uniformly.
       if (e.name === 'AbortError') throw e;
-      response = await fetch(url, {
-        method: 'GET',
-        redirect: 'follow',
-        signal: controller.signal,
-        headers: { 'User-Agent': 'BitcoinArchive-link-audit/1.0' },
-      });
+      response = await fetch(url, { ...fetchOpts, method: 'GET' });
     }
     clearTimeout(timer);
     result.status = response.status;
