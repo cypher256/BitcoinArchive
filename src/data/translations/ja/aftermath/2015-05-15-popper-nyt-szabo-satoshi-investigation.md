@@ -10,6 +10,12 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Adam Back"
+    slug: "adam-back"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Wei Dai"
+    slug: "wei-dai"
 description: "2015 年 5 月 15 日、ニューヨーク・タイムズがナサニエル・ポパーの「サトシの謎を読み解く」 を掲載。Bit Gold 設計者ニック・サボを最有力サトシと結論。サボは否定。"
 isSatoshi: false
 tags:

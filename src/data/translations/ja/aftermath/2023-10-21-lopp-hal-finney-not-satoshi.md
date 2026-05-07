@@ -14,6 +14,8 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
+  - name: "Martti Malmi"
+    slug: "martti-malmi"
 description: "ジェイムソン・ロップが、ハル＝サトシは不可能と主張。2009 年 4 月 18 日、サトシ活動時間帯にフィニーはサンタバーバラで 10 マイルレースを走っていた。"
 isSatoshi: false
 tags:

@@ -16,6 +16,10 @@ participants:
     slug: "eric-hughes"
   - name: "Timothy May"
     slug: "timothy-may"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
 description: "サトシとサイファーパンクの関係を 3 つの一次資料観察から読む: b-money を知らなかった本人自認、ウェイ・ダイの「以前から積極的でない」 推測、ヒューズ 1993 マニフェストとの密な整合。"
 isSatoshi: false
 homeOrder: 5

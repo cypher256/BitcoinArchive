@@ -10,6 +10,12 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Adam Back"
+    slug: "adam-back"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Wei Dai"
+    slug: "wei-dai"
 description: "On May 15, 2015, the New York Times published Nathaniel Popper's Decoding the Enigma of Satoshi Nakamoto — a Digital Gold excerpt naming Bit Gold designer Nick Szabo as Satoshi. Szabo denied it."
 isSatoshi: false
 tags:

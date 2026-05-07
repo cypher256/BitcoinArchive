@@ -10,6 +10,12 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Dorian Nakamoto"
+    slug: "dorian-nakamoto"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Peter Todd"
+    slug: "peter-todd"
 description: "2026 年 4 月 8 日、ニューヨーク・タイムズがジョン・カレイロウによる調査記事を掲載。文体計量分析によりアダム・バックをサトシ最有力候補と結論。バックは特定を否定。"
 editorNote: "本記事の文体計量結果はバス・ヴァン・ドルストの 75,000 人著者コーパスを用いた[Bitcoin Institute による独自再分析（2026 年 5 月）](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) と並べて読まれるべきである。再分析は名指し候補 5 名（アダム・バック、ウェイ・ダイ、ハル・フィニー、ニック・サボ、レン・サッサマン）のバローズ・デルタ順位を抽出し、ニック・サボが上位 4.67%（12,739 人中 595 位）で名指し候補内首位、ハル・フィニーが上位 6.89% で 2 位、アダム・バックが上位 7.87% で 3 位という結果を示している。NYT 調査の 620 名候補集合と再分析の 75,000 人広範コーパスは、候補プールの設計が異なれば異なる首位候補が浮上することを示唆する。"
 isSatoshi: false

@@ -10,6 +10,14 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Martti Malmi"
+    slug: "martti-malmi"
+  - name: "Mike Hearn"
+    slug: "mike-hearn"
 description: "レン・サッサマン（サイファーパンク暗号学者、2011 年 7 月 3 日死去）= サトシ仮説。論点: タイミングとサイファーパンク経歴。反証: 直接的文書上の繋がり不在、未亡人の沈黙。"
 isSatoshi: false
 tags:

@@ -10,6 +10,8 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Hal Finney"
+    slug: "hal-finney"
 description: "The hypothesis that Nick Szabo (Bit Gold creator, \"smart contracts\" coiner) was Satoshi. Frame: Skye Grey 2013 stylometric article. Counter: Szabo's 2008 Bit Gold help request and self-denials."
 isSatoshi: false
 tags:

@@ -10,6 +10,12 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Dorian Nakamoto"
+    slug: "dorian-nakamoto"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Peter Todd"
+    slug: "peter-todd"
 description: "On April 8, 2026, the New York Times published John Carreyrou's investigation naming Adam Back as the most likely Satoshi based on stylometric analysis. Back denied the identification."
 isSatoshi: false
 tags:

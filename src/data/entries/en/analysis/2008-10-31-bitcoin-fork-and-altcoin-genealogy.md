@@ -12,6 +12,18 @@ participants:
     slug: "mike-hearn"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
+  - name: "Amaury Séchet"
+    slug: "amaury-sechet"
+  - name: "Craig Wright"
+    slug: "craig-wright"
+  - name: "Jihan Wu"
+    slug: "jihan-wu"
+  - name: "Mike Belshe"
+    slug: "mike-belshe"
+  - name: "Roger Ver"
+    slug: "roger-ver"
+  - name: "Vitalik Buterin"
+    slug: "vitalik-buterin"
 description: "Genealogy of every Bitcoin protocol fork that left a separate chain alive (Bitcoin Cash, SV, Gold) and the adjacent cryptocurrencies derived from Bitcoin (Namecoin, Litecoin, Dogecoin)."
 isSatoshi: false
 homeOrder: 9

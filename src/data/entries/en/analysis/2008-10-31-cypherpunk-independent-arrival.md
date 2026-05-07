@@ -16,6 +16,10 @@ participants:
     slug: "eric-hughes"
   - name: "Timothy May"
     slug: "timothy-may"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
 description: "Editorial reading of Satoshi's relationship to cypherpunk, from three primary observations: he didn't know b-money, Wei Dai testified Satoshi was \"not previously active,\" alignment with Hughes 1993."
 isSatoshi: false
 homeOrder: 5

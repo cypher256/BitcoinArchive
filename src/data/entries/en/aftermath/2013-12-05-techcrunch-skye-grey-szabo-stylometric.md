@@ -10,6 +10,8 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Adam Back"
+    slug: "adam-back"
 description: "On December 1, 2013, blogger Skye Grey published Satoshi Nakamoto is (probably) Nick Szabo — the first public stylometric study naming Szabo as Satoshi, reported by TechCrunch on December 5."
 isSatoshi: false
 tags:

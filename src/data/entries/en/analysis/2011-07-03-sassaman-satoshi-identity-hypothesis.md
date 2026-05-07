@@ -10,6 +10,14 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Martti Malmi"
+    slug: "martti-malmi"
+  - name: "Mike Hearn"
+    slug: "mike-hearn"
 description: "The hypothesis that Len Sassaman (cypherpunk cryptographer, died July 3, 2011) was Satoshi. Frame: timing argument and cypherpunk credentials. Counter: no direct documentary link, no widow comment."
 isSatoshi: false
 tags:

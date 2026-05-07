@@ -10,6 +10,8 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Hal Finney"
+    slug: "hal-finney"
 description: "ニック・サボ（Bit Gold 考案）= サトシ仮説。提唱: Skye Grey 2013 文体計量、アストン大 2014。反証: 2008 年 Bit Gold 実装支援募集、一貫した否定。"
 isSatoshi: false
 tags:

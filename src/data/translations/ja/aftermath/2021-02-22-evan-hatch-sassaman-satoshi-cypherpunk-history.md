@@ -10,6 +10,12 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Adam Back"
+    slug: "adam-back"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Peter Todd"
+    slug: "peter-todd"
 description: "2021 年 2 月 22 日、エヴァン・ハッチが Medium に「レン・サッサマンとサトシ：サイファーパンク史」 を公開。サッサマン＝サトシ仮説の最も引用される公的定式化。"
 isSatoshi: false
 tags:

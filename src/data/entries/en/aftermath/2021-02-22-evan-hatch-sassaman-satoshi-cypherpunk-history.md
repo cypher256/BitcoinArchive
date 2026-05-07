@@ -10,6 +10,12 @@ participants:
     slug: "len-sassaman"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Adam Back"
+    slug: "adam-back"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Peter Todd"
+    slug: "peter-todd"
 description: "On February 22, 2021, Evan Hatch published Len Sassaman and Satoshi: a Cypherpunk history on Medium — the most-cited public articulation of the Sassaman = Satoshi Nakamoto hypothesis."
 isSatoshi: false
 tags:

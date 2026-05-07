@@ -12,6 +12,18 @@ participants:
     slug: "mike-hearn"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
+  - name: "Amaury Séchet"
+    slug: "amaury-sechet"
+  - name: "Craig Wright"
+    slug: "craig-wright"
+  - name: "Jihan Wu"
+    slug: "jihan-wu"
+  - name: "Mike Belshe"
+    slug: "mike-belshe"
+  - name: "Roger Ver"
+    slug: "roger-ver"
+  - name: "Vitalik Buterin"
+    slug: "vitalik-buterin"
 description: "生存チェーンを残したビットコインのプロトコル分岐 (ビットコインキャッシュ、ビットコインSV、ビットコインゴールド) と、ビットコインから派生した隣接暗号通貨 (ネームコイン、ライトコイン) の系譜。"
 isSatoshi: false
 homeOrder: 9

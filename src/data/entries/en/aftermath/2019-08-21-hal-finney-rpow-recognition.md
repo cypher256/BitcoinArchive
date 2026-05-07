@@ -8,6 +8,10 @@ author: "Satoshi Nakamoto Institute"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
+  - name: "Adam Back"
+    slug: "adam-back"
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
 description: "Hal Finney's RPOW system, a 2004 prototype for reusable proof-of-work tokens, gains posthumous recognition as one of Bitcoin's most important direct precursors."
 isSatoshi: false
 tags:

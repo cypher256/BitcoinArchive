@@ -14,6 +14,8 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
+  - name: "Martti Malmi"
+    slug: "martti-malmi"
 description: "Jameson Lopp argues Hal Finney could not have been Satoshi: on April 18, 2009, Finney was running a 10-mile race in Santa Barbara during a window of Satoshi network activity."
 isSatoshi: false
 tags:
