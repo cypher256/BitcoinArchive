@@ -12,6 +12,7 @@ import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
 import { rehypeMermaidWrapper } from './src/lib/rehype-mermaid-wrapper.mjs';
 import { rehypeTableWrapper } from './src/lib/rehype-table-wrapper.mjs';
+import { rehypeStripArchiveLinks } from './src/lib/rehype-strip-archive-links.mjs';
 
 const { site, base } = getDeploymentConfig();
 
@@ -33,6 +34,12 @@ export default defineConfig({
     // boxes can reach production). See STYLE_GUIDE.md "Mermaid Diagrams" for
     // usage and JA-content gotchas. Validation script: scripts/check-mermaid.mjs.
     rehypePlugins: [
+      // Non-link external http(s) URLs in verbatim primary records
+      // (forum/correspondence/emails). Internal links, anchors, and
+      // non-http URI schemes are excluded automatically. Editor-note
+      // <aside> blocks (from remarkEditorialMarker) keep their links.
+      // See plugin header for the archive-principle rationale.
+      rehypeStripArchiveLinks,
       rehypeNoAutolinkEmail,
       rehypeKatex,
       // mermaidConfig disables `useMaxWidth` per diagram type so the rendered

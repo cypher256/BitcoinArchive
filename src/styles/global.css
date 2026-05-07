@@ -443,3 +443,17 @@ p:has(> strong:only-child):has(+ .mermaid-scroll) {
     padding: 0.75rem 1rem;
   }
 }
+
+/* Verbatim archive entries (forum/correspondence/emails) — external
+   http(s) URLs are non-linked by rehype-strip-archive-links.mjs. The
+   URL stays visible (and copy-paste-able) but is not clickable. See
+   plugin header for the archive-principle rationale. */
+.archive-url-bare {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  color: #666;
+  word-break: break-all;
+  user-select: text;
+  background: transparent;
+  padding: 0;
+}
