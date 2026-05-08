@@ -1,5 +1,5 @@
 ---
-title: "Re: dasg"
+title: "Re: あれ、ビットコインがどこに行った？"
 date: 2010-05-18T20:06:46.000Z
 type: "forum-post"
 source: "bitcointalk"

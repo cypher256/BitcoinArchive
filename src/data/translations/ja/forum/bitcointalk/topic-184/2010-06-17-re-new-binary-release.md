@@ -1,5 +1,5 @@
 ---
-title: "Re: sfg"
+title: "Re: 新しいバイナリリリース？"
 date: 2010-06-17T17:07:56.000Z
 type: "forum-post"
 source: "bitcointalk"

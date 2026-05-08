@@ -1,5 +1,5 @@
 ---
-title: "Re: sg"
+title: "Re: 0.3.6 以前の実装バグ"
 date: 2010-07-29T22:04:15.000Z
 type: "forum-post"
 source: "bitcointalk"

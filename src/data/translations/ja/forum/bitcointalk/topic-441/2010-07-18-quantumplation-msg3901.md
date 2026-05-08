@@ -1,5 +1,5 @@
 ---
-title: "Re: adg"
+title: "Re:（Quantumplationの文脈投稿）"
 date: 2010-07-18T03:23:03.000Z
 type: "forum-post"
 source: "bitcointalk"

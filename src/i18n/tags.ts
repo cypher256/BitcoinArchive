@@ -259,6 +259,7 @@ export const tagTranslations: Record<string, string> = {
   'release': 'リリース',
   'reserves': '準備金',
   'resilience': 'レジリエンス',
+  'retroactive-overwrite': '事後上書き',
   'retrospective': '回顧',
   'running-bitcoin': 'ビットコイン稼働',
 

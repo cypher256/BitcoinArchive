@@ -1,5 +1,5 @@
 ---
-title: "Re: sdfh"
+title: "Re: 失われたコイン/送金に関する仮説的な質問"
 date: 2010-08-19T20:28:50.000Z
 type: "forum-post"
 source: "bitcointalk"
