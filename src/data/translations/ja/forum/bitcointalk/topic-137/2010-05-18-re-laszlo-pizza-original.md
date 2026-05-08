@@ -32,4 +32,4 @@ translationStatus: complete
 興味がある人は知らせてよ。取引の相談しようぜ。
 
 じゃあよろしく、
-Laszlo
+ラズロ
