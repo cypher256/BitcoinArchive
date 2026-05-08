@@ -15,4 +15,4 @@ translationStatus: complete
 ---
 VIA C7でのブロック生成：
 
-[topic 758](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-758/2010-08-10-re-natural-deflation/)
+[topic 299](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-299/2010-07-15-re-runaway-cpu-usage-msg3309/)

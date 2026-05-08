@@ -15,4 +15,4 @@ tags: []
 
 block generation on the VIA C7:
 
-[topic 758](/BitcoinArchive/entries/forum/bitcointalk/topic-758/2010-08-10-re-natural-deflation/)
+[topic 299](/BitcoinArchive/entries/forum/bitcointalk/topic-299/2010-07-15-re-runaway-cpu-usage-msg3309/)
