@@ -29,5 +29,9 @@ temp/
 temp_*
 *_temp.md
 
+# audit work directory (verification scripts, cached primary sources, JSON
+# evidence, audit reports) — local-only, not part of the published archive
+audit/
+
 # jetbrains setting folder
 .idea/
