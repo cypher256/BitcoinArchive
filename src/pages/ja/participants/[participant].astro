@@ -92,6 +92,7 @@ const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
 const lifeDatesRaw = lifeDatesMatch ? lifeDatesMatch[0] : null;
 const lifeDates = lifeDatesRaw && !/生没年不明|dates unknown/.test(lifeDatesRaw) ? lifeDatesRaw : null;
+const bioSubtitle = biographyEntry?.data.title.match(/—\s*(.+)/)?.[1] ?? null;
 const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]+[：:]\s*/, '') ?? '';
 const canonicalUrl = absoluteUrl(`/participants/${participantSlug}/`, lang);
 const structuredData = [
@@ -122,7 +123,7 @@ const structuredData = [
 ---
 
 <BaseLayout
-  title={`${participantName}${biographyEntry?.data.title.match(/—\s*(.+)/)?.[1] ? ` — ${biographyEntry.data.title.match(/—\s*(.+)/)![1]}` : ''} - ${t('site.title')}`}
+  title={`${participantName}${bioSubtitle ? ` — ${bioSubtitle}` : ''} - ${t('site.title')}`}
   description={biographyEntry?.data.description ?? `${participantName}のビットコイン初期における投稿・メール・技術的議論のアーカイブ`}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/participants/${participantSlug}/`, 'en') : undefined}
@@ -138,6 +139,7 @@ const structuredData = [
       ) : <span />}
     </nav>
     <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
+    {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
 
     {hypothesisEntry && (
       <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
@@ -195,11 +197,18 @@ const structuredData = [
 </BaseLayout>
 
 <style>
-  h1 { margin-bottom: 1rem; }
+  h1 { margin-bottom: 0.25rem; }
   .life-dates {
     font-weight: normal;
     font-size: 0.6em;
     color: var(--color-text-muted);
+  }
+  .bio-subtitle {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+    font-weight: normal;
   }
   .hypothesis-callout {
     display: inline-flex;
