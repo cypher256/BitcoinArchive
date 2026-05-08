@@ -33,6 +33,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original

@@ -12,6 +12,7 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findJaSectionLineRanges, lineInJaSection } from './lib/astro-ja-section.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const targets = [
@@ -60,7 +61,7 @@ const NAME_MAP = loadNameMap();
 // -------------------------------------------------------------------------
 // Lines / patterns to skip (not body text)
 // -------------------------------------------------------------------------
-function isMetadataOrExcluded(line, inFrontmatter, inCodeBlock) {
+function isMetadataOrExcluded(line, inFrontmatter, inCodeBlock, inJaSection = false) {
   if (inFrontmatter || inCodeBlock) return true;
 
   const trimmed = line.trimStart();
@@ -116,7 +117,10 @@ function isMetadataOrExcluded(line, inFrontmatter, inCodeBlock) {
   // If the line has no hiragana, katakana, or CJK unified ideographs,
   // treat it as foreign-language quoted content where English names are
   // carried through from the source.
-  if (!/[぀-ゟ゠-ヿ一-鿿]/.test(trimmed)) return true;
+  // Exception: inside an .astro `labels.ja: {…}` block, an all-ASCII line
+  // like `block1: 'Block 1'` is a reader-facing JA value — keep it in
+  // scope so person-name violations there are not silently skipped.
+  if (!inJaSection && !/[぀-ゟ゠-ヿ一-鿿]/.test(trimmed)) return true;
 
   // Lines containing a raw URL (http:// or https://) in JA prose are
   // typically citations of external titles (YouTube, articles, etc.)

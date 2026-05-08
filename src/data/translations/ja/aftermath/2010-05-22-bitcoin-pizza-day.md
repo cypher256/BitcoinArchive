@@ -27,6 +27,7 @@ secondarySources:
     url: "https://www.coindesk.com/tech/2025/05/22/what-you-didnt-know-about-laszlo-hanyecz-the-bitcoin-pizza-day-legend"
 relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
+  - forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-laszlo-hanyecz-biography
   - forum/bitcointalk/topic-137/2010-05-21-laszlo-msg1181

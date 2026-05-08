@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findJaSectionLineRanges, lineInJaSection } from './lib/astro-ja-section.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
@@ -31,7 +32,9 @@ let checkedFiles = 0;
 for (const root of targets) {
   for (const file of walkFiles(root)) {
     const isAstro = file.endsWith('.astro');
-    let text = readFileSync(file, 'utf8');
+    const rawText = readFileSync(file, 'utf8');
+    const jaRanges = isAstro ? findJaSectionLineRanges(rawText) : [];
+    let text = rawText;
     // For .astro: strip JS line and block comments so identifiers / commentary
     // referencing block numbers are not flagged. JA prose lives in TS string
     // literals, which we keep visible.
@@ -44,14 +47,17 @@ for (const root of targets) {
     checkedFiles += 1;
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
+      const lineNum = i + 1;
       if (/^```/.test(line)) {
         inCodeBlock = !inCodeBlock;
         continue;
       }
       if (inCodeBlock) continue;
-      // For .astro: only check lines containing JA prose. EN-side labels and
-      // pure-code lines (no JA characters) are out of scope for this rule.
-      if (isAstro && !JA_CHAR_RE.test(line)) continue;
+      // For .astro: a line is in scope if it falls inside `labels.ja: {…}`
+      // (catches English-only values like `block1: 'Block 1'` that ship to
+      // JA UI readers) OR contains a JA character (catches JA prose
+      // elsewhere). EN labels and unrelated code lines fall through.
+      if (isAstro && !lineInJaSection(lineNum, jaRanges) && !JA_CHAR_RE.test(line)) continue;
       // Strip inline code spans before scanning
       const stripped = line.replace(/`[^`]+`/g, '');
       // English form "Block N" (Block followed by digits) anywhere outside code

@@ -17,6 +17,7 @@
 
 import { readdirSync, readFileSync, statSync, existsSync } from 'fs';
 import path from 'path';
+import { findJaSectionLineRanges, lineInJaSection } from './lib/astro-ja-section.mjs';
 
 // Accept optional target directory(s) via CLI argument.
 // Default: Archive's JA translations + components (which embed JA labels for
@@ -310,7 +311,7 @@ function maskAstro(content) {
 
 const JA_CHAR_RE = /[぀-ゟ゠-ヿ一-鿿]/;
 
-function findViolations(content, rule, file) {
+function findViolations(content, rule, file, jaRanges) {
   const hits = [];
   const isAstro = file.endsWith('.astro');
   const masked = isAstro ? maskAstro(content) : maskNonProse(content);
@@ -332,11 +333,14 @@ function findViolations(content, rule, file) {
     pattern = new RegExp(rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
   }
   lines.forEach((line, i) => {
-    // For .astro: only scan lines that actually contain JA prose. EN-side
-    // labels (e.g. `'private-email': 'Private email'` in `labels.en`) are
-    // skipped, so deprecated-form rules whose canonical form is permitted
-    // in EN context (Litecoin, Bitcoin Cash, etc.) do not false-positive.
-    if (isAstro && !JA_CHAR_RE.test(line)) return;
+    // For .astro: a line is in scope if it falls inside a `labels.ja: {…}`
+    // block (structural — catches English-only values like
+    // `block1: 'Block 1'` that ship to JA UI readers and must follow the
+    // same conventions) OR if it contains a JA character (catches JA
+    // prose elsewhere — script tags, template body, etc.). Pure EN
+    // labels in `labels.en: {…}` and unrelated code lines fall through.
+    const lineNum = i + 1;
+    if (isAstro && !lineInJaSection(lineNum, jaRanges) && !JA_CHAR_RE.test(line)) return;
     pattern.lastIndex = 0;
     let m;
     while ((m = pattern.exec(line)) !== null) {
@@ -365,8 +369,9 @@ const violations = [];
 
 for (const file of files) {
   const content = readFileSync(file, 'utf8');
+  const jaRanges = file.endsWith('.astro') ? findJaSectionLineRanges(content) : [];
   for (const rule of RULES) {
-    const lineNums = findViolations(content, rule, file);
+    const lineNums = findViolations(content, rule, file, jaRanges);
     for (const ln of lineNums) violations.push({ file, line: ln, rule });
   }
 }
