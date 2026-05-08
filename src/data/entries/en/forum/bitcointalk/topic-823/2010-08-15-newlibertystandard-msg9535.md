@@ -24,4 +24,4 @@ quotes:
 > Can you easily hardcode a check for the bad block's hash at startup and orphan it and subsequent blocks if they're on the best-block chain?
 > It's painful to have to re-download all or most of the chain to fix this...
 
-Or just a quick re-verification of all blocks. After all, it is 5x faster than it used t be. Wink
+Or just a quick re-verification of all blocks. After all, it is 5x faster than it used t be. 😉

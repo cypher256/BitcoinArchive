@@ -17,7 +17,7 @@ I also run a Tor relay and exit node and had similar ideas for Tor integration w
 
 Tor can be very fast if you edit your config correctly. You just need to limit the connectivity with slow servers and only use the fastest nodes where possible. I also like to block any nodes in 'problem' internet countries, which also tend to have slower connectivity, this also increases overall privacy somewhat. I also block Unnamed, ididnteditheconfig, any servers that I don't like the name of and unstable servers.
 
-This config. example is only good for non-relay / non-exit personal use. Although its great for P2P Smiley
+This config. example is only good for non-relay / non-exit personal use. Although its great for P2P 😊
 
 AvoidDiskWrites 1
 
@@ -33,4 +33,4 @@ ExitNodes (Select Fast Exit Only from http://trunk.torstatus.kgprog.com/index.ph
 
 It's also a good idea to alter the time which Tor takes to automatically switch circuits and some other custom settings https://www.torproject.org/tor-manual.html
 
-Hope this helps Wink
+Hope this helps 😉

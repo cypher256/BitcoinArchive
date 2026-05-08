@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-That pizza looks delicious! Adorable kid. Cheesy
+That pizza looks delicious! Adorable kid. 😄

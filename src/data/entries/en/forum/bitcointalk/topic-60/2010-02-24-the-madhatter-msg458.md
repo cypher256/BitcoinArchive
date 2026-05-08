@@ -21,7 +21,7 @@ quotes:
 
 I have 0.2 running on FreeBSD windowed or non-windowed. I am also really close to having it running on OSX 10.4.11. It is true, I had ran into build problems due to UTF issues. I will try it again soon. I have an Intel Mac and a PPC Mac here as well. I should release builds for both platforms.
 
-Peace! Smiley
+Peace! 😊
 
 <!-- quote: q1 -->
 > madhatter was working on building it on Mac.  He had errors probably caused by UTF-16 wxWidgets 2.8.  Should have better luck now with 2.9.0.  wxWidgets 2.9.0 is UTF-8 and wouldn't have that problem.

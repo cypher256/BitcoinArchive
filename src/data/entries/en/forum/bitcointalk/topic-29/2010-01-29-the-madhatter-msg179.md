@@ -19,7 +19,7 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-29/2010-01-28-re-payment-server"
 ---
 
-Great! I guess this statement obsoletes my last post. Wink
+Great! I guess this statement obsoletes my last post. 😉
 
 (https://www.bitcoin.org/smf/index.php?topic=25.msg178#msg178)
 

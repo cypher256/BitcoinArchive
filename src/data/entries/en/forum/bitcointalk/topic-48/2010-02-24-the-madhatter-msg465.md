@@ -19,4 +19,4 @@ These systems are all DC (every computer is DC under the hood) and can be powere
 
 Essentially I could generate/participate cheaper (in the long run of course) with a setup like this one. Assuming that electricity prices will climb over the next 10 years and that I'd only have to change out the obsolete systems every 4 or so I could possibly come out ahead.
 
-Still haven't ran all of the math yet. Tongue Also predicting future electricity costs is a hard thing to do.
+Still haven't ran all of the math yet. 😛 Also predicting future electricity costs is a hard thing to do.

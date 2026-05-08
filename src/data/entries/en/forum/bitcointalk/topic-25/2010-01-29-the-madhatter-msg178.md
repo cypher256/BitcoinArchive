@@ -19,4 +19,4 @@ However, from the perspective of the merchant (myself, and others) payment autom
 
 Payment automation needs to be addressed to expand the market that accepts bitcoin as a payment method.
 
-Thanks. Smiley
+Thanks. 😊

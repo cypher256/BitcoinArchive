@@ -15,6 +15,6 @@ tags: []
 
 Thank you for these sirius-m, giik and all future contributors. I might have ago at producing a logo myself.
 
-Is this a logo contest ? How many Bitcoins for the Winner ? Grin
+Is this a logo contest ? How many Bitcoins for the Winner ? 😁
 
-Perhaps anyone who adopts a contributors logo for their website might consider a Bitcoin donation to it's creator(s) ! Cool
+Perhaps anyone who adopts a contributors logo for their website might consider a Bitcoin donation to it's creator(s) ! 😎

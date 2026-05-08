@@ -35,4 +35,4 @@ A new chain with grassroot development should excite the miners and coders and c
 The funny thing is, once the theory is solid the porting of a new BitDNS(Domainchain?) will be very simple. All the stumbling blocks appear to be centered around including Domainchain into the Bitcoin structure instead of branching it into its own chain. 
 
 Domainchain is dead, long live Domainchain!
- Smiley
+ 😊

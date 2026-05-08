@@ -13,6 +13,6 @@ isSatoshi: false
 tags: []
 ---
 
-I love how the word "offshore" seems to mean "not in the USA" now. Tongue
+I love how the word "offshore" seems to mean "not in the USA" now. 😛
 
 Trading with bitcoin without the need to exchange in/out to fiat is ideal.

@@ -30,4 +30,4 @@ quotes:
 >
 > Scale or not, the test network will react in the same ways, but with much less wasted bandwidth and annoyance.
 
-OK, I get it. Not sure for the other jerks  Grin though.
+OK, I get it. Not sure for the other jerks  😁 though.

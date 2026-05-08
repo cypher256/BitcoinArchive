@@ -17,4 +17,4 @@ Oh thank you!
 
 You have no idea how badly I needed something like this.
 
-I will have a payment library built in no time. Cheesy
+I will have a payment library built in no time. 😄

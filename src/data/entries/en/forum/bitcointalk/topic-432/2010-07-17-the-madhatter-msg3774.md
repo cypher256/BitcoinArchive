@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-I figured it was a bug with the display. I spent the bitpenny back the other direction and the balance on the first box returned to its initial state. Tongue
+I figured it was a bug with the display. I spent the bitpenny back the other direction and the balance on the first box returned to its initial state. 😛

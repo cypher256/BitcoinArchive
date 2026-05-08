@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-Very very nice. Cheesy
+Very very nice. 😄

@@ -15,6 +15,6 @@ tags: []
 
 Good work !
 
-Please could someone perhaps design a Bitcoin 'banner' 468 x 60. I have around 10,000 banner impressions that I wouldn't mind donating to promote bitcoin.org on some traffic / hit exchanges. Cool
+Please could someone perhaps design a Bitcoin 'banner' 468 x 60. I have around 10,000 banner impressions that I wouldn't mind donating to promote bitcoin.org on some traffic / hit exchanges. 😎
 
 Thanks.

@@ -36,4 +36,4 @@ quotes:
 >
 > That would discourage botnet operators from thousands of nodes. And if it didn't you would have tens of thousands of dollars! ;-)
 
-I can't imagine a more splintered network. Wink
+I can't imagine a more splintered network. 😉

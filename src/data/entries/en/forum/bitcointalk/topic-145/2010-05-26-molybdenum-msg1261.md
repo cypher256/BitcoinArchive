@@ -13,4 +13,4 @@ isSatoshi: false
 tags: []
 ---
 
-Heh, found this when i was cruising rpc.cpp when updating to r78... btw, it doesn't quite compile with GCC 4.3.4 from debian lenny backports, I had to change DEFAULT_PORT in net.h to a #define because the htons() wasn't allowed in the variable declaration for some reason... probably not the best solution, but it worked for the shirt term. Wink
+Heh, found this when i was cruising rpc.cpp when updating to r78... btw, it doesn't quite compile with GCC 4.3.4 from debian lenny backports, I had to change DEFAULT_PORT in net.h to a #define because the htons() wasn't allowed in the variable declaration for some reason... probably not the best solution, but it worked for the shirt term. 😉

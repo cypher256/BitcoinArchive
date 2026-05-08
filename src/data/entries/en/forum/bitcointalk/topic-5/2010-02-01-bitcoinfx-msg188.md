@@ -17,7 +17,7 @@ Hello Satoshi, all forum members and Bitcoin users !
 
 Thank you for developing Bitcoin. A P2P anonymous digital currency / eCurrency is long overdue. I'm very impressed and this project has great potential.
 
-I've started running a Bitcoin node on a static IP - 24/7 to help support the project and of course earn some Bitcoins. My port 8333 is also correctly forwarded for maximum connectivity. Cool
+I've started running a Bitcoin node on a static IP - 24/7 to help support the project and of course earn some Bitcoins. My port 8333 is also correctly forwarded for maximum connectivity. 😎
 
 I'm an IT enthusiast and Forex Trader with an interest in all types of currency exchange.
 

@@ -14,4 +14,4 @@ tags: []
 translationStatus: complete
 ---
 
-とても、とても素晴らしい。 😁
+とても、とても素晴らしい。 😄

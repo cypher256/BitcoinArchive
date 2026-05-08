@@ -15,7 +15,7 @@ tags: []
 
 Hello,
 
-Great to see that the minor FreeBSD-specific changes have been added to the SVN. Thanks! Smiley
+Great to see that the minor FreeBSD-specific changes have been added to the SVN. Thanks! 😊
 
 I am in the process of setting up more bitcoin seed notes (geographically distributed) as soon as I can find the time. (I am currently in the middle of moving the computer lab).
 

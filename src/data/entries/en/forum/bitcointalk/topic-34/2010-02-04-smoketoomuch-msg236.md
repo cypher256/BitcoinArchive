@@ -17,6 +17,6 @@ tags: []
 
 0.01 BTC per Bitcoin adress and 0.01 BTC per IP-adress.
 
-I don't need it back Smiley
+I don't need it back 😊
 
 BTW: http://trunk.torstatus.kgprog.com/ is telling me I'm using TOR, but I`m not. It shows my real IP.

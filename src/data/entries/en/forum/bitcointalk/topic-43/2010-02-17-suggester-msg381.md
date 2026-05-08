@@ -32,6 +32,6 @@ Can Satoshi confirm whether the computations your machine had made carries on if
 <!-- quote: q2 -->
 > I generated 5 blocks today on my Pentium processor. Two of them were within 3 minutes of each other.
 
-Ok, I just realized that I didn't understand how Bitcoin worked to begin with. The blocks get generated anyway whether you're generating coins or not. The average amount of creation conformed what I observed before (120/20 hrs, or 6/hr). This has got absolutely nothing to do with your CPU power, it's  constant for all practical purposes. The CPU power determines the "transactions" that get created and "matures in xx blocks". My head just got a bit bigger now Smiley
+Ok, I just realized that I didn't understand how Bitcoin worked to begin with. The blocks get generated anyway whether you're generating coins or not. The average amount of creation conformed what I observed before (120/20 hrs, or 6/hr). This has got absolutely nothing to do with your CPU power, it's  constant for all practical purposes. The CPU power determines the "transactions" that get created and "matures in xx blocks". My head just got a bit bigger now 😊
 
 This also means theymos that there was probably a coincidence or error for your 3-minute interval observation!
