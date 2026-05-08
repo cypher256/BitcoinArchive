@@ -1,5 +1,5 @@
 ---
-title: "What did Satoshi know? Bitcoin's connection to cypherpunk core ideas"
+title: "What did Satoshi know? Bitcoin's arrival at cypherpunk core ideas"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "metzdowd"
