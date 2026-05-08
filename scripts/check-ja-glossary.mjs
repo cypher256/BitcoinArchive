@@ -18,9 +18,17 @@
 import { readdirSync, readFileSync, statSync, existsSync } from 'fs';
 import path from 'path';
 
-// Accept optional target directory via CLI argument.
-// Default: Archive's JA translations. Other repos (e.g. NovelBitCoin) can
-// invoke this script with their own JA directory as argument.
+// Accept optional target directory(s) via CLI argument.
+// Default: Archive's JA translations + components (which embed JA labels for
+// charts/timelines that ship to readers). Other repos (e.g. NovelBitCoin) can
+// invoke this script with their own directory as argument.
+//
+// Both `.md` and `.astro` files are scanned. For `.astro`, only lines that
+// contain a Japanese character (hiragana / katakana / kanji) are checked,
+// so EN-side labels in `labels.en` blocks do not produce false positives
+// against deprecated-form rules whose canonical EN spelling is permitted in
+// EN context (e.g. `Litecoin` in an `en:` map is fine; `Litecoin` in a `ja:`
+// map alongside JA prose is flagged).
 //
 // Optional ignore file: a plain-text file listing terms that must not be
 // treated as deprecated within this target (one per line). Useful when the
@@ -39,10 +47,20 @@ import path from 'path';
 //   node check-ja-glossary.mjs ../NovelBitCoin/src
 //   node check-ja-glossary.mjs ../NovelBitCoin/src --ignore-file .ja-glossary-ignore
 const args = process.argv.slice(2);
-const JA_DIR = args.find((a) => !a.startsWith('--')) || 'src/data/translations/ja';
+const explicitPaths = [];
 let IGNORE_FILE = null;
-const ignoreIdx = args.indexOf('--ignore-file');
-if (ignoreIdx !== -1 && args[ignoreIdx + 1]) IGNORE_FILE = args[ignoreIdx + 1];
+for (let i = 0; i < args.length; i++) {
+  if (args[i] === '--ignore-file') {
+    if (args[i + 1]) IGNORE_FILE = args[i + 1];
+    i++;
+    continue;
+  }
+  if (args[i].startsWith('--')) continue;
+  explicitPaths.push(args[i]);
+}
+const TARGETS = explicitPaths.length > 0
+  ? explicitPaths
+  : ['src/data/translations/ja', 'src/components'];
 
 // Rule types:
 //   'literal' — plain substring match
@@ -174,7 +192,7 @@ function walk(dir) {
   for (const entry of readdirSync(dir)) {
     const full = path.join(dir, entry);
     if (statSync(full).isDirectory()) results.push(...walk(full));
-    else if (full.endsWith('.md')) results.push(full);
+    else if (full.endsWith('.md') || full.endsWith('.astro')) results.push(full);
   }
   return results;
 }
@@ -274,9 +292,29 @@ function maskNonProse(content) {
   return out.join('\n');
 }
 
-function findViolations(content, rule) {
+// Astro components embed reader-facing JA labels in TS code (frontmatter
+// `---...---` block, template-literal subtitles, label maps for charts).
+// Unlike `.md`, the top `---` block is NOT YAML metadata and must NOT be
+// stripped. We only mask code-side noise that cannot be JA prose:
+//   - // line comments
+//   - /* */ block comments (multi-line)
+//   - URLs (http://, https://)
+// Line numbers are preserved so error reports remain accurate.
+function maskAstro(content) {
+  let out = content;
+  out = out.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '));
+  out = out.replace(/\/\/[^\n]*/g, (m) => ' '.repeat(m.length));
+  out = out.replace(/https?:\/\/\S+/g, (m) => ' '.repeat(m.length));
+  return out;
+}
+
+const JA_CHAR_RE = /[぀-ゟ゠-ヿ一-鿿]/;
+
+function findViolations(content, rule, file) {
   const hits = [];
-  const lines = maskNonProse(content).split('\n');
+  const isAstro = file.endsWith('.astro');
+  const masked = isAstro ? maskAstro(content) : maskNonProse(content);
+  const lines = masked.split('\n');
   let pattern;
   if (rule.type === 'trailing-choon') {
     // Match deprecated NOT followed by ー, and not preceded by a
@@ -294,6 +332,11 @@ function findViolations(content, rule) {
     pattern = new RegExp(rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
   }
   lines.forEach((line, i) => {
+    // For .astro: only scan lines that actually contain JA prose. EN-side
+    // labels (e.g. `'private-email': 'Private email'` in `labels.en`) are
+    // skipped, so deprecated-form rules whose canonical form is permitted
+    // in EN context (Litecoin, Bitcoin Cash, etc.) do not false-positive.
+    if (isAstro && !JA_CHAR_RE.test(line)) return;
     pattern.lastIndex = 0;
     let m;
     while ((m = pattern.exec(line)) !== null) {
@@ -317,19 +360,19 @@ function findViolations(content, rule) {
   return hits;
 }
 
-const files = walk(JA_DIR);
+const files = TARGETS.flatMap((t) => walk(t));
 const violations = [];
 
 for (const file of files) {
   const content = readFileSync(file, 'utf8');
   for (const rule of RULES) {
-    const lineNums = findViolations(content, rule);
+    const lineNums = findViolations(content, rule, file);
     for (const ln of lineNums) violations.push({ file, line: ln, rule });
   }
 }
 
 if (violations.length === 0) {
-  console.log(`✓ JA glossary check passed. ${files.length} files scanned, ${RULES.length} rule(s) enforced.`);
+  console.log(`✓ JA glossary check passed. ${files.length} files scanned (${TARGETS.join(', ')}), ${RULES.length} rule(s) enforced.`);
   process.exit(0);
 }
 

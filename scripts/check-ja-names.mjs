@@ -14,7 +14,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const jaDir = path.resolve(__dirname, '../src/data/translations/ja');
+const targets = [
+  path.resolve(__dirname, '../src/data/translations/ja'),
+  path.resolve(__dirname, '../src/components'),
+];
 
 // -------------------------------------------------------------------------
 // Person name mappings: English → Katakana
@@ -121,6 +124,13 @@ function isMetadataOrExcluded(line, inFrontmatter, inCodeBlock) {
   // links [text](URL) are a different shape and are not matched here.
   if (/(?<!\]\()https?:\/\//.test(trimmed)) return true;
 
+  // i18n label-map definition lines in .astro components, e.g.
+  //   'Nick Szabo': 'ニック・サボ',
+  // The English side is an object key (identifier mapping to a JA display
+  // value), not body prose. The key is the slug-equivalent and stays in
+  // English by design.
+  if (/^\s*['"][^'"]*[A-Za-z][^'"]*['"]\s*:\s*['"][^'"]*[぀-ゟ゠-ヿ一-鿿]/.test(trimmed)) return true;
+
   // Email signatures (NAME<br> pattern)
   if (/<br>/.test(trimmed)) return true;
 
@@ -158,7 +168,7 @@ function walkDir(dir) {
     const full = path.join(dir, entry);
     if (statSync(full).isDirectory()) {
       results.push(...walkDir(full));
-    } else if (full.endsWith('.md')) {
+    } else if (full.endsWith('.md') || full.endsWith('.astro')) {
       results.push(full);
     }
   }
@@ -168,11 +178,19 @@ function walkDir(dir) {
 // -------------------------------------------------------------------------
 // Main check
 // -------------------------------------------------------------------------
-const files = walkDir(jaDir);
+const files = targets.flatMap((t) => walkDir(t));
 const violations = [];
 
 for (const file of files) {
-  const content = readFileSync(file, 'utf-8');
+  const isAstro = file.endsWith('.astro');
+  let content = readFileSync(file, 'utf-8');
+  // For .astro: strip JS line and block comments. Frontmatter logic below
+  // is .md-specific — in .astro the top `---` block is TS code containing
+  // the JA labels we want to scan.
+  if (isAstro) {
+    content = content.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '));
+    content = content.replace(/\/\/[^\n]*/g, (m) => ' '.repeat(m.length));
+  }
   const lines = content.split('\n');
   let inFrontmatter = false;
   let frontmatterCount = 0;
@@ -181,8 +199,8 @@ for (const file of files) {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
-    // Track frontmatter
-    if (line.trim() === '---') {
+    // Track frontmatter (.md only — .astro `---` is TS code, not YAML)
+    if (!isAstro && line.trim() === '---') {
       frontmatterCount++;
       inFrontmatter = frontmatterCount < 2;
       continue;
@@ -194,8 +212,8 @@ for (const file of files) {
       continue;
     }
 
-    // Check title and description in frontmatter
-    if (frontmatterCount === 1) {
+    // Check title and description in frontmatter (.md only)
+    if (!isAstro && frontmatterCount === 1) {
       // Only check title and description fields, not author/name/slug/url
       if (/^\s*(title|description):/.test(line)) {
         for (const [eng, kata] of Object.entries(NAME_MAP)) {

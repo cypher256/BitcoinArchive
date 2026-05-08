@@ -31,15 +31,16 @@ const repoRoot = path.resolve(__dirname, '..');
 const targets = [
   path.resolve(repoRoot, 'src/data/translations/ja'),
   path.resolve(repoRoot, 'src/data/entries/en'),
+  path.resolve(repoRoot, 'src/components'),
 ];
 
-function walkMarkdownFiles(dir) {
+function walkFiles(dir) {
   const out = [];
   for (const entry of readdirSync(dir)) {
     const full = path.join(dir, entry);
     const st = statSync(full);
-    if (st.isDirectory()) out.push(...walkMarkdownFiles(full));
-    else if (full.endsWith('.md')) out.push(full);
+    if (st.isDirectory()) out.push(...walkFiles(full));
+    else if (full.endsWith('.md') || full.endsWith('.astro')) out.push(full);
   }
   return out;
 }
@@ -53,9 +54,18 @@ const violations = [];
 let scanned = 0;
 
 for (const root of targets) {
-  for (const file of walkMarkdownFiles(root)) {
+  for (const file of walkFiles(root)) {
     scanned += 1;
-    const text = readFileSync(file, 'utf8');
+    const isAstro = file.endsWith('.astro');
+    let text = readFileSync(file, 'utf8');
+    // For .astro: strip JS line and block comments so JA × JA spaces inside
+    // them are not flagged (comments are not reader-facing prose). Frontmatter
+    // logic below is .md-specific — in .astro the top `---` block is TS code
+    // (not YAML) and contains the JA labels we want to scan.
+    if (isAstro) {
+      text = text.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '));
+      text = text.replace(/\/\/[^\n]*/g, (m) => ' '.repeat(m.length));
+    }
     const lines = text.split('\n');
 
     let inFence = false;
@@ -65,15 +75,17 @@ for (const root of targets) {
     for (let i = 0; i < lines.length; i++) {
       const raw = lines[i];
 
-      // Frontmatter delimiters
-      if (i === 0 && raw === '---') {
-        inFrontmatter = true;
-        continue;
-      }
-      if (inFrontmatter && raw === '---') {
-        inFrontmatter = false;
-        frontmatterDone = true;
-        continue;
+      // Frontmatter delimiters (.md only)
+      if (!isAstro) {
+        if (i === 0 && raw === '---') {
+          inFrontmatter = true;
+          continue;
+        }
+        if (inFrontmatter && raw === '---') {
+          inFrontmatter = false;
+          frontmatterDone = true;
+          continue;
+        }
       }
 
       // Code fences
