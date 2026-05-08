@@ -279,13 +279,12 @@ function maskNonProse(content) {
       /https?:\/\/\S+/g,
       (m) => ' '.repeat(m.length),
     );
-    // Mask the literal Bitcoin genesis coinbase headline.
-    // This is a fixed historical quotation that must appear verbatim in
-    // any JA prose that reproduces the coinbase payload. It contains
-    // the substring "The Times" which the glossary rule "The Times → タイムズ"
-    // would otherwise flag.
+    // Mask the literal Bitcoin genesis coinbase headline (full form, and the
+    // short date-prefix form often used as a chart header label). Both are
+    // fixed historical quotations and must escape the
+    // "The Times → タイムズ" rule.
     masked = masked.replace(
-      /The Times 03\/Jan\/2009 Chancellor on brink of second bailout for banks/g,
+      /The Times 03\/Jan\/2009(?: Chancellor on brink of second bailout for banks)?/g,
       (m) => ' '.repeat(m.length),
     );
     out[i] = masked;
@@ -306,6 +305,13 @@ function maskAstro(content) {
   out = out.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '));
   out = out.replace(/\/\/[^\n]*/g, (m) => ' '.repeat(m.length));
   out = out.replace(/https?:\/\/\S+/g, (m) => ' '.repeat(m.length));
+  // Genesis coinbase headline (full + short date-prefix form). Same
+  // rationale as maskNonProse: fixed historical quotation, must escape
+  // the "The Times → タイムズ" rule.
+  out = out.replace(
+    /The Times 03\/Jan\/2009(?: Chancellor on brink of second bailout for banks)?/g,
+    (m) => ' '.repeat(m.length),
+  );
   return out;
 }
 

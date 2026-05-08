@@ -188,6 +188,7 @@ const violations = [];
 for (const file of files) {
   const isAstro = file.endsWith('.astro');
   let content = readFileSync(file, 'utf-8');
+  const jaRanges = isAstro ? findJaSectionLineRanges(content) : [];
   // For .astro: strip JS line and block comments. Frontmatter logic below
   // is .md-specific — in .astro the top `---` block is TS code containing
   // the JA labels we want to scan.
@@ -237,7 +238,8 @@ for (const file of files) {
     }
 
     // Skip non-body lines
-    if (isMetadataOrExcluded(line, inFrontmatter, inCodeBlock)) continue;
+    const inJaSection = isAstro && lineInJaSection(i + 1, jaRanges);
+    if (isMetadataOrExcluded(line, inFrontmatter, inCodeBlock, inJaSection)) continue;
 
     // Check body text
     for (const [eng, kata] of Object.entries(NAME_MAP)) {
