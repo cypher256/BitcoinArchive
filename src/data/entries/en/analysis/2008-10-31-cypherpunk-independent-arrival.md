@@ -103,7 +103,7 @@ These are the six axes against which §3 will compare Satoshi's documented pract
 
 ### 1.3 The technical lineage to Bitcoin
 
-The cypherpunk movement produced a series of digital-cash and proof-of-work proposals over the decade preceding Bitcoin (the per-component analysis of which of these Bitcoin actually reuses, borrows, or synthesizes is the subject of [the Bitcoin design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/)). Each is documented in this archive:
+The cypherpunk movement produced a series of digital-cash and proof-of-work proposals over the decade preceding Bitcoin. Each is documented in this archive:
 
 | Year | Author | Proposal | Relation to Bitcoin |
 |---|---|---|---|
@@ -112,6 +112,8 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 | 1998 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | Bit Gold | Chained proof-of-work tokens; not cited in the whitepaper but acknowledged by Satoshi in later forum posts |
 | 2004 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | RPOW (Reusable Proof-of-Work) | Centralized server issuing reusable PoW tokens; Finney later became Bitcoin's first non-Satoshi node operator |
 | 2008 | [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) | Bitcoin | The synthesis |
+
+*[Editor: this table places the proposals in the cypherpunk landscape. The canonical per-component breakdown of which of these Bitcoin actually reuses, borrows, or synthesizes — and which whitepaper references map to which design choices — is the subject of [the Bitcoin design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/). The treatment here is calibrated to this entry's thesis (Satoshi's intellectual position relative to the movement); the per-component analysis is held there.]*
 
 §2 examines what of this lineage Satoshi actually knew during the development period, and what he did not.
 
