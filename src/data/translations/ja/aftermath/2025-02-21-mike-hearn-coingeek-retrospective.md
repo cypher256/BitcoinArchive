@@ -26,6 +26,7 @@ secondarySources:
     url: "https://www.coindesk.com/business/2021/02/12/former-bitcoin-developer-mike-hearn-steps-down-from-enterprise-blockchain-firm-r3"
 relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
 translationStatus: complete
 ---

@@ -38,6 +38,7 @@ secondarySources:
     url: "https://cointelegraph.com/news/bitcoin-foundation-is-effectively-bankrupt"
 relatedEntries:
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2024-02-22-mike-hearn-copa-trial-testimony
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
@@ -169,6 +170,8 @@ gantt
 主張は、改名がスケーリング論争の結末を引き起こしたというものではない。複数の構造的要因 — 取引所の方針、マイナーの経済、ネットワーク効果、BIP プロセス — が結末を形作った。主張はもっと限定的である — 2015〜2017 年に当事者が普通の言葉で状況を説明しようとしたとき、利用可能な語彙はすでに偏っていた。2016 年時点で 「より大きなブロックの規則集合に従う Bitcoin 参加者」 を中立的に呼ぶ用語は存在しなかった。利用可能なすべての用語が、その参加者を 「Bitcoin Core」 と呼ばれる別の何か — あるいはより損害が大きいことに、単に 「Bitcoin」 と呼ばれる何か — の外に置いた。
 
 マイク・ハーン自身の離脱 ([Bitcoin XT、2015〜2016 年](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)) はそうした事例の一つである — 彼の離脱は公然と Bitcoin から去ることとして枠付けられ、Bitcoin 内部で一つの規則集合を擁護することとしては枠付けられなかった。
+
+本エントリの読みは語彙的効果に限定している。これらのフォーク事件が経済的・政治的争奪戦として展開した理由 — 2011 年以後の権威の真空、規則決定の上に積み上がった経済的重み、そしてビットコインを普通のオープンソースから分けるプロトコル・ソフトウェア・通貨ネットワークの三層分離 — については [ビットコインのフォーク戦争はオープンソースの話ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/) を参照。
 
 ## 5. Bitcoin Foundation との並行性
 

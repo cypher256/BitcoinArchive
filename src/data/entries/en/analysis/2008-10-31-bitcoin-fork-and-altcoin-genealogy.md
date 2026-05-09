@@ -56,6 +56,7 @@ secondarySources:
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - bip/2015-12-21-bip-0141
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2008-10-31-bitcoin-design-lineage
@@ -102,6 +103,8 @@ Hard forks of the Bitcoin protocol that produced a separate chain. Soft forks (S
 | 2018-11-15 | [Bitcoin SV (BSV)](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | Craig Wright, Calvin Ayre (nChain) | 128 MB blocks, restored "original" opcodes | Survived 2018 hash war split from BCH; further reduced share after Wright loses COPA v Wright (2024) |
 
 The 2015-2017 entries are the **block-size war** chapter — block size was the explicit issue, but the deeper question was protocol governance: who decides Bitcoin's parameters when the network's developers, miners, and businesses disagree. The eventual answer was that the conservative Bitcoin Core development culture held the main chain (with SegWit instead of a block-size hard fork), and the proposers who wanted larger blocks split off via Bitcoin Cash. SegWit2x was the New York Agreement compromise that would have shipped a 2 MB hard fork on the main chain three months after SegWit; its 11th-hour cancellation by [Mike Belshe](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html) ended the dispute on the main-chain side.
+
+For a structural reading of *why* the 2015-2017 disputes ran as identity contests rather than ordinary OSS disagreements — covering the post-2011 authority vacuum, the economic weight on rule choices, and Bitcoin's three-layer separation (protocol / software / currency) that has no analogue in ordinary OSS — see [the fork-wars-as-not-OSS analysis](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/).
 
 The 2018 BSV split from BCH was a separate war within the BCH community, ultimately resolved by hashrate (the SV chain split off and continued separately). [Craig Wright](/BitcoinArchive/participants/craig-wright/)'s extended Satoshi-claim — refuted in [COPA v Wright (2024)](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) — and the BSV chain are tightly coupled in popular reception, but the chain itself is a technical artifact of the 2018 hash war and continues to operate independently of the COPA outcome.
 

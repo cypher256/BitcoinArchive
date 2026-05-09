@@ -29,6 +29,7 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2017/08/02/bitcoin-cash-hard-fork-cryptocurrency-now-up-and-running/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2015-08-15-bitcoin-xt-launch
   - aftermath/2017-11-08-segwit2x-cancellation
   - aftermath/2018-11-15-bitcoin-sv-fork

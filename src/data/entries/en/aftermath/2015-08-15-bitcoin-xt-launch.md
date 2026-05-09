@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
   - bip/2015-12-21-bip-0141
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2017-11-08-segwit2x-cancellation
 ---

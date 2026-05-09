@@ -56,6 +56,7 @@ secondarySources:
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - bip/2015-12-21-bip-0141
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2008-10-31-bitcoin-design-lineage
@@ -101,6 +102,8 @@ inlineLinkKeywords:
 | 2018-11-15 | [ビットコインSV (BSV)](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | クレイグ・ライト、カルヴィン・エア (nChain) | 128 MB ブロック、「オリジナル」 オペコードを復活 | 2018 年の BCH ハッシュ戦争分裂を生き残る。COPA v Wright (2024) でライト敗訴後、占有率はさらに減少 |
 
 2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い問いはプロトコルガバナンスにあった ─ 開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という問いである。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちがビットコインキャッシュとして分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html)による土壇場での中止が、本体チェーン側の論争を終わらせた。
+
+2015 ~ 2017 年の論争が普通のオープンソース対立ではなくアイデンティティの争奪戦として展開した*構造的理由* — 2011 年以後の権威の真空、規則決定の上に積み上がった経済的重み、そして普通のオープンソースには対応物のないビットコインの三層分離 (プロトコル / ソフトウェア / 通貨) — については [ビットコインのフォーク戦争はオープンソースの話ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/) を参照。
 
 2018 年の BSV による BCH からの分裂は BCH コミュニティ内部の別の戦争であり、最終的にハッシュレートで決着した (SV 側のチェーンが分かれて独立に継続)。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) によるサトシ主張は [COPA v Wright (2024)](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/) で否定されたが、BSV チェーンと一般的な受け止めの中では密接に結びつけられている。とはいえ、チェーンそのものは 2018 年のハッシュ戦争の技術的副産物であり、COPA 判決とは独立に動作し続けている。
 

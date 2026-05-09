@@ -38,6 +38,7 @@ secondarySources:
     url: "https://cointelegraph.com/news/bitcoin-foundation-is-effectively-bankrupt"
 relatedEntries:
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2024-02-22-mike-hearn-copa-trial-testimony
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
@@ -172,6 +173,8 @@ A pattern is observable: Bitcoin Core retained the name "Bitcoin"; the alternati
 The argument is not that the name caused the scaling debate's outcome. Multiple structural factors — exchange policy, miner economics, network effects, the BIP process itself — shaped that outcome. The argument is more limited: when participants in 2015-2017 attempted to describe the situation in plain English, the available vocabulary was already weighted. There was no neutral term, in 2016, for "Bitcoin participants who follow a larger-block rule set." Every available term placed those participants outside something else called "Bitcoin Core" — or, more damagingly, outside something just called "Bitcoin."
 
 Mike Hearn's own departure ([Bitcoin XT, 2015-2016](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)) is one such case: his departure was framed publicly as leaving Bitcoin, not as advocating one rule set within it.
+
+This entry's reading is restricted to the lexical effects. For why these fork episodes also ran as economic and political contests — covering the post-2011 authority vacuum, the economic weight on rule decisions, and the three-layer separation between protocol, software, and currency that distinguishes Bitcoin from ordinary OSS — see [the fork-wars-as-not-OSS analysis](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/).
 
 ## 5. Bitcoin Foundation parallel
 
