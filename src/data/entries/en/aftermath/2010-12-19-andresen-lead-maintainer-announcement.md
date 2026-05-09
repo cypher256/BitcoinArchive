@@ -38,9 +38,9 @@ relatedEntries:
 
 On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted to the BitcoinTalk forum the public acceptance of the leadership role:
 
-> With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for Bitcoin.
+> With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for bitcoin.
 >
-> Everyone please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved in.
+> Everybody please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved with.
 
 (Original post: [BitcoinTalk topic 2367 msg31651, "Development process straw-man"](https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651). Also quoted secondarily in [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen) and [CoinMarketCap — Satoshi Files: Gavin Andresen](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen) — both with slight paraphrasing of the verbatim text shown above.)
 

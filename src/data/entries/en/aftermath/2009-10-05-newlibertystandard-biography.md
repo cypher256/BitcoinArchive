@@ -20,7 +20,7 @@ tags:
 secondarySources:
   - name: "Wayback Machine — New Liberty Standard 2009 Exchange Rate"
     url: "https://web.archive.org/web/20131031064421/http://newlibertystandard.wikifoundry.com/page/2009+Exchange+Rate"
-  - name: "BitcoinTalk — Exchange Rate thread (#42)"
+  - name: "BitcoinTalk — m0mchil's critique of NLS methodology (#42, 2010-02)"
     url: "https://bitcointalk.org/index.php?topic=42.0"
   - name: "BitcoinTalk — Bitcoin Currency Symbol thread (#41)"
     url: "https://bitcointalk.org/?topic=41.0"
@@ -42,7 +42,7 @@ relatedEntries:
 NewLibertyStandard is a pseudonymous individual whose real-world identity has never been publicly revealed. They are BitcoinTalk user #26 (registered January 19, 2010) and were active on the forum until December 2012. They are known for creating the first Bitcoin exchange rate, conducting the first bitcoin-for-fiat transaction, and proposing the BTC ticker symbol.
 
 ### First Bitcoin Exchange Rate
-On [October 5, 2009](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), NewLibertyStandard published the first known Bitcoin-to-US-dollar exchange rate: $1.00 = 1,309.03 BTC (approximately $0.00076 per bitcoin). The rate was calculated using a cost-of-production formula based on the electricity required to mine Bitcoin. As described in BitcoinTalk thread #42: the formula divided the average annual electricity cost of running a computer at high CPU by 12 months and by the number of bitcoins mined over the preceding 30 days. This was the first time Bitcoin was assigned a dollar-denominated price.
+On [October 5, 2009](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), NewLibertyStandard published the first known Bitcoin-to-US-dollar exchange rate: $1.00 = 1,309.03 BTC (approximately $0.00076 per bitcoin). The rate was calculated using a cost-of-production formula based on the electricity required to mine Bitcoin. As documented on the NewLibertyStandard wetpaint Exchange Rate page (later mirrored on wikifoundry), the formula divided the average annual electricity cost of running a computer at high CPU by 12 months and by the number of bitcoins mined over the preceding 30 days. This was the first time Bitcoin was assigned a dollar-denominated price.
 
 ### First Bitcoin-to-Fiat Transaction
 On [October 12, 2009](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), Finnish developer [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) sold 5,050 BTC to NewLibertyStandard for $5.02 via PayPal. This is widely recognized as the first known exchange of bitcoin for fiat currency, establishing Bitcoin as an economic good with real-world monetary value.
