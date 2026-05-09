@@ -190,7 +190,7 @@ The behavioral record (writing style, coding style, posting times, tooling choic
 | "From where I am [I can't receive incoming connections]" | v0.1.2 release-week debugging activity consistent with operational pressure | **Converges** (analyzed in [launch-environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/)) |
 | "Less Linux expertise" | v0.1 Windows-only, Hungarian notation typical of MS Windows C++ shops | **Converges** |
 | "Moved on to other things" | No verified post-2011 communication | **Converges** |
-| "Not a mysterious shadowy figure" | Behavior was consistent with deliberate strong anonymization (Tor, anonymous mail relay, no IP-traceable metadata) | **Diverges** — the *behavior* is exactly what produces a mysterious-figure perception, regardless of preference |
+| "Not a mysterious shadowy figure" | Behavior was consistent with deliberate strong anonymization (Tor, anonymous mail relay, no IP-traceable metadata; full layered account in [anonymity-architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)) | **Diverges** — the *behavior* is exactly what produces a mysterious-figure perception, regardless of preference |
 
 The systematic pattern: **operational and technical self-statements converge with the behavioral record. Identity-locating self-statements diverge.** The two sources tell consistent stories about Satoshi the developer and incompatible stories about Satoshi the person.
 
