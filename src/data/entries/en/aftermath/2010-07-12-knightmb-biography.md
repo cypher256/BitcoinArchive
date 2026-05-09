@@ -22,6 +22,7 @@ secondarySources:
     url: "https://bitcointalk.org/"
 relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
+  - analysis/2010-08-15-knightmb-snapshot-and-legend
 ---
 
 **knightmb** is a pseudonymous participant who became one of the most active users on the BitcoinTalk forum during 2010. His real name has not been publicly disclosed; the archive identifies him only by his handle.

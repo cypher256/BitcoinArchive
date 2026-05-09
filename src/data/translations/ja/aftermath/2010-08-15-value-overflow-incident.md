@@ -1,5 +1,5 @@
 ---
-title: "Value overflow事件 — ブロック 74638で1,840億BTCが生成される"
+title: "バリュー・オーバーフロー事件 — ブロック 74638 で 1,840 億 BTC が生成される"
 date: 2010-08-15T18:08:00Z
 type: "article"
 source: "bitcointalk"
@@ -31,6 +31,7 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - aftermath/2010-07-12-knightmb-biography
+  - analysis/2010-08-15-knightmb-snapshot-and-legend
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2014-02-28-mt-gox-bankruptcy

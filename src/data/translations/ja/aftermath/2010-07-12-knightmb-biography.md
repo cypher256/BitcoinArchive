@@ -22,6 +22,7 @@ secondarySources:
     url: "https://bitcointalk.org/"
 relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
+  - analysis/2010-08-15-knightmb-snapshot-and-legend
 translationStatus: complete
 ---
 

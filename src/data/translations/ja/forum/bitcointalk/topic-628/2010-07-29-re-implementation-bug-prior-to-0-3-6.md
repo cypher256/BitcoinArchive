@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがセキュリティ上の脆弱性を発見した場合はPMで連絡してほしいと依頼。"
+description: "サトシ・ナカモトがセキュリティ上の脆弱性を発見した場合はプライベートメッセージで連絡してほしいと依頼。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-実は、PMで連絡してもらえればそれでうまくいく。修正するのは私だからな。セキュリティ上の脆弱性を見つけた場合は、公開される前に修正できるよう、ぜひ個人的に連絡してほしい。
+実は、プライベートメッセージで連絡してもらえればそれでうまくいく。修正するのは私だからな。セキュリティ上の脆弱性を見つけた場合は、公開される前に修正できるよう、ぜひ個人的に連絡してほしい。

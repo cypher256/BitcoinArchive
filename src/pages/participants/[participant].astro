@@ -73,8 +73,10 @@ const biographyContent = biographyEntry ? await render(biographyEntry) : null;
 //      "this person is a candidate" marker.
 const overviewId = 'analysis/2008-10-31-satoshi-identity-hypotheses-overview';
 let hypothesisEntry: typeof allEntries[number] | undefined;
+let analysisCalloutLabel = 'Identity hypothesis';
 if (participantSlug === 'satoshi-nakamoto') {
   hypothesisEntry = allEntries.find((e) => e.id === overviewId);
+  analysisCalloutLabel = 'Identity hypotheses overview';
 } else {
   const individual = filtered.find((e) =>
     e.data.type === 'analysis' &&
@@ -85,6 +87,20 @@ if (participantSlug === 'satoshi-nakamoto') {
     hypothesisEntry = individual;
   } else if (biographyEntry?.data.relatedEntries?.includes(overviewId)) {
     hypothesisEntry = allEntries.find((e) => e.id === overviewId);
+  } else {
+    // Fourth branch: any other analysis entry where this participant
+    // is the primary subject (e.g., knightmb's snapshot-and-legend
+    // analysis). The identity-hypothesis label doesn't fit these, so
+    // use a generic "Analysis" label.
+    const otherAnalysis = filtered.find((e) =>
+      e.data.type === 'analysis' &&
+      !e.id.includes('-satoshi-identity-hypothesis') &&
+      e.data.participants[0]?.slug === participantSlug
+    );
+    if (otherAnalysis) {
+      hypothesisEntry = otherAnalysis;
+      analysisCalloutLabel = 'Analysis';
+    }
   }
 }
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
@@ -144,7 +160,7 @@ const structuredData = [
     {hypothesisEntry && (
       <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
         <span class="hypothesis-icon">🔍</span>
-        <span class="hypothesis-label">{hypothesisEntry.id === overviewId ? 'Identity hypotheses overview' : 'Identity hypothesis'}</span>
+        <span class="hypothesis-label">{analysisCalloutLabel}</span>
         <span class="hypothesis-arrow">&rarr;</span>
       </a>
     )}

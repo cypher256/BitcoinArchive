@@ -73,8 +73,10 @@ const biographyContent = biographyEntry ? await render(biographyEntry) : null;
 //      "this person is a candidate" marker.
 const overviewId = 'analysis/2008-10-31-satoshi-identity-hypotheses-overview';
 let hypothesisEntry: typeof allEntries[number] | undefined;
+let analysisCalloutLabel = 'サトシ正体仮説';
 if (participantSlug === 'satoshi-nakamoto') {
   hypothesisEntry = allEntries.find((e) => e.id === overviewId);
+  analysisCalloutLabel = 'サトシ正体仮説の総覧';
 } else {
   const individual = filtered.find((e) =>
     e.data.type === 'analysis' &&
@@ -85,6 +87,20 @@ if (participantSlug === 'satoshi-nakamoto') {
     hypothesisEntry = individual;
   } else if (biographyEntry?.data.relatedEntries?.includes(overviewId)) {
     hypothesisEntry = allEntries.find((e) => e.id === overviewId);
+  } else {
+    // Fourth branch: any other analysis entry where this participant
+    // is the primary subject (e.g., knightmb's snapshot-and-legend
+    // analysis). The "正体仮説" label doesn't fit these, so use a
+    // generic "考察" label.
+    const otherAnalysis = filtered.find((e) =>
+      e.data.type === 'analysis' &&
+      !e.id.includes('-satoshi-identity-hypothesis') &&
+      e.data.participants[0]?.slug === participantSlug
+    );
+    if (otherAnalysis) {
+      hypothesisEntry = otherAnalysis;
+      analysisCalloutLabel = '考察';
+    }
   }
 }
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
@@ -144,7 +160,7 @@ const structuredData = [
     {hypothesisEntry && (
       <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
         <span class="hypothesis-icon">🔍</span>
-        <span class="hypothesis-label">{hypothesisEntry.id === overviewId ? 'サトシ正体仮説の総覧' : 'サトシ正体仮説'}</span>
+        <span class="hypothesis-label">{analysisCalloutLabel}</span>
         <span class="hypothesis-arrow">&rarr;</span>
       </a>
     )}

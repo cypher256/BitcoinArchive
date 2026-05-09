@@ -31,6 +31,7 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - aftermath/2010-07-12-knightmb-biography
+  - analysis/2010-08-15-knightmb-snapshot-and-legend
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2014-02-28-mt-gox-bankruptcy
