@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2009-01-03-genesis-block-hardcode-analysis
   - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available

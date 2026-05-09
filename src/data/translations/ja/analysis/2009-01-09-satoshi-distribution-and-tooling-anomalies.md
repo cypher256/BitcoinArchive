@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Bitcoin v0.1 の異例な配布・開発環境（.rar、バージョン管理不在、ハンガリアン記法、OpenSSL）の編者読解。Warez シーン慣習と 2011 年カミンスキー監査と比較。"
 isSatoshi: false
-homeOrder: 9
+homeOrder: 10
 tags:
   - "bitcoin-v0.1"
   - "distribution"

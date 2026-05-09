@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Editorial reading of unusual distribution and tooling in Bitcoin v0.1: .rar packaging, no version control, no test suite, Hungarian notation. Compares Warez-scene conventions, Kaminsky 2011."
 isSatoshi: false
-homeOrder: 9
+homeOrder: 10
 tags:
   - "bitcoin-v0.1"
   - "distribution"

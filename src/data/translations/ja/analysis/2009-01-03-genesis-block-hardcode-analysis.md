@@ -37,6 +37,7 @@ secondarySources:
 relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
+  - "analysis/2009-01-10-satoshi-launch-environment"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
   - "sourceforge/2009-01-03-genesis-block"
   - "analysis/2009-01-09-satoshi-code-analysis"
