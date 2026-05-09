@@ -14,3 +14,29 @@ Bitcoin Cash ABC
 # 通貨/プロトコル言及はカナ「リップル」 だが、組織名は英語形維持
 # (STYLE_GUIDE_JA.md § I.2 区分 2)。`Ripple` 規則の誤発火を回避。
 Ripple社
+
+# BIP-340 (Schnorr) の JA mirror では、本文プローズが GitHub の
+# bitcoin/bips から取り込んだ MediaWiki 原文 (英文) を保持している。
+# 仕様用語としての nonce / nonce derivation / nonce reuse 等は、
+# placeholder-body audit の Tranche 5 で導入した編者注で「英文プローズの
+# 逐語訳は将来の改訂で順次補う」 と明示しており、その猶予期間中の
+# 用語集ルール誤発火 (本文プローズの「nonce」 → 「ナンス」) を回避する。
+BIP0340/nonce
+synthetic nonce
+resulting nonce
+Nonce exfiltration
+nonce generation
+its nonce
+public nonce
+same nonce
+nonce derivation
+the nonce could
+For nonces
+nonce reuse
+nonce hash
+
+# BIP-360 (P2QRH) の JA mirror では Ethereum 言及 (耐量子マイグレーション
+# の比較例として) が verbatim で残っている。同上、BIP imports の編者注の
+# 猶予期間中の Wikipedia ja 主表記ルール誤発火を回避する。
+Ethereum's quantum
+Ethereum is
