@@ -78,8 +78,8 @@ The phrase "reference implementation" appears in some contemporary writeups but 
 [Pull request #3408](https://github.com/bitcoin/bitcoin/pull/3408) was opened by [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) (handle: laanwj) and merged December 16, 2013. The stated motivation in the PR and in the subsequent 0.9.0 release notes is identical:
 
 > "To reduce confusion between Bitcoin-the-network and Bitcoin-the-software we have renamed the reference client to Bitcoin Core."
->
-> — bitcoin.org, [Bitcoin Core 0.9.0 release notes](https://bitcoin.org/en/release/v0.9.0), March 19, 2014
+
+— bitcoin.org, [Bitcoin Core 0.9.0 release notes](https://bitcoin.org/en/release/v0.9.0), March 19, 2014
 
 The PR limited its scope to user-visible strings (program messages, documentation); the executable filenames `bitcoind` and `bitcoin-qt` were not changed in the merge.
 

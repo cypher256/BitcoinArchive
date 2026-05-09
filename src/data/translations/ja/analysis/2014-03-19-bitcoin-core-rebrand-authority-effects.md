@@ -75,8 +75,8 @@ translationStatus: complete
 [プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) は [ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/) (ハンドル名: laanwj) が起票し、2013 年 12 月 16 日にマージされた。PR 本文と続く 0.9.0 リリースノートに記された動機は同一である。
 
 > 「Bitcoin というネットワークと Bitcoin というソフトウェアの間の混乱を減らすために、リファレンスクライアントを Bitcoin Core に改名した」
->
-> — bitcoin.org, [Bitcoin Core 0.9.0 リリースノート](https://bitcoin.org/en/release/v0.9.0), 2014 年 3 月 19 日
+
+— bitcoin.org, [Bitcoin Core 0.9.0 リリースノート](https://bitcoin.org/en/release/v0.9.0), 2014 年 3 月 19 日
 
 PR の改変範囲はユーザーから見える文字列 (プログラムメッセージ、ドキュメント) に限定された。実行ファイル名 `bitcoind` および `bitcoin-qt` はマージ時点では変更されていない。
 

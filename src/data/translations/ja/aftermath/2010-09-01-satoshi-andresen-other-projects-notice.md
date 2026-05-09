@@ -37,7 +37,8 @@ translationStatus: complete
 > In September 2010, Nakamoto told Andresen he was working on other projects, and over the next few months, he gave Andresen control of the SourceForge code repository, and the project's "alert key" as well.
 >
 > （2010 年 9 月、ナカモトはアンドレセンに「他のプロジェクトに取り組んでいる」と伝え、続く数か月のあいだに SourceForge のコードリポジトリと「alert key（ネットワーク警報鍵）」の管理権をアンドレセンに譲渡した）
-> （[Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)）
+
+— [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)
 
 2010 年 9 月のこの通知は、サトシがビットコインの第一線から退く意思を示した公開記録上もっとも早いシグナルである。9 月のうち正確な日付は公開記録上保存されておらず、メッセージ本文も逐語では公開されていない。本事実はギャビンの後年のインタビューで言及されており、本アーカイブの[ギャビン・アンドレセン伝](/BitcoinArchive/ja/participants/gavin-andresen/)も同様に「2010 年 9 月から 10 月頃、サトシはギャビンに SourceForge のコードリポジトリへのコミット権と、ネットワーク警報鍵を付与した」と記している。
 

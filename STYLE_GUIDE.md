@@ -117,11 +117,29 @@ retrospectives:
   blockquote plus the language-appropriate quotation marks
 - when presenting a longer source passage or document-style excerpt, a
   blockquote alone is usually enough
+- the blockquote contents must be the primary-source text only.
+  Editor-added attribution lines (e.g., "— [Wikipedia](url)" / "— bitcoin.org,
+  [release notes](url)" / "（[出典](url)）") must be placed **outside** the
+  blockquote on a separate paragraph. Inside the blockquote = primary-source
+  voice; outside the blockquote = editor's voice. Mixing them inside the
+  same `>` block creates the false impression that the cited work named its
+  own URL — and triggers the URL-de-link rule below on the editor's
+  attribution link.
 
 Typical pattern:
 
 - English: `> "..."` for short excerpted speech or statements
 - Japanese: `> 「...」` for short excerpted speech or statements
+
+External URLs inside a blockquote are stripped of clickability at render
+time by `src/lib/rehype-strip-archive-links.mjs`: the URL text is preserved
+(copy-pasteable), but the user is not invited to click. This matches the
+practice of print archives and academic citation conventions for historical
+source URLs that may have suffered link rot. Editor-added attribution links
+placed *outside* the blockquote remain clickable. Internal archive links
+(`/BitcoinArchive/...`) and editor-note blocks (`*[Editor: ...]*` /
+`*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) are exempt and
+remain clickable in either position.
 
 ## Link Integrity
 
@@ -277,6 +295,31 @@ or fabricating it.
   is dead today may be transient. For ambiguous cases (404 with
   recent Wayback success), wait for a second audit run before
   repairing.
+- ❌ **Modify URLs inside primary-source body content.** URLs that
+  appear inside verbatim entries (`/forum/`, `/correspondence/`,
+  `/emails/`, `/sourceforge/`, `/bip/`) or inside `<blockquote>`
+  elements in editorial entries are part of the historical record.
+  They are de-linked at render time by
+  `src/lib/rehype-strip-archive-links.mjs`. The audit may report them
+  as dead, but they are not actionable: the URL text is the authored
+  text of the original document, not a navigation pointer. The
+  apply-dead-link-fixes script targets only frontmatter `url:` /
+  `sourceUrl:` for this reason.
+
+### Scope: what URLs the audit policy actually targets
+
+The dead-link audit reports every dead external URL. Not all are
+actionable. The matrix below summarizes the action policy by URL
+position:
+
+| URL position | Action policy |
+|---|---|
+| `frontmatter.sourceUrl` | Replace with Wayback URL if available; else reconsider entry's existence (delete or `note:`-document the dead URL). |
+| `frontmatter.secondarySources[].url` | Replace with Wayback URL if available; else remove the entry (the primary source still carries the citation). |
+| Body inline link in editorial prose, **outside** any blockquote | Replace with Wayback URL if available; else remove the link and remove or reword the surrounding claim per `secondarySources` discipline. |
+| Body inline link **inside** a `<blockquote>` (= primary-source quote) | **Do not modify.** The URL is part of the verbatim quoted text. The renderer de-links it; that is the policy. |
+| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/sourceforge/`, `/bip/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
+| URL inside an editor-note block (`*[Editor: ...]*` / `*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) | Editor's choice. Replace with Wayback or remove if dead, exactly as for editorial prose body links. The renderer keeps these clickable. |
 
 ## Medium vs Archive: name the source, not "the archive"
 

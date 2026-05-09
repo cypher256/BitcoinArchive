@@ -39,19 +39,25 @@ function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Replace the URL in `url: "OLD"` and `sourceUrl: "OLD"` lines with NEW
-// (preserving the field name). Also replaces inline markdown links
-// `(OLD)` with `(NEW)`.
+// Replace the URL in frontmatter `url: "OLD"` and `sourceUrl: "OLD"` lines
+// with NEW (preserving the field name). Body URLs are deliberately NOT
+// touched: per STYLE_GUIDE.md "Primary-Source Entries" (L59-91),
+// "Editorial / Narrative Entries" (L104-124), and the rehype-strip-archive-
+// links plugin, body URLs in verbatim or quoted content are part of the
+// historical record. Editor-side replacement of those URLs is a per-instance
+// editorial decision, not a mechanical fix. The audit reports a body URL
+// as dead; the renderer (rehype-strip-archive-links) renders it as plain
+// text inside verbatim files / blockquotes; the editor decides if removal,
+// rewording, or a Wayback inline reference is appropriate.
 function replaceUrl(content, oldUrl, newUrl) {
-  // (?:source)?[Uu]rl: covers both `url:` (secondarySources items) and
-  // `sourceUrl:` (top-level frontmatter). The captured prefix is preserved.
+  // Only frontmatter URLs are replaced. (?:source)?[Uu]rl: covers both
+  // `url:` (secondarySources items) and `sourceUrl:` (top-level frontmatter).
+  // The captured prefix is preserved.
   const re1 = new RegExp(`(\\b(?:source)?[Uu]rl:\\s*)"${escapeRegex(oldUrl)}"`, 'g');
   const re2 = new RegExp(`(\\b(?:source)?[Uu]rl:\\s*)'${escapeRegex(oldUrl)}'`, 'g');
-  const re3 = new RegExp(`\\(${escapeRegex(oldUrl)}\\)`, 'g');
   let next = content;
   next = next.replace(re1, `$1"${newUrl}"`);
   next = next.replace(re2, `$1"${newUrl}"`);
-  next = next.replace(re3, `(${newUrl})`);
   return next;
 }
 
