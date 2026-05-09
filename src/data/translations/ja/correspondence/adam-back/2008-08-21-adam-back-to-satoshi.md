@@ -1,6 +1,6 @@
 ---
 title: "Re: Hashcashの引用 — b-moneyの提案"
-date: 2008-08-21T00:00:00Z
+date: 2008-08-21T12:55:59Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-    note: "このメールは2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。完全なメールチェーン（全5通）はアダム・バックが証人陳述書として提出した"
+    note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21）に5通の完全なメールチェーンが含まれていた。5通すべてがBitcoin Magazineによってスクリーンショット画像として再公開されている。"
 relatedEntries:
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
@@ -34,8 +34,14 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-*[補足：アダム・バックは引用を確認し、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)のb-money提案を参照するよう提案した。]*
+アダム・バックは翌日に返信し、サトシが起草したHashcashの引用形式は問題ないと確認したうえで、関連先行研究として[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)のb-money提案を紹介した。次のサトシの行動を決定づけた中核的な一文は次の通りである。
 
-*[補足：サトシはその後、次のように返信した：「ありがとう。b-moneyのページは知らなかったが、私のアイデアはまさにその点から始まっている。」彼はその後、2008年8月22日にウェイ・ダイに直接連絡を取り、ビットコインホワイトペーパーにb-moneyを引用した。]*
+<!-- speaker: Adam Back -->
+> b-moneyのアイデアは彼のウェブページに簡潔に書かれているだけで、論文としてはまとまっていない。
 
-このやり取り — ホワイトペーパー公開の 2 か月前にアダム・バックがサトシに b-money を紹介した — は、[サトシとサイファーパンク運動との関係についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料の一つであり、サトシがサイファーパンクのコミュニティに事前に深く関与せずに設計空間に到達していたことを記録している。
+<!-- speaker: narrator -->
+査読論文ではなくウェブページが指し示されたことで、サトシは引用年の確定をウェイ・ダイ本人に直接問い合わせる必要が生じた（[2008年8月22日 サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)）。同日中にサトシはバック宛にも b-money の紹介に対する返信を書いている（メールチェーンの 3 通目）。
+
+ホワイトペーパー公開の 2 か月前にアダム・バックがサトシに b-money を紹介したという事実は、[サイファーパンクからの独立した到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)を支える一次資料の一つである。サトシはサイファーパンクのコミュニティに事前に深く関与することなく設計空間に到達し、b-money の存在もこの紹介によって初めて知った。
+
+*[出典: アダム・バックの第二証人陳述書 (C/21)、COPA 対 ライト裁判 (2024年2月)。Bitcoin Magazine がスクリーンショット画像として再公開している。]*

@@ -1,6 +1,6 @@
 ---
 title: "Re: Hashcash citation — suggesting b-money"
-date: 2008-08-21T00:00:00Z
+date: 2008-08-21T12:55:59Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-    note: "This email was entered into evidence during the COPA v. Craig Wright trial in London, February 2024. The complete email chain (5 emails total) was filed by Adam Back as a witness statement. Only the first two emails (Satoshi's initial contact and Back's reply) are archived here; the remaining three have not been published in full"
+    note: "Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21) included the complete five-email chain. All five were republished as screenshot images by Bitcoin Magazine."
 relatedEntries:
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
@@ -32,8 +32,12 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
-*[Context: Adam Back confirmed the citation and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.]*
+Adam Back replied the next day, confirming that Satoshi's draft Hashcash citation was correct and pointing him toward [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal as a second piece of related prior art. Back's load-bearing remark — the parenthetical that drove Satoshi's next step — was:
 
-*[Context: Satoshi subsequently replied: "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." He then contacted Wei Dai directly on August 22, 2008, and cited b-money in the Bitcoin whitepaper.]*
+> the b-money idea is just described concisely on his web page, he didnt write up a paper.
 
-This referral — Adam Back pointing Satoshi to b-money two months before the whitepaper — is one of the primary-source observations underpinning the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/). It documents that Satoshi reached the design space without prior cypherpunk-community immersion.
+That sentence redirected Satoshi to a web page rather than to a peer-reviewed paper, which set up the citation-year question Satoshi would put to Wei Dai directly the following day (see the [2008-08-22 Satoshi → Wei Dai email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)). Within hours Satoshi also wrote back to Back himself acknowledging the b-money pointer (the third email in the chain).
+
+Adam Back's pointer to b-money two months before the whitepaper is one of the primary-source observations underpinning the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/): Satoshi reached the design space without prior cypherpunk-community immersion, and learned of b-money only via this referral.
+
+*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
