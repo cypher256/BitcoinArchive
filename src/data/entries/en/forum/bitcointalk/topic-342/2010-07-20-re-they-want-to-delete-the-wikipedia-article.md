@@ -8,8 +8,8 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi advises on improving the Bitcoin Wikipedia article facing deletion. Describes Bitcoin as an 'implementation' of b-money and Bitgold, but acknowledged elsewhere developing it independently."
-editorNote: "Satoshi describes Bitcoin as an 'implementation' of b-money and Bitgold here, but he has stated elsewhere that he learned of these proposals only after Bitcoin's implementation was already complete. Wei Dai was first introduced to him by Adam Back in August 2008."
+description: "Satoshi advises on the Bitcoin Wikipedia article facing deletion. Calls Bitcoin an 'implementation' of b-money and Bitgold, echoing Hal Finney's November 2008 framing of the bit gold connection."
+editorNote: "Satoshi describes Bitcoin as an 'implementation' of b-money and Bitgold here. Documented primary-source genealogy: Adam Back pointed Satoshi to Wei Dai's b-money in August 2008 (Satoshi's 2008-08-22 email to Wei Dai confirms: \"Adam Back ... noticed the similarities and pointed me to your site\"); the Bitcoin whitepaper (2008-10-31) cites b-money [1] and Hashcash [6], not bit gold; Hal Finney's 2008-11-07 cryptography ML reply to the whitepaper first proposed the bit gold connection publicly (\"Nick Szabo wrote many years ago about what he called 'bit gold' and this could be an implementation of that concept\"); Satoshi's July 2010 phrasing here echoes Finney's framing. When Satoshi himself first became aware of bit gold is not directly attested in any primary source available to this archive."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

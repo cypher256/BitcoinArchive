@@ -8,8 +8,8 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Wikipedia記事の削除議論に対し、サトシが記事の改善方法を提案。b-moneyとBitgoldの実装と述べているが、サトシ自身は論文公開前にこれらを知らなかったと別の場で認めている。"
-editorNote: "サトシはここでBitcoinをb-moneyとBitgoldの「実装」と述べているが、別の場でBitcoinの実装完了後にこれらの提案を知ったと認めている。ウェイ・ダイの存在は2008年8月にアダム・バックから紹介されたもので、実装は既に完成していた。"
+description: "Wikipedia 記事の削除議論にサトシが助言。b-money と Bitgold の実装と述べる。bit gold の関連付けは 2008-11 にハル・フィニーが先に公的に提示。"
+editorNote: "サトシはここで Bitcoin を b-money と Bitgold の「実装」 と述べている。一次資料の系譜：アダム・バックが 2008 年 8 月にウェイ・ダイの b-money をサトシに紹介 (サトシ自身の 2008-08-22 ウェイ・ダイ宛メールで確認:「アダム・バックが類似性に気づいて私を [b-money] サイトに案内した」)、Bitcoin whitepaper (2008-10-31) は b-money [1] と Hashcash [6] を引用するが bit gold は引用なし、ハル・フィニーが 2008-11-07 に暗号学メーリングリストで Bitcoin whitepaper への返信として bit gold との関連付けを公的に最初に提示 (「ニック・サボが何年も前に『bit gold』と呼ぶものについて書いていた。これはその概念の実装と言えるだろう」)、サトシは 2010 年 7 月の本投稿でハルの枠組みを反映。サトシ自身がいつ bit gold を知ったかは本アーカイブの一次資料では直接的に証言されていない。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
