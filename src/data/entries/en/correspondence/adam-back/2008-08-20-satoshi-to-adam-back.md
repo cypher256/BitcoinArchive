@@ -1,6 +1,6 @@
 ---
 title: "Hashcash citation and Bitcoin whitepaper draft"
-date: 2008-08-20T00:00:00Z
+date: 2008-08-20T17:30:39Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
@@ -36,10 +36,19 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
-I'm getting ready to release a paper that expands on your ideas into a complete working system.
+The earliest documented email from Satoshi Nakamoto. Writing to [Adam Back](/BitcoinArchive/participants/adam-back/), Satoshi confirmed he was about to publish a paper that built on Hashcash and asked Back to verify the citation form he had drafted:
 
-I wanted to make sure I have the citation to your hashcash paper right.
+```
+[A. Back, "Hashcash - a denial of service counter-measure,"
+http://www.hashcash.org/papers/hashcash.pdf, 2002]
+```
 
-*[Context: Satoshi included a link to a pre-release draft of what would become the Bitcoin whitepaper. The draft was titled "Electronic Cash Without a Trusted Third Party" and filed as ecash.pdf — predating the [October 3 draft](/BitcoinArchive/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/) which was retitled to "Bitcoin: A Peer-to-Peer Electronic Cash System."]*
+The load-bearing line of the email reads:
 
-This email is the earliest documented contact between Satoshi and a central cypherpunk figure, and is examined in the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+> I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.
+
+Satoshi attached a link to a pre-release draft titled "Electronic Cash Without a Trusted Third Party" — the working title before the manuscript was renamed to "Bitcoin: A Peer-to-Peer Electronic Cash System" for the [cryptography mailing-list draft](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) where the abstract appears in its canonical form.
+
+This is the earliest known direct contact between Satoshi and a central cypherpunk figure, and it is one of the primary-source observations underpinning the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/). Two days later Satoshi also wrote directly to Wei Dai (see the [2008-08-22 Satoshi → Wei Dai email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)).
+
+*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
