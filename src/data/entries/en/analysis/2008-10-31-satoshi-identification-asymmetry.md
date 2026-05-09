@@ -206,7 +206,7 @@ Email correspondents breakdown:
 | Wei Dai | 3 | Gwern archive |
 | Dustin Trammell, Gavin Andresen, Laszlo Hanyecz, Nicholas Bohm, others | smaller batches | (various) |
 
-The forensic surface is not the surface of an absent figure. Every category that adversarial-attribution research normally relies on — long-form prose at scale, programming style, time-zone signatures, version-control history, and language-register inconsistencies — is present in the documentary record on Satoshi.
+The forensic surface is not the surface of an absent figure. Every category that adversarial-attribution research normally relies on — long-form prose at scale, programming style, time-zone signatures, version-control history, and language-register inconsistencies — is present in the documentary record on Satoshi. (The layered account of how this surface co-existed with sustained anonymity is in [the anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/).)
 
 ## 3. The persistent identification gap
 
