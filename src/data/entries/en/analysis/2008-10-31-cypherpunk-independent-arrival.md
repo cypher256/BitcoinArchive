@@ -103,7 +103,7 @@ These are the six axes against which §3 will compare Satoshi's documented pract
 
 ### 1.3 The technical lineage to Bitcoin
 
-The cypherpunk movement produced a series of digital-cash and proof-of-work proposals over the decade preceding Bitcoin. Each is documented in this archive:
+The cypherpunk movement produced a series of digital-cash and proof-of-work proposals over the decade preceding Bitcoin (the per-component analysis of which of these Bitcoin actually reuses, borrows, or synthesizes is the subject of [the Bitcoin design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/)). Each is documented in this archive:
 
 | Year | Author | Proposal | Relation to Bitcoin |
 |---|---|---|---|
