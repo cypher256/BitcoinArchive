@@ -192,6 +192,42 @@ carries a useful `note`), move the `note` text into the entry's
 an entry's `sourceUrl` matches any of its own `secondarySources[].url`.
 Wired into `npm run check` in `--strict` mode.
 
+## Medium vs Archive: name the source, not "the archive"
+
+"The archive" (and 「アーカイブ」 in Japanese content) refers to *this*
+BitcoinArchive — its editorial scope, its contents as a record, its
+canonical readings. It does not refer to BitcoinTalk, GitHub, the
+cryptography mailing list, or any other medium where source content
+originally appeared. A person did not "first appear in the archive" —
+they first appeared on BitcoinTalk (or GitHub, or a mailing list);
+the archive merely records and indexes that appearance.
+
+**Correct uses ("the archive" = *this* archive):**
+
+- "this archive's coverage focuses on 2008-2011"
+- "the archive holds primary-source emails from..."
+- "this archive's canonical chain is..."
+- "no separate entry exists in this archive for X"
+- "within this archive's research scope"
+
+**Incorrect uses (name the actual medium instead):**
+
+- ✗ "X first appears in the archive on [date]"
+  → ✓ "X first appears on BitcoinTalk on [date]"
+- ✗ "X's first archived contribution is..."
+  → ✓ "X's first contribution to bitcoin/bitcoin is..."
+- ✗ "X made his first archived post on..."
+  → ✓ "X made his first BitcoinTalk post on..."
+- ✗ 「X はアーカイブに [日付]、…で初めて登場する」
+  → ✓ 「X は BitcoinTalk に [日付]、…で初めて登場する」
+- ✗ 「X のアーカイブにおける最初の貢献は…」
+  → ✓ 「X の bitcoin/bitcoin への最初の貢献は…」
+
+The medium is where the source content existed in the world
+(BitcoinTalk, GitHub, mailing lists). The archive records and indexes
+that content. Conflating them frames the archive as the medium of
+historical existence, which it is not.
+
 ## When a Hypothesis-Related Article Deserves Its Own Aftermath Entry
 
 Coverage of Satoshi-identity hypotheses (Skye Grey 2013 for Szabo, Hatch 2021

@@ -52,7 +52,7 @@ timeline
 ```
 
 ### 初期の貢献（2011年）
-ウィーユのアーカイブにおける最初の貢献は、[2011年3月17日の PR #122](/BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/) である。ウォレット構造の変更により、トランザクション出力ごとに使用済み状態を個別に追跡できるようにし、部分的な使用を可能にする変更だった。2011年5月1日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が彼に [GitHub コミット権限を付与](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)した。これによりウィーユは、アンドレセン自身の次、そして[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)よりも前の、長期メンテナーとして2人目の地位を得た。
+ウィーユの bitcoin/bitcoin への最初の貢献は、[2011年3月17日の PR #122](/BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/) である。ウォレット構造の変更により、トランザクション出力ごとに使用済み状態を個別に追跡できるようにし、部分的な使用を可能にする変更だった。2011年5月1日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が彼に [GitHub コミット権限を付与](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)した。これによりウィーユは、アンドレセン自身の次、そして[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)よりも前の、長期メンテナーとして2人目の地位を得た。
 
 ### Bitcoin Improvement Proposals
 ウィーユはサトシ離脱後のビットコイン進化の驚くほど広い範囲をカバーする4本の BIP の著者または共著者である。

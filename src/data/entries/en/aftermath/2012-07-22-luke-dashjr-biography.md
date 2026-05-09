@@ -27,7 +27,7 @@ Luke Dashjr, known on GitHub and BitcoinTalk as **Luke-Jr**, is an American soft
 ```mermaid
 timeline
     Early 2010s : Begins Bitcoin Core contribution
-    2012 : First archive appearance PR #1620, bitcoin-qt window titles (Jul 22)
+    2012 : First GitHub PR #1620, bitcoin-qt window titles (Jul 22)
     %% link: /BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/
     2013 : Coordinates chain reunification after v0.8 consensus bug (Mar)
          : Begins maintaining the Bitcoin Knots derivative client
@@ -38,7 +38,7 @@ timeline
 ```
 
 ### Bitcoin Core
-Dashjr appears in the archive starting July 22, 2012, opening [PR #1620](/BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) on bitcoin-qt window titles. He has been a consistent Bitcoin Core contributor since the early 2010s, reviewing patches, proposing improvements, and pushing back against changes he considered inconsistent with Bitcoin's original intent. In March 2013, when a consensus bug in v0.8 caused Bitcoin to split into two incompatible chains, Dashjr helped coordinate the community response that reverted nodes to v0.7-compatible behavior and reunited the chain.
+Dashjr first appears in the bitcoin/bitcoin repository on July 22, 2012, opening [PR #1620](/BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) on bitcoin-qt window titles. He has been a consistent Bitcoin Core contributor since the early 2010s, reviewing patches, proposing improvements, and pushing back against changes he considered inconsistent with Bitcoin's original intent. In March 2013, when a consensus bug in v0.8 caused Bitcoin to split into two incompatible chains, Dashjr helped coordinate the community response that reverted nodes to v0.7-compatible behavior and reunited the chain.
 
 ### Bitcoin Knots
 Dashjr maintains **Bitcoin Knots**, a derivative of Bitcoin Core with additional configurability — notably around mempool filtering and limits on `OP_RETURN` data-carrying outputs. Bitcoin Knots has occupied a recurring position in the ongoing community debate over whether and how much non-monetary data Bitcoin nodes should be willing to relay.

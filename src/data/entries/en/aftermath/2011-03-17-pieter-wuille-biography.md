@@ -51,7 +51,7 @@ timeline
 ```
 
 ### Early Contributions (2011)
-Wuille's first archived contribution is [PR #122 on March 17, 2011](/BitcoinArchive/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/) — a wallet-structure change to track spentness per transaction output, enabling partially-spent transactions. On May 1, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) granted him [GitHub commit access](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), making him the second long-term maintainer after Andresen himself and before [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/).
+Wuille's first contribution to bitcoin/bitcoin is [PR #122 on March 17, 2011](/BitcoinArchive/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/) — a wallet-structure change to track spentness per transaction output, enabling partially-spent transactions. On May 1, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) granted him [GitHub commit access](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), making him the second long-term maintainer after Andresen himself and before [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/).
 
 ### Bitcoin Improvement Proposals
 Wuille authored or co-authored four BIPs that between them cover a remarkable share of Bitcoin's post-Satoshi evolution:

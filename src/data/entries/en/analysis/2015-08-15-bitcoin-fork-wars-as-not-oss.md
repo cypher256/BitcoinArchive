@@ -24,6 +24,10 @@ participants:
     slug: "jihan-wu"
   - name: "Mike Belshe"
     slug: "mike-belshe"
+  - name: "Vitalik Buterin"
+    slug: "vitalik-buterin"
+  - name: "Daniel Larimer"
+    slug: "daniel-larimer"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Why Bitcoin's 2015-2017 fork wars ran as identity contests, not OSS disputes: the post-2011 authority vacuum, the economic weight on rule choices, and the three layers that bound code to currency."
@@ -126,7 +130,21 @@ The naming asymmetry that the [rebrand analysis](/BitcoinArchive/entries/analysi
 
 This also explains a feature of the war that observers from ordinary OSS find puzzling: there was no neutral way to lose. In an ordinary fork, the losing side simply runs its own project at smaller scale and gets on with life. In Bitcoin, the losing side either had to abandon the rule set entirely or take a hashrate share, exchange listings, and a separate ticker on a chain that could not call itself Bitcoin in mainstream usage. None of the four 2015-2017 hard-fork attempts secured the original ticker. That outcome is consistent with the structural reading: the contest was over the name and the network, not just over the rules.
 
-## 5. What stays open
+## 5. The boundary of this reading — those who built new instead of forking
+
+The conditions in §1-§4 explain why those who chose to fork ran as they did. They do not claim to explain everyone who disagreed with Bitcoin's direction during 2013-2014. A small number of people in that period built new chains from scratch rather than forking — they sat outside the population this entry's reading applies to. The clearest case is [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/).
+
+Buterin was deeply embedded in the Bitcoin community by the time the fork wars began. At 17 he discovered Bitcoin (2011); at 19 he co-founded *Bitcoin Magazine* with Mihai Alisie (May 2012, the community's first print magazine); through 2013 he wrote extensively for the Magazine, contributed widely-used software (`pybitcointools`), and advocated extending Bitcoin's scripting language to support Turing-complete computation, primarily through the Mastercoin team. The Bitcoin developer community did not converge on accepting the extension.
+
+His response was not to fork. In late 2013 he wrote the Ethereum white paper. On January 26, 2014, at the North American Bitcoin Conference, he announced Ethereum publicly. The mainnet went live on July 30, 2015 — sixteen days before [Bitcoin XT launched](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/). When the public-fork phase of Bitcoin's block-size war began, Ethereum was already a live, operating chain with its own community.
+
+A partial parallel exists in [Daniel Larimer](/BitcoinArchive/participants/daniel-larimer/). Larimer was active on BitcoinTalk in 2010-2013, challenged Satoshi on transaction-confirmation speed in [the 'Scalability and transaction rate' thread](/BitcoinArchive/entries/forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate/), and received Satoshi's famous brush-off: "If you don't believe me or don't get it, I don't have time to try to convince you, sorry." Larimer subsequently built BitShares (2014), Steem (2016), and EOS (2018). Same pattern: engaged with Bitcoin community → ideas not accepted → built new designs from scratch.
+
+The point of recording these cases is not to rank them against fork-war participants on capability. Mike Hearn left a senior Google engineering role to commit to Bitcoin full-time. Gavin Andresen was Bitcoin's lead maintainer for years. Pieter Wuille and Amaury Séchet were both credentialed protocol engineers. The point is that the goals were different. Hearn wanted *bigger blocks on Bitcoin*, not smart contracts replacing Bitcoin's monetary design. Andresen wanted Bitcoin's parameters set as he believed correct. The BCH and BSV camps wanted Bitcoin's economics reshaped to fit their commercial models. Each of those goals required staying with Bitcoin's codebase, which means a fork. Buterin and Larimer wanted a system whose design was not Bitcoin's. That goal required a new chain.
+
+This locates the boundary of §1-§4's reading. The vacuum, the money, and the three-layer structure produce fork wars in the population whose goal is to change Bitcoin while keeping it. Those whose goal was to build something genuinely new sat outside that population. Recording the boundary clarifies what the reading does and does not cover. It does not extend the reading to cover them.
+
+## 6. What stays open
 
 Three counter-readings deserve explicit acknowledgement.
 

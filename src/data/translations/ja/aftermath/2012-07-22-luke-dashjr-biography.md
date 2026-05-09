@@ -28,7 +28,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2010年代初頭 : Bitcoin Core 貢献開始
-    2012 : アーカイブ初登場 PR #1620 bitcoin-qt ウィンドウタイトル (7月22日)
+    2012 : 最初の GitHub PR #1620 bitcoin-qt ウィンドウタイトル (7月22日)
     %% link: /BitcoinArchive/ja/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/
     2013 : v0.8 コンセンサスバグ後の チェーン再統合調整 (3月)
          : Bitcoin Knots 派生クライアントの 維持開始
@@ -39,7 +39,7 @@ timeline
 ```
 
 ### Bitcoin Core
-ダッシュジュニアはアーカイブに2012年7月22日、bitcoin-qt のウィンドウタイトルに関する [PR #1620](/BitcoinArchive/ja/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) を開く形で登場する。2010年代初頭から継続的に Bitcoin Core の貢献者であり、パッチのレビュー、改善の提案、そしてビットコインの原意と一致しないと判断した変更への反論を続けてきた。2013年3月、v0.8 のコンセンサスバグによってビットコインが2つの非互換なチェーンに分裂した際、彼はノードを v0.7 互換の挙動に戻してチェーンを再統合するコミュニティの対応を調整する役割を担った。
+ダッシュジュニアは bitcoin/bitcoin リポジトリーに2012年7月22日、bitcoin-qt のウィンドウタイトルに関する [PR #1620](/BitcoinArchive/ja/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) を開く形で登場する。2010年代初頭から継続的に Bitcoin Core の貢献者であり、パッチのレビュー、改善の提案、そしてビットコインの原意と一致しないと判断した変更への反論を続けてきた。2013年3月、v0.8 のコンセンサスバグによってビットコインが2つの非互換なチェーンに分裂した際、彼はノードを v0.7 互換の挙動に戻してチェーンを再統合するコミュニティの対応を調整する役割を担った。
 
 ### Bitcoin Knots
 ダッシュジュニアは **Bitcoin Knots** を維持している。これは Bitcoin Core の派生クライアントで、追加の設定可能性──特にメンプール・フィルターと `OP_RETURN` データ搬送出力に対する制限──を備える。Bitcoin Knots は、ビットコインノードが非金融データをどの程度中継することを許容すべきかというコミュニティ内の継続的な議論のなかで、くり返し参照される位置を占めてきた。

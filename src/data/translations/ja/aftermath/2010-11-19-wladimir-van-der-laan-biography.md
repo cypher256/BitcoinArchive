@@ -33,7 +33,7 @@ translationStatus: complete
 
 ```mermaid
 timeline
-    2010 : アーカイブ初登場、 ビットコイン クライアント アイコン議論 (11月19日)
+    2010 : BitcoinTalk 初投稿、 ビットコイン クライアント アイコン議論 (11月19日)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/
     2011 : bitcoin-qt リポジトリ作成 (5月15日)
          : GitHub コミット権限 付与、 4 人目の メンテナー (6月5日)
@@ -47,7 +47,7 @@ timeline
 ```
 
 ### 初期の関与
-ファン・デル・ラーンはアーカイブに2010年11月19日、[ビットコインクライアントのアイコンに関する議論](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/)で初めて登場する。そこで彼はスケール調整できるようSVG版が欲しい、と要望を出している──質感や仕上がりの観点からソフトウェアに向き合う開発者らしい、小さいが特徴的な発言だった。その後数か月間、Qt ベースの GUI クライアントへのパッチを寄せていき、2011年5月15日には整理のため独立した `bitcoin-qt` リポジトリーを作成した。このリポジトリーは後に本体の `bitcoin/bitcoin` プロジェクトへ統合された。
+ファン・デル・ラーンは BitcoinTalk に2010年11月19日、[ビットコインクライアントのアイコンに関する議論](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/)で初めて登場する。そこで彼はスケール調整できるようSVG版が欲しい、と要望を出している──質感や仕上がりの観点からソフトウェアに向き合う開発者らしい、小さいが特徴的な発言だった。その後数か月間、Qt ベースの GUI クライアントへのパッチを寄せていき、2011年5月15日には整理のため独立した `bitcoin-qt` リポジトリーを作成した。このリポジトリーは後に本体の `bitcoin/bitcoin` プロジェクトへ統合された。
 
 ### GitHub コミット権限
 2011年6月5日、アンドレセンはファン・デル・ラーンに [`bitcoin/bitcoin` GitHub リポジトリーのコミット権限を付与](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)した。クリス・ムーア、ピーター・ウィーユ、ジェフ・ガージックに次ぐ4人目の被付与者だった。その後数年間、彼はプロジェクトで最も継続的にコードレビューとリリース管理を担う存在となっていった。

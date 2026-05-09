@@ -32,7 +32,7 @@ Wladimir van der Laan, known online as **laanwj**, is a Dutch software developer
 
 ```mermaid
 timeline
-    2010 : First archive appearance, Bitcoin client icon discussion (Nov 19)
+    2010 : First BitcoinTalk post, Bitcoin client icon discussion (Nov 19)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/
     2011 : Creates bitcoin-qt repository (May 15)
          : Granted GitHub commit access, fourth maintainer (Jun 5)
@@ -46,7 +46,7 @@ timeline
 ```
 
 ### Early Involvement
-Van der Laan first appears in the archive on November 19, 2010, in [a discussion about the Bitcoin client's icons](/BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/), where he asked for SVG versions so they could be rescaled — a small but characteristic request from someone approaching the software from a polish-and-quality angle. Over the following months he contributed patches to the Qt-based GUI client, and on May 15, 2011, he created a separate `bitcoin-qt` repository to organize that work. This repository was later merged back into the main `bitcoin/bitcoin` project.
+Van der Laan first appears on BitcoinTalk on November 19, 2010, in [a discussion about the Bitcoin client's icons](/BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/), where he asked for SVG versions so they could be rescaled — a small but characteristic request from someone approaching the software from a polish-and-quality angle. Over the following months he contributed patches to the Qt-based GUI client, and on May 15, 2011, he created a separate `bitcoin-qt` repository to organize that work. This repository was later merged back into the main `bitcoin/bitcoin` project.
 
 ### GitHub Commit Access
 On June 5, 2011, Andresen granted van der Laan [commit access to the `bitcoin/bitcoin` GitHub repository](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/) — the fourth contributor to receive access after Chris Moore, Pieter Wuille, and Jeff Garzik. Over the subsequent years he became one of the most consistent reviewers and release managers on the project.

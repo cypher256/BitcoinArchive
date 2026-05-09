@@ -25,7 +25,7 @@ relatedEntries:
 Daniel Larimer (born 1980), known on BitcoinTalk as **bytemaster**, is an American software developer who went on to found three major blockchain projects whose core design premise was first articulated in his 2010 Bitcoin forum posts: that on-chain settlement alone could not meet the throughput and latency requirements of real-world payments.
 
 ### Early Bitcoin Posts (2010)
-Larimer first appears in the archive on [July 28, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269/), writing:
+Larimer first appears on BitcoinTalk on [July 28, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269/), writing:
 
 > "I am convinced that bandwidth, disk space, and computation time necessary to distribute and 'finalize' a transaction will be prohibitively expensive for micro-payments. [...] 10 minutes is too long to verify that payment is good. It needs to be as fast as swiping a credit card is today."
 
