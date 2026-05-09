@@ -3,14 +3,14 @@ title: "ギャビン・アンドレセン、ビットコインのプロジェク
 date: 2010-12-19T00:00:00Z
 type: "article"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/"
+sourceUrl: "https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651"
 author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "アンドレセンがBitcoinTalkで「サトシの祝福を受けて」プロジェクト管理引き継ぎを公式告知。同日 bitcoin/bitcoin GitHub 作成。"
+description: "アンドレセンが BitcoinTalk topic 2367 でサトシの祝福を受けてプロジェクト管理引き継ぎを公式告知。同日 bitcoin/bitcoin GitHub 作成。"
 isSatoshi: false
 tags:
   - "gavin-andresen"
@@ -25,6 +25,7 @@ secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
 relatedEntries:
+  - forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651
   - aftermath/2010-06-11-gavin-andresen-biography
   - correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
@@ -38,13 +39,13 @@ translationStatus: complete
 
 2010 年 12 月 19 日、サトシ最後のソースコミット（12 月 15 日の v0.3.19 リリース）から 4 日後、[SVN アクセスの引き継ぎ](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)から 7 日後、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は BitcoinTalk フォーラムにリーダーシップ就任の公的承諾を投稿した:
 
-> With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin.
+> With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for Bitcoin.
 >
 > Everyone please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved in.
 >
-> （サトシの祝福を受けて、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。）
+> （サトシの祝福を受けて、正直かなり気が進まないが、これからビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。）
 
-（[ウィキペディア「ギャビン・アンドレセン」記事](https://en.wikipedia.org/wiki/Gavin_Andresen) および [CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」記事](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen) で引用。元の BitcoinTalk トピック URL は本アーカイブの記録には残っていない。）
+（一次資料：[BitcoinTalk topic 2367 msg31651「Development process straw-man」](https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651)。[ウィキペディア「ギャビン・アンドレセン」 記事](https://en.wikipedia.org/wiki/Gavin_Andresen) および [CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」 記事](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen) でも二次的に引用されているが、いずれも上記の原文の文言から軽微な意訳がある。）
 
 同日、ギャビンは [`bitcoin/bitcoin` GitHub リポジトリ](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)を作成した — 9 か月にわたる SVN／GitHub 並列開発期間の始まりであり、SVN が 2011 年 9 月に廃止されるまで続いた。
 
@@ -71,4 +72,4 @@ translationStatus: complete
 
 この役割は 2012 年 9 月の Bitcoin Foundation 設立に伴い、アンドレセンが同財団のチーフサイエンティストに就任した時点で制度化された。
 
-*[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。元の BitcoinTalk トピック URL は本アーカイブの調査範囲では復元できず、引用テキストは [ギャビン・アンドレセンの回顧記事](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/) と Wikipedia ／ CoinMarketCap の引用経由で保全されている。今後 URL が判明した場合、本エントリーは type を `article` から `forum-post` に格上げし、一次資料の BitcoinTalk URL を sourceUrl に設定すべきである。]*
+*[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。一次資料の投稿は [併走するフォーラムエントリー](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/) に保全されており、本 aftermath エントリーは編集的な読解として並走させる。]*

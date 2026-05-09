@@ -3,7 +3,7 @@ title: "ビットコイン初の為替レート — 1ドル = 1,309.03 BTC"
 date: 2009-10-05T00:00:00Z
 type: "article"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/index.php?topic=42.0"
+sourceUrl: "https://web.archive.org/web/20091229132610/http://newlibertystandard.wetpaint.com/page/Exchange+Rate"
 author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
@@ -17,6 +17,8 @@ tags:
   - "mining"
   - "electricity-cost"
 secondarySources:
+  - name: "Wayback Machine — New Liberty Standard 2009 為替レート（wikifoundry 移行後）"
+    url: "https://web.archive.org/web/20131031064421/http://newlibertystandard.wikifoundry.com/page/2009+Exchange+Rate"
   - name: "History Heist — First Exchange Rate"
     url: "https://historyheist.com/new-liberty-standard-publishes-first-exchange-rate-on-bitcoin-of-1309-03-btc-to-one-u-s-dollar-0-0008btc/"
 relatedEntries:

@@ -330,6 +330,7 @@ export const tagTranslations: Record<string, string> = {
   'address-book': 'アドレス帳',
   'address-verification': 'アドレス検証',
   'alcor': 'Alcor',
+  'alert': '警告',
   'alert-key': 'アラート鍵',
   'alert-system': 'アラートシステム',
   'als': 'ALS',

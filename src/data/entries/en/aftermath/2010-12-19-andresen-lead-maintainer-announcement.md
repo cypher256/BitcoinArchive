@@ -3,14 +3,14 @@ title: "Andresen announces taking over Bitcoin project management (December 19, 
 date: 2010-12-19T00:00:00Z
 type: "article"
 source: "bitcointalk"
-sourceUrl: "https://bitcointalk.org/"
+sourceUrl: "https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651"
 author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Gavin Andresen announces on BitcoinTalk he will take over active project management: \"With Satoshi's blessing, and with great reluctance, I will begin to do more active project management.\""
+description: "Gavin Andresen announces on BitcoinTalk topic 2367 he is taking over active project management of Bitcoin with Satoshi's blessing. Same day, he creates the bitcoin/bitcoin GitHub repo."
 isSatoshi: false
 tags:
   - "gavin-andresen"
@@ -25,6 +25,7 @@ secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
 relatedEntries:
+  - forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651
   - aftermath/2010-06-11-gavin-andresen-biography
   - correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
@@ -37,11 +38,11 @@ relatedEntries:
 
 On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted to the BitcoinTalk forum the public acceptance of the leadership role:
 
-> With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin.
+> With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for Bitcoin.
 >
 > Everyone please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved in.
 
-(Quoted in [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen) and [CoinMarketCap — Satoshi Files: Gavin Andresen](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen). The original BitcoinTalk topic URL has not been preserved in this archive's records.)
+(Original post: [BitcoinTalk topic 2367 msg31651, "Development process straw-man"](https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651). Also quoted secondarily in [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen) and [CoinMarketCap — Satoshi Files: Gavin Andresen](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen) — both with slight paraphrasing of the verbatim text shown above.)
 
 The same day, Andresen created the [`bitcoin/bitcoin` GitHub repository](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/) — the start of nine months of parallel SVN/GitHub development before SVN was retired in September 2011.
 
@@ -68,4 +69,4 @@ A reading that synthesizes these elements as "predecessor's blessing + self-decl
 
 The role was later institutionalized when Andresen became Chief Scientist of the Bitcoin Foundation upon its September 2012 establishment.
 
-*[Editor: this entry documents the December 19, 2010 announcement as a discrete transition event. The full BitcoinTalk topic URL has not been recovered for this archive; the quoted text is preserved through the [retrospective entry on Andresen](/BitcoinArchive/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/) and Wikipedia / CoinMarketCap citations. If the original URL surfaces in future research, this entry should be promoted from `article` type to `forum-post` with the primary BitcoinTalk URL.]*
+*[Editor: this entry documents the December 19, 2010 announcement as a discrete transition event. The verbatim primary post is preserved at [the companion forum entry](/BitcoinArchive/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/); this aftermath entry is retained as the editorial reading.]*
