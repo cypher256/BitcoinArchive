@@ -65,6 +65,11 @@ const entrySchema = z.object({
   quotes: z.array(quoteSchema).default([]),
   relatedEntries: z.array(z.string()).default([]),
   inlineLinkKeywords: z.array(z.string()).optional(),
+  // Short label rendered next to the magnifying-glass icon when this
+  // entry is surfaced as a callout on a participant bio page (see
+  // pages/participants/[participant].astro). Optional — omitted entries
+  // fall back to a generic "Analysis" / 考察 label.
+  calloutLabel: z.string().optional(),
 });
 
 const entries = defineCollection({

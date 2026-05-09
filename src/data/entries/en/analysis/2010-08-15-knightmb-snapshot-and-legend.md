@@ -9,6 +9,7 @@ participants:
   - name: "knightmb"
     slug: "knightmb"
 description: "The August 2010 overflow recovery rested on knightmb's snapshot. Secondary sources have since attached a misattributed 10%-holder claim and a contested Tennessee identification to the same handle."
+calloutLabel: "Snapshot & legend"
 isSatoshi: false
 tags:
   - "knightmb"
@@ -57,7 +58,7 @@ This is a particular flavor of community contribution that doesn't have a clean 
 
 ## 3. Speaking with Satoshi
 
-knightmb appears in 153 entries the Archive currently catalogs. Many of those threads also include Satoshi, and on multiple occasions the two engaged directly.
+knightmb appears in over 100 entries the Archive currently catalogs. Many of those threads also include Satoshi, and on multiple occasions the two engaged directly.
 
 In a [July 2010 thread on coordinating private security disclosures](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-628/), knightmb proposed setting up a restricted member-only forum where trusted participants could discuss exploits before public disclosure, modeling the suggestion on Simple Machines Forum's existing access-control features. [Satoshi's reply](/BitcoinArchive/entries/forum/bitcointalk/topic-628/2010-07-29-re-implementation-bug-prior-to-0-3-6/) — *"Actually, it works well to just PM me. I'm the one who's going to be fixing it"* — set what would become the model for how Bitcoin's early security disclosures actually flowed. knightmb's framing of the problem (community-based moderation versus single-developer point of contact) anticipated tensions that would resurface throughout Bitcoin's later history.
 
@@ -81,7 +82,7 @@ This matters in two ways. The inflated holdings figure is part of how the legend
 
 ## 5. The Tennessee shadow
 
-A common identification in secondary sources is that knightmb was Michael Mancil Brown, a Tennessee resident convicted in U.S. federal court in 2016 on wire-fraud and extortion charges. The conviction itself is a matter of public record: Brown was indicted in connection with a 2012 scheme that demanded $1 million in Bitcoin in exchange for not releasing what he claimed were stolen tax returns of presidential candidate Mitt Romney. He received 48 months in federal prison and a $200,000 fine.
+A common identification in secondary sources is that knightmb was Michael Mancil Brown, a Tennessee resident reported to have been convicted in U.S. federal court in 2016 on wire-fraud and extortion charges. The case has been widely covered: per these secondary accounts, Brown was indicted in connection with a 2012 scheme that demanded $1 million in Bitcoin in exchange for not releasing what he claimed were stolen tax returns of presidential candidate Mitt Romney, and received 48 months in federal prison and a $200,000 fine. The Archive has not directly inspected the federal court filings; the figures cited here are taken from the same secondary aggregators that propose the knightmb identification.
 
 The link between this conviction and the BitcoinTalk handle "knightmb" rests on circumstantial reasoning rather than documentary confirmation. Among the supporting points cited by secondary sources:
 
@@ -91,9 +92,9 @@ The link between this conviction and the BitcoinTalk handle "knightmb" rests on 
 
 What is *not* present in the public record:
 
-- The federal indictment and conviction documents (so far as this Archive has been able to verify) do not name the BitcoinTalk handle "knightmb."
+- No secondary account this Archive has consulted indicates that the federal indictment and conviction documents name the BitcoinTalk handle "knightmb."
 - knightmb has not published a first-person statement confirming the identification.
-- Within knightmb's BitcoinTalk posts catalogued in this Archive, there is no mention of Tennessee, no real-name signature, and no biographical detail that maps onto a specific U.S. resident — across 153 entries, the handle is operationally clean of personal identifiers.
+- Within knightmb's BitcoinTalk posts catalogued in this Archive, there is no mention of Tennessee, no real-name signature, and no biographical detail that maps onto a specific U.S. resident — across the entire catalogued set, the handle is operationally clean of personal identifiers.
 
 The identification has been picked up by [secondary news aggregators](https://trakx.io/resources/insights/who-is-knightmb-bitcoin-pioneer/), at least one [academic survey paper](https://arxiv.org/abs/2206.02871), and AI-generated biographical profiles. None of those sources, on inspection, traces back to a primary document — court record or first-person attestation — that closes the inferential gap.
 
@@ -105,7 +106,7 @@ After the dense 2010 BitcoinTalk activity catalogued in this Archive, knightmb's
 
 ## 7. What the silence preserves
 
-knightmb's archive-period posts are notable for what they don't contain. Across 153 entries, the handle never publishes a real name, never names a city, never links a personal website or blog, never references a job, employer, family member, or biographical detail of any kind. He answers questions about hardware and software with patience; he asks Satoshi the kind of questions a daily node operator would ask; and he hosts the snapshot. None of that requires identifying who he is.
+knightmb's archive-period posts are notable for what they don't contain. Across the catalogued set — over 100 entries — the handle never publishes a real name, never names a city, never links a personal website or blog, never references a job, employer, family member, or biographical detail of any kind. He answers questions about hardware and software with patience; he asks Satoshi the kind of questions a daily node operator would ask; and he hosts the snapshot. None of that requires identifying who he is.
 
 Some early Bitcoin participants used pseudonyms casually and dropped them later — [Sirius](/BitcoinArchive/participants/martti-malmi/) eventually became Martti Malmi in public, [theymos](/BitcoinArchive/participants/theymos/) eventually became Michael Marquardt. Others kept their pseudonyms tight: [Cøbra](/BitcoinArchive/participants/cobra/) chose default judgment in a London court rather than appear under his legal name. knightmb belongs to the second pattern. Whatever happened in Tennessee in 2012, whatever Timekoin became, whatever the secondary sources have since written, the BitcoinTalk record itself preserves only the work — and the silence around it.
 

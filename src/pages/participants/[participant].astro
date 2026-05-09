@@ -58,50 +58,48 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
-// Hypothesis-callout target. Three branches, in priority order:
-//   1. Satoshi himself: link to the candidates overview (he is the
-//      subject of all hypotheses, not a candidate within any one of
-//      them).
-//   2. Candidates with their own dedicated hypothesis page (Wei Dai,
-//      Hal Finney, Szabo, Sassaman, Peter Todd, Kaneko, Adam Back):
-//      link to the per-candidate page — the most specific destination.
-//   3. Candidates listed in the overview but without a dedicated page
-//      (e.g., Craig Wright): fall back to the overview. Detected via
-//      the bio's relatedEntries containing the overview ID — every
-//      candidate biography links back to the overview, and no
-//      non-candidate biography does, so this acts as the recognized
-//      "this person is a candidate" marker.
+// Bio-page analysis callouts. Two kinds of entries qualify:
+//   1. Identity-hypothesis pages where this participant is the primary
+//      subject (legacy behavior, automatic).
+//   2. Any other analysis page where this participant is primary AND
+//      the page has an explicit `calloutLabel` in its frontmatter
+//      (editor opt-in). This avoids cluttering Satoshi's bio with the
+//      ten-plus analysis pages that have him as primary participant —
+//      only ones the editor specifically wants surfaced get a callout.
+// All matching entries are rendered as stacked callouts, sorted newest
+// first. The "candidates without a dedicated page" case (e.g., Craig
+// Wright) is handled via the second-to-last block, which links them to
+// the hypotheses overview.
 const overviewId = 'analysis/2008-10-31-satoshi-identity-hypotheses-overview';
-let hypothesisEntry: typeof allEntries[number] | undefined;
-let analysisCalloutLabel = 'Identity hypothesis';
+
+const calloutCandidates = filtered.filter((e) =>
+  e.data.type === 'analysis' &&
+  e.data.participants[0]?.slug === participantSlug &&
+  (e.id.includes('-satoshi-identity-hypothesis') || e.data.calloutLabel)
+);
+
 if (participantSlug === 'satoshi-nakamoto') {
-  hypothesisEntry = allEntries.find((e) => e.id === overviewId);
-  analysisCalloutLabel = 'Identity hypotheses overview';
-} else {
-  const individual = filtered.find((e) =>
-    e.data.type === 'analysis' &&
-    e.id.includes('-satoshi-identity-hypothesis') &&
-    e.data.participants[0]?.slug === participantSlug
-  );
-  if (individual) {
-    hypothesisEntry = individual;
-  } else if (biographyEntry?.data.relatedEntries?.includes(overviewId)) {
-    hypothesisEntry = allEntries.find((e) => e.id === overviewId);
-  } else {
-    // Fourth branch: any other analysis entry where this participant
-    // is the primary subject (e.g., knightmb's snapshot-and-legend
-    // analysis). The identity-hypothesis label doesn't fit these, so
-    // use a generic "Analysis" label.
-    const otherAnalysis = filtered.find((e) =>
-      e.data.type === 'analysis' &&
-      !e.id.includes('-satoshi-identity-hypothesis') &&
-      e.data.participants[0]?.slug === participantSlug
-    );
-    if (otherAnalysis) {
-      hypothesisEntry = otherAnalysis;
-      analysisCalloutLabel = 'Analysis';
-    }
+  const overview = allEntries.find((e) => e.id === overviewId);
+  if (overview && !calloutCandidates.some((e) => e.id === overview.id)) {
+    calloutCandidates.unshift(overview);
   }
+} else if (
+  biographyEntry?.data.relatedEntries?.includes(overviewId) &&
+  !calloutCandidates.some((e) => e.id.includes('-satoshi-identity-hypothesis'))
+) {
+  const overview = allEntries.find((e) => e.id === overviewId);
+  if (overview) calloutCandidates.push(overview);
+}
+
+calloutCandidates.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const calloutEntries = calloutCandidates;
+
+function calloutLabelFor(entry: typeof allEntries[number]): string {
+  if (entry.data.calloutLabel) return entry.data.calloutLabel;
+  if (entry.id === overviewId) return 'Identity hypotheses overview';
+  if (entry.id.includes('-satoshi-identity-hypothesis')) return 'Identity hypothesis';
+  return 'Analysis';
 }
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
@@ -157,12 +155,16 @@ const structuredData = [
     <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
     {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
 
-    {hypothesisEntry && (
-      <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
-        <span class="hypothesis-icon">🔍</span>
-        <span class="hypothesis-label">{analysisCalloutLabel}</span>
-        <span class="hypothesis-arrow">&rarr;</span>
-      </a>
+    {calloutEntries.length > 0 && (
+      <div class="hypothesis-callouts">
+        {calloutEntries.map((entry) => (
+          <a class="hypothesis-callout" href={localePath(`/entries/${entry.id}/`, lang)}>
+            <span class="hypothesis-icon">🔍</span>
+            <span class="hypothesis-label">{calloutLabelFor(entry)}</span>
+            <span class="hypothesis-arrow">&rarr;</span>
+          </a>
+        ))}
+      </div>
     )}
 
     {biographyContent && (
@@ -226,11 +228,17 @@ const structuredData = [
     color: var(--color-text-muted);
     font-weight: normal;
   }
+  .hypothesis-callouts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
   .hypothesis-callout {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    margin-bottom: 1.5rem;
     padding: 0.4rem 0.9rem;
     background: var(--color-bg-alt);
     border-left: 3px solid var(--color-accent);

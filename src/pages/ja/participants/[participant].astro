@@ -72,36 +72,47 @@ const biographyContent = biographyEntry ? await render(biographyEntry) : null;
 //      non-candidate biography does, so this acts as the recognized
 //      "this person is a candidate" marker.
 const overviewId = 'analysis/2008-10-31-satoshi-identity-hypotheses-overview';
-let hypothesisEntry: typeof allEntries[number] | undefined;
-let analysisCalloutLabel = 'サトシ正体仮説';
+
+// Bio-page analysis callouts. Two kinds of entries qualify:
+//   1. Identity-hypothesis pages where this participant is the primary
+//      subject (legacy behavior, automatic).
+//   2. Any other analysis page where this participant is primary AND
+//      the page has an explicit `calloutLabel` in its frontmatter
+//      (editor opt-in). This avoids cluttering Satoshi's bio with the
+//      ten-plus analysis pages that have him as primary participant —
+//      only ones the editor specifically wants surfaced get a callout.
+const calloutCandidates = filtered.filter((e) =>
+  e.data.type === 'analysis' &&
+  e.data.participants[0]?.slug === participantSlug &&
+  (e.id.includes('-satoshi-identity-hypothesis') || e.data.calloutLabel)
+);
+
+// Add the identity-hypotheses overview when applicable: Satoshi himself
+// (subject of all hypotheses), and candidates whose bio relatedEntries
+// links the overview but who don't have a dedicated hypothesis page.
 if (participantSlug === 'satoshi-nakamoto') {
-  hypothesisEntry = allEntries.find((e) => e.id === overviewId);
-  analysisCalloutLabel = 'サトシ正体仮説の総覧';
-} else {
-  const individual = filtered.find((e) =>
-    e.data.type === 'analysis' &&
-    e.id.includes('-satoshi-identity-hypothesis') &&
-    e.data.participants[0]?.slug === participantSlug
-  );
-  if (individual) {
-    hypothesisEntry = individual;
-  } else if (biographyEntry?.data.relatedEntries?.includes(overviewId)) {
-    hypothesisEntry = allEntries.find((e) => e.id === overviewId);
-  } else {
-    // Fourth branch: any other analysis entry where this participant
-    // is the primary subject (e.g., knightmb's snapshot-and-legend
-    // analysis). The "正体仮説" label doesn't fit these, so use a
-    // generic "考察" label.
-    const otherAnalysis = filtered.find((e) =>
-      e.data.type === 'analysis' &&
-      !e.id.includes('-satoshi-identity-hypothesis') &&
-      e.data.participants[0]?.slug === participantSlug
-    );
-    if (otherAnalysis) {
-      hypothesisEntry = otherAnalysis;
-      analysisCalloutLabel = '考察';
-    }
+  const overview = allEntries.find((e) => e.id === overviewId);
+  if (overview && !calloutCandidates.some((e) => e.id === overview.id)) {
+    calloutCandidates.unshift(overview);
   }
+} else if (
+  biographyEntry?.data.relatedEntries?.includes(overviewId) &&
+  !calloutCandidates.some((e) => e.id.includes('-satoshi-identity-hypothesis'))
+) {
+  const overview = allEntries.find((e) => e.id === overviewId);
+  if (overview) calloutCandidates.push(overview);
+}
+
+// Sort by date descending — newer analyses surface first.
+calloutCandidates.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const calloutEntries = calloutCandidates;
+
+function calloutLabelFor(entry: typeof allEntries[number]): string {
+  if (entry.data.calloutLabel) return entry.data.calloutLabel;
+  if (entry.id === overviewId) return 'サトシ正体仮説の総覧';
+  if (entry.id.includes('-satoshi-identity-hypothesis')) return 'サトシ正体仮説';
+  return '考察';
 }
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
@@ -157,12 +168,16 @@ const structuredData = [
     <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
     {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
 
-    {hypothesisEntry && (
-      <a class="hypothesis-callout" href={localePath(`/entries/${hypothesisEntry.id}/`, lang)}>
-        <span class="hypothesis-icon">🔍</span>
-        <span class="hypothesis-label">{analysisCalloutLabel}</span>
-        <span class="hypothesis-arrow">&rarr;</span>
-      </a>
+    {calloutEntries.length > 0 && (
+      <div class="hypothesis-callouts">
+        {calloutEntries.map((entry) => (
+          <a class="hypothesis-callout" href={localePath(`/entries/${entry.id}/`, lang)}>
+            <span class="hypothesis-icon">🔍</span>
+            <span class="hypothesis-label">{calloutLabelFor(entry)}</span>
+            <span class="hypothesis-arrow">&rarr;</span>
+          </a>
+        ))}
+      </div>
     )}
 
     {biographyContent && (
@@ -226,11 +241,17 @@ const structuredData = [
     color: var(--color-text-muted);
     font-weight: normal;
   }
+  .hypothesis-callouts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
   .hypothesis-callout {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    margin-bottom: 1.5rem;
     padding: 0.4rem 0.9rem;
     background: var(--color-bg-alt);
     border-left: 3px solid var(--color-accent);
