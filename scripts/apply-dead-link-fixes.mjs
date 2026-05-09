@@ -4,15 +4,19 @@
 // Reads the enrichment JSON from enrich-dead-links-with-wayback.mjs and
 // applies fixes per the policy in STYLE_GUIDE.md "External Link Rot Handling":
 //
-//   - snapshot-found    -> replace URL with Wayback snapshot URL across all
-//                          affected files (in `secondarySources[].url` and any
-//                          inline body links).
+//   - snapshot-found    -> replace URL with Wayback snapshot URL in
+//                          frontmatter `url:` / `sourceUrl:` fields only.
+//                          Body inline links are deliberately NOT touched
+//                          (verbatim / quoted body content is part of the
+//                          historical record; URL substitution there is a
+//                          per-instance editorial decision, not a mechanical
+//                          fix). See the comment on replaceUrl() below.
 //   - no-snapshot etc.  -> remove the matching `secondarySources[]` entry
 //                          (name + url + optional note). If the resulting
 //                          secondarySources list would be empty, remove the
 //                          entire `secondarySources:` block.
 //
-// The script edits Markdown files in place.
+// The script edits Markdown files in place (frontmatter only; body untouched).
 //
 // Usage:
 //   node scripts/apply-dead-link-fixes.mjs [--dry-run]
