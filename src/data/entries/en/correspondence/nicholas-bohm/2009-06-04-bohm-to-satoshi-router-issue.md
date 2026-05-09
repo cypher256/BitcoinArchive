@@ -26,8 +26,8 @@ secondarySources:
 
 [Nicholas Bohm](/BitcoinArchive/participants/nicholas-bohm/), a retired commercial solicitor from a major City of London firm and an e-commerce policy adviser for Cyber-Rights & Cyber-Liberties (UK), had been running Bitcoin since its earliest days. He was one of the few early adopters who engaged directly with [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) via private email.
 
-In this email, Bohm reported that after installing a new router, his Bitcoin client could no longer establish connections to the network.
+In this email, Bohm reported that after installing a new router, his Bitcoin client could no longer establish connections to the network. The specific subject — connectivity loss following a router replacement — is documented in Bohm's COPA witness statement (filed as exhibit C/10/1 by Bohm before his death shortly before the trial commenced), and is referenced in the Mellor judgment paragraphs concerning Satoshi-Bohm correspondence.
 
-*[Context: The specific text of this email was entered as exhibit evidence in the COPA v. Craig Wright trial but has not been published in full. Bohm's witness statement (C/10/1) included his private email correspondence with Satoshi.]*
+*[Editor: This entry presents the documented subject and significance of the email rather than verbatim text. The full email body has not been published — Bohm's witness statement was filed as trial exhibit C/10/1 but the underlying email exchanges with Satoshi were not reproduced in the public Mellor judgment PDF (gwern.net/doc/bitcoin/2024-mellor.pdf), nor in third-party analyses of the COPA evidence such as the Decashed node-IP article. If the Bohm estate or COPA later releases the verbatim email text, the body will be updated to verbatim per primary-source policy.]*
 
 Bohm had previously reported bugs to Satoshi via the bitcoin-list mailing list in January 2009, which led to fixes included in Bitcoin v0.1.5. Satoshi acknowledged Bohm by name in the v0.1.5 release notes: "includes the fix for the problem Nicholas had."
