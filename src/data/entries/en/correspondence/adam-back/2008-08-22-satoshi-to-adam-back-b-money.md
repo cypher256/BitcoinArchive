@@ -1,6 +1,6 @@
 ---
 title: "Re: Hashcash citation — 'my ideas start from exactly that point'"
-date: 2008-08-22T00:00:00Z
+date: 2008-08-21T17:59:48Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
@@ -31,14 +31,14 @@ relatedEntries:
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
 ---
 
-In this third email of the chain, Satoshi thanked Adam Back for pointing him to Wei Dai's b-money proposal and made a historically significant admission:
+*[Editor: Filename retains the original 2008-08-22 form for slug stability; the actual send timestamp is 2008-08-21 17:59:48 UTC (18:59:48 UTC+01:00 per the email header).]*
+
+In the third email of the chain, Satoshi thanked Adam Back for pointing him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal. The historically load-bearing line — already cited as a self-statement in archive analysis — reads:
 
 > Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.
 
-This statement is important for two reasons: it establishes that Satoshi developed Bitcoin's core ideas independently of b-money before learning of [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s work, and it confirms that b-money was added to the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)'s references only after Back's suggestion.
+This sentence is one of the primary-source observations underpinning both the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) and the [bitcoin-design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/): Satoshi reached the design space independently and only learned of b-money via Adam Back's referral the previous day.
 
-Satoshi also described the technical approach of his system:
+The same email noted that Satoshi planned to contact Wei Dai directly to confirm the citation year — the message that would be sent the following day (see the [2008-08-22 Satoshi → Wei Dai email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)). b-money was subsequently added as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/).
 
-> *[Satoshi explained how the system uses proof-of-work for coin generation and network timestamping, describing the chain of hash-based proof-of-work to create self-evident proof of the majority consensus.]*
-
-Following this exchange, Satoshi contacted Wei Dai directly on August 22, 2008, initiating a separate correspondence that would lead to b-money being cited as reference [1] in the Bitcoin whitepaper.
+*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
