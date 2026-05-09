@@ -17,11 +17,15 @@
  *   - <details> is HTML-standard, requires no JS, and is keyboard /
  *     screen-reader accessible.
  *
- * Display order: chronological by entry date (not selection priority).
- * Selection priority controls *what gets in*; chronology controls *how
- * it reads*. Rules for the manual list are documented in STYLE_GUIDE.md
- * and the bidirectional / EN-JA-mirror constraints are enforced by
- * scripts/check-internal-links.mjs.
+ * Display order: analysis-type entries first, then chronological by
+ * entry date among each group. Analysis pages typically carry the
+ * editorially-strongest reading of the surrounding primary record, so
+ * surfacing them above source posts in the related list keeps them out
+ * of the chronological middle where they would otherwise be buried.
+ * Selection priority controls *what gets in*; the analysis-first sort
+ * controls *what gets read first*. Rules for the manual list are
+ * documented in STYLE_GUIDE.md and the bidirectional / EN-JA-mirror
+ * constraints are enforced by scripts/check-internal-links.mjs.
  */
 import { getCollection } from 'astro:content';
 import { useTranslations, formatDate, localePath } from '../i18n/utils';
@@ -51,14 +55,12 @@ const derivedIds = (derivedMap[entryId] ?? [])
   .filter((id) => !seen.has(id));
 const mergedIds = [...relatedIds, ...derivedIds];
 
-const visibleIds = mergedIds.slice(0, MAX_VISIBLE);
-const hiddenIds = mergedIds.slice(MAX_VISIBLE);
-
 interface Target {
   id: string;
   title: string;
   date: Date;
   href: string;
+  type: string;
 }
 
 let visibleTargets: Target[] = [];
@@ -90,20 +92,35 @@ if (mergedIds.length > 0) {
       title: entry.data.title,
       date: entry.data.date,
       href,
+      type: entry.data.type,
     };
   };
 
-  const byDate = (a: Target, b: Target) => a.date.getTime() - b.date.getTime();
+  // Two-stage sort: analysis entries float to the top (editorial weight),
+  // then chronological within each group (analysis-first, then
+  // non-analysis-first). Two analysis entries on the same bio sort
+  // chronologically among themselves; the analysis-first rule only
+  // applies across the analysis/non-analysis boundary.
+  const byAnalysisFirstThenDate = (a: Target, b: Target) => {
+    const aIsAnalysis = a.type === 'analysis';
+    const bIsAnalysis = b.type === 'analysis';
+    if (aIsAnalysis !== bIsAnalysis) return aIsAnalysis ? -1 : 1;
+    return a.date.getTime() - b.date.getTime();
+  };
 
-  visibleTargets = visibleIds
+  // Resolve the entire merged list to targets and sort once across the
+  // whole set, then split into visible/hidden. Sorting must precede the
+  // slice — otherwise analysis entries that arrived via the derived
+  // candidate stream (always appended after the manual list) would
+  // never reach the visible top, even when they are the editorially
+  // strongest reading available.
+  const allTargets = mergedIds
     .map(buildTarget)
     .filter((x): x is Target => x !== null)
-    .sort(byDate);
+    .sort(byAnalysisFirstThenDate);
 
-  hiddenTargets = hiddenIds
-    .map(buildTarget)
-    .filter((x): x is Target => x !== null)
-    .sort(byDate);
+  visibleTargets = allTargets.slice(0, MAX_VISIBLE);
+  hiddenTargets = allTargets.slice(MAX_VISIBLE);
 }
 
 const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenTargets.length));
