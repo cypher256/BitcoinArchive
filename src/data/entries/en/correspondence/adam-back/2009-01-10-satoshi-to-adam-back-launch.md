@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin v0.1 launch announcement to Adam Back"
-date: 2009-01-10T00:00:00Z
+date: 2009-01-10T18:46:45Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
@@ -27,10 +27,14 @@ secondarySources:
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
 ---
 
-Nearly five months after their last exchange, Satoshi wrote to Adam Back for the final time. [Bitcoin v0.1 had been released on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/), and Satoshi personally notified Back of the launch.
+Nearly five months after the August 2008 exchange, Satoshi wrote to Adam Back one last time, the day after [Bitcoin v0.1 was released](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). The load-bearing line of the email — Satoshi's own announcement of the v0.1 release to one of the first cypherpunks he had contacted — reads:
 
-*[Context: Satoshi thanked Back again for suggesting the b-money and MicroMint papers during their August 2008 correspondence, and announced that the open-source Bitcoin software had been launched. He included [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s overview of the project from the Cryptography mailing list discussion.]*
+> I just released the open source implementation of my paper, Bitcoin v0.1. Details, download and screenshots are at www.bitcoin.org
 
-This email is the last known direct communication between Satoshi and Adam Back. Back did not engage with Bitcoin at this time and would not become actively involved until 2013. He later founded Blockstream in 2014.
+To give Back a high-level sense of how the project was being received, Satoshi forwarded part of [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s response from the cryptography mailing-list thread. The Finney quote is independently published in the metzdowd.com cryptography mailing-list archive and lives in its canonical home at the [Finney response entry (2008-11-07)](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/); the two lines Satoshi specifically forwarded so Adam could see what was being shown were:
 
-The five-email chain between Satoshi and Adam Back — spanning from August 20, 2008 to January 10, 2009 — documents one of the most significant intellectual connections in Bitcoin's prehistory: Satoshi's outreach to the creator of Hashcash, which led to the discovery of Wei Dai's b-money and shaped the final Bitcoin whitepaper.
+> Bitcoin seems to be a very promising idea. I like the idea of basing security on the assumption that the CPU power of honest participants outweighs that of the attacker.
+
+This is the last known direct communication between Satoshi and Adam Back. Back did not engage with Bitcoin until 2013, and later founded Blockstream in 2014. The five-email chain — spanning 2008-08-20 to 2009-01-10 — documents Satoshi's outreach to the creator of Hashcash, the referral that surfaced Wei Dai's b-money, and Satoshi's final notice that the working system had launched.
+
+*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
