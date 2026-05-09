@@ -1,5 +1,5 @@
 ---
-title: "Satoshi hands over Bitcoin project leadership to Gavin Andresen (December 2010)"
+title: "Satoshi's successor — project-manager handover to Gavin Andresen"
 date: 2010-12-12T00:00:00Z
 type: "correspondence"
 source: "wikipedia"
