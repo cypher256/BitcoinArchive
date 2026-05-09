@@ -1,5 +1,5 @@
 ---
-title: "The day Bitcoin was renamed — how the 2014 rebrand cracked open Bitcoin's authority"
+title: "The day 'Bitcoin' split from 'Bitcoin Core' — how the 2014 rebrand cracked open Bitcoin's authority"
 date: 2014-03-19T00:00:00Z
 type: "analysis"
 source: "github"

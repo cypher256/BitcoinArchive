@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin did not appear from nowhere — eight inherited ideas, five original inventions"
+title: "Bitcoin did not appear from nowhere — inheritance and invention"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"

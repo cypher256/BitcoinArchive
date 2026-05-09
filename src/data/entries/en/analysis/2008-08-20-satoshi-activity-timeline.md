@@ -1,5 +1,5 @@
 ---
-title: "Tracing Satoshi Nakamoto — a man who emerged in 2008 and vanished by 2011"
+title: "Tracing Satoshi Nakamoto — every documented event from 2008 to the disputed 2014 return"
 date: 2008-08-20T00:00:00Z
 type: "analysis"
 source: "metzdowd"
