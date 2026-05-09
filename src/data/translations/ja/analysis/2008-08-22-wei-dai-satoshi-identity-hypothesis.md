@@ -1,5 +1,5 @@
 ---
-title: "ウェイ・ダイはサトシだったか — b-money の作者かつ Crypto++ 開発者という仮説の検討"
+title: "ウェイ・ダイはサトシだったのか — b-money の作者かつ Crypto++ 開発者という仮説の検討"
 date: 2008-08-22T00:00:00Z
 type: "analysis"
 source: "wikipedia"
