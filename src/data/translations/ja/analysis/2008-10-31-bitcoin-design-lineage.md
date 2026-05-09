@@ -56,6 +56,7 @@ inlineLinkKeywords:
   - "ビットコイン設計系譜"
   - "ビットコインは何でできているのか"
   - "ホワイトペーパー引用区分"
+  - "ホワイトペーパー引用文献"
 translationStatus: complete
 ---
 

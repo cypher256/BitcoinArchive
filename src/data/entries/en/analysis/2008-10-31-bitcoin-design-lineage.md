@@ -56,6 +56,7 @@ inlineLinkKeywords:
   - "Bitcoin design lineage"
   - "what Bitcoin reuses"
   - "whitepaper reference categories"
+  - "whitepaper references"
 ---
 
 Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cypherpunk system (Hashcash), borrows several general-purpose computer-science components (Merkle trees, linked timestamping, probability theory) without inheriting them from any single one of its cited references, and synthesizes the rest (decentralized consensus, the UTXO model, mining-reward issuance, the 21-million monetary cap, P2P propagation, ECDSA-based transactions, difficulty adjustment) as new design. The [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) has eight numbered references, but they do not all play the same role. This entry walks through what Bitcoin actually contains and where each component came from, separating documented contemporaneous use from post-hoc citation from general-knowledge reuse from novel synthesis.

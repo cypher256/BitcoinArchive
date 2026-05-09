@@ -75,6 +75,7 @@ inlineLinkKeywords:
   - "サトシ匿名性のアーキテクチャ"
   - "匿名化の階層"
   - "匿名化の層"
+  - "6 層構造"
 translationStatus: complete
 ---
 

@@ -77,6 +77,8 @@ inlineLinkKeywords:
   - "Bitcoin fork genealogy"
   - "block-size war"
   - "altcoin lineage"
+  - "protocol forks"
+  - "Bitcoin family tree"
 ---
 
 This entry catalogs (a) every protocol fork of Bitcoin that produced a chain that survived the launch event with non-trivial network share, and (b) the adjacent cryptocurrencies whose design lineage starts from Bitcoin's source code or design. Out of scope: failed-launch forks (no surviving chain) and chains whose technical design originates independently of Bitcoin. The latter category is large — thousands of such chains exist (Ripple's federated consensus, Monero's CryptoNote ring signatures, IOTA's DAG, Cardano's Ouroboros PoS are commonly-cited examples in mainstream discourse, but they are illustrations of the category, not its boundary).
