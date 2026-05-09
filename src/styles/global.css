@@ -108,6 +108,21 @@ pre {
   line-height: 1.5;
 }
 
+/* Long unbroken strings (block hashes, transaction IDs, raw long URLs in
+   prose) overflow narrow viewports. `overflow-wrap: anywhere` only kicks
+   in when there is no other break point AND the content would otherwise
+   overflow the line — normal prose still breaks at spaces. Code blocks
+   (`pre`) keep `white-space: pre` and `overflow-x: auto` (defined above)
+   so they horizontally scroll instead of wrapping mid-line, which is the
+   correct behavior for code. The body-content wrappers below are the
+   only places where authored prose lives. */
+.entry-content,
+.message-body,
+.satoshi-analysis,
+.biography-content {
+  overflow-wrap: anywhere;
+}
+
 pre code {
   background: none;
   padding: 0;
