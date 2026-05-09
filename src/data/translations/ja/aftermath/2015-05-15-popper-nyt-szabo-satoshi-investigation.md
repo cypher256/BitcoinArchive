@@ -30,8 +30,6 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Nick_Szabo"
   - name: "Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money（Harper、2015 年 5 月）"
     url: "https://www.harpercollins.com/products/digital-gold-nathaniel-popper"
-  - name: "The Guardian — Bitcoin's creator may be Nick Szabo, says new claim（2014 年 3 月、Skye Grey による先行特定）"
-    url: "https://www.theguardian.com/technology/2014/mar/03/bitcoin-currency-founder-nick-szabo-denies"
 relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request

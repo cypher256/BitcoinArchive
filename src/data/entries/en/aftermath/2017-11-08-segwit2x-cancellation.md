@@ -20,8 +20,6 @@ tags:
 secondarySources:
   - name: "Wikipedia — SegWit2x"
     url: "https://en.wikipedia.org/wiki/SegWit2x"
-  - name: "Coindesk — SegWit2x Hard Fork Suspended for Lack of Consensus"
-    url: "https://www.coindesk.com/markets/2017/11/08/segwit2x-hard-fork-suspended-for-lack-of-consensus/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss

@@ -23,8 +23,6 @@ secondarySources:
     url: "http://www.hashcash.org/papers/hashcash.pdf"
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
-  - name: "Satoshi Nakamoto Institute — Adam Back Emails"
-    url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
   - name: "Bitcoin Magazine — The Genesis Files: Hashcash or How Adam Back Designed Bitcoin's Motor Block"
     url: "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
   - name: "Blockstream — About"

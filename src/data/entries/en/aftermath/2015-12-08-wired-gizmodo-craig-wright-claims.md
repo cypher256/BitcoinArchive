@@ -23,8 +23,6 @@ tags:
 secondarySources:
   - name: "Gizmodo article"
     url: "https://gizmodo.com/this-australian-says-he-and-his-dead-friend-invented-bi-1746958692"
-  - name: "Wired follow-up questioning evidence"
-    url: "https://www.wired.com/2015/12/new-clues-suggest-satoshi-suspect-craig-wright-may-be-a-hoax/"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"

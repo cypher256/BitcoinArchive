@@ -17,9 +17,6 @@ tags:
   - "block-size"
   - "hash-war"
   - "craig-wright"
-secondarySources:
-  - name: "Coindesk — Bitcoin Cash Hard Fork: What You Need to Know"
-    url: "https://www.coindesk.com/markets/2018/11/14/bitcoin-cash-hard-fork-what-you-need-to-know/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2017-08-01-bitcoin-cash-fork

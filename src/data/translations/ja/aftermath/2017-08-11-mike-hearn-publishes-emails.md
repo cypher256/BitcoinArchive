@@ -20,7 +20,7 @@ secondarySources:
   - name: "Vice/Motherboard — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails (August 2017)"
     url: "https://www.vice.com/en/article/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails/"
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
   - name: "Slashdot — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails"
     url: "https://slashdot.org/story/17/08/11/1940213/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails"
 relatedEntries:

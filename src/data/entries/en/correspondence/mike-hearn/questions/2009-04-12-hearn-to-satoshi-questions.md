@@ -20,7 +20,7 @@ tags:
   - "inflation"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 relatedEntries:
   - aftermath/2009-04-12-mike-hearn-biography
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange

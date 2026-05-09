@@ -21,7 +21,7 @@ tags:
   - "merged-mining"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 > If you don't know about all txes in existence, I don't know how to do 2). You could only rely on trusting other nodes for that. That trust can be distributed over multiple nodes. Nodes only relay transactions they accept as valid. If you receive inv messages for a tx from all the nodes you're connected to, they're attesting that it's valid and the first spend they saw.

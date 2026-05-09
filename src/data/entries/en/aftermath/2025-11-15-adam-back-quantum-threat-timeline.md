@@ -19,7 +19,7 @@ tags:
   - "security"
 secondarySources:
   - name: "CoinTelegraph — Adam Back: Bitcoin faces no quantum risk for next 20–40 years"
-    url: "https://cointelegraph.com/news/bitcoin-quantum-threat-decades-post-quantum-migration"
+    url: "https://web.archive.org/web/20251215111115/https://cointelegraph.com/news/bitcoin-quantum-threat-decades-post-quantum-migration"
   - name: "CryptoSlate — Why Adam Back thinks Bitcoin's 20-year quantum runway matters"
     url: "https://cryptoslate.com/why-adam-backs-thinks-bitcoins-20-year-quantum-runway-matters-more-than-todays-headlines/"
 ---

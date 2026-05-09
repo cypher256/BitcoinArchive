@@ -20,7 +20,7 @@ tags:
   - "legal"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 I am not a lawyer and I can't possibly answer that. I suppose if the law applies to a bank or financial institution or other intermediary, then it would not apply since there is no bank involved, only two parties trading directly with each other, as they would in person with cash or barter with physical commodities.

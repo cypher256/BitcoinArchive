@@ -36,8 +36,6 @@ secondarySources:
     url: "https://www.npr.org/2026/04/13/nx-s1-5778501/after-years-of-speculation-a-reporter-claims-to-have-uncovered-the-founder-of-bitcoin"
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
-  - name: "Satoshi Nakamoto Institute — Adam Back Emails"
-    url: "https://satoshi.nakamotoinstitute.org/emails/adam-back/"
 relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis

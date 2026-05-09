@@ -24,8 +24,6 @@ tags:
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"
     url: "https://plan99.net/~mike/satoshi-emails/thread5.html"
-  - name: "MIT Technology Review"
-    url: "https://www.technologyreview.com/2011/08/17/191706/the-man-who-really-built-bitcoin/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture

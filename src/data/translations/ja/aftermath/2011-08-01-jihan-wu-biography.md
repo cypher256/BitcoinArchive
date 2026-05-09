@@ -21,10 +21,6 @@ tags:
 secondarySources:
   - name: "Forbes — Jihan Wu profile"
     url: "https://www.forbes.com/profile/jihan-wu/"
-  - name: "Bloomberg — Inside Bitmain (2018)"
-    url: "https://www.bloomberg.com/news/features/2018-06-08/bitmain-the-bitcoin-mining-giant-that-could-cause-a-crisis"
-  - name: "CoinDesk — Jihan Wu translates Bitcoin whitepaper"
-    url: "https://www.coindesk.com/markets/2018/01/12/the-tao-of-jihan-wu-an-interview-with-the-billionaire-bitcoin-baron/"
 relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy

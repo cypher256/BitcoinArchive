@@ -18,7 +18,7 @@ tags:
   - "empty-blocks"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 Something else that isn't clear to me - does the global chain only get extended when there is actual work to do? Currently it seems to grow all the time, although there are only a few people in the network. So presumably it gets extended with null blocks. Is this actually required? The timestamping doesn't have to be actually in parallel with real time does it ... it's merely establishing an ordering of events.

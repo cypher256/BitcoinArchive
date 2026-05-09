@@ -21,7 +21,7 @@ tags:
   - "escrow"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 If the script language is not stateless, if it has access to any outside information that changes or varies between nodes, attackers can use it to fork the chain. The only exception is if it is always false before a certain time and permanently true after, which is implemented with nLockTime.

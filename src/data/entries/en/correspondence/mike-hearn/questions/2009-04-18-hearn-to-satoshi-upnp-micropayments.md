@@ -20,7 +20,7 @@ tags:
   - "browser-extension"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 Yes, I believe most P2P clients use the UPnP protocol to get routers to open up the port automatically. That would probably improve the listen rate significantly. I just discovered DMZ wasn't enabled on my router, though I thought it was. That's now fixed.

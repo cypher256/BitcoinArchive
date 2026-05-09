@@ -23,7 +23,7 @@ secondarySources:
   - name: "CoinDesk — Bitcoin Branded a Failure as Media Erupts Over Mike Hearn Exit"
     url: "https://www.coindesk.com/markets/2016/01/15/bitcoin-branded-a-failure-as-media-erupts-over-mike-hearn-exit/"
   - name: "CoinTelegraph — How Mike Hearn Sold All His Bitcoins in 2016 and Market Proved Him Wrong"
-    url: "https://cointelegraph.com/news/how-mike-hearn-sold-all-his-bitcoins-in-2016-and-market-proved-him-wrong"
+    url: "https://web.archive.org/web/20241213175143/https://cointelegraph.com/news/how-mike-hearn-sold-all-his-bitcoins-in-2016-and-market-proved-him-wrong"
   - name: "LWN.net — Hearn: The resolution of the Bitcoin experiment"
     url: "https://lwn.net/Articles/672108/"
   - name: "Bitbo — Mike Hearn Quits Bitcoin"

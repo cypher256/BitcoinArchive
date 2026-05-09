@@ -22,7 +22,7 @@ tags:
   - "bitcoin-org"
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
-    url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+    url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 translationStatus: complete
 ---
 

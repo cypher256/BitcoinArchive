@@ -21,14 +21,10 @@ tags:
 secondarySources:
   - name: "Wei Dai — b-money proposal (November 1998)"
     url: "http://www.weidai.com/bmoney.txt"
-  - name: "Satoshi Nakamoto Institute — Wei Dai Emails"
-    url: "https://satoshi.nakamotoinstitute.org/emails/wei-dai/"
   - name: "Gwern's Archive — Wei Dai / Satoshi Nakamoto Emails"
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
   - name: "Crypto++ Library"
     url: "https://www.cryptopp.com/"
-  - name: "Bitcoin Magazine — The Genesis Files: How Wei Dai's b-Money Became the Inspiration for Bitcoin"
-    url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-a-first-draft-wei-dais-b-money-was-it"
   - name: "Less Wrong — Wei Dai's profile"
     url: "https://www.lesswrong.com/users/wei-dai"
 relatedEntries:

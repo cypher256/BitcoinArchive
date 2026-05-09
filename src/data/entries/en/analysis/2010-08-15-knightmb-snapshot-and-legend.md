@@ -23,8 +23,6 @@ secondarySources:
     url: "https://trakx.io/resources/insights/who-is-knightmb-bitcoin-pioneer/"
   - name: "arXiv:2206.02871 — Academic survey citing the identification"
     url: "https://arxiv.org/abs/2206.02871"
-  - name: "Wikipedia — Timekoin"
-    url: "https://en.wikipedia.org/wiki/Timekoin"
 relatedEntries:
   - aftermath/2010-07-12-knightmb-biography
   - aftermath/2010-08-15-value-overflow-incident

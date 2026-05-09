@@ -20,7 +20,7 @@ tags:
   - "historic"
 secondarySources:
   - name: "CoinTelegraph — 5,050 Bitcoin for $5 in 2009"
-    url: "https://cointelegraph.com/magazine/5050-bitcoin-for-5-dollars-2009-helsinki-claim-to-crypto-fame-crypto-city-guide/"
+    url: "https://web.archive.org/web/20250723082018/https://cointelegraph.com/magazine/5050-bitcoin-for-5-dollars-2009-helsinki-claim-to-crypto-fame-crypto-city-guide/"
   - name: "Bitcoin Magazine — Bitcoin's First Trade Now Worth $130 Million"
     url: "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
 relatedEntries:

@@ -23,8 +23,6 @@ secondarySources:
     url: "https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87"
   - name: "Wikipedia (Japanese) — Winny"
     url: "https://ja.wikipedia.org/wiki/Winny"
-  - name: "Supreme Court of Japan ruling (December 19, 2011) — Kaneko Isamu defendant case"
-    url: "https://www.courts.go.jp/app/hanrei_jp/detail2?id=81788"
 relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

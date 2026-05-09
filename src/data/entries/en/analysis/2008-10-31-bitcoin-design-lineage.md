@@ -31,8 +31,6 @@ secondarySources:
     url: "http://www.hashcash.org/papers/hashcash.pdf"
   - name: "Wei Dai — b-money proposal (1998)"
     url: "http://www.weidai.com/bmoney.txt"
-  - name: "Ralph Merkle — Protocols for public key cryptosystems (1980)"
-    url: "https://www.merkle.com/papers/Protocols.pdf"
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 relatedEntries:

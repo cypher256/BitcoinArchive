@@ -19,8 +19,6 @@ tags:
 secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (April 2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
-  - name: "Jameson Lopp — Was Satoshi Greedy? (2022)"
-    url: "https://www.lopp.net/pdf/Was-Satoshi-Greedy.pdf"
 relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation

@@ -18,7 +18,7 @@ tags:
   - "currency-exchange"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 I started implementing a marketplace feature earlier that facilitates offering things for sale and taking orders, it's only half done though. A bit like e-bay but without auctions, just "buy now". Among other things, it would make it easy for anyone to offer currency exchange.

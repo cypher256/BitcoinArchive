@@ -21,7 +21,7 @@ tags:
   - "gavin-andresen"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 relatedEntries:
   - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
   - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key

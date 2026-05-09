@@ -18,7 +18,7 @@ tags:
   - "security"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 It keeps getting extended all the time. If it stopped, an attacker would have time to catch up. Don't worry, empty blocks aren't very big.

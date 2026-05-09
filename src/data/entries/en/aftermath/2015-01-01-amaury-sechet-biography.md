@@ -23,8 +23,6 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
   - name: "Bitcoin ABC — official site"
     url: "https://www.bitcoinabc.org/"
-  - name: "CoinDesk — Bitcoin Cash hard-fork lead developer Amaury Séchet"
-    url: "https://www.coindesk.com/markets/2017/07/29/bitcoin-cash-hard-fork-the-week-ahead/"
 relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2018-11-15-bitcoin-sv-fork

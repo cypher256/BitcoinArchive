@@ -25,7 +25,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Money Electric Is An Insult To Bitcoin"
     url: "https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous"
   - name: "Cointelegraph — Everything HBO's Bitcoin doc got wrong about Peter Todd and Satoshi"
-    url: "https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto"
+    url: "https://web.archive.org/web/20250720202155/https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto"
   - name: "Wikidata — Peter Todd (Q130523424)"
     url: "https://www.wikidata.org/wiki/Q130523424"
 relatedEntries:
@@ -145,7 +145,7 @@ A self-denial is not by itself dispositive — Wright self-claimed and the COPA 
 
 ### 3.4 Bitcoin community technical critique
 
-The documentary was widely criticized by the Bitcoin technical community within days of release. [Bitcoin Magazine](https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous) called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." [Cointelegraph](https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto) catalogued specific factual errors. Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no formal stylometric analysis, and no explanation for how an undergraduate fine-arts student could have designed a novel consensus mechanism.
+The documentary was widely criticized by the Bitcoin technical community within days of release. [Bitcoin Magazine](https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous) called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." [Cointelegraph](https://web.archive.org/web/20250720202155/https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto) catalogued specific factual errors. Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no formal stylometric analysis, and no explanation for how an undergraduate fine-arts student could have designed a novel consensus mechanism.
 
 The technical-community rejection of the documentary's evidence does not by itself rule out the underlying hypothesis — community sentiment is not evidence. But it does mean that the documentary's specific evidentiary case has not survived expert review.
 

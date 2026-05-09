@@ -25,7 +25,7 @@ secondarySources:
   - name: "CoinDesk — Peter Todd Denies He's Satoshi Hours Before HBO Documentary Airs"
     url: "https://www.coindesk.com/business/2024/10/08/former-bitcoin-dev-peter-todd-denies-hes-satoshi-hours-before-hbo-documentary-airs"
   - name: "Cointelegraph — Everything HBO's Bitcoin doc got wrong about Peter Todd and Satoshi"
-    url: "https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto"
+    url: "https://web.archive.org/web/20250720202155/https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto"
   - name: "Bitcoin Magazine — Money Electric Is An Insult To Bitcoin"
     url: "https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous"
   - name: "CNN — Peter Todd denies he invented bitcoin"

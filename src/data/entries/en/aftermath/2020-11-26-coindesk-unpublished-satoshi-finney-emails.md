@@ -23,7 +23,7 @@ tags:
   - "v0.1-release"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Email to Hal Finney (Jan 8, 2009)"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/1/"
+    url: "https://web.archive.org/web/20260113115938/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/1/"
   - name: "Bitcoin News — Researcher Publishes Never-Before-Seen Emails Between Satoshi and Hal Finney"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
   - name: "Chain Bulletin — 'No, CoinDesk, Satoshi's local time zone wasn't UTC+8'"

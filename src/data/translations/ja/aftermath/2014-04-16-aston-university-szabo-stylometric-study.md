@@ -29,7 +29,7 @@ secondarySources:
   - name: "Sci.News — 'Bitcoin: Linguists Name Nick Szabo as Likely Creator of Cryptocurrency'"
     url: "https://www.sci.news/othersciences/linguistics/science-bitcoin-nick-szabo-cryptocurrency-01863.html"
   - name: "Cointelegraph — 'What's in a Name: Linguistic Study Identifies Nick Szabo as the Real Satoshi Nakamoto'"
-    url: "https://cointelegraph.com/news/what_s_in_a_name_linguistic_study_identifies_nick_szabo_as_the_real_satoshi_nakamoto"
+    url: "https://web.archive.org/web/20260125022733/https://cointelegraph.com/news/what_s_in_a_name_linguistic_study_identifies_nick_szabo_as_the_real_satoshi_nakamoto"
   - name: "Aston Institute for Forensic Linguistics — 過去のイベントページ（機関的文脈）"
     url: "https://www.aston.ac.uk/research/forensic-linguistics/events/past-events"
   - name: "David Gerard — 'No, Nick Szabo wasn't Satoshi Nakamoto in 2014 either'（2018 年 12 月、方法論的批判）"

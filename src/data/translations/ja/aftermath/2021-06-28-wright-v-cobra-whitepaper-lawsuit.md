@@ -23,7 +23,7 @@ tags:
   - "lawsuit"
 secondarySources:
   - name: "CoinTelegraph — Craig Wright wins default judgment"
-    url: "https://cointelegraph.com/news/craig-wright-wins-default-judgment-bitcoin-org-must-remove-bitcoin-whitepaper"
+    url: "https://web.archive.org/web/20240602192610/https://cointelegraph.com/news/craig-wright-wins-default-judgment-bitcoin-org-must-remove-bitcoin-whitepaper"
   - name: "Decrypt — Bitcoin inventor whitepaper lawsuit"
     url: "https://decrypt.co/74657/bitcoin-inventor-whitepaper-lawsuit-craig-wright-cobra"
 relatedEntries:

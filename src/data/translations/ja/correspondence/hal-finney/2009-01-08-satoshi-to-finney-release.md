@@ -23,7 +23,7 @@ secondarySources:
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
     note: "CoinDesk、2020年11月26日公開。ハル・フィニーの個人コンピューターの原本ファイルから。2014年3月にフラン・フィニーがナサニエル・ポッパーに提供"
   - name: "Bitcoin.com - Satoshi Archive: Email to Hal Finney"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
+    url: "https://web.archive.org/web/20250518000545/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - sourceforge/2009-01-09-bitcoin-v01-released

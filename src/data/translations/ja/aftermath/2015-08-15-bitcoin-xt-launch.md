@@ -22,8 +22,6 @@ tags:
 secondarySources:
   - name: "BIP 101 — Increase maximum block size"
     url: "https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki"
-  - name: "Coindesk — Mike Hearn and Gavin Andresen Just Forked Bitcoin"
-    url: "https://www.coindesk.com/markets/2015/08/15/mike-hearn-and-gavin-andresen-just-forked-bitcoin/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment

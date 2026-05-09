@@ -22,7 +22,7 @@ tags:
   - "bitcoin-org"
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
-    url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+    url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 ---
 
 In one of the most prescient exchanges in the correspondence, Satoshi warned Malmi about how Bitcoin's privacy properties were being described on the website and in promotional materials:

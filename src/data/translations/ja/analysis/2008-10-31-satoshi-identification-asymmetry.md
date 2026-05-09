@@ -23,16 +23,12 @@ secondarySources:
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
-  - name: "Jameson Lopp — Was Satoshi Greedy? (2022)"
-    url: "https://www.lopp.net/pdf/Was-Satoshi-Greedy.pdf"
   - name: "Strangely Mined Bitcoins — アイスランド大学、PLOS ONE (2021)"
     url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258001"
   - name: "US SEC — Statement on the approval of spot Bitcoin ETPs (2024-01-10)"
     url: "https://www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023"
   - name: "White House — Establishment of the Strategic Bitcoin Reserve (Executive Order, 2025-03-06)"
     url: "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
-  - name: "FBI — Silk Road takedown (October 2013)"
-    url: "https://www.fbi.gov/contact-us/field-offices/newyork/news/press-releases/manhattan-u.s.-attorney-announces-seizure-of-additional-28-million-worth-of-bitcoins-belonging-to-ross-william-ulbricht-alleged-owner-and-operator-of-silk-road-website"
 relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation

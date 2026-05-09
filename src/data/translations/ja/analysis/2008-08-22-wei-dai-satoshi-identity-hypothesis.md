@@ -31,8 +31,6 @@ secondarySources:
     note: "記録された 3 通のメール: サトシ → ウェイ・ダイ（2008 年 8 月 22 日）、ウェイ・ダイ → サトシ（日付未指定、b-money 公開履歴を返答）、サトシ → ウェイ・ダイ（2009 年 1 月 10 日）。サトシの 2009 年 1 月メッセージ: 「b-money 論文で解決しようとしていた目標のほぼ全てを達成している」。"
   - name: "Crypto++ ライブラリ"
     url: "https://www.cryptopp.com/"
-  - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's b-Money"
-    url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-a-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
   - aftermath/2008-08-22-wei-dai-biography
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement

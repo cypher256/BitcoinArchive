@@ -23,8 +23,6 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
   - name: "Wikipedia（日本語）— Winny"
     url: "https://ja.wikipedia.org/wiki/Winny"
-  - name: "最高裁判所判決（2011 年 12 月 19 日）— 金子勇被告人事件"
-    url: "https://www.courts.go.jp/app/hanrei_jp/detail2?id=81788"
 relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

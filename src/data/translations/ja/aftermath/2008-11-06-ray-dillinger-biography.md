@@ -19,8 +19,6 @@ tags:
   - "cypherpunk"
   - "historic"
 secondarySources:
-  - name: "SerHack — 'Alternative Genesis Block' interview (October 2022)"
-    url: "https://serhack.me/articles/alternative-genesis-block/"
   - name: "Ray Dillinger — Bitcoin P2P e-cash paper (Cryptography Mailing List, November 2008)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"
   - name: "CoinDesk — The Man Who Helped Audit Bitcoin's Code Before Launch"

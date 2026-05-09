@@ -24,8 +24,6 @@ tags:
 secondarySources:
   - name: "Skye Grey — 'Satoshi Nakamoto is (probably) Nick Szabo'（LikeInAMirror、2013 年 12 月 1 日、原典）"
     url: "https://likeinamirror.wordpress.com/2013/12/01/satoshi-nakamoto-is-probably-nick-szabo/"
-  - name: "The Guardian — Bitcoin's creator may be Nick Szabo, says new claim（2014 年 3 月 3 日）"
-    url: "https://www.theguardian.com/technology/2014/mar/03/bitcoin-currency-founder-nick-szabo-denies"
   - name: "Wikipedia — Nick Szabo（Skye Grey 調査とサボの否定を記載）"
     url: "https://en.wikipedia.org/wiki/Nick_Szabo"
 relatedEntries:

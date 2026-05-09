@@ -18,7 +18,7 @@ tags:
   - "open-source"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 > I reached the same conclusions about client only nodes and this is what I've been implementing. I'm nearly there ..... I have block chain download, parsing and verification of the blocks/transactions done, with creation of spend transactions almost done.

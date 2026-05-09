@@ -24,12 +24,8 @@ secondarySources:
     url: "https://bitcoinmagazine.com/culture/the-man-behind-bitcoin-pizza-day-is-more-than-a-meme"
   - name: "The New York Times — Bitcoin Pizza Day (May 2021)"
     url: "https://www.nytimes.com/2021/05/22/business/bitcoin-pizza-day.html"
-  - name: "Anderson Cooper's 60 Minutes — Bitcoin Pizza Interview"
-    url: "https://www.cbsnews.com/news/bitcoin-pizza-10000-bitcoin-two-pizzas-60-minutes-2019-05-19/"
   - name: "CoinDesk — Laszlo Hanyecz and the Two Pizzas"
     url: "https://www.coindesk.com/markets/2020/05/22/10-years-after-laszlo-hanyecz-bought-pizza-with-10k-bitcoin-he-has-no-regrets"
-  - name: "Lightning Network Pizza Transaction (February 2018)"
-    url: "https://bitcoinmagazine.com/articles/laszlo-hanyecz-spends-bitcoin-pizza-again-time-lightning-network"
 relatedEntries:
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day

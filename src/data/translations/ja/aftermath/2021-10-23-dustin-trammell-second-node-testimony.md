@@ -20,7 +20,7 @@ tags:
   - "dustin-trammell"
 secondarySources:
   - name: "Cointelegraph — The first days of Bitcoin and Dustin D. Trammell's emails with Satoshi Nakamoto (March 28, 2021)"
-    url: "https://cointelegraph.com/news/the-first-days-of-bitcoin-and-dustin-d-trammell-s-emails-with-satoshi-nakamoto"
+    url: "https://web.archive.org/web/20231217064107/https://cointelegraph.com/news/the-first-days-of-bitcoin-and-dustin-d-trammell-s-emails-with-satoshi-nakamoto"
   - name: "Bitcoin Wiki — Trammell/Nakamoto Emails"
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Bitcoin Magazine — Dustin Trammell On The Original White Paper Day (October 30, 2022)"

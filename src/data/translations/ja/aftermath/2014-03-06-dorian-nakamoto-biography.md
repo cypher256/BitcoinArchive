@@ -17,8 +17,6 @@ tags:
   - "newsweek"
   - "denied"
 secondarySources:
-  - name: "Associated Press — Dorian Nakamoto denial (March 2014)"
-    url: "https://apnews.com/article/8aa53f3e7be44e85945e284ab9942ce0"
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
 relatedEntries:

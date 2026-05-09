@@ -18,9 +18,6 @@ tags:
   - "court-ruling"
   - "identity"
   - "uk-high-court"
-secondarySources:
-  - name: "COPA Official Statement"
-    url: "https://www.opencrypto.org/copa-v-wright/"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"

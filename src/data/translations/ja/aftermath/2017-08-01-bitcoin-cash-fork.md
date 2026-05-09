@@ -25,8 +25,6 @@ tags:
 secondarySources:
   - name: "Bitcoin Cash — block 478558 explorer view"
     url: "https://blockchair.com/bitcoin-cash/block/478558"
-  - name: "Coindesk — Bitcoin Cash Hard Fork: Currency Up and Running"
-    url: "https://www.coindesk.com/markets/2017/08/02/bitcoin-cash-hard-fork-cryptocurrency-now-up-and-running/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss

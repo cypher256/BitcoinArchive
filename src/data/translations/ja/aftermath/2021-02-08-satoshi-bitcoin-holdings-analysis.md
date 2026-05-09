@@ -23,8 +23,6 @@ secondarySources:
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "Sergio Demian Lerner - The Patoshi Mining Machine"
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
-  - name: "Whale Alert Satoshi analysis"
-    url: "https://whale-alert.io/satoshi"
 relatedEntries:
   - aftermath/2013-04-17-sergio-demian-lerner-biography
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis

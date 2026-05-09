@@ -31,8 +31,6 @@ secondarySources:
     note: "Three documented emails: Satoshi → Wei Dai (August 22, 2008); Wei Dai → Satoshi (date not specified, response with b-money publication history); Satoshi → Wei Dai (January 10, 2009). Satoshi's January 2009 message: 'achieves nearly all the goals you set out to solve in your b-money paper.'"
   - name: "Crypto++ Library"
     url: "https://www.cryptopp.com/"
-  - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's b-Money"
-    url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-a-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
   - aftermath/2008-08-22-wei-dai-biography
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement

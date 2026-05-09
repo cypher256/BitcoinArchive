@@ -28,8 +28,6 @@ secondarySources:
     url: "https://github.com/bitcoin/bitcoin/pull/4641"
   - name: "libsecp256k1 — initial commit (Pieter Wuille, March 2013)"
     url: "https://github.com/bitcoin-core/secp256k1"
-  - name: "Bitcoin Wiki — Bitcoin v0.1.0"
-    url: "https://en.bitcoin.it/wiki/Bitcoin_0.1"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry

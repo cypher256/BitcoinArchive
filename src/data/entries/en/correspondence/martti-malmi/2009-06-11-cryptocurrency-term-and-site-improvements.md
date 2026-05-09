@@ -21,7 +21,7 @@ tags:
   - "bitcoin-org"
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
-    url: "https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+    url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 ---
 
 In this email from June 11, 2009, Satoshi praised the improvements Malmi had made to the bitcoin.org website. He again requested removal of investment-related language, consistent with his earlier stance.

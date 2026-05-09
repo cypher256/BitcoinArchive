@@ -21,8 +21,6 @@ tags:
   - "bbc"
   - "economist"
 secondarySources:
-  - name: "The Economist — Craig Wright claims to be Satoshi Nakamoto"
-    url: "https://www.economist.com/briefing/2016/05/02/craig-steven-wright-claims-to-be-satoshi-nakamoto"
   - name: "Vice — Craig Wright's New Evidence Is Worthless"
     url: "https://www.vice.com/en/article/craig-wright-satoshi-nakamoto-evidence-signature-is-worthless/"
   - name: "Fortune — Bitcoin's 'Creator' Has Finally Unmasked Himself. (Maybe.)"

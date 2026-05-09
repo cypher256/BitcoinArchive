@@ -24,8 +24,6 @@ secondarySources:
     url: "https://www.bitgo.com/"
   - name: "Mike Belshe — SegWit2x cancellation post (Bitcoin-segwit2x mailing list)"
     url: "https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html"
-  - name: "Forbes — How BitGo Helped MakerDAO Make Bitcoin Tradable"
-    url: "https://www.forbes.com/sites/michaeldelcastillo/2019/05/13/from-bitcoin-custody-to-defi-bitgos-mike-belshe-on-the-future-of-finance/"
 relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy

@@ -20,7 +20,7 @@ tags:
   - "testnet"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 > That's great! The first client-only implementation will really start to move things to the next step. Is it going to be open source, or Google proprietary?

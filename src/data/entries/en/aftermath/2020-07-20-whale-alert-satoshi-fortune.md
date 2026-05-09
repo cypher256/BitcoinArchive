@@ -23,7 +23,7 @@ secondarySources:
   - name: "CoinDesk — Whale Alert Identifies 1.125 Million BTC as Satoshi's Stash"
     url: "https://www.coindesk.com/tech/2020/07/20/whale-alert-identifies-1125-million-btc-as-satoshis-stash/"
   - name: "Cointelegraph — $10.9 Billion Bitcoin Stash Proves Satoshi Is Still the Biggest Whale"
-    url: "https://cointelegraph.com/news/109-billion-bitcoin-stash-proves-satoshi-is-still-the-biggest-whale"
+    url: "https://web.archive.org/web/20260315115000/https://cointelegraph.com/news/109-billion-bitcoin-stash-proves-satoshi-is-still-the-biggest-whale"
   - name: "Sergio Demian Lerner — The Well Deserved Fortune of Satoshi Nakamoto (2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "Sergio Demian Lerner — The Patoshi Mining Machine (August 22, 2020)"

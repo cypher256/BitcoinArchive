@@ -35,7 +35,7 @@ secondarySources:
   - name: "CoinJournal — Janssens reveals Bitcoin Foundation broke (April 2015)"
     url: "https://coinjournal.net/news/recently-elected-board-member-olivier-janssens-reveals-all-bitcoin-foundation-broke-gavin-seems-to-confirm/"
   - name: "Cointelegraph — Bitcoin Foundation Is 'Effectively Bankrupt'"
-    url: "https://cointelegraph.com/news/bitcoin-foundation-is-effectively-bankrupt"
+    url: "https://web.archive.org/web/20260315011949/https://cointelegraph.com/news/bitcoin-foundation-is-effectively-bankrupt"
 relatedEntries:
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss

@@ -23,8 +23,6 @@ secondarySources:
     url: "https://www.hbo.com/movies/money-electric-the-bitcoin-mystery"
   - name: "Gregory Maxwell — Hacker Newsコメント（retepの逆綴りに気づくのに10年近くかかった）"
     url: "https://news.ycombinator.com/item?id=41784567"
-  - name: "Bloomberg — Peter Toddインタビュー（2024年10月）"
-    url: "https://www.bloomberg.com/news/videos/2024-10-09/peter-todd-denies-being-bitcoin-creator-satoshi-nakamoto"
 relatedEntries:
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify

@@ -18,8 +18,6 @@ tags:
   - "memory-dealers"
   - "block-size-war"
 secondarySources:
-  - name: "Bitcoin Magazine — Roger Ver Profile"
-    url: "https://bitcoinmagazine.com/business/roger-ver-bitcoin-jesus"
   - name: "U.S. Department of Justice — Roger Ver indictment (2024)"
     url: "https://www.justice.gov/opa/pr/early-bitcoin-investor-charged-tax-fraud"
   - name: "Reuters — Bitcoin advocate Roger Ver arrested in Spain (April 30, 2024)"

@@ -21,7 +21,7 @@ tags:
   - "recollection"
 secondarySources:
   - name: "Cointelegraph - Satoshi Invented GPU Mining to Defend the Network"
-    url: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
+    url: "https://web.archive.org/web/20250505211557/https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 relatedEntries:
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code

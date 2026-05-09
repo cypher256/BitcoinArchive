@@ -32,10 +32,6 @@ secondarySources:
     url: "https://mempool.space/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
   - name: "Bitcoin Genesis Block — ブロック 0 (blockstream.info)"
     url: "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
-  - name: "Satoshi's final known BitcoinTalk post (December 12, 2010)"
-    url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/546/"
-  - name: "Satoshi's final known email to Gavin Andresen (April 26, 2011)"
-    url: "https://satoshi.nakamotoinstitute.org/emails/gavin-andresen/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture

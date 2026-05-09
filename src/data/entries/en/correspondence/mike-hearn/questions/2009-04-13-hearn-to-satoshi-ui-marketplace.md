@@ -18,7 +18,7 @@ tags:
   - "marketplace"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
-    url: "https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+    url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 ---
 
 Oh yes, of course, that's fundamental. Silly me. Thanks for your answers. I'd recommend being over-explicit for early versions of the software, something like "Global chain is currently %d blocks long".

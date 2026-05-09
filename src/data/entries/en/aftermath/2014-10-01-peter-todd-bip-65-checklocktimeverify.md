@@ -20,7 +20,7 @@ secondarySources:
   - name: "Bitcoin Wiki — BIP 0065"
     url: "https://en.bitcoin.it/wiki/BIP_0065"
   - name: "Cointelegraph — Peter Todd and the Expansion of Bitcoin"
-    url: "https://cointelegraph.com/news/peter-todd-and-the-expansion-of-bitcoin"
+    url: "https://web.archive.org/web/20260217210457/https://cointelegraph.com/news/peter-todd-and-the-expansion-of-bitcoin"
   - name: "Bitcoin-dev mailing list — BIP 65 discussion"
     url: "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-November/006948.html"
 relatedEntries:
