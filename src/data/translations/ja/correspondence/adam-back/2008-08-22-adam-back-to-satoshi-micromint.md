@@ -23,7 +23,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21）に5通の完全なメールチェーンが含まれていた。論文を読まなかったことへの後悔はCointelegraphのインタビューで語られた"
   - name: "Cointelegraph - Adam Back on Satoshi Emails"
-    url: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
+    url: "https://web.archive.org/web/20260216001524/https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 translationStatus: complete
 ---
 

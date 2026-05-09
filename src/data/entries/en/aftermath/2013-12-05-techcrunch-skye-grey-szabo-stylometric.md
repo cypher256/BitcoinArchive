@@ -66,7 +66,7 @@ John Biggs's TechCrunch piece treated the investigation as the most rigorous Sat
 
 **Szabo's response:**
 
-Szabo did not respond publicly to the Skye Grey article at the time of publication. When *The Guardian* covered the hypothesis [in March 2014](https://www.theguardian.com/technology/2014/mar/03/bitcoin-currency-founder-nick-szabo-denies), Szabo denied the identification. The denial pattern — third-person Bit Gold framing in the [May 2011 Unenumerated post "Bitcoin, what took ye so long?"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/), repeated denials to Frisby (2014), Popper (2015), and Tim Ferriss (2017) — has remained consistent.
+Szabo did not respond publicly to the Skye Grey article at the time of publication. When *The Guardian* covered the hypothesis in March 2014, Szabo denied the identification. The denial pattern — third-person Bit Gold framing in the [May 2011 Unenumerated post "Bitcoin, what took ye so long?"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/), repeated denials to Frisby (2014), Popper (2015), and Tim Ferriss (2017) — has remained consistent.
 
 **Skye Grey's identity:**
 

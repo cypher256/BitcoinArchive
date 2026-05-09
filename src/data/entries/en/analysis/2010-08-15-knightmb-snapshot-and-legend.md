@@ -100,7 +100,7 @@ This Archive's [biographical entry on knightmb](/BitcoinArchive/participants/kni
 
 ## 6. Timekoin and after
 
-After the dense 2010 BitcoinTalk activity catalogued in this Archive, knightmb's footprint in the Archive's source set thins. He continued to post on BitcoinTalk into the years that follow, and is widely associated outside the Archive with the development of [Timekoin](https://en.wikipedia.org/wiki/Timekoin), an alternative cryptocurrency that took a different approach to consensus. The Timekoin project and its later trajectory sit outside the scope of this Archive's primary sources; the link is noted here only because it is a recurring element of how knightmb is described in secondary biographies.
+After the dense 2010 BitcoinTalk activity catalogued in this Archive, knightmb's footprint in the Archive's source set thins. He continued to post on BitcoinTalk into the years that follow, and is widely associated outside the Archive with the development of Timekoin, an alternative cryptocurrency that took a different approach to consensus. The Timekoin project and its later trajectory sit outside the scope of this Archive's primary sources; the link is noted here only because it is a recurring element of how knightmb is described in secondary biographies.
 
 ## 7. What the silence preserves
 

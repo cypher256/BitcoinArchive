@@ -3,7 +3,7 @@ title: "Laszlo Hanyecz recalls Satoshi sharing his own defensive GPU mining code
 date: 2010-05-17T00:00:00Z
 type: "article"
 source: "cointelegraph"
-sourceUrl: "https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
+sourceUrl: "https://web.archive.org/web/20250505211557/https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev"
 sourceNote: "Based on Laszlo Hanyecz's public statements in interviews with Cointelegraph and other outlets. The full private email correspondence has not been publicly released; the quotes here are Hanyecz's recall of what Satoshi said and shared."
 author: "Laszlo Hanyecz"
 participants:

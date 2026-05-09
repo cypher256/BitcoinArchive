@@ -39,15 +39,18 @@ function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Replace the URL in `url: "OLD"` lines with NEW (escapes for YAML).
-// Also replaces inline markdown links `(OLD)` with `(NEW)`.
+// Replace the URL in `url: "OLD"` and `sourceUrl: "OLD"` lines with NEW
+// (preserving the field name). Also replaces inline markdown links
+// `(OLD)` with `(NEW)`.
 function replaceUrl(content, oldUrl, newUrl) {
-  const re1 = new RegExp(`url:\\s*"${escapeRegex(oldUrl)}"`, 'g');
-  const re2 = new RegExp(`url:\\s*'${escapeRegex(oldUrl)}'`, 'g');
+  // (?:source)?[Uu]rl: covers both `url:` (secondarySources items) and
+  // `sourceUrl:` (top-level frontmatter). The captured prefix is preserved.
+  const re1 = new RegExp(`(\\b(?:source)?[Uu]rl:\\s*)"${escapeRegex(oldUrl)}"`, 'g');
+  const re2 = new RegExp(`(\\b(?:source)?[Uu]rl:\\s*)'${escapeRegex(oldUrl)}'`, 'g');
   const re3 = new RegExp(`\\(${escapeRegex(oldUrl)}\\)`, 'g');
   let next = content;
-  next = next.replace(re1, `url: "${newUrl}"`);
-  next = next.replace(re2, `url: "${newUrl}"`);
+  next = next.replace(re1, `$1"${newUrl}"`);
+  next = next.replace(re2, `$1"${newUrl}"`);
   next = next.replace(re3, `(${newUrl})`);
   return next;
 }

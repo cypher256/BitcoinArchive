@@ -3,7 +3,7 @@ title: "Adam Back's retrospective on his early interaction with Satoshi"
 date: 2024-02-21T00:00:00Z
 type: "article"
 source: "cointelegraph"
-sourceUrl: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
+sourceUrl: "https://web.archive.org/web/20260216001524/https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 author: "Adam Back"
 participants:
   - name: "Adam Back"

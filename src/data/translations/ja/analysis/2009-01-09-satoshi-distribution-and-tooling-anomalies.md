@@ -3,7 +3,7 @@ title: "なぜサトシはビットコインを `.rar` で配ったのか — Wa
 date: 2009-01-09T00:00:00Z
 type: "analysis"
 source: "sourceforge"
-sourceUrl: "https://sourceforge.net/projects/bitcoin/files/Bitcoin/"
+sourceUrl: "https://web.archive.org/web/20250916214824/https://sourceforge.net/projects/bitcoin/files/"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"

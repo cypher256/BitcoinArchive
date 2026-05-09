@@ -23,7 +23,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Filed as exhibit evidence in the COPA v. Craig Wright trial, London, February 2024. Adam Back's Second Witness Statement (document C/21) included the complete five-email chain. Back's regret about not reading the paper was discussed in a Cointelegraph interview"
   - name: "Cointelegraph - Adam Back on Satoshi Emails"
-    url: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
+    url: "https://web.archive.org/web/20260216001524/https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 ---
 
 *[Editor: Filename retains the original 2008-08-22 form for slug stability; the actual send timestamp is 2008-08-21 18:17:17 UTC (19:17:17 UTC+01:00 per the email header).]*
