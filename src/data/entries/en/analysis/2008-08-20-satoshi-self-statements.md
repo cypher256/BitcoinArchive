@@ -93,7 +93,7 @@ All three identity claims appear together on a single artifact and nowhere else 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
 | "Unfortunately, I can't receive incoming connections from where I am" | [→ Hal Finney](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (or 12, disputed) | Operational self-disclosure; analyzed in [launch-environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) |
-| "Hal isn't currently actively involved... pretty busy with work, and need a break from it after 18 months development" | [→ Martti Malmi, 2009-07-21](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | Re-confirms 18-month timeline and self-discloses fatigue |
+| "I'm not going to be much help right now either, pretty busy with work, and need a break from it after 18 months development" | [→ Martti Malmi, 2009-07-21](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | Re-confirms 18-month timeline and self-discloses fatigue. (The preceding sentences in the same email describe Hal Finney's reduced involvement; Satoshi's "either" pivots to his own state.) |
 | "That's where I have less expertise" (regarding Linux/FreeBSD testing) | BitcoinTalk forum post, December 2009 | 2009-12 | Cross-platform expertise gap |
 | "[Gavin is] technically much more Linux capable than me" | private email to Gavin Andresen, December 2010 | 2010-12 | Comparative self-evaluation by Satoshi (his own assessment of his Linux skill relative to Gavin's) |
 
@@ -101,6 +101,8 @@ All three identity claims appear together on a single artifact and nowhere else 
 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
+| "[I'm] working on other projects" (paraphrase; verbatim text not published) | [→ Gavin Andresen, September 2010](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | 2010-09 (exact day not in public record) | Earliest documented signal of intent to step back. The message itself is referenced in Andresen's later interviews but has not been published verbatim |
+| "I'm doing a few more things, then I plan to pass the baton" | [BitcoinTalk topic-2228, final public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | 2010-12-12 | Final known public post on BitcoinTalk. Foreshadows the private departure announcements four months later |
 | "I've moved on to other things. It's in good hands with [Gavin](/BitcoinArchive/participants/gavin-andresen/) and everyone" | [→ Mike Hearn, 2011-04-23](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 2011-04-23 | Departure announcement |
 | "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle" | [→ Gavin Andresen, 2011-04-26](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | Self-perception statement; rejection of the "shadowy figure" frame |
 | "I've moved on to other things and will probably be unavailable" | [→ Gavin Andresen, 2011-04-26](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | Final departure announcement |
@@ -145,7 +147,9 @@ This sparseness is itself a notable observation: in an age of vocal cypherpunk a
 
 ### 2.5 Departure statements
 
-The 2011 farewell sequence (Hearn 2011-04-23 + Gavin 2011-04-26) is consistent and brief:
+The departure trajectory spans seven months in the public record. The earliest documented signal is the September 2010 private message to Gavin Andresen ("working on other projects"); the public turning point is the December 12, 2010 BitcoinTalk post closing with "I'm doing a few more things, then I plan to pass the baton" — Satoshi's last known public statement. The 2011 April farewells (Hearn 2011-04-23, Gavin 2011-04-26) are the formal close of a process that had already been visible for months.
+
+The 2011 sequence itself is consistent and brief:
 
 - An assertion of completion: leadership transferred, project in good hands.
 - A specific request: do not frame me as "a mysterious shadowy figure."
