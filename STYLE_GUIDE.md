@@ -4,9 +4,29 @@ Internal editorial rules shared across Bitcoin Institute.
 
 ## Purpose
 
-This file defines cross-language editorial conventions that should stay
-consistent across the archive. Language-specific rules belong in companion
-files such as `STYLE_GUIDE_JA.md`.
+This file defines cross-language editorial conventions for Bitcoin
+Institute content. It is the project's **content and configuration
+conventions** — the editorial equivalent of a coding-standards
+document.
+
+**What this guide is.** Editorial judgments humans must apply when
+authoring or editing content: how to title an entry, when an article
+warrants a standalone aftermath, how to handle quotation form across
+languages, which marker form belongs to which role, and so on.
+Conventions for frontmatter and configuration. Cross-cutting
+decisions that span multiple entries.
+
+**What this guide is not.** Not a design document for the
+implementation. Not a manual for "how the renderer / script works."
+Not a duplicate of rules already enforced by scripts (the script is
+the rule there; the guide need not restate the enforcement
+mechanism). When this guide references file paths, script names,
+or component names, those references are pointers for editors who
+want to look deeper — not a spec maintained alongside the
+implementation.
+
+Language-specific rules belong in companion files such as
+`STYLE_GUIDE_JA.md`.
 
 ## Scope
 
@@ -439,13 +459,30 @@ override the generic templates where they conflict.
   - ✓ `Satoshi's reply to Adam Back about b-money citation (August 2008)`
   - ✓ `Satoshi's final email to Mike Hearn: "I've moved on to other things"`
 
-#### Aftermath / article / analysis
+#### Aftermath / article
 
-- Location: `src/data/entries/en/aftermath/*`, `.../analysis/*`
-- Preserve the original article or analysis title. Light contextual
-  prefixes/suffixes are acceptable when the original title is ambiguous
-  on its own.
+- Location: `src/data/entries/en/aftermath/*`
+- Preserve the original article title. Light contextual prefixes /
+  suffixes are acceptable when the original title is ambiguous on
+  its own.
   - ✓ `Jameson Lopp analyzes whether Satoshi Nakamoto was a 'greedy' miner`
+
+#### Analysis (Bitcoin Institute editorial readings)
+
+- Location: `src/data/entries/en/analysis/*`
+- Treat analysis pages as landing pages: SEO / AIO weight is highest,
+  evocative register is the default.
+- Use the archetype `{Subject}: {concrete enumeration} and {the stake}`
+  (see § Register below). Reach for descriptive only when the subject
+  doesn't lend itself.
+- Canonical search keywords (`Satoshi Nakamoto`, `Bitcoin`, named
+  candidates, dated events, named documents) must appear in the title.
+- Primary-source titles also need SEO but stay descriptive (historical
+  Subject preserved); evocative is for analysis only.
+- Examples:
+  - `Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century`
+  - `Bitcoin's family tree: 6 protocol forks, 4 altcoin lineages, and
+    the chain that endured (2009-2024)`
 
 #### Biographies
 
@@ -611,18 +648,11 @@ Good candidates:
 
 ### Rules
 
-1. **No data-side cap; ordered by priority.** `relatedEntries` accepts
-   any number of items. The list is treated as **priority-ordered**: the
-   entry at index 0 is the most important relation, the entry at the end
-   is the least important. The renderer (`RelatedEntries.astro`) selects
-   the top 10 items for display (manual entries always survive this cap
-   first; auto-derived candidates from `src/data/derived-related.json`
-   fill any remaining slots). Display order is then chronological. If
-   the manual list ever exceeds 10, the lowest-priority items are not
-   shown but remain in the data layer for future reorganization,
-   downstream tooling, and reverse-link integrity.
-2. **Priority ordering convention.** Place items in this order so that
-   the top-of-list slots reach the display layer first:
+1. **No data-side cap; data-layer order is editorial priority.**
+   `relatedEntries` accepts any number of items. Order by editorial
+   importance (index 0 = most important).
+2. **Priority ordering convention (editorial documentation).** Place
+   items in this order:
    1. Pair entry / direct counterpart (e.g. `identity-hypotheses-overview`
       ↔ `anonymity-architecture`).
    2. Biography or canonical catalog entry for the central participant.
