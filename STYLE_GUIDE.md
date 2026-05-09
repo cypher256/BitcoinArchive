@@ -192,6 +192,92 @@ carries a useful `note`), move the `note` text into the entry's
 an entry's `sourceUrl` matches any of its own `secondarySources[].url`.
 Wired into `npm run check` in `--strict` mode.
 
+## External Link Rot Handling
+
+External URLs decay over time. The archive's external citations --
+news articles, Wikipedia pages, blog posts, third-party email
+mirrors -- accumulate dead links as cited sites restructure, delete
+articles, expire domains, or shut down. The rules below codify how
+to detect, verify, and repair such rot without losing information
+or fabricating it.
+
+### Audit cadence
+
+- `npm run audit:external-links` scans every external URL in body +
+  frontmatter and writes a per-URL verdict to
+  `temp/dead-external-links-{date}.md` (categories: dead, client-error,
+  server-error, error, redirect, ok). Scan time ~50s for ~3700 URLs.
+- Run before major releases. Run incrementally after large external-
+  citation additions (new analysis or aftermath wave).
+- Not wired into `npm run check` because it makes network calls and
+  is too slow / flaky for the strict gate.
+
+### Status code interpretation
+
+| Status | Meaning | Action |
+|---|---|---|
+| 410 Gone | Server says "permanently removed" | Repair immediately (see verification below) |
+| 404 Not Found | May be permanent OR transient (CDN miss, path change, geo-block) | Verify via Wayback before action |
+| 5xx | Server-side error | Transient; skip and recheck on next audit |
+| timeout / connection refused | Network failure | Transient; skip and recheck on next audit |
+
+### Verification protocol (per dead URL)
+
+1. **Confirm the 404 with a real browser User-Agent.** Some sites
+   block default `curl` UA and return 404 to non-browsers while
+   serving the page to humans.
+
+   ```sh
+   curl -sIL -A "Mozilla/5.0 ..." -o /dev/null -w "%{http_code}\n" "$URL"
+   ```
+
+2. **Check Wayback via the DIRECT URL, not the wayback-available API.**
+
+   ✓ Direct URL form (reliable):
+   ```
+   https://web.archive.org/web/2*/<URL>
+   ```
+   Follow the 302 to the actual snapshot. Confirms a snapshot exists
+   and returns the snapshot URL.
+
+   ✗ The `archive.org/wayback/available?url=...` API frequently
+   returns `archived_snapshots: {}` even for URLs Wayback has
+   captured. **Do not trust empty results from this API as evidence
+   that a URL never existed.** Use the direct URL form instead.
+
+3. **Open the snapshot and verify content.** A 404 page can itself
+   be archived by Wayback; finding "a snapshot" is not the same as
+   finding "the cited content." Heuristics:
+
+   - Snapshot HTML size > 5 KB (404 pages are usually small).
+   - Page title does not contain "404" / "Page Not Found" / "Error".
+   - Cited names, dates, or terms appear in the snapshot body.
+
+### Action by category
+
+| Position | Snapshot found + content valid | No snapshot or content invalid |
+|---|---|---|
+| `secondarySources[]` | Replace `url` with the Wayback URL; preserve `name` | Remove the entry. The primary source (`sourceUrl`) still carries the citation; the dead secondary mirror was redundant. |
+| `sourceUrl` | Replace with the Wayback URL | Reconsider the entry's existence: a primary source with no recoverable URL is unsupported. Delete the entry, or keep it with an explicit `note` documenting that the original URL is dead and no replacement was found. |
+| Inline link in body prose | Replace with the Wayback URL | If no replacement exists, the claim the link supports may itself need to be removed (per [Technical-Review Robustness](#technical-review-robustness)). Do not silently remove the link while leaving the unsourced claim. |
+
+### Anti-patterns
+
+- ❌ **Trust the wayback-available API alone** to declare a URL never
+  existed. The API is unreliable; use the direct Wayback URL.
+- ❌ **Bulk-delete `secondarySources`** without verifying Wayback
+  first. Some dead URLs are recoverable.
+- ❌ **Replace with a Wayback URL** without opening the snapshot to
+  confirm the cited content is preserved. The snapshot may be of a
+  404 page that was itself archived.
+- ❌ **Delete a citation but keep the claim it supported.** If the
+  source is irrecoverable, the claim becomes unsourced and should be
+  removed too, per `secondarySources` discipline.
+- ❌ **Promote a single audit run to permanent verdict.** A URL that
+  is dead today may be transient. For ambiguous cases (404 with
+  recent Wayback success), wait for a second audit run before
+  repairing.
+
 ## Medium vs Archive: name the source, not "the archive"
 
 "The archive" (and 「アーカイブ」 in Japanese content) refers to *this*
