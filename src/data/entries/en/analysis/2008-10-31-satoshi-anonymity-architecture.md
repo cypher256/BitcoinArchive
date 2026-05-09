@@ -1,5 +1,5 @@
 ---
-title: "How did Satoshi Nakamoto stay anonymous? The layered architecture of an unidentifiable pseudonym"
+title: "The anonymity nobody could strip — the six-layered wall Satoshi built"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"

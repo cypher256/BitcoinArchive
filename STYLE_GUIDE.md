@@ -481,8 +481,8 @@ override the generic templates where they conflict.
   Subject preserved); evocative is for analysis only.
 - Examples:
   - `Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century`
-  - `Bitcoin's family tree: 6 protocol forks, 4 altcoin lineages, and
-    the chain that endured (2009-2024)`
+  - `Bitcoin's family tree: forks, altcoins, and the mainline Bitcoin
+    that endured`
 
 #### Biographies
 
@@ -513,7 +513,7 @@ The baseline-criteria table above governs *what must be present* in a title (ide
 A useful archetype is **`{Subject}: {concrete enumeration} and {the stake}`** — a strong subject phrase up front, a colon, and a body that lists concrete countables (numbered groups, dated events, named participants) followed by the stake of the entry. This archetype reads aloud naturally and gives both human readers and AI systems a precise citation label. Example shape:
 
 - `Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century`
-- `Bitcoin's family tree: 6 protocol forks, 4 altcoin lineages, and the chain that endured (2009-2024)`
+- `Bitcoin's family tree: forks, altcoins, and the mainline Bitcoin that endured`
 
 The archetype is a target shape, not a template. If the entry's subject does not lend itself to a list-and-stake construction, force-fitting it produces titles that read as marketing rather than as catalog entries. Use a flat descriptive title in that case.
 

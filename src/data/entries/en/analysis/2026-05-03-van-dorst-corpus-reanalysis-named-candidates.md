@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin Institute reanalysis of van Dorst's Satoshi stylometry: 5 named candidates ranked against 12,739 mailing-list authors (May 2026)"
+title: "Five top contenders in a pool of 12,739 — Bitcoin Institute reanalyzes van Dorst's Satoshi stylometry"
 date: 2026-05-03T00:00:00Z
 type: "analysis"
 source: "github"

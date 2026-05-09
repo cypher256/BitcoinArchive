@@ -1,5 +1,5 @@
 ---
-title: "「Bitcoin Core」 へのリブランドが Bitcoin の権威構造に与えた影響"
+title: "「Bitcoin」 を「Bitcoin Core」 と分けた日 — 2014 年のリブランドが開いた権威の亀裂"
 date: 2014-03-19T00:00:00Z
 type: "analysis"
 source: "github"

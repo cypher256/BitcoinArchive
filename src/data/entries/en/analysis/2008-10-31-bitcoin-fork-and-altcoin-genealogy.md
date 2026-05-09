@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin's family tree: 6 protocol forks, 4 altcoin lineages, and the chain that endured (2009-2024)"
+title: "Bitcoin's family tree: forks, altcoins, and the mainline Bitcoin that endured"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"

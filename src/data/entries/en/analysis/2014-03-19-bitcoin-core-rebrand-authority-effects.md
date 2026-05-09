@@ -1,5 +1,5 @@
 ---
-title: "The 'Bitcoin Core' rebrand and its effects on Bitcoin's authority structure"
+title: "The day Bitcoin was renamed — how the 2014 rebrand cracked open Bitcoin's authority"
 date: 2014-03-19T00:00:00Z
 type: "analysis"
 source: "github"

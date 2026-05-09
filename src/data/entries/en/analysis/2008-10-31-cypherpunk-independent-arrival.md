@@ -1,5 +1,5 @@
 ---
-title: "What did Satoshi know? Bitcoin's arrival at cypherpunk core ideas"
+title: "Satoshi was not a cypherpunk — and reached the cypherpunk core anyway"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "metzdowd"

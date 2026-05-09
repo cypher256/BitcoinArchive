@@ -1,5 +1,5 @@
 ---
-title: "What did Satoshi say about himself? Every self-reference (2008-2011)"
+title: "What did Satoshi say about himself? — a man who spoke of technology, not of himself"
 date: 2008-08-20T00:00:00Z
 type: "analysis"
 source: "bitcoin-magazine"
