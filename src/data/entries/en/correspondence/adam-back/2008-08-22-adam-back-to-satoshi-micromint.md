@@ -1,6 +1,6 @@
 ---
 title: "Re: Hashcash citation — suggesting MicroMint paper"
-date: 2008-08-22T00:00:01Z
+date: 2008-08-21T18:17:17Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
@@ -26,10 +26,12 @@ secondarySources:
     url: "https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 ---
 
-In this fourth email of the chain, Adam Back suggested another paper Satoshi might find interesting: "MicroMint" by Ron Rivest et al. (1996), which explored extracting k-way hash collisions rather than the partial pre-images used by Hashcash and Bitcoin.
+*[Editor: Filename retains the original 2008-08-22 form for slug stability; the actual send timestamp is 2008-08-21 18:17:17 UTC (19:17:17 UTC+01:00 per the email header).]*
 
-*[Context: Back suggested the MicroMint paper as a related work on computational puzzles for digital currency.]*
+In the fourth email of the chain, Adam Back's second reply suggested another related paper: "PayWord and MicroMint" by Ron Rivest and Adi Shamir (1996), which proposed extracting k-way hash collisions for digital coin scarcity rather than the partial pre-images used by Hashcash and later by Bitcoin. The load-bearing self-admission in this email — the line Back later cited in the Cointelegraph interview as "probably my biggest mistake" — was:
 
-Notably, Back had still not read Satoshi's attached draft paper (ecash.pdf) at this point. He later publicly acknowledged this oversight in a Cointelegraph interview, saying it was "probably my biggest mistake." Back would not actively engage with Bitcoin until 2013, missing the opportunity to be involved from the very beginning despite being one of the first people Satoshi contacted.
+> Sorry still not read your paper yet,
 
-The exchange ended here for nearly five months, until Satoshi wrote again on January 10, 2009 — the day after Bitcoin's public launch.
+Despite being among the first people Satoshi contacted, Back did not engage with the attached draft at this point. The chain went silent for nearly five months until Satoshi wrote again on [2009-01-10](/BitcoinArchive/entries/correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch/) — the day after Bitcoin's v0.1 release. Back would not actively engage with Bitcoin until 2013; the broader story of that delay is documented in the [Adam Back biography](/BitcoinArchive/entries/aftermath/2008-08-20-adam-back-biography/).
+
+*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
