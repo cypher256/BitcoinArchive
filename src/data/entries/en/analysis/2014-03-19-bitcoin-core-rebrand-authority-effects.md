@@ -62,7 +62,7 @@ Under the reading offered here, the answer is yes — but the claim is narrower 
 
 ### 1.1 Names before December 2013
 
-From v0.1 (January 9, 2009) through 2013, the official software was referred to in three overlapping ways:
+From [v0.1 (January 9, 2009)](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) through 2013, the official software was referred to in three overlapping ways:
 
 | Term | Use |
 |---|---|
@@ -158,7 +158,7 @@ This is the only one of the three witnesses where Hearn explicitly frames the re
 
 ## 4. The 2015-2017 fork episodes as case study
 
-Between 2015 and 2017, a series of alternative implementations forked the Bitcoin codebase. The vocabulary that surrounded each is informative:
+Between 2015 and 2017, a series of alternative implementations forked the Bitcoin codebase (catalogued in the [Bitcoin fork and altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) analysis). The vocabulary that surrounded each is informative:
 
 | Year | Name | Position framed by the active vocabulary |
 |---|---|---|
