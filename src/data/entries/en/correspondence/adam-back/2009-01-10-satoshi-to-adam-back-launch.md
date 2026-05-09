@@ -36,5 +36,3 @@ To give Back a high-level sense of how the project was being received, Satoshi f
 > Bitcoin seems to be a very promising idea. I like the idea of basing security on the assumption that the CPU power of honest participants outweighs that of the attacker.
 
 This is the last known direct communication between Satoshi and Adam Back. Back did not engage with Bitcoin until 2013, and later founded Blockstream in 2014. The five-email chain — spanning 2008-08-20 to 2009-01-10 — documents Satoshi's outreach to the creator of Hashcash, the referral that surfaced Wei Dai's b-money, and Satoshi's final notice that the working system had launched.
-
-*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*

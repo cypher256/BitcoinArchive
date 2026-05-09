@@ -40,5 +40,3 @@ In the third email of the chain, Satoshi thanked Adam Back for pointing him to [
 This sentence is one of the primary-source observations underpinning both the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) and the [bitcoin-design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/): Satoshi reached the design space independently and only learned of b-money via Adam Back's referral the previous day.
 
 The same email noted that Satoshi planned to contact Wei Dai directly to confirm the citation year — the message that would be sent the following day (see the [2008-08-22 Satoshi → Wei Dai email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)). b-money was subsequently added as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/).
-
-*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*

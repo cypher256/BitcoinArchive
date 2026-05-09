@@ -40,8 +40,6 @@ translationStatus: complete
 > b-moneyのアイデアは彼のウェブページに簡潔に書かれているだけで、論文としてはまとまっていない。
 
 <!-- speaker: narrator -->
-査読論文ではなくウェブページが指し示されたことで、サトシは引用年の確定をウェイ・ダイ本人に直接問い合わせる必要が生じた（[2008年8月22日 サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)）。同日中にサトシはバック宛にも b-money の紹介に対する返信を書いている（メールチェーンの 3 通目）。
+査読論文ではなくウェブページが指し示されたことで、サトシは引用年の確定をウェイ・ダイ本人に直接問い合わせる必要が生じた（[2008年8月22日サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)）。同日中にサトシはバック宛にも b-money の紹介に対する返信を書いている（メールチェーンの 3 通目）。
 
 ホワイトペーパー公開の 2 か月前にアダム・バックがサトシに b-money を紹介したという事実は、[サイファーパンクからの独立した到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)を支える一次資料の一つである。サトシはサイファーパンクのコミュニティに事前に深く関与することなく設計空間に到達し、b-money の存在もこの紹介によって初めて知った。
-
-*[出典: アダム・バックの第二証人陳述書 (C/21)、COPA 対 ライト裁判 (2024年2月)。Bitcoin Magazine がスクリーンショット画像として再公開している。]*

@@ -32,6 +32,4 @@ In the fourth email of the chain, Adam Back's second reply suggested another rel
 
 > Sorry still not read your paper yet,
 
-Despite being among the first people Satoshi contacted, Back did not engage with the attached draft at this point. The chain went silent for nearly five months until Satoshi wrote again on [2009-01-10](/BitcoinArchive/entries/correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch/) — the day after Bitcoin's v0.1 release. Back would not actively engage with Bitcoin until 2013; the broader story of that delay is documented in the [Adam Back biography](/BitcoinArchive/entries/aftermath/2008-08-20-adam-back-biography/).
-
-*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
+Despite being among the first people Satoshi contacted, Back did not engage with the attached draft at this point. The chain went silent for nearly five months until Satoshi wrote again on [2009-01-10](/BitcoinArchive/entries/correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch/) — the day after Bitcoin's v0.1 release. Back would not actively engage with Bitcoin until 2013; the broader story of that delay is documented in the [Adam Back biography](/BitcoinArchive/participants/adam-back/).

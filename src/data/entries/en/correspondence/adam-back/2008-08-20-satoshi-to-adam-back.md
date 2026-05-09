@@ -50,5 +50,3 @@ The load-bearing line of the email reads:
 Satoshi attached a link to a pre-release draft titled "Electronic Cash Without a Trusted Third Party" — the working title before the manuscript was renamed to "Bitcoin: A Peer-to-Peer Electronic Cash System" for the [cryptography mailing-list draft](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) where the abstract appears in its canonical form.
 
 This is the earliest known direct contact between Satoshi and a central cypherpunk figure, and it is one of the primary-source observations underpinning the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/). Two days later Satoshi also wrote directly to Wei Dai (see the [2008-08-22 Satoshi → Wei Dai email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)).
-
-*[Source: Adam Back's Second Witness Statement (C/21), COPA v Wright (Feb 2024); also republished as screenshot images by Bitcoin Magazine.]*
