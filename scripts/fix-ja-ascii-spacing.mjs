@@ -54,6 +54,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 const targets = [
   path.resolve(repoRoot, 'src/data/translations/ja'),
+  // EN-side editorial entries occasionally embed JA — quoted
+  // sources, person names rendered in JA for context, secondary-
+  // source titles in JA. The JA × ASCII spacing rule still applies
+  // to those occurrences in EN files. Without this entry, the
+  // matching check would flag violations the fix script could not
+  // remediate, leaving editors with no auto-fix path.
+  path.resolve(repoRoot, 'src/data/entries/en'),
   // .astro components hold JA chart / timeline labels in TS data
   // structures. Same JA × ASCII rule applies; the masking branch
   // for .astro keeps comments out and processes string literals.

@@ -50,27 +50,18 @@ function walkFiles(dir) {
 const JA_LETTER = '[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\u3005\\u30FC]';
 const JA_JA_SPACE = new RegExp(`(${JA_LETTER}) (${JA_LETTER})`, 'gu');
 
-// Inverse-direction patterns (informational / non-blocking).
+// Inverse-direction patterns — JA × ASCII / ASCII × JA missing
+// half-width space. Per STYLE_GUIDE_JA.md "Half-width space
+// convention" these boundaries take a space; the patterns below
+// detect violations.
 //
-// The half-width-space convention also requires a space at JA × ASCII
-// and ASCII × JA boundaries. The cases below are MISSING-SPACE
-// violations of that rule, the inverse of the JA × JA STRANDED-SPACE
-// check above. They are reported as warnings, not blocking errors,
-// because:
-//
-//   - The pattern produces unavoidable false positives on legitimate
-//     compound forms (URL fragments, currency code suffixes, file
-//     extensions adjacent to JA labels) that an editor must judge
-//     case by case.
-//   - The original JA × JA stranded-space check was the high-incident
-//     class (a side-effect of bulk replacements); the inverse direction
-//     is more often a deliberate editorial choice that the editor may
-//     accept or reject per occurrence.
-//
-// Bringing them under the script gives editors a TODO list to walk;
-// it does not auto-fail the build until the editorial process catches
-// up. If the warning count drops to a manageable level later, the
-// failure mode can be promoted.
+// Both directions are BLOCKING errors (npm run check fails on any
+// occurrence), at parity with the pre-existing JA × JA stranded-
+// space check. The matching auto-fix is
+// `scripts/fix-ja-ascii-spacing.mjs`. Exemptions for legitimate
+// compound forms (digit + counter kanji like `2010年`, middle-dot
+// `Windows・Linux`, masked code spans / URL parts) are applied at
+// match time so the violations reported are real editorial misses.
 const ASCII_ALNUM = '[A-Za-z0-9]';
 const JA_THEN_ASCII = new RegExp(`(${JA_LETTER})(${ASCII_ALNUM})`, 'gu');
 const ASCII_THEN_JA = new RegExp(`(${ASCII_ALNUM})(${JA_LETTER})`, 'gu');
@@ -91,7 +82,7 @@ const ASCII_LINK_END_THEN_JA = new RegExp(
 
 // Punctuation tolerance: middle-dot `・` (U+30FB) is a JA-typography
 // separator (e.g., `Windows・Linux・macOS`) where adding a space on
-// either side would disrupt the convention. Skip warnings whose
+// either side would disrupt the convention. Skip violations whose
 // boundary char is `・`.
 function isMiddleDotBoundary(left, right) {
   return left === '・' || right === '・';
