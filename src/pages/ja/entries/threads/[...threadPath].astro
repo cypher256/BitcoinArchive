@@ -3,7 +3,6 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, absoluteUrl } from '../../../../i18n/utils';
 import { deriveThreadTitle, resolveThreadId } from '../../../../data/threads';
-import AutoLinkNames from '../../../../components/AutoLinkNames.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries_ja');
@@ -139,7 +138,6 @@ const breadcrumbs = [
       </a>
     </nav>
   </article>
-  <AutoLinkNames lang={lang} selectors=".message-body" />
 </BaseLayout>
 
 <style>

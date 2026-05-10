@@ -18,6 +18,16 @@ interface Props {
   participants?: Participant[];
   tags?: string[];
   /**
+   * Concept keywords this entry claims as definition target. Sourced
+   * from `inlineLinkKeywords` frontmatter. Rendered as a "Defines:"
+   * row when the entry is editorial (analysis / article — biography
+   * is excluded since the page title already names the participant,
+   * making the keyword display redundant). Each keyword is plain
+   * text (not a link to itself). The actual auto-linking from other
+   * entries is handled by `rehype-auto-link-keywords.mjs`.
+   */
+  inlineLinkKeywords?: string[];
+  /**
    * Content last-updated date, derived from git history (see
    * scripts/generate-git-dates.mjs and src/data/git-dates.json).
    * Conceptually distinct from `date`: `date` is the entry's anchor
@@ -29,7 +39,8 @@ interface Props {
   updatedAt?: Date;
 }
 
-const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [], updatedAt } = Astro.props;
+const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [], inlineLinkKeywords = [], updatedAt } = Astro.props;
+const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article');
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
@@ -84,6 +95,18 @@ const isSatoshiAuthor =
       <a href={localePath(`/tags/${tag}/`, lang)} class="tag-link">
         {translateTag(tag, lang)}
       </a>
+    ))}
+  </div>
+)}
+
+{showDefinesRow && (
+  <div class="defines-row">
+    <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
+    {inlineLinkKeywords.map((kw, i) => (
+      <>
+        <span class="defines-keyword">{kw}</span>
+        {i < inlineLinkKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
+      </>
     ))}
   </div>
 )}
@@ -184,5 +207,24 @@ const isSatoshiAuthor =
     color: var(--color-text);
     border-color: var(--color-text-muted);
     text-decoration: none;
+  }
+  .defines-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .defines-label {
+    font-weight: 600;
+  }
+  .defines-keyword {
+    color: var(--color-text);
+  }
+  .defines-sep {
+    color: var(--color-border);
   }
 </style>

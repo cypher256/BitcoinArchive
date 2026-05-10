@@ -2,7 +2,6 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryMeta from '../../../components/EntryMeta.astro';
 import SourceCitation from '../../../components/SourceCitation.astro';
-import AutoLinkNames from '../../../components/AutoLinkNames.astro';
 import RelatedEntries from '../../../components/RelatedEntries.astro';
 import SatoshiCodeAnalysis from '../../../components/SatoshiCodeAnalysis.astro';
 import SatoshiActivityTimeline from '../../../components/SatoshiActivityTimeline.astro';
@@ -108,6 +107,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
         lang={lang}
         participants={entry.data.participants}
         tags={entry.data.tags}
+        inlineLinkKeywords={entry.data.inlineLinkKeywords}
         updatedAt={updatedAt}
       />
     </header>
@@ -219,7 +219,6 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
       )}
     </nav>
   </article>
-  <AutoLinkNames lang={lang} selectors=".entry-content, .satoshi-analysis" />
 </BaseLayout>
 
 <style>
