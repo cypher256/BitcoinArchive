@@ -15,7 +15,6 @@ participants:
   - name: "knightmb"
     slug: "knightmb"
 description: "2010-08-15 オーバーフロー事件の構造分析 — ソフトフォーク救出機構、5 時間対応窓、トランザクション形状フォレンジック、中央集権パラドックス。"
-calloutLabel: "構造分析"
 isSatoshi: false
 tags:
   - "overflow-bug"
