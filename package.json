@@ -35,7 +35,9 @@
     "extract:quotes": "node scripts/extract-quotes.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean:cache": "rm -rf .astro node_modules/.astro",
+    "build:fresh": "npm run clean:cache && npm run build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
