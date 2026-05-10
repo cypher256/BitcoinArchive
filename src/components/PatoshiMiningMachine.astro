@@ -88,178 +88,206 @@ const l = labels[lang];
     var subranges = data.subranges;
     var comp = data.comparison;
 
-    var threadColors = ['#2563eb', '#059669', '#d97706', '#7c3aed', '#dc2626'];
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // 5 thread colors picked from chart-color-2..5 + accent so each
+      // thread has a stable identity across themes (palette swap
+      // shifts hues but keeps positions).
+      return {
+        threads: [
+          token('--chart-color-2'),
+          token('--chart-color-3'),
+          token('--chart-color-8'),
+          token('--chart-color-4'),
+          token('--chart-negative'),
+        ],
+        observed: token('--color-accent'),
+        expected: token('--chart-color-6'),
+        muted: token('--color-text-muted'),
+        text: token('--color-text'),
+        bg: token('--color-bg'),
+      };
+    }
+
+    function rerender() { panelSubranges(); panelBias(); panelHashrate(); }
 
     // --- Nonce Subranges ---
-    (function() {
+    function panelSubranges() {
       var container = document.getElementById('nonce-subranges');
       if (!container) return;
+      var T = readTokens();
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 30, right: 20, bottom: 30, left: 20 };
+      var H = 120;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 30, right: 20, bottom: 30, left: 20 };
-        var H = 120;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var maxNonce = 4294967296;
+      var x = d3.scaleLinear().domain([0, maxNonce]).range([0, w]);
 
-        var maxNonce = 4294967296;
-        var x = d3.scaleLinear().domain([0, maxNonce]).range([0, w]);
+      subranges.forEach(function(sr, i) {
+        var x1 = x(sr.start);
+        var x2 = x(sr.end);
+        g.append('rect')
+          .attr('x', x1).attr('y', 0)
+          .attr('width', x2 - x1 - 1).attr('height', h)
+          .attr('fill', T.threads[i]).attr('opacity', 0.75).attr('rx', 3);
 
-        subranges.forEach(function(sr, i) {
-          var x1 = x(sr.start);
-          var x2 = x(sr.end);
-          g.append('rect')
-            .attr('x', x1).attr('y', 0)
-            .attr('width', x2 - x1 - 1).attr('height', h)
-            .attr('fill', threadColors[i]).attr('opacity', 0.75).attr('rx', 3);
+        // In-block text uses --color-bg so on light themes it's white
+        // against a saturated fill, and on dark themes it's a dark
+        // tone against a brighter fill — guaranteed contrast either way.
+        g.append('text')
+          .attr('x', (x1 + x2) / 2).attr('y', h / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('fill', T.bg).attr('font-size', '13px').attr('font-weight', '700')
+          .text(l.thread + ' ' + sr.id);
 
-          g.append('text')
-            .attr('x', (x1 + x2) / 2).attr('y', h / 2)
-            .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-            .attr('fill', '#fff').attr('font-size', '13px').attr('font-weight', '700')
-            .text(l.thread + ' ' + sr.id);
+        // Arrow showing high→low scan direction (semitransparent
+        // surface text on top of the thread fill).
+        var arrowY = h / 2 + 18;
+        g.append('text')
+          .attr('x', (x1 + x2) / 2).attr('y', arrowY)
+          .attr('text-anchor', 'middle').attr('fill', T.bg).attr('opacity', 0.75)
+          .attr('font-size', '10px').text('← ' + l.scanDir);
+      });
 
-          // Arrow showing high→low scan direction
-          var arrowY = h / 2 + 18;
-          g.append('text')
-            .attr('x', (x1 + x2) / 2).attr('y', arrowY)
-            .attr('text-anchor', 'middle').attr('fill', 'rgba(255,255,255,0.7)')
-            .attr('font-size', '10px').text('← ' + l.scanDir);
-        });
-
-        // 0 and max labels
-        g.append('text').attr('x', 0).attr('y', -8)
-          .attr('font-size', '10px').attr('fill', '#6b6b6b').text('0');
-        g.append('text').attr('x', w).attr('y', -8)
-          .attr('text-anchor', 'end').attr('font-size', '10px').attr('fill', '#6b6b6b')
-          .text('2³² (4.3B)');
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+      // 0 and max labels
+      g.append('text').attr('x', 0).attr('y', -8)
+        .attr('font-size', '10px').attr('fill', T.muted).text('0');
+      g.append('text').attr('x', w).attr('y', -8)
+        .attr('text-anchor', 'end').attr('font-size', '10px').attr('fill', T.muted)
+        .text('2³² (4.3B)');
+    }
 
     // --- High-value bias ---
-    (function() {
+    function panelBias() {
       var container = document.getElementById('nonce-bias');
       if (!container) return;
+      var T = readTokens();
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 20, right: 20, bottom: 30, left: 150 };
+      var H = 130;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 20, right: 20, bottom: 30, left: 150 };
-        var H = 130;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var items = [
+        { label: l.observed, value: comp.highValueBias, color: T.observed },
+        { label: l.expected, value: comp.expectedIfRandom, color: T.expected },
+      ];
 
-        var items = [
-          { label: l.observed, value: comp.highValueBias, color: '#b45309' },
-          { label: l.expected, value: comp.expectedIfRandom, color: '#9ca3af' },
-        ];
+      var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
+      var x = d3.scaleLinear().domain([0, 100]).range([0, w]);
 
-        var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
-        var x = d3.scaleLinear().domain([0, 100]).range([0, w]);
+      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '12px').style('fill', T.text);
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + '%'; }))
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
-        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
-          .selectAll('text').attr('font-size', '12px');
-        g.append('g').attr('transform', 'translate(0,' + h + ')')
-          .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + '%'; }))
-          .selectAll('text').attr('font-size', '10px');
-
-        items.forEach(function(item) {
-          g.append('rect')
-            .attr('y', y(item.label)).attr('x', 0)
-            .attr('height', y.bandwidth()).attr('width', x(item.value))
-            .attr('fill', item.color).attr('rx', 2);
-          g.append('text')
-            .attr('y', y(item.label) + y.bandwidth() / 2)
-            .attr('x', x(item.value) + 6)
-            .attr('dominant-baseline', 'central')
-            .attr('font-size', '13px').attr('font-weight', '700')
-            .attr('fill', item.color)
-            .text(item.value + '%');
-        });
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+      items.forEach(function(item) {
+        g.append('rect')
+          .attr('y', y(item.label)).attr('x', 0)
+          .attr('height', y.bandwidth()).attr('width', x(item.value))
+          .attr('fill', item.color).attr('rx', 2);
+        g.append('text')
+          .attr('y', y(item.label) + y.bandwidth() / 2)
+          .attr('x', x(item.value) + 6)
+          .attr('dominant-baseline', 'central')
+          .attr('font-size', '13px').attr('font-weight', '700')
+          .attr('fill', item.color)
+          .text(item.value + '%');
+      });
+    }
 
     // --- Hashrate comparison ---
-    (function() {
+    function panelHashrate() {
       var container = document.getElementById('hashrate-compare');
       if (!container) return;
+      var T = readTokens();
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 20, right: 80, bottom: 30, left: 200 };
+      var H = 130;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 20, right: 80, bottom: 30, left: 200 };
-        var H = 130;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var items = [
+        { label: l.patoshi + '\n(' + comp.patoshiThreads + ' ' + l.threads + ', SSE2)', value: comp.patoshiHashrate, color: T.observed },
+        { label: l.others + '\n(1 ' + l.threads + ')', value: comp.otherHashrate, color: T.expected },
+      ];
 
-        var items = [
-          { label: l.patoshi + '\n(' + comp.patoshiThreads + ' ' + l.threads + ', SSE2)', value: comp.patoshiHashrate, color: '#b45309' },
-          { label: l.others + '\n(1 ' + l.threads + ')', value: comp.otherHashrate, color: '#9ca3af' },
-        ];
+      var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
+      var x = d3.scaleLinear().domain([0, 5]).range([0, w]);
 
-        var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
-        var x = d3.scaleLinear().domain([0, 5]).range([0, w]);
-
-        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
-          .selectAll('text').attr('font-size', '11px').each(function() {
-            var text = d3.select(this);
-            var lines = text.text().split('\n');
-            if (lines.length > 1) {
-              text.text('');
-              text.append('tspan').attr('x', -8).attr('dy', '-0.3em').text(lines[0]);
-              text.append('tspan').attr('x', -8).attr('dy', '1.2em').text(lines[1]).attr('font-size', '9px').attr('fill', '#9ca3af');
-            }
-          });
-
-        g.append('g').attr('transform', 'translate(0,' + h + ')')
-          .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + ' ' + l.mhps; }))
-          .selectAll('text').attr('font-size', '10px');
-
-        items.forEach(function(item) {
-          g.append('rect')
-            .attr('y', y(item.label)).attr('x', 0)
-            .attr('height', y.bandwidth()).attr('width', x(item.value))
-            .attr('fill', item.color).attr('rx', 2);
-          g.append('text')
-            .attr('y', y(item.label) + y.bandwidth() / 2)
-            .attr('x', x(item.value) + 6)
-            .attr('dominant-baseline', 'central')
-            .attr('font-size', '13px').attr('font-weight', '700')
-            .attr('fill', item.color)
-            .text(item.value + ' ' + l.mhps);
+      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '11px').style('fill', T.text).each(function() {
+          var text = d3.select(this);
+          var lines = text.text().split('\n');
+          if (lines.length > 1) {
+            text.text('');
+            text.append('tspan').attr('x', -8).attr('dy', '-0.3em').text(lines[0]);
+            text.append('tspan').attr('x', -8).attr('dy', '1.2em').text(lines[1]).attr('font-size', '9px').attr('fill', T.muted);
+          }
         });
 
-        // 4.3× label
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + ' ' + l.mhps; }))
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
+
+      items.forEach(function(item) {
+        g.append('rect')
+          .attr('y', y(item.label)).attr('x', 0)
+          .attr('height', y.bandwidth()).attr('width', x(item.value))
+          .attr('fill', item.color).attr('rx', 2);
         g.append('text')
-          .attr('x', w / 2).attr('y', -5)
-          .attr('text-anchor', 'middle')
-          .attr('font-size', '12px').attr('font-weight', '700')
-          .attr('fill', '#b45309')
-          .text('4.3' + l.faster);
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+          .attr('y', y(item.label) + y.bandwidth() / 2)
+          .attr('x', x(item.value) + 6)
+          .attr('dominant-baseline', 'central')
+          .attr('font-size', '13px').attr('font-weight', '700')
+          .attr('fill', item.color)
+          .text(item.value + ' ' + l.mhps);
+      });
+
+      // 4.3× label — accent so it reads as the chart's headline.
+      g.append('text')
+        .attr('x', w / 2).attr('y', -5)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', T.observed)
+        .text('4.3' + l.faster);
+    }
+
+    rerender();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', rerender);
+      else if (mql.addListener) mql.addListener(rerender);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(rerender).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
