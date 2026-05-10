@@ -15,7 +15,11 @@ isSatoshi: false
 tags: []
 relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
+  - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
+  - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
+  - analysis/2010-08-15-knightmb-snapshot-and-legend
 ---
 
 seems a block at height 74638 has expoited a bug in the net. It uses an integer overflow to make a negative total transaction. The two transaction outputs are: 

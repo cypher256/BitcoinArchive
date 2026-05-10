@@ -24,8 +24,13 @@ secondarySources:
   - name: "arXiv:2206.02871 — 同定を引用する学術論文"
     url: "https://arxiv.org/abs/2206.02871"
 relatedEntries:
-  - aftermath/2010-07-12-knightmb-biography
   - aftermath/2010-08-15-value-overflow-incident
+  - analysis/2010-08-15-overflow-incident-structure-and-paradox
+  - aftermath/2010-07-12-knightmb-biography
+  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
+  - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
+  - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
 translationStatus: complete
 ---
 

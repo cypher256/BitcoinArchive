@@ -29,14 +29,17 @@ secondarySources:
   - name: "Decrypt — The Day Someone Created 184 Billion Bitcoin"
     url: "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"
 relatedEntries:
-  - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
-  - aftermath/2010-07-12-knightmb-biography
-  - analysis/2010-08-15-knightmb-snapshot-and-legend
+  - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
+  - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
+  - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
+  - analysis/2010-08-15-knightmb-snapshot-and-legend
+  - aftermath/2010-07-12-knightmb-biography
   - aftermath/2010-06-11-gavin-andresen-biography
-  - aftermath/2014-02-28-mt-gox-bankruptcy
-  - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2010-07-15-jeff-garzik-biography
+  - aftermath/2010-07-11-slashdot-bitcoin-article
+  - aftermath/2014-02-28-mt-gox-bankruptcy
 translationStatus: complete
 ---
 
@@ -52,6 +55,8 @@ translationStatus: complete
 
 1. 各出力はMAX_MONEY（21,000,000 BTC）を超えてはならない
 2. すべての出力の合計はMAX_MONEYを超えてはならない
+
+[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は並行して独自の緊急パッチをテストし、フォーラム参加者[knightmb](/BitcoinArchive/ja/participants/knightmb/)が事前に公開していた清浄なブロックチェーン・スナップショットを復旧の起点として使用した。
 
 サトシはIRCでこう投稿した。
 
