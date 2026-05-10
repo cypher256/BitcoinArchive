@@ -72,8 +72,8 @@ const l = labels[lang];
     <p class="analysis-desc">{l.subtitle}</p>
     <div id="extranonce-chart" class="chart-container"></div>
     <div class="legend">
-      <span class="legend-item"><span class="legend-swatch" style="background:#b45309"></span>{l.patoshi}</span>
-      <span class="legend-item"><span class="legend-swatch" style="background:#9ca3af"></span>{l.nonPatoshi}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-patoshi"></span>{l.patoshi}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-non-patoshi"></span>{l.nonPatoshi}</span>
     </div>
     <p class="chart-note">{l.note}</p>
   </section>
@@ -97,8 +97,24 @@ const l = labels[lang];
     var container = document.getElementById('extranonce-chart');
     if (!container) return;
 
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // Same encoding as PatoshiNonceLsb / PlosPatoshiAnomaly:
+      //   patoshi = --color-accent (the focus signal)
+      //   non-patoshi = --chart-color-6 (background noise)
+      return {
+        patoshi: token('--color-accent'),
+        nonPatoshi: token('--chart-color-6'),
+        muted: token('--color-text-muted'),
+        text: token('--color-text'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 700;
       var margin = { top: 20, right: 30, bottom: 50, left: 60 };
@@ -116,17 +132,17 @@ const l = labels[lang];
       // Axes
       g.append('g').attr('transform', 'translate(0,' + h + ')')
         .call(d3.axisBottom(x).ticks(6).tickFormat(function(d) { return (d / 1000) + 'k'; }))
-        .selectAll('text').attr('font-size', '10px');
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
       g.append('text').attr('x', w / 2).attr('y', h + 40)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', '#6b6b6b').text(l.xLabel);
+        .attr('fill', T.muted).text(l.xLabel);
 
       g.append('g').call(d3.axisLeft(y).ticks(5))
-        .selectAll('text').attr('font-size', '10px');
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
       g.append('text').attr('transform', 'rotate(-90)')
         .attr('x', -h / 2).attr('y', -45)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', '#6b6b6b').text(l.yLabel);
+        .attr('fill', T.muted).text(l.yLabel);
 
       // Non-Patoshi points (draw first, below)
       g.selectAll('.non-patoshi')
@@ -134,7 +150,7 @@ const l = labels[lang];
         .enter().append('circle')
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
-        .attr('r', 2).attr('fill', '#9ca3af').attr('opacity', 0.5);
+        .attr('r', 2).attr('fill', T.nonPatoshi).attr('opacity', 0.5);
 
       // Patoshi points
       g.selectAll('.patoshi')
@@ -142,11 +158,23 @@ const l = labels[lang];
         .enter().append('circle')
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
-        .attr('r', 2.5).attr('fill', '#b45309').attr('opacity', 0.75);
+        .attr('r', 2.5).attr('fill', T.patoshi).attr('opacity', 0.75);
     }
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
@@ -194,6 +222,10 @@ const l = labels[lang];
     height: 12px;
     border-radius: 2px;
   }
+  /* Swatches mirror the runtime fill encoding (patoshi = accent,
+     non-patoshi = neutral) so legend stays in sync on theme swap. */
+  .swatch-patoshi { background: var(--color-accent); }
+  .swatch-non-patoshi { background: var(--chart-color-6); }
   .chart-note {
     font-size: 0.75rem;
     color: var(--color-text-muted);
