@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinの潜在的な弱点に関する専用の議論はどこか"
+title: "Re: Bitcoin の潜在的な弱点に関する専用の議論はどこか"
 date: 2010-08-11T16:10:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック788におけるギャビン・アンドレセンの文脈投稿。msg8804に引用。"
+description: "BitcoinTalk トピック 788 におけるギャビン・アンドレセンの文脈投稿。msg8804 に引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-BitcoinのP2Pネットワークはさまざまなサービス拒否攻撃を受ける可能性がある。
+Bitcoin の P2P ネットワークはさまざまなサービス拒否攻撃を受ける可能性がある。
 
 はい、言った。
 

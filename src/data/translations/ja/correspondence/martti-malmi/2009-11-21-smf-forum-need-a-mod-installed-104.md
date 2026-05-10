@@ -1,5 +1,5 @@
 ---
-title: "Re: SMFフォーラム、MODのインストールが必要"
+title: "Re: SMF フォーラム、MOD のインストールが必要"
 date: 2009-11-21T10:50:00Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミが自身の経験からJoomlaよりもDrupalを推薦し、bitcoin.orgのDNSエントリ変更と無料SSL証明書の取得を提案。"
+description: "マルミが自身の経験から Joomla よりも Drupal を推薦し、bitcoin.org の DNS エントリ変更と無料 SSL 証明書の取得を提案。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -28,13 +28,13 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-お客様向けにJoomlaサイトを作ったことがありますが、Drupalのほうが好きだと言わざるを得ません。主に管理インターフェースが使いやすく、メインサイトに統合されている点がいいです。
+お客様向けに Joomla サイトを作ったことがありますが、Drupal のほうが好きだと言わざるを得ません。主に管理インターフェースが使いやすく、メインサイトに統合されている点がいいです。
 
-https経由だと画像が正しく読み込まれません。時間があるときに確認します。
+https 経由だと画像が正しく読み込まれません。時間があるときに確認します。
 
-bitcoin.orgのDNSエントリを変更するだけのほうが簡単です。forum.bitcoin.orgは不要です。
+bitcoin.org の DNS エントリを変更するだけのほうが簡単です。forum.bitcoin.org は不要です。
 
-どこかで無料のSSL証明書を取得できないか確認してみましょう。例えば http://www.startssl.com/?app=1 のように。そうすれば自己署名証明書によるセキュリティ警告がユーザーに表示されなくなります。ただし、匿名で登録されたドメインに証明書を発行してくれるかどうかはわかりません。
+どこかで無料の SSL 証明書を取得できないか確認してみましょう。例えば http://www.startssl.com/?app=1 のように。そうすれば自己署名証明書によるセキュリティ警告がユーザーに表示されなくなります。ただし、匿名で登録されたドメインに証明書を発行してくれるかどうかはわかりません。
 
 <!-- tone-skip -->
 > <!-- speaker: Satoshi Nakamoto -->

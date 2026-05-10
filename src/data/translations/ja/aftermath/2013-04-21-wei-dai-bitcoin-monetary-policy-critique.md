@@ -29,7 +29,7 @@ translationStatus: complete
 
 *LessWrong「Bitcoins are not digital greenbacks」コメントスレッドより、2013年4月21日：*
 
-ウェイ・ダイ — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインの金融政策の設計と自身の役割について言及した：
+ウェイ・ダイ — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインの金融政策の設計と自身の役割について言及した：
 
 **ビットコインの金融政策の失敗について：**
 

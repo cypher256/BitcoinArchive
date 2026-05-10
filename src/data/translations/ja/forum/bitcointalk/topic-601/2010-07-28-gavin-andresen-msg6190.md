@@ -1,5 +1,5 @@
 ---
-title: "Re: -datadirの指定で問題が発生"
+title: "Re: -datadir の指定で問題が発生"
 date: 2010-07-28T13:40:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック601におけるギャビン・アンドレセンの文脈投稿。msg6268の前。"
+description: "BitcoinTalk トピック 601 におけるギャビン・アンドレセンの文脈投稿。msg6268 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

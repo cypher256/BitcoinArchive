@@ -1,5 +1,5 @@
 ---
-title: "Re: Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）"
+title: "Re: Y2038 準拠の Bitcoin への移行計画はどうなる？（すでに準拠済み）"
 date: 2010-08-09T20:13:26.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがunsigned intは2106年まで有効であり、それまでにネットワークは全面的に刷新されるだろうと説明。"
+description: "サトシ・ナカモトが unsigned int は 2106年まで有効であり、それまでにネットワークは全面的に刷新されるだろうと説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-**unsigned** intは2106年まで有効だ。それまでにネットワークは少なくとも一度は完全に刷新される必要があるだろう。
+**unsigned** int は 2106年まで有効だ。それまでにネットワークは少なくとも一度は完全に刷新される必要があるだろう。
 
-signed intはないはずだ。どこかでsigned intを見つけた場合は、教えてほしい（今後25年以内に頼む）。unsigned intに変更する。
+signed int はないはずだ。どこかで signed int を見つけた場合は、教えてほしい（今後 25年以内に頼む）。unsigned int に変更する。

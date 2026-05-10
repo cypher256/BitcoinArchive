@@ -1,5 +1,5 @@
 ---
-title: "Re: 非GUIオプション"
+title: "Re: 非 GUI オプション"
 date: 2010-02-23T14:47:59Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "おそらくapt-get install libgtk2.0-0だったと思います。"
+description: "おそらく apt-get install libgtk2.0-0 だったと思います。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -43,6 +43,6 @@ translationStatus: complete
 > されていない環境でもインストールできるか？
 
 <!-- speaker: Martti Malmi -->
-おそらくapt-get install libgtk2.0-0だったと思います。利用可能なパッケージはこのように検索できますよ：「apt-cache search libgtk」。
+おそらく apt-get install libgtk2.0-0 だったと思います。利用可能なパッケージはこのように検索できますよ：「apt-cache search libgtk」。
 
-bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に保てるようにしますね。
+bitcoin.org の翻訳者に Drupal のアカウントを付与して、翻訳を最新の状態に保てるようにしますね。

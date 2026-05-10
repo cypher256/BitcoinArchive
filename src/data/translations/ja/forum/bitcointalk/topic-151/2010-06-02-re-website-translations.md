@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-93%完成のオランダ語翻訳をSVNにアップロードした。ありがとう！
+93%完成のオランダ語翻訳を SVN にアップロードした。ありがとう！

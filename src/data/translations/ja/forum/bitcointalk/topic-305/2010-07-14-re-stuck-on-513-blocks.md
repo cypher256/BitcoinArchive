@@ -1,5 +1,5 @@
 ---
-title: "Re: 513ブロックで止まっている"
+title: "Re: 513 ブロックで止まっている"
 date: 2010-07-14T18:02:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「513ブロックで止まっている」におけるサトシ・ナカモトの返信。"
+description: "スレッド「513 ブロックで止まっている」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,10 +16,10 @@ secondarySources:
 translationStatus: complete
 ---
 
-この「ライブプロテクション」問題が報告されるのは2回目だ。
+この「ライブプロテクション」問題が報告されるのは 2回目だ。
 
 プログラムのネットワーク通信をブロックしているに違いない。10件の接続が表示されていることから接続の確立は許可されているようだが、その上でデータの送受信を許可していないようだ。
 
 この問題をもっとよく理解する必要がある。
 
-ライブプロテクション（正式名称が何であれ）をオフにするか、除外を追加する方法を説明する手順をWikiに書いてくれる方はいるか。
+ライブプロテクション（正式名称が何であれ）をオフにするか、除外を追加する方法を説明する手順を Wiki に書いてくれる方はいるか。

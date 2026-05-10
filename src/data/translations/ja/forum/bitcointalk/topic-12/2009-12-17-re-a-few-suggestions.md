@@ -16,11 +16,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-良いな、FreeBSDで正常に動作しているか？
+良いな、FreeBSD で正常に動作しているか？
 
-headers.hへの変更をコミットした。一貫性のため、__BSD__を使用した。定義の完全なリストは[http://docs.wxwidgets.org/stable/wx_cppconst.html](http://docs.wxwidgets.org/stable/wx_cppconst.html)にある。
+headers.h への変更をコミットした。一貫性のため、__BSD__を使用した。定義の完全なリストは [http://docs.wxwidgets.org/stable/wx_cppconst.html](http://docs.wxwidgets.org/stable/wx_cppconst.html) にある。
 #ifdef __BSD__
 #include <netinet/in.h>
 #endif
 
-malloc.hはWindowsでのみ必要なので、これ以上問題を起こさないように__WXMSW__セクションに移動する。
+malloc.h は Windows でのみ必要なので、これ以上問題を起こさないように__WXMSW__セクションに移動する。

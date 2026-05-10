@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin @ EPCAカンファレンス・アムステルダム 4月4-6日？"
+title: "Re: Bitcoin @ EPCA カンファレンス・アムステルダム 4月4-6日？"
 date: 2011-02-07T09:39:36Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがアムステルダムのEPCAカンファレンスからの招待に応じ、Bitcoinの代表としてギャビン・アンドレセンやブルース・ワグナーを推薦。"
+description: "マルミがアムステルダムの EPCA カンファレンスからの招待に応じ、Bitcoin の代表としてギャビン・アンドレセンやブルース・ワグナーを推薦。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -23,7 +23,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-SlashdotやRedditをフォローしていない重要な層にリーチする素晴らしい機会のようです。ギャビン・アンドレセンかブルース・ワグナーがこの役割に適任だと思います。2人が参加するのもいいかもしれません。フォーラムのS3052も適任の可能性がありそうでした。
+Slashdot や Reddit をフォローしていない重要な層にリーチする素晴らしい機会のようです。ギャビン・アンドレセンかブルース・ワグナーがこの役割に適任だと思います。2人が参加するのもいいかもしれません。フォーラムの S3052 も適任の可能性がありそうでした。
 
 Gavin、これの取りまとめに興味はありますか？
 

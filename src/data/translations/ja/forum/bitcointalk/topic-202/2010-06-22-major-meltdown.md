@@ -10,7 +10,7 @@ participants:
     slug: "llama"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "llamaがスレッドを開始: 大規模なメルトダウン"
+description: "llama がスレッドを開始: 大規模なメルトダウン"
 isSatoshi: false
 tags: []
 translationStatus: complete

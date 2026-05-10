@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "mizerydearia がスレッドを開始: BitcoinTalkトピック587。"
+description: "mizerydearia がスレッドを開始: BitcoinTalk トピック 587。"
 isSatoshi: false
 tags: []
 translationStatus: complete

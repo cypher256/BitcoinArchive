@@ -8,7 +8,7 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック34におけるBitcoinFXの文脈投稿。after msg222, サトシを引用."
+description: "BitcoinTalk トピック 34 における BitcoinFX の文脈投稿。after msg222, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

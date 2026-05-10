@@ -1,5 +1,5 @@
 ---
-title: "Re: 「Bitcoin受付中」ロゴを作ろう"
+title: "Re: 「Bitcoin 受付中」ロゴを作ろう"
 date: 2010-02-24T21:53:52.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「『Bitcoin受付中』ロゴを作ろう」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「『Bitcoin 受付中』ロゴを作ろう」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-GPLのものを使うと、使用を避けなければならない。GPL自体に反対しているわけではないが、BitcoinはMITライセンスのプロジェクトだ。GPLのものは、明確にその旨を表示してほしい。
+GPL のものを使うと、使用を避けなければならない。GPL 自体に反対しているわけではないが、Bitcoin は MIT ライセンスのプロジェクトだ。GPL のものは、明確にその旨を表示してほしい。

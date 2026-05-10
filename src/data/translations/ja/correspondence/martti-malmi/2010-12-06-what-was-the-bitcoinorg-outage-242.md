@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin.orgの障害の原因は？"
+title: "Re: bitcoin.org の障害の原因は？"
 date: 2010-12-06T11:33:01Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがPGP暗号化でサーバーパスワードを送る準備ができたことを伝え、ギャビン・アンドレセンへのサーバー管理の委任について同意。"
+description: "マルミが PGP 暗号化でサーバーパスワードを送る準備ができたことを伝え、ギャビン・アンドレセンへのサーバー管理の委任について同意。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-パスワードを送る準備ができました。平文で送らなくて済むように、PGP鍵を送ってもらえますか？
+パスワードを送る準備ができました。平文で送らなくて済むように、PGP 鍵を送ってもらえますか？
 
 <!-- speaker: Satoshi Nakamoto -->
 > Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。

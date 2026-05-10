@@ -1,5 +1,5 @@
 ---
-title: "Re: BitcoinをGTKに変換：賛成？反対？wxの方が良い？"
+title: "Re: Bitcoin を GTK に変換：賛成？反対？wx の方が良い？"
 date: 2010-08-19T18:44:36.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「BitcoinをGTKに変換：賛成？反対？wxの方が良い？」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin を GTK に変換：賛成？反対？wx の方が良い？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,8 +27,8 @@ quotes:
 > WxWidgetsは実際には問題ではない。問題は使用されているバージョン（2.9）で、多くのディストリビューションパッケージャーは不安定だと見なしている（WxWidgetsの開発者はそうではないと言っているが）。一方で、私の知る限りWxWidgetsはLinuxではgtkを使って描画しており、Bitcoin開発者にとってクロスプラットフォーム対応を容易にしている。
 <!-- /tone-skip -->
 
-wxWidgets 2.9は彼らの最初のUTF-8バージョンだ。我々はWindows含むすべてのプラットフォームでUTF-8を使用している。
+wxWidgets 2.9 は彼らの最初の UTF-8 バージョンだ。我々は Windows 含むすべてのプラットフォームで UTF-8 を使用している。
 
-ディストロの2.8パッケージはUTF-16であるため、人々をつまずかせるだけだ。2.9に標準化するまで、2.8とそのwxString UTF-16/ANSI条件付きビルドオプションで終わりのないビルド問題があった。また、2.8を使うためにANSIを使用していたが、これはwxWidgetsがUTF-8をサポートするまでの一時的な応急措置に過ぎなかった。
+ディストロの 2.8 パッケージは UTF-16 であるため、人々をつまずかせるだけだ。2.9 に標準化するまで、2.8 とその wxString UTF-16/ANSI 条件付きビルドオプションで終わりのないビルド問題があった。また、2.8 を使うために ANSI を使用していたが、これは wxWidgets が UTF-8 をサポートするまでの一時的な応急措置に過ぎなかった。
 
-これは自然に解決する問題だ。時間が経てば、2.9はより主流のリリースになるだろう。
+これは自然に解決する問題だ。時間が経てば、2.9 はより主流のリリースになるだろう。

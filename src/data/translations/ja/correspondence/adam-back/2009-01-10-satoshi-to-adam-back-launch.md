@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin v0.1ローンチのアダム・バックへの通知"
+title: "Bitcoin v0.1 ローンチのアダム・バックへの通知"
 date: 2009-01-10T18:46:45Z
 type: "correspondence"
 source: "bitcoin-magazine"
@@ -22,7 +22,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-    note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21）に5通の完全なメールチェーンが含まれていた"
+    note: "2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書 C/21）に 5 通の完全なメールチェーンが含まれていた"
   - name: "Bitstamp - Who is Adam Back?"
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
 translationStatus: complete

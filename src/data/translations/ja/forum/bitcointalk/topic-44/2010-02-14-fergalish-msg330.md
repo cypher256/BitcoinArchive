@@ -8,7 +8,7 @@ author: "fergalish"
 participants:
   - name: "fergalish"
     slug: "fergalish"
-description: "BitcoinTalkトピック44におけるfergalishの文脈投稿。msg267の後。"
+description: "BitcoinTalk トピック 44 における fergalish の文脈投稿。msg267 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

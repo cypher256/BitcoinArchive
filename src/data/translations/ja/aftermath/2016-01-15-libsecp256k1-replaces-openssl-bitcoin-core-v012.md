@@ -45,11 +45,11 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)以来7年間、ビットコインの依存ライブラリーであり続けていた。
+2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)以来 7年間、ビットコインの依存ライブラリーであり続けていた。
 
 **背景：**
 
-libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィーユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1週間でライブラリーはビットコインの全ブロックチェーンを検証可能になった（当時のブロック高は約225,000）。
+libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィーユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1 週間でライブラリーはビットコインの全ブロックチェーンを検証可能になった（当時のブロック高は約 225,000）。
 
 [グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、プロジェクトは性能実験から、OpenSSL の secp256k1 実装を完全に置き換えるビットコイン専用ライブラリーへと拡大していった。
 
@@ -58,7 +58,7 @@ libsecp256k1 プロジェクトは2013年3月5日、[ピーター・ウィーユ
 2014年までに、合意クリティカルなコードで OpenSSL を使用することの具体的な問題が複数特定されていた：
 
 1. **署名解析の不整合**が予期せぬチェーン分裂を引き起こす可能性。OpenSSL のバージョンが異なると、同じ署名が有効か無効かで判定が割れる場合があり、全ノードが同じ結論に達する必要がある合意システムでは許容できない。
-2. **性能** — libsecp256k1 は最終的に署名検証で2.5〜5.5倍高速。署名検証は新ブロック検証コストの大部分を占める。
+2. **性能** — libsecp256k1 は最終的に署名検証で 2.5〜5.5倍高速。署名検証は新ブロック検証コストの大部分を占める。
 3. **監査可能性** — 単一の曲線とビットコインが必要とする操作のみに焦点を絞ることで、ライブラリーは深く査読可能なサイズに収まり、サイドチャネル攻撃に対する定数時間実装も実現できた。
 
 2014年11月、ウィーユは libsecp256k1 のテストを書きながら [CVE-2014-3570](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570) を発見・報告した。これは OpenSSL の BN_sqr（二乗）ルーチンの重大なバグで、長年 OpenSSL に潜在していた。

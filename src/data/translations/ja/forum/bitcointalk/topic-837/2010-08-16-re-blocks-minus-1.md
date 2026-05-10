@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロック数マイナス1"
+title: "Re: ブロック数マイナス 1"
 date: 2010-08-16T17:06:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「ブロック数マイナス1」におけるサトシ・ナカモトの返信。"
+description: "スレッド「ブロック数マイナス 1」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVN rev 137で対応した。
+SVN rev 137 で対応した。

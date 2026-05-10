@@ -1,5 +1,5 @@
 ---
-title: "sendtoaddress APIコールの変更提案"
+title: "sendtoaddress API コールの変更提案"
 date: 2010-08-13T19:28:23.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,23 +8,23 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "ギャビン・アンドレセンがスレッドを開始: BitcoinTalkトピック807。"
+description: "ギャビン・アンドレセンがスレッドを開始: BitcoinTalk トピック 807。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-BitcoinのJSON-RPC APIに一つ小さな変更を提案する：Bitcoinの送信が成功した際にトランザクションIDを返すようにする。
+Bitcoin の JSON-RPC API に一つ小さな変更を提案する：Bitcoin の送信が成功した際にトランザクション ID を返すようにする。
 
-なぜか？アプリケーションのウォレットに出入りするすべてのコインの完全な監査証跡を保持したいからだ。アプリケーションが行うアクションに対応するBitcoinネットワーク上の特定のトランザクションを追跡したい。代替案はsendtoaddressを呼んでからlisttransactionsを呼ぶことだが、2つの類似したトランザクション（同じ金額を同じアドレスに）がほぼ同時に発生した場合、正しく動作しない。
+なぜか？アプリケーションのウォレットに出入りするすべてのコインの完全な監査証跡を保持したいからだ。アプリケーションが行うアクションに対応する Bitcoin ネットワーク上の特定のトランザクションを追跡したい。代替案は sendtoaddress を呼んでから listtransactions を呼ぶことだが、2 つの類似したトランザクション（同じ金額を同じアドレスに）がほぼ同時に発生した場合、正しく動作しない。
 
-そこで、最もシンプルなことを提案する：JSON-RPCのsendtoaddressコールを変更して、文字列'sent:'の後に256ビットの16進数トランザクションIDを返すようにする。
+そこで、最もシンプルなことを提案する：JSON-RPC の sendtoaddress コールを変更して、文字列'sent:'の後に 256 ビットの 16 進数トランザクション ID を返すようにする。
 
-これは、正確に文字列'sent'を探しているアプリケーションを壊す可能性がある（現在のsendtoaddressの返り値がそれだ）。修正は文字列が'sent'で始まるかどうかを確認するようにアプリを変更するだけだ。
+これは、正確に文字列'sent'を探しているアプリケーションを壊す可能性がある（現在の sendtoaddress の返り値がそれだ）。修正は文字列が'sent'で始まるかどうかを確認するようにアプリを変更するだけだ。
 
 考えたが良くないと思う代替案：
- + 古いアプリを壊さないよう新しいAPIコールにする（sendtoaddress2？ダサい）
- + 送信成功時に'sent:...'の代わりにトランザクションIDのみを返す
+ + 古いアプリを壊さないよう新しい API コールにする（sendtoaddress2？ダサい）
+ + 送信成功時に'sent:...'の代わりにトランザクション ID のみを返す
  + より多くの情報を含む配列を返す（例えば [ "tx_id": "...", "fee" : 0.0 ]）
 
 コメント/批判は？

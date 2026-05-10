@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin自動販売機（高速トランザクション問題）"
+title: "Bitcoin 自動販売機（高速トランザクション問題）"
 date: 2010-07-16T17:33:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "insti"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Instiがスレッドを開始: Bitcoin自動販売機（高速トランザクション問題）"
+description: "Insti がスレッドを開始: Bitcoin 自動販売機（高速トランザクション問題）"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -22,7 +22,7 @@ translationStatus: complete
 2) ？
 3) 甘いお菓子を食べながら立ち去る。（利益！）
 
-トランザクションの承認に1時間も待ちたくはありません。
+トランザクションの承認に 1時間も待ちたくはありません。
 自動販売機の会社も、大量のお菓子を無料で配りたくはありません。
 
-ステップ2はどのように機能するのでしょうか？
+ステップ 2 はどのように機能するのでしょうか？

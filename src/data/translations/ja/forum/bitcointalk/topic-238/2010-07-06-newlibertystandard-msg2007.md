@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin 0.3リリース！"
+title: "Re: Bitcoin 0.3 リリース！"
 date: 2010-07-06T21:37:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック238におけるNewLibertyStandardの文脈投稿。msg2004の後。"
+description: "BitcoinTalk トピック 238 における NewLibertyStandard の文脈投稿。msg2004 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

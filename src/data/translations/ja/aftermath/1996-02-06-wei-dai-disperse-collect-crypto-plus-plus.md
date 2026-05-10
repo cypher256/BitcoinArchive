@@ -1,5 +1,5 @@
 ---
-title: "ウェイ・ダイがDisperse/Collectを発表 ― 自作のCrypto++ライブラリを使用"
+title: "ウェイ・ダイが Disperse/Collect を発表 ― 自作の Crypto++ライブラリを使用"
 date: 1996-02-06T00:00:00Z
 type: "article"
 source: "cypherpunks-mailing-list"
@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サイファーパンクメーリングリストでのDisperse/Collect 1.0発表。自作のCrypto++ライブラリ使用と明記し、ダイが理論家ではなく実装者であったことを示す。"
+description: "サイファーパンクメーリングリストでの Disperse/Collect 1.0 発表。自作の Crypto++ライブラリ使用と明記し、ダイが理論家ではなく実装者であったことを示す。"
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -16,7 +16,7 @@ tags:
   - "cypherpunks"
   - "coding"
   - "historic"
-editorNote: "この投稿は、ウェイ・ダイが実際にコードを書き、リリースし、保守していた実践的なプログラマーであったことを示す証拠だ。彼が後にb-money（1998年）を実装しなかったのは、技術的能力の不足ではなかった ― 2014年のLessWrongでの本人の告白（「クリプト・アナーキーに幻滅を感じていた」）が裏付けるように、意図的な選択だった。「できなかった」と「しなかった」の区別は、ビットコインに至る知的歴史を理解する上で極めて重要だ。"
+editorNote: "この投稿は、ウェイ・ダイが実際にコードを書き、リリースし、保守していた実践的なプログラマーであったことを示す証拠だ。彼が後に b-money（1998年）を実装しなかったのは、技術的能力の不足ではなかった ― 2014年の LessWrong での本人の告白（「クリプト・アナーキーに幻滅を感じていた」）が裏付けるように、意図的な選択だった。「できなかった」と「しなかった」の区別は、ビットコインに至る知的歴史を理解する上で極めて重要だ。"
 secondarySources:
   - name: "Crypto++ Library"
     url: "https://www.cryptopp.com/"

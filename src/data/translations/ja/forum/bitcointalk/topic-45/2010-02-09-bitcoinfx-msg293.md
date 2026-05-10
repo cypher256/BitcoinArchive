@@ -1,5 +1,5 @@
 ---
-title: "Re: 「Bitcoin受付中」ロゴを作ろう"
+title: "Re: 「Bitcoin 受付中」ロゴを作ろう"
 date: 2010-02-09T15:04:26.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック45におけるBitcoinFXの文脈投稿。msg278の後。"
+description: "BitcoinTalk トピック 45 における BitcoinFX の文脈投稿。msg278 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

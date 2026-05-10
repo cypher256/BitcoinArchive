@@ -1,5 +1,5 @@
 ---
-title: "「Bitcoin受付中」ロゴを作ろう"
+title: "「Bitcoin 受付中」ロゴを作ろう"
 date: 2010-02-07T00:27:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,12 +10,12 @@ participants:
     slug: "martti-malmi"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "マルッティ・マルミ (sirius) がスレッドを開始: 「Bitcoin受付中」ロゴを作ろう"
+description: "マルッティ・マルミ (sirius) がスレッドを開始: 「Bitcoin 受付中」ロゴを作ろう"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-皆さん、グラフィックエディターを開いて「Bitcoin受付中」ロゴを作りませんか。見栄えの良いロゴ（できれば私のものより良いもの）があれば本当に役に立つと思います。
+皆さん、グラフィックエディターを開いて「Bitcoin 受付中」ロゴを作りませんか。見栄えの良いロゴ（できれば私のものより良いもの）があれば本当に役に立つと思います。
 
 最初のバージョンを添付しました。

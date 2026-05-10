@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-14T17:55:37.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがMinGW GCC 4.5での32ビットテスト結果を報告し、Core 2でストック比50%低下を確認。"
+description: "サトシ・ナカモトが MinGW GCC 4.5 での 32 ビットテスト結果を報告し、Core 2 でストック比 50%低下を確認。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-MinGW GCC 4.5で32ビットのテストが動作した。Core 2ではストック版の正確に50%低下だ。
+MinGW GCC 4.5 で 32 ビットのテストが動作した。Core 2 ではストック版の正確に 50%低下だ。

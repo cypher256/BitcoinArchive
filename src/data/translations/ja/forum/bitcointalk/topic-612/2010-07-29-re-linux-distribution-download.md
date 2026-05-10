@@ -1,5 +1,5 @@
 ---
-title: "Re: Linuxディストリビューションのダウンロード"
+title: "Re: Linux ディストリビューションのダウンロード"
 date: 2010-07-29T22:17:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが9.04または9.10に留まるべきだったと認め、Ubuntuを使い続ける方針を表明。"
+description: "サトシ・ナカモトが 9.04 または 9.10 に留まるべきだったと認め、Ubuntu を使い続ける方針を表明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-ええ、9.04か9.10に留まるべきだったと痛感している。ダウングレードはアップグレードよりもずっと手間がかかるし、時間に追われている。Ubuntuが最も人気のあるディストロなので、これを使い続ける。
+ええ、9.04 か 9.10 に留まるべきだったと痛感している。ダウングレードはアップグレードよりもずっと手間がかかるし、時間に追われている。Ubuntu が最も人気のあるディストロなので、これを使い続ける。

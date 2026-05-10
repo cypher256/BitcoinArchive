@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック419におけるNewLibertyStandardの文脈投稿。msg3830で引用。"
+description: "BitcoinTalk トピック 419 における NewLibertyStandard の文脈投稿。msg3830 で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-バージョン0.3はポートフォワーディングしていないクライアントの発信接続を15から8に減らすはずだったが、実際には起きていないと思う。確信は持てない。間違っていたら訂正してほしい。
+バージョン 0.3 はポートフォワーディングしていないクライアントの発信接続を 15 から 8 に減らすはずだったが、実際には起きていないと思う。確信は持てない。間違っていたら訂正してほしい。

@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin.orgのバックアップ"
+title: "Bitcoin.org のバックアップ"
 date: 2010-12-20T15:55:04Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがコミュニティ提案のbitcoin.orgミラーリング方法を共有し、信頼できるメンバーへのデータベース共有かPGP暗号化バックアップかを検討。"
+description: "マルミがコミュニティ提案の bitcoin.org ミラーリング方法を共有し、信頼できるメンバーへのデータベース共有か PGP 暗号化バックアップかを検討。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：<br>
+ShadowOfHarbringer が bitcoin.org のウェブサイトとフォーラムのミラーリング方法をここで説明しています：<br>
 http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 
-この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきでしょうか？もう一つの選択肢は、バックアップをPGPで暗号化して複数の場所に保管することです。
+この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきでしょうか？もう一つの選択肢は、バックアップを PGP で暗号化して複数の場所に保管することです。

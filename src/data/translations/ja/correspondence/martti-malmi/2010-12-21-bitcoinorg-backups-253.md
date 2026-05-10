@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin.orgのバックアップ"
+title: "Re: Bitcoin.org のバックアップ"
 date: 2010-12-21T13:44:02Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがGPG暗号化されたbitcoin.orgの日次バックアップファイルを取得するためのwgetコマンドと認証情報を提供。"
+description: "マルミが GPG 暗号化された bitcoin.org の日次バックアップファイルを取得するための wget コマンドと認証情報を提供。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -28,4 +28,4 @@ translationStatus: complete
 wget --no-check-certificate<br>
 https://backup:cAr26Ram@www.bitcoin.org/backup/bitcoinsite.tar.bz2.gpg
 
-毎日GMT 11:00に更新されます。
+毎日 GMT 11:00 に更新されます。

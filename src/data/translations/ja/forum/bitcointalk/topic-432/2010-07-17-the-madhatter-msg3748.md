@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック432におけるThe Madhatterの文脈投稿。msg3769の前。"
+description: "BitcoinTalk トピック 432 における The Madhatter の文脈投稿。msg3769 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,7 +16,7 @@ translationStatus: complete
 
 これを見てくれ……
 
-0.3.1を2台の別々のマシンにインストールして、1 bitpenny（0.01）を移動した：
+0.3.1 を 2 台の別々のマシンにインストールして、1 bitpenny（0.01）を移動した：
 
 **-= 送金前 =-**
 
@@ -68,4 +68,4 @@ translationStatus: complete
 
 個人的には表示の問題だと思うが、確信は持てない……変だろう？
 
-両マシンともFreeBSD 7.2/amd64で動かしている。
+両マシンとも FreeBSD 7.2/amd64 で動かしている。

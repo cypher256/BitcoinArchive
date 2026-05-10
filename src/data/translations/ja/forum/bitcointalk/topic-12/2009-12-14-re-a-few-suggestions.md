@@ -25,19 +25,19 @@ quotes:
 > 誰かここについて教えてくれないか？
 <!-- /tone-skip -->
 
-std::stringからwxStringへの暗黙の変換が機能していないようだ。これはあらゆるところで使用されており、変換が動作する必要がある。
+std::string から wxString への暗黙の変換が機能していないようだ。これはあらゆるところで使用されており、変換が動作する必要がある。
 
-wxStringはwin32の16ビットwcharと8ビットansiのデュアルコンパイルをサポートするため複雑だ。Windowsでは「unicode」（つまりwchar）ビルドを使用した場合にこの問題が発生する可能性があり、その場合wxStringはwcharでstd::stringはcharになる。
+wxString は win32 の 16 ビット wchar と 8 ビット ansi のデュアルコンパイルをサポートするため複雑だ。Windows では「unicode」（つまり wchar）ビルドを使用した場合にこの問題が発生する可能性があり、その場合 wxString は wchar で std::string は char になる。
 
-おそらくwxWidgetsのコンパイル定義やビルド設定の問題だろう。「configure」でどのオプションを使用したか？
+おそらく wxWidgets のコンパイル定義やビルド設定の問題だろう。「configure」でどのオプションを使用したか？
 
-__WXMAC__が正しい定義かわからない。wxStringを複雑にしているのはMac Classicサポートかもしれないが、私たちはOSXだけが必要だ。__WXOSX__を試してみてほしい（または以下を参照）
+__WXMAC__が正しい定義かわからない。wxString を複雑にしているのは Mac Classic サポートかもしれないが、私たちは OSX だけが必要だ。__WXOSX__を試してみてほしい（または以下を参照）
 
 [http://docs.wxwidgets.org/stable/wx_cppconst.html](http://docs.wxwidgets.org/stable/wx_cppconst.html)
 <!-- tone-skip -->
-「wxWidgetsにはMac OSへの2つの移植があります。そのうちの1つ、wxMacにはClassicとCarbonの2つのバージョンがあります。ClassicバージョンはMac OSバージョン8で動作する唯一のものです。CarbonバージョンはCFMまたはMach-O（ELFのようなバイナリフォーマット）としてビルドでき、前者はOS 9で動作し、後者はOS Xでのみ動作します。最後に、OS Xでのみ使用できる新しいCocoaポートがあります。まとめると：
+「wxWidgets には Mac OS への 2 つの移植があります。そのうちの 1 つ、wxMac には Classic と Carbon の 2 つのバージョンがあります。Classic バージョンは Mac OS バージョン 8 で動作する唯一のものです。Carbon バージョンは CFM または Mach-O（ELF のようなバイナリフォーマット）としてビルドでき、前者は OS 9 で動作し、後者は OS X でのみ動作します。最後に、OS X でのみ使用できる新しい Cocoa ポートがあります。まとめると：
 
-    * ClassicとOS Xを含むすべてのMacプラットフォームをテストしたい場合は、__WXMAC__と__WXCOCOA__の両方をテストしてください。
-    * OS X上の任意のGUI Macポートをテストしたい場合は、__WXOSX__を使用してください。
-    * wxGTKやwxBaseを含むMac OS X上の任意のポートをテストしたい場合は、__DARWIN__を使用してください」
+    * Classic と OS X を含むすべての Mac プラットフォームをテストしたい場合は、__WXMAC__と__WXCOCOA__の両方をテストしてください。
+    * OS X 上の任意の GUI Mac ポートをテストしたい場合は、__WXOSX__を使用してください。
+    * wxGTK や wxBase を含む Mac OS X 上の任意のポートをテストしたい場合は、__DARWIN__を使用してください」
 <!-- /tone-skip -->

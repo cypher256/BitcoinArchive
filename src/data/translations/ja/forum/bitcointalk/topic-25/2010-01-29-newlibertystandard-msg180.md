@@ -1,5 +1,5 @@
 ---
-title: "Re: 初心者のテスト - 1ドルで写真を買いたい人はいる？"
+title: "Re: 初心者のテスト - 1 ドルで写真を買いたい人はいる？"
 date: 2010-01-29T02:38:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック25におけるNewLibertyStandardの文脈投稿。msg173の後。"
+description: "BitcoinTalk トピック 25 における NewLibertyStandard の文脈投稿。msg173 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

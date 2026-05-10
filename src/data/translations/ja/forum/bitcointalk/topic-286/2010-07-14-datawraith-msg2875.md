@@ -8,7 +8,7 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック286におけるDataWraithの投稿。"
+description: "BitcoinTalk トピック 286 における DataWraith の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -26,7 +26,7 @@ quotes:
 
 実際にはそうでもない。心配なら、自分自身のサーバーをいつでも運用できる。
 
-何も問題ない。たまたまそのスーパーノードの一つを使っている場合を除けば。使う必要はない。自分でスーパーノードを運用すればいい。あるいは、人々がGoogleにメールを任せるように、信頼できるノードを使えばいい。
+何も問題ない。たまたまそのスーパーノードの一つを使っている場合を除けば。使う必要はない。自分でスーパーノードを運用すればいい。あるいは、人々が Google にメールを任せるように、信頼できるノードを使えばいい。
 
 実装がより簡単だというわけではないだろう？ここは根拠を示してほしい。
 

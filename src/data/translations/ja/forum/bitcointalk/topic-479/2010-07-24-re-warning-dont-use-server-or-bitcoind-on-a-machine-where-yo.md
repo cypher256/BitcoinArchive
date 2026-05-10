@@ -1,5 +1,5 @@
 ---
-title: "Re: 警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）"
+title: "Re: 警告: ウェブブラウジングするマシンで-server や bitcoind を使用しないでください（v0.3.2 以前）"
 date: 2010-07-24T02:29:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「警告: ウェブブラウジングするマシンで-server や bitcoind を使用しないでください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.3のJSON-RPC HTTP認証機能がこの問題を解決する。
+0.3.3 の JSON-RPC HTTP 認証機能がこの問題を解決する。

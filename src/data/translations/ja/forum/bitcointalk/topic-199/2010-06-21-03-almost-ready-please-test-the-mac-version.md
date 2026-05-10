@@ -1,5 +1,5 @@
 ---
-title: "0.3ほぼ完成"
+title: "0.3 ほぼ完成"
 date: 2010-06-21T19:01:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがスレッドを開始: 0.3ほぼ完成"
+description: "サトシ・ナカモトがスレッドを開始: 0.3 ほぼ完成"
 isSatoshi: true
 tags: []
 translationStatus: complete
 ---
 
-バージョン0.3のやることリストをすべて完了した。SVN上のコードはリリースの準備がほぼ整った。
+バージョン 0.3 のやることリストをすべて完了した。SVN 上のコードはリリースの準備がほぼ整った。
 
 この時点でのテストは大変ありがたい。

@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3.1リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3.1 リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,4 +18,4 @@ translationStatus: complete
 
 非公開スイッチ -minimizetotray を付けて実行すると、オプションメニューからそのオプションが利用可能になる。
 
-修正方法がわからない。wxWidgets、GTK、またはGnomeの内部深くにある何かの問題だ。
+修正方法がわからない。wxWidgets、GTK、または Gnome の内部深くにある何かの問題だ。

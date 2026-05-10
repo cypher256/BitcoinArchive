@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu用ビルドは？"
+title: "Re: Ubuntu 用ビルドは？"
 date: 2010-08-03T20:56:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが0.3.7にnoWxパッチが含まれていることを確認。"
+description: "サトシ・ナカモトが 0.3.7 に noWx パッチが含まれていることを確認。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,4 +27,4 @@ quotes:
 > サトシのnoWxパッチは0.3.7にもう入っているのか？以前はbitcoindにwxが必要で、それがtrunkに入ったとサトシが発表したのを見たことがない
 <!-- /tone-skip -->
 
-はい、0.3.7に入っている。rev 112だった。
+はい、0.3.7 に入っている。rev 112 だった。

@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック550におけるNewLibertyStandardの文脈投稿。msg5349の後。"
+description: "BitcoinTalk トピック 550 における NewLibertyStandard の文脈投稿。msg5349 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -22,4 +22,4 @@ translationStatus: complete
 <!-- quote: q1 -->
 > これは君がセットアップしたテストネットワーク用なのか、それとも現行のパブリックネットワーク用なのか？
 
-これは通常のネットワーク用だ。テストネットワークには効果的にテストできるだけのブロック数がない。私の見る限り、satoshiのビルドは特に指定がない限り常にライブネットワーク向けだ。
+これは通常のネットワーク用だ。テストネットワークには効果的にテストできるだけのブロック数がない。私の見る限り、satoshi のビルドは特に指定がない限り常にライブネットワーク向けだ。

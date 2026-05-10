@@ -1,5 +1,5 @@
 ---
-title: "Re: Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）"
+title: "Re: Y2038 準拠の Bitcoin への移行計画はどうなる？（すでに準拠済み）"
 date: 2010-08-10T05:44:12.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック760におけるthroughputの文脈投稿。after msg8413, サトシを引用."
+description: "BitcoinTalk トピック 760 における throughput の文脈投稿。after msg8413, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

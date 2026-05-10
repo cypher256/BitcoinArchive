@@ -1,5 +1,5 @@
 ---
-title: "警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）"
+title: "警告: ウェブブラウジングするマシンで-server や bitcoind を使用しないでください（v0.3.2 以前）"
 date: 2010-07-19T16:01:38.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿: \"警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）\"."
+description: "サトシ・ナカモトの投稿: \"警告: ウェブブラウジングするマシンで-server や bitcoind を使用しないでください（v0.3.2 以前）\"."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,9 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-ウェブブラウザーを使用するマシンで-serverまたは-daemonスイッチを使用したり、bitcoindを実行したりしないでほしい。127.0.0.1（ローカルループバックアドレス）のポート8332を開くが、ウェブブラウザーがそこにクロスサイトアクセスできないと思うかもしれないが、実は可能だ。
+ウェブブラウザーを使用するマシンで-server または-daemon スイッチを使用したり、bitcoind を実行したりしないでほしい。127.0.0.1（ローカルループバックアドレス）のポート 8332 を開くが、ウェブブラウザーがそこにクロスサイトアクセスできないと思うかもしれないが、実は可能だ。
 
-JSON-RPCインターフェースにパスワードを付けるリリースに近々取り組んでいるが、それまでは-serverスイッチの使用を避け、bitcoindが動作しているのと同じマシンでウェブブラウジングをしないでほしい。
+JSON-RPC インターフェースにパスワードを付けるリリースに近々取り組んでいるが、それまでは-server スイッチの使用を避け、bitcoind が動作しているのと同じマシンでウェブブラウジングをしないでほしい。
 
 更新:
-0.3.3のJSON-RPC HTTP認証機能がこの問題を解決する。
+0.3.3 の JSON-RPC HTTP 認証機能がこの問題を解決する。

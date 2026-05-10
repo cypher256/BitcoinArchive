@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-予備的な変更だ。正しいだろうか？ まだ変更することがある。これがすべてではない。間もなくSVNにコミットする。
+予備的な変更だ。正しいだろうか？ まだ変更することがある。これがすべてではない。間もなく SVN にコミットする。
 
 ```cpp
     bool CheckTransaction() const

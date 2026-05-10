@@ -8,7 +8,7 @@ author: "bytemaster"
 participants:
   - name: "Daniel Larimer"
     slug: "daniel-larimer"
-description: "BitcoinTalkトピック532におけるbytemasterの文脈投稿。msg6306の後。"
+description: "BitcoinTalk トピック 532 における bytemaster の文脈投稿。msg6306 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

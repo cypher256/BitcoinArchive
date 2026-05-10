@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-24T17:40:05.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,17 +16,17 @@ secondarySources:
 translationStatus: complete
 ---
 
-テスト用のLinux版RC1はこちらだ:
+テスト用の Linux 版 RC1 はこちらだ:
 （リンク削除済み、下記参照）
 
-32ビットと64ビットの両方のバイナリが含まれている。
+32 ビットと 64 ビットの両方のバイナリが含まれている。
 
 最近の変更:
 
 build-unix.txt:
-- bitcoindのコンパイルに必要なwxBaseのビルド手順を追加。
-- libboost-devパッケージは何もインストールしなくなったため、libboost-all-devを取得する必要がある。
+- bitcoind のコンパイルに必要な wxBase のビルド手順を追加。
+- libboost-dev パッケージは何もインストールしなくなったため、libboost-all-dev を取得する必要がある。
 - バージョン番号を更新。
 
 makefile.unix:
-- libboostライブラリは1.40でファイル名から"-mt"を削除した。Ubuntu KarmicのようにBoost 1.38以下でコンパイルする場合は、boost_system-mtとboost_filesystem-mtに戻す必要がある。
+- libboost ライブラリは 1.40 でファイル名から"-mt"を削除した。Ubuntu Karmic のように Boost 1.38 以下でコンパイルする場合は、boost_system-mt と boost_filesystem-mt に戻す必要がある。

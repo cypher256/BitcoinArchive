@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoindがRPCに応答しない"
+title: "Re: bitcoind が RPC に応答しない"
 date: 2010-07-23T16:39:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック548におけるThe Madhatterの文脈投稿。msg5339の前。"
+description: "BitcoinTalk トピック 548 における The Madhatter の文脈投稿。msg5339 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-奇妙だ。PHPからbitcoindをほぼ毎日使っているが、そんなことに遭遇したことがない。
+奇妙だ。PHP から bitcoind をほぼ毎日使っているが、そんなことに遭遇したことがない。

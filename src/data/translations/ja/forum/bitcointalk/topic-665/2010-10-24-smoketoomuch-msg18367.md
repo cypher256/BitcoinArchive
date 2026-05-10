@@ -1,5 +1,5 @@
 ---
-title: "Re: 複数のウォレット、1台のコンピューター"
+title: "Re: 複数のウォレット、1 台のコンピューター"
 date: 2010-10-24T20:58:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック665におけるSmokeTooMuchの文脈投稿。msg18508の前。"
+description: "BitcoinTalk トピック 665 における SmokeTooMuch の文脈投稿。msg18508 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -26,4 +26,4 @@ quotes:
 > 各「受信アドレス」ごとの残高を一覧表示し、コイン送信時に「送信元」アドレスを指定できるようにするだけでも助かるだろう。
 <!-- /tone-skip -->
 
--datadirを使い、ソースコードでポートを変更し、Bitcoinインスタンスごとに異なるディレクトリとポートを使えばいい。
+-datadir を使い、ソースコードでポートを変更し、Bitcoin インスタンスごとに異なるディレクトリとポートを使えばいい。

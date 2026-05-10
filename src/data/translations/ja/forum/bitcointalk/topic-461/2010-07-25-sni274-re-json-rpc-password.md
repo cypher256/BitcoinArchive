@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-25T21:44:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCパスワード」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC パスワード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,6 +27,6 @@ quotes:
 <!-- /tone-skip -->
 おかしいな。誰かがそれでうまく動くと言っていなかったか？（彼はどのライブラリを使っていたのだろうか？）何が問題かわかったら投稿してくれ。
 
-すべてのPHPユーザーにとってこれほど苦労することにならないことを願う。
+すべての PHP ユーザーにとってこれほど苦労することにならないことを願う。
 
-Fortranのシナリオがもう実現してしまったようだな。
+Fortran のシナリオがもう実現してしまったようだな。

@@ -8,7 +8,7 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalkトピック823におけるGround Loopの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 823 における Ground Loop の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -40,10 +40,10 @@ translationStatus: complete
 > 50 BTCが消えるのは、ブロック 74638以降に不正チェーンでブロックを生成した場合だけだ。不正チェーンで生成したブロックは、いずれにしてもまだ成熟していないはずだ。
 
 興味深い。このシステムの奥底をどのように進んでいくかを見るのは魅力的だ。
-私が生成したのはブロック 73746だった。
+私が生成したのはブロック 73746 だった。
     CTxOut(nValue=50.00000000, scriptPubKey=0x8DDD5C7DADB2D43AC5F186)
 08/12/10 02:35 generated 50.00
 
-そしてそのうち49.00を 19Nzg21hQQDAY5GTdTTuUVPA4MaE7AusXz に送った（壊れたチェーンを使って）。
+そしてそのうち 49.00 を 19Nzg21hQQDAY5GTdTTuUVPA4MaE7AusXz に送った（壊れたチェーンを使って）。
 
 今は、そのノードが受信に気付き、新しいチェーンを使うようになるのを待っている。

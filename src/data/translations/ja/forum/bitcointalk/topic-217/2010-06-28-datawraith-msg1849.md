@@ -8,10 +8,10 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック217におけるDataWraithの文脈投稿。msg1827の後。"
+description: "BitcoinTalk トピック 217 における DataWraith の文脈投稿。msg1827 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-lachesisとNLSに賛成だ。バージョン1.0の方が宣伝効果が高いし、一般的に「もうベータは終わったが、すべてが完璧だと期待してはいけない」という意味に取られる。
+lachesis と NLS に賛成だ。バージョン 1.0 の方が宣伝効果が高いし、一般的に「もうベータは終わったが、すべてが完璧だと期待してはいけない」という意味に取られる。

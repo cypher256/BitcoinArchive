@@ -10,7 +10,7 @@ participants:
     slug: "hostfat"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "HostFatがスレッドを開始: ウェブサイトとソフトウェアの翻訳"
+description: "HostFat がスレッドを開始: ウェブサイトとソフトウェアの翻訳"
 isSatoshi: false
 tags: []
 translationStatus: complete

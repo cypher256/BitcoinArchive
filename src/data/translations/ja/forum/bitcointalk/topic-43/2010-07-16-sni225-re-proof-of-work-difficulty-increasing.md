@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-07-16T18:43:51.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Proof-of-Work難易度の上昇」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Proof-of-Work 難易度の上昇」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,9 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-その通りだ。難易度調整は、ネットワーク全体で平均して1時間あたり6ブロックを生成するように維持しようとしている。ブロックが成熟するまでの時間は常に約20時間だ。
+その通りだ。難易度調整は、ネットワーク全体で平均して 1時間あたり 6 ブロックを生成するように維持しようとしている。ブロックが成熟するまでの時間は常に約 20時間だ。
 
-最近の調整により、再び1時間あたり約6ブロックに近づいた。
+最近の調整により、再び 1時間あたり約 6 ブロックに近づいた。
 
-ブロック間の時間を確認できるサイトがあり、ブロック 68545以降は1ブロックあたり約10分に近くなっている:
+ブロック間の時間を確認できるサイトがあり、ブロック 68545 以降は 1 ブロックあたり約 10分に近くなっている:
 [http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php)

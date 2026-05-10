@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-15T18:33:23Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "python-json-rpcをダウンロードして、Pythonインタプリタで直接テストしました。"
+description: "python-json-rpc をダウンロードして、Python インタプリタで直接テストしました。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -43,7 +43,7 @@ quotes:
 > 一から調べなくて済むので。
 
 <!-- speaker: Martti Malmi -->
-python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）をSVNからダウンロードして、Pythonインタプリタで直接テストしました。こんな感じですよ：
+python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）を SVN からダウンロードして、Python インタプリタで直接テストしました。こんな感じですよ：
 
 pythons = ServiceProxy("http://localhost:8332")
 s.getblockcount()

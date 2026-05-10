@@ -18,5 +18,5 @@ relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
 ---
 
-少なくともPayPalの平均トランザクション処理速度には対応できるようにすべきである……
+少なくとも PayPal の平均トランザクション処理速度には対応できるようにすべきである……
 

@@ -47,30 +47,30 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2024年10月8日、HBOがドキュメンタリー「Money Electric: The Bitcoin Mystery」を公開した。監督はカレン・ホーバック（「Q: Into the Storm」で知られる）。作品はBitcoin Core開発者[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)を、ビットコインの匿名の創設者[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の候補として名指しした。
+2024年10月8日、HBO がドキュメンタリー「Money Electric: The Bitcoin Mystery」を公開した。監督はカレン・ホーバック（「Q: Into the Storm」で知られる）。作品は Bitcoin Core 開発者[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)を、ビットコインの匿名の創設者[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の候補として名指しした。
 
 **フォーラム投稿理論：**
 
 <!-- speaker: narrator -->
-ドキュメンタリーの中心的な証拠は、2010年12月のBitcoinTalkでのやり取りだった。サトシがトランザクション置換——後にReplace-by-Fee（RBF）として知られる概念——を説明した。その約1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peterの逆綴り）が技術的な指摘で返信した。
+ドキュメンタリーの中心的な証拠は、2010年12月の BitcoinTalk でのやり取りだった。サトシがトランザクション置換——後に Replace-by-Fee（RBF）として知られる概念——を説明した。その約 1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peter の逆綴り）が技術的な指摘で返信した。
 
 <!-- speaker: Peter Todd -->
 > 「もちろん、正確に言えば、2つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
 
 <!-- speaker: narrator -->
-これはトッドのBitcoinTalkでの2回目の投稿で、登録からわずか3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は2日後の12月12日だった。
+これはトッドの BitcoinTalk での 2回目の投稿で、登録からわずか 3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2日後の 12月12日だった。
 
-**RBFとの接続：**
+**RBF との接続：**
 
 <!-- speaker: narrator -->
-ドキュメンタリーは、このやり取りからトッドが後に[BIP 125](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/)（2015年）でReplace-by-Feeを正式化した事実への線を引き、トッドはサトシが始めたことを完成させた——同一人物だから——と論じた。ホーバックはまた、トッドが以前RBFパッチを別名義で提出していたことにも言及し、異なる正体で活動するパターンがあると示唆した。
+ドキュメンタリーは、このやり取りからトッドが後に [BIP 125](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/)（2015年）で Replace-by-Fee を正式化した事実への線を引き、トッドはサトシが始めたことを完成させた——同一人物だから——と論じた。ホーバックはまた、トッドが以前 RBF パッチを別名義で提出していたことにも言及し、異なる正体で活動するパターンがあると示唆した。
 
 **その他の状況証拠：**
 
 <!-- speaker: narrator -->
-- ビットコインが誕生した2008〜2009年当時、トッドはOCAD University（2011年卒）で美術の学位を取得中だった
-- [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、グレゴリー・マクスウェルとのBlockstreamでの関係
-- ブロックサイズ論争中の2014年にサトシのアドレスから送信されたとされるメール
+- ビットコインが誕生した 2008〜2009年当時、トッドは OCAD University（2011年卒）で美術の学位を取得中だった
+- [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、グレゴリー・マクスウェルとの Blockstream での関係
+- ブロックサイズ論争中の 2014年にサトシのアドレスから送信されたとされるメール
 
 **トッドの反応：**
 
@@ -81,17 +81,17 @@ translationStatus: complete
 > 「もちろん俺がサトシだ。ついでにクレイグ・ライトでもある」
 
 <!-- speaker: narrator -->
-トッドは皮肉と怒りをもって主張を退けた。ドキュメンタリーを「無責任だ」と呼び、推定700億ドルのビットコインの保有者として名指しされることは身の安全を脅かすと述べた。トッドは、自分がビットコインに取り組み始めたのは2014年——ナカモトの消失から6年後——だと主張した。
+トッドは皮肉と怒りをもって主張を退けた。ドキュメンタリーを「無責任だ」と呼び、推定 700 億ドルのビットコインの保有者として名指しされることは身の安全を脅かすと述べた。トッドは、自分がビットコインに取り組み始めたのは 2014年——ナカモトの消失から 6年後——だと主張した。
 
 **批判的な評価：**
 
 <!-- speaker: narrator -->
-ドキュメンタリーはビットコインコミュニティから広く批判された。Bitcoin Magazineは「ビットコインへの侮辱——皮肉で、愚かで、危険」と題した記事を掲載した。批評家たちは、暗号学的証明も、文体分析も、美術系の学生がどうやって新しいコンセンサースメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
+ドキュメンタリーはビットコインコミュニティから広く批判された。Bitcoin Magazine は「ビットコインへの侮辱——皮肉で、愚かで、危険」と題した記事を掲載した。批評家たちは、暗号学的証明も、文体分析も、美術系の学生がどうやって新しいコンセンサースメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
 
 <!-- speaker: narrator -->
 トッドは後にこの作品の手法を「偶然の一致に基づく陰謀論的思考だろ」と切り捨てた。
 
-*[補足：このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する2作目の調査だった。1作目の「Q: Into the Storm」（2021年、QAnon運動を追ったシリーズ）は概ね好評だったが、「Money Electric」はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。]*
+*[補足：このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する 2 作目の調査だった。1 作目の「Q: Into the Storm」（2021年、QAnon 運動を追ったシリーズ）は概ね好評だったが、「Money Electric」はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。]*
 
 <!-- speaker: narrator -->
 トッド＝サトシ正体仮説そのものの分析的な扱い（ドキュメンタリーが提示した根拠を、トッドの年齢・OCAD 在学期間・2012 年以前のサイファーパンク参加記録・文体変遷・開発活動タイムラインに照らして検証する作業）については、[ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。

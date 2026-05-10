@@ -8,16 +8,16 @@ author: "BrightAnarchist"
 participants:
   - name: "BrightAnarchist"
     slug: "brightanarchist"
-description: "BrightAnarchistがスレッドを開始: BitcoinTalkトピック1032。"
+description: "BrightAnarchist がスレッドを開始: BitcoinTalk トピック 1032。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Bitcoinクライアントには、シンプルなメッセージの暗号化・復号システムが組み込まれているべきだと思う。おそらくBitcoinアドレス自体をベースにしたものが良いだろう。
+Bitcoin クライアントには、シンプルなメッセージの暗号化・復号システムが組み込まれているべきだと思う。おそらく Bitcoin アドレス自体をベースにしたものが良いだろう。
 
-これがあれば、biddingpondのようなサイトで取引をする際、メールでやり取りする前にPGPなどの別アプリについて合意する必要がなくなり、はるかに簡単になる。
+これがあれば、biddingpond のようなサイトで取引をする際、メールでやり取りする前に PGP などの別アプリについて合意する必要がなくなり、はるかに簡単になる。
 
-ほとんどの場合、人々は暗号化を使う手間を惜しんでいると思うが、Bitcoinで取引する際には暗号化を使うのは良いアイデアだと思う。
+ほとんどの場合、人々は暗号化を使う手間を惜しんでいると思うが、Bitcoin で取引する際には暗号化を使うのは良いアイデアだと思う。
 
 どう思う？

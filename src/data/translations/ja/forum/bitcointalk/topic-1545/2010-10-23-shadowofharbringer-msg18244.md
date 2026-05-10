@@ -1,5 +1,5 @@
 ---
-title: "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
+title: "Re: 提案：Bitcoin と一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T18:33:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1545におけるShadowOfHarbringerの文脈投稿。msg18250の前。"
+description: "BitcoinTalk トピック 1545 における ShadowOfHarbringer の文脈投稿。msg18250 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

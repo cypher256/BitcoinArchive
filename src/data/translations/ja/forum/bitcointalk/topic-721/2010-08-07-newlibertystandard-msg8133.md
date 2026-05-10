@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinの鋳造は熱力学的に逆説的"
+title: "Re: Bitcoin の鋳造は熱力学的に逆説的"
 date: 2010-08-07T18:56:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック721におけるNewLibertyStandardの文脈投稿。after msg8114, サトシを引用."
+description: "BitcoinTalk トピック 721 における NewLibertyStandard の文脈投稿。after msg8114, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu 10.04でのBitcoin"
+title: "Re: Ubuntu 10.04 での Bitcoin"
 date: 2010-06-21T09:08:36.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック149におけるvirtualcoinの文脈投稿。msg1646の前。"
+description: "BitcoinTalk トピック 149 における virtualcoin の文脈投稿。msg1646 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-初心者だが、こちらでは問題なく動いている。バージョン0.2だけど。
+初心者だが、こちらでは問題なく動いている。バージョン 0.2 だけど。
 
 [http://i45.tinypic.com/1z5knb8.jpg](http://i45.tinypic.com/1z5knb8.jpg)

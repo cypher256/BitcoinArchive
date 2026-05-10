@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-21T12:11:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,20 +8,20 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。msg4775の前。"
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg4775 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Linuxには「典型的な」設定ファイルというものはないと思う！
+Linux には「典型的な」設定ファイルというものはないと思う！
 
-自分のDebianシステムの/etcにある20個の.confファイルを手短に調べてみたところ：
- 1ファイルは"key value"を使用
- 5ファイルは"key=value"を使用（実際にはいくつかは"key = value"で、"="の前後にスペースを許容）
- 14ファイルは独自の方式
+自分の Debian システムの/etc にある 20個の.conf ファイルを手短に調べてみたところ：
+ 1 ファイルは"key value"を使用
+ 5 ファイルは"key=value"を使用（実際にはいくつかは"key = value"で、"="の前後にスペースを許容）
+ 14 ファイルは独自の方式
 
-独自の方式の14ファイルは実に様々で、1行1値から"key:value"、本格的なXMLまであった。#はLinux世界における共通のコメント文字だ。
+独自の方式の 14 ファイルは実に様々で、1 行 1 値から"key:value"、本格的な XML まであった。#は Linux 世界における共通のコメント文字だ。
 
 私の推しは：
 

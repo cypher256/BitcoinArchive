@@ -1,5 +1,5 @@
 ---
-title: "Re: Hashcashの引用 —— 「私のアイデアはまさにその点から始まっている」"
+title: "Re: Hashcash の引用 —— 「私のアイデアはまさにその点から始まっている」"
 date: 2008-08-21T17:59:48Z
 type: "correspondence"
 source: "bitcoin-magazine"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "サトシはアダム・バックにb-moneyの参照を教えてくれたことに感謝し、ウェイ・ダイの提案を以前は知らなかったことを明かした。歴史的に重要な一文「私のアイデアはまさにその点から始まっている」を記した。"
+description: "サトシがアダム・バックに b-money の参照に感謝、ウェイ・ダイの提案を以前は知らなかったと明かす。歴史的に重要な「私のアイデアはまさにその点から始まっている」を記す。"
 isSatoshi: true
 tags:
   - "hashcash"
@@ -22,7 +22,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-    note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21、2023年11月7日付）に5通の完全なメールチェーンが含まれていた。Bitcoin Magazineで公開"
+    note: "2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書 C/21、2023年11月7日付）に 5 通の完全なメールチェーンが含まれていた。Bitcoin Magazine で公開"
   - name: "CryptoSlate - Adam Back files previously unseen Satoshi emails"
     url: "https://cryptoslate.com/adam-back-files-previously-unseen-satoshi-nakamoto-emails-in-craig-wright-trial/"
 relatedEntries:

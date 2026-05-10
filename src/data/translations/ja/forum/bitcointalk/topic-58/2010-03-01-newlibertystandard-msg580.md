@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック58におけるNewLibertyStandardの文脈投稿。after msg413, サトシを引用."
+description: "BitcoinTalk トピック 58 における NewLibertyStandard の文脈投稿。after msg413, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -33,4 +33,4 @@ translationStatus: complete
 > ポート8333は開いているが、ネットワーク上のすべてのノードが俺に接続してくるとは到底思えない。
 > （ウェブサイトからダウンロードしたバージョン0.2を使っている。）
 
-クライアントは接続が15に達すると外向き接続を作るのをやめるが、ポートが開いていれば、まだ15クライアントに接続していない他のクライアントからの着信接続を受け入れ続ける。ポートが開いていなければ着信接続を受け入れられないので、15を超えるクライアントとつながることはない。
+クライアントは接続が 15 に達すると外向き接続を作るのをやめるが、ポートが開いていれば、まだ 15 クライアントに接続していない他のクライアントからの着信接続を受け入れ続ける。ポートが開いていなければ着信接続を受け入れられないので、15 を超えるクライアントとつながることはない。

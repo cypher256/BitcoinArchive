@@ -20,7 +20,7 @@ translationStatus: complete
 
 
 
-カスタムサイズに縮小するためのフルサイズ530x529画像：
+カスタムサイズに縮小するためのフルサイズ 530x529 画像：
 [http://www.bitcoin.org/download/bitcoin530.png](http://www.bitcoin.org/download/bitcoin530.png)
 
 大きいサイズでは遠近法の影が太すぎた。32、48、フルサイズを更新した。

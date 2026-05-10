@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-15T13:00:34Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！"
+description: "はい。Python の JSON-RPC でテストしましたが、問題なく動作しているようです！"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -28,4 +28,4 @@ translationStatus: complete
 > ノートパソコンを持っていないか？
 
 <!-- speaker: Martti Malmi -->
-はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。
+はい。Python の JSON-RPC でテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。

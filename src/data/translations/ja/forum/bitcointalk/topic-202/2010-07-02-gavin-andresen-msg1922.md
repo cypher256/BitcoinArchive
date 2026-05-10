@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック202におけるギャビン・アンドレセンの文脈投稿。msg2133の前。"
+description: "BitcoinTalk トピック 202 におけるギャビン・アンドレセンの文脈投稿。msg2133 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 
 楕円曲線暗号が破られることが心配なら、ビットコインに大きな資産を保管しないことだ。実際の（物理的な）ウォレットが盗まれることが心配なら、数日分の買い物に必要な以上の現金を持ち歩かないのと同じだ。
 
-ちなみに：楕円曲線暗号が破られるよりも先に、海水から金原子を経済的に分離する方法が見つかると思う（そしてどちらも今後25年以内にはありそうにないと思う）。
+ちなみに：楕円曲線暗号が破られるよりも先に、海水から金原子を経済的に分離する方法が見つかると思う（そしてどちらも今後 25年以内にはありそうにないと思う）。

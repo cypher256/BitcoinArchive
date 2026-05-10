@@ -1,5 +1,5 @@
 ---
-title: "Re: P2Pプロトコルへのデジタル決済の統合"
+title: "Re: P2P プロトコルへのデジタル決済の統合"
 date: 2010-08-22T23:57:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「P2Pプロトコルへのデジタル決済の統合」におけるサトシ・ナカモトの返信。"
+description: "スレッド「P2P プロトコルへのデジタル決済の統合」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,4 +18,4 @@ translationStatus: complete
 
 やあ、Zooko！
 
-1〜2年前にCryptographyメーリングリストでBitcoinを発表した時に、あなたのブログでBitcoinについて投稿してくれたことに感謝したいと思う。
+1〜2年前に Cryptography メーリングリストで Bitcoin を発表した時に、あなたのブログで Bitcoin について投稿してくれたことに感謝したいと思う。

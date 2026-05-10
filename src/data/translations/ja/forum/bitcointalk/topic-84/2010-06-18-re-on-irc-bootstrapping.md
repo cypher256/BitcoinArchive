@@ -1,5 +1,5 @@
 ---
-title: "Re: IRCブートストラッピングについて"
+title: "Re: IRC ブートストラッピングについて"
 date: 2010-06-18T17:28:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「IRCブートストラッピングについて」におけるサトシ・ナカモトの返信。"
+description: "スレッド「IRC ブートストラッピングについて」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVNバージョンでは、まずIRCを試し、それが失敗した場合はハードコードされたシードノードのリストにフォールバックするようになった。次のリリースまでにシードノードの多くがまだ稼働しているはずだ。シードノードにはアドレスリストを取得するために一時的に接続してすぐに切断するので、接続がしばらくゼロに戻る。その時点では辛抱してほしい。接続が遅いのは初回だけだ。
+SVN バージョンでは、まず IRC を試し、それが失敗した場合はハードコードされたシードノードのリストにフォールバックするようになった。次のリリースまでにシードノードの多くがまだ稼働しているはずだ。シードノードにはアドレスリストを取得するために一時的に接続してすぐに切断するので、接続がしばらくゼロに戻る。その時点では辛抱してほしい。接続が遅いのは初回だけだ。
 
-これにより、TORユーザーは-addnodeを使う必要がなくなり、自動的に接続される。
+これにより、TOR ユーザーは-addnode を使う必要がなくなり、自動的に接続される。

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-14T21:48:31Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがLinux上でBitcoinのGUI版と非GUI版のバイナリを分離する方針を議論し、マルミにVPSではなくUbuntuノートPCでのテストを提案する。"
+description: "サトシが Linux 上で Bitcoin の GUI 版と非 GUI 版のバイナリを分離する方針を議論し、マルミに VPS ではなく Ubuntu ノート PC でのテストを提案する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -46,8 +46,8 @@ quotes:
 
 <!-- speaker: Satoshi Nakamoto -->
 
-おそらく折れてそうすることになるだろう。initとshutdownをinit.cppかstart.cppなどに移動し、wxbaseだけをリンクしてui.oとuibase.oはリンクしないようにできる。
+おそらく折れてそうすることになるだろう。init と shutdown を init.cpp か start.cpp などに移動し、wxbase だけをリンクして ui.o と uibase.o はリンクしないようにできる。
 
-wxWidgetsはWindowsの人が多いので、GTKについてはあまり詳しくないだろう。
+wxWidgets は Windows の人が多いので、GTK についてはあまり詳しくないだろう。
 
-VPSをいじらなくても済むように、テストやコンパイルができるUbuntuのノートパソコンを持っていないか？
+VPS をいじらなくても済むように、テストやコンパイルができる Ubuntu のノートパソコンを持っていないか？

@@ -8,10 +8,10 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック432におけるThe Madhatterの文脈投稿。msg3769の後。"
+description: "BitcoinTalk トピック 432 における The Madhatter の文脈投稿。msg3769 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-表示のバグだと思った。bitpennyを逆方向に送り返したら、最初の箱の残高は初期状態に戻った 😛
+表示のバグだと思った。bitpenny を逆方向に送り返したら、最初の箱の残高は初期状態に戻った 😛

@@ -8,7 +8,7 @@ author: "luke-jr"
 participants:
   - name: "Luke Dashjr"
     slug: "luke-dashjr"
-description: "ルーク・ダッシュジュニアがbitcoin/bitcoin PR #1620でスレッドを開始。"
+description: "ルーク・ダッシュジュニアが bitcoin/bitcoin PR #1620 でスレッドを開始。"
 isSatoshi: false
 tags:
   - "github"

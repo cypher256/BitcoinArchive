@@ -10,7 +10,7 @@ participants:
     slug: "red"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Redがスレッドを開始: コインの窃盗"
+description: "Red がスレッドを開始: コインの窃盗"
 isSatoshi: false
 tags: []
 translationStatus: complete

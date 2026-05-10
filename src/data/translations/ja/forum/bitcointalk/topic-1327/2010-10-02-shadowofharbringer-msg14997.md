@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.13、アップグレードしてください"
+title: "Re: バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-02T13:00:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの文脈投稿。msg15102で引用。"
+description: "BitcoinTalk トピック 1327 における ShadowOfHarbringer の文脈投稿。msg15102 で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-それは良いが、自動4way検出がGentoo AMD 64版のクライアントで動いていない。
+それは良いが、自動 4way 検出が Gentoo AMD 64 版のクライアントで動いていない。
 
 まだ"-4way"スイッチを追加する必要がある。

@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック69におけるThe Madhatterの文脈投稿。msg614の後。"
+description: "BitcoinTalk トピック 69 における The Madhatter の文脈投稿。msg614 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 
 「offshore」という単語が今や「アメリカ国内ではない」という意味になっているらしいのが面白い。 😛
 
-bitcoinで取引できて、法定通貨との出入りの両替を必要としないというのが理想だ。
+bitcoin で取引できて、法定通貨との出入りの両替を必要としないというのが理想だ。

@@ -1,17 +1,17 @@
 ---
-title: "Re: ビットコイン v0.1 リリース - 電子通貨のビジョン（メーリングリストにCC）"
+title: "Re: ビットコイン v0.1 リリース - 電子通貨のビジョン（メーリングリストに CC）"
 date: 2009-01-16T12:35:31Z
 type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
-sourceNote: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよびbitcoin-listにもアーカイブされている。完全なメールはBitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"
+sourceNote: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよび bitcoin-list にもアーカイブされている。完全なメールは Bitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがトランメルとの会話をbitcoin-listと暗号学メーリングリストにCC。「万が一普及した場合に備え、いくらか手に入れておくのは理にかなっているかも」 という有名な一節を含む公開版。"
+description: "サトシがトランメルとの会話を bitcoin-list と暗号学メーリングリストに CC。「万が一普及した場合に備え、いくらか手に入れておくのは理にかなっているかも」 という有名な一節を含む公開版。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -31,7 +31,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-このメールはbitcoin-list@lists.sourceforge.netおよびmetzdowd.comの暗号学メーリングリストの両方にCCされており、公開メッセージとなっている。これはサトシがトランメルに送った以前のメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
+このメールは bitcoin-list@lists.sourceforge.net および metzdowd.com の暗号学メーリングリストの両方に CC されており、公開メッセージとなっている。これはサトシがトランメルに送った以前のメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
 
 サトシはトランメルがビットコインの価値について述べた以前の観察を引用し、自身のビジョンを共有した：
 

@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu 10.04でのBitcoin"
+title: "Re: Ubuntu 10.04 での Bitcoin"
 date: 2010-06-22T03:45:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Ubuntu 10.04でのBitcoin」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Ubuntu 10.04 での Bitcoin」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,10 +16,10 @@ secondarySources:
 translationStatus: complete
 ---
 
-Ubuntu 10.04ではタスクバーボタンをきれいに削除できなかったので、そのまま残すようにした。
+Ubuntu 10.04 ではタスクバーボタンをきれいに削除できなかったので、そのまま残すようにした。
 
 しかし、指摘の通り、たとえ見た目が悪くても、機能がないよりはある方がおそらく良いだろう。タスクバーボタンが一時的に残っていてクリックすると消えるのは、少し混乱する人がいるかもしれないが。
 
-SVNを更新した。
+SVN を更新した。
 
 テストしてくれてありがとう。

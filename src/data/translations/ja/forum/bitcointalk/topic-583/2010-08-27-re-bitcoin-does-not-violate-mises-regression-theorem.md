@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinはミーゼスの回帰定理に違反しない"
+title: "Re: Bitcoin はミーゼスの回帰定理に違反しない"
 date: 2010-08-27T17:32:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Bitcoinはミーゼスの回帰定理に違反しない」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin はミーゼスの回帰定理に違反しない」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -1,5 +1,5 @@
 ---
-title: "Re: SMFフォーラム、MODのインストールが必要"
+title: "Re: SMF フォーラム、MOD のインストールが必要"
 date: 2009-11-20T22:09:41Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "bitcoin.orgの情報をあなたのサイトのコンテンツと統合して、bitcoin.orgドメイン全体を切り替えることを考えています。"
+description: "bitcoin.org の情報をあなたのサイトのコンテンツと統合して、bitcoin.org ドメイン全体を切り替えることを考えています。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -29,13 +29,13 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 
-DNSエントリだ。
+DNS エントリだ。
 
-bitcoin.orgの情報をあなたのサイトのコンテンツと統合して、bitcoin.orgドメイン全体を切り替えることを考えている。リリース前に、現在のbitcoin.orgサイトをユーザー向けのサイトに置き換える必要がある。
+bitcoin.org の情報をあなたのサイトのコンテンツと統合して、bitcoin.org ドメイン全体を切り替えることを考えている。リリース前に、現在の bitcoin.org サイトをユーザー向けのサイトに置き換える必要がある。
 
-ウェブサイトとフォーラムを同時に切り替えるなら、見栄えのためにそうしたいのでなければforum.bitcoin.orgは不要だ。
+ウェブサイトとフォーラムを同時に切り替えるなら、見栄えのためにそうしたいのでなければ forum.bitcoin.org は不要だ。
 
-使用するCMSは決めたか？Drupalや他のCMSを調査して、どれが最も人気があるか確認すべきだな。
+使用する CMS は決めたか？Drupal や他の CMS を調査して、どれが最も人気があるか確認すべきだな。
 
 <!-- speaker: Martti Malmi -->
 
@@ -43,7 +43,7 @@ bitcoin.orgの情報をあなたのサイトのコンテンツと統合して、
 
 <!-- speaker: Satoshi Nakamoto -->
 
-Linux版、セットアップexe、Torオプション、改善されたウェブサイト/フォーラムのすべてが、利用できる訪問者の割合を増やし、自動起動とタスクトレイへの最小化が実行し続ける人の数を増やす。これらの要因はすべて掛け合わされる。
+Linux 版、セットアップ exe、Tor オプション、改善されたウェブサイト/フォーラムのすべてが、利用できる訪問者の割合を増やし、自動起動とタスクトレイへの最小化が実行し続ける人の数を増やす。これらの要因はすべて掛け合わされる。
 
 <!-- speaker: Martti Malmi -->
 

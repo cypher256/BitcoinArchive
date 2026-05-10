@@ -1,5 +1,5 @@
 ---
-title: "Re: 認証、JSON RPCとPython"
+title: "Re: 認証、JSON RPC と Python"
 date: 2010-08-03T22:52:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック689におけるギャビン・アンドレセンの文脈投稿。msg7335の後。"
+description: "BitcoinTalk トピック 689 におけるギャビン・アンドレセンの文脈投稿。msg7335 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -23,9 +23,9 @@ translationStatus: complete
 <!-- quote: q1 -->
 > CPANにあるJSON RPCライブラリ2つ（Perl）と、挙動を確認するためにローカルで書いた準拠Cライブラリだ。
 
-PerlのLWPモジュールは間違いなくContent-Lengthヘッダーを設定している。HTTP 1.0では必須で、HTTP 1.1の仕様でもクライアントは「SHOULD」設定すべきとされているので、設定していなかったらむしろ驚きだ。
+Perl の LWP モジュールは間違いなく Content-Length ヘッダーを設定している。HTTP 1.0 では必須で、HTTP 1.1 の仕様でもクライアントは「SHOULD」設定すべきとされているので、設定していなかったらむしろ驚きだ。
 
-少し格闘した末に、CPANの最初のJSON::RPCライブラリで動かすことができた：
+少し格闘した末に、CPAN の最初の JSON::RPC ライブラリで動かすことができた：
 
 ```
 use JSON::RPC::Client;
@@ -59,4 +59,4 @@ if($res){
 else {
     print $client->status_line;
 }
-苦労したのはrealmを 'jsonrpc' に設定する点だ（ここがうるさい）。これはwikiにドキュメントとして書いておく。
+苦労したのは realm を 'jsonrpc' に設定する点だ（ここがうるさい）。これは wiki にドキュメントとして書いておく。

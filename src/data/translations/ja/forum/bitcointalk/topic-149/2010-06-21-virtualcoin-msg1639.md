@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu 10.04でのBitcoin"
+title: "Re: Ubuntu 10.04 での Bitcoin"
 date: 2010-06-21T13:28:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック149におけるvirtualcoinの文脈投稿。msg1653の前。"
+description: "BitcoinTalk トピック 149 における virtualcoin の文脈投稿。msg1653 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

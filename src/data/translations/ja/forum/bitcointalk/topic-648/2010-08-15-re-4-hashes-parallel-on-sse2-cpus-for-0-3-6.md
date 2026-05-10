@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-15T03:40:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがtest.cppでは動作するがBitcoinMinerからではSIGSEGVになる問題を報告し、Crypto++のMinGW GCC 4.5.0用パッチを提供。"
+description: "サトシ・ナカモトが test.cpp では動作するが BitcoinMiner からでは SIGSEGV になる問題を報告し、Crypto++の MinGW GCC 4.5.0 用パッチを提供。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,11 +16,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-MinGW GCC 4.4.1と4.5.0の両方で、test.cppでは動作するが、BitcoinMinerから呼び出されるとSIGSEGVになる。つまりGCCのバージョンの問題ではなく、別の何か、おそらくスタックのアラインメントの運によるものだろう。
+MinGW GCC 4.4.1 と 4.5.0 の両方で、test.cpp では動作するが、BitcoinMiner から呼び出されると SIGSEGV になる。つまり GCC のバージョンの問題ではなく、別の何か、おそらくスタックのアラインメントの運によるものだろう。
 
-Ubuntu 32ビットのGCC 4.3.3では問題なく動作している。
+Ubuntu 32 ビットの GCC 4.3.3 では問題なく動作している。
 
-MinGW 4.5.0でのCrypto++の問題を見つけた。以下がそのパッチだ：
+MinGW 4.5.0 での Crypto++の問題を見つけた。以下がそのパッチだ：
 
 ```diff
 --- \old\sha.cpp Mon Jul 26 13:31:11 2010

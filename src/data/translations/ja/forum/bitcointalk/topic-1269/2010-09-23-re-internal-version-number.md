@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン比較で問題が起きるとは思わない。31300 > 312だから。
+バージョン比較で問題が起きるとは思わない。31300 > 312 だから。

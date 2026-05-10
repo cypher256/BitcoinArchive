@@ -1,5 +1,5 @@
 ---
-title: "ジェフ・ガージック「Bitcoin's Wild Decade」 — 初期開発者の10年回顧"
+title: "ジェフ・ガージック「Bitcoin's Wild Decade」 — 初期開発者の 10年回顧"
 date: 2018-10-29T00:00:00Z
 type: "article"
 source: "breaker-mag"
@@ -31,19 +31,19 @@ translationStatus: complete
 
 *BREAKER Magazine、2018年10月29日より：*
 
-[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)は2010年7月の[Slashdot投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)「Great Slashdotting」でビットコインv0.3を発見した。Red Hatで働きながら5年間ビットコインのコア開発者として活動した。ある時点では、ビットコインのコードベースへの貢献度は[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次いで3番目だった。
+[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)は 2010年7月の [Slashdot 投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)「Great Slashdotting」でビットコイン v0.3 を発見した。Red Hat で働きながら 5年間ビットコインのコア開発者として活動した。ある時点では、ビットコインのコードベースへの貢献度は[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次いで 3番目だった。
 
 サトシは「実用的で正気であり、やり取りは非常に容易で快適だった」。
 
 サトシの匿名性は「ボランティアがプロジェクトリーダーの従来の資格ではなく、コードの客観的現実を信頼することを促した」。
 
-ガージックの開発プロセス：彼はソフトウェアの変更を書き、テストし、ソフトウェアパッチを作成し、サトシにメールした。サトシがそれを受け入れれば、Subversionのソースコードリポジトリにマージされた。
+ガージックの開発プロセス：彼はソフトウェアの変更を書き、テストし、ソフトウェアパッチを作成し、サトシにメールした。サトシがそれを受け入れれば、Subversion のソースコードリポジトリにマージされた。
 
 サトシは「声をまったく使わなかった — ビデオも、ボイスチャットも、雑談もなかった」。
 
 ---
 
-*CoinDeskインタビュー、2013年7月9日より：*
+*CoinDesk インタビュー、2013年7月9日より：*
 
 サトシは「素晴らしい設計者でありアーキテクト」であり、「システムを非常に深いレベルで考えていた」。
 
@@ -51,8 +51,8 @@ translationStatus: complete
 
 彼は「ユニットテストやストレステストを書くなど、標準的なエンジニアリングプラクティスにほとんど従わなかった」。
 
-オリジナルのビットコインはWindows専用で、移植性が低く、「ソースコードの寄せ集め」だった。
+オリジナルのビットコインは Windows 専用で、移植性が低く、「ソースコードの寄せ集め」だった。
 
 いくつかの機能は「明らかに悪用可能」であったため、公開リリース直後に無効化する必要があった。
 
-*[補足：ガージックの最初の作業はブロックチェーンダウンロードの最適化に焦点を当て、「初期ダウンロードの速度を10倍〜100倍に向上させる」コードを作成した。その後、BloqとHemi Networkの CEO となった。]*
+*[補足：ガージックの最初の作業はブロックチェーンダウンロードの最適化に焦点を当て、「初期ダウンロードの速度を 10倍〜100倍に向上させる」コードを作成した。その後、Bloq と Hemi Network の CEO となった。]*

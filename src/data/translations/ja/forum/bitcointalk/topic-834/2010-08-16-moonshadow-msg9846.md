@@ -8,7 +8,7 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック834におけるMoonShadowの文脈投稿。after msg9843, サトシを引用."
+description: "BitcoinTalk トピック 834 における MoonShadow の文脈投稿。after msg9843, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -40,4 +40,4 @@ translationStatus: complete
 >
 > ということは、十分に強力なノードは、最後のxブロックを継続的に巻き戻し、ある金額以上のトランザクション手数料を含むトランザクションだけを許可することができる、ということか？
 
-十分に強力なノードなら*何でも*できる。proof-of-workの本質は、bitcoinネットワークが成長するにつれて、この種の乗っ取りが——本当に不可能とまでは言わないが——ますます天文学的にあり得なくなる、という点にある。
+十分に強力なノードなら*何でも*できる。proof-of-work の本質は、bitcoin ネットワークが成長するにつれて、この種の乗っ取りが——本当に不可能とまでは言わないが——ますます天文学的にあり得なくなる、という点にある。

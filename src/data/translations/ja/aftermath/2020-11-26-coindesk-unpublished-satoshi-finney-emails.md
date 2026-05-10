@@ -41,27 +41,27 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2020年11月26日、CoinDeskがマイケル・カピルコフ著「Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle」を公表し、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の間の3通のメールを明らかにした。
+2020年11月26日、CoinDesk がマイケル・カピルコフ著「Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle」を公表し、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の間の 3 通のメールを明らかにした。
 
-**入手経路:** 2014年3月、フラン・フィニー（ハルの未亡人）がジャーナリストのナサニエル・ポッパーに著書『Digital Gold』のためハルのパーソナルコンピューターからファイルを送付。ポッパーはそのメールファイルをカピルコフと共有した。CoinDeskはフラン・フィニーに直接確認した。
+**入手経路:** 2014年3月、フラン・フィニー（ハルの未亡人）がジャーナリストのナサニエル・ポッパーに著書『Digital Gold』のためハルのパーソナルコンピューターからファイルを送付。ポッパーはそのメールファイルをカピルコフと共有した。CoinDesk はフラン・フィニーに直接確認した。
 
-**メール1：[2008年11月19日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)（フィニー → サトシ）**
+**メール 1：[2008年11月19日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)（フィニー → サトシ）**
 フィニーはサトシに修正への感謝を述べ、ネットワークの拡張性について質問した：
 > 「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」
 
-これはビットコイン公開ローンチの2か月前、プレリリースコードレビュー期間中のことだった。
+これはビットコイン公開ローンチの 2 か月前、プレリリースコードレビュー期間中のことだった。
 
-**メール2：[2009年1月8日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
+**メール 2：[2009年1月8日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
 件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
 > 「お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された: http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。Satoshi」
 
 このメールは`satoshi@vistomail.com`から送信された。
 
-**メール3：[2009年1月10日（または12日）](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）**
+**メール 3：[2009年1月10日（または 12日）](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）**
 ビットコインローンチ後のフォローアップ：
 > 「残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。」
 
 「今いる場所」（"from where I am"）という表現は、リリース週におけるサトシの公開活動の濃密さと併せて、[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で検討されている。
 
 **タイムゾーンの謎：**
-サトシの2009年1月のメールヘッダーはGMTの **8時間先（UTC+8）** のタイムゾーンを示していた — 日本のUTC+9のオフセットとは不一致。これはサトシの所在地に関する推測を呼んだ。しかしChain Bulletinのドンチョ・カライヴァノフは、UTC+8のタイムスタンプはサトシのローカルマシンではなくAnonymousSpeech.comのメールサーバー（1996年以来東京に拠点）からのものだと主張した。ウェブメール使用時、Dateヘッダーのタイムゾーンはユーザーの所在地ではなくサーバーの場所を反映する。
+サトシの 2009年1月のメールヘッダーは GMT の **8時間先（UTC+8）** のタイムゾーンを示していた — 日本の UTC+9 のオフセットとは不一致。これはサトシの所在地に関する推測を呼んだ。しかし Chain Bulletin のドンチョ・カライヴァノフは、UTC+8 のタイムスタンプはサトシのローカルマシンではなく AnonymousSpeech.com のメールサーバー（1996年以来東京に拠点）からのものだと主張した。ウェブメール使用時、Date ヘッダーのタイムゾーンはユーザーの所在地ではなくサーバーの場所を反映する。

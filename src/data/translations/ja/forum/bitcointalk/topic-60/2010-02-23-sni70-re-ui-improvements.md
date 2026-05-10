@@ -1,5 +1,5 @@
 ---
-title: "Re: UIの改善"
+title: "Re: UI の改善"
 date: 2010-02-23T16:53:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「UIの改善」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「UI の改善」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

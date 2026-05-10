@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu 10.04でのエラー"
+title: "Re: Ubuntu 10.04 でのエラー"
 date: 2010-07-14T18:25:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Ubuntu 10.04でのエラー」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Ubuntu 10.04 でのエラー」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-お使いのコンピューターは何語に設定されているか？ドイツ語、オランダ語、またはイタリア語に設定されているか？「nl-??」のようなサブ言語の1つか？
+お使いのコンピューターは何語に設定されているか？ドイツ語、オランダ語、またはイタリア語に設定されているか？「nl-??」のようなサブ言語の 1 つか？
 
-翻訳を読み込もうとして失敗している。Bitcoinに付属のlocaleディレクトリを削除すれば、使用しようとしなくなる。
+翻訳を読み込もうとして失敗している。Bitcoin に付属の locale ディレクトリを削除すれば、使用しようとしなくなる。
 
-Ubuntuで各言語をテストして、1つだけに問題があるのか、それとも3つすべてに問題があるのか確認できる方はいるか？
+Ubuntu で各言語をテストして、1 つだけに問題があるのか、それとも 3 つすべてに問題があるのか確認できる方はいるか？

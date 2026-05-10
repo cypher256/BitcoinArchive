@@ -10,13 +10,13 @@ participants:
     slug: "sabunir"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Sabunirがスレッドを開始: アドレスに関する質問"
+description: "Sabunir がスレッドを開始: アドレスに関する質問"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-1) プログラムを実行していないIPアドレスにコインを送信しようとするとどうなるのか？
+1) プログラムを実行していない IP アドレスにコインを送信しようとするとどうなるのか？
 2) 無効なビットコインアドレスにコインを送信しようとするとどうなるのか？
 3) 誰も所有していないビットコインアドレスにコインを送信しようとするとどうなるのか？
 4) かつては所有されていたが、その後放棄されたビットコインアドレス（受信者がプログラムの実行を停止した、またはウォレットを削除した）にコインを送信しようとするとどうなるのか？

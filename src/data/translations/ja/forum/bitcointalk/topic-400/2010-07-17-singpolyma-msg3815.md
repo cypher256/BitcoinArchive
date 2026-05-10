@@ -8,7 +8,7 @@ author: "singpolyma"
 participants:
   - name: "singpolyma"
     slug: "singpolyma"
-description: "BitcoinTalkトピック400におけるsingpolymaの文脈投稿。msg3823に引用。"
+description: "BitcoinTalk トピック 400 における singpolyma の文脈投稿。msg3823 に引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete

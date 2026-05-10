@@ -8,13 +8,13 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック1063におけるギャビン・アンドレセンの文脈投稿。msg13211の前。"
+description: "BitcoinTalk トピック 1063 におけるギャビン・アンドレセンの文脈投稿。msg13211 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-neliskyに同意する——バグではない。UNIXのcatコマンドが""についてこう言っている：
+nelisky に同意する——バグではない。UNIX の cat コマンドが""についてこう言っている：
 
 ```
 > cat ""

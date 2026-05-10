@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック611におけるギャビン・アンドレセンの文脈投稿。msg6706の後。"
+description: "BitcoinTalk トピック 611 におけるギャビン・アンドレセンの文脈投稿。msg6706 の後。"
 isSatoshi: false
 tags: []
 quotes:

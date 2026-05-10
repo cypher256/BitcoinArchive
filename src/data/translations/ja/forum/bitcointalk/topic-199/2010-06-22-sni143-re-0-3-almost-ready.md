@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-22T22:23:39.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-Laszloがさらに最適化を有効にするとパフォーマンスが約20%向上することを発見したので、0.3は0.2.0より20%速くハッシュするが、彼は自分のビルドでそれを使っていたと思う。
+Laszlo がさらに最適化を有効にするとパフォーマンスが約 20%向上することを発見したので、0.3 は 0.2.0 より 20%速くハッシュするが、彼は自分のビルドでそれを使っていたと思う。
 
-30khash増加して合計レートはいくつになったか？（増加率を計算するために）
+30khash 増加して合計レートはいくつになったか？（増加率を計算するために）

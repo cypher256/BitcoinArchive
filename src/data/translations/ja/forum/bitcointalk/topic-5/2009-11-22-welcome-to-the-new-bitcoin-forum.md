@@ -1,5 +1,5 @@
 ---
-title: "新しいBitcoinフォーラムへようこそ！"
+title: "新しい Bitcoin フォーラムへようこそ！"
 date: 2009-11-22T18:04:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿：「新しいBitcoinフォーラムへようこそ！」。"
+description: "サトシ・ナカモトの投稿：「新しい Bitcoin フォーラムへようこそ！」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-新しいBitcoinフォーラムへようこそ！
+新しい Bitcoin フォーラムへようこそ！
 
 旧フォーラムはこちらからアクセスできる：
 [http://bitcoin.sourceforge.net/boards/index.php](http://bitcoin.sourceforge.net/boards/index.php)

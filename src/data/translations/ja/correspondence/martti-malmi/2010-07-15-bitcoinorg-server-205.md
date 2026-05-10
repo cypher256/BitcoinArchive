@@ -1,5 +1,5 @@
 ---
-title: "bitcoin.orgサーバー"
+title: "bitcoin.org サーバー"
 date: 2010-07-15T20:00:12Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシが現在のbitcoin.orgホスティングの選択を評価し、切り替えに反対するとともに、匿名の2,000ドル寄付の状況を確認する。"
+description: "サトシが現在の bitcoin.org ホスティングの選択を評価し、切り替えに反対するとともに、匿名の 2,000 ドル寄付の状況を確認する。"
 isSatoshi: true
 tags:
   - "correspondence"

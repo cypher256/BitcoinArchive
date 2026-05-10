@@ -1,5 +1,5 @@
 ---
-title: "Hashcashの引用とビットコインホワイトペーパー草稿"
+title: "Hashcash の引用とビットコインホワイトペーパー草稿"
 date: 2008-08-20T17:30:39Z
 type: "correspondence"
 source: "bitcoin-magazine"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "サトシ・ナカモトの最も初期に知られるメール。アダム・バックにHashcash論文の正しい引用を確認し、ビットコインホワイトペーパーのプレリリース版を共有した。"
+description: "サトシ・ナカモトの最も初期に知られるメール。アダム・バックに Hashcash 論文の正しい引用を確認し、ビットコインホワイトペーパーのプレリリース版を共有した。"
 isSatoshi: true
 tags:
   - "hashcash"
@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-    note: "このメールは2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックが証人陳述書の一部として完全なメールチェーンを提出した"
+    note: "このメールは 2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックが証人陳述書の一部として完全なメールチェーンを提出した"
 relatedEntries:
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "analysis/2008-10-31-bitcoin-design-lineage"
@@ -37,7 +37,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-サトシ・ナカモトによる現存する最古のメール。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)宛に、Hashcashを下敷きにした論文を近く公開する旨を伝え、起草した引用形式の確認を求めた。
+サトシ・ナカモトによる現存する最古のメール。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)宛に、Hashcash を下敷きにした論文を近く公開する旨を伝え、起草した引用形式の確認を求めた。
 
 ```
 [A. Back, "Hashcash - a denial of service counter-measure,"

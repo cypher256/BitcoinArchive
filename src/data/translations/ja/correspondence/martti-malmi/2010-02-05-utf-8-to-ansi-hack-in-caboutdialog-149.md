@@ -1,5 +1,5 @@
 ---
-title: "Re: CAboutDialogにおけるUTF-8からANSIへのハック"
+title: "Re: CAboutDialog における UTF-8 から ANSI へのハック"
 date: 2010-02-05T07:16:23Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがAboutダイアログのUTF-8エンコーディング変更は意図的ではなく、エンコーディングの問題が原因だったと回答。"
+description: "マルミが About ダイアログの UTF-8 エンコーディング変更は意図的ではなく、エンコーディングの問題が原因だったと回答。"
 isSatoshi: false
 tags:
   - "correspondence"

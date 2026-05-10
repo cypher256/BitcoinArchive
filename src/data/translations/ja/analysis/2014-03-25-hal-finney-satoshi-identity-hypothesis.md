@@ -60,7 +60,7 @@ translationStatus: complete
 
 ## 1. 仮説の主張
 
-仮説は、フィニーがサトシ・ナカモト仮名の主体であり、彼が記録した「サトシ」 との公的な関わり — [2009 年 1 月のメールのやり取り](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)、[最初のビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)（2009 年 1 月 12 日）、2013 年の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) 回顧 — はすべて仮名を維持するための演出だったとする。この読みのもとでは、フィニーは開発期（2007〜2008 年）から少なくとも 2009 年 8 月の ALS 診断まで、可能性としては 2011 年初頭の退職までサトシとして活動していた。さらに強い変種は 2011 年以降のサトシ通信（[2011 年 4 月のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)と[2011 年 4 月のギャビン・アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)）を扱う必要があり、共著者または事前ドラフトを必要とする。
+仮説は、フィニーがサトシ・ナカモト仮名の主体であり、彼が記録した「サトシ」 との公的な関わり — [2009 年 1 月のメールのやり取り](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)、[最初のビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)（2009 年 1 月 12 日）、2013 年の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) 回顧 — はすべて仮名を維持するための演出だったとする。この読みのもとでは、フィニーは開発期（2007〜2008 年）から少なくとも 2009 年 8 月の ALS 診断まで、可能性としては 2011 年初頭の退職までサトシとして活動していた。さらに強い変種は 2011 年以降のサトシ通信（[2011 年 4 月のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)と [2011 年 4 月のギャビン・アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)）を扱う必要があり、共著者または事前ドラフトを必要とする。
 
 仮説に対するアリバイ性のイベントは 2 つ: 2009 年 4 月 18 日のレース当日時間帯と 2010 年 8 月 14-15 日の特異点サミット時間帯。サトシの記録された活動との位置関係:
 
@@ -95,7 +95,7 @@ timeline
 
 ### 2.1 RPOW（2004 年）— 直接的な概念上の先駆
 
-2004 年、フィニーは[Reusable Proof-of-Work（RPOW）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) を構築した。これはアダム・バックの[Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) トークン（設計上 1 回限り）を、サーバー検証による再利用機構によって譲渡可能にしたシステムである。名指しされたサトシ候補の中で、ビットコイン以前にプルーフ・オブ・ワークに基づくデジタルトークンシステムを実際に動作させた者はフィニーただ一人。概念的系譜は直接的: Hashcash → RPOW → ビットコインのマイニング報酬。
+2004 年、フィニーは [Reusable Proof-of-Work（RPOW）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) を構築した。これはアダム・バックの [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) トークン（設計上 1 回限り）を、サーバー検証による再利用機構によって譲渡可能にしたシステムである。名指しされたサトシ候補の中で、ビットコイン以前にプルーフ・オブ・ワークに基づくデジタルトークンシステムを実際に動作させた者はフィニーただ一人。概念的系譜は直接的: Hashcash → RPOW → ビットコインのマイニング報酬。
 
 反論: RPOW はサーバー仲介型でアーキテクチャの距離が大きい。
 
@@ -115,13 +115,13 @@ timeline
 
 ### 2.2 ドリアン・ナカモトへの地理的近接
 
-フィニーはカリフォルニア州テンプル市に約 10 年間居住していた — グリーンバーグの 2014 年 Forbes 記事の数週間前に[Newsweek がドリアン・ナカモト](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/)をサトシ候補として特定した、まさに同じ町である。フィニーとドリアン・ナカモトは「数ブロック離れた場所」 に住んでいた。論点: 「サトシ・ナカモト」 が真の著者から数ブロック離れた場所に住む実在の人物の名前から構築された仮名だった、というもの。[仮名構築分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)で他の名前選択機構と比較される、より精緻な版である。
+フィニーはカリフォルニア州テンプル市に約 10 年間居住していた — グリーンバーグの 2014 年 Forbes 記事の数週間前に [Newsweek がドリアン・ナカモト](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/)をサトシ候補として特定した、まさに同じ町である。フィニーとドリアン・ナカモトは「数ブロック離れた場所」 に住んでいた。論点: 「サトシ・ナカモト」 が真の著者から数ブロック離れた場所に住む実在の人物の名前から構築された仮名だった、というもの。[仮名構築分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)で他の名前選択機構と比較される、より精緻な版である。
 
 反論: テンプル市はサンガブリエル・バレーの人口約 36,000 人の小さな郊外であり、偶然は起こる。論点は、フィニーが（自身と無関係の名前ではなく）隣人の名前から派生した仮名を選んだこと、およびその後さらなる地理的手がかりを残さずに何年もその仮名を維持したこと、の両方を受け入れる必要がある。[グリーンバーグの記事](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)が記録するパターンは、行動的裏付けのない地理的隣接である — フランは、ハルがドリアン・ナカモトとの繋がりや認識を持っていなかったと強く主張している。
 
 ### 2.3 2026 年文体計量での僅差と広範コーパスでの順位
 
-フロリアン・カフィエロの[2026 年ニューヨーク・タイムズ調査向け文体計量レビュー](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は、12 候補中フィニーがアダム・バックとほぼ同点と報告した。カフィエロ自身は結果を不確定と評した。[Bitcoin Institute によるバス・ヴァン・ドルストの 75,000 人著者コーパスの再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、フィニーの執筆を上位 6.89%（12,739 人中 878 位）に位置づける — ニック・サボに次ぐ第 2 位である。
+フロリアン・カフィエロの [2026 年ニューヨーク・タイムズ調査向け文体計量レビュー](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は、12 候補中フィニーがアダム・バックとほぼ同点と報告した。カフィエロ自身は結果を不確定と評した。[Bitcoin Institute によるバス・ヴァン・ドルストの 75,000 人著者コーパスの再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、フィニーの執筆を上位 6.89%（12,739 人中 878 位）に位置づける — ニック・サボに次ぐ第 2 位である。
 
 | 文体計量研究 | ハル・フィニーの結果 |
 |---|---|
@@ -134,7 +134,7 @@ timeline
 
 ### 2.4 最初の受領者かつ最早期協力者の地位
 
-フィニーはサトシ以外で最初にビットコインを稼働させた人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの[2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。論点: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。
+フィニーはサトシ以外で最初にビットコインを稼働させた人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。論点: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。
 
 反論: 信頼できる技術協力者を立ち上げ時に表に置きながら匿名でシステムを公開することは、信頼できる協力者がいる匿名の著者がまさに選ぶパターンである。同時に、暗号学メーリングリストで高品質なシステムを高品質な最初のユーザーが識別したパターンでもある。フィニーが記録した自己の説明は後者である — [「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) で「私はサトシ以外で最初にビットコインを動かした人物だったと思う」 と書く。
 
@@ -157,7 +157,7 @@ timeline
 | 9:16 AM | ゴールから ~2 分 | マイク・ハーン宛メール（「I sent back 32.51 and 50.00」）を 9:16 AM PT に送信 |
 | ~9:18 AM | レース完走 (~78 分後) | — |
 
-レースはタイミングチップデータ、レース写真家の画像、レース結果 ID 591、フランが撮影した追加写真で記録されている。アーカイブには[2009 年 4 月 18 日のサトシ・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/)があり、タイムスタンプはレースの時間帯内に位置する。同一人物が 10 マイルレースを走りながら取引をブロードキャストしメールに返信することはできない。
+レースはタイミングチップデータ、レース写真家の画像、レース結果 ID 591、フランが撮影した追加写真で記録されている。アーカイブには [2009 年 4 月 18 日のサトシ・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/)があり、タイムスタンプはレースの時間帯内に位置する。同一人物が 10 マイルレースを走りながら取引をブロードキャストしメールに返信することはできない。
 
 アリバイの成立には、フィニーのレース写真とタイミングチップデータが本物（2014 年にフランが偽造したものではない）であり、メールとオンチェーン取引のタイムスタンプが正確（時計のずれや改ざんを受けていない）であることが必要だが、両者は通常そうであり、オンチェーン記録（ブロック 11,408 のタイムスタンプ）はフランが操作できる非公開の記録から独立している。2014 年の Forbes 記録は 2023 年のロップによる構造化に約 10 年先行する — フランがグリーンバーグに直接写真を見せ、グリーンバーグが印刷物として公開した。これは仮説否定のために事後的に構築されたアリバイではなく、サトシのネットワーク活動と偶然一致した、当時記録された活動である。
 
@@ -191,13 +191,13 @@ timeline
 | マイニング行動 | ネットワーク保護のための持続的・防衛的抑制 | 短期間稼働後、コンピューターが熱くなりファン音が気になり停止 |
 | マイニング期間 | 2009 年〜2010 年初頭まで継続 | 2009 年初頭に停止、2010 年末にウォレットを再発見 |
 
-フィニー自身の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) は彼のビットコイン保有量について明示的: コンピューターが熱くなりファン音が気になったためビットコインを止める前に「数ブロック」 をマイニングしたと記述し、その後 2010 年末まで忘れていたが、「まだ動いていた」 と「驚いて」「古いウォレットを引っ張り出し」、ビットコインがまだそこにあるのを確認した、と記す。フラン・フィニーの[2019 年「Cryonics Magazine」 プロファイル](/BitcoinArchive/ja/entries/aftermath/2019-04-01-fran-finney-hal-finney-profile/)は家族のビットコイン保有量について同様に明示的である。
+フィニー自身の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) は彼のビットコイン保有量について明示的: コンピューターが熱くなりファン音が気になったためビットコインを止める前に「数ブロック」 をマイニングしたと記述し、その後 2010 年末まで忘れていたが、「まだ動いていた」 と「驚いて」「古いウォレットを引っ張り出し」、ビットコインがまだそこにあるのを確認した、と記す。フラン・フィニーの [2019 年「Cryonics Magazine」 プロファイル](/BitcoinArchive/ja/entries/aftermath/2019-04-01-fran-finney-hal-finney-profile/)は家族のビットコイン保有量について同様に明示的である。
 
 仮説は、フィニーが Patoshi 規模の保有を妻、遺産、およびアルコー（患者の冷凍保存後の財務に関わる）から ALS 期間中ずっと隠し続け、同時にその規模を明示的に矛盾する公的回顧を書いた、ということを要求する。Patoshi の防衛的マイニング行動 — 出力を抑制した持続的なネットワーク保護 — もまた、ファン音のために 2009 年初頭にビットコインを止めたというフィニー自身の記述と相容れない。
 
 ### 3.4 識別性論
 
-[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は、サトシが開発期間中に可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」 と論じる — これは 2007〜2008 年にサイファーパンク議論で可視に活動していた候補に対する反証として作用する読みである。フィニーはこの期間中、サイファーパンクコミュニティで継続的に可視だった: 匿名リメイラーを運営し、エクストロピー研究所と LessWrong に投稿し、自身の名前で冷凍保存と寿命延長コミュニティに関与していた。LessWrong での[2009 年 10 月の「Dying Outside」](/BitcoinArchive/ja/entries/aftermath/2009-10-05-hal-finney-dying-outside/) エッセイは、2008〜2009 年の開発・公開期間中の彼の活動の公的記録の一部である。
+[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は、サトシが開発期間中に可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」 と論じる — これは 2007〜2008 年にサイファーパンク議論で可視に活動していた候補に対する反証として作用する読みである。フィニーはこの期間中、サイファーパンクコミュニティで継続的に可視だった: 匿名リメイラーを運営し、エクストロピー研究所と LessWrong に投稿し、自身の名前で冷凍保存と寿命延長コミュニティに関与していた。LessWrong での [2009 年 10 月の「Dying Outside」](/BitcoinArchive/ja/entries/aftermath/2009-10-05-hal-finney-dying-outside/) エッセイは、2008〜2009 年の開発・公開期間中の彼の活動の公的記録の一部である。
 
 [識別性論](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)のもとで、フィニーの継続的な可視のサイファーパンク活動は、アダム・バック、サッサマン、その他の当該時期の可視に活動していた候補に当てはまるのと構造的に同じ問題である。
 

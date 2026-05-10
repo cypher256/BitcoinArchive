@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがSourceForgeを避けてBitcoin 0.3.0 RC1の一時ダウンロードリンクを共有し、マルミにプロジェクトの会計係を務めるよう依頼する。"
+description: "サトシが SourceForge を避けて Bitcoin 0.3.0 RC1 の一時ダウンロードリンクを共有し、マルミにプロジェクトの会計係を務めるよう依頼する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -23,6 +23,6 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-帯域幅が問題になるようなら、「0.3 almost ready」スレッドの私のリンクを削除してほしい。1〜2日の簡易共有のためにsourceforgeにアップロードしたくないのだ。バグがあればすぐに取り下げる可能性もある。Sourceforgeには一度追加したファイルの削除を許可しないポリシーがあり、アップロードも面倒だ。リリースの準備ができたらファイルを削除する。
+帯域幅が問題になるようなら、「0.3 almost ready」スレッドの私のリンクを削除してほしい。1〜2日の簡易共有のために sourceforge にアップロードしたくないのだ。バグがあればすぐに取り下げる可能性もある。Sourceforge には一度追加したファイルの削除を許可しないポリシーがあり、アップロードも面倒だ。リリースの準備ができたらファイルを削除する。
 
 ところで、近いうちにウェブホストの費用やあなたの取引所サービスの支援などのための資金を、郵送の現金という形で確保できそうだ。受け取って、プロジェクトの会計係を務めてもらえるか？

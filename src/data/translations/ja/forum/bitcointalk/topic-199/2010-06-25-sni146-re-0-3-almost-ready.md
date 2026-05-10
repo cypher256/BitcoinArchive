@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-25T14:10:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,10 +16,10 @@ secondarySources:
 translationStatus: complete
 ---
 
-virtualcoinさん、ありがとう。完璧な比較だ。
+virtualcoin さん、ありがとう。完璧な比較だ。
 
-32ビットWindows（2310k）から32ビットLinux（2500k）への8%の速度向上は、おそらくLinux上の新しいバージョンのGCC（4.4.3 vs 3.4.5）によるものだ。
+32 ビット Windows（2310k）から 32 ビット Linux（2500k）への 8%の速度向上は、おそらく Linux 上の新しいバージョンの GCC（4.4.3 vs 3.4.5）によるものだ。
 
-32ビットから64ビットLinuxへの15%の速度向上はもっと謎だ。コードは完全に32ビットだ。
+32 ビットから 64 ビット Linux への 15%の速度向上はもっと謎だ。コードは完全に 32 ビットだ。
 
-うーん、x86-64で追加された8つの追加レジスターが効いているのだと思う。16の状態変数のほとんどをレジスターに保持できれば、SHAにとって大きな違いになるだろう。
+うーん、x86-64 で追加された 8 つの追加レジスターが効いているのだと思う。16 の状態変数のほとんどをレジスターに保持できれば、SHA にとって大きな違いになるだろう。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Windows用Bitcoin x86"
+title: "Re: Windows 用 Bitcoin x86"
 date: 2010-07-27T01:29:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがキャッシュされたSHA256のアイデアをSVNに追加し約70%の高速化を達成したこと、およびCrypto++ 5.6.0のASM SHAコードのコンパイラー互換性について議論。"
+description: "サトシ・ナカモトがキャッシュされた SHA256 のアイデアを SVN に追加し約 70%の高速化を達成したこと、と Crypto++ 5.6.0 の ASM SHA のコンパイラー互換性を議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,7 +26,7 @@ quotes:
 > Crypto++ 5.6.0: [http://www.cryptopp.com/](http://www.cryptopp.com/)
 <!-- /tone-skip -->
 
-Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32)（これは他の場所でも公開されていると思いますが、IRCでリンクを教えてもらいました）
-キャッシュされたSHA256の状態のアイデアをSVNのrev 113に追加した。高速化は約70%だ。x64スレッドでのあなたの投稿に基づいて、tcatmの功績とした。
+Cached SHA256: [http://pastebin.com/rJAYZJ32](http://pastebin.com/rJAYZJ32)（これは他の場所でも公開されていると思うが、IRC でリンクを教えてもらった）
+キャッシュされた SHA256 の状態のアイデアを SVN の rev 113 に追加した。高速化は約 70%だ。x64 スレッドでのあなたの投稿に基づいて、tcatm の功績とした。
 
-Crypto++ 5.6.0のASM SHAコードをMinGWでコンパイルできるが、実行するとすぐにクラッシュする。MASM（Microsoftのアセンブラ）用と書かれており、サンプルのコマンドラインはVisual C++のもののようだ。MSVCとIntelコンパイラーでしか動作しないのだろうか？
+Crypto++ 5.6.0 の ASM SHA コードを MinGW でコンパイルできるが、実行するとすぐにクラッシュする。MASM（Microsoft のアセンブラ）用と書かれており、サンプルのコマンドラインは Visual C++のもののようだ。MSVC と Intel コンパイラーでしか動作しないのだろうか？

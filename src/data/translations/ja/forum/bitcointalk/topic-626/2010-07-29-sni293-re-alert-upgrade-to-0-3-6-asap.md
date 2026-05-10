@@ -1,5 +1,5 @@
 ---
-title: "Re: *** 警告 *** 0.3.6にアップグレードしてください"
+title: "Re: *** 警告 *** 0.3.6 にアップグレードしてください"
 date: 2010-07-29T21:43:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがGLIBC_2.11の問題とUbuntuのアップグレードに関する方針について説明。"
+description: "サトシ・ナカモトが GLIBC_2.11 の問題と Ubuntu のアップグレードに関する方針について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-「./bitcoin: /lib64/libc.so.6: version `GLIBC_2.11' not found (required by ./bitcoin)」は0.3.6から始まった新しい問題ではないよな？ これは0.3.0と同じOS環境でビルドされたものだ。
+「./bitcoin: /lib64/libc.so.6: version `GLIBC_2.11' not found (required by ./bitcoin)」は 0.3.6 から始まった新しい問題ではないよな？ これは 0.3.0 と同じ OS 環境でビルドされたものだ。
 
-残念ながら、0.3.0の前にUbuntu 10.04にアップグレードしてしまった。もうこれ以上アップグレードしない。ダウングレードのために再インストールする時間がいつ取れるかわからないが、少なくともアップグレードしないことで、徐々に問題は解消されるだろう。
+残念ながら、0.3.0 の前に Ubuntu 10.04 にアップグレードしてしまった。もうこれ以上アップグレードしない。ダウングレードのために再インストールする時間がいつ取れるかわからないが、少なくともアップグレードしないことで、徐々に問題は解消されるだろう。

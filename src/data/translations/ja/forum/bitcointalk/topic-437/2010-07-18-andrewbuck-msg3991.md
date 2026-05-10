@@ -8,12 +8,12 @@ author: "AndrewBuck"
 participants:
   - name: "AndrewBuck"
     slug: "andrewbuck"
-description: "BitcoinTalkトピック437におけるAndrewBuckの投稿。"
+description: "BitcoinTalk トピック 437 における AndrewBuck の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Traktion、`-minimizetotray`オプションを付けてクライアントを実行してみてくれ。自分の環境（同じく10.04）ではそれでうまくいった。最小化された状態で起動するのでクリックしてメインウインドウを表示する必要があるが、その後は正常に動作するようだ。
+Traktion、`-minimizetotray`オプションを付けてクライアントを実行してみてくれ。自分の環境（同じく 10.04）ではそれでうまくいった。最小化された状態で起動するのでクリックしてメインウインドウを表示する必要があるが、その後は正常に動作するようだ。
 
 -Buck

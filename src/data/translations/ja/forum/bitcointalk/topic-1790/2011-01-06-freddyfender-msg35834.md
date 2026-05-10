@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNSとBitcoinの汎用化"
+title: "Re: BitDNS と Bitcoin の汎用化"
 date: 2011-01-06T15:55:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "FreddyFender"
 participants:
   - name: "FreddyFender"
     slug: "freddyfender"
-description: "BitcoinTalkトピック1790におけるFreddyFenderの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 1790 における FreddyFender の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -20,9 +20,9 @@ quotes:
 translationStatus: complete
 ---
 
-俺が見る限り、domainchain にある提案（http://domainchain.org/wiki/doku.php?id=start#proposal を見てくれ）は、Bitcoinのblockchainに余計なものを載せないというサトシの希望に反していて、ドメイン割り当てを直接Bitcoinに結びつけている。
-多くのコミュニティメンバーは、これは現実的ではなく、domainchain を直接Bitcoinに含めようとする試みが続くなら自分はBitcoinを離れると述べている。
-サトシは、Bitcoinサービスとの需要に応じて価値が変動する別通貨を持つ、新しい木を作るよう求めた。
+俺が見る限り、domainchain にある提案（http://domainchain.org/wiki/doku.php?id=start#proposal を見てくれ）は、Bitcoin の blockchain に余計なものを載せないというサトシの希望に反していて、ドメイン割り当てを直接 Bitcoin に結びつけている。
+多くのコミュニティメンバーは、これは現実的ではなく、domainchain を直接 Bitcoin に含めようとする試みが続くなら自分は Bitcoin を離れると述べている。
+サトシは、Bitcoin サービスとの需要に応じて価値が変動する別通貨を持つ、新しい木を作るよう求めた。
 
 <!-- quote: q1 -->
 > BitDNSが完全に別個のネットワーク、別個のblockchainであっても、Bitcoinと CPU パワーを共有することは可能だと思う。唯一の重なりは、マイナーが両方のネットワークの proof-of-work を同時に探せるようにすることだ。

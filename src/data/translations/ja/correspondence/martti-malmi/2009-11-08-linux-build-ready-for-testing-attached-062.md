@@ -1,5 +1,5 @@
 ---
-title: "Linuxビルドのテスト準備完了（添付）"
+title: "Linux ビルドのテスト準備完了（添付）"
 date: 2009-11-08T05:23:13Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがビットコインLinux 0.1.6-test1ビルドをメール添付でマルミに送付し、テストを依頼。"
+description: "サトシがビットコイン Linux 0.1.6-test1 ビルドをメール添付でマルミに送付し、テストを依頼。"
 isSatoshi: true
 tags:
   - "correspondence"

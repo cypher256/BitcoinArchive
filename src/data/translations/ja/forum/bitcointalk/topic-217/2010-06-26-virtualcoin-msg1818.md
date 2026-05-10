@@ -8,11 +8,11 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック217におけるvirtualcoinの文脈投稿。msg1827の前。"
+description: "BitcoinTalk トピック 217 における virtualcoin の文脈投稿。msg1827 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-確信はないが、バージョン0.3から1.3にジャンプするのは普通ではないと思う。^^ 1.0じゃないのか？
+確信はないが、バージョン 0.3 から 1.3 にジャンプするのは普通ではないと思う。^^ 1.0 じゃないのか？
 まあ一方で、誰が気にするんだって話だが。

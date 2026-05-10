@@ -1,5 +1,5 @@
 ---
-title: "Re: 非GUIオプション"
+title: "Re: 非 GUI オプション"
 date: 2010-02-23T01:41:01Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -37,4 +37,4 @@ translationStatus: complete
 
 うまく動作している。あといくつか作業したらアップロードする。
 
-GTKライブラリをインストールするよう人々に伝える必要がある。GTKをインストールするapt-getコマンドを覚えているか？また、GUIがインストールされていない環境でもインストールできるか？
+GTK ライブラリをインストールするよう人々に伝える必要がある。GTK をインストールする apt-get コマンドを覚えているか？また、GUI がインストールされていない環境でもインストールできるか？

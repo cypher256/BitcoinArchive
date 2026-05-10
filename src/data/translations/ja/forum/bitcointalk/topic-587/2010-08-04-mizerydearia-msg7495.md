@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック587におけるmizerydeariaの文脈投稿。msg6301の後。"
+description: "BitcoinTalk トピック 587 における mizerydearia の文脈投稿。msg6301 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -19,7 +19,7 @@ quotes:
 translationStatus: complete
 ---
 
-ArtForzありがとう！ ^_^
+ArtForz ありがとう！ ^_^
 
 <!-- quote: q1 -->
 > Code:import struct

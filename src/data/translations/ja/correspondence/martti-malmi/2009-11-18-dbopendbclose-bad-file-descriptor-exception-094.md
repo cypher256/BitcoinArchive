@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがBerkeley DBの「Bad file descriptor」例外の調査に役立てるため、デバッグログとデータベースログをサトシに送付。"
+description: "マルミが Berkeley DB の「Bad file descriptor」例外の調査に役立てるため、デバッグログとデータベースログをサトシに送付。"
 isSatoshi: false
 tags:
   - "correspondence"

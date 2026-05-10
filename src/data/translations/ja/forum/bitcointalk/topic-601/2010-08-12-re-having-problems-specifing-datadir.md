@@ -1,5 +1,5 @@
 ---
-title: "Re: -datadirの指定で問題が発生"
+title: "Re: -datadir の指定で問題が発生"
 date: 2010-08-12T21:43:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVN rev 130でdatadirの問題を修正したことを報告。"
+description: "サトシ・ナカモトが SVN rev 130 で datadir の問題を修正したことを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVN rev 130で修正済みだ。
+SVN rev 130 で修正済みだ。

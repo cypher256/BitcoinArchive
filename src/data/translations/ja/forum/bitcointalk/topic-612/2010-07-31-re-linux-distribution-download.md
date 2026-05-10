@@ -1,5 +1,5 @@
 ---
-title: "Re: Linuxディストリビューションのダウンロード"
+title: "Re: Linux ディストリビューションのダウンロード"
 date: 2010-07-31T14:38:52.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがBoost 1.37以降でビルド可能であることを説明。"
+description: "サトシ・ナカモトが Boost 1.37 以降でビルド可能であることを説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-Boost 1.37以降でビルドできる。
+Boost 1.37 以降でビルドできる。

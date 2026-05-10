@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinの鋳造は熱力学的に逆説的"
+title: "Re: Bitcoin の鋳造は熱力学的に逆説的"
 date: 2010-08-06T19:48:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック721におけるMoonShadowの文脈投稿。msg8114の前。"
+description: "BitcoinTalk トピック 721 における MoonShadow の文脈投稿。msg8114 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

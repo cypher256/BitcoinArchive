@@ -1,5 +1,5 @@
 ---
-title: "サトシからウェイ・ダイへ：ビットコインホワイトペーパーでのb-money引用について（2008-08-22）"
+title: "サトシからウェイ・ダイへ：ビットコインホワイトペーパーでの b-money 引用について（2008-08-22）"
 date: 2008-08-22T00:00:00Z
 type: "correspondence"
 source: "gwern"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サトシの最も初期に知られるメール。ウェイ・ダイにb-moneyの正しい引用について尋ねるメールを送り、アダム・バックの紹介でb-moneyを知ったことを明かしている。"
+description: "サトシの最も初期に知られるメール。ウェイ・ダイに b-money の正しい引用について尋ねるメールを送り、アダム・バックの紹介で b-money を知ったことを明かしている。"
 isSatoshi: true
 tags:
   - "b-money"
@@ -31,9 +31,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-あなたのb-moneyページを非常に興味深く読んだ。あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしている。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)（hashcash.org）が類似点に気づき、あなたのサイトを教えてくれた。
+あなたの b-money ページを非常に興味深く読んだ。あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしている。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)（hashcash.org）が類似点に気づき、あなたのサイトを教えてくれた。
 
-論文の引用のために、あなたのb-moneyページの公開年を知る必要がある。このようになる：
+論文の引用のために、あなたの b-money ページの公開年を知る必要がある。このようになる：
 
 [1] W. Dai, "b-money," http://www.weidai.com/bmoney.txt, 1998.
 

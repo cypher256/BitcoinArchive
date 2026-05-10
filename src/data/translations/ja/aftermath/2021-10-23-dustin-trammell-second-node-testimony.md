@@ -1,5 +1,5 @@
 ---
-title: "ダスティン・トランメルがビットコインネットワークの2番目のノードであった可能性を証言"
+title: "ダスティン・トランメルがビットコインネットワークの 2番目のノードであった可能性を証言"
 date: 2021-10-23T00:00:00Z
 type: "article"
 source: "stephan-livera"
@@ -28,9 +28,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-2021年10月23日、[ダスティン・D・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)はStephan Liveraポッドキャスト（第314回：「ビットコインネットワークの2番目のノード？ビットコインの初期の日々」）に出演し、ビットコインの最初期のユーザーの一人としての体験を最も詳細に語った。
+2021年10月23日、[ダスティン・D・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)は Stephan Livera ポッドキャスト（第 314回：「ビットコインネットワークの 2番目のノード？ビットコインの初期の日々」）に出演し、ビットコインの最初期のユーザーの一人としての体験を最も詳細に語った。
 
-**「1つの他のノード」の体験：**
+**「1 つの他のノード」の体験：**
 
 トランメルは、2009年1月8日の[暗号学メーリングリストでの](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の発表後、ソフトウェアをダウンロードして実行した最初の瞬間を描写した：
 
@@ -56,11 +56,11 @@ translationStatus: complete
 
 > 「ネットワーク上の2番目のノードだったかもしれないと思うが、それは当時のソフトウェアで見た動作に基づく完全な推測だ。」
 
-トランメルは、これが確定的な証拠ではなく観察された動作（既知のIPへのブートストラップによる単一のピア接続）に基づいていることを慎重に述べた。しかし、v0.1リリースからわずか2日後の[2009年1月11日にサトシに送ったメール](/BitcoinArchive/ja/entries/correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email/)で、クレジット0.00の「Generated」メッセージを文書化しており、その日までにソフトウェアを実行していたことが確認されている。
+トランメルは、これが確定的な証拠ではなく観察された動作（既知の IP へのブートストラップによる単一のピア接続）に基づいていることを慎重に述べた。しかし、v0.1 リリースからわずか 2日後の [2009年1月11日にサトシに送ったメール](/BitcoinArchive/ja/entries/correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email/)で、クレジット 0.00 の「Generated」メッセージを文書化しており、その日までにソフトウェアを実行していたことが確認されている。
 
 **以前の証言（Cointelegraph、2021年3月）：**
 
-Cointelegraphとの以前のインタビューで、トランメルは追加の文脈を提供した：
+Cointelegraph との以前のインタビューで、トランメルは追加の文脈を提供した：
 
 > 「マイニングは非常に簡単だったが、設定に入って具体的にマイニングをオンにしなければならないことに最初の数日間気づかなかった。」
 

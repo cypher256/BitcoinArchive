@@ -4,14 +4,14 @@ date: 2009-07-18T00:00:00Z
 type: "correspondence"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
-sourceNote: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
+sourceNote: "COPA 対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
 author: "Nicholas Bohm"
 participants:
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ボームがサトシに、再起動しても丸一日以上ビットコインが接続を確立できなくなったと報告した。7月15日以前は3〜5ノードの接続を維持できていた。"
+description: "ボームがサトシに、再起動しても丸一日以上ビットコインが接続を確立できなくなったと報告した。7月15日以前は 3〜5 ノードの接続を維持できていた。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -26,10 +26,10 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-ポート転送の修正から約6週間後、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)は新たな接続障害を報告した。
+ポート転送の修正から約 6 週間後、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)は新たな接続障害を報告した。
 
 <!-- speaker: Nicholas Bohm -->
 > ビットコインが丸一日ほど接続を確立できていない。再起動しても変わらない。
 
 <!-- speaker: narrator -->
-ボームは7月15日以前は3〜5ノードの接続を維持できていたと述べており、2009年半ばのアクティブなビットコインネットワークの規模を示す貴重なデータポイントを提供している。適切にポート転送を設定した接続済みノードですらすべてのピアを失う可能性があったという事実は、この時期のネットワークが極めて小規模であったことを示唆している。
+ボームは 7月15日以前は 3〜5 ノードの接続を維持できていたと述べており、2009年半ばのアクティブなビットコインネットワークの規模を示す貴重なデータポイントを提供している。適切にポート転送を設定した接続済みノードですらすべてのピアを失う可能性があったという事実は、この時期のネットワークが極めて小規模であったことを示唆している。

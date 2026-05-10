@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinに関すること"
+title: "Bitcoin に関すること"
 date: 2009-12-22T13:49:14Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがbitcoinexchange.comドメインを登録したことを報告し、PayPalベースのシンプルなBitcoin取引所サービスの構想を説明。"
+description: "マルミが bitcoinexchange.com ドメインを登録したことを報告し、PayPal ベースのシンプルな Bitcoin 取引所サービスの構想を説明。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -23,8 +23,8 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-ドメイン名bitcoinexchange.comを登録しました。余暇の活動として近いうちにサービスのコーディングを始めるつもりです。登録不要でGoogleのようなシンプルなインターフェースを構想しています。フロントページにはテキストフィールドが2つだけあり、取引したい金額を入力し、ドルを買う場合はPayPalアドレスを、Bitcoinを買う場合はBitcoinアドレスを入力します。次のページでは、コインを送金するための新しいBitcoinアドレスか、PayPal取引テキスト用のチェックコードが表示されます。
+ドメイン名 bitcoinexchange.com を登録しました。余暇の活動として近いうちにサービスのコーディングを始めるつもりです。登録不要で Google のようなシンプルなインターフェースを構想しています。フロントページにはテキストフィールドが 2 つだけあり、取引したい金額を入力し、ドルを買う場合は PayPal アドレスを、Bitcoin を買う場合は Bitcoin アドレスを入力します。次のページでは、コインを送金するための新しい Bitcoin アドレスか、PayPal 取引テキスト用のチェックコードが表示されます。
 
-PayPalは最初には良い選択肢ですね。シンプルで初期費用もかかりません。ただし、後々クレジットカードも受け付けるかもしれないです。
+PayPal は最初には良い選択肢ですね。シンプルで初期費用もかかりません。ただし、後々クレジットカードも受け付けるかもしれないです。
 
 メンテナンス用アカウントはまだ必要ですか？必要なら問題ないですが、パスワードを別のものに変更してください。

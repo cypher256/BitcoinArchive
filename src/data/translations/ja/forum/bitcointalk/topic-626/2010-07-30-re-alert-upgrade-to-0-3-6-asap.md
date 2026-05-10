@@ -1,5 +1,5 @@
 ---
-title: "Re: *** 警告 *** 0.3.6にアップグレードしてください"
+title: "Re: *** 警告 *** 0.3.6 にアップグレードしてください"
 date: 2010-07-30T19:53:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがUbuntu 9.04でのビルド手順と依存関係のインストール方法を詳細に説明。"
+description: "サトシ・ナカモトが Ubuntu 9.04 でのビルド手順と依存関係のインストール方法を詳細に説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,7 +26,7 @@ quotes:
 > これらのビルドを作るのにどれだけ苦労したか想像できる。自分はUbuntu 9.04上でプログラムをビルドしようとしているが、パッケージをインストールしてソースをコンパイルし続けても、依存関係を全部見つけられない（笑）。
 <!-- /tone-skip -->
 
-なぜそんなに苦労しているのか理解できない。build-unix.txtの手順に従っただけだ。Boost 1.37用にちょっとした修正を加えたが、次回SVNを更新する時にアップロードする。以下に記載する：
+なぜそんなに苦労しているのか理解できない。build-unix.txt の手順に従っただけだ。Boost 1.37 用にちょっとした修正を加えたが、次回 SVN を更新する時にアップロードする。以下に記載する：
 
 ```
 依存関係
@@ -52,7 +52,7 @@ make install
 ldconfig
 ```
 
-makefile.unixにコメントを追加：
+makefile.unix にコメントを追加：
 
 ```makefile
 # boost 1.37の場合、boostライブラリに-mtを追加

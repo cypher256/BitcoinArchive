@@ -1,5 +1,5 @@
 ---
-title: "Re: Ubuntu用ビルドは？"
+title: "Re: Ubuntu 用ビルドは？"
 date: 2011-01-07T17:23:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック454におけるギャビン・アンドレセンの文脈投稿。msg7328の後。"
+description: "BitcoinTalk トピック 454 におけるギャビン・アンドレセンの文脈投稿。msg7328 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-いいね！この素晴らしい成果をbitcoin本流に取り込みたい。ビルドプロセス改善に取り組んでいる他の人たちと話をして、パッチを提出してほしい。
+いいね！この素晴らしい成果を bitcoin 本流に取り込みたい。ビルドプロセス改善に取り組んでいる他の人たちと話をして、パッチを提出してほしい。

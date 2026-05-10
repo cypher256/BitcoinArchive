@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-25T21:34:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCパスワード」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC パスワード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -41,6 +41,6 @@ quotes:
 > ```
 <!-- /tone-skip -->
 
-このバグを見つけるほど長いパスワードを使っていたことに+1だ。
+このバグを見つけるほど長いパスワードを使っていたことに+1 だ。
 
-SVNにリビジョン110としてアップロードした。
+SVN にリビジョン 110 としてアップロードした。

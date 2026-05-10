@@ -18,4 +18,4 @@ translationStatus: complete
 
 素晴らしいグラフだ！滑らかにするための移動平均があるといい。
 
-[http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php) によると、過去24時間で212ブロック、つまり1時間あたり8.8ブロックだ。
+[http://nullvoid.org/bitcoin/statistix.php](http://nullvoid.org/bitcoin/statistix.php) によると、過去 24時間で 212 ブロック、つまり 1時間あたり 8.8 ブロックだ。

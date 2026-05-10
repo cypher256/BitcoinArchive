@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック834におけるNewLibertyStandardの文脈投稿。after msg9843, サトシを引用."
+description: "BitcoinTalk トピック 834 における NewLibertyStandard の文脈投稿。after msg9843, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -32,4 +32,4 @@ translationStatus: complete
 >
 > proof-of-workの合計だ。
 
-ということは、十分に強力なノードは、最後のxブロックを継続的に巻き戻し、ある金額以上のトランザクション手数料を含むトランザクションだけを許可することができる、ということか？
+ということは、十分に強力なノードは、最後の x ブロックを継続的に巻き戻し、ある金額以上のトランザクション手数料を含むトランザクションだけを許可することができる、ということか？

@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Laszlo Hanyecz"
     slug: "laszlo-hanyecz"
-description: "ハニエツが2010年5月10日のGPUマイニング公開発表に対するサトシのメールでの懸念を回想。原文未公開、後年の取材に基づく。"
+description: "ハニエツが 2010年5月10日の GPU マイニング公開発表に対するサトシのメールでの懸念を回想。原文未公開、後年の取材に基づく。"
 isSatoshi: false
 tags:
   - "gpu-mining"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.13 RC1 Windows版、テストをお願いします"
+title: "Re: 0.3.13 RC1 Windows 版、テストをお願いします"
 date: 2010-10-01T00:32:46.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3.13 RC1 Windows版、テストをお願いします」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3.13 RC1 Windows 版、テストをお願いします」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.13には間に合わなかったが、次のバージョンに追加する時間を見つけるようにする。
+0.3.13 には間に合わなかったが、次のバージョンに追加する時間を見つけるようにする。

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin自動販売機（高速トランザクション問題）"
+title: "Re: Bitcoin 自動販売機（高速トランザクション問題）"
 date: 2010-07-18T01:59:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Bitcoin自動販売機（高速トランザクション問題）」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin 自動販売機（高速トランザクション問題）」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

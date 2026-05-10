@@ -1,5 +1,5 @@
 ---
-title: "非GUIオプション"
+title: "非 GUI オプション"
 date: 2010-02-17T17:32:04Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがBitcoinをGUIなしで実行する方法について調査結果を共有し、GTKのヘッドレスサポートやwxAppConsoleなどのアプローチを提案する。"
+description: "マルミが Bitcoin を GUI なしで実行する方法について調査結果を共有し、GTK のヘッドレスサポートや wxAppConsole などのアプローチを提案する。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,10 +24,10 @@ translationStatus: complete
 
 <!-- speaker: Martti Malmi -->
 
-GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
+GUI なしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 
-1) GTKはディスプレイなしでプログラムを実行することをサポートしています：http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。ただし、wxWidgetsで可能かどうかまでは分かりません。
+1) GTK はディスプレイなしでプログラムを実行することをサポートしています：http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。ただし、wxWidgets で可能かどうかまでは分かりません。
 
-2) wx 2.9のwxAppConsoleが何かの役に立つかもしれないですね。wxAppをwxAppConsoleに単純に置き換えるだけでは動作しないです。どう使うべきか分かりません。ドキュメントもあまり整備されていないです。
+2) wx 2.9 の wxAppConsole が何かの役に立つかもしれないですね。wxApp を wxAppConsole に単純に置き換えるだけでは動作しないです。どう使うべきか分かりません。ドキュメントもあまり整備されていないです。
 
-3) もう一つの選択肢として、IMPLEMENT_APP_NO_MAIN()を使って独自のmainメソッドを作る方法があるかもしれません。
+3) もう一つの選択肢として、IMPLEMENT_APP_NO_MAIN()を使って独自の main メソッドを作る方法があるかもしれません。

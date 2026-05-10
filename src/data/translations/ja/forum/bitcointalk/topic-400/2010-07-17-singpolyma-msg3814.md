@@ -8,10 +8,10 @@ author: "singpolyma"
 participants:
   - name: "singpolyma"
     slug: "singpolyma"
-description: "BitcoinTalkトピック400におけるsingpolymaの文脈投稿。msg3823の前。"
+description: "BitcoinTalk トピック 400 における singpolyma の文脈投稿。msg3823 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-58464ブロックある……しばらくソフトウェアを動かしていなかった
+58464 ブロックある……しばらくソフトウェアを動かしていなかった

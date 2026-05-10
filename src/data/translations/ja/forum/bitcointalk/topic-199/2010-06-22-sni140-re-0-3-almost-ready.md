@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-22T19:11:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -24,4 +24,4 @@ C:\Program Files\Bitcoin\bitcoin.exe in OnInit()
 
 通常これが発生するのは、データディレクトリが配置されるべきディレクトリが存在しない場合だ。"%appdata%"ディレクトリが存在するか確認してほしい。
 
-0.2でもこのエラーが出るか？この点で異なるところはないので、0.2では出ず0.3で出る理由が想像しにくいのだが。
+0.2 でもこのエラーが出るか？この点で異なるところはないので、0.2 では出ず 0.3 で出る理由が想像しにくいのだが。

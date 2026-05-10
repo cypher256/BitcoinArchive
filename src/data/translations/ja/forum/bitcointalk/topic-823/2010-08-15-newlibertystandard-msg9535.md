@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック823におけるNewLibertyStandardの文脈投稿。msg9531の後。"
+description: "BitcoinTalk トピック 823 における NewLibertyStandard の文脈投稿。msg9531 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -25,4 +25,4 @@ translationStatus: complete
 > 起動時に不正なブロックのハッシュをチェックする処理をハードコードして、それがbest-blockチェーン上にあれば、そのブロックと後続のブロックをorphan化することは簡単にできるだろうか？
 > これを修正するためにチェーンの全部または大部分を再ダウンロードしなければならないのは辛い……
 
-あるいは全ブロックの簡易な再検証だけでもいい。なにしろ以前の5倍速くなっているのだから。 😉
+あるいは全ブロックの簡易な再検証だけでもいい。なにしろ以前の 5倍速くなっているのだから。 😉

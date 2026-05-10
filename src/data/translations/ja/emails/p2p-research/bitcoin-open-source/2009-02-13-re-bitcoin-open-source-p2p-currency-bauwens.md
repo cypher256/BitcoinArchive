@@ -1,5 +1,5 @@
 ---
-title: "Re: [p2p-research] ビットコイン：P2P通貨のオープンソース実装"
+title: "Re: [p2p-research] ビットコイン：P2P 通貨のオープンソース実装"
 date: 2009-02-13T18:36:45.000Z
 type: "mailing-list"
 source: "p2p-research-list"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Michel Bauwens"
     slug: "michel-bauwens"
-description: "P2P Researchメーリングリストでのミシェル・バウエンスの質問に対し、ビットコインが完全に稼働中であることを確認し、ソフトウェアを試す人にコインを送ると提案。"
+description: "P2P Research メーリングリストでのミシェル・バウエンスの質問に対し、ビットコインが完全に稼働中であることを確認し、ソフトウェアを試す人にコインを送ると提案。"
 isSatoshi: true
 tags:
   - "announcement"

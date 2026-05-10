@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがクロスプラットフォーム互換性のためCriticalSectionコードのwxCriticalSectionへの変換を計画し、Linuxビルドに着手する時期であることに同意する。"
+description: "サトシがクロスプラットフォーム互換性のため CriticalSection コードの wxCriticalSection への変換を計画し、Linux ビルドに着手する時期であることに同意する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -23,9 +23,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-CriticalSectionのコードをwxCriticalSectionに変換してSVNにアップロードするよ（少しトリッキーだけど）。TryEnterCriticalSectionをどうするかはまだわからない。もうすぐすべてチェックインできる状態になると思う。
+CriticalSection のコードを wxCriticalSection に変換して SVN にアップロードするよ（少しトリッキーだけど）。TryEnterCriticalSection をどうするかはまだわからない。もうすぐすべてチェックインできる状態になると思う。
 
-君の言う通り、そろそろLinuxビルドをやる時期だろうね。Linux環境のセットアップと依存関係のビルドに取り組んでいるところだ。
+君の言う通り、そろそろ Linux ビルドをやる時期だろうね。Linux 環境のセットアップと依存関係のビルドに取り組んでいるところだ。
 
 <!-- speaker: Martti Malmi -->
 > はい。WindowsのスレッドとソケットライブラリのインクルードをそれらのPOSIX版に

@@ -1,5 +1,5 @@
 ---
-title: "Re:（thrashaholicの文脈投稿）"
+title: "Re:（thrashaholic の文脈投稿）"
 date: 2010-09-23T05:06:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "thrashaholic"
 participants:
   - name: "thrashaholic"
     slug: "thrashaholic"
-description: "BitcoinTalkトピック671におけるthrashaholicの文脈投稿。msg13844の前。"
+description: "BitcoinTalk トピック 671 における thrashaholic の文脈投稿。msg13844 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -37,6 +37,6 @@ quotes:
 > bitpornは素晴らしいアイデアだと思うし、誰かが開発を始めるなら連絡してほしい。
 <!-- /tone-skip -->
 
-SharingMatrix/MegaUpload等を（ユーザーフレンドリーな）Bitcoinベースのファイルホストに置き換えて、「無料」のポルノサイト（例えばadultbay）にそれを使わせたらどうだ。個人情報やクレジットカードの詳細をリスクにさらしたり、あの悪質な自動定期課金を使わなくてすむなら、帯域幅の増加と同時ダウンロードにお金を払ってもいい。
+SharingMatrix/MegaUpload 等を（ユーザーフレンドリーな）Bitcoin ベースのファイルホストに置き換えて、「無料」のポルノサイト（例えば adultbay）にそれを使わせたらどうだ。個人情報やクレジットカードの詳細をリスクにさらしたり、あの悪質な自動定期課金を使わなくてすむなら、帯域幅の増加と同時ダウンロードにお金を払ってもいい。
 
 この方法なら、ポルノ（と音楽ブログ）を間接的に活用できる。

@@ -1,5 +1,5 @@
 ---
-title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載"
+title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載"
 date: 2010-08-16T05:02:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック820におけるNewLibertyStandardの文脈投稿。after msg9676, サトシを引用."
+description: "BitcoinTalk トピック 820 における NewLibertyStandard の文脈投稿。after msg9676, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -49,13 +49,13 @@ o_O……ハッシュ頑張ってくれ、健闘を祈る！
 >
 > 数値を頼む。どんなCPUだ？
 
-Ubuntu 10.04 amd64上のi7 860 2.8 GHzで、自分のかなり曖昧な記憶からの結果はこちら。数値は少しずれているかもしれない。
+Ubuntu 10.04 amd64 上の i7 860 2.8 GHz で、自分のかなり曖昧な記憶からの結果はこちら。数値は少しずれているかもしれない。
 
-4wayなし、HTあり、4/8仮想コア、4.5～5 Mhash/sec
-4wayなし、HTあり、8/8仮想コア、上より少し低いが、基本的に同じ
+4way なし、HT あり、4/8 仮想コア、4.5～5 Mhash/sec
+4way なし、HT あり、8/8 仮想コア、上より少し低いが、基本的に同じ
 
-4wayあり、HTあり、8/8仮想コア、6.5～8 Mhash/sec（気のせいかもしれないが、明らかにばらつきが大きいように見える。）
-4wayあり、HTあり、4/8仮想コア、5～6 Mhash/sec
+4way あり、HT あり、8/8 仮想コア、6.5～8 Mhash/sec（気のせいかもしれないが、明らかにばらつきが大きいように見える。）
+4way あり、HT あり、4/8 仮想コア、5～6 Mhash/sec
 
-4wayなし、HTなし、4/4物理コア、4.5～5 Mhash/sec（ただし最初の結果より少し遅い。）
-4wayあり、HTなし、4/4物理コア、5～6 Mhash/sec
+4way なし、HT なし、4/4 物理コア、4.5～5 Mhash/sec（ただし最初の結果より少し遅い。）
+4way あり、HT なし、4/4 物理コア、5～6 Mhash/sec

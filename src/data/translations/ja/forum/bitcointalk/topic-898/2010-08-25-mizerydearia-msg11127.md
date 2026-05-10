@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック898におけるmizerydearia の文脈投稿。"
+description: "BitcoinTalk トピック 898 における mizerydearia の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -46,13 +46,13 @@ throw runtime_error(strWarning);
 となる。
 コードはこちらで確認できる：http://bitcoin.svn.sourceforge.net/viewvc/bitcoin/trunk/rpc.cpp?revision=142&view=markup
 
--enablesafetyを使ったときだけエラーを表示するのは少し奇妙だ。これが起きると安全でない、あるいはセキュリティ上問題があるのだろうか？
+-enablesafety を使ったときだけエラーを表示するのは少し奇妙だ。これが起きると安全でない、あるいはセキュリティ上問題があるのだろうか？
 
 http://www.bitcoin.org/wiki/doku.php?id=api
 
-コードを理解した限りでは、getinfo、help、stop、getgenerate、setgenerate以外の http://www.bitcoin.org/wiki/doku.php?id=api のメソッドを使用する際、かつ警告がある場合：
+コードを理解した限りでは、getinfo、help、stop、getgenerate、setgenerate 以外の http://www.bitcoin.org/wiki/doku.php?id=api のメソッドを使用する際、かつ警告がある場合：
 
--disablesafemodeが実行中のプロセスに渡されていれば、警告は表示されない
--disablesafemodeが実行中のプロセスに渡されていなければ、警告が表示される
+-disablesafemode が実行中のプロセスに渡されていれば、警告は表示されない
+-disablesafemode が実行中のプロセスに渡されていなければ、警告が表示される
 
 http://www.cplusplus.com/reference/std/stdexcept/runtime_error/

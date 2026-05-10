@@ -1,5 +1,5 @@
 ---
-title: "「The Rise and Fall of Bitcoin」 — Wired誌によるビットコイン初の大型特集"
+title: "「The Rise and Fall of Bitcoin」 — Wired 誌によるビットコイン初の大型特集"
 date: 2011-11-23T00:00:00Z
 type: "article"
 source: "wired"
@@ -26,7 +26,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Amir Taaki"
     slug: "amir-taaki"
-description: "ウォレスによるWired誌特集。主要メディアでのビットコイン本格記事としては初期。ホワイトペーパー、Mt.Gox、コミュニティ成長痛を辿り「どうだっていい」で締めくくる。"
+description: "ウォレスによる Wired 誌特集。主要メディアでのビットコイン本格記事としては初期。ホワイトペーパー、Mt.Gox、コミュニティ成長痛を辿り「どうだっていい」で締めくくる。"
 isSatoshi: false
 tags:
   - "media"
@@ -48,7 +48,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2011年11月、ジャーナリストのベンジャミン・ウォレスがWired誌（19.12号）に「The Rise and Fall of Bitcoin」を発表した。主要メディアによるビットコインの本格的な特集記事としては最初期のものの一つだった。記事はサトシ・ナカモトの[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)から、マイニングブーム、価格の急騰、そしてハッキングや詐欺、幻滅に至るまで、ビットコインの全軌跡を追った。
+2011年11月、ジャーナリストのベンジャミン・ウォレスが Wired 誌（19.12 号）に「The Rise and Fall of Bitcoin」を発表した。主要メディアによるビットコインの本格的な特集記事としては最初期のものの一つだった。記事はサトシ・ナカモトの[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)から、マイニングブーム、価格の急騰、そしてハッキングや詐欺、幻滅に至るまで、ビットコインの全軌跡を追った。
 
 **ビットコインへの初期の評価：**
 
@@ -58,7 +58,7 @@ translationStatus: complete
 **初期コミュニティの精神：**
 
 <!-- speaker: narrator -->
-記事は、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が1万BTCを50ドルで購入しBitcoin Faucetを作って無料配布したこと、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)が[史上初の実世界ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として1万BTCでピザ2枚を購入したことを描写した。
+記事は、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が 1 万 BTC を 50 ドルで購入し Bitcoin Faucet を作って無料配布したこと、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)が[史上初の実世界ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として 1 万 BTC でピザ 2枚を購入したことを描写した。
 
 **サトシの正体について：**
 
@@ -70,7 +70,7 @@ translationStatus: complete
 
 > 「サトシっていう人とメールを何通かやり取りしたんだけどさ。本物の人間じゃないような感じがずっとしてたんだよね。返信も2週間おきくらいで、たまに誰かがチェックしてるような感じだった。ビットコインって、一人で作ったにしてはよくできすぎてるんだよ」
 
-**[サトシのWikileaksへの嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010年12月5日）：**
+**[サトシの Wikileaks への嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010年12月5日）：**
 
 <!-- speaker: Satoshi Nakamoto -->
 サトシ・ナカモト：

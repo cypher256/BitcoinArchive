@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.13、アップグレードしてください"
+title: "Re: バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-03T05:25:12.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック1327におけるmizerydeaiaの文脈投稿。msg15102の前。"
+description: "BitcoinTalk トピック 1327 における mizerydeaia の文脈投稿。msg15102 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-tarballにmanページを含めるべきだと提案する。
+tarball に man ページを含めるべきだと提案する。

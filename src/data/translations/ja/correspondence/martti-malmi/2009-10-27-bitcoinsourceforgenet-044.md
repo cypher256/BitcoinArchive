@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがSourceForgeの遅さ、標準Cを使ったビットコインの移植性アプローチ、今後のプロトコル変更、Linuxポートへの関心の高まりについて議論する。"
+description: "サトシが SourceForge の遅さ、標準 C を使ったビットコインの移植性アプローチ、今後のプロトコル変更、Linux ポートへの関心の高まりについて議論する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -35,13 +35,13 @@ quotes:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-SourceForgeは本当に遅いね。でも他にどうすればいいかわからない。あれはもう標準みたいなもので、大抵のプロジェクトはprojectname.sourceforge.netのサイトを持っている。Google検索でwhatever.sourceforge.netを見かけると、それが公式サイトだと思う。
+SourceForge は本当に遅いね。でも他にどうすればいいかわからない。あれはもう標準みたいなもので、大抵のプロジェクトは projectname.sourceforge.net のサイトを持っている。Google 検索で whatever.sourceforge.net を見かけると、それが公式サイトだと思う。
 
-Bitweaverでユーザーがフォーラムの自分のメッセージを編集（できれば削除も）できるようにする方法はある？
+Bitweaver でユーザーがフォーラムの自分のメッセージを編集（できれば削除も）できるようにする方法はある？
 
-Linuxへの移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの作業量が倍になるから、軽々しく決められることではない。ただ、LibertyのWineクラッシュは心配だ。
+Linux への移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの作業量が倍になるから、軽々しく決められることではない。ただ、Liberty の Wine クラッシュは心配だ。
 
-できるだけ移植性を高めるようにして、Windowsの呼び出しの代わりに標準Cを使うようにしてきた。スレッド処理は_beginthreadで、標準Cライブラリの一部だ。wxWidgetsにはwxCriticalSectionがあるので使える。ソケットのコードはsend/recvで、MicrosoftがBSDからソケットを移植したのでUnixと同じだと思う。ソケットは直接制御する必要があり、抽象化レイヤーの裏に置くのは良い考えではない。wxWidgetsはクロスプラットフォームのサポート関数を探すのに良い場所だ。できれば#ifdefだらけのコードは避けたい。複数回使われるものはutil.cppの関数にして、その中に#ifdefを入れる形がいいだろう。
+できるだけ移植性を高めるようにして、Windows の呼び出しの代わりに標準 C を使うようにしてきた。スレッド処理は_beginthread で、標準 C ライブラリの一部だ。wxWidgets には wxCriticalSection があるので使える。ソケットのコードは send/recv で、Microsoft が BSD からソケットを移植したので Unix と同じだと思う。ソケットは直接制御する必要があり、抽象化レイヤーの裏に置くのは良い考えではない。wxWidgets はクロスプラットフォームのサポート関数を探すのに良い場所だ。できれば#ifdef だらけのコードは避けたい。複数回使われるものは util.cpp の関数にして、その中に#ifdef を入れる形がいいだろう。
 
 ところで、今コミットしていない変更がたくさんある。徹底的にテストするまでネットワークに放出できない重要なプロトコル移行が含まれているからだ。もうそんなに長くはかからないはずだ。
 

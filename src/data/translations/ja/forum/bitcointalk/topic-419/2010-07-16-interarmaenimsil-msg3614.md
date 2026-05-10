@@ -8,10 +8,10 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "InterArmaEnimSilがスレッドを開始: BitcoinTalkトピック419。"
+description: "InterArmaEnimSil がスレッドを開始: BitcoinTalk トピック 419。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-現在のネットワークの規模を、例えば接続クライアント数、アクティブに生成しているクライアント数、FLOPS、あるいは理想的にはこれらすべてで照会する方法はあるだろうか？自分のクライアントは過去4日間ずっと15クライアントに接続されているが……コインを生成しているのが15人だけとは到底思えない。スケーラビリティの評価という観点でこれを調べたいと思っている。
+現在のネットワークの規模を、例えば接続クライアント数、アクティブに生成しているクライアント数、FLOPS、あるいは理想的にはこれらすべてで照会する方法はあるだろうか？自分のクライアントは過去 4日間ずっと 15 クライアントに接続されているが……コインを生成しているのが 15人だけとは到底思えない。スケーラビリティの評価という観点でこれを調べたいと思っている。

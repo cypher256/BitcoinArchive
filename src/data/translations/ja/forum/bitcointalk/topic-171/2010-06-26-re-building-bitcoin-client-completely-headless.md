@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinクライアントを完全にヘッドレスでビルドする"
+title: "Re: Bitcoin クライアントを完全にヘッドレスでビルドする"
 date: 2010-06-26T21:06:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「BitCoinクライアントを完全にヘッドレスでビルドする」におけるサトシ・ナカモトの返信。"
+description: "スレッド「BitCoin クライアントを完全にヘッドレスでビルドする」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-「1.3ほぼ完成」スレッドのLinuxリリース候補に、ビルド済みのbitcoindが含まれている。
+「1.3 ほぼ完成」スレッドの Linux リリース候補に、ビルド済みの bitcoind が含まれている。

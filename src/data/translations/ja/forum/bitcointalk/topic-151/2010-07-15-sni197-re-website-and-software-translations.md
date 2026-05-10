@@ -16,18 +16,18 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.1用に更新したbitcoin.poをこのメッセージに添付してアップロードした：
+0.3.1 用に更新した bitcoin.po をこのメッセージに添付してアップロードした：
 [http://bitcointalk.org/index.php?topic=151.msg1259#msg1259](http://bitcointalk.org/index.php?topic=151.msg1259#msg1259)
 
 新しい翻訳を始める場合はこちらを使ってほしい。
 
-すでにpoファイルがあるなら、poeditで更新できる。  
-- 開発フォーラムに投稿された0.3.1リリース候補からsrcディレクトリを取得する。どのバージョンでもよい：
+すでに po ファイルがあるなら、poedit で更新できる。  
+- 開発フォーラムに投稿された 0.3.1 リリース候補から src ディレクトリを取得する。どのバージョンでもよい：
 [http://bitcointalk.org/index.php?topic=383.0](http://bitcointalk.org/index.php?topic=383.0)
-- src配下にサブディレクトリを作る：locale/??/LC_MESSAGES
-（??は実際なんでもよい。「en」か自分の言語の2文字コード）
-- そこに.poファイルを置く
-- poeditで開く
-- poeditで、Catalog->Update from sources
+- src 配下にサブディレクトリを作る：locale/??/LC_MESSAGES
+（??は実際なんでもよい。「en」か自分の言語の 2 文字コード）
+- そこに.po ファイルを置く
+- poedit で開く
+- poedit で、Catalog->Update from sources
 
-肝心なのは、ソースファイルが入ったsrcディレクトリが、.poファイルから3階層上にある必要があることだ。
+肝心なのは、ソースファイルが入った src ディレクトリが、.po ファイルから 3 階層上にある必要があることだ。

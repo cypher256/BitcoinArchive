@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.13、アップグレードしてください"
+title: "Re: バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-03T21:36:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの文脈投稿。msg15147の前。"
+description: "BitcoinTalk トピック 1327 における ShadowOfHarbringer の文脈投稿。msg15147 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -60,7 +60,7 @@ power management: ts ttp tm stc 100mhzsteps hwpstate
 ```
 
 EDIT:
-CPUIDの確認方法もわかった：
+CPUID の確認方法もわかった：
 
 ```
 CPUID 444d4163 family 16, model 2, stepping 3, fUseSSE2=0

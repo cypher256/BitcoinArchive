@@ -8,7 +8,7 @@ author: "laanwj"
 participants:
   - name: "Wladimir van der Laan"
     slug: "wladimir-van-der-laan"
-description: "laanwjがbitcoin/bitcoin PR #4641でスレッドを開始。"
+description: "laanwj が bitcoin/bitcoin PR #4641 でスレッドを開始。"
 isSatoshi: false
 tags:
   - "github"

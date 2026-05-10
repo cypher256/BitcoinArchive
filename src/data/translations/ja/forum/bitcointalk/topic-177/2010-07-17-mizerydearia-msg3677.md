@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinモバイル"
+title: "Re: Bitcoin モバイル"
 date: 2010-07-17T05:09:37.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック177におけるmizerydeariaの文脈投稿。msg1814の後。"
+description: "BitcoinTalk トピック 177 における mizerydearia の文脈投稿。msg1814 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -32,4 +32,4 @@ translationStatus: complete
 >
 > 触発されたか？
 
-俺はこの機能を提供できる可能性のあるオープンソースのSMSプロジェクトに取り組んでいる。ただし、テキストメッセージで支払いをどう扱うかについてはあまり詳しくない。
+俺はこの機能を提供できる可能性のあるオープンソースの SMS プロジェクトに取り組んでいる。ただし、テキストメッセージで支払いをどう扱うかについてはあまり詳しくない。

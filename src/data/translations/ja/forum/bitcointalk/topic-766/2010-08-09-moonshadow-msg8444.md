@@ -8,7 +8,7 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック766におけるMoonShadowの文脈投稿。msg8424の後。"
+description: "BitcoinTalk トピック 766 における MoonShadow の文脈投稿。msg8424 の後。"
 isSatoshi: false
 tags: []
 quotes:

@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinサーバーのリサイズ"
+title: "Bitcoin サーバーのリサイズ"
 date: 2010-12-11T18:36:32Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがbitcoin.orgのメモリー不足エラーによるmysqldの停止を報告し、サーバーのRAMを512MBから1024MBに増設した経緯を説明。"
+description: "マルミが bitcoin.org のメモリー不足エラーによる mysqld の停止を報告し、サーバーの RAM を 512MB から 1024MB に増設した経緯を説明。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -23,4 +23,4 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-Bitcoin.orgが今日もしばらくダウンしていました。pingには応答しましたが、sshやhttpには応答しませんでした。再起動してメモリー不足エラーが原因でmysqldがkillされたことが判明しました。前回も同じエラーでしたが、その時はapacheがkillされていました。他に良い方法が思いつかなかったので、サーバーのメモリーを512MBから1024MBに増設しました。
+Bitcoin.org が今日もしばらくダウンしていました。ping には応答しましたが、ssh や http には応答しませんでした。再起動してメモリー不足エラーが原因で mysqld が kill されたことが判明しました。前回も同じエラーでしたが、その時は apache が kill されていました。他に良い方法が思いつかなかったので、サーバーのメモリーを 512MB から 1024MB に増設しました。

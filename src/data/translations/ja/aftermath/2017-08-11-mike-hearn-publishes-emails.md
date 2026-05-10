@@ -30,11 +30,11 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2017年8月、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)の[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との完全なメールのやり取りが公開された。メールは最初にBitcoinTalkでCipherionXというユーザーにより共有され、その後ハーンの個人ウェブサイトに掲載された。メールは2009年初頭から2011年4月までにわたり、以下のトピックを扱っている：
+2017年8月、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)の[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との完全なメールのやり取りが公開された。メールは最初に BitcoinTalk で CipherionX というユーザーにより共有され、その後ハーンの個人ウェブサイトに掲載された。メールは 2009年初頭から 2011年4月までにわたり、以下のトピックを扱っている：
 
 - サトシが将来のビットコインのスケーリングをどのように構想していたか
 - 簡易決済検証（SPV）の役割
-- マイニングがCPUから専門的なハードウェアへどのように進化するか
+- マイニングが CPU から専門的なハードウェアへどのように進化するか
 - アラートシステムに対するサトシの考え
 - プロジェクトリーダーシップの移行
 

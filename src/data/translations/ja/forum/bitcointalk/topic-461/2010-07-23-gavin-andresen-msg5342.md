@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-23T17:56:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。msg5383の前。"
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg5383 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,4 +24,4 @@ quotes:
 > ええ、それは本当にいいと思う。各開発者が自分で調べなくて済むように。Python、PHP、Javaそれぞれについて、json-rpcライブラリをインポートしてgetinfoなどを実行する簡単な例が必要だ。http認証の部分も含めて。
 <!-- /tone-skip -->
 
-分かった。PythonとPHPは書いた。Javaについては知っている限りのことを追加した。Java JSON-RPCを使ったことのある人、動く例でwikiページを更新してもらえないか？
+分かった。Python と PHP は書いた。Java については知っている限りのことを追加した。Java JSON-RPC を使ったことのある人、動く例で wiki ページを更新してもらえないか？

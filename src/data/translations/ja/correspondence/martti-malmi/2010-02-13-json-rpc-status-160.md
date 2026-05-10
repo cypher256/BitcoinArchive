@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-13T01:08:42Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがJSON-RPCとコマンドラインの実装をSVNにアップロードしたことを報告し、コマンド例を示してマルミにPythonでのテストを依頼する。"
+description: "サトシが JSON-RPC とコマンドラインの実装を SVN にアップロードしたことを報告し、コマンド例を示してマルミに Python でのテストを依頼する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -29,9 +29,9 @@ quotes:
 
 <!-- speaker: Satoshi Nakamoto -->
 
-JSON-RPCとコマンドラインの実装をSVNにアップロードした。コマンドについてもう少し考える時間ができたら、フォーラムに投稿するつもりだ。少なくともいくつかのメソッド名は変更する予定だ。
+JSON-RPC とコマンドラインの実装を SVN にアップロードした。コマンドについてもう少し考える時間ができたら、フォーラムに投稿するつもりだ。少なくともいくつかのメソッド名は変更する予定だ。
 
-RPCサーバーを有効にするには、-serverスイッチを追加してほしい。デフォルトでは無効だ。
+RPC サーバーを有効にするには、-server スイッチを追加してほしい。デフォルトでは無効だ。
 
 クライアントコマンドはスイッチなしで、以下のように使う：
 ```
@@ -43,11 +43,11 @@ bitcoin getallpayments 0
 bitcoin stop
 ```
 
-アプリケーションは通常、コマンドラインではなくJSON-RPCを直接使用する。
+アプリケーションは通常、コマンドラインではなく JSON-RPC を直接使用する。
 
-まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、結果を教えてほしい。Pythonを使っているのか？
+まだ私の JSON-RPC サーバーを他のものでテストしていない。もしテストしたら、結果を教えてほしい。Python を使っているのか？
 
-Linux版をGTKなしで動作させるのは別の作業になる。
+Linux 版を GTK なしで動作させるのは別の作業になる。
 
 <!-- speaker: Martti Malmi -->
 

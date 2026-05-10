@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-freenodeの代わりにラズロのirc.lfnet.orgを試してみよう。RC2はこちら、変更点はそれだけだ：
+freenode の代わりにラズロの irc.lfnet.org を試してみよう。RC2 はこちら、変更点はそれだけだ：
 
 （ダウンロードリンクは下記参照）

@@ -1,5 +1,5 @@
 ---
-title: "Re: IRCブートストラッピングについて"
+title: "Re: IRC ブートストラッピングについて"
 date: 2010-03-16T01:57:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック84におけるThe Madhatterの文脈投稿。msg729の前。"
+description: "BitcoinTalk トピック 84 における The Madhatter の文脈投稿。msg729 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-個人的にはI2P方式に一票だ。うまく動く。
+個人的には I2P 方式に一票だ。うまく動く。

@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-24T20:49:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック199におけるvirtualcoinの文脈投稿。msg1760の前。"
+description: "BitcoinTalk トピック 199 における virtualcoin の文脈投稿。msg1760 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,19 +16,19 @@ translationStatus: complete
 
 いいね。:-)
 
-64ビット版はUbuntu 10.04で問題なく動作する。もちろんWINEエミュレーションより（はるかに）速い（64ビットだからか？）
+64 ビット版は Ubuntu 10.04 で問題なく動作する。もちろん WINE エミュレーションより（はるかに）速い（64 ビットだからか？）
 
-4コア: 2850 khash/s
-3コア: 2130 khash/s
-2コア: 1420 khash/s
-1コア: 700 khash/s
+4 コア: 2850 khash/s
+3 コア: 2130 khash/s
+2 コア: 1420 khash/s
+1 コア: 700 khash/s
 
-WINE（32ビット）:
+WINE（32 ビット）:
 
-4コア - 2300 khash/s
-3コア - 1740 khash/s
-2コア - 1150 khash/s
-1コア - 580 khash/s
+4 コア - 2300 khash/s
+3 コア - 1740 khash/s
+2 コア - 1150 khash/s
+1 コア - 580 khash/s
 
 ありがとう - 見た目もなかなか良い。
 

@@ -33,17 +33,17 @@ relatedEntries:
 translationStatus: complete
 ---
 
-Cryonics Magazine（Alcor Life Extension Foundation発行）の2019年第2四半期号に、主に妻フラン・フィニーへのインタビューに基づく[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の詳細なプロフィールが掲載された。このプロフィールは後にダン・ヘルドによって編集され、2020年3月30日に21ideas.orgで再掲載された。
+Cryonics Magazine（Alcor Life Extension Foundation 発行）の 2019年第 2 四半期号に、主に妻フラン・フィニーへのインタビューに基づく[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の詳細なプロフィールが掲載された。このプロフィールは後にダン・ヘルドによって編集され、2020年3月30日に 21ideas.org で再掲載された。
 
-**Caltechでの出会いについて：**
-フランはCaltechの3年生の時、新入生のハルの「rotation week」で出会った。「彼が[上級生に]持ち上げられて運ばれている最中の姿を見ました。」彼女は回想する：「人々が集まって哲学的な議論をするんです…… 彼が話す時、彼の言うことにはたいてい聞く価値がありました。」
+**Caltech での出会いについて：**
+フランは Caltech の 3年生の時、新入生のハルの「rotation week」で出会った。「彼が[上級生に]持ち上げられて運ばれている最中の姿を見ました。」彼女は回想する：「人々が集まって哲学的な議論をするんです…… 彼が話す時、彼の言うことにはたいてい聞く価値がありました。」
 
 **2009年1月の[ビットコイン開始](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)について：**
 フランはハルの反応を語った：
 
 > 「これはクールだ。これは楽しいゲームだ。見て！本当に動いてる！」
 
-**ハルのALSと認知機能の変化について：**
+**ハルの ALS と認知機能の変化について：**
 
 > 「普通の認知症とは違うんですが、脳も影響を受けるんです。ハルは素早い思考ができなくなっている、暗算ができなくなっていると感じていました。それを失いつつあると感じていて、もっと失うだろうと。」
 

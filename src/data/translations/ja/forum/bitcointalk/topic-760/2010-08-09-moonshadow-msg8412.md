@@ -1,5 +1,5 @@
 ---
-title: "Re: Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）"
+title: "Re: Y2038 準拠の Bitcoin への移行計画はどうなる？（すでに準拠済み）"
 date: 2010-08-09T20:12:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック760におけるMoonShadowの文脈投稿。msg8413の前。"
+description: "BitcoinTalk トピック 760 における MoonShadow の文脈投稿。msg8413 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 [Deleted] Quote from: davidonpda on August 09, 2010, 08:07:26 PM
 > タイムスタンプの問題は、32ビット整数としてのunixタイムスタンプが2038年にオーバーフローすることだ。プログラマーだが、「unix time problem」や「2038」でググればもっと情報が見つかる。
 
-素人の観点からY2038問題は理解している。私が言いたかったのは、Bitcoinの構造内にはY2038問題は存在しないのではないかということだ。タイムスタンプはブロックチェーン内の特定の位置にのみ関連するので、クライアントがブロック内に正確なタイムスタンプを持つ必要はないはずだ。それに、それは何だろう？GMT？自分のクライアントはローカル時間で問題なく動作していると思う。もしそれが生成したブロックの拒否につながるなら、教えてほしい。
+素人の観点から Y2038 問題は理解している。私が言いたかったのは、Bitcoin の構造内には Y2038 問題は存在しないのではないかということだ。タイムスタンプはブロックチェーン内の特定の位置にのみ関連するので、クライアントがブロック内に正確なタイムスタンプを持つ必要はないはずだ。それに、それは何だろう？GMT？自分のクライアントはローカル時間で問題なく動作していると思う。もしそれが生成したブロックの拒否につながるなら、教えてほしい。

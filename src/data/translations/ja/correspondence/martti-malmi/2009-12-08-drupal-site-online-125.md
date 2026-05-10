@@ -1,5 +1,5 @@
 ---
-title: "Re: Drupalサイトが公開"
+title: "Re: Drupal サイトが公開"
 date: 2009-12-08T10:50:20Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミが新しいbitcoin.orgの公開を祝福し、bitcoin.sourceforge.netを新サイトにリダイレクトしたことを確認。"
+description: "マルミが新しい bitcoin.org の公開を祝福し、bitcoin.sourceforge.net を新サイトにリダイレクトしたことを確認。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-お疲れ様です。bitcoin.sourceforge.netをそこにリダイレクトしました。
+お疲れ様です。bitcoin.sourceforge.net をそこにリダイレクトしました。
 
 <!-- speaker: Satoshi Nakamoto -->
 > 新しいDrupalサイトを公開した。安全な移行のための十分な時間が

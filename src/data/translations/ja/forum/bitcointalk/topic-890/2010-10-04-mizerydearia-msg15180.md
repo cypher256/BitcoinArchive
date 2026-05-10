@@ -1,5 +1,5 @@
 ---
-title: "Re: P2Pプロトコルへのデジタル決済の統合"
+title: "Re: P2P プロトコルへのデジタル決済の統合"
 date: 2010-10-04T02:07:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック890におけるmizerydeariaの文脈投稿。msg10723の後。"
+description: "BitcoinTalk トピック 890 における mizerydearia の文脈投稿。msg10723 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -19,7 +19,7 @@ quotes:
 translationStatus: complete
 ---
 
-このプロジェクトに5btcの寄付を申し出る。（まだ）大した額ではないが、他の人の寄付のきっかけになるかもしれない。どのアドレスに送ればいい？
+このプロジェクトに 5btc の寄付を申し出る。（まだ）大した額ではないが、他の人の寄付のきっかけになるかもしれない。どのアドレスに送ればいい？
 
 <!-- quote: q1 -->
 > http://tahoe-lafs.org/trac/tahoe-lafs  おもしろいことに、私も昨日10 btc送ったばかりだ。

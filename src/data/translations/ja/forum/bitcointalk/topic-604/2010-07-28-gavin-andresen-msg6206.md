@@ -1,5 +1,5 @@
 ---
-title: "MacでのSVN r115ビルドエラー：回避策"
+title: "Mac での SVN r115 ビルドエラー：回避策"
 date: 2010-07-28T15:18:25.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック604におけるギャビン・アンドレセンの文脈投稿。msg6273の前。"
+description: "BitcoinTalk トピック 604 におけるギャビン・アンドレセンの文脈投稿。msg6273 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -21,4 +21,4 @@ translationStatus: complete
 ……Mac（gccバージョン4.2.1）でcryptopp/sha.cpp（最新SVNソース）をコンパイルしている時だ。
 ```
 
-makefileに-DCRYPTOPP_DISABLE_ASMを追加して修正した。MacでC++をコンパイルする経験が豊富な人なら、もっと良い修正を見つけられるかもしれない。
+makefile に-DCRYPTOPP_DISABLE_ASM を追加して修正した。Mac で C++をコンパイルする経験が豊富な人なら、もっと良い修正を見つけられるかもしれない。

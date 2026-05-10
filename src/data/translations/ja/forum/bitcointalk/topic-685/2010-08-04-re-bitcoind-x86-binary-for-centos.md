@@ -1,5 +1,5 @@
 ---
-title: "Re: CentOS用Bitcoind x86バイナリ"
+title: "Re: CentOS 用 Bitcoind x86 バイナリ"
 date: 2010-08-04T00:09:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが1000ノード接続版のビルドの配布を控えるよう要請。"
+description: "サトシ・ナカモトが 1000 ノード接続版のビルドの配布を控えるよう要請。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,4 +26,4 @@ quotes:
 > バイナリをここにアップロードした（32ビットのみ - bitcoind）：
 <!-- /tone-skip -->
 
-1000ノード接続版のビルドを公開しないでほしい。それを実行する人が少しでも増えると、着信接続を制限するためだけに別のリリースを出さなければならなくなる。
+1000 ノード接続版のビルドを公開しないでほしい。それを実行する人が少しでも増えると、着信接続を制限するためだけに別のリリースを出さなければならなくなる。

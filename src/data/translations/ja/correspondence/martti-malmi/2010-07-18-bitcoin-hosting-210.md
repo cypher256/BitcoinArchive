@@ -1,5 +1,5 @@
 ---
-title: "Re: 転送: Bitcoinホスティング"
+title: "Re: 転送: Bitcoin ホスティング"
 date: 2010-07-18T15:23:10Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがSlashdotトラフィック急増中のホスティング切り替えをしないようマルミに求め、費用を賄うためにBitcoinでの寄付を提案する。"
+description: "サトシが Slashdot トラフィック急増中のホスティング切り替えをしないようマルミに求め、費用を賄うために Bitcoin での寄付を提案する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -27,13 +27,13 @@ quotes:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-今は切り替えをしないと約束してほしい。今抱えているSlashdotからの殺到する作業に加えて、切り替えの手間まで増えるのは最も避けたいことだ。やるべきことが多すぎて頭がおかしくなりそうだ。
+今は切り替えをしないと約束してほしい。今抱えている Slashdot からの殺到する作業に加えて、切り替えの手間まで増えるのは最も避けたいことだ。やるべきことが多すぎて頭がおかしくなりそうだ。
 
-また、たった$20を節約するために、より小さくて信頼性の低いホストに移るのは最悪だ。
+また、たった$20 を節約するために、より小さくて信頼性の低いホストに移るのは最悪だ。
 
 寄付者に送金したかどうか、丁寧に確認する方法を考えてみるが、今はもっと優先度の高いことがあって、それすら数日は後回しになる。
 
-短期的にはBitcoinでの寄付が役に立つか？
+短期的には Bitcoin での寄付が役に立つか？
 
 <!-- speaker: Martti Malmi -->
 <!-- quote: q1 -->

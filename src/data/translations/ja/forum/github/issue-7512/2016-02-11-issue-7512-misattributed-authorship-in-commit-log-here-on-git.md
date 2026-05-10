@@ -1,5 +1,5 @@
 ---
-title: "Githubのコミットログにおける著者の誤帰属"
+title: "Github のコミットログにおける著者の誤帰属"
 date: 2016-02-11T08:32:24.000Z
 type: "forum-post"
 source: "github"
@@ -8,7 +8,7 @@ author: "awemany"
 participants:
   - name: "awemany"
     slug: "awemany"
-description: "awemanyがbitcoin/bitcoin Issue #7512でスレッドを開始。"
+description: "awemany が bitcoin/bitcoin Issue #7512 でスレッドを開始。"
 isSatoshi: false
 tags:
   - "github"
@@ -20,10 +20,10 @@ translationStatus: complete
 
 https://github.com/bitcoin/bitcoin/commits/master?page=289
 
-sirius-mによるコミットがGreg Maxwellに帰属されていることがわかる。
+sirius-m によるコミットが Greg Maxwell に帰属されていることがわかる。
 
-これはSVNからのインポートの問題ではないようである。'git log'ではコミッターは正しく表示されている。これは古いSVN（まだsourceforgeで利用可能）の情報とも一致する。
+これは SVN からのインポートの問題ではないようである。'git log'ではコミッターは正しく表示されている。これは古い SVN（まだ sourceforge で利用可能）の情報とも一致する。
 
-むしろ、これはGitHub上の問題または設定ミスのようである。
+むしろ、これは GitHub 上の問題または設定ミスのようである。
 
 他にも同様の問題があるかどうかは確認していない。

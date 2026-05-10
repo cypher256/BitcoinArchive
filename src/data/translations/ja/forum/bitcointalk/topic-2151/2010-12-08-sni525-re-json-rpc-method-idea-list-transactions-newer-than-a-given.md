@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
+title: "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする"
 date: 2010-12-08T22:36:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

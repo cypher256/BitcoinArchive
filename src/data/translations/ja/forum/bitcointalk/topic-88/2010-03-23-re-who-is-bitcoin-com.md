@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin.comは誰なのか"
+title: "Re: bitcoin.com は誰なのか"
 date: 2010-03-23T15:22:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「bitcoin.comは誰ですか」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「bitcoin.com は誰ですか」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,4 +18,4 @@ translationStatus: complete
 
 無関係だ。私が始めた時にはそこには何もなかった。
 
-.comドメインの登録料は本来あるべき価格より安いため、思いつく良い名前はすべてドメイン名の投機者に既に取られている。幸いなことに、オープンソースプロジェクトは.orgが標準だ。
+.com ドメインの登録料は本来あるべき価格より安いため、思いつく良い名前はすべてドメイン名の投機者に既に取られている。幸いなことに、オープンソースプロジェクトは.org が標準だ。

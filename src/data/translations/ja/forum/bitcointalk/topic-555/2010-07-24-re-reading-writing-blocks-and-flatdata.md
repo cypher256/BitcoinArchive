@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロックの読み書きとFLATDATA"
+title: "Re: ブロックの読み書きと FLATDATA"
 date: 2010-07-24T04:04:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「ブロックの読み書きとFLATDATA」におけるサトシ・ナカモトの返信。"
+description: "スレッド「ブロックの読み書きと FLATDATA」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-FLATDATAは固定フィールド長の配列をシリアライズするための回避策だった。配列を直接シリアライズする方法を理解させる、よりクリーンな方法があったが、MSVC6ではそれができず、当時はMSVC6との互換性を維持したかったのだ。Boostの中でMSVC6がサポートしていないものを使用しているため、もうMSVC6はサポートしていない。0.2.0の後にサポートを失った。いつか、FLATDATAで包むことなく固定長配列をシリアライズする方法を知っているクリーンな方法に切り替えるかもしれない。
+FLATDATA は固定フィールド長の配列をシリアライズするための回避策だった。配列を直接シリアライズする方法を理解させる、よりクリーンな方法があったが、MSVC6 ではそれができず、当時は MSVC6 との互換性を維持したかったのだ。Boost の中で MSVC6 がサポートしていないものを使用しているため、もう MSVC6 はサポートしていない。0.2.0 の後にサポートを失った。いつか、FLATDATA で包むことなく固定長配列をシリアライズする方法を知っているクリーンな方法に切り替えるかもしれない。

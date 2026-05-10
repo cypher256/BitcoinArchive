@@ -8,7 +8,7 @@ author: "thrashaholic"
 participants:
   - name: "thrashaholic"
     slug: "thrashaholic"
-description: "BitcoinTalkトピック1268におけるthrashaholicの文脈投稿。msg15741の前。"
+description: "BitcoinTalk トピック 1268 における thrashaholic の文脈投稿。msg15741 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -35,4 +35,4 @@ quotes:
 > Bitcoinは人間であることを証明できないが、各「危険な」アクションに対して非常に少額の支払いを要求することは、不正利用を防ぐのに最適だ。
 <!-- /tone-skip -->
 
-年間何千何万ドルも稼ぐスパマーに対して？ 支払いはスパムの潜在的利益より高くなければならず、一般消費者の手の届かないところに押しやることになるだろう。ブログのコメントを投稿するのに$0.50を支払うつもりは絶対にない。大規模なスパマーならそれを千回やっても利益は減らない。スパマーがCAPTCHAを破るためにすでにMechanical Turkを使っているという事実が、その証拠だと思う。
+年間何千何万ドルも稼ぐスパマーに対して？ 支払いはスパムの潜在的利益より高くなければならず、一般消費者の手の届かないところに押しやることになるだろう。ブログのコメントを投稿するのに$0.50 を支払うつもりは絶対にない。大規模なスパマーならそれを千回やっても利益は減らない。スパマーが CAPTCHA を破るためにすでに Mechanical Turk を使っているという事実が、その証拠だと思う。

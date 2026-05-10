@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinに関すること"
+title: "Re: Bitcoin に関すること"
 date: 2009-12-25T16:11:14Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシが以前のメモリー使用量の見積もりを修正。25万ブロックのテスト実行を誤って参照していたことを認め、通常使用量はわずか17MBと確認。"
+description: "サトシが以前のメモリー使用量の見積もりを修正。25 万ブロックのテスト実行を誤って参照していたことを認め、通常使用量はわずか 17MB と確認。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -27,9 +27,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-その通りだ。25万ブロックのテスト実行を見ていた…失礼。
+その通りだ。25 万ブロックのテスト実行を見ていた…失礼。
 
-通常の実行ではメモリー使用量17MB、VMサイズ10MBと表示される。
+通常の実行ではメモリー使用量 17MB、VM サイズ 10MB と表示される。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->

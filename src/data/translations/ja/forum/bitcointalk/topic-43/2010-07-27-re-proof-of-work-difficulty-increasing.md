@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-07-27T03:04:58.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが新しい難易度係数244.21（+35%）を報告し、2009年からの難易度変更履歴を更新。"
+description: "サトシ・ナカモトが新しい難易度係数 244.21（+35%）を報告し、2009年からの難易度変更履歴を更新。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 新しいgetwork"
+title: "Re: 新しい getwork"
 date: 2010-11-23T20:55:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「新しいgetwork」におけるサトシ・ナカモトの返信。"
+description: "スレッド「新しい getwork」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

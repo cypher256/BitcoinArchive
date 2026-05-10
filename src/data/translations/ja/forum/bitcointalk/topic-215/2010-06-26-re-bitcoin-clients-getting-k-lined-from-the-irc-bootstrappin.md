@@ -1,5 +1,5 @@
 ---
-title: "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
+title: "Re: Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている"
 date: 2010-06-26T14:28:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Freenodeは目立ちすぎる。ユーザーやモデレーターが集まるど真ん中にある。Laszloのオプションの方が私たちにはずっと適している。
+Freenode は目立ちすぎる。ユーザーやモデレーターが集まるど真ん中にある。Laszlo のオプションの方が私たちにはずっと適している。
 
-freenodeの代わりにirc.lfnet.orgを使用する0.3.0.RC2を公開したので、切り替えたい方はどうぞ:
+freenode の代わりに irc.lfnet.org を使用する 0.3.0.RC2 を公開したので、切り替えたい方はどうぞ:
 [topic 199](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-199/2010-07-06-bitlex-msg2002/)

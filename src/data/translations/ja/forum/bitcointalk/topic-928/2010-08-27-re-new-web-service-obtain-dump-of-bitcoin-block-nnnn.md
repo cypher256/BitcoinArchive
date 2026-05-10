@@ -1,5 +1,5 @@
 ---
-title: "Re: 新しいWebサービス：Bitcoinブロック NNNNのダンプを取得"
+title: "Re: 新しい Web サービス：Bitcoin ブロック NNNN のダンプを取得"
 date: 2010-08-27T16:13:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「新しいWebサービス：ビットコインブロックNNNNのダンプを取得」におけるサトシ・ナカモトの返信。"
+description: "スレッド「新しい Web サービス：ビットコインブロック NNNN のダンプを取得」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-各日に生成されたブロック数を示す逆さまの棒グラフとして、なかなか面白い。目標は1日あたり144ブロックだ。
+各日に生成されたブロック数を示す逆さまの棒グラフとして、なかなか面白い。目標は 1日あたり 144 ブロックだ。

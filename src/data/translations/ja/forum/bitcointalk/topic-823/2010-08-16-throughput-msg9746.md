@@ -8,9 +8,9 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック823におけるthroughputの文脈投稿。msg9841の前。"
+description: "BitcoinTalk トピック 823 における throughput の文脈投稿。msg9841 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-チェーン全体を削除して再ダウンロードする代わりに、チェーンの末尾を手動で切り落とすRPCコマンドがあると便利ではないか？
+チェーン全体を削除して再ダウンロードする代わりに、チェーンの末尾を手動で切り落とす RPC コマンドがあると便利ではないか？

@@ -8,14 +8,14 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg79の前。"
+description: "BitcoinTalk トピック 12 における The Madhatter の文脈投稿。msg79 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-FreeBSDでビルドするには：
+FreeBSD でビルドするには：
 
-/usr/portsから必要なソフトウェアをすべてインストールし、makefile.fbsdを使ってコンパイルする。
+/usr/ports から必要なソフトウェアをすべてインストールし、makefile.fbsd を使ってコンパイルする。
 
 「そのまま動く」。😊

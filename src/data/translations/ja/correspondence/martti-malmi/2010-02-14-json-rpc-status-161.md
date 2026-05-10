@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-14T17:55:51Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだです。"
+description: "はい、Python を使っています。VPS でまだ Bitcoin を動かしていないので、JSON-RPC のテストはまだです。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -30,4 +30,4 @@ translationStatus: complete
 > Linux版をGTKなしで動作させるのは別の作業になる。
 
 <!-- speaker: Martti Malmi -->
-はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPCのテストはまだしていないです。GTKライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgetsフォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかもしれないです。
+はい、Python を使っています。VPS でまだ Bitcoin を動かしていないので、JSON-RPC のテストはまだしていないです。GTK ライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgets フォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2 つの異なるバイナリを作る必要があるかもしれないです。

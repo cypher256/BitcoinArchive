@@ -8,7 +8,7 @@ author: "gavinandresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "bitcoin/bitcoin PR #1620におけるギャビン・アンドレセンの文脈投稿。サトシ言及の文脈。"
+description: "bitcoin/bitcoin PR #1620 におけるギャビン・アンドレセンの文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
 tags:
   - "github"

@@ -60,7 +60,7 @@ translationStatus: complete
 
 元の合意ルールでは、ブロック 74638 は有効だった。各出力値は非負であり、出力の**合計**に対する整数オーバーフロー検査が欠落していた。Bitcoin v0.3.9 を実行するノードはブロックを目にし、自分が知るルールで検証し、受け入れた。
 
-[Bitcoin v0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/)は `CheckTransaction()` に 2 つの新しいチェックを追加した:
+[Bitcoin v0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) は `CheckTransaction()` に 2 つの新しいチェックを追加した:
 
 1. 各出力 ≤ MAX_MONEY (21,000,000 BTC)
 2. 全出力の合計 ≤ MAX_MONEY
@@ -71,13 +71,13 @@ translationStatus: complete
 
 これが、ネットワーク全体を最初から再調整することなく救出が成立した理由である。ルール変更は制約方向に**加算的**だった — 拒絶を増やしただけで、許容を増やしてはいない。アップグレードしなかったノードも、累積仕事量が先行するチェーンを依然として追跡しており、パッチ適用チェーンの仕事量が先行するようになった時点で、未パッチノードも結果として正典チェーンに行き着いた。
 
-その代償として支払われたもの: 約 15 時間の窓 (8 月 15 日 17:45 UTC のブロック 74638 から 8 月 16 日 09:00 UTC のブロック 74691 まで) のあいだ、正典チェーンが争われた。この窓のあいだ、どちらのチェーンで承認されたトランザクションも最終とみなすのは安全ではなかった。サトシの[bitcoin-list 警告](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *「2010 年 8 月 15 日 17:05 UTC（ブロック 74638）以降に発生したトランザクションを信頼しないでほしい」* — は、ネットワーク稼働の停止ではなく、相手方信頼に対する 15 時間の停止だった。
+その代償として支払われたもの: 約 15 時間の窓 (8 月 15 日 17:45 UTC のブロック 74638 から 8 月 16 日 09:00 UTC のブロック 74691 まで) のあいだ、正典チェーンが争われた。この窓のあいだ、どちらのチェーンで承認されたトランザクションも最終とみなすのは安全ではなかった。サトシの [bitcoin-list 警告](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *「2010 年 8 月 15 日 17:05 UTC（ブロック 74638）以降に発生したトランザクションを信頼しないでほしい」* — は、ネットワーク稼働の停止ではなく、相手方信頼に対する 15 時間の停止だった。
 
 機構は機能した。機構の代償は明確に開示された。両方が構造的な記録に属する。
 
 ## 2. 5 時間対応窓 — それは再現できない条件下でのみ成立した
 
-[ガージックの第一警告投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/)は BitcoinTalk topic-822 で 18:08 UTC 付。サトシの[bitcoin-0.3.10 リリース告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/)は topic-827 で 23:48 UTC 付。公開発見からビルド済み・署名済み・ダウンロード可能なソフトフォーク・リリースまで 5 時間 40 分 — Windows・Linux・macOS 各 SourceForge バイナリつきで。
+[ガージックの第一警告投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/)は BitcoinTalk topic-822 で 18:08 UTC 付。サトシの [bitcoin-0.3.10 リリース告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/)は topic-827 で 23:48 UTC 付。公開発見からビルド済み・署名済み・ダウンロード可能なソフトフォーク・リリースまで 5 時間 40 分 — Windows・Linux・macOS 各 SourceForge バイナリつきで。
 
 この窓が 2010 年に可能だったのには特定の理由があり、その理由は今や再現不能である: プロダクションコード経路が実質的に**単一の作者プラス信頼された 2 名のレビュアー**だった。
 
@@ -85,7 +85,7 @@ translationStatus: complete
 
 - **[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)**: 技術的観察者。生ブロックダンプから異常を特定。
 - **[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)**: コード作者。パッチを書き、テストし、署名・ビルドし、SourceForge にデプロイし、告知を投稿した。
-- **[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)**: 並行パッチテスター。[topic-823](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/)で[knightmb](/BitcoinArchive/ja/participants/knightmb/)の既存のブロックチェーン・スナップショットを清浄な起点として使用し、独自の緊急パッチをビルド・テストした。
+- **[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)**: 並行パッチテスター。[topic-823](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/) で [knightmb](/BitcoinArchive/ja/participants/knightmb/) の既存のブロックチェーン・スナップショットを清浄な起点として使用し、独自の緊急パッチをビルド・テストした。
 
 これが 5 時間救出のプロダクション経路の参加者集合の全部である。3 つの名前、1 人の意思決定者、ガバナンスプロセスなし、レビュー待ち行列なし、マージゲーティングなし、開発者が自宅で走らせたもの以外のテストスイート・ゲートなし。「サトシのディスクに修正がある」 から「SourceForge でバイナリがダウンロード可能」 までのリリース経路に介在する制度は皆無だった。
 
@@ -163,6 +163,6 @@ translationStatus: complete
 - **攻撃者の身元**。ブロック 74638 の 2 つの出力アドレスはチェーンに記録されているが、対応する秘密鍵はそれ以来使用されていない。著者性に関する公的主張は行われていない。身元の帰属は公的記録には存在しない。
 - **攻撃者の意図**。攻撃が窃盗、デモンストレーション、テストのいずれだったかは、トランザクションからもチェーンからも判定できない。上記 §3 は、どのカテゴリの意図が証拠と*整合する*かを記述する。証拠が*確立する*ものは存在しない。
 - **マイナーの協力**。ブロック 74638 はチェーンに身元が記録されていない主体によりマイニングされた。マイナーがトランザクション作者と共謀したか否かはチェーンから判定できない — 未パッチ検証ルールはトランザクションを受容したため、誠実な包含と協調的包含は区別不能である。
-- **knightmb の具体的役割**。ブロックチェーン・スナップショットの貢献は[knightmb のスナップショットと伝説](/BitcoinArchive/ja/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/)エントリーで構造的に記録されている。本エントリーがスナップショットに言及するのは救出インフラの一部として識別するためのみであり、knightmb のより広い役割の編集的読み解きは当該エントリーに属する。
+- **knightmb の具体的役割**。ブロックチェーン・スナップショットの貢献は [knightmb のスナップショットと伝説](/BitcoinArchive/ja/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/)エントリーで構造的に記録されている。本エントリーがスナップショットに言及するのは救出インフラの一部として識別するためのみであり、knightmb のより広い役割の編集的読み解きは当該エントリーに属する。
 
 事後記事が事象を記録する。本構造分析が読み解きを記録する。身元・意図・個別貢献は、それぞれの問いを主題とするエントリーに属する。それらのエントリーは証拠が強い主張を支持しない箇所で控えめな表現を置いており、本エントリーも同様である。

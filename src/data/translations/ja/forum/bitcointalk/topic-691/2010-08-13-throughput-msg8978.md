@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin監視サービス"
+title: "Re: Bitcoin 監視サービス"
 date: 2010-08-13T06:45:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック691におけるthroughputの文脈投稿。msg9041の前。"
+description: "BitcoinTalk トピック 691 における throughput の文脈投稿。msg9041 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -49,8 +49,8 @@ quotes:
 > 攻撃者はこの分断中にどのようにして両側に接続してコインを使用するのか？そして攻撃者にそれができるなら、1つ以上の正直なノードが分断を橋渡しできる可能性もかなり高い。
 <!-- /tone-skip -->
 
-1. なぜ攻撃者が1台のPCを持つ一人の人間でなければならないのか？
-ウォレットを別のPCにコピーしてどこでも使える！
+1. なぜ攻撃者が 1 台の PC を持つ一人の人間でなければならないのか？
+ウォレットを別の PC にコピーしてどこでも使える！
 
 2. なぜネットワーク分離は二重支払いのためだけに使われるのか？
 ブロック生成を遅くするために使えないのか？それは難易度調整に影響するだろうか？
@@ -60,4 +60,4 @@ quotes:
 > 確かに、ダイヤルアップモデムや衛星インターネットを持っている人はいるだろう。それと障害が発生する有線インターネットの両方を持っている人はもっと珍しいが、十分な規模のセグメントであれば、100万人中にマルチホームのギークが必ずいるだろう。
 <!-- /tone-skip -->
 
-でもブートストラップ用のIRCサーバーはないだろう。
+でもブートストラップ用の IRC サーバーはないだろう。

@@ -1,5 +1,5 @@
 ---
-title: "JSON-RPCの状況"
+title: "JSON-RPC の状況"
 date: 2010-02-07T06:12:04Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがboost::asioとJSON Spiritを使用したBitcoinのJSON-RPC実装の進捗を報告し、フォーラムの急成長にも言及。"
+description: "サトシが boost::asio と JSON Spirit を使用した Bitcoin の JSON-RPC 実装の進捗を報告し、フォーラムの急成長にも言及。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -25,6 +25,6 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 
-JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使っている。JSON-RPCは素のソケットでもHTTPでも使えるが、他の実装のほとんどはHTTPのようなので、独自のシンプルなHTTPヘッダーを作った。JSONのパースにはJSON Spiritを使っている。STLをフル活用しており、非常に使いやすい。ヘッダーオンリーなのでビルド作業が増えることもなく、私たちのソースツリーに追加できるほど小さい。MITライセンスだ。あと数日で全て動くようになるはずだ。
+JSON-RPC の実装は順調に進んでいる。ソケットには boost::asio を使っている。JSON-RPC は素のソケットでも HTTP でも使えるが、他の実装のほとんどは HTTP のようなので、独自のシンプルな HTTP ヘッダーを作った。JSON のパースには JSON Spirit を使っている。STL をフル活用しており、非常に使いやすい。ヘッダーオンリーなのでビルド作業が増えることもなく、私たちのソースツリーに追加できるほど小さい。MIT ライセンスだ。あと数日で全て動くようになるはずだ。
 
 フォーラムは確実に盛り上がっているな。こんなに早く活発になるとは思わなかった。

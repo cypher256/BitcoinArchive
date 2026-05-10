@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Bill Frantz"
     slug: "bill-frantz"
-description: "ビル・フランツが皮肉な観察を提示: ボットネット制御マシンは運営者が他者の侵害を防ぐため「ネット上で最も安全な部類」、運営者がPoW報酬で正規セキュリティ企業に進化し得ると推測。"
+description: "ビル・フランツが皮肉な観察を提示: ボットネット制御マシンは運営者が他者の侵害を防ぐため「ネット上で最も安全な部類」、運営者が PoW 報酬で正規セキュリティ企業に進化し得ると推測。"
 inReplyTo: "emails/cryptography/2009-01-24-re-bitcoin-v0-1-released-finney"
 isSatoshi: false
 tags:
@@ -26,7 +26,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Bill Frantz -->
-[ハル・フィニーのPOWトークンがセキュリティのインセンティブを生むという主張への返信]
+[ハル・フィニーの POW トークンがセキュリティのインセンティブを生むという主張への返信]
 
 乗っ取られたマシンは、ネットワーク上で最も安全な部類に入る。なぜなら、ボットネットのオペレーターは他者が「自分たちの」マシンを侵害しないよう懸命に管理しているからだ。
 

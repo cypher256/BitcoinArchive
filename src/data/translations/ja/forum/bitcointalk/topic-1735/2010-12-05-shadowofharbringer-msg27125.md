@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1735におけるShadowOfHarbringerの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 1735 における ShadowOfHarbringer の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -37,6 +37,6 @@ translationStatus: complete
 > WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。ビットコインはまだ小さなベータコミュニティであり、黎明期にある。集まるのは小銭程度だ。それなのに、もたらす火種は、この段階で我々を破壊しかねない。
 
 これがまさにずっと俺が言ってきたことだ、**だが誰も聞いていない**。
-Bitcoinはまだそんな巨大な仕事を引き受けられるほど強くはない。
+Bitcoin はまだそんな巨大な仕事を引き受けられるほど強くはない。
 
-WikileaksにBitcoinを押しつければBitcoinは死ぬし、それでもWikileaksにはたいして役に立たないだろう。
+Wikileaks に Bitcoin を押しつければ Bitcoin は死ぬし、それでも Wikileaks にはたいして役に立たないだろう。

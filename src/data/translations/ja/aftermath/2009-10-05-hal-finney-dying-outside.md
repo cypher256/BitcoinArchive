@@ -1,5 +1,5 @@
 ---
-title: "「Dying Outside」 — ハル・フィニーのALSと希望についてのエッセイ"
+title: "「Dying Outside」 — ハル・フィニーの ALS と希望についてのエッセイ"
 date: 2009-10-05T00:00:00Z
 type: "article"
 source: "lesswrong"
@@ -8,7 +8,7 @@ author: "Hal Finney"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "2009年8月のALS診断から約2ヶ月後にLessWrongに投稿されたハル・フィニーのエッセイ。末期の病に直面しながらも、動けない体からでもオープンソースに貢献するという希望と決意を表明した。"
+description: "2009年8月の ALS 診断から約 2ヶ月後にハル・フィニーが LessWrong に投稿したエッセイ。末期の病でも動けない体からオープンソースに貢献する決意を表明。"
 isSatoshi: false
 tags:
   - "hal-finney"
@@ -57,4 +57,4 @@ translationStatus: complete
 >
 > スティーブン・ホーキングはおそらくALSで最も有名な人物だろう。彼はこの病気と共に40年以上生き延びた。頬の筋肉を動かしてコンピューターシステムで文字を選択することでしかコミュニケーションできず、1分間に約10語というゆっくりとしたペースでメッセージを打っている。私は、同じような支援技術が必要になる頃には、さらに進歩しているんじゃないかと楽観的に考えているよ。
 
-*[補足：[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は2009年8月にALSと診断された。サトシ以外で初めてビットコインを動かした同じ年のことだった。病にもかかわらず、視線入力ソフトウェアを使って以前の約50分の1の速度でビットコインウォレットを開発し、プログラミングを続けた。[2014年8月28日、58歳で亡くなった](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。遺体はアルコー延命財団で冷凍保存された。]*
+*[補足：[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は 2009年8月に ALS と診断された。サトシ以外で初めてビットコインを動かした同じ年のことだった。病にもかかわらず、視線入力ソフトウェアを使って以前の約 50分の 1 の速度でビットコインウォレットを開発し、プログラミングを続けた。[2014年8月28日、58 歳で亡くなった](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。遺体はアルコー延命財団で冷凍保存された。]*

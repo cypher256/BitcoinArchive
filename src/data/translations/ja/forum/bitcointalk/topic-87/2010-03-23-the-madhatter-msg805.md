@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック87におけるThe Madhatterの文脈投稿。msg807の前。"
+description: "BitcoinTalk トピック 87 における The Madhatter の文脈投稿。msg807 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 
 これを現金の「短所リスト」に追加してくれ：
 
-- 紙幣にRFIDが埋め込まれている可能性。郵便局の機械で読み取られ、送付先住所にレッドフラグが立つ可能性がある。
+- 紙幣に RFID が埋め込まれている可能性。郵便局の機械で読み取られ、送付先住所にレッドフラグが立つ可能性がある。

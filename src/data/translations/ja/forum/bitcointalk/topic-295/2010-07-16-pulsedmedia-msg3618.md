@@ -1,5 +1,5 @@
 ---
-title: "Re: freebitcoins.appspot.comへの寄付が必要！"
+title: "Re: freebitcoins.appspot.com への寄付が必要！"
 date: 2010-07-16T23:45:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "PulsedMedia"
 participants:
   - name: "PulsedMedia"
     slug: "pulsedmedia"
-description: "BitcoinTalkトピック295におけるPulsedMediaの文脈投稿。msg3350の後。"
+description: "BitcoinTalk トピック 295 における PulsedMedia の文脈投稿。msg3350 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-俺の方も5BTCを送り返した。
+俺の方も 5BTC を送り返した。

@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック12におけるSmokeTooMuchの文脈投稿。msg54の後。"
+description: "BitcoinTalk トピック 12 における SmokeTooMuch の文脈投稿。msg54 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 
 提案：
 
-支払いにIPv6サポートを追加してほしい。
+支払いに IPv6 サポートを追加してほしい。

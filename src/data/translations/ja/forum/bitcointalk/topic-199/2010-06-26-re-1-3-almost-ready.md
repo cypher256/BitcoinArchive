@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-26T19:21:05.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「1.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「1.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン番号を1.3に変更し、「Beta」を削除した。
+バージョン番号を 1.3 に変更し、「Beta」を削除した。
 
 （リンク削除済み、下記参照）
 
-irc.lfnet.orgを使用している。
+irc.lfnet.org を使用している。

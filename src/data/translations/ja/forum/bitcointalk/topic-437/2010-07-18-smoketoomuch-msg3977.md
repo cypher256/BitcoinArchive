@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック437におけるSmokeTooMuchの文脈投稿。msg3825の後。"
+description: "BitcoinTalk トピック 437 における SmokeTooMuch の文脈投稿。msg3825 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "BSD検出"
+title: "BSD 検出"
 date: 2010-08-11T14:00:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,13 +10,13 @@ participants:
     slug: "dkaparis"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "dkaparisがスレッドを開始: BSD検出"
+description: "dkaparis がスレッドを開始: BSD 検出"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-headers.hに以下のコードがある：
+headers.h に以下のコードがある：
 
 #ifdef __WXMAC_OSX__
 #define __WXMAC__ 1
@@ -25,7 +25,7 @@ headers.hに以下のコードがある：
 #endif
 #endif
 
-私のテストでは、FreeBSD 8.1で検出されなかった。
+私のテストでは、FreeBSD 8.1 で検出されなかった。
 
 以下のように変更することを提案する：
 
@@ -33,8 +33,8 @@ headers.hに以下のコードがある：
 #include <sys/param.h>
 #endif
 
-そしてBSDの検出は以下のようにすべきである：
+そして BSD の検出は以下のようにすべきである：
 #ifdef BSD
-これは[FreeBSD Porter's Handbook](http://www.freebsd.org/doc/en/books/porters-handbook/porting-versions.html)で推奨されているBSD検出方法である。
+これは [FreeBSD Porter's Handbook](http://www.freebsd.org/doc/en/books/porters-handbook/porting-versions.html) で推奨されている BSD 検出方法である。
 
-この変更は既に私のCMakeツリーで実施済みである。
+この変更は既に私の CMake ツリーで実施済みである。

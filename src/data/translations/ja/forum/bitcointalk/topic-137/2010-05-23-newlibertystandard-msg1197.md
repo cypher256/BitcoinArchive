@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック137におけるNewLibertyStandardの文脈投稿。msg1195の後。"
+description: "BitcoinTalk トピック 137 における NewLibertyStandard の文脈投稿。msg1195 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

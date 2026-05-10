@@ -8,12 +8,12 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg62の前。"
+description: "BitcoinTalk トピック 12 における The Madhatter の文脈投稿。msg62 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-えーと、コマンドラインオンリーモードはコンパイル時に選択できるということか？ defineで？ それでグラフィカルUIの部分がオフになるのか？
+えーと、コマンドラインオンリーモードはコンパイル時に選択できるということか？ define で？ それでグラフィカル UI の部分がオフになるのか？
 
 認識を合わせておきたいだけだ。😊

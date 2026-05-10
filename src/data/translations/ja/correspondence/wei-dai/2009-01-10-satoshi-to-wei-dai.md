@@ -1,5 +1,5 @@
 ---
-title: "サトシからウェイ・ダイへ：Bitcoin v0.1リリースについて（2009-01-10）"
+title: "サトシからウェイ・ダイへ：Bitcoin v0.1 リリースについて（2009-01-10）"
 date: 2009-01-10T11:17:00Z
 type: "correspondence"
 source: "gwern"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サトシがウェイ・ダイにBitcoin v0.1のリリースを告知し、b-moneyのほぼすべての目標を達成したと述べている。ハル・フィニーのシステム概要を引用。"
+description: "サトシがウェイ・ダイに Bitcoin v0.1 のリリースを告知し、b-money のほぼすべての目標を達成したと述べている。ハル・フィニーのシステム概要を引用。"
 isSatoshi: true
 tags:
   - "b-money"
@@ -21,9 +21,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-お知らせしたかったのだが、数か月前にお送りした論文の完全な実装、[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)をリリースした。詳細、ダウンロード、スクリーンショットは www.bitcoin.org にある。
+お知らせしたかったのだが、数か月前にお送りした論文の完全な実装、[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/) をリリースした。詳細、ダウンロード、スクリーンショットは www.bitcoin.org にある。
 
-あなたのb-money論文で提示された目標のほぼすべてを達成していると思う。
+あなたの b-money 論文で提示された目標のほぼすべてを達成していると思う。
 
 システムは完全に分散型で、サーバーや信頼できる第三者は存在しない。ネットワークインフラはエスクロー取引や契約の全範囲をサポートできるが、今のところ基本的な通貨と取引に焦点を当てている。
 

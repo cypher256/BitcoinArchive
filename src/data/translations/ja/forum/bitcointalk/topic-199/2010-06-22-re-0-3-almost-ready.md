@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-22T17:02:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,6 +26,6 @@ quotes:
 <!-- tone-skip -->
 > ただ、次のリリースまでにlisttransactions RPCメソッドが完成していると良いのだが。
 <!-- /tone-skip -->
-心配しているのは、多くのプログラマーが受取支払いの確認にそれを使おうとすることだ。その方法では決して信頼性がない。list/getreceivedbyaddress/label関数が信頼性のある唯一の方法だ。
+心配しているのは、多くのプログラマーが受取支払いの確認にそれを使おうとすることだ。その方法では決して信頼性がない。list/getreceivedbyaddress/label 関数が信頼性のある唯一の方法だ。
 
-あらゆる可能な機能が完成するまで永遠にリリースを遅らせるべきではない。常にもう1つやるべきことがあるものだ。
+あらゆる可能な機能が完成するまで永遠にリリースを遅らせるべきではない。常にもう 1 つやるべきことがあるものだ。

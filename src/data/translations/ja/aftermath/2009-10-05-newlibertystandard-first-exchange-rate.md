@@ -1,5 +1,5 @@
 ---
-title: "ビットコイン初の為替レート — 1ドル = 1,309.03 BTC"
+title: "ビットコイン初の為替レート — 1 ドル = 1,309.03 BTC"
 date: 2009-10-05T00:00:00Z
 type: "article"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "NewLibertyStandardが初の為替レートを公開：1ドル = 1,309.03 BTC。マイニング電気代から算出した原始的だが歴史的な初の価値付与。"
+description: "NewLibertyStandard が初の為替レートを公開：1 ドル = 1,309.03 BTC。マイニング電気代から算出した原始的だが歴史的な初の価値付与。"
 isSatoshi: false
 tags:
   - "newlibertystandard"
@@ -28,14 +28,14 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2009年10月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/)がビットコイン史上初の為替レートを公開した。
+2009年10月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/) がビットコイン史上初の為替レートを公開した。
 
-**1ドル = 1,309.03 BTC** （1BTCあたり0.00076ドル）
+**1 ドル = 1,309.03 BTC** （1BTC あたり 0.00076 ドル）
 
-計算方法：1.00ドルをCPU高負荷のコンピューターを1年間稼働させるのに必要な平均電力量（1,331.5 kWh）で割り、前年のアメリカの平均住宅用電気料金（0.1136ドル/kWh）を掛け、12ヶ月で割り、過去30日間に生成されたビットコイン数で割る。
+計算方法：1.00 ドルを CPU 高負荷のコンピューターを 1年間稼働させるのに必要な平均電力量（1,331.5 kWh）で割り、前年のアメリカの平均住宅用電気料金（0.1136 ドル/kWh）を掛け、12ヶ月で割り、過去 30日間に生成されたビットコイン数で割る。
 
 つまり、ビットコインの最初の価格は、それをマイニングするのに必要な電気の実際のコストによって決定された。
 
-その直後の2009年10月12日、[マルッティ・マルミがNewLibertyStandardにPayPal経由で5,050 BTCを5.02ドルで売却した](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) — ビットコインと法定通貨の最初の既知の交換だった。
+その直後の 2009年10月12日、[マルッティ・マルミが NewLibertyStandard に PayPal 経由で 5,050 BTC を 5.02 ドルで売却した](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) — ビットコインと法定通貨の最初の既知の交換だった。
 
-*[補足：2025年の10万ドル超の価格では、その5,050ビットコインは5億ドル以上の価値がある。]*
+*[補足：2025年の 10 万ドル超の価格では、その 5,050 ビットコインは 5 億ドル以上の価値がある。]*

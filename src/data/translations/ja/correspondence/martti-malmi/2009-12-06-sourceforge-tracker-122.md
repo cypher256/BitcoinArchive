@@ -1,5 +1,5 @@
 ---
-title: "Re: Sourceforgeトラッカー"
+title: "Re: Sourceforge トラッカー"
 date: 2009-12-06T03:21:00Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがSourceForgeトラッカーをSourceForgeページに追加するが、SSLの混合コンテンツ警告とプライバシーの懸念からbitcoin.orgからは削除。"
+description: "サトシが SourceForge トラッカーを SourceForge ページに追加するが、SSL の混合コンテンツ警告とプライバシーの懸念から bitcoin.org からは削除。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -27,73 +27,73 @@ quotes:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。別のものが欲しければ、以下に全リンクの一覧がある。
+bitcoin.sourceforge.net に Sourceforge トラッカーを追加した。別のものが欲しければ、以下に全リンクの一覧がある。
 
-bitcoin.orgには一瞬入れたが、外した。SSLモードでロックが壊れて、「partially encrypted」や「contains unauthenticated content」という混合コンテンツ警告が出る。そもそも、Sourceforgeに全員をトラッキングさせたいか？ない方がプライバシーに優しい。
+bitcoin.org には一瞬入れたが、外した。SSL モードでロックが壊れて、「partially encrypted」や「contains unauthenticated content」という混合コンテンツ警告が出る。そもそも、Sourceforge に全員をトラッキングさせたいか？ない方がプライバシーに優しい。
 
 
 ---
-Bitcoinプロジェクトで使用できるロゴと正しいHTMLは以下の通りだ：
+Bitcoin プロジェクトで使用できるロゴと正しい HTML は以下の通りだ：
 
 Logo 1 (サイズ: 80 x 15; 背景: 黒)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=8"
 width="80" height="15" alt="Get Bitcoin at SourceForge.net. Fast, secure
 and Free Open Source software downloads" /></a>
 
 Logo 2 (サイズ: 80 x 15; 背景: シルバー)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=9"
 width="80" height="15" alt="Get Bitcoin at SourceForge.net. Fast, secure
 and Free Open Source software downloads" /></a>
 
 Logo 3 (サイズ: 80 x 15; 背景: 白)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=10"
 width="80" height="15" alt="Get Bitcoin at SourceForge.net. Fast, secure
 and Free Open Source software downloads" /></a>
 
 Logo 4 (サイズ: 120 x 30; 背景: 黒)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=11"
 width="120" height="30" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 Logo 5 (サイズ: 120 x 30; 背景: シルバー)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=12"
 width="120" height="30" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 Logo 6 (サイズ: 120 x 30; 背景: 白)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=13"
 width="120" height="30" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 Logo 7 (サイズ: 150 x 40; 背景: 黒)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=14"
 width="150" height="40" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 Logo 8 (サイズ: 150 x 40; 背景: シルバー)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=15"
 width="150" height="40" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>
 
 Logo 9 (サイズ: 150 x 40; 背景: 白)
 
-HTMLコード: <a href="http://sourceforge.net/projects/bitcoin"><img
+HTML コード: <a href="http://sourceforge.net/projects/bitcoin"><img
 src="http://sflogo.sourceforge.net/sflogo.php?group_id=244765&amp;type=16"
 width="150" height="40" alt="Get Bitcoin at SourceForge.net. Fast,
 secure and Free Open Source software downloads" /></a>

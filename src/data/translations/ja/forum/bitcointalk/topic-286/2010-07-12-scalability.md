@@ -10,7 +10,7 @@ participants:
     slug: "jib"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "jibがスレッドを開始: スケーラビリティ"
+description: "jib がスレッドを開始: スケーラビリティ"
 isSatoshi: false
 tags: []
 translationStatus: complete

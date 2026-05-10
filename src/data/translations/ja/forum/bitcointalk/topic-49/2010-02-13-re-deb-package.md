@@ -1,5 +1,5 @@
 ---
-title: "Re: DEBパッケージ？"
+title: "Re: DEB パッケージ？"
 date: 2010-02-13T01:38:37.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「DEBパッケージ？」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「DEB パッケージ？」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,14 +16,14 @@ secondarySources:
 translationStatus: complete
 ---
 
-Karmic 64ビットでwxWidgets 2.8.9をコンパイルすることは私もできなかった。
+Karmic 64 ビットで wxWidgets 2.8.9 をコンパイルすることは私もできなかった。
 
-wxWidgets 2.9.0を使って最新のSVNをKarmic 64ビットでコンパイルしており、64ビットで問題なくコンパイルできる。build-unix.txtを読み、wxWidgetsに指定されたconfigureパラメーターを使用して、付属のmakefile.unix.wx2.9を使用できるようにしてほしい。（--enable-debug --disable-shared --enable-monolithic）
+wxWidgets 2.9.0 を使って最新の SVN を Karmic 64 ビットでコンパイルしており、64 ビットで問題なくコンパイルできる。build-unix.txt を読み、wxWidgets に指定された configure パラメーターを使用して、付属の makefile.unix.wx2.9 を使用できるようにしてほしい。（--enable-debug --disable-shared --enable-monolithic）
 
-2.9.0にはまだ修正が必要な表示上のバグが1つあり、ステータスの数値表示が何かの理由で詰まって表示される。──修正済み
+2.9.0 にはまだ修正が必要な表示上のバグが 1 つあり、ステータスの数値表示が何かの理由で詰まって表示される。──修正済み
 
-ホームページのダウンロードリンクはSourceForgeのtar.gzアーカイブへのもので、32ビットバイナリと0.2.0のソースが含まれているが、当時はまだ64ビットでビルドできなかった。
+ホームページのダウンロードリンクは SourceForge の tar.gz アーカイブへのもので、32 ビットバイナリと 0.2.0 のソースが含まれているが、当時はまだ 64 ビットでビルドできなかった。
 
-SVNが64ビットのwx2.9.0で初めてビルド可能になったのは2010年1月28日だ。
+SVN が 64 ビットの wx2.9.0 で初めてビルド可能になったのは 2010年1月28日だ。
 
-いつかwxWidgets 2.9.0のDebianパッケージができることを願っている。
+いつか wxWidgets 2.9.0 の Debian パッケージができることを願っている。

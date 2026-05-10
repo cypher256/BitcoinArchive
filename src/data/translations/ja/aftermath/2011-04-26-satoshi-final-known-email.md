@@ -36,15 +36,15 @@ relatedEntries:
 translationStatus: complete
 ---
 
-[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知のメールは、2011年4月に送られた2通のメールである。
+[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知のメールは、2011年4月に送られた 2 通のメールである。
 
 **2011年4月23日 — マイク・ハーン宛：**
 
-サトシは、2009年4月からメールを交わしていたGoogleエンジニアの[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)に[こう書いた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
+サトシは、2009年4月からメールを交わしていた Google エンジニアの[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)に[こう書いた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
 
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
-ハーンのBitcoinJプロジェクトが代替クライアントとして開発され続けることへの期待も述べた。
+ハーンの BitcoinJ プロジェクトが代替クライアントとして開発され続けることへの期待も述べた。
 
 **2011年4月26日 — ギャビン・アンドレセン宛：**
 
@@ -58,4 +58,4 @@ translationStatus: complete
 
 最後に、ネットワークアラートキー — すべてのビットコインクライアントに緊急メッセージを配信するための重要なツール — を移譲し、プロジェクトの引き継ぎの最後の要素を完了させた。
 
-[アンドレセンは返信](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/)でアラートキーを受諾し、In-Q-Telの招きでCIAの会議でビットコインのプレゼンテーションを行うことを明かした。サトシが返信することはなかった。以降、サトシからの確認済みの通信は記録されていない。
+[アンドレセンは返信](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/)でアラートキーを受諾し、In-Q-Tel の招きで CIA の会議でビットコインのプレゼンテーションを行うことを明かした。サトシが返信することはなかった。以降、サトシからの確認済みの通信は記録されていない。

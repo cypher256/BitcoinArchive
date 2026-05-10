@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック327におけるSmokeTooMuchの文脈投稿。msg2871の前。"
+description: "BitcoinTalk トピック 327 における SmokeTooMuch の文脈投稿。msg2871 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,4 +24,4 @@ quotes:
 > フォーラムを読み、いくつかのトピックを見た…
 <!-- /tone-skip -->
 
-Windowsにはreniceに相当するものはないと思う。
+Windows には renice に相当するものはないと思う。

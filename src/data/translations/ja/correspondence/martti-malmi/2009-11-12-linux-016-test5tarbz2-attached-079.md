@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがlinux-0.1.6-test5ビルドをテスト用にメール添付で送付。"
+description: "サトシが linux-0.1.6-test5 ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
 tags:
   - "correspondence"

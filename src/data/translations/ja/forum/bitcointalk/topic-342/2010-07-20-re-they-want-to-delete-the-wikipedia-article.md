@@ -1,5 +1,5 @@
 ---
-title: "Re: WikipediaのBitcoin記事"
+title: "Re: Wikipedia の Bitcoin 記事"
 date: 2010-07-20T18:38:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -17,14 +17,14 @@ secondarySources:
 translationStatus: complete
 ---
 
-Bitcoinはウェイ・ダイが1998年にCypherpunks [http://en.wikipedia.org/wiki/Cypherpunks](http://en.wikipedia.org/wiki/Cypherpunks) で提案したb-money [http://weidai.com/bmoney.txt](http://weidai.com/bmoney.txt) と、ニック・サボのBitgold提案 [http://unenumerated.blogspot.com/2005/12/bit-gold.html](http://unenumerated.blogspot.com/2005/12/bit-gold.html) の実装だ。
+Bitcoin はウェイ・ダイが 1998年に Cypherpunks [http://en.wikipedia.org/wiki/Cypherpunks](http://en.wikipedia.org/wiki/Cypherpunks) で提案した b-money [http://weidai.com/bmoney.txt](http://weidai.com/bmoney.txt) と、ニック・サボの Bitgold 提案 [http://unenumerated.blogspot.com/2005/12/bit-gold.html](http://unenumerated.blogspot.com/2005/12/bit-gold.html) の実装だ。
 
-タイミングが奇妙だ。Slashdotに取り上げられた後、サードパーティの報道が急増しているちょうどその時だ。議論をまとめて決定を急いでいないことを願う。Wikipediaは通常、このような質問をどのくらいの期間コメントに開放しておくのだろうか？
+タイミングが奇妙だ。Slashdot に取り上げられた後、サードパーティの報道が急増しているちょうどその時だ。議論をまとめて決定を急いでいないことを願う。Wikipedia は通常、このような質問をどのくらいの期間コメントに開放しておくのだろうか？
 
 できるだけ早く記事を凝縮し、宣伝っぽく聞こえないようにすることが助けになるだろう。それが何であるか、電子マネーの分野でどこに位置づけられるかを人々に知らせるだけで、良いものだと説得しようとはしないでほしい。おそらく、それが何であるかを一般的に識別できるものを求めており、その仕組みについてすべてを説明しようとするものではないだろう。
 
-[http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin](http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin) に投稿する際は、「そうだけど、bitcoinは本当に重要で特別だからルールは適用されるべきではない」と言ったり、ルールが愚かだとか不公平だと主張したりしないでほしい。それは事態を悪化させるだけだ。ルールがどのように満たされているかに対処するようにしてほしい。
+[http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin](http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin) に投稿する際は、「そうだけど、bitcoin は本当に重要で特別だからルールは適用されるべきではない」と言ったり、ルールが愚かだとか不公平だと主張したりしないでほしい。それは事態を悪化させるだけだ。ルールがどのように満たされているかに対処するようにしてほしい。
 
-Googleで「bitcoin」を検索して、InfoWorldやSlashdotの記事に加えて、他の大きな参照先が見つかるか確認してほしい。Slashdotの記事から知った記者が書いた非常に最近の記事があるかもしれない。
+Google で「bitcoin」を検索して、InfoWorld や Slashdot の記事に加えて、他の大きな参照先が見つかるか確認してほしい。Slashdot の記事から知った記者が書いた非常に最近の記事があるかもしれない。
 
-削除されないことを願う。もし削除されると、その前提を覆すのは難しくなるだろう。組織の慣性は最後の決定に固執する方向に働く。（編集: 少なくともそう思うが、世界は通常そうなので。ただWikiは違うかもしれない）
+削除されないことを願う。もし削除されると、その前提を覆すのは難しくなるだろう。組織の慣性は最後の決定に固執する方向に働く。（編集: 少なくともそう思うが、世界は通常そうなので。ただ Wiki は違うかもしれない）

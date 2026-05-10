@@ -8,13 +8,13 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック823におけるNewLibertyStandardの文脈投稿。msg9576の前。"
+description: "BitcoinTalk トピック 823 における NewLibertyStandard の文脈投稿。msg9576 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-この焦らしに耐えられない！Jr.メンバー以上で、非公式のSVN rev 134 Linux 64ビットビルドをコンパイル済みで共有してくれる人はいないだろうか？ええ、公式ビルドが数分後にリリースされることは分かっている。たいして重要ではない。
+この焦らしに耐えられない！Jr.メンバー以上で、非公式の SVN rev 134 Linux 64 ビットビルドをコンパイル済みで共有してくれる人はいないだろうか？ええ、公式ビルドが数分後にリリースされることは分かっている。たいして重要ではない。
 
-編集：サトシが先ほどコメントしたのでSVNバージョン番号を更新した。
+編集：サトシが先ほどコメントしたので SVN バージョン番号を更新した。
 
-ああ、気にしないでくれ。SVNバージョンが更新されてWindowsビルドもリリースされたので、待つことにする。 😳
+ああ、気にしないでくれ。SVN バージョンが更新されて Windows ビルドもリリースされたので、待つことにする。 😳

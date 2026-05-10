@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinアドレスの削除"
+title: "Bitcoin アドレスの削除"
 date: 2010-04-08T14:56:25.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "SheriffWoody"
 participants:
   - name: "SheriffWoody"
     slug: "sheriffwoody"
-description: "BitcoinTalkトピック101におけるSheriffWoodyの文脈投稿。msg1134の前。"
+description: "BitcoinTalk トピック 101 における SheriffWoody の文脈投稿。msg1134 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-自分で生成したBitcoinアドレスを削除する方法はあるのか？ そのアドレスで支払いを受け取った場合はどうなるのか？ コインが送金された後もその所有権を示すために必要なのか？
+自分で生成した Bitcoin アドレスを削除する方法はあるのか？ そのアドレスで支払いを受け取った場合はどうなるのか？ コインが送金された後もその所有権を示すために必要なのか？

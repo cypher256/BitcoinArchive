@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-22T17:58:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック199におけるギャビン・アンドレセンの文脈投稿。msg1675の前。"
+description: "BitcoinTalk トピック 199 におけるギャビン・アンドレセンの文脈投稿。msg1675 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -26,6 +26,6 @@ quotes:
 > この時点でのテストは非常にありがたい。
 <!-- /tone-skip -->
 
-クリーンなAmazon EC2のDebian 5.0マシンイメージを作成し、bitcoindのコンパイルに必要なものをすべてインストールし終えた。コンパイルは完了し（ラスロのmakefile.unixの改変版を使用）、問題なく動作している（ブロックチェーンのダウンロードが完了したところだ）。不具合があれば報告する。
+クリーンな Amazon EC2 の Debian 5.0 マシンイメージを作成し、bitcoind のコンパイルに必要なものをすべてインストールし終えた。コンパイルは完了し（ラスロの makefile.unix の改変版を使用）、問題なく動作している（ブロックチェーンのダウンロードが完了したところだ）。不具合があれば報告する。
 
-gtk版のコンパイルには苦労したが、wxWidgetsのコンパイルで何か間違ったんだと思う。グラフィックスなんていらないし（wxWidgetsの専門家でもないし）、そちらの修正に手を出すつもりはない。
+gtk 版のコンパイルには苦労したが、wxWidgets のコンパイルで何か間違ったんだと思う。グラフィックスなんていらないし（wxWidgets の専門家でもないし）、そちらの修正に手を出すつもりはない。

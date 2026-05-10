@@ -1,5 +1,5 @@
 ---
-title: "サトシによるv0.3.6への緊急アップグレード警告 — 「[bitcoin-list] Alert: upgrade to bitcoin 0.3.6」（2010-07）"
+title: "サトシによる v0.3.6 への緊急アップグレード警告 — 「[bitcoin-list] Alert: upgrade to bitcoin 0.3.6」（2010-07）"
 date: 2010-07-30T06:02:38.000Z
 type: "mailing-list"
 source: "bitcoin-list"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトによる重要なバグ修正のためBitcoin 0.3.6への緊急アップグレード要請。"
+description: "サトシ・ナカモトによる重要なバグ修正のため Bitcoin 0.3.6 への緊急アップグレード要請。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -17,6 +17,6 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-重要なバグ修正を含む0.3.6に至急アップグレードしてほしい。
+重要なバグ修正を含む 0.3.6 に至急アップグレードしてほしい。
 
-ダウンロードリンクはbitcoin.orgのホームページを参照してほしい。
+ダウンロードリンクは bitcoin.org のホームページを参照してほしい。

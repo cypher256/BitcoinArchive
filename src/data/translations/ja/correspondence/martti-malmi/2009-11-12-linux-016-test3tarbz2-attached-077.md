@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがlinux-0.1.6-test3ビルドをテスト用にメール添付で送付。"
+description: "サトシが linux-0.1.6-test3 ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -27,4 +27,4 @@ translationStatus: complete
 
 ファイル linux-0.1.6-test3.tar.bz2 を添付
 
-linux-0.1.6-test3.tar.bz2   12,143,473バイト
+linux-0.1.6-test3.tar.bz2   12,143,473 バイト

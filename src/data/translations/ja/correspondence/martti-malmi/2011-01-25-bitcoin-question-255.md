@@ -1,5 +1,5 @@
 ---
-title: "転送: Bitcoinに関する質問"
+title: "転送: Bitcoin に関する質問"
 date: 2011-01-25T07:25:12Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Bitcoinに関する質問の転送メール"
+description: "Bitcoin に関する質問の転送メール"
 isSatoshi: false
 tags:
   - "correspondence"

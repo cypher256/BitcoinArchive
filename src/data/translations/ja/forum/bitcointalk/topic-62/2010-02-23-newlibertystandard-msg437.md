@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinアドレスの衝突"
+title: "Re: Bitcoin アドレスの衝突"
 date: 2010-02-23T09:22:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,12 +8,12 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック62におけるNewLibertyStandardの文脈投稿。msg443の前。"
+description: "BitcoinTalk トピック 62 における NewLibertyStandard の文脈投稿。msg443 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Bitcoinを初回起動したときに生成される秘密鍵のことを言っているのか？ もし誰かが他人の鍵を複製することに成功したら、全ブロックをダウンロードした後、元の鍵の所有者と同じ残高を持つことになる。そういうことだよな？
+Bitcoin を初回起動したときに生成される秘密鍵のことを言っているのか？ もし誰かが他人の鍵を複製することに成功したら、全ブロックをダウンロードした後、元の鍵の所有者と同じ残高を持つことになる。そういうことだよな？
 
-自分が言っていたのはカスタムBitcoinアドレスのことだ。bitcoinを送ってくる相手の名前でラベルを付けて、誰からの支払いか分かるようにするものだ。これらのアドレスは前述の秘密鍵から生成されると思う。衝突について疑問なのは、非常にユニークではあるが、すべてのbitcoinクライアントで簡単に何度でも生成されるからだ。
+自分が言っていたのはカスタム Bitcoin アドレスのことだ。bitcoin を送ってくる相手の名前でラベルを付けて、誰からの支払いか分かるようにするものだ。これらのアドレスは前述の秘密鍵から生成されると思う。衝突について疑問なのは、非常にユニークではあるが、すべての bitcoin クライアントで簡単に何度でも生成されるからだ。

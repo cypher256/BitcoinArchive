@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin用URIスキーム"
+title: "Re: Bitcoin 用 URI スキーム"
 date: 2010-02-24T02:37:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック55におけるThe Madhatterの文脈投稿。msg481の前。"
+description: "BitcoinTalk トピック 55 における The Madhatter の文脈投稿。msg481 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

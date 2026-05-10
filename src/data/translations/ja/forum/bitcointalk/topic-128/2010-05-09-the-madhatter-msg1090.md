@@ -8,12 +8,12 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック128におけるThe Madhatterの文脈投稿。msg3605の前。"
+description: "BitcoinTalk トピック 128 における The Madhatter の文脈投稿。msg3605 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-それならbitcoinをrenice +20すべきだ。動画を再生しているマシンで生成モードのbitcoinを共有するなんて、俺は夢にも思わない。カクカクした動画は本当にイライラする。
+それなら bitcoin を renice +20 すべきだ。動画を再生しているマシンで生成モードの bitcoin を共有するなんて、俺は夢にも思わない。カクカクした動画は本当にイライラする。
 
 😛

@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-02-24T06:38:37.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック63におけるThe Madhatterの文脈投稿。after msg482, サトシを引用."
+description: "BitcoinTalk トピック 63 における The Madhatter の文脈投稿。after msg482, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -30,9 +30,9 @@ quotes:
 translationStatus: complete
 ---
 
-*NIX系の人々はある種の「ピューリスト」だ。本来必要のないライブラリでOSのインストールを汚されたくないのだ。
+*NIX 系の人々はある種の「ピューリスト」だ。本来必要のないライブラリで OS のインストールを汚されたくないのだ。
 
-何百万ものifdefも答えではない。うーん…これにはもう少し考察が必要かもしれない。
+何百万もの ifdef も答えではない。うーん…これにはもう少し考察が必要かもしれない。
 
 <!-- quote: q1 -->
 >

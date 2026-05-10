@@ -8,10 +8,10 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "BitcoinTalkトピック1268におけるQuantumMechanicの投稿。"
+description: "BitcoinTalk トピック 1268 における QuantumMechanic の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Zookoがここで提案していたように、Tahoe-LAFS（分散型オンラインストレージ）にBitcoin支払いが実装されるのを見たい。手伝いたいが、まだプログラミングを学んでいるところだ。
+Zooko がここで提案していたように、Tahoe-LAFS（分散型オンラインストレージ）に Bitcoin 支払いが実装されるのを見たい。手伝いたいが、まだプログラミングを学んでいるところだ。

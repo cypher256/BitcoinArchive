@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック898におけるmizerydearia の文脈投稿。"
+description: "BitcoinTalk トピック 898 における mizerydearia の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,4 +24,4 @@ quotes:
 > 誤報だと判断してリスクを取りたい場合は、「-disablesafemode」スイッチを使える。
 <!-- /tone-skip -->
 
-http://www.bitcoin.org/wiki/doku.php?id=man_page を見つけたが、-disablesafemodeへの言及がない。追加すべきではないか！また、-4wayなど他のオプションも追加すべきだ。
+http://www.bitcoin.org/wiki/doku.php?id=man_page を見つけたが、-disablesafemode への言及がない。追加すべきではないか！また、-4way など他のオプションも追加すべきだ。

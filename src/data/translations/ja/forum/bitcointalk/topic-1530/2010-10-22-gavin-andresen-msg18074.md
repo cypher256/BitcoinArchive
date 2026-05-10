@@ -8,14 +8,14 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック1530におけるギャビン・アンドレセンの文脈投稿。msg18241で引用。"
+description: "BitcoinTalk トピック 1530 におけるギャビン・アンドレセンの文脈投稿。msg18241 で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Dhawはこれらのコインをすべて自分のマシンで生成した。
+Dhaw はこれらのコインをすべて自分のマシンで生成した。
 
-残念ながら、バグかDhawのネットワーク接続の何らかの異常により、すべて別のブロックチェーンで生成されていた。
+残念ながら、バグか Dhaw のネットワーク接続の何らかの異常により、すべて別のブロックチェーンで生成されていた。
 
-Bitcoinクライアントは、最後のブロックチェックポイントまでのすべてのブロックを持つまで、コイン生成を許可すべきではない。
+Bitcoin クライアントは、最後のブロックチェックポイントまでのすべてのブロックを持つまで、コイン生成を許可すべきではない。

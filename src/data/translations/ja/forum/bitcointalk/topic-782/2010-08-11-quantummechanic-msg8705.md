@@ -1,5 +1,5 @@
 ---
-title: "Re: 大量のBitcoinを失った"
+title: "Re: 大量の Bitcoin を失った"
 date: 2010-08-11T08:10:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "BitcoinTalkトピック782におけるQuantumMechanicの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 782 における QuantumMechanic の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

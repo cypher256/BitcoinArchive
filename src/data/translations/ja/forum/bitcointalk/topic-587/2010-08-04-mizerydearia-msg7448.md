@@ -8,13 +8,13 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック587におけるmizerydeariaの文脈投稿。msg6301の後。"
+description: "BitcoinTalk トピック 587 における mizerydearia の文脈投稿。msg6301 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-C++のSetCompact(unsigned int nCompact)関数が以下のようだとして、
+C++の SetCompact(unsigned int nCompact)関数が以下のようだとして、
 
 ```cpp
 CBigNum& SetCompact(unsigned int nCompact) {
@@ -45,7 +45,7 @@ function uint256_from_compact($c) {
 }
 ```
 
-そして、C++のGetcompact()関数
+そして、C++の Getcompact()関数
 
 ```cpp
 unsigned int GetCompact() const {
@@ -61,9 +61,9 @@ unsigned int GetCompact() const {
 }
 ```
 
-であるとき、C++のGetcompact()関数に対応するPython/PHPの単純なコードはどう書けばいい？
+であるとき、C++の Getcompact()関数に対応する Python/PHP の単純なコードはどう書けばいい？
 
-このphpスニペットの中で関数を使うつもりだ
+この php スニペットの中で関数を使うつもりだ
 
 ```php
 function GetNextWorkRequired($block, $bits, $nActualTimespan) {

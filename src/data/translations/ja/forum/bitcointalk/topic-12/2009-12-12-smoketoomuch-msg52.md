@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック12におけるSmokeTooMuchの文脈投稿。msg54の前。"
+description: "BitcoinTalk トピック 12 における SmokeTooMuch の文脈投稿。msg54 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,6 +16,6 @@ translationStatus: complete
 
 提案：
 
-コインは高速なマシンほど速く生成されるので、多くの人がGPUの演算能力も活用したくなるだろう。
+コインは高速なマシンほど速く生成されるので、多くの人が GPU の演算能力も活用したくなるだろう。
 
-そこで提案だが、ATI StreamとNvidia CUDAを使ったGPUコンピューティングサポートを実装してはどうか。
+そこで提案だが、ATI Stream と Nvidia CUDA を使った GPU コンピューティングサポートを実装してはどうか。

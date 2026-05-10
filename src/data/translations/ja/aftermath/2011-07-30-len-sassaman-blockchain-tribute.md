@@ -10,7 +10,7 @@ participants:
     slug: "dan-kaminsky"
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "サッサマン死去後、ダン・カミンスキーがビットコインブロックチェーンにASCIIアート追悼を埋め込む。Black Hat USA 2011で公表。"
+description: "サッサマン死去後、ダン・カミンスキーがビットコインブロックチェーンに ASCII アート追悼を埋め込む。Black Hat USA 2011 で公表。"
 isSatoshi: false
 tags:
   - "dan-kaminsky"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 非GUIオプション"
+title: "Re: 非 GUI オプション"
 date: 2010-02-24T06:34:52Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -31,4 +31,4 @@ translationStatus: complete
 
 良いな。翻訳者に少しでもオーナーシップと責任感を持ってもらえる。
 
-0.3リリースに間に合うように、ソフトウェア翻訳用の.moファイルが少なくとも1つは手に入るといいのだが。
+0.3 リリースに間に合うように、ソフトウェア翻訳用の.mo ファイルが少なくとも 1 つは手に入るといいのだが。

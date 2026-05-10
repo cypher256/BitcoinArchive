@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-06-02T18:45:38.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Proof-of-work難易度の上昇」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Proof-of-work 難易度の上昇」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -20,4 +20,4 @@ translationStatus: complete
 
 すべてのノードと各プロセッサーはブロック内に異なる公開鍵を持っているので、異なる領域をスキャンしていることが保証されている。
 
-32ビットのナンスが1から再開するたびに、bnExtraNonceがインクリメントされる。これは任意精度整数だ。
+32 ビットのナンスが 1 から再開するたびに、bnExtraNonce がインクリメントされる。これは任意精度整数だ。

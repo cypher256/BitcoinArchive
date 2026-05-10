@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-19T12:30:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,16 +8,16 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。msg4268の前。"
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg4268 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-TransmissionのBitTorrentクライアントは認証付きJSON-RPCを実装している。「Remote Control」セクションを参照：
+Transmission の BitTorrent クライアントは認証付き JSON-RPC を実装している。「Remote Control」セクションを参照：
  https://trac.transmissionbt.com/wiki/ConfigurationParameters
 
-例えば、setting.jsonファイルは次のようになる：
+例えば、setting.json ファイルは次のようになる：
 
 ```
 {

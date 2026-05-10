@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinの自動renice"
+title: "Bitcoin の自動 renice"
 date: 2010-03-08T00:29:56.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,10 +10,10 @@ participants:
     slug: "fergalish"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "fergalishがスレッドを開始: Bitcoinの自動renice"
+description: "fergalish がスレッドを開始: Bitcoin の自動 renice"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-こんにちは、他のタスクに干渉しないようにniceレベル20でビットコインを実行している。しかし時折、niceレベルが2、あるいは0に自動調整されるようだ。これは仕様なのか？率直に言って、このような動作はLinuxアプリケーションとしてはあるべきではない……控えめに言っても奇妙だ。
+こんにちは、他のタスクに干渉しないように nice レベル 20 でビットコインを実行している。しかし時折、nice レベルが 2、あるいは 0 に自動調整されるようだ。これは仕様なのか？率直に言って、このような動作は Linux アプリケーションとしてはあるべきではない……控えめに言っても奇妙だ。

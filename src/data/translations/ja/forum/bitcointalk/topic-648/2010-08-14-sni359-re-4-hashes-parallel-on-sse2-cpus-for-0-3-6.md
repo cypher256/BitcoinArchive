@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-14T04:22:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがthashのアラインメントを提案し、MinGW GCC 3.4.5がおそらく問題の原因であることを特定。"
+description: "サトシ・ナカモトが thash のアラインメントを提案し、MinGW GCC 3.4.5 がおそらく問題の原因であることを特定。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -21,15 +21,15 @@ quotes:
     date: "2010-08-13T15:53:07.000Z"
 ---
 
-まだであれば、thashのアラインを試してみてほしい。効果があるかもしれない。損にはならない。
+まだであれば、thash のアラインを試してみてほしい。効果があるかもしれない。損にはならない。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > ツリーオプティマイザのコンパイラーバグを踏んでいるようだ。-O0でコンパイルしてみてくれないか？
 <!-- /tone-skip -->
 
--O0でも効果なし、同じエラーだ。
+-O0 でも効果なし、同じエラーだ。
 
-MinGWはGCC 3.4.5だ。おそらくそれが問題だ。
+MinGW は GCC 3.4.5 だ。おそらくそれが問題だ。
 
-新しいバージョンのMinGWを入手できるか試してみる。
+新しいバージョンの MinGW を入手できるか試してみる。

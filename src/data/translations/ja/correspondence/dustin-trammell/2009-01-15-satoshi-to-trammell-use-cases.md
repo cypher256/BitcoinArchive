@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシが動的IPについて議論し、bitcoin-listと暗号学メーリングリストへのCC許可を求め、送金型メールやマイクロペイメントなどビットコインのユースケースを構想する。"
+description: "サトシが動的 IP について議論し、bitcoin-list と暗号学メーリングリストへの CC 許可を求め、送金型メールやマイクロペイメントなどビットコインのユースケースを構想する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -28,7 +28,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-このメールで、サトシはネットワーク上の少なくとも1つのノードが同じクラスBの範囲内で頻繁にIPアドレスを変更していることに言及し、これは予想していなかったと述べた。トランメルに対して会話をbitcoin-listまたは暗号学メーリングリストにCCする許可を求め、bitcoin-listの購読詳細を共有した。
+このメールで、サトシはネットワーク上の少なくとも 1 つのノードが同じクラス B の範囲内で頻繁に IP アドレスを変更していることに言及し、これは予想していなかったと述べた。トランメルに対して会話を bitcoin-list または暗号学メーリングリストに CC する許可を求め、bitcoin-list の購読詳細を共有した。
 
 続いてサトシは、ビットコインを投資対象とする[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の以前の提案に言及した。
 
@@ -44,4 +44,4 @@ translationStatus: complete
 <!-- speaker: narrator -->
 サトシはビットコインの送金メール機能を既存のユースケースとして説明し、有名人がファンからのメッセージを読むためにビットコインの支払いを受け取ることや、サブスクリプションサイトが悪用防止のために無料トライアルにビットコインを課金することを構想した。
 
-このメールは、1月16日から17日にかけてbitcoin-listおよび暗号学メーリングリストに公開メッセージとしてCCされたものの下書きである。
+このメールは、1月16日から 17日にかけて bitcoin-list および暗号学メーリングリストに公開メッセージとして CC されたものの下書きである。

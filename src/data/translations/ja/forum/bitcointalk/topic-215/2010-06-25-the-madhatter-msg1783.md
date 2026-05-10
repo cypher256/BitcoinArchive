@@ -1,5 +1,5 @@
 ---
-title: "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
+title: "Re: Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている"
 date: 2010-06-25T23:33:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック215におけるThe Madhatterの文脈投稿。msg1779の後。"
+description: "BitcoinTalk トピック 215 における The Madhatter の文脈投稿。msg1779 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-俺がアクセスできる大規模な研究クラスタ上で、ソースコードをいじり回していたんだ。何故か分からないが、ノードがFreenodeに対してかなり高速に接続と切断を繰り返していて、結果として俺のノードのほとんどがk-lineされてしまった。Freenodeは荒れ狂って、俺がコネクションを作るそばからノードをブロックし始めた。
+俺がアクセスできる大規模な研究クラスタ上で、ソースコードをいじり回していたんだ。何故か分からないが、ノードが Freenode に対してかなり高速に接続と切断を繰り返していて、結果として俺のノードのほとんどが k-line されてしまった。Freenode は荒れ狂って、俺がコネクションを作るそばからノードをブロックし始めた。
 
-これが原因で他の人もk-lineされたのかどうかは、はっきりとは分からない。だが、タイミングは「ピッタリ」だった。
+これが原因で他の人も k-line されたのかどうかは、はっきりとは分からない。だが、タイミングは「ピッタリ」だった。
 
-このk-line問題が報告されたのとほぼ同じ頃に、俺はそのバグを発見していた。最終的には、別のネットワーク上で動かしている別のBitcoinクライアントからシードIPを取得するよう、ソースを強制的に書き換えた。
+この k-line 問題が報告されたのとほぼ同じ頃に、俺はそのバグを発見していた。最終的には、別のネットワーク上で動かしている別の Bitcoin クライアントからシード IP を取得するよう、ソースを強制的に書き換えた。

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-19T04:43:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCパスワード」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC パスワード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -20,4 +20,4 @@ translationStatus: complete
 
 そのようにやっている他のソフトの例を教えていただけますか？（コマンドラインがどのように見えるか）
 
-ここで主に話しているのは、bitcoindを起動する際に-rpcpw=を使う代わりに、テキストファイルを指定してそこから読み取るスイッチを使うということですね？（スイッチの名前のアイデアはありますか？）
+ここで主に話しているのは、bitcoind を起動する際に-rpcpw=を使う代わりに、テキストファイルを指定してそこから読み取るスイッチを使うということですね？（スイッチの名前のアイデアはありますか？）

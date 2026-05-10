@@ -8,12 +8,12 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック151におけるDataWraithの文脈投稿。msg1269の前。"
+description: "BitcoinTalk トピック 151 における DataWraith の文脈投稿。msg1269 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-FAQが完成した。この投稿に添付してある。front_pageも再添付した。箇条書きの前の「Advantages:」が独立した段落である必要があったためだ（ファイルの構造から推測すると、ホームページで使われているCMSでは3つの空行が段落区切りとして機能するようだ）。
+FAQ が完成した。この投稿に添付してある。front_page も再添付した。箇条書きの前の「Advantages:」が独立した段落である必要があったためだ（ファイルの構造から推測すると、ホームページで使われている CMS では 3 つの空行が段落区切りとして機能するようだ）。
 
-.poファイルも確認するが、数日かかるだろう。
+.po ファイルも確認するが、数日かかるだろう。

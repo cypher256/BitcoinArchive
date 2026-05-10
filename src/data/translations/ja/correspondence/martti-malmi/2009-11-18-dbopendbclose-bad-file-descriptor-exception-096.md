@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがマルミのログからDBエラーのパターンを確認し、ゾンビソケットの活動にも注目。実行していたテストバージョンを確認。"
+description: "サトシがマルミのログから DB エラーのパターンを確認し、ゾンビソケットの活動にも注目。実行していたテストバージョンを確認。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -28,9 +28,9 @@ quotes:
 
 <!-- speaker: Satoshi Nakamoto -->
 
-ありがとう。db::open/closeのエラーはパターンを裏付けている。
+ありがとう。db::open/close のエラーはパターンを裏付けている。
 
-より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたのか？test5のMSG_DONTWAITがLibertyのゾンビ問題を解決した。どのテストバージョンを実行していたのか？（ログにテストバージョンを出力するようにすべきだな）
+より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたのか？test5 の MSG_DONTWAIT が Liberty のゾンビ問題を解決した。どのテストバージョンを実行していたのか？（ログにテストバージョンを出力するようにすべきだな）
 
 <!-- speaker: Martti Malmi -->
 

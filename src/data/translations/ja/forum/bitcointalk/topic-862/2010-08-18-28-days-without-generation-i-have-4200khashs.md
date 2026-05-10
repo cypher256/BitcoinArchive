@@ -1,5 +1,5 @@
 ---
-title: "28日間生成なし、4200khash/sあるのに"
+title: "28日間生成なし、4200khash/s あるのに"
 date: 2010-08-18T12:20:35.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,12 +10,12 @@ participants:
     slug: "kosovito"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "kosovitoがスレッドを開始: 28日間生成なし、4200khash/sあるのに"
+description: "kosovito がスレッドを開始: 28日間生成なし、4200khash/s あるのに"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-こんにちは。難易度が高いことは知っているが、4200khash/秒のマシンで28日間生成なしというのは正常なのだろうか？
+こんにちは。難易度が高いことは知っているが、4200khash/秒のマシンで 28日間生成なしというのは正常なのだろうか？
 
 以前は何度か生成に成功していた。

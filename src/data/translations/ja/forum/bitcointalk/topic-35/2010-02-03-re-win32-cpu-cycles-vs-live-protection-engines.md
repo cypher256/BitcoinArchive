@@ -1,5 +1,5 @@
 ---
-title: "Re: Win32 CPUサイクル vs 'ライブプロテクション'エンジン"
+title: "Re: Win32 CPU サイクル vs 'ライブプロテクション'エンジン"
 date: 2010-02-03T23:36:54.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Win32 CPUサイクル対『ライブプロテクション』エンジン？」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Win32 CPU サイクル対『ライブプロテクション』エンジン？」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-ありがとう。Windowsのどのバージョンだろうか？
+ありがとう。Windows のどのバージョンだろうか？

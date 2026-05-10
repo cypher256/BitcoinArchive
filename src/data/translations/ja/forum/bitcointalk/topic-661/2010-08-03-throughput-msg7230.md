@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック661におけるthroughputの投稿。"
+description: "BitcoinTalk トピック 661 における throughput の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

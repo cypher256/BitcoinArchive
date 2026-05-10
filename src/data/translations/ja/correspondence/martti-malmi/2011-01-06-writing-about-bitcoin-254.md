@@ -1,5 +1,5 @@
 ---
-title: "Re: BitCoinについての記事執筆"
+title: "Re: BitCoin についての記事執筆"
 date: 2011-01-06T18:31:26Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -47,4 +47,4 @@ quotes:
 <!-- speaker: Satoshi Nakamoto -->
 あなたが最適な人物だ。
 
-EFFは本当に重要だ。彼らとは良い関係を築きたい。私たちは彼らが好むタイプのプロジェクトだ。彼らはTORプロジェクトを支援し、P2Pファイル共有の保護に多大な貢献をしてきた。
+EFF は本当に重要だ。彼らとは良い関係を築きたい。私たちは彼らが好むタイプのプロジェクトだ。彼らは TOR プロジェクトを支援し、P2P ファイル共有の保護に多大な貢献をしてきた。

@@ -1,5 +1,5 @@
 ---
-title: "SVN rev 130のバグ修正"
+title: "SVN rev 130 のバグ修正"
 date: 2010-08-12T21:20:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVN rev 130の各種バグ修正と-paytxfeeスイッチの追加を発表。"
+description: "サトシ・ナカモトが SVN rev 130 の各種バグ修正と-paytxfee スイッチの追加を発表。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,11 +16,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-rev 130の各種バグ修正：
+rev 130 の各種バグ修正：
 
-相対パスでの-datadirを修正
-自動起動はWindows以外ではデフォルトでオフに
-msvcでコンパイルした際の「vector iterator not dereferencable」アサーションが時々発生する問題を修正
-Linuxビルドでのreadlinkコンパイル警告を修正
-__BSD__の代わりにsys/param.hとBSD定義を使用
--paytxfeeスイッチ、例：-paytxfee=0.01
+相対パスでの-datadir を修正
+自動起動は Windows 以外ではデフォルトでオフに
+msvc でコンパイルした際の「vector iterator not dereferencable」アサーションが時々発生する問題を修正
+Linux ビルドでの readlink コンパイル警告を修正
+__BSD__の代わりに sys/param.h と BSD 定義を使用
+-paytxfee スイッチ、例：-paytxfee=0.01

@@ -1,5 +1,5 @@
 ---
-title: "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
+title: "Re: freebitcoins.appspot.com で 5 Bitcoin を無料で入手しよう"
 date: 2010-06-21T09:55:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック183におけるvirtualcoinの文脈投稿。msg1620の後。"
+description: "BitcoinTalk トピック 183 における virtualcoin の文脈投稿。msg1620 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -17,6 +17,6 @@ translationStatus: complete
 やあギャビン、
 
 いいサービスだが、最初にコインを取得しようとしたら問題があった。「invalid BC address」と出たんだ。
-Bitcoinプログラムが生成した最初のアドレス 1Dn51Rn2tmvARcsYkPe7Aw1sCAXw5oKnR が機能しなかった。
+Bitcoin プログラムが生成した最初のアドレス 1Dn51Rn2tmvARcsYkPe7Aw1sCAXw5oKnR が機能しなかった。
 
 なぜだ？

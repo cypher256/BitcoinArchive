@@ -1,5 +1,5 @@
 ---
-title: "Re:（Quantumplationの文脈投稿）"
+title: "Re:（Quantumplation の文脈投稿）"
 date: 2010-07-18T03:23:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "BitcoinTalkトピック441におけるQuantumplationの文脈投稿。msg4095の前。"
+description: "BitcoinTalk トピック 441 における Quantumplation の文脈投稿。msg4095 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-難易度は2016ブロックごとに再評価・調整される。
+難易度は 2016 ブロックごとに再評価・調整される。

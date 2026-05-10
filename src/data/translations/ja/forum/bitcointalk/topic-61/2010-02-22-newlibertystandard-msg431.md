@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック61におけるNewLibertyStandardの文脈投稿。msg433の前。"
+description: "BitcoinTalk トピック 61 における NewLibertyStandard の文脈投稿。msg433 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

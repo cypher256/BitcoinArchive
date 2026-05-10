@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-03-05T01:46:25.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「コマンドラインとJSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「コマンドラインと JSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -25,6 +25,6 @@ quotes:
 <!-- tone-skip -->
 > これはおかしいですね…64ビットLinuxサーバーでBitcoinをデーモンとして起動すると、残りの250MBのRAMと700MBのスワップをすべて食い尽くして、最終的にクラッシュします。32ビットのUbuntuデスクトップでは問題なく動作し、メモリー使用量は15MBに留まります。サーバーでは64ビットビルドのBitcoinを実行しています。ビルドに何か問題があるのかもしれません。
 <!-- /tone-skip -->
-sirius-mがこれをデバッグした。64ビット関連の問題だった。
+sirius-m がこれをデバッグした。64 ビット関連の問題だった。
 
-修正はSVNのutil.cppファイルで利用可能になった。
+修正は SVN の util.cpp ファイルで利用可能になった。

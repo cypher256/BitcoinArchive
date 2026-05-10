@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-02-24T22:42:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Proof-of-work難易度の上昇」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Proof-of-work 難易度の上昇」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

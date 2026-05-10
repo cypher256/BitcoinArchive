@@ -1,5 +1,5 @@
 ---
-title: "Re: CryptoPPのアサーションエラー"
+title: "Re: CryptoPP のアサーションエラー"
 date: 2010-09-05T23:25:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「CryptoPPアサーションエラー」におけるサトシ・ナカモトの返信。"
+description: "スレッド「CryptoPP アサーションエラー」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -22,4 +22,4 @@ cryptopp/secblock.h:187
 
 動作するか教えてくれ。また、メモリーリークがないか監視してほしい。
 
-派生クラスが独自のallocateとdeallocateのバージョンを定義することを保証するテンプレートクラスのようだ。これが実際の問題でリリースまで通過してしまったのなら奇妙だ。おそらく誤報だろう。
+派生クラスが独自の allocate と deallocate のバージョンを定義することを保証するテンプレートクラスのようだ。これが実際の問題でリリースまで通過してしまったのなら奇妙だ。おそらく誤報だろう。

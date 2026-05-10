@@ -1,5 +1,5 @@
 ---
-title: "Re: BitcoinのWebサイト統合"
+title: "Re: Bitcoin の Web サイト統合"
 date: 2010-07-16T18:23:04.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Bitcoinのウェブサイト統合」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin のウェブサイト統合」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-典型的な会計処理の推奨方法を示すサンプルPythonコードを誰かに書いてリリースしてもらおうと促してきたが、うまくいかなかった。あなたがここでやっているように車輪の再発明をしなくて済めばいいのだが。getnewaddressで検索すると、私が小さなサンプル擬似コードの断片を投稿したスレッドが見つかるはずだ。
+典型的な会計処理の推奨方法を示すサンプル Python コードを誰かに書いてリリースしてもらおうと促してきたが、うまくいかなかった。あなたがここでやっているように車輪の再発明をしなくて済めばいいのだが。getnewaddress で検索すると、私が小さなサンプル擬似コードの断片を投稿したスレッドが見つかるはずだ。

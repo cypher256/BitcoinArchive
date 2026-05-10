@@ -1,5 +1,5 @@
 ---
-title: "Re: 28日間生成なし、4200khash/sあるのに"
+title: "Re: 28日間生成なし、4200khash/s あるのに"
 date: 2010-08-22T23:01:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「28日間生成なし、4200khash/sあるのに」におけるサトシ・ナカモトの返信。"
+description: "スレッド「28日間生成なし、4200khash/s あるのに」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,11 +16,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-debug.logで「proof-of-work found」を検索してくれ。見つかった場合は、その直後にエラーがないか確認してくれ。
+debug.log で「proof-of-work found」を検索してくれ。見つかった場合は、その直後にエラーがないか確認してくれ。
 
 [Deleted] Quote from: davidonpda on August 19, 2010, 07:43:01 PM
 > 正しく動作するために、時刻にどれくらいの誤差が許容されますか？
 
-許容範囲は2時間だ。
+許容範囲は 2時間だ。
 
-これはSVN rev 141と次のリリース（0.3.11以降）で解決されるはずだ。時計が1時間以上ずれている場合、警告のメッセージボックスをポップアップ表示する。
+これは SVN rev 141 と次のリリース（0.3.11 以降）で解決されるはずだ。時計が 1時間以上ずれている場合、警告のメッセージボックスをポップアップ表示する。

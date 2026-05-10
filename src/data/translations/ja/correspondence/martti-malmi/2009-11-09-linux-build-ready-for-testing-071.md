@@ -1,5 +1,5 @@
 ---
-title: "Re: Linuxビルドのテスト準備完了"
+title: "Re: Linux ビルドのテスト準備完了"
 date: 2009-11-09T19:30:53Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがWine上でのビットコイン実行はBerkeley DBの互換性問題でデータベース破損のリスクがあると警告。LinuxのGCC 4.3.3がSHA-256をより効率的に最適化する点にも言及。"
+description: "Wine 上のビットコイン実行は Berkeley DB 互換性問題でデータベース破損リスクがあると警告。Linux の GCC 4.3.3 が SHA-256 をより効率的に最適化する点にも言及。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -37,9 +37,9 @@ quotes:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-本当にWineでの実行を続けない方がいい。データベースエラーが出ている（db.log）。おそらく新規インストールに転送する儀式的な手順は、データベース破損に対処するために編み出したものだろう。未確認ブロックを失う方法があるとすれば、データベースエラーが原因だろう。Linuxビルドで見つかった問題は修正できる。Berkeley DBの深い部分にあるWineの非互換性は修正不可能だ。
+本当に Wine での実行を続けない方がいい。データベースエラーが出ている（db.log）。おそらく新規インストールに転送する儀式的な手順は、データベース破損に対処するために編み出したものだろう。未確認ブロックを失う方法があるとすれば、データベースエラーが原因だろう。Linux ビルドで見つかった問題は修正できる。Berkeley DB の深い部分にある Wine の非互換性は修正不可能だ。
 
-LinuxビルドのGCC 4.3.3は、WindowsのGCC 3.4.5よりもSHA-256コードをうまく最適化したのだと思う。最適なSHA-256コードを探していた時、手動でチューニングされた高度に最適化されたSHA1コードはたくさんあったが、SHA-256についてはまだそれほど多くなかった。MinGWを4.3.xにアップグレードして同じ土俵に立てるか見てみるべきだな。
+Linux ビルドの GCC 4.3.3 は、Windows の GCC 3.4.5 よりも SHA-256 コードをうまく最適化したのだと思う。最適な SHA-256 コードを探していた時、手動でチューニングされた高度に最適化された SHA1 コードはたくさんあったが、SHA-256 についてはまだそれほど多くなかった。MinGW を 4.3.x にアップグレードして同じ土俵に立てるか見てみるべきだな。
 
 <!-- speaker: Liberty Standard -->
 <!-- quote: q1 -->

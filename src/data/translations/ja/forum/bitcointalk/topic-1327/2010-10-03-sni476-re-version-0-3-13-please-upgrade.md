@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.13、アップグレードしてください"
+title: "Re: バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-03T20:02:24.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「バージョン0.3.13、アップグレードしてください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「バージョン 0.3.13、アップグレードしてください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

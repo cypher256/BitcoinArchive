@@ -1,5 +1,5 @@
 ---
-title: "Re: wallet.datの自動バックアップ"
+title: "Re: wallet.dat の自動バックアップ"
 date: 2010-08-27T02:54:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「wallet.datの自動バックアップ」におけるサトシ・ナカモトの返信。"
+description: "スレッド「wallet.dat の自動バックアップ」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -21,7 +21,7 @@ quotes:
     date: "2010-08-26T16:21:09.000Z"
 ---
 
-Windowsにmmap(2)があるとは思えない。自作のものを作ってテストするよりも、既存のファイルコピー関数を呼び出す方が良い。
+Windows に mmap(2)があるとは思えない。自作のものを作ってテストするよりも、既存のファイルコピー関数を呼び出す方が良い。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
@@ -30,4 +30,4 @@ Windowsにmmap(2)があるとは思えない。自作のものを作ってテス
 
 ありがとう。どこかにあるだろうと思っていた。
 
-すでに十数箇所でboost::filesystemを使っている。新たに追加される依存関係ではない。そうでなければ各OSごとに#ifdefを用意してあらゆる場所でテストしなければならないような、多くのポータブルなものを提供してくれる。
+すでに十数箇所で boost::filesystem を使っている。新たに追加される依存関係ではない。そうでなければ各 OS ごとに#ifdef を用意してあらゆる場所でテストしなければならないような、多くのポータブルなものを提供してくれる。

@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.8にアップグレードしてください！"
+title: "Re: 0.3.8 にアップグレードしてください！"
 date: 2010-08-04T00:29:37.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSourceForgeのミラー更新の遅延について報告。"
+description: "サトシ・ナカモトが SourceForge のミラー更新の遅延について報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-SourceForgeがまだミラーを更新していないようだ。管理者側にはファイルがあるが、ユーザー側にはない。どのくらいかかるかわからない。今まではいつも即座に反映されていたのだが。
+SourceForge がまだミラーを更新していないようだ。管理者側にはファイルがあるが、ユーザー側にはない。どのくらいかかるかわからない。今まではいつも即座に反映されていたのだが。
 
-編集：SourceForgeが更新された。
+編集：SourceForge が更新された。

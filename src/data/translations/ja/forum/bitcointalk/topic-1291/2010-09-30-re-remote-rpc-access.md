@@ -1,5 +1,5 @@
 ---
-title: "Re: リモートRPCアクセス"
+title: "Re: リモート RPC アクセス"
 date: 2010-09-30T18:27:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「リモートRPCアクセス」におけるサトシ・ナカモトの返信。"
+description: "スレッド「リモート RPC アクセス」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-自分のLAN上で使用する場合、例えばある場所に複数のサーバーがあって互いに通信する場合は安全だ。
+自分の LAN 上で使用する場合、例えばある場所に複数のサーバーがあって互いに通信する場合は安全だ。
 
-0.3.13 RC1がWindows版で利用可能だ：
+0.3.13 RC1 が Windows 版で利用可能だ：
 [http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe)

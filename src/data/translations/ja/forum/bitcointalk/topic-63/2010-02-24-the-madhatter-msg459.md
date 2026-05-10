@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-02-24T02:29:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック63におけるThe Madhatterの文脈投稿。msg452の後。"
+description: "BitcoinTalk トピック 63 における The Madhatter の文脈投稿。msg452 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
+title: "Re: freebitcoins.appspot.com で 5 Bitcoin を無料で入手しよう"
 date: 2010-06-21T13:01:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック183におけるギャビン・アンドレセンの文脈投稿。msg1620の後。"
+description: "BitcoinTalk トピック 183 におけるギャビン・アンドレセンの文脈投稿。msg1620 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -23,6 +23,6 @@ translationStatus: complete
 > いいサービスだが、最初にコインを取得しようとしたら問題があった。「invalid BC address」と出たんだ。
 > Bitcoinプログラムが生成した最初のアドレス 1Dn51Rn2tmvARcsYkPe7Aw1sCAXw5oKnR が機能しなかった。
 
-それは舞台裏で使っている技術のひとつ（GoogleのApp Engine）のバグが原因だ。もう一度試せば問題は消えるはずだ。
+それは舞台裏で使っている技術のひとつ（Google の App Engine）のバグが原因だ。もう一度試せば問題は消えるはずだ。
 
 もっと信頼性を高めるアイデアはいくつかあるが、それでも Google が根本的な問題を見つけて修正してくれることを今も期待している……

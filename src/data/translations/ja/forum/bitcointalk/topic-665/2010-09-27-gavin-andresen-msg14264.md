@@ -1,5 +1,5 @@
 ---
-title: "Re: 複数のウォレット、1台のコンピューター"
+title: "Re: 複数のウォレット、1 台のコンピューター"
 date: 2010-09-27T17:10:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック665におけるギャビン・アンドレセンの文脈投稿。msg18349の前。"
+description: "BitcoinTalk トピック 665 におけるギャビン・アンドレセンの文脈投稿。msg18349 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -8,13 +8,13 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg67の前。"
+description: "BitcoinTalk トピック 12 における The Madhatter の文脈投稿。msg67 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-FreeBSDで動くようになった！ 近いうちにここに成果を投稿する。
+FreeBSD で動くようになった！ 近いうちにここに成果を投稿する。
 
 $gmake -f makefile.fbsd      
 g++ -c -O0 -Wno-invalid-offsetof -Wformat  -D__WXGTK__ -DNOPCH -DBUILD_FREEBSD -I"/usr/include" -I"/usr/local/include" -I"/usr/local/include/db47" -I"/usr/local/include/wx-2.8" -I"/usr/local/lib/wx/include/gtk2-ansi-release-2.8" -o headers.h.gch headers.h

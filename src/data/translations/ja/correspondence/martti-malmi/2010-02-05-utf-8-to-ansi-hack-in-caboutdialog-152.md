@@ -1,5 +1,5 @@
 ---
-title: "Re: CAboutDialogにおけるUTF-8からANSIへのハック"
+title: "Re: CAboutDialog における UTF-8 から ANSI へのハック"
 date: 2010-02-05T18:39:18Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがAboutダイアログの著作権記号のUTF-8ハックを16進エスケープシーケンスに変更し、今後のエンコーディング破損を防止する修正を提案。"
+description: "サトシが About ダイアログの著作権記号の UTF-8 ハックを 16 進エスケープシーケンスに変更し、今後のエンコーディング破損を防止する修正を提案。"
 isSatoshi: true
 tags:
   - "correspondence"

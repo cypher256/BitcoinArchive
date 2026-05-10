@@ -1,5 +1,5 @@
 ---
-title: "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
+title: "Re: Nenolod、Bitcoin が機能しないことを証明したがっている人物"
 date: 2010-07-18T21:56:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Nenolod、Bitcoinが機能しないことを証明したがっている人物」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Nenolod、Bitcoin が機能しないことを証明したがっている人物」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-通常、25,000 BTC以上だ。
+通常、25,000 BTC 以上だ。

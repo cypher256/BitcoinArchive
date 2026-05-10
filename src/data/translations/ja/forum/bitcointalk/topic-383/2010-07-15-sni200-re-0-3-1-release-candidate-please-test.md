@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3.1リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3.1 リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,6 +27,6 @@ quotes:
 > Windows上では、コイン生成の優先度は依然として通常のままだ。BitCoinをコイン生成モードで実行し、CPUを全部食い尽くすもの（例えばCPU Hog: http://www.microtask.ca/cpuhog.html）を起動すると、BitCoinとCPU Hogが50/50でCPUを分け合い、CPU Hogが全CPUを取ってBitCoinがアイドル/低プロセスでのみ動くという状態にはならないことが分かる。khash/sも半分に減っているので、スレッドが通常より低い優先度で動いていないさらなる証拠だ。
 <!-- /tone-skip -->
 
-これを再現できなかった。デュアルプロセッサーなので、2つのメモリーホグを実行した。タスクマネージャーによると、BitcoinのCPU使用率は0%だった。khash/secメーターはCPUを取得できなかったため更新されず、止まったままだった。
+これを再現できなかった。デュアルプロセッサーなので、2 つのメモリーホグを実行した。タスクマネージャーによると、Bitcoin の CPU 使用率は 0%だった。khash/sec メーターは CPU を取得できなかったため更新されず、止まったままだった。
 
 デュアルプロセッサーか？シングルプロセッサーのホグを実行していたのではないか？

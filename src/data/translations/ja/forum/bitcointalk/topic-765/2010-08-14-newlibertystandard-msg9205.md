@@ -1,5 +1,5 @@
 ---
-title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
+title: "Re: Linux 64 ビット用バージョン 0.3.8.1 アップデート"
 date: 2010-08-14T14:54:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック765におけるNewLibertyStandardの文脈投稿。msg8628の後。"
+description: "BitcoinTalk トピック 765 における NewLibertyStandard の文脈投稿。msg8628 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -22,4 +22,4 @@ translationStatus: complete
 <!-- quote: q1 -->
 > クライアントには「コイン生成のテスト」機能があるべきだと思う。本質的には、すべてが正しく動作していることを示すために既知のブロックを単に生成するだけのものだ。
 
-同意する。difficulty 1のブロック生成をテストできる予備のコンピューターを持っているが、実際にテストすることはない。それを実行するボタンがあれば、自分はやるだろう。
+同意する。difficulty 1 のブロック生成をテストできる予備のコンピューターを持っているが、実際にテストすることはない。それを実行するボタンがあれば、自分はやるだろう。

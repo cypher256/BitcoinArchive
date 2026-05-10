@@ -1,5 +1,5 @@
 ---
-title: "静的IPを投稿してください"
+title: "静的 IP を投稿してください"
 date: 2010-02-21T04:19:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿：「静的IPを投稿してください」。"
+description: "サトシ・ナカモトの投稿：「静的 IP を投稿してください」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-新規ユーザーがテスト用の寄付を送ってソフトウェアの動作を確認できるよう、静的IPのリストがあると良い。着信接続を受け入れることができ、静的IPアドレスをお持ちの方は、ここに投稿してほしい！
+新規ユーザーがテスト用の寄付を送ってソフトウェアの動作を確認できるよう、静的 IP のリストがあると良い。着信接続を受け入れることができ、静的 IP アドレスをお持ちの方は、ここに投稿してほしい！
 
-これらのIPに送られたものは寄付とみなしてほしい。
+これらの IP に送られたものは寄付とみなしてほしい。
 
-往復を依頼する場合は、コメントに返送先のBitcoinアドレスまたはIPを必ず含めてほしい。ただし、一方通行であると想定してほしい。受信トランザクションを監視して返送するとは限らない。
+往復を依頼する場合は、コメントに返送先の Bitcoin アドレスまたは IP を必ず含めてほしい。ただし、一方通行であると想定してほしい。受信トランザクションを監視して返送するとは限らない。

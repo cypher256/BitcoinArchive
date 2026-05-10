@@ -1,5 +1,5 @@
 ---
-title: "Re: Linuxビルドのテスト準備完了"
+title: "Re: Linux ビルドのテスト準備完了"
 date: 2009-11-09T08:32:08Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "ブロックダウンロードは接続後すぐに開始し、Windows PCよりも速くダウンロードされたと報告。学校のプロジェクトのため、12月まで積極的な開発は難しいと連絡。"
+description: "ブロックダウンロードは接続後すぐに開始し、Windows PC よりも速くダウンロードされたと報告。学校のプロジェクトのため、12月まで積極的な開発は難しいと連絡。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -36,9 +36,9 @@ translationStatus: complete
 <!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
-接続後すぐに開始し、CPUが遅いWindows PCよりも速くダウンロードしました。
+接続後すぐに開始し、CPU が遅い Windows PC よりも速くダウンロードしました。
 
-学校のプロジェクト（偶然にもC++のコーディング）に約1ヶ月集中しなければならないので、12月までは積極的な開発に使える時間があまりありません。とにかく連絡は取り合いましょう。
+学校のプロジェクト（偶然にも C++のコーディング）に約 1ヶ月集中しなければならないので、12月までは積極的な開発に使える時間があまりありません。とにかく連絡は取り合いましょう。
 
 <!-- tone-skip -->
 > <!-- speaker: Satoshi Nakamoto -->

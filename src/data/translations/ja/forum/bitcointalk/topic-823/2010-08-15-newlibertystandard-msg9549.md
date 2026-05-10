@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック823におけるNewLibertyStandardの文脈投稿。msg9548の後。"
+description: "BitcoinTalk トピック 823 における NewLibertyStandard の文脈投稿。msg9548 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -23,8 +23,8 @@ translationStatus: complete
 <!-- quote: q1 -->
 > 私たちのような愚かな初心者に、ブロックチェーンをダウンロードしたらどうすればいいか説明してくれないか？
 
-Bitcoinが動作していない状態で、Bitcoinのデータディレクトリに置く。Linuxなら~/.bitcoinだ。チェーン全体を再ダウンロードしたければ、Bitcoinが動作していない状態でデータディレクトリからファイルを削除するだけだ。
+Bitcoin が動作していない状態で、Bitcoin のデータディレクトリに置く。Linux なら~/.bitcoin だ。チェーン全体を再ダウンロードしたければ、Bitcoin が動作していない状態でデータディレクトリからファイルを削除するだけだ。
 
-自分はblk00x.datファイルとblkindex.datファイルをデータディレクトリの外に移動してから、クライアントを再起動するつもりだ。これらが正しいファイルだよな？
+自分は blk00x.dat ファイルと blkindex.dat ファイルをデータディレクトリの外に移動してから、クライアントを再起動するつもりだ。これらが正しいファイルだよな？
 
 編集：いつもアップグレード前にやっているように、ディレクトリ全体もバックアップしておく。

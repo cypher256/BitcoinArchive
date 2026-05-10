@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "GLIBCXXの問題の修正方法を模索し、Bitcoin 0.3.3への早急なアップグレードを要請"
+description: "GLIBCXX の問題の修正方法を模索し、Bitcoin 0.3.3 への早急なアップグレードを要請"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -29,6 +29,6 @@ translationStatus: complete
 > 自分でビルドする必要がありました。フォーラムで報告されているのと同じ問題がありました：/usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11' not found。
 
 <!-- speaker: Satoshi Nakamoto -->
-その修正方法が分かればいいのだが。あなたのシステムにはどのバージョンのGLIBCXXが入っているか？
+その修正方法が分かればいいのだが。あなたのシステムにはどのバージョンの GLIBCXX が入っているか？
 
-できるだけ早くBitcoin 0.3.3にアップグレードしてほしい。
+できるだけ早く Bitcoin 0.3.3 にアップグレードしてほしい。

@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-25T10:29:54.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック199におけるvirtualcoinの文脈投稿。after msg1760, サトシを引用."
+description: "BitcoinTalk トピック 199 における virtualcoin の文脈投稿。after msg1760, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -25,27 +25,27 @@ translationStatus: complete
 
 だがこれを見てくれ。
 
-**Ubuntu 10.04上の32-bit Linux版**
+**Ubuntu 10.04 上の 32-bit Linux 版**
 
 4 cores: 2500 khash/s
 3 cores: 1900 khash/s
 2 cores: 1260 khash/s
 1 core: 630 khash/s
 
-**Ubuntu 10.04上の64-bit Linux版（新しい計測）**
+**Ubuntu 10.04 上の 64-bit Linux 版（新しい計測）**
 
 4 cores: 2880 khash/s
 3 cores: 2150 khash/s
 2 cores: 1450 khash/s
 1 core: 720 khash/s
 
-（といっても、まだ1コインも生成できていない。bitcoinを4コアで丸一日動かすことはなくて、1コアでさえそうしていないのだが……）
+（といっても、まだ 1 コインも生成できていない。bitcoin を 4 コアで丸一日動かすことはなくて、1 コアでさえそうしていないのだが……）
 
-@Joozero — Intel i7 860は2.8 Ghzだったよな？ 自分のPhenom IIは3 Ghzだから、それも重要な事実だと思う。同じマシンのWindows 7でも後でbitcoinを試してみる。
+@Joozero — Intel i7 860 は 2.8 Ghz だったよな？ 自分の Phenom II は 3 Ghz だから、それも重要な事実だと思う。同じマシンの Windows 7 でも後で bitcoin を試してみる。
 
 /edit
 
-**Windows 7 64-bit上の32-bit Win版**
+**Windows 7 64-bit 上の 32-bit Win 版**
 
 4 cores: 2310 khash/s
 3 cores: 1740 khash/s

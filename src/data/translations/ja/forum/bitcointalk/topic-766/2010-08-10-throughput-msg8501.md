@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック766におけるthroughputの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 766 における throughput の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -35,5 +35,5 @@ translationStatus: complete
 > トランザクションとブロックデータ。大きなファイルではない
 
 「トランザクションとブロックデータは*まだ*大きなファイルではない」という意味で言ったのだろうか？
-1日あたりメガバイト程度なら自分のインターネットにとってまだ大きくはないが、Bitcoinだけのために1日ギガバイト受信するのはすでに多すぎる。
+1日あたりメガバイト程度なら自分のインターネットにとってまだ大きくはないが、Bitcoin だけのために 1日ギガバイト受信するのはすでに多すぎる。
 将来の成功が示唆するもの、という意味だ。

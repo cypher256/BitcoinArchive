@@ -1,5 +1,5 @@
 ---
-title: "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
+title: "Re: Nenolod、Bitcoin が機能しないことを証明したがっている人物"
 date: 2010-07-17T16:56:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Nenolod、Bitcoinが機能しないことを証明したがっている人物」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Nenolod、Bitcoin が機能しないことを証明したがっている人物」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.2にはブロックチェーンをこの時点までロックインし、誰かが50%を取得した場合の被害を少し制限するセキュリティ対策がいくつか含まれている。
+0.3.2 にはブロックチェーンをこの時点までロックインし、誰かが 50%を取得した場合の被害を少し制限するセキュリティ対策がいくつか含まれている。
 
-しかし、誰かがCPUパワーの50%以上を持ち悪意を持っている場合、設計文書に既に記載されていることを証明できてしまう。
+しかし、誰かが CPU パワーの 50%以上を持ち悪意を持っている場合、設計文書に既に記載されていることを証明できてしまう。

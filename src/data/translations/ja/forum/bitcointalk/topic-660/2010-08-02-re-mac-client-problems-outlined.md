@@ -1,5 +1,5 @@
 ---
-title: "Re: Macクライアントの問題一覧……"
+title: "Re: Mac クライアントの問題一覧……"
 date: 2010-08-02T18:02:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがMac版でトレイ最小化オプションが未実装であることを認め、次バージョンでグレーアウトすることを提案。"
+description: "サトシ・ナカモトが Mac 版でトレイ最小化オプションが未実装であることを認め、次バージョンでグレーアウトすることを提案。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-「タスクバーの代わりにトレイに最小化」と「閉じる時にトレイに最小化」はMac版ではまだ実装されていないようだ。次のバージョンではグレーアウトすべきだな。
+「タスクバーの代わりにトレイに最小化」と「閉じる時にトレイに最小化」は Mac 版ではまだ実装されていないようだ。次のバージョンではグレーアウトすべきだな。

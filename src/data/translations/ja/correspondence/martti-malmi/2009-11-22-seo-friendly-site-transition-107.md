@@ -1,5 +1,5 @@
 ---
-title: "Re: SEOフレンドリーなサイト移行"
+title: "Re: SEO フレンドリーなサイト移行"
 date: 2009-11-22T20:22:57Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "了解です。11月23日から25日まで不在にします。"
+description: "了解です。11月23日から 25日まで不在にします。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -26,7 +26,7 @@ translationStatus: complete
 <!-- speaker: Martti Malmi -->
 了解です。
 
-11月23日から25日まで不在にします。
+11月23日から 25日まで不在にします。
 
 <!-- speaker: Satoshi Nakamoto -->
 > 検索エンジンが新しいサイトだと判断してサイト開始日とPRデータをリセットしないように、bitcoin.orgの継続性を保った移行が必要だ。GoogleはIPアドレスやサイトのコンテンツなど、一定数のプロパティの変更をサイト履歴を削除せずに許可している。安全を期すために、IPアドレスが変わるときはコンテンツを同じに保ち、その逆も同様にすべきだ。まだそれほどランクが蓄積されていなくても、サイトが後で人気になった場合、元の開始日が非常に重要になる。

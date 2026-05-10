@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin 0.3.18リリース"
+title: "[bitcoin-list] Bitcoin 0.3.18 リリース"
 date: 2010-12-08T23:09:45Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがBitcoin 0.3.18のリリースをメーリングリストに告知。wallet.datの互換性修正とギャビンのアカウントベースJSON-RPCコマンドを搭載。"
+description: "サトシが Bitcoin 0.3.18 のリリースをメーリングリストに告知。wallet.dat の互換性修正とギャビンのアカウントベース JSON-RPC コマンドを搭載。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -24,14 +24,14 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-バージョン0.3.18が利用可能になった。
+バージョン 0.3.18 が利用可能になった。
 
 変更点：
-- 0.3.17からダウングレードして再度アップグレードした場合のwallet.dat互換性の問題を修正
-- ブロックに既知のトランザクションタイプのみを含めるIsStandard()チェックを追加
-- Jgarzikによる初期ブロックダウンロードを若干高速化する最適化
+- 0.3.17 からダウングレードして再度アップグレードした場合の wallet.dat 互換性の問題を修正
+- ブロックに既知のトランザクションタイプのみを含める IsStandard()チェックを追加
+- Jgarzik による初期ブロックダウンロードを若干高速化する最適化
 
-今回のリリースの主な追加機能は、Gavinが開発してきたアカウントベースのJSON-RPCコマンドだ（詳細は http://www.bitcoin.org/smf/index.php?topic=1886.0 を参照）。
+今回のリリースの主な追加機能は、Gavin が開発してきたアカウントベースの JSON-RPC コマンドだ（詳細は http://www.bitcoin.org/smf/index.php?topic=1886.0 を参照）。
 - getaccountaddress
 - sendfrom
 - move

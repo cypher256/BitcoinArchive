@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-02-15T06:28:38.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Proof-of-work難易度の上昇」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Proof-of-work 難易度の上昇」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -25,4 +25,4 @@ translationStatus: complete
 04/02/2010  1.82   +36%<br>
 14/02/2010  2.53   +39%
 
-昨日また難易度が大きく上昇し、1.82倍から2.53倍になった。10日前から39%の増加だ。14日ではなく10日間隔だったのは、より多くのノードが参加し、2016ブロックをより短時間で生成したためだ。
+昨日また難易度が大きく上昇し、1.82倍から 2.53倍になった。10日前から 39%の増加だ。14日ではなく 10日間隔だったのは、より多くのノードが参加し、2016 ブロックをより短時間で生成したためだ。

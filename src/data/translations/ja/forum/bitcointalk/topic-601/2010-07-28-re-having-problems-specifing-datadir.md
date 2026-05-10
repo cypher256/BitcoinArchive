@@ -1,5 +1,5 @@
 ---
-title: "Re: -datadirの指定で問題が発生"
+title: "Re: -datadir の指定で問題が発生"
 date: 2010-07-28T20:58:26.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが-datadirの相対パス指定時のデータベースエラーを再現し、フルパスへの解決が必要と説明。"
+description: "サトシ・ナカモトが-datadir の相対パス指定時のデータベースエラーを再現し、フルパスへの解決が必要と説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -22,4 +22,4 @@ translationStatus: complete
 
 データベースに渡す前にフルパスに解決すべきだろう。
 
--datadirで相対パスを使ったのはあなたが初めてのようだ。
+-datadir で相対パスを使ったのはあなたが初めてのようだ。

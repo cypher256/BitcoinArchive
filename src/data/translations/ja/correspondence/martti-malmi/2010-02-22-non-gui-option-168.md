@@ -1,5 +1,5 @@
 ---
-title: "Re: 非GUIオプション"
+title: "Re: 非 GUI オプション"
 date: 2010-02-22T20:17:42Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがwxApp::Initializeのサブクラス化でディスプレイなしでの実行に成功したことを報告し、-daemonと-serverコマンドラインスイッチの命名について意見を求める。"
+description: "サトシが wxApp::Initialize のサブクラス化でディスプレイなしでの実行に成功したことを報告し、-daemon と-server コマンドラインスイッチの命名について意見を求める。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -39,10 +39,10 @@ quotes:
 
 <!-- speaker: Satoshi Nakamoto -->
 
-wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
+wxApp::Initialize で gtk-init-check を呼び出しているのが分かった。
 
-Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、戻り値を無視することができる。うまく動作しているようだ。
+Initialize をサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、戻り値を無視することができる。うまく動作しているようだ。
 
 コマンドラインスイッチの名前と説明について何か提案はあるか？伝統的な標準はあるか？今は以下を使っている：
--daemon（または-d）（RPCを有効にしてバックグラウンドで実行）
--server（RPCを有効にする）
+-daemon（または-d）（RPC を有効にしてバックグラウンドで実行）
+-server（RPC を有効にする）

@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.18"
+title: "Re: バージョン 0.3.18"
 date: 2010-12-09T17:03:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック2162におけるShadowOfHarbringerの文脈投稿。msg28549の後。"
+description: "BitcoinTalk トピック 2162 における ShadowOfHarbringer の文脈投稿。msg28549 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -32,6 +32,6 @@ translationStatus: complete
 > 例えば、送金額の小数点以下の数字に情報をエンコードしたり、「バニティプレート」のビットコインアドレスに情報をエンコードすることもできる。
 
 もちろんそうだ。だが俺の言いたいことはそこじゃない。
-俺の言いたいのは、もしBitcoinプロトコルが設計上、追加データを保存できるようになっていたら、政府は「追加データ（児童ポルノを含む）を保存できる――プロトコルがそう設計されており、デフォルトクライアントもそれを許可している」と論じる材料を得る、ということだ。
+俺の言いたいのは、もし Bitcoin プロトコルが設計上、追加データを保存できるようになっていたら、政府は「追加データ（児童ポルノを含む）を保存できる――プロトコルがそう設計されており、デフォルトクライアントもそれを許可している」と論じる材料を得る、ということだ。
 
-デフォルトクライアントからこの可能性を取り除くことで、その論拠を奪うことができ、Bitcoinは「児童ポルノ・プロパガンダ攻撃」に対してずっと耐性を持つようになる。
+デフォルトクライアントからこの可能性を取り除くことで、その論拠を奪うことができ、Bitcoin は「児童ポルノ・プロパガンダ攻撃」に対してずっと耐性を持つようになる。

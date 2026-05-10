@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがBitweaverのIS_LIVE設定とSourceForgeホスティングの遅さを説明し、Boostのクロスプラットフォーム対応スレッド・ソケットライブラリの使用をサトシに提案する。"
+description: "マルミが Bitweaver の IS_LIVE 設定と SourceForge ホスティングの遅さを説明し、Boost のクロスプラットフォーム対応スレッド・ソケットライブラリ使用をサトシに提案。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -32,9 +32,9 @@ quotes:
 ---
 
 <!-- speaker: Martti Malmi -->
-IS_LIVEオプションは確かにfalseに設定されていましたが、ユーザーへのエラーメッセージの表示にしか影響しません。サイトが時々遅くなることに気づいていて、読み込みに最大30秒かかることもあります。SourceForgeのホスティングに関連していると思います。Bitweaverは最も軽量なPHP CMSの一つのはずですが、何か問題がないか確認してみます。
+IS_LIVE オプションは確かに false に設定されていましたが、ユーザーへのエラーメッセージの表示にしか影響しません。サイトが時々遅くなることに気づいていて、読み込みに最大 30秒かかることもあります。SourceForge のホスティングに関連していると思います。Bitweaver は最も軽量な PHP CMS の一つのはずですが、何か問題がないか確認してみます。
 
-話は変わりますが、Windows固有のものの代わりにBoostのスレッドとソケットライブラリを使うことはできると思いますか？コードに他にWindows専用の関数は使われていますか？
+話は変わりますが、Windows 固有のものの代わりに Boost のスレッドとソケットライブラリを使うことはできると思いますか？コードに他に Windows 専用の関数は使われていますか？
 
 <!-- speaker: Satoshi Nakamoto -->
 > 何が起きているか分かる？自分が見るたびに正常なんだけど。

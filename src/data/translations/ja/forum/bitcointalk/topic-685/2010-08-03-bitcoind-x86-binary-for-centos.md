@@ -1,5 +1,5 @@
 ---
-title: "CentOS用Bitcoind x86バイナリ"
+title: "CentOS 用 Bitcoind x86 バイナリ"
 date: 2010-08-03T01:33:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "nimnul"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "nimnulがスレッドを開始: CentOS用Bitcoind x86バイナリ"
+description: "nimnul がスレッドを開始: CentOS 用 Bitcoind x86 バイナリ"
 isSatoshi: false
 tags: []
 translationStatus: complete

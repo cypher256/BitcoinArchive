@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-06-22T16:04:46.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック43におけるギャビン・アンドレセンの文脈投稿。msg1669の前。"
+description: "BitcoinTalk トピック 43 におけるギャビン・アンドレセンの文脈投稿。msg1669 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

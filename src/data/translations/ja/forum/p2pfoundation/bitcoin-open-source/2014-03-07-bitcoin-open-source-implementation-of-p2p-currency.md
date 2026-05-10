@@ -1,5 +1,5 @@
 ---
-title: "ビットコイン：P2P通貨のオープンソース実装"
+title: "ビットコイン：P2P 通貨のオープンソース実装"
 date: 2014-03-07T01:17:00.000Z
 type: "forum-post"
 source: "p2pfoundation"
@@ -9,7 +9,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "数年間の沈黙を破り、サトシ・ナカモトがP2P Foundationフォーラムに短い投稿を行い、Newsweekの報道で特定されたドリアン・ナカモトが自分ではないと否定しました。"
+description: "数年間の沈黙を破り、サトシ・ナカモトが P2P Foundation フォーラムに短い投稿を行い、Newsweek の報道で特定されたドリアン・ナカモトが自分ではないと否定しました。"
 isSatoshi: true
 tags:
   - "identity"

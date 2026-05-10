@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-07-04T21:52:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成 -- Mac版をテストしてください！」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成 -- Mac 版をテストしてください！」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-Laszloのビルドが初のMacリリースになるので、テストしてほしい！
+Laszlo のビルドが初の Mac リリースになるので、テストしてほしい！

@@ -10,7 +10,7 @@ participants:
     slug: "andy-3-913"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "andy_3_913がスレッドを開始: リソースの大量消費"
+description: "andy_3_913 がスレッドを開始: リソースの大量消費"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -23,6 +23,6 @@ translationStatus: complete
 まったく、システムが糖蜜の中を歩いているかのように遅くなる！！
 
 大したシステムではないが、
-Pentium D、各CPU 2.8 MHz
+Pentium D、各 CPU 2.8 MHz
 3 GB RAM
 Windows 7 Home 64

@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoindがRPCに応答しない"
+title: "Re: bitcoind が RPC に応答しない"
 date: 2010-07-24T01:15:58.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「bitcoindがRPCに応答しない」におけるサトシ・ナカモトの返信。"
+description: "スレッド「bitcoind が RPC に応答しない」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-HTTP経由のJSON-RPCで、応答がエラーの場合にステータス500を使うべきかどうか、確認できる方はいるだろうか？どこでそれを知ったか思い出せず、間違っているかもしれない。HTTPリクエスト自体のメカニズムに問題がない限り、200の方が理にかなっているように思える。（もしかしたら、そういう意味だったのに忘れて500をすべてのエラーレスポンスに適用してしまったのかもしれない）
+HTTP 経由の JSON-RPC で、応答がエラーの場合にステータス 500 を使うべきかどうか、確認できる方はいるだろうか？どこでそれを知ったか思い出せず、間違っているかもしれない。HTTP リクエスト自体のメカニズムに問題がない限り、200 の方が理にかなっているように思える。（もしかしたら、そういう意味だったのに忘れて 500 をすべてのエラーレスポンスに適用してしまったのかもしれない）

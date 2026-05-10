@@ -30,7 +30,7 @@ quotes:
 今は常にウェブサイトを確認しなければならず、それは良くないと思う。
 同意する。長い間やりたかったのだが、やる時間がなかった。
 
-今のところ、bitcoin-listメーリングリストに登録することもできる。このようなお知らせや主要な新バージョン以外ではほとんど使われていない。
+今のところ、bitcoin-list メーリングリストに登録することもできる。このようなお知らせや主要な新バージョン以外ではほとんど使われていない。
 
 登録/解除ページ：
 [http://lists.sourceforge.net/mailman/listinfo/bitcoin-list](http://lists.sourceforge.net/mailman/listinfo/bitcoin-list)

@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがウォレット保存場所（%appdata%\\Bitcoin）を明かし、トランザクショナルDB（DBM）でクラッシュや停電に安全と説明、次回リリースのソケットクリーンアップ追加も確認。"
+description: "サトシがウォレット保存場所（%appdata%\\Bitcoin）を明かし、トランザクショナル DB（DBM）でクラッシュや停電に安全と説明、次回リリースのソケットクリーンアップ追加も確認。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -32,7 +32,7 @@ translationStatus: complete
 > ファイルは「%appdata%\Bitcoin」にある。バックアップすべきディレクトリはそこである。データはトランザクショナルデータベースDBMに保存されているため、クラッシュや停電が発生してもデータ損失からは安全なはずである。
 
 <!-- speaker: narrator -->
-サトシは、%appdata%がFirefoxなどの最新プログラムが設定に使用するユーザーごとのディレクトリであると説明した。ただし、MicrosoftがWindowsのリリースごとにその名前を変更し、スペースだらけで、画面からはみ出すほど長いことに言及した。
+サトシは、%appdata%が Firefox などの最新プログラムが設定に使用するユーザーごとのディレクトリであると説明した。ただし、Microsoft が Windows のリリースごとにその名前を変更し、スペースだらけで、画面からはみ出すほど長いことに言及した。
 
 トランメルが報告していたソケットの不正切断については：
 

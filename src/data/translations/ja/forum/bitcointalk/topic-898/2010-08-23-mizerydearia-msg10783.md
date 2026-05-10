@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック898におけるmizerydearia の投稿。"
+description: "BitcoinTalk トピック 898 における mizerydearia の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -33,4 +33,4 @@ quotes:
 > オープンソースだ！サトシを信頼しない、または強制されると思うなら、彼の鍵を自分のものに置き換えて、自分のノードをシャットダウンする権限を自分だけに持たせればいい。
 <!-- /tone-skip -->
 
-全員が鍵を変更したり新しいバージョンにアップグレードしたりするのは大変な作業だ。0.3.0やおそらくそれ以前の古いバージョンをまだ使っている人がいることからも、それは認識されるべきだ。
+全員が鍵を変更したり新しいバージョンにアップグレードしたりするのは大変な作業だ。0.3.0 やおそらくそれ以前の古いバージョンをまだ使っている人がいることからも、それは認識されるべきだ。

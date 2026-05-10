@@ -1,5 +1,5 @@
 ---
-title: "Re: 認証、JSON RPCとPython"
+title: "Re: 認証、JSON RPC と Python"
 date: 2010-08-03T18:56:44.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック689におけるギャビン・アンドレセンの投稿。"
+description: "BitcoinTalk トピック 689 におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -25,4 +25,4 @@ quotes:
 > bitcoinはContent-Lengthヘッダーを必要とするが、いくつかのJSON-RPCライブラリはそれを提供しない。Content-Lengthヘッダーがない場合、bitcoinは500 Internal Server Errorを返す。
 <!-- /tone-skip -->
 
-どのJSONライブラリがContent-Lengthを提供しないか、もう少し具体的に教えてもらえないか？ドキュメントに記載できると助かる。
+どの JSON ライブラリが Content-Length を提供しないか、もう少し具体的に教えてもらえないか？ドキュメントに記載できると助かる。

@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック615におけるギャビン・アンドレセンの文脈投稿。msg6512の前。"
+description: "BitcoinTalk トピック 615 におけるギャビン・アンドレセンの文脈投稿。msg6512 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -26,4 +26,4 @@ quotes:
 > 待つべきなのか、これは単に異常に時間がかかるトランザクションなのか？
 <!-- /tone-skip -->
 
-まだブロックチェーンをダウンロード中ではないか？ブロックチェーンの70,000以上のブロックをすべて持っていなければ、追いつくまでトランザクションは確認済みとして表示されない。
+まだブロックチェーンをダウンロード中ではないか？ブロックチェーンの 70,000 以上のブロックをすべて持っていなければ、追いつくまでトランザクションは確認済みとして表示されない。

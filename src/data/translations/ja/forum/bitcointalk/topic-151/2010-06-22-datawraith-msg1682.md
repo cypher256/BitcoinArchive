@@ -8,7 +8,7 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック151におけるDataWraithの文脈投稿。msg1600の後。"
+description: "BitcoinTalk トピック 151 における DataWraith の文脈投稿。msg1600 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

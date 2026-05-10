@@ -1,5 +1,5 @@
 ---
-title: "ウェイ・ダイのサトシ・ナカモトとb-moneyに関する回顧的発言"
+title: "ウェイ・ダイのサトシ・ナカモトと b-money に関する回顧的発言"
 date: 2014-01-12T00:00:00Z
 type: "article"
 source: "lesswrong"
@@ -41,7 +41,7 @@ translationStatus: complete
 
 *LessWrong「Ask Any LessWronger Anything」（AALWA）スレッド、2014年1月12日より：*
 
-ウェイ・ダイ — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がサトシ・ナカモトについての考察を共有した：
+ウェイ・ダイ — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がサトシ・ナカモトについての考察を共有した：
 
 **独立した発明について：**
 
@@ -63,11 +63,11 @@ translationStatus: complete
 
 ---
 
-*同じAALWAスレッドより、2014年3月15日：*
+*同じ AALWA スレッドより、2014年3月15日：*
 
-b-moneyをなぜ実装しなかったのかという質問に対し、ダイは次のように説明した。
+b-money をなぜ実装しなかったのかという質問に対し、ダイは次のように説明した。
 
-**b-moneyの未完成な設計について：**
+**b-money の未完成な設計について：**
 
 > 「一つには、b-moneyがまだ完全な実用的設計ではなかったからです」
 

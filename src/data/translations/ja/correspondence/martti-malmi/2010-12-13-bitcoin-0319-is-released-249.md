@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] Bitcoin 0.3.19リリース"
+title: "[bitcoin-list] Bitcoin 0.3.19 リリース"
 date: 2010-12-13T16:11:53Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがBitcoin 0.3.19マイナーリリースをメーリングリストに告知。初期的なDoS対策の追加とセーフモードアラートの削除を実施。"
+description: "サトシが Bitcoin 0.3.19 マイナーリリースをメーリングリストに告知。初期的な DoS 対策の追加とセーフモードアラートの削除を実施。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -24,10 +24,10 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-DoS対策を追加するマイナーリリースだ。
+DoS 対策を追加するマイナーリリースだ。
 
 変更点：
-- いくつかのDoS制限を追加した。ただし、完全なDoS耐性にはまだ程遠い状態だ。
+- いくつかの DoS 制限を追加した。ただし、完全な DoS 耐性にはまだ程遠い状態だ。
 - 「セーフモード」アラートを削除した。
 
 http://www.bitcoin.org/smf/index.php?topic=2228.0

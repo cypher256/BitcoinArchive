@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "アダム・バックが2008年8月のサトシ・ナカモトとのメール交換、ビットコインホワイトペーパーを注意深く読まなかったことへの後悔、完全なメールチェーンが公開されたCOPA対ライト裁判での証言を振り返る。"
+description: "アダム・バックが 2008年8月のサトシとのメール交換、ホワイトペーパーを精読しなかった後悔、メールが公開された COPA 対ライト裁判での証言を振り返る。"
 isSatoshi: false
 tags:
   - "adam-back"
@@ -43,7 +43,7 @@ translationStatus: complete
 
 **2008年8月のメール交換について：**
 
-2008年8月、サトシは[バックにHashcash論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)のb-money提案を参照するよう提案した。
+2008年8月、サトシは[バックに Hashcash 論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を参照するよう提案した。
 
 > 「b-moneyを調べるよう提案した。その時点では知らなかったようだ」
 
@@ -55,16 +55,16 @@ translationStatus: complete
 
 > 「ビットコインホワイトペーパーを最初に注意深く読まなかった。あれが、おそらく私の最大の失敗だった」
 
-バックは添付されたホワイトペーパーを開き、ざっと目を通し、ウェイ・ダイのb-moneyを提案する簡潔な返信を打って、ラップトップを閉じた。ビットコインを積極的に使い始めたのは2013年頃からだった。
+バックは添付されたホワイトペーパーを開き、ざっと目を通し、ウェイ・ダイの b-money を提案する簡潔な返信を打って、ラップトップを閉じた。ビットコインを積極的に使い始めたのは 2013年頃からだった。
 
-**ビットコインへの初期の疑念（CoinSharesインタビュー）：**
+**ビットコインへの初期の疑念（CoinShares インタビュー）：**
 
 > 「持続可能性に疑問があった。2009年当時、取引所もなく、価値もなかった。以前のシステムは中央集権化や検証不可能な発行で失敗していたが、ビットコインの分散モデルはより良い道を約束していた」
 
 > 「それらの経験から、他が失敗したところで成功するには分散化が不可欠だと明確になった」
 
-**COPA裁判での証言（2024年2月21日）：**
+**COPA 裁判での証言（2024年2月21日）：**
 
-[COPA対クレイグ・ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、バックはロンドン高等法院で直接証言し、サトシとの完全な5通のメールチェーンを証拠として提出した。2008年8月20日以降のメールが初めて公開された。
+[COPA 対クレイグ・ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、バックはロンドン高等法院で直接証言し、サトシとの完全な 5 通のメールチェーンを証拠として提出した。2008年8月20日以降のメールが初めて公開された。
 
-*[補足：バックは2014年にBlockstreamを設立し、最も著名なビットコインインフラ企業の一つとなった。早期に関与しなかったことへの後悔にもかかわらず、彼のHashcashの発明はビットコインのプルーフ・オブ・ワーク合意メカニズムの基本的な構成要素であり続けている。]*
+*[補足：バックは 2014年に Blockstream を設立し、最も著名なビットコインインフラ企業の一つとなった。早期に関与しなかったことへの後悔にもかかわらず、彼の Hashcash の発明はビットコインのプルーフ・オブ・ワーク合意メカニズムの基本的な構成要素であり続けている。]*

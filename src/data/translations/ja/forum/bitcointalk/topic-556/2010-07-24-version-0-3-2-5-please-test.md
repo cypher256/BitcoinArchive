@@ -16,11 +16,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.3リリースに向けて0.3.2.5をテストしてくれ！このビルドは良好で、0.3.3に含まれるものになるはずだ。WindowsまたはLinuxをお使いの方は、今すぐアップグレードすることをお勧めする。
+0.3.3 リリースに向けて 0.3.2.5 をテストしてくれ！このビルドは良好で、0.3.3 に含まれるものになるはずだ。Windows または Linux をお使いの方は、今すぐアップグレードすることをお勧めする。
 
 新機能:
-- ギャビン・アンドレセンによるJSON-RPCセキュリティのためのHTTP認証
-- 初期ブロックダウンロードが5倍高速化、30分以内に完了
+- ギャビン・アンドレセンによる JSON-RPC セキュリティのための HTTP 認証
+- 初期ブロックダウンロードが 5倍高速化、30分以内に完了
 
 こちらからダウンロード:
 [http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip](http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip)

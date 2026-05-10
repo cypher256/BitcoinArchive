@@ -1,5 +1,5 @@
 ---
-title: "wxWidgetsなしのbitcoind"
+title: "wxWidgets なしの bitcoind"
 date: 2010-07-26T17:23:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿: \"wxWidgetsなしのbitcoind\"."
+description: "サトシ・ナカモトの投稿: \"wxWidgets なしの bitcoind\"."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,12 +16,12 @@ secondarySources:
 translationStatus: complete
 ---
 
-bitcoindの残りわずかなwxBase依存を置き換えた。
+bitcoind の残りわずかな wxBase 依存を置き換えた。
 
-bitcoindはSVNリビジョン112でwxWidgetsやwxBaseなしでコンパイルできるようになった。
+bitcoind は SVN リビジョン 112 で wxWidgets や wxBase なしでコンパイルできるようになった。
 
-main(int argc, char* argv[])がinit.cppに追加された。CMyAppとスタートアップフォルダー関連のコードはui.cppに移動された。ui.cppとuibase.cppはbitcoindではリンクされない。
+main(int argc, char* argv[])が init.cpp に追加された。CMyApp とスタートアップフォルダー関連のコードは ui.cpp に移動された。ui.cpp と uibase.cpp は bitcoind ではリンクされない。
 
-MakefileではGUIの使用を制御するために-DGUIを使用している。
+Makefile では GUI の使用を制御するために-DGUI を使用している。
 
-MinGW、VC、Ubuntuでテストコンパイルした。Mac OS Xのビルドを壊していないかわからないので、誰かが確認する必要がある。
+MinGW、VC、Ubuntu でテストコンパイルした。Mac OS X のビルドを壊していないかわからないので、誰かが確認する必要がある。

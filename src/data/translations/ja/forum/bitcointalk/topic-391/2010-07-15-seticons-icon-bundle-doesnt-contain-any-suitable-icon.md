@@ -10,14 +10,14 @@ participants:
     slug: "ericj2190"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "EricJ2190がスレッドを開始: \"SetIcons(): icon bundle doesn't contain any suitable icon\""
+description: "EricJ2190 がスレッドを開始: \"SetIcons(): icon bundle doesn't contain any suitable icon\""
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Windowsで「コインを送る」または「受取用アドレス」を開くと、以下のメッセージが表示されます。
+Windows で「コインを送る」または「受取用アドレス」を開くと、以下のメッセージが表示されます。
 
 「キャンセル」をクリックすると消すことができ、すべて正常に動作しますが、やはり少し煩わしいです。
 
-Windows Vista SP2 x64上でBitCoin 0.3.0を使用しています。
+Windows Vista SP2 x64 上で BitCoin 0.3.0 を使用しています。

@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがbitcoin-listメーリングリストに緊急アラートを発し、重大な問題の調査中ブロック 74638以降のトランザクションを信用しないよう警告。"
+description: "サトシが bitcoin-list メーリングリストに緊急アラートを発し、重大な問題の調査中ブロック 74638 以降のトランザクションを信用しないよう警告。"
 isSatoshi: true
 tags:
   - "correspondence"

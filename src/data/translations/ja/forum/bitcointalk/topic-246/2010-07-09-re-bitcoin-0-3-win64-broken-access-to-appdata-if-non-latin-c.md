@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
+title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合"
 date: 2010-07-09T03:01:35.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合」におけるサトシ・ナカモトの返信。"
+description: "スレッド「bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-問題の場所が分かったと思う。偶然にも、最近、問題の関数の代替を書いたところで、これで修正されるはずだ。まだ有効にしていないが、SVNバージョンではdebug.logに新しいディレクトリ値と古い値を比較用に表示するデバッグメッセージが出力される。
+問題の場所が分かったと思う。偶然にも、最近、問題の関数の代替を書いたところで、これで修正されるはずだ。まだ有効にしていないが、SVN バージョンでは debug.log に新しいディレクトリ値と古い値を比較用に表示するデバッグメッセージが出力される。

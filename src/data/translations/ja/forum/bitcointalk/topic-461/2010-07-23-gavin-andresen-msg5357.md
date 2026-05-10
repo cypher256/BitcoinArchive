@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-23T18:51:34.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。msg5383の前。"
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg5383 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,6 +24,6 @@ quotes:
 > パスワードは絶対に必須にすべきではない。
 <!-- /tone-skip -->
 
-強く反対する。ソフトウェアはデフォルトで安全であるべきであり、パスワードなしでbitcoindを実行する（またはbitcoin -server）のは明らかに安全ではない。
+強く反対する。ソフトウェアはデフォルトで安全であるべきであり、パスワードなしで bitcoind を実行する（または bitcoin -server）のは明らかに安全ではない。
 
-「設定ファイルにパスワードを追加しないとデーモンとして実行できないからBitcoinはダメだ」と言う人はまずいないだろう。「うっかり-serverスイッチを付けて実行したら誰かに全額盗まれたからBitcoinはダメだ」と言う人は**大いに**あり得る。
+「設定ファイルにパスワードを追加しないとデーモンとして実行できないから Bitcoin はダメだ」と言う人はまずいないだろう。「うっかり-server スイッチを付けて実行したら誰かに全額盗まれたから Bitcoin はダメだ」と言う人は**大いに**あり得る。

@@ -1,5 +1,5 @@
 ---
-title: "Re: WikipediaのBitcoin記事"
+title: "Re: Wikipedia の Bitcoin 記事"
 date: 2010-07-19T22:27:32.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック342におけるNewLibertyStandardの投稿。"
+description: "BitcoinTalk トピック 342 における NewLibertyStandard の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Bitcoinの背後にあるアイデアは、何年も前から研究論文に存在していた。そうした研究論文を出典として挙げることは可能だろう。Bitcoinは、かなり以前から存在していたこの理論的なアイデアが実際に実装された初めてのケースだ。今のところ出典を手元に持っていないが、時間があれば探してみる。Bitcoinが始まる前のこれらの歴史的な研究論文や議論を見つけた人がいれば、リンクを投稿してほしい。
+Bitcoin の背後にあるアイデアは、何年も前から研究論文に存在していた。そうした研究論文を出典として挙げることは可能だろう。Bitcoin は、かなり以前から存在していたこの理論的なアイデアが実際に実装された初めてのケースだ。今のところ出典を手元に持っていないが、時間があれば探してみる。Bitcoin が始まる前のこれらの歴史的な研究論文や議論を見つけた人がいれば、リンクを投稿してほしい。

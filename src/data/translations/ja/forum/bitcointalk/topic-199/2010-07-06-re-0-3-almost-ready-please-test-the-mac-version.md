@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-07-06T19:43:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成 -- Mac版をテストしてください！」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成 -- Mac 版をテストしてください！」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,5 +16,5 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3リリースした
+0.3 リリースした
 [topic 238](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-238/2010-07-06-bitcoin-0-3-released/)

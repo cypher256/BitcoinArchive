@@ -8,10 +8,10 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック48におけるSmokeTooMuchの文脈投稿。msg327で引用。"
+description: "BitcoinTalk トピック 48 における SmokeTooMuch の文脈投稿。msg327 で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-なぜ手数料が必要なんだ？ 手数料不要がbitcoinの利点の一つだと思っていたが！？
+なぜ手数料が必要なんだ？ 手数料不要が bitcoin の利点の一つだと思っていたが！？

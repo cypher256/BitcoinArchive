@@ -1,5 +1,5 @@
 ---
-title: "bitcoin.orgの障害の原因は？"
+title: "bitcoin.org の障害の原因は？"
 date: 2010-12-02T22:00:56Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがbitcoin.orgの障害原因をマルミに尋ね、ミラーバックアップの導入を含むバックアップ体制について確認。"
+description: "サトシが bitcoin.org の障害原因をマルミに尋ね、ミラーバックアップの導入を含むバックアップ体制について確認。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -24,6 +24,6 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-あの障害の原因は分かったか？再起動が必要だったのか、それともDoS攻撃か何かだったのか？障害中もIPにはpingが通っていた。
+あの障害の原因は分かったか？再起動が必要だったのか、それとも DoS 攻撃か何かだったのか？障害中も IP には ping が通っていた。
 
-davidonpdaにミラーバックアップの件で返事はしたか？とても良いアイデアだと思う。バックアップは取っているか、それともVPSが自動的にバックアップしてくれるか？
+davidonpda にミラーバックアップの件で返事はしたか？とても良いアイデアだと思う。バックアップは取っているか、それとも VPS が自動的にバックアップしてくれるか？

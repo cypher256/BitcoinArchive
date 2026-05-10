@@ -1,5 +1,5 @@
 ---
-title: "Re: UIの改善"
+title: "Re: UI の改善"
 date: 2010-02-24T02:27:58.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック60におけるThe Madhatterの文脈投稿。after msg446, サトシを引用."
+description: "BitcoinTalk トピック 60 における The Madhatter の文脈投稿。after msg446, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -20,7 +20,7 @@ quotes:
 translationStatus: complete
 ---
 
-0.2をFreeBSD上でGUIあり・なしの両方で動かしている。OSX 10.4.11でも動かす一歩手前まで来ている。たしかにUTFの問題でビルドエラーに行き当たった。近いうちにまた試してみる。手元にはIntel MacとPPC Macの両方がある。両方のプラットフォーム向けにビルドをリリースすべきだろう。
+0.2 を FreeBSD 上で GUI あり・なしの両方で動かしている。OSX 10.4.11 でも動かす一歩手前まで来ている。たしかに UTF の問題でビルドエラーに行き当たった。近いうちにまた試してみる。手元には Intel Mac と PPC Mac の両方がある。両方のプラットフォーム向けにビルドをリリースすべきだろう。
 
 ピース！😊
 

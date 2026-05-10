@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック661におけるthroughputの文脈投稿。msg7356の後。"
+description: "BitcoinTalk トピック 661 における throughput の文脈投稿。msg7356 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

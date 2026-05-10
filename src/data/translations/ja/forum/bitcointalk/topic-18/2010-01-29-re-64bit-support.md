@@ -1,5 +1,5 @@
 ---
-title: "Re: 64ビットサポート"
+title: "Re: 64 ビットサポート"
 date: 2010-01-29T00:42:49.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「64ビットサポート」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「64 ビットサポート」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,18 +16,18 @@ secondarySources:
 translationStatus: complete
 ---
 
-64ビットコンパイルの修正と、wxWidgets 2.9.0をサポートするためのいくつかの修正をSVNにコミットした。
+64 ビットコンパイルの修正と、wxWidgets 2.9.0 をサポートするためのいくつかの修正を SVN にコミットした。
 
-64ビット用にserialize.hのmin(sizeof())にコンパイルエラーが1つあり、それを修正した。残りの64ビットコンパイルエラーはwxWidgets 2.8.9で発生していたため、wxWidgets 2.9.0のサポートに取り組み始めた。
+64 ビット用に serialize.h の min(sizeof())にコンパイルエラーが 1 つあり、それを修正した。残りの 64 ビットコンパイルエラーは wxWidgets 2.8.9 で発生していたため、wxWidgets 2.9.0 のサポートに取り組み始めた。
 
-wxWidgets 2.9.0はUTF-8だ。wxWidgetsのUTF-8サポートを見越して、wxWidgets 2.8.9のANSIバージョンを使用してきた。
+wxWidgets 2.9.0 は UTF-8 だ。wxWidgets の UTF-8 サポートを見越して、wxWidgets 2.8.9 の ANSI バージョンを使用してきた。
 
-64ビットのUbuntu 9.10 Karmicでコンパイルして実行した。
+64 ビットの Ubuntu 9.10 Karmic でコンパイルして実行した。
 
-残っているバグはステータスの数値が崩れる問題だけだと思う。原因はわからないが、UTF-8関連の可能性があるが、どうしてそうなるかは見当もつかない。まだ調べていない。
+残っているバグはステータスの数値が崩れる問題だけだと思う。原因はわからないが、UTF-8 関連の可能性があるが、どうしてそうなるかは見当もつかない。まだ調べていない。
 
-build-unix.txtが更新され、SVNに2つのmakefileがあります：
+build-unix.txt が更新され、SVN に 2 つの makefile があります：
 makefile.unix.wx2.8
 makefile.unix.wx2.9
 
-残念ながら、私たちが使用するどちらのバージョンのwxWidgetsにもまだDebianパッケージがない。wchar（「unicode」）版のwxWidgets 2.8しかなく、wcharのwxStringはstd::stringに変換できないため問題だ。私たちはANSIのwxWidgets 2.8、またはwxWidgets 2.9のいずれかを使用している。なので、まだ自分で取得してビルドする必要がある。
+残念ながら、私たちが使用するどちらのバージョンの wxWidgets にもまだ Debian パッケージがない。wchar（「unicode」）版の wxWidgets 2.8 しかなく、wchar の wxString は std::string に変換できないため問題だ。私たちは ANSI の wxWidgets 2.8、または wxWidgets 2.9 のいずれかを使用している。なので、まだ自分で取得してビルドする必要がある。

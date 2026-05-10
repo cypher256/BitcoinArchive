@@ -1,5 +1,5 @@
 ---
-title: "Re: SVN r127のコンパイルエラー"
+title: "Re: SVN r127 のコンパイルエラー"
 date: 2010-08-11T01:42:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVNを更新し、将来的に同様の問題が繰り返される可能性を認める。"
+description: "サトシ・ナカモトが SVN を更新し、将来的に同様の問題が繰り返される可能性を認める。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVNを更新した。ありがとう。
+SVN を更新した。ありがとう。
 
 将来的にこの問題に繰り返しつまずかないようにする見込みはあまりない。私の環境ではコンパイルエラーにはならないので。

@@ -1,5 +1,5 @@
 ---
-title: "Re: UIの改善"
+title: "Re: UI の改善"
 date: 2010-02-23T01:16:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「UIの改善」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「UI の改善」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,10 +18,10 @@ translationStatus: complete
 
 アドレス帳に「送信」と「受信」のタブができた。あなたのアドレスは「受信アドレス」と呼ばれる。
 
-madhatterがMacでのビルドに取り組んでいた。UTF-16のwxWidgets 2.8が原因と思われるエラーが出ていた。2.9.0では改善されるはずだ。wxWidgets 2.9.0はUTF-8なので、その問題は起きないだろう。
+madhatter が Mac でのビルドに取り組んでいた。UTF-16 の wxWidgets 2.8 が原因と思われるエラーが出ていた。2.9.0 では改善されるはずだ。wxWidgets 2.9.0 は UTF-8 なので、その問題は起きないだろう。
 
-FreeBSDでは動作していたと思うが、非UIバージョンを希望していた。
+FreeBSD では動作していたと思うが、非 UI バージョンを希望していた。
 
-コマンドラインとJSON-RPCのデーモン版が動作するようになった。1〜2日中にSVNにコミットする。
+コマンドラインと JSON-RPC のデーモン版が動作するようになった。1〜2日中に SVN にコミットする。
 
-UbuntuシステムでGDMを無効にしてコマンドラインで起動するようにした。rcconfで再度有効にできることを願っている。
+Ubuntu システムで GDM を無効にしてコマンドラインで起動するようにした。rcconf で再度有効にできることを願っている。

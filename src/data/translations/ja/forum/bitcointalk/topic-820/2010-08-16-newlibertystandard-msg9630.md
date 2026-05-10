@@ -1,5 +1,5 @@
 ---
-title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載"
+title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載"
 date: 2010-08-16T01:49:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック820におけるNewLibertyStandardの文脈投稿。msg9655に引用。"
+description: "BitcoinTalk トピック 820 における NewLibertyStandard の文脈投稿。msg9655 に引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -23,4 +23,4 @@ quotes:
 > 結果を記録できるようにWikiページを作成した：http://www.bitcoin.org/wiki/doku.php?id=4-way_sse2
 <!-- /tone-skip -->
 
-ハイパースレッディングが有効かどうか、物理コア数、Bitcoinが使用しているコア数の列を追加した方がいい。4wayなしでは、仮想コアの半分でハッシュした方がわずかに良い結果が出る。4wayでは、すべての仮想コアを有効にするとパフォーマンスが大幅に向上する。ハイパースレッディングをオフにすると、4wayの有無にかかわらずほぼ同じハッシュ量になると思う。
+ハイパースレッディングが有効かどうか、物理コア数、Bitcoin が使用しているコア数の列を追加した方がいい。4way なしでは、仮想コアの半分でハッシュした方がわずかに良い結果が出る。4way では、すべての仮想コアを有効にするとパフォーマンスが大幅に向上する。ハイパースレッディングをオフにすると、4way の有無にかかわらずほぼ同じハッシュ量になると思う。

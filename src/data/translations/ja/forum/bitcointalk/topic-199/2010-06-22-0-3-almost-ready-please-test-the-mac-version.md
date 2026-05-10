@@ -1,5 +1,5 @@
 ---
-title: "0.3ほぼ完成 -- Mac版をテストしてください！"
+title: "0.3 ほぼ完成 -- Mac 版をテストしてください！"
 date: 2010-06-22T04:01:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿:「0.3ほぼ完成 -- Mac版をテストしてください！」"
+description: "サトシ・ナカモトの投稿:「0.3 ほぼ完成 -- Mac 版をテストしてください！」"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン0.3のやることリストをすべて完了した。SVN上のコードはリリース準備がほぼ整った。
+バージョン 0.3 のやることリストをすべて完了した。SVN 上のコードはリリース準備がほぼ整った。
 
 この時点でのテストは大変ありがたい。

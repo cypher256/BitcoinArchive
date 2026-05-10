@@ -1,5 +1,5 @@
 ---
-title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
+title: "Re: Linux 64 ビット用バージョン 0.3.8.1 アップデート"
 date: 2010-08-09T20:26:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック765におけるNewLibertyStandardの文脈投稿。msg8402の後。"
+description: "BitcoinTalk トピック 765 における NewLibertyStandard の文脈投稿。msg8402 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-difficultyはもう十分に高くなっているので、互換性の維持が困難なら古いコンピューターでのブロック生成サポートを切ってしまっても気にしない。とはいえ、なぜその機能が利用できないのかを説明するフィードバックは、クライアントが必ず提供すべきだ。古いハードウェアではbitcoinの生成がサポートされない理由を説明するメッセージをポップアップさせるといいかもしれない。
+difficulty はもう十分に高くなっているので、互換性の維持が困難なら古いコンピューターでのブロック生成サポートを切ってしまっても気にしない。とはいえ、なぜその機能が利用できないのかを説明するフィードバックは、クライアントが必ず提供すべきだ。古いハードウェアでは bitcoin の生成がサポートされない理由を説明するメッセージをポップアップさせるといいかもしれない。

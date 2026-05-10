@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin用URIスキーム"
+title: "Re: Bitcoin 用 URI スキーム"
 date: 2010-07-18T16:06:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「BitcoinのURIスキーム」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin の URI スキーム」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -37,8 +37,8 @@ quotes:
 > ええ、クロスドメインのJavaScript呼び出しは禁止されているということを言いたかったのです。つまり、127.0.0.1上にないJavaScriptから127.0.0.1を呼び出すことはできません。考えてみると、ブラウザーが悪意のあるクロスドメインJavaScriptに人々のFacebookページを変更させたら、かなり面白いことになりますね。
 <!-- /tone-skip -->
 
-JavaScriptが127.0.0.1へのクロスドメインPOSTリクエストを実行することが可能だという報告が入ってきた。他のドメインではなく、特にそのドメインだけだ。素晴らしい……
+JavaScript が 127.0.0.1 へのクロスドメイン POST リクエストを実行することが可能だという報告が入ってきた。他のドメインではなく、特にそのドメインだけだ。素晴らしい……
 
-もしこれが事実であれば、ウェブブラウジングをするシステムで-serverスイッチやbitcoindを使用しないでほしい。
+もしこれが事実であれば、ウェブブラウジングをするシステムで-server スイッチや bitcoind を使用しないでほしい。
 
 パスワードフィールドの追加に取りかかる。

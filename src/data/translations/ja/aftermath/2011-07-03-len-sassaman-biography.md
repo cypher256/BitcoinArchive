@@ -8,7 +8,7 @@ author: "Len Sassaman"
 participants:
   - name: "Len Sassaman"
     slug: "len-sassaman"
-description: "アメリカの暗号学者、サイファーパンク（1980-2011）。Mixmaster開発、KU Leuven博士課程。サトシ最後通信3か月後に自殺。後にサトシ仮説候補。"
+description: "アメリカの暗号学者、サイファーパンク（1980-2011）。Mixmaster 開発、KU Leuven 博士課程。サトシ最後通信 3 か月後に自殺。後にサトシ仮説候補。"
 isSatoshi: false
 tags:
   - "len-sassaman"
@@ -58,8 +58,8 @@ timeline
 サッサマンは十代の頃からサイファーパンクコミュニティで活動し、約 15 年にわたってプライバシー関連プロジェクトに貢献した：
 
 - **Mixmaster 匿名リメイラー** — サッサマンは Mixmaster のリード開発者・メンテナーになった。Mixmaster は通信解析を防ぐことを目的とした Type-II 匿名リメイラーであり、ランス・コットレルの初期作業の継続として、サイファーパンク時代の匿名性ツーリングの中核成果のひとつである。
-- **PGP社** — フィル・ジマーマンの Pretty Good Privacy ソフトウェアを商品化した会社で、初期サイファーパンクの一人である[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)などとともに勤務した。
-- **Anonymizer社** — 初期の商用匿名化サービス。
+- **PGP 社** — フィル・ジマーマンの Pretty Good Privacy ソフトウェアを商品化した会社で、初期サイファーパンクの一人である[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)などとともに勤務した。
+- **Anonymizer 社** — 初期の商用匿名化サービス。
 - **CodeCon** — BitTorrent の作者ブラム・コーエンと共同創設したカンファレンスシリーズ。新しいプライバシー・セキュリティ技術の動作するコードによる発表に焦点を当てた。
 - **KU ルーヴェン大学 COSIC** — 死亡時点で、ベルギーの KU ルーヴェン大学の Computer Security and Industrial Cryptography（COSIC）研究グループに博士課程在籍者として所属し、リメイラー設計と暗号プロトコルの研究を行っていた。
 

@@ -16,11 +16,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-poeditが何らかの理由でファイルを並べ替えてしまった。ソースからの更新を再実行したところ、元の順序に戻ったので問題ない。FATドライブやUSBフラッシュドライブなど、ファイルがアルファベット順にソートされないドライブで実行したか？
+poedit が何らかの理由でファイルを並べ替えてしまった。ソースからの更新を再実行したところ、元の順序に戻ったので問題ない。FAT ドライブや USB フラッシュドライブなど、ファイルがアルファベット順にソートされないドライブで実行したか？
 
 文字列はそれほど頻繁に追加や変更されない。十分な変更が蓄積されるまでに数ヶ月かかる。
 
 変更をアップロードした。
 
-このWindows版ビルドにはロシア語翻訳が含まれている：
+この Windows 版ビルドにはロシア語翻訳が含まれている：
 [http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe)

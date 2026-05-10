@@ -1,5 +1,5 @@
 ---
-title: "転送: Bitcoinホスティング"
+title: "転送: Bitcoin ホスティング"
 date: 2010-07-17T23:21:45Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがThufirからの安価なホスティング提案を転送し、Rackspaceとの費用差を比較しつつ、予定されている寄付次第ではRackspace継続も可能と述べる。"
+description: "マルミが Thufir からの安価なホスティング提案を転送し、Rackspace との費用差を比較しつつ、予定されている寄付次第では Rackspace 継続も可能と述べる。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -23,7 +23,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-Rackspaceはサポートが非常に良く、バックエンド、接続性も良好で、スケーリング性に優れたクラウドベースの仮想サーバーを提供しています。Thufirからこのような提案がありました：
+Rackspace はサポートが非常に良く、バックエンド、接続性も良好で、スケーリング性に優れたクラウドベースの仮想サーバーを提供しています。Thufir からこのような提案がありました：
 
 -----
 Hi Sirius,
@@ -31,22 +31,22 @@ Hi Sirius,
 www.citrusdesignstudio.com をご覧ください。ポートフォリオを通じて、多くのクライアントを持つ実在のビジネスであることが分かります。
 
 それが私のマネージドホスティングを提供するビジネスです。
-アンマネージドVPSも提供しています。
+アンマネージド VPS も提供しています。
 
-通常512MBで$15/月を請求しますが、
+通常 512MB で$15/月を請求しますが、
 あなたには$10/月で提供します。
 
 料金については www.linnode.com をご覧ください。素晴らしいパネル以外はすべて同等です ― メールか電話でご連絡いただく必要があります。
 
-通常、linnode.comの掲載価格の3/4でVPSサービスを提供しています。
-（Rackspaceはさらに高価です。）
+通常、linnode.com の掲載価格の 3/4 で VPS サービスを提供しています。
+（Rackspace はさらに高価です。）
 
-あなたにはlinnodeの価格の1/2で提供します。
+あなたには linnode の価格の 1/2 で提供します。
 
-linnodeと同様にリニアにスケールしますので、2048 MBのメモリーなら$40、といった具合です。
+linnode と同様にリニアにスケールしますので、2048 MB のメモリーなら$40、といった具合です。
 
 それでは！
 
 -----
 
-良いデータセンターと回線を持っているなら、検討に値すると思います。月$10はRackspaceの料金より約$20安いです。一方で、寄付が届くならRackspaceの料金は問題ありません。
+良いデータセンターと回線を持っているなら、検討に値すると思います。月$10 は Rackspace の料金より約$20 安いです。一方で、寄付が届くなら Rackspace の料金は問題ありません。

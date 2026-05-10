@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがbitcoin-listメーリングリストにBitcoin 0.3の公式リリースアナウンスを送付し、デーモンモードやJSON-RPCなどの新機能を紹介する。"
+description: "サトシが bitcoin-list メーリングリストに Bitcoin 0.3 の公式リリースアナウンスを送付し、デーモンモードや JSON-RPC などの新機能を紹介する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -24,16 +24,16 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-P2P暗号通貨Bitcoinのバージョン0.3をリリースする！Bitcoinは暗号技術と分散ネットワークを使用して、信頼できる中央サーバーの必要性を排除するデジタル通貨だ。中央管理された通貨の恣意的なインフレリスクから脱却しよう！Bitcoinの総発行量は2,100万コインに制限されている。コインは、ネットワークのノードが提供するCPUパワーに基づいて徐々にリリースされるため、アイドル状態のCPU時間を提供することでその一部を得ることができる。
+P2P 暗号通貨 Bitcoin のバージョン 0.3 をリリースする！Bitcoin は暗号技術と分散ネットワークを使用して、信頼できる中央サーバーの必要性を排除するデジタル通貨だ。中央管理された通貨の恣意的なインフレリスクから脱却しよう！Bitcoin の総発行量は 2,100 万コインに制限されている。コインは、ネットワークのノードが提供する CPU パワーに基づいて徐々にリリースされるため、アイドル状態の CPU 時間を提供することでその一部を得ることができる。
 
 新機能：
-- コマンドラインとJSON-RPCコントロール
-- GUIなしのデーモンバージョンを搭載
+- コマンドラインと JSON-RPC コントロール
+- GUI なしのデーモンバージョンを搭載
 - トランザクションフィルタータブ
-- ハッシング速度が20%向上
+- ハッシング速度が 20%向上
 - ハッシュメーターのパフォーマンス表示
-- Mac OS Xバージョン（Laszloに感謝）
-- ドイツ語、オランダ語、イタリア語の翻訳（DataWraith、Xunie、Joozeroに感謝）
+- Mac OS X バージョン（Laszlo に感謝）
+- ドイツ語、オランダ語、イタリア語の翻訳（DataWraith、Xunie、Joozero に感謝）
 
 www.bitcoin.org で入手し、フォーラムで詳細を確認してほしい。
 

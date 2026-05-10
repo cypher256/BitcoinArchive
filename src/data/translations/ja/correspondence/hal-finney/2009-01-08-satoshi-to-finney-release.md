@@ -1,5 +1,5 @@
 ---
-title: "サトシからハル・フィニーへ：Bitcoin v0.1リリースの個人的通知（2009-01-08）"
+title: "サトシからハル・フィニーへ：Bitcoin v0.1 リリースの個人的通知（2009-01-08）"
 date: 2009-01-08T20:54:55Z
 type: "correspondence"
 source: "coindesk"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "暗号学メーリングリストでの公開告知の数時間後、サトシが個人的にハル・フィニーへBitcoin v0.1リリースを通知。SourceForgeのリンクとbitcoin.orgのリリースノートを案内。"
+description: "暗号学 ML での公開告知の数時間後、サトシが個人的にハル・フィニーへ Bitcoin v0.1 リリースを通知。SourceForge のリンクと bitcoin.org のリリースノートを案内。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -33,7 +33,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2009年1月8日木曜日、太平洋標準時20:54:55にsatoshi@vistomail.comから送信された。暗号学メーリングリストでの公開アナウンスからわずか数時間後、サトシは個人的にハル・フィニーにビットコインのリリースを通知した。
+2009年1月8日木曜日、太平洋標準時20:54:55 に satoshi@vistomail.com から送信された。暗号学メーリングリストでの公開アナウンスからわずか数時間後、サトシは個人的にハル・フィニーにビットコインのリリースを通知した。
 
 <!-- speaker: Satoshi Nakamoto -->
 > お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された:
@@ -44,6 +44,6 @@ translationStatus: complete
 > Satoshi
 
 <!-- speaker: narrator -->
-この簡潔なメールは、サトシがフィニーの関与を十分に重視し、公開アナウンスに加えて個別の通知を送るほどであったことを示している。フィニーはソフトウェアをダウンロードして応答し、2009年1月11日に有名な[「Running bitcoin」ツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)を投稿した。翌日の1月12日、サトシはブロック 170でフィニーに10 BTCを送金した——これが知られている[最初の個人間ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
+この簡潔なメールは、サトシがフィニーの関与を十分に重視し、公開アナウンスに加えて個別の通知を送るほどであったことを示している。フィニーはソフトウェアをダウンロードして応答し、2009年1月11日に有名な[「Running bitcoin」ツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)を投稿した。翌日の 1月12日、サトシはブロック 170 でフィニーに 10 BTC を送金した——これが知られている[最初の個人間ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
 
 ハル・フィニーは後に「Bitcoin and me」の投稿（2013年3月）で次のように回想している。「その後数日間、サトシとメールのやり取りを続けた。主に私がバグを報告し、彼がそれを修正するという内容だった。」

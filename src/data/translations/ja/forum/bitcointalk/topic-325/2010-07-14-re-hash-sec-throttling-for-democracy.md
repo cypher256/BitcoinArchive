@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「民主主義のためのHash/secスロットリング」におけるサトシ・ナカモトの返信。"
+description: "スレッド「民主主義のための Hash/sec スロットリング」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -29,4 +29,4 @@ quotes:
 
 37枚のコインを同時に投げて全部表を出そうとするようなものだ。試すたびに、成功する確率は同じだ。
 
-RNGはOpenSSLのセキュアな乱数生成器だ。Windowsではコンピューターが起動してからのすべてのハードウェアパフォーマンスカウンターの完全なセットでシードされ、Linuxではdev/randomだ。
+RNG は OpenSSL のセキュアな乱数生成器だ。Windows ではコンピューターが起動してからのすべてのハードウェアパフォーマンスカウンターの完全なセットでシードされ、Linux では dev/random だ。

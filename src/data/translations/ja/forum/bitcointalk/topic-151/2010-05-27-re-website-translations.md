@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-やった！最初の言語ができた。0.3リリースに含めるためにSVNにアップロードした。
+やった！最初の言語ができた。0.3 リリースに含めるために SVN にアップロードした。

@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Bitcoin バージョン0.2が登場した！
+Bitcoin バージョン 0.2 が登場した！
 
 ダウンロードリンク：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download)
@@ -29,12 +29,12 @@ Bitcoin バージョン0.2が登場した！
  - システムトレイへの最小化オプション
  - 起動時の自動開始オプションにより、バックグラウンドで自動的に実行し続けることが可能
  - 将来の拡張に対応した新しいオプションダイアログレイアウト
- - Windows用セットアッププログラム
- - Linux版（Ubuntuでテスト済み）
+ - Windows 用セットアッププログラム
+ - Linux 版（Ubuntu でテスト済み）
 
 Satoshi Nakamoto
  - コイン生成のマルチプロセッサーサポート
- - TOR使用のためのプロキシサポート
+ - TOR 使用のためのプロキシサポート
  - 初回ブロックダウンロードの一部の速度低下を修正
 
-マルッティ・マルミ（sirius-m）のすべてのコーディング作業、新しいサイトとこのフォーラムのホスティングに、そしてLinux版のテストを手伝ってくれたNew Liberty Standardに大いに感謝する。
+マルッティ・マルミ（sirius-m）のすべてのコーディング作業、新しいサイトとこのフォーラムのホスティングに、そして Linux 版のテストを手伝ってくれた New Liberty Standard に大いに感謝する。

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-19T16:58:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。msg4577の前。"
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg4577 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -25,10 +25,10 @@ quotes:
 >
 <!-- /tone-skip -->
 
-難しい質問だ！最も一般的：おそらくWindows INIファイルだろう。WindowsがOSとして最も普及しているから。
+難しい質問だ！最も一般的：おそらく Windows INI ファイルだろう。Windows が OS として最も普及しているから。
 
-JSONを推したい。JSONは（ほぼ）YAMLのサブセット（YAMLは設定ファイルの一般的な選択肢）なので、JSONまたはYAMLパーサーで読める。
-最大の利点は認証をトランスポート層に適切に配置することだと思う。そうすれば将来、本格的なHTTPSと証明書を導入する場合にAPIを変更する必要がない。
+JSON を推したい。JSON は（ほぼ）YAML のサブセット（YAML は設定ファイルの一般的な選択肢）なので、JSON または YAML パーサーで読める。
+最大の利点は認証をトランスポート層に適切に配置することだと思う。そうすれば将来、本格的な HTTPS と証明書を導入する場合に API を変更する必要がない。
 いや、単に「command」と「parameter」を混同して、こうしただけだ：
 
 ```

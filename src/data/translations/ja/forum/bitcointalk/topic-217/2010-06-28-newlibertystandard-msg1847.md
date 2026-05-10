@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック217におけるNewLibertyStandardの文脈投稿。msg1827の後。"
+description: "BitcoinTalk トピック 217 における NewLibertyStandard の文脈投稿。msg1827 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -20,4 +20,4 @@ translationStatus: complete
 
 — Wikipedia (source)
 
-上記の説明が、俺自身も含めてほとんどのギークがバージョン1.0ソフトウェアを見るときの見方だ。Slashdotの読者や編集者は、1.0と聞けば「業務利用の準備ができた」という意味だと理解する。Slashdotに取り上げられることは、これから当分の間で得られる最高の宣伝機会になるだろうから、それを意図的に見送るのは賢明ではないと思う。
+上記の説明が、俺自身も含めてほとんどのギークがバージョン 1.0 ソフトウェアを見るときの見方だ。Slashdot の読者や編集者は、1.0 と聞けば「業務利用の準備ができた」という意味だと理解する。Slashdot に取り上げられることは、これから当分の間で得られる最高の宣伝機会になるだろうから、それを意図的に見送るのは賢明ではないと思う。

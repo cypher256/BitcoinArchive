@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-23T21:18:05.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。after msg5383, サトシを引用."
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。after msg5383, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -23,9 +23,9 @@ translationStatus: complete
 <!-- quote: q1 -->
 > ところで、まだ試していないが、confファイルで rpcpassword= とだけ書くのは有効だと思う。-server や -daemon、bitcoind を使う場合にだけ警告つきで失敗するはずだ。パスワードが不要なら問題ないはずだ。そうだよね？
 
-そう、その通りだ。rpcpasswordが必須なのは-serverや-daemon、bitcoindを使う場合だけだ（念のためたった今テストした）。
+そう、その通りだ。rpcpassword が必須なのは-server や-daemon、bitcoind を使う場合だけだ（念のためたった今テストした）。
 
-RE: プログラマが古いCOBOLコードでHTTP認証をどうやればいいか分からない場合は？
-それなら、「rpcpasswordを空にしたら認証が切れる」というマジカルな仕様より、RPC認証を明示的に切るための別の設定項目をconfファイルに用意する方がいいと思う。ただ、誰かが実際に困るか、認証手段が複数になる（いつかhttps対応とか）まではこれを実装するつもりはないね。
+RE: プログラマが古い COBOL コードで HTTP 認証をどうやればいいか分からない場合は？
+それなら、「rpcpassword を空にしたら認証が切れる」というマジカルな仕様より、RPC 認証を明示的に切るための別の設定項目を conf ファイルに用意する方がいいと思う。ただ、誰かが実際に困るか、認証手段が複数になる（いつか https 対応とか）まではこれを実装するつもりはないね。
 
-lachesis、HTTP Basic認証に対応するのは君にとって問題かい？
+lachesis、HTTP Basic 認証に対応するのは君にとって問題かい？

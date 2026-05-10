@@ -1,5 +1,5 @@
 ---
-title: "Re: Windows用Bitcoin x64"
+title: "Re: Windows 用 Bitcoin x64"
 date: 2010-07-26T18:41:31.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Windows用Bitcoin x64」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Windows 用 Bitcoin x64」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,4 +26,4 @@ quotes:
 <!-- tone-skip -->
 > SHAコンテキストのキャッシング部分はtcatmの功績だ——これは絶対に素晴らしいパフォーマンスを発揮する。さらに、Intelコンパイラーがここで本領を発揮する。並列化能力により、Visual Studioと比べて大幅なパフォーマンス向上が得られる。
 <!-- /tone-skip -->
-まだCrypto++をベースにしているか？これをメインのソースコードに取り込もう。
+まだ Crypto++をベースにしているか？これをメインのソースコードに取り込もう。

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-23T17:07:40.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCパスワード」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC パスワード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,4 +26,4 @@ quotes:
 > 皆に質問だ：HTTP Basic認証のやり方を詳しく説明するセクションをwikiページに追加すべきだろうか？ PHPとPythonでは [http://user:pass@host:port/](http://user:pass@host:port/) というURL構文を使うだけで非常に簡単にできる。
 <!-- /tone-skip -->
 
-はい、各開発者が自分で調べなくて済むように、それは本当に良いと思う。Python、PHP、Javaそれぞれでjson-rpcライブラリをインポートしてgetinfoなどを実行する簡単な例が必要だ。HTTP認証部分も含めて。
+はい、各開発者が自分で調べなくて済むように、それは本当に良いと思う。Python、PHP、Java それぞれで json-rpc ライブラリをインポートして getinfo などを実行する簡単な例が必要だ。HTTP 認証部分も含めて。

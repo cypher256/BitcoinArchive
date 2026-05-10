@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロックがダウンロードされない - Microsoft Security Essentialsユーザーは必読"
+title: "Re: ブロックがダウンロードされない - Microsoft Security Essentials ユーザーは必読"
 date: 2010-07-14T16:22:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -18,6 +18,6 @@ translationStatus: complete
 
 それがブロックのダウンロードを妨げていた原因だったのか？
 
-リンク: 「Win32 CPUサイクル vs 'ライブプロテクション'エンジン」
+リンク: 「Win32 CPU サイクル vs 'ライブプロテクション'エンジン」
 
-BitcoinFXの場合、ライブプロテクションがコイン生成用のCPUの使用を妨げていた。あなたの友人は1400-1600 khash/sを出していたとのことなので、CPUは使用できていた。となると、ライブプロテクションはプログラムの別の部分をブロックしていたのだろうか？
+BitcoinFX の場合、ライブプロテクションがコイン生成用の CPU の使用を妨げていた。あなたの友人は 1400-1600 khash/s を出していたとのことなので、CPU は使用できていた。となると、ライブプロテクションはプログラムの別の部分をブロックしていたのだろうか？

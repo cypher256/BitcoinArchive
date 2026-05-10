@@ -31,7 +31,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-**[COPA対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** の裁判記録から見えてきた発見のひとつが、 **[ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)** に関するものだ。
+**[COPA 対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)** の裁判記録から見えてきた発見のひとつが、 **[ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)** に関するものだ。
 
 裁判以前、ニコラス・ボームは主に 2009年1月25日の bitcoin-list 投稿で知られていた。そこではソフトウェアの問題を報告し、サトシは `debug.log` を直接送ってほしいと返信していた。だが、2024年5月のメラー判決は、さらに重要な事実を明記している。
 
@@ -44,8 +44,8 @@ translationStatus: complete
 提出資料によれば、ニコラス・ボームとサトシは 2009年を通じて、実際のノード運用上の問題について直接メールを交わしていた。
 
 - **[2009年6月4日](/BitcoinArchive/ja/entries/correspondence/nicholas-bohm/2009-06-04-bohm-to-satoshi-router-issue/)** 、ニコラス・ボームは新しいルーターを導入して以来、ビットコインが接続できなくなったと報告した。
-- **2009年6月5日** 、サトシは **ポート8333** を転送設定して、ノードが着信接続を受けられるようにすべきだと返信した。オンラインのノードが誰も着信を受けられなければ、接続できなくなるとも説明している。
-- **[2009年7月18日〜19日](/BitcoinArchive/ja/entries/correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running/)** 、ニコラス・ボームは「ここ1日ほど」接続が一切確立できないと報告した。これに対しサトシは、IPアドレスが変わったのではないかと尋ね、さらにこう述べた。
+- **2009年6月5日** 、サトシは **ポート 8333** を転送設定して、ノードが着信接続を受けられるようにすべきだと返信した。オンラインのノードが誰も着信を受けられなければ、接続できなくなるとも説明している。
+- **[2009年7月18日〜19日](/BitcoinArchive/ja/entries/correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running/)** 、ニコラス・ボームは「ここ 1日ほど」接続が一切確立できないと報告した。これに対しサトシは、IP アドレスが変わったのではないかと尋ね、さらにこう述べた。
 
 > 「今、他に誰も実行していないだけかもしれない」
 

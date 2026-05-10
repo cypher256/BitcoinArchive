@@ -8,12 +8,12 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック151におけるSmokeTooMuchの文脈投稿。msg3247で引用。"
+description: "BitcoinTalk トピック 151 における SmokeTooMuch の文脈投稿。msg3247 で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
 メインページ下部のダウンロードリンクを削除することを推奨する。
-ご覧の通り、英語ページのリンクは新しい0.3リリースを指しているが、他の言語には古い0.2バージョンのリンクしかない。
+ご覧の通り、英語ページのリンクは新しい 0.3 リリースを指しているが、他の言語には古い 0.2 バージョンのリンクしかない。
 右側に最新リリースのダウンロードボックスがあるのだから、翻訳ページからリンクを削除すればいいのではないか。

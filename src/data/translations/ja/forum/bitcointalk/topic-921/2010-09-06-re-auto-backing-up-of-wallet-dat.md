@@ -1,5 +1,5 @@
 ---
-title: "Re: wallet.datの自動バックアップ"
+title: "Re: wallet.dat の自動バックアップ"
 date: 2010-09-06T21:45:10.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「wallet.datの自動バックアップ」におけるサトシ・ナカモトの返信。"
+description: "スレッド「wallet.dat の自動バックアップ」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-rpc backupwallet <destination>がSVN rev 147に入った。
+rpc backupwallet <destination>が SVN rev 147 に入った。

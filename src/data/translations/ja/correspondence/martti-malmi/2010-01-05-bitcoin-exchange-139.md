@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin取引所"
+title: "Bitcoin 取引所"
 date: 2010-01-05T01:55:14Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがDjango搭載のbitcoinexchange.comプロトタイプの稼働を報告し、双曲線型の需給価格設定の計画を議論。"
+description: "マルミが Django 搭載の bitcoinexchange.com プロトタイプの稼働を報告し、双曲線型の需給価格設定の計画を議論。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,6 +24,6 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-bitcoinexchange.comサービスのプロトタイプが動作するようになりました（認証: bitcoin/bit）。Python搭載のDjango Webアプリケーションフレームワークで動いており、PHPと比べて使い心地が良いですよ。
+bitcoinexchange.com サービスのプロトタイプが動作するようになりました（認証: bitcoin/bit）。Python 搭載の Django Web アプリケーションフレームワークで動いており、PHP と比べて使い心地が良いですよ。
 
-これから数日間勉強する必要がありますが、その後取引所サービスの作業に戻れます。とりわけ、手持ちのBitcoinの在庫がゼロに近づくにつれて価格が無限大に向かって上昇するように価格設定を修正するつもりです。そうすることで市場レートを見つけ、需要と供給が一致する点に留まることができますね。双曲線型の価格曲線のパラメーターをどうすべきか、まだ完全には決まっていないので、考える必要があります。
+これから数日間勉強する必要がありますが、その後取引所サービスの作業に戻れます。とりわけ、手持ちの Bitcoin の在庫がゼロに近づくにつれて価格が無限大に向かって上昇するように価格設定を修正するつもりです。そうすることで市場レートを見つけ、需要と供給が一致する点に留まることができますね。双曲線型の価格曲線のパラメーターをどうすべきか、まだ完全には決まっていないので、考える必要があります。

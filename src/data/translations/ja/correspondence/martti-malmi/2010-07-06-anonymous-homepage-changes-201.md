@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがbitcoin.orgホームページでの匿名性の強調を控え、代わりにTor手順を追加するというサトシの判断に同意する。"
+description: "マルミが bitcoin.org ホームページでの匿名性の強調を控え、代わりに Tor 手順を追加するというサトシの判断に同意する。"
 isSatoshi: false
 tags:
   - "correspondence"

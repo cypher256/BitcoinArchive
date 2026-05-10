@@ -8,13 +8,13 @@ author: "theWebalyst"
 participants:
   - name: "theWebalyst"
     slug: "thewebalyst"
-description: "BitcoinTalkトピック1540におけるtheWebalystの文脈投稿。msg18511の後。"
+description: "BitcoinTalk トピック 1540 における theWebalyst の文脈投稿。msg18511 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-数週間動作させていた自分のBitcoinが、昨日からこのエラーを出すようになった。Windowsのアップデートもなし、Bitcoinのアップデートもなし。理由が分からない。（Windows 7 64bit上）。
+数週間動作させていた自分の Bitcoin が、昨日からこのエラーを出すようになった。Windows のアップデートもなし、Bitcoin のアップデートもなし。理由が分からない。（Windows 7 64bit 上）。
 
 マーク（ロンドンより）
 http://theWebalyst.com

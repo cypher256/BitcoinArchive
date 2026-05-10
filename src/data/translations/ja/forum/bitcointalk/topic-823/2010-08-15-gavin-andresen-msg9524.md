@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック823におけるギャビン・アンドレセンの文脈投稿。msg9531の前。"
+description: "BitcoinTalk トピック 823 におけるギャビン・アンドレセンの文脈投稿。msg9531 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -42,4 +42,4 @@ translationStatus: complete
              nValueOut += txout.nValue;
 ```
 
-不正なブロック以前のブロックチェーンの部分を再ダウンロードする必要がある -- blkindex.datとblk0001.datファイルを削除すること。私はknightmbのブロックチェーンスナップショットから始めた。
+不正なブロック以前のブロックチェーンの部分を再ダウンロードする必要がある -- blkindex.dat と blk0001.dat ファイルを削除すること。私は knightmb のブロックチェーンスナップショットから始めた。

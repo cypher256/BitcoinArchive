@@ -8,7 +8,7 @@ author: "jgarzik"
 participants:
   - name: "Jeff Garzik"
     slug: "jeff-garzik"
-description: "jgarzikがbitcoin/bitcoin PR #91でスレッドを開始。"
+description: "jgarzik が bitcoin/bitcoin PR #91 でスレッドを開始。"
 isSatoshi: false
 tags:
   - "github"
@@ -16,4 +16,4 @@ tags:
 translationStatus: complete
 ---
 
-debug.logの各行にタイムスタンプを追加する。
+debug.log の各行にタイムスタンプを追加する。

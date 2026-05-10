@@ -1,5 +1,5 @@
 ---
-title: "Re: CLIでのBitcoin生成"
+title: "Re: CLI での Bitcoin 生成"
 date: 2010-05-26T23:04:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "molybdenum"
 participants:
   - name: "molybdenum"
     slug: "molybdenum"
-description: "BitcoinTalkトピック145におけるmolybdenumの文脈投稿。msg1256の後。"
+description: "BitcoinTalk トピック 145 における molybdenum の文脈投稿。msg1256 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ふむ、r78に更新する際にrpc.cppを眺めていたら見つけた……ちなみに、debian lenny backportsのGCC 4.3.4ではちゃんとコンパイルできない。net.hのDEFAULT_PORTを#defineに変更しなければならなかった。なぜかhtons()が変数宣言で許可されなかったからだ……おそらく最良の解決策ではないが、短期的にはうまくいった 😉
+ふむ、r78 に更新する際に rpc.cpp を眺めていたら見つけた……ちなみに、debian lenny backports の GCC 4.3.4 ではちゃんとコンパイルできない。net.h の DEFAULT_PORT を#define に変更しなければならなかった。なぜか htons()が変数宣言で許可されなかったからだ……おそらく最良の解決策ではないが、短期的にはうまくいった 😉

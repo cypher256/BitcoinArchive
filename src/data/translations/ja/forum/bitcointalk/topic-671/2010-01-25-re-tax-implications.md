@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシは従来の税制の枠組みをBitcoinに適用することの難しさについて議論し、オンラインでの貴金属やコレクターズアイテムの取引との類似性を指摘している。"
+description: "サトシは従来の税制の枠組みを Bitcoin に適用することの難しさについて議論し、オンラインでの貴金属やコレクターズアイテムの取引との類似性を指摘している。"
 isSatoshi: true
 tags:
   - "tax"
@@ -20,4 +20,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-Bitcoinは、クレジットカードを持っていない人や、持っているカードを使いたくない人──配偶者に明細を見られたくない、「アダルトサイト」にカード番号を渡したくない、定期請求が心配──にとって便利だろう。
+Bitcoin は、クレジットカードを持っていない人や、持っているカードを使いたくない人──配偶者に明細を見られたくない、「アダルトサイト」にカード番号を渡したくない、定期請求が心配──にとって便利だろう。

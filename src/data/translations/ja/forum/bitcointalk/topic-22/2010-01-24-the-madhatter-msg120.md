@@ -1,5 +1,5 @@
 ---
-title: "Re: TORとI2P"
+title: "Re: TOR と I2P"
 date: 2010-01-24T20:52:59.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック22におけるThe Madhatterの文脈投稿。after msg113, サトシを引用."
+description: "BitcoinTalk トピック 22 における The Madhatter の文脈投稿。after msg113, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -20,9 +20,9 @@ quotes:
 translationStatus: complete
 ---
 
-ああ、その点ではI2Pの方がずっと自動化しやすい。手動で.onionをいくつか設定して、シードとして使えるようにリストに投稿することはできる。最小限の手間でTorに結びつけられる、常時稼働のノードを持っているからな。
+ああ、その点では I2P の方がずっと自動化しやすい。手動で.onion をいくつか設定して、シードとして使えるようにリストに投稿することはできる。最小限の手間で Tor に結びつけられる、常時稼働のノードを持っているからな。
 
-俺は以前は熱心なTor推進派だったが、I2Pを使い始めてからは、いろいろな点でずっとずっと優れていることが分かった。最大の改善点はスピードだ。😉  ただ、Javaで書かれているのが残念だな。
+俺は以前は熱心な Tor 推進派だったが、I2P を使い始めてからは、いろいろな点でずっとずっと優れていることが分かった。最大の改善点はスピードだ。😉  ただ、Java で書かれているのが残念だな。
 
 <!-- quote: q1 -->
 > しばらくその件について考えていた。バックエンドで.onionアドレスのサポートと、それへの接続機能を追加して、そこから進めたいと思っている。

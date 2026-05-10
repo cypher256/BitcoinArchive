@@ -1,5 +1,5 @@
 ---
-title: "Re: Linuxビルドのテスト準備完了"
+title: "Re: Linux ビルドのテスト準備完了"
 date: 2009-11-09T19:41:11Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがLinuxビルドの自動起動やトレイ機能などへのマルミの貢献に感謝し、今後の学校のC++プロジェクトの成功を祈る。"
+description: "サトシが Linux ビルドの自動起動やトレイ機能などへのマルミの貢献に感謝し、今後の学校の C++プロジェクトの成功を祈る。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -29,7 +29,7 @@ quotes:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-Linuxビルド、自動起動、トレイ最小化、セットアップなど、たくさんのことをやってくれて本当に感謝している。C++プロジェクトの成功を祈っている。
+Linux ビルド、自動起動、トレイ最小化、セットアップなど、たくさんのことをやってくれて本当に感謝している。C++プロジェクトの成功を祈っている。
 
 <!-- speaker: Martti Malmi -->
 <!-- quote: q1 -->

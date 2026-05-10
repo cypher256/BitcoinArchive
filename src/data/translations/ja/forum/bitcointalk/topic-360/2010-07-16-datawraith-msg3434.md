@@ -8,7 +8,7 @@ author: "DataWraith"
 participants:
   - name: "DataWraith"
     slug: "datawraith"
-description: "BitcoinTalkトピック360におけるDataWraithの文脈投稿。msg3520の前。"
+description: "BitcoinTalk トピック 360 における DataWraith の文脈投稿。msg3520 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -27,4 +27,4 @@ quotes:
 
 ちょっと待って？ 可逆計算は消費エネルギーが少ないだけだと思っていた。非決定性はどこから来るんだ？
 
-それと、ハッシュの安全性について：WikipediaによるとSHA-256への攻撃にはまだ2^250程度の操作が必要だ。それに、ここで大きな思い違いをしていなければ、ハッシュターゲットは約10分ごとに変わるのではないか？ それは攻撃者を混乱させないだろうか？ SHAをより速く破ることが可能になったとしても、システムが難易度を上げることで調整するのではないか？
+それと、ハッシュの安全性について：Wikipedia によると SHA-256 への攻撃にはまだ 2^250 程度の操作が必要だ。それに、ここで大きな思い違いをしていなければ、ハッシュターゲットは約 10分ごとに変わるのではないか？ それは攻撃者を混乱させないだろうか？ SHA をより速く破ることが可能になったとしても、システムが難易度を上げることで調整するのではないか？

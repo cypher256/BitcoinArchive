@@ -1,5 +1,5 @@
 ---
-title: "Re: HOWTO: Ubuntu 10.04 (Karmic) でBitcoinをコンパイルする方法"
+title: "Re: HOWTO: Ubuntu 10.04 (Karmic) で Bitcoin をコンパイルする方法"
 date: 2010-08-19T18:55:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「HOWTO: Ubuntu 10.04 (Karmic)でBitcoinをコンパイルする方法」におけるサトシ・ナカモトの返信。"
+description: "スレッド「HOWTO: Ubuntu 10.04 (Karmic)で Bitcoin をコンパイルする方法」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

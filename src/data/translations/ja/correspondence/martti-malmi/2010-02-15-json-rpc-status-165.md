@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-15T18:11:53Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがマルミのPythonテスト成功を受けてJSON-RPCサーバーが一発で動作したことを喜び、テストに使ったPythonコードの共有を依頼する。"
+description: "サトシがマルミの Python テスト成功を受けて JSON-RPC サーバーが一発で動作したことを喜び、テストに使った Python コードの共有を依頼する。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -43,4 +43,4 @@ translationStatus: complete
 
 やった、一発で動いた。
 
-使ったPythonのコードを送ってもらえるか？後で自分でテストするとき、一から調べなくて済むので。
+使った Python のコードを送ってもらえるか？後で自分でテストするとき、一から調べなくて済むので。

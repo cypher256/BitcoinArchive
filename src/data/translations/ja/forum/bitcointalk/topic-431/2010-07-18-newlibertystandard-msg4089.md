@@ -1,5 +1,5 @@
 ---
-title: "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
+title: "Re: Nenolod、Bitcoin が機能しないことを証明したがっている人物"
 date: 2010-07-18T22:39:34.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック431におけるNewLibertyStandardの文脈投稿。after msg4073, サトシを引用."
+description: "BitcoinTalk トピック 431 における NewLibertyStandard の文脈投稿。after msg4073, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

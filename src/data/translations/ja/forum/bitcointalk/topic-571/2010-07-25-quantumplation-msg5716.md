@@ -8,7 +8,7 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "BitcoinTalkトピック571におけるQuantumplationの文脈投稿。msg5724の前。"
+description: "BitcoinTalk トピック 571 における Quantumplation の文脈投稿。msg5724 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

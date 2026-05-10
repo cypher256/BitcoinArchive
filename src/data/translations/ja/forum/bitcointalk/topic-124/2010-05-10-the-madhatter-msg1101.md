@@ -1,5 +1,5 @@
 ---
-title: "Re: Mac OS Xの完全なビルド手順と更新済みバイナリパッケージ"
+title: "Re: Mac OS X の完全なビルド手順と更新済みバイナリパッケージ"
 date: 2010-05-10T12:41:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック124におけるThe Madhatterの文脈投稿。msg1100の後。"
+description: "BitcoinTalk トピック 124 における The Madhatter の文脈投稿。msg1100 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-DataWraithさん、ありがとう！ドイツ語翻訳をSVNにアップロードした。
+DataWraith さん、ありがとう！ドイツ語翻訳を SVN にアップロードした。
 
-素晴らしい。すでに3つの主要言語が揃った。
+素晴らしい。すでに 3 つの主要言語が揃った。

@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin Faucetの変更"
+title: "Bitcoin Faucet の変更"
 date: 2010-06-23T14:23:46.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "ギャビン・アンドレセンがスレッドを開始: BitcoinTalkトピック206。"
+description: "ギャビン・アンドレセンがスレッドを開始: BitcoinTalk トピック 206。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Bitcoin Faucet（https://freebitcoins.appspot.com/）から5 Bitcoinを無料で受け取った人々のIPアドレスを観察していた。
+Bitcoin Faucet（https://freebitcoins.appspot.com/）から 5 Bitcoin を無料で受け取った人々の IP アドレスを観察していた。
 
 すると……いくつか興味深いパターンが見えてきた。例えばこのようなコイン取得リクエスト：
 
@@ -26,10 +26,10 @@ Bitcoin Faucet（https://freebitcoins.appspot.com/）から5 Bitcoinを無料で
 79.117.155.23 - - [21/Jun/2010:12:08:07 -0700] "POST / HTTP/1.1" 200 1234 
 ```
 
-79.117の範囲のIPアドレスを使っている新しいBitcoinユーザーが実際にたくさんいるなら申し訳ないが……おそらく誰かがそこから自分の分以上の無料Bitcoinを得ていると推測している。
+79.117 の範囲の IP アドレスを使っている新しい Bitcoin ユーザーが実際にたくさんいるなら申し訳ないが……おそらく誰かがそこから自分の分以上の無料 Bitcoin を得ていると推測している。
 
 192.38.95.*のアドレスブロックからの怪しいリクエストもいくつかある。
 
-そこでFaucetにいくつかの変更を加えた。不正行為をしようとしない限り気づかないだろうが、不正行為をしようとすると、コインを得るためにCAPTCHAを解く必要がある。
+そこで Faucet にいくつかの変更を加えた。不正行為をしようとしない限り気づかないだろうが、不正行為をしようとすると、コインを得るために CAPTCHA を解く必要がある。
 
-それでも不正行為が収まらない場合は、不正行為の疑いがある場合にCAPTCHAを要求し、ビットニッケル（0.05 Bitcoin）しか配布しないようにコードを修正する……
+それでも不正行為が収まらない場合は、不正行為の疑いがある場合に CAPTCHA を要求し、ビットニッケル（0.05 Bitcoin）しか配布しないようにコードを修正する……

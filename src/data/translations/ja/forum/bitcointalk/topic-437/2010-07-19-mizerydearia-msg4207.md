@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック437におけるmizerydeariaの文脈投稿。msg4037の後。"
+description: "BitcoinTalk トピック 437 における mizerydearia の文脈投稿。msg4037 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

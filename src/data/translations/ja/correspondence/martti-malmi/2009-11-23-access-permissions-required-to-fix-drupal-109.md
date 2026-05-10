@@ -1,5 +1,5 @@
 ---
-title: "Re: Drupalを修正するためにアクセス権限が必要"
+title: "Re: Drupal を修正するためにアクセス権限が必要"
 date: 2009-11-23T06:44:35Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがbitcoin.orgサーバー上の必要なApache設定ファイルへのアクセス権限をサトシに付与したことを確認。"
+description: "マルミが bitcoin.org サーバー上の必要な Apache 設定ファイルへのアクセス権限をサトシに付与したことを確認。"
 isSatoshi: false
 tags:
   - "correspondence"

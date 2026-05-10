@@ -8,12 +8,12 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg70の後。"
+description: "BitcoinTalk トピック 12 における The Madhatter の文脈投稿。msg70 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-デフォルトのビルドオプションを使った。あなたのtxtファイルにあるオプションを試してみる。FreeBSDでは通常のportsシステムからすぐに動作した。これは素晴らしい。同じportsシステムを通じてbitcoinをインストール（自分の目標）するのも簡単になることを意味する。
+デフォルトのビルドオプションを使った。あなたの txt ファイルにあるオプションを試してみる。FreeBSD では通常の ports システムからすぐに動作した。これは素晴らしい。同じ ports システムを通じて bitcoin をインストール（自分の目標）するのも簡単になることを意味する。
 
 そう、debug.log には適切なパーミッションがある。ソースを読み直してみる。何か見落としているはずだ。

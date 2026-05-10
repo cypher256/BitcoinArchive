@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック611におけるthroughputの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 611 における throughput の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -25,8 +25,8 @@ translationStatus: complete
 >
 > listtransactions を実装しなかった理由は、Webプログラマに使ってほしくないからだ。受信した支払いを監視するために、簡単にこれに飛びついてしまうだろう。だがその方法では、取りこぼしがないことを確実に保証する信頼できるやり方は存在しない。getreceivedbyaddress と getreceivedbylabel を使った確かなサンプルコードがあって「これを使え！ これを使え！ listtransactions は使うな！」と示せるようになるまでは、listtransactions を実装すべきではないと思う。
 
-どうやら君は明らかにCLIよりGUIを好んでいるようだ。
-だがGUIは本当にひどいインターフェースだ。例えばSSHアクセスできる5つのノードがあって、こんなふうにループで状態を定期的に収集したい場合などに：
+どうやら君は明らかに CLI より GUI を好んでいるようだ。
+だが GUI は本当にひどいインターフェースだ。例えば SSH アクセスできる 5 つのノードがあって、こんなふうにループで状態を定期的に収集したい場合などに：
 
 ```bash
 #!/bin/bash

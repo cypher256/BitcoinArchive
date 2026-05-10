@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVN rev 125での接続制限の改善と-maxconnectionsスイッチの追加を発表。"
+description: "サトシ・ナカモトが SVN rev 125 での接続制限の改善と-maxconnections スイッチの追加を発表。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -17,8 +17,8 @@ translationStatus: complete
 ---
 
 SVN rev 125:
-- 8つの着信接続がある場合でも常に8つの発信接続を確立
-- 発信接続をa.b.?.?の範囲ごとに1つに制限
+- 8 つの着信接続がある場合でも常に 8 つの発信接続を確立
+- 発信接続を a.b.?.?の範囲ごとに 1 つに制限
 - スイッチ -maxconnections=#
 
 （現在ドキュメント化されていない）スイッチ -maxconnections=# を追加した。ルーターが多くの接続を維持できない場合を除いて使用すべきではない。その場合は -maxconnections=30 を試してくれ。

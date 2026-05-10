@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
+title: "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする"
 date: 2010-12-09T19:41:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック2151におけるギャビン・アンドレセンの文脈投稿。after msg28640, サトシを引用."
+description: "BitcoinTalk トピック 2151 におけるギャビン・アンドレセンの文脈投稿。after msg28640, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -32,8 +32,8 @@ translationStatus: complete
 
 ああ、listtransactions "*" <count> という形は実現可能だ。他のアカウント関連ルーチンも、"*"を渡された場合は新しい「invalid account name」エラーを返すようにすればいい。
 
-ただし、これには2つの懸念がある：
+ただし、これには 2 つの懸念がある：
 
 1. listtransactions "*" はウォレット内のすべてのトランザクションを走査する必要がある（トランザクションは時刻でインデックス化されていない）。大きなウォレットでは遅くなるし、時間とともにさらに遅くなっていく。listtransactions * を高速化するためだけにトランザクションをインデックス化するのは、「使わないオプション機能はコストを発生させるべきではない」という原則に反する。
 
-2.「全アカウントを横断して直近N件のトランザクションを一覧表示する」のユースケースは何だ？私が思いつくのは、JSON-RPC経由でbitcoindと通信する代替GUIを開発するケースだけだ。ただ、それをサポートするには同時に他の機能もいくつか追加する必要がある（たとえば、listtransactionsが返すオブジェクトにアカウント情報やビットコインアドレス情報を追加する必要がある……）。
+2.「全アカウントを横断して直近 N 件のトランザクションを一覧表示する」のユースケースは何だ？私が思いつくのは、JSON-RPC 経由で bitcoind と通信する代替 GUI を開発するケースだけだ。ただ、それをサポートするには同時に他の機能もいくつか追加する必要がある（たとえば、listtransactions が返すオブジェクトにアカウント情報やビットコインアドレス情報を追加する必要がある……）。

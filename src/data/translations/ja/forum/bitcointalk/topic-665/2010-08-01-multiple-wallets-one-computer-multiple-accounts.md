@@ -1,5 +1,5 @@
 ---
-title: "複数のウォレット、1台のコンピューター"
+title: "複数のウォレット、1 台のコンピューター"
 date: 2010-08-01T11:14:29.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "daniel-larimer"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "bytemasterがスレッドを開始: 複数のウォレット、1台のコンピューター"
+description: "bytemaster がスレッドを開始: 複数のウォレット、1 台のコンピューター"
 isSatoshi: false
 tags: []
 translationStatus: complete

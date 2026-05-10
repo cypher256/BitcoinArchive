@@ -1,5 +1,5 @@
 ---
-title: "Re: OSXでbitcoindをデーモンとして実行"
+title: "Re: OSX で bitcoind をデーモンとして実行"
 date: 2010-09-06T21:52:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「OSXでのbitcoindデーモン」におけるサトシ・ナカモトの返信。"
+description: "スレッド「OSX での bitcoind デーモン」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,7 +18,7 @@ translationStatus: complete
 
 ビルドできるか？
 
-init.cppの78行目を以下から：
+init.cpp の 78 行目を以下から：
 #ifdef __WXGTK__
 
 以下に変更してみてくれ：

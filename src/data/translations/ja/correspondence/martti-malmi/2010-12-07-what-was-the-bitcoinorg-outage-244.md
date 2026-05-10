@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin.orgの障害の原因は？"
+title: "Re: bitcoin.org の障害の原因は？"
 date: 2010-12-07T02:37:38Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがbitcoin.orgサーバーの暗号化されたrootパスワードを送信し、BitcoinExchangeのファイルとデータベースの新サーバーへの移行状況を報告。"
+description: "マルミが bitcoin.org サーバーの暗号化された root パスワードを送信し、BitcoinExchange のファイルとデータベースの新サーバーへの移行状況を報告。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,10 +24,10 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-暗号化したrootパスワードを添付しました。
+暗号化した root パスワードを添付しました。
 
 <!-- speaker: Satoshi Nakamoto -->
 > ありがとう。bitcoinexchangeの別サーバーへの移行は完了しましたか？
 
 <!-- speaker: Martti Malmi -->
-ファイル、データベース、bitcoindは全て移動しましたが、稼働させるにはまだ作業が必要です。旧サイトは現在ダウンしているので、必要であれば遠慮なく再起動してください。
+ファイル、データベース、bitcoind は全て移動しましたが、稼働させるにはまだ作業が必要です。旧サイトは現在ダウンしているので、必要であれば遠慮なく再起動してください。

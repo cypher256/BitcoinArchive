@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-02-24T22:08:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「コマンドラインとJSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「コマンドラインと JSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,6 +18,6 @@ translationStatus: complete
 
 メモリー使用量はいつ、どのくらいの速さで増加したか？すぐに、長時間かけてゆっくりと、それとも何かの後のイベントから始まったか？
 
-Ubuntu 9.10 64ビットで-daemonを実行しており、メモリー使用量は安定している。
+Ubuntu 9.10 64 ビットで-daemon を実行しており、メモリー使用量は安定している。
 
-サーバーでの違いは64ビット以外に何かあるはずだ。GUIがないことによる何らかの不具合かもしれない。メモリーリークのデバッグツールが手がかりを与えてくれるかもしれない。
+サーバーでの違いは 64 ビット以外に何かあるはずだ。GUI がないことによる何らかの不具合かもしれない。メモリーリークのデバッグツールが手がかりを与えてくれるかもしれない。

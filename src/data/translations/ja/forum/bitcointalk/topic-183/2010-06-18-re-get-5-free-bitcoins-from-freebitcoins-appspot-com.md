@@ -1,5 +1,5 @@
 ---
-title: "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
+title: "Re: freebitcoins.appspot.com で 5 Bitcoin を無料で入手しよう"
 date: 2010-06-18T23:08:34.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「freebitcoins.appspot.comから5ビットコインを無料で入手」におけるサトシ・ナカモトの返信。"
+description: "スレッド「freebitcoins.appspot.com から 5 ビットコインを無料で入手」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-最初のプロジェクトとして素晴らしい選択だ、いい仕事だ。他の誰かがやらなければ、まさにこれをやる予定だった。一般人にとって50BTCの生成が難しくなりすぎた時に、新規ユーザーがすぐに遊べるコインを入手できるようにするためだ。寄付で補充し続けられるはずだ。ディスペンサーの残高を表示することで、人々がチャージしたくなるよう促される。
+最初のプロジェクトとして素晴らしい選択だ、いい仕事だ。他の誰かがやらなければ、まさにこれをやる予定だった。一般人にとって 50BTC の生成が難しくなりすぎた時に、新規ユーザーがすぐに遊べるコインを入手できるようにするためだ。寄付で補充し続けられるはずだ。ディスペンサーの残高を表示することで、人々がチャージしたくなるよう促される。
 
 資金を追加したい人のために、ページに寄付用のビットコインアドレスを掲載すべきだ。理想的には何かを受け取るたびに新しいアドレスに更新されるべきだ。

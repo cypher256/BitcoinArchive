@@ -1,5 +1,5 @@
 ---
-title: "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
+title: "Re: 提案：Bitcoin と一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T19:02:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-ECDSAはメッセージを暗号化できない。署名のみ可能だ。
+ECDSA はメッセージを暗号化できない。署名のみ可能だ。
 
 全員が見られるように平文メッセージを永続的に記録するのは賢明ではない。事故が起きるのを待っているようなものだ。
 

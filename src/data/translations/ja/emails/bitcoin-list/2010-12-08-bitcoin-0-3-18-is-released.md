@@ -1,5 +1,5 @@
 ---
-title: "「[bitcoin-list] Bitcoin 0.3.18 is released」— サトシがv0.3.18リリースを告知（2010-12）"
+title: "「[bitcoin-list] Bitcoin 0.3.18 is released」— サトシが v0.3.18 リリースを告知（2010-12）"
 date: 2010-12-08T23:11:55.000Z
 type: "mailing-list"
 source: "bitcoin-list"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトによるBitcoin 0.3.18のリリース告知。wallet.datの互換性修正とアカウントベースのJSON-RPCコマンドの追加。"
+description: "サトシ・ナカモトによる Bitcoin 0.3.18 のリリース告知。wallet.dat の互換性修正とアカウントベースの JSON-RPC コマンドの追加。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -19,14 +19,14 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-バージョン0.3.18が公開された。
+バージョン 0.3.18 が公開された。
 
 変更点：
-- 0.3.17からダウングレードした後に再びアップグレードした場合のwallet.datの互換性問題を修正
-- ブロックに既知のトランザクション種類のみを含めるためのIsStandard()チェック
-- 初回ブロックダウンロードを少し高速化するJgarzikの最適化
+- 0.3.17 からダウングレードした後に再びアップグレードした場合の wallet.dat の互換性問題を修正
+- ブロックに既知のトランザクション種類のみを含めるための IsStandard()チェック
+- 初回ブロックダウンロードを少し高速化する Jgarzik の最適化
 
-今回のリリースの主な追加機能は、Gavinが開発を進めてきたアカウントベースのJSON-RPCコマンドだ（詳細は http://www.bitcoin.org/smf/index.php?topic=1886.0 を参照）。
+今回のリリースの主な追加機能は、Gavin が開発を進めてきたアカウントベースの JSON-RPC コマンドだ（詳細は http://www.bitcoin.org/smf/index.php?topic=1886.0 を参照）。
 - getaccountaddress
 - sendfrom
 - move

@@ -1,5 +1,5 @@
 ---
-title: "CAboutDialogにおけるUTF-8からANSIへのハック"
+title: "CAboutDialog における UTF-8 から ANSI へのハック"
 date: 2010-02-04T19:33:26Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがwxWidgetsの著作権記号に関するAboutダイアログのUTF-8からANSIへの変換ハックのコード変更についてマルミに質問。"
+description: "サトシが wxWidgets の著作権記号に関する About ダイアログの UTF-8 から ANSI への変換ハックのコード変更についてマルミに質問。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -37,4 +37,4 @@ translationStatus: complete
          str.Remove(str.Find('ï¿½'), 1);
 ```
 
-wxFormBuilderは(c)記号を自動的にUTF-8に変換する。wxWidgets-2.8.9のANSI版では、著作権記号に余分なゴミ文字が付いて表示される。このハックは非Unicode（ANSI）の場合にそれを修正するものだ。
+wxFormBuilder は(c)記号を自動的に UTF-8 に変換する。wxWidgets-2.8.9 の ANSI 版では、著作権記号に余分なゴミ文字が付いて表示される。このハックは非 Unicode（ANSI）の場合にそれを修正するものだ。

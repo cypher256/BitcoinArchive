@@ -8,11 +8,11 @@ author: "bardiharborow"
 participants:
   - name: "bardiharborow"
     slug: "bardiharborow"
-description: "bitcoin/bitcoin Issue #7におけるbardiharborowの文脈投稿。サトシ言及の文脈。"
+description: "bitcoin/bitcoin Issue #7 における bardiharborow の文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
 tags:
   - "github"
 translationStatus: complete
 ---
 
-@gavinandresen、SPVクライアント用に別のサービスカテゴリ（NODE_SPV??）を追加する必要がある。そうすれば、他のピアからブロックの照会を受けずに動作できるようになる。
+@gavinandresen、SPV クライアント用に別のサービスカテゴリ（NODE_SPV??）を追加する必要がある。そうすれば、他のピアからブロックの照会を受けずに動作できるようになる。

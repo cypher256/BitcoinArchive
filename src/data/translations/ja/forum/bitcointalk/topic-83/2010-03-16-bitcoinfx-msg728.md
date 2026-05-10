@@ -8,7 +8,7 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック83におけるBitcoinFXの文脈投稿。msg731の前。"
+description: "BitcoinTalk トピック 83 における BitcoinFX の文脈投稿。msg731 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,8 +16,8 @@ translationStatus: complete
 
 良いアイデアだ。
 
-いずれ「ワンホップ」SSL、HTTP、ログイン保護付きプロキシサービス（最初のPsiphonプロジェクトに似たもの）を立ち上げて、bitcoinで支払いを受け付ける予定だ。
+いずれ「ワンホップ」SSL、HTTP、ログイン保護付きプロキシサービス（最初の Psiphon プロジェクトに似たもの）を立ち上げて、bitcoin で支払いを受け付ける予定だ。
 
-俺はイギリス在住なので、BBC iPlayerなどに使うのに良いだろう。😊 bitcoinユーザーと「制限された」国のユーザーを優先する。
+俺はイギリス在住なので、BBC iPlayer などに使うのに良いだろう。😊 bitcoin ユーザーと「制限された」国のユーザーを優先する。
 
 ファイルホスティングサービスに回す帯域はないだろうが、もしかしたら。

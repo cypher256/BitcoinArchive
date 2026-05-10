@@ -10,15 +10,15 @@ participants:
     slug: "odin"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Odinがスレッドを開始: Win7 64bit 前回のパッチ火曜日以降クラッシュする"
+description: "Odin がスレッドを開始: Win7 64bit 前回のパッチ火曜日以降クラッシュする"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-これは0.3.14-win32-setup.exeでの問題である。以前は（1時間前まで）2010年7月版のbitcoin.exeを実行していたが、それもクラッシュしており、クラッシュレポートは類似していた。そこで問題が修正されたか確認するためにアップグレードした。
+これは 0.3.14-win32-setup.exe での問題である。以前は（1時間前まで）2010年7月版の bitcoin.exe を実行していたが、それもクラッシュしており、クラッシュレポートは類似していた。そこで問題が修正されたか確認するためにアップグレードした。
 
-明確にしておくと、EXEを起動するとすぐにクラッシュが報告される。ログインするとWin7のクラッシュレポートが表示され、手動で起動しようとしても同様である。クラッシュレポートの先に表示されるダイアログは「The application was unable to start correctly (0xc0000005). Click OK to close the application.」である。
+明確にしておくと、EXE を起動するとすぐにクラッシュが報告される。ログインすると Win7 のクラッシュレポートが表示され、手動で起動しようとしても同様である。クラッシュレポートの先に表示されるダイアログは「The application was unable to start correctly (0xc0000005). Click OK to close the application.」である。
 
-また、可能であればアプリケーションのEXEにバージョン情報を付与してほしい。現在は0.0.0.0となっている。
+また、可能であればアプリケーションの EXE にバージョン情報を付与してほしい。現在は 0.0.0.0 となっている。
 

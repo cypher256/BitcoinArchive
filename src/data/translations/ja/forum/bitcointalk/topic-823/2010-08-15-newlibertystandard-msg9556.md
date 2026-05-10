@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック823におけるNewLibertyStandardの文脈投稿。msg9548の後。"
+description: "BitcoinTalk トピック 823 における NewLibertyStandard の文脈投稿。msg9548 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -18,7 +18,7 @@ quotes:
 translationStatus: complete
 ---
 
-バグ修正には0.3.9 rc2の4-way SSE2パッチも含まれるだろうか？含まれていることを教えてくれてありがとう、theymos。もし含まれていないなら、時間があるときに別のリリース候補を出してほしい。
+バグ修正には 0.3.9 rc2 の 4-way SSE2 パッチも含まれるだろうか？含まれていることを教えてくれてありがとう、theymos。もし含まれていないなら、時間があるときに別のリリース候補を出してほしい。
 
 <!-- quote: q1 -->
 > 74000から無効ブロックまでのトランザクションはどうなる？それらも今や全部無効なのか？

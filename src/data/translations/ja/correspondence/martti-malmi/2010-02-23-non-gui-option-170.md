@@ -1,5 +1,5 @@
 ---
-title: "Re: 非GUIオプション"
+title: "Re: 非 GUI オプション"
 date: 2010-02-23T13:19:51Z
 type: "correspondence"
 source: "malmi-email-archive"

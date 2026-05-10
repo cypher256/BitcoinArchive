@@ -1,5 +1,5 @@
 ---
-title: "Re: Hashcashの引用 — b-moneyの提案"
+title: "Re: Hashcash の引用 — b-money の提案"
 date: 2008-08-21T12:55:59Z
 type: "correspondence"
 source: "bitcoin-magazine"
@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "アダム・バックがHashcashの引用を確認し、ウェイ・ダイのb-money提案を参照するよう提案。この紹介がサトシをウェイ・ダイへの連絡とホワイトペーパーでのb-money引用につながった。"
+description: "アダム・バックが Hashcash 引用を確認し、ウェイ・ダイの b-money 提案を参照するよう提案。この紹介がサトシをダイへの連絡とホワイトペーパーでの b-money 引用につながった。"
 isSatoshi: false
 tags:
   - "hashcash"
@@ -21,7 +21,7 @@ tags:
 secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
-    note: "2024年2月、ロンドンで行われたCOPA対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書C/21）に5通の完全なメールチェーンが含まれていた。5通すべてがBitcoin Magazineによってスクリーンショット画像として再公開されている。"
+    note: "2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書 C/21）に 5 通の完全なメールチェーンが含まれていた。5 通すべてが Bitcoin Magazine によってスクリーンショット画像として再公開されている。"
 relatedEntries:
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
@@ -34,7 +34,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-アダム・バックは翌日に返信し、サトシが起草したHashcashの引用形式は問題ないと確認したうえで、関連先行研究として[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)のb-money提案を紹介した。次のサトシの行動を決定づけた中核的な一文は次の通りである。
+アダム・バックは翌日に返信し、サトシが起草した Hashcash の引用形式は問題ないと確認したうえで、関連先行研究として[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を紹介した。次のサトシの行動を決定づけた中核的な一文は次の通りである。
 
 <!-- speaker: Adam Back -->
 > b-moneyのアイデアは彼のウェブページに簡潔に書かれているだけで、論文としてはまとまっていない。

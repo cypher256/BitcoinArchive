@@ -1,5 +1,5 @@
 ---
-title: "Re: wallet.datの自動バックアップ"
+title: "Re: wallet.dat の自動バックアップ"
 date: 2010-08-26T00:57:40.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「wallet.datの自動バックアップ」におけるサトシ・ナカモトの返信。"
+description: "スレッド「wallet.dat の自動バックアップ」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -22,9 +22,9 @@ translationStatus: complete
 
 nelisky、あなたと同じアイデアを投稿し始めていた。
 
-ウォレットをロックし、フラッシュし、wallet.datを指定した場所にコピーしてからアンロックするjson-rpcコマンドはどうだろうか？プールされた鍵よりも小さなプロジェクトなので、先に実装できるかもしれない。
+ウォレットをロックし、フラッシュし、wallet.dat を指定した場所にコピーしてからアンロックする json-rpc コマンドはどうだろうか？プールされた鍵よりも小さなプロジェクトなので、先に実装できるかもしれない。
 
-ファイルをコピーする最もシンプルでポータブルな方法は何だろうか？Boostに何かあるか？
+ファイルをコピーする最もシンプルでポータブルな方法は何だろうか？Boost に何かあるか？
 
 名前は何がよいだろうか？例えば：
 backupwallet <destination>

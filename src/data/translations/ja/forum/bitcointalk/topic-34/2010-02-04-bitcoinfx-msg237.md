@@ -8,12 +8,12 @@ author: "BitcoinFX"
 participants:
   - name: "BitcoinFX"
     slug: "bitcoinfx"
-description: "BitcoinTalkトピック34におけるBitcoinFXの文脈投稿。msg250の前。"
+description: "BitcoinTalk トピック 34 における BitcoinFX の文脈投稿。msg250 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ありがとうSmokeTM。
+ありがとう SmokeTM。
 
-少額寄付は2件とも無事に受信できた。😊
+少額寄付は 2件とも無事に受信できた。😊

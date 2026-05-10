@@ -1,5 +1,5 @@
 ---
-title: "Re: NAT環境下での複数Bitcoinマシンの設定"
+title: "Re: NAT 環境下での複数 Bitcoin マシンの設定"
 date: 2011-05-18T12:07:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Dominic Sayers"
 participants:
   - name: "Dominic Sayers"
     slug: "dominic-sayers"
-description: "BitcoinTalkトピック54におけるDominic Sayersの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 54 における Dominic Sayers の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -28,8 +28,8 @@ translationStatus: complete
 > 1台目が落ちた場合の冗長化のためには、外向きに接続する2台を用意し、残りはその両方に接続させればいい。最初の2台は普通に起動し、残りはこのように起動する。
 > bitcoin -connect= -connect=
 
-最初の主張（ポートを1台にしかフォワードできないという点）には同意する。
+最初の主張（ポートを 1 台にしかフォワードできないという点）には同意する。
 
-したがって、2つ目の主張がよくわからない。これでどうやって冗長化が達成されるんだ？2台のうち1台しかフォワードされたトラフィックを受け取れない。その1台が落ちたら接続が失われる（私の知る限りでは）。
+したがって、2 つ目の主張がよくわからない。これでどうやって冗長化が達成されるんだ？2 台のうち 1 台しかフォワードされたトラフィックを受け取れない。その 1 台が落ちたら接続が失われる（私の知る限りでは）。
 
 私が馬鹿なんだろうか？

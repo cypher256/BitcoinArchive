@@ -1,5 +1,5 @@
 ---
-title: "「誰かコードを書いてくれないか？」 — ニック・サボ、bit goldの実装を求める"
+title: "「誰かコードを書いてくれないか？」 — ニック・サボ、bit gold の実装を求める"
 date: 2008-04-27T00:00:00Z
 type: "article"
 source: "unenumerated"
@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ニック・サボが自身のブログでbit goldの実装協力を求めるが反応なし。6ヶ月後、サトシ・ナカモトがビットコイン論文を公開した。"
+description: "ニック・サボが自身のブログで bit gold の実装協力を求めるが反応なし。6ヶ月後、サトシ・ナカモトがビットコイン論文を公開した。"
 isSatoshi: false
 tags:
   - "nick-szabo"
@@ -36,4 +36,4 @@ translationStatus: complete
 
 ビットゴールドはデモ——実験的な市場（例えば、本物のシステムに必要な複雑なセキュリティの代わりに信頼できる第三者を置いたもの）があれば、大いに役立つのだが。誰かコードを書くのを手伝ってくれないか？
 
-*[補足：2008年4月、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が自身のブログ「Unenumerated」のコメント欄に投稿。この呼びかけに公に応じる者はいなかった。6ヶ月後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が[ビットコインのホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を公開した——bit goldの未解決問題の多くを解決したシステムだった。サボのbit goldに関するオリジナルのブログ記事は2005年12月付だが、ブログのタイムスタンプが後に変更されていたことが判明しており、正確な時系列は複雑になっている。]*
+*[補足：2008年4月、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が自身のブログ「Unenumerated」のコメント欄に投稿。この呼びかけに公に応じる者はいなかった。6ヶ月後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が[ビットコインのホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を公開した——bit gold の未解決問題の多くを解決したシステムだった。サボの bit gold に関するオリジナルのブログ記事は 2005年12月付だが、ブログのタイムスタンプが後に変更されていたことが判明しており、正確な時系列は複雑になっている。]*

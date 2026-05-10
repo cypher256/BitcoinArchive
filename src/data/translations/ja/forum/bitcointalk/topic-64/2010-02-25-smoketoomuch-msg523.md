@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック64におけるSmokeTooMuchの文脈投稿。msg561の前。"
+description: "BitcoinTalk トピック 64 における SmokeTooMuch の文脈投稿。msg561 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

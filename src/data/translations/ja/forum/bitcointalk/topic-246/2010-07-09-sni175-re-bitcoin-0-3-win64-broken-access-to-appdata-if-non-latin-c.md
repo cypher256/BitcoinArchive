@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
+title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合"
 date: 2010-07-09T15:37:05.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合」におけるサトシ・ナカモトの返信。"
+description: "スレッド「bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-XP上で非下位ASCIIのアカウント名でテストしてバグを確認し、その後新しいGetDefaultDataDirで修正されたことをテストした。この変更はSVNのリビジョン102だ。
+XP 上で非下位 ASCII のアカウント名でテストしてバグを確認し、その後新しい GetDefaultDataDir で修正されたことをテストした。この変更は SVN のリビジョン 102 だ。

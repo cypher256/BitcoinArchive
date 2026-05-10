@@ -1,5 +1,5 @@
 ---
-title: "Re: Linux 64ビット用バージョン0.3.8.1アップデート"
+title: "Re: Linux 64 ビット用バージョン 0.3.8.1 アップデート"
 date: 2010-08-10T23:46:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVN rev 128で32ビットビルドのSSE2を無効化したことを報告。"
+description: "サトシ・ナカモトが SVN rev 128 で 32 ビットビルドの SSE2 を無効化したことを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVN rev 128：32ビットでSSE2を無効化。これはMSVCとGCCでのみ無効化される可能性がある。他のコンパイラーは異なる64ビット定義を持っているかもしれない。
+SVN rev 128：32 ビットで SSE2 を無効化。これは MSVC と GCC でのみ無効化される可能性がある。他のコンパイラーは異なる 64 ビット定義を持っているかもしれない。

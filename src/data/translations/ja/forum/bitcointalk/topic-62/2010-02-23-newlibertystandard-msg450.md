@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinアドレスの衝突"
+title: "Re: Bitcoin アドレスの衝突"
 date: 2010-02-23T19:04:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック62におけるNewLibertyStandardの文脈投稿。msg453で引用。"
+description: "BitcoinTalk トピック 62 における NewLibertyStandard の文脈投稿。msg453 で引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 
 説明ありがとう。全部理解できたと思う。
 
-生成されたbitcoinは、Bitcoinのメインウィンドウに現在表示されているアドレスで暗号化されるのか？ かなり前にメールで言及したかもしれないが、将来のバージョンで、自分のbitcoinのうちどれがどのアドレスで暗号化されているかを確認できるようになると素晴らしいだろう。
+生成された bitcoin は、Bitcoin のメインウィンドウに現在表示されているアドレスで暗号化されるのか？ かなり前にメールで言及したかもしれないが、将来のバージョンで、自分の bitcoin のうちどれがどのアドレスで暗号化されているかを確認できるようになると素晴らしいだろう。

@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-スイッチ名を-disablesafemodeに変更した。
+スイッチ名を-disablesafemode に変更した。

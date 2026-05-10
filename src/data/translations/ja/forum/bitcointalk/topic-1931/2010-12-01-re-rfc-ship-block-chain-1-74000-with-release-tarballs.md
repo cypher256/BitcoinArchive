@@ -1,5 +1,5 @@
 ---
-title: "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？"
+title: "Re: RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？"
 date: 2010-12-01T21:25:39.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「RFC: リリースtarballにブロックチェーン1-74000を同梱する？」におけるサトシ・ナカモトの返信。"
+description: "スレッド「RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-良い最適化だ。次にSVNを更新する際に追加する。
+良い最適化だ。次に SVN を更新する際に追加する。
 
 より一般的には、これも検討できるだろう：
 
@@ -31,4 +31,4 @@ translationStatus: complete
                          DB_INIT_LOG   |
 ```
 
-そうすれば、ウォレット書き込み後のフラッシュにはCDB::Close()のdbenv.txn_checkpoint(0, 0, 0)に依存することになる。
+そうすれば、ウォレット書き込み後のフラッシュには CDB::Close()の dbenv.txn_checkpoint(0, 0, 0)に依存することになる。

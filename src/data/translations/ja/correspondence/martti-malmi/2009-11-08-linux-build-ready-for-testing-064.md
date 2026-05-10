@@ -1,5 +1,5 @@
 ---
-title: "Re: Linuxビルドのテスト準備完了"
+title: "Re: Linux ビルドのテスト準備完了"
 date: 2009-11-08T09:50:44Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがLinuxビルドの正常動作を確認し、ビットコインがLinuxで動作するという重要なマイルストーンの達成を祝福。"
+description: "マルミが Linux ビルドの正常動作を確認し、ビットコインが Linux で動作するという重要なマイルストーンの達成を祝福。"
 isSatoshi: false
 tags:
   - "correspondence"

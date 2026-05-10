@@ -93,7 +93,7 @@ translationStatus: complete
 
 「Project Bitcoin」 の方法論的制約 — 授業課題規模の標本サイズ、過去の言説から固定された候補者集合、査読の不在、生数値データの非公開 — は、その後の批判的論評の対象となった。最も多く引用される批判は[デイヴィッド・ジェラードの 2018 年 12 月記事「No, Nick Szabo wasn't Satoshi Nakamoto in 2014 either」](https://davidgerard.co.uk/blockchain/2018/12/16/no-nick-szabo-wasnt-satoshi-in-2014-either/)であり、話題的に重なる候補集合（デジタルキャッシュ・P2P ネットワーク・暗号学について書いた書き手）に対する文体計量分析は、共有された主題語彙と共有された個人スタイルを構造的に混同してしまうと主張する。
 
-この方法論的観察は、フロリアン・カフィエロが[2026 年カレイロウ『ニューヨーク・タイムズ』 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)について提起した同じ留保や、[バス・ヴァン・ドルストの 2024 年「Where is Satoshi?」 オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)が明示的にカタログ化した限界とも並行する — すなわち、文体計量による著者帰属は、候補者の事前選定・距離指標・コーパス境界に対して感受性が高く、これらの要素が首位の名前を変える。
+この方法論的観察は、フロリアン・カフィエロが [2026 年カレイロウ『ニューヨーク・タイムズ』 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)について提起した同じ留保や、[バス・ヴァン・ドルストの 2024 年「Where is Satoshi?」 オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)が明示的にカタログ化した限界とも並行する — すなわち、文体計量による著者帰属は、候補者の事前選定・距離指標・コーパス境界に対して感受性が高く、これらの要素が首位の名前を変える。
 
 **サトシ著者性に関する文体計量の系譜上の位置づけ：**
 

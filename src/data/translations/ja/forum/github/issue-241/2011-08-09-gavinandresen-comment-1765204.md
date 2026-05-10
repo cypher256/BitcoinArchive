@@ -1,5 +1,5 @@
 ---
-title: "Re: -datadir引数使用時にbitcoinが.confを見つけられない/読み込めない"
+title: "Re: -datadir 引数使用時に bitcoin が.conf を見つけられない/読み込めない"
 date: 2011-08-09T17:02:24.000Z
 type: "forum-post"
 source: "github"
@@ -8,7 +8,7 @@ author: "gavinandresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "bitcoin/bitcoin Issue #241におけるgavinandresen のコメント。サトシへの言及。"
+description: "bitcoin/bitcoin Issue #241 における gavinandresen のコメント。サトシへの言及。"
 isSatoshi: false
 tags:
   - "github"
@@ -17,4 +17,4 @@ translationStatus: complete
 
 修正しない――これはこういうものである。
 
-（記録のために言うと、サトシは私の最初の実装を書き直して、.confファイルをtestnet/フォルダーの上位に配置した。だから皆の意見には同意する。しかし、今またこれを変更するのは、その変更が引き起こす混乱に見合わないと考える。）
+（記録のために言うと、サトシは私の最初の実装を書き直して、.conf ファイルを testnet/フォルダーの上位に配置した。だから皆の意見には同意する。しかし、今またこれを変更するのは、その変更が引き起こす混乱に見合わないと考える。）

@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoindでIPアドレスへのトランザクション"
+title: "Re: bitcoind で IP アドレスへのトランザクション"
 date: 2010-08-05T17:28:40.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがIPアドレスへの送金がbitcoindに実装されていないことを説明。"
+description: "サトシ・ナカモトが IP アドレスへの送金が bitcoind に実装されていないことを説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -8,12 +8,12 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック343におけるSmokeTooMuchの文脈投稿。msg2880の前。"
+description: "BitcoinTalk トピック 343 における SmokeTooMuch の文脈投稿。msg2880 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-生成レートはhash/sと1つのハッシュが正解である確率に依存する。
+生成レートは hash/s と 1 つのハッシュが正解である確率に依存する。
 
 基本的に khash/s * 運の要素 = 生成されたビットコイン。

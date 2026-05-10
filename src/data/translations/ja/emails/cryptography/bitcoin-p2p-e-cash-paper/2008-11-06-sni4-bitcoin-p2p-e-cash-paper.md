@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "ビットコインが金融の自由のための「軍拡競争における大きな戦い」であるとサトシが主張し、GnutellaやTorのような分散型P2Pネットワークが政府による閉鎖に対して堅牢であることを述べた。"
+description: "ビットコインが金融の自由のための「軍拡競争における大きな戦い」であるとサトシが主張し、Gnutella や Tor のような分散型 P2P ネットワークが政府による閉鎖に対して堅牢であることを述べた。"
 isSatoshi: true
 tags:
   - "cryptography"
@@ -32,7 +32,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 その通り、しかし我々は軍拡競争における大きな戦いに勝ち、数年間の新たな自由の領域を獲得することができる。
 
-政府はNapsterのような中央集権型ネットワークの頭を切り落とすことには長けているが、GnutellaやTorのような純粋なP2Pネットワークは持ちこたえているようだ。
+政府は Napster のような中央集権型ネットワークの頭を切り落とすことには長けているが、Gnutella や Tor のような純粋な P2P ネットワークは持ちこたえているようだ。
 
 Satoshi
 

@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ブロックサイズ制限引き上げパッチの使用に対し警告。theymosに同意してネットワーク互換性の問題を指摘し、必要になった時に段階的に導入することを提案。"
+description: "ブロックサイズ制限引き上げパッチの使用に対し警告。theymos に同意してネットワーク互換性の問題を指摘し、必要になった時に段階的に導入することを提案。"
 isSatoshi: true
 tags:
   - "block-size"

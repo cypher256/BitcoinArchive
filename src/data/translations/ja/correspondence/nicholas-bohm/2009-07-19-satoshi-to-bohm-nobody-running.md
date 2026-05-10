@@ -4,14 +4,14 @@ date: 2009-07-19T00:00:00Z
 type: "correspondence"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
-sourceNote: "COPA対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
+sourceNote: "COPA 対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "ボームの接続問題に対するサトシの率直な回答。他にノードを実行している人がいないかもしれないと認めた。IPアドレスが変わったかを尋ね、新しいユーザーが接続できるようサーバーをオンラインに保つよう勧めた。"
+description: "ボームの接続問題に対するサトシの率直な回答。他にノードを実行する人がいないかもしれないと認めた。IP アドレスが変わったかを尋ね、新ユーザーが接続できるよう IP を保つよう勧めた。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -33,6 +33,6 @@ translationStatus: complete
 > 今、他に誰も実行していないだけかもしれない。
 
 <!-- speaker: narrator -->
-彼は[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)のIPアドレスが変わったかどうかを尋ね、新しいユーザーがソフトウェアを起動した際に少なくとも一つのノードに接続できるよう、サーバーをオンラインに保つことを勧めた。
+彼は[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)の IP アドレスが変わったかどうかを尋ね、新しいユーザーがソフトウェアを起動した際に少なくとも一つのノードに接続できるよう、サーバーをオンラインに保つことを勧めた。
 
-このやり取りは、2009年7月のビットコインの危うい存在を鮮明に描いている。ローンチから約6ヶ月後、ネットワークは極めて小規模であり、サトシは他にアクティブなノードが存在しない可能性を本気で心配していた。この時期のビットコインの存続は、ボーム、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)といった少数の献身的な初期採用者がノードを稼働し続けることにかかっていた。
+このやり取りは、2009年7月のビットコインの危うい存在を鮮明に描いている。ローンチから約 6ヶ月後、ネットワークは極めて小規模であり、サトシは他にアクティブなノードが存在しない可能性を本気で心配していた。この時期のビットコインの存続は、ボーム、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)といった少数の献身的な初期採用者がノードを稼働し続けることにかかっていた。

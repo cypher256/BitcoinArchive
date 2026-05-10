@@ -1,5 +1,5 @@
 ---
-title: "Re: 転送: Bitcoinに関する質問"
+title: "Re: 転送: Bitcoin に関する質問"
 date: 2011-01-25T18:34:03Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがBitcoinホワイトペーパーの公開は2009年ではなく2008年であると明確にし、Wikipediaの誤記修正を呼びかけ。"
+description: "サトシが Bitcoin ホワイトペーパーの公開は 2009年ではなく 2008年であると明確にし、Wikipedia の誤記修正を呼びかけ。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -27,9 +27,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-論文は2008年に公開された。
+論文は 2008年に公開された。
 
-誰かWikipediaを修正する必要がある。論文が2009年に公開されたと誤って記載されている。論文はソフトウェアよりも先にリリースされた。
+誰か Wikipedia を修正する必要がある。論文が 2009年に公開されたと誤って記載されている。論文はソフトウェアよりも先にリリースされた。
 
 
 <!-- quote: q1 -->

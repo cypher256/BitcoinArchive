@@ -8,12 +8,12 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック287におけるthroughputの文脈投稿。msg8810の前。"
+description: "BitcoinTalk トピック 287 における throughput の文脈投稿。msg8810 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-つまり、Bitcoinネットワーク全体をDDoS攻撃する能力は、ネットワーク接続やノードの数ではなく、BTCの購買力によってのみ制限されるということか？
+つまり、Bitcoin ネットワーク全体を DDoS 攻撃する能力は、ネットワーク接続やノードの数ではなく、BTC の購買力によってのみ制限されるということか？
 
 ところで、いつかネットワークをテストしないか？
 既知のアドレスのリストに小さなトランザクションを送信するプロセスを自動化するのは簡単だ。

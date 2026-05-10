@@ -1,5 +1,5 @@
 ---
-title: "Re: 初心者のテスト - 1ドルで写真を買いたい人はいる？"
+title: "Re: 初心者のテスト - 1 ドルで写真を買いたい人はいる？"
 date: 2010-01-28T10:24:21.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック25におけるThe Madhatterの文脈投稿。msg173の前。"
+description: "BitcoinTalk トピック 25 における The Madhatter の文脈投稿。msg173 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.9 rc1、テストお願いします"
+title: "Re: バージョン 0.3.9 rc1、テストお願いします"
 date: 2010-08-15T18:11:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「バージョン0.3.9 rc1、テストをお願いします」におけるサトシ・ナカモトの返信。"
+description: "スレッド「バージョン 0.3.9 rc1、テストをお願いします」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがテストバージョン5だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況を説明。"
+description: "マルミがテストバージョン 5 だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況を説明。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-テストバージョン5だったと思いますが、完全には確かではありません。Linux版をノートパソコンで実行していて、異なる場所間で持ち運び、電源を切る代わりにハイバネート機能を使用しています。
+テストバージョン 5 だったと思いますが、完全には確かではありません。Linux 版をノートパソコンで実行していて、異なる場所間で持ち運び、電源を切る代わりにハイバネート機能を使用しています。
 
 <!-- tone-skip -->
 > <!-- speaker: Satoshi Nakamoto -->

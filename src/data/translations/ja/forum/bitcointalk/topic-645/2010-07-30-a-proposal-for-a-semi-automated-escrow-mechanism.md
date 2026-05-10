@@ -10,7 +10,7 @@ participants:
     slug: "olipro"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Oliproがスレッドを開始: 半自動エスクローメカニズムの提案"
+description: "Olipro がスレッドを開始: 半自動エスクローメカニズムの提案"
 isSatoshi: false
 tags: []
 translationStatus: complete

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-21T17:31:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCパスワード」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC パスワード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-boost::program_optionsは同じ「key=value」形式を持っている。Gavinが指摘したように、型付き値抽出のような難解なC++構文に踏み込むことなく、シンプルなパーサーとして使用できる。後で必要に応じてより多くの機能を使うことができる。
+boost::program_options は同じ「key=value」形式を持っている。Gavin が指摘したように、型付き値抽出のような難解な C++構文に踏み込むことなく、シンプルなパーサーとして使用できる。後で必要に応じてより多くの機能を使うことができる。
 
-パラメーターとしてのパスワードではなく、HTTPベーシック認証で進めよう。
+パラメーターとしてのパスワードではなく、HTTP ベーシック認証で進めよう。

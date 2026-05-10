@@ -1,5 +1,5 @@
 ---
-title: "Re: 8333以外のポートで実行する"
+title: "Re: 8333 以外のポートで実行する"
 date: 2010-09-12T17:40:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「8333以外のポートでの実行」におけるサトシ・ナカモトの返信。"
+description: "スレッド「8333 以外のポートでの実行」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,8 +27,8 @@ quotes:
 > SVNリビジョン125に対応した更新版のパッチはあるか？また、BerkeleyDBを排他モードで開いているなら、ファイルロックは不要ではないか？排他モードでは開いていない――自分でテストして確認した。
 <!-- /tone-skip -->
 
-BerkeleyDBを排他的に開く方法はあるか？
+BerkeleyDB を排他的に開く方法はあるか？
 
-DB_PRIVATEは最悪の両方のデメリットを持つ。DB_PRIVATEは排他的ではないが、他のプロセスが同時にアクセスしようとすると問題が起きる。
+DB_PRIVATE は最悪の両方のデメリットを持つ。DB_PRIVATE は排他的ではないが、他のプロセスが同時にアクセスしようとすると問題が起きる。
 
-rev 153でDB_PRIVATEフラグを削除した。
+rev 153 で DB_PRIVATE フラグを削除した。

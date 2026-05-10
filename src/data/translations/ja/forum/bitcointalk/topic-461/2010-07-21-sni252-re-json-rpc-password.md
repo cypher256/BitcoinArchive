@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-21T16:07:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCパスワード」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC パスワード」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,23 +26,23 @@ quotes:
 > Linuxには「典型的な」設定ファイルというものはないと思う！
 <!-- /tone-skip -->
 
- 1ファイルが"key value"を使用
- 5ファイルが"key=value"を使用
+ 1 ファイルが"key value"を使用
+ 5 ファイルが"key=value"を使用
 調査ありがとう！
 
-「key value」は少し不自然に感じる。キーと値の間に、代入を示唆するより明確な区切りがあるべきだ。スペースを使う人は、自分の言語のsplit関数を使って手を抜いているだけかもしれない。
+「key value」は少し不自然に感じる。キーと値の間に、代入を示唆するより明確な区切りがあるべきだ。スペースを使う人は、自分の言語の split 関数を使って手を抜いているだけかもしれない。
 ```
 key=some full sentence with spaces in it.  # こちらの方がより明確
 key some full sentence with spaces in it.  # これよりも
 ```
 
-それでは、自前パースのmapConfigで行こう。構文:
+それでは、自前パースの mapConfig で行こう。構文:
 ```
 # コメント
 key=value
 ```
 
-ファイル拡張子は.conf。ファイル名は~/.bitcoin/settings.confか、それとも~/.bitcoin/bitcoin.confか、それとも他の何かか？
+ファイル拡張子は.conf。ファイル名は~/.bitcoin/settings.conf か、それとも~/.bitcoin/bitcoin.conf か、それとも他の何かか？
 
 キーと値の先頭と末尾の空白を除去した方が良いと思う。
 ```

@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-eurekafagさんありがとう。ロシア語翻訳をSVN rev 160に追加した。
+eurekafag さんありがとう。ロシア語翻訳を SVN rev 160 に追加した。

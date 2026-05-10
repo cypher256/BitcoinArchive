@@ -10,7 +10,7 @@ participants:
     slug: "lfm"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "lfmがスレッドを開始: オーバーフローバグ深刻"
+description: "lfm がスレッドを開始: オーバーフローバグ深刻"
 isSatoshi: false
 tags: []
 relatedEntries:
@@ -23,7 +23,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ブロック高74638のブロックがネットワークのバグを悪用したようである。整数オーバーフローを利用してトランザクション合計をマイナスにしている。2つのトランザクション出力は以下の通り：
+ブロック高 74638 のブロックがネットワークのバグを悪用したようである。整数オーバーフローを利用してトランザクション合計をマイナスにしている。2 つのトランザクション出力は以下の通り：
 
  out Value:92233720368.54(7ffffffffff85ee0) out Value:92233720368.54(7ff
  ffffffff85ee0)
@@ -32,5 +32,5 @@ translationStatus: complete
 
 編集：
 (satoshi)
-0.3.10パッチのダウンロードリンクはこちら：
+0.3.10 パッチのダウンロードリンクはこちら：
 [topic 827](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/)

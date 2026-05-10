@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-02T09:17:07.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalkトピック648におけるGround Loopの投稿。"
+description: "BitcoinTalk トピック 648 における Ground Loop の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete

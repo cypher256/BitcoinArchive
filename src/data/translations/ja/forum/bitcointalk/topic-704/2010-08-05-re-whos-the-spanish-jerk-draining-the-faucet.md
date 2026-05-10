@@ -1,5 +1,5 @@
 ---
-title: "Re: Faucetを使い果たしているスペイン人は誰だ？"
+title: "Re: Faucet を使い果たしているスペイン人は誰だ？"
 date: 2010-08-05T17:06:03.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがBitcoin FaucetのIPベースのレート制限と配布量の削減について議論。"
+description: "サトシ・ナカモトが Bitcoin Faucet の IP ベースのレート制限と配布量の削減について議論。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

@@ -1,5 +1,5 @@
 ---
-title: "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
+title: "Re: 提案：Bitcoin と一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T19:41:02.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1545におけるShadowOfHarbringerの文脈投稿。after msg18250, サトシを引用."
+description: "BitcoinTalk トピック 1545 における ShadowOfHarbringer の文脈投稿。after msg18250, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -27,6 +27,6 @@ translationStatus: complete
 >
 > もしメッセージシステムを作るなら、bitcoinネットワークと並行する別のシステムにすべきだ。メッセージはblock chainに記録すべきではない。メッセージは送信者を証明するためにbitcoinアドレスのキーペアで署名すればよい。
 
-システムの仕組みを正確には理解していなかったようだ。つまりbitcoinと一緒にメッセージを送ると、それも長い間ずっとblock chainに永久保存されることになる。
+システムの仕組みを正確には理解していなかったようだ。つまり bitcoin と一緒にメッセージを送ると、それも長い間ずっと block chain に永久保存されることになる。
 
 あなたの言う通りだな、satoshi。

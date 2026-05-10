@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック1063におけるmizerydearia の文脈投稿。"
+description: "BitcoinTalk トピック 1063 における mizerydearia の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -30,7 +30,7 @@ translationStatus: complete
 
 サトシ：**バグ追跡システムを用意してもらえないか？**（サトシに気づかれたため、もう目立つ必要がなくなりサイズを縮小。もともと少しユーモアのつもりだった。）
 
-自分のGentoo Linux initスクリプトでの回避策：
+自分の Gentoo Linux init スクリプトでの回避策：
 
 ```ini
 BITCOIN_OPTS="-min"これにより `bitcoind "-min"` として実行される。

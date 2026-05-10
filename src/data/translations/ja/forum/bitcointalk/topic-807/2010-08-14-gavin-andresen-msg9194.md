@@ -1,5 +1,5 @@
 ---
-title: "Re: sendtoaddress APIコールの変更提案"
+title: "Re: sendtoaddress API コールの変更提案"
 date: 2010-08-14T13:46:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック807におけるギャビン・アンドレセンの文脈投稿。after msg9134, サトシを引用."
+description: "BitcoinTalk トピック 807 におけるギャビン・アンドレセンの文脈投稿。after msg9134, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2011-06-27T12:16:26.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "galaxyAbstractor"
 participants:
   - name: "galaxyAbstractor"
     slug: "galaxyabstractor"
-description: "BitcoinTalkトピック63におけるgalaxyAbstractorの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 63 における galaxyAbstractor の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:

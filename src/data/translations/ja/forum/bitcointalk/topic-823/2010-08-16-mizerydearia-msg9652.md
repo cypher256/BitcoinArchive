@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック823におけるmizerydeariaの文脈投稿。msg9648の後。"
+description: "BitcoinTalk トピック 823 における mizerydearia の文脈投稿。msg9648 の後。"
 isSatoshi: false
 tags: []
 quotes:

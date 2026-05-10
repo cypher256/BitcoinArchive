@@ -1,5 +1,5 @@
 ---
-title: "Webページのアイデア：次の予測される難易度変更"
+title: "Web ページのアイデア：次の予測される難易度変更"
 date: 2010-07-31T01:32:08.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが次の難易度調整を予測するWebページのアイデアと計算式を提案。"
+description: "サトシ・ナカモトが次の難易度調整を予測する Web ページのアイデアと計算式を提案。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-誰かが（[http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php)にある便利な計算機のような）次の難易度調整を予測するページを作ったら素晴らしいと思う。
+誰かが（[http://www.alloscomp.com/bitcoin/calculator.php](http://www.alloscomp.com/bitcoin/calculator.php) にある便利な計算機のような）次の難易度調整を予測するページを作ったら素晴らしいと思う。
 
 予測される難易度調整倍率 =
 
@@ -24,7 +24,7 @@ translationStatus: complete
  ------------------------------------<br>
  前回調整からの経過時間 / 14日
 
-例えば、次の調整まで半分のところに7日ではなく3.5日で到達した場合、難易度は倍になると予想される：
+例えば、次の調整まで半分のところに 7日ではなく 3.5日で到達した場合、難易度は倍になると予想される：
 
  (1008/2016) / (3.5/14) = 0.5/0.25 = 2.0
 

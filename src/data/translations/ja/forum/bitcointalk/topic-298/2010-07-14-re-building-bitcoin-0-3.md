@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin 0.3のビルド"
+title: "Re: Bitcoin 0.3 のビルド"
 date: 2010-07-14T17:34:50.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Bitcoin 0.3のビルド」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Bitcoin 0.3 のビルド」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-wxWidgets 2.8では動作しない。wxWidgets 2.9が必要だ。残念ながら、wxWidgets 2.9のDebianパッケージはまだない。
+wxWidgets 2.8 では動作しない。wxWidgets 2.9 が必要だ。残念ながら、wxWidgets 2.9 の Debian パッケージはまだない。

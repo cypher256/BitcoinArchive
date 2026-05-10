@@ -1,5 +1,5 @@
 ---
-title: "Re: 新しいgetwork"
+title: "Re: 新しい getwork"
 date: 2010-11-26T21:31:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「新しいgetwork」におけるサトシ・ナカモトの返信。"
+description: "スレッド「新しい getwork」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-それがまさにその動作だ。true/falseを返す。
+それがまさにその動作だ。true/false を返す。

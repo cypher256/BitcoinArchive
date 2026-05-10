@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-13T22:27:25.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック648におけるNewLibertyStandardの文脈投稿。msg9145の前。"
+description: "BitcoinTalk トピック 648 における NewLibertyStandard の文脈投稿。msg9145 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

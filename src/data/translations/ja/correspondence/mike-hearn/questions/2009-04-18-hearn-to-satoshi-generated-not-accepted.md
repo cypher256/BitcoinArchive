@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンが50コインを返送し、「Generated (not accepted)」エラーとトランザクションにメタデータを添付するアイデアについて質問する。"
+description: "マイク・ハーンが 50 コインを返送し、「Generated (not accepted)」エラーとトランザクションにメタデータを添付するアイデアについて質問する。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Mike Hearn -->
-ありがとう。50を返送したので、これでおあいこだ。
+ありがとう。50 を返送したので、これでおあいこだ。
 
 なぜか、あなたからの送金は、アドレス帳に追加したにもかかわらず「From: unknown」と表示される。
 

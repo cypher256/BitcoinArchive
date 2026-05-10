@@ -1,5 +1,5 @@
 ---
-title: "Re: fClientの削除"
+title: "Re: fClient の削除"
 date: 2013-01-14T19:41:14.000Z
 type: "forum-post"
 source: "github"
@@ -8,11 +8,11 @@ author: "gavinandresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "bitcoin/bitcoin PR #2161におけるgavinandresenのコメント。サトシへの言及。"
+description: "bitcoin/bitcoin PR #2161 における gavinandresen のコメント。サトシへの言及。"
 isSatoshi: false
 tags:
   - "github"
 translationStatus: complete
 ---
 
-@jgarzik：fClientの作業はここの「blockheaders」ブランチにある。サトシから受け取ったコードスニペットは署名キャッシュだけで、すでにマージ済みである。
+@jgarzik：fClient の作業はここの「blockheaders」ブランチにある。サトシから受け取ったコードスニペットは署名キャッシュだけで、すでにマージ済みである。

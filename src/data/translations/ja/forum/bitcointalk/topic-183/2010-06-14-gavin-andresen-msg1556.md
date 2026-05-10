@@ -1,5 +1,5 @@
 ---
-title: "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう"
+title: "Re: freebitcoins.appspot.com で 5 Bitcoin を無料で入手しよう"
 date: 2010-06-14T01:23:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,14 +8,14 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック183におけるギャビン・アンドレセンの文脈投稿。msg1620の前。"
+description: "BitcoinTalk トピック 183 におけるギャビン・アンドレセンの文脈投稿。msg1620 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ありがとう、lachesis――そのバグを見つけてくれたお礼に50を送る！
+ありがとう、lachesis――そのバグを見つけてくれたお礼に 50 を送る！
 
 鍵を変更してデバッグをオフにした。明日もう少し目が覚めてからセキュリティをもう少し強化する。
 
-そしてwobber：いいや、leetは送っていない。
+そして wobber：いいや、leet は送っていない。

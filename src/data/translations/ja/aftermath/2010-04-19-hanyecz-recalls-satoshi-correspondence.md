@@ -11,7 +11,7 @@ participants:
     slug: "laszlo-hanyecz"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ラズロ・ハニエツが2010年4月のmacOS移植期のサトシとのメールを回想。原文は未公開、後年の取材で「パラノイア的」「ボスっぽい」「変」と語った。"
+description: "ラズロ・ハニエツが 2010年4月の macOS 移植期のサトシとのメールを回想。原文は未公開、後年の取材で「パラノイア的」「ボスっぽい」「変」と語った。"
 isSatoshi: false
 tags:
   - "early-developer"

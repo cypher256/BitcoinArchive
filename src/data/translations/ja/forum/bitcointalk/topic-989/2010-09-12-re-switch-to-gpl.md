@@ -1,5 +1,5 @@
 ---
-title: "Re: GPLへの切り替え"
+title: "Re: GPL への切り替え"
 date: 2010-09-12T19:24:53.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「GPLへの切り替え」におけるサトシ・ナカモトの返信。"
+description: "スレッド「GPL への切り替え」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,8 +18,8 @@ translationStatus: complete
 
 唯一のライブラリがクローズドソースなら、オープンソースのものを作るプロジェクトが生まれる。
 
-唯一のライブラリがGPLなら、非GPLのものを作るプロジェクトが生まれる。
+唯一のライブラリが GPL なら、非 GPL のものを作るプロジェクトが生まれる。
 
-最良のライブラリがMIT、Boost、新BSDまたはパブリックドメインなら、書き直しを止められる。
+最良のライブラリが MIT、Boost、新 BSD またはパブリックドメインなら、書き直しを止められる。
 
-GPLがオペレーティングシステムにとって良いライセンスであることは疑いない。特に非GPLコードがOSとインターフェースすることが許可されているので。小さなプロジェクトについては、クローズドソースによる乗っ取りへの恐れは過度だと思う。
+GPL がオペレーティングシステムにとって良いライセンスであることは疑いない。特に非 GPL コードが OS とインターフェースすることが許可されているので。小さなプロジェクトについては、クローズドソースによる乗っ取りへの恐れは過度だと思う。

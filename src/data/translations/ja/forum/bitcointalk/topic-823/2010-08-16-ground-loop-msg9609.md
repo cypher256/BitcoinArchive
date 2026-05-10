@@ -8,7 +8,7 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalkトピック823におけるGround Loopの文脈投稿。msg9624の前。"
+description: "BitcoinTalk トピック 823 における Ground Loop の文脈投稿。msg9624 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

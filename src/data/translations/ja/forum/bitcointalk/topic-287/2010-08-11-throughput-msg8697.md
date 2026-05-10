@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック287におけるthroughputの文脈投稿。msg8810の前。"
+description: "BitcoinTalk トピック 287 における throughput の文脈投稿。msg8810 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -41,7 +41,7 @@ quotes:
 うーん、次回は他のやつらが本番ネットワークを酷使する前に許可を求めてくるとは思えないがな。
 彼らはただやるだけだ。
 
-こんな単純な侵入に脆弱であれば、Bitcoinは使い物にならないと確信している。
+こんな単純な侵入に脆弱であれば、Bitcoin は使い物にならないと確信している。
 現実の脅威に対して持続可能であることを証明すべきだ。**俺みたいにな** 😄
 
 もう誰かが実験したかもしれないな？

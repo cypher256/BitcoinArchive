@@ -1,5 +1,5 @@
 ---
-title: "Re: *** 警告 *** 0.3.6にアップグレードしてください"
+title: "Re: *** 警告 *** 0.3.6 にアップグレードしてください"
 date: 2010-07-29T20:30:15.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVNをバージョン0.3.6に更新し、WindowsビルドをSourceforgeにアップロード中であることを報告。"
+description: "サトシ・ナカモトが SVN をバージョン 0.3.6 に更新し、Windows ビルドを Sourceforge にアップロード中であることを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVNをバージョン0.3.6に更新した。
+SVN をバージョン 0.3.6 に更新した。
 
-0.3.6のWindowsビルドをSourceforgeにアップロード中だ。その後、Linuxを再ビルドする。
+0.3.6 の Windows ビルドを Sourceforge にアップロード中だ。その後、Linux を再ビルドする。

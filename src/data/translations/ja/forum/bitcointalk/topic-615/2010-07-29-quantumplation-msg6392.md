@@ -8,7 +8,7 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "BitcoinTalkトピック615におけるQuantumplationの文脈投稿。msg6512の前。"
+description: "BitcoinTalk トピック 615 における Quantumplation の文脈投稿。msg6512 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,4 +16,4 @@ translationStatus: complete
 
 Brre：あなたのクライアントはそのトランザクションを受け入れられるまで際限なくブロードキャストし続ける。非常にしつこい。
 
-たぶんこの2時間でブロックが解決されていないだけだろう。難易度がかなり高くなっているのは分かっている。
+たぶんこの 2時間でブロックが解決されていないだけだろう。難易度がかなり高くなっているのは分かっている。

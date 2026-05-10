@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-02-25T22:54:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「コマンドラインとJSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「コマンドラインと JSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -21,16 +21,16 @@ quotes:
     date: "2010-02-25T07:32:17.000Z"
 ---
 
-OK、wxBaseのみをリンクしGTKをリンクしないビルドターゲットbitcoindを作成した。SVN上のバージョン0.2.7だ。
+OK、wxBase のみをリンクし GTK をリンクしないビルドターゲット bitcoind を作成した。SVN 上のバージョン 0.2.7 だ。
 
-ui.cppから初期化とシャットダウンの処理をinit.cppに分離したので、ui.cppは純粋なUIのみになった。ui.hはwxUSE_GUI=0の場合にインラインスタブを提供する。ノードからUIへのインターフェース関数は4つだけだ。bitcoindビルドでは、ui.oやuibase.oはリンクしない。
+ui.cpp から初期化とシャットダウンの処理を init.cpp に分離したので、ui.cpp は純粋な UI のみになった。ui.h は wxUSE_GUI=0 の場合にインラインスタブを提供する。ノードから UI へのインターフェース関数は 4 つだけだ。bitcoind ビルドでは、ui.o や uibase.o はリンクしない。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > すぐに増加し始めました。valgrindで調べてみます。
 <!-- /tone-skip -->
-何かUIの処理が失敗したか、正しく初期化されなかったために、wxWidgets内で無限にリトライしているような感じがする。初期化失敗を無視して実行を続けるハックは、未知の領域に入ることを意味する。このモードではwxをほとんど使用しないという事実に頼っている。wxGetTranslationやwxMutexなど、いくつかは引き続き使用している。
+何か UI の処理が失敗したか、正しく初期化されなかったために、wxWidgets 内で無限にリトライしているような感じがする。初期化失敗を無視して実行を続けるハックは、未知の領域に入ることを意味する。このモードでは wx をほとんど使用しないという事実に頼っている。wxGetTranslation や wxMutex など、いくつかは引き続き使用している。
 
-別のデバッグ方法として、gdbで実行し、すべてが静かになりすべてのスレッドがアイドルになるのを待ち、ブレークして、どのスレッドが忙しく何かをしているか、何をしているかを確認する方法がある。
+別のデバッグ方法として、gdb で実行し、すべてが静かになりすべてのスレッドがアイドルになるのを待ち、ブレークして、どのスレッドが忙しく何かをしているか、何をしているかを確認する方法がある。
 
-bitcoindはおそらく問題なく動作すると思うが、問題のデバッグをしてもらえると助かる。
+bitcoind はおそらく問題なく動作すると思うが、問題のデバッグをしてもらえると助かる。

@@ -1,5 +1,5 @@
 ---
-title: "Re: 大衆向けOpenCLマイナー"
+title: "Re: 大衆向け OpenCL マイナー"
 date: 2010-11-25T22:14:06.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック1334におけるSmokeTooMuchの文脈投稿。msg24101の後。"
+description: "BitcoinTalk トピック 1334 における SmokeTooMuch の文脈投稿。msg24101 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

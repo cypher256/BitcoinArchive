@@ -10,7 +10,7 @@ participants:
     slug: "red"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Redがスレッドを開始: 提案ではなく"
+description: "Red がスレッドを開始: 提案ではなく"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -52,17 +52,17 @@ translationStatus: complete
  hash-x, hash-y, hash-z, hash-payed, hash-change
 }
 
-つまり基本的に、入出力ポイントのハッシュがブロックリストに2回存在すれば、それは使用済みである。1回のみ存在すれば未使用である。
+つまり基本的に、入出力ポイントのハッシュがブロックリストに 2回存在すれば、それは使用済みである。1回のみ存在すれば未使用である。
 
-block-17の後：
-  a、b、c、dは使用済み。
-  e、f、x、y、zは未使用。
+block-17 の後：
+  a、b、c、d は使用済み。
+  e、f、x、y、z は未使用。
 
-トランザクションはx、y、zを使用し、hash-payedとhash-changeを作成するため、トランザクションは有効である。
+トランザクションは x、y、z を使用し、hash-payed と hash-change を作成するため、トランザクションは有効である。
 
-generating-blockの後：
-  a、b、c、d、x、y、zは使用済み。
-  e、f、payed、changeは未使用。
+generating-block の後：
+  a、b、c、d、x、y、z は使用済み。
+  e、f、payed、change は未使用。
 
 ====
 目標：

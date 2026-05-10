@@ -8,12 +8,12 @@ author: "chromicant"
 participants:
   - name: "chromicant"
     slug: "chromicant"
-description: "chromicantがスレッドを開始: BitcoinTalkトピック816。"
+description: "chromicant がスレッドを開始: BitcoinTalk トピック 816。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Bitcoinクライアントにビッグエンディアンの「問題」（つまり動かない）があるというメッセージを多く見てきた。すべてのソースコードを分析する前に、リトルエンディアンを前提としている既知の「問題箇所」はあるだろうか？
+Bitcoin クライアントにビッグエンディアンの「問題」（つまり動かない）があるというメッセージを多く見てきた。すべてのソースコードを分析する前に、リトルエンディアンを前提としている既知の「問題箇所」はあるだろうか？
 
-遊んでいるG4やSparcマシンがあるので活用したい……さらに古いAlphaもあるが、まだ起動するかテストが必要だ……
+遊んでいる G4 や Sparc マシンがあるので活用したい……さらに古い Alpha もあるが、まだ起動するかテストが必要だ……

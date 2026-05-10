@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.13、アップグレードしてください"
+title: "Re: バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-03T23:46:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「バージョン0.3.13、アップグレードしてください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「バージョン 0.3.13、アップグレードしてください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-ノードをオンラインのままにして、トランザクションb412a0を再ブロードキャストし続けるようにしてくれ。2010年9月29日16:41以降、再ブロードキャストされているのを確認していない。
+ノードをオンラインのままにして、トランザクション b412a0 を再ブロードキャストし続けるようにしてくれ。2010年9月29日16:41 以降、再ブロードキャストされているのを確認していない。

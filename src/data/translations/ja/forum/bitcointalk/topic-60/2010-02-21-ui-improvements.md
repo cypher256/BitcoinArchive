@@ -1,5 +1,5 @@
 ---
-title: "UIの改善"
+title: "UI の改善"
 date: 2010-02-21T21:48:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿：「UIの改善」。"
+description: "サトシ・ナカモトの投稿：「UI の改善」。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,9 +16,9 @@ secondarySources:
 translationStatus: complete
 ---
 
-いくつかのUI変更をバージョン0.2.5としてSVNにアップロードした。
+いくつかの UI 変更をバージョン 0.2.5 として SVN にアップロードした。
 
-View->Show Generatedの代わりに、タブを追加した：
+View->Show Generated の代わりに、タブを追加した：
 - 全トランザクション
 - 送信/受信
 - 送信
@@ -26,10 +26,10 @@ View->Show Generatedの代わりに、タブを追加した：
 
 これにより、受信タブに切り替えて支払いを確認するのがずっと簡単になる。
 
-「あなたのアドレス」帳をメインのアドレス帳の中に移動した。アドレス帳が2つあるのは紛らわしかった。
+「あなたのアドレス」帳をメインのアドレス帳の中に移動した。アドレス帳が 2 つあるのは紛らわしかった。
 
-「From: unknown, To: (あなたのBitcoinアドレスの1つ)」の「To:」がまだ紛らわしいと感じたので、「From: unknown, Received with:」に変更した。Bitcoinアドレスは省略表示されるので、アドレス帳の受信タブで設定したラベルが見えるようになる。
+「From: unknown, To: (あなたの Bitcoin アドレスの 1 つ)」の「To:」がまだ紛らわしいと感じたので、「From: unknown, Received with:」に変更した。Bitcoin アドレスは省略表示されるので、アドレス帳の受信タブで設定したラベルが見えるようになる。
 
-wxWidgets 2.9.0へのアップグレードによるいくつかのUI不具合を修正した。
+wxWidgets 2.9.0 へのアップグレードによるいくつかの UI 不具合を修正した。
 
-非UIが欲しい人たちのことは忘れていないが、ビルド作業の苦労をする前に、楽しいことをやらせてもらった。
+非 UI が欲しい人たちのことは忘れていないが、ビルド作業の苦労をする前に、楽しいことをやらせてもらった。

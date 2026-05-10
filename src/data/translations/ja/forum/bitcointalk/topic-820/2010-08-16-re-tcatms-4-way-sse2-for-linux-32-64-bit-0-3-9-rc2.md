@@ -1,5 +1,5 @@
 ---
-title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載"
+title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載"
 date: 2010-08-16T02:57:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2」におけるサトシ・ナカモトの返信。"
+description: "スレッド「tcatm の 4-way SSE2 Linux 32/64 ビット版 0.3.9 rc2」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -30,7 +30,7 @@ quotes:
 > sha256.cppを-O3 -march=amdfamk10でコンパイルすることを提案する（32ビットと64ビットの両方で動作する）。この命令セットをサポートするCPU（AMD Phenom、Intel i5以降）のみが-4wayの恩恵を受け、パフォーマンスが約9%向上する。
 <!-- /tone-skip -->
 
-GCC 4.3.3は-march=amdfamk10をサポートしていない。以下のエラーが出る：
+GCC 4.3.3 は-march=amdfamk10 をサポートしていない。以下のエラーが出る：
 sha256.cpp:1: error: bad value (amdfamk10) for -march= switch
 
 <!-- quote: q2 -->
@@ -42,8 +42,8 @@ sha256.cpp:1: error: bad value (amdfamk10) for -march= switch
 
 以前はハイパースレッディングが役に立たなかったのは、すべての処理が算術論理ユニットで行われ、ハイパースレッドがそれを共有していたためだ。
 
-tcatmのSSE2コードは通常のx86命令とSSE2命令の組み合わせのはずで、一方がx86コードを実行している間に、もう一方がSSE2を実行できる。
+tcatm の SSE2 コードは通常の x86 命令と SSE2 命令の組み合わせのはずで、一方が x86 コードを実行している間に、もう一方が SSE2 を実行できる。
 
 ハイパースレッディングでどれくらい改善する？
 
-数字は？どのCPUだ？
+数字は？どの CPU だ？

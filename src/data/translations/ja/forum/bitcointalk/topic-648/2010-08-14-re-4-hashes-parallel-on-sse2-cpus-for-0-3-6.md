@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-14T00:49:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがMinGW on Windowsでのコンパイルエラーを報告。"
+description: "サトシ・ナカモトが MinGW on Windows でのコンパイルエラーを報告。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Windows上のMinGWでコンパイルに問題があります：
+Windows 上の MinGW でコンパイルに問題があります：
 
 g++ -c -mthreads -O2 -w -Wno-invalid-offsetof -Wformat -g -D__WXDEBUG__ -DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH -I"/boost" -I"/db/build_unix" -I"/openssl/include" -I"/wxwidgets/lib/gcc_lib/mswud" -I"/wxwidgets/include" -msse2 -O3 -o obj/sha256.o sha256.cpp
 

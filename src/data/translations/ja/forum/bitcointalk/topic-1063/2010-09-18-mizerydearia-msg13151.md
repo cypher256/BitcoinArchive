@@ -8,10 +8,10 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック1063におけるmizerydeaiaの文脈投稿。msg13211の前。"
+description: "BitcoinTalk トピック 1063 における mizerydeaia の文脈投稿。msg13211 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-SourceForge経由でサトシにMantisBTまたはTracの有効化を提案するメッセージを送った。気づいてくれるかもしれない。
+SourceForge 経由でサトシに MantisBT または Trac の有効化を提案するメッセージを送った。気づいてくれるかもしれない。

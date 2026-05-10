@@ -8,10 +8,10 @@ author: "QuantumMechanic"
 participants:
   - name: "QuantumMechanic"
     slug: "quantummechanic"
-description: "BitcoinTalkトピック165におけるQuantumMechanicの文脈投稿。msg1595の前。"
+description: "BitcoinTalk トピック 165 における QuantumMechanic の文脈投稿。msg1595 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-bitcoin生成によるネットワーク支援のインセンティブがほぼ枯渇した後の、平均トランザクション手数料の推定値はあるだろうか？ これはユーザー数、ネットワークの規模、総トランザクション速度とどのようにスケールするのか？
+bitcoin 生成によるネットワーク支援のインセンティブがほぼ枯渇した後の、平均トランザクション手数料の推定値はあるだろうか？ これはユーザー数、ネットワークの規模、総トランザクション速度とどのようにスケールするのか？

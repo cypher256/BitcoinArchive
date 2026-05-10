@@ -8,10 +8,10 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック48におけるSmokeTooMuchの文脈投稿。msg316の前。"
+description: "BitcoinTalk トピック 48 における SmokeTooMuch の文脈投稿。msg316 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-少し前に50.26で同じことがあった。
+少し前に 50.26 で同じことがあった。

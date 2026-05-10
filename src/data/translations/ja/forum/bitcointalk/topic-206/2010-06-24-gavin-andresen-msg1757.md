@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Faucetの変更"
+title: "Re: Bitcoin Faucet の変更"
 date: 2010-06-24T23:13:45.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック206におけるギャビン・アンドレセンの文脈投稿。msg1816の前。"
+description: "BitcoinTalk トピック 206 におけるギャビン・アンドレセンの文脈投稿。msg1816 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -26,4 +26,4 @@ quotes:
 > 自動生成は簡単だろうか？
 <!-- /tone-skip -->
 
-自動生成は簡単だ（Bitcoinプログラムに新しいアドレスを生成して返すよう要求するコードを書くのは簡単だ）。
+自動生成は簡単だ（Bitcoin プログラムに新しいアドレスを生成して返すよう要求するコードを書くのは簡単だ）。

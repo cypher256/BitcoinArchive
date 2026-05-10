@@ -1,5 +1,5 @@
 ---
-title: "Re: BitDNSの手数料に関する混乱"
+title: "Re: BitDNS の手数料に関する混乱"
 date: 2010-12-10T01:27:59.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシの置換投稿へのトッドの返信、1.5時間後。「retep」(Peter逆)名義のBitcoinTalk2番目投稿。HBO「Money Electric」(2024)がトッド=サトシ説の証拠に引用。"
+description: "サトシ置換投稿へのトッド返信 (1.5h 後)。「retep」(Peter 逆) の BitcoinTalk 2番目投稿。HBO「Money Electric」 がトッド=サトシ説の証拠に引用。"
 isSatoshi: false
 isConversation: true
 inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"

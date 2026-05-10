@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック873におけるmizerydeariaの文脈投稿。msg10297の後。"
+description: "BitcoinTalk トピック 873 における mizerydearia の文脈投稿。msg10297 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -20,7 +20,7 @@ quotes:
 translationStatus: complete
 ---
 
-ユーザーが知っておくべきことの一覧を掲載するため、上記のコメントをwikiにポストした： http://www.bitcoin.org/wiki/doku.php?id=things_you_should_know
+ユーザーが知っておくべきことの一覧を掲載するため、上記のコメントを wiki にポストした： http://www.bitcoin.org/wiki/doku.php?id=things_you_should_know
 
 <!-- quote: q1 -->
 > mizeryderia、君はsatoshiの投稿をコピペしただけで、何の付加価値もつけていない。

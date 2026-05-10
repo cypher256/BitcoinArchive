@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinクライアントとウェブサイトの翻訳"
+title: "Re: Bitcoin クライアントとウェブサイトの翻訳"
 date: 2010-02-17T19:19:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Bitcoinクライアントとウェブサイトの翻訳」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Bitcoin クライアントとウェブサイトの翻訳」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,27 +16,27 @@ secondarySources:
 translationStatus: complete
 ---
 
-翻訳サポートのための変更をSVNに更新した。翻訳可能な文字列はすべて_("")で囲まれており、すべてのプラットフォームでUTF-8を使用している。
+翻訳サポートのための変更を SVN に更新した。翻訳可能な文字列はすべて_("")で囲まれており、すべてのプラットフォームで UTF-8 を使用している。
 
-プログラム実行時、EXEのディレクトリで以下のファイルを探す：locale\<langcode>\LC_MESSAGES\bitcoin.mo
+プログラム実行時、EXE のディレクトリで以下のファイルを探す：locale\<langcode>\LC_MESSAGES\bitcoin.mo
 
-<langcode>はOSに設定された言語の2文字コードで、「de」や「nl」のようなものだ。
+<langcode>は OS に設定された言語の 2 文字コードで、「de」や「nl」のようなものだ。
 
-Linuxでは以下も探す：
+Linux では以下も探す：
 /usr/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
 /usr/local/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
-（Linuxで他に探すべき標準的な場所はあるか？）
+（Linux で他に探すべき標準的な場所はあるか？）
 
-poeditを使って.poと.moファイルを作成する簡単な手順：
+poedit を使って.po と.mo ファイルを作成する簡単な手順：
 
-- SVNからBitcoinのソースコードをダウンロード
-- trunkディレクトリで、mkdir locale\<lang>\LC_MESSAGES
-- poeditで、File->New catalog->Pathsタブ
+- SVN から Bitcoin のソースコードをダウンロード
+- trunk ディレクトリで、mkdir locale\<lang>\LC_MESSAGES
+- poedit で、File->New catalog->Paths タブ
 - 「New item」の点線の四角ボタンをクリック
-- 「../../..」を入力し、パスを追加するために必ずEnterを押す
-- OKをクリック
-- 作成したLC_MESSAGESディレクトリに「bitcoin.po」として保存
-- ソースコードをスキャンして約170の文字列が見つかるはず
-- 何も見つからない場合は、Catalog->Settings->Pathタブで「../../..」が追加されているか確認
+- 「../../..」を入力し、パスを追加するために必ず Enter を押す
+- OK をクリック
+- 作成した LC_MESSAGES ディレクトリに「bitcoin.po」として保存
+- ソースコードをスキャンして約 170 の文字列が見つかるはず
+- 何も見つからない場合は、Catalog->Settings->Path タブで「../../..」が追加されているか確認
 
-翻訳が完了したら、bitcoin.po（編集可能なカタログファイル）とbitcoin.mo（プログラムが使用するコンパイル済みデータ）の両方をコミットしてほしい。
+翻訳が完了したら、bitcoin.po（編集可能なカタログファイル）と bitcoin.mo（プログラムが使用するコンパイル済みデータ）の両方をコミットしてほしい。

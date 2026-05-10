@@ -8,7 +8,7 @@ author: "17ujzChRb6VPQGyANVyktc1du"
 participants:
   - name: "17ujzChRb6VPQGyANVyktc1du"
     slug: "17ujzchrb6vpqgyanvyktc1du"
-description: "BitcoinTalkトピック287における17ujzChRb6VPQGyANVyktc1duの文脈投稿。msg7687の後。"
+description: "BitcoinTalk トピック 287 における 17ujzChRb6VPQGyANVyktc1du の文脈投稿。msg7687 の後。"
 isSatoshi: false
 tags: []
 quotes:
@@ -24,5 +24,5 @@ translationStatus: complete
 >
 > 「ダスト」が再び一つに集約され、再び十分に深く確認された場合に限り、ダストの領域は破棄できる。
 
-改良された攻撃はこんな感じになる：1BTCから始めて、0.999999999BTCを送金し、次に0.999999998BTCを……と続ける。
-結果として、100万個（マイナス10000）のアカウントがそれぞれ0.000000001BTCを持つことになる。
+改良された攻撃はこんな感じになる：1BTC から始めて、0.999999999BTC を送金し、次に 0.999999998BTC を……と続ける。
+結果として、100 万個（マイナス 10000）のアカウントがそれぞれ 0.000000001BTC を持つことになる。

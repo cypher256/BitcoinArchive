@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "MSG_DONTWAITの追加とスレッド監視による万全の対策を含むtest5のリリース。pthread_cancelによるスレッド終了の実装とスレッドラッパーの作成について。"
+description: "MSG_DONTWAIT の追加とスレッド監視による万全の対策を含む test5 のリリース。pthread_cancel によるスレッド終了の実装とスレッドラッパーの作成について。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -27,15 +27,15 @@ translationStatus: complete
 
 test 5：
 
-ソケットがノンブロッキングであることを忘れている場合に備えて、sendとrecvの呼び出しにMSG_DONTWAITを追加した。それでもうまくいかない場合の万全の対策として、別のスレッドがsend/recvスレッドを監視し、停止した場合に終了して再起動する。debug.logに「*** Restarting ThreadSocketHandler ***」と出力され、ステータスバーにしばらくエラーメッセージが表示される。
+ソケットがノンブロッキングであることを忘れている場合に備えて、send と recv の呼び出しに MSG_DONTWAIT を追加した。それでもうまくいかない場合の万全の対策として、別のスレッドが send/recv スレッドを監視し、停止した場合に終了して再起動する。debug.log に「*** Restarting ThreadSocketHandler ***」と出力され、ステータスバーにしばらくエラーメッセージが表示される。
 
 終了する前に、ハングしているソケットを閉じることを試みる。それがうまくいけば、スレッドの終了に頼る必要はない。
 
-スレッドを約1000回終了させるテストを実行したが、問題なかったので安全なはずだ。Linux上での終了はpthread_cancelで、これによりC++の例外ハンドラに投げ込まれる。
+スレッドを約 1000回終了させるテストを実行したが、問題なかったので安全なはずだ。Linux 上での終了は pthread_cancel で、これにより C++の例外ハンドラに投げ込まれる。
 
-使っていたスレッド呼び出しには終了機能がなかったので、util.hにWindowsではCreateThread、LinuxではNpthread_createを使用する独自のラッパーを作成した。以下の代わりに：<br>
-   _beginthreadはWindows専用で終了機能なし<br>
-   boost::threadは非常に魅力的だが終了機能なし<br>
-   wxThreadは呼び出す可能性のある各関数にクラスを作成する必要がある（最悪）
+使っていたスレッド呼び出しには終了機能がなかったので、util.h に Windows では CreateThread、Linux では Npthread_create を使用する独自のラッパーを作成した。以下の代わりに：<br>
+   _beginthread は Windows 専用で終了機能なし<br>
+   boost::thread は非常に魅力的だが終了機能なし<br>
+   wxThread は呼び出す可能性のある各関数にクラスを作成する必要がある（最悪）
 
 ファイルは次のメールに添付する

@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "ソフトウェア開発者（1966-）、Wasabi Software創業者、Bitcoin Faucet作成者。サトシから引き継ぎ、2011-2014年リードメンテナー。"
+description: "ソフトウェア開発者（1966-）、Wasabi Software 創業者、Bitcoin Faucet 作成者。サトシから引き継ぎ、2011-2014年リードメンテナー。"
 isSatoshi: false
 tags:
   - "gavin-andresen"
@@ -55,7 +55,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ギャビン・アンドレセン（本名ギャビン・ベル、1966年オーストラリア・メルボルン生まれ）は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の離脱後にビットコインのリードメンテナーとなったソフトウェア開発者である。アメリカで育ち、1988年にプリンストン大学でコンピューターサイエンスの学位を取得。その後、3DグラフィックスソフトウェアのWasabi Softwareを設立した。
+ギャビン・アンドレセン（本名ギャビン・ベル、1966年オーストラリア・メルボルン生まれ）は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の離脱後にビットコインのリードメンテナーとなったソフトウェア開発者である。アメリカで育ち、1988年にプリンストン大学でコンピューターサイエンスの学位を取得。その後、3D グラフィックスソフトウェアの Wasabi Software を設立した。
 
 ```mermaid
 timeline
@@ -73,7 +73,7 @@ timeline
 ```
 
 ### ビットコインとの出会い
-アンドレセンは2010年にビットコインを知った。すぐに最も活発な貢献者の一人となり、Bitcoin Faucet — 無料でビットコインを配布し、人々がこの技術を学び使い始めるのを支援するウェブサイト — を作成した。[2010年6月11日にBitcoinTalkフォーラムでBitcoin Faucetを発表](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/)。これはビットコイン普及を促進する最初期の取り組みの一つだった。
+アンドレセンは 2010年にビットコインを知った。すぐに最も活発な貢献者の一人となり、Bitcoin Faucet — 無料でビットコインを配布し、人々がこの技術を学び使い始めるのを支援するウェブサイト — を作成した。[2010年6月11日に BitcoinTalk フォーラムで Bitcoin Faucet を発表](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/)。これはビットコイン普及を促進する最初期の取り組みの一つだった。
 
 ### サトシの後継者 — 段階的な引き継ぎ（2010–2011 年）
 サトシからアンドレセンへの引き継ぎは、一度の指名ではなく、7 ヶ月にわたる運営権限の段階的な譲渡だった。アーカイブ収録の以下のエントリーで時系列に追える。
@@ -105,8 +105,8 @@ timeline
 
 3 日後、[最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)は「私のことを謎めいた影の人物として話し続けるのはやめてほしい」 という一文で締めくくられた——戒めであり、別れの挨拶でもあった。CAlert キーの正式な譲渡を伴っていた。2012 年 9 月に Bitcoin Foundation が設立されると、アンドレセンはチーフサイエンティストに就任した。
 
-### CIAでの講演
-2011年6月14日、アンドレセンはバージニア州ラングレーのCIA本部でビットコインについてプレゼンテーションを行った。これはIn-Q-Tel主催の新興技術カンファレンスの一環だった。事前にサトシにこの招待について伝えていたが、その後サトシの通信頻度は減少し、最終的に完全に途絶えた。
+### CIA での講演
+2011年6月14日、アンドレセンはバージニア州ラングレーの CIA 本部でビットコインについてプレゼンテーションを行った。これは In-Q-Tel 主催の新興技術カンファレンスの一環だった。事前にサトシにこの招待について伝えていたが、その後サトシの通信頻度は減少し、最終的に完全に途絶えた。
 
 ### その後
 2014年4月8日、アンドレセンはリードメンテナーの役割をウラジミール・ファン・デル・ラーンに引き継いだ。その後もビットコイン開発への貢献を続け、トランザクション処理能力の向上のためブロックサイズ上限の引き上げを提唱した。

@@ -1,5 +1,5 @@
 ---
-title: "BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
+title: "Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている"
 date: 2010-06-25T11:20:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,12 +10,12 @@ participants:
     slug: "xunie"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Xunieがスレッドを開始: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている"
+description: "Xunie がスレッドを開始: Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-オランダ時間（CEST）21:11、この投稿をした約10分前に、ビットコインクライアントがK-Lineされている。
+オランダ時間（CEST）21:11、この投稿をした約 10分前に、ビットコインクライアントが K-Line されている。
 
-（注：時刻はCESTである。）
+（注：時刻は CEST である。）

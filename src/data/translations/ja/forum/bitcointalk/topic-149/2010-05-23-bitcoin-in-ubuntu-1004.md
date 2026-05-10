@@ -1,5 +1,5 @@
 ---
-title: "Ubuntu 10.04でのBitcoin"
+title: "Ubuntu 10.04 での Bitcoin"
 date: 2010-05-23T07:28:12.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,10 +10,10 @@ participants:
     slug: "newlibertystandard"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "NewLibertyStandardがスレッドを開始: Ubuntu 10.04でのBitcoin"
+description: "NewLibertyStandard がスレッドを開始: Ubuntu 10.04 での Bitcoin"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-Ubuntuの新しいデフォルトテーマでビットコインの見た目が悪い。テーマ設定の一部は反映されているが、すべてではないようだ。選択されていないファイルメニューは暗い背景に明るいテキストであるべきだが、明るい背景に明るいテキストになっており正しくない。私のディスプレイでは両者が似すぎていて読めない。次の安定版リリースまでに修正すべきだ。
+Ubuntu の新しいデフォルトテーマでビットコインの見た目が悪い。テーマ設定の一部は反映されているが、すべてではないようだ。選択されていないファイルメニューは暗い背景に明るいテキストであるべきだが、明るい背景に明るいテキストになっており正しくない。私のディスプレイでは両者が似すぎていて読めない。次の安定版リリースまでに修正すべきだ。

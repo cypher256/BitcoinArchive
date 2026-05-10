@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック611におけるギャビン・アンドレセンの文脈投稿。msg6706の前。"
+description: "BitcoinTalk トピック 611 におけるギャビン・アンドレセンの文脈投稿。msg6706 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,11 +16,11 @@ translationStatus: complete
 
 いくつか簡単な提案：
 
-キー名に"class"を使うと、少なくともJavaScript、おそらく他の言語でも"class"が予約語であるため問題が生じる。"type"や"variety"など他の同義語の方が後の問題が少ない。
+キー名に"class"を使うと、少なくとも JavaScript、おそらく他の言語でも"class"が予約語であるため問題が生じる。"type"や"variety"など他の同義語の方が後の問題が少ない。
 
-あるいは、そのフィールドを削除して、クレジットを正の数、デビットを負の数で報告する方が良いかもしれない。そして別の"generated"フィールド（ブール値のtrueまたはfalse）を追加する。
+あるいは、そのフィールドを削除して、クレジットを正の数、デビットを負の数で報告する方が良いかもしれない。そして別の"generated"フィールド（ブール値の true または false）を追加する。
 
-各エントリはトランザクションを参照するので、"tx_id"としてSHA256の16進エンコードされたトランザクションIDを追加することを提案する。そうすればlisttransactionsがrefundtransaction JSON-RPC拡張（および将来のgettransactiondetailsでトランザクションの親、トランザクションが含まれるブロックなどを取得できるもの）とうまく連携する。
+各エントリはトランザクションを参照するので、"tx_id"として SHA256 の 16 進エンコードされたトランザクション ID を追加することを提案する。そうすれば listtransactions が refundtransaction JSON-RPC 拡張（および将来の gettransactiondetails でトランザクションの親、トランザクションが含まれるブロックなどを取得できるもの）とうまく連携する。
 
 コードは以下のようになる：
 

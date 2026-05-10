@@ -1,5 +1,5 @@
 ---
-title: "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？"
+title: "Re: 提案：Bitcoin と一緒に短いメッセージを送れるようにしないか？"
 date: 2010-10-23T17:59:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1545におけるShadowOfHarbringerの文脈投稿。msg18250の前。"
+description: "BitcoinTalk トピック 1545 における ShadowOfHarbringer の文脈投稿。msg18250 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -18,7 +18,7 @@ translationStatus: complete
 
 http://stackoverflow.com/questions/1138345/best-compression-algorithm-for-short-text-strings
 
-短いテキスト文字列の圧縮に優れた小さなOSプロジェクトがGitHubにある。
+短いテキスト文字列の圧縮に優れた小さな OS プロジェクトが GitHub にある。
 http://github.com/antirez/smaz
 
-これで384バイトをさらに200バイト未満や175バイト未満にまで縮小できる可能性がある。
+これで 384 バイトをさらに 200 バイト未満や 175 バイト未満にまで縮小できる可能性がある。

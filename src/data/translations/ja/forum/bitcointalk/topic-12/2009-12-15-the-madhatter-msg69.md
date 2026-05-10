@@ -8,12 +8,12 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalkトピック12におけるThe Madhatterの文脈投稿。msg70の前。"
+description: "BitcoinTalk トピック 12 における The Madhatter の文脈投稿。msg70 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-了解、SFに登録した。ユーザー名は「madhatter2」だ。
+了解、SF に登録した。ユーザー名は「madhatter2」だ。
 
 😊

@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-Theymosがすでに言っているが……ECDSAはメッセージの暗号化をサポートしていない。デジタル署名のみだ。
+Theymos がすでに言っているが……ECDSA はメッセージの暗号化をサポートしていない。デジタル署名のみだ。

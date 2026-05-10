@@ -1,5 +1,5 @@
 ---
-title: "コイン送信時のBitcoinクラッシュ"
+title: "コイン送信時の Bitcoin クラッシュ"
 date: 2010-01-25T14:07:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,11 +10,11 @@ participants:
     slug: "rix"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "riXがスレッドを開始: コイン送信時のBitcoinクラッシュ"
+description: "riX がスレッドを開始: コイン送信時の Bitcoin クラッシュ"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-最近コインを送信しようとすると、以下のポップアップが2回表示され、その後アプリケーションが終了する。
+最近コインを送信しようとすると、以下のポップアップが 2回表示され、その後アプリケーションが終了する。
 

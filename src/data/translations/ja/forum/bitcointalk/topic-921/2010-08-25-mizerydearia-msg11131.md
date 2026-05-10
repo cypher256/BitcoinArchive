@@ -1,5 +1,5 @@
 ---
-title: "Re: wallet.datの自動バックアップ"
+title: "Re: wallet.dat の自動バックアップ"
 date: 2010-08-25T11:11:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック921におけるmizerydeariaの文脈投稿。msg11228の前。"
+description: "BitcoinTalk トピック 921 における mizerydearia の文脈投稿。msg11228 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

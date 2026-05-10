@@ -1,5 +1,5 @@
 ---
-title: "Re: CLIでのBitcoin生成"
+title: "Re: CLI での Bitcoin 生成"
 date: 2010-05-26T20:09:34.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「CLIビットコイン生成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「CLI ビットコイン生成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,7 +26,7 @@ quotes:
 <!-- tone-skip -->
 > シンプルなbitcoin用ウェブインターフェースを作ろうとしていて（本格的なwx/GTK GUIよりも軽量でステートレスなもの）、検証中の生成ブロックのステータスを確認する方法が見当たらない…残高が50ジャンプするのは見たが、もちろんそれはgetallreceivedには表示されない。
 <!-- /tone-skip -->
-ああ、実際にそういう仕組みだ。getallreceived 0で望むことができるはずだ。（現在はlistreceivedbyaddress 0に名前が変更されている）デフォルトは1確認だが、実際にはほとんどのデジタル商品やサービスは0確認で問題ないと思う。その通り、0確認以上が必要な場合は、未確認と利用可能残高の2つの数字を表示すれば、トランザクションが通ったことをすぐに確認できる。
+ああ、実際にそういう仕組みだ。getallreceived 0 で望むことができるはずだ。（現在は listreceivedbyaddress 0 に名前が変更されている）デフォルトは 1 確認だが、実際にはほとんどのデジタル商品やサービスは 0 確認で問題ないと思う。その通り、0 確認以上が必要な場合は、未確認と利用可能残高の 2 つの数字を表示すれば、トランザクションが通ったことをすぐに確認できる。
 
 listreceivedbyaddress [minconf=1] [includeempty=false]<br>
 [minconf]は支払いが含まれる前の最小確認数だ。<br>
@@ -37,6 +37,6 @@ listreceivedbyaddress [minconf=1] [includeempty=false]<br>
   "amount" : アドレスが受け取った合計金額<br>
   "confirmations" : 含まれる最新トランザクションの確認数
 
-アドレスにユーザー名でラベルを付けている場合はlistreceivedbylabelも使える。
+アドレスにユーザー名でラベルを付けている場合は listreceivedbylabel も使える。
 
 今のところ、ウェブ加盟店向けの機能に集中しており、ヘッドレスコイン生成器のリモート管理用の機能にはまだあまり取り組んでいない。

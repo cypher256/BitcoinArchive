@@ -1,5 +1,5 @@
 ---
-title: "Re: 更新 - libcryptoとGLIBCXX_3.4.11の問題がある人向けLinux x64バイナリ"
+title: "Re: 更新 - libcrypto と GLIBCXX_3.4.11 の問題がある人向け Linux x64 バイナリ"
 date: 2010-07-15T01:05:01.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalkトピック296におけるGround Loopの文脈投稿。msg3495の前。"
+description: "BitcoinTalk トピック 296 における Ground Loop の文脈投稿。msg3495 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-そうだな、bitcoindを動かすためにこんなに苦労すべきではないだろうな。Fedoraのバイナリを作ることを約束する人は、32ビットと64ビットの両方を考慮してくれ。
+そうだな、bitcoind を動かすためにこんなに苦労すべきではないだろうな。Fedora のバイナリを作ることを約束する人は、32 ビットと 64 ビットの両方を考慮してくれ。

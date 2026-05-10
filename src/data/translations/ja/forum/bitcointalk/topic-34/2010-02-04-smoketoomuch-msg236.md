@@ -8,16 +8,16 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック34におけるSmokeTooMuchの文脈投稿。msg222の後。"
+description: "BitcoinTalk トピック 34 における SmokeTooMuch の文脈投稿。msg222 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-0.01 BTCを2回送った。
+0.01 BTC を 2回送った。
 
-ビットコインアドレスごとに0.01 BTC、IPアドレスごとに0.01 BTCだ。
+ビットコインアドレスごとに 0.01 BTC、IP アドレスごとに 0.01 BTC だ。
 
 返してもらう必要はない 😊
 
-ところで、http://trunk.torstatus.kgprog.com/ は俺がTORを使っていると言ってくるが、使っていない。実際のIPが表示されている。
+ところで、http://trunk.torstatus.kgprog.com/ は俺が TOR を使っていると言ってくるが、使っていない。実際の IP が表示されている。

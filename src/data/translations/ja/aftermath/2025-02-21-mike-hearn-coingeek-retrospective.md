@@ -31,7 +31,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[直接メールを交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
+CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[直接メールを交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
 
 **サトシの人物像について：**
 
@@ -65,8 +65,8 @@ CoinGeek Weekly Livestreamのインタビューで、[サトシ・ナカモト](
 
 > 「技術は今でも興味深いが、今では社会的な側面をより深く認識するようになった。コンピューターサイエンスの問題を解くだけでは不十分だ」
 
-ハーンはもし過去に戻れたなら、反対していた意見に対して「もっと強く押し返していた」と述べ、「Bitcoin Foundationも、扱い方が違えばうまくいったはずだ」と語った。
+ハーンはもし過去に戻れたなら、反対していた意見に対して「もっと強く押し返していた」と述べ、「Bitcoin Foundation も、扱い方が違えばうまくいったはずだ」と語った。
 
 「Bitcoin Core」という名称の採用も後悔しているとし、その命名がプロジェクト内の不健全な権力構造を強化したと指摘した。
 
-*[補足：このインタビューの時点で、ハーンは2021年にR3を退社し、Hydraulic Softwareを設立し、Oracleでのソフトウェアアーキテクト職に就く準備をしていた。[2016年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。]*
+*[補足：このインタビューの時点で、ハーンは 2021年に R3 を退社し、Hydraulic Software を設立し、Oracle でのソフトウェアアーキテクト職に就く準備をしていた。[2016年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。]*

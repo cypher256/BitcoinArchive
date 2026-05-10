@@ -1,5 +1,5 @@
 ---
-title: "Bitcoinの潜在的な弱点に関する専用の議論はどこか"
+title: "Bitcoin の潜在的な弱点に関する専用の議論はどこか"
 date: 2010-08-11T15:45:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "throughputがスレッドを開始: BitcoinTalkトピック788。"
+description: "throughput がスレッドを開始: BitcoinTalk トピック 788。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -36,9 +36,9 @@ translationStatus: complete
 ネットワークに接続する。ただし直接ではなく、
 特殊なノードを経由して接続する。そのノードはまだフラッディングしているゴミデータをフィルターリングする特殊な方法でメッセージを転送する。
 これにより、スーパーコンピューターはブロックを受信して生成に参加できるが、他のノードはフラッディングされたままで
-生成BTCのわずかな部分しか得られない。
+生成 BTC のわずかな部分しか得られない。
 
-次に、生成BTCに興味がない場合、ブロックチェーンフォークの生成を開始できる。
+次に、生成 BTC に興味がない場合、ブロックチェーンフォークの生成を開始できる。
 難易度が下がった直後に、隔離された環境でブロックチェーンの代替バージョンを生成し始める。
 難易度はすぐには変わらないので、残りのネットワークがゴミデータを処理している間に
 ネットワークを上回ろうとできる。十分速く最長チェーンを全員に提示するが、その後難易度が上がる。

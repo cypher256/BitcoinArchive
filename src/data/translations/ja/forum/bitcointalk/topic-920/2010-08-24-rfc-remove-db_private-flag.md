@@ -1,5 +1,5 @@
 ---
-title: "RFC: DB_PRIVATEフラグの削除"
+title: "RFC: DB_PRIVATE フラグの削除"
 date: 2010-08-24T16:03:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,11 +10,11 @@ participants:
     slug: "jeff-garzik"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ジェフ・ガージックがスレッドを開始: RFC: DB_PRIVATEフラグの削除"
+description: "ジェフ・ガージックがスレッドを開始: RFC: DB_PRIVATE フラグの削除"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ウォレットのバックアップやその他のDB検査は、安全でアトミックかつトランザクショナルな方法で容易に実行可能である……ただし、DB_PRIVATEフラグが削除された場合に限る。
+ウォレットのバックアップやその他の DB 検査は、安全でアトミックかつトランザクショナルな方法で容易に実行可能である……ただし、DB_PRIVATE フラグが削除された場合に限る。
 

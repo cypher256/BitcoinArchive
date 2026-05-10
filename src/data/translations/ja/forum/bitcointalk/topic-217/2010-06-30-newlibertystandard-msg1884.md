@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック217におけるNewLibertyStandardの文脈投稿。msg1928の前。"
+description: "BitcoinTalk トピック 217 における NewLibertyStandard の文脈投稿。msg1928 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-BitcoinがWindowsで金融取引を行っていなければ、バージョン0.3の方がいい選択だったと思う。かなりの数の人々、特にWindowsユーザーは、バージョン1.1や1.2未満のソフトウェアを信用しない。しかし、バージョン0.2から1.3に飛ぶと、最初の3つの1.xバージョンを飛ばしたことがわかった時に裏目に出るだろう。
+Bitcoin が Windows で金融取引を行っていなければ、バージョン 0.3 の方がいい選択だったと思う。かなりの数の人々、特に Windows ユーザーは、バージョン 1.1 や 1.2 未満のソフトウェアを信用しない。しかし、バージョン 0.2 から 1.3 に飛ぶと、最初の 3 つの 1.x バージョンを飛ばしたことがわかった時に裏目に出るだろう。

@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
+title: "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合"
 date: 2010-07-08T18:24:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合」におけるサトシ・ナカモトの返信。"
+description: "スレッド「bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-それを発見してくれてありがとう。0.2ではANSIを使用していたが、バージョン0.3でUTF-8に切り替えたので、それに関連しているはずだ。
+それを発見してくれてありがとう。0.2 では ANSI を使用していたが、バージョン 0.3 で UTF-8 に切り替えたので、それに関連しているはずだ。
 
-確認のために、非ラテン文字のユーザー名でログインし、まだappdata/Bitcoinディレクトリがない状態でBitcoinを実行し、データベースをゼロから作成させた場合、動作するか、しないか？
+確認のために、非ラテン文字のユーザー名でログインし、まだ appdata/Bitcoin ディレクトリがない状態で Bitcoin を実行し、データベースをゼロから作成させた場合、動作するか、しないか？

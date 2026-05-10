@@ -1,5 +1,5 @@
 ---
-title: "「[bitcoin-list] Bitcoin v0.1.2 now available」— サトシがv0.1.2リリースを告知（2009-01）"
+title: "「[bitcoin-list] Bitcoin v0.1.2 now available」— サトシが v0.1.2 リリースを告知（2009-01）"
 date: 2009-01-11T22:32:18.000Z
 type: "mailing-list"
 source: "bitcoin-list"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトによるBitcoin v0.1.2のリリース告知。ノード接続に関するバグ修正を含む。"
+description: "サトシ・ナカモトによる Bitcoin v0.1.2 のリリース告知。ノード接続に関するバグ修正を含む。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,7 +27,7 @@ Bitcoin v0.1.2 がダウンロード可能になった。
 
 修正されたバグ：
 - 新しいノードが接続先の他のノードを見つけにくくしていた様々な問題を修正。
-- ファイアウォールの背後にいる場合、1つの接続しか受け付けられず、2つ目の接続が常に切断と再接続を繰り返していた問題を修正。
+- ファイアウォールの背後にいる場合、1 つの接続しか受け付けられず、2 つ目の接続が常に切断と再接続を繰り返していた問題を修正。
 
 これらの問題はネットワークにかなりの支障をきたしており、ユーザーが増えるにつれて悪化するため、必ずアップグレードしてほしい。
 

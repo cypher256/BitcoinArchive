@@ -26,7 +26,7 @@ tags:
 secondarySources:
   - name: "Andy Greenberg — 'Nakamoto's Neighbor' (Forbes, March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
-    note: "ハルの妻フランがレース当日の写真を証拠として最初に見せた、Forbesの先行記事。グリーンバーグの記事はロップの分析より約9年前に発表されており、レース日アリバイの最初の公開ドキュメント。"
+    note: "ハルの妻フランがレース当日の写真を証拠として最初に見せた、Forbes の先行記事。グリーンバーグの記事はロップの分析より約 9年前に発表されており、レース日アリバイの最初の公開ドキュメント。"
 relatedEntries:
   - "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
   - "aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor"

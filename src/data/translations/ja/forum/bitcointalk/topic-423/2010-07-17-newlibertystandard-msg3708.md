@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin自動販売機（高速トランザクション問題）"
+title: "Re: Bitcoin 自動販売機（高速トランザクション問題）"
 date: 2010-07-17T08:36:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック423におけるNewLibertyStandardの文脈投稿。"
+description: "BitcoinTalk トピック 423 における NewLibertyStandard の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,4 +24,4 @@ quotes:
 > あなたたちがエスクローと呼んでいるものは、デビットカード口座とかなり似ている。
 <!-- /tone-skip -->
 
-Bitcoinは現金そのものに相当する。Bitcoinを使ったデビット、クレジット、銀行、ローン、部分準備貸付の創設や普及を妨げるものは何もない。関連スレッドのInterArmaEnimSilの投稿を読んでほしい。ただ注意しておくと、エスクローサービスは人を騙す目的で運営されていることが多いので、信頼できるか確認し、もし騙されても自分を責めるだけにしておくことだ。あまり厳しくならずに。
+Bitcoin は現金そのものに相当する。Bitcoin を使ったデビット、クレジット、銀行、ローン、部分準備貸付の創設や普及を妨げるものは何もない。関連スレッドの InterArmaEnimSil の投稿を読んでほしい。ただ注意しておくと、エスクローサービスは人を騙す目的で運営されていることが多いので、信頼できるか確認し、もし騙されても自分を責めるだけにしておくことだ。あまり厳しくならずに。

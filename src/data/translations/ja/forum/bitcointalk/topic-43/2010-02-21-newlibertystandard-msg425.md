@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-02-21T18:52:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック43におけるNewLibertyStandardの文脈投稿。msg540の前。"
+description: "BitcoinTalk トピック 43 における NewLibertyStandard の文脈投稿。msg540 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,4 +24,4 @@ quotes:
 > この難易度はどうやって調整しているのか？（分散型システムを管理するということ？）そして、攻撃者がシステムを妨害するために難易度を非常に低くまたは非常に高く設定することを防ぐものは何だ？
 <!-- /tone-skip -->
 
-俺の理解では、すべてのBitcoinクライアントが同じアルゴリズム（数式）を内蔵しており、一定のブロック数ごとに自動的に難易度を調整する。それだけでなく、Bitcoinは異なる難易度で生成されたブロックを受け入れないと思う。だから改変されたBitcoinクライアントがより簡単に生成されたブロックを送信しようとしても、すべての正規クライアントが偽のブロックを拒否するだろう。
+俺の理解では、すべての Bitcoin クライアントが同じアルゴリズム（数式）を内蔵しており、一定のブロック数ごとに自動的に難易度を調整する。それだけでなく、Bitcoin は異なる難易度で生成されたブロックを受け入れないと思う。だから改変された Bitcoin クライアントがより簡単に生成されたブロックを送信しようとしても、すべての正規クライアントが偽のブロックを拒否するだろう。

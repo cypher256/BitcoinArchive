@@ -8,7 +8,7 @@ author: "gavinandresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "gavinandresen がbitcoin/bitcoin Issue #7でスレッドを開始。"
+description: "gavinandresen が bitcoin/bitcoin Issue #7 でスレッドを開始。"
 isSatoshi: false
 tags:
   - "github"
@@ -16,6 +16,6 @@ tags:
 translationStatus: complete
 ---
 
-ビットコインの新規ユーザーは、bitcoinが全トランザクションとブロックをダウンロードしてインデックスを作成する間、1時間から2時間（あるいはそれ以上）待たなければならない。
+ビットコインの新規ユーザーは、bitcoin が全トランザクションとブロックをダウンロードしてインデックスを作成する間、1時間から 2時間（あるいはそれ以上）待たなければならない。
 
 サトシはブロックヘッダーのみをダウンロードするコードをほぼ実装している。ブロックを生成しない限り、過去のトランザクションはすべて必要ではない。

@@ -8,7 +8,7 @@ author: "RogerRabbit"
 participants:
   - name: "RogerRabbit"
     slug: "rogerrabbit"
-description: "BitcoinTalkトピック21におけるRogerRabbitの文脈投稿。msg112の前。"
+description: "BitcoinTalk トピック 21 における RogerRabbit の文脈投稿。msg112 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,5 +16,5 @@ translationStatus: complete
 
 接続数は具体的に何の役に立つのだろうか？ 接続数が多いとコインの生成が増えるのか、それとも接続数に関係なく同じなのか？
 
-時々Torが詰まって、3～4接続のまま数時間続くことがある。それからbitcoinを再起動するかTorを再起動して接続をリフレッシュすると、7、8、あるいはそれ以上（現在9）になる。
+時々 Tor が詰まって、3～4 接続のまま数時間続くことがある。それから bitcoin を再起動するか Tor を再起動して接続をリフレッシュすると、7、8、あるいはそれ以上（現在 9）になる。
 接続数が少ないとコインの生成が遅くなるかどうかはよく分からなかったが、相関があるのか気になった。もしないなら、接続が多いことは少ない場合と比べて具体的にどう役立つのだろうか？

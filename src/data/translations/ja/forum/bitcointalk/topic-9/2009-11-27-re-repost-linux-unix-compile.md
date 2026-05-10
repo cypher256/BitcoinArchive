@@ -1,5 +1,5 @@
 ---
-title: "Re: 再投稿：Linux/UNIXコンパイル"
+title: "Re: 再投稿：Linux/UNIX コンパイル"
 date: 2009-11-27T17:27:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「再投稿：Linux/UNIXコンパイル」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「再投稿：Linux/UNIX コンパイル」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-Linux版は準備中だ。MarttiのLinux移植版がメインコードブランチにマージされ、New Liberty Standardがテストを行っている。次のリリース、バージョン0.2に含まれる予定だ。
+Linux 版は準備中だ。Martti の Linux 移植版がメインコードブランチにマージされ、New Liberty Standard がテストを行っている。次のリリース、バージョン 0.2 に含まれる予定だ。
 
-コマンドラインは0.2の後のTo-Doリストに入っている。
+コマンドラインは 0.2 の後の To-Do リストに入っている。

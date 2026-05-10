@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-02-16T17:36:40.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Proof-of-work難易度の上昇」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Proof-of-work 難易度の上昇」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,4 +27,4 @@ quotes:
 <!-- /tone-skip -->
 それについて考えたが、より小さい増分を実現する実用的な方法がなかった。ブロック生成の頻度は、トランザクションをできるだけ早く確認することとネットワークのレイテンシーの間でバランスが取られている。
 
-アルゴリズムは平均で1時間に6ブロックを目指している。5 BCで1時間に60ブロックだと、ブロック数が10倍になり、初回ブロックダウンロードに10倍の時間がかかる。ブロック間の平均が1分しかなく、ネットワークが大きくなった時のブロードキャストレイテンシーに近すぎるため、いずれにしても機能しないだろう。
+アルゴリズムは平均で 1時間に 6 ブロックを目指している。5 BC で 1時間に 60 ブロックだと、ブロック数が 10倍になり、初回ブロックダウンロードに 10倍の時間がかかる。ブロック間の平均が 1分しかなく、ネットワークが大きくなった時のブロードキャストレイテンシーに近すぎるため、いずれにしても機能しないだろう。

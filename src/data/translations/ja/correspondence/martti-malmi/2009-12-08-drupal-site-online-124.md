@@ -1,5 +1,5 @@
 ---
-title: "Drupalサイトが公開"
+title: "Drupal サイトが公開"
 date: 2009-12-08T05:43:33Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシが新しいDrupalベースのbitcoin.orgウェブサイトの公開を発表し、以前のページからの大幅な改善と評価。"
+description: "サトシが新しい Drupal ベースの bitcoin.org ウェブサイトの公開を発表し、以前のページからの大幅な改善と評価。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -24,4 +24,4 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-新しいDrupalサイトを公開した。安全な移行のための十分な時間が経過したし、サイトの見栄えも良い。テーマにはまだ作業が必要だが、今のところ十分だ。以前のbitcoin.orgページからは大幅な改善だ。
+新しい Drupal サイトを公開した。安全な移行のための十分な時間が経過したし、サイトの見栄えも良い。テーマにはまだ作業が必要だが、今のところ十分だ。以前の bitcoin.org ページからは大幅な改善だ。

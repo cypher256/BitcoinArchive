@@ -1,5 +1,5 @@
 ---
-title: "Re: SMFフォーラム、MODのインストールが必要"
+title: "Re: SMF フォーラム、MOD のインストールが必要"
 date: 2009-11-20T07:05:34Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがフォーラム設定用にサトシにVPSへのSSHアクセスを提供し、公開を承認。自身のBitcoin取引所の立ち上げへの期待も表明。"
+description: "マルミがフォーラム設定用にサトシに VPS への SSH アクセスを提供し、公開を承認。自身の Bitcoin 取引所の立ち上げへの期待も表明。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,13 +24,13 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-今日は設定する時間がありませんが、一時的なアカウント「maintenance」をパスワード「6648ku5HeK」で作成し、/var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
+今日は設定する時間がありませんが、一時的なアカウント「maintenance」をパスワード「6648ku5HeK」で作成し、/var/www/bitcoin へのフル権限を付与しました。ポート 30000 で ssh または sftp でアクセスできます。
 
-公開して大丈夫です。リダイレクトとDNSエントリのどちらを設定しますか？DNSエントリの場合は、フォーラムのアドレスがhttp://forum.bitcoin.org/になるようにApache vhostを設定できます。
+公開して大丈夫です。リダイレクトと DNS エントリのどちらを設定しますか？DNS エントリの場合は、フォーラムのアドレスが http://forum.bitcoin.org/になるように Apache vhost を設定できます。
 
-Linuxビルドが動くようになって良かったです。新しいリリースとフォーラムで物事が動き出すのを見るのは楽しみです。自分の取引所を立ち上げて、（ウェブ）ビジネス関係者に通貨を宣伝し始めるのもそう遠くないでしょう。
+Linux ビルドが動くようになって良かったです。新しいリリースとフォーラムで物事が動き出すのを見るのは楽しみです。自分の取引所を立ち上げて、（ウェブ）ビジネス関係者に通貨を宣伝し始めるのもそう遠くないでしょう。
 
-NewLibertyStandardはコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
+NewLibertyStandard はコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
 
 <!-- speaker: Satoshi Nakamoto -->
 > SMFフォーラムの設定を進めている。SMFはphpBBよりも設計が優れていて信頼性が高いと言われているので、SMFの見た目をちゃんと整えられるなら、そちらが望ましい選択だ。

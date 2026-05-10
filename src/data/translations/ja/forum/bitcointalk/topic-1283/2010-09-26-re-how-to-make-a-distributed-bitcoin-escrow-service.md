@@ -1,5 +1,5 @@
 ---
-title: "Re: 分散型BitCoinエスクローサービスの作り方"
+title: "Re: 分散型 BitCoin エスクローサービスの作り方"
 date: 2010-09-26T17:34:26.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-まだ実装されていないが、ネットワークは2つの署名を必要とするトランザクションをサポートできる。ここに説明がある：
+まだ実装されていないが、ネットワークは 2 つの署名を必要とするトランザクションをサポートできる。ここに説明がある：
 [topic 750](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-750/2010-08-11-re-escrow/)
 
 エスクローなしの直接支払いよりは絶対に安全だが、人間が仲裁するエスクローほどではない（もちろん、その人間を十分に信頼できると仮定した場合だが）。

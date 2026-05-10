@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin @ EPCAカンファレンス・アムステルダム 4月4-6日？"
+title: "Re: Bitcoin @ EPCA カンファレンス・アムステルダム 4月4-6日？"
 date: 2011-02-10T20:35:22Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルッティがEPCAカンファレンスの招待に返信し、担当者の手配を約束"
+description: "マルッティが EPCA カンファレンスの招待に返信し、担当者の手配を約束"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -25,12 +25,12 @@ translationStatus: complete
 <!-- speaker: Martti Malmi -->
 こんにちは。
 
-ご連絡いただきありがとうございます。返信が遅くなり申し訳ございません。EPCAはBitcoinプロジェクトにとって非常に興味深く、ネットワーキングの良い機会だと思います。この件で協力できる人を見つけます。それまでの間、ご質問があればお気軽にお尋ねください。
+ご連絡いただきありがとうございます。返信が遅くなり申し訳ございません。EPCA は Bitcoin プロジェクトにとって非常に興味深く、ネットワーキングの良い機会だと思います。この件で協力できる人を見つけます。それまでの間、ご質問があればお気軽にお尋ねください。
 
 よろしくお願いいたします。
 
 Martti Malmi<br>
-Bitcoinプロジェクト開発者
+Bitcoin プロジェクト開発者
 
 <!-- speaker: Douwe Lycklama -->
 > こんにちは。

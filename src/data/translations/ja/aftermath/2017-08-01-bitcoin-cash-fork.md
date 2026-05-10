@@ -52,6 +52,6 @@ BCH ローンチの旗手は、[ロジャー・ヴァー](https://en.wikipedia.o
 
 ビットコインキャッシュはローンチイベントを生き延びた。フォーク後数時間以内に BCH は独自のブロック生成、取引所上場 (Bitfinex、ViaBTC、Kraken)、価格発見 (約 300 ドルの初期取引) を持っていた。Bitcoin XT・Bitcoin Classic・Bitcoin Unlimited が永続的な別チェーンを残せず崩壊したのに対し、BCH の意図的なハードフォーク方式は、現在まで動作し続ける別ネットワークを残した。
 
-BCH コミュニティ自体は一年後に分裂した。2018 年 11 月 15 日、Bitcoin ABC 陣営とビットコインSV陣営の間のハッシュ戦争が[ビットコインSVのフォーク](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/)を生み、SV チェーンは別ネットワークとして継続した。元の BCH チェーンはその後もプロトコル変更 (Cash Tokens、Adaptive Blocksize Limit Algorithm) を続けたが、ネットワーク占有率はビットコイン本体チェーンより一貫して小さいままだった。
+BCH コミュニティ自体は一年後に分裂した。2018 年 11 月 15 日、Bitcoin ABC 陣営とビットコイン SV 陣営の間のハッシュ戦争が[ビットコイン SV のフォーク](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/)を生み、SV チェーンは別ネットワークとして継続した。元の BCH チェーンはその後もプロトコル変更 (Cash Tokens、Adaptive Blocksize Limit Algorithm) を続けたが、ネットワーク占有率はビットコイン本体チェーンより一貫して小さいままだった。
 
 2017 年 8 月 1 日の分裂は、ブロックサイズ戦争の時系列上の決着点である。論争の対象だったパラメーター (ブロックサイズ) は、チェーンの合意ではなくチェーンの分離によって解決された。本体チェーンはその後、BCH のフォークから三週間後の 2017 年 8 月 24 日に Segregated Witness を有効化し、その後も Lightning ネットワーク、後の Taproot と、本体チェーンのソフトフォーク経路で進んだ。全経緯は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。

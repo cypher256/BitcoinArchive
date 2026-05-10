@@ -8,12 +8,12 @@ author: "nanaimogold"
 participants:
   - name: "nanaimogold"
     slug: "nanaimogold"
-description: "BitcoinTalkトピック12におけるnanaimogoldの文脈投稿。msg45の前。"
+description: "BitcoinTalk トピック 12 における nanaimogold の文脈投稿。msg45 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-この取り組みに感謝する。P2P決済システムは長い間必要とされていた。
+この取り組みに感謝する。P2P 決済システムは長い間必要とされていた。
 
 Shane

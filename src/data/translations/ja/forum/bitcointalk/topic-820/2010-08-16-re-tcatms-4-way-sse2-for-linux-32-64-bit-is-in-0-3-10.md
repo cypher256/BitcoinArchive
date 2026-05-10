@@ -1,5 +1,5 @@
 ---
-title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載"
+title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載"
 date: 2010-08-16T04:36:59.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載」におけるサトシ・ナカモトの返信。"
+description: "スレッド「tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -34,6 +34,6 @@ model name : Genuine Intel(R) CPU             000  @ 3.20GHz
 stepping : 4
 ```
 
-cpu family 6 model 26 stepping 4はIntel Core i7だ。<br>
--4wayで23%の高速化、-4way + ハイパースレッディングで合計63%の高速化だ。<br>
-ハイパースレッディングありの場合、なしの場合より33%高速だ。
+cpu family 6 model 26 stepping 4 は Intel Core i7 だ。<br>
+-4way で 23%の高速化、-4way + ハイパースレッディングで合計 63%の高速化だ。<br>
+ハイパースレッディングありの場合、なしの場合より 33%高速だ。

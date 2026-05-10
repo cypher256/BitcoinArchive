@@ -1,5 +1,5 @@
 ---
-title: "Re: ブロックがダウンロードされない - Microsoft Security Essentialsユーザーは必読"
+title: "Re: ブロックがダウンロードされない - Microsoft Security Essentials ユーザーは必読"
 date: 2010-07-13T18:37:54.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "bitcoin2paysafe"
 participants:
   - name: "bitcoin2paysafe"
     slug: "bitcoin2paysafe"
-description: "BitcoinTalkトピック323におけるbitcoin2paysafeの文脈投稿。msg2867の前。"
+description: "BitcoinTalk トピック 323 における bitcoin2paysafe の文脈投稿。msg2867 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-HDDが一杯なんじゃないか？
+HDD が一杯なんじゃないか？

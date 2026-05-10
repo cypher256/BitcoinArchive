@@ -8,7 +8,7 @@ author: "MoonShadow"
 participants:
   - name: "MoonShadow"
     slug: "moonshadow"
-description: "BitcoinTalkトピック723におけるMoonShadowの文脈投稿。msg8103の前。"
+description: "BitcoinTalk トピック 723 における MoonShadow の文脈投稿。msg8103 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -34,4 +34,4 @@ quotes:
 <!-- /tone-skip -->
 
 はい、ただ私が指摘していたのは、通貨の一般的な使用では検証を待つ必要は通常ないということだ。検証の待機や信頼できる第三者の利用を必要とするのは未知の相手だ。
-したがって、オンラインでもIRLでも、ほとんどの日常的な取引は即座に信頼に基づいて行えるか、ローカルクライアントの検証による追加の確信でほぼ即座に行える。10分の遅延は実際にはデメリットではない。
+したがって、オンラインでも IRL でも、ほとんどの日常的な取引は即座に信頼に基づいて行えるか、ローカルクライアントの検証による追加の確信でほぼ即座に行える。10分の遅延は実際にはデメリットではない。

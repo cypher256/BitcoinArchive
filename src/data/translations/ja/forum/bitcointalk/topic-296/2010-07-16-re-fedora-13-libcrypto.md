@@ -1,5 +1,5 @@
 ---
-title: "Re: Fedora 13のlibcrypto"
+title: "Re: Fedora 13 の libcrypto"
 date: 2010-07-16T14:55:23.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.1のリリース候補を試してほしい。少なくともlibcryptoの依存関係は解決されるはずだ:
+0.3.1 のリリース候補を試してほしい。少なくとも libcrypto の依存関係は解決されるはずだ:
 
 [topic 383](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-383/2010-07-16-biomike-msg3581/)
 

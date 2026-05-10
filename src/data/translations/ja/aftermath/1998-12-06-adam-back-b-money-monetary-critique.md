@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "アダム・バックがb-money提案に対し7つの貨幣設計上の論点を指摘し、Hashcashを鋳造機構として提案。ビットコイン10年前の分析。"
+description: "アダム・バックが b-money 提案に対し 7 つの貨幣設計上の論点を指摘し、Hashcash を鋳造機構として提案。ビットコイン 10年前の分析。"
 isSatoshi: false
 tags:
   - "adam-back"

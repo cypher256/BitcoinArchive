@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "マイク・ハーンがサトシに、Electronic Funds Transfer Actがビットコインに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
+description: "マイク・ハーンがサトシに、Electronic Funds Transfer Act がビットコインに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -26,10 +26,10 @@ secondarySources:
 <!-- speaker: Mike Hearn -->
 こんにちは、Satoshi。
 
-以下のWikiページを読んだところだ：
+以下の Wiki ページを読んだところだ：
 
 http://en.wikipedia.org/wiki/Chargeback
 
-そこには「米国のデビットカード保有者は、Electronic Funds Transfer Actに基づくFederal Reserve Regulation Eにより、取消権が保証されている。同様の権利が、対応するカード協会または銀行ネットワークが定めた規則に従い、世界的に適用される」と書かれている。
+そこには「米国のデビットカード保有者は、Electronic Funds Transfer Act に基づく Federal Reserve Regulation E により、取消権が保証されている。同様の権利が、対応するカード協会または銀行ネットワークが定めた規則に従い、世界的に適用される」と書かれている。
 
-「Electronic Funds Transfer Act」というのはかなり包括的な名称に聞こえるが、これがBitCoinに適用されると思うだろうか？もしそうなら、チャージバックができないことが違法となるリスクはあるだろうか？
+「Electronic Funds Transfer Act」というのはかなり包括的な名称に聞こえるが、これが BitCoin に適用されると思うだろうか？もしそうなら、チャージバックができないことが違法となるリスクはあるだろうか？

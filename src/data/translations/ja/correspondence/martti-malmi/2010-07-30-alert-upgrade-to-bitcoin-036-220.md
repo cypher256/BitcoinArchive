@@ -1,5 +1,5 @@
 ---
-title: "[bitcoin-list] アラート: Bitcoin 0.3.6にアップグレードしてください"
+title: "[bitcoin-list] アラート: Bitcoin 0.3.6 にアップグレードしてください"
 date: 2010-07-30T05:34:38Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがbitcoin-listメーリングリストに重要なバグ修正のためBitcoin 0.3.6へのアップグレードを促すアラートを送信。"
+description: "サトシが bitcoin-list メーリングリストに重要なバグ修正のため Bitcoin 0.3.6 へのアップグレードを促すアラートを送信。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -23,9 +23,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-重要なバグ修正を取得するため、できるだけ早く0.3.6にアップグレードしてほしい。
+重要なバグ修正を取得するため、できるだけ早く 0.3.6 にアップグレードしてほしい。
 
-ダウンロードリンクはbitcoin.orgのホームページを確認してほしい。
+ダウンロードリンクは bitcoin.org のホームページを確認してほしい。
 
 
 ------------------------------------------------------------------------------<br>

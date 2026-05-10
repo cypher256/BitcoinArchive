@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinに関する質問"
+title: "Re: Bitcoin に関する質問"
 date: 2009-12-11T17:58:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Bitcoinに関する質問」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Bitcoin に関する質問」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-その通りだ。IP送信オプションを使用する場合、そのIPに応答する相手に送信することになる。Bitcoinアドレスへの送信にはその問題はない。
+その通りだ。IP 送信オプションを使用する場合、その IP に応答する相手に送信することになる。Bitcoin アドレスへの送信にはその問題はない。
 
-計画としては、IP + Bitcoinアドレスのオプションを実装し、両方の利点を兼ね備えるようにすることだ。各トランザクションごとに異なるアドレスを使用するが、受信者は指定されたBitcoinアドレスでワンタイムアドレスに署名し、意図された受信者に属していることを証明する。
+計画としては、IP + Bitcoin アドレスのオプションを実装し、両方の利点を兼ね備えるようにすることだ。各トランザクションごとに異なるアドレスを使用するが、受信者は指定された Bitcoin アドレスでワンタイムアドレスに署名し、意図された受信者に属していることを証明する。

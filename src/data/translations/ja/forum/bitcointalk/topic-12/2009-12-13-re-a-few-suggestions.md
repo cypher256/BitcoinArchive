@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-実行時にUIなしで動作させるためのコマンドラインスイッチがある。メインウィンドウを作成しないだけだ。簡単な方法としては、ui.cppの「pframeMain->Show」と「ptaskbaricon->Show」を無効にすることだ。ネットワークスレッドはUIが存在しなくても気にしない。他のUIはCheckDiskSpaceでディスク容量が不足した場合のメッセージボックスだけだ。
+実行時に UI なしで動作させるためのコマンドラインスイッチがある。メインウィンドウを作成しないだけだ。簡単な方法としては、ui.cpp の「pframeMain->Show」と「ptaskbaricon->Show」を無効にすることだ。ネットワークスレッドは UI が存在しなくても気にしない。他の UI は CheckDiskSpace でディスク容量が不足した場合のメッセージボックスだけだ。
 
 次に、操作を行うために通信する別のコマンドラインユーティリティを用意する。名前を何にすべきかはまだわからない。
 

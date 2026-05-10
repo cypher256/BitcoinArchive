@@ -1,5 +1,5 @@
 ---
-title: "Re: Sourceforgeトラッカー"
+title: "Re: Sourceforge トラッカー"
 date: 2009-12-07T11:49:08Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがトラッキングを回避するためSourceForgeのロゴをローカルサーバーにコピーし、SFの商標ポリシーに準拠していることを確認。"
+description: "マルミがトラッキングを回避するため SourceForge のロゴをローカルサーバーにコピーし、SF の商標ポリシーに準拠していることを確認。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-ロゴをローカルサーバーにコピーしましたので、グラフィックとして引き続き使えます。SFの商標ポリシーで禁止されていません。
+ロゴをローカルサーバーにコピーしましたので、グラフィックとして引き続き使えます。SF の商標ポリシーで禁止されていません。
 
 <!-- tone-skip -->
 > <!-- speaker: Satoshi Nakamoto -->

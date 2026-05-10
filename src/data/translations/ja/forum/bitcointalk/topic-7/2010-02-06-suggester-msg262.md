@@ -8,7 +8,7 @@ author: "Suggester"
 participants:
   - name: "Suggester"
     slug: "suggester"
-description: "BitcoinTalkトピック7におけるSuggesterの文脈投稿。after msg30, サトシを引用."
+description: "BitcoinTalk トピック 7 における Suggester の文脈投稿。after msg30, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -30,4 +30,4 @@ translationStatus: complete
 >
 > 例：BitCoinをTor経由でルーティングできるようにするとか。
 
-誰か間違っていたら指摘してくれ。だが、こいつはすでに匿名なのだと思っていたんだが！ 自分が送金している相手は、こちらのIPか何かを知ることができるのか？
+誰か間違っていたら指摘してくれ。だが、こいつはすでに匿名なのだと思っていたんだが！ 自分が送金している相手は、こちらの IP か何かを知ることができるのか？

@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinアドレスの衝突"
+title: "Re: Bitcoin アドレスの衝突"
 date: 2010-02-23T22:24:00.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Bitcoinアドレスの衝突」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Bitcoin アドレスの衝突」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -28,4 +28,4 @@ quotes:
 
 いいえ、生成された各トランザクションは新しい使い捨てアドレスを使用する。
 
-メインウィンドウのアドレスは何にも使用されておらず、コピーしやすいようにあるだけだ。0.2.5ではその横に「新規...」ボタンがあり、使用するたびに簡単に変更できる。
+メインウィンドウのアドレスは何にも使用されておらず、コピーしやすいようにあるだけだ。0.2.5 ではその横に「新規...」ボタンがあり、使用するたびに簡単に変更できる。

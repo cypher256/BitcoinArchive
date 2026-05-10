@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-これはバージョン0.3.11としてSVN rev 142に入っている。
+これはバージョン 0.3.11 として SVN rev 142 に入っている。

@@ -10,7 +10,7 @@ participants:
     slug: "genjix"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "genjixがスレッドを開始: WikiLeaks の連絡先情報？"
+description: "genjix がスレッドを開始: WikiLeaks の連絡先情報？"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -18,7 +18,7 @@ translationStatus: complete
 
 やあ、
 
-WikiLeaksにビットコインについて手紙を送りたいと思っている。残念ながら、彼らは過去に資金が差し押さえられた事件が何度かあったからだ。
+WikiLeaks にビットコインについて手紙を送りたいと思っている。残念ながら、彼らは過去に資金が差し押さえられた事件が何度かあったからだ。
 [http://wikileaks.org/media/support.html](http://wikileaks.org/media/support.html)
 
 彼らに連絡を取る方法を誰か知っているだろうか？

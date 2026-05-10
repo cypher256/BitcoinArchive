@@ -1,5 +1,5 @@
 ---
-title: "Re: *** 警告 *** 0.3.6にアップグレードしてください"
+title: "Re: *** 警告 *** 0.3.6 にアップグレードしてください"
 date: 2010-07-29T23:12:12.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがビルドエラーの解決策としてmake cleanを推奨し、プリコンパイル済みヘッダーの廃止を検討。"
+description: "サトシ・ナカモトがビルドエラーの解決策として make clean を推奨し、プリコンパイル済みヘッダーの廃止を検討。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -31,6 +31,6 @@ script.cpp:114: error: OP_NOP1 was not declared in this scope「make clean」や
 ```
 
 他にもこのエラーが出た方がいれば、最も簡単な解決策は「make clean」してからビルドを再試行することだ。
-プリコンパイル済みヘッダーは実際には必要ない。コンパイルがわずかに速くなるだけだ。廃止しようと思う。それでも、残ったファイルを削除するために、もう一度「make -f makefile.unix clean」を実行するかheaders.h.gchを削除する必要がある。
+プリコンパイル済みヘッダーは実際には必要ない。コンパイルがわずかに速くなるだけだ。廃止しようと思う。それでも、残ったファイルを削除するために、もう一度「make -f makefile.unix clean」を実行するか headers.h.gch を削除する必要がある。
 
-あのGLIBC_2.11のせいで。アップデートを受け入れないよう注意していたと思っていたのに。
+あの GLIBC_2.11 のせいで。アップデートを受け入れないよう注意していたと思っていたのに。

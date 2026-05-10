@@ -1,5 +1,5 @@
 ---
-title: "Re: Proof-of-work難易度の上昇"
+title: "Re: Proof-of-work 難易度の上昇"
 date: 2010-07-16T17:29:28.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「Proof-of-Work難易度の上昇」におけるサトシ・ナカモトの返信。"
+description: "スレッド「Proof-of-Work 難易度の上昇」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-はい、約20時間だ。（120承認 / 1時間あたり6ブロック = 20時間）これが使用可能になるまでの通常の時間だ。それよりずっと前に、ブロックを獲得したことはわかる。
+はい、約 20時間だ。（120 承認 / 1時間あたり 6 ブロック = 20時間）これが使用可能になるまでの通常の時間だ。それよりずっと前に、ブロックを獲得したことはわかる。

@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCパスワード"
+title: "Re: JSON-RPC パスワード"
 date: 2010-07-25T21:38:19.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック461におけるギャビン・アンドレセンの文脈投稿。msg5771に引用。"
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg5771 に引用。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,7 +24,7 @@ quotes:
 > バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成する：
 <!-- /tone-skip -->
 
-素晴らしい発見だ！より簡単な修正は、rpc.cpp/EncodeBase64関数でBIO_FLAGS_BASE64_NO_NLを指定することだ：
+素晴らしい発見だ！より簡単な修正は、rpc.cpp/EncodeBase64 関数で BIO_FLAGS_BASE64_NO_NL を指定することだ：
 
 ```diff
 diff --git a/rpc.cpp b/rpc.cpp

@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-0.3.18の新しいアカウントベースのコマンドを使用した疑似コードのサンプルだ。
+0.3.18 の新しいアカウントベースのコマンドを使用した疑似コードのサンプルだ。
 
 ```
 print "send to " + getaccountaddress(username) + " to fund your account"

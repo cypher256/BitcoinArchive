@@ -71,7 +71,7 @@ translationStatus: complete
 
 ## 1. 仮説が主張する内容
 
-仮説の主張は、バックがサトシ・ナカモトの仮名の中の人物だったというもの。バックの「サトシ」 との文書化された公的記録上のやり取り — [2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)や[2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、バックは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、2014 年以降 Blockstream を運営しつつ公的には正体を否定し続けている、ということになる。
+仮説の主張は、バックがサトシ・ナカモトの仮名の中の人物だったというもの。バックの「サトシ」 との文書化された公的記録上のやり取り — [2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)や [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、バックは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、2014 年以降 Blockstream を運営しつつ公的には正体を否定し続けている、ということになる。
 
 ## 2. 仮説が依拠する論点
 

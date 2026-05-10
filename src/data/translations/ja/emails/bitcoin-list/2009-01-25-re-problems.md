@@ -26,7 +26,7 @@ From: Nicholas Bohm 2009-01-25 10:17
 <!-- speaker: Satoshi Nakamoto -->
 どのような問題が発生しているだろうか？
 
-debug.logファイルを直接私に送ってほしい（リストに添付ファイルを送るのは避けた方が良い）。何が起きているか調べることができる。
+debug.log ファイルを直接私に送ってほしい（リストに添付ファイルを送るのは避けた方が良い）。何が起きているか調べることができる。
 
 Satoshi Nakamoto<br>
 bitcoin-help at vistomail dot com

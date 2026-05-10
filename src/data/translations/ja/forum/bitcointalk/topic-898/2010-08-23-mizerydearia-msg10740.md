@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalkトピック898におけるmizerydeariaの文脈投稿。msg10722の後。"
+description: "BitcoinTalk トピック 898 における mizerydearia の文脈投稿。msg10722 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

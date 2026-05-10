@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin Faucetの変更"
+title: "Re: Bitcoin Faucet の変更"
 date: 2010-06-24T22:07:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,11 +8,11 @@ author: "virtualcoin"
 participants:
   - name: "virtualcoin"
     slug: "virtualcoin"
-description: "BitcoinTalkトピック206におけるvirtualcoinの文脈投稿。msg1816の前。"
+description: "BitcoinTalk トピック 206 における virtualcoin の文脈投稿。msg1816 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ギャビン、配布するBitcoinアドレスを全部ブロックすればいいんじゃないか？
+ギャビン、配布する Bitcoin アドレスを全部ブロックすればいいんじゃないか？
 自動生成は簡単だろうか？

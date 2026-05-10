@@ -1,5 +1,5 @@
 ---
-title: "ニック・サボ（1964–） — Bit Goldとスマートコントラクトの考案者"
+title: "ニック・サボ（1964–） — Bit Gold とスマートコントラクトの考案者"
 date: 2005-12-29T00:00:00Z
 type: "biography"
 source: "wikipedia"
@@ -71,13 +71,13 @@ timeline
 1994年、サボは「スマートコントラクト」という用語を提唱した——契約条件がコードに直接記述された自己実行型の契約である。この概念は時代を数十年先取りしており、後に[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)などのプラットフォームの基盤となった。
 
 ### Bit Gold
-1998年、サボはプルーフ・オブ・ワークに基づく分散型デジタル通貨システム、Bit Goldを構想した。2005年12月29日、ブログ「Unenumerated」で完全な設計を公開した。Bit Goldは、信頼できる第三者なしにデジタル希少性を実現するという根本的な問題——ビットコインが後に解決するのと同じ問題——に取り組んだ。サボは後に振り返っている。「この一般的なアイデアを聞いたほとんど全員が、非常に悪いアイデアだと思ったのだ」。
+1998年、サボはプルーフ・オブ・ワークに基づく分散型デジタル通貨システム、Bit Gold を構想した。2005年12月29日、ブログ「Unenumerated」で完全な設計を公開した。Bit Gold は、信頼できる第三者なしにデジタル希少性を実現するという根本的な問題——ビットコインが後に解決するのと同じ問題——に取り組んだ。サボは後に振り返っている。「この一般的なアイデアを聞いたほとんど全員が、非常に悪いアイデアだと思ったのだ」。
 
-Bit Goldはビットコインと重要な概念を共有していた——プルーフ・オブ・ワーク、連鎖するパズル、分散型検証——しかし重大なセキュリティ上の弱点があった。単一の主体がノードの過半数を支配することを防ぐ問題を解決していなかった。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はこの設計を改良した。
+Bit Gold はビットコインと重要な概念を共有していた——プルーフ・オブ・ワーク、連鎖するパズル、分散型検証——しかし重大なセキュリティ上の弱点があった。単一の主体がノードの過半数を支配することを防ぐ問題を解決していなかった。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はこの設計を改良した。
 
 ### ビットコインとの関係
-サボは[2011年のブログ記事](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)でサトシの改良を認めている。「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。すなわち、プルーフ・オブ・ワークをビザンチン耐性のあるピアツーピアシステムのノードとなるために要求することで、信頼できない主体がノードの過半数を支配する脅威を大幅に軽減したというわけだ」。
+サボは [2011年のブログ記事](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)でサトシの改良を認めている。「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。すなわち、プルーフ・オブ・ワークをビザンチン耐性のあるピアツーピアシステムのノードとなるために要求することで、信頼できない主体がノードの過半数を支配する脅威を大幅に軽減したというわけだ」。
 
-[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は、ビットコインに関する初期のメールのやり取りの中で、ビットコインとサボのBit Goldの類似性に言及した。サトシは、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)を通じてサボの研究を知った。ダイは自身の[b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)の概念と合わせてBit Goldのレビューを提案した。
+[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は、ビットコインに関する初期のメールのやり取りの中で、ビットコインとサボの Bit Gold の類似性に言及した。サトシは、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)を通じてサボの研究を知った。ダイは自身の [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) の概念と合わせて Bit Gold のレビューを提案した。
 
-Bit Goldとビットコインの深い概念的類似性、公開された直接的なサボ–サトシ通信が存在しないこと、2007〜2008年を通じての Unenumerated ブログでの旺盛な執筆活動から、サボはサトシ正体仮説の最有力候補の一人として繰り返し議論されてきた — [サボ = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)に詳述。主要な裏付け論考として[スカイ・グレイ / TechCrunch 2013 文体計量分析](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[アストン大学 2014 研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[ポッパー / NYT 2015 『Digital Gold』 抜粋](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/)があり、反証としてはサボ自身の一貫した否定 (例: 2014 年ドミニク・フリスビー宛「残念ながら間違いだ」 の返信) がある。
+Bit Gold とビットコインの深い概念的類似性、公開された直接的なサボ–サトシ通信が存在しないこと、2007〜2008年を通じての Unenumerated ブログでの旺盛な執筆活動から、サボはサトシ正体仮説の最有力候補の一人として繰り返し議論されてきた — [サボ = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)に詳述。主要な裏付け論考として[スカイ・グレイ / TechCrunch 2013 文体計量分析](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[アストン大学 2014 研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[ポッパー / NYT 2015 『Digital Gold』 抜粋](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/)があり、反証としてはサボ自身の一貫した否定 (例: 2014 年ドミニク・フリスビー宛「残念ながら間違いだ」 の返信) がある。

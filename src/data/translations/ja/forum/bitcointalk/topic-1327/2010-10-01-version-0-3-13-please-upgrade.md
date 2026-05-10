@@ -1,5 +1,5 @@
 ---
-title: "バージョン0.3.13、アップグレードしてください"
+title: "バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-01T00:34:35.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトの投稿: \"バージョン0.3.13、アップグレードしてください\"."
+description: "サトシ・ナカモトの投稿: \"バージョン 0.3.13、アップグレードしてください\"."
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,30 +16,30 @@ secondarySources:
 translationStatus: complete
 ---
 
-バージョン0.3.13が利用可能になった。0/未承認トランザクションに関する潜在的な問題を防ぐためにアップグレードしてほしい。注意：0.3.13は0/未承認トランザクションをまだ使用していない場合の問題を防ぐが、すでに使用してしまった場合は0.3.13.2が必要だ。
+バージョン 0.3.13 が利用可能になった。0/未承認トランザクションに関する潜在的な問題を防ぐためにアップグレードしてほしい。注意：0.3.13 は 0/未承認トランザクションをまだ使用していない場合の問題を防ぐが、すでに使用してしまった場合は 0.3.13.2 が必要だ。
 
 変更点：
 - 1回の承認があるまで支払いをカウントまたは使用しない。
-- 内部バージョン番号を312から31300に変更。
-- -allowreceivebyipが指定された場合のみIPアドレスで送信されたトランザクションを受け入れる。
-- DB_PRIVATE Berkeley DBフラグを廃止。
-- 1セント未満の端数のお釣りで最後の1セントを送金する際の問題を修正。
-- Linuxでの128ビット4-way SSE2の自動検出。
+- 内部バージョン番号を 312 から 31300 に変更。
+- -allowreceivebyip が指定された場合のみ IP アドレスで送信されたトランザクションを受け入れる。
+- DB_PRIVATE Berkeley DB フラグを廃止。
+- 1 セント未満の端数のお釣りで最後の 1 セントを送金する際の問題を修正。
+- Linux での 128 ビット 4-way SSE2 の自動検出。
 
 ギャビン・アンドレセン:
-- 別のマシンからのJSON-RPC接続を受け入れるオプション -rpcallowip=。
-- LinuxでのSIGTERMによるクリーンシャットダウン。
+- 別のマシンからの JSON-RPC 接続を受け入れるオプション -rpcallowip=。
+- Linux での SIGTERM によるクリーンシャットダウン。
 
 ダウンロード：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.13/](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.13/)
 
-（Mac OSXビルドをしてくれたLaszloに感謝！）
+（Mac OSX ビルドをしてくれた Laszlo に感謝！）
 
 注意：
-Linux 64ビット版のSSE2自動検出は、64ビットモードのAMDでは動作しない。代わりにこちらを試して、正しく動作するか知らせてほしい：
+Linux 64 ビット版の SSE2 自動検出は、64 ビットモードの AMD では動作しない。代わりにこちらを試して、正しく動作するか知らせてほしい：
 [http://www.bitcoin.org/download/bitcoin-0.3.13.1-specialbuild-linux64.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.13.1-specialbuild-linux64.tar.gz)
 
--4wayおよび-4way=0で手動でSSE2の使用を制御することもできる。
+-4way および-4way=0 で手動で SSE2 の使用を制御することもできる。
 
-バージョン0.3.13.2（SVN rev 161）には、すでに0/未承認トランザクションがあり、それをすでに使用した可能性がある場合の改善が含まれている。Windows版のビルドはこちらだ：
+バージョン 0.3.13.2（SVN rev 161）には、すでに 0/未承認トランザクションがあり、それをすでに使用した可能性がある場合の改善が含まれている。Windows 版のビルドはこちらだ：
 [http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe)

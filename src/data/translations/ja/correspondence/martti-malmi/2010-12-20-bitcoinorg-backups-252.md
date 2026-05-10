@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin.orgのバックアップ"
+title: "Re: Bitcoin.org のバックアップ"
 date: 2010-12-20T21:21:27Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがbitcoin.orgの別サーバーへのバックアップ開始に同意し、PGP鍵を共有。バックアップサイズは約50MBと報告。"
+description: "マルミが bitcoin.org の別サーバーへのバックアップ開始に同意し、PGP 鍵を共有。バックアップサイズは約 50MB と報告。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -32,9 +32,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-分かりました。使用している別のサーバーへのバックアップを開始します。設定が完了したらSSH鍵を送りますので、お好きなサーバーにバックアップできるようになります。バックアップファイルのサイズは現在約50MBです。
+分かりました。使用している別のサーバーへのバックアップを開始します。設定が完了したら SSH 鍵を送りますので、お好きなサーバーにバックアップできるようになります。バックアップファイルのサイズは現在約 50MB です。
 
-ちなみに、僕のPGP鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
+ちなみに、僕の PGP 鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
 
 <!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->

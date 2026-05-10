@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック217におけるNewLibertyStandardの文脈投稿。msg1827の前。"
+description: "BitcoinTalk トピック 217 における NewLibertyStandard の文脈投稿。msg1827 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-1.0に1票。Slashdotに載る助けにもなるだろう。
+1.0 に 1 票。Slashdot に載る助けにもなるだろう。

@@ -1,5 +1,5 @@
 ---
-title: "Re: bitcoin.orgの障害の原因は？"
+title: "Re: bitcoin.org の障害の原因は？"
 date: 2010-12-06T16:08:56Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシが安全なパスワード交換のためPGP公開鍵をマルミと共有し、BitcoinExchangeの別サーバーへの移行進捗を確認。"
+description: "サトシが安全なパスワード交換のため PGP 公開鍵をマルミと共有し、BitcoinExchange の別サーバーへの移行進捗を確認。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -40,7 +40,7 @@ quotes:
 > 分かりました、彼に聞いてみます。
 
 <!-- speaker: Satoshi Nakamoto -->
-ありがとう。bitcoinexchangeの別サーバーへの移行は完了したか？
+ありがとう。bitcoinexchange の別サーバーへの移行は完了したか？
 
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----

@@ -1,5 +1,5 @@
 ---
-title: "Re: MacでのSVN r115ビルドエラー：回避策"
+title: "Re: Mac での SVN r115 ビルドエラー：回避策"
 date: 2010-07-28T21:40:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック604におけるギャビン・アンドレセンの文脈投稿。after msg6273, サトシを引用."
+description: "BitcoinTalk トピック 604 におけるギャビン・アンドレセンの文脈投稿。after msg6273, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -23,5 +23,5 @@ translationStatus: complete
 <!-- quote: q1 -->
 > 俺がOSXビルドで壊したのはそれだけか？！ 本当にあの一つの変更だけで動くのか？
 
-SVN r115の変更をマージしたTESTネットワーク用のbitcoindをビルドしたが、そう、あの一つの変更だけで、午後の間ずっと機嫌よくコインを生成し続けている。
-ただし俺は標準のmakefile.osxは使っていない。依存ディレクトリの構造を少し違うやり方で組んでいる（特にこれといった理由はないのだが）。
+SVN r115 の変更をマージした TEST ネットワーク用の bitcoind をビルドしたが、そう、あの一つの変更だけで、午後の間ずっと機嫌よくコインを生成し続けている。
+ただし俺は標準の makefile.osx は使っていない。依存ディレクトリの構造を少し違うやり方で組んでいる（特にこれといった理由はないのだが）。

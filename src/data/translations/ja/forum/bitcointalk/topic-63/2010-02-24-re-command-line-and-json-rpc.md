@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-02-24T06:17:23.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「コマンドラインとJSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「コマンドラインと JSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -35,6 +35,6 @@ quotes:
 > この要件はいつか解消されますか？GTKを扱いたくないのですが。
 <!-- /tone-skip -->
 
-GTKを「扱う」のに実際どれくらいの手間がかかるのだろうか？「sudo apt-get install libgtk2.0-0」をして、いくつかの余分なライブラリが置いてあるだけの問題ではないか？GTKは何もする必要はなく、ただそこにあればBitcoinが起動時にリンクでき、GUIがないためgtk-init-checkの呼び出しが失敗して、それで終わりだ。
+GTK を「扱う」のに実際どれくらいの手間がかかるのだろうか？「sudo apt-get install libgtk2.0-0」をして、いくつかの余分なライブラリが置いてあるだけの問題ではないか？GTK は何もする必要はなく、ただそこにあれば Bitcoin が起動時にリンクでき、GUI がないため gtk-init-check の呼び出しが失敗して、それで終わりだ。
 
-GTKのリンクを避けるためだけにwxBaseを使用するために、すべてをifdefで台無しにして、別のコンパイルとバイナリを用意するよりマシだ。
+GTK のリンクを避けるためだけに wxBase を使用するために、すべてを ifdef で台無しにして、別のコンパイルとバイナリを用意するよりマシだ。

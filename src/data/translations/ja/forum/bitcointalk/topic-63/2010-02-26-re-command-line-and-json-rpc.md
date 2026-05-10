@@ -1,5 +1,5 @@
 ---
-title: "Re: コマンドラインとJSON-RPC"
+title: "Re: コマンドラインと JSON-RPC"
 date: 2010-02-26T16:29:21.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「コマンドラインとJSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「コマンドラインと JSON-RPC」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,16 +16,16 @@ secondarySources:
 translationStatus: complete
 ---
 
-wx/clipbrd.hは使用されていないので、#if wxUSE_GUIの中に移動してほしい。
+wx/clipbrd.h は使用されていないので、#if wxUSE_GUI の中に移動してほしい。
 
-SVNのheaders.hを更新した。
+SVN の headers.h を更新した。
 
-すまない、wxbaseにリンクしたが、コンピューターにはフルのwxWidgetsがあった。
+すまない、wxbase にリンクしたが、コンピューターにはフルの wxWidgets があった。
 
-db.h:140のクラスDbにメンバー「exisits」がないというのは変だ。pdb->get、pdb->put、pdb->delはその前にコンパイルできていた。Berkeley DBのバージョン4.7.25を使っているか？
+db.h:140 のクラス Db にメンバー「exisits」がないというのは変だ。pdb->get、pdb->put、pdb->del はその前にコンパイルできていた。Berkeley DB のバージョン 4.7.25 を使っているか？
 
 Db::exists()
 [http://www.oracle.com/technology/documentation/berkeley-db/db/api_reference/CXX/frame_main.html](http://www.oracle.com/technology/documentation/berkeley-db/db/api_reference/CXX/frame_main.html)
 [http://www.oracle.com/technology/documentation/berkeley-db/db/api_reference/CXX/dbexists.html](http://www.oracle.com/technology/documentation/berkeley-db/db/api_reference/CXX/dbexists.html)
 
-おそらく最近existsが追加されたのかもしれない。それ以前はgetを使用していたのだろう。
+おそらく最近 exists が追加されたのかもしれない。それ以前は get を使用していたのだろう。

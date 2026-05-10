@@ -1,5 +1,5 @@
 ---
-title: "ウェイ・ダイによるb-moneyの限界と展望に関する返信"
+title: "ウェイ・ダイによる b-money の限界と展望に関する返信"
 date: 1998-12-07T23:20:00Z
 type: "article"
 source: "cypherpunks-mailing-list"
@@ -10,7 +10,7 @@ participants:
     slug: "wei-dai"
   - name: "Adam Back"
     slug: "adam-back"
-description: "ウェイ・ダイがアダム・バックへ返信。b-moneyはニッチに留まると認め、政府の暴力独占を差し引きでプラスと見る政治的変化も明かした。"
+description: "ウェイ・ダイがアダム・バックへ返信。b-money はニッチに留まると認め、政府の暴力独占を差し引きでプラスと見る政治的変化も明かした。"
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -19,7 +19,7 @@ tags:
   - "cypherpunks"
   - "monetary-policy"
   - "crypto-anarchy"
-editorNote: "このメールはビットコインに10年先立つものだが、金融政策と価格安定性という、ダイが2013年のビットコイン批判で再び取り上げることになるのと同じ根本的課題を特定している。"
+editorNote: "このメールはビットコインに 10年先立つものだが、金融政策と価格安定性という、ダイが 2013年のビットコイン批判で再び取り上げることになるのと同じ根本的課題を特定している。"
 secondarySources:
   - name: "Adam Back's forwarding of b-money protocol (Dec 5, 1998)"
     url: "http://cypherpunks.venona.com/archive/1998/12/msg00194.html"
@@ -39,13 +39,13 @@ translationStatus: complete
 
 *件名: Re: Wei Dei's "b-money" protocol*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、b-moneyプロトコルに関する[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の議論に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
+[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、b-money プロトコルに関する[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の議論に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
 
 **政府の暴力独占について：**
 
 > 「今では、政府の暴力独占は差し引きでプラスだと思うようになりました」
 
-**b-moneyの限定的な範囲について：**
+**b-money の限定的な範囲について：**
 
 > 「b-moneyはせいぜいニッチな通貨/契約執行メカニズムにしかなりません。政府が提供するものを使いたくない、あるいは使えない人々のためのものです」
 

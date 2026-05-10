@@ -1,5 +1,5 @@
 ---
-title: "Re: 現在のBitcoin経済モデルは持続不可能"
+title: "Re: 現在の Bitcoin 経済モデルは持続不可能"
 date: 2010-02-21T12:10:57.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Suggester"
 participants:
   - name: "Suggester"
     slug: "suggester"
-description: "BitcoinTalkトピック57におけるSuggesterの文脈投稿。msg415の後。"
+description: "BitcoinTalk トピック 57 における Suggester の文脈投稿。msg415 の後。"
 isSatoshi: false
 tags: []
 quotes:

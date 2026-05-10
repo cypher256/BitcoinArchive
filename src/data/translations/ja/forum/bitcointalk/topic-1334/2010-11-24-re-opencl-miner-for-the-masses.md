@@ -1,5 +1,5 @@
 ---
-title: "Re: 大衆向けOpenCLマイナー"
+title: "Re: 大衆向け OpenCL マイナー"
 date: 2010-11-24T17:53:09.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「大衆向けOpenCLマイナー」におけるサトシ・ナカモトの返信。"
+description: "スレッド「大衆向け OpenCL マイナー」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-改訂版のgetworkが公式クライアントに含まれるようになったが、マイナーはそれを使用するために少し更新する必要がある。
+改訂版の getwork が公式クライアントに含まれるようになったが、マイナーはそれを使用するために少し更新する必要がある。

@@ -8,10 +8,10 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック828におけるNewLibertyStandardの文脈投稿。msg9608の後。"
+description: "BitcoinTalk トピック 828 における NewLibertyStandard の文脈投稿。msg9608 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-誰か63534あたりのブロックを見てくれないか？私は0からダウンロードしているが、そのブロックで止まっているようだ。クライアントを再起動したら動き出した。
+誰か 63534 あたりのブロックを見てくれないか？私は 0 からダウンロードしているが、そのブロックで止まっているようだ。クライアントを再起動したら動き出した。

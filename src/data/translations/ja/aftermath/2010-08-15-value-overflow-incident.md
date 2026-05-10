@@ -43,26 +43,26 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2010年8月15日18:08 UTC頃、ビットコイン開発者[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638で異常を発見し、BitcoinTalkフォーラムの[討論スレッド (topic 823)](/BitcoinArchive/ja/entries/threads/forum/bitcointalk/topic-823/)に投稿した：
+2010年8月15日18:08 UTC 頃、ビットコイン開発者[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 で異常を発見し、BitcoinTalk フォーラムの[討論スレッド (topic 823)](/BitcoinArchive/ja/entries/threads/forum/bitcointalk/topic-823/)に投稿した：
 
 > 「奇妙な block 74638 — 92233720368.54277039 BTC？UINT64_MAXかな？」
 
-ブロック 74638の単一トランザクションが **184,467,440,737.09551616 BTC** を生成していた — 92,233,720,368.54277039 BTCの出力が2つ — ビットコインの総発行予定量2,100万BTCの約9,000倍である。
+ブロック 74638 の単一トランザクションが **184,467,440,737.09551616 BTC** を生成していた — 92,233,720,368.54277039 BTC の出力が 2 つ — ビットコインの総発行予定量 2,100 万 BTC の約 9,000倍である。
 
-**バグの内容:** トランザクション検証コードは個々の出力が非負であることを確認していたが、出力の合計における整数オーバーフローをチェックしていなかった。64ビット符号付き整数の最大値（INT64_MAX ≈ 9.2 × 10¹⁸）に近い2つの出力を足すと負の値にオーバーフローし、検証チェックを通過した：0.5 BTC入力 ≥ -0.01 BTC出力（オーバーフロー後）。
+**バグの内容:** トランザクション検証コードは個々の出力が非負であることを確認していたが、出力の合計における整数オーバーフローをチェックしていなかった。64 ビット符号付き整数の最大値（INT64_MAX ≈ 9.2 × 10¹⁸）に近い 2 つの出力を足すと負の値にオーバーフローし、検証チェックを通過した：0.5 BTC 入力 ≥ -0.01 BTC 出力（オーバーフロー後）。
 
-**対応:** 発見から約5時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/)を公開。`CheckTransaction()`に2つの新しいチェックを追加するソフトフォークだった：
+**対応:** 発見から約 5時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は [Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開。`CheckTransaction()`に 2 つの新しいチェックを追加するソフトフォークだった：
 
-1. 各出力はMAX_MONEY（21,000,000 BTC）を超えてはならない
-2. すべての出力の合計はMAX_MONEYを超えてはならない
+1. 各出力は MAX_MONEY（21,000,000 BTC）を超えてはならない
+2. すべての出力の合計は MAX_MONEY を超えてはならない
 
-[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は並行して独自の緊急パッチをテストし、フォーラム参加者[knightmb](/BitcoinArchive/ja/participants/knightmb/)が事前に公開していた清浄なブロックチェーン・スナップショットを復旧の起点として使用した。
+[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は並行して独自の緊急パッチをテストし、フォーラム参加者 [knightmb](/BitcoinArchive/ja/participants/knightmb/) が事前に公開していた清浄なブロックチェーン・スナップショットを復旧の起点として使用した。
 
-サトシはIRCでこう投稿した。
+サトシは IRC でこう投稿した。
 
 > 「URGENT: 重大なオーバーフローバグを修正。全員直ちに0.3.10にアップグレードしてほしい。」
 
-**結果:** 修正チェーンは事件発生から約15時間後のブロック 74691で無効なチェーンを追い越した。1,840億BTCはブロックチェーンの承認済み履歴から事実上消去された。
+**結果:** 修正チェーンは事件発生から約 15時間後のブロック 74691 で無効なチェーンを追い越した。1,840 億 BTC はブロックチェーンの承認済み履歴から事実上消去された。
 
 **偶発か悪用か？** 自然な問い: これは偶発的に起きたのか、それとも意図的な悪用だったのか。v0.3 のソースコードとトランザクション構造を分析すると、一点は確定でき、もう一点は不確定のまま残る。
 

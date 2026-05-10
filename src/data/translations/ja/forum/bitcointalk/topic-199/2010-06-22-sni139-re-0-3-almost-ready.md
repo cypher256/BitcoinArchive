@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-22T17:37:08.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-テスト用のWindows版RC1はこちらだ:
-（削除済み、下記RC2を参照）
+テスト用の Windows 版 RC1 はこちらだ:
+（削除済み、下記 RC2 を参照）
 
 テストしてすべてが正常に見えるかどうか報告してくれる方のみダウンロードしてほしい。"c:\program files\bitcoin"内のファイルを確認してほしい。

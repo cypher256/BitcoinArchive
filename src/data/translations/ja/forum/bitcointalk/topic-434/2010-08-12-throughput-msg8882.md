@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalkトピック434におけるthroughputの文脈投稿。サトシを引用."
+description: "BitcoinTalk トピック 434 における throughput の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -27,6 +27,6 @@ translationStatus: complete
 >
 > ブロック読み込みのコードには、誰かがwallet.datをコピーしたケースを修復するために作られた一種の再スキャンがある。ウォレットが復元されたために忘れられているが、すでに受信されているブロックの中の受領支払いを再発見する、というケースをその再スキャンが処理できるかは確認する必要がある。
 
-PGPで行われているように、鍵ペアをテキスト形式でエクスポートし、また戻ってインポートできるようにする方が良いだろう。
-また、例えばno-warranty-expert-modeで、トランザクション出力（および入力）に対するさらなる制御を追加するのも便利だろう。
-俺はtx入力の手動選択とtx出力の指定を要望する。-do-as-i-sayオプション付きのコマンドラインモードでのみ存在させればいい。
+PGP で行われているように、鍵ペアをテキスト形式でエクスポートし、また戻ってインポートできるようにする方が良いだろう。
+また、例えば no-warranty-expert-mode で、トランザクション出力（および入力）に対するさらなる制御を追加するのも便利だろう。
+俺は tx 入力の手動選択と tx 出力の指定を要望する。-do-as-i-say オプション付きのコマンドラインモードでのみ存在させればいい。

@@ -1,5 +1,5 @@
 ---
-title: "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載"
+title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載"
 date: 2010-08-15T18:43:27.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2」におけるサトシ・ナカモトの返信。"
+description: "スレッド「tcatm の 4-way SSE2 Linux 32/64 ビット版 0.3.9 rc2」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-テスターが正しくビルドされたか確認できるよう、簡易ビルドをアップロードした。（i5やAMDは持っていない）問題なければ、完全なパッケージをまとめてリリース作業をすべて行う。
+テスターが正しくビルドされたか確認できるよう、簡易ビルドをアップロードした。（i5 や AMD は持っていない）問題なければ、完全なパッケージをまとめてリリース作業をすべて行う。

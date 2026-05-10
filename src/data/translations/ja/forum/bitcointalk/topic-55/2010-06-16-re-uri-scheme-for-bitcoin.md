@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin用URIスキーム"
+title: "Re: Bitcoin 用 URI スキーム"
 date: 2010-06-16T00:15:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「ビットコインのURIスキーム」におけるサトシ・ナカモトの返信。"
+description: "スレッド「ビットコインの URI スキーム」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -24,7 +24,7 @@ translationStatus: complete
 
 ドメインで送信する良い点は、送信先を視覚的に確認できることだ。
 
-より重要な問題は、ブラウザーが127.0.0.1に接続することを許可されていない場合はどうなるかということだ:
+より重要な問題は、ブラウザーが 127.0.0.1 に接続することを許可されていない場合はどうなるかということだ:
 [topic 63](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-63/2010-03-02-the-madhatter-msg603/)
 
-そして、もしそうだとすると、127.0.0.1が含まれていたFreenetリンクの例はどうなるのだろうか？
+そして、もしそうだとすると、127.0.0.1 が含まれていた Freenet リンクの例はどうなるのだろうか？

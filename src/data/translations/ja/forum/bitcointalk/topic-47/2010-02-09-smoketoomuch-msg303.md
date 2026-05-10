@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoinクライアントとウェブサイトの翻訳"
+title: "Re: Bitcoin クライアントとウェブサイトの翻訳"
 date: 2010-02-09T21:33:33.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック47におけるSmokeTooMuchの投稿。"
+description: "BitcoinTalk トピック 47 における SmokeTooMuch の投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -24,4 +24,4 @@ quotes:
 > bitcoin.orgサイトの翻訳をプライベートメッセージで送ってくれ（長すぎる場合は、メールアドレスをPMで送る）。フロントページだけの翻訳でも構わない。
 <!-- /tone-skip -->
 
-プレーンテキストがいいのか、それとも.htmlや.phpファイルか？
+プレーンテキストがいいのか、それとも.html や.php ファイルか？

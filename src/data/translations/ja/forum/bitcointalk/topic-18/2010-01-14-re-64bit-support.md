@@ -1,5 +1,5 @@
 ---
-title: "Re: 64ビットサポート"
+title: "Re: 64 ビットサポート"
 date: 2010-01-14T20:17:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「64ビットサポート」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「64 ビットサポート」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-64ビットのコンパイルはまだ試していない。64ビット数を使用するのはわずかな箇所だけで、SHA-256は32ビットアルゴリズムなので、64ビットにしても速くならないが、64ビットOSを使っている人には便利かもしれない。機会があれば-m64を試して問題が何か確認してみる。
+64 ビットのコンパイルはまだ試していない。64 ビット数を使用するのはわずかな箇所だけで、SHA-256 は 32 ビットアルゴリズムなので、64 ビットにしても速くならないが、64 ビット OS を使っている人には便利かもしれない。機会があれば-m64 を試して問題が何か確認してみる。
 
-ia32-libsをインストールすれば、64ビットLinux上で32ビット版を実行できる。（sudo apt-get install ia32-libs）Debianパッケージを作成すれば、依存関係として自動的に取り込むことができるだろう。
+ia32-libs をインストールすれば、64 ビット Linux 上で 32 ビット版を実行できる。（sudo apt-get install ia32-libs）Debian パッケージを作成すれば、依存関係として自動的に取り込むことができるだろう。

@@ -1,5 +1,5 @@
 ---
-title: "Re: wallet.datの自動バックアップ"
+title: "Re: wallet.dat の自動バックアップ"
 date: 2010-08-27T01:13:42.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「wallet.datの自動バックアップ」におけるサトシ・ナカモトの返信。"
+description: "スレッド「wallet.dat の自動バックアップ」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -23,11 +23,11 @@ quotes:
 
 メモリーに読み込んで書き出す方法だと、メモリーが逼迫した状況で失敗する可能性がある。
 
-copyfile(const char* from, const char* to)やcopyfile(path from, path to)のような、できればBoostにあるものを探している。見つけてくれれば、実装にかかる可能性が高くなる。
+copyfile(const char* from, const char* to)や copyfile(path from, path to)のような、できれば Boost にあるものを探している。見つけてくれれば、実装にかかる可能性が高くなる。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > ファイルコピーについて、なぜBoostへの依存を増やすのか？コアライブラリは依存関係が少ない方がいい。
 <!-- /tone-skip -->
 
-JSONやwxWidgetsの依存関係を置き換える多数のものにBoostが必要だ。Boostは良い、ポータブルなもので、避けるべきではない。
+JSON や wxWidgets の依存関係を置き換える多数のものに Boost が必要だ。Boost は良い、ポータブルなもので、避けるべきではない。

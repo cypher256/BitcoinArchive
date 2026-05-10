@@ -10,12 +10,12 @@ participants:
     slug: "michael-marquardt"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "theymosがスレッドを開始: この奇妙な生成は何ですか？"
+description: "theymos がスレッドを開始: この奇妙な生成は何ですか？"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ビットコインは50コイン単位でしか生成されないと思っていたが、ここで50.44を受け取った。
+ビットコインは 50 コイン単位でしか生成されないと思っていたが、ここで 50.44 を受け取った。
 
 [](http://img695.imageshack.us/i/generate1.png/)

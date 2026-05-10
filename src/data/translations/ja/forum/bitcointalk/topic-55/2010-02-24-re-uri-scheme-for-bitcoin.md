@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin用URIスキーム"
+title: "Re: Bitcoin 用 URI スキーム"
 date: 2010-02-24T05:57:43.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Bitcoin用URIスキーム」スレッドにおけるサトシ・ナカモトの返信。"
+description: "「Bitcoin 用 URI スキーム」スレッドにおけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-販売時点で便利だろうな。レジがBitcoinアドレスと金額をエンコードしたQRコードを画面に表示し、携帯電話で撮影するのだ。
+販売時点で便利だろうな。レジが Bitcoin アドレスと金額をエンコードした QR コードを画面に表示し、携帯電話で撮影するのだ。

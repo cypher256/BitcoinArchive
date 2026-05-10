@@ -1,5 +1,5 @@
 ---
-title: "Re: [p2p-research] ビットコイン：P2P通貨のオープンソース実装"
+title: "Re: [p2p-research] ビットコイン：P2P 通貨のオープンソース実装"
 date: 2009-02-12T19:08:24.000Z
 type: "mailing-list"
 source: "p2p-research-list"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "P2P Researchメーリングリストにおいて、マルティエン・ファン・ステーンベルゲンの質問に回答し、ビットコインの発行上限2,100万枚とデイビッド・チャウムのシステムとの違いを説明。"
+description: "P2P Research メーリングリストにおいて、マルティエン・ファン・ステーンベルゲンの質問に回答し、ビットコインの発行上限 2,100 万枚とデイビッド・チャウムのシステムとの違いを説明。"
 isSatoshi: true
 tags:
   - "supply-limit"
@@ -48,7 +48,7 @@ quotes:
 > また、ビットコインには限られた通貨供給量があるのか（管理が必要な）？それとも取引の瞬間に通貨が作られるのか？
 
 <!-- speaker: Satoshi Nakamoto -->
-通貨供給量には上限がある。流通量は21,000,000コインだ。取引は所有権を移転するだけだ。
+通貨供給量には上限がある。流通量は 21,000,000 コインだ。取引は所有権を移転するだけだ。
 
 ご質問ありがとう。
 

@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-08-02T19:02:46.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがAMDとIntelでの速度差について質問し、スタック上のアライメント問題について説明。"
+description: "サトシ・ナカモトが AMD と Intel での速度差について質問し、スタック上のアライメント問題について説明。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -21,7 +21,7 @@ quotes:
     date: "2010-07-31T01:12:38.000Z"
 ---
 
-AMDでは2倍速で、Intelでは半分の速度ということか？
+AMD では 2倍速で、Intel では半分の速度ということか？
 
 <!-- quote: q1 -->
 <!-- tone-skip -->

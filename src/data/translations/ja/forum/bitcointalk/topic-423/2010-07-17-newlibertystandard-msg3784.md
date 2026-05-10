@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitcoin自動販売機（高速トランザクション問題）"
+title: "Re: Bitcoin 自動販売機（高速トランザクション問題）"
 date: 2010-07-17T18:37:58.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalkトピック423におけるNewLibertyStandardの文脈投稿。msg3819の前。"
+description: "BitcoinTalk トピック 423 における NewLibertyStandard の文脈投稿。msg3819 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

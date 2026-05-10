@@ -18,9 +18,9 @@ translationStatus: complete
 
 > 自動的に同期されますか？
 
-まったくそうではない。wallet.datの複数のコピーを使用することは推奨も対応もされておらず、実際Bitcoinのすべてはそれを防ぐように設計されている。両方のコピーがおかしくなる。
+まったくそうではない。wallet.dat の複数のコピーを使用することは推奨も対応もされておらず、実際 Bitcoin のすべてはそれを防ぐように設計されている。両方のコピーがおかしくなる。
 
-生成したコインを1つのウォレットにまとめようとしているなら、今はより良い解決策として追加システムでgetworkマイナーを実行することだ。jgarzikにCPUマイナーがあり、tcatmの4-way SSE2をサポートしているので、WindowsではAMDまたは最近のIntel（Core 3、5、7）をお持ちなら、内蔵SHAの最大2倍速だ。
+生成したコインを 1 つのウォレットにまとめようとしているなら、今はより良い解決策として追加システムで getwork マイナーを実行することだ。jgarzik に CPU マイナーがあり、tcatm の 4-way SSE2 をサポートしているので、Windows では AMD または最近の Intel（Core 3、5、7）をお持ちなら、内蔵 SHA の最大 2倍速だ。
 
-新しいデモCPUマイナーが利用可能：
+新しいデモ CPU マイナーが利用可能：
 [topic 1925](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1925/2010-11-26-jgarzik-msg24681/)

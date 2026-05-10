@@ -1,5 +1,5 @@
 ---
-title: "Re: SMFフォーラム、MODのインストールが必要"
+title: "Re: SMF フォーラム、MOD のインストールが必要"
 date: 2009-11-20T07:17:00Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがサーバーのsendmailが未設定のためPHPメール機能が動作しないことを補足するが、現時点では不要と説明。"
+description: "マルミがサーバーの sendmail が未設定のため PHP メール機能が動作しないことを補足するが、現時点では不要と説明。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-あ、もう一つ。サーバーのsendmailをまだ設定していないので、PHPのメール機能は動きませんが、まだ必要ないので問題ありません。
+あ、もう一つ。サーバーの sendmail をまだ設定していないので、PHP のメール機能は動きませんが、まだ必要ないので問題ありません。
 
 <!-- speaker: Martti Malmi -->
 > 今日は設定する時間がありませんが、一時的なアカウント「maintenance」をパスワード「6648ku5HeK」で作成し、/var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。

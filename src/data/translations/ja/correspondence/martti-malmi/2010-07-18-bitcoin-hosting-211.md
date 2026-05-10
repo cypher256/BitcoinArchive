@@ -1,5 +1,5 @@
 ---
-title: "Re: 転送: Bitcoinホスティング"
+title: "Re: 転送: Bitcoin ホスティング"
 date: 2010-07-18T23:51:11Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがホスティング切り替えをしないことに同意し、bitcoin.orgサーバー費用を賄うためのBitcoin寄付用アドレスを提供する。"
+description: "マルミがホスティング切り替えをしないことに同意し、bitcoin.org サーバー費用を賄うための Bitcoin 寄付用アドレスを提供する。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-了解です、切り替えはしません。Bitcoinでの寄付は助かりますので、14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U に送ってください。
+了解です、切り替えはしません。Bitcoin での寄付は助かりますので、14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U に送ってください。
 
 <!-- tone-skip -->
 > <!-- speaker: Satoshi Nakamoto -->

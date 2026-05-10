@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3.1リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3.1 リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-特定の問題があるとは思わない。多くのものを同時に実行していて、メモリーが一杯になりページファイルを使用しているためにシステムが遅くなっているのだと思う。生成を停止するとCPUが0%に下がることを確認されたので、CPU使用率は確実にすべてアイドル優先度だ。0.3.1にはこれらの問題に影響する変更は含まれていない。
+特定の問題があるとは思わない。多くのものを同時に実行していて、メモリーが一杯になりページファイルを使用しているためにシステムが遅くなっているのだと思う。生成を停止すると CPU が 0%に下がることを確認されたので、CPU 使用率は確実にすべてアイドル優先度だ。0.3.1 にはこれらの問題に影響する変更は含まれていない。

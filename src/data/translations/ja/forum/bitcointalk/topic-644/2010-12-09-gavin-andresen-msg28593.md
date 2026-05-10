@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック644におけるギャビン・アンドレセンの文脈投稿。msg28643の前。"
+description: "BitcoinTalk トピック 644 におけるギャビン・アンドレセンの文脈投稿。msg28643 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -25,4 +25,4 @@ quotes:
 > openSuseとSLEのパッケージも作ろうとしている。Debianも可能だが、wx、boost、libdbのコンパイルは少しやりすぎに思える。手伝ってくれる人はいるか？
 <!-- /tone-skip -->
 
-ナイトリービルドは素晴らしいアイデアだ。Build Serviceは自動SVNアップデートを行うのだろうか？ GUIのBitcoinのビルドを手伝ってくれる人はいるか（またはwxWidgetsチームの誰かを知っている人は？）
+ナイトリービルドは素晴らしいアイデアだ。Build Service は自動 SVN アップデートを行うのだろうか？ GUI の Bitcoin のビルドを手伝ってくれる人はいるか（または wxWidgets チームの誰かを知っている人は？）

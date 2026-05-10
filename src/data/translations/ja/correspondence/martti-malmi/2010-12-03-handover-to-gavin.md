@@ -41,6 +41,6 @@ translationStatus: complete
 <!-- speaker: narrator -->
 3日後、マルミは簡潔に返信した：「了解です、彼に聞いてみます。」
 
-このやり取りは、ビットコインの初期開発において最も歴史的に重要なものの一つである。サトシによる、こうした責任を引き継ぐ相手としての[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)の明示的な推薦は、その 9 日後の[2010 年 12 月 12 日 SVN 権限譲渡と承認メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)で正式化し、[2010 年 12 月 19 日のアンドレセンによる「サトシの祝福を受けて」 公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)で公開化された、リーダーシップ移行の早期シグナルだった。アンドレセンはその後、ビットコインのリード開発者および Bitcoin Core ソフトウェアの主要メンテナーとなった。
+このやり取りは、ビットコインの初期開発において最も歴史的に重要なものの一つである。サトシによる、こうした責任を引き継ぐ相手としての[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)の明示的な推薦は、その 9 日後の [2010 年 12 月 12 日 SVN 権限譲渡と承認メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)で正式化し、[2010 年 12 月 19 日のアンドレセンによる「サトシの祝福を受けて」 公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)で公開化された、リーダーシップ移行の早期シグナルだった。アンドレセンはその後、ビットコインのリード開発者および Bitcoin Core ソフトウェアの主要メンテナーとなった。
 
-Linuxの能力に関する発言も示唆に富んでいる——サトシが主にWindows上で作業し、Linux関連の開発についてはマルミ、そして後にアンドレセンに頼っていたことを裏付けている。ビットコインは当初Windowsのみのアプリケーションとしてリリースされ、Linuxサポートは主にマルミの作業によりバージョン0.2で追加された。
+Linux の能力に関する発言も示唆に富んでいる——サトシが主に Windows 上で作業し、Linux 関連の開発についてはマルミ、そして後にアンドレセンに頼っていたことを裏付けている。ビットコインは当初 Windows のみのアプリケーションとしてリリースされ、Linux サポートは主にマルミの作業によりバージョン 0.2 で追加された。

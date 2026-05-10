@@ -14,7 +14,7 @@ participants:
     slug: "wei-dai"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ニック・サボがビットコイン発明の遅延、bit goldとの類似点と相違点、「ほぼ全員が悪いアイデアだと思った」理由を論じる。"
+description: "ニック・サボがビットコイン発明の遅延、bit gold との類似点と相違点、「ほぼ全員が悪いアイデアだと思った」理由を論じる。"
 isSatoshi: false
 tags:
   - "nick-szabo"
@@ -52,4 +52,4 @@ translationStatus: complete
 >
 > ビットコインは金よりもはるかに急激なデフレに陥りやすいのだ。
 
-*[補足：2011年5月28日にUnenumeratedブログに公開。[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)はbit goldコンセプト（1998年/2005年）の考案者であり、ビットコインの直接的な先駆者である。サボが[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)ではないかという推測もあるが、本人はこれを否定している。このブログ記事ではデジタルキャッシュの知的歴史と、アイデアが動作するシステムに結実するまで10年以上かかった理由を論じている。サボが言及する「プライベートメーリングリスト」とは、彼とウェイ・ダイがそれぞれデジタル通貨の構想を練っていた「libtech」のことである。]*
+*[補足：2011年5月28日に Unenumerated ブログに公開。[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は bit gold コンセプト（1998年/2005年）の考案者であり、ビットコインの直接的な先駆者である。サボが[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)ではないかという推測もあるが、本人はこれを否定している。このブログ記事ではデジタルキャッシュの知的歴史と、アイデアが動作するシステムに結実するまで 10年以上かかった理由を論じている。サボが言及する「プライベートメーリングリスト」とは、彼とウェイ・ダイがそれぞれデジタル通貨の構想を練っていた「libtech」のことである。]*

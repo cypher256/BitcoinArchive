@@ -1,5 +1,5 @@
 ---
-title: "Re: BSD検出"
+title: "Re: BSD 検出"
 date: 2010-08-12T21:14:20.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがSVN rev 130でBSD検出コードを更新し、コンパイル確認を依頼。"
+description: "サトシ・ナカモトが SVN rev 130 で BSD 検出コードを更新し、コンパイル確認を依頼。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-SVN rev 130に入っている。正しくコンパイルされるか確認してほしい。
+SVN rev 130 に入っている。正しくコンパイルされるか確認してほしい。
 
 ```cpp
 #if (defined(__unix__) || defined(unix)) && !defined(USG)

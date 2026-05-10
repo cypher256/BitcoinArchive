@@ -1,5 +1,5 @@
 ---
-title: "Re: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用"
+title: "Re: 64 ビット BitCoin（Linux クライアント）の暴走 CPU 使用"
 date: 2010-07-15T00:18:23.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「64bit Bitcoin（Linuxクライアント）のCPU使用率暴走」におけるサトシ・ナカモトの返信。"
+description: "スレッド「64bit Bitcoin（Linux クライアント）の CPU 使用率暴走」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -18,4 +18,4 @@ translationStatus: complete
 
 了解した。非公開スイッチ「-minimizetotray」でオプションを再び有効にできる。
 
-変更をSVNにアップロードした。
+変更を SVN にアップロードした。

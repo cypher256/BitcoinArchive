@@ -1,5 +1,5 @@
 ---
-title: "マイク・ハーンからサトシへ：nullブロック（2009-04-13）"
+title: "マイク・ハーンからサトシへ：null ブロック（2009-04-13）"
 date: 2009-04-13T22:51:00Z
 type: "correspondence"
 source: "plan99"

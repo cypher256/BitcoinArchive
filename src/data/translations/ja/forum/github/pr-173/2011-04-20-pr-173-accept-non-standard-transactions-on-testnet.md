@@ -1,5 +1,5 @@
 ---
-title: "testnetで非標準トランザクションを受け入れる"
+title: "testnet で非標準トランザクションを受け入れる"
 date: 2011-04-20T15:28:25.000Z
 type: "forum-post"
 source: "github"
@@ -8,7 +8,7 @@ author: "gavinandresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "gavinandresenがbitcoin/bitcoin PR #173でスレッドを開始。"
+description: "gavinandresen が bitcoin/bitcoin PR #173 でスレッドを開始。"
 isSatoshi: false
 translationStatus: complete
 tags:
@@ -16,6 +16,6 @@ tags:
   - "pull-request"
 ---
 
-これは、-testnetにおいて非標準トランザクションがトランザクションメモリープールに入ることを許可する（したがって、リレーされブロックに書き込まれる）1行の変更である。
+これは、-testnet において非標準トランザクションがトランザクションメモリープールに入ることを許可する（したがって、リレーされブロックに書き込まれる）1 行の変更である。
 
-サトシがメールでこれを提案してくれたが、良い考えだと同意する。新機能を-testnetで実験することを奨励すべきである。さもなければ、やりたいことを既存の標準トランザクションタイプに無理やり押し込む、より非効率な方法を編み出すことになるだろう。
+サトシがメールでこれを提案してくれたが、良い考えだと同意する。新機能を-testnet で実験することを奨励すべきである。さもなければ、やりたいことを既存の標準トランザクションタイプに無理やり押し込む、より非効率な方法を編み出すことになるだろう。

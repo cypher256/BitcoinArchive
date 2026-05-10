@@ -1,5 +1,5 @@
 ---
-title: "Re: Bitweaverメニューエディターが壊れている"
+title: "Re: Bitweaver メニューエディターが壊れている"
 date: 2009-11-27T00:46:50Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがデータベースを直接編集してBitweaverメニューエディターの問題を修正したことを確認。"
+description: "マルミがデータベースを直接編集して Bitweaver メニューエディターの問題を修正したことを確認。"
 isSatoshi: false
 tags:
   - "correspondence"

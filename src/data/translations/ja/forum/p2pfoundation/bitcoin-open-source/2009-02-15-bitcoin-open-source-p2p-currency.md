@@ -1,5 +1,5 @@
 ---
-title: "ビットコイン：P2P通貨のオープンソース実装"
+title: "ビットコイン：P2P 通貨のオープンソース実装"
 date: 2009-02-15T16:42:00Z
 type: "forum-post"
 source: "p2pfoundation"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sepp Hasslberger"
     slug: "sepp-hasslberger"
-description: "サトシがゼップ・ハスルベルガーのOpen Coinに関する質問に回答。過去の電子通貨の失敗は中央集権が原因、ビットコインは初の分散型・無信頼システムだと述べた。"
+description: "サトシがゼップ・ハスルベルガーの Open Coin に関する質問に回答。過去の電子通貨の失敗は中央集権が原因、ビットコインは初の分散型・無信頼システムだと述べた。"
 isSatoshi: true
 tags:
   - "decentralization"

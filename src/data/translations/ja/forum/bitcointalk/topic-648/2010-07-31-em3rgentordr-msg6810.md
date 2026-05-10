@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理"
+title: "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理"
 date: 2010-07-31T13:42:48.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,13 +8,13 @@ author: "em3rgentOrdr"
 participants:
   - name: "em3rgentOrdr"
     slug: "em3rgentordr"
-description: "BitcoinTalkトピック648におけるem3rgentOrdrの文脈投稿。msg6751の後。"
+description: "BitcoinTalk トピック 648 における em3rgentOrdr の文脈投稿。msg6751 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-うーん…パッチを適用できなかった（初心者なんだ）。自分がbitcoin-0.3.6/srcから実行したコマンドはこれだ # patch < XN1JDb53.txt
+うーん…パッチを適用できなかった（初心者なんだ）。自分が bitcoin-0.3.6/src から実行したコマンドはこれだ # patch < XN1JDb53.txt
 
 出力：
 
@@ -29,4 +29,4 @@ patching file makefile.unix
 Hunk #1 FAILED at 45.
 Hunk #2 FAILED at 58.
 
-linuxでは正しくはどういうコマンドを打てばいいんだ？ それとも、linux用のバイナリはあるか？
+linux では正しくはどういうコマンドを打てばいいんだ？ それとも、linux 用のバイナリはあるか？

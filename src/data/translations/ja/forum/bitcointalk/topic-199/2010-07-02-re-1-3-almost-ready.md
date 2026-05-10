@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-07-02T20:37:17.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「1.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「1.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -26,4 +26,4 @@ quotes:
 > 関連して、Visual C++でコンパイル可能なのか？ 時間ができたら試してみたいと思っている。
 <!-- /tone-skip -->
 
-可能だが、生成速度は2倍以上遅くなる。
+可能だが、生成速度は 2倍以上遅くなる。

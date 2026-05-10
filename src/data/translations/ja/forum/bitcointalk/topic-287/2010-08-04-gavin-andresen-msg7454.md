@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalkトピック287におけるギャビン・アンドレセンの投稿。"
+description: "BitcoinTalk トピック 287 におけるギャビン・アンドレセンの投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -29,4 +29,4 @@ quotes:
 > 差し引きの結果はマイクロペイメントであり、処理手数料はかからない。私は上記と非常に似たことを行うシステムを作っている。実際のところ、「マイクロペイメント」システムはBTCブロックの外部で処理し、支払いを「集計」してから送信すべきだろう。
 <!-- /tone-skip -->
 
-…Bが最初にゼロBitcoinで始めた場合を除いて。その場合Bは行き詰まる。1.0を返送することで0.00000001 Bitcoinの「おつり」トランザクションが発生し、それが0.01BTCの手数料を引き起こすが、Bはそれを支払えない（1.0000000001しか持っていないから）。
+…B が最初にゼロ Bitcoin で始めた場合を除いて。その場合 B は行き詰まる。1.0 を返送することで 0.00000001 Bitcoin の「おつり」トランザクションが発生し、それが 0.01BTC の手数料を引き起こすが、B はそれを支払えない（1.0000000001 しか持っていないから）。

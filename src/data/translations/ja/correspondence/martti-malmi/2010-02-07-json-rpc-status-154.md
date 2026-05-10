@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCの状況"
+title: "Re: JSON-RPC の状況"
 date: 2010-02-07T10:45:53Z
 type: "correspondence"
 source: "malmi-email-archive"
@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがJSON-RPCの進捗に好意的に反応し、取引所サービスのためにLiberty Reserve APIの勉強を始めると発表。"
+description: "マルミが JSON-RPC の進捗に好意的に反応し、取引所サービスのために Liberty Reserve API の勉強を始めると発表。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -24,7 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
-それは素晴らしいですね！Liberty ReserveとそのAPIについて勉強し始めます。
+それは素晴らしいですね！Liberty Reserve とその API について勉強し始めます。
 
 <!-- speaker: Satoshi Nakamoto -->
 > JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使って

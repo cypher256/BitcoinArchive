@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "現在のバージョンのBitweaverでは不可能です。Bitweaverのwikiとフォーラムパッケージはそれほど高度ではありません。"
+description: "現在のバージョンの Bitweaver では不可能です。Bitweaver の wiki とフォーラムパッケージはそれほど高度ではありません。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -32,7 +32,7 @@ translationStatus: complete
 > できるようにする方法はある？
 
 <!-- speaker: Martti Malmi -->
-現在のバージョンのBitweaverでは不可能です。Bitweaverのwikiとフォーラムパッケージはそれほど高度ではありません。SFホスティングにも、時々遅くなることやメーラーやユーザーIP取得ができないなどの欠点があります。後で取引所サービスに使うために、prq.se（WikileaksやPirate Bayなどをホストしている）からウェブホスティングを購入することを検討しています。セキュリティを高めるために別のユーザーアカウントで、プロジェクトサイトもそこにホストできるかもしれません。そこではDrupalやTikiWikiをセットアップできます。これらはより高度で、Bitweaverよりもずっと大きく活発な開発者/ユーザーコミュニティがあります。
+現在のバージョンの Bitweaver では不可能です。Bitweaver の wiki とフォーラムパッケージはそれほど高度ではありません。SF ホスティングにも、時々遅くなることやメーラーやユーザー IP 取得ができないなどの欠点があります。後で取引所サービスに使うために、prq.se（Wikileaks や Pirate Bay などをホストしている）からウェブホスティングを購入することを検討しています。セキュリティを高めるために別のユーザーアカウントで、プロジェクトサイトもそこにホストできるかもしれません。そこでは Drupal や TikiWiki をセットアップできます。これらはより高度で、Bitweaver よりもずっと大きく活発な開発者/ユーザーコミュニティがあります。
 
 <!-- speaker: Satoshi Nakamoto -->
 > Linuxへの移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの
@@ -49,7 +49,7 @@ translationStatus: complete
 > 関数にして、その中に#ifdefを入れる形がいいだろう。
 
 <!-- speaker: Martti Malmi -->
-はい。WindowsのスレッドとソケットライブラリのインクルードをそれらのPOSIX版に置き換えたところ、エラーが少しだけ出るようになりました。主にsvn/branchesに入れましたが、公式リリースである必要はまだありません。
+はい。Windows のスレッドとソケットライブラリのインクルードをそれらの POSIX 版に置き換えたところ、エラーが少しだけ出るようになりました。主に svn/branches に入れましたが、公式リリースである必要はまだありません。
 
 <!-- speaker: Satoshi Nakamoto -->
 > セットアップでスタートアップフォルダーのアイコンをアンインストールするように

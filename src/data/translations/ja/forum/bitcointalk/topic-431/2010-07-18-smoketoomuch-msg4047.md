@@ -1,5 +1,5 @@
 ---
-title: "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物"
+title: "Re: Nenolod、Bitcoin が機能しないことを証明したがっている人物"
 date: 2010-07-18T19:53:18.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,10 +8,10 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック431におけるSmokeTooMuchの文脈投稿。"
+description: "BitcoinTalk トピック 431 における SmokeTooMuch の文脈投稿。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-50で割った余りはトランザクション手数料の可能性がある。彼は約1000台のBitcoinインスタンス（少なくともコア）を動かしているので、トランザクション手数料を得る確率は非常に高い。
+50 で割った余りはトランザクション手数料の可能性がある。彼は約 1000 台の Bitcoin インスタンス（少なくともコア）を動かしているので、トランザクション手数料を得る確率は非常に高い。

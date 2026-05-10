@@ -1,5 +1,5 @@
 ---
-title: "bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
+title: "bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合"
 date: 2010-07-08T00:33:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,12 +10,12 @@ participants:
     slug: "m0mchil"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "m0mchilがスレッドを開始: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合"
+description: "m0mchil がスレッドを開始: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-ユーザーアカウント名に非ラテン文字を使うのが賢い選択ではないことは分かっている。いずれにせよ、0.2ではこの問題は発生しなかった。
+ユーザーアカウント名に非ラテン文字を使うのが賢い選択ではないことは分かっている。いずれにせよ、0.2 ではこの問題は発生しなかった。
 
-以下の方法で検証した。「通常の」新規ユーザーを作成すると、0.3はデータフォルダーを正常に開いた。 **新しいデータフォルダー** を作成し、非標準ユーザーにコピーしたところ、0.3はDB_RUN_RECOVERYエラーで失敗した。
+以下の方法で検証した。「通常の」新規ユーザーを作成すると、0.3 はデータフォルダーを正常に開いた。 **新しいデータフォルダー** を作成し、非標準ユーザーにコピーしたところ、0.3 は DB_RUN_RECOVERY エラーで失敗した。

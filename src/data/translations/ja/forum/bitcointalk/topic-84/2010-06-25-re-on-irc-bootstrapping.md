@@ -1,5 +1,5 @@
 ---
-title: "Re: IRCブートストラッピングについて"
+title: "Re: IRC ブートストラッピングについて"
 date: 2010-06-25T22:40:47.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「IRCブートストラッピングについて」におけるサトシ・ナカモトの返信。"
+description: "スレッド「IRC ブートストラッピングについて」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,4 +27,4 @@ quotes:
 <!-- /tone-skip -->
 これは良いアイデアだと思う。
 
-皆さんどう思うか、0.3で切り替えるべきだろうか？
+皆さんどう思うか、0.3 で切り替えるべきだろうか？

@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが各ノードの影響力がCPUパワーに比例するシステムから離れた場合の一人一票の判定方法について疑問を呈する。"
+description: "サトシ・ナカモトが各ノードの影響力が CPU パワーに比例するシステムから離れた場合の一人一票の判定方法について疑問を呈する。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-各ノードの影響力がCPUパワーに比例するシステムから離れてしまったら、（おおよそ）一人であるかどうかを判定するために何を使うのか？
+各ノードの影響力が CPU パワーに比例するシステムから離れてしまったら、（おおよそ）一人であるかどうかを判定するために何を使うのか？

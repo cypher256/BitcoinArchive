@@ -1,5 +1,5 @@
 ---
-title: "Re: *** 警告 *** 0.3.6にアップグレードしてください"
+title: "Re: *** 警告 *** 0.3.6 にアップグレードしてください"
 date: 2010-07-30T21:44:04.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがBoostのバージョン互換性の問題について説明し、Mac OSX版のリリースを発表。"
+description: "サトシ・ナカモトが Boost のバージョン互換性の問題について説明し、Mac OSX 版のリリースを発表。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -28,10 +28,10 @@ quotes:
 
 **sudo apt-get install libboost1.37-dev**
 にすればいい
-ただし、それはboost 1.40以降（Ubuntu 10.04）では動作しない。その場合はlibboost-all-devを入手する必要がある。
+ただし、それは boost 1.40 以降（Ubuntu 10.04）では動作しない。その場合は libboost-all-dev を入手する必要がある。
 
-最近Boostの仕様がいろいろ変わったようで、「-mt」などの問題もあり、大変だ。
+最近 Boost の仕様がいろいろ変わったようで、「-mt」などの問題もあり、大変だ。
 
-ちなみに、Boost 1.34を試したが、boost.interprocessがなかった。
+ちなみに、Boost 1.34 を試したが、boost.interprocess がなかった。
 
-Mac OSX版が利用可能になった。bitcoin.orgまたはSourceForgeのリンクを見てくれ。
+Mac OSX 版が利用可能になった。bitcoin.org または SourceForge のリンクを見てくれ。

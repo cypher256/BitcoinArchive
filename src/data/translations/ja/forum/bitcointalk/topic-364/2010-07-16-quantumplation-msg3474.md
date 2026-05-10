@@ -1,5 +1,5 @@
 ---
-title: "Re: BitcoinのWebサイト統合"
+title: "Re: Bitcoin の Web サイト統合"
 date: 2010-07-16T14:02:55.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Quantumplation"
 participants:
   - name: "Quantumplation"
     slug: "quantumplation"
-description: "BitcoinTalkトピック364におけるQuantumplationの文脈投稿。msg3559の前。"
+description: "BitcoinTalk トピック 364 における Quantumplation の文脈投稿。msg3559 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

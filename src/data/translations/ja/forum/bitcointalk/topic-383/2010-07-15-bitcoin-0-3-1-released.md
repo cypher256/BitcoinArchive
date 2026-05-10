@@ -16,15 +16,15 @@ secondarySources:
 translationStatus: complete
 ---
 
-これはバグ修正のメンテナンスリリースだ。SourceForgeにアップロード済みだ。Mac OS Xには修正が不要だったため、更新する必要はない。0.3.0のままで問題ない。
+これはバグ修正のメンテナンスリリースだ。SourceForge にアップロード済みだ。Mac OS X には修正が不要だったため、更新する必要はない。0.3.0 のままで問題ない。
 
-ダウンロードリンクはbitcoin.orgにある。
+ダウンロードリンクは bitcoin.org にある。
 
 変更点:
-- Tiago Fariaによるポルトガル語翻訳を追加
+- Tiago Faria によるポルトガル語翻訳を追加
 Windows
-- ユーザー名にASCII以外の文字が含まれている場合の22DbRunRecoveryExceptionの修正
+- ユーザー名に ASCII 以外の文字が含まれている場合の 22DbRunRecoveryException の修正
 Linux
-- Laszloによる生成スレッドを最低優先度に下げる修正
-- libcryptoのリンクに問題がある場合の修正
+- Laszlo による生成スレッドを最低優先度に下げる修正
+- libcrypto のリンクに問題がある場合の修正
 - ギャビン・アンドレセンによる「ウィンドウシステム起動時に開始」オプションの実装

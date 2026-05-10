@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「0.3.1リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
+description: "スレッド「0.3.1 リリース候補、テストしてください」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -27,6 +27,6 @@ quotes:
 > Linuxクライアント（64ビット）では、「閉じる時に最小化」がまだトレイに最小化する（しばらくすると複数のトレイアイコンを生成してXサーバーがハングする）。
 <!-- /tone-skip -->
 
-最初の投稿をこの修正を含むLinux用rc2へのリンクで更新した。修正されているか確認してほしい。ありがとう！
+最初の投稿をこの修正を含む Linux 用 rc2 へのリンクで更新した。修正されているか確認してほしい。ありがとう！
 
 [http://www.bitcoin.org/download/bitcoin-0.3.1.rc2-linux.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.1.rc2-linux.tar.gz)

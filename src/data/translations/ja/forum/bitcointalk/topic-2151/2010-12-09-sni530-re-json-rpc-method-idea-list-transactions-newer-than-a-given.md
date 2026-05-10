@@ -1,5 +1,5 @@
 ---
-title: "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする"
+title: "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする"
 date: 2010-12-09T18:08:08.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする」におけるサトシ・ナカモトの返信。"
+description: "スレッド「JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -30,9 +30,9 @@ quotes:
 > 「&lt;txid&gt;以降のtx」についてはあなたとサトシに同意する。私のlisttransactions（現在はxlisttransactions）パッチにはその機能は明確に含まれていないし、含まれたこともない。
 <!-- /tone-skip -->
 
-ユーザーに最近のN件のトランザクション履歴を表示するようなものに設計されている限り、問題ない。アカウント機能により正しい方法で支払い検出を行うことが容易になった今はなおさらだ。
+ユーザーに最近の N 件のトランザクション履歴を表示するようなものに設計されている限り、問題ない。アカウント機能により正しい方法で支払い検出を行うことが容易になった今はなおさらだ。
 
-Gavin、listtransactionsにすべてのアカウントのトランザクションをリストするオプションを付けられるか？
+Gavin、listtransactions にすべてのアカウントのトランザクションをリストするオプションを付けられるか？
 
 インターフェースがどうあるべきかわからない。もしかすると：
 listtransactions <JSON null type> [count]

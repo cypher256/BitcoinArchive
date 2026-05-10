@@ -8,7 +8,7 @@ author: "SmokeTooMuch"
 participants:
   - name: "SmokeTooMuch"
     slug: "smoketoomuch"
-description: "BitcoinTalkトピック151におけるSmokeTooMuchの文脈投稿。msg1259の前。"
+description: "BitcoinTalk トピック 151 における SmokeTooMuch の文脈投稿。msg1259 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
@@ -16,8 +16,8 @@ translationStatus: complete
 
 俺の意見では、DataWraith、翻訳は良い出来だ。
 
-2点だけ：
-1. SourceforgeのfはSourceForgeと大文字にすべきだと思う。少なくともWikipediaではそうなっている。
+2 点だけ：
+1. Sourceforge の f は SourceForge と大文字にすべきだと思う。少なくとも Wikipedia ではそうなっている。
 2. こう書いた方が自然だ：
 Abhängig davon, wieviel CPU-Zeit **Sie im Leerlauf** beitragen können, kann es einige Tage dauern bis die ersten Münzen erzeugt werden - haben Sie also bitte etwas Geduld.
 （&endash;が正しく解決されていない。再確認するか、通常のカンマに置き換えた方がいい）

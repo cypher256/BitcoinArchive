@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがBerkeley DBの「Bad file descriptor」 例外への回避策のアイデアを持っており、エラーが発生しているDBファイルの特定をLiberty Standardに依頼。"
+description: "サトシが Berkeley DB の「Bad file descriptor」 例外への回避策を持ち、エラーが発生する DB ファイルの特定を Liberty Standard に依頼。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -32,7 +32,7 @@ quotes:
 
 <!-- speaker: Satoshi Nakamoto -->
 
-回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.logにエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datか、それともaddr.datやwallet.datも含まれるか？
+回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.log にエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常に blkindex.dat か、それとも addr.dat や wallet.dat も含まれるか？
 
 <!-- speaker: Liberty Standard -->
 

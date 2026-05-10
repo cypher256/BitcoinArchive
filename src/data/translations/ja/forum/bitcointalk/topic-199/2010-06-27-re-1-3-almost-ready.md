@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！"
+title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
 date: 2010-06-27T15:30:13.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「1.3ほぼ完成」におけるサトシ・ナカモトの返信。"
+description: "スレッド「1.3 ほぼ完成」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-MinGWにはまだ古くて安定した3.4.5しかない。更新する大きな理由はない。
+MinGW にはまだ古くて安定した 3.4.5 しかない。更新する大きな理由はない。
 
-3.4.5でコンパイルされたSHAの逆アセンブリを見た時、改善の余地がまったく見当たらなかった。さらに8%をどうやって絞り出せるのか想像がつかない。Windowsの方が8%多くオーバーヘッドがある可能性はあるか？システムコールなどは行わず、純粋にビジーな計算コードだけで、タスクスイッチングやその他のハウスキーピング処理がそれだけ奪うことはあるだろうか？
+3.4.5 でコンパイルされた SHA の逆アセンブリを見た時、改善の余地がまったく見当たらなかった。さらに 8%をどうやって絞り出せるのか想像がつかない。Windows の方が 8%多くオーバーヘッドがある可能性はあるか？システムコールなどは行わず、純粋にビジーな計算コードだけで、タスクスイッチングやその他のハウスキーピング処理がそれだけ奪うことはあるだろうか？

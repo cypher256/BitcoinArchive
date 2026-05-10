@@ -1,5 +1,5 @@
 ---
-title: "Re: fClientの削除"
+title: "Re: fClient の削除"
 date: 2013-01-09T20:57:05.000Z
 type: "forum-post"
 source: "github"
@@ -8,7 +8,7 @@ author: "gavinandresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "bitcoin/bitcoin PR #2161におけるgavinandresenの文脈投稿。サトシ言及の文脈。"
+description: "bitcoin/bitcoin PR #2161 における gavinandresen の文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
 tags:
   - "github"

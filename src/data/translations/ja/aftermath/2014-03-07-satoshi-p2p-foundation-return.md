@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモトがP2P Foundationに投稿「私はドリアン・ナカモトではない」"
+title: "サトシ・ナカモトが P2P Foundation に投稿「私はドリアン・ナカモトではない」"
 date: 2014-03-07T12:21:00Z
 type: "article"
 source: "p2pfoundation"

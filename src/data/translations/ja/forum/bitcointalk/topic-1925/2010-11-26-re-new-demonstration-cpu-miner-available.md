@@ -1,5 +1,5 @@
 ---
-title: "Re: 新しいデモンストレーション用CPUマイナーが利用可能に"
+title: "Re: 新しいデモンストレーション用 CPU マイナーが利用可能に"
 date: 2010-11-26T22:02:41.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「新しいデモCPUマイナーが利用可能」におけるサトシ・ナカモトの返信。"
+description: "スレッド「新しいデモ CPU マイナーが利用可能」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-sha256.cppにあるtcatmの4-way SSE2 SHAで試してみてくれ。Cファイルとして問題なくコンパイルできる。sha256.cppをsha256.cにリネームするだけだ。Windowsでの簡単なテストでは動作させることができたが、Bitcoinとリンクした時はうまくいかなかった。C++プログラムの一部としてよりも、Cプログラムの一部としての方がうまくいく可能性があるかもしれない。
+sha256.cpp にある tcatm の 4-way SSE2 SHA で試してみてくれ。C ファイルとして問題なくコンパイルできる。sha256.cpp を sha256.c にリネームするだけだ。Windows での簡単なテストでは動作させることができたが、Bitcoin とリンクした時はうまくいかなかった。C++プログラムの一部としてよりも、C プログラムの一部としての方がうまくいく可能性があるかもしれない。
 
-現在はLinuxビルドでのみ有効なので、動作させることができればWindowsユーザーに提供できるだろう。AMD CPUでは約100%のスピードアップだ。
+現在は Linux ビルドでのみ有効なので、動作させることができれば Windows ユーザーに提供できるだろう。AMD CPU では約 100%のスピードアップだ。

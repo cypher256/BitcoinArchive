@@ -1,5 +1,5 @@
 ---
-title: "SHA-256衝突への対処"
+title: "SHA-256 衝突への対処"
 date: 2010-06-13T16:01:11.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,10 +10,10 @@ participants:
     slug: "lachesis"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "lachesisがスレッドを開始: SHA-256衝突への対処"
+description: "lachesis がスレッドを開始: SHA-256 衝突への対処"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-数学者の友人が指摘したのだが、10年以上存続したハッシュプロトコルはほとんど、あるいはまったく存在しないとのことだ。もしSHA-256が明日破られたら、ビットコインの解決策はどうなるのだろうか？
+数学者の友人が指摘したのだが、10年以上存続したハッシュプロトコルはほとんど、あるいはまったく存在しないとのことだ。もし SHA-256 が明日破られたら、ビットコインの解決策はどうなるのだろうか？

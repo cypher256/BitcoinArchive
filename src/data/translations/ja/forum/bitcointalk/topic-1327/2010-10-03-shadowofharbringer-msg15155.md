@@ -1,5 +1,5 @@
 ---
-title: "Re: バージョン0.3.13、アップグレードしてください"
+title: "Re: バージョン 0.3.13、アップグレードしてください"
 date: 2010-10-03T22:32:16.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "ShadowOfHarbringer"
 participants:
   - name: "ShadowOfHarbringer"
     slug: "shadowofharbringer"
-description: "BitcoinTalkトピック1327におけるShadowOfHarbringerの文脈投稿。after msg15147, サトシを引用."
+description: "BitcoinTalk トピック 1327 における ShadowOfHarbringer の文脈投稿。after msg15147, サトシを引用."
 isSatoshi: false
 tags: []
 quotes:
@@ -25,6 +25,6 @@ translationStatus: complete
 > ShadowOfHarbringer、あなたのは -4way で速くなったか？
 <!-- /tone-skip -->
 
-確かに、-4way ありの方が、なしの場合と比べてほぼ2倍速い。
+確かに、-4way ありの方が、なしの場合と比べてほぼ 2倍速い。
 
--4way ありで約8500 khash/sec、なしで4500 khash/sec が出ている。
+-4way ありで約 8500 khash/sec、なしで 4500 khash/sec が出ている。

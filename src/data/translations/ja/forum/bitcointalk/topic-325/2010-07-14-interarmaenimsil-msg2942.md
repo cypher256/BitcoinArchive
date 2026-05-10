@@ -8,7 +8,7 @@ author: "InterArmaEnimSil"
 participants:
   - name: "InterArmaEnimSil"
     slug: "interarmaenimsil"
-description: "BitcoinTalkトピック325におけるInterArmaEnimSilの文脈投稿。msg2935の後。"
+description: "BitcoinTalk トピック 325 における InterArmaEnimSil の文脈投稿。msg2935 の後。"
 isSatoshi: false
 tags: []
 translationStatus: complete

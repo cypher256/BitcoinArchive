@@ -1,5 +1,5 @@
 ---
-title: "Re: 28日間生成なし、4200khash/sあるのに"
+title: "Re: 28日間生成なし、4200khash/s あるのに"
 date: 2010-08-19T19:40:30.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "スレッド「28日間生成なし、4200khash/sあるのに」におけるサトシ・ナカモトの返信。"
+description: "スレッド「28日間生成なし、4200khash/s あるのに」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

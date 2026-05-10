@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Boostのmutexはここで役に立ちますか？"
+description: "Boost の mutex はここで役に立ちますか？"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -28,6 +28,6 @@ translationStatus: complete
 > まだわからない。もうすぐすべてチェックインできる状態になると思う。
 
 <!-- speaker: Martti Malmi -->
-Boostのmutexはここで役に立ちますか？
+Boost の mutex はここで役に立ちますか？
 
 http://www.boost.org/doc/libs/1_40_0/doc/html/thread/synchronization.html#thread.synchronization.mutex_concepts

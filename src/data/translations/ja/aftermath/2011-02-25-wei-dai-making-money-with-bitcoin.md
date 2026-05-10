@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "LessWrongスレッドでウェイ・ダイがビットコイン創造を否定：「10年以上前に類似アイデアを記述しただけ」。Radeon 5870購入でマイニング開始、セキュリティ未分析を警告。"
+description: "LessWrong スレッドでウェイ・ダイがビットコイン創造を否定：「10年以上前に類似アイデアを記述しただけ」。Radeon 5870 購入でマイニング開始、セキュリティ未分析を警告。"
 isSatoshi: false
 tags:
   - "wei-dai"
@@ -30,7 +30,7 @@ translationStatus: complete
 
 *LessWrong「Making money with Bitcoin?」コメントスレッド、2011年2月25日：*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献[1]として引用されている — がビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。
+[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。
 
 **ビットコインとの関係について（直接の質問に対する回答）：**
 
@@ -50,6 +50,6 @@ translationStatus: complete
 
 > 「私のアイデアやビットコインのポイントは、適切な暗号技術によってそのような信頼を不要にできることです」
 
-ウェイ・ダイは、信頼できる銀行の仲介を必要とする従来の電子マネープロトコルとb-moneyおよびビットコインを対比した。
+ウェイ・ダイは、信頼できる銀行の仲介を必要とする従来の電子マネープロトコルと b-money およびビットコインを対比した。
 
-*[補足：ウェイ・ダイはこのスレッドの中で、議論をきっかけにRadeon 5870 GPUを購入してマイニングを開始したことを明かした — これは後に2014年の[「Look for the Next Tech Gold Rush?」](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)投稿で、約300ドルが6桁のリターンになったと語るマイニング活動の始まりであった。]*
+*[補足：ウェイ・ダイはこのスレッドの中で、議論をきっかけに Radeon 5870 GPU を購入してマイニングを開始したことを明かした — これは後に 2014年の[「Look for the Next Tech Gold Rush?」](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)投稿で、約 300 ドルが 6 桁のリターンになったと語るマイニング活動の始まりであった。]*

@@ -1,5 +1,5 @@
 ---
-title: "アダム・バック（1970–） — Hashcashの発明者、サトシ・ナカモトが最初に連絡を取った人物"
+title: "アダム・バック（1970–） — Hashcash の発明者、サトシ・ナカモトが最初に連絡を取った人物"
 date: 2008-08-20T00:00:00Z
 type: "biography"
 source: "wikipedia"
@@ -8,7 +8,7 @@ author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
-description: "英国の暗号学者・サイファーパンク（1970-）。Hashcash（1997年）を発明。サトシが最初に連絡した人物（2008年8月20日）。2014年Blockstream共同設立。"
+description: "英国の暗号学者・サイファーパンク（1970-）。Hashcash（1997年）を発明。サトシが最初に連絡した人物（2008年8月20日）。2014年 Blockstream 共同設立。"
 isSatoshi: false
 tags:
   - "adam-back"
@@ -44,7 +44,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-アダム・バック（1970年、英国生まれ）は、暗号学者、サイファーパンク、そしてHashcashの発明者である。エクセター大学でコンピューターサイエンスの博士号を取得した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコインとなるものについて最初に連絡を取ったことが知られている人物である。
+アダム・バック（1970年、英国生まれ）は、暗号学者、サイファーパンク、そして Hashcash の発明者である。エクセター大学でコンピューターサイエンスの博士号を取得した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコインとなるものについて最初に連絡を取ったことが知られている人物である。
 
 ```mermaid
 timeline
@@ -65,16 +65,16 @@ timeline
 ```
 
 ### Hashcash（1997年）
-1997年3月、バックはメールスパムとサービス拒否攻撃に対抗するために設計されたプルーフ・オブ・ワーク・システムであるHashcashを提案した。このシステムは送信者がメール送信前に部分的なハッシュ衝突を計算することを要求し — 計算コストの高い操作 — 大量スパムを経済的に非現実的にした。Hashcashはデジタル通貨や決済システムではなく、純粋に計算コストのメカニズムであった。ビットコインは後にそのプルーフ・オブ・ワーク概念をマイニングとコンセンサースの基盤として採用したが、ビットコインの通貨・決済としての側面は別の知的系譜 — ウェイ・ダイのb-moneyやニック・サボのbit gold — に由来する。[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)はHashcashを主要な参考文献の一つとして引用している。
+1997年3月、バックはメールスパムとサービス拒否攻撃に対抗するために設計されたプルーフ・オブ・ワーク・システムである Hashcash を提案した。このシステムは送信者がメール送信前に部分的なハッシュ衝突を計算することを要求し — 計算コストの高い操作 — 大量スパムを経済的に非現実的にした。Hashcash はデジタル通貨や決済システムではなく、純粋に計算コストのメカニズムであった。ビットコインは後にそのプルーフ・オブ・ワーク概念をマイニングとコンセンサースの基盤として採用したが、ビットコインの通貨・決済としての側面は別の知的系譜 — ウェイ・ダイの b-money やニック・サボの bit gold — に由来する。[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は Hashcash を主要な参考文献の一つとして引用している。
 
 ### サトシからの最初の連絡
-2008年8月20日、サトシ・ナカモトはバックに[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、彼をサトシがビットコインとなるアイデアについて連絡を取った最初の既知の人物とした。サトシはバックのHashcashに言及し、関連する先行研究について尋ねた。バックはサトシに[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の[b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)提案を紹介した。2日後の8月22日、サトシは[ウェイ・ダイにメールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)。この紹介の連鎖 — バックからダイへ — はサトシがビットコインの設計における主要な知的先駆者とつながる助けとなった。同日のサトシからの返信 — 「b-moneyのページは知らなかった」 — は、この紹介の時点でビットコインの開発がほぼ完了していたことを示し、[開発期間中のサトシとサイファーパンク運動との関係についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的な根拠となっている。
+2008年8月20日、サトシ・ナカモトはバックに[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、彼をサトシがビットコインとなるアイデアについて連絡を取った最初の既知の人物とした。サトシはバックの Hashcash に言及し、関連する先行研究について尋ねた。バックはサトシに[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) 提案を紹介した。2日後の 8月22日、サトシは[ウェイ・ダイにメールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)。この紹介の連鎖 — バックからダイへ — はサトシがビットコインの設計における主要な知的先駆者とつながる助けとなった。同日のサトシからの返信 — 「b-money のページは知らなかった」 — は、この紹介の時点でビットコインの開発がほぼ完了していたことを示し、[開発期間中のサトシとサイファーパンク運動との関係についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的な根拠となっている。
 
 ### 証言とメールの公開
-バックのサトシとのメールのやり取りはBitcoin Magazineにより公開され、ビットコインの最初期の概念段階に関する重要な一次資料のドキュメントを提供した。2024年2月、バックはロンドンでの[COPA対ライト裁判で証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、サトシとのやり取りとビットコイン誕生のタイムラインについて直接の証言を提供した。
+バックのサトシとのメールのやり取りは Bitcoin Magazine により公開され、ビットコインの最初期の概念段階に関する重要な一次資料のドキュメントを提供した。2024年2月、バックはロンドンでの [COPA 対ライト裁判で証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、サトシとのやり取りとビットコイン誕生のタイムラインについて直接の証言を提供した。
 
 ### Blockstream
-2014年、バックはビットコインインフラストラクチャーにフォーカスしたブロックチェーンテクノロジー企業Blockstreamを共同設立した。同社のCEOを務めている。BlockstreamはLiquid Networkサイドチェーンを開発し、衛星ベースのビットコインブロードキャストやその他のビットコインインフラプロジェクトに関与してきた。
+2014年、バックはビットコインインフラストラクチャーにフォーカスしたブロックチェーンテクノロジー企業 Blockstream を共同設立した。同社の CEO を務めている。Blockstream は Liquid Network サイドチェーンを開発し、衛星ベースのビットコインブロードキャストやその他のビットコインインフラプロジェクトに関与してきた。
 
 ### 意義
-バックのビットコインへの貢献は、具体的にはプルーフ・オブ・ワーク概念 — 計算コストが希少で検証可能なリソースとして機能しうるというアイデア — であった。Hashcashはこのメカニズムを提供したが、通貨の設計、ピアツーピア決済システム、金融政策は別の革新である。サトシが最初に連絡を取った人物としての位置づけは、彼をビットコインの記録された創造史の最初に置いている。
+バックのビットコインへの貢献は、具体的にはプルーフ・オブ・ワーク概念 — 計算コストが希少で検証可能なリソースとして機能しうるというアイデア — であった。Hashcash はこのメカニズムを提供したが、通貨の設計、ピアツーピア決済システム、金融政策は別の革新である。サトシが最初に連絡を取った人物としての位置づけは、彼をビットコインの記録された創造史の最初に置いている。
