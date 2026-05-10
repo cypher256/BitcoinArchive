@@ -93,13 +93,37 @@
   --mermaid-cluster-bg: var(--color-source-bg);
   --mermaid-cluster-border: var(--color-border);
 
-  /* ---- New: chart palette tokens (consumed by d3 in Group C) ---- */
-  --chart-color-1: #b45309; /* accent */
+  /* ---- New: chart palette tokens (consumed by d3 in Group C).
+     Six categorical hues for distinct series; three additional
+     hues (-7..-9) cover edge cases such as SatoshiActivityTimeline
+     (9 channels) and BitcoinForkGenealogy (10 chains). ---- */
+  --chart-color-1: #b45309; /* accent (warm orange-brown) */
   --chart-color-2: #1a56db; /* blue */
   --chart-color-3: #047857; /* green */
   --chart-color-4: #7c3aed; /* purple */
   --chart-color-5: #be185d; /* magenta */
   --chart-color-6: #6b6b6b; /* neutral */
+  --chart-color-7: #0891b2; /* cyan */
+  --chart-color-8: #ca8a04; /* amber */
+  --chart-color-9: #475569; /* slate */
+
+  /* ---- New: chart semantic tokens (consumed by d3 in Group C).
+     These map data-encoded concepts (positive/negative outcomes,
+     emphasis vs muted series, candidate-vs-other contrast) to the
+     palette so individual charts don't have to choose hues. They
+     intentionally alias `--chart-color-*` so theme-level overrides
+     of the palette propagate without further per-chart edits. ---- */
+  --chart-positive: var(--chart-color-3);   /* gain, success, in-distribution */
+  --chart-negative: #dc2626;                /* loss, anomaly, out-of-distribution */
+  --chart-warning: #f59e0b;                 /* caution, pending, mixed */
+  --chart-emphasis: var(--color-accent);    /* focus series (Satoshi, primary candidate) — tracks theme accent */
+  --chart-muted: var(--color-text-muted);   /* axes, gridlines, subdued text */
+  --chart-grid: var(--color-divider);       /* gridlines, lane separators, faint rules */
+  --chart-tooltip-bg: rgba(20, 20, 20, 0.92); /* dark overlay for tooltips, readable on any theme */
+  --chart-tooltip-fg: #ffffff;               /* tooltip foreground */
+  --chart-surface: var(--color-bg);          /* SVG / chart background fill */
+  --chart-lane-a: var(--color-bg-alt);       /* alternating lane stripe (even rows) */
+  --chart-lane-b: var(--color-bg-quote);     /* alternating lane stripe (odd rows) */
 }
 
 /* ---- Dark variant (default theme only) ----
@@ -144,6 +168,20 @@
     --mermaid-node-border: var(--color-accent);
     --mermaid-cluster-bg: var(--color-source-bg);
     --mermaid-cluster-border: var(--color-border);
+
+    /* Chart palette — slightly brighter hues so qualitative series
+       remain distinguishable on dark backgrounds. */
+    --chart-color-1: #ff7a00;
+    --chart-color-2: #4ea1ff;
+    --chart-color-3: #34d399;
+    --chart-color-4: #a78bfa;
+    --chart-color-5: #f472b6;
+    --chart-color-6: #9ca3af;
+    --chart-color-7: #22d3ee;
+    --chart-color-8: #fbbf24;
+    --chart-color-9: #94a3b8;
+    --chart-negative: #f87171;
+    --chart-warning: #fbbf24;
   }
 }
 
@@ -178,6 +216,20 @@
   --mermaid-node-border: var(--color-accent);
   --mermaid-cluster-bg: var(--color-source-bg);
   --mermaid-cluster-border: var(--color-border);
+
+  /* Chart palette — brighter dark-mode hues (kept identical to the
+     @media variant above so explicit data-mode="dark" matches OS dark). */
+  --chart-color-1: #ff7a00;
+  --chart-color-2: #4ea1ff;
+  --chart-color-3: #34d399;
+  --chart-color-4: #a78bfa;
+  --chart-color-5: #f472b6;
+  --chart-color-6: #9ca3af;
+  --chart-color-7: #22d3ee;
+  --chart-color-8: #fbbf24;
+  --chart-color-9: #94a3b8;
+  --chart-negative: #f87171;
+  --chart-warning: #fbbf24;
 }
 
 *,
