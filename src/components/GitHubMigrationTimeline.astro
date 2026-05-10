@@ -7,12 +7,19 @@ interface Props {
 
 const { lang } = Astro.props;
 
+// Committer color tokens — fixed assignment so each developer keeps
+// a stable hue position across themes. The token names get resolved
+// at runtime in the inline script via getComputedStyle. Encoding:
+// chart-negative (Chris Moore — only departed early-stage committer),
+// chart-color-3 (Pieter Wuille = positive/growth = sipa, the long
+// arc), chart-color-2 (Jeff Garzik blue), chart-color-4 (Wladimir
+// van der Laan purple), chart-color-8 (Nils Schneider amber).
 const committers = [
-  { name: 'Chris Moore', username: 'dooglus', start: '2011-01-21', end: '2011-03-31', color: '#dc2626' },
-  { name: 'Pieter Wuille', username: 'sipa', start: '2011-05-01', end: null, color: '#059669' },
-  { name: 'Jeff Garzik', username: 'jgarzik', start: '2011-05-06', end: null, color: '#2563eb' },
-  { name: 'Wladimir van der Laan', username: 'laanwj', start: '2011-06-05', end: null, color: '#7c3aed' },
-  { name: 'Nils Schneider', username: 'tcatm', start: '2011-09-19', end: '2012-05-31', color: '#d97706' },
+  { name: 'Chris Moore', username: 'dooglus', start: '2011-01-21', end: '2011-03-31', colorToken: '--chart-negative' },
+  { name: 'Pieter Wuille', username: 'sipa', start: '2011-05-01', end: null, colorToken: '--chart-color-3' },
+  { name: 'Jeff Garzik', username: 'jgarzik', start: '2011-05-06', end: null, colorToken: '--chart-color-2' },
+  { name: 'Wladimir van der Laan', username: 'laanwj', start: '2011-06-05', end: null, colorToken: '--chart-color-4' },
+  { name: 'Nils Schneider', username: 'tcatm', start: '2011-09-19', end: '2012-05-31', colorToken: '--chart-color-8' },
 ];
 
 const labels = {
@@ -62,8 +69,21 @@ const l = labels[lang];
     var container = document.getElementById('github-timeline');
     if (!container) return;
 
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      return {
+        accent: token('--color-accent'),
+        text: token('--color-text'),
+        muted: token('--color-text-muted'),
+        bg: token('--color-bg'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 700;
       var margin = { top: 20, right: 80, bottom: 40, left: 180 };
@@ -83,52 +103,67 @@ const l = labels[lang];
 
       g.append('g').attr('transform', 'translate(0,' + h + ')')
         .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
-        .selectAll('text').attr('font-size', '10px');
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
-        .selectAll('text').attr('font-size', '11px');
+        .selectAll('text').attr('font-size', '11px').style('fill', T.text);
 
-      // Final SVN commit reference line
+      // Final SVN commit reference line — accent so it threads
+      // visually with the related Satoshi-departure narrative.
       g.append('line')
         .attr('x1', x(parseDate('2011-09-13'))).attr('x2', x(parseDate('2011-09-13')))
         .attr('y1', 0).attr('y2', h)
-        .attr('stroke', '#b45309').attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.6);
+        .attr('stroke', T.accent).attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.6);
       g.append('text')
         .attr('x', x(parseDate('2011-09-13'))).attr('y', -5)
         .attr('text-anchor', 'middle').attr('font-size', '9px')
-        .attr('fill', '#b45309').text(l.finalSvn);
+        .attr('fill', T.accent).text(l.finalSvn);
 
       committers.forEach(function(c) {
         var x1 = x(parseDate(c.start));
         var x2 = c.end ? x(parseDate(c.end)) : w;
         var isActive = !c.end;
+        var color = token(c.colorToken);
 
         g.append('rect')
           .attr('x', x1).attr('y', y(c.name))
           .attr('width', x2 - x1).attr('height', y.bandwidth())
-          .attr('fill', c.color).attr('rx', 3).attr('opacity', isActive ? 0.85 : 0.6);
+          .attr('fill', color).attr('rx', 3).attr('opacity', isActive ? 0.85 : 0.6);
 
         if (isActive) {
           g.append('text')
             .attr('x', x2 - 5).attr('y', y(c.name) + y.bandwidth() / 2)
             .attr('text-anchor', 'end').attr('dominant-baseline', 'central')
-            .attr('font-size', '10px').attr('fill', '#fff').attr('font-weight', '600')
+            .attr('font-size', '10px').attr('fill', T.bg).attr('font-weight', '600')
             .text('→ ' + l.active);
         }
 
+        // Endpoint dots — surface stroke for halo against the bar fill.
         g.append('circle')
           .attr('cx', x1).attr('cy', y(c.name) + y.bandwidth() / 2)
-          .attr('r', 4).attr('fill', c.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
+          .attr('r', 4).attr('fill', color).attr('stroke', T.bg).attr('stroke-width', 1.5);
         if (!isActive) {
           g.append('circle')
             .attr('cx', x2).attr('cy', y(c.name) + y.bandwidth() / 2)
-            .attr('r', 4).attr('fill', c.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
+            .attr('r', 4).attr('fill', color).attr('stroke', T.bg).attr('stroke-width', 1.5);
         }
       });
     }
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
