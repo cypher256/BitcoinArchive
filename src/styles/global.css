@@ -25,7 +25,18 @@
   --color-link-hover: #1d4ed8;
   --color-border: rgba(15, 20, 25, 0.08);
   --color-source-bg: #f4f6f9;
-  --color-satoshi: #1f3a5f;
+  /* Satoshi accent — deliberately distinct from `--color-accent` (navy)
+     so Satoshi messages on thread pages, Satoshi-authored entry cards,
+     and the search-result `.satoshi` badge stand out from
+     non-Satoshi authors (whose accent stripe is `--color-text-muted`
+     or `--color-border`). Light: deep amber `#c2410c` reads as a
+     warm, saturated highlight against navy and slate; dark: amber-400
+     `#fbbf24` reads as a clear, warm tone against the dark navy bg
+     and stays distinguishable from the lighter-navy `--color-accent`
+     (`#7aa3d4`). The previous value (`#1f3a5f` light / `#7aa3d4`
+     dark) collided with `--color-accent` exactly, making the Satoshi
+     stripe visually identical to the default left-border color. */
+  --color-satoshi: #c2410c;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'Menlo', 'Consolas', monospace;
@@ -161,7 +172,12 @@
     --color-link-hover: #a5cdff;
     --color-border: rgba(232, 234, 238, 0.10);
     --color-source-bg: #1a212c;
-    --color-satoshi: #7aa3d4;
+    /* Amber-400 — light, warm, distinct from `--color-accent`
+       (`#7aa3d4` lighter-navy) so the Satoshi accent stripe and
+       the Satoshi author-name link read as a clearly different
+       token even at a glance. See `:root` block above for the
+       full rationale. */
+    --color-satoshi: #fbbf24;
 
     --color-bg-primary: var(--color-bg);
     --color-bg-secondary: var(--color-bg-alt);
@@ -216,7 +232,10 @@
   --color-link-hover: #a5cdff;
   --color-border: rgba(232, 234, 238, 0.10);
   --color-source-bg: #1a212c;
-  --color-satoshi: #7aa3d4;
+  /* Amber-400 — kept identical to the @media variant above so
+     explicit data-mode="dark" matches OS dark exactly. See the
+     `:root` block at the top for the full rationale. */
+  --color-satoshi: #fbbf24;
 
   --color-bg-primary: var(--color-bg);
   --color-bg-secondary: var(--color-bg-alt);
