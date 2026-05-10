@@ -36,4 +36,10 @@
   --color-divider: var(--color-border);
   --color-accent-fg: var(--color-accent);
   --color-accent-bg: rgba(180, 83, 9, 0.08);
+
+  /* Tie the gantt alternating-section background to this theme's
+     accent so the highlight stays visually consistent with the rest
+     of the diagram. The other --mermaid-* tokens already pick up
+     this theme's --color-* values transitively via global.css. */
+  --mermaid-section-alt: rgba(180, 83, 9, 0.12);
 }

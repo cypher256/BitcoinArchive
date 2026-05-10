@@ -30,4 +30,8 @@
   --color-divider: var(--color-border);
   --color-accent-fg: var(--color-accent);
   --color-accent-bg: rgba(15, 118, 110, 0.08);
+
+  /* Tie the gantt alternating-section background to this theme's
+     teal accent. */
+  --mermaid-section-alt: rgba(15, 118, 110, 0.10);
 }

@@ -33,4 +33,8 @@
   --color-divider: var(--color-border);
   --color-accent-fg: var(--color-accent);
   --color-accent-bg: rgba(31, 58, 95, 0.08);
+
+  /* Tie the gantt alternating-section background to this theme's
+     navy accent so the highlight stays visually consistent. */
+  --mermaid-section-alt: rgba(31, 58, 95, 0.10);
 }

@@ -29,4 +29,9 @@
   --color-divider: var(--color-border);
   --color-accent-fg: var(--color-accent);
   --color-accent-bg: rgba(0, 0, 0, 0.06);
+
+  /* Mermaid: ultra-minimal palette — neutral section bg, no
+     accent tint to keep the diagrams as quiet as the rest of
+     the layout. */
+  --mermaid-section-alt: rgba(0, 0, 0, 0.05);
 }

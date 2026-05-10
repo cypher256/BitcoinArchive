@@ -84,7 +84,17 @@
   --line-base: 1.6;
   --line-loose: 1.8;
 
-  /* ---- New: Mermaid post-process tokens (consumed in Group C) ---- */
+  /* ---- New: Mermaid post-process tokens (consumed by
+     `rehype-mermaid-themer.mjs`).
+     The first seven cover the bulk of the rewrite (background,
+     text, edges, node body / border, subgraph cluster body /
+     border). The next four cover gantt-specific roles:
+       - `--mermaid-link`: clickable taskText / vert text fill
+       - `--mermaid-crit`: critical-path stroke + fill (kept warm
+          so it still reads as a warning even on dark themes)
+       - `--mermaid-section-alt`: alternating section background
+          for gantt (one section every two rows is highlighted)
+       - `--mermaid-exclude-bg`: gantt exclude-range fill (faded) */
   --mermaid-bg: var(--color-bg);
   --mermaid-text: var(--color-text);
   --mermaid-edge: var(--color-border);
@@ -92,6 +102,10 @@
   --mermaid-node-border: var(--color-accent);
   --mermaid-cluster-bg: var(--color-source-bg);
   --mermaid-cluster-border: var(--color-border);
+  --mermaid-link: var(--color-link);
+  --mermaid-crit: #ff8888;
+  --mermaid-section-alt: rgba(180, 83, 9, 0.12);
+  --mermaid-exclude-bg: var(--color-bg-alt);
 
   /* ---- New: chart palette tokens (consumed by d3 in Group C).
      Six categorical hues for distinct series; three additional
@@ -168,6 +182,10 @@
     --mermaid-node-border: var(--color-accent);
     --mermaid-cluster-bg: var(--color-source-bg);
     --mermaid-cluster-border: var(--color-border);
+    --mermaid-link: var(--color-link);
+    --mermaid-crit: #f87171;
+    --mermaid-section-alt: rgba(255, 122, 0, 0.16);
+    --mermaid-exclude-bg: var(--color-bg-alt);
 
     /* Chart palette — slightly brighter hues so qualitative series
        remain distinguishable on dark backgrounds. */
