@@ -36,9 +36,27 @@ const t = useTranslations(lang);
   var nodes = data.nodes;
   var edges = data.edges;
 
+  function token(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+  function readTokens() {
+    return {
+      satoshi: token('--color-accent'),
+      // Other-participant nodes use --chart-color-9 (slate). The
+      // existing literal #5b7f95 (the "satoshi vs other" cool tone)
+      // maps onto --chart-color-9 in light + brighter slate in dark
+      // mode so the contrast stays similar across themes.
+      other: token('--chart-color-9'),
+      edge: token('--color-divider'),
+      labelFill: token('--color-text'),
+      labelHalo: token('--color-bg'),
+    };
+  }
+
   var abortCtrl = null;
   function draw() {
     container.innerHTML = '';
+    var T = readTokens();
     if (abortCtrl) abortCtrl.abort();
     abortCtrl = new AbortController();
 
@@ -156,7 +174,7 @@ const t = useTranslations(lang);
       .selectAll('line')
       .data(simEdges)
       .enter().append('line')
-      .attr('stroke', '#c4c0b8')
+      .attr('stroke', T.edge)
       .attr('stroke-opacity', 0.6)
       .attr('stroke-width', function(d) { return edgeWidth(d.weight); });
 
@@ -165,8 +183,8 @@ const t = useTranslations(lang);
       .data(simNodes)
       .enter().append('circle')
       .attr('r', function(d) { return nodeRadius(d.count); })
-      .attr('fill', function(d) { return d.isSatoshi ? '#b45309' : '#5b7f95'; })
-      .attr('stroke', '#fff')
+      .attr('fill', function(d) { return d.isSatoshi ? T.satoshi : T.other; })
+      .attr('stroke', T.labelHalo)
       .attr('stroke-width', 1.5)
       .style('cursor', 'pointer');
 
@@ -178,8 +196,8 @@ const t = useTranslations(lang);
       .attr('font-size', function(d) { return d.isSatoshi ? '13px' : '10px'; })
       .attr('font-family', 'var(--font-heading), system-ui, sans-serif')
       .attr('font-weight', function(d) { return d.isSatoshi ? '700' : '400'; })
-      .attr('fill', '#333')
-      .attr('stroke', '#fff')
+      .attr('fill', T.labelFill)
+      .attr('stroke', T.labelHalo)
       .attr('stroke-width', 2)
       .attr('stroke-linejoin', 'round')
       .attr('paint-order', 'stroke')
@@ -240,7 +258,10 @@ const t = useTranslations(lang);
       if (connEdges.length > 0) {
         connEdges.sort(function(a, b) { return b.weight - a.weight; });
         var top = connEdges.slice(0, 5);
-        html += '<br><span style="font-size:0.8em;color:#888">';
+        // Connection list — color comes from --color-text-muted via
+        // the inline style; the tooltip font-color falls back to
+        // --color-text on the parent for the headline.
+        html += '<br><span style="font-size:0.8em;color:var(--color-text-muted)">';
         for (var i = 0; i < top.length; i++) {
           var other = top[i].source.id === d.id ? top[i].target : top[i].source;
           html += other.name + ': ' + top[i].weight + ' ' + coLabel;
@@ -327,6 +348,25 @@ const t = useTranslations(lang);
       if (typeof d3 !== 'undefined') draw();
     }, 250);
   });
+
+  // Theme/mode listeners — repaint when palette changes. Guarded
+  // by `started` so we don't trigger lazy-init prematurely (the
+  // graph only renders when scrolled into view).
+  function rerenderIfStarted() {
+    if (!started) return;
+    if (typeof d3 !== 'undefined') draw();
+  }
+  if (typeof window.matchMedia === 'function') {
+    var mql = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mql.addEventListener) mql.addEventListener('change', rerenderIfStarted);
+    else if (mql.addListener) mql.addListener(rerenderIfStarted);
+  }
+  if (typeof MutationObserver === 'function') {
+    new MutationObserver(rerenderIfStarted).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-mode', 'data-theme'],
+    });
+  }
 })();
 </script>
 
@@ -356,13 +396,17 @@ const t = useTranslations(lang);
     content: '';
     position: absolute;
     inset: 0;
+    /* Skeleton shimmer — token-driven so it stays subtle on both
+       light and dark themes. The transparent middle stop fades to
+       --color-divider for the visible band. */
     background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.02),
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.02)
+      transparent,
+      var(--color-divider),
+      transparent
     );
     background-size: 200% 100%;
+    opacity: 0.4;
     animation: network-skeleton 1.8s ease-in-out infinite;
   }
   @keyframes network-skeleton {
@@ -381,7 +425,9 @@ const t = useTranslations(lang);
     align-items: center;
     gap: 0.35rem;
     padding: 0.3rem 0.5rem;
-    background: rgba(255, 255, 255, 0.9);
+    /* Semitransparent surface so underlying graph stays visible. */
+    background: var(--color-bg);
+    opacity: 0.92;
     border: 1px solid var(--color-border);
     border-radius: 4px;
     backdrop-filter: blur(2px);
@@ -404,7 +450,7 @@ const t = useTranslations(lang);
   }
   .zoom-btn:hover {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-bg);
     border-color: var(--color-accent);
   }
   .zoom-btn.zoom-reset {
@@ -421,7 +467,9 @@ const t = useTranslations(lang);
   #network-graph :global(.graph-tooltip) {
     position: absolute;
     pointer-events: none;
-    background: rgba(255, 255, 255, 0.96);
+    /* Surface stays slightly transparent (0.96 opacity) so the
+       underlying graph remains visible behind dense node clusters. */
+    background: var(--color-bg);
     border: 1px solid var(--color-border);
     border-radius: 4px;
     padding: 0.5rem 0.75rem;
@@ -429,8 +477,9 @@ const t = useTranslations(lang);
     font-size: 0.82rem;
     line-height: 1.5;
     color: var(--color-text);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-md);
     z-index: 10;
     max-width: 260px;
+    opacity: 0.96;
   }
 </style>
