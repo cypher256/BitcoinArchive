@@ -4,21 +4,6 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import type { Lang } from '../i18n/ui';
 import '../styles/global.css';
-// Theme bundle (Phase 3.5): all five Modern variants plus a snapshot
-// of the current retro look are imported once and shipped as a single
-// CSS bundle. Each file scopes its rules to `:root[data-theme="..."]`,
-// so without an explicit data-theme nothing fires and the
-// global.css defaults (= retro) win. The retro snapshot lets users
-// flip back to the current look via `?theme=retro` for A/B compare.
-// Once a Modern theme is adopted (Phase 6) these files and the
-// imports below get removed and the chosen palette is promoted to
-// the global.css :root defaults.
-import '../styles/themes/retro.css';
-import '../styles/themes/modern-a.css';
-import '../styles/themes/modern-b.css';
-import '../styles/themes/modern-c.css';
-import '../styles/themes/modern-d.css';
-import '../styles/themes/modern-e.css';
 
 interface Props {
   title: string;
@@ -40,31 +25,22 @@ interface Props {
 }
 
 const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, author, noindex, ogImage, breadcrumbs, structuredData } = Astro.props;
-// Server-side theme attribute. In dev (SSR) Astro.url carries the
-// real query string, so `?theme=modern-a` is wired into the HTML
-// before the first byte. In static build (SSG) the attribute is
-// emitted empty; the head-earliest inline script below picks up
-// the URL param at runtime instead. Either way the attribute is
-// set before stylesheets resolve, so no FOUC.
-const themeParam = Astro.url.searchParams.get('theme') || '';
 ---
 
 <!doctype html>
-<html lang={lang} data-theme={themeParam}>
+<html lang={lang}>
   <head>
     {/*
       Head-earliest inline blocking script. This MUST be the first
       child of <head> so it runs before any stylesheet or font
-      <link> resolves. It does three things:
+      <link> resolves. It does two things:
 
-      1. Read `?theme=...` from the URL and apply it to <html>
-         (covers SSG where the server-side attribute is empty).
-      2. Read `localStorage.mode` and apply `data-mode` to <html>
+      1. Read `localStorage.mode` and apply `data-mode` to <html>
          (3-way: light / dark / system; system = no attribute).
-      3. Sync `<meta name="theme-color">` with the current
+      2. Sync `<meta name="theme-color">` with the current
          computed `--color-bg` so the mobile browser chrome
-         tracks the theme/mode in real time. Listens for OS
-         dark-mode flips and any later attribute mutations.
+         tracks the mode in real time. Listens for OS dark-mode
+         flips and any later `data-mode` mutations.
 
       Wrapped in a try/catch because localStorage can throw in
       private browsing modes — silent fallback to defaults is
@@ -74,8 +50,6 @@ const themeParam = Astro.url.searchParams.get('theme') || '';
       (function () {
         try {
           var root = document.documentElement;
-          var p = new URLSearchParams(location.search).get('theme');
-          if (p) root.setAttribute('data-theme', p);
           var m = null;
           try { m = localStorage.getItem('mode'); } catch (_) {}
           if (m === 'light' || m === 'dark') root.setAttribute('data-mode', m);
@@ -99,7 +73,7 @@ const themeParam = Astro.url.searchParams.get('theme') || '';
           syncBrowserChrome();
         }
         // Also re-run when OS preference flips, when the user toggles
-        // mode/theme, or when any script mutates the attributes.
+        // mode, or when any script mutates the attribute.
         try {
           var mq = matchMedia('(prefers-color-scheme: dark)');
           if (mq.addEventListener) mq.addEventListener('change', syncBrowserChrome);
@@ -112,7 +86,7 @@ const themeParam = Astro.url.searchParams.get('theme') || '';
         try {
           new MutationObserver(syncBrowserChrome).observe(
             document.documentElement,
-            { attributes: true, attributeFilter: ['data-mode', 'data-theme'] }
+            { attributes: true, attributeFilter: ['data-mode'] }
           );
         } catch (_) {}
       })();
