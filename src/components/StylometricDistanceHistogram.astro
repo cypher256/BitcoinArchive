@@ -80,13 +80,15 @@ const labels = {
 // @ts-ignore — lang is 'en' | 'ja' but TS may not infer correctly through Astro.props
 const l = labels[lang as 'en' | 'ja'] || labels.en;
 
-// Color per candidate
-const candidateColors: Record<string, string> = {
-  'Nick Szabo': '#dc2626',     // red — leads named group
-  'Hal Finney': '#ea580c',     // orange
-  'Adam Back': '#ca8a04',      // gold
-  'Wei Dai': '#16a34a',        // green
-  'Len Sassaman': '#2563eb',   // blue
+// Color per candidate — token names (not hex) so the chart picks up
+// theme-level palette overrides at draw time. Fixed assignment so each
+// candidate keeps a stable hue across themes.
+const candidateColorTokens: Record<string, string> = {
+  'Nick Szabo':    '--chart-negative',  // red — leads named group
+  'Hal Finney':    '--chart-color-1',   // orange/accent
+  'Adam Back':     '--chart-color-8',   // gold
+  'Wei Dai':       '--chart-color-3',   // green
+  'Len Sassaman':  '--chart-color-2',   // blue
 };
 ---
 
@@ -113,7 +115,7 @@ const candidateColors: Record<string, string> = {
     bins: data.bins,
     stats: data.stats,
     namedCandidates: data.namedCandidates,
-    candidateColors,
+    candidateColorTokens,
     labels: l,
   })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
@@ -142,15 +144,39 @@ const candidateColors: Record<string, string> = {
       });
       return Object.keys(byLabel).map(function(k) { return byLabel[k]; });
     })(data.namedCandidates);
-    var colors = data.candidateColors;
+    var colorTokens = data.candidateColorTokens;
     var l = data.labels;
 
     var container = document.getElementById('stylometric-hist-chart');
     if (!container) return;
     container.style.position = 'relative';
 
+    // Resolve a CSS custom property against :root. Tokens are guaranteed
+    // by `src/styles/global.css`. Reading at draw() time is what allows
+    // the chart to repaint when the theme/mode flips.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readColors() {
+      var resolved = {};
+      Object.keys(colorTokens).forEach(function(k) { resolved[k] = token(colorTokens[k]); });
+      return resolved;
+    }
+    function readTokens() {
+      return {
+        bar: token('--chart-color-9'),       // slate — neutral histogram bars
+        muted: token('--color-text-muted'),
+        grid: token('--color-divider'),
+        text: token('--color-text'),
+        tooltipBg: token('--chart-tooltip-bg'),
+        tooltipFg: token('--chart-tooltip-fg'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
+      var colors = readColors();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 700;
       // Horizontal-bar layout: Y axis is Burrows Delta (top = lowest = closest
@@ -210,7 +236,7 @@ const candidateColors: Record<string, string> = {
           var bot = y(Math.min(yMax, d.x1));
           return Math.max(0, bot - top - 1);
         })
-        .attr('fill', '#94a3b8')
+        .attr('fill', T.bar)
         .attr('opacity', 0.7);
 
       // Direction annotation in the top-left margin: "↑ Closer to Satoshi".
@@ -220,7 +246,7 @@ const candidateColors: Record<string, string> = {
       // Satoshi", which the bar layout alone doesn't convey.
       g.append('text')
         .attr('x', 2).attr('y', -10)
-        .attr('text-anchor', 'start').attr('fill', '#475569').attr('font-size', '11px')
+        .attr('text-anchor', 'start').attr('fill', T.muted).attr('font-size', '11px')
         .attr('font-weight', '600')
         .text(l.directionLabel);
 
@@ -229,11 +255,11 @@ const candidateColors: Record<string, string> = {
       g.append('line')
         .attr('y1', meanY).attr('y2', meanY)
         .attr('x1', 0).attr('x2', w)
-        .attr('stroke', '#475569').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+        .attr('stroke', T.muted).attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
 
       g.append('text')
         .attr('x', w - 4).attr('y', meanY - 4)
-        .attr('text-anchor', 'end').attr('fill', '#475569').attr('font-size', '11px')
+        .attr('text-anchor', 'end').attr('fill', T.muted).attr('font-size', '11px')
         .text(l.meanLabel + ' ' + stats.mean.toFixed(5));
 
       // Named candidate horizontal lines.
@@ -258,7 +284,7 @@ const candidateColors: Record<string, string> = {
 
       // Candidate horizontal lines (drawn first, behind labels).
       sorted.forEach(function(c) {
-        var color = colors[c.label] || '#666';
+        var color = colors[c.label] || T.muted;
         g.append('line')
           .attr('y1', c._cy).attr('y2', c._cy)
           .attr('x1', 0).attr('x2', w)
@@ -280,7 +306,7 @@ const candidateColors: Record<string, string> = {
       // extending leftward to roughly x=-45) so the two layers don't overlap.
       var labelRightX = -52;
       sorted.forEach(function(c) {
-        var color = colors[c.label] || '#666';
+        var color = colors[c.label] || T.muted;
         var displayName = (l.candidateNames && l.candidateNames[c.label]) || c.label;
         var labelText = displayName + ' (' + c.percentile + '%)';
 
@@ -304,13 +330,13 @@ const candidateColors: Record<string, string> = {
       // X label
       svg.append('text')
         .attr('x', margin.left + w / 2).attr('y', H - 8)
-        .attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#475569')
+        .attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', T.muted)
         .text(l.xLabel);
 
       // Tooltip on bars (still useful for hovering specific bins)
       var tooltip = d3.select(container).append('div')
         .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
-        .style('background', 'rgba(0,0,0,0.88)').style('color', '#fff')
+        .style('background', T.tooltipBg).style('color', T.tooltipFg)
         .style('padding', '7px 10px').style('border-radius', '4px')
         .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
 
@@ -332,6 +358,20 @@ const candidateColors: Record<string, string> = {
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
+
+    // Theme/mode listeners — repaint on data-theme/data-mode mutation
+    // and on prefers-color-scheme flips. draw() wipes innerHTML.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
@@ -365,10 +405,10 @@ const candidateColors: Record<string, string> = {
   }
   .chart-container :global(.axis path),
   .chart-container :global(.axis line) {
-    stroke: #cbd5e1;
+    stroke: var(--color-divider);
   }
   .chart-container :global(.axis text) {
-    fill: #475569;
+    fill: var(--color-text-muted);
     font-size: 10px;
   }
   .stats-line {
@@ -397,15 +437,21 @@ const candidateColors: Record<string, string> = {
     border-radius: 1px;
   }
   .legend-mean {
-    background: #475569;
-    background-image: linear-gradient(to right, #475569 4px, transparent 4px, transparent 7px, #475569 7px);
+    background: var(--color-text-muted);
+    background-image: linear-gradient(
+      to right,
+      var(--color-text-muted) 4px,
+      transparent 4px,
+      transparent 7px,
+      var(--color-text-muted) 7px
+    );
     background-size: 7px 100%;
   }
   .insight {
     margin-top: 1rem;
     padding: 0.75rem 1rem;
-    background: var(--color-bg-subtle, #f8fafc);
-    border-left: 3px solid #2563eb;
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-link);
     border-radius: 0 4px 4px 0;
     font-size: 0.88rem;
   }
