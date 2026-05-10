@@ -1,58 +1,52 @@
 /* ============================================================
    Design Tokens — two-layer (light defaults + dark variant).
-   See temp/temp_0510_モダン化リデザイン計画.md § Phase 1, § B.3.
+   See temp/temp_0510_モダン化リデザイン計画.md § Phase 6, § B.3.
 
-   Layer 1: `:root` carries light defaults. Existing color tokens
-   remain identical so legacy components keep working unchanged.
-   New semantic tokens (spacing / radius / shadow / type scale /
-   chart palette / Mermaid) are added as a parallel layer for
-   future component migration (Group B/C/D).
+   Phase 6 promoted Modern A (Editorial Sans, Inter, deep navy
+   `#1f3a5f` accent) to the default palette. The retro Georgia /
+   sepia / orange-brown look is gone; the `themes/` directory
+   has been removed alongside the URL-param theme switcher.
 
+   Layer 1: `:root` carries Modern A's light variant.
    Layer 2: dark variant lives in two parallel rules so that
-   user override (`data-mode="dark"`), OS preference
-   (`prefers-color-scheme: dark` with no explicit user override),
-   and theme overrides (`data-theme="..."`) compose cleanly via
-   specificity. See § B.3 of the plan for the composition logic.
-
-   Design-case overrides (Modern A〜E and the retro snapshot)
-   live in `themes/*.css`, imported by BaseLayout. They use
-   `:root[data-theme="..."]` selectors so they only fire when
-   the URL param / toggle sets `data-theme` explicitly. The
-   default (no `data-theme`) renders the legacy retro look.
+   user override (`data-mode="dark"`) and OS preference
+   (`prefers-color-scheme: dark` with no explicit user override)
+   compose cleanly. Both rules carry the same body so explicit
+   dark and OS-driven dark render identically.
    ============================================================ */
 :root {
-  /* ---- Existing color tokens (light defaults, retro look) ---- */
-  --color-bg: #fafaf8;
-  --color-bg-alt: #f0efe8;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6b6b;
-  --color-accent: #b45309;
-  --color-link: #1a56db;
-  --color-link-hover: #1e40af;
-  --color-border: #d4d0c8;
-  --color-source-bg: #f5f0e6;
-  --color-satoshi: #b45309;
-  --font-body: 'Georgia', 'Times New Roman', serif;
-  --font-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* ---- Color tokens (Modern A light variant) ---- */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fb;
+  --color-text: #0f1419;
+  --color-text-muted: #5a6470;
+  --color-accent: #1f3a5f;          /* deep navy = academic gravitas */
+  --color-link: #2563eb;
+  --color-link-hover: #1d4ed8;
+  --color-border: rgba(15, 20, 25, 0.08);
+  --color-source-bg: #f4f6f9;
+  --color-satoshi: #1f3a5f;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'Menlo', 'Consolas', monospace;
 
-  /* ---- Width tokens (existing, kept).
+  /* ---- Width tokens.
      See STYLE_GUIDE.md § Layout Width Policy. ---- */
   --max-width-prose: 640px;          /* prose paragraph readability (env/lang-independent) */
   --max-width-read: 800px;           /* reading-tier page (single document) */
   --max-width-wide: 1200px;          /* dashboard-tier page (lists, viz) */
   --max-width: var(--max-width-read); /* alias for backward compat */
 
-  /* ---- New: semantic color aliases (Phase 1) ---- */
+  /* ---- Semantic color aliases ---- */
   --color-bg-primary: var(--color-bg);
   --color-bg-secondary: var(--color-bg-alt);
   --color-bg-quote: var(--color-source-bg);
-  --color-bg-code: #f5f5f5;
+  --color-bg-code: #f4f6f9;
   --color-divider: var(--color-border);
   --color-accent-fg: var(--color-accent);
-  --color-accent-bg: rgba(180, 83, 9, 0.08);
+  --color-accent-bg: rgba(31, 58, 95, 0.08);
 
-  /* ---- New: spacing scale (Phase 1) ---- */
+  /* ---- Spacing scale ---- */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -62,17 +56,17 @@
   --space-7: 48px;
   --space-8: 64px;
 
-  /* ---- New: radius scale (Phase 1) ---- */
+  /* ---- Radius scale ---- */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* ---- New: shadow scale (Phase 1) ---- */
+  /* ---- Shadow scale ---- */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
 
-  /* ---- New: type scale (Phase 1) ---- */
+  /* ---- Type scale ---- */
   --text-xs: 12px;
   --text-sm: 14px;
   --text-base: 16px;
@@ -84,7 +78,7 @@
   --line-base: 1.6;
   --line-loose: 1.8;
 
-  /* ---- New: Mermaid post-process tokens (consumed by
+  /* ---- Mermaid post-process tokens (consumed by
      `rehype-mermaid-themer.mjs`).
      The first seven cover the bulk of the rewrite (background,
      text, edges, node body / border, subgraph cluster body /
@@ -103,25 +97,29 @@
   --mermaid-cluster-bg: var(--color-source-bg);
   --mermaid-cluster-border: var(--color-border);
   --mermaid-link: var(--color-link);
-  --mermaid-crit: #ff8888;
-  --mermaid-section-alt: rgba(180, 83, 9, 0.12);
+  --mermaid-crit: #dc2626;
+  --mermaid-section-alt: rgba(31, 58, 95, 0.10);
   --mermaid-exclude-bg: var(--color-bg-alt);
 
-  /* ---- New: chart palette tokens (consumed by d3 in Group C).
-     Six categorical hues for distinct series; three additional
-     hues (-7..-9) cover edge cases such as SatoshiActivityTimeline
-     (9 channels) and BitcoinForkGenealogy (10 chains). ---- */
-  --chart-color-1: #b45309; /* accent (warm orange-brown) */
-  --chart-color-2: #1a56db; /* blue */
+  /* ---- Chart palette tokens (consumed by d3).
+     Modern A's navy-led palette: navy is `--chart-color-1`
+     so the primary series tracks the accent; the remaining
+     hues are picked to stay distinguishable while keeping a
+     restrained editorial register (no electric oranges /
+     hot magentas). Nine slots cover the wider charts
+     (SatoshiActivityTimeline 9 channels, BitcoinForkGenealogy
+     10 chains). ---- */
+  --chart-color-1: #1f3a5f; /* navy (accent) */
+  --chart-color-2: #2563eb; /* link blue */
   --chart-color-3: #047857; /* green */
   --chart-color-4: #7c3aed; /* purple */
   --chart-color-5: #be185d; /* magenta */
-  --chart-color-6: #6b6b6b; /* neutral */
+  --chart-color-6: #5a6470; /* slate-muted */
   --chart-color-7: #0891b2; /* cyan */
   --chart-color-8: #ca8a04; /* amber */
-  --chart-color-9: #475569; /* slate */
+  --chart-color-9: #475569; /* deep slate */
 
-  /* ---- New: chart semantic tokens (consumed by d3 in Group C).
+  /* ---- Chart semantic tokens (consumed by d3).
      These map data-encoded concepts (positive/negative outcomes,
      emphasis vs muted series, candidate-vs-other contrast) to the
      palette so individual charts don't have to choose hues. They
@@ -133,43 +131,45 @@
   --chart-emphasis: var(--color-accent);    /* focus series (Satoshi, primary candidate) — tracks theme accent */
   --chart-muted: var(--color-text-muted);   /* axes, gridlines, subdued text */
   --chart-grid: var(--color-divider);       /* gridlines, lane separators, faint rules */
-  --chart-tooltip-bg: rgba(20, 20, 20, 0.92); /* dark overlay for tooltips, readable on any theme */
+  --chart-tooltip-bg: rgba(15, 20, 25, 0.92); /* dark overlay for tooltips, readable on any theme */
   --chart-tooltip-fg: #ffffff;               /* tooltip foreground */
   --chart-surface: var(--color-bg);          /* SVG / chart background fill */
   --chart-lane-a: var(--color-bg-alt);       /* alternating lane stripe (even rows) */
   --chart-lane-b: var(--color-bg-quote);     /* alternating lane stripe (odd rows) */
 }
 
-/* ---- Dark variant (default theme only) ----
+/* ---- Dark variant (Modern A flavored) ----
    Triggers when:
    - OS preference is dark AND user has not overridden to light, OR
    - User has explicitly chosen dark via the 3-way toggle.
    `:not([data-mode="light"])` keeps users who pinned light from
-   getting flipped by OS dark. The two rules are kept identical
-   so specificity composition with `[data-theme]` overrides is
-   predictable. Modern C is intentionally always-dark (defined
-   directly in themes/modern-c.css), so it does not need a dark
-   variant entry here. */
+   getting flipped by OS dark. The two rules carry identical
+   bodies so explicit dark and OS-driven dark render the same.
+   The palette is a navy-tinted dark — bg is `#0e1218` (deep
+   navy-tinted near-black, not pure black, so it reads as a
+   considered editorial dark rather than terminal/hacker dark)
+   and the accent shifts to `#7aa3d4` (lighter navy) for
+   contrast on the dark surface. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-mode="light"]) {
-    --color-bg: #0b0d10;
-    --color-bg-alt: #14171c;
-    --color-text: #e5e9ef;
-    --color-text-muted: #8a93a0;
-    --color-accent: #ff7a00;
-    --color-link: #4ea1ff;
-    --color-link-hover: #7ab8ff;
-    --color-border: rgba(229, 233, 239, 0.10);
-    --color-source-bg: #15191f;
-    --color-satoshi: #ff7a00;
+    --color-bg: #0e1218;
+    --color-bg-alt: #161b24;
+    --color-text: #e8eaee;
+    --color-text-muted: #97a0ab;
+    --color-accent: #7aa3d4;
+    --color-link: #7ab8ff;
+    --color-link-hover: #a5cdff;
+    --color-border: rgba(232, 234, 238, 0.10);
+    --color-source-bg: #1a212c;
+    --color-satoshi: #7aa3d4;
 
     --color-bg-primary: var(--color-bg);
     --color-bg-secondary: var(--color-bg-alt);
     --color-bg-quote: var(--color-source-bg);
-    --color-bg-code: #1a1f26;
-    --color-divider: var(--color-border);
+    --color-bg-code: #1a212c;
+    --color-divider: rgba(232, 234, 238, 0.08);
     --color-accent-fg: var(--color-accent);
-    --color-accent-bg: rgba(255, 122, 0, 0.12);
+    --color-accent-bg: rgba(122, 163, 212, 0.12);
 
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -184,44 +184,47 @@
     --mermaid-cluster-border: var(--color-border);
     --mermaid-link: var(--color-link);
     --mermaid-crit: #f87171;
-    --mermaid-section-alt: rgba(255, 122, 0, 0.16);
+    --mermaid-section-alt: rgba(122, 163, 212, 0.16);
     --mermaid-exclude-bg: var(--color-bg-alt);
 
-    /* Chart palette — slightly brighter hues so qualitative series
-       remain distinguishable on dark backgrounds. */
-    --chart-color-1: #ff7a00;
-    --chart-color-2: #4ea1ff;
-    --chart-color-3: #34d399;
-    --chart-color-4: #a78bfa;
-    --chart-color-5: #f472b6;
-    --chart-color-6: #9ca3af;
-    --chart-color-7: #22d3ee;
-    --chart-color-8: #fbbf24;
-    --chart-color-9: #94a3b8;
+    /* Chart palette — brighter navy-led hues so qualitative
+       series remain distinguishable on dark backgrounds while
+       keeping the editorial navy aesthetic. */
+    --chart-color-1: #7aa3d4; /* lighter navy (accent) */
+    --chart-color-2: #7ab8ff; /* link blue */
+    --chart-color-3: #34d399; /* green */
+    --chart-color-4: #a78bfa; /* purple */
+    --chart-color-5: #f472b6; /* magenta */
+    --chart-color-6: #97a0ab; /* slate-muted */
+    --chart-color-7: #22d3ee; /* cyan */
+    --chart-color-8: #fbbf24; /* amber */
+    --chart-color-9: #cbd5e1; /* light slate */
     --chart-negative: #f87171;
     --chart-warning: #fbbf24;
+    --chart-tooltip-bg: rgba(232, 234, 238, 0.92);
+    --chart-tooltip-fg: #0e1218;
   }
 }
 
 :root[data-mode="dark"] {
-  --color-bg: #0b0d10;
-  --color-bg-alt: #14171c;
-  --color-text: #e5e9ef;
-  --color-text-muted: #8a93a0;
-  --color-accent: #ff7a00;
-  --color-link: #4ea1ff;
-  --color-link-hover: #7ab8ff;
-  --color-border: rgba(229, 233, 239, 0.10);
-  --color-source-bg: #15191f;
-  --color-satoshi: #ff7a00;
+  --color-bg: #0e1218;
+  --color-bg-alt: #161b24;
+  --color-text: #e8eaee;
+  --color-text-muted: #97a0ab;
+  --color-accent: #7aa3d4;
+  --color-link: #7ab8ff;
+  --color-link-hover: #a5cdff;
+  --color-border: rgba(232, 234, 238, 0.10);
+  --color-source-bg: #1a212c;
+  --color-satoshi: #7aa3d4;
 
   --color-bg-primary: var(--color-bg);
   --color-bg-secondary: var(--color-bg-alt);
   --color-bg-quote: var(--color-source-bg);
-  --color-bg-code: #1a1f26;
-  --color-divider: var(--color-border);
+  --color-bg-code: #1a212c;
+  --color-divider: rgba(232, 234, 238, 0.08);
   --color-accent-fg: var(--color-accent);
-  --color-accent-bg: rgba(255, 122, 0, 0.12);
+  --color-accent-bg: rgba(122, 163, 212, 0.12);
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -234,20 +237,26 @@
   --mermaid-node-border: var(--color-accent);
   --mermaid-cluster-bg: var(--color-source-bg);
   --mermaid-cluster-border: var(--color-border);
+  --mermaid-link: var(--color-link);
+  --mermaid-crit: #f87171;
+  --mermaid-section-alt: rgba(122, 163, 212, 0.16);
+  --mermaid-exclude-bg: var(--color-bg-alt);
 
-  /* Chart palette — brighter dark-mode hues (kept identical to the
-     @media variant above so explicit data-mode="dark" matches OS dark). */
-  --chart-color-1: #ff7a00;
-  --chart-color-2: #4ea1ff;
+  /* Chart palette — kept identical to the @media variant above
+     so explicit data-mode="dark" matches OS dark exactly. */
+  --chart-color-1: #7aa3d4;
+  --chart-color-2: #7ab8ff;
   --chart-color-3: #34d399;
   --chart-color-4: #a78bfa;
   --chart-color-5: #f472b6;
-  --chart-color-6: #9ca3af;
+  --chart-color-6: #97a0ab;
   --chart-color-7: #22d3ee;
   --chart-color-8: #fbbf24;
-  --chart-color-9: #94a3b8;
+  --chart-color-9: #cbd5e1;
   --chart-negative: #f87171;
   --chart-warning: #fbbf24;
+  --chart-tooltip-bg: rgba(232, 234, 238, 0.92);
+  --chart-tooltip-fg: #0e1218;
 }
 
 *,
@@ -401,7 +410,7 @@ th, td {
 }
 
 th {
-  background: rgba(180, 83, 9, 0.06);
+  background: var(--color-accent-bg);
   font-weight: 600;
 }
 
@@ -556,7 +565,7 @@ a[href^="//"]::after {
   vertical-align: baseline;
   position: relative;
   top: -0.15em;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%231a56db' d='M6 1h5v5l-1.7-1.7-3 3-1.3-1.3 3-3L6 1zM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E") no-repeat center;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232563eb' d='M6 1h5v5l-1.7-1.7-3 3-1.3-1.3 3-3L6 1zM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E") no-repeat center;
   background-size: contain;
 }
 
@@ -589,7 +598,7 @@ a[href^="#"]:hover {
 }
 
 @keyframes highlight-fade {
-  from { background-color: rgba(180, 83, 9, 0.08); }
+  from { background-color: var(--color-accent-bg); }
   to   { background-color: transparent; }
 }
 
