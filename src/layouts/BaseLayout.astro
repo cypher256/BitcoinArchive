@@ -33,14 +33,26 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
     {/*
       Head-earliest inline blocking script. This MUST be the first
       child of <head> so it runs before any stylesheet or font
-      <link> resolves. It does two things:
+      <link> resolves. It does three things:
 
       1. Read `localStorage.mode` and apply `data-mode` to <html>
          (3-way: light / dark / system; system = no attribute).
-      2. Sync `<meta name="theme-color">` with the current
-         computed `--color-bg` so the mobile browser chrome
-         tracks the mode in real time. Listens for OS dark-mode
-         flips and any later `data-mode` mutations.
+      2. Ensure `<meta name="theme-color">` exists in <head> and
+         seed its content with a fixed hex computed from the active
+         mode (no CSS variables — stylesheets haven't loaded yet,
+         so `getComputedStyle('--color-bg')` returns empty here).
+         This guarantees the mobile browser chrome (address bar,
+         task switcher) is correct from the very first paint;
+         dark-mode users no longer see a flash of light chrome.
+      3. After stylesheets resolve (DOMContentLoaded or later), run
+         `syncBrowserChrome()` to refresh the meta from the actual
+         `--color-bg` value — handles the rare case where the
+         token diverges from the seeded literal, and tracks any
+         later mode flip via media query / MutationObserver.
+
+      The seeded literals MUST stay in sync with `--color-bg` in
+      `src/styles/global.css` (light: `#ffffff`; dark: `#0e1218`).
+      If you change the bg token, change them here too.
 
       Wrapped in a try/catch because localStorage can throw in
       private browsing modes — silent fallback to defaults is
@@ -48,25 +60,58 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
     */}
     <script is:inline>
       (function () {
+        var root = document.documentElement;
         try {
-          var root = document.documentElement;
           var m = null;
           try { m = localStorage.getItem('mode'); } catch (_) {}
           if (m === 'light' || m === 'dark') root.setAttribute('data-mode', m);
         } catch (_) {}
 
-        function syncBrowserChrome() {
+        // Resolve the active mode in the same 3-way logic the CSS uses:
+        //   data-mode='light'  → light
+        //   data-mode='dark'   → dark
+        //   no attribute       → follow OS preference
+        function activeMode() {
+          var attr = root.getAttribute('data-mode');
+          if (attr === 'light' || attr === 'dark') return attr;
+          try {
+            return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          } catch (_) { return 'light'; }
+        }
+        // Light / dark `--color-bg` literals from `src/styles/global.css`.
+        // Kept in sync manually — see the doc-comment above.
+        function bgLiteralFor(mode) {
+          return mode === 'dark' ? '#0e1218' : '#ffffff';
+        }
+
+        // Ensure the theme-color meta exists in <head>. Created on demand
+        // so this script doesn't depend on BaseHead's render order — if
+        // <head> emits other tags first, the meta is appended; if a
+        // future BaseHead change adds a literal <meta>, this finds it.
+        function ensureThemeColorMeta() {
           var meta = document.querySelector('meta[name="theme-color"]');
-          if (!meta) return;
-          var bg = getComputedStyle(document.documentElement)
-            .getPropertyValue('--color-bg').trim();
+          if (!meta) {
+            meta = document.createElement('meta');
+            meta.setAttribute('name', 'theme-color');
+            document.head.appendChild(meta);
+          }
+          return meta;
+        }
+
+        // Step 2: seed the meta immediately with the literal for the
+        // active mode so the address bar paints correctly on the first
+        // frame. Stylesheets are still loading; we cannot read CSS vars.
+        var seedMeta = ensureThemeColorMeta();
+        seedMeta.setAttribute('content', bgLiteralFor(activeMode()));
+
+        // Step 3: once stylesheets resolve, refresh from the actual
+        // `--color-bg` token so any future palette change in global.css
+        // propagates without touching the literals above.
+        function syncBrowserChrome() {
+          var meta = ensureThemeColorMeta();
+          var bg = getComputedStyle(root).getPropertyValue('--color-bg').trim();
           if (bg) meta.setAttribute('content', bg);
         }
-        // Run once now (after stylesheets have been parsed by the
-        // browser into the cascade — `getComputedStyle` will see
-        // the resolved value because the script is parsed in head
-        // order, but the bundle below is `<link>` so the value is
-        // available in time for first paint on every browser path).
         if (document.readyState === 'loading') {
           document.addEventListener('DOMContentLoaded', syncBrowserChrome);
         } else {
@@ -85,7 +130,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
         } catch (_) {}
         try {
           new MutationObserver(syncBrowserChrome).observe(
-            document.documentElement,
+            root,
             { attributes: true, attributeFilter: ['data-mode'] }
           );
         } catch (_) {}
