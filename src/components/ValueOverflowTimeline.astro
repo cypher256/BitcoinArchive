@@ -63,10 +63,30 @@ const l = labels[lang];
     var container = document.getElementById('overflow-timeline');
     if (!container) return;
 
-    var typeColors = { alert: '#f59e0b', crisis: '#dc2626', fix: '#2563eb', resolved: '#059669' };
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // Incident encoding: warning -> negative -> blue (fix) -> positive (resolved).
+      // The two timeline-band tints (faded red for crisis window, faded
+      // blue for fix-to-resolved window) use accent-bg-style overlays
+      // with semantic hue alignment to the marker color.
+      return {
+        alert: token('--chart-warning'),
+        crisis: token('--chart-negative'),
+        fix: token('--chart-color-2'),
+        resolved: token('--chart-positive'),
+        track: token('--color-divider'),
+        muted: token('--color-text-muted'),
+        text: token('--color-text'),
+        bg: token('--color-bg'),
+      };
+    }
 
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
+      var typeColors = { alert: T.alert, crisis: T.crisis, fix: T.fix, resolved: T.resolved };
       var rect = container.getBoundingClientRect();
       var W = rect.width || 600;
       var margin = { top: 50, right: 80, bottom: 40, left: 80 };
@@ -83,25 +103,25 @@ const l = labels[lang];
       // Axis
       g.append('g').attr('transform', 'translate(0,' + (h - 10) + ')')
         .call(d3.axisBottom(x).ticks(6).tickFormat(function(d) { return '+' + d + l.hours; }))
-        .selectAll('text').attr('font-size', '10px');
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       // Timeline bar
       g.append('rect')
         .attr('x', 0).attr('y', h / 2 - 3)
         .attr('width', w).attr('height', 6)
-        .attr('fill', '#e5e7eb').attr('rx', 3);
+        .attr('fill', T.track).attr('rx', 3);
 
-      // Crisis period (red)
+      // Crisis period — same hue as the crisis marker, faded.
       g.append('rect')
         .attr('x', x(0)).attr('y', h / 2 - 3)
         .attr('width', x(4.9) - x(0)).attr('height', 6)
-        .attr('fill', '#fecaca').attr('rx', 3);
+        .attr('fill', T.crisis).attr('opacity', 0.25).attr('rx', 3);
 
-      // Fix → resolved period (blue)
+      // Fix → resolved period — same hue as the fix marker, faded.
       g.append('rect')
         .attr('x', x(4.9)).attr('y', h / 2 - 3)
         .attr('width', x(14.9) - x(4.9)).attr('height', 6)
-        .attr('fill', '#dbeafe').attr('rx', 3);
+        .attr('fill', T.fix).attr('opacity', 0.25).attr('rx', 3);
 
       // Events
       events.forEach(function(ev, i) {
@@ -113,7 +133,7 @@ const l = labels[lang];
 
         g.append('circle')
           .attr('cx', cx).attr('cy', h / 2)
-          .attr('r', 7).attr('fill', color).attr('stroke', '#fff').attr('stroke-width', 2);
+          .attr('r', 7).attr('fill', color).attr('stroke', T.bg).attr('stroke-width', 2);
 
         g.append('line')
           .attr('x1', cx).attr('x2', cx)
@@ -129,7 +149,7 @@ const l = labels[lang];
         g.append('text')
           .attr('x', cx).attr('y', yText + 13)
           .attr('text-anchor', 'middle').attr('font-size', '9px')
-          .attr('fill', '#6b6b6b')
+          .attr('fill', T.muted)
           .each(function() {
             var text = d3.select(this);
             var words = ev.label.split(' ');
@@ -152,6 +172,18 @@ const l = labels[lang];
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
