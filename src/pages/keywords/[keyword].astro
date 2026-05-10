@@ -3,50 +3,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
-// Import the keyword index as a static JSON module so Vite resolves the
-// path at bundle time. The previous version used `path.resolve` against
-// `fileURLToPath(import.meta.url)` — fine in `astro dev` (where
-// `import.meta.url` is the .astro source file) but broken in `astro
-// build`, where the SSR bundle's `import.meta.url` points into the
-// chunk output and `..×2` no longer reaches `src/data/`. The result
-// was `existsSync` returning false → `getStaticPaths` returning [] →
-// zero keyword pages in dist (the prod regression). JSON import is the
-// recommended Vite-stable way to read build-time data.
-import keywordIndexRaw from '../../data/keyword-index.json';
+import { keywordIndex } from '../../lib/keyword-index';
 
-interface KeywordIndexLocale {
-  concept: Record<string, string>;
-  person: Record<string, string>;
-  counts: Record<string, number>;
-  backlinks: Record<string, string[]>;
-  slugs: Record<string, string>;
-}
-
-interface KeywordIndex {
-  en: KeywordIndexLocale;
-  ja: KeywordIndexLocale;
-}
-
-// `getStaticPaths` runs in its own isolated scope and can only see file
-// imports — not frontmatter `const` declarations. Each scope (function
-// body and frontmatter render) re-casts the import locally.
 export async function getStaticPaths() {
-  const idx = keywordIndexRaw as unknown as KeywordIndex;
   const out: Array<{ params: { keyword: string }; props: { keyword: string; jaSlug?: string } }> = [];
   // For each EN slug, look up the corresponding JA slug pointing at the
   // same target so the language switcher can wire across.
-  const enSlugs: Record<string, string> = idx.en?.slugs ?? {};
-  const jaSlugs: Record<string, string> = idx.ja?.slugs ?? {};
+  const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
+  const jaSlugs: Record<string, string> = keywordIndex.ja?.slugs ?? {};
   // Build target -> JA slug index so we can locate the JA mirror page.
   const jaSlugByTarget = new Map<string, string>();
   for (const [s, kw] of Object.entries(jaSlugs)) {
-    const target = (idx.ja?.concept ?? {})[kw] ||
-      (idx.ja?.person ?? {})[kw];
+    const target = (keywordIndex.ja?.concept ?? {})[kw] ||
+      (keywordIndex.ja?.person ?? {})[kw];
     if (target && !jaSlugByTarget.has(target)) jaSlugByTarget.set(target, s);
   }
   for (const [slug, keyword] of Object.entries(enSlugs)) {
-    const target = (idx.en?.concept ?? {})[keyword] ||
-      (idx.en?.person ?? {})[keyword];
+    const target = (keywordIndex.en?.concept ?? {})[keyword] ||
+      (keywordIndex.en?.person ?? {})[keyword];
     const jaSlug = target ? jaSlugByTarget.get(target) : undefined;
     out.push({ params: { keyword: slug }, props: { keyword, jaSlug } });
   }
@@ -57,7 +31,6 @@ const lang = 'en';
 const t = useTranslations(lang);
 const { keyword, jaSlug } = Astro.props;
 
-const keywordIndex = keywordIndexRaw as unknown as KeywordIndex;
 const localeData = keywordIndex.en;
 const conceptTarget = localeData.concept[keyword];
 const personTarget = localeData.person[keyword];

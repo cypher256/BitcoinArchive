@@ -2,31 +2,13 @@
 import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
-import keywordIndexRaw from '../data/keyword-index.json';
+import { keywordCounts } from '../lib/keyword-index';
 
-// Backlink-count lookup for `inlineLinkKeywords` display. Loaded once
-// per build/dev session from the keyword index produced by
-// `scripts/generate-keyword-index.mjs`. The file is regenerated at the
-// top of `npm run dev` / `npm run build` / `npm run check`, so the
-// counts shown here are always synced to the latest archive content.
-//
-// Shape: { [locale]: { counts: { [keyword]: entryCount } } }.
-// `counts` only includes keywords with ≥1 backlink — absent entries
-// imply 0 (and the UI skips the "(N)" suffix in that case).
-// Import the JSON statically so Vite resolves it at bundle time. The
-// previous path-based read worked in local dev but could miss the file
-// in the production SSR bundle, which made keyword counts disappear on
-// deployed entry pages.
-interface KeywordIndexCounts {
-  en?: { counts?: Record<string, number> };
-  ja?: { counts?: Record<string, number> };
-}
-
-const keywordIndex = keywordIndexRaw as KeywordIndexCounts;
-const keywordCounts: Record<string, Record<string, number>> = {
-  en: keywordIndex.en?.counts ?? {},
-  ja: keywordIndex.ja?.counts ?? {},
-};
+// Backlink-count lookup for `inlineLinkKeywords` display, sourced from
+// the shared `src/lib/keyword-index.ts` helper (which Vite resolves at
+// bundle time so the data lands in both `astro dev` and `astro build`).
+// `keywordCounts` shape: `{ [locale]: { [keyword]: entryCount } }`.
+// Absent entries imply 0 backlinks and the UI skips the "(N)" suffix.
 
 interface Participant {
   name: string;
