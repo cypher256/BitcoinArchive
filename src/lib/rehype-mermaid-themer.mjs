@@ -125,9 +125,16 @@
  *  - HSL data colors emitted by `timeline` for section--N / section-N
  *    backgrounds. Those are part of the data encoding (each section
  *    gets a distinct hue) and rewriting them would collapse the
- *    palette into one color. Theming follows the body via the section
- *    text fills (`#ffffff` / `black`) and section line strokes which
- *    are mapped above.
+ *    palette into one color.
+ *  - `.section-N text` and `.section--N text` text fills (= the
+ *    text rendered on top of the data-encoded section bg above), and
+ *    `.node-icon-N` / `.node-icon--N` icon `color` fills. These
+ *    were originally `#000` / `#fff` / `black` / `white` so they
+ *    contrasted against the fixed-bright pastel section bg in either
+ *    mode. Rewriting them to `--mermaid-text` / `--mermaid-bg`
+ *    collapses the contrast in dark mode (light-grey-on-pale-yellow,
+ *    unreadable). The rule-body exemption lives in
+ *    `SELECTOR_EXEMPTIONS` and is consumed by `rewriteCssText`.
  *  - hsl(240, 100%, NaN%) on quadrantChart data-point circles —
  *    Mermaid emits NaN because it expects an `r,g,b` color in the
  *    data array but our entries supply a 2-tuple `[x, y]`. The hsl()
@@ -228,6 +235,114 @@ function rewriteColors(input) {
 }
 
 /**
+ * Selectors whose color declarations should be EXCLUDED from the
+ * substitution pass. Used by `rewriteCssText` below.
+ *
+ * The Mermaid `timeline` chart type emits per-section CSS rules like
+ *
+ *   #mermaid-0 .section-0 text   { fill: #000; }
+ *   #mermaid-0 .section-0        { ...etc... }
+ *   #mermaid-0 .node-icon-0      { color: #000; }
+ *   #mermaid-0 .section--1 text  { fill: #fff; }   (untyped variant)
+ *   #mermaid-0 .node-icon--1     { color: #fff; }
+ *
+ * The `.section-N` background fill is data-encoded (each timeline
+ * section gets a distinct bright pastel `hsl(...)` hue) and is
+ * intentionally NOT rewritten — see the "Intentionally LEFT ALONE"
+ * block at the top of this file. The text and icon fills inside
+ * those sections sit on top of those bright pastels and were
+ * originally `#000` / `#fff` so they would always read against the
+ * fixed-bright section bg regardless of any outer page theme.
+ *
+ * Rewriting them to `--mermaid-text` / `--mermaid-bg` (which we do
+ * for every other text fill in the SVG) collapses that contrast in
+ * dark mode: the section bg stays bright pastel, `--mermaid-text`
+ * resolves to `#e8eaee` (light grey), and the resulting light-grey-
+ * on-pale-yellow text is unreadable.
+ *
+ * Fix (option (a) per the dark-mode triage doc): leave the original
+ * `#000` / `#fff` / `black` / `white` literals in place inside these
+ * specific rule bodies. The timeline section text then stays
+ * theme-agnostic — but that's acceptable because the section bg is
+ * also theme-agnostic, so the contrast contract holds in both modes.
+ *
+ * Each entry below is a substring test against the rule's selector
+ * (case-insensitive). Whitespace inside the selector is normalized
+ * to a single space before matching, so `.section-0  text` and
+ * `.section-0\ttext` both match `'section-' + Ntext'`-style probes.
+ */
+const SELECTOR_EXEMPTIONS = [
+  // `.section-N text` and `.section--N text` (timeline section text).
+  /\.section-{1,2}\d+\s+text\b/i,
+  // `.node-icon-N` and `.node-icon--N` (timeline section emoji icons).
+  /\.node-icon-{1,2}\d+\b/i,
+];
+
+/**
+ * Run `rewriteColors` on every CSS rule body inside the Mermaid
+ * `<style>` text EXCEPT rules whose selector matches one of
+ * `SELECTOR_EXEMPTIONS`. The structure of a Mermaid style block is:
+ *
+ *   selector1 { decl; decl; ... } selector2 { decl; ... } ...
+ *
+ * with no `@media` / `@keyframes` (Mermaid's `default` theme emits
+ * one `@keyframes edge-animation-frame`/`dash` block before the
+ * per-rule cascade — those don't contain colors we rewrite, but the
+ * walker is robust against them via the bracket-depth count).
+ *
+ * Implementation: scan character by character, track brace depth,
+ * accumulate a "selector buffer" until `{`, then a "body buffer"
+ * until matching `}`. At each `}` decide whether to rewrite the
+ * body or pass it through verbatim. `@keyframes` blocks contain
+ * nested `0% { ... }` rules so we only check exemptions at depth-1
+ * and rewrite at depth>=1 unconditionally for now (no exemption
+ * inside keyframes; Mermaid doesn't put colors there anyway).
+ */
+function rewriteCssText(css) {
+  if (typeof css !== 'string' || css.length === 0) return css;
+  let out = '';
+  let buf = '';
+  let inBody = false;
+  let depth = 0;
+  let topSelector = '';
+  for (let i = 0; i < css.length; i++) {
+    const ch = css[i];
+    if (ch === '{') {
+      if (depth === 0) {
+        // End of selector. Stash the selector text for the
+        // exemption test, then start collecting the body.
+        topSelector = buf.replace(/\s+/g, ' ').trim();
+        out += buf + '{';
+        buf = '';
+        inBody = true;
+      } else {
+        buf += ch;
+      }
+      depth++;
+    } else if (ch === '}') {
+      depth--;
+      if (depth === 0) {
+        // End of top-level rule body. Decide rewrite vs verbatim
+        // based on the captured selector.
+        const exempt = SELECTOR_EXEMPTIONS.some((re) => re.test(topSelector));
+        out += (exempt ? buf : rewriteColors(buf)) + '}';
+        buf = '';
+        topSelector = '';
+        inBody = false;
+      } else {
+        buf += ch;
+      }
+    } else {
+      buf += ch;
+    }
+  }
+  // Any trailing unbracketed text (shouldn't happen in well-formed
+  // CSS, but be defensive) gets the standard rewrite.
+  if (buf.length > 0) out += rewriteColors(buf);
+  return out;
+}
+
+/**
  * Walk every descendant element of `root`, recursively, applying the
  * substitution to relevant attributes and to `<style>` text content.
  */
@@ -259,10 +374,15 @@ function rewriteSvgTree(root) {
       }
       // The first child of a Mermaid <svg> is a <style> element whose
       // single text child contains every CSS rule for the diagram.
+      // Use the rule-aware rewrite so timeline `.section-N text` and
+      // `.node-icon-N` rule bodies (which sit on data-encoded bright
+      // pastel section backgrounds) keep their original `#000` /
+      // `#fff` / `black` / `white` fills — see the doc-comment on
+      // `SELECTOR_EXEMPTIONS` for why.
       if (child.tagName === 'style' && Array.isArray(child.children)) {
         for (const t of child.children) {
           if (t && t.type === 'text' && typeof t.value === 'string') {
-            t.value = rewriteColors(t.value);
+            t.value = rewriteCssText(t.value);
           }
         }
       }
