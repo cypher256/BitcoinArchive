@@ -64,8 +64,31 @@ const l = labels[lang];
     var container = document.getElementById('genesis-gap-chart');
     if (!container) return;
 
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      return {
+        // Two block markers: Block 0 = accent (Genesis, the focus),
+        // Block 1 = chart-color-2 (the next event).
+        block0: token('--color-accent'),
+        block1: token('--chart-color-2'),
+        // Gap bar = warm tint (chart-warning) so it reads as
+        // "this is unusual" against the timeline.
+        gapFill: token('--color-accent-bg'),
+        gapStroke: token('--chart-warning'),
+        gapText: token('--color-accent'),
+        ratio: token('--chart-negative'),
+        muted: token('--color-text-muted'),
+        faint: token('--chart-color-6'),
+        text: token('--color-text'),
+        bg: token('--color-bg'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 600;
       var margin = { top: 40, right: 30, bottom: 50, left: 30 };
@@ -85,7 +108,7 @@ const l = labels[lang];
       // Axis
       g.append('g').attr('transform', 'translate(0,' + (h + 5) + ')')
         .call(d3.axisBottom(x).ticks(7).tickFormat(d3.timeFormat('%b %d')))
-        .selectAll('text').attr('font-size', '10px');
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       // Gap bar
       var barY = h / 2 - 15;
@@ -93,57 +116,69 @@ const l = labels[lang];
       g.append('rect')
         .attr('x', x(t0)).attr('y', barY)
         .attr('width', x(t1) - x(t0)).attr('height', barH)
-        .attr('fill', '#fef3c7').attr('stroke', '#f59e0b').attr('stroke-width', 1).attr('rx', 4);
+        .attr('fill', T.gapFill).attr('stroke', T.gapStroke).attr('stroke-width', 1).attr('rx', 4);
 
       // Gap label
       g.append('text')
         .attr('x', (x(t0) + x(t1)) / 2).attr('y', barY + barH / 2)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-        .attr('font-size', '12px').attr('font-weight', '700').attr('fill', '#92400e')
+        .attr('font-size', '12px').attr('font-weight', '700').attr('fill', T.gapText)
         .text(l.gap);
 
-      // Block 0 marker
+      // Block 0 marker — surface stroke for halo against gap bar.
       g.append('circle')
         .attr('cx', x(t0)).attr('cy', barY + barH / 2)
-        .attr('r', 8).attr('fill', '#b45309').attr('stroke', '#fff').attr('stroke-width', 2);
+        .attr('r', 8).attr('fill', T.block0).attr('stroke', T.bg).attr('stroke-width', 2);
       g.append('text')
         .attr('x', x(t0)).attr('y', barY - 18)
         .attr('text-anchor', 'start').attr('font-size', '11px').attr('font-weight', '700')
-        .attr('fill', '#b45309').text(l.block0);
+        .attr('fill', T.block0).text(l.block0);
       g.append('text')
         .attr('x', x(t0)).attr('y', barY - 5)
-        .attr('text-anchor', 'start').attr('font-size', '9px').attr('fill', '#6b6b6b')
+        .attr('text-anchor', 'start').attr('font-size', '9px').attr('fill', T.muted)
         .text(l.block0time);
 
       // Block 1 marker
       g.append('circle')
         .attr('cx', x(t1)).attr('cy', barY + barH / 2)
-        .attr('r', 8).attr('fill', '#2563eb').attr('stroke', '#fff').attr('stroke-width', 2);
+        .attr('r', 8).attr('fill', T.block1).attr('stroke', T.bg).attr('stroke-width', 2);
       g.append('text')
         .attr('x', x(t1)).attr('y', barY + barH + 18)
         .attr('text-anchor', 'middle').attr('font-size', '11px').attr('font-weight', '700')
-        .attr('fill', '#2563eb').text(l.block1);
+        .attr('fill', T.block1).text(l.block1);
       g.append('text')
         .attr('x', x(t1)).attr('y', barY + barH + 31)
-        .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#6b6b6b')
+        .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', T.muted)
         .text(l.block1time);
 
       // Expected vs actual annotation
       g.append('text')
         .attr('x', w).attr('y', 0)
         .attr('text-anchor', 'end').attr('font-size', '11px')
-        .attr('fill', '#dc2626').attr('font-weight', '600')
+        .attr('fill', T.ratio).attr('font-weight', '600')
         .text(l.ratio);
 
       g.append('text')
         .attr('x', w).attr('y', 15)
         .attr('text-anchor', 'end').attr('font-size', '10px')
-        .attr('fill', '#9ca3af')
+        .attr('fill', T.faint)
         .text(l.expected);
     }
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
