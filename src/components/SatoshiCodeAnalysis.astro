@@ -114,10 +114,42 @@ const traits = analysisData.codingTraits[lang];
     var data = JSON.parse(dataEl.textContent);
     var l = data.labels;
 
+    // Resolve a CSS custom property against :root.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      return {
+        accent: token('--color-accent'),
+        text: token('--color-text'),
+        muted: token('--color-text-muted'),
+        // Heatmap empty-cell fill: bg-alt so cells with zero commits
+        // still read as "in-grid" against the surrounding chrome.
+        emptyCell: token('--color-bg-alt'),
+        // Monthly bars use a 3-tone semantic encoding:
+        //   peak month        → --color-accent (warm)
+        //   final/decline     → --chart-negative (red)
+        //   regular           → --chart-color-2 (blue)
+        peak: token('--color-accent'),
+        final: token('--chart-negative'),
+        regular: token('--chart-color-2'),
+        // Code growth area + line use the same blue as regular bars
+        // for visual continuity; the v0.3.7 spike inherits accent.
+        line: token('--chart-color-2'),
+        spike: token('--color-accent'),
+        tooltipBg: token('--chart-tooltip-bg'),
+        tooltipFg: token('--chart-tooltip-fg'),
+      };
+    }
+
+    function render() {
+      var T = readTokens();
+
     // --- Heatmap ---
     (function() {
       var container = document.getElementById('commit-heatmap');
       if (!container) return;
+      container.innerHTML = '';
 
       var margin = { top: 30, right: 20, bottom: 40, left: 40 };
       var cellSize = Math.min(28, (container.clientWidth - margin.left - margin.right) / 24);
@@ -150,7 +182,7 @@ const traits = analysisData.codingTraits[lang];
         .attr('text-anchor', 'end')
         .attr('dominant-baseline', 'central')
         .style('font-size', '11px')
-        .style('fill', '#6b6b6b')
+        .style('fill', T.muted)
         .text(function(d) { return d; });
 
       // Hour labels
@@ -161,14 +193,14 @@ const traits = analysisData.codingTraits[lang];
         .attr('y', -8)
         .attr('text-anchor', 'middle')
         .style('font-size', '10px')
-        .style('fill', '#6b6b6b')
+        .style('fill', T.muted)
         .text(function(d) { return d; });
 
       // Cells
       var tooltip = d3.select(container).append('div')
         .style('position', 'absolute')
-        .style('background', 'rgba(0,0,0,0.8)')
-        .style('color', '#fff')
+        .style('background', T.tooltipBg)
+        .style('color', T.tooltipFg)
         .style('padding', '4px 8px')
         .style('border-radius', '3px')
         .style('font-size', '12px')
@@ -184,7 +216,7 @@ const traits = analysisData.codingTraits[lang];
             .attr('width', cellSize - 1)
             .attr('height', cellSize - 1)
             .attr('rx', 2)
-            .attr('fill', val === 0 ? '#f0efe8' : color(val))
+            .attr('fill', val === 0 ? T.emptyCell : color(val))
             .attr('data-day', day)
             .attr('data-hour', hour)
             .attr('data-val', val)
@@ -205,14 +237,15 @@ const traits = analysisData.codingTraits[lang];
         }
       }
 
-      // Dead zone highlight
+      // Dead zone highlight — accent ring around the suspected sleep
+      // window so it reads as the chart's interpretive call-out.
       g.append('rect')
         .attr('x', 6 * cellSize)
         .attr('y', 0)
         .attr('width', 6 * cellSize)
         .attr('height', 7 * cellSize)
         .attr('fill', 'none')
-        .attr('stroke', '#b45309')
+        .attr('stroke', T.accent)
         .attr('stroke-width', 2)
         .attr('stroke-dasharray', '4,3')
         .attr('rx', 3);
@@ -222,6 +255,7 @@ const traits = analysisData.codingTraits[lang];
     (function() {
       var container = document.getElementById('monthly-commits');
       if (!container) return;
+      container.innerHTML = '';
 
       var margin = { top: 20, right: 20, bottom: 60, left: 50 };
       var width = container.clientWidth;
@@ -252,17 +286,14 @@ const traits = analysisData.codingTraits[lang];
         .selectAll('text')
         .attr('transform', 'rotate(-45)')
         .style('text-anchor', 'end')
-        .style('font-size', '11px');
+        .style('font-size', '11px')
+        .style('fill', T.text);
 
       g.append('g')
         .call(d3.axisLeft(y).ticks(6))
         .selectAll('text')
-        .style('font-size', '11px');
-
-      // Gap annotations
-      var gaps = [
-        { start: '2010-03', end: '2010-05', label: '75-day gap' },
-      ];
+        .style('font-size', '11px')
+        .style('fill', T.text);
 
       g.selectAll('.bar')
         .data(data.monthly)
@@ -272,9 +303,11 @@ const traits = analysisData.codingTraits[lang];
         .attr('width', x.bandwidth())
         .attr('height', function(d) { return innerH - y(d.commits); })
         .attr('fill', function(d) {
-          if (d.month === '2010-07') return '#b45309';
-          if (d.month === '2010-12') return '#dc2626';
-          return '#1a56db';
+          // Semantic encoding: 2010-07 = peak month (accent),
+          // 2010-12 = final-decline (red), all others = regular (blue).
+          if (d.month === '2010-07') return T.peak;
+          if (d.month === '2010-12') return T.final;
+          return T.regular;
         })
         .attr('rx', 2);
 
@@ -286,7 +319,7 @@ const traits = analysisData.codingTraits[lang];
         .attr('y', function(d) { return y(d.commits) - 4; })
         .attr('text-anchor', 'middle')
         .style('font-size', '10px')
-        .style('fill', '#6b6b6b')
+        .style('fill', T.muted)
         .text(function(d) { return d.commits > 0 ? d.commits : ''; });
     })();
 
@@ -294,6 +327,7 @@ const traits = analysisData.codingTraits[lang];
     (function() {
       var container = document.getElementById('code-growth');
       if (!container) return;
+      container.innerHTML = '';
 
       var margin = { top: 20, right: 80, bottom: 60, left: 60 };
       var width = container.clientWidth;
@@ -331,14 +365,18 @@ const traits = analysisData.codingTraits[lang];
         .selectAll('text')
         .attr('transform', 'rotate(-45)')
         .style('text-anchor', 'end')
-        .style('font-size', '11px');
+        .style('font-size', '11px')
+        .style('fill', T.text);
 
       g.append('g')
         .call(d3.axisLeft(y).ticks(5).tickFormat(function(d) { return d3.format(',')(d); }))
         .selectAll('text')
-        .style('font-size', '11px');
+        .style('font-size', '11px')
+        .style('fill', T.text);
 
-      // Area
+      // Area — semitransparent line tone so it reads as "fill below
+      // the curve" without competing with the line itself. Uses
+      // chart-color-2 family throughout for visual continuity.
       var area = d3.area()
         .x(function(d) { return x(d.date); })
         .y0(innerH)
@@ -347,7 +385,8 @@ const traits = analysisData.codingTraits[lang];
 
       g.append('path')
         .datum(cg)
-        .attr('fill', 'rgba(26, 86, 219, 0.15)')
+        .attr('fill', T.line)
+        .attr('fill-opacity', 0.15)
         .attr('d', area);
 
       // Line
@@ -359,18 +398,19 @@ const traits = analysisData.codingTraits[lang];
       g.append('path')
         .datum(cg)
         .attr('fill', 'none')
-        .attr('stroke', '#1a56db')
+        .attr('stroke', T.line)
         .attr('stroke-width', 2)
         .attr('d', line);
 
-      // Dots + labels
+      // Dots + labels — v0.3.7 dot picks up accent to mark the
+      // Crypto++ integration spike against the regular blue dots.
       g.selectAll('.dot')
         .data(cg)
         .enter().append('circle')
         .attr('cx', function(d) { return x(d.date); })
         .attr('cy', function(d) { return y(d.lines); })
         .attr('r', 4)
-        .attr('fill', function(d) { return d.version === 'v0.3.7' ? '#b45309' : '#1a56db'; });
+        .attr('fill', function(d) { return d.version === 'v0.3.7' ? T.spike : T.line; });
 
       g.selectAll('.version-label')
         .data(cg)
@@ -378,9 +418,27 @@ const traits = analysisData.codingTraits[lang];
         .attr('x', function(d) { return x(d.date) + 6; })
         .attr('y', function(d) { return y(d.lines) - 8; })
         .style('font-size', '10px')
-        .style('fill', '#6b6b6b')
+        .style('fill', T.muted)
         .text(function(d) { return d.version + ' (' + d3.format(',')(d.lines) + ')'; });
     })();
+    } // end render()
+
+    render();
+
+    // Theme/mode listeners — repaint all three panels on theme/mode
+    // change. Each panel wipes its own container.innerHTML in render()
+    // so no SVG accumulation across calls.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', render);
+      else if (mql.addListener) mql.addListener(render);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(render).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
 
   if (document.readyState === 'loading') {
