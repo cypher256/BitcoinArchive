@@ -486,14 +486,25 @@ th {
   border-radius: 0 4px 4px 0;
 }
 
+/* Conversation message surfaces — Phase 6 token migration.
+   The previous hardcoded `#fdf8f0` (warm sepia for Satoshi) and
+   `#f5f8fa` (cool grey for non-Satoshi) bgs were retro-era
+   sepia-flavoured choices that stayed light even in dark mode,
+   which made the body text + nested verbatim blockquotes
+   unreadable on dark backgrounds.
+
+   Both authors now share `--color-bg-alt` so the bubble itself
+   tracks the mode. Author identity is carried entirely by the
+   left-border color (Satoshi: `--color-satoshi` accent; other:
+   `--color-text-muted` slate) — same signal, no contrast cost. */
 .conversation-thread .message[data-author="satoshi"] {
   border-left-color: var(--color-satoshi);
-  background: #fdf8f0;
+  background: var(--color-bg-alt);
 }
 
 .conversation-thread .message[data-author="other"] {
-  border-left-color: #5b7f95;
-  background: #f5f8fa;
+  border-left-color: var(--color-text-muted);
+  background: var(--color-bg-alt);
 }
 
 .conversation-thread .message-header {
@@ -537,11 +548,22 @@ th {
   margin-bottom: 0;
 }
 
+/* Nested verbatim blockquote inside a conversation message.
+   Sits one nesting level below `.message`, which now uses
+   `--color-bg-alt`. Use `--color-bg-quote` (= `--color-source-bg`)
+   so the blockquote reads as a distinct verbatim panel against
+   the bubble in both modes (light: a slightly cooler off-white
+   panel inside an off-white bubble; dark: a slightly cooler
+   navy panel inside a navy bubble). Body text uses the same
+   `--color-text` as the rest of the message — verbatim source
+   content should be at full reading contrast, the "this is
+   quoted" signal lives in the indent + left rule + bg. */
 .conversation-thread .message-body blockquote {
   margin: 0.75em 0;
   padding: 0.5em 1em;
   border-left: 2px solid var(--color-border);
-  background: rgba(0,0,0,0.02);
+  background: var(--color-bg-quote);
+  color: var(--color-text);
   font-size: 0.95em;
   font-style: italic;
 }
