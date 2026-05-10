@@ -1421,6 +1421,40 @@ container fluid behavior and intentionally uses a different breakpoint.
   whitespace is acceptable.
 - Print styles are not addressed.
 
+## Design Tokens
+
+The visual identity is **Editorial Sans** — Inter on a white surface
+with a deep navy `#1f3a5f` accent. The register is "academic journal,
+digital edition": calm, restrained, high-contrast. The previous retro
+look (Georgia / sepia / orange-brown) has been retired.
+
+Tokens live in `src/styles/global.css :root` and split into three
+families:
+
+- **Color** — `--color-bg`, `--color-text`, `--color-accent`,
+  `--color-link`, `--color-border`, plus semantic aliases
+  (`--color-bg-quote`, `--color-bg-code`, `--color-divider`).
+- **Type** — `--font-body`, `--font-heading`, `--font-mono`, plus
+  the type scale (`--text-xs..--text-3xl`, `--line-tight..loose`).
+- **Layout** — spacing (`--space-1..--space-8`), radius
+  (`--radius-sm..--radius-lg`), shadow (`--shadow-sm..--shadow-lg`),
+  width (`--max-width-prose`, `--max-width-read`, `--max-width-wide`).
+
+A dark variant lives in two parallel rules — `@media (prefers-color-scheme: dark) :root:not([data-mode="light"])`
+and `:root[data-mode="dark"]` — with the same body. The 3-way header
+toggle (light / dark / system) sets `data-mode` on `<html>`; absence
+follows the OS. The `<meta name="theme-color">` tag is rewritten at
+runtime to track the resolved `--color-bg`.
+
+Mermaid SVG and d3 charts both consume the tokens (`--mermaid-*` and
+`--chart-color-*` / `--chart-emphasis` / `--chart-grid` etc.), so a
+token change propagates to figures without per-component edits.
+
+Inter is loaded via Google Fonts CDN with `display=swap` (BaseHead).
+The system fallback (`-apple-system`, Segoe UI) paints first; Inter
+swaps in once available. Self-hosting is a future option without
+component-level changes.
+
 ## Visual Representation
 
 Long entries — biographies, hypothesis pages, multi-source analyses —
