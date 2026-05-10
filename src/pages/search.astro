@@ -28,19 +28,128 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 <script is:inline src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.6/dist/instantsearch.production.min.js"></script>
 
 <style>
+  /* The Algolia satellite theme bundles hardcoded `#fff` panel
+     surfaces, `#5468ff` purple links, light borders, and a light
+     focus ring. Phase 6's token-based palette has to override
+     every one of those paths so the search page tracks
+     `data-mode` like the rest of the site (header / footer /
+     entry pages). All hit / pagination / searchbox surfaces
+     resolve to `var(--color-bg)` + `var(--color-text)` +
+     `var(--color-border)` / `var(--color-link)` so light + dark
+     both render with full contrast. */
   .container { max-width: 800px; margin: 0 auto; padding: 1rem; }
   #searchbox { margin: 1rem 0; }
-  #stats { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
-  .hit-item { padding: 1rem 0; border-bottom: 1px solid #eee; }
-  .hit-item a { text-decoration: none; color: inherit; display: block; }
-  .hit-item a:hover { background: #f9f9f9; }
-  .hit-title { font-size: 1.1rem; font-weight: bold; color: #c45a2c; margin-bottom: 0.25rem; }
-  .hit-meta { font-size: 0.8rem; color: #888; margin-bottom: 0.5rem; }
-  .hit-meta .satoshi { color: #c45a2c; font-weight: bold; }
-  .hit-snippet { font-size: 0.9rem; color: #444; }
-  .hit-snippet mark, .hit-title mark { background: #fff3cd; padding: 0 2px; }
-  .ais-Pagination-list { display: flex; gap: 0.5rem; list-style: none; padding: 1rem 0; justify-content: center; }
-  .ais-Pagination-item--selected .ais-Pagination-link { font-weight: bold; color: #c45a2c; }
+  #stats {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+  }
+  .hit-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-divider);
+  }
+  .hit-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .hit-item a:hover { background: var(--color-bg-alt); }
+  .hit-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-link);
+    margin-bottom: 0.25rem;
+  }
+  .hit-meta {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .hit-meta .satoshi {
+    color: var(--color-satoshi);
+    font-weight: bold;
+  }
+  .hit-snippet { font-size: 0.9rem; color: var(--color-text); }
+  .hit-snippet mark, .hit-title mark {
+    background: var(--color-accent-bg);
+    color: inherit;
+    padding: 0 2px;
+  }
+
+  /* Algolia InstantSearch widget overrides. The satellite CDN
+     theme injects `#fff` / `#23263b` panels, `#5468ff` purple
+     links, and light focus rings — all hardcoded. Re-skin to
+     tokens so dark mode reads correctly. Selectors are scoped
+     to `.ais-` widgets only (= no leakage onto the rest of the
+     page). */
+  :global(.ais-SearchBox-form) {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    box-shadow: none;
+  }
+  :global(.ais-SearchBox-input) {
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  :global(.ais-SearchBox-input::placeholder) {
+    color: var(--color-text-muted);
+    opacity: 1;
+  }
+  :global(.ais-SearchBox-input:focus) {
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  :global(.ais-SearchBox-submitIcon),
+  :global(.ais-SearchBox-resetIcon) {
+    fill: var(--color-text-muted);
+  }
+  :global(.ais-Hits-list) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  :global(.ais-Hits-item) {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  :global(.ais-Pagination-list) {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1rem 0;
+    justify-content: center;
+  }
+  :global(.ais-Pagination-link) {
+    color: var(--color-link);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.25em 0.6em;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  :global(.ais-Pagination-link:hover) {
+    color: var(--color-link-hover);
+    background: var(--color-bg-alt);
+  }
+  :global(.ais-Pagination-item--disabled .ais-Pagination-link) {
+    color: var(--color-text-muted);
+    opacity: 0.6;
+  }
+  :global(.ais-Pagination-item--selected .ais-Pagination-link) {
+    font-weight: bold;
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+  :global(.ais-Highlight-highlighted),
+  :global(.ais-Snippet-highlighted) {
+    background: var(--color-accent-bg);
+    color: inherit;
+    font-style: normal;
+  }
 </style>
 
 <script is:inline define:vars={{ basePath }}>
