@@ -40,6 +40,7 @@ export const tagTranslations: Record<string, string> = {
   // Censorship & regulation
   'censorship-resistance': '検閲耐性',
   'central-banking': '中央銀行',
+  'centralization-paradox': '中央集権パラドックス',
   'china-ban': '中国禁止令',
   'caution': '警告',
   'circular-argument': '循環論法',
