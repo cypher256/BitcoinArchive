@@ -8,6 +8,24 @@
  * diagrams follow the active `data-theme` / `data-mode` automatically,
  * with no client-side JS and no theme-specific re-render.
  *
+ * # ⚠️ Cache clearance (READ BEFORE EDITING)
+ *
+ * `rehype-mermaid` caches its rendered SVG output in TWO locations:
+ *
+ *   - `.astro/data-store.json`
+ *   - `node_modules/.astro/data-store.json`
+ *
+ * After modifying this plugin OR the CSS custom-property values that
+ * the rewritten SVGs consume (= any `--mermaid-*` token in
+ * `src/styles/global.css`), BOTH caches must be removed before
+ * `npm run check` or `npm run dev` will re-render the affected
+ * diagrams. Run:
+ *
+ *     rm -rf .astro node_modules/.astro
+ *
+ * before testing. Forgetting this means the SVG on the page is the
+ * stale pre-edit output and the change appears to have no effect.
+ *
  * # Why this exists
  *
  * `rehype-mermaid` runs at build time and emits SVGs with `default`
@@ -83,6 +101,25 @@
  *  | grey        | gantt done-task stroke                                | --mermaid-edge            |
  *  | lightgrey   | gantt done-task fill, grid tick stroke                | --mermaid-cluster-bg      |
  *
+ *  Quadrant chart specifics (added after the initial probe):
+ *  - #f1f1ff / #f6f6ff / #fbfbff — the three additional quadrant
+ *    background fills (top-right uses #ECECFF which was already
+ *    captured above as flowchart node fill). All four now resolve
+ *    to --mermaid-node-bg so the four quadrants share a single
+ *    subtle off-bg surface that follows the mode (light pastel in
+ *    light, dark navy in dark). The 15%-channel gradient Mermaid
+ *    encodes between them is too subtle to preserve and was the
+ *    reason three of four quadrants stayed bright in dark mode.
+ *  - #131300 / #0e0e00 / #090900 / #040400 — the four quadrant
+ *    region label text fills (≈ near-black with a 0xN3 gradient
+ *    encoding the same priority order as the bg gradient above).
+ *    All four now map to --mermaid-text so the labels follow the
+ *    body (`能力高（隠）` etc. on the candidate-vs-hidability chart
+ *    were unreadable black-on-dark in dark mode before this).
+ *  - rgb(199, 199, 241) — the lavender quadrant border / divider
+ *    line. Maps to --mermaid-edge so the four-way grid follows
+ *    the mode.
+ *
  *  Intentionally LEFT ALONE:
  *  - #552222 (error icon/text) — error-only path, rarely rendered.
  *  - HSL data colors emitted by `timeline` for section--N / section-N
@@ -91,9 +128,12 @@
  *    palette into one color. Theming follows the body via the section
  *    text fills (`#ffffff` / `black`) and section line strokes which
  *    are mapped above.
- *  - Quadrant chart point fills (#131300 / #0e0e00 / #090900 / #040400
- *    / #fbfbff / #f6f6ff / #f1f1ff) — these encode user-supplied data
- *    points and labels; rewriting would corrupt the chart.
+ *  - hsl(240, 100%, NaN%) on quadrantChart data-point circles —
+ *    Mermaid emits NaN because it expects an `r,g,b` color in the
+ *    data array but our entries supply a 2-tuple `[x, y]`. The hsl()
+ *    is therefore invalid and the browser draws nothing, leaving the
+ *    chart with text-only data points. Both modes render identically
+ *    (= no visible bubble), so no rewrite is needed.
  *  - rgba(...) edgeLabel backgrounds and drop-shadow rgba — keep their
  *    semi-transparent grey so labels are legible against any node
  *    color.
@@ -123,6 +163,30 @@ const COLOR_SUBSTITUTIONS = [
   [/#ff8888\b/g, 'var(--mermaid-crit)'],
   [/#fff400\b/g, 'var(--mermaid-section-alt)'],
   [/#eeeeee\b/g, 'var(--mermaid-exclude-bg)'],
+
+  // Quadrant chart bg fills (3 of 4; top-right `#ECECFF` already
+  // captured above). The 15%-channel gradient Mermaid encodes here
+  // is too subtle to preserve as 4 distinct dark-mode tokens, so all
+  // four resolve to a single `--mermaid-node-bg` surface that
+  // follows the mode (light pastel / dark navy).
+  [/#fbfbff\b/gi, 'var(--mermaid-node-bg)'],
+  [/#f6f6ff\b/gi, 'var(--mermaid-node-bg)'],
+  [/#f1f1ff\b/gi, 'var(--mermaid-node-bg)'],
+
+  // Quadrant chart label text fills. Four near-black variants
+  // (`#131300` / `#0e0e00` / `#090900` / `#040400`) used for the
+  // four region labels and the data-point name labels. All resolve
+  // to `--mermaid-text` so they read at full body contrast in
+  // either mode (was unreadable black-on-dark before).
+  [/#131300\b/gi, 'var(--mermaid-text)'],
+  [/#0e0e00\b/gi, 'var(--mermaid-text)'],
+  [/#090900\b/gi, 'var(--mermaid-text)'],
+  [/#040400\b/gi, 'var(--mermaid-text)'],
+
+  // Quadrant chart border / divider lines (the four-way grid
+  // separator strokes). Lavender in default theme — maps to the
+  // standard mermaid edge color so it follows the mode.
+  [/rgb\(199,\s*199,\s*241\)/g, 'var(--mermaid-edge)'],
 
   // Gantt section0 background. Mermaid emits this exact rgba string
   // so we match it literally (any whitespace variant Mermaid produces).
