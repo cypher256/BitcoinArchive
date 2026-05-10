@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, translateTag, absoluteUrl } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, translateTag, absoluteUrl, localePath } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 
 export async function getStaticPaths() {
@@ -35,6 +35,8 @@ const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, 
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const tagLabel = translateTag(tag, lang);
+
+const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(tagLabel)}`;
 
 const pageDescription = `「${tagLabel}」タグの付いたエントリー。ビットコイン黎明期のサトシ・ナカモトの投稿・メール・関連する歴史的記録を、このトピックの下に集約。`;
 
@@ -102,6 +104,19 @@ const structuredData = {
         />
       );
     })}
+
+    <aside class="search-cta">
+      <p>
+        このタグが付いていなくても、ワード自体を言及しているエントリーを探したい場合：
+      </p>
+      <a class="search-cta-link" href={searchHref}>
+        「{tagLabel}」 でアーカイブ全文をファジー検索 &rarr;
+      </a>
+      <p class="search-cta-note">
+        検索は typo 許容・部分一致を含むファジー方式。タグ一覧では拾えない、
+        緩く関連する素材も探せます。
+      </p>
+    </aside>
   </div>
 </BaseLayout>
 
@@ -117,5 +132,31 @@ const structuredData = {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 0;
+  }
+  .search-cta {
+    margin-top: 2.5rem;
+    padding: 1rem 1.2rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  .search-cta p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+  .search-cta-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-link);
+  }
+  .search-cta-link:hover {
+    text-decoration: underline;
+  }
+  .search-cta-note {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
 </style>

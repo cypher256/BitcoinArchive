@@ -3,6 +3,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
+import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
 
 // Backlink-count lookup for `inlineLinkKeywords` display. Loaded once
@@ -121,12 +122,13 @@ const isSatoshiAuthor =
     <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
     {inlineLinkKeywords.map((kw, i) => {
       const n = keywordCounts[lang]?.[kw] ?? 0;
+      const slug = slugifyKeyword(kw);
       return (
         <>
-          <span class="defines-keyword">
+          <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>
             {kw}
             {n > 0 && <span class="defines-count"> ({n})</span>}
-          </span>
+          </a>
           {i < inlineLinkKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
         </>
       );
@@ -256,7 +258,11 @@ const isSatoshiAuthor =
     font-weight: 600;
   }
   .defines-keyword {
-    color: var(--color-text);
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  .defines-keyword:hover {
+    text-decoration: underline;
   }
   .defines-count {
     color: var(--color-text-muted);

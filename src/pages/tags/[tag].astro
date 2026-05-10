@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, absoluteUrl } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl, localePath } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 
 export async function getStaticPaths() {
@@ -34,6 +34,8 @@ const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
+
+const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(tag.replace(/-/g, ' '))}`;
 
 const pageDescription = `Entries tagged "${tag}" — Satoshi Nakamoto's posts, emails, and related historical records from Bitcoin's earliest days, surfaced under this topic.`;
 
@@ -101,6 +103,20 @@ const structuredData = {
         />
       );
     })}
+
+    <aside class="search-cta">
+      <p>
+        Looking for entries that don't carry this tag explicitly but
+        mention the term?
+      </p>
+      <a class="search-cta-link" href={searchHref}>
+        Search "{tag.replace(/-/g, ' ')}" across the archive (fuzzy) &rarr;
+      </a>
+      <p class="search-cta-note">
+        Search is typo-tolerant and matches partial words; it surfaces
+        loosely-related material that the tag list above cannot.
+      </p>
+    </aside>
   </div>
 </BaseLayout>
 
@@ -116,5 +132,31 @@ const structuredData = {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 0;
+  }
+  .search-cta {
+    margin-top: 2.5rem;
+    padding: 1rem 1.2rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  .search-cta p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+  .search-cta-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-link);
+  }
+  .search-cta-link:hover {
+    text-decoration: underline;
+  }
+  .search-cta-note {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
 </style>

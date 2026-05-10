@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import EntryCard from '../../../components/EntryCard.astro';
+import { useTranslations, getEntries, localePath, absoluteUrl } from '../../../i18n/utils';
+import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
+import { readFileSync, existsSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const KEYWORD_INDEX_PATH = path.resolve(__dirname, '..', '..', '..', 'data', 'keyword-index.json');
+
+interface KeywordIndexLocale {
+  concept: Record<string, string>;
+  person: Record<string, string>;
+  counts: Record<string, number>;
+  backlinks: Record<string, string[]>;
+  slugs: Record<string, string>;
+}
+
+function loadIndex(): { en: KeywordIndexLocale; ja: KeywordIndexLocale } {
+  if (!existsSync(KEYWORD_INDEX_PATH)) {
+    const empty = { concept: {}, person: {}, counts: {}, backlinks: {}, slugs: {} };
+    return { en: empty, ja: empty };
+  }
+  return JSON.parse(readFileSync(KEYWORD_INDEX_PATH, 'utf-8'));
+}
+
+export async function getStaticPaths() {
+  const __dirname2 = path.dirname(fileURLToPath(import.meta.url));
+  const idxPath = path.resolve(__dirname2, '..', '..', '..', 'data', 'keyword-index.json');
+  if (!existsSync(idxPath)) return [];
+  const idx = JSON.parse(readFileSync(idxPath, 'utf-8'));
+  const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string } }> = [];
+  const enSlugs: Record<string, string> = idx.en.slugs ?? {};
+  const jaSlugs: Record<string, string> = idx.ja.slugs ?? {};
+  // Build target -> EN slug index so we can locate the EN mirror page.
+  const enSlugByTarget = new Map<string, string>();
+  for (const [s, kw] of Object.entries(enSlugs)) {
+    const target = (idx.en.concept as Record<string, string>)[kw] ||
+      (idx.en.person as Record<string, string>)[kw];
+    if (target && !enSlugByTarget.has(target)) enSlugByTarget.set(target, s);
+  }
+  for (const [slug, keyword] of Object.entries(jaSlugs)) {
+    const target = (idx.ja.concept as Record<string, string>)[keyword] ||
+      (idx.ja.person as Record<string, string>)[keyword];
+    const enSlug = target ? enSlugByTarget.get(target) : undefined;
+    out.push({ params: { keyword: slug }, props: { keyword, enSlug } });
+  }
+  return out;
+}
+
+const lang = 'ja';
+const t = useTranslations(lang);
+const { keyword, enSlug } = Astro.props;
+
+const idx = loadIndex();
+const localeData = idx.ja;
+const conceptTarget = localeData.concept[keyword];
+const personTarget = localeData.person[keyword];
+const definitionKind: 'concept' | 'person' | null = conceptTarget
+  ? 'concept'
+  : (personTarget ? 'person' : null);
+const definitionTarget = conceptTarget || personTarget || null;
+const backlinkIds = localeData.backlinks[keyword] ?? [];
+
+const entries = await getEntries(lang);
+const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
+const backlinks = entries.filter((e) => backlinkIds.includes(e.id));
+const displayBacklinks = collapseThreads(backlinks, threadCounts, threadStarters)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const definitionEntry = definitionKind === 'concept' && definitionTarget
+  ? entries.find((e) => e.id === definitionTarget)
+  : undefined;
+
+const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(keyword)}`;
+
+const pageDescription =
+  `「${keyword}」 が言及されているエントリー一覧 — ` +
+  `アーカイブ全体での参照箇所をキーワード単位で見る。`;
+---
+
+<BaseLayout
+  title={`${keyword} — キーワード参照 - ${t('site.title')}`}
+  description={pageDescription}
+  lang={lang}
+  alternateEn={enSlug ? absoluteUrl(`/keywords/${enSlug}/`, 'en') : undefined}
+>
+  <div class="container-wide">
+    <h1>{keyword}</h1>
+    <p class="page-lead">
+      キーワード参照 — このワードを本文で言及しているエントリー。
+    </p>
+
+    {definitionKind === 'concept' && definitionEntry && (
+      <div class="definition-callout">
+        <span class="definition-label">定義先：</span>
+        <a href={localePath(`/entries/${definitionEntry.id}/`, lang)}>{definitionEntry.data.title}</a>
+      </div>
+    )}
+    {definitionKind === 'person' && definitionTarget && (
+      <div class="definition-callout">
+        <span class="definition-label">人物：</span>
+        <a href={localePath(`/participants/${definitionTarget}/`, lang)}>{keyword}</a>
+      </div>
+    )}
+
+    <p class="entry-count">
+      {displayBacklinks.length === 0
+        ? 'このキーワードを本文で言及しているエントリーはまだありません。'
+        : `${displayBacklinks.length} 件のエントリーがこのキーワードを本文で言及しています。`}
+    </p>
+
+    {displayBacklinks.map((entry) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      return (
+        <EntryCard
+          id={entry.id}
+          title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
+          date={entry.data.date}
+          author={entry.data.author}
+          source={entry.data.source}
+          description={entry.data.description}
+          isSatoshi={entry.data.isSatoshi}
+          lang={lang}
+          threadId={isThread ? tid : undefined}
+          threadCount={isThread ? msgCount : undefined}
+          participants={entry.data.participants}
+        />
+      );
+    })}
+
+    <aside class="search-cta">
+      <p>
+        本文で直接言及されていないが関連しそうなエントリーを探したい場合：
+      </p>
+      <a class="search-cta-link" href={searchHref}>
+        「{keyword}」 でアーカイブ全文をファジー検索 &rarr;
+      </a>
+      <p class="search-cta-note">
+        検索は typo 許容・部分一致・前方一致を含むファジー方式。構造的な
+        backlink 一覧では拾えない、緩く関連する素材も探せます。
+      </p>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  h1 { margin-bottom: 0.25rem; word-break: break-word; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+  }
+  .definition-callout {
+    margin: 0.75rem 0 1rem 0;
+    padding: 0.6rem 0.9rem;
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 3px 3px 0;
+    font-size: 0.9rem;
+  }
+  .definition-label {
+    font-weight: 600;
+    margin-right: 0.4rem;
+  }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+  }
+  .search-cta {
+    margin-top: 2.5rem;
+    padding: 1rem 1.2rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  .search-cta p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+  .search-cta-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-link);
+  }
+  .search-cta-link:hover {
+    text-decoration: underline;
+  }
+  .search-cta-note {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+</style>

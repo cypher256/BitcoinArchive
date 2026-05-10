@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EntryCard from '../../components/EntryCard.astro';
+import { useTranslations, getEntries, localePath, absoluteUrl } from '../../i18n/utils';
+import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
+import { readFileSync, existsSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const KEYWORD_INDEX_PATH = path.resolve(__dirname, '..', '..', 'data', 'keyword-index.json');
+
+interface KeywordIndexLocale {
+  concept: Record<string, string>;
+  person: Record<string, string>;
+  counts: Record<string, number>;
+  backlinks: Record<string, string[]>;
+  slugs: Record<string, string>;
+}
+
+function loadIndex(): { en: KeywordIndexLocale; ja: KeywordIndexLocale } {
+  if (!existsSync(KEYWORD_INDEX_PATH)) {
+    const empty = { concept: {}, person: {}, counts: {}, backlinks: {}, slugs: {} };
+    return { en: empty, ja: empty };
+  }
+  return JSON.parse(readFileSync(KEYWORD_INDEX_PATH, 'utf-8'));
+}
+
+export async function getStaticPaths() {
+  const __dirname2 = path.dirname(fileURLToPath(import.meta.url));
+  const idxPath = path.resolve(__dirname2, '..', '..', 'data', 'keyword-index.json');
+  if (!existsSync(idxPath)) return [];
+  const idx = JSON.parse(readFileSync(idxPath, 'utf-8'));
+  const out: Array<{ params: { keyword: string }; props: { keyword: string; jaSlug?: string } }> = [];
+  // For each EN slug, look up the corresponding JA slug pointing at the
+  // same target so the language switcher can wire across.
+  const enSlugs: Record<string, string> = idx.en.slugs ?? {};
+  const jaSlugs: Record<string, string> = idx.ja.slugs ?? {};
+  // Build target -> JA slug index so we can locate the JA mirror page.
+  const jaSlugByTarget = new Map<string, string>();
+  for (const [s, kw] of Object.entries(jaSlugs)) {
+    const target = (idx.ja.concept as Record<string, string>)[kw] ||
+      (idx.ja.person as Record<string, string>)[kw];
+    if (target && !jaSlugByTarget.has(target)) jaSlugByTarget.set(target, s);
+  }
+  for (const [slug, keyword] of Object.entries(enSlugs)) {
+    const target = (idx.en.concept as Record<string, string>)[keyword] ||
+      (idx.en.person as Record<string, string>)[keyword];
+    const jaSlug = target ? jaSlugByTarget.get(target) : undefined;
+    out.push({ params: { keyword: slug }, props: { keyword, jaSlug } });
+  }
+  return out;
+}
+
+const lang = 'en';
+const t = useTranslations(lang);
+const { keyword, jaSlug } = Astro.props;
+
+const idx = loadIndex();
+const localeData = idx.en;
+const conceptTarget = localeData.concept[keyword];
+const personTarget = localeData.person[keyword];
+const definitionKind: 'concept' | 'person' | null = conceptTarget
+  ? 'concept'
+  : (personTarget ? 'person' : null);
+const definitionTarget = conceptTarget || personTarget || null;
+const backlinkIds = localeData.backlinks[keyword] ?? [];
+
+const entries = await getEntries(lang);
+const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
+const backlinks = entries.filter((e) => backlinkIds.includes(e.id));
+const displayBacklinks = collapseThreads(backlinks, threadCounts, threadStarters)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const definitionEntry = definitionKind === 'concept' && definitionTarget
+  ? entries.find((e) => e.id === definitionTarget)
+  : undefined;
+
+const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(keyword)}`;
+
+const pageDescription =
+  `Backlinks and search results for the keyword "${keyword}" — ` +
+  `a per-keyword view onto where this term is referenced across the archive.`;
+---
+
+<BaseLayout
+  title={`${keyword} — keyword backlinks - ${t('site.title')}`}
+  description={pageDescription}
+  lang={lang}
+  alternateJa={jaSlug ? absoluteUrl(`/keywords/${jaSlug}/`, 'ja') : undefined}
+>
+  <div class="container-wide">
+    <h1>{keyword}</h1>
+    <p class="page-lead">
+      Keyword reference — entries that mention this term in body prose.
+    </p>
+
+    {definitionKind === 'concept' && definitionEntry && (
+      <div class="definition-callout">
+        <span class="definition-label">Defined in:</span>
+        <a href={localePath(`/entries/${definitionEntry.id}/`, lang)}>{definitionEntry.data.title}</a>
+      </div>
+    )}
+    {definitionKind === 'person' && definitionTarget && (
+      <div class="definition-callout">
+        <span class="definition-label">Person:</span>
+        <a href={localePath(`/participants/${definitionTarget}/`, lang)}>{keyword}</a>
+      </div>
+    )}
+
+    <p class="entry-count">
+      {displayBacklinks.length === 0
+        ? 'No entries reference this keyword in body prose yet.'
+        : `${displayBacklinks.length} entries reference this keyword in body prose.`}
+    </p>
+
+    {displayBacklinks.map((entry) => {
+      const tid = resolveThreadId(entry);
+      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const isThread = msgCount >= 2;
+      return (
+        <EntryCard
+          id={entry.id}
+          title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
+          date={entry.data.date}
+          author={entry.data.author}
+          source={entry.data.source}
+          description={entry.data.description}
+          isSatoshi={entry.data.isSatoshi}
+          lang={lang}
+          threadId={isThread ? tid : undefined}
+          threadCount={isThread ? msgCount : undefined}
+          participants={entry.data.participants}
+        />
+      );
+    })}
+
+    <aside class="search-cta">
+      <p>
+        Looking for related entries that don't directly reference this term?
+      </p>
+      <a class="search-cta-link" href={searchHref}>
+        Search "{keyword}" across the archive (fuzzy)
+        &rarr;
+      </a>
+      <p class="search-cta-note">
+        Search is typo-tolerant and matches partial words; it surfaces
+        loosely-related material that the structural backlink list above
+        cannot.
+      </p>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  h1 { margin-bottom: 0.25rem; word-break: break-word; }
+  .page-lead {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+  }
+  .definition-callout {
+    margin: 0.75rem 0 1rem 0;
+    padding: 0.6rem 0.9rem;
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 3px 3px 0;
+    font-size: 0.9rem;
+  }
+  .definition-label {
+    font-weight: 600;
+    margin-right: 0.4rem;
+  }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+  }
+  .search-cta {
+    margin-top: 2.5rem;
+    padding: 1rem 1.2rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  .search-cta p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+  .search-cta-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-link);
+  }
+  .search-cta-link:hover {
+    text-decoration: underline;
+  }
+  .search-cta-note {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+</style>
