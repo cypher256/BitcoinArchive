@@ -11,6 +11,7 @@ import { remarkEditorialMarker } from './src/lib/remark-editorial-marker.mjs';
 import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
 import { rehypeMermaidWrapper } from './src/lib/rehype-mermaid-wrapper.mjs';
+import { rehypeMermaidThemer } from './src/lib/rehype-mermaid-themer.mjs';
 import { rehypeTableWrapper } from './src/lib/rehype-table-wrapper.mjs';
 import { rehypeStripArchiveLinks } from './src/lib/rehype-strip-archive-links.mjs';
 import { rehypeAutoLinkKeywords } from './src/lib/rehype-auto-link-keywords.mjs';
@@ -73,6 +74,15 @@ export default defineConfig({
       // comments in the source. See plugin header for the full design.
       [rehypeMermaidLink, {}],
       rehypeMermaidWrapper,
+      // Rewrite the fixed hex colors that Mermaid bakes into each SVG
+      // (in the inline `<style>` block + per-element `style=`/`fill=`/
+      // `stroke=` attributes) into `var(--mermaid-...)` references so
+      // diagrams follow the active `data-theme` / `data-mode`. Must run
+      // AFTER both rehype-mermaid-link (so it doesn't recolour the new
+      // <a> wrappers — anchors carry no color attributes anyway) and
+      // rehype-mermaid-wrapper (so the themer can use `.mermaid-scroll`
+      // as the marker for which SVGs to touch).
+      rehypeMermaidThemer,
       // Wrap each <table> in `<div class="table-scroll">` so wide tables
       // scroll horizontally inside the wrapper instead of pushing the
       // whole page into a body-level horizontal scroll on small
