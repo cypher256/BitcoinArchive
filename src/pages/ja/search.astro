@@ -23,104 +23,133 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   </div>
 </BaseLayout>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
 <script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
 <script is:inline src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.6/dist/instantsearch.production.min.js"></script>
 
 <style>
-  /* The Algolia satellite theme bundles hardcoded `#fff` panel
-     surfaces, `#5468ff` purple links, light borders, and a light
-     focus ring. Phase 6's token-based palette has to override
-     every one of those paths so the search page tracks
-     `data-mode` like the rest of the site (header / footer /
-     entry pages). All hit / pagination / searchbox surfaces
-     resolve to `var(--color-bg)` + `var(--color-text)` +
-     `var(--color-border)` / `var(--color-link)` so light + dark
-     both render with full contrast. */
-  .container { max-width: 800px; margin: 0 auto; padding: 1rem; }
+  /* Search page CSS. The Algolia satellite-theme CDN bundle was dropped
+     here so InstantSearch's `.ais-*` widgets pick up our `data-mode`
+     palette directly — no `!important` overrides needed because no
+     external stylesheet is fighting these rules. The rules below
+     provide every visual cue that satellite-theme used to handle
+     (form border, input focus, hits list, pagination chips, hit
+     highlight color), all sourced from `--color-*` tokens.
+     `.ais-*` and `.hit-*` selectors must use `:global(...)` because
+     both InstantSearch (`.ais-*` in its widget DOM) and the
+     `templates.item` JS string template (`.hit-*` for the hit
+     contents) build elements at runtime — those elements never
+     receive the `data-astro-cid-*` attribute that Astro's scoped CSS
+     keys on, so unscoped `:global(...)` selectors are required for
+     the rules to match. Plain `#searchbox` / `#stats` containers
+     are written directly in the .astro template above, so they pick
+     up the scoped attribute and don't need `:global(...)`. */
   #searchbox { margin: 1rem 0; }
   #stats {
     font-size: 0.85rem;
     color: var(--color-text-muted);
     margin-bottom: 1rem;
   }
-  .hit-item {
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--color-divider);
+  :global(.hit-item) {
+    padding: 1.25rem 0;
+    /* `--color-divider` (= `--color-border`) is intentionally faint
+       (alpha 0.08–0.10) for prose hairlines — far too subtle to
+       separate list items. Use `--color-text-muted` directly so the
+       divider is obviously visible in both light and dark. */
+    border-bottom: 1px solid var(--color-text-muted);
   }
-  .hit-item a {
+  :global(.hit-item:last-child) {
+    border-bottom: none;
+  }
+  :global(.hit-item a) {
     text-decoration: none;
     color: inherit;
     display: block;
   }
-  .hit-item a:hover { background: var(--color-bg-alt); }
-  .hit-title {
+  :global(.hit-item a:hover) { background: var(--color-bg-alt); }
+  :global(.hit-title) {
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--color-link);
     margin-bottom: 0.25rem;
   }
-  .hit-meta {
+  :global(.hit-meta) {
     font-size: 0.8rem;
     color: var(--color-text-muted);
     margin-bottom: 0.5rem;
   }
-  .hit-meta .satoshi {
+  :global(.hit-meta .satoshi) {
     color: var(--color-satoshi);
     font-weight: bold;
   }
-  .hit-snippet { font-size: 0.9rem; color: var(--color-text); }
-  .hit-snippet mark, .hit-title mark {
+  :global(.hit-snippet) { font-size: 0.9rem; color: var(--color-text); }
+  :global(.hit-snippet mark),
+  :global(.hit-title mark) {
     background: var(--color-accent-bg);
     color: inherit;
     padding: 0 2px;
   }
-  .hit-item, .hit-item a, .hit-item a * {
-    color: var(--color-text);
-  }
-  .hit-item a .hit-title { color: var(--color-link); }
-  .hit-item a .hit-meta { color: var(--color-text-muted); }
-  .hit-item a .hit-snippet { color: var(--color-text); }
-  /* Algolia satellite theme injects #fff panels on outer widgets.
-     Force transparent so the page bg (Modern A light/dark) shows. */
-  :global(.ais-Hits),
-  :global(.ais-Hits-list),
-  :global(.ais-Hits-item),
-  :global(.ais-SearchBox),
-  :global(.ais-Pagination),
-  :global(.ais-Stats),
-  :global(.ais-PoweredBy),
-  :global(.ais-InstantSearch) {
-    background: transparent !important;
-    box-shadow: none !important;
-  }
 
-  /* Algolia InstantSearch widget overrides. The satellite CDN
-     theme injects `#fff` / `#23263b` panels, `#5468ff` purple
-     links, and light focus rings — all hardcoded. Re-skin to
-     tokens so dark mode reads correctly. Selectors are scoped
-     to `.ais-` widgets only (= no leakage onto the rest of the
-     page). */
+  /* InstantSearch widget structure. With satellite-theme dropped,
+     these supply the only structural styles for the search form,
+     hits list, and pagination — no external CSS to fight, so no
+     `!important` is needed.
+     `.ais-SearchBox` and `.ais-SearchBox-form` need `width: 100%`
+     so the form fills the parent container — without it the form
+     shrinks to its content width and the input collapses to its
+     placeholder length. `.ais-SearchBox-input` needs `min-width: 0`
+     so the flex child can actually shrink below its content size
+     when the form is narrow. */
+  :global(.ais-SearchBox) {
+    width: 100%;
+    margin: 0;
+  }
   :global(.ais-SearchBox-form) {
+    display: flex;
+    align-items: center;
+    width: 100%;
     background: var(--color-bg);
+    color: var(--color-text);
     border: 1px solid var(--color-border);
-    box-shadow: none;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
   }
   :global(.ais-SearchBox-input) {
-    background: var(--color-bg);
+    flex: 1 1 auto;
+    min-width: 0;
+    background: transparent;
     color: var(--color-text);
+    border: none;
+    outline: none;
+    font: inherit;
+    line-height: 1.5;
+    padding: 0;
   }
   :global(.ais-SearchBox-input::placeholder) {
     color: var(--color-text-muted);
     opacity: 1;
   }
-  :global(.ais-SearchBox-input:focus) {
-    background: var(--color-bg);
-    color: var(--color-text);
+  :global(.ais-SearchBox-submit),
+  :global(.ais-SearchBox-reset) {
+    flex: 0 0 auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.25rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-muted);
   }
   :global(.ais-SearchBox-submitIcon),
   :global(.ais-SearchBox-resetIcon) {
-    fill: var(--color-text-muted);
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+  }
+  /* Algolia emits a loading-indicator element by default; we don't
+     surface it (results render fast enough that the UI churn isn't
+     worth showing), so hide it instead of adding a spinner. */
+  :global(.ais-SearchBox-loadingIndicator) {
+    display: none;
   }
   :global(.ais-Hits-list) {
     list-style: none;
@@ -128,11 +157,8 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
     padding: 0;
   }
   :global(.ais-Hits-item) {
-    background: transparent;
-    box-shadow: none;
     padding: 0;
     margin: 0;
-    border: none;
   }
   :global(.ais-Pagination-list) {
     display: flex;
