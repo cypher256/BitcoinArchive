@@ -114,19 +114,50 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     var container = document.getElementById('fork-genealogy-chart');
     if (!container) return;
 
-    // Chain palette — vivid for active, muted gray for halted.
-    var chainColor = {
-      'main': '#1a4570',
-      'namecoin': '#b8860b',
-      'litecoin': '#9aa3b3',
-      'dogecoin': '#c0a234',
-      'bitcoin-xt': '#9a9a9a',
-      'bitcoin-classic': '#9a9a9a',
-      'bitcoin-unlimited': '#9a9a9a',
-      'bitcoin-cash': '#0ac18e',
-      'bitcoin-gold': '#d4af37',
-      'bitcoin-sv': '#e8a317',
-    };
+    // Resolve a CSS custom property against :root. Tokens are guaranteed
+    // by `src/styles/global.css`; an empty result means the stylesheet
+    // is missing entirely, in which case loud SVG default fill is the
+    // appropriate failure mode.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function readTokens() {
+      var muted = token('--chart-color-6');
+      // Chain palette — 10 chains; halted forks share the muted neutral
+      // because their identity comes from the row label, not hue, and
+      // visually grouping all three "halted contender" chains in one
+      // tone reads as "the failed-XT family". Active chains rotate
+      // through chart-color-1..9 + accent so each picks a stable hue.
+      return {
+        chain: {
+          'main':              token('--color-accent'),
+          'namecoin':          token('--chart-color-8'),
+          'litecoin':          token('--chart-color-9'),
+          'dogecoin':          token('--chart-color-1'),
+          'bitcoin-xt':        muted,
+          'bitcoin-classic':   muted,
+          'bitcoin-unlimited': muted,
+          'bitcoin-cash':      token('--chart-color-3'),
+          'bitcoin-gold':      token('--chart-color-8'),
+          'bitcoin-sv':        token('--chart-color-1'),
+        },
+        muted: muted,
+        text: token('--color-text'),
+        textMuted: token('--color-text-muted'),
+        link: token('--color-link'),
+        linkHover: token('--color-link-hover'),
+        accent: token('--color-accent'),
+        positive: token('--chart-positive'),
+        negative: token('--chart-negative'),
+        grid: token('--color-divider'),
+        laneA: token('--chart-lane-a'),
+        laneB: token('--chart-lane-b'),
+        surface: token('--chart-surface'),
+        tooltipBg: token('--chart-tooltip-bg'),
+        tooltipFg: token('--chart-tooltip-fg'),
+      };
+    }
 
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, function(c) {
@@ -134,11 +165,11 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       });
     }
 
-    function makeTooltip(parent) {
+    function makeTooltip(parent, t) {
       return d3.select(parent).append('div')
         .style('position', 'absolute')
-        .style('background', 'rgba(20, 20, 20, 0.92)')
-        .style('color', '#fff')
+        .style('background', t.tooltipBg)
+        .style('color', t.tooltipFg)
         .style('padding', '6px 10px')
         .style('border-radius', '3px')
         .style('font-size', '12px')
@@ -156,15 +187,18 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     }
 
     function draw() {
-      // Wipe and redraw on resize
+      // Wipe and redraw — also called on resize and on theme/mode change
+      // so the chart picks up palette swaps cleanly.
       container.innerHTML = '';
+      var t = readTokens();
 
       var today = new Date();
       var dateExtent = [new Date('2008-10-01'), today];
 
-      // Calculate left margin based on longest chain name. JA labels (e.g.,
-      // "ビットコインキャッシュ (BCH)") are wider than EN equivalents, so
-      // hardcoded margin would clip them. Chain labels render at 14px.
+      // Calculate left margin based on longest chain name. JA labels
+      // (e.g., "ビットコインキャッシュ (BCH)") are wider than EN
+      // equivalents, so a fixed margin would clip them. Chain labels
+      // render at 14px.
       var maxLabelWidth = chains.reduce(function(max, c) {
         var w = 0;
         for (var ci = 0; ci < c.name.length; ci++) {
@@ -199,7 +233,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         .attr('y', function(c) { return y(c.id) - y.bandwidth() * 0.25; })
         .attr('width', chartWidth - margin.left - margin.right)
         .attr('height', laneHeight)
-        .attr('fill', function(_c, i) { return i % 2 === 0 ? '#f5f3ec' : '#efece4'; });
+        .attr('fill', function(_c, i) { return i % 2 === 0 ? t.laneA : t.laneB; });
 
       // X axis (years on top of chart-bottom)
       var laneBottomY = margin.top + laneHeight * chains.length;
@@ -207,25 +241,28 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       svg.append('g')
         .attr('transform', 'translate(0,' + laneBottomY + ')')
         .call(xAxis)
-        .selectAll('text').style('font-size', '11px').style('fill', '#444');
+        .selectAll('text').style('font-size', '11px').style('fill', t.text);
       var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
       svg.append('g')
         .attr('transform', 'translate(0,' + laneBottomY + ')')
         .call(monthAxis)
-        .selectAll('line').attr('stroke', '#aaa');
+        .selectAll('line').attr('stroke', t.muted);
 
-      // Today vertical line
+      // Today vertical line — positive (green) so the eye reads "still
+      // alive, current". Theme-aware via --chart-positive.
       var todayX = x(today);
       svg.append('line')
         .attr('x1', todayX).attr('x2', todayX)
         .attr('y1', margin.top - 16).attr('y2', laneBottomY)
-        .attr('stroke', '#3a6e3a').attr('stroke-width', 1).attr('stroke-dasharray', '2,3').attr('opacity', 0.55);
+        .attr('stroke', t.positive).attr('stroke-width', 1).attr('stroke-dasharray', '2,3').attr('opacity', 0.55);
       svg.append('text')
         .attr('x', todayX).attr('y', margin.top - 22)
-        .attr('text-anchor', 'middle').style('font-size', '10px').style('fill', '#3a6e3a')
+        .attr('text-anchor', 'middle').style('font-size', '10px').style('fill', t.positive)
         .text(todayLabel);
 
-      // Milestone overlay (vertical dashed lines + stacked labels above)
+      // Milestone overlay (vertical dashed lines + stacked labels above).
+      // Uses --chart-negative so milestones read as "important pivot
+      // moments" against the calmer palette of chain bars.
       function estimateLabelWidth(text) {
         var w = 0;
         for (var ci = 0; ci < text.length; ci++) {
@@ -261,12 +298,12 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         g.append('line')
           .attr('x1', 0).attr('x2', 0)
           .attr('y1', margin.top - 8).attr('y2', laneBottomY)
-          .attr('stroke', '#9a3a3a').attr('stroke-width', 1).attr('stroke-dasharray', '3,3').attr('opacity', 0.5);
+          .attr('stroke', t.negative).attr('stroke-width', 1).attr('stroke-dasharray', '3,3').attr('opacity', 0.5);
         if (item.row > 0) {
           g.append('line')
             .attr('x1', 0).attr('x2', 0)
             .attr('y1', labelY + 3).attr('y2', margin.top - 8)
-            .attr('stroke', '#9a3a3a').attr('stroke-width', 0.5).attr('opacity', 0.4);
+            .attr('stroke', t.negative).attr('stroke-width', 0.5).attr('opacity', 0.4);
         }
         var labelEl = item.milestone.slug
           ? g.append('a').attr('href', linkBase + item.milestone.slug + '/').style('cursor', 'pointer').append('text')
@@ -276,7 +313,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .attr('y', labelY)
           .attr('text-anchor', item.anchorEnd ? 'end' : 'start')
           .style('font-size', '10px')
-          .style('fill', '#9a3a3a')
+          .style('fill', t.negative)
           .style('text-decoration', item.milestone.slug ? 'underline' : 'none')
           .text(item.milestone.label);
       });
@@ -294,7 +331,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var cy = y(c.id) + y.bandwidth() / 2;
         var tooltipDate = new Date(c.launch).toISOString().slice(0, 10);
         var tooltipText = c.name + ' · ' + (c.status === 'active' ? statusActive : statusHalted) + ' · ' + tooltipDate;
-        var fill = c.slug ? '#1a4570' : (c.status === 'halted' ? '#666' : '#222');
+        var fill = c.slug ? t.link : (c.status === 'halted' ? t.textMuted : t.text);
         var label = c.slug
           ? svg.append('a').attr('href', linkBase + c.slug + '/').style('cursor', 'pointer').append('text')
           : svg.append('text');
@@ -310,7 +347,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .text(c.name)
           .append('title').text(tooltipText);
         if (c.slug) {
-          label.on('mouseover', function() { d3.select(this).style('fill', '#0a3463').style('text-decoration', 'underline'); })
+          label.on('mouseover', function() { d3.select(this).style('fill', t.linkHover).style('text-decoration', 'underline'); })
                .on('mouseout', function() { d3.select(this).style('fill', fill).style('text-decoration', 'none'); });
         }
       });
@@ -325,21 +362,21 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var cy = y(c.id) + y.bandwidth() / 2;
         svg.append('path')
           .attr('d', 'M' + px + ',' + py + ' L' + px + ',' + cy)
-          .attr('stroke', chainColor[c.id] || '#888')
+          .attr('stroke', t.chain[c.id] || t.muted)
           .attr('stroke-width', 1.6)
           .attr('fill', 'none')
           .attr('opacity', c.status === 'halted' ? 0.55 : 0.9);
       });
 
       // Tooltip surface
-      var tooltip = makeTooltip(container.parentNode || container);
+      var tooltip = makeTooltip(container.parentNode || container, t);
 
       // Chain bars (operational range)
       chains.forEach(function(c) {
         var startX = x(new Date(c.launch));
         var endX = c.halt ? x(new Date(c.halt)) : x(today);
         var cy = y(c.id) + y.bandwidth() / 2;
-        var color = chainColor[c.id] || '#888';
+        var color = t.chain[c.id] || t.muted;
         var barHeight = c.status === 'halted' ? 4 : 6;
 
         var barG = svg.append('g').style('cursor', c.slug ? 'pointer' : 'default');
@@ -354,19 +391,20 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .attr('opacity', c.status === 'halted' ? 0.55 : 0.95)
           .attr('rx', 2);
 
-        // Launch dot
+        // Launch dot — surface-coloured stroke gives a halo effect
+        // against the chain bar so it reads as a distinct event marker.
         barG.append('circle')
           .attr('cx', startX).attr('cy', cy).attr('r', 4)
           .attr('fill', color)
-          .attr('stroke', '#fff').attr('stroke-width', 1.5);
+          .attr('stroke', t.surface).attr('stroke-width', 1.5);
 
-        // End cap: × for halted, > arrow tip for active
+        // End cap: × for halted (negative), > arrow tip for active.
         if (c.status === 'halted') {
           var ex = endX, hh = 4.5;
           barG.append('path')
             .attr('d', 'M' + (ex - hh) + ',' + (cy - hh) + ' L' + (ex + hh) + ',' + (cy + hh) +
                        ' M' + (ex - hh) + ',' + (cy + hh) + ' L' + (ex + hh) + ',' + (cy - hh))
-            .attr('stroke', '#7a3030').attr('stroke-width', 1.5).attr('fill', 'none');
+            .attr('stroke', t.negative).attr('stroke-width', 1.5).attr('fill', 'none');
         } else {
           // small triangular arrow indicating "continues"
           barG.append('path')
@@ -394,6 +432,20 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
+
+    // Theme/mode listeners — repaint when the user toggles theme,
+    // toggles light/dark, or the OS preference flips.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
@@ -409,7 +461,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     margin-bottom: 0.3rem;
   }
   .fork-genealogy .chart-sub {
-    color: #6b6b6b;
+    color: var(--color-text-muted);
     font-size: 0.9rem;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -418,8 +470,8 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     position: relative;
     overflow-x: auto;
     overflow-y: hidden;
-    background: #fafaf7;
-    border: 1px solid #e8e6df;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-divider);
     border-radius: 4px;
   }
   .fork-genealogy .chart-container {
