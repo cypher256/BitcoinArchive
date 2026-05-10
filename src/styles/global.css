@@ -752,3 +752,34 @@ p:has(> strong:only-child):has(+ .mermaid-scroll) {
   background: transparent;
   padding: 0;
 }
+
+/* Mermaid timeline section text and bg override.
+   Mermaid's default theme picks white-or-black text per section-N based
+   on HSL lightness, mis-fires on light pastels (lime + white = invisible)
+   and breaks entirely in dark mode. Force readable contrast in light +
+   replace bg+text with theme tokens in dark. !important wins against
+   Mermaid's inline <style>. */
+.mermaid-themed svg [class^="section-"] text,
+.mermaid-themed svg [class*=" section-"] text {
+  fill: #1a1a1a !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) .mermaid-themed svg [class^="section-"] rect,
+  :root:not([data-mode="light"]) .mermaid-themed svg [class*=" section-"] rect {
+    fill: var(--mermaid-node-bg) !important;
+    stroke: var(--mermaid-node-border) !important;
+  }
+  :root:not([data-mode="light"]) .mermaid-themed svg [class^="section-"] text,
+  :root:not([data-mode="light"]) .mermaid-themed svg [class*=" section-"] text {
+    fill: var(--mermaid-text) !important;
+  }
+}
+:root[data-mode="dark"] .mermaid-themed svg [class^="section-"] rect,
+:root[data-mode="dark"] .mermaid-themed svg [class*=" section-"] rect {
+  fill: var(--mermaid-node-bg) !important;
+  stroke: var(--mermaid-node-border) !important;
+}
+:root[data-mode="dark"] .mermaid-themed svg [class^="section-"] text,
+:root[data-mode="dark"] .mermaid-themed svg [class*=" section-"] text {
+  fill: var(--mermaid-text) !important;
+}
