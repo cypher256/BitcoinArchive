@@ -4,6 +4,21 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import type { Lang } from '../i18n/ui';
 import '../styles/global.css';
+// Theme bundle (Phase 3.5): all five Modern variants plus a snapshot
+// of the current retro look are imported once and shipped as a single
+// CSS bundle. Each file scopes its rules to `:root[data-theme="..."]`,
+// so without an explicit data-theme nothing fires and the
+// global.css defaults (= retro) win. The retro snapshot lets users
+// flip back to the current look via `?theme=retro` for A/B compare.
+// Once a Modern theme is adopted (Phase 6) these files and the
+// imports below get removed and the chosen palette is promoted to
+// the global.css :root defaults.
+import '../styles/themes/retro.css';
+import '../styles/themes/modern-a.css';
+import '../styles/themes/modern-b.css';
+import '../styles/themes/modern-c.css';
+import '../styles/themes/modern-d.css';
+import '../styles/themes/modern-e.css';
 
 interface Props {
   title: string;
@@ -88,6 +103,10 @@ const themeParam = Astro.url.searchParams.get('theme') || '';
         try {
           var mq = matchMedia('(prefers-color-scheme: dark)');
           if (mq.addEventListener) mq.addEventListener('change', syncBrowserChrome);
+          // Legacy fallback for browsers without addEventListener on
+          // MediaQueryList (Safari < 14). Deprecated but still the
+          // only API there.
+          // @ts-ignore
           else if (mq.addListener) mq.addListener(syncBrowserChrome);
         } catch (_) {}
         try {
