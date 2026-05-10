@@ -35,7 +35,8 @@
     "extract:quotes": "node scripts/extract-quotes.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "screenshot:themes": "node scripts/screenshot-themes.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
