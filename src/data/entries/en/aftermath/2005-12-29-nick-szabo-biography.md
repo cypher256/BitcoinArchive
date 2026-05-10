@@ -10,6 +10,9 @@ participants:
     slug: "nick-szabo"
 description: "Computer scientist, legal scholar, and cryptographer (1964-) who conceived Bit Gold (1998) — a direct Bitcoin precursor — and coined the term smart contracts."
 isSatoshi: false
+callout:
+  entry: "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "nick-szabo"
   - "biography"

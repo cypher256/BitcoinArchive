@@ -10,6 +10,9 @@ participants:
     slug: "craig-wright"
 description: "Craig Steven Wright (born 1970): Australian computer scientist who publicly claimed to be Satoshi in May 2016. UK High Court (COPA v Wright, March 2024) found he fabricated evidence on a grand scale."
 isSatoshi: false
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "Identity hypotheses overview"
 tags:
   - "craig-wright"
   - "biography"

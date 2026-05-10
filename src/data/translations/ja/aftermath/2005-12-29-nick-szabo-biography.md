@@ -10,6 +10,9 @@ participants:
     slug: "nick-szabo"
 description: "コンピューター科学者・法学者・暗号学者（1964-）。Bit Gold（1998年）を構想し、「スマートコントラクト」という用語を生み出した。"
 isSatoshi: false
+callout:
+  entry: "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "nick-szabo"
   - "biography"

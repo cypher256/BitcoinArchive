@@ -10,6 +10,9 @@ participants:
     slug: "wei-dai"
 description: "コンピューター科学者・暗号学者。b-money（1998年）と Crypto++ライブラリを作成。サトシは論文公開前にメールを送った。"
 isSatoshi: false
+callout:
+  entry: "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "wei-dai"
   - "biography"

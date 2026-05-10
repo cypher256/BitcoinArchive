@@ -10,6 +10,9 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ビットコイン論文（2008年10月31日）の執筆者、ソフトウェア作成者、ジェネシスブロックの作成者。2011年4月に姿を消した匿名人物または集団。"
 isSatoshi: true
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "サトシ正体仮説の総覧"
 tags:
   - "satoshi-nakamoto"
   - "biography"

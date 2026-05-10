@@ -1034,7 +1034,78 @@ When creating or editing a biography, verify:
 2. All mentioned events/documents with archive entries are linked.
 3. `relatedEntries` includes canonical entries for the person.
 4. EN and JA mirrors have matching `relatedEntries`.
-5. `npm run check:internal-links` passes after changes.
+5. If the biography should surface a recommended-analysis chip on the
+   participant page, the `callout` field is set per the
+   "Participant-Page Callout" section below.
+6. `npm run check:internal-links` passes after changes.
+
+## Participant-Page Callout
+
+Each participant page (`/participants/<slug>/`) may display a single
+callout card near the top — magnifying-glass icon, a short label, and
+an arrow — pointing at one analysis page recommended as the entry
+point for further reading about that person.
+
+The callout is declared on the **biography entry's frontmatter**, not
+on the analysis entry. The biography is the single source of truth
+for what shows up on the participant page; analysis entries do not
+opt in or surface themselves.
+
+### Declaration
+
+```yaml
+# Biography frontmatter (EN file → EN label, JA file → JA label):
+callout:
+  entry: "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
+```
+
+The `entry` value is the analysis entry's id (without leading slash,
+matching the form used in `relatedEntries`). The `label` is the visible
+text rendered in the callout chip — short noun phrase, no trailing
+punctuation, in the same locale as the file.
+
+When `callout` is omitted, no callout renders.
+
+### Rules
+
+- **One callout per biography.** A single recommended-analysis link.
+  If multiple analyses about the same person exist, pick the one that
+  best serves a reader landing on the bio.
+- **Set on biographies only.** `callout` on non-biography entries has
+  no effect; the participant page reads only `biographyEntry.data.callout`.
+- **EN and JA must agree on the `entry` and translate the `label`.**
+  EN bio uses the EN label, JA bio uses the JA label, both pointing at
+  the same analysis id.
+- **Target the analysis a reader would expect to deepen their
+  understanding of the person.** A callout surfaces under "more about
+  this person" — the target must be participant-centric (a hypothesis
+  page, a profile-shaped reading) or a topic page that prominently
+  covers this person (the identity-hypotheses overview, used by
+  Satoshi-candidate bios without a dedicated hypothesis page). Do not
+  point a bio's callout at an event-centric analysis (incident
+  structure, technical postmortem) just because the person was an
+  actor in the event.
+
+### Current callouts (12 biographies)
+
+| Biography | Callout target |
+|---|---|
+| Satoshi Nakamoto | identity-hypotheses overview |
+| Wei Dai, Hal Finney, Adam Back, Nick Szabo, Len Sassaman, Isamu Kaneko, Peter Todd | their dedicated identity-hypothesis page |
+| Dorian Nakamoto, Craig Wright, Paul Le Roux | identity-hypotheses overview (no dedicated page) |
+| knightmb | knightmb snapshot-and-legend analysis |
+
+### Audit
+
+When adding or changing a `callout`:
+
+1. The target entry id resolves (run `npm run check:internal-links`).
+2. EN and JA bios both declare the field, with the same `entry` and
+   locale-appropriate `label`.
+3. The target analysis is participant-centric, not event-centric.
+4. The participant page renders the callout in `npm run dev` (visit
+   `/participants/<slug>/` and `/ja/participants/<slug>/`).
 
 ## Auto-Link Keywords (concept and person)
 

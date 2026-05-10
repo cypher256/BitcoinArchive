@@ -10,6 +10,9 @@ participants:
     slug: "peter-todd"
 description: "カナダの暗号学者、Bitcoin Core 開発者（1985-）。Replace-by-Fee 提唱、OpenTimestamps 開発。2024年 HBO にサトシ候補として挙げられたが本人は否定。"
 isSatoshi: false
+callout:
+  entry: "analysis/2024-10-08-todd-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "peter-todd"
   - "biography"

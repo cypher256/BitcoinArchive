@@ -10,6 +10,9 @@ participants:
     slug: "peter-todd"
 description: "Canadian cryptographer, Bitcoin Core developer (born 1985). Proposed Replace-by-Fee, built OpenTimestamps. Joined BitcoinTalk as retep in Dec 2010. Named a Satoshi candidate by HBO in 2024 (denied)."
 isSatoshi: false
+callout:
+  entry: "analysis/2024-10-08-todd-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "peter-todd"
   - "biography"

@@ -10,6 +10,9 @@ participants:
     slug: "wei-dai"
 description: "Computer scientist and cryptographer who created b-money (1998), one of the earliest digital currency proposals, and the Crypto++ library. Satoshi emailed him before publishing the Bitcoin paper."
 isSatoshi: false
+callout:
+  entry: "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "wei-dai"
   - "biography"

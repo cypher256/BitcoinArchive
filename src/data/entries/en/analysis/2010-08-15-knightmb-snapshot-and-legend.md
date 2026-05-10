@@ -9,7 +9,6 @@ participants:
   - name: "knightmb"
     slug: "knightmb"
 description: "The August 2010 overflow recovery rested on knightmb's snapshot. Secondary sources have since attached a misattributed 10%-holder claim and a contested Tennessee identification to the same handle."
-calloutLabel: "Snapshot & legend"
 isSatoshi: false
 tags:
   - "knightmb"

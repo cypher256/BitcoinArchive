@@ -10,6 +10,9 @@ participants:
     slug: "knightmb"
 description: "Pseudonymous early Bitcoin user who ran one of the largest 2010 nodes and hosted public blockchain snapshots. His snapshot seeded Gavin Andresen's recovery patch after the value overflow incident."
 isSatoshi: false
+callout:
+  entry: "analysis/2010-08-15-knightmb-snapshot-and-legend"
+  label: "Snapshot & legend"
 tags:
   - "knightmb"
   - "biography"

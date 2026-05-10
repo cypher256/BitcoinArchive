@@ -10,6 +10,9 @@ participants:
     slug: "paul-le-roux"
 description: "Paul Calder Le Roux (1972–): E4M (TrueCrypt precursor) author who built an international criminal empire. Arrested 2012, named as Satoshi candidate in Evan Ratliff's The Mastermind (2019)."
 isSatoshi: false
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "Identity hypotheses overview"
 tags:
   - "paul-le-roux"
   - "biography"

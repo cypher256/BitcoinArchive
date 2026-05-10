@@ -10,6 +10,9 @@ participants:
     slug: "isamu-kaneko"
 description: "日本の研究者・ソフトウェア開発者（1970-2013）。Winny を 2002 年公開、2004-2011 年に著作権法違反幇助の刑事被告。日本語圏でのサトシ仮説候補。"
 isSatoshi: false
+callout:
+  entry: "analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "isamu-kaneko"
   - "biography"

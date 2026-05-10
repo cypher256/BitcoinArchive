@@ -10,6 +10,9 @@ participants:
     slug: "adam-back"
 description: "英国の暗号学者・サイファーパンク（1970-）。Hashcash（1997年）を発明。サトシが最初に連絡した人物（2008年8月20日）。2014年 Blockstream 共同設立。"
 isSatoshi: false
+callout:
+  entry: "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "adam-back"
   - "biography"

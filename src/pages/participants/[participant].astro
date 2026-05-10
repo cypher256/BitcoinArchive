@@ -57,49 +57,14 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
-// Bio-page analysis callouts. Two kinds of entries qualify:
-//   1. Identity-hypothesis pages where this participant is the primary
-//      subject (legacy behavior, automatic).
-//   2. Any other analysis page where this participant is primary AND
-//      the page has an explicit `calloutLabel` in its frontmatter
-//      (editor opt-in). This avoids cluttering Satoshi's bio with the
-//      ten-plus analysis pages that have him as primary participant —
-//      only ones the editor specifically wants surfaced get a callout.
-// All matching entries are rendered as stacked callouts, sorted newest
-// first. The "candidates without a dedicated page" case (e.g., Craig
-// Wright) is handled via the second-to-last block, which links them to
-// the hypotheses overview.
-const overviewId = 'analysis/2008-10-31-satoshi-identity-hypotheses-overview';
-
-const calloutCandidates = filtered.filter((e) =>
-  e.data.type === 'analysis' &&
-  e.data.participants[0]?.slug === participantSlug &&
-  (e.id.includes('-satoshi-identity-hypothesis') || e.data.calloutLabel)
-);
-
-if (participantSlug === 'satoshi-nakamoto') {
-  const overview = allEntries.find((e) => e.id === overviewId);
-  if (overview && !calloutCandidates.some((e) => e.id === overview.id)) {
-    calloutCandidates.unshift(overview);
-  }
-} else if (
-  biographyEntry?.data.relatedEntries?.includes(overviewId) &&
-  !calloutCandidates.some((e) => e.id.includes('-satoshi-identity-hypothesis'))
-) {
-  const overview = allEntries.find((e) => e.id === overviewId);
-  if (overview) calloutCandidates.push(overview);
-}
-
-calloutCandidates.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-
-const calloutEntries = calloutCandidates;
-
-function calloutLabelFor(entry: typeof allEntries[number]): string {
-  if (entry.data.calloutLabel) return entry.data.calloutLabel;
-  if (entry.id === overviewId) return 'Identity hypotheses overview';
-  if (entry.id.includes('-satoshi-identity-hypothesis')) return 'Identity hypothesis';
-  return 'Analysis';
-}
+// Recommended-analysis callout. The biography frontmatter declares
+// `callout: { entry, label }` if a single analysis page should be
+// surfaced near the top of the participant page. No callout when
+// the field is unset.
+const calloutSpec = biographyEntry?.data.callout;
+const calloutTarget = calloutSpec
+  ? allEntries.find((e) => e.id === calloutSpec.entry)
+  : undefined;
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters);
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
@@ -154,16 +119,12 @@ const structuredData = [
     <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
     {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
 
-    {calloutEntries.length > 0 && (
-      <div class="hypothesis-callouts">
-        {calloutEntries.map((entry) => (
-          <a class="hypothesis-callout" href={localePath(`/entries/${entry.id}/`, lang)}>
-            <span class="hypothesis-icon">🔍</span>
-            <span class="hypothesis-label">{calloutLabelFor(entry)}</span>
-            <span class="hypothesis-arrow">&rarr;</span>
-          </a>
-        ))}
-      </div>
+    {calloutTarget && calloutSpec && (
+      <a class="hypothesis-callout" href={localePath(`/entries/${calloutTarget.id}/`, lang)}>
+        <span class="hypothesis-icon">🔍</span>
+        <span class="hypothesis-label">{calloutSpec.label}</span>
+        <span class="hypothesis-arrow">&rarr;</span>
+      </a>
     )}
 
     {biographyContent && (
@@ -224,18 +185,12 @@ const structuredData = [
     color: var(--color-text-muted);
     font-weight: normal;
   }
-  .hypothesis-callouts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.4rem;
-    margin-bottom: 1.5rem;
-  }
   .hypothesis-callout {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
     padding: 0.4rem 0.9rem;
+    margin-bottom: 1.5rem;
     background: var(--color-bg-alt);
     border-left: 3px solid var(--color-accent);
     border-radius: 0 3px 3px 0;

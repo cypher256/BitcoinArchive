@@ -10,6 +10,9 @@ participants:
     slug: "len-sassaman"
 description: "アメリカの暗号学者、サイファーパンク（1980-2011）。Mixmaster 開発、KU Leuven 博士課程。サトシ最後通信 3 か月後に自殺。後にサトシ仮説候補。"
 isSatoshi: false
+callout:
+  entry: "analysis/2011-07-03-sassaman-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "len-sassaman"
   - "biography"

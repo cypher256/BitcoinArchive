@@ -10,6 +10,9 @@ participants:
     slug: "isamu-kaneko"
 description: "Japanese researcher and software developer (1970-2013). Released Winny in 2002, defendant in 2004-2011 contributory copyright-infringement case. Japan-domestic Satoshi-identity candidate."
 isSatoshi: false
+callout:
+  entry: "analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "isamu-kaneko"
   - "biography"

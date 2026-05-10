@@ -10,6 +10,9 @@ participants:
     slug: "adam-back"
 description: "British cryptographer and cypherpunk (born 1970) who invented Hashcash (1997). The first known person Satoshi contacted about Bitcoin (August 20, 2008). Co-founded Blockstream in 2014."
 isSatoshi: false
+callout:
+  entry: "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "adam-back"
   - "biography"

@@ -10,6 +10,9 @@ participants:
     slug: "dorian-nakamoto"
 description: "Dorian Prentice Satoshi Nakamoto (1949–): Japanese-American engineer in Temple City, CA. Falsely identified by Newsweek (2014) as Bitcoin's creator. Self-denied. Community raised 67+ BTC for him."
 isSatoshi: false
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "Identity hypotheses overview"
 tags:
   - "dorian-nakamoto"
   - "biography"

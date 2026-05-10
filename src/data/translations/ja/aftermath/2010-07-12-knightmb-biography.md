@@ -10,6 +10,9 @@ participants:
     slug: "knightmb"
 description: "匿名の初期ユーザー。2010年当時に大規模ノードを運営、公開スナップショットがバリュー・オーバーフロー事件の復旧パッチの起点となった。"
 isSatoshi: false
+callout:
+  entry: "analysis/2010-08-15-knightmb-snapshot-and-legend"
+  label: "スナップショットと伝説"
 tags:
   - "knightmb"
   - "biography"

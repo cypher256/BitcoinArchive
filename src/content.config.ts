@@ -65,11 +65,15 @@ const entrySchema = z.object({
   quotes: z.array(quoteSchema).default([]),
   relatedEntries: z.array(z.string()).default([]),
   inlineLinkKeywords: z.array(z.string()).optional(),
-  // Short label rendered next to the magnifying-glass icon when this
-  // entry is surfaced as a callout on a participant bio page (see
-  // pages/participants/[participant].astro). Optional — omitted entries
-  // fall back to a generic "Analysis" / 考察 label.
-  calloutLabel: z.string().optional(),
+  // Single recommended-analysis callout rendered near the top of a
+  // participant page. Set on the biography entry only. The bio
+  // declares both the target entry id and the visible label, in the
+  // same locale as the bio file (EN bio → EN label, JA bio → JA
+  // label). When unset, the participant page renders no callout.
+  callout: z.object({
+    entry: z.string(),
+    label: z.string(),
+  }).optional(),
 });
 
 const entries = defineCollection({

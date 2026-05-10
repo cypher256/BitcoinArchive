@@ -10,6 +10,9 @@ participants:
     slug: "len-sassaman"
 description: "American cryptographer (1980-2011), Mixmaster lead developer, KU Leuven PhD candidate. Died by suicide three months after Satoshi's last known message. Later named in a Satoshi-identity hypothesis."
 isSatoshi: false
+callout:
+  entry: "analysis/2011-07-03-sassaman-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "len-sassaman"
   - "biography"

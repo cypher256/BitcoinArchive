@@ -10,6 +10,9 @@ participants:
     slug: "dorian-nakamoto"
 description: "ドリアン・プレンティス・サトシ・ナカモト（1949–）：カリフォルニア州テンプル市の日系米国人エンジニア。Newsweek 2014 に誤特定。本人否定後、コミュニティが 67BTC 寄付。"
 isSatoshi: false
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "サトシ正体仮説の総覧"
 tags:
   - "dorian-nakamoto"
   - "biography"

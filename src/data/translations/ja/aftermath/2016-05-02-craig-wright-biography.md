@@ -10,6 +10,9 @@ participants:
     slug: "craig-wright"
 description: "クレイグ・スティーブン・ライト（1970–）：2016 年 5 月にサトシを公言したオーストラリアの計算機科学者。2024 年 3 月 COPA 対ライト裁判で英国高等法院は大規模捏造を認定。"
 isSatoshi: false
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "サトシ正体仮説の総覧"
 tags:
   - "craig-wright"
   - "biography"

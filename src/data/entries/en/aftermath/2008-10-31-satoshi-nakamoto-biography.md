@@ -10,6 +10,9 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Pseudonymous individual or group who authored the Bitcoin white paper (October 31, 2008), wrote the software, mined the genesis block, and guided early development before disappearing in April 2011."
 isSatoshi: true
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "Identity hypotheses overview"
 tags:
   - "satoshi-nakamoto"
   - "biography"

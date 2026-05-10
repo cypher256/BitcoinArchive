@@ -10,6 +10,9 @@ participants:
     slug: "hal-finney"
 description: "Harold Thomas Finney II (1956–2014): Caltech engineer, PGP 2.0 developer, Extropian, cryonics advocate, RPOW creator, first Bitcoin recipient and first person other than Satoshi to run Bitcoin."
 isSatoshi: false
+callout:
+  entry: "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "hal-finney"
   - "biography"

@@ -10,6 +10,9 @@ participants:
     slug: "hal-finney"
 description: "ハロルド・トーマス・フィニー 2世（1956–2014）：Caltech 工学卒、PGP 2.0 開発者、Extropian、クライオニクス支持者、RPOW 考案者、ビットコイン最初の受信者。"
 isSatoshi: false
+callout:
+  entry: "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "hal-finney"
   - "biography"

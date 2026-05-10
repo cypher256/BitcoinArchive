@@ -10,6 +10,9 @@ participants:
     slug: "paul-le-roux"
 description: "ポール・カルダー・ルルー（1972–）：E4M（TrueCrypt 前身）開発者で国際犯罪組織の長。2012年逮捕、2019年『The Mastermind』 でサトシ候補に挙げられた。"
 isSatoshi: false
+callout:
+  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+  label: "サトシ正体仮説の総覧"
 tags:
   - "paul-le-roux"
   - "biography"
