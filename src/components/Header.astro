@@ -40,6 +40,35 @@ const t = useTranslations(lang);
       <a href={localePath('/about/', lang)}>{t('nav.about')}</a>
       <a href={localePath('/search/', lang)}>{t('nav.search')}</a>
       <LanguageSwitch lang={lang} />
+      {/*
+        3-way mode toggle (light → dark → system → light …).
+        - State lives on `localStorage.mode` ('light' | 'dark' | absent).
+        - <html data-mode> mirrors the state; absence = follow OS.
+        - The icon is rotated by the script to match the active state.
+        - aria-label is updated dynamically to announce the next state.
+        Initial state is set in the head-earliest script in BaseLayout
+        so the button label is correct on first paint; the markup
+        below is the static fallback.
+      */}
+      <button
+        type="button"
+        class="mode-toggle"
+        data-mode-toggle
+        aria-label="Toggle color mode"
+        title="Toggle light / dark / system"
+      >
+        <svg class="mode-icon mode-icon-light" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+        </svg>
+        <svg class="mode-icon mode-icon-dark" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <svg class="mode-icon mode-icon-system" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="3" width="20" height="14" rx="2" />
+          <path d="M8 21h8M12 17v4" />
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -149,6 +178,50 @@ const t = useTranslations(lang);
     text-decoration: none;
   }
 
+  /* 3-way 配色モード切替ボタン (light / dark / system) */
+  .mode-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.3rem 0.4rem;
+    line-height: 0;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .mode-toggle:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .mode-toggle:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+  }
+  .mode-icon {
+    display: none;
+  }
+  /* default (no localStorage / no data-mode) = system */
+  .mode-toggle .mode-icon-system {
+    display: inline;
+  }
+  :global(:root[data-mode="light"]) .mode-toggle .mode-icon-light {
+    display: inline;
+  }
+  :global(:root[data-mode="light"]) .mode-toggle .mode-icon-system,
+  :global(:root[data-mode="light"]) .mode-toggle .mode-icon-dark {
+    display: none;
+  }
+  :global(:root[data-mode="dark"]) .mode-toggle .mode-icon-dark {
+    display: inline;
+  }
+  :global(:root[data-mode="dark"]) .mode-toggle .mode-icon-system,
+  :global(:root[data-mode="dark"]) .mode-toggle .mode-icon-light {
+    display: none;
+  }
+
   /* ハンバーガーボタン（デスクトップでは非表示） */
   .mobile-menu-toggle {
     display: none;
@@ -231,6 +304,45 @@ const t = useTranslations(lang);
 
 <script is:inline>
 (function() {
+  // 配色モード 3-way 切替: light → dark → system → light …
+  // 状態は localStorage.mode に保存。null = system (OS 設定追従)
+  var modeBtn = document.querySelector('[data-mode-toggle]');
+  if (modeBtn) {
+    function modeLabel(state) {
+      // state は次に遷移する状態を表す aria-label として読まれる
+      if (state === 'light') return 'Switch to dark mode';
+      if (state === 'dark') return 'Switch to system mode';
+      return 'Switch to light mode';
+    }
+    function readMode() {
+      try { return localStorage.getItem('mode'); } catch (_) { return null; }
+    }
+    function refreshLabel() {
+      var cur = readMode();
+      var next = cur === 'light' ? 'dark' : cur === 'dark' ? null : 'light';
+      modeBtn.setAttribute('aria-label', modeLabel(next));
+    }
+    refreshLabel();
+    modeBtn.addEventListener('click', function () {
+      var cur = readMode();
+      var next = cur === 'light' ? 'dark' : cur === 'dark' ? null : 'light';
+      try {
+        if (next) {
+          localStorage.setItem('mode', next);
+          document.documentElement.setAttribute('data-mode', next);
+        } else {
+          localStorage.removeItem('mode');
+          document.documentElement.removeAttribute('data-mode');
+        }
+      } catch (_) {
+        // localStorage が使えない環境では attribute だけ更新する
+        if (next) document.documentElement.setAttribute('data-mode', next);
+        else document.documentElement.removeAttribute('data-mode');
+      }
+      refreshLabel();
+    });
+  }
+
   // ハンバーガー: モバイルメニュー開閉
   var toggle = document.querySelector('.mobile-menu-toggle');
   var nav = document.getElementById('site-nav');

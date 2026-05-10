@@ -63,7 +63,13 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
 <meta name="google-site-verification" content="dUyV3q5C-KweMCnu3GmALTNF9Yr9BHvIIJe5IzyR4Mo" />
 <!-- Google Search Console: Cloudflare Pages (bitcoin-institute.pages.dev) -->
 <meta name="google-site-verification" content="iB8WajDfhHKk7jbDrKODvl6SKNOefazbfxuGXYBNoRk" />
-<meta name="theme-color" content="#b45309" />
+<!-- theme-color: a single tag whose `content` is rewritten at runtime
+     by the inline script in BaseLayout (so it follows light/dark/theme
+     changes). The empty initial value is overwritten before first
+     paint; using only one tag (instead of two media-conditional tags)
+     prevents the browser from choosing the wrong one when the user has
+     pinned a mode via the 3-way toggle. See plan § B.5.5. -->
+<meta name="theme-color" content="" />
 
 <!-- Google Analytics (GA4) -->
 <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZQNXSHB5ER"></script>
