@@ -101,122 +101,150 @@ const chartData = {
     var data = JSON.parse(dataEl.textContent);
     var l = data.labels;
 
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // Patoshi-vs-other and unspent-vs-spent encode the same
+      // "primary subject vs everything else" pair, so they share the
+      // accent / chart-color-6 / chart-negative pattern: accent for
+      // the focal mass (Patoshi blocks, unspent supply), gray for
+      // the comparator, red for "spent / dispersed".
+      return {
+        focus: token('--color-accent'),
+        comparator: token('--chart-color-6'),
+        spent: token('--chart-negative'),
+        muted: token('--color-text-muted'),
+        bg: token('--color-bg'),
+      };
+    }
+    function rerender() { panelDonut(); panelBar(); }
+
     // --- Donut (blocks breakdown) ---
-    (function() {
+    function panelDonut() {
       var container = document.getElementById('blocks-donut');
       if (!container) return;
+      var T = readTokens();
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var H = 260;
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var H = 260;
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + W / 2 + ',' + H / 2 + ')');
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + W / 2 + ',' + H / 2 + ')');
+      var radius = Math.min(W, H) / 2 - 30;
+      var innerRadius = radius * 0.55;
 
-        var radius = Math.min(W, H) / 2 - 30;
-        var innerRadius = radius * 0.55;
+      var pieData = [
+        { label: l.patoshi, value: data.patoshiBlocks, color: T.focus },
+        { label: l.other, value: data.totalBlocks - data.patoshiBlocks, color: T.comparator },
+      ];
 
-        var pieData = [
-          { label: l.patoshi, value: data.patoshiBlocks, color: '#b45309' },
-          { label: l.other, value: data.totalBlocks - data.patoshiBlocks, color: '#9ca3af' },
-        ];
+      var pie = d3.pie().value(function(d) { return d.value; }).sort(null);
+      var arc = d3.arc().innerRadius(innerRadius).outerRadius(radius);
 
-        var pie = d3.pie().value(function(d) { return d.value; }).sort(null);
-        var arc = d3.arc().innerRadius(innerRadius).outerRadius(radius);
+      // Slice stroke is --color-bg so the divider between slices reads
+      // as "bg-toned hairline", inverting cleanly on dark themes.
+      g.selectAll('path').data(pie(pieData)).enter()
+        .append('path').attr('d', arc)
+        .attr('fill', function(d) { return d.data.color; })
+        .attr('stroke', T.bg).attr('stroke-width', 2);
 
-        g.selectAll('path').data(pie(pieData)).enter()
-          .append('path').attr('d', arc)
-          .attr('fill', function(d) { return d.data.color; })
-          .attr('stroke', '#fff').attr('stroke-width', 2);
+      // Center text — values flow from the same figures block as the labels
+      g.append('text')
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+        .attr('y', -12)
+        .attr('font-size', '22px').attr('font-weight', '700')
+        .attr('fill', T.focus).text(l.centerPct);
+      g.append('text')
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+        .attr('y', 12)
+        .attr('font-size', '11px').attr('fill', T.muted)
+        .text(l.centerRatio);
 
-        // Center text — values flow from the same figures block as the labels
+      // Labels on slices — place outside slice with leader line
+      var labelArc = d3.arc().innerRadius(radius + 10).outerRadius(radius + 10);
+      pieData.forEach(function(d, i) {
+        var slice = pie(pieData)[i];
+        var pos = labelArc.centroid(slice);
+        var midAngle = (slice.startAngle + slice.endAngle) / 2;
+        var isRight = midAngle < Math.PI;
+        var labelX = isRight ? pos[0] + 8 : pos[0] - 8;
         g.append('text')
-          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-          .attr('y', -12)
-          .attr('font-size', '22px').attr('font-weight', '700')
-          .attr('fill', '#b45309').text(l.centerPct);
-        g.append('text')
-          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-          .attr('y', 12)
-          .attr('font-size', '11px').attr('fill', '#6b6b6b')
-          .text(l.centerRatio);
-
-        // Labels on slices — place outside slice with leader line
-        var labelArc = d3.arc().innerRadius(radius + 10).outerRadius(radius + 10);
-        pieData.forEach(function(d, i) {
-          var slice = pie(pieData)[i];
-          var pos = labelArc.centroid(slice);
-          var midAngle = (slice.startAngle + slice.endAngle) / 2;
-          var isRight = midAngle < Math.PI;
-          var labelX = isRight ? pos[0] + 8 : pos[0] - 8;
-          g.append('text')
-            .attr('x', labelX).attr('y', pos[1])
-            .attr('text-anchor', isRight ? 'start' : 'end')
-            .attr('dominant-baseline', 'central')
-            .attr('fill', d.color).attr('font-size', '12px').attr('font-weight', '600')
-            .text(d.label);
-        });
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+          .attr('x', labelX).attr('y', pos[1])
+          .attr('text-anchor', isRight ? 'start' : 'end')
+          .attr('dominant-baseline', 'central')
+          .attr('fill', d.color).attr('font-size', '12px').attr('font-weight', '600')
+          .text(d.label);
+      });
+    }
 
     // --- Spent vs Unspent bar ---
-    (function() {
+    function panelBar() {
       var container = document.getElementById('spent-bar');
       if (!container) return;
+      var T = readTokens();
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 40, right: 20, bottom: 20, left: 20 };
+      var H = 110;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 40, right: 20, bottom: 20, left: 20 };
-        var H = 110;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var pctUnspent = data.unspentPctNumeric;
 
-        var pctUnspent = data.unspentPctNumeric;
+      // Unspent portion (huge) — focus token: this is "the stash".
+      g.append('rect')
+        .attr('x', 0).attr('y', 0)
+        .attr('width', w * pctUnspent).attr('height', h)
+        .attr('fill', T.focus).attr('rx', 4).attr('opacity', 0.9);
 
-        // Unspent portion (huge)
-        g.append('rect')
-          .attr('x', 0).attr('y', 0)
-          .attr('width', w * pctUnspent).attr('height', h)
-          .attr('fill', '#b45309').attr('rx', 4).attr('opacity', 0.9);
+      // Spent portion (tiny — magnified indicator). chart-negative
+      // since this is the "leak" that stylistically reads as a warning.
+      g.append('rect')
+        .attr('x', w * pctUnspent).attr('y', 0)
+        .attr('width', Math.max(w * (1 - pctUnspent), 4)).attr('height', h)
+        .attr('fill', T.spent).attr('rx', 4);
 
-        // Spent portion (tiny - magnified indicator)
-        g.append('rect')
-          .attr('x', w * pctUnspent).attr('y', 0)
-          .attr('width', Math.max(w * (1 - pctUnspent), 4)).attr('height', h)
-          .attr('fill', '#dc2626').attr('rx', 4);
+      // Centered label on unspent — surface (--color-bg) for contrast.
+      g.append('text')
+        .attr('x', (w * pctUnspent) / 2).attr('y', h / 2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+        .attr('fill', T.bg).attr('font-size', '14px').attr('font-weight', '700')
+        .text(l.barUnspentLabel + ' ' + l.unspent);
 
-        // Centered label on unspent
-        g.append('text')
-          .attr('x', (w * pctUnspent) / 2).attr('y', h / 2)
-          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-          .attr('fill', '#fff').attr('font-size', '14px').attr('font-weight', '700')
-          .text(l.barUnspentLabel + ' ' + l.unspent);
+      // Spent indicator (above)
+      g.append('line')
+        .attr('x1', w * pctUnspent + 3).attr('x2', w - 20)
+        .attr('y1', -10).attr('y2', -10)
+        .attr('stroke', T.spent).attr('stroke-width', 1);
+      g.append('text')
+        .attr('x', w - 20).attr('y', -15)
+        .attr('text-anchor', 'end').attr('font-size', '10px')
+        .attr('fill', T.spent).attr('font-weight', '600')
+        .text(l.barSpentLabel + ' ' + l.spent);
+    }
 
-        // Spent indicator (above)
-        g.append('line')
-          .attr('x1', w * pctUnspent + 3).attr('x2', w - 20)
-          .attr('y1', -10).attr('y2', -10)
-          .attr('stroke', '#dc2626').attr('stroke-width', 1);
-        g.append('text')
-          .attr('x', w - 20).attr('y', -15)
-          .attr('text-anchor', 'end').attr('font-size', '10px')
-          .attr('fill', '#dc2626').attr('font-weight', '600')
-          .text(l.barSpentLabel + ' ' + l.spent);
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+    rerender();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', rerender);
+      else if (mql.addListener) mql.addListener(rerender);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(rerender).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
