@@ -71,6 +71,19 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
      pinned a mode via the 3-way toggle. See plan § B.5.5. -->
 <meta name="theme-color" content="" />
 
+<!-- Web font: Inter (Modern A's default body + heading face).
+     Loaded via Google Fonts CDN with `display=swap` so prose paints
+     immediately in the system fallback (`-apple-system` / Segoe UI)
+     and re-paints in Inter once the file arrives, never blocking
+     first paint. Preconnect hints shave the TLS / DNS round trips on
+     first navigation. Weights 400/500/600/700 cover body, medium ui,
+     semibold h2-h4, and bold h1. Strategy α (CDN) per
+     temp/temp_0510_モダン化リデザイン計画.md § 6.2-2; can migrate
+     to self-host later without touching components. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
 <!-- Google Analytics (GA4) -->
 <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZQNXSHB5ER"></script>
 <script is:inline>
