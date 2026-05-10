@@ -1,4 +1,32 @@
 /* ============================================================
-   Theme: modern-d (stub — populated in Phase 4)
+   Theme: modern-d — Soft Neutral (light variant)
+
+   "No ornament, absolute legibility first."
    Activated by `<html data-theme="modern-d">`.
+   See temp/temp_0510_モダン化リデザイン計画.md § 3 (Modern D).
+
+   Web font: Inter via Google Fonts CDN, preview-only convenience.
    ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root[data-theme="modern-d"] {
+  --color-bg: #fafafa;
+  --color-bg-alt: #f0f0f0;
+  --color-bg-quote: #ededed;
+  --color-text: #18181b;
+  --color-text-muted: #71717a;
+  --color-accent: #18181b;          /* accent = text colour (bold + underline carry weight) */
+  --color-link: #18181b;
+  --color-link-hover: #404040;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-source-bg: #ededed;
+  --color-satoshi: #18181b;
+  --font-body: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+  --font-heading: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+
+  --color-bg-primary: var(--color-bg);
+  --color-bg-secondary: var(--color-bg-alt);
+  --color-divider: var(--color-border);
+  --color-accent-fg: var(--color-accent);
+  --color-accent-bg: rgba(0, 0, 0, 0.06);
+}

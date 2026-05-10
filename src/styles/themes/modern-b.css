@@ -1,4 +1,33 @@
 /* ============================================================
-   Theme: modern-b (stub — populated in Phase 4)
+   Theme: modern-b — Print-Modern Hybrid (light variant)
+
+   "Keep Georgia's gravitas in headings, modernize body."
    Activated by `<html data-theme="modern-b">`.
+   See temp/temp_0510_モダン化リデザイン計画.md § 3 (Modern B).
+
+   Web fonts: Inter (body) + Source Serif 4 (headings) via
+   Google Fonts CDN, preview-only convenience.
    ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap');
+
+:root[data-theme="modern-b"] {
+  --color-bg: #fbfaf7;              /* near-white, minimal paper feel */
+  --color-bg-alt: #f5f3ee;
+  --color-bg-quote: #f0ebe0;        /* sepia retained for archive feel */
+  --color-text: #1a1a1a;
+  --color-text-muted: #5b5b5b;
+  --color-accent: #8b4513;          /* calmer brown vs. retro's #b45309 */
+  --color-link: #1a56db;
+  --color-link-hover: #1e40af;
+  --color-border: rgba(26, 26, 26, 0.10);
+  --color-source-bg: #f0ebe0;
+  --color-satoshi: #8b4513;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+
+  --color-bg-primary: var(--color-bg);
+  --color-bg-secondary: var(--color-bg-alt);
+  --color-divider: var(--color-border);
+  --color-accent-fg: var(--color-accent);
+  --color-accent-bg: rgba(139, 69, 19, 0.08);
+}
