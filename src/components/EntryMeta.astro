@@ -108,9 +108,7 @@ const isSatoshiAuthor =
     <span class="participants-label">{lang === 'ja' ? '人物：' : 'Figures:'}</span>
     {participants.map((p, i) => (
       <>
-        <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>
-          {translateParticipantName(p.name, p.slug, lang)}
-        </a>
+        <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>{translateParticipantName(p.name, p.slug, lang)}</a>
         {i < participants.length - 1 && <span class="participant-sep">,&nbsp;</span>}
       </>
     ))}
@@ -135,10 +133,7 @@ const isSatoshiAuthor =
         const slug = slugifyKeyword(kw);
         return (
           <>
-            <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>
-              {kw}
-              {n > 0 && <span class="defines-count"> ({n})</span>}
-            </a>
+            <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{kw}{n > 0 && <span class="defines-count"> ({n})</span>}</a>
             {i < sortedKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
           </>
         );
@@ -150,9 +145,7 @@ const isSatoshiAuthor =
 {tags.length > 0 && (
   <div class="tags-row">
     {tags.map((tag) => (
-      <a href={localePath(`/tags/${tag}/`, lang)} class="tag-link">
-        {translateTag(tag, lang)}
-      </a>
+      <a href={localePath(`/tags/${tag}/`, lang)} class="tag-link">{translateTag(tag, lang)}</a>
     ))}
   </div>
 )}
