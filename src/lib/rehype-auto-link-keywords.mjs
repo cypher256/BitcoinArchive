@@ -112,38 +112,44 @@ function detectEntryId(filePath) {
   return null;
 }
 
-// Cache of entry file path → primary participant slug. Used so that a
+// Cache of entry file path → { type, primarySlug }. Used so that a
 // biography entry's body doesn't auto-link to the participant whose
 // page hosts it (mirrors `excludeSlug` behavior in legacy
-// AutoLinkNames). Read lazily on first use.
+// AutoLinkNames). The self-skip applies ONLY when the entry is a
+// biography — non-biography entries (analysis / aftermath / article)
+// whose primary participant happens to match a keyword target should
+// still get the link, since the rendered URL is `/entries/<id>/`,
+// not `/participants/<slug>/`. Read lazily on first use.
 const primaryParticipantCache = new Map();
 
-function detectPrimaryParticipantSlug(filePath) {
-  if (!filePath) return null;
+function detectEntryMeta(filePath) {
+  if (!filePath) return { type: null, primarySlug: null };
   if (primaryParticipantCache.has(filePath)) return primaryParticipantCache.get(filePath);
-  let slug = null;
+  let type = null;
+  let primarySlug = null;
   try {
     const content = readFileSync(filePath, 'utf-8');
     if (content.startsWith('---\n')) {
       const end = content.indexOf('\n---\n', 4);
       const fm = end > 0 ? content.slice(4, end) : '';
-      // Find the FIRST participant entry's slug. Frontmatter is
-      // small (<200 lines typically), so a linear scan is fine.
+      const typeMatch = fm.match(/^type\s*:\s*"([^"]+)"\s*$/m);
+      if (typeMatch) type = typeMatch[1];
       const lines = fm.split('\n');
       let inBlock = false;
       for (let i = 0; i < lines.length; i++) {
         if (/^participants\s*:\s*$/.test(lines[i])) { inBlock = true; continue; }
         if (!inBlock) continue;
         const m = lines[i].match(/^\s+slug\s*:\s*"([^"]+)"\s*$/);
-        if (m) { slug = m[1]; break; }
+        if (m) { primarySlug = m[1]; break; }
         if (/^[a-zA-Z]/.test(lines[i])) break; // exited the block
       }
     }
   } catch {
-    // file unreadable — leave slug null
+    // file unreadable — leave both null
   }
-  primaryParticipantCache.set(filePath, slug);
-  return slug;
+  const meta = { type, primarySlug };
+  primaryParticipantCache.set(filePath, meta);
+  return meta;
 }
 
 // Build a single combined regex for the locale's keywords, sorted
@@ -248,7 +254,7 @@ export function rehypeAutoLinkKeywords() {
     const matcher = getMatcher(locale);
     if (!matcher) return;
     const selfId = detectEntryId(filePath);
-    const selfPrimarySlug = detectPrimaryParticipantSlug(filePath);
+    const { type: selfType, primarySlug: selfPrimarySlug } = detectEntryMeta(filePath);
     const linkedKeywords = new Set();
 
     // Pre-scan: mark any keyword whose text appears inside an
@@ -302,9 +308,18 @@ export function rehypeAutoLinkKeywords() {
         // Self-link skip: concept entry pointing at itself, or person
         // page for the participant whose biography page is being rendered.
         if (entry.kind === 'concept' && entry.target === selfId) continue;
-        // Self-link skip for person keywords on biography pages: the
-        // biography body should not link to its own participant page.
-        if (entry.kind === 'person' && selfPrimarySlug && entry.target === selfPrimarySlug) continue;
+        // Person self-link skip applies ONLY on biography pages — those
+        // render at `/participants/<slug>/`, so linking the participant's
+        // own name there is a no-op. For analysis / aftermath / article
+        // entries whose primary participant happens to match the keyword
+        // target, the rendered URL is `/entries/<id>/`, so the link is
+        // meaningful and must not be suppressed.
+        if (
+          entry.kind === 'person' &&
+          selfType === 'biography' &&
+          selfPrimarySlug &&
+          entry.target === selfPrimarySlug
+        ) continue;
         if (!isWordBoundaryOK(text, matchStart, matched)) continue;
 
         // Emit any preceding plain text.

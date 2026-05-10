@@ -117,24 +117,35 @@ const isSatoshiAuthor =
   </div>
 )}
 
-{showDefinesRow && (
-  <div class="defines-row">
-    <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
-    {inlineLinkKeywords.map((kw, i) => {
-      const n = keywordCounts[lang]?.[kw] ?? 0;
-      const slug = slugifyKeyword(kw);
-      return (
-        <>
-          <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>
-            {kw}
-            {n > 0 && <span class="defines-count"> ({n})</span>}
-          </a>
-          {i < inlineLinkKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
-        </>
-      );
-    })}
-  </div>
-)}
+{showDefinesRow && (() => {
+  // Sort by backlink count descending; 0-count keywords sink to the end.
+  // Original frontmatter order acts as tiebreaker (stable sort), so
+  // editor-chosen sequence is preserved within equal-count groups.
+  const sortedKeywords = inlineLinkKeywords
+    .map((kw, originalIndex) => ({
+      kw,
+      n: keywordCounts[lang]?.[kw] ?? 0,
+      originalIndex,
+    }))
+    .sort((a, b) => b.n - a.n || a.originalIndex - b.originalIndex);
+  return (
+    <div class="defines-row">
+      <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
+      {sortedKeywords.map(({ kw, n }, i) => {
+        const slug = slugifyKeyword(kw);
+        return (
+          <>
+            <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>
+              {kw}
+              {n > 0 && <span class="defines-count"> ({n})</span>}
+            </a>
+            {i < sortedKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
+          </>
+        );
+      })}
+    </div>
+  );
+})()}
 
 {tags.length > 0 && (
   <div class="tags-row">

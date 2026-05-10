@@ -399,11 +399,14 @@ for (const { name: locale, base } of COLLECTIONS) {
     for (const file of files) {
       const info = fileInfo.get(file);
       if (info.skip) continue;
-      // Self-link skip: concept points at this entry, OR person points
-      // at this entry's primary participant (so the bio body doesn't
-      // self-count).
+      // Self-link skip: concept points at this entry, OR a biography
+      // entry's body that targets its own participant (since the bio
+      // renders on /participants/<slug>/ and would self-link). Non-bio
+      // entries (analysis / aftermath / article) whose primary
+      // participant happens to be the target render at /entries/<id>/
+      // and DO produce a meaningful link — count those normally.
       if (kind === 'concept' && info.id === target) continue;
-      if (kind === 'person' && info.primarySlug === target) continue;
+      if (kind === 'person' && info.type === 'biography' && info.primarySlug === target) continue;
       // First prose-context occurrence wins — count entry once.
       let m;
       re.lastIndex = 0;
