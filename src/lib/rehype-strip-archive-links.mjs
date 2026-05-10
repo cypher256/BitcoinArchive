@@ -77,6 +77,13 @@ const VERBATIM_DIRS = [
 // (mailto:, bitcoin:, ftp:, etc.) all fail this test and are skipped.
 const HTTP_SCHEME = /^https?:\/\//i;
 
+function normalizeUrlForDisplayComparison(url) {
+  return url
+    .trim()
+    .replace(/^https?:\/\//i, '')
+    .replace(/\/$/, '');
+}
+
 /**
  * Detect whether a node is inside an editor-note aside.
  *
@@ -139,16 +146,20 @@ export function rehypeStripArchiveLinks() {
       const index = parent.children.indexOf(node);
       if (index === -1) return;
 
-      // bare URL link (link text == href) は URL を 1 回だけ表示する
+      // bare URL link は URL を 1 回だけ表示する。
+      // Markdown の自動リンクでは `www.example.com` が表示文字列、
+      // `http://www.example.com` が href になることがあるため、
+      // 比較時はスキーム差と末尾スラッシュを吸収する。
       const linkText = toText(node, { whitespace: 'normal' }).trim();
-      const isBareUrl = linkText === href.trim();
+      const isBareUrl = normalizeUrlForDisplayComparison(linkText) ===
+        normalizeUrlForDisplayComparison(href);
 
       if (isBareUrl) {
         parent.children[index] = {
           type: 'element',
           tagName: 'code',
           properties: { className: ['archive-url-bare'] },
-          children: [{ type: 'text', value: href }],
+          children: node.children,
         };
       } else {
         parent.children[index] = {

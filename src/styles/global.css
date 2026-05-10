@@ -457,6 +457,16 @@ img {
   height: auto;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) .entry-content img[src*="/images/whitepaper/"] {
+    filter: invert(1);
+  }
+}
+
+:root[data-mode="dark"] .entry-content img[src*="/images/whitepaper/"] {
+  filter: invert(1);
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--color-border);
