@@ -70,8 +70,33 @@ const l = labels[lang];
     var container = document.getElementById('nls-formula');
     if (!container) return;
 
+    // Resolve a CSS custom property against :root. Reading at draw()
+    // time lets the formula diagram repaint cleanly on theme swap.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      return {
+        // Input box hues encode "physical input" (electricity =
+        // chart-color-2 blue) vs "time input" (months = chart-color-4
+        // purple) vs "production output" (BTC mined = accent).
+        physical: token('--chart-color-2'),
+        time: token('--chart-color-4'),
+        output: token('--color-accent'),
+        // Result box: warm semitransparent accent fill so the eye
+        // lands on it as the formula's conclusion.
+        resultFill: token('--color-accent-bg'),
+        resultStroke: token('--color-accent'),
+        resultText: token('--color-accent'),
+        // Subtle structure: arrow shafts, secondary labels.
+        muted: token('--color-text-muted'),
+        faint: token('--color-divider'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 700;
       var H = 320;
@@ -90,10 +115,10 @@ const l = labels[lang];
       var resultH = 80;
 
       var inputs = [
-        { label: l.kwhLabel, value: l.kwh, color: '#2563eb' },
-        { label: l.costLabel, value: l.cost, color: '#2563eb' },
-        { label: l.monthsLabel, value: l.months, color: '#6366f1' },
-        { label: l.btcLabel, value: l.mined, color: '#b45309' },
+        { label: l.kwhLabel, value: l.kwh, color: T.physical },
+        { label: l.costLabel, value: l.cost, color: T.physical },
+        { label: l.monthsLabel, value: l.months, color: T.time },
+        { label: l.btcLabel, value: l.mined, color: T.output },
       ];
 
       // Input boxes
@@ -108,12 +133,12 @@ const l = labels[lang];
         g.append('text')
           .attr('x', x + boxW / 2).attr('y', topY + 18)
           .attr('text-anchor', 'middle').attr('font-size', '10px')
-          .attr('fill', '#6b6b6b').text(labelLines[0]);
+          .attr('fill', T.muted).text(labelLines[0]);
         if (labelLines[1]) {
           g.append('text')
             .attr('x', x + boxW / 2).attr('y', topY + 30)
             .attr('text-anchor', 'middle').attr('font-size', '9px')
-            .attr('fill', '#9ca3af').text(labelLines[1]);
+            .attr('fill', T.faint).text(labelLines[1]);
         }
         g.append('text')
           .attr('x', x + boxW / 2).attr('y', topY + 55)
@@ -124,13 +149,13 @@ const l = labels[lang];
         g.append('line')
           .attr('x1', x + boxW / 2).attr('x2', x + boxW / 2)
           .attr('y1', topY + boxH + 5).attr('y2', resultY - 15)
-          .attr('stroke', '#9ca3af').attr('stroke-width', 1);
+          .attr('stroke', T.faint).attr('stroke-width', 1);
         g.append('polygon')
           .attr('points',
             (x + boxW / 2 - 4) + ',' + (resultY - 20) + ' ' +
             (x + boxW / 2 + 4) + ',' + (resultY - 20) + ' ' +
             (x + boxW / 2) + ',' + (resultY - 12))
-          .attr('fill', '#9ca3af');
+          .attr('fill', T.faint);
 
         // Operator between boxes
         if (i < inputs.length - 1) {
@@ -139,7 +164,7 @@ const l = labels[lang];
           g.append('text')
             .attr('x', opX).attr('y', topY + boxH / 2)
             .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-            .attr('font-size', '22px').attr('fill', '#6b6b6b')
+            .attr('font-size', '22px').attr('fill', T.muted)
             .text(op);
         }
       });
@@ -148,26 +173,39 @@ const l = labels[lang];
       g.append('rect')
         .attr('x', resultX).attr('y', resultY)
         .attr('width', resultW).attr('height', resultH)
-        .attr('fill', '#fef3c7').attr('stroke', '#b45309').attr('stroke-width', 2).attr('rx', 6);
+        .attr('fill', T.resultFill).attr('stroke', T.resultStroke).attr('stroke-width', 2).attr('rx', 6);
 
       g.append('text')
         .attr('x', W / 2).attr('y', resultY + 22)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', '#92400e').text(l.resultLabel);
+        .attr('fill', T.resultText).text(l.resultLabel);
       g.append('text')
         .attr('x', W / 2).attr('y', resultY + 48)
         .attr('text-anchor', 'middle').attr('font-size', '20px')
-        .attr('fill', '#b45309').attr('font-weight', '700')
+        .attr('fill', T.resultText).attr('font-weight', '700')
         .text(l.priceBtc + ' ' + l.priceBtcFull);
       g.append('text')
         .attr('x', W / 2).attr('y', resultY + 68)
         .attr('text-anchor', 'middle').attr('font-size', '13px')
-        .attr('fill', '#92400e').attr('font-weight', '600')
+        .attr('fill', T.resultText).attr('font-weight', '600')
         .text('(' + l.priceUsd + ')');
     }
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    // Theme/mode listeners — repaint on theme/mode toggle.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
