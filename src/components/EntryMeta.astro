@@ -1,10 +1,8 @@
 ---
-import { readFileSync, existsSync } from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
+import keywordIndexRaw from '../data/keyword-index.json';
 
 // Backlink-count lookup for `inlineLinkKeywords` display. Loaded once
 // per build/dev session from the keyword index produced by
@@ -15,20 +13,20 @@ import type { Lang } from '../i18n/ui';
 // Shape: { [locale]: { counts: { [keyword]: entryCount } } }.
 // `counts` only includes keywords with ≥1 backlink — absent entries
 // imply 0 (and the UI skips the "(N)" suffix in that case).
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const KEYWORD_INDEX_PATH = path.resolve(__dirname, '..', 'data', 'keyword-index.json');
-let keywordCounts: Record<string, Record<string, number>> = { en: {}, ja: {} };
-if (existsSync(KEYWORD_INDEX_PATH)) {
-  try {
-    const raw = JSON.parse(readFileSync(KEYWORD_INDEX_PATH, 'utf-8'));
-    keywordCounts = {
-      en: raw?.en?.counts ?? {},
-      ja: raw?.ja?.counts ?? {},
-    };
-  } catch {
-    // Malformed index — fall back to empty counts.
-  }
+// Import the JSON statically so Vite resolves it at bundle time. The
+// previous path-based read worked in local dev but could miss the file
+// in the production SSR bundle, which made keyword counts disappear on
+// deployed entry pages.
+interface KeywordIndexCounts {
+  en?: { counts?: Record<string, number> };
+  ja?: { counts?: Record<string, number> };
 }
+
+const keywordIndex = keywordIndexRaw as KeywordIndexCounts;
+const keywordCounts: Record<string, Record<string, number>> = {
+  en: keywordIndex.en?.counts ?? {},
+  ja: keywordIndex.ja?.counts ?? {},
+};
 
 interface Participant {
   name: string;
