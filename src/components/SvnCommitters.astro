@@ -72,115 +72,131 @@ const l = labels[lang];
     var l = data.labels;
     var total = data.totalRevisions;
 
-    var colors = ['#b45309', '#2563eb', '#059669', '#7c3aed'];
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // 4 committers: Satoshi (accent, the focus) + 3 others rotating
+      // through chart-color-2/3/4. Maintains a stable hue position
+      // across themes.
+      return {
+        committers: [
+          token('--color-accent'),
+          token('--chart-color-2'),
+          token('--chart-color-3'),
+          token('--chart-color-4'),
+        ],
+        text: token('--color-text'),
+        bg: token('--color-bg'),
+        tooltipBg: token('--chart-tooltip-bg'),
+        tooltipFg: token('--chart-tooltip-fg'),
+      };
+    }
+    function rerender() { panelBar(); panelTimeline(); }
 
     // --- Bar Chart ---
-    (function() {
+    function panelBar() {
       var container = document.getElementById('svn-bar-chart');
       if (!container) return;
+      var T = readTokens();
+      var colors = T.committers;
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 20, right: 80, bottom: 30, left: 160 };
+      var H = 180;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 20, right: 80, bottom: 30, left: 160 };
-        var H = 180;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.35);
+      var x = d3.scaleLinear().domain([0, d3.max(committers, function(c) { return c.commits; })]).nice().range([0, w]);
 
-        var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.35);
-        var x = d3.scaleLinear().domain([0, d3.max(committers, function(c) { return c.commits; })]).nice().range([0, w]);
-
-        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
-          .selectAll('text').attr('font-size', '12px').attr('font-weight', function(d) {
-            return d === 'Satoshi Nakamoto' ? '700' : '400';
-          });
-
-        g.selectAll('.bar')
-          .data(committers)
-          .enter().append('rect')
-          .attr('y', function(d) { return y(d.name); })
-          .attr('x', 0)
-          .attr('height', y.bandwidth())
-          .attr('width', function(d) { return x(d.commits); })
-          .attr('fill', function(d, i) { return colors[i]; })
-          .attr('rx', 2);
-
-        g.selectAll('.label')
-          .data(committers)
-          .enter().append('text')
-          .attr('y', function(d) { return y(d.name) + y.bandwidth() / 2; })
-          .attr('x', function(d) { return x(d.commits) + 6; })
-          .attr('dominant-baseline', 'central')
-          .attr('font-size', '12px')
-          .attr('font-weight', '600')
-          .attr('fill', function(d, i) { return colors[i]; })
-          .text(function(d) { return d.commits + ' (' + Math.round(d.commits / total * 100) + '%)'; });
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
-
-    // --- Timeline ---
-    (function() {
-      var container = document.getElementById('svn-timeline-chart');
-      if (!container) return;
-
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 20, right: 20, bottom: 40, left: 120 };
-        var H = 170;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
-
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-
-        var parseDate = d3.timeParse('%Y-%m-%d');
-        var x = d3.scaleTime()
-          .domain([parseDate('2009-07-01'), parseDate('2011-11-01')])
-          .range([0, w]);
-        var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.4);
-
-        g.append('g').attr('transform', 'translate(0,' + h + ')')
-          .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
-          .selectAll('text').attr('font-size', '10px');
-
-        g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
-          .selectAll('text').attr('font-size', '11px');
-
-        committers.forEach(function(c, i) {
-          var x1 = x(parseDate(c.firstCommit));
-          var x2 = x(parseDate(c.lastCommit));
-          var barW = Math.max(x2 - x1, 3);
-
-          g.append('rect')
-            .attr('x', x1).attr('y', y(c.name))
-            .attr('width', barW).attr('height', y.bandwidth())
-            .attr('fill', colors[i]).attr('rx', 2).attr('opacity', 0.8);
-
-          // Start/end markers
-          g.append('circle').attr('cx', x1).attr('cy', y(c.name) + y.bandwidth() / 2)
-            .attr('r', 3.5).attr('fill', colors[i]).attr('stroke', '#fff').attr('stroke-width', 1);
-          if (barW > 6) {
-            g.append('circle').attr('cx', x2).attr('cy', y(c.name) + y.bandwidth() / 2)
-              .attr('r', 3.5).attr('fill', colors[i]).attr('stroke', '#fff').attr('stroke-width', 1);
-          }
+      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '12px').style('fill', T.text).attr('font-weight', function(d) {
+          return d === 'Satoshi Nakamoto' ? '700' : '400';
         });
 
-        // Tooltip
-        container.style.position = 'relative';
-        var tooltip = d3.select(container).append('div')
-          .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
-          .style('background', 'rgba(0,0,0,0.85)').style('color', '#fff')
-          .style('padding', '6px 10px').style('border-radius', '4px')
-          .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
+      g.selectAll('.bar')
+        .data(committers)
+        .enter().append('rect')
+        .attr('y', function(d) { return y(d.name); })
+        .attr('x', 0)
+        .attr('height', y.bandwidth())
+        .attr('width', function(d) { return x(d.commits); })
+        .attr('fill', function(d, i) { return colors[i]; })
+        .attr('rx', 2);
+
+      g.selectAll('.label')
+        .data(committers)
+        .enter().append('text')
+        .attr('y', function(d) { return y(d.name) + y.bandwidth() / 2; })
+        .attr('x', function(d) { return x(d.commits) + 6; })
+        .attr('dominant-baseline', 'central')
+        .attr('font-size', '12px')
+        .attr('font-weight', '600')
+        .attr('fill', function(d, i) { return colors[i]; })
+        .text(function(d) { return d.commits + ' (' + Math.round(d.commits / total * 100) + '%)'; });
+    }
+
+    // --- Timeline ---
+    function panelTimeline() {
+      var container = document.getElementById('svn-timeline-chart');
+      if (!container) return;
+      var T = readTokens();
+      var colors = T.committers;
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 20, right: 20, bottom: 40, left: 120 };
+      var H = 170;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var parseDate = d3.timeParse('%Y-%m-%d');
+      var x = d3.scaleTime()
+        .domain([parseDate('2009-07-01'), parseDate('2011-11-01')])
+        .range([0, w]);
+      var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.4);
+
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
+
+      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '11px').style('fill', T.text);
+
+      committers.forEach(function(c, i) {
+        var x1 = x(parseDate(c.firstCommit));
+        var x2 = x(parseDate(c.lastCommit));
+        var barW = Math.max(x2 - x1, 3);
+
+        g.append('rect')
+          .attr('x', x1).attr('y', y(c.name))
+          .attr('width', barW).attr('height', y.bandwidth())
+          .attr('fill', colors[i]).attr('rx', 2).attr('opacity', 0.8);
+
+        // Start/end markers — surface stroke for halo against bar fill.
+        g.append('circle').attr('cx', x1).attr('cy', y(c.name) + y.bandwidth() / 2)
+          .attr('r', 3.5).attr('fill', colors[i]).attr('stroke', T.bg).attr('stroke-width', 1);
+        if (barW > 6) {
+          g.append('circle').attr('cx', x2).attr('cy', y(c.name) + y.bandwidth() / 2)
+            .attr('r', 3.5).attr('fill', colors[i]).attr('stroke', T.bg).attr('stroke-width', 1);
+        }
+      });
+
+      // Tooltip
+      container.style.position = 'relative';
+      var tooltip = d3.select(container).append('div')
+        .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
+        .style('background', T.tooltipBg).style('color', T.tooltipFg)
+        .style('padding', '6px 10px').style('border-radius', '4px')
+        .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
 
         svg.on('mousemove', function(event) {
           var coords = d3.pointer(event, g.node());
@@ -204,14 +220,26 @@ const l = labels[lang];
           var ty = event.clientY - cr.top - 10;
           if (tx + 260 > cr.width) tx = tx - 280;
           tooltip.style('left', tx + 'px').style('top', ty + 'px');
-        }).on('mouseleave', function() {
-          tooltip.style('opacity', 0);
-        });
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+      }).on('mouseleave', function() {
+        tooltip.style('opacity', 0);
+      });
+    }
+
+    rerender();
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', rerender);
+      else if (mql.addListener) mql.addListener(rerender);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(rerender).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
