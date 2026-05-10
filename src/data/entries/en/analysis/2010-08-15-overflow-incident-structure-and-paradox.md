@@ -1,5 +1,5 @@
 ---
-title: "Anatomy of the 184 billion BTC incident — soft-fork rescue, response window, and the centralization paradox"
+title: "The day 184 billion BTC was minted — the centralization paradox, soft-fork rescue, and a 5-hour response"
 date: 2010-08-15T00:00:00Z
 type: "analysis"
 source: "bitcoinarchive"

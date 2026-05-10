@@ -1,5 +1,5 @@
 ---
-title: "1840 億 BTC 事件の構造分析 — ソフトフォーク救出・対応窓・中央集権パラドックス"
+title: "1840 億 BTC が生まれた日 — 中央集権パラドックス、ソフトフォーク救出、5 時間の対応"
 date: 2010-08-15T00:00:00Z
 type: "analysis"
 source: "bitcoinarchive"
