@@ -92,6 +92,40 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     var data = JSON.parse(dataEl.textContent);
     var prices = data.prices.map(function(d) { return { date: new Date(d.date), price: d.price }; });
 
+    // Resolve a CSS custom property against :root. Tokens are guaranteed
+    // by `src/styles/global.css`; reading them at draw() time is what
+    // allows the chart to repaint when the theme/mode changes.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      return {
+        accent: token('--color-accent'),
+        text: token('--color-text'),
+        muted: token('--color-text-muted'),
+        grid: token('--color-divider'),
+        surface: token('--color-bg'),
+        positive: token('--chart-positive'),
+        negative: token('--chart-negative'),
+        warning: token('--chart-warning'),
+        // Halving lines use chart-color-1 (warm/accent family) so they
+        // visually thread to the price area below them.
+        halving: token('--chart-color-1'),
+        // Crash / regulation / win event markers carry semantic tone:
+        // negative for crashes, purple (chart-color-4) for regulation,
+        // positive for the rest.
+        eventCrash: token('--chart-negative'),
+        eventRegulation: token('--chart-color-4'),
+        eventOther: token('--chart-positive'),
+        // Prediction status: bearish (red), pending (chart-color-4 purple),
+        // hit (positive green), missed (muted).
+        predBearish: token('--chart-negative'),
+        predPending: token('--chart-color-4'),
+        predHit: token('--chart-positive'),
+        predMissed: token('--chart-color-6'),
+      };
+    }
+
     // State
     var useLog = !mini;
     var showHalvings = true;
@@ -111,6 +145,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var filteredPrices = getFilteredPrices();
       if (filteredPrices.length === 0) return;
 
@@ -185,7 +220,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       if (yTickValues) gridAxis.tickValues(yTickValues);
       else gridAxis.ticks(mini ? 4 : 8);
       g.append('g').attr('class', 'grid').call(gridAxis)
-        .selectAll('line').attr('stroke', '#e8e5de').attr('stroke-opacity', 0.7);
+        .selectAll('line').attr('stroke', T.grid).attr('stroke-opacity', 0.7);
       g.selectAll('.grid .domain').remove();
 
       // Axes
@@ -221,8 +256,8 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       var gradient = svg.append('defs').append('linearGradient')
         .attr('id', chartId + '-gradient')
         .attr('x1', '0').attr('x2', '0').attr('y1', '0').attr('y2', '1');
-      gradient.append('stop').attr('offset', '0%').attr('stop-color', '#b45309').attr('stop-opacity', 0.3);
-      gradient.append('stop').attr('offset', '100%').attr('stop-color', '#b45309').attr('stop-opacity', 0.02);
+      gradient.append('stop').attr('offset', '0%').attr('stop-color', T.accent).attr('stop-opacity', 0.3);
+      gradient.append('stop').attr('offset', '100%').attr('stop-color', T.accent).attr('stop-opacity', 0.02);
 
       g.append('path').datum(filteredPrices)
         .attr('fill', 'url(#' + chartId + '-gradient)')
@@ -230,7 +265,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
       g.append('path').datum(filteredPrices)
         .attr('fill', 'none')
-        .attr('stroke', '#b45309')
+        .attr('stroke', T.accent)
         .attr('stroke-width', mini ? 1.5 : 2)
         .attr('d', line);
 
@@ -243,7 +278,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
           .attr('font-family', 'var(--font-heading)')
           .attr('font-size', '14px')
           .attr('font-weight', '700')
-          .attr('fill', '#b45309')
+          .attr('fill', T.accent)
           .text('$' + d3.format(',.0f')(last.price));
         return;
       }
@@ -274,19 +309,19 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
           g.append('line')
             .attr('x1', hvx).attr('x2', hvx).attr('y1', 0).attr('y2', h)
-            .attr('stroke', '#e67e22').attr('stroke-width', 1.5)
+            .attr('stroke', T.halving).attr('stroke-width', 1.5)
             .attr('stroke-dasharray', hv.estimated ? '6,4' : 'none')
             .attr('stroke-opacity', 0.6);
 
           var labelG = g.append('g').attr('transform', 'translate(' + hvx + ',0)');
           labelG.append('rect')
             .attr('x', -40).attr('y', -38).attr('width', 80).attr('height', 16)
-            .attr('rx', 3).attr('fill', '#e67e22').attr('fill-opacity', 0.12);
+            .attr('rx', 3).attr('fill', T.halving).attr('fill-opacity', 0.12);
           labelG.append('text')
             .attr('y', -26).attr('text-anchor', 'middle')
             .attr('font-family', 'var(--font-heading)')
             .attr('font-size', '8px').attr('font-weight', '600')
-            .attr('fill', '#e67e22')
+            .attr('fill', T.halving)
             .text(hv.label);
         });
       }
@@ -325,10 +360,12 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
           var textAnchor = labelOnLeft ? 'end' : 'start';
           var textX = labelOnLeft ? -3 : 3;
 
-          // Background rect for readability
+          // Background rect for readability — surface colour pulls
+          // from the active theme's --color-bg so the label remains
+          // legible against the chart fill on dark themes too.
           var labelNode = g.append('g').attr('transform', 'translate(' + (lx + labelOffset) + ',' + ly + ')');
           var labelBg = labelNode.append('rect')
-            .attr('rx', 3).attr('fill', '#fafaf8').attr('fill-opacity', 0.85);
+            .attr('rx', 3).attr('fill', T.surface).attr('fill-opacity', 0.85);
           var labelTxt = labelNode.append('text')
             .attr('x', textX).attr('y', 4)
             .attr('text-anchor', textAnchor)
@@ -423,7 +460,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
           var predX = x(Math.max(predDate, xExtent[0]));
 
           var isFuture = pred.hit === null;
-          var color = pred.bearish ? '#dc2626' : isFuture ? '#6366f1' : pred.hit ? '#059669' : '#9ca3af';
+          var color = pred.bearish ? T.predBearish : isFuture ? T.predPending : pred.hit ? T.predHit : T.predMissed;
 
           g.append('line')
             .attr('x1', predX).attr('y1', targetY)
@@ -436,11 +473,11 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       // --- Layer 3: Price crosshair (below markers) ---
       var bisect = d3.bisector(function(d) { return d.date; }).left;
       var focusLine = g.append('line')
-        .attr('stroke', '#b45309').attr('stroke-opacity', 0.4)
+        .attr('stroke', T.accent).attr('stroke-opacity', 0.4)
         .attr('stroke-width', 1).attr('stroke-dasharray', '4,3')
         .attr('y1', 0).attr('y2', h).style('opacity', 0);
       var focusDot = g.append('circle')
-        .attr('r', 4).attr('fill', '#b45309').attr('stroke', '#fff').attr('stroke-width', 2)
+        .attr('r', 4).attr('fill', T.accent).attr('stroke', T.surface).attr('stroke-width', 2)
         .style('opacity', 0);
 
       // Invisible rect for price hover — pointer-events: all but sits below markers
@@ -492,14 +529,14 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
           var evx = x(evDate);
           var evy = y(closestPrice);
-          var color = ev.type === 'crash' ? '#dc2626' : ev.type === 'regulation' ? '#7c3aed' : '#059669';
+          var color = ev.type === 'crash' ? T.eventCrash : ev.type === 'regulation' ? T.eventRegulation : T.eventOther;
 
           var marker = g.append('g')
             .attr('transform', 'translate(' + evx + ',' + evy + ')')
             .style('cursor', 'pointer');
 
           marker.append('circle')
-            .attr('r', 6).attr('fill', color).attr('stroke', '#fff').attr('stroke-width', 1.5)
+            .attr('r', 6).attr('fill', color).attr('stroke', T.surface).attr('stroke-width', 1.5)
             .attr('fill-opacity', 0.9);
 
           marker.on('mouseover', function(event) {
@@ -534,7 +571,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
           var targetX = x(Math.min(targetDate, xExtent[1]));
 
           var isFuture = pred.hit === null;
-          var color = pred.bearish ? '#dc2626' : isFuture ? '#6366f1' : pred.hit ? '#059669' : '#9ca3af';
+          var color = pred.bearish ? T.predBearish : isFuture ? T.predPending : pred.hit ? T.predHit : T.predMissed;
 
           predMarkers.push({ pred: pred, x: targetX, y: targetY, color: color });
         });
@@ -547,10 +584,10 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
             .attr('transform', 'translate(' + pm.x + ',' + pm.y + ')')
             .style('cursor', 'pointer');
 
-          // Larger diamond marker
+          // Larger diamond marker — surface stroke for halo effect.
           markerG.append('rect')
             .attr('x', -5).attr('y', -5).attr('width', 10).attr('height', 10)
-            .attr('rx', 2).attr('fill', pm.color).attr('stroke', '#fff').attr('stroke-width', 1.5)
+            .attr('rx', 2).attr('fill', pm.color).attr('stroke', T.surface).attr('stroke-width', 1.5)
             .attr('fill-opacity', 0.9)
             .attr('transform', 'rotate(45)');
 
@@ -688,6 +725,21 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(draw, 250);
     });
+
+    // Theme/mode listeners — repaint when data-theme/data-mode flips
+    // or the OS prefers-color-scheme changes. draw() already wipes
+    // container.innerHTML so no SVG accumulation.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
 
   initChart();
@@ -718,7 +770,11 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
   .chart-container :global(.chart-tooltip) {
     position: absolute;
     pointer-events: none;
-    background: rgba(255, 255, 255, 0.96);
+    /* Slightly transparent surface so price line under the tooltip
+       remains visible. --color-bg follows the theme; the rgba
+       version below comes from a `color-mix` fallback chain so
+       browsers without color-mix() still see a solid surface. */
+    background: var(--color-bg);
     border: 1px solid var(--color-border);
     border-radius: 4px;
     padding: 0.5rem 0.75rem;
@@ -726,9 +782,10 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     font-size: 0.82rem;
     line-height: 1.5;
     color: var(--color-text);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-md);
     z-index: 10;
     max-width: 320px;
+    opacity: 0.96;
   }
 
   /* Controls */
@@ -757,7 +814,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     transition: all 0.15s;
     user-select: none;
   }
-  .toggle-btn:hover { background: rgba(180, 83, 9, 0.06); }
+  .toggle-btn:hover { background: var(--color-accent-bg); }
   .toggle-btn.active { color: var(--color-text); font-weight: 600; }
   .toggle-btn:not(.active) { opacity: 0.5; text-decoration: line-through; }
 
@@ -767,10 +824,14 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     height: 8px;
     border-radius: 50%;
   }
-  .halving-dot { background: #e67e22; }
-  .event-dot { background: #059669; }
-  .prediction-dot { background: #6366f1; }
-  .model-dot { background: #8b5cf6; }
+  /* Toggle-legend swatches mirror the runtime palette resolved in
+     readTokens(): chart-color-1 (halving) / chart-positive (events) /
+     chart-color-4 (predictions) / chart-color-4 (models). Models
+     reuse chart-color-4 since the per-curve hue lives in the data. */
+  .halving-dot { background: var(--chart-color-1); }
+  .event-dot { background: var(--chart-positive); }
+  .prediction-dot { background: var(--chart-color-4); }
+  .model-dot { background: var(--chart-color-4); }
 
   .chart-scale-btns, .chart-range-btns {
     display: flex;
@@ -790,11 +851,11 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     transition: all 0.15s;
   }
   .scale-btn:hover, .range-btn:hover {
-    background: rgba(180, 83, 9, 0.06);
+    background: var(--color-accent-bg);
   }
   .scale-btn.active, .range-btn.active {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-bg);
     font-weight: 600;
   }
   .scale-btn + .scale-btn, .range-btn + .range-btn {
