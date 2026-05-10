@@ -90,20 +90,20 @@ timeline
 
 役割と一緒に**渡らなかったもの**：Patoshi マイニングパターンに紐づく約 110 万 BTC（2010 年以降オンチェーンで未移動）、サトシの匿名性そのもの、ジェネシスブロックの coinbase アドレス秘密鍵。
 
-アンドレセンは [2016 年の回想](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/) で、この移行の段階性についてこう振り返っている。
+アンドレセンは [2016 年の回想](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/)で、この移行の段階性についてこう振り返っている。
 
 > 「彼は僕に一杯食わせたんだ。ビットコインのホームページに僕のメールアドレスを載せていいかと聞かれて、いいよと答えた。気づかなかったのは、僕のアドレスを載せた時に、自分のアドレスを消していたことだ。僕がビットコインについて知りたい人全員からメールを受ける窓口になった。サトシはプロジェクトのリーダーから身を引き始め、僕をリーダーとして前に押し出していった」
 
 ### リードメンテナー（2010 年 12 月〜2014 年 4 月）
-[2010 年 12 月 19 日のアンドレセンの公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) はこう始まった。
+[2010 年 12 月 19 日のアンドレセンの公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)はこう始まった。
 
 > 「サトシの承認を得て、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする」
 
-アンドレセンはその時点からビットコイン開発を表立って牽引することになり、サトシは 2011 年初頭までメールを続けた。サトシの [2011 年 4 月 23 日のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) は——当時は非公開、後年公開——撤退の言葉を残した。
+アンドレセンはその時点からビットコイン開発を表立って牽引することになり、サトシは 2011 年初頭までメールを続けた。サトシの [2011 年 4 月 23 日のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)は——当時は非公開、後年公開——撤退の言葉を残した。
 
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
-3 日後、[最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) は「私のことを謎めいた影の人物として話し続けるのはやめてほしい」 という一文で締めくくられた——戒めであり、別れの挨拶でもあった。CAlert キーの正式な譲渡を伴っていた。2012 年 9 月に Bitcoin Foundation が設立されると、アンドレセンはチーフサイエンティストに就任した。
+3 日後、[最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)は「私のことを謎めいた影の人物として話し続けるのはやめてほしい」 という一文で締めくくられた——戒めであり、別れの挨拶でもあった。CAlert キーの正式な譲渡を伴っていた。2012 年 9 月に Bitcoin Foundation が設立されると、アンドレセンはチーフサイエンティストに就任した。
 
 ### CIAでの講演
 2011年6月14日、アンドレセンはバージニア州ラングレーのCIA本部でビットコインについてプレゼンテーションを行った。これはIn-Q-Tel主催の新興技術カンファレンスの一環だった。事前にサトシにこの招待について伝えていたが、その後サトシの通信頻度は減少し、最終的に完全に途絶えた。

@@ -27,7 +27,7 @@ relatedEntries:
 
 2011 年 4 月 18 日、ヴィンセント・ダラム — BitcoinTalk のハンドル名 `vinced` を使う開発者 — がネームコインのジェネシスブロックを公開した。最初のアルトコインで、独立に動作するネットワークを生んだビットコインコードベース最初のフォークである。
 
-ネームコインの設計は [BitcoinTalk の BitDNS スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/) から始まった。スレッドはユーザー `appamatto` により 2010 年 11 月 14 日に立てられ、ビットコインを分散型の名前登録システムとして拡張する案を提起していた。検閲も差押えも不可能な、中央集権的 DNS 登録機関への代替である。[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/) 自身もスレッドに参加し、BitDNS はビットコインと採掘作業を共有する別チェーンとして実装できる、と示唆した (後にマージマイニングと呼ばれる手法)。
+ネームコインの設計は [BitcoinTalk の BitDNS スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/)から始まった。スレッドはユーザー `appamatto` により 2010 年 11 月 14 日に立てられ、ビットコインを分散型の名前登録システムとして拡張する案を提起していた。検閲も差押えも不可能な、中央集権的 DNS 登録機関への代替である。[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)自身もスレッドに参加し、BitDNS はビットコインと採掘作業を共有する別チェーンとして実装できる、と示唆した (後にマージマイニングと呼ばれる手法)。
 
 ダラムはスレッドの想定を超えて先に進めた。Bitcoin Core が名前付け機能を取り込むのを待つのではなく、彼は Bitcoin v0.3 コードベースをフォークし、名前登録の取引型 (`name_new`、`name_firstupdate`、`name_update`) を追加し、2011 年 4 月 18 日に独立のチェーンとしてネットワークをローンチした。
 
@@ -43,4 +43,4 @@ relatedEntries:
 
 ネームコインの主要な機能成果物は `.bit` トップレベルドメインだった — ネームコイン対応の DNS リゾルバ経由でアクセスする、検閲耐性のある命名空間である。普及はニッチに留まった。主要ブラウザーは `.bit` の名前解決を取り込まなかったし、大半のユーザーは通常の閲覧でネームコインの名前に触れることがなかった。システムは現在も動作しているが、活発な開発はおおむね 2018 年以降縮小している。
 
-ネームコインの意義は、経済的というより構造的なものである。動機を持った開発者であれば誰でもビットコインのコードベースをフォークし、ルールを変更して別チェーンをローンチできる、という型を確立した。これはその後数百のアルトコインを生む型となる。半年後に登場した [ライトコイン](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/) も同じ型の上に立っている。ビットコイン由来チェーンの全系譜は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) に記録されている。
+ネームコインの意義は、経済的というより構造的なものである。動機を持った開発者であれば誰でもビットコインのコードベースをフォークし、ルールを変更して別チェーンをローンチできる、という型を確立した。これはその後数百のアルトコインを生む型となる。半年後に登場した[ライトコイン](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)も同じ型の上に立っている。ビットコイン由来チェーンの全系譜は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。

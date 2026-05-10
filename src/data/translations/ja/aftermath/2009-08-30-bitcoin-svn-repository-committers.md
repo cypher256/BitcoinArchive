@@ -58,7 +58,7 @@ translationStatus: complete
 
 **マルッティ・マルミ（sirius-m）** はr1の"First commit"でSVNリポジトリを作成した。サトシがVisual C++ 6.0を使用してWindows上で開発したコードベースをLinuxに移植し、56リビジョンまでに21のコミットを行った。
 
-**サトシ・ナカモト（s_nakamoto）** のコミット数は252リビジョン中およそ160件と圧倒的に多い（[コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) ではユニークコミット 160 件として扱う。164 という値もミラー側の数え方として流通している — 集計対象がブランチを含むか・ミラー由来の重複をどう扱うかで差が出る）。最後のリリースコミットはr201（"version 0.3.19 release"、2010年12月13日）。その2日後、小さな修正をもう1件 — r202（"get external ip from irc"、2010年12月15日）を入れた。r202以降にs_nakamotoのコミットはない。
+**サトシ・ナカモト（s_nakamoto）** のコミット数は252リビジョン中およそ160件と圧倒的に多い（[コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)ではユニークコミット 160 件として扱う。164 という値もミラー側の数え方として流通している — 集計対象がブランチを含むか・ミラー由来の重複をどう扱うかで差が出る）。最後のリリースコミットはr201（"version 0.3.19 release"、2010年12月13日）。その2日後、小さな修正をもう1件 — r202（"get external ip from irc"、2010年12月15日）を入れた。r202以降にs_nakamotoのコミットはない。
 
 **ラズロ・ハニエツ（laszloh）** — [史上初のビットコインによる実世界での購入](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)（ピザ2枚に1万BTC）とGPUマイニングの先駆者として知られる — のSVNコミットはたった1件：2010年8月4日のr123で、macOSのコンパイル問題を修正した。
 

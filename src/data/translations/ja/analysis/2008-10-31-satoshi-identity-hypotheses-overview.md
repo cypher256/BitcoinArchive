@@ -90,7 +90,7 @@ translationStatus: complete
 
 - ホワイトペーパーで明示的に引用された Hashcash と b-money
 - 2008 年 8 月のアダム・バックとウェイ・ダイとの公開前通信
-- 2014 年のウェイ・ダイの識別性論 — サトシは 2007〜2008 年の開発期間中、可視のサイファーパンクとして活動していなかった、という読み（[サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) と整合）
+- 2014 年のウェイ・ダイの識別性論 — サトシは 2007〜2008 年の開発期間中、可視のサイファーパンクとして活動していなかった、という読み（[サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)と整合）
 - 19,901 行の v0.1 C++ コードベース
 - ネイティブ水準の英語の文体
 - 2007 年央から 2008 年 8 月までの 18 か月にわたる集中的な開発期間
@@ -243,13 +243,13 @@ quadrantChart
 
 **経歴。** イギリスの暗号学者（1970 年生まれ）、エクセター大学で計算機科学博士号、*Hashcash*（1997 年）の考案者。Blockstream の共同創業者・CEO（2014 年）。サトシがビットコインについて最初に接触した既知の人物（2008 年 8 月 20 日）。
 
-**外部的状況。** 自己否定（最も顕著なのは [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) で、サトシとの完全な通信記録を宣誓のもと証人証拠として提出）／公開前通信は第三者応答として読める。→ [アダム・バック＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) に Hashcash の作者相関論点、2008 年 8 月のメール構造による反証、[2026 年 4 月の NYT 文体計量調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) の扱いを記載。
+**外部的状況。** 自己否定（最も顕著なのは [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)で、サトシとの完全な通信記録を宣誓のもと証人証拠として提出）／公開前通信は第三者応答として読める。→ [アダム・バック＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)に Hashcash の作者相関論点、2008 年 8 月のメール構造による反証、[2026 年 4 月の NYT 文体計量調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)の扱いを記載。
 
 #### ウェイ・ダイ
 
 **経歴。** 中国系米国人の暗号学者、Crypto++ ライブラリ（広く使われているオープンソース暗号ライブラリ）の作者、デジタルキャッシュ提案 *b-money*（1998 年）の設計者。b-money は Hashcash とともにビットコインのホワイトペーパーで引用された。1990 年代後半のサイファーパンクメーリングリスト参加者。
 
-**外部的状況。** 自己否定（[2014 年 1 月の LessWrong AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) で自身をサトシと明示的に区別）／2008 年 8 月の公開前通信は第三者応答として読める／2014 年回想の「サトシは以前から活動していた人物ではない」 という記述は自己作者と整合しない。 → [ウェイ・ダイ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) で、b-money 概念近接論点、Crypto++ コードベース依存論点、2008 年 8 月の通信構造による反証、文体計量での距離（広範コーパスで上位 22.99%）の検討を全文で扱う。
+**外部的状況。** 自己否定（[2014 年 1 月の LessWrong AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)で自身をサトシと明示的に区別）／2008 年 8 月の公開前通信は第三者応答として読める／2014 年回想の「サトシは以前から活動していた人物ではない」 という記述は自己作者と整合しない。 → [ウェイ・ダイ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)で、b-money 概念近接論点、Crypto++ コードベース依存論点、2008 年 8 月の通信構造による反証、文体計量での距離（広範コーパスで上位 22.99%）の検討を全文で扱う。
 
 ### B. 能力整合の高いサイファーパンク
 
@@ -257,19 +257,19 @@ quadrantChart
 
 **経歴。** サイファーパンク（ハロルド・トーマス・フィニー二世、1956 年 5 月 4 日〜2014 年 8 月 28 日）、カリフォルニア工科大学工学卒、PGP 2.0 の主要開発者の一人、Reusable Proof-of-Work（RPOW）の考案者。2009 年 1 月 9 日（ビットコイン v0.1 のリリース日）にフィニーはソフトウェアをダウンロードし、サトシ以外で最初にビットコインノードを稼働させた人物となった。2009 年 1 月 11 日には「Running bitcoin」 とツイート。2009 年 1 月 12 日にはサトシからブロック 170 で 10 BTC を受け取った — 人類初のビットコイン取引。フィニーはカリフォルニア州テンプル市に約 10 年間居住しており — Newsweek が後にドリアン・プレンティス・サトシ・ナカモトを特定したのと同じ町で「数ブロック先」 だった。
 
-**外部的状況。** 自己否定（2013 年 3 月の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) でサトシを別人として記述）／[Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) と記録された控えめな保有量の不整合／2009 年 4 月 18 日のレース当日アリバイの当時記録。 → [ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) で、RPOW 先駆論、レース当日アリバイ（[グリーンバーグ 2014 Forbes 記事](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が初出、[ロップ 2023](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) が構造化）、「ビットコインと私」 の第三者的記述、Patoshi 規模の不整合、2010 年 8 月の特異点サミット／ALS 進行のアリバイを全文の詳細で扱う。
+**外部的状況。** 自己否定（2013 年 3 月の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) でサトシを別人として記述）／[Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)と記録された控えめな保有量の不整合／2009 年 4 月 18 日のレース当日アリバイの当時記録。 → [ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)で、RPOW 先駆論、レース当日アリバイ（[グリーンバーグ 2014 Forbes 記事](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)が初出、[ロップ 2023](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) が構造化）、「ビットコインと私」 の第三者的記述、Patoshi 規模の不整合、2010 年 8 月の特異点サミット／ALS 進行のアリバイを全文の詳細で扱う。
 
 #### ニック・サボ
 
 **経歴。** 計算機科学者・法学者・暗号学者（1964 年生まれ）。「スマートコントラクト」 という用語を 1994 年に提唱。プルーフ・オブ・ワークに基づく分散型デジタル通貨提案 [*Bit Gold*](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) の設計者で、1998 年に構想、2005 年 12 月 29 日に Unenumerated ブログで完全な設計を公開。
 
-**外部的状況。** 自己否定（複数回：2014 年フリスビー宛メール、2015 年 NYT ポッパー宛メール返信、2017 年ティム・フェリス・ショウほか）。→ [サボ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) に Bit Gold の概念的近接論点、文体計量分析（Skye Grey 2013、アストン大学 2014、NYT ポッパー 2015）、状況証拠的なパターン一致（4 月 5 日誕生日一致・ハンガリー系の系譜・ティム・フェリス・ショウ番組内の「I designed bitcoi…gold」 言い間違え）、反証（2008 年 4 月の Bit Gold 実装支援募集コメント、2011 年 5 月「Nakamoto improved my design」 ブログ、2007〜2008 年の継続的な Unenumerated 活動、C++ 公開コードの不在）の検討を記載。
+**外部的状況。** 自己否定（複数回：2014 年フリスビー宛メール、2015 年 NYT ポッパー宛メール返信、2017 年ティム・フェリス・ショウほか）。→ [サボ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)に Bit Gold の概念的近接論点、文体計量分析（Skye Grey 2013、アストン大学 2014、NYT ポッパー 2015）、状況証拠的なパターン一致（4 月 5 日誕生日一致・ハンガリー系の系譜・ティム・フェリス・ショウ番組内の「I designed bitcoi…gold」 言い間違え）、反証（2008 年 4 月の Bit Gold 実装支援募集コメント、2011 年 5 月「Nakamoto improved my design」 ブログ、2007〜2008 年の継続的な Unenumerated 活動、C++ 公開コードの不在）の検討を記載。
 
 #### レン・サッサマン
 
 **経歴。** サイファーパンク暗号学者（1980–2011 年）、Mixmaster 匿名リメイラーのリード開発者、KU ルーヴェン大学の博士課程在籍者。サトシの最後の文書化されたメールから 3 か月後の 2011 年 7 月 3 日に自殺。
 
-**外部的状況。** 未決着。→ [サッサマン＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) にタイミング論点・サイファーパンクとしての経歴論・反証（直接の文書接続なし、KU ルーヴェン博士課程の負荷、パターソンの正体問題への沈黙）の検討を記載。
+**外部的状況。** 未決着。→ [サッサマン＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)にタイミング論点・サイファーパンクとしての経歴論・反証（直接の文書接続なし、KU ルーヴェン博士課程の負荷、パターソンの正体問題への沈黙）の検討を記載。
 
 ### C. 第三者発掘・自称・名前一致で浮上した候補
 
@@ -301,17 +301,17 @@ quadrantChart
 
 **経歴。** カナダ人の Bitcoin Core 開発者（1985 年生まれ）、2012 年頃以降の主要な貢献者の一人で、Replace-by-Fee（RBF）などコアプロトコルの仕事で知られる。OCAD University 卒（Integrated Media 専攻、2011 年）。BitcoinTalk への登録は 2010 年 12 月 7 日、ユーザー名「retep」。
 
-**外部的状況。** 自己否定（HBO 後）／コミュニティによる根拠の批判。→ [ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) に [HBO 2024 ドキュメンタリーの主張](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)の分析的扱いを記載。
+**外部的状況。** 自己否定（HBO 後）／コミュニティによる根拠の批判。→ [ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)に [HBO 2024 ドキュメンタリーの主張](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)の分析的扱いを記載。
 
 #### 金子勇
 
 **経歴。** 日本の研究者（1970–2013 年）、P2P ファイル共有ソフト *Winny*（2002 年公開）の開発者。2004–2011 年に著作権法違反幇助の刑事裁判の被告人だった（2011 年 12 月、最高裁で無罪確定）。2013 年 7 月 6 日に心筋梗塞で死去。
 
-**外部的状況。** 未決着。→ [金子勇＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) に分析的扱いを記載。
+**外部的状況。** 未決着。→ [金子勇＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)に分析的扱いを記載。
 
 #### ポール・ルルー
 
-*[補足：本アーカイブには[ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/) を保持しているが、それ以外のルルーの一次資料エントリー（E4M サイファーパンク告知・刑事事件文書・Mastermind 章抜粋）は保持していない。以下の概略は外部ソース — 主にジャーナリストのエヴァン・ラトリフの『The Mastermind』（Random House、2019 年）および Atavist の長編記事 — と公開記録に基づく。具体的な日付や記述はアーカイブ検証ではなく外部由来として扱われたい。]*
+*[補足：本アーカイブには[ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)を保持しているが、それ以外のルルーの一次資料エントリー（E4M サイファーパンク告知・刑事事件文書・Mastermind 章抜粋）は保持していない。以下の概略は外部ソース — 主にジャーナリストのエヴァン・ラトリフの『The Mastermind』（Random House、2019 年）および Atavist の長編記事 — と公開記録に基づく。具体的な日付や記述はアーカイブ検証ではなく外部由来として扱われたい。]*
 
 **経歴。** 南アフリカ／ジンバブエ出身の元暗号ソフトウェア開発者（1999 年に *E4M* というオープンソースのディスク暗号化ソフトウェアを開発、後の TrueCrypt の基盤）。2002 年頃から、オンライン薬局、武器密売、覚醒剤製造を含む国際的な犯罪組織の運営に転じた。2012 年 9 月に米国当局に逮捕、公的報道によれば長期の連邦刑期に服している。
 

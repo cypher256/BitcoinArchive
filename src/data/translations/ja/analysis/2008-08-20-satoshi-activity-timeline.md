@@ -49,8 +49,8 @@ translationStatus: complete
 
 - リリース前の cryptography メーリングリストと Bitcoin-list での集中的な活動（2008 年 10 月 〜 2009 年 1 月）
 - 2009 年後半から 2010 年にかけての BitcoinTalk 活動の爆発 — 記録上のサトシの生涯で最も密度の高い期間
-- 2010 年 3 〜 5 月の 75 日間の SourceForge SVN 空白（別途 [ソースコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/) で扱う）
+- 2010 年 3 〜 5 月の 75 日間の SourceForge SVN 空白（別途[ソースコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)で扱う）
 - 2011 年初頭の急速な衰退、2011 年 4 月のマイク・ハーンとギャビン・アンドレセン宛の別れの言葉で終了
-- 2014 年の議論ありの単一の P2P Foundation 投稿（ドリアン・ナカモトへの反論）— 他のすべてから 3 年離れて単独で立つ。ミシェル・バウエンスは [2025 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/) でその時期サトシから直接メールが届き、Newsweek が特定した人物ではないと否定したと回想している — そのメールはアーカイブに収録されていない（公開された写しが存在しない）が、孤立した 2014 年のドットに欠けていた文脈を補完する
+- 2014 年の議論ありの単一の P2P Foundation 投稿（ドリアン・ナカモトへの反論）— 他のすべてから 3 年離れて単独で立つ。ミシェル・バウエンスは [2025 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/)でその時期サトシから直接メールが届き、Newsweek が特定した人物ではないと否定したと回想している — そのメールはアーカイブに収録されていない（公開された写しが存在しない）が、孤立した 2014 年のドットに欠けていた文脈を補完する
 
-このコーパスにおいて *サトシが自分について何を語ったか* の編者による読みについては、[自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/) を参照。
+このコーパスにおいて *サトシが自分について何を語ったか* の編者による読みについては、[自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)を参照。

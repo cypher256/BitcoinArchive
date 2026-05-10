@@ -48,7 +48,7 @@ translationStatus: complete
 
 **コミットとマージ。**
 
-変更はサトシ時代の貢献者プールの外側から来た。**ニルス・シュナイダー** (BitcoinTalk ハンドル `tcatm`) — [2010 年の v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/) でサトシがマイニングのミッドステートキャッシュ最適化の功績を認めた同じ貢献者 — が `no-cryptopp` ブランチを開いた。実体的なコミット (`6ccff2cb`) は **2011 年 9 月 27 日** で、`src/main.cpp` の `SHA256Transform()` を Crypto++ の `CryptoPP::SHA256::Transform` から OpenSSL の `SHA256_Init` / `SHA256_Update` 呼び出しに書き換え、`using CryptoPP::ByteReverse` インポートを削除し、`src/cryptopp/` ディレクトリツリー全体 (16 ファイル: `sha.cpp`、`sha.h`、`cryptlib.h`、`config.h`、`cpu.cpp`、`cpu.h`、`iterhash.h`、`misc.h`、`obj/.gitignore`、`pch.h`、`secblock.h`、`simple.h`、`smartptr.h`、`stdcpp.h`、`License.txt`、`Readme.txt`) を削除した。
+変更はサトシ時代の貢献者プールの外側から来た。**ニルス・シュナイダー** (BitcoinTalk ハンドル `tcatm`) — [2010 年の v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/)でサトシがマイニングのミッドステートキャッシュ最適化の功績を認めた同じ貢献者 — が `no-cryptopp` ブランチを開いた。実体的なコミット (`6ccff2cb`) は **2011 年 9 月 27 日** で、`src/main.cpp` の `SHA256Transform()` を Crypto++ の `CryptoPP::SHA256::Transform` から OpenSSL の `SHA256_Init` / `SHA256_Update` 呼び出しに書き換え、`using CryptoPP::ByteReverse` インポートを削除し、`src/cryptopp/` ディレクトリツリー全体 (16 ファイル: `sha.cpp`、`sha.h`、`cryptlib.h`、`config.h`、`cpu.cpp`、`cpu.h`、`iterhash.h`、`misc.h`、`obj/.gitignore`、`pch.h`、`secblock.h`、`simple.h`、`smartptr.h`、`stdcpp.h`、`License.txt`、`Readme.txt`) を削除した。
 
 サトシの[2011 年 4 月の引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)後にプロジェクトのリードメンテナーとなっていた[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が、**2011 年 10 月 5 日**にブランチをマージした (コミット `b898c8fc`、「Merge branch 'no-cryptopp' of https://github.com/tcatm/bitcoin」)。マージにより Bitcoin Core のメインラインは以降 SHA-256 については OpenSSL のみとなった。ビットコイン v0.5.0 は 2011 年 11 月 20 日にタグ付けされ、6 週間後にユーザーへ出荷された。
 
@@ -74,6 +74,6 @@ OpenSSL SHA-256 パス自身も、2014 年に Bitcoin Core のインツリー実
 
 **サトシ正体問題への関連。**
 
-[ウェイ・ダイ＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) はビットコイン v0.1 の Crypto++ 依存を構造的論点として扱う: 名指し候補のうち、ビットコインがソースツリーに実際に含めたライブラリを著作したのはウェイ・ダイのみ、というもの。本論点は時間的に限定されている。ビットコイン v0.5 (2011 年 11 月) では Bitcoin Core はもはや Crypto++ サブセットを保持していない。ウェイ・ダイのライブラリへのソースツリーレベルの構造的コードベース依存は、v0.1 (2009 年 1 月) から v0.4.x までで終わった。変更は暗号学的アイデンティティの根拠で行われたのではない — コミュニティ貢献者 (シュナイダー) によるインツリー保守負担削減を動機とする通常のコード整理であり、サトシ後のメンテナー (アンドレセン) によって承認された — が、その結果として、「ビットコインがソースツリーレベルでウェイ・ダイのライブラリに依存している」 という主張が生きていた 22 か月の窓が確定する。その窓の外では、本主張は稼働中のプロトコルではなく過去のリリースについてのものとなる。
+[ウェイ・ダイ＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)はビットコイン v0.1 の Crypto++ 依存を構造的論点として扱う: 名指し候補のうち、ビットコインがソースツリーに実際に含めたライブラリを著作したのはウェイ・ダイのみ、というもの。本論点は時間的に限定されている。ビットコイン v0.5 (2011 年 11 月) では Bitcoin Core はもはや Crypto++ サブセットを保持していない。ウェイ・ダイのライブラリへのソースツリーレベルの構造的コードベース依存は、v0.1 (2009 年 1 月) から v0.4.x までで終わった。変更は暗号学的アイデンティティの根拠で行われたのではない — コミュニティ貢献者 (シュナイダー) によるインツリー保守負担削減を動機とする通常のコード整理であり、サトシ後のメンテナー (アンドレセン) によって承認された — が、その結果として、「ビットコインがソースツリーレベルでウェイ・ダイのライブラリに依存している」 という主張が生きていた 22 か月の窓が確定する。その窓の外では、本主張は稼働中のプロトコルではなく過去のリリースについてのものとなる。
 
 [ウェイ・ダイ＝サトシ仮説エントリ §2.2](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) はコードベース依存を、ウェイ・ダイが直接的なコード貢献の観点で他候補と構造的に区別不能であるとする帰無仮説に対する反証として枠組みづける。本エントリはその反証の上限を記録する: v0.5.0 で終了する。

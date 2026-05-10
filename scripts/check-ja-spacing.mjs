@@ -50,6 +50,29 @@ function walkFiles(dir) {
 const JA_LETTER = '[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\u3005\\u30FC]';
 const JA_JA_SPACE = new RegExp(`(${JA_LETTER}) (${JA_LETTER})`, 'gu');
 
+// JA × JA stranded space ACROSS a markdown link boundary. The plain
+// JA_JA_SPACE check above masks `](url)` as `]x`, which means a JA char
+// adjacent to a markdown link is hidden behind ASCII placeholders and
+// missed. These two patterns recover the boundary cases:
+//
+//   ・ JA + " " + [JA-leading link text](url)
+//     e.g. `参考は [サトシ仮説](url) ...` → `は[サトシ仮説](url) ...`
+//
+//   ・ [JA-trailing link text](url) + " " + JA
+//     e.g. `... [サトシ仮説](url) を参照` → `[サトシ仮説](url)を参照`
+//
+// In both cases the JA × JA boundary requires NO space per the
+// half-width-space convention; the link text edge character is
+// considered the adjacent character on the link side.
+const JA_LINK_LEFT = new RegExp(
+  `(${JA_LETTER}) \\[(${JA_LETTER})(?:[^\\]\\n]|\\\\\\])*\\]\\([^)\\n]+\\)`,
+  'gu'
+);
+const JA_LINK_RIGHT = new RegExp(
+  `\\[(?:[^\\]\\n]|\\\\\\])*(${JA_LETTER})\\]\\([^)\\n]+\\) (${JA_LETTER})`,
+  'gu'
+);
+
 const violations = [];
 let scanned = 0;
 
@@ -117,6 +140,38 @@ for (const root of targets) {
           line: i + 1,
           found: m[0],
           suggested: m[1] + m[2],
+          context: ctx.trim(),
+        });
+      }
+
+      // Markdown-link boundary checks run on the ORIGINAL line (not the
+      // URL-stripped form), since they need to inspect the link text's
+      // edge characters and the URL itself.
+      const leftMatches = [...raw.matchAll(JA_LINK_LEFT)];
+      for (const m of leftMatches) {
+        const idx = m.index ?? 0;
+        const start = Math.max(0, idx - 8);
+        const end = Math.min(raw.length, idx + m[0].length + 4);
+        const ctx = raw.slice(start, end);
+        violations.push({
+          file: path.relative(repoRoot, file),
+          line: i + 1,
+          found: `${m[1]} [${m[2]}…`,
+          suggested: `${m[1]}[${m[2]}…`,
+          context: ctx.trim(),
+        });
+      }
+      const rightMatches = [...raw.matchAll(JA_LINK_RIGHT)];
+      for (const m of rightMatches) {
+        const idx = m.index ?? 0;
+        const start = Math.max(0, idx - 4);
+        const end = Math.min(raw.length, idx + m[0].length + 8);
+        const ctx = raw.slice(start, end);
+        violations.push({
+          file: path.relative(repoRoot, file),
+          line: i + 1,
+          found: `…${m[1]}](url) ${m[2]}`,
+          suggested: `…${m[1]}](url)${m[2]}`,
           context: ctx.trim(),
         });
       }

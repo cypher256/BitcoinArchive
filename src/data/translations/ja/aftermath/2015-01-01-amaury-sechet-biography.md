@@ -29,11 +29,11 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-アモリー・セシェ (オンラインハンドル `deadalnix`) はフランス人ソフトウェアエンジニアで、ビットコイン以前は Facebook の HHVM (HipHop 仮想マシン) チームに勤務していた。2015 年頃から Bitcoin Core への寄稿を行い、後に 2017 年 8 月 1 日のブロック 478558 における [ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) を生んだ Bitcoin ABC 実装のリード開発者となった。
+アモリー・セシェ (オンラインハンドル `deadalnix`) はフランス人ソフトウェアエンジニアで、ビットコイン以前は Facebook の HHVM (HipHop 仮想マシン) チームに勤務していた。2015 年頃から Bitcoin Core への寄稿を行い、後に 2017 年 8 月 1 日のブロック 478558 における[ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)を生んだ Bitcoin ABC 実装のリード開発者となった。
 
 ## Bitcoin Core 寄稿期 (2015 ~ 2017)
 
-セシェの GitHub 履歴 (`deadalnix`、`secondarySources` にリンク) には 2015 年以降の Bitcoin Core 寄稿が記録されている。主にプロトコル層のコード (合意ルール、P2P ネットワーキング、検証) への寄稿である。彼は後の [ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) となる公開議論で活発に発言し、より大きなブロック陣営に整列していた。2016 年までには、Bitcoin Core の他のメンバーが収束しつつあった SegWit + レイヤー 2 路線ではなく、オンチェーンのブロックサイズ拡張を可視的に主張していた。
+セシェの GitHub 履歴 (`deadalnix`、`secondarySources` にリンク) には 2015 年以降の Bitcoin Core 寄稿が記録されている。主にプロトコル層のコード (合意ルール、P2P ネットワーキング、検証) への寄稿である。彼は後の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)となる公開議論で活発に発言し、より大きなブロック陣営に整列していた。2016 年までには、Bitcoin Core の他のメンバーが収束しつつあった SegWit + レイヤー 2 路線ではなく、オンチェーンのブロックサイズ拡張を可視的に主張していた。
 
 ## Bitcoin ABC とビットコインキャッシュフォーク (2017 年)
 

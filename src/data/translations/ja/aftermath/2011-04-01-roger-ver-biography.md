@@ -27,7 +27,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-ロジャー・キース・ヴァー (1979 年 1 月 27 日、カリフォルニア州サンノゼ生まれ) は、2011 年のビットコイン参入を通じて初期最大級の個人保有者の一人となり、ビットコイン最初期の商業受け入れ経路の運用者 (Memory Dealers)、ビットコイン事業の創業期世代へのエンジェル投資家として知られる。2017 年までに [ビットコインキャッシュ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) ハードフォークの最も公的な推進者となり、彼が以前から取得していた bitcoin.com ドメインは同チェーンの主要な広報媒体となった。
+ロジャー・キース・ヴァー (1979 年 1 月 27 日、カリフォルニア州サンノゼ生まれ) は、2011 年のビットコイン参入を通じて初期最大級の個人保有者の一人となり、ビットコイン最初期の商業受け入れ経路の運用者 (Memory Dealers)、ビットコイン事業の創業期世代へのエンジェル投資家として知られる。2017 年までに[ビットコインキャッシュ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)ハードフォークの最も公的な推進者となり、彼が以前から取得していた bitcoin.com ドメインは同チェーンの主要な広報媒体となった。
 
 ## Memory Dealers とビットコイン参入 (2002 ~ 2011)
 
@@ -41,7 +41,7 @@ relatedEntries:
 
 ## ブロックサイズ戦争とビットコインキャッシュ (2015 ~ 2017)
 
-2015 年までにヴァーは bitcoin.com (ドメイン) を、より大きなブロックサイズを推進する公開プラットフォームとして位置づけていた。[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) を通してヴァーは、ビットコインの当時の 1 MB 上限がチェーンを日常決済として機能させない要因だと最も声高に主張する一人だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年) と Bitcoin Classic (2016 年) が有効化に失敗し、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協案が崩壊した後、より大きなブロックを望む陣営は 2017 年 8 月 1 日の [ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) で分裂した。ヴァーは最も目立つ公的推進者であり、bitcoin.com は BCH 推進の主要な媒体となった。彼の「BCH こそサトシが描いた本物のビットコイン」 という枠付けは広範なビットコインコミュニティ内で持続的な論争を生んだ。
+2015 年までにヴァーは bitcoin.com (ドメイン) を、より大きなブロックサイズを推進する公開プラットフォームとして位置づけていた。[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)を通してヴァーは、ビットコインの当時の 1 MB 上限がチェーンを日常決済として機能させない要因だと最も声高に主張する一人だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年) と Bitcoin Classic (2016 年) が有効化に失敗し、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協案が崩壊した後、より大きなブロックを望む陣営は 2017 年 8 月 1 日の[ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)で分裂した。ヴァーは最も目立つ公的推進者であり、bitcoin.com は BCH 推進の主要な媒体となった。彼の「BCH こそサトシが描いた本物のビットコイン」 という枠付けは広範なビットコインコミュニティ内で持続的な論争を生んだ。
 
 ## 米税務詐欺容疑 (2024 年)
 

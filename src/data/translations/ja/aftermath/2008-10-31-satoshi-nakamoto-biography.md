@@ -81,7 +81,7 @@ timeline
 2008年8月20日、サトシはアダム・バックに新しい電子キャッシュシステムについて[メールを送り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)、ビットコインとなるものに関する最初の既知の通信となった。2008年10月31日、サトシはmetzdowd.comの暗号学メーリングリストに[「Bitcoin: A Peer-to-Peer Electronic Cash System」を発表した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)。この論文は、信頼される第三者なしにコンセンサースを達成するためプルーフ・オブ・ワークを使用する分散型デジタル通貨システムを記述した。
 
 ### ローンチ
-2009年1月3日、サトシは[ジェネシスブロック（ブロック 0）](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)のパラメーターを定義し、タイムズ紙の一面から「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というテキストを埋め込んだ（ブロック 0 はソースコードに定数としてハードコードされており、各ノードがローカルに再構築する — 詳細は [ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) 参照）。2009年1月8日、[Bitcoin v0.1が公開リリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。2009年1月12日、サトシは[ブロック 170でハル・フィニーに10 BTCを送信した](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金である。
+2009年1月3日、サトシは[ジェネシスブロック（ブロック 0）](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)のパラメーターを定義し、タイムズ紙の一面から「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というテキストを埋め込んだ（ブロック 0 はソースコードに定数としてハードコードされており、各ノードがローカルに再構築する — 詳細は[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)参照）。2009年1月8日、[Bitcoin v0.1が公開リリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。2009年1月12日、サトシは[ブロック 170でハル・フィニーに10 BTCを送信した](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金である。
 
 ### 開発とコミュニケーション
 サトシは複数のプラットフォームで活動した：暗号学メーリングリスト、SourceForge上のbitcoin-listメーリングリスト、BitcoinTalkフォーラム（サトシとマルッティ・マルミが作成）、P2P Foundationフォーラム、そしてメールのやり取り。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)、[レイ・ディリンジャー](/BitcoinArchive/ja/participants/ray-dillinger/)、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)らと直接通信した。2009年から2010年にかけて、サトシはビットコインの設計を説明し、技術的な質問に答え、開発を調整する数百のフォーラム投稿とメールを執筆した。
@@ -104,8 +104,8 @@ Bitcoin v0.1はWindows上でMicrosoft Visual C++ 6.0 SP6とMinGW GCC 3.4.5を使
 
 ### 編集分析
 - **配布形式と開発環境**: `.rar` パッケージング、バージョン管理の不在、ハンガリアン記法による変数命名、OpenSSL 依存、[ダン・カミンスキーによる 2011 年セキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)、そして「先見的セキュリティと非形式的プロセスの区別」は [v0.1 配布形式と開発環境の異例性についての分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/)で扱う
-- **自己言及**: サトシが自分自身に言及した発言（識別子主張、設計過程の自己開示、運用状態、能力の自己評価、撤退表明）はすべて [自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で網羅する
-- **サイファーパンクとの位置関係**: コミュニティへの参加痕跡がないにもかかわらず実践がサイファーパンク思想核と一致する点は [独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う
-- **署名の読解**: 「サトシ・ナカモト」という仮名が落ちるテクノオリエンタリズム的な象徴空間は [仮名と『AKIRA』についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う
+- **自己言及**: サトシが自分自身に言及した発言（識別子主張、設計過程の自己開示、運用状態、能力の自己評価、撤退表明）はすべて[自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で網羅する
+- **サイファーパンクとの位置関係**: コミュニティへの参加痕跡がないにもかかわらず実践がサイファーパンク思想核と一致する点は[独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う
+- **署名の読解**: 「サトシ・ナカモト」という仮名が落ちるテクノオリエンタリズム的な象徴空間は[仮名と『AKIRA』についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う
 
 暗号学メーリングリストや BitcoinTalk フォーラム上でのサトシのコミュニケーションは一貫して冷静で明確、論理的に構造化されていた。優先順位をつけ、委任し、戦略的な判断を下した（例: WikiLeaks サポートの辞退、ギャビン・アンドレセンへのリーダーシップ移行）。ギャビンへの引き継ぎは、継続的なプロジェクト運営には異なるスキルセットが必要だという自覚を示している。

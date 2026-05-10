@@ -26,7 +26,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-ジハン・ウー (中国語: 吴忌寒、1986 年中国・重慶生まれ) は、2011 年のビットコイン白書中国語訳から始まり、2014 ~ 2018 年期に ASIC 採掘ハードウェアの支配的製造企業となった Bitmain を育て上げた中国の起業家である。2017 年までにビットコイン採掘における最も影響力ある人物の一人となり、ローンチ時の [ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) に Bitmain 系列のハッシュレートを投じた。
+ジハン・ウー (中国語: 吴忌寒、1986 年中国・重慶生まれ) は、2011 年のビットコイン白書中国語訳から始まり、2014 ~ 2018 年期に ASIC 採掘ハードウェアの支配的製造企業となった Bitmain を育て上げた中国の起業家である。2017 年までにビットコイン採掘における最も影響力ある人物の一人となり、ローンチ時の[ビットコインキャッシュハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に Bitmain 系列のハッシュレートを投じた。
 
 ## ビットコイン参入と白書翻訳 (2011 年)
 
@@ -40,7 +40,7 @@ relatedEntries:
 
 ## ブロックサイズ戦争とビットコインキャッシュ (2015 ~ 2017 年)
 
-ウーは 2015 ~ 2017 年の [ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) を通して、より大きなブロックを推進する声高な提唱者だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年)、Bitcoin Classic (2016 年)、Bitcoin Unlimited (2016 年) を順次支持し、ニューヨーク合意 (2017 年 5 月) に署名、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協が崩壊した後、2017 年 8 月 1 日の [ビットコインキャッシュフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) に Bitmain 系列のハッシュレートを投じた。Bitmain のハッシュ力は、難易度アルゴリズムが調整中だった BCH 初期において、ブロック生成を維持できるかどうかを決める要素だった。
+ウーは 2015 ~ 2017 年の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)を通して、より大きなブロックを推進する声高な提唱者だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年)、Bitcoin Classic (2016 年)、Bitcoin Unlimited (2016 年) を順次支持し、ニューヨーク合意 (2017 年 5 月) に署名、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協が崩壊した後、2017 年 8 月 1 日の[ビットコインキャッシュフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に Bitmain 系列のハッシュレートを投じた。Bitmain のハッシュ力は、難易度アルゴリズムが調整中だった BCH 初期において、ブロック生成を維持できるかどうかを決める要素だった。
 
 ## Bitmain 経営権抗争と 2018 年以降の事業
 

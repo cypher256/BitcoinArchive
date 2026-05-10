@@ -52,7 +52,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-本エントリは一つの出来事 — 2013 年 12 月 16 日にマージされた [プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) (Bitcoin-Qt から 「Bitcoin Core」 への改名) と、2014 年 3 月 19 日にバージョン 0.9.0 として公開された改名 — を中心に文書化された記録を整理し、後の三つの証言 ([ハーン 2016](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ハーン 2024 COPA](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)、[ハーン 2025 CoinGeek](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)) と照合する。当時は曖昧さの解消として提示された改名が、後により重要な意味を持つようになったかを問う。
+本エントリは一つの出来事 — 2013 年 12 月 16 日にマージされた[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) (Bitcoin-Qt から 「Bitcoin Core」 への改名) と、2014 年 3 月 19 日にバージョン 0.9.0 として公開された改名 — を中心に文書化された記録を整理し、後の三つの証言 ([ハーン 2016](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ハーン 2024 COPA](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)、[ハーン 2025 CoinGeek](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)) と照合する。当時は曖昧さの解消として提示された改名が、後により重要な意味を持つようになったかを問う。
 
 ここで提示する読みでは、答えは「然り」 である。ただし主張は字面ほど広くはない。**語彙的主張**は、選ばれた名称 「Bitcoin Core」 が 「リファレンスクライアント」 の同義語として機能していない、という点である。「Bitcoin-Qt」 が持たなかった求心力的な重みを、この名称は持つ。改名が後の効果を引き起こしたのか、それとも既に存在していた構造に名前を与えただけなのかは、別個でより難しい問いである (§6)。
 
@@ -64,15 +64,15 @@ translationStatus: complete
 
 | 名称 | 用法 |
 |---|---|
-| 「Bitcoin」 | サトシ自身が告知に用いた。[暗号学メーリングリストでの v0.1 公開投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) や、[ハル・フィニーの 2009 年 1 月 11 日のツイート 「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) など |
+| 「Bitcoin」 | サトシ自身が告知に用いた。[暗号学メーリングリストでの v0.1 公開投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)や、[ハル・フィニーの 2009 年 1 月 11 日のツイート 「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) など |
 | 「bitcoind」 | ヘッドレスデーモンのコマンド名。サトシのリポジトリから引き継がれた |
 | 「bitcoin-qt」 | Qt 製 GUI が統合された際に追加された実行ファイル名。2013 年まで使用 |
 
-「リファレンス実装」 という呼称は当時の文章に散見されるが、ソフトウェア自体のブランディングには採用されていない。マイク・ハーンの [2016 年 1 月の離脱記事](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) では「現在 Bitcoin Core と呼んでいるプログラム」 という言い回しが使われている。これ自体が、この名称がソフトウェア本体より新しいラベルだったことを示している。
+「リファレンス実装」 という呼称は当時の文章に散見されるが、ソフトウェア自体のブランディングには採用されていない。マイク・ハーンの [2016 年 1 月の離脱記事](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)では「現在 Bitcoin Core と呼んでいるプログラム」 という言い回しが使われている。これ自体が、この名称がソフトウェア本体より新しいラベルだったことを示している。
 
 ### 1.2 PR #3408 (2013 年 12 月 16 日マージ)
 
-[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) は [ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/) (ハンドル名: laanwj) が起票し、2013 年 12 月 16 日にマージされた。PR 本文と続く 0.9.0 リリースノートに記された動機は同一である。
+[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) は[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/) (ハンドル名: laanwj) が起票し、2013 年 12 月 16 日にマージされた。PR 本文と続く 0.9.0 リリースノートに記された動機は同一である。
 
 > 「Bitcoin というネットワークと Bitcoin というソフトウェアの間の混乱を減らすために、リファレンスクライアントを Bitcoin Core に改名した」
 
@@ -82,7 +82,7 @@ PR の改変範囲はユーザーから見える文字列 (プログラムメッ
 
 ### 1.3 改名時の内部不一致
 
-PR スレッドには [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) からの実質的な異論が記録されている。[PR #3408 の議論](https://github.com/bitcoin/bitcoin/pull/3408) で要約すれば — 「core」 (核) という語はコンセンサスに直結するコードに限定すべきで、コードベース全体に適用すべきではない、という主張である。ウラジミールはこれに対し、過去の議論 (issue #3203) を参照しつつ、どんな名前を選んでも全員一致は得られないと応じた。
+PR スレッドには[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)からの実質的な異論が記録されている。[PR #3408 の議論](https://github.com/bitcoin/bitcoin/pull/3408)で要約すれば — 「core」 (核) という語はコンセンサスに直結するコードに限定すべきで、コードベース全体に適用すべきではない、という主張である。ウラジミールはこれに対し、過去の議論 (issue #3203) を参照しつつ、どんな名前を選んでも全員一致は得られないと応じた。
 
 ピーター・トッドの異論は注目に値する。彼が提案した 「core」 の意味 — 還元不能な最小コンセンサスルール — は、まさに 「Bitcoin Core」 という広い名称が後に保てなくなった区別である。2014 年以降、「Bitcoin Core」 は (a) コンセンサス重要コードと (b) 周辺のソフトウェアプロジェクトの両者を、一つのラベルで包摂し、両者を区別しないものとなった。
 
@@ -134,11 +134,11 @@ gantt
 
 ## 3. 効果に関する三つの証言
 
-§2 の解釈的読みは、それぞれ別の音域で、後の三つの証言によって裏付けられる。すべて [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) のものである。彼は初期に [サトシと直接メールを交わし](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)、2015〜2016 年のガバナンス危機までプロジェクトに残った人物である。
+§2 の解釈的読みは、それぞれ別の音域で、後の三つの証言によって裏付けられる。すべて[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)のものである。彼は初期に[サトシと直接メールを交わし](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)、2015〜2016 年のガバナンス危機までプロジェクトに残った人物である。
 
 ### 3.1 ハーン、2016 年 1 月 (「Bitcoin 実験の決着」)
 
-[2016 年 1 月の離脱記事](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) でハーンはこう書いている。
+[2016 年 1 月の離脱記事](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)でハーンはこう書いている。
 
 > 「サトシが去ったとき、彼は現在 Bitcoin Core と呼んでいるプログラムの手綱を、初期の貢献者の一人であるギャビン・アンドレセンに引き渡した」
 
@@ -146,17 +146,17 @@ gantt
 
 ### 3.2 ハーン、2024 年 2 月 (COPA 対ライト裁判の証人陳述書)
 
-[ハーンの COPA 証言](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/) は改名そのものを直接論じてはいないが、2009〜2014 年のプロジェクト権威構造についてのハーンの説明を文書化している。これは 2014 年の改名を読む際の同時代的枠組みを提供する。
+[ハーンの COPA 証言](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)は改名そのものを直接論じてはいないが、2009〜2014 年のプロジェクト権威構造についてのハーンの説明を文書化している。これは 2014 年の改名を読む際の同時代的枠組みを提供する。
 
 ### 3.3 ハーン、2025 年 2 月 (「CoinGeek 回顧」)
 
-[CoinGeek インタビュー](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/) でハーンは — より長い距離から振り返って — 「Bitcoin Core」 という名称の採用を後悔し、その命名がプロジェクト内の不健全な権力構造を強化したと指摘した。
+[CoinGeek インタビュー](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)でハーンは — より長い距離から振り返って — 「Bitcoin Core」 という名称の採用を後悔し、その命名がプロジェクト内の不健全な権力構造を強化したと指摘した。
 
 これは三つの証言のうち、ハーンが改名そのものを問題として明示的に枠付けた唯一のものである。インタビューでは仕組みの詳細は説明されていない。しかし、彼はこの後悔を [Bitcoin Foundation](#5-bitcoin-foundation-との並行性) の扱いへの後悔と並べて述べており、両者を同じパターン — 実験的な仕組みを早すぎる段階で制度的な仕組みに変えること — の現れとして見ていることを示唆する。
 
 ## 4. 2015〜2017 年のフォーク事件 — 事例研究
 
-2015〜2017 年にかけて、複数の代替実装がビットコインのコードベースをフォークした（[ビットコインのフォーク・アルトコイン系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) 分析に整理されている）。それぞれを取り巻いた語彙は示唆に富む。
+2015〜2017 年にかけて、複数の代替実装がビットコインのコードベースをフォークした（[ビットコインのフォーク・アルトコイン系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)分析に整理されている）。それぞれを取り巻いた語彙は示唆に富む。
 
 | 年 | 名称 | 当時の語彙が枠付けた立場 |
 |---|---|---|
@@ -171,7 +171,7 @@ gantt
 
 マイク・ハーン自身の離脱 ([Bitcoin XT、2015〜2016 年](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)) はそうした事例の一つである — 彼の離脱は公然と Bitcoin から去ることとして枠付けられ、Bitcoin 内部で一つの規則集合を擁護することとしては枠付けられなかった。
 
-本エントリの読みは語彙的効果に限定している。これらのフォーク事件が経済的・政治的争奪戦として展開した理由 — 2011 年以後の権威の真空、規則決定の上に積み上がった経済的重み、そしてビットコインを普通のオープンソースから分けるプロトコル・ソフトウェア・通貨ネットワークの三層分離 — については [ビットコインのフォーク戦争はオープンソースの話ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/) を参照。
+本エントリの読みは語彙的効果に限定している。これらのフォーク事件が経済的・政治的争奪戦として展開した理由 — 2011 年以後の権威の真空、規則決定の上に積み上がった経済的重み、そしてビットコインを普通のオープンソースから分けるプロトコル・ソフトウェア・通貨ネットワークの三層分離 — については[ビットコインのフォーク戦争はオープンソースの話ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)を参照。
 
 ## 5. Bitcoin Foundation との並行性
 
@@ -194,10 +194,10 @@ gantt
 
 **(b) 「中立的な名称は存在しなかった」**: プロトコルとソフトウェアがリリース時点で外延的に重なるピアツーピアシステムでは、どんな名称を選んでも曖昧さ解消の問題を完全には解けない。どの名称も時間とともに権威を蓄積する。この読みは部分的に正しい — 故に §2 の議論は読みとして提示され、判定としては提示されない。ただし、同じ議論は 「Bitcoin-Qt」 には弱くしか当てはまらない — 「Qt」 は GUI ツールキットを指し、ソフトウェアにプロトコルの中心であるという主張を背負わせなかった。
 
-**(c) 「権威はすでに集中していた」**: [2010 年 12 月のアンドレセンのリードメンテナー就任告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) から 2013 年まで、コア開発者の小さな集団 (アンドレセン、ウラジミール、ピーテル・ヴァイレ、その他) はすでに事実上の決定権威だった。2014 年の改名はすでに存在していた構造に名前を与えただけで、構造を作り出したのではない。この読みではハーンの後悔は的外れだった、ということになる。この読みも部分的に正しい — 故に本エントリは改名を権威の創出ではなく語彙の*再形成*として枠付けている。
+**(c) 「権威はすでに集中していた」**: [2010 年 12 月のアンドレセンのリードメンテナー就任告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)から 2013 年まで、コア開発者の小さな集団 (アンドレセン、ウラジミール、ピーテル・ヴァイレ、その他) はすでに事実上の決定権威だった。2014 年の改名はすでに存在していた構造に名前を与えただけで、構造を作り出したのではない。この読みではハーンの後悔は的外れだった、ということになる。この読みも部分的に正しい — 故に本エントリは改名を権威の創出ではなく語彙の*再形成*として枠付けている。
 
 §2 で提示した読み — この名称は実装とネットワークを区別していた語彙を取り除き、両者を区別しない語彙で置き換えた — は、三つの反対読みすべてを生き残る。なぜなら語彙的主張は、2014 年以前に誰が権威を持っていたか、あるいは 2015〜2017 年に代替実装がなぜ失敗したか、とは独立しているからである。語彙的主張は次のものである — 2014 年 3 月 19 日以降、当時の語彙では、一方の側を Bitcoin からの離脱として語彙的に位置付けることなく不一致を論じることが難しくなった。証言 (§3)、事例研究 (§4)、並行性 (§5) は、それぞれ独立に語彙的主張をより明瞭にする。
 
 読みを反証する反事実: もし 2015〜2017 年の代替実装のいずれかが、異なる規則集合を稼働しながら主流の用法で 「Bitcoin」 という名称を保持することに成功していれば、語彙的非対称性は機能しなかったことになり、名前は単なるラベルだったということになる。§4 で列挙した四つの代替実装はいずれもそれを達成しなかった。この事実は読みと整合する — 証明ではないが。
 
-*[編者注：本エントリはビットコインのガバナンス史における複数要因のうち一つとしての改名事件を分析する。名前単独で後の権威構造が生み出されたという主張ではないし、2015〜2017 年のスケーリング立場の是非に関する主張でもない。§1 の事実主張は出典付き、§2〜§5 の読みは読みとして提示する。本分析の起点となった証言は [マイク・ハーン 2025 年 CoinGeek 回顧](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/) を参照のこと。]*
+*[編者注：本エントリはビットコインのガバナンス史における複数要因のうち一つとしての改名事件を分析する。名前単独で後の権威構造が生み出されたという主張ではないし、2015〜2017 年のスケーリング立場の是非に関する主張でもない。§1 の事実主張は出典付き、§2〜§5 の読みは読みとして提示する。本分析の起点となった証言は[マイク・ハーン 2025 年 CoinGeek 回顧](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)を参照のこと。]*

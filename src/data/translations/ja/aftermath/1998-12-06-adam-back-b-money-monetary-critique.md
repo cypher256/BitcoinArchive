@@ -46,7 +46,7 @@ translationStatus: complete
 
 *差出人：アダム・バック &lt;aba@dcs.ex.ac.uk&gt;*
 
-[アダム・バック](/BitcoinArchive/ja/participants/adam-back/) は [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) の [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) に対し、貨幣設計上の批評で返信した。バックは提案上の 7 つの個別論点を指摘し、同時に自身の [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) を当該システムの鋳造機構の候補として明示的に提案した。
+[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)に対し、貨幣設計上の批評で返信した。バックは提案上の 7 つの個別論点を指摘し、同時に自身の [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) を当該システムの鋳造機構の候補として明示的に提案した。
 
 **Hashcash を b-money の鋳造機構として：**
 
@@ -81,4 +81,4 @@ translationStatus: complete
 | ❼ 流通価値に等しいリソース・オーバーヘッド | **継続論争** — ビットコインのプルーフ・オブ・ワークに公開以後ずっと付随しているエネルギー消費批判 |
 | 中心提案：「価値を創造するには CPU 時間を燃やす — Hashcash と同じように」 | **ビットコインの中心メカニズム** — Hashcash 型の PoW 基本要素を分散型デジタルキャッシュ台帳と結合し、ブロック報酬による発行で鋳造配分を行う |
 
-*[編者注：本投稿は、ビットコイン公開の 10 年前にアダム・バックが貨幣システム設計の本格的分析に従事していた、ビットコイン以前の一次資料記録である。同じ「Hashcash を b-money の鋳造機構として用いる」 応用は、バックの [2002 年 8 月 Hashcash 論文 §7 応用](http://www.hashcash.org/papers/hashcash.pdf) でより形式的に列挙されており、応用候補として「ウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構としての hashcash」 を明示する。これらはバックがビットコインまたは b-money／Hashcash 結合を実装したことを意味しない — バックは応用候補として提案しただけであり、実装、論点 1 の解決、残る設計空間の合成は、10 年後の [ビットコイン v0.1](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) でサトシが行った貢献として記録されている。]*
+*[編者注：本投稿は、ビットコイン公開の 10 年前にアダム・バックが貨幣システム設計の本格的分析に従事していた、ビットコイン以前の一次資料記録である。同じ「Hashcash を b-money の鋳造機構として用いる」 応用は、バックの [2002 年 8 月 Hashcash 論文 §7 応用](http://www.hashcash.org/papers/hashcash.pdf)でより形式的に列挙されており、応用候補として「ウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構としての hashcash」 を明示する。これらはバックがビットコインまたは b-money／Hashcash 結合を実装したことを意味しない — バックは応用候補として提案しただけであり、実装、論点 1 の解決、残る設計空間の合成は、10 年後の[ビットコイン v0.1](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) でサトシが行った貢献として記録されている。]*

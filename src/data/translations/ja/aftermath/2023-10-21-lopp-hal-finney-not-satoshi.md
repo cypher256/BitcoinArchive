@@ -40,7 +40,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2023 年 10 月 21 日、ビットコイン研究者ジェイムソン・ロップは「ハル・フィニーはサトシ・ナカモトではなかった」と題する分析記事をブログに発表し、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がビットコインの創設者の仮名であったという長年の憶測に対し、複数の角度から詳細な反論を展開した。仮説の主張・支持論点・反証の全体扱いは[ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) にあり、本記事はロップの反証側への具体的貢献を文書化する。
+2023 年 10 月 21 日、ビットコイン研究者ジェイムソン・ロップは「ハル・フィニーはサトシ・ナカモトではなかった」と題する分析記事をブログに発表し、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がビットコインの創設者の仮名であったという長年の憶測に対し、複数の角度から詳細な反論を展開した。仮説の主張・支持論点・反証の全体扱いは[ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)にあり、本記事はロップの反証側への具体的貢献を文書化する。
 
 **レース日のアリバイ（2009 年 4 月 18 日）：**
 
