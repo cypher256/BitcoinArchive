@@ -56,8 +56,8 @@ const l = labels[lang];
     <p class="analysis-desc">{l.pSub}</p>
     <div id="p-anomaly-chart" class="chart-container"></div>
     <div class="legend">
-      <span class="legend-item"><span class="legend-swatch" style="background:#b45309"></span>{l.patoshi}</span>
-      <span class="legend-item"><span class="legend-swatch" style="background:#9ca3af"></span>{l.uniform}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-patoshi"></span>{l.patoshi}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-uniform"></span>{l.uniform}</span>
     </div>
   </section>
 
@@ -85,140 +85,182 @@ const l = labels[lang];
 
     var hexLabels = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
 
+    // Resolve a CSS custom property against :root.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // Patoshi-vs-uniform encoding: accent for the elevated 0–3
+      // bars (the "fingerprint"), --chart-color-6 (gray) for
+      // suppressed 4–F bars and the uniform reference line.
+      // Block 12 outline picks up --chart-negative since it's the
+      // reclassification-anomaly call-out.
+      return {
+        patoshi: token('--color-accent'),
+        uniform: token('--chart-color-6'),
+        anomaly: token('--chart-negative'),
+        muted: token('--color-text-muted'),
+        text: token('--color-text'),
+        bg: token('--color-bg'),
+      };
+    }
+
+    function rerender() {
+      panelP();
+      panelGrid();
+    }
+
     // --- P Anomaly bars ---
-    (function() {
+    function panelP() {
       var container = document.getElementById('p-anomaly-chart');
       if (!container) return;
+      var T = readTokens();
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 20, right: 20, bottom: 50, left: 55 };
-        var H = 260;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 20, right: 20, bottom: 50, left: 55 };
+      var H = 260;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var x = d3.scaleBand().domain(hexLabels).range([0, w]).padding(0.2);
-        var y = d3.scaleLinear().domain([0, d3.max(dist.patoshi) * 1.1]).nice().range([h, 0]);
+      var x = d3.scaleBand().domain(hexLabels).range([0, w]).padding(0.2);
+      var y = d3.scaleLinear().domain([0, d3.max(dist.patoshi) * 1.1]).nice().range([h, 0]);
 
-        // Axes
-        g.append('g').attr('transform', 'translate(0,' + h + ')')
-          .call(d3.axisBottom(x).tickSizeOuter(0))
-          .selectAll('text').attr('font-size', '11px');
-        g.append('text').attr('x', w / 2).attr('y', h + 40)
-          .attr('text-anchor', 'middle').attr('font-size', '11px')
-          .attr('fill', '#6b6b6b').text(l.nibble);
+      // Axes
+      g.append('g').attr('transform', 'translate(0,' + h + ')')
+        .call(d3.axisBottom(x).tickSizeOuter(0))
+        .selectAll('text').attr('font-size', '11px').style('fill', T.text);
+      g.append('text').attr('x', w / 2).attr('y', h + 40)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', T.muted).text(l.nibble);
 
-        g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(function(d) { return d + '%'; }))
-          .selectAll('text').attr('font-size', '10px');
-        g.append('text').attr('transform', 'rotate(-90)')
-          .attr('x', -h / 2).attr('y', -42)
-          .attr('text-anchor', 'middle').attr('font-size', '11px')
-          .attr('fill', '#6b6b6b').text(l.frequency);
+      g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(function(d) { return d + '%'; }))
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
+      g.append('text').attr('transform', 'rotate(-90)')
+        .attr('x', -h / 2).attr('y', -42)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', T.muted).text(l.frequency);
 
-        // Uniform expected line
-        g.append('line')
-          .attr('x1', 0).attr('x2', w)
-          .attr('y1', y(6.25)).attr('y2', y(6.25))
-          .attr('stroke', '#9ca3af').attr('stroke-width', 1.5)
-          .attr('stroke-dasharray', '6,4');
+      // Uniform expected line
+      g.append('line')
+        .attr('x1', 0).attr('x2', w)
+        .attr('y1', y(6.25)).attr('y2', y(6.25))
+        .attr('stroke', T.uniform).attr('stroke-width', 1.5)
+        .attr('stroke-dasharray', '6,4');
 
-        // Patoshi bars
-        g.selectAll('.bar')
-          .data(dist.patoshi)
-          .enter().append('rect')
-          .attr('x', function(d, i) { return x(hexLabels[i]); })
-          .attr('y', function(d) { return y(d); })
-          .attr('width', x.bandwidth())
-          .attr('height', function(d) { return h - y(d); })
-          .attr('fill', function(d, i) { return i <= 3 ? '#b45309' : '#9ca3af'; })
-          .attr('opacity', 0.85);
+      // Patoshi bars
+      g.selectAll('.bar')
+        .data(dist.patoshi)
+        .enter().append('rect')
+        .attr('x', function(d, i) { return x(hexLabels[i]); })
+        .attr('y', function(d) { return y(d); })
+        .attr('width', x.bandwidth())
+        .attr('height', function(d) { return h - y(d); })
+        .attr('fill', function(d, i) { return i <= 3 ? T.patoshi : T.uniform; })
+        .attr('opacity', 0.85);
 
-        // Value labels on top of elevated bars
-        g.selectAll('.label')
-          .data(dist.patoshi)
-          .enter().append('text')
-          .attr('x', function(d, i) { return x(hexLabels[i]) + x.bandwidth() / 2; })
-          .attr('y', function(d) { return y(d) - 4; })
-          .attr('text-anchor', 'middle')
-          .attr('font-size', '10px')
-          .attr('font-weight', '600')
-          .attr('fill', function(d, i) { return i <= 3 ? '#b45309' : 'transparent'; })
-          .text(function(d, i) { return i <= 3 ? d + '%' : ''; });
-      }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+      // Value labels on top of elevated bars
+      g.selectAll('.label')
+        .data(dist.patoshi)
+        .enter().append('text')
+        .attr('x', function(d, i) { return x(hexLabels[i]) + x.bandwidth() / 2; })
+        .attr('y', function(d) { return y(d) - 4; })
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '10px')
+        .attr('font-weight', '600')
+        .attr('fill', function(d, i) { return i <= 3 ? T.patoshi : 'transparent'; })
+        .text(function(d, i) { return i <= 3 ? d + '%' : ''; });
+    }
 
     // --- First 64 blocks grid ---
-    (function() {
+    function panelGrid() {
       var container = document.getElementById('block-coverage-chart');
       if (!container) return;
+      var T = readTokens();
 
-      function draw() {
-        container.innerHTML = '';
-        var rect = container.getBoundingClientRect();
-        var W = rect.width || 600;
-        var margin = { top: 30, right: 20, bottom: 40, left: 40 };
-        var H = 180;
-        var w = W - margin.left - margin.right;
-        var h = H - margin.top - margin.bottom;
+      container.innerHTML = '';
+      var rect = container.getBoundingClientRect();
+      var W = rect.width || 600;
+      var margin = { top: 30, right: 20, bottom: 40, left: 40 };
+      var H = 180;
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
 
-        var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
-        var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-        var cols = 16;
-        var rows = 4;
-        var cellSize = Math.min((w - 10) / cols, (h - 10) / rows);
-        var gridW = cellSize * cols;
-        var gridH = cellSize * rows;
+      var cols = 16;
+      var rows = 4;
+      var cellSize = Math.min((w - 10) / cols, (h - 10) / rows);
+      var gridW = cellSize * cols;
+      var gridH = cellSize * rows;
 
-        // 64 blocks (all showing P anomaly per PLOS ONE)
-        for (var i = 0; i < 64; i++) {
-          var col = i % cols;
-          var row = Math.floor(i / cols);
-          var cx = col * cellSize;
-          var cy = row * cellSize;
-          var isBlock12 = (i === 12);
+      // 64 blocks (all showing P anomaly per PLOS ONE).
+      // Cell labels render on the patoshi-accent fill, so the text
+      // colour pulls from --color-bg for guaranteed contrast across
+      // light/dark themes (light text on warm fill, dark text on
+      // dark-bg-derived fill).
+      for (var i = 0; i < 64; i++) {
+        var col = i % cols;
+        var row = Math.floor(i / cols);
+        var cx = col * cellSize;
+        var cy = row * cellSize;
+        var isBlock12 = (i === 12);
 
-          g.append('rect')
-            .attr('x', cx + 2).attr('y', cy + 2)
-            .attr('width', cellSize - 4).attr('height', cellSize - 4)
-            .attr('fill', '#b45309')
-            .attr('stroke', isBlock12 ? '#dc2626' : 'none')
-            .attr('stroke-width', isBlock12 ? 2 : 0)
-            .attr('rx', 3).attr('opacity', 0.85);
+        g.append('rect')
+          .attr('x', cx + 2).attr('y', cy + 2)
+          .attr('width', cellSize - 4).attr('height', cellSize - 4)
+          .attr('fill', T.patoshi)
+          .attr('stroke', isBlock12 ? T.anomaly : 'none')
+          .attr('stroke-width', isBlock12 ? 2 : 0)
+          .attr('rx', 3).attr('opacity', 0.85);
 
-          g.append('text')
-            .attr('x', cx + cellSize / 2).attr('y', cy + cellSize / 2)
-            .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
-            .attr('font-size', '9px').attr('fill', '#fff')
-            .text(i);
-        }
-
-        // Title
         g.append('text')
-          .attr('x', gridW / 2).attr('y', -12)
-          .attr('text-anchor', 'middle').attr('font-size', '11px')
-          .attr('fill', '#b45309').attr('font-weight', '700')
-          .text(l.allBlocks);
-
-        // Block 12 annotation
-        g.append('text')
-          .attr('x', gridW / 2).attr('y', gridH + 20)
-          .attr('text-anchor', 'middle').attr('font-size', '10px')
-          .attr('fill', '#dc2626').attr('font-weight', '600')
-          .text('■ ' + l.block12Note);
+          .attr('x', cx + cellSize / 2).attr('y', cy + cellSize / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+          .attr('font-size', '9px').attr('fill', T.bg)
+          .text(i);
       }
-      draw();
-      var timer;
-      window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-    })();
+
+      // Title
+      g.append('text')
+        .attr('x', gridW / 2).attr('y', -12)
+        .attr('text-anchor', 'middle').attr('font-size', '11px')
+        .attr('fill', T.patoshi).attr('font-weight', '700')
+        .text(l.allBlocks);
+
+      // Block 12 annotation
+      g.append('text')
+        .attr('x', gridW / 2).attr('y', gridH + 20)
+        .attr('text-anchor', 'middle').attr('font-size', '10px')
+        .attr('fill', T.anomaly).attr('font-weight', '600')
+        .text('■ ' + l.block12Note);
+    }
+
+    rerender();
+
+    var timer;
+    window.addEventListener('resize', function() {
+      clearTimeout(timer);
+      timer = setTimeout(rerender, 250);
+    });
+
+    // Theme/mode listeners — repaint both panels on theme/mode flip.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', rerender);
+      else if (mql.addListener) mql.addListener(rerender);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(rerender).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
@@ -269,4 +311,8 @@ const l = labels[lang];
     height: 12px;
     border-radius: 2px;
   }
+  /* Swatch tokens mirror the bar fill encoding so the legend stays
+     in sync with the chart on theme swap. */
+  .swatch-patoshi { background: var(--color-accent); }
+  .swatch-uniform { background: var(--chart-color-6); }
 </style>
