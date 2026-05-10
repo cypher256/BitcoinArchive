@@ -1,6 +1,33 @@
 ---
+import { readFileSync, existsSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
+
+// Backlink-count lookup for `inlineLinkKeywords` display. Loaded once
+// per build/dev session from the keyword index produced by
+// `scripts/generate-keyword-index.mjs`. The file is regenerated at the
+// top of `npm run dev` / `npm run build` / `npm run check`, so the
+// counts shown here are always synced to the latest archive content.
+//
+// Shape: { [locale]: { counts: { [keyword]: entryCount } } }.
+// `counts` only includes keywords with ≥1 backlink — absent entries
+// imply 0 (and the UI skips the "(N)" suffix in that case).
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const KEYWORD_INDEX_PATH = path.resolve(__dirname, '..', 'data', 'keyword-index.json');
+let keywordCounts: Record<string, Record<string, number>> = { en: {}, ja: {} };
+if (existsSync(KEYWORD_INDEX_PATH)) {
+  try {
+    const raw = JSON.parse(readFileSync(KEYWORD_INDEX_PATH, 'utf-8'));
+    keywordCounts = {
+      en: raw?.en?.counts ?? {},
+      ja: raw?.ja?.counts ?? {},
+    };
+  } catch {
+    // Malformed index — fall back to empty counts.
+  }
+}
 
 interface Participant {
   name: string;
@@ -77,7 +104,7 @@ const isSatoshiAuthor =
 
 {participants.length > 0 && (
   <div class="participants-row">
-    <span class="participants-label">{lang === 'ja' ? '人物:' : 'Figures:'}</span>
+    <span class="participants-label">{lang === 'ja' ? '人物：' : 'Figures:'}</span>
     {participants.map((p, i) => (
       <>
         <a href={localePath(`/participants/${p.slug}/`, lang)} class:list={["participant-link", { satoshi: p.name === 'Satoshi Nakamoto' }]}>
@@ -89,24 +116,30 @@ const isSatoshiAuthor =
   </div>
 )}
 
+{showDefinesRow && (
+  <div class="defines-row">
+    <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
+    {inlineLinkKeywords.map((kw, i) => {
+      const n = keywordCounts[lang]?.[kw] ?? 0;
+      return (
+        <>
+          <span class="defines-keyword">
+            {kw}
+            {n > 0 && <span class="defines-count"> ({n})</span>}
+          </span>
+          {i < inlineLinkKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
+        </>
+      );
+    })}
+  </div>
+)}
+
 {tags.length > 0 && (
   <div class="tags-row">
     {tags.map((tag) => (
       <a href={localePath(`/tags/${tag}/`, lang)} class="tag-link">
         {translateTag(tag, lang)}
       </a>
-    ))}
-  </div>
-)}
-
-{showDefinesRow && (
-  <div class="defines-row">
-    <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
-    {inlineLinkKeywords.map((kw, i) => (
-      <>
-        <span class="defines-keyword">{kw}</span>
-        {i < inlineLinkKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
-      </>
     ))}
   </div>
 )}
@@ -165,11 +198,12 @@ const isSatoshiAuthor =
     font-family: var(--font-heading);
     font-size: 0.8rem;
     color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
     gap: 0.15rem;
   }
   .participants-label {
     margin-right: 0.3rem;
+    font-weight: 600;
   }
   .participant-link {
     text-decoration: none;
@@ -212,17 +246,21 @@ const isSatoshiAuthor =
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.15rem 0.4rem;
     font-family: var(--font-heading);
     font-size: 0.8rem;
     color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
   }
   .defines-label {
     font-weight: 600;
   }
   .defines-keyword {
     color: var(--color-text);
+  }
+  .defines-count {
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
   }
   .defines-sep {
     color: var(--color-border);

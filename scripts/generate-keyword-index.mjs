@@ -82,6 +82,20 @@ const OUTPUT = path.join(ROOT, 'src/data/keyword-index.json');
 // primary-source and cannot be a definition target.
 const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'biography']);
 
+// Verbatim file path fragments — entries whose path contains one of these
+// are whole-record primary source and excluded from auto-link (and from
+// backlink counting). Mirrors `rehype-strip-archive-links.mjs` and
+// `rehype-auto-link-keywords.mjs`.
+const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/'];
+
+// Per-character context-id constants for backlink counting. An occurrence
+// in any non-prose context is excluded from the count, matching the
+// rehype plugin's runtime behavior.
+const CTX_PROSE = 0;
+const CTX_BLOCKQUOTE = 1;
+const CTX_ASIDE = 2;
+const CTX_CODE = 3;
+
 // ---------------------------------------------------------------------------
 // File / frontmatter helpers
 // ---------------------------------------------------------------------------
@@ -107,6 +121,33 @@ function splitFrontmatter(content) {
 
 function entryIdFromPath(absPath, base) {
   return path.relative(base, absPath).replace(/\.md$/, '');
+}
+
+// Build a per-character context map of the body. Each char index maps
+// to a context id (CTX_PROSE / CTX_BLOCKQUOTE / CTX_ASIDE / CTX_CODE).
+// Mirrors the same masking used by `check-inline-link-coverage.mjs`.
+function buildContextMap(body) {
+  const ctx = new Uint8Array(body.length);
+  for (const m of body.matchAll(/```[\s\S]*?```/g)) ctx.fill(CTX_CODE, m.index, m.index + m[0].length);
+  for (const m of body.matchAll(/`[^`\n]*`/g)) ctx.fill(CTX_CODE, m.index, m.index + m[0].length);
+  let cursor = 0;
+  for (const line of body.split('\n')) {
+    if (/^\s*>/.test(line)) ctx.fill(CTX_BLOCKQUOTE, cursor, cursor + line.length);
+    cursor += line.length + 1;
+  }
+  for (const m of body.matchAll(/^\s*\*\[(?:Editor:|Context:|編者注[：:]|補足[：:])[\s\S]*?\]\s*\*\s*$/gm)) {
+    ctx.fill(CTX_ASIDE, m.index, m.index + m[0].length);
+  }
+  return ctx;
+}
+
+function makeKeywordRegex(kw) {
+  const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const headAscii = /[A-Za-z0-9]/.test(kw[0]);
+  const tailAscii = /[A-Za-z0-9]/.test(kw[kw.length - 1]);
+  const prefix = headAscii ? '(?<![A-Za-z0-9])' : '';
+  const suffix = tailAscii ? '(?![A-Za-z0-9])' : '';
+  return new RegExp(prefix + escaped + suffix, 'g');
 }
 
 function parseTypeField(fm) {
@@ -197,7 +238,10 @@ const errors = [];
 const warnings = [];
 const jaNameMap = loadJaParticipantNameMap();
 
-const result = { en: { concept: {}, person: {} }, ja: { concept: {}, person: {} } };
+const result = {
+  en: { concept: {}, person: {}, counts: {} },
+  ja: { concept: {}, person: {}, counts: {} },
+};
 
 for (const { name: locale, base } of COLLECTIONS) {
   const files = walk(base);
@@ -311,6 +355,64 @@ for (const { name: locale, base } of COLLECTIONS) {
         `(slug "${result[locale].person[kw]}"). Differentiate the keyword.`
       );
     }
+  }
+
+  // --- pass 4: backlink counts (entry-level coverage) --------------------
+  // For each keyword, count how many DISTINCT entries have at least one
+  // prose-context occurrence (= number of entries that will hold a link
+  // to the target after auto-link runs, plus those that already have a
+  // manual link to the target, since manual-link text is not masked).
+  // Self-link (concept keyword matching its own entry, or person keyword
+  // matching the bio entry whose primary participant is the target) is
+  // excluded. Verbatim-file paths are excluded entirely. The result
+  // approximates "how many entries reference this definition page."
+  const allKeywords = [
+    ...Object.entries(result[locale].concept).map(([kw, target]) => ({ kw, kind: 'concept', target })),
+    ...Object.entries(result[locale].person).map(([kw, slug]) => ({ kw, kind: 'person', target: slug })),
+  ];
+  // Pre-compute per-file body + context map + skip flag.
+  const fileInfo = new Map();
+  for (const file of files) {
+    const isVerbatimFile = VERBATIM_DIRS.some((d) => file.includes(d));
+    if (isVerbatimFile) {
+      fileInfo.set(file, { skip: true });
+      continue;
+    }
+    const { fm, body } = splitFrontmatter(readFileSync(file, 'utf-8'));
+    const id = entryIdFromPath(file, base);
+    const type = parseTypeField(fm);
+    const participants = parseParticipants(fm);
+    const primarySlug = participants[0]?.slug ?? null;
+    fileInfo.set(file, {
+      skip: false,
+      id,
+      type,
+      primarySlug,
+      body,
+      ctx: buildContextMap(body),
+    });
+  }
+  for (const { kw, kind, target } of allKeywords) {
+    const re = makeKeywordRegex(kw);
+    let entryCount = 0;
+    for (const file of files) {
+      const info = fileInfo.get(file);
+      if (info.skip) continue;
+      // Self-link skip: concept points at this entry, OR person points
+      // at this entry's primary participant (so the bio body doesn't
+      // self-count).
+      if (kind === 'concept' && info.id === target) continue;
+      if (kind === 'person' && info.primarySlug === target) continue;
+      // First prose-context occurrence wins — count entry once.
+      let m;
+      re.lastIndex = 0;
+      let counted = false;
+      while ((m = re.exec(info.body)) !== null) {
+        if (info.ctx[m.index] === CTX_PROSE) { counted = true; break; }
+      }
+      if (counted) entryCount++;
+    }
+    if (entryCount > 0) result[locale].counts[kw] = entryCount;
   }
 }
 
