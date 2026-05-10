@@ -45,7 +45,7 @@ const structuredData = {
   <div class="container-wide">
     <h1>{t('nav.tags')}</h1>
     <div class="list-header">
-      <input type="text" id="filter-input" class="filter-input" placeholder="絞り込み..." autocomplete="off" />
+      <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." autocomplete="off" />
       <div class="sort-controls">
         <button class="sort-btn active" data-sort="count" data-order="desc">{t('sort.count' as any)} ↓</button>
         <button class="sort-btn" data-sort="name" data-order="asc">{t('sort.name' as any)} ↑</button>
@@ -139,53 +139,6 @@ const structuredData = {
 </script>
 
 <style>
-  .list-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .filter-input {
-    flex: 1;
-    max-width: 200px;
-    padding: 0.3em 0.6em;
-    border: 1px solid var(--color-border);
-    border-radius: 3px;
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    background: var(--color-bg);
-    color: var(--color-text);
-  }
-  .filter-input:focus {
-    outline: none;
-    border-color: var(--color-accent);
-  }
-  .sort-controls {
-    display: flex;
-    gap: 0.25rem;
-    font-family: var(--font-heading);
-    font-size: 0.8rem;
-  }
-  .sort-btn {
-    background: none;
-    border: 1px solid var(--color-border);
-    border-radius: 3px;
-    padding: 0.2em 0.6em;
-    color: var(--color-text-muted);
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-  }
-  .sort-btn:hover {
-    color: var(--color-text);
-    border-color: var(--color-text-muted);
-  }
-  .sort-btn.active {
-    color: var(--color-text);
-    font-weight: 600;
-    border-color: var(--color-text);
-  }
   .tag-list { list-style: none; padding: 0; }
   .tag-list li {
     padding: 0.75rem 0;
