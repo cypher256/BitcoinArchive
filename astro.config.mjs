@@ -13,6 +13,7 @@ import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
 import { rehypeMermaidWrapper } from './src/lib/rehype-mermaid-wrapper.mjs';
 import { rehypeTableWrapper } from './src/lib/rehype-table-wrapper.mjs';
 import { rehypeStripArchiveLinks } from './src/lib/rehype-strip-archive-links.mjs';
+import { rehypeAutoLinkKeywords } from './src/lib/rehype-auto-link-keywords.mjs';
 
 const { site, base } = getDeploymentConfig();
 
@@ -40,6 +41,13 @@ export default defineConfig({
       // <aside> blocks (from remarkEditorialMarker) keep their links.
       // See plugin header for the archive-principle rationale.
       rehypeStripArchiveLinks,
+      // Auto-link keywords (concept + person) using the build-time
+      // index from `scripts/generate-keyword-index.mjs`. Runs AFTER
+      // rehypeStripArchiveLinks so verbatim http(s) URLs are already
+      // neutralized; the auto-link plugin separately skips blockquotes,
+      // editor-note asides, code/pre, existing <a>, and verbatim file
+      // paths via HAST ancestor checks (mirroring the strip plugin).
+      rehypeAutoLinkKeywords,
       rehypeNoAutolinkEmail,
       rehypeKatex,
       // mermaidConfig disables `useMaxWidth` per diagram type so the rendered

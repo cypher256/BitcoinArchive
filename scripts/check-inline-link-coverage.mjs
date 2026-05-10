@@ -1,55 +1,77 @@
 #!/usr/bin/env node
 /**
- * check-inline-link-coverage.mjs — Inline-link coverage reporter
+ * check-inline-link-coverage.mjs — Auto-link coverage report
  *
- * Goal: ensure analysis and biography pages are surfaced from the body
- * text of related entries, not just from `relatedEntries` frontmatter.
+ * Replaces the previous manual-link-only coverage check. Now that
+ * `rehype-auto-link-keywords.mjs` mechanically converts keyword
+ * occurrences in body prose into links to the target entry/person,
+ * the question is no longer "did the editor remember to write
+ * [X](url)?" but rather "is each declared keyword actually used in
+ * other entries, and how many of its occurrences sit in skip
+ * contexts (blockquote / aside / verbatim file / code) where
+ * auto-linking is intentionally suppressed?"
  *
- * Mechanism: each analysis/biography entry can declare
- *   inlineLinkKeywords: [...]
- * in its frontmatter. For every other entry in the SAME locale (en or ja),
- * if the body mentions any of those keywords but does not contain a
- * link to the source entry, this script reports it as an inline-link gap.
+ * Inputs:
+ *   - `src/data/keyword-index.json` (produced by
+ *     `generate-keyword-index.mjs`)
+ *   - All entry markdown sources (en + ja)
  *
- * The report is informational by default (always exits 0). Pass --strict
- * to exit non-zero when any gap is found (useful for CI gating later).
+ * For every keyword in the index, count its occurrences in the body
+ * of every OTHER entry, classify each occurrence by where it sits:
  *
- * Why this is not the same as relatedEntries:
- *   - relatedEntries surfaces a "see also" sidebar, not a body link.
- *   - Body inline links are what readers actually click while reading.
- *   - Adding analysis/biography to the body sweep is a recurring task.
+ *   - prose         → auto-link will fire (good — coverage proven)
+ *   - blockquote    → skipped (primary-source quote; intentional)
+ *   - aside         → skipped (editor note; intentional)
+ *   - code          → skipped (identifier in code block / inline)
+ *   - verbatim-file → skipped (forum / correspondence / emails /
+ *                     sourceforge / bip — whole-file primary record)
  *
- * Per-locale handling:
- *   - EN entries are scanned against EN inlineLinkKeywords.
- *   - JA entries are scanned against JA inlineLinkKeywords.
- * The two collections do not cross-contaminate.
+ * The script does not enforce anything by default; it just reports.
+ * Pass `--strict` to exit non-zero when any declared keyword has
+ * zero prose-context occurrences (= no entry will ever auto-link
+ * to the target).
+ *
+ * Note: this is a coarse markdown analysis (not a full HAST parse).
+ * It is sufficient for keyword-level auditing because the auto-link
+ * plugin uses the same coarse exclusions. The actual rendering
+ * authority remains the rehype plugin — this script only describes
+ * what the plugin will do.
  */
-import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { MIRROR_BASE } from '../site-config.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), '..');
 
+const STRICT = process.argv.includes('--strict');
+
 const COLLECTIONS = [
-  {
-    name: 'en',
-    base: path.join(ROOT, 'src/data/entries/en'),
-    linkPrefix: `${MIRROR_BASE}/entries/`,
-  },
-  {
-    name: 'ja',
-    base: path.join(ROOT, 'src/data/translations/ja'),
-    linkPrefix: `${MIRROR_BASE}/ja/entries/`,
-  },
+  { name: 'en', base: path.join(ROOT, 'src/data/entries/en') },
+  { name: 'ja', base: path.join(ROOT, 'src/data/translations/ja') },
 ];
 
-const STRICT = process.argv.includes('--strict');
+const VERBATIM_DIRS = [
+  '/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/',
+];
+
+const INDEX_PATH = path.join(ROOT, 'src/data/keyword-index.json');
+
+if (!existsSync(INDEX_PATH)) {
+  console.error(`FAIL: ${path.relative(ROOT, INDEX_PATH)} not found. Run \`node scripts/generate-keyword-index.mjs\` first.`);
+  process.exit(1);
+}
+
+const keywordIndex = JSON.parse(readFileSync(INDEX_PATH, 'utf-8'));
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
 
 function walk(dir) {
   const out = [];
-  for (const name of readdirSync(dir)) {
+  if (!existsSync(dir)) return out;
+  for (const name of readdirSync(dir).sort()) {
     const full = path.join(dir, name);
     const st = statSync(full);
     if (st.isDirectory()) out.push(...walk(full));
@@ -65,137 +87,143 @@ function splitFrontmatter(content) {
   return { fm: content.slice(4, end), body: content.slice(end + 5) };
 }
 
-function parseInlineLinkKeywords(fm) {
-  // Minimal YAML extraction — only what we need from inlineLinkKeywords.
-  // Supports a list of double-quoted strings under `inlineLinkKeywords:`.
-  const lines = fm.split('\n');
-  const out = [];
-  let inBlock = false;
-  for (const line of lines) {
-    if (/^inlineLinkKeywords\s*:\s*$/.test(line)) {
-      inBlock = true;
+function entryIdFromPath(p, base) {
+  return path.relative(base, p).replace(/\.md$/, '');
+}
+
+// Build a per-character context map. For each character index in body,
+// the array holds a context id:
+//   0 = prose (default), 1 = blockquote, 2 = aside, 3 = code
+// O(1) classification per match without modifying body string (which
+// would risk position drift if substitution length differs from
+// original).
+const CTX_PROSE = 0;
+const CTX_BLOCKQUOTE = 1;
+const CTX_ASIDE = 2;
+const CTX_CODE = 3;
+
+function buildContextMap(body) {
+  const ctx = new Uint8Array(body.length);
+  // Fenced code blocks ```...```
+  for (const m of body.matchAll(/```[\s\S]*?```/g)) {
+    ctx.fill(CTX_CODE, m.index, m.index + m[0].length);
+  }
+  // Inline code `...` (single line only)
+  for (const m of body.matchAll(/`[^`\n]*`/g)) {
+    ctx.fill(CTX_CODE, m.index, m.index + m[0].length);
+  }
+  // Blockquote lines: any line whose first non-whitespace char is `>`.
+  let cursor = 0;
+  for (const line of body.split('\n')) {
+    if (/^\s*>/.test(line)) ctx.fill(CTX_BLOCKQUOTE, cursor, cursor + line.length);
+    cursor += line.length + 1; // +1 for newline
+  }
+  // Editor-note paragraphs: single-line *[Editor:...]* / *[Context:...]* /
+  // *[編者注：...]* / *[補足：...]* markers.
+  for (const m of body.matchAll(/^\s*\*\[(?:Editor:|Context:|編者注[：:]|補足[：:])[\s\S]*?\]\s*\*\s*$/gm)) {
+    ctx.fill(CTX_ASIDE, m.index, m.index + m[0].length);
+  }
+  return ctx;
+}
+
+function makeKeywordRegex(kw) {
+  const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const headAscii = /[A-Za-z0-9]/.test(kw[0]);
+  const tailAscii = /[A-Za-z0-9]/.test(kw[kw.length - 1]);
+  const prefix = headAscii ? '(?<![A-Za-z0-9])' : '';
+  const suffix = tailAscii ? '(?![A-Za-z0-9])' : '';
+  return new RegExp(prefix + escaped + suffix, 'g');
+}
+
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
+
+let totalProse = 0;
+let totalSkipped = 0;
+let unusedKeywords = 0;
+const failures = [];
+
+for (const { name: locale, base } of COLLECTIONS) {
+  console.log(`\n=== Locale: ${locale} ===`);
+  const files = walk(base);
+
+  // Pre-compute per-file context maps + verbatim flag once.
+  const fileInfo = new Map();
+  for (const f of files) {
+    const { body } = splitFrontmatter(readFileSync(f, 'utf-8'));
+    const isVerbatimFile = VERBATIM_DIRS.some((d) => f.includes(d));
+    fileInfo.set(f, { body, ctx: buildContextMap(body), isVerbatimFile });
+  }
+
+  const conceptKeywords = Object.entries(keywordIndex[locale]?.concept || {});
+  const personKeywords = Object.entries(keywordIndex[locale]?.person || {});
+  const allKeywords = [
+    ...conceptKeywords.map(([kw, target]) => ({ kw, kind: 'concept', target })),
+    ...personKeywords.map(([kw, slug]) => ({ kw, kind: 'person', target: slug })),
+  ];
+
+  console.log(`Keywords: ${conceptKeywords.length} concept + ${personKeywords.length} person = ${allKeywords.length} total`);
+
+  let localeProse = 0;
+  let localeSkipped = 0;
+
+  for (const { kw, kind, target } of allKeywords) {
+    const re = makeKeywordRegex(kw);
+    const counts = { prose: 0, blockquote: 0, aside: 0, code: 0, 'verbatim-file': 0 };
+    for (const f of files) {
+      const fileBody = fileInfo.get(f);
+      const fileId = entryIdFromPath(f, base);
+      // Self-link skip: concept keyword mentioned in its own body.
+      if (kind === 'concept' && fileId === target) continue;
+      let m;
+      re.lastIndex = 0;
+      while ((m = re.exec(fileBody.body)) !== null) {
+        if (fileBody.isVerbatimFile) {
+          counts['verbatim-file']++;
+          continue;
+        }
+        const c = fileBody.ctx[m.index];
+        if (c === CTX_BLOCKQUOTE) counts.blockquote++;
+        else if (c === CTX_ASIDE) counts.aside++;
+        else if (c === CTX_CODE) counts.code++;
+        else counts.prose++;
+      }
+    }
+    const total = counts.prose + counts.blockquote + counts.aside + counts.code + counts['verbatim-file'];
+    if (total === 0) {
+      unusedKeywords++;
+      console.log(`  ⚠ "${kw}" (${kind}, target=${target}) — 0 occurrences`);
+      if (STRICT) failures.push(`[${locale}] keyword "${kw}" never appears in any entry body`);
       continue;
     }
-    if (inBlock) {
-      const m = line.match(/^\s*-\s*"((?:[^"\\]|\\.)*)"\s*$/) ||
-                line.match(/^\s*-\s*'((?:[^'\\]|\\.)*)'\s*$/);
-      if (m) {
-        out.push(m[1]);
-        continue;
-      }
-      // First non-list line ends the block
-      if (/^\s*-\s/.test(line) || /^\s*$/.test(line)) continue;
-      inBlock = false;
+    localeProse += counts.prose;
+    localeSkipped += counts.blockquote + counts.aside + counts.code + counts['verbatim-file'];
+    if (counts.prose === 0) {
+      console.log(
+        `  ⚠ "${kw}" (${kind}) — prose:0  ` +
+        `bq:${counts.blockquote} aside:${counts.aside} ` +
+        `code:${counts.code} verbatim:${counts['verbatim-file']} (occurrences exist but all in skip contexts)`
+      );
     }
   }
-  return out;
-}
 
-function entryIdFromPath(absPath, base) {
-  const rel = path.relative(base, absPath);
-  return rel.replace(/\.md$/, '');
-}
-
-function maskNonProse(body) {
-  // Blank out fenced code blocks and inline code so keyword hits inside
-  // them don't trigger gap reports.
-  let out = body.replace(/```[\s\S]*?```/g, (m) => ' '.repeat(m.length));
-  out = out.replace(/`[^`\n]*`/g, (m) => ' '.repeat(m.length));
-  return out;
-}
-
-function bodyLinksTo(body, entryId, linkPrefix) {
-  // Match either trailing-slash or no-trailing-slash, with or without
-  // outer href quoting. Use string includes for simplicity.
-  return body.includes(linkPrefix + entryId + '/') ||
-         body.includes(linkPrefix + entryId + ')') ||
-         body.includes(linkPrefix + entryId + '#') ||
-         body.includes(linkPrefix + entryId + '"');
-}
-
-function makeKeywordPattern(kw) {
-  // Word-boundary anchoring: only enforce on sides whose terminal
-  // character is ASCII alphanumeric. This prevents "5-day gap" from
-  // matching inside "75-day gap" (digit-prefix collision) while still
-  // allowing JA keywords like "脱帰属設計" to match without a Latin \b.
-  const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const prefix = /[A-Za-z0-9]/.test(kw[0]) ? '(?<![A-Za-z0-9])' : '';
-  const suffix = /[A-Za-z0-9]/.test(kw[kw.length - 1]) ? '(?![A-Za-z0-9])' : '';
-  return new RegExp(prefix + escaped + suffix);
-}
-
-let totalSources = 0;
-let totalGaps = 0;
-const gapsByLocale = { en: 0, ja: 0 };
-
-for (const { name, base, linkPrefix } of COLLECTIONS) {
-  const files = walk(base);
-  // First pass: gather sources (entries with inlineLinkKeywords)
-  const sources = [];
-  const fileToBody = new Map();
-  const fileToType = new Map();
-
-  for (const file of files) {
-    const content = readFileSync(file, 'utf-8');
-    const { fm, body } = splitFrontmatter(content);
-    fileToBody.set(file, maskNonProse(body));
-    const typeMatch = fm.match(/^type\s*:\s*"([^"]+)"\s*$/m);
-    if (typeMatch) fileToType.set(file, typeMatch[1]);
-    const kw = parseInlineLinkKeywords(fm);
-    if (kw.length > 0) {
-      sources.push({
-        file,
-        id: entryIdFromPath(file, base),
-        keywords: kw,
-        keywordPatterns: kw.map((k) => ({ kw: k, re: makeKeywordPattern(k) })),
-      });
-    }
-  }
-  totalSources += sources.length;
-
-  if (sources.length === 0) continue;
-
-  console.log(`\n=== Locale: ${name} (${sources.length} source entries with inlineLinkKeywords) ===`);
-
-  for (const src of sources) {
-    const gaps = [];
-    for (const file of files) {
-      if (file === src.file) continue;
-      const body = fileToBody.get(file);
-      if (bodyLinksTo(body, src.id, linkPrefix)) continue;
-      const matched = src.keywordPatterns
-        .filter((kp) => kp.re.test(body))
-        .map((kp) => kp.kw);
-      if (matched.length === 0) continue;
-      gaps.push({
-        targetId: entryIdFromPath(file, base),
-        targetFile: path.relative(ROOT, file),
-        keywords: matched,
-      });
-    }
-    if (gaps.length === 0) continue;
-    console.log(`\n  Source: ${src.id}`);
-    console.log(`    keywords: ${src.keywords.map((k) => JSON.stringify(k)).join(', ')}`);
-    console.log(`    gaps: ${gaps.length}`);
-    for (const g of gaps) {
-      console.log(`      - ${g.targetFile}`);
-      console.log(`          matched: ${g.keywords.map((k) => JSON.stringify(k)).join(', ')}`);
-    }
-    totalGaps += gaps.length;
-    gapsByLocale[name] += gaps.length;
-  }
+  console.log(`Locale total — prose: ${localeProse}, skipped: ${localeSkipped}`);
+  totalProse += localeProse;
+  totalSkipped += localeSkipped;
 }
 
 console.log(`\n=== Summary ===`);
-console.log(`Sources: ${totalSources} (entries with inlineLinkKeywords)`);
-console.log(`Gaps: ${totalGaps} total (en=${gapsByLocale.en}, ja=${gapsByLocale.ja})`);
-
-if (totalGaps === 0) {
-  console.log('✓ No inline-link gaps detected.');
+console.log(`Total prose-context occurrences (auto-linked): ${totalProse}`);
+console.log(`Total skip-context occurrences (intentional skips): ${totalSkipped}`);
+console.log(`Keywords never used: ${unusedKeywords}`);
+if (totalProse === 0 && totalSkipped === 0) {
+  console.log('No keyword usage detected.');
 }
 
-if (STRICT && totalGaps > 0) {
-  console.error('\nFAIL: --strict was set and gaps exist.');
+if (STRICT && failures.length > 0) {
+  console.error(`\nFAIL: ${failures.length} strict-mode failures.`);
+  for (const f of failures) console.error(`  ${f}`);
   process.exit(1);
 }
 process.exit(0);

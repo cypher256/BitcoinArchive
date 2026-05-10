@@ -177,7 +177,7 @@ the resolution that preserves accuracy:
 
 The biography-cross-link rule in [§ Biography Linking](#biography-linking)
 and the inline-keyword rule in
-[§ Inline-Link Coverage for Analysis and Biography Pages](#inline-link-coverage-for-analysis-and-biography-pages)
+[§ Auto-Link Keywords (concept and person)](#auto-link-keywords-concept-and-person)
 both presuppose this integrity invariant; they say *where* to link, not
 *how* to mismatch text and URL.
 
@@ -1036,72 +1036,139 @@ When creating or editing a biography, verify:
 4. EN and JA mirrors have matching `relatedEntries`.
 5. `npm run check:internal-links` passes after changes.
 
-## Inline-Link Coverage for Analysis and Biography Pages
+## Auto-Link Keywords (concept and person)
 
-Analysis and biography pages carry interpretive value that is easy to
-miss if readers find them only through the `relatedEntries` sidebar.
-The policy is to surface these pages from the **body prose** of every
-entry that touches their topic, not just from frontmatter.
+Analysis, aftermath, and biography pages carry interpretive value that
+is easy to miss if readers find them only through the `relatedEntries`
+sidebar. The archive surfaces these pages mechanically via a
+**server-side auto-linking pipeline**: the first occurrence of a
+declared keyword in any entry's body prose is converted to a link to
+the keyword's definition page during markdown processing, in both
+`npm run dev` and `npm run build`.
 
-### When this applies
+This replaces the older "manual `[X](url)` body links + coverage gap
+report" workflow. Editors no longer scatter inline links by hand; they
+declare keywords once on the definition page, and the renderer fans
+them out across the archive.
 
-Trigger an inline-link sweep whenever:
+### Two keyword classes
 
-- A new analysis or biography entry is added.
-- An existing analysis or biography is significantly expanded
-  (e.g., a new section that introduces a new topic keyword).
-- An entry that touches a known analysis/biography topic is created
-  or substantially edited.
-
-### How it is enforced
-
-Each analysis or biography entry declares topic keywords in its
-frontmatter:
+**Concept keywords** — declared via `inlineLinkKeywords` in the
+frontmatter of an editorial entry (`type: analysis` / `article` /
+`biography`). Link target is the entry itself
+(`/{locale}/entries/{entry-id}/`).
 
 ```yaml
+# In src/data/entries/en/analysis/2014-03-19-bitcoin-core-rebrand-...
 inlineLinkKeywords:
-  - "five-day gap"
-  - "un-attributability"
-  - "Genesis Block hardcode"
+  - "Bitcoin Core"
+  - "2014 rebrand"
+  - "authority effect"
 ```
 
-The keywords are language-specific — the EN file lists English phrases,
-the JA mirror lists the Japanese equivalents. Pick phrases specific
-enough to almost always indicate the topic when they appear in another
-entry's body prose. Avoid words so generic that they will produce
-false positives across the archive.
+The keywords are language-specific — the EN file lists English
+phrases, the JA mirror lists the Japanese equivalents. Pick phrases
+specific enough to almost always indicate the topic when they appear
+in another entry's body prose. Avoid words so generic that they will
+produce false positives.
 
-`scripts/check-inline-link-coverage.mjs` walks every entry body in the
-same locale, and reports any case where a keyword appears but the body
-does not link back to the source analysis/biography. The script runs
-under `npm run check` as informational output (always exits 0), and
-under `npm run check:inline-link-coverage` standalone. Pass `--strict`
-to make it fail when gaps exist (useful in targeted CI gating).
+**Person keywords** — aggregated automatically from `participants[]`
+of all entries, but **only for participants who have a biography
+entry** (`type: biography`, primary participant matches the slug).
+Link target is `/{locale}/participants/{slug}/`.
 
-### How to act on a reported gap
+The biography frontmatter can also declare **additional aliases**
+(short forms, alternative spellings) via `inlineLinkKeywords`:
 
-A reported gap is a *candidate* for an inline link, not an automatic
-edit instruction. Read the surrounding prose and decide:
+```yaml
+# In src/data/entries/en/aftermath/2014-08-28-hal-finney-biography.md
+type: "biography"
+participants:
+  - name: "Hal Finney"
+    slug: "hal-finney"
+inlineLinkKeywords:
+  - "Hal Finney's"   # possessive form, not auto-derived
+```
 
-- If the body genuinely references the analysis/biography topic, add
-  an inline link at the first or most contextually important mention.
-- If the keyword appears in a different sense (false positive), no
-  edit is needed. Optionally narrow the keyword in the source entry's
-  `inlineLinkKeywords` to reduce future noise.
+(Plain `Hal Finney` is auto-derived from `participants[0].name` and
+need not be declared.)
 
-Do not bulk-replace. Each gap is a per-occurrence editorial judgment.
+Forum-only handles (slugs like `user`, `joe`, `db`, `red`) are
+**excluded** from auto-linking because they collide with common
+English words. To promote such a participant to auto-link eligibility,
+add a biography entry for them.
 
-### relatedEntries vs inline links
+### Keyword conflicts
 
-These two mechanisms are not interchangeable:
+`scripts/generate-keyword-index.mjs` (run on every `npm run dev` /
+`npm run build` / `npm run check`) emits build-time errors if:
+
+- The same concept keyword is claimed by two different editorial
+  entries — the editor must rename one or differentiate the keyword.
+- A concept keyword equals a person keyword (or biography alias) —
+  the same word maps to two different definitions.
+- A biography alias is shared with a different participant slug.
+
+Conflicts must be resolved before the index can be generated.
+
+### Exclusion contexts
+
+Auto-linking deliberately skips:
+
+- Inside an existing `<a>` (no double-linking).
+- Inside `<code>` or `<pre>` (don't auto-link identifiers).
+- Inside `<blockquote>` — primary-source quote in editorial entries
+  (see [Editorial / Narrative Entries](#editorial--narrative-entries)).
+  Same convention used by [`rehype-strip-archive-links`](#external-link-rot-handling).
+- Inside `<aside class="editor-inline">` — editor notes
+  (see [Editorial Markers](#editorial-markers)). Editor notes keep
+  their links manual to preserve editorial intent.
+- Whole-file primary-source records — files under `forum/`,
+  `correspondence/`, `emails/`, `sourceforge/`, `bip/` directories.
+- Self-link — the keyword's target is the page being rendered.
+
+Within a single rendered page, each keyword is linked **at most once**
+(at its first prose occurrence). Subsequent occurrences are left as
+plain text to reduce visual noise.
+
+Existing **manual** `[keyword](url)` links coexist with auto-link
+without producing duplicates: before scanning prose, the plugin
+pre-scans every existing `<a>` tag and marks the keywords inside as
+already-linked. Manual links remain authoritative; auto-link only
+fills pages where no manual link already exists.
+
+Editors are not required to bulk-remove existing manual links after
+this mechanism shipped — manual placement encodes editorial intent
+about which mention should carry the link, and that intent is
+preserved.
+
+### Pipeline implementation
+
+- `scripts/generate-keyword-index.mjs` produces
+  `src/data/keyword-index.json` (gitignored — regenerated).
+- `src/lib/rehype-auto-link-keywords.mjs` runs at the rehype stage,
+  after `rehype-strip-archive-links`. It walks HAST text nodes and
+  replaces matched keywords with `<a class="auto-link auto-link--{kind}">`.
+- `scripts/check-inline-link-coverage.mjs` reads the index and
+  reports per-keyword usage statistics: how many prose-context
+  occurrences each keyword has across the archive, and how many fall
+  in skip contexts (blockquote / aside / verbatim file / code).
+  Informational by default; `--strict` exits non-zero when any
+  declared keyword has zero occurrences anywhere (= dead keyword).
+
+### relatedEntries vs auto-link
+
+The two mechanisms remain complementary:
 
 - `relatedEntries` populates the "see also" sidebar — useful for
   readers who finish an entry and want adjacent reading.
-- Inline body links surface analysis/biography pages **at the moment
+- Auto-link surfaces analysis/biography pages **at the moment
   the topic is mentioned**, while the reader is still engaged with
   that thread of the narrative.
 
-Both should be present for analysis and biography hub pages.
+Both should be present for analysis, aftermath, and biography hub
+pages — the auto-link keyword set is usually a subset of the topics
+in `relatedEntries`.
 
 ## Scripted Edits Policy
 
