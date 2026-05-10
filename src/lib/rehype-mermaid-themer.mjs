@@ -120,21 +120,20 @@
  *    line. Maps to --mermaid-edge so the four-way grid follows
  *    the mode.
  *
+ *  Timeline section palette (cScale0..13 / cScaleLabel0..13):
+ *  Mermaid `timeline` colors each section by index. The default theme
+ *  auto-picks black/white text per section based on HSL lightness —
+ *  which mis-fires on light pastels (lime + white = invisible) and
+ *  breaks entirely in dark mode. We bypass the auto-pick by injecting
+ *  fixed `themeVariables` (cScale + cScaleLabel) at build time
+ *  (`astro.config.mjs`), then rewrite each baked hex into the matching
+ *  `--mermaid-section-N-{bg,text}` token below so dark mode can invert
+ *  per-hue (deep bg + pastel text) through the CSS-variable mechanism.
+ *  See the matching token block in `src/styles/global.css` for the
+ *  full (bg, text) pair table.
+ *
  *  Intentionally LEFT ALONE:
  *  - #552222 (error icon/text) — error-only path, rarely rendered.
- *  - HSL data colors emitted by `timeline` for section--N / section-N
- *    backgrounds. Those are part of the data encoding (each section
- *    gets a distinct hue) and rewriting them would collapse the
- *    palette into one color.
- *  - `.section-N text` and `.section--N text` text fills (= the
- *    text rendered on top of the data-encoded section bg above), and
- *    `.node-icon-N` / `.node-icon--N` icon `color` fills. These
- *    were originally `#000` / `#fff` / `black` / `white` so they
- *    contrasted against the fixed-bright pastel section bg in either
- *    mode. Rewriting them to `--mermaid-text` / `--mermaid-bg`
- *    collapses the contrast in dark mode (light-grey-on-pale-yellow,
- *    unreadable). The rule-body exemption lives in
- *    `SELECTOR_EXEMPTIONS` and is consumed by `rewriteCssText`.
  *  - hsl(240, 100%, NaN%) on quadrantChart data-point circles —
  *    Mermaid emits NaN because it expects an `r,g,b` color in the
  *    data array but our entries supply a 2-tuple `[x, y]`. The hsl()
@@ -201,6 +200,41 @@ const COLOR_SUBSTITUTIONS = [
   // so all highlighted gantt rows share one theme-keyed colour.
   [/rgba\(102,\s*102,\s*255,\s*0\.49\)/g, 'var(--mermaid-section-alt)'],
 
+  // Timeline section palette (cScale0..13 / cScaleLabel0..13). The
+  // light-mode hex pairs declared in `themeVariables` (astro.config.mjs)
+  // are baked into the SVG by Mermaid; we rewrite each into the matching
+  // `--mermaid-section-N-{bg,text}` token so dark mode can invert per-hue
+  // through the CSS-variable mechanism. See the matching token block in
+  // `src/styles/global.css` for the full (bg, text) palette table.
+  [/#e2e8f0\b/gi, 'var(--mermaid-section-0-bg)'],
+  [/#334155\b/gi, 'var(--mermaid-section-0-text)'],
+  [/#dbeafe\b/gi, 'var(--mermaid-section-1-bg)'],
+  [/#1e40af\b/gi, 'var(--mermaid-section-1-text)'],
+  [/#fef3c7\b/gi, 'var(--mermaid-section-2-bg)'],
+  [/#92400e\b/gi, 'var(--mermaid-section-2-text)'],
+  [/#dcfce7\b/gi, 'var(--mermaid-section-3-bg)'],
+  [/#166534\b/gi, 'var(--mermaid-section-3-text)'],
+  [/#fce7f3\b/gi, 'var(--mermaid-section-4-bg)'],
+  [/#9f1239\b/gi, 'var(--mermaid-section-4-text)'],
+  [/#ede9fe\b/gi, 'var(--mermaid-section-5-bg)'],
+  [/#5b21b6\b/gi, 'var(--mermaid-section-5-text)'],
+  [/#fed7aa\b/gi, 'var(--mermaid-section-6-bg)'],
+  [/#9a3412\b/gi, 'var(--mermaid-section-6-text)'],
+  [/#cffafe\b/gi, 'var(--mermaid-section-7-bg)'],
+  [/#155e75\b/gi, 'var(--mermaid-section-7-text)'],
+  [/#fef9c3\b/gi, 'var(--mermaid-section-8-bg)'],
+  [/#854d0e\b/gi, 'var(--mermaid-section-8-text)'],
+  [/#fee2e2\b/gi, 'var(--mermaid-section-9-bg)'],
+  [/#991b1b\b/gi, 'var(--mermaid-section-9-text)'],
+  [/#e0e7ff\b/gi, 'var(--mermaid-section-10-bg)'],
+  [/#3730a3\b/gi, 'var(--mermaid-section-10-text)'],
+  [/#f5d0fe\b/gi, 'var(--mermaid-section-11-bg)'],
+  [/#86198f\b/gi, 'var(--mermaid-section-11-text)'],
+  [/#d1fae5\b/gi, 'var(--mermaid-section-12-bg)'],
+  [/#065f46\b/gi, 'var(--mermaid-section-12-text)'],
+  [/#fef2f2\b/gi, 'var(--mermaid-section-13-bg)'],
+  [/#be123c\b/gi, 'var(--mermaid-section-13-text)'],
+
   // 3-hex shorthands. Anchor with `\b` so we don't chop off the tail of
   // a 6-hex value mid-string (e.g. inside `#333333` the regex engine
   // still tries to backtrack but `#333333` is matched first above).
@@ -231,114 +265,6 @@ function rewriteColors(input) {
   for (const [pattern, replacement] of COLOR_SUBSTITUTIONS) {
     out = out.replace(pattern, replacement);
   }
-  return out;
-}
-
-/**
- * Selectors whose color declarations should be EXCLUDED from the
- * substitution pass. Used by `rewriteCssText` below.
- *
- * The Mermaid `timeline` chart type emits per-section CSS rules like
- *
- *   #mermaid-0 .section-0 text   { fill: #000; }
- *   #mermaid-0 .section-0        { ...etc... }
- *   #mermaid-0 .node-icon-0      { color: #000; }
- *   #mermaid-0 .section--1 text  { fill: #fff; }   (untyped variant)
- *   #mermaid-0 .node-icon--1     { color: #fff; }
- *
- * The `.section-N` background fill is data-encoded (each timeline
- * section gets a distinct bright pastel `hsl(...)` hue) and is
- * intentionally NOT rewritten — see the "Intentionally LEFT ALONE"
- * block at the top of this file. The text and icon fills inside
- * those sections sit on top of those bright pastels and were
- * originally `#000` / `#fff` so they would always read against the
- * fixed-bright section bg regardless of any outer page theme.
- *
- * Rewriting them to `--mermaid-text` / `--mermaid-bg` (which we do
- * for every other text fill in the SVG) collapses that contrast in
- * dark mode: the section bg stays bright pastel, `--mermaid-text`
- * resolves to `#e8eaee` (light grey), and the resulting light-grey-
- * on-pale-yellow text is unreadable.
- *
- * Fix (option (a) per the dark-mode triage doc): leave the original
- * `#000` / `#fff` / `black` / `white` literals in place inside these
- * specific rule bodies. The timeline section text then stays
- * theme-agnostic — but that's acceptable because the section bg is
- * also theme-agnostic, so the contrast contract holds in both modes.
- *
- * Each entry below is a substring test against the rule's selector
- * (case-insensitive). Whitespace inside the selector is normalized
- * to a single space before matching, so `.section-0  text` and
- * `.section-0\ttext` both match `'section-' + Ntext'`-style probes.
- */
-const SELECTOR_EXEMPTIONS = [
-  // `.section-N text` and `.section--N text` (timeline section text).
-  /\.section-{1,2}\d+\s+text\b/i,
-  // `.node-icon-N` and `.node-icon--N` (timeline section emoji icons).
-  /\.node-icon-{1,2}\d+\b/i,
-];
-
-/**
- * Run `rewriteColors` on every CSS rule body inside the Mermaid
- * `<style>` text EXCEPT rules whose selector matches one of
- * `SELECTOR_EXEMPTIONS`. The structure of a Mermaid style block is:
- *
- *   selector1 { decl; decl; ... } selector2 { decl; ... } ...
- *
- * with no `@media` / `@keyframes` (Mermaid's `default` theme emits
- * one `@keyframes edge-animation-frame`/`dash` block before the
- * per-rule cascade — those don't contain colors we rewrite, but the
- * walker is robust against them via the bracket-depth count).
- *
- * Implementation: scan character by character, track brace depth,
- * accumulate a "selector buffer" until `{`, then a "body buffer"
- * until matching `}`. At each `}` decide whether to rewrite the
- * body or pass it through verbatim. `@keyframes` blocks contain
- * nested `0% { ... }` rules so we only check exemptions at depth-1
- * and rewrite at depth>=1 unconditionally for now (no exemption
- * inside keyframes; Mermaid doesn't put colors there anyway).
- */
-function rewriteCssText(css) {
-  if (typeof css !== 'string' || css.length === 0) return css;
-  let out = '';
-  let buf = '';
-  let inBody = false;
-  let depth = 0;
-  let topSelector = '';
-  for (let i = 0; i < css.length; i++) {
-    const ch = css[i];
-    if (ch === '{') {
-      if (depth === 0) {
-        // End of selector. Stash the selector text for the
-        // exemption test, then start collecting the body.
-        topSelector = buf.replace(/\s+/g, ' ').trim();
-        out += buf + '{';
-        buf = '';
-        inBody = true;
-      } else {
-        buf += ch;
-      }
-      depth++;
-    } else if (ch === '}') {
-      depth--;
-      if (depth === 0) {
-        // End of top-level rule body. Decide rewrite vs verbatim
-        // based on the captured selector.
-        const exempt = SELECTOR_EXEMPTIONS.some((re) => re.test(topSelector));
-        out += (exempt ? buf : rewriteColors(buf)) + '}';
-        buf = '';
-        topSelector = '';
-        inBody = false;
-      } else {
-        buf += ch;
-      }
-    } else {
-      buf += ch;
-    }
-  }
-  // Any trailing unbracketed text (shouldn't happen in well-formed
-  // CSS, but be defensive) gets the standard rewrite.
-  if (buf.length > 0) out += rewriteColors(buf);
   return out;
 }
 
@@ -374,15 +300,15 @@ function rewriteSvgTree(root) {
       }
       // The first child of a Mermaid <svg> is a <style> element whose
       // single text child contains every CSS rule for the diagram.
-      // Use the rule-aware rewrite so timeline `.section-N text` and
-      // `.node-icon-N` rule bodies (which sit on data-encoded bright
-      // pastel section backgrounds) keep their original `#000` /
-      // `#fff` / `black` / `white` fills — see the doc-comment on
-      // `SELECTOR_EXEMPTIONS` for why.
+      // The full SVG style block is rewritten in one pass via the
+      // standard substitution table; section colors are now driven by
+      // the cScale / cScaleLabel themeVariables in `astro.config.mjs`,
+      // so the previous rule-aware exemption mechanism is no longer
+      // needed (every section text/bg pair has a token mapping).
       if (child.tagName === 'style' && Array.isArray(child.children)) {
         for (const t of child.children) {
           if (t && t.type === 'text' && typeof t.value === 'string') {
-            t.value = rewriteCssText(t.value);
+            t.value = rewriteColors(t.value);
           }
         }
       }

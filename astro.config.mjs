@@ -59,7 +59,37 @@ export default defineConfig({
       [rehypeMermaid, {
         strategy: 'inline-svg',
         mermaidConfig: {
-          themeVariables: { fontSize: '14px' },
+          // Timeline section coloring control. Mermaid's default theme auto-
+          // picks black/white text per section based on HSL lightness, which
+          // mis-fires on light pastels (lime + white = invisible) and breaks
+          // entirely in dark mode. We bypass the auto-pick by pinning each
+          // (bg, text) pair to a fixed light-mode hex; the plugin in
+          // `src/lib/rehype-mermaid-themer.mjs` then rewrites those baked
+          // hexes into `var(--mermaid-section-N-{bg,text})` tokens so dark
+          // mode can invert per-hue (deep bg + pastel text). The 14-slot
+          // length covers the largest timeline in the corpus (the 13-section
+          // satoshi-identification-asymmetry timeline); cScale0 is for the
+          // un-sectioned default class `.section--1`, sections 0..12 use
+          // cScale1..13. THEME_COLOR_LIMIT must be raised to 14 so the
+          // Mermaid theme generator emits CSS rules for all 14 indices.
+          themeVariables: {
+            fontSize: '14px',
+            THEME_COLOR_LIMIT: 14,
+            cScale0: '#e2e8f0',  cScaleLabel0: '#334155',
+            cScale1: '#dbeafe',  cScaleLabel1: '#1e40af',
+            cScale2: '#fef3c7',  cScaleLabel2: '#92400e',
+            cScale3: '#dcfce7',  cScaleLabel3: '#166534',
+            cScale4: '#fce7f3',  cScaleLabel4: '#9f1239',
+            cScale5: '#ede9fe',  cScaleLabel5: '#5b21b6',
+            cScale6: '#fed7aa',  cScaleLabel6: '#9a3412',
+            cScale7: '#cffafe',  cScaleLabel7: '#155e75',
+            cScale8: '#fef9c3',  cScaleLabel8: '#854d0e',
+            cScale9: '#fee2e2',  cScaleLabel9: '#991b1b',
+            cScale10: '#e0e7ff', cScaleLabel10: '#3730a3',
+            cScale11: '#f5d0fe', cScaleLabel11: '#86198f',
+            cScale12: '#d1fae5', cScaleLabel12: '#065f46',
+            cScale13: '#fef2f2', cScaleLabel13: '#be123c',
+          },
           flowchart: { useMaxWidth: false },
           sequence: { useMaxWidth: false },
           gantt: { useMaxWidth: false },

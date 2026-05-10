@@ -112,6 +112,37 @@
   --mermaid-section-alt: rgba(31, 58, 95, 0.10);
   --mermaid-exclude-bg: var(--color-bg-alt);
 
+  /* ---- Mermaid timeline section palette (cScale0..13 / cScaleLabel0..13).
+     Mermaid `timeline` colors each section by index. The default theme
+     auto-picks black/white text per section based on HSL lightness — and
+     mis-fires on light pastels (lime + white = invisible) and breaks
+     entirely in dark mode. We bypass the auto-pick by injecting fixed
+     `themeVariables` (cScale + cScaleLabel) at build time, then have
+     `rehype-mermaid-themer` rewrite each baked hex into the matching
+     `--mermaid-section-N-{bg,text}` token below so dark mode can
+     invert (deep bg + light text per hue) while preserving the
+     section-color encoding.
+     The light pair is `bg = pastel`, `text = deep`; the dark pair flips
+     to `bg = deep`, `text = pastel` for the same hue. Contrast ratio
+     ≥ 4.5:1 in either direction.
+     Length = 14 to cover the 13-section asymmetry timeline (cScale0
+     is for `.section--1`, the un-sectioned default; sections 0..12 use
+     cScale1..13). THEME_COLOR_LIMIT=14 is set in `astro.config.mjs`. */
+  --mermaid-section-0-bg: #e2e8f0;  --mermaid-section-0-text: #334155;
+  --mermaid-section-1-bg: #dbeafe;  --mermaid-section-1-text: #1e40af;
+  --mermaid-section-2-bg: #fef3c7;  --mermaid-section-2-text: #92400e;
+  --mermaid-section-3-bg: #dcfce7;  --mermaid-section-3-text: #166534;
+  --mermaid-section-4-bg: #fce7f3;  --mermaid-section-4-text: #9f1239;
+  --mermaid-section-5-bg: #ede9fe;  --mermaid-section-5-text: #5b21b6;
+  --mermaid-section-6-bg: #fed7aa;  --mermaid-section-6-text: #9a3412;
+  --mermaid-section-7-bg: #cffafe;  --mermaid-section-7-text: #155e75;
+  --mermaid-section-8-bg: #fef9c3;  --mermaid-section-8-text: #854d0e;
+  --mermaid-section-9-bg: #fee2e2;  --mermaid-section-9-text: #991b1b;
+  --mermaid-section-10-bg: #e0e7ff; --mermaid-section-10-text: #3730a3;
+  --mermaid-section-11-bg: #f5d0fe; --mermaid-section-11-text: #86198f;
+  --mermaid-section-12-bg: #d1fae5; --mermaid-section-12-text: #065f46;
+  --mermaid-section-13-bg: #fef2f2; --mermaid-section-13-text: #be123c;
+
   /* ---- Chart palette tokens (consumed by d3).
      Modern A's navy-led palette: navy is `--chart-color-1`
      so the primary series tracks the accent; the remaining
@@ -203,6 +234,24 @@
     --mermaid-section-alt: rgba(122, 163, 212, 0.16);
     --mermaid-exclude-bg: var(--color-bg-alt);
 
+    /* Timeline section palette — bg/text inverted from light variant
+       so each hue keeps its identity but contrast flips
+       (light: pastel-bg + deep-text; dark: deep-bg + pastel-text). */
+    --mermaid-section-0-bg: #334155;  --mermaid-section-0-text: #e2e8f0;
+    --mermaid-section-1-bg: #1e40af;  --mermaid-section-1-text: #dbeafe;
+    --mermaid-section-2-bg: #92400e;  --mermaid-section-2-text: #fef3c7;
+    --mermaid-section-3-bg: #166534;  --mermaid-section-3-text: #dcfce7;
+    --mermaid-section-4-bg: #9f1239;  --mermaid-section-4-text: #fce7f3;
+    --mermaid-section-5-bg: #5b21b6;  --mermaid-section-5-text: #ede9fe;
+    --mermaid-section-6-bg: #9a3412;  --mermaid-section-6-text: #fed7aa;
+    --mermaid-section-7-bg: #155e75;  --mermaid-section-7-text: #cffafe;
+    --mermaid-section-8-bg: #854d0e;  --mermaid-section-8-text: #fef9c3;
+    --mermaid-section-9-bg: #991b1b;  --mermaid-section-9-text: #fee2e2;
+    --mermaid-section-10-bg: #3730a3; --mermaid-section-10-text: #e0e7ff;
+    --mermaid-section-11-bg: #86198f; --mermaid-section-11-text: #f5d0fe;
+    --mermaid-section-12-bg: #065f46; --mermaid-section-12-text: #d1fae5;
+    --mermaid-section-13-bg: #be123c; --mermaid-section-13-text: #fef2f2;
+
     /* Chart palette — brighter navy-led hues so qualitative
        series remain distinguishable on dark backgrounds while
        keeping the editorial navy aesthetic. */
@@ -260,6 +309,23 @@
   --mermaid-crit: #f87171;
   --mermaid-section-alt: rgba(122, 163, 212, 0.16);
   --mermaid-exclude-bg: var(--color-bg-alt);
+
+  /* Timeline section palette — same body as the @media dark variant
+     so explicit data-mode="dark" and OS-driven dark render identically. */
+  --mermaid-section-0-bg: #334155;  --mermaid-section-0-text: #e2e8f0;
+  --mermaid-section-1-bg: #1e40af;  --mermaid-section-1-text: #dbeafe;
+  --mermaid-section-2-bg: #92400e;  --mermaid-section-2-text: #fef3c7;
+  --mermaid-section-3-bg: #166534;  --mermaid-section-3-text: #dcfce7;
+  --mermaid-section-4-bg: #9f1239;  --mermaid-section-4-text: #fce7f3;
+  --mermaid-section-5-bg: #5b21b6;  --mermaid-section-5-text: #ede9fe;
+  --mermaid-section-6-bg: #9a3412;  --mermaid-section-6-text: #fed7aa;
+  --mermaid-section-7-bg: #155e75;  --mermaid-section-7-text: #cffafe;
+  --mermaid-section-8-bg: #854d0e;  --mermaid-section-8-text: #fef9c3;
+  --mermaid-section-9-bg: #991b1b;  --mermaid-section-9-text: #fee2e2;
+  --mermaid-section-10-bg: #3730a3; --mermaid-section-10-text: #e0e7ff;
+  --mermaid-section-11-bg: #86198f; --mermaid-section-11-text: #f5d0fe;
+  --mermaid-section-12-bg: #065f46; --mermaid-section-12-text: #d1fae5;
+  --mermaid-section-13-bg: #be123c; --mermaid-section-13-text: #fef2f2;
 
   /* Chart palette — kept identical to the @media variant above
      so explicit data-mode="dark" matches OS dark exactly. */
@@ -594,7 +660,15 @@ th {
   background: var(--color-border);
 }
 
-/* External links — Wikipedia-style icon */
+/* External links — Wikipedia-style icon.
+   The icon path is loaded as a CSS mask so the icon takes its color
+   from `currentColor`, which inherits the link's `color` token. The
+   previous version baked `fill='%232563eb'` (the light-mode link
+   blue) into the SVG data URL, which left the icon stuck on light
+   blue regardless of `data-mode` (CSS `background:url(...)` cannot
+   resolve `currentColor` inside the data URL — only `mask-image`
+   does). Now light mode reads `--color-link` blue, dark mode reads
+   `#7ab8ff`, and the icon tracks every theme change automatically. */
 a[href^="http"]::after,
 a[href^="//"]::after {
   content: "";
@@ -606,8 +680,11 @@ a[href^="//"]::after {
   vertical-align: baseline;
   position: relative;
   top: -0.15em;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232563eb' d='M6 1h5v5l-1.7-1.7-3 3-1.3-1.3 3-3L6 1zM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E") no-repeat center;
-  background-size: contain;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 1h5v5l-1.7-1.7-3 3-1.3-1.3 3-3L6 1zM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E") no-repeat center;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 1h5v5l-1.7-1.7-3 3-1.3-1.3 3-3L6 1zM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
 }
 
 /* Suppress external icon for UI components */
@@ -621,16 +698,30 @@ nav a::after,
   display: none !important;
 }
 
-/* In-page anchor links */
+/* In-page anchor links — same-page jumps. Identity is signalled by
+   the dotted underline, not by a separate link color, so the text
+   itself reads at the body register and the regular cross-page
+   `--color-link` blue stays reserved for off-page navigation. The
+   underline color uses `--color-accent` so the cue is still
+   visually grounded in the theme palette.
+   Why this isn't `--color-accent` for the text fill: in dark mode
+   `--color-accent` resolves to a light navy `#7aa3d4` and
+   `--color-link` resolves to `#7ab8ff`, which are near-identical
+   blues — making in-page and off-page links indistinguishable.
+   Decoupling the text color from the link palette resolves the
+   collision in both directions (light + dark) without forcing the
+   accent token itself to drift away from the rest of the theme. */
 a[href^="#"] {
-  color: var(--color-accent);
+  color: inherit;
   text-decoration: underline;
   text-decoration-style: dotted;
+  text-decoration-color: var(--color-accent);
   text-underline-offset: 3px;
 }
 
 a[href^="#"]:hover {
   color: var(--color-link);
+  text-decoration-color: var(--color-link);
   text-decoration-style: solid;
 }
 
@@ -661,11 +752,18 @@ a[href^="#"]:hover {
 .editor-inline em {
   font-style: normal;
 }
+/* The label sits on top of the editor-note panel and is a label,
+   not a link. Previously bound to `--color-accent`, which in dark
+   mode resolves to a light navy `#7aa3d4` indistinguishable from
+   the `--color-link` blue `#7ab8ff` used for prose links — making
+   the label read as a clickable target. Use `--color-text` so the
+   label inherits body contrast in both modes; `font-weight: 600`
+   carries the emphasis. */
 .editor-inline-label {
   display: inline-block;
   font-family: var(--font-heading);
   font-size: 0.8rem;
-  color: var(--color-accent);
+  color: var(--color-text);
   margin-right: 0.5em;
   font-weight: 600;
 }
@@ -746,40 +844,16 @@ p:has(> strong:only-child):has(+ .mermaid-scroll) {
 .archive-url-bare {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.85em;
-  color: #666;
+  color: var(--color-text-muted);
   word-break: break-all;
   user-select: text;
   background: transparent;
   padding: 0;
 }
 
-/* Mermaid timeline section text and bg override.
-   Mermaid's default theme picks white-or-black text per section-N based
-   on HSL lightness, mis-fires on light pastels (lime + white = invisible)
-   and breaks entirely in dark mode. Force readable contrast in light +
-   replace bg+text with theme tokens in dark. !important wins against
-   Mermaid's inline <style>. */
-.mermaid-themed svg [class^="section-"] text,
-.mermaid-themed svg [class*=" section-"] text {
-  fill: #1a1a1a !important;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-mode="light"]) .mermaid-themed svg [class^="section-"] rect,
-  :root:not([data-mode="light"]) .mermaid-themed svg [class*=" section-"] rect {
-    fill: var(--mermaid-node-bg) !important;
-    stroke: var(--mermaid-node-border) !important;
-  }
-  :root:not([data-mode="light"]) .mermaid-themed svg [class^="section-"] text,
-  :root:not([data-mode="light"]) .mermaid-themed svg [class*=" section-"] text {
-    fill: var(--mermaid-text) !important;
-  }
-}
-:root[data-mode="dark"] .mermaid-themed svg [class^="section-"] rect,
-:root[data-mode="dark"] .mermaid-themed svg [class*=" section-"] rect {
-  fill: var(--mermaid-node-bg) !important;
-  stroke: var(--mermaid-node-border) !important;
-}
-:root[data-mode="dark"] .mermaid-themed svg [class^="section-"] text,
-:root[data-mode="dark"] .mermaid-themed svg [class*=" section-"] text {
-  fill: var(--mermaid-text) !important;
-}
+/* Timeline section colors are now driven by Mermaid `themeVariables`
+   (cScale + cScaleLabel) injected at build time in `astro.config.mjs`.
+   The plugin in `src/lib/rehype-mermaid-themer.mjs` rewrites the baked
+   hex pairs into `--mermaid-section-N-{bg,text}` tokens, so dark mode
+   inverts each pair through the CSS-variable mechanism — no
+   external `!important` override needed. */
