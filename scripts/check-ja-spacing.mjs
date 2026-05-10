@@ -50,6 +50,68 @@ function walkFiles(dir) {
 const JA_LETTER = '[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\u3005\\u30FC]';
 const JA_JA_SPACE = new RegExp(`(${JA_LETTER}) (${JA_LETTER})`, 'gu');
 
+// Inverse-direction patterns (informational / non-blocking).
+//
+// The half-width-space convention also requires a space at JA × ASCII
+// and ASCII × JA boundaries. The cases below are MISSING-SPACE
+// violations of that rule, the inverse of the JA × JA STRANDED-SPACE
+// check above. They are reported as warnings, not blocking errors,
+// because:
+//
+//   - The pattern produces unavoidable false positives on legitimate
+//     compound forms (URL fragments, currency code suffixes, file
+//     extensions adjacent to JA labels) that an editor must judge
+//     case by case.
+//   - The original JA × JA stranded-space check was the high-incident
+//     class (a side-effect of bulk replacements); the inverse direction
+//     is more often a deliberate editorial choice that the editor may
+//     accept or reject per occurrence.
+//
+// Bringing them under the script gives editors a TODO list to walk;
+// it does not auto-fail the build until the editorial process catches
+// up. If the warning count drops to a manageable level later, the
+// failure mode can be promoted.
+const ASCII_ALNUM = '[A-Za-z0-9]';
+const JA_THEN_ASCII = new RegExp(`(${JA_LETTER})(${ASCII_ALNUM})`, 'gu');
+const ASCII_THEN_JA = new RegExp(`(${ASCII_ALNUM})(${JA_LETTER})`, 'gu');
+
+// Markdown-link-aware variants. After URL masking, neither the link
+// boundary chars (`[`, `]`, `_`) match ASCII_ALNUM, so the direct
+// patterns above cannot detect link-edge boundaries. These two
+// patterns run on the masked line and capture the link text edge
+// chars to determine if a space is needed:
+//   - JA + [ASCII-link-text]    → space needed before [
+//   - [...ASCII-link-text]_JA   → space needed after ] (i.e., after
+//                                  the original `)`)
+const JA_THEN_LINK_ASCII = new RegExp(`(${JA_LETTER})\\[(${ASCII_ALNUM})`, 'gu');
+const ASCII_LINK_END_THEN_JA = new RegExp(
+  `\\[(?:[^\\]\\n]|\\\\\\])*(${ASCII_ALNUM})\\]_(${JA_LETTER})`,
+  'gu'
+);
+
+// Punctuation tolerance: middle-dot `・` (U+30FB) is a JA-typography
+// separator (e.g., `Windows・Linux・macOS`) where adding a space on
+// either side would disrupt the convention. Skip warnings whose
+// boundary char is `・`.
+function isMiddleDotBoundary(left, right) {
+  return left === '・' || right === '・';
+}
+
+// Counter-kanji exclusion. JA conventionally attaches a counter
+// kanji directly to a preceding digit without a space — `2010年`,
+// `5月`, `15時`, `100件`, `21,000,000円` etc. The same applies in
+// the inverse direction within compound dates: `1996年2月5日` has
+// `年2` and `月5` boundaries that the rule "needs a space" would
+// flag as violations, but JA convention keeps the entire date
+// compact. Both directions are excluded.
+const COUNTER_KANJI = /[年月日時分秒個件人名回倍円元度番枚次代世紀ヶ箇]/;
+function isDigitFollowedByCounter(left, right) {
+  return /[0-9]/.test(left) && COUNTER_KANJI.test(right);
+}
+function isCounterFollowedByDigit(left, right) {
+  return COUNTER_KANJI.test(left) && /[0-9]/.test(right);
+}
+
 // JA × JA stranded space ACROSS a markdown link boundary. The plain
 // JA_JA_SPACE check above masks `](url)` as `]x`, which means a JA char
 // adjacent to a markdown link is hidden behind ASCII placeholders and
@@ -74,11 +136,21 @@ const JA_LINK_RIGHT = new RegExp(
 );
 
 const violations = [];
+const warnings = [];
 let scanned = 0;
+
+// Verbatim primary-record directories — files under these are
+// translations of historical records whose spacing is part of the
+// verbatim faithfulness, not subject to the editorial JA × ASCII
+// rule. The warning category below skips them entirely; the
+// blocking JA × JA stranded-space check still runs (since stranded
+// spaces are universally an error, regardless of editorial intent).
+const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/'];
 
 for (const root of targets) {
   for (const file of walkFiles(root)) {
     scanned += 1;
+    const isVerbatim = VERBATIM_DIRS.some((d) => file.includes(d));
     const isAstro = file.endsWith('.astro');
     let text = readFileSync(file, 'utf8');
     // For .astro: strip JS line and block comments so JA × JA spaces inside
@@ -121,13 +193,16 @@ for (const root of targets) {
       // Skip slug-only frontmatter lines (slug values commonly have spaces)
       if (inFrontmatter && /^\s*slug:/.test(raw)) continue;
 
-      // Replace inline code spans with a single ASCII placeholder so the
-      // JA × JA boundary check sees the intervening ASCII boundary (the
-      // code span itself is ASCII content, so a half-width space adjacent
-      // to it is a JA × ASCII boundary, not a JA × JA boundary).
-      let stripped = raw.replace(/`[^`]+`/g, 'x');
-      // Replace markdown link URL parts with a placeholder for the same reason
-      stripped = stripped.replace(/\]\([^)]*\)/g, ']x');
+      // Replace inline code spans and markdown URL parts with a NEUTRAL
+      // placeholder ('_') that is neither a JA letter nor an ASCII
+      // alphanumeric. This way:
+      //  - JA_JA_SPACE check still avoids false JA × JA matches across
+      //    the placeholder (placeholder isn't JA, breaks the run).
+      //  - The new ASCII × JA / JA × ASCII checks below don't see the
+      //    placeholder as ASCII (it isn't), so they don't misfire on
+      //    masked URLs or code spans.
+      let stripped = raw.replace(/`[^`]+`/g, '_');
+      stripped = stripped.replace(/\]\([^)]*\)/g, ']_');
 
       const matches = [...stripped.matchAll(JA_JA_SPACE)];
       for (const m of matches) {
@@ -175,23 +250,138 @@ for (const root of targets) {
           context: ctx.trim(),
         });
       }
+
+      // --- Warnings: ASCII × JA / JA × ASCII missing-space ---
+      // Skip primary-source verbatim files: their bodies are translated
+      // historical records; spacing inside is editorial verbatim
+      // faithfulness, not the editorial rule's domain. Skip blockquote
+      // (`>`) lines for the same reason — those are primary-source
+      // quotes embedded in editorial entries.
+      if (isVerbatim) continue;
+      if (/^[ \t]*>/.test(raw)) continue;
+      // Run on the masked text (URLs / inline code stripped to '_').
+      // Each match is an editorial candidate for a half-width space,
+      // NOT a build failure.
+      for (const m of stripped.matchAll(JA_THEN_ASCII)) {
+        if (isMiddleDotBoundary(m[1], m[2])) continue;
+        if (isCounterFollowedByDigit(m[1], m[2])) continue;
+        const idx = m.index ?? 0;
+        const start = Math.max(0, idx - 12);
+        const end = Math.min(stripped.length, idx + m[0].length + 12);
+        warnings.push({
+          file: path.relative(repoRoot, file),
+          line: i + 1,
+          found: m[0],
+          suggested: `${m[1]} ${m[2]}`,
+          context: stripped.slice(start, end).trim(),
+          kind: 'ja→ascii',
+        });
+      }
+      for (const m of stripped.matchAll(ASCII_THEN_JA)) {
+        // Date / quantity convention (e.g., "2010年", "5月", "100件").
+        if (isDigitFollowedByCounter(m[1], m[2])) continue;
+        if (isMiddleDotBoundary(m[1], m[2])) continue;
+        const idx = m.index ?? 0;
+        const start = Math.max(0, idx - 12);
+        const end = Math.min(stripped.length, idx + m[0].length + 12);
+        warnings.push({
+          file: path.relative(repoRoot, file),
+          line: i + 1,
+          found: m[0],
+          suggested: `${m[1]} ${m[2]}`,
+          context: stripped.slice(start, end).trim(),
+          kind: 'ascii→ja',
+        });
+      }
+      // Link-start `JA[ASCII-text]` — `[` is not in ASCII_ALNUM, so
+      // this case is not covered by JA_THEN_ASCII above.
+      for (const m of stripped.matchAll(JA_THEN_LINK_ASCII)) {
+        const idx = m.index ?? 0;
+        const start = Math.max(0, idx - 12);
+        const end = Math.min(stripped.length, idx + m[0].length + 12);
+        warnings.push({
+          file: path.relative(repoRoot, file),
+          line: i + 1,
+          found: `${m[1]}[${m[2]}…`,
+          suggested: `${m[1]} [${m[2]}…`,
+          context: stripped.slice(start, end).trim(),
+          kind: 'ja→[ascii-link]',
+        });
+      }
+      // Link-end `[…ASCII-text](url)JA` — after URL masking the line
+      // looks like `…ASCII]_JA`, which the direct ASCII × JA pattern
+      // doesn't see (the `_` placeholder isn't in ASCII_ALNUM).
+      for (const m of stripped.matchAll(ASCII_LINK_END_THEN_JA)) {
+        const idx = m.index ?? 0;
+        const start = Math.max(0, idx - 8);
+        const end = Math.min(stripped.length, idx + m[0].length + 8);
+        warnings.push({
+          file: path.relative(repoRoot, file),
+          line: i + 1,
+          found: `…${m[1]}](url)${m[2]}`,
+          suggested: `…${m[1]}](url) ${m[2]}`,
+          context: stripped.slice(start, end).trim(),
+          kind: '[ascii-link]→ja',
+        });
+      }
     }
   }
 }
 
-if (violations.length === 0) {
-  console.log(`✓ JA spacing check passed. ${scanned} files scanned, no JA × JA stranded spaces.`);
+// Both violation classes are blocking. The JA × JA stranded-space
+// class catches bulk-replacement leftovers; the JA × ASCII / link-
+// boundary missing-space class catches the inverse rule. Both
+// belong in `npm run check` and both fail the build when present —
+// the matching auto-fix is `scripts/fix-ja-ascii-spacing.mjs`.
+const allIssues = [
+  ...violations.map((v) => ({ ...v, severity: 'jaja-stranded' })),
+  ...warnings.map((w) => ({ ...w, severity: 'asciija-missing' })),
+];
+
+if (allIssues.length === 0) {
+  console.log(`✓ JA spacing check passed. ${scanned} files scanned, no boundary violations.`);
   process.exit(0);
 }
 
-console.error(`✗ Found ${violations.length} JA × JA stranded space(s) (no space between two Japanese characters):`);
-console.error('');
-for (const v of violations) {
-  console.error(`  ${v.file}:${v.line}`);
-  console.error(`    "…${v.context}…"`);
-  console.error(`    "${v.found}" → "${v.suggested}"  (drop the space between two Japanese characters)`);
+if (violations.length > 0) {
+  console.error(`✗ ${violations.length} JA × JA stranded space(s) (no space between two Japanese characters):`);
+  console.error('');
+  for (const v of violations) {
+    console.error(`  ${v.file}:${v.line}`);
+    console.error(`    "…${v.context}…"`);
+    console.error(`    "${v.found}" → "${v.suggested}"  (drop the space)`);
+    console.error('');
+  }
+}
+
+if (warnings.length > 0) {
+  console.error(`✗ ${warnings.length} JA × ASCII boundary violation(s) (missing half-width space):`);
+  console.error('');
+  const PER_FILE_CAP = 5;
+  const byFile = new Map();
+  for (const w of warnings) {
+    if (!byFile.has(w.file)) byFile.set(w.file, []);
+    byFile.get(w.file).push(w);
+  }
+  let shown = 0;
+  for (const [file, list] of byFile) {
+    const slice = warnings.length <= 30 ? list : list.slice(0, PER_FILE_CAP);
+    for (const w of slice) {
+      console.error(`  ${w.file}:${w.line}  [${w.kind}]`);
+      console.error(`    "…${w.context}…"`);
+      console.error(`    "${w.found}" → "${w.suggested}"`);
+      shown++;
+    }
+    if (list.length > slice.length) {
+      console.error(`  …and ${list.length - slice.length} more in ${file}`);
+    }
+    console.error('');
+  }
+  console.error(`Shown ${shown} of ${warnings.length} JA × ASCII issues.`);
+  console.error('Auto-fix: `node scripts/fix-ja-ascii-spacing.mjs`');
   console.error('');
 }
+
 console.error('See STYLE_GUIDE_JA.md § "Half-width space convention".');
-console.error(`Total: ${violations.length} violation(s) across ${scanned} files.`);
+console.error(`Total: ${allIssues.length} violation(s) across ${scanned} files.`);
 process.exit(1);
