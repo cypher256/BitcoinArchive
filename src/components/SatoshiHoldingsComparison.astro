@@ -7,11 +7,15 @@ interface Props {
 
 const { lang } = Astro.props;
 
+// Estimate color tokens — Lerner 2019 (the canonical 1.1M estimate)
+// gets accent as the focus; Whale Alert (the most refined estimate)
+// gets chart-color-2; the two earlier rougher estimates share the
+// muted neutral so they read as "earlier, less refined".
 const estimates = [
-  { source: 'Lerner 2013', btc: 1000000, year: 2013, color: '#9ca3af' },
-  { source: 'BitMEX Research 2018', btc: 700000, year: 2018, color: '#9ca3af' },
-  { source: 'Lerner 2019', btc: 1100000, year: 2019, color: '#b45309' },
-  { source: 'Whale Alert 2020', btc: 1125150, year: 2020, color: '#2563eb' },
+  { source: 'Lerner 2013', btc: 1000000, year: 2013, colorToken: '--chart-color-6' },
+  { source: 'BitMEX Research 2018', btc: 700000, year: 2018, colorToken: '--chart-color-6' },
+  { source: 'Lerner 2019', btc: 1100000, year: 2019, colorToken: '--color-accent' },
+  { source: 'Whale Alert 2020', btc: 1125150, year: 2020, colorToken: '--chart-color-2' },
 ];
 
 const labels = {
@@ -60,8 +64,20 @@ const l = labels[lang];
     var container = document.getElementById('holdings-chart');
     if (!container) return;
 
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      return {
+        accent: token('--color-accent'),
+        muted: token('--color-text-muted'),
+        text: token('--color-text'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 600;
       var margin = { top: 20, right: 100, bottom: 30, left: 180 };
@@ -76,35 +92,49 @@ const l = labels[lang];
       var x = d3.scaleLinear().domain([0, 1300000]).range([0, w]);
 
       g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
-        .selectAll('text').attr('font-size', '11px');
+        .selectAll('text').attr('font-size', '11px').style('fill', T.text);
       g.append('g').attr('transform', 'translate(0,' + h + ')')
         .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return (d / 1000000).toFixed(1) + 'M'; }))
-        .selectAll('text').attr('font-size', '10px');
+        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
-      // Consensus marker at 1.1M
+      // Consensus marker at 1.1M — accent so it threads with the
+      // Lerner 2019 bar that lands exactly there.
       g.append('line')
         .attr('x1', x(1100000)).attr('x2', x(1100000))
         .attr('y1', 0).attr('y2', h)
-        .attr('stroke', '#b45309').attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.5);
+        .attr('stroke', T.accent).attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.5);
 
       estimates.forEach(function(e) {
+        var color = token(e.colorToken);
         g.append('rect')
           .attr('y', y(e.source)).attr('x', 0)
           .attr('height', y.bandwidth()).attr('width', x(e.btc))
-          .attr('fill', e.color).attr('rx', 2).attr('opacity', 0.85);
+          .attr('fill', color).attr('rx', 2).attr('opacity', 0.85);
 
         g.append('text')
           .attr('y', y(e.source) + y.bandwidth() / 2)
           .attr('x', x(e.btc) + 6)
           .attr('dominant-baseline', 'central')
           .attr('font-size', '12px').attr('font-weight', '700')
-          .attr('fill', e.color)
+          .attr('fill', color)
           .text((e.btc / 1000).toFixed(0) + 'k ' + l.btc);
       });
     }
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
