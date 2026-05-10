@@ -20,14 +20,17 @@
  *   - [ASCII-link-text](url) + JA → ](url) + space + JA
  *
  * Excluded:
- *   - Files under primary-source verbatim directories
- *     (forum / correspondence / emails / sourceforge / bip) — entire
- *     bodies skipped because they are translations of historical
- *     records and the editor's spacing decisions there are
- *     verbatim-faithful, not subject to mechanical rewriting
- *   - Lines starting with `>` (blockquote) in editorial files —
- *     primary-source quotes embedded in narrative entries; the
- *     spacing inside the quote is part of the quoted text
+ *   - Lines starting with `>` (blockquote) — primary-source quotes
+ *     embedded in editorial entries, OR the body of verbatim
+ *     primary-record files. Spacing inside the quote is part of the
+ *     quoted text, not subject to mechanical rewriting. This rule
+ *     applies in BOTH editorial and verbatim files: a primary-source
+ *     translation in a verbatim file (the body) typically lives on
+ *     blockquote lines OR plain prose lines; only the blockquote
+ *     lines are quoted material proper. The rest — `editorNote`
+ *     frontmatter, translator-added introductions to the quote,
+ *     `description` fields — is editorial JA prose and DOES follow
+ *     the rule.
  *   - Inside fenced code blocks (```...```)
  *   - Inside inline code (`...`)
  *   - Inside markdown link URL parts (`(...)` after `]`)
@@ -62,7 +65,6 @@ const DRY_RUN = process.argv.includes('--dry-run');
 const J = '[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\u3005\\u30FC]';
 const A = '[A-Za-z0-9]';
 const COUNTER_KANJI = /[年月日時分秒個件人名回倍円元度番枚次代世紀ヶ箇]/;
-const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/'];
 
 function walk(dir) {
   const out = [];
@@ -83,6 +85,20 @@ function maskExclusions(content, ext) {
   const masks = [];
   const placeholder = (idx) => ` MASK${idx} `;
   let masked = content;
+  // ORDER MATTERS — outer-scope masks must run BEFORE inner-scope
+  // ones. If URL or inline-code masks ran first inside a blockquote
+  // line, the blockquote mask captured a fragment that contained
+  // ` MASK<n> ` placeholders, and the single-pass unmask could not
+  // restore those nested references (the regex doesn't re-scan its
+  // own replacements). Mask blockquote lines first so the URL /
+  // inline-code masks only see prose lines and never end up nested
+  // inside another mask.
+  if (ext === '.md') {
+    masked = masked.replace(/^[ \t]*>.*$/gm, (m) => {
+      masks.push(m);
+      return placeholder(masks.length - 1);
+    });
+  }
   if (ext === '.astro') {
     // Astro file: mask JS/TS line and block comments so JA inside
     // them isn't flagged. The Astro frontmatter (top --- ... ---)
@@ -96,11 +112,6 @@ function maskExclusions(content, ext) {
       return placeholder(masks.length - 1);
     });
   }
-  // YAML frontmatter (.md only) is processed in-place (no mask).
-  // Title and description string values are user-visible (rendered
-  // as page titles and card subtitles), so they follow the same JA
-  // × ASCII spacing rule as body prose. YAML keys are
-  // conventionally ASCII so they don't have JA × ASCII boundaries.
   // Fenced code blocks
   masked = masked.replace(/```[\s\S]*?```/g, (m) => {
     masks.push(m);
@@ -113,28 +124,26 @@ function maskExclusions(content, ext) {
   });
   // Markdown link URL parts: keep the `]` (so link-end boundary
   // checks still work) and mask ONLY the `(url)` portion. masks[i]
-  // stores just `(url)`, so unmask reproduces the original `](url)`
-  // (the `]` in the text + `(url)` from the placeholder = `](url)`).
+  // stores just `(url)`, so unmask reproduces the original `](url)`.
   masked = masked.replace(/\]\(([^)\n]+)\)/g, (full, url) => {
     masks.push(`(${url})`);
     return ']' + placeholder(masks.length - 1);
   });
-  // Blockquote lines (.md only): each `> ...` line is a primary-source
-  // quote in an editorial entry (per STYLE_GUIDE.md "Editorial /
-  // Narrative Entries"). The spacing inside the quote belongs to the
-  // quoted text and must not be mechanically rewritten. Mask each
-  // such line as a single placeholder to keep its content invariant.
-  if (ext === '.md') {
-    masked = masked.replace(/^[ \t]*>.*$/gm, (m) => {
-      masks.push(m);
-      return placeholder(masks.length - 1);
-    });
-  }
   return { masked, masks };
 }
 
 function unmask(masked, masks) {
-  return masked.replace(/ MASK(\d+) /g, (_, n) => masks[Number(n)]);
+  // Iterate until idempotent — defends against any nested-mask
+  // scenario where a replacement contains another placeholder.
+  // The current mask order avoids that, but iterating is cheap
+  // (typically 1 pass) and prevents future regressions.
+  let prev;
+  let cur = masked;
+  do {
+    prev = cur;
+    cur = prev.replace(/ MASK(\d+) /g, (_, n) => masks[Number(n)]);
+  } while (cur !== prev);
+  return cur;
 }
 
 let totalFiles = 0;
@@ -145,11 +154,12 @@ const allFiles = [];
 for (const t of targets) allFiles.push(...walk(t));
 
 for (const file of allFiles) {
-  // Skip primary-source verbatim files entirely. Their bodies are
-  // translated reproductions of historical records; the editor's
-  // spacing decisions there are part of the verbatim faithfulness
-  // and must not be mechanically rewritten.
-  if (VERBATIM_DIRS.some((d) => file.includes(d))) continue;
+  // ALL JA files are processed (no verbatim-directory exclusion).
+  // Verbatim faithfulness is enforced at the LINE level via the
+  // blockquote (`>`) skip in maskExclusions, which protects the
+  // primary-source quote text but allows editorial inserts in the
+  // same file (frontmatter `editorNote`, `description`, translator
+  // commentary on plain prose lines) to follow the JA × ASCII rule.
   const ext = file.endsWith('.astro') ? '.astro' : '.md';
   const original = readFileSync(file, 'utf-8');
   const { masked, masks } = maskExclusions(original, ext);

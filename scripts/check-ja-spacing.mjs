@@ -139,18 +139,23 @@ const violations = [];
 const warnings = [];
 let scanned = 0;
 
-// Verbatim primary-record directories — files under these are
-// translations of historical records whose spacing is part of the
-// verbatim faithfulness, not subject to the editorial JA × ASCII
-// rule. The warning category below skips them entirely; the
-// blocking JA × JA stranded-space check still runs (since stranded
-// spaces are universally an error, regardless of editorial intent).
-const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/'];
+// Verbatim faithfulness applies to PRIMARY-SOURCE QUOTED CONTENT
+// (lines that begin with `>` blockquote prefix in editorial files,
+// AND the body of files under verbatim directories that reproduces
+// the historical text directly). It does NOT apply to editor-added
+// content inside the same files — `editorNote` frontmatter,
+// translator-added prose introducing the quote, `description`
+// fields, etc. Those are editorial JA prose and follow the
+// JA × ASCII spacing rule.
+//
+// The previous design "skip the entire verbatim file" was too
+// coarse: it hid violations in editorial inserts living inside
+// primary-source files. The current rule is "skip only the
+// blockquote LINES" and apply to everything else.
 
 for (const root of targets) {
   for (const file of walkFiles(root)) {
     scanned += 1;
-    const isVerbatim = VERBATIM_DIRS.some((d) => file.includes(d));
     const isAstro = file.endsWith('.astro');
     let text = readFileSync(file, 'utf8');
     // For .astro: strip JS line and block comments so JA × JA spaces inside
@@ -252,12 +257,12 @@ for (const root of targets) {
       }
 
       // --- Warnings: ASCII × JA / JA × ASCII missing-space ---
-      // Skip primary-source verbatim files: their bodies are translated
-      // historical records; spacing inside is editorial verbatim
-      // faithfulness, not the editorial rule's domain. Skip blockquote
-      // (`>`) lines for the same reason — those are primary-source
-      // quotes embedded in editorial entries.
-      if (isVerbatim) continue;
+      // Skip blockquote (`>`) lines — primary-source quotes whose
+      // spacing is part of the quoted text, not subject to the
+      // editorial spacing rule. Verbatim-directory files are NOT
+      // skipped wholesale: their `editorNote` frontmatter, translator-
+      // added prose introducing the quote, and `description` fields
+      // are editorial inserts and DO follow the rule.
       if (/^[ \t]*>/.test(raw)) continue;
       // Run on the masked text (URLs / inline code stripped to '_').
       // Each match is an editorial candidate for a half-width space,
@@ -344,12 +349,41 @@ if (allIssues.length === 0) {
 }
 
 if (violations.length > 0) {
-  console.error(`✗ ${violations.length} JA × JA stranded space(s) (no space between two Japanese characters):`);
-  console.error('');
-  for (const v of violations) {
-    console.error(`  ${v.file}:${v.line}`);
-    console.error(`    "…${v.context}…"`);
-    console.error(`    "${v.found}" → "${v.suggested}"  (drop the space)`);
+  // The `violations` array mixes two kinds detected on the same
+  // pass: direct text JA × JA stranded space (caught by JA_JA_SPACE)
+  // and JA × JA boundary across a markdown link (caught by
+  // JA_LINK_LEFT / JA_LINK_RIGHT). The two are remediated by
+  // different scripts: direct text is a manual fix (no auto-fix
+  // exists), link-boundary is `fix-ja-link-spacing.mjs`. We can
+  // distinguish them structurally — link-boundary `found` strings
+  // contain the literal `[` or `](url)`. Report them in two
+  // labelled sections so the editor follows the right path.
+  const linkBoundary = violations.filter((v) => v.found.includes('[') || v.found.includes('](url)'));
+  const direct = violations.filter((v) => !linkBoundary.includes(v));
+
+  if (direct.length > 0) {
+    console.error(`✗ ${direct.length} JA × JA stranded space(s) (direct text):`);
+    console.error('');
+    for (const v of direct) {
+      console.error(`  ${v.file}:${v.line}`);
+      console.error(`    "…${v.context}…"`);
+      console.error(`    "${v.found}" → "${v.suggested}"  (drop the space)`);
+      console.error('');
+    }
+    console.error('Manual fix required (no auto-fix).');
+    console.error('');
+  }
+
+  if (linkBoundary.length > 0) {
+    console.error(`✗ ${linkBoundary.length} JA × JA stranded space(s) at markdown-link boundary:`);
+    console.error('');
+    for (const v of linkBoundary) {
+      console.error(`  ${v.file}:${v.line}`);
+      console.error(`    "…${v.context}…"`);
+      console.error(`    "${v.found}" → "${v.suggested}"  (drop the space)`);
+      console.error('');
+    }
+    console.error('Auto-fix: `node scripts/fix-ja-link-spacing.mjs`');
     console.error('');
   }
 }
