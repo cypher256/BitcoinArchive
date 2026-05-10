@@ -46,10 +46,10 @@ const l = labels[lang];
     <p class="analysis-desc">{l.subtitle}</p>
     <div id="nonce-lsb-chart" class="chart-container"></div>
     <div class="legend">
-      <span class="legend-item"><span class="legend-swatch" style="background:#2563eb"></span>{l.range0_9}</span>
-      <span class="legend-item"><span class="legend-swatch" style="background:#dc2626"></span>{l.range10_18}</span>
-      <span class="legend-item"><span class="legend-swatch" style="background:#2563eb"></span>{l.range19_58}</span>
-      <span class="legend-item"><span class="legend-swatch" style="background:#9ca3af"></span>{l.range59_255}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-patoshi"></span>{l.range0_9}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-gap"></span>{l.range10_18}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-patoshi"></span>{l.range19_58}</span>
+      <span class="legend-item"><span class="legend-swatch swatch-sparse"></span>{l.range59_255}</span>
     </div>
   </section>
 
@@ -71,8 +71,31 @@ const l = labels[lang];
     var container = document.getElementById('nonce-lsb-chart');
     if (!container) return;
 
+    // Resolve a CSS custom property against :root.
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+    function readTokens() {
+      // Patoshi-vs-noise data encoding:
+      //   patoshi pattern  → --chart-color-2 (blue)   = "the signal"
+      //   anomaly gap      → --chart-negative (red)   = "the missing values"
+      //   sparse normal    → --chart-color-6 (gray)   = "background noise"
+      //   expected uniform → --chart-warning (amber)  = "what would be normal"
+      return {
+        patoshi: token('--chart-color-2'),
+        gap: token('--chart-negative'),
+        sparse: token('--chart-color-6'),
+        expected: token('--chart-warning'),
+        muted: token('--color-text-muted'),
+        text: token('--color-text'),
+        tooltipBg: token('--chart-tooltip-bg'),
+        tooltipFg: token('--chart-tooltip-fg'),
+      };
+    }
+
     function draw() {
       container.innerHTML = '';
+      var T = readTokens();
       var rect = container.getBoundingClientRect();
       var W = rect.width || 700;
       var margin = { top: 20, right: 20, bottom: 50, left: 55 };
@@ -94,13 +117,13 @@ const l = labels[lang];
         .selectAll('text').attr('font-size', '10px');
       g.append('text').attr('x', w / 2).attr('y', h + 40)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', '#6b6b6b').text(l.xLabel);
+        .attr('fill', T.muted).text(l.xLabel);
 
       // Range annotations below axis
       var rangeAnnotations = [
-        { start: 0, end: 9, label: '0–9', color: '#2563eb' },
-        { start: 10, end: 18, label: '10–18', color: '#dc2626' },
-        { start: 19, end: 58, label: '19–58', color: '#2563eb' },
+        { start: 0, end: 9, label: '0–9', color: T.patoshi },
+        { start: 10, end: 18, label: '10–18', color: T.gap },
+        { start: 19, end: 58, label: '19–58', color: T.patoshi },
       ];
       rangeAnnotations.forEach(function(r) {
         var rx1 = x(String(r.start));
@@ -119,26 +142,28 @@ const l = labels[lang];
       g.append('text').attr('transform', 'rotate(-90)')
         .attr('x', -h / 2).attr('y', -42)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', '#6b6b6b').text(l.yLabel);
+        .attr('fill', T.muted).text(l.yLabel);
 
-      // Expected uniform line
+      // Expected uniform line — drawn in --chart-warning so it reads
+      // as "the baseline you'd expect" against the data bars.
       var total = d3.sum(dist);
       var expected = total / 256;
       g.append('line')
         .attr('x1', 0).attr('x2', w)
         .attr('y1', y(expected)).attr('y2', y(expected))
-        .attr('stroke', '#f59e0b').attr('stroke-width', 1.5)
+        .attr('stroke', T.expected).attr('stroke-width', 1.5)
         .attr('stroke-dasharray', '6,4').attr('stroke-opacity', 0.7);
       g.append('text').attr('x', w - 4).attr('y', y(expected) - 5)
         .attr('text-anchor', 'end').attr('font-size', '10px')
-        .attr('fill', '#f59e0b').text(l.expectedLabel);
+        .attr('fill', T.expected).text(l.expectedLabel);
 
-      // Color function
+      // Color function — encodes Patoshi-pattern membership; same
+      // color tokens as the legend swatches in the inline style.
       function barColor(i) {
-        if (i <= 9) return '#2563eb';
-        if (i <= 18) return '#dc2626';
-        if (i <= 58) return '#2563eb';
-        return '#9ca3af';
+        if (i <= 9) return T.patoshi;
+        if (i <= 18) return T.gap;
+        if (i <= 58) return T.patoshi;
+        return T.sparse;
       }
 
       // Bars
@@ -156,7 +181,7 @@ const l = labels[lang];
       container.style.position = 'relative';
       var tooltip = d3.select(container).append('div')
         .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
-        .style('background', 'rgba(0,0,0,0.85)').style('color', '#fff')
+        .style('background', T.tooltipBg).style('color', T.tooltipFg)
         .style('padding', '6px 10px').style('border-radius', '4px')
         .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
 
@@ -184,6 +209,19 @@ const l = labels[lang];
     draw();
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    // Theme/mode listeners — repaint on theme/mode toggle.
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', draw);
+      else if (mql.addListener) mql.addListener(draw);
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(draw).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-mode', 'data-theme'],
+      });
+    }
   }
   init();
 })();
@@ -231,4 +269,9 @@ const l = labels[lang];
     height: 12px;
     border-radius: 2px;
   }
+  /* Swatch tokens mirror the runtime barColor() encoding so the
+     legend stays in sync with the chart on theme swap. */
+  .swatch-patoshi { background: var(--chart-color-2); }
+  .swatch-gap { background: var(--chart-negative); }
+  .swatch-sparse { background: var(--chart-color-6); }
 </style>
