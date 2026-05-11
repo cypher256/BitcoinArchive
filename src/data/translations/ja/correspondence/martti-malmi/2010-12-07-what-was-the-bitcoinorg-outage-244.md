@@ -27,7 +27,7 @@ translationStatus: complete
 暗号化した root パスワードを添付しました。
 
 <!-- speaker: Satoshi Nakamoto -->
-> ありがとう。bitcoinexchangeの別サーバーへの移行は完了しましたか？
+> ありがとう。bitcoinexchange の別サーバーへの移行は完了したか？
 
 <!-- speaker: Martti Malmi -->
 ファイル、データベース、bitcoind は全て移動しましたが、稼働させるにはまだ作業が必要です。旧サイトは現在ダウンしているので、必要であれば遠慮なく再起動してください。
