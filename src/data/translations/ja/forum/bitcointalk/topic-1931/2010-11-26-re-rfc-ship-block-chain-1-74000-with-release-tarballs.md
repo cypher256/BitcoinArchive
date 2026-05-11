@@ -34,7 +34,7 @@ quotes:
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > <!-- quote: q2 -->
-> > 時間がかかるのはダウンロードではなく、検証とインデックス作成だ。
+> > Berkeley DB の設定を調整して、キャッシュメモリーを有効化または増加できるかもしれない。
 <!-- /tone-skip -->
 
 ダウンロード中に、[ACID](http://en.wikipedia.org/wiki/ACID) プロパティのどれが必要ですか？
