@@ -164,20 +164,36 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
 
   const enBody = stripFrontmatter(readFileSync(enPath, 'utf-8'));
   const jaBody = stripFrontmatter(readFileSync(jaPath, 'utf-8'));
-  const enParas = splitParagraphs(enBody);
-  const jaParas = splitParagraphs(jaBody);
+  const enParasRaw = splitParagraphs(enBody);
+  const jaParasRaw = splitParagraphs(jaBody);
+
+  // Mirror of the marker-pre-filter in check-quote-translation-consistency.mjs.
+  // Strip marker-only paragraphs from both sides before the lock-step
+  // walk so JA-side `<!-- speaker: -->` markers don't shift alignment.
+  function filterMarkerOnly(paras) {
+    const kept = [];
+    for (let i = 0; i < paras.length; i++) {
+      const raw = paras[i];
+      const norm = normaliseParagraph(raw);
+      if (!norm) continue;
+      if (isMarkerOnly(norm)) continue;
+      kept.push({ raw, originalIdx: i });
+    }
+    return kept;
+  }
+  const enParas = filterMarkerOnly(enParasRaw);
+  const jaParas = filterMarkerOnly(jaParasRaw);
 
   const len = Math.min(enParas.length, jaParas.length);
   for (let i = 0; i < len; i++) {
-    const enRaw = enParas[i];
-    const jaRaw = jaParas[i];
+    const { raw: enRaw, originalIdx: enOrigIdx } = enParas[i];
+    const { raw: jaRaw } = jaParas[i];
 
     if (isCodeBlock(enRaw) || isCodeBlock(jaRaw)) continue;
 
     const enNorm = normaliseParagraph(enRaw);
     if (enNorm.length < MIN_PHRASE_LENGTH) continue;
     if (!/[a-zA-Z]/.test(enNorm)) continue;
-    if (isMarkerOnly(enNorm)) continue;
     if (isHeading(enNorm)) continue;
 
     const jaLex = normaliseParagraph(jaRaw);
@@ -188,7 +204,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     enParaMap.get(enNorm).push({
       enPath,
       jaPath,
-      paraIdx: i,
+      paraIdx: enOrigIdx,
       jaRawPara: jaRaw,
       jaParaWidth: jaWidth,
       jaParaLex: jaLex,

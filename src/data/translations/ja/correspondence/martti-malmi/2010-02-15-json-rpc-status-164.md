@@ -24,8 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
-> ノートパソコンを持っていないか？
+> VPS をいじらなくても済むように、テストやコンパイルができる Ubuntu のノートパソコンを持っていないか？
 
 <!-- speaker: Martti Malmi -->
 はい。Python の JSON-RPC でテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。

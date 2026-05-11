@@ -26,6 +26,6 @@ translationStatus: complete
 まだ役に立つかもしれないので、ログをお送りします。
 
 <!-- speaker: Satoshi Nakamoto -->
-> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.logにエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datか、それともaddr.datやwallet.datも含まれるか？
+> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.log にエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常に blkindex.dat か、それとも addr.dat や wallet.dat も含まれるか？
 
 <!-- speaker: Martti Malmi -->
