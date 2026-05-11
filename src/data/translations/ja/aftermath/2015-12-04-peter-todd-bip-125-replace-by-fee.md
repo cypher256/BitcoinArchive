@@ -50,7 +50,7 @@ BIP の Rationale（根拠）は、ナカモトのオリジナルの Bitcoin 実
 <!-- speaker: Peter Todd -->
 2010年12月10日、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（当時[「retep」](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)として投稿）はサトシのトランザクション置換の説明に対して技術的な指摘で返信した：
 
-> 「もちろん、正確に言えば、2つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
+> 「もちろん、正確に言えば、2 つ目のトランザクションに手数料がある場合、入力と出力は *正確には* 一致しない」
 
 <!-- speaker: narrator -->
 これはトッドの BitcoinTalk での 2回目の投稿で、登録から 3日後だった。[サトシの最後の公開フォーラム投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)はその 2日後だった。5年後、トッドはまさにサトシが説明していた概念を正式化した。

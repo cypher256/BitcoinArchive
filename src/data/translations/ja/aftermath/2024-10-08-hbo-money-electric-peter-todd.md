@@ -55,7 +55,7 @@ translationStatus: complete
 ドキュメンタリーの中心的な証拠は、2010年12月の BitcoinTalk でのやり取りだった。サトシがトランザクション置換——後に Replace-by-Fee（RBF）として知られる概念——を説明した。その約 1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peter の逆綴り）が技術的な指摘で返信した。
 
 <!-- speaker: Peter Todd -->
-> 「もちろん、正確に言えば、2つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
+> 「もちろん、正確に言えば、2 つ目のトランザクションに手数料がある場合、入力と出力は *正確には* 一致しない」
 
 <!-- speaker: narrator -->
 これはトッドの BitcoinTalk での 2回目の投稿で、登録からわずか 3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2日後の 12月12日だった。
