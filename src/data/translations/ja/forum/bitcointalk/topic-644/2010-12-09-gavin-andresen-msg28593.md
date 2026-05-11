@@ -22,7 +22,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> openSuseとSLEのパッケージも作ろうとしている。Debianも可能だが、wx、boost、libdbのコンパイルは少しやりすぎに思える。手伝ってくれる人はいるか？
+> openSuse と SLE のパッケージも作成しようとしている。Debian も可能だが、wx、boost、libdb のコンパイルは大がかりすぎる。誰か手伝ってくれないか？
 <!-- /tone-skip -->
 
 ナイトリービルドは素晴らしいアイデアだ。Build Service は自動 SVN アップデートを行うのだろうか？ GUI の Bitcoin のビルドを手伝ってくれる人はいるか（または wxWidgets チームの誰かを知っている人は？）
