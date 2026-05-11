@@ -300,6 +300,20 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
 
     if (isCodeBlock(enRaw) || isCodeBlock(jaRaw)) continue;
 
+    // Shallow structure check: EN[i] and JA[i] must agree on blockquote
+    // status. The lock-step paragraph walk pairs the Nth content paragraph
+    // on each side, but in forum threads with nested replies, the JA
+    // entry sometimes splits or merges paragraphs differently — typical
+    // case is Satoshi quoting a prior post `>` and then his own reply as
+    // a separate paragraph, where the JA file collapses the two into a
+    // single body paragraph (or vice versa). Without this gate, the EN
+    // quote at position i pairs with a JA body at position i (or
+    // mirror), producing false-positive "divergence" reports against
+    // unrelated prose. Matching `isBlockquoteParagraph` requires the
+    // pair to share role (both quote, or both body), which is a
+    // necessary precondition for any meaningful translation comparison.
+    if (isBlockquoteParagraph(enRaw) !== isBlockquoteParagraph(jaRaw)) continue;
+
     const enNorm = normaliseParagraph(enRaw);
     if (enNorm.length < MIN_PHRASE_LENGTH) continue;
     if (!/[a-zA-Z]/.test(enNorm)) continue;
