@@ -28,7 +28,9 @@
  *      paragraph N in JA). The archive's editorial convention keeps
  *      these counts aligned, but mismatches occur (extra footnotes,
  *      inserted commentary). To survive those, each EN→JA pair is
- *      sanity-checked with `looksAligned` before being recorded.
+ *      screened by a coarse length envelope (`passesLengthEnvelope`)
+ *      before being recorded — this rejects only obviously mismatched
+ *      pairs, not all alignment failures. See Limitations below.
  *   4. Normalise each paragraph for comparison: strip leading `>`,
  *      strip HTML comments (`<!-- ... -->`), and on the JA side flatten
  *      full-width / half-width digit + counter spacing so 「10 万台」
@@ -47,13 +49,20 @@
  *
  * Limitations:
  *   - Paragraph alignment assumes EN and JA share the same blank-
- *     line paragraph structure. `looksAligned` filters obvious
- *     mismatches, but it cannot recover the true pair when the
- *     structures have drifted by more than one paragraph.
+ *     line paragraph structure. `passesLengthEnvelope` rejects only
+ *     pairs whose character counts diverge by more than 0.2x–2.5x —
+ *     this is a length screen, not a content-alignment check.
+ *     Different prose with similar length will pass it. Every
+ *     reported divergence still requires human review before any
+ *     edit is made. The audit is a candidate-finder, not a verdict.
  *   - Phrase matching is by full-paragraph equality after
  *     normalisation. A phrase split across paragraph boundaries in
  *     one entry but inline in another is not matched. This is a
  *     deliberate noise vs. recall trade-off.
+ *   - `audit:` placement (not `check:`) is intentional. Promotion to
+ *     `check:` (= build-blocking) requires (a) a real alignment
+ *     mechanism beyond length envelope, and (b) demonstrated low
+ *     false-positive rate via sampling. See plan file under temp/.
  *
  * Exit code: 0 on no divergence, 1 on any divergence detected.
  */
@@ -98,10 +107,16 @@ function splitParagraphs(text) {
  *    versions of the same text collapse to the same form);
  *  - strip HTML comments such as `<!-- speaker: NAME -->`,
  *    `<!-- quote: qN -->`, `<!-- tone-skip -->`, etc.;
- *  - tighten whitespace around inline-emphasis markers (`*…*`, `_…_`)
- *    so "input is *exactly* equal" and "input is*exactly*equal" do
- *    not register as divergent — that orthographic variation is owned
- *    by `check-ja-spacing` and the Markdown renderer, not this audit;
+ *  - blank out inline code spans (`` `...` ``) so things like `*ptr`,
+ *    star globs, or other punctuation inside code do not interact with
+ *    the emphasis-marker normalisation below;
+ *  - tighten whitespace around paired inline-emphasis markers (`*…*`,
+ *    `_…_`) so "input is *exactly* equal" and "input is*exactly*equal"
+ *    do not register as divergent — that orthographic variation is
+ *    owned by `check-ja-spacing` and the Markdown renderer, not this
+ *    audit. The pattern requires *non-space* characters on both sides
+ *    of the marker so it only matches genuine emphasis pairs, never a
+ *    list bullet (`* item`) or a stray standalone asterisk;
  *  - collapse all whitespace to a single space, and trim.
  */
 function normaliseParagraph(para) {
@@ -110,7 +125,8 @@ function normaliseParagraph(para) {
     .map((line) => line.replace(/^(>+\s*)+/, ''))
     .join(' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
-    .replace(/\s*([*_])\s*/g, '$1')
+    .replace(/`[^`\n]*`/g, ' ')
+    .replace(/(\S)\s*([*_])\s*(\S)/g, '$1$2$3')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -181,15 +197,21 @@ function isBlockquoteParagraph(rawPara) {
 }
 
 /**
- * Loose alignment check between an EN paragraph and the paragraph at
- * the same index in JA. When the two structures drift (extra
- * footnotes, inserted commentary, mismatched paragraph splits), index
- * lock-step breaks and the report would point at unrelated JA prose —
- * exactly the false positive the original reviewer flagged. A length
- * envelope of 0.2x–2.5x is intentionally generous; the goal is to
- * throw out alignment failures, not to police translation density.
+ * Length-envelope screen between an EN paragraph and the paragraph at
+ * the same index in JA. This is **not** a real alignment check — it
+ * only rejects obviously mismatched pairs (e.g. an EN paragraph at
+ * index N falls on a long JA paragraph that is plainly different
+ * prose). A 0.2x–2.5x envelope is intentionally generous; two
+ * paragraphs with completely different content can still share a
+ * similar length and pass this screen. The audit therefore remains a
+ * "candidate-finder" — every reported divergence still requires human
+ * review before any edit is made. A real alignment check (matching by
+ * content, e.g. embedding similarity or anchor markers) is out of
+ * scope for the current version; if this audit is ever promoted from
+ * `audit:` to `check:`, that work needs to happen first (see plan
+ * file under temp/ for the precondition list).
  */
-function looksAligned(enNorm, jaNorm) {
+function passesLengthEnvelope(enNorm, jaNorm) {
   if (!jaNorm) return false;
   if (enNorm.length < 20 || jaNorm.length < 8) return false;
   const ratio = jaNorm.length / enNorm.length;
@@ -221,7 +243,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     const enRaw = enParas[i];
     const jaRaw = jaParas[i];
 
-    if (isCodeBlock(enRaw)) continue;
+    if (isCodeBlock(enRaw) || isCodeBlock(jaRaw)) continue;
 
     const enNorm = normaliseParagraph(enRaw);
     if (enNorm.length < MIN_PHRASE_LENGTH) continue;
@@ -230,7 +252,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     if (isHeading(enNorm)) continue;
 
     const jaNorm = normaliseJaWidth(normaliseParagraph(jaRaw));
-    if (!looksAligned(enNorm, jaNorm)) continue;
+    if (!passesLengthEnvelope(enNorm, jaNorm)) continue;
 
     if (!enParaMap.has(enNorm)) enParaMap.set(enNorm, []);
     enParaMap.get(enNorm).push({
