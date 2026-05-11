@@ -38,8 +38,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 > <!-- speaker: Satoshi Nakamoto -->
-> 注文の確認と入力は、少なくとも最初は手動で行うつもりか？
-> 私ならそうする。
+> 注文の確認と入力は、少なくとも最初は手動で行うつもりか？私ならそうする。
 
 <!-- /tone-skip -->
 
