@@ -23,14 +23,19 @@
  *      the matching Japanese translation under
  *      `src/data/translations/ja/` by relative path.
  *   2. Strip the YAML frontmatter from both files.
- *   3. Split each body into paragraphs on blank lines, then walk
- *      EN and JA paragraphs in lock-step (paragraph N in EN ↔
- *      paragraph N in JA). The archive's editorial convention keeps
- *      these counts aligned, but mismatches occur (extra footnotes,
- *      inserted commentary). To survive those, each EN→JA pair is
- *      screened by a coarse length envelope (`passesLengthEnvelope`)
- *      before being recorded — this rejects only obviously mismatched
- *      pairs, not all alignment failures. See Limitations below.
+ *   3. Split each body into paragraphs on blank lines. Pre-filter
+ *      marker-only paragraphs (e.g. `<!-- speaker: Satoshi Nakamoto -->`
+ *      on a line by itself) from both EN and JA paragraph lists,
+ *      since the JA archive interleaves those between speaker turns
+ *      where the EN file has none. Then walk EN and JA paragraphs in
+ *      lock-step (Nth content paragraph in EN ↔ Nth content paragraph
+ *      in JA). The archive's editorial convention keeps these counts
+ *      aligned once marker noise is removed, but mismatches still
+ *      occur (extra footnotes, inserted commentary). To survive those,
+ *      each EN→JA pair is screened by a coarse length envelope
+ *      (`passesLengthEnvelope`) before being recorded — this rejects
+ *      only obviously mismatched pairs, not all alignment failures.
+ *      See Limitations below.
  *   4. Normalise each paragraph for comparison: strip leading `>`,
  *      strip HTML comments (`<!-- ... -->`), and on the JA side flatten
  *      full-width / half-width digit + counter spacing so 「10 万台」
@@ -75,7 +80,8 @@
  *
  * Limitations:
  *   - Paragraph alignment assumes EN and JA share the same blank-
- *     line paragraph structure. `passesLengthEnvelope` rejects only
+ *     line paragraph structure after marker-only paragraphs are
+ *     stripped from both sides. `passesLengthEnvelope` rejects only
  *     pairs whose character counts diverge by more than 0.2x–2.5x —
  *     this is a length screen, not a content-alignment check.
  *     Different prose with similar length will pass it. Every
@@ -261,20 +267,42 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
 
   const enBody = stripFrontmatter(readFileSync(enPath, 'utf-8'));
   const jaBody = stripFrontmatter(readFileSync(jaPath, 'utf-8'));
-  const enParas = splitParagraphs(enBody);
-  const jaParas = splitParagraphs(jaBody);
+  const enParasRaw = splitParagraphs(enBody);
+  const jaParasRaw = splitParagraphs(jaBody);
+
+  // Pre-filter marker-only paragraphs (e.g. `<!-- speaker: Satoshi
+  // Nakamoto -->` on a line by itself) from both sides before walking
+  // in lock-step. The JA archive interleaves `<!-- speaker: -->`
+  // markers between speaker turns where the EN file has none, which
+  // shifts EN[i] ↔ JA[i] pairing by one paragraph per inserted marker
+  // and turns unrelated paragraphs into apparent translation variants.
+  // We strip those markers from the alignment pass while preserving
+  // the original paragraph index in each kept entry so reporting can
+  // still cite the in-file paragraph position.
+  function filterMarkerOnly(paras) {
+    const kept = [];
+    for (let i = 0; i < paras.length; i++) {
+      const raw = paras[i];
+      const norm = normaliseParagraph(raw);
+      if (!norm) continue;
+      if (isMarkerOnly(norm)) continue;
+      kept.push({ raw, originalIdx: i });
+    }
+    return kept;
+  }
+  const enParas = filterMarkerOnly(enParasRaw);
+  const jaParas = filterMarkerOnly(jaParasRaw);
 
   const len = Math.min(enParas.length, jaParas.length);
   for (let i = 0; i < len; i++) {
-    const enRaw = enParas[i];
-    const jaRaw = jaParas[i];
+    const { raw: enRaw, originalIdx: enOrigIdx } = enParas[i];
+    const { raw: jaRaw } = jaParas[i];
 
     if (isCodeBlock(enRaw) || isCodeBlock(jaRaw)) continue;
 
     const enNorm = normaliseParagraph(enRaw);
     if (enNorm.length < MIN_PHRASE_LENGTH) continue;
     if (!/[a-zA-Z]/.test(enNorm)) continue;
-    if (isMarkerOnly(enNorm)) continue;
     if (isHeading(enNorm)) continue;
 
     const jaLex = normaliseParagraph(jaRaw);
@@ -284,7 +312,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     if (!enParaMap.has(enNorm)) enParaMap.set(enNorm, []);
     enParaMap.get(enNorm).push({
       enPath,
-      paraIdx: i,
+      paraIdx: enOrigIdx,
       jaParaWidth: jaWidth,
       jaParaLex: jaLex,
       isQuote: isBlockquoteParagraph(enRaw),
