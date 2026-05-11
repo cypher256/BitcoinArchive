@@ -23,6 +23,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- audit:quote-skip -->
 > バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成する：
 >
 > ```

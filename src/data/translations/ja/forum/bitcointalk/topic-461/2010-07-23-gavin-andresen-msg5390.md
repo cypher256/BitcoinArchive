@@ -21,7 +21,7 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> ところで、まだ試していないが、confファイルで rpcpassword= とだけ書くのは有効だと思う。-server や -daemon、bitcoind を使う場合にだけ警告つきで失敗するはずだ。パスワードが不要なら問題ないはずだ。そうだよね？
+> ところで、テストはしていないが、confファイルにrpcpassword=があっても有効であることを願う。-serverや-daemonやbitcoindを使う場合のみ警告付きで失敗すべきだ。パスワードが不要な場合は問題ないはずだ。合っているか？
 
 そう、その通りだ。rpcpassword が必須なのは-server や-daemon、bitcoind を使う場合だけだ（念のためたった今テストした）。
 
