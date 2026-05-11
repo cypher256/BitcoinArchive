@@ -276,6 +276,18 @@ function isHtmlMarkerLine(line) {
 }
 
 /**
+ * True for `>`-prefixed lines whose body is purely an HTML comment
+ * marker — `> <!-- speaker: ... -->`, `> <!-- quote: q1 -->`, etc.
+ * Those are blockquote metadata (who is being quoted, which quote
+ * record this maps to), NOT translatable content. They must survive
+ * the rewrite even when nested inside the `>`-block.
+ */
+function isQuotePrefixedMarker(line) {
+  const stripped = line.replace(/^>+\s*/, '');
+  return /^<!--[^>]*-->\s*$/.test(stripped);
+}
+
+/**
  * Locate the contiguous run of single-level `>` blockquote lines
  * within a target paragraph, and rewrite that run with a single line
  * `> ${canonText}` (canon = body's surface form, joined to one line).
@@ -284,36 +296,56 @@ function isHtmlMarkerLine(line) {
  * lines (`<!-- speaker: ... -->`, `<!-- quote: qN -->`,
  * `<!-- tone-skip -->`, `<!-- /tone-skip -->`) before / after / both
  * sides of the actual `>` lines. Those marker lines must survive the
- * rewrite untouched.
+ * rewrite untouched. Markers can ALSO appear inside the `>`-block
+ * prefixed with `> ` themselves (`> <!-- speaker: Satoshi -->`); those
+ * are preserved at their original position too.
  *
  * Returns null in any of these cases (caller logs them as skipped):
- *   - no `>` line at all (shouldn't happen — paragraph was filtered
- *     by `isBlockquoteParagraph` upstream — but defensive);
+ *   - no content `>` line at all (only markers, or no `>` at all);
  *   - the `>` lines are not contiguous (would require knowing where
  *     to put the canon among multiple `>`-blocks);
- *   - any `>` line is a nested `>>` quote (rewriting nested quotes
- *     would need the inner quote's source, out of scope).
+ *   - any content `>` line is a nested `>>` quote (rewriting nested
+ *     quotes would need the inner quote's source, out of scope).
  */
 function rewriteQuoteBlock(rawPara, canonText) {
   const lines = rawPara.split('\n');
   const quoteIndices = [];
+  const contentQuoteIndices = [];
   for (let i = 0; i < lines.length; i++) {
-    if (/^>(\s|$)/.test(lines[i])) quoteIndices.push(i);
+    if (!/^>(\s|$)/.test(lines[i])) continue;
+    quoteIndices.push(i);
+    if (!isQuotePrefixedMarker(lines[i])) contentQuoteIndices.push(i);
   }
-  if (quoteIndices.length === 0) return null;
+  if (contentQuoteIndices.length === 0) return null;
   for (let j = 1; j < quoteIndices.length; j++) {
     if (quoteIndices[j] !== quoteIndices[j - 1] + 1) return null;
   }
-  for (const idx of quoteIndices) {
+  for (const idx of contentQuoteIndices) {
     if (lines[idx].startsWith('>>')) return null;
   }
+  // Walk the contiguous `>`-block range and rebuild it: keep `>`-prefixed
+  // marker lines verbatim at their original positions, and collapse the
+  // entire content portion into one `> ${canonText}` line emitted in
+  // place of the first content line.
+  const firstIdx = quoteIndices[0];
+  const lastIdx = quoteIndices[quoteIndices.length - 1];
   const newQuoteLine = `> ${canonText}`;
-  const newLines = [
-    ...lines.slice(0, quoteIndices[0]),
-    newQuoteLine,
-    ...lines.slice(quoteIndices[quoteIndices.length - 1] + 1),
-  ];
-  return newLines.join('\n');
+  const rebuiltRange = [];
+  let canonEmitted = false;
+  for (let k = firstIdx; k <= lastIdx; k++) {
+    if (isQuotePrefixedMarker(lines[k])) {
+      rebuiltRange.push(lines[k]);
+    } else if (!canonEmitted) {
+      rebuiltRange.push(newQuoteLine);
+      canonEmitted = true;
+    }
+    // else: subsequent content lines are folded into the already-emitted canon
+  }
+  return [
+    ...lines.slice(0, firstIdx),
+    ...rebuiltRange,
+    ...lines.slice(lastIdx + 1),
+  ].join('\n');
 }
 
 /**
