@@ -25,4 +25,4 @@ translationStatus: complete
 (https://www.bitcoin.org/smf/index.php?topic=25.msg178#msg178)
 
 <!-- quote: q1 -->
-> コマンドラインのサポート追加は優先度が高い。あとはコードを書く時間を確保するだけだ。
+> コマンドラインサポートの追加は優先度が高い。コーディングする時間を確保するだけの問題だ。
