@@ -28,9 +28,6 @@ translationStatus: complete
 素晴らしいですね！大きなマイルストーンを達成しました。こちらでは問題なく動作しているようです。
 
 <!-- speaker: Satoshi Nakamoto -->
-> Linuxビルドのネットワーク上でのテスト準備が完了した。安定しているようだ。
-> 前のメールに実行ファイルを添付で送ったが、メールサーバーが通さなかった場合
-> （12MBある）は、こちらからダウンロードできる：
-> http://rapidshare.com/files/303914158/linux-0.1.6-test1.tar.bz2.html
+> Linux ビルドのネットワーク上でのテスト準備が完了した。安定しているようだ。前のメールに実行ファイルを添付で送ったが、メールサーバーが通さなかった場合（12MB ある）は、こちらからダウンロードできる：http://rapidshare.com/files/303914158/linux-0.1.6-test1.tar.bz2.html
 
 <!-- speaker: Martti Malmi -->

@@ -20,7 +20,7 @@ quotes:
 ---
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 結果を記録できるようにWikiページを作成した：http://www.bitcoin.org/wiki/doku.php?id=4-way_sse2
+> 結果を記録できるように Wiki ページを作成した：http://www.bitcoin.org/wiki/doku.php?id=4-way_sse2
 <!-- /tone-skip -->
 
 ハイパースレッディングが有効かどうか、物理コア数、Bitcoin が使用しているコア数の列を追加した方がいい。4way なしでは、仮想コアの半分でハッシュした方がわずかに良い結果が出る。4way では、すべての仮想コアを有効にするとパフォーマンスが大幅に向上する。ハイパースレッディングをオフにすると、4way の有無にかかわらずほぼ同じハッシュ量になると思う。

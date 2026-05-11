@@ -20,8 +20,7 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> いいサービスだが、最初にコインを取得しようとしたら問題があった。「invalid BC address」と出たんだ。
-> Bitcoinプログラムが生成した最初のアドレス 1Dn51Rn2tmvARcsYkPe7Aw1sCAXw5oKnR が機能しなかった。
+> いいサービスだが、最初にコインを取得しようとしたら問題があった。「invalid BC address」と出たんだ。Bitcoin プログラムが生成した最初のアドレス 1Dn51Rn2tmvARcsYkPe7Aw1sCAXw5oKnR が機能しなかった。
 
 それは舞台裏で使っている技術のひとつ（Google の App Engine）のバグが原因だ。もう一度試せば問題は消えるはずだ。
 

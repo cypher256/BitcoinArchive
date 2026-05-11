@@ -27,9 +27,6 @@ translationStatus: complete
 お疲れ様です。bitcoin.sourceforge.net をそこにリダイレクトしました。
 
 <!-- speaker: Satoshi Nakamoto -->
-> 新しいDrupalサイトを公開した。安全な移行のための十分な時間が
-> 経過したし、サイトの見栄えも良い。テーマにはまだ作業が
-> 必要だが、今のところ十分だ。以前のbitcoin.orgページからは
-> 大幅な改善だ。
+> 新しい Drupal サイトを公開した。安全な移行のための十分な時間が経過したし、サイトの見栄えも良い。テーマにはまだ作業が必要だが、今のところ十分だ。以前の bitcoin.org ページからは大幅な改善だ。
 
 <!-- speaker: Martti Malmi -->

@@ -23,9 +23,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-> CriticalSectionのコードをwxCriticalSectionに変換してSVNにアップロード
-> するよ（少しトリッキーだけど）。TryEnterCriticalSectionをどうするかは
-> まだわからない。もうすぐすべてチェックインできる状態になると思う。
+> CriticalSection のコードを wxCriticalSection に変換して SVN にアップロードするよ（少しトリッキーだけど）。TryEnterCriticalSection をどうするかはまだわからない。もうすぐすべてチェックインできる状態になると思う。
 
 <!-- speaker: Martti Malmi -->
 Boost の mutex はここで役に立ちますか？

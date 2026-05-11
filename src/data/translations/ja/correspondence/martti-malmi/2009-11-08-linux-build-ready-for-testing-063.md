@@ -25,5 +25,4 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-Linux ビルドのネットワーク上でのテスト準備が完了した。安定しているようだ。前のメールに実行ファイルを添付で送ったが、メールサーバーが通さなかった場合（12MB ある）は、こちらからダウンロードできる：
-http://rapidshare.com/files/303914158/linux-0.1.6-test1.tar.bz2.html
+Linux ビルドのネットワーク上でのテスト準備が完了した。安定しているようだ。前のメールに実行ファイルを添付で送ったが、メールサーバーが通さなかった場合（12MB ある）は、こちらからダウンロードできる：http://rapidshare.com/files/303914158/linux-0.1.6-test1.tar.bz2.html

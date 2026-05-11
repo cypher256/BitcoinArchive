@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Crypto++ 5.6.0のSHA256機能をBitcoinに統合することができた。SSE2アセンブリコードを使った最速のSHA256だ。Bitcoinがブロックハッシュ関数にアライメントされていないデータを送っていたため、MOVDQA命令をMOVDQUに変更する必要があった。
+> Crypto++ 5.6.0 の SHA256 機能を Bitcoin に統合することができた。SSE2 アセンブリコードを使った最速の SHA256 だ。Bitcoin がブロックハッシュ関数にアライメントされていないデータを送っていたため、MOVDQA 命令を MOVDQU に変更する必要があった。
 <!-- /tone-skip -->
 
 Crypto++ 5.6.0 の SHA256 機能を使うのが今のところ最善の方向だと思う。

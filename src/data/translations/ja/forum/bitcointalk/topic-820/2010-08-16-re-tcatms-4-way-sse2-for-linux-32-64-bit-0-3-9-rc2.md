@@ -27,7 +27,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> sha256.cppを-O3 -march=amdfamk10でコンパイルすることを提案する（32ビットと64ビットの両方で動作する）。この命令セットをサポートするCPU（AMD Phenom、Intel i5以降）のみが-4wayの恩恵を受け、パフォーマンスが約9%向上する。
+> sha256.cpp を-O3 -march=amdfamk10 でコンパイルすることを提案する（32 ビットと 64 ビットの両方で動作する）。この命令セットをサポートする CPU（AMD Phenom、Intel i5 以降）のみが-4way の恩恵を受け、パフォーマンスが約 9%向上する。
 <!-- /tone-skip -->
 
 GCC 4.3.3 は-march=amdfamk10 をサポートしていない。以下のエラーが出る：
