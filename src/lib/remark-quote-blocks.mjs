@@ -30,6 +30,7 @@ import { MIRROR_BASE } from '../../site-config.mjs';
 const QUOTE_MARKER_RE = /^<!--\s*quote:\s*(\w+)\s*-->$/;
 const TONE_SKIP_RE = /^<!--\s*tone-skip\s*-->$/;
 const TONE_SKIP_END_RE = /^<!--\s*\/tone-skip\s*-->$/;
+const AUDIT_QUOTE_SKIP_RE = /^<!--\s*audit:quote-skip\s*-->$/;
 
 /**
  * Detect locale from the file path.
@@ -131,11 +132,8 @@ function getNextBlockquote(parent, startIndex) {
       // Skip tone-skip markers
       if (TONE_SKIP_RE.test(val)) continue;
       if (TONE_SKIP_END_RE.test(val)) continue;
-      // Skip audit:quote-skip marker (used by check-quote-translation-consistency
-      // to exclude individual EN[i] ↔ JA[i] pairs from the cross-entry wording
-      // audit; same shape as a speaker/tone-skip marker so the quote-block
-      // renderer must treat it as transparent when locating the blockquote).
-      if (/^<!--\s*audit:quote-skip\s*-->$/.test(val)) continue;
+      // Skip audit:quote-skip metadata marker (processing-only, not body)
+      if (AUDIT_QUOTE_SKIP_RE.test(val)) continue;
     }
     return child;
   }
