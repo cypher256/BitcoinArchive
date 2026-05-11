@@ -25,6 +25,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- audit:quote-skip -->
 > Freenodeをフォールバックサーバーとして残しておいた方がいいかもしれない――彼のサーバーが動かない場合はFreenodeのを使うように。
 <!-- /tone-skip -->
 大量のユーザーが一度に Freenode に殺到するのはよくないかもしれない。

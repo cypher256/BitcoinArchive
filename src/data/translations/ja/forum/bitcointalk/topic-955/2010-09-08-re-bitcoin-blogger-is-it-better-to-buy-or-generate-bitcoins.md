@@ -25,9 +25,8 @@ quotes:
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > AMD X3 @2.8ghz
->
 > ->標準クライアント
-> ~3800khs ~150ワット
+> 約 3800khs 約 150 ワット
 <!-- /tone-skip -->
 
 -4way を試したか？
