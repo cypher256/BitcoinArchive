@@ -24,8 +24,7 @@ translationStatus: complete
 
 <!-- speaker: Martti Malmi -->
 
-> bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に
-> 保てるようにします。
+> bitcoin.orgの翻訳者にDrupalのアカウントを付与して、翻訳を最新の状態に保てるようにしますね。
 
 <!-- speaker: Satoshi Nakamoto -->
 
