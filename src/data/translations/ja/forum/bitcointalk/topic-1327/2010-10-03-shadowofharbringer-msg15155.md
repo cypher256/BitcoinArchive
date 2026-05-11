@@ -22,7 +22,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ShadowOfHarbringer、あなたのは -4way で速くなったか？
+> ShadowOfHarbringer、あなたのは-4way の方が速いか？
 <!-- /tone-skip -->
 
 確かに、-4way ありの方が、なしの場合と比べてほぼ 2倍速い。
