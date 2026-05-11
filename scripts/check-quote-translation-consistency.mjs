@@ -133,7 +133,21 @@ function normaliseJaWidth(s) {
       '$1$2',
     )
     .replace(/\s+([、。「」『』（）：；])/g, '$1')
-    .replace(/([、。「」『』（）：；])\s+/g, '$1');
+    .replace(/([、。「」『』（）：；])\s+/g, '$1')
+    // JA-ASCII boundary spacing — fold both「もし SHA-256」 and 「もしSHA-256」 to
+    // the same normalised form so that the half-width-space convention enforced
+    // by `check-ja-spacing` / `fix-ja-ascii-spacing` does not register as a
+    // translation divergence here. That orthographic concern is owned by those
+    // scripts; this audit only reports lexical / structural differences.
+    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([A-Za-z0-9])/g, '$1$2')
+    .replace(/([A-Za-z0-9])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2')
+    // JA-JA spurious whitespace — line wrap artefacts where the JA paragraph
+    // was hand-wrapped at fixed column widths leave half-width spaces between
+    // two Japanese characters that should not be there. Japanese prose never
+    // requires a half-width space between two CJK characters, so collapse them
+    // for comparison purposes only. (The orthographic fix happens in the
+    // entries themselves under `check-ja-spacing`.)
+    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2');
 }
 
 function truncate(s) {
