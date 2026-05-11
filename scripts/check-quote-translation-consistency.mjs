@@ -41,11 +41,37 @@
  *      pure HTML-marker paragraphs, paragraphs without ASCII letters,
  *      and paragraphs shorter than `MIN_PHRASE_LENGTH`.
  *   6. Build a map of normalised-EN paragraph → list of occurrences.
- *      Each occurrence records `{ enPath, paraIdx, jaPara, isQuote }`.
+ *      Each occurrence records `{ enPath, paraIdx, jaParaWidth,
+ *      jaParaLex, isQuote }`. Two normalised forms of the JA paragraph
+ *      are kept side-by-side:
+ *        - `jaParaWidth` — width-folded: full-/half-width digits,
+ *          digit + counter spacing, JA punctuation spacing, JA-ASCII
+ *          boundary spacing, and JA-JA spurious whitespace are all
+ *          collapsed. Used as the primary divergence key so
+ *          orthographic variants owned by `check-ja-spacing` /
+ *          `check-ja-block-notation` do not register as wording
+ *          divergence here.
+ *        - `jaParaLex` — surface normalisation (strip leading `>`,
+ *          HTML comments, inline code, emphasis-marker whitespace;
+ *          collapse runs of whitespace to a single space; trim), but
+ *          *without* the width-folding pass. Differences in JA-ASCII
+ *          boundary spacing, full-/half-width digits, digit+counter
+ *          spacing, and JA-JA spurious whitespace all survive into
+ *          this form. Used to detect visual-only divergence (same JA
+ *          wording rendered with different visual representation
+ *          across entries) — STYLE_GUIDE_JA § 4 obliges cross-entry
+ *          consistency on visual representation, not just wording.
  *   7. For each EN paragraph that appears in ≥ 2 entries **and** has
  *      `isQuote` true at least once, group the occurrences by their
- *      JA wording. If the group count is > 1, that EN passage has
- *      divergent JA renderings.
+ *      JA wording.
+ *      - If `jaParaWidth` groups into > 1 variants → wording divergent
+ *        (reported as `[divergent translation]`).
+ *      - Else if `jaParaWidth` collapses to a single variant but
+ *        `jaParaLex` groups into > 1 → visual-only divergent (reported
+ *        as `[visual-only divergence]`). Same JA wording, different
+ *        visual representation (JA-ASCII boundary spacing, digit width,
+ *        digit+counter spacing, JA punctuation spacing, or JA-JA
+ *        spurious whitespace) across entries.
  *
  * Limitations:
  *   - Paragraph alignment assumes EN and JA share the same blank-
@@ -218,7 +244,7 @@ function passesLengthEnvelope(enNorm, jaNorm) {
   return ratio >= 0.2 && ratio <= 2.5;
 }
 
-/** EN normalised paragraph → list of { enPath, paraIdx, jaPara, isQuote }. */
+/** EN normalised paragraph → list of { enPath, paraIdx, jaParaWidth, jaParaLex, isQuote }. */
 const enParaMap = new Map();
 
 let pairsScanned = 0;
@@ -251,35 +277,67 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     if (isMarkerOnly(enNorm)) continue;
     if (isHeading(enNorm)) continue;
 
-    const jaNorm = normaliseJaWidth(normaliseParagraph(jaRaw));
-    if (!passesLengthEnvelope(enNorm, jaNorm)) continue;
+    const jaLex = normaliseParagraph(jaRaw);
+    const jaWidth = normaliseJaWidth(jaLex);
+    if (!passesLengthEnvelope(enNorm, jaWidth)) continue;
 
     if (!enParaMap.has(enNorm)) enParaMap.set(enNorm, []);
     enParaMap.get(enNorm).push({
       enPath,
       paraIdx: i,
-      jaPara: jaNorm,
+      jaParaWidth: jaWidth,
+      jaParaLex: jaLex,
       isQuote: isBlockquoteParagraph(enRaw),
     });
   }
 }
 
 let divergentCount = 0;
+let visualDivergentCount = 0;
 const output = [];
 for (const [enPhrase, occurrences] of enParaMap.entries()) {
   if (occurrences.length < 2) continue;
   if (!occurrences.some((occ) => occ.isQuote)) continue;
-  const jaVariants = new Map();
+  const widthVariants = new Map();
   for (const occ of occurrences) {
-    if (!occ.jaPara) continue;
-    if (!jaVariants.has(occ.jaPara)) jaVariants.set(occ.jaPara, []);
-    jaVariants.get(occ.jaPara).push(occ);
+    if (!occ.jaParaWidth) continue;
+    if (!widthVariants.has(occ.jaParaWidth)) widthVariants.set(occ.jaParaWidth, []);
+    widthVariants.get(occ.jaParaWidth).push(occ);
   }
-  if (jaVariants.size > 1) {
+  if (widthVariants.size > 1) {
     divergentCount++;
     output.push(`\n[divergent translation]`);
     output.push(`  EN: "${truncate(enPhrase)}"`);
-    for (const [ja, occs] of jaVariants.entries()) {
+    for (const [ja, occs] of widthVariants.entries()) {
+      output.push(`  JA variant: "${truncate(ja)}"`);
+      for (const occ of occs) {
+        const rel = path.relative(REPO_ROOT, occ.enPath);
+        const tag = occ.isQuote ? 'quote' : 'body';
+        output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
+      }
+    }
+    continue;
+  }
+  // No wording divergence — check for visual-only divergence on the
+  // surface-normalised (non-width-folded) keys. Same JA wording
+  // rendered with different visual representation across entries
+  // (JA-ASCII boundary spacing, digit width, digit+counter spacing,
+  // JA punctuation spacing, JA-JA spurious whitespace — all of the
+  // orthographic axes folded by `normaliseJaWidth`) violates the
+  // cross-entry visual consistency obligation in STYLE_GUIDE_JA § 4
+  // even though `check-ja-spacing` exempts blockquote lines from the
+  // single-file half-width-space rule.
+  const lexVariants = new Map();
+  for (const occ of occurrences) {
+    if (!occ.jaParaLex) continue;
+    if (!lexVariants.has(occ.jaParaLex)) lexVariants.set(occ.jaParaLex, []);
+    lexVariants.get(occ.jaParaLex).push(occ);
+  }
+  if (lexVariants.size > 1) {
+    visualDivergentCount++;
+    output.push(`\n[visual-only divergence]`);
+    output.push(`  EN: "${truncate(enPhrase)}"`);
+    for (const [ja, occs] of lexVariants.entries()) {
       output.push(`  JA variant: "${truncate(ja)}"`);
       for (const occ of occs) {
         const rel = path.relative(REPO_ROOT, occ.enPath);
@@ -297,8 +355,12 @@ if (output.length > 0) {
 console.log(
   `\nScanned ${pairsScanned} en/ja pairs (${pairsSkipped} en-only entries skipped).`,
 );
-if (divergentCount > 0) {
-  console.log(`✗ ${divergentCount} divergent quote translations.`);
+const totalIssues = divergentCount + visualDivergentCount;
+if (totalIssues > 0) {
+  const parts = [];
+  if (divergentCount > 0) parts.push(`${divergentCount} divergent`);
+  if (visualDivergentCount > 0) parts.push(`${visualDivergentCount} visual-only divergent`);
+  console.log(`✗ ${parts.join(', ')} quote translations.`);
   process.exit(1);
 } else {
   console.log(`✓ No divergent quote translations detected.`);
