@@ -21,7 +21,7 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> CPANにあるJSON RPCライブラリ2つ（Perl）と、挙動を確認するためにローカルで書いた準拠Cライブラリだ。
+> CPAN（Perl）で利用可能な 2 つの JSON RPC ライブラリと、動作を検証するために私がローカルで書いた準拠 C ライブラリだ。
 
 Perl の LWP モジュールは間違いなく Content-Length ヘッダーを設定している。HTTP 1.0 では必須で、HTTP 1.1 の仕様でもクライアントは「SHOULD」設定すべきとされているので、設定していなかったらむしろ驚きだ。
 

@@ -23,6 +23,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- audit:quote-skip -->
 > バイナリをここにアップロードした（32ビットのみ - bitcoind）：
 <!-- /tone-skip -->
 
