@@ -259,7 +259,7 @@ function checkFile(filePath, locale) {
     return false;
   }
 
-  const SKIPPABLE_HTML_RE = /^<!--\s*(speaker:|quote:|tone-skip|\/tone-skip)/;
+  const SKIPPABLE_HTML_RE = /^<!--\s*(speaker:|quote:|tone-skip|\/tone-skip|audit:quote-skip)/;
 
   // Look for a reachable blockquote starting from index `startIdx + 1` in
   // `parent.children`, returning true if found (skipping skippable HTML).

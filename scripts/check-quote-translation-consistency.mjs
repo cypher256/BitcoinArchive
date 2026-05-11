@@ -300,6 +300,21 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
 
     if (isCodeBlock(enRaw) || isCodeBlock(jaRaw)) continue;
 
+    // Per-paragraph skip marker. Paragraphs containing the literal
+    // `<!-- audit:quote-skip -->` marker are excluded from this audit's
+    // comparison map. Used for the residual class of false-positive
+    // groups where the EN side genuinely shares an identical phrase
+    // across entries but the JA-side paragraph structure or content
+    // is materially different (e.g. one quote-only group with no body
+    // anchor, alignment failures where EN[i] ↔ JA[i] picked unrelated
+    // prose, quote-side extensions appending body's next paragraph
+    // inline, etc.). Manual canonicalisation in those cases would
+    // require rewriting the body file's source content; the marker
+    // documents that these pairs have been triaged and intentionally
+    // excluded rather than left as unaddressed wording divergence.
+    if (/<!--\s*audit:quote-skip\s*-->/.test(enRaw) ||
+        /<!--\s*audit:quote-skip\s*-->/.test(jaRaw)) continue;
+
     // Shallow structure check: EN[i] and JA[i] must agree on blockquote
     // status. The lock-step paragraph walk pairs the Nth content paragraph
     // on each side, but in forum threads with nested replies, the JA
