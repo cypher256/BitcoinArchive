@@ -32,6 +32,7 @@
     "audit:external-links": "node scripts/audit-external-links.mjs",
     "audit:bitcointalk-threads": "node scripts/check-bitcointalk-thread-coherence.mjs",
     "audit:f-candidates": "node scripts/check-editorial-markers.mjs --report-f-candidates",
+    "audit:quote-translation-consistency": "node scripts/check-quote-translation-consistency.mjs",
     "extract:quotes": "node scripts/extract-quotes.mjs",
     "git-dates": "node scripts/generate-git-dates.mjs",
     "preview": "astro preview",
