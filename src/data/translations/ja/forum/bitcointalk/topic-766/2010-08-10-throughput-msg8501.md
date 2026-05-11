@@ -25,7 +25,7 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> -maxconnectionsはあまりテストできていない。誰かテストしてくれないか？
+> -maxconnections はあまりテストしていないので、誰かテストしてくれないか？
 
 これは外向き接続の最大数なのか、それともピア接続の総数の最大なのか？
 
