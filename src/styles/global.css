@@ -525,15 +525,19 @@ table:has(thead tr > th:nth-child(8)) th {
   vertical-align: bottom;
 }
 
-/* Body cells in first / last columns get a sensible max-width so
-   long text wraps to a few lines instead of forcing the whole
-   table wider than the wrapper. Middle columns (typically
+/* Body cells in first / last columns get both a floor (min-width)
+   and a ceiling (max-width). The floor stops the browser from
+   collapsing wordy label cells to 1ch on narrow viewports (which
+   produces a one-character-per-line vertical strip); the ceiling
+   wraps anything longer than ~12em onto multiple lines so the
+   table doesn't grow arbitrarily wide. Middle columns (typically
    icon-only cells in matrix layouts) are left unconstrained so
    they collapse to ~1ch naturally based on content. Using
    `:first-child` / `:last-child` instead of nth-child(N) keeps
    the rule independent of the actual column count. */
 table tbody td:first-child,
 table tbody td:last-child {
+  min-width: 6em;
   max-width: 12em;
 }
 
