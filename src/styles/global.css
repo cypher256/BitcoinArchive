@@ -44,7 +44,7 @@
   /* ---- Width tokens.
      See STYLE_GUIDE.md § Layout Width Policy. ---- */
   --max-width-prose: 640px;          /* prose paragraph readability (env/lang-independent) */
-  --max-width-read: 800px;           /* reading-tier page (single document) */
+  --max-width-read: 1000px;          /* reading-tier page (single document) */
   --max-width-wide: 1200px;          /* dashboard-tier page (lists, viz) */
   --max-width: var(--max-width-read); /* alias for backward compat */
 
@@ -511,6 +511,15 @@ th, td {
   word-break: auto-phrase;
 }
 
+/* Cell width cap. Each body cell is capped at 20em so a single
+   wordy cell can't expand its column to ~30+ characters and push
+   the table beyond the reading column. Content longer than 20em
+   wraps within the column. Applies to every td, no per-column
+   targeting. */
+table td {
+  max-width: 25em;
+}
+
 /* Matrix-style tables: rotate header cells to vertical so wide
    comparison grids (e.g. 候補 × 多次元評価) don't force every
    column to be as wide as its header label. `:has` matches a
@@ -525,21 +534,6 @@ table:has(thead tr > th:nth-child(8)) th {
   vertical-align: bottom;
 }
 
-/* Body cells in first / last columns get both a floor (min-width)
-   and a ceiling (max-width). The floor stops the browser from
-   collapsing wordy label cells to 1ch on narrow viewports (which
-   produces a one-character-per-line vertical strip); the ceiling
-   wraps anything longer than ~12em onto multiple lines so the
-   table doesn't grow arbitrarily wide. Middle columns (typically
-   icon-only cells in matrix layouts) are left unconstrained so
-   they collapse to ~1ch naturally based on content. Using
-   `:first-child` / `:last-child` instead of nth-child(N) keeps
-   the rule independent of the actual column count. */
-table tbody td:first-child,
-table tbody td:last-child {
-  min-width: 6em;
-  max-width: 12em;
-}
 
 th {
   background: var(--color-accent-bg);
@@ -554,42 +548,31 @@ th {
 .table-scroll {
   overflow-x: auto;
   margin: 1em 0;
-  /* Center the inner inline-table horizontally; table contents are
-     reset to left-aligned in the rule below. */
-  text-align: center;
+  /* Use the border token for the scrollbar so it matches whichever
+     theme is active. In dark mode the default OS scrollbar reads as
+     a bright stripe against the dark background; this overrides it
+     to a translucent bar that blends with the rest of the border
+     treatment. Width stays at OS default. */
+  scrollbar-color: var(--color-border) transparent;
 }
 .table-scroll > table {
-  /* `inline-table` makes the table size to its natural content width
-     instead of the browser's block-level table sizing (which expands
-     to the parent's full width by default). The wrapper's
-     `text-align: center` then centers the inline-table, giving:
-     - narrow table → narrow box, centered, with symmetric breathing
-       room left and right (no awkward "left-stuck" look)
-     - wide table → grows to its natural width and the wrapper's
-       overflow-x kicks in when it exceeds the wrapper.
-     Reset text alignment back to left for cell contents. */
-  display: inline-table;
-  text-align: left;
+  /* `width: max-content` + `min-width: 100%` is the responsive table
+     idiom: short tables expand to fill the wrapper (no left-stuck
+     narrow box) and long tables size to their natural content
+     width and overflow the wrapper, where `.table-scroll`'s
+     `overflow-x: auto` provides horizontal scroll. This stops
+     narrow viewports from squeezing wide multi-column matrices
+     (e.g. 10-col candidate profile) into 1ch columns where the
+     label cells render as one character per line. */
+  display: table;
+  width: max-content;
+  min-width: 100%;
   margin: 0;
 }
-@media (min-width: 1200px) {
-  /* Same viewport-breakout pattern as `.mermaid-scroll`, but capped
-     at `--max-width-wide` (1200px) so ultra-wide viewports don't
-     stretch the table beyond a comfortable reading range. Without
-     the cap, a 2400px viewport would push the wrapper to ~2300px
-     and the inline-table inside would expand long-text cells to one
-     unwrapped line, killing legibility. The cap is implemented with
-     `min()`: take the smaller of the viewport-edge breakout and the
-     1200px-frame breakout. Below 1200px the rule does not apply. */
-  .table-scroll {
-    --table-breakout: min(
-      calc((100vw - var(--max-width-read) - 3rem) / 2),
-      calc((var(--max-width-wide) - var(--max-width-read)) / 2)
-    );
-    margin-left: calc(-1 * var(--table-breakout));
-    margin-right: calc(-1 * var(--table-breakout));
-  }
-}
+/* No viewport breakout: the table stays in the same column flow
+   as the surrounding prose. Without this, on viewports ≥ 1200px
+   the wrapper used to bleed past the prose left/right edges,
+   making the table look misaligned vs the body paragraphs. */
 
 /* Utility */
 .container {
@@ -891,6 +874,10 @@ a[href^="#"]:hover {
 .mermaid-scroll {
   overflow-x: auto;
   margin: 1.5em 0;
+  /* Match `.table-scroll`: blend the scrollbar with the active
+     theme's border token instead of using the bright OS default
+     (which is very visible against the dark mode background). */
+  scrollbar-color: var(--color-border) transparent;
 }
 .mermaid-scroll > svg[id^="mermaid-"] {
   display: block;
@@ -898,24 +885,11 @@ a[href^="#"]:hover {
      container; let it overflow (and scroll) when wider. */
   margin: 0 auto;
 }
-@media (min-width: 1200px) {
-  /* At viewports where the .container reading tier is fixed at 800px,
-     let Mermaid figures break out of that container and extend toward
-     the viewport edges. Text stays in the 800px column for line-length
-     readability; figures use whatever horizontal space is available.
-     The previous `--max-width-wide` (1200px) cap is intentionally
-     removed for Mermaid: a wide diagram benefits from more horizontal
-     space, and the SVG renders at its natural width regardless of
-     wrapper size, so a wider wrapper just removes the need for
-     horizontal scroll. Below 1200px the container itself is fluid;
-     the breakout would push the wrapper past the viewport edge, so
-     the rule does not apply at those widths. */
-  .mermaid-scroll {
-    --mermaid-breakout: calc((100vw - var(--max-width-read) - 3rem) / 2);
-    margin-left: calc(-1 * var(--mermaid-breakout));
-    margin-right: calc(-1 * var(--mermaid-breakout));
-  }
-}
+/* No viewport breakout for Mermaid: figures stay inside the
+   reading-tier container (`--max-width-read` = 1000px) and align
+   with the surrounding prose. If a diagram is wider than the
+   container, the wrapper's `overflow-x: auto` provides horizontal
+   scroll inside the column. */
 /* Tighten the gap when an immediately-preceding paragraph contains only a
    <strong> (the title-above-diagram convention from STYLE_GUIDE.md
    "Mermaid diagram titles outside the block"). The bold paragraph
@@ -934,7 +908,13 @@ p:has(> strong:only-child):has(+ .mermaid-scroll) {
    768–1199: containers fluid to viewport, padding 1.5rem
    <768: full-width, padding 1rem, font-size 15px */
 @media (max-width: 1199px) {
-  .container, .container-wide {
+  /* `.container-wide` (1200px) needs the 100% override below 1200px;
+     `.container` (1000px) does not — its max-width naturally caps
+     at the viewport when viewport < 1000px, and stays at 1000px
+     above. Forcing `.container` to 100% here was unintentionally
+     making prose and mermaid figures stretch to the full viewport
+     (e.g. ~1230px) instead of the intended 1000px reading column. */
+  .container-wide {
     max-width: 100%;
   }
 }
