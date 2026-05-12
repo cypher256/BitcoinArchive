@@ -502,6 +502,39 @@ th, td {
      next line, giving a slimmer column without sacrificing
      readability. */
   line-break: loose;
+  /* `auto-phrase` (Chrome 119+/Safari 17.4+) breaks JA prose at
+     phrase boundaries rather than between arbitrary characters,
+     so when a long cell does wrap it does so at natural reading
+     breaks instead of leaving one character per line (which is
+     what happens on narrow viewports when the browser squeezes
+     a long cell into 1ch). */
+  word-break: auto-phrase;
+}
+
+/* Matrix-style tables: rotate header cells to vertical so wide
+   comparison grids (e.g. 候補 × 多次元評価) don't force every
+   column to be as wide as its header label. `:has` matches a
+   table with at least 8 header columns in <thead>, which captures
+   the matrix layouts without affecting normal 2-5 column tables.
+   `:has` is supported in all modern browsers (Chrome 105+,
+   Safari 15.4+, Firefox 121+). */
+table:has(thead tr > th:nth-child(8)) th {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+/* Body cells in first / last columns get a sensible max-width so
+   long text wraps to a few lines instead of forcing the whole
+   table wider than the wrapper. Middle columns (typically
+   icon-only cells in matrix layouts) are left unconstrained so
+   they collapse to ~1ch naturally based on content. Using
+   `:first-child` / `:last-child` instead of nth-child(N) keeps
+   the rule independent of the actual column count. */
+table tbody td:first-child,
+table tbody td:last-child {
+  max-width: 12em;
 }
 
 th {
