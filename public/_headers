@@ -1,0 +1,41 @@
+# Cloudflare Pages cache headers.
+# https://developers.cloudflare.com/pages/configuration/headers/
+#
+# Path patterns are evaluated top-to-bottom; the first match wins per header.
+# Immutable assets carry a content hash in their filename (Astro convention)
+# so we serve them with a one-year max-age + `immutable`. HTML and the root
+# document use a short TTL so edits propagate quickly.
+
+# Astro-emitted bundles (hashed CSS / JS / fonts). Filename changes whenever
+# content changes, so long-lived caching is safe.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Auto-generated Open Graph preview PNGs. One per entry, regenerated only when
+# the entry is rebuilt; URL is stable per entry.
+/og/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static images shipped from public/. Path is stable; content rarely changes.
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/favicon.ico
+  Cache-Control: public, max-age=2592000
+/favicon.svg
+  Cache-Control: public, max-age=2592000
+
+# llms.txt / llms-full.txt: refreshed each deploy.
+/llms.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+/llms-full.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# HTML pages. Short TTL so content fixes show up within minutes, but the CDN
+# can still absorb traffic between deploys.
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Catch-all (covers extensionless routes like `/entries/.../`).
+/*
+  Cache-Control: public, max-age=300, must-revalidate
