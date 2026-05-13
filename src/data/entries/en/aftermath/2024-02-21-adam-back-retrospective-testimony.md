@@ -46,7 +46,7 @@ In August 2008, Satoshi [contacted Back](/BitcoinArchive/entries/correspondence/
 
 > "I suggested looking into b-money, but it seemed he wasn't aware of it at that point."
 
-[Satoshi replied](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/):
+[Satoshi replied](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/):
 
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 

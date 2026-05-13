@@ -41,7 +41,7 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money
+  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
@@ -103,7 +103,7 @@ The "cash" in *Hashcash* is a computational-postage metaphor (Back's 1997 anti-s
 
 ### 3.2 b-money: cited post-hoc
 
-Satoshi's [August 22, 2008 reply to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) opens with "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." This is direct primary-source evidence that b-money was added to the whitepaper's reference list *after* the code was substantially complete (per the November 10, 2008 letter to Hal Finney quoted in §1, the code preceded the paper). The same day, Satoshi [emailed Wei Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) about the proposal.
+Satoshi's [August 22, 2008 reply to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) opens with "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." This is direct primary-source evidence that b-money was added to the whitepaper's reference list *after* the code was substantially complete (per the November 10, 2008 letter to Hal Finney quoted in §1, the code preceded the paper). The same day, Satoshi [emailed Wei Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) about the proposal.
 
 The citation that appears in the whitepaper is reference [1] — Wei Dai, "b-money," 1998. The numerical position is editorial; the content was added late. [Wei Dai's 2014 retrospective on the AALWA thread](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) is consistent with this: Wei Dai indicates Satoshi was "not previously active" in cypherpunk communities — a framing that fits a designer who had to discover b-money via referral.
 

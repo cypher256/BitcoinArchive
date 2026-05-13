@@ -31,8 +31,6 @@ relatedEntries:
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
 ---
 
-*[Editor: Filename retains the original 2008-08-22 form for slug stability; the actual send timestamp is 2008-08-21 17:59:48 UTC (18:59:48 UTC+01:00 per the email header).]*
-
 In the third email of the chain, Satoshi thanked Adam Back for pointing him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal. The historically load-bearing line — already cited as a self-statement in archive analysis — reads:
 
 > Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.

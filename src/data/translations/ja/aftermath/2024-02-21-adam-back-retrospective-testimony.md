@@ -47,7 +47,7 @@ translationStatus: complete
 
 > 「b-moneyを調べるよう提案した。その時点では知らなかったようだ」
 
-[サトシは返信した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/)：
+[サトシは返信した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)：
 
 > 「ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」
 

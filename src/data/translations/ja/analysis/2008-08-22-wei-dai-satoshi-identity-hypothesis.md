@@ -102,7 +102,7 @@ translationStatus: complete
 |---|---|---|
 | 8 月 20 日 | サトシ → アダム・バック | 来たるホワイトペーパー向けの Hashcash 引用形式について尋ねる |
 | 8 月 21 日 | [アダム・バック → サトシ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 引用情報を提供、ウェイ・ダイの b-money を見るよう示唆 |
-| 8 月 22 日 | [サトシ → アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) | 「b-money のページは知らなかった、しかし私のアイデアはまさにその点から始まる」 |
+| 8 月 22 日 | [サトシ → アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) | 「b-money のページは知らなかった、しかし私のアイデアはまさにその点から始まる」 |
 | 8 月 22 日 | [サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 「あなたのアイデアを拡張する論文を発表する準備をしている」 — ホワイトペーパー引用のために b-money 公開日を尋ねる |
 | (日付未指定) | ウェイ・ダイ → サトシ | 1998 年公開日と過去の議論アーカイブリンクを提供 |
 

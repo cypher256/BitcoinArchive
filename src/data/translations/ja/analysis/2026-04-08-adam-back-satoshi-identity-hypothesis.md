@@ -48,7 +48,7 @@ relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money
+  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
@@ -146,7 +146,7 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に投稿した 
 
 - 8 月 20 日：サトシからバックへ — 初期のビットコイン構想を説明し、Hashcash の正しい引用形式と関連する先行研究について尋ねる。
 - 8 月 21 日：[バックからサトシへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) — 求められた引用情報を提供し、ウェイ・ダイの b-money 提案を見るよう示唆。
-- 8 月 22 日：[サトシからバックへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 と返信し、同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送信。
+- 8 月 22 日：[サトシからバックへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 と返信し、同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送信。
 
 バックがサトシ本人だったのなら、この構造は自然には成立しない：バックが「バック」 に引用ガイダンスを尋ねる必要はないし、自分から自分への紹介経由で b-money を「発見する」 必要もない。シンプルな読みは、通信が見たままのもの — サトシがバックに助けを求め、バックが第三者として関連するポインターを返し、サトシがそれを追ったというもの。
 

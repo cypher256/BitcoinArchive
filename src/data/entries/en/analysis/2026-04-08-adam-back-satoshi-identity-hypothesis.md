@@ -48,7 +48,7 @@ relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money
+  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
@@ -145,7 +145,7 @@ The strongest archive-internal counter-evidence is the structure of the [August 
 
 - August 20: Satoshi to Back — described early Bitcoin idea, asked Back about correct Hashcash citation format.
 - August 21: [Back to Satoshi](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) — provided the requested citation and suggested Satoshi look at Wei Dai's b-money proposal.
-- August 22: [Satoshi to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-22-satoshi-to-adam-back-b-money/) — replied "I wasn't aware of the b-money page" and the same day [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
+- August 22: [Satoshi to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — replied "I wasn't aware of the b-money page" and the same day [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
 
 If Back were the person behind the Satoshi pseudonym, the structure does not naturally make sense: Back would not need to ask "Back" for citation guidance, and Back would not need to "discover" b-money via his own referral to himself. The simpler reading is that the exchange is what it appears to be — Satoshi asking Back for help, Back responding as a third party with relevant pointers, Satoshi following the pointers.
 

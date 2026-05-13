@@ -32,8 +32,6 @@ relatedEntries:
 translationStatus: complete
 ---
 
-<!-- speaker: narrator -->
-*[編者注：ファイル名はスラッグの安定性のため当初の 2008-08-22 形式を保持しているが、実際の送信時刻は 2008-08-21 17:59:48 UTC（メールヘッダ上は 18:59:48 UTC+01:00）である。]*
 
 メールチェーンの 3 通目で、サトシはアダム・バックが[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を紹介してくれたことに感謝した。アーカイブの分析記事でも[サトシの自己言及](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)として既に引用されている、歴史的に中核となる一文は次の通り。
 
