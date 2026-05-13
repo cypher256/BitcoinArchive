@@ -10,7 +10,7 @@ participants:
     slug: "mike-hearn"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "In a CoinGeek interview, Mike Hearn offers rare reflections on Satoshi's personality — describing him as someone who enjoyed experimenting but grew frustrated when evangelical personalities arrived."
+description: "In a CoinGeek interview, Mike Hearn offers rare reflections on Satoshi's personality — observing that Satoshi enjoyed experimenting but appeared to grow frustrated when evangelical personalities arrived."
 isSatoshi: false
 tags:
   - "mike-hearn"
