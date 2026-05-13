@@ -102,7 +102,7 @@
        - `--mermaid-exclude-bg`: gantt exclude-range fill (faded) */
   --mermaid-bg: var(--color-bg);
   --mermaid-text: var(--color-text);
-  --mermaid-edge: var(--color-border);
+  --mermaid-edge: color-mix(in srgb, var(--color-text-muted) 30%, transparent);
   --mermaid-node-bg: var(--color-bg-alt);
   --mermaid-node-border: var(--color-accent);
   --mermaid-cluster-bg: var(--color-source-bg);
@@ -224,7 +224,7 @@
 
     --mermaid-bg: var(--color-bg);
     --mermaid-text: var(--color-text);
-    --mermaid-edge: var(--color-border);
+    --mermaid-edge: color-mix(in srgb, var(--color-text-muted) 30%, transparent);
     --mermaid-node-bg: var(--color-bg-alt);
     --mermaid-node-border: var(--color-accent);
     --mermaid-cluster-bg: var(--color-source-bg);
@@ -300,7 +300,7 @@
 
   --mermaid-bg: var(--color-bg);
   --mermaid-text: var(--color-text);
-  --mermaid-edge: var(--color-border);
+  --mermaid-edge: color-mix(in srgb, var(--color-text-muted) 30%, transparent);
   --mermaid-node-bg: var(--color-bg-alt);
   --mermaid-node-border: var(--color-accent);
   --mermaid-cluster-bg: var(--color-source-bg);
@@ -884,6 +884,18 @@ a[href^="#"]:hover {
   /* Keep SVG centered within the wrapper when it's narrower than the
      container; let it overflow (and scroll) when wider. */
   margin: 0 auto;
+}
+/* Thicken flowchart edge lines from 1px to 1.5px so diagonal segments
+   render with more anti-aliased pixels per row — the staircase
+   aliasing visible at full-opacity 1px stroke widths is much less
+   noticeable on a slightly thicker line. Combined with the 70% alpha
+   on `--mermaid-edge` (color-mix in :root), the edges read clearly
+   without looking heavy. */
+.mermaid-scroll svg path.flowchart-link {
+  /* `!important` to override the per-instance `<style>` block Mermaid
+     emits inside each SVG (e.g. `#mermaid-NN .flowchart-link { stroke-
+     width: 1px }`), which wins on specificity against an external rule. */
+  stroke-width: 2.5 !important;
 }
 /* No viewport breakout for Mermaid: figures stay inside the
    reading-tier container (`--max-width-read` = 1000px) and align

@@ -200,6 +200,16 @@ const COLOR_SUBSTITUTIONS = [
   // so all highlighted gantt rows share one theme-keyed colour.
   [/rgba\(102,\s*102,\s*255,\s*0\.49\)/g, 'var(--mermaid-section-alt)'],
 
+  // Flowchart edge-label backgrounds (`labelBkg` div + inner
+  // `span.edgeLabel`). Mermaid hard-codes `rgba(232, 232, 232, 0.5)`
+  // and `rgba(232, 232, 232, 0.8)` for the Yes / No branch labels.
+  // On a white page they sit as a soft grey halo behind the label
+  // text; on the dark theme they render as a bright grey box that
+  // hides the label inside. Rewrite both to the mermaid background
+  // token so the label box follows the active theme.
+  [/rgba\(232,\s*232,\s*232,\s*0\.5\)/g, 'var(--mermaid-bg)'],
+  [/rgba\(232,\s*232,\s*232,\s*0\.8\)/g, 'var(--mermaid-bg)'],
+
   // Timeline section palette (cScale0..13 / cScaleLabel0..13). The
   // light-mode hex pairs declared in `themeVariables` (astro.config.mjs)
   // are baked into the SVG by Mermaid; we rewrite each into the matching
