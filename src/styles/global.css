@@ -511,9 +511,9 @@ th, td {
   word-break: auto-phrase;
 }
 
-/* Cell width cap. Each body cell is capped at 20em so a single
-   wordy cell can't expand its column to ~30+ characters and push
-   the table beyond the reading column. Content longer than 20em
+/* Cell width cap. Each body cell is capped at 25em so a single
+   wordy cell can't expand its column to ~40+ characters and push
+   the table beyond the reading column. Content longer than 25em
    wraps within the column. Applies to every td, no per-column
    targeting. */
 table td {
@@ -885,10 +885,10 @@ a[href^="#"]:hover {
      container; let it overflow (and scroll) when wider. */
   margin: 0 auto;
 }
-/* Thicken flowchart edge lines from 1px to 1.5px so diagonal segments
+/* Thicken flowchart edge lines from 1px to 2.5px so diagonal segments
    render with more anti-aliased pixels per row — the staircase
    aliasing visible at full-opacity 1px stroke widths is much less
-   noticeable on a slightly thicker line. Combined with the 70% alpha
+   noticeable on a thicker line. Combined with the 30% alpha
    on `--mermaid-edge` (color-mix in :root), the edges read clearly
    without looking heavy. */
 .mermaid-scroll svg path.flowchart-link {
