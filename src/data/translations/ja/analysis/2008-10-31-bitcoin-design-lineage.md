@@ -71,7 +71,7 @@ translationStatus: complete
 この枠組みのもと、ホワイトペーパーの 8 引用は、サトシの記録された過程との関係で 3 つの区分に分かれる。第 4 の区分 — 独自構成要素 — は引用するべき先行が存在しないため、引用文献リストには現れない。
 
 1. **開発中に使用していた（一次資料で確定）**。サトシが当該文献を意識し、その概念をビットコイン構築中に使用していたことが文書化されている。サトシと[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の 2008 年 8 月 20〜22 日のメール通信が [Hashcash](http://www.hashcash.org/papers/hashcash.pdf) をこの区分に位置づける。
-2. **後付けで引用追加（一次資料で確定）**。サトシは開発期間中、当該文献を**知らなかった**。後に知り、ホワイトペーパーの引用文献リストに追加した。2008 年 8 月 22 日のメール通信が[ウェイ・ダイの b-money](http://www.weidai.com/bmoney.txt) をこの区分に位置づける。
+2. **後付けで引用追加（一次資料で確定）**。サトシは開発期間中、当該文献を**知らなかった**。後に知り、ホワイトペーパーの引用文献リストに追加した。2008 年 8 月 21〜22 日のメール通信が[ウェイ・ダイの b-money](http://www.weidai.com/bmoney.txt) をこの区分に位置づける。
 3. **汎用 CS 知識（背景）**。当該文献は、当該時期の見識ある計算機科学者なら誰でも知り得る標準的な暗号学・確率論の知識に属する。サトシが具体的に当該論文を参照したか、それとも一般的な教養から概念に到達したかは、一次資料からは復元できない。マークルツリー（1980 年）、Haber-Stornetta による連鎖タイムスタンプ（1991〜1997 年）、Feller の確率論教科書（1957 年）はここに該当する。
 4. **独自構成要素（引用不能）**。ビットコインが先行なしで発明した構成要素。プルーフ・オブ・ワークの重みで決まる最長チェーン規則に基づく分散型合意形成、UTXO モデル、マイニング報酬によるブロック補助金発行、2,100 万通貨上限、難易度調整アルゴリズム、稼働中の P2P ネットワーク。
 
@@ -104,7 +104,7 @@ translationStatus: complete
 
 ### 3.2 b-money：設計後に引用追加
 
-サトシの [2008 年 8 月 22 日のバック宛返信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)は「Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.（ありがとう、b-money のページは知らなかった、しかし私のアイデアはまさにその点から始まっている）」 で始まる。これは、b-money がホワイトペーパーの引用文献リストに**設計が実質的に完了した後で**追加されたことの直接の一次資料である。同日付でサトシは[ウェイ・ダイ宛にも直接メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送り、提案について述べている。
+サトシの [2008 年 8 月 21 日のバック宛返信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)は「Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.（ありがとう、b-money のページは知らなかった、しかし私のアイデアはまさにその点から始まっている）」 で始まる。これは、b-money がホワイトペーパーの引用文献リストに**設計が実質的に完了した後で**追加されたことの直接の一次資料である。翌日サトシは[ウェイ・ダイ宛にも直接メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送り、提案について述べている。
 
 ホワイトペーパーに現れる引用は文献 [1] — ウェイ・ダイ「b-money」 1998 年。番号順は編集上のもので、内容は遅く加えられた。[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)はこれと整合する：ウェイ・ダイはサトシが「以前から積極的に活動していた人物ではない」 と示唆しており、これは「b-money を紹介経由で発見せざるを得なかった設計者」 像と整合する。
 

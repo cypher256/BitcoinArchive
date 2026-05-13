@@ -101,7 +101,7 @@ The strongest archive-internal counter-evidence is the structure of the [August 
 |---|---|---|
 | Aug 20, 2008 | Satoshi → Adam Back | Asks about Hashcash citation format for the upcoming whitepaper |
 | Aug 21, 2008 | [Adam Back → Satoshi](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | Provides citation; suggests Satoshi look at Wei Dai's b-money |
-| Aug 22, 2008 | [Satoshi → Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) | "I wasn't aware of the b-money page, but my ideas start from exactly that point" |
+| Aug 21, 2008 | [Satoshi → Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) | "I wasn't aware of the b-money page, but my ideas start from exactly that point" |
 | Aug 22, 2008 | [Satoshi → Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | "I'm getting ready to release a paper that expands on your ideas" — asks for b-money publication date for the whitepaper citation |
 | (date n/a) | Wei Dai → Satoshi | Provides 1998 publication date and archived discussion links |
 

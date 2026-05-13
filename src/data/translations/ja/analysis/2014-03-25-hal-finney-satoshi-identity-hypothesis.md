@@ -219,7 +219,7 @@ timeline
 
 レース当日アリバイ（§3.1）、2013 年の第三者的記述（§3.2）、Patoshi 規模の不整合（§3.3）、特異点サミット／ALS 進行アリバイ（§3.5）は、構造的に異なる反証ラインを構成する: それぞれが当該時点で当時記録された記録であり、事後的な再構成ではない。フィニーは反証が主に告白の不在に依拠する候補（サボ、アダム・バック）とは異なる証拠的位置にある。フィニーには、サトシの役割と整合させるのが困難な、能動的に記録された活動と自己記述がある。
 
-[サトシの 2008 年 8 月 22 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 — はフィニーがサトシと最初に記録された接触をする数か月前である。フィニーがサトシだったなら、パターンはこうなる: フィニーが「サトシ」 としてバックにメールし、b-money への紹介を受け、「サトシ」 としてウェイ・ダイにメールし、2 か月待ってから「ハル・フィニー」 として暗号学メーリングリストでビットコイン発表に支持的に応答する自分自身に向けてメールする。能動的かつ継続的な共同演出なしには成立しない構造。
+[サトシの 2008 年 8 月 21 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 — はフィニーがサトシと最初に記録された接触をする数か月前である。フィニーがサトシだったなら、パターンはこうなる: フィニーが「サトシ」 としてバックにメールし、b-money への紹介を受け、「サトシ」 としてウェイ・ダイにメールし、2 か月待ってから「ハル・フィニー」 として暗号学メーリングリストでビットコイン発表に支持的に応答する自分自身に向けてメールする。能動的かつ継続的な共同演出なしには成立しない構造。
 
 他の名指し候補仮説との比較については、[サトシ正体仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)および個別エントリーの[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)、[サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 
