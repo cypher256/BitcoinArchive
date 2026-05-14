@@ -414,6 +414,15 @@ blockquote > p:first-child {
   margin-top: 0;
 }
 
+/* Speaker-tagged blockquotes: same shape as the default, but the left
+   border picks up the speaker's accent color. Tagged at build time by
+   remark-speaker-blockquote based on `<!-- speaker: ... -->` comments
+   sitting as siblings before the blockquote. Matches the visual language
+   already used by .conversation-thread .message[data-author="..."]. */
+blockquote[data-speaker="satoshi"] {
+  border-left-color: var(--color-satoshi);
+}
+
 code {
   font-family: var(--font-mono);
   font-size: 0.9em;

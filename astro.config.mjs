@@ -7,6 +7,7 @@ import rehypeMermaid from 'rehype-mermaid';
 import { getDeploymentConfig } from './site-config.mjs';
 import { remarkRewriteBase } from './src/lib/remark-rewrite-base.mjs';
 import { remarkQuoteBlocks } from './src/lib/remark-quote-blocks.mjs';
+import { remarkSpeakerBlockquote } from './src/lib/remark-speaker-blockquote.mjs';
 import { remarkEditorialMarker } from './src/lib/remark-editorial-marker.mjs';
 import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
@@ -30,7 +31,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, remarkEditorialMarker, [remarkMath, { singleDollarTextMath: false }]],
+    remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, remarkSpeakerBlockquote, remarkEditorialMarker, [remarkMath, { singleDollarTextMath: false }]],
     // rehype-mermaid renders ```mermaid code blocks to inline SVG at build
     // time using Playwright. Syntax errors fail the build (no runtime error
     // boxes can reach production). See STYLE_GUIDE.md "Mermaid Diagrams" for

@@ -104,16 +104,19 @@ timeline
 
 [最後の公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2010年12月12日：
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「バトンを渡す予定だ」
 
 7 日後、[アンドレセンがプロジェクト管理を引き受けることを公的に告知した](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)。
 
 2011年4月23日、サトシは[マイク・ハーン宛て](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)に書いている：
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
 その 3 日後、2011年4月26日、[最後の既知のメール —— アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)：
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「私のことを謎めいた影の人物として話し続けるのはやめてほしい」
 
 以降、サトシからの確認された通信は記録されていない。
@@ -128,6 +131,7 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 
 2009年後半から、サトシはマルッティ・マルミの支援で Linux（Ubuntu）への移植に着手した。Ubuntu のテスト環境を自ら構築し、pthread_cancel、MSG_DONTWAIT、Berkeley DB、GTK のスレッド安全性といった深い問題をデバッグした。一方で Linux の慣習そのもの —— 設定ファイル形式、デーモンスイッチの命名、スタートアップスクリプト —— は不慣れな領域だった。2009年12月、フォーラムにこう書いている：
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「そこは自分の専門外だから助かる」
 
 2010年12月のアンドレセン宛メールでは、アンドレセンを「技術的に自分よりはるかに Linux に精通している」 と評している。Mac 対応はラズロ・ハニエツが全面的に貢献した —— サトシにはテスト用の Mac がなかった。BSD の知識はソケットの起源など概念的なもので、実践的ではなかった。2010年を通じて、コミュニティからのパッチを取り込みながら Linux、macOS、FreeBSD のクロスプラットフォーム対応が拡大した。[サトシのソースコードの統計的分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)が、コーディングスタイル、コミット時間帯パターン、v0.1.0 から v0.3.19 までのコード進化を扱う。

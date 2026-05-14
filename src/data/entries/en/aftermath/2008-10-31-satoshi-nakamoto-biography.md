@@ -103,16 +103,19 @@ By September 2010, Satoshi was telling Gavin Andresen privately that he was [wor
 
 The [final public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) was on December 12, 2010:
 
+<!-- speaker: Satoshi Nakamoto -->
 > "I plan to pass the baton."
 
 Seven days later, [Andresen publicly announced he would take over project management](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/).
 
 On April 23, 2011, Satoshi [wrote to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/):
 
+<!-- speaker: Satoshi Nakamoto -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 Three days later, on April 26, 2011, the [final known email — alert key handover to Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/):
 
+<!-- speaker: Satoshi Nakamoto -->
 > "I wish you wouldn't keep talking about me as a mysterious shadowy figure."
 
 No verified communication from Satoshi has been recorded since.
@@ -127,6 +130,7 @@ Bitcoin v0.1 was built on Windows using Microsoft Visual C++ 6.0 SP6 and MinGW G
 
 From late 2009, Satoshi began porting Bitcoin to Linux (Ubuntu) with Malmi's assistance. He personally set up Ubuntu test environments and debugged deep issues — pthread_cancel, MSG_DONTWAIT, Berkeley DB, GTK thread safety. Linux conventions themselves were unfamiliar territory: config file formats, daemon switch naming, startup scripts. On the forum in December 2009:
 
+<!-- speaker: Satoshi Nakamoto -->
 > "That's great because that's where I have less expertise."
 
 In a December 2010 email to Andresen, he described Andresen as "technically much more Linux capable than me." Mac support came entirely from Laszlo Hanyecz — Satoshi had no Mac to test on. BSD knowledge was conceptual (socket origins), not hands-on. Through 2010, cross-platform support for Linux, macOS, and FreeBSD expanded via community-contributed patches. A [statistical analysis of Satoshi's source code](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) covers coding style, commit time patterns, and v0.1.0–v0.3.19 evolution.

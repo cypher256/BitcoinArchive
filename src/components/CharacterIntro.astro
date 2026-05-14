@@ -18,7 +18,7 @@ const { lang } = Astro.props;
       </div>
       <p class="character-bio">{c.bio[lang]}</p>
       {c.quote && (
-        <blockquote class="character-quote">
+        <blockquote class="character-quote" data-speaker={c.slug === 'satoshi-nakamoto' ? 'satoshi' : undefined}>
           <span class="quote-text">&ldquo;{c.quote.text}&rdquo;</span>
           {c.quote.attribution && (
             <cite class="quote-cite">— {c.quote.attribution[lang]}</cite>
@@ -83,6 +83,9 @@ const { lang } = Astro.props;
     border-left: 2px solid var(--color-accent);
     background: rgba(180, 83, 9, 0.04);
     border-radius: 0 4px 4px 0;
+  }
+  .character-quote[data-speaker="satoshi"] {
+    border-left-color: var(--color-satoshi);
   }
   .quote-text {
     display: block;
