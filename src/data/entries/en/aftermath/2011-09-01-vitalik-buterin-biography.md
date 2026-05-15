@@ -34,7 +34,9 @@ relatedEntries:
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
-Vitalik Buterin (born January 31, 1994, in Kolomna, Russia; raised in Canada from age 6) is a programmer who entered the Bitcoin community in 2011 at age 17 and went on to become one of its most prolific early journalists before founding Ethereum in 2014. The Bitcoin Archive scope of this biography is the 2011–2014 period during which Buterin's primary public activity was Bitcoin-focused.
+In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the [Ethereum whitepaper](https://ethereum.org/en/whitepaper/), launching the network's mainnet on July 30, 2015 at age 21.
+
+Buterin was born January 31, 1994 in Kolomna, Russia and raised in Canada from age 6. This entry covers his 2011–2014 Bitcoin period; his later Ethereum work is outside the BitcoinArchive's documentary scope.
 
 ## Entry into Bitcoin (2011, age 17)
 
