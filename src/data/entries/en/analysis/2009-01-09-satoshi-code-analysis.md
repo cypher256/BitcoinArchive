@@ -48,7 +48,7 @@ inlineLinkKeywords:
   - "code evolution"
 ---
 
-This analysis by Bitcoin Institute examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010). It combines two distinct data sets: **static source code analysis** of the v0.1.0 release (distributed without version control in January 2009), and **commit history analysis** from the SourceForge SVN repository, which was introduced in October 2009 with help from Martti Malmi. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history.
+194 commits, two years, one identifiable coding style. This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010) — 160 SVN commits by `s_nakamoto` (with preserved timestamps) plus 34 git commits — and reads the static source plus the temporal pattern as one coherent body of evidence. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history; the SVN repository was introduced in October 2009 with help from Martti Malmi.
 
 **Data sources:**
 - **Source code:** Original Bitcoin v0.1.0 source and tagged releases through v0.3.19

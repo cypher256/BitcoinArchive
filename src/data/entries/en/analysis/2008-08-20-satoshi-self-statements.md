@@ -56,7 +56,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-This entry consolidates the statements in which Satoshi Nakamoto referred to himself across the documented public record (August 2008 – April 2011). The scope is broader than just identity claims: it includes development-process self-disclosures, operational-state self-disclosures (including expertise self-assessments), and farewell statements — anything where Satoshi was the subject of his own sentence in a non-trivial way.
+Across thirty-two months of documented public record, Satoshi Nakamoto referred to himself in writing dozens of times — not in identity claims (he made almost none of those), but in development-process disclosures ("I had to write all the code before I could convince myself"), operational-state notes ("I've also been busy with other things for the last month and a half"), expertise self-assessments ("That's great because that's where I have less expertise"), and farewells ("I've moved on to other things"). This entry inventories those self-references — every place where Satoshi was the subject of his own sentence in a non-trivial way — and reads them together as a single body of evidence about what Satoshi said about himself, separated from what the documented behavioural record shows.
 
 **Inclusion criterion:** the statement contains a self-reference (Satoshi's own state, position, capability, intent, or identity).
 

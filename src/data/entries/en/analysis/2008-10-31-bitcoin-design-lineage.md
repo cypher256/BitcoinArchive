@@ -57,15 +57,16 @@ inlineLinkKeywords:
   - "whitepaper references"
 ---
 
-Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cypherpunk system (Hashcash), borrows several general-purpose computer-science components (Merkle trees, linked timestamping, probability theory) without inheriting them from any single one of its cited references, and synthesizes the rest (decentralized consensus, the UTXO model, mining-reward issuance, the 21-million monetary cap, P2P propagation, ECDSA-based transactions, difficulty adjustment) as new design. The [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) has eight numbered references, but they do not all play the same role. This entry walks through what Bitcoin actually contains and where each component came from, separating documented contemporaneous use from post-hoc citation from general-knowledge reuse from novel synthesis.
+On November 10, 2008, ten days after publishing the Bitcoin whitepaper, Satoshi wrote to Hal Finney:
+
+<!-- speaker: Satoshi Nakamoto -->
+> "I appreciate your questions. I actually did this kind of backwards. I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper. I think I will be able to release the code sooner than I could write a detailed spec."
+
+The whitepaper came *after* the working code. Its eight references were assembled to anchor a finished implementation in existing literature — but they do not all play the same role. Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cypherpunk system (Hashcash), borrows several general-purpose computer-science components (Merkle trees, linked timestamping, probability theory) without inheriting them from any single cited reference, and synthesizes the rest (decentralized consensus, the UTXO model, mining-reward issuance, the 21-million monetary cap, P2P propagation, ECDSA-based transactions, difficulty adjustment) as new design. This entry walks through what Bitcoin actually contains and where each component came from, separating documented contemporaneous use from post-hoc citation from general-knowledge reuse from novel synthesis.
 
 ## 1. Citation categories
 
-Before splitting the eight whitepaper references into categories, one feature of Satoshi's documented process matters for how the categories are named. Satoshi told Hal Finney on [November 10, 2008](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/), the day after Hal's first technical questions on the cryptography mailing list:
-
-> "I appreciate your questions. I actually did this kind of backwards. I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper. I think I will be able to release the code sooner than I could write a detailed spec."
-
-This places the whitepaper at the *end* of Satoshi's process, not the start. The paper documented a working code base; the references were assembled to anchor the documented work in existing literature. "Design period" in the conventional sense — a discrete pre-implementation phase — is not the right frame; Satoshi was building Bitcoin in code while doing the conceptual work. We use "development period" below to mean the period in which Satoshi was building Bitcoin (writing code, working through the design problems, and ultimately writing the paper that documents the result).
+"Design period" in the conventional sense — a discrete pre-implementation phase — is not the right frame for what Satoshi did. He was building Bitcoin in code while doing the conceptual work, as the [November 10, 2008 quote](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/) at the top of this entry makes explicit. We use "development period" below to mean the full span in which Satoshi was building Bitcoin (writing code, working through design problems, ultimately writing the paper that documents the result).
 
 With that frame, the whitepaper's eight references fall into three categories with respect to Satoshi's documented process. A fourth category — novel components — is not represented in the references list because there is nothing to cite.
 
