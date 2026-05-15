@@ -37,7 +37,9 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
 ---
 
-Len Sassaman (1980 – July 3, 2011) was an American cryptographer, cypherpunk, and privacy researcher. He is documented in this archive primarily because of two posthumous Bitcoin-related events: [Dan Kaminsky's blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) embedded shortly after his death, and the later [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) that has connected his name to Satoshi Nakamoto in public discourse since 2013.
+On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, the cypherpunk cryptographer Len Sassaman died by suicide in Belgium. He was 31. Four weeks after that, at Black Hat USA 2011, [Dan Kaminsky revealed an ASCII-art tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) to Sassaman that he had embedded into the Bitcoin blockchain. From 2013 onward, the proximity of those two dates (Satoshi gone, Sassaman dead) began drawing a [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) toward Sassaman's name in public discourse — a hypothesis this archive records as speculation rather than as a Bitcoin Institute claim.
+
+Sassaman (1980 – July 3, 2011) was an American cryptographer and privacy researcher who worked at PGP Inc. alongside [Hal Finney](/BitcoinArchive/participants/hal-finney/), led development of the Mixmaster anonymous remailer, co-founded the CodeCon conference with Bram Cohen, and at the time of his death was a PhD candidate at the COSIC research group at KU Leuven in Belgium. He did not appear in the public record as a Bitcoin developer or correspondent of Satoshi during 2008–2011; his relevance to this archive is therefore confined to the posthumous tribute and the later identity-hypothesis discourse.
 
 ```mermaid
 timeline

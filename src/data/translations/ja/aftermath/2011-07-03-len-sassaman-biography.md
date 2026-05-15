@@ -38,7 +38,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-レン・サッサマン（1980 年 – 2011 年 7 月 3 日）はアメリカの暗号学者、サイファーパンク、プライバシー研究者である。本アーカイブで彼を記録する理由は、主に死後にビットコインに関連する二つの出来事にある：[ダン・カミンスキーによるブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)（彼の死から数週間後に刻印）、そして 2013 年以降の公的議論で彼の名前をサトシ・ナカモトと結びつける[サトシ正体仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)。
+2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。31 歳だった。4 週間後、Black Hat USA 2011 で、[ダン・カミンスキーがサッサマンへの ASCII アート追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)をビットコインのブロックチェーンに埋め込んだことを公表した。2013 年以降、二つの日付の近接性（サトシが去り、サッサマンが死んだ）が、公的議論の中で[サトシ正体仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)をサッサマンの名前に向けて引き寄せ始めた —— 本アーカイブはこれを Bitcoin Institute の主張ではなく推測として記録する。
+
+サッサマン（1980 年 – 2011 年 7 月 3 日）はアメリカの暗号学者・プライバシー研究者で、PGP 社で[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)と並んで働き、Mixmaster 匿名リメイラーの開発を主導、ブラム・コーエンと CodeCon 会議を共同設立、死去時にはベルギーの KU Leuven の COSIC 研究グループの博士候補生だった。2008〜2011 年の公開記録には、彼がビットコイン開発者やサトシの通信相手として登場した形跡はない。本アーカイブにおける関連性は、死後の追悼と後年の正体仮説の議論に限定される。
 
 ```mermaid
 timeline
