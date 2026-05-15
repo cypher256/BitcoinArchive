@@ -39,7 +39,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ジェフ・ガージックは、ジョージア工科大学でコンピューターサイエンスを学び、Red Hat で働いたソフトウェアエンジニアで、Linux カーネルへの重要な貢献者だった。2010 年 7 月にビットコインを発見し、プロジェクトの最も多作な初期貢献者の一人となった。
+2010 年 7 月、Red Hat の Linux カーネル開発者ジェフ・ガージックは[ビットコインに関する Slashdot 投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)を読み、コードベースを取得して、パッチを送り始めた。数か月のうちにサトシ以外で最大のコミット数の貢献者となり、サトシと[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次ぐ位置に立った。cpuminer（初期の独立型ビットコインマイニングツールの一つ）を書き、[BIP 100 動的ブロックサイズ提案](https://github.com/bitcoin/bips)を含む複数の BIP を著作、2015 年にエンタープライズ・ブロックチェーン企業 Bloq を共同設立した。
+
+ガージックはジョージア工科大学でコンピューターサイエンスを学び、初期キャリアは Red Hat での Linux カーネル業務だった。カーネルレベルのシステム経験はビットコインの C++ コードベースに直接活きた。
 
 ```mermaid
 timeline

@@ -38,7 +38,9 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
 ---
 
-Jeff Garzik is a software engineer who studied computer science at Georgia Institute of Technology and worked at Red Hat, where he was a significant contributor to the Linux kernel. He discovered Bitcoin in July 2010 and became one of the most prolific early contributors to the project.
+In July 2010, a Red Hat Linux kernel developer named Jeff Garzik read a [Slashdot post about Bitcoin](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), pulled the codebase, and started sending patches. Within months he had become the top non-Satoshi commit-count contributor, ranking just behind Satoshi and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). He wrote cpuminer (one of the first standalone Bitcoin mining tools), authored multiple BIPs including the [BIP 100 dynamic-block-size proposal](https://github.com/bitcoin/bips), and co-founded the enterprise-blockchain firm Bloq in 2015.
+
+Garzik studied computer science at Georgia Institute of Technology and built his early career on Linux-kernel work at Red Hat. His kernel-level systems experience translated directly to Bitcoin's C++ codebase.
 
 ### Discovery of Bitcoin
 Garzik discovered Bitcoin in July 2010 through a [post on Slashdot](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), the popular technology news aggregation site. He quickly began studying the codebase and contributing patches. His Linux kernel development experience gave him a strong foundation for working on Bitcoin's C++ codebase.
