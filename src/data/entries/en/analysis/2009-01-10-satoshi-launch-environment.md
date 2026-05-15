@@ -45,7 +45,12 @@ inlineLinkKeywords:
   - "launch-period environment"
 ---
 
-This analysis reads two converging pieces of public evidence from the week of the Bitcoin v0.1 launch — a phrase in Satoshi's January 10, 2009 email to [Hal Finney](/BitcoinArchive/participants/hal-finney/), and the density of Satoshi's public activity during that week — and asks what the combination implies about Satoshi's operational environment at that time. The reading is editorial: it does not establish Satoshi's location or identity, and the primary sources underdetermine the conclusion in multiple ways noted below.
+On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/hal-finney/):
+
+<!-- speaker: Satoshi Nakamoto -->
+> "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
+
+The clause "from where I am" — location-contingent, implicitly not a permanent property of Satoshi's setup — combined with the unusually dense cadence of his Bitcoin work during the January 8–12, 2009 launch week, is the converging evidence this analysis reads. The reading is editorial: it does not establish Satoshi's location or identity, and the primary sources underdetermine the conclusion in multiple ways noted below.
 
 This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which covers the structural question of Block 0 and the Jan 3 → Jan 9 gap. Theme-wise the two are separate: that entry is about Block 0 as an object; this entry is about Satoshi's environment as a person during the Jan 8-12 window.
 
