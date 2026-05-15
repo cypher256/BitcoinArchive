@@ -52,7 +52,7 @@ inlineLinkKeywords:
   - "Sassaman = Satoshi"
 ---
 
-On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). This entry lays out the [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) = Satoshi hypothesis, the supporting arguments as their advocates make them, and the counter-evidence at the same level of detail. The reader is left to weigh.
+On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). This entry lays out the [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) = Satoshi hypothesis, the supporting arguments as their advocates make them, and the counter-evidence at the same level of detail.
 
 ## 1. What the hypothesis claims
 

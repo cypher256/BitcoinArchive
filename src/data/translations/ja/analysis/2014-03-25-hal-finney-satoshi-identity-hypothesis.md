@@ -56,7 +56,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-ハル・フィニーは、日系米国人エンジニアのドリアン・サトシ・ナカモトから数ブロック離れた場所に住んでいた。Caltech で訓練を受けた暗号学者、[RPOW（Reusable Proof-of-Work、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させた人物、人類初の個人間ビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者である。地理的・経歴的な収束が[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)＝サトシ仮説の中核 —— [2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が最も顕著に提唱し、同時にフラン・フィニーのレース当日の写真を主要な反証として提示した。仮説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。本エントリは主張、支持論点、そして反証を同じ詳細度で並べる。判断は読者に委ねる。
+ハル・フィニーは、日系米国人エンジニアのドリアン・サトシ・ナカモトから数ブロック離れた場所に住んでいた。Caltech で訓練を受けた暗号学者、[RPOW（Reusable Proof-of-Work、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させたとされる人物、人類初の個人間ビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者である。地理的・経歴的な収束が[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)＝サトシ仮説の中核 —— [2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が最も顕著に提唱し、同時にフラン・フィニーのレース当日の写真を主要な反証として提示した。仮説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。本エントリは主張、支持論点、そして反証を同じ詳細度で並べる。
 
 ## 1. 仮説の主張
 
@@ -134,7 +134,7 @@ timeline
 
 ### 2.4 最初の受領者かつ最早期協力者の地位
 
-フィニーはサトシ以外で最初にビットコインを稼働させた人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。論点: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。
+フィニーはサトシ以外で最初にビットコインを稼働させたとされる人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。論点: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。
 
 反論: 信頼できる技術協力者を立ち上げ時に表に置きながら匿名でシステムを公開することは、信頼できる協力者がいる匿名の著者がまさに選ぶパターンである。同時に、暗号学メーリングリストで高品質なシステムを高品質な最初のユーザーが識別したパターンでもある。フィニーが記録した自己の説明は後者である — [「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) で「私はサトシ以外で最初にビットコインを動かした人物だったと思う」 と書く。
 
@@ -226,7 +226,6 @@ timeline
 ## 5. このエントリーの限界
 
 - 本エントリーは新しい証拠を提示しない。2014 年 Forbes 特集、2023 年ロップ分析、フィニーの 2013 年「ビットコインと私」 エッセイ、2026 年 NYT 調査とカフィエロ分析、Bitcoin Institute によるヴァン・ドルストの再分析、Patoshi パターンの文献、フラン・フィニーのインタビュー記録、ピーター・ミラー 2026 年合成から資料を編集したものである。
-- 本エントリーは仮説を公正に提示し、反証も同等の詳細で公正に提示し、判断を読者に委ねる。
 - 本エントリーは「最も蓋然性の高いサトシ候補」 を指名しない。
 - カフィエロの「ハル・フィニーがほぼ同点」 結果は、フィニーまたはアダム・バックのいずれかの確認ではなく、特定の*一意性*に関する材料として扱われる。対称的な取り扱いについては[アダム・バック仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 - 新しい証拠が浮上した場合 — フィニーの 2013 年枠組みと矛盾する非公開の執筆や通信、レース当日アリバイをサトシのネットワーク活動と偽造を必要としない形で和解させるもの、Patoshi 規模の保有とフィニーの遺産との記録された繋がり等 — 本エントリーは更新されるべきである。

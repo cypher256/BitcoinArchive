@@ -42,4 +42,4 @@ Finney built RPOW explicitly to create a form of digital cash, drawing on ideas 
 
 The Satoshi Nakamoto Institute preserved and documented RPOW as part of the historical record of digital cash development. Finney himself wrote about the connection in his celebrated 2013 Bitcointalk post "Bitcoin and me," noting: "I had made an attempt to create my own proof of work based currency, called RPOW. So I found Bitcoin facinating."
 
-Finney's dual contribution -- both as the creator of a Bitcoin precursor and as the first person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction -- cemented his place as one of the most important figures in cryptocurrency history.
+Finney's dual contribution -- both as the creator of a Bitcoin precursor and as the first known person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction -- cemented his place as one of the most important figures in cryptocurrency history.

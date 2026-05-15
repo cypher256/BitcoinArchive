@@ -66,7 +66,7 @@ translationStatus: complete
 <!-- speaker: Hal Finney -->
 > 「身体が外側で死につつあっても、内側では生き続けていられるんだ。」
 
-ハル・フィニーは 2009 年 10 月、ALS と診断された 2 か月後にこう書いた — その同じ年、彼はサトシ以外で最初にビットコインを動かした人間となっていた。2009 年 1 月 11 日、二語のツイート[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)は、ソフトウェア稼働を公に言及した最初の記録。翌日、サトシは彼に[ブロック 170 で 10 BTC を送信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金。彼はそれから 5 年間、進行する麻痺の中でコードを書き続けた。最終的にはアイトラッキングソフトウェアで、以前の 1/50 程度の速度で。[2014 年 8 月 28 日に逝去](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。アルコー延命財団が 128 番目の患者として冷凍保存した。
+ハル・フィニーは 2009 年 10 月、ALS と診断された 2 か月後にこう書いた — その同じ年、彼自身が後年述べたとおり、サトシ以外で最初にビットコインを動かしたとされる人物となっていた。2009 年 1 月 11 日、二語のツイート[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)は、ソフトウェア稼働を公に言及した最初の記録。翌日、サトシは彼に[ブロック 170 で 10 BTC を送信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金。彼はそれから 5 年間、進行する麻痺の中でコードを書き続けた。最終的にはアイトラッキングソフトウェアで、以前の 1/50 程度の速度で。[2014 年 8 月 28 日に逝去](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。アルコー延命財団が 128 番目の患者として冷凍保存した。
 
 サイファーパンクとしての経歴、2004 年の Reusable Proof-of-Work、人類初のビットコイン取引の受領、ドリアン・ナカモトへの地理的近接性 — これらが組み合わさり、最も多く議論されるサトシ正体候補の一人となった。詳細は[ハル・フィニー = サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)を参照。主要な反証は [2009 年 4 月 18 日のレース当日アリバイ](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)および Patoshi 規模の不整合。
 
@@ -104,7 +104,7 @@ timeline
 2004年、フィニーは最初の Reusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。アダム・バックの Hashcash から、ウェイ・ダイの b-money、ニック・サボの Bit Gold、そして RPOW を経てビットコインへと至る技術系譜は、サトシ自身がその運動に対してどのような位置にいたかという問いとあわせて、[サイファーパンク核心とサトシの知的位置についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で精査されている。
 
 ### ビットコイン
-2009年1月9日、フィニーはリリース当日に [Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/) をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外でビットコインノードを稼働させた最初の人物となった。ブロック 70 付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック 170 でサトシから 10 BTC を受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
+2009年1月9日、フィニーはリリース当日に [Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/) をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外で最初にビットコインノードを稼働させたとされる人物となった。ブロック 70 付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック 170 でサトシから 10 BTC を受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
 
 ### ALS と最後の年月
 

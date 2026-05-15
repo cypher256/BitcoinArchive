@@ -8,7 +8,7 @@ author: "The Santa Barbara Independent"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Harold Thomas Finney II (1956–2014): Caltech engineer, PGP 2.0 developer, Extropian, cryonics advocate, RPOW creator, first Bitcoin recipient and first person other than Satoshi to run Bitcoin."
+description: "Harold Thomas Finney II (1956–2014): Caltech engineer, PGP 2.0 developer, Extropian, cryonics advocate, RPOW creator, first Bitcoin recipient and first known person other than Satoshi to run Bitcoin."
 isSatoshi: false
 callout:
   entry: "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
@@ -65,7 +65,7 @@ relatedEntries:
 <!-- speaker: Hal Finney -->
 > "Even as my body is dying outside, I will remain alive inside."
 
-Hal Finney wrote this in October 2009, two months after being diagnosed with ALS — the same year he became the first person besides Satoshi to run Bitcoin. On January 11, 2009, his two-word tweet ["Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) was the first public mention of the software being run. The next day, Satoshi sent him [10 BTC in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction. He kept writing code for five more years through progressive paralysis, eventually using eye-tracking software at roughly one-fiftieth of his former speed. He [died on August 28, 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/). Alcor preserved him as their 128th patient.
+Hal Finney wrote this in October 2009, two months after being diagnosed with ALS — the same year he became, as he later put it, the first known person besides Satoshi to run Bitcoin. On January 11, 2009, his two-word tweet ["Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) was the first public mention of the software being run. The next day, Satoshi sent him [10 BTC in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction. He kept writing code for five more years through progressive paralysis, eventually using eye-tracking software at roughly one-fiftieth of his former speed. He [died on August 28, 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/). Alcor preserved him as their 128th patient.
 
 The combination of his cypherpunk record, his 2004 Reusable Proof-of-Work system, his role as recipient of the first person-to-person Bitcoin transaction, and his geographic proximity to Dorian Nakamoto has made him one of the most-discussed Satoshi-identity candidates — documented as the [Hal Finney = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), with the [April 18, 2009 race-day alibi](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and Patoshi-scale inconsistency as the principal counter-evidence.
 
@@ -103,7 +103,7 @@ Finney was an active participant in the Extropy Institute's discussions on cryon
 In 2004, Finney created the first Reusable Proof-of-Work (RPOW) system — a precursor concept to Bitcoin's proof-of-work mechanism. He was deeply engaged with the cypherpunk movement's goal of creating digital cash. The technical lineage from Adam Back's Hashcash through Wei Dai's b-money, Nick Szabo's Bit Gold, and RPOW into Bitcoin is examined alongside the question of Satoshi's own position relative to that movement in [an analysis of the cypherpunk core and Satoshi's intellectual location](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 ### Bitcoin
-On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) on its release day and became the first person other than [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run a Bitcoin node. He began mining around Block 70. On January 11, 2009, he [tweeted "Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — the first public mention of running the software. On January 12, 2009, he [received 10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction in history.
+On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) on its release day and became the first known person other than [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run a Bitcoin node. He began mining around Block 70. On January 11, 2009, he [tweeted "Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — the first public mention of running the software. On January 12, 2009, he [received 10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction in history.
 
 ### ALS and Final Years
 

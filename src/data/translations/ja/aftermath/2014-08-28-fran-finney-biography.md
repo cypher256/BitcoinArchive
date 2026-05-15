@@ -10,7 +10,7 @@ participants:
     slug: "fran-finney"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "フラン・フィニー：ハル・フィニー（サトシ以外で最初にビットコインを実行した人物）の妻。最初期を目撃し、ALS の闘病を支え、2014 年以降は遺志の守護者となる。"
+description: "フラン・フィニー：ハル・フィニー（サトシ以外で最初にビットコインを実行したとされる人物）の妻。最初期を目撃し、ALS の闘病を支え、2014 年以降は遺志の守護者となる。"
 isSatoshi: false
 tags:
   - "fran-finney"

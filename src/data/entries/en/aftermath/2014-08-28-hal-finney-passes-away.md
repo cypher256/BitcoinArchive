@@ -10,7 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Fran Finney"
     slug: "fran-finney"
-description: "Hal Finney, the first person besides Satoshi to run Bitcoin and the recipient of the first Bitcoin transaction, passes away from ALS at the age of 58."
+description: "Hal Finney, the first known person besides Satoshi to run Bitcoin and the recipient of the first Bitcoin transaction, passes away from ALS at the age of 58."
 isSatoshi: false
 tags:
   - "hal-finney"
@@ -25,6 +25,6 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
-Hal Finney passed away on August 28, 2014 at the age of 58, after a five-year struggle with ALS (amyotrophic lateral sclerosis). He was the first person besides [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run Bitcoin, mined some of the earliest blocks, and was the recipient of the [first Bitcoin transaction](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-11-first-bitcoin-transaction/) on January 12, 2009, when Satoshi sent him 10 bitcoins as a test.
+Hal Finney passed away on August 28, 2014 at the age of 58, after a five-year struggle with ALS (amyotrophic lateral sclerosis). He was the first known person besides [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run Bitcoin, mined some of the earliest blocks, and was the recipient of the [first Bitcoin transaction](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-11-first-bitcoin-transaction/) on January 12, 2009, when Satoshi sent him 10 bitcoins as a test.
 
 Hal was a pioneering cryptographer who worked on PGP with Phil Zimmermann, ran the first cryptographically based anonymous remailer, and created [RPOW](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) (Reusable Proofs of Work). His body was cryopreserved by the Alcor Life Extension Foundation, per his wishes.
