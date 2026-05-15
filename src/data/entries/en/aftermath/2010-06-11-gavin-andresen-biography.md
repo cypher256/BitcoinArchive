@@ -115,7 +115,7 @@ On June 14, 2011, Andresen presented about Bitcoin at CIA headquarters in Langle
 
 > "My talk at the CIA went well today. The hallways there are REALLY wide, and full of interesting stuff."
 
-He had informed Satoshi of the invitation beforehand, after which Satoshi's communications became less frequent and eventually ceased entirely.
+Andresen had disclosed the invitation in his April 26 reply to Satoshi's alert-key email, six weeks before the talk; no reply from Satoshi is known after that message.
 
 ### Later Years
 On April 8, 2014, Andresen stepped down as lead maintainer, passing the role to Wladimir van der Laan. He continued to contribute to Bitcoin development and advocated for increasing the block size limit to improve transaction capacity.

@@ -79,7 +79,7 @@ timeline
     1992 : Signs Alcor cryonics membership with wife Fran
     1996 : Hired at PGP Inc., one of the first employees
     2004 : Creates Reusable Proof-of-Work (RPOW)
-    2009 : Downloads Bitcoin v0.1 on release day, first non-Satoshi node (Jan 9)
+    2009 : Downloads Bitcoin v0.1 on release day, first known non-Satoshi node (Jan 9)
     %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : Tweets 'Running bitcoin' (Jan 11)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/
