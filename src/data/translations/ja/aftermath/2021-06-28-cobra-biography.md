@@ -33,7 +33,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-Cobra（Cøbra とも表記）は、2008年8月に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が登録した bitcoin.org の匿名運営者である。Cobra の正体は不明である。
+2021 年 6 月、bitcoin.org の匿名運営者は、本名を明かすよりも英国高等法院での敗訴を選んだ。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)がサイト上のビットコインホワイトペーパーを著作権侵害で[提訴](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)していた。裁判所はライト側の匿名提訴を認めたが、手続規則上、Cobra が防御するには身元を明かす必要があった。Cobra は欠席判決を選んだ。2 年半後の 2024 年 3 月 14 日、同じ裁判所が [COPA 対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)でライトはサトシではなく大規模な文書偽造を行ったと認定 —— 2021 年の欠席判決を遡及的に無意味にした。ビットコインホワイトペーパーは bitcoin.org で引き続き公開されている。
+
+Cobra（Cøbra とも表記）は、2008 年 8 月に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が登録したウェブサイトの管理者である。本名は不明。
 
 ```mermaid
 timeline

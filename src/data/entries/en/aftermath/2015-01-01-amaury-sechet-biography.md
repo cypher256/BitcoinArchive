@@ -29,7 +29,9 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-Amaury Séchet (online handle `deadalnix`) is a French software engineer who spent the pre-Bitcoin portion of his career on the Facebook HHVM (HipHop Virtual Machine) team, contributed to Bitcoin Core from approximately 2015, and went on to be the lead developer of the Bitcoin ABC implementation that produced the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017.
+On August 1, 2017 at block 478558, Bitcoin's chain split. The software that produced the fork — **Bitcoin ABC** ("Adjustable Blocksize Cap") — was written by Amaury Séchet's team, with Séchet as lead developer. He had designed the SIGHASH_FORKID replay-protection scheme that prevented the new chain from confusing the old one, and the Emergency Difficulty Adjustment that kept blocks producing on minority hashrate. Sixteen months later, in November 2018, [a second split](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) — this time within BCH itself — pitted Séchet's Bitcoin ABC against Craig Wright and Calvin Ayre's nChain. In November 2020 he led a third split (over a proposed 8% miner-fund tax) into what became eCash (XEC) in 2021.
+
+Séchet (online handle `deadalnix`) is a French software engineer who spent his pre-Bitcoin career on the Facebook HHVM (HipHop Virtual Machine) team. He began contributing to Bitcoin Core in approximately 2015, aligning with the larger-block faction through the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
 
 ## Bitcoin Core contributions (2015–2017)
 
