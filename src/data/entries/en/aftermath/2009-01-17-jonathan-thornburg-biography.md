@@ -27,7 +27,13 @@ relatedEntries:
   - sourceforge/2009-01-09-bitcoin-v01-released
 ---
 
-Jonathan Thornburg is an astrophysicist at Indiana University. He participated in the cryptography mailing list discussion about Bitcoin in January 2009, shortly after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) released [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).
+On January 17, 2009, eight days after [Bitcoin v0.1 was released](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/), an Indiana University astrophysicist named Jonathan Thornburg [posted to the cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) two predictions that would echo through Bitcoin's history:
+
+> "In the modern world, no major government wants to allow untracable international financial transactions above some fairly modest size thresholds."
+
+> "But if each machine in a million-node botnet sends 10 cents to a randomly chosen machine in another botnet on the other side of the world, you've just moved $100K, in a way that seems very hard to trace."
+
+Both have substantially materialised in the years since — extensive cryptocurrency regulation, widespread mining malware. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) responded directly on the mailing list.
 
 ### Mailing List Criticism
 On January 17, 2009, Thornburg [posted a detailed response](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) to Satoshi's email about Bitcoin's potential uses. He raised two fundamental concerns that would echo through Bitcoin's history:

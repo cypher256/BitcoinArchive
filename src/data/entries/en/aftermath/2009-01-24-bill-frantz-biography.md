@@ -25,7 +25,11 @@ relatedEntries:
   - "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz"
 ---
 
-Bill Frantz is a security consultant based in the San Francisco Bay Area, operating under the firm name Periwinkle (pwpconsult.com). He participated in the cryptography mailing list discussion about Bitcoin in January 2009.
+On January 24, 2009, San Francisco Bay Area security consultant Bill Frantz [replied to Hal Finney](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz/) with a characteristically ironic observation about how Bitcoin's mining incentives might reshape network-security economics:
+
+> "The 0wned machines are among the most secure on the network because botnet operators work hard to keep others from compromising 'their' machines."
+
+He speculated that botnet operators might evolve into legitimate security firms — protecting computers against compromise in exchange for proof-of-work mining rewards. Frantz consults under the firm name Periwinkle (pwpconsult.com).
 
 ### Mailing List Contribution
 On January 24, 2009, Frantz [responded](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz/) to [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s argument about proof-of-work tokens creating security incentives. He made a characteristically ironic observation about the relationship between botnets and network security:

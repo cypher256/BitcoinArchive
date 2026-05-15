@@ -28,7 +28,13 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ジョナサン・ソーンバーグは、インディアナ大学の天体物理学者である。2009年1月、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が [Bitcoin v0.1 をリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)した直後、暗号学メーリングリストの議論に参加した。
+2009 年 1 月 17 日、[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)から 8 日後、インディアナ大学の天体物理学者ジョナサン・ソーンバーグは[暗号学メーリングリストに投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/)し、後にビットコインの歴史を貫くこととなる 2 つの予測を残した:
+
+> 「現代世界では、いかなる主要政府も、ある程度控えめな額の閾値を超える追跡不能な国際金融取引を許容したくないだろう」
+
+> 「だが、100 万ノードのボットネット内の各マシンが、10 セントを地球の反対側にある別のボットネットのランダムに選ばれたマシンへ送れば、追跡が非常に困難な方法で 10 万ドルを動かしたことになる」
+
+両者ともその後の年月で大きく現実化した —— 広範な暗号通貨規制、蔓延するマイニングマルウェア。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はメーリングリスト上で直接応答した。
 
 ### メーリングリストでの批判
 2009年1月17日、ソーンバーグはサトシのビットコインの潜在的用途に関するメールに対して[詳細な回答を投稿した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/)。その後のビットコインの歴史を通じて反響することになる、2 つの根本的な懸念を提起した。

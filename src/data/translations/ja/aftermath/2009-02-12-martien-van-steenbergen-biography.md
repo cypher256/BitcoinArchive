@@ -27,7 +27,12 @@ relatedEntries:
 translationStatus: complete
 ---
 
-マルティエン・ファン・ステーンベルゲンはオランダ人のアジャイル・リーントレーナー、コーチであり、組織変革、破壊的イノベーション、リーダーシップに焦点を当てた企業 AardRock の創業者である。P2P リサーチコミュニティで活動し、代替通貨システムに関心を持っている。
+2009 年 2 月 12 日、オランダの P2P リサーチコミュニティの一員、マルティエン・ファン・ステーンベルゲンが[サトシに質問した](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-12-re-bitcoin-open-source-p2p-currency-steenbergen/) —— ビットコインは通貨供給量に上限があるのか、それとも取引のたびに新規発行されるのか。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は同日返信した:
+
+<!-- speaker: Satoshi Nakamoto -->
+> 「通貨供給量には上限がある。流通量は 21,000,000 コインだ。取引は所有権を移転するだけだ。」
+
+サトシがビットコインのソースコード外で 2,100 万枚の上限を公に述べたのはこれが初めてだった。ファン・ステーンベルゲンはオランダのアジャイル・リーントレーナーで、組織変革コンサルティング企業 AardRock の創業者。
 
 ### サトシとのやり取り
 2009年2月12日、ファン・ステーンベルゲンは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の [P2P Research メーリングリストでのビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に対し、二つの重要な技術的質問で返信した。ビットコインがデビッド・チャウムの匿名デジタルマネーシステムに似ているかどうか、そしてビットコインに通貨供給量の上限があるのか、それとも取引時に通貨が生成されるのかという質問である。

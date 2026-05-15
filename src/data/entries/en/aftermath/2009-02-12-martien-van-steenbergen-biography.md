@@ -26,7 +26,12 @@ relatedEntries:
   - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
 ---
 
-Martien van Steenbergen is a Dutch agile and lean trainer, coach, and founder of AardRock, a company focused on organizational transformation, disruptive innovation, and leadership. He has been active in the P2P research community and has an interest in alternative currency systems.
+On February 12, 2009, a Dutch P2P-research community member named Martien van Steenbergen [asked Satoshi](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-12-re-bitcoin-open-source-p2p-currency-steenbergen/) whether Bitcoin had a limited money supply or created money on each transaction. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) replied the same day:
+
+<!-- speaker: Satoshi Nakamoto -->
+> "There is a limited supply of money. Circulation will be 21,000,000 coins. Transactions only transfer ownership."
+
+This was the first time Satoshi publicly stated the 21 million coin limit outside the Bitcoin source code. Van Steenbergen is a Dutch agile and lean trainer and founder of AardRock, an organisational-transformation consultancy.
 
 ### Interaction with Satoshi
 On February 12, 2009, van Steenbergen responded to [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s [announcement of Bitcoin on the P2P Research mailing list](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/) with two key technical questions: whether Bitcoin resembled David Chaum's anonymous digital money system, and whether Bitcoin had a limited money supply or created money at the moment of transaction.
