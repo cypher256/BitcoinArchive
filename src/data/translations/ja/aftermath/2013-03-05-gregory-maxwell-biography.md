@@ -25,7 +25,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-グレゴリー・マクスウェル（オンライン名 **gmaxwell**）は長年にわたる Bitcoin Core 貢献者で、個人の伝記的情報はあまり公表されていない。彼は、BitcoinTalk・IRC・Bitcoin Core GitHub リポジトリー上での技術的に密度の高い文章を長年にわたって蓄積することで知名度を得て、2014年には[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)らとともに [Blockstream](https://en.wikipedia.org/wiki/Blockstream) を共同創業した。
+CoinJoin と Confidential Transactions —— ビットコインのプライバシー強化提案として最も知られながら本体チェーンには採用されなかった 2 つ —— は、いずれもグレゴリー・マクスウェルの設計である。CoinJoin（2013）は複数ユーザーの支払いを 1 つのトランザクションに統合して入出力の対応推定を破る。Confidential Transactions（2015）は Pedersen コミットメントの背後にトランザクション金額を隠しつつ価値保存の検証可能性を維持する。どちらもビットコインのメインチェーンでは動かないが、Wasabi、JoinMarket、[Liquid](https://en.wikipedia.org/wiki/Blockstream) など一世代のプライバシー研究と、暗号通貨プライバシー文献の広い領域を形成した。
+
+マクスウェル（オンライン名 **gmaxwell**）は Bitcoin Core の長期貢献者。2013 年 3 月の[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)の[libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)立ち上げに合流、2014 年に[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)およびウィーユとともに Blockstream を共同設立、現代の Bitcoin プロトコルスタックの主要レビュアーとして残っている。
 
 ```mermaid
 timeline
