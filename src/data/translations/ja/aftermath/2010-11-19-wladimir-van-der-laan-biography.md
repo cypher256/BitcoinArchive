@@ -29,7 +29,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ウラジミール・ファン・デル・ラーン（オンライン名 **laanwj**）はオランダのソフトウェア開発者で、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)の後を継いで Bitcoin Core の 2代目リードメンテナーとなった人物である。ビットコイン開発における公的な役割を除き、個人の経歴はほとんど公表されていない。
+8 年間 —— 2014 年 4 月から 2022 年 8 月まで —— ウラジミール・ファン・デル・ラーンは Bitcoin Core のリードメンテナーを務めた。[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)からの後継。在任期間は 2015〜2017 年のブロックサイズ戦争、2017 年の SegWit 起動、そしてその後数年間の静かな基盤整備を含む。2023 年 2 月、彼は前後の Bitcoin Core リードが誰もしなかったことを行った。自らのマージ権限をリポジトリから取り除き、リードメンテナーの役を空席にしたのだ。Bitcoin Core は現在、単一のリードを置かず、コミット権を持つ分散した開発者群で維持されている。
+
+ファン・デル・ラーンはオランダのソフトウェア開発者、オンライン名 **laanwj**。BitcoinTalk への初登場は 2010 年 11 月 19 日、[ビットコインクライアントのアイコンの SVG 版を求めた投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/) —— 仕上げと品質の観点からプロジェクトに入る彼の姿勢を象徴する。2011 年 6 月 5 日にコミット権限取得、アンドレセン、クリス・ムーア、ピーター・ウィーユに次ぐ 4 番目のメンテナーとなった。
 
 ```mermaid
 timeline

@@ -28,7 +28,9 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
-Wladimir van der Laan, known online as **laanwj**, is a Dutch software developer who became Bitcoin Core's second lead maintainer after [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). Beyond his public role in Bitcoin development, his personal biographical details remain largely outside published record.
+For eight years — from April 2014 to August 2022 — Wladimir van der Laan held the Bitcoin Core lead-maintainer role, succeeding [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). His tenure spanned the 2015–2017 block-size war, the 2017 SegWit activation, and several years of quieter infrastructure work. In February 2023 he did something no Bitcoin Core lead before or since has done: he voluntarily removed his own merge privileges from the repository, leaving the role vacant. Bitcoin Core is now maintained by a distributed group of developers with commit rights rather than a single lead.
+
+Van der Laan is a Dutch software developer known online as **laanwj**. He first appears on BitcoinTalk on November 19, 2010, [asking for SVG versions of the Bitcoin client icons](/BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/) — characteristic of the polish-and-quality angle from which he approached the project. He received commit access on June 5, 2011, as the fourth maintainer after Andresen, Chris Moore, and Pieter Wuille.
 
 ```mermaid
 timeline
