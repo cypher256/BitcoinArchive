@@ -34,9 +34,7 @@ translationStatus: complete
 
 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)のビットコインへの初期関与に関する Wikipedia の記述によれば、2010 年 9 月にサトシ・ナカモトはギャビンに「他のプロジェクトに取り組んでいる」とメールで伝えた:
 
-> In September 2010, Nakamoto told Andresen he was working on other projects, and over the next few months, he gave Andresen control of the SourceForge code repository, and the project's "alert key" as well.
->
-> （2010 年 9 月、ナカモトはアンドレセンに「他のプロジェクトに取り組んでいる」と伝え、続く数か月のあいだに SourceForge のコードリポジトリと「alert key（ネットワーク警報鍵）」の管理権をアンドレセンに譲渡した）
+> 2010 年 9 月、ナカモトはアンドレセンに「他のプロジェクトに取り組んでいる」と伝え、続く数か月のあいだに SourceForge のコードリポジトリと「alert key（ネットワーク警報鍵）」の管理権をアンドレセンに譲渡した。
 
 — [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)
 

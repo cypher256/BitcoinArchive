@@ -39,11 +39,9 @@ translationStatus: complete
 
 2010 年 12 月 19 日、サトシ最後のソースコミット（12 月 15 日の v0.3.19 リリース）から 4 日後、[SVN アクセスの引き継ぎ](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)から 7 日後、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は BitcoinTalk フォーラムにリーダーシップ就任の公的承諾を投稿した:
 
-> With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for bitcoin.
+> サトシの祝福を受けて、正直かなり気が進まないが、これからビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。
 >
-> Everybody please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved with.
->
-> （サトシの祝福を受けて、正直かなり気が進まないが、これからビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。）
+> 皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。
 
 （一次資料：[BitcoinTalk topic 2367 msg31651「Development process straw-man」](https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651)。[ウィキペディア「ギャビン・アンドレセン」 記事](https://en.wikipedia.org/wiki/Gavin_Andresen)および [CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」 記事](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)でも二次的に引用されているが、いずれも上記の原文の文言から軽微な意訳がある。）
 
