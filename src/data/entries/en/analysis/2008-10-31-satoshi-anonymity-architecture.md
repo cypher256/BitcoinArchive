@@ -75,11 +75,9 @@ inlineLinkKeywords:
   - "anonymity layers"
 ---
 
-This entry is descriptive. It does not claim that any specific intent organized the layers below; it organizes the observable traces left in the public record into a structural reading of how the pseudonym 'Satoshi Nakamoto' remained unidentified through the development window (mid-2007 through August 2008), the public phase (October 2008 through December 2010), and the staged withdrawal (September 2010 through April 2011).
+Any single Satoshi-identity hypothesis must reconcile six independent layers of non-identification at once — the Japanese-form pseudonym, the timezone-spreading posting pattern, the British-English written register, the anonymous-relay email infrastructure (AnonymousSpeech.com, vistomail.com), the absence of any IP-revealing slip across years of correspondence, and the staged-rather-than-abrupt withdrawal. This entry organizes the observable traces from the public record into a structural reading of how the pseudonym "Satoshi Nakamoto" remained unidentified through the development window (mid-2007 through August 2008), the public phase (October 2008 through December 2010), and the withdrawal (September 2010 through April 2011). It does not claim any specific intent organized the layers; it treats the six layers as observable, regardless of intent.
 
-This entry complements the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the [identification asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/). The overview asks "who is Satoshi" and compares named candidates against the documented public-record outline. The asymmetry analysis asks "given so much surviving material and so many public attempts, why does the gap persist." This entry answers "how did Satoshi stay anonymous" — by organizing the means of non-identification into six layers and noting that **any single identity hypothesis must reconcile all of them at once**.
-
-This entry does not name the most likely Satoshi candidate, propose a new candidate, or argue that any specific layer was deliberately chosen. It treats the six layers as observable, regardless of intent.
+This entry answers "how did Satoshi stay anonymous." Two companion entries handle the adjacent questions: the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) ("who is Satoshi") and the [identification asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) ("given so much surviving material, why does the gap persist").
 
 ## 1. The pseudonym (naming layer)
 

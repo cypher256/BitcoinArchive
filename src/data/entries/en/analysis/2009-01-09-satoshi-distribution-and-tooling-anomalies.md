@@ -48,9 +48,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-This entry reads Bitcoin v0.1's distribution and development-tooling choices as a coherent set of observations about Satoshi's working style. The observations are *editorial* — they are not conclusions about identity or background. They describe what can be seen in the public record and note where each choice was unusual relative to the open-source norms of 2008-2009.
-
-The content here was previously held in the [Satoshi Nakamoto biography](/BitcoinArchive/participants/satoshi-nakamoto/) under "Behavioral observations." That section has been moved here so the biography can keep its focus on factual life events while this analysis page can carry the structural reading at length.
+Bitcoin v0.1 shipped on SourceForge as a `.rar` archive — a format more common in IRC/XDCC Warez-scene distribution than open-source releases. No version control system was used. Variable names followed Microsoft's Hungarian notation, a style that had largely fallen out of fashion by 2008. The crypto stack used OpenSSL with build-time integrity assumptions later flagged by Dan Kaminsky in his [2011 security audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/). This entry reads Bitcoin v0.1's distribution and development-tooling choices as a coherent set of observations about Satoshi's working style — observations that describe what is in the public record and note where each choice was unusual relative to open-source norms in 2008–2009, without drawing identity or background conclusions.
 
 ## 1. Distribution: the `.rar` packaging choice
 

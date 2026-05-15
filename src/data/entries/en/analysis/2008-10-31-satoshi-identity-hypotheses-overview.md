@@ -85,7 +85,7 @@ inlineLinkKeywords:
   - "identity hypotheses overview"
 ---
 
-This entry compares the ten named candidates for Satoshi Nakamoto's identity that recur in public discourse. Each candidate is measured against the documented public-record outline of Satoshi:
+Ten named candidates, seven dimensions of Satoshi's documented public-record outline. No single candidate scores cleanly on all seven; each falls short on at least one. This entry compares the named candidates side-by-side in a single profile table — Hashcash citation knowledge, August 2008 pre-launch correspondence with Adam Back and Wei Dai, Wei Dai's 2014 "not previously active" identifiability argument, the 19,901-line v0.1 C++ codebase, the near-native English register, the 18-month intensive development window, the April 2011 withdrawal — and notes where each profile breaks down. Each candidate is measured against the documented public-record outline of Satoshi:
 
 - the whitepaper's explicit citation of Hashcash and b-money;
 - the August 2008 pre-launch correspondence with Adam Back and Wei Dai;
