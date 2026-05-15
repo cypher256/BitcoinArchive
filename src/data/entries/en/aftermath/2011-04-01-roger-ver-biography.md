@@ -27,7 +27,11 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-Roger Keith Ver (born January 27, 1979, in San Jose, California) is an entrepreneur whose 2011 entry into Bitcoin made him one of the earliest large individual holders, the operator of one of Bitcoin's first commercial acceptance pipelines (Memory Dealers), and an active angel investor in the founding generation of Bitcoin businesses. By 2017 he had become the most public proponent of the [Bitcoin Cash](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) hard fork, and the bitcoin.com domain — which he had acquired earlier — became the principal advocacy outlet for that chain.
+On April 30, 2024, Spanish authorities arrested Roger Ver on a U.S. extradition request. The DOJ indictment alleges he under-reported the value of his Bitcoin holdings when he renounced U.S. citizenship in 2014, evading approximately $48 million in exit-tax obligations.
+
+Thirteen years earlier, in 2011, Ver had been one of Bitcoin's earliest angel investors — putting seed money into BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, and Ripple. His Silicon Valley computer-parts company Memory Dealers became one of the first established retailers to accept Bitcoin. The nickname "Bitcoin Jesus" — sometimes self-applied, sometimes journalist-affixed — emerged from his evangelistic conference style. By 2017 he had become the most visible advocate of the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), framing BCH as "the real Bitcoin Satoshi described" on the bitcoin.com domain he had acquired.
+
+Roger Keith Ver was born January 27, 1979 in San Jose, California. He renounced U.S. citizenship in 2014 and acquired citizenship from Saint Kitts and Nevis. He disputes the 2024 charges.
 
 ## Memory Dealers and entry into Bitcoin (2002–2011)
 
