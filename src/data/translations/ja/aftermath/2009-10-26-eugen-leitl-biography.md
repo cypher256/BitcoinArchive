@@ -26,7 +26,13 @@ relatedEntries:
   - emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows
 ---
 
-オイゲン・ライトルはドイツの低温生物学者、コンピューター科学者であり、トランスヒューマニストおよびサイファーパンクコミュニティの著名な人物である。トランスヒューマニスト宣言（1998年）の原著者の一人であり、匿名性、暗号技術、ナノテクノロジー、脳保存に関する議論に貢献してきた。
+2009 年 10 月 26 日、ドイツの低温生物学者でトランスヒューマニストのオイゲン・ライトルが bitcoin-list メーリングリストでこう問いかけた:
+
+> 「まだ Bitcoin の .deb パッケージはないのですか？」
+
+トランスヒューマニスト宣言（1998 年）共著者であり、サイファーパンクとトランスヒューマニストのネットワーク経由でプロジェクトに辿り着いた人物からのこの問いは、ビットコイン最初期の配布上の摩擦の一つを浮き彫りにする。ライトルは[「Bitcoin は Windows でクラッシュしますか？」 スレッド](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)に返信していた —— [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Wine 上でのクラッシュの診断を助けていたスレッドである。
+
+ライトルはコンピューター科学者で、匿名性、暗号技術、ナノテクノロジー、脳保存に関する議論に長年関わってきた。
 
 ### ビットコインとの関わり
 2009年10月26日、ライトルは bitcoin-list メーリングリストの[「Bitcoin は Windows でクラッシュしますか？」](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)というスレッドに返信した。このスレッドでは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Liberty Standard の Wine 上でのクラッシュ報告に回答していた。ライトルはサトシの「bitcoin.sourceforge.net は今は正常に見えます」という発言を引用し、自分が確認した時にはサイトが動作していなかったと報告した。また「まだ Bitcoin の Deb パッケージはないのですか？」と質問し、ソフトウェアの Linux パッケージ化への早期の需要を示した。

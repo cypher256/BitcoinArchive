@@ -22,14 +22,13 @@ relatedEntries:
   - forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate
 ---
 
-Daniel Larimer (born 1980), known on BitcoinTalk as **bytemaster**, is an American software developer who went on to found three major blockchain projects whose core design premise was first articulated in his 2010 Bitcoin forum posts: that on-chain settlement alone could not meet the throughput and latency requirements of real-world payments.
-
-### Early Bitcoin Posts (2010)
-Larimer first appears on BitcoinTalk on [July 28, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269/), writing:
+On July 28, 2010, a BitcoinTalk user named **bytemaster** made his [first forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269/):
 
 > "I am convinced that bandwidth, disk space, and computation time necessary to distribute and 'finalize' a transaction will be prohibitively expensive for micro-payments. [...] 10 minutes is too long to verify that payment is good. It needs to be as fast as swiping a credit card is today."
 
-In the same post he proposed **"bit-banks"** — trusted institutions that would settle among themselves off-chain for instant transfers, with on-chain settlement reserved for inter-bank netting. This is the same architectural thesis — decoupling fast user-level transactions from slow base-layer consensus — that he would later implement as Delegated Proof-of-Stake (DPoS) across his subsequent projects.
+In the same post he proposed **"bit-banks"** — trusted institutions that would settle among themselves off-chain, with on-chain settlement reserved for inter-bank netting. The architectural thesis — decouple fast user-level transactions from slow base-layer consensus — would become the design premise of three major blockchain projects he later founded: **BitShares** (2013–2016), **Steem** (2016), and **EOS.IO** (2017, with Brendan Blumer at Block.one). Each implemented Delegated Proof-of-Stake to pursue the same goal by concentrating block production in a rotating set of elected validators. Bitcoin's own answer to the same problem followed exactly the "off-chain instant, on-chain settlement" pattern he sketched — Lightning, Liquid — but kept the open validator set he was willing to give up.
+
+Daniel Larimer (born 1980) is an American software developer. He resigned as EOS CTO on January 10, 2021.
 
 ### Later Projects
 Between 2013 and 2016, Larimer worked on **BitShares**, a decentralized exchange platform built on DPoS. In 2016 he moved to **Steem**, a blockchain-based social media platform. In 2017 he co-founded **EOS.IO** with Brendan Blumer at Block.one, and served as its CTO until announcing his resignation on January 10, 2021. Each project pursued the same premise: high-throughput consensus by concentrating block production in a rotating set of elected validators.

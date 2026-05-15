@@ -28,7 +28,11 @@ relatedEntries:
   - analysis/2010-08-15-knightmb-snapshot-and-legend
 ---
 
-**knightmb** is a pseudonymous participant who became one of the most active users on the BitcoinTalk forum during 2010. His real name has not been publicly disclosed; the archive identifies him only by his handle.
+On August 15, 2010, when [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) shipped his patch for [the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) — one of Bitcoin's earliest critical bugs, in which 184 billion BTC briefly appeared in a single transaction — his [announcement opened](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/) with a credit:
+
+> "I started with knightmb's blockchain snapshot."
+
+The pseudonymous forum participant **knightmb** had hosted a public snapshot of the Bitcoin blockchain so new users could sync without waiting days. That snapshot turned out to be the clean starting point for the bug recovery. knightmb first appears on BitcoinTalk on [July 12, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/), with over a hundred messages by year-end spanning debugging, attack-scenario analysis, mining experiments, and user support. His real name has not been publicly disclosed.
 
 ### Activity
 knightmb first appears on BitcoinTalk on July 12, 2010, opening a thread on [runaway CPU usage on 64-bit Linux Bitcoin clients](/BitcoinArchive/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/). From there his participation expanded quickly: by late 2010 he had posted over a hundred messages spanning technical debugging, attack-scenario analysis, mining experiments, and general user support. He was the sort of forum participant who would reply to a novice's question with the same patience he brought to a design discussion with a core developer.

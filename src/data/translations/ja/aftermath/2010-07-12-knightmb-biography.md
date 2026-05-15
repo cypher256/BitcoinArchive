@@ -29,7 +29,11 @@ relatedEntries:
 translationStatus: complete
 ---
 
-**knightmb** は BitcoinTalk フォーラムで 2010年に最も活発だったユーザーの一人だが、本名は公表されていない。アーカイブでも識別子はハンドル名のみである。
+2010 年 8 月 15 日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が[値オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/) ——ビットコイン最初期の重大バグの一つで、単一トランザクションに 1,840 億 BTC が一時的に現れた ——の修正パッチを公開した際、[告知の冒頭にこう書かれていた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
+
+> 「knightmb のブロックチェーンスナップショットから始めた」
+
+匿名のフォーラム参加者 **knightmb** は、新規ユーザーが数日待たずに同期できるようビットコインブロックチェーンの公開スナップショットをホスティングしていた。そのスナップショットがバグ復旧のクリーンな起点となった。knightmb の BitcoinTalk への初登場は [2010 年 7 月 12 日](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/)で、年末までに 100 件超の投稿 ——デバッグ、攻撃シナリオ分析、マイニング実験、ユーザーサポート ——を残した。本名は公表されていない。
 
 ### 活動
 knightmb は BitcoinTalk に 2010年7月12日、[64 ビット Linux のビットコインクライアントで CPU 使用率が暴走する問題](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/)を立ち上げる形で初めて登場する。そこから関与が急速に広がり、2010年末までに技術的なデバッグ、攻撃シナリオの分析、マイニング実験、そして一般ユーザーのサポートにまたがる 100件以上の投稿を積み上げた。新参の質問にコア開発者との設計議論と同じ辛抱強さで応えるタイプのフォーラム参加者だった。

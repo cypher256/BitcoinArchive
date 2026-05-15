@@ -28,7 +28,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-マイケル・マーカート（オンライン名 **theymos**）はアメリカのソフトウェア開発者で、ビットコイン・フォーラムの管理人となった人物である。2010年初頭にコミュニティに参加し、すぐに最も活発な技術的回答者の一人となった。
+今日 [BitcoinTalk](https://bitcointalk.org) が公開のまま残っていること —— サトシの 575 件の投稿、最初の商業ビットコイン取引、初期プロトコルを形成した技術議論のすべてが保持された状態で —— の大部分は **theymos** によるものである。このハンドル名でオンラインで知られるマイケル・マーカートは、2010 年末から 2011 年初頭にかけてのサトシの段階的撤退の中で、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)からビットコイン・フォーラムの管理権を受け継いだ。2011 年 8 月 1 日、[bitcoin.org/smf から bitcointalk.org への移行を完了](/BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/)、すべての投稿・スレッド・アカウントを保存した。
+
+マーカートはアメリカのソフトウェア開発者である。[2010 年 2 月 10 日に BitcoinTalk への最初の投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-48/2010-02-10-whats-with-this-odd-generation/)を行い、予期せぬ 50.44 BTC のブロック報酬について質問した —— この質問がコインベースにトランザクション手数料が加算される仕組みについての最も早い公開説明の一つを引き出した。Bitcoin Wiki の長年の管理者でもある。
 
 ### 初期の活動
 theymos は 2010年2月10日、BitcoinTalk への最初の投稿として[トピック 48「この奇妙な生成は何？」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-48/2010-02-10-whats-with-this-odd-generation/)を開いた。予期せぬ 50.44 BTC のブロック報酬についての質問だったが、これがコインベースにトランザクション手数料が加算される仕組みについての最も早い公開説明の一つへとつながった。2010年を通じて、トランザクション手数料、IRC ブートストラップ、バージョンアップ、プロトコルに関する一般的な質問について、新規ユーザーを助ける投稿を何十件も重ねた。返答は直截で正確であり、エンドユーザー向けのサポート窓口として事実上機能していた。
