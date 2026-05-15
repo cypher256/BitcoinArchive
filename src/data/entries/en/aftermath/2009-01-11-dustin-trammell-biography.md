@@ -33,7 +33,9 @@ relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
 ---
 
-Dustin D. Trammell is an information security researcher based in Austin, Texas. He has worked in the cybersecurity industry and is known in the infosec community for his research on vulnerabilities and exploit development. He was among the very first people to download and run Bitcoin after its public release.
+On January 11, 2009, three days after Bitcoin v0.1's [public release](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/), an Austin-based infosec researcher named Dustin Trammell downloaded the software, ran it, and [emailed Satoshi](/BitcoinArchive/entries/correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email/) the same day. Three days after that, on January 14, 2009, [Satoshi sent him 25 BTC](/BitcoinArchive/entries/correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins/) as a test transaction — the second-known person-to-person Bitcoin transfer in history, after the [10 BTC sent to Hal Finney two days earlier](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
+
+Trammell is a cybersecurity researcher based in Austin, Texas, known in the infosec community for vulnerability and exploit-development work.
 
 ### First Contact with Satoshi
 On January 11, 2009 — three days after [Bitcoin v0.1 was released](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) — Trammell [emailed Satoshi Nakamoto](/BitcoinArchive/entries/correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email/) after downloading and running the software. He reported his experience and asked questions about the system's design. Satoshi responded the same day, beginning a brief but significant email correspondence.
