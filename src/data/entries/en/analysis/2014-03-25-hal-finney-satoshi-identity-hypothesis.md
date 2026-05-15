@@ -72,7 +72,7 @@ timeline
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : Hal first replies to whitepaper as third party on crypto list (Nov)
     %% link: /BitcoinArchive/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/
-    2009 : Bitcoin v0.1 - Hal becomes first non-Satoshi node (Jan)
+    2009 : Bitcoin v0.1 - Hal becomes first known non-Satoshi node (Jan)
     %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : Hal runs 10-mile race in Santa Barbara - Satoshi sends Hearn email + broadcasts tx (Apr 18) [alibi 1]
     %% link: /BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/

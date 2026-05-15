@@ -114,7 +114,7 @@ translationStatus: complete
 | 1997 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [Hashcash](/BitcoinArchive/ja/participants/adam-back/) | スパム／シビル攻撃対策としての PoW。ビットコインホワイトペーパー [6] で引用 |
 | 1998 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) | 同報配信型台帳と計算パズル発行に基づく分散デジタル通貨。ビットコインホワイトペーパー [1] で引用 |
 | 1998 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | Bit Gold | 連鎖的な PoW トークン。ホワイトペーパーには引用がないが、サトシは後年のフォーラム投稿で言及している |
-| 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後にビットコインの最初のサトシ以外のノード運用者となる |
+| 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後にビットコインで最初に知られるサトシ以外のノード運用者となる |
 | 2008 | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | ビットコイン | 統合 |
 
 *[編者注：本表は提案群をサイファーパンク運動の地形に位置付けるためのものである。これらのうちビットコインが何を再利用し、何を借り、何を新たに統合したか — そしてホワイトペーパーの引用文献が設計上のどの判断と対応するか — の構成要素単位の正典的分析は[ビットコインの設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱う。本エントリの扱いは本エントリの主題（運動に対するサトシの知的位置）に合わせて調整しており、構成要素単位の分析はそちらに置いている。]*
