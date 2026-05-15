@@ -54,7 +54,9 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
-Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) is a software developer who became the lead maintainer of Bitcoin after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s departure. He grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and later founded Wasabi Software, a 3D graphics software company.
+In December 2010, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) handed Gavin Andresen the keys to Bitcoin — source-repository access on December 12, the [network alert key on April 26, 2011](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/). Months before the alert-key handover, Andresen had been invited to speak about Bitcoin at CIA headquarters in Langley. He told Satoshi beforehand. After that notice, Satoshi's communications became less frequent, then stopped entirely. Andresen gave the talk on June 14, 2011.
+
+Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and founded Wasabi Software, a 3D graphics company. He encountered Bitcoin in 2010 and quickly became one of the most active contributors, creating the [Bitcoin Faucet](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) — a website that gave away free bitcoins to help people learn the technology. He served as Bitcoin's lead maintainer from December 2010 to April 2014.
 
 ```mermaid
 timeline
@@ -70,9 +72,6 @@ timeline
     2012 : Bitcoin Foundation co-founded; Andresen as Chief Scientist (Sep)
     2014 : Steps down as lead maintainer, role passes to Wladimir van der Laan (Apr)
 ```
-
-### Discovery of Bitcoin
-Andresen first encountered Bitcoin in 2010. He quickly became one of the most active contributors, creating the Bitcoin Faucet — a website that gave away free bitcoins to help people learn about and start using the technology. He [announced the Faucet on the BitcoinTalk forum](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) on June 11, 2010. This was one of the earliest efforts to promote Bitcoin adoption.
 
 ### Satoshi's successor — handover in stages (2010–2011)
 The handover from Satoshi to Andresen was not a single appointment but a gradual transfer of operational authority over seven months, recorded across the following archive entries:
@@ -100,12 +99,23 @@ Andresen recalled the gradual nature of this transition in a [2016 retrospective
 
 Andresen led Bitcoin development openly from that point, while Satoshi continued private correspondence into early 2011. Satoshi's [April 23, 2011 email to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) — a private message at the time, published later — carried the departure line:
 
+<!-- speaker: Satoshi Nakamoto -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
-Three days later, the [last known private email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) closed with the line *"I wish you wouldn't keep talking about me as a mysterious shadowy figure"* — both an admonition and a goodbye, accompanying the formal CAlert key transfer. Andresen later became the Chief Scientist of the Bitcoin Foundation when it was established in September 2012.
+Three days later, the [last known private email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) accompanied the formal CAlert key transfer:
+
+<!-- speaker: Satoshi Nakamoto -->
+> "I wish you wouldn't keep talking about me as a mysterious shadowy figure."
+
+Andresen later became the Chief Scientist of the Bitcoin Foundation when it was established in September 2012.
 
 ### CIA Visit
-On June 14, 2011, Andresen presented about Bitcoin at CIA headquarters in Langley, Virginia, as part of an In-Q-Tel conference on emerging technologies. He had informed Satoshi of the invitation beforehand, after which Satoshi's communications became less frequent and eventually ceased entirely.
+
+On June 14, 2011, Andresen presented about Bitcoin at CIA headquarters in Langley, Virginia, as part of an In-Q-Tel conference on emerging technologies. He posted to Twitter that evening:
+
+> "My talk at the CIA went well today. The hallways there are REALLY wide, and full of interesting stuff."
+
+He had informed Satoshi of the invitation beforehand, after which Satoshi's communications became less frequent and eventually ceased entirely.
 
 ### Later Years
 On April 8, 2014, Andresen stepped down as lead maintainer, passing the role to Wladimir van der Laan. He continued to contribute to Bitcoin development and advocated for increasing the block size limit to improve transaction capacity.
