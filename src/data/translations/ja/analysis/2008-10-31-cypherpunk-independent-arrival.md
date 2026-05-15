@@ -70,11 +70,14 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリは公開記録から得られる 3 つの観察を組み合わせて読む: (1) サトシ自身の言として、ビットコイン設計の 18 か月間、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を知らなかった。(2) ウェイ・ダイの後年の評価として、サトシは「サイファーパンクのコミュニティに以前から積極的に参加していた人物ではない」推認。(3) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 項目の思想核との、異例に密な整合。組み合わせると構造的な問いが立ち上がる: サイファーパンクのコミュニティに参加した形跡が見えない設計者が、その創設宣言にほぼ一対一で対応するシステムにどう到達したのか。
+<!-- speaker: Satoshi Nakamoto -->
+> 「ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」
 
-対になる別エントリ [「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名そのものを 1980〜90 年代のサイバーパンク／テクノオリエンタリズム的な記号空間の内側で読む別軸の分析である。本エントリは、サトシがシステムを設計した**知的位置**そのものに焦点を絞る。
+サトシは 2008 年 8 月 21 日、ビットコイン設計開始から 18 か月後、[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の 1998 年 b-money 提案を紹介した翌日に、こう書いた。b-money は同じ設計空間にあった最も近い先行システム。サトシはそれを見たことがなかった。
 
-本エントリは[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)および[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)と関連する。それらがブロック 0 という対象物・リリース週という出来事を扱うのに対し、本エントリはサトシがシステムを設計した知的位置を扱う。
+本エントリは三つの観察を組み合わせて読む: (a) 上記の b-money 不知の告白、サトシ自身の言。(b) ウェイ・ダイの 2014 年回顧的評価として、サトシは「サイファーパンクのコミュニティに以前から積極的に参加していた人物ではない」推認。(c) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年『A Cypherpunk's Manifesto』 が表明した 6 項目の思想核との、密な整合。サイファーパンクのコミュニティに参加した形跡が見えない設計者が、その創設宣言にほぼ一対一で対応するシステムにどう到達したのか。
+
+対になる別エントリ[「サトシ・ナカモト」 という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名そのものを 1980〜90 年代のサイバーパンク／テクノオリエンタリズム的な記号空間の内側で読む別軸の分析である。本エントリは、サトシがシステムを設計した**知的位置**そのものに焦点を絞る。隣接して[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)（ブロック 0 という対象物）と[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)（リリース週という出来事）が並ぶ。
 
 ## 1. サイファーパンク：歴史・核心・技術系譜
 
@@ -122,10 +125,17 @@ translationStatus: complete
 
 ### 2.1 「18 か月」の自認
 
-サトシ本人が開発期間を特定した記録は二つある:
+サトシ本人が開発期間を特定した記録は二つある。
 
-- 2008 年 11 月 17 日、cryptography メーリングリスト（ホワイトペーパー投稿の 17 日後）: "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them"（[アーカイブ済み投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)）
-- 2009 年 7 月 21 日、マルティ・マルミ宛メール: "need a break from it after 18 months development"（[アーカイブ済み](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)）
+2008 年 11 月 17 日、ホワイトペーパー投稿の 17 日後、cryptography メーリングリストで（[アーカイブ済み投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)）:
+
+<!-- speaker: Satoshi Nakamoto -->
+> 「コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきたと思うが、多くの詳細があった」
+
+2009 年 7 月 21 日、マルッティ・マルミ宛のメールで（[アーカイブ済み](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)）:
+
+<!-- speaker: Satoshi Nakamoto -->
+> 「18 ヶ月の開発の後で一息つく必要がある」
 
 両方の発言から、設計の開始時期は 2007 年半ば頃と推定できる。
 
@@ -135,6 +145,7 @@ translationStatus: complete
 
 アダム・バックの 2008 年 8 月 21 日の返信が、サトシに b-money を初めて教えた。サトシの返信は COPA 対ライト裁判の証拠にそのまま記録されている:
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」
 
 これが、開発の 18 か月間に b-money — 設計空間上で最も近い先行提案 — を知らなかったことを、[サトシ自身の言葉](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で確認する一次資料である。サトシはこれを知った後、翌日（2008 年 8 月 22 日）にウェイ・ダイへ直接連絡し、ホワイトペーパーに [1] として引用を追加した。
@@ -155,7 +166,7 @@ translationStatus: complete
 
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
 
-二つの独立した観察 — サトシ自身の b-money 不知の自認と、ダイの識別性論証 — が同じ像に収束する: サイファーパンクのコミュニティでの可視的な参加の外で、開発期間中に技術系譜の中心提案のうち一つ（Hashcash）だけを知って作業していた設計者の像。
+二つの独立した観察 — サトシ自身の b-money 不知の自認とダイの識別性論証 — は同じ像に収束する: サイファーパンクのコミュニティでの可視的な参加の外で、Hashcash のみを既知の先行参照として作業していた設計者。
 
 ## 3. 公開記録上の実践とサイファーパンク核心：対応表
 
@@ -207,4 +218,4 @@ translationStatus: complete
 - ウェイ・ダイの 2014 年回想が独立した第二の制約を与える: 識別性論証から、サトシはおそらくサイファーパンクのコミュニティの能動的参加者ではなかった
 - 2008-2011 年のサトシの公開記録上の実践は、エリック・ヒューズ 1993 年「A Cypherpunk's Manifesto」が表明した 6 軸の思想核に一対一で対応する
 - 最も簡素な読みは**独立到達** — 可視的なコミュニティの外側から同じ答えに収束した — だが、受動的な読み手だった可能性は公開記録上で開いたまま残る
-- 本エントリは、サトシがシステムを構築したときに立っていた知的位置の構造的記述を提供する。身元・国籍・背景についての主張は行わない。仮名そのものの記号空間については、対になるエントリ [「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)を参照
+- 本エントリは、サトシがシステムを構築したときに立っていた知的位置の構造的記述を提供する。身元・国籍・背景についての主張は行わない。

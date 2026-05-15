@@ -19,8 +19,10 @@
  *                      Archive editor notes
  *
  * Output files:
- *   temp/temp_MMDD_editorial_violations.md   (informational mode)
- *   temp/temp_MMDD_f_candidates.md           (--report-f-candidates mode)
+ *   temp/editorial_violations.md          (informational mode; only
+ *                                          written when violations > 0,
+ *                                          overwritten each run)
+ *   temp/temp_MMDD_f_candidates.md        (--report-f-candidates mode)
  */
 import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -292,12 +294,17 @@ if (REPORT_F) {
   console.log(`Written: temp/temp_${mmdd}_f_candidates.md`);
   console.log(`F-candidate occurrences: ${fCandidates.length}`);
 } else {
-  let r = `# Editorial markers audit\n\n`;
-  r += `Generated: ${today.toISOString()}\n\n`;
-  r += `Read-only audit. See STYLE_GUIDE.md "Editorial Markers" section.\n\n`;
-  r += `**Total violations: ${violations.length}**\n\n`;
-
-  if (violations.length > 0) {
+  console.log(`Editorial-marker violations: ${violations.length}`);
+  if (violations.length === 0) {
+    // Nothing to report — don't write a "No violations" boilerplate file.
+    // Stale audit files used to accumulate one per MMDD; now we only
+    // write when there's actually something to look at, and we use a
+    // fixed filename so successive runs overwrite instead of piling up.
+  } else {
+    let r = `# Editorial markers audit\n\n`;
+    r += `Generated: ${today.toISOString()}\n\n`;
+    r += `Read-only audit. See STYLE_GUIDE.md "Editorial Markers" section.\n\n`;
+    r += `**Total violations: ${violations.length}**\n\n`;
     r += `## By kind\n\n| kind | EN | JA |\n|---|---|---|\n`;
     const kinds = [...new Set(violations.map((v) => v.kind))].sort();
     for (const k of kinds) {
@@ -309,15 +316,12 @@ if (REPORT_F) {
     for (const v of violations) {
       r += `- \`${v.file}:${v.lineNo}\` [${v.lang}] **${v.kind}**\n  ${v.message}\n  > ${v.line}\n\n`;
     }
-  } else {
-    r += `No violations.\n`;
-  }
 
-  writeFileSync(path.join(TEMP_DIR, `temp_${mmdd}_editorial_violations.md`), r, 'utf-8');
-  console.log(`Written: temp/temp_${mmdd}_editorial_violations.md`);
-  console.log(`Editorial-marker violations: ${violations.length}`);
-  console.log(`  by kind:`);
-  for (const [k, n] of tally(violations, 'kind')) console.log(`    ${k}: ${n}`);
+    writeFileSync(path.join(TEMP_DIR, `editorial_violations.md`), r, 'utf-8');
+    console.log(`Written: temp/editorial_violations.md`);
+    console.log(`  by kind:`);
+    for (const [k, n] of tally(violations, 'kind')) console.log(`    ${k}: ${n}`);
+  }
 }
 
 if (STRICT && violations.length > 0) {
