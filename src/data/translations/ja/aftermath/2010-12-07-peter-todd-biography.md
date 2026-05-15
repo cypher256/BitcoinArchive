@@ -54,7 +54,19 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ピーター・トッド（1985年3月14日、カナダ・バンクーバー生まれ）は暗号学者、応用暗号コンサルタント、Bitcoin Core 開発者である。2011年に OCAD 大学（オンタリオ・カレッジ・オブ・アート・アンド・デザイン）の Integrated Media 専攻を卒業し、以前は地球物理学スタートアップ Gedex Inc.でアナログ電子工学の設計者として勤務していた。2008年4月に GitHub アカウントを登録している。ビットコインプロトコルのセキュリティ、スケーラビリティ、および技術的トレードオフに関する率直な発言で知られる。
+2010 年 12 月 7 日、BitcoinTalk に「retep」 という名前の新しいアカウントが登録された。3 日後、このアカウントの 2 番目の投稿は[サトシ・ナカモトのスレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) —— トランザクション置換手数料に関するもの —— に返信した:
+
+> 「もちろん、正確に言えば、二つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない。」
+
+2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を行って沈黙した。数年後、このアカウントのユーザー名は Peter Todd に変更された。Bitcoin Core 開発者のグレゴリー・マクスウェルは [Hacker News でこう書いている](https://news.ycombinator.com/item?id=41784567) —— 「retep が peter の逆綴りだと気づくのに 10 年近くかかった」。
+
+2024 年 10 月、HBO のドキュメンタリー[「Money Electric: The Bitcoin Mystery」](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はトッドをサトシ・ナカモトの正体候補として名指しし、2010 年 12 月の返信を証拠として挙げた。トッドの公的な返答:
+
+> 「もちろん、俺がサトシだ。ついでにクレイグ・ライトでもある」
+
+否定であり、無責任な主張として退けている。
+
+ピーター・トッド（1985 年 3 月 14 日、カナダ・バンクーバー生まれ）は暗号学者、応用暗号コンサルタント、Bitcoin Core 開発者である。2011 年に OCAD 大学（オンタリオ・カレッジ・オブ・アート・アンド・デザイン）の Integrated Media 専攻を卒業、それ以前は地球物理学スタートアップ Gedex Inc. でアナログ電子工学の設計者として勤務していた。ビットコインへの主要貢献は [BIP 65 OP_CHECKLOCKTIMEVERIFY](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/)（2014）、[BIP 125 Replace-by-Fee](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/) の共著（2015）、[OpenTimestamps](/BitcoinArchive/ja/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/)（2016）。
 
 ```mermaid
 timeline
@@ -80,10 +92,8 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
 ```
 
-### BitcoinTalk とサトシ
-トッドは 2010年12月7日にユーザー名「retep」で BitcoinTalk に登録した。当時、このハンドルネームが Peter の逆綴りであることに気づいた者はほとんどいなかった（Bitcoin Core 開発者のグレゴリー・マクスウェルですら「気づくのに 10年近くかかった」と 2024年に Hacker News で述べている）。数年後、トッドはこのアカウントのユーザー名を自ら「Peter Todd」に変更した。3日後の 12月10日、「Fees in BitDNS confusion」スレッドで[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の[投稿に返信した](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)。サトシはそこでトランザクション置換の概念 — 後に Replace-by-Fee として知られるもの — を説明していた。これはトッドのフォーラムでの 2番目の投稿だった。サトシの[最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)はその 2日後の 2010年12月12日だった。
-
 ### Bitcoin Core への貢献
+
 トッドは 2012年4月から Bitcoin Core の活発な貢献者となり、最終的に Bitcoin Core の GitHub リポジトリで 11番目に多い貢献者となった。プロトコルレベルのセキュリティ、トランザクションポリシー、ネットワークの耐障害性に注力した。
 
 ### BIP 65: OP_CHECKLOCKTIMEVERIFY（2014年10月）
@@ -100,8 +110,4 @@ timeline
 
 ### その他の役職
 トッドは Mastercoin および Dark Wallet でチーフサイエンティストを務め、プライバシー強化のためのステルスアドレス（BIP 63、未実装）の設計にも貢献した。2014年7月から Coinkite のコンサルタントとして勤務した。
-
-### HBO ドキュメンタリー（2024年10月）
-<!-- speaker: narrator -->
-2024年10月、HBO のドキュメンタリー[「Money Electric: The Bitcoin Mystery」](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)は、トッドをサトシ・ナカモトの正体候補として取り上げ、2010年12月のサトシの投稿への返信を証拠として指摘した。トッドはこの主張を否定し、無責任で危険だと述べた。
 

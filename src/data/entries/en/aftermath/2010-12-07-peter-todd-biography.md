@@ -53,7 +53,19 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
-Peter Todd (born March 14, 1985 in Vancouver, Canada) is a cryptographer, applied cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media, and previously worked as an analog electronics designer at geophysics startup Gedex Inc. He registered a GitHub account in April 2008. He is known for his focus on Bitcoin protocol security, scalability, and his outspoken views on technical trade-offs.
+On December 7, 2010, a new account named "retep" registered on BitcoinTalk. Three days later, the account's second post [replied to a Satoshi Nakamoto thread](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) on transaction-replacement fees:
+
+> "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
+
+Two days later, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) and went silent. Years later the account's username was changed to Peter Todd. Bitcoin Core developer Gregory Maxwell [later noted on Hacker News](https://news.ycombinator.com/item?id=41784567) that "it took me nearly a decade to realize retep was peter backwards."
+
+In October 2024, the HBO documentary ["Money Electric: The Bitcoin Mystery"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) named Todd as a candidate for Satoshi's true identity, pointing to the December 2010 reply as evidence. Todd's public answer:
+
+> "Of course I'm Satoshi, and I'm Craig Wright."
+
+He denies the claim and treats it as irresponsible.
+
+Peter Todd (born March 14, 1985 in Vancouver, Canada) is a cryptographer, applied-cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media; previously he worked as an analog-electronics designer at the geophysics startup Gedex Inc. His major Bitcoin contributions include [BIP 65 OP_CHECKLOCKTIMEVERIFY](/BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) (2014), co-authorship of [BIP 125 Replace-by-Fee](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/) (2015), and [OpenTimestamps](/BitcoinArchive/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/) (2016).
 
 ```mermaid
 timeline
@@ -79,10 +91,8 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
 ```
 
-### BitcoinTalk and Satoshi
-Todd registered on BitcoinTalk on December 7, 2010 under the username "retep." At the time, few noticed that the handle was Peter spelled backwards — Bitcoin Core developer Gregory Maxwell commented in October 2024 on Hacker News that "it took me nearly a decade to realize retep was peter backwards." Years later, Todd changed the account's username to "Peter Todd." Three days after registration, on December 10, he [replied to a Satoshi Nakamoto post](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) in the "Fees in BitDNS confusion" thread, where Satoshi had described a concept for transaction replacement — what would later become known as Replace-by-Fee. This was only Todd's second post on the forum. Satoshi's [last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
-
 ### Bitcoin Core Contributions
+
 Todd became an active Bitcoin Core contributor starting in April 2012, eventually becoming the 11th most prolific contributor to Bitcoin Core's GitHub repository. He focused on protocol-level security, transaction policy, and network resilience.
 
 ### BIP 65: OP_CHECKLOCKTIMEVERIFY (October 2014)
@@ -100,6 +110,4 @@ Todd was one of six participants in the Zcash trusted setup ceremony. He conduct
 ### Other Roles
 Todd served as Chief Scientist at Mastercoin and Dark Wallet, and contributed to the design of stealth addresses (BIP 63, unimplemented) for enhanced privacy. He worked as a consultant at Coinkite starting July 2014.
 
-### HBO Documentary (October 2024)
-In October 2024, the HBO documentary ["Money Electric: The Bitcoin Mystery"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) named Todd as a candidate for Satoshi Nakamoto's true identity, pointing to his December 2010 reply to Satoshi's post as evidence. Todd denied the claim, calling it irresponsible and dangerous.
 
