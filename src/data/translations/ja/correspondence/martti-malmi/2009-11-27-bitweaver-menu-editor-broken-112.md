@@ -20,12 +20,19 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-26-bitweaver-menu-editor-broken-111"
 ---
 
 <!-- speaker: Martti Malmi -->
 修正しました。データベースを直接変更しました。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > Bitweaverのメニューエディターが壊れていて、フォーラムのリンクを変更できない。
 > 「create and edit menu items」のページが私の環境では空白で表示される：
 >
@@ -35,5 +42,6 @@ translationStatus: complete
 >
 > フォーラムのリンクは以下に変更する必要がある：
 > http://www.bitcoin.org/smf/
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

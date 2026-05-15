@@ -19,8 +19,18 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
 ---
 
+<!-- quote: q1 -->
 > If bandwidth is a problem, delete my link in the "0.3 almost ready"
 > thread.  I just don't want to upload it to sourceforge for a quickie
 > share for a day or two, possibly taking it down immediately if there's
@@ -32,6 +42,7 @@ Ok, I'll monitor it. Bandwidth hasn't been a problem so far - it's
 been about 2 GB (0.5 dollars) per month at most. Other costs are about  
 15$ a month.
 
+<!-- quote: q2 -->
 > BTW, it's looking like I may be able to get us some money soon to cover
 > web host costs, back your exchange service, etc, in the form of cash in
 > the mail.  Can you receive it and act as the project's treasurer?

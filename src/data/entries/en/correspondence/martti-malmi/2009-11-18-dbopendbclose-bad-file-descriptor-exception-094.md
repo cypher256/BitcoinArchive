@@ -19,10 +19,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-16-dbopendbclose-bad-file-descriptor-exception-086"
 ---
 
 Here's the logs in case they're still useful.
 
+<!-- quote: q1 -->
 > I have an idea for a workaround, but it depends on what files the
 > errors are on.  If you've accumulated several errors in db.log, could
 > you send it to me? (even if it's rather simple and boring)  Is the file

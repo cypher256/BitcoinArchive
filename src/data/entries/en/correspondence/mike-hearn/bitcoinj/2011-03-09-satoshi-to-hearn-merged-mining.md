@@ -23,8 +23,22 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
+  - id: "q3"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
 ---
 
+<!-- quote: q1 -->
 > See these threads:
 > http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
 > http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
@@ -41,12 +55,14 @@ The current system, where nodes make sure to include enough fee for current cond
 
 Users still worried about processing speed uncertainty should think of it as encouragement to include a fee.
 
+<!-- quote: q2 -->
 > There's an unfinished part of the protocol that deals with setting up publisher/subscriber channels for distributed routing via the network. What was the purpose of this? Was the idea to have a p2p market or did it have some kind of lower level function, like perhaps broadcasting expected tx fees?
 
 I was trying to implement an eBay style marketplace built in to the client. Publish/subscribe would be used for broadcasting product offers and ratings/reviews. Your reviews would be weighted by the blocks you've generated. I rightly abandoned it in favour of JSON-RPC, so other authors could implement it externally. The publish/subscribe "meet in the middle" mechanism was an interesting concept, but nothing remains that uses it.
 
 It was part of writing code to explore the most technically demanding use cases and make sure Bitcoin could support everything that might be needed in the future, given the locked-in nature of the rules once the block chain started.
 
+<!-- quote: q3 -->
 > There was an interesting discussion of generalizing BitCoin some months ago, but we struggled to fully understand how you planned to achieve it. I think I understood the concept of placing another merkle tree on top of multiple separate chains:
 >
 > http://www.bitcoin.org/smf/index.php?topic=3414.msg48171#msg48171

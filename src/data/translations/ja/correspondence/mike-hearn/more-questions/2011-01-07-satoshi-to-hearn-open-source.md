@@ -20,10 +20,18 @@ translationStatus: complete
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
 ---
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > クライアント専用ノードについて同じ結論に達し、それを実装してきた。もうすぐ完成だ……ブロックチェーンのダウンロード、ブロック/トランザクションの解析と検証が完了し、支払いトランザクションの作成もほぼ完了している。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 素晴らしい。初のクライアント専用実装は、本当に次のステップへの前進になるだろう。オープンソースになるのか、それとも Google の独自技術か？

@@ -19,8 +19,14 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-23-non-gui-option-171"
 ---
 
+<!-- quote: q1 -->
 > I'll give Drupal accounts to the bitcoin.org translators, so they can 
 > keep the translations up to date.
 

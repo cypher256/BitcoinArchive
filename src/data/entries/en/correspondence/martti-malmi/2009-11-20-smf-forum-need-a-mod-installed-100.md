@@ -20,6 +20,11 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-099"
 ---
 
 I don't have the time to configure it today, but I made a temporary  
@@ -39,6 +44,7 @@ NewLibertyStandard should perhaps change his pricing to the market
 price (i.e. what people are willing to buy and sell for) so that he  
 doesn't run out of coins.
 
+<!-- quote: q1 -->
 > I've been configuring the SMF forum.  They're saying SMF is better
 > written than phpBB and more reliable, so if I can get SMF to look
 > right, that's the preferable choice.

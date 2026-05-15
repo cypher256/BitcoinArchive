@@ -21,10 +21,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-063"
 ---
 
 That's great! A major waypoint reached. Seems to work fine here.
 
+<!-- quote: q1 -->
 > The Linux build is ready for testing on the network.  It seems solid.
 > I sent the executable as an attachment in the previous e-mail, but if
 > the mail server didn't let it through (it's 12MB), you can download it

@@ -20,12 +20,20 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-07-project-developers-245"
 ---
 
 <!-- speaker: Martti Malmi -->
 了解です。メールアドレスも掲載して構いません。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 連絡先ページのプロジェクト開発者リストにあなたを追加してもいいだろうか？以前コードを書いてくれたので、載せるべきだと思う。統一性のために本名でなければならない。メールアドレスも掲載したい場合は、スパムを防ぐために画像にする。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

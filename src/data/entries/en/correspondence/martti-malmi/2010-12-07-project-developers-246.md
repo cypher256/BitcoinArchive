@@ -19,10 +19,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-07-project-developers-245"
 ---
 
 Ok. You can include the e-mail address.
 
+<!-- quote: q1 -->
 > Mind if I add you to the Project Developers list on the Contact page?
 > You wrote some code before so you should be there.  It would have to be
 > your real name for consistency.  If you want to have an e-mail address

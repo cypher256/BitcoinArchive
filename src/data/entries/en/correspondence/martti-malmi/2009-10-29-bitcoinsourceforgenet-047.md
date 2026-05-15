@@ -19,8 +19,14 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-29-bitcoinsourceforgenet-046"
 ---
 
+<!-- quote: q1 -->
 > I'll convert the CriticalSection code to wxCriticalSection and upload
 > it to SVN (it's a little tricky).  I don't know what to do for
 > TryEnterCriticalSection though.  I think I'm almost ready to check

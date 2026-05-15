@@ -20,10 +20,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-243"
 ---
 
 Attached is the root password encrypted.
 
+<!-- quote: q1 -->
 > Thanks, did you finish moving bitcoinexchange to another server?
 
 I moved all the files, database and bitcoind, but still some work  

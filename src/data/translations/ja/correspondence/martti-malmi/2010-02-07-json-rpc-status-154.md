@@ -21,12 +21,19 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-07-json-rpc-status-153"
 ---
 
 <!-- speaker: Martti Malmi -->
 それは素晴らしいですね！Liberty Reserve とその API について勉強し始めます。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使って
 > いる。JSON-RPCは素のソケットでもHTTPでも使えるが、他の実装のほとんど
 > はHTTPのようなので、独自のシンプルなHTTPヘッダーを作った。JSONの
@@ -37,5 +44,6 @@ translationStatus: complete
 >
 > フォーラムは確実に盛り上がっているな。こんなに早く活発になるとは
 > 思わなかった。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

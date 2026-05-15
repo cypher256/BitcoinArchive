@@ -22,10 +22,18 @@ translationStatus: complete
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-07-satoshi-to-hearn-open-source"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 素晴らしい。初のクライアント専用実装は、本当に次のステップへの前進になるだろう。オープンソースになるのか、それとも Google の独自技術か？
+<!-- /tone-skip -->
 
 <!-- speaker: Mike Hearn -->
 オープンソースだ。そうせざるを得ない——余暇の個人プロジェクトとして開発しており、Google のポリシーでは成果物をオープンソースにすることが条件だ。でも、いずれにせよそうするつもりだった。

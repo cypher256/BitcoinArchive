@@ -25,22 +25,55 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q3"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q4"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q5"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q6"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q7"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
 ---
 
+<!-- quote: q1 -->
 > I hope you are doing well. I finally got all the lawyers happy enough to release BitCoinJ under the Google name using the Apache 2 license:
 >
 > It's incomplete - notably it doesn't properly handle block chain splits yet - but the rest is coming. I put a lot of work into documentation and comments so hopefully it'll open up BitCoin to a new audience who weren't able to understand/build the current code. Over the next month or two I'll be finishing off some of the bigger missing pieces for a full client-mode implementation.
 
 That's great news! Much complexity can be left behind in a clean rewrite with only client requirements, and it opens it to Java developers too.
 
+<!-- quote: q2 -->
 > I know you are busy right now but I'm hoping you can find time to answer a few questions I had.
 
 I'm happy to answer any questions.
 
+<!-- quote: q3 -->
 > As part of doing full SPV I'm thinking of adding a getmerklebranch message to the protocol. This would return a set of {blockhash, branch} pairs
 
 That's a CMerkleTx
 
+<!-- quote: q4 -->
 > given tx hashes, so allowing verification of a broadcast transaction before it was incorporated into a block without storing the full chain. Does that approach sound good to you?
 
 I don't understand. A merkle branch links a tx back to a block, which only has significance if the block exhibits proof-of-work. Linking back to an as-yet unsolved block proves nothing.
@@ -53,10 +86,12 @@ Are you talking about CMerkleTxes for the tx's dependencies? That would get part
 
 If you don't know about all txes in existence, I don't know how to do 2). You could only rely on trusting other nodes for that. That trust can be distributed over multiple nodes. Nodes only relay transactions they accept as valid. If you receive inv messages for a tx from all the nodes you're connected to, they're attesting that it's valid and the first spend they saw.
 
+<!-- quote: q5 -->
 > Also, I've been thinking of exploring different transaction types lately, eg by removing the IsStandard() checks for the testnet.
 
 Very good idea. That should definitely be allowed on -testnet.
 
+<!-- quote: q6 -->
 > It's clear you put a lot of thought into transactions beyond simply moving coins around up front, but unfortunately none of it was in the paper or documented in the code. Escrow, multi-pay and so on are all interesting but I was wondering if you could compile a list of ideas for things we can do with the scripting language at some point.
 >
 > Finally, the code that allows for transaction replacement has been disabled but the comment doesn't say why. Is this just to reduce the attack surface/complexity or is there a deeper reason?
@@ -67,6 +102,7 @@ See these threads:<br>
 http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119<br>
 http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
 
+<!-- quote: q7 -->
 > I haven't fully understood why sequence numbers are a property of the tx inputs rather than the tx itself.
 
 It's for contracts. An unrecorded open transaction can keep being replaced until nLockTime. It may contain payments by multiple parties. Each input owner signs their input. For a new version to be written, each must sign a higher sequence number (see IsNewerThan). By signing, an input owner says "I agree to put my money in, if everyone puts their money in and the outputs are this." There are other options in SignatureHash such as SIGHASH_SINGLE which means "I agree, as long as this one output (i.e. mine) is what I want, I don't care what you do with the other outputs.". If that's written with a high nSequenceNumber, the party can bow out of the negotiation except for that one stipulation, or sign SIGHASH_NONE and bow out completely.

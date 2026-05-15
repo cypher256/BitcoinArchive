@@ -21,6 +21,19 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
 ---
 
 Thanks for the info.
@@ -35,14 +48,17 @@ In v2 I'm thinking of showing transactions before they are integrated into the b
 
 So as long as the relay nodes are unhacked, this system should give enough trust that low value transactions can be shown in the UI immediately. It introduces some centralization/single points of failure, but if the relay mechanism dies or is hacked, the damage only lasts for 10 minutes until the new blocks are downloaded.
 
+<!-- quote: q1 -->
 > Client-only re-implementations would not need to implement EvalScript at all, or at most just implement the five ops used by the standard transaction templates."
 
 Indeed, there's no point in client-only implementations implementing EvalScript because they can't verify transactions aren't being double spent without storing and indexing the entire block chain. My code parses the scripts and then relies on them having a standard structure, but doesn't actually run them.
 
+<!-- quote: q2 -->
 > Educated guess, and the maths work out to round numbers. I wanted something that would be not too low if it was very popular and not too high if it wasn't.
 
 It'd be interesting to see the working for this. In some sense the number of coins is arbitrary as the nanocoin representation means the issuance is so huge it's practically infinite.
 
+<!-- quote: q3 -->
 > A higher limit can be phased in once we have actual use closer to the limit and make sure it's working OK.
 
 It'd be worth implementing some kind of more robust auto update mechanism, or a schedule for the phase in of this, if only because when people evaluate "is BitCoin worth my time and effort" a solid plan for scaling up is good to have written down.

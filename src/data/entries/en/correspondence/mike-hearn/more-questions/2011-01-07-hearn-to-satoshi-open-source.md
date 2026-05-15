@@ -21,8 +21,14 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-07-satoshi-to-hearn-open-source"
 ---
 
+<!-- quote: q1 -->
 > That's great! The first client-only implementation will really start to move things to the next step. Is it going to be open source, or Google proprietary?
 
 Open source. It has to be - I am developing it as a personal project in my spare time and Googles policy is that this is only allowed if you open source the results. But I would have done that anyway.

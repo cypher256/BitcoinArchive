@@ -20,11 +20,17 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-07-json-rpc-status-153"
 ---
 
 That's great! I'll start familiarizing myself with Liberty Reserve and  
 its api.
 
+<!-- quote: q1 -->
 > The JSON-RPC implementation is going well.  I'm using boost::asio for
 > sockets.  JSON-RPC can be plain socket or HTTP, but it seems most other
 > implementations are HTTP, so I made my own simple HTTP headers.  For

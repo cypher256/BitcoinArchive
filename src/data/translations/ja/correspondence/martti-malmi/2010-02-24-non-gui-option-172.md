@@ -20,11 +20,19 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-23-non-gui-option-171"
 ---
 
 <!-- speaker: Martti Malmi -->
 
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > bitcoin.org の翻訳者に Drupal のアカウントを付与して、翻訳を最新の状態に保てるようにしますね。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 

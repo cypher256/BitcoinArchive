@@ -21,13 +21,21 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-243"
 ---
 
 <!-- speaker: Martti Malmi -->
 暗号化した root パスワードを添付しました。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ありがとう。bitcoinexchange の別サーバーへの移行は完了したか？
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 ファイル、データベース、bitcoind は全て移動しましたが、稼働させるにはまだ作業が必要です。旧サイトは現在ダウンしているので、必要であれば遠慮なく再起動してください。

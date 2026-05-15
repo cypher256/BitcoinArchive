@@ -20,9 +20,24 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > SourceForgeは本当に遅いね。でも他にどうすればいいかわからない。あれはもう
 > 標準みたいなもので、大抵のプロジェクトはprojectname.sourceforge.netの
 > サイトを持っている。Google検索でwhatever.sourceforge.netを見かけると、
@@ -30,11 +45,14 @@ translationStatus: complete
 >
 > Bitweaverでユーザーがフォーラムの自分のメッセージを編集（できれば削除も）
 > できるようにする方法はある？
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 現在のバージョンの Bitweaver では不可能です。Bitweaver の wiki とフォーラムパッケージはそれほど高度ではありません。SF ホスティングにも、時々遅くなることやメーラーやユーザー IP 取得ができないなどの欠点があります。後で取引所サービスに使うために、prq.se（Wikileaks や Pirate Bay などをホストしている）からウェブホスティングを購入することを検討しています。セキュリティを高めるために別のユーザーアカウントで、プロジェクトサイトもそこにホストできるかもしれません。そこでは Drupal や TikiWiki をセットアップできます。これらはより高度で、Bitweaver よりもずっと大きく活発な開発者/ユーザーコミュニティがあります。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > Linuxへの移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの
 > 作業量が倍になるから、軽々しく決められることではない。ただ、LibertyのWine
 > クラッシュは心配だ。
@@ -47,12 +65,16 @@ translationStatus: complete
 > wxWidgetsはクロスプラットフォームのサポート関数を探すのに良い場所だ。
 > できれば#ifdefだらけのコードは避けたい。複数回使われるものはutil.cppの
 > 関数にして、その中に#ifdefを入れる形がいいだろう。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 はい。Windows のスレッドとソケットライブラリのインクルードをそれらの POSIX 版に置き換えたところ、エラーが少しだけ出るようになりました。主に svn/branches に入れましたが、公式リリースである必要はまだありません。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q3 -->
+<!-- tone-skip -->
 > セットアップでスタートアップフォルダーのアイコンをアンインストールするようにできる？通常のプログラムグループにアイコンをインストール・アンインストールして、スタートアップフォルダーのものはアンインストールだけすればいいと思う。スタートアップフォルダーのアイコンをインストール・アンインストール両方するか、アンインストールだけするかは、そこまで大きな問題ではないけど。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 やっておきます。

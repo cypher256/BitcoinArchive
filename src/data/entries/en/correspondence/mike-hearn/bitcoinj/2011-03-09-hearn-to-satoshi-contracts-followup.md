@@ -22,12 +22,27 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
 ---
 
+<!-- quote: q1 -->
 > If you don't know about all txes in existence, I don't know how to do 2). You could only rely on trusting other nodes for that. That trust can be distributed over multiple nodes. Nodes only relay transactions they accept as valid. If you receive inv messages for a tx from all the nodes you're connected to, they're attesting that it's valid and the first spend they saw.
 
 Good point. I was talking about verifying the inputs yes, but it is indeed pointless unless you hear about all open transactions as well. So being able to fetch a CMerkleTx is not important.
 
+<!-- quote: q2 -->
 > Just to reduce surface area. It wouldn't help with increasing tx fee. A tx starts being valid at nLockTime. It wouldn't work to have a tx that stops being valid at a certain time; once a tx ever becomes valid, it must stay valid permanently.
 >
 > See these threads:
@@ -36,6 +51,7 @@ Good point. I was talking about verifying the inputs yes, but it is indeed point
 
 I see. So right now fees are tricky because you have to decide up front what the fee should be, and if you guess too low, there's no way to correct the transaction and though the network will eventually forget it, your wallet still records that you spent the coins. This has already started happening.
 
+<!-- quote: q3 -->
 > It's for contracts.
 
 Ah ha. A whole unexplored area of the system opens up before my eyes :-) The concept of forming distributed contracts and escrow transactions without needing to trust an intermediary is a concept nearly as novel as BitCoin itself, I think.

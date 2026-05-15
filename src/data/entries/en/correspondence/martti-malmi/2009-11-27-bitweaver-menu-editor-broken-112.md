@@ -19,10 +19,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-26-bitweaver-menu-editor-broken-111"
 ---
 
 Fixed. I changed it directly in the database.
 
+<!-- quote: q1 -->
 > The Bitweaver menu editor is broken, I can't change the Forum link.
 > The "create and edit menu items" page comes up blank for me:
 >

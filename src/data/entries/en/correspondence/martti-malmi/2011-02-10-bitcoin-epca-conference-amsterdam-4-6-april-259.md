@@ -19,6 +19,11 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2011-02-07-bitcoin-epca-conference-amsterdam-4-6-april-258"
 ---
 
 Hello,
@@ -33,6 +38,7 @@ Best regards,
 Martti Malmi
 Bitcoin project developer
 
+<!-- quote: q1 -->
 > Hello,
 >
 > I am writing you on behalf of the EPCA Conference because we are   

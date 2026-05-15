@@ -13,8 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/"
+quotes:
+  - id: "q1"
+    person: "throughput"
+    personSlug: "throughput"
+    sourceEntryId: "forum/bitcointalk/topic-691/2010-08-13-throughput-msg8978"
 ---
 
+<!-- quote: q1 -->
 > But there will be no irc server to bootstrap from.
 
 Which doesn't matter because you can't access sourceforge to download the software either.

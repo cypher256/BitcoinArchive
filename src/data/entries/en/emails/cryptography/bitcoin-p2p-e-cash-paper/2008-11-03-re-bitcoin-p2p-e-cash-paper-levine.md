@@ -23,8 +23,14 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
   - name: "Mail Archive mirror"
     url: "https://www.mail-archive.com/cryptography@metzdowd.com/msg09966.html"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper"
 ---
 
+<!-- quote: q1 -->
 > As long as honest nodes control the most CPU power on the network,
 > they can generate the longest chain and outpace any attackers.
 

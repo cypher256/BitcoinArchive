@@ -21,10 +21,18 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-14-json-rpc-status-163"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > VPS をいじらなくても済むように、テストやコンパイルができる Ubuntu のノートパソコンを持っていないか？
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 はい。Python の JSON-RPC でテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。

@@ -23,8 +23,26 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
+  - id: "q3"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
+  - id: "q4"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
 ---
 
+<!-- quote: q1 -->
 > I have been working on a Java implementation of the simplified payment verification, with an eye to building a client that runs on Android phones. So I've been thinking a lot about storage requirements and the scalability of BitCoin, which led to some questions that the paper did not answer (maybe there could be a new version of the paper at some point, as I think aspects of it are now out of date).
 
 The simplified payment verification in the paper imagined you would receive transactions directly, as with sending to IP address which nobody uses, or a node would index all transactions by public key and you could download them like downloading mail from a mail server.
@@ -47,14 +65,17 @@ If the initial block download becomes too long, we'll want client mode as an opt
 
 Client-only re-implementations would not need to implement EvalScript at all, or at most just implement the five ops used by the standard transaction templates."
 
+<!-- quote: q2 -->
 > Specifically, BitCoin has a variety of magic numbers and neither the code nor the paper explain where they came from. For example, the fact that inflation ceases when 21 million coins have been issued. This number must have been arrived at somehow, but I can't see how.
 
 Educated guess, and the maths work out to round numbers. I wanted something that would be not too low if it was very popular and not too high if it wasn't.
 
+<!-- quote: q3 -->
 > Another is the 10 minute block target. I understand this was chosen to allow transactions to propagate through the network. However existing large P2P networks like BGP can propagate new data worldwide in <1 minute.
 
 If propagation is 1 minute, then 10 minutes was a good guess. Then nodes are only losing 10% of their work (1 minute/10 minutes). If the CPU time wasted by latency was a more significant share, there may be weaknesses I haven't thought of. An attacker would not be affected by latency, since he's chaining his own blocks, so he would have an advantage. The chain would temporarily fork more often due to latency.
 
+<!-- quote: q4 -->
 > The final number I'm interested in is the 500kb limit on block sizes. According to Wikipedia, Visa alone processed 62 billion transactions in 2009. Dividing through we get an average of 2000 transactions per second, so peak rate is probably around double that at 4000 transactions/sec. With a ten minute block target, at peak a block might need to contain 2.4 million transactions, which just won't fit into 500kb. Is this 500kb a temporary limitation that will be slowly removed over time from the official client or something more fundamental?
 
 A higher limit can be phased in once we have actual use closer to the limit and make sure it's working OK.

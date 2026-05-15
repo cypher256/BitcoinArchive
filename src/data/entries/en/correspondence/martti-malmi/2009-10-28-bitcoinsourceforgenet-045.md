@@ -19,8 +19,22 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
 ---
 
+<!-- quote: q1 -->
 > Sourceforge is just so darn slow.  I don't know what else to do though.
 >  It's such a standard, more often than not any given project has a
 > projectname.sourceforge.net site.  When I see whatever.sourceforge.net
@@ -40,6 +54,7 @@ better security. There I could set up Drupal or TikiWiki, which are
 more advanced and have quite a lot bigger and more active  
 developer/user communities than Bitweaver.
 
+<!-- quote: q2 -->
 > Getting antsy to port to Linux?  It's not a decision to be taken
 > lightly because once it's done, it doubles my testing and building
 > workload. Although I am worried about Liberty's Wine crashes.
@@ -58,6 +73,7 @@ developer/user communities than Bitweaver.
 Ok. I replaced the Windows thread and socket library includes with  
 their POSIX equivalents, and now it only gives a few errors, mostly  svn/branches, it doesn't need to be an official release yet.
 
+<!-- quote: q3 -->
 > Can you make the setup uninstall the Startup folder icon?  I figure it
 > should install and uninstall an icon in a regular program group, and
 > just uninstall the Startup folder one.  I guess it doesn't matter that

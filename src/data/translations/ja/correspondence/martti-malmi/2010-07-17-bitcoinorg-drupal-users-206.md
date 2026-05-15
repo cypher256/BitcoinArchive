@@ -22,14 +22,22 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-15-bitcoinorg-drupal-users-203"
 ---
 
 <!-- speaker: Martti Malmi -->
 はい、信頼できる翻訳者にアカウントを提供できます。1 ページだけの編集権限を与える方法は見つかっていませんが、ページを変更するたびに新しいリビジョンを作成することを強制し、リビジョンの削除は許可しないようにできます。Xunie が最初にアカウントを渡したい人ですね。:)
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 翻訳者（少なくとも信頼できる人たち）にDrupalのユーザーアカウントを持たせて、翻訳テキストを直接更新できるようにすることは可能だろうか？Drupalのユーザーアカウントはかなり権限が制限されているようだ。satoshiアカウントを作成したが、サイドバーの編集すらできず、ページの本文テキストしか編集できない。ユーザーアカウントでは管理者機能にアクセスできないと思う。安全だと思うか、それとも不安があるか？心配なら、英語版のホームページだけをロックする方法があるかもしれない。
 >
 > ホームページに変更を加える必要があるとき、すべての翻訳に反映する単純作業をXunieのような人に頼めると助かる。自分で全部やらなくて済むからな。（軽微な変更の多くは、言語を理解しなくても翻訳ページを修正できる）
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

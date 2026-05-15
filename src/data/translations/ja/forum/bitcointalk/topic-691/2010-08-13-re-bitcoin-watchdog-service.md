@@ -14,10 +14,18 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "throughput"
+    personSlug: "throughput"
+    sourceEntryId: "forum/bitcointalk/topic-691/2010-08-13-throughput-msg8978"
 ---
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > しかし、ブートストラップに使うIRCサーバーがなくなります。
+<!-- /tone-skip -->
 <!-- /tone-skip -->
 
 SourceForge にアクセスしてソフトウェアをダウンロードすることもできないので、それは関係ない。

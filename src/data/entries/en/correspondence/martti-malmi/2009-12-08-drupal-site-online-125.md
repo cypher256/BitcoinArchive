@@ -20,10 +20,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-08-drupal-site-online-124"
 ---
 
 Good job. I redirected bitcoin.sourceforge.net there.
 
+<!-- quote: q1 -->
 > I went ahead and put the new Drupal site online.  Enough time has
 > passed for a safe transition, and the site looks good.  There's more
 > work I should do on the theme, but it's good enough so far.  This is a

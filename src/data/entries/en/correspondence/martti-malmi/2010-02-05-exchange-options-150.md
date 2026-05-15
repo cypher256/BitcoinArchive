@@ -20,6 +20,11 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-exchange-options-142"
 ---
 
 Liberty Reserve sounds good. I could first make a service that only  
@@ -27,6 +32,7 @@ accepts LR, and add more options later. The weakness is that buying LR
 is an extra step of inconvenience when the customer just wants to get  
 Bitcoins. But maybe I don't have too much choice here.
 
+<!-- quote: q1 -->
 > Do you have electronic transfer or paper cheque in your country? (even
 > if only within Europe)
 

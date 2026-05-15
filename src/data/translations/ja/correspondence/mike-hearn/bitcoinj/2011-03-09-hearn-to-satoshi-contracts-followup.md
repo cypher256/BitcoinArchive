@@ -23,26 +23,48 @@ secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 存在するすべてのトランザクションを知らない場合、2)をどうやって実現するか分からない。他のノードを信頼するしかないだろう。その信頼は複数のノードに分散させることができる。ノードは有効と認めるトランザクションのみをリレーする。接続しているすべてのノードからトランザクションの inv メッセージを受信した場合、それらのノードはそのトランザクションが有効であり、最初に見た支出であることを証明している。
+<!-- /tone-skip -->
 
 <!-- speaker: Mike Hearn -->
 おっしゃる通りだ。入力の検証について話していたのだが、すべてのオープントランザクションを把握しなければ確かに意味がない。したがって、CMerkleTx を取得できることは重要ではない。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > 攻撃対象領域を減らすためだけだ。トランザクション手数料の引き上げには役立たない。トランザクションはnLockTimeから有効になる。ある時点で有効でなくなるトランザクションは機能しない。一度有効になったトランザクションは、永久に有効でなければならない。
 >
 > 以下のスレッドを参照してほしい：
 > http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
 > http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
+<!-- /tone-skip -->
 
 <!-- speaker: Mike Hearn -->
 なるほど。つまり現在、手数料は事前に決めなければならないため厄介で、低すぎた場合にトランザクションを修正する方法がなく、ネットワークはいずれ忘れるものの、ウォレットにはコインを使ったと記録されたままになる。これはすでに起こり始めている。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q3 -->
+<!-- tone-skip -->
 > コントラクトのためだ。
+<!-- /tone-skip -->
 
 <!-- speaker: Mike Hearn -->
 なるほど。システムのまだ探索されていない領域全体が目の前に開けた :-) 仲介者を信頼する必要なしに分散コントラクトやエスクロートランザクションを形成するという概念は、BitCoin 自体とほぼ同じくらい斬新な概念だと思う。

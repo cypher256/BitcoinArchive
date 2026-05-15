@@ -20,10 +20,18 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-29-bitcoinsourceforgenet-046"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > CriticalSection のコードを wxCriticalSection に変換して SVN にアップロードするよ（少しトリッキーだけど）。TryEnterCriticalSection をどうするかはまだわからない。もうすぐすべてチェックインできる状態になると思う。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 Boost の mutex はここで役に立ちますか？

@@ -19,13 +19,24 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
 ---
 
+<!-- quote: q1 -->
 > How much memory do you have to work with?
 
 The VPS has 320MB RAM, 50MB of which is currently free. There's also  
 500MB swap space.
 
+<!-- quote: q2 -->
 > Bitcoin necessarily takes a
 > fair bit of memory; about 75MB on Windows.  Is that a problem?
 

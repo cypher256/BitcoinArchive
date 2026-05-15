@@ -14,9 +14,17 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/519/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Aleš Janda"
+    personSlug: "ale-janda"
+    sourceEntryId: "forum/bitcointalk/topic-1986/2010-11-28-ale-janda-msg25093"
 ---
 
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 自動的に同期されますか？
+<!-- /tone-skip -->
 
 まったくそうではない。wallet.dat の複数のコピーを使用することは推奨も対応もされておらず、実際 Bitcoin のすべてはそれを防ぐように設計されている。両方のコピーがおかしくなる。
 

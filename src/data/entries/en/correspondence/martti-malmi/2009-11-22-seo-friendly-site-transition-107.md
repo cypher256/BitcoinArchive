@@ -20,12 +20,18 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-22-seo-friendly-site-transition-106"
 ---
 
 That's ok.
 
 I'll be afk 23.-25.11.
 
+<!-- quote: q1 -->
 > We need to do a continuity transition with bitcoin.org so the search
 > engines don't think this is a new site and reset the site start date
 > and PR data.  Google allows a certain number of properties like IP

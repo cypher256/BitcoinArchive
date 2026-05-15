@@ -23,20 +23,35 @@ translationStatus: complete
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
 ---
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > ところで、もしまだ見ていなければ、フォーラムでsecp256k1のセキュリティに関する議論がある：
 >
 > http://www.bitcoin.org/smf/index.php?topic=2699.0
 >
 > ハル（ハル・フィニーだと思うが）
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 はい、彼だ。Cryptography メーリングリストで支持的で、最初のノードの一つを運用していた。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > この曲線はランダムな曲線よりも攻撃のリスクが高いと考えているようだ。パフォーマンスの改善のためにsecp256k1を選んだのか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 正直に言うと、このプロジェクトはリリース前に 2年間の開発を要し、多くの課題のそれぞれにかけられる時間は限られていた。SHA と RSA の推奨サイズに関するガイダンスは見つかったが、比較的新しかった ECDSA については何も見つからなかった。RSA の推奨鍵サイズを取り、ECDSA の同等の鍵サイズに変換したが、アプリ全体が 256 ビットセキュリティと言えるように増やした。曲線の種類を推奨するものは見つからなかったので、ただ……一つ選んだ。鍵サイズが十分に大きければ、欠点を補えることを願っている。

@@ -20,9 +20,16 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/3/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "John Levine"
+    personSlug: "john-levine"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-re-bitcoin-p2p-e-cash-paper-levine"
 ---
 
 <!-- speaker: John Levine -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 >> 正直なノードがネットワーク上で最も多くのCPUパワーを支配している限り、
 >> 最も長いチェーンを生成し、攻撃者を上回ることができる。
 >
@@ -30,6 +37,7 @@ translationStatus: complete
 >
 > これはhashcashが今日のインターネットで機能しない理由と同じだ
 > — 善良な者たちは悪者よりもはるかに少ない計算能力しか持っていない。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 その点を指摘してくれてありがとう。

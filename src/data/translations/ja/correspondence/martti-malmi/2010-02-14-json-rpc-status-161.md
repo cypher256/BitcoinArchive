@@ -21,13 +21,21 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-13-json-rpc-status-160"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、
 > 結果を教えてほしい。Pythonを使っているか？
 >
 > Linux版をGTKなしで動作させるのは別の作業になる。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 はい、Python を使っています。VPS でまだ Bitcoin を動かしていないので、JSON-RPC のテストはまだしていないです。GTK ライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgets フォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2 つの異なるバイナリを作る必要があるかもしれないです。

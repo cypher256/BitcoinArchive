@@ -21,12 +21,20 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-08-drupal-site-online-124"
 ---
 
 <!-- speaker: Martti Malmi -->
 お疲れ様です。bitcoin.sourceforge.net をそこにリダイレクトしました。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 新しい Drupal サイトを公開した。安全な移行のための十分な時間が経過したし、サイトの見栄えも良い。テーマにはまだ作業が必要だが、今のところ十分だ。以前の bitcoin.org ページからは大幅な改善だ。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

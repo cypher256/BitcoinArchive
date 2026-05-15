@@ -24,11 +24,19 @@ secondarySources:
   - name: "Mail Archive mirror"
     url: "https://www.mail-archive.com/cryptography@metzdowd.com/msg09966.html"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 正直なノードがネットワーク上で最も多くのCPUパワーを支配している限り、
 > 最長のチェーンを生成し、いかなる攻撃者も出し抜くことができる。
+<!-- /tone-skip -->
 
 <!-- speaker: John Levine -->
 しかし実際にはそうなっていない。悪者は日常的に 10 万台以上のマシンのゾンビファームを支配している。スパム送信ゾンビのブラックリストを運用している私の知人は、1日に 100 万もの新しいゾンビを目にすることが珍しくないと言う。

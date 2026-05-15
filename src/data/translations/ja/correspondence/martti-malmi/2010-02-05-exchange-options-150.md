@@ -21,13 +21,21 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-exchange-options-142"
 ---
 
 <!-- speaker: Martti Malmi -->
 Liberty Reserve は良さそうですね。まずは LR のみを受け付けるサービスを作り、後からオプションを追加できますよ。弱点は、顧客が単に Bitcoin を手に入れたいだけの場合に、LR を購入するのが余計な手間になることですね。しかし、あまり選択の余地はないのかもしれません。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > あなたの国には電子送金や小切手はあるか？（ヨーロッパ内だけであっても）
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 はい、電子銀行振込が利用できますよ。2010年中にほとんどのヨーロッパ諸国が SEPA（単一ユーロ決済圏）に参加する予定です。これはヨーロッパ内のすべての支払いが国内扱いになることを意味しますね。銀行はすべての国内振込に同じ手数料と基準を適用しなければならないので、おそらくすべて無料で、1 営業日で完了するでしょう。国際送金には SWIFT/IBAN システムがあり、通常追加費用がかかります。

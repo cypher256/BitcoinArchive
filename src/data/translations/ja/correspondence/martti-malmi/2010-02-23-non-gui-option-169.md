@@ -20,10 +20,17 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-22-non-gui-option-168"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
 
+<!-- quote: q1 -->
+<!-- tone-skip -->
 >> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけた：
 >>
 >> 1) GTKはディスプレイなしでプログラムを実行することをサポートしている：
@@ -34,6 +41,7 @@ translationStatus: complete
 >
 > Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
 > 戻り値を無視することができる。うまく動作しているようだ。
+<!-- /tone-skip -->
 
 うまく動作している。あといくつか作業したらアップロードする。
 

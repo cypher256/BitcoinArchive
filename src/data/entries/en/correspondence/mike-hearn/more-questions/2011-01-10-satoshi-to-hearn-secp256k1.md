@@ -22,8 +22,18 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
 ---
 
+<!-- quote: q1 -->
 > By the way, if you didn't see it already, there's a discussion on the security of secp256k1 on the forum:
 >
 > http://www.bitcoin.org/smf/index.php?topic=2699.0
@@ -32,6 +42,7 @@ secondarySources:
 
 Yes, it's him. He was supportive on the Cryptography list and ran one of the first nodes.
 
+<!-- quote: q2 -->
 > seems to think the curve is at higher risk of attack than random curves. I guess you chose secp256k1 for the mentioned performance improvement?
 
 I must admit, this project was 2 years of development before release, and I could only spend so much time on each of the many issues. I found guidance on the recommended size for SHA and RSA, but nothing on ECDSA which was relatively new. I took the recommended key size for RSA and converted to equivalent key size for ECDSA, but then increased it so the whole app could be said to be 256-bit security. I didn't find anything to recommend a curve type so I just... picked one. Hopefully there is enough key size to make up for any deficiency.

@@ -21,6 +21,11 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-15-bitcoinorg-drupal-users-203"
 ---
 
 Yes, we could give accounts to trusted translators. I haven't found a  
@@ -29,6 +34,7 @@ forced to create a new revision with every page change they make, and
 not be allowed to delete revisions. Xunie would be the first on the  
 list I'd give an account. :)
 
+<!-- quote: q1 -->
 > Is it possible for the translators (at least the more trusted ones) to
 > have user accounts on drupal so they can update their translated text
 > directly?  The user accounts on drupal appear to be pretty weak.  I

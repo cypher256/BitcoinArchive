@@ -26,30 +26,71 @@ secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q3"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q4"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q5"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q6"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+  - id: "q7"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
 ---
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > お元気でいることを願っている。ようやくすべての弁護士を説得し、GoogleのもとでApache 2ライセンスを使用してBitCoinJをリリースすることができた：
 >
 > まだ不完全で、特にブロックチェーンの分岐を適切に処理できていないが、残りの部分は順次実装していく。ドキュメントとコメントに多くの労力を費やしたので、現在のコードを理解・ビルドできなかった新しい層にBitCoinを開放できればと思っている。今後1〜2ヶ月で、完全なクライアントモード実装に必要な大きな欠落部分を仕上げる予定だ。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 素晴らしいニュースだ。クライアント要件のみのクリーンな書き直しでは多くの複雑さを省くことができるし、Java の開発者にも門戸を開くことになる。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > 忙しいところ申し訳ないが、いくつか質問に答えてもらえないだろうか。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 喜んで質問に答える。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q3 -->
+<!-- tone-skip -->
 > 完全なSPVの実装の一環として、プロトコルにgetmerklebranchメッセージを追加することを考えている。これはトランザクションハッシュを指定すると{blockhash, branch}のペアのセットを返すもので、
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 それは CMerkleTx だ。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q4 -->
+<!-- tone-skip -->
 > フルチェーンを保存せずにブロードキャストされたトランザクションをブロックに組み込まれる前に検証できるようにするものだ。このアプローチについてどう思うか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 理解できない。マークルブランチはトランザクションをブロックにリンクするが、それはブロックが Proof of Work を示す場合にのみ意味を持つ。まだ解かれていないブロックにリンクしても何も証明しない。
@@ -63,15 +104,21 @@ translationStatus: complete
 存在するすべてのトランザクションを知らない場合、2)をどうやって実現するか分からない。他のノードを信頼するしかないだろう。その信頼は複数のノードに分散させることができる。ノードは有効と認めるトランザクションのみをリレーする。接続しているすべてのノードからトランザクションの inv メッセージを受信した場合、それらのノードはそのトランザクションが有効であり、最初に見た支出であることを証明している。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q5 -->
+<!-- tone-skip -->
 > また、最近さまざまなトランザクションタイプの探求を考えている。例えばtestnetでIsStandard()チェックを削除するなどだ。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 非常に良いアイデアだ。-testnet では間違いなく許可すべきだ。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q6 -->
+<!-- tone-skip -->
 > 単純なコインの移動以外のトランザクションについて、あなたが事前に多くの思考を費やしたことは明らかだが、残念ながらそのいずれも論文やコード内に文書化されていない。エスクロー、マルチペイなどはいずれも興味深いが、スクリプト言語で何ができるかのアイデアリストをまとめてもらえないだろうか。
 >
 > 最後に、トランザクション置換を可能にするコードは無効化されているが、コメントにはその理由が書かれていない。これは単に攻撃対象領域・複雑さを減らすためか、それともより深い理由があるのか？
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 攻撃対象領域を減らすためだけだ。トランザクション手数料の引き上げには役立たない。トランザクションは nLockTime から有効になる。ある時点で有効でなくなるトランザクションは機能しない。一度有効になったトランザクションは、永久に有効でなければならない。
@@ -81,7 +128,10 @@ http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119<br>
 http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q7 -->
+<!-- tone-skip -->
 > シーケンス番号がトランザクション自体ではなくトランザクション入力のプロパティである理由も完全には理解できていない。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 コントラクトのためだ。記録されていないオープントランザクションは、nLockTime まで置換し続けることができる。複数の当事者からの支払いを含む場合がある。各入力の所有者が自分の入力に署名する。新しいバージョンを書くには、それぞれがより高いシーケンス番号に署名しなければならない（IsNewerThan を参照）。署名することにより、入力の所有者は「全員が資金を投入し、出力がこうであるなら、私は自分の資金を投入することに同意する」と言っている。SignatureHash には SIGHASH_SINGLE のような他のオプションもあり、これは「この 1 つの出力（つまり自分のもの）が望み通りであれば同意し、他の出力については気にしない」という意味だ。これが高い nSequenceNumber で書かれた場合、当事者はその 1 つの条件を除いて交渉から離脱できる。あるいは SIGHASH_NONE で署名して完全に離脱することもできる。

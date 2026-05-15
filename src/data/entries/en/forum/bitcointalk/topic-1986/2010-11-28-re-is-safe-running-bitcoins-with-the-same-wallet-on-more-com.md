@@ -13,8 +13,14 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/519/"
+quotes:
+  - id: "q1"
+    person: "Aleš Janda"
+    personSlug: "ale-janda"
+    sourceEntryId: "forum/bitcointalk/topic-1986/2010-11-28-ale-janda-msg25093"
 ---
 
+<!-- quote: q1 -->
 > Will it be synchronized automatically?
 
 Very much not.  Using multiple copies of wallet.dat is not recommended or supported, in fact all of Bitcoin is designed to defeat that.  Both copies will get screwed up.

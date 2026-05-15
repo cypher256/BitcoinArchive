@@ -23,10 +23,16 @@ relatedEntries:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-16-sni17-bitcoin-v0-1-released"
 ---
 
 On Sat, 17 Jan 2009, Satoshi Nakamoto wrote:
 [[various possible uses of Bitcoin et al]]
+<!-- quote: q1 -->
 > Once it gets bootstrapped, there are so many
 > applications if you could effortlessly pay a few cents to a
 > website as easily as dropping coins in a vending machine.

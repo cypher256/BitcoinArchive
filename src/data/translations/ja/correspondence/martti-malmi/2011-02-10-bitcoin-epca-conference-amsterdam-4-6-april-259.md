@@ -20,6 +20,11 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2011-02-07-bitcoin-epca-conference-amsterdam-4-6-april-258"
 ---
 
 <!-- speaker: Martti Malmi -->
@@ -33,6 +38,8 @@ Martti Malmi<br>
 Bitcoin プロジェクト開発者
 
 <!-- speaker: Douwe Lycklama -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > こんにちは。
 >
 > EPCAカンファレンスを代表してご連絡しています。Bitcoinについてもっと知りたいと考えています。Bitcoinは4月4-6日にアムステルダムで開催される次回カンファレンスの興味深いトピックになる可能性があります。
@@ -67,5 +74,6 @@ Bitcoin プロジェクト開発者
 > The Netherlands
 >
 >
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

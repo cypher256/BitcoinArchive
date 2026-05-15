@@ -24,15 +24,23 @@ secondarySources:
 relatedEntries:
   - "aftermath/2009-01-17-jonathan-thornburg-biography"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-16-sni17-bitcoin-v0-1-released"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
 2009年1月17日（土）、サトシ・ナカモトの投稿：
 [[ビットコインの様々な用途について]]
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 一度ブートストラップが始まれば、自動販売機に
 > コインを入れるのと同じくらい簡単にウェブサイトに
 > 数セントを支払えるなら、非常に多くの
 > 用途がある。
+<!-- /tone-skip -->
 
 <!-- speaker: Jonathan Thornburg -->
 現代世界では、かなり控えめな閾値を超える追跡不可能な国際金融取引を許可したいと思う主要政府は存在しない。（よく使われる決まり文句は「麻薬マネーの洗浄」「脱税」「テロ組織への資金提供」などだ。）この目的のため、電子金融取引は現在、様々な政府とその機関によって監視されており、最小規模のものを除いて、すべての取引に両端の人間の ID 要件が課されている。

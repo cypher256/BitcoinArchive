@@ -11,12 +11,23 @@ participants:
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 437. after msg3825."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "kiav"
+    personSlug: "kiav"
+    sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
+  - id: "q2"
+    person: "kiav"
+    personSlug: "kiav"
+    sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
 ---
 
+<!-- quote: q1 -->
 > Do I need to deinstall it before 0.3.2 installation?
 
 No, you don't.
 
+<!-- quote: q2 -->
 > What about my bitcoins I already generated? Do I need to backup them and restore after installation?
 
 No, you don't, but it's always good to make a backup.

@@ -14,6 +14,19 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/520/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "jgarzik"
+    personSlug: "jeff-garzik"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
+  - id: "q2"
+    person: "jgarzik"
+    personSlug: "jeff-garzik"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
+  - id: "q3"
+    person: "jgarzik"
+    personSlug: "jeff-garzik"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
 ---
 
 実際よりも、すべてが間違っていると想定する傾向があるようだね。
@@ -21,13 +34,19 @@ translationStatus: complete
 ブロックインデックスの書き込みは軽い作業だ。tx インデックスの構築は 1 ブロックあたりのランダムアクセスがはるかに多い。すべての prev txin の読み取りが遅い原因ではないかと疑っている。読み取りキャッシュが役立つだろう。DB がそれを行うのが最善だ。キャッシュメモリーの使用量の設定があるかもしれない。
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 1) bitcoinはプログラムの起動時に環境だけでなくデータベースを開き、プログラムのシャットダウン時にデータベースを閉じるべきです。
+<!-- /tone-skip -->
 <!-- /tone-skip -->
 
 すでにそうしている。CDB を参照してくれ。（例えば）CTxDB オブジェクトの寿命は、データベーストランザクションのサポートと、シャットダウン時にまだデータベースを使用しているものがあるかどうかを知るためだけだ。
 
 <!-- tone-skip -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > 加えて、Bitcoin はデータベースチェックポイントを強制し、ログから全トランザクションをメインデータベースに押し込む。
+<!-- /tone-skip -->
 <!-- /tone-skip -->
 
 そうしていたらはるかに遅くなるだろう。1分または 500 ブロックに 1回のみのはずだ：
@@ -45,7 +64,10 @@ translationStatus: complete
 ```
 
 <!-- tone-skip -->
+<!-- quote: q3 -->
+<!-- tone-skip -->
 > 2) 初回ブロックダウンロードでは、txn コミットはレコードごとではなく N レコードごとに 1回行うべきだ。N=1000 を提案する。
+<!-- /tone-skip -->
 <!-- /tone-skip -->
 
 トランザクションコミットはフラッシュを意味するのか？それは驚きだ。トランザクションでラップされたデータベース操作は、他のデータベース操作と同様にログに記録されると思う。多くのデータベースアプリケーションでは、ほぼすべての操作のペアをトランザクションでラップする必要がある。例えば、あるアカウントから別のアカウントへの送金（a を借方、b を貸方）などだ。すべてを自分でバッチ処理することが求められるとは想像できない。

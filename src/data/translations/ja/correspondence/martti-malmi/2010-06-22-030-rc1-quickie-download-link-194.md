@@ -20,16 +20,31 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 帯域幅が問題になるようなら、「0.3 almost ready」スレッドの私のリンクを削除してほしい。1〜2日の簡易共有のために sourceforge にアップロードしたくないのだ。バグがあればすぐに取り下げる可能性もある。Sourceforge には一度追加したファイルの削除を許可しないポリシーがあり、アップロードも面倒だ。リリースの準備ができたらファイルを削除する。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 了解です、監視しておきます。帯域幅は今のところ問題になっていません ― 月に最大 2 GB（0.5 ドル）程度です。その他のコストは月約 15 ドルです。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
+<!-- tone-skip -->
 > ところで、近いうちにウェブホストの費用やあなたの取引所サービスの支援などのための資金を、郵送の現金という形で確保できそうだ。受け取って、プロジェクトの会計係を務めてもらえるか？
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 それはいいですね、引き受けます。郵便で現金を送るのにはリスクがありますが、匿名の方法としてはおそらく最善でしょう。フォーラムで BTC の寄付を募ることもできますよ。

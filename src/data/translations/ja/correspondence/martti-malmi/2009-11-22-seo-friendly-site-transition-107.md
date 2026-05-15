@@ -21,6 +21,11 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-22-seo-friendly-site-transition-106"
 ---
 
 <!-- speaker: Martti Malmi -->
@@ -29,6 +34,8 @@ translationStatus: complete
 11月23日から 25日まで不在にします。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 検索エンジンが新しいサイトだと判断してサイト開始日とPRデータをリセットしないように、bitcoin.orgの継続性を保った移行が必要だ。GoogleはIPアドレスやサイトのコンテンツなど、一定数のプロパティの変更をサイト履歴を削除せずに許可している。安全を期すために、IPアドレスが変わるときはコンテンツを同じに保ち、その逆も同様にすべきだ。まだそれほどランクが蓄積されていなくても、サイトが後で人気になった場合、元の開始日が非常に重要になる。
 >
 > 手順：
@@ -40,5 +47,6 @@ translationStatus: complete
 > タイミング的にうまくいく。今すぐ新しいフォーラムに切り替えて、準備ができたら後からDrupalサイトをリリースできる。
 >
 > Drupalを一時的にdrupal.phpや/drupal/などに移動して、引き続き簡単にアクセスして作業できるようにする方法を調べてみる。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
