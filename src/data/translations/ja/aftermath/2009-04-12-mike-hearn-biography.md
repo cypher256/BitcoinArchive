@@ -42,7 +42,18 @@ relatedEntries:
 translationStatus: complete
 ---
 
-マイク・ハーンは、Google で Google Maps、Google Earth、Gmail のスパム対策システムなどのプロジェクトに従事したソフトウェアエンジニアである。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に直接連絡を取り、ビットコインの最初期の貢献者の一人となった。
+2009 年 4 月 12 日、Google のエンジニアだったマイク・ハーンは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)。その後 2 年間で技術的なメールが続いた —— スケーリング、簡易決済検証、長期的なマイニングの形。ハーンはサトシが送信した最後の私的メールの一つを受け取った相手である:
+
+<!-- speaker: Satoshi Nakamoto -->
+> 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ。」
+
+それから 5 年近く経った 2016 年 1 月 14 日、ハーンは Medium に[「The resolution of the Bitcoin experiment」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)を公開した。冒頭は 1 行だった:
+
+> 「ビットコインは失敗した」
+
+ハーンは保有する全ビットコインを売却、プロジェクトから離脱、エンタープライズ向けブロックチェーンコンソーシアム R3 に参加して分散台帳プラットフォーム Corda の開発を共同主導した。[2017 年 8 月にサトシとのメールを公開](/BitcoinArchive/ja/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/)、これはサトシの技術的思考を記録した最大級の一次資料群となった。2024 年 2 月、[COPA 対ライト裁判で証言](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)。
+
+ハーンは Google で Google Maps、Google Earth、Gmail のスパム対策システムに従事していた。[BitcoinJ](https://github.com/bitcoinj/bitcoinj) —— プロトコルの Java 実装 —— を開発し、これは元の C++ クライアントに対する最初の主要な代替実装、そして多くの Android ビットコインウォレットの基盤となった。
 
 ```mermaid
 timeline
@@ -63,21 +74,10 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
 ```
 
-### サトシとの最初の接触
-2009年4月、ビットコインのローンチからわずか数ヶ月後、ハーンはホワイトペーパーを読んだ後にサトシ・ナカモトにメールを送った。これが 2011年4月まで続くやり取りの始まりとなった。ハーンは、初期のサイファーパンクサークル外からビットコインに本格的な技術的関心を寄せた最初期の人物の一人だった。
-
 ### サトシとのメール
-2009年から 2011年4月にかけて、ハーンとサトシはビットコインの技術的将来について一連のメールを交わした。サトシは、システムのスケーリング方法、簡易決済検証（SPV）クライアントの動作、CPU から専門的なハードウェアへのマイニングの進化について論じた。[最後のやり取りの一つ](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)（2011年4月23日）で、サトシはこう書いた。
 
-> 「他のことに取り組むことにした。[ギャビン](/BitcoinArchive/ja/participants/gavin-andresen/)たちに任せれば、安心だ」
-
-これはサトシからの最後のメールの一つとして知られている。
-
-### BitcoinJ
-ハーンは BitcoinJ、ビットコインプロトコルの Java 実装を開発した。最初の主要な代替実装であり、Android のビットコインウォレットやその他のアプリケーションで広く使用されるようになった。BitcoinJ は、ビットコインがオリジナルの C++クライアントから独立して実装可能であることを実証した。
-
-### サトシとのメール公開
-[2017年8月、ハーンのサトシとのメールのやり取りが公開された](/BitcoinArchive/ja/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/)。メールは最初に BitcoinTalk で共有され、その後ハーンの個人ウェブサイトに掲載された。これらのメールは、サトシの長期的な技術ビジョンと、プロジェクトを去る際の心境を理解するための最も重要な一次資料の一つとなった。
+2009 年 4 月から 2011 年 4 月にかけて、ハーンとサトシは技術的なメールを継続的に交わした。話題は、システムのスケーリング、簡易決済検証（SPV）クライアントの動作、CPU から専門ハードウェアへのマイニングの進化など。ハーンは初期のサイファーパンクサークル外からビットコインに本格的な技術的関心を寄せた最初期の人物の一人であり、公開された往復メールは、サトシが公の投稿には残さなかった技術的思考を記録している。
 
 ### ビットコインからの離脱
-2016年1月14日、ハーンは[「The resolution of the Bitcoin experiment」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)と題するブログ記事を Medium に公開し、ビットコインは「失敗した」と記した。プロジェクトからの離脱を表明し、保有するビットコインをすべて売却したことを明かした。ガバナンスの問題とスケーリング解決策に関する合意形成の困難さを理由に挙げた。その後、エンタープライズ向けブロックチェーンコンソーシアム R3 に参加し、分散台帳プラットフォーム Corda の開発を共同主導した。
+
+2016 年 1 月の「ビットコインは失敗した」 エッセイは、主に二つの不満を挙げていた。1 メガバイトのブロックサイズ上限引き上げに開発コミュニティが合意できなかったこと、そして本来分散型であるべきシステム内に「システム上重要な機関」 が現れたとハーンが評したこと。ハーンは公開と同時に保有 BTC を売却した。

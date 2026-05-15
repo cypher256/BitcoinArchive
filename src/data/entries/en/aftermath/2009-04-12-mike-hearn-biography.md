@@ -41,7 +41,18 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
 ---
 
-Mike Hearn is a software engineer who worked at Google on projects including Google Maps, Google Earth, and Gmail's anti-spam systems. He became one of the earliest contributors to Bitcoin after reading the [white paper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and contacting [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) directly.
+On April 12, 2009, a Google engineer named Mike Hearn read the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and [emailed Satoshi Nakamoto](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/). Over the next two years they exchanged sustained technical correspondence — scaling, simplified payment verification, the long-run shape of mining. Hearn received one of the last private emails Satoshi ever sent:
+
+<!-- speaker: Satoshi Nakamoto -->
+> "I've moved on to other things. It's in good hands with Gavin and everyone."
+
+Almost five years later, on January 14, 2016, Hearn published ["The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) on Medium. It opened with three words:
+
+> "Bitcoin has failed."
+
+He sold all his bitcoins, left the project, and joined R3, an enterprise-blockchain consortium where he co-led development of the Corda distributed ledger. In [August 2017 he made his Satoshi correspondence public](/BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/) — one of the largest documented bodies of Satoshi's technical thinking. In February 2024 he testified in the [COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/).
+
+Hearn worked at Google on Maps, Earth, and Gmail's anti-spam systems. He developed [BitcoinJ](https://github.com/bitcoinj/bitcoinj), a Java implementation of the protocol — the first major alternative to the original C++ client and the basis for many Android Bitcoin wallets.
 
 ```mermaid
 timeline
@@ -62,21 +73,10 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
 ```
 
-### First Contact with Satoshi
-In April 2009, just months after Bitcoin's launch, Hearn emailed Satoshi Nakamoto after reading the Bitcoin white paper. This began a correspondence that would continue through April 2011. Hearn was among the very first people outside the initial cypherpunk circle to take a serious technical interest in Bitcoin.
-
 ### Correspondence with Satoshi
-Between 2009 and April 2011, Hearn and Satoshi exchanged a series of emails covering Bitcoin's technical future. Satoshi discussed how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to specialized hardware. In one of the [final exchanges](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) (April 23, 2011), Satoshi wrote:
 
-> "I've moved on to other things. It's in good hands with [Gavin](/BitcoinArchive/participants/gavin-andresen/) and everyone."
-
-This was among the last known private communications from Satoshi.
-
-### BitcoinJ
-Hearn developed BitcoinJ, a Java implementation of the Bitcoin protocol. It was the first major alternative implementation and became widely used in Android Bitcoin wallets and other applications. BitcoinJ demonstrated that Bitcoin could be implemented independently from the original C++ client.
-
-### Publication of Satoshi Emails
-In [August 2017, Hearn's email correspondence with Satoshi was made public](/BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/). The emails were first shared on BitcoinTalk and subsequently published on Hearn's personal website. These emails became one of the most important primary sources for understanding Satoshi's long-term technical vision and his state of mind as he left the project.
+Between April 2009 and April 2011, Hearn and Satoshi exchanged sustained technical email. Topics included how the system could scale, how simplified payment verification (SPV) clients would work, and how Satoshi envisioned the evolution of mining from CPUs to specialized hardware. Hearn was among the very first people outside the initial cypherpunk circle to take a serious technical interest in Bitcoin, and the published archive of his correspondence with Satoshi documents the technical thinking Satoshi never spelled out in public posts.
 
 ### Departure from Bitcoin
-On January 14, 2016, Hearn published a blog post titled ["The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) on Medium, in which he wrote that Bitcoin "has failed." He announced he was leaving the project and had sold all his bitcoins, citing governance issues and the inability to reach consensus on scaling solutions. He subsequently joined R3, a blockchain consortium focused on enterprise applications, where he co-led development of the Corda distributed ledger platform.
+
+The January 2016 "Bitcoin has failed" essay cited two principal grievances: the inability of the development community to reach consensus on raising the 1-megabyte block size limit, and what Hearn described as systemically important institutions emerging within what was supposed to be a decentralised system. He sold his coins concurrent with publication.
