@@ -105,7 +105,7 @@ timeline
 [最後の公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2010年12月12日：
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「バトンを渡す予定だ」
+> 「あといくつかのことを行ったら、バトンを渡す予定だ。」
 
 7 日後、[アンドレセンがプロジェクト管理を引き受けることを公的に告知した](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)。
 
@@ -117,7 +117,7 @@ timeline
 その 3 日後、2011年4月26日、[最後の既知のメール —— アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)：
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「私のことを謎めいた影の人物として話し続けるのはやめてほしい」
+> 「私を謎の人物として語らないでほしい。」
 
 以降、サトシからの確認された通信は記録されていない。
 

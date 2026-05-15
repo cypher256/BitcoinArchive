@@ -85,7 +85,7 @@ timeline
 [2010 年 12 月 3 日](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)、サトシが[第一線から退き始めていた](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)時期、マルミはビットコイン開発・管理を引き継ぐべき人物について尋ねた。サトシの返答は明確だった:
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「ギャビン（・アンドレセン）であるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで、技術的にも私よりずっと Linux に精通している」
+> 「ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルだ。Linuxに関しては、技術的に私よりずっと上だ。」
 
 このメールのやり取りが、[2010 年 12 月 12 日のギャビンへの SVN 正式引き継ぎ](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)と、[2010 年 12 月 19 日のギャビンによるプロジェクト管理引き受けの公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)の基盤となった。
 

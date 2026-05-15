@@ -106,7 +106,7 @@ timeline
 3 日後、[最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)は CAlert キーの正式な譲渡を伴っていた:
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「私のことを謎めいた影の人物として話し続けるのはやめてほしい」
+> 「私を謎の人物として語らないでほしい。」
 
 2012 年 9 月に Bitcoin Foundation が設立されると、アンドレセンはチーフサイエンティストに就任した。
 

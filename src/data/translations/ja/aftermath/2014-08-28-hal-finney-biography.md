@@ -64,7 +64,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Hal Finney -->
-> 「体が外側で死んでいく間も、内側では生き続けるんだ。」
+> 「身体が外側で死につつあっても、内側では生き続けていられるんだ。」
 
 ハル・フィニーは 2009 年 10 月、ALS と診断された 2 か月後にこう書いた — その同じ年、彼はサトシ以外で最初にビットコインを動かした人間となっていた。2009 年 1 月 11 日、二語のツイート[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)は、ソフトウェア稼働を公に言及した最初の記録。翌日、サトシは彼に[ブロック 170 で 10 BTC を送信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金。彼はそれから 5 年間、進行する麻痺の中でコードを書き続けた。最終的にはアイトラッキングソフトウェアで、以前の 1/50 程度の速度で。[2014 年 8 月 28 日に逝去](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。アルコー延命財団が 128 番目の患者として冷凍保存した。
 
