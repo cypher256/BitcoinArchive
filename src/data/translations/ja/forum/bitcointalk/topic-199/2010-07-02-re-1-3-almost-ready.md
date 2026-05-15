@@ -19,6 +19,7 @@ quotes:
     person: "dkaparis"
     personSlug: "dkaparis"
     date: "2010-06-27T13:02:25.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-199/2010-06-27-dkaparis-msg1842"
 ---
 
 <!-- quote: q1 -->

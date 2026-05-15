@@ -16,6 +16,7 @@ quotes:
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-08-15T21:10:33.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9534"
 translationStatus: complete
 ---
 

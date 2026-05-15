@@ -89,7 +89,9 @@ function formatAttribution(quote, locale, base) {
 
   const entryPath = quote.sourceEntryId
     ? `${base}${locale === 'ja' ? 'ja/' : ''}entries/${quote.sourceEntryId}/`
-    : null;
+    : (quote.personSlug
+        ? `${base}${locale === 'ja' ? 'ja/' : ''}participants/${quote.personSlug}/`
+        : null);
 
   let text;
   if (locale === 'ja') {

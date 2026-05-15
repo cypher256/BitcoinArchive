@@ -19,6 +19,7 @@ quotes:
     person: "tcatm"
     personSlug: "tcatm"
     date: "2010-07-31T01:12:38.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-648/2010-07-31-tcatm-msg6797"
 ---
 
 AMD では 2倍速で、Intel では半分の速度ということか？

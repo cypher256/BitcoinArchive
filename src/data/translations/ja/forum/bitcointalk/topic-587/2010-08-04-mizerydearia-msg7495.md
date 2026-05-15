@@ -16,6 +16,7 @@ quotes:
     person: "ArtForz"
     personSlug: "artforz"
     date: "2010-08-04T14:21:22.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-587/2010-08-04-artforz-msg7482"
 translationStatus: complete
 ---
 

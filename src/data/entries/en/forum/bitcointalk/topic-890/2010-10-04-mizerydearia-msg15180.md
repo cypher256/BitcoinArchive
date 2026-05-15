@@ -16,6 +16,7 @@ quotes:
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-10-04T05:23:40.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-890/2010-10-04-biomike-msg15194"
 ---
 
 I'll offer 5btc contribution for this project.  I know it's not much (yet!), but perhaps it will spark others to donate also.  Which address can I send to?

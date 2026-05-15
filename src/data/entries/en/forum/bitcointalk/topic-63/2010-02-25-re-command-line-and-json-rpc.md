@@ -18,6 +18,7 @@ quotes:
     person: "sirius-m"
     personSlug: "martti-malmi"
     date: "2010-02-25T07:32:17.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-63/2010-02-25-sirius-msg538"
 ---
 
 OK, I made a build target bitcoind that only links wxBase and does not link GTK.  Version 0.2.7 on SVN.

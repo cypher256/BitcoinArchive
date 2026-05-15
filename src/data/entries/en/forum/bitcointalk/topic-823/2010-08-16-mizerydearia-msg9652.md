@@ -16,6 +16,7 @@ quotes:
     person: "kencausey"
     personSlug: "kencausey"
     date: "2010-08-15T23:59:36.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-kencausey-msg9627"
 ---
 
 <!-- quote: q1 -->

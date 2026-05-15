@@ -19,6 +19,7 @@ quotes:
     person: "tcatm"
     personSlug: "tcatm"
     date: "2010-08-13T15:53:07.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-648/2010-08-14-tcatm-msg9147"
 ---
 
 まだであれば、thash のアラインを試してみてほしい。効果があるかもしれない。損にはならない。

@@ -18,6 +18,7 @@ quotes:
     person: "nelisky"
     personSlug: "nelisky"
     date: "2010-08-26T16:21:09.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-921/2010-08-27-nelisky-msg11346"
 ---
 
 I doubt there's an mmap(2) on Windows.  I'd rather call an existing file copy function than make and test my own.

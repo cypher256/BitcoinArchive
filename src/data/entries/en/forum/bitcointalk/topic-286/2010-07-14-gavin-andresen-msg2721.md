@@ -16,11 +16,13 @@ quotes:
     person: "spaceshaker"
     personSlug: "spaceshaker"
     date: "2010-07-13T16:52:00.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-286/2010-07-14-spaceshaker-msg2714"
   - id: "q2"
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-07-13T15:42:32.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-286/2010-07-14-gavin-andresen-msg2696"
 ---
 
 <!-- quote: q1 -->

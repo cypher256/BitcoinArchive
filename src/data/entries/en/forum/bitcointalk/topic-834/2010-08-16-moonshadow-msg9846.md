@@ -16,6 +16,7 @@ quotes:
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-08-16T23:25:57.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-834/2010-08-16-newlibertystandard-msg9845"
   - id: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"

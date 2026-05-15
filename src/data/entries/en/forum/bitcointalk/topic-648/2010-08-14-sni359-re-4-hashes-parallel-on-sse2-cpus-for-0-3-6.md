@@ -18,6 +18,7 @@ quotes:
     person: "tcatm"
     personSlug: "tcatm"
     date: "2010-08-13T15:53:07.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-648/2010-08-14-tcatm-msg9147"
 ---
 
 If you haven't already, try aligning thash.  It might matter.  Couldn't hurt.

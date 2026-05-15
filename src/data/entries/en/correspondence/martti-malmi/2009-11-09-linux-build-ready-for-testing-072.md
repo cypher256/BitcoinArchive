@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-070"
 ---
 
 You got a lot done with the Linux build, autostart, minimize to tray, 

@@ -19,6 +19,7 @@ quotes:
     person: "gridecon"
     personSlug: "gridecon"
     date: "2010-08-06T07:48:00.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-721/2010-08-06-gridecon-msg7889"
 ---
 
 これは金と金の採掘と同じ状況だ。金の採掘の限界費用は金の価格付近にとどまる傾向がある。金の採掘は無駄だが、その無駄は交換手段として金が利用可能であることの有用性よりもはるかに小さい。

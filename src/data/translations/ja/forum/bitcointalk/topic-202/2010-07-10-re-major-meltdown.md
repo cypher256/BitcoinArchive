@@ -19,6 +19,7 @@ quotes:
     person: "llama"
     personSlug: "llama"
     date: "2010-07-01T13:21:47.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-202/2010-07-01-llama-msg1920"
 ---
 
 <!-- quote: q1 -->

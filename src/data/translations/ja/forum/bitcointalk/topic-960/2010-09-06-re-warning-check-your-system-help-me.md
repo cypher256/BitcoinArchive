@@ -19,10 +19,12 @@ quotes:
     person: "Insti"
     personSlug: "insti"
     date: "2010-09-06T03:51:37.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-960/2010-09-06-insti-msg12101"
   - id: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-09-05T14:36:20.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-960/2010-09-05-re-warning-check-your-system-help-me"
 ---
 
 <!-- quote: q1 -->

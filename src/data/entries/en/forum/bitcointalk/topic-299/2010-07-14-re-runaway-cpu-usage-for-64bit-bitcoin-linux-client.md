@@ -18,6 +18,7 @@ quotes:
     person: "knightmb"
     personSlug: "knightmb"
     date: "2010-07-12T13:39:13.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-299/2010-07-12-knightmb-msg2409"
 ---
 
 After it initially tries incorrectly to set itself to the lowest priority, the generate thread only changes its priority again temporarily when it finds a block.  When you've found a block, you should want it to hurry up and broadcast it as soon a possible before someone else finds one and makes yours invalid.  The generate thread only changes to higher priority for less than a second every few days.

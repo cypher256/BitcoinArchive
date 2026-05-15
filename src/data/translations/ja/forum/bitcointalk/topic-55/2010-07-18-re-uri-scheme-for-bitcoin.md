@@ -19,10 +19,12 @@ quotes:
     person: "lachesis"
     personSlug: "lachesis"
     date: "2010-06-15T21:14:05.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-55/2010-06-16-lachesis-msg1597"
   - id: "q2"
     person: "sirius-m"
     personSlug: "martti-malmi"
     date: "2010-06-15T23:26:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-55/2010-06-16-sirius-msg1598"
 ---
 
 <!-- quote: q1 -->

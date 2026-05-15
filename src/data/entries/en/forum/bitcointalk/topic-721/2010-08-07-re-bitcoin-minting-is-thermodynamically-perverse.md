@@ -18,6 +18,7 @@ quotes:
     person: "gridecon"
     personSlug: "gridecon"
     date: "2010-08-06T07:48:00.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-721/2010-08-06-gridecon-msg7889"
 ---
 
 It's the same situation as gold and gold mining.  The marginal cost of gold mining tends to stay near the price of gold.  Gold mining is a waste, but that waste is far less than the utility of having gold available as a medium of exchange.

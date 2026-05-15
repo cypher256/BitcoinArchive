@@ -16,14 +16,17 @@ quotes:
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-02-21T11:41:50.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
   - id: "q2"
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-02-21T11:41:50.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
   - id: "q3"
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-02-21T11:41:50.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
 translationStatus: complete
 ---
 

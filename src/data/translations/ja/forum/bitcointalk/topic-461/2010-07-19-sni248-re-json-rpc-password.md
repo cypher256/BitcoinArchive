@@ -19,6 +19,7 @@ quotes:
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-07-19T03:02:39.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-461/2010-07-19-gavin-andresen-msg4215"
 ---
 
 ~/.bitcoin ディレクトリに設定ファイルを置くということだな、それは良さそうだ。「パスワードが設定されていない」の警告で、ファイルの場所と何をすべきかを伝えることができる。

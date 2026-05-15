@@ -16,6 +16,7 @@ quotes:
     person: "Bitcoiner"
     personSlug: "bitcoiner"
     date: "2010-07-27T02:01:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-571/2010-07-27-bitcoiner-msg5983"
 ---
 
 <!-- quote: q1 -->

@@ -17,6 +17,7 @@ quotes:
   - id: "q1"
     person: "madhatter2"
     date: "2009-12-11T21:34:21.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-12/2009-12-12-the-madhatter-msg51"
 ---
 
 <!-- quote: q1 -->

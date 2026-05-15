@@ -17,11 +17,13 @@ quotes:
     person: "sirius-m"
     personSlug: "martti-malmi"
     date: "2010-02-02T03:34:08.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-34/2010-02-02-sirius-msg203"
   - id: "q2"
     person: "BitcoinFX"
     personSlug: "bitcoinfx"
     date: "2010-02-02T00:00:20.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-34/2010-02-02-bitcoinfx-msg202"
 ---
 
 <!-- quote: q1 -->

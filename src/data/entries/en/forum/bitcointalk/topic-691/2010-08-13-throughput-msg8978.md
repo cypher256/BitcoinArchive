@@ -16,15 +16,18 @@ quotes:
     person: "aceat64"
     personSlug: "aceat64"
     date: "2010-08-12T08:02:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-691/2010-08-12-aceat64-msg8906"
   - id: "q2"
     person: "throughput"
     personSlug: "throughput"
     date: "2010-08-12T06:28:43.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-691/2010-08-12-throughput-msg8897"
   - id: "q3"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-08-12T12:34:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-691/2010-08-12-re-bitcoin-watchdog-service"
 ---
 
 <!-- quote: q1 -->

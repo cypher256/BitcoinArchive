@@ -16,6 +16,7 @@ quotes:
     person: "Laszlo Hanyecz"
     personSlug: "laszlo-hanyecz"
     date: "2010-05-11T04:13:07.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-43/2010-05-11-laszlo-msg1112"
 ---
 
 <!-- quote: q1 -->

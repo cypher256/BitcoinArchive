@@ -17,6 +17,7 @@ quotes:
     person: "lachesis"
     personSlug: "lachesis"
     date: "2010-07-15T14:57:19.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-393/2010-07-15-lachesis-msg3329"
 ---
 
 <!-- quote: q1 -->

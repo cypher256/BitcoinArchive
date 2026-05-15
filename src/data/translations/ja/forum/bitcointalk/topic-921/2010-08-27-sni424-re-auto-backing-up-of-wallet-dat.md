@@ -19,6 +19,7 @@ quotes:
     person: "nelisky"
     personSlug: "nelisky"
     date: "2010-08-26T16:21:09.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-921/2010-08-27-nelisky-msg11346"
 ---
 
 Windows に mmap(2)があるとは思えない。自作のものを作ってテストするよりも、既存のファイルコピー関数を呼び出す方が良い。

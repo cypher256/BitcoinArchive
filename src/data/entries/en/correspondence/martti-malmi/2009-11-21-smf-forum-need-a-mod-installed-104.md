@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-101"
 ---
 
 I've done a Joomla site for a customer, and I must say I like Drupal  

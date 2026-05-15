@@ -17,6 +17,7 @@ quotes:
     person: "mkrogh"
     personSlug: "mkrogh"
     date: "2010-08-16T11:54:47.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-834/2010-08-16-mkrogh-msg9822"
 ---
 <!-- quote: q1 -->
 <!-- tone-skip -->

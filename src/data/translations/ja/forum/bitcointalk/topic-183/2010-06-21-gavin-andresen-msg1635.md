@@ -16,6 +16,7 @@ quotes:
     person: "virtualcoin"
     personSlug: "virtualcoin"
     date: "2010-06-21T09:55:13.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-183/2010-06-21-virtualcoin-msg1634"
 translationStatus: complete
 ---
 

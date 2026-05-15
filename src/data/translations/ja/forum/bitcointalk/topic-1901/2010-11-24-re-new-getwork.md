@@ -19,10 +19,12 @@ quotes:
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-11-23T19:47:42.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1901/2010-11-24-jgarzik-msg24008"
   - id: "q2"
     person: "DiabloD3"
     personSlug: "diablod3"
     date: "2010-11-24T02:31:11.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1901/2010-11-24-diablod3-msg24050"
 ---
 
 <!-- quote: q1 -->

@@ -18,6 +18,7 @@ quotes:
     person: "Ground Loop"
     personSlug: "ground-loop"
     date: "2010-08-18T14:14:26.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-18-ground-loop-msg10167"
   - id: "q2"
     person: "nelisky"
     personSlug: "nelisky"

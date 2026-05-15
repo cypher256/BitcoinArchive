@@ -28,6 +28,7 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-250"
 ---
 
 <!-- quote: q1 -->

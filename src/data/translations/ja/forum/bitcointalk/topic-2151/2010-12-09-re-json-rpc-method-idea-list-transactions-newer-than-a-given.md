@@ -19,14 +19,17 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-12-08T13:36:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-sni525-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
   - id: "q2"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-12-08T14:07:22.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-jgarzik-msg28301"
   - id: "q3"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-12-08T13:36:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-sni525-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
 ---
 
 所定の minconf レベルでの通常のリスクの話をしているのではなく、この方法で使用した場合の listtransactions の追加的な落とし穴について話している。

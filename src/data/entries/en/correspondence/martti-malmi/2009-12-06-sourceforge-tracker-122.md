@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
 ---
 
 I added the sourceforge tracker to bitcoin.sourceforge.net.  The 

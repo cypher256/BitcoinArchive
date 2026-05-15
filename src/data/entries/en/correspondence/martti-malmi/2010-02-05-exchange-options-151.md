@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-05-exchange-options-150"
 ---
 
 Maybe the current difficulty of buying LR is already the limit of how 

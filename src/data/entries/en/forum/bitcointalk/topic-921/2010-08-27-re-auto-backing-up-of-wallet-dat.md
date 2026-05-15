@@ -18,6 +18,7 @@ quotes:
     person: "nelisky"
     personSlug: "nelisky"
     date: "2010-08-25T16:21:57.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-921/2010-08-26-nelisky-msg11232"
 ---
 
 If you read it into memory and write it out, it could fail in tight memory situations. 

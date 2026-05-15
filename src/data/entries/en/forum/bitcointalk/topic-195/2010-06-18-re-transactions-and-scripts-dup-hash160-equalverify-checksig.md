@@ -18,10 +18,12 @@ quotes:
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-06-17T10:58:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-195/2010-06-17-gavin-andresen-msg1613"
   - id: "q2"
     person: "Laszlo Hanyecz"
     personSlug: "laszlo-hanyecz"
     date: "2010-06-17T09:50:31.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-195/2010-06-17-laszlo-msg1612"
 ---
 
 A second version would be a massive development and maintenance hassle for me.  It's hard enough maintaining backward compatibility while upgrading the network without a second version locking things in.  If the second version screwed up, the user experience would reflect badly on both, although it would at least reinforce to users the importance of staying with the official version.  If someone was getting ready to fork a second version, I would have to air a lot of disclaimers about the risks of using a minority version.  This is a design where the majority version wins if there's any disagreement, and that can be pretty ugly for the minority version and I'd rather not go into it, and I don't have to as long as there's only one version.

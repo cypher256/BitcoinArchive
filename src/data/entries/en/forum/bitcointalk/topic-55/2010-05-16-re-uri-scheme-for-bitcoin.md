@@ -18,10 +18,12 @@ quotes:
     person: "Karmicads"
     personSlug: "karmicads"
     date: "2010-04-30T21:06:53.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-55/2010-05-01-karmicads-msg1038"
   - id: "q2"
     person: "DataWraith"
     personSlug: "datawraith"
     date: "2010-05-02T02:13:09.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-55/2010-05-02-datawraith-msg1045"
 ---
 
 <!-- quote: q1 -->

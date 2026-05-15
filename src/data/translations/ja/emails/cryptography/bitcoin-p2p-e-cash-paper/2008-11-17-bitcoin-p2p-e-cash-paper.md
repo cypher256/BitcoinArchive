@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "James A. Donald"
     personSlug: "james-donald"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
 relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"

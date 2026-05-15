@@ -16,6 +16,7 @@ quotes:
     person: "Legion"
     personSlug: "legion"
     date: "2010-02-26T06:44:40.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-43/2010-02-26-legion-msg549"
 translationStatus: complete
 ---
 

@@ -19,6 +19,7 @@ quotes:
     person: "Cdecker"
     personSlug: "cdecker"
     date: "2010-02-26T18:24:07.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-64/2010-02-27-cdecker-msg565"
 ---
 
 <!-- quote: q1 -->

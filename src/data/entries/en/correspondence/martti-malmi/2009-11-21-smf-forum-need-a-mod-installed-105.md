@@ -24,9 +24,11 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-104"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-104"
 ---
 
 I'll go ahead with setting up Drupal then.

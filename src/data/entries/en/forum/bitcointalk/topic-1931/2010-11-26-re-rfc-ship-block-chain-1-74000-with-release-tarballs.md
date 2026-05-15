@@ -18,10 +18,12 @@ quotes:
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-11-25T17:07:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-26-jgarzik-msg24522"
   - id: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-11-25T08:51:39.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-25-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
 ---
 
 I tested it on a slow 7 year old drive, where bandwidth and CPU were clearly not the bottleneck.  Initial download took 1 hour 20 minutes.

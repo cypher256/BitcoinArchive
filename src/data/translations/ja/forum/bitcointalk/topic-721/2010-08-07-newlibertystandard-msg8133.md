@@ -16,6 +16,7 @@ quotes:
     person: "Red"
     personSlug: "red"
     date: "2010-08-07T18:48:01.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-721/2010-08-07-red-msg8130"
   - id: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"

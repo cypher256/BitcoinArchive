@@ -18,14 +18,17 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-12-08T13:36:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-sni525-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
   - id: "q2"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-12-08T14:07:22.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-jgarzik-msg28301"
   - id: "q3"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-12-08T13:36:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-sni525-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
 ---
 
 I'm not talking about the normal risk for a given minconf level, I'm talking about additional pitfalls from listtransactions when used this way.

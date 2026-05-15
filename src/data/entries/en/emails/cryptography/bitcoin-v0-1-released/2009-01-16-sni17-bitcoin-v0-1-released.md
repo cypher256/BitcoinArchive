@@ -27,6 +27,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     parent: "q1"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 ---
 
 <!-- quote: q1 -->

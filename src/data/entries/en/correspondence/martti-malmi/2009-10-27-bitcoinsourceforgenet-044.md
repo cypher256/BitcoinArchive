@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-043"
   - id: "q2"
     person: "Eugen Leitl"
     personSlug: "eugen-leitl"

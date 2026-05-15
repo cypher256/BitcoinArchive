@@ -17,6 +17,7 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2009-12-09T09:45:10.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-12/2009-12-09-satoshi-msg41"
 ---
 
 最近の P2P ソフトウェアはほとんどがデフォルトで UPnP を試行する。もちろん、（通常は）オプションで無効にできる。

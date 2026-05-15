@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "James A. Donald"
     personSlug: "james-donald"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
 ---
 
 <!-- speaker: James A. Donald -->

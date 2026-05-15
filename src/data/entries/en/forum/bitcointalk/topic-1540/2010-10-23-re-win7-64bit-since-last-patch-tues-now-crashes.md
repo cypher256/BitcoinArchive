@@ -18,6 +18,7 @@ quotes:
     person: "Odin"
     personSlug: "odin"
     date: "2010-10-22T12:24:38.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1540/2010-10-22-win7-64bit-since-last-patch-tues-now-crashes"
 ---
 
 <!-- quote: q1 -->

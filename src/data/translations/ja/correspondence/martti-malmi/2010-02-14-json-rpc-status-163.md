@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-14-exchange-options-162"
 ---
 
 <!-- speaker: Martti Malmi -->

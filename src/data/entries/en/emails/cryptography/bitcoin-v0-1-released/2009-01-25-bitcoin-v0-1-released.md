@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Hal Finney"
     personSlug: "hal-finney"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-finney"
 ---
 
 <!-- quote: q1 -->

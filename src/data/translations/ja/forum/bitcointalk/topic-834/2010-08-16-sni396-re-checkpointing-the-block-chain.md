@@ -19,6 +19,7 @@ quotes:
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-08-16T13:42:28.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-834/2010-08-16-newlibertystandard-msg9839"
 ---
 
 <!-- quote: q1 -->

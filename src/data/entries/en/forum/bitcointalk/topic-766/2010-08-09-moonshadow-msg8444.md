@@ -15,6 +15,7 @@ quotes:
   - id: "q1"
     person: "yore"
     date: "2010-08-09T21:32:31.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-766/2010-08-09-tilka-msg8432"
 ---
 
 <!-- quote: q1 -->

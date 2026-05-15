@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-15-json-rpc-status-164"
 ---
 
 <!-- quote: q1 -->

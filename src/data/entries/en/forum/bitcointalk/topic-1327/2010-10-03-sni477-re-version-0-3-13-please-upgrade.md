@@ -18,14 +18,17 @@ quotes:
     person: "theymos"
     personSlug: "michael-marquardt"
     date: "2010-10-03T11:09:51.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-theymos-msg15118"
   - id: "q2"
     person: "theymos"
     personSlug: "michael-marquardt"
     date: "2010-10-03T11:09:51.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-theymos-msg15118"
   - id: "q3"
     person: "tcatm"
     personSlug: "tcatm"
     date: "2010-10-03T11:10:47.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-tcatm-msg15119"
 ---
 
 <!-- quote: q1 -->

@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-17-bitcoin-hosting-208"
 ---
 
 Ok, I won't switch it. Donations in Bitcoin are helpful and can be  

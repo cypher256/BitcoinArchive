@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

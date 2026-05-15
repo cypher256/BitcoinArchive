@@ -19,6 +19,7 @@ quotes:
     person: "Vasiliev"
     personSlug: "vasiliev"
     date: "2010-06-25T14:50:15.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-84/2010-06-25-vasiliev-msg1785"
 ---
 
 全員が同じ IRC サーバーとチャネルに接続して、互いを見つけられるようにする必要がある。

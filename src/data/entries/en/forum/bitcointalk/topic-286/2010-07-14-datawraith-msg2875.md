@@ -16,6 +16,7 @@ quotes:
     person: "TopSoil"
     personSlug: "topsoil"
     date: "2010-07-14T06:59:18.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-286/2010-07-14-topsoil-msg2859"
 ---
 
 <!-- quote: q1 -->

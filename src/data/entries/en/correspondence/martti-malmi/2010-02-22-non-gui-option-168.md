@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-17-non-gui-option-167"
 ---
 
 <!-- quote: q1 -->

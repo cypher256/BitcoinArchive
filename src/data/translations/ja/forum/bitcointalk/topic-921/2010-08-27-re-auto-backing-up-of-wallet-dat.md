@@ -19,6 +19,7 @@ quotes:
     person: "nelisky"
     personSlug: "nelisky"
     date: "2010-08-25T16:21:57.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-921/2010-08-26-nelisky-msg11232"
 ---
 
 メモリーに読み込んで書き出す方法だと、メモリーが逼迫した状況で失敗する可能性がある。

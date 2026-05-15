@@ -19,10 +19,12 @@ quotes:
     person: "tcatm"
     personSlug: "tcatm"
     date: "2010-08-15T15:43:39.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-tcatm-msg9617"
   - id: "q2"
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-08-15T16:49:01.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-newlibertystandard-msg9630"
 ---
 
 <!-- quote: q1 -->

@@ -19,10 +19,12 @@ quotes:
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-11-27T17:33:29.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-28-jgarzik-msg25017"
   - id: "q2"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-11-27T22:33:55.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-28-jgarzik-msg25058"
 ---
 
 他の議論にもかかわらず、現在の次のステップは：

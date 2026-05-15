@@ -16,6 +16,7 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-08-24T14:51:12.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-24-re-development-of-alert-system"
 ---
 
 <!-- quote: q1 -->

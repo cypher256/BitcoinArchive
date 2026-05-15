@@ -16,10 +16,12 @@ quotes:
     person: "DataWraith"
     personSlug: "datawraith"
     date: "2010-07-14T07:42:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-286/2010-07-14-datawraith-msg2875"
   - id: "q2"
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-07-13T17:20:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-286/2010-07-14-gavin-andresen-msg2721"
 ---
 
 <!-- quote: q1 -->

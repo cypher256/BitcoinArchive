@@ -18,6 +18,7 @@ quotes:
     person: "Vasiliev"
     personSlug: "vasiliev"
     date: "2010-06-25T14:50:15.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-84/2010-06-25-vasiliev-msg1785"
 ---
 
 Everybody needs to connect to the same IRC server and channel so they can find each other.

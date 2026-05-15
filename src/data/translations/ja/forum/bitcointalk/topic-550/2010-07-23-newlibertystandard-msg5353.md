@@ -16,6 +16,7 @@ quotes:
     person: "knightmb"
     personSlug: "knightmb"
     date: "2010-07-23T18:27:50.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-550/2010-07-23-knightmb-msg5350"
 translationStatus: complete
 ---
 

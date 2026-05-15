@@ -26,9 +26,11 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
 ---
 
 Great, I've been looking forward to working on the Linux build.

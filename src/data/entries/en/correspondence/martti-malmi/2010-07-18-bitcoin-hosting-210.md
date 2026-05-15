@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-17-bitcoin-hosting-208"
 ---
 
 Please promise me you won't make a switch now.  The last thing we need 

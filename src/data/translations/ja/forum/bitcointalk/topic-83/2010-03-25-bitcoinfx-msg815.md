@@ -16,6 +16,7 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-03-24T18:01:57.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-83/2010-03-24-re-idea-for-file-hosting-and-proxy-services-msg809"
 translationStatus: complete
 ---
 

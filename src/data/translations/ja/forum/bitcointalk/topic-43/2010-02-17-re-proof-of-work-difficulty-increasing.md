@@ -19,10 +19,12 @@ quotes:
     person: "Sabunir"
     personSlug: "sabunir"
     date: "2010-02-15T23:51:51.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-sabunir-msg372"
   - id: "q2"
     person: "Sabunir"
     personSlug: "sabunir"
     date: "2010-02-15T23:51:51.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-sabunir-msg372"
 ---
 
 <!-- quote: q1 -->

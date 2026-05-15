@@ -26,18 +26,22 @@ quotes:
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-27T05:22:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
   - id: "q4"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-27T05:22:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
   - id: "q5"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-27T05:22:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
   - id: "q6"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-27T05:22:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
 ---
 
 <!-- quote: q1 -->

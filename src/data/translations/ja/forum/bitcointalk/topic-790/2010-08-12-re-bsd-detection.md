@@ -19,6 +19,7 @@ quotes:
     person: "dkaparis"
     personSlug: "dkaparis"
     date: "2010-08-11T14:00:16.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-790/2010-08-11-bsd-detection"
 ---
 
 <!-- quote: q1 -->

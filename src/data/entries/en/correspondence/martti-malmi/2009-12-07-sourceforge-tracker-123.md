@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
 ---
 
 I made a copy of the logo onto the local server, so we can still use  

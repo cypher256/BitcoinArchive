@@ -27,9 +27,11 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

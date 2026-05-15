@@ -16,11 +16,13 @@ quotes:
     person: "lfm"
     personSlug: "lfm"
     date: "2010-08-22T20:28:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-23-lfm-msg10748"
   - id: "q2"
     person: "FreeMoney"
     personSlug: "freemoney"
     date: "2010-08-22T20:23:13.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-23-freemoney-msg10745"
 ---
 
 <!-- quote: q1 -->

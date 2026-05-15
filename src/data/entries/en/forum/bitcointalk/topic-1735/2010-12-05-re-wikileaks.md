@@ -22,6 +22,7 @@ quotes:
     person: "RHorning"
     personSlug: "rhorning"
     date: "2010-12-04T13:17:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-04-rhorning-msg26876"
 relatedEntries:
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective

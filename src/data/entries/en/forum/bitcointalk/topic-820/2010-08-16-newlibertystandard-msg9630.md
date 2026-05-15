@@ -16,6 +16,7 @@ quotes:
     person: "aceat64"
     personSlug: "aceat64"
     date: "2010-08-15T15:37:54.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-aceat64-msg9613"
 ---
 
 <!-- quote: q1 -->

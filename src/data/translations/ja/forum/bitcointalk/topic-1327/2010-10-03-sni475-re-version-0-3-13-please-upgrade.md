@@ -19,6 +19,7 @@ quotes:
     person: "tcatm"
     personSlug: "tcatm"
     date: "2010-10-03T10:45:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-tcatm-msg15111"
 ---
 
 <!-- quote: q1 -->

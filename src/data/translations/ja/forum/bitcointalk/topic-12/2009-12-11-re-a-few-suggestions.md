@@ -18,6 +18,7 @@ quotes:
   - id: "q1"
     person: "madhatter2"
     date: "2009-12-10T19:59:19.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-12/2009-12-11-the-madhatter-msg47"
 ---
 
 そうだ、SVN にはほぼリリース候補の 0.2 ソースがあり、Linux 上でもビルド・実行が可能だ。FreeBSD ではテストされていない。

@@ -18,6 +18,7 @@ quotes:
     person: "Cdecker"
     personSlug: "cdecker"
     date: "2010-09-19T11:14:08.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-960/2010-09-19-cdecker-msg13212"
 ---
 
 I don't understand, are you under the impression that the program sets the system clock?  It doesn't.

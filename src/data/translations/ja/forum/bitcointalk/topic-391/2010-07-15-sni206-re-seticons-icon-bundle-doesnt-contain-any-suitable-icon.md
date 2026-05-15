@@ -19,6 +19,7 @@ quotes:
     person: "bdonlan"
     personSlug: "bdonlan"
     date: "2010-07-15T14:27:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-391/2010-07-15-bdonlan-msg3320"
 ---
 
 <!-- quote: q1 -->

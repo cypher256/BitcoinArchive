@@ -21,6 +21,7 @@ quotes:
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/bitcoin-list/2009-01-12-bitcoin-v0-1-3"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

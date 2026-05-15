@@ -16,6 +16,7 @@ quotes:
     person: "knightmb"
     personSlug: "knightmb"
     date: "2010-08-12T07:47:01.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-788/2010-08-12-knightmb-msg8859"
 ---
 
 <!-- quote: q1 -->

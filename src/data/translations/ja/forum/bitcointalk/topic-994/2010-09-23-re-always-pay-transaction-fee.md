@@ -19,6 +19,7 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-09-08T08:30:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-994/2010-09-08-re-always-pay-transaction-fee"
 ---
 
 <!-- quote: q1 -->

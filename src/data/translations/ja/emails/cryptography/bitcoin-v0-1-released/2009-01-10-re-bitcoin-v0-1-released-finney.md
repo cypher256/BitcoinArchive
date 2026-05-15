@@ -25,9 +25,11 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 translationStatus: complete
 ---
 

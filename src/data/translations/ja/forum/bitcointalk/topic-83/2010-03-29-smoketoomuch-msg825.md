@@ -16,6 +16,7 @@ quotes:
     person: "BitcoinFX"
     personSlug: "bitcoinfx"
     date: "2010-03-25T18:20:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-83/2010-03-25-bitcoinfx-msg815"
 translationStatus: complete
 ---
 

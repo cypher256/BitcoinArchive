@@ -19,6 +19,7 @@ quotes:
     person: "Vasiliev"
     personSlug: "vasiliev"
     date: "2010-08-15T18:17:07.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-vasiliev-msg9660"
 ---
 
 <!-- quote: q1 -->

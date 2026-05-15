@@ -19,6 +19,7 @@ quotes:
     person: "Suggester"
     personSlug: "suggester"
     date: "2010-02-15T17:15:49.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-suggester-msg361"
 ---
 
 <!-- quote: q1 -->

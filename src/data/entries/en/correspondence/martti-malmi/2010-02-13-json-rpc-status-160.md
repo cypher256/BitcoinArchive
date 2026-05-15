@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-12-translation-159"
 ---
 
 I uploaded my JSON-RPC and command line implementation to SVN.  I'm 

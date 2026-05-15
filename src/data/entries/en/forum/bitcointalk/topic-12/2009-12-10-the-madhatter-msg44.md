@@ -16,6 +16,7 @@ quotes:
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2009-12-09T09:45:10.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-12/2009-12-09-satoshi-msg41"
 ---
 
 Most modern P2P software tries UPnP by default. You can (of course) disable it (usually) in the options.

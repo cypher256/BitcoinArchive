@@ -16,6 +16,7 @@ quotes:
     person: "bytemaster"
     personSlug: "daniel-larimer"
     date: "2010-08-01T11:14:29.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-665/2010-08-01-multiple-wallets-one-computer-multiple-accounts"
 ---
 
 <!-- quote: q1 -->

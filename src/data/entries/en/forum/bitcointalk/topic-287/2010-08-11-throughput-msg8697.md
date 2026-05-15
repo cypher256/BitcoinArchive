@@ -16,11 +16,13 @@ quotes:
     person: "Insti"
     personSlug: "insti"
     date: "2010-08-10T05:53:41.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-287/2010-08-10-insti-msg8541"
   - id: "q2"
     person: "throughput"
     personSlug: "throughput"
     date: "2010-08-10T01:13:30.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-287/2010-08-10-throughput-msg8508"
 ---
 
 <!-- quote: q1 -->

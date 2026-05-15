@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Hal Finney"
     personSlug: "hal-finney"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
 ---
 
 <!-- speaker: Hal Finney -->

@@ -26,6 +26,7 @@ quotes:
   - id: "q1"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/questions/2009-04-13-hearn-to-satoshi-null-blocks"
 translationStatus: complete
 ---
 

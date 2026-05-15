@@ -19,6 +19,7 @@ quotes:
     person: "sirius-m"
     personSlug: "martti-malmi"
     date: "2010-02-24T09:17:35.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-63/2010-02-24-sirius-msg502"
 ---
 
 <!-- quote: q1 -->

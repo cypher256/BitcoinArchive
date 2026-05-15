@@ -17,6 +17,7 @@ quotes:
   - id: "q1"
     person: "madhatter2"
     date: "2009-12-10T19:59:19.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-12/2009-12-11-the-madhatter-msg47"
 ---
 
 Right, the SVN has the almost-release-candidate 0.2 source, which can also be built and run on Linux.   It hasn't been tested on FreeBSD.

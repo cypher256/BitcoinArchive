@@ -33,6 +33,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-069"
 ---
 
 You really don't want to keep running in Wine, you're getting database 

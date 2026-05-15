@@ -19,10 +19,12 @@ quotes:
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-11-25T17:07:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-26-jgarzik-msg24522"
   - id: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-11-25T08:51:39.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-25-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
 ---
 
 7年前の遅いドライブでテストしたが、帯域幅と CPU は明らかにボトルネックではなかった。初回ダウンロードは 1時間 20分かかった。

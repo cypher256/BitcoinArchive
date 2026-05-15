@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-05-14-status-update-191"
 relatedEntries:
   - "analysis/2009-01-09-satoshi-code-analysis"
 ---

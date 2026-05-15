@@ -21,6 +21,7 @@ quotes:
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-07-17T08:20:14.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-423/2010-07-17-newlibertystandard-msg3784"
 translationStatus: complete
 ---
 

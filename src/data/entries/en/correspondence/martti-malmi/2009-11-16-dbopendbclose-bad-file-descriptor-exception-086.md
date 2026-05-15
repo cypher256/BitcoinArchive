@@ -27,6 +27,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-15-linux-update-085"
 ---
 
 I have an idea for a workaround, but it depends on what files the errors 

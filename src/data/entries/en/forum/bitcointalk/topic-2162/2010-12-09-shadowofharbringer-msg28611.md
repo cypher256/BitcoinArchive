@@ -15,6 +15,7 @@ quotes:
   - id: "q1"
     person: "forever"
     date: "2010-12-09T15:27:10.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-2162/2010-12-09-timo-y-msg28555"
   - id: "q2"
     person: "ShadowOfHarbringer"
     personSlug: "shadowofharbringer"

@@ -19,6 +19,7 @@ quotes:
     person: "Cdecker"
     personSlug: "cdecker"
     date: "2010-09-19T11:14:08.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-960/2010-09-19-cdecker-msg13212"
 ---
 
 理解できないのだが、このプログラムがシステム時計を設定するという認識をお持ちなのだろうか？そのようなことはしない。

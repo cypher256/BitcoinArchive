@@ -17,6 +17,7 @@ quotes:
   - id: "q1"
     person: "creighto"
     date: "2010-11-19T11:29:12.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1850/2010-11-19-moonshadow-msg22896"
   - id: "q2"
     person: "FreeMoney"
     personSlug: "freemoney"

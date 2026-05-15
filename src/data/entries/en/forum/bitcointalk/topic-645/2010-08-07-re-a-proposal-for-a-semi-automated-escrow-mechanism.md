@@ -18,6 +18,7 @@ quotes:
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-08-05T10:00:30.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-645/2010-08-05-jgarzik-msg7723"
 ---
 
 <!-- quote: q1 -->

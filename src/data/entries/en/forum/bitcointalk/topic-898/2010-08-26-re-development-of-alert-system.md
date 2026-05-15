@@ -18,16 +18,19 @@ quotes:
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-25T09:23:45.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-25-biomike-msg11162"
   - id: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-08-25T07:56:15.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-25-sni416-re-development-of-alert-system"
   - id: "q3"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-23T05:15:43.000Z"
     parent: "q1"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-23-biomike-msg10742"
 ---
 
 <!-- quote: q1 -->

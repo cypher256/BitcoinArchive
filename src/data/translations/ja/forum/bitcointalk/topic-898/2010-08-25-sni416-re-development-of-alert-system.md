@@ -19,14 +19,17 @@ quotes:
     person: "jimbobway"
     personSlug: "jimbobway"
     date: "2010-08-25T07:45:22.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-25-jimbobway-msg11153"
   - id: "q2"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-22T20:15:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-23-biomike-msg10742"
   - id: "q3"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-22T20:15:43.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-898/2010-08-23-biomike-msg10742"
 ---
 
 <!-- quote: q1 -->

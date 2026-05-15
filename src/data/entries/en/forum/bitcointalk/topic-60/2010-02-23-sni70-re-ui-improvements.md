@@ -18,6 +18,7 @@ quotes:
     person: "Xunie"
     personSlug: "xunie"
     date: "2010-02-23T03:28:27.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-60/2010-02-23-xunie-msg439"
 ---
 
 <!-- quote: q1 -->

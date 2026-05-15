@@ -18,6 +18,7 @@ quotes:
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-05-23T07:28:12.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-149/2010-05-23-bitcoin-in-ubuntu-1004"
 ---
 
 <!-- quote: q1 -->

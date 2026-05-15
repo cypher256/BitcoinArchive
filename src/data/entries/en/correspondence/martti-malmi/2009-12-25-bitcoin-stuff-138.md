@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-25-bitcoin-stuff-137"
 ---
 
 You're right, I was looking at a test run with 250,000 blocks... duh.

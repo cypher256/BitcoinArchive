@@ -16,6 +16,7 @@ quotes:
     person: "throughput"
     personSlug: "throughput"
     date: "2010-08-12T09:04:25.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-788/2010-08-12-throughput-msg8865"
 translationStatus: complete
 ---
 

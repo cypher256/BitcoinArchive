@@ -16,6 +16,7 @@ quotes:
     person: "SEN-5241"
     personSlug: "sen-5241"
     date: "2010-08-14T14:24:52.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-765/2010-08-14-sen-5241-msg9201"
 translationStatus: complete
 ---
 
