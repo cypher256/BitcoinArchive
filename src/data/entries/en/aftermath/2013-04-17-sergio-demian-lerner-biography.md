@@ -36,7 +36,9 @@ relatedEntries:
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
 ---
 
-Sergio Demian Lerner is an Argentine cryptographer and blockchain researcher. He publishes his research on his blog Bitslog (bitslog.com) and is known for conducting the most important blockchain forensic analysis in Bitcoin's history.
+On April 17, 2013, Argentine cryptographer Sergio Demian Lerner published ["The Well Deserved Fortune of Satoshi Nakamoto"](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) on his blog Bitslog. By tracking the ExtraNonce field across the first 36,288 blocks, he identified a single entity that had mined approximately 1 million BTC in Bitcoin's first year. Virtually none of these coins had ever been spent. Five months later, he found a [second fingerprint](/BitcoinArchive/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/) in the same miner's nonce values; in 2019 he [named the pattern "Patoshi"](/BitcoinArchive/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/) and refined the count to about 22,000 blocks and 1.1 million BTC; in 2020 he [reconstructed the machine](/BitcoinArchive/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/) — a single high-end CPU running 5 nonce-space-partitioned threads, roughly 4.3× faster than any other early miner.
+
+Lerner's analysis is the most important blockchain forensic work in Bitcoin's history. It established that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) accumulated roughly 5% of Bitcoin's 21-million supply, on one machine, and chose never to spend it.
 
 ### First Patoshi Analysis (April 2013)
 On April 17, 2013, Lerner published ["The Well Deserved Fortune of Satoshi Nakamoto"](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) — the first systematic analysis of Bitcoin's earliest mining patterns. By tracking the ExtraNonce field in coinbase transactions across the first 36,288 blocks, he identified a single entity that had mined approximately 1 million BTC in Bitcoin's first year. Virtually none of these coins had ever been spent.
