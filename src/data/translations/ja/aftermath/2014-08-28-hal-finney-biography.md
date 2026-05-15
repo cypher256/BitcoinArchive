@@ -80,7 +80,7 @@ timeline
     1992 : 妻フランと アルコー・クライオニクス 会員登録
     1996 : PGP 社の 最初期従業員として雇用
     2004 : Reusable Proof-of-Work (RPOW) 考案
-    2009 : Bitcoin v0.1 を公開日にダウンロード、 サトシ以外で最初とされるノード (1月9日)
+    2009 : Bitcoin v0.1 を公開日にダウンロード、 サトシ以外で 最初とされるノード (1月9日)
     %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
          : 「Running bitcoin」 ツイート (1月11日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/
