@@ -47,7 +47,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリーは、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)＝サトシ・ナカモト説 — HBO の 2024 年ドキュメンタリー [『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)（カレン・ホーバック監督、2024 年 10 月 8 日公開）で提唱された仮説 — を記録する。仮説の主張、提唱者の論拠、反証を、いずれも同じ詳細度で並べる。読み手の判断に委ねる。
+「retep」 は「peter」 の逆綴り。Bitcoin Core 開発者のグレゴリー・マクスウェルでさえ、それに気づくのに 10 年近くを要した。このハンドル名のアカウントは 2010 年 12 月 7 日に BitcoinTalk に登録、3 日後にトランザクション置換手数料に関するサトシのスレッドに返信した。さらに 2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を残した。HBO の 2024 年ドキュメンタリー[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)（カレン・ホーバック監督、2024 年 10 月 8 日公開）はこの 2010 年 12 月の連鎖を中核証拠として用い、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)をサトシだと名指した。トッドはカメラに向かって「もちろん、俺がサトシだ。俺がサトシ・ナカモトだよ」 と答え、後に公的に否定した —— 「もちろん、俺がサトシだ。ついでにクレイグ・ライトでもある」。本エントリはドキュメンタリーの論拠、解釈、そして反証を同じ詳細度で並べる。判断は読者に委ねる。
 
 ## 1. 仮説の主張
 

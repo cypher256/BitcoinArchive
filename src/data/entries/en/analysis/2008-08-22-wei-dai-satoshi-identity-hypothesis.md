@@ -49,7 +49,11 @@ inlineLinkKeywords:
   - "Wei Dai = Satoshi"
 ---
 
-This entry documents the recurring public hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) — Chinese-American cryptographer, author of the [b-money digital-cash proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (November 1998) cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/), creator of the [Crypto++ library](https://www.cryptopp.com/) that Bitcoin v0.1 bundles for SHA-256, and the second person Satoshi Nakamoto contacted before Bitcoin's launch — was the person behind the Satoshi pseudonym. The hypothesis is one of the recurring Group-A candidates (Satoshi explicitly cited their work) and has surfaced in cryptography journalism since at least 2010. Wei Dai has consistently denied being Satoshi, most prominently in his [January 2014 AALWA retrospective on LessWrong](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/). The claim is laid out, the supporting arguments are described as their advocates make them, and the counter-evidence is set out at equal detail. The reader is left to weigh.
+[Wei Dai's b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) is reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). Wei Dai's [Crypto++ library](https://www.cryptopp.com/) ships inside Bitcoin v0.1 for SHA-256. Wei Dai is the second person Satoshi contacted before launching the network. In January 2014 he was asked on LessWrong whether he might be Satoshi, and [answered](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
+
+> "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
+
+This entry lays out the recurring hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi, the arguments its advocates marshal, and the counter-evidence — Wei Dai's own denial above among the principal pieces. The hypothesis sits in Group A (Satoshi explicitly cited his work) and has surfaced in cryptography journalism since at least 2010. The reader is left to weigh.
 
 ## 1. What the hypothesis claims
 

@@ -56,7 +56,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリーは、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) — カリフォルニア工科大学で訓練を受けた暗号学者、PGP 2.0 の主要開発者、[Reusable Proof-of-Work（RPOW、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させた人物、人類初のビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者、ドリアン・ナカモトから数ブロック離れた場所に住んでいたカリフォルニア州テンプル市の長期居住者 — がサトシ仮名の主体だったとする、繰り返し公的に提起される仮説を記録する。最も多く引用される公的提唱は、[2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) で、地理的偶然を中心に仮説を構成し、フラン・フィニーのレース当日の写真を主要な反証として提示した。仮説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチをめぐってアダム・バックとほぼ同点と報告された。本エントリーは仮説の主張を提示し、支持論点を提唱者の言い分どおりに記述し、反証を同等の詳細で並べる。判断は読者に委ねる。
+ハル・フィニーは、日系米国人エンジニアのドリアン・サトシ・ナカモトから数ブロック離れた場所に住んでいた。Caltech で訓練を受けた暗号学者、[RPOW（Reusable Proof-of-Work、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させた人物、人類初の個人間ビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者である。地理的・経歴的な収束が[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)＝サトシ仮説の中核 —— [2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が最も顕著に提唱し、同時にフラン・フィニーのレース当日の写真を主要な反証として提示した。仮説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。本エントリは主張、支持論点、そして反証を同じ詳細度で並べる。判断は読者に委ねる。
 
 ## 1. 仮説の主張
 

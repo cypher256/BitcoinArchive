@@ -53,7 +53,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本エントリーは、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) — サイファーパンク暗号学者、Mixmaster 匿名リメイラーのリード開発者、[2011 年 7 月 3 日に自殺](/BitcoinArchive/ja/participants/len-sassaman/) — がサトシ・ナカモトの中の人だった、と公的議論で繰り返し提案される仮説を記録する。本仮説はサトシ正体問題に関する公的議論で最も多く取り上げられる主張の一つである。主張を提示し、支持論者の論じ方をそのまま描写し、反証を同じ詳細度で示す。判断は読者に委ねる。
+2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」 仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。本エントリは[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)＝サトシ仮説、支持論者の論じ方、そして反証を同じ詳細度で並べる。判断は読者に委ねる。
 
 ## 1. 仮説が主張する内容
 
