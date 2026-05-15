@@ -29,7 +29,9 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
 ---
 
-Mike Belshe is an American software engineer who, before his Bitcoin work, was a contributor to the SPDY protocol that became the basis for HTTP/2. In October 2013 he co-founded **BitGo** with Will O'Brien and Ben Davenport — one of the earliest companies to specialize in institutional Bitcoin custody and multisignature wallet technology. By 2017 BitGo was one of the principal infrastructure providers serving Bitcoin exchanges and corporate holders, which placed Belshe at the negotiating table for the New York Agreement and, ultimately, in the position to author its cancellation.
+On November 8, 2017, Mike Belshe [authored the announcement that cancelled SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) — the planned hard-fork-doubling of Bitcoin's block-size limit that had been negotiated at the May 2017 New York Agreement. The cancellation, citing insufficient community consensus, ended the largest coordinated attempt at a contentious Bitcoin protocol change since the network's launch. Belshe was uniquely positioned to write it: as co-founder and CEO of **BitGo** (the institutional Bitcoin custody firm whose 2-of-3 multisignature SDK had become standard infrastructure for the exchange industry), he had been one of the principal NYA signatories.
+
+Belshe is an American software engineer. Before Bitcoin, he co-authored the SPDY protocol specification at Google — the basis for HTTP/2, now in widespread use across the modern web. In October 2013 he co-founded BitGo with Will O'Brien and Ben Davenport, one of the earliest companies to specialise in institutional Bitcoin custody.
 
 ## Pre-Bitcoin: HTTP/2 / SPDY
 

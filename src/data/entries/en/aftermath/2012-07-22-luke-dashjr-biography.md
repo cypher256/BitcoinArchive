@@ -22,7 +22,9 @@ relatedEntries:
   - forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re
 ---
 
-Luke Dashjr, known on GitHub and BitcoinTalk as **Luke-Jr**, is an American software developer and long-tenured Bitcoin Core contributor. His personal biographical details outside his public Bitcoin work are not in wide circulation.
+In late December 2022, approximately 216.93 BTC drained from Luke Dashjr's personal wallet — attributed by Dashjr to a PGP-key compromise. The loss happened to one of Bitcoin's most uncompromising small-block / consensus-conservative voices: a Bitcoin Core contributor since 2012, the [PR #1620](/BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) opener, coordinator of the March 2013 chain reunification after the v0.8 consensus bug, and the long-running maintainer of **Bitcoin Knots** — a Bitcoin Core derivative that filters mempool data-carrying outputs more aggressively. In 2023 he co-founded **Ocean**, a mining pool with transparent block templates.
+
+Dashjr is an American software developer known on GitHub and BitcoinTalk as **Luke-Jr**.
 
 ```mermaid
 timeline
