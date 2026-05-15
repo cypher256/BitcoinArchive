@@ -46,7 +46,18 @@ relatedEntries:
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 ---
 
-Wei Dai is a computer scientist and cryptographer known for two major contributions to the field: the b-money proposal for digital currency and the Crypto++ cryptographic library. He studied computer science at the University of Washington and worked at Microsoft. The b-money citation as reference [1] in the Bitcoin whitepaper, the Crypto++ codebase dependency in Bitcoin v0.1, and Wei Dai's status as the second person Satoshi contacted before launch have made him a recurring Satoshi-identity candidate — documented in the [Wei Dai = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/), with the [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) as the principal self-denial.
+In November 1998, Wei Dai published [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) — a proposal for distributed digital cash — on the cypherpunks mailing list. Ten years later, on August 22, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [emailed Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):
+
+<!-- speaker: Satoshi Nakamoto -->
+> "I was very interested to read your b-money page. I'm getting ready to release a paper that expands on your ideas into a complete working system. Adam Back (hashcash.org) noticed the similarities and pointed me to your site. I need to find out the year of publication of your b-money page for the citation in my paper."
+
+Two months later, the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) cited b-money as reference [1]. Bitcoin v0.1 also shipped with Dai's [Crypto++ library](https://www.cryptopp.com/) for its SHA-256 implementation — making Dai's code a direct dependency of Bitcoin from the first release.
+
+In January 2014, asked on LessWrong whether Satoshi might be a known figure from the cryptography or cypherpunk communities, Dai answered:
+
+> "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
+
+Wei Dai is a computer scientist and cryptographer who studied at the University of Washington and worked at Microsoft. The combination of b-money as whitepaper reference [1], the Crypto++ codebase dependency, and Satoshi's pre-launch outreach has made Dai a recurring Satoshi-identity candidate — examined in a [dedicated identity-hypothesis entry](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/). The retrospective above is treated as the principal self-denial. The smallest denomination in the Ethereum cryptocurrency, "wei," is named after him.
 
 ```mermaid
 timeline
@@ -89,4 +100,5 @@ On August 22, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-naka
 In January 2009, following Bitcoin's launch, Dai and Satoshi exchanged further emails. Satoshi [wrote to Dai](/BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/) about the upcoming release, and [Dai responded](/BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi/) with thoughts on Bitcoin's design, noting both its similarities to and differences from b-money. Dai also made philosophical observations about the nature of money and cryptocurrency that demonstrated a deep understanding of the challenges involved.
 
 ### Significance
-Dai's b-money proposal is one of the most direct intellectual predecessors to Bitcoin. Satoshi's decision to contact Dai before publication, and the prominent citation of b-money in the white paper, underscores the degree to which Bitcoin built upon Dai's earlier work. Dai's later 2014 retrospective on Satoshi — that he was "not anyone who was previously active in the academic cryptography or cypherpunks communities" — together with Satoshi's own admission of not knowing b-money during 18 months of development, anchors [an analysis of Satoshi's relationship to the cypherpunk movement and the alignment of his practice with its philosophical core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/). The unit "wei" in the Ethereum cryptocurrency was named in honor of Wei Dai.
+
+Dai's 2014 retrospective combined with Satoshi's own [August 21, 2008 b-money disclaimer to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) anchors [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — two independent observations converging on the same picture of where Satoshi stood relative to the cypherpunk community during development.

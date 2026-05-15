@@ -48,7 +48,18 @@ translationStatus: complete
 ---
 <!-- tone-skip -->
 
-ウェイ・ダイは、デジタル通貨の b-money 提案と暗号ライブラリ Crypto++という 2 つの主要な貢献で知られるコンピューターサイエンティスト・暗号学者である。ワシントン大学でコンピューターサイエンスを学び、Microsoft で働いた。b-money がビットコインホワイトペーパーの参考文献 [1] として引用されたこと、Crypto++ がビットコイン v0.1 のコードベース依存となっていること、ウェイ・ダイが公開前にサトシが接触した 2 番目の人物だったことから、繰り返しサトシ正体候補となってきた — 詳細は[ウェイ・ダイ＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)を参照。主要な自己否定は [2014 年 1 月の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)。
+1998 年 11 月、ウェイ・ダイは匿名の分散型電子キャッシュシステムの提案 [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) をサイファーパンクメーリングリストに公開した。それから 10 年後、2008 年 8 月 22 日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):
+
+<!-- speaker: Satoshi Nakamoto -->
+> 「b-moneyのページを興味深く読んだ。あなたのアイデアを発展させて、完全に動作するシステムにした論文を発表しようとしている。アダム・バックが類似性に気づいて、あなたのサイトを教えてくれた。論文で引用するため、発表年を教えてほしい。」
+
+2 か月後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は b-money を参考文献 [1] として引用した。Bitcoin v0.1 はダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)を SHA-256 実装に採用 —— ダイのコードは最初のリリースからビットコインの直接的な依存となった。
+
+2014 年 1 月、LessWrong で「サトシは暗号学やサイファーパンクのコミュニティで知られた人物ではないか」 と問われたとき、ダイはこう答えた:
+
+> 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
+
+ウェイ・ダイはコンピューターサイエンティスト・暗号学者で、ワシントン大学でコンピューターサイエンスを学び、Microsoft で働いた。ホワイトペーパー参考文献 [1] としての b-money 引用、Crypto++ のコードベース依存、サトシの公開前接触 —— これらの組み合わせから繰り返しサトシ正体候補となってきた。詳細は[専用の正体仮説エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)。上記の回顧が主要な自己否定として扱われる。暗号通貨イーサリアムの最小単位「wei」 はウェイ・ダイに敬意を表して名付けられた。
 
 ```mermaid
 timeline
@@ -91,5 +102,6 @@ Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0
 2009年1月、ビットコインのローンチ後、ダイとサトシはさらにメールをやり取りした。サトシは[ダイにメールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/)、[ダイは応答して](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi/)ビットコインの設計について考えを述べ、b-money との類似点と相違点を指摘した。ダイはまた、貨幣と暗号通貨の本質について哲学的な考察を行い、関連する課題への深い理解を示した。
 
 ### 意義
-ダイの b-money 提案はビットコインの最も直接的な知的先駆者の一つである。サトシが発表前にダイに連絡するという決定、そしてホワイトペーパーでの b-money の顕著な引用は、ビットコインがダイの先行研究にどれほど多く依拠していたかを裏付けている。ダイの 2014年のサトシに関する回想 — 「学術的な暗号研究やサイファーパンクのコミュニティに以前から積極的に参加していた人物ではない」 — と、サトシ自身が 18 か月の開発期間中に b-money を知らなかったという自認は、[サトシとサイファーパンク運動との関係および公開記録上の実践と思想核との整合についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の根拠となっている。暗号通貨イーサリアムの単位「wei」はウェイ・ダイに敬意を表して名付けられた。
+
+ダイの 2014 年の回顧と、サトシ自身の [2008 年 8 月 21 日のアダム・バック宛 b-money 不知応答](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)は、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の根拠となっている —— 二つの独立した観察が、開発期間中にサトシがサイファーパンクのコミュニティに対してどこに立っていたかという同じ像に収束する。
 <!-- /tone-skip -->
