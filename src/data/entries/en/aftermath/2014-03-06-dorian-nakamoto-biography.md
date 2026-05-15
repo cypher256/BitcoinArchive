@@ -35,7 +35,13 @@ relatedEntries:
   - "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
 ---
 
-Dorian Prentice Satoshi Nakamoto, born July 1949 in Beppu, Japan, is a Japanese-American physicist and systems engineer. His family emigrated to California when he was ten years old (1959); he attended California State Polytechnic University, Pomona, earning a bachelor's degree in physics. His professional career included engineering work for Hughes Aircraft, RCA, the Federal Aviation Administration, and other defense and aerospace contractors, some of it under classified contracts. He has lived for many years in Temple City, California — a small suburb in the San Gabriel Valley.
+On March 6, 2014, [Newsweek published "The Face Behind Bitcoin"](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) — a cover story claiming the magazine had found Satoshi Nakamoto. The man it named, Dorian Prentice Satoshi Nakamoto, was a 64-year-old Japanese-American engineer in Temple City, California, with no documented connection to cryptography or Bitcoin. The next day, the long-dormant Satoshi P2P Foundation account briefly returned to [post a single line](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/):
+
+> "I am not Dorian Nakamoto."
+
+Dorian Nakamoto himself firmly and repeatedly denied any involvement with Bitcoin. The Newsweek identification rested on three threads: that his birth name was literally "Satoshi Nakamoto," that his career had been in classified-adjacent engineering, and a brief doorstep quote — "I am no longer involved in that and I cannot discuss it" — which Nakamoto said referred to his prior classified work, not Bitcoin. After Newsweek published his street address and a photograph of his house, the Bitcoin community raised over 67 BTC in donations for him.
+
+Born July 1949 in Beppu, Japan, Dorian Nakamoto emigrated with his family to California at age ten (1959) and earned a bachelor's degree in physics from California State Polytechnic University, Pomona. His professional career included engineering work for Hughes Aircraft, RCA, the Federal Aviation Administration, and other defense and aerospace contractors, some of it under classified contracts. He has lived for many years in Temple City, California — a small suburb in the San Gabriel Valley.
 
 ```mermaid
 timeline
@@ -51,13 +57,9 @@ timeline
          : Bitcoin community raises 67+ BTC in donations for him
 ```
 
-### Newsweek Identification
+### P2P Foundation Post Authenticity
 
-On March 6, 2014, [Newsweek published "The Face Behind Bitcoin"](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) by Leah McGrath Goodman, claiming to have identified Bitcoin's creator. The article rested largely on three threads: that Dorian's birth name was literally "Satoshi Nakamoto," that his career had been in classified-adjacent engineering, and a brief doorstep quote Goodman attributed to him: "I am no longer involved in that and I cannot discuss it." Reporters and photographers descended on his Temple City home, and Newsweek's publication of his street address and a photograph of his house drew widespread criticism.
-
-### Denial
-
-Dorian Nakamoto firmly and repeatedly denied any involvement with Bitcoin. He stated that he had misunderstood the reporter's question and thought she was asking about his prior classified engineering work — an industry where "I cannot discuss it" is the routine response to inquiries about specific projects. He retained legal representation and gave a detailed interview to the Associated Press reaffirming his denial. The day after the Newsweek piece, [the long-dormant Satoshi P2P Foundation account briefly returned to post "I am not Dorian Nakamoto"](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) — though the post's authenticity remains debated, since [the same account showed unexplained login activity again in late 2016](/BitcoinArchive/entries/aftermath/2016-12-12-satoshi-p2pfoundation-profile-login/).
+Whether the March 7, 2014 "I am not Dorian Nakamoto" post genuinely came from Satoshi remains debated. The same long-dormant Satoshi P2P Foundation account [showed unexplained login activity again in late 2016](/BitcoinArchive/entries/aftermath/2016-12-12-satoshi-p2pfoundation-profile-login/), leaving open the possibility that the account was compromised rather than reactivated by Satoshi.
 
 ### Geographic Coincidence with Hal Finney
 
