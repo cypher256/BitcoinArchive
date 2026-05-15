@@ -11,9 +11,15 @@ participants:
 description: "Context post by Quantumplation in BitcoinTalk topic 364. before msg3559."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "martin"
+    personSlug: "martin"
+    sourceEntryId: "forum/bitcointalk/topic-364/2010-07-15-martin-msg3027"
 ---
 
 [Deleted] Quote from: martin on July 16, 2010, 02:09:09 PM
+<!-- quote: q1 -->
 > It is, I hope that ultimately this is just a proof of concept, and once it's shown to work it can be integrated into the client (using the same port and URLs).
 
 *nods*  It's a good initiative, and ANY development in the interest of bitcoins right now is good development.

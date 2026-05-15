@@ -281,6 +281,37 @@ function resolveSource(filePath, base) {
   // Pre-normalise candidate bodies once
   for (const c of candidates) c.normBody = normaliseText(c.ii.body);
 
+  // Pattern for body-attribution lines that name the quote source explicitly.
+  // Examples:
+  //   [Deleted] Quote from: NAME on DATE
+  //   Quote from: NAME on DATE
+  //   From: NAME YYYY-MM-DD HH:MM
+  //   On Sat, 17 Jan 2009, NAME wrote:
+  const DELETED_QUOTE_RE = /\[?Deleted\]?\s*Quote from:\s+(.+?)(?:\s+on\s+(.+?))?$/i;
+  const QUOTE_FROM_RE = /Quote from:\s+(.+?)(?:\s+on\s+(.+?))?$/i;
+  const FROM_RE = /^From:\s+(.+?)\s+\d{4}-\d{2}-\d{2}/m;
+  const ON_WROTE_RE = /On\s+.+?,\s*(.+?)\s+wrote:/i;
+
+  function findAttribPersonAbove(bodyLines, startLine) {
+    // Look back up to 5 non-empty lines for an attribution pattern
+    for (let k = startLine - 1; k >= Math.max(0, startLine - 6); k--) {
+      const s = bodyLines[k].trim();
+      if (!s) continue;
+      if (s.startsWith('<!--')) continue;
+      let m;
+      m = s.match(DELETED_QUOTE_RE) || s.match(QUOTE_FROM_RE);
+      if (m) return m[1].trim();
+      m = s.match(FROM_RE);
+      if (m) return m[1].trim();
+      m = s.match(ON_WROTE_RE);
+      if (m) return m[1].trim();
+      return null; // first non-empty non-comment line that doesn't match -> stop
+    }
+    return null;
+  }
+
+  const bodyLines = parsed.body.split('\n');
+
   const resolutions = [];
   for (const bq of bqs) {
     const quoteNorm = normaliseText(bq.text);
@@ -290,10 +321,32 @@ function resolveSource(filePath, base) {
     scored.sort((a, b) => b.score - a.score);
     const top = scored[0];
     const second = scored[1];
-    // Accept if top score >= 0.7 and clearly better than second
+    // Accept text match if top score >= 0.7 and clearly better than second
     if (top && top.score >= 0.7) {
       if (!second || top.score - second.score >= 0.15 || top.score >= 0.95) {
         resolutions.push({ sourceEntryId: top.eid, score: top.score, person: top.ii.author, personSlug: top.ii.authorSlug, bq });
+        continue;
+      }
+    }
+    // Fallback: extract person from body attribution line above the blockquote
+    const attribName = findAttribPersonAbove(bodyLines, bq.startLine);
+    if (attribName) {
+      // Match against candidates by author name
+      const nameLower = attribName.toLowerCase();
+      let matched = null;
+      for (const c of candidates) {
+        if (!c.ii.author) continue;
+        if (c.ii.author.toLowerCase() === nameLower) { matched = c; break; }
+      }
+      if (!matched) {
+        for (const c of candidates) {
+          if (!c.ii.author) continue;
+          const an = c.ii.author.toLowerCase();
+          if (nameLower.includes(an) || an.includes(nameLower)) { matched = c; break; }
+        }
+      }
+      if (matched) {
+        resolutions.push({ sourceEntryId: matched.eid, score: 0.50, person: matched.ii.author, personSlug: matched.ii.authorSlug, bq });
         continue;
       }
     }
