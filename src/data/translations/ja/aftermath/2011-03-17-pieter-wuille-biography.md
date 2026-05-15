@@ -33,7 +33,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-ピーター・ウィーユ（GitHub と IRC 上のハンドル名 **sipa** で広く知られる）はベルギーのソフトウェア技術者で、サトシ離脱後の Bitcoin Core で最も生産的かつ影響力のある貢献者の一人となった。公に流通している個人伝記的情報は、彼の公開された職業活動以上には多くない。
+階層的決定性ウォレット。Segregated Witness。Schnorr 署名。Taproot。現代のすべてのビットコインウォレットの鍵導出方法、すべてのトランザクションがマレアビリティを回避する方法、ブロック容量の拡張、Taproot のプライバシーと script 柔軟性 —— これらを定義する 4 つの BIP のすべてを書いた／共著したのが **ピーター・ウィーユ**（GitHub と IRC では **sipa**）である。2013 年に [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) も開始した —— OpenSSL に代わって Bitcoin Core の署名バックエンドとなった、目的特化型の楕円曲線ライブラリである。
+
+ウィーユはベルギーのソフトウェア技術者。bitcoin/bitcoin への最初の貢献は [2011 年 3 月 17 日の PR #122](/BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/)。6 週間後にコミット権限を取得し、ギャビン・アンドレセンに次ぐ 2 番目の長期メンテナーとなった。2014 年に Blockstream を共同設立、後に Chaincode Labs へ。
 
 ```mermaid
 timeline

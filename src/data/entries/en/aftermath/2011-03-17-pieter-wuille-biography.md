@@ -32,7 +32,9 @@ relatedEntries:
   - aftermath/2011-09-13-bitcoin-github-migration-committers
 ---
 
-Pieter Wuille, widely known by his GitHub and IRC handle **sipa**, is a Belgian software engineer who became one of the most productive and influential Bitcoin Core contributors. His personal biographical details beyond his public professional work are not in wide circulation.
+Hierarchical deterministic wallets. Segregated Witness. Schnorr signatures. Taproot. The four BIPs that define how every modern Bitcoin wallet derives keys, how every modern transaction escapes malleability, how block capacity expanded, and how Taproot's privacy and script flexibility work — all four were authored or co-authored by **Pieter Wuille** (known on GitHub and IRC as **sipa**). He also started [libsecp256k1](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) in 2013, the purpose-built elliptic-curve library that replaced OpenSSL as Bitcoin Core's signature backend.
+
+Wuille is a Belgian software engineer. His first contribution to bitcoin/bitcoin was [PR #122 on March 17, 2011](/BitcoinArchive/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/); six weeks later he received commit access, making him the second long-term maintainer after Gavin Andresen. He co-founded Blockstream in 2014 and later joined Chaincode Labs.
 
 ```mermaid
 timeline
