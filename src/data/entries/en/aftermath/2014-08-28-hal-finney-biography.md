@@ -62,7 +62,14 @@ relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
 ---
 
-Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979. His combination of cypherpunk credentials, his 2004 Reusable Proof-of-Work system, his role as recipient of the first person-to-person Bitcoin transaction, and his geographic proximity to Dorian Nakamoto have made him one of the most-discussed Satoshi-identity candidates — documented as the [Hal Finney = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), with the [April 18, 2009 race-day alibi](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and Patoshi-scale inconsistency as the principal counter-evidence.
+<!-- speaker: Hal Finney -->
+> "Even as my body is dying outside, I will remain alive inside."
+
+Hal Finney wrote this in October 2009, two months after being diagnosed with ALS — the same year he became the first person besides Satoshi to run Bitcoin. On January 11, 2009, his two-word tweet ["Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) was the first public mention of the software being run. The next day, Satoshi sent him [10 BTC in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction. He kept writing code for five more years through progressive paralysis, eventually using eye-tracking software at roughly one-fiftieth of his former speed. He [died on August 28, 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/). Alcor preserved him as their 128th patient.
+
+The combination of his cypherpunk record, his 2004 Reusable Proof-of-Work system, his role as recipient of the first person-to-person Bitcoin transaction, and his geographic proximity to Dorian Nakamoto has made him one of the most-discussed Satoshi-identity candidates — documented as the [Hal Finney = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), with the [April 18, 2009 race-day alibi](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and Patoshi-scale inconsistency as the principal counter-evidence.
+
+Harold Thomas Finney II was born on May 4, 1956, in Coalinga, California, and grew up in Arcadia, California. He graduated as valedictorian from Arcadia High School in 1974 and earned a Bachelor of Science in Engineering from the California Institute of Technology (Caltech) in 1979.
 
 ```mermaid
 timeline
@@ -99,6 +106,10 @@ In 2004, Finney created the first Reusable Proof-of-Work (RPOW) system — a pre
 On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) on its release day and became the first person other than [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run a Bitcoin node. He began mining around Block 70. On January 11, 2009, he [tweeted "Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — the first public mention of running the software. On January 12, 2009, he [received 10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction in history.
 
 ### ALS and Final Years
-In August 2009, Finney was diagnosed with amyotrophic lateral sclerosis (ALS). Despite progressive paralysis, he continued writing code for Bitcoin — eventually using eye-tracking software to communicate and program. He retired from PGP Corporation (Symantec) in early 2011. On March 19, 2013, he published ["Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) on BitcoinTalk, describing his experience as Bitcoin's first user.
 
-Hal Finney [died on August 28, 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), at 8:50 AM in Scottsdale, Arizona. He was cryopreserved by Alcor Life Extension Foundation as their 128th patient (member A-1436). He is survived by his wife [Fran](/BitcoinArchive/participants/fran-finney/), son Jason, and daughter Erin.
+In August 2009, Finney was diagnosed with amyotrophic lateral sclerosis (ALS). He retired from PGP Corporation (Symantec) in early 2011. On March 19, 2013, he published ["Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) on BitcoinTalk, describing his life after the diagnosis — paralyzed, fed through a tube, operating his computer via eye-tracker, but still programming:
+
+<!-- speaker: Hal Finney -->
+> "I recently discovered that I can even write code. It's very slow, probably 50 times slower than I was before. But I still love programming and it gives me goals."
+
+Hal Finney died on August 28, 2014, at 8:50 AM in Scottsdale, Arizona. He was cryopreserved by Alcor Life Extension Foundation as their 128th patient (member A-1436). He is survived by his wife [Fran](/BitcoinArchive/participants/fran-finney/), son Jason, and daughter Erin.
