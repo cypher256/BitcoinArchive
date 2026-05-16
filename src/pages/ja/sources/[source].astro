@@ -25,6 +25,17 @@ const filtered = entries.filter((e) => e.data.source === source);
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const sourceLabel = t(`source.${source}` as any) || source;
 
+// Card vs entry: collapseThreads bundles same-thread messages into a single
+// card, so displayEntries.length counts cards (= threads + standalone
+// entries). filtered.length is the raw entry count — same number as the
+// "(N)" badge on /sources/. Show both so the listing↔detail counts line up
+// and the reader sees the actual atomic record count.
+const rawEntryCount = filtered.length;
+const threadCount = displayEntries.filter((entry: any) => {
+  const tid = resolveThreadId(entry);
+  return tid && (threadCounts.get(tid) || 0) >= 2;
+}).length;
+
 const pageDescription = `${sourceLabel}に由来するコミュニケーションのアーカイブ。サトシ・ナカモトと初期ビットコイン貢献者のフォーラム投稿・メール・技術的議論を、原典を保持して収録。`;
 
 const structuredData = {
@@ -70,7 +81,10 @@ const structuredData = {
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。</p>
-    <p class="entry-count">{displayEntries.length} エントリー</p>
+    <p class="entry-count">
+      {rawEntryCount} エントリー
+      {threadCount > 0 && <> / {threadCount} スレッド</>}
+    </p>
     {displayEntries.map((entry) => {
       const tid = resolveThreadId(entry);
       const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
