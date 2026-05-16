@@ -65,16 +65,21 @@ function computeDepth(quoteId, quotesMap) {
 function formatDate(date, locale) {
   if (!date) return null;
   const d = new Date(date);
+  // Render in UTC. Build hosts (Cloudflare Pages, local dev) have
+  // different default timezones; using local getHours/getMonth would
+  // make the same source date display differently per host. The
+  // frontmatter date field is stored as UTC, and the rest of the site
+  // (EntryMeta / message-date via formatDateMaybeTime) renders UTC.
   if (locale === 'ja') {
-    return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日 ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+    return `${d.getUTCFullYear()}年${d.getUTCMonth() + 1}月${d.getUTCDate()}日 ${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')} UTC`;
   }
-  // EN: BitcoinTalk-style format
+  // EN: BitcoinTalk-style format, UTC anchored
   const months = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'];
-  const hours = d.getHours();
+  const hours = d.getUTCHours();
   const ampm = hours >= 12 ? 'PM' : 'AM';
   const h12 = hours % 12 || 12;
-  return `${months[d.getMonth()]} ${String(d.getDate()).padStart(2, '0')}, ${d.getFullYear()}, ${h12}:${String(d.getMinutes()).padStart(2, '0')}:${String(d.getSeconds()).padStart(2, '0')} ${ampm}`;
+  return `${months[d.getUTCMonth()]} ${String(d.getUTCDate()).padStart(2, '0')}, ${d.getUTCFullYear()}, ${h12}:${String(d.getUTCMinutes()).padStart(2, '0')}:${String(d.getUTCSeconds()).padStart(2, '0')} ${ampm} UTC`;
 }
 
 /**
