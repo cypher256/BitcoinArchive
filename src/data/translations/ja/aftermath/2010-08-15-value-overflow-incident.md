@@ -30,7 +30,7 @@ secondarySources:
     url: "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"
 relatedEntries:
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
-  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
@@ -51,7 +51,7 @@ translationStatus: complete
 
 **バグの内容:** トランザクション検証コードは個々の出力が非負であることを確認していたが、出力の合計における整数オーバーフローをチェックしていなかった。64 ビット符号付き整数の最大値（INT64_MAX ≈ 9.2 × 10¹⁸）に近い 2 つの出力を足すと負の値にオーバーフローし、検証チェックを通過した：0.5 BTC 入力 ≥ -0.01 BTC 出力（オーバーフロー後）。
 
-**対応:** 発見から約 5時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は [Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開。`CheckTransaction()`に 2 つの新しいチェックを追加するソフトフォークだった：
+**対応:** 発見から約 5時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は [Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開。`CheckTransaction()`に 2 つの新しいチェックを追加するソフトフォークだった：
 
 1. 各出力は MAX_MONEY（21,000,000 BTC）を超えてはならない
 2. すべての出力の合計は MAX_MONEY を超えてはならない

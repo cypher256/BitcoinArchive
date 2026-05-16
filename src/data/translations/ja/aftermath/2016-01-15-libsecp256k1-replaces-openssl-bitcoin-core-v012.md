@@ -45,7 +45,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)以来 7年間、ビットコインの依存ライブラリーであり続けていた。
+2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)以来 7年間、ビットコインの依存ライブラリーであり続けていた。
 
 **背景：**
 

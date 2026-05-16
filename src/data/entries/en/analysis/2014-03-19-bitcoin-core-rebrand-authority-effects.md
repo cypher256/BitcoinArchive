@@ -102,7 +102,7 @@ gantt
 
     section Codebase
     v0.1 release (named "Bitcoin")          :milestone, 2009-01-09, 1d
-    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
     Bitcoin-Qt (Qt GUI in v0.5)             :milestone, 2011-11-20, 1d
     %% link: /BitcoinArchive/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/
     PR #3408 merged (rebrand to Core)       :milestone, 2013-12-16, 1d

@@ -297,7 +297,7 @@ or fabricating it.
   repairing.
 - ❌ **Modify URLs inside primary-source body content.** URLs that
   appear inside verbatim entries (`/forum/`, `/correspondence/`,
-  `/emails/`, `/sourceforge/`, `/bip/`) or inside `<blockquote>`
+  `/emails/`, `/bip/`) or inside `<blockquote>`
   elements in editorial entries are part of the historical record.
   They are de-linked at render time by
   `src/lib/rehype-strip-archive-links.mjs`. The audit may report them
@@ -318,8 +318,46 @@ position:
 | `frontmatter.secondarySources[].url` | Replace with Wayback URL if available; else remove the entry (the primary source still carries the citation). |
 | Body inline link in editorial prose, **outside** any blockquote | Replace with Wayback URL if available; else remove the link and remove or reword the surrounding claim per `secondarySources` discipline. |
 | Body inline link **inside** a `<blockquote>` (= primary-source quote) | **Do not modify.** The URL is part of the verbatim quoted text. The renderer de-links it; that is the policy. |
-| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/sourceforge/`, `/bip/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
+| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/bip/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
 | URL inside an editor-note block (`*[Editor: ...]*` / `*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) | Editor's choice. Replace with Wayback or remove if dead, exactly as for editorial prose body links. The renderer keeps these clickable. |
+
+## Internal URL Changes — No Redirects Policy
+
+When entries are renamed, moved, or restructured (directory moves, slug
+renames, type reclassifications), the resulting URL change is **not**
+absorbed by an `astro.config.mjs` redirect. The old URL is allowed to
+return 404.
+
+Reasons:
+
+- Redirect tables accumulate forever. Each redirect outlives the move
+  that prompted it and becomes permanent maintenance overhead. The
+  archive ships routinely (`type` taxonomy fixes, slug conformance to
+  Title Policy, directory restructuring); paying redirect-table debt
+  on each move makes the table unbounded.
+- A 404 surfaces structural changes honestly. Crawlers re-index from
+  current internal links and sitemap; readers fall back to site search.
+  A silent redirect chain hides that the URL has moved and
+  disincentivizes both re-indexing and editorial discipline about not
+  moving content casually.
+- The archive's URL space is a working contract with current readers,
+  not a frozen promise. URL changes for structural reasons (taxonomy,
+  naming, layout) are part of normal editorial maintenance, not API
+  breakage.
+
+Scope:
+
+- **Applies to**: any internal entry-URL change — directory moves
+  (e.g. `sourceforge/X.md` → `aftermath/X.md`), slug renames, type
+  reclassifications that move the entry to a different path.
+- **Does NOT apply to**: external URLs in body content (handled by
+  § External Link Rot Handling above); HTTP routing changes at the
+  framework / Cloudflare Pages level (entry vs thread page rendering).
+
+If a known high-value external citation exists to a specific URL that
+will be moved, prefer updating the citation at its source (if
+reachable). The redirect shortcut is the wrong tool for that case as
+well; redirects scale worse than the citations they would protect.
 
 ## Medium vs Archive: name the source, not "the archive"
 
@@ -631,6 +669,14 @@ override the generic templates where they conflict.
   suffixes are acceptable when the original title is ambiguous on
   its own.
   - ✓ `Jameson Lopp analyzes whether Satoshi Nakamoto was a 'greedy' miner`
+- **Release / genesis records** (editorial reconstructions of dated
+  events on the source channel — e.g. SourceForge releases, Genesis
+  Block hardcode):
+  - `Bitcoin v{N.N} released ({date})` for releases.
+  - Standalone events follow the generic rule (actor, object, date):
+    ✓ `Satoshi mines the Bitcoin genesis block (January 3, 2009)`
+  - `source: <channel>` records the distribution channel; the entry
+    itself is editorial article in `aftermath/`.
 
 #### Analysis (Bitcoin Institute editorial readings)
 
@@ -660,13 +706,6 @@ override the generic templates where they conflict.
   `(BIP N)` suffix.
   - ✓ `Bitcoin: A Peer-to-Peer Electronic Cash System (Whitepaper)`
   - ✓ `BIP 125: Opt-in Full Replace-by-Fee Signaling`
-
-#### SourceForge releases / genesis
-
-- `Bitcoin v{N.N} released ({date})` for releases.
-- Standalone entries (e.g. the genesis block) follow the generic rule:
-  identify the actor, object, and date.
-  - ✓ `Satoshi mines the Bitcoin genesis block (January 3, 2009)`
 
 ### Register: descriptive vs. evocative
 
@@ -1195,7 +1234,7 @@ Auto-linking deliberately skips:
   (see [Editorial Markers](#editorial-markers)). Editor notes keep
   their links manual to preserve editorial intent.
 - Whole-file primary-source records — files under `forum/`,
-  `correspondence/`, `emails/`, `sourceforge/`, `bip/` directories.
+  `correspondence/`, `emails/`, `bip/` directories.
 - Self-link — the keyword's target is the page being rendered.
 
 Within a single rendered page, each keyword is linked **at most once**

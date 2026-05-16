@@ -74,7 +74,7 @@ timeline
          : ハルが 暗号学リストで 第三者として 初の応答 (11月)
     %% link: /BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/
     2009 : Bitcoin v0.1 - ハルが 最初の サトシ以外のノードと される (1月)
-    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : ハルがサンタバーバラで 10 マイルレース - サトシは ハーン宛メール送信 + 取引ブロードキャスト (4月18日) [アリバイ 1]
     %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/
          : ハル ALS 診断 (8月)

@@ -80,7 +80,7 @@ timeline
     1996 : Hired at PGP Inc., one of the first employees
     2004 : Creates Reusable Proof-of-Work (RPOW)
     2009 : Downloads Bitcoin v0.1 on release day, first known non-Satoshi node (Jan 9)
-    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : Tweets 'Running bitcoin' (Jan 11)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/
          : Receives 10 BTC from Satoshi in Block 170 - first P2P transaction (Jan 12)
@@ -103,7 +103,7 @@ Finney was an active participant in the Extropy Institute's discussions on cryon
 In 2004, Finney created the first Reusable Proof-of-Work (RPOW) system — a precursor concept to Bitcoin's proof-of-work mechanism. He was deeply engaged with the cypherpunk movement's goal of creating digital cash. The technical lineage from Adam Back's Hashcash through Wei Dai's b-money, Nick Szabo's Bit Gold, and RPOW into Bitcoin is examined alongside the question of Satoshi's own position relative to that movement in [an analysis of the cypherpunk core and Satoshi's intellectual location](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 ### Bitcoin
-On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) on its release day and became the first known person other than [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run a Bitcoin node. He began mining around Block 70. On January 11, 2009, he [tweeted "Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — the first public mention of running the software. On January 12, 2009, he [received 10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction in history.
+On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) on its release day and became the first known person other than [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run a Bitcoin node. He began mining around Block 70. On January 11, 2009, he [tweeted "Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — the first public mention of running the software. On January 12, 2009, he [received 10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction in history.
 
 ### ALS and Final Years
 

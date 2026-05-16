@@ -28,7 +28,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2017-09-20-ray-dillinger-if-id-known
   - aftermath/2018-10-01-ray-dillinger-interview
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-09-bitcoin-v01-released
 translationStatus: complete
 ---
 

@@ -29,7 +29,7 @@ relatedEntries:
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
 ---
 
-On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original Bitcoin source code [released on January 9, 2009](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/).
+On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original Bitcoin source code [released on January 9, 2009](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/).
 
 **Scope:** Forensicxs analyzed the Bitcoin v0.1 codebase as **31,794 lines** across 31 files, written in C++ and released under the MIT X11 license. Note that this archive's own source-code analysis treats the v0.1 C++/header line count from the local primary source as approximately 19,901 lines, growing to 31,909 lines by v0.3.19. The 31,794 figure is therefore Forensicxs's count for that article and not this archive's reference value (the difference reflects which files / blank lines / comments / wxWidgets headers each count includes).
 

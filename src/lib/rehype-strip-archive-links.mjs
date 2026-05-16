@@ -19,7 +19,7 @@
  *
  *   1. Whole-entry verbatim (directory whitelist):
  *      Files under src/data/{entries/en, translations/ja}/
- *      {forum, correspondence, emails, sourceforge, bip}/... are entirely
+ *      {forum, correspondence, emails, bip}/... are entirely
  *      verbatim; the entire body is the historical document. The plugin
  *      strips clickability for every external link in such entries.
  *
@@ -68,7 +68,6 @@ const VERBATIM_DIRS = [
   '/forum/',
   '/correspondence/',
   '/emails/',
-  '/sourceforge/',
   '/bip/',
 ];
 

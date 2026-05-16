@@ -31,7 +31,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style

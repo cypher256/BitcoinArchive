@@ -29,7 +29,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2008年 8 月のやり取りから約 5 か月後、サトシはアダム・バックに最後のメールを書き送った。[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)の翌日のことである。最初に連絡を取ったサイファーパンクの一人であるバックに対するサトシ自身による v0.1 公開告知の中核的な一文は次の通り。
+2008年 8 月のやり取りから約 5 か月後、サトシはアダム・バックに最後のメールを書き送った。[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)の翌日のことである。最初に連絡を取ったサイファーパンクの一人であるバックに対するサトシ自身による v0.1 公開告知の中核的な一文は次の通り。
 
 <!-- speaker: Satoshi Nakamoto -->
 > 私の論文のオープンソース実装、Bitcoin v0.1 をたった今公開した。詳細・ダウンロード・スクリーンショットは www.bitcoin.org にある。

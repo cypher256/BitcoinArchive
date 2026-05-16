@@ -26,7 +26,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - aftermath/2010-07-12-knightmb-biography
-  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
@@ -45,7 +45,7 @@ translationStatus: complete
 
 > 「knightmb のブロックチェーン・スナップショットを起点にした」
 
-その経緯は本アーカイブの[バリュー・オーバーフロー事件のエントリー](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に記録されている。約 18:08 UTC、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 でトランザクション検証コードの整数オーバーフローによりおよそ 1,840 億 BTC が生成されていることに気づいた。発覚から約 5 時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はソフトフォークパッチを含む [Bitcoin v0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開し、ギャビン・アンドレセンも並行して独自の緊急パッチをテストし始めた。両方のパッチは破損前のチェーンの清浄なコピーを必要とした。これを適用する者は、ブロック 74638 より前の時点までチェーンを巻き戻し、そこから再同期する必要があった。ネットワーク全体のクライアントが既に不正ブロックで汚染されている状況で、清浄なチェーンの入手先は自明な問題ではなかった。
+その経緯は本アーカイブの[バリュー・オーバーフロー事件のエントリー](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に記録されている。約 18:08 UTC、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 でトランザクション検証コードの整数オーバーフローによりおよそ 1,840 億 BTC が生成されていることに気づいた。発覚から約 5 時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はソフトフォークパッチを含む [Bitcoin v0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開し、ギャビン・アンドレセンも並行して独自の緊急パッチをテストし始めた。両方のパッチは破損前のチェーンの清浄なコピーを必要とした。これを適用する者は、ブロック 74638 より前の時点までチェーンを巻き戻し、そこから再同期する必要があった。ネットワーク全体のクライアントが既に不正ブロックで汚染されている状況で、清浄なチェーンの入手先は自明な問題ではなかった。
 
 knightmb は事件発生の数週間前から、新規ユーザーが初回同期に数日待たずに済むように、自身のノードからブロックチェーン・スナップショットを公開ホストしていた。オーバーフローが起きたとき、それらのスナップショットがそのまま実用上の復旧基盤となった。同じスレッドで knightmb はブロック 74,000 直前で切ったスナップショットを新たに作ると申し出たが、ギャビンは既存のものを残すよう求めた——*「いやそのままでいい！古い方がいい。あなたが以前から公開していたものは検証済みで、最良の選択だ」*——そして、それを自身のパッチテストの起点に使用した。
 

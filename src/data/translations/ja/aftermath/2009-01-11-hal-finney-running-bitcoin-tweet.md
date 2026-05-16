@@ -24,7 +24,7 @@ secondarySources:
 relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-09-bitcoin-v01-released
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-12-first-bitcoin-transaction
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney

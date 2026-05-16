@@ -94,7 +94,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin project registered on SourceForge",
       "titleJa": "ビットコインプロジェクトがSourceForgeに登録",
-      "slug": "sourceforge/2008-11-09-bitcoin-project-registered"
+      "slug": "aftermath/2008-11-09-bitcoin-project-registered"
     },
     {
       "date": "2008-11-09T01:58:48.000Z",
@@ -178,7 +178,7 @@
       "channel": "sourceforge",
       "title": "Satoshi mines the Bitcoin genesis block (January 3, 2009)",
       "titleJa": "サトシがビットコインのジェネシスブロックを採掘（2009-01-03）",
-      "slug": "sourceforge/2009-01-03-genesis-block"
+      "slug": "aftermath/2009-01-03-genesis-block"
     },
     {
       "date": "2009-01-08T19:27:40.000Z",
@@ -206,7 +206,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.1 released on SourceForge",
       "titleJa": "ビットコインv0.1がSourceForgeでリリース",
-      "slug": "sourceforge/2009-01-09-bitcoin-v0.1-released"
+      "slug": "aftermath/2009-01-09-bitcoin-v0.1-released"
     },
     {
       "date": "2009-01-10T00:00:00.000Z",
@@ -1123,7 +1123,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.2 released on SourceForge",
       "titleJa": "ビットコインv0.2がSourceForgeでリリース",
-      "slug": "sourceforge/2009-12-16-bitcoin-v0.2-released"
+      "slug": "aftermath/2009-12-16-bitcoin-v0.2-released"
     },
     {
       "date": "2009-12-16T04:57:36.000Z",
@@ -2376,7 +2376,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.3 released on SourceForge",
       "titleJa": "ビットコインv0.3がSourceForgeでリリース",
-      "slug": "sourceforge/2010-07-06-bitcoin-v0.3-released"
+      "slug": "aftermath/2010-07-06-bitcoin-v0.3-released"
     },
     {
       "date": "2010-07-06T02:59:57.000Z",
@@ -3902,7 +3902,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.3.10 - overflow bug emergency fix",
       "titleJa": "ビットコインv0.3.10 - オーバーフローバグの緊急修正",
-      "slug": "sourceforge/2010-08-15-bitcoin-v0.3.10-overflow-bug-fix"
+      "slug": "aftermath/2010-08-15-bitcoin-v0.3.10-overflow-bug-fix"
     },
     {
       "date": "2010-08-15T03:40:29.000Z",
@@ -4462,7 +4462,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.3.12 released on SourceForge",
       "titleJa": "ビットコインv0.3.12がSourceForgeでリリース",
-      "slug": "sourceforge/2010-09-07-bitcoin-v0.3.12-released"
+      "slug": "aftermath/2010-09-07-bitcoin-v0.3.12-released"
     },
     {
       "date": "2010-09-07T16:32:21.000Z",
@@ -5106,7 +5106,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.3.18 released on SourceForge",
       "titleJa": "ビットコインv0.3.18がSourceForgeでリリース",
-      "slug": "sourceforge/2010-12-08-bitcoin-v0.3.18-released"
+      "slug": "aftermath/2010-12-08-bitcoin-v0.3.18-released"
     },
     {
       "date": "2010-12-08T20:21:49.000Z",
@@ -5260,7 +5260,7 @@
       "channel": "sourceforge",
       "title": "Bitcoin v0.3.19 released on SourceForge",
       "titleJa": "ビットコインv0.3.19がSourceForgeでリリース",
-      "slug": "sourceforge/2010-12-15-bitcoin-v0.3.19-released"
+      "slug": "aftermath/2010-12-15-bitcoin-v0.3.19-released"
     },
     {
       "date": "2010-12-20T18:10:06.000Z",

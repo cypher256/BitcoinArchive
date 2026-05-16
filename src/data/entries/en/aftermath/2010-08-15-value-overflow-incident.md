@@ -30,7 +30,7 @@ secondarySources:
     url: "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"
 relatedEntries:
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
-  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
@@ -50,7 +50,7 @@ A single transaction in Block 74638 had created **184,467,440,737.09551616 BTC**
 
 **The bug:** The transaction validation code checked that individual outputs were non-negative, but did not check for integer overflow when summing outputs. Two outputs near the maximum value of a 64-bit signed integer (INT64_MAX ≈ 9.2 × 10¹⁸) would overflow to a negative value when added together, passing the validation check: 0.5 BTC input ≥ -0.01 BTC output (after overflow).
 
-**The response:** Within approximately five hours of discovery, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) published [Bitcoin version 0.3.10](/BitcoinArchive/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) containing a soft fork that added two new checks to `CheckTransaction()`:
+**The response:** Within approximately five hours of discovery, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) published [Bitcoin version 0.3.10](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) containing a soft fork that added two new checks to `CheckTransaction()`:
 
 1. Each individual output must not exceed MAX_MONEY (21,000,000 BTC)
 2. The sum of all outputs must not exceed MAX_MONEY

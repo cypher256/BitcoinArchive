@@ -28,7 +28,7 @@
  *     `remark-editorial-marker.mjs` — these are editorial overlay; we
  *     keep their links manual to preserve the editor's intent)
  *   - File path matches `VERBATIM_DIRS` (forum / correspondence /
- *     emails / sourceforge / bip) — whole-file primary records
+ *     emails / bip) — whole-file primary records
  *   - Self-link: keyword's target is the page being rendered
  *
  * Per-page first-match-only: a keyword is linked at most once per
@@ -68,7 +68,6 @@ const VERBATIM_DIRS = [
   '/forum/',
   '/correspondence/',
   '/emails/',
-  '/sourceforge/',
   '/bip/',
 ];
 

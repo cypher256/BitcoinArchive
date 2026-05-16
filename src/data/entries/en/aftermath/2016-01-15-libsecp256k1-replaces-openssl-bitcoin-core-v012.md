@@ -44,7 +44,7 @@ relatedEntries:
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 ---
 
-On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) seven years earlier.
+On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) seven years earlier.
 
 **Background:**
 

@@ -26,7 +26,7 @@ secondarySources:
     url: "https://web.archive.org/web/20250518000545/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2009-01-12-first-bitcoin-transaction
 translationStatus: complete

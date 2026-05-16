@@ -24,11 +24,11 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
 relatedEntries:
   - "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg"
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-09-bitcoin-v01-released
 translationStatus: complete
 ---
 
-2009 年 1 月 17 日、[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)から 8 日後、インディアナ大学の天体物理学者ジョナサン・ソーンバーグは[暗号学メーリングリストに投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/)し、後にビットコインの歴史を貫くこととなる 2 つの予測を残した:
+2009 年 1 月 17 日、[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 8 日後、インディアナ大学の天体物理学者ジョナサン・ソーンバーグは[暗号学メーリングリストに投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/)し、後にビットコインの歴史を貫くこととなる 2 つの予測を残した:
 
 > 「現代世界では、いかなる主要政府も、ある程度控えめな額の閾値を超える追跡不能な国際金融取引を許容したくないだろう」
 

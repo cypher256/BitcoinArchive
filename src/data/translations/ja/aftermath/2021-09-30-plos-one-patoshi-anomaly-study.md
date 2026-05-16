@@ -57,7 +57,7 @@ translationStatus: complete
 
 Patoshi 議論において最も重要な発見は、 **ナンスの最初のニブルにおける拡張 Patoshi 異常が、マイニングされた最初の 64 ブロック「すべて」に出現する** ことであった。これは注目に値する。なぜなら、ラーナーのオリジナルの 2013年 ExtraNonce ベースの分類では、ExtraNonce 勾配の相違に基づいてブロック 12 を「別のユーザー」がマイニングした最初のブロックと特定していたからである。
 
-PLOS ONE の発見は、ブロック 12 が ExtraNonce パターンとは異なるにもかかわらず Patoshi ナンス指紋を示すことを意味する。これは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がカスタム Patoshi マイニングソフトウェアと標準 [Bitcoin v0.1 クライアント](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)を同時に実行していたと解釈するのが最も整合的である。ナンス分割の指紋は両方の設定で持続するが、ExtraNonce のインクリメント挙動は異なる。
+PLOS ONE の発見は、ブロック 12 が ExtraNonce パターンとは異なるにもかかわらず Patoshi ナンス指紋を示すことを意味する。これは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がカスタム Patoshi マイニングソフトウェアと標準 [Bitcoin v0.1 クライアント](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)を同時に実行していたと解釈するのが最も整合的である。ナンス分割の指紋は両方の設定で持続するが、ExtraNonce のインクリメント挙動は異なる。
 
 **異常の規模：**
 

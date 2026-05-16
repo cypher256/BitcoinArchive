@@ -14,7 +14,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/29/"
 relatedEntries:
-  - sourceforge/2009-12-16-bitcoin-v02-released
+  - aftermath/2009-12-16-bitcoin-v02-released
 translationStatus: complete
 ---
 

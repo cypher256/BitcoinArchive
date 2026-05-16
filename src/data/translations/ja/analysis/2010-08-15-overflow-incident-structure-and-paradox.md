@@ -41,7 +41,7 @@ secondarySources:
     url: "https://blockstream.info/block-height/74691"
 relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
-  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
@@ -59,7 +59,7 @@ translationStatus: complete
 
 元の合意ルールでは、ブロック 74638 は有効だった。各出力値は非負であり、出力の**合計**に対する整数オーバーフロー検査が欠落していた。Bitcoin v0.3.9 を実行するノードはブロックを目にし、自分が知るルールで検証し、受け入れた。
 
-[Bitcoin v0.3.10](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) は `CheckTransaction()` に 2 つの新しいチェックを追加した:
+[Bitcoin v0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) は `CheckTransaction()` に 2 つの新しいチェックを追加した:
 
 1. 各出力 ≤ MAX_MONEY (21,000,000 BTC)
 2. 全出力の合計 ≤ MAX_MONEY
@@ -70,7 +70,7 @@ translationStatus: complete
 
 これが、ネットワーク全体を最初から再調整することなく救出が成立した理由である。ルール変更は制約方向に**加算的**だった — 拒絶を増やしただけで、許容を増やしてはいない。アップグレードしなかったノードも、累積仕事量が先行するチェーンを依然として追跡しており、パッチ適用チェーンの仕事量が先行するようになった時点で、未パッチノードも結果として正典チェーンに行き着いた。
 
-その代償として支払われたもの: 約 15 時間の窓 (8 月 15 日 17:45 UTC のブロック 74638 から 8 月 16 日 09:00 UTC のブロック 74691 まで) のあいだ、正典チェーンが争われた。この窓のあいだ、どちらのチェーンで承認されたトランザクションも最終とみなすのは安全ではなかった。サトシの [bitcoin-list 警告](/BitcoinArchive/ja/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *「2010 年 8 月 15 日 17:05 UTC（ブロック 74638）以降に発生したトランザクションを信頼しないでほしい」* — は、ネットワーク稼働の停止ではなく、相手方信頼に対する 15 時間の停止だった。
+その代償として支払われたもの: 約 15 時間の窓 (8 月 15 日 17:45 UTC のブロック 74638 から 8 月 16 日 09:00 UTC のブロック 74691 まで) のあいだ、正典チェーンが争われた。この窓のあいだ、どちらのチェーンで承認されたトランザクションも最終とみなすのは安全ではなかった。サトシの [bitcoin-list 警告](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *「2010 年 8 月 15 日 17:05 UTC（ブロック 74638）以降に発生したトランザクションを信頼しないでほしい」* — は、ネットワーク稼働の停止ではなく、相手方信頼に対する 15 時間の停止だった。
 
 機構は機能した。機構の代償は明確に開示された。両方が構造的な記録に属する。
 

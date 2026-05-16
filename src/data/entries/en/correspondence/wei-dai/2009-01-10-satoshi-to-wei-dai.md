@@ -19,7 +19,7 @@ tags:
   - "origins"
 ---
 
-I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, [Bitcoin v0.1](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). Details, download and screenshots are at www.bitcoin.org
+I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, [Bitcoin v0.1](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). Details, download and screenshots are at www.bitcoin.org
 
 I think it achieves nearly all the goals you set out to solve in your b-money paper.
 

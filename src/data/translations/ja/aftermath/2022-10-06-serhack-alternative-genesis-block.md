@@ -27,7 +27,7 @@ secondarySources:
   - name: "Bitcoin Wiki — Genesis block"
     url: "https://en.bitcoin.it/wiki/Genesis_block"
 relatedEntries:
-  - sourceforge/2009-01-03-genesis-block
+  - aftermath/2009-01-03-genesis-block
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
 translationStatus: complete

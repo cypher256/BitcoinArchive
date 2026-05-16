@@ -24,10 +24,10 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"
 relatedEntries:
   - "emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg"
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-09-bitcoin-v01-released
 ---
 
-On January 17, 2009, eight days after [Bitcoin v0.1 was released](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/), an Indiana University astrophysicist named Jonathan Thornburg [posted to the cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) two predictions that would echo through Bitcoin's history:
+On January 17, 2009, eight days after [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/), an Indiana University astrophysicist named Jonathan Thornburg [posted to the cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) two predictions that would echo through Bitcoin's history:
 
 > "In the modern world, no major government wants to allow untracable international financial transactions above some fairly modest size thresholds."
 

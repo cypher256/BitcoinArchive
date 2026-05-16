@@ -30,7 +30,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2024年8月6日、サイバーセキュリティ研究者 Forensicxs が「Bitcoin Core v0.1: a code walkthrough」を公開した — [2009年1月9日にリリースされた](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のオリジナルのビットコインソースコードの包括的な分析である。
+2024年8月6日、サイバーセキュリティ研究者 Forensicxs が「Bitcoin Core v0.1: a code walkthrough」を公開した — [2009年1月9日にリリースされた](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のオリジナルのビットコインソースコードの包括的な分析である。
 
 **範囲:** Forensicxs は Bitcoin v0.1 コードベースを **31,794 行**（31 ファイル）として分析している。C++ で記述され、MIT X11 ライセンスの下でリリースされている。なお本アーカイブのソースコード分析では、ローカル一次ソース上の v0.1 系 C++/ヘッダー行数は約 19,901 行、v0.3.19 までの成長で 31,909 行として扱う。したがって 31,794 行は Forensicxs 記事内のカウントであり、本アーカイブの基準値ではない（カウント対象ファイル・空行・コメント・wxWidgets ヘッダー扱いなどの差で値がずれる）。
 

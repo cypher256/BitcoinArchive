@@ -22,7 +22,7 @@ secondarySources:
   - name: "Blockworks — Bitcoin's journey to the mainstream started 15 years ago"
     url: "https://blockworks.co/news/satoshi-slashdot-bitcoin-evolution"
 relatedEntries:
-  - sourceforge/2010-07-06-bitcoin-v03-released
+  - aftermath/2010-07-06-bitcoin-v03-released
   - emails/bitcoin-list/2010-07-06-bitcoin-0-3-released
   - aftermath/2010-07-15-jeff-garzik-biography
   - forum/bitcointalk/topic-1347/2010-10-04-jgarzik-msg15215

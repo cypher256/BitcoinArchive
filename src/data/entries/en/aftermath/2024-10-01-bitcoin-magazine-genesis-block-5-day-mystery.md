@@ -27,12 +27,12 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Genesis_block"
 relatedEntries:
   - analysis/2009-01-03-genesis-block-hardcode-analysis
-  - sourceforge/2009-01-03-genesis-block
+  - aftermath/2009-01-03-genesis-block
   - aftermath/2022-10-06-serhack-alternative-genesis-block
 translationStatus: complete
 ---
 
-On October 1, 2024, Bitcoin Magazine's Pete Rizzo published an investigation into one of Bitcoin's most enduring technical mysteries: the approximately 5 days and 8 hours that elapsed between the [Genesis Block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/) (Block 0, January 3, 2009 at 18:15:05 UTC) and Block 1 (January 9, 2009 at 02:54:25 UTC).
+On October 1, 2024, Bitcoin Magazine's Pete Rizzo published an investigation into one of Bitcoin's most enduring technical mysteries: the approximately 5 days and 8 hours that elapsed between the [Genesis Block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) (Block 0, January 3, 2009 at 18:15:05 UTC) and Block 1 (January 9, 2009 at 02:54:25 UTC).
 
 **The mystery:**
 
@@ -46,6 +46,6 @@ Under normal mining conditions with [Satoshi](/BitcoinArchive/participants/satos
 
 3. **Technical debugging** — Satoshi may have spent the intervening days fixing bugs discovered during initial testing, particularly in the peer-to-peer connection code that he later acknowledged had issues.
 
-4. **v0.1 preparation** — The gap aligns with the time needed to prepare the [Bitcoin v0.1 software release](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) (announced the prior day, January 8, on the Cryptography Mailing List), suggesting Satoshi was packaging the software for public distribution.
+4. **v0.1 preparation** — The gap aligns with the time needed to prepare the [Bitcoin v0.1 software release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) (announced the prior day, January 8, on the Cryptography Mailing List), suggesting Satoshi was packaging the software for public distribution.
 
 The article notes that because the Genesis Block is hardcoded into Bitcoin's source code (unlike all subsequent blocks which are mined through proof-of-work), its timestamp may not represent the actual moment of creation. This technical distinction makes the true timeline of Bitcoin's birth fundamentally unknowable. The hardcode mechanism — and what it implies for the gap, for cryptographic attribution of Block 0, and for the unspendable 50 BTC — is examined in detail in the [genesis block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/).

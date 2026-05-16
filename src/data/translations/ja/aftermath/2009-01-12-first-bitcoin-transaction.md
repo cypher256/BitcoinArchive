@@ -36,7 +36,7 @@ translationStatus: complete
 
 **トランザクション ID:** `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`
 
-ハル・フィニーは[ソフトウェア公開日](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)（2009年1月9日）にビットコインをダウンロードし、ブロック 70 付近からマイニングを開始していた。サトシ以外でビットコインノードを稼働させた最初の人物とされる。この送金の前日、フィニーは有名なツイートを投稿している：[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)
+ハル・フィニーは[ソフトウェア公開日](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)（2009年1月9日）にビットコインをダウンロードし、ブロック 70 付近からマイニングを開始していた。サトシ以外でビットコインノードを稼働させた最初の人物とされる。この送金の前日、フィニーは有名なツイートを投稿している：[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)
 
 この送金は技術的テスト — ビットコインの P2P ネットワーク、トランザクション検証、分散型台帳が正しく機能するかの確認 — であると同時に、象徴的なマイルストーンでもあった。ビットコインは理論から実践へと移行した。仲介者なしで、信頼ではなく暗号学的証明によって検証されて、価値がある人物から別の人物へ移転されたのだ。
 

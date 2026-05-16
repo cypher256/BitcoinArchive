@@ -35,7 +35,7 @@ On January 12, 2009, at 03:30:25 UTC, [Satoshi Nakamoto](/BitcoinArchive/partici
 
 **Transaction ID:** `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`
 
-Hal Finney had downloaded the [Bitcoin software on its release day](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/) (January 9, 2009) and began mining around Block 70, making him the first known person other than Satoshi to run a Bitcoin node. The day before this transaction, Finney posted his famous tweet: ["Running bitcoin."](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)
+Hal Finney had downloaded the [Bitcoin software on its release day](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) (January 9, 2009) and began mining around Block 70, making him the first known person other than Satoshi to run a Bitcoin node. The day before this transaction, Finney posted his famous tweet: ["Running bitcoin."](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)
 
 The transaction served as both a technical test — verifying that Bitcoin's peer-to-peer network, transaction validation, and distributed ledger functioned correctly — and a symbolic milestone. Bitcoin had moved from theory to practice: value was transferred from one person to another, without any intermediary, verified by cryptographic proof rather than trust.
 

@@ -27,7 +27,7 @@ secondarySources:
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
 ---
 
-Nearly five months after the August 2008 exchange, Satoshi wrote to Adam Back one last time, the day after [Bitcoin v0.1 was released](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). The load-bearing line of the email — Satoshi's own announcement of the v0.1 release to one of the first cypherpunks he had contacted — reads:
+Nearly five months after the August 2008 exchange, Satoshi wrote to Adam Back one last time, the day after [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). The load-bearing line of the email — Satoshi's own announcement of the v0.1 release to one of the first cypherpunks he had contacted — reads:
 
 > I just released the open source implementation of my paper, Bitcoin v0.1. Details, download and screenshots are at www.bitcoin.org
 

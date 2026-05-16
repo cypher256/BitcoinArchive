@@ -39,7 +39,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2009-01-10-satoshi-launch-environment"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
-  - "sourceforge/2009-01-03-genesis-block"
+  - "aftermath/2009-01-03-genesis-block"
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery"
@@ -59,7 +59,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-ブロック 0 ——[ビットコインのジェネシスブロック](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/) —— は Bitcoin v0.1 のソースコード内に定数としてハードコードされている。空のブロックデータベースで起動したノードは、ピアからブロック 0 をダウンロードしない —— 他のすべてのノードと同じパラメーターからローカルに再構築する。ブロックは暗号学的な意味で証明可能な作成者を持たない。50 BTC の coinbase は使用不能：ソースコード内のたった 1 バイトの非対称性が、ブロック 0 の coinbase 登録方法を後続全ブロックと分けている。そして 2009 年 1 月 3 日のタイムスタンプから、最初に公開採掘されたブロック 1（2009 年 1 月 9 日）まで、サトシの採掘プロセスが後続ブロックを残さなかった 5 日間がある。本分析はソースコードの機構を読み、ジェネシスブロックをめぐる 3 つの長期論点 —— 5 日間の空白、帰属、使用不能 coinbase —— にそれが何を示唆するかを検討する。
+ブロック 0 ——[ビットコインのジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) —— は Bitcoin v0.1 のソースコード内に定数としてハードコードされている。空のブロックデータベースで起動したノードは、ピアからブロック 0 をダウンロードしない —— 他のすべてのノードと同じパラメーターからローカルに再構築する。ブロックは暗号学的な意味で証明可能な作成者を持たない。50 BTC の coinbase は使用不能：ソースコード内のたった 1 バイトの非対称性が、ブロック 0 の coinbase 登録方法を後続全ブロックと分けている。そして 2009 年 1 月 3 日のタイムスタンプから、最初に公開採掘されたブロック 1（2009 年 1 月 9 日）まで、サトシの採掘プロセスが後続ブロックを残さなかった 5 日間がある。本分析はソースコードの機構を読み、ジェネシスブロックをめぐる 3 つの長期論点 —— 5 日間の空白、帰属、使用不能 coinbase —— にそれが何を示唆するかを検討する。
 
 技術的事実は Bitcoin v0.1 ソースコードで検証可能。解釈的部分はその旨を明記する。
 

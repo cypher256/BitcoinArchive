@@ -26,7 +26,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - aftermath/2010-07-12-knightmb-biography
-  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
@@ -44,7 +44,7 @@ The single sentence that anchors knightmb's place in the technical record sits i
 
 > "I started with knightmb's blockchain snapshot."
 
-The context is documented in this Archive's [Value overflow incident entry](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/). At approximately 18:08 UTC, [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed Block 74638 had created roughly 184 billion BTC out of an integer overflow in the transaction-validation code. Within five hours, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) published [Bitcoin v0.3.10](/BitcoinArchive/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) containing a soft-fork patch, and Gavin Andresen began testing his own emergency patch in parallel. Both patches required a clean copy of the pre-corruption blockchain — anyone applying them needed to rewind to a block before 74638 and resync from there. With clients across the network already poisoned by the bad block, the question of where to obtain a clean chain was non-trivial.
+The context is documented in this Archive's [Value overflow incident entry](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/). At approximately 18:08 UTC, [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed Block 74638 had created roughly 184 billion BTC out of an integer overflow in the transaction-validation code. Within five hours, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) published [Bitcoin v0.3.10](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) containing a soft-fork patch, and Gavin Andresen began testing his own emergency patch in parallel. Both patches required a clean copy of the pre-corruption blockchain — anyone applying them needed to rewind to a block before 74638 and resync from there. With clients across the network already poisoned by the bad block, the question of where to obtain a clean chain was non-trivial.
 
 knightmb had been hosting public blockchain snapshots from his own nodes for weeks before the incident, as a courtesy for new users who didn't want to wait days for an initial sync. When the overflow hit, those snapshots became the practical recovery substrate. In the same thread, knightmb offered to build a fresh snapshot capped just below block 74,000; Gavin asked him to leave the existing one in place — *"Just leave the old one alone! Older is better. The one that you've had available for a while has been vetted and is the best choice"* — and used it as the starting point for his patch testing.
 

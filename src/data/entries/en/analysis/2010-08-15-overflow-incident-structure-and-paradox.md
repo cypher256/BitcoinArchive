@@ -41,7 +41,7 @@ secondarySources:
     url: "https://blockstream.info/block-height/74691"
 relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
-  - sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix
+  - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
@@ -59,7 +59,7 @@ The fix was a soft fork, not a hard fork. That distinction matters because it ex
 
 Under the original consensus rules, block 74638 was valid. Each output value was non-negative; the integer-overflow check on the *sum* of outputs was missing. A node running Bitcoin v0.3.9 saw the block, validated it under the rules it knew, and accepted it.
 
-[Bitcoin v0.3.10](/BitcoinArchive/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) added two new checks to `CheckTransaction()`:
+[Bitcoin v0.3.10](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) added two new checks to `CheckTransaction()`:
 
 1. Each output ≤ MAX_MONEY (21,000,000 BTC).
 2. Sum of outputs ≤ MAX_MONEY.
@@ -70,7 +70,7 @@ The structural property of a soft fork is that the new rules are a *strict subse
 
 This is why the rescue was possible without re-coordinating the network from scratch. The rule change was *additive* in the restrictive sense — adding rejections, not adding acceptances. Nodes that didn't upgrade still tracked the chain whose work led; once the patched chain's work led, even un-patched nodes ended up on the canonical chain.
 
-The cost paid in exchange: a roughly 15-hour window (from block 74638 at 17:45 UTC Aug 15 to block 74691 at 09:00 UTC Aug 16) during which the canonical chain was contested. During that window, transactions confirmed on either chain were not safe to treat as final. Satoshi's [bitcoin-list alert](/BitcoinArchive/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *"do not trust any transactions happening after timestamp 1281891957 ([Aug 15 17:05 UTC](/BitcoinArchive/entries/sourceforge/2010-08-15-bitcoin-v0310-overflow-bug-fix/)) until the situation is resolved"* — was a 15-hour halt on counterparty trust, not a halt on network operation.
+The cost paid in exchange: a roughly 15-hour window (from block 74638 at 17:45 UTC Aug 15 to block 74691 at 09:00 UTC Aug 16) during which the canonical chain was contested. During that window, transactions confirmed on either chain were not safe to treat as final. Satoshi's [bitcoin-list alert](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *"do not trust any transactions happening after timestamp 1281891957 ([Aug 15 17:05 UTC](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/)) until the situation is resolved"* — was a 15-hour halt on counterparty trust, not a halt on network operation.
 
 The mechanism worked. The mechanism's cost was disclosed plainly. Both belong in the structural account.
 

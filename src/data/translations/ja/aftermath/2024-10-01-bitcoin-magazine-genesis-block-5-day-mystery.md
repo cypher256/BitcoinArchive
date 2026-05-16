@@ -27,12 +27,12 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Genesis_block"
 relatedEntries:
   - analysis/2009-01-03-genesis-block-hardcode-analysis
-  - sourceforge/2009-01-03-genesis-block
+  - aftermath/2009-01-03-genesis-block
   - aftermath/2022-10-06-serhack-alternative-genesis-block
 translationStatus: complete
 ---
 
-2024年10月1日、Bitcoin Magazine のピート・リゾが、ビットコインの最も永続的な技術的謎の一つについての調査を発表した：[ジェネシスブロック](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)（ブロック 0、2009年1月3日 18:15:05 UTC）とブロック 1（2009年1月9日 02:54:25 UTC）の間の約 5日8時間の空白である。
+2024年10月1日、Bitcoin Magazine のピート・リゾが、ビットコインの最も永続的な技術的謎の一つについての調査を発表した：[ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)（ブロック 0、2009年1月3日 18:15:05 UTC）とブロック 1（2009年1月9日 02:54:25 UTC）の間の約 5日8時間の空白である。
 
 **謎：**
 
@@ -46,6 +46,6 @@ translationStatus: complete
 
 3. **技術的デバッグ** — サトシは初期テスト中に発見されたバグの修正に介在日を費やした可能性がある。特に、後に問題があったと認めたピアツーピア接続コードに関して。
 
-4. **v0.1 の準備** — この空白は [Bitcoin v0.1 ソフトウェアリリース](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)の準備に必要な時間と一致する（前日の 1 月 8 日に暗号学メーリングリストで発表）。サトシは公開配布用のソフトウェアをパッケージングしていたと考えられる。
+4. **v0.1 の準備** — この空白は [Bitcoin v0.1 ソフトウェアリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)の準備に必要な時間と一致する（前日の 1 月 8 日に暗号学メーリングリストで発表）。サトシは公開配布用のソフトウェアをパッケージングしていたと考えられる。
 
 ジェネシスブロックは（プルーフ・オブ・ワークでマイニングされる後続のすべてのブロックとは異なり）ビットコインのソースコードにハードコードされているため、そのタイムスタンプは実際の作成時刻を表していない可能性がある。この技術的な区別により、ビットコイン誕生の真のタイムラインは根本的に知り得ないものとなっている。このハードコード機構 — それが空白、ブロック 0 の暗号学的帰属、使用不能な 50 BTC に対して何を示唆するか — は、[ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)で詳しく検討されている。

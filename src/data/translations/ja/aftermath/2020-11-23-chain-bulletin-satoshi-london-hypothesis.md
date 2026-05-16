@@ -25,7 +25,7 @@ secondarySources:
   - name: "The Times January 3, 2009 — Archived front page"
     url: "https://www.thetimes03jan2009.com/"
 relatedEntries:
-  - sourceforge/2009-01-03-genesis-block
+  - aftermath/2009-01-03-genesis-block
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2009-01-09-satoshi-code-analysis
@@ -36,7 +36,7 @@ translationStatus: complete
 
 **タイムズの見出し証拠：**
 
-[ジェネシスブロック](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/)には「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というメッセージが含まれている。カライヴァノフは、この正確な見出しがタイムズの英国版印刷版にのみ掲載されたことを示した — 米国版は大幅に異なる内容とレイアウトであった。2008年、タイムズの 180 万人の印刷版読者のうち 77 万人（43%）がロンドン在住であり、物理的な新聞へのアクセス地点として統計的にロンドンが最も可能性が高い。
+[ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)には「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」というメッセージが含まれている。カライヴァノフは、この正確な見出しがタイムズの英国版印刷版にのみ掲載されたことを示した — 米国版は大幅に異なる内容とレイアウトであった。2008年、タイムズの 180 万人の印刷版読者のうち 77 万人（43%）がロンドン在住であり、物理的な新聞へのアクセス地点として統計的にロンドンが最も可能性が高い。
 
 **タイムスタンプ分析：**
 

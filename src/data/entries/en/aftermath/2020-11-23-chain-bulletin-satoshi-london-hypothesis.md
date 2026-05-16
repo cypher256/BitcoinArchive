@@ -25,7 +25,7 @@ secondarySources:
   - name: "The Times January 3, 2009 — Archived front page"
     url: "https://www.thetimes03jan2009.com/"
 relatedEntries:
-  - sourceforge/2009-01-03-genesis-block
+  - aftermath/2009-01-03-genesis-block
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2009-01-09-satoshi-code-analysis
@@ -36,7 +36,7 @@ On November 23, 2020, Doncho Karaivanov published a detailed analysis on Chain B
 
 **The Times headline evidence:**
 
-The [Genesis Block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/) contains the message: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks." Karaivanov demonstrates that this exact headline appeared only in the UK print edition of The Times of London — not in US distributions, which carried substantially different content and layout. In 2008, 770,000 of The Times' 1.8 million print readers (43%) were London-based, making the capital statistically the most likely access point for the physical newspaper.
+The [Genesis Block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) contains the message: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks." Karaivanov demonstrates that this exact headline appeared only in the UK print edition of The Times of London — not in US distributions, which carried substantially different content and layout. In 2008, 770,000 of The Times' 1.8 million print readers (43%) were London-based, making the capital statistically the most likely access point for the physical newspaper.
 
 **Timestamp analysis:**
 

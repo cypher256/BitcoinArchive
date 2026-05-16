@@ -48,8 +48,8 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
-  - sourceforge/2009-01-03-genesis-block
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-03-genesis-block
+  - aftermath/2009-01-09-bitcoin-v01-released
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
 translationStatus: complete
 ---
@@ -65,9 +65,9 @@ timeline
          : ビットコイン ホワイトペーパーを 暗号学メーリングリストに 発表 (10月)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : ジェネシスブロックの パラメーター定義 (1月3日)
-    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/
          : Bitcoin v0.1 公開 (1月8〜9日)
-    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : 史上初の 個人間送金 - ハル・フィニーへ 10 BTC (1月12日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/
     2010 : アンドレセンに 「他プロジェクトに 取り組んでいる」 とメールで伝達 - 最初の撤退シグナル (9月)
@@ -88,11 +88,11 @@ timeline
 
 ### ローンチ
 
-2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/sourceforge/2009-01-03-genesis-block/) のパラメーターを定義した。その coinbase 欄に埋め込まれていたのは、当日付の『タイムズ』 紙一面の見出し：
+2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) のパラメーターを定義した。その coinbase 欄に埋め込まれていたのは、当日付の『タイムズ』 紙一面の見出し：
 
 > 「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」
 
-ブロック 0 はソースコード内に定数としてハードコードされており、各ノードが同じパラメーターからローカルに再構築する（詳細は[ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)を参照）。1月8日、[Bitcoin v0.1 が公開された](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/)。その 4 日後、ブロック 170 がサトシから[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)への 10 BTC を運んだ —— [史上初の個人間ビットコイン送金](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
+ブロック 0 はソースコード内に定数としてハードコードされており、各ノードが同じパラメーターからローカルに再構築する（詳細は[ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)を参照）。1月8日、[Bitcoin v0.1 が公開された](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)。その 4 日後、ブロック 170 がサトシから[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)への 10 BTC を運んだ —— [史上初の個人間ビットコイン送金](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
 
 ### 開発とコミュニケーション
 

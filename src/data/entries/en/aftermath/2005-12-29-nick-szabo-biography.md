@@ -63,7 +63,7 @@ timeline
     2008 : "Anybody want to help me code one up" Unenumerated comment (Apr 27)
     %% link: /BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 released; Szabo continues Unenumerated (Jan)
-    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
     2011 : "Nakamoto improved my design" Unenumerated post (May 28)
     %% link: /BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
     2013 : Skye Grey + TechCrunch articulate Szabo = Satoshi (Dec)

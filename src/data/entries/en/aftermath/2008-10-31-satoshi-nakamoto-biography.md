@@ -48,8 +48,8 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
-  - sourceforge/2009-01-03-genesis-block
-  - sourceforge/2009-01-09-bitcoin-v01-released
+  - aftermath/2009-01-03-genesis-block
+  - aftermath/2009-01-09-bitcoin-v01-released
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
 ---
 
@@ -64,9 +64,9 @@ timeline
          : Bitcoin whitepaper published to the cryptography mailing list (Oct)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : Genesis block parameters defined (Jan 3)
-    %% link: /BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/
          : Bitcoin v0.1 released (Jan 8 - 9)
-    %% link: /BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : First person-to-person transaction - 10 BTC to Hal Finney (Jan 12)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/
     2010 : Tells Andresen privately about working on other projects - earliest withdrawal signal (Sep)
@@ -87,11 +87,11 @@ The earliest documented communication is the [August 20, 2008 email to Adam Back
 
 ### Launch
 
-On January 3, 2009, Satoshi defined the parameters of [Block 0](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/). Embedded in its coinbase field, the front-page headline of *The Times* from that day:
+On January 3, 2009, Satoshi defined the parameters of [Block 0](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/). Embedded in its coinbase field, the front-page headline of *The Times* from that day:
 
 > "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
 
-Block 0 is hardcoded as a constant in the source — every node reconstructs it locally from the same parameters (see the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)). On January 8, [Bitcoin v0.1 was released](/BitcoinArchive/entries/sourceforge/2009-01-09-bitcoin-v01-released/). Four days later, Block 170 carried 10 BTC from Satoshi to [Hal Finney](/BitcoinArchive/participants/hal-finney/) — the [first person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
+Block 0 is hardcoded as a constant in the source — every node reconstructs it locally from the same parameters (see the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)). On January 8, [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). Four days later, Block 170 carried 10 BTC from Satoshi to [Hal Finney](/BitcoinArchive/participants/hal-finney/) — the [first person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
 
 ### Development and Communication
 

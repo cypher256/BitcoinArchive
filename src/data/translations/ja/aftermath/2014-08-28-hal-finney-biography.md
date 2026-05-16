@@ -81,7 +81,7 @@ timeline
     1996 : PGP 社の 最初期従業員として雇用
     2004 : Reusable Proof-of-Work (RPOW) 考案
     2009 : Bitcoin v0.1 を公開日にダウンロード、 サトシ以外で 最初とされるノード (1月9日)
-    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : 「Running bitcoin」 ツイート (1月11日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/
          : ブロック 170 でサトシから 10 BTC 受信 - 史上初の P2P 送金 (1月12日)
@@ -104,7 +104,7 @@ timeline
 2004年、フィニーは最初の Reusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。アダム・バックの Hashcash から、ウェイ・ダイの b-money、ニック・サボの Bit Gold、そして RPOW を経てビットコインへと至る技術系譜は、サトシ自身がその運動に対してどのような位置にいたかという問いとあわせて、[サイファーパンク核心とサトシの知的位置についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で精査されている。
 
 ### ビットコイン
-2009年1月9日、フィニーはリリース当日に [Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/) をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外で最初にビットコインノードを稼働させたとされる人物となった。ブロック 70 付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック 170 でサトシから 10 BTC を受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
+2009年1月9日、フィニーはリリース当日に [Bitcoin v0.1](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/) をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外で最初にビットコインノードを稼働させたとされる人物となった。ブロック 70 付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック 170 でサトシから 10 BTC を受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
 
 ### ALS と最後の年月
 

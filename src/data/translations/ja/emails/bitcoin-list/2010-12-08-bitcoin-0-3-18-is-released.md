@@ -14,7 +14,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/33/"
 relatedEntries:
-  - sourceforge/2010-12-08-bitcoin-v0318-released
+  - aftermath/2010-12-08-bitcoin-v0318-released
 translationStatus: complete
 ---
 

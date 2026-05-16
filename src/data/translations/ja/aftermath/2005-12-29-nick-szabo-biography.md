@@ -64,7 +64,7 @@ timeline
     2008 : 「誰か Bit Gold を実装してくれないか」 Unenumerated コメント (4月27日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 公開、 サボは Unenumerated 継続 (1月)
-    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
     2011 : 「Nakamoto improved my design」 Unenumerated 投稿 (5月28日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
     2013 : Skye Grey + TechCrunch サボ＝サトシ説 (12月)

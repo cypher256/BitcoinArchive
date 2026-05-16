@@ -99,7 +99,7 @@ gantt
 
     section コードベース
     v0.1 公開 (名称 「Bitcoin」)             :milestone, 2009-01-09, 1d
-    %% link: /BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
     Bitcoin-Qt (v0.5 で Qt GUI)             :milestone, 2011-11-20, 1d
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/
     PR #3408 マージ (Core への改名)         :milestone, 2013-12-16, 1d

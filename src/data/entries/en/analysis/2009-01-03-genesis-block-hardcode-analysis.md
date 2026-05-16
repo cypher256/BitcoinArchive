@@ -39,7 +39,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2009-01-10-satoshi-launch-environment"
   - "aftermath/2008-10-31-satoshi-nakamoto-biography"
-  - "sourceforge/2009-01-03-genesis-block"
+  - "aftermath/2009-01-03-genesis-block"
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery"
@@ -58,7 +58,7 @@ inlineLinkKeywords:
   - "unspendable 50 BTC"
 ---
 
-Block 0 — the [Bitcoin genesis block](/BitcoinArchive/entries/sourceforge/2009-01-03-genesis-block/) — is hardcoded as a constant in the Bitcoin v0.1 source. When a node starts with an empty block database, it does not download Block 0 from peers; it reconstructs Block 0 locally from the same parameters every other node uses. The block has no provable creator in the cryptographic sense. Its 50 BTC coinbase is unspendable: a one-byte source-code asymmetry separates the way Block 0's coinbase is registered from every subsequent block's. And between its January 3, 2009 timestamp and the first publicly-mined Block 1 on January 9, five days passed in which Satoshi's mining process produced no recorded successor. This analysis reads the mechanism in the source code and what it implies for three long-discussed questions about the genesis block: the five-day gap, the attribution, and the unspendable coinbase.
+Block 0 — the [Bitcoin genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) — is hardcoded as a constant in the Bitcoin v0.1 source. When a node starts with an empty block database, it does not download Block 0 from peers; it reconstructs Block 0 locally from the same parameters every other node uses. The block has no provable creator in the cryptographic sense. Its 50 BTC coinbase is unspendable: a one-byte source-code asymmetry separates the way Block 0's coinbase is registered from every subsequent block's. And between its January 3, 2009 timestamp and the first publicly-mined Block 1 on January 9, five days passed in which Satoshi's mining process produced no recorded successor. This analysis reads the mechanism in the source code and what it implies for three long-discussed questions about the genesis block: the five-day gap, the attribution, and the unspendable coinbase.
 
 Technical claims are verifiable against the Bitcoin v0.1 source. Interpretive sections are labeled as such.
 

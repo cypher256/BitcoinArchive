@@ -21,7 +21,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-お知らせしたかったのだが、数か月前にお送りした論文の完全な実装、[Bitcoin v0.1](/BitcoinArchive/ja/entries/sourceforge/2009-01-09-bitcoin-v01-released/) をリリースした。詳細、ダウンロード、スクリーンショットは www.bitcoin.org にある。
+お知らせしたかったのだが、数か月前にお送りした論文の完全な実装、[Bitcoin v0.1](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/) をリリースした。詳細、ダウンロード、スクリーンショットは www.bitcoin.org にある。
 
 あなたの b-money 論文で提示された目標のほぼすべてを達成していると思う。
 
