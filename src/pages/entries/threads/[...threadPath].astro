@@ -159,7 +159,7 @@ const breadcrumbs = [
   }
   .thread-count {
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-text);
   }
   .source-badge {
     display: inline-block;
@@ -175,10 +175,10 @@ const breadcrumbs = [
   }
   .participant-link {
     text-decoration: none;
-    color: var(--color-text-muted);
+    color: var(--color-link);
   }
   .participant-link:hover {
-    color: var(--color-text);
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
   .participant-link.satoshi {
@@ -187,9 +187,10 @@ const breadcrumbs = [
   }
   .author-name {
     text-decoration: none;
-    color: inherit;
+    color: var(--color-link);
   }
   .author-name:hover {
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
   .author-name.satoshi {
