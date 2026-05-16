@@ -1,5 +1,5 @@
 ---
-import { useTranslations, formatDate, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
+import { useTranslations, formatDate, formatDateMaybeTime, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
 import { keywordCounts } from '../lib/keyword-index';
@@ -67,7 +67,7 @@ const isSatoshiAuthor =
 
 <div class="entry-meta">
   <span class="date-label">{t('entry.event' as any)}</span>
-  <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
+  <time datetime={date.toISOString()}>{formatDateMaybeTime(date, lang)}</time>
   {updatedAt && (
     <>
       <span class="meta-sep">&middot;</span>

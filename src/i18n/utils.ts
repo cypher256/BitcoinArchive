@@ -60,6 +60,21 @@ export function formatDate(date: Date, lang: Lang): string {
   });
 }
 
+/**
+ * Date + time when the time component is non-zero, otherwise date only.
+ * Use for entry/message metadata where the source had a real timestamp
+ * (forum posts, mailing-list emails, correspondence). Bio / analysis /
+ * BIP entries that anchor to a date-only event keep date-only output.
+ */
+export function formatDateMaybeTime(date: Date, lang: Lang): string {
+  const dateStr = formatDate(date, lang);
+  const hasTime = date.getUTCHours() !== 0 || date.getUTCMinutes() !== 0 || date.getUTCSeconds() !== 0;
+  if (!hasTime) return dateStr;
+  const hh = String(date.getUTCHours()).padStart(2, '0');
+  const mm = String(date.getUTCMinutes()).padStart(2, '0');
+  return `${dateStr} ${hh}:${mm} UTC`;
+}
+
 export function formatDateShort(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
