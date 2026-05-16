@@ -27,24 +27,37 @@ export async function getStaticPaths() {
     }
   }
 
-  return [...threadMap.entries()]
+  // Build a chronologically sorted list of all threads so each thread page
+  // can carry prev/next links pointing to adjacent threads, parallel to the
+  // per-entry nav on individual pages. Anchor each thread to its first
+  // message's date.
+  const allThreads = [...threadMap.entries()]
     .filter(([_, msgs]) => msgs.length >= 2)
     .map(([threadId, msgs]) => {
       msgs.sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime());
-      return {
-        params: { threadPath: threadId },
-        props: {
-          messages: msgs,
-          threadTitle: deriveThreadTitle(threadId, msgs, 'en'),
-          hasJa: (jaThreadCounts.get(threadId) || 0) >= 2,
-        },
-      };
-    });
+      return { threadId, msgs };
+    })
+    .sort((a, b) => a.msgs[0].data.date.getTime() - b.msgs[0].data.date.getTime());
+
+  return allThreads.map(({ threadId, msgs }, idx) => {
+    const prev = idx > 0 ? allThreads[idx - 1] : null;
+    const next = idx < allThreads.length - 1 ? allThreads[idx + 1] : null;
+    return {
+      params: { threadPath: threadId },
+      props: {
+        messages: msgs,
+        threadTitle: deriveThreadTitle(threadId, msgs, 'en'),
+        hasJa: (jaThreadCounts.get(threadId) || 0) >= 2,
+        prevThread: prev ? { id: prev.threadId, title: deriveThreadTitle(prev.threadId, prev.msgs, 'en') } : null,
+        nextThread: next ? { id: next.threadId, title: deriveThreadTitle(next.threadId, next.msgs, 'en') } : null,
+      },
+    };
+  });
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { messages, threadTitle, hasJa } = Astro.props;
+const { messages, threadTitle, hasJa, prevThread, nextThread } = Astro.props;
 
 const rendered = await Promise.all(
   messages.map(async (msg: any) => {
@@ -80,6 +93,18 @@ const breadcrumbs = [
   breadcrumbs={breadcrumbs}
 >
   <article class="container">
+    <nav class="entry-nav entry-nav-top">
+      {prevThread && (
+        <a href={localePath(`/entries/threads/${prevThread.id}/`, lang)} class="nav-prev">
+          &larr; {prevThread.title}
+        </a>
+      )}
+      {nextThread && (
+        <a href={localePath(`/entries/threads/${nextThread.id}/`, lang)} class="nav-next">
+          {nextThread.title} &rarr;
+        </a>
+      )}
+    </nav>
     <header class="thread-header">
       <h1>{threadTitle}</h1>
       <div class="thread-meta">
@@ -133,9 +158,16 @@ const breadcrumbs = [
     </div>
 
     <nav class="entry-nav">
-      <a href={localePath('/entries/', lang)}>
-        &larr; {t('nav.entries')}
-      </a>
+      {prevThread && (
+        <a href={localePath(`/entries/threads/${prevThread.id}/`, lang)} class="nav-prev">
+          &larr; {prevThread.title}
+        </a>
+      )}
+      {nextThread && (
+        <a href={localePath(`/entries/threads/${nextThread.id}/`, lang)} class="nav-next">
+          {nextThread.title} &rarr;
+        </a>
+      )}
     </nav>
   </article>
 </BaseLayout>
@@ -203,12 +235,23 @@ const breadcrumbs = [
     color: var(--color-text-muted);
   }
   .entry-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
     margin-top: 2.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--color-border);
     font-family: var(--font-heading);
     font-size: 0.9rem;
   }
+  .entry-nav-top {
+    margin-top: 0;
+    padding-top: 1rem;
+    border-top: none;
+    margin-bottom: 0;
+  }
+  .nav-prev, .nav-next { max-width: 45%; }
+  .nav-next { margin-left: auto; text-align: right; }
 </style>
 
 <script is:inline>
