@@ -48,6 +48,29 @@ But on the first edit of a session, the gate fires unconditionally.
 
 Write in English. (public repository)
 
+### Length limit — keep under 1,500 bytes
+
+The Cloudflare Pages deployments API rejects commit messages above
+~2,000 bytes with `code: 8000111 "Invalid commit message"`. When that
+happens the wrangler step uploads all files successfully but the
+deployment registration fails — the site stays frozen on the previous
+commit even though GitHub Pages (separate workflow) deploys cleanly,
+so the failure is easy to miss.
+
+- Keep commit messages **under 1,500 bytes** (safe margin)
+- Put long explanations (full file lists, audit findings, design
+  rationale) in the PR body, an Issue, or a STYLE_GUIDE section,
+  not in the commit message
+- Split large changes into multiple commits along logical boundaries
+- If a commit is rejected, recover with an empty commit + short
+  message: `git commit --allow-empty -m "Trigger CF redeploy"`
+  then push. The earlier commit's files are already uploaded;
+  the empty commit just gets the deployment registered.
+
+Past incident (2026-05-17): commit `d16e508b` (Archive-wide JA
+consistency, 25 files) ran 2,625 bytes and was rejected. Recovered
+via empty commit `e488690c`.
+
 ## Build
 
 **NEVER run `npm run build`. Use `npm run check` instead.**
