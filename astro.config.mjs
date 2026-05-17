@@ -23,6 +23,10 @@ const { site, base } = getDeploymentConfig();
 export default defineConfig({
   site,
   base,
+  server: {
+    port: 4321,
+    strictPort: true,
+  },
   i18n: {
     locales: ['en', 'ja'],
     defaultLocale: 'en',
