@@ -1,5 +1,6 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
+import { deriveThreadTitle, resolveThreadId } from '../../data/threads';
 
 const skipOg = process.env.CI !== 'true' && process.env.GENERATE_OG !== 'true';
 
@@ -9,6 +10,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const enEntries = await getCollection('entries');
   const jaEntries = await getCollection('entries_ja');
 
+  type AnyEntry = (typeof enEntries)[number] | (typeof jaEntries)[number];
+
+  // Individual-entry OGP. Biographies are excluded here — their image
+  // is served via /og/participants/<slug>.png, which the biography's
+  // participant page already references.
   const enPaths = enEntries
     .filter((e) => e.data.type !== 'biography')
     .map((entry) => ({
@@ -17,8 +23,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         title: entry.data.title,
         author: entry.data.author,
         date: entry.data.date,
-        source: entry.data.source,
-        isSatoshi: entry.data.isSatoshi,
+        isSatoshiAuthor: entry.data.author.toLowerCase() === 'satoshi nakamoto',
         lang: 'en' as const,
       },
     }));
@@ -31,13 +36,135 @@ export const getStaticPaths: GetStaticPaths = async () => {
         title: entry.data.title,
         author: entry.data.author,
         date: entry.data.date,
-        source: entry.data.source,
-        isSatoshi: entry.data.isSatoshi,
+        isSatoshiAuthor: entry.data.author.toLowerCase() === 'satoshi nakamoto',
         lang: 'ja' as const,
       },
     }));
 
-  return [...enPaths, ...jaPaths];
+  // Thread OGP — per-thread image. Title = derived thread title,
+  // author = first message's author + " 他" / " et al." when multiple
+  // participants exist, date = first message date. Satoshi accent
+  // tracks the first author, mirroring the EntryCard / EntryMeta rule
+  // (the thread's leading author, not any incidental participant).
+  function threadPaths(entries: AnyEntry[], lang: 'en' | 'ja') {
+    const threadMap = new Map<string, AnyEntry[]>();
+    for (const entry of entries) {
+      const tid = resolveThreadId(entry);
+      if (!tid) continue;
+      const list = threadMap.get(tid) ?? [];
+      list.push(entry);
+      threadMap.set(tid, list);
+    }
+    return [...threadMap.entries()]
+      .filter(([_, msgs]) => msgs.length >= 2)
+      .map(([threadId, msgs]) => {
+        msgs.sort(
+          (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
+        );
+        const first = msgs[0];
+        const participantNames = new Set<string>();
+        for (const m of msgs) {
+          for (const p of m.data.participants) {
+            participantNames.add(p.name);
+          }
+        }
+        const author =
+          participantNames.size === 1
+            ? [...participantNames][0]
+            : `${first.data.author}${lang === 'ja' ? ' 他' : ' et al.'}`;
+        const slug =
+          lang === 'ja' ? `ja/threads/${threadId}` : `threads/${threadId}`;
+        return {
+          params: { slug },
+          props: {
+            title: deriveThreadTitle(threadId, msgs, lang),
+            author,
+            date: first.data.date,
+            isSatoshiAuthor:
+              first.data.author.toLowerCase() === 'satoshi nakamoto',
+            lang,
+          },
+        };
+      });
+  }
+
+  // Participant OGP — one image per participant slug. Biography path:
+  // use the biography's own title/author/date when one exists for the
+  // slug as its SUBJECT (subject identification = participants[0],
+  // matching getBiographyForParticipant in src/i18n/utils.ts —
+  // biographies routinely list other people in their participants[]
+  // alongside the subject, so `.some()` would mis-attribute). No-bio
+  // path: use the participant display name + a "related N entries"
+  // label and the oldest related entry's date.
+  function participantPaths(entries: AnyEntry[], lang: 'en' | 'ja') {
+    const nameMap = new Map<string, string>();
+    const relatedDates = new Map<string, Date[]>();
+    const bioMap = new Map<string, AnyEntry>();
+    for (const entry of entries) {
+      if (entry.data.type === 'biography') {
+        const subject = entry.data.participants[0];
+        if (subject && !bioMap.has(subject.slug)) {
+          bioMap.set(subject.slug, entry);
+        }
+      }
+      for (const p of entry.data.participants) {
+        if (!nameMap.has(p.slug)) nameMap.set(p.slug, p.name);
+        if (entry.data.type !== 'biography') {
+          const list = relatedDates.get(p.slug) ?? [];
+          list.push(entry.data.date);
+          relatedDates.set(p.slug, list);
+        }
+      }
+    }
+    return [...nameMap.entries()].map(([slug, name]) => {
+      const bio = bioMap.get(slug);
+      const ogSlug =
+        lang === 'ja' ? `ja/participants/${slug}` : `participants/${slug}`;
+      if (bio) {
+        return {
+          params: { slug: ogSlug },
+          props: {
+            title: bio.data.title,
+            author: bio.data.author,
+            date: bio.data.date,
+            isSatoshiAuthor: slug === 'satoshi-nakamoto',
+            lang,
+          },
+        };
+      }
+      const dates = relatedDates.get(slug) ?? [];
+      const oldest =
+        dates.length > 0
+          ? new Date(Math.min(...dates.map((d) => d.getTime())))
+          : new Date();
+      const count = dates.length;
+      return {
+        params: { slug: ogSlug },
+        props: {
+          title: name,
+          author:
+            lang === 'ja' ? `関連 ${count} 件` : `${count} related entries`,
+          date: oldest,
+          isSatoshiAuthor: slug === 'satoshi-nakamoto',
+          lang,
+        },
+      };
+    });
+  }
+
+  const enThreadPaths = threadPaths(enEntries, 'en');
+  const jaThreadPaths = threadPaths(jaEntries, 'ja');
+  const enParticipantPaths = participantPaths(enEntries, 'en');
+  const jaParticipantPaths = participantPaths(jaEntries, 'ja');
+
+  return [
+    ...enPaths,
+    ...jaPaths,
+    ...enThreadPaths,
+    ...jaThreadPaths,
+    ...enParticipantPaths,
+    ...jaParticipantPaths,
+  ];
 };
 
 function formatDate(date: Date, lang: string): string {
@@ -63,21 +190,13 @@ export const GET: APIRoute = async ({ props }) => {
   const fontPath = path.resolve('src/assets/fonts/NotoSansJP-Bold.ttf');
   const fontData = fs.readFileSync(fontPath);
 
-  const { title, author, date, isSatoshi, lang } = props as {
+  const { title, author, date, isSatoshiAuthor, lang } = props as {
     title: string;
     author: string;
     date: Date;
-    source: string;
-    isSatoshi: boolean;
+    isSatoshiAuthor: boolean;
     lang: 'en' | 'ja';
   };
-
-  // Color the author name in the Satoshi accent only when the author
-  // actually is Satoshi. The `isSatoshi` frontmatter flag means "this
-  // entry is about or by Satoshi" — for derivative types (analysis,
-  // biography) that flag is true while the author is Bitcoin Institute.
-  // Same logic as EntryCard / EntryMeta / search (see commit 0efcc45e).
-  const isSatoshiAuthor = author.toLowerCase() === 'satoshi nakamoto';
 
   const displayTitle = truncate(title, 80);
   const displayDate = formatDate(date, lang);

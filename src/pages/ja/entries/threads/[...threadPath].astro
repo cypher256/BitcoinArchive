@@ -90,6 +90,7 @@ const breadcrumbs = [
   description={`会話スレッド: ${threadTitle}（${messages.length}件）`}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/entries/threads/${Astro.params.threadPath}/`, 'en') : undefined}
+  ogImage={`/og/ja/threads/${Astro.params.threadPath}.png`}
   breadcrumbs={breadcrumbs}
 >
   <article class="container">

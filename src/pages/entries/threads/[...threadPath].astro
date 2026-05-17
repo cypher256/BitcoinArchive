@@ -90,6 +90,7 @@ const breadcrumbs = [
   description={`Full conversation thread: ${threadTitle} (${messages.length} messages)`}
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/entries/threads/${Astro.params.threadPath}/`, 'ja') : undefined}
+  ogImage={`/og/threads/${Astro.params.threadPath}.png`}
   breadcrumbs={breadcrumbs}
 >
   <article class="container">

@@ -105,6 +105,7 @@ const structuredData = [
   description={biographyEntry?.data.description ?? `${participantName}のビットコイン初期における投稿・メール・技術的議論のアーカイブ`}
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/participants/${participantSlug}/`, 'en') : undefined}
+  ogImage={`/og/ja/participants/${participantSlug}.png`}
   structuredData={structuredData}
 >
   <div class="container">
