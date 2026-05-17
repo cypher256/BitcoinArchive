@@ -26,6 +26,8 @@ secondarySources:
     url: "https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87"
   - name: "Wikipedia (Japanese) — Winny"
     url: "https://ja.wikipedia.org/wiki/Winny"
+  - name: "winny.info — Mr. 47 thread log (community archive)"
+    url: "https://winny.info/2ch/47.html"
 relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
@@ -53,6 +55,15 @@ timeline
 While serving as a research associate in the Graduate School of Information Science and Technology at the University of Tokyo, Kaneko released a P2P file-sharing system called **Winny** on the [2channel forum](https://en.wikipedia.org/wiki/2channel) in May 2002. Winny used a routing scheme designed to make the origin of each shared file deniable, and grew at peak to a network of millions of Japanese users. Its design drew on Freenet, Gnutella, and the anonymous-routing literature.
 
 Kaneko posted his development announcement anonymously to the 2channel download-software board and continued to develop the software in dialogue with users on that thread. His first post on the thread carried sequence number 47, which the users adopted as his handle — from that point until his real name was disclosed, he was known to the Winny community as **「47 氏」** ("Mr. 47").
+
+The opening post on the thread ([thread log archive](https://winny.info/2ch/47.html)):
+
+<!-- speaker: Isamu Kaneko -->
+> 「暇なんで freenet みたいだけど 2chネラー向きのファイル共有ソフトつーのを作ってみるわ。もちろん Windows ネイティブな。少しまちなー。」
+>
+> *(Loosely: "Got some free time so I'm going to try making a file-sharing app like Freenet but oriented to 2channel users. Windows-native, of course. Hang on a bit.")*
+
+The closing phrase 「少しまちなー」 ("hang on a bit") recurs across Mr. 47's later posts in the same thread — a recognizable tic that gave the anonymous handle a stable voice through the development cycle.
 
 ### Contributory copyright-infringement trial (2004–2011)
 In May 2004, Kyoto Prefectural Police arrested Kaneko on charges of aiding copyright infringement. The prosecution argued that by developing and distributing Winny he had aided the infringement carried out by users who shared copyrighted content using it.

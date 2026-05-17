@@ -26,6 +26,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
   - name: "Wikipedia（日本語）— Winny"
     url: "https://ja.wikipedia.org/wiki/Winny"
+  - name: "winny.info — 47 氏のスレッドログ（コミュニティアーカイブ）"
+    url: "https://winny.info/2ch/47.html"
 relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
@@ -54,6 +56,13 @@ timeline
 金子は東京大学大学院情報理工学系研究科の助手を務めていた時期、2002 年 5 月に [2 ちゃんねる](https://ja.wikipedia.org/wiki/2%E3%81%A1%E3%82%83%E3%82%93%E3%81%AD%E3%82%8B)上で **Winny** と呼ばれる P2P ファイル共有システムを公開した。Winny は、各コンテンツの発信元を否認可能にするように設計されたルーティング方式を採用しており、ピーク時には日本国内で数百万のユーザーを擁するネットワークとなった。Winny の設計は Freenet、Gnutella、匿名ルーティング文献に依拠している。
 
 金子は 2 ちゃんねるダウンロードソフト板に匿名で開発を告知し、その後の利用者とのやり取りを通じて開発を進めた。最初の投稿番号が「47」 であったことから利用者からは「**47 氏**」 と呼ばれるようになり、Winny 公開以後、本名公表まで一貫してこの匿名運用が続いた。
+
+開発予告の第一声 ([スレッドアーカイブ](https://winny.info/2ch/47.html)):
+
+<!-- speaker: Isamu Kaneko -->
+> 「暇なんで freenet みたいだけど 2chネラー向きのファイル共有ソフトつーのを作ってみるわ。もちろん Windows ネイティブな。少しまちなー。」
+
+末尾の「少しまちなー」 は同スレッド以後の 47 氏発言ログで繰り返し現れる定型句で、匿名運用下でも声紋として一貫していた。
 
 ### 著作権法違反幇助裁判（2004–2011 年）
 2004 年 5 月、京都府警は金子を著作権法違反幇助の容疑で逮捕した。検察側の主張は、Winny を開発・配布したことで、Winny を使って著作物を共有したユーザーの行為を幇助した、というものだった。
