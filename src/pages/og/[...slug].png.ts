@@ -1,6 +1,7 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import { deriveThreadTitle, resolveThreadId } from '../../data/threads';
+import { translateParticipantName } from '../../i18n/utils';
 
 const skipOg = process.env.CI !== 'true' && process.env.GENERATE_OG !== 'true';
 
@@ -94,11 +95,19 @@ export const getStaticPaths: GetStaticPaths = async () => {
   // matching getBiographyForParticipant in src/i18n/utils.ts —
   // biographies routinely list other people in their participants[]
   // alongside the subject, so `.some()` would mis-attribute). No-bio
-  // path: use the participant display name + a "related N entries"
-  // label and the oldest related entry's date.
+  // path: use the participant display name (translated through
+  // translateParticipantName for JA, so the OGP matches the page's
+  // <h1>) + a "related N entries" label, anchored to the oldest
+  // non-biography entry that mentions the slug. The page body itself
+  // only lists non-biography entries, so the OGP count and date use
+  // the same scope. When a slug appears only inside other people's
+  // biographies the non-bio scope is empty; fall back to the oldest
+  // date from the full scope so the image stays deterministic
+  // (never `new Date()`).
   function participantPaths(entries: AnyEntry[], lang: 'en' | 'ja') {
     const nameMap = new Map<string, string>();
-    const relatedDates = new Map<string, Date[]>();
+    const nonBioDates = new Map<string, Date[]>();
+    const allDates = new Map<string, Date[]>();
     const bioMap = new Map<string, AnyEntry>();
     for (const entry of entries) {
       if (entry.data.type === 'biography') {
@@ -109,10 +118,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
       }
       for (const p of entry.data.participants) {
         if (!nameMap.has(p.slug)) nameMap.set(p.slug, p.name);
+        const all = allDates.get(p.slug) ?? [];
+        all.push(entry.data.date);
+        allDates.set(p.slug, all);
         if (entry.data.type !== 'biography') {
-          const list = relatedDates.get(p.slug) ?? [];
-          list.push(entry.data.date);
-          relatedDates.set(p.slug, list);
+          const nb = nonBioDates.get(p.slug) ?? [];
+          nb.push(entry.data.date);
+          nonBioDates.set(p.slug, nb);
         }
       }
     }
@@ -132,16 +144,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
           },
         };
       }
-      const dates = relatedDates.get(slug) ?? [];
-      const oldest =
-        dates.length > 0
-          ? new Date(Math.min(...dates.map((d) => d.getTime())))
-          : new Date();
-      const count = dates.length;
+      const nonBio = nonBioDates.get(slug) ?? [];
+      const all = allDates.get(slug) ?? [];
+      const dateScope = nonBio.length > 0 ? nonBio : all;
+      const oldest = new Date(
+        Math.min(...dateScope.map((d) => d.getTime())),
+      );
+      const count = nonBio.length;
       return {
         params: { slug: ogSlug },
         props: {
-          title: name,
+          title: translateParticipantName(name, slug, lang),
           author:
             lang === 'ja' ? `関連 ${count} 件` : `${count} related entries`,
           date: oldest,
