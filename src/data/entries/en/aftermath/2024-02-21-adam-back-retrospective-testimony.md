@@ -28,6 +28,8 @@ secondarySources:
     url: "https://www.thetokendispatch.com/p/adam-back-the-man-who-built-bitcoins"
   - name: "CoinShares — Interview: Adam Back, CEO of Blockstream"
     url: "https://coinshares.com/insights/the-node/interview-adam-back/"
+  - name: "Bitcoininsider — Adam Back on Satoshi Emails, Privacy Concerns and Bitcoin's Early Days (Cointelegraph mirror)"
+    url: "https://www.bitcoininsider.org/article/81008/adam-back-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
 relatedEntries:
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"

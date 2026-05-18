@@ -26,6 +26,8 @@ secondarySources:
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
   - name: "MIT Technology Review — The Man Who Really Built Bitcoin"
     url: "https://www.technologyreview.com/2014/08/15/12784/the-man-who-really-built-bitcoin/"
+  - name: "EconTalk — Andresen on Bitcoin and Virtual Currency"
+    url: "https://www.econtalk.org/andresen-on-bitcoin-and-virtual-currency/"
 relatedEntries:
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice

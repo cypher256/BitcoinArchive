@@ -139,7 +139,7 @@ Wei Dai's 2014 identifiability argument (in his LessWrong AALWA thread) suggests
 
 ### 3.3 Self-denial
 
-Todd publicly denied the claim before and after the documentary's release. His responses ranged from sarcasm ("Oh, no, I am Satoshi. I'm Satoshi Nakamoto." — "Of course I'm Satoshi, and I'm Craig Wright.") to anger, calling the documentary "irresponsible" and noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could put their personal safety at risk. Todd characterized the film's methodology as "coincidence-based conspiracy thinking" and stated he did not begin working on Bitcoin until 2014.
+Todd publicly denied the claim before and after the documentary's release. His responses ranged from in-film sarcasm ("It's ludicrous. But I'll say, yeah, of course I'm Satoshi.") to the same-day CoinDesk denial ("Of course, I'm not Satoshi.") to anger, calling the documentary "irresponsible" and noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could put their personal safety at risk. Todd characterized the film's methodology as "coincidence-based conspiracy thinking" and stated he did not begin working on Bitcoin until 2014.
 
 A self-denial is not by itself dispositive — Wright self-claimed and the COPA court ruled against him; Dorian Nakamoto self-denied and the external evidence aligned (Satoshi's p2pfoundation account post "I am not Dorian Nakamoto," widespread criticism of Newsweek's identification methodology, Bitcoin community support for Dorian). Todd's self-denial is information that the hypothesis must address.
 

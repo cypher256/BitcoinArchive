@@ -63,7 +63,7 @@ Whether the March 7, 2014 "I am not Dorian Nakamoto" post genuinely came from Sa
 
 ### Geographic Coincidence with Hal Finney
 
-Dorian Nakamoto's address in Temple City placed him a few blocks from [Hal Finney](/BitcoinArchive/participants/hal-finney/), who had lived in the same town for nearly a decade. This geographic coincidence became the central thread of [Andy Greenberg's March 25, 2014 Forbes feature *"Nakamoto's Neighbor"*](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/), which proposed that Hal Finney may have constructed the "Satoshi Nakamoto" pseudonym from the name of a real person living a few blocks away. Fran Finney has consistently stated that Hal had no awareness of or connection to Dorian Nakamoto.
+Dorian Nakamoto's address in Temple City placed him a few blocks from [Hal Finney](/BitcoinArchive/participants/hal-finney/), who had lived in the same town for nearly a decade. This geographic coincidence became the central thread of [Andy Greenberg's March 25, 2014 Forbes feature *"Nakamoto's Neighbor"*](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/), which proposed that Hal Finney may have constructed the "Satoshi Nakamoto" pseudonym from the name of a real person living a few blocks away. In Greenberg's reporting on his visit, the Finney household denied any awareness of or connection on Hal's part to Dorian Nakamoto — answered by Hal himself via eye-controlled communication, with Fran interpreting; no separate on-record statement from Fran specifically about the Dorian question has been published.
 
 ### Hypothesis Status
 
