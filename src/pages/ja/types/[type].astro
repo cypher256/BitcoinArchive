@@ -34,7 +34,9 @@ const filtered = entries.filter((e) => e.data.type === type);
 // types stay on frontmatter.date descending. See EN mirror
 // src/pages/types/[type].astro and temp/0518_一覧並び順と日付表示計画.md.
 function entryUpdatedTs(id: string, fallback: Date): number {
-  const ts = gitJa(id)?.updatedAt;
+  // Fallback chain matches the EN mirror (see comment there).
+  const rec = gitJa(id);
+  const ts = rec?.updatedAt ?? rec?.createdAt;
   return ts ? new Date(ts).getTime() : fallback.getTime();
 }
 const isAnalysisType = type === 'analysis';

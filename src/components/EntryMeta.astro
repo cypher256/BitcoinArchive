@@ -98,13 +98,9 @@ const isSatoshiAuthor =
     <>
       <span class="date-label">{t('entry.event' as any)}</span>
       <time datetime={date.toISOString()}>{formatDateMaybeTime(date, lang)}</time>
-      {updatedAt && (
-        <>
-          <span class="meta-sep">&middot;</span>
-          <span class="date-label">{t('entry.updated' as any)}</span>
-          <time datetime={updatedAt.toISOString()}>{formatDate(updatedAt, lang)}</time>
-        </>
-      )}
+      <span class="meta-sep">&middot;</span>
+      <span class="date-label">{t('entry.updated' as any)}</span>
+      <time datetime={updatedFallback.toISOString()}>{formatDate(updatedFallback, lang)}</time>
     </>
   )}
   <span class="meta-sep">&middot;</span>

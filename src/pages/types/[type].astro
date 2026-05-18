@@ -34,7 +34,16 @@ const filtered = entries.filter((e) => e.data.type === type);
 // primary-source entry should not push it to the top). See
 // temp/0518_一覧並び順と日付表示計画.md.
 function entryUpdatedTs(id: string, fallback: Date): number {
-  const ts = gitDateMap[id]?.en?.updatedAt;
+  // Fallback chain matches the plan: git updatedAt -> git createdAt
+  // -> frontmatter.date. Without the createdAt middle step, a
+  // brand-new analysis whose first commit hasn't yet flowed into
+  // git-dates.json would drop to its frontmatter.date (the date of
+  // the historical event), which on the analysis listing would
+  // sink it below much older but recently-revised analyses. The
+  // createdAt step keeps the listing coherent for the brief window
+  // between first commit and next git-dates regeneration.
+  const rec = gitDateMap[id]?.en;
+  const ts = rec?.updatedAt ?? rec?.createdAt;
   return ts ? new Date(ts).getTime() : fallback.getTime();
 }
 const isAnalysisType = type === 'analysis';
