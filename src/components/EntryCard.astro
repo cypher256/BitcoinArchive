@@ -2,6 +2,16 @@
 import { formatDate, localePath, translateParticipantName, findAuthorParticipant, useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
+// Card date axis:
+//   - analysis  → updatedAt (editorial; "this is when it was last
+//                  revised"). Falls back to frontmatter.date if git
+//                  history is missing.
+//   - all other → frontmatter.date (historical anchor for the entry).
+// A short label ("Event" / "Updated" / "事象" / "更新") is rendered
+// before the date so the axis is visible. See
+// temp/0518_一覧並び順と日付表示計画.md and the EntryMeta page-level
+// rule of the same name.
+
 interface Participant {
   name: string;
   slug: string;
@@ -26,7 +36,16 @@ interface Props {
 
 const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt } = Astro.props;
 const isBiography = entryType === 'biography';
+const isAnalysis = entryType === 'analysis';
 const t = useTranslations(lang);
+// Pick the date axis for the card. Analyses render the editorial
+// updatedAt (with a fallback chain so a missing git record never
+// breaks rendering); other types render the frontmatter event date.
+const updatedDate = updatedAt ? new Date(updatedAt) : undefined;
+const cardDate = isAnalysis ? (updatedDate ?? date) : date;
+const cardDateLabel = isAnalysis
+  ? t('entry.updated' as any)
+  : t('entry.event' as any);
 const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(`source.${source}` as any) || source);
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)
@@ -56,7 +75,8 @@ const isSatoshiAuthor =
 >
   <a href={href} class="card-link">
     <div class="card-header">
-      <time datetime={date.toISOString()}>{formatDate(date, lang)}</time>
+      <span class="card-date-label">{cardDateLabel}</span>
+      <time datetime={cardDate.toISOString()}>{formatDate(cardDate, lang)}</time>
       <span class="source-badge">{typeLabel}</span>
       {threadCount && threadCount >= 2 && (
         <span class="thread-badge">{threadCount} {t('entry.messages' as any)}</span>
@@ -121,6 +141,10 @@ const isSatoshiAuthor =
   }
   .card-header time {
     white-space: nowrap;
+  }
+  .card-date-label {
+    opacity: 0.7;
+    margin-right: -0.5rem;
   }
   .source-badge {
     display: inline-block;

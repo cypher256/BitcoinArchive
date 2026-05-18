@@ -3,6 +3,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
+import gitDates from '../../data/git-dates.json';
+
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 export async function getStaticPaths() {
   const { getDisplayEntries } = await import('../../i18n/utils');
@@ -22,7 +27,22 @@ const { type, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
+// `analysis` is editorial — sort by content updatedAt (git history) so
+// the most recently edited or newly added analysis surfaces first.
+// All other types are anchored to historical events; the event date
+// remains the meaningful ordering axis (a recent edit on an old
+// primary-source entry should not push it to the top). See
+// temp/0518_一覧並び順と日付表示計画.md.
+function entryUpdatedTs(id: string, fallback: Date): number {
+  const ts = gitDateMap[id]?.en?.updatedAt;
+  return ts ? new Date(ts).getTime() : fallback.getTime();
+}
+const isAnalysisType = type === 'analysis';
+const displayEntries = isAnalysisType
+  ? collapseThreads(filtered, threadCounts, threadStarters)
+      .slice()
+      .sort((a, b) => entryUpdatedTs(b.id, b.data.date) - entryUpdatedTs(a.id, a.data.date))
+  : collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const typeLabel = t(`type.${type}` as any) || type;
 
 const pageDescription = `${typeLabel} entries — Satoshi Nakamoto and early Bitcoin contributors' communications captured in this format, with original sources preserved.`;
@@ -89,6 +109,8 @@ const structuredData = {
           threadCount={isThread ? msgCount : undefined}
           participants={entry.data.participants}
           entryType={entry.data.type}
+          createdAt={gitDateMap[entry.id]?.en?.createdAt}
+          updatedAt={gitDateMap[entry.id]?.en?.updatedAt}
         />
       );
     })}
