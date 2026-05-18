@@ -839,6 +839,42 @@ date of the underlying event being analysed, not of the analysis
 itself, so showing it as "Event" misleads readers into thinking the
 editorial piece was written on the day of the incident.
 
+### `updatedAt` policy: body changes only
+
+`updatedAt` reflects **body-content changes only**. A commit whose
+diff against an entry file touches only the YAML frontmatter (the
+region between the opening and closing `---`) does **not** bump
+`updatedAt`. Concretely, none of the following bump it:
+
+- `relatedEntries` additions or removals
+- `tags` additions, removals, or renames
+- `secondarySources` additions or edits
+- `title`, `description`, `participants`, `source`, `sourceUrl`,
+  `isSatoshi`, `translationStatus`, `date`, `type` edits
+- Any other frontmatter field change
+
+The cutoff is mechanical: the file's frontmatter is everything from
+the opening `---` to the next standalone `---` line; everything after
+the closing `---` is the body. `scripts/generate-git-dates.mjs`
+implements this by fetching each commit's blob via
+`git cat-file --batch`, stripping the frontmatter, and hashing the
+remaining body — `updatedAt` is the newest commit whose body hash
+differs from its immediate predecessor.
+
+The intent is to keep "recently updated" chronological listings
+honest. Adding a new analysis entry that naturally adds a back-link
+in 5-10 existing related entries should **not** push those 5-10
+existing entries to the top of the listing, because their content
+has not changed. The same applies to bulk metadata edits like a tag
+rename or a `secondarySources` URL fix.
+
+The line is drawn on "did the body change," not on "is the change
+reader-visible." A title or description edit IS reader-visible (it
+shows in listing cards and OGP), but it is still a frontmatter edit
+and does not bump `updatedAt`. Editors who want a metadata change to
+register as an update should accompany it with a substantive body
+edit in the same commit.
+
 ### Display
 
 | Entry type | Detail-page meta line | Listing card date |
