@@ -22,6 +22,8 @@ secondarySources:
     url: "https://web.archive.org/web/20251215111115/https://cointelegraph.com/news/bitcoin-quantum-threat-decades-post-quantum-migration"
   - name: "CryptoSlate — Why Adam Back thinks Bitcoin's 20-year quantum runway matters"
     url: "https://cryptoslate.com/why-adam-backs-thinks-bitcoins-20-year-quantum-runway-matters-more-than-todays-headlines/"
+relatedEntries:
+  - analysis/2026-05-18-bitcoin-quantum-threat
 translationStatus: complete
 ---
 

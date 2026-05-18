@@ -51,6 +51,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
+  - analysis/2026-05-18-bitcoin-quantum-threat
 inlineLinkKeywords:
   - "ビットコイン設計系譜"
   - "ビットコインは何でできているのか"
