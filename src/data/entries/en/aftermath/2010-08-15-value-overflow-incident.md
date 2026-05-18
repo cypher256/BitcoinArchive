@@ -57,7 +57,7 @@ A single transaction in Block 74638 had created **184,467,440,737.09551616 BTC**
 
 [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) tested an independent emergency patch in parallel using a clean blockchain snapshot pre-published by the forum participant [knightmb](/BitcoinArchive/participants/knightmb/), which served as the recovery starting point.
 
-Satoshi posted on IRC: "URGENT: Critical overflow bug fixed. Everyone please upgrade immediately to 0.3.10."
+Satoshi released v0.3.10 with the overflow patch the same day and announced it on BitcoinTalk under the subject [Version 0.3.10 - block 74638 overflow PATCH!](/BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/), pointing readers at the discussion thread for the bug itself.
 
 **The resolution:** The corrected chain overtook the invalid chain at Block 74691, approximately 15 hours after the incident. The 184 billion BTC were effectively erased from the blockchain's accepted history.
 

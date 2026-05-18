@@ -67,11 +67,13 @@ The documentary drew a line from this exchange to Todd's later work formalizing 
 
 **Todd's response:**
 
-Todd dismissed the allegations with sarcasm and anger:
+Todd dismissed the allegations with sarcasm and anger. To CoinDesk on the day of broadcast he was direct, calling the filmmaker "grasping at straws":
 
-> "Oh, no, I am Satoshi. I'm Satoshi Nakamoto."
+> "Of course, I'm not Satoshi."
 
-> "Of course I'm Satoshi, and I'm Craig Wright."
+In the documentary itself, asked by Hoback whether he was Satoshi, Todd answered sarcastically:
+
+> "It's ludicrous. But I'll say, yeah, of course I'm Satoshi."
 
 He called the documentary "irresponsible" and said it put his safety at risk, noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could make them a target. Todd stated he did not begin working on Bitcoin until 2014 — six years after Nakamoto's disappearance.
 

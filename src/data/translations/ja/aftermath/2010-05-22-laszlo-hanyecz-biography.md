@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.nytimes.com/2021/05/22/business/bitcoin-pizza-day.html"
   - name: "CoinDesk — Laszlo Hanyecz and the Two Pizzas"
     url: "https://www.coindesk.com/markets/2020/05/22/10-years-after-laszlo-hanyecz-bought-pizza-with-10k-bitcoin-he-has-no-regrets"
+  - name: "Cointelegraph — ピザの男ラズロ・ハニエツがビットコインを今も唯一の暗号通貨と考える理由 (Wayback)"
+    url: "https://web.archive.org/web/2024/https://cointelegraph.com/news/bitcoin-pizza-guy-laszlo-hanyecz-on-why-bitcoin-is-still-the-only-flavor-of-crypto-for-him"
 relatedEntries:
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
@@ -67,6 +69,6 @@ timeline
 
 ### その後
 
-2018 年 2 月、ハニエツはもう一つの象徴的なピザ購入を行った —— 今回はビットコインのレイヤー 2 スケーリングソリューションである Lightning Network を使用した。後年、当初の取引を後悔していないかと問われたとき、彼はこう答えた:
+2018 年 2 月、ハニエツはもう一つの象徴的なピザ購入を行った —— 今回はビットコインのレイヤー 2 スケーリングソリューションである Lightning Network を使用した。後年、Cointelegraph の取材で当初の取引を後悔していないかと問われたとき、彼はこう答えた:
 
-> 「後悔？ してないよ。ビットコインの最初の歴史に関われたんだ。最高じゃん」
+> 「いや、後悔はしてないよ。あんなふうにビットコインの初期の歴史に関われたのは、すごいことだったと思うんだよね。ピザの話が広まってさ、誰でも『えっ、そんな金額使ったの！』って感じで身近に思える。それが面白い話になってるんだ」

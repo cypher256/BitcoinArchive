@@ -58,9 +58,7 @@ translationStatus: complete
 
 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は並行して独自の緊急パッチをテストし、フォーラム参加者 [knightmb](/BitcoinArchive/ja/participants/knightmb/) が事前に公開していた清浄なブロックチェーン・スナップショットを復旧の起点として使用した。
 
-サトシは IRC でこう投稿した。
-
-> 「URGENT: 重大なオーバーフローバグを修正。全員直ちに0.3.10にアップグレードしてほしい。」
+サトシは同日中にオーバーフロー修正を取り込んだ v0.3.10 をリリースし、BitcoinTalk で [Version 0.3.10 - block 74638 overflow PATCH!](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/) として告知し、読者をバグそのものの議論スレッドへ誘導した。
 
 **結果:** 修正チェーンは事件発生から約 15時間後のブロック 74691 で無効なチェーンを追い越した。1,840 億 BTC はブロックチェーンの承認済み履歴から事実上消去された。
 

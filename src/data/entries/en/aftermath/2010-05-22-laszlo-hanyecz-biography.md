@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.nytimes.com/2021/05/22/business/bitcoin-pizza-day.html"
   - name: "CoinDesk — Laszlo Hanyecz and the Two Pizzas"
     url: "https://www.coindesk.com/markets/2020/05/22/10-years-after-laszlo-hanyecz-bought-pizza-with-10k-bitcoin-he-has-no-regrets"
+  - name: "Cointelegraph — Bitcoin Pizza Guy Laszlo Hanyecz on why Bitcoin is still the only flavor of crypto (Wayback)"
+    url: "https://web.archive.org/web/2024/https://cointelegraph.com/news/bitcoin-pizza-guy-laszlo-hanyecz-on-why-bitcoin-is-still-the-only-flavor-of-crypto-for-him"
 relatedEntries:
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
@@ -51,6 +53,6 @@ On May 18, 2010, Hanyecz [posted on the BitcoinTalk forum](/BitcoinArchive/entri
 
 ### Later Years
 
-In February 2018, Hanyecz made another symbolic pizza purchase — this time using the Lightning Network, Bitcoin's layer-2 scaling solution. Asked years later whether he regretted the original transaction, he answered:
+In February 2018, Hanyecz made another symbolic pizza purchase — this time using the Lightning Network, Bitcoin's layer-2 scaling solution. Asked years later by Cointelegraph whether he regretted the original transaction, he answered:
 
-> "No. I don't regret it. I got to be part of Bitcoin's early history. That's pretty cool."
+> "You know, I don't regret it. I think that it's great that I got to be part of the early history of Bitcoin in that way, and people know about the pizza and it's an interesting story because everybody can kind of relate to that..."

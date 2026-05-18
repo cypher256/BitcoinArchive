@@ -47,7 +47,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-「retep」 は「peter」 の逆綴り。Bitcoin Core 開発者のグレゴリー・マクスウェルでさえ、それに気づくのに 10 年近くを要した。このハンドル名のアカウントは 2010 年 12 月 7 日に BitcoinTalk に登録、3 日後にトランザクション置換手数料に関するサトシのスレッドに返信した。さらに 2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を残した。HBO の 2024 年ドキュメンタリー[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)（カレン・ホーバック監督、2024 年 10 月 8 日公開）はこの 2010 年 12 月の連鎖を中核証拠として用い、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)をサトシだと名指した。トッドはカメラに向かって「もちろん、俺がサトシだ。俺がサトシ・ナカモトだよ」 と答え、後に公的に否定した —— 「もちろん、俺がサトシだ。ついでにクレイグ・ライトでもある」。本エントリはドキュメンタリーの論拠、解釈、そして反証を同じ詳細度で並べる。
+「retep」 は「peter」 の逆綴り。Bitcoin Core 開発者のグレゴリー・マクスウェルでさえ、それに気づくのに 10 年近くを要した。このハンドル名のアカウントは 2010 年 12 月 7 日に BitcoinTalk に登録、3 日後にトランザクション置換手数料に関するサトシのスレッドに返信した。さらに 2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を残した。HBO の 2024 年ドキュメンタリー[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)（カレン・ホーバック監督、2024 年 10 月 8 日公開）はこの 2010 年 12 月の連鎖を中核証拠として用い、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)をサトシだと名指した。トッドはカメラに向かって「ばかげている。だが、まあそう言うなら、そうだよ、俺がサトシだ」 と皮肉で返し、放送当日の CoinDesk 取材では「もちろん、俺はサトシじゃない」 と明確に否定した。本エントリはドキュメンタリーの論拠、解釈、そして反証を同じ詳細度で並べる。
 
 ## 1. 仮説の主張
 
