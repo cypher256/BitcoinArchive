@@ -31,9 +31,9 @@ translationStatus: complete
 
 2009 年 1 月 3 日、サトシ・ナカモトはビットコインブロックチェーンの最初のブロック — ジェネシスブロックまたはブロック 0 — のパラメーターを定義し、v0.1 ソースに定数としてハードコードした。このブロックのコインベーストランザクションには、以下のテキストが埋め込まれていた：
 
-「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」
+The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 
-（日本語訳:「財務相、銀行への 2 度目の救済へ」）
+財務相、銀行への 2 度目の救済へ
 
 このメッセージは、その日に発行されたタイムズ紙の一面の見出しであり、二重の目的を果たしている。このブロックが 2009 年 1 月 3 日より前に採掘されたものではないことを証明するタイムスタンプとして機能すると同時に、従来の銀行システムの不安定性 —— まさにビットコインが解決するために設計された問題 —— に対する鋭い論評を提供している。なお同じ見出しは後年の分析で、サトシの所在地を推定する[地理的証拠として扱われている](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)（英国紙という点から）。
 
