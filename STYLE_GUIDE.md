@@ -815,6 +815,104 @@ meaning. The description's job is to give a search-result reader (or
 SNS preview viewer, or entry-list browser) enough to decide whether to
 open the entry. Anything beyond that belongs in the body.
 
+## Entry Dates
+
+An entry has two independent date axes:
+
+- **`frontmatter.date`** — the entry's anchor to the historical event
+  it describes (when a forum post was made, an email sent, a BIP
+  published). Stable: it doesn't change as the file is edited.
+- **git history `createdAt` / `updatedAt`** — when the entry's source
+  file was first committed and last edited. Derived per language
+  (EN and JA tracked independently) by
+  `scripts/generate-git-dates.mjs` into `src/data/git-dates.json`,
+  consumed by the entry detail page, OG / structured-data emission,
+  and the type-listing card.
+
+The two axes mean different things, so they surface differently
+depending on the entry type. For primary-source types
+(`forum-post`, `mailing-list`, `correspondence`, `whitepaper`, `bip`,
+`court-document`, `article`, `biography`) the frontmatter date *is*
+the meaningful date — the post was sent on that day, the BIP was
+filed on that day. For `analysis` entries the frontmatter date is the
+date of the underlying event being analysed, not of the analysis
+itself, so showing it as "Event" misleads readers into thinking the
+editorial piece was written on the day of the incident.
+
+### Display
+
+| Entry type | Detail-page meta line | Listing card date |
+|---|---|---|
+| `analysis` | `Created <createdAt> · Updated <updatedAt>` (no `Event` line) | `Updated <updatedAt>` |
+| All others | `Event <frontmatter.date> · Updated <updatedAt>` | `Event <frontmatter.date>` |
+
+The card label is rendered as a short prefix
+(`Event` / `Updated` / `事象` / `更新`) so different cards in mixed
+listings remain readable. The detail-page label uses the same
+strings via `i18n/ui.ts` (`entry.event`, `entry.created`,
+`entry.updated`).
+
+### Listing sort order
+
+| Listing | Sort key (descending) |
+|---|---|
+| `/types/analysis/` (and JA mirror) | `git updatedAt` |
+| All other `/types/<type>/` pages | `frontmatter.date` |
+| `/index.astro` (full-archive timeline) | `frontmatter.date` |
+| Per-category / per-source / per-participant pages | unchanged (context-dependent) |
+
+The analysis listing is editorial — newly added or recently revised
+analyses should surface at the top. Other listings are historical
+maps; sorting them by edit time would push recently-touched old
+entries above newer source events and break the archive's
+chronological geometry.
+
+### Structured data and OGP
+
+The detail page emits `article:published_time` /
+`article:modified_time` and a JSON-LD `Article` with `datePublished` /
+`dateModified`. These align with the on-page label:
+
+| Entry type | `datePublished` / `article:published_time` | `dateModified` / `article:modified_time` |
+|---|---|---|
+| `analysis` | `createdAt` (fallback: `updatedAt`, then `frontmatter.date`) | `updatedAt` (fallback: `frontmatter.date`) |
+| All others | `frontmatter.date` | `updatedAt` (fallback: `frontmatter.date`) |
+
+The fallback chain matters: a brand-new file that hasn't yet been
+captured in `git-dates.json` (preview, just-merged) must not break
+sort order or emit invalid metadata. Falling back to
+`frontmatter.date` keeps the page coherent until the next git-dates
+regeneration.
+
+### Why analysis is the only exception (for now)
+
+`article` and `biography` are derivative entries too, and could
+plausibly take the same treatment. The reason this guide treats only
+`analysis` differently is empirical:
+
+- `article` entries (mostly `aftermath/*`) record an external news
+  article, blog post, or interview; the article's publication date
+  *is* the meaningful event-anchor and matches reader expectation.
+- `biography` entries anchor a person via a `frontmatter.date` whose
+  meaning currently varies (birth year, canonical first-mention date,
+  associated event). Until that meaning is unified, surfacing both
+  the date and a `Created/Updated` pair would mix axes for the reader.
+
+Both are documented as candidates for a future round; see
+`temp/0518_一覧並び順と日付表示計画.md` for the deferred items.
+
+### Threads and updatedAt sort
+
+`collapseThreads` returns one representative per thread for listing
+pages. Sorting threads by the *representative's* `updatedAt` is only
+correct when the representative reflects the freshest edit in the
+thread; when a later message in the same thread is edited, the
+representative may be stale. The current `analysis` listing is not
+thread-based, so this does not bite. Any future expansion of the
+`updatedAt` sort to a thread-bearing type (`forum-post`,
+`mailing-list`) must aggregate `max(member.updatedAt)` across the
+thread before sorting.
+
 ## Related Entries
 
 Entries can declare strong semantic cross-references via the `relatedEntries`
