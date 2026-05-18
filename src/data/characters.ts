@@ -77,8 +77,8 @@ export const characters: CharacterBio[] = [
       en: 'On May 22, 2010, he bought two Papa John\'s pizzas for 10,000 BTC — the first real-world purchase ever made with Bitcoin. Over that summer he reportedly spent some 79,000 BTC on pizza. He was also a pioneer of GPU mining. The world remembers him only as the pizza guy.',
     },
     quote: {
-      text: "No. I don't regret it. I got to be part of Bitcoin's early history. That's pretty cool.",
-      attribution: { ja: '後年のインタビュー', en: 'Later interview' },
+      text: "You know, I don't regret it. I think that it's great that I got to be part of the early history of Bitcoin in that way.",
+      attribution: { ja: 'Cointelegraph インタビュー', en: 'Cointelegraph interview' },
     },
   },
   {

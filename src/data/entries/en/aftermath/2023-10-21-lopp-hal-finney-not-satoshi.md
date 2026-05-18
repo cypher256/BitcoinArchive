@@ -49,7 +49,7 @@ During this same window, Lopp argues, [Satoshi Nakamoto](/BitcoinArchive/partici
 
 The Archive holds the [related Satoshi-to-Hearn email from April 18, 2009](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa/) in which Satoshi acknowledges sending coins back to Hearn ("I sent back 32.51 and 50.00").
 
-*[Editor: The race-day alibi was first reported publicly by Andy Greenberg in his 2014 Forbes feature ["Nakamoto's Neighbor"](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/), based on race photographs Fran Finney showed him during an in-person visit. Lopp's 2023 analysis revisits the timing question with explicit timestamp tables and adds independent corroborating arguments. The two pieces are complementary: Greenberg established the human and photographic record; Lopp formalized the timestamp argument into a structured analysis.]*
+*[Editor: Andy Greenberg's 2014 Forbes feature ["Nakamoto's Neighbor"](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) reported being shown race photographs by Fran Finney during an in-person visit; this archive treats the Greenberg piece as the early-press record of that material. Lopp's 2023 analysis revisits the timing question with explicit timestamp tables and adds independent corroborating arguments. The two pieces are complementary: Greenberg surfaced the human and photographic record; Lopp formalized the timestamp argument into a structured analysis.]*
 
 **Other arguments Lopp presents:**
 

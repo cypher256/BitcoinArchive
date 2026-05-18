@@ -175,7 +175,7 @@ The following are documented in the public record. They are listed here as state
 
 - **Craig Wright** — Self-claimed to be Satoshi from late 2015 / 2016 (Wired, Gizmodo, BBC, *The Economist*). The cryptographic 'proof' Wright produced in May 2016 was a copy of an existing 2009 transaction signature, not a new signing. The COPA judgment (§1.2) ruled four findings against the claim and characterized Wright's evidence as deliberate forgery.
 - **Dorian Prentice Satoshi Nakamoto** — Surfaced in journalism on name match (§1.1, Newsweek 2014). Repeatedly self-denied. The Bitcoin community raised over 67 BTC for Dorian after the Newsweek piece.
-- **Peter Todd** — Named in HBO 2024 (§1.1). Denied; community response: "Of course I'm Satoshi, and I'm Craig Wright."
+- **Peter Todd** — Named in HBO 2024 (§1.1). Denied to CoinDesk the same day ("Of course, I'm not Satoshi") and treated the documentary as irresponsible.
 
 ## 2. Surviving material
 
