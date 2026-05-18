@@ -68,7 +68,14 @@ type GitDateRecord = { en?: LangDate; ja?: LangDate };
 const gitDateRecord =
   (gitDates as Record<string, GitDateRecord>)[entry.id]?.ja ??
   (gitDates as Record<string, GitDateRecord>)[entry.id]?.en;
+const createdAt = gitDateRecord?.createdAt ? new Date(gitDateRecord.createdAt) : undefined;
 const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) : undefined;
+// OGP / structured-data dates. See EN mirror entries/[...slug].astro
+// for the rationale: analyses publish at createdAt, other types at
+// frontmatter.date; modifiedTime is updatedAt where available.
+const isAnalysis = entry.data.type === 'analysis';
+const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
+const ogModifiedTime = updatedAt ?? entry.data.date;
 ---
 
 <BaseLayout
@@ -77,7 +84,8 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/entries/${entry.id}/`, 'en') : undefined}
   ogType="article"
-  publishedTime={entry.data.date}
+  publishedTime={ogPublishedTime}
+  modifiedTime={ogModifiedTime}
   author={entry.data.author}
   ogImage={`/og/ja/${entry.id}.png`}
   breadcrumbs={breadcrumbs}
@@ -109,6 +117,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
         tags={entry.data.tags}
         inlineLinkKeywords={entry.data.inlineLinkKeywords}
         updatedAt={updatedAt}
+        createdAt={createdAt}
       />
     </header>
 

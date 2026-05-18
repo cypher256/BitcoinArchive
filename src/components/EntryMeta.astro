@@ -45,9 +45,29 @@ interface Props {
    * simply don't show the line.
    */
   updatedAt?: Date;
+  /**
+   * Content first-published date, derived from git history. Used only
+   * on analysis entries, where the editorial creation date is the
+   * meaningful "when did this writing appear" anchor — the
+   * frontmatter `date` for analyses is the date of the event being
+   * analysed, not of the analysis itself, so it makes a misleading
+   * page header. For other entry types this prop is ignored.
+   */
+  createdAt?: Date;
 }
 
-const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [], inlineLinkKeywords = [], updatedAt } = Astro.props;
+const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [], inlineLinkKeywords = [], updatedAt, createdAt } = Astro.props;
+// Analysis entries display "Created · Updated" instead of the usual
+// "Event · Updated" pair, because the frontmatter date for an
+// analysis is the date of the underlying event (e.g. the day of the
+// incident the analysis dissects), not the date the analysis was
+// written. Showing it as "Event" on an analysis page misleads
+// readers into thinking the editorial piece itself is dated to that
+// day. See temp/0518_一覧並び順と日付表示計画.md and
+// STYLE_GUIDE.md "Entry Dates" for the full rule.
+const isAnalysis = entryType === 'analysis';
+const createdFallback = createdAt ?? updatedAt ?? date;
+const updatedFallback = updatedAt ?? date;
 const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article');
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
@@ -66,13 +86,25 @@ const isSatoshiAuthor =
 ---
 
 <div class="entry-meta">
-  <span class="date-label">{t('entry.event' as any)}</span>
-  <time datetime={date.toISOString()}>{formatDateMaybeTime(date, lang)}</time>
-  {updatedAt && (
+  {isAnalysis ? (
     <>
+      <span class="date-label">{t('entry.created' as any)}</span>
+      <time datetime={createdFallback.toISOString()}>{formatDate(createdFallback, lang)}</time>
       <span class="meta-sep">&middot;</span>
       <span class="date-label">{t('entry.updated' as any)}</span>
-      <time datetime={updatedAt.toISOString()}>{formatDate(updatedAt, lang)}</time>
+      <time datetime={updatedFallback.toISOString()}>{formatDate(updatedFallback, lang)}</time>
+    </>
+  ) : (
+    <>
+      <span class="date-label">{t('entry.event' as any)}</span>
+      <time datetime={date.toISOString()}>{formatDateMaybeTime(date, lang)}</time>
+      {updatedAt && (
+        <>
+          <span class="meta-sep">&middot;</span>
+          <span class="date-label">{t('entry.updated' as any)}</span>
+          <time datetime={updatedAt.toISOString()}>{formatDate(updatedAt, lang)}</time>
+        </>
+      )}
     </>
   )}
   <span class="meta-sep">&middot;</span>

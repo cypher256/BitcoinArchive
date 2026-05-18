@@ -65,7 +65,17 @@ const breadcrumbs = [
 type LangDate = { createdAt: string; updatedAt: string };
 type GitDateRecord = { en?: LangDate; ja?: LangDate };
 const gitDateRecord = (gitDates as Record<string, GitDateRecord>)[entry.id]?.en;
+const createdAt = gitDateRecord?.createdAt ? new Date(gitDateRecord.createdAt) : undefined;
 const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) : undefined;
+// OGP / structured-data dates. For analysis entries the editorial
+// creation date is the meaningful published time (frontmatter.date
+// is the date of the underlying event being analysed, not of the
+// analysis writing). Other types keep frontmatter.date as the
+// published time. modifiedTime is the git-history updatedAt for all
+// types when available.
+const isAnalysis = entry.data.type === 'analysis';
+const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
+const ogModifiedTime = updatedAt ?? entry.data.date;
 ---
 
 <BaseLayout
@@ -74,7 +84,8 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/entries/${entry.id}/`, 'ja') : undefined}
   ogType="article"
-  publishedTime={entry.data.date}
+  publishedTime={ogPublishedTime}
+  modifiedTime={ogModifiedTime}
   author={entry.data.author}
   ogImage={`/og/${entry.id}.png`}
   breadcrumbs={breadcrumbs}
@@ -106,6 +117,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
         tags={entry.data.tags}
         inlineLinkKeywords={entry.data.inlineLinkKeywords}
         updatedAt={updatedAt}
+        createdAt={createdAt}
       />
     </header>
 
