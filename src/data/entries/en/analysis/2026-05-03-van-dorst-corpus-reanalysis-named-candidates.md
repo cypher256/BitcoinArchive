@@ -1,5 +1,5 @@
 ---
-title: "Five top contenders in a pool of 12,739 — Bitcoin Institute reanalyzes van Dorst's Satoshi stylometry"
+title: "Where do five top contenders rank among 12,739? — Bitcoin Institute reanalyzes van Dorst's Satoshi stylometry"
 date: 2026-05-03T00:00:00Z
 type: "analysis"
 source: "github"
