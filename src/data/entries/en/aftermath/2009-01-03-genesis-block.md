@@ -30,7 +30,7 @@ relatedEntries:
 
 On January 3, 2009, Satoshi Nakamoto defined the parameters of the first block of the Bitcoin blockchain — known as the Genesis Block or Block 0 — by hardcoding them as constants in the v0.1 source. The block's coinbase transaction contained the following embedded text:
 
-"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
+> The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 
 This message, a headline from the front page of The Times newspaper published on that date, serves dual purposes. It acts as a timestamp proving the block could not have been mined before January 3, 2009, and it provides a pointed commentary on the instability of the traditional banking system -- the very problem Bitcoin was designed to address. The headline's origin (a British newspaper) has also been [treated as geographic evidence](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/) in later analyses of Satoshi's likely location.
 
