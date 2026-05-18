@@ -204,6 +204,7 @@ export const tagTranslations: Record<string, string> = {
   'litecoin': 'Litecoin',
   'dogecoin': 'Dogecoin',
   'mining-difficulty': 'マイニング難易度',
+  'mining-incentive': 'マイニングインセンティブ',
   'mining-migration': 'マイニング移転',
   'motivation': '動機',
 
@@ -276,6 +277,7 @@ export const tagTranslations: Record<string, string> = {
   'script': 'スクリプト',
   'security': 'セキュリティ',
   'security-breach': 'セキュリティ侵害',
+  'security-budget': 'セキュリティ予算',
   'self-statements': '自己言及',
   'smart-contracts': 'スマートコントラクト',
   'soft-fork': 'ソフトフォーク',

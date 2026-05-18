@@ -219,6 +219,20 @@ function walkPublic(dir, prefix = '') {
 }
 walkPublic(PUBLIC_DIR);
 
+// Also add custom static Astro page routes (src/pages/*.astro that are not
+// dynamic catch-all routes). These are real Archive pages that entries may
+// reference but that do not appear under public/. Per-locale because EN and
+// JA do not always have matching novel/biography indexes.
+const STATIC_ASTRO_ROUTES = [
+  '/chart/',     '/ja/chart/',
+  '/about/',     '/ja/about/',
+  '/search/',    '/ja/search/',
+  '/ja/novel/',  // EN /novel/ does not exist (src/pages/novel/ is empty)
+];
+for (const route of STATIC_ASTRO_ROUTES) {
+  validPaths.add(route);
+}
+
 console.log(`  ${validPaths.size} valid paths indexed`);
 
 // ---------------------------------------------------------------------------

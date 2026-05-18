@@ -50,6 +50,7 @@ relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
 inlineLinkKeywords:
   - "Bitcoin design lineage"
   - "what Bitcoin reuses"

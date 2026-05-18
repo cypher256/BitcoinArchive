@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
   - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
+  - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
 ---
 
 *LessWrong "Making money with Bitcoin?" comment thread, February 25, 2011:*

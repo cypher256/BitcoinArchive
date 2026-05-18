@@ -36,6 +36,7 @@ relatedEntries:
   - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
+  - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
 ---
 
 On March 28, 1997, [Adam Back](/BitcoinArchive/participants/adam-back/) — then a postdoctoral researcher at the University of Exeter — sent an email to the Cypherpunks mailing list with the subject line `[ANNOUNCE] hash cash postage implementation`. The full announcement is preserved at [hashcash.org/papers/announce.txt](http://www.hashcash.org/papers/announce.txt), Adam Back's own hosting of the original post.

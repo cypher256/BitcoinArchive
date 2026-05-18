@@ -58,6 +58,7 @@ relatedEntries:
   - aftermath/2015-08-15-bitcoin-xt-launch
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2017-11-08-segwit2x-cancellation
+  - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
 translationStatus: complete
 ---
 

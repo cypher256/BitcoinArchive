@@ -30,6 +30,7 @@ relatedEntries:
   - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
 ---
 
 **PDF:** [View the Bitcoin whitepaper (PDF)](/BitcoinArchive/documents/bitcoin.pdf)

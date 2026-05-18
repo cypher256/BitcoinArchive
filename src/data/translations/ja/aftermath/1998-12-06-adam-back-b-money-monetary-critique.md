@@ -37,6 +37,7 @@ relatedEntries:
   - "correspondence/adam-back/2008-08-21-adam-back-to-satoshi"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
+  - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
 translationStatus: complete
 ---
 
