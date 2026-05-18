@@ -38,6 +38,8 @@ The Genesis Block is [hardcoded into the Bitcoin software](/BitcoinArchive/entri
 
 The block hash is:
 
+```
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+```
 
 The Genesis Block's hardcoded timestamp is six days before the next block (Block 1) on January 9, 2009, the same day Bitcoin v0.1 was released to the public. The cause of this gap is examined as a [hardcode timestamp artifact](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) in the genesis analysis, and surveyed among several popular hypotheses in [Pete Rizzo's 2024 Bitcoin Magazine article](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/).

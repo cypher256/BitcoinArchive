@@ -31,9 +31,9 @@ translationStatus: complete
 
 2009 年 1 月 3 日、サトシ・ナカモトはビットコインブロックチェーンの最初のブロック — ジェネシスブロックまたはブロック 0 — のパラメーターを定義し、v0.1 ソースに定数としてハードコードした。このブロックのコインベーストランザクションには、以下のテキストが埋め込まれていた：
 
-The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
-
-財務相、銀行への 2 度目の救済へ
+> The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+>
+> 財務相、銀行への 2 度目の救済へ
 
 このメッセージは、その日に発行されたタイムズ紙の一面の見出しであり、二重の目的を果たしている。このブロックが 2009 年 1 月 3 日より前に採掘されたものではないことを証明するタイムスタンプとして機能すると同時に、従来の銀行システムの不安定性 —— まさにビットコインが解決するために設計された問題 —— に対する鋭い論評を提供している。なお同じ見出しは後年の分析で、サトシの所在地を推定する[地理的証拠として扱われている](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)（英国紙という点から）。
 
@@ -41,6 +41,8 @@ The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 
 ブロックハッシュは以下の通りである：
 
+```
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+```
 
 ジェネシスブロックのハードコード・タイムスタンプは、次のブロック（ブロック 1）が採掘された 2009 年 1 月 9 日の 6 日前である。ビットコイン v0.1 は前日の 1 月 8 日に暗号学メーリングリストで公開発表されている。この 6 日間の間隔の原因は、ジェネシス分析で[ハードコード・タイムスタンプのアーティファクト](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)として検討されており、[ピート・リゾの 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)では複数の有力な仮説が整理されている。
