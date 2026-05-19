@@ -30,6 +30,15 @@ secondarySources:
   - name: "Lov K. Grover — 'A fast quantum mechanical algorithm for database search' (STOC 1996)"
     url: "https://arxiv.org/abs/quant-ph/9605043"
     note: "The 1996 algorithm whose square-root speedup halves the effective preimage resistance of SHA-256 from 256 to 128 bits — a reduction, not a break."
+  - name: "US White House — National Security Memorandum 10 (May 4, 2022)"
+    url: "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/"
+    note: "The executive policy framework under which the US federal government plans its post-quantum cryptographic transition. NSM-10 directs agencies to inventory vulnerable cryptography and migrate, providing the legal-policy substrate for NSA CNSA 2.0."
+  - name: "NIST IR 8547 — Transition to Post-Quantum Cryptography Standards (Initial Public Draft, 2024)"
+    url: "https://csrc.nist.gov/pubs/ir/8547/ipd"
+    note: "NIST's published migration roadmap for federal agencies and vendors. Documents the institutional planning horizon and parallel migration of TLS, code-signing, firmware, and government PKI alongside specialized systems."
+  - name: "Bank for International Settlements — Project Leap"
+    url: "https://www.bis.org/about/bisih/topics/cyber_security/leap.htm"
+    note: "BIS Innovation Hub project (with the ECB and Bank of England, 2022-23) experimenting with post-quantum-secure central-bank-to-bank communication channels — institutional record that the financial sector treats post-quantum migration as live work."
 relatedEntries:
   - aftermath/2025-11-15-adam-back-quantum-threat-timeline
   - bip/2024-12-17-bip-0360
@@ -66,7 +75,21 @@ graph TD
 
 The attack only works if the public key has been visible on-chain — a condition that does not hold for every Bitcoin output type.
 
-## 2. What is exposed today
+## 2. What breaks beyond Bitcoin
+
+The same Shor's algorithm that breaks ECDSA on secp256k1 breaks RSA, Diffie-Hellman, and all elliptic-curve cryptography in current production use. These are not Bitcoin-specific primitives — they are the load-bearing cryptography of the internet, the financial system, and most government infrastructure.
+
+| Domain | Quantum-vulnerable primitive in current use | Institutional response |
+|---|---|---|
+| **TLS / HTTPS** | RSA key exchange, ECDHE, ECDSA certificates | NIST FIPS 203 (ML-KEM) selection; IETF drafts for ML-KEM-based hybrid key exchange in TLS 1.3 |
+| **Banking payments (EMV, SWIFT, card networks, PKI)** | RSA signatures, ECDSA | BIS Project Leap (2022–2023, with the ECB and the Bank of England) on post-quantum-secure central-bank-to-bank channels |
+| **Government / military PKI, classified communications** | RSA, ECC | US National Security Memorandum 10 (May 2022); NSA CNSA 2.0 (2022) mandating PQC transition by 2035; parallel programmes in the UK (NCSC), the EU, and Japan |
+| **Code-signing, firmware-signing, software updates (OS, IoT)** | RSA, ECDSA | NIST IR 8547 (2024) migration-strategy guidance to federal agencies and vendors |
+| **"Harvest now, decrypt later" against recorded encrypted traffic** | Any of the above, applied to past or present captures | CISA quantum-readiness advisory (August 2023) explicitly warning on captured-data risk |
+
+What is Bitcoin-specific is the *structure* of its attack surface — a public ledger where every spent transaction permanently publishes the public key it spent from, and where some output types put the public key on chain at creation rather than at spend. The cryptographic break itself is a world-scale problem. The NIST PQC standardization and the NSA-2035 mandate place Bitcoin on the same migration timeline as the world's banks, telecoms, and governments. "The day Bitcoin gets broken" is not the day Bitcoin alone gets broken — and the work of preparing for that day has been underway, in parallel and at scale, since the 2016 NIST call.
+
+## 3. What is exposed today
 
 Bitcoin has accumulated several output formats over its life. They expose the public key at different points, and the exposure window is the entire vulnerability surface for a quantum attack on dormant coins. The full per-halving cards and supply curve are on the Archive's [Bitcoin chart page](/BitcoinArchive/chart/) for reference; what matters here is which form the coins are sitting in.
 
@@ -85,7 +108,7 @@ Two consequences follow directly from this table:
 
 The pool of P2PK coins from the 2009-2010 era — including most of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s mined balance — sits in the "high exposure, no migration possible without the keyholder" category. Whether those coins are ever moved is a question Shor's algorithm cannot answer; only the keyholder can.
 
-## 3. The timeline debate
+## 4. The timeline debate
 
 The arrival year of a CRQC capable of running Shor's algorithm against a 256-bit elliptic curve is contested. Two records exist: institutional commitments and public statements.
 
@@ -112,7 +135,7 @@ The named-individual record (from cryptographers and Bitcoin infrastructure peop
 
 The "harvest now, decrypt later" concern raises the timeline question for one specific class of data: anything currently visible on-chain (P2PK, exposed P2TR, revealed P2PKH after spend) is captured *now* by anyone monitoring the chain, and can be attacked *whenever* a CRQC exists. The migration window is not "until a CRQC arrives"; it is "until a CRQC arrives, *minus* the time between now and migration."
 
-## 4. Migration paths
+## 5. Migration paths
 
 Several proposals address quantum exposure in different ways. The Archive holds the [BIP 360 (P2MR) draft](/BitcoinArchive/entries/bip/2024-12-17-bip-0360/) — a soft-fork output type that behaves like Taproot with the key-path spend removed, committing only to the Merkle root of a script tree. P2MR is resistant to *long-exposure* attacks on elliptic-curve keys (where a public key sits visible on-chain after a spend), but explicitly not to *short-exposure* attacks (where a key revealed in the mempool is recovered before the transaction confirms). BIP 360 itself notes that short-exposure protection would require introducing post-quantum signatures, treated as a separate future proposal. Post-quantum signature schemes themselves — ML-DSA, FALCON, SLH-DSA — would be considerably larger than ECDSA: SLH-DSA signatures are roughly 8-50 KB depending on parameter set, against ECDSA's ~72 bytes.
 
@@ -124,7 +147,7 @@ The proposals trade off along three axes:
 
 The migration question for already-issued coins is harder than the question for new coins. New issuance can use a post-quantum scheme by default once one is deployed. Existing P2PK / exposed P2TR / reused P2PKH outputs cannot be migrated *by the protocol* — only by the keyholder signing a transaction with the legitimate private key, while that private key is still uncompromised. Coins whose keyholders are dead, lost, or absent will sit in their current form regardless of what the network does. Several proposals exist for what to do with them — including controversial "use them or lose them" sunset rules — but none has consensus.
 
-## 5. Limits of this entry
+## 6. Limits of this entry
 
 The entry presents what the cryptography commits to and what the institutional and named-individual record says. It does not predict an arrival date, and it explicitly does not endorse the "the day Bitcoin breaks is the day the world ends" framing of the title:
 
