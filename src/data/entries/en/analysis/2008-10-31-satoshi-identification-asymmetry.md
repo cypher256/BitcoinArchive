@@ -195,12 +195,12 @@ Email correspondents breakdown:
 
 | Recipient | Email count | Source |
 |---|---|---|
-| Martti Malmi | 260+ | `mmalmi.github.io/satoshi` |
-| Mike Hearn | 33 | `plan99.net/~mike/satoshi-emails/` |
-| Adam Back | 5 | Bitcoin Magazine release, COPA exhibit |
-| Hal Finney | 4 | (multiple sources) |
-| Wei Dai | 3 | Gwern archive |
-| Dustin Trammell, Gavin Andresen, Laszlo Hanyecz, Nicholas Bohm, others | smaller batches | (various) |
+| [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) | 260+ | `mmalmi.github.io/satoshi` |
+| [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) | 33 | `plan99.net/~mike/satoshi-emails/` |
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | 5 | Bitcoin Magazine release, COPA exhibit |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 4 | (multiple sources) |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | 3 | Gwern archive |
+| [Dustin Trammell](/BitcoinArchive/participants/dustin-trammell/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), [Nicholas Bohm](/BitcoinArchive/participants/nicholas-bohm/), others | smaller batches | (various) |
 
 The forensic surface is not the surface of an absent figure. Every category that adversarial-attribution research normally relies on — long-form prose at scale, programming style, time-zone signatures, version-control history, and language-register inconsistencies — is present in the documentary record on Satoshi. (The layered account of how this surface co-existed with sustained anonymity is in [the anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/).)
 

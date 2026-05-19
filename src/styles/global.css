@@ -529,6 +529,26 @@ table td {
   max-width: 25em;
 }
 
+/* Small comparison tables (3 columns or fewer) on wide viewports only.
+   At >=1200px the container reaches its full max-width (the same
+   threshold the existing `@media (max-width: 1199px)` block uses to
+   shift containers from fixed to fluid), so a 2-3 column table has
+   enough room for the columns to size to natural content without
+   forcing horizontal scroll. Below 1200px we keep the default 25em
+   cell cap and the wrapper's `width: max-content` / `min-width: 100%`
+   so the same table doesn't blow past a shrinking container.
+   `:has` requires Chrome 105+ / Safari 15.4+ / Firefox 121+. */
+@media (min-width: 1200px) {
+  table:not(:has(tr > :nth-child(4))) th,
+  table:not(:has(tr > :nth-child(4))) td {
+    max-width: none;
+  }
+  .table-scroll > table:not(:has(tr > :nth-child(4))) {
+    width: auto;
+    min-width: 0;
+  }
+}
+
 /* Matrix-style tables: rotate header cells to vertical so wide
    comparison grids (e.g. 候補 × 多次元評価) don't force every
    column to be as wide as its header label. `:has` matches a

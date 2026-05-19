@@ -196,12 +196,12 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 
 | 相手 | メール数 | 出典 |
 |---|---|---|
-| マルッティ・マルミ | 260 通以上 | `mmalmi.github.io/satoshi` |
-| マイク・ハーン | 33 通 | `plan99.net/~mike/satoshi-emails/` |
-| アダム・バック | 5 通 | Bitcoin Magazine 公開、COPA 証拠 |
-| ハル・フィニー | 4 通 | (複数出典) |
-| ウェイ・ダイ | 3 通 | Gwern アーカイブ |
-| ダスティン・トランメル、ギャビン・アンドレセン、ラズロ・ハニエツ、ニコラス・ボーム、その他 | 小規模な通信 | (各種) |
+| [マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/) | 260 通以上 | `mmalmi.github.io/satoshi` |
+| [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/) | 33 通 | `plan99.net/~mike/satoshi-emails/` |
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 5 通 | Bitcoin Magazine 公開、COPA 証拠 |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 4 通 | (複数出典) |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 3 通 | Gwern アーカイブ |
+| [ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)、[ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)、その他 | 小規模な通信 | (各種) |
 
 このフォレンジック・サーフェスは、不在の人物が残すサーフェスではない。敵対的帰属研究が通常依拠するすべてのカテゴリ — 大量の長文プロース、プログラミングスタイル、タイムゾーンの署名、バージョン管理履歴、言語レジスターの不整合 — がサトシに関する公開記録上に存在する。（このサーフェスがいかにして持続的な匿名性と共存したかの層別の全体像は[匿名性アーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)に記載。）
 
