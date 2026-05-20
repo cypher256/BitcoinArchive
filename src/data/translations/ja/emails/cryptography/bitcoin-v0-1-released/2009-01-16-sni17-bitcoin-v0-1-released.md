@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Dustin D. Trammell"
     personSlug: "dustin-trammell"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"

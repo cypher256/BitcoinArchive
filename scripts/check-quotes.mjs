@@ -373,6 +373,154 @@ function checkEnJaSync(enFile) {
 }
 
 // ---------------------------------------------------------------------------
+// Source-entry-id resolution check
+//
+// Editorial standard: a thread page is a complete record of the
+// conversation. When entry A's body quotes a message by person X, the
+// quoted message itself should be an entry of its own in the Archive
+// (typically a sibling under the same thread directory), and entry A's
+// `quotes[].sourceEntryId` should point to it. Otherwise the attribution
+// renders as a link to X's biography, not to the post — the label reads
+// "Xの投稿 / Quote from: X" but the destination is the bio. The bio link
+// is a fallback, not the intended behavior.
+//
+// Three failure modes are flagged:
+//
+//   1. **missing-source-entry** — quote has personSlug (+ date) but no
+//      sourceEntryId, AND no candidate sibling exists in the same thread
+//      that matches by personSlug + date. The quoted post is absent from
+//      the Archive. Either the entry needs to be added, or the quote
+//      needs an explicit `sourceEntryId` pointing somewhere outside the
+//      thread (in which case set it to silence this warning).
+//
+//   2. **source-entry-id-missing** — quote has no `sourceEntryId` but a
+//      matching same-day sibling DOES exist in the same thread. Easy fix:
+//      add `sourceEntryId` pointing to the sibling.
+//
+//   3. **source-entry-id-ambiguous** — quote has no `sourceEntryId` and
+//      MULTIPLE same-day siblings by the same person exist. Manual
+//      disambiguation required.
+//
+// All three are level "warn" (do not break the build) because the
+// rendering still produces a working page; the bio-fallback is just
+// misleading attribution, not a broken page.
+// ---------------------------------------------------------------------------
+
+function parseEntryMeta(content) {
+  const dateMatch = content.match(/^date:\s*['"]?(\S+?)['"]?\s*$/m);
+  const date = dateMatch ? dateMatch[1] : null;
+
+  const slugs = [];
+  // Capture the participants block: from `participants:` until the next
+  // top-level YAML key (a line starting with a non-space).
+  const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
+  if (fmMatch) {
+    const fmLines = fmMatch[1].split('\n');
+    let inParticipants = false;
+    for (const line of fmLines) {
+      if (line === 'participants:') { inParticipants = true; continue; }
+      if (inParticipants) {
+        if (!/^\s/.test(line)) { inParticipants = false; continue; }
+        const m = line.match(/^\s+slug:\s*"?([\w-]+)"?\s*$/);
+        if (m) slugs.push(m[1]);
+      }
+    }
+  }
+  return { date, slugs };
+}
+
+function checkSourceEntryIds(enFiles) {
+  const violations = [];
+
+  // Index: dir → [{entryId, slugs, date}]
+  const dirIndex = new Map();
+  for (const f of enFiles) {
+    const content = readFileSync(f, 'utf-8');
+    const meta = parseEntryMeta(content);
+    if (!meta.date || meta.slugs.length === 0) continue;
+    const rel = path.relative(enDir, f);
+    const entryId = rel.replace(/\.md$/, '');
+    const dir = path.dirname(rel);
+    if (!dirIndex.has(dir)) dirIndex.set(dir, []);
+    dirIndex.get(dir).push({ entryId, slugs: meta.slugs, date: meta.date });
+  }
+
+  for (const f of enFiles) {
+    const content = readFileSync(f, 'utf-8');
+    // Scope: only entries authored by Satoshi. The editorial rule is
+    // narrower than "every quote must have a source entry" — it's "when
+    // Satoshi quotes someone in his own message, that quoted post should
+    // be in the Archive." Non-Satoshi entries quoting each other are
+    // outside the Archive's curation scope.
+    if (!/^isSatoshi:\s*true/m.test(content)) continue;
+
+    const { frontmatter } = parseFrontmatterManual(content);
+    const quotes = frontmatter.quotes || [];
+    if (quotes.length === 0) continue;
+
+    const rel = path.relative(enDir, f);
+    const dir = path.dirname(rel);
+    const siblings = dirIndex.get(dir) || [];
+
+    for (const q of quotes) {
+      if (!q.personSlug) continue;
+      if (q.sourceEntryId) continue; // already set — no violation
+      if (!q.date) {
+        // Satoshi entry quotes someone, but the quote has no date or
+        // sourceEntryId. Without a date we can't auto-find a match;
+        // editor must either add `date` (so the check can verify the
+        // post is in the Archive) or set `sourceEntryId` directly.
+        violations.push({
+          file: path.relative(process.cwd(), f),
+          check: 'missing-source-entry',
+          level: 'warn',
+          msg: `Satoshi-authored entry quotes ${q.person ?? q.personSlug} but the quote has neither date nor sourceEntryId. Add the quote.date (so the source post can be located in the Archive), or set sourceEntryId directly. Otherwise the attribution falls back to the participant biography page.`,
+        });
+        continue;
+      }
+
+      const qDay = q.date.slice(0, 10);
+      const selfId = rel.replace(/\.md$/, '');
+
+      const candidates = siblings.filter(s =>
+        s.slugs.includes(q.personSlug) &&
+        s.date.slice(0, 10) === qDay &&
+        s.entryId !== selfId
+      );
+
+      if (candidates.length === 0) {
+        // The quoted source is not in this thread. Either the entry is
+        // missing from the Archive (the intended outcome of this check)
+        // or sourceEntryId should point to an entry under a different
+        // directory and is simply unset.
+        violations.push({
+          file: path.relative(process.cwd(), f),
+          check: 'missing-source-entry',
+          level: 'warn',
+          msg: `Quote "${q.id}" (person: ${q.person ?? q.personSlug}, date: ${q.date}) has no matching entry in the same thread "${dir}". Either add the quoted post as a sibling entry, or set sourceEntryId explicitly if it lives elsewhere.`,
+        });
+      } else if (candidates.length === 1) {
+        violations.push({
+          file: path.relative(process.cwd(), f),
+          check: 'source-entry-id-missing',
+          level: 'warn',
+          msg: `Quote "${q.id}" (person: ${q.person ?? q.personSlug}, date: ${q.date}) has a matching thread entry "${candidates[0].entryId}" — set sourceEntryId so the attribution links to the post, not the biography.`,
+        });
+      } else {
+        violations.push({
+          file: path.relative(process.cwd(), f),
+          check: 'source-entry-id-ambiguous',
+          level: 'warn',
+          msg: `Quote "${q.id}" (person: ${q.person ?? q.personSlug}, date: ${q.date}) has ${candidates.length} same-day sibling candidates in the same thread: ${candidates.map(c => c.entryId).join(', ')}. Set sourceEntryId explicitly.`,
+        });
+      }
+    }
+  }
+
+  return violations;
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
@@ -390,6 +538,8 @@ for (const f of jaFiles) {
 for (const f of enFiles) {
   allViolations.push(...checkEnJaSync(f));
 }
+
+allViolations.push(...checkSourceEntryIds(enFiles));
 
 const errors = allViolations.filter(v => v.level === 'error');
 const warnings = allViolations.filter(v => v.level === 'warn');

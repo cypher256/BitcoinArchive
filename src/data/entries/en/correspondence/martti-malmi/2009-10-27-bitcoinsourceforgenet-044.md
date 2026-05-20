@@ -30,6 +30,7 @@ quotes:
   - id: "q3"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-26-bitcoinsourceforgenet-042"
   - id: "q4"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
