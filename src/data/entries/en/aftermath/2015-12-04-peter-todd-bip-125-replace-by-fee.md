@@ -1,7 +1,7 @@
 ---
 title: "Peter Todd and David Harding formalize Replace-by-Fee in BIP 125"
 date: 2015-12-04T00:00:00Z
-type: "article"
+type: "bip"
 source: "github"
 sourceUrl: "https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki"
 author: "David A. Harding, Peter Todd"

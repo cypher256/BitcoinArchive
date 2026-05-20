@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - 匿名性の側面を控えめにすべき"
 date: 2010-07-06T02:59:57Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

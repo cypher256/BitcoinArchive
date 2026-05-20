@@ -1,7 +1,7 @@
 ---
 title: "サトシからハル・フィニーへ：自分のホストでは incoming 接続を受けられない旨を伝える（2009-01-10）"
 date: 2009-01-10T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"

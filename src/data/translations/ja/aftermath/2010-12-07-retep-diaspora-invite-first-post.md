@@ -1,7 +1,7 @@
 ---
 title: "ピーター・トッドの BitcoinTalk 初投稿：Diaspora 招待状の購入"
 date: 2010-12-07T09:14:28Z
-type: "article"
+type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1953.msg27712#msg27712"
 author: "Peter Todd"

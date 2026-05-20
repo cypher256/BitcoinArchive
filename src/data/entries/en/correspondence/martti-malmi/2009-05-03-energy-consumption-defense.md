@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin - Defense of mining energy consumption"
 date: 2009-05-03T22:32:26Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"

@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン"
 date: 2009-05-02T17:06:58Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

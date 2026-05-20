@@ -1,7 +1,7 @@
 ---
 title: "Re: いくつかの考え... — 攻撃の分類と IP 送金のセキュリティ"
 date: 2009-01-15T13:46:35Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

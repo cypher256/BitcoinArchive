@@ -1,7 +1,7 @@
 ---
 title: "ピーター・トッドが BIP 65: OP_CHECKLOCKTIMEVERIFY を提案"
 date: 2014-10-01T00:00:00Z
-type: "article"
+type: "bip"
 source: "github"
 sourceUrl: "https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki"
 author: "Peter Todd"

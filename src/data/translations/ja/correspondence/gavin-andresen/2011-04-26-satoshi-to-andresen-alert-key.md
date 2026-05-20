@@ -1,7 +1,7 @@
 ---
 title: "サトシがビットコインのアラートキーをギャビン・アンドレセンに引き渡し（2011-04-26）"
 date: 2011-04-26T10:29:00Z
-type: "article"
+type: "correspondence"
 source: "riski-wiki"
 sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 sourceNote: "2022年4月26日、メール交換の 11 周年にギャビン・アンドレセンが自身のブログで公開。元のメールは satoshin@gmx.com から送信された"

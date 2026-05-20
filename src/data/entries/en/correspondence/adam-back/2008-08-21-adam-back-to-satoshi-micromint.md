@@ -1,7 +1,7 @@
 ---
 title: "Re: Hashcash citation — suggesting MicroMint paper"
 date: 2008-08-21T18:17:17Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 author: "Adam Back"

@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin Faucet and early collaboration"
 date: 2010-06-11T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 sourceNote: "Based on publicly available information from Wikipedia, MIT Technology Review, and other published accounts. The specific private emails between Andresen and Satoshi from this period have not been publicly released in full"

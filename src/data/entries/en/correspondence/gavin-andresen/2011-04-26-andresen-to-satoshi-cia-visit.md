@@ -1,7 +1,7 @@
 ---
 title: "Re: alert key - CIA presentation disclosure"
 date: 2011-04-26T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "riski-wiki"
 sourceUrl: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 sourceNote: "Published by Gavin Andresen on his blog on April 26, 2022, the eleventh anniversary of the email exchange"

@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - 最初の取引所提案"
 date: 2009-07-22T10:10:02Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

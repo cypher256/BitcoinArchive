@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - 「暗号通貨」という用語とサイト改善"
 date: 2009-06-11T21:24:25Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

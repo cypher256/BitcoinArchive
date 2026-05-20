@@ -1,7 +1,7 @@
 ---
 title: "もう一つの質問 — CPU 性能とコイン生成"
 date: 2009-01-12T21:49:02Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

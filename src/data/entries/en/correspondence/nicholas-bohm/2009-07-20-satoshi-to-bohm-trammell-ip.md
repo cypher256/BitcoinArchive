@@ -1,7 +1,7 @@
 ---
 title: "Re: No connections — connected to a single peer"
 date: 2009-07-20T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}. IP address analysis by Decashed (March 2025)"

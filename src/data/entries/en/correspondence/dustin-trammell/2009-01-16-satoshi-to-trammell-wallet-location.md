@@ -1,7 +1,7 @@
 ---
 title: "Re: A few thoughts... - Wallet location and socket fix"
 date: 2009-01-16T12:42:18Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013"

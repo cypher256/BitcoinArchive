@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin v0.1 released - Electronic currency vision (CC'd publicly)"
 date: 2009-01-16T12:35:31Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013. Also archived on the Cryptography mailing list and bitcoin-list. The full private correspondence is on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"

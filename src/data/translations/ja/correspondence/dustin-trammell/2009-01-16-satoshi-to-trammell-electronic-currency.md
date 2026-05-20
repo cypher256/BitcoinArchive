@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン v0.1 リリース - 電子通貨のビジョン（メーリングリストに CC）"
 date: 2009-01-16T12:35:31Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013年11月にダスティン・トランメルにより公開。暗号学メーリングリストおよび bitcoin-list にもアーカイブされている。完全なメールは Bitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている"

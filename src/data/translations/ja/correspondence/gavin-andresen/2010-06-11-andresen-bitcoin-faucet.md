@@ -1,7 +1,7 @@
 ---
 title: "ビットコイン・フォーセットと初期の協力関係"
 date: 2010-06-11T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 sourceNote: "Wikipedia、MIT Technology Review、およびその他の公開された記録に基づく。この時期のアンドレセンとサトシ間の個別のメールは完全には公開されていない"

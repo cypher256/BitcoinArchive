@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin - The term 'cryptocurrency' and site improvements"
 date: 2009-06-11T21:24:25Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"

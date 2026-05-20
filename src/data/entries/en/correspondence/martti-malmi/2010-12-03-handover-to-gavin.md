@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin - Recommending Gavin Andresen to take over development and management"
 date: 2010-12-03T19:58:40Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"

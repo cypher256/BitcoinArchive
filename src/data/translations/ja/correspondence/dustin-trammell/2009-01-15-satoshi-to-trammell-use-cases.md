@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン v0.1 リリース — ユースケースと電子通貨の未来"
 date: 2009-01-15T13:15:23Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

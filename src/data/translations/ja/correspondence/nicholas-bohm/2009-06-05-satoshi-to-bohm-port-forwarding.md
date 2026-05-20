@@ -1,7 +1,7 @@
 ---
 title: "Re: ルーターの問題 —— ポート 8333 転送のアドバイス"
 date: 2009-06-05T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA 対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出"

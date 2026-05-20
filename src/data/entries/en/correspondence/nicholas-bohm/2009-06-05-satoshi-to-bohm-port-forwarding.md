@@ -1,7 +1,7 @@
 ---
 title: "Re: Router issue — port 8333 forwarding advice"
 date: 2009-06-05T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}"

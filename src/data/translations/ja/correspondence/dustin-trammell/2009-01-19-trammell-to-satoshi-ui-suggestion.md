@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン送金 - UI 表現の改善提案"
 date: 2009-01-19T19:58:23Z
-type: "article"
+type: "correspondence"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

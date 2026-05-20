@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - ウェブサイトと FAQ 開発への同意"
 date: 2009-05-03T05:08:36Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

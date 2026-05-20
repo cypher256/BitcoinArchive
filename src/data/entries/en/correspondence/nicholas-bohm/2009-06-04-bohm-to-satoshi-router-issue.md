@@ -1,7 +1,7 @@
 ---
 title: "Router issue — Bitcoin can't connect"
 date: 2009-06-04T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA v. Craig Wright trial evidence. Bohm's witness statement was filed as {C/10/1}. Justice Mellor noted at paragraph 271.9 that Mr. Bohm \"sadly died just before the Trial commenced.\""

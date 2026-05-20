@@ -1,7 +1,7 @@
 ---
 title: "Satoshi personally notifies Hal Finney of the Bitcoin v0.1 release (January 8, 2009)"
 date: 2009-01-08T20:54:55Z
-type: "article"
+type: "correspondence"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"

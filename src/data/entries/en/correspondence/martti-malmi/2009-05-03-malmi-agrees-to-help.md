@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin - Agreement to develop website and FAQ"
 date: 2009-05-03T05:08:36Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"

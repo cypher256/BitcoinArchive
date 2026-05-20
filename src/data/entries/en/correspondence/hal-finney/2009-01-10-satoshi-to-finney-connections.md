@@ -1,7 +1,7 @@
 ---
 title: "Satoshi tells Hal Finney he cannot receive incoming Bitcoin connections (January 10, 2009)"
 date: 2009-01-10T00:00:00Z
-type: "article"
+type: "correspondence"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"

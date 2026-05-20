@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin - Autostart and minimize-to-tray as must-have features"
 date: 2009-08-29T17:31:05Z
-type: "article"
+type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
