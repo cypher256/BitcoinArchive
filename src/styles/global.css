@@ -733,7 +733,10 @@ th {
 .conversation-thread .message-header .author-name {
   font-weight: 700;
   font-size: 0.95rem;
-  color: var(--color-text);
+  color: var(--color-link);
+}
+.conversation-thread .message-header .author-name:hover {
+  color: var(--color-link-hover);
 }
 
 .conversation-thread .message[data-author="satoshi"] .message-header .author-name {
