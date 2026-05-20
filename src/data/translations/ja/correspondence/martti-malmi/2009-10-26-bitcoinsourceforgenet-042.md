@@ -27,6 +27,7 @@ quotes:
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-10-26-bitcoin-website-is-down"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

@@ -408,6 +408,7 @@ export const tagTranslations: Record<string, string> = {
   'copa': 'COPA',
   'cpuminer': 'cpuminer',
   'craig-wright': 'クレイグ・ライト',
+  'crash-report': 'クラッシュ報告',
   'cryptography-mailing-list': '暗号学メーリングリスト',
   'currency-exchange': '通貨交換',
   'cyberpunk': 'サイバーパンク',

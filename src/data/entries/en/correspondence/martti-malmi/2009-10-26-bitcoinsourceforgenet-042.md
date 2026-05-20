@@ -26,6 +26,7 @@ quotes:
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-10-26-bitcoin-website-is-down"
 ---
 
 Any idea what's going on with it?  Every time I look, it's fine.

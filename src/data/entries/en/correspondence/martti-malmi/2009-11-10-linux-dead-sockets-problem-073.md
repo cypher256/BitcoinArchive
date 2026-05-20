@@ -24,10 +24,12 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-10-lost-six-sets-of-coins"
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
     parent: "q1"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-10-linux-build-fan-speed"
 ---
 
 I see what happened.  All your sockets went dead somehow.  You had no 

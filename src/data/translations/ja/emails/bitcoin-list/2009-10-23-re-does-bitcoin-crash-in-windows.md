@@ -20,6 +20,7 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "emails/bitcoin-list/2009-10-23-does-bitcoin-crash-in-windows"
 relatedEntries:
   - aftermath/2009-10-26-eugen-leitl-biography
 ---

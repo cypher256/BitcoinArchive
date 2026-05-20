@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-16-test6-segfault"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"

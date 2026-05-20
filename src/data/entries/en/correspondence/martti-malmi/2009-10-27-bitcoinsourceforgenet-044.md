@@ -34,6 +34,7 @@ quotes:
   - id: "q4"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-10-26-bitcoin-website-is-down"
 ---
 
 Sourceforge is just so darn slow.  I don't know what else to do though. 

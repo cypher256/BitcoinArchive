@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-08-blocks-not-increasing-debug-log"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
@@ -34,6 +35,7 @@ quotes:
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
     parent: "q1"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-08-linux-build-first-impressions"
 ---
 
 In the debug.log, it requests the block list, receives the block list, 

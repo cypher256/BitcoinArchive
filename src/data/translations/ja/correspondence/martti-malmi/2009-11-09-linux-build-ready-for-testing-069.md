@@ -26,6 +26,7 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
@@ -35,6 +36,7 @@ quotes:
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
     parent: "q1"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
