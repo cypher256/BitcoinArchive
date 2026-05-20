@@ -25,6 +25,7 @@ secondarySources:
   - name: "Bitcoin.com - Satoshi Archive: Email to Hal Finney"
     url: "https://web.archive.org/web/20250518000545/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 relatedEntries:
+  - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet

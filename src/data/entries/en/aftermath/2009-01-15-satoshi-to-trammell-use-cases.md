@@ -24,6 +24,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 In this email, Satoshi noted that at least one node on the network had a frequently changing IP address within the same class B range, which he hadn't anticipated. He asked Trammell's permission to CC the conversation to bitcoin-list or the Cryptography mailing list, and shared the bitcoin-list subscription details.

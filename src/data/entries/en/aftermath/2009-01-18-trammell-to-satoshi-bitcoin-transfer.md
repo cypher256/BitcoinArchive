@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-bitcoin-transfer
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Trammell initiated a new email thread about a puzzling transaction. He had sent himself 100 BTC from his work Bitcoin client to his home client using a Bitcoin address (rather than by IP), but the transaction details showed an unexpected label:

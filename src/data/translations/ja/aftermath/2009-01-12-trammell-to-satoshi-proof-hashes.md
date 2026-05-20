@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---
 

@@ -21,6 +21,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-19-trammell-to-satoshi-ui-suggestion
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 In the final email of the Bitcoin Transfer sub-thread, Trammell accepted that the mislabeling was his own mistake and offered a concrete UI improvement suggestion:

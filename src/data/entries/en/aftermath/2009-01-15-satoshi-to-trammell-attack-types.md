@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Responding to Trammell's detailed MITM analysis, Satoshi introduced a classification framework for attacks that would become influential in security thinking about Bitcoin:

@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Satoshi clarified the confusion about Trammell's transaction display. The address shown was actually one of Trammell's own receiving addresses, not Satoshi's:

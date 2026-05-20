@@ -26,6 +26,8 @@ secondarySources:
   - name: "Satoshi ↔ Martti Malmi - Recommending Gavin"
     url: "https://mmalmi.github.io/satoshi/"
 relatedEntries:
+  - forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651
+  - correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-243
   - "aftermath/2010-12-03-handover-to-gavin"
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement

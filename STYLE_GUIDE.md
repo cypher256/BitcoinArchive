@@ -101,6 +101,55 @@ Editor framing (`*[Editor: ...]*`, `*[Context: ...]*`) goes around
 the actual content as supplementary context, never as a substitute
 for it.
 
+### No editor narrator inside primary-source bodies
+
+A primary-source entry (type `correspondence`, `mailing-list`,
+`forum-post`, `bip`, `whitepaper`, `court-document`) must not carry
+editor narrator prose interleaved with the source content. This means
+**no `<!-- speaker: narrator -->` blocks, no editor-voice paragraphs
+between quoted lines, no editor framing of the email as if from
+outside.** The reader opens a primary-source entry expecting to read
+the source itself, not an article about the source.
+
+What is allowed inside a primary-source body:
+
+- the verbatim source content, in its native blockquote / plain-text
+  / list / heading structure as appropriate to the source format
+- `<!-- speaker: ... -->` markers naming the actual speaker (the
+  person who sent the email or wrote the post) — these are quotation
+  metadata, not editor commentary
+- short editor-note blocks (`*[Editor: ...]*` / `*[Context: ...]*` /
+  `*[編者注：...]*` / `*[補足：...]*`) bracketing the source as
+  supplementary context — exactly as for any other editor note,
+  bounded and explicitly tagged, never narrating the source from the
+  outside
+
+If the editorial framing is substantial — a multi-paragraph narrator
+account of who sent what to whom and why it mattered, with the email
+text quoted as evidence — the entry is an **editorial article**, not
+a primary source. Author it as `type: article` and place it under
+`aftermath/` (or `analysis/` if the framing is interpretive
+analysis). The corresponding raw email body, if quotable in full,
+goes in a separate primary-source entry under `correspondence/` /
+`emails/` / etc., and the article's `quotes[].sourceEntryId` and
+`relatedEntries` link to that primary entry.
+
+This split keeps directory semantics honest. The
+`correspondence/`, `emails/`, `forum/`, `bip/`, `whitepaper/`, and
+`court-document/` directories are the archive's record of what was
+actually written, in the words of the actual writer. Thread pages
+collate these into the conversation form. Editorial commentary lives
+under `aftermath/` and `analysis/`, and reaches the primary sources
+it discusses via `relatedEntries` and `quotes[].sourceEntryId`, not
+by sharing a directory with them.
+
+The thread-page filter in `src/data/threads.ts` enforces the same
+split at the rendering layer: `resolveThreadId()` returns `undefined`
+for editorial types (`article` / `analysis` / `biography`), so even
+an editorial entry mistakenly placed under a primary-source directory
+does not appear in the thread view alongside the primary sources it
+references.
+
 ## Editorial / Narrative Entries
 
 This section covers the **quotation form** used inside editor-written
@@ -830,14 +879,21 @@ An entry has two independent date axes:
   and the type-listing card.
 
 The two axes mean different things, so they surface differently
-depending on the entry type. For primary-source types
-(`forum-post`, `mailing-list`, `correspondence`, `whitepaper`, `bip`,
-`court-document`, `article`, `biography`) the frontmatter date *is*
-the meaningful date — the post was sent on that day, the BIP was
-filed on that day. For `analysis` entries the frontmatter date is the
-date of the underlying event being analysed, not of the analysis
-itself, so showing it as "Event" misleads readers into thinking the
-editorial piece was written on the day of the incident.
+depending on the entry type. For event-anchored types — primary
+sources (`forum-post`, `mailing-list`, `correspondence`, `whitepaper`,
+`bip`, `court-document`), plus the editorial types `article` and
+`biography` whose `date` anchors them to the event or life being
+covered — the frontmatter date *is* the meaningful date: the post
+was sent on that day, the BIP was filed on that day, the article
+recaps something that happened on that day. (Editorial type
+classification: see § Primary-Source Entries vs Editorial / Narrative
+Entries above; the two share an "event date" semantics here, but
+their bodies follow opposite rules — primary-source bodies hold the
+verbatim source, editorial bodies hold editor narrative around the
+source.) For `analysis` entries the frontmatter date is the date of
+the underlying event being analysed, not of the analysis itself, so
+showing it as "Event" misleads readers into thinking the editorial
+piece was written on the day of the incident.
 
 ### `updatedAt` policy: body changes only
 

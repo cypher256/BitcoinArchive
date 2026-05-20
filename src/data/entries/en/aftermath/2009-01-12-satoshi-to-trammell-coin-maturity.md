@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 In this reply to Dustin Trammell, Satoshi thanked him for the timestamp service link and discussed alternative approaches. Regarding Trammell's question about the credit field, Satoshi explained the coin maturity mechanism:

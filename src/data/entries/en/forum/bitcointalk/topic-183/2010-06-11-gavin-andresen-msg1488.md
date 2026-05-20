@@ -11,6 +11,8 @@ participants:
 description: "Thread starter by Gavin Andresen in BitcoinTalk topic 183."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - aftermath/2010-06-11-andresen-bitcoin-faucet
 ---
 
 For my first Bitcoin coding project, I decided to do something that sounds really dumb:  I created a web site that gives away Bitcoins.   It is at: https://freebitcoins.appspot.com/ 

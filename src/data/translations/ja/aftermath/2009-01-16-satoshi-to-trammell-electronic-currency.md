@@ -27,6 +27,9 @@ secondarySources:
     url: "https://blog.dustintrammell.com/"
   - name: "Cryptography Mailing List Archive"
     url: "https://www.metzdowd.com/pipermail/cryptography/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---
 

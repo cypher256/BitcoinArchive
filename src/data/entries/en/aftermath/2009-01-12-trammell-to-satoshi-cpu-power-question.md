@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-cpu-power-question
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 In a separate email sent just nine minutes after reporting upgrade issues, Trammell raised what would become one of Bitcoin's most enduring questions — mining centralization:

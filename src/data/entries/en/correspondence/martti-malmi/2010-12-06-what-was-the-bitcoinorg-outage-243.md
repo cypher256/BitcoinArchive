@@ -25,6 +25,8 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-242"
+relatedEntries:
+  - aftermath/2010-12-12-satoshi-handover-to-andresen
 ---
 
 <!-- quote: q1 -->

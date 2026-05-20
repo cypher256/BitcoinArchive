@@ -25,6 +25,7 @@ secondarySources:
   - name: "CoinGeek - Bitcoin Faucet Turns 12"
     url: "https://coingeek.com/how-gavin-andresen-gave-away-19700-bitcoins-in-2010-the-bitcoin-faucet-turns-12/"
 relatedEntries:
+  - forum/bitcointalk/topic-183/2010-06-11-gavin-andresen-msg1488
   - aftermath/2010-06-11-gavin-andresen-biography
 translationStatus: complete
 ---

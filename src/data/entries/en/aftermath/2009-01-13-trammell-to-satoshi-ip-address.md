@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Trammell responded to several points from Satoshi's comprehensive reply. He explained the proof-hashes Google Group required no membership to post — simply emailing proof-hashes@googlegroups.com would publish the content. He suggested that the Bitcoin client could post the current block chain every 10,000 blocks as supplemental documentation.

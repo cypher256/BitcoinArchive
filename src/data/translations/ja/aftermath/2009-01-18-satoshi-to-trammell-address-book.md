@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---
 

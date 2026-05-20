@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Sent just eleven minutes after his previous email, Trammell reported two issues encountered during the upgrade from v0.1.0 to v0.1.3:

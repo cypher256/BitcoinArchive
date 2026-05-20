@@ -18,6 +18,8 @@ tags:
   - "alert-key"
   - "final-communication"
   - "handover"
+relatedEntries:
+  - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
 translationStatus: complete
 ---
 

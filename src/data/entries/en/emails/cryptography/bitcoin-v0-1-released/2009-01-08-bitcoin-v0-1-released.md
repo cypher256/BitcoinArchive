@@ -24,6 +24,7 @@ relatedEntries:
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-12-first-bitcoin-transaction
+  - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
 ---
 
 Announcing the first release of Bitcoin, a new electronic cash

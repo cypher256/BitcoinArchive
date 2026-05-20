@@ -18,6 +18,8 @@ tags:
   - "alert-key"
   - "final-communication"
   - "handover"
+relatedEntries:
+  - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
 ---
 
 I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle. Maybe instead make it about the open source project and give more credit to your dev contributors; it helps motivate them.

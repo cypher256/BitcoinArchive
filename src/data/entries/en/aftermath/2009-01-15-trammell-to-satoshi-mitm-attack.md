@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 In a new email thread, Trammell — a professional security researcher — reported on his detailed analysis of Bitcoin's network protocol. He had captured and analyzed packet traces during a transaction he sent to himself, observing that the protocol transmitted some cleartext information including transaction names and comments.

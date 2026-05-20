@@ -24,6 +24,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 In the final email of the Satoshi-Trammell correspondence, sent nearly a week after the previous exchange, Satoshi discussed the economics of spam in a system where proof-of-work tokens have value. He quoted [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s observation that valuable POW tokens would make botnet infections more noticeable to computer owners.

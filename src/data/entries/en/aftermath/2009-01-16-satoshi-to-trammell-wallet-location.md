@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-wallet-location
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Responding to Trammell's concerns about data loss and wallet backup, Satoshi disclosed the wallet's storage location and technology:

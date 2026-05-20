@@ -21,6 +21,7 @@ tags:
   - "github"
   - "historic"
 relatedEntries:
+  - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
 translationStatus: complete
 ---

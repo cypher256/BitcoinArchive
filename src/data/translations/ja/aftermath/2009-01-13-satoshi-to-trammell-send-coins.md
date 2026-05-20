@@ -23,6 +23,7 @@ secondarySources:
   - name: "Dustin Trammell's Blog - ブロック 286"
     url: "https://blog.dustintrammell.com/block-286-and-satoshis-coins/"
 relatedEntries:
+  - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
   - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---

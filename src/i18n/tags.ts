@@ -672,4 +672,13 @@ export const tagTranslations: Record<string, string> = {
   'incarcerated': '服役中',
   'name-match': '名前一致',
   'truecrypt-precursor': 'TrueCrypt前身',
+  'ux': 'UX',
+  'ux-confusion': 'UX の混乱',
+  'v0-1-3': 'v0.1.3',
+  'vision': 'ビジョン',
+  'catches-on': '普及の兆し',
+  'feedback': 'フィードバック',
+  'mitm': '中間者攻撃',
+  'pow-tokens': 'PoW トークン',
+  'proof-hashes': 'プルーフハッシュ',
 };

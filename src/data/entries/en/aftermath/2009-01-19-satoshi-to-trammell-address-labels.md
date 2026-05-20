@@ -21,6 +21,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Satoshi clarified that the default label for a new address was "Your Address," not "Satoshi." He suggested Trammell had likely mislabeled his own address while trying to label what he thought was Satoshi's address:

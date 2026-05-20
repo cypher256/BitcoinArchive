@@ -29,6 +29,7 @@ relatedEntries:
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
   - aftermath/2009-01-11-dustin-trammell-biography
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
+  - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
 ---
 
 On January 12, 2009, at 03:30:25 UTC, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent 10 BTC to [Hal Finney](/BitcoinArchive/participants/hal-finney/) in Block 170 of the Bitcoin blockchain — the first person-to-person Bitcoin transaction in history.

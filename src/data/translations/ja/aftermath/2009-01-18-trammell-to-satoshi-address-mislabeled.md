@@ -20,6 +20,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled
+  - aftermath/2009-01-11-dustin-trammell-biography
 translationStatus: complete
 ---
 

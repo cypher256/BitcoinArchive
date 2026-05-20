@@ -31,6 +31,24 @@ relatedEntries:
   - aftermath/2009-01-12-first-bitcoin-transaction
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2009-01-10-satoshi-launch-environment
+  - aftermath/2009-01-15-trammell-to-satoshi-bitcoin-list
+  - aftermath/2009-01-18-trammell-to-satoshi-bitcoin-transfer
+  - aftermath/2009-01-25-satoshi-to-trammell-spam-pow
+  - aftermath/2009-01-15-trammell-to-satoshi-address-verification
+  - aftermath/2009-01-12-trammell-to-satoshi-cpu-power-question
+  - aftermath/2009-01-12-satoshi-to-trammell-coin-maturity
+  - aftermath/2009-01-19-satoshi-to-trammell-address-labels
+  - aftermath/2009-01-19-trammell-to-satoshi-ui-suggestion
+  - aftermath/2009-01-15-satoshi-to-trammell-attack-types
+  - aftermath/2009-01-15-satoshi-to-trammell-use-cases
+  - aftermath/2009-01-16-satoshi-to-trammell-electronic-currency
+  - aftermath/2009-01-16-satoshi-to-trammell-wallet-location
+  - aftermath/2009-01-13-trammell-to-satoshi-ip-address
+  - aftermath/2009-01-18-satoshi-to-trammell-address-book
+  - aftermath/2009-01-18-trammell-to-satoshi-address-mislabeled
+  - aftermath/2009-01-12-trammell-to-satoshi-proof-hashes
+  - aftermath/2009-01-15-trammell-to-satoshi-mitm-attack
+  - aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues
 ---
 
 On January 11, 2009, three days after Bitcoin v0.1's [public release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/), an Austin-based infosec researcher named Dustin Trammell downloaded the software, ran it, and [emailed Satoshi](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) the same day. Three days after that, on January 14, 2009, [Satoshi sent him 25 BTC](/BitcoinArchive/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/) as a test transaction — the second-known person-to-person Bitcoin transfer in history, after the [10 BTC sent to Hal Finney two days earlier](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).

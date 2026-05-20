@@ -23,6 +23,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Trammell continued the security discussion, arguing that Bitcoin addresses had an advantage over IP-based sending because they could be verified through multiple independent channels:

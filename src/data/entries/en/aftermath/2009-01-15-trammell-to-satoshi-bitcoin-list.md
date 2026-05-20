@@ -24,6 +24,9 @@ tags:
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list
+  - aftermath/2009-01-11-dustin-trammell-biography
 ---
 
 Trammell responded to Satoshi's request to CC the conversation publicly, confirming that the node with the changing IP was not him — his Bitcoin client at work used a static NAT address and his home IP had been stable for at least three days of testing transfers between the two.

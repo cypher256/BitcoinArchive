@@ -11,6 +11,8 @@ participants:
 description: "ギャビン・アンドレセンがスレッドを開始: BitcoinTalk トピック 183。"
 isSatoshi: false
 tags: []
+relatedEntries:
+  - aftermath/2010-06-11-andresen-bitcoin-faucet
 translationStatus: complete
 ---
 
