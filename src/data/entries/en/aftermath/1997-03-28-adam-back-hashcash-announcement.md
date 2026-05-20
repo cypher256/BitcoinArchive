@@ -33,7 +33,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/2008-08-20-adam-back-biography"
-  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "aftermath/2008-08-20-satoshi-to-adam-back"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
@@ -90,7 +90,7 @@ This entry records the 1997 starting point of an eleven-year arc:
 | 1997-03-28 | [Hashcash announcement](http://www.hashcash.org/papers/announce.txt) (Cypherpunks list) | Positioned Hashcash as a "stop gap measure until digicash becomes more widely used"; section *How does this fit in with digicash*; `hashcash mint` command and "double spending protection" in the implementation |
 | 1998-12-06 | [Cypherpunks-list b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | Identified seven monetary-design issues in b-money; proposed "to create value you burn CPU time, just like with hashcash" |
 | 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
-| 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
+| 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
 
 In Back's own retrospective framing in the [April 2026 X post](https://x.com/adam3us/status/2041811857732768148) responding to the NYT investigation: "I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash."
 

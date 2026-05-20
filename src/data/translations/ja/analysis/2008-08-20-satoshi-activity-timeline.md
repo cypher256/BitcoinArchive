@@ -39,7 +39,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-本アーカイブに収録されたサトシ・ナカモトの全イベント —— メール、メーリングリスト投稿、BitcoinTalk スレッド、P2P Foundation メッセージ、SourceForge リリース —— を 1 本の時間軸にプロット。最初の点は [2008 年 8 月 20 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)。最後の点は [2011 年 4 月 26 日のギャビン・アンドレセン宛警告キー譲渡メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)。両端の間、サトシは 32 か月にわたって投稿、返信、コード公開、通信を行った。最後の点以降、確認された記録は何もない。
+本アーカイブに収録されたサトシ・ナカモトの全イベント —— メール、メーリングリスト投稿、BitcoinTalk スレッド、P2P Foundation メッセージ、SourceForge リリース —— を 1 本の時間軸にプロット。最初の点は [2008 年 8 月 20 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)。最後の点は [2011 年 4 月 26 日のギャビン・アンドレセン宛警告キー譲渡メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)。両端の間、サトシは 32 か月にわたって投稿、返信、コード公開、通信を行った。最後の点以降、確認された記録は何もない。
 
 **収録範囲:** サトシが著者として記録されているアーカイブエントリすべて — メール、メーリングリスト投稿（cryptography、bitcoin-list、p2p-research）、BitcoinTalk と P2P Foundation のフォーラム投稿、SourceForge リリースを含む。サトシについて第三者が書いたものは含まない。
 

@@ -42,13 +42,13 @@ relatedEntries:
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
-  - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-10-satoshi-to-finney-connections
   - correspondence/martti-malmi/2009-07-21-bitcoin-024
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
 inlineLinkKeywords:
   - "Satoshi's self-statements"
@@ -82,8 +82,8 @@ All three identity claims appear together on a single artifact and nowhere else 
 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
-| "I'm getting ready to release a paper that expands on your ideas into a complete working system" | [→ Adam Back, 2008-08-20](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | Self-attribution of authorship and intent; confirmed by subsequent publication |
-| "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point" | [→ Adam Back, 2008-08-21](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | Self-disclosure of a specific knowledge gap during development |
+| "I'm getting ready to release a paper that expands on your ideas into a complete working system" | [→ Adam Back, 2008-08-20](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | Self-attribution of authorship and intent; confirmed by subsequent publication |
+| "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point" | [→ Adam Back, 2008-08-21](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | Self-disclosure of a specific knowledge gap during development |
 | "I was very interested to read your b-money page" (after Back's referral) | [→ Wei Dai, 2008-08-22](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 2008-08-22 | Internally consistent with the prior row |
 | "I believe I've worked through all those little details over the last year and a half while coding it" | [cryptography ML, 2008-11-17](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 2008-11-17 | Locates development start around mid-2007 |
 | "I've developed a new open source P2P e-cash system called Bitcoin... It's completely decentralized... because everything is based on crypto proof instead of trust" | [P2P Foundation forum](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) | 2009-02-11 | First-person public authorship statement; positions the project against institutional trust |
@@ -92,7 +92,7 @@ All three identity claims appear together on a single artifact and nowhere else 
 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
-| "Unfortunately, I can't receive incoming connections from where I am" | [→ Hal Finney](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (or 12, disputed) | Operational self-disclosure; analyzed in [launch-environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) |
+| "Unfortunately, I can't receive incoming connections from where I am" | [→ Hal Finney](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (or 12, disputed) | Operational self-disclosure; analyzed in [launch-environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) |
 | "I'm not going to be much help right now either, pretty busy with work, and need a break from it after 18 months development" | [→ Martti Malmi, 2009-07-21](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | Re-confirms 18-month timeline and self-discloses fatigue. (The preceding sentences in the same email describe Hal Finney's reduced involvement; Satoshi's "either" pivots to his own state.) |
 | "That's where I have less expertise" (regarding Linux/FreeBSD testing) | BitcoinTalk forum post, December 2009 | 2009-12 | Cross-platform expertise gap |
 | "[Gavin is] technically much more Linux capable than me" | private email to Gavin Andresen, December 2010 | 2010-12 | Comparative self-evaluation by Satoshi (his own assessment of his Linux skill relative to Gavin's) |
@@ -104,8 +104,8 @@ All three identity claims appear together on a single artifact and nowhere else 
 | "[I'm] working on other projects" (paraphrase; verbatim text not published) | [→ Gavin Andresen, September 2010](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | 2010-09 (exact day not in public record) | Earliest documented signal of intent to step back. The message itself is referenced in Andresen's later interviews but has not been published verbatim |
 | "I'm doing a few more things, then I plan to pass the baton" | [BitcoinTalk topic-2228, final public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | 2010-12-12 | Final known public post on BitcoinTalk. Foreshadows the private departure announcements four months later |
 | "I've moved on to other things. It's in good hands with [Gavin](/BitcoinArchive/participants/gavin-andresen/) and everyone" | [→ Mike Hearn, 2011-04-23](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 2011-04-23 | Departure announcement |
-| "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle" | [→ Gavin Andresen, 2011-04-26](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | Self-perception statement; rejection of the "shadowy figure" frame |
-| "I've moved on to other things and will probably be unavailable" | [→ Gavin Andresen, 2011-04-26](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | Final departure announcement |
+| "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle" | [→ Gavin Andresen, 2011-04-26](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | Self-perception statement; rejection of the "shadowy figure" frame |
+| "I've moved on to other things and will probably be unavailable" | [→ Gavin Andresen, 2011-04-26](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | Final departure announcement |
 
 ### 1.5 Authenticity-disputed
 

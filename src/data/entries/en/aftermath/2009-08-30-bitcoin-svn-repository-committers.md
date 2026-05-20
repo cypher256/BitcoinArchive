@@ -36,7 +36,7 @@ relatedEntries:
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"
   - aftermath/2008-11-09-bitcoin-project-registered
   - aftermath/2010-05-22-bitcoin-pizza-day
-  - correspondence/martti-malmi/2010-12-03-handover-to-gavin
+  - aftermath/2010-12-03-handover-to-gavin
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-09-satoshi-code-analysis
 ---
@@ -61,7 +61,7 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 
 **Laszlo Hanyecz (laszloh)** — known for the [first real-world Bitcoin purchase](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) (10,000 BTC for two pizzas) and for pioneering GPU mining — made exactly one SVN commit: r123 on August 4, 2010, fixing macOS compilation issues.
 
-**Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. With 81 commits, he was the second most active committer after Satoshi. On December 3, 2010, Satoshi [wrote to Martti Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/):
+**Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. With 81 commits, he was the second most active committer after Satoshi. On December 3, 2010, Satoshi [wrote to Martti Malmi](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/):
 
 > "I think it should be Gavin. I trust him, he's responsible, professional, and technically much more Linux capable than me."
 

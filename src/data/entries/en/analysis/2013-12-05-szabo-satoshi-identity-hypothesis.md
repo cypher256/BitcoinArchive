@@ -224,7 +224,7 @@ The strongest claim the public record supports about Satoshi himself is that he 
 
 Szabo was visibly active during 2007–2008 (continuous Unenumerated posting). Like Adam Back, this counts as evidence against him under the identifiability argument.
 
-[Hal Finney's early correspondence](/BitcoinArchive/participants/hal-finney/) noted the conceptual similarity between Bitcoin and Bit Gold, and Satoshi himself learned of Wei Dai's b-money via Adam Back's referral in August 2008 (per the [August 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)). No published direct correspondence between Szabo and Satoshi has surfaced.
+[Hal Finney's early correspondence](/BitcoinArchive/participants/hal-finney/) noted the conceptual similarity between Bitcoin and Bit Gold, and Satoshi himself learned of Wei Dai's b-money via Adam Back's referral in August 2008 (per the [August 2008 email exchange](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/)). No published direct correspondence between Szabo and Satoshi has surfaced.
 
 For comparison with other named-candidate Satoshi-identity hypotheses, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the individual hypothesis entries for [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), [Sassaman](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), [Kaneko](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/), and [Todd](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/).
 

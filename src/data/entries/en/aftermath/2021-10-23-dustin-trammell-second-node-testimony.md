@@ -55,7 +55,7 @@ This detail is significant for understanding the early network dynamics. Despite
 
 > "I think I may have been the second node on the network, but that's entirely speculative based on the behavior that I saw in the software at the time."
 
-Trammell was careful to note this was based on observed behavior (a single peer connection bootstrapping to a known IP) rather than definitive proof. However, his [January 11, 2009 email to Satoshi](/BitcoinArchive/entries/correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email/) — just two days after the v0.1 release — documenting "Generated" messages with 0.00 credit confirms he was running the software by that date.
+Trammell was careful to note this was based on observed behavior (a single peer connection bootstrapping to a known IP) rather than definitive proof. However, his [January 11, 2009 email to Satoshi](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) — just two days after the v0.1 release — documenting "Generated" messages with 0.00 credit confirms he was running the software by that date.
 
 **Earlier account (Cointelegraph, March 2021):**
 

@@ -39,7 +39,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-Every documented Satoshi Nakamoto event in this archive — private email, mailing-list post, BitcoinTalk thread, P2P Foundation message, SourceForge release — plotted on a single time axis. The first dot is the [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/). The last is the [April 26, 2011 alert-key handover email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) to Gavin Andresen. Between those points, Satoshi posted, replied, released code, and corresponded for thirty-two months. After the last point, nothing verified.
+Every documented Satoshi Nakamoto event in this archive — private email, mailing-list post, BitcoinTalk thread, P2P Foundation message, SourceForge release — plotted on a single time axis. The first dot is the [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/). The last is the [April 26, 2011 alert-key handover email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) to Gavin Andresen. Between those points, Satoshi posted, replied, released code, and corresponded for thirty-two months. After the last point, nothing verified.
 
 **What is included:** every Archive entry attributed to Satoshi as the author — private correspondence, mailing-list posts (cryptography, bitcoin-list, p2p-research), BitcoinTalk and P2P Foundation forum posts, and SourceForge releases. The timeline does not include third-party writing about Satoshi.
 

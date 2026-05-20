@@ -29,8 +29,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-08-20-satoshi-self-statements
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
-  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
 translationStatus: complete
@@ -48,7 +48,7 @@ translationStatus: complete
 
 **2011年4月26日 — ギャビン・アンドレセン宛：**
 
-3日後、サトシは[ギャビン・アンドレセンに、最後の既知のメールとされるものを送った](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)。件名は「alert key」だった。
+3日後、サトシは[ギャビン・アンドレセンに、最後の既知のメールとされるものを送った](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)。件名は「alert key」だった。
 
 > 「私のことを謎めいた影の人物として話し続けるのはやめてほしい。メディアはそれを海賊通貨という切り口に変えてしまう。代わりにオープンソースプロジェクトとして取り上げ、開発に貢献しているメンバーにもっと功績を認めてほしい。それが彼らのモチベーションになる」
 
@@ -58,4 +58,4 @@ translationStatus: complete
 
 最後に、ネットワークアラートキー — すべてのビットコインクライアントに緊急メッセージを配信するための重要なツール — を移譲し、プロジェクトの引き継ぎの最後の要素を完了させた。
 
-[アンドレセンは返信](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/)でアラートキーを受諾し、In-Q-Tel の招きで CIA の会議でビットコインのプレゼンテーションを行うことを明かした。サトシが返信することはなかった。以降、サトシからの確認済みの通信は記録されていない。
+[アンドレセンは返信](/BitcoinArchive/ja/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/)でアラートキーを受諾し、In-Q-Tel の招きで CIA の会議でビットコインのプレゼンテーションを行うことを明かした。サトシが返信することはなかった。以降、サトシからの確認済みの通信は記録されていない。

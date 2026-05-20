@@ -46,9 +46,9 @@ relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - aftermath/2008-08-20-adam-back-biography
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
@@ -71,7 +71,7 @@ translationStatus: complete
 
 ## 1. 仮説が主張する内容
 
-仮説の主張は、バックがサトシ・ナカモトの仮名の中の人物だったというもの。バックの「サトシ」 との文書化された公的記録上のやり取り — [2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)や [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、バックは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、2014 年以降 Blockstream を運営しつつ公的には正体を否定し続けている、ということになる。
+仮説の主張は、バックがサトシ・ナカモトの仮名の中の人物だったというもの。バックの「サトシ」 との文書化された公的記録上のやり取り — [2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)や [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、バックは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、2014 年以降 Blockstream を運営しつつ公的には正体を否定し続けている、ということになる。
 
 ## 2. 仮説が依拠する論点
 
@@ -130,7 +130,7 @@ Hashcash に含まれない各構成要素が**実際にどこから来たのか
 | 1997-03-28 | [Hashcash アナウンス](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)（サイファーパンクリスト） | アナウンスの「これは digicash とどう関係するか」 節で Hashcash を「digicash がより広く使われるまでの応急措置」 と位置づけ |
 | 1998-12-06 | [サイファーパンクリスト b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | b-money の貨幣設計上の 7 論点を指摘、「価値を創造するには CPU 時間を燃やす — Hashcash と同じように」 を提案 |
 | 2002-08-01 | [Hashcash 論文 §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | 「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に **mint** の語を用いる」。§7 がウェイ・ダイの b-money 鋳造機構としての応用を列挙 |
-| 2008-08-20 | [サトシからアダム・バックへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | サトシがビットコインホワイトペーパー向けの Hashcash 引用形式についてバックに問い合わせる |
+| 2008-08-20 | [サトシからアダム・バックへ](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | サトシがビットコインホワイトペーパー向けの Hashcash 引用形式についてバックに問い合わせる |
 
 NYT 調査への応答としてバック自身が 2026 年 4 月に投稿した [X 投稿](https://x.com/adam3us/status/2041811857732768148)における回顧的な枠組み：「暗号学・オンラインプライバシー・電子キャッシュの肯定的な社会的含意に早くから集中的に注目していた。ゆえに 1992 年以降、サイファーパンクリストでの ecash・プライバシー技術の応用研究に積極的な関心を持ち続けてきた。それが Hashcash や他のアイデアにつながった。」
 
@@ -142,11 +142,11 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に投稿した 
 
 ### 3.1 2008 年のメール通信そのものが第三者応答として読める
 
-最強のアーカイブ内反証は、[2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)そのものの構造である：
+最強のアーカイブ内反証は、[2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)そのものの構造である：
 
 - 8 月 20 日：サトシからバックへ — 初期のビットコイン構想を説明し、Hashcash の正しい引用形式と関連する先行研究について尋ねる。
-- 8 月 21 日：[バックからサトシへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) — 求められた引用情報を提供し、ウェイ・ダイの b-money 提案を見るよう示唆。
-- 8 月 22 日：[サトシからバックへ](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 と返信し、同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送信。
+- 8 月 21 日：[バックからサトシへ](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) — 求められた引用情報を提供し、ウェイ・ダイの b-money 提案を見るよう示唆。
+- 8 月 22 日：[サトシからバックへ](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 と返信し、同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送信。
 
 バックがサトシ本人だったのなら、この構造は自然には成立しない：バックが「バック」 に引用ガイダンスを尋ねる必要はないし、自分から自分への紹介経由で b-money を「発見する」 必要もない。シンプルな読みは、通信が見たままのもの — サトシがバックに助けを求め、バックが第三者として関連するポインターを返し、サトシがそれを追ったというもの。
 

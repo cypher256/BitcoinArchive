@@ -42,9 +42,9 @@ secondarySources:
     url: "https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/"
 relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
@@ -98,7 +98,7 @@ Back also denied the claim on social media, consistent with his prior public pos
 
 The archive holds primary-source material that bears directly on the NYT claim:
 
-- The [August 20–22, 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) between Satoshi and Back — including [Back's August 21 reply suggesting Satoshi look at Wei Dai's b-money](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/), and [Satoshi's August 22 reply](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) stating "I wasn't aware of the b-money page" and the same-day [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
+- The [August 20–22, 2008 email exchange](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) between Satoshi and Back — including [Back's August 21 reply suggesting Satoshi look at Wei Dai's b-money](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/), and [Satoshi's August 22 reply](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) stating "I wasn't aware of the b-money page" and the same-day [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
 - Back's [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) submitting these emails as witness evidence, treating Satoshi as a separate person under oath.
 - [Wei Dai's 2014 retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) on the AALWA thread, which argues Satoshi was "not previously active" in the visible cypherpunk community during the development period — a framing that selects against any candidate visibly active in cypherpunk-list discussion during 2007–2008, which is exactly the population the NYT stylometric analysis selects within.
 

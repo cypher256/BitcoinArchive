@@ -45,7 +45,7 @@ translationStatus: complete
 
 > 「僕はサトシとコミュニケーションを取りましたが、ライト博士とは別の人物だと信じています」
 
-同日、[アダム・バックも証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、2008年8月の[サトシとの完全なメールチェーン](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)を提出した。
+同日、[アダム・バックも証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、2008年8月の[サトシとの完全なメールチェーン](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)を提出した。
 
 マルミはその後、完全なメールアーカイブを GitHub で公開した。リンクやパスワードを含む機密情報のために何年も非公開としていたが、裁判の重要性を鑑みて公開を決断したと説明した。
 

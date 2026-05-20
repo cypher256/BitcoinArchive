@@ -31,7 +31,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2009-01-03-genesis-block-hardcode-analysis
-  - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-10-satoshi-to-finney-connections
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
@@ -59,7 +59,7 @@ translationStatus: complete
 
 ### 1.1 メールの表現（一次資料）
 
-2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは[サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期ウィンドウの内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
+2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは[サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期ウィンドウの内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
 
 > 「残念ながら、**今いる場所からは**外部からの接続を受け付けることができず、そのせいで作業がより困難になっている」
 
@@ -73,7 +73,7 @@ translationStatus: complete
 |---|---|---|
 | 2009-01-08 19:27 | [Bitcoin v0.1 リリース告知](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) | 暗号学メーリングリスト |
 | 2009-01-09 02:54:25 | ブロック 1 採掘（チェーン上の `nTime`。ノード起動はその数分前と推定） | — |
-| 2009-01-10 | [サトシ → フィニー：「from where I am」](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) | メール |
+| 2009-01-10 | [サトシ → フィニー：「from where I am」](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | メール |
 | 2009-01-11 22:32 | [Bitcoin v0.1.2 リリース告知](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available/) | bitcoin-list |
 | 2009-01-12 20:20 | Bitcoin v0.1 Alpha release notes | bitcoin-list |
 | 2009-01-12 22:48 | Bitcoin v0.1.3 | bitcoin-list |

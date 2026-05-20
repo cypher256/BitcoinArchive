@@ -151,15 +151,38 @@ async function run() {
   }
 
   // Step 1: For each entry file, collect commit history (date + hash), newest first.
+  // Use --name-status so we can detect renames (R) and follow each file's path
+  // across rename boundaries. Without rename-awareness a file's history is split
+  // across its old and new paths, producing dead keys in the output for files
+  // that have moved.
   const raw = execSync(
-    'git log --all --format="COMMIT %aI %H" --name-only --diff-filter=ACMR',
+    'git log --all --format="COMMIT %aI %H" --name-status --diff-filter=ACMR',
     { cwd: ROOT, encoding: 'utf-8', maxBuffer: 200 * 1024 * 1024 }
   );
 
-  /** @type {Map<string, Array<{ date: string, hash: string }>>} */
+  /** @type {Map<string, Array<{ date: string, hash: string, path: string }>>}
+   * Keyed by the file's CANONICAL path (= latest known path after all renames).
+   * Each event records the literal path at the commit so we can fetch the
+   * correct blob revision later. */
   const perFileHistory = new Map();
+
+  // Walk commits NEWEST to OLDEST (git log default). When we encounter a
+  // rename event "R old new", we learn that `old` later became `new`. Any
+  // earlier (= older) event on `old` should be attributed to `new` (the
+  // canonical path), so we maintain a chain that resolves old → canonical.
+  /** @type {Map<string, string>} */
+  const canonicalOf = new Map();
+  function canonical(p) {
+    let cur = p;
+    while (canonicalOf.has(cur)) cur = canonicalOf.get(cur);
+    return cur;
+  }
+
   let currentDate = '';
   let currentHash = '';
+
+  const isEntryPath = (p) =>
+    p.endsWith('.md') && (p.startsWith(EN_PREFIX) || p.startsWith(JA_PREFIX));
 
   for (const line of raw.split('\n')) {
     if (line.startsWith('COMMIT ')) {
@@ -167,21 +190,56 @@ async function run() {
       if (m) { currentDate = m[1]; currentHash = m[2]; }
       continue;
     }
-    const trimmed = line.trim();
-    if (!trimmed || !currentDate) continue;
-    if (!trimmed.endsWith('.md')) continue;
-    if (!trimmed.startsWith(EN_PREFIX) && !trimmed.startsWith(JA_PREFIX)) continue;
+    if (!line || !currentDate) continue;
 
-    if (!perFileHistory.has(trimmed)) perFileHistory.set(trimmed, []);
-    perFileHistory.get(trimmed).push({ date: currentDate, hash: currentHash });
+    // name-status lines are tab-separated: `STATUS\tPATH` for A/C/M/D,
+    // or `R<score>\told\tnew` for renames.
+    const parts = line.split('\t');
+    const status = parts[0];
+    if (!status) continue;
+
+    if (status.startsWith('R')) {
+      const oldPath = parts[1];
+      const newPath = parts[2];
+      if (!oldPath || !newPath) continue;
+      if (!isEntryPath(oldPath) && !isEntryPath(newPath)) continue;
+
+      // Record old → new so any older commit on `old` resolves forward to the
+      // (current) canonical of `new`.
+      const newCanon = canonical(newPath);
+      canonicalOf.set(oldPath, newCanon);
+
+      // Treat the rename commit itself as a body event on the new path
+      // (the rename may also touch content; if not, the body hash will match
+      // its predecessor and the updatedAt logic in Step 5 will ignore it).
+      // We store the LITERAL path at this commit (= newPath) so the blob
+      // lookup in Step 2 can fetch the file as it existed in this commit.
+      if (!perFileHistory.has(newCanon)) perFileHistory.set(newCanon, []);
+      perFileHistory.get(newCanon).push({ date: currentDate, hash: currentHash, path: newPath });
+      continue;
+    }
+
+    // A / C / M / D — single path
+    const p = parts[1];
+    if (!p || !isEntryPath(p)) continue;
+    if (status === 'D') {
+      // Deletion: don't add to history. If a delete is followed by a re-add
+      // under a different path elsewhere, that's not modeled as a rename here.
+      continue;
+    }
+    const canon = canonical(p);
+    if (!perFileHistory.has(canon)) perFileHistory.set(canon, []);
+    perFileHistory.get(canon).push({ date: currentDate, hash: currentHash, path: p });
   }
 
-  // Step 2: Build all <commit_hash>:<path> revs.
+  // Step 2: Build all <commit_hash>:<path> revs. Use the literal path at each
+  // commit (= history entry's `.path`), not the canonical key, because the
+  // blob at <hash>:<canonical_path> won't exist for commits prior to a rename.
   /** @type {string[]} */
   const revs = [];
-  for (const [path, history] of perFileHistory) {
-    for (const { hash } of history) {
-      revs.push(`${hash}:${path}`);
+  for (const [, history] of perFileHistory) {
+    for (const { hash, path: literalPath } of history) {
+      revs.push(`${hash}:${literalPath}`);
     }
   }
   console.log(`Fetching ${revs.length} blob versions across ${perFileHistory.size} files…`);
@@ -198,30 +256,24 @@ async function run() {
     bodyHashes.set(rev, createHash('sha256').update(body).digest('hex'));
   }
 
-  // Step 5: For each file, compute createdAt + updatedAt.
+  // Step 5: For each canonical path, compute createdAt + updatedAt.
   /** @type {Map<string, { createdAt: string, updatedAt: string }>} */
   const fileMap = new Map();
-  for (const [path, history] of perFileHistory) {
+  for (const [canonicalPath, history] of perFileHistory) {
     if (history.length === 0) continue;
     // history[0] = newest, history[length-1] = oldest.
     const oldest = history[history.length - 1];
     let updatedAt = oldest.date;
-    // Walk oldest → newest. The "predecessor" of a commit is unambiguous in
-    // this direction (= the commit immediately older in time). Each time the
-    // body hash differs from its predecessor, update `updatedAt`. The last
-    // overwrite is the newest body-change commit. If no body change is ever
-    // found (e.g. the file has only its creation commit, or every later
-    // commit was frontmatter-only), `updatedAt` stays at the creation date.
     for (let i = history.length - 2; i >= 0; i--) {
-      const newerRev = `${history[i].hash}:${path}`;
-      const olderRev = `${history[i + 1].hash}:${path}`;
+      const newerRev = `${history[i].hash}:${history[i].path}`;
+      const olderRev = `${history[i + 1].hash}:${history[i + 1].path}`;
       const newerHash = bodyHashes.get(newerRev);
       const olderHash = bodyHashes.get(olderRev);
       if (newerHash !== undefined && olderHash !== undefined && newerHash !== olderHash) {
         updatedAt = history[i].date;
       }
     }
-    fileMap.set(path, { createdAt: oldest.date, updatedAt });
+    fileMap.set(canonicalPath, { createdAt: oldest.date, updatedAt });
   }
 
   // Step 6: Build per-entry-id, per-language output.

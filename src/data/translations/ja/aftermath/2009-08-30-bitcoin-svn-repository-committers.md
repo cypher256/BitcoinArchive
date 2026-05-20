@@ -36,7 +36,7 @@ relatedEntries:
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"
   - aftermath/2008-11-09-bitcoin-project-registered
   - aftermath/2010-05-22-bitcoin-pizza-day
-  - correspondence/martti-malmi/2010-12-03-handover-to-gavin
+  - aftermath/2010-12-03-handover-to-gavin
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-09-satoshi-code-analysis
 translationStatus: complete
@@ -62,7 +62,7 @@ translationStatus: complete
 
 **ラズロ・ハニエツ（laszloh）** — [史上初のビットコインによる実世界での購入](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)（ピザ 2枚に 1 万 BTC）と GPU マイニングの先駆者として知られる — の SVN コミットはたった 1件：2010年8月4日の r123 で、macOS のコンパイル問題を修正した。
 
-**ギャビン・アンドレセン（gavinandresen）** は 2010年10月にコミットアクセスを取得した。サトシがプロジェクトを段階的に引き渡す過程の一環だった。81件のコミットはサトシに次いで 2番目に多い。2010年12月3日、サトシは[マルッティ・マルミにこう書いている](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)：
+**ギャビン・アンドレセン（gavinandresen）** は 2010年10月にコミットアクセスを取得した。サトシがプロジェクトを段階的に引き渡す過程の一環だった。81件のコミットはサトシに次いで 2番目に多い。2010年12月3日、サトシは[マルッティ・マルミにこう書いている](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)：
 
 > 「ギャビンがいいと思う。信頼できるし、責任感があり、プロフェッショナルで、技術的にもLinuxに関しては私よりずっと上だ」
 

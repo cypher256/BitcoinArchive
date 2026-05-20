@@ -65,7 +65,7 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
 inlineLinkKeywords:
@@ -159,7 +159,7 @@ Satoshi's withdrawal from the project does not occur as a single event. The docu
 | Date (UTC) | Event | Source |
 |---|---|---|
 | September 2010 | Satoshi tells Gavin Andresen privately that he is "moving on to other projects." Exact date and medium not in the public record; reconstructed from Andresen's later recollection. | Gavin Andresen interview ([CoinMarketCap "Satoshi Files: Gavin Andresen"](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
-| December 3, 2010 | Satoshi → Martti Malmi: "It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me." | [`mmalmi.github.io/satoshi` released correspondence](/BitcoinArchive/entries/correspondence/martti-malmi/2009-05-02-first-contact-satoshi-reply/) |
+| December 3, 2010 | Satoshi → Martti Malmi: "It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me." | [`mmalmi.github.io/satoshi` released correspondence](/BitcoinArchive/entries/aftermath/2009-05-02-first-contact-satoshi-reply/) |
 | December 5, 2010 | WikiLeaks-related thread "Bring it on" on BitcoinTalk; Satoshi posts public objection: "No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way." | [BitcoinTalk thread](/BitcoinArchive/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/) |
 | December 12, 2010 | Satoshi grants Andresen formal commit access to the SourceForge repository (private). Public-side: Satoshi's final BitcoinTalk post (in a DDoS-mitigation thread) closes with "I'm doing a few more things, then I plan to pass the baton." | COPA v Wright public exhibits; [BitcoinTalk thread](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | December 15, 2010 | Satoshi's final SVN commit (revision 202) — a small change to IRC external-IP retrieval. | SourceForge SVN history |

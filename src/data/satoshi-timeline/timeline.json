@@ -1,11 +1,10 @@
 {
-  "generated": "2026-04-26T10:38:12.458Z",
-  "total": 765,
+  "generated": "2026-05-20T13:35:00.151Z",
+  "total": 764,
   "channelCounts": {
-    "private-email": 182,
+    "other": 40,
+    "private-email": 155,
     "cryptography-ml": 20,
-    "other": 5,
-    "sourceforge": 9,
     "bitcoin-list-ml": 16,
     "p2p-research-ml": 4,
     "p2pfoundation": 4,
@@ -13,24 +12,24 @@
   },
   "events": [
     {
-      "date": "2008-08-20T00:00:00.000Z",
-      "channel": "private-email",
+      "date": "2008-08-20T17:30:39.000Z",
+      "channel": "other",
       "title": "Hashcash citation and Bitcoin whitepaper draft",
-      "titleJa": "Hashcashの引用とビットコインホワイトペーパー草稿",
-      "slug": "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+      "titleJa": "Hashcash の引用とビットコインホワイトペーパー草稿",
+      "slug": "aftermath/2008-08-20-satoshi-to-adam-back"
     },
     {
       "date": "2008-08-21T17:59:48.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Hashcash citation — 'my ideas start from exactly that point'",
-      "titleJa": "Re: Hashcashの引用 —— 「私のアイデアはまさにその点から始まっている」",
-      "slug": "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
+      "titleJa": "Re: Hashcash の引用 —— 「私のアイデアはまさにその点から始まっている」",
+      "slug": "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
     },
     {
       "date": "2008-08-22T16:38:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Wei Dai on citing b-money in the Bitcoin whitepaper (August 22, 2008)",
-      "titleJa": "サトシからウェイ・ダイへ：Bitcoinホワイトペーパーでのb-money引用について（2008-08-22）",
+      "titleJa": "サトシからウェイ・ダイへ：ビットコインホワイトペーパーでの b-money 引用について（2008-08-22）",
       "slug": "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
     },
     {
@@ -91,9 +90,9 @@
     },
     {
       "date": "2008-11-09T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin project registered on SourceForge",
-      "titleJa": "ビットコインプロジェクトがSourceForgeに登録",
+      "titleJa": "ビットコインプロジェクトが SourceForge に登録",
       "slug": "aftermath/2008-11-09-bitcoin-project-registered"
     },
     {
@@ -170,14 +169,14 @@
       "date": "2008-12-10T17:00:23.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Welcome\\\" — Satoshi opens the bitcoin-list mailing list (December 2008)",
-      "titleJa": "「[bitcoin-list] Welcome」— サトシがbitcoin-listメーリングリストを開設（2008-12）",
+      "titleJa": "「[bitcoin-list] Welcome」— サトシが bitcoin-list メーリングリストを開設（2008-12）",
       "slug": "emails/bitcoin-list/2008-12-10-welcome"
     },
     {
       "date": "2009-01-03T18:15:05.000Z",
-      "channel": "sourceforge",
-      "title": "Satoshi mines the Bitcoin genesis block (January 3, 2009)",
-      "titleJa": "サトシがビットコインのジェネシスブロックを採掘（2009-01-03）",
+      "channel": "other",
+      "title": "Satoshi defines Bitcoin's Genesis Block parameters (2009-01-03)",
+      "titleJa": "サトシがビットコインのジェネシスブロック・パラメーターを定義（2009-01-03）",
       "slug": "aftermath/2009-01-03-genesis-block"
     },
     {
@@ -189,66 +188,66 @@
     },
     {
       "date": "2009-01-08T20:54:55.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Satoshi personally notifies Hal Finney of the Bitcoin v0.1 release (January 8, 2009)",
-      "titleJa": "サトシからハル・フィニーへ：Bitcoin v0.1リリースの個人的通知（2009-01-08）",
-      "slug": "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
+      "titleJa": "サトシからハル・フィニーへ：Bitcoin v0.1 リリースの個人的通知（2009-01-08）",
+      "slug": "aftermath/2009-01-08-satoshi-to-finney-release"
     },
     {
       "date": "2009-01-09T00:00:00.000Z",
       "channel": "other",
-      "title": "Satoshi Nakamoto's Source Code Analysis — Coding Style, Commit Patterns, and Code Evolution (v0.1.0–v0.3.19)",
-      "titleJa": "サトシ・ナカモトのソースコード分析 — コーディングスタイル・コミットパターン・コード進化（v0.1.0〜v0.3.19）",
-      "slug": "analysis/2009-01-09-satoshi-code-analysis"
-    },
-    {
-      "date": "2009-01-09T00:00:00.000Z",
-      "channel": "sourceforge",
       "title": "Bitcoin v0.1 released on SourceForge",
-      "titleJa": "ビットコインv0.1がSourceForgeでリリース",
+      "titleJa": "ビットコイン v0.1 が SourceForge でリリース",
       "slug": "aftermath/2009-01-09-bitcoin-v0.1-released"
     },
     {
-      "date": "2009-01-10T00:00:00.000Z",
-      "channel": "private-email",
-      "title": "Bitcoin v0.1 launch announcement to Adam Back",
-      "titleJa": "Bitcoin v0.1ローンチのアダム・バックへの通知",
-      "slug": "correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch"
+      "date": "2009-01-09T00:00:00.000Z",
+      "channel": "other",
+      "title": "What Satoshi's code reveals — coding style, commit patterns, and evolution from v0.1.0 to v0.3.19",
+      "titleJa": "サトシのコードが語ること — コーディングスタイル・コミットパターン・コード進化（v0.1.0〜v0.3.19）",
+      "slug": "analysis/2009-01-09-satoshi-code-analysis"
     },
     {
       "date": "2009-01-10T00:00:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Satoshi tells Hal Finney he cannot receive incoming Bitcoin connections (January 10, 2009)",
-      "titleJa": "サトシからハル・フィニーへ：自分のホストではincoming接続を受けられない旨を伝える（2009-01-10）",
-      "slug": "correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections"
+      "titleJa": "サトシからハル・フィニーへ：自分のホストでは incoming 接続を受けられない旨を伝える（2009-01-10）",
+      "slug": "aftermath/2009-01-10-satoshi-to-finney-connections"
     },
     {
       "date": "2009-01-10T11:17:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Wei Dai on the Bitcoin v0.1 release (January 10, 2009)",
-      "titleJa": "サトシからウェイ・ダイへ：Bitcoin v0.1リリースについて（2009-01-10）",
+      "titleJa": "サトシからウェイ・ダイへ：Bitcoin v0.1 リリースについて（2009-01-10）",
       "slug": "correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai"
+    },
+    {
+      "date": "2009-01-10T18:46:45.000Z",
+      "channel": "other",
+      "title": "Bitcoin v0.1 launch announcement to Adam Back",
+      "titleJa": "Bitcoin v0.1 ローンチのアダム・バックへの通知",
+      "slug": "aftermath/2009-01-10-satoshi-to-adam-back-launch"
     },
     {
       "date": "2009-01-11T22:32:18.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin v0.1.2 now available\\\" — Satoshi announces the v0.1.2 release (January 2009)",
-      "titleJa": "「[bitcoin-list] Bitcoin v0.1.2 now available」— サトシがv0.1.2リリースを告知（2009-01）",
+      "titleJa": "「[bitcoin-list] Bitcoin v0.1.2 now available」— サトシが v0.1.2 リリースを告知（2009-01）",
       "slug": "emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available"
     },
     {
       "date": "2009-01-12T03:30:25.000Z",
       "channel": "other",
       "title": "First Bitcoin transaction — Satoshi sends 10 BTC to Hal Finney",
-      "titleJa": "史上初のビットコイン送金 — サトシ・ナカモトがハル・フィニーに10 BTCを送付",
+      "titleJa": "史上初のビットコイン送金 — サトシ・ナカモトがハル・フィニーに 10 BTC を送付",
       "slug": "aftermath/2009-01-12-first-bitcoin-transaction"
     },
     {
       "date": "2009-01-12T18:52:45.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin v0.1 released",
       "titleJa": "Re: ビットコイン v0.1 リリース - コインの成熟システム",
-      "slug": "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
+      "slug": "aftermath/2009-01-12-satoshi-to-trammell-coin-maturity"
     },
     {
       "date": "2009-01-12T20:20:47.000Z",
@@ -261,43 +260,43 @@
       "date": "2009-01-12T22:48:23.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin v0.1.3\\\" — Satoshi announces the v0.1.3 release (January 2009)",
-      "titleJa": "「[bitcoin-list] Bitcoin v0.1.3」— サトシがv0.1.3リリースを告知（2009-01）",
+      "titleJa": "「[bitcoin-list] Bitcoin v0.1.3」— サトシが v0.1.3 リリースを告知（2009-01）",
       "slug": "emails/bitcoin-list/2009-01-12-bitcoin-v0-1-3"
     },
     {
       "date": "2009-01-13T01:55:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin v0.1 released - Offer to send coins",
       "titleJa": "Re: ビットコイン v0.1 リリース - コイン送付の申し出",
-      "slug": "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
+      "slug": "aftermath/2009-01-13-satoshi-to-trammell-send-coins"
     },
     {
       "date": "2009-01-15T13:15:23.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin v0.1 released - Use cases and electronic currency future",
       "titleJa": "Re: ビットコイン v0.1 リリース — ユースケースと電子通貨の未来",
-      "slug": "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
+      "slug": "aftermath/2009-01-15-satoshi-to-trammell-use-cases"
     },
     {
       "date": "2009-01-15T13:46:35.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: A few thoughts... - Attack classification and send-to-IP security",
-      "titleJa": "Re: いくつかの考え... — 攻撃の分類とIP送金のセキュリティ",
-      "slug": "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
+      "titleJa": "Re: いくつかの考え... — 攻撃の分類と IP 送金のセキュリティ",
+      "slug": "aftermath/2009-01-15-satoshi-to-trammell-attack-types"
     },
     {
       "date": "2009-01-16T12:35:31.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin v0.1 released - Electronic currency vision (CC'd publicly)",
-      "titleJa": "Re: ビットコイン v0.1 リリース - 電子通貨のビジョン（メーリングリストにCC）",
-      "slug": "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency"
+      "titleJa": "Re: ビットコイン v0.1 リリース - 電子通貨のビジョン（メーリングリストに CC）",
+      "slug": "aftermath/2009-01-16-satoshi-to-trammell-electronic-currency"
     },
     {
       "date": "2009-01-16T12:42:18.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: A few thoughts... - Wallet location and socket fix",
       "titleJa": "Re: いくつかの考え... - ウォレットの保存場所とソケット修正",
-      "slug": "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-wallet-location"
+      "slug": "aftermath/2009-01-16-satoshi-to-trammell-wallet-location"
     },
     {
       "date": "2009-01-16T16:03:14.000Z",
@@ -315,24 +314,24 @@
     },
     {
       "date": "2009-01-18T11:01:09.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin Transfer - Address book and multiple addresses",
       "titleJa": "Re: ビットコイン送金 - アドレス帳と複数アドレス",
-      "slug": "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
+      "slug": "aftermath/2009-01-18-satoshi-to-trammell-address-book"
     },
     {
       "date": "2009-01-19T11:02:37.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin Transfer - Address labels and UX challenges",
-      "titleJa": "Re: ビットコイン送金 - アドレスラベルとUXの課題",
-      "slug": "correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels"
+      "titleJa": "Re: ビットコイン送金 - アドレスラベルと UX の課題",
+      "slug": "aftermath/2009-01-19-satoshi-to-trammell-address-labels"
     },
     {
       "date": "2009-01-25T10:03:21.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin v0.1 released - Spam, POW tokens, and reverse-spamming",
-      "titleJa": "Re: ビットコイン v0.1 リリース - スパム、POWトークン、リバース・スパミング",
-      "slug": "correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow"
+      "titleJa": "Re: ビットコイン v0.1 リリース - スパム、POW トークン、リバース・スパミング",
+      "slug": "aftermath/2009-01-25-satoshi-to-trammell-spam-pow"
     },
     {
       "date": "2009-01-25T15:47:10.000Z",
@@ -352,56 +351,56 @@
       "date": "2009-02-04T19:46:04.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin v0.1.5 released\\\" — Satoshi announces the v0.1.5 release (February 2009)",
-      "titleJa": "「[bitcoin-list] Bitcoin v0.1.5 released」— サトシがv0.1.5リリースを告知（2009-02）",
+      "titleJa": "「[bitcoin-list] Bitcoin v0.1.5 released」— サトシが v0.1.5 リリースを告知（2009-02）",
       "slug": "emails/bitcoin-list/v015-released/2009-02-04-bitcoin-v0-1-5-released"
     },
     {
       "date": "2009-02-11T22:27:00.000Z",
       "channel": "p2p-research-ml",
       "title": "Satoshi introduces Bitcoin on the P2P Research mailing list — \\\"[p2p-research] Bitcoin open source implementation of P2P currency\\\" (February 2009)",
-      "titleJa": "サトシがP2P ResearchメーリングリストにBitcoinを紹介 — 「[p2p-research] Bitcoin open source implementation of P2P currency」（2009-02）",
+      "titleJa": "サトシが P2P Research メーリングリストにビットコインを紹介 — 「[p2p-research] Bitcoin open source implementation of P2P currency」（2009-02）",
       "slug": "emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency"
     },
     {
       "date": "2009-02-11T22:27:00.000Z",
       "channel": "p2pfoundation",
       "title": "Bitcoin open source implementation of P2P currency",
-      "titleJa": "ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation"
     },
     {
       "date": "2009-02-12T19:08:24.000Z",
       "channel": "p2p-research-ml",
       "title": "Re: [p2p-research] Bitcoin open source implementation of P2P currency",
-      "titleJa": "Re: [p2p-research] ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "Re: [p2p-research] ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "emails/p2p-research/bitcoin-open-source/2009-02-12-re-bitcoin-open-source-p2p-currency-steenbergen"
     },
     {
       "date": "2009-02-13T02:38:20.000Z",
       "channel": "p2p-research-ml",
       "title": "Re: [p2p-research] Bitcoin open source implementation of P2P currency",
-      "titleJa": "Re: [p2p-research] ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "Re: [p2p-research] ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "emails/p2p-research/bitcoin-open-source/2009-02-13-re-bitcoin-open-source-p2p-currency-steenbergen-2"
     },
     {
       "date": "2009-02-13T18:36:45.000Z",
       "channel": "p2p-research-ml",
       "title": "Re: [p2p-research] Bitcoin open source implementation of P2P currency",
-      "titleJa": "Re: [p2p-research] ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "Re: [p2p-research] ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "emails/p2p-research/bitcoin-open-source/2009-02-13-re-bitcoin-open-source-p2p-currency-bauwens"
     },
     {
       "date": "2009-02-15T16:42:00.000Z",
       "channel": "p2pfoundation",
       "title": "Bitcoin open source implementation of P2P currency",
-      "titleJa": "ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "forum/p2pfoundation/bitcoin-open-source/2009-02-15-bitcoin-open-source-p2p-currency"
     },
     {
       "date": "2009-02-18T20:50:00.000Z",
       "channel": "p2pfoundation",
       "title": "Bitcoin open source implementation of P2P currency",
-      "titleJa": "ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency"
     },
     {
@@ -443,14 +442,14 @@
       "date": "2009-04-14T19:41:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Mike Hearn on peer-to-peer marketplace (April 14, 2009)",
-      "titleJa": "サトシからマイク・ハーンへ：P2Pマーケットプレイス（2009-04-14）",
+      "titleJa": "サトシからマイク・ハーンへ：P2P マーケットプレイス（2009-04-14）",
       "slug": "correspondence/mike-hearn/questions/2009-04-14-satoshi-to-hearn-marketplace"
     },
     {
       "date": "2009-04-18T18:16:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Mike Hearn on ECDSA curve choice (April 18, 2009)",
-      "titleJa": "サトシからマイク・ハーンへ：ECDSA曲線の選択（2009-04-18）",
+      "titleJa": "サトシからマイク・ハーンへ：ECDSA 曲線の選択（2009-04-18）",
       "slug": "correspondence/mike-hearn/questions/2009-04-18-satoshi-to-hearn-ecdsa"
     },
     {
@@ -476,24 +475,24 @@
     },
     {
       "date": "2009-05-02T17:06:58.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin",
       "titleJa": "Re: ビットコイン",
-      "slug": "correspondence/martti-malmi/2009-05-02-first-contact-satoshi-reply"
+      "slug": "aftermath/2009-05-02-first-contact-satoshi-reply"
     },
     {
       "date": "2009-05-03T22:32:26.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin - Defense of mining energy consumption",
       "titleJa": "Re: ビットコイン - マイニングのエネルギー消費に対する弁護",
-      "slug": "correspondence/martti-malmi/2009-05-03-energy-consumption-defense"
+      "slug": "aftermath/2009-05-03-energy-consumption-defense"
     },
     {
       "date": "2009-05-04T15:51:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin - FAQ draft and investment language warning",
-      "titleJa": "Re: ビットコイン - FAQ草案と投資表現への警告",
-      "slug": "correspondence/martti-malmi/2009-05-04-faq-draft-and-investment-warning"
+      "titleJa": "Re: ビットコイン - FAQ 草案と投資表現への警告",
+      "slug": "aftermath/2009-05-04-faq-draft-and-investment-warning"
     },
     {
       "date": "2009-05-05T17:39:44.000Z",
@@ -518,17 +517,17 @@
     },
     {
       "date": "2009-06-05T00:00:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Router issue — port 8333 forwarding advice",
-      "titleJa": "Re: ルーターの問題 —— ポート8333転送のアドバイス",
-      "slug": "correspondence/nicholas-bohm/2009-06-05-satoshi-to-bohm-port-forwarding"
+      "titleJa": "Re: ルーターの問題 —— ポート 8333 転送のアドバイス",
+      "slug": "aftermath/2009-06-05-satoshi-to-bohm-port-forwarding"
     },
     {
       "date": "2009-06-11T21:24:25.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin - The term 'cryptocurrency' and site improvements",
       "titleJa": "Re: ビットコイン - 「暗号通貨」という用語とサイト改善",
-      "slug": "correspondence/martti-malmi/2009-06-11-cryptocurrency-term-and-site-improvements"
+      "slug": "aftermath/2009-06-11-cryptocurrency-term-and-site-improvements"
     },
     {
       "date": "2009-06-14T20:30:58.000Z",
@@ -539,17 +538,17 @@
     },
     {
       "date": "2009-07-19T00:00:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: No connections — 'There may just not be anybody else running it right now'",
       "titleJa": "Re: 接続なし —— 「今、他に誰も実行していないだけかもしれない」",
-      "slug": "correspondence/nicholas-bohm/2009-07-19-satoshi-to-bohm-nobody-running"
+      "slug": "aftermath/2009-07-19-satoshi-to-bohm-nobody-running"
     },
     {
       "date": "2009-07-20T00:00:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: No connections — connected to a single peer",
       "titleJa": "Re: 接続なし —— 単一ピアに接続中",
-      "slug": "correspondence/nicholas-bohm/2009-07-20-satoshi-to-bohm-trammell-ip"
+      "slug": "aftermath/2009-07-20-satoshi-to-bohm-trammell-ip"
     },
     {
       "date": "2009-07-21T03:14:43.000Z",
@@ -574,16 +573,16 @@
     },
     {
       "date": "2009-08-29T17:31:05.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin - Autostart and minimize-to-tray as must-have features",
       "titleJa": "Re: ビットコイン - 自動起動とタスクトレイ最小化は必須機能",
-      "slug": "correspondence/martti-malmi/2009-08-29-autostart-and-tray-feature"
+      "slug": "aftermath/2009-08-29-autostart-and-tray-feature"
     },
     {
       "date": "2009-08-30T00:00:00.000Z",
       "channel": "other",
       "title": "Bitcoin SourceForge SVN Repository — Complete committer history (2009–2011)",
-      "titleJa": "Bitcoin SourceForge SVNリポジトリ — コミッター全記録（2009–2011）",
+      "titleJa": "ビットコイン SourceForge SVN リポジトリ — コミッター全記録（2009–2011）",
       "slug": "aftermath/2009-08-30-bitcoin-svn-repository-committers"
     },
     {
@@ -625,14 +624,14 @@
       "date": "2009-10-23T23:55:06.000Z",
       "channel": "private-email",
       "title": "Re: [bitcoin-list] Does Bitcoin Crash in Windows?",
-      "titleJa": "Re: [bitcoin-list] BitcoinはWindowsでクラッシュしますか？",
+      "titleJa": "Re: [bitcoin-list] ビットコインは Windows でクラッシュしますか？",
       "slug": "correspondence/martti-malmi/2009-10-23-does-bitcoin-crash-in-windows-041"
     },
     {
       "date": "2009-10-23T23:57:51.000Z",
       "channel": "bitcoin-list-ml",
       "title": "Re: [bitcoin-list] Does Bitcoin Crash in Windows?",
-      "titleJa": "Re: [bitcoin-list] BitcoinはWindowsでクラッシュしますか？",
+      "titleJa": "Re: [bitcoin-list] ビットコインは Windows でクラッシュしますか？",
       "slug": "emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows"
     },
     {
@@ -660,49 +659,49 @@
       "date": "2009-10-29T06:38:30.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-10-29-linux-build-048"
     },
     {
       "date": "2009-10-30T01:05:45.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-10-30-linux-build-049"
     },
     {
       "date": "2009-10-31T20:09:58.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-10-31-linux-build-051"
     },
     {
       "date": "2009-11-03T15:53:25.000Z",
       "channel": "private-email",
       "title": "Re: Linux build, proxy",
-      "titleJa": "Re: Linuxビルド、プロキシ",
+      "titleJa": "Re: Linux ビルド、プロキシ",
       "slug": "correspondence/martti-malmi/2009-11-03-linux-build-proxy-053"
     },
     {
       "date": "2009-11-04T05:38:17.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-11-04-linux-build-054"
     },
     {
       "date": "2009-11-04T20:38:03.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-11-04-linux-build-055"
     },
     {
       "date": "2009-11-05T05:31:03.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-11-05-linux-build-057"
     },
     {
@@ -723,28 +722,28 @@
       "date": "2009-11-06T06:20:15.000Z",
       "channel": "private-email",
       "title": "Re: Linux build",
-      "titleJa": "Re: Linuxビルド",
+      "titleJa": "Re: Linux ビルド",
       "slug": "correspondence/martti-malmi/2009-11-06-linux-build-060"
     },
     {
       "date": "2009-11-08T05:23:13.000Z",
       "channel": "private-email",
       "title": "Linux build ready for testing (attached)",
-      "titleJa": "Linuxビルドのテスト準備完了（添付）",
+      "titleJa": "Linux ビルドのテスト準備完了（添付）",
       "slug": "correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-attached-062"
     },
     {
       "date": "2009-11-08T05:52:11.000Z",
       "channel": "private-email",
       "title": "Linux build ready for testing",
-      "titleJa": "Linuxビルドのテスト準備完了",
+      "titleJa": "Linux ビルドのテスト準備完了",
       "slug": "correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-063"
     },
     {
       "date": "2009-11-08T17:39:39.000Z",
       "channel": "private-email",
       "title": "Re: Linux build ready for testing",
-      "titleJa": "Re: Linuxビルドのテスト準備完了",
+      "titleJa": "Re: Linux ビルドのテスト準備完了",
       "slug": "correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066"
     },
     {
@@ -758,28 +757,28 @@
       "date": "2009-11-09T01:23:59.000Z",
       "channel": "private-email",
       "title": "Re: Linux build ready for testing",
-      "titleJa": "Re: Linuxビルドのテスト準備完了",
+      "titleJa": "Re: Linux ビルドのテスト準備完了",
       "slug": "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-068"
     },
     {
       "date": "2009-11-09T05:42:59.000Z",
       "channel": "private-email",
       "title": "Re: Linux build ready for testing",
-      "titleJa": "Re: Linuxビルドのテスト準備完了",
+      "titleJa": "Re: Linux ビルドのテスト準備完了",
       "slug": "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-069"
     },
     {
       "date": "2009-11-09T19:30:53.000Z",
       "channel": "private-email",
       "title": "Re: Linux build ready for testing",
-      "titleJa": "Re: Linuxビルドのテスト準備完了",
+      "titleJa": "Re: Linux ビルドのテスト準備完了",
       "slug": "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-071"
     },
     {
       "date": "2009-11-09T19:41:11.000Z",
       "channel": "private-email",
       "title": "Re: Linux build ready for testing",
-      "titleJa": "Re: Linuxビルドのテスト準備完了",
+      "titleJa": "Re: Linux ビルドのテスト準備完了",
       "slug": "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-072"
     },
     {
@@ -835,28 +834,28 @@
       "date": "2009-11-14T05:46:22.000Z",
       "channel": "private-email",
       "title": "Zetaboards forum",
-      "titleJa": "Zetaboardsフォーラム",
+      "titleJa": "Zetaboards フォーラム",
       "slug": "correspondence/martti-malmi/2009-11-14-zetaboards-forum-080"
     },
     {
       "date": "2009-11-15T15:40:29.000Z",
       "channel": "private-email",
       "title": "Linux update",
-      "titleJa": "Linuxアップデート",
+      "titleJa": "Linux アップデート",
       "slug": "correspondence/martti-malmi/2009-11-15-linux-update-081"
     },
     {
       "date": "2009-11-15T19:15:42.000Z",
       "channel": "private-email",
       "title": "Re: Linux update",
-      "titleJa": "Re: Linuxアップデート",
+      "titleJa": "Re: Linux アップデート",
       "slug": "correspondence/martti-malmi/2009-11-15-linux-update-083"
     },
     {
       "date": "2009-11-15T20:25:26.000Z",
       "channel": "private-email",
       "title": "Re: Linux update",
-      "titleJa": "Re: Linuxアップデート",
+      "titleJa": "Re: Linux アップデート",
       "slug": "correspondence/martti-malmi/2009-11-15-linux-update-085"
     },
     {
@@ -919,42 +918,42 @@
       "date": "2009-11-20T05:14:56.000Z",
       "channel": "private-email",
       "title": "SMF forum, need a mod installed",
-      "titleJa": "SMFフォーラム、MODのインストールが必要",
+      "titleJa": "SMF フォーラム、MOD のインストールが必要",
       "slug": "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-099"
     },
     {
       "date": "2009-11-20T22:09:41.000Z",
       "channel": "private-email",
       "title": "Re: SMF forum, need a mod installed",
-      "titleJa": "Re: SMFフォーラム、MODのインストールが必要",
+      "titleJa": "Re: SMF フォーラム、MOD のインストールが必要",
       "slug": "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-102"
     },
     {
       "date": "2009-11-21T07:02:20.000Z",
       "channel": "private-email",
       "title": "Re: SMF forum, need a mod installed",
-      "titleJa": "Re: SMFフォーラム、MODのインストールが必要",
+      "titleJa": "Re: SMF フォーラム、MOD のインストールが必要",
       "slug": "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-103"
     },
     {
       "date": "2009-11-21T21:46:52.000Z",
       "channel": "private-email",
       "title": "Re: SMF forum, need a mod installed",
-      "titleJa": "Re: SMFフォーラム、MODのインストールが必要",
+      "titleJa": "Re: SMF フォーラム、MOD のインストールが必要",
       "slug": "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-105"
     },
     {
       "date": "2009-11-22T18:04:28.000Z",
       "channel": "bitcointalk",
       "title": "Welcome to the new Bitcoin forum!",
-      "titleJa": "新しいBitcoinフォーラムへようこそ！",
+      "titleJa": "新しい Bitcoin フォーラムへようこそ！",
       "slug": "forum/bitcointalk/topic-5/2009-11-22-welcome-to-the-new-bitcoin-forum"
     },
     {
       "date": "2009-11-22T18:31:44.000Z",
       "channel": "bitcointalk",
       "title": "Repost: Bitcoin Maturation",
-      "titleJa": "再投稿：Bitcoinの成熟",
+      "titleJa": "再投稿：Bitcoin の成熟",
       "slug": "forum/bitcointalk/topic-6/2009-11-22-repost-bitcoin-maturation"
     },
     {
@@ -968,42 +967,42 @@
       "date": "2009-11-22T19:47:56.000Z",
       "channel": "private-email",
       "title": "SEO friendly site transition",
-      "titleJa": "SEOフレンドリーなサイト移行",
+      "titleJa": "SEO フレンドリーなサイト移行",
       "slug": "correspondence/martti-malmi/2009-11-22-seo-friendly-site-transition-106"
     },
     {
       "date": "2009-11-23T05:48:19.000Z",
       "channel": "private-email",
       "title": "Access permissions required to fix Drupal",
-      "titleJa": "Drupalを修正するためにアクセス権限が必要",
+      "titleJa": "Drupal を修正するためにアクセス権限が必要",
       "slug": "correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108"
     },
     {
       "date": "2009-11-25T18:15:57.000Z",
       "channel": "bitcointalk",
       "title": "Repost: How anonymous are bitcoins?",
-      "titleJa": "再投稿：Bitcoinはどの程度匿名なのか？",
+      "titleJa": "再投稿：Bitcoin はどの程度匿名なのか？",
       "slug": "forum/bitcointalk/topic-8/2009-11-25-repost-how-anonymous-are-bitcoins"
     },
     {
       "date": "2009-11-26T00:26:33.000Z",
       "channel": "private-email",
       "title": "bitcoin.org DNS change went through",
-      "titleJa": "bitcoin.orgのDNS変更が反映された",
+      "titleJa": "bitcoin.org の DNS 変更が反映された",
       "slug": "correspondence/martti-malmi/2009-11-26-bitcoinorg-dns-change-went-through-110"
     },
     {
       "date": "2009-11-26T17:45:42.000Z",
       "channel": "private-email",
       "title": "Bitweaver menu editor broken",
-      "titleJa": "Bitweaverメニューエディターが壊れている",
+      "titleJa": "Bitweaver メニューエディターが壊れている",
       "slug": "correspondence/martti-malmi/2009-11-26-bitweaver-menu-editor-broken-111"
     },
     {
       "date": "2009-11-27T17:27:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: Repost: Linux/UNIX compile",
-      "titleJa": "Re: 再投稿：Linux/UNIXコンパイル",
+      "titleJa": "Re: 再投稿：Linux/UNIX コンパイル",
       "slug": "forum/bitcointalk/topic-9/2009-11-27-re-repost-linux-unix-compile"
     },
     {
@@ -1031,14 +1030,14 @@
       "date": "2009-12-06T03:21:00.000Z",
       "channel": "private-email",
       "title": "Re: Sourceforge tracker",
-      "titleJa": "Re: Sourceforgeトラッカー",
+      "titleJa": "Re: Sourceforge トラッカー",
       "slug": "correspondence/martti-malmi/2009-12-06-sourceforge-tracker-122"
     },
     {
       "date": "2009-12-08T05:43:33.000Z",
       "channel": "private-email",
       "title": "Drupal site online",
-      "titleJa": "Drupalサイトが公開",
+      "titleJa": "Drupal サイトが公開",
       "slug": "correspondence/martti-malmi/2009-12-08-drupal-site-online-124"
     },
     {
@@ -1059,21 +1058,21 @@
       "date": "2009-12-10T20:49:02.000Z",
       "channel": "bitcointalk",
       "title": "Re: Questions about Bitcoin",
-      "titleJa": "Re: Bitcoinに関する質問",
+      "titleJa": "Re: Bitcoin に関する質問",
       "slug": "forum/bitcointalk/topic-13/2009-12-10-re-questions-about-bitcoin"
     },
     {
       "date": "2009-12-11T03:30:10.000Z",
       "channel": "private-email",
       "title": "custom3 theme",
-      "titleJa": "custom3テーマ",
+      "titleJa": "custom3 テーマ",
       "slug": "correspondence/martti-malmi/2009-12-11-custom3-theme-126"
     },
     {
       "date": "2009-12-11T17:58:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: Questions about Bitcoin",
-      "titleJa": "Re: Bitcoinに関する質問",
+      "titleJa": "Re: Bitcoin に関する質問",
       "slug": "forum/bitcointalk/topic-13/2009-12-11-re-questions-about-bitcoin"
     },
     {
@@ -1120,9 +1119,9 @@
     },
     {
       "date": "2009-12-16T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin v0.2 released on SourceForge",
-      "titleJa": "ビットコインv0.2がSourceForgeでリリース",
+      "titleJa": "ビットコイン v0.2 が SourceForge でリリース",
       "slug": "aftermath/2009-12-16-bitcoin-v0.2-released"
     },
     {
@@ -1150,14 +1149,14 @@
       "date": "2009-12-17T06:49:02.000Z",
       "channel": "private-email",
       "title": "[bitcoin-list] Bitcoin 0.2 released",
-      "titleJa": "[bitcoin-list] Bitcoin 0.2リリース",
+      "titleJa": "[bitcoin-list] Bitcoin 0.2 リリース",
       "slug": "correspondence/martti-malmi/2009-12-17-bitcoin-02-released-132"
     },
     {
       "date": "2009-12-17T06:52:09.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin 0.2 released\\\" — Satoshi announces the v0.2 release (December 2009)",
-      "titleJa": "「[bitcoin-list] Bitcoin 0.2 released」— サトシがv0.2リリースを告知（2009-12）",
+      "titleJa": "「[bitcoin-list] Bitcoin 0.2 released」— サトシが v0.2 リリースを告知（2009-12）",
       "slug": "emails/bitcoin-list/2009-12-17-bitcoin-0-2-released"
     },
     {
@@ -1178,21 +1177,21 @@
       "date": "2009-12-22T19:00:41.000Z",
       "channel": "private-email",
       "title": "Re: Bitcoin stuff",
-      "titleJa": "Re: Bitcoinに関すること",
+      "titleJa": "Re: Bitcoin に関すること",
       "slug": "correspondence/martti-malmi/2009-12-22-bitcoin-stuff-134"
     },
     {
       "date": "2009-12-23T17:53:18.000Z",
       "channel": "private-email",
       "title": "Re: Bitcoin stuff",
-      "titleJa": "Re: Bitcoinに関すること",
+      "titleJa": "Re: Bitcoin に関すること",
       "slug": "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
     },
     {
       "date": "2009-12-25T16:11:14.000Z",
       "channel": "private-email",
       "title": "Re: Bitcoin stuff",
-      "titleJa": "Re: Bitcoinに関すること",
+      "titleJa": "Re: Bitcoin に関すること",
       "slug": "correspondence/martti-malmi/2009-12-25-bitcoin-stuff-138"
     },
     {
@@ -1206,7 +1205,7 @@
       "date": "2010-01-14T20:17:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: 64bit support",
-      "titleJa": "Re: 64ビットサポート",
+      "titleJa": "Re: 64 ビットサポート",
       "slug": "forum/bitcointalk/topic-18/2010-01-14-re-64bit-support"
     },
     {
@@ -1220,7 +1219,7 @@
       "date": "2010-01-20T22:05:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: TOR and I2P",
-      "titleJa": "Re: TORとI2P",
+      "titleJa": "Re: TOR と I2P",
       "slug": "forum/bitcointalk/topic-22/2010-01-20-re-tor-and-i2p"
     },
     {
@@ -1234,7 +1233,7 @@
       "date": "2010-01-27T21:52:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin crash when sending coins",
-      "titleJa": "Re: コイン送信時のBitcoinクラッシュ",
+      "titleJa": "Re: コイン送信時の Bitcoin クラッシュ",
       "slug": "forum/bitcointalk/topic-27/2010-01-27-re-bitcoin-crash-when-sending-coins"
     },
     {
@@ -1248,7 +1247,7 @@
       "date": "2010-01-28T23:08:02.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin crash when sending coins",
-      "titleJa": "Re: コイン送信時のBitcoinクラッシュ",
+      "titleJa": "Re: コイン送信時の Bitcoin クラッシュ",
       "slug": "forum/bitcointalk/topic-27/2010-01-28-re-bitcoin-crash-when-sending-coins"
     },
     {
@@ -1262,14 +1261,14 @@
       "date": "2010-01-29T00:22:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: A newb's test - anyone want to buy a picture for $1?",
-      "titleJa": "Re: 初心者のテスト - 1ドルで写真を買いたい人はいる？",
+      "titleJa": "Re: 初心者のテスト - 1 ドルで写真を買いたい人はいる？",
       "slug": "forum/bitcointalk/topic-25/2010-01-29-re-a-newbs-test-anyone-want-to-buy-a-picture-for-1"
     },
     {
       "date": "2010-01-29T00:42:49.000Z",
       "channel": "bitcointalk",
       "title": "Re: 64bit support",
-      "titleJa": "Re: 64ビットサポート",
+      "titleJa": "Re: 64 ビットサポート",
       "slug": "forum/bitcointalk/topic-18/2010-01-29-re-64bit-support"
     },
     {
@@ -1283,14 +1282,14 @@
       "date": "2010-02-03T23:29:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin crash when sending coins",
-      "titleJa": "Re: コイン送信時のBitcoinクラッシュ",
+      "titleJa": "Re: コイン送信時の Bitcoin クラッシュ",
       "slug": "forum/bitcointalk/topic-27/2010-02-03-re-bitcoin-crash-when-sending-coins"
     },
     {
       "date": "2010-02-03T23:36:54.000Z",
       "channel": "bitcointalk",
       "title": "Re: Win32 CPU Cycles vs 'Live Protection' Engines?",
-      "titleJa": "Re: Win32 CPUサイクル vs 'ライブプロテクション'エンジン",
+      "titleJa": "Re: Win32 CPU サイクル vs 'ライブプロテクション'エンジン",
       "slug": "forum/bitcointalk/topic-35/2010-02-03-re-win32-cpu-cycles-vs-live-protection-engines"
     },
     {
@@ -1304,7 +1303,7 @@
       "date": "2010-02-04T00:30:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: TOR and I2P",
-      "titleJa": "Re: TORとI2P",
+      "titleJa": "Re: TOR と I2P",
       "slug": "forum/bitcointalk/topic-22/2010-02-04-re-tor-and-i2p"
     },
     {
@@ -1332,7 +1331,7 @@
       "date": "2010-02-04T19:33:26.000Z",
       "channel": "private-email",
       "title": "UTF-8 to ANSI hack in CAboutDialog",
-      "titleJa": "CAboutDialogにおけるUTF-8からANSIへのハック",
+      "titleJa": "CAboutDialog における UTF-8 から ANSI へのハック",
       "slug": "correspondence/martti-malmi/2010-02-04-utf-8-to-ansi-hack-in-caboutdialog-146"
     },
     {
@@ -1346,7 +1345,7 @@
       "date": "2010-02-05T04:08:54.000Z",
       "channel": "private-email",
       "title": "Re: Bitcoin API research status",
-      "titleJa": "Re: Bitcoin API調査状況",
+      "titleJa": "Re: Bitcoin API 調査状況",
       "slug": "correspondence/martti-malmi/2010-02-05-bitcoin-api-research-status-148"
     },
     {
@@ -1360,14 +1359,14 @@
       "date": "2010-02-05T18:39:18.000Z",
       "channel": "private-email",
       "title": "Re: UTF-8 to ANSI hack in CAboutDialog",
-      "titleJa": "Re: CAboutDialogにおけるUTF-8からANSIへのハック",
+      "titleJa": "Re: CAboutDialog における UTF-8 から ANSI へのハック",
       "slug": "correspondence/martti-malmi/2010-02-05-utf-8-to-ansi-hack-in-caboutdialog-152"
     },
     {
       "date": "2010-02-05T19:19:12.000Z",
       "channel": "bitcointalk",
       "title": "Proof-of-work difficulty increasing",
-      "titleJa": "Proof-of-work難易度の上昇",
+      "titleJa": "Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-02-05-proof-of-work-difficulty-increasing"
     },
     {
@@ -1395,21 +1394,21 @@
       "date": "2010-02-07T06:12:04.000Z",
       "channel": "private-email",
       "title": "JSON-RPC status",
-      "titleJa": "JSON-RPCの状況",
+      "titleJa": "JSON-RPC の状況",
       "slug": "correspondence/martti-malmi/2010-02-07-json-rpc-status-153"
     },
     {
       "date": "2010-02-08T01:22:29.000Z",
       "channel": "bitcointalk",
       "title": "Re: Make your \\\"we accept Bitcoin\\\" logo",
-      "titleJa": "Re: 「Bitcoin受付中」ロゴを作ろう",
+      "titleJa": "Re: 「Bitcoin 受付中」ロゴを作ろう",
       "slug": "forum/bitcointalk/topic-45/2010-02-08-re-make-your-we-accept-bitcoin-logo"
     },
     {
       "date": "2010-02-08T01:27:02.000Z",
       "channel": "bitcointalk",
       "title": "Bitcoin client and website translation",
-      "titleJa": "Bitcoinクライアントとウェブサイトの翻訳",
+      "titleJa": "Bitcoin クライアントとウェブサイトの翻訳",
       "slug": "forum/bitcointalk/topic-47/2010-02-08-bitcoin-client-and-website-translation"
     },
     {
@@ -1423,7 +1422,7 @@
       "date": "2010-02-08T16:10:37.000Z",
       "channel": "bitcointalk",
       "title": "Bitcoin client and website translation",
-      "titleJa": "Bitcoinクライアントとウェブサイトの翻訳",
+      "titleJa": "Bitcoin クライアントとウェブサイトの翻訳",
       "slug": "forum/bitcointalk/topic-47/2010-02-08-sni49-bitcoin-client-and-website-translation"
     },
     {
@@ -1444,7 +1443,7 @@
       "date": "2010-02-12T02:33:02.000Z",
       "channel": "bitcointalk",
       "title": "Re: DEB Package?",
-      "titleJa": "Re: DEBパッケージ？",
+      "titleJa": "Re: DEB パッケージ？",
       "slug": "forum/bitcointalk/topic-49/2010-02-12-re-deb-package"
     },
     {
@@ -1458,7 +1457,7 @@
       "date": "2010-02-12T15:57:37.000Z",
       "channel": "bitcointalk",
       "title": "Re: DEB Package?",
-      "titleJa": "Re: DEBパッケージ？",
+      "titleJa": "Re: DEB パッケージ？",
       "slug": "forum/bitcointalk/topic-49/2010-02-12-sni53-re-deb-package"
     },
     {
@@ -1472,14 +1471,14 @@
       "date": "2010-02-13T01:08:42.000Z",
       "channel": "private-email",
       "title": "Re: JSON-RPC status",
-      "titleJa": "Re: JSON-RPCの状況",
+      "titleJa": "Re: JSON-RPC の状況",
       "slug": "correspondence/martti-malmi/2010-02-13-json-rpc-status-160"
     },
     {
       "date": "2010-02-13T01:38:37.000Z",
       "channel": "bitcointalk",
       "title": "Re: DEB Package?",
-      "titleJa": "Re: DEBパッケージ？",
+      "titleJa": "Re: DEB パッケージ？",
       "slug": "forum/bitcointalk/topic-49/2010-02-13-re-deb-package"
     },
     {
@@ -1500,49 +1499,49 @@
       "date": "2010-02-14T21:48:31.000Z",
       "channel": "private-email",
       "title": "Re: JSON-RPC status",
-      "titleJa": "Re: JSON-RPCの状況",
+      "titleJa": "Re: JSON-RPC の状況",
       "slug": "correspondence/martti-malmi/2010-02-14-json-rpc-status-163"
     },
     {
       "date": "2010-02-15T06:28:38.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-02-15-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-02-15T18:11:53.000Z",
       "channel": "private-email",
       "title": "Re: JSON-RPC status",
-      "titleJa": "Re: JSON-RPCの状況",
+      "titleJa": "Re: JSON-RPC の状況",
       "slug": "correspondence/martti-malmi/2010-02-15-json-rpc-status-165"
     },
     {
       "date": "2010-02-16T01:34:56.000Z",
       "channel": "bitcointalk",
       "title": "Re: Setting up multiple bitcoin machines behind NAT",
-      "titleJa": "Re: NAT環境下での複数Bitcoinマシンの設定",
+      "titleJa": "Re: NAT 環境下での複数 Bitcoin マシンの設定",
       "slug": "forum/bitcointalk/topic-54/2010-02-16-re-setting-up-multiple-bitcoin-machines-behind-nat"
     },
     {
       "date": "2010-02-16T17:36:40.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-02-16-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-02-17T17:58:03.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-02-17-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-02-17T19:19:43.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin client and website translation",
-      "titleJa": "Re: Bitcoinクライアントとウェブサイトの翻訳",
+      "titleJa": "Re: Bitcoin クライアントとウェブサイトの翻訳",
       "slug": "forum/bitcointalk/topic-47/2010-02-17-re-bitcoin-client-and-website-translation"
     },
     {
@@ -1556,28 +1555,28 @@
       "date": "2010-02-21T04:19:53.000Z",
       "channel": "bitcointalk",
       "title": "Post your static IP",
-      "titleJa": "静的IPを投稿してください",
+      "titleJa": "静的 IP を投稿してください",
       "slug": "forum/bitcointalk/topic-59/2010-02-21-post-your-static-ip"
     },
     {
       "date": "2010-02-21T05:44:24.000Z",
       "channel": "bitcointalk",
       "title": "Re: Current Bitcoin economic model is unsustainable",
-      "titleJa": "Re: 現在のBitcoin経済モデルは持続不可能",
+      "titleJa": "Re: 現在の Bitcoin 経済モデルは持続不可能",
       "slug": "forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable"
     },
     {
       "date": "2010-02-21T21:48:01.000Z",
       "channel": "bitcointalk",
       "title": "UI improvements",
-      "titleJa": "UIの改善",
+      "titleJa": "UI の改善",
       "slug": "forum/bitcointalk/topic-60/2010-02-21-ui-improvements"
     },
     {
       "date": "2010-02-22T20:17:42.000Z",
       "channel": "private-email",
       "title": "Re: Non-GUI option",
-      "titleJa": "Re: 非GUIオプション",
+      "titleJa": "Re: 非 GUI オプション",
       "slug": "correspondence/martti-malmi/2010-02-22-non-gui-option-168"
     },
     {
@@ -1591,63 +1590,63 @@
       "date": "2010-02-23T01:16:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: UI improvements",
-      "titleJa": "Re: UIの改善",
+      "titleJa": "Re: UI の改善",
       "slug": "forum/bitcointalk/topic-60/2010-02-23-re-ui-improvements"
     },
     {
       "date": "2010-02-23T01:41:01.000Z",
       "channel": "private-email",
       "title": "Re: Non-GUI option",
-      "titleJa": "Re: 非GUIオプション",
+      "titleJa": "Re: 非 GUI オプション",
       "slug": "correspondence/martti-malmi/2010-02-23-non-gui-option-169"
     },
     {
       "date": "2010-02-23T16:26:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin Address Collisions",
-      "titleJa": "Re: Bitcoinアドレスの衝突",
+      "titleJa": "Re: Bitcoin アドレスの衝突",
       "slug": "forum/bitcointalk/topic-62/2010-02-23-re-bitcoin-address-collisions"
     },
     {
       "date": "2010-02-23T16:53:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: UI improvements",
-      "titleJa": "Re: UIの改善",
+      "titleJa": "Re: UI の改善",
       "slug": "forum/bitcointalk/topic-60/2010-02-23-sni70-re-ui-improvements"
     },
     {
       "date": "2010-02-23T22:15:41.000Z",
       "channel": "bitcointalk",
       "title": "Command Line and JSON-RPC",
-      "titleJa": "コマンドラインとJSON-RPC",
+      "titleJa": "コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-02-23-command-line-and-json-rpc"
     },
     {
       "date": "2010-02-23T22:24:00.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin Address Collisions",
-      "titleJa": "Re: Bitcoinアドレスの衝突",
+      "titleJa": "Re: Bitcoin アドレスの衝突",
       "slug": "forum/bitcointalk/topic-62/2010-02-23-sni72-re-bitcoin-address-collisions"
     },
     {
       "date": "2010-02-24T05:57:43.000Z",
       "channel": "bitcointalk",
       "title": "Re: URI-scheme for bitcoin",
-      "titleJa": "Re: Bitcoin用URIスキーム",
+      "titleJa": "Re: Bitcoin 用 URI スキーム",
       "slug": "forum/bitcointalk/topic-55/2010-02-24-re-uri-scheme-for-bitcoin"
     },
     {
       "date": "2010-02-24T06:17:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: Command Line and JSON-RPC",
-      "titleJa": "Re: コマンドラインとJSON-RPC",
+      "titleJa": "Re: コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-02-24-re-command-line-and-json-rpc"
     },
     {
       "date": "2010-02-24T06:34:52.000Z",
       "channel": "private-email",
       "title": "Re: Non-GUI option",
-      "titleJa": "Re: 非GUIオプション",
+      "titleJa": "Re: 非 GUI オプション",
       "slug": "correspondence/martti-malmi/2010-02-24-non-gui-option-172"
     },
     {
@@ -1661,21 +1660,21 @@
       "date": "2010-02-24T21:53:52.000Z",
       "channel": "bitcointalk",
       "title": "Re: Make your \\\"we accept Bitcoin\\\" logo",
-      "titleJa": "Re: 「Bitcoin受付中」ロゴを作ろう",
+      "titleJa": "Re: 「Bitcoin 受付中」ロゴを作ろう",
       "slug": "forum/bitcointalk/topic-45/2010-02-24-re-make-your-we-accept-bitcoin-logo"
     },
     {
       "date": "2010-02-24T22:08:55.000Z",
       "channel": "bitcointalk",
       "title": "Re: Command Line and JSON-RPC",
-      "titleJa": "Re: コマンドラインとJSON-RPC",
+      "titleJa": "Re: コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-02-24-sni77-re-command-line-and-json-rpc"
     },
     {
       "date": "2010-02-24T22:42:24.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-02-24-re-proof-of-work-difficulty-increasing"
     },
     {
@@ -1689,21 +1688,21 @@
       "date": "2010-02-25T22:54:17.000Z",
       "channel": "bitcointalk",
       "title": "Re: Command Line and JSON-RPC",
-      "titleJa": "Re: コマンドラインとJSON-RPC",
+      "titleJa": "Re: コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-02-25-re-command-line-and-json-rpc"
     },
     {
       "date": "2010-02-25T23:06:29.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-02-25-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-02-26T16:29:21.000Z",
       "channel": "bitcointalk",
       "title": "Re: Command Line and JSON-RPC",
-      "titleJa": "Re: コマンドラインとJSON-RPC",
+      "titleJa": "Re: コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-02-26-re-command-line-and-json-rpc"
     },
     {
@@ -1717,7 +1716,7 @@
       "date": "2010-02-26T23:48:44.000Z",
       "channel": "bitcointalk",
       "title": "Re: Command Line and JSON-RPC",
-      "titleJa": "Re: コマンドラインとJSON-RPC",
+      "titleJa": "Re: コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-02-26-sni84-re-command-line-and-json-rpc"
     },
     {
@@ -1808,7 +1807,7 @@
       "date": "2010-03-05T01:46:25.000Z",
       "channel": "bitcointalk",
       "title": "Re: Command Line and JSON-RPC",
-      "titleJa": "Re: コマンドラインとJSON-RPC",
+      "titleJa": "Re: コマンドラインと JSON-RPC",
       "slug": "forum/bitcointalk/topic-63/2010-03-05-re-command-line-and-json-rpc"
     },
     {
@@ -1822,7 +1821,7 @@
       "date": "2010-03-15T18:44:12.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin auto-renice-ing",
-      "titleJa": "Re: Bitcoinの自動renice",
+      "titleJa": "Re: Bitcoin の自動 renice",
       "slug": "forum/bitcointalk/topic-72/2010-03-15-re-bitcoin-auto-renice-ing"
     },
     {
@@ -1836,7 +1835,7 @@
       "date": "2010-03-16T19:48:47.000Z",
       "channel": "bitcointalk",
       "title": "Re: On IRC bootstrapping",
-      "titleJa": "Re: IRCブートストラッピングについて",
+      "titleJa": "Re: IRC ブートストラッピングについて",
       "slug": "forum/bitcointalk/topic-84/2010-03-16-re-on-irc-bootstrapping"
     },
     {
@@ -1850,7 +1849,7 @@
       "date": "2010-03-23T15:22:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: who is bitcoin.com",
-      "titleJa": "Re: bitcoin.comは誰なのか",
+      "titleJa": "Re: bitcoin.com は誰なのか",
       "slug": "forum/bitcointalk/topic-88/2010-03-23-re-who-is-bitcoin-com"
     },
     {
@@ -1875,13 +1874,6 @@
       "slug": "forum/bitcointalk/topic-83/2010-03-24-re-idea-for-file-hosting-and-proxy-services"
     },
     {
-      "date": "2010-05-10T00:00:00.000Z",
-      "channel": "private-email",
-      "title": "Satoshi asks Laszlo Hanyecz to slow down premature GPU mining (May 10, 2010)",
-      "titleJa": "サトシからラズロ・ハニエツへ：GPUマイニングの早期公開を控えるよう依頼（2010-05-10）",
-      "slug": "correspondence/laszlo-hanyecz/2010-05-10-satoshi-to-hanyecz-gpu-mining"
-    },
-    {
       "date": "2010-05-16T19:12:21.000Z",
       "channel": "private-email",
       "title": "Re: Status update",
@@ -1892,21 +1884,21 @@
       "date": "2010-05-16T21:01:44.000Z",
       "channel": "bitcointalk",
       "title": "Re: Could the bitcoin network be destroyed...",
-      "titleJa": "Re: Bitcoinアドレスを無限に生成し続けることでBitcoinネットワークは破壊されうるか",
+      "titleJa": "Re: Bitcoin アドレスを無限に生成し続けることで Bitcoin ネットワークは破壊されうるか",
       "slug": "forum/bitcointalk/topic-130/2010-05-16-re-could-the-bitcoin-network-be-destroyed"
     },
     {
       "date": "2010-05-16T21:37:36.000Z",
       "channel": "bitcointalk",
       "title": "Re: For a website taking payments with bitcoins...",
-      "titleJa": "Re: Bitcoinで支払いを受けるウェブサイトにはIP方式とBitcoinアドレス方式のどちらが良い？",
+      "titleJa": "Re: Bitcoin で支払いを受けるウェブサイトには IP 方式と Bitcoin アドレス方式のどちらが良い？",
       "slug": "forum/bitcointalk/topic-129/2010-05-16-re-for-a-website-taking-payments-with-bitcoins"
     },
     {
       "date": "2010-05-16T22:37:21.000Z",
       "channel": "bitcointalk",
       "title": "Re: URI-scheme for bitcoin",
-      "titleJa": "Re: Bitcoin用URIスキーム",
+      "titleJa": "Re: Bitcoin 用 URI スキーム",
       "slug": "forum/bitcointalk/topic-55/2010-05-16-re-uri-scheme-for-bitcoin"
     },
     {
@@ -1920,35 +1912,28 @@
       "date": "2010-05-16T23:34:40.000Z",
       "channel": "bitcointalk",
       "title": "Re: removing bitcoin addresses",
-      "titleJa": "Re: Bitcoinアドレスの削除",
+      "titleJa": "Re: Bitcoin アドレスの削除",
       "slug": "forum/bitcointalk/topic-101/2010-05-16-re-removing-bitcoin-addresses"
-    },
-    {
-      "date": "2010-05-17T00:00:00.000Z",
-      "channel": "private-email",
-      "title": "Satoshi to Laszlo Hanyecz: shares his own GPU mining code for network defense (May 17, 2010)",
-      "titleJa": "サトシからラズロ・ハニエツへ：ネットワーク防衛のための自作GPUマイニングコードを共有（2010-05-17）",
-      "slug": "correspondence/laszlo-hanyecz/2010-05-17-satoshi-gpu-mining-code"
     },
     {
       "date": "2010-05-18T02:58:11.000Z",
       "channel": "bitcointalk",
       "title": "Re: Is there a way to automate bitcoin payments...",
-      "titleJa": "Re: ウェブサイトでBitcoin支払いを自動化する方法はあるか？",
+      "titleJa": "Re: ウェブサイトで Bitcoin 支払いを自動化する方法はあるか？",
       "slug": "forum/bitcointalk/topic-112/2010-05-18-re-is-there-a-way-to-automate-bitcoin-payments"
     },
     {
       "date": "2010-05-18T20:06:46.000Z",
       "channel": "bitcointalk",
       "title": "Re: Ummmm... where did my bitcoins go?",
-      "titleJa": "Re: dasg",
+      "titleJa": "Re: あれ、ビットコインがどこに行った？",
       "slug": "forum/bitcointalk/topic-125/2010-05-18-re-ummmm-where-did-my-bitcoins-go"
     },
     {
       "date": "2010-05-20T21:43:42.000Z",
       "channel": "bitcointalk",
       "title": "Re: We accept Bitcoins",
-      "titleJa": "Re: Bitcoinを受け付けています [bitcoin.it/wiki/Tradeに移動]",
+      "titleJa": "Re: Bitcoin を受け付けています [bitcoin.it/wiki/Trade に移動]",
       "slug": "forum/bitcointalk/topic-30/2010-05-20-re-we-accept-bitcoins"
     },
     {
@@ -1962,7 +1947,7 @@
       "date": "2010-05-26T20:09:34.000Z",
       "channel": "bitcointalk",
       "title": "Re: CLI bitcoin generation",
-      "titleJa": "Re: CLIでのBitcoin生成",
+      "titleJa": "Re: CLI での Bitcoin 生成",
       "slug": "forum/bitcointalk/topic-145/2010-05-26-re-cli-bitcoin-generation"
     },
     {
@@ -1990,7 +1975,7 @@
       "date": "2010-06-02T18:45:38.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-06-02-re-proof-of-work-difficulty-increasing"
     },
     {
@@ -2004,28 +1989,28 @@
       "date": "2010-06-14T18:13:21.000Z",
       "channel": "bitcointalk",
       "title": "Re: On IRC bootstrapping",
-      "titleJa": "Re: IRCブートストラッピングについて",
+      "titleJa": "Re: IRC ブートストラッピングについて",
       "slug": "forum/bitcointalk/topic-84/2010-06-14-re-on-irc-bootstrapping"
     },
     {
       "date": "2010-06-14T19:53:44.000Z",
       "channel": "bitcointalk",
       "title": "Re: Hostnames instead of IP Addresses",
-      "titleJa": "Re: IPアドレスの代わりにホスト名を",
+      "titleJa": "Re: IP アドレスの代わりにホスト名を",
       "slug": "forum/bitcointalk/topic-158/2010-06-14-re-hostnames-instead-of-ip-addresses"
     },
     {
       "date": "2010-06-14T20:39:00.000Z",
       "channel": "bitcointalk",
       "title": "Re: Dealing with SHA-256 Collisions",
-      "titleJa": "Re: SHA-256衝突への対処",
+      "titleJa": "Re: SHA-256 衝突への対処",
       "slug": "forum/bitcointalk/topic-191/2010-06-17-re-bitcoin-generation"
     },
     {
       "date": "2010-06-14T20:39:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: Dealing with SHA-256 Collisions",
-      "titleJa": "Re: SHA-256衝突への対処",
+      "titleJa": "Re: SHA-256 衝突への対処",
       "slug": "forum/bitcointalk/topic-191/2010-06-14-re-dealing-with-sha-256-collisions"
     },
     {
@@ -2046,7 +2031,7 @@
       "date": "2010-06-16T00:15:47.000Z",
       "channel": "bitcointalk",
       "title": "Re: URI-scheme for bitcoin",
-      "titleJa": "Re: Bitcoin用URIスキーム",
+      "titleJa": "Re: Bitcoin 用 URI スキーム",
       "slug": "forum/bitcointalk/topic-55/2010-06-16-re-uri-scheme-for-bitcoin"
     },
     {
@@ -2060,7 +2045,7 @@
       "date": "2010-06-17T17:07:56.000Z",
       "channel": "bitcointalk",
       "title": "Re: new binary release?",
-      "titleJa": "Re: sfg",
+      "titleJa": "Re: 新しいバイナリリリース？",
       "slug": "forum/bitcointalk/topic-184/2010-06-17-re-new-binary-release"
     },
     {
@@ -2081,77 +2066,77 @@
       "date": "2010-06-18T17:28:18.000Z",
       "channel": "bitcointalk",
       "title": "Re: On IRC bootstrapping",
-      "titleJa": "Re: IRCブートストラッピングについて",
+      "titleJa": "Re: IRC ブートストラッピングについて",
       "slug": "forum/bitcointalk/topic-84/2010-06-18-re-on-irc-bootstrapping"
     },
     {
       "date": "2010-06-18T23:08:34.000Z",
       "channel": "bitcointalk",
       "title": "Re: Get 5 free bitcoins from freebitcoins.appspot.com",
-      "titleJa": "Re: freebitcoins.appspot.comで5 Bitcoinを無料で入手しよう",
+      "titleJa": "Re: freebitcoins.appspot.com で 5 Bitcoin を無料で入手しよう",
       "slug": "forum/bitcointalk/topic-183/2010-06-18-re-get-5-free-bitcoins-from-freebitcoins-appspot-com"
     },
     {
       "date": "2010-06-21T17:20:21.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin in Ubuntu 10.04",
-      "titleJa": "Re: Ubuntu 10.04でのBitcoin",
+      "titleJa": "Re: Ubuntu 10.04 での Bitcoin",
       "slug": "forum/bitcointalk/topic-149/2010-06-21-re-bitcoin-in-ubuntu-10-04"
     },
     {
       "date": "2010-06-21T18:09:17.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-06-21-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-06-21T19:01:53.000Z",
       "channel": "bitcointalk",
       "title": "0.3 almost ready -- please test the Mac version!",
-      "titleJa": "0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-21-03-almost-ready-op2"
     },
     {
       "date": "2010-06-21T19:01:53.000Z",
       "channel": "bitcointalk",
       "title": "0.3 almost ready -- please test the Mac version!",
-      "titleJa": "0.3ほぼ完成",
+      "titleJa": "0.3 ほぼ完成",
       "slug": "forum/bitcointalk/topic-199/2010-06-21-03-almost-ready-please-test-the-mac-version"
     },
     {
       "date": "2010-06-22T03:45:56.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin in Ubuntu 10.04",
-      "titleJa": "Re: Ubuntu 10.04でのBitcoin",
+      "titleJa": "Re: Ubuntu 10.04 での Bitcoin",
       "slug": "forum/bitcointalk/topic-149/2010-06-22-re-bitcoin-in-ubuntu-10-04"
     },
     {
       "date": "2010-06-22T04:01:53.000Z",
       "channel": "bitcointalk",
       "title": "0.3 almost ready -- please test the Mac version!",
-      "titleJa": "0.3ほぼ完成 -- Mac版をテストしてください！",
+      "titleJa": "0.3 ほぼ完成 -- Mac 版をテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-0-3-almost-ready-please-test-the-mac-version"
     },
     {
       "date": "2010-06-22T04:35:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: How fast do the fastest computers generate bitcoins?",
-      "titleJa": "Re: 最速のコンピューターはどれくらいの速さでBitcoinを生成するのか？",
+      "titleJa": "Re: 最速のコンピューターはどれくらいの速さで Bitcoin を生成するのか？",
       "slug": "forum/bitcointalk/topic-197/2010-06-22-re-how-fast-do-the-fastest-computers-generate-bitcoins"
     },
     {
       "date": "2010-06-22T16:51:14.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-06-22-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-06-22T17:02:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-re-0-3-almost-ready"
     },
     {
@@ -2165,35 +2150,35 @@
       "date": "2010-06-22T17:37:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-sni139-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-22T19:11:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-sni140-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-22T19:25:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: (quoted post by satoshi)",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-satoshi-msg1677"
     },
     {
       "date": "2010-06-22T19:46:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-sni142-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-22T22:23:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-22-sni143-re-0-3-almost-ready"
     },
     {
@@ -2207,35 +2192,35 @@
       "date": "2010-06-24T17:40:05.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-24-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-25T02:17:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-25-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-25T14:10:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-25-sni146-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-25T21:15:15.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin clients getting k-lined from the IRC bootstrapping channel",
-      "titleJa": "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている",
+      "titleJa": "Re: Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている",
       "slug": "forum/bitcointalk/topic-215/2010-06-25-re-bitcoin-clients-getting-k-lined-from-the-irc-bootstrappin"
     },
     {
       "date": "2010-06-25T22:40:47.000Z",
       "channel": "bitcointalk",
       "title": "Re: On IRC bootstrapping",
-      "titleJa": "Re: IRCブートストラッピングについて",
+      "titleJa": "Re: IRC ブートストラッピングについて",
       "slug": "forum/bitcointalk/topic-84/2010-06-25-re-on-irc-bootstrapping"
     },
     {
@@ -2256,42 +2241,42 @@
       "date": "2010-06-26T14:28:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin clients getting k-lined from the IRC bootstrapping channel",
-      "titleJa": "Re: BitcoinクライアントがIRCブートストラッピングチャネルからK-Lineされている",
+      "titleJa": "Re: Bitcoin クライアントが IRC ブートストラッピングチャネルから K-Line されている",
       "slug": "forum/bitcointalk/topic-215/2010-06-26-re-bitcoin-clients-getting-k-lined-from-the-irc-bootstrappin"
     },
     {
       "date": "2010-06-26T15:10:10.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-26-re-0-3-almost-ready"
     },
     {
       "date": "2010-06-26T19:21:05.000Z",
       "channel": "bitcointalk",
       "title": "Re: 1.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-26-re-1-3-almost-ready"
     },
     {
       "date": "2010-06-26T20:58:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin mobile.",
-      "titleJa": "Re: Bitcoinモバイル",
+      "titleJa": "Re: Bitcoin モバイル",
       "slug": "forum/bitcointalk/topic-177/2010-06-26-re-bitcoin-mobile"
     },
     {
       "date": "2010-06-26T21:06:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Building BitCoin Client completely Headless",
-      "titleJa": "Re: Bitcoinクライアントを完全にヘッドレスでビルドする",
+      "titleJa": "Re: Bitcoin クライアントを完全にヘッドレスでビルドする",
       "slug": "forum/bitcointalk/topic-171/2010-06-26-re-building-bitcoin-client-completely-headless"
     },
     {
       "date": "2010-06-26T21:39:52.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin Faucet changes",
-      "titleJa": "Re: Bitcoin Faucetの変更",
+      "titleJa": "Re: Bitcoin Faucet の変更",
       "slug": "forum/bitcointalk/topic-206/2010-06-26-re-bitcoin-faucet-changes"
     },
     {
@@ -2312,7 +2297,7 @@
       "date": "2010-06-27T15:30:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: 1.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-06-27-re-1-3-almost-ready"
     },
     {
@@ -2340,7 +2325,7 @@
       "date": "2010-07-02T20:37:17.000Z",
       "channel": "bitcointalk",
       "title": "Re: 1.3 almost ready",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-07-02-re-1-3-almost-ready"
     },
     {
@@ -2361,29 +2346,29 @@
       "date": "2010-07-04T21:52:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready -- please test the Mac version!",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-07-04-re-0-3-almost-ready-please-test-the-mac-version"
     },
     {
       "date": "2010-07-05T21:31:14.000Z",
       "channel": "bitcointalk",
       "title": "Re: Slashdot Submission for 1.0",
-      "titleJa": "Re: 1.0のSlashdot投稿",
+      "titleJa": "Re: 1.0 の Slashdot 投稿",
       "slug": "forum/bitcointalk/topic-234/2010-07-05-re-slashdot-submission-for-1-0"
     },
     {
       "date": "2010-07-06T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin v0.3 released on SourceForge",
-      "titleJa": "ビットコインv0.3がSourceForgeでリリース",
+      "titleJa": "ビットコイン v0.3 が SourceForge でリリース",
       "slug": "aftermath/2010-07-06-bitcoin-v0.3-released"
     },
     {
       "date": "2010-07-06T02:59:57.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Re: Bitcoin - De-emphasize the anonymous angle",
       "titleJa": "Re: ビットコイン - 匿名性の側面を控えめにすべき",
-      "slug": "correspondence/martti-malmi/2010-07-06-anonymity-and-pseudonymity"
+      "slug": "aftermath/2010-07-06-anonymity-and-pseudonymity"
     },
     {
       "date": "2010-07-06T18:03:50.000Z",
@@ -2396,7 +2381,7 @@
       "date": "2010-07-06T18:32:35.000Z",
       "channel": "bitcointalk",
       "title": "Bitcoin 0.3 released!",
-      "titleJa": "Bitcoin 0.3リリース！",
+      "titleJa": "Bitcoin 0.3 リリース！",
       "slug": "forum/bitcointalk/topic-238/2010-07-06-bitcoin-0-3-released"
     },
     {
@@ -2410,7 +2395,7 @@
       "date": "2010-07-06T19:43:18.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3 almost ready -- please test the Mac version!",
-      "titleJa": "Re: 0.3ほぼ完成 — Macバージョンをテストしてください！",
+      "titleJa": "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！",
       "slug": "forum/bitcointalk/topic-199/2010-07-06-re-0-3-almost-ready-please-test-the-mac-version"
     },
     {
@@ -2424,21 +2409,21 @@
       "date": "2010-07-06T21:53:53.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin 0.3 released!\\\" — Satoshi announces the v0.3 release (July 2010)",
-      "titleJa": "「[bitcoin-list] Bitcoin 0.3 released!」— サトシがv0.3リリースを告知（2010-07）",
+      "titleJa": "「[bitcoin-list] Bitcoin 0.3 released!」— サトシが v0.3 リリースを告知（2010-07）",
       "slug": "emails/bitcoin-list/2010-07-06-bitcoin-0-3-released"
     },
     {
       "date": "2010-07-07T01:31:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: On IRC bootstrapping",
-      "titleJa": "Re: IRCブートストラッピングについて",
+      "titleJa": "Re: IRC ブートストラッピングについて",
       "slug": "forum/bitcointalk/topic-84/2010-07-07-re-on-irc-bootstrapping"
     },
     {
       "date": "2010-07-08T18:24:19.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username",
-      "titleJa": "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合",
+      "titleJa": "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合",
       "slug": "forum/bitcointalk/topic-246/2010-07-08-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c"
     },
     {
@@ -2452,21 +2437,21 @@
       "date": "2010-07-09T03:01:35.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username",
-      "titleJa": "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合",
+      "titleJa": "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合",
       "slug": "forum/bitcointalk/topic-246/2010-07-09-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c"
     },
     {
       "date": "2010-07-09T03:28:46.000Z",
       "channel": "bitcointalk",
       "title": "Re: BTC Vulnerability? (Massive Attack against BTC system. Is it really?)",
-      "titleJa": "Re: BTCの脆弱性？（BTCシステムへの大規模攻撃。本当か？）",
+      "titleJa": "Re: BTC の脆弱性？（BTC システムへの大規模攻撃。本当か？）",
       "slug": "forum/bitcointalk/topic-242/2010-07-09-re-btc-vulnerability-massive-attack-against-btc-system-is-it"
     },
     {
       "date": "2010-07-09T15:37:05.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin 0.3 win64 - broken access to APPDATA if non-latin characters in username",
-      "titleJa": "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合のAPPDATAアクセス不具合",
+      "titleJa": "Re: bitcoin 0.3 win64 - ユーザー名に非ラテン文字がある場合の APPDATA アクセス不具合",
       "slug": "forum/bitcointalk/topic-246/2010-07-09-sni175-re-bitcoin-0-3-win64-broken-access-to-appdata-if-non-latin-c"
     },
     {
@@ -2487,7 +2472,7 @@
       "date": "2010-07-14T16:22:03.000Z",
       "channel": "bitcointalk",
       "title": "Re: No blocks downloaded... why?",
-      "titleJa": "Re: ブロックがダウンロードされない - Microsoft Security Essentialsユーザーは必読",
+      "titleJa": "Re: ブロックがダウンロードされない - Microsoft Security Essentials ユーザーは必読",
       "slug": "forum/bitcointalk/topic-323/2010-07-14-re-no-blocks-downloaded-why"
     },
     {
@@ -2508,35 +2493,35 @@
       "date": "2010-07-14T17:34:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: Building Bitcoin 0.3",
-      "titleJa": "Re: Bitcoin 0.3のビルド",
+      "titleJa": "Re: Bitcoin 0.3 のビルド",
       "slug": "forum/bitcointalk/topic-298/2010-07-14-re-building-bitcoin-0-3"
     },
     {
       "date": "2010-07-14T17:38:31.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin auto-renice-ing",
-      "titleJa": "Re: Bitcoinの自動renice",
+      "titleJa": "Re: Bitcoin の自動 renice",
       "slug": "forum/bitcointalk/topic-72/2010-07-14-re-bitcoin-auto-renice-ing"
     },
     {
       "date": "2010-07-14T18:02:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: Stuck on 513 blocks",
-      "titleJa": "Re: 513ブロックで止まっている",
+      "titleJa": "Re: 513 ブロックで止まっている",
       "slug": "forum/bitcointalk/topic-305/2010-07-14-re-stuck-on-513-blocks"
     },
     {
       "date": "2010-07-14T18:25:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: Error on Ubuntu 10.04",
-      "titleJa": "Re: Ubuntu 10.04でのエラー",
+      "titleJa": "Re: Ubuntu 10.04 でのエラー",
       "slug": "forum/bitcointalk/topic-318/2010-07-14-re-error-on-ubuntu-10-04"
     },
     {
       "date": "2010-07-14T18:45:53.000Z",
       "channel": "bitcointalk",
       "title": "Re: Runaway CPU usage for 64bit BitCoin (Linux Client)",
-      "titleJa": "Re: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用",
+      "titleJa": "Re: 64 ビット BitCoin（Linux クライアント）の暴走 CPU 使用",
       "slug": "forum/bitcointalk/topic-299/2010-07-14-re-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
     },
     {
@@ -2571,14 +2556,14 @@
       "date": "2010-07-15T00:18:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: Runaway CPU usage for 64bit BitCoin (Linux Client)",
-      "titleJa": "Re: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用",
+      "titleJa": "Re: 64 ビット BitCoin（Linux クライアント）の暴走 CPU 使用",
       "slug": "forum/bitcointalk/topic-299/2010-07-15-re-runaway-cpu-usage-for-64bit-bitcoin-linux-client"
     },
     {
       "date": "2010-07-15T08:05:54.000Z",
       "channel": "bitcointalk",
       "title": "Bitcoin 0.3.1 released",
-      "titleJa": "0.3.1リリース候補、テストしてください",
+      "titleJa": "0.3.1 リリース候補、テストしてください",
       "slug": "forum/bitcointalk/topic-383/2010-07-15-bitcoin-031-released"
     },
     {
@@ -2592,7 +2577,7 @@
       "date": "2010-07-15T14:33:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: Static Linux x86_64 bins for those having libcrypto troubles",
-      "titleJa": "Re: 更新 - libcryptoとGLIBCXX_3.4.11の問題がある人向けLinux x64バイナリ",
+      "titleJa": "Re: 更新 - libcrypto と GLIBCXX_3.4.11 の問題がある人向け Linux x64 バイナリ",
       "slug": "forum/bitcointalk/topic-326/2010-07-15-re-static-linux-x86-64-bins-for-those-having-libcrypto-troub"
     },
     {
@@ -2620,14 +2605,14 @@
       "date": "2010-07-15T17:41:10.000Z",
       "channel": "private-email",
       "title": "bitcoin.org drupal users",
-      "titleJa": "bitcoin.org Drupalユーザー",
+      "titleJa": "bitcoin.org Drupal ユーザー",
       "slug": "correspondence/martti-malmi/2010-07-15-bitcoinorg-drupal-users-203"
     },
     {
       "date": "2010-07-15T17:43:55.000Z",
       "channel": "private-email",
       "title": "Fwd: Please update the bitcoin FAQ so new member can have the right info",
-      "titleJa": "転送: 新メンバーが正しい情報を得られるようBitcoin FAQを更新してください",
+      "titleJa": "転送: 新メンバーが正しい情報を得られるよう Bitcoin FAQ を更新してください",
       "slug": "correspondence/martti-malmi/2010-07-15-please-update-the-bitcoin-faq-so-new-member-can-have-the-rig-204"
     },
     {
@@ -2662,7 +2647,7 @@
       "date": "2010-07-15T20:00:12.000Z",
       "channel": "private-email",
       "title": "bitcoin.org server",
-      "titleJa": "bitcoin.orgサーバー",
+      "titleJa": "bitcoin.org サーバー",
       "slug": "correspondence/martti-malmi/2010-07-15-bitcoinorg-server-205"
     },
     {
@@ -2697,7 +2682,7 @@
       "date": "2010-07-15T22:22:30.000Z",
       "channel": "bitcointalk",
       "title": "Re: Runaway CPU usage for 64bit BitCoin (Linux Client)",
-      "titleJa": "Re: 64ビットBitCoin（Linuxクライアント）の暴走CPU使用",
+      "titleJa": "Re: 64 ビット BitCoin（Linux クライアント）の暴走 CPU 使用",
       "slug": "forum/bitcointalk/topic-299/2010-07-15-re-runaway-cpu-usage-msg3309"
     },
     {
@@ -2725,7 +2710,7 @@
       "date": "2010-07-16T02:02:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: Donations to freebitcoins.appspot.com needed!",
-      "titleJa": "Re: freebitcoins.appspot.comへの寄付が必要！",
+      "titleJa": "Re: freebitcoins.appspot.com への寄付が必要！",
       "slug": "forum/bitcointalk/topic-295/2010-07-16-re-donations-to-freebitcoins-appspot-com-needed"
     },
     {
@@ -2739,7 +2724,7 @@
       "date": "2010-07-16T14:46:12.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-07-16-re-proof-of-work-difficulty-increasing"
     },
     {
@@ -2753,7 +2738,7 @@
       "date": "2010-07-16T14:55:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: Fedora 13 libcrypto",
-      "titleJa": "Re: Fedora 13のlibcrypto",
+      "titleJa": "Re: Fedora 13 の libcrypto",
       "slug": "forum/bitcointalk/topic-296/2010-07-16-re-fedora-13-libcrypto"
     },
     {
@@ -2788,14 +2773,14 @@
       "date": "2010-07-16T16:47:14.000Z",
       "channel": "bitcointalk",
       "title": "Re: Request: expected bitcoins per day display",
-      "titleJa": "Re: リクエスト：1日あたりの予想Bitcoin生成量の表示",
+      "titleJa": "Re: リクエスト：1日あたりの予想 Bitcoin 生成量の表示",
       "slug": "forum/bitcointalk/topic-397/2010-07-16-re-request-expected-bitcoins-per-day-display"
     },
     {
       "date": "2010-07-16T16:56:54.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-07-16-sni218-re-proof-of-work-difficulty-increasing"
     },
     {
@@ -2816,7 +2801,7 @@
       "date": "2010-07-16T17:29:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-07-16-sni221-re-proof-of-work-difficulty-increasing"
     },
     {
@@ -2830,21 +2815,21 @@
       "date": "2010-07-16T18:23:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: Website integration for bitcoin",
-      "titleJa": "Re: BitcoinのWebサイト統合",
+      "titleJa": "Re: Bitcoin の Web サイト統合",
       "slug": "forum/bitcointalk/topic-364/2010-07-16-re-website-integration-for-bitcoin"
     },
     {
       "date": "2010-07-16T18:43:51.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-07-16-sni225-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-07-16T19:45:10.000Z",
       "channel": "bitcointalk",
       "title": "Sample account system using JSON-RPC needed",
-      "titleJa": "JSON-RPCを使用したサンプルアカウントシステムが必要",
+      "titleJa": "JSON-RPC を使用したサンプルアカウントシステムが必要",
       "slug": "forum/bitcointalk/topic-417/2010-07-16-sample-account-system-using-json-rpc-needed"
     },
     {
@@ -2879,7 +2864,7 @@
       "date": "2010-07-17T16:56:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Nenolod, the guy that wants to prove Bitcoin doesn't work.",
-      "titleJa": "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物",
+      "titleJa": "Re: Nenolod、Bitcoin が機能しないことを証明したがっている人物",
       "slug": "forum/bitcointalk/topic-431/2010-07-17-re-nenolod-the-guy-that-wants-to-prove-bitcoin-doesnt-work"
     },
     {
@@ -2893,7 +2878,7 @@
       "date": "2010-07-17T22:29:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin snack machine (fast transaction problem)",
-      "titleJa": "Re: Bitcoin自動販売機（高速トランザクション問題）",
+      "titleJa": "Re: Bitcoin 自動販売機（高速トランザクション問題）",
       "slug": "forum/bitcointalk/topic-423/2010-07-17-re-bitcoin-snack-machine-fast-transaction-problem"
     },
     {
@@ -2928,7 +2913,7 @@
       "date": "2010-07-18T01:59:15.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin snack machine (fast transaction problem)",
-      "titleJa": "Re: Bitcoin自動販売機（高速トランザクション問題）",
+      "titleJa": "Re: Bitcoin 自動販売機（高速トランザクション問題）",
       "slug": "forum/bitcointalk/topic-423/2010-07-18-re-bitcoin-snack-machine-fast-transaction-problem"
     },
     {
@@ -2942,7 +2927,7 @@
       "date": "2010-07-18T15:23:10.000Z",
       "channel": "private-email",
       "title": "Re: Fwd: bitcoin hosting",
-      "titleJa": "Re: 転送: Bitcoinホスティング",
+      "titleJa": "Re: 転送: Bitcoin ホスティング",
       "slug": "correspondence/martti-malmi/2010-07-18-bitcoin-hosting-210"
     },
     {
@@ -2956,7 +2941,7 @@
       "date": "2010-07-18T16:06:16.000Z",
       "channel": "bitcointalk",
       "title": "Re: URI-scheme for bitcoin",
-      "titleJa": "Re: Bitcoin用URIスキーム",
+      "titleJa": "Re: Bitcoin 用 URI スキーム",
       "slug": "forum/bitcointalk/topic-55/2010-07-18-re-uri-scheme-for-bitcoin"
     },
     {
@@ -2970,84 +2955,84 @@
       "date": "2010-07-18T20:49:22.000Z",
       "channel": "bitcointalk",
       "title": "JSON-RPC password",
-      "titleJa": "JSON-RPCパスワード",
+      "titleJa": "JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-18-json-rpc-password"
     },
     {
       "date": "2010-07-18T21:24:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: MSVC build & SHA-256",
-      "titleJa": "Re: MSVCビルドとSHA-256",
+      "titleJa": "Re: MSVC ビルドと SHA-256",
       "slug": "forum/bitcointalk/topic-453/2010-07-18-re-msvc-build-and-sha-256"
     },
     {
       "date": "2010-07-18T21:56:18.000Z",
       "channel": "bitcointalk",
       "title": "Re: Nenolod, the guy that wants to prove Bitcoin doesn't work.",
-      "titleJa": "Re: Nenolod、Bitcoinが機能しないことを証明したがっている人物",
+      "titleJa": "Re: Nenolod、Bitcoin が機能しないことを証明したがっている人物",
       "slug": "forum/bitcointalk/topic-431/2010-07-18-re-nenolod-the-guy-that-wants-to-prove-bitcoin-doesnt-work"
     },
     {
       "date": "2010-07-18T23:35:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: Did block generation crawl to a halt?",
-      "titleJa": "Re: adg",
+      "titleJa": "Re: ブロック生成が止まりかけているのか？",
       "slug": "forum/bitcointalk/topic-441/2010-07-18-re-did-block-generation-crawl-to-a-halt"
     },
     {
       "date": "2010-07-19T04:43:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-19-re-json-rpc-password"
     },
     {
       "date": "2010-07-19T16:01:38.000Z",
       "channel": "bitcointalk",
       "title": "Warning: don't use -server or bitcoind where you web browse (v0.3.2 and lower)",
-      "titleJa": "警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）",
+      "titleJa": "警告: ウェブブラウジングするマシンで-server や bitcoind を使用しないでください（v0.3.2 以前）",
       "slug": "forum/bitcointalk/topic-479/2010-07-19-warning-dont-use-server-or-bitcoind-where-you-web-browse-v0-"
     },
     {
       "date": "2010-07-19T16:20:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-19-sni248-re-json-rpc-password"
     },
     {
       "date": "2010-07-20T18:38:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: They want to delete the Wikipedia article",
-      "titleJa": "Re: WikipediaのBitcoin記事",
+      "titleJa": "Re: Wikipedia の Bitcoin 記事",
       "slug": "forum/bitcointalk/topic-342/2010-07-20-re-they-want-to-delete-the-wikipedia-article"
     },
     {
       "date": "2010-07-21T00:05:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-21-re-json-rpc-password"
     },
     {
       "date": "2010-07-21T05:51:34.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-21-sni251-re-json-rpc-password"
     },
     {
       "date": "2010-07-21T16:07:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-21-sni252-re-json-rpc-password"
     },
     {
       "date": "2010-07-21T17:31:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-21-sni253-re-json-rpc-password"
     },
     {
@@ -3061,7 +3046,7 @@
       "date": "2010-07-22T02:34:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-22-re-json-rpc-password"
     },
     {
@@ -3075,21 +3060,21 @@
       "date": "2010-07-23T17:07:40.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-23-re-json-rpc-password"
     },
     {
       "date": "2010-07-23T17:14:31.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-23-sni256-re-json-rpc-password"
     },
     {
       "date": "2010-07-23T17:23:47.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoind not responding to RPC",
-      "titleJa": "Re: bitcoindがRPCに応答しない",
+      "titleJa": "Re: bitcoind が RPC に応答しない",
       "slug": "forum/bitcointalk/topic-548/2010-07-23-re-bitcoind-not-responding-to-rpc"
     },
     {
@@ -3110,28 +3095,28 @@
       "date": "2010-07-23T20:39:03.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-23-sni260-re-json-rpc-password"
     },
     {
       "date": "2010-07-24T00:59:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC Multiple Invocations",
-      "titleJa": "Re: JSON-RPCの複数呼び出し",
+      "titleJa": "Re: JSON-RPC の複数呼び出し",
       "slug": "forum/bitcointalk/topic-528/2010-07-24-re-json-rpc-multiple-invocations"
     },
     {
       "date": "2010-07-24T01:15:58.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoind not responding to RPC",
-      "titleJa": "Re: bitcoindがRPCに応答しない",
+      "titleJa": "Re: bitcoind が RPC に応答しない",
       "slug": "forum/bitcointalk/topic-548/2010-07-24-re-bitcoind-not-responding-to-rpc"
     },
     {
       "date": "2010-07-24T02:29:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: Warning: don't use -server or bitcoind on a machine where you web browse",
-      "titleJa": "Re: 警告: ウェブブラウジングするマシンで-serverやbitcoindを使用しないでください（v0.3.2以前）",
+      "titleJa": "Re: 警告: ウェブブラウジングするマシンで-server や bitcoind を使用しないでください（v0.3.2 以前）",
       "slug": "forum/bitcointalk/topic-479/2010-07-24-re-warning-dont-use-server-or-bitcoind-on-a-machine-where-yo"
     },
     {
@@ -3145,7 +3130,7 @@
       "date": "2010-07-24T04:04:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: Reading/Writing Blocks and FLATDATA",
-      "titleJa": "Re: ブロックの読み書きとFLATDATA",
+      "titleJa": "Re: ブロックの読み書きと FLATDATA",
       "slug": "forum/bitcointalk/topic-555/2010-07-24-re-reading-writing-blocks-and-flatdata"
     },
     {
@@ -3208,28 +3193,28 @@
       "date": "2010-07-25T21:34:29.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-25-re-json-rpc-password"
     },
     {
       "date": "2010-07-25T21:44:16.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-25-sni274-re-json-rpc-password"
     },
     {
       "date": "2010-07-25T21:51:31.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC password",
-      "titleJa": "Re: JSON-RPCパスワード",
+      "titleJa": "Re: JSON-RPC パスワード",
       "slug": "forum/bitcointalk/topic-461/2010-07-25-sni275-re-json-rpc-password"
     },
     {
       "date": "2010-07-25T22:06:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: md5?",
-      "titleJa": "Re: MD5は？",
+      "titleJa": "Re: MD5 は？",
       "slug": "forum/bitcointalk/topic-458/2010-07-25-re-md5"
     },
     {
@@ -3243,7 +3228,7 @@
       "date": "2010-07-26T17:23:33.000Z",
       "channel": "bitcointalk",
       "title": "bitcoind without wxWidgets",
-      "titleJa": "wxWidgetsなしのbitcoind",
+      "titleJa": "wxWidgets なしの bitcoind",
       "slug": "forum/bitcointalk/topic-576/2010-07-26-bitcoind-without-wxwidgets"
     },
     {
@@ -3257,49 +3242,49 @@
       "date": "2010-07-26T18:41:31.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin x64 for Windows",
-      "titleJa": "Re: Windows用Bitcoin x64",
+      "titleJa": "Re: Windows 用 Bitcoin x64",
       "slug": "forum/bitcointalk/topic-501/2010-07-26-re-bitcoin-x64-for-windows"
     },
     {
       "date": "2010-07-27T01:29:42.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin x86 for Windows",
-      "titleJa": "Re: Windows用Bitcoin x86",
+      "titleJa": "Re: Windows 用 Bitcoin x86",
       "slug": "forum/bitcointalk/topic-572/2010-07-27-re-bitcoin-x86-for-windows"
     },
     {
       "date": "2010-07-27T03:04:58.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proof-of-work difficulty increasing",
-      "titleJa": "Re: Proof-of-work難易度の上昇",
+      "titleJa": "Re: Proof-of-work 難易度の上昇",
       "slug": "forum/bitcointalk/topic-43/2010-07-27-re-proof-of-work-difficulty-increasing"
     },
     {
       "date": "2010-07-27T18:27:30.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin x86 for Windows",
-      "titleJa": "Re: Windows用Bitcoin x86",
+      "titleJa": "Re: Windows 用 Bitcoin x86",
       "slug": "forum/bitcointalk/topic-572/2010-07-27-sni282-re-bitcoin-x86-for-windows"
     },
     {
       "date": "2010-07-27T19:47:42.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin x86 for Windows",
-      "titleJa": "Re: Windows用Bitcoin x86",
+      "titleJa": "Re: Windows 用 Bitcoin x86",
       "slug": "forum/bitcointalk/topic-572/2010-07-27-sni283-re-bitcoin-x86-for-windows"
     },
     {
       "date": "2010-07-28T20:58:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: Having problems specifing -datadir",
-      "titleJa": "Re: -datadirの指定で問題が発生",
+      "titleJa": "Re: -datadir の指定で問題が発生",
       "slug": "forum/bitcointalk/topic-601/2010-07-28-re-having-problems-specifing-datadir"
     },
     {
       "date": "2010-07-28T21:23:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: Build error SVN r115 on my Mac: workaround",
-      "titleJa": "Re: MacでのSVN r115ビルドエラー：回避策",
+      "titleJa": "Re: Mac での SVN r115 ビルドエラー：回避策",
       "slug": "forum/bitcointalk/topic-604/2010-07-28-re-build-error-svn-r115-on-my-mac-workaround"
     },
     {
@@ -3320,63 +3305,63 @@
       "date": "2010-07-29T02:10:46.000Z",
       "channel": "bitcointalk",
       "title": "Re: wiki registration email?",
-      "titleJa": "Re: Wikiの登録確認メール？",
+      "titleJa": "Re: Wiki の登録確認メール？",
       "slug": "forum/bitcointalk/topic-338/2010-07-29-re-wiki-registration-email"
     },
     {
       "date": "2010-07-29T02:18:56.000Z",
       "channel": "private-email",
       "title": "Forum e-mail notifications and PBL blacklist and wiki registration",
-      "titleJa": "フォーラムのメール通知とPBLブラックリストとWiki登録",
+      "titleJa": "フォーラムのメール通知と PBL ブラックリストと Wiki 登録",
       "slug": "correspondence/martti-malmi/2010-07-29-forum-e-mail-notifications-and-pbl-blacklist-and-wiki-regist-219"
     },
     {
       "date": "2010-07-29T10:13:06.000Z",
       "channel": "bitcointalk",
       "title": "*** ALERT *** Upgrade to 0.3.6",
-      "titleJa": "*** 警告 *** バージョン0.3.6",
+      "titleJa": "*** 警告 *** バージョン 0.3.6",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-036"
     },
     {
       "date": "2010-07-29T19:13:06.000Z",
       "channel": "bitcointalk",
       "title": "*** ALERT *** Upgrade to 0.3.6",
-      "titleJa": "*** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "*** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6"
     },
     {
       "date": "2010-07-29T19:55:51.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** version 0.3.6",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-re-alert-version-0-3-6"
     },
     {
       "date": "2010-07-29T20:30:15.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** version 0.3.6",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-sni291-re-alert-version-0-3-6"
     },
     {
       "date": "2010-07-29T21:20:38.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** Upgrade to 0.3.6 ASAP!",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-re-alert-upgrade-to-0-3-6-asap"
     },
     {
       "date": "2010-07-29T21:43:15.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** Upgrade to 0.3.6 ASAP!",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-sni293-re-alert-upgrade-to-0-3-6-asap"
     },
     {
       "date": "2010-07-29T22:04:15.000Z",
       "channel": "bitcointalk",
       "title": "Re: Implementation bug prior to 0.3.6",
-      "titleJa": "Re: sg",
+      "titleJa": "Re: 0.3.6 以前の実装バグ",
       "slug": "forum/bitcointalk/topic-628/2010-07-29-re-implementation-bug-prior-to-0-3-6"
     },
     {
@@ -3390,35 +3375,35 @@
       "date": "2010-07-29T22:17:24.000Z",
       "channel": "bitcointalk",
       "title": "Re: Linux distribution download",
-      "titleJa": "Re: Linuxディストリビューションのダウンロード",
+      "titleJa": "Re: Linux ディストリビューションのダウンロード",
       "slug": "forum/bitcointalk/topic-612/2010-07-29-re-linux-distribution-download"
     },
     {
       "date": "2010-07-29T23:12:12.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** Upgrade to 0.3.6 ASAP!",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-29-sni297-re-alert-upgrade-to-0-3-6-asap"
     },
     {
       "date": "2010-07-30T05:34:38.000Z",
       "channel": "private-email",
       "title": "[bitcoin-list] Alert: upgrade to bitcoin 0.3.6",
-      "titleJa": "[bitcoin-list] アラート: Bitcoin 0.3.6にアップグレードしてください",
+      "titleJa": "[bitcoin-list] アラート: Bitcoin 0.3.6 にアップグレードしてください",
       "slug": "correspondence/martti-malmi/2010-07-30-alert-upgrade-to-bitcoin-036-220"
     },
     {
       "date": "2010-07-30T06:02:38.000Z",
       "channel": "bitcoin-list-ml",
       "title": "Satoshi's urgent v0.3.6 upgrade alert — \\\"[bitcoin-list] Alert: upgrade to bitcoin 0.3.6\\\" (July 2010)",
-      "titleJa": "サトシによるv0.3.6への緊急アップグレード警告 — 「[bitcoin-list] Alert: upgrade to bitcoin 0.3.6」（2010-07）",
+      "titleJa": "サトシによる v0.3.6 への緊急アップグレード警告 — 「[bitcoin-list] Alert: upgrade to bitcoin 0.3.6」（2010-07）",
       "slug": "emails/bitcoin-list/2010-07-30-alert-upgrade-to-bitcoin-0-3-6"
     },
     {
       "date": "2010-07-30T19:19:05.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bug: \\\"Immature\\\" coins lost in wallet.dat during transaction",
-      "titleJa": "Re: バグ：トランザクション中にwallet.datから&quot;未成熟&quot;コインが消失",
+      "titleJa": "Re: バグ：トランザクション中に wallet.dat から&quot;未成熟&quot;コインが消失",
       "slug": "forum/bitcointalk/topic-642/2010-07-30-re-bug-immature-coins-lost-in-wallet-dat-during-transaction"
     },
     {
@@ -3432,63 +3417,63 @@
       "date": "2010-07-30T19:53:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** Upgrade to 0.3.6 ASAP!",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-30-re-alert-upgrade-to-0-3-6-asap"
     },
     {
       "date": "2010-07-30T21:44:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: *** ALERT *** Upgrade to 0.3.6 ASAP!",
-      "titleJa": "Re: *** 警告 *** 0.3.6にアップグレードしてください",
+      "titleJa": "Re: *** 警告 *** 0.3.6 にアップグレードしてください",
       "slug": "forum/bitcointalk/topic-626/2010-07-30-sni301-re-alert-upgrade-to-0-3-6-asap"
     },
     {
       "date": "2010-07-31T00:29:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-07-31-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-07-31T01:32:08.000Z",
       "channel": "bitcointalk",
       "title": "Webpage idea: Next predicted difficulty change",
-      "titleJa": "Webページのアイデア：次の予測される難易度変更",
+      "titleJa": "Web ページのアイデア：次の予測される難易度変更",
       "slug": "forum/bitcointalk/topic-651/2010-07-31-webpage-idea-next-predicted-difficulty-change"
     },
     {
       "date": "2010-07-31T14:38:52.000Z",
       "channel": "bitcointalk",
       "title": "Re: Linux distribution download",
-      "titleJa": "Re: Linuxディストリビューションのダウンロード",
+      "titleJa": "Re: Linux ディストリビューションのダウンロード",
       "slug": "forum/bitcointalk/topic-612/2010-07-31-re-linux-distribution-download"
     },
     {
       "date": "2010-08-02T17:39:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: Linux version => No GUI after upgrade. WTF?",
-      "titleJa": "Re: Linux版 =&gt; アップグレード後にGUIが表示されない",
+      "titleJa": "Re: Linux 版 =&gt; アップグレード後に GUI が表示されない",
       "slug": "forum/bitcointalk/topic-655/2010-08-02-re-linux-version-no-gui-after-upgrade-wtf"
     },
     {
       "date": "2010-08-02T18:02:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: Mac Client Problems Outlined...",
-      "titleJa": "Re: Macクライアントの問題一覧……",
+      "titleJa": "Re: Mac クライアントの問題一覧……",
       "slug": "forum/bitcointalk/topic-660/2010-08-02-re-mac-client-problems-outlined"
     },
     {
       "date": "2010-08-02T19:02:46.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-02-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-02T20:22:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: Protocol Buffers for Bitcoin",
-      "titleJa": "Re: Bitcoin用Protocol Buffers",
+      "titleJa": "Re: Bitcoin 用 Protocol Buffers",
       "slug": "forum/bitcointalk/topic-632/2010-08-02-re-protocol-buffers-for-bitcoin"
     },
     {
@@ -3509,28 +3494,28 @@
       "date": "2010-08-02T21:09:20.000Z",
       "channel": "private-email",
       "title": "[Fwd: Forum e-mail notifications and PBL blacklist and wiki registration]",
-      "titleJa": "[転送: フォーラムのメール通知とPBLブラックリストとWiki登録]",
+      "titleJa": "[転送: フォーラムのメール通知と PBL ブラックリストと Wiki 登録]",
       "slug": "correspondence/martti-malmi/2010-08-02-email-223"
     },
     {
       "date": "2010-08-03T20:56:11.000Z",
       "channel": "bitcointalk",
       "title": "Re: Builds for Ubuntu?",
-      "titleJa": "Re: Ubuntu用ビルドは？",
+      "titleJa": "Re: Ubuntu 用ビルドは？",
       "slug": "forum/bitcointalk/topic-454/2010-08-03-re-builds-for-ubuntu"
     },
     {
       "date": "2010-08-03T21:05:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoind x86 binary for CentOS",
-      "titleJa": "Re: CentOS用Bitcoind x86バイナリ",
+      "titleJa": "Re: CentOS 用 Bitcoind x86 バイナリ",
       "slug": "forum/bitcointalk/topic-685/2010-08-03-re-bitcoind-x86-binary-for-centos"
     },
     {
       "date": "2010-08-03T21:26:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: Content-Length header and 500",
-      "titleJa": "Re: 認証、JSON RPCとPython",
+      "titleJa": "Re: 認証、JSON RPC と Python",
       "slug": "forum/bitcointalk/topic-689/2010-08-03-re-content-length-header-and-500"
     },
     {
@@ -3544,21 +3529,21 @@
       "date": "2010-08-03T23:40:18.000Z",
       "channel": "bitcointalk",
       "title": "Please upgrade to 0.3.8!",
-      "titleJa": "0.3.8にアップグレードしてください！",
+      "titleJa": "0.3.8 にアップグレードしてください！",
       "slug": "forum/bitcointalk/topic-696/2010-08-03-please-upgrade-to-0-3-8"
     },
     {
       "date": "2010-08-04T00:09:32.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoind x86 binary for CentOS",
-      "titleJa": "Re: CentOS用Bitcoind x86バイナリ",
+      "titleJa": "Re: CentOS 用 Bitcoind x86 バイナリ",
       "slug": "forum/bitcointalk/topic-685/2010-08-04-re-bitcoind-x86-binary-for-centos"
     },
     {
       "date": "2010-08-04T00:29:37.000Z",
       "channel": "bitcointalk",
       "title": "Re: Please upgrade to 0.3.8!",
-      "titleJa": "Re: 0.3.8にアップグレードしてください！",
+      "titleJa": "Re: 0.3.8 にアップグレードしてください！",
       "slug": "forum/bitcointalk/topic-696/2010-08-04-re-please-upgrade-to-0-3-8"
     },
     {
@@ -3600,14 +3585,14 @@
       "date": "2010-08-05T17:06:03.000Z",
       "channel": "bitcointalk",
       "title": "Re: Who's the Spanish jerk draining the Faucet?",
-      "titleJa": "Re: Faucetを使い果たしているスペイン人は誰だ？",
+      "titleJa": "Re: Faucet を使い果たしているスペイン人は誰だ？",
       "slug": "forum/bitcointalk/topic-704/2010-08-05-re-whos-the-spanish-jerk-draining-the-faucet"
     },
     {
       "date": "2010-08-05T17:28:40.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoind transaction to ip address",
-      "titleJa": "Re: bitcoindでIPアドレスへのトランザクション",
+      "titleJa": "Re: bitcoind で IP アドレスへのトランザクション",
       "slug": "forum/bitcointalk/topic-711/2010-08-05-re-bitcoind-transaction-to-ip-address"
     },
     {
@@ -3642,7 +3627,7 @@
       "date": "2010-08-07T17:46:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin minting is thermodynamically perverse",
-      "titleJa": "Re: Bitcoinの鋳造は熱力学的に逆説的",
+      "titleJa": "Re: Bitcoin の鋳造は熱力学的に逆説的",
       "slug": "forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse"
     },
     {
@@ -3663,42 +3648,42 @@
       "date": "2010-08-07T21:16:01.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-07-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-09T18:50:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin generation broken in 0.3.8?",
-      "titleJa": "Re: 0.3.8でBitcoin生成が壊れた？",
+      "titleJa": "Re: 0.3.8 で Bitcoin 生成が壊れた？",
       "slug": "forum/bitcointalk/topic-753/2010-08-09-re-bitcoin-generation-broken-in-0-3-8"
     },
     {
       "date": "2010-08-09T19:46:58.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.8.1 update for Linux 64-bit",
-      "titleJa": "Linux 64ビット用バージョン0.3.8.1アップデート",
+      "titleJa": "Linux 64 ビット用バージョン 0.3.8.1 アップデート",
       "slug": "forum/bitcointalk/topic-765/2010-08-09-version-0-3-8-1-update-for-linux-64-bit"
     },
     {
       "date": "2010-08-09T20:13:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: What could be the transition plan to Y2038 compliant Bitcoin?",
-      "titleJa": "Re: Y2038準拠のBitcoinへの移行計画はどうなる？（すでに準拠済み）",
+      "titleJa": "Re: Y2038 準拠の Bitcoin への移行計画はどうなる？（すでに準拠済み）",
       "slug": "forum/bitcointalk/topic-760/2010-08-09-re-what-could-be-the-transition-plan-to-y2038-compliant-bitc"
     },
     {
       "date": "2010-08-09T20:34:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoin generation broken in 0.3.8? (64-bit)",
-      "titleJa": "Re: 0.3.8でBitcoin生成が壊れた？",
+      "titleJa": "Re: 0.3.8 で Bitcoin 生成が壊れた？",
       "slug": "forum/bitcointalk/topic-753/2010-08-09-re-bitcoin-generation-broken-in-0-3-8-64-bit"
     },
     {
       "date": "2010-08-09T20:55:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.8.1 update for Linux 64-bit",
-      "titleJa": "Re: Linux 64ビット用バージョン0.3.8.1アップデート",
+      "titleJa": "Re: Linux 64 ビット用バージョン 0.3.8.1 アップデート",
       "slug": "forum/bitcointalk/topic-765/2010-08-09-re-version-0-3-8-1-update-for-linux-64-bit"
     },
     {
@@ -3712,14 +3697,14 @@
       "date": "2010-08-09T21:28:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin minting is thermodynamically perverse",
-      "titleJa": "Re: Bitcoinの鋳造は熱力学的に逆説的",
+      "titleJa": "Re: Bitcoin の鋳造は熱力学的に逆説的",
       "slug": "forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse"
     },
     {
       "date": "2010-08-10T23:46:00.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.8.1 update for Linux 64-bit",
-      "titleJa": "Re: Linux 64ビット用バージョン0.3.8.1アップデート",
+      "titleJa": "Re: Linux 64 ビット用バージョン 0.3.8.1 アップデート",
       "slug": "forum/bitcointalk/topic-765/2010-08-10-re-version-0-3-8-1-update-for-linux-64-bit"
     },
     {
@@ -3740,21 +3725,21 @@
       "date": "2010-08-11T01:42:30.000Z",
       "channel": "bitcointalk",
       "title": "Re: Compile error in SVN r127",
-      "titleJa": "Re: SVN r127のコンパイルエラー",
+      "titleJa": "Re: SVN r127 のコンパイルエラー",
       "slug": "forum/bitcointalk/topic-784/2010-08-11-re-compile-error-in-svn-r127"
     },
     {
       "date": "2010-08-11T01:54:27.000Z",
       "channel": "private-email",
       "title": "Re: [Fwd: Forum e-mail notifications and PBL blacklist and wiki registration]",
-      "titleJa": "Re: [転送: フォーラムのメール通知とPBLブラックリストとWiki登録]",
+      "titleJa": "Re: [転送: フォーラムのメール通知と PBL ブラックリストと Wiki 登録]",
       "slug": "correspondence/martti-malmi/2010-08-11-email-228"
     },
     {
       "date": "2010-08-11T20:00:13.000Z",
       "channel": "private-email",
       "title": "Re: [Fwd: Forum e-mail notifications and PBL blacklist and wiki registration]",
-      "titleJa": "Re: [転送: フォーラムのメール通知とPBLブラックリストとWiki登録]",
+      "titleJa": "Re: [転送: フォーラムのメール通知と PBL ブラックリストと Wiki 登録]",
       "slug": "correspondence/martti-malmi/2010-08-11-email-230"
     },
     {
@@ -3768,14 +3753,14 @@
       "date": "2010-08-11T21:46:51.000Z",
       "channel": "bitcointalk",
       "title": "Re: Lost large number of bitcoins",
-      "titleJa": "Re: 大量のBitcoinを失った",
+      "titleJa": "Re: 大量の Bitcoin を失った",
       "slug": "forum/bitcointalk/topic-782/2010-08-11-re-lost-large-number-of-bitcoins"
     },
     {
       "date": "2010-08-11T22:40:25.000Z",
       "channel": "bitcointalk",
       "title": "Re: Where is the separate discussion devoted to possible Bitcoin weaknesses.",
-      "titleJa": "Re: Bitcoinの潜在的な弱点に関する専用の議論はどこか",
+      "titleJa": "Re: Bitcoin の潜在的な弱点に関する専用の議論はどこか",
       "slug": "forum/bitcointalk/topic-788/2010-08-11-re-where-is-the-separate-discussion-devoted-to-possible-bitc"
     },
     {
@@ -3789,7 +3774,7 @@
       "date": "2010-08-12T00:02:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: BSD detection",
-      "titleJa": "Re: BSD検出",
+      "titleJa": "Re: BSD 検出",
       "slug": "forum/bitcointalk/topic-790/2010-08-12-re-bsd-detection"
     },
     {
@@ -3803,56 +3788,56 @@
       "date": "2010-08-12T21:14:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: BSD detection",
-      "titleJa": "Re: BSD検出",
+      "titleJa": "Re: BSD 検出",
       "slug": "forum/bitcointalk/topic-790/2010-08-12-sni348-re-bsd-detection"
     },
     {
       "date": "2010-08-12T21:20:31.000Z",
       "channel": "bitcointalk",
       "title": "Bugfixes in SVN rev 130",
-      "titleJa": "SVN rev 130のバグ修正",
+      "titleJa": "SVN rev 130 のバグ修正",
       "slug": "forum/bitcointalk/topic-795/2010-08-12-bugfixes-in-svn-rev-130"
     },
     {
       "date": "2010-08-12T21:34:44.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin Watchdog Service",
-      "titleJa": "Re: Bitcoin監視サービス",
+      "titleJa": "Re: Bitcoin 監視サービス",
       "slug": "forum/bitcointalk/topic-691/2010-08-12-re-bitcoin-watchdog-service"
     },
     {
       "date": "2010-08-12T21:43:29.000Z",
       "channel": "bitcointalk",
       "title": "Re: Having problems specifing -datadir",
-      "titleJa": "Re: -datadirの指定で問題が発生",
+      "titleJa": "Re: -datadir の指定で問題が発生",
       "slug": "forum/bitcointalk/topic-601/2010-08-12-re-having-problems-specifing-datadir"
     },
     {
       "date": "2010-08-12T22:07:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-12-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-13T03:15:23.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bugfixes in SVN rev 130",
-      "titleJa": "Re: SVN rev 130のバグ修正",
+      "titleJa": "Re: SVN rev 130 のバグ修正",
       "slug": "forum/bitcointalk/topic-795/2010-08-13-re-bugfixes-in-svn-rev-130"
     },
     {
       "date": "2010-08-13T17:09:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin Watchdog Service",
-      "titleJa": "Re: Bitcoin監視サービス",
+      "titleJa": "Re: Bitcoin 監視サービス",
       "slug": "forum/bitcointalk/topic-691/2010-08-13-re-bitcoin-watchdog-service"
     },
     {
       "date": "2010-08-13T17:40:00.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.9 rc1, please test",
-      "titleJa": "バージョン0.3.9 rc1、テストお願いします",
+      "titleJa": "バージョン 0.3.9 rc1、テストお願いします",
       "slug": "forum/bitcointalk/topic-806/2010-08-13-version-0-3-9-rc1-please-test"
     },
     {
@@ -3866,63 +3851,63 @@
       "date": "2010-08-13T23:39:14.000Z",
       "channel": "bitcointalk",
       "title": "Re: Proposed change to sendtoaddress API call",
-      "titleJa": "Re: sendtoaddress APIコールの変更提案",
+      "titleJa": "Re: sendtoaddress API コールの変更提案",
       "slug": "forum/bitcointalk/topic-807/2010-08-13-re-proposed-change-to-sendtoaddress-api-call"
     },
     {
       "date": "2010-08-14T00:49:18.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-14-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-14T04:22:29.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-14-sni359-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-14T17:55:37.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-14-sni360-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-14T22:06:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-14-sni361-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-15T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin v0.3.10 - overflow bug emergency fix",
-      "titleJa": "ビットコインv0.3.10 - オーバーフローバグの緊急修正",
+      "titleJa": "ビットコイン v0.3.10 - オーバーフローバグの緊急修正",
       "slug": "aftermath/2010-08-15-bitcoin-v0.3.10-overflow-bug-fix"
     },
     {
       "date": "2010-08-15T03:40:29.000Z",
       "channel": "bitcointalk",
       "title": "Re: 4 hashes parallel on SSE2 CPUs for 0.3.6",
-      "titleJa": "Re: 0.3.6向けSSE2 CPUでの4ハッシュ並列処理",
+      "titleJa": "Re: 0.3.6 向け SSE2 CPU での 4 ハッシュ並列処理",
       "slug": "forum/bitcointalk/topic-648/2010-08-15-re-4-hashes-parallel-on-sse2-cpus-for-0-3-6"
     },
     {
       "date": "2010-08-15T06:52:09.000Z",
       "channel": "bitcointalk",
       "title": "tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "tcatmの4-way SSE2 Linux 32/64ビット版 0.3.9 rc2",
+      "titleJa": "tcatm の 4-way SSE2 Linux 32/64 ビット版 0.3.9 rc2",
       "slug": "forum/bitcointalk/topic-820/2010-08-15-tcatms-4-way-sse2-for-linux-3264-bit-is-in-0310"
     },
     {
       "date": "2010-08-15T15:52:09.000Z",
       "channel": "bitcointalk",
       "title": "tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-15-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
@@ -3936,21 +3921,21 @@
       "date": "2010-08-15T18:11:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.9 rc1, please test",
-      "titleJa": "Re: バージョン0.3.9 rc1、テストお願いします",
+      "titleJa": "Re: バージョン 0.3.9 rc1、テストお願いします",
       "slug": "forum/bitcointalk/topic-806/2010-08-15-re-version-0-3-9-rc1-please-test"
     },
     {
       "date": "2010-08-15T18:23:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit 0.3.9 rc2",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-15-re-tcatms-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
     },
     {
       "date": "2010-08-15T18:43:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit 0.3.9 rc2",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-15-sni367-re-tcatms-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
     },
     {
@@ -3964,63 +3949,63 @@
       "date": "2010-08-15T20:38:33.000Z",
       "channel": "bitcoin-list-ml",
       "title": "Satoshi's bitcoin-list alert during the value-overflow incident — \\\"[bitcoin-list] ALERT - we are investigating a problem\\\" (August 2010)",
-      "titleJa": "サトシがvalue overflow 事件中にbitcoin-listへ出したアラート — 「[bitcoin-list] ALERT - we are investigating a problem」（2010-08）",
+      "titleJa": "サトシが value overflow 事件中に bitcoin-list へ出したアラート — 「[bitcoin-list] ALERT - we are investigating a problem」（2010-08）",
       "slug": "emails/bitcoin-list/2010-08-15-alert-we-are-investigating-a-problem"
     },
     {
       "date": "2010-08-15T20:59:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T21:06:45.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-sni369-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T21:40:19.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-sni371-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T22:58:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-sni372-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T23:17:24.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-sni373-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T23:36:10.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-sni374-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T23:37:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-15-sni375-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-15T23:48:22.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.10 - block 74638 overflow PATCH!",
-      "titleJa": "バージョン0.3.10 - ブロック74638オーバーフローパッチ！",
+      "titleJa": "バージョン 0.3.10 - ブロック 74638 オーバーフローパッチ！",
       "slug": "forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch"
     },
     {
@@ -4041,63 +4026,63 @@
       "date": "2010-08-16T01:00:45.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-16-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-16T01:02:24.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-16-sni380-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-16T01:12:05.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-16-sni381-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-16T02:16:10.000Z",
       "channel": "bitcointalk",
       "title": "Re: (quoted post by satoshi)",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642"
     },
     {
       "date": "2010-08-16T02:38:21.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-16-sni383-re-overflow-bug-serious"
     },
     {
       "date": "2010-08-16T02:57:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit 0.3.9 rc2",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-16-re-tcatms-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
     },
     {
       "date": "2010-08-16T03:23:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit 0.3.9 rc2",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-16-sni385-re-tcatms-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
     },
     {
       "date": "2010-08-16T04:36:59.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-16-re-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
       "date": "2010-08-16T13:38:01.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-16-sni388-re-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
@@ -4111,14 +4096,14 @@
       "date": "2010-08-16T15:59:25.000Z",
       "channel": "bitcointalk",
       "title": "blocks minus 1",
-      "titleJa": "ブロック数マイナス1",
+      "titleJa": "ブロック数マイナス 1",
       "slug": "forum/bitcointalk/topic-837/2010-08-16-blocks-minus-1"
     },
     {
       "date": "2010-08-16T17:06:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: blocks minus 1",
-      "titleJa": "Re: ブロック数マイナス1",
+      "titleJa": "Re: ブロック数マイナス 1",
       "slug": "forum/bitcointalk/topic-837/2010-08-16-re-blocks-minus-1"
     },
     {
@@ -4146,7 +4131,7 @@
       "date": "2010-08-16T22:54:55.000Z",
       "channel": "bitcointalk",
       "title": "Re: overflow bug SERIOUS",
-      "titleJa": "Re: オーバーフローバグ 深刻",
+      "titleJa": "Re: オーバーフローバグ深刻",
       "slug": "forum/bitcointalk/topic-823/2010-08-16-sni395-re-overflow-bug-serious"
     },
     {
@@ -4181,28 +4166,28 @@
       "date": "2010-08-19T18:44:36.000Z",
       "channel": "bitcointalk",
       "title": "Re: Convert Bitcoin to GTK: Yes? No? wx is better?",
-      "titleJa": "Re: BitcoinをGTKに変換：賛成？反対？wxの方が良い？",
+      "titleJa": "Re: Bitcoin を GTK に変換：賛成？反対？wx の方が良い？",
       "slug": "forum/bitcointalk/topic-867/2010-08-19-re-convert-bitcoin-to-gtk-yes-no-wx-is-better"
     },
     {
       "date": "2010-08-19T18:55:48.000Z",
       "channel": "bitcointalk",
       "title": "Re: HOWTO: Compiling Bitcoin on Ubuntu 10.04 (Karmic)",
-      "titleJa": "Re: HOWTO: Ubuntu 10.04 (Karmic) でBitcoinをコンパイルする方法",
+      "titleJa": "Re: HOWTO: Ubuntu 10.04 (Karmic) で Bitcoin をコンパイルする方法",
       "slug": "forum/bitcointalk/topic-868/2010-08-19-re-howto-compiling-bitcoin-on-ubuntu-10-04-karmic"
     },
     {
       "date": "2010-08-19T19:07:43.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-19-re-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
       "date": "2010-08-19T19:40:30.000Z",
       "channel": "bitcointalk",
       "title": "Re: 28 days without generation, i have 4200khash/s",
-      "titleJa": "Re: 28日間生成なし、4200khash/sあるのに",
+      "titleJa": "Re: 28日間生成なし、4200khash/s あるのに",
       "slug": "forum/bitcointalk/topic-862/2010-08-19-re-28-days-without-generation-i-have-4200khash-s"
     },
     {
@@ -4216,7 +4201,7 @@
       "date": "2010-08-19T20:28:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: Hypothetical question on lost coins / transfers",
-      "titleJa": "Re: sdfh",
+      "titleJa": "Re: 失われたコイン/送金に関する仮説的な質問",
       "slug": "forum/bitcointalk/topic-870/2010-08-19-re-hypothetical-question-on-lost-coins-transfers"
     },
     {
@@ -4230,14 +4215,14 @@
       "date": "2010-08-22T23:01:02.000Z",
       "channel": "bitcointalk",
       "title": "Re: 28 days without generation, i have 4200khash/s",
-      "titleJa": "Re: 28日間生成なし、4200khash/sあるのに",
+      "titleJa": "Re: 28日間生成なし、4200khash/s あるのに",
       "slug": "forum/bitcointalk/topic-862/2010-08-22-re-28-days-without-generation-i-have-4200khash-s"
     },
     {
       "date": "2010-08-22T23:21:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-22-re-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
@@ -4251,14 +4236,14 @@
       "date": "2010-08-22T23:57:32.000Z",
       "channel": "bitcointalk",
       "title": "Re: integrating digital payments into p2p protocols",
-      "titleJa": "Re: P2Pプロトコルへのデジタル決済の統合",
+      "titleJa": "Re: P2P プロトコルへのデジタル決済の統合",
       "slug": "forum/bitcointalk/topic-890/2010-08-22-re-integrating-digital-payments-into-p2p-protocols"
     },
     {
       "date": "2010-08-24T22:43:56.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-24-re-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
@@ -4314,7 +4299,7 @@
       "date": "2010-08-26T00:33:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: remove DB_PRIVATE flag",
-      "titleJa": "Re: RFC: DB_PRIVATEフラグの削除",
+      "titleJa": "Re: RFC: DB_PRIVATE フラグの削除",
       "slug": "forum/bitcointalk/topic-920/2010-08-26-re-rfc-remove-db-private-flag"
     },
     {
@@ -4328,7 +4313,7 @@
       "date": "2010-08-26T00:57:40.000Z",
       "channel": "bitcointalk",
       "title": "Re: auto backing up of wallet.dat",
-      "titleJa": "Re: wallet.datの自動バックアップ",
+      "titleJa": "Re: wallet.dat の自動バックアップ",
       "slug": "forum/bitcointalk/topic-921/2010-08-26-re-auto-backing-up-of-wallet-dat"
     },
     {
@@ -4342,35 +4327,35 @@
       "date": "2010-08-27T01:13:42.000Z",
       "channel": "bitcointalk",
       "title": "Re: auto backing up of wallet.dat",
-      "titleJa": "Re: wallet.datの自動バックアップ",
+      "titleJa": "Re: wallet.dat の自動バックアップ",
       "slug": "forum/bitcointalk/topic-921/2010-08-27-re-auto-backing-up-of-wallet-dat"
     },
     {
       "date": "2010-08-27T02:36:43.000Z",
       "channel": "private-email",
       "title": "[Fwd: SweepMines now accept bitcoins]",
-      "titleJa": "[転送: SweepMinesがBitcoinを受け入れ開始]",
+      "titleJa": "[転送: SweepMines が Bitcoin を受け入れ開始]",
       "slug": "correspondence/martti-malmi/2010-08-27-email-232"
     },
     {
       "date": "2010-08-27T02:54:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: auto backing up of wallet.dat",
-      "titleJa": "Re: wallet.datの自動バックアップ",
+      "titleJa": "Re: wallet.dat の自動バックアップ",
       "slug": "forum/bitcointalk/topic-921/2010-08-27-sni424-re-auto-backing-up-of-wallet-dat"
     },
     {
       "date": "2010-08-27T15:47:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: auto backing up of wallet.dat",
-      "titleJa": "Re: wallet.datの自動バックアップ",
+      "titleJa": "Re: wallet.dat の自動バックアップ",
       "slug": "forum/bitcointalk/topic-921/2010-08-27-sni425-re-auto-backing-up-of-wallet-dat"
     },
     {
       "date": "2010-08-27T16:13:16.000Z",
       "channel": "bitcointalk",
       "title": "Re: New web service: obtain dump of bitcoin block NNNN",
-      "titleJa": "Re: 新しいWebサービス：Bitcoinブロック NNNNのダンプを取得",
+      "titleJa": "Re: 新しい Web サービス：Bitcoin ブロック NNNN のダンプを取得",
       "slug": "forum/bitcointalk/topic-928/2010-08-27-re-new-web-service-obtain-dump-of-bitcoin-block-nnnn"
     },
     {
@@ -4384,28 +4369,28 @@
       "date": "2010-08-27T17:32:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin does NOT violate Mises' Regression Theorem",
-      "titleJa": "Re: Bitcoinはミーゼスの回帰定理に違反しない",
+      "titleJa": "Re: Bitcoin はミーゼスの回帰定理に違反しない",
       "slug": "forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem"
     },
     {
       "date": "2010-08-27T21:54:12.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.11 with upgrade alerts",
-      "titleJa": "バージョン0.3.11 アップグレードアラート付き",
+      "titleJa": "バージョン 0.3.11 アップグレードアラート付き",
       "slug": "forum/bitcointalk/topic-941/2010-08-27-version-0-3-11-with-upgrade-alerts"
     },
     {
       "date": "2010-08-28T14:27:15.000Z",
       "channel": "bitcointalk",
       "title": "Re: tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10",
-      "titleJa": "Re: tcatmの4-way SSE2 Linux 32/64ビット版が0.3.10に搭載",
+      "titleJa": "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載",
       "slug": "forum/bitcointalk/topic-820/2010-08-28-re-tcatms-4-way-sse2-for-linux-32-64-bit-is-in-0-3-10"
     },
     {
       "date": "2010-08-28T14:54:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.11 with upgrade alerts",
-      "titleJa": "Re: バージョン0.3.11 アップグレードアラート付き",
+      "titleJa": "Re: バージョン 0.3.11 アップグレードアラート付き",
       "slug": "forum/bitcointalk/topic-941/2010-08-28-re-version-0-3-11-with-upgrade-alerts"
     },
     {
@@ -4419,7 +4404,7 @@
       "date": "2010-09-05T23:25:32.000Z",
       "channel": "bitcointalk",
       "title": "Re: CryptoPP Assertion Error",
-      "titleJa": "Re: CryptoPPのアサーションエラー",
+      "titleJa": "Re: CryptoPP のアサーションエラー",
       "slug": "forum/bitcointalk/topic-967/2010-09-05-re-cryptopp-assertion-error"
     },
     {
@@ -4433,7 +4418,7 @@
       "date": "2010-09-06T21:21:21.000Z",
       "channel": "bitcointalk",
       "title": "Re: HTTP status codes from the JSON-RPC api",
-      "titleJa": "Re: JSON-RPC APIからのHTTPステータスコード",
+      "titleJa": "Re: JSON-RPC API からの HTTP ステータスコード",
       "slug": "forum/bitcointalk/topic-969/2010-09-06-re-http-status-codes-from-the-json-rpc-api"
     },
     {
@@ -4447,21 +4432,21 @@
       "date": "2010-09-06T21:45:10.000Z",
       "channel": "bitcointalk",
       "title": "Re: auto backing up of wallet.dat",
-      "titleJa": "Re: wallet.datの自動バックアップ",
+      "titleJa": "Re: wallet.dat の自動バックアップ",
       "slug": "forum/bitcointalk/topic-921/2010-09-06-re-auto-backing-up-of-wallet-dat"
     },
     {
       "date": "2010-09-06T21:52:45.000Z",
       "channel": "bitcointalk",
       "title": "Re: bitcoind as daemon in OSX",
-      "titleJa": "Re: OSXでbitcoindをデーモンとして実行",
+      "titleJa": "Re: OSX で bitcoind をデーモンとして実行",
       "slug": "forum/bitcointalk/topic-992/2010-09-06-re-bitcoind-as-daemon-in-osx"
     },
     {
       "date": "2010-09-07T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin v0.3.12 released on SourceForge",
-      "titleJa": "ビットコインv0.3.12がSourceForgeでリリース",
+      "titleJa": "ビットコイン v0.3.12 が SourceForge でリリース",
       "slug": "aftermath/2010-09-07-bitcoin-v0.3.12-released"
     },
     {
@@ -4475,7 +4460,7 @@
       "date": "2010-09-07T19:17:55.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.12",
-      "titleJa": "バージョン0.3.12",
+      "titleJa": "バージョン 0.3.12",
       "slug": "forum/bitcointalk/topic-999/2010-09-07-version-0-3-12"
     },
     {
@@ -4489,21 +4474,21 @@
       "date": "2010-09-08T18:06:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.12",
-      "titleJa": "Re: バージョン0.3.12",
+      "titleJa": "Re: バージョン 0.3.12",
       "slug": "forum/bitcointalk/topic-999/2010-09-08-re-version-0-3-12"
     },
     {
       "date": "2010-09-08T20:27:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bitcoin Blogger: Is It Better To Buy Or Generate Bitcoins?",
-      "titleJa": "Re: Bitcoin Blogger: Bitcoinは購入と生成のどちらが良いか？",
+      "titleJa": "Re: Bitcoin Blogger: Bitcoin は購入と生成のどちらが良いか？",
       "slug": "forum/bitcointalk/topic-955/2010-09-08-re-bitcoin-blogger-is-it-better-to-buy-or-generate-bitcoins"
     },
     {
       "date": "2010-09-09T01:04:05.000Z",
       "channel": "bitcointalk",
       "title": "Auto-detect for 128-bit 4-way SSE2",
-      "titleJa": "128ビット4-way SSE2の自動検出",
+      "titleJa": "128 ビット 4-way SSE2 の自動検出",
       "slug": "forum/bitcointalk/topic-1007/2010-09-09-auto-detect-for-128-bit-4-way-sse2"
     },
     {
@@ -4531,28 +4516,28 @@
       "date": "2010-09-10T18:11:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Auto-detect for 128-bit 4-way SSE2",
-      "titleJa": "Re: 128ビット4-way SSE2の自動検出",
+      "titleJa": "Re: 128 ビット 4-way SSE2 の自動検出",
       "slug": "forum/bitcointalk/topic-1007/2010-09-10-re-auto-detect-for-128-bit-4-way-sse2"
     },
     {
       "date": "2010-09-12T17:40:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: Running on a port other than 8333",
-      "titleJa": "Re: 8333以外のポートで実行する",
+      "titleJa": "Re: 8333 以外のポートで実行する",
       "slug": "forum/bitcointalk/topic-589/2010-09-12-re-running-on-a-port-other-than-8333"
     },
     {
       "date": "2010-09-12T18:00:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: remove DB_PRIVATE flag",
-      "titleJa": "Re: RFC: DB_PRIVATEフラグの削除",
+      "titleJa": "Re: RFC: DB_PRIVATE フラグの削除",
       "slug": "forum/bitcointalk/topic-920/2010-09-12-re-rfc-remove-db-private-flag"
     },
     {
       "date": "2010-09-12T19:24:53.000Z",
       "channel": "bitcointalk",
       "title": "Re: Switch to GPL",
-      "titleJa": "Re: GPLへの切り替え",
+      "titleJa": "Re: GPL への切り替え",
       "slug": "forum/bitcointalk/topic-989/2010-09-12-re-switch-to-gpl"
     },
     {
@@ -4566,7 +4551,7 @@
       "date": "2010-09-19T18:46:46.000Z",
       "channel": "bitcointalk",
       "title": "Re: Issues building bitcoin on Windows 7",
-      "titleJa": "Re: Windows 7でBitcoinのビルドに問題がある",
+      "titleJa": "Re: Windows 7 で Bitcoin のビルドに問題がある",
       "slug": "forum/bitcointalk/topic-1034/2010-09-19-re-issues-building-bitcoin-on-windows-7"
     },
     {
@@ -4580,7 +4565,7 @@
       "date": "2010-09-19T21:49:30.000Z",
       "channel": "bitcointalk",
       "title": "Re: The case for removing IP transactions",
-      "titleJa": "Re: IPトランザクション削除の主張",
+      "titleJa": "Re: IP トランザクション削除の主張",
       "slug": "forum/bitcointalk/topic-1048/2010-09-19-re-the-case-for-removing-ip-transactions"
     },
     {
@@ -4615,7 +4600,7 @@
       "date": "2010-09-23T17:56:55.000Z",
       "channel": "bitcointalk",
       "title": "Re: Porn",
-      "titleJa": "Re: adf",
+      "titleJa": "Re: ポルノ",
       "slug": "forum/bitcointalk/topic-671/2010-09-23-re-porn"
     },
     {
@@ -4636,7 +4621,7 @@
       "date": "2010-09-26T17:34:26.000Z",
       "channel": "bitcointalk",
       "title": "Re: How To Make a Distributed BitCoin Escrow Service",
-      "titleJa": "Re: 分散型BitCoinエスクローサービスの作り方",
+      "titleJa": "Re: 分散型 BitCoin エスクローサービスの作り方",
       "slug": "forum/bitcointalk/topic-1283/2010-09-26-re-how-to-make-a-distributed-bitcoin-escrow-service"
     },
     {
@@ -4657,14 +4642,14 @@
       "date": "2010-09-30T17:04:15.000Z",
       "channel": "bitcointalk",
       "title": "0.3.13 RC1 for Windows, please test",
-      "titleJa": "0.3.13 RC1 Windows版、テストをお願いします",
+      "titleJa": "0.3.13 RC1 Windows 版、テストをお願いします",
       "slug": "forum/bitcointalk/topic-1322/2010-09-30-0-3-13-rc1-for-windows-please-test"
     },
     {
       "date": "2010-09-30T17:50:32.000Z",
       "channel": "bitcointalk",
       "title": "Re: BitCoin Wikipedia page DELETED!!!",
-      "titleJa": "Re: BitCoinのWikipediaページが削除された！！！",
+      "titleJa": "Re: BitCoin の Wikipedia ページが削除された！！！",
       "slug": "forum/bitcointalk/topic-652/2010-09-30-re-bitcoin-wikipedia-page-deleted"
     },
     {
@@ -4685,63 +4670,63 @@
       "date": "2010-09-30T18:27:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: Remote RPC access",
-      "titleJa": "Re: リモートRPCアクセス",
+      "titleJa": "Re: リモート RPC アクセス",
       "slug": "forum/bitcointalk/topic-1291/2010-09-30-re-remote-rpc-access"
     },
     {
       "date": "2010-10-01T00:32:46.000Z",
       "channel": "bitcointalk",
       "title": "Re: 0.3.13 RC1 for Windows, please test",
-      "titleJa": "Re: 0.3.13 RC1 Windows版、テストをお願いします",
+      "titleJa": "Re: 0.3.13 RC1 Windows 版、テストをお願いします",
       "slug": "forum/bitcointalk/topic-1322/2010-10-01-re-0-3-13-rc1-for-windows-please-test"
     },
     {
       "date": "2010-10-01T00:34:35.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.13, please upgrade",
-      "titleJa": "バージョン0.3.13、アップグレードしてください",
+      "titleJa": "バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-01-version-0-3-13-please-upgrade"
     },
     {
       "date": "2010-10-03T18:17:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-re-version-0-3-13"
     },
     {
       "date": "2010-10-03T19:39:06.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13, please upgrade",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-re-version-0-3-13-please-upgrade"
     },
     {
       "date": "2010-10-03T19:49:32.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13, please upgrade",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-sni475-re-version-0-3-13-please-upgrade"
     },
     {
       "date": "2010-10-03T20:02:24.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13, please upgrade",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-sni476-re-version-0-3-13-please-upgrade"
     },
     {
       "date": "2010-10-03T20:27:29.000Z",
       "channel": "private-email",
       "title": "SMF php code",
-      "titleJa": "SMF PHPコード",
+      "titleJa": "SMF PHP コード",
       "slug": "correspondence/martti-malmi/2010-10-03-smf-php-code-235"
     },
     {
       "date": "2010-10-03T20:54:07.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13, please upgrade",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-sni477-re-version-0-3-13-please-upgrade"
     },
     {
@@ -4755,14 +4740,14 @@
       "date": "2010-10-03T21:30:04.000Z",
       "channel": "bitcointalk",
       "title": "Re: How to overthrow the GPU Oligarchs",
-      "titleJa": "Re: GPU寡頭制を打倒する方法",
+      "titleJa": "Re: GPU 寡頭制を打倒する方法",
       "slug": "forum/bitcointalk/topic-1332/2010-10-03-re-how-to-overthrow-the-gpu-oligarchs"
     },
     {
       "date": "2010-10-03T21:43:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13, please upgrade",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-sni480-re-version-0-3-13-please-upgrade"
     },
     {
@@ -4776,7 +4761,7 @@
       "date": "2010-10-03T23:46:19.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.13, please upgrade",
-      "titleJa": "Re: バージョン0.3.13、アップグレードしてください",
+      "titleJa": "Re: バージョン 0.3.13、アップグレードしてください",
       "slug": "forum/bitcointalk/topic-1327/2010-10-03-sni482-re-version-0-3-13-please-upgrade"
     },
     {
@@ -4790,7 +4775,7 @@
       "date": "2010-10-04T19:05:26.000Z",
       "channel": "private-email",
       "title": "Re: SMF php code",
-      "titleJa": "Re: SMF PHPコード",
+      "titleJa": "Re: SMF PHP コード",
       "slug": "correspondence/martti-malmi/2010-10-04-smf-php-code-237"
     },
     {
@@ -4825,7 +4810,7 @@
       "date": "2010-10-06T17:36:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: Tor connections not working reliably, many seednodes offline",
-      "titleJa": "Re: Tor接続が不安定、多くのシードノードがオフライン",
+      "titleJa": "Re: Tor 接続が不安定、多くのシードノードがオフライン",
       "slug": "forum/bitcointalk/topic-1375/2010-10-06-re-tor-connections-not-working-reliably-many-seednodes-offli"
     },
     {
@@ -4846,7 +4831,7 @@
       "date": "2010-10-21T16:39:27.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.14",
-      "titleJa": "バージョン0.3.14",
+      "titleJa": "バージョン 0.3.14",
       "slug": "forum/bitcointalk/topic-1528/2010-10-21-version-0-3-14"
     },
     {
@@ -4881,21 +4866,21 @@
       "date": "2010-10-23T19:02:57.000Z",
       "channel": "bitcointalk",
       "title": "Re: Suggestion: Allow short messages to be sent together with bitcoins ?",
-      "titleJa": "Re: 提案：Bitcoinと一緒に短いメッセージを送れるようにしないか？",
+      "titleJa": "Re: 提案：Bitcoin と一緒に短いメッセージを送れるようにしないか？",
       "slug": "forum/bitcointalk/topic-1545/2010-10-23-re-suggestion-allow-short-messages-to-be-sent-together-with-"
     },
     {
       "date": "2010-10-24T19:17:51.000Z",
       "channel": "bitcointalk",
       "title": "Re: Multiple Wallets, one computer",
-      "titleJa": "Re: 複数のウォレット、1台のコンピューター",
+      "titleJa": "Re: 複数のウォレット、1 台のコンピューター",
       "slug": "forum/bitcointalk/topic-665/2010-10-24-re-multiple-wallets-one-computer"
     },
     {
       "date": "2010-10-25T16:53:53.000Z",
       "channel": "bitcointalk",
       "title": "Re: Multiple Wallets, one computer",
-      "titleJa": "Re: 複数のウォレット、1台のコンピューター",
+      "titleJa": "Re: 複数のウォレット、1 台のコンピューター",
       "slug": "forum/bitcointalk/topic-665/2010-10-25-re-multiple-wallets-one-computer"
     },
     {
@@ -4923,7 +4908,7 @@
       "date": "2010-11-13T23:26:40.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.15",
-      "titleJa": "バージョン0.3.15",
+      "titleJa": "バージョン 0.3.15",
       "slug": "forum/bitcointalk/topic-1780/2010-11-13-version-0-3-15"
     },
     {
@@ -4937,7 +4922,7 @@
       "date": "2010-11-15T18:37:44.000Z",
       "channel": "bitcointalk",
       "title": "Re: Need OP_BLOCKNUMBER to allow 'time' limited transactions",
-      "titleJa": "Re: 「時間」制限付きトランザクションを可能にするためにOP_BLOCKNUMBERが必要",
+      "titleJa": "Re: 「時間」制限付きトランザクションを可能にするために OP_BLOCKNUMBER が必要",
       "slug": "forum/bitcointalk/topic-1786/2010-11-15-re-need-op-blocknumber-to-allow-time-limited-transactions"
     },
     {
@@ -4951,77 +4936,77 @@
       "date": "2010-11-20T17:24:20.000Z",
       "channel": "bitcointalk",
       "title": "Re: OpenCL miner for the masses",
-      "titleJa": "Re: 大衆向けOpenCLマイナー",
+      "titleJa": "Re: 大衆向け OpenCL マイナー",
       "slug": "forum/bitcointalk/topic-1334/2010-11-20-re-opencl-miner-for-the-masses"
     },
     {
       "date": "2010-11-23T19:50:12.000Z",
       "channel": "bitcointalk",
       "title": "New getwork",
-      "titleJa": "新しいgetwork",
+      "titleJa": "新しい getwork",
       "slug": "forum/bitcointalk/topic-1901/2010-11-23-new-getwork"
     },
     {
       "date": "2010-11-23T20:55:27.000Z",
       "channel": "bitcointalk",
       "title": "Re: New getwork",
-      "titleJa": "Re: 新しいgetwork",
+      "titleJa": "Re: 新しい getwork",
       "slug": "forum/bitcointalk/topic-1901/2010-11-23-re-new-getwork"
     },
     {
       "date": "2010-11-24T17:21:01.000Z",
       "channel": "bitcointalk",
       "title": "Re: New getwork",
-      "titleJa": "Re: 新しいgetwork",
+      "titleJa": "Re: 新しい getwork",
       "slug": "forum/bitcointalk/topic-1901/2010-11-24-re-new-getwork"
     },
     {
       "date": "2010-11-24T17:53:09.000Z",
       "channel": "bitcointalk",
       "title": "Re: OpenCL miner for the masses",
-      "titleJa": "Re: 大衆向けOpenCLマイナー",
+      "titleJa": "Re: 大衆向け OpenCL マイナー",
       "slug": "forum/bitcointalk/topic-1334/2010-11-24-re-opencl-miner-for-the-masses"
     },
     {
       "date": "2010-11-25T17:51:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: ship block chain 1-74000 with release tarballs?",
-      "titleJa": "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？",
+      "titleJa": "Re: RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？",
       "slug": "forum/bitcointalk/topic-1931/2010-11-25-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
     },
     {
       "date": "2010-11-25T20:07:36.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.17",
-      "titleJa": "バージョン0.3.17",
+      "titleJa": "バージョン 0.3.17",
       "slug": "forum/bitcointalk/topic-1946/2010-11-25-version-0-3-17"
     },
     {
       "date": "2010-11-26T17:32:01.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: ship block chain 1-74000 with release tarballs?",
-      "titleJa": "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？",
+      "titleJa": "Re: RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？",
       "slug": "forum/bitcointalk/topic-1931/2010-11-26-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
     },
     {
       "date": "2010-11-26T18:23:30.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.17",
-      "titleJa": "Re: バージョン0.3.17",
+      "titleJa": "Re: バージョン 0.3.17",
       "slug": "forum/bitcointalk/topic-1946/2010-11-26-re-version-0-3-17"
     },
     {
       "date": "2010-11-26T21:31:13.000Z",
       "channel": "bitcointalk",
       "title": "Re: New getwork",
-      "titleJa": "Re: 新しいgetwork",
+      "titleJa": "Re: 新しい getwork",
       "slug": "forum/bitcointalk/topic-1901/2010-11-26-re-new-getwork"
     },
     {
       "date": "2010-11-26T22:02:41.000Z",
       "channel": "bitcointalk",
       "title": "Re: New demonstration CPU miner available",
-      "titleJa": "Re: 新しいデモンストレーション用CPUマイナーが利用可能に",
+      "titleJa": "Re: 新しいデモンストレーション用 CPU マイナーが利用可能に",
       "slug": "forum/bitcointalk/topic-1925/2010-11-26-re-new-demonstration-cpu-miner-available"
     },
     {
@@ -5035,7 +5020,7 @@
       "date": "2010-11-28T17:13:01.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: ship block chain 1-74000 with release tarballs?",
-      "titleJa": "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？",
+      "titleJa": "Re: RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？",
       "slug": "forum/bitcointalk/topic-1931/2010-11-28-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
     },
     {
@@ -5049,49 +5034,49 @@
       "date": "2010-11-29T20:19:12.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: ship block chain 1-74000 with release tarballs?",
-      "titleJa": "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？",
+      "titleJa": "Re: RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？",
       "slug": "forum/bitcointalk/topic-1931/2010-11-29-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
     },
     {
       "date": "2010-12-01T00:58:37.000Z",
       "channel": "private-email",
       "title": "[Fwd: Bitcoin.org is down]",
-      "titleJa": "[転送: Bitcoin.orgがダウン]",
+      "titleJa": "[転送: Bitcoin.org がダウン]",
       "slug": "correspondence/martti-malmi/2010-12-01-email-238"
     },
     {
       "date": "2010-12-01T21:25:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: RFC: ship block chain 1-74000 with release tarballs?",
-      "titleJa": "Re: RFC: リリースtarballにブロックチェーン1-74000を同梱する？",
+      "titleJa": "Re: RFC: リリース tarball にブロックチェーン 1-74000 を同梱する？",
       "slug": "forum/bitcointalk/topic-1931/2010-12-01-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
     },
     {
       "date": "2010-12-02T22:00:56.000Z",
       "channel": "private-email",
       "title": "What was the bitcoin.org outage?",
-      "titleJa": "bitcoin.orgの障害の原因は？",
+      "titleJa": "bitcoin.org の障害の原因は？",
       "slug": "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
     },
     {
       "date": "2010-12-03T19:58:40.000Z",
-      "channel": "private-email",
-      "title": "Re: Bitcoin - Recommending Gavin Andresen as successor",
-      "titleJa": "Re: ビットコイン - 後継者としてギャビン・アンドレセンを推薦",
-      "slug": "correspondence/martti-malmi/2010-12-03-handover-to-gavin"
+      "channel": "other",
+      "title": "Re: Bitcoin - Recommending Gavin Andresen to take over development and management",
+      "titleJa": "Re: ビットコイン - 開発と管理の引き継ぎ先としてギャビン・アンドレセンを推薦",
+      "slug": "aftermath/2010-12-03-handover-to-gavin"
     },
     {
       "date": "2010-12-05T09:08:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: Bring on the bitcoins donations to Wikileaks",
-      "titleJa": "Re: ギャビンのCIAプレゼンテーション計画",
+      "titleJa": "Re: WikiLeaks へのビットコイン寄付を推進しよう",
       "slug": "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
     },
     {
       "date": "2010-12-06T16:08:56.000Z",
       "channel": "private-email",
       "title": "Re: What was the bitcoin.org outage?",
-      "titleJa": "Re: bitcoin.orgの障害の原因は？",
+      "titleJa": "Re: bitcoin.org の障害の原因は？",
       "slug": "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-243"
     },
     {
@@ -5103,72 +5088,72 @@
     },
     {
       "date": "2010-12-08T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin v0.3.18 released on SourceForge",
-      "titleJa": "ビットコインv0.3.18がSourceForgeでリリース",
+      "titleJa": "ビットコイン v0.3.18 が SourceForge でリリース",
       "slug": "aftermath/2010-12-08-bitcoin-v0.3.18-released"
     },
     {
       "date": "2010-12-08T20:21:49.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC method idea: list transactions newer than a given txid",
-      "titleJa": "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする",
+      "titleJa": "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする",
       "slug": "forum/bitcointalk/topic-2151/2010-12-08-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
     },
     {
       "date": "2010-12-08T22:36:45.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC method idea: list transactions newer than a given txid",
-      "titleJa": "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする",
+      "titleJa": "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする",
       "slug": "forum/bitcointalk/topic-2151/2010-12-08-sni525-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
     },
     {
       "date": "2010-12-08T23:09:45.000Z",
       "channel": "private-email",
       "title": "[bitcoin-list] Bitcoin 0.3.18 is released",
-      "titleJa": "[bitcoin-list] Bitcoin 0.3.18リリース",
+      "titleJa": "[bitcoin-list] Bitcoin 0.3.18 リリース",
       "slug": "correspondence/martti-malmi/2010-12-08-bitcoin-0318-is-released-247"
     },
     {
       "date": "2010-12-08T23:11:55.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin 0.3.18 is released\\\" — Satoshi announces the v0.3.18 release (December 2010)",
-      "titleJa": "「[bitcoin-list] Bitcoin 0.3.18 is released」— サトシがv0.3.18リリースを告知（2010-12）",
+      "titleJa": "「[bitcoin-list] Bitcoin 0.3.18 is released」— サトシが v0.3.18 リリースを告知（2010-12）",
       "slug": "emails/bitcoin-list/2010-12-08-bitcoin-0-3-18-is-released"
     },
     {
       "date": "2010-12-08T23:19:24.000Z",
       "channel": "bitcointalk",
       "title": "Version 0.3.18",
-      "titleJa": "バージョン0.3.18",
+      "titleJa": "バージョン 0.3.18",
       "slug": "forum/bitcointalk/topic-2162/2010-12-08-version-0-3-18"
     },
     {
       "date": "2010-12-09T00:12:17.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC method idea: list transactions newer than a given txid",
-      "titleJa": "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする",
+      "titleJa": "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする",
       "slug": "forum/bitcointalk/topic-2151/2010-12-09-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
     },
     {
       "date": "2010-12-09T14:37:05.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.18",
-      "titleJa": "Re: バージョン0.3.18",
+      "titleJa": "Re: バージョン 0.3.18",
       "slug": "forum/bitcointalk/topic-2162/2010-12-09-re-version-0-3-18"
     },
     {
       "date": "2010-12-09T15:17:53.000Z",
       "channel": "bitcointalk",
       "title": "Re: Version 0.3.18",
-      "titleJa": "Re: バージョン0.3.18",
+      "titleJa": "Re: バージョン 0.3.18",
       "slug": "forum/bitcointalk/topic-2162/2010-12-09-sni529-re-version-0-3-18"
     },
     {
       "date": "2010-12-09T18:08:08.000Z",
       "channel": "bitcointalk",
       "title": "Re: JSON-RPC method idea: list transactions newer than a given txid",
-      "titleJa": "Re: JSON-RPCメソッドのアイデア：指定されたtxidより新しいトランザクションをリストする",
+      "titleJa": "Re: JSON-RPC メソッドのアイデア：指定された txid より新しいトランザクションをリストする",
       "slug": "forum/bitcointalk/topic-2151/2010-12-09-sni530-re-json-rpc-method-idea-list-transactions-newer-than-a-given"
     },
     {
@@ -5182,28 +5167,28 @@
       "date": "2010-12-09T21:02:42.000Z",
       "channel": "bitcointalk",
       "title": "Re: BitDNS and Generalizing Bitcoin",
-      "titleJa": "Re: BitDNSとBitcoinの汎用化",
+      "titleJa": "Re: BitDNS と Bitcoin の汎用化",
       "slug": "forum/bitcointalk/topic-1790/2010-12-09-re-bitdns-and-generalizing-bitcoin"
     },
     {
       "date": "2010-12-09T22:46:50.000Z",
       "channel": "bitcointalk",
       "title": "Re: BitDNS and Generalizing Bitcoin",
-      "titleJa": "Re: BitDNSとBitcoinの汎用化",
+      "titleJa": "Re: BitDNS と Bitcoin の汎用化",
       "slug": "forum/bitcointalk/topic-1790/2010-12-09-sni533-re-bitdns-and-generalizing-bitcoin"
     },
     {
       "date": "2010-12-09T23:58:54.000Z",
       "channel": "bitcointalk",
       "title": "Re: Fees in BitDNS confusion",
-      "titleJa": "Re: BitDNSの手数料に関する混乱",
+      "titleJa": "Re: BitDNS の手数料に関する混乱",
       "slug": "forum/bitcointalk/topic-2181/2010-12-09-re-fees-in-bitdns-confusion"
     },
     {
       "date": "2010-12-10T17:29:28.000Z",
       "channel": "bitcointalk",
       "title": "Re: BitDNS and Generalizing Bitcoin",
-      "titleJa": "Re: BitDNSとBitcoinの汎用化",
+      "titleJa": "Re: BitDNS と Bitcoin の汎用化",
       "slug": "forum/bitcointalk/topic-1790/2010-12-10-re-bitdns-and-generalizing-bitcoin"
     },
     {
@@ -5217,70 +5202,70 @@
       "date": "2010-12-10T19:55:12.000Z",
       "channel": "bitcointalk",
       "title": "Re: BitDNS and Generalizing Bitcoin",
-      "titleJa": "Re: BitDNSとBitcoinの汎用化",
+      "titleJa": "Re: BitDNS と Bitcoin の汎用化",
       "slug": "forum/bitcointalk/topic-1790/2010-12-10-sni537-re-bitdns-and-generalizing-bitcoin"
     },
     {
       "date": "2010-12-10T20:19:39.000Z",
       "channel": "bitcointalk",
       "title": "Re: BitDNS and Generalizing Bitcoin",
-      "titleJa": "Re: BitDNSとBitcoinの汎用化",
+      "titleJa": "Re: BitDNS と Bitcoin の汎用化",
       "slug": "forum/bitcointalk/topic-1790/2010-12-10-sni538-re-bitdns-and-generalizing-bitcoin"
     },
     {
       "date": "2010-12-11T23:39:00.000Z",
       "channel": "bitcointalk",
       "title": "Re: PC World Article on Bitcoin",
-      "titleJa": "Re: dfg",
+      "titleJa": "Re: PC World のビットコイン記事",
       "slug": "forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest"
     },
     {
       "date": "2010-12-12T18:22:00.000Z",
       "channel": "bitcointalk",
       "title": "Re: Added some DoS limits, removed safe mode",
-      "titleJa": "Re: DoS制限の追加、セーフモードの削除",
+      "titleJa": "Re: DoS 制限の追加、セーフモードの削除",
       "slug": "forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post"
     },
     {
       "date": "2010-12-13T16:11:53.000Z",
       "channel": "private-email",
       "title": "[bitcoin-list] Bitcoin 0.3.19 is released",
-      "titleJa": "[bitcoin-list] Bitcoin 0.3.19リリース",
+      "titleJa": "[bitcoin-list] Bitcoin 0.3.19 リリース",
       "slug": "correspondence/martti-malmi/2010-12-13-bitcoin-0319-is-released-249"
     },
     {
       "date": "2010-12-13T16:12:09.000Z",
       "channel": "bitcoin-list-ml",
       "title": "\\\"[bitcoin-list] Bitcoin 0.3.19 is released\\\" — Satoshi announces the v0.3.19 release (December 2010)",
-      "titleJa": "「[bitcoin-list] Bitcoin 0.3.19 is released」— サトシがv0.3.19リリースを告知（2010-12）",
+      "titleJa": "「[bitcoin-list] Bitcoin 0.3.19 is released」— サトシが v0.3.19 リリースを告知（2010-12）",
       "slug": "emails/bitcoin-list/2010-12-13-bitcoin-0-3-19-is-released"
     },
     {
       "date": "2010-12-15T00:00:00.000Z",
-      "channel": "sourceforge",
+      "channel": "other",
       "title": "Bitcoin v0.3.19 released on SourceForge",
-      "titleJa": "ビットコインv0.3.19がSourceForgeでリリース",
+      "titleJa": "ビットコイン v0.3.19 が SourceForge でリリース",
       "slug": "aftermath/2010-12-15-bitcoin-v0.3.19-released"
     },
     {
       "date": "2010-12-20T18:10:06.000Z",
       "channel": "private-email",
       "title": "Re: Bitcoin.org backups",
-      "titleJa": "Re: Bitcoin.orgのバックアップ",
+      "titleJa": "Re: Bitcoin.org のバックアップ",
       "slug": "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-251"
     },
     {
       "date": "2010-12-29T22:42:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Mike Hearn on SPV client-mode implementation (December 29, 2010)",
-      "titleJa": "サトシからマイク・ハーンへ：SPVクライアントモードの実装（2010-12-29）",
+      "titleJa": "サトシからマイク・ハーンへ：SPV クライアントモードの実装（2010-12-29）",
       "slug": "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
     },
     {
       "date": "2011-01-06T18:31:26.000Z",
       "channel": "private-email",
       "title": "Re: Writing about BitCoin",
-      "titleJa": "Re: BitCoinについての記事執筆",
+      "titleJa": "Re: BitCoin についての記事執筆",
       "slug": "correspondence/martti-malmi/2011-01-06-writing-about-bitcoin-254"
     },
     {
@@ -5294,35 +5279,35 @@
       "date": "2011-01-10T16:34:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Mike Hearn on client implementations and the 21 million coin limit (January 10, 2011)",
-      "titleJa": "サトシからマイク・ハーンへ：クライアント実装と2100万枚のコイン上限（2011-01-10）",
+      "titleJa": "サトシからマイク・ハーンへ：クライアント実装と 2100 万枚のコイン上限（2011-01-10）",
       "slug": "correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-client-future"
     },
     {
       "date": "2011-01-10T20:47:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Mike Hearn on ECDSA curve choice and development history (January 10, 2011)",
-      "titleJa": "サトシからマイク・ハーンへ：ECDSA曲線の選択と開発の歴史（2011-01-10）",
+      "titleJa": "サトシからマイク・ハーンへ：ECDSA 曲線の選択と開発の歴史（2011-01-10）",
       "slug": "correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1"
     },
     {
       "date": "2011-01-25T18:34:03.000Z",
       "channel": "private-email",
       "title": "Re: Fwd: Bitcoin question",
-      "titleJa": "Re: 転送: Bitcoinに関する質問",
+      "titleJa": "Re: 転送: Bitcoin に関する質問",
       "slug": "correspondence/martti-malmi/2011-01-25-bitcoin-question-256"
     },
     {
       "date": "2011-02-22T19:49:19.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Final email from Satoshi to Malmi",
       "titleJa": "サトシからマルミへの最後のメール",
-      "slug": "correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi"
+      "slug": "aftermath/2011-02-22-satoshi-final-email-to-malmi"
     },
     {
       "date": "2011-03-09T17:15:00.000Z",
       "channel": "private-email",
       "title": "Satoshi to Mike Hearn on Bitcoin contracts, sequence numbers, and high-frequency trading (March 9, 2011)",
-      "titleJa": "サトシからマイク・ハーンへ：Bitcoinコントラクト・シーケンス番号・高頻度取引（2011-03-09）",
+      "titleJa": "サトシからマイク・ハーンへ：ビットコインコントラクト・シーケンス番号・高頻度取引（2011-03-09）",
       "slug": "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
     },
     {
@@ -5355,16 +5340,23 @@
     },
     {
       "date": "2011-04-26T10:29:00.000Z",
-      "channel": "private-email",
+      "channel": "other",
       "title": "Satoshi hands over the Bitcoin alert key to Gavin Andresen (April 26, 2011)",
       "titleJa": "サトシがビットコインのアラートキーをギャビン・アンドレセンに引き渡し（2011-04-26）",
-      "slug": "correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key"
+      "slug": "aftermath/2011-04-26-satoshi-to-andresen-alert-key"
+    },
+    {
+      "date": "2011-04-26T10:29:00.000Z",
+      "channel": "private-email",
+      "title": "Satoshi to Gavin Andresen: alert key (April 26, 2011)",
+      "titleJa": "サトシからギャビン・アンドレセンへ：アラートキー (2011-04-26)",
+      "slug": "correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email"
     },
     {
       "date": "2014-03-07T01:17:00.000Z",
       "channel": "p2pfoundation",
       "title": "Bitcoin open source implementation of P2P currency",
-      "titleJa": "ビットコイン：P2P通貨のオープンソース実装",
+      "titleJa": "ビットコイン：P2P 通貨のオープンソース実装",
       "slug": "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
     }
   ]

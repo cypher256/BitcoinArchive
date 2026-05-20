@@ -34,7 +34,7 @@ relatedEntries:
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "aftermath/2008-08-20-adam-back-biography"
-  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "aftermath/2008-08-20-satoshi-to-adam-back"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -44,11 +44,11 @@ relatedEntries:
 
 **On the August 2008 email exchange:**
 
-In August 2008, Satoshi [contacted Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) to verify the citation for his Hashcash paper. [Back confirmed the citation](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.
+In August 2008, Satoshi [contacted Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) to verify the citation for his Hashcash paper. [Back confirmed the citation](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.
 
 > "I suggested looking into b-money, but it seemed he wasn't aware of it at that point."
 
-[Satoshi replied](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/):
+[Satoshi replied](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/):
 
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 

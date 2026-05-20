@@ -41,9 +41,9 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2009-01-09-satoshi-code-analysis
   - aftermath/2010-11-19-wladimir-van-der-laan-biography
-  - correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
-  - correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit
+  - aftermath/2010-06-11-andresen-bitcoin-faucet
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - aftermath/2010-08-15-value-overflow-incident
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
@@ -54,20 +54,20 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
-In December 2010, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) handed Gavin Andresen the keys to Bitcoin — source-repository access on December 12, the [network alert key on April 26, 2011](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/). In his [same-day reply](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/) to that alert-key email, Andresen disclosed that he had been invited to present Bitcoin at CIA headquarters in Langley. No reply from Satoshi is known after that message. Andresen gave the talk on June 14, 2011.
+In December 2010, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) handed Gavin Andresen the keys to Bitcoin — source-repository access on December 12, the [network alert key on April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). In his [same-day reply](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) to that alert-key email, Andresen disclosed that he had been invited to present Bitcoin at CIA headquarters in Langley. No reply from Satoshi is known after that message. Andresen gave the talk on June 14, 2011.
 
-Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and founded Wasabi Software, a 3D graphics company. He encountered Bitcoin in 2010 and quickly became one of the most active contributors, creating the [Bitcoin Faucet](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/) — a website that gave away free bitcoins to help people learn the technology. He served as Bitcoin's lead maintainer from December 2010 to April 2014.
+Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and founded Wasabi Software, a 3D graphics company. He encountered Bitcoin in 2010 and quickly became one of the most active contributors, creating the [Bitcoin Faucet](/BitcoinArchive/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/) — a website that gave away free bitcoins to help people learn the technology. He served as Bitcoin's lead maintainer from December 2010 to April 2014.
 
 ```mermaid
 timeline
     2010 : Bitcoin Faucet launched - one of the earliest adoption tools (Jun)
-    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2010-06-11-andresen-bitcoin-faucet/
+    %% link: /BitcoinArchive/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/
          : Satoshi's first private withdrawal signal (Sep)
     %% link: /BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/
          : Handover - SVN access + public lead-maintainer announcement (Dec)
     %% link: /BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/
     2011 : Satoshi's last private email - CAlert key transfer (Apr)
-    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
          : CIA / In-Q-Tel conference, after Satoshi went silent (Jun)
     2012 : Bitcoin Foundation co-founded; Andresen as Chief Scientist (Sep)
     2014 : Steps down as lead maintainer, role passes to Wladimir van der Laan (Apr)
@@ -79,12 +79,12 @@ The handover from Satoshi to Andresen was not a single appointment but a gradual
 | Date | Event | Scope |
 |------|-------|-------|
 | 2010-09-01 | [Private notice to Andresen: "working on other things"](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | Earliest documented withdrawal signal |
-| 2010-12-03 | [Email to Malmi recommending Gavin for development and management](/BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) | Recommendation |
-| 2010-12-12 morning | [SVN access handover and endorsement email](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/) | Codebase + private leadership endorsement |
+| 2010-12-03 | [Email to Malmi recommending Gavin for development and management](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) | Recommendation |
+| 2010-12-12 morning | [SVN access handover and endorsement email](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) | Codebase + private leadership endorsement |
 | 2010-12-12 18:22 UTC | [Final BitcoinTalk forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | Last public communication |
 | 2010-12-19 | [Public announcement: "With Satoshi's blessing..."](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) | Public acceptance of role; same day Andresen creates the `bitcoin/bitcoin` GitHub repository |
 | 2011-04-23 | [Email to Mike Hearn: "It's in good hands with Gavin"](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | Departure statement endorsing Andresen (private email; published later) |
-| 2011-04-26 10:29 UTC | [Last known private email: CAlert key transfer](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | Network emergency-shutdown authority |
+| 2011-04-26 10:29 UTC | [Last known private email: CAlert key transfer](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | Network emergency-shutdown authority |
 
 What did *not* transfer with the role: the ~1.1 million BTC attributed to Patoshi mining patterns (no on-chain movement since 2010), the Satoshi identity itself, and the genesis-block coinbase address private keys.
 
@@ -102,7 +102,7 @@ Andresen led Bitcoin development openly from that point, while Satoshi continued
 <!-- speaker: Satoshi Nakamoto -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
-Three days later, the [last known private email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) accompanied the formal CAlert key transfer:
+Three days later, the [last known private email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) accompanied the formal CAlert key transfer:
 
 <!-- speaker: Satoshi Nakamoto -->
 > "I wish you wouldn't keep talking about me as a mysterious shadowy figure."

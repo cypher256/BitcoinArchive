@@ -37,7 +37,7 @@ relatedEntries:
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
-  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "aftermath/2008-08-20-satoshi-to-adam-back"
   - "aftermath/2024-02-21-adam-back-retrospective-testimony"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -64,9 +64,9 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2002 : Hashcash 論文の改訂版 - コストトークンを 「mint」 として位置付け (8月)
     2008 : サトシからの 最初の既知メール (8月20日) - 最初期のビットコイン接触
-    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/
          : サトシをウェイ・ダイの b-money に紹介、 サトシがウェイ・ダイに メール (8月22日)
-    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/
     2014 : Blockstream を共同設立、 CEO 就任
     2024 : COPA v ライト裁判で 宣誓証言 (2月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/
@@ -79,7 +79,7 @@ timeline
 
 ### サトシからの最初の連絡
 
-2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)（8 月 20 日、引用形式の問い合わせ）、[バックの返信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)（8 月 21 日、Hashcash 引用情報と b-money 紹介）、サトシの同日返信での 18 か月の開発期間中に b-money を知らなかったとの自認（冒頭引用）、翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)（ホワイトペーパー引用のため b-money 公開日を尋ねるもの）。この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
+2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)（8 月 20 日、引用形式の問い合わせ）、[バックの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)（8 月 21 日、Hashcash 引用情報と b-money 紹介）、サトシの同日返信での 18 か月の開発期間中に b-money を知らなかったとの自認（冒頭引用）、翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)（ホワイトペーパー引用のため b-money 公開日を尋ねるもの）。この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
 
 ### 証言とメールの公開
 バックのサトシとのメールのやり取りは Bitcoin Magazine により公開され、ビットコインの最初期の概念段階に関する重要な一次資料のドキュメントを提供した。2024年2月、バックはロンドンでの [COPA 対ライト裁判で証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、サトシとのやり取りとビットコイン誕生のタイムラインについて直接の証言を提供した。

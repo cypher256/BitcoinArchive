@@ -27,7 +27,7 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651
   - aftermath/2010-06-11-gavin-andresen-biography
-  - correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen
+  - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - aftermath/2011-09-13-bitcoin-github-migration-committers
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
@@ -36,7 +36,7 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
-On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted to the BitcoinTalk forum the public acceptance of the leadership role:
+On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted to the BitcoinTalk forum the public acceptance of the leadership role:
 
 > With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for bitcoin.
 >
@@ -48,12 +48,12 @@ The same day, Andresen created the [`bitcoin/bitcoin` GitHub repository](/Bitcoi
 
 This announcement closes the public-facing arc of the leadership transition. The sequence:
 
-- **December 3, 2010**: Satoshi privately recommended Andresen as successor in [a message to Martti Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) — "It should be Gavin. I trust him, he's responsible, professional…"
+- **December 3, 2010**: Satoshi privately recommended Andresen as successor in [a message to Martti Malmi](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) — "It should be Gavin. I trust him, he's responsible, professional…"
 - **December 12, 2010**: SVN access handover; Satoshi's [last public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) closing with "I plan to pass the baton."
 - **December 15, 2010**: Last source-code commit (v0.3.19).
 - **December 19, 2010**: Andresen's public acceptance (this entry); GitHub repository created.
 
-Satoshi continued private correspondence with [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) into [late December](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/), but his public BitcoinTalk activity had ended on December 12. The April 26, 2011 [final email to Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) (alert-key handover) closed the private side four months later.
+Satoshi continued private correspondence with [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) into [late December](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/), but his public BitcoinTalk activity had ended on December 12. The April 26, 2011 [final email to Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) (alert-key handover) closed the private side four months later.
 
 **How the Lead Maintainer status was established (editorial reading):**
 
@@ -61,7 +61,7 @@ No formal governance process — maintainer election, community vote, organized 
 
 What the public record does contain:
 
-- Satoshi's [December 3 private recommendation to Martti Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) and the [December 12 SVN access transfer](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/).
+- Satoshi's [December 3 private recommendation to Martti Malmi](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) and the [December 12 SVN access transfer](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/).
 - This December 19 announcement, in which Andresen named himself the new active project manager.
 - Continued participation by other developers and users, and the absence (in this archive's recoverable record) of recorded objections or counter-claims.
 

@@ -34,7 +34,7 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/2008-08-20-adam-back-biography"
   - "aftermath/2008-08-22-wei-dai-biography"
-  - "correspondence/adam-back/2008-08-21-adam-back-to-satoshi"
+  - "aftermath/2008-08-21-adam-back-to-satoshi"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"

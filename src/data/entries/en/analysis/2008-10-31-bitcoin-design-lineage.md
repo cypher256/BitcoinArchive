@@ -39,9 +39,9 @@ relatedEntries:
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
@@ -100,13 +100,13 @@ The novel components are not in the whitepaper's reference list because no one h
 
 ### 3.1 Hashcash: used during development
 
-Satoshi's [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) asked specifically about the correct citation format for Hashcash. The email body describes Bitcoin's mechanism in detail and references Hashcash as an existing primitive Satoshi was reusing in the code. This places Hashcash usage *during* development, not *after* it.
+Satoshi's [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) asked specifically about the correct citation format for Hashcash. The email body describes Bitcoin's mechanism in detail and references Hashcash as an existing primitive Satoshi was reusing in the code. This places Hashcash usage *during* development, not *after* it.
 
 The "cash" in *Hashcash* is a computational-postage metaphor (Back's 1997 anti-spam denial-of-service counter-measure), not a currency. The system contains only the proof-of-work primitive — no ledger, no transfers, no consensus, no monetary supply. Bitcoin reuses the primitive and builds the rest separately; see the [Adam Back hypothesis entry §2.2](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the implications for the Hashcash-author-equals-Bitcoin-author argument.
 
 ### 3.2 b-money: cited post-hoc
 
-Satoshi's [August 21, 2008 reply to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) opens with "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." This is direct primary-source evidence that b-money was added to the whitepaper's reference list *after* the code was substantially complete (per the November 10, 2008 letter to Hal Finney quoted in §1, the code preceded the paper). The next day, Satoshi [emailed Wei Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) about the proposal.
+Satoshi's [August 21, 2008 reply to Back](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) opens with "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point." This is direct primary-source evidence that b-money was added to the whitepaper's reference list *after* the code was substantially complete (per the November 10, 2008 letter to Hal Finney quoted in §1, the code preceded the paper). The next day, Satoshi [emailed Wei Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) about the proposal.
 
 The citation that appears in the whitepaper is reference [1] — Wei Dai, "b-money," 1998. The numerical position is editorial; the content was added late. [Wei Dai's 2014 retrospective on the AALWA thread](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) is consistent with this: Wei Dai indicates Satoshi was "not previously active" in cypherpunk communities — a framing that fits a designer who had to discover b-money via referral.
 

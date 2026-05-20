@@ -57,8 +57,8 @@ relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - analysis/2008-08-20-satoshi-activity-timeline
@@ -140,7 +140,7 @@ Both statements place the start of design work around mid-2007.
 
 ### 2.2 What was known during that period
 
-The earliest known Satoshi communication is dated August 20, 2008 — the email to Adam Back asking for the correct Hashcash citation ([archived](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)). At that point, the design was substantially complete: Satoshi was preparing to release "a paper that expands on your ideas into a complete working system" and attached a pre-release draft (`ecash.pdf`).
+The earliest known Satoshi communication is dated August 20, 2008 — the email to Adam Back asking for the correct Hashcash citation ([archived](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/)). At that point, the design was substantially complete: Satoshi was preparing to release "a paper that expands on your ideas into a complete working system" and attached a pre-release draft (`ecash.pdf`).
 
 Adam Back's reply on August 21, 2008 introduced Satoshi to b-money for the first time. Satoshi's response is recorded verbatim in the COPA v. Wright trial evidence:
 

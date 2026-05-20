@@ -29,7 +29,7 @@ relatedEntries:
   - aftermath/2010-02-10-michael-marquardt-biography
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
-  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-02-22-satoshi-final-email-to-malmi
 translationStatus: complete
 ---
 

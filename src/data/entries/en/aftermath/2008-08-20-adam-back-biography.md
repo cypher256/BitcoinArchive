@@ -37,7 +37,7 @@ relatedEntries:
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
-  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "aftermath/2008-08-20-satoshi-to-adam-back"
   - "aftermath/2024-02-21-adam-back-retrospective-testimony"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -63,9 +63,9 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2002 : Hashcash paper revised - 'mint' framing for cost tokens (Aug)
     2008 : First known email from Satoshi (Aug 20) - earliest Bitcoin contact
-    %% link: /BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
+    %% link: /BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/
          : Refers Satoshi to Wei Dai's b-money; Satoshi emails Wei Dai (Aug 22)
-    %% link: /BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/
+    %% link: /BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/
     2014 : Co-founds Blockstream, becomes CEO
     2024 : COPA v Wright trial - testifies under oath (Feb)
     %% link: /BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/
@@ -78,7 +78,7 @@ In March 1997, Back proposed Hashcash, a proof-of-work system originally designe
 
 ### First Contact from Satoshi
 
-The August 2008 exchange runs across three days: [Satoshi's email to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) (Aug 20, citation request), [Back's reply](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) with the Hashcash citation and the b-money referral (Aug 21), Satoshi's same-day acknowledgment of not having seen b-money during the 18-month design period (above), and Satoshi's [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) the next day asking for b-money's publication date for the whitepaper citation. The chain places Bitcoin's design substantially complete before Back's referral and serves as a primary-source anchor for [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+The August 2008 exchange runs across three days: [Satoshi's email to Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (Aug 20, citation request), [Back's reply](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) with the Hashcash citation and the b-money referral (Aug 21), Satoshi's same-day acknowledgment of not having seen b-money during the 18-month design period (above), and Satoshi's [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) the next day asking for b-money's publication date for the whitepaper citation. The chain places Bitcoin's design substantially complete before Back's referral and serves as a primary-source anchor for [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 ### Testimony and Email Publication
 Back's email correspondence with Satoshi was published by Bitcoin Magazine, providing important primary source documentation of Bitcoin's earliest conceptual phase. In February 2024, Back [testified in the COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) in London, providing first-hand testimony about his interactions with Satoshi and the timeline of Bitcoin's creation.

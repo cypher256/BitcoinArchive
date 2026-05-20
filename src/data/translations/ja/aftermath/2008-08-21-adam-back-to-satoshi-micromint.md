@@ -34,4 +34,4 @@ translationStatus: complete
 > すまない、君の論文はまだ読めていない、
 
 <!-- speaker: narrator -->
-最初にサトシが連絡を取った人物の一人であったにもかかわらず、バックはこの時点で添付草稿に踏み込まなかった。メールチェーンはここで約 5 か月間途絶え、ビットコイン v0.1 公開の翌日である [2009年1月10日](/BitcoinArchive/ja/entries/correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch/)にサトシが再び書き送ることになる。バックが積極的にビットコインに関わるようになったのは 2013 年以降で、その遅延の経緯は[アダム・バックの伝記](/BitcoinArchive/ja/participants/adam-back/)に詳しい。
+最初にサトシが連絡を取った人物の一人であったにもかかわらず、バックはこの時点で添付草稿に踏み込まなかった。メールチェーンはここで約 5 か月間途絶え、ビットコイン v0.1 公開の翌日である [2009年1月10日](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-adam-back-launch/)にサトシが再び書き送ることになる。バックが積極的にビットコインに関わるようになったのは 2013 年以降で、その遅延の経緯は[アダム・バックの伝記](/BitcoinArchive/ja/participants/adam-back/)に詳しい。

@@ -25,8 +25,8 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography
-  - correspondence/martti-malmi/2010-12-03-handover-to-gavin
-  - correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen
+  - aftermath/2010-12-03-handover-to-gavin
+  - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
 translationStatus: complete
@@ -42,10 +42,10 @@ translationStatus: complete
 
 9 月のシグナルは、より目に見える 12 月の移行イベント群に 3 か月先行していた:
 
-- **2010 年 12 月 3 日**: サトシは[マルティ・マルミ宛のメール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦 — 「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」
-- **2010 年 12 月 12 日**: [SVN アクセスの正式引き継ぎ](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)と、サトシの [BitcoinTalk 最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)（「バトンを渡す予定だ」で締めくくる）
+- **2010 年 12 月 3 日**: サトシは[マルティ・マルミ宛のメール](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦 — 「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」
+- **2010 年 12 月 12 日**: [SVN アクセスの正式引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)と、サトシの [BitcoinTalk 最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)（「バトンを渡す予定だ」で締めくくる）
 - **2010 年 12 月 19 日**: [ギャビンによるプロジェクト管理引き継ぎの公的承諾](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)
-- **2011 年 4 月 26 日**: [ギャビンへの最終メール](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）
+- **2011 年 4 月 26 日**: [ギャビンへの最終メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）
 
 公開記録上、サトシの撤退の起点を 12 月ではなく **2010 年 9 月** に置くと、12 月の各イベントの読み方が実質的に変わる。12 月 12 日の「バトンを渡す」発言は突発的な告知ではなく、3 か月にわたって非公開で進行していた移行の対外的な締めくくりに当たる。
 

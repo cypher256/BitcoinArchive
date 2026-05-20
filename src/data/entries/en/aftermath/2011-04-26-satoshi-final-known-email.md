@@ -29,8 +29,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-08-20-satoshi-self-statements
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
-  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
 ---
@@ -47,7 +47,7 @@ He also expressed hope that Hearn's BitcoinJ project would continue to be develo
 
 **April 26, 2011 — to Gavin Andresen:**
 
-Three days later, Satoshi sent what is believed to be his absolute [final email, addressed to Gavin Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) with the subject line "alert key." He wrote:
+Three days later, Satoshi sent what is believed to be his absolute [final email, addressed to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) with the subject line "alert key." He wrote:
 
 > "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle. Maybe instead make it about the open source project and give more credit to your dev contributors; it helps motivate them."
 
@@ -57,4 +57,4 @@ He then announced his departure:
 
 Finally, he transferred the network alert key — a critical tool for broadcasting emergency messages to all Bitcoin clients — completing the last piece of the project handover.
 
-[Andresen replied](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-andresen-to-satoshi-cia-visit/), accepting the alert key and disclosing that he had been invited by In-Q-Tel to present Bitcoin at a CIA conference. Satoshi never replied. No verified communication from Satoshi has been recorded since.
+[Andresen replied](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/), accepting the alert key and disclosing that he had been invited by In-Q-Tel to present Bitcoin at a CIA conference. Satoshi never replied. No verified communication from Satoshi has been recorded since.

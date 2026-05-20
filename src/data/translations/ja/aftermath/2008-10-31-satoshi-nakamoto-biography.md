@@ -50,7 +50,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - aftermath/2009-01-03-genesis-block
   - aftermath/2009-01-09-bitcoin-v01-released
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-20-satoshi-to-adam-back
 translationStatus: complete
 ---
 
@@ -61,7 +61,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2008 : アダム・バックへの 最初の既知メール - 電子キャッシュ システムの相談 (8月)
-    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/
          : ビットコイン ホワイトペーパーを 暗号学メーリングリストに 発表 (10月)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : ジェネシスブロックの パラメーター定義 (1月3日)
@@ -79,12 +79,12 @@ timeline
     2011 : 「他のことに移った」 メールを マイク・ハーンへ (4月23日)
     %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
          : 最後の既知メール - アンドレセンへの 警告キー譲渡 (4月26日)
-    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
 ```
 
 ### ホワイトペーパー
 
-公開記録上最も早い通信は、Hashcash の引用形式について尋ねた [2008年8月20日のアダム・バック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)。2008年10月31日、metzdowd.com の暗号学メーリングリストに[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)が投稿された —— 9 ページにわたり、デジタル署名の連鎖をプルーフ・オブ・ワークで保護することで、信頼される第三者なしに二重支払いに抗える仕組みを記述している。
+公開記録上最も早い通信は、Hashcash の引用形式について尋ねた [2008年8月20日のアダム・バック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)。2008年10月31日、metzdowd.com の暗号学メーリングリストに[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)が投稿された —— 9 ページにわたり、デジタル署名の連鎖をプルーフ・オブ・ワークで保護することで、信頼される第三者なしに二重支払いに抗える仕組みを記述している。
 
 ### ローンチ
 
@@ -114,7 +114,7 @@ timeline
 <!-- speaker: Satoshi Nakamoto -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
-その 3 日後、2011年4月26日、[最後の既知のメール —— アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)：
+その 3 日後、2011年4月26日、[最後の既知のメール —— アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)：
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「私を謎の人物として語らないでほしい。」

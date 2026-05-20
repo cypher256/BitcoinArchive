@@ -146,8 +146,23 @@ interface ThreadEntry {
  * - emails/LIST/THREAD/file.md           -> "emails/LIST/THREAD"
  * - emails/LIST/file.md                  -> no thread (file at list root)
  * - aftermath/file.md, bip/file.md, etc. -> no thread
+ *
+ * Type filter: even if directory layout would yield a thread, an entry
+ * with an editorial type (article / analysis / biography) is excluded
+ * from threads. Threads display the primary-source conversation only;
+ * editorial commentary is reached via relatedEntries / quotes
+ * sourceEntryId, not by appearing in the thread view alongside the
+ * primary sources it discusses.
  */
-export function resolveThreadId(entry: { id: string }): string | undefined {
+const PRIMARY_SOURCE_TYPES = new Set([
+  'correspondence', 'mailing-list', 'forum-post',
+  'bip', 'whitepaper', 'court-document',
+]);
+
+export function resolveThreadId(entry: { id: string; data?: { type?: string } }): string | undefined {
+  const type = entry.data?.type;
+  if (type && !PRIMARY_SOURCE_TYPES.has(type)) return undefined;
+
   const lastSlash = entry.id.lastIndexOf('/');
   if (lastSlash < 0) return undefined;
 

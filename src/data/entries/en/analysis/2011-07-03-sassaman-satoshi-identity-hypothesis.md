@@ -40,7 +40,7 @@ relatedEntries:
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
@@ -52,11 +52,11 @@ inlineLinkKeywords:
   - "Sassaman = Satoshi"
 ---
 
-On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). This entry lays out the [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) = Satoshi hypothesis, the supporting arguments as their advocates make them, and the counter-evidence at the same level of detail.
+On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). This entry lays out the [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) = Satoshi hypothesis, the supporting arguments as their advocates make them, and the counter-evidence at the same level of detail.
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Sassaman was the person behind the Satoshi Nakamoto pseudonym, withdrew from the project shortly before his death, and that the [final email to Gavin Andresen on April 26, 2011](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) — three months before Sassaman's suicide — was the closing of his Bitcoin life rather than a step away from one of many concurrent projects.
+The hypothesis is that Sassaman was the person behind the Satoshi Nakamoto pseudonym, withdrew from the project shortly before his death, and that the [final email to Gavin Andresen on April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) — three months before Sassaman's suicide — was the closing of his Bitcoin life rather than a step away from one of many concurrent projects.
 
 The earliest public discussion identified in this archive's research is a [BitcoinTalk thread from March 15, 2013](https://bitcointalk.org/) (per Wikipedia). The most prominent later articulation is [Evan Hatch's February 22, 2021 Medium article *"Len Sassaman and Satoshi: a Cypherpunk history"*](/BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/), which Wikipedia cites and which received coverage in cryptocurrency-focused media.
 
@@ -70,7 +70,7 @@ This is the strongest argument the hypothesis can make. The chronology:
 |---|---|
 | 2010-12-12 | Satoshi's [last public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) |
 | 2010-12-19 | [Andresen publicly assumes project management](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) |
-| 2011-04-26 | Satoshi's [last known private email](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) — to Andresen, transferring the network alert key, "I've moved on to other things and will probably be unavailable" |
+| 2011-04-26 | Satoshi's [last known private email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) — to Andresen, transferring the network alert key, "I've moved on to other things and will probably be unavailable" |
 | 2011-07-03 | Sassaman dies (suicide) |
 
 Three months elapse between Satoshi's last documented communication and Sassaman's death. The hypothesis reads this as the conclusion of a withdrawal that began in mid-2010, with the April 26 email as a final administrative handover before the actual end. The objection that Bitcoin Institute would raise to itself: three months is a short interval but not extraordinarily short, and people commonly disengage from major projects months before life-altering events for reasons that have nothing to do with the projects.
@@ -93,7 +93,7 @@ The objection: Mixmaster is a remailer system (anonymity routing), not a digital
 
 The strongest counter-evidence is the absence of any direct documentary link between Sassaman and Satoshi:
 
-- No private correspondence between Sassaman and Satoshi has surfaced (in the [Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/), [Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), [Hal Finney](/BitcoinArchive/participants/hal-finney/), [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), or [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) corpora).
+- No private correspondence between Sassaman and Satoshi has surfaced (in the [Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/), [Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), [Hal Finney](/BitcoinArchive/participants/hal-finney/), [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), or [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) corpora).
 - No leaked drafts, code commits, or work-in-progress artifacts attributable to both Sassaman and Satoshi.
 - No record of Sassaman corresponding with the cypherpunks who *did* receive Satoshi's earliest emails, in a way that would be expected if Sassaman had been preparing to release Bitcoin under a pseudonym.
 

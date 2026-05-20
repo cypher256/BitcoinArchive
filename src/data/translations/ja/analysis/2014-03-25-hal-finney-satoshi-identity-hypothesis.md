@@ -60,7 +60,7 @@ translationStatus: complete
 
 ## 1. 仮説の主張
 
-仮説は、フィニーがサトシ・ナカモト仮名の主体であり、彼が記録した「サトシ」 との公的な関わり — [2009 年 1 月のメールのやり取り](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/)、[最初のビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)（2009 年 1 月 12 日）、2013 年の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) 回顧 — はすべて仮名を維持するための演出だったとする。この読みのもとでは、フィニーは開発期（2007〜2008 年）から少なくとも 2009 年 8 月の ALS 診断まで、可能性としては 2011 年初頭の退職までサトシとして活動していた。さらに強い変種は 2011 年以降のサトシ通信（[2011 年 4 月のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)と [2011 年 4 月のギャビン・アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)）を扱う必要があり、共著者または事前ドラフトを必要とする。
+仮説は、フィニーがサトシ・ナカモト仮名の主体であり、彼が記録した「サトシ」 との公的な関わり — [2009 年 1 月のメールのやり取り](/BitcoinArchive/ja/entries/aftermath/2009-01-08-satoshi-to-finney-release/)、[最初のビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)（2009 年 1 月 12 日）、2013 年の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) 回顧 — はすべて仮名を維持するための演出だったとする。この読みのもとでは、フィニーは開発期（2007〜2008 年）から少なくとも 2009 年 8 月の ALS 診断まで、可能性としては 2011 年初頭の退職までサトシとして活動していた。さらに強い変種は 2011 年以降のサトシ通信（[2011 年 4 月のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)と [2011 年 4 月のギャビン・アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)）を扱う必要があり、共著者または事前ドラフトを必要とする。
 
 仮説に対するアリバイ性のイベントは 2 つ: 2009 年 4 月 18 日のレース当日時間帯と 2010 年 8 月 14-15 日の特異点サミット時間帯。サトシの記録された活動との位置関係:
 
@@ -72,7 +72,7 @@ timeline
     2008 : ホワイトペーパー発表 - サトシは ハルに何も尋ねず (10月)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : ハルが 暗号学リストで 第三者として 初の応答 (11月)
-    %% link: /BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/
     2009 : Bitcoin v0.1 - ハルが 最初の サトシ以外のノードと される (1月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : ハルがサンタバーバラで 10 マイルレース - サトシは ハーン宛メール送信 + 取引ブロードキャスト (4月18日) [アリバイ 1]
@@ -83,7 +83,7 @@ timeline
          : サトシ 最後の公的 BitcoinTalk 投稿 (12月12日)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
     2011 : サトシ 最後のメール - アンドレセンへ 警告キー譲渡 (4月26日)
-    %% link: /BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
          : ハル ALS により PGP社退職
     2013 : ハル「ビットコインと私」 - サトシを 第三者として記述 (3月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/
@@ -134,7 +134,7 @@ timeline
 
 ### 2.4 最初の受領者かつ最早期協力者の地位
 
-フィニーはサトシ以外で最初にビットコインを稼働させたとされる人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。論点: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。
+フィニーはサトシ以外で最初にビットコインを稼働させたとされる人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。論点: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。
 
 反論: 信頼できる技術協力者を立ち上げ時に表に置きながら匿名でシステムを公開することは、信頼できる協力者がいる匿名の著者がまさに選ぶパターンである。同時に、暗号学メーリングリストで高品質なシステムを高品質な最初のユーザーが識別したパターンでもある。フィニーが記録した自己の説明は後者である — [「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) で「私はサトシ以外で最初にビットコインを動かした人物だったと思う」 と書く。
 
@@ -219,7 +219,7 @@ timeline
 
 レース当日アリバイ（§3.1）、2013 年の第三者的記述（§3.2）、Patoshi 規模の不整合（§3.3）、特異点サミット／ALS 進行アリバイ（§3.5）は、構造的に異なる反証ラインを構成する: それぞれが当該時点で当時記録された記録であり、事後的な再構成ではない。フィニーは反証が主に告白の不在に依拠する候補（サボ、アダム・バック）とは異なる証拠的位置にある。フィニーには、サトシの役割と整合させるのが困難な、能動的に記録された活動と自己記述がある。
 
-[サトシの 2008 年 8 月 21 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 — はフィニーがサトシと最初に記録された接触をする数か月前である。フィニーがサトシだったなら、パターンはこうなる: フィニーが「サトシ」 としてバックにメールし、b-money への紹介を受け、「サトシ」 としてウェイ・ダイにメールし、2 か月待ってから「ハル・フィニー」 として暗号学メーリングリストでビットコイン発表に支持的に応答する自分自身に向けてメールする。能動的かつ継続的な共同演出なしには成立しない構造。
+[サトシの 2008 年 8 月 21 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) — 「b-money のページは知らなかった」 — はフィニーがサトシと最初に記録された接触をする数か月前である。フィニーがサトシだったなら、パターンはこうなる: フィニーが「サトシ」 としてバックにメールし、b-money への紹介を受け、「サトシ」 としてウェイ・ダイにメールし、2 か月待ってから「ハル・フィニー」 として暗号学メーリングリストでビットコイン発表に支持的に応答する自分自身に向けてメールする。能動的かつ継続的な共同演出なしには成立しない構造。
 
 他の名指し候補仮説との比較については、[サトシ正体仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)および個別エントリーの[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)、[サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 

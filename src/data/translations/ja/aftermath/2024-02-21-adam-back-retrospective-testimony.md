@@ -34,7 +34,7 @@ relatedEntries:
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "aftermath/2008-08-20-adam-back-biography"
-  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back"
+  - "aftermath/2008-08-20-satoshi-to-adam-back"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -45,11 +45,11 @@ translationStatus: complete
 
 **2008年8月のメール交換について：**
 
-2008年8月、サトシは[バックに Hashcash 論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を参照するよう提案した。
+2008年8月、サトシは[バックに Hashcash 論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を参照するよう提案した。
 
 > 「b-moneyを調べるよう提案した。その時点では知らなかったようだ」
 
-[サトシは返信した](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)：
+[サトシは返信した](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)：
 
 > 「ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」
 

@@ -57,8 +57,8 @@ relatedEntries:
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - analysis/2008-08-20-satoshi-activity-timeline
@@ -141,7 +141,7 @@ translationStatus: complete
 
 ### 2.2 開発期間中に知っていたもの
 
-公開記録上で確認できる最古のサトシ通信は 2008 年 8 月 20 日、アダム・バックに Hashcash の正しい引用を求めるメールである（[アーカイブ済み](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)）。この時点で設計はほぼ完了していた: サトシは「あなたのアイデアを完全に動作するシステムへ拡張する論文をリリースする準備中」と書き、プレリリース版草稿（`ecash.pdf`）を添付している。
+公開記録上で確認できる最古のサトシ通信は 2008 年 8 月 20 日、アダム・バックに Hashcash の正しい引用を求めるメールである（[アーカイブ済み](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)）。この時点で設計はほぼ完了していた: サトシは「あなたのアイデアを完全に動作するシステムへ拡張する論文をリリースする準備中」と書き、プレリリース版草稿（`ecash.pdf`）を添付している。
 
 アダム・バックの 2008 年 8 月 21 日の返信が、サトシに b-money を初めて教えた。サトシの返信は COPA 対ライト裁判の証拠にそのまま記録されている:
 

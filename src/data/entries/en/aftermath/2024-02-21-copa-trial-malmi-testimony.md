@@ -44,7 +44,7 @@ Malmi stated in court:
 
 > "I communicated with Satoshi, who I believe to be a different person to Dr. Wright."
 
-The same day, [Adam Back also provided testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), submitting the [complete email chain between himself and Satoshi](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) from August 2008.
+The same day, [Adam Back also provided testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), submitting the [complete email chain between himself and Satoshi](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) from August 2008.
 
 Malmi subsequently published the full email archive on GitHub, explaining that he had withheld these conversations for years due to sensitive information (including links and passwords), but decided to make them public given the trial's significance.
 

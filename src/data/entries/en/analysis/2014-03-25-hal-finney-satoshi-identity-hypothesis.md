@@ -59,7 +59,7 @@ Hal Finney lived a few blocks from a Japanese-American engineer named Dorian Sat
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Finney is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [January 2009 email exchange](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-08-satoshi-to-finney-release/), the [first Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) on January 12, 2009, and the 2013 [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) retrospective — were stagecraft to maintain the pseudonym. Under this reading, Finney operated as Satoshi from the development phase (2007–2008) until at least his August 2009 ALS diagnosis, and possibly until his early-2011 retirement. A stronger variant must additionally explain the post-2011 Satoshi correspondence (the [April 2011 Mike Hearn email](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) and the [April 2011 Gavin Andresen alert-key handover](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)) via a co-author or scheduled drafts.
+The hypothesis is that Finney is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [January 2009 email exchange](/BitcoinArchive/entries/aftermath/2009-01-08-satoshi-to-finney-release/), the [first Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) on January 12, 2009, and the 2013 [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) retrospective — were stagecraft to maintain the pseudonym. Under this reading, Finney operated as Satoshi from the development phase (2007–2008) until at least his August 2009 ALS diagnosis, and possibly until his early-2011 retirement. A stronger variant must additionally explain the post-2011 Satoshi correspondence (the [April 2011 Mike Hearn email](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) and the [April 2011 Gavin Andresen alert-key handover](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)) via a co-author or scheduled drafts.
 
 Two events are alibi-class for the hypothesis: the April 18, 2009 race-day window and the August 14–15, 2010 Singularity Summit window. Their position relative to Satoshi's documented activity:
 
@@ -71,7 +71,7 @@ timeline
     2008 : Whitepaper published; Satoshi never asks Hal anything (Oct)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : Hal first replies to whitepaper as third party on crypto list (Nov)
-    %% link: /BitcoinArchive/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/
+    %% link: /BitcoinArchive/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/
     2009 : Bitcoin v0.1 - Hal becomes first known non-Satoshi node (Jan)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : Hal runs 10-mile race in Santa Barbara - Satoshi sends Hearn email + broadcasts tx (Apr 18) [alibi 1]
@@ -82,7 +82,7 @@ timeline
          : Satoshi's last public BitcoinTalk post (Dec 12)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
     2011 : Satoshi's last private email - Andresen alert-key handover (Apr 26)
-    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
          : Hal retires from PGP due to ALS
     2013 : Hal publishes Bitcoin and Me - frames Satoshi in third person (Mar)
     %% link: /BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/
@@ -133,7 +133,7 @@ Across the four most-cited stylometric investigations, Finney appears as a consi
 
 ### 2.4 First-recipient and earliest collaborator status
 
-Finney was the first known person other than Satoshi to run Bitcoin, the [recipient of the first person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), and one of the earliest substantive technical correspondents with Satoshi. His [November 2008 reply to the cryptography mailing list whitepaper announcement](/BitcoinArchive/entries/correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability/) was substantive and supportive at a moment when most cryptographers were skeptical. The argument: any author of a complex system tends to keep a known, trusted, and capable engineer close at the launch — and the candidate who fits that profile most precisely is the one who appears in this role.
+Finney was the first known person other than Satoshi to run Bitcoin, the [recipient of the first person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), and one of the earliest substantive technical correspondents with Satoshi. His [November 2008 reply to the cryptography mailing list whitepaper announcement](/BitcoinArchive/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/) was substantive and supportive at a moment when most cryptographers were skeptical. The argument: any author of a complex system tends to keep a known, trusted, and capable engineer close at the launch — and the candidate who fits that profile most precisely is the one who appears in this role.
 
 The objection: launching a system anonymously while having a trusted technical collaborator visible at the launch is exactly the pattern an anonymous author would choose if they had a trusted collaborator. It is also exactly the pattern of a high-quality first user identifying a high-quality system on the cryptography mailing list. Finney's documented self-account — *"I think I was the first person besides Satoshi to run bitcoin"* in [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) — describes the latter, and the first-recipient role is consistent with both readings.
 
@@ -218,7 +218,7 @@ Across the four most-cited stylometric investigations (Skye Grey 2013, Aston 201
 
 The race-day alibi (§3.1), the 2013 first-person framing (§3.2), and the Patoshi-scale inconsistency (§3.3) form a structurally distinct line of counter-evidence: each is a contemporaneously documented record at the relevant time, not a retrospective reconstruction. Finney's evidentiary position differs from candidates whose counter-evidence rests primarily on absence-of-confession (Szabo, Adam Back). Finney has actively documented activities and self-statements that are difficult to reconcile with the Satoshi role.
 
-[Satoshi's August 21, 2008 email to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — *"I wasn't aware of the b-money page"* — is dated months before Finney's first documented Satoshi contact. If Finney were Satoshi, the pattern would be: Finney emails Back as "Satoshi," receives a referral to b-money, emails Wei Dai as "Satoshi," then waits two months and emails himself as "Hal Finney" supportively replying to the Bitcoin announcement on the cryptography mailing list. The structure is implausible without active continuous co-staging.
+[Satoshi's August 21, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) — *"I wasn't aware of the b-money page"* — is dated months before Finney's first documented Satoshi contact. If Finney were Satoshi, the pattern would be: Finney emails Back as "Satoshi," receives a referral to b-money, emails Wei Dai as "Satoshi," then waits two months and emails himself as "Hal Finney" supportively replying to the Bitcoin announcement on the cryptography mailing list. The structure is implausible without active continuous co-staging.
 
 For comparison with other named-candidate hypotheses, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the individual entries for [Sassaman](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), [Kaneko](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/), [Szabo](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/), [Todd](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/), and [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/).
 

@@ -50,7 +50,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - aftermath/2009-01-03-genesis-block
   - aftermath/2009-01-09-bitcoin-v01-released
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-20-satoshi-to-adam-back
 ---
 
 On October 31, 2008, Satoshi Nakamoto published the Bitcoin whitepaper. Two and a half years later, he sent his last known email and stopped. Approximately 1.1 million BTC mined under a single coordinated pattern in those first months have not moved since.
@@ -60,7 +60,7 @@ On October 31, 2008, Satoshi Nakamoto published the Bitcoin whitepaper. Two and 
 ```mermaid
 timeline
     2008 : Earliest known email - to Adam Back about an electronic cash system (Aug)
-    %% link: /BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/
+    %% link: /BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/
          : Bitcoin whitepaper published to the cryptography mailing list (Oct)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
     2009 : Genesis block parameters defined (Jan 3)
@@ -78,12 +78,12 @@ timeline
     2011 : 'I've moved on' email to Mike Hearn (Apr 23)
     %% link: /BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
          : Final known email - alert key handover to Andresen (Apr 26)
-    %% link: /BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
 ```
 
 ### White Paper
 
-The earliest documented communication is the [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) asking about Hashcash citation format. The [whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) followed on October 31, 2008, sent to the cryptography mailing list at metzdowd.com — nine pages describing how a chain of digital signatures, secured by proof-of-work, could resist double-spending without a trusted intermediary.
+The earliest documented communication is the [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) asking about Hashcash citation format. The [whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) followed on October 31, 2008, sent to the cryptography mailing list at metzdowd.com — nine pages describing how a chain of digital signatures, secured by proof-of-work, could resist double-spending without a trusted intermediary.
 
 ### Launch
 
@@ -113,7 +113,7 @@ On April 23, 2011, Satoshi [wrote to Mike Hearn](/BitcoinArchive/entries/corresp
 <!-- speaker: Satoshi Nakamoto -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
-Three days later, on April 26, 2011, the [final known email — alert key handover to Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/):
+Three days later, on April 26, 2011, the [final known email — alert key handover to Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/):
 
 <!-- speaker: Satoshi Nakamoto -->
 > "I wish you wouldn't keep talking about me as a mysterious shadowy figure."

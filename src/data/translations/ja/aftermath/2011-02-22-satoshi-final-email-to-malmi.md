@@ -24,7 +24,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2009-05-01-martti-malmi-biography
@@ -36,7 +36,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 2011年2月22日、サトシ・ナカモトはマルッティ・マルミへの最後のメールとなるものを送信した。メールには PGP 署名が含まれ、ビットコインプロジェクトの mailman メーリングリストのパスワードが記載されており、プロジェクトインフラのもう一つの部分を事実上移譲するものであった。
 
-これは、サトシがビットコインへの公的関与から完全に撤退する前の最後の既知の連絡の一つであった。約 2ヶ月後の [2011年4月23日、サトシはマイク・ハーンに](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」と書いた。さらにその 3日後の 4月26日、[サトシはギャビン・アンドレセンに最後の既知のメールとされるもの](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/)を送り、ネットワークアラートキーを移譲し「他のことに取り組むことにした。おそらく連絡が取れなくなるだろう」と書いた。
+これは、サトシがビットコインへの公的関与から完全に撤退する前の最後の既知の連絡の一つであった。約 2ヶ月後の [2011年4月23日、サトシはマイク・ハーンに](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」と書いた。さらにその 3日後の 4月26日、[サトシはギャビン・アンドレセンに最後の既知のメールとされるもの](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送り、ネットワークアラートキーを移譲し「他のことに取り組むことにした。おそらく連絡が取れなくなるだろう」と書いた。
 
 2009年5月から 2011年2月にわたるサトシとマルミのメールのやり取りは、約 260 通で構成され、ビットコインの創造者との直接的なコミュニケーションの最も広範な記録の一つである。このやり取りはサトシがビットコインに積極的に関与していたほぼ全期間を網羅している——ユーザーがほんの一握りしかいなかった初期から、プロジェクトが複数の開発者を抱える機能的なオープンソースコミュニティへと成長した時点まで。
 

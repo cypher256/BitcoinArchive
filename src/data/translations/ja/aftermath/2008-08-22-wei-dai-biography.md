@@ -103,5 +103,5 @@ Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0
 
 ### 意義
 
-ダイの 2014 年の回顧と、サトシ自身の [2008 年 8 月 21 日のアダム・バック宛 b-money 不知応答](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)は、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の根拠となっている —— 二つの独立した観察が、開発期間中にサトシがサイファーパンクのコミュニティに対してどこに立っていたかという同じ像に収束する。
+ダイの 2014 年の回顧と、サトシ自身の [2008 年 8 月 21 日のアダム・バック宛 b-money 不知応答](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の根拠となっている —— 二つの独立した観察が、開発期間中にサトシがサイファーパンクのコミュニティに対してどこに立っていたかという同じ像に収束する。
 <!-- /tone-skip -->

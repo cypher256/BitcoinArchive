@@ -30,7 +30,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2010-02-10-michael-marquardt-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
-  - correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
   - aftermath/2024-02-21-copa-trial-malmi-testimony
   - aftermath/2024-03-14-copa-v-wright-ruling
@@ -50,16 +50,16 @@ translationStatus: complete
 timeline
     1988 : ヘルシンキ誕生
     2009 : サトシに 最初の連絡、 協力申し出 (5月)
-    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-02-first-contact-satoshi-reply/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-05-02-first-contact-satoshi-reply/
          : Linux 移植 + bitcoin.org + フォーラム (後の BitcoinTalk) 構築
          : 5,050 BTC を $5.02 で売却 — 初の BTC-法定通貨取引 (10月12日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/
          : サトシが Bitcoin 0.2 リリースで マルミの貢献を称える (12月)
     %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-12-17-bitcoin-02-released-132/
     2010 : サトシとの 後継者議論 (サトシ 「ギャビンであるべき」 と返答、 12月3日)
-    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/
     2011 : サトシから マルミへの 最後の既知メール (2月22日)
-    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi/
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/
          : BitcoinTalk.org 移行 (8月1日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/
     2024 : COPA 対ライト裁判 証言 + メール証拠 提出 (2月21日)
@@ -82,13 +82,13 @@ timeline
 
 ### 後継者議論における役割
 
-[2010 年 12 月 3 日](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/)、サトシが[第一線から退き始めていた](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)時期、マルミはビットコイン開発・管理を引き継ぐべき人物について尋ねた。サトシの返答は明確だった:
+[2010 年 12 月 3 日](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)、サトシが[第一線から退き始めていた](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)時期、マルミはビットコイン開発・管理を引き継ぐべき人物について尋ねた。サトシの返答は明確だった:
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルだ。Linuxに関しては、技術的に私よりずっと上だ。」
 
-このメールのやり取りが、[2010 年 12 月 12 日のギャビンへの SVN 正式引き継ぎ](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/)と、[2010 年 12 月 19 日のギャビンによるプロジェクト管理引き受けの公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)の基盤となった。
+このメールのやり取りが、[2010 年 12 月 12 日のギャビンへの SVN 正式引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)と、[2010 年 12 月 19 日のギャビンによるプロジェクト管理引き受けの公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)の基盤となった。
 
 ### その後
-マルミは 2011 年初頭まで、サトシと折に触れてやり取りを続けた。[サトシからマルミへの最後の既知のメールは 2011 年 2 月 22 日](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-02-22-satoshi-final-email-to-malmi/) — マイク・ハーンおよびギャビン・アンドレセンとのサトシ最後のメールの 2 か月前である。マルミは 2011 年頃、他の開発者がより大きな役割を担うようになるにつれて、ビットコイン開発への関与を徐々に減らした。その後フィンランドのテクノロジー業界で働いている。
+マルミは 2011 年初頭まで、サトシと折に触れてやり取りを続けた。[サトシからマルミへの最後の既知のメールは 2011 年 2 月 22 日](/BitcoinArchive/ja/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) — マイク・ハーンおよびギャビン・アンドレセンとのサトシ最後のメールの 2 か月前である。マルミは 2011 年頃、他の開発者がより大きな役割を担うようになるにつれて、ビットコイン開発への関与を徐々に減らした。その後フィンランドのテクノロジー業界で働いている。
 <!-- /tone-skip -->

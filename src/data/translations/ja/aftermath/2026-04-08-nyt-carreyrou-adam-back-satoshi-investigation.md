@@ -43,9 +43,9 @@ secondarySources:
     url: "https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/"
 relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
@@ -100,7 +100,7 @@ translationStatus: complete
 
 本アーカイブは NYT の主張に直接関わる一次資料を保有している：
 
-- サトシとバックの間の [2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) — [8 月 21 日のバックがサトシにウェイ・ダイの b-money を見るよう示唆した返信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/)、[8 月 22 日のサトシの返信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)で「b-money のページは知らなかった」 と述べ同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送ったこと。
+- サトシとバックの間の [2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) — [8 月 21 日のバックがサトシにウェイ・ダイの b-money を見るよう示唆した返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[8 月 22 日のサトシの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で「b-money のページは知らなかった」 と述べ同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送ったこと。
 - バックの [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — 上記メールを証人証拠として提出し、宣誓のもとサトシを別人として扱った。
 - [ウェイ・ダイの 2014 年回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)（AALWA スレッド）— サトシは開発期間中、可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」 と論じている。これは 2007〜2008 年にサイファーパンクメーリングリストで可視に活動していた候補に対する反証として作用するが、まさにこの母集団が NYT の文体計量分析の選択対象である。
 

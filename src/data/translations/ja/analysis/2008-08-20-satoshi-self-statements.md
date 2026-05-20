@@ -42,13 +42,13 @@ relatedEntries:
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
-  - correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-10-satoshi-to-finney-connections
   - correspondence/martti-malmi/2009-07-21-bitcoin-024
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
 inlineLinkKeywords:
   - "サトシの自己言及"
@@ -82,8 +82,8 @@ translationStatus: complete
 
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
-| 「あなたのアイデアを完全に動作するシステムに拡張する論文を公開する準備をしている」 | [→ アダム・バック 2008-08-20](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | 著者性と意図の自己帰属。後続のホワイトペーパー公開で確定 |
-| 「b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」 | [→ アダム・バック 2008-08-21](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | 開発期間中の特定の知識ギャップの自己開示 |
+| 「あなたのアイデアを完全に動作するシステムに拡張する論文を公開する準備をしている」 | [→ アダム・バック 2008-08-20](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | 著者性と意図の自己帰属。後続のホワイトペーパー公開で確定 |
+| 「b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」 | [→ アダム・バック 2008-08-21](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | 開発期間中の特定の知識ギャップの自己開示 |
 | 「あなたの b-money ページを非常に興味深く読んだ」 (バックの紹介後) | [→ ウェイ・ダイ 2008-08-22](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 2008-08-22 | 上の行と内部的に整合 |
 | 「コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきた」 | [cryptography メーリングリスト 2008-11-17](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 2008-11-17 | 設計開始を 2007 年半ば頃に特定 |
 | 「ビットコインと呼ぶ新しいオープンソース P2P 電子キャッシュシステムを開発した。完全に分散化されている、なぜならすべてが信頼ではなく暗号学的証明に基づいているからだ」 | [P2P Foundation フォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) | 2009-02-11 | 一人称による公的著者性の表明。プロジェクトを制度的信頼に対立する位置に置く |
@@ -92,7 +92,7 @@ translationStatus: complete
 
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
-| 「残念だけど、今いる場所からは外部からの接続が受けられない」 | [→ ハル・フィニー](/BitcoinArchive/ja/entries/correspondence/hal-finney/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (または 12、議論あり) | 運用状態の自己開示。[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で扱う |
+| 「残念だけど、今いる場所からは外部からの接続が受けられない」 | [→ ハル・フィニー](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (または 12、議論あり) | 運用状態の自己開示。[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で扱う |
 | 「私も今は大して役に立てない、仕事で忙しく、18 か月の開発の後で休みが必要だ」 | [→ マルティ・マルミ 2009-07-21](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | 18 か月のタイムラインを再確認。疲労の自己開示 (同メール直前の文はハル・フィニーの活動低下を述べており、サトシの「私も」 が自身の状態への転換となる) |
 | 「そこは自分の専門外だ」 (Linux/FreeBSD テストについて) | BitcoinTalk フォーラム投稿、2009 年 12 月 | 2009-12 | クロスプラットフォームでの専門性ギャップ |
 | 「ギャビンは技術的に自分よりはるかに Linux に精通している」 | ギャビン・アンドレセン宛のメール、2010 年 12 月 | 2010-12 | サトシ自身による比較的自己評価 (自分の Linux 能力をギャビンと比べた本人の評価) |
@@ -104,8 +104,8 @@ translationStatus: complete
 | 「他のプロジェクトに取り組んでいる」 (パラフレーズ。本文は公表されていない) | [→ ギャビン・アンドレセン 2010 年 9 月](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | 2010-09 (具体的な日付は公的記録になし) | ステップバック意図の最も早い記録。本文はギャビンの後年インタビューで言及されるのみで、原文は公表されていない |
 | 「あといくつかのことを行ったら、バトンを渡す予定だ」 | [BitcoinTalk topic-2228、最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | 2010-12-12 | BitcoinTalk における最後の公開投稿。4 か月後の私的離脱の前触れ |
 | 「他のことに取り組むことにした。[ギャビン](/BitcoinArchive/ja/participants/gavin-andresen/)たちに任せれば、安心だ」 | [→ マイク・ハーン 2011-04-23](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 2011-04-23 | 撤退表明 |
-| 「私のことを謎めいた影の人物として話し続けるのはやめてほしい、報道はそれを海賊通貨という切り口に変えてしまう」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 自己認識の表明。「謎めいた影の人物」という枠組みの拒否 |
-| 「他のことに取り組むことにした、しばらく連絡が取れなくなるだろう」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 最終的な撤退表明 |
+| 「私のことを謎めいた影の人物として話し続けるのはやめてほしい、報道はそれを海賊通貨という切り口に変えてしまう」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 自己認識の表明。「謎めいた影の人物」という枠組みの拒否 |
+| 「他のことに取り組むことにした、しばらく連絡が取れなくなるだろう」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 最終的な撤退表明 |
 
 ### 1.5 真正性議論あり
 

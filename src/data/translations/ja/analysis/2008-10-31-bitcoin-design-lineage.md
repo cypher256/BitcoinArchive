@@ -39,9 +39,9 @@ relatedEntries:
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
@@ -101,13 +101,13 @@ translationStatus: complete
 
 ### 3.1 Hashcash：開発中に使用
 
-サトシの [2008 年 8 月 20 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/)は Hashcash の正しい引用形式を質問している。本文ではビットコインの仕組みを詳しく述べ、Hashcash を「コードで再利用している既存の基本要素」 として参照している。これは Hashcash の使用が**開発中**であって**開発後**ではないことを位置づける。
+サトシの [2008 年 8 月 20 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)は Hashcash の正しい引用形式を質問している。本文ではビットコインの仕組みを詳しく述べ、Hashcash を「コードで再利用している既存の基本要素」 として参照している。これは Hashcash の使用が**開発中**であって**開発後**ではないことを位置づける。
 
 「Hashcash」 の `cash` は計算コストとしての対価の比喩（バック 1997 年のスパム対策・サービス拒否対抗策）であって通貨ではない。Hashcash の中身はプルーフ・オブ・ワーク基本要素のみで、台帳・送金・合意形成・通貨供給はない。ビットコインは PoW のみを再利用し、それ以外を別途構築する。「Hashcash の作者＝ビットコインの作者」 論点への含意については[アダム・バック仮説 § 2.2](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) を参照。
 
 ### 3.2 b-money：設計後に引用追加
 
-サトシの [2008 年 8 月 21 日のバック宛返信](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/)は「Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.（ありがとう、b-money のページは知らなかった、しかし私のアイデアはまさにその点から始まっている）」 で始まる。これは、b-money がホワイトペーパーの引用文献リストに**設計が実質的に完了した後で**追加されたことの直接の一次資料である。翌日サトシは[ウェイ・ダイ宛にも直接メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送り、提案について述べている。
+サトシの [2008 年 8 月 21 日のバック宛返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は「Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.（ありがとう、b-money のページは知らなかった、しかし私のアイデアはまさにその点から始まっている）」 で始まる。これは、b-money がホワイトペーパーの引用文献リストに**設計が実質的に完了した後で**追加されたことの直接の一次資料である。翌日サトシは[ウェイ・ダイ宛にも直接メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送り、提案について述べている。
 
 ホワイトペーパーに現れる引用は文献 [1] — ウェイ・ダイ「b-money」 1998 年。番号順は編集上のもので、内容は遅く加えられた。[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)はこれと整合する：ウェイ・ダイはサトシが「以前から積極的に活動していた人物ではない」 と示唆しており、これは「b-money を紹介経由で発見せざるを得なかった設計者」 像と整合する。
 

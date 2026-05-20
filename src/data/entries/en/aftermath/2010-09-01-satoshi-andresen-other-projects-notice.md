@@ -25,8 +25,8 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography
-  - correspondence/martti-malmi/2010-12-03-handover-to-gavin
-  - correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen
+  - aftermath/2010-12-03-handover-to-gavin
+  - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
 ---
@@ -41,10 +41,10 @@ This September 2010 communication is the earliest documented signal of Satoshi's
 
 The September signal preceded by three months the more visible transition events:
 
-- **December 3, 2010**: Satoshi recommended Andresen to [Martti Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2010-12-03-handover-to-gavin/) — "It should be Gavin. I trust him, he's responsible, professional…"
-- **December 12, 2010**: [Formal SVN handover](/BitcoinArchive/entries/correspondence/gavin-andresen/2010-12-12-satoshi-handover-to-andresen/) and Satoshi's [last public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) closing with "I plan to pass the baton."
+- **December 3, 2010**: Satoshi recommended Andresen to [Martti Malmi](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) — "It should be Gavin. I trust him, he's responsible, professional…"
+- **December 12, 2010**: [Formal SVN handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) and Satoshi's [last public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) closing with "I plan to pass the baton."
 - **December 19, 2010**: [Andresen's public acceptance](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) of the project-management role.
-- **April 26, 2011**: [Final email to Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) (alert-key handover).
+- **April 26, 2011**: [Final email to Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) (alert-key handover).
 
 Recognizing September 2010 as the chronological start of the documented withdrawal — rather than December 2010 — substantively shapes how the December events read. The "pass the baton" line on December 12 is not a sudden announcement but the public conclusion of a transition that had been underway privately for three months.
 

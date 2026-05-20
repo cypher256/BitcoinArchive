@@ -23,7 +23,7 @@ relatedEntries:
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2010-06-11-gavin-andresen-biography
-  - correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
 ---
 
 *From Forbes, published online April 20, 2011 (print edition May 9, 2011):*
@@ -40,4 +40,4 @@ The article described Bitcoin developers as Gavin's "underground cadre of cypher
 
 The article also described Bitcoin as potentially untraceable — an assessment Greenberg later acknowledged was incorrect, as cryptocurrency proved to be extremely traceable through blockchain analysis.
 
-*[Editor: This article ran in the week leading up to Satoshi's disappearance from public communication in late April 2011. The mainstream media attention it generated, and the association with illegal activity, may have contributed to Satoshi's decision to withdraw. In his [final known email to Gavin Andresen](/BitcoinArchive/entries/correspondence/gavin-andresen/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, Satoshi wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle."]*
+*[Editor: This article ran in the week leading up to Satoshi's disappearance from public communication in late April 2011. The mainstream media attention it generated, and the association with illegal activity, may have contributed to Satoshi's decision to withdraw. In his [final known email to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, Satoshi wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle."]*

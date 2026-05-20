@@ -46,9 +46,9 @@ relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - aftermath/2008-08-20-adam-back-biography
-  - correspondence/adam-back/2008-08-20-satoshi-to-adam-back
-  - correspondence/adam-back/2008-08-21-adam-back-to-satoshi
-  - correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - aftermath/2024-02-21-adam-back-retrospective-testimony
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
@@ -70,7 +70,7 @@ On April 8, 2026, the New York Times published [John Carreyrou's investigation](
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Back is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) and the [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — were stagecraft to maintain the pseudonym. Under this reading, Back has been the person operating as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal, and has run Blockstream since 2014 while continuing to publicly deny being Satoshi.
+The hypothesis is that Back is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 2008 email exchange](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) and the [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — were stagecraft to maintain the pseudonym. Under this reading, Back has been the person operating as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal, and has run Blockstream since 2014 while continuing to publicly deny being Satoshi.
 
 ## 2. The arguments the hypothesis rests on
 
@@ -129,7 +129,7 @@ Distinct from §2.2 (the Hashcash-author = Bitcoin-author forensic-fit argument)
 | 1997-03-28 | [Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) (Cypherpunks list) | Positioned Hashcash as a "stop gap measure until digicash becomes more widely used" in the announcement's *How does this fit in with digicash* section |
 | 1998-12-06 | [Cypherpunks-list b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | Identified seven monetary-design issues in b-money; proposed "to create value you burn CPU time, just like with hashcash" |
 | 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
-| 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
+| 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
 
 In Back's own retrospective framing in the [April 2026 X post](https://x.com/adam3us/status/2041811857732768148) responding to the NYT investigation: "I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash."
 
@@ -141,11 +141,11 @@ The objection: identifying problems is not the same as solving them. The 1998 cr
 
 ### 3.1 The 2008 emails read as third-party reception
 
-The strongest archive-internal counter-evidence is the structure of the [August 20–22, 2008 email exchange](/BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back/) itself:
+The strongest archive-internal counter-evidence is the structure of the [August 20–22, 2008 email exchange](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) itself:
 
 - August 20: Satoshi to Back — described early Bitcoin idea, asked Back about correct Hashcash citation format.
-- August 21: [Back to Satoshi](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi/) — provided the requested citation and suggested Satoshi look at Wei Dai's b-money proposal.
-- August 22: [Satoshi to Back](/BitcoinArchive/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) — replied "I wasn't aware of the b-money page" and the same day [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
+- August 21: [Back to Satoshi](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) — provided the requested citation and suggested Satoshi look at Wei Dai's b-money proposal.
+- August 22: [Satoshi to Back](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) — replied "I wasn't aware of the b-money page" and the same day [emailed Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/).
 
 If Back were the person behind the Satoshi pseudonym, the structure does not naturally make sense: Back would not need to ask "Back" for citation guidance, and Back would not need to "discover" b-money via his own referral to himself. The simpler reading is that the exchange is what it appears to be — Satoshi asking Back for help, Back responding as a third party with relevant pointers, Satoshi following the pointers.
 
