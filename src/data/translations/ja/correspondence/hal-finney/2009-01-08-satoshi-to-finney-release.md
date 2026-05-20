@@ -1,7 +1,7 @@
 ---
 title: "サトシからハル・フィニーへ：Bitcoin v0.1 リリースの個人的通知（2009-01-08）"
 date: 2009-01-08T20:54:55Z
-type: "correspondence"
+type: "article"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Satoshi Nakamoto"

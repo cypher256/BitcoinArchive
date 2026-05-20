@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン送金 - アドレスラベルと UX の課題"
 date: 2009-01-19T11:02:37Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

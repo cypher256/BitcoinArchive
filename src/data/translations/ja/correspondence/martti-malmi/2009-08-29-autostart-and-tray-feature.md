@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - 自動起動とタスクトレイ最小化は必須機能"
 date: 2009-08-29T17:31:05Z
-type: "correspondence"
+type: "article"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

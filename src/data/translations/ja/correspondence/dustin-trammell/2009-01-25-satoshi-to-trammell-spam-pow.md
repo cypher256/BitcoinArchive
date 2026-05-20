@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン v0.1 リリース - スパム、POW トークン、リバース・スパミング"
 date: 2009-01-25T10:03:21Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

@@ -1,7 +1,7 @@
 ---
 title: "Re: 接続なし —— 単一ピアに接続中"
 date: 2009-07-20T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA 対クレイグ・ライト裁判の証拠。ニコラス・ボームの証人陳述書{C/10/1}の一部として提出。IP アドレスの分析は Decashed（2025年3月）による"

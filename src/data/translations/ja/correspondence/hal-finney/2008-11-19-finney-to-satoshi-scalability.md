@@ -1,7 +1,7 @@
 ---
 title: "ハル・フィニーからサトシへ：プレリリース期のスケーラビリティに関する基礎的な質問（2008-11-19）"
 date: 2008-11-19T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Hal Finney"

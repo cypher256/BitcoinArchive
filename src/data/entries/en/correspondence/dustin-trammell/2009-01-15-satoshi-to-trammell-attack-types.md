@@ -1,7 +1,7 @@
 ---
 title: "Re: A few thoughts... - Attack classification and send-to-IP security"
 date: 2009-01-15T13:46:35Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013"

@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - マイニングのエネルギー消費に対する弁護"
 date: 2009-05-03T22:32:26Z
-type: "correspondence"
+type: "article"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

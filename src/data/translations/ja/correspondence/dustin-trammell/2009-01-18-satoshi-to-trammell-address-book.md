@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン送金 - アドレス帳と複数アドレス"
 date: 2009-01-18T11:01:09Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

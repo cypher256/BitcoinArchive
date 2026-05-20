@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン v0.1 リリース — bitcoin-list への参加と投資動機"
 date: 2009-01-15T19:14:27Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

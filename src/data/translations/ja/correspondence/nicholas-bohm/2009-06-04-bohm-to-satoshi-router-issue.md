@@ -1,7 +1,7 @@
 ---
 title: "ルーターの問題 —— ビットコインが接続できない"
 date: 2009-06-04T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA 対クレイグ・ライト裁判の証拠。ボームの証人陳述書は{C/10/1}として提出された。メラー判事はパラグラフ 271.9 において、ボーム氏が「裁判開始の直前に残念ながら亡くなった」と記した"

@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin v0.1 released - Offer to send coins"
 date: 2009-01-13T01:55:00Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013. The full correspondence is archived on the Bitcoin Wiki at en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails. Transaction details documented on Trammell's blog"

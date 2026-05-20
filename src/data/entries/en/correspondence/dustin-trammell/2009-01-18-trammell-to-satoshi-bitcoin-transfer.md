@@ -1,7 +1,7 @@
 ---
 title: "BitCoin Transfer - Confusion about received transaction"
 date: 2009-01-18T09:23:02Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013"

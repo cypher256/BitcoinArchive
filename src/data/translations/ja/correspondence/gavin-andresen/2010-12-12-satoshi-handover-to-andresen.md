@@ -1,7 +1,7 @@
 ---
 title: "サトシの後継者 — プロジェクトマネージャー：ギャビン・アンドレセンへの引き継ぎ"
 date: 2010-12-12T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 sourceNote: "ギャビン・アンドレセンの Bitcointalk フォーラム公開投稿（2010年12月）、マルッティ・マルミの公開メールアーカイブ（mmalmi.github.io/satoshi/）、および移行に関する複数の公開された記録に基づく"

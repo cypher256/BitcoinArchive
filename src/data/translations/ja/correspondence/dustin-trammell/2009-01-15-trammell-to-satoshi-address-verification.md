@@ -1,7 +1,7 @@
 ---
 title: "Re: いくつかの考え... — アドレス検証とウォレットバックアップ"
 date: 2009-01-15T19:03:34Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013 年 11 月にダスティン・トランメルにより公開"

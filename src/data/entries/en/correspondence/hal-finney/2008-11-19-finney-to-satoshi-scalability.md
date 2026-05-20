@@ -1,7 +1,7 @@
 ---
 title: "Hal Finney to Satoshi with foundational scalability questions during pre-release review (November 19, 2008)"
 date: 2008-11-19T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
 author: "Hal Finney"

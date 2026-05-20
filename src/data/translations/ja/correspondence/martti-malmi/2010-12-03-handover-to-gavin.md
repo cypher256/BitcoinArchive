@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン - 開発と管理の引き継ぎ先としてギャビン・アンドレセンを推薦"
 date: 2010-12-03T19:58:40Z
-type: "correspondence"
+type: "article"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "2024 年 2 月、COPA 対ライト裁判の証言の一環として GitHub で公開"

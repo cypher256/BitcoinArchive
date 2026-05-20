@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin - First exchange proposal"
 date: 2009-07-22T10:10:02Z
-type: "correspondence"
+type: "article"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"
