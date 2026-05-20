@@ -1,7 +1,7 @@
 ---
 title: "A few thoughts... - Man-in-the-middle attack on send-to-IP"
 date: 2009-01-15T00:05:15Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013"

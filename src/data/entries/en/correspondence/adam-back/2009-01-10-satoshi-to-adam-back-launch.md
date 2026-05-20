@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin v0.1 launch announcement to Adam Back"
 date: 2009-01-10T18:46:45Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 author: "Satoshi Nakamoto"

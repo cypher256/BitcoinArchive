@@ -1,7 +1,7 @@
 ---
 title: "One Other Question - CPU power and coin generation"
 date: 2009-01-12T21:49:02Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013"

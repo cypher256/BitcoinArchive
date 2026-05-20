@@ -1,7 +1,7 @@
 ---
 title: "Peter Todd's first BitcoinTalk post: buying a Diaspora invite"
 date: 2010-12-07T09:14:28Z
-type: "forum-post"
+type: "article"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=1953.msg27712#msg27712"
 author: "Peter Todd"

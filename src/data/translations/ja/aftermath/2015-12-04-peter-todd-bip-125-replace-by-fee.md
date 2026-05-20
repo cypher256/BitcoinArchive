@@ -1,7 +1,7 @@
 ---
 title: "ピーター・トッドとデイヴィッド・ハーディングが BIP 125 で Replace-by-Fee を正式化"
 date: 2015-12-04T00:00:00Z
-type: "bip"
+type: "article"
 source: "github"
 sourceUrl: "https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki"
 author: "David A. Harding, Peter Todd"

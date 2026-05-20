@@ -1,7 +1,7 @@
 ---
 title: "No connections for a day"
 date: 2009-07-18T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "gwern"
 sourceUrl: "https://gwern.net/doc/bitcoin/2024-mellor.pdf"
 sourceNote: "COPA v. Craig Wright trial evidence, filed as part of Nicholas Bohm's witness statement {C/10/1}"

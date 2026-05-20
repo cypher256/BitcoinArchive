@@ -1,7 +1,7 @@
 ---
 title: "Re: ビットコイン v0.1 リリース - コイン送付の申し出"
 date: 2009-01-13T01:55:00Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "2013年11月にダスティン・トランメルにより公開。完全なメールは Bitcoin Wiki（en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails）にアーカイブされている。取引の詳細はトランメルのブログに記録されている"

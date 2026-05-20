@@ -1,7 +1,7 @@
 ---
 title: "Satoshi's successor — project-manager handover to Gavin Andresen"
 date: 2010-12-12T00:00:00Z
-type: "correspondence"
+type: "article"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
 sourceNote: "Based on Gavin Andresen's public Bitcointalk forum post (December 2010), Martti Malmi's published email archive (mmalmi.github.io/satoshi/), and multiple published accounts of the transition"

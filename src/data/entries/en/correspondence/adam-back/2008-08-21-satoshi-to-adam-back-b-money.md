@@ -1,7 +1,7 @@
 ---
 title: "Re: Hashcash citation — 'my ideas start from exactly that point'"
 date: 2008-08-21T17:59:48Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 author: "Satoshi Nakamoto"

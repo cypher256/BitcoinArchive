@@ -1,7 +1,7 @@
 ---
 title: "Final email from Satoshi to Malmi"
 date: 2011-02-22T19:49:19Z
-type: "correspondence"
+type: "article"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
 sourceNote: "Published on GitHub in February 2024 as part of Martti Malmi's testimony in the COPA v. Wright trial"

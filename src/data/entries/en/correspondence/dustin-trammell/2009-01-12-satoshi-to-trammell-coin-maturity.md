@@ -1,7 +1,7 @@
 ---
 title: "Re: Bitcoin v0.1 released"
 date: 2009-01-12T18:52:45Z
-type: "correspondence"
+type: "article"
 source: "bitcoin-wiki"
 sourceUrl: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
 sourceNote: "Published by Dustin Trammell in November 2013"
