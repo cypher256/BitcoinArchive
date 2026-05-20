@@ -27,6 +27,7 @@ quotes:
   - id: "q1"
     person: "Satoshi"
     personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
