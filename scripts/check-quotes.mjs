@@ -140,7 +140,7 @@ const EN_LEGACY_SUFFIXES = [
   /^Lainaus [^\n]+:\s*$/,
   /^On [^,\n]+,[^\n]+ wrote:\s*$/,
 ];
-const SPEAKER_HTML_RE = /^<!--\s*speaker:\s*(\S+?)\s*-->$/;
+const SPEAKER_HTML_RE = /^<!--\s*speaker:\s*(.+?)\s*-->$/;
 const QUOTE_MARKER_HTML_RE = /^<!--\s*quote:\s*\w+\s*-->$/;
 const SKIPPABLE_LINE_HTML_RE = /^<!--\s*(tone-skip|\/tone-skip|audit:quote-skip|narrator:)/;
 
@@ -207,17 +207,27 @@ function detectLegacyAttributionLines(body) {
   return flagged;
 }
 
-// Detect <!-- speaker: unknown --> followed by a blockquote without a
-// <!-- quote: qN --> marker — "unstructured-quote-candidate". This is a
-// soft signal: speaker=unknown is also legitimately used outside quoted
-// contexts (e.g., editor notes). Only the combination "unknown + blockquote
-// + no quote marker" warrants investigation per the plan.
-function detectSpeakerUnknownCandidates(body) {
+// Detect <!-- speaker: NAME --> followed by a blockquote without a
+// <!-- quote: qN --> marker — "speaker-without-quote-marker". Catches
+// two cases:
+//   - speaker=unknown: original asker never identified (Feb 22 What's next?)
+//   - speaker=<named>: speaker known but no quote marker / sourceEntryId
+//     (e.g., Ray Nov 6 quoting James A. Donald with no primary entry yet,
+//     Satoshi Nov 6 sni4 quoting James A. Donald with neither marker)
+// Both warrant investigation: the primary entry should exist (create if
+// missing), and the <!-- quote: qN --> marker + quotes[] entry should be
+// added so the attribution renders as a real link.
+function detectSpeakerWithoutQuoteMarker(body) {
   const lines = body.split('\n');
   const flagged = [];
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i].trim();
-    if (t !== '<!-- speaker: unknown -->') continue;
+    const speakerMatch = t.match(SPEAKER_HTML_RE);
+    if (!speakerMatch) continue;
+    const speakerName = speakerMatch[1];
+    // "reset" sets the speaker back to the entry author — by definition
+    // resets the speaker context, not introducing a new quoted speaker.
+    if (speakerName === 'reset') continue;
     // Find next significant line, allowing skippable HTML
     let nextBq = false;
     let sawQuoteMarker = false;
@@ -234,7 +244,10 @@ function detectSpeakerUnknownCandidates(body) {
       break;
     }
     if (nextBq && !sawQuoteMarker) {
-      flagged.push({ line: i + 1, text: t, kind: 'speaker-unknown-no-quote-marker' });
+      const kind = speakerName === 'unknown'
+        ? 'speaker-unknown-no-quote-marker'
+        : 'speaker-named-no-quote-marker';
+      flagged.push({ line: i + 1, text: t, kind, speaker: speakerName });
     }
   }
   return flagged;
@@ -260,13 +273,19 @@ function checkFile(filePath, locale) {
       msg: `Line ${m.line}: legacy attribution prose "${m.text}" (${m.kind}) precedes a blockquote — convert to <!-- quote: qN --> + quotes[] entry per STYLE_GUIDE_JA.md §「構造化された引用メタデータ」`,
     });
   }
-  const speakerUnknownCandidates = detectSpeakerUnknownCandidates(body);
-  for (const m of speakerUnknownCandidates) {
+  const speakerCandidates = detectSpeakerWithoutQuoteMarker(body);
+  for (const m of speakerCandidates) {
+    const checkKind = m.kind === 'speaker-unknown-no-quote-marker'
+      ? 'speaker-unknown-candidate'
+      : 'speaker-named-no-quote-marker';
+    const detail = m.kind === 'speaker-unknown-no-quote-marker'
+      ? 'investigate whether the original poster can be identified and a primary entry created'
+      : `speaker "${m.speaker}" precedes a blockquote without a quote marker — add <!-- quote: qN --> + quotes[] (creating the source primary entry if missing)`;
     violations.push({
       file: rel,
-      check: 'speaker-unknown-candidate',
+      check: checkKind,
       level: 'warn',
-      msg: `Line ${m.line}: <!-- speaker: unknown --> precedes a blockquote without a <!-- quote: qN --> marker — investigate whether the original poster can be identified and a primary entry created (0521 plan)`,
+      msg: `Line ${m.line}: ${detail} (0521 plan)`,
     });
   }
 
