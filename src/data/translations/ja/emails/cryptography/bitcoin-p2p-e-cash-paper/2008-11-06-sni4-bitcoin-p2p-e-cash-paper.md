@@ -20,10 +20,16 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/4/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
+    personSlug: "james-donald"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-james-donald-bitcoin-p2p-e-cash-paper"
 translationStatus: complete
 ---
 
 <!-- speaker: James A. Donald -->
+<!-- quote: q1 -->
 > [武力行使による独占に対するシステムの脆弱性に関する
 >  長い解説は省略。]
 >

@@ -20,8 +20,15 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/4/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
+    personSlug: "james-donald"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-james-donald-bitcoin-p2p-e-cash-paper"
 ---
 
+<!-- speaker: James A. Donald -->
+<!-- quote: q1 -->
 > [Lengthy exposition of vulnerability of a systm to use-of-force
 >  monopolies ellided.]
 >
