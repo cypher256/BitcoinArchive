@@ -20,14 +20,22 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/5/"
+quotes:
+  - id: "q1"
+    person: "Ray Dillinger"
+    personSlug: "ray-dillinger"
+    date: "2008-11-06T05:14:37Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-06-ray-dillinger-bitcoin-p2p-e-cash-paper"
 ---
 
-Ray Dillinger:
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > the "currency" is inflationary at about 35%
 > as that's how much faster computers get annually
 > ... the inflation rate of 35% is almost guaranteed
 > by the technology
 
+<!-- speaker: Satoshi Nakamoto -->
 Increasing hardware speed is handled: "To compensate for increasing hardware speed and varying interest in running nodes over time, the proof-of-work difficulty is determined by a moving average targeting an average number of blocks per hour. If they're generated too fast, the difficulty increases."
 
 As computers get faster and the total computing power applied to creating bitcoins increases, the difficulty increases proportionally to keep the total new production constant.  Thus, it is known in advance how many new bitcoins will be created every year in the future.
