@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Eugen Leitl"
     personSlug: "eugen-leitl"
+    sourceEntryId: "emails/bitcoin-list/2009-10-26-re-does-bitcoin-crash-in-windows-leitl"
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"

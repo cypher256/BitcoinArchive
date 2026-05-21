@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Martien van Steenbergen"
     personSlug: "martien-van-steenbergen"
+    sourceEntryId: "emails/p2p-research/bitcoin-open-source/2009-02-12-bitcoin-open-source-steenbergen-2"
 ---
 
 <!-- quote: q1 -->

@@ -27,6 +27,7 @@ quotes:
   - id: "q2"
     person: "Eugen Leitl"
     personSlug: "eugen-leitl"
+    sourceEntryId: "emails/bitcoin-list/2009-10-26-re-does-bitcoin-crash-in-windows-leitl"
   - id: "q3"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"

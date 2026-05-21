@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Gavin Andresen"
     personSlug: "gavin-andresen"
+    sourceEntryId: "correspondence/gavin-andresen/2010-12-20-bitcoinorg-backups"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"

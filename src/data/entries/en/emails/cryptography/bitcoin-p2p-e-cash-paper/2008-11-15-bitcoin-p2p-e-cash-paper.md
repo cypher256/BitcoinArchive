@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Ray Dillinger (Bear)"
     personSlug: "ray-dillinger"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-14-bitcoin-p2p-e-cash-paper-dillinger"
 ---
 
 I'll try and hurry up and release the sourcecode as soon as possible to serve as a reference to help clear up all these implementation questions.

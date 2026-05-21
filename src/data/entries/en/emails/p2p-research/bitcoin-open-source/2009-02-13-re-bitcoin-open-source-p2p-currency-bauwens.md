@@ -26,6 +26,7 @@ quotes:
   - id: "q1"
     person: "Michel Bauwens"
     personSlug: "michel-bauwens"
+    sourceEntryId: "emails/p2p-research/bitcoin-open-source/2009-02-13-bitcoin-open-source-bauwens"
 ---
 
 <!-- quote: q1 -->

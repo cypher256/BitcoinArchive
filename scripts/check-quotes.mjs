@@ -473,7 +473,7 @@ function checkSourceEntryIds(enFiles) {
         violations.push({
           file: path.relative(process.cwd(), f),
           check: 'missing-source-entry',
-          level: 'warn',
+          level: 'error',
           msg: `Satoshi-authored entry quotes ${q.person ?? q.personSlug} but the quote has neither date nor sourceEntryId. Add the quote.date (so the source post can be located in the Archive), or set sourceEntryId directly. Otherwise the attribution falls back to the participant biography page.`,
         });
         continue;
@@ -496,21 +496,21 @@ function checkSourceEntryIds(enFiles) {
         violations.push({
           file: path.relative(process.cwd(), f),
           check: 'missing-source-entry',
-          level: 'warn',
+          level: 'error',
           msg: `Quote "${q.id}" (person: ${q.person ?? q.personSlug}, date: ${q.date}) has no matching entry in the same thread "${dir}". Either add the quoted post as a sibling entry, or set sourceEntryId explicitly if it lives elsewhere.`,
         });
       } else if (candidates.length === 1) {
         violations.push({
           file: path.relative(process.cwd(), f),
           check: 'source-entry-id-missing',
-          level: 'warn',
+          level: 'error',
           msg: `Quote "${q.id}" (person: ${q.person ?? q.personSlug}, date: ${q.date}) has a matching thread entry "${candidates[0].entryId}" — set sourceEntryId so the attribution links to the post, not the biography.`,
         });
       } else {
         violations.push({
           file: path.relative(process.cwd(), f),
           check: 'source-entry-id-ambiguous',
-          level: 'warn',
+          level: 'error',
           msg: `Quote "${q.id}" (person: ${q.person ?? q.personSlug}, date: ${q.date}) has ${candidates.length} same-day sibling candidates in the same thread: ${candidates.map(c => c.entryId).join(', ')}. Set sourceEntryId explicitly.`,
         });
       }

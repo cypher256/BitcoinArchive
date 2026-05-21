@@ -18,6 +18,7 @@ quotes:
   - id: "q1"
     person: "Hal Finney"
     personSlug: "hal-finney"
+    sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-27-re-bitcoin-v0-1-5-released-finney"
 ---
 
 <!-- speaker: Hal Finney -->
