@@ -23,7 +23,7 @@ translationStatus: complete
 
 <!-- speaker: Nicholas Bohm -->
 <!-- quote: q1 -->
-> 次は何ですか？
+> 次は何でしょうか？
 
 <!-- speaker: Satoshi Nakamoto -->
 v0.1.6 で次に予定しているのは、ブロック生成に複数のプロセッサーを活用することだ。現在は 1 つのスレッドしか起動しない。Core Duo や Quad のようなマルチコアプロセッサーをお持ちであれば、生産量が 2倍または 4倍になる。

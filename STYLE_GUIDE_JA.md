@@ -316,6 +316,7 @@ EN 版・JA 版の両方で変換する。
 | Adam Back | だ/である | 極めて簡潔 |
 | Wei Dai | **ですます** | 丁寧・事務的・分析的 |
 | Liberty Standard | **ですます** | 丁寧で実務的 |
+| Nicholas Bohm | **ですます** | 英国の年配の弁護士、簡潔で事務的 |
 | Nick Szabo | だ/である | 学者口調 |
 | Mike Hearn | だ/である | 情熱的で論理的 |
 | Laszlo Hanyecz | だ/である | カジュアル |

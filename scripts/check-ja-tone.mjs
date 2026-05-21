@@ -102,6 +102,10 @@ const CHARACTER_RULES = {
     tone: 'desu',
     notes: '丁寧で実務的。利用報告や要望を穏当に述べる',
   },
+  'Nicholas Bohm': {
+    tone: 'desu',
+    notes: '英国の年配の弁護士。簡潔で事務的、軽い自虐ユーモア（「〜のようです」「〜しました」「次は何でしょうか？」）',
+  },
   'Martti Malmi': {
     tone: 'desu',
     notes: '丁寧で控えめ。「〜ですよね」「〜しましょうか」',

@@ -27,36 +27,53 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-14-bitcoin-p2p-e-cash-paper-dillinger"
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 I'll try and hurry up and release the sourcecode as soon as possible to serve as a reference to help clear up all these implementation questions.
 
+<!-- speaker: Ray Dillinger -->
 <!-- quote: q1 -->
+<!-- tone-skip -->
 > When a coin is spent, the buyer and seller digitally sign a (blinded)
 > transaction record.
+<!-- /tone-skip -->
 
+<!-- speaker: Satoshi Nakamoto -->
 Only the buyer signs, and there's no blinding. 
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > If someone double spends, then the transaction record 
 > can be unblinded revealing the identity of the cheater. 
 
+<!-- speaker: Satoshi Nakamoto -->
 Identities are not used, and there's no reliance on recourse.  It's all prevention.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > This is done via a fairly standard cut-and-choose 
 > algorithm where the buyer responds to several challenges
 > with secret shares
 
+<!-- speaker: Satoshi Nakamoto -->
 No challenges or secret shares.  A basic transaction is just what you see in the figure in section 2.  A signature (of the buyer) satisfying the public key of the previous transaction, and a new public key (of the seller) that must be satisfied to spend it the next time.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > They may also receive chains as long as the one they're trying to
 > extend while they work, in which the last few "links" are links
 > that are *not* in common with the chain on which they're working.
 > These they ignore. 
 
+<!-- speaker: Satoshi Nakamoto -->
 Right, if it's equal in length, ties are broken by keeping the earliest one received.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > If it contains a double spend, then they create a "transaction" 
 > which is a proof of double spending, add it to their pool A, 
 > broadcast it, and continue work.
 
+<!-- speaker: Satoshi Nakamoto -->
 There's no need for reporting of "proof of double spending" like that.  If the same chain contains both spends, then the block is invalid and rejected.  
 
 Same if a block didn't have enough proof-of-work.  That block is invalid and rejected.  There's no need to circulate a report about it.  Every node could see that and reject it before relaying it.
@@ -67,6 +84,8 @@ We're not "on the lookout" for double spends to sound the alarm and catch the ch
 
 Even if an earlier spend wasn't in the chain yet, if it was already in all the nodes' pools, then the second spend would be turned away by all those nodes that already have the first spend.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > If the new chain is accepted, then they give up on adding their
 > current link, dump all the transactions from pool L back into pool
 > A (along with transactions they've received or created since
@@ -74,36 +93,49 @@ Even if an earlier spend wasn't in the chain yet, if it was already in all the n
 > which are already part of a link in the new chain, and start work
 > again trying to extend the new chain.
 
+<!-- speaker: Satoshi Nakamoto -->
 Right.  They also refresh whenever a new transaction comes in, so L pretty much contains everything in A all the time.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > CPU-intensive digital signature algorithm to 
 > sign the chain including the new block L. 
 
+<!-- speaker: Satoshi Nakamoto -->
 It's a Hashcash style SHA-256 proof-of-work (partial pre-image of zero), not a signature.  
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > Is there a mechanism to make sure that the "chain" does not consist
 > solely of links added by just the 3 or 4 fastest nodes? 'Cause a
 > broadcast transaction record could easily miss those 3 or 4 nodes
 > and if it does, and those nodes continue to dominate the chain, the
 > transaction might never get added.
 
+<!-- speaker: Satoshi Nakamoto -->
 If you're thinking of it as a CPU-intensive digital signing, then you may be thinking of a race to finish a long operation first and the fastest always winning.
 
 The proof-of-work is a Hashcash style SHA-256 collision finding.  It's a memoryless process where you do millions of hashes a second, with a small chance of finding one each time.  The 3 or 4 fastest nodes' dominance would only be proportional to their share of the total CPU power.  Anyone's chance of finding a solution at any time is proportional to their CPU power.
 
 There will be transaction fees, so nodes will have an incentive to receive and include all the transactions they can.  Nodes will eventually be compensated by transaction fees alone when the total coins created hits the pre-determined ceiling.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > Also, the work requirement for adding a link to the chain should
 > vary (again exponentially) with the number of links added to that
 > chain in the previous week, causing the rate of coin generation
 > (and therefore inflation) to be strictly controlled.
 
+<!-- speaker: Satoshi Nakamoto -->
 Right.
 
+<!-- speaker: Ray Dillinger -->
+<!-- quote: q1 -->
 > You need coin aggregation for this to scale. There needs to be
 > a "provable" transaction where someone retires ten single coins
 > and creates a new coin with denomination ten, etc. 
 
+<!-- speaker: Satoshi Nakamoto -->
 Every transaction is one of these.  Section 9, Combining and Splitting Value.  
 
 Satoshi Nakamoto

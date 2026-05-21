@@ -1,10 +1,10 @@
 ---
 title: "COPA evidence reveals Nicholas Bohm's previously unpublished emails with Satoshi"
 date: 2024-05-20T00:00:00Z
-type: "court-document"
+type: "article"
 source: "bitcoin-defense"
 sourceUrl: "https://bitcoindefense.org/assets/documents/COPA-v-Wright-Main-Judgment.pdf"
-author: "Nicholas Bohm"
+author: "Bitcoin Institute"
 participants:
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"

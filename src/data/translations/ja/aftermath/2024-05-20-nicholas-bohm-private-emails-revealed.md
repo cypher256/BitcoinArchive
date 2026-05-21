@@ -1,10 +1,10 @@
 ---
 title: "COPA 証拠で判明したニコラス・ボームとサトシの未公開メール"
 date: 2024-05-20T00:00:00Z
-type: "court-document"
+type: "article"
 source: "bitcoin-defense"
 sourceUrl: "https://bitcoindefense.org/assets/documents/COPA-v-Wright-Main-Judgment.pdf"
-author: "Nicholas Bohm"
+author: "Bitcoin Institute"
 participants:
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"

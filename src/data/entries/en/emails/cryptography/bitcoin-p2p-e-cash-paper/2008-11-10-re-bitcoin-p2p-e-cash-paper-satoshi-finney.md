@@ -26,7 +26,9 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
 ---
 
+<!-- speaker: Hal Finney -->
 <!-- quote: q1 -->
+<!-- tone-skip -->
 > it is mentioned that if a broadcast transaction does not reach all nodes,
 > it is OK, as it will get into the block chain before long. How does this
 > happen - what if the node that creates the "next" block (the first node
@@ -35,9 +37,13 @@ quotes:
 > about that transaction? Do all the nodes that did hear it keep that
 > transaction around, hoping to incorporate it into a block once they get
 > lucky enough to be the one which finds the next collision?
+<!-- /tone-skip -->
 
+<!-- speaker: Satoshi Nakamoto -->
 Right, nodes keep transactions in their working set until they get into a block.  If a transaction reaches 90% of nodes, then each time a new block is found, it has a 90% chance of being in it.
 
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > Or for example, what if a node is keeping two or more chains around as
 > it waits to see which grows fastest, and a block comes in for chain A
 > which would include a double-spend of a coin that is in chain B? Is that
@@ -45,10 +51,13 @@ Right, nodes keep transactions in their working set until they get into a block.
 > different sets of nodes heard about the two different transactions with
 > the same coin.)
 
+<!-- speaker: Satoshi Nakamoto -->
 That does not need to be checked for.  The transaction in whichever branch ends up getting ahead becomes the valid one, the other is invalid.  If someone tries to double spend like that, one and only one spend will always become valid, the others invalid.
 
 Receivers of transactions will normally need to hold transactions for perhaps an hour or more to allow time for this kind of possibility to be resolved.  They can still re-spend the coins immediately, but they should wait before taking an action such as shipping goods.
 
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > I also don't understand exactly how double-spending, or cancelling
 > transactions, is accomplished by a superior attacker who is able to muster
 > more computing power than all the honest participants. I see that he can
@@ -59,26 +68,35 @@ Receivers of transactions will normally need to hold transactions for perhaps an
 > attack would be helpful, in order to judge the gains to an attacker from
 > this, versus simply using his computing power to mint new coins honestly.
 
+<!-- speaker: Satoshi Nakamoto -->
 The attacker isn't adding blocks to the end.  He has to go back and redo the block his transaction is in and all the blocks after it, as well as any new blocks the network keeps adding to the end while he's doing that.  He's rewriting history.  Once his branch is longer, it becomes the new valid one.
 
 This touches on a key point.  Even though everyone present may see the shenanigans going on, there's no way to take advantage of that fact.
 
 It is strictly necessary that the longest chain is always considered the valid one.  Nodes that were present may remember that one branch was there first and got replaced by another, but there would be no way for them to convince those who were not present of this.  We can't have subfactions of nodes that cling to one branch that they think was first, others that saw another branch first, and others that joined later and never saw what happened.  The CPU power proof-of-work vote must have the final say.  The only way for everyone to stay on the same page is to believe that the longest chain is always the valid one, no matter what.
 
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > As far as the spending transactions, what checks does the recipient of a
 > coin have to perform? Does she need to go back through the coin's entire
 > history of transfers, and make sure that every transaction on the list is
 > indeed linked into the "timestamp" block chain? Or can she just do the
 > latest one?
 
+<!-- speaker: Satoshi Nakamoto -->
 The recipient just needs to verify it back to a depth that is sufficiently far back in the block chain, which will often only require a depth of 2 transactions.  All transactions before that can be discarded.
 
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > Do the timestamp nodes check transactions, making sure that
 > the previous transaction on a coin is in the chain, thereby enforcing
 > the rule that all transactions in the chain represent valid coins?
 
+<!-- speaker: Satoshi Nakamoto -->
 Right, exactly.  When a node receives a block, it checks the signatures of every transaction in it against previous transactions in blocks.  Blocks can only contain transactions that depend on valid transactions in previous blocks or the same block.  Transaction C could depend on transaction B in the same block and B depends on transaction A in an earlier block.
 
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > Sorry about all the questions, but as I said this does seem to be a
 > very promising and original idea, and I am looking forward to seeing
 > how the concept is further developed. It would be helpful to see a more
@@ -90,6 +108,7 @@ Right, exactly.  When a node receives a block, it checks the signatures of every
 > but I think a more formal, text description of the system would be a
 > helpful next step.
 
+<!-- speaker: Satoshi Nakamoto -->
 I appreciate your questions.  I actually did this kind of backwards.  I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper.  I think I will be able to release the code sooner than I could write a detailed spec.  You're already right about most of your assumptions where you filled in the blanks.
 
 Satoshi Nakamoto
