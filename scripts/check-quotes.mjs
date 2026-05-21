@@ -260,33 +260,51 @@ function checkFile(filePath, locale) {
   const violations = [];
   const rel = path.relative(process.cwd(), filePath);
 
-  // Legacy attribution detection runs regardless of whether quotes[] exists,
-  // because partially-migrated files keep the new structure alongside leftover
-  // legacy prose (the Ray Dillinger case). Marked warn for the 0521 plan window;
-  // bumps to error at Phase 2 once the violation list is fully drained.
-  const legacyLines = detectLegacyAttributionLines(body);
-  for (const m of legacyLines) {
-    violations.push({
-      file: rel,
-      check: 'legacy-attribution-prose',
-      level: 'warn',
-      msg: `Line ${m.line}: legacy attribution prose "${m.text}" (${m.kind}) precedes a blockquote — convert to <!-- quote: qN --> + quotes[] entry per STYLE_GUIDE_JA.md §「構造化された引用メタデータ」`,
-    });
-  }
-  const speakerCandidates = detectSpeakerWithoutQuoteMarker(body);
-  for (const m of speakerCandidates) {
-    const checkKind = m.kind === 'speaker-unknown-no-quote-marker'
-      ? 'speaker-unknown-candidate'
-      : 'speaker-named-no-quote-marker';
-    const detail = m.kind === 'speaker-unknown-no-quote-marker'
-      ? 'investigate whether the original poster can be identified and a primary entry created'
-      : `speaker "${m.speaker}" precedes a blockquote without a quote marker — add <!-- quote: qN --> + quotes[] (creating the source primary entry if missing)`;
-    violations.push({
-      file: rel,
-      check: checkKind,
-      level: 'warn',
-      msg: `Line ${m.line}: ${detail} (0521 plan)`,
-    });
+  // Scope: only entries authored BY Satoshi (author: "Satoshi Nakamoto").
+  // The editorial rule is "when Satoshi quotes someone in his own
+  // message, that quoted post should be in the Archive (linked via
+  // sourceEntryId)." Non-Satoshi entries quoting each other — Ray
+  // Dillinger quoting James A. Donald, Hal Finney quoting Wei Dai,
+  // etc. — are outside the Archive's curation scope. Aftermath /
+  // biography / analysis entries are editorial prose where "Hanyecz
+  // recalled:" before a blockquote is natural narrative, not a legacy
+  // attribution requiring structured conversion.
+  //
+  // Note: isSatoshi:true and even author:"Satoshi Nakamoto" include the
+  // Satoshi biography stub and similar editorial entries. Filter to
+  // primary-source types (mailing-list / correspondence / forum-post)
+  // so only actual messages Satoshi sent are in scope. Editorial prose
+  // in biographies / analyses / aftermath introducing a blockquote with
+  // narrative attribution is the prose style §3 of STYLE_GUIDE_JA.md
+  // explicitly preserves.
+  const isSatoshiPrimarySource = /^author:\s*"Satoshi Nakamoto"/m.test(content)
+    && /^type:\s*"(mailing-list|correspondence|forum-post)"/m.test(content);
+  const isSatoshiAuthored = isSatoshiPrimarySource;
+  if (isSatoshiAuthored) {
+    const legacyLines = detectLegacyAttributionLines(body);
+    for (const m of legacyLines) {
+      violations.push({
+        file: rel,
+        check: 'legacy-attribution-prose',
+        level: 'warn',
+        msg: `Line ${m.line}: legacy attribution prose "${m.text}" (${m.kind}) precedes a blockquote — convert to <!-- quote: qN --> + quotes[] entry per STYLE_GUIDE_JA.md §「構造化された引用メタデータ」`,
+      });
+    }
+    const speakerCandidates = detectSpeakerWithoutQuoteMarker(body);
+    for (const m of speakerCandidates) {
+      const checkKind = m.kind === 'speaker-unknown-no-quote-marker'
+        ? 'speaker-unknown-candidate'
+        : 'speaker-named-no-quote-marker';
+      const detail = m.kind === 'speaker-unknown-no-quote-marker'
+        ? 'investigate whether the original poster can be identified and a primary entry created'
+        : `speaker "${m.speaker}" precedes a blockquote without a quote marker — add <!-- quote: qN --> + quotes[] (creating the source primary entry if missing)`;
+      violations.push({
+        file: rel,
+        check: checkKind,
+        level: 'warn',
+        msg: `Line ${m.line}: ${detail} (0521 plan)`,
+      });
+    }
   }
 
   if (quotes.length === 0) {
