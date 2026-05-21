@@ -120,12 +120,155 @@ function parseFrontmatterManual(content) {
 // AST Checks
 // ---------------------------------------------------------------------------
 
+// Detect legacy attribution prose that immediately precedes a blockquote.
+// Returns array of { line: <1-based>, text, kind } objects. A "candidate" is
+// a non-blockquote, non-html-comment, non-empty line whose next significant
+// line (skipping empty lines and skippable HTML comments) is a blockquote.
+// Among candidates, lines matching one of the legacy attribution shapes are
+// flagged. See temp/0521_引用旧形式マイグレーション計画.md.
+const JA_LEGACY_SUFFIXES = [
+  /の投稿\s*[:：]\s*$/,
+  /の書き込み\s*[:：]\s*$/,
+  /の引用\s*[:：]\s*$/,
+  /は次のように書いた\s*[:：]?\s*$/,
+  /は次のように書いている\s*[:：。.]?\s*$/,
+];
+const EN_LEGACY_SUFFIXES = [
+  / wrote:\s*$/,
+  / writes:\s*$/,
+  /^Quoting [^\n]+:\s*$/,
+  /^Lainaus [^\n]+:\s*$/,
+  /^On [^,\n]+,[^\n]+ wrote:\s*$/,
+];
+const SPEAKER_HTML_RE = /^<!--\s*speaker:\s*(\S+?)\s*-->$/;
+const QUOTE_MARKER_HTML_RE = /^<!--\s*quote:\s*\w+\s*-->$/;
+const SKIPPABLE_LINE_HTML_RE = /^<!--\s*(tone-skip|\/tone-skip|audit:quote-skip|narrator:)/;
+
+function detectLegacyAttributionLines(body) {
+  const lines = body.split('\n');
+  const flagged = [];
+  let inCode = false;
+  // First pass: find every blockquote start line index
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i];
+    if (raw.startsWith('```')) inCode = !inCode;
+    if (inCode) continue;
+    const t = raw.trim();
+    if (t === '') continue;
+    if (raw.startsWith('>')) continue;
+    if (t.startsWith('<!--')) continue;
+
+    // Find next significant line
+    let nextIsBlockquote = false;
+    for (let j = i + 1; j < lines.length; j++) {
+      const r = lines[j];
+      const rt = r.trim();
+      if (rt === '') continue;
+      if (rt.startsWith('<!--')) {
+        // skip skippable HTML comments + speaker markers + quote markers
+        if (SPEAKER_HTML_RE.test(rt) || QUOTE_MARKER_HTML_RE.test(rt) || SKIPPABLE_LINE_HTML_RE.test(rt)) continue;
+        break;
+      }
+      if (r.startsWith('>')) {
+        nextIsBlockquote = true;
+      }
+      break;
+    }
+    if (!nextIsBlockquote) continue;
+
+    // Now this line is a candidate preceding a blockquote.
+    let kind = null;
+    for (const re of JA_LEGACY_SUFFIXES) {
+      if (re.test(t)) { kind = 'ja-legacy-suffix'; break; }
+    }
+    if (!kind) {
+      for (const re of EN_LEGACY_SUFFIXES) {
+        if (re.test(t)) { kind = 'en-legacy-suffix'; break; }
+      }
+    }
+    if (!kind) {
+      // JA: "On <date>... NAME は次のように書いている。" Gmail-style
+      if (/^\d{4}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日.*書いている。?$/.test(t)) {
+        kind = 'ja-on-date-form';
+      }
+    }
+    if (!kind) {
+      // Bare NAME: / NAME： before blockquote (catches Ray's レイ・ディリンジャー：)
+      // Avoid false positives: must be short (< 40 chars), no markdown links, no
+      // sentence-ending punctuation, ends with :/： only.
+      if (t.length <= 40 && /^[^[\(（\.。]+[:：]\s*$/.test(t) && !/[\.。]/.test(t.replace(/[:：]\s*$/, ''))) {
+        kind = 'bare-name-colon';
+      }
+    }
+    if (kind) {
+      flagged.push({ line: i + 1, text: t, kind });
+    }
+  }
+  return flagged;
+}
+
+// Detect <!-- speaker: unknown --> followed by a blockquote without a
+// <!-- quote: qN --> marker — "unstructured-quote-candidate". This is a
+// soft signal: speaker=unknown is also legitimately used outside quoted
+// contexts (e.g., editor notes). Only the combination "unknown + blockquote
+// + no quote marker" warrants investigation per the plan.
+function detectSpeakerUnknownCandidates(body) {
+  const lines = body.split('\n');
+  const flagged = [];
+  for (let i = 0; i < lines.length; i++) {
+    const t = lines[i].trim();
+    if (t !== '<!-- speaker: unknown -->') continue;
+    // Find next significant line, allowing skippable HTML
+    let nextBq = false;
+    let sawQuoteMarker = false;
+    for (let j = i + 1; j < lines.length; j++) {
+      const r = lines[j];
+      const rt = r.trim();
+      if (rt === '') continue;
+      if (rt.startsWith('<!--')) {
+        if (QUOTE_MARKER_HTML_RE.test(rt)) { sawQuoteMarker = true; break; }
+        if (SPEAKER_HTML_RE.test(rt) || SKIPPABLE_LINE_HTML_RE.test(rt)) continue;
+        break;
+      }
+      if (r.startsWith('>')) nextBq = true;
+      break;
+    }
+    if (nextBq && !sawQuoteMarker) {
+      flagged.push({ line: i + 1, text: t, kind: 'speaker-unknown-no-quote-marker' });
+    }
+  }
+  return flagged;
+}
+
 function checkFile(filePath, locale) {
   const content = readFileSync(filePath, 'utf-8');
   const { frontmatter, body } = parseFrontmatterManual(content);
   const quotes = frontmatter.quotes || [];
   const violations = [];
   const rel = path.relative(process.cwd(), filePath);
+
+  // Legacy attribution detection runs regardless of whether quotes[] exists,
+  // because partially-migrated files keep the new structure alongside leftover
+  // legacy prose (the Ray Dillinger case). Marked warn for the 0521 plan window;
+  // bumps to error at Phase 2 once the violation list is fully drained.
+  const legacyLines = detectLegacyAttributionLines(body);
+  for (const m of legacyLines) {
+    violations.push({
+      file: rel,
+      check: 'legacy-attribution-prose',
+      level: 'warn',
+      msg: `Line ${m.line}: legacy attribution prose "${m.text}" (${m.kind}) precedes a blockquote — convert to <!-- quote: qN --> + quotes[] entry per STYLE_GUIDE_JA.md §「構造化された引用メタデータ」`,
+    });
+  }
+  const speakerUnknownCandidates = detectSpeakerUnknownCandidates(body);
+  for (const m of speakerUnknownCandidates) {
+    violations.push({
+      file: rel,
+      check: 'speaker-unknown-candidate',
+      level: 'warn',
+      msg: `Line ${m.line}: <!-- speaker: unknown --> precedes a blockquote without a <!-- quote: qN --> marker — investigate whether the original poster can be identified and a primary entry created (0521 plan)`,
+    });
+  }
 
   if (quotes.length === 0) {
     // Check for legacy patterns in files without quotes[]
