@@ -1,10 +1,10 @@
 ---
 title: "初回コンタクト: マルッティ・マルミからサトシへ ( SourceForge sendmessage 経由 )"
-date: 2009-05-02T16:00:00Z
+date: 2009-05-02T00:00:00Z
 type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
-sourceNote: "SourceForge.net の sendmessage 機能経由でサトシの SF ユーザーアカウント宛に送信。 2024 年 2 月に公開された Malmi メールアーカイブに保存。"
+sourceNote: "SourceForge.net の sendmessage 機能経由でサトシの SF ユーザーアカウント宛に送信。 2024 年 2 月に公開された Malmi メールアーカイブに保存。 正確な送信時刻はアーカイブヘッダーに無く、 00:00:00Z は日付精度を示すプレースホルダー。 同日 17:06:58Z のサトシの返信 (2009-05-02-bitcoin-001) が直後の文脈となる。"
 author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"
