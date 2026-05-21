@@ -241,27 +241,53 @@ function detectSpeakerWithoutQuoteMarker(body) {
     // "reset" sets the speaker back to the entry author — by definition
     // resets the speaker context, not introducing a new quoted speaker.
     if (speakerName === 'reset') continue;
-    // Find next significant line, allowing skippable HTML
+
+    // Find next significant line, allowing skippable HTML. If a quote
+    // marker appears between this speaker and the upcoming blockquote,
+    // this section is structurally covered.
     let nextBq = false;
-    let sawQuoteMarker = false;
+    let sawQuoteMarkerAfter = false;
     for (let j = i + 1; j < lines.length; j++) {
       const r = lines[j];
       const rt = r.trim();
       if (rt === '') continue;
       if (rt.startsWith('<!--')) {
-        if (QUOTE_MARKER_HTML_RE.test(rt)) { sawQuoteMarker = true; break; }
+        if (QUOTE_MARKER_HTML_RE.test(rt)) { sawQuoteMarkerAfter = true; break; }
         if (SPEAKER_HTML_RE.test(rt) || SKIPPABLE_LINE_HTML_RE.test(rt)) continue;
         break;
       }
       if (r.startsWith('>')) nextBq = true;
       break;
     }
-    if (nextBq && !sawQuoteMarker) {
-      const kind = speakerName === 'unknown'
-        ? 'speaker-unknown-no-quote-marker'
-        : 'speaker-named-no-quote-marker';
-      flagged.push({ line: i + 1, text: t, kind, speaker: speakerName });
+    if (!nextBq || sawQuoteMarkerAfter) continue;
+
+    // Local "covered by chain" check: scan BACKWARD from this speaker
+    // toward the nearest non-blockquote, non-comment prose line (= end
+    // of an upstream quoted chain). If a <!-- quote: qN --> marker
+    // appears between that prose boundary and the current speaker, the
+    // current speaker is inside an already-attributed quote chain and
+    // we don't flag it. If we hit prose before any quote marker, this
+    // speaker starts a NEW quoted chain that needs its own marker.
+    let coveredByLocalChain = false;
+    for (let j = i - 1; j >= 0; j--) {
+      const r = lines[j];
+      const rt = r.trim();
+      if (rt === '') continue;
+      if (rt.startsWith('<!--')) {
+        if (QUOTE_MARKER_HTML_RE.test(rt)) { coveredByLocalChain = true; break; }
+        // Speaker / skippable HTML comments don't break the chain
+        continue;
+      }
+      if (r.startsWith('>')) continue; // still inside the upstream blockquote chain
+      // Reached a non-blockquote prose line — end of chain, NOT covered
+      break;
     }
+    if (coveredByLocalChain) continue;
+
+    const kind = speakerName === 'unknown'
+      ? 'speaker-unknown-no-quote-marker'
+      : 'speaker-named-no-quote-marker';
+    flagged.push({ line: i + 1, text: t, kind, speaker: speakerName });
   }
   return flagged;
 }
