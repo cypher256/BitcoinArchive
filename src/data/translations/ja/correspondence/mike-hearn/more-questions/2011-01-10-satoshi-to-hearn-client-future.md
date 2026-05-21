@@ -23,9 +23,19 @@ translationStatus: complete
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-07-hearn-to-satoshi-open-source"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
 ---
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
 > オープンソースだ。
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -40,6 +50,7 @@ secondarySources:
 素晴らしい、進捗を教えてほしい。
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q2 -->
 > > 非常に普及した場合に低すぎず、そうでない場合に高すぎないものが欲しかったのだ。
 >
 > この計算過程を見てみたいものだ。ある意味、コインの数は任意だ。nanocoinの表現により、発行量は事実上無限と言えるほど膨大だからだ。

@@ -570,6 +570,68 @@ normalized.
     the [Primary-Source Entries](#primary-source-entries) preservation
     principle applied to inline edit markers.
 
+### Do not repeat `<!-- quote: qN -->` for the same source in one file
+
+When the entry author (typically Satoshi) quotes **multiple
+blockquotes from the same single source message** (e.g., five
+excerpts from one Mike Hearn email), place the `<!-- quote: qN -->`
+marker **only at the first quoted block**. Subsequent `<!-- speaker:
+NAME -->` shifts back to the same person reuse the same `qN`
+implicitly and must NOT repeat the `<!-- quote: qN -->` marker.
+
+```markdown
+<!-- correct -->
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+> First question...
+
+<!-- speaker: Satoshi Nakamoto -->
+Response...
+
+<!-- speaker: Mike Hearn -->
+> Second question (same source email, same q1)...
+
+<!-- speaker: Satoshi Nakamoto -->
+Response...
+```
+
+```markdown
+<!-- violation -->
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+> First question...
+
+<!-- speaker: Satoshi Nakamoto -->
+Response...
+
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->   ← repeated q1, renders the same chip twice
+> Second question...
+```
+
+**Why:** `<!-- quote: qN -->` is replaced by `remark-quote-blocks`
+with an attribution chip ("Mike Hearn's post", etc.) built from
+`quotes[N]`. Repeating the same `qN` produces N copies of the same
+chip in the rendered page — visually noisy, and misleading because
+the chip's `sourceEntryId` points to a single source message that is
+being referenced repeatedly, not to distinct sources.
+
+**Multiple distinct sources:** if the entry quotes more than one
+person (e.g., Satoshi quotes both Hal Finney and Wei Dai in one
+reply), give each source its own `qN` and place each `qN`'s first
+marker at that source's first quoted block. Two different chips
+appearing is correct because the sources are different.
+
+**EN/JA parity:** this is a marker-placement rule. Both EN and JA
+files must have the same marker count at the same structural
+positions, otherwise `verify-translations.sh` flags the divergence.
+
+**Detector:** `scripts/check-quotes.mjs` (`speaker-named-no-quote-marker`
+check) treats a speaker shift as covered when the speaker NAME
+matches the `quotes[N].person` of an earlier `<!-- quote: qN -->`
+already present in the same file — the shift is a continuation of
+that chain, not a new quoted speaker.
+
 ### Audit
 
 `scripts/check-editorial-markers.mjs` enforces these rules under

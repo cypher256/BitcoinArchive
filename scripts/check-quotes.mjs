@@ -52,6 +52,34 @@ const REAL_NAMES_REQUIRING_SLUG = new Set([
   'Eugen Leitl',
 ]);
 
+// Name aliases that resolve to the same person — used by the
+// `speaker-named-no-quote-marker` detector to decide whether a
+// speaker shift continues an existing chain (same person already
+// attributed by an earlier `<!-- quote: qN -->`). The frontmatter
+// `quotes[].person` sometimes carries an email handle (e.g.,
+// "mmalmi@cc.hut.fi") while body markers use the display name
+// (e.g., "Martti Malmi"). Both must compare equal.
+const NAME_ALIAS_GROUPS = [
+  ['Martti Malmi', 'mmalmi@cc.hut.fi', 'sirius-m', 'Sirius'],
+  ['Satoshi Nakamoto', 'Satoshi', 'satoshi'],
+  ['Hal Finney', 'Hal'],
+  ['Ray Dillinger', 'Ray Dillinger (Bear)', 'Bear'],
+  ['Jeff Garzik', 'jgarzik'],
+  ['Gavin Andresen', 'gavinandresen'],
+  ['James A. Donald', 'James Donald'],
+  ['Liberty Standard', 'NewLibertyStandard'],
+  ['Dustin Trammell', 'Dustin D. Trammell'],
+];
+const NAME_ALIAS_MAP = new Map();
+for (const group of NAME_ALIAS_GROUPS) {
+  const canonical = group[0];
+  for (const alias of group) NAME_ALIAS_MAP.set(alias, canonical);
+}
+function canonicalizePersonName(s) {
+  const stripped = String(s).replace(/\s*\([^)]*\)\s*$/, '').trim();
+  return NAME_ALIAS_MAP.get(stripped) || NAME_ALIAS_MAP.get(s) || stripped;
+}
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -230,11 +258,40 @@ function detectLegacyAttributionLines(body) {
 // Both warrant investigation: the primary entry should exist (create if
 // missing), and the <!-- quote: qN --> marker + quotes[] entry should be
 // added so the attribution renders as a real link.
-function detectSpeakerWithoutQuoteMarker(body) {
+function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
   const lines = body.split('\n');
   const flagged = [];
+
+  // Build a map of quote.id → canonical person name from frontmatter
+  // so we can tell whether a speaker shift continues an existing chain
+  // (same person already attributed by an earlier `<!-- quote: qN -->`)
+  // or introduces a new quoted speaker that needs its own marker.
+  // Canonicalization resolves email handles and parenthetical suffixes
+  // to a single name (e.g., "mmalmi@cc.hut.fi" → "Martti Malmi") so
+  // display variants in `<!-- speaker: ... -->` match `quotes[].person`.
+  const quoteIdToPerson = new Map();
+  for (const q of quotes) {
+    if (q && q.id && q.person) quoteIdToPerson.set(String(q.id), canonicalizePersonName(q.person));
+  }
+
+  // Track the running set of (person) attributed by `<!-- quote: qN -->`
+  // markers seen earlier in the file. A speaker shift to a person in
+  // this set is a continuation of an established chain — STYLE_GUIDE.md
+  // "Do not repeat <!-- quote: qN --> for the same source in one file"
+  // says only the first quoted block per source carries the marker.
+  const attributedPersons = new Set();
+
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i].trim();
+
+    // Update the running set when we pass a quote marker.
+    const quoteMatch = t.match(QUOTE_MARKER_RE);
+    if (quoteMatch) {
+      const person = quoteIdToPerson.get(quoteMatch[1]);
+      if (person) attributedPersons.add(person);
+      continue;
+    }
+
     const speakerMatch = t.match(SPEAKER_HTML_RE);
     if (!speakerMatch) continue;
     const speakerName = speakerMatch[1];
@@ -260,6 +317,14 @@ function detectSpeakerWithoutQuoteMarker(body) {
       break;
     }
     if (!nextBq || sawQuoteMarkerAfter) continue;
+
+    // File-level "same source already attributed" check: if any
+    // earlier `<!-- quote: qN -->` in this file maps to a quotes[]
+    // entry whose person matches this speaker, the shift is a
+    // continuation of the established chain (STYLE_GUIDE.md "Do not
+    // repeat <!-- quote: qN --> for the same source in one file"). A
+    // new marker would render a duplicate attribution chip.
+    if (attributedPersons.has(canonicalizePersonName(speakerName))) continue;
 
     // Local "covered by chain" check: scan BACKWARD from this speaker
     // toward the nearest non-blockquote, non-comment prose line (= end
@@ -331,18 +396,29 @@ function checkFile(filePath, locale) {
         msg: `Line ${m.line}: legacy attribution prose "${m.text}" (${m.kind}) precedes a blockquote — convert to <!-- quote: qN --> + quotes[] entry per STYLE_GUIDE_JA.md §「構造化された引用メタデータ」`,
       });
     }
-    const speakerCandidates = detectSpeakerWithoutQuoteMarker(body);
+    // Extract entry author for "speaker == author" exception (a
+    // shift back to the entry author resets context and does not
+    // introduce a new quoted speaker, same effect as "reset").
+    const authorMatch = content.match(/^author:\s*"([^"]+)"/m);
+    const entryAuthor = authorMatch ? canonicalizePersonName(authorMatch[1]) : null;
+    const speakerCandidates = detectSpeakerWithoutQuoteMarker(body, quotes);
     for (const m of speakerCandidates) {
+      // Skip shifts back to the entry author — these are resets, not
+      // new quoted speakers (the author isn't quoting themselves).
+      if (entryAuthor && canonicalizePersonName(m.speaker) === entryAuthor) continue;
       const checkKind = m.kind === 'speaker-unknown-no-quote-marker'
         ? 'speaker-unknown-candidate'
         : 'speaker-named-no-quote-marker';
       const detail = m.kind === 'speaker-unknown-no-quote-marker'
         ? 'investigate whether the original poster can be identified and a primary entry created'
         : `speaker "${m.speaker}" precedes a blockquote without a quote marker — add <!-- quote: qN --> + quotes[] (creating the source primary entry if missing)`;
+      // 0521 plan complete — `speaker-named-no-quote-marker` is now a
+      // hard error; `speaker-unknown-candidate` stays as warn because
+      // it requires investigation rather than a mechanical fix.
       violations.push({
         file: rel,
         check: checkKind,
-        level: 'warn',
+        level: checkKind === 'speaker-named-no-quote-marker' ? 'error' : 'warn',
         msg: `Line ${m.line}: ${detail} (0521 plan)`,
       });
     }

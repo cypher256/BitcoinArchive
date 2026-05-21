@@ -27,6 +27,7 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-15-bitcoin-p2p-e-cash-paper-dillinger-2"
 ---
 
+<!-- speaker: Ray Dillinger -->
 <!-- quote: q1 -->
 > One way to do this would be
 > to have the person recieving the coin generate an asymmetric
@@ -36,6 +37,7 @@ quotes:
 > key pair, probably by using it to sign the key provided by
 > the new seller.
 
+<!-- speaker: Satoshi Nakamoto -->
 Right, it's ECC digital signatures.  A new key pair is used for every
 transaction.
 
@@ -43,27 +45,32 @@ It's not pseudonymous in the sense of nyms identifying people, but it
 is at least a little pseudonymous in that the next action on a coin
 can be identified as being from the owner of that coin.
 
+<!-- speaker: Ray Dillinger -->
 > Mmmm. I don't know if I'm comfortable with that. You're saying
 > there's no effort to identify and exclude nodes that don't
 > cooperate? I suspect this will lead to trouble and possible DOS
 > attacks.
 
+<!-- speaker: Satoshi Nakamoto -->
 There is no reliance on identifying anyone.  As you've said, it's
 futile and can be trivially defeated with sock puppets.
 
 The credential that establishes someone as real is the ability to
 supply CPU power. 
 
+<!-- speaker: Ray Dillinger -->
 > Until.... until what? How does anybody know when a transaction
 > has become irrevocable? Is "a few" blocks three? Thirty? A
 > hundred? Does it depend on the number of nodes? Is it logarithmic
 > or linear in number of nodes?
 
+<!-- speaker: Satoshi Nakamoto -->
 Section 11 calculates the worst case under attack.  Typically, 5 or
 10 blocks is enough for that.  If you're selling something that
 doesn't merit a network-scale attack to steal it, in practice you
 could cut it closer.
 
+<!-- speaker: Ray Dillinger -->
 > But in the absence of identity, there's no downside to them
 > if spends become invalid, if they've already received the
 > goods they double-spent for (access to website, download,
@@ -78,6 +85,7 @@ could cut it closer.
 > customer when they find the that their coin is invalid because
 > the customer has doublespent.
 
+<!-- speaker: Satoshi Nakamoto -->
 This is a version 2 problem that I believe can be solved fairly
 satisfactorily for most applications.
 

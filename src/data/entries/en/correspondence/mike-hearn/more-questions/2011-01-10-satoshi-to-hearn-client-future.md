@@ -22,22 +22,39 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+quotes:
+  - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-07-hearn-to-satoshi-open-source"
+  - id: "q2"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
 ---
 
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
 > Open source.
 
+<!-- speaker: Satoshi Nakamoto -->
 Perfect. Once your code shows how to simplify it down, other authors can follow your lead. Client is a less daunting challenge than full implementation. If it's within reach of more developers, they'll come up with more polished UI and other things I didn't think of. I expect the original software will become the industrial old thing used by GPU farms and pool servers.
 
 BTW, later a good feature for a client version is to keep your private keys encrypted and you give your password each time you send.
 
+<!-- speaker: Mike Hearn -->
 > I managed to spend my first coins on the testnet with my app a few days ago, hopefully will get another chance to make progress this weekend. Probably will have something to show publically sometime in Feb, touch wood.
 
+<!-- speaker: Satoshi Nakamoto -->
 Great, keep me updated.
 
+<!-- speaker: Mike Hearn -->
+<!-- quote: q2 -->
 > > I wanted something that would be not too low if it was very popular and not too high if it wasn't.
 >
 > It'd be interesting to see the working for this. In some sense the number of coins is arbitrary as the nanocoin representation means the issuance is so huge it's practically infinite.
 
+<!-- speaker: Satoshi Nakamoto -->
 It works out to an even 10 minutes per block:
 21000000 / (50 BTC * 24hrs * 365days * 4years * 2) = 5.99 blocks/hour
 

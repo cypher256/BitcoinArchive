@@ -35,39 +35,30 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-<!-- speaker: Gavin Andresen -->
 > <!-- quote: q2 -->
-> <!-- speaker: Martti Malmi -->
 >> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：
 >> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 >>
 >> この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきでしょうか？
 >
-> <!-- speaker: Gavin Andresen -->
 > それは問題を招くことになりそうだし、フォーラムに登録した全員の暗黙の信頼を裏切ることになると思う。
-
 <!-- /tone-skip -->
 
-<!-- speaker: Satoshi Nakamoto -->
 同意だ。データベースは手元から出さないでほしい。プライベートメッセージ、メールアドレス、パスワードが入っている。
 
 ちなみに、パスワードハッシュ＝パスワードだ。フォーラムで人々が使う短いパスワードのハッシュを破るのは簡単だ。
-6 文字 = 3 の難易度
-7 文字 = 410 の難易度
+6 文字 = 3 の難易度<br>
+7 文字 = 410 の難易度<br>
 8 文字 = 25418 の難易度
 
 
 <!-- tone-skip -->
-<!-- speaker: Martti Malmi -->
 >> もう一つの選択肢は
 >> > バックアップをPGPで暗号化して複数の場所に保管することです。
 >
-<!-- speaker: Gavin Andresen -->
 > その方が賢明だと思う。毎日のバックアップをどこかにコピーするのが正しいやり方だろう。合理的なサイズ（1ギガバイト未満）であれば、Amazon S3のストレージと帯域幅の費用を喜んで負担する。
-
 <!-- /tone-skip -->
 
-<!-- speaker: Satoshi Nakamoto -->
 +1
 
 暗号化していたとしても、信頼できる保管場所の方が良い。

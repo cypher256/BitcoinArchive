@@ -41,7 +41,6 @@ I'll try and hurry up and release the sourcecode as soon as possible to serve as
 Only the buyer signs, and there's no blinding. 
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > If someone double spends, then the transaction record 
 > can be unblinded revealing the identity of the cheater. 
 
@@ -49,7 +48,6 @@ Only the buyer signs, and there's no blinding.
 Identities are not used, and there's no reliance on recourse.  It's all prevention.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > This is done via a fairly standard cut-and-choose 
 > algorithm where the buyer responds to several challenges
 > with secret shares
@@ -58,7 +56,6 @@ Identities are not used, and there's no reliance on recourse.  It's all preventi
 No challenges or secret shares.  A basic transaction is just what you see in the figure in section 2.  A signature (of the buyer) satisfying the public key of the previous transaction, and a new public key (of the seller) that must be satisfied to spend it the next time.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > They may also receive chains as long as the one they're trying to
 > extend while they work, in which the last few "links" are links
 > that are *not* in common with the chain on which they're working.
@@ -68,7 +65,6 @@ No challenges or secret shares.  A basic transaction is just what you see in the
 Right, if it's equal in length, ties are broken by keeping the earliest one received.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > If it contains a double spend, then they create a "transaction" 
 > which is a proof of double spending, add it to their pool A, 
 > broadcast it, and continue work.
@@ -85,7 +81,6 @@ We're not "on the lookout" for double spends to sound the alarm and catch the ch
 Even if an earlier spend wasn't in the chain yet, if it was already in all the nodes' pools, then the second spend would be turned away by all those nodes that already have the first spend.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > If the new chain is accepted, then they give up on adding their
 > current link, dump all the transactions from pool L back into pool
 > A (along with transactions they've received or created since
@@ -97,7 +92,6 @@ Even if an earlier spend wasn't in the chain yet, if it was already in all the n
 Right.  They also refresh whenever a new transaction comes in, so L pretty much contains everything in A all the time.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > CPU-intensive digital signature algorithm to 
 > sign the chain including the new block L. 
 
@@ -105,7 +99,6 @@ Right.  They also refresh whenever a new transaction comes in, so L pretty much 
 It's a Hashcash style SHA-256 proof-of-work (partial pre-image of zero), not a signature.  
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > Is there a mechanism to make sure that the "chain" does not consist
 > solely of links added by just the 3 or 4 fastest nodes? 'Cause a
 > broadcast transaction record could easily miss those 3 or 4 nodes
@@ -120,7 +113,6 @@ The proof-of-work is a Hashcash style SHA-256 collision finding.  It's a memoryl
 There will be transaction fees, so nodes will have an incentive to receive and include all the transactions they can.  Nodes will eventually be compensated by transaction fees alone when the total coins created hits the pre-determined ceiling.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > Also, the work requirement for adding a link to the chain should
 > vary (again exponentially) with the number of links added to that
 > chain in the previous week, causing the rate of coin generation
@@ -130,7 +122,6 @@ There will be transaction fees, so nodes will have an incentive to receive and i
 Right.
 
 <!-- speaker: Ray Dillinger -->
-<!-- quote: q1 -->
 > You need coin aggregation for this to scale. There needs to be
 > a "provable" transaction where someone retires ten single coins
 > and creates a new coin with denomination ten, etc. 

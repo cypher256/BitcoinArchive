@@ -211,6 +211,48 @@ quotes:
 
 `npm run check:quotes` がこの構造を検証する。
 
+#### 同一引用元への複数引用ブロックは marker を繰り返さない
+
+サトシ (またはエントリー著者) が**同じ 1 通のメール / 投稿から複数の引用ブロックを引く**場合 (例: マイク・ハーンの 1 通のメールから 5 箇所引用)、`<!-- quote: qN -->` マーカーは**最初の引用ブロックの 1 回のみ**置く。後続の引用ブロックには `<!-- speaker: NAME -->` のみ置き、`<!-- quote: qN -->` を繰り返してはならない。
+
+```markdown
+<!-- 正しい -->
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+> 1 つ目の質問...
+
+<!-- speaker: Satoshi Nakamoto -->
+返答...
+
+<!-- speaker: Mike Hearn -->
+> 2 つ目の質問 (同じ送信元、同じ q1) ...
+
+<!-- speaker: Satoshi Nakamoto -->
+返答...
+```
+
+```markdown
+<!-- 違反 -->
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
+> 1 つ目の質問...
+
+<!-- speaker: Satoshi Nakamoto -->
+返答...
+
+<!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->   ← 同じ q1 を再度、attribution chip が二重表示
+> 2 つ目の質問...
+```
+
+**理由:** `<!-- quote: qN -->` は renderer によって冒頭メタデータ `quotes[N]` の attribution chip (「マイク・ハーンの投稿」 等) に変換される。同じ qN を同一ファイルで繰り返すと、同じ chip が引用ブロック数だけ並んで表示され、視覚的にうるさく、また「異なる送信元から繰り返し引用している」 という誤った意味を読者に与える。q1 の `sourceEntryId` は同じ 1 通を指しているので、chip も 1 回だけが正しい。
+
+**例外:** 異なる送信元の引用が混在する場合 (例: サトシがハル・フィニーとウェイ・ダイの両方を 1 通の中で引用) は、各送信元ごとに別の `qN` を用意し、各々の最初の引用に `<!-- quote: qN -->` を置く。送信元が切り替わるため chip は 2 種類表示されて正しい。
+
+**EN/JA parity:** 本ルールは marker 配置のルールであり、EN/JA 両方で同じ配置にする。片方だけマーカーを追加して `verify-translations.sh` の marker count を狂わせない。
+
+**検出:** `scripts/check-quotes.mjs` の `speaker-named-no-quote-marker` チェックは、speaker NAME が同一ファイルの既存 `<!-- quote: qN -->` の `quotes[N].person` (または `personSlug` 経由の和名) と一致する場合、その speaker は既存の鎖の継続と判定して非フラグにする。新規の人物が登場した場合のみフラグする。
+
 ### 引用が絡む英文段落の翻訳一貫性
 
 同じ英語段落が複数のエントリーに登場し、**少なくとも 1 箇所が `>` 引用ブロックで使われている**場合、対応する日本語訳は同一の文言に統一する。読者がエントリーをまたいで参照したとき、同じ発言が別の言葉で出ると混乱するため。

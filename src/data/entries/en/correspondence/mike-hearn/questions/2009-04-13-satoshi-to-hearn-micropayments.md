@@ -29,14 +29,17 @@ quotes:
     sourceEntryId: "correspondence/mike-hearn/questions/2009-04-13-hearn-to-satoshi-null-blocks"
 ---
 
+<!-- speaker: Mike Hearn -->
 <!-- quote: q1 -->
-
 > My best guess - it is the length of the global chain, and the rapid advance at the start is as the software downloads and verifies the preceding blocks in the chain as being valid.
 
+<!-- speaker: Satoshi Nakamoto -->
 Right. I'm trying to think of more clear wording for that, maybe "%d network blocks" or "%d block chain".
 
+<!-- speaker: Mike Hearn -->
 > If we assume that 0.1% is a good risk rate, then z=5 thus any transaction must wait a bit less than an hour before being solidified in the chain. As micropayments for things like web content or virtual goods are by definition something that requires low overhead, waiting an hour seems like quite a significant hurdle.
 
+<!-- speaker: Satoshi Nakamoto -->
 For the actual risk, multiply the 0.1% by the probability that the buyer is an attacker with a huge network of computers.
 
 For micropayments, you can safely accept the payment immediately. The size of the payment is too small for the effort to steal it. Micropayments are almost always for intellectual property, where there's no physical loss to the merchant. Anyone trying to steal a micropayment would probably not be a paying customer anyway, and if they want to steal intellectual property they can use the file sharing networks.
@@ -47,16 +50,22 @@ The usual scam against a merchant that doesn't wait for confirming blocks would 
 
 Anything that grants access to something, like something that takes a while to download, access to a website, web hosting, a subscription or service, can be cancelled a few minutes later if the transaction is rejected.
 
+<!-- speaker: Mike Hearn -->
 > is confusing for me, because it appears the only way the honest chain can grow faster than a chain worked on by 1 attacking cpu is if the keyspace to scan looking for a partial collision is sharded evenly amongst the participating honest nodes. That way the speed at which collisions are found would be proportional to the number of nodes. Yet I don't see any discussion of such work sharding, which obviously adds complexity.
 
+<!-- speaker: Satoshi Nakamoto -->
 The keyspace is huge, 2^256. The thing being hashed includes the node's public key and a random nonce, so the chance of any two nodes duplicating work on the same space is negligible.
 
+<!-- speaker: Mike Hearn -->
 > How is the required difficulty of each block communicated through the network and agreed upon?
 
+<!-- speaker: Satoshi Nakamoto -->
 It's not communicated. The formula is hardcoded in the program and every node does the same calculation to know what difficulty is required for the next block. If someone diverged from the formula, their block would not be accepted by the majority.
 
+<!-- speaker: Mike Hearn -->
 > Thanks once again. I have yet more questions but this is enough for one email :) I will be happy to summarize these discussions into an FAQ-like document at some point. Apologies if the questions seem trivial.
 
+<!-- speaker: Satoshi Nakamoto -->
 No problem, thanks for testing it on Mac Wine.
 
 Satoshi
