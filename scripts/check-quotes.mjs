@@ -233,6 +233,18 @@ function detectLegacyAttributionLines(body) {
 function detectSpeakerWithoutQuoteMarker(body) {
   const lines = body.split('\n');
   const flagged = [];
+  // First pass: locate the FIRST <!-- quote: qN --> marker in the body
+  // (if any). The rendering convention is one quote-chip per file/source,
+  // and EN/JA must mirror marker counts. Once any quote marker has
+  // appeared, subsequent speaker shifts in the file are treated as part
+  // of the same already-attributed quote chain — adding more markers
+  // would over-render attribution chips and break EN/JA parity.
+  // Files with ZERO quote markers and structured <!-- speaker: --> shifts
+  // remain the genuine "needs structuring" target.
+  let firstQuoteMarkerIdx = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (QUOTE_MARKER_HTML_RE.test(lines[i].trim())) { firstQuoteMarkerIdx = i; break; }
+  }
   for (let i = 0; i < lines.length; i++) {
     const t = lines[i].trim();
     const speakerMatch = t.match(SPEAKER_HTML_RE);
@@ -241,7 +253,10 @@ function detectSpeakerWithoutQuoteMarker(body) {
     // "reset" sets the speaker back to the entry author — by definition
     // resets the speaker context, not introducing a new quoted speaker.
     if (speakerName === 'reset') continue;
-
+    // If a quote marker exists anywhere upstream in this file, the file
+    // is already structurally attributed and we don't double-flag every
+    // speaker shift inside the same email being quoted.
+    if (firstQuoteMarkerIdx >= 0 && i > firstQuoteMarkerIdx) continue;
     // Find next significant line, allowing skippable HTML. If a quote
     // marker appears between this speaker and the upcoming blockquote,
     // this section is structurally covered.
@@ -260,29 +275,6 @@ function detectSpeakerWithoutQuoteMarker(body) {
       break;
     }
     if (!nextBq || sawQuoteMarkerAfter) continue;
-
-    // Local "covered by chain" check: scan BACKWARD from this speaker
-    // toward the nearest non-blockquote, non-comment prose line (= end
-    // of an upstream quoted chain). If a <!-- quote: qN --> marker
-    // appears between that prose boundary and the current speaker, the
-    // current speaker is inside an already-attributed quote chain and
-    // we don't flag it. If we hit prose before any quote marker, this
-    // speaker starts a NEW quoted chain that needs its own marker.
-    let coveredByLocalChain = false;
-    for (let j = i - 1; j >= 0; j--) {
-      const r = lines[j];
-      const rt = r.trim();
-      if (rt === '') continue;
-      if (rt.startsWith('<!--')) {
-        if (QUOTE_MARKER_HTML_RE.test(rt)) { coveredByLocalChain = true; break; }
-        // Speaker / skippable HTML comments don't break the chain
-        continue;
-      }
-      if (r.startsWith('>')) continue; // still inside the upstream blockquote chain
-      // Reached a non-blockquote prose line — end of chain, NOT covered
-      break;
-    }
-    if (coveredByLocalChain) continue;
 
     const kind = speakerName === 'unknown'
       ? 'speaker-unknown-no-quote-marker'

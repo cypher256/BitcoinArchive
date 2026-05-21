@@ -19,9 +19,15 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-24-donation-217"
 translationStatus: complete
 ---
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 >> ところで、私がビルドしたbitcoindをあなたのホストで使えるか、それとも自分でビルドする必要があるか？
 >

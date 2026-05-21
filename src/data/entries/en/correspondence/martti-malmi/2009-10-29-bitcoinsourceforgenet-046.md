@@ -19,6 +19,11 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-28-bitcoinsourceforgenet-045"
 ---
 
 I'll convert the CriticalSection code to wxCriticalSection and upload it 
@@ -29,6 +34,7 @@ everything in.
 You're probably right, it's about time to do a linux build.  I've been 
 working on getting my linux machine set up and building the dependencies.
 
+<!-- quote: q1 -->
 > Ok. I replaced the Windows thread and socket library includes with their 
 > POSIX equivalents, and now it only gives a few errors, mostly from the 
 > CriticalSections. If I make it work, I'll put it into svn/branches, it 

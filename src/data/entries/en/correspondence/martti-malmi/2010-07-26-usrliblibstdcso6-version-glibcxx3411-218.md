@@ -19,8 +19,14 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-24-donation-217"
 ---
 
+<!-- quote: q1 -->
 >> Btw, are you able to use my builds of bitcoind on your host, or do you
 >> have to build it yourself?
 > 
