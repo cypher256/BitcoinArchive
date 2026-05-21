@@ -249,9 +249,11 @@ quotes:
 
 **例外:** 異なる送信元の引用が混在する場合 (例: サトシがハル・フィニーとウェイ・ダイの両方を 1 通の中で引用) は、各送信元ごとに別の `qN` を用意し、各々の最初の引用に `<!-- quote: qN -->` を置く。送信元が切り替わるため chip は 2 種類表示されて正しい。
 
+**同一人物・別送信元の曖昧解消:** `quotes[]` に同一人物の qN が 2 件以上ある場合 (例: サトシが 1 通のエントリーで Mike Hearn の **別々の 2 通**を引用、 `q1` = open-source 返信、 `q2` = SPV 進捗報告) は、 `<!-- speaker: Mike Hearn -->` だけでは「q1 の継続か q2 の開始か」 判定できない。 後続の各 speaker シフトに**明示的に** `<!-- quote: q1 -->` または `<!-- quote: q2 -->` を置いて曖昧性を解消する。 この場合、同じ qN の chip が複数回表示されるのは曖昧解消のコストとして許容する (本来の dedup ルールが効くのは同一人物 1 qN の場合のみ)。
+
 **EN/JA parity:** 本ルールは marker 配置のルールであり、EN/JA 両方で同じ配置にする。片方だけマーカーを追加して `verify-translations.sh` の marker count を狂わせない。
 
-**検出:** `scripts/check-quotes.mjs` の `speaker-named-no-quote-marker` チェックは、speaker NAME が同一ファイルの既存 `<!-- quote: qN -->` の `quotes[N].person` (または `personSlug` 経由の和名) と一致する場合、その speaker は既存の鎖の継続と判定して非フラグにする。新規の人物が登場した場合のみフラグする。
+**検出:** `scripts/check-quotes.mjs` の `speaker-named-no-quote-marker` チェックは、 speaker NAME が同一ファイルの既存 `<!-- quote: qN -->` の `quotes[N].person` (または `personSlug` 経由の和名) と一致し、**かつ `quotes[]` 内に同一人物の qN が 1 件しかない**場合、 その speaker は既存の鎖の継続と判定して非フラグにする。 同一人物の qN が 2 件以上ある場合は曖昧解消のため明示マーカーを要求する (上記「同一人物・別送信元の曖昧解消」 参照)。
 
 ### 引用が絡む英文段落の翻訳一貫性
 

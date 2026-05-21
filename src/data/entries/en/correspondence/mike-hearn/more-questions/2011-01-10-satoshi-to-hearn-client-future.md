@@ -43,6 +43,7 @@ Perfect. Once your code shows how to simplify it down, other authors can follow 
 BTW, later a good feature for a client version is to keep your private keys encrypted and you give your password each time you send.
 
 <!-- speaker: Mike Hearn -->
+<!-- quote: q1 -->
 > I managed to spend my first coins on the testnet with my app a few days ago, hopefully will get another chance to make progress this weekend. Probably will have something to show publically sometime in Feb, touch wood.
 
 <!-- speaker: Satoshi Nakamoto -->

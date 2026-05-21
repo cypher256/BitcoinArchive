@@ -270,8 +270,20 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
   // to a single name (e.g., "mmalmi@cc.hut.fi" → "Martti Malmi") so
   // display variants in `<!-- speaker: ... -->` match `quotes[].person`.
   const quoteIdToPerson = new Map();
+  // Count how many quotes[] entries map to each canonical person.
+  // If exactly one qN covers this person, a later speaker shift can
+  // implicitly continue that qN (dedup rule). If multiple qN exist
+  // for the same person (e.g., q1 = Mike Hearn / source A, q2 = Mike
+  // Hearn / source B), a bare speaker shift is ambiguous about which
+  // source it continues, so the editor must place an explicit
+  // <!-- quote: qN --> marker to disambiguate.
+  const personQuoteCount = new Map();
   for (const q of quotes) {
-    if (q && q.id && q.person) quoteIdToPerson.set(String(q.id), canonicalizePersonName(q.person));
+    if (q && q.id && q.person) {
+      const person = canonicalizePersonName(q.person);
+      quoteIdToPerson.set(String(q.id), person);
+      personQuoteCount.set(person, (personQuoteCount.get(person) || 0) + 1);
+    }
   }
 
   // Track the running set of (person) attributed by `<!-- quote: qN -->`
@@ -324,7 +336,19 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // continuation of the established chain (STYLE_GUIDE.md "Do not
     // repeat <!-- quote: qN --> for the same source in one file"). A
     // new marker would render a duplicate attribution chip.
-    if (attributedPersons.has(canonicalizePersonName(speakerName))) continue;
+    //
+    // Disambiguation: only treat the shift as covered when there is
+    // exactly ONE qN for this person in quotes[]. If multiple qN
+    // share the same canonical person (e.g., Mike Hearn quoted from
+    // two different source emails in one entry), a bare speaker
+    // shift cannot tell which qN it continues — require an explicit
+    // <!-- quote: qN --> marker so the renderer knows which source
+    // to attribute.
+    const canonicalSpeaker = canonicalizePersonName(speakerName);
+    if (
+      attributedPersons.has(canonicalSpeaker) &&
+      (personQuoteCount.get(canonicalSpeaker) || 0) <= 1
+    ) continue;
 
     // Local "covered by chain" check: scan BACKWARD from this speaker
     // toward the nearest non-blockquote, non-comment prose line (= end

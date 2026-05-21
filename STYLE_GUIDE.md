@@ -622,6 +622,17 @@ reply), give each source its own `qN` and place each `qN`'s first
 marker at that source's first quoted block. Two different chips
 appearing is correct because the sources are different.
 
+**Same person, multiple source emails:** if `quotes[]` has two or
+more `qN` entries with the same person (e.g., Satoshi quotes Mike
+Hearn from **two different** emails in one reply: `q1` = the
+open-source reply, `q2` = the SPV-progress reply), a bare
+`<!-- speaker: Mike Hearn -->` is ambiguous about which `qN` it
+continues. Every speaker shift to that person must carry an
+explicit `<!-- quote: qN -->` marker to disambiguate. Repeated
+identical chips are accepted as the cost of disambiguation in this
+case — the dedup rule above applies only when the person has a
+single `qN`.
+
 **EN/JA parity:** this is a marker-placement rule. Both EN and JA
 files must have the same marker count at the same structural
 positions, otherwise `verify-translations.sh` flags the divergence.
@@ -629,8 +640,10 @@ positions, otherwise `verify-translations.sh` flags the divergence.
 **Detector:** `scripts/check-quotes.mjs` (`speaker-named-no-quote-marker`
 check) treats a speaker shift as covered when the speaker NAME
 matches the `quotes[N].person` of an earlier `<!-- quote: qN -->`
-already present in the same file — the shift is a continuation of
-that chain, not a new quoted speaker.
+already present in the same file **and** that person has exactly
+one `qN` in `quotes[]`. When the same canonical person has two or
+more `qN` entries, the detector keeps requiring an explicit marker
+on every speaker shift (see the disambiguation rule above).
 
 ### Audit
 
