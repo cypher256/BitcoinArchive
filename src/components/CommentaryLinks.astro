@@ -30,6 +30,13 @@ interface Commentary {
 
 const commentariesMap = commentariesData as Record<string, Commentary[]>;
 
+// Same cap pattern as RelatedEntries.astro: render the first MAX_VISIBLE
+// items immediately and tuck any remainder into a <details>. Necessary
+// once `relatedEntries`-derived commentary is included — popular primary
+// sources (whitepaper, v0.1 release, alert-key) can pick up 10+ pointers
+// otherwise, which pushes the entry body off-screen.
+const MAX_VISIBLE = 5;
+
 interface Props {
   lang: Lang;
   entryId: string;
@@ -39,18 +46,33 @@ const { lang, entryId } = Astro.props;
 const t = useTranslations(lang);
 
 const list = commentariesMap[entryId] ?? [];
+const visible = list.slice(0, MAX_VISIBLE);
+const hidden = list.slice(MAX_VISIBLE);
+const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hidden.length));
 ---
 
 {list.length > 0 && (
   <aside class="entry-commentaries" id="commentaries">
     <span class="commentaries-label">📖 {t('commentary.heading' as any)}</span>
     <ul>
-      {list.map((c) => (
+      {visible.map((c) => (
         <li>
           <a href={localePath(`/entries/${c.id}/`, lang)}>{c.title[lang]}</a>
         </li>
       ))}
     </ul>
+    {hidden.length > 0 && (
+      <details class="commentaries-more">
+        <summary>{showMoreLabel}</summary>
+        <ul>
+          {hidden.map((c) => (
+            <li>
+              <a href={localePath(`/entries/${c.id}/`, lang)}>{c.title[lang]}</a>
+            </li>
+          ))}
+        </ul>
+      </details>
+    )}
   </aside>
 )}
 
@@ -87,5 +109,27 @@ const list = commentariesMap[entryId] ?? [];
   }
   .entry-commentaries a:hover {
     text-decoration: underline;
+  }
+  .commentaries-more {
+    margin-top: 0.5rem;
+  }
+  .commentaries-more > summary {
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-heading);
+    padding: 0.3rem 0;
+    user-select: none;
+    list-style-position: inside;
+  }
+  .commentaries-more > summary:hover {
+    color: var(--color-link);
+  }
+  .commentaries-more[open] > summary {
+    color: var(--color-text-muted);
+    margin-bottom: 0.2rem;
+  }
+  .commentaries-more ul {
+    margin-top: 0.3rem;
   }
 </style>

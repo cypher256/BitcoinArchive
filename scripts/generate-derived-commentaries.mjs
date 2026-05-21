@@ -98,6 +98,27 @@ function readTitle(fm) {
 }
 
 /**
+ * Parse the YAML `relatedEntries:` block. Returns an array of entry-id
+ * strings. Handles both `  - "id"` and `  - id` shapes. Stops when it
+ * hits the next top-level key or end of frontmatter.
+ */
+function parseRelatedEntriesBlock(fm) {
+  const lines = fm.split('\n');
+  const startIdx = lines.findIndex((l) => /^relatedEntries:\s*$/.test(l));
+  if (startIdx === -1) return [];
+
+  const ids = [];
+  for (let i = startIdx + 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\S/.test(line)) break; // next top-level key
+    if (/^\s*$/.test(line)) continue;
+    const m = line.match(/^\s+-\s+"?([^"\n]+?)"?\s*$/);
+    if (m) ids.push(m[1].trim());
+  }
+  return ids;
+}
+
+/**
  * Parse the YAML `quotes:` block. Returns an array of
  * { id, personSlug, sourceEntryId } objects. We only need fields used by
  * downstream consumers; other quote fields (date, parent, etc.) are
@@ -192,88 +213,124 @@ for (const file of walk(EN_DIR)) {
 // ---------------------------------------------------------------------------
 
 const issues = [];
-const reverse = new Map(); // primaryId -> Array<{ id, type, title: { en, ja }, via }>
+// reverse[primaryId] is a Map<commentaryId, { id, type, title, via }> so we
+// can short-circuit the duplicate-(primary, commentary) case in O(1) and
+// keep the strongest `via` per pair (quote-source > related-entries) by
+// adding quote-source candidates first.
+const reverse = new Map();
 
-for (const [commentaryId, meta] of entryIndex) {
-  if (!COMMENTARY_TYPES.has(meta.type)) continue;
-
-  const file = findSourceFile(EN_DIR, commentaryId);
-  if (!file) continue;
-  const content = readFileSync(file, 'utf-8');
-  const fm = extractFrontmatter(content);
-  if (!fm) continue;
-  const quotes = parseQuotesBlock(fm);
-
-  // Per-commentary set of unique primary-source citations (de-dup against
-  // multiple quotes that happen to point at the same primary).
-  const cited = new Set();
-  for (const q of quotes) {
-    if (!q.sourceEntryId) continue;
-    cited.add(q.sourceEntryId);
-  }
-  if (cited.size === 0) continue;
-
-  // Resolve and validate the JA mirror of the commentary itself once.
-  const commentaryJaFile = findSourceFile(JA_DIR, commentaryId);
-  if (!commentaryJaFile) {
+/**
+ * Validate the JA mirror of an entry and return its JA title. Logs an
+ * integrity issue and returns null on missing mirror or unparseable title.
+ */
+function requireJaTitle(entryId, context) {
+  const jaFile = findSourceFile(JA_DIR, entryId);
+  if (!jaFile) {
     issues.push(
-      `commentary ${commentaryId} has no JA mirror under ${JA_DIR}/. ` +
+      `${context} ${entryId} has no JA mirror under ${JA_DIR}/. ` +
         `EN/JA mirrors must be paired; add the JA translation or remove the EN entry.`,
     );
-    continue;
+    return null;
   }
-  const commentaryJaFm = extractFrontmatter(readFileSync(commentaryJaFile, 'utf-8'));
-  const commentaryJaTitle = commentaryJaFm ? readTitle(commentaryJaFm) : null;
-  if (!commentaryJaTitle) {
-    issues.push(`commentary ${commentaryId} JA mirror is missing a parseable title.`);
-    continue;
+  const jaFm = extractFrontmatter(readFileSync(jaFile, 'utf-8'));
+  const jaTitle = jaFm ? readTitle(jaFm) : null;
+  if (!jaTitle) {
+    issues.push(`${context} ${entryId} JA mirror is missing a parseable title.`);
+    return null;
   }
+  return jaTitle;
+}
 
-  for (const primaryId of cited) {
-    const primaryMeta = entryIndex.get(primaryId);
-    if (!primaryMeta) {
-      issues.push(
-        `commentary ${commentaryId} cites sourceEntryId ${primaryId} but ` +
-          `no such EN entry exists.`,
-      );
-      continue;
-    }
-    if (!PRIMARY_SOURCE_TYPES.has(primaryMeta.type)) {
-      // sourceEntryId may legitimately point at non-primary entries
-      // (article-to-article cross references happen). The reverse-commentary
-      // index only surfaces primary-source -> commentary, so skip.
-      continue;
-    }
-    // Validate JA mirror of the primary source.
-    const primaryJaFile = findSourceFile(JA_DIR, primaryId);
-    if (!primaryJaFile) {
-      issues.push(
-        `primary-source ${primaryId} (cited by ${commentaryId}) has no JA ` +
-          `mirror under ${JA_DIR}/. EN/JA mirrors must be paired.`,
-      );
-      continue;
-    }
-    const primaryJaFm = extractFrontmatter(readFileSync(primaryJaFile, 'utf-8'));
-    const primaryJaTitle = primaryJaFm ? readTitle(primaryJaFm) : null;
-    if (!primaryJaTitle) {
-      issues.push(`primary-source ${primaryId} JA mirror is missing a parseable title.`);
-      continue;
-    }
+/**
+ * Add a (primary, commentary, via) link. Quote-source wins over
+ * related-entries when the same pair surfaces through both paths; the
+ * caller is responsible for processing the quote-source pass first.
+ */
+function addLink(primaryId, commentaryMeta, via) {
+  if (!reverse.has(primaryId)) reverse.set(primaryId, new Map());
+  const map = reverse.get(primaryId);
+  if (map.has(commentaryMeta.id)) return; // quote-source already claimed this slot
+  map.set(commentaryMeta.id, { ...commentaryMeta, via });
+}
 
-    if (!reverse.has(primaryId)) reverse.set(primaryId, []);
-    const list = reverse.get(primaryId);
-    // De-dupe: same commentary may show up via multiple quotes; we only
-    // want one entry per (primary, commentary) pair.
-    if (list.some((e) => e.id === commentaryId)) continue;
-    list.push({
+/**
+ * Two passes per commentary entry: first the strong `quotes[].sourceEntryId`
+ * declarations, then the broader `relatedEntries` references. The strong
+ * pass establishes `via: "quote-source"` first; the broader pass only adds
+ * pairs that the strong pass didn't already cover, marking them
+ * `via: "related-entries"`.
+ */
+for (const pass of ['quote-source', 'related-entries']) {
+  for (const [commentaryId, meta] of entryIndex) {
+    if (!COMMENTARY_TYPES.has(meta.type)) continue;
+
+    const file = findSourceFile(EN_DIR, commentaryId);
+    if (!file) continue;
+    const content = readFileSync(file, 'utf-8');
+    const fm = extractFrontmatter(content);
+    if (!fm) continue;
+
+    const targets = new Set();
+    if (pass === 'quote-source') {
+      for (const q of parseQuotesBlock(fm)) {
+        if (q.sourceEntryId) targets.add(q.sourceEntryId);
+      }
+    } else {
+      for (const id of parseRelatedEntriesBlock(fm)) {
+        targets.add(id);
+      }
+    }
+    if (targets.size === 0) continue;
+
+    // Resolve the commentary's JA mirror once per pass; the validator
+    // memoises nothing but the per-commentary cost is one file read per
+    // pass, dwarfed by the rest of the walk.
+    const commentaryJaTitle = requireJaTitle(commentaryId, 'commentary');
+    if (!commentaryJaTitle) continue;
+
+    const commentaryMeta = {
       id: commentaryId,
       type: meta.type,
       title: {
         en: meta.titleEn || '',
         ja: commentaryJaTitle,
       },
-      via: 'quote-source',
-    });
+    };
+
+    for (const primaryId of targets) {
+      const primaryMeta = entryIndex.get(primaryId);
+      if (!primaryMeta) {
+        if (pass === 'quote-source') {
+          // quotes[].sourceEntryId is a strong declaration — an unresolved
+          // target is an editor error. relatedEntries is broader (entries
+          // routinely list participant bios, threads, etc.) so an unresolved
+          // target there is not a fatal issue for THIS generator: the
+          // separate check-internal-links.mjs is the authoritative validator
+          // for the relatedEntries graph.
+          issues.push(
+            `commentary ${commentaryId} cites sourceEntryId ${primaryId} but ` +
+              `no such EN entry exists.`,
+          );
+        }
+        continue;
+      }
+      if (!PRIMARY_SOURCE_TYPES.has(primaryMeta.type)) {
+        // Cross references between non-primary types are common (article
+        // -> analysis, analysis -> biography, etc.) and not part of the
+        // primary-source <-> commentary axis this index models.
+        continue;
+      }
+      // Skip pairs the quote-source pass already locked in.
+      if (pass === 'related-entries' && reverse.get(primaryId)?.has(commentaryId)) {
+        continue;
+      }
+      // Validate the primary source's JA mirror (only when it's new to us;
+      // if the strong pass already added the pair, we've validated already).
+      const primaryJaTitle = requireJaTitle(primaryId, 'primary-source');
+      if (!primaryJaTitle) continue;
+
+      addLink(primaryId, commentaryMeta, pass);
+    }
   }
 }
 
@@ -300,10 +357,21 @@ function commentaryDate(commentaryId) {
 }
 
 const output = {};
+// Order per primary:
+//   1. via === "quote-source" before via === "related-entries"
+//      (the strong direct-citation declaration outranks the broader
+//      related-entries graph signal)
+//   2. inside the same via, commentary entry date ascending
+//      (oldest commentary first — keeps the primary entry that
+//      others reference earliest at the top)
+//   3. tiebreak by commentary id ascending (full determinism)
+const VIA_ORDER = { 'quote-source': 0, 'related-entries': 1 };
 const primaryIds = [...reverse.keys()].sort();
 for (const primaryId of primaryIds) {
-  const list = reverse.get(primaryId);
+  const list = [...reverse.get(primaryId).values()];
   list.sort((a, b) => {
+    const vDiff = VIA_ORDER[a.via] - VIA_ORDER[b.via];
+    if (vDiff !== 0) return vDiff;
     const da = commentaryDate(a.id);
     const db = commentaryDate(b.id);
     return da.localeCompare(db) || a.id.localeCompare(b.id);
