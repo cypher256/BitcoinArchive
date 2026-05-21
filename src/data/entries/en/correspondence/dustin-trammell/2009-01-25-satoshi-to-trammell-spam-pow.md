@@ -21,9 +21,15 @@ tags:
   - "e-gold"
 relatedEntries:
   - "aftermath/2009-01-25-satoshi-to-trammell-spam-pow"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-finney"
 ---
 
-Hal Finney wrote:
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > > * Spammer botnets could burn through pay-per-send email filters
 > >   trivially
 > If POW tokens do become useful, and especially if they become money,

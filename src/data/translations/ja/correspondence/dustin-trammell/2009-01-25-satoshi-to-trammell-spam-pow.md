@@ -22,9 +22,15 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-25-satoshi-to-trammell-spam-pow"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-finney"
 ---
 
-Hal Finney wrote:
+<!-- speaker: Hal Finney -->
+<!-- quote: q1 -->
 > > * スパマーのボットネットは送信課金型のメールフィルターを
 > >   いとも簡単に消費し尽くしてしまうだろう
 > もし POW トークンが有用になり、特にマネーになったとすれば、マシンが
