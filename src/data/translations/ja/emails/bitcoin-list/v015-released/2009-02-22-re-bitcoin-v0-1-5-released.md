@@ -13,10 +13,16 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/26/"
+quotes:
+  - id: "q1"
+    person: "Nicholas Bohm"
+    personSlug: "nicholas-bohm"
+    sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-18-re-bitcoin-v0-1-5-released-bohm"
 translationStatus: complete
 ---
 
-<!-- speaker: unknown -->
+<!-- speaker: Nicholas Bohm -->
+<!-- quote: q1 -->
 > 次は何ですか？
 
 <!-- speaker: Satoshi Nakamoto -->

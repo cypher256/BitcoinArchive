@@ -25,8 +25,6 @@ quotes:
     sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-22-re-bitcoin-v0-1-5-released"
 ---
 
-On Sun, Feb 22, 2009 at 9:35 AM, Satoshi Nakamoto wrote:
-
 <!-- quote: q1 -->
 >> What's next?
 >
