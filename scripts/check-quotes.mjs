@@ -132,6 +132,9 @@ const JA_LEGACY_SUFFIXES = [
   /の引用\s*[:：]\s*$/,
   /は次のように書いた\s*[:：]?\s*$/,
   /は次のように書いている\s*[:：。.]?\s*$/,
+  /が書いた\s*[:：]\s*$/,        // "NAMEが書いた：" — Hushmail JA reply form
+  /が書き込んだ\s*[:：]\s*$/,
+  /が引用した\s*[:：]\s*$/,
 ];
 const EN_LEGACY_SUFFIXES = [
   / wrote:\s*$/,
@@ -193,10 +196,20 @@ function detectLegacyAttributionLines(body) {
       }
     }
     if (!kind) {
-      // Bare NAME: / NAME： before blockquote (catches Ray's レイ・ディリンジャー：)
-      // Avoid false positives: must be short (< 40 chars), no markdown links, no
-      // sentence-ending punctuation, ends with :/： only.
-      if (t.length <= 40 && /^[^[\(（\.。]+[:：]\s*$/.test(t) && !/[\.。]/.test(t.replace(/[:：]\s*$/, ''))) {
+      // Bare NAME: / NAME： before blockquote (catches Ray's レイ・ディリンジャー：).
+      // Tight guard to avoid prose-mid false positives like
+      // "ここで起きた混乱を軽減できるだろう：" or
+      // "他の議論にもかかわらず、現在の次のステップは：":
+      //   - short (<= 25 chars)
+      //   - ends with :/： only
+      //   - no sentence-ending punctuation before the colon
+      //   - no Japanese particles (は、が、を、に、で、と、の、も、より) which
+      //     indicate the line is mid-sentence prose rather than a name attribution
+      const beforeColon = t.replace(/[:：]\s*$/, '');
+      if (t.length <= 25
+        && /^[^[\(（\.。]+[:：]\s*$/.test(t)
+        && !/[\.。]/.test(beforeColon)
+        && !/[はがをにでとのもより]/.test(beforeColon)) {
         kind = 'bare-name-colon';
       }
     }
