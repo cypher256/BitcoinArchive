@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryMeta from '../../components/EntryMeta.astro';
 import SourceCitation from '../../components/SourceCitation.astro';
 import RelatedEntries from '../../components/RelatedEntries.astro';
+import CommentaryLinks from '../../components/CommentaryLinks.astro';
 import SatoshiCodeAnalysis from '../../components/SatoshiCodeAnalysis.astro';
 import SatoshiActivityTimeline from '../../components/SatoshiActivityTimeline.astro';
 import PatoshiNonceLsb from '../../components/PatoshiNonceLsb.astro';
@@ -50,6 +51,24 @@ const threadId = resolveThreadId(entry);
 const threadMessages = threadId
   ? allEntries.filter((e) => resolveThreadId(e) === threadId).length
   : 0;
+const entryById = new Map(allEntries.map((e) => [e.id, e]));
+const commentaryThreadLinks = new Map<string, { id: string; messages: number }>();
+if (entry.data.type === 'article' || entry.data.type === 'analysis') {
+  for (const q of entry.data.quotes ?? []) {
+    if (!q.sourceEntryId) continue;
+    const sourceEntry = entryById.get(q.sourceEntryId);
+    if (!sourceEntry) continue;
+    const sourceThreadId = resolveThreadId(sourceEntry);
+    if (!sourceThreadId || commentaryThreadLinks.has(sourceThreadId)) continue;
+    const sourceThreadMessages = allEntries.filter((e) => resolveThreadId(e) === sourceThreadId).length;
+    if (sourceThreadMessages >= 2) {
+      commentaryThreadLinks.set(sourceThreadId, {
+        id: sourceThreadId,
+        messages: sourceThreadMessages,
+      });
+    }
+  }
+}
 const breadcrumbs = [
   { name: t('nav.home'), url: localePath('/', lang) },
   { name: t('nav.entries'), url: localePath('/entries/', lang) },
@@ -120,6 +139,10 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
         createdAt={createdAt}
       />
     </header>
+
+    {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document'].includes(entry.data.type) && (
+      <CommentaryLinks lang={lang} entryId={entry.id} />
+    )}
 
     {entry.data.editorNote && (
       <aside class="editor-note">
@@ -203,6 +226,14 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
         </a>
       </div>
     )}
+
+    {[...commentaryThreadLinks.values()].map((thread) => (
+      <div class="thread-banner">
+        <a href={localePath(`/entries/threads/${thread.id}/`, lang)}>
+          View full thread ({thread.messages} messages) &rarr;
+        </a>
+      </div>
+    ))}
 
     <RelatedEntries lang={lang} entryId={entry.id} relatedIds={entry.data.relatedEntries ?? []} />
 

@@ -3,6 +3,9 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, formatDateMaybeTime, localePath, findAuthorParticipant, absoluteUrl } from '../../../i18n/utils';
 import { deriveThreadTitle, resolveThreadId } from '../../../data/threads';
+import commentariesData from '../../../data/derived-commentaries.json';
+
+const commentariesMap = commentariesData as Record<string, { id: string }[]>;
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -147,7 +150,24 @@ const breadcrumbs = [
               <span class="message-source">
                 <a href={entry.data.sourceUrl} target="_blank" rel="noopener">Source</a>
                 {' · '}
-                <a href={localePath(`/entries/${entry.id}/`, lang)}>Permalink</a>
+                <a class="permalink" href={localePath(`/entries/${entry.id}/`, lang)}>Permalink</a>
+                {(() => {
+                  const commentaries = commentariesMap[entry.id] ?? [];
+                  const cN = commentaries.length;
+                  if (cN === 0) return null;
+                  const label = cN === 1
+                    ? t('commentary.threadLink' as any)
+                    : t('commentary.count' as any).replace('{n}', String(cN));
+                  const href = cN === 1
+                    ? localePath(`/entries/${commentaries[0].id}/`, lang)
+                    : localePath(`/entries/${entry.id}/#commentaries`, lang);
+                  return (
+                    <>
+                      {' · '}
+                      <a href={href}>{label}</a>
+                    </>
+                  );
+                })()}
               </span>
             </div>
             <div class="message-body">
@@ -263,7 +283,7 @@ const breadcrumbs = [
   document.querySelectorAll('.message[id]').forEach(function(el) {
     if (!el.id) return;
     msgIds.add(el.id);
-    var permalink = el.querySelector('.message-source a:last-child');
+    var permalink = el.querySelector('.message-source a.permalink');
     if (permalink) {
       var path = permalink.getAttribute('href');
       if (path) pathToAnchor[path.replace(/\/$/, '')] = '#' + el.id;

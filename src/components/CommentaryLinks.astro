@@ -1,0 +1,91 @@
+---
+/**
+ * CommentaryLinks.astro — On a primary-source entry page, surfaces the
+ * editorial articles that discuss it.
+ *
+ * Reads src/data/derived-commentaries.json (built by
+ * scripts/generate-derived-commentaries.mjs) and renders a heading-
+ * adjacent block listing each commentary entry that cites this primary
+ * source via quotes[].sourceEntryId. The section's anchor id is
+ * "commentaries" so the thread view can deep-link directly to it.
+ *
+ * Renders nothing for entries that have no commentary records, and is
+ * intended to be mounted on primary-source-type pages only (the slug
+ * template guards by type before passing data in).
+ *
+ * The data layer guarantees both EN and JA titles are present (the
+ * generator fails the build if any mirror is missing), so this
+ * component does not implement a title fallback.
+ */
+import { useTranslations, localePath } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+import commentariesData from '../data/derived-commentaries.json';
+
+interface Commentary {
+  id: string;
+  type: string;
+  title: { en: string; ja: string };
+  via: string;
+}
+
+const commentariesMap = commentariesData as Record<string, Commentary[]>;
+
+interface Props {
+  lang: Lang;
+  entryId: string;
+}
+
+const { lang, entryId } = Astro.props;
+const t = useTranslations(lang);
+
+const list = commentariesMap[entryId] ?? [];
+---
+
+{list.length > 0 && (
+  <aside class="entry-commentaries" id="commentaries">
+    <span class="commentaries-label">📖 {t('commentary.heading' as any)}</span>
+    <ul>
+      {list.map((c) => (
+        <li>
+          <a href={localePath(`/entries/${c.id}/`, lang)}>{c.title[lang]}</a>
+        </li>
+      ))}
+    </ul>
+  </aside>
+)}
+
+<style>
+  .entry-commentaries {
+    margin: 1rem 0 1.5rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-link);
+    border-radius: 0 4px 4px 0;
+  }
+  .commentaries-label {
+    display: block;
+    font-size: 0.85rem;
+    font-family: var(--font-heading);
+    color: var(--color-text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  .entry-commentaries ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .entry-commentaries li {
+    margin: 0.3rem 0;
+  }
+  .entry-commentaries a {
+    color: var(--color-link);
+    text-decoration: none;
+    line-height: 1.4;
+  }
+  .entry-commentaries a:hover {
+    text-decoration: underline;
+  }
+</style>

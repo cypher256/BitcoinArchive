@@ -31,9 +31,11 @@ import { getCollection } from 'astro:content';
 import { useTranslations, formatDate, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 import derivedData from '../data/derived-related.json';
+import commentariesData from '../data/derived-commentaries.json';
 
 const MAX_VISIBLE = 5;
 const derivedMap = derivedData as Record<string, { id: string; score: number }[]>;
+const commentariesMap = commentariesData as Record<string, { id: string }[]>;
 
 interface Props {
   lang: Lang;
@@ -49,11 +51,19 @@ const t = useTranslations(lang);
 // deterministic tiebreakers). No data-side cap — the cap is at the display
 // layer below, where the priority-top MAX_VISIBLE items are always shown
 // and the remainder is rendered inside a <details> ("Show N more") block.
-const seen = new Set(relatedIds);
+//
+// Exclude any entry already shown by CommentaryLinks (at the top of
+// the page). The commentary section uses a stronger "this article is
+// the editorial reading of this message" framing and is intentionally
+// surfaced above the body; duplicating those same article ids in the
+// generic "Related entries" block at the bottom adds noise.
+const commentaryIds = new Set((commentariesMap[entryId] ?? []).map((c) => c.id));
+const seen = new Set([...relatedIds, ...commentaryIds]);
 const derivedIds = (derivedMap[entryId] ?? [])
   .map((d) => d.id)
   .filter((id) => !seen.has(id));
-const mergedIds = [...relatedIds, ...derivedIds];
+const filteredRelatedIds = relatedIds.filter((id) => !commentaryIds.has(id));
+const mergedIds = [...filteredRelatedIds, ...derivedIds];
 
 interface Target {
   id: string;
