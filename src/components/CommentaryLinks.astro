@@ -6,8 +6,11 @@
  * Reads src/data/derived-commentaries.json (built by
  * scripts/generate-derived-commentaries.mjs) and renders a heading-
  * adjacent block listing each commentary entry that cites this primary
- * source via quotes[].sourceEntryId. The section's anchor id is
- * "commentaries" so the thread view can deep-link directly to it.
+ * source — either via quotes[].sourceEntryId (strong declaration) or
+ * via relatedEntries (broader topical reference). Each item carries
+ * a `via` discriminator so the UI can distinguish if needed. The
+ * section's anchor id is "commentaries" so the thread view can
+ * deep-link directly to it.
  *
  * Renders nothing for entries that have no commentary records, and is
  * intended to be mounted on primary-source-type pages only (the slug

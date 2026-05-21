@@ -6,17 +6,22 @@
  * Produces src/data/derived-commentaries.json. Keyed by primary-source
  * entry id (correspondence / mailing-list / forum-post / bip / whitepaper
  * / court-document); each value is an array of editorial commentary
- * entries (type=article or type=analysis) whose frontmatter
- * quotes[].sourceEntryId points at that primary source.
+ * entries (type=article or type=analysis) that point at that primary
+ * source via either quotes[].sourceEntryId (strong declaration) or
+ * relatedEntries (broader topical reference).
  *
- * Initial-implementation scope (per temp/0521_発言_解説_双方向リンク計画.md):
- *   - Source of the relation: solely quotes[].sourceEntryId.
- *     relatedEntries-based commentary inference is deferred.
+ * Scope:
+ *   - Source of the relation: two passes.
+ *     1. quotes[].sourceEntryId — strong declaration; unresolved
+ *        target is a hard error.
+ *     2. relatedEntries — broader reference; unresolved target is
+ *        skipped (the relatedEntries graph is permitted to point at
+ *        non-Archive entries during ingestion).
+ *   - Per (commentary, primary) pair, the strongest via wins:
+ *     "quote-source" beats "related-entries" when both apply.
  *   - Commentary types: type=article and type=analysis only.
  *     type=biography is excluded — bio entries discuss persons, not
  *     individual messages, and including them produces noise.
- *   - via field is a forward-looking string ("quote-source" today,
- *     room for "related-entries" in a later phase).
  *
  * Integrity (fail fast, no silent fallback):
  *   - Commentary's sourceEntryId target must exist on the EN side.
