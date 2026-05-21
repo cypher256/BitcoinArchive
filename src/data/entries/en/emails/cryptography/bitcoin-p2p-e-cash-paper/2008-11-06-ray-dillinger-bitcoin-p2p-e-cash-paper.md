@@ -63,7 +63,7 @@ taxation, and no legal-tender laws.  People will not
 hold assets in this highly-inflationary currency if
 they can help it.
 
-			Bear
+Bear
 
 ---------------------------------------------------------------------
 The Cryptography Mailing List
