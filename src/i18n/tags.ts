@@ -149,6 +149,7 @@ export const tagTranslations: Record<string, string> = {
   'genius': '天才',
   'gold-analogy': '金のアナロジー',
   'government': '政府',
+  'government-attack': '政府による攻撃',
   'gpu-mining': 'GPUマイニング',
   'growth': '成長',
 
@@ -279,6 +280,7 @@ export const tagTranslations: Record<string, string> = {
   'scam': '詐欺',
   'script': 'スクリプト',
   'security': 'セキュリティ',
+  'simplified-payment-verification': '簡易支払い検証 (SPV)',
   'security-breach': 'セキュリティ侵害',
   'security-budget': 'セキュリティ予算',
   'self-statements': '自己言及',

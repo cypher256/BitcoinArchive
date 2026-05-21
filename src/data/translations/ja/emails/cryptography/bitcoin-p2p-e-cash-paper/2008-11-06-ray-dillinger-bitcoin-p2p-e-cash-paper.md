@@ -21,9 +21,15 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (スレッド表示)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
+    personSlug: "james-donald"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-james-donald-bitcoin-p2p-e-cash-paper"
 translationStatus: complete
 ---
 
+<!-- quote: q1 -->
 <!-- speaker: James A. Donald -->
 > _Simplified Payment Verification について私の理解が正しければ：_
 >
