@@ -64,6 +64,7 @@ translationStatus: complete
 
 **ギャビン・アンドレセン（gavinandresen）** は 2010年10月にコミットアクセスを取得した。サトシがプロジェクトを段階的に引き渡す過程の一環だった。81件のコミットはサトシに次いで 2番目に多い。2010年12月3日、サトシは[マルッティ・マルミにこう書いている](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)：
 
+<!-- audit:quote-skip -->
 > 「ギャビンがいいと思う。信頼できるし、責任感があり、プロフェッショナルで、技術的にもLinuxに関しては私よりずっと上だ」
 
 アンドレセンの最後の SVN コミットは 2011年9月13日の r252 で、メッセージには「Development has moved to github.」と記されていた。これが SourceForge SVN 時代の正式な終焉となった。

@@ -26,10 +26,17 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
+    date: "2010-02-05T01:48:53Z"
+    sourceEntryId: "forum/bitcointalk/topic-41/2010-02-05-newlibertystandard-msg238"
 ---
 
 On February 5, 2010, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) proposed on the BitcoinTalk forum:
 
+<!-- quote: q1 -->
 > "I propose that we adopt the Thai baht currency symbol, ฿, as the official bitcoin currency symbol and BTC as the official bitcoin three letter currency code."
 
 The proposal sparked discussion among early community members, with some concerned that sharing the baht symbol (฿) could cause confusion with the Thai currency.

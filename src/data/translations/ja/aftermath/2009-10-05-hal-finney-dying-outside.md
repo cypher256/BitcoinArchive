@@ -29,6 +29,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
+<!-- audit:quote-skip -->
 > ある男が医者に行き、いくつかの検査の後、医者が言った。「申し訳ありませんが、あなたは致命的な病気です」
 >
 > 「それはひどい」と男は言った。「あとどのくらいですか？」

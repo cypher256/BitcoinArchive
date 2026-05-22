@@ -26,11 +26,18 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
+quotes:
+  - id: "q1"
+    person: "NewLibertyStandard"
+    personSlug: "newlibertystandard"
+    date: "2010-02-05T01:48:53Z"
+    sourceEntryId: "forum/bitcointalk/topic-41/2010-02-05-newlibertystandard-msg238"
 translationStatus: complete
 ---
 
 2010年2月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/) が BitcoinTalk フォーラムでこう提案した。
 
+<!-- quote: q1 -->
 > 「タイバーツの通貨記号 ฿ をビットコインの公式通貨記号として、BTCを公式の3文字通貨コードとして採用することを提案します」
 
 この提案は初期コミュニティメンバーの間で議論を呼び、バーツ記号（฿）をタイの通貨と共有することで混乱が生じるのではないかという懸念もあった。

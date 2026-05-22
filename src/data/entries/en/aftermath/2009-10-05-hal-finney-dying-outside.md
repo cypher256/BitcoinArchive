@@ -28,6 +28,7 @@ relatedEntries:
   - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
 ---
 
+<!-- audit:quote-skip -->
 > A man goes in to see his doctor, and after some tests, the doctor says, "I'm sorry, but you have a fatal disease."
 >
 > "That's terrible," the man says. "How long have I got?"

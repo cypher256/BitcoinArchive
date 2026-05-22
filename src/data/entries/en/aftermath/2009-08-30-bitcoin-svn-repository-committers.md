@@ -63,6 +63,7 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 
 **Gavin Andresen (gavinandresen)** received commit access in October 2010, as part of Satoshi's gradual handover of the project. With 81 commits, he was the second most active committer after Satoshi. On December 3, 2010, Satoshi [wrote to Martti Malmi](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/):
 
+<!-- audit:quote-skip -->
 > "I think it should be Gavin. I trust him, he's responsible, professional, and technically much more Linux capable than me."
 
 Andresen's final SVN commit, r252 on September 13, 2011, contained the message: "Development has moved to github." This marked the official end of the SourceForge SVN era.
