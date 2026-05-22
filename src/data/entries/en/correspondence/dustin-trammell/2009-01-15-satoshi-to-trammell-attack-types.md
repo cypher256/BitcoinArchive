@@ -20,6 +20,12 @@ tags:
   - "wallet-encryption"
 relatedEntries:
   - "aftermath/2009-01-15-satoshi-to-trammell-attack-types"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T00:05:15Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack"
 ---
 
 I group attacks into two classes:
@@ -54,12 +60,14 @@ you're blindly sending to whoever answers that IP.
 
 Another feature for later is an option to encrypt your wallet.
  
+<!-- quote: q1 -->
 > If I understand how that is done correctly, you just compute the
 > transaction into the block chain and let the intended recipient
 > 'discover' it, correct? 
 
 That's correct.
 
+<!-- speaker: Dustin Trammell -->
 > An alternative could be to allow the network
 > nodes to provide a resolution service, where they ask around for the
 > network address of a BitCoin address, and if that node is online, once a

@@ -20,9 +20,16 @@ tags:
   - "bug-report"
 relatedEntries:
   - "aftermath/2009-01-15-trammell-to-satoshi-address-verification"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:46:35Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 ---
 
 On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > Sending by IP requests a new public key, so yes, it's vulnerable
 > to type 1 man-in-the-middle.  If that's a concern, sending to a
 > Bitcoin address doesn't have that vulnerability, although there's
@@ -43,6 +50,7 @@ the attacker is spoofing the address or intercepting.  My friend can
 verify what my address is with me in the same ways, however verifying
 the address doesn't actually improve the situation.
 
+<!-- speaker: Satoshi Nakamoto -->
 > One solution would be to use both the IP and Bitcoin addresses
 > when sending (maybe 1.2.3.4-1Kn8iojk...), where the recipient uses
 > the public key of the Bitcoin address to sign the new public key
@@ -53,6 +61,7 @@ the address doesn't actually improve the situation.
 That is a good solution.  If you transact regularly you probably already
 have the other person's BitCoin address in your address book.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Another feature for later is an option to encrypt your wallet.
 
 One thing that came to mind on this topic is the potential for BitCoin
@@ -63,6 +72,7 @@ yet to check myself), so it may be a good idea to have the application
 be able to export everything that it needs for recovery to a file that
 could be backed up off of the system.
  
+<!-- speaker: Satoshi Nakamoto -->
 > It would be nice to only need the Bitcoin address and have the IP
 > worked out behind the scenes.  Might have privacy or denial of
 > service issues.  Certainly before another sending method is

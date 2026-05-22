@@ -21,6 +21,12 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-15-satoshi-to-trammell-attack-types"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T00:05:15Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack"
 ---
 
 私は攻撃を 2 つの種類に分けている：
@@ -51,12 +57,15 @@ DNS 汚染を通じてタイプ 1 とタイプ 2 の両方に対して脆弱だ�
 
 後回しにしている機能の 1 つに、ウォレットを暗号化するオプションがある。
  
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > 正しく理解できているか分からないが、ビットコインアドレスによる
 > 取引というのは、取引をブロックチェーンに計算して入れて、受取人に
 > それを「発見」してもらうだけ、という理解で合っているか？
 
 そのとおりだ。
 
+<!-- speaker: Dustin Trammell -->
 > 代替案として、ネットワークノードに解決サービスを持たせるのも
 > 考えられる。あるビットコインアドレスのネットワークアドレスをノード間で
 > 問い合わせ、対象ノードがオンラインであれば、そのアドレスについて

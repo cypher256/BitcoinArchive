@@ -21,9 +21,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-15-trammell-to-satoshi-address-verification"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:46:35Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 ---
 
 On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > IP による送金は新しい公開鍵を要求するから、そう、タイプ 1 の中間者攻撃に
 > 対しては脆弱だ。それが気がかりなら、ビットコインアドレスへの送金には
 > その脆弱性はない。ただし、プライバシーで小さなトレードオフがある。
@@ -43,6 +51,7 @@ On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
 アドレスを同じ方法で確認することはできるが、アドレスを確認しても
 状況は実質改善されないわけだ。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 一つの解は、送金時に IP とビットコインアドレスの両方を使うこと
 > （たとえば 1.2.3.4-1Kn8iojk... のように）。受信側がビットコイン
 > アドレスの公開鍵で新しい公開鍵に署名して、送金先が本人で間違いないことを
@@ -52,6 +61,7 @@ On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
 それは良い解だ。定期的に取引する相手なら、おそらく相手の
 ビットコインアドレスはすでにアドレス帳に入っているはずだ。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 後回しにしている機能の 1 つに、ウォレットを暗号化するオプションがある。
 
 この話題で思いついたことが 1 つある。システム障害が起きた場合の
@@ -62,6 +72,7 @@ On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
 システム外にバックアップできるファイルにエクスポートする機能を入れて
 おくのは、良いアイデアかもしれない。
  
+<!-- speaker: Satoshi Nakamoto -->
 > ビットコインアドレスだけで済んで、IP は裏で解決される、というのが
 > できれば嬉しい。プライバシーやサービス拒否（DoS）の問題があるかも
 > しれない。新しい送金方式を実装する前に、設計をじっくり考えて
