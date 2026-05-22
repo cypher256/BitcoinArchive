@@ -25,12 +25,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-wallet-location
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-16T12:42:18Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-wallet-location"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 データ損失とウォレットのバックアップに関するトランメルの懸念に応じて、サトシはウォレットの保存場所と使用技術を開示した：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > ファイルは「%appdata%\Bitcoin」にある。バックアップすべきディレクトリはそこである。データはトランザクショナルデータベースDBMに保存されているため、クラッシュや停電が発生してもデータ損失からは安全なはずである。
 
