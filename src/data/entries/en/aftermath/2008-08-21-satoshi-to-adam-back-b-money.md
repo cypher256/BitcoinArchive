@@ -29,10 +29,17 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-21T17:59:48Z"
+    sourceEntryId: "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
 In the third email of the chain, Satoshi thanked Adam Back for pointing him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal. The historically load-bearing line — already cited as a self-statement in archive analysis — reads:
 
+<!-- quote: q1 -->
 > Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.
 
 This sentence is one of the primary-source observations underpinning both the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) and the [bitcoin-design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/): Satoshi reached the design space independently and only learned of b-money via Adam Back's referral the previous day.

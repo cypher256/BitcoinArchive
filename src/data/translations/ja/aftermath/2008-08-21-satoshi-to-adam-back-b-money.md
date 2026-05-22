@@ -29,12 +29,19 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-21T17:59:48Z"
+    sourceEntryId: "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
 translationStatus: complete
 ---
 
 
 メールチェーンの 3 通目で、サトシはアダム・バックが[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を紹介してくれたことに感謝した。アーカイブの分析記事でも[サトシの自己言及](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)として既に引用されている、歴史的に中核となる一文は次の通り。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている。
 
