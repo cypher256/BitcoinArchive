@@ -595,9 +595,9 @@ function checkFile(filePath, locale) {
   // Scope is wider than the Satoshi-primary-source detector above because
   // the gap exists across editorial articles (aftermath/analysis quoting
   // historical messages) and non-Satoshi primary entries (Donald's
-  // 2008-11-03 email quoting Satoshi's whitepaper, etc.). The check is a
-  // warn for now per the 0522 plan; it will be promoted to error once
-  // the violation list (Phase 0) is fully resolved (Phase 2).
+  // 2008-11-03 email quoting Satoshi's whitepaper, etc.). Phase 2 of the
+  // 0522 plan promoted this check from warn to error (2026-05-23) after
+  // the full violation list (713 -> 0) was resolved.
   //
   // Exclusion: biography entries are skipped because their bodies are
   // editorial prose that may quote multiple sources without intending
