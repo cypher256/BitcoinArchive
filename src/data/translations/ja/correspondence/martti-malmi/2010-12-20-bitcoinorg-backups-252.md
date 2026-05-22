@@ -22,12 +22,18 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-251"
+  - id: "q2"
     person: "Gavin Andresen"
     personSlug: "gavin-andresen"
-  - id: "q2"
+    parent: "q1"
+    sourceEntryId: "correspondence/gavin-andresen/2010-12-20-bitcoinorg-backups"
+  - id: "q3"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
-    parent: "q1"
+    parent: "q2"
     sourceEntryId: "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-250"
 translationStatus: complete
 ---
@@ -38,10 +44,11 @@ translationStatus: complete
 ちなみに、僕の PGP 鍵はこちらです：http://www.bitcoin.org/mmalmi.asc
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> <!-- quote: q1 -->
->> <!-- quote: q2 -->
->> <!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
+>>> <!-- speaker: Martti Malmi -->
 >>> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明している：
 >>> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 >>>

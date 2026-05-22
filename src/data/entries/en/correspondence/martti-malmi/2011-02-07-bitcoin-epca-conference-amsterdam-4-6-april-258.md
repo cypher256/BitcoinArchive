@@ -28,6 +28,7 @@ the forum also seemed potentially competent.
 
 Gavin, would you be interested in organizing this?
 
+<!-- audit:quote-skip -->
 > Hello,
 >
 > I am writing you on behalf of the EPCA Conference because we are   

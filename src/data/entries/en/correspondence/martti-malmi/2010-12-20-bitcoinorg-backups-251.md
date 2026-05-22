@@ -54,6 +54,7 @@ passwords people use on forums.
 8 chars = 25418 difficulty
 
 
+<!-- speaker: Gavin Andresen -->
 >> Another option is to
 >> > encrypt the backups with pgp and store them in multiple places.
 > 

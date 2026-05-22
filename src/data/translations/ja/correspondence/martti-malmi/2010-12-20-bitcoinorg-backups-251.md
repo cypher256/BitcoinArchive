@@ -52,6 +52,7 @@ translationStatus: complete
 8 文字 = 25418 の難易度
 
 
+<!-- speaker: Gavin Andresen -->
 <!-- tone-skip -->
 >> もう一つの選択肢は
 >> > バックアップをPGPで暗号化して複数の場所に保管することです。

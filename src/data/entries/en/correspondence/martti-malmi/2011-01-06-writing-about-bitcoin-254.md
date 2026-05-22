@@ -31,11 +31,13 @@ quotes:
 
 Great
 
+<!-- speaker: Gavin Andresen -->
 > Satoshi, I assume you don't want to
 > deal with press/PR/interviews ?
 
 True
 
+<!-- speaker: Gavin Andresen -->
 > We could decline to talk to the press-- Satoshi, I know you've
 > expressed concern about bitcoin growing too big too fast, and being
 > unable to keep up with traffic/attacks/feature requests/etc.  But I

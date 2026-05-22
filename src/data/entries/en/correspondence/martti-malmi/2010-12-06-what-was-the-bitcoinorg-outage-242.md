@@ -25,6 +25,7 @@ secondarySources:
 I'm ready to send you the password. Can you send me your PGP key so I  
 don't have to send it in plaintext?
 
+<!-- audit:quote-skip -->
 > It should be Gavin.  I trust him, he's responsible, professional, and
 > technically much more linux capable than me.
 
