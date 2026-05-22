@@ -38,6 +38,12 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-21T17:59:48Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
 [Adam Back](/BitcoinArchive/participants/adam-back/) — inventor of Hashcash (1997), the proof-of-work system cited in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) — has reflected on his earliest interaction with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/):
@@ -46,22 +52,27 @@ relatedEntries:
 
 In August 2008, Satoshi [contacted Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) to verify the citation for his Hashcash paper. [Back confirmed the citation](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.
 
+<!-- audit:quote-skip -->
 > "I suggested looking into b-money, but it seemed he wasn't aware of it at that point."
 
 [Satoshi replied](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/):
 
+<!-- quote: q1 -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
 **On his biggest regret:**
 
+<!-- audit:quote-skip -->
 > "I initially failed to read the Bitcoin whitepaper carefully. That was probably my biggest mistake."
 
 Back opened the attached whitepaper, gave it a cursory glance, typed back a brief response suggesting Wei Dai's b-money, and closed his laptop. He didn't begin actively using or promoting Bitcoin until around 2013.
 
 **On his early doubts about Bitcoin (CoinShares interview):**
 
+<!-- audit:quote-skip -->
 > "I had questions about its sustainability: it was in 2009, there was no exchange, no value. Earlier systems had failed due to centralisation or unverifiable issuance, but Bitcoin's decentralised model promised a better path."
 
+<!-- audit:quote-skip -->
 > "From those experiences, it became clear that decentralisation was essential to succeed where others failed."
 
 **COPA trial testimony (February 21, 2024):**

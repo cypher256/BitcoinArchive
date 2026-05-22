@@ -43,6 +43,7 @@ translationStatus: complete
 
 マルミは法廷で述べた：
 
+<!-- audit:quote-skip -->
 > 「僕はサトシとコミュニケーションを取りましたが、ライト博士とは別の人物だと信じています」
 
 同日、[アダム・バックも証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、2008年8月の[サトシとの完全なメールチェーン](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)を提出した。

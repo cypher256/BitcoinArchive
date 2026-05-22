@@ -42,6 +42,7 @@ Malmi — Bitcoin's first administrator of bitcoin.org and Satoshi's earliest kn
 
 Malmi stated in court:
 
+<!-- audit:quote-skip -->
 > "I communicated with Satoshi, who I believe to be a different person to Dr. Wright."
 
 The same day, [Adam Back also provided testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), submitting the [complete email chain between himself and Satoshi](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) from August 2008.
