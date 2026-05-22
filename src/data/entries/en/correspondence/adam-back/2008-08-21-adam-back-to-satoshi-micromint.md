@@ -23,6 +23,12 @@ secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back's Second Witness Statement (document C/21) included the complete five-email chain."
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-21T17:59:48Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
 Sorry still not read your paper yet, but another related paper is by Rivest et al called micromint, which uses k-way collisions to create the public/extended currency for the bank in creating coins.  What you said about one group of players having an advantage (by compute cycles) reminded me of micromint.  In micromint the bank gets an increasing advantage over time as there is some cumulative build up of advantage in terms of the partial results accumulated helping create further the partial-collisions more cheaply.
@@ -31,6 +37,7 @@ Adam
 
 On Thu, Aug 21, 2008 at 6:59 PM, satoshi@anonymousspeech.com
 <satoshi@anonymousspeech.com> wrote:
+<!-- quote: q1 -->
 > Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.  I'll e-mail him to confirm the year of publication so I can credit him.
 >
 > The main thing my system adds is to also use proof-of-work to support a distributed timestamp server.  While users are generating proof-of-work to make new coins for themselves, the same proof-of-work is also supporting the network timestamping.  This is instead of Usenet.
