@@ -17,6 +17,12 @@ tags:
   - "bitcoin-release"
   - "hal-finney"
   - "origins"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-07T23:40:12Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
 translationStatus: complete
 ---
 
@@ -28,6 +34,7 @@ translationStatus: complete
 
 暗号学メーリングリストで設計についての議論があった。[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)が良い概要を述べている：
 
+<!-- quote: q1 -->
 > 一つ言及しておきたいのは、ビットコインは多くの点で二つの独立したアイデアだということだ。ジェームズがここで挙げている種類の問題を解決する方法、つまりグローバルに一貫性がありながら分散型のデータベースを作ること。そしてそれをウェイ・ダイのb-money（論文中で参照されている）に類似したシステムに使うこと、ただしアカウントベースではなくトランザクション/コインベースだ。グローバルで大規模に分散されたデータベース問題を解決することが、ジェームズが強調するように、おそらくより難しい部分だ。この目的のためのプルーフ・オブ・ワークの使用は、私見ではさらなる検討に値する新しいアイデアだ。
 
 Satoshi

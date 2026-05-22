@@ -17,6 +17,12 @@ tags:
   - "bitcoin-release"
   - "hal-finney"
   - "origins"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-07T23:40:12Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
 ---
 
 I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, [Bitcoin v0.1](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). Details, download and screenshots are at www.bitcoin.org
@@ -27,6 +33,7 @@ The system is entirely decentralized, without any server or trusted parties. The
 
 There was a discussion of the design on the Cryptography mailing list. [Hal Finney](/BitcoinArchive/participants/hal-finney/) gave a good high-level overview:
 
+<!-- quote: q1 -->
 > One thing I might mention is that in many ways bitcoin is two independent ideas: a way of solving the kinds of problems James lists here, of creating a globally consistent but decentralized database; and then using it for a system similar to Wei Dai's b-money (which is referenced in the paper) but transaction/coin based rather than account based. Solving the global, massively decentralized database problem is arguably the harder part, as James emphasizes. The use of proof-of-work as a tool for this purpose is a novel idea well worth further review IMO.
 
 Satoshi
