@@ -25,12 +25,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-18T11:01:09Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 サトシはトランメルのトランザクション表示に関する混乱を解消した。表示されたアドレスは実際にはサトシのものではなく、トランメル自身の受信アドレスであった：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > それは自宅で受け取った際のあなたのビットコインアドレスのはずである。送信者が誰かを知る方法はないため、できることはあなたのどのアドレスで受信されたかを表示することだけである。複数のアドレスを作成して各人に異なるアドレスを渡し、ラベルを付ければ、誰からの送金かを判別する助けになる。
 

@@ -25,14 +25,22 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-18T11:01:09Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
 Satoshi clarified the confusion about Trammell's transaction display. The address shown was actually one of Trammell's own receiving addresses, not Satoshi's:
 
+<!-- quote: q1 -->
 > It should be your Bitcoin address at home that you received it with. There's no way for it to know who it's from, so the best it can do is tell which of your addresses it was received on. You can create multiple addresses and give a different address to each person and label them to help figure out who's sending to you.
 
 He explained the address book labeling system:
 
+<!-- speaker: Satoshi Nakamoto -->
 > It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change..." button to the right of your Bitcoin address.
 
 This email contains one of the earliest explanations of Bitcoin's pseudonymous nature — the protocol has no concept of sender identity, and the best practice for identifying payers is to create unique receiving addresses for each counterparty. This concept would become fundamental to Bitcoin privacy best practices.
