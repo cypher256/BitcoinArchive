@@ -30,9 +30,15 @@ relatedEntries:
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2009-01-11T06:33:00Z"
 translationStatus: complete
 ---
 
+<!-- quote: q1 -->
 > Running bitcoin
 
 *[補足：@halfin — 2009年1月10日午後 10時33分 PST / 2009年1月11日 06:33 UTC]*
