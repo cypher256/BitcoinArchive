@@ -30,12 +30,19 @@ relatedEntries:
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2008-08-21T12:55:59Z"
+    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 アダム・バックは翌日に返信し、サトシが起草した Hashcash の引用形式は問題ないと確認したうえで、関連先行研究として[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を紹介した。次のサトシの行動を決定づけた中核的な一文は次の通りである。
 
+<!-- quote: q1 -->
 <!-- speaker: Adam Back -->
 > b-moneyのアイデアは彼のウェブページに簡潔に書かれているだけで、論文としてはまとまっていない。
 

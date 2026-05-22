@@ -30,10 +30,17 @@ relatedEntries:
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2008-08-21T12:55:59Z"
+    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi"
 ---
 
 Adam Back replied the next day, confirming that Satoshi's draft Hashcash citation was correct and pointing him toward [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal as a second piece of related prior art. Back's load-bearing remark — the parenthetical that drove Satoshi's next step — was:
 
+<!-- quote: q1 -->
 > the b-money idea is just described concisely on his web page, he didnt write up a paper.
 
 That sentence redirected Satoshi to a web page rather than to a peer-reviewed paper, which set up the citation-year question Satoshi would put to Wei Dai directly the following day (see the [2008-08-22 Satoshi → Wei Dai email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)). Within hours Satoshi also wrote back to Back himself acknowledging the b-money pointer (the third email in the chain).
