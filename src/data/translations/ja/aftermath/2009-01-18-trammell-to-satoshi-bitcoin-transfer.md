@@ -25,12 +25,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-bitcoin-transfer
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T09:23:02Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-bitcoin-transfer"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 トランメルは不可解なトランザクションについて新しいメールスレッドを開始した。職場のビットコインクライアントから自宅のクライアントに、IP アドレスではなくビットコインアドレスを使って 100BTC を自分自身に送金したが、トランザクションの詳細に予期しないラベルが表示された：
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > 最初の25.00の送金の後、もう100.00を送ってくれたりした？俺は職場のビットコインアプリケーションから自宅のものに、IPではなくビットコインアドレスを使って100.00を自分宛に送金した。自宅のアプリケーションには100.00の受信が表示されているが、トランザクション詳細には「Received with: Satoshi 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv」と書いてある。これは職場のビットコインアドレスではないので、あなたのクライアントが計算したブロックにエンコードされた支払いを受け取ったということだと思うんだが？
 
