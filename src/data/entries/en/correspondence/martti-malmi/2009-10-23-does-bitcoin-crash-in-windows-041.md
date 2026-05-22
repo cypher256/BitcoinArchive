@@ -38,6 +38,7 @@ may be able to figure out what happened, maybe something I can work
 around.  Martti and I have been working on a new version to release soon 
 and it would be nice to get any Wine fixes in there.
 
+<!-- speaker: Liberty Standard -->
 > The following four lines print from the terminal when I start Bitcoin.
 > fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
 > fixme:toolhelp:Heap32ListFirst : stub
@@ -47,6 +48,7 @@ and it would be nice to get any Wine fixes in there.
 Those don't look like anything to worry about.  Probably functions 
 unimplemented by Wine that are harmlessly stubbed out.
 
+<!-- speaker: Liberty Standard -->
 > I previously wasn't starting Bitcoin from the terminal, so I don't know what
 > gets printed out when it crashes, but I'll reply with the results the next
 > time it crashes.
