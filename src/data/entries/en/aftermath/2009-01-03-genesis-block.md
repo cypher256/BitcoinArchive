@@ -34,7 +34,7 @@ quotes:
     date: "2009-01-03"
 ---
 
-On January 3, 2009, Satoshi Nakamoto hardcoded the first block of the Bitcoin blockchain into the v0.1 source. What he etched into the coinbase of that block was not a software version string, not his own name, not "Hello World" — it was the front-page headline of that day's *Times* newspaper, copied verbatim:
+On January 3, 2009, Satoshi Nakamoto hardcoded the first block of the Bitcoin blockchain into the v0.1 source. What he etched into the coinbase transaction of that block was not a software version string, not his own name, not "Hello World" — it was the front-page headline of that day's *Times* newspaper, copied verbatim:
 
 <!-- quote: q1 -->
 > The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
