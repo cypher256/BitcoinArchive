@@ -28,6 +28,17 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
+quotes:
+  - id: "q1"
+    person: "RHorning"
+    personSlug: "rhorning"
+    date: "2010-12-04T22:17:44Z"
+    sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-04-rhorning-msg26876"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-12-05T09:08:08Z"
+    sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
 translationStatus: complete
 ---
 
@@ -41,6 +52,7 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 **サトシが姿を消した理由：**
 
+<!-- audit:quote-skip -->
 > 「福音主義的な人物たちが現れると、彼は苛立ちを覚えたようで、理解できることだが姿を消した」
 
 この評価 — サトシが外部からの脅威ではなく、自身のコミュニティ内の狂信性によって立ち去った — は、メールを通じてサトシを直接知る人物からの最も直接的な証言の一つである。
@@ -51,10 +63,12 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 [Robert S. Horning (RHorning) が投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-04-rhorning-msg26876/)は、道徳的義務・自己犠牲・国家対決を煽る長文だった:
 
+<!-- quote: q1 -->
 > 基本的に、望むところだ。WikiLeaks にビットコインを使うよう促そう。私はその行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。... 米国政府が私を殺すか投獄すれば、このコミュニティに必ず伝わるよう手筈を整える。
 
 サトシは翌日[直接反論した](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/):
 
+<!-- quote: q2 -->
 > 違う、挑発するな。... もたらす火種は、この段階で我々を破壊しかねない。
 
 サトシの反論から 7 日後の 2010 年 12 月 12 日、サトシは[最終公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)で「バトンを渡す予定だ」 と告げ、その後私的メールを 4 か月続けた末に姿を消した。皮肉にも、サトシ撤退から 6 か月後の [2011 年 6 月、WikiLeaks はサトシの反対を押し切ってビットコイン寄付を受け付け始めた](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)。
@@ -63,6 +77,7 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 **もし過去に戻れたら：**
 
+<!-- audit:quote-skip -->
 > 「技術は今でも興味深いが、今では社会的な側面をより深く認識するようになった。コンピューターサイエンスの問題を解くだけでは不十分だ」
 
 ハーンはもし過去に戻れたなら、反対していた意見に対して「もっと強く押し返していた」と述べ、「Bitcoin Foundation も、扱い方が違えばうまくいったはずだ」と語った。

@@ -39,10 +39,12 @@ In an interview published by Uncommons on April 15, 2025, P2P Foundation founder
 
 Bauwens said the exchange was limited but memorable:
 
+<!-- audit:quote-skip -->
 > "Satoshi wrote me a few times."
 
 According to Bauwens, one message explained why Satoshi wanted to publish the Bitcoin white paper on the P2P Foundation site. Another offered him a few bitcoins:
 
+<!-- audit:quote-skip -->
 > "And offering me a few bitcoins. Unfortunately I didn't answer that proposal."
 
 Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" identified in the press, and at one point promised to write again but never followed up.
@@ -51,6 +53,7 @@ Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" 
 
 Although Bauwens said he was not enthusiastic about Bitcoin's energy requirements, he described its historical importance in much stronger terms:
 
+<!-- audit:quote-skip -->
 > "It was the first globally scalable, socially-sovereign currency that was not created by a firm, nor by the state."
 
 He also argued that Bitcoin introduced a new kind of universal ledger, moving accounting from closed institutional systems toward open ecosystems.

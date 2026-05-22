@@ -82,16 +82,20 @@ translationStatus: complete
 
 公開後の Yahoo Finance による [2026 年 4 月 10 日のインタビュー](https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html)で、バックは方法論への異議を明確に述べた：
 
+<!-- audit:quote-skip -->
 > 「確証バイアスの要素が含まれている」
 
+<!-- audit:quote-skip -->
 > 「結局、似たような関心を持つ人々を選び出している。…似たような書き方になるのは当然だ」
 
 バックはまた、公的な高い可視性を持つ人物が正体である可能性を否定する立場を示した：
 
+<!-- audit:quote-skip -->
 > 「最もありそうな状況は、サトシはドキュメンタリーの撮影クルーや調査ジャーナリストに話しかける類の人物ではないということだ」
 
 サトシの匿名性の継続がビットコインにとって構造的に有益であるとも論じた：
 
+<!-- audit:quote-skip -->
 > 「ビットコインにとっては実はプラスで、幸運なことだ。…ビットコインを発見・資産クラスとして認識させる助けになる」
 
 バックはソーシャルメディア上でも否定を表明し、これは複数のインタビューや講演における従来の公的立場と一貫している。否定のパターンは、[2024 年 2 月の COPA 対ライト裁判での宣誓証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)とも整合する。当該証言では、バックはサトシとの完全なメール通信を証人証拠として提出している。

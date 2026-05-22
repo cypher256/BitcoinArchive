@@ -80,16 +80,20 @@ Carreyrou met Back in person in El Salvador (where Back currently lives) for a t
 
 In a follow-up Yahoo Finance [interview on April 10, 2026](https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html), Back articulated his objections to the methodology:
 
+<!-- audit:quote-skip -->
 > "There's an element of confirmation bias in it."
 
+<!-- audit:quote-skip -->
 > "You are inherently selecting people who are interested in similar things... They're going to sound similar."
 
 He framed the question against the high-public-visibility identification:
 
+<!-- audit:quote-skip -->
 > "I think the most probable situation is that Satoshi is somebody who's not talking to documentary film crews, to investigative journalists."
 
 He argued that Satoshi's continued anonymity is structurally beneficial to Bitcoin:
 
+<!-- audit:quote-skip -->
 > "It's actually positive and fortunate for bitcoin... it helps bitcoin seem more like a discovery and an asset class."
 
 Back also denied the claim on social media, consistent with his prior public position across multiple interviews and conference talks. The denial pattern matches his [February 2024 sworn testimony in COPA v Wright](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), where he submitted his complete email correspondence with Satoshi as witness evidence under oath.
