@@ -27,6 +27,12 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-25T10:03:21Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow"
 translationStatus: complete
 ---
 
@@ -35,6 +41,7 @@ translationStatus: complete
 
 サトシはその後、新しい経済的対抗メカニズムである「リバース・スパミング」を提案した：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > POW トークンに価値がある場合にスパムを軽減するもう 1 つの要因：スパマーから POW トークンを収穫するために、大量の偽メールアカウントを設置する金銭的動機が生まれる。本質的にスパマーに対する逆スパムであり、POW を収集しメッセージを読まない自動化されたメールボックスだ。偽メールボックスと実際の人の比率がスパムのコスト効率を下回るほど高くなる可能性がある。
 

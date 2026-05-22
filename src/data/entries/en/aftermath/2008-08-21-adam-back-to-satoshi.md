@@ -35,7 +35,7 @@ quotes:
     person: "Adam Back"
     personSlug: "adam-back"
     date: "2008-08-21T12:55:59Z"
-    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
 ---
 
 Adam Back replied the next day, confirming that Satoshi's draft Hashcash citation was correct and pointing him toward [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal as a second piece of related prior art. Back's load-bearing remark — the parenthetical that drove Satoshi's next step — was:

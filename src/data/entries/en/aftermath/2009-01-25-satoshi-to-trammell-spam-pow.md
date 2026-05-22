@@ -27,16 +27,24 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-25T10:03:21Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow"
 ---
 
 In the final email of the Satoshi-Trammell correspondence, sent nearly a week after the previous exchange, Satoshi discussed the economics of spam in a system where proof-of-work tokens have value. He quoted [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s observation that valuable POW tokens would make botnet infections more noticeable to computer owners.
 
 Satoshi then proposed a novel economic counter-mechanism — "reverse-spamming":
 
+<!-- quote: q1 -->
 > Another factor that would mitigate spam if POW tokens have value: there would be a profit motive for people to set up massive quantities of fake e-mail accounts to harvest POW tokens from spam. They'd essentially be reverse-spamming the spammers with automated mailboxes that collect their POW and don't read the message. The ratio of fake mailboxes to real people could become too high for spam to be cost effective.
 
 He noted this process could paradoxically help establish the token's value:
 
+<!-- speaker: Satoshi Nakamoto -->
 > The process has the potential to establish the POW token's value in the first place, since spammers that don't have a botnet could buy tokens from harvesters. While the buying back would temporarily let more spam through, it would only hasten the self-defeating cycle leading to too many harvesters exploiting the spammers.
 
 Satoshi also drew a parallel to existing systems, noting that e-gold already experienced a form of spam called "dusting" where spammers sent tiny amounts of gold dust to include messages in transaction comment fields. He suggested a configurable minimum payment threshold as a solution.
