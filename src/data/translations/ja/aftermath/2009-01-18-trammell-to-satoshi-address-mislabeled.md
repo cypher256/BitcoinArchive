@@ -23,12 +23,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T18:09:32Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 トランメルは紛らわしいトランザクションラベルについて納得した瞬間を迎えた：
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > ああ！自宅のアドレスだったことに全然気づかなかった、その通りだ (: 自宅で複数のアドレスを作成していたから、結びつけられなかった。
 

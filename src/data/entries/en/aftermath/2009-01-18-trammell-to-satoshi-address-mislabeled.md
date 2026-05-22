@@ -23,14 +23,22 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T18:09:32Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
 ---
 
 Trammell had his "aha" moment about the confusing transaction label:
 
+<!-- quote: q1 -->
 > Ah! I didn't even notice it was my address at home, you're right (: I do have multiple addresses created at home so I didn't make the connection.
 
 He confirmed that 'Satoshi' was indeed associated with the receiving address under the Change button's addresses, but raised a new question:
 
+<!-- speaker: Dustin Trammell -->
 > I don't recall setting that value though, is that the default or something? (this is the first, default, address that the application generated itself when I first ran it)
 
 This exchange highlights the early usability challenges of Bitcoin — even a technically sophisticated user like Trammell, who was a security researcher comfortable with cryptographic concepts, found the address book and transaction display confusing enough to misidentify the source of his own self-transfer.
