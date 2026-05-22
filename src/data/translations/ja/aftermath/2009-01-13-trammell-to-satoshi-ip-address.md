@@ -26,6 +26,12 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:28Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 translationStatus: complete
 ---
 
@@ -34,6 +40,7 @@ translationStatus: complete
 
 ビットコインの価値提案について、トランメルは初期の段階で核心的な課題を指摘した。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > ああ、それが俺の目を引いた一番の特徴だった。本当の課題は、人々にビットコインに実際の価値を見出してもらって通貨にすることだろう。今のところ、ただのビットの集まりでしかない……
 

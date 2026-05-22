@@ -26,20 +26,29 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:28Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
 Trammell responded to several points from Satoshi's comprehensive reply. He explained the proof-hashes Google Group required no membership to post — simply emailing proof-hashes@googlegroups.com would publish the content. He suggested that the Bitcoin client could post the current block chain every 10,000 blocks as supplemental documentation.
 
 On Bitcoin's value proposition, Trammell identified the core challenge early:
 
+<!-- quote: q1 -->
 > Yea, that was the primary feature that caught my eye. The real trick will be to get people to actually value the BitCoins so that they become currency. Currently, they're just collections of bits...
 
 Trammell then provided his IP address for Satoshi's offered coin transfer:
 
+<!-- speaker: Dustin Trammell -->
 > I'm currently at 24.28.79.95, but that's dynamic so it may change.
 
 This IP address was used the following day (January 14, 2009) when Satoshi sent Trammell 25.0 BTC — one of the earliest known person-to-person Bitcoin transactions.
 
 On the mining explanation, Trammell coined a vivid analogy:
 
+<!-- speaker: Dustin Trammell -->
 > Ahh I see... So each guess is like the spin of a roulette wheel, completely independent from all other guesses and the extra CPU power just translates to more successful guesses than anyone else. Unfortunately my ability to understand complex mathematics is conversely proportional to how interested I am in cryptography (:
