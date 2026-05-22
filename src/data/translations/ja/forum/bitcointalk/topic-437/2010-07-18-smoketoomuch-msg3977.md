@@ -16,10 +16,12 @@ quotes:
   - id: "q1"
     person: "kiav"
     personSlug: "kiav"
+    date: "2010-07-18T11:40:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
   - id: "q2"
     person: "kiav"
     personSlug: "kiav"
+    date: "2010-07-18T11:40:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
 ---
 

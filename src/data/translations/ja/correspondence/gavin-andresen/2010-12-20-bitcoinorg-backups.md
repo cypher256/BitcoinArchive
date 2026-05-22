@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2010-12-20T15:55:04Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-250"
 translationStatus: complete
 ---

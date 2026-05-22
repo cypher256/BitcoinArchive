@@ -17,14 +17,17 @@ quotes:
   - id: "q1"
     person: "jgarzik"
     personSlug: "jeff-garzik"
+    date: "2010-11-29T19:01:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
   - id: "q2"
     person: "jgarzik"
     personSlug: "jeff-garzik"
+    date: "2010-11-29T19:01:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
   - id: "q3"
     person: "jgarzik"
     personSlug: "jeff-garzik"
+    date: "2010-11-29T19:01:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
 ---
 

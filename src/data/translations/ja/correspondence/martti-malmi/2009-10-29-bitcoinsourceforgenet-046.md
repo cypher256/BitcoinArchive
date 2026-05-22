@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2009-10-28T21:27:35Z"
     sourceEntryId: "correspondence/martti-malmi/2009-10-28-bitcoinsourceforgenet-045"
 translationStatus: complete
 ---

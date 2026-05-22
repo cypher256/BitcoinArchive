@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2011-01-07T13:00:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-07-satoshi-to-hearn-open-source"
 ---
 

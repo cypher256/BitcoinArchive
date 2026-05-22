@@ -25,10 +25,12 @@ quotes:
   - id: "q1"
     person: "Joerg Baach"
     personSlug: "joerg-baach"
+    date: "2009-02-17T10:42:00Z"
     sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2009-02-17-bitcoin-open-source-baach"
   - id: "q2"
     person: "Sepp Hasslberger"
     personSlug: "sepp-hasslberger"
+    date: "2009-02-18T14:41:00Z"
     sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-hasslberger"
 ---
 

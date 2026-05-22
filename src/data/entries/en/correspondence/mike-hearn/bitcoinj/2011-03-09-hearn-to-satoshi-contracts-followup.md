@@ -26,14 +26,17 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2011-03-09T17:15:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2011-03-09T17:15:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
   - id: "q3"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2011-03-09T17:15:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
 ---
 

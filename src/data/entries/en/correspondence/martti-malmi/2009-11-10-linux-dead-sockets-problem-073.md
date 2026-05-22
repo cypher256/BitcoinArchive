@@ -24,11 +24,13 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    date: "2009-11-10T15:10:00Z"
     sourceEntryId: "correspondence/liberty-standard/2009-11-10-lost-six-sets-of-coins"
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
     parent: "q1"
+    date: "2009-11-10T06:45:00Z"
     sourceEntryId: "correspondence/liberty-standard/2009-11-10-linux-build-fan-speed"
 ---
 

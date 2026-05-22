@@ -25,11 +25,13 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-09T01:23:59Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-068"
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
     parent: "q1"
+    date: "2009-11-09T00:30:00Z"
     sourceEntryId: "correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly"
 ---
 

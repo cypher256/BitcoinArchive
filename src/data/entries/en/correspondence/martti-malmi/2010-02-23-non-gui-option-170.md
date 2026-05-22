@@ -23,11 +23,13 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-02-23T01:41:01Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-23-non-gui-option-169"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     parent: "q1"
+    date: "2010-02-17T17:32:04Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-17-non-gui-option-167"
 ---
 

@@ -16,6 +16,7 @@ quotes:
   - id: "q1"
     person: "martin"
     personSlug: "martin"
+    date: "2010-07-15T01:09:23.000Z"
     sourceEntryId: "forum/bitcointalk/topic-364/2010-07-15-martin-msg3027"
 ---
 

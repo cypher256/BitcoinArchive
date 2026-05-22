@@ -554,6 +554,21 @@ function checkFile(filePath, locale) {
         });
         continue;
       }
+      // 0523 plan: detect quotes with sourceEntryId set but no date.
+      // The chip falls back to "{name}の投稿" (no timestamp) which
+      // loses the UTC date that the primary entry carries. Setting
+      // date here is a mechanical transcription from the source
+      // entry's `date:` field. Warn for now; promote to error after
+      // the full violation list is resolved.
+      if (!q.date && q.sourceUnavailable !== true) {
+        violations.push({
+          file: rel,
+          check: 'sourceEntryId-without-date',
+          level: 'warn',
+          msg: `Quote "${q.id}" has sourceEntryId "${target}" but no date. Set date from the primary entry's date: field per 0523 plan.`,
+        });
+      }
+
       const targetType = typeMap.get(target);
       if (targetType && !PRIMARY_SOURCE_TYPES.has(targetType)) {
         violations.push({

@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-02-13T01:08:42Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-13-json-rpc-status-160"
 ---
 

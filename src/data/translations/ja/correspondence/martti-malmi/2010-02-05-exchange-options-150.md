@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-02-04T01:32:50Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-04-exchange-options-142"
 ---
 

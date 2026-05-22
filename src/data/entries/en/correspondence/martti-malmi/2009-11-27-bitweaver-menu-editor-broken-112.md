@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-26T17:45:42Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-26-bitweaver-menu-editor-broken-111"
 ---
 

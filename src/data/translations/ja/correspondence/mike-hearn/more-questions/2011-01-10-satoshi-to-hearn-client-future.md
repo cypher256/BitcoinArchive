@@ -27,10 +27,12 @@ quotes:
   - id: "q1"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2011-01-07T13:24:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-07-hearn-to-satoshi-open-source"
   - id: "q2"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2010-12-30T00:27:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
 ---
 

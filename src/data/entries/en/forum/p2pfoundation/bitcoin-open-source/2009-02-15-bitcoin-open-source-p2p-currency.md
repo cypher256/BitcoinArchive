@@ -21,6 +21,7 @@ quotes:
   - id: "q1"
     person: "Sepp Hasslberger"
     personSlug: "sepp-hasslberger"
+    date: "2009-02-14T15:30:00Z"
     sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2009-02-14-bitcoin-open-source-hasslberger"
 ---
 

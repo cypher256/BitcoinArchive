@@ -27,10 +27,12 @@ quotes:
   - id: "q1"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2011-01-10T16:48:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
   - id: "q2"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2011-01-10T16:48:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
 ---
 

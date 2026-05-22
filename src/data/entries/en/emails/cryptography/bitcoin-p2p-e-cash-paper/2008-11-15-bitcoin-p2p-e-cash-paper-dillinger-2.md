@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2008-11-15T04:43:00.000Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-15-bitcoin-p2p-e-cash-paper"
 ---
 

@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-16T06:20:52Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-16-dbopendbclose-bad-file-descriptor-exception-086"
 ---
 

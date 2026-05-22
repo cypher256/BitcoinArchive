@@ -26,14 +26,17 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-29T22:42:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-29T22:42:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
   - id: "q3"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-29T22:42:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
 ---
 

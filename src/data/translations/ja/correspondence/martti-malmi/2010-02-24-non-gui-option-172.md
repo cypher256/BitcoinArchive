@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2010-02-23T14:47:59Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-23-non-gui-option-171"
 ---
 

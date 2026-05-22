@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2010-07-17T23:21:45Z"
     sourceEntryId: "correspondence/martti-malmi/2010-07-17-bitcoin-hosting-208"
 ---
 

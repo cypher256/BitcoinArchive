@@ -26,6 +26,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-08T05:52:11Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-063"
 ---
 

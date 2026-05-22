@@ -24,10 +24,12 @@ quotes:
   - id: "q1"
     person: "Eugen Leitl"
     personSlug: "eugen-leitl"
+    date: "2009-10-26T12:46:27Z"
     sourceEntryId: "emails/bitcoin-list/2009-10-26-re-does-bitcoin-crash-in-windows-leitl"
   - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    date: "2009-10-26T15:00:00Z"
     sourceEntryId: "correspondence/liberty-standard/2009-10-26-bitcoin-website-is-down"
 ---
 

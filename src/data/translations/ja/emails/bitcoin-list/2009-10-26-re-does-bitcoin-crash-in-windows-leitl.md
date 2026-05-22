@@ -21,6 +21,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-10-23T23:57:51.000Z"
     sourceEntryId: "emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows"
 translationStatus: complete
 ---

@@ -27,9 +27,17 @@ quotes:
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-104"
   - id: "q2"
-    person: "mmalmi@cc.hut.fi"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-11-21T07:02:20Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-103"
+  - id: "q3"
+    parent: "q2"
+    person: "Martti Malmi"
     personSlug: "martti-malmi"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-104"
+    date: "2009-11-20T07:17:00Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-101"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -56,13 +64,14 @@ quotes:
 >
 > どこかで無料のSSL証明書を取得できないか確認してみましょう。例えば http://www.startssl.com/?app=1 のように。そうすれば自己署名証明書によるセキュリティ警告がユーザーに表示されなくなります。ただし、匿名で登録されたドメインに証明書を発行してくれるかどうかはわかりません。
 >
+> <!-- quote: q2 -->
 >> ありがとう、うまくいった。SSHでFile Managerをインストールできた。Drupalにもいくつかテーマをアップロードした。利用可能なテーマをすべて徹底的に確認したわけではまだない。
 >>
 >> CMSを調べてみたところ、DrupalとJoomlaが人気です。一般的な見解としては、Joomlaのほうがテーマの選択肢が豊富で学びやすいですが、Drupalはプログラマーやカスタマイズにとってより直感的かもしれません。JoomlaはCMSとして優れており、Drupalはブログに向いています。DrupalのURLは検索エンジンフレンドリーですが、Joomlaはそうではありません。
 >>
 >> どちらもSMFブリッジモジュールが利用可能です。今後の参考のために、Drupal用のものは「SMFforum Integration」という名前です。
 >>
->> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> 今日は設定する時間がありませんが、一時的なアカウント「」をパスワード「」で作成し、
 >>>  /var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
 >

@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Ray Dillinger"
     personSlug: "ray-dillinger"
+    date: "2008-11-15T07:04:21Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-15-bitcoin-p2p-e-cash-paper-dillinger-2"
 ---
 

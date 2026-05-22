@@ -18,11 +18,13 @@ quotes:
   - id: "q1"
     person: "Dustin D. Trammell"
     personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:28Z"
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
   - id: "q2"
     parent: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-01-12T22:48:23.000Z"
     sourceEntryId: "emails/bitcoin-list/2009-01-12-bitcoin-v0-1-3"
 ---
 

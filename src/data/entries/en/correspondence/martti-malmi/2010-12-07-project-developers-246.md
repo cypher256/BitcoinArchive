@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-07T15:38:28Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-07-project-developers-245"
 ---
 

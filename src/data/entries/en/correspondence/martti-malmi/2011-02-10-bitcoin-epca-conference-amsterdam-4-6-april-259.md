@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2011-02-07T09:39:36Z"
     sourceEntryId: "correspondence/martti-malmi/2011-02-07-bitcoin-epca-conference-amsterdam-4-6-april-258"
 ---
 

@@ -26,9 +26,17 @@ quotes:
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-104"
   - id: "q2"
-    person: "mmalmi@cc.hut.fi"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-11-21T07:02:20Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-103"
+  - id: "q3"
+    parent: "q2"
+    person: "Martti Malmi"
     personSlug: "martti-malmi"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-104"
+    date: "2009-11-20T07:17:00Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-101"
 ---
 
 I'll go ahead with setting up Drupal then.
@@ -68,6 +76,7 @@ if we find issues with the current host and have to change IP.
 > warning from a self-signed certificate. However I don't know if they 
 > give certificates for anonymously registered domains.
 > 
+> <!-- quote: q2 -->
 >> Thanks, that worked, I got File Manager installed with SSH.  I also
 >> uploaded a few themes into Drupal.  I haven't thoroughly gone through
 >> all the available themes yet.
@@ -81,7 +90,7 @@ if we find issues with the current host and have to change IP.
 >> Both have SMF bridge modules available.  For future reference, Drupal's
 >> is named "SMFforum Integration".
 >>
->> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> I don't have the time to configure it today, but I made a temporary 
 >>>  account "" with password "" and full permissions to  
 >>> /var/www/bitcoin. You can access it via ssh or sftp at port 30000.

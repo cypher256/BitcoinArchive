@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-02-04T19:33:26Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-04-utf-8-to-ansi-hack-in-caboutdialog-146"
 ---
 

@@ -26,6 +26,7 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    date: "2009-11-09T00:30:00Z"
     sourceEntryId: "correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly"
 ---
 

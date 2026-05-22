@@ -27,6 +27,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-01-16T16:03:14Z"
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-16-sni17-bitcoin-v0-1-released"
 ---
 

@@ -24,11 +24,13 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-21T07:02:20Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-103"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     parent: "q1"
+    date: "2009-11-20T07:17:00Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-101"
 ---
 

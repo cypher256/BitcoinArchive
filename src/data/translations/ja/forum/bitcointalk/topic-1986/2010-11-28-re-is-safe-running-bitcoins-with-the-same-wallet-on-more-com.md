@@ -18,6 +18,7 @@ quotes:
   - id: "q1"
     person: "Aleš Janda"
     personSlug: "ale-janda"
+    date: "2010-11-28T13:44:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1986/2010-11-28-ale-janda-msg25093"
 ---
 

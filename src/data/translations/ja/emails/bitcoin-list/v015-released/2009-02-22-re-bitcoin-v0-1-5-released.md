@@ -17,6 +17,7 @@ quotes:
   - id: "q1"
     person: "Nicholas Bohm"
     personSlug: "nicholas-bohm"
+    date: "2009-02-18T14:55:50Z"
     sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-18-re-bitcoin-v0-1-5-released-bohm"
 translationStatus: complete
 ---

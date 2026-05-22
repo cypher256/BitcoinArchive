@@ -24,11 +24,13 @@ quotes:
   - id: "q1"
     person: "Gavin Andresen"
     personSlug: "gavin-andresen"
+    date: "2010-12-20T17:00:00Z"
     sourceEntryId: "correspondence/gavin-andresen/2010-12-20-bitcoinorg-backups"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     parent: "q1"
+    date: "2010-12-20T15:55:04Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-250"
 ---
 

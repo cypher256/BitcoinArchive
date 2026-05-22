@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-06T16:08:56Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-243"
 ---
 

@@ -23,14 +23,17 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-10-27T04:45:47Z"
     sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-10-27T04:45:47Z"
     sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
   - id: "q3"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-10-27T04:45:47Z"
     sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
 ---
 

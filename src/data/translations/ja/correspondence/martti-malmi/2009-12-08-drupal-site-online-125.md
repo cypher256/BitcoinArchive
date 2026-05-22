@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-12-08T05:43:33Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-08-drupal-site-online-124"
 ---
 

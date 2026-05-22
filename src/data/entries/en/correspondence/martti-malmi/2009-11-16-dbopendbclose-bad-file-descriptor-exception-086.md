@@ -23,11 +23,13 @@ quotes:
   - id: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    date: "2009-11-16T05:00:00Z"
     sourceEntryId: "correspondence/liberty-standard/2009-11-16-test6-segfault"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     parent: "q1"
+    date: "2009-11-15T20:25:26Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-15-linux-update-085"
 ---
 

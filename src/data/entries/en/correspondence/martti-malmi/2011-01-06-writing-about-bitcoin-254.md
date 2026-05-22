@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Gavin Andresen"
     personSlug: "gavin-andresen"
+    date: "2011-01-06T17:00:00Z"
     sourceEntryId: "correspondence/gavin-andresen/2011-01-06-writing-about-bitcoin"
 ---
 

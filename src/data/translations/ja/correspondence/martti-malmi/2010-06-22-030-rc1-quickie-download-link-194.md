@@ -24,10 +24,12 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-06-22T17:36:22Z"
     sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-06-22T17:36:22Z"
     sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
 ---
 

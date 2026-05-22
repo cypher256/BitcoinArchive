@@ -23,10 +23,12 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-12-23T17:53:18Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-12-23T17:53:18Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
 ---
 

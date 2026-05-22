@@ -24,10 +24,12 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-02T22:00:56Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-12-02T22:00:56Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
 ---
 

@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-22T19:47:56Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-22-seo-friendly-site-transition-106"
 ---
 

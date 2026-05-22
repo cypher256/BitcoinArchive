@@ -25,14 +25,17 @@ quotes:
   - id: "q1"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2009-11-20T07:05:34Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
   - id: "q2"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2009-11-20T07:05:34Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
   - id: "q3"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2009-11-20T07:05:34Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
 ---
 

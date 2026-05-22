@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "John Levine"
     personSlug: "john-levine"
+    date: "2008-11-03T13:32:39Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-re-bitcoin-p2p-e-cash-paper-levine"
   - id: "q2"
     parent: "q1"

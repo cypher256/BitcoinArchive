@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-11-23T05:48:19Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108"
 translationStatus: complete
 ---

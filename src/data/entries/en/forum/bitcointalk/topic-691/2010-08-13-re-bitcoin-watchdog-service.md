@@ -17,6 +17,7 @@ quotes:
   - id: "q1"
     person: "throughput"
     personSlug: "throughput"
+    date: "2010-08-13T06:45:50.000Z"
     sourceEntryId: "forum/bitcointalk/topic-691/2010-08-13-throughput-msg8978"
 ---
 

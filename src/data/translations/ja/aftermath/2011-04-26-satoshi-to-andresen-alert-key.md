@@ -27,6 +27,7 @@ quotes:
   - id: "q1"
     person: "Satoshi"
     personSlug: "satoshi-nakamoto"
+    date: "2011-04-26T10:29:00Z"
     sourceEntryId: "correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email"
 relatedEntries:
   - aftermath/2011-04-26-andresen-to-satoshi-cia-visit

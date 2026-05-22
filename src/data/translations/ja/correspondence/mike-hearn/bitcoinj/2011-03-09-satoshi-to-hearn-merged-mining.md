@@ -28,14 +28,17 @@ quotes:
   - id: "q1"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2011-03-09T17:39:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
   - id: "q2"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2011-03-09T17:39:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
   - id: "q3"
     person: "Mike Hearn"
     personSlug: "mike-hearn"
+    date: "2011-03-09T17:39:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
 ---
 

@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-10-29T02:05:30Z"
     sourceEntryId: "correspondence/martti-malmi/2009-10-29-bitcoinsourceforgenet-046"
 ---
 
