@@ -24,6 +24,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-12-25-bitcoin-stuff-137"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-12-23T17:53:18Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
 translationStatus: complete
 ---
 
@@ -34,6 +40,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 >> 使えるメモリーはどのくらいか？
 <!-- speaker: Martti Malmi -->

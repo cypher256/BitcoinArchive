@@ -24,6 +24,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-12-25-bitcoin-stuff-137"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-12-23T17:53:18Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
 ---
 
 You're right, I was looking at a test run with 250,000 blocks... duh.
@@ -31,6 +37,7 @@ You're right, I was looking at a test run with 250,000 blocks... duh.
 A normal one shows 17MB memory usage and 10MB VM size.
 
 <!-- quote: q1 -->
+<!-- quote: q2 -->
 >> How much memory do you have to work with?
 > The VPS has 320MB RAM, 50MB of which is currently free. There's also 
 > 500MB swap space.

@@ -25,6 +25,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-05-exchange-options-150"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-04T01:32:50Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-exchange-options-142"
 ---
 
 Maybe the current difficulty of buying LR is already the limit of how 
@@ -66,6 +72,7 @@ amount.
 > is an extra step of inconvenience when the customer just wants to get 
 > Bitcoins. But maybe I don't have too much choice here.
 > 
+> <!-- quote: q2 -->
 >> Do you have electronic transfer or paper cheque in your country? (even
 >> if only within Europe)
 > 

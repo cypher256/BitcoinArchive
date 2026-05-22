@@ -24,6 +24,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-05-exchange-options-150"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-04T19:33:26Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-utf-8-to-ansi-hack-in-caboutdialog-146"
 ---
 
 Right, I'll change it to this so it doesn't get broken again:
@@ -36,6 +42,7 @@ Right, I'll change it to this so it doesn't get broken again:
 <!-- quote: q1 -->
 > I didn't change it knowingly, must have been some encoding problem.
 > 
+> <!-- quote: q2 -->
 >> What was the reason for this change?
 >>
 >> #if !wxUSE_UNICODE

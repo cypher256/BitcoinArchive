@@ -26,6 +26,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-05-exchange-options-150"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-04T01:32:50Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-exchange-options-142"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -49,6 +55,7 @@ quotes:
 > 手に入れたいだけの場合に、LRを購入するのが余計な手間になることです。
 > しかし、あまり選択の余地はないのかもしれません。
 >
+> <!-- quote: q2 -->
 >> あなたの国には電子送金や小切手はありますか？
 >> （ヨーロッパ内だけであっても）
 >

@@ -25,6 +25,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-05-exchange-options-150"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-04T19:33:26Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-utf-8-to-ansi-hack-in-caboutdialog-146"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -43,6 +49,7 @@ quotes:
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
 >> この変更の理由は何だったのか？
 >>
 >> #if !wxUSE_UNICODE
