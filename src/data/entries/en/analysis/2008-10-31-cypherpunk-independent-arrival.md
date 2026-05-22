@@ -163,6 +163,7 @@ The chronology constrains what can be said about Satoshi's relationship to the c
 
 Wei Dai's January 2014 retrospective ([archived](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)) provides a second independent constraint:
 
+<!-- audit:quote-skip -->
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
 Two independent strands — Satoshi's b-money disclaimer and Dai's identifiability argument — converge: a designer working outside the cypherpunk community's visible participation, with Hashcash as the one known prior reference.

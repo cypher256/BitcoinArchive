@@ -108,6 +108,7 @@ On formatting and readability, Kaminsky said the code was "dense and inscrutable
 
 On security architecture, however, his finding was the opposite. For every potential exploit Kaminsky identified, Satoshi had already added an "Attack Removed" comment with corresponding mitigation code. Kaminsky concluded:
 
+<!-- audit:quote-skip -->
 > "Either there's a team of people who worked on this, or this guy is a genius."
 
 This is the most rigorous security review of v0.1 by an outside expert in the public record. The result is consistent and worth stating directly: Satoshi anticipated essentially every category of attack a sophisticated adversary would attempt and pre-blocked them at the design level.

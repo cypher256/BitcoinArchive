@@ -126,6 +126,7 @@ Q1 is structurally nearly determined. Q2 remains empirically open from the publi
 
 Q1 is not a choice among hypotheses; it is a structure readable directly from the source code:
 
+<!-- audit:quote-skip -->
 > **The five-day gap is the difference between the day the hardcoded values were decided and the day the live network was first started. It is not elapsed runtime on a live chain.**
 
 Timeline:

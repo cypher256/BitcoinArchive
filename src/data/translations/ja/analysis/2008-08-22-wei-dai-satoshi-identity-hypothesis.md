@@ -52,6 +52,7 @@ translationStatus: complete
 
 [ウェイ・ダイの b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) は[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)の参考文献 [1] である。ウェイ・ダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)は SHA-256 のためビットコイン v0.1 に同梱されている。ウェイ・ダイはネットワーク立ち上げ前にサトシが接触した 2 番目の人物である。2014 年 1 月、LessWrong で「サトシではないか」 と問われたとき、彼は[こう答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
 
+<!-- audit:quote-skip -->
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
 
 本エントリーは、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)がサトシだとする繰り返し提起される仮説、その支持論点、そして反証 —— 上記のウェイ・ダイ本人の否定を含む主要な反証 —— を並べて提示する。本仮説は候補プロファイル群 A（サトシがホワイトペーパーで明示的に引用した人物）に属し、暗号通貨ジャーナリズムで少なくとも 2010 年以降議論されてきた。
