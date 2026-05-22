@@ -38,6 +38,17 @@ relatedEntries:
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-08-20-satoshi-self-statements
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-19T15:20:46Z"
+    sourceEntryId: "correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-09T04:54:55Z"
+    sourceEntryId: "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
 translationStatus: complete
 ---
 
@@ -47,18 +58,24 @@ translationStatus: complete
 
 **メール 1：[2008年11月19日](/BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/)（フィニー → サトシ）**
 フィニーはサトシに修正への感謝を述べ、ネットワークの拡張性について質問した：
+
+<!-- quote: q1 -->
 > 「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」
 
 これはビットコイン公開ローンチの 2 か月前、プレリリースコードレビュー期間中のことだった。
 
 **メール 2：[2009年1月8日](/BitcoinArchive/ja/entries/aftermath/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
 件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
+
+<!-- quote: q2 -->
 > 「お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された: http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。Satoshi」
 
 このメールは`satoshi@vistomail.com`から送信された。
 
 **メール 3：[2009年1月10日（または 12日）](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）**
 ビットコインローンチ後のフォローアップ：
+
+<!-- audit:quote-skip -->
 > 「残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。」
 
 「今いる場所」（"from where I am"）という表現は、リリース週におけるサトシの公開活動の濃密さと併せて、[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で検討されている。

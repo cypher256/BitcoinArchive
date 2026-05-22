@@ -40,23 +40,29 @@ Fran met Hal during her junior year at Caltech, during "rotation week" in his fr
 **On [Bitcoin's launch](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) in January 2009:**
 Fran described Hal's reaction:
 
+<!-- audit:quote-skip -->
 > "This is cool. This is a fun game. Look! This is actually working!"
 
 **On Hal's ALS and cognitive decline:**
 
+<!-- audit:quote-skip -->
 > "It's not a normal kind of dementia, but the brain is involved. Hal felt that it was affecting his ability to do his fast thinking, to do his mental math. He felt like he was losing that, and he would lose more."
 
 **On Hal's worldview:**
 
+<!-- audit:quote-skip -->
 > "He did not believe in God. He believed in the future."
 
+<!-- audit:quote-skip -->
 > "I know Hal wanted to be around. He wanted to experience the future. He was very excited about change... It seemed like he was happier with each and every change. Each change was great! He embraced it, and he was always looking forward to more."
 
 **On death and cryonics:**
 "He was not afraid of death." Regarding his motivation for cryonics:
 
+<!-- audit:quote-skip -->
 > "I think that was a lot of his motivation for getting involved with cryonics in the first place. He just wanted to be able to see what the world turned into, because it was going to be such an amazing, wondrous place."
 
 **On Hal as a father:**
 
+<!-- audit:quote-skip -->
 > "A very easygoing father."
