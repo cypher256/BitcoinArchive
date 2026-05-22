@@ -35,6 +35,12 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-08-20-satoshi-self-statements
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2010-12-19T16:41:39Z"
+    sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 translationStatus: complete
 ---
 
@@ -42,14 +48,17 @@ translationStatus: complete
 
 **サトシにリーダーにされた経緯：**
 
+<!-- audit:quote-skip -->
 > 「彼は僕に一杯食わせたんだ。ビットコインのホームページに僕のメールアドレスを載せていいかと聞かれて、いいよと答えた。気づかなかったのは、僕のアドレスを載せた時に、自分のアドレスを消していたことだ。僕がビットコインについて知りたい人全員からメールを受ける窓口になった。サトシはプロジェクトのリーダーから身を引き始め、僕をリーダーとして前に押し出していった」
 
 **自身の遺産について：**
 
+<!-- audit:quote-skip -->
 > 「『偉大なことをした人』ではなく、『いい人』として覚えられたいね」
 
 **役割を引き受けて（BitcoinTalk フォーラム、2010年12月19日）：**
 
+<!-- quote: q1 -->
 > 「サトシの承認を得て、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする」
 
 **サトシの別れの言葉：**
@@ -58,6 +67,7 @@ translationStatus: complete
 
 **CIA 本部訪問後（ツイート、2011年6月14日）：**
 
+<!-- audit:quote-skip -->
 > 「CIAでの講演はうまくいったよ。あそこの廊下はすごく広くて、面白いものがいっぱいあった」
 
 ギャビンの関与は、移行期において極めて重要だった。サトシの BitcoinTalk における最後の公開投稿は 2010 年 12 月 12 日であり、[ギャビンは 2010 年 12 月 19 日にプロジェクト管理を公的に引き受けた](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)。ギャビンは、2011 年 4 月のサトシの最後の既知の通信より前に、最後にメールを交わしたことが知られている人物である。ギャビンは CIA / In-Q-Tel 講演の招待を、2011 年 4 月 26 日のサトシの警告キーメールへの返信のなかで伝えた。この返信以後、サトシからの返信は知られていない。

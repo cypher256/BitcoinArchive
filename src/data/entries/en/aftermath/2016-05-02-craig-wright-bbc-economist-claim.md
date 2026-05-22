@@ -40,10 +40,12 @@ Wright published a blog post on his website (drcraigwright.net) offering what he
 
 The BBC reported:
 
+<!-- audit:quote-skip -->
 > "Mr Wright has provided technical proof to back up his claim using coins known to be owned by Bitcoin's creator."
 
 The Economist took a more skeptical stance:
 
+<!-- audit:quote-skip -->
 > "Our conclusion is that he could well be Mr Nakamoto, but that nagging questions remain."
 
 [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) initially stated he believed Wright was Satoshi after a private demonstration in London, lending significant credibility to the claim.
@@ -52,6 +54,7 @@ However, the cryptographic "proof" published on Wright's blog was quickly debunk
 
 Wright promised to provide further evidence but never did. He later published a post stating:
 
+<!-- audit:quote-skip -->
 > "I'm sorry. I believed that I could do this. I believed that I could put the years of anonymity and hiding behind me. But I can't."
 
 *[Context: In March 2024, the UK High Court definitively [ruled in COPA v. Wright](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) that Craig Wright is not Satoshi Nakamoto, finding that he had "lied to the court extensively and repeatedly" and that documents submitted as evidence were forgeries.]*

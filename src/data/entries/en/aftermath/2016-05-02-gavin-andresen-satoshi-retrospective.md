@@ -35,20 +35,29 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-08-20-satoshi-self-statements
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2010-12-19T16:41:39Z"
+    sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
 Gavin Andresen first discovered Bitcoin in 2010 and quickly became one of the most active contributors. Satoshi Nakamoto recognized his talent and commitment, eventually giving him access to the Bitcoin source code repository and naming him lead developer.
 
 **On how Satoshi made him the leader:**
 
+<!-- audit:quote-skip -->
 > "Eventually, he pulled a fast one on me because he asked me if it'd be OK if he put my email address on the Bitcoin homepage, and I said yes, not realizing that when he put my email address there, he'd take his away. I was the person everyone would email when they wanted to know about Bitcoin. Satoshi started stepping back as leader of project and pushing me forward as the leader of the project."
 
 **On his legacy:**
 
+<!-- audit:quote-skip -->
 > "I would like to be remembered as a 'good guy' (as opposed to that person who did great things with Bitcoin)."
 
 **On assuming the role (BitcoinTalk forum, December 19, 2010):**
 
+<!-- quote: q1 -->
 > "With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin."
 
 **Satoshi's farewell:**
@@ -57,6 +66,7 @@ In an [email to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/ho
 
 **On visiting CIA headquarters (tweet, June 14, 2011):**
 
+<!-- audit:quote-skip -->
 > "My talk at the CIA went well today. The hallways there are REALLY wide, and full of interesting stuff."
 
 Gavin's involvement was critical during the transition period. Satoshi's last public BitcoinTalk post was on December 12, 2010, and Andresen [publicly assumed project management on December 19, 2010](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/). Andresen was the last known person to exchange emails with Satoshi before Satoshi's final known communication in April 2011. Gavin disclosed his CIA / In-Q-Tel speaking invitation in his April 26, 2011 reply to Satoshi's alert-key email; no reply from Satoshi is known after that message.
