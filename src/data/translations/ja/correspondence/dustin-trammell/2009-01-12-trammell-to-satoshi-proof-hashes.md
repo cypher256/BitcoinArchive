@@ -20,9 +20,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-proof-hashes"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-12T18:52:45Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
 On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > ありがとう、これは知らなかった。よく作り込まれている。
 > もっと古いものが長らく動いていて、ハッシュを Usenet に公開している。
 > このサービスが Usenet を使っていないのは意外だ。もっとも、最近では
@@ -41,6 +49,7 @@ http://groups.google.com/group/proof-hashes
 アーカイブだ。よければアカウントを取得して、そちらのシステムからも
 ここに投稿するようにして構わない。
 
+<!-- speaker: Satoshi Nakamoto -->
 > そう、Credit 欄は成熟するまで 0.00 のままで、成熟すると 50.00 に
 > なる。成熟するまでは Credit 欄を空欄にしておいた方が分かりやすいだろうか？
 > 取引の詳細（行をダブルクリックしたときに表示される画面）に
@@ -61,6 +70,7 @@ http://groups.google.com/group/proof-hashes
 行と同じ情報が表示されるだけだ。ここにもっと多くの情報を入れれば、
 確かに有用になると思う。
 
+<!-- speaker: Satoshi Nakamoto -->
 > まだなら v0.1.3 に更新しておいてほしい。このバージョンで安定性が
 > かなり上がった。
 

@@ -21,8 +21,16 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-12-satoshi-to-trammell-coin-maturity"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-11T23:14:04Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email"
 ---
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > ちょうどそちらの論文を読み進めているところだ。タイムスタンプサーバーの
 > 節で新聞や Usenet に言及されていたので、もしまだ知らなければ
 > 興味を持つかもしれないと思った。
@@ -39,6 +47,7 @@ relatedEntries:
 基本的な機能を共有している。
 
 
+<!-- speaker: Dustin Trammell -->
 > ところで、こちらもアルファコードをワークステーションの 1 台で動かして
 > いる。これまで「Generated」のメッセージが 2 件出ているが、
 > 「Credit」欄は 0.00 のままで残高も変わっていない。これはコインが

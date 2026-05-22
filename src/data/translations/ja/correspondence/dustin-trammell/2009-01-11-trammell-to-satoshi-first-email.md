@@ -21,9 +21,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-11-trammell-to-satoshi-first-email"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-08T19:27:40Z"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 ---
 
 On Fri, 2009-01-09 at 03:27 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > ピアツーピアネットワークを用いて二重支払いを防止する新しい電子マネー
 > システム、ビットコインの初回リリースをお知らせする。
 > サーバーや中央権威を一切持たない、完全な分散型システムだ。

@@ -20,8 +20,15 @@ tags:
   - "v0-1-3"
 relatedEntries:
   - "aftermath/2009-01-12-satoshi-to-trammell-coin-maturity"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-11T23:14:04Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email"
 ---
 
+<!-- quote: q1 -->
 > I'm currently reading through your paper.  At the timestamp server
 > section you mention newspapers and usenet, so I thought you might be
 > interested in this if you have not seen it already:
@@ -39,6 +46,7 @@ servers share the basic functionality of periodically collecting
 things into blocks and hashing them into a chain.
 
 
+<!-- speaker: Dustin Trammell -->
 > By the way, I'm also currently running the alpha code on one of my
 > workstations.  So far it has two "Generated" messages, however the
 > "Credit" field for those is 0.00 and the balance hasn't changed.  Is

@@ -20,9 +20,16 @@ tags:
   - "first-contact"
 relatedEntries:
   - "aftermath/2009-01-11-trammell-to-satoshi-first-email"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-08T19:27:40Z"
+    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 ---
 
 On Fri, 2009-01-09 at 03:27 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > Announcing the first release of Bitcoin, a new electronic cash
 > system that uses a peer-to-peer network to prevent double-spending.
 > It's completely decentralized with no server or central authority.

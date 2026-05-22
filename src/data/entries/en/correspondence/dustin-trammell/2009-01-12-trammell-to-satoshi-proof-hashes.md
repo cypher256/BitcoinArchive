@@ -19,9 +19,16 @@ tags:
   - "feedback"
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-proof-hashes"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-12T18:52:45Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
 On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > Thanks, I hadn't seen that yet.  It looks very well presented.
 > There was an older one that's been running for a long time that
 > publishes its hashes to Usenet.  I'm surprised this one isn't
@@ -41,6 +48,7 @@ Since I run that group, and it's sole purpose is to archive
 proof-of-work hashes, feel free to join an account to have your system
 post there as well if you like.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Right, the credit field stays 0.00 until it matures, then it'll be
 > 50.00.  Do you think it would be clearer if I left the credit
 > field blank until it matures?  I should put some text in the
@@ -61,6 +69,7 @@ further details...  I just did that and it currently just has the same
 information there that is in the transaction line.  Putting more
 information there would definitely be useful.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Be sure to upgrade to v0.1.3 if you haven't already.  This version
 > has really stabilized things.
 
