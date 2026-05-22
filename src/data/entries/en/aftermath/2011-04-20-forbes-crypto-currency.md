@@ -32,6 +32,7 @@ relatedEntries:
 
 [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) told Forbes:
 
+<!-- audit:quote-skip -->
 > "Bitcoin is designed to bring us back to a decentralized currency of the people."
 >
 > "This is like better gold than gold."

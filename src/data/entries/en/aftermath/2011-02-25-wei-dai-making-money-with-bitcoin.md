@@ -34,20 +34,24 @@ relatedEntries:
 
 **On his connection to Bitcoin (responding to a direct question):**
 
+<!-- audit:quote-skip -->
 > "Hi Clippy, what made you think that I might be able to?"
 
 Dai clarified that he did not create Bitcoin — he only described similar concepts over a decade prior, and Satoshi Nakamoto independently reinvented the idea and later credited his work.
 
 **On direct purchase vs. mining:**
 
+<!-- audit:quote-skip -->
 > "If you value 1 BTC at $25, you should just buy BTC with cash directly."
 
 **On Bitcoin's security:**
 
+<!-- audit:quote-skip -->
 > "I have not analyzed the security of the protocol... not many other cryptographers have analyzed its security either, and in my experience these kinds of protocols often have flaws that are not found until that has happened."
 
 **On the purpose of cryptographic currency:**
 
+<!-- audit:quote-skip -->
 > "The point of my idea or Bitcoin is that such trust can be obviated with the appropriate cryptography."
 
 Dai contrasted b-money and Bitcoin with traditional e-cash protocols that require trusted bank intermediaries.

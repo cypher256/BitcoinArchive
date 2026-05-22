@@ -33,6 +33,7 @@ translationStatus: complete
 
 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は Forbes にこう語った。
 
+<!-- audit:quote-skip -->
 > 「ビットコインは、人々の分散型通貨へ我々を戻すために設計されている」
 >
 > 「これは金よりも優れた金のようなものだ」
