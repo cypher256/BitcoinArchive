@@ -73,6 +73,7 @@ translationStatus: complete
 > -Martti
 >
 <!-- speaker: Constance J. Wells -->
+<!-- audit:quote-skip -->
 >> Martti Malmi
 >> 現在フルタイムの学生だ -
 >> http://info.aspen.edu/

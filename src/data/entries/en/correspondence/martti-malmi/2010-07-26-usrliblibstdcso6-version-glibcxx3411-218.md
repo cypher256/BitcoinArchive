@@ -24,9 +24,16 @@ quotes:
     person: "Martti Malmi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-07-24-donation-217"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-07-23T15:59:42Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-23-donation-215"
 ---
 
 <!-- quote: q1 -->
+<!-- quote: q2 -->
 >> Btw, are you able to use my builds of bitcoind on your host, or do you
 >> have to build it yourself?
 > 

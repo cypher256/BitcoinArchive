@@ -26,6 +26,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-242"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-12-02T22:00:56Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
 relatedEntries:
   - aftermath/2010-12-12-satoshi-handover-to-andresen
 ---
@@ -37,6 +43,7 @@ relatedEntries:
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
 >> Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。
 >
 <!-- speaker: Martti Malmi -->

@@ -23,10 +23,17 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-22-re-bitcoin-v0-1-5-released"
+  - id: "q2"
+    parent: "q1"
+    person: "Nicholas Bohm"
+    personSlug: "nicholas-bohm"
+    date: "2009-02-18T14:55:50Z"
+    sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-18-re-bitcoin-v0-1-5-released-bohm"
 translationStatus: complete
 ---
 
 <!-- quote: q1 -->
+<!-- quote: q2 -->
 >> 次は何でしょうか？
 >
 > v0.1.6 で次に予定しているのは、ブロック生成に複数のプロセッサーを

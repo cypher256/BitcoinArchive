@@ -24,10 +24,17 @@ quotes:
     person: "Martti Malmi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-07-24-donation-217"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-07-23T15:59:42Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-23-donation-215"
 translationStatus: complete
 ---
 
 <!-- quote: q1 -->
+<!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 >> ところで、私がビルドしたbitcoindをあなたのホストで使えるか、それとも自分でビルドする必要があるか？
 >

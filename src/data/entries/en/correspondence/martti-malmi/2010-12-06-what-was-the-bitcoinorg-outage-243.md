@@ -25,6 +25,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-242"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-12-02T22:00:56Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
 relatedEntries:
   - aftermath/2010-12-12-satoshi-handover-to-andresen
 ---
@@ -33,6 +39,7 @@ relatedEntries:
 > I'm ready to send you the password. Can you send me your PGP key so I 
 > don't have to send it in plaintext?
 > 
+> <!-- quote: q2 -->
 >> It should be Gavin.  I trust him, he's responsible, professional, and
 >> technically much more linux capable than me.
 > 
