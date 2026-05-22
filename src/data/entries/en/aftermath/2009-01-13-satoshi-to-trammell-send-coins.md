@@ -25,16 +25,29 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-13T01:55:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
+  - id: "q2"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
 In this email, Satoshi discussed a communications bug that had been fixed in version 0.1.3 which had prevented nodes from properly broadcasting blocks. He then offered to send Trammell some coins:
 
+<!-- quote: q1 -->
 > This is all fixed in 0.1.3. If you give me your IP, I'll send you some coins.
 
 This message is significant because it documents one of the very earliest direct Bitcoin transfers between individuals. Satoshi used the "send-to-IP" feature, which allowed coins to be sent directly to a node by connecting to its IP address. The receiving client would then provide a Bitcoin address for the transaction.
 
 Trammell responded later that day (January 13, 2009, at 18:40 UTC) with his IP address:
 
+<!-- quote: q2 -->
 > I'm currently at 24.28.79.95, but that's dynamic so it may change.
 
 The following day, January 14, 2009 at 19:46 UTC, Satoshi sent Trammell 25.0 BTC in a single transaction (txid: d71fd2f64c0b34465b7518d240c00e83f6a5b10138a7079d1252858fe7e6b577). This transaction was sent from address 1Jhk2DHosaaZx1E4CbnTGcKM7FC88YHYv9 to Trammell's address 1DCbY2GYVaAMCBpuBNN5GVg3a47pNK1wdi.

@@ -25,12 +25,24 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-13T01:55:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
+  - id: "q2"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 このメールで、サトシはバージョン 0.1.3 で修正された通信バグについて議論した。このバグはノードがブロックを適切にブロードキャストすることを妨げていた。そしてトランメルにコインを送ることを申し出た：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > これは0.1.3ですべて修正されている。IPアドレスを教えてくれれば、コインを送る。
 
@@ -40,6 +52,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 トランメルはその日の後ほど（2009年1月13日、UTC 18:40）に IP アドレスを返信した：
 
+<!-- quote: q2 -->
 <!-- speaker: Dustin Trammell -->
 > 現在は24.28.79.95だが、動的なので変わるかもしれない。
 
