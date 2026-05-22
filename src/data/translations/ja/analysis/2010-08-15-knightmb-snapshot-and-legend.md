@@ -43,6 +43,7 @@ translationStatus: complete
 
 技術的記録における knightmb の位置を一文で固定しているのが、[2010 年 8 月 15 日のギャビン・アンドレセンによる緊急パッチ告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/)に置かれた次の一行である:
 
+<!-- audit:quote-skip -->
 > 「knightmb のブロックチェーン・スナップショットを起点にした」
 
 その経緯は本アーカイブの[バリュー・オーバーフロー事件のエントリー](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に記録されている。約 18:08 UTC、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 でトランザクション検証コードの整数オーバーフローによりおよそ 1,840 億 BTC が生成されていることに気づいた。発覚から約 5 時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はソフトフォークパッチを含む [Bitcoin v0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開し、ギャビン・アンドレセンも並行して独自の緊急パッチをテストし始めた。両方のパッチは破損前のチェーンの清浄なコピーを必要とした。これを適用する者は、ブロック 74638 より前の時点までチェーンを巻き戻し、そこから再同期する必要があった。ネットワーク全体のクライアントが既に不正ブロックで汚染されている状況で、清浄なチェーンの入手先は自明な問題ではなかった。
@@ -75,6 +76,7 @@ BitcoinTalk の記録における knightmb のもう一つの定型は、ハー�
 
 knightmb はこれに対し、wobber の主張を引用したうえで否定する形で返信した:
 
+<!-- audit:quote-skip -->
 > 「彼が本当にそんなに生成しているとは 100% 確信できない。私からはこれだけだ」
 
 つまり「10% マイナー」 主張は別人を指していたものであり、knightmb はその数字が正確であることを明示的に否定し、自分が同等の供給量を保有していると主張したことは一度もない。彼が個人で 371,000 BTC を保有していたという話は、二次情報の連鎖が wobber の投稿と knightmb のユーザー名を一つの主張に押し潰した結果として生まれたものと思われる。

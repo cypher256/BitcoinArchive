@@ -42,6 +42,7 @@ Each section flags its evidentiary weight: items drawn from BitcoinTalk posts an
 
 The single sentence that anchors knightmb's place in the technical record sits in [Gavin Andresen's emergency patch announcement on August 15, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
 
+<!-- audit:quote-skip -->
 > "I started with knightmb's blockchain snapshot."
 
 The context is documented in this Archive's [Value overflow incident entry](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/). At approximately 18:08 UTC, [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed Block 74638 had created roughly 184 billion BTC out of an integer overflow in the transaction-validation code. Within five hours, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) published [Bitcoin v0.3.10](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) containing a soft-fork patch, and Gavin Andresen began testing his own emergency patch in parallel. Both patches required a clean copy of the pre-corruption blockchain — anyone applying them needed to rewind to a block before 74638 and resync from there. With clients across the network already poisoned by the bad block, the question of where to obtain a clean chain was non-trivial.
@@ -74,6 +75,7 @@ The genealogy appears to be a misattribution. On [July 18, 2010](/BitcoinArchive
 
 knightmb responded by quoting wobber's claim and rejecting it:
 
+<!-- audit:quote-skip -->
 > "I'm 100% certain that he isn't really generating that much and I'll leave it at that."
 
 The "10% miner" claim referred to a different person; knightmb explicitly denied that the figure was accurate; and he never claimed any equivalent share of the supply for himself. The claim that he personally held 371,000 BTC appears to have arisen from a chain of secondary sources collapsing the wobber post and the knightmb username into a single statement.

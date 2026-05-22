@@ -48,6 +48,7 @@ inlineLinkKeywords:
 On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/hal-finney/):
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 
 The clause "from where I am" — location-contingent, implicitly not a permanent property of Satoshi's setup — combined with the unusually dense cadence of his Bitcoin work during the January 8–12, 2009 launch week, is the converging evidence this analysis reads. The reading is editorial: it does not establish Satoshi's location or identity, and the primary sources underdetermine the conclusion in multiple ways noted below.
@@ -79,6 +80,7 @@ Between Jan 8 and Jan 12, 2009 — a five-day window — Satoshi made at least f
 
 In Satoshi's own words from the January 11 v0.1.2 announcement:
 
+<!-- audit:quote-skip -->
 > "All the problems I've been finding are in the code that automatically finds and connects to other nodes, since I wasn't able to test it in the wild until now. There are many more ways for connections to get screwed up on the real Internet."
 
 That release note documents that Satoshi personally reproduced, debugged, and shipped fixes for peer-connection problems during this same week — including a specific fix for "behind a firewall" scenarios where "it could only receive one connection, and the second connection would constantly disconnect and reconnect."

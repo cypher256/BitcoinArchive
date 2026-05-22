@@ -172,6 +172,7 @@ Four often-cited circumstantial indicators are repeatedly raised by hypothesis a
 
 The strongest archive-internal counter-evidence is Szabo's own [April 27, 2008 comment on his Unenumerated blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), where he wrote:
 
+<!-- audit:quote-skip -->
 > "Bit gold would greatly benefit from a demo, an experimental market (with e.g. a trusted third party substituted for the complex security that would be needed for a real system). Anybody want to help me code one up?"
 
 Six months later, Satoshi Nakamoto published the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/), and three months after that shipped a working 19,901-line C++ codebase.
@@ -184,8 +185,10 @@ The hypothesis-side reading would have to recast the comment as stagecraft — S
 
 The second strongest archive-internal counter-evidence is Szabo's [May 28, 2011 Unenumerated post *"Bitcoin, what took ye so long?"*](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/). Szabo writes:
 
+<!-- audit:quote-skip -->
 > "Myself, Wei Dai, and Hal Finney were the only people I know of who liked the idea (or in Dai's case his related idea) enough to pursue it to any significant extent until Nakamoto (assuming Nakamoto is not really Finney or Dai). Only Finney (RPOW) and Nakamoto were motivated enough to actually implement such a scheme."
 
+<!-- audit:quote-skip -->
 > "Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes."
 
 Szabo distinguishes himself from Nakamoto, lists himself alongside Wei Dai and Hal Finney as "the only people I know of who liked the idea... until Nakamoto," and credits Nakamoto with a specific design improvement to Bit Gold. The post is parenthetically explicit about the identity hedge — *"assuming Nakamoto is not really Finney or Dai"* — but conspicuously does not include Szabo himself in that hedge. If Szabo were Satoshi, the post would constitute a sustained, public, voluntary self-deception covering both the credit ("Nakamoto improved my design") and the implicit denial (the hedge omits Szabo). The simpler reading: Szabo treats Nakamoto as a different person because Nakamoto is a different person.
