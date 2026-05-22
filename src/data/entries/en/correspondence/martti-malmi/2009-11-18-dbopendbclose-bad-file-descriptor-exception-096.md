@@ -43,6 +43,7 @@ should print the test version in the log)
 <!-- quote: q1 -->
 > Here's the logs in case they're still useful.
 > 
+> <!-- quote: q2 -->
 >> I have an idea for a workaround, but it depends on what files the
 >> errors are on.  If you've accumulated several errors in db.log, could
 >> you send it to me? (even if it's rather simple and boring)  Is the file
