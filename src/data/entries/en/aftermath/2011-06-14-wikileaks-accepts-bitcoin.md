@@ -26,10 +26,15 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
+quotes:
+  - id: "q1"
+    person: "WikiLeaks"
+    date: "2011-06-14T00:00:00Z"
 ---
 
 On June 14, 2011, WikiLeaks tweeted:
 
+<!-- quote: q1 -->
 > "WikiLeaks now accepts anonymous Bitcoin donations on 1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v"
 
 This came after a financial blockade imposed on WikiLeaks following the CableGate scandal in November 2010. Bank of America, Visa, MasterCard, PayPal, and Western Union had all blocked donations to the organization, cutting off an estimated 95% of its revenue.

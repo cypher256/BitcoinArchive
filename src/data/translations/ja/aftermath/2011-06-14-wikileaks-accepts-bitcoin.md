@@ -26,23 +26,38 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
+quotes:
+  - id: "q1"
+    person: "WikiLeaks"
+    date: "2011-06-14T00:00:00Z"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-12-05T00:00:00Z"
+    sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
+  - id: "q3"
+    person: "Julian Assange"
+    personSlug: "julian-assange"
 translationStatus: complete
 ---
 
 2011年6月14日、WikiLeaks はツイートした：
 
+<!-- quote: q1 -->
 > 「WikiLeaksは 1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v で匿名のビットコイン寄付を受け付けるようになった」
 
 これは 2010年11月の CableGate スキャンダルを受けて WikiLeaks に課された金融封鎖の後のことだった。Bank of America、Visa、MasterCard、PayPal、Western Union がすべて同組織への寄付を遮断し、収入の推定 95%を断ち切っていた。
 
 6 か月前の 2010年12月5日、サトシ・ナカモトは WikiLeaks のビットコイン採用に対して[コミュニティにこう警告していた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)。
 
+<!-- quote: q2 -->
 > 「プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。」
 
 WikiLeaks はサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から 2 か月後だったことだ。
 
 ビットコインは WikiLeaks の生命線となった。2016年までに、同組織はビットコイン寄付を通じて 4,000 BTC 以上を集めた。ジュリアン・アサンジは後にこう述べた。
 
+<!-- quote: q3 -->
 > 「アメリカ政府は我々にビットコインへの投資を強制した — 金融封鎖のおかげで。我々は50,000%のリターンを得た。」
 
 このエピソードは、サトシがビットコインに設計したまさにそのユースケースを実証した：中央権力が遮断できない検閲耐性のある価値移転。同時に、ビットコインが準備できる前に時期尚早な政治的注目が危険をもたらすというサトシの懸念も正当化された。
