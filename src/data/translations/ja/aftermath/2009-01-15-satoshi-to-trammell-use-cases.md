@@ -27,6 +27,12 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:15:23Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 translationStatus: complete
 ---
 
@@ -35,6 +41,7 @@ translationStatus: complete
 
 続いてサトシは、ビットコインを投資対象とする[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の以前の提案に言及した。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > ハルは、これが低確率の投資対象として見られる可能性をほのめかしていた。信頼できる第三者が怖気づいた時に必然的に骨抜きにされない方法がわかった今、10年後に何らかの形で電子通貨を使っていなかったら驚きである。
 

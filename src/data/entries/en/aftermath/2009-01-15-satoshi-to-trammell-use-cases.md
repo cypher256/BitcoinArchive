@@ -27,16 +27,24 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:15:23Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 ---
 
 In this email, Satoshi noted that at least one node on the network had a frequently changing IP address within the same class B range, which he hadn't anticipated. He asked Trammell's permission to CC the conversation to bitcoin-list or the Cryptography mailing list, and shared the bitcoin-list subscription details.
 
 Satoshi then referenced [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s earlier suggestion about Bitcoin as an investment:
 
+<!-- quote: q1 -->
 > Hal sort of alluded to the possibility that it could be seen as a long-odds investment. I would be surprised if 10 years from now we're not using electronic currency in some way, now that we know a way to do it that won't inevitably get dumbed down when the TTP gets cold feet.
 
 He outlined several potential use cases for Bitcoin, even if it didn't gain immediate mainstream adoption:
 
+<!-- speaker: Satoshi Nakamoto -->
 > Even if it doesn't take off straight away, it's now available for use by the next guy who comes up with a plan that needs some kind of token or electronic currency. It could get started in a closed system or narrow niche like reward points, donation tokens, currency for a game or micropayments for adult sites. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
 
 Satoshi described Bitcoin's pay-to-send email feature as an existing use case, envisioning that famous people could accept bitcoin payments to read fan messages, and subscription sites could charge bitcoins for free trials to prevent abuse.
