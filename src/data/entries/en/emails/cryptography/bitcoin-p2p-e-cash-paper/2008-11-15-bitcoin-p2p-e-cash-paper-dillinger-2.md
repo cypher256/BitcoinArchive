@@ -35,8 +35,10 @@ On Sat, 2008-11-15 at 12:43 +0800, Satoshi Nakamoto wrote:
 > to serve as a reference to help clear up all these implementation
 > questions.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Only the buyer signs, and there's no blinding.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Identities are not used, and there's no reliance on recourse. It's all prevention.
 
 Okay, that's surprising. If you're not using buyer/seller identities, then you are not checking that a spend is being made by someone who actually is the owner of (on record as having recieved) the coin being spent.
@@ -49,6 +51,7 @@ Anyway: I'll proceed on the assumption that you meant very nearly (as nearly as 
 
 And what you say next seems to confirm this:
 
+<!-- speaker: Satoshi Nakamoto -->
 > No challenges or secret shares. A basic transaction is just
 > what you see in the figure in section 2. A signature (of the
 > buyer) satisfying the public key of the previous transaction,
@@ -59,16 +62,19 @@ Note, even though this doesn't involve identity per se, it still makes the agent
 
 BTW, could you please learn to use carriage returns?? Your lines are scrolling stupidly off to the right and I have to scroll to see what the heck you're saying, then edit to add carriage returns before I respond.
 
+<!-- speaker: Satoshi Nakamoto -->
 > There's no need for reporting of "proof of double spending" like
 > that. If the same chain contains both spends, then the block is
 > invalid and rejected.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Same if a block didn't have enough proof-of-work. That block is
 > invalid and rejected. There's no need to circulate a report
 > about it. Every node could see that and reject it before relaying it.
 
 Mmmm. I don't know if I'm comfortable with that. You're saying there's no effort to identify and exclude nodes that don't cooperate? I suspect this will lead to trouble and possible DOS attacks.
 
+<!-- speaker: Satoshi Nakamoto -->
 > If there are two competing chains, each containing a different
 > version of the same transaction, with one trying to give money
 > to one person and the other trying to give the same money to
@@ -77,6 +83,7 @@ Mmmm. I don't know if I'm comfortable with that. You're saying there's no effort
 
 Okay, when you say "same" transaction, and you're talking about transactions that are obviously different, you mean a double spend, right? Two transactions signed with the same key?
 
+<!-- speaker: Satoshi Nakamoto -->
 > We're not "on the lookout" for double spends to sound the alarm
 > and catch the cheater. We merely adjudicate which one of the
 > spends is valid. Receivers of transactions must wait a few
@@ -84,6 +91,7 @@ Okay, when you say "same" transaction, and you're talking about transactions tha
 
 Until.... until what? How does anybody know when a transaction has become irrevocable? Is "a few" blocks three? Thirty? A hundred? Does it depend on the number of nodes? Is it logarithmic or linear in number of nodes?
 
+<!-- speaker: Satoshi Nakamoto -->
 > Would be cheaters can try and simultaneously double-spend all
 > they want, and all they accomplish is that within a few blocks,
 > one of the spends becomes valid and the others become invalid.
@@ -92,6 +100,7 @@ But in the absence of identity, there's no downside to them if spends become inv
 
 The consumers won't do this if they spend their coin and it takes an hour to clear before they can do what they spent their coin on. The merchants won't do it if there's no way to charge back a customer when they find the that their coin is invalid because the customer has doublespent.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Even if an earlier spend wasn't in the chain yet, if it was
 > already in all the nodes' pools, then the second spend would
 > be turned away by all those nodes that already have the first
@@ -99,22 +108,26 @@ The consumers won't do this if they spend their coin and it takes an hour to cle
 
 So there's a possibility of an early catch when the broadcasts of the initial simultaneous spends interfere with each other. I assume here that the broadcasts are done by the sellers, since the buyer has a possible disincentive to broadly disseminate spends.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Right. They also refresh whenever a new transaction comes in,
 > so L pretty much contains everything in A all the time.
 
 Okay, that's a big difference between a proof of work that takes a huge set number of CPU cycles and a proof of work that takes a tiny number of CPU cycles but has a tiny chance of success. You can change the data set while working, and it doesn't mean you need to start over. This is good in this case, as it means nobody has to hold recently recieved transactions out of the link they're working on.
 
+<!-- speaker: Satoshi Nakamoto -->
 > If you're thinking of it as a CPU-intensive digital signing, then
 > you may be thinking of a race to finish a long operation first and
 > the fastest always winning.
 
 Right. That was the misconception I was working with. Again, the difference between a proof taking a huge set number of CPU cycles and a proof that takes a tiny number of CPU cycles but has a tiny chance of success.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Anyone's chance of finding a solution at any
 > time is proportional to their CPU power.
 
 It's like a random variation in the work factor; in this way it works in your favor.
 
+<!-- speaker: Satoshi Nakamoto -->
 > There will be transaction fees, so nodes will have an incentive
 > to receive and include all the transactions they can. Nodes
 > will eventually be compensated by transaction fees alone when

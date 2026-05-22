@@ -19,12 +19,13 @@ quotes:
     personSlug: "dustin-trammell"
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
   - id: "q2"
+    parent: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     sourceEntryId: "emails/bitcoin-list/2009-01-12-bitcoin-v0-1-3"
 ---
 
-> <!-- quote: q1 -->
+<!-- quote: q1 -->
 > <!-- quote: q2 -->
 > > You know, I think there were a lot more people interested in the 90's,
 > > but after more than a decade of failed Trusted Third Party based systems
