@@ -16,6 +16,7 @@ secondarySources:
 ---
 
 [Deleted] Quote from: davidonpda on June 22, 2010, 06:23:26 PM
+<!-- audit:quote-skip -->
 > EXCEPTION: 22DbRunRecoveryException
 
 DBENv::open: DB_RUNRECOVERY: Fatal error, run database recovery
