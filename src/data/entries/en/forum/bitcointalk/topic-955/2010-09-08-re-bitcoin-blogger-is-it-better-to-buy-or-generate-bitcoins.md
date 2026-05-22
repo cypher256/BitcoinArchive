@@ -29,6 +29,7 @@ quotes:
 
 Did you try -4way?
 
+<!-- speaker: BitLex -->
 > How many hashes can I expect with a 24 core machine? I have a quad-core generating 4,300 hashes-per-second, so I am estimating a 24-core machine could mine bitcoins at 25,000 hashes-per-second.
 
 AMD Phenom (I think 4-core) CPUs are doing about 11,000khps with -4way, about 100% speedup.  24 cores should get 66,000khps.  AMD is the best choice because it has the best SSE2 implementation. (or maybe because tcatm had an AMD and optimised his code for that)
