@@ -14,6 +14,7 @@ tags: []
 ---
 
 [Deleted] Quote from: davidonpda on June 22, 2010, 02:55:37 PM
+<!-- audit:quote-skip -->
 > How about in the options menu you can turn it off or on, and specify an interval in minutes for how often it should display?
 
 I say keep it simple; more choices isn't always better, it just makes it overwhelming and confusing for most users.

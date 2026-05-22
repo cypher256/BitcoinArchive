@@ -13,6 +13,7 @@ isSatoshi: false
 tags: []
 ---
 
+<!-- audit:quote-skip -->
 > Proprietary software developers often start at version 1 for the first release of a program and increment the major version number with each rewrite. This can mean that a program can reach version 3 within a few months of development, before it is considered stable or reliable.
 >
 > In contrast to this, the free-software community tends to use version 1.0 as a major milestone, indicating that the software is "complete", that it has all major features, and is considered reliable enough for general release.

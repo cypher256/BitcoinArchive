@@ -15,6 +15,7 @@ translationStatus: complete
 ---
 
 [Deleted] Quote from: davidonpda on June 22, 2010, 02:55:37 PM
+<!-- audit:quote-skip -->
 > オプションメニューでオンオフを切り替えられるようにして、表示頻度を分単位で指定できるようにするのはどうだろう？
 
 シンプルにしておくべきだ。選択肢が多ければ良いとは限らない。ほとんどのユーザーにとって圧倒的で混乱するだけだ。

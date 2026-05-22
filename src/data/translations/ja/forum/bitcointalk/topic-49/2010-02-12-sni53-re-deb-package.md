@@ -17,6 +17,7 @@ translationStatus: complete
 ---
 
 [Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM
+<!-- audit:quote-skip -->
 > 必要でしたら、コンパイル済みバイナリを提供できますよ。
 
 何か見落としているだろうか？bitcoin.org の 32 ビット Linux プリコンパイル済みバイナリに問題があるか？

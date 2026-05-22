@@ -16,6 +16,7 @@ secondarySources:
 ---
 
 [Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM
+<!-- audit:quote-skip -->
 > If you want, I can provide you with a precompiled binary.
 
 Am I missing something?  Is there something wrong with the 32-bit linux precompiled binary on bitcoin.org?
