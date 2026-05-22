@@ -26,6 +26,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-12-translation-159"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-07T06:12:04Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-07-json-rpc-status-153"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -58,6 +64,7 @@ Linux 版を GTK なしで動作させるのは別の作業になる。
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
 >> JSON-RPCの実装は順調に進んでいる。ソケットにはboost::asioを使って
 >> いる。JSON-RPCはプレーンソケットでもHTTPでも可能だが、他のほとんどの
 >> 実装はHTTPのようなので、自分でシンプルなHTTPヘッダーを作った。JSON

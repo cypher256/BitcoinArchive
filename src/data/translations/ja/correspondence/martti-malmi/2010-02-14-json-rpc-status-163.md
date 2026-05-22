@@ -26,12 +26,19 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-14-exchange-options-162"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-13T01:08:42Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-13-json-rpc-status-160"
 ---
 
 <!-- speaker: Martti Malmi -->
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- quote: q2 -->
 >> まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、
 >> 結果を教えてほしい。Pythonを使っているのか？
 >>

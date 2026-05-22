@@ -25,12 +25,19 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     sourceEntryId: "correspondence/martti-malmi/2010-02-22-non-gui-option-168"
+  - id: "q2"
+    parent: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    date: "2010-02-17T17:32:04Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-17-non-gui-option-167"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- quote: q2 -->
 >> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけた：
 >>
 >> 1) GTKはディスプレイなしでプログラムを実行することをサポートしている：

@@ -25,6 +25,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-12-translation-159"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-07T06:12:04Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-07-json-rpc-status-153"
 ---
 
 I uploaded my JSON-RPC and command line implementation to SVN.  I'm 
@@ -56,6 +62,7 @@ separate task.
 > That's great! I'll start familiarizing myself with Liberty Reserve and 
 > its api.
 > 
+> <!-- quote: q2 -->
 >> The JSON-RPC implementation is going well.  I'm using boost::asio for
 >> sockets.  JSON-RPC can be plain socket or HTTP, but it seems most other
 >> implementations are HTTP, so I made my own simple HTTP headers.  For

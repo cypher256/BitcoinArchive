@@ -25,9 +25,16 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-14-exchange-options-162"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-13T01:08:42Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-13-json-rpc-status-160"
 ---
 
 <!-- quote: q1 -->
+<!-- quote: q2 -->
 >> I haven't tested my JSON-RPC server with anything else yet.  If you do,
 >> please tell me how it goes.  You're using Python, right?
 >>

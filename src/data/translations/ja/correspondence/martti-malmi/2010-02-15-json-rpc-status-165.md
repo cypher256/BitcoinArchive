@@ -25,11 +25,18 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2010-02-15-json-rpc-status-164"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-02-14T21:48:31Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-14-json-rpc-status-163"
 translationStatus: complete
 ---
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
+<!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 >> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 >> ノートパソコンを持っていないか？

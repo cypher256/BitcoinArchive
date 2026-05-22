@@ -24,9 +24,16 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     sourceEntryId: "correspondence/martti-malmi/2010-02-22-non-gui-option-168"
+  - id: "q2"
+    parent: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    date: "2010-02-17T17:32:04Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-17-non-gui-option-167"
 ---
 
 <!-- quote: q1 -->
+<!-- quote: q2 -->
 >> Just a few clues I've found about running the same binary without a GUI:
 >>
 >> 1) GTK supports running a program without display: 
