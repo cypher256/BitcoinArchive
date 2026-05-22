@@ -12,8 +12,16 @@ description: "BitcoinTalk トピック 16 における SmokeTooMuch の文脈投
 isSatoshi: false
 tags: []
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-12-16T00:00:00Z"
+    sourceEntryId: "forum/bitcointalk/topic-16/2009-12-16-bitcoin-0-2-released"
 ---
 
 いいね！ *ダウンロード*
 
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > コイン生成のマルチプロセッサー対応 ― 素晴らしい、これで前よりずっと多くのコインを生成できるな ^^

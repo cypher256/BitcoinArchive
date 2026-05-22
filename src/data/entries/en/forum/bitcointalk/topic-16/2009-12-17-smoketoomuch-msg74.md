@@ -11,8 +11,15 @@ participants:
 description: "Context post by SmokeTooMuch in BitcoinTalk topic 16. after msg73."
 isSatoshi: false
 tags: []
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-12-16T00:00:00Z"
+    sourceEntryId: "forum/bitcointalk/topic-16/2009-12-16-bitcoin-0-2-released"
 ---
 
 Great! *download*
 
+<!-- quote: q1 -->
 > Multi-processor support for coin generationGreat, now i create much more coins than before ^^

@@ -22,4 +22,5 @@ Even in a worst case scenario where the block chain snapshot was compromised not
 It's ++good!
 
 [Deleted] Quote from: davidonpda on May 03, 2010, 02:40:35 PM
+<!-- audit:quote-skip -->
 > 34 MB... on a fast DSL plan, that should take a couple of minutes. Not 3 hours....
