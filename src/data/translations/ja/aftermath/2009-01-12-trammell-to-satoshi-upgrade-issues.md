@@ -26,12 +26,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:40:58Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 前回のメールからわずか 11分後に送信されたこのメールで、トランメルは v0.1.0 から v0.1.3 へのアップグレード時に遭遇した 2 つの問題を報告した。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > 以前のバージョン（ヘルプには0.1.1と表示されていたが、実際は0.1.0だったと思う）を閉じた時、プロセスが終了しなかった。UIは終了したがプロセスは残っていた。バージョン0.1.3を起動する前に、手動でプロセスをキルしなければならなかった。
 
