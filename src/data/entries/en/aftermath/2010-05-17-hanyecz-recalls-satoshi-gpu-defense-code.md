@@ -35,12 +35,14 @@ In a remarkable exchange that — per Laszlo Hanyecz's later recall — occurred
 
 As Hanyecz later recounted:
 
+<!-- audit:quote-skip -->
 > And he actually shared with me his version of it. So even though it wasn't in Bitcoin, he did have GPU mining code and he said he was just keeping it ready in case he had to defend the network with it.
 
 Satoshi had developed several versions of the GPU mining algorithm but deliberately chose not to include it in the public Bitcoin software. His strategic reasoning was twofold: he wanted to keep GPU mining capability as a defensive weapon against potential attackers, and he did not want to prematurely increase network difficulty, which would have discouraged ordinary CPU miners from participating.
 
 Hanyecz noted that his own GPU code actually performed better than Satoshi's version, but that Satoshi had intentionally avoided optimizing it:
 
+<!-- audit:quote-skip -->
 > And I got the feeling, that part of it was that he didn't want to prematurely optimize it because he didn't want to run up the difficulty on the network.
 
 This exchange reveals a fascinating aspect of Satoshi's strategic thinking: he was simultaneously discouraging public GPU mining to protect accessibility while privately maintaining GPU mining capability as insurance against adversarial attacks. It demonstrates that Satoshi had thought deeply about potential attack vectors and had prepared defensive measures well in advance.

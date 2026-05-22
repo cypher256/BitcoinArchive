@@ -37,7 +37,7 @@ translationStatus: complete
 
 ハニエツは後に次のように語った：
 
-<!-- speaker: Laszlo Hanyecz -->
+<!-- audit:quote-skip -->
 > そして彼は実際に自分のバージョンを共有してくれた。つまりビットコインのソフトウェアには含まれていなかったが、GPUマイニングのコードは持っていて、ネットワークを防衛する必要が生じた場合に備えて準備しておいたと言っていた。
 
 <!-- speaker: narrator -->
@@ -45,7 +45,7 @@ translationStatus: complete
 
 ハニエツは自分の GPU コードの方がサトシのバージョンよりも実際にはパフォーマンスが良かったが、サトシは意図的に最適化を避けていたと指摘した：
 
-<!-- speaker: Laszlo Hanyecz -->
+<!-- audit:quote-skip -->
 > そして感じたのは、その一因として、彼はネットワークの難易度を上げたくないから、早まって最適化したくなかったということだ。
 
 <!-- speaker: narrator -->
