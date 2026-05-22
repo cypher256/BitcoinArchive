@@ -602,6 +602,41 @@ record carrying `parent: "<outer qN>"`.
 `speaker-named-no-quote-marker` (new source via `<!-- speaker: -->`
 but no `<!-- quote: qN -->`), and the legacy-pattern checks.
 
+### `sourceEntryId` must point to a primary-source entry (and never to self)
+
+A `quotes[].sourceEntryId` must point at a primary-source entry —
+`correspondence`, `mailing-list`, `forum-post`, `bip`, `whitepaper`,
+or `court-document`. It must NOT point at:
+
+1. **The entry itself** (self-link) — clicking the chip just
+   reloads the same page; the chip-to-source contract is broken.
+2. **Another editorial entry** (`article`, `analysis`,
+   `biography`) — the chip then leads from one piece of commentary
+   to another piece of commentary, never reaching the cited message.
+
+If the cited source has no primary entry in the Archive yet, either:
+
+1. Create the primary entry (recommended) — extract the cited
+   email/post/document into its own
+   correspondence/mailing-list/forum-post/etc. entry and point
+   `sourceEntryId` at it.
+2. Omit the `quotes[]` entry entirely (and drop the body
+   `<!-- quote: qN -->` marker) — render the quoted content as a
+   plain blockquote with `<!-- audit:quote-skip -->` until the
+   primary entry exists.
+
+Never use the entry's own id as a placeholder. `sourceUnavailable`
+is reserved for cases where the original source is genuinely
+unrecoverable; "primary entry not yet created" is not a
+`sourceUnavailable` case.
+
+`scripts/check-quotes.mjs` enforces both halves:
+
+- `quote-self-link` (error) — `sourceEntryId` equals the entry's
+  own id.
+- `quote-non-primary-target` (error) — `sourceEntryId` resolves to
+  an entry whose `type` is not in the primary-source set above.
+
 ### Do not repeat `<!-- quote: qN -->` for the same source in one file
 
 When the entry author (typically Satoshi) quotes **multiple

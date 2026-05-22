@@ -217,6 +217,25 @@ quotes:
 
 `npm run check:quotes` がこの構造を検証する。
 
+#### `sourceEntryId` は primary-source エントリーを指す ( 自分自身は禁止 )
+
+`quotes[].sourceEntryId` は primary-source 型のエントリー ( `correspondence` / `mailing-list` / `forum-post` / `bip` / `whitepaper` / `court-document` ) を指す必要がある。 以下は禁止:
+
+1. **エントリー自身** ( self-link ) — chip をクリックしても同じページに戻るだけで、 「引用元 primary entry へのリンク」 という contract が壊れる。
+2. **他の editorial エントリー** ( `article` / `analysis` / `biography` ) — chip が解説から別の解説へ飛ぶだけで、 元のメッセージに到達しない。
+
+引用元の primary entry が Archive にまだ存在しない場合は、 次のいずれか:
+
+1. primary entry を作成する ( 推奨 ) — 引用元のメール / 投稿 / 文書を `correspondence` / `mailing-list` / `forum-post` 等のエントリーとして抽出し、 `sourceEntryId` をそこに向ける。
+2. `quotes[]` エントリー自体を削除 ( + 本文の `<!-- quote: qN -->` マーカーも削除 ) — primary entry ができるまで `<!-- audit:quote-skip -->` 付きの素のブロック引用として残す。
+
+自分自身の id をプレースホルダーとして使ってはならない。 `sourceUnavailable` は原資料が**本当に回収不能**なケース用であり、 「primary entry を未作成」 は `sourceUnavailable` の対象ではない。
+
+`scripts/check-quotes.mjs` が両方を強制する:
+
+- `quote-self-link` ( error ) — `sourceEntryId` がエントリー自身を指している。
+- `quote-non-primary-target` ( error ) — `sourceEntryId` の指す先の `type` が primary-source 集合に含まれない。
+
 #### 同一引用元への複数引用ブロックは marker を繰り返さない
 
 サトシ (またはエントリー著者) が**同じ 1 通のメール / 投稿から複数の引用ブロックを引く**場合 (例: マイク・ハーンの 1 通のメールから 5 箇所引用)、`<!-- quote: qN -->` マーカーは**最初の引用ブロックの 1 回のみ**置く。後続の引用ブロックには `<!-- speaker: NAME -->` のみ置き、`<!-- quote: qN -->` を繰り返してはならない。

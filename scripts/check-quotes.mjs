@@ -478,12 +478,93 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
   return flagged;
 }
 
+// Module-level cache of entryId → type for all EN entries. Used by the
+// sourceEntryId target-type check (quote-non-primary-target) so we can
+// catch quotes[].sourceEntryId pointing at an editorial article/analysis
+// /biography instead of a real primary source entry.
+let _entryTypeMap = null;
+function getEntryTypeMap() {
+  if (_entryTypeMap) return _entryTypeMap;
+  _entryTypeMap = new Map();
+  for (const f of walkDir(enDir)) {
+    const content = readFileSync(f, 'utf-8');
+    const m = content.match(/^type:\s*"([^"]+)"/m);
+    if (!m) continue;
+    const rel = path.relative(enDir, f).replace(/\.md$/, '');
+    const parts = rel.split('/');
+    const basename = parts.pop();
+    const entryId = [...parts, basename.replaceAll('.', '')].join('/');
+    _entryTypeMap.set(entryId, m[1]);
+  }
+  return _entryTypeMap;
+}
+
+// Types that the Archive treats as "primary source" — actual messages
+// or documents being preserved verbatim. quotes[].sourceEntryId should
+// always point at one of these, not at an editorial commentary article.
+const PRIMARY_SOURCE_TYPES = new Set([
+  'correspondence',
+  'mailing-list',
+  'forum-post',
+  'bip',
+  'whitepaper',
+  'court-document',
+]);
+
+// Derive the entry id for a given file path, matching the convention
+// used by computeEntryId in generate-derived-commentaries.mjs (basename
+// has dots stripped; directory parts are preserved verbatim).
+function entryIdForFile(filePath, locale) {
+  const root = locale === 'ja' ? jaDir : enDir;
+  const rel = path.relative(root, filePath).replace(/\.md$/, '');
+  const parts = rel.split('/');
+  const basename = parts.pop();
+  return [...parts, basename.replaceAll('.', '')].join('/');
+}
+
 function checkFile(filePath, locale) {
   const content = readFileSync(filePath, 'utf-8');
   const { frontmatter, body } = parseFrontmatterManual(content);
   const quotes = frontmatter.quotes || [];
   const violations = [];
   const rel = path.relative(process.cwd(), filePath);
+
+  // 0522 plan §6 + §6.5: sourceEntryId integrity checks.
+  // 1. self-link: pointing at the entry itself is structurally
+  //    meaningless (chip just reloads the same page).
+  // 2. non-primary target: pointing at a type=article / analysis /
+  //    biography entry is wrong — the chip should reach a real
+  //    primary source (correspondence / mailing-list / forum-post /
+  //    bip / whitepaper / court-document).
+  // Both are hard errors. See STYLE_GUIDE.md "sourceEntryId must
+  // point to a primary-source entry (and never to self)".
+  if (quotes.length > 0) {
+    const selfId = entryIdForFile(filePath, locale);
+    const typeMap = getEntryTypeMap();
+    for (const q of quotes) {
+      if (!q.sourceEntryId) continue;
+      const target = String(q.sourceEntryId);
+      if (target === 'null' || target === '') continue;
+      if (target === selfId) {
+        violations.push({
+          file: rel,
+          check: 'quote-self-link',
+          level: 'error',
+          msg: `quotes[].sourceEntryId "${target}" points at this entry itself. Create a primary entry for the cited message and point sourceEntryId at it, or remove this quotes[] entry (see STYLE_GUIDE.md "sourceEntryId must point to a primary-source entry (and never to self)").`,
+        });
+        continue;
+      }
+      const targetType = typeMap.get(target);
+      if (targetType && !PRIMARY_SOURCE_TYPES.has(targetType)) {
+        violations.push({
+          file: rel,
+          check: 'quote-non-primary-target',
+          level: 'error',
+          msg: `quotes[].sourceEntryId "${target}" points to a type=${targetType} entry. sourceEntryId must point at a primary-source-type entry (correspondence / mailing-list / forum-post / bip / whitepaper / court-document). If the cited message has no primary entry yet, create one and retarget sourceEntryId.`,
+        });
+      }
+    }
+  }
 
   // Scope: only entries authored BY Satoshi (author: "Satoshi Nakamoto").
   // The editorial rule is "when Satoshi quotes someone in his own
