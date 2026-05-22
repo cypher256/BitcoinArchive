@@ -28,7 +28,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 ポート転送の修正から約 6 週間後、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)は新たな接続障害を報告した。
 
-<!-- speaker: Nicholas Bohm -->
+<!-- audit:quote-skip -->
 > ビットコインが丸一日ほど接続を確立できていません。再起動しても変わりません。
 
 <!-- speaker: narrator -->

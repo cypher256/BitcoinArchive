@@ -26,6 +26,7 @@ secondarySources:
 
 In a follow-up the next day, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) provided debugging information:
 
+<!-- audit:quote-skip -->
 > I'm currently connected to 70.113.114.209 since yesterday.
 
 He noted that if [Bohm](/BitcoinArchive/participants/nicholas-bohm/) wasn't connected to that IP, then the problem was on Bohm's end — he couldn't make outgoing connections either.

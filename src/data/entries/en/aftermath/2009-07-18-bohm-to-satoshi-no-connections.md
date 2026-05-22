@@ -26,6 +26,7 @@ secondarySources:
 
 Approximately six weeks after the port forwarding fix, [Bohm](/BitcoinArchive/participants/nicholas-bohm/) reported a new connectivity failure:
 
+<!-- audit:quote-skip -->
 > Bitcoin has failed to establish any connections for the last day or so, despite restarts.
 
 Bohm noted he had been maintaining 3-5 node connections prior to July 15th, providing a valuable data point about the size of the active Bitcoin network in mid-2009. The fact that even a connected node with proper port forwarding could lose all peers suggests the network was extremely small at this time.

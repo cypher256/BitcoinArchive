@@ -27,6 +27,7 @@ secondarySources:
 
 [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s reply contained one of the most revealing admissions about Bitcoin's early fragility:
 
+<!-- audit:quote-skip -->
 > There may just not be anybody else running it right now.
 
 He asked whether [Bohm](/BitcoinArchive/participants/nicholas-bohm/)'s IP address had changed, and encouraged Bohm to keep his server online so that new users would have at least one node to connect to when they started the software.

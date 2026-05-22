@@ -29,7 +29,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 [サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の返信には、ビットコインの初期の脆弱さを最も如実に示す告白の一つが含まれていた。
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > 今、他に誰も実行していないだけかもしれない。
 
 <!-- speaker: narrator -->
