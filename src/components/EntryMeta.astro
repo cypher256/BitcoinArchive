@@ -176,10 +176,13 @@ const isSatoshiAuthor =
   .meta-sep {
     color: var(--color-border);
   }
-  .author.satoshi {
-    color: var(--color-satoshi);
-    font-weight: 600;
-  }
+  /* Author shown in the first meta row is non-clickable text. Tinting
+     it with --color-satoshi previously made it look identical to the
+     Satoshi-coloured *links* in the participants row right below, so a
+     Satoshi-authored entry's header had a yellow word that wasn't a
+     link sitting next to a yellow word that was. The participants row
+     keeps the Satoshi accent (where it actually marks a link); the
+     author label stays in the default meta text colour. */
   .type-badge {
     display: inline-block;
     padding: 0.1em 0.5em;
