@@ -21,9 +21,19 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
-    person: "mmalmi@cc.hut.fi"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-06-sourceforge-tracker-122"
+  - id: "q2"
+    person: "Martti Malmi"
     personSlug: "martti-malmi"
-    sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
+    parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-30-bitcoinorg-115"
+  - id: "q3"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    parent: "q2"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-30-bitcoinorg-114"
 translationStatus: complete
 ---
 
@@ -31,6 +41,7 @@ translationStatus: complete
 ロゴをローカルサーバーにコピーしましたので、グラフィックとして引き続き使えます。SF の商標ポリシーで禁止されていません。
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
 > bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。
 > 別のものが欲しければ、以下に全リンクの一覧がある。
@@ -40,12 +51,13 @@ translationStatus: complete
 > 混合コンテンツ警告が出る。そもそも、Sourceforgeに全員を
 > トラッキングさせたいか？ない方がプライバシーに優しい。
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
 >> SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 >> フッターに追加できると良いですね。
 >>
->>> <!-- speaker: Satoshi Nakamoto -->
+>> <!-- quote: q3 -->
+>>> <!-- speaker: Martti Malmi -->
 >>> 現在のサイトレイアウトはすっきりしていて良いな。ロゴだけ
 >>> 変更すべきだ。すぐに公開したいなら、とりあえずサイトタイトルに
 >>> 置き換えて、後でもっと良いロゴを作ればいいだろう。

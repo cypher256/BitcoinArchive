@@ -21,14 +21,25 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
-    person: "mmalmi@cc.hut.fi"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-06-sourceforge-tracker-122"
+  - id: "q2"
+    person: "Martti Malmi"
     personSlug: "martti-malmi"
-    sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
+    parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-30-bitcoinorg-115"
+  - id: "q3"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    parent: "q2"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-30-bitcoinorg-114"
 ---
 
 I made a copy of the logo onto the local server, so we can still use  
 it for graphics. It's not disallowed by the SF trademark policy.
 
+<!-- quote: q1 -->
 > I added the sourceforge tracker to bitcoin.sourceforge.net.  The
 > complete selection of links is below if you want a different one.
 >
@@ -37,10 +48,11 @@ it for graphics. It's not disallowed by the SF trademark policy.
 > and "contains unauthenticated content".  Anyway, do we really want
 > sourceforge tracking everyone?  It's more privacy friendly without it.
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> It would be also great if you can get the Sourceforge logo from the  
 >>  SF project admin and add it to the site footer.
 >>
+>> <!-- quote: q3 -->
 >>> The current site layout looks nice and simple. The logo just should be
 >>> changed. If we want to go live quickly, we can just replace it with the
 >>> site title and make a better logo later.
