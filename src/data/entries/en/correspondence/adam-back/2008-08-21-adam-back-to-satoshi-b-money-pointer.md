@@ -23,6 +23,12 @@ secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back's Second Witness Statement (document C/21) included the complete five-email chain."
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-20T17:30:39Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation"
 ---
 
 Yes citation looks fine, I'll take a look at your paper.  You maybe aware of the "B-money" proposal, I guess google can find it for you, by Wei Dai which sounds to be somewhat related to your paper.  (The b-money idea is just described concisely on his web page, he didnt write up a paper.)
@@ -31,6 +37,7 @@ Adam
 
 On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com
 <satoshi@anonymousspeech.com> wrote:
+<!-- quote: q1 -->
 > I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.  Here's what I have:
 >
 > [5] A. Back, "Hashcash - a denial of service counter-measure,"

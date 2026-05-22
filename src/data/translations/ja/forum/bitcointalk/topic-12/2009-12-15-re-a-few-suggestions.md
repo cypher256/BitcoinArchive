@@ -29,6 +29,7 @@ quotes:
 
 wxWidgets の「configure」スクリプトでどのオプションを使用したか？私が使用したオプションは build-unix.txt に記載されている。
 
+<!-- speaker: madhatter2 -->
 > 「一つ質問：debug.logを有効にするにはどうすればいいですか？Bitcoinを停止して~/.bitcoin/debug.logをtouchして、再度Bitcoinを起動してみましたが、ファイルに書き込まれることはありません。何か見落としていますか？」
 
 そのようなことは聞いたことがない。debug.log に何か入っているか？ファイルを touch したなら、何か入っているはずだ。プログラムにファイルへの書き込みアクセス権はあるか？

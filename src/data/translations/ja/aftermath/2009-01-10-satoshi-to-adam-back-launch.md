@@ -30,7 +30,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2009-01-10T18:46:45Z"
-    sourceEntryId: "aftermath/2009-01-10-satoshi-to-adam-back-launch"
+    sourceEntryId: "correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch"
   - id: "q2"
     person: "Hal Finney"
     personSlug: "hal-finney"
