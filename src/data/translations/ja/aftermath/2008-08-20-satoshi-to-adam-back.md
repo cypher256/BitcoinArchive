@@ -38,6 +38,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2008-08-20T17:30:39Z"
+    sourceEntryId: "aftermath/2008-08-20-satoshi-to-adam-back"
 translationStatus: complete
 ---
 

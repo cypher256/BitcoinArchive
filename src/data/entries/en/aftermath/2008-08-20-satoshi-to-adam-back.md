@@ -39,6 +39,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2008-08-20T17:30:39Z"
+    sourceEntryId: "aftermath/2008-08-20-satoshi-to-adam-back"
 ---
 
 The earliest documented email from Satoshi Nakamoto. Writing to [Adam Back](/BitcoinArchive/participants/adam-back/), Satoshi confirmed he was about to publish a paper that built on Hashcash and asked Back to verify the citation form he had drafted:
