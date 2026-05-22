@@ -41,10 +41,10 @@ Off the topic, do you think that we could use Boost's thread and
 socket libraries instead of the Windows-specific ones? Are there other  
 windows-only-functions used in the code?
 
+<!-- quote: q1 -->
 > Any idea what's going on with it?  Every time I look, it's fine.
 >
 >
-> <!-- quote: q1 -->
 > <!-- quote: q2 -->
 >> > bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing
 >

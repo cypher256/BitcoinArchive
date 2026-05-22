@@ -37,11 +37,10 @@ IS_LIVE オプションは確かに false に設定されていましたが、�
 
 話は変わりますが、Windows 固有のものの代わりに Boost のスレッドとソケットライブラリを使うことはできると思いますか？コードに他に Windows 専用の関数は使われていますか？
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
 > 何が起きているか分かる？自分が見るたびに正常なんだけど。
 >
 >
-> <!-- quote: q1 -->
 > <!-- quote: q2 -->
 >> > bitcoin.sourceforge.netは今は正常に見える。SourceForgeが
 >
