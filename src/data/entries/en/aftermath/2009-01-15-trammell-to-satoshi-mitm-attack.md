@@ -26,18 +26,26 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T00:05:15Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack"
 ---
 
 In a new email thread, Trammell — a professional security researcher — reported on his detailed analysis of Bitcoin's network protocol. He had captured and analyzed packet traces during a transaction he sent to himself, observing that the protocol transmitted some cleartext information including transaction names and comments.
 
 Trammell then presented a thorough security analysis of the send-to-IP feature, identifying its fundamental vulnerability to man-in-the-middle attacks:
 
+<!-- quote: q1 -->
 > In the case of the IP transaction, the BitCoin client seems to trust that the IP that it has connected to really is the intended recipient of the transaction. It is fairly trivial to launch a man-in-the-middle attack and steal incoming transactions.
 
 He described a concrete attack scenario involving ARP poisoning on a local LAN, and noted the vulnerability extended to any hop along the network route, including ISP administrators.
 
 Trammell's recommendation was clear:
 
+<!-- speaker: Dustin Trammell -->
 > I would recommend not allowing the use of network addresses as the address of an intended recipient. I would think it would be a bit more secure to always require a BitCoin address and do transactions that way.
 
 He also proposed an alternative: a network-based resolution service where nodes could look up the IP address associated with a Bitcoin address, using the key pairs already in place for authentication.

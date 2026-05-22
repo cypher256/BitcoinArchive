@@ -26,6 +26,12 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T00:05:15Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack"
 translationStatus: complete
 ---
 
@@ -34,6 +40,7 @@ translationStatus: complete
 
 続いてトランメルは IP 送金機能に対する徹底的なセキュリティ分析を提示し、中間者攻撃に対する根本的な脆弱性を特定した。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > IPトランザクションの場合、ビットコインクライアントは接続先のIPが本当にトランザクションの意図された受信者であると信頼しているようだ。中間者攻撃を仕掛けて受信トランザクションを盗むのはかなり容易である。
 
