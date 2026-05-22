@@ -41,6 +41,7 @@ On Mon, Dec 20, 2010 at 10:55 AM, <mmalmi@cc.hut.fi> wrote:
 That seems like asking for trouble, and I think it would violate the
 implicit trust of everybody who's registered for the forums.
 
+<!-- speaker: Martti Malmi -->
 > Another option is to
 > encrypt the backups with pgp and store them in multiple places.
 
