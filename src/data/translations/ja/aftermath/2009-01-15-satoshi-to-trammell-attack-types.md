@@ -26,12 +26,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:46:35Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 トランメルの詳細な中間者攻撃分析に応答して、サトシはビットコインのセキュリティに関する思考に影響を与えることになる攻撃の分類フレームワークを導入した。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > 攻撃を2つのクラスに分類している：
 > 1) 実際に通信経路上にいる者のみが実行できる攻撃
