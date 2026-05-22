@@ -19,9 +19,16 @@ tags:
   - "ux-confusion"
 relatedEntries:
   - "aftermath/2009-01-18-trammell-to-satoshi-address-mislabeled"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-18T11:01:09Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
 On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > It should be your Bitcoin address at home that you received it
 > with.  There's no way for it to know who it's from, so the best
 > it can do is tell which of your addresses it was received on.
@@ -33,6 +40,7 @@ Ah!  I didn't even notice it was my address at home, you're right (:  I
 do have multiple addresses created at home so I didn't make the
 connection.
 
+<!-- speaker: Satoshi Nakamoto -->
 > It doesn't know any names other than what you tell it.  The name
 > printed there is what's associated in your address book for that
 > address, either under the Address Book button or the "Change..."

@@ -20,6 +20,12 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-18-satoshi-to-trammell-address-book"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T09:23:02Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-bitcoin-transfer"
 ---
 
 それを受け取ったのは、君の自宅のビットコインアドレスのはずだ。
@@ -33,6 +39,8 @@ relatedEntries:
 Address Book ボタンか、君のビットコインアドレスの右にある
 「Change...」ボタンから設定したものだろう。
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 >サトシへ、
 >
 >最初の 25.00 の送金のあとに、もう 100.00 を送ってくれたわけでは

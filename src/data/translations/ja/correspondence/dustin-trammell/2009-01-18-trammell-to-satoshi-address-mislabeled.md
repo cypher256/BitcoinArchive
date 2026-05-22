@@ -20,9 +20,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-18-trammell-to-satoshi-address-mislabeled"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-18T11:01:09Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
 On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > それを受け取ったのは、君の自宅のビットコインアドレスのはずだ。
 > 送金元が誰なのかを知る方法はないので、できることはどのアドレスで
 > 受け取ったかを表示することくらいだ。複数のアドレスを作って、
@@ -33,6 +41,7 @@ On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
 そのとおりだ (: 自宅では複数のアドレスを作っていたので、結びつかな
 かったのだ。
 
+<!-- speaker: Satoshi Nakamoto -->
 > それ以外の名前は教えられたものしか知らない。そこに表示されている
 > 名前は、君のアドレス帳でそのアドレスに紐付けられた名前だ。
 > Address Book ボタンか、君のビットコインアドレスの右にある

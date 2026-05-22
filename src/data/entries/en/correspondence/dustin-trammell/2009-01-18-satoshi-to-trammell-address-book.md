@@ -19,6 +19,12 @@ tags:
   - "ux"
 relatedEntries:
   - "aftermath/2009-01-18-satoshi-to-trammell-address-book"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T09:23:02Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-bitcoin-transfer"
 ---
 
 It should be your Bitcoin address at home that you received it
@@ -33,6 +39,7 @@ printed there is what's associated in your address book for that
 address, either under the Address Book button or the "Change..."
 button to the right of your Bitcoin address.
 
+<!-- quote: q1 -->
 >Hey Satoshi,
 >
 >After that first transfer of 25.00, you didn't send me another 100.00
