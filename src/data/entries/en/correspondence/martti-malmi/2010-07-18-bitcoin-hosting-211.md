@@ -21,14 +21,20 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-18-bitcoin-hosting-210"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2010-07-17-bitcoin-hosting-208"
 ---
 
 Ok, I won't switch it. Donations in Bitcoin are helpful and can be  
 sent to 14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U.
 
+<!-- quote: q1 -->
 > Please promise me you won't make a switch now.  The last thing we need
 > is switchover hassle on top of the slashdot flood of work we've got
 > now.  I'm losing my mind there are so many things that need to be done.
@@ -42,7 +48,7 @@ sent to 14EXchS9j3AAfim6mL4jtw6VWMosSUiG5U.
 >
 > Would a donation of bitcoins help in the short term?
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> Rackspace has very good support, good backend, good connections and  
 >>  nicely scaling cloud based virtual servers. I got this offer from   
 >> Thufir:
