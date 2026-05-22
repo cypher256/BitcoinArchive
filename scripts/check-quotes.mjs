@@ -258,6 +258,101 @@ function detectLegacyAttributionLines(body) {
 // Both warrant investigation: the primary entry should exist (create if
 // missing), and the <!-- quote: qN --> marker + quotes[] entry should be
 // added so the attribution renders as a real link.
+/**
+ * Detect blockquotes that have no preceding attribution marker.
+ *
+ * Scope (0522 全引用構造化計画):
+ *   The existing `detectSpeakerWithoutQuoteMarker` catches blockquotes
+ *   preceded by `<!-- speaker: NAME -->` but missing the structured
+ *   `<!-- quote: qN -->`. It does NOT catch the more primitive case
+ *   the 0522 plan targets: a blockquote with NO preceding marker at
+ *   all — pure narrator-then-blockquote that the existing detector
+ *   doesn't see because there is no speaker shift to trigger on.
+ *
+ * Algorithm:
+ *   - Iterate body lines, ignoring fenced code blocks
+ *   - For each blockquote "start" (first `>` line after non-`>` content):
+ *     - Scan backward through interstitial blank lines and
+ *       `<!-- speaker: ... -->` / `<!-- tone-skip -->` / `<!-- /tone-skip -->`
+ *       comments (these are part of the markup that may legitimately
+ *       sit between the marker and the blockquote)
+ *     - If the first thing we hit is `<!-- quote: qN -->`: covered
+ *     - If `<!-- audit:quote-skip -->`: editorial / non-source, skipped
+ *     - If `<!-- speaker: NAME -->`: defer to detectSpeakerWithoutQuoteMarker
+ *       (that detector has the same-source continuation logic)
+ *     - Otherwise (prose line, or top-of-body): flag
+ *
+ * Returns: { line, text, kind: 'blockquote-no-marker' }[]
+ */
+function detectBlockquoteWithoutAnyMarker(body) {
+  const lines = body.split('\n');
+  const flagged = [];
+  let inCode = false;
+  let prevWasBlockquote = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i];
+    if (raw.startsWith('```')) {
+      inCode = !inCode;
+      prevWasBlockquote = false;
+      continue;
+    }
+    if (inCode) {
+      prevWasBlockquote = false;
+      continue;
+    }
+
+    const isBq = raw.startsWith('>');
+
+    // Only consider blockquote "starts": first `>` line after non-`>`
+    // content. Continuation `>` lines of the same block are not a
+    // separate quotation, so they don't need their own marker.
+    if (!isBq || prevWasBlockquote) {
+      prevWasBlockquote = isBq;
+      continue;
+    }
+    prevWasBlockquote = true;
+
+    // Scan backward. Anything that legitimately can sit between the
+    // marker and the blockquote is "interstitial" — blank lines and a
+    // small set of HTML comment markup. Other content ends the scan.
+    let coveredByQuoteMarker = false;
+    let coveredBySpeakerMarker = false;
+    let coveredByAuditSkip = false;
+    for (let j = i - 1; j >= 0; j--) {
+      const r = lines[j];
+      const rt = r.trim();
+      if (rt === '') continue;
+      if (rt.startsWith('<!--')) {
+        if (QUOTE_MARKER_HTML_RE.test(rt)) { coveredByQuoteMarker = true; break; }
+        if (/^<!--\s*audit:quote-skip\s*-->/.test(rt)) { coveredByAuditSkip = true; break; }
+        // Speaker shifts are handled by detectSpeakerWithoutQuoteMarker;
+        // when one precedes the blockquote we let that detector decide
+        // (it knows about same-source continuation rules).
+        if (SPEAKER_HTML_RE.test(rt)) { coveredBySpeakerMarker = true; break; }
+        // tone-skip / /tone-skip / narrator are interstitial — scan past
+        if (SKIPPABLE_LINE_HTML_RE.test(rt)) continue;
+        // Unknown comment — treat as boundary
+        break;
+      }
+      // Anything else (prose, heading, fence, etc.) is the boundary.
+      break;
+    }
+
+    if (coveredByQuoteMarker || coveredByAuditSkip || coveredBySpeakerMarker) {
+      continue;
+    }
+
+    flagged.push({
+      line: i + 1,
+      text: raw.length > 60 ? raw.slice(0, 60) + '...' : raw,
+      kind: 'blockquote-no-marker',
+    });
+  }
+
+  return flagged;
+}
+
 function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
   const lines = body.split('\n');
   const flagged = [];
@@ -410,6 +505,36 @@ function checkFile(filePath, locale) {
   const isSatoshiPrimarySource = /^author:\s*"Satoshi Nakamoto"/m.test(content)
     && /^type:\s*"(mailing-list|correspondence|forum-post)"/m.test(content);
   const isSatoshiAuthored = isSatoshiPrimarySource;
+
+  // 0522 全引用構造化計画: detect blockquotes with no preceding marker
+  // (neither <!-- quote: qN --> nor <!-- speaker: NAME --> nor
+  // <!-- audit:quote-skip -->). This is the more primitive case the
+  // existing speaker-shift detector misses: pure narrator-then-blockquote.
+  //
+  // Scope is wider than the Satoshi-primary-source detector above because
+  // the gap exists across editorial articles (aftermath/analysis quoting
+  // historical messages) and non-Satoshi primary entries (Donald's
+  // 2008-11-03 email quoting Satoshi's whitepaper, etc.). The check is a
+  // warn for now per the 0522 plan; it will be promoted to error once
+  // the violation list (Phase 0) is fully resolved (Phase 2).
+  //
+  // Exclusion: biography entries are skipped because their bodies are
+  // editorial prose that may quote multiple sources without intending
+  // structured attribution chains (the entries describe a person, not
+  // a single message). Future plans may revisit this.
+  const isBiography = /^type:\s*"biography"/m.test(content);
+  if (!isBiography) {
+    const bareBlockquotes = detectBlockquoteWithoutAnyMarker(body);
+    for (const m of bareBlockquotes) {
+      violations.push({
+        file: rel,
+        check: 'blockquote-no-marker',
+        level: 'warn',
+        msg: `Line ${m.line}: blockquote "${m.text.trim()}" has no preceding <!-- quote: qN --> / <!-- speaker: ... --> / <!-- audit:quote-skip --> marker — 0522 plan target`,
+      });
+    }
+  }
+
   if (isSatoshiAuthored) {
     const legacyLines = detectLegacyAttributionLines(body);
     for (const m of legacyLines) {

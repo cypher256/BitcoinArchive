@@ -168,6 +168,12 @@ aftermath や伝記散文の中で導入文として使われる "Satoshi wrote:
 
 ### 構造化された引用メタデータ (冒頭メタデータ)
 
+**Archive 上の全 source quote ( 実在発言者の引用 ) は、 既存・新規を問わず `quotes[]` + 本文マーカーによる attribution chain に属する**。 narrator → plain blockquote のみで chip 無しの状態は不正、 移行対象 ( `temp/0522_全引用構造化計画.md` )。
+
+「source quote」 とは実在発言者 ( メール送信者、 フォーラム投稿者、 ホワイトペーパー著者等 ) の発言を引用するもの。 編集者の例示、 仕様引用、 コマンド出力風表示、 詩的引用、 翻訳比較等は「editorial quote」 で、 `<!-- audit:quote-skip -->` で明示的に除外する。
+
+attribution chain の起点 ( 引用元が切り替わる最初の blockquote ) に `<!-- quote: qN -->` を置く。 同一引用元から連続する blockquote は `<!-- speaker: NAME -->` のみで継続し、 marker は繰り返さない ( 下記「同一引用元への複数引用ブロックは marker を繰り返さない」 参照 )。
+
 新規エントリーは冒頭メタデータの `quotes[]` と本文マーカーで引用先表示を持つ。旧形式のフラットなパターンを再導入してはならない。
 
 | 旧パターン | 典型的な出典 |

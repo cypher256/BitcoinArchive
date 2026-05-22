@@ -570,6 +570,38 @@ normalized.
     the [Primary-Source Entries](#primary-source-entries) preservation
     principle applied to inline edit markers.
 
+### Every source quote must belong to an attribution chain
+
+Across the entire Archive — existing entries and new ones alike —
+any blockquote that quotes a real-world speaker (an email author, a
+forum poster, a paper author, etc.) must belong to a structured
+attribution chain rooted in `quotes[]`. Narrator paragraph followed
+by a plain `> blockquote` with no `<!-- quote: qN -->` and no
+preceding `<!-- speaker: NAME -->` is not acceptable; readers cannot
+tell whose words are inside the quote, and the chip + sourceEntryId
+link to the original message never gets emitted.
+
+"Source quote" is the term for a real-speaker quotation that must
+be in the chain. "Editorial quote" is the term for editor-made
+illustrations, spec citations, command-output examples, poetic
+quotations, or translation comparisons — none of these have a
+primary entry to link to and they are explicitly excluded from the
+chain with `<!-- audit:quote-skip -->`.
+
+The chain itself starts at every change of source: place
+`<!-- quote: qN -->` immediately before the first blockquote from a
+given source. Subsequent blockquotes from the same source must NOT
+repeat the marker; they continue the chain via a bare `<!-- speaker:
+NAME -->` (see the next rule for the full mechanic). Nested quotes
+(`>>` and deeper) are treated the same way: a new source inside an
+existing quote starts its own chain entry with its own `quotes[]`
+record carrying `parent: "<outer qN>"`.
+
+`scripts/check-quotes.mjs` enforces this with
+`blockquote-no-marker` (no preceding marker at all),
+`speaker-named-no-quote-marker` (new source via `<!-- speaker: -->`
+but no `<!-- quote: qN -->`), and the legacy-pattern checks.
+
 ### Do not repeat `<!-- quote: qN -->` for the same source in one file
 
 When the entry author (typically Satoshi) quotes **multiple
