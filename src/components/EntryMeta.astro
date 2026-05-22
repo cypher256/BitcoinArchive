@@ -56,7 +56,7 @@ interface Props {
   createdAt?: Date;
 }
 
-const { date, author, entryType, source, sourceUrl, isSatoshi, lang, participants = [], tags = [], inlineLinkKeywords = [], updatedAt, createdAt } = Astro.props;
+const { date, author, entryType, source, lang, participants = [], tags = [], inlineLinkKeywords = [], updatedAt, createdAt } = Astro.props;
 // Analysis entries display "Created · Updated" instead of the usual
 // "Event · Updated" pair, because the frontmatter date for an
 // analysis is the date of the underlying event (e.g. the day of the
@@ -73,12 +73,23 @@ const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
 const authorParticipant = findAuthorParticipant(author, participants);
-const displayAuthor = translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
-// Byline label varies by entry type (e.g. "Posted by:" for mailing-list,
-// "Filed by:" for court-document). Falls back to byline.default when an
-// entry type has no specific label. JA appends "：" because that is the
-// site's existing label punctuation (cf. "人物：" below); EN uses ": ".
-const bylineLabel = t(`byline.${entryType}` as any) || t('byline.default' as any);
+// Editorial types (article / analysis) are written by Bitcoin Institute
+// regardless of which figure the article covers, so the byline shows
+// "Author Bitcoin Institute" in those cases. The frontmatter `author`
+// field on an article like "Satoshi hands over the alert key" names
+// the subject of the article (the quoted speaker is rendered via the
+// in-body quote chips), not the editorial writer, so reflecting that
+// raw value here would mislabel the page. Primary-source types
+// (mailing-list, forum-post, correspondence, bip, whitepaper,
+// court-document, biography) keep the frontmatter author and pick a
+// verb-shaped label per type.
+const isEditorialType = entryType === 'article' || entryType === 'analysis';
+const displayAuthor = isEditorialType
+  ? 'Bitcoin Institute'
+  : translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
+const bylineLabel = isEditorialType
+  ? t('byline.default' as any)
+  : (t(`byline.${entryType}` as any) || t('byline.default' as any));
 
 // Color the author name in the Satoshi accent only when the author
 // actually is Satoshi. The `isSatoshi` frontmatter flag means "this

@@ -57,7 +57,7 @@ export const ui = {
     // Author byline labels — vary by entry type so e.g. a mailing-list
     // entry says "Posted by:" while a court document says "Filed by:".
     // Falls back to byline.default when an entry type is not listed.
-    'byline.article': 'By',
+    'byline.article': 'Posted by',
     'byline.analysis': 'By',
     'byline.mailing-list': 'Posted by',
     'byline.forum-post': 'Posted by',
@@ -254,7 +254,7 @@ export const ui = {
     'type.biography': '人物紹介',
     'type.court-document': '裁判文書',
     'type.analysis': '分析',
-    'byline.article': '著者',
+    'byline.article': '投稿',
     'byline.analysis': '著者',
     'byline.mailing-list': '投稿',
     'byline.forum-post': '投稿',
