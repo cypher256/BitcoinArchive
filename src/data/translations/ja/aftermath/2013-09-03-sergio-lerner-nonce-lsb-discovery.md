@@ -61,4 +61,5 @@ translationStatus: complete
 
 ラーナーはこう述べた。
 
+<!-- audit:quote-skip -->
 > 「我々はLOSTの映画の中にいる：一つの謎が解けたように見えるたびに、別の謎が現れる。」

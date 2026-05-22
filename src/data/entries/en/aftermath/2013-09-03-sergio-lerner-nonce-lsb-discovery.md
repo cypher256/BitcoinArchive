@@ -61,4 +61,5 @@ In "Satoshi's Machine," Lerner confirmed the LSB-ExtraNonce connection and deter
 
 Lerner noted:
 
+<!-- audit:quote-skip -->
 > "We're living in a LOST movie: each time it looks a mystery is solved, another one appears."
