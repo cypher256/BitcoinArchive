@@ -24,12 +24,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-19-trammell-to-satoshi-ui-suggestion
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-19T19:58:23Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-19-trammell-to-satoshi-ui-suggestion"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 ビットコイン送金サブスレッドの最後のメールで、トランメルは誤ラベルが自分自身のミスであったことを受け入れ、具体的な UI の改善提案を行った：
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > 「Received with: X」ではなく「Received with address: X」と表示されていれば理解できたと思う。もっとも、アドレスに「Satoshi」と誤ラベルされていたのが最初の混乱の主な原因だったのは間違いないが。
 

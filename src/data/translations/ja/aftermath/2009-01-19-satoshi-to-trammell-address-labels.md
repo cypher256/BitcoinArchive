@@ -24,12 +24,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-19T11:02:37Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 サトシは、新しいアドレスのデフォルトラベルは「Satoshi」ではなく「Your Address」であると説明した。トランメルはサトシのアドレスだと思ったものにラベルを付けようとした際に、ソフトウェアの混乱しやすい UI のために誤った場所に入力した可能性が高いと示唆した：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > 最初のデフォルトアドレスは作成時に「Your Address」というラベルが付けられる。
 >

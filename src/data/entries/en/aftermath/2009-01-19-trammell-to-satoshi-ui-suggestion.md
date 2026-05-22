@@ -24,14 +24,22 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-19-trammell-to-satoshi-ui-suggestion
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-19T19:58:23Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-19-trammell-to-satoshi-ui-suggestion"
 ---
 
 In the final email of the Bitcoin Transfer sub-thread, Trammell accepted that the mislabeling was his own mistake and offered a concrete UI improvement suggestion:
 
+<!-- quote: q1 -->
 > I think had it said "Received with address: X" rather than just "Received with: X" I think I would have understood, although I'm sure that address being mislabeled 'Satoshi' was the primary reason for my initial confusion.
 
 He also identified the closest real-world analogy for Bitcoin's multiple receiving addresses:
 
+<!-- speaker: Dustin Trammell -->
 > You're right though, there's really nothing comparable in the current financial system that people are used to other than maybe being able to use multiple recipient email addresses for PayPal. Perhaps it could say "Received payment to: X"?
 
 This final exchange in the sub-thread shows the collaborative nature of early Bitcoin development, where real user feedback directly informed UI improvements. Trammell's suggestion to add "address" or "payment to" in the display text addressed the ambiguity between "who sent this" and "which of my addresses received this" — a distinction that remains relevant in Bitcoin wallet design.
