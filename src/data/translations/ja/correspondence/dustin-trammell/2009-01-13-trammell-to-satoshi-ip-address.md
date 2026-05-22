@@ -20,9 +20,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-13-trammell-to-satoshi-ip-address"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-13T01:55:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
 ---
 
 On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > いいな、いつだったか Usenet 上で同じようなグループを探したことが
 > あったが、ぴったり合うものは見つからなかった。Google Groups の方が
 > 投稿しやすいのは間違いないだろう。
@@ -31,6 +39,7 @@ On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 加入の方は意図的に難しくしていたと思う）。proof-hashes@googlegroups.com
 にメールを送れば、その本文がそのままグループに投稿される。
 
+<!-- speaker: Satoshi Nakamoto -->
 > Usenet や Google Group が補助的な防御として使える状況もある。
 > ビットコインはネットワーク全体の CPU 性能が小さい初期段階が一番
 > 脆弱だ。もっとも、規模が小さければ攻撃する動機も小さいので、その分は
@@ -42,10 +51,12 @@ On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 全体を投稿させて、現時点の勝ち残った proof-of-work チェーンを
 ときどき記録に残しておく、というのは思いついた。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 確かにこちらと関心が近いな。
 
 そのとおりだ。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 90 年代にはもっと多くの人が興味を持っていたと思う。だが、信頼された
 > 第三者ベースのシステム（Digicash など）が 10 年以上にわたって失敗
 > 続きだったあと、彼らはもう望みがないと見ている。今回は私の知る限り
@@ -56,6 +67,7 @@ On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 人々に実際にビットコインを評価させ、通貨になるまで持っていくことに
 なるだろう。現状ではただのビットの集まりにすぎない……
 
+<!-- speaker: Satoshi Nakamoto -->
 > これらはすべて 0.1.3 で修正済みだ。IP を教えてくれれば、コインを
 > いくらか送る。
 
@@ -64,6 +76,7 @@ On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 更新に成功してアドレスを失わずに済んでいるといいのだが。ときどき
 変わるが、当面はこのアドレスで大丈夫だと思う。
 
+<!-- speaker: Satoshi Nakamoto -->
 > これは「車が 2 倍速ければ必ず勝つ」というレースとは違う。
 > 1 マイクロ秒以下で済む SHA-256 計算で、それぞれの試行は独立に成功確率を
 > 持つ。あるコンピューターがハッシュ衝突を見つける確率は、その CPU
@@ -75,6 +88,7 @@ On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 他のノードよりも当たりを多く引ける、と。残念ながらこちらが複雑な数学を
 理解する能力は、暗号への興味の高さに反比例するのだ (:
 
+<!-- speaker: Satoshi Nakamoto -->
 > 経過を教えてくれ。何か問題があれば debug.log を送ってほしい。
 > それだけで何が起きたか分かることが多い。
 

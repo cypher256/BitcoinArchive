@@ -19,9 +19,16 @@ tags:
   - "mining"
 relatedEntries:
   - "aftermath/2009-01-13-trammell-to-satoshi-ip-address"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-13T01:55:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
 ---
 
 On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > Sweet, I was looking for a group like that on Usenet at one point to see
 > what I would use if I needed, and nothing really fit.  I'm sure Google
 > groups is a lot easier to post to.
@@ -31,6 +38,7 @@ post (in fact I think I made it difficult for people to actually join),
 you just email proof-hashes@googlegroups.com and the content of the
 email gets posted to the group.
 
+<!-- speaker: Satoshi Nakamoto -->
 > There are some scenarios where a Usenet or Google group could be used as
 > a supplemental defence.  Bitcoin is at its most vulnerable in the
 > beginning when the total network CPU power is small.  That's offset by
@@ -43,10 +51,12 @@ Yea, I was thinking you could have a client post the current block chain
 every 10k blocks or something, just to occasionally document the current
 winning proof-of-work chain.
 
+<!-- speaker: Satoshi Nakamoto -->
 > We definitely have similar interests!
 
 Indeed.
 
+<!-- speaker: Satoshi Nakamoto -->
 > You know, I think there were a lot more people interested in the 90's,
 > but after more than a decade of failed Trusted Third Party based systems
 > (Digicash, etc), they see it as a lost cause.  I hope they can make the
@@ -57,6 +67,7 @@ Yea, that was the primary feature that caught my eye.  The real trick
 will be to get people to actually value the BitCoins so that they become
 currency.  Currently, they're just collections of bits...
 
+<!-- speaker: Satoshi Nakamoto -->
 > This is all fixed in 0.1.3.  If you give me your IP, I'll send you some
 > coins.
 
@@ -65,6 +76,7 @@ had that address for a while though so hopefully my dhcp client is being
 successful at renewing and not losing my address.  It does change from
 time to time, but that address should be good for a while.
 
+<!-- speaker: Satoshi Nakamoto -->
 > It's not like a race where if one car is twice as fast, it'll always
 > win.  It's an SHA-256 that takes less than a microsecond, and each guess
 > has an independent chance of success.  Each computer's chance of finding
@@ -77,6 +89,7 @@ just translates to more successful guesses than anyone else.
 Unfortunately my ability to understand complex mathematics is conversely
 proportional to how interested I am in cryptography (:
 
+<!-- speaker: Satoshi Nakamoto -->
 > Let me know how it goes.  If you have any trouble with it, send me your
 > debug.log file.  I can often figure out what went wrong just from that.
 
