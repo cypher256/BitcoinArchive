@@ -20,12 +20,23 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-099"
 ---
 
 Oh yes, one more thing. I haven't configured the server's sendmail  
 yet, so the php mail functionality doesn't work, but it's not needed  
 yet anyway.
 
+<!-- quote: q1 -->
 > I don't have the time to configure it today, but I made a temporary
 > account "maintenance" with password "6648ku5HeK" and full permissions
 > to /var/www/bitcoin. You can access it via ssh or sftp at port 30000.
@@ -43,6 +54,7 @@ yet anyway.
 > price (i.e. what people are willing to buy and sell for) so that he
 > doesn't run out of coins.
 >
+> <!-- quote: q2 -->
 >> I've been configuring the SMF forum.  They're saying SMF is better
 >> written than phpBB and more reliable, so if I can get SMF to look
 >> right, that's the preferable choice.

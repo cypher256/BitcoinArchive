@@ -21,8 +21,13 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-096"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-094"
 translationStatus: complete
 ---
@@ -31,12 +36,13 @@ translationStatus: complete
 テストバージョン 5 だったと思いますが、完全には確かではありません。Linux 版をノートパソコンで実行していて、異なる場所間で持ち運び、電源を切る代わりにハイバネート機能を使用しています。
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
 > ありがとう。db::open/closeのエラーはパターンを裏付けている。
 >
 > より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたか？test5のMSG_DONTWAITがLibertyのゾンビ問題を解決した。どのテストバージョンを実行していたか？（ログにテストバージョンを出力するようにすべきだな）
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
 >> まだ役に立つかもしれないので、ログをお送りします。
 >>

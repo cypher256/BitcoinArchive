@@ -21,8 +21,13 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-096"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-094"
 ---
 
@@ -30,6 +35,7 @@ I think it was test version 5, not completely sure though. I'm running
 the Linux version on a laptop which I move between different locations  
 and use the hibernate-feature instead of powering down.
 
+<!-- quote: q1 -->
 > Thanks.  The db::open/close errors confirm the pattern.
 >
 > More interesting is the zombie sockets activity towards the end, and
@@ -38,7 +44,7 @@ and use the hibernate-feature instead of powering down.
 > the zombie problem for Liberty.  What test version were you running?
 > (I should print the test version in the log)
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> Here's the logs in case they're still useful.
 >>
 >>> I have an idea for a workaround, but it depends on what files the

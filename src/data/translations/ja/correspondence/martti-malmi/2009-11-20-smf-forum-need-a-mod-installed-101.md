@@ -20,12 +20,23 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q1"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-099"
 translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
 あ、もう一つ。サーバーの sendmail をまだ設定していないので、PHP のメール機能は動きませんが、まだ必要ないので問題ありません。
 
+<!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
 > 今日は設定する時間がありませんが、一時的なアカウント「maintenance」をパスワード「6648ku5HeK」で作成し、/var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
 >
@@ -35,6 +46,7 @@ translationStatus: complete
 >
 > NewLibertyStandardはコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
 >
+<!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 >> SMFフォーラムの設定を進めている。SMFはphpBBよりも設計が優れていて信頼性が高いと言われているので、SMFの見た目をちゃんと整えられるなら、そちらが望ましい選択だ。
 >>

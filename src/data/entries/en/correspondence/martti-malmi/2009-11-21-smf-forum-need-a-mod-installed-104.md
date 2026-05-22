@@ -22,8 +22,13 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-103"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-101"
 ---
 
@@ -41,6 +46,7 @@ http://www.startssl.com/?app=1, so the users wouldn't get a security
 warning from a self-signed certificate. However I don't know if they  
 give certificates for anonymously registered domains.
 
+<!-- quote: q1 -->
 > Thanks, that worked, I got File Manager installed with SSH.  I also
 > uploaded a few themes into Drupal.  I haven't thoroughly gone through
 > all the available themes yet.
@@ -54,7 +60,7 @@ give certificates for anonymously registered domains.
 > Both have SMF bridge modules available.  For future reference, Drupal's
 > is named "SMFforum Integration".
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> I don't have the time to configure it today, but I made a temporary  
 >>  account "" with password "" and full permissions to   
 >> /var/www/bitcoin. You can access it via ssh or sftp at port 30000.

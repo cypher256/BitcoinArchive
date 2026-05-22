@@ -22,8 +22,13 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-103"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-101"
 translationStatus: complete
 ---
@@ -38,6 +43,7 @@ bitcoin.org の DNS エントリを変更するだけのほうが簡単です。
 どこかで無料の SSL 証明書を取得できないか確認してみましょう。例えば http://www.startssl.com/?app=1 のように。そうすれば自己署名証明書によるセキュリティ警告がユーザーに表示されなくなります。ただし、匿名で登録されたドメインに証明書を発行してくれるかどうかはわかりません。
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
 > ありがとう、うまくいった。SSHでFile Managerをインストールできた。Drupalにもいくつかテーマをアップロードした。利用可能なテーマをすべて徹底的に確認したわけではまだない。
 >
@@ -45,7 +51,7 @@ bitcoin.org の DNS エントリを変更するだけのほうが簡単です。
 >
 > どちらもSMFブリッジモジュールが利用可能だ。今後の参考のために、Drupal用のものは「SMFforum Integration」という名前だ。
 >
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
 >> 今日は設定する時間がありませんが、一時的なアカウント「」をパスワード「」で作成し、
 >>  /var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
