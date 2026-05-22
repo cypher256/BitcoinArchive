@@ -21,12 +21,18 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-23-non-gui-option-169"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2010-02-17-non-gui-option-167"
 ---
 
-> <!-- quote: q1 -->
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> Just a few clues I've found about running the same binary without a GUI:
 >>
 >> 1) GTK supports running a program without display:   
