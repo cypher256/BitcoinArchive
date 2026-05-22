@@ -43,6 +43,7 @@ has.  The branch that it currently thinks is the best branch.
 That's the branch it'll be trying to make a block out of, which is
 all it needs the pool for.
 
+<!-- speaker: James A. Donald -->
 > > Broadcasts will probably be almost completely
 > > reliable.
 > 
@@ -65,6 +66,7 @@ The inventory-request-data scheme introduces a little latency, but
 it ultimately helps speed more by keeping extra data blocks off the
 transmit queues and conserving bandwidth.
 
+<!-- speaker: James A. Donald -->
 > You have an outline
 > and proposal for such a design, which is a big step
 > forward, but the devil is in the little details.

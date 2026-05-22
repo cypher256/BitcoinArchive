@@ -37,6 +37,7 @@ the Internet.  It doesn't really matter for now, since the network
 would have to get huge before the bandwidth is anything more than
 trivial.
 
+<!-- speaker: Hal Finney -->
 > BTW I don't remember if we talked about this, but the other day some
 > people were mentioning secure timestamping. You want to be able to
 > prove that a certain document existed at a certain time in the past.
@@ -47,6 +48,7 @@ transactions.  A few lines of code could create a transaction with
 an extra hash in it of anything that needs to be timestamped.  
 I should add a command to timestamp a file that way.
 
+<!-- speaker: Hal Finney -->
 > > > Later I want to add interfaces to make it really easy to integrate
 > > > into websites from any server side language.
 >

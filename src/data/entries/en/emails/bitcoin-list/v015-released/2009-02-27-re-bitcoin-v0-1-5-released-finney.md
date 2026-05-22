@@ -37,6 +37,7 @@ That sounds good. I'd also like to be able to run multiple coin/block generators
 
 BTW I don't remember if we talked about this, but the other day some people were mentioning secure timestamping. You want to be able to prove that a certain document existed at a certain time in the past. Seems to me that bitcoin's stack of blocks would be perfect for this.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Later I want to add interfaces to make it really easy to integrate
 > into websites from any server side language.
 

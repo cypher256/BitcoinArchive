@@ -41,6 +41,7 @@ To protect privacy, key pairs are used only once, with a new one for every trans
 
 Of course, the biggest difference is the lack of a central server. That was the Achilles heel of Chaumian systems; when the central company shut down, so did the currency.
 
+<!-- speaker: Martien van Steenbergen -->
 > Also, in bitcoin, is there a limited supply of money (that must be managed)? Or is money created exactly at the moment of transaction?
 
 There is a limited supply of money. Circulation will be 21,000,000 coins. Transactions only transfer ownership.

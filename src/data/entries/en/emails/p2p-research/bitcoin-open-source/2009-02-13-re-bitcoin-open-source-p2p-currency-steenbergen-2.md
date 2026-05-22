@@ -39,16 +39,19 @@ I see Bitcoin as a foundation and first step if you want to implement programmab
 
 I love the idea of virtual, non-geographic communities experimenting with new economic paradigms.
 
+<!-- speaker: Martien van Steenbergen -->
 > _Reminds me of:_
 > _* AardRock >> Wizard Rabbit Treasurer; and_
 > _* AardRock >> Pekunio_
 
 Indeed, it is much like Pekunio in the concept of spraying redundant copies of every transaction to a number of peers on the network, but the implementation is not a reputation network like Wizard Rabbit Treasurer. In fact, Bitcoin does not use reputation at all. It sees the network as just a big crowd and doesn't much care who it talks to or who tells it something, as long as at least one of them relays the information being broadcast around the network. It doesn't care because there's no way to lie to it. Either you tell it crypto proof of something, or it ignores you.
 
+<!-- speaker: Martien van Steenbergen -->
 > _Are you familiar with Ripple?_
 
 As trust systems go, Ripple is unique in spreading trust around rather than concentrating it.
 
+<!-- speaker: Martien van Steenbergen -->
 > _Is bitcoin also available as a protocol spec (facilitating differen language bindings and implementations; unite on specs, compete on implementation)._
 
 It would be best to refer to the C++ source code. I plan to implement interfaces for using the software to send and receive transactions from any language, so server side code can easily use it for web based e-commerce sites.
