@@ -25,14 +25,22 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:29:52Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes"
 ---
 
 In this reply to Satoshi, Trammell shared details about the proof-hashes Google Group he administered, offering it as a place for Bitcoin to post hash blocks:
 
+<!-- quote: q1 -->
 > It actually posts the hash blocks to a Google Group called 'proof-hashes', so similar result as if it were posting to Usenet. ... Since I run that group, and it's sole purpose is to archive proof-of-work hashes, feel free to join an account to have your system post there as well if you like.
 
 On the credit field display question, Trammell preferred showing $0.00 over a blank field but noted his four generated coins all showed "unconfirmed." He asked whether the existing transaction line would update upon maturity or generate a new credit transaction. He also confirmed he was unaware that double-clicking a transaction line showed details.
 
 Trammell reported he had been running version 0.1.1 and would upgrade to 0.1.3, suggesting an auto-update feature. He expressed strong enthusiasm:
 
+<!-- speaker: Dustin Trammell -->
 > Electronic currency and cryptography are two things that I am very interested in so as you would assume I was drawn to this project immediately when I saw it posted to the Cryptography email list. Feel free to ping me for feedback or to test out new features, I'll be happy to help out.

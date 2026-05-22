@@ -25,12 +25,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:29:52Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 このサトシへの返信で、トランメルは自身が管理する proof-hashes Google グループの詳細を共有し、ビットコインがハッシュブロックを投稿する場所として提供した。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > 実際にはハッシュブロックを「proof-hashes」というGoogleグループに投稿している。Usenetに投稿するのと似たような結果になる。……俺がそのグループを運営していて、唯一の目的はproof-of-workハッシュのアーカイブだから、よかったらアカウントを作ってそちらのシステムからも投稿してくれて構わない。
 
