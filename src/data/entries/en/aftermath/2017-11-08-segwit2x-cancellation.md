@@ -31,6 +31,7 @@ relatedEntries:
 
 On November 8, 2017, [Mike Belshe](https://en.wikipedia.org/wiki/SegWit2x) announced on the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list that the SegWit2x hard fork — scheduled for block 494784, approximately three days later — was being suspended. The full message:
 
+<!-- audit:quote-skip -->
 > "Our goal has always been a smooth upgrade for Bitcoin. Although we strongly believe in the need for a larger block size, there is something we believe is even more important: keeping the community together. Unfortunately, it is clear that we have not built sufficient consensus for a clean blocksize upgrade at this time. Continuing on the current path could divide the community and be a setback to Bitcoin's growth. This was never the goal of Segwit2x."
 
 The post was co-signed by Belshe, Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, and Erik Voorhees — five of the original signatories of the New York Agreement.

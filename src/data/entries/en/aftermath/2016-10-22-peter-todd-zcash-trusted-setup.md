@@ -44,10 +44,13 @@ Zcash's zk-SNARK protocol required generating cryptographic parameters — a pro
 
 Despite agreeing to participate, Todd outlined fundamental objections:
 
+<!-- audit:quote-skip -->
 > "It is IMPOSSIBLE for myself and the other participants to prove to a third party that we did not collude."
 
+<!-- audit:quote-skip -->
 > "Until the software and deterministic builds are audited, the entire ceremony is a bunch of crypto hocus pocus."
 
+<!-- audit:quote-skip -->
 > "If I had a Zcash backdoor, it'd go like this: Acquire Zcash secret keys. Print money at will."
 
 He also questioned the experimental nature of zk-SNARKs, noting disagreement between experts about security parameters, and criticized Zcash's founders' reward as creating conflicts of interest.
