@@ -82,11 +82,13 @@ translationStatus: complete
 
 放送当日 CoinDesk への取材で、トッドは映画製作者の論法を成立しないと評しつつ、明確に否定した:
 
+<!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
 > 「もちろん、私はサトシではない」
 
 ドキュメンタリー本編でホーバックから「あなたがサトシか」 と問われた際、トッドは皮肉で返した:
 
+<!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
 > 「ばかばかしい。だが、そう言いたいのなら、そうだ、私がサトシだ」
 

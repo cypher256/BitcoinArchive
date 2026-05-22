@@ -45,12 +45,15 @@ Zcash の zk-SNARK プロトコルは暗号パラメーターの生成を必要�
 
 **参加前のトッドの批判：**
 
+<!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
 > 「私自身と他の参加者が共謀しなかったことを第三者に証明するのは、不可能である」
 
+<!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
 > 「ソフトウェアと決定論的ビルドが監査されるまで、このセレモニー全体はただの暗号的なごまかしに過ぎない」
 
+<!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
 > 「もし私が Zcash のバックドアを持っていたら、手順はこうなる。Zcash の秘密鍵を取得する。好きなだけ通貨を発行する。それで終わり」
 

@@ -45,6 +45,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 記事の中で、ハーンはこう宣言した。
 
+<!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
 > 「ビットコインは失敗した」
 
@@ -53,6 +54,7 @@ translationStatus: complete
 
 **なぜビットコインは失敗したのか：**
 
+<!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
 > 「新しい分散型の通貨として、『システム上重要な機関』も『大きすぎて潰せない』もない存在になるはずだったものが、それよりも悪い何か――ほんの一握りの人間に完全に支配されるシステム――になってしまった」
 
@@ -64,6 +66,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 ハーンは初期の帯域幅に関する懸念へのサトシの回答を引用した。
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「帯域幅は、あなたが思うほど制約にならないかもしれない。...ネットワークが（Visaと同じ規模に）達するまでには数年かかるだろうし、その頃にはHD映画2本分をインターネットで送ることは大したことではないだろう」
 
@@ -75,15 +78,18 @@ translationStatus: complete
 <!-- speaker: narrator -->
 ハーンは、サトシの離脱が計画外のガバナンスの空白を残したと述べた。
 
+<!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
 > 「サトシが去ったとき、彼は現在 Bitcoin Core と呼んでいるプログラムの手綱を、初期の貢献者の一人である[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に引き渡した」
 
 <!-- speaker: narrator -->
 ギャビンの判断力を称賛し、ハーン自身が Google を辞めてビットコインにフルタイムで取り組む決断をした理由の一つだったと述べた上で、こう付け加えた。
 
+<!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
 > 「ただ一つ小さな問題があった。サトシはギャビンに実際にその仕事を引き受けたいかどうか尋ねたことはなく、実際、ギャビンは引き受けたくなかったのだ」
 
+<!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
 > 「そこでギャビンが最初にやったのは、他の4人の開発者にもコードへのアクセス権を与えることだった。彼らは、何かあってもプロジェクトがすぐに継続できるよう、急いで選ばれた。要するに、その時たまたまいて、役に立つことをしていた人間たちだった」
 
