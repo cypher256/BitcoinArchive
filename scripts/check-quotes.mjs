@@ -558,13 +558,14 @@ function checkFile(filePath, locale) {
       // The chip falls back to "{name}の投稿" (no timestamp) which
       // loses the UTC date that the primary entry carries. Setting
       // date here is a mechanical transcription from the source
-      // entry's `date:` field. Warn for now; promote to error after
-      // the full violation list is resolved.
+      // entry's `date:` field. Phase 2 of the 0523 plan promoted this
+      // check from warn to error (2026-05-23) after the full violation
+      // list (388 -> 0) was resolved.
       if (!q.date && q.sourceUnavailable !== true) {
         violations.push({
           file: rel,
           check: 'sourceEntryId-without-date',
-          level: 'warn',
+          level: 'error',
           msg: `Quote "${q.id}" has sourceEntryId "${target}" but no date. Set date from the primary entry's date: field per 0523 plan.`,
         });
       }
