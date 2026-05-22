@@ -43,6 +43,12 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
+quotes:
+  - id: "q1"
+    person: "Peter Todd"
+    personSlug: "peter-todd"
+    date: "2010-12-10T01:27:59Z"
+    sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 translationStatus: complete
 ---
 
@@ -54,7 +60,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 ドキュメンタリーの中心的な証拠は、2010年12月の BitcoinTalk でのやり取りだった。サトシがトランザクション置換——後に Replace-by-Fee（RBF）として知られる概念——を説明した。その約 1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peter の逆綴り）が技術的な指摘で返信した。
 
-<!-- speaker: Peter Todd -->
+<!-- quote: q1 -->
 > 「もちろん、正確に言えば、2 つ目のトランザクションに手数料がある場合、入力と出力は *正確には* 一致しない」
 
 <!-- speaker: narrator -->
@@ -76,12 +82,12 @@ translationStatus: complete
 
 放送当日 CoinDesk への取材で、トッドは映画製作者の論法を成立しないと評しつつ、明確に否定した:
 
-<!-- speaker: Peter Todd -->
+<!-- audit:quote-skip -->
 > 「もちろん、私はサトシではない」
 
 ドキュメンタリー本編でホーバックから「あなたがサトシか」 と問われた際、トッドは皮肉で返した:
 
-<!-- speaker: Peter Todd -->
+<!-- audit:quote-skip -->
 > 「ばかばかしい。だが、そう言いたいのなら、そうだ、私がサトシだ」
 
 <!-- speaker: narrator -->

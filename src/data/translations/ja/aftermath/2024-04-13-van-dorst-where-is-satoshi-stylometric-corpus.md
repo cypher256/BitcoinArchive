@@ -73,10 +73,12 @@ translationStatus: complete
 
 ヴァン・ドルストは首位候補の指名を意図的に避けている：
 
+<!-- audit:quote-skip -->
 > 容疑者のショートリストはある。だが 100% 確信できないので、ここで名前を出すつもりはない。
 
 個人的な利害についても透明である：
 
+<!-- audit:quote-skip -->
 > サトシの正体に個人的関心はない。2012 年に保有分は売却済みで、それは熱狂が始まる前のことである。
 
 大規模データセット・完全な数値公開・特定主張の不在 — この組み合わせは、特定の候補者を名指しした物語的な文体計量論考（[Skye Grey 2013 のサボ論](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[Aston University 2014 のサボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[カレイロウ 2026 NYT 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)におけるカフィエロの分析）よりも方法論的に厳格である。

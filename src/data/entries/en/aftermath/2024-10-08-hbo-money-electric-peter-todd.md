@@ -43,6 +43,12 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
+quotes:
+  - id: "q1"
+    person: "Peter Todd"
+    personSlug: "peter-todd"
+    date: "2010-12-10T01:27:59Z"
+    sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 ---
 
 On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a documentary directed by Cullen Hoback (known for "Q: Into the Storm"). The film named Bitcoin Core developer [Peter Todd](/BitcoinArchive/participants/peter-todd/) as a candidate for Bitcoin's pseudonymous creator, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
@@ -51,6 +57,7 @@ On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a docume
 
 The documentary's central piece of evidence was a December 2010 exchange on BitcoinTalk. Satoshi had described a concept for transaction replacement — what would later become Replace-by-Fee (RBF). Approximately 1.5 hours later, Todd (posting under the username ["retep,"](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) his name spelled backwards) replied with a technical correction:
 
+<!-- quote: q1 -->
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
 This was only Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought, not a response to it. Both accounts fell silent in the days that followed. [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
@@ -69,10 +76,12 @@ The documentary drew a line from this exchange to Todd's later work formalizing 
 
 Todd dismissed the allegations with sarcasm and anger. To CoinDesk on the day of broadcast he was direct, calling the filmmaker "grasping at straws":
 
+<!-- audit:quote-skip -->
 > "Of course, I'm not Satoshi."
 
 In the documentary itself, asked by Hoback whether he was Satoshi, Todd answered sarcastically:
 
+<!-- audit:quote-skip -->
 > "It's ludicrous. But I'll say, yeah, of course I'm Satoshi."
 
 He called the documentary "irresponsible" and said it put his safety at risk, noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could make them a target. Todd stated he did not begin working on Bitcoin until 2014 — six years after Nakamoto's disappearance.

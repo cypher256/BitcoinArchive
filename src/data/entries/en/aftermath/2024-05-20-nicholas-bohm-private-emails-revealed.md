@@ -34,6 +34,7 @@ One of the more interesting post-trial discoveries from **[COPA v Wright](/Bitco
 
 Before the trial, Bohm was publicly known mainly from a January 25, 2009 bitcoin-list message in which he reported software problems and Satoshi invited him to send a `debug.log` file directly. But Justice Mellor's May 2024 judgment records something more important:
 
+<!-- audit:quote-skip -->
 > "Mr Bohm provided evidence of his email communications with Satoshi that had not previously been made public."
 
 That detail matters because it shows that a participant first visible on the public mailing list was also corresponding privately with Satoshi for months afterward.
@@ -46,6 +47,7 @@ The trial exhibits indicate that Bohm and Satoshi exchanged direct emails about 
 - On **June 5, 2009**, Satoshi replied that Bohm should forward **port 8333** so his node could receive incoming connections, adding that if nobody online could accept inbound connections, nodes would fail to connect.
 - On **[July 18-19, 2009](/BitcoinArchive/entries/aftermath/2009-07-19-satoshi-to-bohm-nobody-running/)**, Bohm reported that Bitcoin had failed to establish connections "for the last day or so." Satoshi responded by asking whether Bohm's IP address had changed and noted:
 
+<!-- audit:quote-skip -->
 > "There may just not be anybody else running it right now."
 
 Satoshi also encouraged Bohm to keep his server online so new users would have someone to connect to instead of seeing no peers and giving up.

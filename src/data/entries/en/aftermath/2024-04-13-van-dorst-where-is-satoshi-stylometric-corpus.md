@@ -72,10 +72,12 @@ This is the largest publicly-released numerical dataset of Satoshi-vs-candidates
 
 Van Dorst explicitly refrains from naming a leading candidate:
 
+<!-- audit:quote-skip -->
 > Yes, I have a short-list of suspects. No, I'm not going to drop names here because I'm not 100% sure.
 
 He is also transparent about personal interest:
 
+<!-- audit:quote-skip -->
 > There is no personal interest in Satoshi's real identity. I sold my stake in 2012, way before the hype started.
 
 The combination — large dataset, full numerical release, no identification push — is methodologically more rigorous than the narrative-driven stylometric pieces that have named specific candidates ([Skye Grey 2013 for Szabo](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/), the [Aston University 2014 study for Szabo](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/), Cafiero's analysis in [Carreyrou's 2026 NYT investigation for Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)).
