@@ -33,6 +33,17 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-04-23T15:40:00Z"
+    sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-04-26T10:29:00Z"
+    sourceEntryId: "aftermath/2011-04-26-satoshi-to-andresen-alert-key"
 ---
 
 [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s final known private communications took place over two emails in April 2011.
@@ -41,6 +52,7 @@ relatedEntries:
 
 Satoshi [wrote to](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), a Google engineer who had been corresponding with him since April 2009:
 
+<!-- quote: q1 -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 He also expressed hope that Hearn's BitcoinJ project would continue to be developed as an alternative client.
@@ -49,10 +61,12 @@ He also expressed hope that Hearn's BitcoinJ project would continue to be develo
 
 Three days later, Satoshi sent what is believed to be his absolute [final email, addressed to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) with the subject line "alert key." He wrote:
 
+<!-- quote: q2 -->
 > "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle. Maybe instead make it about the open source project and give more credit to your dev contributors; it helps motivate them."
 
 He then announced his departure:
 
+<!-- speaker: Satoshi Nakamoto -->
 > "I've moved on to other things and will probably be unavailable."
 
 Finally, he transferred the network alert key — a critical tool for broadcasting emergency messages to all Bitcoin clients — completing the last piece of the project handover.

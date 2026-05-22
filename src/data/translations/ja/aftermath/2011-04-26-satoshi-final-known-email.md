@@ -33,6 +33,17 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-04-23T15:40:00Z"
+    sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-04-26T10:29:00Z"
+    sourceEntryId: "aftermath/2011-04-26-satoshi-to-andresen-alert-key"
 translationStatus: complete
 ---
 
@@ -42,6 +53,7 @@ translationStatus: complete
 
 サトシは、2009年4月からメールを交わしていた Google エンジニアの[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)に[こう書いた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
 
+<!-- quote: q1 -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
 ハーンの BitcoinJ プロジェクトが代替クライアントとして開発され続けることへの期待も述べた。
@@ -50,10 +62,12 @@ translationStatus: complete
 
 3日後、サトシは[ギャビン・アンドレセンに、最後の既知のメールとされるものを送った](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)。件名は「alert key」だった。
 
+<!-- quote: q2 -->
 > 「私のことを謎めいた影の人物として話し続けるのはやめてほしい。メディアはそれを海賊通貨という切り口に変えてしまう。代わりにオープンソースプロジェクトとして取り上げ、開発に貢献しているメンバーにもっと功績を認めてほしい。それが彼らのモチベーションになる」
 
 続けて離脱を告げた。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「他のことに取り組むことにした。おそらく連絡が取れなくなるだろう」
 
 最後に、ネットワークアラートキー — すべてのビットコインクライアントに緊急メッセージを配信するための重要なツール — を移譲し、プロジェクトの引き継ぎの最後の要素を完了させた。
