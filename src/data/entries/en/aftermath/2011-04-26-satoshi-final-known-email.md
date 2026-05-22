@@ -43,7 +43,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2011-04-26T10:29:00Z"
-    sourceEntryId: "aftermath/2011-04-26-satoshi-to-andresen-alert-key"
+    sourceEntryId: "correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email"
 ---
 
 [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s final known private communications took place over two emails in April 2011.

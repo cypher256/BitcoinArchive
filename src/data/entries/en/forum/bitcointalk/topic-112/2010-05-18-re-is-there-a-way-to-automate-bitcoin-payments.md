@@ -17,6 +17,7 @@ secondarySources:
 
 A little late, but in case anyone else has the same issue.  The compile dump had 2 warnings (that were 20 lines long) and 2 link errors.  The errors were:
 
+<!-- audit:quote-skip -->
 > obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x13): In function `wxArrayString::Item(unsigned long) const':
 > /usr/local/include/wx-2.9/wx/buffer.h:42: undefined reference to `wxTheAssertHandler'
 >
