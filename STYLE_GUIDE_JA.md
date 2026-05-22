@@ -172,6 +172,15 @@ aftermath や伝記散文の中で導入文として使われる "Satoshi wrote:
 
 「source quote」 とは実在発言者 ( メール送信者、 フォーラム投稿者、 ホワイトペーパー著者等 ) の発言を引用するもの。 編集者の例示、 仕様引用、 コマンド出力風表示、 詩的引用、 翻訳比較等は「editorial quote」 で、 `<!-- audit:quote-skip -->` で明示的に除外する。
 
+実在発言者の引用でも、 構造的に chip 帰属が成立しない以下 2 ケースは `<!-- audit:quote-skip -->` で扱うのが正解:
+
+- **削除済みソース** ( deleted source ): 引用元のフォーラム投稿やメッセージが削除されており ( BitcoinTalk のモデレーター削除、 投稿者自身による削除、 失効した Hushmail スレッド等 )、 primary entry として取り込めるコピーが残っていない。 ブロック引用は返信内引用から保持されているが、 原資料が回収不能のため `sourceEntryId` を付けられない。
+- **外部引用** ( external quote ): 発言者は実在するが、 引用元が Archive のキュレーション範囲外 ( 例: BitcoinTalk スレッド内で引用された Dan Connolly の外部メーリングリスト投稿、 文脈として再掲されたジャーナリストの記事段落等 )。 Archive はその出典を primary entry として取り込むつもりが無いため、 chip が指せるエントリーが存在しない。
+
+いずれも編集意図は「実在発言だが Archive 内 primary entry が成立し得ない」 のであり、 「捏造された例示」 ではない。 `<!-- audit:quote-skip -->` で blockquote を marking した上で、 発言者名を明示しつつ存在する外部出典 ( `secondarySources`、 inline URL 等 ) にリンクする導入文を前に置き、 chip が出なくても帰属が読者に伝わるようにする。
+
+`audit:quote-skip` を**単に検出器を黙らせるために使ってはならない**。 引用元が Archive 内にあるか追加可能なら、 それは `quote-self-link` / `quote-non-primary-target` の領域で、 正しい対応は primary entry の作成または `sourceEntryId` の付け替えだ。
+
 attribution chain の起点 ( 引用元が切り替わる最初の blockquote ) に `<!-- quote: qN -->` を置く。 同一引用元から連続する blockquote は `<!-- speaker: NAME -->` のみで継続し、 marker は繰り返さない ( 下記「同一引用元への複数引用ブロックは marker を繰り返さない」 参照 )。
 
 新規エントリーは冒頭メタデータの `quotes[]` と本文マーカーで引用先表示を持つ。旧形式のフラットなパターンを再導入してはならない。

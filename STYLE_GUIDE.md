@@ -588,6 +588,36 @@ quotations, or translation comparisons — none of these have a
 primary entry to link to and they are explicitly excluded from the
 chain with `<!-- audit:quote-skip -->`.
 
+`<!-- audit:quote-skip -->` is **also** the correct treatment for
+two narrower cases of real-speaker quotation where chip
+attribution is structurally not possible:
+
+- **Deleted source.** The cited forum post or message was deleted
+  (BitcoinTalk mod removal, user-deleted reply, expired Hushmail
+  thread, etc.) and no surviving copy exists to be ingested as a
+  primary entry. The blockquote is preserved verbatim from a
+  reply-quote, but the original source is unrecoverable, so no
+  `sourceEntryId` can be supplied.
+- **External quote.** The speaker is real but the source lies
+  outside the Archive's curation scope (e.g., a Dan Connolly post
+  on an external mailing list quoted inside a BitcoinTalk thread,
+  or a journalist's article paragraph reproduced as context). The
+  Archive does not intend to ingest that source as a primary
+  entry, so there is no entry the chip could ever point to.
+
+In both cases the editorial intent is "real quote, no Archive
+primary entry possible," not "fabricated illustration." Mark the
+blockquote with `<!-- audit:quote-skip -->` and prefer a leading
+narrator sentence that names the speaker and links to whatever
+external citation exists (`secondarySources`, an inline URL, etc.)
+so readers understand the attribution even though the chip is not
+emitted.
+
+Do **not** use `audit:quote-skip` simply to silence the detector
+when the source IS in (or could be added to) the Archive — that
+is `quote-self-link` / `quote-non-primary-target` territory, and
+the correct fix is to create or repoint the primary entry.
+
 The chain itself starts at every change of source: place
 `<!-- quote: qN -->` immediately before the first blockquote from a
 given source. Subsequent blockquotes from the same source must NOT
