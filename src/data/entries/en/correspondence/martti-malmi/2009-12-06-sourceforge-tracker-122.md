@@ -24,6 +24,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
+  - id: "q2"
+    parent: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    date: "2009-11-30T12:13:04Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-30-bitcoinorg-114"
 ---
 
 I added the sourceforge tracker to bitcoin.sourceforge.net.  The 
@@ -106,6 +112,7 @@ secure and Free Open Source software downloads" /></a>
 > It would be also great if you can get the Sourceforge logo from the SF 
 > project admin and add it to the site footer.
 > 
+> <!-- quote: q2 -->
 >> The current site layout looks nice and simple. The logo just should be
 >> changed. If we want to go live quickly, we can just replace it with the
 >> site title and make a better logo later.

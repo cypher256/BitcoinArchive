@@ -25,6 +25,12 @@ quotes:
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
+  - id: "q2"
+    parent: "q1"
+    person: "Martti Malmi"
+    personSlug: "martti-malmi"
+    date: "2009-11-30T12:13:04Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-30-bitcoinorg-114"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -108,6 +114,7 @@ secure and Free Open Source software downloads" /></a>
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q2 -->
 >> 現在のサイトレイアウトはすっきりしていて良いな。ロゴだけ
 >> 変更すべきだ。すぐに公開したいなら、とりあえずサイトタイトルに
 >> 置き換えて、後でもっと良いロゴを作ればいいだろう。
