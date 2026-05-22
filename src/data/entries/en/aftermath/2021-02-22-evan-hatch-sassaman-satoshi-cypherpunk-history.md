@@ -61,6 +61,7 @@ Hatch's argument is structurally circumstantial — he combines biographical, li
 
 The piece is explicitly speculative, not a forensic identification. Hatch's strongest assertion is conditional:
 
+<!-- audit:quote-skip -->
 > I think there is a real possibility that Len was a direct contributor to Bitcoin.
 
 Earlier in the piece Hatch writes "I hesitate to speculate about Satoshi's identity," signaling that the article is not making a definitive identification — it is constructing an inferential case. The framing was preserved in subsequent press coverage that cited the article: most reports describe the Sassaman hypothesis as a *cypherpunk-community speculation* rather than a stylometrically proved identification (which is the formally distinct posture taken by, for example, Skye Grey 2013 for Nick Szabo or the 2026 Carreyrou NYT investigation for Adam Back).
