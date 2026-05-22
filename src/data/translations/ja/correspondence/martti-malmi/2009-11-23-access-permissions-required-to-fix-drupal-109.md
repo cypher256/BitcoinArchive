@@ -20,12 +20,18 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108"
 translationStatus: complete
 ---
 
 <!-- speaker: Martti Malmi -->
 完了しました。すべてのファイルへのアクセス権限を付与しました。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメーターなしの
 > クリーンURLを有効にしているが、Apacheが「AllowOverride All」に設定

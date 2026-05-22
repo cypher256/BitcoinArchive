@@ -20,10 +20,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108"
 ---
 
 Done. I granted you access to all the files.
 
+<!-- quote: q1 -->
 > Drupal's .htaccess file which uses mod_rewrite to allow clean URLs
 > without the ? parameter is not working because its changes are rejected
 > because Apache is not configured with "AllowOverride All".  This is
