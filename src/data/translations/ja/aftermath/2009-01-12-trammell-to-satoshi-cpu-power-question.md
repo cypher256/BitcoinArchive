@@ -25,12 +25,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-cpu-power-question
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:49:02Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-cpu-power-question"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 アップグレードの問題を報告してからわずか 9分後に送信された別のメールで、トランメルはビットコインの最も永続的な問題の一つとなるテーマ――マイニングの中央集権化について問いかけた。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > 最もCPU性能の高い単一ノードがビットコインの大半を生成・保持するのを、何が防いでいるんだ？各ノードが他のすべてのノードから独立して動いているなら、1つが他より大幅に強力な場合、そのノードが他のノードより先に正解に到達する可能性が高いんじゃないか？性能の低いノードがたまに当たりを引くこともあるだろうが、大きな馬力の差があるなら、ビットコインの大半は最も強力なノードによって生成されると思うんだが。
 
