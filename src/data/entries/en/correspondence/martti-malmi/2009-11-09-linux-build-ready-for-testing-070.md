@@ -23,10 +23,17 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-068"
+  - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    parent: "q1"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly"
 ---
 
+<!-- quote: q1 -->
 > Martti, how long did it take to start downloading blocks when you ran
 > it, and how fast did it download?
 
@@ -37,7 +44,8 @@ I'll have to focus on a school project (coincidentally C++ coding) for
 about a month now, so I don't have that much time for active  
 developing until December. Let's keep contact anyway.
 
-> <!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
 >> Ok, blocks have now started to increase. It definitely takes longer  
 >>  for them to start increasing than with the Windows version. Also,  
 >> I  think they might be increasing at a slower rate than in with the  

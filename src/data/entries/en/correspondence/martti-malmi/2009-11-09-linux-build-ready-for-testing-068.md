@@ -49,6 +49,7 @@ long could confuse other users.
 Martti, how long did it take to start downloading blocks when you ran 
 it, and how fast did it download?
 
+<!-- speaker: Liberty Standard -->
 >     When I launch bitcoin and the bitcoin port is not available, I get
 >     the following messages to the command line. I don't get those
 >     messages when the bitcoin port is available. Would it be possible

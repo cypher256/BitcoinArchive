@@ -23,12 +23,19 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-068"
+  - id: "q2"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    parent: "q1"
+    sourceEntryId: "correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly"
 translationStatus: complete
 ---
 
 <!-- tone-skip -->
+<!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
 > Martti、あなたが実行した時、ブロックのダウンロードが始まるまでどのくらいかかった？そしてどのくらいの速度でダウンロードした？
 
@@ -40,8 +47,8 @@ translationStatus: complete
 学校のプロジェクト（偶然にも C++のコーディング）に約 1ヶ月集中しなければならないので、12月までは積極的な開発に使える時間があまりありません。とにかく連絡は取り合いましょう。
 
 <!-- tone-skip -->
-> <!-- speaker: Satoshi Nakamoto -->
-> <!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
 >> ブロックが増え始めました。Windows版よりも増え始めるまでに確実に時間が
 >> かかります。また、Windows版よりも遅い速度で増えているかもしれません。
