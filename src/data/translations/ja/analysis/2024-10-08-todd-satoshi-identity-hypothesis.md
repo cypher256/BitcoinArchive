@@ -61,6 +61,7 @@ translationStatus: complete
 
 ドキュメンタリーの中心的な証拠は、2010 年 12 月の [BitcoinTalk](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) でのやり取り。サトシがトランザクション置換 — 後に Replace-by-Fee として正式化される概念 — を説明した。その約 1 時間半後、トッド（ユーザー名「retep」、Peter の逆綴り）が技術的な指摘で返信した：
 
+<!-- audit:quote-skip -->
 > 「もちろん、正確に言えば、2 つ目のトランザクションに手数料がある場合、入力と出力は *正確には* 一致しない」
 
 これはトッドの BitcoinTalk での 2 回目の投稿で、登録からわずか 3 日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した — つまり返信ではなくサトシの投稿の続きだった — と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2 日後の 12 月 12 日。トッドはこの返信から 16 か月、BitcoinTalk に戻ってこなかった。

@@ -52,6 +52,7 @@ This entry sets out what the [Bitcoin whitepaper](/BitcoinArchive/entries/emails
 
 The fee-only regime is not a later interpretation — it is in [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original specification. Section 6 of the whitepaper, "Incentive," contains the canonical statement:
 
+<!-- audit:quote-skip -->
 > The incentive can also be funded with transaction fees. If the output value of a transaction is less than its input value, the difference is a transaction fee that is added to the incentive value of the block containing the transaction. Once a predetermined number of coins have entered circulation, the incentive can transition entirely to transaction fees and be completely inflation free.
 
 The whitepaper passage describes a two-component block reward, with one component scheduled to vanish:

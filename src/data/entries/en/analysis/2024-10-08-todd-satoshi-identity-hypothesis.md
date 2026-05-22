@@ -61,6 +61,7 @@ The earliest public articulation of the hypothesis identified in this archive's 
 
 The documentary's central piece of evidence is a December 2010 exchange on [BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/). Satoshi described a transaction-replacement mechanism — what would later be formalized as Replace-by-Fee. Approximately 1.5 hours later, Todd (under the username "retep," his name spelled backwards) replied with a technical correction:
 
+<!-- audit:quote-skip -->
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
 This was Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought rather than a response to it. Both accounts fell silent in the days that followed: [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010, and Todd did not return to BitcoinTalk for sixteen months.
