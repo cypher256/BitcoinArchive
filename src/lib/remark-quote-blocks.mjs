@@ -64,6 +64,18 @@ function computeDepth(quoteId, quotesMap) {
  */
 function formatDate(date, locale) {
   if (!date) return null;
+  // Date-only inputs ("YYYY-MM-DD" string, or a Date that toISOString
+  // serialises with T00:00:00 — common for YAML date-only values
+  // promoted to Date by some parsers) are always day-only regardless
+  // of how Date() parses them. This guards against host TZ differences
+  // (Cloudflare Pages, local dev) shifting the parsed UTC hours and
+  // against the 0523 plan's mechanical date backfill emitting plain
+  // dates that should not render as "00:00 UTC".
+  const dateStr = typeof date === 'string'
+    ? date
+    : (date instanceof Date ? date.toISOString() : String(date));
+  const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(dateStr)
+    || /^\d{4}-\d{2}-\d{2}T00:00:00(?:\.000)?Z?$/.test(dateStr);
   const d = new Date(date);
   // Render in UTC. Build hosts (Cloudflare Pages, local dev) have
   // different default timezones; using local getHours/getMonth would
@@ -75,7 +87,8 @@ function formatDate(date, locale) {
   // component is exactly 00:00:00 UTC the source date is treated as
   // "day only" and we omit the time, so a frontmatter value of
   // "2011-06-14T00:00:00Z" does not render as a misleading "00:00 UTC".
-  const hasTime = d.getUTCHours() !== 0 || d.getUTCMinutes() !== 0 || d.getUTCSeconds() !== 0;
+  const hasTime = !isDateOnly
+    && (d.getUTCHours() !== 0 || d.getUTCMinutes() !== 0 || d.getUTCSeconds() !== 0);
   if (locale === 'ja') {
     const datePart = `${d.getUTCFullYear()}年${d.getUTCMonth() + 1}月${d.getUTCDate()}日`;
     if (!hasTime) return datePart;
