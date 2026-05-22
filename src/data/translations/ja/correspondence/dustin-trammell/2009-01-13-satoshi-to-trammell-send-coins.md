@@ -21,8 +21,26 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-13-satoshi-to-trammell-send-coins"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:29:52Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes"
+  - id: "q2"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:40:58Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues"
+  - id: "q3"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:49:02Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-cpu-power-question"
 ---
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > 実は 'proof-hashes' という Google Group にハッシュブロックを投稿
 > していて、Usenet に投稿するのと似たような結果になる。
 >
@@ -44,6 +62,8 @@ Usenet や Google Group が補助的な防御として使える状況もある�
 備えて Google Group が役に立つ筋道もある。
 
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > 電子マネーと暗号はこちらが非常に興味を持っている 2 つの分野だ。
 > ご想像のとおり、暗号メーリングリストへの投稿を目にしてすぐに
 > このプロジェクトに引き付けられた。フィードバックや新機能の検証など、
@@ -58,6 +78,8 @@ Usenet や Google Group が補助的な防御として使える状況もある�
 気付いてくれることを願う。
 
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > コインが成熟したら、新しい 'credit' トランザクションが
 > 生成されるのか、それとも既存の生成トランザクション行の Credit 欄が
 > 更新されるのか？
@@ -65,6 +87,8 @@ Usenet や Google Group が補助的な防御として使える状況もある�
 既存のトランザクション行が更新される。
 
 
+<!-- quote: q2 -->
+<!-- speaker: Dustin Trammell -->
 > バージョン 0.1.3 を起動したところ、こちらのトランザクションエントリ 4 件は
 > すべて依然として 'unconfirmed' と表示されているが、Description が
 > 'Generated (not accepted)' に変わっている。これは、他のノードが先に
@@ -88,6 +112,8 @@ Usenet や Google Group が補助的な防御として使える状況もある�
 いくらか送る。
 
 
+<!-- quote: q3 -->
+<!-- speaker: Dustin Trammell -->
 > もう 1 つ質問があったのだが…… CPU 性能が最も高い 1 つのノードが
 > ビットコインの大半を生成して保有してしまうことを、何が妨げるのか？
 > 各ノードが他のノードから独立して動作しているのなら、あるノードが
@@ -104,6 +130,8 @@ Usenet や Google Group が補助的な防御として使える状況もある�
 それだけだ。
 
 
+<!-- quote: q2 -->
+<!-- speaker: Dustin Trammell -->
 > このまま様子を見てみる……
 
 経過を教えてくれ。何か問題があれば debug.log を送ってほしい。

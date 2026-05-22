@@ -19,9 +19,16 @@ tags:
   - "v0-1-3"
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-12T18:52:45Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
 On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > Be sure to upgrade to v0.1.3 if you haven't already.  This version
 > has really stabilized things.
 

@@ -20,8 +20,25 @@ tags:
   - "send-to-ip"
 relatedEntries:
   - "aftermath/2009-01-13-satoshi-to-trammell-send-coins"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:29:52Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes"
+  - id: "q2"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:40:58Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues"
+  - id: "q3"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-12T21:49:02Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-cpu-power-question"
 ---
 
+<!-- quote: q1 -->
 > It actually posts the hash blocks to a Google Group called
 > 'proof-hashes', so similar result as if it were posting to Usenet.
 >
@@ -44,6 +61,7 @@ stage will work.  If not, there are ways a Google group could help, if
 it really came to that.
 
 
+<!-- quote: q1 -->
 > Electronic currency and cryptography are two things that I am very
 > interested in so as you would assume I was drawn to this project
 > immediately when I saw it posted to the Cryptography email list. Feel
@@ -59,6 +77,7 @@ distinction, that this is the first time I know of that we're trying a
 non-trust based system. 
 
 
+<!-- quote: q1 -->
 > When the
 > coins mature, will that generate a new 'credit' transaction, or will the
 > existing generation transaction line's credit field be updated?
@@ -66,6 +85,7 @@ non-trust based system.
 The existing transaction line will change.  
 
 
+<!-- quote: q2 -->
 > Upon opening version 0.1.3, all four of my transaction entries still say
 > 'unconfirmed', but now the Descriptions say 'Generated (not accepted)'.
 > Does this mean that some other node had extended the chain first and my
@@ -89,6 +109,7 @@ This is all fixed in 0.1.3.  If you give me your IP, I'll send you some
 coins.
 
 
+<!-- quote: q3 -->
 > One other question I had... What prevents the single node with the most
 > CPU power from generating and retaining the majority of the BitCoins?
 > If every node is working independently of all others, if one is
@@ -105,6 +126,7 @@ a hash collision is linearly proportional to it's CPU power.  A computer
 that's half as fast would get half as many coins.
 
 
+<!-- quote: q2 -->
 > I'll watch this instance and see how it goes...
 
 Let me know how it goes.  If you have any trouble with it, send me your
