@@ -40,11 +40,18 @@ relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2014-02-28-mt-gox-bankruptcy
+quotes:
+  - id: "q1"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
+    date: "2010-08-15T18:08:49Z"
+    sourceEntryId: "forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474"
 translationStatus: complete
 ---
 
 2010年8月15日18:08 UTC 頃、ビットコイン開発者[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 で異常を発見し、BitcoinTalk フォーラムの[討論スレッド (topic 823)](/BitcoinArchive/ja/entries/threads/forum/bitcointalk/topic-823/)に投稿した：
 
+<!-- quote: q1 -->
 > 「奇妙な block 74638 — 92233720368.54277039 BTC？UINT64_MAXかな？」
 
 ブロック 74638 の単一トランザクションが **184,467,440,737.09551616 BTC** を生成していた — 92,233,720,368.54277039 BTC の出力が 2 つ — ビットコインの総発行予定量 2,100 万 BTC の約 9,000倍である。

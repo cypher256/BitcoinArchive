@@ -40,10 +40,17 @@ relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2014-02-28-mt-gox-bankruptcy
+quotes:
+  - id: "q1"
+    person: "Jeff Garzik"
+    personSlug: "jeff-garzik"
+    date: "2010-08-15T18:08:49Z"
+    sourceEntryId: "forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474"
 ---
 
 On August 15, 2010, at approximately 18:08 UTC, Bitcoin developer [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed an anomaly in Block 74638 and posted on the BitcoinTalk [discussion thread (topic 823)](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-823/):
 
+<!-- quote: q1 -->
 > "Strange block 74638 — 92233720368.54277039 BTC? Is that UINT64_MAX, I wonder?"
 
 A single transaction in Block 74638 had created **184,467,440,737.09551616 BTC** — two outputs of 92,233,720,368.54277039 BTC each — approximately 9,000 times Bitcoin's total intended supply of 21 million BTC.
