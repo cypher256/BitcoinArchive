@@ -29,7 +29,7 @@ quotes:
     person: "Adam Back"
     personSlug: "adam-back"
     date: "2008-08-21T18:17:17Z"
-    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi-micromint"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-micromint"
 ---
 
 In the fourth email of the chain, Adam Back's second reply suggested another related paper: "PayWord and MicroMint" by Ron Rivest and Adi Shamir (1996), which proposed extracting k-way hash collisions for digital coin scarcity rather than the partial pre-images used by Hashcash and later by Bitcoin. The load-bearing self-admission in this email — the line Back later cited in the Cointelegraph interview as "probably my biggest mistake" — was:

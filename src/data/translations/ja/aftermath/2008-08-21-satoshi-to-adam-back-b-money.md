@@ -34,7 +34,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2008-08-21T17:59:48Z"
-    sourceEntryId: "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 translationStatus: complete
 ---
 

@@ -29,7 +29,7 @@ quotes:
     person: "Adam Back"
     personSlug: "adam-back"
     date: "2008-08-21T18:17:17Z"
-    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi-micromint"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-micromint"
 translationStatus: complete
 ---
 

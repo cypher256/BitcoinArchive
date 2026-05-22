@@ -34,7 +34,7 @@ quotes:
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2008-08-21T17:59:48Z"
-    sourceEntryId: "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
 In the third email of the chain, Satoshi thanked Adam Back for pointing him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal. The historically load-bearing line — already cited as a self-statement in archive analysis — reads:

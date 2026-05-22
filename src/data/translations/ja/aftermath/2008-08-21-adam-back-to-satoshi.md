@@ -35,7 +35,7 @@ quotes:
     person: "Adam Back"
     personSlug: "adam-back"
     date: "2008-08-21T12:55:59Z"
-    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
 translationStatus: complete
 ---
 
