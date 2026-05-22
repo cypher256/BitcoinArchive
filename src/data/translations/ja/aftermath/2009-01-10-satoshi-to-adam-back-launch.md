@@ -25,18 +25,31 @@ secondarySources:
     note: "2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書 C/21）に 5 通の完全なメールチェーンが含まれていた"
   - name: "Bitstamp - Who is Adam Back?"
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-10T18:46:45Z"
+    sourceEntryId: "aftermath/2009-01-10-satoshi-to-adam-back-launch"
+  - id: "q2"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-07T23:40:12Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 2008年 8 月のやり取りから約 5 か月後、サトシはアダム・バックに最後のメールを書き送った。[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)の翌日のことである。最初に連絡を取ったサイファーパンクの一人であるバックに対するサトシ自身による v0.1 公開告知の中核的な一文は次の通り。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > 私の論文のオープンソース実装、Bitcoin v0.1 をたった今公開した。詳細・ダウンロード・スクリーンショットは www.bitcoin.org にある。
 
 <!-- speaker: narrator -->
 プロジェクトがどう受け止められているかを示すため、サトシは暗号学メーリングリストの議論から[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の応答の一部を転送した。フィニーの発言は metzdowd.com の暗号学メーリングリストアーカイブとして独立に公開されており、正典は[フィニーの応答エントリ（2008-11-07）](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/)にある。サトシがバックに見せるために特に転送した二行は次の通り。
 
+<!-- quote: q2 -->
 <!-- speaker: Hal Finney -->
 > ビットコインは非常に有望なアイデアに思える。誠実な参加者の CPU 能力が攻撃者のそれを上回るという仮定にセキュリティの基盤を置く発想が気に入った。
 
