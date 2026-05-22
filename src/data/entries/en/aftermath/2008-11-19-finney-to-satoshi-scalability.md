@@ -24,14 +24,22 @@ secondarySources:
     note: "Published by CoinDesk, November 26, 2020. Original files provided by Fran Finney to Nathaniel Popper in March 2014, subsequently shared with CoinDesk journalist Michael Kapilkov"
   - name: "Eyerys - Tracking Satoshi Nakamoto"
     url: "https://www.eyerys.com/articles/timeline/tracking-satoshi-nakamoto-his-never-seen-emails-hal-finney"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-19"
+    sourceEntryId: "aftermath/2008-11-19-finney-to-satoshi-scalability"
 ---
 
 This email was sent during the pre-release code review period, approximately two months before Bitcoin's public launch. Finney had been reviewing Satoshi's code and draft paper, and wrote to ask fundamental scalability questions:
 
+<!-- quote: q1 -->
 > How large do you envision it becoming? Tens of nodes? Thousands? Millions?
 
 He also asked:
 
+<!-- speaker: Hal Finney -->
 > And for clients, do you think this could scale to be usable for close to 100% of the world's financial transactions?
 
 These questions demonstrate that Finney — a veteran cryptographer who had worked on PGP and created the first reusable proof-of-work system (RPOW) — was thinking seriously about Bitcoin's potential from the very beginning. While most recipients of the [whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) on the Cryptography mailing list were skeptical, Finney was one of the few who engaged deeply with the technical details.

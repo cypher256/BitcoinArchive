@@ -24,12 +24,19 @@ secondarySources:
     note: "CoinDesk、2020年11月26日公開。フラン・フィニーが 2014年3月にナサニエル・ポッパーに提供した原本ファイルから。その後、CoinDesk の記者マイケル・カピルコフに共有された"
   - name: "Eyerys - Tracking Satoshi Nakamoto"
     url: "https://www.eyerys.com/articles/timeline/tracking-satoshi-nakamoto-his-never-seen-emails-hal-finney"
+quotes:
+  - id: "q1"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-19"
+    sourceEntryId: "aftermath/2008-11-19-finney-to-satoshi-scalability"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 このメールは、ビットコインの公開ローンチの約 2ヶ月前、リリース前のコードレビュー期間に送られたものである。フィニーはサトシのコードと論文草稿をレビューしており、スケーラビリティに関する根本的な質問を投げかけた。
 
+<!-- quote: q1 -->
 <!-- speaker: Hal Finney -->
 > どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？
 
