@@ -24,9 +24,16 @@ quotes:
     person: "John Levine"
     personSlug: "john-levine"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-re-bitcoin-p2p-e-cash-paper-levine"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-10-31T18:10:00Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper"
 ---
 
 <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> As long as honest nodes control the most CPU power on the network,
 >> they can generate the longest chain and outpace any attackers.
 >

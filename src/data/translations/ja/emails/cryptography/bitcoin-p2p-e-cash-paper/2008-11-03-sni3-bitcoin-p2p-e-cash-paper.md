@@ -25,11 +25,18 @@ quotes:
     person: "John Levine"
     personSlug: "john-levine"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-re-bitcoin-p2p-e-cash-paper-levine"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-10-31T18:10:00Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper"
 ---
 
 <!-- speaker: John Levine -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
+> <!-- quote: q2 -->
 >> 正直なノードがネットワーク上で最も多くのCPUパワーを支配している限り、
 >> 最も長いチェーンを生成し、攻撃者を上回ることができる。
 >
