@@ -21,9 +21,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-15-trammell-to-satoshi-bitcoin-list"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:15:23Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 ---
 
 On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > 少なくとも 1 つ、着信 IP が同じクラス B の中で頻繁に変わり続ける
 > ノードがある。プログラムを起動するたびに変わっているのかもしれない。
 > こうなるとは予想していなかった。
@@ -33,11 +41,13 @@ On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 3 日間（テスト目的でその間ずっとコインを送受していた）はそちらに
 伝えた IP のままだ。
 
+<!-- speaker: Satoshi Nakamoto -->
 > ここからの続きを bitcoin-list か暗号メーリングリストに CC しても
 > 構わないか？
 
 うむ、問題ない。
 
+<!-- speaker: Satoshi Nakamoto -->
 > ちなみに、bitcoin-list は:
 > bitcoin-list@lists.sourceforge.net
 > 購読・解除ページ:
@@ -47,6 +57,7 @@ On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 
 今すぐ参加する、ありがたい (:
 
+<!-- speaker: Satoshi Nakamoto -->
 > ハルが、長期的な勝算は低くとも投資対象として見られる可能性に
 > 言及していた。今や信頼された第三者が腰砕けになって機能を削がれて
 > しまわない電子マネーの作り方が分かったのだから、10 年後に何らかの
@@ -57,6 +68,7 @@ On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 ビットコインを生成しない理由がない。そして、もしいつか価値が
 出れば…？ ボーナスだ！
 
+<!-- speaker: Satoshi Nakamoto -->
 > 仮にすぐに離陸しなかったとしても、何らかのトークンや電子マネーを
 > 必要とする企画を次に思いついた人が、もう使える状態になっている。
 > リワードポイント、寄付トークン、ゲーム内通貨、アダルトサイト向けの
@@ -70,6 +82,7 @@ On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 （か購入）しなければならない、という普及の障壁も見える。閉じた
 系にはこの問題がないわけだから、明らかだ。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 有料メール送信にはすでに使える。送信ダイアログはサイズを変えられて、
 > 好きなだけ長いメッセージを入力できる。接続したときに直接送られる。
 > 受取人は取引をダブルクリックして全文を見る。読みきれないほどのメールが
@@ -80,6 +93,7 @@ On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 
 面白い応用だ (:
 
+<!-- speaker: Satoshi Nakamoto -->
 > 無料体験を提供している有料サブスクリプションサイトが、本契約を
 > 食い合わないように追加の proof-of-work を求めたい場合は、体験版に
 > ビットコイン料金を設定することもできる。

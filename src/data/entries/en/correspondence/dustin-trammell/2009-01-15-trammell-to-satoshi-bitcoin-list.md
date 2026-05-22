@@ -20,9 +20,16 @@ tags:
   - "hal-finney"
 relatedEntries:
   - "aftermath/2009-01-15-trammell-to-satoshi-bitcoin-list"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-15T13:15:23Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 ---
 
 On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > There's at least one node who's inbound IP keeps changing all the
 > time within the same class B.  Maybe every time the program is
 > run.  I wasn't expecting that.
@@ -32,11 +39,13 @@ coming from our static NAT address and my connection at home has had the
 IP that I gave you for at least 3 days now (that I've been transferring
 coins between them for test purposes).
 
+<!-- speaker: Satoshi Nakamoto -->
 > Do you mind if I CC the rest of this to bitcoin-list or
 > Cryptography?
 
 Sure, no problem.
 
+<!-- speaker: Satoshi Nakamoto -->
 > BTW, bitcoin-list is:
 > bitcoin-list@lists.sourceforge.net
 > Subscribe/unsubscribe page:
@@ -46,6 +55,7 @@ Sure, no problem.
 
 I'll join right now, thanks (:
 
+<!-- speaker: Satoshi Nakamoto -->
 > Hal sort of alluded to the possibility that it could be seen as a
 > long-odds investment.  I would be surprised if 10 years from now
 > we're not using electronic currency in some way, now that we know
@@ -57,6 +67,7 @@ node so quickly.  My systems aren't doing much of anything else while
 idle, so why not create BitCoins?  And if they're worth something
 someday...? Bonus!
 
+<!-- speaker: Satoshi Nakamoto -->
 > Even if it doesn't take off straight away, it's now available for
 > use by the next guy who comes up with a plan that needs some kind
 > of token or electronic currency.  It could get started in a closed
@@ -73,6 +84,7 @@ since they would first have to generate enough coins to support what
 they intend to do (or buy them from someone else).  A closed system
 obviously doesn't have that problem.
 
+<!-- speaker: Satoshi Nakamoto -->
 > It can already be used for pay-to-send e-mail.  The send dialog is
 > resizeable and you can enter as long of a message as you like.
 > It's sent directly when it connects.  The recipient doubleclicks
@@ -84,6 +96,7 @@ obviously doesn't have that problem.
 
 Interesting application (:
 
+<!-- speaker: Satoshi Nakamoto -->
 > Subscription sites that need some extra proof-of-work for their
 > free trial so it doesn't cannibalize subscriptions could charge
 > bitcoins for the trial.

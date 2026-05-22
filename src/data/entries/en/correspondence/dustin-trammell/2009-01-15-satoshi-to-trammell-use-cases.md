@@ -20,8 +20,15 @@ tags:
   - "vision"
 relatedEntries:
   - "aftermath/2009-01-15-satoshi-to-trammell-use-cases"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:28Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
+<!-- quote: q1 -->
 > I've had that address for a while though so hopefully my dhcp
 > client is being successful at renewing and not losing my address.
 > It does change from time to time, but that address should be good
@@ -42,6 +49,7 @@ Archives:
 http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
 
 
+<!-- speaker: Dustin Trammell -->
 > Dustin D. Trammell wrote:
 > > Satoshi Nakamoto wrote:
 > > You know, I think there were a lot more people interested in the 90's,

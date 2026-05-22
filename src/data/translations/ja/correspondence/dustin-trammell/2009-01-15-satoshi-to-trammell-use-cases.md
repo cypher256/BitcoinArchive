@@ -21,8 +21,16 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-15-satoshi-to-trammell-use-cases"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-13T18:40:28Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > 今のところ 24.28.79.95 だが、動的なので変わるかもしれない。
 > ただ、このアドレスは結構長く使えているので、こちらの DHCP クライアントが
 > 更新に成功してアドレスを失わずに済んでいるといいのだが。ときどき
@@ -43,6 +51,7 @@ http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
 http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
 
 
+<!-- speaker: Dustin Trammell -->
 > Dustin D. Trammell wrote:
 > > Satoshi Nakamoto wrote:
 > > 90 年代にはもっと多くの人が興味を持っていたと思う。だが、信頼された
