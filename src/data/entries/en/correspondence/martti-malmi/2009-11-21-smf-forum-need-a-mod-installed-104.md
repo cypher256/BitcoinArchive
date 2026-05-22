@@ -24,7 +24,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-103"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-21-smf-forum-need-a-mod-installed-103"
   - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
