@@ -25,12 +25,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-12T18:52:45Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 ダスティン・トランメルへのこの返信で、サトシはタイムスタンプサービスのリンクに感謝し、代替的なアプローチについて議論した。トランメルのクレジット欄に関する質問について、サトシはコインの成熟メカニズムを説明した：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > クレジット欄は成熟するまで0.00のままで、その後50.00になる。
 
