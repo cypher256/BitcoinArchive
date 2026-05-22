@@ -30,10 +30,17 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2009-01-12-first-bitcoin-transaction
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-08T20:54:55Z"
+    sourceEntryId: "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
 ---
 
 Sent from satoshi@vistomail.com on Thursday, January 8, 2009 at 20:54:55 PST — just hours after the public announcement on the Cryptography mailing list — Satoshi personally notified Hal Finney of the Bitcoin release:
 
+<!-- quote: q1 -->
 > Thought you'd like to know, the Bitcoin v0.1 release with EXE and full sourcecode is up on Sourceforge:
 > http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
 >

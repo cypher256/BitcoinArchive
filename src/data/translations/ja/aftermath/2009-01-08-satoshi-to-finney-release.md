@@ -30,12 +30,19 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2009-01-12-first-bitcoin-transaction
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-08T20:54:55Z"
+    sourceEntryId: "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 2009年1月8日木曜日、太平洋標準時20:54:55 に satoshi@vistomail.com から送信された。暗号学メーリングリストでの公開アナウンスからわずか数時間後、サトシは個人的にハル・フィニーにビットコインのリリースを通知した。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された:
 > http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
