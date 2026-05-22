@@ -20,9 +20,17 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-19-trammell-to-satoshi-ui-suggestion"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-19T11:02:37Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels"
 ---
 
 On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
 > 最初のデフォルトのアドレスには、作成時に「Your Address」と
 > ラベルが付く。
 > 
@@ -34,6 +42,7 @@ On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
 
 それなら筋が通る、たぶんそれが起きたのだろう。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 受信用アドレスへのラベル付けは分かりにくいが、他にどうすれば
 > いいかも分からない。単純な用途以上に使う人なら誰でも、支払い元ごとに
 > 受取アドレスを分けて作り、誰が支払っているのかを区別する必要がある。

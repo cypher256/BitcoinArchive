@@ -20,8 +20,16 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-19-satoshi-to-trammell-address-labels"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T18:09:32Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
 ---
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 >On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
 >> それを受け取ったのは、君の自宅のビットコインアドレスのはずだ。
 >> 送金元が誰なのかを知る方法はないので、できることはどのアドレスで

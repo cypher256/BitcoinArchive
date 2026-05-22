@@ -19,8 +19,15 @@ tags:
   - "address-book"
 relatedEntries:
   - "aftermath/2009-01-19-satoshi-to-trammell-address-labels"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-18T18:09:32Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
 ---
 
+<!-- quote: q1 -->
 >On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
 >> It should be your Bitcoin address at home that you received it
 >> with.  There's no way for it to know who it's from, so the best

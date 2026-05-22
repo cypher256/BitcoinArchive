@@ -19,15 +19,23 @@ tags:
   - "address-book"
 relatedEntries:
   - "aftermath/2009-01-19-trammell-to-satoshi-ui-suggestion"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-19T11:02:37Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels"
 ---
 
 On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
+<!-- quote: q1 -->
 > The first default one is labelled "Your Address" when it's created.
 > 
 > All the places where address book labels are set are where the user manually sets it.  The only time it automatically adds a label is a blank one when you send to a new address.  I guess you could have entered the label on an address you thought was mine but the software was confusing and you put it in the wrong place.
 
 That would make sense, I bet that's what happened.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Address book labels for receiving addresses is confusing but I'm not sure what else to do.  Anyone using it for more than just simple purposes would need to create different receiving addresses for each payer so they could tell who's paying them.  That concept doesn't have much analogy in the real world.
 
 I think had it said "Received with address: X" rather than just
