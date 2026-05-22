@@ -27,16 +27,24 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:14:27Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
 ---
 
 Trammell responded to Satoshi's request to CC the conversation publicly, confirming that the node with the changing IP was not him — his Bitcoin client at work used a static NAT address and his home IP had been stable for at least three days of testing transfers between the two.
 
 He agreed to have the conversation shared publicly and subscribed to bitcoin-list immediately. Trammell then revealed his investment-minded motivation for early mining, prompted by [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s public message:
 
+<!-- quote: q1 -->
 > Yes, I saw that message and was one of the other reasons I started up a node so quickly. My systems aren't doing much of anything else while idle, so why not create BitCoins? And if they're worth something someday...? Bonus!
 
 On Satoshi's micropayment use cases, Trammell raised a practical adoption barrier:
 
+<!-- speaker: Dustin Trammell -->
 > I can see how various types of sites that have a need for micropayments could use them, however I also see an impedement to adoption if they want to use an existing BitCoin peer group rather than a closed system since they would first have to generate enough coins to support what they intend to do (or buy them from someone else). A closed system obviously doesn't have that problem.
 
 This is notable as one of the earliest discussions of the Bitcoin bootstrapping problem — how to get enough liquidity into circulation for the system to function as a medium of exchange.

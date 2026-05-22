@@ -27,6 +27,12 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:14:27Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
 translationStatus: complete
 ---
 
@@ -35,6 +41,7 @@ translationStatus: complete
 
 会話の公開共有に同意し、すぐに bitcoin-list を購読した。続いてトランメルは、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の公開メッセージに触発された投資志向の早期マイニング動機を明かした。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > ああ、あのメッセージは見ていて、ノードをすぐに立ち上げた理由の一つでもある。俺のシステムはアイドル時にほとんど何もしていないんだから、ビットコインを生成しない手はないだろう？そしていつか価値が出たら……？ボーナスだ！
 
