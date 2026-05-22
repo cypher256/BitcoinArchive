@@ -22,12 +22,24 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-15-json-rpc-status-165"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2010-02-15-json-rpc-status-164"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q2"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-14-json-rpc-status-163"
 ---
 
-> <!-- quote: q1 -->
+<!-- quote: q1 -->
+> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> Don't you have an Ubuntu laptop you can test and compile on so you
 >>> don't have to toy with the vps?
 >>

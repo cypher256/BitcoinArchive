@@ -23,16 +23,29 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-15-json-rpc-status-165"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2010-02-15-json-rpc-status-164"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q2"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-14-json-rpc-status-163"
 ---
 
-<!-- speaker: Satoshi Nakamoto -->
-> <!-- quote: q1 -->
+<!-- quote: q1 -->
+> <!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
+>> <!-- speaker: Martti Malmi -->
+>> <!-- quote: q3 -->
+>>> <!-- speaker: Satoshi Nakamoto -->
 >>> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 >>> ノートパソコンを持っていないか？
-<!-- speaker: Martti Malmi -->
 >>
 >> はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！
 >> 本当に使いやすいです。
