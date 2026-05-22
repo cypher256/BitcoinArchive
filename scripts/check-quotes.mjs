@@ -610,8 +610,8 @@ function checkFile(filePath, locale) {
       violations.push({
         file: rel,
         check: 'blockquote-no-marker',
-        level: 'warn',
-        msg: `Line ${m.line}: blockquote "${m.text.trim()}" has no preceding <!-- quote: qN --> / <!-- speaker: ... --> / <!-- audit:quote-skip --> marker — 0522 plan target`,
+        level: 'error',
+        msg: `Line ${m.line}: blockquote "${m.text.trim()}" has no preceding <!-- quote: qN --> / <!-- speaker: ... --> / <!-- audit:quote-skip --> marker — 0522 plan Phase 2 enforced`,
       });
     }
   }
