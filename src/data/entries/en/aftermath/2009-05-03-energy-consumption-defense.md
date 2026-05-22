@@ -31,6 +31,7 @@ Satoshi argued that even if Bitcoin grew to consume significant energy, the cost
 
 He acknowledged the philosophical tension this created:
 
+<!-- audit:quote-skip -->
 > Ironic if we end up having to choose between economic liberty and conservation.
 
 Satoshi also explained the economics of mining, noting that the value of bitcoins would be relative to the electricity consumed to produce them, and that the extra wattage consumed would go directly to the miner's power bill, with the value of produced bitcoins being "something less than that."

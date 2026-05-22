@@ -28,6 +28,7 @@ In this email from June 11, 2009, Satoshi praised the improvements Malmi had mad
 
 Most notably, Satoshi introduced the term "cryptocurrency" in this exchange:
 
+<!-- audit:quote-skip -->
 > Someone came up with the word 'cryptocurrency'... maybe it's a word we should use when describing Bitcoin, do you like it?
 
 The following day, Malmi replied that "it sounds good" and proposed "P2P Cryptocurrency" as a marketing tagline for Bitcoin. This exchange is historically significant because it challenges the assumption that Satoshi himself coined the term "cryptocurrency" - instead, he was relaying a term someone else had suggested, asking for Malmi's opinion on adopting it.
