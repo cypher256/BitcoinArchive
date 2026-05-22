@@ -26,11 +26,16 @@ relatedEntries:
   - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
   - aftermath/2022-10-06-serhack-alternative-genesis-block
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
+quotes:
+  - id: "q1"
+    person: "The Times"
+    date: "2009-01-03"
 translationStatus: complete
 ---
 
 2009 年 1 月 3 日、サトシ・ナカモトはビットコインブロックチェーンの最初のブロック — ジェネシスブロックまたはブロック 0 — のパラメーターを定義し、v0.1 ソースに定数としてハードコードした。このブロックのコインベーストランザクションには、以下のテキストが埋め込まれていた：
 
+<!-- quote: q1 -->
 > The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 >
 > 財務相、銀行への 2 度目の救済へ
