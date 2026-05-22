@@ -435,11 +435,18 @@ blockquote[data-speaker="satoshi"] {
   font-style: italic;
   font-size: 0.9em;
   margin-top: 1.5em;
-  margin-bottom: -0.5em;
+  margin-bottom: 0.25em;
   color: var(--color-text-muted);
 }
 .quote-attribution a {
   color: var(--color-link);
+}
+/* Collapse the gap between the chip and its associated blockquote so
+   they read as a single attributed quote unit instead of two stacked
+   blocks. Without this, the blockquote's default margin-top would
+   re-open the visual gap. */
+.quote-attribution + blockquote {
+  margin-top: 0;
 }
 
 code {
