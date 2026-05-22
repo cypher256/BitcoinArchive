@@ -28,17 +28,11 @@ secondarySources:
 relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-08-20-satoshi-self-statements
-quotes:
-  - id: "q1"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-01-10"
-    sourceEntryId: "aftermath/2009-01-10-satoshi-to-finney-connections"
 ---
 
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:
 
-<!-- quote: q1 -->
+<!-- audit:quote-skip -->
 > Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult.
 
 This admission reveals that Satoshi was operating behind a firewall or NAT that blocked incoming TCP connections on port 8333, making his own node dependent on outgoing connections to other peers. This would have complicated debugging and testing the network in its infancy when there were only a handful of nodes. The phrase "from where I am" is examined more broadly as a [forensic reading of Satoshi's launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) alongside the cadence of his public activity during the launch week.

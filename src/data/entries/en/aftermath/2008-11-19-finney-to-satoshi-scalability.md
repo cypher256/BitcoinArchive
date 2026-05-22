@@ -29,7 +29,7 @@ quotes:
     person: "Hal Finney"
     personSlug: "hal-finney"
     date: "2008-11-19"
-    sourceEntryId: "aftermath/2008-11-19-finney-to-satoshi-scalability"
+    sourceEntryId: "correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability"
 ---
 
 This email was sent during the pre-release code review period, approximately two months before Bitcoin's public launch. Finney had been reviewing Satoshi's code and draft paper, and wrote to ask fundamental scalability questions:
