@@ -37,6 +37,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 <!-- 2010年12月の投稿。9 語のみ。個性ゼロの売買文体。口調チェック対象外 -->
+<!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
 > 招待1つ、2ドルで買う。DMで。
 <!-- /tone-skip -->

@@ -45,6 +45,7 @@ translationStatus: complete
 
 この決定は、2010年12月3日にサトシが[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)にメールで伝えた内容と一致している。開発の責任を誰が引き継ぐべきかと問われた際、サトシは次のように答えた：
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては私よりずっと上だ。
 

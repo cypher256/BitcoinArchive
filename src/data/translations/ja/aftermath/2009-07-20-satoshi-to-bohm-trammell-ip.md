@@ -28,6 +28,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 翌日のフォローアップで、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はデバッグ情報を提供した。
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 昨日から70.113.114.209に接続している。
 
