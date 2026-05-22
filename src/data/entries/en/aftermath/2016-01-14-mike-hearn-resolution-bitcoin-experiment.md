@@ -42,12 +42,14 @@ On January 14, 2016, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) — 
 
 In the post, Hearn declared:
 
+<!-- audit:quote-skip -->
 > "Bitcoin has failed."
 
 He announced that he had sold all of his bitcoins and was leaving the project entirely. At the time, Bitcoin was trading at approximately $400.
 
 **On why Bitcoin had failed:**
 
+<!-- audit:quote-skip -->
 > "What was meant to be a new, decentralised form of money that lacked 'systemically important institutions' and 'too big to fail' has become something even worse: a system completely controlled by just a handful of people."
 
 Hearn argued that an "entirely artificial capacity cap of one megabyte per block, put in place as a temporary kludge a long time ago, has not been removed," and that the failure to increase the block size had rendered Bitcoin incapable of scaling.
@@ -56,6 +58,7 @@ Hearn argued that an "entirely artificial capacity cap of one megabyte per block
 
 Hearn quoted Satoshi's response to early bandwidth concerns:
 
+<!-- audit:quote-skip -->
 > "The bandwidth might not be as prohibitive as you think … if the network were to get [as big as VISA], it would take several years, and by then, sending [the equivalent of] 2 HD movies over the Internet would probably not seem like a big deal."
 
 He also noted that Satoshi had told him directly that Bitcoin "never really hits a scale ceiling."
@@ -64,12 +67,15 @@ He also noted that Satoshi had told him directly that Bitcoin "never really hits
 
 Hearn described how Satoshi's departure left an unplanned governance vacuum:
 
+<!-- audit:quote-skip -->
 > "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), an early contributor."
 
 After praising Gavin's judgement — calling it one of the reasons Hearn had quit Google to work on Bitcoin full time — he added:
 
+<!-- audit:quote-skip -->
 > "Only one tiny problem: Satoshi never actually asked Gavin if he wanted the job, and in fact he didn't."
 
+<!-- audit:quote-skip -->
 > "So the first thing Gavin did was grant four other developers access to the code as well. These developers were chosen quickly in order to ensure the project could easily continue if anything happened to him. They were, essentially, whoever was around and making themselves useful at the time."
 
 **Bitcoin XT:**

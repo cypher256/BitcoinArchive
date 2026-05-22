@@ -35,6 +35,12 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - bip/2015-11-03-bip-0125
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
+quotes:
+  - id: "q1"
+    person: "Peter Todd"
+    personSlug: "peter-todd"
+    date: "2010-12-10T01:27:59Z"
+    sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 translationStatus: complete
 ---
 
@@ -48,9 +54,9 @@ BIP の Rationale（根拠）は、ナカモトのオリジナルの Bitcoin 実
 
 **2010年12月の接続：**
 
-<!-- speaker: Peter Todd -->
 2010年12月10日、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（当時[「retep」](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)として投稿）はサトシのトランザクション置換の説明に対して技術的な指摘で返信した：
 
+<!-- quote: q1 -->
 > 「もちろん、正確に言えば、2 つ目のトランザクションに手数料がある場合、入力と出力は *正確には* 一致しない」
 
 <!-- speaker: narrator -->

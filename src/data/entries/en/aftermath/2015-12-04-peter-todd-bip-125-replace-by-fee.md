@@ -35,6 +35,12 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - bip/2015-11-03-bip-0125
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
+quotes:
+  - id: "q1"
+    person: "Peter Todd"
+    personSlug: "peter-todd"
+    date: "2010-12-10T01:27:59Z"
+    sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 ---
 
 On December 4, 2015, David A. Harding and Peter Todd published BIP 125: "Opt-in Full Replace-by-Fee Signaling." The proposal established a standard for Bitcoin transactions to signal their willingness to be replaced by higher-fee versions while still unconfirmed — formalizing a concept that Satoshi Nakamoto had first described five years earlier.
@@ -47,6 +53,7 @@ The BIP's rationale explicitly traces the concept to Nakamoto's original Bitcoin
 
 On December 10, 2010, [Peter Todd](/BitcoinArchive/participants/peter-todd/) (then posting as ["retep"](/BitcoinArchive/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)) replied to Satoshi's description of transaction replacement with a technical correction:
 
+<!-- quote: q1 -->
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
 This was Todd's second-ever post on BitcoinTalk, made three days after registration. [Satoshi's last public forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later. Five years afterward, Todd formalized the very concept Satoshi had been describing.
