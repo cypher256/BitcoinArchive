@@ -14,6 +14,7 @@ tags: []
 translationStatus: complete
 ---
 [Deleted] Quote from: davidonpda on August 15, 2010, 10:41:29 PM
+<!-- audit:quote-skip -->
 > 74637でちょうど持っていると既に言った。
 >
 > サトシは74,000以前である必要があると言った。

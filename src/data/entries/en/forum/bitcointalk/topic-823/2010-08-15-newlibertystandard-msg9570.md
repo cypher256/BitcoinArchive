@@ -14,6 +14,7 @@ tags: []
 ---
 
 [Deleted] Quote from: davidonpda on August 15, 2010, 10:41:29 PM
+<!-- audit:quote-skip -->
 > I already said that I have it right at 74637.
 > 
 > Satoshi said it needs to be before 74,000
