@@ -70,16 +70,26 @@ function formatDate(date, locale) {
   // make the same source date display differently per host. The
   // frontmatter date field is stored as UTC, and the rest of the site
   // (EntryMeta / message-date via formatDateMaybeTime) renders UTC.
+  //
+  // Mirror formatDateMaybeTime from src/i18n/utils.ts: if the time
+  // component is exactly 00:00:00 UTC the source date is treated as
+  // "day only" and we omit the time, so a frontmatter value of
+  // "2011-06-14T00:00:00Z" does not render as a misleading "00:00 UTC".
+  const hasTime = d.getUTCHours() !== 0 || d.getUTCMinutes() !== 0 || d.getUTCSeconds() !== 0;
   if (locale === 'ja') {
-    return `${d.getUTCFullYear()}年${d.getUTCMonth() + 1}月${d.getUTCDate()}日 ${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')} UTC`;
+    const datePart = `${d.getUTCFullYear()}年${d.getUTCMonth() + 1}月${d.getUTCDate()}日`;
+    if (!hasTime) return datePart;
+    return `${datePart} ${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')} UTC`;
   }
   // EN: BitcoinTalk-style format, UTC anchored
   const months = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'];
+  const datePart = `${months[d.getUTCMonth()]} ${String(d.getUTCDate()).padStart(2, '0')}, ${d.getUTCFullYear()}`;
+  if (!hasTime) return datePart;
   const hours = d.getUTCHours();
   const ampm = hours >= 12 ? 'PM' : 'AM';
   const h12 = hours % 12 || 12;
-  return `${months[d.getUTCMonth()]} ${String(d.getUTCDate()).padStart(2, '0')}, ${d.getUTCFullYear()}, ${h12}:${String(d.getUTCMinutes()).padStart(2, '0')}:${String(d.getUTCSeconds()).padStart(2, '0')} ${ampm} UTC`;
+  return `${datePart}, ${h12}:${String(d.getUTCMinutes()).padStart(2, '0')}:${String(d.getUTCSeconds()).padStart(2, '0')} ${ampm} UTC`;
 }
 
 /**

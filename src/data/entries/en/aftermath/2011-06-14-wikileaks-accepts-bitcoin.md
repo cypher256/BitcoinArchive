@@ -29,7 +29,7 @@ relatedEntries:
 quotes:
   - id: "q1"
     person: "WikiLeaks"
-    date: "2011-06-14T00:00:00Z"
+    date: "2011-06-14T23:12:01Z"
 ---
 
 On June 14, 2011, WikiLeaks tweeted:

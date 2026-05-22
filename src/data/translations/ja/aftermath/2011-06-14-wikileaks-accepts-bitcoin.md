@@ -29,11 +29,11 @@ relatedEntries:
 quotes:
   - id: "q1"
     person: "WikiLeaks"
-    date: "2011-06-14T00:00:00Z"
+    date: "2011-06-14T23:12:01Z"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
-    date: "2010-12-05T00:00:00Z"
+    date: "2010-12-05T09:08:08Z"
     sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
   - id: "q3"
     person: "Julian Assange"
