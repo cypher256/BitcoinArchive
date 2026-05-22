@@ -41,4 +41,5 @@ It may only need more read caching.  It has to read randomly all over blk0001.d
 
 Someone should experiment with different Berkeley DB settings and see if there's something that makes the download substantially faster.  If something substantial is discovered, then we can work out the particulars.
 
+<!-- speaker: Jeff Garzik -->
 > Adding BDB records is simply appending to a log file, until you issue a checkpoint.  The checkpoint then updates the main database file.We checkpoint every 500 blocks.

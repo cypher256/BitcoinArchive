@@ -24,9 +24,15 @@ quotes:
     personSlug: "jeff-garzik"
     date: "2010-11-27T22:33:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-28-jgarzik-msg25058"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-11-26T17:32:01.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-26-re-rfc-ship-block-chain-1-74000-with-release-tarballs"
 ---
 
 Despite everything else said, the current next step is:
+<!-- quote: q3 -->
 > Someone should experiment with different Berkeley DB settings and see if there's something that makes the download substantially faster.  If something substantial is discovered, then we can work out the particulars.
 
 In particular, I suspect that more read caching might help a lot.
@@ -36,6 +42,7 @@ In particular, I suspect that more read caching might help a lot.
 
 Then something more specific was wrong.  That's not due to normal initial download time.  Without more details, it can't be diagnosed.  If it was due to slow download, did it speed up after 10-20 minutes when the next block broadcast should have made it switch to a faster source?  debug.log might have clues.  How fast is their Internet connection?  Was it steadily slow, or just slow down at one point?
 
+<!-- quote: q1 -->
 > We have the hashes for genesis block through block 74000 hardcoded (compiled) into bitcoin, so there's no reason why we shouldn't be able to automatically download a compressed zipfile of the block database from *anywhere*, unpack it, verify it, and start running.
 
 The 74000 checkpoint is not enough to protect you, and does nothing if the download is already past 74000.  -checkblocks does more, but is still easily defeated.  You still must trust the supplier of the zipfile.
@@ -47,6 +54,7 @@ If there was a "verify it" step, that would take as long as the current normal i
 
 80 bytes per header and no indexing work.  Might take 1 minute.
 
+<!-- quote: q2 -->
 > uncompressed data using a protocol (bitcoin P2P) that wasn't designed for bulk data transfer.
 
 The data is mostly hashes and keys and signatures that are uncompressible.
