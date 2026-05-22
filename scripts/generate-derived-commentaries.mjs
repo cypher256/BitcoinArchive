@@ -293,6 +293,13 @@ for (const pass of ['quote-source', 'related-entries']) {
     const commentaryJaTitle = requireJaTitle(commentaryId, 'commentary');
     if (!commentaryJaTitle) continue;
 
+    // Read the commentary's frontmatter date once; CommentaryLinks
+    // renders it as a left-anchor so wrapped titles on mobile don't
+    // visually merge with the next item.
+    const fileForDate = findSourceFile(EN_DIR, commentaryId);
+    const fmForDate = fileForDate ? extractFrontmatter(readFileSync(fileForDate, 'utf-8')) : null;
+    const commentaryDateValue = fmForDate ? readScalar(fmForDate, 'date') : '';
+
     const commentaryMeta = {
       id: commentaryId,
       type: meta.type,
@@ -300,6 +307,7 @@ for (const pass of ['quote-source', 'related-entries']) {
         en: meta.titleEn || '',
         ja: commentaryJaTitle,
       },
+      date: commentaryDateValue || '',
     };
 
     for (const primaryId of targets) {
@@ -349,18 +357,6 @@ if (issues.length > 0) {
 // Emit deterministic output.
 // ---------------------------------------------------------------------------
 
-// Per-primary list ordered by entry date ascending (oldest commentary
-// first). We need the commentary's date for that; pick it up from the
-// commentary's frontmatter at output time. Tiebreak by id for full
-// determinism.
-function commentaryDate(commentaryId) {
-  const file = findSourceFile(EN_DIR, commentaryId);
-  if (!file) return '';
-  const fm = extractFrontmatter(readFileSync(file, 'utf-8'));
-  if (!fm) return '';
-  return readScalar(fm, 'date') || '';
-}
-
 const output = {};
 // Order per primary:
 //   1. via === "quote-source" before via === "related-entries"
@@ -377,9 +373,7 @@ for (const primaryId of primaryIds) {
   list.sort((a, b) => {
     const vDiff = VIA_ORDER[a.via] - VIA_ORDER[b.via];
     if (vDiff !== 0) return vDiff;
-    const da = commentaryDate(a.id);
-    const db = commentaryDate(b.id);
-    return da.localeCompare(db) || a.id.localeCompare(b.id);
+    return (a.date || '').localeCompare(b.date || '') || a.id.localeCompare(b.id);
   });
   output[primaryId] = list;
 }

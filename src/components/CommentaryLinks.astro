@@ -20,7 +20,7 @@
  * generator fails the build if any mirror is missing), so this
  * component does not implement a title fallback.
  */
-import { useTranslations, localePath } from '../i18n/utils';
+import { useTranslations, formatDate, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 import commentariesData from '../data/derived-commentaries.json';
 
@@ -28,6 +28,7 @@ interface Commentary {
   id: string;
   type: string;
   title: { en: string; ja: string };
+  date: string;
   via: string;
 }
 
@@ -43,24 +44,37 @@ const MAX_VISIBLE = 5;
 interface Props {
   lang: Lang;
   entryId: string;
+  entryType: string;
 }
 
-const { lang, entryId } = Astro.props;
+const { lang, entryId, entryType } = Astro.props;
 const t = useTranslations(lang);
 
 const list = commentariesMap[entryId] ?? [];
 const visible = list.slice(0, MAX_VISIBLE);
 const hidden = list.slice(MAX_VISIBLE);
 const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hidden.length));
+
+// Per-type heading: "Commentary on this BIP" reads better on a BIP page
+// than the generic "Commentary on this entry". The slug template guards
+// by primary-source type before mounting this component, so the typed
+// key is always registered in the i18n map; the generic key remains as
+// a defensive fallback (useTranslations returns undefined if neither the
+// requested lang nor the default lang has the key).
+const typedHeading = t(`commentary.heading.${entryType}` as any);
+const heading = typedHeading ?? t('commentary.heading' as any);
 ---
 
 {list.length > 0 && (
   <aside class="entry-commentaries" id="commentaries">
-    <span class="commentaries-label">📖 {t('commentary.heading' as any)}</span>
+    <span class="commentaries-label">📖 {heading}</span>
     <ul>
       {visible.map((c) => (
         <li>
-          <a href={localePath(`/entries/${c.id}/`, lang)}>{c.title[lang]}</a>
+          <a href={localePath(`/entries/${c.id}/`, lang)}>
+            <time datetime={c.date}>{formatDate(new Date(c.date), lang)}</time>
+            <span class="commentary-title">{c.title[lang]}</span>
+          </a>
         </li>
       ))}
     </ul>
@@ -70,7 +84,10 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hidden.
         <ul>
           {hidden.map((c) => (
             <li>
-              <a href={localePath(`/entries/${c.id}/`, lang)}>{c.title[lang]}</a>
+              <a href={localePath(`/entries/${c.id}/`, lang)}>
+                <time datetime={c.date}>{formatDate(new Date(c.date), lang)}</time>
+                <span class="commentary-title">{c.title[lang]}</span>
+              </a>
             </li>
           ))}
         </ul>
@@ -102,16 +119,49 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hidden.
     padding: 0;
     margin: 0;
   }
+  /* Generous vertical spacing so that wrapped titles on narrow
+     viewports don't visually merge with the next item. The date
+     prefix also anchors each row to a consistent left edge. */
   .entry-commentaries li {
-    margin: 0.3rem 0;
+    margin: 0.65rem 0;
   }
   .entry-commentaries a {
-    color: var(--color-link);
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
     text-decoration: none;
-    line-height: 1.4;
+    color: inherit;
+    line-height: 1.5;
   }
-  .entry-commentaries a:hover {
+  .entry-commentaries time {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 6.5rem;
+  }
+  .commentary-title {
+    color: var(--color-link);
+    font-size: 0.95rem;
+  }
+  .entry-commentaries a:hover .commentary-title {
     text-decoration: underline;
+  }
+  @media (max-width: 480px) {
+    /* On narrow screens stack the date above the title so the title
+       gets the full content width; date stays a clear left-edge
+       anchor that visually separates each entry. */
+    .entry-commentaries a {
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+    .entry-commentaries time {
+      min-width: 0;
+    }
+    .entry-commentaries li {
+      margin: 0.85rem 0;
+    }
   }
   .commentaries-more {
     margin-top: 0.5rem;

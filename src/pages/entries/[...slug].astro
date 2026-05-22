@@ -141,7 +141,7 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
     </header>
 
     {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document'].includes(entry.data.type) && (
-      <CommentaryLinks lang={lang} entryId={entry.id} />
+      <CommentaryLinks lang={lang} entryId={entry.id} entryType={entry.data.type} />
     )}
 
     {entry.data.editorNote && (
