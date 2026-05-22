@@ -26,12 +26,19 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:03:34Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification"
 translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
 トランメルはセキュリティに関する議論を継続し、ビットコインアドレスは IP ベースの送金に比べて優位性があると主張した。複数の独立したチャネルを通じて検証できるためである。
 
+<!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 > 確かにその通りだが、ビットコインアドレスを使う利点は、2人が複数の異なるチャネルを通じてアドレスを検証できることだ。友人が俺のウェブサイトからアドレスを取得して何かおかしいと思ったら、電話やIM、メールなどでアドレスを確認できる。攻撃者はその場合、音声を含むあらゆる通信チャネルで俺のアドレスを悪意のあるものに差し替えなければならなくなるが、それは至難の業だ。
 
