@@ -28,6 +28,7 @@ You should use at least some priority in case a flood comes along before the nex
 
 As long as all dependencies have at least 1 conf, if the transaction doesn't have enough priority at first, the dependencies will age until it does.
 
+<!-- speaker: ByteCoin -->
 > Gaming the system  by including 1000 or so recently turned over BTC to bump the priority as described in my post above still works of course!
 
 Or managing how much priority you spend on a transaction.  The software would have to know your future plans to know whether to spend your priority now or save it for later.  I don't think we'll need to get into that much detail though.  There's a wide enough difference between normal users and flooders.

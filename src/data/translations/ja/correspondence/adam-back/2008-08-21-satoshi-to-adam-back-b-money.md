@@ -25,12 +25,19 @@ secondarySources:
   - name: "COPA 対 Wright 裁判証拠"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back の第二証人陳述書 (文書 C/21) に完全な 5 通のメールチェーンが含まれている。"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2008-08-21T12:55:59Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
 ---
 
 ありがとう、 b-money のページは知らなかったが、 私のアイデアはまさにその地点から始まっている。 引用できるよう、 公開年を確認するために本人にメールしてみる。
 
 私のシステムが新たに加える主な要素は、 プルーフ・オブ・ワークを分散型タイムスタンプサーバの支えにも使うことだ。 ユーザが自分のために新しいコインを生成するためにプルーフ・オブ・ワークを行っている間、 同じプルーフ・オブ・ワークがネットワークのタイムスタンプも支えている。 Usenet の代わりとして。
 
+<!-- quote: q1 -->
 > Adam
 >
 > On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com

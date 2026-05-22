@@ -24,12 +24,19 @@ secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back's Second Witness Statement (document C/21) included the complete five-email chain."
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2008-08-21T12:55:59Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
 ---
 
 Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.  I'll e-mail him to confirm the year of publication so I can credit him.
 
 The main thing my system adds is to also use proof-of-work to support a distributed timestamp server.  While users are generating proof-of-work to make new coins for themselves, the same proof-of-work is also supporting the network timestamping.  This is instead of Usenet.
 
+<!-- quote: q1 -->
 > Adam
 >
 > On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com
