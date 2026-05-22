@@ -44,6 +44,12 @@ secondarySources:
 relatedEntries:
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - aftermath/2011-04-20-forbes-crypto-currency
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-12-05T09:08:08Z"
+    sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
 translationStatus: complete
 ---
 
@@ -52,7 +58,7 @@ translationStatus: complete
 
 **ビットコインへの初期の評価：**
 
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)（b-moneyの発明者）はビットコインを「非常に重要」と呼び、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)（ビットゴールドの考案者）は「世界への偉大な貢献」と称え、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（RPOWを手がけた著名な暗号学者）は「世界を変える可能性がある」と述べた。
 
 **初期コミュニティの精神：**
@@ -62,75 +68,74 @@ translationStatus: complete
 
 **サトシの正体について：**
 
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > ナカモトは一人の人間ではなく、不可解な目的を持つ謎のグループ——Googleのチーム、あるいは国家安全保障局（NSA）——ではないかという説も浮上した。
 
-<!-- speaker: Laszlo Hanyecz -->
 ラズロ・ハニエツ：
 
+<!-- audit:quote-skip -->
 > 「サトシっていう人とメールを何通かやり取りしたんだけどさ。本物の人間じゃないような感じがずっとしてたんだよね。返信も2週間おきくらいで、たまに誰かがチェックしてるような感じだった。ビットコインって、一人で作ったにしてはよくできすぎてるんだよ」
 
 **[サトシの Wikileaks への嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010年12月5日）：**
 
-<!-- speaker: Satoshi Nakamoto -->
 サトシ・ナカモト：
 
+<!-- quote: q1 -->
 > 「違う、挑発するな。プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。ビットコインはまだ小さなベータコミュニティであり、黎明期にある。集まるのは小銭程度だ。それなのに、もたらす火種は、この段階で我々を破壊しかねない」
 
 **サトシの消失：**
 
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > そして、現れた時と同じくらい唐突に、ナカモトは姿を消した。
 
 <!-- speaker: narrator -->
 ウォレスは、サトシが最後まで連絡を取り合っていた数少ない人物の一人がアンドレセンだったと記した。2011年4月26日、アンドレセンは開発者仲間にこう伝えた。
 
-<!-- speaker: Gavin Andresen -->
 ギャビン・アンドレセン：
 
+<!-- audit:quote-skip -->
 > 「今朝サトシから、ビットコインについて公に話す際には『謎の創設者』という点をあまり強調しないようにしたほうがいい、と提案があった」
 
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > その後、ナカモトはアンドレセンのメールにすら返信しなくなった。ビットコイナーたちは嘆くように問うた。なぜ彼は去ったのか。だがその頃には、彼の創造物は独自の生命を持ち始めていた。
 
 **サトシの[コーディングスタイル](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と年齢：**
 
-<!-- speaker: Amir Taaki -->
 アミール・ターキ：
 
+<!-- audit:quote-skip -->
 > 「彼の記法スタイルは80年代後半から90年代初頭に流行ったものだ。おそらく50歳前後、プラスマイナス10歳だろう」
 
-<!-- speaker: Dan Kaminsky -->
 ダン・カミンスキー：
 
+<!-- audit:quote-skip -->
 > 「サトシは金融機関の小さなチームだと思う。直感的にそう感じる。クオンツが友人の何人かと組んでやったのだろう」
 
 **神義論的問い：**
 
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > しかし、パラノイアと内紛の下に、もっと脆いものが潜んでいた。神義論的ともいえる失望だ。ビットコイナーたちが本当に問うていたのはこうだった——なぜナカモトはこの世界を創り出しておきながら、見捨てたのか。
 
 **信頼とセキュリティの破綻：**
 
-<!-- speaker: Jeff Garzik -->
 [ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)：
 
+<!-- audit:quote-skip -->
 > 「仮想通貨なら、インターネット上の見知らぬ相手を信用できると勘違いしている人がいる」
 
-<!-- speaker: Jeff Garzik -->
 ガージック、マイニングゴールドラッシュの終焉について：
 
+<!-- audit:quote-skip -->
 > 「高い電気代と熱気と騒音にうんざりし始めている」
 
 **ステファン・トーマスによるタイムスタンプ分析：**
 
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > スイスのコーダーでコミュニティの活発なメンバーだったステファン・トーマスが、ナカモトの500件以上のフォーラム投稿のタイムスタンプをグラフ化した。グラフは、グリニッジ標準時の午前5時から11時の間に投稿がほぼ消滅することを示していた。
 
 **締めくくり——ガージック、サトシの正体について：**
 
-<!-- speaker: Jeff Garzik -->
-<!-- speaker: narrator -->
+<!-- audit:quote-skip -->
 > だがガージックは言う。最も熱心なビットコイナーたちは、ナカモトを追うのをやめた。「本当にどうだっていい」。重要なのはコードの背後にいる個人ではなく、コードそのものだ。ビットコイナーたちが盗まれ、騙され、見捨てられてきたとしても、コードだけは真実であり続けた。
 
 *[編者注：最後の一節はガージックの直接引用（「本当にどうだっていい」）とウォレス記者自身の記述が融合している。「彼は言う」以降の文はウォレスの地の文であり、ガージックの直接の発言ではない。]*

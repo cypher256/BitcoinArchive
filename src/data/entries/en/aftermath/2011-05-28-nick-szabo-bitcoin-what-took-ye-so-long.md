@@ -33,6 +33,7 @@ relatedEntries:
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
 ---
 
+<!-- audit:quote-skip -->
 > While the security technology is very far from trivial, the "why" was by far the biggest stumbling block -- nearly everybody who heard the general idea thought it was a very bad idea.
 >
 > The short answer about why it took so long is that the bit gold/Bitcoin ideas were nowhere remotely close to being as obvious as gwern suggests.

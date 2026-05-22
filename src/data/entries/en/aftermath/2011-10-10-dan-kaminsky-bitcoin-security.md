@@ -34,6 +34,7 @@ relatedEntries:
 
 *From "The Crypto-Currency" by Joshua Davis, The New Yorker, October 10, 2011:*
 
+<!-- audit:quote-skip -->
 > Dan Kaminsky, a leading Internet-security researcher, investigated Bitcoin's code — roughly 31,000 lines at the time.
 >
 > "When I first looked at the code, I was sure I was going to be able to break it," Kaminsky said.

@@ -44,12 +44,19 @@ secondarySources:
 relatedEntries:
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - aftermath/2011-04-20-forbes-crypto-currency
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-12-05T09:08:08Z"
+    sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
 ---
 
 In November 2011, journalist Benjamin Wallace published "The Rise and Fall of Bitcoin" in Wired magazine (issue 19.12) — one of the earliest major feature articles on Bitcoin in mainstream media. The article traced Bitcoin's entire arc to date: from Satoshi Nakamoto's [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/), through the mining boom and price explosion, to the hacks, scams, and disillusionment that followed.
 
 **On early praise for Bitcoin:**
 
+<!-- audit:quote-skip -->
 > [Wei Dai](/BitcoinArchive/participants/wei-dai/), inventor of b-money, calls it "very significant"; [Nick Szabo](/BitcoinArchive/participants/nick-szabo/), who created bit gold, hails bitcoin as "a great contribution to the world"; and [Hal Finney](/BitcoinArchive/participants/hal-finney/), the eminent cryptographer behind RPOW, says it's "potentially world-changing."
 
 **On early community spirit:**
@@ -58,56 +65,69 @@ The article described how [Gavin Andresen](/BitcoinArchive/participants/gavin-an
 
 **On Satoshi's identity:**
 
+<!-- audit:quote-skip -->
 > Perhaps, it was suggested, Nakamoto wasn't one man but a mysterious group with an inscrutable purpose—a team at Google, maybe, or the National Security Agency.
 
 Laszlo Hanyecz:
 
+<!-- audit:quote-skip -->
 > "I exchanged some emails with whoever Satoshi supposedly is. I always got the impression it almost wasn't a real person. I'd get replies maybe every two weeks, as if someone would check it once in a while. Bitcoin seems awfully well designed for one person to crank out."
 
 **On [Satoshi's Wikileaks plea](/BitcoinArchive/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/) (December 5, 2010):**
 
+<!-- quote: q1 -->
 > "No, don't 'bring it on.' The project needs to grow gradually so the software can be strengthened along the way. I make this appeal to Wikileaks not to try to use bitcoin. Bitcoin is a small beta community in its infancy. You would not stand to get more than pocket change, and the heat you would bring would likely destroy us at this stage."
 
 **On Satoshi's disappearance:**
 
+<!-- audit:quote-skip -->
 > Then, as unexpectedly as he had appeared, Nakamoto vanished.
 
 Wallace described how Andresen was one of the last people Satoshi communicated with. On April 26, 2011, Andresen told fellow coders:
 
+<!-- audit:quote-skip -->
 > "Satoshi did suggest this morning that I (we) should try to de-emphasize the whole 'mysterious founder' thing when talking publicly about bitcoin."
 
+<!-- audit:quote-skip -->
 > Then Nakamoto stopped replying even to Andresen's emails. Bitcoiners wondered plaintively why he had left them. But by then his creation had taken on a life of its own.
 
 **On Satoshi's [coding style](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and age:**
 
 Amir Taaki:
 
+<!-- audit:quote-skip -->
 > "His style of notation was popular in the late '80s and early '90s. Maybe he's around 50, plus or minus 10 years."
 
 Dan Kaminsky:
 
+<!-- audit:quote-skip -->
 > "I suspect Satoshi is a small team at a financial institution. I just get that feeling. He's a quant who may have worked with some of his friends."
 
 **On the theodical question:**
 
+<!-- audit:quote-skip -->
 > And yet, unmistakably, beneath the paranoia and infighting lurked something more vulnerable, an almost theodical disappointment. What bitcoiners really seemed to be asking was, why had Nakamoto created this world only to abandon it?
 
 **On trust and security failures:**
 
 [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/):
 
+<!-- audit:quote-skip -->
 > "People have the mistaken impression that virtual currency means you can trust a random person over the Internet."
 
 Garzik on the end of the mining gold rush:
 
+<!-- audit:quote-skip -->
 > "People are getting sick of the high electric bills, the heat, and the loud fans."
 
 **On Stefan Thomas's timestamp analysis:**
 
+<!-- audit:quote-skip -->
 > Stefan Thomas, a Swiss coder and active community member, graphed the time stamps for each of Nakamoto's 500-plus bitcoin forum posts; the resulting chart showed a steep decline to almost no posts between the hours of 5 am and 11 am Greenwich Mean Time.
 
 **Closing — Garzik on Satoshi's identity:**
 
+<!-- audit:quote-skip -->
 > But Garzik, the developer, says that the most dedicated bitcoiners have stopped trying to hunt down Nakamoto. "We really don't care," he says. It's not the individuals behind the code who matter, but the code itself. And while people have stolen and cheated and abandoned the bitcoiners, the code has remained true.
 
 *[Editor: The final passage blends Garzik's direct quote ("We really don't care") with Wallace's own journalistic reflection. The sentences after "he says" are Wallace's narration, not Garzik's direct words.]*
