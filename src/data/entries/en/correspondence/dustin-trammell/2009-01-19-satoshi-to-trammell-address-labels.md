@@ -25,10 +25,17 @@ quotes:
     personSlug: "dustin-trammell"
     date: "2009-01-18T18:09:32Z"
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-18T11:01:09Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
 <!-- quote: q1 -->
 >On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+> <!-- quote: q2 -->
 >> It should be your Bitcoin address at home that you received it
 >> with.  There's no way for it to know who it's from, so the best
 >> it can do is tell which of your addresses it was received on.

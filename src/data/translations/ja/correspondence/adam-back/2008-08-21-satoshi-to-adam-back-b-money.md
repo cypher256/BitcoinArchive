@@ -31,6 +31,12 @@ quotes:
     personSlug: "adam-back"
     date: "2008-08-21T12:55:59Z"
     sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-20T17:30:39Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation"
 ---
 
 ありがとう、 b-money のページは知らなかったが、 私のアイデアはまさにその地点から始まっている。 引用できるよう、 公開年を確認するために本人にメールしてみる。
@@ -42,4 +48,5 @@ quotes:
 >
 > On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com
 > <satoshi@anonymousspeech.com> wrote:
+> <!-- quote: q2 -->
 >> あなたの Hashcash 論文を参考文献として引用する論文をリリースする準備をしているのだが、 引用の表記が正しいか確認したい。

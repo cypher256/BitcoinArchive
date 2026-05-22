@@ -26,11 +26,18 @@ quotes:
     personSlug: "dustin-trammell"
     date: "2009-01-18T18:09:32Z"
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-18T11:01:09Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
 <!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
 >On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+> <!-- quote: q2 -->
 >> それを受け取ったのは、君の自宅のビットコインアドレスのはずだ。
 >> 送金元が誰なのかを知る方法はないので、できることはどのアドレスで
 >> 受け取ったかを表示することくらいだ。複数のアドレスを作って、

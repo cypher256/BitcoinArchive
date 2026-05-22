@@ -30,6 +30,12 @@ quotes:
     personSlug: "adam-back"
     date: "2008-08-21T12:55:59Z"
     sourceEntryId: "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
+  - id: "q2"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-20T17:30:39Z"
+    sourceEntryId: "correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation"
 ---
 
 Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.  I'll e-mail him to confirm the year of publication so I can credit him.
@@ -41,4 +47,5 @@ The main thing my system adds is to also use proof-of-work to support a distribu
 >
 > On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com
 > <satoshi@anonymousspeech.com> wrote:
+> <!-- quote: q2 -->
 >> I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.
