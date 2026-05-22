@@ -77,6 +77,7 @@ The phrase "reference implementation" appears in some contemporary writeups but 
 
 [Pull request #3408](https://github.com/bitcoin/bitcoin/pull/3408) was opened by [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) (handle: laanwj) and merged December 16, 2013. The stated motivation in the PR and in the subsequent 0.9.0 release notes is identical:
 
+<!-- audit:quote-skip -->
 > "To reduce confusion between Bitcoin-the-network and Bitcoin-the-software we have renamed the reference client to Bitcoin Core."
 
 — bitcoin.org, [Bitcoin Core 0.9.0 release notes](https://bitcoin.org/en/release/v0.9.0), March 19, 2014
@@ -143,6 +144,7 @@ The interpretive reading above is corroborated, in different registers, by three
 
 [In his January 2016 departure essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), Hearn writes:
 
+<!-- audit:quote-skip -->
 > "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to Gavin Andresen, an early contributor."
 
 The phrasing is informative. Hearn — writing two years after the rebrand — feels the need to flag the name as a recent label rather than treating it as the software's identity. By 2016 the name had become operative enough that Hearn is conscious of using a label that did not exist in 2010-2013.

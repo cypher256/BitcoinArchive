@@ -171,8 +171,10 @@ Lopp's 2023 analysis and Peter Miller's 2026 follow-up add four further structur
 
 In March 2013, Finney published [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) on BitcoinTalk — written from late-stage ALS, with eye-tracking software, a year before his death. The essay describes his interactions with Satoshi consistently in the third person:
 
+<!-- audit:quote-skip -->
 > Today, Satoshi's true identity has become a mystery. But at the time, I thought I was dealing with a young man of Japanese ancestry who was very smart and sincere. I've had the good fortune to know many brilliant people over the course of my life, so I recognize the signs.
 
+<!-- audit:quote-skip -->
 > I think I was the first person besides Satoshi to run bitcoin.
 
 For the hypothesis to be true, this essay would have to be a sustained self-deception written from a hospital bed by a dying man, addressed to a Bitcoin community he had been part of for four years, with no audience benefit and no plausible motive. The simpler reading: Finney is recalling Satoshi as a person he interacted with — someone whose identity remained a mystery to him as well.

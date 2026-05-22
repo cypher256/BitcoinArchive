@@ -74,6 +74,7 @@ translationStatus: complete
 
 [プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) は[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/) (ハンドル名: laanwj) が起票し、2013 年 12 月 16 日にマージされた。PR 本文と続く 0.9.0 リリースノートに記された動機は同一である。
 
+<!-- audit:quote-skip -->
 > 「Bitcoin というネットワークと Bitcoin というソフトウェアの間の混乱を減らすために、リファレンスクライアントを Bitcoin Core に改名した」
 
 — bitcoin.org, [Bitcoin Core 0.9.0 リリースノート](https://bitcoin.org/en/release/v0.9.0), 2014 年 3 月 19 日
@@ -140,6 +141,7 @@ gantt
 
 [2016 年 1 月の離脱記事](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)でハーンはこう書いている。
 
+<!-- audit:quote-skip -->
 > 「サトシが去ったとき、彼は現在 Bitcoin Core と呼んでいるプログラムの手綱を、初期の貢献者の一人であるギャビン・アンドレセンに引き渡した」
 
 この言い回しは示唆に富む。改名から 2 年後の 2016 年に書いているハーンは、「現在 Bitcoin Core と呼んでいる」 と但し書きを付ける必要を感じている — ソフトウェアそのものの同一性として扱っていない。2016 年時点で、この名称は十分に効力を持っており、ハーンは 2010〜2013 年に存在しなかったラベルを使っていることを意識している。

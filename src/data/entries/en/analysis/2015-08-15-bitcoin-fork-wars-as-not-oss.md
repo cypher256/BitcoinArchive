@@ -83,6 +83,7 @@ Satoshi left more than four years before the public-fork phase opened. The dispu
 
 There was no public successor announcement, no legal entity holding the project, and no formal handover document. The closest thing to a handover, on Hearn's later account, was ad-hoc:
 
+<!-- audit:quote-skip -->
 > "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to Gavin Andresen, an early contributor. ... Only one tiny problem: Satoshi never actually asked Gavin if he wanted the job, and in fact he didn't."
 >
 > — Mike Hearn, ["The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) (January 14, 2016)
