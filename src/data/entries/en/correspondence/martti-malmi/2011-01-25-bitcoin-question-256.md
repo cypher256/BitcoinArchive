@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2011-01-25T07:25:12Z"
     sourceEntryId: "correspondence/martti-malmi/2011-01-25-bitcoin-question-255"
 ---
 

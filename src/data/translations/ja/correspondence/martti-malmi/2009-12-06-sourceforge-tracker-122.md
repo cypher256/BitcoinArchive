@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2009-12-03T07:46:50Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-03-bitcoinorg-120"
   - id: "q2"
     parent: "q1"

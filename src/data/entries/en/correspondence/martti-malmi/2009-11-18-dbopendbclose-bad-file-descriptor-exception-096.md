@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2009-11-18T01:50:24Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-094"
   - id: "q2"
     parent: "q1"

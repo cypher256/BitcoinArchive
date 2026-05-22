@@ -22,6 +22,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2009-02-22T17:47:52.000Z"
     sourceEntryId: "emails/bitcoin-list/v015-released/2009-02-22-re-bitcoin-v0-1-5-released"
   - id: "q2"
     parent: "q1"

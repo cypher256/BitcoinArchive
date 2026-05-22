@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    date: "2010-02-22T20:17:42Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-22-non-gui-option-168"
   - id: "q2"
     parent: "q1"

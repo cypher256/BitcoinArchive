@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2009-12-25T13:25:43Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-25-bitcoin-stuff-137"
   - id: "q2"
     parent: "q1"

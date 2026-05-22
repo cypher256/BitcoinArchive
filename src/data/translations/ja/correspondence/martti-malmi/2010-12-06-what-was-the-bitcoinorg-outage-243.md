@@ -25,6 +25,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2010-12-06T11:33:01Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-06-what-was-the-bitcoinorg-outage-242"
   - id: "q2"
     parent: "q1"

@@ -24,6 +24,7 @@ quotes:
   - id: "q1"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    date: "2010-02-12T10:06:43Z"
     sourceEntryId: "correspondence/martti-malmi/2010-02-12-translation-159"
   - id: "q2"
     parent: "q1"

@@ -23,6 +23,7 @@ quotes:
   - id: "q1"
     person: "Martti Malmi"
     personSlug: "martti-malmi"
+    date: "2010-07-24T14:38:53Z"
     sourceEntryId: "correspondence/martti-malmi/2010-07-24-donation-217"
   - id: "q2"
     parent: "q1"
