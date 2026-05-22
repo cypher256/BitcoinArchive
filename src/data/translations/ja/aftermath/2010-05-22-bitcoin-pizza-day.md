@@ -37,20 +37,36 @@ relatedEntries:
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Laszlo Hanyecz"
+    personSlug: "laszlo-hanyecz"
+    date: "2010-05-18"
+    sourceEntryId: "forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original"
+  - id: "q2"
+    person: "Laszlo Hanyecz"
+    personSlug: "laszlo-hanyecz"
+    date: "2010-05-22"
+    sourceEntryId: "forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195"
 ---
 
 2010年5月18日、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)は BitcoinTalk フォーラムに投稿した：
 
+<!-- quote: q1 -->
+<!-- speaker: Laszlo Hanyecz -->
 > 「ピザ2枚と引き換えに10,000ビットコイン支払うよ。ラージサイズ2枚くらいで、次の日に残りを食べられるようにしたいんだよね。残りをちょっとずつ食べるのが好きなんだよ。」
 
 2010年5月22日、19 歳のジェレミー・スターディヴァント（フォーラムハンドル「jercos」）がこの申し出を受けた。彼は Papa John's からラージピザ 2枚を注文し、フロリダ州ジャクソンビルのハニエツの自宅に配達させ、10,000 BTC を受け取った。ハニエツはこう報告した。
 
+<!-- quote: q2 -->
+<!-- speaker: Laszlo Hanyecz -->
 > 「1 万ビットコインでピザの取引、ちゃんとうまくいったから、ちょっと報告」
 
 当時の 10,000 BTC は約 41 ドルだった。これはビットコインによる最初の物理的商品の購入として知られている。それ以前のビットコイン取引はデジタルのみ — 為替レート計算や P2P 送金 — だった。ピザ取引は、ビットコインが実世界の交換媒体として機能できることを証明した。
 
 ハニエツは [GPU マイニング](/BitcoinArchive/ja/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/)の先駆者であり、夏の間もビットコインでピザを注文し続け、合計約 79,000 BTC を使った。1 万 BTC が数千万ドルの価値を持つようになった後年、Cointelegraph の取材で当時の取引を後悔しているか問われた際、ハニエツはこう答えた。
 
+<!-- audit:quote-skip -->
 > 「いや、後悔はしてないよ。あんなふうにビットコインの初期の歴史に関われたのは、すごいことだったと思うんだよね。ピザの話が広まってさ、誰でも『えっ、そんな金額使ったの！』って感じで身近に思える。それが面白い話になってるんだ」
 
 5月22日は現在、世界中のビットコインコミュニティで毎年「ビットコインピザデー」として祝われている。

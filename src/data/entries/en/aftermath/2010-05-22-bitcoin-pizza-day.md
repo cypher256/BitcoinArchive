@@ -36,18 +36,34 @@ relatedEntries:
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
+quotes:
+  - id: "q1"
+    person: "Laszlo Hanyecz"
+    personSlug: "laszlo-hanyecz"
+    date: "2010-05-18"
+    sourceEntryId: "forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original"
+  - id: "q2"
+    person: "Laszlo Hanyecz"
+    personSlug: "laszlo-hanyecz"
+    date: "2010-05-22"
+    sourceEntryId: "forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195"
 ---
 
 On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted on the BitcoinTalk forum:
 
+<!-- quote: q1 -->
 > "I'll pay 10,000 bitcoins for a couple of pizzas... like maybe 2 large ones so I have some left over for the next day. I like having left over pizza to nibble on later."
 
-On May 22, 2010, 19-year-old Jeremy Sturdivant (forum handle "jercos") accepted the offer. He ordered two large pizzas from Papa John's, had them delivered to Hanyecz's home in Jacksonville, Florida, and received 10,000 BTC in return. Hanyecz confirmed: "I just want to report that I successfully traded 10,000 bitcoins for pizza."
+On May 22, 2010, 19-year-old Jeremy Sturdivant (forum handle "jercos") accepted the offer. He ordered two large pizzas from Papa John's, had them delivered to Hanyecz's home in Jacksonville, Florida, and received 10,000 BTC in return. Hanyecz confirmed:
+
+<!-- quote: q2 -->
+> "I just want to report that I successfully traded 10,000 bitcoins for pizza."
 
 At the time, 10,000 BTC was worth approximately $41. This was the first known purchase of a physical good with Bitcoin. Previous Bitcoin transactions had been digital-only — exchange rate calculations and peer-to-peer transfers. The pizza transaction proved that Bitcoin could function as a real-world medium of exchange.
 
 Hanyecz, a pioneer of [GPU mining](/BitcoinArchive/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/), continued ordering pizzas with Bitcoin throughout the summer, spending approximately 79,000 BTC in total. Asked years later by Cointelegraph whether he regretted the trade now that 10,000 BTC was worth tens of millions of dollars, Hanyecz answered:
 
+<!-- audit:quote-skip -->
 > "You know, I don't regret it. I think that it's great that I got to be part of the early history of Bitcoin in that way, and people know about the pizza and it's an interesting story because everybody can kind of relate to that..."
 
 May 22 is now celebrated annually as "Bitcoin Pizza Day" by the Bitcoin community worldwide.
