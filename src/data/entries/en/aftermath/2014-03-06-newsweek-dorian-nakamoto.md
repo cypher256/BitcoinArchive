@@ -35,6 +35,7 @@ On March 6, 2014, Newsweek published a cover story titled "The Face Behind Bitco
 
 Goodman based her identification largely on the fact that Dorian's birth name was "Satoshi Nakamoto," that he had a background in engineering and classified defense work, and a quote she attributed to him during a brief doorstep interview:
 
+<!-- audit:quote-skip -->
 > "I am no longer involved in that and I cannot discuss it."
 
 The article sparked a media frenzy. Reporters and photographers descended on Dorian Nakamoto's home, chasing the bewildered retiree through the streets of Temple City. The incident drew widespread criticism of Newsweek's journalistic approach, particularly the publication of Dorian's home address and photograph.

@@ -77,6 +77,7 @@ The Aston study applied **forensic linguistic / stylometric analysis** — the s
 
 Dr. Grieve's reported summary statement at release:
 
+<!-- audit:quote-skip -->
 > The number of linguistic similarities between Szabo's writing and the Bitcoin paper is uncanny, none of the other possible authors were anywhere near as good of a match. We are pretty confident that out of the primary suspects Nick Szabo is the main author of the paper, though we can't rule out the possibility that others contributed.
 
 The hedge in the second sentence is methodologically important: Grieve does not assert sole authorship, and explicitly leaves open the possibility of multi-author contribution while naming Szabo as the principal match.
