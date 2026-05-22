@@ -31,16 +31,24 @@ relatedEntries:
   - "aftermath/2010-12-03-handover-to-gavin"
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2010-12-19T16:41:39Z"
+    sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
 In late 2010, as Satoshi Nakamoto began stepping back from active involvement in Bitcoin, he made the pivotal decision to hand project leadership to Gavin Andresen. Satoshi gave Andresen control of the source code repository (SVN access) and endorsed him as the project's lead developer.
 
 This decision was consistent with what Satoshi had privately communicated to [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) on December 3, 2010, when asked who should take over development responsibilities:
 
+<!-- audit:quote-skip -->
 > It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me.
 
 Andresen formally stepped into the leadership role and announced it publicly on the Bitcointalk forum in December 2010:
 
+<!-- quote: q1 -->
 > With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for Bitcoin.
 
 This moment represents one of the most significant transitions in Bitcoin's history. Satoshi's endorsement of Andresen was not arbitrary -- it reflected months of working together and Satoshi's confidence in Andresen's technical abilities, professionalism, and alignment with Bitcoin's goals. Andresen went on to become the primary maintainer of what would later be called Bitcoin Core, guiding the project through a critical period of growth.

@@ -34,10 +34,17 @@ relatedEntries:
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2010-12-19T16:41:39Z"
+    sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
 On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted to the BitcoinTalk forum the public acceptance of the leadership role:
 
+<!-- quote: q1 -->
 > With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for bitcoin.
 >
 > Everybody please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved with.

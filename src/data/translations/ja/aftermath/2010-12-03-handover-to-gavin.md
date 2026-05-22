@@ -35,7 +35,7 @@ translationStatus: complete
 
 サトシの回答は明確かつ断固としたものだった：
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては私よりずっと上だ。
 
 <!-- speaker: narrator -->

@@ -33,6 +33,7 @@ relatedEntries:
 
 According to Wikipedia's account of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/)'s early role in Bitcoin, in September 2010 Satoshi Nakamoto privately told Andresen he was working on other projects:
 
+<!-- audit:quote-skip -->
 > In September 2010, Nakamoto told Andresen he was working on other projects, and over the next few months, he gave Andresen control of the SourceForge code repository, and the project's "alert key" as well.
 
 — [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)

@@ -31,6 +31,12 @@ relatedEntries:
   - "aftermath/2010-12-03-handover-to-gavin"
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2010-12-19T16:41:39Z"
+    sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 translationStatus: complete
 ---
 
@@ -39,13 +45,13 @@ translationStatus: complete
 
 この決定は、2010年12月3日にサトシが[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)にメールで伝えた内容と一致している。開発の責任を誰が引き継ぐべきかと問われた際、サトシは次のように答えた：
 
-<!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては私よりずっと上だ。
 
 <!-- speaker: narrator -->
 アンドレセンは正式にリーダーの役割に就き、2010年12月に Bitcointalk フォーラムで公に発表した：
 
-<!-- speaker: Gavin Andresen -->
+<!-- quote: q1 -->
 > サトシの祝福を受けて、正直かなり気が進まないが、ビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。
 
 <!-- speaker: narrator -->

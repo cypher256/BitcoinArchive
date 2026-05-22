@@ -34,11 +34,18 @@ relatedEntries:
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2010-12-19T16:41:39Z"
+    sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 translationStatus: complete
 ---
 
 2010 年 12 月 19 日、サトシ最後のソースコミット（12 月 15 日の v0.3.19 リリース）から 4 日後、[SVN アクセスの引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)から 7 日後、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は BitcoinTalk フォーラムにリーダーシップ就任の公的承諾を投稿した:
 
+<!-- quote: q1 -->
 > サトシの祝福を受けて、正直かなり気が進まないが、これからビットコインのプロジェクト管理にもっと積極的に関わっていくことにする。
 >
 > 皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。

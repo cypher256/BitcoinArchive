@@ -34,6 +34,7 @@ relatedEntries:
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
 ---
 
+<!-- audit:quote-skip -->
 > Will buy 1 invite for $2, msg privately.
 
 Peter Todd's first-ever post on BitcoinTalk. Nine words. Posted on December 7, 2010 at 09:14:28 AM — one minute after registering under the username "retep" (Peter spelled backwards).
