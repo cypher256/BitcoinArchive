@@ -20,6 +20,7 @@ quotes:
 ---
 
 [Deleted] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
+<!-- audit:quote-skip -->
 > <!-- quote: q1 -->
 > > + require some proof-of-work as part of the client-to-client connection process (helps prevent 'Sybil' attacks).
 > 
