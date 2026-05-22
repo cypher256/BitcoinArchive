@@ -295,12 +295,12 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
   .entry-content {
     line-height: 1.8;
   }
-  .entry-content :global(blockquote) {
-    margin: 1.5em 0;
-    padding: 0.75em 1.25em;
-    border-left: 3px solid var(--color-accent);
-    background: var(--color-bg-alt);
-  }
+  /* blockquote styling lives in global.css (`blockquote` + the
+     speaker-tagged variant `blockquote[data-speaker="satoshi"]`).
+     Re-declaring the base rule here as `.entry-content :global(blockquote)`
+     used to silently override the global Satoshi accent because the
+     scoped parent class bumped specificity above the data-speaker
+     selector. Removed to let global.css win unchanged. */
   .entry-nav {
     display: flex;
     justify-content: space-between;
