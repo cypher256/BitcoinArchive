@@ -28,6 +28,12 @@ relatedEntries:
   - aftermath/2009-04-12-mike-hearn-biography
   - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
   - aftermath/2017-08-11-mike-hearn-publishes-emails
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-04-23T15:40:00Z"
+    sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on"
 translationStatus: complete
 ---
 
@@ -37,7 +43,11 @@ Google のエンジニアで初期のビットコイン貢献者となった[マ
 
 2011年4月の最後のやり取りの一つで、サトシは[ハーンにこう書いた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
 
+<!-- quote: q1 -->
+<!-- tone-skip -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
+
+<!-- /tone-skip -->
 
 これは、サトシが完全に姿を消す前の最後のメールの一つとして知られている。このメールは、サトシが[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)をビットコイン開発を率いる適切な後継者と見なしていたことを確認するものであり、突然の、あるいは強制的な離脱ではなく、意図的かつ自発的なプロジェクトからの撤退であったことを示している。
 

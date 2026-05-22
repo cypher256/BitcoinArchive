@@ -30,6 +30,12 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2010-06-11-gavin-andresen-biography
+quotes:
+  - id: "q1"
+    person: "Gavin Andresen"
+    personSlug: "gavin-andresen"
+    date: "2011-04-26T00:00:00Z"
+    sourceEntryId: "correspondence/gavin-andresen/2011-04-26-andresen-cia-visit-reply"
 translationStatus: complete
 ---
 
@@ -40,8 +46,12 @@ translationStatus: complete
 
 そしてアンドレセンは重大なことを明かした。CIA やその他の情報機関を支援する米国政府出資の戦略的投資会社である In-Q-Tel（IQT）から連絡があったのだ。IQT は米国情報機関向けの新興技術に関する年次カンファレンスでビットコインについてプレゼンテーションするようアンドレセンを招待していた。アンドレセンは招待を受け入れた理由を次のように説明した：
 
+<!-- quote: q1 -->
 <!-- speaker: Gavin Andresen -->
+<!-- tone-skip -->
 > 「彼ら」と直接話し、より重要なこととして彼らの質問や懸念に耳を傾けることで、僕と同じようにビットコインを見てくれることを期待しているんだ。つまり、単純により優れた、より効率的な、政治的気まぐれに左右されにくいお金としてね。アナーキストが体制を転覆するために使う万能の闇市場ツールとしてではなく。
+
+<!-- /tone-skip -->
 
 <!-- speaker: narrator -->
 アンドレセンはこの関わりについて透明性を保つことを約束し、訪問を公に発表すると述べた。

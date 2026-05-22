@@ -21,9 +21,21 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (スレッド表示)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
+    personSlug: "james-donald"
+    date: "2008-11-02T23:46:23Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-11-03T01:37:00Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-02-re-bitcoin-p2p-e-cash-paper-satoshi-1"
 translationStatus: complete
 ---
 
+<!-- quote: q1 -->
 <!-- speaker: James A. Donald -->
 > 二重支払いイベントを適時に検出して拒否するには、取引中のコインの
 > 過去のほとんどのトランザクションを持っている必要があり、 単純実装では
@@ -32,6 +44,7 @@ translationStatus: complete
 > 数億人がトランザクションを行う場合、 帯域は膨大になる ——
 > 各人が全てを知るか、 その大部分を知らなければならない。
 
+<!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 > ネットワークがそれほどの規模に近づくよりずっと前に、
 > 利用者は二重支払い検査に Simplified Payment Verification ( 第 8 節 ) を

@@ -28,6 +28,12 @@ relatedEntries:
   - aftermath/2009-04-12-mike-hearn-biography
   - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
   - aftermath/2017-08-11-mike-hearn-publishes-emails
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-04-23T15:40:00Z"
+    sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on"
 ---
 
 [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), a Google engineer who became an early Bitcoin contributor, exchanged a series of emails with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) between 2009 and April 2011. Hearn had first contacted Satoshi after reading the Bitcoin white paper and becoming interested in the project.
@@ -36,6 +42,7 @@ In their correspondence, Satoshi discussed technical aspects of Bitcoin's future
 
 In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/):
 
+<!-- quote: q1 -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 This was among the last known private communications from Satoshi before his complete disappearance. The email confirmed that Satoshi viewed [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) as the appropriate successor to lead Bitcoin's development, and indicated a deliberate and voluntary withdrawal from the project rather than any sudden or forced departure.

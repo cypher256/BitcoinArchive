@@ -105,6 +105,9 @@ function formatAttribution(quote, locale, base) {
     text = date ? `Quote from: ${name} on ${date}` : (name ? `Quote from: ${name}` : 'Quote');
   }
 
+  // The chip itself stays neutral; speaker identification happens on
+  // the associated <blockquote> via data-speaker (set in the visitor
+  // below), matching the existing blockquote[data-speaker] convention.
   const inner = entryPath ? `<a href="${entryPath}">${text}</a>` : text;
   return `<cite class="quote-attribution">${inner}</cite>`;
 }
@@ -203,12 +206,30 @@ export function remarkQuoteBlocks() {
         }
       }
 
-      replacements.push({ node, quote, locale, index, parent });
+      replacements.push({ node, quote, locale, index, parent, blockquote: nextBq });
     });
 
     // Apply replacements (safe since we're only changing html node values)
-    for (const { node, quote, locale: loc } of replacements) {
+    for (const { node, quote, locale: loc, blockquote } of replacements) {
       node.value = formatAttribution(quote, loc, base);
+      // Tag the associated blockquote with data-speaker so CSS can apply
+      // the speaker's accent color to the left border. Matches the
+      // existing data-speaker convention used by remark-speaker-blockquote.
+      if (blockquote && quote.personSlug) {
+        // Map personSlug → the short data-speaker slug already used by
+        // CSS (`blockquote[data-speaker="satoshi"]`) and by
+        // remark-speaker-blockquote. Today only satoshi-nakamoto has a
+        // styling rule; other speakers keep their full personSlug so a
+        // future CSS rule can target them directly.
+        const speakerSlug = quote.personSlug === 'satoshi-nakamoto'
+          ? 'satoshi'
+          : quote.personSlug;
+        blockquote.data = blockquote.data || {};
+        blockquote.data.hProperties = blockquote.data.hProperties || {};
+        if (!blockquote.data.hProperties['data-speaker']) {
+          blockquote.data.hProperties['data-speaker'] = speakerSlug;
+        }
+      }
     }
   };
 }

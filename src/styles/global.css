@@ -423,6 +423,25 @@ blockquote[data-speaker="satoshi"] {
   border-left-color: var(--color-satoshi);
 }
 
+/* Quote attribution chip rendered by remark-quote-blocks. Sits as a
+   <cite> immediately before the blockquote and links to the cited
+   primary-source entry (or the participant biography as fallback).
+   The chip itself is a quiet caption with a normal-looking link;
+   speaker identification (e.g. Satoshi's accent colour) is carried by
+   the associated <blockquote>'s left border via data-speaker, which
+   the remark plugin sets from the quote's personSlug. */
+.quote-attribution {
+  display: block;
+  font-style: italic;
+  font-size: 0.9em;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+  color: var(--color-text-muted);
+}
+.quote-attribution a {
+  color: var(--color-link);
+}
+
 code {
   font-family: var(--font-mono);
   font-size: 0.9em;

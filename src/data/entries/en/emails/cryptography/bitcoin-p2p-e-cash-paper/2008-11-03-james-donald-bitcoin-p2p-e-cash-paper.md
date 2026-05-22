@@ -21,8 +21,20 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
+quotes:
+  - id: "q1"
+    person: "James A. Donald"
+    personSlug: "james-donald"
+    date: "2008-11-02T23:46:23Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-11-03T01:37:00Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-02-re-bitcoin-p2p-e-cash-paper-satoshi-1"
 ---
 
+<!-- quote: q1 -->
 <!-- speaker: James A. Donald -->
 > To detect and reject a double spending event in a
 > timely manner, one must have most past transactions
@@ -33,6 +45,7 @@ secondarySources:
 > are doing transactions, that is a lot of bandwidth -
 > each must know all, or a substantial part thereof.
 
+<!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
 > Long before the network gets anywhere near as large as
 > that, it would be Safe for users to use Simplified
