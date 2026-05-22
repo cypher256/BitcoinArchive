@@ -49,10 +49,12 @@ On April 26, 2011, Satoshi Nakamoto sent what would become his last known privat
 
 He then announced his departure:
 
+<!-- speaker: Satoshi Nakamoto -->
 > I've moved on to other things and will probably be unavailable.
 
 Finally, he transferred the critical network alert key:
 
+<!-- speaker: Satoshi Nakamoto -->
 > Here's the CAlert key and broadcast code in case you need it. You should probably give it to at least one or two other people. There are a few long time users who are always around all the time.
 
 The CAlert key was a powerful tool that enabled its holder to broadcast emergency messages to all Bitcoin clients on the network, warning of critical security issues or required upgrades. By transferring this key, Satoshi was completing the final piece of the leadership handover.
