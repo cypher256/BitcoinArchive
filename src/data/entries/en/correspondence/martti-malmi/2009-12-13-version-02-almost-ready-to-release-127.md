@@ -22,6 +22,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
 
+<!-- audit:quote-skip -->
 > It's almost time to release version 0.2.  If you have a minute, could
 > you try this release candidate (attached)?  If there aren't any
 > problems and I don't think of anything I missed, this could be released
@@ -29,6 +30,7 @@ secondarySources:
 
 No problems so far. Seems fine.
 
+<!-- audit:quote-skip -->
 > I zipped the setup exe because I doubt the e-mail servers will allow
 > exe attachments.  I'm not sure it'll allow zip either, but pretty sure
 > the tar.gz one will get through.
