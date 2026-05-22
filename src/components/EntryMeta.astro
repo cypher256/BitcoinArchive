@@ -74,6 +74,11 @@ const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
 const authorParticipant = findAuthorParticipant(author, participants);
 const displayAuthor = translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);
+// Byline label varies by entry type (e.g. "Posted by:" for mailing-list,
+// "Filed by:" for court-document). Falls back to byline.default when an
+// entry type has no specific label. JA appends "：" because that is the
+// site's existing label punctuation (cf. "人物：" below); EN uses ": ".
+const bylineLabel = t(`byline.${entryType}` as any) || t('byline.default' as any);
 
 // Color the author name in the Satoshi accent only when the author
 // actually is Satoshi. The `isSatoshi` frontmatter flag means "this
@@ -104,6 +109,7 @@ const isSatoshiAuthor =
     </>
   )}
   <span class="meta-sep">&middot;</span>
+  <span class="byline-label">{bylineLabel}</span>
   <span class:list={['author', { satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
   <span class="meta-sep">&middot;</span>
   <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge">{typeLabel}</a>
@@ -170,6 +176,10 @@ const isSatoshiAuthor =
     margin-bottom: 0.5rem;
   }
   .date-label {
+    font-weight: 600;
+    margin-right: -0.15rem;
+  }
+  .byline-label {
     font-weight: 600;
     margin-right: -0.15rem;
   }
