@@ -31,6 +31,7 @@ On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
 
 Doesn't work right now.
 
+<!-- speaker: Satoshi Nakamoto -->
 > some maintenance.
 
 Still no .deb packages for Bitcoin?

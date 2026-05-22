@@ -32,6 +32,7 @@ translationStatus: complete
 
 今はつながらない。
 
+<!-- speaker: Satoshi Nakamoto -->
 > メンテナンスでもしていたのかもしれない。
 
 ビットコインの .deb パッケージはまだない ?

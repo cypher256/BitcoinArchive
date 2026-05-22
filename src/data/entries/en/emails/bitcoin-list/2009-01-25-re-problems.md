@@ -18,6 +18,7 @@ secondarySources:
 ---
 
 From: Nicholas Bohm 2009-01-25 10:17
+<!-- audit:quote-skip -->
 > I have had a couple of problems running bitcoin: is this an appropriate
 > list for reporting them (with about 70kb of attachments)?
 

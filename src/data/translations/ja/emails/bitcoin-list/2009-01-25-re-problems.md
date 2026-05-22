@@ -18,12 +18,11 @@ secondarySources:
 translationStatus: complete
 ---
 
-<!-- speaker: Nicholas Bohm -->
 From: Nicholas Bohm 2009-01-25 10:17
+<!-- audit:quote-skip -->
 > bitcoinを実行していていくつか問題があった。ここは問題を報告するのに
 > 適切なリストだろうか（約70kbの添付ファイル付きで）？
 
-<!-- speaker: Satoshi Nakamoto -->
 どのような問題が発生しているだろうか？
 
 debug.log ファイルを直接私に送ってほしい（リストに添付ファイルを送るのは避けた方が良い）。何が起きているか調べることができる。
