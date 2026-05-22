@@ -33,6 +33,11 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-20T17:30:39Z"
 translationStatus: complete
 ---
 
@@ -46,6 +51,7 @@ http://www.hashcash.org/papers/hashcash.pdf, 2002]
 
 メールの中核的な一文は次の通り。
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > あなたのHashcash論文を引用した論文を公開する準備をしているところで、引用が正しいか確認したい。
 

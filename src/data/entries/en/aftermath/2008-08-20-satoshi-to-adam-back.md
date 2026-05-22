@@ -34,6 +34,11 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2008-08-20T17:30:39Z"
 ---
 
 The earliest documented email from Satoshi Nakamoto. Writing to [Adam Back](/BitcoinArchive/participants/adam-back/), Satoshi confirmed he was about to publish a paper that built on Hashcash and asked Back to verify the citation form he had drafted:
@@ -45,6 +50,7 @@ http://www.hashcash.org/papers/hashcash.pdf, 2002]
 
 The load-bearing line of the email reads:
 
+<!-- quote: q1 -->
 > I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.
 
 Satoshi attached a link to a pre-release draft titled "Electronic Cash Without a Trusted Third Party" — the working title before the manuscript was renamed to "Bitcoin: A Peer-to-Peer Electronic Cash System" for the [cryptography mailing-list draft](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) where the abstract appears in its canonical form.
