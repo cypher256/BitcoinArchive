@@ -19,10 +19,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2010-02-04-utf-8-to-ansi-hack-in-caboutdialog-146"
 ---
 
 I didn't change it knowingly, must have been some encoding problem.
 
+<!-- quote: q1 -->
 > What was the reason for this change?
 >
 > #if !wxUSE_UNICODE

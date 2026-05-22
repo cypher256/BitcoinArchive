@@ -21,12 +21,19 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-22-bitcoin-stuff-134"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2009-12-22-bitcoin-stuff-133"
 translationStatus: complete
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
+<!-- quote: q1 -->
 <!-- tone-skip -->
 > プログラムから新しい Bitcoin アドレスを生成できる方法を作る必要がある。あるいは、あなたの IP アドレスに送金させることもできるが、その場合は相手がコメントに注文番号を入れてくれることに頼らなければならない。
 
@@ -37,8 +44,8 @@ translationStatus: complete
 
 バックグラウンドプロセスが非グラフィカルであればとても助かります。現在のサービスレベルの VPS では、X Window 環境を動かすのに十分なメモリーがないです。メモリーを解放する方法を見つけない限りは。
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- tone-skip -->
-> <!-- speaker: Satoshi Nakamoto -->
 > 注文の確認と入力は、少なくとも最初は手動で行うつもりか？私ならそうする。
 
 <!-- /tone-skip -->
@@ -46,9 +53,9 @@ translationStatus: complete
 <!-- speaker: Martti Malmi -->
 はい、少なくとも最初は、顧客が Bitcoin を売ってドルを受け取る場合には手動で行います。スクリプトにドルの準備金へのアクセス権を軽々しく与えたくはないです。逆方向（顧客のドル→Bitcoin）はそれほど不安を感じないですし、顧客がすぐに Bitcoin を受け取れる方が確実に良いですね。
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- tone-skip -->
-> <!-- speaker: Satoshi Nakamoto -->
-> <!-- quote: q1 -->
+> <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
 >> ドメイン名bitcoinexchange.comを登録しました。余暇の活動として近いうちに
 >> サービスのコーディングを始めるつもりです。登録不要でGoogleのような

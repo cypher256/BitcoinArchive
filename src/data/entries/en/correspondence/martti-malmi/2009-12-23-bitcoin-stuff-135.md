@@ -21,11 +21,17 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 quotes:
   - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-12-22-bitcoin-stuff-134"
+  - id: "q2"
     person: "mmalmi@cc.hut.fi"
     personSlug: "martti-malmi"
+    parent: "q1"
     sourceEntryId: "correspondence/martti-malmi/2009-12-22-bitcoin-stuff-133"
 ---
 
+<!-- quote: q1 -->
 > I need to make a way for you to programmatically get new generated
 > bitcoin addresses.  Either that or you could have them send to your IP
 > address, but then you have to rely on them to put the order number in
@@ -41,6 +47,7 @@ the VPS on the current service level doesn't have enough memory to run
 the X Windowing environment, unless I come up with some ways to free  
 memory.
 
+<!-- speaker: Satoshi Nakamoto -->
 > Are you going to manually review and enter orders, at least to begin
 > with?  I sure would.
 
@@ -50,7 +57,8 @@ lightly. The other way around (customer's dollars -> bitcoins) it
 doesn't feel that insecure, and it's certainly nicer for the customer  
 to receive his bitcoins immediately.
 
-> <!-- quote: q1 -->
+<!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
 >> I have registered the domain name bitcoinexchange.com and will   
 >> start coding the service sometime soon as a nice leisure activity.   
 >> I'm envisioning a simple Google-like interface with no registration  
