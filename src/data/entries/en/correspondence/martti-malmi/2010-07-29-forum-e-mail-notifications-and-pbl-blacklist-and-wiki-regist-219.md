@@ -25,6 +25,7 @@ secondarySources:
 
 http://www.bitcoin.org/smf/index.php?topic=338.0
 
+<!-- audit:quote-skip -->
 > of e-mail blackhole list or at least the ISP that hosts the e-mail server for registration is on one of those lists.
 > 
 > "Looks like bitcoin.org is listed on the PBL."

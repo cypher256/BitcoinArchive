@@ -27,6 +27,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 http://www.bitcoin.org/smf/index.php?topic=338.0
 
+<!-- audit:quote-skip -->
 > メールブラックホールリスト、もしくは少なくとも登録用メールサーバーをホストしているISPがそれらのリストに載っている。
 >
 > 「bitcoin.orgがPBLに載っているようだ。」
