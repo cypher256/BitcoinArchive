@@ -35,9 +35,8 @@ JSON を推したい。JSON は（ほぼ）YAML のサブセット（YAML は設
 ```
 > bitcoind help
 error: First parameter must be the password.
-```
-
 > bitcoind <my password> help
 error: unknown command: <my password>
 >bitcoind help <my password>
  ... that works.
+```
