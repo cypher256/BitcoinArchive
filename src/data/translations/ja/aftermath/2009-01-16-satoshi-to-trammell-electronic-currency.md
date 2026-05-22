@@ -30,6 +30,12 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency
   - aftermath/2009-01-11-dustin-trammell-biography
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-01-16T12:35:31Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency"
 translationStatus: complete
 ---
 
@@ -38,6 +44,7 @@ translationStatus: complete
 
 サトシはトランメルがビットコインの価値について述べた以前の観察を引用し、自身のビジョンを共有した：
 
+<!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > 今から 10年後に何らかの形で電子通貨を使っていなかったら驚く。信頼できる第三者が怖気づいた時に必然的に骨抜きにされないやり方がわかった今となっては。
 
