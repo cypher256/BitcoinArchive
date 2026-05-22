@@ -807,6 +807,14 @@ th {
   font-style: italic;
 }
 
+/* Preserve speaker accent colour inside thread message bodies (matches
+   individual-page rule but with higher specificity to override the
+   .conversation-thread .message-body blockquote default). Applies to
+   both top-level and nested blockquotes that carry data-speaker. */
+.conversation-thread .message-body blockquote[data-speaker="satoshi"] {
+  border-left-color: var(--color-satoshi);
+}
+
 .conversation-thread .thread-connector {
   width: 4px;
   height: 0.25rem;

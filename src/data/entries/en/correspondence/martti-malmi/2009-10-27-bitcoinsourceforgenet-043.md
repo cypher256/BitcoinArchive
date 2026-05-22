@@ -23,12 +23,17 @@ quotes:
   - id: "q1"
     person: "Eugen Leitl"
     personSlug: "eugen-leitl"
+    sourceEntryId: "emails/bitcoin-list/2009-10-26-re-does-bitcoin-crash-in-windows-leitl"
   - id: "q2"
+    parent: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-26-bitcoinsourceforgenet-042"
   - id: "q3"
+    parent: "q1"
     person: "Liberty Standard"
     personSlug: "newlibertystandard"
+    sourceEntryId: "correspondence/liberty-standard/2009-10-26-bitcoin-website-is-down"
 ---
 
 IS_LIVE option was indeed set to false, but it only affects the  
