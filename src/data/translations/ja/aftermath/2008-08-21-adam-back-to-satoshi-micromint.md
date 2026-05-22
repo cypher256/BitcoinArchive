@@ -24,12 +24,19 @@ secondarySources:
     note: "2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書 C/21）に 5 通の完全なメールチェーンが含まれていた。論文を読まなかったことへの後悔は Cointelegraph のインタビューで語られた"
   - name: "Cointelegraph - Adam Back on Satoshi Emails"
     url: "https://web.archive.org/web/20260216001524/https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2008-08-21T18:17:17Z"
+    sourceEntryId: "aftermath/2008-08-21-adam-back-to-satoshi-micromint"
 translationStatus: complete
 ---
 
 
 メールチェーンの 4 通目で、アダム・バックは関連する別の論文として、ロン・リベストとアディ・シャミアによる「PayWord and MicroMint」（1996年）を紹介した。この論文は、Hashcash やビットコインが用いる部分的プリイメージではなく、デジタルコインの希少性のために k-way ハッシュ衝突の抽出を提案するものだった。バック自身が後に Cointelegraph のインタビューで「おそらく人生最大の失敗だった」 と振り返ることになる、中核的な自己告白の一文は次の通り。
 
+<!-- quote: q1 -->
 <!-- speaker: Adam Back -->
 > すまない、君の論文はまだ読めていない、
 
