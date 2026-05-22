@@ -28,9 +28,23 @@ quotes:
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
   - id: "q2"
-    person: "mmalmi@cc.hut.fi"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-10-31T20:09:58Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-31-linux-build-051"
+  - id: "q3"
+    parent: "q2"
+    person: "Martti Malmi"
     personSlug: "martti-malmi"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
+    date: "2009-10-31T09:21:50Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-31-linux-build-050"
+  - id: "q4"
+    parent: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-10-30T01:05:45Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-30-linux-build-049"
 ---
 
 Great, I've been looking forward to working on the Linux build.
@@ -93,6 +107,7 @@ a site that describes how to do it for each router.
 > because of the Freenode Tor policy which requires connecting to their 
 > hidden service: http://freenode.net/irc_servers.shtml#tor
 > 
+> <!-- quote: q2 -->
 >> heapchk() is just a MSVCRT debugging thing that's not being used.  It
 >> can be a no-op on Linux.  OpenSSL automatically uses /dev/urandom to
 >> seed on Linux, so RandAddSeedPerfmon can also be a no-op.
@@ -110,13 +125,14 @@ a site that describes how to do it for each router.
 >> buildable to test.  I can include it in the stress test I'm currently
 >> running on the changes so far.
 >>
->> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> I made an #ifdef to replace QueryPerformanceCounter with Linux's  
 >>> gettimeofday in util.h. Some Unicode/ANSI errors were resolved  
 >>> without code changes when I updated to wxWidgets 2.9. The only  
 >>> compile error I'm getting in Linux at the moment is from heapchk()  
 >>> in util.h.
 >>>
+>>> <!-- quote: q4 -->
 >>>> I fixed some non-portable stuff I came across:
 >>>> QueryPerformanceCounter
 >>>> %I64d in printf format strings

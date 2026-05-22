@@ -29,9 +29,23 @@ quotes:
     personSlug: "martti-malmi"
     sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
   - id: "q2"
-    person: "mmalmi@cc.hut.fi"
+    parent: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-10-31T20:09:58Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-31-linux-build-051"
+  - id: "q3"
+    parent: "q2"
+    person: "Martti Malmi"
     personSlug: "martti-malmi"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-03-linux-build-052"
+    date: "2009-10-31T09:21:50Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-31-linux-build-050"
+  - id: "q4"
+    parent: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-10-30T01:05:45Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-10-30-linux-build-049"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -66,6 +80,7 @@ bitcoin -proxy=127.0.0.1:9050 -addnode=<ノードの ip>
 > 彼らの隠しサービスへの接続が必要だからかもしれません：
 > http://freenode.net/irc_servers.shtml#tor
 >
+> <!-- quote: q2 -->
 >> heapchk()はMSVCRTのデバッグ用のもので使われていない。Linuxではno-opに
 >> できる。OpenSSLはLinuxでは自動的に/dev/urandomを使ってシードするので、
 >> RandAddSeedPerfmonもno-opにできる。
@@ -80,12 +95,13 @@ bitcoin -proxy=127.0.0.1:9050 -addnode=<ノードの ip>
 >> ビルドできる状態のものができたら、テストする時間はある。今実施中の変更に
 >> 対するストレステストに含めることができるよ。
 >>
->> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> util.hでQueryPerformanceCounterをLinuxのgettimeofdayに置き換える
 >>> #ifdefを作りました。Unicode/ANSIのエラーはwxWidgets 2.9にアップデート
 >>> したらコード変更なしで解決しました。現在Linuxで出ている唯一のコンパイル
 >>> エラーはutil.hのheapchk()からのものです。
 >>>
+>>> <!-- quote: q4 -->
 >>>> 見つけた移植性のないコードをいくつか修正した：
 >>>> QueryPerformanceCounter
 >>>> printfフォーマット文字列の%I64d
