@@ -20,8 +20,16 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-16-satoshi-to-trammell-wallet-location"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:03:34Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification"
 ---
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > この話題で思いついたことが 1 つある。システム障害が起きた場合の
 > ビットコイン消失の可能性についてだ。アプリケーションは実行
 > ディレクトリ内には何もデータを保存していないようなので、おそらく
@@ -39,6 +47,7 @@ relatedEntries:
 もっとも、Microsoft が Windows のリリースごとにディレクトリ名を
 変えてくる上、空白を含み、画面外まではみ出すほど長いという逆風はあるが。
 
+<!-- speaker: Dustin Trammell -->
 > 今日もう 1 つ気づいたのだが、アプリケーションを閉じても
 > ネットワークソケットをきれいに閉じていないようだ（TCP RST が
 > 飛び始める）。優先度の低い todo に入れる項目かもしれない (:

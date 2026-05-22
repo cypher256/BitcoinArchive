@@ -22,8 +22,16 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-16-satoshi-to-trammell-electronic-currency"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:14:27Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
 ---
 
+<!-- quote: q1 -->
+<!-- speaker: Dustin Trammell -->
 > Dustin D. Trammell wrote:
 > > Satoshi Nakamoto wrote:
 > > 90 年代にはもっと多くの人が興味を持っていたと思う。だが、信頼された

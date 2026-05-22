@@ -21,8 +21,15 @@ tags:
   - "cryptography-mailing-list"
 relatedEntries:
   - "aftermath/2009-01-16-satoshi-to-trammell-electronic-currency"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:14:27Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
 ---
 
+<!-- quote: q1 -->
 > Dustin D. Trammell wrote:
 > > Satoshi Nakamoto wrote:
 > > You know, I think there were a lot more people interested in the 90's,

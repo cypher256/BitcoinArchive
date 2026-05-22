@@ -19,8 +19,15 @@ tags:
   - "bug-fix"
 relatedEntries:
   - "aftermath/2009-01-16-satoshi-to-trammell-wallet-location"
+quotes:
+  - id: "q1"
+    person: "Dustin Trammell"
+    personSlug: "dustin-trammell"
+    date: "2009-01-15T19:03:34Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification"
 ---
 
+<!-- quote: q1 -->
 > One thing that came to mind on this topic is the potential for BitCoin
 > loss if you have a system failure. The application doesn't seem to
 > store any data in the directory that it runs in, so I assume it's stored
@@ -38,6 +45,7 @@ Firefox store their settings files there, despite the headwind of
 Microsoft changing the directory name with every Windows release
 and being full of spaces and so long it runs off the screen.
 
+<!-- speaker: Dustin Trammell -->
 > One other thing I noticed today is that if you close the application it
 > doesn't appear to cleanly close it's network sockets (TCP RST's start
 > flying). Probably an item for the low-priority todo list (:
