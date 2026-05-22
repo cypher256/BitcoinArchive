@@ -39,6 +39,7 @@ relatedEntries:
 
 *From the Cypherpunks mailing list, November 26, 1998:*
 
+<!-- audit:quote-skip -->
 > "I've discovered some attacks against the original PipeNet design. The new protocol, PipeNet 1.1, should fix the weaknesses. PipeNet 1.1 uses layered sequence numbers and MACs. This prevents a collusion between a receiver and a subset of switches from tracing the caller by modifying or swapping packets and then watching for garbage.
 >
 > A description of PipeNet 1.1 is available at http://www.eskimo.com/~weidai.

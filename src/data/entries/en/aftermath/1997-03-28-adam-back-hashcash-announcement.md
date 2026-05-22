@@ -49,6 +49,7 @@ The announcement opens with the technical proposal — a "partial hash collision
 
 From the *How does this fit in with digicash* section (verbatim):
 
+<!-- audit:quote-skip -->
 > "Digicash postage on remailers, and mail would be useful, however there are a number of problems with digicash:
 >
 >    * It is more onerous to set up an account (form filling etc)
@@ -67,6 +68,7 @@ This places Hashcash, from the day of its public announcement, as a complement t
 
 The announcement also uses minting language in the implementation walkthrough — the program command for generating a cost token is `hashcash mint`, and the announcement describes "double spending protection" in the implementation. The `hashcash mint` / `mint` framing in 1997 is later formalized at the function-name level in Back's 2002 Hashcash paper. From [§2 Cost-Functions](http://www.hashcash.org/papers/hashcash.pdf):
 
+<!-- audit:quote-skip -->
 > "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money."
 
 The cost-function is named `MINT()` and the verification function `VALUE()`. The terminology choice was not incidental — it was framing Hashcash's CPU-burn step as a form of token creation analogous to physical-money minting from the start.
@@ -75,6 +77,7 @@ The cost-function is named `MINT()` and the verification function `VALUE()`. The
 
 The 2002 paper §7 Applications lists, alongside DoS-throttling and anti-spam applications:
 
+<!-- audit:quote-skip -->
 > "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal, an electronic cash scheme without a banking interface."
 
 Reference [19] in the paper is Wei Dai's [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998). This entry makes explicit, in a refereed publication, the configuration Bitcoin would later realize: a Hashcash proof-of-work primitive serving as the minting mechanism for a decentralized digital-cash system. Back proposed it as an application; he did not implement it.

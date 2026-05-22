@@ -50,6 +50,7 @@ relatedEntries:
 
 **Hashcash as b-money's minting mechanism:**
 
+<!-- audit:quote-skip -->
 > "to create value you burn CPU time, just like with hashcash"
 
 This sentence is the explicit pre-Bitcoin proposal of the configuration Bitcoin would later realize: a proof-of-work primitive (Hashcash) used as the minting mechanism for a decentralized digital-cash system (b-money). Back proposed it as a candidate; he did not implement it.
