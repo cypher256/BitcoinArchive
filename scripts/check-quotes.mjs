@@ -554,6 +554,11 @@ function checkFile(filePath, locale) {
         });
         continue;
       }
+      // 0523 nested marker plan: detect nested marker (^>+ quote: qN) without parent.
+      // The marker appears inside a blockquote (depth >= 1) but the corresponding
+      // q entry has no `parent`. Required so chip nesting is preserved.
+      // Note: this checks per quote-id; the body scan happens once below.
+
       // 0523 plan: detect quotes with sourceEntryId set but no date.
       // The chip falls back to "{name}の投稿" (no timestamp) which
       // loses the UTC date that the primary entry carries. Setting
@@ -628,6 +633,51 @@ function checkFile(filePath, locale) {
         check: 'blockquote-no-marker',
         level: 'error',
         msg: `Line ${m.line}: blockquote "${m.text.trim()}" has no preceding <!-- quote: qN --> / <!-- speaker: ... --> / <!-- audit:quote-skip --> marker — 0522 plan Phase 2 enforced`,
+      });
+    }
+
+    // 0523 nested marker plan: detect ^>+\s*<!-- quote: qN --> markers
+    // where the corresponding q entry has no `parent`. The marker
+    // appearing inside a blockquote (depth >= 1) signals a nested
+    // chip; the chip's nesting cannot be rendered correctly without
+    // a parent reference. user 提示 logic per 0523 nested marker plan.
+    //
+    // Exception: when the marker sits inside an audit:quote-skip block
+    // (i.e. an <!-- audit:quote-skip --> precedes the marker in the
+    // same blockquote chain, no intervening blank line), the outer
+    // quote is intentionally not chip-tracked (e.g. a deleted post
+    // wrapped in audit-skip). The inner marker has no candidate parent
+    // by construction; skip the check rather than reporting it as a
+    // violation.
+    const bodyLines = body.replace(/```[\s\S]*?```/g, '').split('\n');
+    let auditSkipActive = false;
+    for (let i = 0; i < bodyLines.length; i++) {
+      const line = bodyLines[i];
+      // Blank line closes the audit-skip scope (and any blockquote chain)
+      if (line.trim() === '') {
+        auditSkipActive = false;
+        continue;
+      }
+      // Activate audit-skip flag when we see the marker at top-level
+      // (not inside a blockquote — that case is the inner marker we
+      // want to silence, not the silencer itself).
+      if (!line.startsWith('>') && /^<!--\s*audit:quote-skip\s*-->/.test(line.trim())) {
+        auditSkipActive = true;
+        continue;
+      }
+      const nm = line.match(/^(>+)\s*<!--\s*quote:\s*(\w+)\s*-->/);
+      if (!nm) continue;
+      const depth = nm[1].length;
+      const qid = nm[2];
+      const q = quotes.find(x => x && x.id === qid);
+      if (!q) continue;
+      if (q.parent) continue;
+      if (auditSkipActive) continue; // covered by audit-skip; intentional
+      violations.push({
+        file: rel,
+        check: 'nested-marker-without-parent',
+        level: 'error',
+        msg: `Line ${i + 1}: nested marker "${qid}" at depth ${depth} has no parent. Set quotes[${qid}].parent to the qN whose marker sits one level shallower in the same blockquote chain (0523 nested marker plan Phase 2 enforced).`,
       });
     }
   }
