@@ -4,7 +4,7 @@ date: 2009-01-03T18:15:05Z
 type: "article"
 source: "sourceforge"
 sourceUrl: "https://sourceforge.net/projects/bitcoin/"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
