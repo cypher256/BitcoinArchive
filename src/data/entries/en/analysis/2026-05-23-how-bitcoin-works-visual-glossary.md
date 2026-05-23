@@ -129,21 +129,21 @@ To spend bitcoins, your wallet builds a new **transaction** that:
 
 ```mermaid
 flowchart LR
-  subgraph Inputs[Inputs - existing UTXOs you are spending]
+  subgraph Inputs["Inputs - existing UTXOs you are spending (total: 1.2 BTC)"]
     I1[UTXO A: 0.7 BTC]
     I2[UTXO B: 0.5 BTC]
   end
   TX(("Transaction<br/>(signed with private keys)"))
-  subgraph Outputs[Outputs - new UTXOs created]
+  subgraph Outputs["Outputs - new UTXOs created (total: 1.199 BTC)"]
     O1[To friend: 1.0 BTC]
     O2[Change back to you: 0.199 BTC]
-    F[Fee: 0.001 BTC<br/>to miner]
   end
+  FEE["Implicit fee: 1.2 - 1.199 = 0.001 BTC<br/>(not an output - collected by miner via coinbase)"]
   I1 --> TX
   I2 --> TX
   TX --> O1
   TX --> O2
-  TX --> F
+  TX -.-> FEE
 ```
 
 Inputs are always entire UTXOs — you cannot spend "half" of a UTXO. If you owe 1 BTC but your only UTXO is 1.2 BTC, the transaction spends the whole 1.2 BTC, creates one 1.0 BTC output to the recipient, and creates another ~0.199 BTC output back to your own wallet (called **change**). The remaining 0.001 BTC, not assigned to any output, becomes the **transaction fee** the miner who includes this transaction collects (chapter 5).
@@ -218,7 +218,7 @@ sequenceDiagram
 
 How many leading zeros are required is called the **difficulty**. The network adjusts the difficulty every 2,016 blocks (about every two weeks) so that, regardless of how much total computing power miners throw at the puzzle, a winning block is found roughly every 10 minutes on average.
 
-The miner who wins gets to insert one special transaction at the top of the block, with no inputs (the only transaction in Bitcoin with no inputs). This is the **[coinbase transaction](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/)**, and the outputs it creates are the only way new bitcoins ever come into existence. The amount it creates is called the **block reward**. On top of that, the miner also collects all the **transaction fees** attached to the regular transactions they included. Together, those two amounts form the **miner reward**.
+The miner who wins gets to insert one special transaction at the top of the block — the only transaction in Bitcoin whose input doesn't reference any previous output (it consumes no prior coins). This is the **[coinbase transaction](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/)**, and the outputs it creates are the only way new bitcoins ever come into existence. The amount it creates is called the **block reward**. On top of that, the miner also collects all the **transaction fees** attached to the regular transactions they included. Together, those two amounts form the **miner reward**.
 
 ```mermaid
 flowchart TD

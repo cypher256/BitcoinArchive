@@ -5,13 +5,22 @@
  *
  * Why this script exists:
  *   Long unbroken Japanese spans in Mermaid labels overflow narrower
- *   columns at render time. Mermaid will wrap a label only at an explicit
- *   break — either `<br/>` (preferred for display) or ASCII whitespace
- *   `U+0020` (which Mermaid treats as a wrap point but which appears in
- *   the rendered text as a mid-word gap in Japanese, e.g.
- *   "待機中の トランザクション" — and reads as unnatural to JA readers).
- *   `・` (middle dot) and `、` (full-width comma) are NOT recognized as
- *   wrap points by Mermaid.
+ *   columns at render time. Mermaid wraps a label only at an explicit
+ *   break point. The mechanism depends on the diagram type:
+ *     - flowchart / graph node labels: `<br/>` (preferred) or ASCII
+ *       space. ASCII space wraps but the space remains visible in the
+ *       rendered text as a mid-word gap ("待機中の トランザクション"),
+ *       which reads as unnatural to JA readers. Use `<br/>`.
+ *     - timeline event labels: ASCII space is the ONLY mechanism that
+ *       works — Mermaid timeline does NOT honor `<br/>`. The space is
+ *       a semantic break; existing biographies all follow this pattern.
+ *     - sequenceDiagram messages: messages render on auto-expanding
+ *       arrows; no wrap is needed. This script exempts the diagram type.
+ *     - subgraph titles: render full-width and auto-expand to fit;
+ *       neither break is needed. `<br/>` is not honored here either
+ *       (the second line clips). This script exempts those lines.
+ *   `・` (middle dot) and `、` (full-width comma) are NOT recognized
+ *   as wrap points by Mermaid in any diagram type.
  *
  *   `check-mermaid.mjs` validates syntax. `check-bios-rendering.mjs`
  *   captures visual screenshots. This script catches the layout problem
@@ -32,6 +41,14 @@
  *
  * Exempt lines (Mermaid syntax keywords, not rendered as column labels):
  *   - title <text>             — title bar layout has more width
+ *   - subgraph ID[<text>]      — subgraph title bar spans the full
+ *                                 subgraph box width, which auto-expands
+ *                                 to fit contents; the column-overflow
+ *                                 assumption does not apply. Also, in
+ *                                 practice Mermaid does not honor `<br/>`
+ *                                 inside subgraph titles (the second line
+ *                                 gets clipped), so the only safe form is
+ *                                 a single line.
  *   - flowchart, graph, etc.   — diagram-type declarations
  *   - %% ...                   — comments
  *   - section <text>           — Gantt/timeline section header
@@ -83,7 +100,7 @@ const THRESHOLD = parseInt(flag('--threshold', '12'), 10);
 const QUIET = args.includes('--quiet');
 
 const CJK_RE = /[぀-ゟ゠-ヿ㐀-䶿一-鿿]/;
-const KEYWORD_RE = /^(title|flowchart|graph|classDiagram|sequenceDiagram|stateDiagram|gantt|gitGraph|pie|journey|erDiagram|mindmap|timeline|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|C4Deployment|theme|section|click|%%)\b/;
+const KEYWORD_RE = /^(title|subgraph|flowchart|graph|classDiagram|sequenceDiagram|stateDiagram|gantt|gitGraph|pie|journey|erDiagram|mindmap|timeline|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|C4Deployment|theme|section|click|%%)\b/;
 
 function walk(dir) {
   const out = [];
@@ -180,6 +197,7 @@ for (const file of files) {
           line: lineNumber,
           token: h.token,
           length: h.length,
+          diagramType: block.type,
         });
       }
     }
@@ -197,8 +215,13 @@ console.error(`✗ Found ${violations.length} unbroken Japanese span(s) exceedin
 for (const v of violations) {
   console.error(`  ${v.file}:${v.line}`);
   console.error(`    "${v.token}" (${v.length} chars)`);
-  console.error(`    Insert <br/> at a semantic break point so the label wraps.`);
-  console.error(`    (Do NOT use a mid-text ASCII space — it renders as a mid-word gap in Japanese.)`);
+  if (v.diagramType === 'timeline') {
+    console.error(`    Insert an ASCII space at a semantic break point.`);
+    console.error(`    (timeline does NOT honor <br/>; ASCII space is the only wrap point.)`);
+  } else {
+    console.error(`    Insert <br/> at a semantic break point so the label wraps.`);
+    console.error(`    (Avoid mid-text ASCII space in flowchart/graph labels — it renders as a mid-word gap.)`);
+  }
 }
 console.error(`\nSee STYLE_GUIDE_JA.md § II.3 "Mermaid labels — Japanese line wrapping".`);
 process.exit(1);
