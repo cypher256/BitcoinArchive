@@ -27,7 +27,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
         Only the name remained. No face, no voice, no nationality, not even an age.<br />
         In the spring of 2011, he vanished after leaving behind a two-line email.
       </p>
-      <blockquote>
+      <blockquote data-speaker="satoshi">
         <p>I've moved on to other things.<br />It's in good hands with Gavin and everyone.</p>
       </blockquote>
       <p>
@@ -211,6 +211,9 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
     color: var(--color-text-muted);
     font-style: italic;
   }
+  .lead blockquote[data-speaker="satoshi"] {
+    border-left-color: var(--color-satoshi);
+  }
   .lead blockquote p {
     margin: 0.25rem 0;
   }
@@ -246,7 +249,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   .timeline strong {
     display: inline-block;
     min-width: 10em;
-    color: var(--color-accent);
+    color: var(--color-text);
     font-family: var(--font-heading);
     font-size: 0.9rem;
   }
