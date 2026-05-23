@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshi's last known email to Malmi, containing a PGP signature and the mailman mailing list password. This was one of the final communications before Satoshi disappeared entirely from public life."
+description: "Satoshi's last known email in the Malmi archive (Feb 22, 2011) — a three-way reply to Gavin and Martti, transferring the bitcoin-list mailman admin password as PGP-encrypted blocks."
 isSatoshi: true
 tags:
   - "correspondence"
@@ -23,6 +23,7 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
+  - correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
@@ -30,9 +31,22 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2011-08-01-bitcointalk-org-migration
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2011-02-22T19:49:19Z"
+    sourceEntryId: "correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260"
 ---
 
-On February 22, 2011, Satoshi Nakamoto sent what would be his final email to Martti Malmi. The email included a PGP signature and provided the password for the Bitcoin project's mailman mailing list, effectively transferring another piece of project infrastructure.
+On February 22, 2011, Satoshi Nakamoto sent [what would be his final email in the Malmi archive](/BitcoinArchive/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/) — a three-way reply to Gavin Andresen and Martti Malmi on the "0.3.20 release : shipped" thread. Gavin had asked for permission (or the encrypted password) to post release announcements to the SourceForge `bitcoin-list` mailing list. Satoshi's reply transferred that responsibility:
+
+<!-- quote: q1 -->
+> Martti should give you the Drupal admin password.
+>
+> Any subscriber can post to bitcoin-list. Here's the admin password in case you need it later.
+
+The body then carried two PGP-encrypted blocks — the bitcoin-list mailman admin password, encrypted separately to Gavin's and Martti's public keys. With that handoff, another piece of project infrastructure passed from Satoshi to the remaining maintainers.
 
 This was among the last known communications from Satoshi before his complete withdrawal from public involvement in Bitcoin. Approximately two months later, [Satoshi wrote to Mike Hearn on April 23, 2011](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/): "I've moved on to other things. It's in good hands with Gavin and everyone." Three days after that, on April 26, 2011, [Satoshi sent what is believed to be his absolute final email — to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) — transferring the network alert key and writing: "I've moved on to other things and will probably be unavailable."
 
