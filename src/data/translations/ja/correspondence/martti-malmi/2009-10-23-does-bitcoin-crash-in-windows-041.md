@@ -45,6 +45,7 @@ v0.1.5 でのクラッシュ報告は受けていない。Windows では非常�
 > fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
 > fixme:toolhelp:Heap32ListFirst : stub
 
+<!-- speaker: reset -->
 それらは心配するようなものには見えない。おそらく Wine で実装されていない関数が無害にスタブアウトされているだけだ。
 
 <!-- speaker: Liberty Standard -->
@@ -55,6 +56,7 @@ v0.1.5 でのクラッシュ報告は受けていない。Windows では非常�
 > 17.4 MBまで大きくなり、その後成長が止まる。より多くのビットコインが
 > 完了するにつれて成長し続けると思う。
 
+<!-- speaker: reset -->
 ディスク容量を節約したければ、debug.log は時々削除して構わない。デバッグに役立つステータスメッセージに過ぎないからね。
 
 bitcoin.sourceforge.net は今は正常に見える。SourceForge がメンテナンスをしていたのかもしれない。

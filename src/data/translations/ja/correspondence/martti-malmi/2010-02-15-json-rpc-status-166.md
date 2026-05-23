@@ -41,6 +41,7 @@ quotes:
     sourceEntryId: "correspondence/martti-malmi/2010-02-14-json-rpc-status-163"
 ---
 
+<!-- tone-skip -->
 <!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q2 -->
@@ -58,6 +59,7 @@ quotes:
 >
 > 使ったPythonのコードを送ってもらえるか？後で自分でテストするとき、
 > 一から調べなくて済むので。
+<!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
 python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）を SVN からダウンロードして、Python インタプリタで直接テストしました。こんな感じですよ：

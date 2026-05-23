@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "Satoshi thanks Adam Back for the b-money reference, admits he was not previously aware of Wei Dai's proposal, and explains the new contribution of his system: proof-of-work used as a distributed timestamp server."
+description: "Satoshi thanks Adam Back for the b-money reference, admits he was unaware of Wei Dai's proposal, and explains his system's new contribution: proof-of-work as a distributed timestamp server."
 isSatoshi: true
 tags:
   - "hashcash"

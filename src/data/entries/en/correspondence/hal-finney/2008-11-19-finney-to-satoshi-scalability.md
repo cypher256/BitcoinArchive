@@ -11,7 +11,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Hal Finney to Satoshi during pre-release code review, asking how large Satoshi envisions the P2P node network — tens, thousands, millions — and whether clients could scale to 100% of world financial transactions."
+description: "Hal Finney to Satoshi during pre-release code review, asking how large the P2P node network might grow — tens to millions — and whether clients could scale to all world financial transactions."
 isSatoshi: false
 tags:
   - "correspondence"

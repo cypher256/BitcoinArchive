@@ -11,7 +11,7 @@ participants:
     slug: "hal-finney"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ハル・フィニーがサトシにプレリリース版コードレビュー中に送ったメール。 P2P ノードネットワークの将来規模 (数十、 数千、 数百万) と、 クライアントが世界の金融取引の 100% をスケールできるかを問う。"
+description: "ハル・フィニーがサトシにプレリリース版コードレビュー中に送ったメール。 P2P ノード網の将来規模と、 クライアントが世界の金融取引の 100% をスケールできるかを問う。"
 isSatoshi: false
 tags:
   - "correspondence"
