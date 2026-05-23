@@ -18,6 +18,7 @@ quotes:
     date: "2010-12-05T09:08:08.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
   - id: "q2"
+    parent: "q1"
     person: "RHorning"
     personSlug: "rhorning"
     date: "2010-12-04T22:17:44.000Z"
