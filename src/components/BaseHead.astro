@@ -168,7 +168,20 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
     "url": resolvedCanonical,
     ...(publishedTime ? { "datePublished": publishedTime.toISOString() } : {}),
     ...(modifiedTime ? { "dateModified": modifiedTime.toISOString() } : {}),
-    ...(author ? { "author": { "@type": "Person", "name": author } } : {}),
+    ...(author
+      ? {
+          "author":
+            author === siteName
+              // Bitcoin Institute is the publishing Organization, not a
+              // Person. Reference the Organization node emitted below
+              // by its @id so the graph has a single canonical node
+              // for the institute instead of an inline Person duplicate.
+              // (Forced for editorial types by pages/entries/[...slug].astro
+              // and the JA mirror per STYLE_GUIDE.md § Editorial Entries.)
+              ? { "@id": organizationId }
+              : { "@type": "Person", "name": author },
+        }
+      : {}),
     "publisher": {
       "@id": organizationId,
     },
