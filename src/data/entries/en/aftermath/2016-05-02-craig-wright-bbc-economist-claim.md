@@ -57,4 +57,4 @@ Wright promised to provide further evidence but never did. He later published a 
 <!-- audit:quote-skip -->
 > "I'm sorry. I believed that I could do this. I believed that I could put the years of anonymity and hiding behind me. But I can't."
 
-*[Context: In March 2024, the UK High Court definitively [ruled in COPA v. Wright](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) that Craig Wright is not Satoshi Nakamoto, finding that he had "lied to the court extensively and repeatedly" and that documents submitted as evidence were forgeries.]*
+In March 2024, the UK High Court definitively [ruled in COPA v. Wright](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) that Craig Wright is not Satoshi Nakamoto, finding that he had "lied to the court extensively and repeatedly" and that documents submitted as evidence were forgeries.

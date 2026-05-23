@@ -88,4 +88,4 @@ The blog post caused an immediate media firestorm. Bitcoin's price briefly dropp
 
 In a historical irony, Bitcoin's price would rise dramatically in the years following Hearn's departure — reaching nearly $20,000 by December 2017, and eventually exceeding $60,000. Technologies such as Segregated Witness (SegWit) and the Lightning Network were introduced to address the scaling challenge through alternative approaches.
 
-*[Context: Hearn later reflected in a 2018 Reddit AMA on r/btc that the Bitcoin Cash community should "liberate themselves from just proceeding along the path Satoshi imagined and be willing to think radical, even heretical thoughts."]*
+Hearn later reflected in a 2018 Reddit AMA on r/btc that the Bitcoin Cash community should "liberate themselves from just proceeding along the path Satoshi imagined and be willing to think radical, even heretical thoughts."
