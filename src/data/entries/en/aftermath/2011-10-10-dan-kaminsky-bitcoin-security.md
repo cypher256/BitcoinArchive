@@ -49,8 +49,6 @@ relatedEntries:
 >
 > "Either there's a team of people who worked on this," he said, "or this guy is a genius."
 
----
-
 Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas, where he separately revealed an [ASCII-art memorial to Len Sassaman that he had embedded in the Bitcoin blockchain](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) following Sassaman's death three months earlier. In 2013, he told CoinDesk that "the core technology actually works, and has continued to work, to a degree not everyone predicted."
 
 Kaminsky was famous for discovering a critical DNS vulnerability in 2008. He passed away on April 23, 2021.
