@@ -46,4 +46,4 @@ Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/
 <!-- audit:quote-skip -->
 > "This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."
 
-*[Editor: Dai's comment references the [email Satoshi sent him on August 22, 2008](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), which included a pre-release draft of the Bitcoin whitepaper. Despite receiving this direct outreach, Dai never replied with feedback on the paper's design.]*
+Dai's comment references the [email Satoshi sent him on August 22, 2008](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), which included a pre-release draft of the Bitcoin whitepaper. Despite receiving this direct outreach, Dai never replied with feedback on the paper's design.

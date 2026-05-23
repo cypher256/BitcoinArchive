@@ -57,7 +57,7 @@ This sentence is the explicit pre-Bitcoin proposal of the configuration Bitcoin 
 
 **Seven monetary-design issues identified by Back**
 
-*[Editor: the seven issues below are the editor's structured summary of Back's analysis. The original message is available in full at the cryptoanarchy.wiki archive linked under `sourceUrl`; readers checking specific phrasing should consult the archived original.]*
+The seven issues below are the editor's structured summary of Back's analysis. The original message is available in full at the cryptoanarchy.wiki archive linked under `sourceUrl`; readers checking specific phrasing should consult the archived original.
 
 1. **Inflation under Moore's-Law hardware decline.** The cost of the hardware required to compute a given hash-collision falls in line with Moore's law. Hardware-cost decline produces mint-cost decline, which produces inflationary pressure on the value of newly-minted units.
 2. **Borrowed-resource exploitation.** A user with access to a population of workstations they do not personally own (Back's example: a student with access to a campus full of workstations) can obtain effectively-free CPU time, undermining the cost-as-value-floor assumption.
@@ -73,7 +73,7 @@ Wei Dai [replied to Back's critique on December 7, 1998](/BitcoinArchive/entries
 
 **Mapping Back's 1998 issues to Bitcoin's design ten years later**
 
-*[Editor: the table below is the editor's structured comparison.]*
+The table below is the editor's structured comparison.
 
 | Back 1998-12-06 issue | Bitcoin's resolution |
 |---|---|
