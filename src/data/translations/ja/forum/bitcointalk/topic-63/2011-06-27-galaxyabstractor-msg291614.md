@@ -18,6 +18,7 @@ quotes:
     date: "2011-06-26T14:47:21.000Z"
     sourceEntryId: "forum/bitcointalk/topic-63/2011-06-26-krepta3000-msg286664"
   - id: "q2"
+    parent: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-02-23T22:15:41.000Z"

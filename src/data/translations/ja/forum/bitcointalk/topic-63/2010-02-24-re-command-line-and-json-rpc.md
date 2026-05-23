@@ -21,6 +21,7 @@ quotes:
     date: "2010-02-23T18:07:37.000Z"
     sourceEntryId: "forum/bitcointalk/topic-63/2010-02-24-theymos-msg467"
   - id: "q2"
+    parent: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-02-23T13:15:41.000Z"
