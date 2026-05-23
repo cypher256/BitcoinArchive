@@ -166,6 +166,16 @@ const RULES = [
   // - 米国の取引所 Coinbase Global (「コインベース・グローバル」) — 別概念
   { type: 'literal', deprecated: 'コインベース取引', canonical: 'コインベーストランザクション', reason: 'protocol 用語の full form は「コインベーストランザクション」 で統一 (§ II.3)。「コインベース取引」 は「取引所 ( = exchange )」 への連想と衝突するため非推奨' },
   { type: 'literal', deprecated: 'コインベース・トランザクション', canonical: 'コインベーストランザクション', reason: '中黒なし表記で統一 (Archive 内多数派、 「トランザクション」 命名体系と一貫)' },
+  // English `coinbase` を JA 散文中で使うのも非推奨 (§ II.3 のカタカナ化方針)。
+  // `coinbase アドレス` / `coinbase 出力` / `coinbase トランザクション` 等は
+  // word-boundary で1語ずつ「コインベース」 に置換される (compound 側は手動で
+  // スペース除去等の整形が必要だが、 「coinbase」 を引っ掛けることが先)。
+  // コード識別子 (例えば YAML field 名 `coinbase` や CoinbaseAddress() 関数名) は
+  // maskNonProse のコードブロック/インラインコード除外で対応。
+  { type: 'word', deprecated: 'coinbase', canonical: 'コインベース', reason: '§ II.3 / § 8 方針。 protocol 用語の coinbase は JA 散文ではカタカナ「コインベース」 に統一。 コード識別子 (CoinbaseAddress, coinbase field 等) は word boundary とコードブロック除外で残る' },
+  // Satoshi v0.1 UI の歴史的訳語「生成トランザクション」 は引用文中の保持のみ
+  // (blockquote masking で除外される)。 散文での新規使用は「コインベーストランザクション」 へ。
+  { type: 'literal', deprecated: '生成トランザクション', canonical: 'コインベーストランザクション', reason: '§ II.3。 Satoshi v0.1 UI の歴史的訳語、 引用ブロック内は maskNonProse で除外される。 散文中の新規使用は「コインベーストランザクション」 に統一' },
 
   // --- 暗号資産名 (派生通貨・他通貨) のカナ化 ---
   // STYLE_GUIDE_JA.md § II.3 用語集に従い、日本では一般名としてカナが定着している
