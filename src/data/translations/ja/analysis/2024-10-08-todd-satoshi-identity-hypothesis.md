@@ -4,7 +4,7 @@ date: 2024-10-08T00:00:00Z
 type: "analysis"
 source: "hbo"
 sourceUrl: "https://www.hbo.com/movies/money-electric-the-bitcoin-mystery"
-author: "Bitcoin Institute"
+author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"

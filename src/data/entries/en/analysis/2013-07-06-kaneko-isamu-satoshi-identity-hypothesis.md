@@ -4,7 +4,7 @@ date: 2013-07-06T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
-author: "Bitcoin Institute"
+author: "Isamu Kaneko"
 participants:
   - name: "Isamu Kaneko"
     slug: "isamu-kaneko"
