@@ -18,6 +18,7 @@ quotes:
     date: "2010-07-30T18:30:40.000Z"
     sourceEntryId: "forum/bitcointalk/topic-611/2010-07-30-jgarzik-msg6687"
   - id: "q2"
+    parent: "q1"
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-07-30T13:18:06.000Z"

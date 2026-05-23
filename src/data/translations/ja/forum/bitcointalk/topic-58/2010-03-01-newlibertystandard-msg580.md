@@ -18,6 +18,7 @@ quotes:
     date: "2010-03-01T01:06:07.000Z"
     sourceEntryId: "forum/bitcointalk/topic-58/2010-03-01-xunie-msg579"
   - id: "q2"
+    parent: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-02-21T03:43:48.000Z"
