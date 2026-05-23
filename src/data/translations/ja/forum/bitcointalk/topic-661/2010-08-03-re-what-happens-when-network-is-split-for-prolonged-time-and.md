@@ -21,6 +21,7 @@ quotes:
     date: "2010-08-03T10:02:13.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-knightmb-msg7303"
   - id: "q2"
+    parent: "q1"
     person: "gavinandresen"
     personSlug: "gavin-andresen"
     date: "2010-08-03T09:38:44.000Z"

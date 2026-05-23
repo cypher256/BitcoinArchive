@@ -18,6 +18,7 @@ quotes:
     date: "2010-08-03T22:28:27.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-freemoney-msg7351"
   - id: "q2"
+    parent: "q1"
     person: "creighto"
     date: "2010-08-03T20:01:22.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-moonshadow-msg7314"
