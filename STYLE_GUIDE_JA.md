@@ -279,7 +279,7 @@ quotes:
 > 2 つ目の質問...
 ```
 
-**理由:** `<!-- quote: qN -->` は renderer によって冒頭メタデータ `quotes[N]` の attribution chip (「マイク・ハーンの投稿」 等) に変換される。同じ qN を同一ファイルで繰り返すと、同じ chip が引用ブロック数だけ並んで表示され、視覚的にうるさく、また「異なる送信元から繰り返し引用している」 という誤った意味を読者に与える。q1 の `sourceEntryId` は同じ 1 通を指しているので、chip も 1 回だけが正しい。
+**理由:** `<!-- quote: qN -->` は renderer によって冒頭メタデータ `quotes[N]` の attribution chip (例: `correspondence/mike-hearn/*` を指す場合「マイク・ハーンのメール」、 `forum/bitcointalk/*` を指す場合「マイク・ハーンの投稿」 — 下記「JA chip 文言の種別化」 参照) に変換される。同じ qN を同一ファイルで繰り返すと、同じ chip が引用ブロック数だけ並んで表示され、視覚的にうるさく、また「異なる送信元から繰り返し引用している」 という誤った意味を読者に与える。q1 の `sourceEntryId` は同じ 1 通を指しているので、chip も 1 回だけが正しい。
 
 **例外:** 異なる送信元の引用が混在する場合 (例: サトシがハル・フィニーとウェイ・ダイの両方を 1 通の中で引用) は、各送信元ごとに別の `qN` を用意し、各々の最初の引用に `<!-- quote: qN -->` を置く。送信元が切り替わるため chip は 2 種類表示されて正しい。
 
@@ -288,6 +288,26 @@ quotes:
 **EN/JA parity:** 本ルールは marker 配置のルールであり、EN/JA 両方で同じ配置にする。片方だけマーカーを追加して `verify-translations.sh` の marker count を狂わせない。
 
 **検出:** `scripts/check-quotes.mjs` の `speaker-named-no-quote-marker` チェックは、 speaker NAME が同一ファイルの既存 `<!-- quote: qN -->` の `quotes[N].person` (または `personSlug` 経由の和名) と一致し、**かつ `quotes[]` 内に同一人物の qN が 1 件しかない**場合、 その speaker は既存の鎖の継続と判定して非フラグにする。 同一人物の qN が 2 件以上ある場合は曖昧解消のため明示マーカーを要求する (上記「同一人物・別送信元の曖昧解消」 参照)。
+
+### JA chip 文言の種別化
+
+`<!-- quote: qN -->` から生成される JA attribution chip は、引用元の媒体 (個人メール / メーリングリスト / フォーラム / GitHub PR / BIP 提案) に合わせて末尾の名詞を変える。 これは `quotes[N].sourceEntryId` のパス先頭で機械的に判定される ([src/lib/remark-quote-blocks.mjs](src/lib/remark-quote-blocks.mjs) の `getJaSourceTypeLabel()`)。
+
+| `sourceEntryId` のパス先頭 | JA chip 文言 |
+|---|---|
+| `correspondence/*` | `${name}のメール（${date}）` |
+| `forum/github/*` | `${name}のコメント（${date}）` |
+| `bip/*` | `${name}の提案（${date}）` |
+| `emails/*` (メーリングリスト)、 `forum/bitcointalk/*`、 `forum/p2pfoundation/*` 等 | `${name}の投稿（${date}）` |
+| (`sourceEntryId` 不在) | `${name}からの引用（${date}）` (中立形) |
+
+**理由:** 日本語の「投稿」 は通常 ML / フォーラム等の公開発信を指し、 個人メールは普通「投稿」 と呼ばない。 種別を一律「投稿」 で固定すると `correspondence/*` 系の引用 chip (例: 「マルッティ・マルミの投稿」 — 実体はサトシ宛の私信) で違和感が出る。 `sourceEntryId` のパスから機械的に判定すれば、 個別 quote ごとに編集者が指定する必要なく自然な文言になる。
+
+**`sourceEntryId` 不在時に「投稿」 と決め打ちしない理由:** 種別が判らない場合に「投稿」 を選ぶと今回直したい問題が別形で再発する (実体が個人メールでも「投稿」 と表示される)。 種別不明は中立形「xxxからの引用」 にフォールバックする。
+
+**EN 側は変更なし:** EN の chip は `Quote from: ${name} on ${date}` で既に中立。 媒体名を含めない設計なので種別判定不要。
+
+**新規分類の追加:** 将来 telegram、 twitter 等の新しい媒体が `src/data/entries/` 配下に追加された場合、 `getJaSourceTypeLabel()` に新しい分岐を追加する。 ガイドの上表も同時に更新する。
 
 ### 引用が絡む英文段落の翻訳一貫性
 

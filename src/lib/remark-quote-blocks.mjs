@@ -106,6 +106,27 @@ function formatDate(date, locale) {
 }
 
 /**
+ * Pick the JA noun that fits the source's medium, based on the
+ * `sourceEntryId` path prefix. Returns null when the medium cannot
+ * be determined (no sourceEntryId), so the caller can fall back to
+ * a neutral form rather than guessing `投稿`. Mapping:
+ *   correspondence/*   → メール  (1-on-1 private email)
+ *   forum/github/*     → コメント (PR / issue comment)
+ *   bip/*              → 提案    (BIP proposal; reserved for future use)
+ *   default            → 投稿    (mailing-list post / BitcoinTalk thread
+ *                                  reply / P2P Foundation comment etc.)
+ * Default is `投稿` only when we *know* the source is a public posting
+ * medium; missing sourceEntryId returns null so the chip stays generic.
+ */
+function getJaSourceTypeLabel(sourceEntryId) {
+  if (!sourceEntryId) return null;
+  if (sourceEntryId.startsWith('correspondence/')) return 'メール';
+  if (sourceEntryId.startsWith('forum/github/')) return 'コメント';
+  if (sourceEntryId.startsWith('bip/')) return '提案';
+  return '投稿';
+}
+
+/**
  * Generate attribution HTML.
  */
 function formatAttribution(quote, locale, base) {
@@ -123,7 +144,13 @@ function formatAttribution(quote, locale, base) {
 
   let text;
   if (locale === 'ja') {
-    text = date ? `${name}の投稿（${date}）` : (name ? `${name}の投稿` : '引用');
+    const kind = getJaSourceTypeLabel(quote.sourceEntryId);
+    if (kind) {
+      text = date ? `${name}の${kind}（${date}）` : (name ? `${name}の${kind}` : '引用');
+    } else {
+      // sourceEntryId 不在: 種別を断定せず中立形にフォールバック
+      text = date ? `${name}からの引用（${date}）` : (name ? `${name}からの引用` : '引用');
+    }
   } else {
     text = date ? `Quote from: ${name} on ${date}` : (name ? `Quote from: ${name}` : 'Quote');
   }
