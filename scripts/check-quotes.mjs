@@ -189,13 +189,19 @@ function detectLegacyAttributionLines(body) {
     if (raw.startsWith('>')) continue;
     if (t.startsWith('<!--')) continue;
 
-    // Find next significant line
+    // Find next significant line. Also track whether the next
+    // blockquote is covered by <!-- audit:quote-skip --> — if so, the
+    // user has already opted out of structured-quote conversion for
+    // that chain, so the attribution-prose warning is redundant and
+    // should be suppressed (consistent with blockquote-no-marker).
     let nextIsBlockquote = false;
+    let coveredByAuditSkip = false;
     for (let j = i + 1; j < lines.length; j++) {
       const r = lines[j];
       const rt = r.trim();
       if (rt === '') continue;
       if (rt.startsWith('<!--')) {
+        if (/^<!--\s*audit:quote-skip\s*-->/.test(rt)) { coveredByAuditSkip = true; continue; }
         // skip skippable HTML comments + speaker markers + quote markers
         if (SPEAKER_HTML_RE.test(rt) || QUOTE_MARKER_HTML_RE.test(rt) || SKIPPABLE_LINE_HTML_RE.test(rt)) continue;
         break;
@@ -206,6 +212,7 @@ function detectLegacyAttributionLines(body) {
       break;
     }
     if (!nextIsBlockquote) continue;
+    if (coveredByAuditSkip) continue;
 
     // Now this line is a candidate preceding a blockquote.
     let kind = null;
