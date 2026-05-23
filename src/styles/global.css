@@ -963,6 +963,28 @@ a[href^="#"]:hover {
      width: 1px }`), which wins on specificity against an external rule. */
   stroke-width: 2.5 !important;
 }
+/* Mermaid emits `<br/>` line breaks inside flowchart node labels (and
+   gantt / state / class diagrams that also use HTML labels). hast-util-to-html
+   serializes the SVG subtree in 'svg' mode, where `<br>` is not in the void-
+   element list — so each `<br>` round-trips as `<br></br>` (paired empty
+   element). Browsers parse `<br></br>` as TWO `<br>` elements (the orphan
+   close is leniently rewritten to a second open), producing one extra line
+   break per source `<br/>`. Mermaid sized the foreignObject for the original
+   break count, so each doubled break pushes content past the foreignObject's
+   height — labels with N source breaks render at 2N breaks, clipping the
+   later lines.
+
+   Fix by hiding every even-position `<br>` within its `<p>` parent. The
+   first DOM `<br>` of each `<br></br>` pair sits at an odd position (1,
+   3, 5, ...) and stays visible; the second sits at an even position (2,
+   4, 6, ...) and gets removed from layout. The visible count then equals
+   the original source `<br/>` count, restoring Mermaid's intended height.
+   Pure CSS workaround because rehype-raw is not in this project's
+   pipeline, so a HAST-level substitution to a raw `<br>` would be dropped
+   during serialization. */
+.mermaid-scroll svg foreignObject p br:nth-of-type(even) {
+  display: none;
+}
 /* No viewport breakout for Mermaid: figures stay inside the
    reading-tier container (`--max-width-read` = 1000px) and align
    with the surrounding prose. If a diagram is wider than the
