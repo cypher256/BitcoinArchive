@@ -312,6 +312,24 @@ quotes:
 
 検証: `npm run audit:quote-translation-consistency` (= `scripts/check-quote-translation-consistency.mjs`) が「少なくとも 1 箇所が `>` 引用ブロックで使われている同一英語段落の訳語ずれ」 を段落単位で検出して警告する。表記揺れ (全角半角の数字、Markdown 強調記号周辺のスペース、Japanese-ASCII 境界スペース等) は本スクリプトの正規化で吸収するので、報告は実質的な訳語の差にほぼ絞られる。`check:` 系ではなく `audit:` 系に置いているため、既存の差があっても build を阻害しない。新規翻訳の追加直後と、ずれを修正する作業の前後に手動で実行する運用。
 
+### 編者注 / 補足 ( Role C / D ) — エントリー型別の使い分け
+
+`STYLE_GUIDE.md § Editorial Markers` の Role C ( `*[編者注：...]*` ) と Role D ( `*[補足：...]*` ) を日本語エントリーで使うときの判断基準。 STYLE_GUIDE.md rule 13 ( 0523 編者注/補足 地の文化計画 ) と整合。
+
+**editorial entries ( `article` / `analysis` / `biography` ) の場合:**
+
+- 本文相当の事実 ( 関連事実、 後日譚、 経歴、 続報、 現代価値換算、 節導入文 ) は **本文に地の文として書く**。 Role C / D 枠に押し込まない。
+- Role C / D 枠を使うのは:
+  - Role C ( `*[編者注：...]*` ): 編者の解釈 / 読み方 / 立場明示 ( 本文に書くと編集者の越権に見える場合 )
+  - Role D ( `*[補足：...]*` ): 別主題の隣接コンテクスト、 関連エントリーへの簡潔なポインタ ( 本文に書くと流れを切る場合 )
+- 真に補足的な内容 ( メタ的な編集方針宣言、 出典信頼性メモ、 「今後の調査で更新」 等の TODO ) は Role C / D 枠維持。
+
+**primary-source entries ( `correspondence` / `mailing-list` / `forum-post` / `whitepaper` / `bip` / `court-document` ) の場合:**
+
+「本文に編集者の語り手を混ぜない」 原則 ( `STYLE_GUIDE.md § Primary-Source Entries` ) を守るため、 短い編者注は Role C / D 枠維持、 長めのコンテクストは `editorNote:` ( Role A、 冒頭メタデータ ) に移行。 本文の地の文化はしない ( 一次資料に編集者の語り手を侵入させる事故になる )。
+
+**過去事例:** dan-kaminsky の末尾「補足」 ( 関連事実: Black Hat 講演 / CoinDesk 2013 発言 / DNS 脆弱性 / 死去 ) を地の文化済 ( 2026-05-23 commit 2bf840d0 + ecaa3f2a )。 editorial entry での「本文相当の事実が枠に押し込まれている」 典型例。
+
 ## 5. BitcoinTalk 絵文字ラベル
 
 BitcoinTalk フォーラムのテキスト形式の絵文字ラベル (`Smiley`、`Cheesy`、`Wink` 等) は Unicode 絵文字に変換する。元の投稿者は絵文字を表示することを意図していたのであり、英語のラベル単語を表示しようとしたのではない。これらのラベルは HTML から Markdown へのスクレイピングの過程で残った `<img alt="Smiley" />` タグの代替テキストにすぎない。
