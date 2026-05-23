@@ -1,5 +1,5 @@
 ---
-title: "Final email from Satoshi to Malmi"
+title: "Satoshi's final email in the Malmi archive — a reply to Gavin (with Martti looped in)"
 date: 2011-02-22T19:49:19Z
 type: "article"
 source: "malmi-email-archive"
@@ -9,9 +9,11 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "Satoshi's last known email in the Malmi archive (Feb 22, 2011) — a three-way reply to Gavin and Martti, transferring the bitcoin-list mailman admin password as PGP-encrypted blocks."
+description: "Satoshi's last email in the Malmi archive (Feb 22, 2011). Reply to Gavin (Martti in third person), handing over the bitcoin-list mailman password as PGP blocks to each."
 isSatoshi: true
 tags:
   - "correspondence"
@@ -40,7 +42,7 @@ quotes:
     sourceEntryId: "correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260"
 ---
 
-On February 22, 2011, Satoshi Nakamoto sent [what would be his final email in the Malmi archive](/BitcoinArchive/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/) — a three-way reply to Gavin Andresen and Martti Malmi on the "0.3.20 release : shipped" thread. Gavin had asked for permission (or the encrypted password) to post release announcements to the SourceForge `bitcoin-list` mailing list. Satoshi's reply transferred that responsibility:
+On February 22, 2011, Satoshi Nakamoto sent [what would be his final email in the Malmi archive](/BitcoinArchive/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/). The raw header shows both Gavin Andresen and Martti Malmi in the `To:` field on the "0.3.20 release : shipped" thread, but the body itself is a reply to Gavin — Satoshi addresses Gavin in the second person ("Martti should give *you* the Drupal admin password") and refers to Martti in the third person, looping him in so he knows to perform the handoff Satoshi is delegating. Gavin had asked Satoshi for permission (or the encrypted password) to post release announcements to the SourceForge `bitcoin-list` mailing list. Satoshi's reply transferred that responsibility:
 
 <!-- quote: q1 -->
 > Martti should give you the Drupal admin password.

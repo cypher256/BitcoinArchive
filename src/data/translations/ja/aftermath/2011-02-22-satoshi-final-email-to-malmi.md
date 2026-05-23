@@ -1,5 +1,5 @@
 ---
-title: "サトシからマルミへの最後のメール"
+title: "マルミアーカイブにおけるサトシ最後のメール ― ギャビン宛の返信（マルッティ同報）"
 date: 2011-02-22T19:49:19Z
 type: "article"
 source: "malmi-email-archive"
@@ -9,9 +9,11 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+  - name: "Gavin Andresen"
+    slug: "gavin-andresen"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミアーカイブ最後のサトシ既知メール（2011年2月22日）。ギャビンとマルッティ宛、bitcoin-list mailman 管理者パスワードを PGP 暗号化で移譲。"
+description: "マルミアーカイブ最後のサトシ既知メール（2011年2月22日）。実体はギャビンへの返信——本文は二人称でギャビンに語りかけ、マルッティは三人称で言及する形でパスワード移譲を依頼。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -42,7 +44,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2011年2月22日、サトシ・ナカモトは[マルミアーカイブにおける最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/)を送信した。「0.3.20 リリース：配布完了」スレッドの、ギャビン・アンドレセンとマルッティ・マルミ宛の三者間返信である。ギャビンは SourceForge の `bitcoin-list` メーリングリストにリリース告知を投稿する権限（または暗号化されたパスワード）を求めていた。サトシの返信はその責務を移譲した：
+2011年2月22日、サトシ・ナカモトは[マルミアーカイブにおける最後の既知のメール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/)を送信した。生 header では「0.3.20 リリース：配布完了」スレッドの To: 欄にギャビン・アンドレセンとマルッティ・マルミの両名が並んでいるが、本文の実体はギャビンへの返信である——サトシは二人称でギャビンに語りかけ（「マルッティが*君に* Drupal の管理者パスワードを渡してくれるはずだ」）、マルッティは三人称で言及し、引き継ぎ実行のため To: に同報した形になっている。ギャビンはサトシに対し、SourceForge の `bitcoin-list` メーリングリストにリリース告知を投稿する権限（または暗号化されたパスワード）を求めていた。サトシの返信はその責務を移譲した：
 
 <!-- quote: q1 -->
 > マルッティが Drupal の管理者パスワードを渡してくれるはずだ。
