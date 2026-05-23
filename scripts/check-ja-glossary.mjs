@@ -153,6 +153,20 @@ const RULES = [
   // 「システム作者・実装者・運用者」 の総体を指す pseudonym 意では狭すぎる。
   { type: 'literal', deprecated: 'ペンネーム', canonical: '仮名', reason: 'pseudonym/byline 意は「仮名」 で統一（§ II.3 Canonical mappings）。「ペンネーム」 は作家寄りの語感で、サトシのようなシステム作者・実装者・運用者の総体には狭い' },
 
+  // --- coinbase transaction (プロトコル用語) の表記統一 ---
+  // STYLE_GUIDE_JA.md § II.3 用語集に従い、 protocol 用語の「coinbase transaction」 は
+  // full form を `コインベーストランザクション` で統一する (Archive 内既存使用が最多、
+  // 「トランザクション」 命名体系と一貫、 「取引」 = 取引所連想との衝突を避ける)。
+  // 修飾語付き compound (コインベース報酬 / コインベース出力 等) や、 full form を
+  // 一度示した後の continuation は素の `コインベース` でよい。
+  //
+  // 対象外:
+  // - Satoshi v0.1 UI の歴史的訳語「生成トランザクション」 を引用文中に保持する場合
+  //   (>blockquote 内は maskNonProse で除外される)
+  // - 米国の取引所 Coinbase Global (「コインベース・グローバル」) — 別概念
+  { type: 'literal', deprecated: 'コインベース取引', canonical: 'コインベーストランザクション', reason: 'protocol 用語の full form は「コインベーストランザクション」 で統一 (§ II.3)。「コインベース取引」 は「取引所 ( = exchange )」 への連想と衝突するため非推奨' },
+  { type: 'literal', deprecated: 'コインベース・トランザクション', canonical: 'コインベーストランザクション', reason: '中黒なし表記で統一 (Archive 内多数派、 「トランザクション」 命名体系と一貫)' },
+
   // --- 暗号資産名 (派生通貨・他通貨) のカナ化 ---
   // STYLE_GUIDE_JA.md § II.3 用語集に従い、日本では一般名としてカナが定着している
   // 派生通貨・アルトコイン名はカナ形に統一する。Wikipedia ja・主要取引所が出典。

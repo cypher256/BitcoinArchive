@@ -684,6 +684,7 @@ description が現状で上限を超えている場合は、**収まるように
 | Merkle tree | マークルツリー | マークル木 / merkleツリー / Merkle Tree | 全カタカナ形を用いる。MAST 用語の `マークル化抽象構文木` は別概念 |
 | Merkle branch | マークルブランチ | マークル分岐 / merkleブランチ | コード識別子 `getmerklebranch` とタグ `merkle-branch` は対象外 |
 | The Times (newspaper) | タイムズ | The Times (本文散文中) | ジェネシスブロックのコインベース文字列 `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks` は史実の記録としてそのまま保持する。`secondarySources` の `name` フィールドもそのまま保持する |
+| coinbase transaction (プロトコル用語) | コインベーストランザクション | コインベース取引 / コインベース・トランザクション / 生成トランザクション | full form は `コインベーストランザクション` (正典)。 文脈が明確で修飾語付き compound (`コインベース報酬` / `コインベース出力` / `コインベース成熟` / `コインベースメッセージ`) になっている場合や、 一度 full form を示したあとの continuation は素の `コインベース` でよい。 `コインベース取引` は「取引所 ( = exchange )」 への連想と衝突するため非推奨。 `生成トランザクション` は Satoshi v0.1 UI の歴史的訳語で、 引用文中の保持のみ (新規 entry では使わない)。 米国の暗号資産取引所 Coinbase Global (「コインベース・グローバル」) との混同を避ける必要がある場合は full form を選ぶ |
 | signature (暗号学的) | 署名 | — | Schnorr / ECDSA / メッセージ署名の語義は `署名` を正規とする |
 | signature (仮名 / 署名行) | 仮名 | 署名、ペンネーム | 仮名としての語義 (例: "the signature 'Satoshi Nakamoto'") は暗号学的語義と衝突するため `仮名` を用いる。`ペンネーム` も非推奨 — 作家・著者の語感が強く、システム設計・実装・運用の身元 (サトシは白書だけでなく v0.1 コードベースとネットワーク運用の身元でもある) を覆う仮名には狭すぎる。 |
 | signature (フォレンジック指紋) | 指紋 | 署名 | Patoshi 系のフォレンジック指紋 (例: マイニング指紋、ナンス指紋) は `指紋` を用いる |
