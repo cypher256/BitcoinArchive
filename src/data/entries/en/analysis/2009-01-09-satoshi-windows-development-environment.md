@@ -123,6 +123,21 @@ Within Phase 1, the seven post-release months (January–August 2009) overlap wi
 
 Four independent observations — Visual C++ 6.0 as build toolchain, Hungarian notation throughout the code, `.rar` Windows-only packaging, and the absence of any team-development tooling — all fit a single Windows-side, individually-working developer profile across the full 27-month period.
 
+### 2.5 OSS library dependencies — active as a consumer
+
+The same `readme.txt` lists Bitcoin v0.1.3's external library dependencies:
+
+| Library | Role | License |
+|---|---|---|
+| **wxWidgets** | Cross-platform GUI framework | LGPL 2.1 |
+| **OpenSSL** | Cryptography (ECDSA, SHA, BIGNUM) | Old BSD |
+| **Berkeley DB** | Embedded key-value store (`wallet.dat` etc.) | New BSD |
+| **Boost** | General C++ utilities (thread, asio, filesystem) | MIT-like |
+
+Bitcoin itself ships under MIT/X11 — a permissive OSS license also documented at the top of the same `readme.txt`.
+
+This places Satoshi unambiguously in the OSS-*user* population. "Did not know OSS exists" is not a tenable reading: v0.1 wires four major OSS libraries together and ships under an OSS license itself. What Phase 2 (§3 below) documents is a different observation — Satoshi was reluctant on the OSS *community-conventions* layer (autoconf, license-thread participation, etc.). The shape is **active as a library consumer, passive as a community participant** — a configuration not unusual for solo developers who treat OSS as a toolset rather than as a culture to join.
+
 ## 3. Phase 2 — reactive Linux support (~16 months)
 
 Linux enters the record on August 24, 2009. From this point through late 2010, every Linux mention in Satoshi's correspondence sits in the context of supporting work that someone else is doing — almost entirely Martti Malmi's port and NewLibertyStandard's user-side testing on the resulting Linux build.
@@ -143,6 +158,8 @@ The team-development tooling absence partially closes during Phase 2: Malmi crea
 - **2010-09-12 (BitcoinTalk "Switch to GPL")**: in the [community-initiated license thread](/BitcoinArchive/entries/forum/bitcointalk/topic-989/2010-09-12-re-switch-to-gpl/), Satoshi compares MIT / Boost / new-BSD / public domain / GPL trade-offs and remarks that for small projects "the fear of a closed-source takeover is overdone." License-comparison competence is on display, at the practical-not-theoretical level.
 
 The weaker claim these three datapoints establish is only that Satoshi was not entirely OSS-conventions-ignorant. Whether each response reflects prior familiarity or just-in-time investigation after the prompt cannot be decided from the messages themselves. What is clear is the response *shape*: across all three, the choice was to keep adoption minimal. They are also all **reactive**: each surfaces because a community participant raised it, not because Satoshi initiated the topic. The pattern matches the Linux one — Phase 1 silence, Phase 2 reactive engagement, minimalist responses.
+
+Read together with [§2.5](#25-oss-library-dependencies--active-as-a-consumer), the picture sharpens: at the library layer Satoshi was an active OSS consumer (wxWidgets / OpenSSL / Berkeley DB / Boost, all from Phase 1), but at the community-conventions layer (autoconf, license-thread participation, GitHub culture) Satoshi remained passive. The split is *consumer-active, contributor-passive* — a real and recurrent profile among solo developers, not a contradiction.
 
 **Almost every non-Windows / non-Microsoft technical contact in Satoshi's record was introduced by a third party.** A consolidated view across Phase 2 and Phase 3:
 
