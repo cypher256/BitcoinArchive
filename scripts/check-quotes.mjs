@@ -665,9 +665,14 @@ function checkFile(filePath, locale) {
         auditSkipActive = true;
         continue;
       }
-      const nm = line.match(/^(>+)\s*<!--\s*quote:\s*(\w+)\s*-->/);
+      // Match both compact ">>" and space-separated "> > " markdown
+      // blockquote prefixes; depth = number of '>' characters in the
+      // prefix (regardless of spacing). Without this, the previous
+      // tight ^(>+) regex missed depth-N markers written with spaces
+      // (the more common markdown form).
+      const nm = line.match(/^((?:>\s*)+)<!--\s*quote:\s*(\w+)\s*-->/);
       if (!nm) continue;
-      const depth = nm[1].length;
+      const depth = (nm[1].match(/>/g) || []).length;
       const qid = nm[2];
       const q = quotes.find(x => x && x.id === qid);
       if (!q) continue;
