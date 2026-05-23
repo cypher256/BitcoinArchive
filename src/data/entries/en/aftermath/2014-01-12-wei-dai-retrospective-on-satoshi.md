@@ -61,7 +61,7 @@ Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/
 
 He noted that if Satoshi were primarily motivated by money, "he would have sold at least some of his mined Bitcoins in order to spend or to diversify."
 
-*[Context: Wei Dai also expressed that Satoshi "might have been motivated more by a distrust of financial institutions and government monetary authorities and wanted to create a monetary system that didn't have to depend on such trust."]*
+Wei Dai also expressed that Satoshi "might have been motivated more by a distrust of financial institutions and government monetary authorities and wanted to create a monetary system that didn't have to depend on such trust."
 
 ---
 

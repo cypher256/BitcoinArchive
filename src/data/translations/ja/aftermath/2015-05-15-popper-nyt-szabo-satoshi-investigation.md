@@ -78,6 +78,6 @@ translationStatus: complete
 
 ポパーの特定は、先行する Skye Grey と同様、文体計量的・状況証拠的なものであり、法的鑑定的なものではない。コード・鍵・メールメタデータ・資金経路のいずれもサボに紐づけられていない。本仮説は概念的近接（Bit Gold → ビットコイン）と、執筆および経歴上のパターン一致に依拠する。サボの否定は名指しされた本人の公式見解である。特定に対する構造的な反論は[分析エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)で示されている。
 
-*[補足：ポパー / NYT 2015 記事および『デジタル・ゴールド』 は、刊行から 11 年が経った時点でも、主流大手紙によるサボ＝サトシ特定として最も注目度が高いものであり続けている。2026 年の[ジョン・カレイロウ / NYT 調査記事](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は、別の方法論（独立した言語学的レビュー付きの大規模集団に対する文体計量比較）を用いて[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)を首位候補に挙げた。11 年を隔てた NYT による 2 件の特定は、それぞれ異なる方法で異なる候補を名指しており、いずれも名指された当人によって否定されている。]*
+ポパー / NYT 2015 記事および『デジタル・ゴールド』 は、刊行から 11 年が経った時点でも、主流大手紙によるサボ＝サトシ特定として最も注目度が高いものであり続けている。2026 年の[ジョン・カレイロウ / NYT 調査記事](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は、別の方法論（独立した言語学的レビュー付きの大規模集団に対する文体計量比較）を用いて[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)を首位候補に挙げた。11 年を隔てた NYT による 2 件の特定は、それぞれ異なる方法で異なる候補を名指しており、いずれも名指された当人によって否定されている。
 
 ニック・サボ＝サトシ仮説の分析的検討（ポパーの根拠を、2008 年 4 月の実装要請、2011 年 5 月の三人称表現、2007〜2008 年を通した Unenumerated の継続的な投稿活動、サボの繰り返しの否定と照合する）については、[ニック・サボ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)を参照。
