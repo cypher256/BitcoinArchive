@@ -177,7 +177,7 @@ translationStatus: complete
 |---|---|---|
 | 1. プライバシーは力 | 一貫した強い個人匿名化 — 仮名ハンドル、匿名電子メールリレー（AnonymousSpeech.com）、IP で追跡可能な識別子なし、通信に身元露呈メタデータを含めない | 2020 年 CoinDesk 公開メールヘッダー、ハル・フィニー同時期通信 |
 | 2. コードを書くことが行動 | コード先行リリース、その後で説明する流れ。ホワイトペーパー告知は v0.1 の動作バイナリへ直接リンク。後の修正もコードとして出荷、声明としてではない | [v0.1 リリース投稿 2009-01-08](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)、v0.1.2 修正告知 2009-01-11 |
-| 3. 信頼は数学に置き換え、機関には預けない | ジェネシスブロックの coinbase: *"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"* — 制度的救済の文脈に対する明示的な対立位置の刻印。コンセンサスルールは完全に暗号学的検証から構築、信頼できる第三者なし | ブロック 0 coinbase、ホワイトペーパー §1 "What is needed is an electronic payment system based on cryptographic proof instead of trust" |
+| 3. 信頼は数学に置き換え、機関には預けない | ジェネシスブロックのコインベース: *"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"* — 制度的救済の文脈に対する明示的な対立位置の刻印。コンセンサスルールは完全に暗号学的検証から構築、信頼できる第三者なし | ブロック 0 コインベース、ホワイトペーパー §1 "What is needed is an electronic payment system based on cryptographic proof instead of trust" |
 | 4. 構造的な抗中央集権 | v0.1 から P2P 構造、プロトコルに中央サーバーなし。ジェネシスブロックのハードコード構造（[ジェネシス分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)参照）がブロック 0 自体まで分散構築可能にする — どのノードも手元で再構築 | v0.1 ソースコード、ホワイトペーパー §5 "Network" |
 | 5. 仮名性を公的場の基盤に | 「サトシ・ナカモト」を完全に機能する公的・経済的アイデンティティとして運用 — 論文を発表し、コードを実行し、通信を行い、帰属と引用を受け入れる — そのいずれにおいても背後の身元を一切明かさない | サトシ通信全集 2008-2011 |
 | 6. 情報の自由な流通／検閲耐性 | v0.1 ソースコードを初日から MIT ライセンスで公開、ホワイトペーパーをオープンメーリングリストに投稿、反論にはアーカイブされる公開議論で応答、ゲートキーピングを行わない | v0.1 ソースのライセンスヘッダー、cryptography メーリングリスト 2008 年 10〜11 月のスレッド |

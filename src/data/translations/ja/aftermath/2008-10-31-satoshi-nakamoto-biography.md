@@ -88,7 +88,7 @@ timeline
 
 ### ローンチ
 
-2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) のパラメーターを定義した。その coinbase 欄に埋め込まれていたのは、当日付の『タイムズ』 紙一面の見出し：
+2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) のパラメーターを定義した。そのコインベース欄に埋め込まれていたのは、当日付の『タイムズ』 紙一面の見出し：
 
 > 「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」
 

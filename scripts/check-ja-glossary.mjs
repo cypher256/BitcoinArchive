@@ -166,16 +166,25 @@ const RULES = [
   // - 米国の取引所 Coinbase Global (「コインベース・グローバル」) — 別概念
   { type: 'literal', deprecated: 'コインベース取引', canonical: 'コインベーストランザクション', reason: 'protocol 用語の full form は「コインベーストランザクション」 で統一 (§ II.3)。「コインベース取引」 は「取引所 ( = exchange )」 への連想と衝突するため非推奨' },
   { type: 'literal', deprecated: 'コインベース・トランザクション', canonical: 'コインベーストランザクション', reason: '中黒なし表記で統一 (Archive 内多数派、 「トランザクション」 命名体系と一貫)' },
+  // Mixed English + JA compound 「coinbase トランザクション」 専用ルール。
+  // generic な `coinbase` word ルール (下記) より**前**に置くことで、 編集者には
+  // 直接「コインベーストランザクション」 という最終形が示される (generic 側だと
+  // "coinbase" → "コインベース" の置換しか示されない)。
+  { type: 'literal', deprecated: 'coinbase トランザクション', canonical: 'コインベーストランザクション', reason: 'mixed English + JA の compound は full form「コインベーストランザクション」 に統一 (§ II.3)。 generic coinbase ルールより先に評価' },
   // English `coinbase` を JA 散文中で使うのも非推奨 (§ II.3 のカタカナ化方針)。
-  // `coinbase アドレス` / `coinbase 出力` / `coinbase トランザクション` 等は
-  // word-boundary で1語ずつ「コインベース」 に置換される (compound 側は手動で
-  // スペース除去等の整形が必要だが、 「coinbase」 を引っ掛けることが先)。
-  // コード識別子 (例えば YAML field 名 `coinbase` や CoinbaseAddress() 関数名) は
-  // maskNonProse のコードブロック/インラインコード除外で対応。
+  // `coinbase アドレス` / `coinbase 出力` / `coinbase 報酬` / `coinbase メッセージ` 等は
+  // word-boundary で「coinbase」 が「コインベース」 に置換される (compound 形は
+  // 結果的に「コインベース XXX」 となる; 全カタカナ compound に整形したい場合は
+  // 続けて手動でスペース除去等を行う)。 コード識別子 (例えば YAML field 名 `coinbase`
+  // や CoinbaseAddress() 関数名) は maskNonProse のコードブロック/インラインコード
+  // 除外で対応。
   { type: 'word', deprecated: 'coinbase', canonical: 'コインベース', reason: '§ II.3 / § 8 方針。 protocol 用語の coinbase は JA 散文ではカタカナ「コインベース」 に統一。 コード識別子 (CoinbaseAddress, coinbase field 等) は word boundary とコードブロック除外で残る' },
-  // Satoshi v0.1 UI の歴史的訳語「生成トランザクション」 は引用文中の保持のみ
-  // (blockquote masking で除外される)。 散文での新規使用は「コインベーストランザクション」 へ。
-  { type: 'literal', deprecated: '生成トランザクション', canonical: 'コインベーストランザクション', reason: '§ II.3。 Satoshi v0.1 UI の歴史的訳語、 引用ブロック内は maskNonProse で除外される。 散文中の新規使用は「コインベーストランザクション」 に統一' },
+  // Satoshi v0.1 UI の歴史的訳語「生成トランザクション」 は散文・引用ブロックの
+  // 区別なく「コインベーストランザクション」 に統一する (時代感は date メタデータで
+  // 担保されるため、 訳語選択を時代別に分ける運用上の利益は薄い)。 maskNonProse は
+  // frontmatter / code fence / inline code / link URL のみを対象とし、 `>` 引用
+  // ブロック内の本文はマスクしない。
+  { type: 'literal', deprecated: '生成トランザクション', canonical: 'コインベーストランザクション', reason: '§ II.3。 Satoshi v0.1 UI の歴史的訳語、 引用ブロック内も含めて「コインベーストランザクション」 に統一する (時代感は date メタデータで担保)' },
 
   // --- 暗号資産名 (派生通貨・他通貨) のカナ化 ---
   // STYLE_GUIDE_JA.md § II.3 用語集に従い、日本では一般名としてカナが定着している

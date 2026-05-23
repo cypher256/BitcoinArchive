@@ -87,7 +87,7 @@ timeline
 | 2011-04-23 | [マイク・ハーン宛メール「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 撤退表明（アンドレセンへの信任）。当時は非公開、後年公開 |
 | 2011-04-26 10:29 UTC | [最後のメール：CAlert キー譲渡](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | ネットワーク非常停止権限 |
 
-役割と一緒に**渡らなかったもの**：Patoshi マイニングパターンに紐づく約 110 万 BTC（2010 年以降オンチェーンで未移動）、サトシの匿名性そのもの、ジェネシスブロックの coinbase アドレス秘密鍵。
+役割と一緒に**渡らなかったもの**：Patoshi マイニングパターンに紐づく約 110 万 BTC（2010 年以降オンチェーンで未移動）、サトシの匿名性そのもの、ジェネシスブロックのコインベースアドレス秘密鍵。
 
 アンドレセンは [2016 年の回想](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/)で、この移行の段階性についてこう振り返っている。
 
