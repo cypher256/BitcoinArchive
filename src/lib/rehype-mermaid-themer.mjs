@@ -256,12 +256,22 @@ const COLOR_SUBSTITUTIONS = [
   // SVG attributes only use these as standalone tokens, but the inline
   // `<style>` block uses them inside CSS declarations like `fill:black;`
   // so the boundary check is necessary.
-  [/\bblack\b/g, 'var(--mermaid-text)'],
-  [/\bwhite\b/g, 'var(--mermaid-bg)'],
-  [/\bnavy\b/g, 'var(--mermaid-link)'],
-  [/\bred\b/g, 'var(--mermaid-crit)'],
-  [/\bgrey\b/g, 'var(--mermaid-edge)'],
-  [/\blightgrey\b/g, 'var(--mermaid-cluster-bg)'],
+  //
+  // Negative lookahead `(?![-_\w])` is also required for color names that
+  // are also valid CSS-property prefixes — `white-space`, `red-eye`, etc.
+  // A regex `\b` matches at the position between `white` and `-` because
+  // `-` is a non-word character. Without the lookahead, `white-space:
+  // nowrap` becomes `var(--mermaid-bg)-space: nowrap`, an invalid
+  // declaration that silently disables wrap control inside Mermaid
+  // foreignObject node labels — multi-line `<br/>` labels then overflow
+  // the fixed-height foreignObject and clip the 2nd+ lines (root cause
+  // of the JA/EN visual-glossary node-label rendering bug).
+  [/\bblack(?![-_\w])/g, 'var(--mermaid-text)'],
+  [/\bwhite(?![-_\w])/g, 'var(--mermaid-bg)'],
+  [/\bnavy(?![-_\w])/g, 'var(--mermaid-link)'],
+  [/\bred(?![-_\w])/g, 'var(--mermaid-crit)'],
+  [/\bgrey(?![-_\w])/g, 'var(--mermaid-edge)'],
+  [/\blightgrey(?![-_\w])/g, 'var(--mermaid-cluster-bg)'],
 ];
 
 /**
