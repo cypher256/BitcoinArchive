@@ -338,6 +338,19 @@ function labelLines(body, meta) {
         labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'empty-blockquote' });
         continue;
       }
+      // Speaker annotations may appear inside a blockquote at the
+      // matching depth (e.g. nested quotes with quote-marker chains
+      // where moving the marker to depth 0 would break the blockquote
+      // and trigger remark-quote-blocks "no associated blockquote").
+      // Honor them after the prefix is stripped.
+      const blockquoteSpeakerMatch = strippedTrimmed.match(ANNOTATION_SPEAKER);
+      if (blockquoteSpeakerMatch) {
+        currentSpeaker = blockquoteSpeakerMatch[1] === 'reset'
+          ? ((normalizedAuthor && !EDITORIAL_TYPES.has(meta.type) && CHARACTER_RULES[normalizedAuthor]) ? normalizedAuthor : null)
+          : normalizeSpeakerName(blockquoteSpeakerMatch[1]);
+        labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'annotation' });
+        continue;
+      }
       line = stripped;
       trimmed = strippedTrimmed;
       // fall through to further checks

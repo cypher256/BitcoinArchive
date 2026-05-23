@@ -86,45 +86,78 @@ const TRANSIENT_PATTERNS = [
   /Later items with the same id will overwrite earlier ones/,
 ];
 
+/**
+ * Per-file render errors that astro sync logs but does NOT promote to
+ * a non-zero exit code (glob-loader skips the broken file and continues).
+ * The CI `astro build` workflow catches these via a post-step grep on
+ * build.log and promotes them to exit 1. We mirror that gate here so
+ * the same class of failure (markdown parse errors, remark plugin
+ * errors like broken blockquote chains for quote markers) is caught
+ * during `npm run check` in ~30 seconds instead of only surfacing
+ * after a 20-minute production build.
+ *
+ * Keep this list aligned with `.github/workflows/deploy.yml`'s
+ * "Fail build on per-page render errors" step.
+ */
+const PER_FILE_ERROR_PATTERNS = [
+  /\[ERROR\]\s+\[glob-loader\]/,
+  /Failed to parse Markdown file/,
+];
+
 function isTransientLine(line) {
   return TRANSIENT_PATTERNS.some((re) => re.test(line));
 }
 
-function runSync(label, { suppressTransient }) {
-  if (suppressTransient) {
-    // Pipe both streams so we can filter the duplicate-id warnings out
-    // of the first pass. stdout (sync progress) is discarded entirely
-    // since the second pass will print its own canonical progress.
-    const result = spawnSync('npx', ['astro', 'sync'], {
-      encoding: 'utf8',
-      shell: false,
-    });
-    const stderr = (result.stderr ?? '')
-      .split('\n')
-      .filter((line) => line.length > 0 && !isTransientLine(line))
-      .join('\n');
-    if (stderr.trim().length > 0) {
-      process.stderr.write(stderr + '\n');
-    }
-    if (result.status !== 0) {
-      console.error(`astro sync (${label}) failed with exit code ${result.status}`);
-      // Fall back to printing whatever stdout we captured, so the user
-      // sees the failure context even though we suppressed transient noise.
-      if (result.stdout) process.stdout.write(result.stdout);
-      process.exit(result.status);
-    }
-    return;
-  }
+function hasPerFileError(text) {
+  return PER_FILE_ERROR_PATTERNS.some((re) => re.test(text));
+}
 
-  // Canonical pass: stream the output directly so the user sees the
-  // real `[content] Synced content` / `[types] Generated` lines.
+function runSync(label, { suppressTransient }) {
   const result = spawnSync('npx', ['astro', 'sync'], {
-    stdio: 'inherit',
+    encoding: 'utf8',
     shell: false,
   });
+
+  const stdoutRaw = result.stdout ?? '';
+  const stderrRaw = result.stderr ?? '';
+
+  const stderrFiltered = suppressTransient
+    ? stderrRaw
+        .split('\n')
+        .filter((line) => line.length > 0 && !isTransientLine(line))
+        .join('\n')
+    : stderrRaw;
+
+  if (suppressTransient) {
+    // First pass: don't print stdout (the second pass will emit canonical
+    // progress). Only print stderr that survived the transient filter.
+    if (stderrFiltered.trim().length > 0) {
+      process.stderr.write(stderrFiltered + '\n');
+    }
+  } else {
+    // Second pass: print everything so the user sees real progress.
+    if (stdoutRaw) process.stdout.write(stdoutRaw);
+    if (stderrRaw) process.stderr.write(stderrRaw);
+  }
+
   if (result.status !== 0) {
     console.error(`astro sync (${label}) failed with exit code ${result.status}`);
+    if (suppressTransient && stdoutRaw) process.stdout.write(stdoutRaw);
     process.exit(result.status);
+  }
+
+  // Promote per-file render errors to exit 1. astro sync logs them as
+  // [ERROR] [glob-loader] but exits 0 because it skipped the broken
+  // file and finished syncing the rest. CI catches this via build.log
+  // grep; we mirror that gate here so local `npm run check` catches it.
+  const combined = stdoutRaw + '\n' + stderrRaw;
+  if (hasPerFileError(combined)) {
+    console.error(
+      `\n[sync-content] ERROR: per-file render error detected during astro sync (${label}).\n` +
+      `  See lines above. astro sync internally swallows these (exit 0) but they break\n` +
+      `  the production build. Promoting to exit 1 to match the CI build gate.`
+    );
+    process.exit(1);
   }
 }
 
