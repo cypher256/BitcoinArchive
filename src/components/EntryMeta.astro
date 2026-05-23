@@ -73,16 +73,20 @@ const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
 const authorParticipant = findAuthorParticipant(author, participants);
-// Editorial types (article / analysis) are written by Bitcoin Institute
-// regardless of which figure the article covers, so the byline shows
-// "Author Bitcoin Institute" in those cases. The frontmatter `author`
-// field on an article like "Satoshi hands over the alert key" names
-// the subject of the article (the quoted speaker is rendered via the
-// in-body quote chips), not the editorial writer, so reflecting that
-// raw value here would mislabel the page. Primary-source types
-// (mailing-list, forum-post, correspondence, bip, whitepaper,
-// court-document, biography) keep the frontmatter author and pick a
-// verb-shaped label per type.
+// Editorial types `article` and `analysis` are written by Bitcoin
+// Institute regardless of which figure the entry covers, so the
+// byline forces "Bitcoin Institute". Per STYLE_GUIDE.md § Editorial
+// Entries, the frontmatter `author` field on these types names the
+// *subject* the entry is about (e.g. an article on Satoshi's alert
+// key handover has `author: "Satoshi Nakamoto"`), not the editorial
+// writer, so reflecting that raw value here would mislabel the page.
+// The same forcing is mirrored at the OG / JSON-LD layer in
+// pages/entries/[...slug].astro. Primary-source types (mailing-list,
+// forum-post, correspondence, bip, whitepaper, court-document) keep
+// the frontmatter author and pick a verb-shaped label per type;
+// biography never reaches EntryMeta (it has no /entries/{id}/ page
+// and is mounted in the participant page instead), so its author is
+// not displayed at all.
 const isEditorialType = entryType === 'article' || entryType === 'analysis';
 const displayAuthor = isEditorialType
   ? 'Bitcoin Institute'
@@ -93,9 +97,10 @@ const bylineLabel = isEditorialType
 
 // Color the author name in the Satoshi accent only when the author
 // actually is Satoshi. The `isSatoshi` frontmatter flag means "this
-// entry is about / by Satoshi" — for derivative types (analysis,
-// biography) that flag is true while the author is Bitcoin Institute,
-// so it must not drive the author color. Same logic as EntryCard.
+// entry is about / by Satoshi" — for editorial types (article /
+// analysis) the displayed author is forced to Bitcoin Institute even
+// when isSatoshi is true, so the flag must not drive the author
+// color. Same logic as EntryCard.
 const isSatoshiAuthor =
   authorParticipant?.slug === 'satoshi-nakamoto' ||
   author.toLowerCase() === 'satoshi nakamoto';

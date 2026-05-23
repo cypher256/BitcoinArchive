@@ -95,6 +95,13 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
 const isAnalysis = entry.data.type === 'analysis';
 const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
 const ogModifiedTime = updatedAt ?? entry.data.date;
+// OG / JSON-LD author. See EN mirror entries/[...slug].astro for the
+// rationale: editorial types put the subject in frontmatter `author`,
+// so structured-data and OGP must override to the actual editorial
+// writer (Bitcoin Institute) — same forcing rule used by EntryMeta
+// for the on-page byline. STYLE_GUIDE.md § Editorial Entries.
+const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis';
+const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 ---
 
 <BaseLayout
@@ -105,7 +112,7 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
   ogType="article"
   publishedTime={ogPublishedTime}
   modifiedTime={ogModifiedTime}
-  author={entry.data.author}
+  author={ogAuthor}
   ogImage={`/og/ja/${entry.id}.png`}
   breadcrumbs={breadcrumbs}
 >

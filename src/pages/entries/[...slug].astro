@@ -95,6 +95,14 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
 const isAnalysis = entry.data.type === 'analysis';
 const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
 const ogModifiedTime = updatedAt ?? entry.data.date;
+// OG / JSON-LD author. For editorial types the frontmatter `author`
+// names the subject the entry is about (per STYLE_GUIDE.md § Editorial
+// Entries → Frontmatter author semantics), not the editorial writer.
+// The on-page byline in EntryMeta forces "Bitcoin Institute" for the
+// same reason; mirror that forcing here so structured-data and OGP
+// metadata cite the actual writer of the content, not the subject.
+const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis';
+const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 ---
 
 <BaseLayout
@@ -105,7 +113,7 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
   ogType="article"
   publishedTime={ogPublishedTime}
   modifiedTime={ogModifiedTime}
-  author={entry.data.author}
+  author={ogAuthor}
   ogImage={`/og/${entry.id}.png`}
   breadcrumbs={breadcrumbs}
 >
