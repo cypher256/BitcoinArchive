@@ -23,6 +23,7 @@ quotes:
     date: "2010-08-16T02:57:57.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-16-re-tcatms-4-way-sse2-for-linux-32-64-bit-0-3-9-rc2"
   - id: "q3"
+    parent: "q2"
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
     date: "2010-08-16T01:49:01.000Z"
