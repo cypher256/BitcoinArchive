@@ -57,4 +57,4 @@ translationStatus: complete
 
 ウェイ・ダイは、信頼できる銀行の仲介を必要とする従来の電子マネープロトコルと b-money およびビットコインを対比した。
 
-*[補足：ウェイ・ダイはこのスレッドの中で、議論をきっかけに Radeon 5870 GPU を購入してマイニングを開始したことを明かした — これは後に 2014年の[「Look for the Next Tech Gold Rush?」](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)投稿で、約 300 ドルが 6 桁のリターンになったと語るマイニング活動の始まりであった。]*
+ウェイ・ダイはこのスレッドの中で、議論をきっかけに Radeon 5870 GPU を購入してマイニングを開始したことを明かした — これは後に 2014年の[「Look for the Next Tech Gold Rush?」](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)投稿で、約 300 ドルが 6 桁のリターンになったと語るマイニング活動の始まりであった。

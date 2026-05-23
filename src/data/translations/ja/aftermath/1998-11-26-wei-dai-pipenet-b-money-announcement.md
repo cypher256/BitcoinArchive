@@ -48,5 +48,5 @@ translationStatus: complete
 >
 > また同じ場所に、b-moneyの説明も掲載している。仮名による貨幣交換と契約執行のための新しいプロトコルだ。」
 
-*[補足：後にビットコインの最も重要な先駆けの一つとなる b-money の提案は、主に PipeNet（匿名ルーティングプロトコル）に関する投稿の末尾、わずか一文で紹介された。当時の[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の主な関心は PipeNet であり、デジタル通貨ではなかったことが明らかだ。]*
+後にビットコインの最も重要な先駆けの一つとなる b-money の提案は、主に PipeNet（匿名ルーティングプロトコル）に関する投稿の末尾、わずか一文で紹介された。当時の[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の主な関心は PipeNet であり、デジタル通貨ではなかったことが明らかだ。
 <!-- /tone-skip -->
