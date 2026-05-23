@@ -252,7 +252,7 @@ the editorial voice.
 | Type group | `author` holds | On-page byline (`EntryMeta`) | List card byline (`EntryCard`) | OG / JSON-LD `article:author` |
 |---|---|---|---|---|
 | Primary-source (6) | the actual writer (email sender, forum poster, BIP author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
-| `article` / `analysis` | the **subject** the entry is about (the person, document, or event the editorial reading covers) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject) | **Bitcoin Institute** (forced by type) |
+| `article` / `analysis` | the **subject** the entry is about (the person, document, or event the editorial reading covers) — falls back to `"Bitcoin Institute"` when no single subject exists (see exception below) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject, or `"Bitcoin Institute"` for no-single-subject entries) | **Bitcoin Institute** (forced by type) |
 | `biography` | the **subject of the biography** (the person whose biography this is) | (no `/entries/{id}/` page; biography renders inside the participant page, where no byline is shown) | `author` verbatim (subject) | (no entry page; participant page handles its own metadata) |
 
 For `article` / `analysis`, the forced byline is implemented in
@@ -266,6 +266,30 @@ static-path generation); the biography body is mounted inside
 `src/pages/participants/[participant].astro`. The frontmatter
 `author` field on a biography therefore has no on-page render path —
 it stays present for schema completeness and listing-card display.
+
+#### Exception: editorial entries without a single subject
+
+Some `article` / `analysis` entries are not anchored to one named
+person. Broad analyses (cross-chain genealogies, multi-candidate
+overviews, lineage maps), technical-event articles (a software
+release, a dependency swap, a protocol parameter change), and
+multi-actor incident articles all lack a single subject the way the
+genesis-block article has "Satoshi Nakamoto" as its subject.
+
+For these, `author: "Bitcoin Institute"` is the canonical value: it
+signals "no single subject — this entry is Bitcoin Institute's
+editorial reading of a topic that doesn't reduce to one person."
+
+The entry-list card then surfaces "Bitcoin Institute" instead of a
+person name, which is the correct read for a no-single-subject
+entry. The on-page byline and OG / JSON-LD layers are unaffected
+(they are already forced to Bitcoin Institute by `type`).
+
+Use the subject form when a single person is clearly the anchor;
+fall back to `"Bitcoin Institute"` only when no such anchor exists.
+Do not use `"Bitcoin Institute"` to avoid choosing among multiple
+subjects — if an article has a primary actor (e.g. a hypothesis-page
+analysis focused on one candidate), name that actor as `author`.
 
 Worked examples:
 
@@ -285,6 +309,18 @@ author: "Satoshi Nakamoto"    # the subject the article is about
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
+
+# A broad-analysis page covering many cypherpunks
+type: analysis
+author: "Bitcoin Institute"   # no single subject — exception clause
+participants:
+  - name: "Adam Back"
+    slug: "adam-back"
+  - name: "Wei Dai"
+    slug: "wei-dai"
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  # ... etc
 
 # Hal Finney's biography
 type: biography
