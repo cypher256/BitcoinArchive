@@ -18,6 +18,7 @@ quotes:
     date: "2010-08-16T02:39:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-bdonlan-msg9649"
   - id: "q2"
+    parent: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-08-16T02:16:10.000Z"
