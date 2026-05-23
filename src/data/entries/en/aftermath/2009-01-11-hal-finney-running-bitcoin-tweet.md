@@ -37,9 +37,19 @@ quotes:
     date: "2009-01-11T06:33:00Z"
 ---
 
+On January 10, 2009, at 10:33 PM Pacific Time (06:33 UTC on January 11), [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted two words to Twitter:
+
 <!-- quote: q1 -->
 > Running bitcoin
 
-*[Context: @halfin — January 10, 2009 10:33 PM PST / January 11, 2009 06:33 UTC]*
+The message is widely treated as the first tweet about Bitcoin. What it announced was the only fact it carried — that the Bitcoin software was, at that moment, running on a machine other than Satoshi's.
 
-*[Context: This two-word tweet is widely considered the first tweet ever about Bitcoin. [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted it from his home in Santa Barbara, California, the same day the [Bitcoin v0.1 software was publicly released](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/). Two days later, on January 12, 2009, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) sent Hal the [first-ever Bitcoin transaction](/BitcoinArchive/entries/correspondence/hal-finney/2009-01-11-first-bitcoin-transaction/): 10 BTC (Transaction ID: `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`). The tweet received virtually no reaction at the time.]*
+Finney was not a random first observer. As the RPOW author and a longtime PGP developer, he was already inside the territory the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) addressed — distributed proof-of-work, cryptographic protocols for digital cash, hashcash heritage. When [Bitcoin v0.1 was publicly released](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/), he was among the first readers equipped to follow the design end to end and run it. He did, from his home in Santa Barbara, California.
+
+The tweet received virtually no reaction. The word *bitcoin* did not yet name anything to the readers scrolling past it; the proof-of-work network had no public traffic for them to verify against. The post became iconic only retroactively, after the system it announced had a public history large enough for readers to recognize what those two words had marked.
+
+At the moment the tweet was posted, the known Bitcoin network shifted from one node to two. A peer-to-peer system requires at least two peers to function as one, and until Finney brought his node online the design's distributed properties were structural rather than active. The two-word post is the shortest possible record of that change: a network with a second known operator.
+
+Two days later, on January 12, 2009, [the first Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) crossed the network: Satoshi sent ten BTC (TX `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`) from his node to Finney's. The tweet had made the precondition for that send visible — a second operator, named, reachable, running the same software — without itself causing it.
+
+The tweet was two words. Finney's documented involvement with Bitcoin extended from that moment for five and a half years, until his death in 2014 from ALS. The shortest declaration any non-Satoshi participant made about the system sits at the entrance of one of the longest and best-documented engagements with Bitcoin in its early history.
