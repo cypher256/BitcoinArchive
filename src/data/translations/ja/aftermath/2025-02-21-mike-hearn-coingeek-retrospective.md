@@ -84,4 +84,4 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 「Bitcoin Core」という名称の採用も後悔しているとし、その命名がプロジェクト内の不健全な権力構造を強化したと指摘した。
 
-*[補足：このインタビューの時点で、ハーンは 2021年に R3 を退社し、Hydraulic Software を設立し、Oracle でのソフトウェアアーキテクト職に就く準備をしていた。[2016年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。]*
+このインタビューの時点で、ハーンは 2021 年に R3 を退社し、Hydraulic Software を設立し、Oracle でのソフトウェアアーキテクト職に就く準備をしていた。[2016 年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。
