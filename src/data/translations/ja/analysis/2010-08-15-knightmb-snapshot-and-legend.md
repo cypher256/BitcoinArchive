@@ -4,7 +4,7 @@ date: 2010-08-15T00:00:00Z
 type: "analysis"
 source: "bitcoinarchive"
 sourceUrl: "https://www.bitcoin-institute.org/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/"
-author: "Bitcoin Institute"
+author: "knightmb"
 participants:
   - name: "knightmb"
     slug: "knightmb"
