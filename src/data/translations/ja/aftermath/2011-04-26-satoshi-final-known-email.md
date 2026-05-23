@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
+  - aftermath/2009-01-03-genesis-block
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
 quotes:
   - id: "q1"

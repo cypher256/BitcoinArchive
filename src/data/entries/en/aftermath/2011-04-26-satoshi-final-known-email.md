@@ -33,6 +33,7 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+  - aftermath/2009-01-03-genesis-block
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

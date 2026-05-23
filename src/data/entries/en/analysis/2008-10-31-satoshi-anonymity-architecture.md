@@ -46,6 +46,7 @@ relatedEntries:
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2019-02-19-paul-le-roux-biography
+  - aftermath/2009-01-03-genesis-block
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
