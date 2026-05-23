@@ -4,7 +4,7 @@ date: 2009-01-10T00:00:00Z
 type: "analysis"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
@@ -12,7 +12,7 @@ participants:
     slug: "hal-finney"
 description: "Editorial forensic reading of Satoshi's operational environment during Bitcoin v0.1 launch week (Jan 8-12, 2009): \"from where I am\" in the Jan 10 email to Finney, and dense activity cadence."
 isSatoshi: false
-homeOrder: 8
+homeOrder: 9
 tags:
   - "analysis"
   - "satoshi-identity"

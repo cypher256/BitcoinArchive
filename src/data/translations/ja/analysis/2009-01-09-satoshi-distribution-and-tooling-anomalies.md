@@ -4,13 +4,13 @@ date: 2009-01-09T00:00:00Z
 type: "analysis"
 source: "sourceforge"
 sourceUrl: "https://web.archive.org/web/20250916214824/https://sourceforge.net/projects/bitcoin/files/"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Bitcoin v0.1 の異例な配布・開発環境（.rar、バージョン管理不在、ハンガリアン記法、OpenSSL）の編者読解。Warez シーン慣習と 2011 年カミンスキー監査と比較。"
 isSatoshi: false
-homeOrder: 10
+homeOrder: 11
 tags:
   - "bitcoin-v0.1"
   - "distribution"

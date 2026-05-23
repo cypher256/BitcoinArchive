@@ -4,13 +4,13 @@ date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Structural reading of how \"Satoshi Nakamoto\" remained unidentified across development, public phase, and withdrawal. Six layers: pseudonym, channels, language, env, genesis constants, handover."
 isSatoshi: false
-homeOrder: 2
+homeOrder: 3
 tags:
   - "satoshi-anonymity"
   - "pseudonym-analysis"

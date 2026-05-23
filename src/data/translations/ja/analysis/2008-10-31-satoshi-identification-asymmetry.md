@@ -4,7 +4,7 @@ date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
@@ -12,7 +12,7 @@ participants:
     slug: "gavin-andresen"
 description: "サトシ識別の非対称性 — 公開された追跡試行、残存材料、続く不明状態 — の対比を記述的に整理。身元仮説総覧と匿名性アーキテクチャの対エントリ。"
 isSatoshi: false
-homeOrder: 3
+homeOrder: 4
 tags:
   - "satoshi-identity"
   - "satoshi-anonymity"

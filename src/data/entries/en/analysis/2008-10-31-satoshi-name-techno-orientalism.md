@@ -4,13 +4,13 @@ date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "metzdowd"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Descriptive reading of the \"Satoshi Nakamoto\" pseudonym against the cyberpunk and techno-orientalist symbolic field of the 1980s-90s. Structural observations, not claims about authorial intent."
 isSatoshi: false
-homeOrder: 4
+homeOrder: 5
 tags:
   - "cyberpunk"
   - "techno-orientalism"

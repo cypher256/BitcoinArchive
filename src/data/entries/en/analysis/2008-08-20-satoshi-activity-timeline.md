@@ -4,7 +4,7 @@ date: 2008-08-20T00:00:00Z
 type: "analysis"
 source: "metzdowd"
 sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"

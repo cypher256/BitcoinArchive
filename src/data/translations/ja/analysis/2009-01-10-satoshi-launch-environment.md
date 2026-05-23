@@ -4,7 +4,7 @@ date: 2009-01-10T00:00:00Z
 type: "analysis"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
-author: "Bitcoin Institute"
+author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
@@ -12,7 +12,7 @@ participants:
     slug: "hal-finney"
 description: "Bitcoin v0.1 リリース週（2009 年 1 月 8〜12 日）のサトシ運用環境を 2 一次資料から読む: 1 月 10 日のフィニー宛「from where I am」、同週の活動密度。"
 isSatoshi: false
-homeOrder: 8
+homeOrder: 9
 tags:
   - "analysis"
   - "satoshi-identity"
