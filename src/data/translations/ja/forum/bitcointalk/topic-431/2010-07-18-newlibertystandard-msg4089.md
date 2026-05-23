@@ -23,6 +23,7 @@ quotes:
     date: "2010-07-18T22:34:46.000Z"
     sourceEntryId: "forum/bitcointalk/topic-431/2010-07-18-knightmb-msg4086"
   - id: "q3"
+    parent: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-07-18T21:56:18.000Z"
