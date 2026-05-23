@@ -4,7 +4,7 @@ date: 2014-03-25T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
-author: "Bitcoin Institute"
+author: "Hal Finney"
 participants:
   - name: "Hal Finney"
     slug: "hal-finney"

@@ -4,7 +4,7 @@ date: 2013-12-05T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Nick_Szabo"
-author: "Bitcoin Institute"
+author: "Nick Szabo"
 participants:
   - name: "Nick Szabo"
     slug: "nick-szabo"

@@ -4,7 +4,7 @@ date: 2011-07-03T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Len_Sassaman"
-author: "Bitcoin Institute"
+author: "Len Sassaman"
 participants:
   - name: "Len Sassaman"
     slug: "len-sassaman"

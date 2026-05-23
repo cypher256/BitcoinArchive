@@ -4,7 +4,7 @@ date: 2008-08-22T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Wei_Dai"
-author: "Bitcoin Institute"
+author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"

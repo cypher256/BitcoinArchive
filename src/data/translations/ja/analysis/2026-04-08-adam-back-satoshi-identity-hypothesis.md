@@ -4,7 +4,7 @@ date: 2026-04-08T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Adam_Back"
-author: "Bitcoin Institute"
+author: "Adam Back"
 participants:
   - name: "Adam Back"
     slug: "adam-back"
