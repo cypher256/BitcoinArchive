@@ -18,6 +18,7 @@ quotes:
     date: "2010-08-23T00:38:10.000Z"
     sourceEntryId: "forum/bitcointalk/topic-873/2010-08-23-nelisky-msg10725"
   - id: "q2"
+    parent: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-08-19T20:14:01.000Z"
