@@ -127,11 +127,11 @@ Phase 1 のうち、 リリース後の 7 か月 (2009 年 1〜8 月) は途切�
 
 ## 3. Phase 2 ― リアクティブ Linux 対応 (約 16 か月)
 
-Linux は 2009 年 8 月 24 日に記録に入る。 ここから 2010 年末まで、 サトシ書簡における Linux 言及はすべて、 他人が進めている作業 ― ほぼ全てマルッティ・マルミの移植とリバティ・スタンダードのユーザー側 Linux ビルドテスト ― への**対応**として現れる。
+Linux は 2009 年 8 月 24 日に記録に入る。 ここから 2010 年末まで、 サトシ書簡における Linux 言及はすべて、 他人が進めている作業 ― ほぼ全てマルッティ・マルミの移植とNewLibertyStandardのユーザー側 Linux ビルドテスト ― への**対応**として現れる。
 
 - [2009-08-24 マルミ宛](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-08-24-bitcoin-029/): 最初の Linux タグ付きメール。 文脈はマルミ側の準備作業。
 - [2009 年 10 月末〜11 月初の「linux-build」 シリーズ](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-10-29-linux-build-048/): マルミが実際の移植を進め、 サトシはパッチをレビューする立場。
-- [2009-11-08 マルミ宛](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066/): リバティ・スタンダードの Linux テスト環境の `debug.log` を分析 ― サトシ自身の環境の話ではない。
+- [2009-11-08 マルミ宛](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066/): NewLibertyStandardの Linux テスト環境の `debug.log` を分析 ― サトシ自身の環境の話ではない。
 - [2009-11-10 マルミ宛](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-10-linux-dead-sockets-problem-073/): ゾンビソケット問題をコードレベルで診断 (「Linux のソケット処理に関係する何かが影響しているのは明らか」)。 コードレベルの診断であり、 「自分の Linux 環境で再現した」 ではない。
 
 Phase 2 全体で一貫したパターン: サトシは Linux ソースを読め、 Linux 固有の挙動をコードレベルで診断でき、 Linux 向けパッチをレビューできる ― が、 可視化されたあらゆる露出が**リアクティブ**である。 マルミの移植作業と Linux ユーザーからの報告に駆動された対応。 記録には自分の Linux 環境でビットコインを動かしている兆候がない。 Phase 1 で見えた Windows 環境の証拠 ― Visual C++ 6.0、 ハンガリアン記法、 `.rar` リリース習慣 ― は Phase 2 を通じて途切れず続く。
@@ -153,7 +153,7 @@ Phase 2 全体で一貫したパターン: サトシは Linux ソースを読め
 | 技術・基盤 | サトシ以外による導入 | 時期 | 出典 |
 |---|---|---|---|
 | SVN リポジトリ | マルッティ・マルミ (r1 で作成) | 2009-08 | [SVN コミッタ履歴](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) |
-| Linux ビルド・移植 | マルッティ・マルミ (移植)、 リバティ・スタンダード (ユーザーテスト) | 2009-08〜11 | linux-build メール群 |
+| Linux ビルド・移植 | マルッティ・マルミ (移植)、 NewLibertyStandard (ユーザーテスト) | 2009-08〜11 | linux-build メール群 |
 | macOS ビルド | The Madhatter (試作報告) → ラズロ・ハニエツ (公式マージ r123) | 2009-12 / 2010-08 | [BitcoinTalk topic-12](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-12/2009-12-12-sni21-re-a-few-suggestions/) / SVN 履歴 |
 | autoconf 検討 | The Madhatter (提案) | 2009-12 | 同上 (サトシは却下) |
 | Drupal / Apache サーバー管理 | (本人主導、 ただし bitcoin.org 運用上の要件) | 2009-11〜 | [Drupal 関連メール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108/) |

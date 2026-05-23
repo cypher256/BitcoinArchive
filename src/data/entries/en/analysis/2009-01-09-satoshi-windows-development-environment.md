@@ -125,11 +125,11 @@ Four independent observations — Visual C++ 6.0 as build toolchain, Hungarian n
 
 ## 3. Phase 2 — reactive Linux support (~16 months)
 
-Linux enters the record on August 24, 2009. From this point through late 2010, every Linux mention in Satoshi's correspondence sits in the context of supporting work that someone else is doing — almost entirely Martti Malmi's port and Liberty Standard's user-side testing on the resulting Linux build.
+Linux enters the record on August 24, 2009. From this point through late 2010, every Linux mention in Satoshi's correspondence sits in the context of supporting work that someone else is doing — almost entirely Martti Malmi's port and NewLibertyStandard's user-side testing on the resulting Linux build.
 
 - [2009-08-24 to Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2009-08-24-bitcoin-029/): the first Linux-tagged email. The context is Malmi-side preparation work.
 - [Late October to early November 2009 "linux-build" series](/BitcoinArchive/entries/correspondence/martti-malmi/2009-10-29-linux-build-048/): Malmi is doing the actual port; Satoshi is reviewing patches.
-- [2009-11-08 to Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066/): analyzing Liberty Standard's `debug.log` from a Linux test machine — not Satoshi's own machine.
+- [2009-11-08 to Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066/): analyzing NewLibertyStandard's `debug.log` from a Linux test machine — not Satoshi's own machine.
 - [2009-11-10 to Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2009-11-10-linux-dead-sockets-problem-073/): diagnosing a zombie-socket problem at the code level ("clearly something about socket handling on Linux that's affecting it"). The diagnosis is code-level, not "I reproduced this on my Linux machine."
 
 The pattern is consistent across Phase 2: Satoshi can read Linux source, diagnose Linux-specific behavior in code, and review Linux-targeted patches, but every visible exposure is reactive — driven by Malmi's port work and Linux-side user reports. Nothing in the record shows Satoshi running Bitcoin on a Linux machine of his own. The Windows-side Phase 1 evidence — Visual C++ 6.0, Hungarian notation, the `.rar` release habit — continues unbroken through Phase 2.
@@ -149,7 +149,7 @@ These three datapoints establish that Satoshi was not OSS-conventions-ignorant �
 | Technology / infrastructure | Brought in by | When | Source |
 |---|---|---|---|
 | SVN repository | Martti Malmi (created at r1) | 2009-08 | [SVN-committer history](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) |
-| Linux build / port | Martti Malmi (port); Liberty Standard (user testing) | 2009-08–11 | linux-build email series |
+| Linux build / port | Martti Malmi (port); NewLibertyStandard (user testing) | 2009-08–11 | linux-build email series |
 | macOS build | The Madhatter (trial report) → Laszlo Hanyecz (upstreamed at r123) | 2009-12 / 2010-08 | [BitcoinTalk topic 12](/BitcoinArchive/entries/forum/bitcointalk/topic-12/2009-12-12-sni21-re-a-few-suggestions/) / SVN history |
 | autoconf consideration | The Madhatter (proposal) | 2009-12 | same thread (Satoshi declined) |
 | Drupal / Apache server admin | (Satoshi-initiated, bitcoin.org ops) | 2009-11– | [Drupal access email](/BitcoinArchive/entries/correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108/) |
