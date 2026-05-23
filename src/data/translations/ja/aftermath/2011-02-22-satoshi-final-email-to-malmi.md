@@ -24,6 +24,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260
+  - correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-gavin-fragment
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange

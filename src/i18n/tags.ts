@@ -123,6 +123,7 @@ export const tagTranslations: Record<string, string> = {
   'final-post': '最後の投稿',
   'final-release': '最終リリース',
   'financial-blockade': '金融封鎖',
+  'fragment': '断片',
   'first-contact': '最初の接触',
   'first-impressions': '第一印象',
   'first-price': '最初の価格',
