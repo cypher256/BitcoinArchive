@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Bitcoin v0.1 の異例な配布・開発環境（.rar、バージョン管理不在、ハンガリアン記法、OpenSSL）の編者読解。Warez シーン慣習と 2011 年カミンスキー監査と比較。"
+description: "Bitcoin v0.1 の異例な配布形式と開発ツール不在（.rar、バージョン管理不在）の編者読解。Warez シーン慣習との重なりと 2011 年カミンスキー監査の所見を並べる。"
 isSatoshi: false
 homeOrder: 11
 tags:
@@ -29,6 +29,7 @@ secondarySources:
   - name: "libsecp256k1 — initial commit (Pieter Wuille, March 2013)"
     url: "https://github.com/bitcoin-core/secp256k1"
 relatedEntries:
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2009-01-09-bitcoin-v01-released
@@ -48,7 +49,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-Bitcoin v0.1 は SourceForge 上で `.rar` アーカイブとして公開された —— オープンソースリリースよりも IRC/XDCC の Warez シーン配布で一般的なフォーマット。バージョン管理システムは使われなかった。変数名はマイクロソフトのハンガリアン記法に従っており、2008 年にはすでに廃れていたスタイルである。暗号スタックは OpenSSL を使用、ビルド時の整合性想定は後にダン・カミンスキーが [2011 年のセキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)で指摘した。本エントリは Bitcoin v0.1 の配布形式と開発環境の選択を、サトシの作業スタイルについての首尾一貫した観察として読む —— 公開記録から見えるものを記述し、2008〜2009 年のオープンソース慣習に対して各選択がどこで異例だったかを示すもので、身元や経歴に関する結論を引き出すものではない。
+Bitcoin v0.1 は SourceForge 上で `.rar` アーカイブとして公開された —— オープンソースリリースよりも IRC/XDCC の Warez シーン配布で一般的なフォーマット。バージョン管理システムは使われなかった。本エントリは配布側とツール不在の観察をまとまった集合として読み、 ダン・カミンスキーが [2011 年のセキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)で v0.1 のセキュリティ・アーキテクチャを別側面から検証したものと並べる。 個人開発環境の証拠 (ハンガリアン記法、 OpenSSL 依存、 Visual C++ 6.0 ツールチェーン、 PGP MingW32 署名末尾) は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱う。
 
 ## 1. 配布: `.rar` パッケージングの選択
 
@@ -90,15 +91,11 @@ Bitcoin v0.1 はバージョン管理の履歴を持たないまま配布され�
 
 組み合わせ — VCS なし、テストなし、課題管理なし、`.rar` 配布 — は、過去の経験が単独であるか、これらのツールがデフォルトでなかった環境にあった開発者と整合する。同時代のプロフェッショナルまたは学術的なソフトウェア工学の場に組み込まれていた人物とは整合しない。
 
-## 3. 後に Core 開発者によって置き換えられた実装選択
+## 3. 実装選択と Windows 中心の開発環境
 
-v0.1 の特定の実装選択のいくつかは、ビットコインが成熟するにつれ Bitcoin Core 開発者によって後から修正された:
+実装スタイル・個人環境の証拠 ― ハンガリアン記法による変数命名、 Bitcoin Core が後に libsecp256k1 で置き換えた OpenSSL 依存、 ビルドツールチェーンとしての Visual C++ 6.0、 サトシ最後期メールに付いた GnuPG MingW32 / WinPT 1.2.0 の PGP 署名末尾 ― は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱われている。 同エントリーはサトシ自身がギャビン・アンドレセンに対して「私よりずっと Linux に長けている」 と自己位置づけた発言、 および本エントリーで扱う配布選択と重なる SVN 以前 8 か月のソロ開発期間も記録する。
 
-- **ハンガリアン記法による変数命名**。2014 年 8 月、ウラジミール・ファン・デル・ラーンは [PR #4641](/BitcoinArchive/ja/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) を提出し、新規コードからサトシのハンガリアン記法による変数命名規則を削除することを提案した。彼は「ずっと気になっていたスタイル」と評した。この PR はマージされた。ハンガリアン記法は 1990 年代後半から 2000 年代初頭の Microsoft Windows C++ 開発実践と関連する — Win32／MFC 伝統の様式的な目印である（v0.1.0 から v0.3.19 にわたるサトシのコーディングスタイル指紋（ハンガリアン記法の変種・四重スラッシュ TODO・独自マクロ・コミット時刻パターン）の統計的分析は[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)を参照）
-
-- **楕円曲線演算における OpenSSL**。ピーター・ウィーユとグレゴリー・マクスウェルは、楕円曲線演算で OpenSSL を置き換えるため [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) を開発した（最初のコミットは 2013 年 3 月）。彼らは「OpenSSL は Bitcoin のような合意クリティカルなシステムに適したライブラリではない」と結論した — その署名解析の不整合が予期せぬチェーン分裂を引き起こす可能性があったためである。libsecp256k1 は Bitcoin Core v0.10（2015 年）でウォレット署名の標準となり、v0.12（2016 年 1 月）で合意クリティカルな ECDSA 検証の標準となった。検証速度は 2.5 〜 5.5 倍に向上した
-
-これらの修正は具体的なことを教えてくれる: *プロフェッショナルな暗号システム工学はどう見えるか、そしてサトシの選択はそれにどう比べられるか*。ハンガリアン記法の選択は 1990 年代後半の Windows C++ 背景を指す。OpenSSL の選択は「合意クリティカルな正しさのためにライブラリを監査する」ではなく「利用可能なライブラリを使う」を指す。両方とも時間が限られた単独で作業する開発者にとっては合理的な選択である。両方とも後年、ビットコインの成熟した要件にとっては不十分と判定された。
+Warez シーンの読みにとって関係する点: Windows 専用初版 (v0.1 〜 v0.1.5) は上表の一致項目の一つであり、 別エントリーが記録する像と整合する ― 独立した驚きではない。
 
 ## 4. セキュリティ・アーキテクチャ: カミンスキー監査
 
@@ -118,7 +115,7 @@ v0.1 の特定の実装選択のいくつかは、ビットコインが成熟す
 §1 〜 §4 を通じて浮かび上がる構図は異例である:
 
 - **セキュリティ・アーキテクチャ**: 驚くほど先見的。カミンスキーが試みた 9 つの攻撃はすべて事前に阻止されていた
-- **実装プロセス**: 非形式的。バージョン管理なし、テストスイートなし、`.rar` 配布、ハンガリアン記法、OpenSSL 依存
+- **実装プロセス**: 非形式的。バージョン管理なし、テストスイートなし、課題追跡なし、`.rar` 配布（個人環境マーカー ― ハンガリアン記法、OpenSSL 依存、Visual C++ 6.0、MingW32 PGP 末尾 ― は別軸の観察で、[サトシの Windows 専一の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)に集約されている）
 
 この組み合わせは際立っている。2 つの方向で稀である:
 

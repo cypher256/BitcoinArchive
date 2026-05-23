@@ -49,6 +49,7 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2014-03-06-dorian-nakamoto-biography
+  - analysis/2009-01-09-satoshi-windows-development-environment
 inlineLinkKeywords:
   - "Hal Finney hypothesis"
   - "Finney = Satoshi"
@@ -165,7 +166,7 @@ Lopp's 2023 analysis and Peter Miller's 2026 follow-up add four further structur
 - **IP address divergence.** The January 10, 2009 Bitcoin debug log records Finney's IRC node at IP `207.71.226.132`, while Satoshi's IP appears as `68.164.57.219` — different ISPs and different geographic regions. If Finney were Satoshi, the two endpoints would not appear simultaneously as distinct peers in the same debug log.
 - **Coding-style divergence.** Finney's published code uses tabs for indentation and `snake_case` for identifiers; Satoshi's Bitcoin v0.1 source uses spaces and `camelCase` (with Hungarian-notation prefixes typical of Visual C++ on Windows). Comment formatting and function-naming conventions also diverge systematically.
 - **British vs. American spelling.** Satoshi's writing consistently uses British / Commonwealth spellings (`colour`, `favour`, `optimise`, `maths`); Finney's writing is American throughout. Stylometric comparison of Satoshi's email register against Hal's writing finds the email register matches the whitepaper better than Hal does.
-- **Operating-system divergence.** Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0 SP6 + MinGW GCC 3.4.5; Satoshi's documented December 2010 self-statement to Andresen — *"[Gavin is] technically much more Linux capable than me"* — confirms a Windows-centered work environment. Finney was a documented long-term Mac user. The development-environment record points to two different machines.
+- **Operating-system divergence.** Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0, and Satoshi's documented December 2010 self-statement to Andresen — *"[Gavin is] technically much more Linux capable than me"* — confirms a Windows-centered work environment (the full chronological record across the design, release, and final periods is in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/)). Finney was a documented long-term Mac user. The development-environment record points to two different machines.
 
 ### 3.2 Finney's 2013 *Bitcoin and Me* first-person framing of Satoshi
 

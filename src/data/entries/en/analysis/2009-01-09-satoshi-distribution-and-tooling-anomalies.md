@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Editorial reading of unusual distribution and tooling in Bitcoin v0.1: .rar packaging, no version control, no test suite, Hungarian notation. Compares Warez-scene conventions, Kaminsky 2011."
+description: "Editorial reading of Bitcoin v0.1's unusual distribution and tooling absences (.rar packaging, no version control, no tests), placed against Warez-scene conventions and Kaminsky's 2011 security audit."
 isSatoshi: false
 homeOrder: 11
 tags:
@@ -29,6 +29,7 @@ secondarySources:
   - name: "libsecp256k1 — initial commit (Pieter Wuille, March 2013)"
     url: "https://github.com/bitcoin-core/secp256k1"
 relatedEntries:
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2009-01-09-bitcoin-v01-released
@@ -48,7 +49,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-Bitcoin v0.1 shipped on SourceForge as a `.rar` archive — a format more common in IRC/XDCC Warez-scene distribution than open-source releases. No version control system was used. Variable names followed Microsoft's Hungarian notation, a style that had largely fallen out of fashion by 2008. The crypto stack used OpenSSL with build-time integrity assumptions later flagged by Dan Kaminsky in his [2011 security audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/). This entry reads Bitcoin v0.1's distribution and development-tooling choices as a coherent set of observations about Satoshi's working style — observations that describe what is in the public record and note where each choice was unusual relative to open-source norms in 2008–2009, without drawing identity or background conclusions.
+Bitcoin v0.1 shipped on SourceForge as a `.rar` archive — a format more common in IRC/XDCC Warez-scene distribution than open-source releases. No version control system was used. This entry reads the distribution-side and tooling-absence observations as a coherent set, alongside Dan Kaminsky's [2011 security audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) which examined v0.1's security architecture from the other side. The personal-environment evidence (Hungarian notation, OpenSSL dependency, Visual C++ 6.0 toolchain, the PGP MingW32 signature footer) is treated separately in [the Windows-centric development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/).
 
 ## 1. Distribution: the `.rar` packaging choice
 
@@ -90,15 +91,11 @@ These absences do not mean the code was poorly engineered (Section 4 reviews evi
 
 The combination — no VCS, no tests, no issue tracker, `.rar` distribution — is consistent with a developer whose prior experience was solo or in environments where these tools were not the default. It is inconsistent with someone embedded in a contemporary professional or academic software-engineering setting.
 
-## 3. Implementation choices later superseded by Core developers
+## 3. Implementation choices and the Windows-centric development environment
 
-Several specific implementation choices in v0.1 were subsequently revised by Bitcoin Core developers as Bitcoin matured:
+The implementation-style and personal-environment evidence — Hungarian-notation variable naming, the OpenSSL dependency that Bitcoin Core later replaced with libsecp256k1, Visual C++ 6.0 as the build toolchain, and the GnuPG MingW32 / WinPT 1.2.0 PGP signature footer on Satoshi's last known emails — is treated separately in [the Windows-centric development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/). That entry also documents Satoshi's own "much more Linux capable than me" self-positioning relative to Gavin Andresen, and the eight-month pre-SVN solo development period that overlaps with the distribution choices examined in this entry.
 
-- **Hungarian-notation variable naming.** In August 2014, Wladimir van der Laan filed [PR #4641](/BitcoinArchive/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) to remove Satoshi's Hungarian-notation convention from new code, calling it a style that "has bugged me since the beginning." The PR was merged. Hungarian notation is associated with Microsoft Windows C++ development practice of the late 1990s through the early 2000s — a stylistic marker of the Win32 / MFC tradition. (The full statistical analysis of Satoshi's coding-style fingerprint across v0.1.0 → v0.3.19 — Hungarian-notation variants, quad-slash TODO markers, custom macros, commit-time pattern — is in [the Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).)
-
-- **OpenSSL for elliptic-curve operations.** Pieter Wuille and Gregory Maxwell wrote [libsecp256k1](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) (initial commit March 2013) to replace OpenSSL for elliptic-curve operations. They concluded that "OpenSSL is not a suitable library for a consensus-critical system like Bitcoin" — its signature parsing inconsistencies could potentially cause unintended chain splits. libsecp256k1 became the default for wallet signing in Bitcoin Core v0.10 (2015) and for consensus ECDSA verification in v0.12 (January 2016), delivering 2.5–5.5× the verification speed.
-
-These revisions tell us something specific: *what professional cryptographic-systems engineering looks like, and how Satoshi's choices compared.* The Hungarian-notation choice points toward late-1990s Windows C++ background. The OpenSSL choice points toward "use the available library" rather than "audit the library for consensus-critical correctness." Both are reasonable choices for a developer working alone with limited time; both were later judged inadequate for Bitcoin's matured requirements.
+The relevant point for the Warez-scene reading: the Windows-only first release (v0.1 – v0.1.5) is one of the matching conventions in the table above, and it is consistent with the picture documented in that separate entry — not an independent surprise.
 
 ## 4. Security architecture: the Kaminsky audit
 
@@ -118,7 +115,7 @@ This is the most rigorous security review of v0.1 by an outside expert in the pu
 The picture that emerges across §1–§4 is unusual:
 
 - **Security architecture**: remarkably foresighted. Kaminsky's nine attempted exploits were all pre-blocked.
-- **Implementation process**: informal. No version control, no test suite, `.rar` distribution, Hungarian notation, OpenSSL dependency.
+- **Implementation process**: informal. No version control, no test suite, no issue tracker, `.rar` distribution. (Personal-environment markers — Hungarian notation, OpenSSL dependency, Visual C++ 6.0, MingW32 PGP footer — sit on a different axis and are collected in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/).)
 
 This combination is distinctive. It is rare in two directions:
 

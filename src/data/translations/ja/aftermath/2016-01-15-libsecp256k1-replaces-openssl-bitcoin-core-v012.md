@@ -31,6 +31,7 @@ secondarySources:
   - name: "CVE-2014-3570 — ピーター・ウィーユが報告した OpenSSL BN_sqr バグ"
     url: "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570"
 relatedEntries:
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - "aftermath/2011-03-17-pieter-wuille-biography"
   - "aftermath/2013-03-05-gregory-maxwell-biography"
   - "aftermath/2010-11-19-wladimir-van-der-laan-biography"

@@ -24,6 +24,7 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - "aftermath/2010-12-12-satoshi-handover-to-andresen"
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice

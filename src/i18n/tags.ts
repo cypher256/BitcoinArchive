@@ -80,6 +80,7 @@ export const tagTranslations: Record<string, string> = {
   'decentralization': '分散化',
   'deflation': 'デフレーション',
   'development': '開発',
+  'development-environment': '開発環境',
   'difficulty': '難易度',
   'difficulty-adjustment': '難易度調整',
   'digital-signatures': 'デジタル署名',
@@ -303,6 +304,7 @@ export const tagTranslations: Record<string, string> = {
   'technology-progress': '技術的進歩',
   'timezone-mystery': 'タイムゾーンの謎',
   'tooling': '開発ツール',
+  'satoshi-tooling': 'サトシのツール環境',
   'transaction-fees': 'トランザクション手数料',
   'transaction-finality': 'トランザクション確定性',
   'transactions': 'トランザクション',
@@ -325,6 +327,7 @@ export const tagTranslations: Record<string, string> = {
   'warez-scene': 'ウェアーズ・シーン',
   'website': 'ウェブサイト',
   'whitepaper': 'ホワイトペーパー',
+  'windows': 'Windows',
   'zero-confirmation': 'ゼロ確認',
 
   // Additional translations (2026-04-26 audit) — close ~315-tag gap in JA

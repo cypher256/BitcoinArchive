@@ -33,6 +33,7 @@ secondarySources:
   - name: "research-note/bitcoin-legacy — Git mirror of Bitcoin SVN"
     url: "https://github.com/research-note/bitcoin-legacy"
 relatedEntries:
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"
   - aftermath/2008-11-09-bitcoin-project-registered
   - aftermath/2010-05-22-bitcoin-pizza-day
