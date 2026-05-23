@@ -43,6 +43,8 @@ relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
 translationStatus: complete
 ---
 

@@ -44,6 +44,7 @@ relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+  - analysis/2009-01-09-satoshi-windows-development-environment
 inlineLinkKeywords:
   - "Wei Dai hypothesis"
   - "Wei Dai = Satoshi"
@@ -95,6 +96,12 @@ The objection: cypherpunk credentials apply to several candidates (Adam Back, Ha
 Wei Dai studied computer science at the University of Washington and worked at Microsoft. The technical capability the b-money paper demonstrates (cryptographic-protocol design at the level of an academic publication) and the engineering capability Crypto++ demonstrates (a maintained C++ library used widely in academic and commercial projects) are consistent with what Bitcoin v0.1's 19,901-line C++ codebase requires.
 
 The objection: this profile applies to many candidates and several non-candidate cypherpunks. Capability is necessary but not sufficient (per the [hypotheses overview methodology](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)).
+
+### 2.5 Windows-side development-environment overlap
+
+[Bitcoin v0.1 was developed on Windows](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) — the v0.1 readme.txt names Visual C++ 6.0 SP6 and MinGW GCC 3.4.5 as the supported compilers, the source uses Microsoft Hungarian notation, the v0.1.x series shipped as Windows-only `.rar` archives, and the final email's PGP signature footer points to a Windows-only client. Wei Dai's Crypto++ library was, in its formative years through the late 1990s and 2000s, primarily developed on Windows with Microsoft Visual C++; his subsequent employment at Microsoft (§2.4 above) is consistent with continued Windows-side work. Among the named Satoshi candidates, Wei Dai is one of the few whose documented working environment overlaps with the Windows-side stack Bitcoin v0.1 was built on, rather than diverging from it as Hal Finney's [long-term Mac use](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) and Peter Todd's [Linux-FHS repository record](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) do.
+
+The objection: a Windows-side development environment in the late 2000s was the default across professional C++ work and is consistent with several candidates plus many non-candidate developers. The dimension contributes to the supporting picture but does not select Wei Dai uniquely; the same overlap applies to any Windows-side C++ developer of the period.
 
 ## 3. The counter-evidence
 

@@ -40,6 +40,7 @@ relatedEntries:
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2009-01-09-satoshi-windows-development-environment
 inlineLinkKeywords:
   - "Todd hypothesis"
   - "Todd = Satoshi"
@@ -144,7 +145,11 @@ Todd publicly denied the claim before and after the documentary's release. His r
 
 A self-denial is not by itself dispositive — Wright self-claimed and the COPA court ruled against him; Dorian Nakamoto self-denied and the external evidence aligned (Satoshi's p2pfoundation account post "I am not Dorian Nakamoto," widespread criticism of Newsweek's identification methodology, Bitcoin community support for Dorian). Todd's self-denial is information that the hypothesis must address.
 
-### 3.4 Bitcoin community technical critique
+### 3.4 OS environment divergence with Windows-only Bitcoin v0.1
+
+[Bitcoin v0.1's development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) was Windows-only across the full Phase 1 / Phase 2 / Phase 3 record — the v0.1 readme.txt names "Microsoft Visual C++ 6.0 SP6" and "MinGW GCC (v3.4.5)" as the supported compilers, the source uses Microsoft Hungarian notation, the v0.1.x series shipped as Windows-only `.rar` archives, and Satoshi's final email in February 2011 still carried a `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` Windows-only PGP signature footer. Todd's own GitHub repositories of the overlapping period (§2 above) point uniformly to Linux: hardcoded `/usr/share/` Linux FHS paths, Unix shebangs, PyGTK (a GNOME/Linux-native GUI toolkit), with no Windows-related files, paths, or tools in any repository. The hypothesis would require Todd to have run a parallel Windows environment for everything visible under "Satoshi" — distinct from the Linux environment visible under his own name — for the entire 2007–2011 window, without that split appearing in any contemporaneous personal repository.
+
+### 3.5 Bitcoin community technical critique
 
 The documentary was widely criticized by the Bitcoin technical community within days of release. [Bitcoin Magazine](https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous) called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." [Cointelegraph](https://web.archive.org/web/20250720202155/https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto) catalogued specific factual errors. Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no formal stylometric analysis, and no explanation for how an undergraduate fine-arts student could have designed a novel consensus mechanism.
 

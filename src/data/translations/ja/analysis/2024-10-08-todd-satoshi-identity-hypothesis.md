@@ -40,6 +40,7 @@ relatedEntries:
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
+  - analysis/2009-01-09-satoshi-windows-development-environment
 inlineLinkKeywords:
   - "トッド仮説"
   - "トッド＝サトシ"
@@ -144,7 +145,11 @@ Bitcoin Institute がここで自ら立てる反対の論点：サトシ投稿�
 
 自己否定は単独で決定的ではない — ライトは自称し、COPA 法廷は本人ではないと判決した。ドリアン・ナカモトは自己否定し、外部証拠も整合した（サトシの p2pfoundation アカウントが「私はドリアン・ナカモトではない」 と投稿、Newsweek の特定手法への広範な批判、ビットコインコミュニティによるドリアン支援）。トッドの自己否定は、仮説が向き合わなければならない情報の一つである。
 
-### 3.4 ビットコインコミュニティの技術的批判
+### 3.4 Windows 専一の Bitcoin v0.1 開発環境との OS 非整合
+
+[Bitcoin v0.1 の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は Phase 1 / Phase 2 / Phase 3 の全期間にわたって Windows 専一だった ― v0.1 の readme.txt は対応コンパイラーとして「Microsoft Visual C++ 6.0 SP6」 と「MinGW GCC (v3.4.5)」 を明記し、 ソースはマイクロソフトのハンガリアン記法、 v0.1.x シリーズは Windows 専用 `.rar` で出荷、 2011 年 2 月のサトシ最終メールにも `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` の Windows 専用 PGP 署名末尾が残る。 トッド自身の同時期 GitHub リポジトリ (§2 上記) は一様に Linux を指す: ハードコードされた `/usr/share/` Linux FHS パス、 Unix シェバン、 PyGTK (GNOME/Linux ネイティブの GUI ツールキット)、 Windows 関連ファイル・パス・ツールはどのリポジトリにも現れない。 仮説は、 トッドが「サトシ」 名義で可視化された全環境を Windows で、 自分の名義で可視化された全環境を Linux で、 2007–2011 年の全期間にわたって並列運用していたこと、 しかもその二重環境がいかなる同時期の個人リポジトリにも現れないことを要求する。
+
+### 3.5 ビットコインコミュニティの技術的批判
 
 ドキュメンタリーは公開後数日のうちに、ビットコイン技術コミュニティから広く批判された。[Bitcoin Magazine](https://bitcoinmagazine.com/culture/money-electric-insult-bitcoin-cynical-stupid-dangerous) は「ビットコインへの侮辱 — 皮肉で、愚かで、危険」 と題した記事を掲載した。[Cointelegraph](https://web.archive.org/web/20250720202155/https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto) は具体的な事実誤認を整理した。批評家たちは、暗号学的証明も、形式的な文体分析も、美術系の学部生がどうやって新しいコンセンサスメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
 

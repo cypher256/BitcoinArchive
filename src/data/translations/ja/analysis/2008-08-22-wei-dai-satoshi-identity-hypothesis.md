@@ -44,6 +44,7 @@ relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+  - analysis/2009-01-09-satoshi-windows-development-environment
 inlineLinkKeywords:
   - "ウェイ・ダイ仮説"
   - "ウェイ・ダイ = サトシ"
@@ -96,6 +97,12 @@ translationStatus: complete
 ウェイ・ダイはワシントン大学で計算機科学を学び、Microsoft で勤務した。b-money 論文が示す技術能力（学術出版水準の暗号プロトコル設計）と Crypto++ が示す工学能力（学術・商用プロジェクトで広く使われる保守された C++ ライブラリ）は、ビットコイン v0.1 の 19,901 行 C++ コードベースが要求するものと整合する。
 
 反論: このプロファイルは複数の候補と非候補のサイファーパンクに当てはまる。能力は必要条件だが十分条件ではない（[仮説概要の方法論](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)参照）。
+
+### 2.5 Windows 側開発環境の重なり
+
+[Bitcoin v0.1 は Windows 上で開発された](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/) ― v0.1 の readme.txt は対応コンパイラーとして Visual C++ 6.0 SP6 と MinGW GCC 3.4.5 を明記、 ソースはマイクロソフトのハンガリアン記法、 v0.1.x シリーズは Windows 専用 `.rar` で出荷、 最終メールの PGP 署名末尾も Windows 専用クライアントを指している。 ウェイ・ダイの Crypto++ ライブラリは、 形成期にあたる 1990 年代末から 2000 年代を通じて主に Windows 上の Microsoft Visual C++ で開発されてきた。 マイクロソフト勤務 (§2.4 上記) もそれと整合する Windows 側の継続を示す。 名指しサトシ候補の中でウェイ・ダイは、 ハル・フィニーの[長期 Mac 利用](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)やピーター・トッドの [Linux-FHS リポジトリ記録](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)のように Bitcoin v0.1 の Windows 側スタックと相違するのではなく、 重なる側に位置する数少ない候補の 1 人である。
+
+反論: 2000 年代後半の Windows 側開発環境はプロの C++ 開発では既定であり、 複数の候補と多数の非候補開発者にも当てはまる。 この次元は支持の像に寄与するが、 ウェイ・ダイを一意に選び出さない ― 同時代の Windows 側 C++ 開発者すべてに同じ重なりが当てはまる。
 
 ## 3. 反証
 
