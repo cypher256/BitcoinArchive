@@ -52,6 +52,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2026-05-18-bitcoin-quantum-threat
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 inlineLinkKeywords:
   - "Bitcoin design lineage"
   - "what Bitcoin reuses"

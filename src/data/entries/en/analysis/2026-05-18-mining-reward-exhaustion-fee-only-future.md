@@ -41,6 +41,7 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 translationStatus: complete
 ---
 

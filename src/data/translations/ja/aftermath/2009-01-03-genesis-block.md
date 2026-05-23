@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシが Bitcoin の設計の中に残した唯一の個人的な肉声は、最初のブロックに刻んだ一行 ― ソフトウェアバージョンでも自分の名前でもなく、二度目の銀行救済を伝えるタイムズ紙のその日の見出しだった。なぜその見出しを、システムが持つもっとも永続的な場所に選んだのかを読む。"
+description: "最初のブロックに刻まれたタイムズ紙の見出しは、二度目の銀行救済を伝える一行 ― サトシが設計の中に残した唯一の個人的な肉声。 なぜその見出しを選んだのかを読む。"
 isSatoshi: true
 tags:
   - "sourceforge"
@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2022-10-06-serhack-alternative-genesis-block
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
   - aftermath/2011-04-26-satoshi-final-known-email
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 quotes:
   - id: "q1"
     person: "The Times"

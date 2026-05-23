@@ -8,9 +8,9 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "A complete beginner's visual guide to Bitcoin — no prior knowledge of currency, computers, or cryptography assumed. Thirty terms across eight chapters, each with its own diagram: coins as UTXOs, transactions as input-output flows, blocks chained by hashes, mining as a lottery, mempool as the waiting room, and consensus as agreement on the longest chain."
+description: "Beginner's visual guide to Bitcoin — 30 terms across 8 chapters, each with a diagram. Coins as UTXOs, transactions as flows, blocks chained by hashes, mining, mempool, longest-chain consensus."
 isSatoshi: false
-homeOrder: 11
+homeOrder: 2
 tags:
   - "beginner-guide"
   - "terminology"
@@ -28,11 +28,12 @@ relatedEntries:
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-bitcoin-design-lineage"
 inlineLinkKeywords:
-  - "Bitcoin whitepaper"
-  - "genesis block"
-  - "Hashcash"
-  - "coinbase transaction"
   - "UTXO"
+  - "UTXO model"
+  - "coinbase transaction"
+  - "mempool"
+  - "halving"
+  - "block height"
 ---
 
 This entry assumes you know nothing about Bitcoin, nothing about cryptography, and nothing about how computers exchange data. By the time you reach the bottom, you should be able to read the rest of the Archive without getting lost in jargon. Every key term gets a one-line definition the first time it appears, plus a diagram showing where it fits.

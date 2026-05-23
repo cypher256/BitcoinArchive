@@ -58,6 +58,8 @@ translationStatus: complete
 
 「サトシ・ナカモト」 は仮名である。その背後にいる個人またはグループは、これまで特定されていない。
 
+*ビットコインがはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から ― 8 章 30 用語を図と一緒に、 事前知識ゼロでも読める。*
+
 ```mermaid
 timeline
     2008 : アダム・バックへの 最初の既知メール - 電子キャッシュ システムの相談 (8月)

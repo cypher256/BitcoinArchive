@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi's only personal voice inside Bitcoin's design is the line he etched into the first block — not a software version, not his name, but that day's Times newspaper headline on the second banking bailout. A reading of why he chose it, in the most permanent place the system has."
+description: "Bitcoin's first block contains a Times bank-bailout headline — Satoshi's only personal voice inside the design, etched in the system's most permanent place. A reading of why he chose it."
 isSatoshi: true
 tags:
   - "sourceforge"
@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2022-10-06-serhack-alternative-genesis-block
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
   - aftermath/2011-04-26-satoshi-final-known-email
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 quotes:
   - id: "q1"
     person: "The Times"

@@ -32,11 +32,14 @@ relatedEntries:
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2026-05-18-bitcoin-quantum-threat
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 ---
 
 **PDF:** [View the Bitcoin whitepaper (PDF)](/BitcoinArchive/documents/bitcoin.pdf)
 
 **See also:** [Early draft (October 3, 2008)](/BitcoinArchive/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/)
+
+**New to Bitcoin?** Read the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) first — 30 terms across 8 chapters with diagrams. The whitepaper assumes you already know what a UTXO, a coinbase transaction, and proof-of-work are.
 
 ---
 

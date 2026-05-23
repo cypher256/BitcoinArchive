@@ -12,7 +12,7 @@ participants:
     slug: "craig-wright"
 description: "Technical analysis of Bitcoin's genesis block from v0.1 source: hardcode auto-construction, the five-day gap as timestamp artifact, two-layer authorship reading, PoW headroom, key possession."
 isSatoshi: false
-homeOrder: 6
+homeOrder: 7
 tags:
   - "genesis-block"
   - "source-code"
@@ -49,6 +49,7 @@ relatedEntries:
   - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
   - "analysis/2008-08-20-satoshi-activity-timeline"
   - "aftermath/2016-05-02-craig-wright-biography"
+  - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
 inlineLinkKeywords:
   - "five-day gap"
   - "5-day gap"

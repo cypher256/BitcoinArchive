@@ -26,7 +26,7 @@ participants:
     slug: "vitalik-buterin"
 description: "ビットコインのプロトコル分岐 (ビットコインキャッシュ、SV、ゴールド) と派生した隣接暗号通貨 (ネームコイン、ライトコイン) の系譜。"
 isSatoshi: false
-homeOrder: 9
+homeOrder: 10
 tags:
   - "fork"
   - "altcoin"

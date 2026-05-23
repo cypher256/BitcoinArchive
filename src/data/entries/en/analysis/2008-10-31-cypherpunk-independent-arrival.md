@@ -22,7 +22,7 @@ participants:
     slug: "nick-szabo"
 description: "Editorial reading of Satoshi's relationship to cypherpunk, from three primary observations: he didn't know b-money, Wei Dai testified Satoshi was \"not previously active,\" alignment with Hughes 1993."
 isSatoshi: false
-homeOrder: 5
+homeOrder: 6
 tags:
   - "cypherpunk"
   - "satoshi-identity"

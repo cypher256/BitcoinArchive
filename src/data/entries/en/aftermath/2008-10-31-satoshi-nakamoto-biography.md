@@ -57,6 +57,8 @@ On October 31, 2008, Satoshi Nakamoto published the Bitcoin whitepaper. Two and 
 
 "Satoshi Nakamoto" is a pseudonym. The individual or group behind it has never been identified.
 
+*New to Bitcoin? Start with the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) — 30 terms across 8 chapters with diagrams, no prior knowledge assumed.*
+
 ```mermaid
 timeline
     2008 : Earliest known email - to Adam Back about an electronic cash system (Aug)

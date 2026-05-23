@@ -698,4 +698,9 @@ export const tagTranslations: Record<string, string> = {
   'press': '報道',
   'protocol-spec': 'プロトコル仕様',
   'sybil-attack': 'シビル攻撃',
+  'beginner-guide': '初心者ガイド',
+  'diagrams': '図解',
+  'explainer': '解説',
+  'terminology': '用語',
+  'utxo': 'UTXO',
 };

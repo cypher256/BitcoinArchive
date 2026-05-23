@@ -41,6 +41,7 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 translationStatus: complete
 ---
 
@@ -59,7 +60,7 @@ translationStatus: complete
 
 ```mermaid
 graph TD
-  CB[コインベーストランザクション] --> S[新規発行分]
+  CB[コインベース トランザクション] --> S[新規発行分]
   CB --> F[手数料合計]
   S --> M[マイナー報酬]
   F --> M
