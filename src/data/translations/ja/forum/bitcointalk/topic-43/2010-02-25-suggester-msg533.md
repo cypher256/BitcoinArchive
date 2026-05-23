@@ -18,6 +18,7 @@ quotes:
     date: "2010-02-21T18:52:43.000Z"
     sourceEntryId: "forum/bitcointalk/topic-43/2010-02-21-newlibertystandard-msg425"
   - id: "q2"
+    parent: "q1"
     person: "Sabunir"
     personSlug: "sabunir"
     date: "2010-02-21T16:58:44.000Z"
