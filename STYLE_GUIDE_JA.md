@@ -934,7 +934,7 @@ Mermaid はタイムラインのラベルを ASCII の空白文字でしか改�
 言語非依存の規則 (本ファイルでは複製しない):
 
 - `STYLE_GUIDE.md § Core Distinction: Blockquotes vs Quotation Marks`
-- `STYLE_GUIDE.md § Primary-Source Entries` / `§ Editorial / Narrative Entries`
+- `STYLE_GUIDE.md § Primary-Source Entries` / `§ Editorial Entries (article / analysis / biography)`
 - `STYLE_GUIDE.md § Translation Principle`
 - `STYLE_GUIDE.md § Consistency Rule`
 - `STYLE_GUIDE.md § Related Entries`

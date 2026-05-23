@@ -150,45 +150,149 @@ an editorial entry mistakenly placed under a primary-source directory
 does not appear in the thread view alongside the primary sources it
 references.
 
-## Editorial / Narrative Entries
+## Editorial Entries (article / analysis / biography)
 
-This section covers the **quotation form** used inside editor-written
-narrative entries (aftermath, biographies, retrospectives). For the
-**editor-note markers** that appear inside these same entries (the
-markers that say "this paragraph is the editor's interpretation, not
-quoted material"), see the [Editorial Markers](#editorial-markers)
-section below.
+The archive's entry types split into two groups:
 
-For editor-written narrative entries such as aftermath pages, biographies, and
-retrospectives:
+- **Primary-source types** (6) — `correspondence`, `mailing-list`,
+  `forum-post`, `bip`, `whitepaper`, `court-document`. The body holds
+  the verbatim source content. Rules in
+  [§ Primary-Source Entries](#primary-source-entries) apply.
+- **Editorial types** (3) — `article`, `analysis`, `biography`. The
+  body is Bitcoin Institute's own writing about the subject. This
+  section governs them.
 
-- when excerpting a short direct quote inside the article narrative, use a
-  blockquote plus the language-appropriate quotation marks
-- when presenting a longer source passage or document-style excerpt, a
-  blockquote alone is usually enough
-- the blockquote contents must be the primary-source text only.
-  Editor-added attribution lines (e.g., "— [Wikipedia](url)" / "— bitcoin.org,
-  [release notes](url)" / "（[出典](url)）") must be placed **outside** the
-  blockquote on a separate paragraph. Inside the blockquote = primary-source
-  voice; outside the blockquote = editor's voice. Mixing them inside the
-  same `>` block creates the false impression that the cited work named its
-  own URL — and triggers the URL-de-link rule below on the editor's
-  attribution link.
+The split is hard: a body composed of editor narrative belongs in an
+editorial type, and a body composed of verbatim source content belongs
+in a primary-source type. Mixing them in a single entry violates
+[§ Primary-Source Entries](#primary-source-entries) — split into two
+entries instead, linked via `relatedEntries` and
+`quotes[].sourceEntryId`.
 
-Typical pattern:
+### Body content: Bitcoin Institute writes the body, not the subject
 
-- English: `> "..."` for short excerpted speech or statements
-- Japanese: `> 「...」` for short excerpted speech or statements
+The body of an editorial entry is Bitcoin Institute's editorial
+reading, not the subject's words. The subject (the person, document,
+or event the entry is about) is named in `participants[]` and
+referenced from the body; any direct quotation from the subject is
+held inside `quotes[]` + `<!-- quote: qN -->` markers per
+[§ Editorial Markers](#editorial-markers) (E).
 
-External URLs inside a blockquote are stripped of clickability at render
-time by `src/lib/rehype-strip-archive-links.mjs`: the URL text is preserved
-(copy-pasteable), but the user is not invited to click. This matches the
-practice of print archives and academic citation conventions for historical
-source URLs that may have suffered link rot. Editor-added attribution links
-placed *outside* the blockquote remain clickable. Internal archive links
-(`/BitcoinArchive/...`) and editor-note blocks (`*[Editor: ...]*` /
-`*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) are exempt and
-remain clickable in either position.
+What an editorial body should contain:
+
+- A substantive editor narrative carrying the reading, interpretation,
+  or compiled account. This is the entry's actual content.
+- Short blockquote excerpts of the subject's words (per the quotation
+  form rules below), each anchored to a `quotes[]` entry.
+- Markdown links to participants, related archive entries, and external
+  references that support the reading.
+- Visual structure (Mermaid timelines, tables, d3 components) where
+  the content shape calls for it
+  (see [§ Visual Representation](#visual-representation)).
+
+What an editorial body must **not** be:
+
+- A bare blockquote plus one or two `*[Context: ...]*` / `*[補足：...]*`
+  notes with no editor narrative. That is a placeholder body: the
+  in-body context markers ([§ Editorial Markers](#editorial-markers)
+  category D) are **supplementary annotation around the body**, never a
+  substitute for the body itself. An editorial entry whose only prose
+  is in `*[Context: ...]*` blocks is unfinished.
+- An editor-voice rewrite of the source content. Quote the source
+  inside a blockquote; let the editor narrative around the blockquote
+  carry the reading.
+
+When the editorial framing for a primary source is substantial enough
+to warrant a full editorial entry, follow the split rule from
+[§ Primary-Source Entries](#primary-source-entries): create a separate
+`type: article` entry under `aftermath/` (or `type: analysis` under
+`analysis/`) and link it back to the raw primary entry via
+`quotes[].sourceEntryId` and `relatedEntries`.
+
+### Quotation form inside an editorial body
+
+When excerpting the subject's words (or a third-party voice) inside
+the editor narrative:
+
+- For a short direct quote, use a blockquote plus the
+  language-appropriate quotation marks.
+  - English: `> "..."` for short excerpted speech or statements
+  - Japanese: `> 「...」` for short excerpted speech or statements
+- For a longer source passage or document-style excerpt, a blockquote
+  alone is usually enough.
+- The blockquote contents must be the primary-source text only.
+  Editor-added attribution lines (e.g., "— [Wikipedia](url)" /
+  "— bitcoin.org, [release notes](url)" / "（[出典](url)）") must be
+  placed **outside** the blockquote on a separate paragraph. Inside
+  the blockquote = primary-source voice; outside the blockquote =
+  editor's voice. Mixing them inside the same `>` block creates the
+  false impression that the cited work named its own URL — and
+  triggers the URL-de-link rule below on the editor's attribution
+  link.
+
+External URLs inside a blockquote are stripped of clickability at
+render time by `src/lib/rehype-strip-archive-links.mjs`: the URL text
+is preserved (copy-pasteable), but the user is not invited to click.
+This matches the practice of print archives and academic citation
+conventions for historical source URLs that may have suffered link
+rot. Editor-added attribution links placed *outside* the blockquote
+remain clickable. Internal archive links (`/BitcoinArchive/...`) and
+editor-note blocks (`*[Editor: ...]*` / `*[Context: ...]*` /
+`*[編者注：...]*` / `*[補足：...]*`) are exempt and remain clickable
+in either position.
+
+### Frontmatter `author` semantics
+
+The meaning of the top-level `author` field depends on the entry's
+type. The two-axis design — frontmatter `author` separate from the
+on-page byline — lets the entry list cards surface the *subject* the
+entry is about while the entry page itself shows Bitcoin Institute as
+the editorial voice.
+
+| Type group | `author` holds | On-page byline (`EntryMeta`) | List card byline (`EntryCard`) | OG / JSON-LD `article:author` |
+|---|---|---|---|---|
+| Primary-source (6) | the actual writer (email sender, forum poster, BIP author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
+| `article` / `analysis` | the **subject** the entry is about (the person, document, or event the editorial reading covers) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject) | **Bitcoin Institute** (forced by type) |
+| `biography` | the **subject of the biography** (the person whose biography this is) | (no `/entries/{id}/` page; biography renders inside the participant page, where no byline is shown) | `author` verbatim (subject) | (no entry page; participant page handles its own metadata) |
+
+For `article` / `analysis`, the forced byline is implemented in
+`src/components/EntryMeta.astro` and the forced OG / JSON-LD author is
+implemented in `src/pages/entries/[...slug].astro` (and the JA
+mirror). Both branches key on `entry.data.type === 'article' || 'analysis'`.
+
+For `biography`, no `/entries/{id}/` page is generated
+(`src/pages/entries/[...slug].astro` filters biographies out at
+static-path generation); the biography body is mounted inside
+`src/pages/participants/[participant].astro`. The frontmatter
+`author` field on a biography therefore has no on-page render path —
+it stays present for schema completeness and listing-card display.
+
+Worked examples:
+
+```yaml
+# A primary-source email Satoshi wrote
+type: correspondence
+author: "Satoshi Nakamoto"    # the actual sender
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+  - name: "Adam Back"
+    slug: "adam-back"
+
+# An editorial reading of the genesis-block event
+type: article
+author: "Satoshi Nakamoto"    # the subject the article is about
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+
+# Hal Finney's biography
+type: biography
+author: "Hal Finney"          # the subject of the biography
+participants:
+  - name: "Hal Finney"
+    slug: "hal-finney"
+```
 
 ## Link Integrity
 
@@ -533,7 +637,7 @@ normalized.
 | **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
 | **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` (role split between the two fields: see [§ Source Citation](#source-citation-sourceurl-vs-secondarysources)) | same | rendered at the end of the entry by `<SourceCitation />` |
 | **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
-| **D** | In-body historical context | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
+| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography)) | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
 | **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
 
@@ -1590,7 +1694,7 @@ Auto-linking deliberately skips:
 - Inside an existing `<a>` (no double-linking).
 - Inside `<code>` or `<pre>` (don't auto-link identifiers).
 - Inside `<blockquote>` — primary-source quote in editorial entries
-  (see [Editorial / Narrative Entries](#editorial--narrative-entries)).
+  (see [Editorial Entries](#editorial-entries-article--analysis--biography)).
   Same convention used by [`rehype-strip-archive-links`](#external-link-rot-handling).
 - Inside `<aside class="editor-inline">` — editor notes
   (see [Editorial Markers](#editorial-markers)). Editor notes keep
