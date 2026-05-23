@@ -26,7 +26,7 @@
     "check:mermaid": "node scripts/check-mermaid.mjs",
     "check:mermaid-ja-wrap": "node scripts/check-mermaid-ja-wrap.mjs",
     "check:bios-rendering": "node scripts/check-bios-rendering.mjs",
-    "audit:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs",
+    "audit:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs --report-unused",
     "audit:inline-reference-gaps": "node scripts/check-internal-links.mjs --inline-gaps",
     "audit:external-link-redundancy": "node scripts/check-external-link-redundancy.mjs",
     "audit:external-links": "node scripts/audit-external-links.mjs",

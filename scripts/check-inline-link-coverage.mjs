@@ -31,6 +31,17 @@
  * zero prose-context occurrences (= no entry will ever auto-link
  * to the target).
  *
+ * Flags:
+ *   --strict          exit 1 when any keyword has 0 prose occurrences
+ *   --report-unused   print per-keyword "0 occurrences" / "prose:0
+ *                     but exists in skip context" lines (verbose).
+ *                     Without this flag, only the summary count of
+ *                     unused keywords is printed. `npm run check`
+ *                     omits the flag (so the noise stays out of the
+ *                     gate); `npm run audit:inline-link-coverage`
+ *                     passes it (so the inventory pass-through is
+ *                     available on demand).
+ *
  * Note: this is a coarse markdown analysis (not a full HAST parse).
  * It is sufficient for keyword-level auditing because the auto-link
  * plugin uses the same coarse exclusions. The actual rendering
@@ -45,6 +56,7 @@ const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), '..');
 
 const STRICT = process.argv.includes('--strict');
+const REPORT_UNUSED = process.argv.includes('--report-unused');
 
 const COLLECTIONS = [
   { name: 'en', base: path.join(ROOT, 'src/data/entries/en') },
@@ -142,6 +154,7 @@ function makeKeywordRegex(kw) {
 let totalProse = 0;
 let totalSkipped = 0;
 let unusedKeywords = 0;
+let skipOnlyKeywords = 0;
 const failures = [];
 
 for (const { name: locale, base } of COLLECTIONS) {
@@ -193,18 +206,23 @@ for (const { name: locale, base } of COLLECTIONS) {
     const total = counts.prose + counts.blockquote + counts.aside + counts.code + counts['verbatim-file'];
     if (total === 0) {
       unusedKeywords++;
-      console.log(`  ⚠ "${kw}" (${kind}, target=${target}) — 0 occurrences`);
+      if (REPORT_UNUSED) {
+        console.log(`  ⚠ "${kw}" (${kind}, target=${target}) — 0 occurrences`);
+      }
       if (STRICT) failures.push(`[${locale}] keyword "${kw}" never appears in any entry body`);
       continue;
     }
     localeProse += counts.prose;
     localeSkipped += counts.blockquote + counts.aside + counts.code + counts['verbatim-file'];
     if (counts.prose === 0) {
-      console.log(
-        `  ⚠ "${kw}" (${kind}) — prose:0  ` +
-        `bq:${counts.blockquote} aside:${counts.aside} ` +
-        `code:${counts.code} verbatim:${counts['verbatim-file']} (occurrences exist but all in skip contexts)`
-      );
+      skipOnlyKeywords++;
+      if (REPORT_UNUSED) {
+        console.log(
+          `  ⚠ "${kw}" (${kind}) — prose:0  ` +
+          `bq:${counts.blockquote} aside:${counts.aside} ` +
+          `code:${counts.code} verbatim:${counts['verbatim-file']} (occurrences exist but all in skip contexts)`
+        );
+      }
     }
   }
 
@@ -217,6 +235,12 @@ console.log(`\n=== Summary ===`);
 console.log(`Total prose-context occurrences (auto-linked): ${totalProse}`);
 console.log(`Total skip-context occurrences (intentional skips): ${totalSkipped}`);
 console.log(`Keywords never used: ${unusedKeywords}`);
+console.log(`Keywords with prose:0 (skip-context only): ${skipOnlyKeywords}`);
+if (!REPORT_UNUSED && (unusedKeywords > 0 || skipOnlyKeywords > 0)) {
+  console.log(
+    `Run \`npm run audit:inline-link-coverage\` to list each unused / skip-only keyword.`
+  );
+}
 if (totalProse === 0 && totalSkipped === 0) {
   console.log('No keyword usage detected.');
 }
