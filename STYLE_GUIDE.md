@@ -709,6 +709,24 @@ normalized.
     Archive editors must not change or normalize them.** This rule is
     the [Primary-Source Entries](#primary-source-entries) preservation
     principle applied to inline edit markers.
+13. **(C)/(D) usage policy by entry type (0523 editorial-note plan):**
+    - In **editorial entries** (`article` / `analysis` / `biography`),
+      facts that read as natural body prose (related events,
+      aftermath, biography, follow-up reporting, contemporary-value
+      conversions, section-introducing sentences) **belong in body
+      prose**, not in (C)/(D) brackets. The bracketed form is
+      reserved for genuine editor interpretation (C) or for
+      adjacent-but-distinct context that would derail the body
+      narrative (D, e.g. a short pointer to a sibling entry).
+    - In **primary-source entries** (`correspondence` /
+      `mailing-list` / `forum-post` / `whitepaper` / `bip` /
+      `court-document`), the
+      [No editor narrator inside primary-source bodies](#primary-source-entries)
+      rule still applies. Short editor notes that survive there
+      should stay as (C)/(D) or, when they grow long enough to read
+      as page-level, migrate to (A) `editorNote:` in frontmatter.
+      Do **not** dissolve them into body prose — that would
+      reintroduce editor narrator into the source record.
 
 ### Every source quote must belong to an attribution chain
 
