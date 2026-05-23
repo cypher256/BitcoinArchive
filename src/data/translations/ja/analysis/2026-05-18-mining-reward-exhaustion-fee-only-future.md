@@ -60,7 +60,7 @@ translationStatus: complete
 
 ```mermaid
 graph TD
-  CB[コインベース トランザクション] --> S[新規発行分]
+  CB[コインベース<br/>トランザクション] --> S[新規発行分]
   CB --> F[手数料合計]
   S --> M[マイナー報酬]
   F --> M

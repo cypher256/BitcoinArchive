@@ -4,11 +4,14 @@
  * Mermaid block labels that would overflow the rendered column box.
  *
  * Why this script exists:
- *   Mermaid wraps labels only at ASCII whitespace (U+0020). Japanese has
- *   no natural inter-word spaces, so a label like
- *   "サトシ最有力候補と名指される" cannot wrap and overflows narrower
- *   columns. `・` (middle dot) and `、` (full-width comma) are NOT
- *   recognized as wrap points by Mermaid.
+ *   Long unbroken Japanese spans in Mermaid labels overflow narrower
+ *   columns at render time. Mermaid will wrap a label only at an explicit
+ *   break — either `<br/>` (preferred for display) or ASCII whitespace
+ *   `U+0020` (which Mermaid treats as a wrap point but which appears in
+ *   the rendered text as a mid-word gap in Japanese, e.g.
+ *   "待機中の トランザクション" — and reads as unnatural to JA readers).
+ *   `・` (middle dot) and `、` (full-width comma) are NOT recognized as
+ *   wrap points by Mermaid.
  *
  *   `check-mermaid.mjs` validates syntax. `check-bios-rendering.mjs`
  *   captures visual screenshots. This script catches the layout problem
@@ -17,10 +20,15 @@
  * Detection:
  *   1. Walk all .md files under entries/translations.
  *   2. Extract every ```mermaid ... ``` block.
- *   3. For each non-keyword line in the block:
- *      a. Tokenize on ASCII whitespace `[ \t]+`.
- *      b. For each token, count Unicode code points.
- *      c. If token contains CJK and exceeds threshold, flag it.
+ *   3. Detect the diagram type from the first non-empty line.
+ *   4. For each non-keyword line in the block (sequenceDiagram message
+ *      lines exempted — see below):
+ *      a. Normalize `<br/>`, `<br>`, `<br />` to ASCII whitespace so
+ *         explicit line breaks count as wrap points.
+ *      b. Strip Mermaid syntax characters (brackets, arrows).
+ *      c. Tokenize on ASCII whitespace `[ \t]+`.
+ *      d. For each token, count Unicode code points.
+ *      e. If token contains CJK and exceeds threshold, flag it.
  *
  * Exempt lines (Mermaid syntax keywords, not rendered as column labels):
  *   - title <text>             — title bar layout has more width
@@ -31,6 +39,16 @@
  *                                 also handled at the rehype layer (the
  *                                 directives are stripped before mermaid
  *                                 renders, see remark-mermaid-extract-click)
+ *
+ * Exempt diagram type:
+ *   - sequenceDiagram          — messages render on arrows that auto-
+ *                                 expand horizontally; the fixed-width-
+ *                                 column overflow assumption does not
+ *                                 apply. JA messages should still avoid
+ *                                 mid-text ASCII spaces (use `<br/>` if a
+ *                                 line break is desired), but this is a
+ *                                 display preference, not a layout-break
+ *                                 risk, so it is not enforced here.
  *
  * CJK ranges checked:
  *   - U+3040–U+309F (Hiragana)
@@ -91,13 +109,24 @@ function extractMermaidBlocks(content) {
       startLine = i + 1;
       buffer = [];
     } else if (inBlock && /^```\s*$/.test(line)) {
-      blocks.push({ startLine, lines: buffer });
+      blocks.push({ startLine, lines: buffer, type: detectDiagramType(buffer) });
       inBlock = false;
     } else if (inBlock) {
       buffer.push(line);
     }
   }
   return blocks;
+}
+
+function detectDiagramType(lines) {
+  for (const line of lines) {
+    const stripped = line.trim();
+    if (!stripped) continue;
+    const m = stripped.match(/^(sequenceDiagram|flowchart|graph|classDiagram|stateDiagram|gantt|gitGraph|pie|journey|erDiagram|mindmap|timeline|requirementDiagram|C4Context|C4Container|C4Component|C4Dynamic|C4Deployment)\b/);
+    if (m) return m[1];
+    return null;
+  }
+  return null;
 }
 
 function codePointLength(str) {
@@ -108,8 +137,10 @@ function codePointLength(str) {
 // the unbroken-span length reflects the rendered label width rather than
 // the raw source. Brackets, parentheses, braces, quotes, and edge arrows
 // are syntax — they are not part of the label that the renderer wraps.
+// `<br/>`, `<br>`, `<br />` are explicit line breaks → count as wrap points.
 function stripMermaidSyntax(line) {
   return line
+    .replace(/<br\s*\/?>/gi, ' ')
     .replace(/-->|---|-\.->|==>|~~~/g, ' ')
     .replace(/[\[\]\(\)\{\}"']/g, ' ');
 }
@@ -136,6 +167,10 @@ for (const file of files) {
   const content = readFileSync(file, 'utf-8');
   const blocks = extractMermaidBlocks(content);
   for (const block of blocks) {
+    // sequenceDiagram messages render on arrows that auto-expand
+    // horizontally — the fixed-width-column overflow assumption does not
+    // apply. Skip the wrap check for this diagram type.
+    if (block.type === 'sequenceDiagram') continue;
     for (let j = 0; j < block.lines.length; j++) {
       const lineNumber = block.startLine + 1 + j;
       const hits = findOverflowTokens(block.lines[j]);
@@ -162,7 +197,8 @@ console.error(`✗ Found ${violations.length} unbroken Japanese span(s) exceedin
 for (const v of violations) {
   console.error(`  ${v.file}:${v.line}`);
   console.error(`    "${v.token}" (${v.length} chars)`);
-  console.error(`    Insert an ASCII space at a semantic break point so the label can wrap.`);
+  console.error(`    Insert <br/> at a semantic break point so the label wraps.`);
+  console.error(`    (Do NOT use a mid-text ASCII space — it renders as a mid-word gap in Japanese.)`);
 }
-console.error(`\nSee STYLE_GUIDE_JA.md § II.3 "Mermaid timeline labels — Japanese line wrapping".`);
+console.error(`\nSee STYLE_GUIDE_JA.md § II.3 "Mermaid labels — Japanese line wrapping".`);
 process.exit(1);
