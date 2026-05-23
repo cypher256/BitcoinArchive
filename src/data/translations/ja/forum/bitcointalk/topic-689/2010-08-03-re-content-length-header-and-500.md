@@ -21,6 +21,7 @@ quotes:
     date: "2010-08-03T09:56:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-689/2010-08-03-gavin-andresen-msg7299"
   - id: "q2"
+    parent: "q1"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
     date: "2010-08-03T09:09:08.000Z"
