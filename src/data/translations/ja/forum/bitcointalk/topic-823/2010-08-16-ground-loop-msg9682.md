@@ -18,6 +18,7 @@ quotes:
     date: "2010-08-16T01:00:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-re-overflow-bug-serious"
   - id: "q2"
+    parent: "q1"
     person: "Ground Loop"
     personSlug: "ground-loop"
     date: "2010-08-16T00:29:55.000Z"
