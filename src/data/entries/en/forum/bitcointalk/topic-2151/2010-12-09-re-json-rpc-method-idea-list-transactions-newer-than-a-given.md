@@ -25,6 +25,7 @@ quotes:
     date: "2010-12-08T14:07:22.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-08-jgarzik-msg28301"
   - id: "q3"
+    parent: "q2"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
     date: "2010-12-08T13:36:45.000Z"

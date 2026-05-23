@@ -17,6 +17,7 @@ quotes:
     date: "2010-12-09T15:27:10.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2162/2010-12-09-timo-y-msg28555"
   - id: "q2"
+    parent: "q1"
     person: "ShadowOfHarbringer"
     personSlug: "shadowofharbringer"
     date: "2010-12-09T13:51:20.000Z"
