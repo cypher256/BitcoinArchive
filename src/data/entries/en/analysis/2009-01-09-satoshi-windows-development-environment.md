@@ -1,5 +1,5 @@
 ---
-title: "Satoshi's Windows-only development environment — engagement profile by period"
+title: "Why did Satoshi build Bitcoin only on Windows? — 27 months of Linux silence"
 date: 2009-01-09T00:00:00Z
 type: "analysis"
 source: "sourceforge"
@@ -12,7 +12,7 @@ participants:
     slug: "martti-malmi"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Satoshi developed Bitcoin on Windows exclusively. No Linux trace for 27 months (design + release + early); Linux engagement only starts as reactive support for Malmi's port."
+description: "On the public record, Satoshi developed Bitcoin on Windows exclusively for 27 months (design + release + early period); Linux engagement first appears as reactive support for Malmi's port."
 isSatoshi: false
 tags:
   - "bitcoin-v0.1"
@@ -62,8 +62,8 @@ This entry organizes that record by period.
 timeline
     title Satoshi Windows-only environment - three phases
     section Phase 1 - no Linux trace (27 mo)
-        mid-2007 : design begins (estimated)
-        2008-10-31 : whitepaper published
+        mid-2007 : coding begins per Satoshi 1.5-year self-statement
+        2008-10-31 : whitepaper published, drafted from code
         2009-01-09 : v0.1 released - Windows-only .rar
     section Phase 2 - reactive Linux support (16 mo)
         2009-08-24 : first Linux mention - to Malmi
@@ -78,7 +78,7 @@ The phases are anchored on three public-record events: the first dated Linux-tag
 
 ## 2. Phase 1 — design, release, and early period (~27 months): no Linux trace
 
-The whitepaper claim that Bitcoin was already "designed" by October 2008 places the start of work in mid-2007 at the latest. The v0.1 release ships on January 9, 2009 as a Windows-only `.rar` archive on SourceForge. For another seven months after that — until the very end of August 2009 — Bitcoin's source code lives only on Satoshi's local machine, distributed as successive `.rar` releases. Across this entire twenty-seven-month window, the Archive contains:
+Satoshi himself stated in his August 2008 email to Adam Back that he had "worked through every detail in the last year and a half while coding it," and later told Mike Hearn he needed "a break from it after 18 months development." A self-attested 18-month coding span ending around the v0.1 release places the start of work in mid-2007 at the latest — the full self-statement timeline is collected in [the cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/). The v0.1 release ships on January 9, 2009 as a Windows-only `.rar` archive on SourceForge. For another seven months after that — until the very end of August 2009 — Bitcoin's source code lives only on Satoshi's local machine, distributed as successive `.rar` releases. Across this entire twenty-seven-month window, the Archive contains:
 
 - **No Linux discussion in Satoshi's email.** The earliest Linux-tagged Satoshi email is [2009-08-24 to Malmi](/BitcoinArchive/entries/correspondence/martti-malmi/2009-08-24-bitcoin-029/). Nothing earlier surfaces Linux as a topic.
 - **No Linux build, port, or user-side commentary.** The first "Linux build" thread in the archive is the late-October 2009 series with Malmi.
@@ -86,7 +86,7 @@ The whitepaper claim that Bitcoin was already "designed" by October 2008 places 
 
 ### 2.0 Cross-platform consideration is structurally absent — three observations
 
-1. **v0.1 is Windows-only.** For ten months (v0.1 through v0.1.5), Satoshi shipped only the Windows-only `.rar`.
+1. **v0.1 is Windows-only.** From [v0.1 (January 9, 2009)](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) through the v0.1.x minor series until [v0.2 added Linux support on December 16, 2009](/BitcoinArchive/entries/aftermath/2009-12-16-bitcoin-v02-released/) — roughly eleven months — Satoshi shipped only the Windows-only `.rar`.
 2. **The whitepaper and early documents are platform-silent.** No mention of OS, no portability goal, no stated intention to ship multi-platform implementations, no strategic framing like "of the available platforms, we chose Windows because…" — none of these appear.
 3. **All cross-platform ports came from collaborators.** Martti Malmi did the Linux port in August 2009; Laszlo Hanyecz did the macOS fix in August 2010. No cross-platform release ever came from Satoshi's own hands on the public record.
 
@@ -115,7 +115,7 @@ Variable names throughout v0.1 follow Microsoft's Hungarian notation (type-prefi
 
 ### 2.3 `.rar` packaging and Windows-only first releases
 
-Bitcoin v0.1 through v0.1.5 shipped on SourceForge as `.rar` archives, Windows-only. The format is treated in detail in [the Warez-scene parallel entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/); the relevant point here is that the Windows-only initial scope is consistent with — and dated to — Phase 1.
+Bitcoin v0.1 and the v0.1.x minor series — from January 2009 until v0.2 added Linux support in December 2009 — shipped on SourceForge as Windows-only `.rar` archives. The format is treated in detail in [the Warez-scene parallel entry](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/); the relevant point here is that the Windows-only initial scope is consistent with — and dated to — Phase 1.
 
 ### 2.4 Eight months without any team-development tooling
 
