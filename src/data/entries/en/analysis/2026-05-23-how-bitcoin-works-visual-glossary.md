@@ -81,7 +81,7 @@ flowchart LR
 
 The rules of the system are defined by a short paper [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) published in 2008, the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/). The software was released two months later, in January 2009, and has been running continuously ever since.
 
-One refinement before we move on. The node described above — the kind that stores the entire blockchain and independently verifies every rule — is called a **full node**. A lighter variant called a **light node**, or **SPV** client (for *simplified payment verification*), only downloads a tiny summary at the top of each block (the **block header**) and asks full nodes whether specific transactions exist. SPV is what runs on most phone wallets. The whitepaper's § 8 sketches the idea; the production engineering came years later, driven largely by [Mike Hearn's bitcoinj work](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/). For the rest of this entry, "node" means full node unless stated otherwise.
+One refinement before we move on. The node described above — the kind that stores the entire blockchain and independently verifies every rule — is called a **full node**. A lighter variant called a **light node**, or **SPV** client (for *simplified payment verification*), only downloads a tiny summary at the top of each block (the **block header**) and asks full nodes whether specific transactions exist. Many phone wallets run on SPV; many others use a still simpler model — querying a central server API operated by the wallet provider — which is even lighter but trusts the provider for everything. The whitepaper's § 8 sketches the SPV idea; the production engineering came years later, driven largely by [Mike Hearn's bitcoinj work](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/). For the rest of this entry, "node" means full node unless stated otherwise.
 
 The rest of this entry explains, step by step, how that runs-by-itself system actually works.
 
@@ -188,9 +188,9 @@ Each block contains its own short fingerprint called a **hash**. A hash is compu
 ```mermaid
 flowchart LR
   IN1["Input: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'"] --> HF((SHA-256))
-  HF --> H1["e8b...4f2 (a specific 256-bit number)"]
+  HF --> H1["e8b...4f2 (illustrative — actual hash is a specific 256-bit number)"]
   IN2["Input: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for bank'<br/>(one character removed)"] --> HF2((SHA-256))
-  HF2 --> H2["91a...7c5 (totally different)"]
+  HF2 --> H2["91a...7c5 (illustrative — entirely different from above)"]
 ```
 
 Each new block also includes the hash of the previous block inside itself. That linking is what makes it a **chain**: every block points backwards to the one before it, all the way back to the very first block ever produced.
@@ -201,7 +201,7 @@ flowchart LR
   B1[Block 1<br/>previous-hash: 000...26f<br/>own hash: 000...d24]
   B2[Block 2<br/>previous-hash: 000...d24<br/>own hash: 000...8c7]
   B3[Block 3<br/>previous-hash: 000...8c7<br/>own hash: 000...b13]
-  ETC[... continues to today, height ~900,000]
+  ETC[... continues past height 900,000 today]
   B0 --> B1 --> B2 --> B3 --> ETC
 ```
 

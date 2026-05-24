@@ -82,7 +82,7 @@ flowchart LR
 
 このシステムのルールは、 2008 年に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が公開した 1 本の短い論文 ― [Bitcoin ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) ― で定義されている。 ソフトウェア本体は 2 か月後の 2009 年 1 月にリリースされ、 それ以来止まることなく稼働し続けている。
 
-先に進む前に 1 つ補足を。 上で述べた「ノード」 ― ブロックチェーン全部を保持し、 すべてのルールを独立に検証する種類 ― を **フルノード** と呼ぶ。 これとは別に、 もう少し軽い変種として **軽量ノード**、 または **SPV** クライアント (*simplified payment verification* の略) と呼ばれるものがあり、 各ブロックの先頭にある要約データ ― **ブロックヘッダー** ― だけをダウンロードして、 特定のトランザクションが存在するかをフルノードに問い合わせる方式で動く。 SPV はほとんどのスマートフォンウォレットの実装である。 ホワイトペーパーの § 8 で発想が示され、 実用的なエンジニアリングは数年後、 おもに[マイク・ハーンの bitcoinj 開発](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/)によって進められた。 この後の章では、 特に断らない限り「ノード」 はフルノードを指す。
+先に進む前に 1 つ補足を。 上で述べた「ノード」 ― ブロックチェーン全部を保持し、 すべてのルールを独立に検証する種類 ― を **フルノード** と呼ぶ。 これとは別に、 もう少し軽い変種として **軽量ノード**、 または **SPV** クライアント (*simplified payment verification* の略) と呼ばれるものがあり、 各ブロックの先頭にある要約データ ― **ブロックヘッダー** ― だけをダウンロードして、 特定のトランザクションが存在するかをフルノードに問い合わせる方式で動く。 スマートフォンウォレットの多くは SPV で動くが、 もう一段単純な「ウォレット運営者の中央サーバー API に問い合わせる」 方式 (より軽量だが運営者を全面的に信頼する) を採るものも多い。 SPV の発想はホワイトペーパー § 8 で示され、 実用的なエンジニアリングは数年後、 おもに[マイク・ハーンの bitcoinj 開発](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/)によって進められた。 この後の章では、 特に断らない限り「ノード」 はフルノードを指す。
 
 この後の章では、 その「勝手に動き続ける」 システムが実際にどう動くのかを順を追って説明する。
 
@@ -189,9 +189,9 @@ flowchart LR
 ```mermaid
 flowchart LR
   IN1["入力: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'"] --> HF((SHA-256))
-  HF --> H1["e8b...4f2 (特定の 256 ビット数値)"]
+  HF --> H1["e8b...4f2 (例示 ― 実際は特定の 256 ビット数値)"]
   IN2["入力: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for bank'<br/>(1 文字削除)"] --> HF2((SHA-256))
-  HF2 --> H2["91a...7c5 (まったく別物)"]
+  HF2 --> H2["91a...7c5 (例示 ― 上とまったく別物)"]
 ```
 
 さらに各新規ブロックには、 1 つ前のブロックのハッシュも自分自身の中に含まれている。 このリンクが**チェーン**を作る: すべてのブロックが、 1 つ前のブロックを指し続け、 最初のブロックまで遡れる。
@@ -202,7 +202,7 @@ flowchart LR
   B1[ブロック 1<br/>previous-hash: 000...26f<br/>own hash: 000...d24]
   B2[ブロック 2<br/>previous-hash: 000...d24<br/>own hash: 000...8c7]
   B3[ブロック 3<br/>previous-hash: 000...8c7<br/>own hash: 000...b13]
-  ETC[... 高さ約 900,000 の現在まで続く]
+  ETC[... 高さ 90 万を超える現在まで続く]
   B0 --> B1 --> B2 --> B3 --> ETC
 ```
 
