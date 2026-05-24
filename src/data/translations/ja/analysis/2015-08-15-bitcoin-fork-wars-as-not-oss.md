@@ -59,6 +59,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2017-11-08-segwit2x-cancellation
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 translationStatus: complete
 ---
 

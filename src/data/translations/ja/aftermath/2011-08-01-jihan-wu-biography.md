@@ -25,6 +25,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
 2011 年、中国の経済学・ジャーナリズム卒業生ジハン・ウーがサトシのビットコイン白書を中国語に翻訳した。2 年後、チップ設計者ミッキー・ザン（Micree Zhan）と共同で **Bitmain Technologies** を設立、2015〜2018 年には Bitmain がビットコイン ASIC の支配的製造業者となり、新規マイニングハードウェア出荷の過半を握った。Bitmain は同時期にハッシュレート最大のビットコインマイニングプール AntPool を運営。2017 年 8 月 1 日、ウーは Bitmain 系列のハッシュレートを[ビットコインキャッシュのハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に投じた —— BCH が初期の難易度調整期間中にブロック生成を維持できた決定的要因の一つだった。

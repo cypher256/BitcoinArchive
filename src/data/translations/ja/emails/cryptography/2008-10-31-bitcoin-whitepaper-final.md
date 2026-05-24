@@ -33,6 +33,7 @@ relatedEntries:
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2026-05-18-bitcoin-quantum-threat
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 translationStatus: complete
 ---
 

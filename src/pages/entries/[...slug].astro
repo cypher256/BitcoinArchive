@@ -175,6 +175,10 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
       <BitcoinForkGenealogy lang={lang} />
     )}
 
+    {entry.id.includes('satoshi-design-vs-current-reality') && (
+      <BitcoinForkGenealogy lang={lang} />
+    )}
+
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
       <Content />
     </div>
@@ -200,6 +204,10 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
     )}
 
     {entry.id.includes('lopp-was-satoshi-greedy-miner') && (
+      <LoppHashrateAnalysis lang={lang} />
+    )}
+
+    {entry.id.includes('satoshi-design-vs-current-reality') && (
       <LoppHashrateAnalysis lang={lang} />
     )}
 

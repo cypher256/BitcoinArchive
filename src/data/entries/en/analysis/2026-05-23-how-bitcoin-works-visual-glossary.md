@@ -27,6 +27,7 @@ relatedEntries:
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-bitcoin-design-lineage"
+  - "analysis/2026-05-24-satoshi-design-vs-current-reality"
   - "aftermath/2010-05-22-laszlo-hanyecz-biography"
   - "aftermath/2011-08-01-jihan-wu-biography"
   - "aftermath/2018-10-01-ray-dillinger-interview"
@@ -38,6 +39,11 @@ inlineLinkKeywords:
   - "mempool"
   - "halving"
   - "block height"
+  - "full node"
+  - "light node"
+  - "block header"
+  - "ASIC"
+  - "application-specific integrated circuit"
 ---
 
 This entry assumes you know nothing about Bitcoin, nothing about cryptography, and nothing about how computers exchange data. By the time you reach the bottom, you should be able to read the rest of the Archive without getting lost in jargon. Every key term gets a one-line definition the first time it appears, plus a diagram showing where it fits.
@@ -268,7 +274,7 @@ flowchart LR
   E5 --> ETC[... continues halving<br/>~2140: reward effectively 0]
 ```
 
-**Why almost no nodes actually mine.** "Any node can be a miner" is true at the protocol level, but in practice almost no nodes do. The reason is economic. Through the early 2010s, mining moved off ordinary PCs (their CPUs and then graphics-card GPUs) onto a class of purpose-built chip called an **ASIC** — *application-specific integrated circuit*, meaning a chip that does nothing but compute Bitcoin's hash function, but does it for far less electricity per attempt than any general-purpose computer can. A PC competing against ASIC-class hardware burns power and earns nothing; even a single modern ASIC competing against the whole network's combined hashing speed has tiny odds of ever winning a block. The result is a clean separation of roles: tens of thousands of ordinary computers run nodes (to verify the chain on their own behalf), and a much smaller specialised industry runs mining hardware (to issue new blocks and earn the reward). Satoshi saw this drift coming early and was uneasy about it — see [Laszlo Hanyecz's recollection of Satoshi's GPU-mining pushback](/BitcoinArchive/participants/laszlo-hanyecz/). The industrial ASIC era was later defined by Bitmain — see [Jihan Wu's biography](/BitcoinArchive/participants/jihan-wu/) — and the centralisation consequences are dissected in [Ray Dillinger's 2018 interview](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/).
+**Why almost no nodes actually mine.** "Any node can be a miner" is true at the protocol level, but in practice almost no nodes do. Modern mining requires industrial-scale **ASIC** hardware (*application-specific integrated circuit* chips that compute Bitcoin's hash function and nothing else, using far less electricity per attempt than any general-purpose computer can). The industrial ASIC era began in 2013, *after* Satoshi's 2011 disappearance — so the Satoshi-era "one-CPU-one-vote" picture is the original design intent, not the operational reality on the ground today. The full story of that drift (along with three other axes where current Bitcoin differs from Satoshi's design) is the companion entry [Satoshi's design intent vs Bitcoin's current reality](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/).
 
 ## 6. Mempool: the waiting room
 
@@ -324,6 +330,5 @@ The chapters above are the model. From here, every term you saw can be followed 
 - [Adam Back's 1997 Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) — the proof-of-work scheme Bitcoin reused at its core.
 - [The mining-reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) — what happens to miner economics when the block reward eventually reaches zero.
 - [The Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) — which parts of Bitcoin came from prior work, which parts were genuinely new.
-- [Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/) — the GPU mining transition Satoshi was uneasy about, told from the side of the developer who did it.
-- [Jihan Wu biography](/BitcoinArchive/participants/jihan-wu/) — how Bitmain's ASIC production shaped a decade of mining centralisation.
+- [Satoshi's design intent vs Bitcoin's current reality](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) — the companion entry that maps the four axes (mining, custody, governance, scaling) where today's Bitcoin diverges from the design above. Read this *after* the protocol chapters here.
 - [Mike Hearn's December 2010 SPV progress letter](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/) — the practical engineering behind light-node wallets.

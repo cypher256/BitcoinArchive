@@ -28,6 +28,7 @@ relatedEntries:
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-bitcoin-design-lineage"
+  - "analysis/2026-05-24-satoshi-design-vs-current-reality"
   - "aftermath/2010-05-22-laszlo-hanyecz-biography"
   - "aftermath/2011-08-01-jihan-wu-biography"
   - "aftermath/2018-10-01-ray-dillinger-interview"
@@ -40,6 +41,10 @@ inlineLinkKeywords:
   - "メモリープール"
   - "半減期"
   - "ブロック高"
+  - "フルノード"
+  - "軽量ノード"
+  - "ブロックヘッダー"
+  - "ASIC"
 ---
 
 このエントリーは、 ビットコインのことも、 暗号学のことも、 コンピューター同士がどうデータをやり取りするかも、 何ひとつ知らない読者を前提にしている。 ここを最後まで読み通せば、 本アーカイブの他のエントリーを開いても、 出てくる用語に詰まらず読み進められるようになっているはずだ。 主要な用語はすべて、 初出のところで一行の定義と、 仕組み上どこに位置するかを示す図を添える。
@@ -270,7 +275,7 @@ flowchart LR
   E5 --> ETC[... 半減が続く<br/>~2140 年: 報酬は事実上 0]
 ```
 
-**なぜほとんどのノードは実際にはマイニングしないのか。** 「ノードは誰でもマイナーになれる」 はプロトコル上の真理だが、 実態はほとんどのノードがマイニングしない。 理由は経済的なものだ。 2010 年代前半を通じて、 マイニングは普通の PC (CPU、 次いで画像処理用の GPU) を離れ、 専用設計のチップ ― **ASIC** (*application-specific integrated circuit* の略、 「特定用途向け集積回路」) に移行した。 ASIC はビットコインのハッシュ関数を計算する以外のことは何もできない代わりに、 1 回のハッシュ計算に必要な電力が汎用コンピューターよりはるかに少ない。 ASIC 級の競争相手の中で PC を回しても電気代が出るだけで報酬は得られず、 ASIC 1 台でネットワーク全体の合計計算速度と張り合っても、 1 ブロック当てる確率はほとんどゼロに等しい。 結果として役割の明確な分離が生じている: 何万台もの普通のコンピューターがノードを動かし (自分の取引を独立検証するため)、 ずっと少数の専門産業がマイニングハードウェアを動かす (新ブロック発行と報酬獲得のため)。 サトシはこの流れを早期に予見しており、 不安を感じていた ― [ラズロ・ハニエツのバイオグラフィー](/BitcoinArchive/ja/participants/laszlo-hanyecz/)に、 サトシの GPU マイニングへの懸念表明が記録されている。 ASIC 時代の産業構造を決定づけたのは Bitmain だった ― [ジハン・ウーのバイオグラフィー](/BitcoinArchive/ja/participants/jihan-wu/)を参照。 集中化の帰結は[レイ・ディリンジャー 2018 年インタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)で詳細に分析されている。
+**なぜほとんどのノードは実際にはマイニングしないのか。** 「ノードは誰でもマイナーになれる」 はプロトコル上の真理だが、 実態はほとんどのノードがマイニングしない。 現代のマイニングは産業規模の **ASIC** ハードウェア (*application-specific integrated circuit* の略、 「特定用途向け集積回路」 ― ビットコインのハッシュ関数しか計算しない代わりに、 1 回の計算に必要な電力が汎用コンピューターよりはるかに少ないチップ) を必要とする。 産業 ASIC 時代は 2013 年に始まった ― サトシ 2011 年消失の *後* である。 したがってサトシ時代の「1 CPU = 1 票」 像は元の設計意図であり、 今日の運用現実ではない。 この乖離の全容 (および現状がサトシ設計と異なる他 3 軸) は対となるエントリー[サトシの設計意図とビットコインの現状の乖離](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)で扱う。
 
 ## 6. メモリープール: 待合室
 
@@ -326,6 +331,5 @@ flowchart TD
 - [1997 年のアダム・バックによる Hashcash 発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) ― ビットコインが中核で再利用したプルーフ・オブ・ワーク方式。
 - [マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) ― ブロック報酬が最終的にゼロに達したとき、 マイナー経済はどうなるか。
 - [ビットコイン設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) ― ビットコインのどの部分が先行研究から、 どの部分が真に新規の設計から来ているか。
-- [ラズロ・ハニエツのバイオグラフィー](/BitcoinArchive/ja/participants/laszlo-hanyecz/) ― サトシが不安を感じていた GPU マイニングへの移行を、 実行した開発者の側から見た記録。
-- [ジハン・ウーのバイオグラフィー](/BitcoinArchive/ja/participants/jihan-wu/) ― Bitmain の ASIC 製造がどう 10 年分のマイニング集中化を形作ったか。
+- [サトシの設計意図とビットコインの現状の乖離](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) ― 4 軸 (マイニング、 カストディ、 ガバナンス、 スケーリング) で現在の Bitcoin が本記事のプロトコル設計とどう乖離しているかを描いた対となる記事。 本記事のプロトコル章を読んだ *後* に。
 - [マイク・ハーン 2010 年 12 月 SPV 進捗報告](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/) ― 軽量ノードウォレットの実用エンジニアリングの裏側。

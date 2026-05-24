@@ -25,6 +25,8 @@ secondarySources:
     url: "https://www.cnbc.com/2024/07/05/mt-gox-begins-repaying-bitcoin-to-creditors-a-decade-on-from-collapse.html"
 relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
+  - aftermath/2022-11-11-ftx-collapse
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 translationStatus: complete
 ---
 

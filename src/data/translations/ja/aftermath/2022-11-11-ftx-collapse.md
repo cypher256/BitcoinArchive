@@ -23,6 +23,9 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"
   - name: "ABC News — A Timeline of FTX's Historic Collapse"
     url: "https://abcnews.com/Business/timeline-cryptocurrency-exchange-ftxs-historic-collapse/story?id=93337035"
+relatedEntries:
+  - aftermath/2014-02-28-mt-gox-bankruptcy
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 translationStatus: complete
 ---
 

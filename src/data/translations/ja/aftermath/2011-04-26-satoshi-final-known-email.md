@@ -34,6 +34,7 @@ relatedEntries:
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2009-01-03-genesis-block
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
