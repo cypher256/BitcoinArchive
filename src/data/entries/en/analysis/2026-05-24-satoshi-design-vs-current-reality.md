@@ -42,7 +42,7 @@ relatedEntries:
 
 Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks four axes where the gap is largest, with pointers to the records.
 
-| Axis | Satoshi's design | Current reality | Drift started |
+| Axis | Early design picture | Current reality | Drift started |
 |---|---|---|---|
 | **Mining** | "one-CPU-one-vote" | ASIC oligopoly | 2010 GPU, 2013 ASIC |
 | **Custody** | Each user holds private keys | Exchange IOUs / ETF wrappers | 2011 onwards (Mt. Gox) |
@@ -158,4 +158,4 @@ flowchart TB
 
 Pointing out drift is not arguing that Bitcoin failed. Some of these drifts are arguably unavoidable consequences of mass adoption: ASIC specialisation is what any economically valuable proof-of-work attracts, custodial exchanges exist because most people do not want the responsibility of key management, layer-2 scaling is the conservative path that preserves base-layer security. The point of this entry is only that any beginner-level description of Bitcoin that *omits* these four drifts is incomplete — readers will encounter the drifts in practice the moment they actually use a service, and reconciling the gap themselves without a map is harder than acknowledging the gap up front.
 
-The [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) describes the protocol as Satoshi designed it. This entry is its companion: the protocol is real and runs; the operational reality on top of it is also real, and is not the same thing.
+The [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) describes the protocol's basic shape as read from the whitepaper and the early design. This entry is its companion: the protocol is real and runs; the operational reality on top of it is also real, and is not the same thing.
