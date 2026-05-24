@@ -40,3 +40,13 @@ nonce hash
 # 猶予期間中の Wikipedia ja 主表記ルール誤発火を回避する。
 Ethereum's quantum
 Ethereum is
+
+# Bitcoin whitepaper References [2]: academic paper title cited verbatim.
+# Foreign academic titles fall under STYLE_GUIDE_JA § I.2 category 4
+# (source / citation surface). 'minimal' rule false-positive.
+Design of a secure timestamping service with minimal trust requirements
+
+# GenesisBlockGap.astro: 'gap' is a JS object key (code identifier),
+# not Japanese prose. The .astro script region is not masked by
+# maskNonProse the way Markdown code fences are. 'gap' rule false-positive.
+gap: '

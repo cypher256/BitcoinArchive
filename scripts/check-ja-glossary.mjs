@@ -218,6 +218,24 @@ const RULES = [
   //   - 別項目化が自然 → 改行・箇条書き
   // canonical は文脈依存なので「適切な日本語句読点」 とする。
   { type: 'literal', deprecated: '；', canonical: '、 / 。 / — / 改行', reason: '日本語タイポグラフィに「；」 は存在しない。英語の ";" の機械的全角化を禁止。文脈に応じて 「、」「。」「 — 」「改行」 のいずれかに置換する' },
+
+  // --- English-word leak prevention in JA prose ---
+  // Per the global CLAUDE.md "Japanese generation rules" and the recurring
+  // user-feedback memory feedback_japanese_no_english_strict.md, English
+  // words must not be mixed into Japanese sentences. These literal rules
+  // catch the highest-frequency recent violators. Proper-noun / fixed-phrase
+  // false positives (e.g. "Internet Archive", "Bitcoin Archive" as a
+  // foreign brand) are handled via the .ja-glossary-ignore file when they
+  // are legitimately the brand name; in-archive self-reference must use
+  // 「アーカイブ」 / 「本アーカイブ」 per STYLE_GUIDE § "Medium vs Archive".
+  { type: 'literal', deprecated: 'Bitcoin Archive', canonical: '本アーカイブ', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一 (STYLE_GUIDE.md § Medium vs Archive)' },
+  { type: 'literal', deprecated: 'BitcoinArchive の対象', canonical: '本アーカイブの対象', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一。BitcoinArchive はリポジトリ名・URL パス用途のみ' },
+  { type: 'literal', deprecated: 'BitcoinArchive におけ', canonical: '本アーカイブにおけ', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一' },
+  { type: 'literal', deprecated: 'Archive の残り', canonical: '本アーカイブの他のエントリー', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一。「残り」 は読者が途中まで読んだ含意が出るので不適' },
+  { type: 'word', deprecated: 'consumer', canonical: '利用者', reason: 'JA 散文では抽象概念「利用者」 に統一 (STYLE_GUIDE_JA § I.8)。タグスラッグ「early-contributor」 と区別するため word 型 (word boundary 検出)' },
+  { type: 'word', deprecated: 'contributor', canonical: '貢献者', reason: 'JA 散文では抽象概念「貢献者」 に統一。タグスラッグ「early-contributor」 は frontmatter / inline code で maskNonProse 除外' },
+  { type: 'word', deprecated: 'minimal', canonical: '最小限', reason: 'JA 散文では和訳「最小限」 に統一 (§ I.8)' },
+  { type: 'word', deprecated: 'gap', canonical: '隔たり / 差', reason: 'JA 散文では和訳「隔たり」 / 「差」 / 「ギャップ」(カナ) に統一 (§ I.8)' },
 ];
 
 function walk(dir) {
