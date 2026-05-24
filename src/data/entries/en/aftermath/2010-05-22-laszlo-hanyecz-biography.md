@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 ---
 
 On May 22, 2010, Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas. At the time, that was worth about $41. At Bitcoin's peak, the same amount would be worth hundreds of millions of dollars. The date is now celebrated annually as ["Bitcoin Pizza Day"](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — the first known real-world commercial transaction in Bitcoin's history.

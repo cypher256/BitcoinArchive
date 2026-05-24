@@ -27,6 +27,10 @@ relatedEntries:
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-bitcoin-design-lineage"
+  - "aftermath/2010-05-22-laszlo-hanyecz-biography"
+  - "aftermath/2011-08-01-jihan-wu-biography"
+  - "aftermath/2018-10-01-ray-dillinger-interview"
+  - "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
 inlineLinkKeywords:
   - "UTXO"
   - "UTXO model"
@@ -71,6 +75,8 @@ flowchart LR
 
 The rules of the system are defined by a short paper [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) published in 2008, the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/). The software was released two months later, in January 2009, and has been running continuously ever since.
 
+One refinement before we move on. The node described above — the kind that stores the entire blockchain and independently verifies every rule — is called a **full node**. A lighter variant called a **light node**, or **SPV** client (for *simplified payment verification*), only downloads a tiny summary at the top of each block (the **block header**) and asks full nodes whether specific transactions exist. SPV is what runs on most phone wallets. The whitepaper's § 8 sketches the idea; the production engineering came years later, driven largely by [Mike Hearn's bitcoinj work](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/). For the rest of this entry, "node" means full node unless stated otherwise.
+
 The rest of this entry explains, step by step, how that runs-by-itself system actually works.
 
 ## 2. Quick reference glossary
@@ -80,6 +86,8 @@ Use this as a lookup table. Each term links to the chapter where it is explained
 | Term | One-line meaning | Chapter |
 |---|---|---|
 | Node | A computer running Bitcoin software | [1](#1-what-is-bitcoin-exactly) |
+| Full node | Node holding the whole blockchain and verifying every rule (assumed kind here) | [1](#1-what-is-bitcoin-exactly) |
+| Light node (SPV) | Node downloading only block headers, trusting full nodes for the rest (typical on phones) | [1](#1-what-is-bitcoin-exactly) |
 | Peer-to-peer (P2P) | Direct computer-to-computer network, no central server | [1](#1-what-is-bitcoin-exactly) |
 | Wallet | Software that holds your keys and lets you send/receive bitcoins | [3](#3-what-a-coin-actually-is-the-utxo-model) |
 | Private key | A secret number; whoever holds it controls the coins | [3](#3-what-a-coin-actually-is-the-utxo-model) |
@@ -197,6 +205,27 @@ The whole linked structure — genesis to the most recent block — is the **blo
 
 ## 5. Mining: issuance and validation
 
+Before going into mining itself, three terms that sound similar but are not the same thing:
+
+- A **node** runs the Bitcoin software and verifies the chain — that is its job.
+- A **miner** is a node that *also* spends compute power racing to produce the next block.
+- A **wallet** is software that manages your keys and builds transactions; it can live inside a node, talk to a node, or sit on a phone with no full node at all.
+
+Mining is a strictly added activity on top of being a node. A wallet is a separate concern again — a phone wallet usually talks to someone else's node, often via SPV (chapter 1). Bitcoin Core ships all three roles in one program, which is the most common reason these terms get conflated.
+
+```mermaid
+flowchart TB
+  subgraph N["Nodes - verify the chain"]
+    subgraph M["Miners - also race for the next block"]
+      ASIC[ASIC-driven mining rig]
+    end
+    BC[Bitcoin Core<br/>node + wallet, no mining]
+    PV[Pure verifier<br/>node only]
+  end
+  PW[Phone wallet<br/>SPV, no full node]
+  HW[Hardware wallet<br/>keys only]
+```
+
 So who decides which transactions go into the next block, and where do new bitcoins come from?
 
 The answer is **mining**. Any node willing to do the work can be a **miner**. Miners collect waiting transactions, package them into a candidate block, and then race to solve a puzzle. The puzzle is: *find a number to put in the block such that the block's hash starts with a certain number of zeros.* That number you keep changing is called the **nonce**. Because the hash function (chapter 4) gives completely unpredictable outputs, the only way to find a winning nonce is to keep trying. This trying-millions-of-numbers process is called **proof-of-work** (often abbreviated **PoW**) — first proposed for spam control in [Adam Back's 1997 Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/), reused in Bitcoin as the core mechanism.
@@ -238,6 +267,8 @@ flowchart LR
   E4 --> E5[2024 - 2028<br/>3.125 BTC]
   E5 --> ETC[... continues halving<br/>~2140: reward effectively 0]
 ```
+
+**Why almost no nodes actually mine.** "Any node can be a miner" is true at the protocol level, but in practice almost no nodes do. The reason is economic. Through the early 2010s, mining moved off ordinary PCs (their CPUs and then graphics-card GPUs) onto a class of purpose-built chip called an **ASIC** — *application-specific integrated circuit*, meaning a chip that does nothing but compute Bitcoin's hash function, but does it for far less electricity per attempt than any general-purpose computer can. A PC competing against ASIC-class hardware burns power and earns nothing; even a single modern ASIC competing against the whole network's combined hashing speed has tiny odds of ever winning a block. The result is a clean separation of roles: tens of thousands of ordinary computers run nodes (to verify the chain on their own behalf), and a much smaller specialised industry runs mining hardware (to issue new blocks and earn the reward). Satoshi saw this drift coming early and was uneasy about it — see [Laszlo Hanyecz's recollection of Satoshi's GPU-mining pushback](/BitcoinArchive/participants/laszlo-hanyecz/). The industrial ASIC era was later defined by Bitmain — see [Jihan Wu's biography](/BitcoinArchive/participants/jihan-wu/) — and the centralisation consequences are dissected in [Ray Dillinger's 2018 interview](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/).
 
 ## 6. Mempool: the waiting room
 
@@ -293,3 +324,6 @@ The chapters above are the model. From here, every term you saw can be followed 
 - [Adam Back's 1997 Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) — the proof-of-work scheme Bitcoin reused at its core.
 - [The mining-reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) — what happens to miner economics when the block reward eventually reaches zero.
 - [The Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) — which parts of Bitcoin came from prior work, which parts were genuinely new.
+- [Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/) — the GPU mining transition Satoshi was uneasy about, told from the side of the developer who did it.
+- [Jihan Wu biography](/BitcoinArchive/participants/jihan-wu/) — how Bitmain's ASIC production shaped a decade of mining centralisation.
+- [Mike Hearn's December 2010 SPV progress letter](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/) — the practical engineering behind light-node wallets.

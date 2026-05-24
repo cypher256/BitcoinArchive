@@ -37,6 +37,8 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-12-29T22:42:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
+relatedEntries:
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 ---
 
 Thanks for the info.
