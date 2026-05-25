@@ -57,3 +57,5 @@ On May 18, 2010, Hanyecz [posted on the BitcoinTalk forum](/BitcoinArchive/entri
 In February 2018, Hanyecz made another symbolic pizza purchase — this time using the Lightning Network, Bitcoin's layer-2 scaling solution. Asked years later by Cointelegraph whether he regretted the original transaction, he answered:
 
 > "You know, I don't regret it. I think that it's great that I got to be part of the early history of Bitcoin in that way, and people know about the pizza and it's an interesting story because everybody can kind of relate to that..."
+
+*[Context: Laszlo Hanyecz appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the GPU-mining pioneer and the buyer of the first physical good bought with Bitcoin (the Pizza Day exchange) — one of the named scenes the novel uses to mark Bitcoin's first contact with the physical world.]*

@@ -113,3 +113,5 @@ In August 2009, Finney was diagnosed with amyotrophic lateral sclerosis (ALS). H
 > "I recently discovered that I can even write code. It's very slow, probably 50 times slower than I was before. But I still love programming and it gives me goals."
 
 Hal Finney died on August 28, 2014, at 8:50 AM in Scottsdale, Arizona. He was cryopreserved by Alcor Life Extension Foundation as their 128th patient (member A-1436). He is survived by his wife [Fran](/BitcoinArchive/participants/fran-finney/), son Jason, and daughter Erin.
+
+*[Context: Hal Finney appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the second-node operator whose "Running bitcoin" tweet signals that the protagonist's system is no longer his alone, and whose later cryopreservation provides a parallel motif on persistence beyond the recorded life.]*

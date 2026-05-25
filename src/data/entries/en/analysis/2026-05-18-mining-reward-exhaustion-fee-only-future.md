@@ -125,3 +125,5 @@ This entry is a record of design commitments and a documented debate. It is not 
 - This entry takes no position on whether the fee-only transition will succeed. The Archive's role is to record what Satoshi wrote, what the code commits the network to, and what serious analyses have raised.
 
 *[Editor: the year 2140 is a consequence of consensus rules in force today, not a fixed prophecy. If the network ever altered the block target or the halving schedule, the date would move. The Archive treats 2140 as the date the *current* design produces, in the same way the 21 million cap is the *current* design's consequence rather than a separately enforced number.]*
+
+*[Context: The fee-only transition around 2140 analyzed here is the technical basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s closing chapter — the day the last Bitcoin is mined and another message is inscribed.]*

@@ -165,3 +165,5 @@ This puts the 2010 incident in a peculiar position in the historical record. It 
 - **knightmb's specific role.** The blockchain-snapshot contribution is recorded structurally in the [knightmb snapshot and legend](/BitcoinArchive/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/) entry. This entry mentions the snapshot only to identify it as part of the rescue infrastructure; the editorial reading of knightmb's broader role lives in that entry.
 
 The aftermath narrative records the event. This analysis records the structural reading. Identity, intent, and individual contribution belong in the entries that make those questions their primary subject. Each of those entries hedges where the evidence does not support stronger claims, and so does this one.
+
+*[Context: The five-hour patch deployment and the centralization paradox analyzed here are the structural basis for one of the named scenes in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the moment a "decentralized" system is saved by a single author with unique release authority.]*

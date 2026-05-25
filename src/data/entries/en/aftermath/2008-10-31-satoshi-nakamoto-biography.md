@@ -150,3 +150,5 @@ Approximately 1.1 million BTC were mined under a single coordinated pattern in B
 - **Signature reading**: the techno-orientalist symbolic field that the "Satoshi Nakamoto" pseudonym lands inside is treated in [the pseudonym-and-AKIRA analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/).
 
 Across mailing-list and forum messages, Satoshi explained design choices, responded to technical objections, and made operational decisions — declining the WikiLeaks donation push in December 2010, handing source-repository commit rights and the network alert key to Andresen in late 2010 and early 2011.
+
+*[Context: This biography is the documentary basis for the protagonist of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — every dated event the protagonist participates in is anchored to the primary records compiled here.]*

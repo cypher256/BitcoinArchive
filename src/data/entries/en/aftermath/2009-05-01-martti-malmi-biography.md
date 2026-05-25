@@ -86,3 +86,5 @@ This private exchange anchored the [formal SVN handover to Andresen on December 
 
 ### Later Years
 Malmi continued occasional correspondence with Satoshi into early 2011. The [final known email Satoshi sent to Malmi was on February 22, 2011](/BitcoinArchive/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) — two months before Satoshi's last private exchanges with Mike Hearn and Gavin Andresen. Malmi gradually reduced his involvement in Bitcoin development around 2011 as other developers took on larger roles. He went on to work in the technology industry in Finland.
+
+*[Context: Martti Malmi appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the first developer to join the protagonist — the Helsinki student who builds the Linux port, the SVN repository, and bitcoin.org, and who later receives the protagonist's parting handover note.]*

@@ -156,3 +156,5 @@ The entry presents what the cryptography commits to and what the institutional a
 - The migration risk concentrates on specific UTXO categories, not on Bitcoin as a system. P2PK era coins, exposed P2TR outputs, and reused P2PKH addresses are the high-exposure pool. Coins held in unspent P2PKH/P2WPKH with no reuse, then migrated before a CRQC exists, are in a different threat class.
 
 *[Editor: the title's "world-ending" framing is the framing of the question, not the framing of the answer. The cryptographic record, the standardization record, and the migration-proposal record together describe an engineering problem with a roughly two-decade preparation window — bounded above by the NSA-2035 mandate, bounded below by the absence of a known CRQC today. This entry does not take a position on whether that window is wide enough; it documents the window.]*
+
+*[Context: The post-quantum migration timeline analyzed here is the technical basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s 2041 chapter — the year an AI gains quantum capability and Bitcoin faces its largest test.]*

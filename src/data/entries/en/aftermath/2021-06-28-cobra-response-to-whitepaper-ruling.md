@@ -1,5 +1,5 @@
 ---
-title: "Cobra responds to Bitcoin whitepaper ruling: 'Justice depends on who's got the bigger wallet'"
+title: "\"A notorious liar swore he was Satoshi and they made my whitepaper illegal\" — Cobra on the bitcoin.org ruling (2021)"
 date: 2021-06-28T00:00:00Z
 type: "article"
 source: "x"

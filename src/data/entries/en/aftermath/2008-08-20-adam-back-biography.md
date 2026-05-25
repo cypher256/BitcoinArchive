@@ -88,3 +88,5 @@ In 2014, Back co-founded Blockstream, a blockchain technology company focused on
 
 ### Significance
 Back's contribution to Bitcoin was specifically the proof-of-work concept — the idea that computational cost can serve as a scarce, verifiable resource. Hashcash provided this mechanism; the currency design, peer-to-peer payment system, and monetary policy were separate innovations. His position as the first person Satoshi contacted places him at the very beginning of Bitcoin's documented creation history.
+
+*[Context: Adam Back appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the cypherpunk the protagonist contacts first about Hashcash citation in August 2008 — the bridge that leads to the b-money discovery and to the whitepaper's reference [1].]*

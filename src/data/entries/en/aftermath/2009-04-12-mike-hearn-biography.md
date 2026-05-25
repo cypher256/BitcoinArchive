@@ -80,3 +80,5 @@ Between April 2009 and April 2011, Hearn and Satoshi exchanged sustained technic
 ### Departure from Bitcoin
 
 The January 2016 "Bitcoin has failed" essay cited two principal grievances: the inability of the development community to reach consensus on raising the 1-megabyte block size limit, and what Hearn described as systemically important institutions emerging within what was supposed to be a decentralised system. He sold his coins concurrent with publication.
+
+*[Context: Mike Hearn appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the recipient of the protagonist's two-line farewell email — the addressee of the disappearance scene that gives the novel its central question.]*

@@ -119,3 +119,5 @@ Andresen had disclosed the invitation in his April 26 reply to Satoshi's alert-k
 
 ### Later Years
 On April 8, 2014, Andresen stepped down as lead maintainer, passing the role to Wladimir van der Laan. He continued to contribute to Bitcoin development and advocated for increasing the block size limit to improve transaction capacity.
+
+*[Context: Gavin Andresen appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the successor named in the protagonist's farewell email — the one to whom the project is "in good hands" after the protagonist's disappearance.]*
