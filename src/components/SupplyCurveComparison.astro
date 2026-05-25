@@ -1,0 +1,400 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const seriesData = await import('../data/supply-curves/series.json').then(m => m.default);
+
+const labels = {
+  en: {
+    title: 'Supply trajectories, normalized to 2024 = 100',
+    subtitle: 'Five monetary archetypes plotted on a single index. Bitcoin asymptotes to its hard cap; USD M2 keeps compounding; Ethereum sits near flat post-Merge; Solana inflates at a declining rate; gold grows at roughly 1.5%/year.',
+    yLabel: 'Supply index (2024 = 100)',
+    xLabel: 'Year',
+    scaleLinear: 'Linear',
+    scaleLog: 'Log',
+    hoverYear: 'Year',
+    legendHint: 'Click a label to toggle the series.',
+  },
+  ja: {
+    title: '2024 年を 100 とした供給量の推移',
+    subtitle: '5 つの貨幣類型を 1 つの指標で比較。 ビットコインはハード上限に漸近、 USD M2 は複利的に拡大を続け、 イーサリアムはマージ後ほぼ横ばい、 ソラナは逓減的にインフレ、 金は年率約 1.5% で成長。',
+    yLabel: '供給指標 (2024 年 = 100)',
+    xLabel: '年',
+    scaleLinear: '線形',
+    scaleLog: '対数',
+    hoverYear: '年',
+    legendHint: '凡例のラベルをクリックすると系列の表示を切り替えられる。',
+  },
+};
+
+const l = labels[lang];
+
+// Localize series + annotation labels server-side so the client script
+// receives a single lang-agnostic data structure.
+const localized = {
+  baselineYear: seriesData.baselineYear,
+  yearRange: seriesData.yearRange,
+  annotations: seriesData.annotations.map((a: any) => ({
+    year: a.year,
+    label: lang === 'ja' ? a.labelJa : a.labelEn,
+  })),
+  series: seriesData.series.map((s: any) => ({
+    id: s.id,
+    label: lang === 'ja' ? s.labelJa : s.labelEn,
+    colorVar: s.colorVar,
+    points: s.points,
+  })),
+};
+---
+
+<div class="supply-curve-comparison">
+  <section class="analysis-section">
+    <h3>{l.title}</h3>
+    <p class="analysis-desc">{l.subtitle}</p>
+
+    <div class="chart-controls">
+      <div class="chart-scale-btns">
+        <button class="scale-btn active" data-scale="linear">{l.scaleLinear}</button>
+        <button class="scale-btn" data-scale="log">{l.scaleLog}</button>
+      </div>
+    </div>
+
+    <div id="supply-curve-chart" class="chart-container"></div>
+    <div id="supply-curve-legend" class="legend"></div>
+    <p class="legend-hint">{l.legendHint}</p>
+  </section>
+
+  <script type="application/json" id="supply-curve-data" set:html={JSON.stringify(localized)} />
+  <script type="application/json" id="supply-curve-labels" set:html={JSON.stringify(l)} />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</div>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+
+    var container = document.getElementById('supply-curve-chart');
+    var legendEl  = document.getElementById('supply-curve-legend');
+    var dataEl    = document.getElementById('supply-curve-data');
+    var labelsEl  = document.getElementById('supply-curve-labels');
+    if (!container || !legendEl || !dataEl || !labelsEl) return;
+
+    var data   = JSON.parse(dataEl.textContent);
+    var labels = JSON.parse(labelsEl.textContent);
+
+    var state = {
+      scale: 'linear',
+      hidden: {}, // seriesId -> true if hidden
+    };
+
+    function token(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function readTokens() {
+      return {
+        text:     token('--color-text'),
+        muted:    token('--color-text-muted'),
+        grid:     token('--chart-grid'),
+        surface:  token('--chart-surface'),
+        tooltipBg:token('--chart-tooltip-bg'),
+        tooltipFg:token('--chart-tooltip-fg'),
+      };
+    }
+
+    function seriesColor(s) { return token(s.colorVar) || '#888'; }
+
+    function draw() {
+      container.innerHTML = '';
+      var T = readTokens();
+
+      var rect = container.getBoundingClientRect();
+      var W = Math.max(320, rect.width || 700);
+      var H = 420;
+      var margin = { top: 20, right: 18, bottom: 50, left: 60 };
+      var w = W - margin.left - margin.right;
+      var h = H - margin.top - margin.bottom;
+
+      var svg = d3.select(container).append('svg')
+        .attr('width', W).attr('height', H)
+        .attr('viewBox', '0 0 ' + W + ' ' + H);
+      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+      var yearRange = data.yearRange;
+      var visibleSeries = data.series.filter(function(s) { return !state.hidden[s.id]; });
+
+      var x = d3.scaleLinear().domain(yearRange).range([0, w]);
+
+      var allValues = [];
+      visibleSeries.forEach(function(s) { s.points.forEach(function(p) { allValues.push(p.index); }); });
+      var yMax = allValues.length ? d3.max(allValues) * 1.08 : 100;
+
+      var y;
+      if (state.scale === 'log') {
+        // log scale needs strictly positive domain; bump 0-values to 0.5
+        y = d3.scaleLog().domain([0.5, Math.max(10, yMax)]).range([h, 0]).clamp(true);
+      } else {
+        y = d3.scaleLinear().domain([0, yMax]).range([h, 0]).nice();
+      }
+
+      // Gridlines (horizontal)
+      var yTicks = state.scale === 'log' ? [1, 10, 100, 1000] : y.ticks(6);
+      g.append('g').attr('class', 'gridlines')
+        .selectAll('line').data(yTicks).enter().append('line')
+        .attr('x1', 0).attr('x2', w)
+        .attr('y1', function(d) { return y(d); }).attr('y2', function(d) { return y(d); })
+        .attr('stroke', T.grid).attr('stroke-width', 0.5).attr('stroke-dasharray', '2,3');
+
+      // Annotation vertical reference lines (1971, 2009, 2022)
+      data.annotations.forEach(function(a) {
+        var ax = x(a.year);
+        g.append('line')
+          .attr('x1', ax).attr('x2', ax)
+          .attr('y1', 0).attr('y2', h)
+          .attr('stroke', T.muted).attr('stroke-width', 0.5).attr('stroke-dasharray', '4,3').attr('opacity', 0.55);
+        g.append('text')
+          .attr('x', ax + 3).attr('y', 11)
+          .attr('font-size', '9.5px').attr('fill', T.muted)
+          .text(a.label);
+      });
+
+      // Axes
+      var xAxis = d3.axisBottom(x).tickFormat(d3.format('d')).ticks(8);
+      g.append('g').attr('transform', 'translate(0,' + h + ')').call(xAxis)
+        .selectAll('text').attr('fill', T.muted).attr('font-size', '11px');
+
+      var yAxis = state.scale === 'log'
+        ? d3.axisLeft(y).tickValues([1, 10, 100, 1000]).tickFormat(d3.format('~s'))
+        : d3.axisLeft(y).tickFormat(d3.format('~s')).ticks(6);
+      g.append('g').call(yAxis)
+        .selectAll('text').attr('fill', T.muted).attr('font-size', '11px');
+
+      // Axis lines/styling
+      g.selectAll('.domain, .tick line').attr('stroke', T.grid);
+
+      // Axis labels
+      g.append('text')
+        .attr('x', w / 2).attr('y', h + 38)
+        .attr('text-anchor', 'middle').attr('fill', T.muted).attr('font-size', '11px')
+        .text(labels.xLabel);
+      g.append('text')
+        .attr('transform', 'rotate(-90)').attr('x', -h / 2).attr('y', -45)
+        .attr('text-anchor', 'middle').attr('fill', T.muted).attr('font-size', '11px')
+        .text(labels.yLabel);
+
+      // Lines
+      var line = d3.line()
+        .x(function(d) { return x(d.year); })
+        .y(function(d) {
+          if (state.scale === 'log' && d.index <= 0) return y(0.5);
+          return y(Math.max(0.5, d.index));
+        })
+        .curve(d3.curveMonotoneX);
+
+      visibleSeries.forEach(function(s) {
+        var color = seriesColor(s);
+        g.append('path')
+          .datum(s.points)
+          .attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2)
+          .attr('d', line);
+        // Dots at each datapoint
+        g.selectAll('.dot-' + s.id).data(s.points).enter().append('circle')
+          .attr('class', 'dot-' + s.id)
+          .attr('cx', function(d) { return x(d.year); })
+          .attr('cy', function(d) { return y(state.scale === 'log' && d.index <= 0 ? 0.5 : Math.max(0.5, d.index)); })
+          .attr('r', 2.5).attr('fill', color);
+      });
+
+      // Hover layer: crosshair + tooltip
+      var tooltip = d3.select(container).append('div').attr('class', 'sc-tooltip')
+        .style('position', 'absolute').style('pointer-events', 'none')
+        .style('background', T.tooltipBg).style('color', T.tooltipFg)
+        .style('padding', '6px 9px').style('border-radius', '4px')
+        .style('font-size', '11px').style('line-height', '1.45')
+        .style('opacity', 0);
+
+      var crosshair = g.append('line').attr('class', 'crosshair')
+        .attr('stroke', T.muted).attr('stroke-width', 0.8).attr('stroke-dasharray', '3,3')
+        .attr('y1', 0).attr('y2', h).attr('opacity', 0);
+
+      svg.append('rect')
+        .attr('x', margin.left).attr('y', margin.top)
+        .attr('width', w).attr('height', h)
+        .attr('fill', 'transparent')
+        .on('mousemove', function(event) {
+          var rect = svg.node().getBoundingClientRect();
+          var mx = event.clientX - rect.left - margin.left;
+          if (mx < 0 || mx > w) return;
+          var hoverYear = Math.round(x.invert(mx));
+          crosshair.attr('x1', x(hoverYear)).attr('x2', x(hoverYear)).attr('opacity', 1);
+          var rows = visibleSeries.map(function(s) {
+            // Find nearest point in series to hoverYear
+            var nearest = s.points.reduce(function(best, p) {
+              return Math.abs(p.year - hoverYear) < Math.abs(best.year - hoverYear) ? p : best;
+            }, s.points[0]);
+            return { id: s.id, label: s.label, color: seriesColor(s), index: nearest.index, absolute: nearest.absolute, nearYear: nearest.year };
+          });
+          rows.sort(function(a, b) { return b.index - a.index; });
+          var html = '<div style="font-weight:600;margin-bottom:3px;">' + labels.hoverYear + ': ' + hoverYear + '</div>'
+            + rows.map(function(r) {
+                return '<div><span style="display:inline-block;width:9px;height:9px;background:'
+                  + r.color + ';border-radius:50%;margin-right:5px;"></span>'
+                  + r.label + ': ' + r.index.toFixed(1) + ' <span style="opacity:0.6">(' + r.absolute + ', ' + r.nearYear + ')</span></div>';
+              }).join('');
+          tooltip.html(html).style('opacity', 1)
+            .style('left', (event.clientX - rect.left + 14) + 'px')
+            .style('top',  (event.clientY - rect.top  - 10) + 'px');
+        })
+        .on('mouseleave', function() {
+          tooltip.style('opacity', 0);
+          crosshair.attr('opacity', 0);
+        });
+    }
+
+    function drawLegend() {
+      legendEl.innerHTML = '';
+      data.series.forEach(function(s) {
+        var item = document.createElement('span');
+        item.className = 'legend-item' + (state.hidden[s.id] ? ' off' : '');
+        item.setAttribute('data-series', s.id);
+        var dot = document.createElement('span');
+        dot.className = 'legend-dot';
+        dot.style.background = seriesColor(s);
+        var lab = document.createElement('span');
+        lab.textContent = s.label;
+        item.appendChild(dot);
+        item.appendChild(lab);
+        item.addEventListener('click', function() {
+          state.hidden[s.id] = !state.hidden[s.id];
+          drawLegend();
+          draw();
+        });
+        legendEl.appendChild(item);
+      });
+    }
+
+    function bindControls() {
+      var btns = container.parentElement.querySelectorAll('.scale-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          state.scale = btn.getAttribute('data-scale');
+          draw();
+        });
+      });
+    }
+
+    drawLegend();
+    bindControls();
+    draw();
+
+    var timer;
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+
+    if (typeof window.matchMedia === 'function') {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      if (mql.addEventListener) mql.addEventListener('change', function() { drawLegend(); draw(); });
+      else if (mql.addListener) mql.addListener(function() { drawLegend(); draw(); });
+    }
+    if (typeof MutationObserver === 'function') {
+      new MutationObserver(function() { drawLegend(); draw(); })
+        .observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode', 'data-theme'] });
+    }
+  }
+  init();
+})();
+</script>
+
+<style>
+  .supply-curve-comparison {
+    margin: 2rem 0;
+  }
+  .analysis-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .analysis-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+  }
+  .chart-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.4rem;
+  }
+  .chart-scale-btns {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .scale-btn {
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    background: var(--color-bg);
+    color: var(--color-text-muted);
+    border: none;
+    border-right: 1px solid var(--color-border);
+    cursor: pointer;
+  }
+  .scale-btn:last-child { border-right: none; }
+  .scale-btn.active {
+    background: var(--color-accent-bg);
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+  .chart-container {
+    position: relative;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .chart-container :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    margin-top: 0.7rem;
+    font-size: 0.83rem;
+  }
+  .legend :global(.legend-item) {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: var(--color-text);
+  }
+  .legend :global(.legend-item.off) {
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+    opacity: 0.55;
+  }
+  .legend :global(.legend-dot) {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .legend-hint {
+    margin-top: 0.4rem;
+    font-size: 0.76rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+</style>

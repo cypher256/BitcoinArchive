@@ -20,6 +20,7 @@ import WhaleAlertFortune from '../../../components/WhaleAlertFortune.astro';
 import NlsExchangeRate from '../../../components/NlsExchangeRate.astro';
 import StylometricDistanceHistogram from '../../../components/StylometricDistanceHistogram.astro';
 import BitcoinForkGenealogy from '../../../components/BitcoinForkGenealogy.astro';
+import SupplyCurveComparison from '../../../components/SupplyCurveComparison.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl } from '../../../i18n/utils';
 import { resolveThreadId } from '../../../data/threads';
@@ -173,6 +174,10 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 
     {entry.id.includes('bitcoin-fork-and-altcoin-genealogy') && (
       <BitcoinForkGenealogy lang={lang} />
+    )}
+
+    {entry.id.includes('fixed-supply-vs-adjustable-money') && (
+      <SupplyCurveComparison lang={lang} />
     )}
 
     <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>

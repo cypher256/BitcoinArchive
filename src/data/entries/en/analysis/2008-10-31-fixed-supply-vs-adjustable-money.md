@@ -70,6 +70,21 @@ Any monetary system has to answer two questions:
 
 The two questions are independent. A central bank can run a fixed schedule. A protocol can implement a discretionary feedback loop. Bitcoin's specific combination — decided by a protocol, on a fixed schedule with a hard cap — is one of several internally consistent answers, not the only one.
 
+The chronology of the debate, from b-money's 1998 elastic-supply proposal through the Ethereum Merge:
+
+```mermaid
+timeline
+    title Monetary-design debate 1998-2022
+    1998 : Wei Dai posts b-money - elastic supply (Nov)
+         : Adam Back lists seven monetary issues (Dec)
+    2008 : Satoshi emails Wei Dai - no reply (Aug)
+         : Bitcoin whitepaper - hard 21M cap (Oct)
+    2013 : Wei Dai regrets not responding (Apr)
+    2015 : Ethereum mainnet - no hard cap (Jul)
+    2021 : EIP-1559 fee burn live (Aug)
+    2022 : Ethereum Merge - PoS issuance -90 percent (Sep)
+```
+
 ## 2. The cypherpunk baseline: b-money's elastic supply (1998)
 
 The first detailed cypherpunk monetary-design proposal that informs Bitcoin's lineage is [Wei Dai's b-money (November 1998)](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/). On the question of *how much new money exists*, b-money's answer was explicitly elastic: new money creation was to be proportioned to the cost of a standard basket of goods, so the purchasing power of one unit of b-money would track real prices rather than a fixed coin schedule.
@@ -124,7 +139,22 @@ The fiat baseline matters because it is the *contrast* against which Bitcoin's d
 
 ## 6. The post-2009 cryptocurrency landscape
 
-Once Bitcoin's hard-cap pattern existed as a reference, subsequent cryptocurrencies took explicit positions either by following it, modifying it, or diverging from it. The 15-currency comparison below covers the most-cited variants across the spectrum:
+Once Bitcoin's hard-cap pattern existed as a reference, subsequent cryptocurrencies took explicit positions either by following it, modifying it, or diverging from it. The 15-currency comparison below covers the most-cited variants across the spectrum.
+
+The supply-policy decisions cluster into four archetypes, which the table then populates:
+
+```mermaid
+graph TD
+    Q[How much new supply next year?]
+    Q --> Fixed[Fixed by code<br/>hard cap or perpetual rate]
+    Q --> Decay[Algorithmic decay<br/>declining schedule]
+    Q --> Dyn[Dynamic feedback<br/>responsive to network state]
+    Q --> Disc[Human discretion<br/>committee or issuer decides]
+    Fixed --> A1[Bitcoin / BCH / BSV<br/>Litecoin / Cardano<br/>Dogecoin / Ethereum Classic]
+    Decay --> A2[Solana 8 to 1.5 percent<br/>Monero tail emission]
+    Dyn --> A3[Ethereum issuance + burn<br/>Cosmos / Polkadot governance]
+    Disc --> A4[USD / EUR / JPY / GBP / CNY<br/>USDT / USDC fiat-pegged]
+```
 
 | Currency | Supply ceiling | Issuance schedule | Governance | Design archetype |
 |---|---|---|---|---|
@@ -157,6 +187,31 @@ The distribution across this table reads as a *spectrum* rather than a consensus
 The combined effect — no hard cap, but dynamic supply that responds to network usage — is closer to b-money's *responsive-to-conditions* principle than to Bitcoin's *fixed-by-schedule* principle, but the response variable is network demand rather than basket-price stability. Ethereum's own community vocabulary ("Ultra Sound Money", a play on Bitcoin's "Sound Money" framing) makes the contrast explicit.
 
 ## 8. The argument map: hard-money vs flexible-policy
+
+The full landscape, positioned on two axes — fixed-vs-discretionary supply on the horizontal, human-vs-algorithmic enforcement on the vertical:
+
+```mermaid
+quadrantChart
+    title Supply-policy spectrum
+    x-axis "Discretionary" --> "Fixed"
+    y-axis "Human authority" --> "Algorithmic enforcement"
+    quadrant-1 "Hard money"
+    quadrant-2 "Algorithmic dynamic"
+    quadrant-3 "Fiat / pegged"
+    quadrant-4 "Commodity standard"
+    "Bitcoin": [0.95, 0.95]
+    "Litecoin": [0.92, 0.92]
+    "Cardano": [0.86, 0.82]
+    "Dogecoin": [0.74, 0.92]
+    "Monero": [0.58, 0.78]
+    "Solana": [0.48, 0.66]
+    "Ethereum": [0.36, 0.58]
+    "Cosmos": [0.28, 0.48]
+    "USDC": [0.18, 0.30]
+    "JPY": [0.13, 0.13]
+    "USD": [0.08, 0.10]
+    "Gold": [0.80, 0.20]
+```
 
 The 15 years since Bitcoin's launch have not produced a consensus on which supply-design archetype is correct. The two main argument lines, in summary form:
 

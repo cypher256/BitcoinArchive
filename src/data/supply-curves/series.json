@@ -1,0 +1,107 @@
+{
+  "baselineYear": 2024,
+  "yearRange": [1970, 2050],
+  "annotations": [
+    {
+      "year": 1971,
+      "labelEn": "USD off gold (1971-08-15)",
+      "labelJa": "USD 金本位停止 (1971-08-15)"
+    },
+    {
+      "year": 2009,
+      "labelEn": "Bitcoin genesis (2009-01-03)",
+      "labelJa": "Bitcoin ジェネシス (2009-01-03)"
+    },
+    {
+      "year": 2022,
+      "labelEn": "Ethereum Merge (2022-09-15)",
+      "labelJa": "Ethereum マージ (2022-09-15)"
+    }
+  ],
+  "series": [
+    {
+      "id": "btc",
+      "labelEn": "Bitcoin (21M hard cap)",
+      "labelJa": "ビットコイン (2100 万ハード上限)",
+      "colorVar": "--chart-color-8",
+      "points": [
+        { "year": 2009, "index": 0,    "absolute": "0 BTC" },
+        { "year": 2012, "index": 33.5, "absolute": "10.5M BTC (halving 1)" },
+        { "year": 2016, "index": 80.2, "absolute": "15.75M BTC (halving 2)" },
+        { "year": 2020, "index": 93.4, "absolute": "18.375M BTC (halving 3)" },
+        { "year": 2024, "index": 100,  "absolute": "19.69M BTC (halving 4)" },
+        { "year": 2028, "index": 103.2,"absolute": "20.34M BTC (halving 5)" },
+        { "year": 2032, "index": 104.9,"absolute": "20.67M BTC (halving 6)" },
+        { "year": 2036, "index": 105.8,"absolute": "20.84M BTC (halving 7)" },
+        { "year": 2040, "index": 106.2,"absolute": "20.92M BTC (halving 8)" },
+        { "year": 2050, "index": 106.5,"absolute": "20.985M BTC" }
+      ]
+    },
+    {
+      "id": "eth",
+      "labelEn": "Ethereum (no cap, dynamic)",
+      "labelJa": "イーサリアム (上限なし、 動的)",
+      "colorVar": "--chart-color-4",
+      "points": [
+        { "year": 2015, "index": 59.8, "absolute": "~72M ETH (launch)" },
+        { "year": 2018, "index": 83.1, "absolute": "~100M ETH" },
+        { "year": 2020, "index": 93.9, "absolute": "~113M ETH" },
+        { "year": 2022, "index": 99.7, "absolute": "~120M ETH (Merge)" },
+        { "year": 2024, "index": 100,  "absolute": "~120.4M ETH" },
+        { "year": 2030, "index": 100.5,"absolute": "~121M ETH (projected)" },
+        { "year": 2040, "index": 101.3,"absolute": "~122M ETH (projected)" },
+        { "year": 2050, "index": 102.2,"absolute": "~123M ETH (projected)" }
+      ]
+    },
+    {
+      "id": "sol",
+      "labelEn": "Solana (declining inflation)",
+      "labelJa": "ソラナ (逓減インフレ)",
+      "colorVar": "--chart-color-7",
+      "points": [
+        { "year": 2020, "index": 84.3, "absolute": "~489M SOL (launch)" },
+        { "year": 2022, "index": 93.1, "absolute": "~540M SOL" },
+        { "year": 2024, "index": 100,  "absolute": "~580M SOL" },
+        { "year": 2030, "index": 112.1,"absolute": "~650M SOL (projected)" },
+        { "year": 2040, "index": 126.7,"absolute": "~735M SOL (projected)" },
+        { "year": 2050, "index": 142.2,"absolute": "~825M SOL (projected)" }
+      ]
+    },
+    {
+      "id": "usdm2",
+      "labelEn": "USD M2 (central-bank discretion)",
+      "labelJa": "USD M2 (中央銀行裁量)",
+      "colorVar": "--chart-color-3",
+      "points": [
+        { "year": 1970, "index": 3.0,  "absolute": "$629B" },
+        { "year": 1980, "index": 7.6,  "absolute": "$1.6T" },
+        { "year": 1990, "index": 15.2, "absolute": "$3.2T" },
+        { "year": 2000, "index": 23.3, "absolute": "$4.9T" },
+        { "year": 2010, "index": 41.9, "absolute": "$8.8T" },
+        { "year": 2020, "index": 91.4, "absolute": "$19.2T" },
+        { "year": 2024, "index": 100,  "absolute": "$21.0T" },
+        { "year": 2030, "index": 142.9,"absolute": "$30T (projected, ~6%/yr)" },
+        { "year": 2040, "index": 257.1,"absolute": "$54T (projected)" },
+        { "year": 2050, "index": 457.1,"absolute": "$96T (projected)" }
+      ]
+    },
+    {
+      "id": "gold",
+      "labelEn": "Gold (above-ground stock)",
+      "labelJa": "金 (地上在庫)",
+      "colorVar": "--chart-color-5",
+      "points": [
+        { "year": 1970, "index": 44.7, "absolute": "~96Kt" },
+        { "year": 1980, "index": 51.2, "absolute": "~110Kt" },
+        { "year": 1990, "index": 59.1, "absolute": "~127Kt" },
+        { "year": 2000, "index": 67.4, "absolute": "~145Kt" },
+        { "year": 2010, "index": 79.1, "absolute": "~170Kt" },
+        { "year": 2020, "index": 93.0, "absolute": "~200Kt" },
+        { "year": 2024, "index": 100,  "absolute": "~215Kt" },
+        { "year": 2030, "index": 109.3,"absolute": "~235Kt (~1.5%/yr)" },
+        { "year": 2040, "index": 127.0,"absolute": "~273Kt (projected)" },
+        { "year": 2050, "index": 147.4,"absolute": "~317Kt (projected)" }
+      ]
+    }
+  ]
+}
