@@ -80,7 +80,7 @@ The mechanism was a distributed cost-estimation protocol: participants would pub
 
 ## 3. Bitcoin's choice: hard cap, fixed schedule, no discretion (2008–2009)
 
-[Bitcoin's whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) took the opposite position on both questions. The supply schedule is fixed at the protocol level: 50 BTC per block at launch, halving every 210,000 blocks. The total approaches but never exceeds approximately 20,999,999.9769 BTC — the sum of a finite geometric series that the consensus rules enforce mechanically. No mechanism for discretionary adjustment exists; changing the schedule would require coordinated consensus from every node operator.
+[Bitcoin's whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) took the opposite position on both questions. The supply schedule is fixed at the protocol level: 50 BTC per block at launch, halving every 210,000 blocks. The total approaches but never exceeds approximately 20,999,999.9769 BTC — the sum of a finite geometric series that the consensus rules enforce mechanically. No mechanism for discretionary adjustment exists; changing the schedule would be a backwards-incompatible consensus change, requiring broad coordination across node operators and the wider economic actors that depend on the network.
 
 The whitepaper's Section 6 ("Incentive") names the fee market as the policy variable once new issuance ends, but never argues for the *fixed* form of the schedule. It treats the cap as a design choice rather than as a derived result, and the [Satoshi self-statements record](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) contains no extended defense of *why* fixed supply was preferred over the alternatives.
 
@@ -136,7 +136,7 @@ Once Bitcoin's hard-cap pattern existed as a reference, subsequent cryptocurrenc
 | **Monero (XMR)** | 18.4 M + tail emission | Smooth emission → 0.6 XMR/block in perpetuity (mild long-run inflation) | Protocol | Hybrid: bounded + tail |
 | **Dogecoin** | None (cap removed 2014) | Fixed 5 B / year in perpetuity | Protocol | Mild inflation, fixed-rate |
 | **Solana (SOL)** | None | Inflation 8% → 1.5% over 10 years (−15% per year) | Protocol + foundation | Declining inflation |
-| **Ethereum (ETH)** | None | Issuance + EIP-1559 fee burn (net often deflationary post-Merge 2022) | Protocol + EIP governance | Dynamic, market-mediated |
+| **Ethereum (ETH)** | None | Issuance + EIP-1559 fee burn (turns net-deflationary in high-use periods) | Protocol + EIP governance | Dynamic, market-mediated |
 | **Ethereum Classic (ETC)** | ~210.7 M (cap introduced via fork) | Fixed-supply schedule | Protocol | Hard money (post-fork) |
 | **Polkadot (DOT)** | None | ~10% annual inflation target | Protocol + governance | Mild inflation, fixed-rate |
 | **Cosmos (ATOM)** | None | Bonded-ratio-targeted inflation (7-20% range) | Protocol + governance | Inflation, feedback-targeted |
@@ -152,7 +152,7 @@ The distribution across this table reads as a *spectrum* rather than a consensus
 
 1. **Original issuance (2015-2022)**: ~4-5% annual inflation under Proof-of-Work, with no hard supply cap defined.
 2. **EIP-1559 (August 2021)**: introduced base-fee burning. Every transaction's base fee is destroyed rather than paid to the miner / validator, creating a net-deflationary pressure proportional to network usage. During periods of high activity, ETH supply contracts.
-3. **The Merge (September 2022)**: transition to Proof-of-Stake reduced new issuance from ~13K ETH/day to ~1.7K ETH/day, a ~90% reduction. Combined with EIP-1559 burn, ETH supply has been *net deflationary* during most post-Merge periods.
+3. **The Merge (September 2022)**: transition to Proof-of-Stake reduced new issuance from ~13K ETH/day to ~1.7K ETH/day, a ~90% reduction. Combined with EIP-1559 burn, periods of high network use have driven ETH supply *net deflationary* during stretches since the Merge.
 
 The combined effect — no hard cap, but dynamic supply that responds to network usage — is closer to b-money's *responsive-to-conditions* principle than to Bitcoin's *fixed-by-schedule* principle, but the response variable is network demand rather than basket-price stability. Ethereum's own community vocabulary ("Ultra Sound Money", a play on Bitcoin's "Sound Money" framing) makes the contrast explicit.
 
@@ -180,5 +180,5 @@ The [security-budget literature](/BitcoinArchive/entries/analysis/2026-05-18-min
 
 - **No verdict.** This entry does not assert that fixed supply, elastic supply, or central-bank discretion is the correct design. It records that the three approaches exist, that named designers have advocated each, and that the 15-year cryptocurrency landscape distributes itself across the spectrum.
 - **No prediction.** What the cryptocurrency landscape will look like in 2050 is not knowable from the documentary record this entry summarizes. The hard-cap vs flexible-policy debate is unresolved; the entry does not pretend otherwise.
-- **Comparable data caveats.** The supply numbers in §6 reflect protocol rules as of mid-2026. Several protocols (Ethereum, Solana, Cosmos, Polkadot) have governance processes that can change issuance; the table records the current state rather than a frozen future. Bitcoin's hard cap is the most credibly fixed, because changing it would require coordinated consensus from a network whose conservative-consensus tradition has rejected far smaller parameter changes.
+- **Comparable data caveats.** The supply numbers in §6 reflect protocol rules as of mid-2026. Several protocols (Ethereum, Solana, Cosmos, Polkadot) have governance processes that can change issuance; the table records the current state rather than a frozen future. Bitcoin's hard cap is the most credibly fixed, because changing it would be a backwards-incompatible consensus change requiring broad coordination across node operators and the wider economic actors of the network — and that network's conservative-consensus tradition has rejected far smaller parameter changes.
 - **Stablecoins are a separate category.** USDT, USDC, DAI and similar tokens inherit the monetary properties of their backing (fiat reserves for USDT/USDC, on-chain collateral for DAI). They appear in the table for completeness, but their supply policy is downstream of someone else's monetary policy, not a primary design choice.
