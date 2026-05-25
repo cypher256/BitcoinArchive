@@ -158,11 +158,12 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 ### 2.3 Capability vs covertness map
 
-Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. Coordinates are computed directly from §2.1's table (Paul Le Roux and Peter Todd land on the same point [0.5, 0.5], so each is shown with a ±0.02 vertical offset to keep the labels readable; their actual scores are identical). The map makes the §7 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
+Each candidate plotted in the 2D space of capability score (x-axis) vs covertness score (y-axis). **Coordinates are approximate visual placements**, not exact averages of the §2.1 cells — pure averages (🟢 = 1, 🟡 = 0.5, 🔴 = 0) put several candidates on the chart boundary (Wei Dai's capability = 1.0; Hal Finney's and Kaneko's covertness = 0) or on top of each other (Le Roux and Todd both at [0.5, 0.5]), where mermaid's quadrantChart renders labels overlapping the axis titles or each other. Each point is nudged inward by ≈ 0.02 – 0.12 so the labels stay readable; the relative ordering (who is right of whom, who is above whom) matches the table. The map makes the §7 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
 
 **Candidate profiles, capability vs covertness**
 
 ```mermaid
+%%{init: {'themeVariables': {'quadrant1TextFill': '#8a94a0', 'quadrant2TextFill': '#8a94a0', 'quadrant3TextFill': '#8a94a0', 'quadrant4TextFill': '#8a94a0', 'xAxisTitleFill': '#8a94a0', 'yAxisTitleFill': '#8a94a0'}}}%%
 quadrantChart
     x-axis "Low capability" --> "High capability"
     y-axis "Low covertness" --> "High covertness"
@@ -170,16 +171,16 @@ quadrantChart
     quadrant-2 "Hidden but underqualified"
     quadrant-3 "Visible and underqualified"
     quadrant-4 "Visible cypherpunks"
-    "Wei Dai": [0.99, 0.5]
-    "Adam Back": [0.9, 0.25]
-    "Hal Finney": [0.9, 0.02]
-    "Nick Szabo": [0.8, 0.25]
+    "Wei Dai": [0.88, 0.6]
+    "Adam Back": [0.83, 0.25]
+    "Hal Finney": [0.83, 0.05]
+    "Nick Szabo": [0.71, 0.18]
     "Len Sassaman": [0.6, 0.75]
-    "Paul Le Roux": [0.5, 0.52]
-    "Peter Todd": [0.5, 0.48]
-    "Craig Wright": [0.2, 0.5]
-    "Dorian Nakamoto": [0.1, 0.5]
-    "Isamu Kaneko": [0.2, 0.02]
+    "Paul Le Roux": [0.5, 0.6]
+    "Peter Todd": [0.5, 0.35]
+    "Craig Wright": [0.2, 0.4]
+    "Dorian Nakamoto": [0.1, 0.6]
+    "Isamu Kaneko": [0.2, 0.05]
 ```
 
 The cluster pattern is the same observation §7 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
