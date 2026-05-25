@@ -37,6 +37,7 @@ tags:
   - "disputed"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
@@ -177,6 +178,48 @@ gantt
 - **接触なし** は隠匿成功または接触対象外の二通りの読みに分かれる — サボは公開言論で活動していたが直接通信なし、サッサマン・金子は活動領域が異なり通信なし、ドリアン・ライト・ル・ルーは身元主張または名前一致のみで実体的接触なし
 
 通信の有無それ自体は仮説を選ばないが、能力プロファイル・文体計量と組み合わせて読むときに候補の構造的位置を補強する第三のレイヤとして機能する。
+
+### 開発環境の記録（別レイヤ、参考）
+
+ビットコイン v0.1 は Windows 専用の `.rar` アーカイブとして出荷され、Visual C++ 6.0 SP6 と MinGW GCC 3.4.5 でビルドされ、ハンガリアン記法の識別子（`nValue`、`strHash`、`vTransactions`）を用い、wxWidgets、Boost、OpenSSL、Berkeley DB に依存していた。法医学的な全痕跡は[サトシの Windows 開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)に記録されており、同分析はサトシの OS ツールチェーン像が三段階に遷移したことも記述している：
+
+| 段階 | 期間 | OS 像 |
+|---|---|---|
+| **Phase 1**（約 27 か月） | 2007 年半ば → 2009-08-23 | Windows 専用、開発環境に Linux の痕跡なし |
+| **Phase 2**（約 16 か月） | 2009-08-24 → 2010-12-02 | マルッティ・マルミの移植に押される形での受動的な Linux 対応 |
+| **Phase 3**（約 5 か月） | 2010-12-03 → 2011-04-26 | 自己評価「ギャビンは私よりずっと Linux に長けている」 |
+
+最も診断的な比較対象は **Phase 1** ― 設計全体と 19,901 行の v0.1 コードベースが書かれた時期 ― である。各候補の記録された開発環境像を、この基準線に照らして整理できる。
+
+| 候補 | Phase 1 との整合 | 主に使用した OS | 主要言語 | 公開出荷の記録あるコードベース |
+|---|---|---|---|---|
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 🟡 中間 ― 言語は重なるが OS は特定されていない | アーカイブ記録なし（Microsoft 勤務歴あり） | Perl（短行記法で著名）、C / C++ | Hashcash 仕様と小規模な参考実装 |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 高い整合 ― Windows-MSVC が重なり、数千行規模の暗号ライブラリ出荷実績がある | Windows（Microsoft 勤務歴、MSVC 主体） | C++ | **Crypto++** ― 多プラットフォーム対応の C++ クラスライブラリ、当初は Windows-MSVC 起点 |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🔴 不整合 ― Mac 主体。公開コードはスネークケース＋タブで、サトシの空白インデント＋ハンガリアン記法のキャメルケースと異なる | Mac（長期、記録あり） | C / C++ | PGP 2.0、RPOW |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 ― v0.1 規模の C++ 出荷記録なし | アーカイブ記録なし | C++ 出荷実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 出荷記録なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
+| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | ― 該当せず（COPA 対ライト 2024 判決） | ― | ― | ― |
+| [ポール・ル・ルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号出荷を満たすが、公開出荷記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 ― 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
+| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 ― OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
+
+**色の意味（Phase 1 との整合列）：** 🟢 Phase 1 の Windows + MSVC + C++ 出荷像と高度に整合／🟡 部分的、表層的、または混在／🔴 文書上の不整合、または v0.1 規模の出荷コードベースが存在しない。
+
+**開発環境レイヤの読み方：**
+
+- **Phase 1 の「Windows + MSVC + C++ 出荷」 像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++ ― 当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ ― はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ル・ルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を出荷したが、公開出荷の記録はその時点で途切れる。
+- **3 名は Phase 1 と OS が直接不整合。** [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（長期 Mac、スネークケース＋タブ）、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（GitHub 一貫して Linux）、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（Unix 主体のツール環境）はいずれも Windows 以外の主要環境が記録されている。
+- **3 名は v0.1 規模の出荷コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。
+- **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの出荷実績を持つ候補と比べて大きい。
+- **[金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/)の Winny は OS とプラットフォーム（Windows + C++）の水準では一致する**が、Winny ソースは日本語識別子とコメントを含む ― ビットコイン v0.1 ソースが示さない記法である。
+
+**本レイヤの限界：**
+
+- 候補が Windows-MSVC でビットコインを開発しながら、その環境を公開コードに残さなかった可能性はある ― 痕跡の不在は不在の証明にはならない。
+- ビットコイン v0.1 が Windows 専用で出荷されたという事実は、原理的には、主要環境が Mac や Linux である開発者による意図的なミスリードでもあり得る。
+- Phase 2、Phase 3 ではサトシの OS 像が Linux 寄りに移行している。主要 OS が Linux である候補（[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)）は Phase 1 よりも Phase 3 と整合的だが、設計が行われた時期は Phase 1 であり、診断上の比較対象としてはこちらの方が決定的である。
+- §1 のプロファイル整合表、文体計量レイヤ、直接通信レイヤと組み合わせて、この開発環境レイヤは候補の構造的位置を特定する第四のレイヤとして機能する。候補空間を絞り込むが、単一の人物を特定はしない。
 
 ## 2. 方法論
 

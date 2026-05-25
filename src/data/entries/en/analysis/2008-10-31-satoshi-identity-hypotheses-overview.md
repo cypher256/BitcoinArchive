@@ -37,6 +37,7 @@ tags:
   - "disputed"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-design-lineage
+  - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
@@ -176,6 +177,48 @@ Broken down by **type of contact**, the structure differs:
 - **No contact** splits into two readings — successful concealment or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
 
 The presence-or-absence of correspondence does not by itself select a hypothesis, but combined with the capability profile and the stylometric layer it functions as a third structural layer that locates each candidate's position in the candidate space.
+
+### Development-environment record (separate layer, reference)
+
+Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0 SP6 and MinGW GCC 3.4.5, used Hungarian-notation identifiers (`nValue`, `strHash`, `vTransactions`), and depended on wxWidgets, Boost, OpenSSL, and Berkeley DB. The full forensic trace is in the [Satoshi Windows development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which also documents a three-phase trajectory of Satoshi's OS-tooling profile:
+
+| Phase | Period | OS profile |
+|---|---|---|
+| **Phase 1** (~27 months) | mid-2007 → 2009-08-23 | Windows-only; no Linux trace in the development environment |
+| **Phase 2** (~16 months) | 2009-08-24 → 2010-12-02 | Reactive Linux support driven by Martti Malmi's port |
+| **Phase 3** (~5 months) | 2010-12-03 → 2011-04-26 | Self-statement "Gavin is much more Linux capable than me" |
+
+The most diagnostic comparison is against **Phase 1**, when the entire architecture and the 19,901-line v0.1 codebase were produced. Each candidate's documented development-environment profile can be aligned against this baseline.
+
+| Candidate | Phase 1 alignment | Primary OS | Primary languages | Documented shipping codebase |
+|---|---|---|---|---|
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | 🟡 Mixed — language overlap, OS not established | Not in archive record (Microsoft work history) | Perl (compact-code reputation); C / C++ | Hashcash specification + small reference implementations |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | 🟢 High — Windows-MSVC overlap; multi-thousand-line C++ cryptographic-library shipping record | Windows (Microsoft work history; MSVC primary) | C++ | **Crypto++** — multi-platform C++ class library, originally Windows-MSVC-rooted |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 🔴 Misalignment — Mac primary; published code uses snake_case + tabs vs Satoshi's spaces + Hungarian-notation camelCase | Mac (long-term, documented) | C / C++ | PGP 2.0, RPOW |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🔴 Misalignment — no documented C++ shipping at v0.1 scale | Not in archive record | No shipping C++ record | Bit Gold proposal (paper only); [explicitly asked for implementation help in April 2008](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 Misalignment — no documented C++ shipping | Not in archive record (classified defense-systems engineering) | Physics / electronics background | No public codebase |
+| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — Not applicable (COPA v Wright 2024 ruling) | — | — | — |
+| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | 🟡 Surface alignment — Windows + C++ + cryptographic shipping, but the public shipping record stops in 1999 | Windows NT / 9x | C++ | **E4M** (Windows-only disk encryption, 1999; later forked into TrueCrypt) |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | 🔴 Misalignment — Unix-primary, no documented Windows-first development | Unix / Linux primary (Mixmaster maintainer; KU Leuven research environment) | C | Mixmaster (C; *BSD / Linux primary, Windows port available) |
+| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | 🔴 Misalignment — Linux uniformly, no Windows trace | Linux (2008–2011 GitHub repositories uniformly Linux: FHS paths, Unix shebangs, PyGTK) | C / Python | Linux-native hardware / firmware tooling |
+| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | 🟡 Partial — OS / language match, but Winny source uses Japanese identifiers and comments; Bitcoin v0.1 source is English-only | Windows | C++ | Winny (Windows P2P, C++) |
+
+**Color meaning (Phase 1 alignment column):** 🟢 high alignment with Phase 1's Windows + MSVC + C++ shipping profile; 🟡 partial, surface-level, or mixed; 🔴 documented misalignment, or no shipping codebase at v0.1 scale.
+
+**Reading the development-environment layer:**
+
+- **Two candidates align with Phase 1's Windows + MSVC + C++ shipping profile.** [Wei Dai](/BitcoinArchive/participants/wei-dai/) shipping Crypto++ — a C++ cryptographic class library originally rooted in Windows-MSVC — is the most direct overlap with Bitcoin v0.1's cryptographic-library dependency pattern. [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) shipped E4M (Windows-only C++ disk encryption) in 1999, but his public shipping record stops there.
+- **Three candidates show direct OS misalignment with Phase 1.** [Hal Finney](/BitcoinArchive/participants/hal-finney/) (long-term Mac, snake_case + tabs), [Peter Todd](/BitcoinArchive/participants/peter-todd/) (Linux-only GitHub trail), and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (Unix-primary tooling) each have a documented primary environment outside Windows.
+- **Three candidates have no documented shipping codebase at v0.1 scale.** [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) asked for implementation help in April 2008; [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/)'s classified defense work produced no public code; [Craig Wright](/BitcoinArchive/participants/craig-wright/)'s claimed evidence was found fabricated by the UK High Court.
+- **[Adam Back](/BitcoinArchive/participants/adam-back/)'s personal OS is not in the archive record.** Hashcash spans Perl and C / C++ reference implementations, but the scale gap between those reference implementations and Bitcoin v0.1's 19,901-line C++ codebase is wider than for candidates with Crypto++- or E4M-scale shipping records.
+- **[Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/)'s Winny matches Windows + C++ at the platform level**, but Winny's source contains Japanese identifiers and comments — a register Bitcoin v0.1 does not exhibit.
+
+**Limits of this layer:**
+
+- A candidate could have developed Bitcoin on Windows-MSVC without that environment being represented in their public codebase — absence of evidence is not evidence of absence.
+- Bitcoin v0.1's Windows-only release could in principle have been an intentional misdirection by a developer whose primary environment was Mac or Linux.
+- Phase 2 and Phase 3 show Satoshi's OS profile shifting toward Linux capability, so a candidate whose primary OS was Linux ([Peter Todd](/BitcoinArchive/participants/peter-todd/), [Len Sassaman](/BitcoinArchive/participants/len-sassaman/)) is more consistent with Phase 3 than with Phase 1 — but Phase 1 is the construction period and the more diagnostic comparison.
+- Combined with the §1 profile-match table, the stylometric layer, and the direct-correspondence layer, this development-environment layer forms a fourth structural layer that locates each candidate in the comparison space. It narrows but does not select a unique person.
 
 ## 2. Methodology
 
