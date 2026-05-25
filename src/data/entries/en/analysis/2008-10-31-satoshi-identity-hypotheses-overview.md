@@ -28,7 +28,7 @@ participants:
     slug: "peter-todd"
   - name: "Isamu Kaneko"
     slug: "isamu-kaneko"
-description: "Comparison of recurring Satoshi candidates aligned across four independent layers — profile match, stylometric attribution, direct correspondence, and development environment. The Individual column links each candidate's hypothesis page; this entry names no leading candidate."
+description: "Recurring Satoshi candidates aligned across four independent layers — profile match, stylometric attribution, direct correspondence, and development environment. Names no leading candidate."
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -158,7 +158,7 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 ### 2.3 Capability vs covertness map
 
-Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. The map makes the §7 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
+Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. Coordinates are computed directly from §2.1's table (Paul Le Roux and Peter Todd land on the same point [0.5, 0.5], so each is shown with a ±0.02 vertical offset to keep the labels readable; their actual scores are identical). The map makes the §7 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
 
 **Candidate profiles, capability vs covertness**
 
@@ -170,16 +170,16 @@ quadrantChart
     quadrant-2 "Hidden but underqualified"
     quadrant-3 "Visible and underqualified"
     quadrant-4 "Visible cypherpunks"
-    "Wei Dai": [0.88, 0.55]
-    "Adam Back": [0.83, 0.25]
-    "Hal Finney": [0.83, 0.05]
-    "Nick Szabo": [0.71, 0.18]
+    "Wei Dai": [0.99, 0.5]
+    "Adam Back": [0.9, 0.25]
+    "Hal Finney": [0.9, 0.02]
+    "Nick Szabo": [0.8, 0.25]
     "Len Sassaman": [0.6, 0.75]
-    "Paul Le Roux": [0.5, 0.55]
-    "Peter Todd": [0.5, 0.4]
-    "Craig Wright": [0.2, 0.45]
-    "Dorian Nakamoto": [0.1, 0.55]
-    "Isamu Kaneko": [0.2, 0.05]
+    "Paul Le Roux": [0.5, 0.52]
+    "Peter Todd": [0.5, 0.48]
+    "Craig Wright": [0.2, 0.5]
+    "Dorian Nakamoto": [0.1, 0.5]
+    "Isamu Kaneko": [0.2, 0.02]
 ```
 
 The cluster pattern is the same observation §7 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
