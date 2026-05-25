@@ -28,7 +28,7 @@ participants:
     slug: "peter-todd"
   - name: "Isamu Kaneko"
     slug: "isamu-kaneko"
-description: "Comparison of recurring Satoshi candidates aligned in a seven-dimension profile table. The Individual column links each candidate's hypothesis page; this entry names no leading candidate."
+description: "Comparison of recurring Satoshi candidates aligned across four independent layers — profile match, stylometric attribution, direct correspondence, and development environment. The Individual column links each candidate's hypothesis page; this entry names no leading candidate."
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -86,7 +86,7 @@ inlineLinkKeywords:
   - "identity hypotheses overview"
 ---
 
-Ten named candidates, seven dimensions of Satoshi's documented public-record outline. No single candidate scores cleanly on all seven; each falls short on at least one. This entry compares the named candidates side-by-side in a single profile table — Hashcash citation knowledge, August 2008 pre-launch correspondence with Adam Back and Wei Dai, Wei Dai's 2014 "not previously active" identifiability argument, the 19,901-line v0.1 C++ codebase, the near-native English register, the 18-month intensive development window, the April 2011 withdrawal — and notes where each profile breaks down. Each candidate is measured against the documented public-record outline of Satoshi:
+Ten named candidates, seven dimensions of Satoshi's documented public-record outline. No single candidate scores cleanly on all seven; each falls short on at least one. This entry compares the named candidates across four independent structural layers — profile match (§2), stylometric attribution (§3), direct correspondence (§4), and development environment (§5) — and notes where each profile breaks down. Each candidate is measured against the documented public-record outline of Satoshi:
 
 - the whitepaper's explicit citation of Hashcash and b-money;
 - the August 2008 pre-launch correspondence with Adam Back and Wei Dai;
@@ -96,11 +96,23 @@ Ten named candidates, seven dimensions of Satoshi's documented public-record out
 - the 18-month intensive development window from mid-2007 through August 2008;
 - the April 2011 withdrawal.
 
-The seven-dimension profile comparison table (§1) aligns the candidates against this outline. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Individual" column in the table); the other candidates are treated within this entry.
+The four structural layers are not interchangeable; each narrows the candidate space differently and none selects a unique person. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Entry" column in each table); the other candidates are treated within this entry.
 
 This entry does not name "the most likely Satoshi candidate."
 
-## 1. Candidate profile comparison
+## 1. Candidates
+
+The ten named candidates fall into three groups by how they entered Satoshi-identity discourse:
+
+- **A. Cypherpunks Satoshi explicitly cited** — Adam Back, Wei Dai
+- **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
+- **C. Third-party discovery, self-claim, or name-match** — Dorian Prentice Satoshi Nakamoto, Craig Wright, Peter Todd, Isamu Kaneko, Paul Le Roux
+
+Per-candidate background and external status are in §6 (Candidate profiles). The four layers (§2 — §5) compare the candidates against Satoshi's documented public-record outline along independent axes. Cross-cutting observations across the four layers are in §7; combined limits in §8.
+
+## 2. Layer 1 — Profile match
+
+### 2.1 Comparison table
 
 | Candidate | Entry | Cypherpunk fora | BTC lineage | Implementation | Monetary design | English level | Timing | Low visibility | External status |
 |---|---|---|---|---|---|---|---|---|---|
@@ -115,114 +127,17 @@ This entry does not name "the most likely Satoshi candidate."
 | [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Identity](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Identity](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
-**Color meaning:** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit (per-column criteria in §2 Methodology).
+**Color meaning (this table only):** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit. Per-dimension criteria are in §2.2. Section §5 reuses the same three glyphs on a separately-defined Phase 1 alignment scale; the two scales are not interchangeable (see §5.3 for §5's legend and §8 for the overall caveat).
 
 **How to read the table:**
 
-- The dimensions split into two groups that pull against each other (background-and-capability vs covertness). Counting 🟢 across all columns and treating the total as a single Satoshi-likeness score is misleading. See §2 Methodology.
+- The dimensions split into two groups that pull against each other (background-and-capability vs covertness). Counting 🟢 across all columns and treating the total as a single Satoshi-likeness score is misleading. See §2.2.
 - Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of the profile comparison.
 - Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
 
-### Stylometric attribution record (separate layer, reference)
+### 2.2 Methodology
 
-Stylometric Satoshi-identification work is a separate methodological tradition from the structural profile matrix above. The four most-cited investigations have produced different leading candidates depending on candidate-pool design, distance metric, and corpus boundaries. The structural matrix (English level, cypherpunk fora, etc.) describes preconditions; the stylometric record below describes results — the two layers are not interchangeable.
-
-| Candidate | [Skye Grey 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)<br>(single-hypothesis) | [Aston 2014](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)<br>(11 candidates) | [van Dorst 2024](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)<br>(75,000+) / [reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [Cafiero / Carreyrou NYT 2026](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)<br>(12; broader pool 620) |
-|---|---|---|---|---|
-| [Adam Back](/BitcoinArchive/participants/adam-back/) | — | rank not published | 3rd 🥉 | 1st 🥇 |
-| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | rank not published | 4th | rank not published |
-| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | rank not published | 2nd 🥈 | 2nd 🥈 |
-| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 1st 🥇 | 1st 🥇 | 1st 🥇 | rank not published |
-| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | — | not in candidate set | 5th | not in candidate set |
-
-**Reading the stylometric layer:** Szabo emerges as the most-frequently-top-ranked candidate — three of the four investigations place Szabo highest among the named candidates: Skye Grey 2013 (named), Aston 2014 (named), and the [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of van Dorst's published data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, with Cafiero describing that result as inconclusive (Hal Finney near tie). The convergence is partial, however: [van Dorst's full 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) contains 594 unnamed authors closer to Satoshi than Szabo, and van Dorst himself declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
-
-### Direct-correspondence record (separate layer, reference)
-
-How much each candidate actually exchanged words with Satoshi is an observable fact independent of capability profile and stylometric distance. Tabulating the archive's documented communication per candidate makes the contrast clear: four candidates have some form of documented exchange (one of them only as a reply in a Satoshi-started thread), and six candidates have no record of direct contact with Satoshi at all.
-
-**Documented direct correspondence between named candidates and Satoshi (archive coverage)**
-
-```mermaid
-gantt
-    dateFormat YYYY-MM-DD
-    axisFormat %Y/%m
-
-    section Context
-    Satoshi development to v0.1 release :crit, 2007-06-01, 2009-01-09
-    v0.1 release to last known email :crit, 2009-01-09, 2011-04-26
-
-    section Group A
-    Adam Back (5 private emails) :2008-08-20, 2009-01-11
-    Wei Dai (3 private emails) :2008-08-22, 2009-01-11
-
-    section Group B
-    Hal Finney (4 emails + 4 public ML + many BitcoinTalk) :2008-11-07, 2010-03-31
-
-    section Group C
-    Peter Todd (1 reply in a Satoshi-started thread) :2010-12-09, 2010-12-13
-```
-
-Broken down by **type of contact**, the structure differs:
-
-| Type | Candidates | Character |
-|---|---|---|
-| **Private email exchange** | Adam Back, Wei Dai | Satoshi reached out as a third party shortly before the whitepaper, citing prior-art lineage |
-| **Email + public discourse** | Hal Finney | Sustained technical engagement as the RPOW author, across private email, the cryptography mailing list, and BitcoinTalk |
-| **Reply in a Satoshi-started forum thread** | Peter Todd | One reply by the `retep` account in a Satoshi proposal thread. Not "direct contact" in the private sense, but cited as identification evidence by the [HBO documentary](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) |
-| **No record of direct contact** | Nick Szabo, Len Sassaman, Isamu Kaneko, Dorian Nakamoto, Craig Wright, Paul Le Roux | Satoshi's pre-launch outreach traced the prior-art lineage via **Adam Back → Wei Dai** only and reached none of these six |
-
-**Reading the direct-correspondence layer:** the presence or absence of correspondence is double-edged for hypothesis evaluation:
-- **Contact exists** can also serve as evidence that Satoshi treated them as third parties — Satoshi's pre-launch emails to Back and Wei Dai function as the central counter-evidence in both hypotheses (Back-as-Satoshi, Wei-Dai-as-Satoshi) (see [Satoshi identification asymmetry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2).
-- **No contact** splits into two readings — successful concealment or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
-
-The presence-or-absence of correspondence does not by itself select a hypothesis, but combined with the capability profile and the stylometric layer it functions as a third structural layer that locates each candidate's position in the candidate space.
-
-### Development-environment record (separate layer, reference)
-
-Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0 SP6 and MinGW GCC 3.4.5, used Hungarian-notation identifiers (`nValue`, `strHash`, `vTransactions`), and depended on wxWidgets, Boost, OpenSSL, and Berkeley DB. The full forensic trace is in the [Satoshi Windows development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which also documents a three-phase trajectory of Satoshi's OS-tooling profile:
-
-| Phase | Period | OS profile |
-|---|---|---|
-| **Phase 1** (~27 months) | mid-2007 → 2009-08-23 | Windows-only; no Linux trace in the development environment |
-| **Phase 2** (~16 months) | 2009-08-24 → 2010-12-02 | Reactive Linux support driven by Martti Malmi's port |
-| **Phase 3** (~5 months) | 2010-12-03 → 2011-04-26 | Self-statement "Gavin is much more Linux capable than me" |
-
-The most diagnostic comparison is against **Phase 1**, when the entire architecture and the 19,901-line v0.1 codebase were produced. Each candidate's documented development-environment profile can be aligned against this baseline.
-
-| Candidate | Phase 1 alignment | Primary OS | Primary languages | Documented shipping codebase |
-|---|---|---|---|---|
-| [Adam Back](/BitcoinArchive/participants/adam-back/) | 🟡 Mixed — language overlap, OS not established | Not in archive record (Microsoft work history) | Perl (compact-code reputation); C / C++ | Hashcash specification + small reference implementations |
-| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | 🟢 High — Windows-MSVC overlap; multi-thousand-line C++ cryptographic-library shipping record | Windows (Microsoft work history; MSVC primary) | C++ | **Crypto++** — multi-platform C++ class library, originally Windows-MSVC-rooted |
-| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 🔴 Misalignment — Mac primary; published code uses snake_case + tabs vs Satoshi's spaces + Hungarian-notation camelCase | Mac (long-term, documented) | C / C++ | PGP 2.0, RPOW |
-| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🔴 Misalignment — no documented C++ shipping at v0.1 scale | Not in archive record | No shipping C++ record | Bit Gold proposal (paper only); [explicitly asked for implementation help in April 2008](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
-| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 Misalignment — no documented C++ shipping | Not in archive record (classified defense-systems engineering) | Physics / electronics background | No public codebase |
-| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — Not applicable (COPA v Wright 2024 ruling) | — | — | — |
-| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | 🟡 Surface alignment — Windows + C++ + cryptographic shipping, but the public shipping record stops in 1999 | Windows NT / 9x | C++ | **E4M** (Windows-only disk encryption, 1999; later forked into TrueCrypt) |
-| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | 🔴 Misalignment — Unix-primary, no documented Windows-first development | Unix / Linux primary (Mixmaster maintainer; KU Leuven research environment) | C | Mixmaster (C; *BSD / Linux primary, Windows port available) |
-| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | 🔴 Misalignment — Linux uniformly, no Windows trace | Linux (2008–2011 GitHub repositories uniformly Linux: FHS paths, Unix shebangs, PyGTK) | C / Python | Linux-native hardware / firmware tooling |
-| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | 🟡 Partial — OS / language match, but Winny source uses Japanese identifiers and comments; Bitcoin v0.1 source is English-only | Windows | C++ | Winny (Windows P2P, C++) |
-
-**Color meaning (Phase 1 alignment column):** 🟢 high alignment with Phase 1's Windows + MSVC + C++ shipping profile; 🟡 partial, surface-level, or mixed; 🔴 documented misalignment, or no shipping codebase at v0.1 scale.
-
-**Reading the development-environment layer:**
-
-- **Two candidates align with Phase 1's Windows + MSVC + C++ shipping profile.** [Wei Dai](/BitcoinArchive/participants/wei-dai/) shipping Crypto++ — a C++ cryptographic class library originally rooted in Windows-MSVC — is the most direct overlap with Bitcoin v0.1's cryptographic-library dependency pattern. [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) shipped E4M (Windows-only C++ disk encryption) in 1999, but his public shipping record stops there.
-- **Three candidates show direct OS misalignment with Phase 1.** [Hal Finney](/BitcoinArchive/participants/hal-finney/) (long-term Mac, snake_case + tabs), [Peter Todd](/BitcoinArchive/participants/peter-todd/) (Linux-only GitHub trail), and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (Unix-primary tooling) each have a documented primary environment outside Windows.
-- **Three candidates have no documented shipping codebase at v0.1 scale.** [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) asked for implementation help in April 2008; [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/)'s classified defense work produced no public code; [Craig Wright](/BitcoinArchive/participants/craig-wright/)'s claimed evidence was found fabricated by the UK High Court.
-- **[Adam Back](/BitcoinArchive/participants/adam-back/)'s personal OS is not in the archive record.** Hashcash spans Perl and C / C++ reference implementations, but the scale gap between those reference implementations and Bitcoin v0.1's 19,901-line C++ codebase is wider than for candidates with Crypto++- or E4M-scale shipping records.
-- **[Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/)'s Winny matches Windows + C++ at the platform level**, but Winny's source contains Japanese identifiers and comments — a register Bitcoin v0.1 does not exhibit.
-
-**Limits of this layer:**
-
-- A candidate could have developed Bitcoin on Windows-MSVC without that environment being represented in their public codebase — absence of evidence is not evidence of absence.
-- Bitcoin v0.1's Windows-only release could in principle have been an intentional misdirection by a developer whose primary environment was Mac or Linux.
-- Phase 2 and Phase 3 show Satoshi's OS profile shifting toward Linux capability, so a candidate whose primary OS was Linux ([Peter Todd](/BitcoinArchive/participants/peter-todd/), [Len Sassaman](/BitcoinArchive/participants/len-sassaman/)) is more consistent with Phase 3 than with Phase 1 — but Phase 1 is the construction period and the more diagnostic comparison.
-- Combined with the §1 profile-match table, the stylometric layer, and the direct-correspondence layer, this development-environment layer forms a fourth structural layer that locates each candidate in the comparison space. It narrows but does not select a unique person.
-
-## 2. Methodology
-
-**Profile-match dimensions.** The seven dimensions in §1's comparison table are derived from the public-record outline of Satoshi:
+**Profile-match dimensions.** The seven dimensions in §2.1 are derived from the public-record outline of Satoshi:
 
 - *Cypherpunk forum participation*: documented presence in the cypherpunks mailing list, metzdowd Cryptography List, or related fora. Wei Dai's 2014 identifiability argument (in his LessWrong AALWA thread) suggests Satoshi was *not* visibly active in these fora during the 2007–2008 development period.
 - *Bitcoin-adjacent intellectual lineage*: documented work in or extended citation of Hashcash, b-money, Bit Gold, RPOW, or related digital-cash / proof-of-work proposals (the per-component analysis of which of these Bitcoin actually reuses, borrows, or synthesizes is in [the Bitcoin design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/)).
@@ -239,11 +154,11 @@ The most diagnostic comparison is against **Phase 1**, when the entire architect
 
 The more visibly active a candidate was as a cypherpunk thinker (group 1), the less plausibly they could also have been hidden enough to escape identification (group 2). Reading the comparison requires holding the two groups separately rather than summing green counts. An "all-🟢" candidate is structurally rare: someone simultaneously deeply embedded in cypherpunk capability *and* completely invisible during the development window.
 
-**Profile-match is necessary but not sufficient.** Profile-match alone never decides a hypothesis. The *External status* column (self-denials, court rulings, technical disproofs) operates independently and is in some cases decisive. Cross-cutting observations on how profile-match and external status combine for individual candidates are in §4.
+**Profile-match is necessary but not sufficient.** Profile-match alone never decides a hypothesis. The *External status* column (self-denials, court rulings, technical disproofs) operates independently and is in some cases decisive. Cross-cutting observations on how profile-match and external status combine for individual candidates are in §7.
 
-### Capability vs covertness map
+### 2.3 Capability vs covertness map
 
-Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. The map makes the §4 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
+Each candidate plotted in the 2D space of capability score (x-axis, average of the 5 capability dimensions) vs covertness score (y-axis, average of the 2 covertness dimensions), using 🟢 = 1, 🟡 = 0.5, 🔴 = 0. The map makes the §7 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
 
 **Candidate profiles, capability vs covertness**
 
@@ -267,17 +182,123 @@ quadrantChart
     "Isamu Kaneko": [0.2, 0.05]
 ```
 
-The cluster pattern is the same observation §4 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
+The cluster pattern is the same observation §7 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
 
-## 3. Candidate profiles
+## 3. Layer 2 — Stylometric attribution
 
-The candidates fall into three groups by how they entered Satoshi-identity discourse:
+Stylometric Satoshi-identification work is a separate methodological tradition from the structural profile match in §2. The four most-cited investigations have produced different leading candidates depending on candidate-pool design, distance metric, and corpus boundaries. The §2 profile match describes preconditions; the stylometric record below describes results — the two layers are not interchangeable.
 
-- **A. Cypherpunks Satoshi explicitly cited** — Adam Back, Wei Dai
-- **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
-- **C. Third-party discovery, self-claim, or name-match** — Dorian Prentice Satoshi Nakamoto, Craig Wright, Peter Todd, Isamu Kaneko, Paul Le Roux
+### 3.1 Comparison table
 
-Each profile shares the same micro-structure: background, the hypothesis (proposer and timing), the strongest argument for, the strongest argument against, external status. For candidates with a dedicated hypothesis entry (linked from the "Hypothesis entry" column above), the §3 profile here keeps only background and external status — the full claim/arguments/counter-evidence/broader-record treatment is in the dedicated entry, which follows the same template (§1 claim → §2 arguments → §3 counter-evidence → §4 broader documentary record → §5 limits) at greater depth.
+| Candidate | [Skye Grey 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)<br>(single-hypothesis) | [Aston 2014](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)<br>(11 candidates) | [van Dorst 2024](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)<br>(75,000+) / [reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) | [Cafiero / Carreyrou NYT 2026](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)<br>(12; broader pool 620) |
+|---|---|---|---|---|
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | — | rank not published | 3rd 🥉 | 1st 🥇 |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | — | rank not published | 4th | rank not published |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | — | rank not published | 2nd 🥈 | 2nd 🥈 |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 1st 🥇 | 1st 🥇 | 1st 🥇 | rank not published |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | — | not in candidate set | 5th | not in candidate set |
+
+### 3.2 Reading the table
+
+**Reading the stylometric layer:** Szabo emerges as the most-frequently-top-ranked candidate — three of the four investigations place Szabo highest among the named candidates: Skye Grey 2013 (named), Aston 2014 (named), and the [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of van Dorst's published data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, with Cafiero describing that result as inconclusive (Hal Finney near tie). The convergence is partial, however: [van Dorst's full 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) contains 594 unnamed authors closer to Satoshi than Szabo, and van Dorst himself declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
+
+## 4. Layer 3 — Direct correspondence
+
+How much each candidate actually exchanged words with Satoshi is an observable fact independent of capability profile and stylometric distance. Tabulating the archive's documented communication per candidate makes the contrast clear: four candidates have some form of documented exchange (one of them only as a reply in a Satoshi-started thread), and six candidates have no record of direct contact with Satoshi at all.
+
+### 4.1 Documented correspondence timeline
+
+**Documented direct correspondence between named candidates and Satoshi (archive coverage)**
+
+```mermaid
+gantt
+    dateFormat YYYY-MM-DD
+    axisFormat %Y/%m
+
+    section Context
+    Satoshi development to v0.1 release :crit, 2007-06-01, 2009-01-09
+    v0.1 release to last known email :crit, 2009-01-09, 2011-04-26
+
+    section Group A
+    Adam Back (5 private emails) :2008-08-20, 2009-01-11
+    Wei Dai (3 private emails) :2008-08-22, 2009-01-11
+
+    section Group B
+    Hal Finney (4 emails + 4 public ML + many BitcoinTalk) :2008-11-07, 2010-03-31
+
+    section Group C
+    Peter Todd (1 reply in a Satoshi-started thread) :2010-12-09, 2010-12-13
+```
+
+### 4.2 By type of contact
+
+Broken down by **type of contact**, the structure differs:
+
+| Type | Candidates | Character |
+|---|---|---|
+| **Private email exchange** | Adam Back, Wei Dai | Satoshi reached out as a third party shortly before the whitepaper, citing prior-art lineage |
+| **Email + public discourse** | Hal Finney | Sustained technical engagement as the RPOW author, across private email, the cryptography mailing list, and BitcoinTalk |
+| **Reply in a Satoshi-started forum thread** | Peter Todd | One reply by the `retep` account in a Satoshi proposal thread. Not "direct contact" in the private sense, but cited as identification evidence by the [HBO documentary](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) |
+| **No record of direct contact** | Nick Szabo, Len Sassaman, Isamu Kaneko, Dorian Nakamoto, Craig Wright, Paul Le Roux | Satoshi's pre-launch outreach traced the prior-art lineage via **Adam Back → Wei Dai** only and reached none of these six |
+
+### 4.3 Reading the table
+
+**Reading the direct-correspondence layer:** the presence or absence of correspondence is double-edged for hypothesis evaluation:
+- **Contact exists** can also serve as evidence that Satoshi treated them as third parties — Satoshi's pre-launch emails to Back and Wei Dai function as the central counter-evidence in both hypotheses (Back-as-Satoshi, Wei-Dai-as-Satoshi) (see [Satoshi identification asymmetry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2).
+- **No contact** splits into two readings — successful concealment or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
+
+The presence-or-absence of correspondence does not by itself select a hypothesis, but combined with the §2 profile match and the §3 stylometric layer it functions as a third structural layer that locates each candidate's position in the candidate space.
+
+## 5. Layer 4 — Development environment
+
+### 5.1 Satoshi's three-phase OS-tooling profile
+
+Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0 SP6 and MinGW GCC 3.4.5, used Hungarian-notation identifiers (`nValue`, `strHash`, `vTransactions`), and depended on wxWidgets, Boost, OpenSSL, and Berkeley DB. The full forensic trace is in the [Satoshi Windows development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which also documents a three-phase trajectory of Satoshi's OS-tooling profile:
+
+| Phase | Period | OS profile |
+|---|---|---|
+| **Phase 1** (~27 months) | mid-2007 → 2009-08-23 | Windows-only; no Linux trace in the development environment |
+| **Phase 2** (~16 months) | 2009-08-24 → 2010-12-02 | Reactive Linux support driven by Martti Malmi's port |
+| **Phase 3** (~5 months) | 2010-12-03 → 2011-04-26 | Self-statement "Gavin is much more Linux capable than me" |
+
+The most diagnostic comparison is against **Phase 1**, when the entire architecture and the 19,901-line v0.1 codebase were produced. Each candidate's documented development-environment profile can be aligned against this baseline.
+
+### 5.2 Comparison table
+
+| Candidate | Phase 1 alignment | Primary OS | Primary languages | Documented shipping codebase |
+|---|---|---|---|---|
+| [Adam Back](/BitcoinArchive/participants/adam-back/) | 🟡 Mixed — language overlap, OS not established | Not in archive record (Microsoft work history) | Perl (compact-code reputation); C / C++ | Hashcash specification + small reference implementations |
+| [Wei Dai](/BitcoinArchive/participants/wei-dai/) | 🟢 High — Windows-MSVC overlap; multi-thousand-line C++ cryptographic-library shipping record | Windows (Microsoft work history; MSVC primary) | C++ | **Crypto++** — multi-platform C++ class library, originally Windows-MSVC-rooted |
+| [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 🔴 Misalignment — Mac primary; published code uses snake_case + tabs vs Satoshi's spaces + Hungarian-notation camelCase | Mac (long-term, documented) | C / C++ | PGP 2.0, RPOW |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🔴 Misalignment — no documented C++ shipping at v0.1 scale | Not in archive record | No shipping C++ record | Bit Gold proposal (paper only); [explicitly asked for implementation help in April 2008](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 Misalignment — no documented C++ shipping | Not in archive record (classified defense-systems engineering) | Physics / electronics background | No public codebase |
+| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — Not applicable (COPA v Wright 2024 ruling) | — | — | — |
+| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | 🟡 Surface alignment — Windows + C++ + cryptographic shipping, but the public shipping record stops in 1999 | Windows NT / 9x | C++ | **E4M** (Windows-only disk encryption, 1999; later forked into TrueCrypt) |
+| [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | 🔴 Misalignment — Unix-primary, no documented Windows-first development | Unix / Linux primary (Mixmaster maintainer; KU Leuven research environment) | C | Mixmaster (C; *BSD / Linux primary, Windows port available) |
+| [Peter Todd](/BitcoinArchive/participants/peter-todd/) | 🔴 Misalignment — Linux uniformly, no Windows trace | Linux (2008–2011 GitHub repositories uniformly Linux: FHS paths, Unix shebangs, PyGTK) | C / Python | Linux-native hardware / firmware tooling |
+| [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | 🟡 Partial — OS / language match, but Winny source uses Japanese identifiers and comments; Bitcoin v0.1 source is English-only | Windows | C++ | Winny (Windows P2P, C++) |
+
+### 5.3 Reading and color meaning
+
+**Color meaning (this table only — Phase 1 alignment column):** 🟢 high alignment with Phase 1's Windows + MSVC + C++ shipping profile; 🟡 partial, surface-level, or mixed; 🔴 documented misalignment, or no shipping codebase at v0.1 scale. This scale is **separate from §2's profile-match scale** even though the same glyphs are used; the overall caveat is in §8.
+
+**Reading the development-environment layer:**
+
+- **Two candidates align with Phase 1's Windows + MSVC + C++ shipping profile.** [Wei Dai](/BitcoinArchive/participants/wei-dai/) shipping Crypto++ — a C++ cryptographic class library originally rooted in Windows-MSVC — is the most direct overlap with Bitcoin v0.1's cryptographic-library dependency pattern. [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) shipped E4M (Windows-only C++ disk encryption) in 1999, but his public shipping record stops there.
+- **Three candidates show direct OS misalignment with Phase 1.** [Hal Finney](/BitcoinArchive/participants/hal-finney/) (long-term Mac, snake_case + tabs), [Peter Todd](/BitcoinArchive/participants/peter-todd/) (Linux-only GitHub trail), and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (Unix-primary tooling) each have a documented primary environment outside Windows.
+- **Three candidates have no documented shipping codebase at v0.1 scale.** [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) asked for implementation help in April 2008; [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/)'s classified defense work produced no public code; [Craig Wright](/BitcoinArchive/participants/craig-wright/)'s claimed evidence was found fabricated by the UK High Court.
+- **[Adam Back](/BitcoinArchive/participants/adam-back/)'s personal OS is not in the archive record.** Hashcash spans Perl and C / C++ reference implementations, but the scale gap between those reference implementations and Bitcoin v0.1's 19,901-line C++ codebase is wider than for candidates with Crypto++- or E4M-scale shipping records.
+- **[Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/)'s Winny matches Windows + C++ at the platform level**, but Winny's source contains Japanese identifiers and comments — a register Bitcoin v0.1 does not exhibit.
+
+### 5.4 Limits of this layer
+
+- A candidate could have developed Bitcoin on Windows-MSVC without that environment being represented in their public codebase — absence of evidence is not evidence of absence.
+- Bitcoin v0.1's Windows-only release could in principle have been an intentional misdirection by a developer whose primary environment was Mac or Linux.
+- Phase 2 and Phase 3 show Satoshi's OS profile shifting toward Linux capability, so a candidate whose primary OS was Linux ([Peter Todd](/BitcoinArchive/participants/peter-todd/), [Len Sassaman](/BitcoinArchive/participants/len-sassaman/)) is more consistent with Phase 3 than with Phase 1 — but Phase 1 is the construction period and the more diagnostic comparison.
+
+## 6. Candidate profiles
+
+Each profile shares the same micro-structure: background and external status. For candidates with a dedicated hypothesis entry (linked from the "Entry" column in §2.1), the profile here keeps only background and external status — the full claim / arguments / counter-evidence / broader-record treatment is in the dedicated entry, which follows the same template (§1 claim → §2 arguments → §3 counter-evidence → §4 broader documentary record → §5 limits) at greater depth.
 
 ### A. Cypherpunks Satoshi explicitly cited
 
@@ -365,19 +386,23 @@ Each profile shares the same micro-structure: background, the hypothesis (propos
 
 **External status.** Open (incarcerated). Le Roux has not publicly addressed the hypothesis from prison.
 
-## 4. Cross-cutting observations
+## 7. Cross-cutting observations
 
-- **Wei Dai is the candidate closest to "all-🟢" — and external status still rules him out.** Six of seven dimensions are 🟢; only Timing is 🔴. After the 1998 b-money proposal, his mailing-list posting frequency dropped and during 2007–2008 he focused on Crypto++ maintenance, naturally placing him in the "invisible" zone. However, he has self-denied, and the August 2008 pre-launch correspondence reads as Wei Dai receiving Satoshi's proposal as a third party (the same argument that applies to Adam Back). Profile-match alone, even at near-maximum, does not decide.
-- **Sassaman is the only externally-open high-scorer — and his pattern is a specialty-separation byproduct.** His 2007–2008 public activity was in the anonymity-research specialty (Mixmaster, KU Leuven, 24C3 and Black Hat 2007), adjacent to but distinct from Bitcoin's digital-cash specialty. He could be visible in his own field while remaining invisible in Bitcoin's. Most candidates do not get this specialty-separation benefit and pay the capability-vs-covertness trade-off more directly.
-- **An "all-🟢" candidate is structurally rare.** The capability-vs-covertness opposition makes it nearly impossible to be simultaneously deeply embedded in cypherpunk capability *and* completely invisible during the development window. Wei Dai approaches it through specialty-shift (active mailing-list participation in late 1990s, retreat to Crypto++ maintenance during 2007–2008). Sassaman approaches it through specialty-separation (visible in anonymity research, invisible in digital-cash).
+Each observation below is anchored in one or more of the four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment).
+
+- **Wei Dai is the candidate closest to "all-🟢" in §2 — and external status still rules him out.** Six of seven dimensions are 🟢; only Timing is 🔴. After the 1998 b-money proposal, his mailing-list posting frequency dropped and during 2007–2008 he focused on Crypto++ maintenance, naturally placing him in the "invisible" zone. However, he has self-denied, and the August 2008 pre-launch correspondence reads as Wei Dai receiving Satoshi's proposal as a third party (the same argument that applies to Adam Back). Profile-match alone, even at near-maximum, does not decide.
+- **Sassaman is the only externally-open high-scorer in §2 — and his pattern is a specialty-separation byproduct.** His 2007–2008 public activity was in the anonymity-research specialty (Mixmaster, KU Leuven, 24C3 and Black Hat 2007), adjacent to but distinct from Bitcoin's digital-cash specialty. He could be visible in his own field while remaining invisible in Bitcoin's. Most candidates do not get this specialty-separation benefit and pay the capability-vs-covertness trade-off more directly.
+- **An "all-🟢" candidate in §2 is structurally rare.** The capability-vs-covertness opposition makes it nearly impossible to be simultaneously deeply embedded in cypherpunk capability *and* completely invisible during the development window. Wei Dai approaches it through specialty-shift (active mailing-list participation in late 1990s, retreat to Crypto++ maintenance during 2007–2008). Sassaman approaches it through specialty-separation (visible in anonymity research, invisible in digital-cash).
 - **Name-match (Dorian) and self-claim (Wright) have both been publicly refuted.** Group C's two highest-profile claims share a structural pattern: both relied on a single line of evidence (name or self-claim) without underlying technical or intellectual fit. The Newsweek identification was demolished by Dorian's repeated denial (with lawyer and AP interview), the p2pfoundation account post "I am not Dorian Nakamoto," and broad criticism of the journalistic methodology. The Wright self-claim was demolished by the COPA v Wright ruling. Group C candidates who remain open (Le Roux, Kaneko, Todd) do so on capability + covertness arguments rather than identification-by-claim.
-- **Profile-match is necessary but not sufficient.** No candidate is ruled in by profile-match alone, and no candidate is ruled out by profile-match alone. The combination of profile-match with external status (and, for low-scoring candidates, the absence of supporting evidence) is what determines current discourse standing.
+- **Multi-layer convergence is partial.** Wei Dai is the candidate most consistent across §2 (six of seven 🟢) and §5 (Crypto++ as Windows-MSVC C++ shipping). [Hal Finney](/BitcoinArchive/participants/hal-finney/) shows the sharpest cross-layer mismatch: §2's profile-match dimensions are mostly 🟢, but §5 records direct OS misalignment (long-term Mac, snake_case + tabs). Most candidates score similarly across multiple layers because the layers measure correlated capability proxies; where they diverge (Finney, Sassaman, Todd) the divergence is structural, not noise. Convergence across layers does not by itself establish identification — each layer is necessary but not sufficient — but cross-layer mismatch is informative.
+- **Profile-match is necessary but not sufficient.** No candidate is ruled in by §2 profile-match alone, and no candidate is ruled out by §2 profile-match alone. The combination of all four layers with external status (and, for low-scoring candidates, the absence of supporting evidence) is what determines current discourse standing.
 
-## 5. Limits of this entry
+## 8. Overall limits
 
 - This entry does not present new evidence. It compiles publicly available material into one comparison.
-- This entry does not name "the most likely Satoshi candidate." Profile-comparison is necessary but not sufficient; external status is in some cases decisive.
-- Profile-comparison labels (🟢, 🔴, 🟡) are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
+- This entry does not name "the most likely Satoshi candidate." Each of the four layers is necessary but not sufficient; external status is in some cases decisive.
+- **The color-coded labels in §2 and §5 are not interchangeable, even though both tables use 🟢 / 🟡 / 🔴.** §2's scale measures match against the seven profile dimensions; §5's scale measures alignment against Phase 1's Windows-MSVC-C++ shipping profile. Read each table with its own section's legend. In both cases the labels are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
+- **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §7 for the multi-layer convergence observation.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
-- For full treatment of candidates with dedicated entries, see the "Individual" column in the table. Other candidates do not have dedicated hypothesis entries in this archive.
+- For full treatment of candidates with dedicated entries, see the "Entry" column in §2.1's table. Other candidates do not have dedicated hypothesis entries in this archive.
