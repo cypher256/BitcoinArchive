@@ -106,6 +106,7 @@ export const tagTranslations: Record<string, string> = {
   'early-investor': '初期投資家',
   'ecash': 'eCash',
   'economics': '経済学',
+  'elastic-supply': '弾力的供給量',
   'electricity': '電力',
   'electricity-cost': '電気代',
   'electronic-currency': '電子通貨',
@@ -117,6 +118,7 @@ export const tagTranslations: Record<string, string> = {
   'exchange-rate': '為替レート',
   'fairness': '公平性',
   'faq': 'FAQ',
+  'fiat-comparison': '法定通貨比較',
   'fiat-exchange': '法定通貨交換',
   'final': '最終版',
   'final-communication': '最後の通信',
@@ -139,6 +141,7 @@ export const tagTranslations: Record<string, string> = {
   'fork-resolution': 'フォーク解決',
   'forum': 'フォーラム',
   'hard-fork': 'ハードフォーク',
+  'hard-money': 'ハードマネー',
   'hash-war': 'ハッシュ戦争',
   'foundational': '基盤',
   'fraud': '詐欺',
@@ -296,6 +299,7 @@ export const tagTranslations: Record<string, string> = {
   'SLH-DSA': 'SLH-DSA',
   'succession': '後継',
   'supply': '供給量',
+  'supply-design': '供給設計',
   'synchronization': '同期',
 
   // T

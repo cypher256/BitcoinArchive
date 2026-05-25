@@ -63,6 +63,7 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - analysis/2008-08-20-satoshi-activity-timeline
   - aftermath/2013-07-06-isamu-kaneko-biography
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
 inlineLinkKeywords:
   - "Cypherpunk's Manifesto"
   - "independent arrival"

@@ -38,6 +38,7 @@ relatedEntries:
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
+  - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
 
 *From the Cypherpunks mailing list (cypherpunks@cyberpass.net), December 6, 1998 (00:48:42 UTC):*

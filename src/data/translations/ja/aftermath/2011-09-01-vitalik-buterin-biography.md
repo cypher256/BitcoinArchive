@@ -32,6 +32,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2012-05-01-bitcoin-magazine-launch
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
 ---
 
 2011 年、17 歳のロシア系カナダ人ヴィタリック・ブテリンは、ビットコインを購入することも採掘することもできなかったので、代わりに記事を書いた —— ミハイ・アリシエの『Bitcoin Weekly』 に 1 記事あたり 5 BTC（当時のレートで約 3.50 米ドル）で寄稿。執筆経験から[『Bitcoin Magazine』](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) を 2012 年に共同創刊、2014 年まで数十本の長文記事をビットコインのプロトコル機構について執筆した。2013 年後半に[イーサリアムのホワイトペーパー](https://ethereum.org/en/whitepaper/)を執筆、2015 年 7 月 30 日にネットワークのメインネットを 21 歳で立ち上げた。

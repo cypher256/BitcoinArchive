@@ -32,6 +32,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2012-05-01-bitcoin-magazine-launch
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
 ---
 
 In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the [Ethereum whitepaper](https://ethereum.org/en/whitepaper/), launching the network's mainnet on July 30, 2015 at age 21.

@@ -44,6 +44,7 @@ relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
+  - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
 
 In November 1998, Wei Dai published [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) — a proposal for distributed digital cash — on the cypherpunks mailing list. Ten years later, on August 22, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [emailed Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):

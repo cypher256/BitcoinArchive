@@ -44,6 +44,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 translationStatus: complete
 ---
 

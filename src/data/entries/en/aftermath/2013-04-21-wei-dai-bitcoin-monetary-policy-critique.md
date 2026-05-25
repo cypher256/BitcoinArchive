@@ -25,6 +25,7 @@ relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
+  - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
 
 *From LessWrong "Bitcoins are not digital greenbacks" comment thread, April 21, 2013:*

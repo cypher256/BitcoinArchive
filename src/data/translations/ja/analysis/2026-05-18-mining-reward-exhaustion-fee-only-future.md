@@ -43,6 +43,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
 translationStatus: complete
 ---
 
