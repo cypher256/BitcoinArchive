@@ -1,5 +1,5 @@
 ---
-title: "「悪名高い詐欺師の宣誓で、 俺のホワイトペーパーが違法になった」 ― Cobra、 bitcoin.org 判決への反論 (2021)"
+title: "「悪名高い詐欺師の宣誓で、 俺のホワイトペーパー掲載を違法にしやがった」 ― Cobra、 bitcoin.org 判決への反論 (2021)"
 date: 2021-06-28T00:00:00Z
 type: "article"
 source: "x"
