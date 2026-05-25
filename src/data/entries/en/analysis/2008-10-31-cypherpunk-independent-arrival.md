@@ -218,6 +218,6 @@ This matters because it limits how strong a claim the alignment in §3 can suppo
 - Wei Dai's 2014 retrospective adds a second independent constraint: Satoshi was probably not previously active in cypherpunk communities, by an identifiability argument.
 - Satoshi's documented practice in 2008-2011 maps point-by-point onto the six-axis cypherpunk philosophical core articulated in Eric Hughes's 1993 *A Cypherpunk's Manifesto*.
 - The most parsimonious reading is *independent arrival* — convergence on the same answers from outside the visible community — but the question of passive readership remains open in the public record.
+- This entry contributes a structural account of where Satoshi stood intellectually when he built the system. It makes no claim about identity, country, or background.
 
 *[Context: The "1.5-year coding" and "18 months development" self-statements analyzed here are the primary-source basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s 2007–2008 timeline — the 18 months in which the protagonist writes the system unseen.]*
-- This entry contributes a structural account of where Satoshi stood intellectually when he built the system. It makes no claim about identity, country, or background.

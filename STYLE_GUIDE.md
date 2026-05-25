@@ -671,23 +671,20 @@ following roles a given line plays:
 5. Quotation metadata inside or adjacent to a blockquote
 6. Original-poster edit notes that are part of the source record (not
    Archive editor notes)
-7. Novel-page context notes that deliberately bridge Archive material
-   to the project novel
 
 Each role has exactly one canonical form. Anything else is to be
 normalized.
 
-### The seven roles and their canonical forms
+### The six roles and their canonical forms
 
 | Role | Description | EN canonical | JA canonical | Position |
 |---|---|---|---|---|
 | **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
 | **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` (role split between the two fields: see [§ Source Citation](#source-citation-sourceurl-vs-secondarysources)) | same | rendered at the end of the entry by `<SourceCitation />` |
 | **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
-| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography)) | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
+| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography)). Also the home for novel-page context notes that bridge an Archive entry to the project novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/): a short Context / 補足 block linking to `/BitcoinArchive/novel/`. Such bridge notes are still subject to the no-novel-content and factual-source rules outside the block; only the bridge wording inside the block is allowed to use novel-derived framing. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
 | **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
-| **G** | Novel-page context note | `*[Novel context: ...]*` | `*[小説内での扱い：...]*` | italic + brackets; a fenced navigation/interpretation exception |
 
 ### Rules
 
@@ -701,10 +698,7 @@ normalized.
    to `secondarySources[].note` or to (D) during normalization.
 4. (C) and (D) require the label prefix. Unlabeled `*[...]*` is
    forbidden.
-5. (G) is a fenced exception. It is not interchangeable with
-   `*[Context: ...]*` / `*[補足：...]*`; ordinary historical context must
-   stay in (D).
-6. (A) is for entry-wide commentary (one box per entry). For local
+5. (A) is for entry-wide commentary (one box per entry). For local
    commentary, use (C) inline.
 7. Bold-label forms (`**Source:**`, `**Note:**`, `**Editor:**`,
    `**Author:**` as an editor marker) are forbidden.
