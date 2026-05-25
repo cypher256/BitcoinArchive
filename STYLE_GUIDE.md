@@ -700,9 +700,9 @@ normalized.
    forbidden.
 5. (A) is for entry-wide commentary (one box per entry). For local
    commentary, use (C) inline.
-7. Bold-label forms (`**Source:**`, `**Note:**`, `**Editor:**`,
+6. Bold-label forms (`**Source:**`, `**Note:**`, `**Editor:**`,
    `**Author:**` as an editor marker) are forbidden.
-8. Plain-bracket forms (`[Source: ...]`, `[Note: ...]`) are forbidden.
+7. Plain-bracket forms (`[Source: ...]`, `[Note: ...]`) are forbidden.
 8. Dash-trailer forms (`— Source: ...`, `-- Source: ...`) are
    forbidden.
 9. Bracketed source-attribution forms (`*[Source: ...]*`,
@@ -1944,26 +1944,18 @@ Any factual claim about a real person — direct quote, reported speech, narrate
 
 Before writing any factual claim about a real person — in any form — explicitly name the source (a URL, an `sourceUrl` field, a `secondarySources` entry, or a named primary record) and confirm the claim appears at that source. This is a required procedural step, not a principle to apply when in doubt. Extended exposure to narrative reconstructions (novels, dramatizations, documentaries, AI-generated biographical prose) blurs the boundary between fictional and historical content **in both directions** — you may import fiction as fact, or flag a real quote as fabricated. The "does this feel canonical" instinct becomes unreliable in both directions. The verification step exists precisely because that instinct fails. If you cannot perform the verification, drop the claim entirely — do not try to rescue it by paraphrase or by removing quotation marks.
 
-**Novel-page context notes are a fenced exception.**
+**Novel-bridge context notes (live in Category D).**
 
-A short `*[Novel context: ...]*` block may describe how the current
-source is used, framed, or echoed in the project novel
-[*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/).
-
-This is a deliberately fenced exception to the no-novel-content rule.
-The block is not historical evidence, not an Archive factual claim, and
-not a source for any other entry. It exists only as a reader-navigation
-bridge from an Archive entry to the novel page.
-
-Rules:
-
-- The block must start with `*[Novel context:`.
-- It must link to `/BitcoinArchive/novel/`.
-- Novel-derived framing is allowed inside this block only.
-- Claims inside this block must not be reused elsewhere in Archive prose
-  unless independently sourced.
-- Outside this block, the normal no-novel-content and factual-source
-  rules apply in full.
+A short `*[Context: ...]*` / `*[補足：...]*` block at the tail of an
+entry may describe how the entry's subject is framed or echoed in the
+project novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/),
+with a link to `/BitcoinArchive/novel/`. The block is a reader-navigation
+bridge from an Archive entry to the novel page, not historical evidence,
+not an Archive factual claim, and not a source for any other entry.
+Novel-derived framing is allowed inside the block only; outside the
+block the normal no-novel-content and factual-source rules apply in
+full, and claims inside the block must not be reused elsewhere in
+Archive prose unless independently sourced.
 
 ## Layout Width Policy
 
