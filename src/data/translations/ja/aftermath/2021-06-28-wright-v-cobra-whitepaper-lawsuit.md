@@ -33,6 +33,7 @@ relatedEntries:
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
   - "aftermath/2024-03-14-copa-v-wright-ruling"
+  - "tweets/cobra/2021-06-28-whitepaper-ruling-response"
 translationStatus: complete
 ---
 

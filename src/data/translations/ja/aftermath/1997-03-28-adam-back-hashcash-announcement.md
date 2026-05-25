@@ -38,6 +38,13 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
+  - "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2026-04-08T00:00:00Z"
+    sourceEntryId: "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
 translationStatus: complete
 ---
 
@@ -97,6 +104,9 @@ Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合�
 | 2002-08-01 | [Hashcash 論文 §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | 「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に `mint` の語を用いる」。§7 がウェイ・ダイの b-money 鋳造機構としての応用を列挙 |
 | 2008-08-20 | [サトシからアダム・バックへ](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | サトシがビットコインホワイトペーパー向けの Hashcash 引用形式についてバックに問い合わせる |
 
-NYT 調査への応答としてバック自身が 2026 年 4 月に投稿した [X 投稿](https://x.com/adam3us/status/2041811857732768148)における回顧的な枠組み：「暗号学・オンラインプライバシー・電子キャッシュの肯定的な社会的含意に早くから集中的に注目していた。ゆえに 1992 年以降、サイファーパンクリストでの ecash・プライバシー技術の応用研究に積極的な関心を持ち続けてきた。それが Hashcash や他のアイデアにつながった。」
+NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿した回顧的な枠組み:
+
+<!-- quote: q1 -->
+> 私は早くから、 暗号学・オンラインプライバシー・電子現金がもたらす社会的にポジティブな含意に焦点を絞っていた。 だからこそ 1992 年頃から ecash の応用研究に積極的な関心を持ち続けてきた。
 
 *[編者注：Hashcash は通貨ではない。本エントリーはバックがビットコインを設計したと主張するものでもない。1997 年のアナウンスは、アナウンス投稿自体に貨幣関連の枠組みを内蔵したスパム対策インフラ。本格的な貨幣設計分析は 1998 年 12 月 6 日の b-money 批評と 2002 年論文に存在する。これらはバックがビットコインまたは Hashcash 通貨化を実装したことを意味しない — ビットコインの構成要素合成（最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズム）は[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)に別途記録されている。]*

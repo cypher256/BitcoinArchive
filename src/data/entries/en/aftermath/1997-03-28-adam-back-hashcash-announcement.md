@@ -38,6 +38,13 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
+  - "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2026-04-08T00:00:00Z"
+    sourceEntryId: "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
 ---
 
 On March 28, 1997, [Adam Back](/BitcoinArchive/participants/adam-back/) — then a postdoctoral researcher at the University of Exeter — sent an email to the Cypherpunks mailing list with the subject line `[ANNOUNCE] hash cash postage implementation`. The full announcement is preserved at [hashcash.org/papers/announce.txt](http://www.hashcash.org/papers/announce.txt), Adam Back's own hosting of the original post.
@@ -96,6 +103,9 @@ This entry records the 1997 starting point of an eleven-year arc:
 | 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
 | 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
 
-In Back's own retrospective framing in the [April 2026 X post](https://x.com/adam3us/status/2041811857732768148) responding to the NYT investigation: "I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash."
+In Back's own retrospective framing, posted on X in April 2026 in response to the NYT investigation:
+
+<!-- quote: q1 -->
+> I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash.
 
 *[Editor: Hashcash is not a currency, and this entry does not claim Back designed Bitcoin. The 1997 announcement is anti-spam infrastructure with money-adjacent framing built into the announcement post itself; the substantive monetary-design analysis is in the 1998-12-06 b-money critique and the 2002 paper. None of it implies Back implemented Bitcoin or Hashcash-as-currency — Bitcoin's component synthesis (the longest-chain consensus rule, UTXO model, mining-reward issuance, 21-million cap, difficulty-adjustment algorithm) is documented separately in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).]*

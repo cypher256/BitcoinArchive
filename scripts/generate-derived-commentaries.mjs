@@ -53,6 +53,7 @@ const PRIMARY_SOURCE_TYPES = new Set([
   'bip',
   'whitepaper',
   'court-document',
+  'tweet',
 ]);
 
 // ---------------------------------------------------------------------------

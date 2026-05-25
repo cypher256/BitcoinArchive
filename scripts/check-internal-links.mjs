@@ -227,7 +227,7 @@ const STATIC_ASTRO_ROUTES = [
   '/chart/',     '/ja/chart/',
   '/about/',     '/ja/about/',
   '/search/',    '/ja/search/',
-  '/ja/novel/',  // EN /novel/ does not exist (src/pages/novel/ is empty)
+  '/novel/',     '/ja/novel/',
 ];
 for (const route of STATIC_ASTRO_ROUTES) {
   validPaths.add(route);

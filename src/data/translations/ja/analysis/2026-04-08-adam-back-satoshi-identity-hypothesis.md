@@ -60,6 +60,13 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - tweets/adam-back/2026-04-08-response-to-nyt-investigation
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2026-04-08T00:00:00Z"
+    sourceEntryId: "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
 inlineLinkKeywords:
   - "アダム・バック仮説"
   - "バック＝サトシ"
@@ -132,7 +139,10 @@ Hashcash に含まれない各構成要素が**実際にどこから来たのか
 | 2002-08-01 | [Hashcash 論文 §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | 「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に **mint** の語を用いる」。§7 がウェイ・ダイの b-money 鋳造機構としての応用を列挙 |
 | 2008-08-20 | [サトシからアダム・バックへ](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | サトシがビットコインホワイトペーパー向けの Hashcash 引用形式についてバックに問い合わせる |
 
-NYT 調査への応答としてバック自身が 2026 年 4 月に投稿した [X 投稿](https://x.com/adam3us/status/2041811857732768148)における回顧的な枠組み：「暗号学・オンラインプライバシー・電子キャッシュの肯定的な社会的含意に早くから集中的に注目していた。ゆえに 1992 年以降、サイファーパンクリストでの ecash・プライバシー技術の応用研究に積極的な関心を持ち続けてきた。それが Hashcash や他のアイデアにつながった。」
+NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿した回顧的な枠組み:
+
+<!-- quote: q1 -->
+> 私は早くから、 暗号学・オンラインプライバシー・電子現金がもたらす社会的にポジティブな含意に焦点を絞っていた。 だからこそ 1992 年頃から ecash の応用研究に積極的な関心を持ち続けてきた。
 
 論点の強さ：これは記録に残り、一次資料で検証可能な、ビットコインが占めることになる設計空間 — プルーフ・オブ・ワークをデジタルキャッシュ鋳造機構として用いる — への、ビットコイン以前の 10 年にわたる関与である。バックはムーアの法則によるインフレ圧力（論点 ❶）を、ビットコインの難易度調整アルゴリズムが解決する 10 年前に指摘していた。バックは「hashcash を b-money の鋳造機構として」 という応用を 2002 年論文で列挙していた。
 

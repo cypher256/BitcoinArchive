@@ -66,3 +66,5 @@ Satoshi Nakamoto
 ---
 
 **See also:** [Archived Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)
+
+*[Context: The October 31, 2008 mailing-list submission of this paper is the inciting moment in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the nine-page document the protagonist throws into the cryptography list in the middle of the 2008 financial crisis.]*

@@ -26,10 +26,13 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
+  - tweets/wikileaks/2011-06-14-accepts-bitcoin
 quotes:
   - id: "q1"
     person: "WikiLeaks"
+    personSlug: "wikileaks"
     date: "2011-06-14T23:12:01Z"
+    sourceEntryId: "tweets/wikileaks/2011-06-14-accepts-bitcoin"
   - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"

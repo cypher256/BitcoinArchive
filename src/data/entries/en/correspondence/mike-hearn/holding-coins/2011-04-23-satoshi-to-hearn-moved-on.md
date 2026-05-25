@@ -34,3 +34,5 @@ relatedEntries:
 I've moved on to other things. It's in good hands with [Gavin](/BitcoinArchive/participants/gavin-andresen/) and everyone.
 
 I do hope your BitcoinJ continues to be developed into an alternative client. It gives Java devs something to work on, and it's easier with a simpler foundation that doesn't have to do everything. It'll get critical mass when impatient new users can get started using it while the other one is still downloading the block chain.
+
+*[Context: This two-line email closes the protagonist's recorded life in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the message that becomes the central question driving the story, "why did he leave?"]*

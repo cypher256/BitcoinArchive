@@ -228,7 +228,7 @@ quotes:
 
 #### `sourceEntryId` は primary-source エントリーを指す ( 自分自身は禁止 )
 
-`quotes[].sourceEntryId` は primary-source 型のエントリー ( `correspondence` / `mailing-list` / `forum-post` / `bip` / `whitepaper` / `court-document` ) を指す必要がある。 以下は禁止:
+`quotes[].sourceEntryId` は primary-source 型のエントリー ( `correspondence` / `mailing-list` / `forum-post` / `bip` / `whitepaper` / `court-document` / `tweet` ) を指す必要がある。 以下は禁止:
 
 1. **エントリー自身** ( self-link ) — chip をクリックしても同じページに戻るだけで、 「引用元 primary entry へのリンク」 という contract が壊れる。
 2. **他の editorial エントリー** ( `article` / `analysis` / `biography` ) — chip が解説から別の解説へ飛ぶだけで、 元のメッセージに到達しない。
@@ -344,9 +344,19 @@ quotes:
   - Role D ( `*[補足：...]*` ): 別主題の隣接コンテクスト、 関連エントリーへの簡潔なポインタ ( 本文に書くと流れを切る場合 )
 - 真に補足的な内容 ( メタ的な編集方針宣言、 出典信頼性メモ、 「今後の調査で更新」 等の TODO ) は Role C / D 枠維持。
 
-**primary-source entries ( `correspondence` / `mailing-list` / `forum-post` / `whitepaper` / `bip` / `court-document` ) の場合:**
+**primary-source entries ( `correspondence` / `mailing-list` / `forum-post` / `whitepaper` / `bip` / `court-document` / `tweet` ) の場合:**
 
 「本文に編集者の語り手を混ぜない」 原則 ( `STYLE_GUIDE.md § Primary-Source Entries` ) を守るため、 短い編者注は Role C / D 枠維持、 長めのコンテクストは `editorNote:` ( Role A、 冒頭メタデータ ) に移行。 本文の地の文化はしない ( 一次資料に編集者の語り手を侵入させる事故になる )。
+
+**小説ページ補足は Role C / D ではなく、専用マーカーを使う。**
+
+小説ページへの導線として、小説内でその資料がどう扱われるかを説明する場合は
+`*[小説内での扱い：...]*` を使う。これは通常の `*[補足：...]*` ではなく、
+Archive 本文とは別レイヤーの小説導線として扱う。
+
+この枠内では小説由来の意味づけを書いてよい。ただし、枠内の内容は史実根拠ではなく、
+他の Archive 本文へ独立出典なしに再利用してはならない。枠外では通常どおり、
+小説内容禁止ルールと史実出典ルールを適用する。
 
 **過去事例:** dan-kaminsky の末尾「補足」 ( 関連事実: Black Hat 講演 / CoinDesk 2013 発言 / DNS 脆弱性 / 死去 ) を地の文化済 ( 2026-05-23 commit 2bf840d0 + ecaa3f2a )。 editorial entry での「本文相当の事実が枠に押し込まれている」 典型例。
 

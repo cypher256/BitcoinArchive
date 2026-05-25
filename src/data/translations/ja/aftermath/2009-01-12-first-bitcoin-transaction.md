@@ -26,7 +26,7 @@ relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - aftermath/2009-01-08-satoshi-to-finney-release
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
-  - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
+  - tweets/hal-finney/2009-01-11-running-bitcoin
   - aftermath/2009-01-11-dustin-trammell-biography
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"

@@ -142,12 +142,13 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
         participants={entry.data.participants}
         tags={entry.data.tags}
         inlineLinkKeywords={entry.data.inlineLinkKeywords}
+        xHandle={entry.data.xHandle}
         updatedAt={updatedAt}
         createdAt={createdAt}
       />
     </header>
 
-    {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document'].includes(entry.data.type) && (
+    {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document', 'tweet'].includes(entry.data.type) && (
       <CommentaryLinks lang={lang} entryId={entry.id} entryType={entry.data.type} />
     )}
 

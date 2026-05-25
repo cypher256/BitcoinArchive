@@ -8,6 +8,7 @@ const typeEnum = z.enum([
   'correspondence',
   'whitepaper',
   'bip',
+  'tweet',
   'article',
   'biography',
   'court-document',
@@ -36,6 +37,10 @@ const entrySchema = z.object({
   sourceUrl: z.string().url(),
   sourceNote: z.string().optional(),
   sourceStatus: z.enum(['available', 'archived', 'unavailable']).default('available'),
+  // X (Twitter) handle for type: tweet entries. Bare handle without
+  // the leading "@" (e.g. "halfin", "CobraBitcoin"). EntryMeta renders
+  // it as a linked "@handle" badge next to the byline.
+  xHandle: z.string().optional(),
   author: z.string(),
   participants: z.array(participantSchema).default([]),
   description: z.string(),

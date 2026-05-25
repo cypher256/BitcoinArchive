@@ -24,11 +24,19 @@ secondarySources:
     url: "https://cryptoslate.com/why-adam-backs-thinks-bitcoins-20-year-quantum-runway-matters-more-than-todays-headlines/"
 relatedEntries:
   - analysis/2026-05-18-bitcoin-quantum-threat
+  - tweets/adam-back/2025-11-15-quantum-threat-timeline
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2025-11-15T00:00:00Z"
+    sourceEntryId: "tweets/adam-back/2025-11-15-quantum-threat-timeline"
 translationStatus: complete
 ---
 
-おそらく 20〜40年は来ない。来るとしても。それにポスト量子署名はある。NIST が去年 SLH-DSA を標準化した。ビットコインは時間をかけて追加できる。評価が続く中で量子耐性を備え、暗号学的に意味のある量子コンピューターが到着するはるか前に準備を整えられる。
+量子研究の進展によりビットコインが危険にさらされているかという質問に対し、 [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は X に投稿した:
 
-— @adam3us、2025 年 11 月 15 日、量子研究の進展によりビットコインが危険にさらされているかという質問に対する返答
+<!-- quote: q1 -->
+> おそらく 20〜40 年は来ない。 来るとしても。 それにポスト量子署名はある。 NIST が去年 SLH-DSA を標準化した。 ビットコインは時間をかけて追加できる。 評価が続く中で量子耐性を備え、 暗号学的に意味のある量子コンピューターが到着するはるか前に準備を整えられる。
 
-[バック](/BitcoinArchive/ja/participants/adam-back/)は量子脅威を、数十年の猶予がある解決可能なエンジニアリング問題として再定義した。ジェイムソン・ロップが起草した Bitcoin Improvement Proposal 360（BIP-360）は、NIST が標準化したアルゴリズムを使用した量子耐性のあるアウトプットへの段階的移行を概説している。2025 年時点で、最も高性能な量子システムでさえ、ビットコインの楕円曲線署名に対してショアのアルゴリズムを実行するのに必要な閾値をはるかに下回っている。
+バックは量子脅威を、 数十年の猶予がある解決可能なエンジニアリング問題として再定義した。 ジェイムソン・ロップが起草した Bitcoin Improvement Proposal 360 (BIP-360) は、 NIST が標準化したアルゴリズムを使用した量子耐性のあるアウトプットへの段階的移行を概説している。 2025 年時点で、 最も高性能な量子システムでさえ、 ビットコインの楕円曲線署名に対してショアのアルゴリズムを実行するのに必要な閾値をはるかに下回っている。

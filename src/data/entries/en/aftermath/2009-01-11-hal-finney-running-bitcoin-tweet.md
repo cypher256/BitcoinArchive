@@ -25,7 +25,7 @@ relatedEntries:
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - aftermath/2009-01-08-satoshi-to-finney-release
   - aftermath/2009-01-09-bitcoin-v01-released
-  - correspondence/hal-finney/2009-01-11-first-bitcoin-transaction
+  - tweets/hal-finney/2009-01-11-running-bitcoin
   - aftermath/2009-01-12-first-bitcoin-transaction
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
@@ -35,6 +35,7 @@ quotes:
     person: "Hal Finney"
     personSlug: "hal-finney"
     date: "2009-01-11T06:33:00Z"
+    sourceEntryId: "tweets/hal-finney/2009-01-11-running-bitcoin"
 ---
 
 On January 10, 2009, at 10:33 PM Pacific Time (06:33 UTC on January 11), [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted two words to Twitter:
@@ -53,3 +54,5 @@ At the moment the tweet was posted, the known Bitcoin network shifted from one n
 Two days later, on January 12, 2009, [the first Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) crossed the network: Satoshi sent ten BTC (TX `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`) from his node to Finney's. The tweet had made the precondition for that send visible — a second operator, named, reachable, running the same software — without itself causing it.
 
 The tweet was two words. Finney's documented involvement with Bitcoin extended from that moment for five and a half years, until his death in 2014 from ALS. The shortest declaration any non-Satoshi participant made about the system sits at the entrance of one of the longest and best-documented engagements with Bitcoin in its early history.
+
+*[Context: Hal Finney's "Running bitcoin" is one of the named scenes in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the first signal, from the second node operator, that the protagonist's system was no longer his alone.]*

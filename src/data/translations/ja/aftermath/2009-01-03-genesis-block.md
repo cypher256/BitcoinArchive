@@ -58,3 +58,5 @@ translationStatus: complete
 ```
 
 なぜジェネシスがハードコードなのか、なぜコインベースが動かせないのか、なぜ次のブロック（ブロック 1）が 10 分目標にもかかわらず 5 日後に出現するのか ― 構造的読みは[ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)を参照。同じ 5 日のギャップを扱った [2024 年 Bitcoin Magazine の整理](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)と並べて読むとよい。
+
+*[補足：ジェネシスブロックのコインベースに刻まれたタイムズの見出しは、 小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』 で、 公の場では一度も感情を見せなかった主人公が残した唯一の例外として読まれる。]*

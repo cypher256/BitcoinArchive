@@ -26,12 +26,20 @@ secondarySources:
 relatedEntries:
   - "aftermath/2021-06-28-cobra-biography"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "tweets/cobra/2021-06-28-whitepaper-ruling-response"
+quotes:
+  - id: "q1"
+    person: "Cobra"
+    personSlug: "cobra"
+    date: "2021-06-28T00:00:00Z"
+    sourceEntryId: "tweets/cobra/2021-06-28-whitepaper-ruling-response"
 ---
 
-All your fiat based assets are ultimately secured by the same legal system that today made it illegal for me to host the Bitcoin whitepaper because a notorious liar swore before a judge that he's Satoshi. A system where 'justice' depends on who's got the bigger wallet.
+Hours after the London High Court issued a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper, [Cobra](/BitcoinArchive/participants/cobra/) posted on X:
 
-I don't think you could get a better advertisement of *why* Bitcoin is necessary than what happened today. Rules enforced through cryptography are far more superior than rules based on whoever can spend hundreds of thousands of dollars in court.
+<!-- quote: q1 -->
+> All your fiat based assets are ultimately secured by the same legal system that today made it illegal for me to host the Bitcoin whitepaper because a notorious liar swore before a judge that he's Satoshi. A system where 'justice' depends on who's got the bigger wallet.
+>
+> I don't think you could get a better advertisement of *why* Bitcoin is necessary than what happened today. Rules enforced through cryptography are far more superior than rules based on whoever can spend hundreds of thousands of dollars in court.
 
-— @CobraBitcoin, June 28, 2021
-
-Cobra posted this on Twitter hours after the London High Court issued a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper. He had chosen to lose the case rather than reveal his identity. Despite the court order, the whitepaper remained on bitcoin.org. In March 2024, the UK High Court ruled in COPA v. Wright that Craig Wright is not Satoshi Nakamoto, rendering the 2021 judgment meaningless.
+Cobra had chosen to lose the case rather than reveal his identity. Despite the court order, the whitepaper remained on bitcoin.org. In March 2024, the UK High Court ruled in COPA v. Wright that Craig Wright is not Satoshi Nakamoto, rendering the 2021 judgment retroactively meaningless.

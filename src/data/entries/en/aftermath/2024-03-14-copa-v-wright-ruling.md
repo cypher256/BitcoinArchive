@@ -41,3 +41,5 @@ On March 14, 2024, Justice Mellor of the UK High Court delivered a landmark ruli
 4. Dr. Wright did not author the initial versions of the Bitcoin software.
 
 The judge concluded that the evidence overwhelmingly showed Dr. Wright had engaged in deliberate and extensive forgery of documents to support his false claim of being Satoshi Nakamoto.
+
+*[Context: The High Court ruling that Craig Wright is not Satoshi Nakamoto opens the present-day frame chapter of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the courtroom where "the false Satoshi" is judged is one of the interleaved timelines the novel weaves with the protagonist's own 2007–2011 record.]*

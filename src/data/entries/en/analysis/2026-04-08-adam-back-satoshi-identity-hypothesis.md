@@ -60,6 +60,13 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - tweets/adam-back/2026-04-08-response-to-nyt-investigation
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "2026-04-08T00:00:00Z"
+    sourceEntryId: "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
 inlineLinkKeywords:
   - "Adam Back hypothesis"
   - "Back = Satoshi"
@@ -131,7 +138,10 @@ Distinct from §2.2 (the Hashcash-author = Bitcoin-author forensic-fit argument)
 | 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
 | 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
 
-In Back's own retrospective framing in the [April 2026 X post](https://x.com/adam3us/status/2041811857732768148) responding to the NYT investigation: "I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash."
+In Back's own retrospective framing, posted on X in April 2026 in response to the NYT investigation:
+
+<!-- quote: q1 -->
+> I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash.
 
 The strength of the argument: this is documented, primary-source-verifiable, decade-long pre-Bitcoin engagement with the exact design space Bitcoin would occupy — proof-of-work as a digital-cash minting mechanism. Back identified Moore's-Law inflation pressure (issue ❶) ten years before Bitcoin's difficulty-adjustment algorithm resolved it. Back enumerated "hashcash as a minting mechanism for b-money" in a 2002 paper.
 

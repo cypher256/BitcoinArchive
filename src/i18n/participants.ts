@@ -8,6 +8,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'billy-markus': 'ビリー・マーカス',
   'charlie-lee': 'チャーリー・リー',
   'cobra': 'Cobra',
+  'wikileaks': 'WikiLeaks',
   'copa': 'COPA',
   'craig-wright': 'クレイグ・ライト',
   'dan-geer': 'ダン・ギア',

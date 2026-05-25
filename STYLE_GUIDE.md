@@ -154,13 +154,22 @@ references.
 
 The archive's entry types split into two groups:
 
-- **Primary-source types** (6) — `correspondence`, `mailing-list`,
-  `forum-post`, `bip`, `whitepaper`, `court-document`. The body holds
-  the verbatim source content. Rules in
+- **Primary-source types** (7) — `correspondence`, `mailing-list`,
+  `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`. The
+  body holds the verbatim source content. Rules in
   [§ Primary-Source Entries](#primary-source-entries) apply.
 - **Editorial types** (3) — `article`, `analysis`, `biography`. The
   body is Bitcoin Institute's own writing about the subject. This
   section governs them.
+
+Tweets (`type: tweet`) are X / Twitter posts archived verbatim under
+`src/data/entries/en/tweets/<author-slug>/<date>-<short-slug>.md`.
+The entry frontmatter carries an `xHandle` field (bare handle without
+the leading "@", e.g. `halfin`, `CobraBitcoin`), enforced by
+`scripts/check-tweet-metadata.mjs` and rendered as a linked "@handle"
+badge in EntryMeta. Editorial commentary about a tweet lives in a
+separate `type: article` entry under `aftermath/` that quotes the
+primary via `quotes[].sourceEntryId`.
 
 The split is hard: a body composed of editor narrative belongs in an
 editorial type, and a body composed of verbatim source content belongs
@@ -251,7 +260,7 @@ the editorial voice.
 
 | Type group | `author` holds | On-page byline (`EntryMeta`) | List card byline (`EntryCard`) | OG / JSON-LD `article:author` |
 |---|---|---|---|---|
-| Primary-source (6) | the actual writer (email sender, forum poster, BIP author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
+| Primary-source (7) | the actual writer (email sender, forum poster, BIP author, tweet author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
 | `article` / `analysis` | the **subject** the entry is about (the person, document, or event the editorial reading covers) — falls back to `"Bitcoin Institute"` when no single subject exists (see exception below) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject, or `"Bitcoin Institute"` for no-single-subject entries) | **Bitcoin Institute** (forced by type) |
 | `biography` | the **subject of the biography** (the person whose biography this is) | (no `/entries/{id}/` page; biography renders inside the participant page, where no byline is shown) | `author` verbatim (subject) | (no entry page; participant page handles its own metadata) |
 
@@ -662,11 +671,13 @@ following roles a given line plays:
 5. Quotation metadata inside or adjacent to a blockquote
 6. Original-poster edit notes that are part of the source record (not
    Archive editor notes)
+7. Novel-page context notes that deliberately bridge Archive material
+   to the project novel
 
 Each role has exactly one canonical form. Anything else is to be
 normalized.
 
-### The six roles and their canonical forms
+### The seven roles and their canonical forms
 
 | Role | Description | EN canonical | JA canonical | Position |
 |---|---|---|---|---|
@@ -676,6 +687,7 @@ normalized.
 | **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography)) | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
 | **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
+| **G** | Novel-page context note | `*[Novel context: ...]*` | `*[小説内での扱い：...]*` | italic + brackets; a fenced navigation/interpretation exception |
 
 ### Rules
 
@@ -689,11 +701,14 @@ normalized.
    to `secondarySources[].note` or to (D) during normalization.
 4. (C) and (D) require the label prefix. Unlabeled `*[...]*` is
    forbidden.
-5. (A) is for entry-wide commentary (one box per entry). For local
+5. (G) is a fenced exception. It is not interchangeable with
+   `*[Context: ...]*` / `*[補足：...]*`; ordinary historical context must
+   stay in (D).
+6. (A) is for entry-wide commentary (one box per entry). For local
    commentary, use (C) inline.
-6. Bold-label forms (`**Source:**`, `**Note:**`, `**Editor:**`,
+7. Bold-label forms (`**Source:**`, `**Note:**`, `**Editor:**`,
    `**Author:**` as an editor marker) are forbidden.
-7. Plain-bracket forms (`[Source: ...]`, `[Note: ...]`) are forbidden.
+8. Plain-bracket forms (`[Source: ...]`, `[Note: ...]`) are forbidden.
 8. Dash-trailer forms (`— Source: ...`, `-- Source: ...`) are
    forbidden.
 9. Bracketed source-attribution forms (`*[Source: ...]*`,
@@ -1934,6 +1949,27 @@ Any factual claim about a real person — direct quote, reported speech, narrate
 **Mandatory verification step (not optional).**
 
 Before writing any factual claim about a real person — in any form — explicitly name the source (a URL, an `sourceUrl` field, a `secondarySources` entry, or a named primary record) and confirm the claim appears at that source. This is a required procedural step, not a principle to apply when in doubt. Extended exposure to narrative reconstructions (novels, dramatizations, documentaries, AI-generated biographical prose) blurs the boundary between fictional and historical content **in both directions** — you may import fiction as fact, or flag a real quote as fabricated. The "does this feel canonical" instinct becomes unreliable in both directions. The verification step exists precisely because that instinct fails. If you cannot perform the verification, drop the claim entirely — do not try to rescue it by paraphrase or by removing quotation marks.
+
+**Novel-page context notes are a fenced exception.**
+
+A short `*[Novel context: ...]*` block may describe how the current
+source is used, framed, or echoed in the project novel
+[*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/).
+
+This is a deliberately fenced exception to the no-novel-content rule.
+The block is not historical evidence, not an Archive factual claim, and
+not a source for any other entry. It exists only as a reader-navigation
+bridge from an Archive entry to the novel page.
+
+Rules:
+
+- The block must start with `*[Novel context:`.
+- It must link to `/BitcoinArchive/novel/`.
+- Novel-derived framing is allowed inside this block only.
+- Claims inside this block must not be reused elsewhere in Archive prose
+  unless independently sourced.
+- Outside this block, the normal no-novel-content and factual-source
+  rules apply in full.
 
 ## Layout Width Policy
 
