@@ -81,6 +81,32 @@ Any single Satoshi-identity hypothesis must reconcile six independent layers of 
 
 This entry answers "how did Satoshi stay anonymous." Two companion entries handle the adjacent questions: the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) ("who is Satoshi") and the [identification asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) ("given so much surviving material, why does the gap persist").
 
+**The six-layer wall (overview)**
+
+```mermaid
+flowchart TD
+  ID["Any Satoshi-identity hypothesis<br/>(must reconcile all 6 layers)"]
+  L1["§1 Pseudonym (naming)<br/>Japanese-form name<br/>no national pointer"]
+  L2["§2 Channels (media)<br/>3 anonymous emails<br/>5 publication channels"]
+  L3["§3 Linguistic + temporal<br/>British register<br/>timezone-spread posting"]
+  L4["§4 Dev + distribution (technical)<br/>Windows-only build<br/>.rar / GnuPG MingW32"]
+  L5["§5 Genesis-block constants<br/>(origin de-attribution)<br/>no provable creator<br/>5-day gap"]
+  L6["§6 Staged withdrawal (handover)<br/>Sep 2010 → Apr 2011<br/>gradual not abrupt"]
+  ANON(("Non-identification<br/>2008 - present"))
+  ID -.must displace.-> L1
+  ID -.must displace.-> L2
+  ID -.must displace.-> L3
+  ID -.must displace.-> L4
+  ID -.must displace.-> L5
+  ID -.must displace.-> L6
+  L1 ==> ANON
+  L2 ==> ANON
+  L3 ==> ANON
+  L4 ==> ANON
+  L5 ==> ANON
+  L6 ==> ANON
+```
+
 ## 1. The pseudonym (naming layer)
 
 A Japanese-form pseudonym was chosen rather than a Western personal name, an obviously technical handle, or an explicitly anonymous alias. The choice falls inside an identifiable symbolic space already pre-loaded in late-1990s and early-2000s anglophone speculative fiction and hacker culture, where networked anonymity was routinely figured through East Asian (and specifically Japanese) visual and naming registers — a structural observation treated in detail in the [techno-orientalism reading of the pseudonym](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/).

@@ -67,6 +67,32 @@ Bitcoin's 2015-2017 fork wars produced four hard-fork attempts on the main chain
 
 The reading offered here is structural. Three conditions present in 2014-2017 Bitcoin — a vacuum of designated authority, the economic weight that had accumulated on rule decisions, and a three-layer separation between the protocol, the software, and the live currency network — together made it structurally impossible for a disagreement on a load-bearing parameter to remain a software question. The naming asymmetry covered in the rebrand analysis is the lexical instrument by which these conditions expressed themselves. The conditions themselves are what this entry reads.
 
+**Authority transition + fork attempts + chain splits (2010 - 2018)**
+
+```mermaid
+gantt
+    title Bitcoin governance and fork timeline
+    dateFormat YYYY-MM-DD
+    axisFormat %Y-%m
+
+    section Authority
+    Andresen lead-maintainer announcement :milestone, 2010-12-19, 0d
+    Satoshi final email (alert-key handover) :milestone, 2011-04-26, 0d
+    Bitcoin Core rebrand merged :milestone, 2013-12-16, 0d
+    Wladimir van der Laan takes maintainership :milestone, 2014-04-07, 0d
+    Blockstream founded :milestone, 2014-11-01, 0d
+
+    section Fork attempts (no split)
+    Bitcoin XT :2015-08-15, 365d
+    Bitcoin Classic :2016-02-10, 240d
+    Bitcoin Unlimited :2016-01-01, 540d
+    SegWit2x agreement → cancelled :2017-05-23, 169d
+
+    section Chain splits
+    Bitcoin Cash chain split :milestone, 2017-08-01, 0d
+    Bitcoin SV fork :milestone, 2018-11-15, 0d
+```
+
 ## 1. The vacuum after April 2011 (the precondition, not the result)
 
 A common reading places Satoshi's departure inside the war's emotional shape — "no wonder he left, with all this fighting." The chronology says the opposite:
@@ -108,6 +134,20 @@ When a load-bearing parameter (block size, fee market, soft-fork activation poli
 ## 3. The three layers that bind
 
 This is the conceptual point that distinguishes Bitcoin from an ordinary open-source project. Three things share the name "Bitcoin":
+
+```mermaid
+flowchart LR
+  N(("Name<br/>'Bitcoin'"))
+  P["Protocol<br/>consensus rules<br/>(longest chain, 21M cap)"]
+  S["Software<br/>Bitcoin Core +<br/>XT / Classic / Unlimited / ABC"]
+  C["Network / currency<br/>live chain, nodes,<br/>miners, exchanges, holders"]
+  N --> P
+  N --> S
+  N --> C
+  P --- S
+  S --- C
+  P --- C
+```
 
 | Layer | What it is |
 |---|---|

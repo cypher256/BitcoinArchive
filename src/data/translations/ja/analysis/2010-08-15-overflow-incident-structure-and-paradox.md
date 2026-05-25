@@ -74,6 +74,28 @@ translationStatus: complete
 
 機構は機能した。機構の代償は明確に開示された。両方が構造的な記録に属する。
 
+**事件のタイムライン (UTC)**
+
+```mermaid
+gantt
+    title 2010-08-15 / 16 オーバーフロー事件
+    dateFormat YYYY-MM-DD HH:mm
+    axisFormat %m-%d %H:%M
+
+    section 不正チェーン
+    不正トランザクションのブロードキャスト :2010-08-15 17:05, 40m
+    ブロック 74638 採掘 (1,840 億 BTC) :crit, 2010-08-15 17:45, 23m
+
+    section 対応
+    Garzik 最初の警告投稿 :milestone, 2010-08-15 18:08, 0m
+    サトシによる v0.3.10 パッチ開発 :active, 2010-08-15 18:08, 340m
+    v0.3.10 リリース (topic-827) :milestone, 2010-08-15 23:48, 0m
+
+    section 復旧
+    信用停止窓 (サトシのアラート) :crit, 2010-08-15 17:05, 16h
+    ブロック 74691 — 正規チェーン確定 :milestone, 2010-08-16 09:00, 0m
+```
+
 ## 2. 5 時間対応窓 — それは再現できない条件下でのみ成立した
 
 [ガージックの第一警告投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/)は BitcoinTalk topic-822 で 18:08 UTC 付。サトシの [bitcoin-0.3.10 リリース告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/)は topic-827 で 23:48 UTC 付。公開発見からビルド済み・署名済み・ダウンロード可能なソフトフォーク・リリースまで 5 時間 40 分 — Windows・Linux・macOS 各 SourceForge バイナリつきで。

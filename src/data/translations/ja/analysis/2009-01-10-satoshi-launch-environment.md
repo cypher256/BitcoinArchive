@@ -70,6 +70,27 @@ translationStatus: complete
 
 2009 年 1 月 8 日から 12 日の 5 日間に、サトシは少なくとも 4 件の公開投稿を行い、そのうち 3 件はソフトウェアリリースだった:
 
+**ローンチ週イベント密度 (UTC)**
+
+```mermaid
+gantt
+    title Bitcoin v0.1 ローンチ週 (2009 年 1 月 8 〜 12 日 UTC)
+    dateFormat YYYY-MM-DD HH:mm
+    axisFormat %m-%d %H:%M
+
+    section リリース
+    v0.1 (暗号学 ML) :milestone, 2009-01-08 19:27, 0m
+    v0.1.2 (bitcoin-list) :milestone, 2009-01-11 22:32, 0m
+    v0.1 Alpha release notes :milestone, 2009-01-12 20:20, 0m
+    v0.1.3 (bitcoin-list) :milestone, 2009-01-12 22:48, 0m
+
+    section チェーン
+    ブロック 1 採掘 :milestone, 2009-01-09 02:54, 0m
+
+    section メール
+    "from where I am" フィニー宛 :milestone, 2009-01-10 12:00, 0m
+```
+
 | UTC タイムスタンプ | 出来事 | チャンネル |
 |---|---|---|
 | 2009-01-08 19:27 | [Bitcoin v0.1 リリース告知](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) | 暗号学メーリングリスト |

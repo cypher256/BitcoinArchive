@@ -70,6 +70,27 @@ The clause we focus on is **"from where I am"**.
 
 Between Jan 8 and Jan 12, 2009 — a five-day window — Satoshi made at least four public posts, including three software releases:
 
+**Launch-week event density (UTC)**
+
+```mermaid
+gantt
+    title Bitcoin v0.1 launch week (Jan 8 - 12, 2009 UTC)
+    dateFormat YYYY-MM-DD HH:mm
+    axisFormat %m-%d %H:%M
+
+    section Releases
+    v0.1 (cryptography ML) :milestone, 2009-01-08 19:27, 0m
+    v0.1.2 (bitcoin-list) :milestone, 2009-01-11 22:32, 0m
+    v0.1 Alpha release notes :milestone, 2009-01-12 20:20, 0m
+    v0.1.3 (bitcoin-list) :milestone, 2009-01-12 22:48, 0m
+
+    section Chain
+    Block 1 mined :milestone, 2009-01-09 02:54, 0m
+
+    section Private
+    "from where I am" email to Finney :milestone, 2009-01-10 12:00, 0m
+```
+
 | UTC timestamp | Event | Channel |
 |---|---|---|
 | 2009-01-08 19:27 | [Bitcoin v0.1 released](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) | cryptography mailing list |

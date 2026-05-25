@@ -74,6 +74,28 @@ The cost paid in exchange: a roughly 15-hour window (from block 74638 at 17:45 U
 
 The mechanism worked. The mechanism's cost was disclosed plainly. Both belong in the structural account.
 
+**Timeline of the incident (UTC)**
+
+```mermaid
+gantt
+    title 2010-08-15 / 16 overflow incident
+    dateFormat YYYY-MM-DD HH:mm
+    axisFormat %m-%d %H:%M
+
+    section Bad chain
+    Bad transaction broadcast :2010-08-15 17:05, 40m
+    Block 74638 mined (184B BTC) :crit, 2010-08-15 17:45, 23m
+
+    section Response
+    Garzik first-warning post :milestone, 2010-08-15 18:08, 0m
+    Satoshi develops v0.3.10 patch :active, 2010-08-15 18:08, 340m
+    v0.3.10 release (topic-827) :milestone, 2010-08-15 23:48, 0m
+
+    section Recovery
+    Trust-halt window (Satoshi alert) :crit, 2010-08-15 17:05, 16h
+    Block 74691 - good chain canonical :milestone, 2010-08-16 09:00, 0m
+```
+
 ## 2. The 5-hour response window and why it was unrepeatable
 
 [Garzik's first-warning post](/BitcoinArchive/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/) on BitcoinTalk topic-822 was timestamped 18:08 UTC. Satoshi's [bitcoin-0.3.10 release announcement](/BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/) on topic-827 was timestamped 23:48 UTC. That is a 5h 40m turnaround from public discovery to a built, signed, downloadable, soft-forking release — across SourceForge binaries for Windows, Linux, and macOS.

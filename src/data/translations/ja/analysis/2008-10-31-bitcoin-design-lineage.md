@@ -82,6 +82,45 @@ translationStatus: complete
 
 ## 2. 構成要素別の系譜
 
+**各構成要素の出自**
+
+```mermaid
+flowchart LR
+  subgraph s1["1. 開発期間中に使用"]
+    H["Hashcash<br/>(Back 1997)"]
+  end
+  subgraph s2["2. 後付けで引用"]
+    B["b-money<br/>(Wei Dai 1998)"]
+  end
+  subgraph s3["3. 汎用 CS 知識"]
+    M[マークルツリー]
+    HS[連鎖タイムスタンプ]
+    F[確率論]
+    E[ECDSA / secp256k1]
+  end
+  subgraph s4["4. 独自合成"]
+    LC["最長チェーン合意<br/>(PoW 加重)"]
+    U[UTXO モデル]
+    MR[マイニング報酬発行]
+    C[2,100 万通貨上限]
+    DA[難易度調整]
+    P[P2P 伝播]
+  end
+  BTC(("ビットコイン v0.1<br/>2009 年 1 月"))
+  H --> BTC
+  B --> BTC
+  M --> BTC
+  HS --> BTC
+  F --> BTC
+  E --> BTC
+  LC --> BTC
+  U --> BTC
+  MR --> BTC
+  C --> BTC
+  DA --> BTC
+  P --> BTC
+```
+
 | ビットコインの構成要素 | 引用文献 | 使用区分 | 注記 |
 |---|---|---|---|
 | プルーフ・オブ・ワーク | [6] Hashcash（バック 1997 年、2002 年改訂） | 開発中に使用 | 2008 年 8 月 20〜22 日のサトシ↔バックメールで確認 |
