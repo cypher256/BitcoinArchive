@@ -18,6 +18,7 @@ secondarySources:
 Search debug.log for "proof-of-work found".  If you find any, then check for any errors right after that.
 
 [Deleted] Quote from: davidonpda on August 19, 2010, 07:43:01 PM
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > How big of a margin on the time is allowed for things to work right.
 

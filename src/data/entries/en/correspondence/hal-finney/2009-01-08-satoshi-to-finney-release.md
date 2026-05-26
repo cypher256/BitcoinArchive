@@ -32,6 +32,7 @@ relatedEntries:
 
 *[Editor: header fields as preserved by Bitcoin.com's Satoshi Archive. The recipient address and Satoshi's sending address are redacted in the source.]*
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > From: Satoshi Nakamoto
 > To: Hal Finney

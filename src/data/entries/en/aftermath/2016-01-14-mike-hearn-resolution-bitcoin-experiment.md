@@ -59,6 +59,7 @@ Hearn argued that an "entirely artificial capacity cap of one megabyte per block
 
 Hearn quoted Satoshi's response to early bandwidth concerns:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "The bandwidth might not be as prohibitive as you think … if the network were to get [as big as VISA], it would take several years, and by then, sending [the equivalent of] 2 HD movies over the Internet would probably not seem like a big deal."
 
@@ -76,6 +77,7 @@ After praising Gavin's judgement — calling it one of the reasons Hearn had qui
 <!-- audit:quote-skip -->
 > "Only one tiny problem: Satoshi never actually asked Gavin if he wanted the job, and in fact he didn't."
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "So the first thing Gavin did was grant four other developers access to the code as well. These developers were chosen quickly in order to ensure the project could easily continue if anything happened to him. They were, essentially, whoever was around and making themselves useful at the time."
 
