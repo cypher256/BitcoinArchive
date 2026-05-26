@@ -23,7 +23,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Mike Hearn -->
-Satoshi さん、こんにちは。
+サトシさん、こんにちは。
 
 32.51 コインを送った。私のビットコインアドレスは 1JuEjh9znXwqsy5RrnKqgzqY4Ldg7rnj5n だ。
 

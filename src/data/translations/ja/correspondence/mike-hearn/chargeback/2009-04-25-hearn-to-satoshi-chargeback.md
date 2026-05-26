@@ -24,7 +24,7 @@ secondarySources:
 ---
 
 <!-- speaker: Mike Hearn -->
-こんにちは、Satoshi。
+こんにちは、サトシ。
 
 以下の Wiki ページを読んだところだ：
 

@@ -14,7 +14,7 @@ tags: []
 translationStatus: complete
 ---
 
-Bitcoin が JSON RPC over HTTP の仕様に準拠し、JSON-RPC 1.1/2.0 の仕様で標準化されたエラーコードを使用するようにするパッチを Satoshi に提出した。
+Bitcoin が JSON RPC over HTTP の仕様に準拠し、JSON-RPC 1.1/2.0 の仕様で標準化されたエラーコードを使用するようにするパッチをサトシに提出した。
 
 JSON-RPC コールで直接 Bitcoin と通信している場合、新しい HTTP ステータスコードと JSON レスポンスの'error'メンバーの新しいフォーマットを認識するようにコードを変更する必要があるかもしれない。例えば：
 

@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-このようなものの始まりを作っている。Gavin が説明したものとほとんど同じだ。
+このようなものの始まりを作っている。ギャビンが説明したものとほとんど同じだ。
 
 追加の RPC インターフェース：
 

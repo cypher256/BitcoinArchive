@@ -26,7 +26,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-Mike さん、こんにちは。
+マイクさん、こんにちは。
 
 ご質問にお答えできることを嬉しく思う。時間があれば、論文を補足する FAQ を書くべきだな。
 

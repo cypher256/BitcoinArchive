@@ -33,7 +33,7 @@ translationStatus: complete
 ダウンロード：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.13/](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.13/)
 
-（Mac OSX ビルドをしてくれた Laszlo に感謝！）
+（Mac OSX ビルドをしてくれたラズロに感謝！）
 
 注意：
 Linux 64 ビット版の SSE2 自動検出は、64 ビットモードの AMD では動作しない。代わりにこちらを試して、正しく動作するか知らせてほしい：

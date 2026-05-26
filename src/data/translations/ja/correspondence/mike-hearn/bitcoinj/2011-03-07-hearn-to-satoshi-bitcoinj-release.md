@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Mike Hearn -->
-Satoshi さん、こんにちは。
+サトシさん、こんにちは。
 
 お元気でいることを願っている。ようやく Google の弁護士全員を説得した。Apache 2 ライセンスで BitCoinJ を公開する：
 

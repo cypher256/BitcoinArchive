@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Freenode は目立ちすぎる。ユーザーやモデレーターが集まるど真ん中にある。Laszlo のオプションの方が私たちにはずっと適している。
+Freenode は目立ちすぎる。ユーザーやモデレーターが集まるど真ん中にある。ラズロのオプションの方が私たちにはずっと適している。
 
 freenode の代わりに irc.lfnet.org を使用する 0.3.0.RC2 を公開したので、切り替えたい方はどうぞ:
 [topic 199](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-199/2010-07-06-bitlex-msg2002/)

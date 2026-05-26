@@ -24,7 +24,7 @@ P2P 暗号通貨 Bitcoin、バージョン 0.3 をリリースする！Bitcoin �
 - トランザクションフィルタータブ
 - 20%高速なハッシング
 - ハッシュメーターパフォーマンス表示
-- Mac OS X バージョン（Laszlo に感謝）
+- Mac OS X バージョン（ラズロに感謝）
 - ドイツ語、オランダ語、イタリア語翻訳（DataWraith、Xunie、Joozero に感謝）
 
 [http://www.bitcoin.org](http://www.bitcoin.org) から入手するか、フォーラムを読んで詳しく知ってほしい。

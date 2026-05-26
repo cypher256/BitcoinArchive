@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-Laszlo のビルドが初の Mac リリースになるので、テストしてほしい！
+ラズロのビルドが初の Mac リリースになるので、テストしてほしい！

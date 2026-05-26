@@ -44,7 +44,7 @@ Satoshi Nakamoto<br>
 
 http://www.bitcoin.org/smf/ に新しいフォーラムもある。
 
-すべての開発作業をしてくれた Martti (sirius-m)に、そして Linux バージョンのテストを手伝ってくれた New Liberty Standard に、心より感謝する。
+すべての開発作業をしてくれたマルッティ (sirius-m)に、そして Linux バージョンのテストを手伝ってくれた New Liberty Standard に、心より感謝する。
 
 Satoshi Nakamoto
 

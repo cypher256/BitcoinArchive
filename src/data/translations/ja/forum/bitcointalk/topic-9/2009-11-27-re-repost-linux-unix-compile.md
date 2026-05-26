@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-Linux 版は準備中だ。Martti の Linux 移植版がメインコードブランチにマージされ、New Liberty Standard がテストを行っている。次のリリース、バージョン 0.2 に含まれる予定だ。
+Linux 版は準備中だ。マルッティの Linux 移植版がメインコードブランチにマージされ、New Liberty Standard がテストを行っている。次のリリース、バージョン 0.2 に含まれる予定だ。
 
 コマンドラインは 0.2 の後の To-Do リストに入っている。

@@ -26,7 +26,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Mike Hearn -->
-Satoshi さん、こんにちは。
+サトシさん、こんにちは。
 
 お元気でお過ごしのことと思う。最近、BitCoin がインターネット上の不正利用にどう対処できるかについて考えており、意見を聞かせてほしい。
 

@@ -179,7 +179,7 @@ Phase 2 全体で一貫したパターン: サトシは Linux ソースを読め
 | Drupal / Apache サーバー管理 | (本人主導、 ただし bitcoin.org 運用上の要件) | 2009-11〜 | [Drupal 関連メール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108/) |
 | ライセンス比較議論 (MIT / GPL / Boost / BSD / PD) | コミュニティ (Switch to GPL スレッド) | 2010-09 | [BitcoinTalk topic-989](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-989/2010-09-12-re-switch-to-gpl/) |
 | 「Linux 引継ぎ」 (自身の限界を承認) | ギャビン・アンドレセン (引継ぎ受け手) | 2010-12 | [後継選定メール](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/) |
-| Java / JVM エコシステム | マイク・ハーン (bitcoinj 公開告知) | 2011-03 | [Hearn → Satoshi bitcoinj リリース](/BitcoinArchive/ja/entries/correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release/) |
+| Java / JVM エコシステム | マイク・ハーン (bitcoinj 公開告知) | 2011-03 | [ハーン → サトシ bitcoinj リリース](/BitcoinArchive/ja/entries/correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release/) |
 | Git 移行 (SourceForge SVN → GitHub) | ギャビン・アンドレセン (サトシ撤退後に実行) | 2011-09 | r252「Development has moved to github」 |
 
 パターンは一貫している: SVN、 Linux、 macOS、 autoconf、 GPL ライセンス比較、 Java、 Git のいずれも、 サトシが**能動的に持ち出した**ものではなく、 マルミ・ハニエツ・The Madhatter・ハーン・アンドレセンらが個別に持ち込んだ。 例外は Apache 設定 (本人主導) だが、 これは bitcoin.org 運用上の要件であり、 サトシの開発スタック自体への影響はない。 サトシの計算機世界の地平は、 ビットコイン以前は明らかに Windows / Microsoft 圏で完結していて、 Phase 2 以降はコミュニティに引き寄せられる形でその外側を一つずつ知っていったように見える。
@@ -188,6 +188,7 @@ Phase 2 全体で一貫したパターン: サトシは Linux ソースを読め
 
 2010 年 12 月 3 日、 サトシはマルミに後継者にギャビン・アンドレセンを選んだ理由を説明する。 [後継選定メール](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)は、 サトシ書簡で Linux 軸上での自己位置づけが最も直接的に現れる箇所を含む:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「ギャビンにすべきだと思う。 信頼している、 責任感がある、 プロフェッショナルだ。 そして技術的に私よりずっと Linux に長けている。」
 

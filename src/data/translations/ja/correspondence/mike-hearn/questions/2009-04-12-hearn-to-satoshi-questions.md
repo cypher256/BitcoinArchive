@@ -29,7 +29,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Mike Hearn -->
-Satoshi さん、こんにちは。
+サトシさん、こんにちは。
 
 あなたの[ビットコインに関する論文](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を大変興味深く読んだ。しかし少し分かりにくいと感じた――いくつかの例を示してもらえれば、より理解しやすくなると思う。
 

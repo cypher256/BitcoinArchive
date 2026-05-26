@@ -59,6 +59,110 @@ function loadNameMap() {
 const NAME_MAP = loadNameMap();
 
 // -------------------------------------------------------------------------
+// First-name detection map
+//
+// Catches the case where JA prose uses a bare first name (e.g., "Gavin が…")
+// to refer to a mapped person whose full name (e.g., "Gavin Andresen") is
+// the canonical NAME_MAP entry. NAME_MAP only has full-string keys, so
+// `line.includes('Gavin Andresen')` does not fire when the JA text shortens
+// to just "Gavin" — that gap reaches readers as English-in-JA-prose.
+//
+// Derivation rules:
+//   - For each NAME_MAP entry whose key has ≥ 2 ASCII tokens AND the first
+//     token is a Capitalised English first name, extract that token and
+//     map it to the first katakana segment of the value (split on '・').
+//   - Skip honorifics (Dr / Sir / Mr / Mrs / Ms) that are not first names.
+//   - If two mapped people share a first name, the first one encountered
+//     wins for the katakana value (the violation still fires on the bare
+//     first name; resolution to the right person is left to the fixer).
+// -------------------------------------------------------------------------
+const FIRST_NAME_MAP = {};
+for (const [eng, kata] of Object.entries(NAME_MAP)) {
+  const parts = eng.split(/\s+/);
+  if (parts.length < 2) continue;
+  if (!/^[A-Z][a-z]+$/.test(parts[0])) continue;
+  if (['Dr', 'Sir', 'Mr', 'Mrs', 'Ms'].includes(parts[0])) continue;
+  const fnKata = kata.split('・')[0]; // first katakana segment
+  if (!FIRST_NAME_MAP[parts[0]]) FIRST_NAME_MAP[parts[0]] = fnKata;
+}
+
+// Pre-build the bare-first-name regex once.
+const FIRST_NAME_RE = new RegExp(
+  '\\b(' + Object.keys(FIRST_NAME_MAP).map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b',
+  'g',
+);
+
+const JA_CHAR_RE = /[぀-ゟ゠-ヿ一-鿿]/g;
+const ASCII_LETTER_RE = /[A-Za-z]/g;
+
+// -------------------------------------------------------------------------
+// First-name exception patterns — keep the bare first name in English.
+//
+// These match real-world JA writing conventions documented in earlier
+// audits; each pattern has at least one observed example in the corpus.
+//
+//   1. 「FN ...」 with majority-English content (UI label, English title)
+//   2. 『FN ...』 with majority-English content (cited paper / book title)
+//   3. Composite / brand: "Papa FN", "FN-Ray", "FN-Jr", "FN <Last>",
+//      "FN <Initial>. <Last>" (e.g., John J. Ray III)
+//   4. Etymology / handle wordplay: 合成語 / 造語 / 逆綴り / "(retep)"
+//   5. Implementation-name list: "(Satoshi、BitcoinJ、bitcoin-js)"
+//   6. Pull-quote line (starts with '>') with ≥ 2× English-to-JA letter ratio
+//   7. Multi-line UI label: prev line has unclosed 「, current line closes
+//      with 」 and FN is before that 」
+// -------------------------------------------------------------------------
+function isFirstNameExempt(line, prevLine, fn) {
+  const fnEsc = fn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // 1. 「...」 English-majority
+  for (const m of line.matchAll(/「([^」]*)」/g)) {
+    if (!m[1].includes(fn)) continue;
+    const ja = (m[1].match(JA_CHAR_RE) || []).length;
+    const en = (m[1].match(ASCII_LETTER_RE) || []).length;
+    if (en > 0 && en >= ja) return true;
+  }
+  // 2. 『...』 English-majority
+  for (const m of line.matchAll(/『([^』]*)』/g)) {
+    if (!m[1].includes(fn)) continue;
+    const ja = (m[1].match(JA_CHAR_RE) || []).length;
+    const en = (m[1].match(ASCII_LETTER_RE) || []).length;
+    if (en > 0 && en >= ja) return true;
+  }
+  // 3. Composite / brand
+  if (new RegExp(fnEsc + '[\\s.][A-Z]\\.?\\s?[A-Z]?[a-z]*').test(line)) return true;
+  if (new RegExp('Papa\\s' + fnEsc).test(line)) return true;
+  if (new RegExp(fnEsc + '-(Ray|Jr)\\b').test(line)) return true;
+  if (new RegExp('-' + fnEsc + '\\b').test(line)) return true;
+  // 4. Etymology / wordplay
+  if (/合成語|造語|逆綴り|逆\)/.test(line)) return true;
+  // 5. Implementation-name list "(FN、Other、…)"
+  if (new RegExp('\\(\\s*' + fnEsc + '\\s*[、,]\\s*[A-Z]').test(line)) return true;
+  // 6. Pull-quote line with ≥ 2× ASCII-letter dominance
+  if (line.trimStart().startsWith('>')) {
+    const ja = (line.match(JA_CHAR_RE) || []).length;
+    const en = (line.match(ASCII_LETTER_RE) || []).length;
+    if (en >= ja * 2) return true;
+  }
+  // 7a. Multi-line UI label, closing line: prev opened 「, current closes 」
+  if (prevLine && prevLine.includes('「') && !prevLine.includes('」') && line.includes('」')) {
+    const beforeClose = line.split('」')[0];
+    if (beforeClose.includes(fn)) return true;
+  }
+  // 7b. Multi-line UI label, opening line: current line has 「 with no
+  // matching 」 (the 」 lands on a following line). FN must appear after
+  // the last unmatched 「 on the line.
+  {
+    const opens = (line.match(/「/g) || []).length;
+    const closes = (line.match(/」/g) || []).length;
+    if (opens > closes) {
+      const lastOpen = line.lastIndexOf('「');
+      const fnIdx = line.indexOf(fn, lastOpen);
+      if (fnIdx > lastOpen) return true;
+    }
+  }
+  return false;
+}
+
+// -------------------------------------------------------------------------
 // Lines / patterns to skip (not body text)
 // -------------------------------------------------------------------------
 function isMetadataOrExcluded(line, inFrontmatter, inCodeBlock, inJaSection = false) {
@@ -200,6 +304,7 @@ for (const file of files) {
   let inFrontmatter = false;
   let frontmatterCount = 0;
   let inCodeBlock = false;
+  let prevLine = '';
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -208,12 +313,14 @@ for (const file of files) {
     if (!isAstro && line.trim() === '---') {
       frontmatterCount++;
       inFrontmatter = frontmatterCount < 2;
+      prevLine = line;
       continue;
     }
 
     // Track code blocks
     if (line.trim().startsWith('```')) {
       inCodeBlock = !inCodeBlock;
+      prevLine = line;
       continue;
     }
 
@@ -234,14 +341,18 @@ for (const file of files) {
           }
         }
       }
+      prevLine = line;
       continue;
     }
 
     // Skip non-body lines
     const inJaSection = isAstro && lineInJaSection(i + 1, jaRanges);
-    if (isMetadataOrExcluded(line, inFrontmatter, inCodeBlock, inJaSection)) continue;
+    if (isMetadataOrExcluded(line, inFrontmatter, inCodeBlock, inJaSection)) {
+      prevLine = line;
+      continue;
+    }
 
-    // Check body text
+    // Check body text — full-name match (existing logic)
     for (const [eng, kata] of Object.entries(NAME_MAP)) {
       if (line.includes(eng)) {
         violations.push({
@@ -254,6 +365,40 @@ for (const file of files) {
         });
       }
     }
+
+    // Check body text — bare first-name fallback. Strip mapped full names
+    // first so "James A. Donald" does not double-count as a "James" hit.
+    let stripped = line;
+    for (const eng of Object.keys(NAME_MAP)) {
+      if (stripped.includes(eng)) stripped = stripped.split(eng).join('');
+    }
+    // Must contain at least one JA character on the *original* line — pure
+    // ASCII lines are skipped by `isMetadataOrExcluded` above, but defend
+    // here in case that changes.
+    if (!JA_CHAR_RE.test(line)) {
+      JA_CHAR_RE.lastIndex = 0;
+      prevLine = line;
+      continue;
+    }
+    JA_CHAR_RE.lastIndex = 0;
+    FIRST_NAME_RE.lastIndex = 0;
+    let m;
+    const seenOnThisLine = new Set();
+    while ((m = FIRST_NAME_RE.exec(stripped)) !== null) {
+      const fn = m[1];
+      if (seenOnThisLine.has(fn)) continue;
+      seenOnThisLine.add(fn);
+      if (isFirstNameExempt(line, prevLine, fn)) continue;
+      violations.push({
+        file: path.relative(process.cwd(), file),
+        line: i + 1,
+        name: fn,
+        katakana: FIRST_NAME_MAP[fn],
+        context: line.trim().substring(0, 100),
+        type: 'first-name',
+      });
+    }
+    prevLine = line;
   }
 }
 

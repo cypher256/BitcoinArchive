@@ -26,7 +26,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Mike Hearn -->
-Satoshi さん、ありがとう。
+サトシさん、ありがとう。
 
 昨日アプリを試してみた。Wine 上でかなりうまく動いているようだ（MacOS で試したが、Linux でも動くはずなので、来週仕事に戻ったら試してみる）。
 

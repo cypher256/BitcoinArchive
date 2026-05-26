@@ -17,9 +17,9 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-バージョン 0.1.5 が公開された。Nicholas が経験した問題の修正、ディスク容量チェック、および混乱を招いていた点を改善するための変更が含まれている。
+バージョン 0.1.5 が公開された。ニコラスが経験した問題の修正、ディスク容量チェック、および混乱を招いていた点を改善するための変更が含まれている。
 
-Nicholas と Dustin の多大な協力とフィードバックに特別に感謝する！
+ニコラスとダスティンの多大な協力とフィードバックに特別に感謝する！
 
 ダウンロードリンク：<br>
 http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441

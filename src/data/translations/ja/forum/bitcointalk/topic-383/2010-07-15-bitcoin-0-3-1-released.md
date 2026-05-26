@@ -25,6 +25,6 @@ translationStatus: complete
 Windows
 - ユーザー名に ASCII 以外の文字が含まれている場合の 22DbRunRecoveryException の修正
 Linux
-- Laszlo による生成スレッドを最低優先度に下げる修正
+- ラズロによる生成スレッドを最低優先度に下げる修正
 - libcrypto のリンクに問題がある場合の修正
 - ギャビン・アンドレセンによる「ウィンドウシステム起動時に開始」オプションの実装
