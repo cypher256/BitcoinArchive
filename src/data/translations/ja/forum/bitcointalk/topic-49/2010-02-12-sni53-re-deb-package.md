@@ -24,4 +24,4 @@ translationStatus: complete
 
 配布物の Bitcoin バイナリは wxWidgets ライブラリを静的リンクしており、共有リンク（openssl と GTK）は Ubuntu に含まれているため、依存関係をダウンロードする.deb でなくても実行できる。
 
-UTF-8 のために wxWidgets 2.9.0 にアップグレードしているところで、これにはまだ DEB パッケージがないため、静的リンクを続ける必要がある。
+UTF-8 のために wxWidgets 2.9.0 にアップグレードしているが、これにはまだ DEB パッケージがないため、静的リンクを続ける必要がある。
