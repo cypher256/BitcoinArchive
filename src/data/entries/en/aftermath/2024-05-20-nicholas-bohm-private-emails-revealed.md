@@ -47,7 +47,6 @@ The trial exhibits indicate that Bohm and Satoshi exchanged direct emails about 
 - On **June 5, 2009**, Satoshi replied that Bohm should forward **port 8333** so his node could receive incoming connections, adding that if nobody online could accept inbound connections, nodes would fail to connect.
 - On **[July 18-19, 2009](/BitcoinArchive/entries/aftermath/2009-07-19-satoshi-to-bohm-nobody-running/)**, Bohm reported that Bitcoin had failed to establish connections "for the last day or so." Satoshi responded by asking whether Bohm's IP address had changed and noted:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "There may just not be anybody else running it right now."
 

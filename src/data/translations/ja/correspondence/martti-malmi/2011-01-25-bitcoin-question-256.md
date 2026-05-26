@@ -74,7 +74,6 @@ translationStatus: complete
 > -Martti
 >
 <!-- speaker: Constance J. Wells -->
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 >> Martti Malmi
 >> 現在フルタイムの学生だ -

@@ -35,13 +35,11 @@ After Laszlo Hanyecz announced his GPU mining discovery on the Bitcointalk forum
 
 Per Hanyecz's recall, Satoshi wrote:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > A big attraction to new users is that anyone with a computer can generate some free coins. GPUs would prematurely limit the incentive to only those with high-end GPU hardware. It's inevitable that GPU compute clusters will eventually hog all the generated coins, but I don't want to hasten that day.
 
 In a separate message Hanyecz recalls receiving, Satoshi was more direct:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > Hey, can you go slow with this? [...] Look, I don't care if people hoard the Bitcoin, I don't care if the wealth is concentrated. But right now, the big attraction is that anybody can download Bitcoin and start mining with their laptop.
 

@@ -39,13 +39,11 @@ In an interview published by Uncommons on April 15, 2025, P2P Foundation founder
 
 Bauwens said the exchange was limited but memorable:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "Satoshi wrote me a few times."
 
 According to Bauwens, one message explained why Satoshi wanted to publish the Bitcoin white paper on the P2P Foundation site. Another offered him a few bitcoins:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "And offering me a few bitcoins. Unfortunately I didn't answer that proposal."
 

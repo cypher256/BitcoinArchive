@@ -30,7 +30,6 @@ translationStatus: complete
 
 最も注目すべきは、サトシがこのやり取りで「暗号通貨（cryptocurrency）」という用語を紹介したことである：
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 誰かが「暗号通貨（cryptocurrency）」という言葉を思いついたらしい……ビットコインを説明する際に使えるかもしれない。どう思う？
 

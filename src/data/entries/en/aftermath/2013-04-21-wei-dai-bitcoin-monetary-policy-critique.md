@@ -44,7 +44,6 @@ Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/
 
 **On not responding to Satoshi's email:**
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."
 

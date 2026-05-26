@@ -29,7 +29,6 @@ On May 4, 2009, Malmi submitted his initial FAQ draft to Satoshi, covering topic
 
 Satoshi praised the FAQ but raised a critical concern about how Bitcoin was being positioned. In one of the most historically significant statements from these emails, Satoshi wrote:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > There are a lot of things you can say on the sourceforge site that I can't say on my own site ... Even so, I'm uncomfortable with explicitly saying 'consider it an investment'. That's a dangerous thing to say and you should delete that bullet point. It's OK if they come to that conclusion on their own, but we can't pitch it as that.
 

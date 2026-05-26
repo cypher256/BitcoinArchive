@@ -22,7 +22,6 @@ translationStatus: complete
 
 $(shell /usr/bin/wx-config)の問題の一つは、そこにたまたまあるどのバージョン（wx 2.8）やどの設定（非 UTF-8）の wxWidgets でも拾ってしまうことだ。-lwx_gtk2ud-2.9 は正しい設定にのみ一致する。wxWidgets が間違った設定でビルドされていると失敗する。
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 <!-- tone-skip -->
 > 思い出せば、freenodeの#wxwidgetsでチャットした時、そこの開発者はなぜそれが使われているのか困惑していました。
@@ -30,7 +29,6 @@ $(shell /usr/bin/wx-config)の問題の一つは、そこにたまたまある�
 
 なぜ困惑していたか言っていたか？
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 <!-- tone-skip -->
 > 私のシステムではパスが/usr/include/wx-2.9/wx/wx.hだからです

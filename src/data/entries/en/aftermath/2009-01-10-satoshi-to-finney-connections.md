@@ -32,7 +32,6 @@ relatedEntries:
 
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult.
 

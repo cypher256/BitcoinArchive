@@ -33,7 +33,6 @@ translationStatus: complete
 
 *[編者注：ヘッダー項目は Bitcoin.com のサトシ・アーカイブが保存している形式に従う。受信者アドレスとサトシの送信元アドレスは出典側で伏字化されている。]*
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 差出人：サトシ・ナカモト
 > 宛先：ハル・フィニー

@@ -19,7 +19,6 @@ translationStatus: complete
 ---
 
 From: Nicholas Bohm 2009-01-25 10:17
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > bitcoinを実行していていくつか問題があった。ここは問題を報告するのに
 > 適切なリストだろうか（約70kbの添付ファイル付きで）？

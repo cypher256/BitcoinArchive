@@ -62,7 +62,6 @@ translationStatus: complete
 
 ドキュメンタリーの中心的な証拠は、2010 年 12 月の [BitcoinTalk](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) でのやり取り。サトシがトランザクション置換 — 後に Replace-by-Fee として正式化される概念 — を説明した。その約 1 時間半後、トッド（ユーザー名「retep」、Peter の逆綴り）が技術的な指摘で返信した：
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「もちろん、正確に言えば、2 つ目のトランザクションに手数料がある場合、入力と出力は *正確には* 一致しない」
 

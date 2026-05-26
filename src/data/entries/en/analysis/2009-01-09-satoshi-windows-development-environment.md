@@ -184,7 +184,6 @@ The pattern is consistent: SVN, Linux, macOS, autoconf, GPL-vs-others license di
 
 On December 3, 2010, Satoshi writes to Malmi explaining the choice of Gavin Andresen as project successor. The [handover note](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) contains the most direct self-positioning on the Linux axis anywhere in Satoshi's correspondence:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "I think it should be Gavin. I trust him, he's responsible, professional, and technically much more Linux capable than me."
 

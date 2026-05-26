@@ -17,7 +17,6 @@ translationStatus: complete
 ---
 
 少し遅くなったが、同じ問題を抱えている人がいるかもしれないので。コンパイルのダンプには 2 つの警告（それぞれ 20 行の長さ）と 2 つのリンクエラーがあった。エラーは以下の通りだ:
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x13): In function `wxArrayString::Item(unsigned long) const':
 > /usr/local/include/wx-2.9/wx/buffer.h:42: undefined reference to `wxTheAssertHandler'

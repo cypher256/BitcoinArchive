@@ -40,13 +40,11 @@ translationStatus: complete
 
 ミシェル・バウエンスは、そのやり取りは濃密ではなかったが印象的だったと述べた。
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「サトシからは数回メールが来た」
 
 彼によれば、1 通はサトシがなぜ P2P Foundation のサイトにビットコイン論文を載せたかったのかを説明するものだった。さらに別の 1 通では、数ビットコインを送る提案もしていたという。
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「それに、数ビットコインを送ろうという提案もあった。残念ながら、その提案には返事をしなかった」
 

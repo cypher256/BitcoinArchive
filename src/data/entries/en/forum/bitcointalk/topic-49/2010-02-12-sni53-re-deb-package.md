@@ -16,7 +16,6 @@ secondarySources:
 ---
 
 [Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > If you want, I can provide you with a precompiled binary.
 

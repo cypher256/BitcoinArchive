@@ -48,7 +48,6 @@ translationStatus: complete
 - **2009年6月5日** 、サトシは **ポート 8333** を転送設定して、ノードが着信接続を受けられるようにすべきだと返信した。オンラインのノードが誰も着信を受けられなければ、接続できなくなるとも説明している。
 - **[2009年7月18日〜19日](/BitcoinArchive/ja/entries/aftermath/2009-07-19-satoshi-to-bohm-nobody-running/)** 、ニコラス・ボームは「ここ 1日ほど」接続が一切確立できないと報告した。これに対しサトシは、IP アドレスが変わったのではないかと尋ね、さらにこう述べた。
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「今、他に誰も実行していないだけかもしれない」
 

@@ -34,7 +34,6 @@ On December 3, 2010, Malmi asked Satoshi whether they should recruit someone to 
 
 Satoshi's response was clear and decisive:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me.
 

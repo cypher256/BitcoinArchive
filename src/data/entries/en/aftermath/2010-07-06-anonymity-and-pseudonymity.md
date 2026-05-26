@@ -27,13 +27,11 @@ secondarySources:
 
 In one of the most prescient exchanges in the correspondence, Satoshi warned Malmi about how Bitcoin's privacy properties were being described on the website and in promotional materials:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > I think we should de-emphasize the anonymous angle. With the popularity of bitcoin addresses instead of sending by IP, we can't give the impression it's automatically anonymous. It's possible to be pseudonymous, but you have to be careful.
 
 Satoshi elaborated on the potential consequences of overpromising privacy:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > If someone digs through the transaction history and starts exposing information people thought was anonymous, the backlash will be much worse if we haven't prepared expectations by warning in advance that you have to take precautions.
 

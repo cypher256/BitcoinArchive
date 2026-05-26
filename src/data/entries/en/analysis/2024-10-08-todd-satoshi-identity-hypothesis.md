@@ -62,7 +62,6 @@ The earliest public articulation of the hypothesis identified in this archive's 
 
 The documentary's central piece of evidence is a December 2010 exchange on [BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/). Satoshi described a transaction-replacement mechanism — what would later be formalized as Replace-by-Fee. Approximately 1.5 hours later, Todd (under the username "retep," his name spelled backwards) replied with a technical correction:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 

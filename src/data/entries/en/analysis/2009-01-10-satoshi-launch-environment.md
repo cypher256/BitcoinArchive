@@ -102,7 +102,6 @@ gantt
 
 In Satoshi's own words from the January 11 v0.1.2 announcement:
 
-<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "All the problems I've been finding are in the code that automatically finds and connects to other nodes, since I wasn't able to test it in the wild until now. There are many more ways for connections to get screwed up on the real Internet."
 
