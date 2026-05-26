@@ -27,6 +27,7 @@ secondarySources:
 
 [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s reply contained one of the most revealing admissions about Bitcoin's early fragility:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > There may just not be anybody else running it right now.
 

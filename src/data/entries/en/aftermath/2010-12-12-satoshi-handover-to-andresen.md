@@ -43,6 +43,7 @@ In late 2010, as Satoshi Nakamoto began stepping back from active involvement in
 
 This decision was consistent with what Satoshi had privately communicated to [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) on December 3, 2010, when asked who should take over development responsibilities:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me.
 

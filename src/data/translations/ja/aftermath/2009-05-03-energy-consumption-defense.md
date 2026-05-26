@@ -33,6 +33,7 @@ translationStatus: complete
 
 彼はこれが生み出す哲学的な緊張を認めた：
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 経済的自由と環境保全のどちらかを選ばなければならなくなるとしたら、皮肉なことだ。
 

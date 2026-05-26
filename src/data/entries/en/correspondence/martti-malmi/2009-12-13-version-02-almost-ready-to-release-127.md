@@ -22,6 +22,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > It's almost time to release version 0.2.  If you have a minute, could
 > you try this release candidate (attached)?  If there aren't any

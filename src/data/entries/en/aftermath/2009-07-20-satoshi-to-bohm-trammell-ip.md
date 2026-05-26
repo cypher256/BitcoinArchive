@@ -26,6 +26,7 @@ secondarySources:
 
 In a follow-up the next day, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) provided debugging information:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > I'm currently connected to 70.113.114.209 since yesterday.
 

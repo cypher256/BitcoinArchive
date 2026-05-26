@@ -23,6 +23,7 @@ secondarySources:
 
 Ok, that sounds reasonable.
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > I think we should de-emphasize the anonymous angle.  With the
 > popularity of bitcoin addresses instead of sending by IP, we can't give

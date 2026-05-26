@@ -26,6 +26,7 @@ One problem with $(shell /usr/bin/wx-config) is it will pick up any version (wx 
 
 Did they say why they were baffled? 
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > This is because on my system the path is /usr/include/wx-2.9/wx/wx.h
 

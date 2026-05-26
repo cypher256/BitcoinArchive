@@ -31,6 +31,7 @@ Satoshi argued that even if Bitcoin grew to consume significant energy, the cost
 
 He acknowledged the philosophical tension this created:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > Ironic if we end up having to choose between economic liberty and conservation.
 

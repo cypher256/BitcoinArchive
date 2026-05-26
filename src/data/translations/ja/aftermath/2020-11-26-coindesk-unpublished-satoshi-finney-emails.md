@@ -75,6 +75,7 @@ translationStatus: complete
 **メール 3：[2009年1月10日（または 12日）](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）**
 ビットコインローンチ後のフォローアップ：
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > 「残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。」
 

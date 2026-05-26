@@ -29,6 +29,7 @@ $(shell /usr/bin/wx-config)の問題の一つは、そこにたまたまある�
 
 なぜ困惑していたか言っていたか？
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 <!-- tone-skip -->
 > 私のシステムではパスが/usr/include/wx-2.9/wx/wx.hだからです

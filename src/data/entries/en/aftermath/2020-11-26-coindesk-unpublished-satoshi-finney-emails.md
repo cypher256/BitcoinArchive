@@ -74,6 +74,7 @@ This email was sent from `satoshi@vistomail.com`.
 **Email 3: [January 10 (or 12), 2009](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) (Satoshi → Finney)**
 A follow-up after Bitcoin's launch:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 
