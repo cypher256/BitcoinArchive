@@ -235,7 +235,7 @@ export const ui = {
     'entry.messages': '件のメッセージ',
     'entry.originalSource': '原文ソース',
     'entry.referenceSource': '関連ソース',
-    'entry.secondarySources': '他のアーカイブ',
+    'entry.secondarySources': '他の外部ソース',
     'entry.relatedSources': 'その他の関連ソース',
     'entry.noTranslation': 'このエントリーの日本語訳はまだありません。',
     'entry.viewOriginal': '原文を見る',
