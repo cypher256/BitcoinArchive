@@ -79,7 +79,7 @@ gantt
     アンドレセン リード保守者就任発表 :milestone, 2010-12-19, 0d
     サトシ最終メール (アラートキー引継ぎ) :milestone, 2011-04-26, 0d
     Bitcoin Core 改称マージ :milestone, 2013-12-16, 0d
-    ヴラジミル・ファン・デル・ラーン 保守者交代 :milestone, 2014-04-07, 0d
+    ファン・デル・ラーン 保守者交代 :milestone, 2014-04-07, 0d
     Blockstream 設立 :milestone, 2014-11-01, 0d
 
     section フォーク試行 (分裂なし)
@@ -140,7 +140,7 @@ flowchart LR
   N(("名前<br/>'ビットコイン'"))
   P["プロトコル<br/>合意ルール<br/>(最長チェーン、2,100 万上限)"]
   S["ソフトウェア<br/>Bitcoin Core +<br/>XT / Classic / Unlimited / ABC"]
-  C["ネットワーク／通貨<br/>稼働中のチェーン、ノード、<br/>マイナー、取引所、保有者"]
+  C["ネットワーク／通貨<br/>稼働中のチェーン<br/>ノード、マイナー<br/>取引所、保有者"]
   N --> P
   N --> S
   N --> C
