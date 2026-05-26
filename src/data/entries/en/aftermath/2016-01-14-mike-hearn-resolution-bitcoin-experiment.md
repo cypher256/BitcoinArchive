@@ -59,6 +59,7 @@ Hearn argued that an "entirely artificial capacity cap of one megabyte per block
 
 Hearn quoted Satoshi's response to early bandwidth concerns:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > "The bandwidth might not be as prohibitive as you think … if the network were to get [as big as VISA], it would take several years, and by then, sending [the equivalent of] 2 HD movies over the Internet would probably not seem like a big deal."
 

@@ -34,6 +34,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 ビットコインネットワークの最初期に送られたこのメールで、サトシは技術的な制約を明かした。
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > 残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。

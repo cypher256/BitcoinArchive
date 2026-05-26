@@ -28,6 +28,7 @@ In this email from June 11, 2009, Satoshi praised the improvements Malmi had mad
 
 Most notably, Satoshi introduced the term "cryptocurrency" in this exchange:
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > Someone came up with the word 'cryptocurrency'... maybe it's a word we should use when describing Bitcoin, do you like it?
 
