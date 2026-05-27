@@ -28,7 +28,7 @@ relatedEntries:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-新しい電子決済システムに取り組んでいる。完全な P2P 方式で、信頼された第三者を必要としない。
+新しい電子キャッシュシステムに取り組んでいる。完全な P2P 方式で、信頼された第三者を必要としない。
 
 論文はこちらで公開している：<br>
 http://www.bitcoin.org/bitcoin.pdf
