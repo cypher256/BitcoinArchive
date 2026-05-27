@@ -4,7 +4,7 @@ date: 2009-01-03T00:00:00Z
 type: "design"
 source: "bitcoin-pdf"
 sourceUrl: "https://bitcoin.org/bitcoin.pdf"
-author: "Satoshi Nakamoto"
+author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
