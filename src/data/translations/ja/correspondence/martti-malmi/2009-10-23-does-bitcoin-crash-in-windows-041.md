@@ -39,7 +39,7 @@ quotes:
 v0.1.5 でのクラッシュ報告は受けていない。Windows では非常に安定している。Wine に関連した問題だと思う。Wine でまたクラッシュしてターミナルに何か表示されたら、メールしてほしい。何が起きたか突き止められるかもしれないし、回避策を見つけられるかもしれない。マルッティと一緒に近くリリースする新しいバージョンに取り組んでいて、Wine の修正も入れられるといいんだけど。
 
 <!-- speaker: Liberty Standard -->
-> ビットコインを起動すると、ターミナルに以下の4行が表示される。
+> ビットコインを起動するとターミナルに以下の 4 行が出力される。
 > fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
 > fixme:toolhelp:Heap32ListFirst : stub
 > fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
