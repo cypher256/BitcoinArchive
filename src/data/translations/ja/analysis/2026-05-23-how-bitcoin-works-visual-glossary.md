@@ -33,6 +33,7 @@ relatedEntries:
   - "aftermath/2011-08-01-jihan-wu-biography"
   - "aftermath/2018-10-01-ray-dillinger-interview"
   - "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
+  - "design/2009-01-03-bitcoin-system-design-overview"
 inlineLinkKeywords:
   - "UTXO"
   - "UTXO モデル"

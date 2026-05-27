@@ -38,6 +38,7 @@ relatedEntries:
   - aftermath/2011-08-01-jihan-wu-biography
   - aftermath/2018-10-01-ray-dillinger-interview
   - aftermath/2011-04-26-satoshi-final-known-email
+  - design/2009-01-03-bitcoin-system-design-overview
 translationStatus: complete
 ---
 
