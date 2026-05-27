@@ -34,6 +34,7 @@ relatedEntries:
   - "aftermath/2018-10-01-ray-dillinger-interview"
   - "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
   - "design/2009-01-03-bitcoin-system-design-overview"
+  - "design/2009-01-03-bitcoin-transaction-design"
 inlineLinkKeywords:
   - "UTXO"
   - "UTXO モデル"
