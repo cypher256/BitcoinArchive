@@ -231,7 +231,7 @@ quotes:
 `quotes[].sourceEntryId` は primary-source 型のエントリー ( `correspondence` / `mailing-list` / `forum-post` / `bip` / `whitepaper` / `court-document` / `tweet` ) を指す必要がある。 以下は禁止:
 
 1. **エントリー自身** ( self-link ) — chip をクリックしても同じページに戻るだけで、 「引用元 primary entry へのリンク」 という contract が壊れる。
-2. **他の editorial エントリー** ( `article` / `analysis` / `biography` ) — chip が解説から別の解説へ飛ぶだけで、 元のメッセージに到達しない。
+2. **他の editorial エントリー** ( `article` / `analysis` / `biography` / `design` ) — chip が解説から別の解説へ飛ぶだけで、 元のメッセージに到達しない。
 
 引用元の primary entry が Archive にまだ存在しない場合は、 次のいずれか:
 
@@ -336,7 +336,7 @@ quotes:
 
 `STYLE_GUIDE.md § Editorial Markers` の Role C ( `*[編者注：...]*` ) と Role D ( `*[補足：...]*` ) を日本語エントリーで使うときの判断基準。 STYLE_GUIDE.md rule 13 ( 0523 編者注/補足 地の文化計画 ) と整合。
 
-**editorial entries ( `article` / `analysis` / `biography` ) の場合:**
+**editorial entries ( `article` / `analysis` / `biography` / `design` ) の場合:**
 
 - 本文相当の事実 ( 関連事実、 後日譚、 経歴、 続報、 現代価値換算、 節導入文 ) は **本文に地の文として書く**。 Role C / D 枠に押し込まない。
 - Role C / D 枠を使うのは:
@@ -1001,7 +1001,7 @@ timeline イベントラベルの例 (Satoshi biography から):
 言語非依存の規則 (本ファイルでは複製しない):
 
 - `STYLE_GUIDE.md § Core Distinction: Blockquotes vs Quotation Marks`
-- `STYLE_GUIDE.md § Primary-Source Entries` / `§ Editorial Entries (article / analysis / biography)`
+- `STYLE_GUIDE.md § Primary-Source Entries` / `§ Editorial Entries (article / analysis / biography / design)`
 - `STYLE_GUIDE.md § Translation Principle`
 - `STYLE_GUIDE.md § Consistency Rule`
 - `STYLE_GUIDE.md § Related Entries`

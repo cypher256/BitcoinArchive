@@ -54,7 +54,7 @@ const threadMessages = threadId
   : 0;
 const entryById = new Map(allEntries.map((e) => [e.id, e]));
 const commentaryThreadLinks = new Map<string, { id: string; messages: number }>();
-if (entry.data.type === 'article' || entry.data.type === 'analysis') {
+if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design') {
   for (const q of entry.data.quotes ?? []) {
     if (!q.sourceEntryId) continue;
     const sourceEntry = entryById.get(q.sourceEntryId);
@@ -93,7 +93,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
 // analysis writing). Other types keep frontmatter.date as the
 // published time. modifiedTime is the git-history updatedAt for all
 // types when available.
-const isAnalysis = entry.data.type === 'analysis';
+const isAnalysis = entry.data.type === 'analysis' || entry.data.type === 'design';
 const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
 const ogModifiedTime = updatedAt ?? entry.data.date;
 // OG / JSON-LD author. For editorial types the frontmatter `author`
@@ -102,7 +102,7 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
 // The on-page byline in EntryMeta forces "Bitcoin Institute" for the
 // same reason; mirror that forcing here so structured-data and OGP
 // metadata cite the actual writer of the content, not the subject.
-const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis';
+const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design';
 const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 ---
 

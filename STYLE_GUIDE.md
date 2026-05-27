@@ -1694,7 +1694,7 @@ them out across the archive.
 
 **Concept keywords** — declared via `inlineLinkKeywords` in the
 frontmatter of an editorial entry (`type: analysis` / `article` /
-`biography`). Link target is the entry itself
+`biography` / `design`). Link target is the entry itself
 (`/{locale}/entries/{entry-id}/`).
 
 ```yaml
@@ -2129,7 +2129,7 @@ diagram is small; the cost of losing a reader halfway through a
 `court-document`. These types reproduce the historical record and
 their body text is not editorially modifiable. The target applies to
 the remaining editorial types — currently `analysis`, `biography`,
-and `article`.
+`article`, and `design`.
 
 **Density target (markdown-line proxy).** Count the body lines that
 are inside Mermaid code blocks, Markdown table rows (`| ... |`), or

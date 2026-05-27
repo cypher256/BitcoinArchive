@@ -73,10 +73,10 @@ const { date, author, entryType, source, lang, participants = [], tags = [], inl
 // readers into thinking the editorial piece itself is dated to that
 // day. See temp/0518_一覧並び順と日付表示計画.md and
 // STYLE_GUIDE.md "Entry Dates" for the full rule.
-const isAnalysis = entryType === 'analysis';
+const isAnalysis = entryType === 'analysis' || entryType === 'design';
 const createdFallback = createdAt ?? updatedAt ?? date;
 const updatedFallback = updatedAt ?? date;
-const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article');
+const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article' || entryType === 'design');
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
@@ -95,7 +95,7 @@ const authorParticipant = findAuthorParticipant(author, participants);
 // biography never reaches EntryMeta (it has no /entries/{id}/ page
 // and is mounted in the participant page instead), so its author is
 // not displayed at all.
-const isEditorialType = entryType === 'article' || entryType === 'analysis';
+const isEditorialType = entryType === 'article' || entryType === 'analysis' || entryType === 'design';
 const displayAuthor = isEditorialType
   ? 'Bitcoin Institute'
   : translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);

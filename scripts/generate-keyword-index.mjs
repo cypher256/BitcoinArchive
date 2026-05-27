@@ -81,7 +81,7 @@ const OUTPUT = path.join(ROOT, 'src/data/keyword-index.json');
 
 // Editorial types eligible to claim concept keywords. Anything else is
 // primary-source and cannot be a definition target.
-const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'biography']);
+const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'biography', 'design']);
 
 // Verbatim file path fragments — entries whose path contains one of these
 // are whole-record primary source and excluded from auto-link (and from
