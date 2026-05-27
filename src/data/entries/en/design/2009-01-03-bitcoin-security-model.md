@@ -323,7 +323,7 @@ Quantum computing represents a potential future threat to Bitcoin's cryptographi
 
 **Exposure window.** Funds are only vulnerable to a quantum ECDLP attack when the public key is exposed on-chain. Unspent outputs behind a never-revealed public-key hash (addresses that have received but never sent) are protected by the hash function, not the signature scheme. Spent-from addresses — and Pay-to-Public-Key (P2PK) outputs from the early Satoshi era — have their public keys permanently visible on-chain and would be the first targets.
 
-**Migration path.** BIP 360 (QuBit) proposes a post-quantum address type. Any migration requires a network-wide soft fork and a transition period during which users move funds from quantum-vulnerable to quantum-resistant addresses. The timeline depends on advances in quantum hardware — current estimates range from 10 to 30+ years for a cryptographically relevant quantum computer — but the protocol must design the migration mechanism well before the threat materializes.
+**Migration path.** BIP 360 (P2MR / QuBit) proposes a post-quantum address type. Any migration requires a network-wide soft fork and a transition period during which users move funds from quantum-vulnerable to quantum-resistant addresses. The timeline depends on advances in quantum hardware — estimates range from 20 to 40 years for a cryptographically relevant quantum computer (Adam Back, November 2025) — but the protocol must design the migration mechanism well before the threat materializes.
 
 ## 8. Attack vs defense comparison
 
@@ -366,7 +366,7 @@ flowchart TD
 | **Sybil attack** | Network | Large number of fake node identities | Proof of work as Sybil resistance; IP-range diversification | Consensus-layer immune; network layer progressively hardened |
 | **Timejacking** | Network / Consensus | Control of multiple peer connections | 70-minute offset clamp; NTP synchronization | Mitigated by clamping; edge cases remain at extreme clock skew |
 | **Selfish mining** | Consensus | ~25–33% of hash rate (depends on connectivity) | Compact block relay (BIP 152) reduces propagation advantage | Partially mitigated; no consensus-level fix deployed |
-| **Quantum (ECDLP)** | Cryptographic | Cryptographically relevant quantum computer | Post-quantum signature migration (BIP 360 proposal) | Not yet mitigated; threat timeline estimated at 10–30+ years (as of 2025 consensus) |
+| **Quantum (ECDLP)** | Cryptographic | Cryptographically relevant quantum computer | Post-quantum signature migration (BIP 360 / P2MR proposal) | Not yet mitigated; threat timeline estimated at 20–40 years (Adam Back, November 2025) |
 
 ## 9. Limits of this page
 

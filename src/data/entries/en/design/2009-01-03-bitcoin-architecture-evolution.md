@@ -69,7 +69,7 @@ flowchart TB
 | **Database** | Berkeley DB for all persistent state | LevelDB (UTXO set, block index) + flat files (blocks) + SQLite (wallet) |
 | **Mining** | Internal CPU miner, same process | External via `getblocktemplate` (BIP 22/23); Stratum v2 in ecosystem |
 | **Interfaces** | None at launch; basic JSON-RPC added shortly after | JSON-RPC (full read/write), REST (read-only), ZMQ (push notifications) |
-| **Cryptography library** | OpenSSL for all operations | libsecp256k1 (ECDSA/Schnorr), internal SHA-256 with hardware acceleration |
+| **Cryptography library** | OpenSSL (ECDSA/secp256k1); Crypto++ (SHA-256) | libsecp256k1 (ECDSA/Schnorr), internal SHA-256 with hardware acceleration |
 
 ## 2. Network layer
 
@@ -138,7 +138,7 @@ flowchart LR
 | **Signature scheme** | ECDSA via OpenSSL | ECDSA + Schnorr via libsecp256k1 | BIP 340 (2021) |
 | **Opcodes** | Full set (including later-disabled) | Reduced set; tapscript re-enables selected opcodes | BIP 342 |
 | **Timelocks** | Absolute locktime only | Absolute + relative (BIP 68) + script-level (`OP_CLTV`, `OP_CSV`) | BIP 65, 68, 112, 113 |
-| **Replace-by-Fee** | Not implemented; first-seen | Full RBF default | BIP 125 (v24 default, v28 mandatory) |
+| **Replace-by-Fee** | Not implemented; first-seen | Full RBF default | BIP 125 (v0.12 opt-in; v24 option added; v28 default) |
 | **Coin selection** | Simple largest-first | BnB + knapsack + single-random-draw; waste metric | v27+ |
 
 *Detailed treatment: [L1 #2 — Transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/)*

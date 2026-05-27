@@ -262,7 +262,7 @@ flowchart TB
 | **ナンス生成** | OpenSSL の擬似乱数生成器 | RFC 6979 決定性ナンス（ECDSA）; BIP 340 合成ナンス（シュノア） |
 | **ハッシュ関数** | OpenSSL 経由の SHA-256、SHA-256d、RIPEMD-160 | 同一のアルゴリズム; ハードウェアアクセラレーション（SHA-NI、ARMv8-A）付き内部実装 |
 | **アドレス形式** | Base58Check（P2PKH: `1...`） | Base58Check（レガシー）、Bech32（P2WPKH/P2WSH: `bc1q...`）、Bech32m（P2TR: `bc1p...`） |
-| **鍵管理** | ランダム鍵プール（非決定性） | HD 導出（BIP 32/39/44/84/86）; 記述子ウォレット（BIP 380 以降） |
+| **鍵管理** | ランダム鍵プール（非決定性） | HD 導出（BIP 32/44/84/86）; 記述子ウォレット（BIP 380 以降）。Core は BIP 39 ではなく生の BIP 32 シードを使用 |
 | **バックアップモデル** | `wallet.dat` のエクスポート; 新しい鍵には新しいバックアップが必要 | 記述子バックアップがすべての導出鍵をカバー（Bitcoin Core は BIP 39 ニーモニックではなく生の BIP 32 シードを使用） |
 | **sighash アルゴリズム** | レガシー sighash（入力数に対して二乗的） | BIP 143 sighash（SegWit v0、線形）+ BIP 341 sighash（Taproot、エポックタグ付き） |
 

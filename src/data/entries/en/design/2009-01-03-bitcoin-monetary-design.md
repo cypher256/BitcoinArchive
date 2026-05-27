@@ -175,7 +175,7 @@ Bitcoin's security rests on the assumption that mining honestly — extending th
 | Strategy | Required hash rate | Expected revenue | Risk / cost | Outcome |
 |---|---|---|---|---|
 | **Honest mining** | Any share | Block reward × (share of total hash rate) — stable, predictable income | Hardware + energy cost | Sustainable; positive expected value if operational cost < revenue |
-| **Selfish mining** | >33% (theoretical threshold) | Temporarily higher share of blocks by withholding and releasing at strategic moments | Wastes orphaned blocks during failed attempts; requires sustained hash-rate majority | Marginal gain at extreme cost; network difficulty adjusts, reducing advantage over time |
+| **Selfish mining** | ~25–33% (Eyal-Sirer 2014; depends on network connectivity) | Temporarily higher share of blocks by withholding and releasing at strategic moments | Wastes orphaned blocks during failed attempts; requires sustained hash-rate majority | Marginal gain at extreme cost; network difficulty adjusts, reducing advantage over time |
 | **Double-spend attack** | >50% for reliable success | Reverse a confirmed payment after receiving goods/services | Enormous capital cost; risk of detection and market collapse (BTC price drop destroys attacker's own holdings) | Economically irrational for large miners whose assets are denominated in BTC |
 | **Transaction censorship** | >50% sustained | Exclude specific transactions from all future blocks | Same capital cost as double-spend; censored transactions simply wait for honest blocks | Ineffective unless attacker holds permanent majority; honest minority still includes censored transactions |
 
