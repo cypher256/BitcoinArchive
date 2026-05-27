@@ -107,13 +107,12 @@ graph TB
 Bitcoin's design stacks into five layers. Each layer depends only on the layers below it.
 
 ```mermaid
-block-beta
-    columns 1
-    APP["Application layer — wallets, explorers, Lightning, exchanges"]
-    TXN["Transaction layer — UTXO model, Script, signatures"]
-    CONS["Consensus layer — block validation, most-work chain, difficulty adjustment"]
-    NET["Network layer — P2P gossip, peer discovery, message relay"]
-    STORE["Storage layer — block files, UTXO database, chain index"]
+flowchart TB
+    APP["Application layer<br/>wallets, explorers, Lightning, exchanges"]
+    TXN["Transaction layer<br/>UTXO model, Script, signatures"]
+    CONS["Consensus layer<br/>block validation, most-work chain, difficulty adjustment"]
+    NET["Network layer<br/>P2P gossip, peer discovery, message relay"]
+    STORE["Storage layer<br/>block files, UTXO database, chain index"]
 
     APP --> TXN
     TXN --> CONS
