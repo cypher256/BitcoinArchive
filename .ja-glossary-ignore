@@ -50,3 +50,16 @@ Design of a secure timestamping service with minimal trust requirements
 # not Japanese prose. The .astro script region is not masked by
 # maskNonProse the way Markdown code fences are. 'gap' rule false-positive.
 gap: '
+
+# Mermaid EN label inside design JA pages (mermaid kept in EN)
+consumer: 'Streaming consumer' mermaid label in wallet-design
+
+# Mermaid EN label: 'consumer' inside wallet-design mermaid block
+Streaming consumer
+# Mermaid EN labels: bootstrap and coinbase in architecture-evolution diagrams
+IRC bootstrap
+DNS seed bootstrap
+coinbase field
+in coinbase OP_RETURN
+(coinbase)
+mutate coinbase

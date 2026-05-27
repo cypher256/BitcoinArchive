@@ -1,0 +1,312 @@
+---
+title: "ビットコインのトランザクション設計 — UTXO モデル、スクリプト、署名方式"
+date: 2009-01-03T00:00:00Z
+type: "design"
+source: "bitcoin-pdf"
+sourceUrl: "https://bitcoin.org/bitcoin.pdf"
+author: "Bitcoin Institute"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "ビットコインのトランザクション層を詳解: UTXO ライフサイクル、トランザクション構造、スクリプト評価、ECDSA・シュノア署名、SegWit、Taproot。"
+isSatoshi: false
+tags:
+  - "design"
+  - "utxo"
+  - "transactions"
+  - "script"
+  - "signatures"
+relatedEntries:
+  - design/2009-01-03-bitcoin-system-design-overview
+  - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - design/2009-01-03-bitcoin-block-chain-design
+  - design/2009-01-03-bitcoin-p2p-network-design
+  - design/2009-01-03-bitcoin-monetary-design
+  - design/2009-01-03-bitcoin-cryptography-design
+  - design/2009-01-03-bitcoin-storage-design
+  - design/2009-01-03-bitcoin-wallet-design
+  - design/2009-01-03-bitcoin-ecosystem-design
+inlineLinkKeywords:
+  - "transaction design"
+  - "Bitcoin Script"
+  - "SegWit"
+  - "Taproot"
+  - "Schnorr signatures"
+translationStatus: complete
+---
+
+## はじめに
+
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の第 2 ページであり、トランザクション層を端から端まで解説する。価値がどのように表現され、転送され、ロックされ、アンロックされるかを扱う。ビットコインのすべて — マイニングのインセンティブ、ブロック重量、手数料市場、ウォレットの使い勝手 — がここに記述される構造に依存している。
+
+トランザクション層は 3 つの問いに答える:
+
+1. **コインとは何か?** 未使用トランザクション出力 (UTXO) であり、口座残高ではない。
+2. **有効な支払いとはどのような形式か?** 既存の UTXO を消費し、暗号署名で認可を証明し、新しい UTXO を作成するトランザクション。
+3. **認可はどのように表現されるか?** ビットコインスクリプトを通じて — ロック条件とアンロック条件を評価するスタックベース言語。
+
+サトシ時代の実装（v0.1、2009 年 1 月）と現行の Bitcoin Core（v27 以降基準）で挙動が異なる場合は、両方を記す。
+
+## 1. UTXO モデル
+
+ビットコインは残高を追跡しない。代わりに、すべてのトランザクションが 1 つ以上の離散的な出力を作成し、各出力は特定の金額とロック条件を持つ。後のトランザクションでまだ消費されていない出力が**未使用トランザクション出力** (UTXO) である。ある時点でのすべての UTXO の集合が、誰が何を支払えるかの完全な全体像となる。
+
+### UTXO ライフサイクル
+
+```mermaid
+stateDiagram-v2
+    [*] --> Created: Coinbase reward or\ntransaction output
+    Created --> InUTXOSet: Block confirmed,\noutput added to UTXO set
+    InUTXOSet --> Spent: Referenced as input\nin a new transaction
+    Spent --> [*]: Removed from UTXO set,\nstored in undo data
+
+    note right of InUTXOSet
+        "Coin" = an entry in the UTXO set.
+        A wallet's "balance" is the sum
+        of all UTXOs it can unlock.
+    end note
+```
+
+### UTXO モデルとアカウントモデルの比較
+
+| 特性 | UTXO モデル (ビットコイン) | アカウントモデル (イーサリアム) |
+|---|---|---|
+| **状態表現** | 離散的な未使用出力の集合 | アドレスから残高へのマッピング |
+| **支払い** | UTXO 全体を消費し、新しい UTXO を作成（おつりを含む） | 送信者の残高を減額、受信者の残高を増額 |
+| **プライバシー** | 各トランザクションで新しいアドレスを使用可能。出力は既定でリンク不能 | アドレスに履歴が蓄積。残高がアカウント単位で可視 |
+| **並列検証** | 入力は異なる UTXO を参照 — 異なる UTXO に触れるトランザクションは独立して検証可能 | アカウントごとのナンス順序が逐次依存を生む |
+| **二重支払い検出** | 参照された UTXO が存在し未使用であることを検査 | 送信者のナンスが正しく残高が十分であることを検査 |
+| **状態サイズ** | 未使用出力とともに成長（2025 年時点で約 1.8 億 UTXO） | アカウントとコントラクトストレージとともに成長 |
+| **おつり出力** | 入力合計が支払額を超える場合に必要 | 不要。残高はその場で調整 |
+
+## 2. トランザクション構造
+
+トランザクションは、1 つ以上の既存 UTXO（入力）を消費し、1 つ以上の新しい UTXO（出力）を作成する署名済みメッセージである。入力値合計と出力値合計の差がトランザクション手数料となり、そのトランザクションをブロックに含めるマイナーが徴収する。
+
+### トランザクションの構造
+
+```mermaid
+flowchart TB
+    subgraph TX["Transaction"]
+        direction TB
+        VER["Version (4 bytes)"]
+
+        subgraph INPUTS["Inputs"]
+            I1["Input 0\nprev txid + output index\nscriptSig or witness\nsequence"]
+            I2["Input 1\n..."]
+        end
+
+        subgraph OUTPUTS["Outputs"]
+            O1["Output 0\namount (satoshis)\nscriptPubKey (locking script)"]
+            O2["Output 1\n(change back to sender)\namount\nscriptPubKey"]
+        end
+
+        LOCK["Locktime (4 bytes)"]
+    end
+
+    subgraph PREV["Previous transaction"]
+        PO["Output 0\n0.7 BTC\nlocked to Alice"]
+    end
+
+    PREV -. "Input 0 references\nthis output" .-> I1
+
+    VER ~~~ INPUTS
+    INPUTS ~~~ OUTPUTS
+    OUTPUTS ~~~ LOCK
+```
+
+### フィールド別の詳細
+
+| フィールド | サイズ | 説明 |
+|---|---|---|
+| **バージョン** | 4 バイト | トランザクション形式のバージョン。v1 が標準。v2 は BIP 68 の相対的タイムロックを有効化。 |
+| **マーカー + フラグ** | 2 バイト | SegWit 識別子 (`0x00 0x01`)。従来型トランザクションには存在しない。 |
+| **入力数** | 可変長整数 | 入力の数。 |
+| **入力** | 可変長 | 各入力: 前のトランザクション ID (32 バイト) + 出力インデックス (4 バイト) + scriptSig (可変長) + シーケンス (4 バイト)。 |
+| **出力数** | 可変長整数 | 出力の数。 |
+| **出力** | 可変長 | 各出力: サトシ単位の金額 (8 バイト) + scriptPubKey (可変長)。 |
+| **証人** | 可変長 | 入力ごとの証人スタック。SegWit トランザクションにのみ存在。 |
+| **ロックタイム** | 4 バイト | トランザクションがブロックに含まれ得る最早の時刻またはブロック高。 |
+
+### サトシ時代と v27 以降基準: トランザクション形式
+
+| 側面 | サトシ時代 (v0.1) | 現行 Bitcoin Core、v27 以降基準 |
+|---|---|---|
+| **形式** | 従来型: バージョン + 入力 + 出力 + ロックタイム | SegWit: バージョン + マーカー/フラグ + 入力 + 出力 + 証人 + ロックタイム |
+| **証人データ** | 存在しない。署名は scriptSig に埋め込み | 証人フィールドに分離 (BIP 141) |
+| **トランザクション ID** | トランザクション全体の直列化の SHA-256d | `txid` は証人データを除外。`wtxid` は証人データを含む |
+| **改ざん性** | あり — 第三者が scriptSig を変更してもトランザクションは無効にならない | 修正済み — 証人は txid 計算から除外 |
+| **バージョン** | 常に 1 | v1 または v2。v2 は相対的タイムロック (BIP 68) を有効化 |
+
+## 3. ビットコインスクリプト
+
+ビットコインのトランザクションは公開鍵に直接ロックされるのではない。代わりに、各出力は**ロックスクリプト**（`scriptPubKey`）と呼ばれる小さなプログラムを持ち、各入力はロック条件を満たす**アンロックスクリプト**（`scriptSig` または証人データ）を提供する。ビットコインスクリプトはこれらのプログラムが書かれるスタックベース言語である。
+
+### スクリプト評価フロー
+
+```mermaid
+flowchart LR
+    SIG["Unlocking script\n(scriptSig / witness)"] --> STACK["Combine and\npush onto stack"]
+    LOCK["Locking script\n(scriptPubKey)"] --> STACK
+    STACK --> EVAL["Execute opcodes\nleft to right"]
+    EVAL --> CHECK{"Top of stack\n= true?"}
+    CHECK -- "Yes" --> VALID["Spend authorized"]
+    CHECK -- "No" --> INVALID["Spend rejected"]
+```
+
+インタープリターはオペコードを順次処理する。データ項目をスタックにプッシュし、スタック要素を消費・生成する操作を実行する。すべてのオペコード処理後にスタック最上位の要素がゼロでない（真）であれば、支払いは有効である。
+
+### 一般的なスクリプトパターン
+
+| パターン | 導入時期 | ロック機構 | 代表的な用途 |
+|---|---|---|---|
+| **P2PKH** (公開鍵ハッシュ宛支払い) | v0.1 (2009 年) | 公開鍵のハッシュ。支払者は鍵 + ECDSA 署名を提供 | `1` で始まる従来型アドレス |
+| **P2SH** (スクリプトハッシュ宛支払い) | BIP 16 (2012 年) | 償還スクリプトのハッシュ。支払者はスクリプト + 満たすデータを提供 | マルチシグ、ラップされた SegWit。`3` で始まるアドレス |
+| **P2WPKH** (証人公開鍵ハッシュ宛支払い) | BIP 141 (2017 年) | 証人プログラム v0、20 バイトの鍵ハッシュ。署名は証人内 | `bc1q` で始まるネイティブ SegWit アドレス |
+| **P2WSH** (証人スクリプトハッシュ宛支払い) | BIP 141 (2017 年) | 証人プログラム v0、32 バイトのスクリプトハッシュ。証人がスクリプト + データを提供 | ネイティブ SegWit マルチシグおよび複雑なスクリプト |
+| **P2TR** (Taproot 宛支払い) | BIP 341 (2021 年) | 証人プログラム v1、32 バイトの調整済み公開鍵。鍵パスまたはスクリプトパスで支払い | `bc1p` で始まる Taproot アドレス |
+
+### スクリプトの進化: v0.1 から v27 以降へ
+
+| 側面 | サトシ時代 (v0.1) | 現行 Bitcoin Core、v27 以降基準 |
+|---|---|---|
+| **利用可能なオペコード** | `OP_CAT`、`OP_MUL`、`OP_LSHIFT` 等を含む完全な集合 | 多数を無効化（2010 年のセキュリティパッチ）。Tapscript (BIP 342) で一部を再有効化 |
+| **スクリプト型** | P2PK と P2PKH のみ | P2PKH、P2SH、P2WPKH、P2WSH、P2TR |
+| **実行モデル** | scriptSig + scriptPubKey を連結して実行 | 分離された評価。証人プログラムは独自の検証規則を持つ |
+| **サイズ制限** | 10,000 バイトのスクリプト、201 オペコード上限 | 同じ基本制限。Tapscript では署名操作回数の計算方法を緩和 |
+
+## 4. 署名方式
+
+暗号署名は、支払者が UTXO のロック条件に対応する秘密鍵を管理していることを証明するメカニズムである。ビットコインはその歴史を通じて 2 つの署名方式を使用してきた。
+
+### ECDSA とシュノアの比較
+
+| 特性 | ECDSA (secp256k1) | シュノア (BIP 340) |
+|---|---|---|
+| **導入** | v0.1 (2009 年) | Taproot 有効化 (2021 年) |
+| **楕円曲線** | secp256k1 | secp256k1（同一の曲線） |
+| **署名サイズ** | 70〜72 バイト（DER 符号化） | 64 バイト（固定長） |
+| **検証** | 署名ごとに 1 つの方程式 | 署名ごとに 1 つの方程式。一括検証可能 |
+| **鍵集約** | ネイティブ非対応 | MuSig2 により n-of-n 集約を単一の鍵と署名に |
+| **線形性** | 非線形 — 集約に複雑なプロトコルが必要 | 線形 — `s₁ + s₂` が結合鍵の有効な署名 |
+| **証明可能な安全性** | 離散対数問題を超えた追加の仮定に依存 | ランダムオラクルモデルでの離散対数仮定の下で証明可能 |
+| **ライブラリ** | 当初 OpenSSL。libsecp256k1 に移行 | libsecp256k1（同一ライブラリ、シュノアモジュール） |
+
+### 署名と検証のフロー
+
+```mermaid
+sequenceDiagram
+    participant S as Spender
+    participant TX as Transaction
+    participant V as Verifier (node)
+
+    S->>S: Hold private key (k)
+    S->>TX: Construct transaction
+    S->>S: Hash the transaction data (sighash)
+    S->>S: Sign sighash with private key → signature (σ)
+    S->>TX: Attach signature to input (scriptSig or witness)
+
+    TX->>V: Broadcast transaction
+    V->>V: Extract public key (K) from locking script
+    V->>V: Recompute sighash from transaction data
+    V->>V: Verify: does σ match K and sighash?
+    V-->>TX: Valid → accept into mempool
+```
+
+## 5. SegWit と Taproot
+
+SegWit（Segregated Witness、2017 年）と Taproot（2021 年）は、ビットコインのトランザクション形式に対するその誕生以来最大の 2 つの構造的変更である。どちらも後方互換性のあるソフトフォークである。
+
+### 構造比較
+
+```mermaid
+flowchart TB
+    subgraph LEGACY["Legacy transaction (2009)"]
+        direction TB
+        L_VER["Version"]
+        L_IN["Inputs\n(scriptSig contains signatures)"]
+        L_OUT["Outputs\n(scriptPubKey)"]
+        L_LOCK["Locktime"]
+        L_VER ~~~ L_IN ~~~ L_OUT ~~~ L_LOCK
+    end
+
+    subgraph SEGWIT["SegWit transaction (2017)"]
+        direction TB
+        S_VER["Version"]
+        S_MF["Marker + Flag"]
+        S_IN["Inputs\n(scriptSig empty for native)"]
+        S_OUT["Outputs\n(scriptPubKey)"]
+        S_WIT["Witness\n(signatures moved here)"]
+        S_LOCK["Locktime"]
+        S_VER ~~~ S_MF ~~~ S_IN ~~~ S_OUT ~~~ S_WIT ~~~ S_LOCK
+    end
+
+    subgraph TAPROOT["Taproot transaction (2021)"]
+        direction TB
+        T_VER["Version"]
+        T_MF["Marker + Flag"]
+        T_IN["Inputs"]
+        T_OUT["Outputs\n(witness program v1)"]
+        T_WIT["Witness\n(key-path: single Schnorr sig\nscript-path: control block + script)"]
+        T_LOCK["Locktime"]
+        T_VER ~~~ T_MF ~~~ T_IN ~~~ T_OUT ~~~ T_WIT ~~~ T_LOCK
+    end
+```
+
+### 主要な革新
+
+| 革新 | 仕組み | 利点 |
+|---|---|---|
+| **証人ディスカウント** | 証人バイトは 1/4 の重量で計算 (4 WU ではなく 1 WU) | 署名の多いトランザクションの実効手数料を削減。データを証人に移すインセンティブ |
+| **トランザクション改ざん性の修正** | 証人を txid 計算から除外 | 信頼性のあるトランザクション連鎖が可能に (Lightning Network の前提条件) |
+| **スクリプトバージョニング** | 証人バージョンフィールドにより新規スクリプト規則をソフトフォークで導入可能 | 将来のアップグレード（Taproot 自体が証人 v1 を使用）が既存ノードを壊さない |
+| **鍵パス支払い** | 単一のシュノア署名で出力鍵を直接検証 | マルチシグ、タイムロック、複雑な条件がすべてチェーン上では単一鍵の支払いに見える — 最大限のプライバシー |
+| **スクリプトパス支払い (MAST)** | 代替スクリプトのマークルツリー。実行された分岐のみが公開される | 複雑なコントラクトが使用したパスだけを露出。未使用の分岐はプライベートなまま |
+| **一括検証の可能性** | シュノア署名は線形に集約可能 | ノードが複数の署名を個別検証より高速に検証できる |
+
+## 6. コイン選択
+
+ウォレットがトランザクションを構築する際、入力としてどの UTXO を支払うかを選択する必要がある。これが**コイン選択**問題である。この選択はトランザクションサイズ（したがって手数料）、プライバシー（どの UTXO がチェーン上でリンクされるか）、ウォレットの UTXO プールの将来の形状に影響する。
+
+| 戦略 | アプローチ | トレードオフ |
+|---|---|---|
+| **最大額優先** | 支払いをカバーする最大の UTXO を選ぶ | 単純で統合傾向。ウォレット残高を暴露する大きなおつり出力を生む |
+| **分岐限定法** (BnB) | 完全一致の組み合わせを探索（おつり出力不要） | おつり出力を排除し約 34 バイト節約。完全一致がなければ失敗 |
+| **ナップサック** | 支払額 + 最小おつりを目標にランダム選択 | BnB 失敗時のフォールバック。微小おつりが生じる可能性 |
+| **コインコントロール** | ユーザーが支払う UTXO を手動選択 | 最大限のプライバシー制御。ユーザーの専門知識が必要 |
+| **無駄指標** (v27 以降) | 現在と長期的な手数料コストおよびおつりコストで候補を評価 | 即時の手数料と将来のおつり UTXO 支払いコストのバランスを取る |
+
+現行の Bitcoin Core（v27 以降基準）は複数戦略のパイプラインを使用する。まず BnB を試行し（おつりなしトランザクション）、ナップサックにフォールバックし、無駄指標ですべての候補を評価して最低コストの選択肢を採用する。サトシの v0.1 はより単純な最大額優先方式を使用していた。
+
+## 7. 二時代比較
+
+| 機能 | サトシ時代 (v0.1、2009 年 1 月) | 現行 Bitcoin Core、v27 以降基準 |
+|---|---|---|
+| **価値表現** | UTXO（未使用トランザクション出力） | 同一 |
+| **トランザクション形式** | 従来型（バージョン + 入力 + 出力 + ロックタイム） | SegWit（+ マーカー/フラグ + 証人） |
+| **トランザクション ID** | 完全直列化トランザクションの SHA-256d | `txid`（証人除外）+ `wtxid`（証人含む） |
+| **スクリプト型** | P2PK、P2PKH | P2PKH、P2SH、P2WPKH、P2WSH、P2TR |
+| **署名方式** | OpenSSL 経由の ECDSA | ECDSA + シュノア（libsecp256k1 経由） |
+| **署名サイズ** | 70〜72 バイト (DER) | ECDSA: 70〜72 バイト。シュノア: 64 バイト（固定長） |
+| **鍵集約** | 利用不可 | MuSig2（n-of-n シュノア集約） |
+| **オペコードの利用可能性** | 完全な集合（後に無効化されたオペコードを含む） | 縮小された集合。Tapscript で一部のオペコードを再有効化 |
+| **改ざん性** | 脆弱 — 第三者が scriptSig を変更可能 | 修正済み — 証人は txid から除外 |
+| **重量/サイズ制限** | トランザクション単位の重量なし。2010 年にブロックサイズ上限を追加 | 最大 400,000 WU の標準トランザクション重量 |
+| **タイムロック** | 絶対ロックタイムのみ（ブロック高または Unix 時刻） | 絶対（ロックタイム）+ 相対 (BIP 68 シーケンス) + スクリプトレベル (`OP_CLTV`、`OP_CSV`) |
+| **手数料引上げによる置換** | 未実装。先着順ポリシー | 完全 RBF (BIP 125。v24.0 以降既定、v28.0 でメモリープールポリシーとして必須化) |
+| **手数料推定** | なし（実質的にトランザクションは無料） | `estimatesmartfee` — バケットベースのメモリープール手数料推定 |
+| **コイン選択** | 単純な最大額優先 | BnB + ナップサック + 無駄指標パイプライン |
+| **暗号ライブラリ** | OpenSSL | libsecp256k1（定数時間、正式監査済み） |
+| **UTXO ストレージ** | Berkeley DB | LevelDB（インメモリーキャッシュ付き、コインキャッシュ） |
+
+## 8. 本ページの範囲
+
+本ページはトランザクション層を独立して扱う。以下のトピックは本ページの範囲外であり、[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)内のそれぞれのドメインページで扱う:
+
+- **ブロック構造とマークルツリー** — トランザクションがブロックにバッチされマークルルートでコミットされる仕組み。
+- **マイニングとプルーフ・オブ・ワーク** — どのトランザクションがブロックチェーンに入るかを選択するインセンティブメカニズム。
+- **メモリープールポリシー** — 中継規則、手数料率の下限、承認前のトランザクション伝播を制御するパッケージ中継。
+- **ネットワーク層のトランザクション中継** — `inv`、`getdata`、`tx` メッセージが P2P ネットワーク上でトランザクションを伝播させる仕組み。
+- **Lightning Network とペイメントチャネル** — ここで説明したトランザクション基本要素の上に構築されるレイヤー 2 構成。
+- **ウォレットの鍵導出** — ロックスクリプトで使用されるアドレスを生成する BIP 32/44/84/86 の HD 鍵ツリーとディスクリプターウォレット。
