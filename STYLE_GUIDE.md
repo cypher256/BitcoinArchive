@@ -2121,6 +2121,33 @@ not a stylistic choice to defend. The cost of an extra table or
 diagram is small; the cost of losing a reader halfway through a
 2,000-word page is permanent.
 
+### Scope and density target
+
+**Scope.** The visual-density target applies to all entry types
+*except* verbatim primary-source transcriptions: `forum-post`,
+`mailing-list`, `correspondence`, `whitepaper`, `bip`, `tweet`,
+`court-document`. These types reproduce the historical record and
+their body text is not editorially modifiable. The target applies to
+the remaining editorial types — currently `analysis`, `biography`,
+and `article`.
+
+**Density target (markdown-line proxy).** Count the body lines that
+are inside Mermaid code blocks, Markdown table rows (`| ... |`), or
+d3 component containers, and divide by total body lines (excluding
+frontmatter). This line-count ratio is a proxy for the rendered
+visual-area share — not pixel-exact, but stable enough to guide
+authoring decisions and script-checkable.
+
+| Threshold | Meaning |
+|---|---|
+| **≥ 30%** | Design target for new editorial pages. A page at 30% is visually rich — roughly one diagram or table per two to three paragraphs of prose. |
+| **≥ 20%** | Floor. Pages below 20% should be reviewed for missing visual opportunities (timeline that could replace a narrated chronology, comparison that could be a table, numeric data that could be a chart). |
+| **< 15%** | Flag. The page is a wall of prose; add at least one structural visual before shipping. |
+
+The target is not a hard gate — a 500-word article with one clean
+table at 18% is fine; a 3,000-word analysis at 12% with no diagram
+is not. The numbers exist to trigger review, not to block commits.
+
 ### When to reach for non-text expression
 
 Trigger a visual representation when the content has any of:
