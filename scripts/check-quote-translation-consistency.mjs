@@ -128,9 +128,17 @@ function stripFrontmatter(text) {
   return text.slice(m[0].length);
 }
 
-/** Split body into paragraphs on blank lines. */
+/**
+ * Split body into paragraphs on blank lines.
+ * Also treat blockquote-only lines (`>`, `> `, `>>`, etc.) as paragraph
+ * separators — these are blank lines inside a `>` blockquote and must
+ * split paragraphs the same way a true blank line does in body text.
+ * Without this, a multi-paragraph blockquote collapses into a single
+ * paragraph and never matches the body-text version of the same passage.
+ */
 function splitParagraphs(text) {
-  return text.split(/\n\s*\n+/).map((p) => p.trim()).filter(Boolean);
+  const normalized = text.replace(/^(>+\s*)$/gm, '');
+  return normalized.split(/\n\s*\n+/).map((p) => p.trim()).filter(Boolean);
 }
 
 /**
