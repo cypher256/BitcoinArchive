@@ -22,6 +22,12 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+inlineLinkKeywords:
+  - "Bitcoin supply cap"
+  - "halving schedule"
+  - "fee market"
+  - "block subsidy"
+  - "miner incentive"
 ---
 
 ## Introduction

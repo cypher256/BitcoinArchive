@@ -22,6 +22,13 @@ relatedEntries:
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-monetary-design
+inlineLinkKeywords:
+  - "proof of work"
+  - "difficulty adjustment"
+  - "block validation"
+  - "soft fork"
+  - "hard fork"
+  - "consensus rules"
 ---
 
 ## Introduction

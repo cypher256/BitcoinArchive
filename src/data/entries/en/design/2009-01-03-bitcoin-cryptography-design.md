@@ -20,6 +20,14 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-18-bitcoin-quantum-threat
+  - design/2009-01-03-bitcoin-wallet-design
+inlineLinkKeywords:
+  - "secp256k1"
+  - "ECDSA"
+  - "Schnorr"
+  - "SHA-256"
+  - "address derivation"
+  - "HD wallet"
 ---
 
 ## Introduction

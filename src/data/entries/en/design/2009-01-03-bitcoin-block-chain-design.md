@@ -22,6 +22,13 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - design/2009-01-03-bitcoin-consensus-design
   - design/2009-01-03-bitcoin-p2p-network-design
+  - design/2009-01-03-bitcoin-storage-design
+inlineLinkKeywords:
+  - "block structure"
+  - "Merkle tree"
+  - "most-work chain"
+  - "block weight"
+  - "coinbase structure"
 ---
 
 ## Introduction

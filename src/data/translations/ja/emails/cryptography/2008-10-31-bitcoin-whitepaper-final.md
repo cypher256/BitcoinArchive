@@ -42,6 +42,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-monetary-design
   - design/2009-01-03-bitcoin-cryptography-design
+  - design/2009-01-03-bitcoin-storage-design
+  - design/2009-01-03-bitcoin-wallet-design
 translationStatus: complete
 ---
 
