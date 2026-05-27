@@ -27,6 +27,7 @@ src/data/keyword-index.json
 .DS_Store
 
 # temporary internal work files
+todo/
 tmp/
 temp/
 temp_*
