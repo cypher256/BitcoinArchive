@@ -93,14 +93,14 @@ graph TB
 
 | Subsystem | Role | Design page |
 |---|---|---|
-| Network layer | P2P gossip, peer management, message serialization | [L1 #1](#7-design-document-index) |
-| Consensus engine | Most-work chain selection, fork resolution | [L1 #2](#7-design-document-index) |
-| Transaction model | UTXO structure, inputs/outputs, fee calculation | [L1 #3](#7-design-document-index) |
-| Script system | Stack-based lock/unlock language, signature verification | [L1 #4](#7-design-document-index) |
-| Block structure | Header, Merkle root, coinbase, weight/size limits | [L1 #5](#7-design-document-index) |
-| Mining and PoW | Hash puzzle, difficulty adjustment, block template | [L1 #6](#7-design-document-index) |
-| Storage and indexing | Block files, UTXO database, chain state on disk | [L1 #7](#7-design-document-index) |
-| Wallet and key management | Key derivation, address types, coin selection | [L1 #8](#7-design-document-index) |
+| Network layer | P2P gossip, peer management, message serialization | [L1 #1 P2P](/BitcoinArchive/entries/design/2009-01-03-bitcoin-p2p-network-design/) |
+| Transaction layer | UTXO model, Script, inputs/outputs, signatures | [L1 #2 Transaction](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) |
+| Block / chain layer | Header, Merkle tree, chain structure, coinbase | [L1 #3 Block/Chain](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) |
+| Consensus engine | PoW, difficulty adjustment, fork handling, validation | [L1 #4 Consensus](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) |
+| Monetary layer | Issuance schedule, fee market, miner incentives | [L1 #5 Monetary](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/) |
+| Cryptography layer | Keys, signatures, hashes, address derivation | [L1 #6 Cryptography](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) |
+| Storage layer | Block files, UTXO database, chain state on disk | [L1 #7 Storage](/BitcoinArchive/entries/design/2009-01-03-bitcoin-storage-design/) |
+| Wallet / interface | Key management, coin selection, PSBT, RPC | [L1 #8 Wallet](/BitcoinArchive/entries/design/2009-01-03-bitcoin-wallet-design/) |
 
 ## 2. Layer model
 
@@ -210,9 +210,9 @@ The table below gives a brief structural comparison between the Satoshi-era v0.1
 | **Block size** | No explicit limit in v0.1 (1 MB added in 2010) | 4 MWU weight limit (BIP 141), ~1.5–2 MB observed |
 | **Network protocol** | 7 message types | 27+ message types; compact blocks (BIP 152), addr v2 (BIP 155) |
 | **Peer discovery** | Hardcoded IRC channel + `addr` messages | DNS seeds, `addrv2`, Tor/I2P/CJDNS support |
-| **Storage** | Berkeley DB for all state | LevelDB (UTXO set), flat files (blocks), memory-mapped (v0.8+) |
+| **Storage** | Berkeley DB for all state | LevelDB (UTXO set), flat block files (`blk*.dat`), undo files (`rev*.dat`) |
 | **Mining** | CPU only, internal miner in client | External via `getblocktemplate` (BIP 22/23); Stratum v2 in ecosystem |
-| **Wallet** | Integrated in node binary, random keys | Descriptor wallets (BIP 380+), optional separate process |
+| **Wallet** | Integrated in node binary, random keys | Descriptor wallets (BIP 380+), logical separation (experimental multiprocess in progress) |
 | **Cryptography** | OpenSSL for ECDSA + SHA-256 | libsecp256k1 (custom ECDSA/Schnorr), internal SHA-256 |
 
 *[Context: This table is deliberately terse. The detailed comparison with primary-source evidence for each evolution appears in the L2 page on historical evolution (§ 7, item 9).]*
@@ -223,10 +223,10 @@ Different readers benefit from different paths through the series.
 
 | Audience | Suggested reading order |
 |---|---|
-| **New to Bitcoin** | Start with the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/), then return here, then L1 pages 1 → 3 → 5 → 6 → 2 |
-| **Developer** | This overview → L1 #3 (transactions) → #4 (script) → #2 (consensus) → #1 (network) → #7 (storage) |
-| **Researcher / economist** | This overview → L1 #6 (mining / issuance) → #2 (consensus) → #3 (transactions) → L2 #9 (historical evolution) |
-| **Security auditor** | L1 #4 (script) → #2 (consensus) → #1 (network) → #5 (block structure) → this overview for context |
+| **New to Bitcoin** | Start with the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/), then return here, then L1 #2 (transaction) → #3 (block) → #4 (consensus) |
+| **Developer** | This overview → L1 #2 (transaction) → #3 (block) → #4 (consensus) → #1 (P2P) → #7 (storage) |
+| **Researcher / economist** | This overview → L1 #5 (monetary) → #4 (consensus) → #2 (transaction) → L2 #9 (architecture evolution) |
+| **Security auditor** | L1 #2 (transaction) → #4 (consensus) → #1 (P2P) → #6 (cryptography) → L2 #11 (security model) |
 
 ## 7. Design-document index
 
@@ -242,37 +242,37 @@ mindmap
     L0 Overview
       L0: System overview
     L1 Domains
-      L1 1: Network
-      L1 2: Transactions
-      L1 3: Blocks
-      L1 4: Consensus
-      L1 5: Monetary
-      L1 6: Cryptography
-      L1 7: Storage
-      L1 8: Wallet
+      1: P2P Network
+      2: Transaction
+      3: Block / Chain
+      4: Consensus
+      5: Monetary
+      6: Cryptography
+      7: Storage
+      8: Wallet / RPC
     L2 Cross-cutting
-      L2 9: Historical evolution
-      L2 10: Security model
-      L2 11: Upgrade mechanisms
+      9: Architecture evolution
+      10: Ecosystem
+      11: Security model
 ```
 
 ### L1 — Domain pages
 
 | # | Page | Scope |
 |---|---|---|
-| 1 | **Network and P2P protocol** | Peer discovery, connection lifecycle, message format, gossip relay, compact blocks, Eclipse/Sybil resistance |
-| 2 | **Consensus rules** | Block validity rules, most-work chain selection, fork resolution, soft fork activation (BIP 9/8), the consensus–policy boundary |
-| 3 | **Transaction model and UTXO** | UTXO lifecycle, transaction structure (pre-SegWit and SegWit), fee calculation, Replace-by-Fee, CPFP, coin selection |
-| 4 | **Script system** | Stack machine, standard script types (P2PKH → P2TR), signature hashing, Taproot/Tapscript, opcode reference |
-| 5 | **Block structure** | Header fields, Merkle tree construction, coinbase transaction, witness commitment, weight and sigop limits |
-| 6 | **Mining and proof-of-work** | Hash puzzle mechanics, difficulty adjustment algorithm, block template construction, mining pool protocols, issuance schedule |
-| 7 | **Storage and chain state** | UTXO database (LevelDB), block file layout, undo data, reindex, pruning, assumeUTXO |
-| 8 | **Wallet and key management** | Key derivation (BIP 32/44/49/84/86), descriptor wallets, address types, PSBT workflow, backup and recovery |
+| 1 | [**P2P network**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-p2p-network-design/) | Peer discovery, connection lifecycle, message format, gossip relay, compact blocks, BIP 324 transport |
+| 2 | [**Transaction**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) | UTXO lifecycle, transaction structure, Script evaluation, signatures (ECDSA/Schnorr), SegWit, Taproot |
+| 3 | [**Block / chain**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) | Header fields, Merkle tree, chain structure, most-work chain selection, block weight, coinbase |
+| 4 | [**Consensus**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) | PoW mechanics, difficulty adjustment, block validation, fork types, activation mechanisms, finality model |
+| 5 | [**Monetary**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/) | 21M cap arithmetic, halving schedule, fee market, miner incentives, fee-only future |
+| 6 | [**Cryptography**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) | secp256k1, ECDSA/Schnorr, SHA-256d, address derivation, HD wallets, quantum considerations |
+| 7 | [**Storage**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-storage-design/) | Block files, UTXO database (LevelDB), chain state, mempool, pruning, assumeUTXO |
+| 8 | [**Wallet / RPC**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-wallet-design/) | Descriptor wallets, coin selection, PSBT, fee estimation, RPC/REST/ZMQ interfaces |
 
 ### L2 — Cross-cutting deep dives
 
 | # | Page | Scope |
 |---|---|---|
-| 9 | **Historical evolution: v0.1 → v27+** | Detailed before/after for every subsystem, mapped to the BIPs and commits that introduced each change |
-| 10 | **Security model** | Threat model, 51% attack economics, Eclipse attacks, transaction malleability (pre- and post-SegWit), time-warp, selfish mining |
-| 11 | **Upgrade mechanisms** | Soft forks vs hard forks, activation methods (flag day, BIP 9/8, UASF), the backward-compatibility contract |
+| 9 | [**Architecture evolution**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-architecture-evolution/) | Side-by-side v0.1 vs v27+ comparison across all 8 domains |
+| 10 | [**Ecosystem**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/) | Lightning Network, sidechains (Liquid), L1 extensions (Ordinals), mining pools |
+| 11 | [**Security model**](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/) | Trust assumptions, attack taxonomy, defense layers, economic security, quantum threat |

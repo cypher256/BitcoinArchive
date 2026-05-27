@@ -99,7 +99,7 @@ Modern Bitcoin Core replaces the legacy key model with **output descriptors** (B
 
 ```mermaid
 flowchart TB
-    SEED["Seed entropy\n(BIP 39 mnemonic or\nimported master key)"] --> DESC_WPKH["Descriptor:\nwpkh([fp/84h/0h/0h]xpub.../0/*)"]
+    SEED["Raw seed entropy\n(BIP 32 master seed)"] --> DESC_WPKH["Descriptor:\nwpkh([fp/84h/0h/0h]xpub.../0/*)"]
     SEED --> DESC_TR["Descriptor:\ntr([fp/86h/0h/0h]xpub.../0/*)"]
     SEED --> DESC_PKH["Descriptor:\npkh([fp/44h/0h/0h]xpub.../0/*)"]
 
@@ -336,19 +336,19 @@ flowchart LR
 | **`-disablewallet` option** | v0.8 (2013) | Node can run without loading any wallet |
 | **Multiple wallet support** | v0.17 (2018) | A single node loads and manages multiple wallet files simultaneously |
 | **Descriptor wallets** | v0.21 (2021) | New wallet format; default for new wallets from v23 |
-| **Berkeley DB removed** | v26 (2023) | New wallets use SQLite exclusively; legacy wallets must be migrated |
-| **Separate wallet process** | v27+ (2024) | `bitcoin-wallet` tool can run as a separate process communicating with the node via IPC (Cap'n Proto serialization) |
+| **Berkeley DB deprecated** | v26 (2023) | New wallets use SQLite exclusively; legacy BDB wallets can be migrated but BDB support is not yet fully removed |
+| **Multiprocess work (experimental)** | v27+ (2024) | Experimental `bitcoin-node` / `bitcoin-wallet` process separation via IPC (Cap'n Proto). The `bitcoin-wallet` CLI tool handles offline wallet operations; full IPC-based runtime separation is in progress, not yet the default |
 
-**Why separation matters.** The wallet handles private keys — the most sensitive data in the system. Running it as a separate process allows the key-holding component to operate in a restricted environment (different user, different machine, hardware security module) while the node handles the publicly verifiable chain data. Process separation also enables independent restart, update, and resource management for the two workloads.
+**Why separation matters.** The wallet handles private keys — the most sensitive data in the system. Logical separation (already achieved) and eventual physical process separation allow the key-holding component to operate in a restricted environment while the node handles publicly verifiable chain data.
 
 ## 9. Two-era comparison
 
 | Feature | Satoshi era (v0.1, Jan 2009) | Modern Bitcoin Core, v27+ baseline |
 |---|---|---|
-| **Architecture** | Wallet embedded in single-binary node | Logically separated; optionally separate process via IPC |
+| **Architecture** | Wallet embedded in single-binary node | Logically separated; experimental multiprocess separation in progress |
 | **Key generation** | Random key pool (100 independent keys) | Descriptor wallets: deterministic derivation from master seed |
 | **Key storage** | Berkeley DB (`wallet.dat`) | SQLite (`wallet.dat` in new format) |
-| **Backup model** | Export file after every new key; new keys after backup are unrecoverable | One-time seed phrase backup covers all derived keys |
+| **Backup model** | Export file after every new key; new keys after backup are unrecoverable | Descriptor backup covers all derived keys (raw BIP 32 seed, not BIP 39) |
 | **Address types** | P2PK, P2PKH only | P2PKH, P2SH, P2WPKH, P2WSH, P2TR |
 | **Address encoding** | Base58Check | Base58Check (legacy), Bech32, Bech32m |
 | **Coin selection** | Simple largest-first | BnB + knapsack + single-random-draw; waste metric scoring |

@@ -343,8 +343,8 @@ flowchart LR
 |---|---|---|---|
 | **Architecture** | Embedded in single binary | Logically separated; optionally separate process via IPC | v27+ |
 | **Key generation** | Random key pool (100 independent keys) | Descriptor wallets: deterministic from master seed | BIP 380+ (default v23) |
-| **Key storage** | Berkeley DB (`wallet.dat`) | SQLite (`wallet.dat`, new format) | v26 (BDB removed) |
-| **Backup model** | Export file after every new key | One-time seed phrase covers all derived keys | BIP 39 |
+| **Key storage** | Berkeley DB (`wallet.dat`) | SQLite (`wallet.dat`, new format) | v26 (BDB deprecated for new wallets) |
+| **Backup model** | Export file after every new key | Descriptor backup covers all derived keys (raw BIP 32 seed, not BIP 39) | BIP 32 + descriptors |
 | **Signing** | Internal, same process | Internal, PSBT (BIP 174/370), or hardware wallet via HWI | BIP 174 (2018) |
 | **Multi-device signing** | Not supported | PSBT workflow: create → update → sign → combine → finalize | BIP 174, 370 |
 | **Fee bumping** | Not available | Replace-by-Fee (`bumpfee`), CPFP | BIP 125 |
@@ -370,8 +370,9 @@ timeline
         BIP 174 (2018) : PSBT workflow
         Taproot — BIP 341 (Nov 2021) : Schnorr, tapscript, key/script-path
     section 2023–2025
-        v26 (2023) : BIP 324 encrypted transport, BDB removed
-        v27+ baseline : assumeUTXO, separate wallet process, full RBF (v28)
+        v26 (2023) : BIP 324 encrypted transport, BDB deprecated
+        v27 baseline (2024) : assumeUTXO snapshot sync
+        v28 (2024) : full RBF default
 ```
 
 ## 11. What changed vs what did not
@@ -386,4 +387,4 @@ Fifteen years of development transformed the implementation, but the consensus-c
 
 This page compares two reference points across all domains but does not replace the domain pages. For full treatment of any subsystem, see the L1 page linked at the bottom of each section above.
 
-Out of scope: **Social and economic drift** (mining centralization, custody, governance, scaling — see the [design-intent vs current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)) -- **Security model** (threat analysis, 51% attack economics — deferred to L2 #10) -- **Upgrade mechanisms** (soft/hard fork theory, activation methods — deferred to L2 #11) -- **Satoshi's coding style** (see the [Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and [Windows development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) entries).
+Out of scope: **Social and economic drift** (mining centralization, custody, governance, scaling — see the [design-intent vs current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)) -- **Security model** (threat analysis, 51% attack economics — see [L2 #11 Security model](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/)) -- **Ecosystem** (Lightning, sidechains, Ordinals — see [L2 #10 Ecosystem](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/)) -- **Satoshi's coding style** (see the [Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and [Windows development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) entries).

@@ -195,7 +195,7 @@ Early Bitcoin wallets generated keys independently — each key was a fresh rand
 
 ```mermaid
 flowchart TB
-    SEED["BIP 39 mnemonic\n(12–24 words)"] --> MASTER["Master key + chain code\n(HMAC-SHA512 of seed)"]
+    SEED["Seed entropy\n(BIP 32 seed or\necosystem BIP 39 mnemonic)"] --> MASTER["Master key + chain code\n(HMAC-SHA512 of seed)"]
 
     MASTER --> M44["m/44'/0'/0'\n(BIP 44: P2PKH)"]
     MASTER --> M84["m/84'/0'/0'\n(BIP 84: P2WPKH)"]
@@ -226,7 +226,7 @@ flowchart TB
 | BIP | Year | Role | Mechanism |
 |---|---|---|---|
 | **BIP 32** | 2012 | Hierarchical deterministic key derivation | Defines the math: HMAC-SHA512 to derive child keys from a parent key + chain code. Supports hardened derivation (child cannot be used to recover parent) and normal derivation (allows watch-only wallets from an extended public key). |
-| **BIP 39** | 2013 | Mnemonic seed phrase | Encodes the initial entropy as 12–24 English words using a fixed wordlist. The mnemonic is converted to a 512-bit seed via PBKDF2-HMAC-SHA512 (2048 rounds). |
+| **BIP 39** | 2013 | Mnemonic seed phrase | Encodes initial entropy as 12–24 English words. Widely adopted by third-party wallets; **Bitcoin Core does not use BIP 39 natively** — it derives keys from raw entropy via BIP 32. Included here because the ecosystem convention is pervasive. |
 | **BIP 44** | 2014 | Multi-account structure | Standardizes the derivation path: `m / purpose' / coin_type' / account' / change / address_index`. Purpose 44 = P2PKH. |
 | **BIP 49** | 2017 | P2SH-wrapped SegWit paths | Purpose 49 = P2SH-P2WPKH (backward-compatible SegWit addresses starting with `3`). |
 | **BIP 84** | 2017 | Native SegWit paths | Purpose 84 = P2WPKH (Bech32 addresses starting with `bc1q`). |
@@ -262,7 +262,7 @@ All of Bitcoin's signature security — ECDSA and Schnorr alike — rests on the
 | **Hash functions** | SHA-256, SHA-256d, RIPEMD-160 via OpenSSL | Same algorithms; internal implementations with hardware acceleration (SHA-NI, ARMv8-A) |
 | **Address format** | Base58Check (P2PKH: `1...`) | Base58Check (legacy), Bech32 (P2WPKH/P2WSH: `bc1q...`), Bech32m (P2TR: `bc1p...`) |
 | **Key management** | Random key pool (non-deterministic) | HD derivation (BIP 32/39/44/84/86); descriptor wallets (BIP 380+) |
-| **Backup model** | Export `wallet.dat`; new keys require new backups | Single mnemonic seed phrase backs up all derived keys |
+| **Backup model** | Export `wallet.dat`; new keys require new backups | Descriptor backup covers all derived keys (Bitcoin Core uses raw BIP 32 seed, not BIP 39 mnemonic) |
 | **Sighash algorithm** | Legacy sighash (quadratic in number of inputs) | BIP 143 sighash (SegWit v0, linear) + BIP 341 sighash (Taproot, epoch-tagged) |
 
 ## 8. Limits of this page
