@@ -145,12 +145,12 @@ by sharing a directory with them.
 
 The thread-page filter in `src/data/threads.ts` enforces the same
 split at the rendering layer: `resolveThreadId()` returns `undefined`
-for editorial types (`article` / `analysis` / `biography`), so even
+for editorial types (`article` / `analysis` / `biography` / `design`), so even
 an editorial entry mistakenly placed under a primary-source directory
 does not appear in the thread view alongside the primary sources it
 references.
 
-## Editorial Entries (article / analysis / biography)
+## Editorial Entries (article / analysis / biography / design)
 
 The archive's entry types split into two groups:
 
@@ -158,7 +158,7 @@ The archive's entry types split into two groups:
   `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`. The
   body holds the verbatim source content. Rules in
   [§ Primary-Source Entries](#primary-source-entries) apply.
-- **Editorial types** (3) — `article`, `analysis`, `biography`. The
+- **Editorial types** (4) — `article`, `analysis`, `biography`, `design`. The
   body is Bitcoin Institute's own writing about the subject. This
   section governs them.
 
@@ -215,7 +215,7 @@ When the editorial framing for a primary source is substantial enough
 to warrant a full editorial entry, follow the split rule from
 [§ Primary-Source Entries](#primary-source-entries): create a separate
 `type: article` entry under `aftermath/` (or `type: analysis` under
-`analysis/`) and link it back to the raw primary entry via
+`analysis/`, or `type: design` under `design/`) and link it back to the raw primary entry via
 `quotes[].sourceEntryId` and `relatedEntries`.
 
 ### Quotation form inside an editorial body
@@ -261,13 +261,13 @@ the editorial voice.
 | Type group | `author` holds | On-page byline (`EntryMeta`) | List card byline (`EntryCard`) | OG / JSON-LD `article:author` |
 |---|---|---|---|---|
 | Primary-source (7) | the actual writer (email sender, forum poster, BIP author, tweet author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
-| `article` / `analysis` | the **subject** the entry is about (the person, document, or event the editorial reading covers) — falls back to `"Bitcoin Institute"` when no single subject exists (see exception below) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject, or `"Bitcoin Institute"` for no-single-subject entries) | **Bitcoin Institute** (forced by type) |
+| `article` / `analysis` / `design` | the **subject** the entry is about (the person, document, or event the editorial reading covers) — falls back to `"Bitcoin Institute"` when no single subject exists (see exception below) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject, or `"Bitcoin Institute"` for no-single-subject entries) | **Bitcoin Institute** (forced by type) |
 | `biography` | the **subject of the biography** (the person whose biography this is) | (no `/entries/{id}/` page; biography renders inside the participant page, where no byline is shown) | `author` verbatim (subject) | (no entry page; participant page handles its own metadata) |
 
-For `article` / `analysis`, the forced byline is implemented in
-`src/components/EntryMeta.astro` and the forced OG / JSON-LD author is
-implemented in `src/pages/entries/[...slug].astro` (and the JA
-mirror). Both branches key on `entry.data.type === 'article' || 'analysis'`.
+For `article` / `analysis` / `design`, the forced byline is implemented
+in `src/components/EntryMeta.astro` and the forced OG / JSON-LD author
+is implemented in `src/pages/entries/[...slug].astro` (and the JA
+mirror). Both branches key on `isEditorialType` (`article || analysis || design`).
 
 For `biography`, no `/entries/{id}/` page is generated
 (`src/pages/entries/[...slug].astro` filters biographies out at
@@ -278,10 +278,11 @@ it stays present for schema completeness and listing-card display.
 
 #### Exception: editorial entries without a single subject
 
-Some `article` / `analysis` entries are not anchored to one named
-person. Broad analyses (cross-chain genealogies, multi-candidate
-overviews, lineage maps), technical-event articles (a software
-release, a dependency swap, a protocol parameter change), and
+Some `article` / `analysis` / `design` entries are not anchored to one
+named person. Broad analyses (cross-chain genealogies, multi-candidate
+overviews, lineage maps), design documents (system-overview pages,
+domain-specific architecture readings), technical-event articles (a
+software release, a dependency swap, a protocol parameter change), and
 multi-actor incident articles all lack a single subject the way the
 genesis-block article has "Satoshi Nakamoto" as its subject.
 
@@ -682,7 +683,7 @@ normalized.
 | **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
 | **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` (role split between the two fields: see [§ Source Citation](#source-citation-sourceurl-vs-secondarysources)) | same | rendered at the end of the entry by `<SourceCitation />` |
 | **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
-| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography)). Also the home for novel-bridge context notes — see § Technical-Review Robustness. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
+| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography--design)). Also the home for novel-bridge context notes — see § Technical-Review Robustness. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
 | **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
 
@@ -719,7 +720,7 @@ normalized.
     the [Primary-Source Entries](#primary-source-entries) preservation
     principle applied to inline edit markers.
 13. **(C)/(D) usage policy by entry type (0523 editorial-note plan):**
-    - In **editorial entries** (`article` / `analysis` / `biography`),
+    - In **editorial entries** (`article` / `analysis` / `biography` / `design`),
       facts that read as natural body prose (related events,
       aftermath, biography, follow-up reporting, contemporary-value
       conversions, section-introducing sentences) **belong in body
@@ -808,7 +809,7 @@ or `court-document`. It must NOT point at:
 1. **The entry itself** (self-link) — clicking the chip just
    reloads the same page; the chip-to-source contract is broken.
 2. **Another editorial entry** (`article`, `analysis`,
-   `biography`) — the chip then leads from one piece of commentary
+   `biography`, `design`) — the chip then leads from one piece of commentary
    to another piece of commentary, never reaching the cited message.
 
 If the cited source has no primary entry in the Archive yet, either:
@@ -1229,10 +1230,11 @@ classification: see § Primary-Source Entries vs Editorial / Narrative
 Entries above; the two share an "event date" semantics here, but
 their bodies follow opposite rules — primary-source bodies hold the
 verbatim source, editorial bodies hold editor narrative around the
-source.) For `analysis` entries the frontmatter date is the date of
-the underlying event being analysed, not of the analysis itself, so
+source.) For `analysis` and `design` entries the frontmatter date is
+the date of the underlying event being analysed (or the protocol
+milestone being described), not of the editorial piece itself, so
 showing it as "Event" misleads readers into thinking the editorial
-piece was written on the day of the incident.
+piece was written on that date.
 
 ### `updatedAt` policy: body changes only
 
@@ -1274,7 +1276,7 @@ edit in the same commit.
 
 | Entry type | Detail-page meta line | Listing card date |
 |---|---|---|
-| `analysis` | `Created <createdAt> · Updated <updatedAt>` (no `Event` line) | `Updated <updatedAt>` |
+| `analysis` / `design` | `Created <createdAt> · Updated <updatedAt>` (no `Event` line) | `Updated <updatedAt>` |
 | All others | `Event <frontmatter.date> · Updated <updatedAt>` | `Event <frontmatter.date>` |
 
 The card label is rendered as a short prefix
@@ -1287,7 +1289,7 @@ strings via `i18n/ui.ts` (`entry.event`, `entry.created`,
 
 | Listing | Sort key (descending) |
 |---|---|
-| `/types/analysis/` (and JA mirror) | `git updatedAt` |
+| `/types/analysis/` and `/types/design/` (and JA mirrors) | `git updatedAt` |
 | All other `/types/<type>/` pages | `frontmatter.date` |
 | `/index.astro` (full-archive timeline) | `frontmatter.date` |
 | Per-category / per-source / per-participant pages | unchanged (context-dependent) |
@@ -1306,7 +1308,7 @@ The detail page emits `article:published_time` /
 
 | Entry type | `datePublished` / `article:published_time` | `dateModified` / `article:modified_time` |
 |---|---|---|
-| `analysis` | `createdAt` (fallback: `updatedAt`, then `frontmatter.date`) | `updatedAt` (fallback: `frontmatter.date`) |
+| `analysis` / `design` | `createdAt` (fallback: `updatedAt`, then `frontmatter.date`) | `updatedAt` (fallback: `frontmatter.date`) |
 | All others | `frontmatter.date` | `updatedAt` (fallback: `frontmatter.date`) |
 
 The fallback chain matters: a brand-new file that hasn't yet been
@@ -1315,12 +1317,15 @@ sort order or emit invalid metadata. Falling back to
 `frontmatter.date` keeps the page coherent until the next git-dates
 regeneration.
 
-### Why analysis is the only exception (for now)
+### Why only analysis and design use Created/Updated dates
 
-`article` and `biography` are derivative entries too, and could
-plausibly take the same treatment. The reason this guide treats only
-`analysis` differently is empirical:
+`article` and `biography` are editorial entries too, but they keep the
+`Event` date display. The distinction is empirical:
 
+- `analysis` and `design` entries are original editorial work by
+  Bitcoin Institute. Their frontmatter date anchors the subject event
+  (not the writing date), so `Created/Updated` from git history is the
+  meaningful date axis for the reader.
 - `article` entries (mostly `aftermath/*`) record an external news
   article, blog post, or interview; the article's publication date
   *is* the meaningful event-anchor and matches reader expectation.
@@ -1757,7 +1762,7 @@ Auto-linking deliberately skips:
 - Inside an existing `<a>` (no double-linking).
 - Inside `<code>` or `<pre>` (don't auto-link identifiers).
 - Inside `<blockquote>` — primary-source quote in editorial entries
-  (see [Editorial Entries](#editorial-entries-article--analysis--biography)).
+  (see [Editorial Entries](#editorial-entries-article--analysis--biography--design)).
   Same convention used by [`rehype-strip-archive-links`](#external-link-rot-handling).
 - Inside `<aside class="editor-inline">` — editor notes
   (see [Editorial Markers](#editorial-markers)). Editor notes keep

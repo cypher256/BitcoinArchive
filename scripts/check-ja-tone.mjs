@@ -263,13 +263,13 @@ function labelLines(body, meta) {
   // Default to frontmatter author if they have a known tone rule.
   // This ensures single-author files are checked even without speaker annotations.
   // Multi-speaker files should use <!-- speaker: Name --> to override.
-  // Editorial types (article / analysis / biography) are written in
-  // Bitcoin Institute's editorial voice, not in the named author's
-  // voice. Per STYLE_GUIDE.md § Editorial Entries the frontmatter
-  // `author` on these types names the subject the entry is about,
-  // so applying the subject's tone rule to the body would flag
-  // editor prose as a tone mismatch. Skip the default-author rule
-  // for all three editorial types; explicit <!-- speaker: NAME -->
+  // Editorial types (article / analysis / biography / design) are
+  // written in Bitcoin Institute's editorial voice, not in the named
+  // author's voice. Per STYLE_GUIDE.md § Editorial Entries the
+  // frontmatter `author` on these types names the subject the entry
+  // is about, so applying the subject's tone rule to the body would
+  // flag editor prose as a tone mismatch. Skip the default-author
+  // rule for all four editorial types; explicit <!-- speaker: NAME -->
   // blocks (e.g. quoted blockquotes attributed to the subject) still
   // get tone-checked normally.
   const EDITORIAL_TYPES = new Set(['article', 'analysis', 'biography', 'design']);

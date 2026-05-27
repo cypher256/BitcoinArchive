@@ -300,6 +300,7 @@ export const tagTranslations: Record<string, string> = {
   'succession': '後継',
   'supply': '供給量',
   'supply-design': '供給設計',
+  'system-overview': 'システム全体設計',
   'synchronization': '同期',
 
   // T
@@ -354,6 +355,7 @@ export const tagTranslations: Record<string, string> = {
   'alternative-genesis': '代替ジェネシス',
   'analysis': '分析',
   'android': 'Android',
+  'architecture': 'アーキテクチャ',
   'api': 'API',
   'asymmetry': '非対称性',
   'attack-classification': '攻撃分類',
@@ -677,6 +679,7 @@ export const tagTranslations: Record<string, string> = {
   'race-day-alibi': 'レース日のアリバイ',
   'investigation': '調査',
   'bitcoin': 'ビットコイン',
+  'design': '設計書',
   'design-lineage': '設計系譜',
   'design-intent': '設計意図',
   'design-drift': '設計乖離',

@@ -46,7 +46,7 @@ function entryUpdatedTs(id: string, fallback: Date): number {
   const ts = rec?.updatedAt ?? rec?.createdAt;
   return ts ? new Date(ts).getTime() : fallback.getTime();
 }
-const isAnalysisType = type === 'analysis';
+const isAnalysisType = type === 'analysis' || type === 'design';
 const displayEntries = isAnalysisType
   ? collapseThreads(filtered, threadCounts, threadStarters)
       .slice()

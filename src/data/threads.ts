@@ -148,7 +148,7 @@ interface ThreadEntry {
  * - aftermath/file.md, bip/file.md, etc. -> no thread
  *
  * Type filter: even if directory layout would yield a thread, an entry
- * with an editorial type (article / analysis / biography) is excluded
+ * with an editorial type (article / analysis / biography / design) is excluded
  * from threads. Threads display the primary-source conversation only;
  * editorial commentary is reached via relatedEntries / quotes
  * sourceEntryId, not by appearing in the thread view alongside the

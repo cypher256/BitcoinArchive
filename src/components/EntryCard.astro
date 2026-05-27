@@ -3,9 +3,9 @@ import { formatDate, localePath, translateParticipantName, findAuthorParticipant
 import type { Lang } from '../i18n/ui';
 
 // Card date axis:
-//   - analysis  → updatedAt (editorial; "this is when it was last
-//                  revised"). Falls back to frontmatter.date if git
-//                  history is missing.
+//   - analysis / design → updatedAt (editorial; "this is when it was
+//                  last revised"). Falls back to frontmatter.date if
+//                  git history is missing.
 //   - all other → frontmatter.date (historical anchor for the entry).
 // A short label ("Event" / "Updated" / "事象" / "更新") is rendered
 // before the date so the axis is visible. See
@@ -36,7 +36,7 @@ interface Props {
 
 const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt } = Astro.props;
 const isBiography = entryType === 'biography';
-const isAnalysis = entryType === 'analysis';
+const isAnalysis = entryType === 'analysis' || entryType === 'design';
 const t = useTranslations(lang);
 // Pick the date axis for the card. Analyses render the editorial
 // updatedAt (with a fallback chain so a missing git record never
@@ -59,7 +59,7 @@ const displayAuthor = translateParticipantName(authorParticipant?.name ?? author
 // The `isSatoshi` frontmatter flag means "this entry is about or by
 // Satoshi" (used for featured highlighting site-wide). It must not be
 // used to color the author name in the card byline, because for
-// editorial types (article / analysis / biography) the frontmatter
+// editorial types (article / analysis / biography / design) the frontmatter
 // `author` is the subject (per STYLE_GUIDE.md § Editorial Entries) —
 // for Satoshi-subject entries that flag is true while the actual
 // editorial writer is Bitcoin Institute. Color the author slot only
