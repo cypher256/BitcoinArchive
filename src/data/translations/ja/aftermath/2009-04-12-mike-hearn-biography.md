@@ -45,7 +45,7 @@ translationStatus: complete
 2009 年 4 月 12 日、Google のエンジニアだったマイク・ハーンは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)。その後 2 年間で技術的なメールが続いた —— スケーリング、簡易決済検証、長期的なマイニングの形。ハーンはサトシが送信した最後の私的メールの一つを受け取った相手である:
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ。」
+> 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
 それから 5 年近く経った 2016 年 1 月 14 日、ハーンは Medium に[「The resolution of the Bitcoin experiment」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)を公開した。冒頭は 1 行だった:
 
