@@ -22,6 +22,7 @@ relatedEntries:
   - "analysis/2026-05-24-satoshi-design-vs-current-reality"
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "aftermath/2009-01-03-genesis-block"
+  - "design/2009-01-03-bitcoin-transaction-design"
 inlineLinkKeywords:
   - "Bitcoin system design"
   - "design-document series"

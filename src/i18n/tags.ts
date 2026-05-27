@@ -285,6 +285,7 @@ export const tagTranslations: Record<string, string> = {
   'scam': '詐欺',
   'script': 'スクリプト',
   'security': 'セキュリティ',
+  'signatures': '署名',
   'simplified-payment-verification': '簡易支払い検証 (SPV)',
   'security-breach': 'セキュリティ侵害',
   'security-budget': 'セキュリティ予算',
