@@ -39,6 +39,9 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-block-chain-design
   - design/2009-01-03-bitcoin-consensus-design
+  - design/2009-01-03-bitcoin-p2p-network-design
+  - design/2009-01-03-bitcoin-monetary-design
+  - design/2009-01-03-bitcoin-cryptography-design
 ---
 
 **PDF:** [View the Bitcoin whitepaper (PDF)](/BitcoinArchive/documents/bitcoin.pdf)

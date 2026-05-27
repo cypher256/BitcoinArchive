@@ -21,6 +21,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - design/2009-01-03-bitcoin-consensus-design
+  - design/2009-01-03-bitcoin-p2p-network-design
 ---
 
 ## Introduction

@@ -25,6 +25,9 @@ relatedEntries:
   - "design/2009-01-03-bitcoin-transaction-design"
   - "design/2009-01-03-bitcoin-block-chain-design"
   - "design/2009-01-03-bitcoin-consensus-design"
+  - "design/2009-01-03-bitcoin-p2p-network-design"
+  - "design/2009-01-03-bitcoin-monetary-design"
+  - "design/2009-01-03-bitcoin-cryptography-design"
 inlineLinkKeywords:
   - "Bitcoin system design"
   - "design-document series"
@@ -236,11 +239,11 @@ mindmap
       L0: System overview
     L1 Domains
       L1 1: Network
-      L1 2: Consensus
-      L1 3: Transactions
-      L1 4: Script
-      L1 5: Blocks
-      L1 6: Mining
+      L1 2: Transactions
+      L1 3: Blocks
+      L1 4: Consensus
+      L1 5: Monetary
+      L1 6: Cryptography
       L1 7: Storage
       L1 8: Wallet
     L2 Cross-cutting

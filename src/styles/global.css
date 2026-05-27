@@ -495,6 +495,18 @@ img {
   height: auto;
 }
 
+/* Mermaid mindmap: force light text on root and node labels in dark mode.
+   The mindmap diagram type uses inline fills that don't track our
+   --mermaid-text token, so the default dark text becomes invisible on
+   the theme's dark node backgrounds. Override with !important so the
+   baked inline style loses. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) .mindmapDiagram .nodeLabel { color: var(--color-text) !important; }
+  :root:not([data-mode="light"]) .mindmapDiagram .root circle { fill: var(--color-accent) !important; }
+}
+:root[data-mode="dark"] .mindmapDiagram .nodeLabel { color: var(--color-text) !important; }
+:root[data-mode="dark"] .mindmapDiagram .root circle { fill: var(--color-accent) !important; }
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-mode="light"]) .entry-content img[src*="/images/whitepaper/"] {
     filter: invert(1);

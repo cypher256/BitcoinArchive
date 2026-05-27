@@ -46,6 +46,7 @@ relatedEntries:
   - bip/2020-01-19-bip-0341
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2008-10-31-bitcoin-design-lineage
+  - design/2009-01-03-bitcoin-cryptography-design
 translationStatus: complete
 ---
 

@@ -50,6 +50,7 @@ relatedEntries:
   - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2011-09-01-vitalik-buterin-biography
+  - design/2009-01-03-bitcoin-monetary-design
 inlineLinkKeywords:
   - "fixed supply"
   - "21 million cap"
