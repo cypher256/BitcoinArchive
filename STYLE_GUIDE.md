@@ -2170,6 +2170,32 @@ timeline); listing 5+ candidates with attributes (that's a table or
 chart). When you notice these shapes mid-draft, switch — do not finish
 the prose version "for now."
 
+### Link-color confusion rule
+
+**Non-link text must never use the link color (`--color-link`) or any
+hue close enough to be mistaken for a clickable element.** Blue text
+and blue underlines are reserved for links. Applying them to
+non-interactive text (headings, subtitles, labels, accent spans)
+trains readers to click something that does nothing — a basic UX
+violation.
+
+This applies to all rendered surfaces: page CSS, Mermaid diagram
+labels, d3 chart annotations, and any component that places colored
+text on the page.
+
+| Surface | Link color (reserved) | Safe accent alternatives |
+|---|---|---|
+| Light theme | `--color-link` `#2563eb` (blue) | `--color-hero-subtitle` `#a78347` (gold), `--color-satoshi` `#c2410c` (amber), `--color-text-muted` (slate) |
+| Dark theme | `--color-link` `#7ab8ff` (light blue) | `--color-hero-subtitle` `#d4a85c` (gold), `--color-satoshi` `#fbbf24` (amber), `--color-text-muted` (slate) |
+
+When choosing a non-link accent color, prefer warm tones (gold, amber,
+rose) or neutral tones (slate, gray) over any blue-adjacent hue. The
+`--color-accent` token (`#1f3a5f` light / `#7aa3d4` dark) is
+navy-blue and is acceptable for structural UI (borders, badges) where
+the element shape already communicates non-clickability, but it should
+not be used as standalone text color in a context where a reader might
+try to click it.
+
 ### Mermaid: editor-friendly diagrams
 
 The archive renders ` ```mermaid ` code blocks to inline SVG at build

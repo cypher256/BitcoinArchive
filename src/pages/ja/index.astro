@@ -130,9 +130,9 @@ function tagWeight(count: number, max: number): number {
 >
   <div class="container-wide">
     <section class="hero">
-      <h1>{t('site.title')}</h1>
+      <h1>Bitcoin Institute</h1>
       <p class="subtitle">{t('site.subtitle')}</p>
-      <p class="description">{t('site.description')}</p>
+      <p class="description" set:html={t('site.description')} />
     </section>
 
     <section class="dashboard-section start-here">
@@ -391,9 +391,10 @@ function tagWeight(count: number, max: number): number {
   }
   .subtitle {
     font-family: var(--font-heading);
-    font-size: 1.2rem;
-    color: var(--color-text-muted);
+    font-size: 1.25rem;
+    color: var(--color-hero-subtitle);
     margin: 0.5rem 0;
+    letter-spacing: 0.02em;
   }
   .description {
     font-size: 1rem;
@@ -579,5 +580,17 @@ function tagWeight(count: number, max: number): number {
     .hero h1 {
       font-size: 2rem;
     }
+  }
+
+  .description { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .description,
+    .hero-demo .desc { white-space: normal; }
+    .description :global(.phrase),
+    .hero-demo .desc :global(.phrase) { white-space: nowrap; }
+  }
+  @media (max-width: 400px) {
+    .description :global(.phrase),
+    .hero-demo .desc :global(.phrase) { white-space: normal; }
   }
 </style>

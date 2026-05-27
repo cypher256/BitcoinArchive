@@ -11,7 +11,7 @@ export const ui = {
   en: {
     'site.title': 'Bitcoin Institute',
     'site.subtitle': 'Who Is Satoshi Nakamoto?',
-    'site.description': 'The Satoshi Nakamoto reference — primary sources, conversations, and editorial readings.',
+    'site.description': '<span class="phrase">The Satoshi Nakamoto reference —</span> <span class="phrase">primary sources, conversations, and editorial readings.</span>',
     'nav.home': 'Home',
     'nav.timeline': 'Timeline',
     'nav.entries': 'All Entries',
@@ -214,7 +214,7 @@ export const ui = {
   ja: {
     'site.title': 'ビットコイン・インスティテュート',
     'site.subtitle': 'サトシ・ナカモトとは何者か',
-    'site.description': 'サトシ・ナカモトのことなら、ここを見ればわかる ― 一次資料、関連する会話、編者による読み解き。',
+    'site.description': '<span class="phrase">サトシ・ナカモトのことなら、ここを見ればわかる ―</span> <span class="phrase">一次資料、関連する会話、編者による読み解き。</span>',
     'nav.home': 'ホーム',
     'nav.timeline': 'タイムライン',
     'nav.entries': '全エントリー',
