@@ -50,9 +50,9 @@ NewLibertyStandard はコインが枯渇しないように、価格を市場価�
 > 以下も必要かもしれないと言っている人がいる：
 > mkdir /var/www/bitcoin/smf/packages/temp
 >
-> エラーログのエラーは：
-> failed to open stream: Permission denied
-> File: /var/www/bitcoin/smf/Sources/Subs-Package.php
+> エラーログのエラーは：<br>
+> failed to open stream: Permission denied<br>
+> File: /var/www/bitcoin/smf/Sources/Subs-Package.php<br>
 > （これは最初のファイルに過ぎないはずだ）
 >
 > 設定が完了したら、このSMFインストールを公開しても大丈夫か？forum.bitcoin.orgをそこに向けられるはずだ。
