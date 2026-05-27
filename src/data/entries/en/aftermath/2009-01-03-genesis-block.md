@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
   - aftermath/2011-04-26-satoshi-final-known-email
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - design/2009-01-03-bitcoin-system-design-overview
 quotes:
   - id: "q1"
     person: "The Times"

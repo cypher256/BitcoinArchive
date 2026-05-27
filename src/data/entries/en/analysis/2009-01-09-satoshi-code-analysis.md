@@ -42,6 +42,7 @@ relatedEntries:
   - "aftermath/2010-06-11-gavin-andresen-biography"
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
+  - "design/2009-01-03-bitcoin-system-design-overview"
 inlineLinkKeywords:
   - "Satoshi's coding style"
   - "coding style fingerprint"
