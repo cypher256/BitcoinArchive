@@ -45,7 +45,12 @@ quotes:
 >>
 >> Linux版をGTKなしで動作させるのは別の作業になる。
 >
-> はい、Python を使っています。VPS でまだ Bitcoin を動かしていないので、JSON-RPC のテストはまだしていないです。GTK ライブラリがインストールされていても、ウィンドウマネージャーなしでは動作しないですね。wxWidgets フォーラム（http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、あまり手がかりはありませんでした。2 つの異なるバイナリを作る必要があるかもしれないです。
+> はい、Pythonを使っています。VPSでまだBitcoinを動かしていないので、JSON-RPC
+> のテストはまだしていません。GTKライブラリがインストールされていても、ウィンドウ
+> マネージャーなしでは動作しません。wxWidgetsフォーラム
+> （http://wxforum.shadonet.com/viewtopic.php?t=26954）で質問しましたが、
+> あまり手がかりはありませんでした。2つの異なるバイナリを作る必要があるかも
+> しれません。
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->

@@ -21,9 +21,9 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> listtransactions を何に使う必要があるのか？
+> listtransactions は何のために使う必要があるんだ？
 >
-> listtransactions を実装しなかった理由は、Web 開発者に使わせたくないからだ。受信した支払いの監視にそれを利用するのは非常に簡単だろう。しかし、その方法で何も取りこぼさないようにする信頼できる方法はない。getreceivedbyaddress と getreceivedbylabel を使った確実なサンプルコードを用意して「これを使って！ これを使って！ listtransactions は使わないで！」と言えるようになるまで、listtransactions を実装すべきではないと思う。
+> listtransactions を実装しなかった理由は、Webプログラマに使ってほしくないからだ。受信した支払いを監視するために、簡単にこれに飛びついてしまうだろう。だがその方法では、取りこぼしがないことを確実に保証する信頼できるやり方は存在しない。getreceivedbyaddress と getreceivedbylabel を使った確かなサンプルコードがあって「これを使え！ これを使え！ listtransactions は使うな！」と示せるようになるまでは、listtransactions を実装すべきではないと思う。
 
 どうやら君は明らかに CLI より GUI を好んでいるようだ。
 だが GUI は本当にひどいインターフェースだ。例えば SSH アクセスできる 5 つのノードがあって、こんなふうにループで状態を定期的に収集したい場合などに：

@@ -43,7 +43,8 @@ translationStatus: complete
 >> ノートパソコンを持っていないか？
 >
 <!-- speaker: Martti Malmi -->
-> はい。Python の JSON-RPC でテストしましたが、問題なく動作しているようです！本当に使いやすいですよ。
+> はい。PythonのJSON-RPCでテストしましたが、問題なく動作しているようです！
+> 本当に使いやすいです。
 
 <!-- /tone-skip -->
 

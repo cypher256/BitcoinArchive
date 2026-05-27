@@ -97,7 +97,10 @@ bitcoin -proxy=127.0.0.1:9050 -addnode=<ノードの ip>
 >> 対するストレステストに含めることができるよ。
 >>
 >> <!-- quote: q3 -->
->>> util.h で QueryPerformanceCounter を Linux の gettimeofday に置き換える#ifdef を作りました。Unicode/ANSI のエラーは wxWidgets 2.9 にアップデートしたらコード変更なしで解決しました。現在 Linux で出ている唯一のコンパイルエラーは util.h の heapchk()からのものです。
+>>> util.hでQueryPerformanceCounterをLinuxのgettimeofdayに置き換える
+>>> #ifdefを作りました。Unicode/ANSIのエラーはwxWidgets 2.9にアップデート
+>>> したらコード変更なしで解決しました。現在Linuxで出ている唯一のコンパイル
+>>> エラーはutil.hのheapchk()からのものです。
 >>>
 >>> <!-- quote: q4 -->
 >>>> 見つけた移植性のないコードをいくつか修正した：

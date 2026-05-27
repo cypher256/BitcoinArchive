@@ -34,7 +34,8 @@ quotes:
 <!-- speaker: Michel Bauwens -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> きみのプロジェクトはどの程度動いているのか? 実生活で使えるようになるのはどれくらい先になると思うか?
+> プロジェクトはどの程度稼働していますか？実生活で使えるようになるのは
+> いつ頃だと思いますか？
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
