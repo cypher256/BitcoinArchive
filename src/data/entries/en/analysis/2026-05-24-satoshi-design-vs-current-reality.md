@@ -39,6 +39,7 @@ relatedEntries:
   - aftermath/2018-10-01-ray-dillinger-interview
   - aftermath/2011-04-26-satoshi-final-known-email
   - design/2009-01-03-bitcoin-system-design-overview
+  - design/2009-01-03-bitcoin-architecture-evolution
 ---
 
 Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks four axes where the gap is largest, with pointers to the records.

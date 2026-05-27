@@ -30,6 +30,9 @@ relatedEntries:
   - "design/2009-01-03-bitcoin-cryptography-design"
   - "design/2009-01-03-bitcoin-storage-design"
   - "design/2009-01-03-bitcoin-wallet-design"
+  - "design/2009-01-03-bitcoin-architecture-evolution"
+  - "design/2009-01-03-bitcoin-ecosystem-design"
+  - "design/2009-01-03-bitcoin-security-model"
 inlineLinkKeywords:
   - "Bitcoin system design"
   - "design-document series"

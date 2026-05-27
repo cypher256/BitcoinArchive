@@ -21,6 +21,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-block-chain-design
   - design/2009-01-03-bitcoin-consensus-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - design/2009-01-03-bitcoin-ecosystem-design
+  - design/2009-01-03-bitcoin-security-model
 inlineLinkKeywords:
   - "P2P network"
   - "peer discovery"

@@ -22,6 +22,7 @@ relatedEntries:
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-monetary-design
+  - design/2009-01-03-bitcoin-security-model
 inlineLinkKeywords:
   - "proof of work"
   - "difficulty adjustment"

@@ -46,6 +46,7 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - design/2009-01-03-bitcoin-architecture-evolution
 translationStatus: complete
 ---
 

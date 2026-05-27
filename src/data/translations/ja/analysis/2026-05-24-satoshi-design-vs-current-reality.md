@@ -39,6 +39,7 @@ relatedEntries:
   - aftermath/2018-10-01-ray-dillinger-interview
   - aftermath/2011-04-26-satoshi-final-known-email
   - design/2009-01-03-bitcoin-system-design-overview
+  - design/2009-01-03-bitcoin-architecture-evolution
 translationStatus: complete
 ---
 

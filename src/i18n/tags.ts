@@ -194,6 +194,7 @@ export const tagTranslations: Record<string, string> = {
   'lesswrong': 'LessWrong',
   'libertarian': 'リバタリアン',
   'liberty': '自由',
+  'lightning': 'Lightning',
   'locktime': 'ロックタイム',
   'longest-chain': '最長チェーン',
   'lost-coins': '消失コイン',
@@ -234,6 +235,7 @@ export const tagTranslations: Record<string, string> = {
   // O
   'obituary': '訃報',
   'open-source': 'オープンソース',
+  'ordinals': 'Ordinals',
   'origins': '起源',
   'overflow': 'オーバーフロー',
   'overflow-bug': 'オーバーフローバグ',
@@ -288,6 +290,7 @@ export const tagTranslations: Record<string, string> = {
   'scam': '詐欺',
   'script': 'スクリプト',
   'security': 'セキュリティ',
+  'sidechains': 'サイドチェーン',
   'signatures': '署名',
   'simplified-payment-verification': '簡易支払い検証 (SPV)',
   'security-breach': 'セキュリティ侵害',

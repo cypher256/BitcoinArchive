@@ -47,6 +47,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2008-10-31-bitcoin-design-lineage
   - design/2009-01-03-bitcoin-cryptography-design
+  - design/2009-01-03-bitcoin-security-model
 translationStatus: complete
 ---
 

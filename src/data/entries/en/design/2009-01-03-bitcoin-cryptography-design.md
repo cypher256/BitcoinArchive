@@ -21,6 +21,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-18-bitcoin-quantum-threat
   - design/2009-01-03-bitcoin-wallet-design
+  - design/2009-01-03-bitcoin-security-model
 inlineLinkKeywords:
   - "secp256k1"
   - "ECDSA"
