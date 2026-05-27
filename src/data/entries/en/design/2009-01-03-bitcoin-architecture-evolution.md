@@ -52,9 +52,9 @@ flowchart TB
         NODE --> STORE_N["Storage layer"]
         STORE_N --> LEVEL["LevelDB<br/>(UTXO set + block index)"]
         STORE_N --> FLAT["Flat files<br/>(blk*.dat / rev*.dat)"]
-        WALL_N["bitcoin-wallet<br/>(optional separate process)"]
+        WALL_N["bitcoin-wallet<br/>(logical separation;<br/>experimental multiprocess)"]
         WALL_N --> SQL["SQLite<br/>(descriptor wallet)"]
-        NODE -- "IPC" --- WALL_N
+        NODE -.- WALL_N
         QT["bitcoin-qt<br/>(optional GUI)"]
         NODE --- QT
         EXT_MINE["External miner<br/>(via getblocktemplate /<br/>Stratum v2)"]
@@ -65,7 +65,7 @@ flowchart TB
 | Aspect | v0.1 (January 2009) | v27+ baseline |
 |---|---|---|
 | **Binary** | Single executable: wallet + miner + GUI + node | `bitcoind` (node), `bitcoin-wallet` (wallet), `bitcoin-qt` (GUI) — separate binaries |
-| **Process model** | One process, one address space | Node and wallet can run as separate processes (IPC via Cap'n Proto) |
+| **Process model** | One process, one address space | Logically separated; experimental multiprocess work in progress (not yet default) |
 | **Database** | Berkeley DB for all persistent state | LevelDB (UTXO set, block index) + flat files (blocks) + SQLite (wallet) |
 | **Mining** | Internal CPU miner, same process | External via `getblocktemplate` (BIP 22/23); Stratum v2 in ecosystem |
 | **Interfaces** | None at launch; basic JSON-RPC added shortly after | JSON-RPC (full read/write), REST (read-only), ZMQ (push notifications) |
@@ -331,7 +331,7 @@ flowchart LR
 
     subgraph V27_WALL["v27+ — wallet"]
         direction TB
-        SEP["Optional separate process<br/>(IPC via Cap'n Proto)"]
+        SEP["Logical separation<br/>(experimental multiprocess)"]
         DESC["Descriptor wallets<br/>(deterministic derivation)"]
         SQLITE["SQLite<br/>(wallet.dat, new format)"]
         SEED["One-time seed backup<br/>(covers all derived keys)"]
@@ -341,7 +341,7 @@ flowchart LR
 
 | Feature | v0.1 | v27+ baseline | Key BIP / version |
 |---|---|---|---|
-| **Architecture** | Embedded in single binary | Logically separated; optionally separate process via IPC | v27+ |
+| **Architecture** | Embedded in single binary | Logically separated; experimental multiprocess in progress (not yet default) | v27+ |
 | **Key generation** | Random key pool (100 independent keys) | Descriptor wallets: deterministic from master seed | BIP 380+ (default v23) |
 | **Key storage** | Berkeley DB (`wallet.dat`) | SQLite (`wallet.dat`, new format) | v26 (BDB deprecated for new wallets) |
 | **Backup model** | Export file after every new key | Descriptor backup covers all derived keys (raw BIP 32 seed, not BIP 39) | BIP 32 + descriptors |
@@ -349,7 +349,7 @@ flowchart LR
 | **Multi-device signing** | Not supported | PSBT workflow: create → update → sign → combine → finalize | BIP 174, 370 |
 | **Fee bumping** | Not available | Replace-by-Fee (`bumpfee`), CPFP | BIP 125 |
 | **Interfaces** | None at launch; basic JSON-RPC added shortly after | JSON-RPC (full), REST (read-only), ZMQ (push notifications) | — |
-| **Process model** | Monolithic (wallet + node + miner + GUI) | Modular: `bitcoind`, `bitcoin-wallet`, `bitcoin-qt` | v27+ |
+| **Process model** | Monolithic (wallet + node + miner + GUI) | Modular binaries: `bitcoind`, `bitcoin-wallet`, `bitcoin-qt`; runtime process separation experimental | v27+ |
 
 *Detailed treatment: [L1 #8 — Wallet design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-wallet-design/)*
 

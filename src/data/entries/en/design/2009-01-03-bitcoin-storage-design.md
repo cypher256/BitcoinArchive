@@ -248,7 +248,7 @@ flowchart TB
 
 ## 7. assumeUTXO
 
-Initial block download (IBD) — validating every block from the genesis block to the current tip — takes several hours to over a day, depending on hardware and network speed. **assumeUTXO** (introduced incrementally from v24.0 onward, with full support in v27+) provides an alternative bootstrap path: the node loads a pre-computed UTXO snapshot, immediately begins validating new blocks from the snapshot height, and verifies the full historical chain in the background.
+Initial block download (IBD) — validating every block from the genesis block to the current tip — takes several hours to over a day, depending on hardware and network speed. **assumeUTXO** (`loadtxoutset` RPC introduced in v26.0; mainnet snapshot parameters at height 840,000 added in v28.0) provides an alternative bootstrap path: the node loads a pre-computed UTXO snapshot, immediately begins validating new blocks from the snapshot height, and verifies the full historical chain in the background.
 
 ### assumeUTXO bootstrap process
 
@@ -298,7 +298,7 @@ assumeUTXO does not change the consensus rules. It changes the **order** in whic
 | **Undo data** | Not stored; reorganizations required re-validation from the fork point | Dedicated `rev*.dat` files store previous coin state for fast rollback |
 | **Block index** | BDB-based index | LevelDB-based index with `nChainWork` tracking |
 | **Pruning** | Not available; every node stored the full chain | Available since v0.11 (2015); minimum retention 550 MiB |
-| **assumeUTXO** | Not available | Snapshot-based bootstrap with background verification (v27+) |
+| **assumeUTXO** | Not available | Snapshot-based bootstrap with background verification (introduced v26; mainnet parameters v28) |
 | **Mempool persistence** | Not persisted across restarts | Saved to `mempool.dat` on shutdown; reloaded on startup |
 | **Database migration** | N/A | BDB → LevelDB migration in v0.8 (2013); the single largest storage-layer change in Bitcoin Core's history |
 | **Initial block download** | Minutes (few blocks existed) | Hours to >1 day without assumeUTXO; minutes with assumeUTXO snapshot |

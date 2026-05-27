@@ -293,7 +293,7 @@ Modern Bitcoin Core (v27+ baseline) uses a multi-strategy pipeline: attempt BnB 
 | **Malleability** | Vulnerable — scriptSig can be modified by third parties | Fixed — witness is excluded from txid |
 | **Weight / size limit** | No per-transaction weight; block size limit added in 2010 | 400,000 WU max standard transaction weight |
 | **Timelocks** | Absolute locktime only (block height or Unix time) | Absolute (locktime) + relative (BIP 68 sequence) + script-level (`OP_CLTV`, `OP_CSV`) |
-| **Replace-by-Fee** | Not implemented; first-seen policy | Full RBF (BIP 125; default since v24.0, mandatory mempool policy in v28.0) |
+| **Replace-by-Fee** | Not implemented; first-seen policy | Opt-in RBF (BIP 125, v0.12); `-mempoolfullrbf` option added v24.0; **full RBF default since v28.0** |
 | **Fee estimation** | None (transactions were free in practice) | `estimatesmartfee` — bucket-based mempool fee estimation |
 | **Coin selection** | Simple largest-first | BnB + knapsack + waste metric pipeline |
 | **Cryptography library** | OpenSSL | libsecp256k1 (constant-time, formally audited) |

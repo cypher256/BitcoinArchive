@@ -157,7 +157,7 @@ flowchart TD
 | Mechanism | Description | Introduced | How it works |
 |---|---|---|---|
 | **Fee rate** | Satoshis per virtual byte (sat/vB) | Implicit from v0.1 | Higher fee rate = higher priority in the block template. Virtual bytes account for SegWit's witness discount. |
-| **Replace-by-Fee (RBF)** | Sender replaces an unconfirmed transaction with a higher-fee version | BIP 125 (opt-in, 2016); full RBF default since v24.0 | The replacement must pay a strictly higher fee rate and cover the relay cost of the original. |
+| **Replace-by-Fee (RBF)** | Sender replaces an unconfirmed transaction with a higher-fee version | BIP 125 (opt-in, v0.12); `-mempoolfullrbf` option v24.0; **full RBF default since v28.0** | The replacement must pay a strictly higher fee rate and cover the relay cost of the original. |
 | **Child-Pays-for-Parent (CPFP)** | A child transaction spends a low-fee parent's output with a high enough fee to make the package attractive | Mempool ancestor tracking (2016+) | Miners evaluate packages: including the child requires including the parent, so the combined fee rate determines priority. |
 | **Fee estimation** | Node-side algorithm predicts the fee rate needed for confirmation within a target number of blocks | `estimatesmartfee` (v0.15+) | Tracks historical confirmation times in fee-rate buckets. Returns a conservative estimate for a given confirmation target. |
 | **Package relay** | Relay low-fee parent transactions alongside their high-fee children as a single unit | Under deployment (v28+) | Ensures CPFP works across the relay network, not just at the mining node. |
@@ -205,7 +205,7 @@ Each halving is a discrete monetary-policy event: the rate of new supply issuanc
 | **1st** | Nov 28, 2012 | 210,000 | 50 → 25 BTC | ~$12 | ~25 TH/s | First ASIC miners arriving; GPU era ending |
 | **2nd** | Jul 9, 2016 | 420,000 | 25 → 12.5 BTC | ~$650 | ~1.5 EH/s | SegWit debate underway; Ethereum launched one year prior |
 | **3rd** | May 11, 2020 | 630,000 | 12.5 → 6.25 BTC | ~$8,600 | ~120 EH/s | Institutional adoption accelerating |
-| **4th** | Apr 19, 2024 | 840,000 | 6.25 → 3.125 BTC | ~$64,000 | ~600 EH/s | Spot Bitcoin ETFs approved in US (Jan 2024); Ordinals/inscriptions driving fee spikes |
+| **4th** | Apr 19, 2024 | 840,000 | 6.25 → 3.125 BTC | ~$64,000 (mid-2024) | ~600 EH/s (mid-2024) | Spot Bitcoin ETFs approved in US (Jan 2024); Ordinals/inscriptions driving fee spikes |
 
 Each halving forces a structural adjustment in the mining industry. Miners whose operational costs exceed revenue at the new subsidy level must either find cheaper energy, upgrade to more efficient hardware, or shut down. Historically, hash rate has dipped briefly after each halving before resuming growth — evidence that the surviving mining fleet is more cost-efficient than its predecessor.
 
@@ -253,7 +253,7 @@ This question is explored in depth in the [mining reward exhaustion analysis](/B
 | **Coinbase height** | Not required | Required (BIP 34, activated 2013) — block height serialized in coinbase scriptSig |
 | **Fee behavior** | Most transactions free; priority based on coin age | Fee-rate auction (sat/vB); coin-age priority removed |
 | **Fee estimation** | None — fees were negligible | `estimatesmartfee` — bucket-based mempool fee estimation |
-| **Replace-by-Fee** | Not implemented; first-seen policy | Full RBF (BIP 125; default since v24.0) |
+| **Replace-by-Fee** | Not implemented; first-seen policy | Opt-in RBF (BIP 125, v0.12); **full RBF default since v28.0** |
 | **CPFP** | Not implemented | Ancestor-aware mempool; package evaluation for mining |
 | **Package relay** | Not applicable | Under deployment (v28+) — relay parent+child as unit |
 | **Block template** | Internal miner; trivial ordering | `getblocktemplate` (BIP 22/23); fee-rate-sorted mempool; SegWit weight accounting |

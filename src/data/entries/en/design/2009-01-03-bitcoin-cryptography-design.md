@@ -261,7 +261,7 @@ All of Bitcoin's signature security — ECDSA and Schnorr alike — rests on the
 | **Nonce generation** | OpenSSL PRNG | RFC 6979 deterministic nonces (ECDSA); BIP 340 synthetic nonces (Schnorr) |
 | **Hash functions** | SHA-256, SHA-256d, RIPEMD-160 via OpenSSL | Same algorithms; internal implementations with hardware acceleration (SHA-NI, ARMv8-A) |
 | **Address format** | Base58Check (P2PKH: `1...`) | Base58Check (legacy), Bech32 (P2WPKH/P2WSH: `bc1q...`), Bech32m (P2TR: `bc1p...`) |
-| **Key management** | Random key pool (non-deterministic) | HD derivation (BIP 32/39/44/84/86); descriptor wallets (BIP 380+) |
+| **Key management** | Random key pool (non-deterministic) | HD derivation (BIP 32/44/84/86); descriptor wallets (BIP 380+). Core uses raw BIP 32 seed, not BIP 39 |
 | **Backup model** | Export `wallet.dat`; new keys require new backups | Descriptor backup covers all derived keys (Bitcoin Core uses raw BIP 32 seed, not BIP 39 mnemonic) |
 | **Sighash algorithm** | Legacy sighash (quadratic in number of inputs) | BIP 143 sighash (SegWit v0, linear) + BIP 341 sighash (Taproot, epoch-tagged) |
 

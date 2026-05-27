@@ -300,7 +300,7 @@ flowchart TD
 
 | Parameter | Approximate value (2024) | Significance |
 |---|---|---|
-| **Network hash rate** | ~600 EH/s (exahashes per second) | The total computational power that an attacker must exceed |
+| **Network hash rate** | ~600 EH/s (as of mid-2024) | The total computational power that an attacker must exceed |
 | **Daily miner revenue** | ~$30–40 M (subsidy + fees at typical prices) | The economic flow that sustains the current hash rate |
 | **ASIC unit cost** | ~$15–30 per TH/s (latest generation) | Capital expenditure for the attacker's hardware |
 | **Energy cost** | ~$0.05/kWh (industry average) | Ongoing operational expenditure |
@@ -366,7 +366,7 @@ flowchart TD
 | **Sybil attack** | Network | Large number of fake node identities | Proof of work as Sybil resistance; IP-range diversification | Consensus-layer immune; network layer progressively hardened |
 | **Timejacking** | Network / Consensus | Control of multiple peer connections | 70-minute offset clamp; NTP synchronization | Mitigated by clamping; edge cases remain at extreme clock skew |
 | **Selfish mining** | Consensus | ~25–33% of hash rate (depends on connectivity) | Compact block relay (BIP 152) reduces propagation advantage | Partially mitigated; no consensus-level fix deployed |
-| **Quantum (ECDLP)** | Cryptographic | Cryptographically relevant quantum computer | Post-quantum signature migration (BIP 360 proposal) | Not yet mitigated; threat timeline estimated at 10–30+ years |
+| **Quantum (ECDLP)** | Cryptographic | Cryptographically relevant quantum computer | Post-quantum signature migration (BIP 360 proposal) | Not yet mitigated; threat timeline estimated at 10–30+ years (as of 2025 consensus) |
 
 ## 9. Limits of this page
 
