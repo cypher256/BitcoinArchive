@@ -37,6 +37,8 @@ relatedEntries:
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
+  - design/2009-01-03-bitcoin-block-chain-design
+  - design/2009-01-03-bitcoin-consensus-design
 translationStatus: complete
 ---
 

@@ -44,6 +44,7 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - design/2009-01-03-bitcoin-consensus-design
 translationStatus: complete
 ---
 

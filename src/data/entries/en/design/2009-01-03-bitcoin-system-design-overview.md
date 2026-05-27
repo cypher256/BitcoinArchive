@@ -23,6 +23,8 @@ relatedEntries:
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "aftermath/2009-01-03-genesis-block"
   - "design/2009-01-03-bitcoin-transaction-design"
+  - "design/2009-01-03-bitcoin-block-chain-design"
+  - "design/2009-01-03-bitcoin-consensus-design"
 inlineLinkKeywords:
   - "Bitcoin system design"
   - "design-document series"
