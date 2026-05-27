@@ -25,6 +25,6 @@ translationStatus: complete
 ピース！😊
 
 <!-- quote: q1 -->
-> madhatterはMac上でビルドする作業をしていた。UTF-16のwxWidgets 2.8が原因と思われるエラーが出ていた。2.9.0なら今度はうまくいくはずだ。wxWidgets 2.9.0はUTF-8なので、その問題は出ないだろう。
+> madhatter が Mac でのビルドに取り組んでいた。UTF-16 の wxWidgets 2.8 が原因と思われるエラーが出ていた。2.9.0 では改善されるはずだ。wxWidgets 2.9.0 は UTF-8 なので、その問題は起きないだろう。
 >
-> 確かFreeBSDでは動いていたと思うが、彼はUIなしのバージョンを欲しがっていた。
+> FreeBSD では動作していたと思うが、非 UI バージョンを希望していた。
