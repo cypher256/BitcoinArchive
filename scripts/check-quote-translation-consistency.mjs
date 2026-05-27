@@ -98,7 +98,7 @@
  *
  * Exit code: 0 on no divergence, 1 on any divergence detected.
  */
-import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -109,7 +109,6 @@ const JA_ROOT = path.join(REPO_ROOT, 'src/data/translations/ja');
 
 const MIN_PHRASE_LENGTH = 40;
 const MAX_DISPLAY_LENGTH = 160;
-const FIX_MODE = process.argv.includes('--fix');
 
 function walkMarkdown(root, out = []) {
   if (!existsSync(root)) return out;
@@ -259,56 +258,7 @@ function passesLengthEnvelope(enNorm, jaNorm) {
   return ratio >= 0.2 && ratio <= 2.5;
 }
 
-/**
- * Locate a paragraph in the raw body text by its `splitParagraphs` index.
- * Returns `{ start, end, text }` where start/end are byte offsets within
- * `body` (the text after frontmatter stripping).
- *
- * The logic mirrors `splitParagraphs`: blockquote-only lines (`>`, `> `,
- * `>>` etc.) are treated as blank-line separators.
- */
-function locateParagraph(body, paraIdx) {
-  // Walk through the body, splitting on blank lines and blockquote-only
-  // lines, tracking the start/end offset of each paragraph.
-  const paragraphs = [];
-  const lines = body.split('\n');
-  let currentStart = -1;
-  let currentEnd = -1;
-  let offset = 0; // character offset
-
-  for (let lineNo = 0; lineNo < lines.length; lineNo++) {
-    const line = lines[lineNo];
-    const isBlank = /^\s*$/.test(line);
-    const isQuoteOnly = /^(>+\s*)$/.test(line);
-    const isSeparator = isBlank || isQuoteOnly;
-
-    if (isSeparator) {
-      if (currentStart !== -1) {
-        // End current paragraph
-        paragraphs.push({ start: currentStart, end: currentEnd, text: body.slice(currentStart, currentEnd) });
-        currentStart = -1;
-        currentEnd = -1;
-      }
-    } else {
-      if (currentStart === -1) {
-        currentStart = offset;
-      }
-      currentEnd = offset + line.length;
-    }
-    offset += line.length + 1; // +1 for newline
-  }
-  // Flush last paragraph
-  if (currentStart !== -1) {
-    paragraphs.push({ start: currentStart, end: currentEnd, text: body.slice(currentStart, currentEnd) });
-  }
-
-  if (paraIdx < paragraphs.length) {
-    return paragraphs[paraIdx];
-  }
-  return null;
-}
-
-/** EN normalised paragraph → list of { enPath, paraIdx, jaParaWidth, jaParaLex, isQuote, jaPath, jaOrigIdx, jaRaw }. */
+/** EN normalised paragraph → list of { enPath, paraIdx, jaParaWidth, jaParaLex, isQuote }. */
 const enParaMap = new Map();
 
 let pairsScanned = 0;
@@ -403,32 +353,13 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
       jaParaWidth: jaWidth,
       jaParaLex: jaLex,
       isQuote: isBlockquoteParagraph(enRaw),
-      jaPath,
-      jaOrigIdx: jaParas[i].originalIdx,
-      jaRaw,
     });
   }
 }
 
 let divergentCount = 0;
 let visualDivergentCount = 0;
-let fixCount = 0;
-let fixSkipCount = 0;
 const output = [];
-// Cache of modified JA file contents to avoid re-reading stale data
-// when multiple fixes target the same file.
-const jaFileCache = new Map();
-function readJaFile(jaPath) {
-  if (jaFileCache.has(jaPath)) return jaFileCache.get(jaPath);
-  const content = readFileSync(jaPath, 'utf-8');
-  jaFileCache.set(jaPath, content);
-  return content;
-}
-function writeJaFile(jaPath, content) {
-  jaFileCache.set(jaPath, content);
-  writeFileSync(jaPath, content, 'utf-8');
-}
-
 for (const [enPhrase, occurrences] of enParaMap.entries()) {
   if (occurrences.length < 2) continue;
   if (!occurrences.some((occ) => occ.isQuote)) continue;
@@ -450,128 +381,6 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
         output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
       }
     }
-
-    // --fix: replace quote-side JA with body-side (canonical) JA
-    if (FIX_MODE) {
-      // Find all body occurrences — they provide the canonical JA.
-      const bodyOccs = occurrences.filter((o) => !o.isQuote);
-      if (bodyOccs.length === 0) {
-        output.push(`  [fix: skipped — no body variant to use as canonical]`);
-        fixSkipCount++;
-      } else {
-        // Use the first body occurrence's raw JA as canonical.
-        // Extract content lines (strip HTML comments from raw body paragraph).
-        const canonicalRaw = bodyOccs[0].jaRaw;
-        const canonicalLines = canonicalRaw
-          .split('\n')
-          .filter((line) => !/^\s*<!--[\s\S]*?-->\s*$/.test(line));
-        const canonicalText = canonicalLines.join('\n').trim();
-
-        // Check that all body occurrences agree on the normalised JA
-        // (they should, since they share the same widthVariant key).
-        const bodyWidthKey = bodyOccs[0].jaParaWidth;
-
-        // Fix each quote occurrence whose JA differs from canonical.
-        const quoteOccs = occurrences.filter(
-          (o) => o.isQuote && o.jaParaWidth !== bodyWidthKey,
-        );
-        for (const qocc of quoteOccs) {
-          const jaFileContent = readJaFile(qocc.jaPath);
-          const fmMatch = jaFileContent.match(/^---\n[\s\S]*?\n---\n?/);
-          const fmLen = fmMatch ? fmMatch[0].length : 0;
-          const jaBodyText = jaFileContent.slice(fmLen);
-
-          const para = locateParagraph(jaBodyText, qocc.jaOrigIdx);
-          if (!para) {
-            output.push(
-              `  [fix: FAILED — could not locate paragraph #${qocc.jaOrigIdx + 1} in ${path.relative(REPO_ROOT, qocc.jaPath)}]`,
-            );
-            fixSkipCount++;
-            continue;
-          }
-
-          // Safety: verify the located paragraph's normalised JA matches
-          // what we expect (the divergent variant we detected).
-          const locatedNorm = normaliseJaWidth(normaliseParagraph(para.text));
-          if (locatedNorm !== qocc.jaParaWidth) {
-            output.push(
-              `  [fix: FAILED — paragraph #${qocc.jaOrigIdx + 1} in ${path.relative(REPO_ROOT, qocc.jaPath)} normalised text does not match expected variant]`,
-            );
-            fixSkipCount++;
-            continue;
-          }
-
-          // Separate HTML comment lines from blockquote content lines
-          // in the existing quote paragraph.  Comment lines may have `>`
-          // prefixes (e.g. `> <!-- quote: q3 -->`) and may appear at both
-          // the start and end of the paragraph (e.g. `<!-- /tone-skip -->`).
-          const existingLines = para.text.split('\n');
-          const isCommentLine = (line) =>
-            /^(>+\s*)*\s*<!--[\s\S]*?-->\s*$/.test(line);
-
-          // Collect leading comment lines.
-          const leadingComments = [];
-          let contentStart = 0;
-          for (let ci = 0; ci < existingLines.length; ci++) {
-            if (isCommentLine(existingLines[ci])) {
-              leadingComments.push(existingLines[ci]);
-              contentStart = ci + 1;
-            } else {
-              break;
-            }
-          }
-
-          // Collect trailing comment lines.
-          const trailingComments = [];
-          let contentEnd = existingLines.length;
-          for (let ci = existingLines.length - 1; ci >= contentStart; ci--) {
-            if (isCommentLine(existingLines[ci])) {
-              trailingComments.unshift(existingLines[ci]);
-              contentEnd = ci;
-            } else {
-              break;
-            }
-          }
-
-          // Detect the blockquote nesting prefix from the first content
-          // line (e.g. `> `, `>> `, `>>> ` etc.).
-          const contentLines = existingLines.slice(contentStart, contentEnd);
-          let quotePrefix = '> ';
-          if (contentLines.length > 0) {
-            const prefixMatch = contentLines[0].match(/^(>+\s*)/);
-            if (prefixMatch) quotePrefix = prefixMatch[1];
-            // Normalise: ensure prefix ends with a space.
-            if (!quotePrefix.endsWith(' ')) quotePrefix += ' ';
-          }
-
-          // Build replacement: preserved comment lines + canonical JA
-          // formatted as blockquote with the correct nesting level.
-          const newQuoteLines = canonicalText
-            .split('\n')
-            .map((l) => `${quotePrefix}${l}`);
-          const replacementLines = [
-            ...leadingComments,
-            ...newQuoteLines,
-            ...trailingComments,
-          ];
-          const replacement = replacementLines.join('\n');
-
-          // Replace in the file content at the exact offset.
-          const absStart = fmLen + para.start;
-          const absEnd = fmLen + para.end;
-          const newContent =
-            jaFileContent.slice(0, absStart) +
-            replacement +
-            jaFileContent.slice(absEnd);
-          writeJaFile(qocc.jaPath, newContent);
-          fixCount++;
-          output.push(
-            `  [fix: applied to ${path.relative(REPO_ROOT, qocc.jaPath)} paragraph #${qocc.jaOrigIdx + 1}]`,
-          );
-        }
-      }
-    }
-
     continue;
   }
   // No wording divergence — check for visual-only divergence on the
@@ -611,16 +420,13 @@ if (output.length > 0) {
 console.log(
   `\nScanned ${pairsScanned} en/ja pairs (${pairsSkipped} en-only entries skipped).`,
 );
-if (FIX_MODE) {
-  console.log(`Fix mode: ${fixCount} fixes applied, ${fixSkipCount} skipped.`);
-}
 const totalIssues = divergentCount + visualDivergentCount;
 if (totalIssues > 0) {
   const parts = [];
   if (divergentCount > 0) parts.push(`${divergentCount} divergent`);
   if (visualDivergentCount > 0) parts.push(`${visualDivergentCount} visual-only divergent`);
   console.log(`✗ ${parts.join(', ')} quote translations.`);
-  process.exit(FIX_MODE ? 0 : 1);
+  process.exit(1);
 } else {
   console.log(`✓ No divergent quote translations detected.`);
   process.exit(0);
