@@ -113,6 +113,24 @@
   --mermaid-section-alt: rgba(31, 58, 95, 0.10);
   --mermaid-exclude-bg: var(--color-bg-alt);
 
+  /* ---- Mermaid user-emphasis palette.
+     Authors set per-node highlights via `style NODE fill:#xxx` in
+     mermaid source (e.g. `style ROOT fill:#f9f` for emphasis on a
+     Merkle root or central node). Those literal hexes get baked into
+     the SVG and would stay light-pastel in dark mode (light text on
+     light bg = unreadable), so `rehype-mermaid-themer` rewrites each
+     to a `--mermaid-emphasis-*-bg` token defined here.
+     The light-mode values keep the original pastels (so the page
+     looks identical in light); dark-mode values flip to deep, lower-
+     saturation hues so the same hue identity (blue/pink/yellow) is
+     preserved but contrast inverts (deep-bg + light body text).
+     The note-bg variant captures Mermaid's default `stateDiagram-v2`
+     note background, which is hard-coded at the engine level. */
+  --mermaid-emphasis-blue-bg: #e8f4fd;
+  --mermaid-emphasis-pink-bg: #ff99ff;
+  --mermaid-emphasis-yellow-bg: #ffff99;
+  --mermaid-note-bg: #fff5ad;
+
   /* ---- Mermaid timeline section palette (cScale0..13 / cScaleLabel0..13).
      Mermaid `timeline` colors each section by index. The default theme
      auto-picks black/white text per section based on HSL lightness — and
@@ -236,6 +254,15 @@
     --mermaid-section-alt: rgba(122, 163, 212, 0.16);
     --mermaid-exclude-bg: var(--color-bg-alt);
 
+    /* User-emphasis palette — dark variants. Same hue identity as
+       light (blue / pink / yellow) but deep + low-saturation so the
+       body text (`--mermaid-text` = light grey) reads with 4.5:1+
+       contrast. See the `:root` block above for full rationale. */
+    --mermaid-emphasis-blue-bg: #1e3a5f;
+    --mermaid-emphasis-pink-bg: #5a1947;
+    --mermaid-emphasis-yellow-bg: #5a4a14;
+    --mermaid-note-bg: #4a3a14;
+
     /* Timeline section palette — bg/text inverted from light variant
        so each hue keeps its identity but contrast flips
        (light: pastel-bg + deep-text; dark: deep-bg + pastel-text). */
@@ -312,6 +339,13 @@
   --mermaid-crit: #f87171;
   --mermaid-section-alt: rgba(122, 163, 212, 0.16);
   --mermaid-exclude-bg: var(--color-bg-alt);
+
+  /* User-emphasis palette — same body as the @media dark variant so
+     explicit data-mode="dark" and OS-driven dark render identically. */
+  --mermaid-emphasis-blue-bg: #1e3a5f;
+  --mermaid-emphasis-pink-bg: #5a1947;
+  --mermaid-emphasis-yellow-bg: #5a4a14;
+  --mermaid-note-bg: #4a3a14;
 
   /* Timeline section palette — same body as the @media dark variant
      so explicit data-mode="dark" and OS-driven dark render identically. */

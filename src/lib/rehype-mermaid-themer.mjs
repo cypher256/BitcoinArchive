@@ -170,6 +170,32 @@ const COLOR_SUBSTITUTIONS = [
   [/#fff400\b/g, 'var(--mermaid-section-alt)'],
   [/#eeeeee\b/g, 'var(--mermaid-exclude-bg)'],
 
+  // User-emphasis fills set via `style NODE fill:#xxx` in mermaid
+  // source. Authors use these pastels to highlight a focal node
+  // (root of a tree, anchor of a flowchart, etc.). The text inside
+  // the node is `--mermaid-text` (= body grey), so on dark mode the
+  // light pastel bg would render light-on-light = unreadable.
+  // Map each to the matching `--mermaid-emphasis-*-bg` token whose
+  // light value is the original pastel (no visual change in light)
+  // and dark value is a deep low-saturation hue (4.5:1+ contrast
+  // against the body text). See `src/styles/global.css` for the
+  // token pair definitions.
+  // Both 6-hex (`#ff99ff`, `#ffff99`) and 3-hex shorthand
+  // (`#f9f`, `#ff9`) are matched because mermaid preserves the
+  // shorthand inside inline `style="fill:..."` attributes on
+  // `<rect class="basic label-container">` elements (the
+  // shorthand is only expanded in the inline `<style>` block).
+  [/#e8f4fd\b/gi, 'var(--mermaid-emphasis-blue-bg)'],
+  [/#ff99ff\b/gi, 'var(--mermaid-emphasis-pink-bg)'],
+  [/#ffff99\b/gi, 'var(--mermaid-emphasis-yellow-bg)'],
+  [/#f9f\b/gi, 'var(--mermaid-emphasis-pink-bg)'],
+  [/#ff9\b/gi, 'var(--mermaid-emphasis-yellow-bg)'],
+
+  // Mermaid's default stateDiagram-v2 note background. Hard-coded
+  // at the engine level (not a user choice), but the same readability
+  // failure mode applies in dark mode.
+  [/#fff5ad\b/gi, 'var(--mermaid-note-bg)'],
+
   // Quadrant chart bg fills (3 of 4; top-right `#ECECFF` already
   // captured above). The 15%-channel gradient Mermaid encodes here
   // is too subtle to preserve as 4 distinct dark-mode tokens, so all
@@ -289,6 +315,47 @@ function rewriteColors(input) {
 }
 
 /**
+ * Selector-aware second pass on the inline `<style>` block of a
+ * Mermaid SVG. The first-pass `rewriteColors()` is purely literal —
+ * it can't tell whether a `white` literal is a gantt section overlay
+ * (= correctly maps to `--mermaid-bg`) or a gantt taskText fill
+ * (= should map to `--mermaid-text` to stay readable against the
+ * task-bar bg in both modes). This pass walks the CSS source after
+ * the literal substitutions and corrects the small set of
+ * selector-specific rules where the literal-map produces wrong
+ * results.
+ *
+ * Currently corrects:
+ *
+ *   `.taskText...{...fill:var(--mermaid-bg)...}`
+ *     → `.taskText...{...fill:var(--mermaid-text)...}`
+ *
+ * Mermaid generates `.taskText { fill: white }` for all task labels.
+ * The literal map turns `white` into `var(--mermaid-bg)` which is
+ * the page bg color — fine when the bar bg contrasts with the page
+ * (light mode: bar=alt-bg light, text=bg=white, contrast against
+ * the bar's darker token). In dark mode both `--mermaid-bg` and
+ * `--mermaid-node-bg` collapse to the dark navy pair (`#0e1218` vs
+ * `#161b24`), contrast 1.09:1, label invisible.
+ *
+ * `--mermaid-text` is `--color-text` in both modes, which contrasts
+ * against `--mermaid-node-bg` (the task-bar fill) at 12:1+ in light
+ * and 10:1+ in dark.
+ */
+function rewriteSelectorAware(css) {
+  if (typeof css !== 'string' || css.length === 0) return css;
+  // Match any rule whose selector list contains `.taskText` (including
+  // index variants `.taskText0..3` and combined `.taskTextOutsideRight`
+  // / `.activeText[N]` / `.doneText[N]`) and whose declaration block
+  // sets `fill: var(--mermaid-bg)`. Replace the bg var with the text
+  // var while leaving the rest of the declaration block untouched.
+  return css.replace(
+    /(\.(?:taskText|activeText|doneText|doneCritText|activeCritText)[^{]*\{[^}]*fill:\s*)var\(--mermaid-bg\)/g,
+    '$1var(--mermaid-text)'
+  );
+}
+
+/**
  * Walk every descendant element of `root`, recursively, applying the
  * substitution to relevant attributes and to `<style>` text content.
  */
@@ -328,7 +395,12 @@ function rewriteSvgTree(root) {
       if (child.tagName === 'style' && Array.isArray(child.children)) {
         for (const t of child.children) {
           if (t && t.type === 'text' && typeof t.value === 'string') {
+            // First pass: literal color → CSS variable.
             t.value = rewriteColors(t.value);
+            // Second pass: selector-aware corrections (e.g. gantt
+            // taskText fill should track `--mermaid-text` not the
+            // literal-mapped `--mermaid-bg`).
+            t.value = rewriteSelectorAware(t.value);
           }
         }
       }
