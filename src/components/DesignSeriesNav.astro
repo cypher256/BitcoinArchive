@@ -1,0 +1,309 @@
+---
+/**
+ * DesignSeriesNav.astro
+ *
+ * Tree-style table of contents for the 12-page design-document
+ * series. Renders at the top of every `type: "design"` entry.
+ *
+ * Highlights the current page (resolved from the `slug` prop = the
+ * Astro content collection `entry.id`).
+ *
+ * Wired in via:
+ *   src/pages/entries/[...slug].astro
+ *   src/pages/ja/entries/[...slug].astro
+ * as `{entry.data.type === 'design' && <DesignSeriesNav lang={lang}
+ * slug={entry.id} />}` immediately before `<Content />`.
+ *
+ * When a new design page is added, update the SERIES list below in
+ * the order (L0 → L1 #1..#8 → L2 #9..#11) and add the slug + EN/JA
+ * title pair. The level field controls which subgroup the page
+ * appears under.
+ *
+ * The component is `<details>` by default to keep mobile compact;
+ * the `<summary>` always shows the current location so the user
+ * can identify their position even while collapsed.
+ */
+import { localePath } from '../i18n/utils';
+
+interface Props {
+  lang: 'en' | 'ja';
+  slug: string;
+}
+
+const { lang, slug } = Astro.props;
+
+type Level = 'L0' | 'L1' | 'L2';
+interface SeriesEntry {
+  slug: string;
+  level: Level;
+  index: number; // 0 for L0; 1..8 for L1; 9..11 for L2
+  titleEn: string;
+  titleJa: string;
+}
+
+const SERIES: SeriesEntry[] = [
+  {
+    slug: '2009-01-03-bitcoin-system-design-overview',
+    level: 'L0',
+    index: 0,
+    titleEn: 'System design overview',
+    titleJa: 'システム全体設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-p2p-network-design',
+    level: 'L1',
+    index: 1,
+    titleEn: 'P2P network design',
+    titleJa: 'P2P ネットワーク設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-transaction-design',
+    level: 'L1',
+    index: 2,
+    titleEn: 'Transaction design',
+    titleJa: 'トランザクション設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-block-chain-design',
+    level: 'L1',
+    index: 3,
+    titleEn: 'Block & chain design',
+    titleJa: 'ブロック・チェーン設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-consensus-design',
+    level: 'L1',
+    index: 4,
+    titleEn: 'Consensus design',
+    titleJa: 'コンセンサス設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-monetary-design',
+    level: 'L1',
+    index: 5,
+    titleEn: 'Monetary design',
+    titleJa: '貨幣設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-cryptography-design',
+    level: 'L1',
+    index: 6,
+    titleEn: 'Cryptography design',
+    titleJa: '暗号設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-storage-design',
+    level: 'L1',
+    index: 7,
+    titleEn: 'Storage design',
+    titleJa: 'ストレージ設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-wallet-design',
+    level: 'L1',
+    index: 8,
+    titleEn: 'Wallet design',
+    titleJa: 'ウォレット設計',
+  },
+  {
+    slug: '2009-01-03-bitcoin-architecture-evolution',
+    level: 'L2',
+    index: 9,
+    titleEn: 'Architecture evolution (Satoshi era vs v27+)',
+    titleJa: 'アーキテクチャー進化（サトシ時代 vs v27+）',
+  },
+  {
+    slug: '2009-01-03-bitcoin-ecosystem-design',
+    level: 'L2',
+    index: 10,
+    titleEn: 'Ecosystem design (Layer 2, sidechains)',
+    titleJa: 'エコシステム設計（Layer 2・サイドチェーン）',
+  },
+  {
+    slug: '2009-01-03-bitcoin-security-model',
+    level: 'L2',
+    index: 11,
+    titleEn: 'Security model',
+    titleJa: 'セキュリティーモデル',
+  },
+];
+
+const L0 = SERIES.find((e) => e.level === 'L0')!;
+const L1 = SERIES.filter((e) => e.level === 'L1');
+const L2 = SERIES.filter((e) => e.level === 'L2');
+
+// `slug` is the Astro content-collection `entry.id`, which carries the
+// type prefix (`design/2009-01-03-...`). Strip the prefix before
+// comparing so the SERIES list can stay slug-only.
+const bareSlug = slug.replace(/^design\//, '');
+const current = SERIES.find((e) => e.slug === bareSlug);
+
+function titleOf(e: SeriesEntry) {
+  return lang === 'ja' ? e.titleJa : e.titleEn;
+}
+
+function locationLabel(e: SeriesEntry) {
+  if (e.level === 'L0') return lang === 'ja' ? 'L0 全体俯瞰' : 'L0 Overview';
+  return `${e.level} #${e.index}`;
+}
+
+function summaryText() {
+  if (!current) return lang === 'ja' ? '設計文書シリーズ' : 'Design-document series';
+  return `${locationLabel(current)} — ${titleOf(current)}`;
+}
+
+function hrefFor(e: SeriesEntry) {
+  return localePath(`/entries/design/${e.slug}/`, lang);
+}
+
+const seriesLabel = lang === 'ja' ? '設計文書シリーズ' : 'Design-document series';
+const l1Label = lang === 'ja' ? 'L1 — ドメイン別' : 'L1 — Domain pages';
+const l2Label = lang === 'ja' ? 'L2 — 横断・比較' : 'L2 — Cross-cutting';
+---
+
+<nav class="design-series-nav" aria-label={seriesLabel}>
+  <details open>
+    <summary>
+      <span class="series-label">{seriesLabel}</span>
+      <span class="series-current">{summaryText()}</span>
+    </summary>
+    <div class="series-body">
+      <ul class="series-l0">
+        <li class:list={[{ 'is-current': current?.slug === L0.slug }]}>
+          <span class="loc">{locationLabel(L0)}</span>
+          {current?.slug === L0.slug
+            ? <span class="title">{titleOf(L0)}</span>
+            : <a href={hrefFor(L0)} class="title">{titleOf(L0)}</a>}
+        </li>
+      </ul>
+      <div class="series-group">
+        <div class="series-group-label">{l1Label}</div>
+        <ol class="series-l1">
+          {L1.map((e) => (
+            <li class:list={[{ 'is-current': current?.slug === e.slug }]}>
+              <span class="loc">{`#${e.index}`}</span>
+              {current?.slug === e.slug
+                ? <span class="title">{titleOf(e)}</span>
+                : <a href={hrefFor(e)} class="title">{titleOf(e)}</a>}
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div class="series-group">
+        <div class="series-group-label">{l2Label}</div>
+        <ol class="series-l2" start={9}>
+          {L2.map((e) => (
+            <li class:list={[{ 'is-current': current?.slug === e.slug }]}>
+              <span class="loc">{`#${e.index}`}</span>
+              {current?.slug === e.slug
+                ? <span class="title">{titleOf(e)}</span>
+                : <a href={hrefFor(e)} class="title">{titleOf(e)}</a>}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </details>
+</nav>
+
+<style>
+  .design-series-nav {
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-bg-alt);
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text);
+  }
+  .design-series-nav details > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  .design-series-nav details > summary::-webkit-details-marker { display: none; }
+  .design-series-nav details > summary::after {
+    content: '▾';
+    margin-left: auto;
+    color: var(--color-text-muted);
+    transition: transform 0.15s ease;
+  }
+  .design-series-nav details:not([open]) > summary::after {
+    transform: rotate(-90deg);
+  }
+  .series-label {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+  }
+  .series-current {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+  .series-body {
+    padding: 0.25rem 1rem 0.75rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .design-series-nav ul,
+  .design-series-nav ol {
+    margin: 0.5rem 0;
+    padding: 0;
+    list-style: none;
+  }
+  .design-series-nav li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+    line-height: 1.5;
+  }
+  .design-series-nav .loc {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+    min-width: 3.25rem;
+  }
+  .design-series-nav .title {
+    color: inherit;
+  }
+  .design-series-nav a.title {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  .design-series-nav a.title:hover {
+    text-decoration: underline;
+  }
+  .design-series-nav li.is-current {
+    background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 3px;
+  }
+  .design-series-nav li.is-current .loc,
+  .design-series-nav li.is-current .title {
+    color: var(--color-text);
+    font-weight: 600;
+  }
+  .series-group {
+    margin-top: 0.5rem;
+  }
+  .series-group-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin: 0.5rem 0 0.25rem;
+  }
+  @media (max-width: 640px) {
+    .design-series-nav { font-size: 0.85rem; }
+    .design-series-nav .loc { min-width: 2.5rem; }
+  }
+</style>

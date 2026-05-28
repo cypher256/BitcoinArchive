@@ -30,7 +30,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is L1 #7 in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and covers the storage layer: how a Bitcoin Core node persists validated data to disk, how it tracks spendable coins in memory and on disk, and how it recovers or bootstraps state.
+This page is **L1 #7 — Storage design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the storage layer: how a Bitcoin Core node persists validated data to disk, how it tracks spendable coins in memory and on disk, and how it recovers or bootstraps state.
 
 The [transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) page described what a UTXO is. The [block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) page described how blocks link into a chain. This page moves one level down: the on-disk and in-memory structures that make those abstractions durable and queryable.
 

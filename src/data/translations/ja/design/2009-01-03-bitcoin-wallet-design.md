@@ -31,7 +31,7 @@ translationStatus: complete
 
 ## はじめに
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の第 8 編であり、Bitcoin Core のアプリケーション層を扱う: ソフトウェアが鍵をどう管理し、アドレスをどう導出し、コインをどう選択し、トランザクションをどう構築・署名し、手数料をどう推定し、外部呼び出し元にどう機能を公開するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)の UTXO モデルとスクリプトタイプ、および[暗号設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)の鍵導出と署名の基本要素に依存する。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #8 — ウォレット設計** である。Bitcoin Core のアプリケーション層を扱う: ソフトウェアが鍵をどう管理し、アドレスをどう導出し、コインをどう選択し、トランザクションをどう構築・署名し、手数料をどう推定し、外部呼び出し元にどう機能を公開するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)の UTXO モデルとスクリプトタイプ、および[暗号設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)の鍵導出と署名の基本要素に依存する。
 
 ウォレットはビットコインにおいて秘密鍵に触れる唯一のサブシステムである。他のすべてのコンポーネント — 検証、中継、ストレージ、合意形成 — は公開データのみで動作する。この非対称性が、ウォレットをノードバイナリー内の密結合モジュールから論理的に（そして次第に物理的にも）分離されたプロセスへと進化させる原動力となった。
 

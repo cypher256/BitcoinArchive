@@ -32,7 +32,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the fifth in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and covers Bitcoin's monetary layer: the rules that govern coin creation, the economic mechanisms that compensate miners, and the incentive structure that makes honest participation more profitable than attack.
+This page is **L1 #5 — Monetary design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers Bitcoin's monetary layer: the rules that govern coin creation, the economic mechanisms that compensate miners, and the incentive structure that makes honest participation more profitable than attack.
 
 The [transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) page explains how value is represented and transferred. The [consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) page explains how nodes agree on a single chain. This page sits at the intersection: how much new value enters the system per block, who receives it, and why rational miners choose to follow the rules.
 

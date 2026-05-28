@@ -35,7 +35,7 @@ translationStatus: complete
 
 ## はじめに
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の最初のドメインページ（L1 #1）であり、ネットワーク層を端から端まで解説する。ノードがどのように互いを発見し、メッセージをどのように交換し、トランザクションとブロックがピアツーピアのゴシップネットワークをどのように伝播するかを扱う。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #1 — P2P ネットワーク設計** である。ネットワーク層を端から端まで解説する。ノードがどのように互いを発見し、メッセージをどのように交換し、トランザクションとブロックがピアツーピアのゴシップネットワークをどのように伝播するかを扱う。
 
 ネットワーク層は合意形成層、トランザクション層、ブロック層の下に位置する。他のすべてが動作するためのトランスポートを提供する — 信頼できるピアツーピア通信がなければ、[合意形成設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)、[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)、[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)の各ページに記述される決定論的検証規則は、処理すべきデータを持たないことになる。
 

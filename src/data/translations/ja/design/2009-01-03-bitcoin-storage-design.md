@@ -31,7 +31,7 @@ translationStatus: complete
 
 ## はじめに
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の L1 第 7 編であり、ストレージ層を扱う: Bitcoin Core ノードが検証済みデータをディスクにどう永続化するか、使用可能なコインをメモリーとディスク上でどう追跡するか、状態をどう復旧またはブートストラップするか。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #7 — ストレージ設計** である。ストレージ層を扱う: Bitcoin Core ノードが検証済みデータをディスクにどう永続化するか、使用可能なコインをメモリーとディスク上でどう追跡するか、状態をどう復旧またはブートストラップするか。
 
 [トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページでは UTXO とは何かを説明した。[ブロックとチェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページではブロックがチェーンにどう連結されるかを説明した。本ページは一段階下に移る: これらの抽象概念を耐久的かつ検索可能にするディスク上およびメモリー内の構造。
 

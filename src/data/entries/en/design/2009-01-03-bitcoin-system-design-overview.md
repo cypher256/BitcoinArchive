@@ -48,7 +48,7 @@ This is an editorial design reading of Bitcoin — a set of twelve pages written
 
 **Scope.** The series covers the Bitcoin protocol and its reference implementation. Layer-2 systems (Lightning Network, sidechains) and application-layer software (wallets, exchanges, indexers) are mentioned at interface boundaries but not decomposed in detail.
 
-This overview page — the L0 entry point — provides the system-wide picture and links to each domain page.
+This page is **L0 — System design overview** in the design-document series. It provides the system-wide picture and links to each domain page.
 
 ## 1. System architecture
 

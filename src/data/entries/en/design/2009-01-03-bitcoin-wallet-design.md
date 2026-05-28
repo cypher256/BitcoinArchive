@@ -30,7 +30,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the eighth in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and covers the application layer of Bitcoin Core: how the software manages keys, derives addresses, selects coins, constructs and signs transactions, estimates fees, and exposes its functionality to external callers. It depends on the [transaction design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) for the UTXO model and script types, and on the [cryptography design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) for key derivation and signature primitives.
+This page is **L1 #8 — Wallet design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the application layer of Bitcoin Core: how the software manages keys, derives addresses, selects coins, constructs and signs transactions, estimates fees, and exposes its functionality to external callers. It depends on the [transaction design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) for the UTXO model and script types, and on the [cryptography design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) for key derivation and signature primitives.
 
 The wallet is the only subsystem in Bitcoin that touches private keys. Every other component — validation, relay, storage, consensus — operates exclusively on public data. This asymmetry has driven the wallet's evolution from a tightly coupled module inside the node binary to a logically (and increasingly physically) separated process.
 

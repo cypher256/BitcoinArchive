@@ -35,7 +35,7 @@ translationStatus: complete
 
 ## はじめに
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の第 4 ページであり、[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページの直接の後続である。前ページがデータ構造 — ヘッダー、マークルツリー、ハッシュの連鎖 — を記述したのに対し、本ページはどのチェーンが有効でどのチェーン先端が勝つかを決定する規則を記述する。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #4 — コンセンサス設計** である。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページの直接の後続である。前ページがデータ構造 — ヘッダー、マークルツリー、ハッシュの連鎖 — を記述したのに対し、本ページはどのチェーンが有効でどのチェーン先端が勝つかを決定する規則を記述する。
 
 合意形成はビットコインの中央権威の代替物である。すべてのフルノードがすべてのブロックを同一の決定論的規則集に対して独立に評価する。信頼に基づいてブロックを受理することはなく、他のノードの判断に委ねることもない。その結果、数千の機械が調整、投票、リーダー選出なしに単一の取引履歴に収束するシステムが実現する。
 

@@ -37,7 +37,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the second in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and covers the transaction layer end-to-end: how value is represented, transferred, locked, and unlocked. Everything in Bitcoin — mining incentives, block weight, fee markets, wallet UX — rests on the structures described here.
+This page is **L1 #2 — Transaction design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the transaction layer end-to-end: how value is represented, transferred, locked, and unlocked. Everything in Bitcoin — mining incentives, block weight, fee markets, wallet UX — rests on the structures described here.
 
 The transaction layer answers three questions:
 

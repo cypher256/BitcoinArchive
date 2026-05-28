@@ -34,7 +34,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the first domain page (L1 #1) in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and covers the network layer end-to-end: how nodes discover each other, how they exchange messages, and how transactions and blocks propagate across the peer-to-peer gossip network.
+This page is **L1 #1 — P2P network design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the network layer end-to-end: how nodes discover each other, how they exchange messages, and how transactions and blocks propagate across the peer-to-peer gossip network.
 
 The network layer sits beneath the consensus, transaction, and block layers. It provides the transport over which everything else operates — without reliable peer-to-peer communication, the deterministic validation rules described in the [consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/), [transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/), and [block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) pages would have no data to act on.
 

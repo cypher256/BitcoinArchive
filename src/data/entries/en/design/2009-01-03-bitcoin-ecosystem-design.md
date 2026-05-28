@@ -30,7 +30,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the tenth in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and covers the ecosystem that has grown around Bitcoin's base chain: payment-channel networks, federated sidechains, on-chain envelope structures, and collaborative mining architectures. These systems share a single dependency — the most-work chain maintained by Bitcoin's [consensus rules](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) — but they differ fundamentally in where they execute, what trust model they assume, and how they settle back to L1.
+This page is **L2 #10 — Ecosystem design (Layer 2, sidechains)** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the ecosystem that has grown around Bitcoin's base chain: payment-channel networks, federated sidechains, on-chain envelope structures, and collaborative mining architectures. These systems share a single dependency — the most-work chain maintained by Bitcoin's [consensus rules](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) — but they differ fundamentally in where they execute, what trust model they assume, and how they settle back to L1.
 
 **A critical classification note.** Ordinals and Inscriptions are sometimes grouped with "Layer 2" in popular discussion. They are not. They are L1 envelope structures — data embedded directly in on-chain witness space, validated and stored by every full node, and subject to L1 consensus rules. This page maintains the distinction throughout. An Inscription occupies block weight in the same way a payment output does; a Lightning payment does not.
 

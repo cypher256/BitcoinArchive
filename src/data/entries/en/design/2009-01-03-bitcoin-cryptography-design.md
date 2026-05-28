@@ -33,7 +33,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page covers the cryptographic primitives that underpin every layer of Bitcoin: the keys that represent ownership, the signatures that authorize spending, the hash functions that bind blocks and transactions together, and the derivation schemes that turn a single secret into a tree of addresses.
+This page is **L1 #6 — Cryptography design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the cryptographic primitives that underpin every layer of Bitcoin: the keys that represent ownership, the signatures that authorize spending, the hash functions that bind blocks and transactions together, and the derivation schemes that turn a single secret into a tree of addresses.
 
 An important distinction: Bitcoin is a system built on **cryptography**, not **encryption**. The blockchain is public. Transactions are broadcast in the clear. No message is encrypted at the protocol level. What cryptography provides instead is **authentication** — proof that a transaction was authorized by the holder of a specific private key — and **integrity** — proof that data has not been tampered with. The one exception is BIP 324 (v2 transport protocol), which encrypts peer-to-peer traffic to resist passive surveillance; that is a network-layer concern covered in the P2P design page, not a transaction-layer primitive.
 

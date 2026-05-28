@@ -30,7 +30,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the eleventh in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and the second of three L2 cross-cutting deep dives. Where the L1 domain pages describe how each subsystem works, this page asks what can go wrong — and what stops it.
+This page is **L2 #11 — Security model** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the second of three L2 cross-cutting deep dives. Where the L1 domain pages describe how each subsystem works, this page asks what can go wrong — and what stops it.
 
 Bitcoin's security rests not on any single mechanism but on the interaction of cryptography, economic incentives, and network architecture. A full-node operator trusts mathematics and energy expenditure rather than institutions or identities. This page maps the trust boundary, catalogs the known attack surfaces, traces the defense layers that address each one, and identifies the open risks that remain.
 

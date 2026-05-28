@@ -34,7 +34,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is the fourth in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) and the direct successor to the [block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) page. Where that page describes the data structures — headers, Merkle trees, the chain of hashes — this page describes the rules that determine which chains are valid and which chain tip wins.
+This page is **L1 #4 — Consensus design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It is the direct successor to the [block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) page. Where that page describes the data structures — headers, Merkle trees, the chain of hashes — this page describes the rules that determine which chains are valid and which chain tip wins.
 
 Consensus is Bitcoin's substitute for a central authority. Every full node independently evaluates every block against the same set of deterministic rules. No block is accepted on trust; no node defers to another node's judgment. The result is a system in which thousands of machines converge on a single transaction history without coordination, voting, or leadership election.
 
