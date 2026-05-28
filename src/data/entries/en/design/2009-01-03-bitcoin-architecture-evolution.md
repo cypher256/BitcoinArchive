@@ -266,7 +266,7 @@ flowchart LR
         SIG_ENC["DER (ECDSA) +<br/>fixed 64-byte (Schnorr)"]
         NONCE_N["RFC 6979 deterministic<br/>(ECDSA); BIP 340 synthetic<br/>(Schnorr)"]
         ADDR_N["Base58Check + Bech32<br/>(bc1q...) + Bech32m<br/>(bc1p...)"]
-        KEY_N["HD derivation<br/>(BIP 32/39/44/84/86);<br/>descriptor wallets"]
+        KEY_N["HD derivation<br/>(BIP 32/44/84/86);<br/>descriptor wallets"]
     end
 ```
 

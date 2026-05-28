@@ -53,7 +53,7 @@ flowchart TB
         NODE --> STORE_N["Storage layer"]
         STORE_N --> LEVEL["LevelDB<br/>(UTXO set + block index)"]
         STORE_N --> FLAT["Flat files<br/>(blk*.dat / rev*.dat)"]
-        WALL_N["bitcoin-wallet<br/>(optional separate process)"]
+        WALL_N["bitcoin-wallet<br/>(logical separation;<br/>experimental multiprocess)"]
         WALL_N --> SQL["SQLite<br/>(descriptor wallet)"]
         NODE -- "IPC" --- WALL_N
         QT["bitcoin-qt<br/>(optional GUI)"]
@@ -267,7 +267,7 @@ flowchart LR
         SIG_ENC["DER (ECDSA) +<br/>fixed 64-byte (Schnorr)"]
         NONCE_N["RFC 6979 deterministic<br/>(ECDSA); BIP 340 synthetic<br/>(Schnorr)"]
         ADDR_N["Base58Check + Bech32<br/>(bc1q...) + Bech32m<br/>(bc1p...)"]
-        KEY_N["HD derivation<br/>(BIP 32/39/44/84/86);<br/>descriptor wallets"]
+        KEY_N["HD derivation<br/>(BIP 32/44/84/86);<br/>descriptor wallets"]
     end
 ```
 
@@ -332,7 +332,7 @@ flowchart LR
 
     subgraph V27_WALL["v27+ — wallet"]
         direction TB
-        SEP["Optional separate process<br/>(IPC via Cap'n Proto)"]
+        SEP["Logical separation<br/>(experimental multiprocess)"]
         DESC["Descriptor wallets<br/>(deterministic derivation)"]
         SQLITE["SQLite<br/>(wallet.dat, new format)"]
         SEED["One-time seed backup<br/>(covers all derived keys)"]
@@ -342,7 +342,7 @@ flowchart LR
 
 | 機能 | v0.1 | v27 以降基準 | 主要な BIP / バージョン |
 |---|---|---|---|
-| **アーキテクチャー** | 単一バイナリーに組み込み | 論理的に分離; オプションで IPC 経由の別プロセス | v27 以降 |
+| **アーキテクチャー** | 単一バイナリーに組み込み | 論理的に分離; マルチプロセスは実験的で既定ではない | v27 以降 |
 | **鍵生成** | ランダム鍵プール（100 個の独立した鍵） | 記述子ウォレット: マスターシードからの決定性導出 | BIP 380 以降（v23 でデフォルト） |
 | **鍵ストレージ** | Berkeley DB（`wallet.dat`） | SQLite（新形式の `wallet.dat`） | v26（新規ウォレットで BDB 非推奨） |
 | **バックアップモデル** | 新しい鍵の生成後に毎回ファイルをエクスポート | 記述子バックアップがすべての導出鍵をカバー（生の BIP 32 シード、BIP 39 ではない） | BIP 32 + 記述子 |

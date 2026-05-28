@@ -273,5 +273,5 @@ This page covers Bitcoin's cryptographic primitives in isolation. The following 
 - **Proof-of-work mining** — how SHA-256d is used in the block-header hash puzzle and how difficulty adjusts. Covered in the [consensus design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/).
 - **Merkle tree construction** — how transaction hashes are assembled into the block header commitment. Covered in the [block and chain design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/).
 - **BIP 324 encrypted transport** — the v2 P2P protocol that encrypts node-to-node traffic. This is a network-layer concern, not a transaction-layer primitive.
-- **Quantum migration proposals** — BIP 360 (QuBit) and post-quantum signature candidates. Covered in the [quantum threat analysis](/BitcoinArchive/entries/analysis/2026-05-18-bitcoin-quantum-threat/).
+- **Quantum migration proposals** — BIP 360 (P2MR / QuBit) and post-quantum signature candidates. Covered in the [quantum threat analysis](/BitcoinArchive/entries/analysis/2026-05-18-bitcoin-quantum-threat/).
 - **Threshold and multisignature schemes** — FROST, MuSig2 protocol details, and k-of-n constructions beyond the scope of this primitives overview.

@@ -274,5 +274,5 @@ flowchart TB
 - **プルーフ・オブ・ワークマイニング** — SHA-256d がブロックヘッダーのハッシュパズルでどう使われ、難易度がどう調整されるか。[合意形成設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で扱う。
 - **マークルツリー構築** — トランザクションハッシュがブロックヘッダーのコミットメントにどう組み立てられるか。[ブロックとチェーン設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)で扱う。
 - **BIP 324 暗号化トランスポート** — ノード間通信を暗号化する v2 P2P プロトコル。トランザクション層の基本要素ではなく、ネットワーク層の問題。
-- **量子移行提案** — BIP 360（QuBit）および耐量子署名候補。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で扱う。
+- **量子移行提案** — BIP 360（P2MR / QuBit）および耐量子署名候補。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で扱う。
 - **閾値署名とマルチシグ方式** — FROST、MuSig2 プロトコルの詳細、この基本要素概説の範囲を超える k-of-n 構成。
