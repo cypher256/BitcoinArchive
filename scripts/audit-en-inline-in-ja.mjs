@@ -415,6 +415,7 @@ for (const file of files) {
         tag: cls.tag,
         reason: cls.reason,
         line: ln,
+        offset: start,
       });
     }
   }
@@ -474,12 +475,12 @@ const sortedFiles = [...perFile.keys()].sort();
 for (const path of sortedFiles) {
   const hits = perFile.get(path);
   FULL.push(`### \`${path}\` (${hits.length} hits)\n`);
-  hits.sort((a, b) => a.line - b.line);
-  FULL.push(`| Line | Pattern | Tag | Inner | Reason |`);
-  FULL.push(`|---:|---|---|---|---|`);
+  hits.sort((a, b) => a.line - b.line || a.offset - b.offset);
+  FULL.push(`| Line | Offset | Pattern | Tag | Inner | Reason |`);
+  FULL.push(`|---:|---:|---|---|---|---|`);
   for (const h of hits) {
     const innerEsc = h.inner.replace(/\|/g, '\\|').replace(/`/g, '\\`');
-    FULL.push(`| ${h.line} | \`${h.pattern}\` | ${h.tag} | ${innerEsc} | ${h.reason} |`);
+    FULL.push(`| ${h.line} | ${h.offset} | \`${h.pattern}\` | ${h.tag} | ${innerEsc} | ${h.reason} |`);
   }
   FULL.push('');
 }
