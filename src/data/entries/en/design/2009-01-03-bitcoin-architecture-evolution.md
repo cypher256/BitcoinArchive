@@ -379,12 +379,43 @@ timeline
 
 Fifteen years of development transformed the implementation, but the consensus-critical core remains exactly as Satoshi shipped it.
 
-**Unchanged since v0.1:** SHA-256d proof of work -- most-work chain selection -- 2,016-block difficulty adjustment (including the original off-by-one bug) -- UTXO model -- 21 million supply cap -- 210,000-block halving interval -- coinbase maturity (100 blocks) -- secp256k1 curve -- 10-minute target block interval -- permissionless participation.
+**Unchanged since v0.1:**
 
-**Transformed since v0.1:** storage engine (BDB → LevelDB + flat files + SQLite) -- cryptography library (OpenSSL → libsecp256k1) -- signature schemes (ECDSA only → ECDSA + Schnorr) -- block capacity (no limit → 1 MB → 4 MWU) -- transaction format (legacy → SegWit) -- script system (full opcodes + concatenated execution → reduced set + separated evaluation + tapscript) -- key management (random pool → HD derivation + descriptors) -- peer transport (plaintext → encrypted) -- peer discovery (IRC → DNS seeds + addrv2) -- mining interface (internal CPU → external via getblocktemplate) -- initial sync (sequential → headers-first + assumeUTXO) -- fee market (free → fee-rate auction with RBF/CPFP) -- process architecture (monolithic → modular) -- soft fork activation (flag day → BIP 9/8).
+- SHA-256d proof of work
+- most-work chain selection
+- 2,016-block difficulty adjustment (including the original off-by-one bug)
+- UTXO model
+- 21 million supply cap
+- 210,000-block halving interval
+- coinbase maturity (100 blocks)
+- secp256k1 curve
+- 10-minute target block interval
+- permissionless participation
+
+**Transformed since v0.1:**
+
+- storage engine (BDB → LevelDB + flat files + SQLite)
+- cryptography library (OpenSSL → libsecp256k1)
+- signature schemes (ECDSA only → ECDSA + Schnorr)
+- block capacity (no limit → 1 MB → 4 MWU)
+- transaction format (legacy → SegWit)
+- script system (full opcodes + concatenated execution → reduced set + separated evaluation + tapscript)
+- key management (random pool → HD derivation + descriptors)
+- peer transport (plaintext → encrypted)
+- peer discovery (IRC → DNS seeds + addrv2)
+- mining interface (internal CPU → external via getblocktemplate)
+- initial sync (sequential → headers-first + assumeUTXO)
+- fee market (free → fee-rate auction with RBF/CPFP)
+- process architecture (monolithic → modular)
+- soft fork activation (flag day → BIP 9/8)
 
 ## 12. Limits of this page
 
 This page compares two reference points across all domains but does not replace the domain pages. For full treatment of any subsystem, see the L1 page linked at the bottom of each section above.
 
-Out of scope: **Social and economic drift** (mining centralization, custody, governance, scaling — see the [design-intent vs current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)) -- **Security model** (threat analysis, 51% attack economics — see [L2 #11 Security model](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/)) -- **Ecosystem** (Lightning, sidechains, Ordinals — see [L2 #10 Ecosystem](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/)) -- **Satoshi's coding style** (see the [Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and [Windows development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) entries).
+Out of scope:
+
+- **Social and economic drift** (mining centralization, custody, governance, scaling — see the [design-intent vs current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/))
+- **Security model** (threat analysis, 51% attack economics — see [L2 #11 Security model](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/))
+- **Ecosystem** (Lightning, sidechains, Ordinals — see [L2 #10 Ecosystem](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/))
+- **Satoshi's coding style** (see the [Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and [Windows development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) entries)

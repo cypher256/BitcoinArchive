@@ -380,12 +380,43 @@ timeline
 
 15 年にわたる開発が実装を一変させたが、コンセンサスの核心は正確にサトシが出荷したまま残っている。
 
-**v0.1 以来不変のもの:** SHA-256d プルーフオブワーク -- 最多ワークチェーン選択 -- 2,016 ブロック難易度調整（オリジナルのオフバイワンバグを含む） -- UTXO モデル -- 2,100 万枚の供給上限 -- 210,000 ブロック半減期 -- コインベース成熟期間（100 ブロック） -- secp256k1 曲線 -- 10 分のターゲットブロック間隔 -- 許可不要の参加。
+**v0.1 以来不変のもの:**
 
-**v0.1 以来変革されたもの:** ストレージエンジン（BDB → LevelDB + フラットファイル + SQLite） -- 暗号ライブラリー（OpenSSL → libsecp256k1） -- 署名方式（ECDSA のみ → ECDSA + シュノア署名） -- ブロック容量（制限なし → 1 MB → 4 MWU） -- トランザクション形式（レガシー → SegWit） -- スクリプトシステム（全オペコード + 結合実行 → 縮小セット + 分離評価 + Tapscript） -- 鍵管理（ランダムプール → HD 導出 + 記述子） -- ピアトランスポート（平文 → 暗号化） -- ピア発見（IRC → DNS シード + addrv2） -- マイニングインターフェース（内部 CPU → getblocktemplate 経由の外部化） -- 初期同期（逐次 → ヘッダー優先 + assumeUTXO） -- 手数料市場（無料 → RBF/CPFP 付き手数料率オークション） -- プロセスアーキテクチャー（モノリシック → モジュラー） -- ソフトフォーク有効化（フラグデイ → BIP 9/8）。
+- SHA-256d プルーフオブワーク
+- 最多ワークチェーン選択
+- 2,016 ブロック難易度調整（オリジナルのオフバイワンバグを含む）
+- UTXO モデル
+- 2,100 万枚の供給上限
+- 210,000 ブロック半減期
+- コインベース成熟期間（100 ブロック）
+- secp256k1 曲線
+- 10 分のターゲットブロック間隔
+- 許可不要の参加
+
+**v0.1 以来変革されたもの:**
+
+- ストレージエンジン（BDB → LevelDB + フラットファイル + SQLite）
+- 暗号ライブラリー（OpenSSL → libsecp256k1）
+- 署名方式（ECDSA のみ → ECDSA + シュノア署名）
+- ブロック容量（制限なし → 1 MB → 4 MWU）
+- トランザクション形式（レガシー → SegWit）
+- スクリプトシステム（全オペコード + 結合実行 → 縮小セット + 分離評価 + Tapscript）
+- 鍵管理（ランダムプール → HD 導出 + 記述子）
+- ピアトランスポート（平文 → 暗号化）
+- ピア発見（IRC → DNS シード + addrv2）
+- マイニングインターフェース（内部 CPU → getblocktemplate 経由の外部化）
+- 初期同期（逐次 → ヘッダー優先 + assumeUTXO）
+- 手数料市場（無料 → RBF/CPFP 付き手数料率オークション）
+- プロセスアーキテクチャー（モノリシック → モジュラー）
+- ソフトフォーク有効化（フラグデイ → BIP 9/8）
 
 ## 12. 本ページの範囲
 
 本ページはすべてのドメインにわたって 2 つの参照点を比較するが、ドメインページの代替にはならない。各サブシステムの完全な解説は、上記各節の末尾にリンクした L1 ページを参照。
 
-範囲外: **社会的・経済的なずれ**（マイニングの集中化、カストディー、ガバナンス、スケーリング — [設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)を参照）-- **セキュリティーモデル**（脅威分析、51% 攻撃の経済学 — [L2 #11 — セキュリティーモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）-- **エコシステム**（Lightning、サイドチェーン、Ordinals — [L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）-- **サトシのコーディングスタイル**（[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と [Windows 開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)エントリーを参照）。
+範囲外:
+
+- **社会的・経済的なずれ**（マイニングの集中化、カストディー、ガバナンス、スケーリング — [設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)を参照）
+- **セキュリティーモデル**（脅威分析、51% 攻撃の経済学 — [L2 #11 — セキュリティーモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）
+- **エコシステム**（Lightning、サイドチェーン、Ordinals — [L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
+- **サトシのコーディングスタイル**（[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と [Windows 開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)エントリーを参照）
