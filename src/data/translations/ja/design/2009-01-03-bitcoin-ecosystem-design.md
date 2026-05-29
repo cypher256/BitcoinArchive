@@ -21,11 +21,11 @@ relatedEntries:
   - design/2009-01-03-bitcoin-p2p-network-design
 inlineLinkKeywords:
   - "Lightning Network"
-  - "payment channel"
-  - "sidechain"
+  - "ペイメントチャネル"
+  - "サイドチェーン"
   - "Ordinals"
   - "Inscriptions"
-  - "mining pool"
+  - "マイニングプール"
 translationStatus: complete
 ---
 

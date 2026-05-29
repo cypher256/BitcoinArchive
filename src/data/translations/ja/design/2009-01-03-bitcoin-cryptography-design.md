@@ -25,10 +25,10 @@ relatedEntries:
 inlineLinkKeywords:
   - "secp256k1"
   - "ECDSA"
-  - "Schnorr"
+  - "シュノア署名"
   - "SHA-256"
-  - "address derivation"
-  - "HD wallet"
+  - "アドレス導出"
+  - "HD ウォレット"
 translationStatus: complete
 ---
 

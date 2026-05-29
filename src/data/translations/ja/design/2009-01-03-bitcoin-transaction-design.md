@@ -28,11 +28,11 @@ relatedEntries:
   - design/2009-01-03-bitcoin-wallet-design
   - design/2009-01-03-bitcoin-ecosystem-design
 inlineLinkKeywords:
-  - "transaction design"
+  - "トランザクション設計"
   - "Bitcoin Script"
   - "SegWit"
   - "Taproot"
-  - "Schnorr signatures"
+  - "シュノア署名"
 translationStatus: complete
 ---
 

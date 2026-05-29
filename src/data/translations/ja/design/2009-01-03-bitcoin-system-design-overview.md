@@ -34,10 +34,10 @@ relatedEntries:
   - "design/2009-01-03-bitcoin-ecosystem-design"
   - "design/2009-01-03-bitcoin-security-model"
 inlineLinkKeywords:
-  - "Bitcoin system design"
-  - "design-document series"
-  - "Bitcoin architecture"
-  - "Bitcoin layer model"
+  - "ビットコインシステム設計"
+  - "設計文書シリーズ"
+  - "ビットコインアーキテクチャー"
+  - "ビットコインレイヤーモデル"
 translationStatus: complete
 ---
 

@@ -24,11 +24,11 @@ relatedEntries:
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-storage-design
 inlineLinkKeywords:
-  - "block structure"
-  - "Merkle tree"
-  - "most-work chain"
-  - "block weight"
-  - "コインベース structure"
+  - "ブロック構造"
+  - "マークルツリー"
+  - "最多ワークチェーン"
+  - "ブロックウェイト"
+  - "コインベース構造"
 translationStatus: complete
 ---
 

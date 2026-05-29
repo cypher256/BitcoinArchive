@@ -21,11 +21,11 @@ relatedEntries:
   - design/2009-01-03-bitcoin-p2p-network-design
   - analysis/2026-05-18-bitcoin-quantum-threat
 inlineLinkKeywords:
-  - "security model"
-  - "51% attack"
-  - "Eclipse attack"
-  - "selfish mining"
-  - "double-spend"
+  - "セキュリティーモデル"
+  - "51% 攻撃"
+  - "日食攻撃"
+  - "利己的マイニング"
+  - "二重支払い"
 translationStatus: complete
 ---
 

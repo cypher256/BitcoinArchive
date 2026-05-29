@@ -24,12 +24,12 @@ relatedEntries:
   - design/2009-01-03-bitcoin-ecosystem-design
   - design/2009-01-03-bitcoin-security-model
 inlineLinkKeywords:
-  - "P2P network"
-  - "peer discovery"
-  - "compact blocks"
+  - "P2P ネットワーク"
+  - "ピア発見"
+  - "コンパクトブロック"
   - "BIP 152"
   - "BIP 324"
-  - "transaction relay"
+  - "トランザクションリレー"
 translationStatus: complete
 ---
 

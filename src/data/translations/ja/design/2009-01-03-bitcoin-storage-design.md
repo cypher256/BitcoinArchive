@@ -21,11 +21,11 @@ relatedEntries:
   - design/2009-01-03-bitcoin-block-chain-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
 inlineLinkKeywords:
-  - "UTXO set"
+  - "UTXO セット"
   - "LevelDB"
-  - "block database"
+  - "ブロックデータベース"
   - "assumeUTXO"
-  - "pruning"
+  - "剪定"
 translationStatus: complete
 ---
 

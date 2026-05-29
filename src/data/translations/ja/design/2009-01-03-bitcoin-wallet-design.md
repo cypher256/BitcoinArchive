@@ -21,11 +21,11 @@ relatedEntries:
   - design/2009-01-03-bitcoin-cryptography-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
 inlineLinkKeywords:
-  - "descriptor wallet"
+  - "記述子ウォレット"
   - "PSBT"
-  - "coin selection"
-  - "fee estimation"
-  - "RPC interface"
+  - "コイン選択"
+  - "手数料推定"
+  - "RPC インターフェース"
 translationStatus: complete
 ---
 

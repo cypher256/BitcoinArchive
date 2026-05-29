@@ -24,12 +24,12 @@ relatedEntries:
   - design/2009-01-03-bitcoin-monetary-design
   - design/2009-01-03-bitcoin-security-model
 inlineLinkKeywords:
-  - "proof of work"
-  - "difficulty adjustment"
-  - "block validation"
-  - "soft fork"
-  - "hard fork"
-  - "consensus rules"
+  - "プルーフオブワーク"
+  - "難易度調整"
+  - "ブロック検証"
+  - "ソフトフォーク"
+  - "ハードフォーク"
+  - "コンセンサスルール"
 translationStatus: complete
 ---
 
