@@ -177,12 +177,12 @@ flowchart LR
 ```mermaid
 flowchart TD
     RECV["新ブロック受信"] --> VALID{"ブロックヘッダーと\n内容は有効?"}
-    VALID -- "No" --> REJECT["ブロック拒否"]
-    VALID -- "Yes" --> EXTENDS{"現在の最良チェーンを\n延長する?"}
-    EXTENDS -- "Yes" --> TIP["受理: チェーン先端を更新"]
-    EXTENDS -- "No" --> COMPARE{"新チェーンの累積ワーク\n> 現最良チェーンの\n累積ワーク?"}
-    COMPARE -- "No" --> STORE["代替ブランチとして\n保存"]
-    COMPARE -- "Yes" --> REORG["再編成:\n旧先端を切断、\n新ブランチを接続"]
+    VALID -- "いいえ" --> REJECT["ブロック拒否"]
+    VALID -- "はい" --> EXTENDS{"現在の最良チェーンを\n延長する?"}
+    EXTENDS -- "はい" --> TIP["受理: チェーン先端を更新"]
+    EXTENDS -- "いいえ" --> COMPARE{"新チェーンの累積ワーク\n> 現最良チェーンの\n累積ワーク?"}
+    COMPARE -- "いいえ" --> STORE["代替ブランチとして\n保存"]
+    COMPARE -- "はい" --> REORG["再編成:\n旧先端を切断、\n新ブランチを接続"]
     REORG --> TIP2["新チェーン先端を確立"]
 ```
 

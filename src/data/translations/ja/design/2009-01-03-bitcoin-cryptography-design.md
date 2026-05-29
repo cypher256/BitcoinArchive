@@ -170,7 +170,7 @@ flowchart LR
     PAYLOAD --> BECH32["Bech32\n（witness バージョン 0 +\n32/20 バイトプログラム）"]
     BECH32 --> P2WPKH["P2WPKH アドレス\nbc1qw508d6qejxtd..."]
 
-    PK --> TWEAK["Taproot tweak\n（内部鍵 +\nスクリプトのマークルルート）"]
+    PK --> TWEAK["Taproot 鍵調整 (tweak)\n（内部鍵 +\nスクリプトのマークルルート）"]
     TWEAK --> XONLY["x-only 公開鍵\n(32 バイト)"]
     XONLY --> BECH32M["Bech32m\n（witness バージョン 1 +\n32 バイトプログラム）"]
     BECH32M --> P2TR["P2TR アドレス\nbc1p5cyxnuxmeuw..."]

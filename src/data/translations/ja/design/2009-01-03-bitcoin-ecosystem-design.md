@@ -215,7 +215,7 @@ flowchart TB
         subgraph TX["トランザクション"]
             IN["入力<br/>(Taproot UTXO を消費)"]
             subgraph WIT["Witness (Tapscript パス)"]
-                SIG["Schnorr 署名"]
+                SIG["シュノア署名"]
                 ENVELOPE["エンベロープ:<br/>OP_FALSE OP_IF<br/>  content-type<br/>  data push<br/>OP_ENDIF"]
             end
             OUT["出力<br/>（受取人への P2TR）"]

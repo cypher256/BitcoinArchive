@@ -144,7 +144,7 @@ flowchart LR
     PK --> |P2WPKH| HASH160_2["Hash160\n→ 20 バイトハッシュ"]
     HASH160_2 --> BECH32["Bech32\n→ bc1q..."]
 
-    PK --> |P2TR| TWEAK["Taproot tweak\n(x-only 鍵)"]
+    PK --> |P2TR| TWEAK["Taproot 鍵調整 (tweak)\n(x-only 鍵)"]
     TWEAK --> BECH32M["Bech32m\n→ bc1p..."]
 ```
 
@@ -270,7 +270,7 @@ flowchart LR
     subgraph Callers["呼び出し元"]
         CLI["bitcoin-cli\n（コマンドライン）"]
         WEBAPP["Web アプリ"]
-        STREAM["Streaming consumer\n（インデクサー、モニター）"]
+        STREAM["ストリーミング購読者\n（インデクサー、モニター）"]
     end
 
     subgraph Interfaces["インターフェース"]

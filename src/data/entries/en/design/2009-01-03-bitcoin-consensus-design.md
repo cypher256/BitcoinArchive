@@ -205,7 +205,7 @@ timeline
     section 2015–2017
         BIP 9 versionbits : Per-bit signaling in version field. Time-bounded activation window. Parallel deployments possible. Used for SegWit.
     section 2017–present
-        BIP 8 LOT=true : Versionbits with mandatory lock-in at timeout. Prevents indefinite miner veto. Proposed for Taproot activation debate, implemented as Speedy Trial variant.
+        BIP 8 / Speedy Trial : The Taproot activation debate spanned BIP 8 LOT=true/false and short-signaling proposals; Taproot itself locked in via Speedy Trial.
 ```
 
 ### Activation parameters comparison

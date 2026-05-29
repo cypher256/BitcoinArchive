@@ -53,8 +53,8 @@ translationStatus: complete
 flowchart TD
     START["ブロックヘッダー組立\n（前ハッシュ、マークルルート、\nタイムスタンプ、難易度ビット）"] --> HASH["80 バイトヘッダーの\nSHA-256d を計算"]
     HASH --> CMP{"hash ≤ target?"}
-    CMP -- "Yes" --> FOUND["有効ブロック発見。\nネットワークに配信。"]
-    CMP -- "No" --> INC["ナンスをインクリメント\n（または extra-ナンス用に\nコインベースを変更）"]
+    CMP -- "はい" --> FOUND["有効ブロック発見。\nネットワークに配信。"]
+    CMP -- "いいえ" --> INC["ナンスをインクリメント\n（または extra-ナンス用に\nコインベースを変更）"]
     INC --> HASH
 ```
 
@@ -121,18 +121,18 @@ flowchart LR
 ```mermaid
 flowchart TD
     RECV["ブロック受信"] --> POW{"ヘッダー PoW 有効?\nhash ≤ target"}
-    POW -- "fail" --> REJECT["ブロック拒否"]
-    POW -- "pass" --> TS{"タイムスタンプが\n許容範囲内?"}
-    TS -- "fail" --> REJECT
-    TS -- "pass" --> SIZE{"ブロックウェイト\n≤ 4 MWU?"}
-    SIZE -- "fail" --> REJECT
-    SIZE -- "pass" --> MERKLE{"マークルルートが\n再計算値に一致?"}
-    MERKLE -- "fail" --> REJECT
-    MERKLE -- "pass" --> CB{"コインベーストランザクション\n有効?（1 件のみ、\n報酬 ≤ 新規発行分 + 手数料）"}
-    CB -- "fail" --> REJECT
-    CB -- "pass" --> TXS{"全トランザクション有効?\n（署名、UTXO 存在、\nブロック内に二重支払いなし）"}
-    TXS -- "fail" --> REJECT
-    TXS -- "pass" --> ACCEPT["ブロック受理、\nチェーン状態を更新"]
+    POW -- "失敗" --> REJECT["ブロック拒否"]
+    POW -- "合格" --> TS{"タイムスタンプが\n許容範囲内?"}
+    TS -- "失敗" --> REJECT
+    TS -- "合格" --> SIZE{"ブロックウェイト\n≤ 4 MWU?"}
+    SIZE -- "失敗" --> REJECT
+    SIZE -- "合格" --> MERKLE{"マークルルートが\n再計算値に一致?"}
+    MERKLE -- "失敗" --> REJECT
+    MERKLE -- "合格" --> CB{"コインベーストランザクション\n有効?（1 件のみ、\n報酬 ≤ 新規発行分 + 手数料）"}
+    CB -- "失敗" --> REJECT
+    CB -- "合格" --> TXS{"全トランザクション有効?\n（署名、UTXO 存在、\nブロック内に二重支払いなし）"}
+    TXS -- "失敗" --> REJECT
+    TXS -- "合格" --> ACCEPT["ブロック受理、\nチェーン状態を更新"]
 ```
 
 ### 検証項目
@@ -206,7 +206,7 @@ timeline
     section 2015–2017
         BIP 9 versionbits : バージョンフィールドのビット単位シグナリング。時間境界のある起動窓。並列展開が可能。SegWit に使用。
     section 2017–現在
-        BIP 8 LOT=true : タイムアウト時の強制ロックインを伴う versionbits。マイナーの無期限拒否を防ぐ。Taproot 起動の議論で提案され、Speedy Trial として実装された。
+        BIP 8 / Speedy Trial : Taproot 起動をめぐり LOT=true/false と短期シグナリング案が議論され、実際の Taproot は Speedy Trial でロックインした。
 ```
 
 ### 有効化パラメーターの比較

@@ -184,8 +184,8 @@ flowchart LR
     subgraph SELFISH["利己的マイナーの挙動"]
         FIND_S["ブロック発見"] --> WITHHOLD["ブロックを保留"]
         WITHHOLD --> WAIT{"正直なネットワークが\nブロックを発見?"}
-        WAIT -- "No\n（攻撃者がリードを延長）" --> FIND_NEXT["秘密チェーン上で\nマイニング継続"]
-        WAIT -- "Yes\n（正直ブロック発見）" --> RELEASE["保留ブロックを公開し\nフォーク誘発 +\n正直作業を孤立化"]
+        WAIT -- "いいえ\n（攻撃者がリードを延長）" --> FIND_NEXT["秘密チェーン上で\nマイニング継続"]
+        WAIT -- "はい\n（正直ブロック発見）" --> RELEASE["保留ブロックを公開し\nフォーク誘発 +\n正直作業を孤立化"]
         FIND_NEXT --> WAIT
     end
 ```
