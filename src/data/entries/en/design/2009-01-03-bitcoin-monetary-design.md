@@ -200,12 +200,12 @@ This argument is strongest when the block subsidy dominates the reward. As the s
 
 Each halving is a discrete monetary-policy event: the rate of new supply issuance drops by 50% overnight. The table below records the four halvings that have occurred, with market and network context at the time.
 
-| Halving | Date | Block height | Subsidy before → after | BTC price (approx.) | Network hash rate (approx.) | Notable context |
-|---|---|---|---|---|---|---|
-| **1st** | Nov 28, 2012 | 210,000 | 50 → 25 BTC | ~$12 | ~25 TH/s | First ASIC miners arriving; GPU era ending |
-| **2nd** | Jul 9, 2016 | 420,000 | 25 → 12.5 BTC | ~$650 | ~1.5 EH/s | SegWit debate underway; Ethereum launched one year prior |
-| **3rd** | May 11, 2020 | 630,000 | 12.5 → 6.25 BTC | ~$8,600 | ~120 EH/s | Institutional adoption accelerating |
-| **4th** | Apr 19, 2024 | 840,000 | 6.25 → 3.125 BTC | ~$64,000 (mid-2024) | ~600 EH/s (mid-2024) | Spot Bitcoin ETFs approved in US (Jan 2024); Ordinals/inscriptions driving fee spikes |
+| Halving | Date | Block height | Subsidy before → after | Subsidy per block, post (USD ~) | BTC price (approx.) | Network hash rate (approx.) | Notable context |
+|---|---|---|---|---|---|---|---|
+| **1st** | Nov 28, 2012 | 210,000 | 50 → 25 BTC | ~$300 | ~$12 | ~25 TH/s | First ASIC miners arriving; GPU era ending |
+| **2nd** | Jul 9, 2016 | 420,000 | 25 → 12.5 BTC | ~$8,100 | ~$650 | ~1.5 EH/s | SegWit debate underway; Ethereum launched one year prior |
+| **3rd** | May 11, 2020 | 630,000 | 12.5 → 6.25 BTC | ~$54,000 | ~$8,600 | ~120 EH/s | Institutional adoption accelerating |
+| **4th** | Apr 19, 2024 | 840,000 | 6.25 → 3.125 BTC | ~$200,000 | ~$64,000 | ~600 EH/s | Spot Bitcoin ETFs approved in US (Jan 2024); Ordinals/inscriptions driving fee spikes |
 
 Each halving forces a structural adjustment in the mining industry. Miners whose operational costs exceed revenue at the new subsidy level must either find cheaper energy, upgrade to more efficient hardware, or shut down. Historically, hash rate has dipped briefly after each halving before resuming growth — evidence that the surviving mining fleet is more cost-efficient than its predecessor.
 
