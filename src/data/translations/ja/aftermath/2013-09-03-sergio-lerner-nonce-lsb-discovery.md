@@ -34,7 +34,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2013年9月3日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は「A New Mystery about [Satoshi](/BitcoinArchive/ja/participants/satoshi-nakamoto/) Hidden in the Bitcoin Block-Chain」を発表し、5 か月前に発表した [ExtraNonce 勾配分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)とは独立した、サトシの初期マイニングにおける第二の指紋を明らかにした。
+2013年9月3日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は『A New Mystery about [Satoshi](/BitcoinArchive/ja/participants/satoshi-nakamoto/) Hidden in the Bitcoin Block-Chain』を発表し、5 か月前に発表した [ExtraNonce 勾配分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)とは独立した、サトシの初期マイニングにおける第二の指紋を明らかにした。
 
 **発見：**
 
@@ -57,7 +57,7 @@ translationStatus: complete
 
 **続報（2013年9月4日）：**
 
-「Satoshi's Machine」でラーナーは LSB と ExtraNonce の関連を確認し、サトシのコンピューターが他の初期マイナーのマシンより約 **4.3倍速い** ことを明らかにした — ネットワーク接続された複数のコンピューターではなく、数十の並列スレッドを実行する単一の高性能 CPU と一致する。
+『Satoshi's Machine』でラーナーは LSB と ExtraNonce の関連を確認し、サトシのコンピューターが他の初期マイナーのマシンより約 **4.3倍速い** ことを明らかにした — ネットワーク接続された複数のコンピューターではなく、数十の並列スレッドを実行する単一の高性能 CPU と一致する。
 
 ラーナーはこう述べた。
 

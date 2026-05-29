@@ -53,7 +53,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2024年10月8日、HBO がドキュメンタリー「Money Electric: The Bitcoin Mystery」を公開した。監督はカレン・ホーバック（「Q: Into the Storm」で知られる）。作品は Bitcoin Core 開発者[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)を、ビットコインの匿名の創設者[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の候補として名指しした。
+2024年10月8日、HBO がドキュメンタリー『Money Electric: The Bitcoin Mystery』を公開した。監督はカレン・ホーバック（『Q: Into the Storm』で知られる）。作品は Bitcoin Core 開発者[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)を、ビットコインの匿名の創設者[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の候補として名指しした。
 
 **フォーラム投稿理論：**
 

@@ -54,7 +54,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2011年11月、ジャーナリストのベンジャミン・ウォレスが Wired 誌（19.12 号）に「The Rise and Fall of Bitcoin」を発表した。主要メディアによるビットコインの本格的な特集記事としては最初期のものの一つだった。記事はサトシ・ナカモトの[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)から、マイニングブーム、価格の急騰、そしてハッキングや詐欺、幻滅に至るまで、ビットコインの全軌跡を追った。
+2011年11月、ジャーナリストのベンジャミン・ウォレスが Wired 誌（19.12 号）に『The Rise and Fall of Bitcoin』を発表した。主要メディアによるビットコインの本格的な特集記事としては最初期のものの一つだった。記事はサトシ・ナカモトの[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)から、マイニングブーム、価格の急騰、そしてハッキングや詐欺、幻滅に至るまで、ビットコインの全軌跡を追った。
 
 **ビットコインへの初期の評価：**
 
