@@ -111,6 +111,29 @@ const ASCII_LETTER_RE = /[A-Za-z]/g;
 //   7. Multi-line UI label: prev line has unclosed 「, current line closes
 //      with 」 and FN is before that 」
 // -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+// Full-name exemption — symmetric to isFirstNameExempt cases 1 and 2.
+// Skip a full-name hit (e.g., "Satoshi Nakamoto") when the name appears
+// inside an English-majority cited-work title 「...」 or 『...』. The title
+// is the work's literal English name; translating the person component
+// alone would corrupt the title.
+// -------------------------------------------------------------------------
+function isFullNameExempt(line, fullName) {
+  for (const m of line.matchAll(/「([^」]*)」/g)) {
+    if (!m[1].includes(fullName)) continue;
+    const ja = (m[1].match(JA_CHAR_RE) || []).length;
+    const en = (m[1].match(ASCII_LETTER_RE) || []).length;
+    if (en > 0 && en >= ja) return true;
+  }
+  for (const m of line.matchAll(/『([^』]*)』/g)) {
+    if (!m[1].includes(fullName)) continue;
+    const ja = (m[1].match(JA_CHAR_RE) || []).length;
+    const en = (m[1].match(ASCII_LETTER_RE) || []).length;
+    if (en > 0 && en >= ja) return true;
+  }
+  return false;
+}
+
 function isFirstNameExempt(line, prevLine, fn) {
   const fnEsc = fn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   // 1. 「...」 English-majority
@@ -355,6 +378,7 @@ for (const file of files) {
     // Check body text — full-name match (existing logic)
     for (const [eng, kata] of Object.entries(NAME_MAP)) {
       if (line.includes(eng)) {
+        if (isFullNameExempt(line, eng)) continue;
         violations.push({
           file: path.relative(process.cwd(), file),
           line: i + 1,

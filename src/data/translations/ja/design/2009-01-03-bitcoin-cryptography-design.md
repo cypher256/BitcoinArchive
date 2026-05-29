@@ -25,7 +25,7 @@ relatedEntries:
 inlineLinkKeywords:
   - "secp256k1"
   - "ECDSA"
-  - "シュノア署名"
+  - "シュノア"
   - "SHA-256"
   - "アドレス導出"
   - "HD ウォレット"

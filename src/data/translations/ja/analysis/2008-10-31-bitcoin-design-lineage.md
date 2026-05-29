@@ -149,7 +149,7 @@ flowchart LR
 
 ### 3.2 b-money：設計後に引用追加
 
-サトシの [2008 年 8 月 21 日のバック宛返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は「ありがとう。b-moneyは読んだことがなかったが、私のアイデアはまさにその出発点から始まっている」 で始まる。これは、b-money がホワイトペーパーの引用文献リストに**設計が実質的に完了した後で**追加されたことの直接の一次資料である。翌日サトシは[ウェイ・ダイ宛にも直接メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送り、提案について述べている。
+サトシの [2008 年 8 月 21 日のバック宛返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は「ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている」 で始まる。これは、b-money がホワイトペーパーの引用文献リストに**設計が実質的に完了した後で**追加されたことの直接の一次資料である。翌日サトシは[ウェイ・ダイ宛にも直接メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送り、提案について述べている。
 
 ホワイトペーパーに現れる引用は文献 [1] — ウェイ・ダイ「b-money」 1998 年。番号順は編集上のもので、内容は遅く加えられた。[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)はこれと整合する：ウェイ・ダイはサトシが「以前から積極的に活動していた人物ではない」 と示唆しており、これは「b-money を紹介経由で発見せざるを得なかった設計者」 像と整合する。
 
