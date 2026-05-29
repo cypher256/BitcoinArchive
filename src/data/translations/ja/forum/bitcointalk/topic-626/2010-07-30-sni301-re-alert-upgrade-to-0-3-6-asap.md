@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> So that last command should simply be
+> つまり最後のコマンドは単純に
 <!-- /tone-skip -->
 
 **sudo apt-get install libboost1.37-dev**
