@@ -99,7 +99,7 @@ Warez シーンの読みにとって関係する点: Windows 専用初版 (v0.1 
 
 ## 4. セキュリティ・アーキテクチャ: カミンスキー監査
 
-[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/)の [2011 年の監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)は *The New Yorker* 誌で報じられ、批判と称賛の両面を含んでいた。
+[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/)の [2011 年の監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)は 『The New Yorker』 誌で報じられ、批判と称賛の両面を含んでいた。
 
 フォーマットと可読性についてカミンスキーは、コードを「密度が高く難解」と評し、「フォーマットの仕方が異常だった。世界で最も妄想的で几帳面なコーダーでなければ、ミスを避けることはできなかっただろう」と述べた。
 

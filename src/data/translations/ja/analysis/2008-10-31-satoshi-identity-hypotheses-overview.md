@@ -346,7 +346,7 @@ gantt
 
 **経歴。** オーストラリアの計算機セキュリティ関係者。
 
-**仮説。** ライトは 2015 年末から 2016 年にかけて、自身がサトシだと主張し始めた（[Wired と Gizmodo による初期の特定（2015 年 12 月）](/BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/)、[BBC・*The Economist* での自称（2016 年 5 月）](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)）。本仮説は完全に自称に依拠する — 他に支持する証拠の系統はない。
+**仮説。** ライトは 2015 年末から 2016 年にかけて、自身がサトシだと主張し始めた（[Wired と Gizmodo による初期の特定（2015 年 12 月）](/BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/)、[BBC・『The Economist』 での自称（2016 年 5 月）](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)）。本仮説は完全に自称に依拠する — 他に支持する証拠の系統はない。
 
 **支持論点。** 自称（他に支持する証拠なし）。
 

@@ -33,7 +33,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-*ジョシュア・デイヴィス著「The Crypto-Currency」、The New Yorker、2011年10月10日より：*
+*ジョシュア・デイヴィス著『The Crypto-Currency』、The New Yorker、2011年10月10日より：*
 
 <!-- audit:quote-skip -->
 > ダン・カミンスキーは一流のインターネットセキュリティ研究者であり、ビットコインのコード（当時約31,000行）を調査した。

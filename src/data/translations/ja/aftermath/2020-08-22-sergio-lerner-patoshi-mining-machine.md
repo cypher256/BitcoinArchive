@@ -38,7 +38,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2020年8月22日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は自身のブログ Bitslog に「The Patoshi Mining Machine」を発表した。[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のマイニング環境のハードウェアとソフトウェアに関する最も技術的に厳密な分析である。Whale Alert の「The Satoshi Fortune」レポートがサトシが約 48 台のコンピューターを使用したと主張した 1 か月後の発表であった。
+2020年8月22日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は自身のブログ Bitslog に『The Patoshi Mining Machine』を発表した。[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のマイニング環境のハードウェアとソフトウェアに関する最も技術的に厳密な分析である。Whale Alert の『The Satoshi Fortune』レポートがサトシが約 48 台のコンピューターを使用したと主張した 1 か月後の発表であった。
 
 **再マイニングシミュレーション：**
 

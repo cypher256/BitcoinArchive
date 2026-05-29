@@ -40,7 +40,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-2014 年 3 月 25 日、Forbes のシニアライター、アンディ・グリーンバーグは*"Nakamoto's Neighbor: My Hunt For Bitcoin's Creator Led To A Paralyzed Crypto Genius"* を発表した — [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)をサトシ正体候補として名指しした最初の主流報道による長文特集であり、同じ記事内で特定に対する主要な反証も提示するものである。
+2014 年 3 月 25 日、Forbes のシニアライター、アンディ・グリーンバーグは『Nakamoto's Neighbor: My Hunt For Bitcoin's Creator Led To A Paralyzed Crypto Genius』 を発表した — [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)をサトシ正体候補として名指しした最初の主流報道による長文特集であり、同じ記事内で特定に対する主要な反証も提示するものである。
 
 **ドリアン・ナカモトへの地理的近接。**
 

@@ -90,7 +90,7 @@ translationStatus: complete
 
 運動の世界観を表明する基盤文書は二つある:
 
-- ティモシー・C・メイ（1988）「The Crypto Anarchist Manifesto」: "A specter is haunting the modern world, the specter of crypto anarchy."
+- ティモシー・C・メイ（1988）『The Crypto Anarchist Manifesto』: 「現代世界に亡霊が徘徊している、暗号アナーキーの亡霊が」
 - エリック・ヒューズ（1993）『サイファーパンク宣言』: 「サイファーパンクはコードを書く。プライバシーを守るためのソフトウェアを誰かが書かねばならず、我々全員が書かなければそれは得られない以上、我々が書く」
 
 これらの文書とメーリングリスト討論で表明・強化された原理は、6 点に集約できる。各項目はマニフェストおよび当時の議論からの引用または近接した言い換えである:

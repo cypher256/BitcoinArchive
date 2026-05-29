@@ -29,7 +29,7 @@ translationStatus: complete
 
 *Forbes、2011年4月20日オンライン公開（印刷版 2011年5月9日号）より：*
 
-アンディ・グリーンバーグによる「Crypto Currency」は、ビットコインに関する最初の主要な印刷雑誌記事の一つだった。
+アンディ・グリーンバーグによる『Crypto Currency』は、ビットコインに関する最初の主要な印刷雑誌記事の一つだった。
 
 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は Forbes にこう語った。
 
