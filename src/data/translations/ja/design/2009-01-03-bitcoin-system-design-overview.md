@@ -57,35 +57,35 @@ translationStatus: complete
 
 ```mermaid
 graph TB
-    subgraph External["External actors"]
-        User["User / Wallet"]
-        Peer["Peer nodes"]
-        Miner["Miner"]
+    subgraph External["外部アクター"]
+        User["ユーザー / ウォレット"]
+        Peer["ピアノード"]
+        Miner["マイナー"]
     end
 
-    subgraph Node["Full node"]
-        NET["Network layer<br/>(P2P message handling)"]
-        MEMPOOL["Mempool<br/>(unconfirmed tx pool)"]
-        VALID_TX["Transaction validation"]
-        VALID_BLK["Block validation"]
-        CONSENSUS["Consensus engine<br/>(most-work chain selection)"]
-        CHAIN["Chain state<br/>(UTXO set + block index)"]
-        STORE["Storage layer<br/>(blocks + undo data on disk)"]
-        SCRIPT["Script interpreter<br/>(signature + lock verification)"]
-        POLICY["Policy filter<br/>(relay / mempool rules)"]
+    subgraph Node["フルノード"]
+        NET["ネットワーク層<br/>（P2P メッセージ処理）"]
+        MEMPOOL["メモリープール<br/>（未承認 tx プール）"]
+        VALID_TX["トランザクション検証"]
+        VALID_BLK["ブロック検証"]
+        CONSENSUS["合意エンジン<br/>（最多ワークチェーン選択）"]
+        CHAIN["チェーン状態<br/>（UTXO セット + ブロックインデックス）"]
+        STORE["ストレージ層<br/>（ブロックと undo データのディスク保存）"]
+        SCRIPT["スクリプトインタープリター<br/>（署名 + ロック検証）"]
+        POLICY["ポリシーフィルター<br/>（中継 / メモリープールルール）"]
     end
 
-    User -- "broadcast tx" --> NET
-    Peer -- "blocks / txs / addrs" --> NET
-    Miner -- "submit block" --> NET
+    User -- "tx 配信" --> NET
+    Peer -- "ブロック / tx / addr" --> NET
+    Miner -- "ブロック提出" --> NET
 
     NET --> POLICY
     POLICY --> VALID_TX
     VALID_TX --> SCRIPT
-    VALID_TX -- "accepted" --> MEMPOOL
-    MEMPOOL -- "block template" --> Miner
+    VALID_TX -- "受理" --> MEMPOOL
+    MEMPOOL -- "ブロックテンプレート" --> Miner
 
-    NET -- "new block" --> VALID_BLK
+    NET -- "新ブロック" --> VALID_BLK
     VALID_BLK --> SCRIPT
     VALID_BLK --> CONSENSUS
     CONSENSUS --> CHAIN
@@ -109,11 +109,11 @@ graph TB
 
 ```mermaid
 flowchart TB
-    APP["Application layer<br/>wallets, explorers, Lightning, exchanges"]
-    TXN["Transaction layer<br/>UTXO model, Script, signatures"]
-    CONS["Consensus layer<br/>block validation, most-work chain, difficulty adjustment"]
-    NET["Network layer<br/>P2P gossip, peer discovery, message relay"]
-    STORE["Storage layer<br/>block files, UTXO database, chain index"]
+    APP["アプリケーション層<br/>ウォレット、エクスプローラー、Lightning、取引所"]
+    TXN["トランザクション層<br/>UTXO モデル、Script、署名"]
+    CONS["合意層<br/>ブロック検証、最多ワークチェーン、難易度調整"]
+    NET["ネットワーク層<br/>P2P ゴシップ、ピア発見、メッセージ中継"]
+    STORE["ストレージ層<br/>ブロックファイル、UTXO データベース、チェーンインデックス"]
 
     APP --> TXN
     TXN --> CONS
@@ -135,33 +135,33 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-    participant W as Wallet
-    participant N1 as Node A
-    participant N2 as Node B
-    participant M as Miner
-    participant BC as Blockchain
+    participant W as ウォレット
+    participant N1 as ノード A
+    participant N2 as ノード B
+    participant M as マイナー
+    participant BC as ブロックチェーン
 
-    W->>N1: Broadcast signed transaction
-    N1->>N1: Policy check (fee, size, standard scripts)
-    N1->>N1: Validate (UTXO exists, signature correct, no double-spend)
-    N1->>N1: Accept into mempool
+    W->>N1: 署名済みトランザクションを配信
+    N1->>N1: ポリシー検査（手数料、サイズ、標準スクリプト）
+    N1->>N1: 検証（UTXO 存在、署名正当、二重支払いなし）
+    N1->>N1: メモリープールに受理
 
-    N1->>N2: Relay via inv → getdata → tx
-    N2->>N2: Independent validation
-    N2->>N2: Accept into mempool
+    N1->>N2: inv → getdata → tx で中継
+    N2->>N2: 独立に検証
+    N2->>N2: メモリープールに受理
 
-    M->>M: Build block template from mempool
-    M->>M: Solve proof-of-work (iterate ナンス)
-    M->>N1: Broadcast new block
+    M->>M: メモリープールからブロックテンプレートを構築
+    M->>M: プルーフオブワークを解く（ナンスを反復）
+    M->>N1: 新ブロックを配信
 
-    N1->>N1: Validate block (header PoW, all txs, Merkle root)
-    N1->>N1: Update UTXO set, extend chain state
-    N1->>N2: Relay block
+    N1->>N1: ブロック検証（ヘッダー PoW、全 tx、マークルルート）
+    N1->>N1: UTXO セット更新、チェーン状態延長
+    N1->>N2: ブロック中継
 
-    N2->>N2: Validate and extend chain
+    N2->>N2: 検証してチェーン延長
 
-    Note over BC: Transaction now has 1 confirmation
-    Note over BC: Each subsequent block adds 1 confirmation
+    Note over BC: トランザクションが 1 承認
+    Note over BC: 以後のブロックごとに 1 承認が加算
 ```
 
 **このフローに見える主要な設計特性:**
@@ -176,26 +176,26 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-    RECV["Receive block message<br/>from peer"] --> DESER["Deserialize<br/>block header + body"]
-    DESER --> HDR{"Header checks<br/>valid PoW?<br/>timestamp ok?<br/>correct difficulty?"}
+    RECV["ピアから<br/>ブロックメッセージ受信"] --> DESER["ブロックヘッダー +<br/>本体をデシリアライズ"]
+    DESER --> HDR{"ヘッダー検査<br/>有効な PoW?<br/>タイムスタンプ妥当?<br/>難易度正しい?"}
 
-    HDR -- fail --> REJECT["Reject block,<br/>penalize peer"]
-    HDR -- pass --> DUPTST{"Already<br/>in chain?"}
+    HDR -- 失敗 --> REJECT["ブロック拒否、<br/>ピアにペナルティ"]
+    HDR -- 合格 --> DUPTST{"既にチェーン内?"}
 
-    DUPTST -- yes --> DROP["Ignore duplicate"]
-    DUPTST -- no --> CTXVAL["Validate every transaction:<br/>• UTXO lookup<br/>• script execution<br/>• signature verification<br/>• amount check (inputs ≥ outputs)"]
+    DUPTST -- yes --> DROP["重複を無視"]
+    DUPTST -- no --> CTXVAL["全トランザクションを検証:<br/>• UTXO 検索<br/>• スクリプト実行<br/>• 署名検証<br/>• 金額検査（入力 ≥ 出力）"]
 
-    CTXVAL -- any tx invalid --> REJECT
-    CTXVAL -- all pass --> MERKLE["Recompute Merkle root,<br/>compare to header"]
+    CTXVAL -- いずれかの tx 無効 --> REJECT
+    CTXVAL -- 全合格 --> MERKLE["マークルルートを再計算、<br/>ヘッダーと比較"]
 
-    MERKLE -- mismatch --> REJECT
-    MERKLE -- match --> CONNECT["Connect block to chain state:<br/>• spend UTXOs (remove from set)<br/>• create new UTXOs (add to set)<br/>• write block to disk<br/>• update chain index"]
+    MERKLE -- 不一致 --> REJECT
+    MERKLE -- 一致 --> CONNECT["ブロックをチェーン状態に接続:<br/>• UTXO 消費（セットから削除）<br/>• 新 UTXO 作成（セットに追加）<br/>• ブロックをディスクに書込み<br/>• チェーンインデックスを更新"]
 
-    CONNECT --> FORK{"Extends current<br/>best chain?"}
-    FORK -- yes --> TIP["Update chain tip,<br/>remove confirmed txs from mempool"]
-    FORK -- no --> REORG{"More total work<br/>than current tip?"}
-    REORG -- no --> STALE["Store as<br/>stale branch"]
-    REORG -- yes --> REORGANIZE["Reorganize:<br/>disconnect old tip blocks,<br/>connect new branch"]
+    CONNECT --> FORK{"現最良チェーンを<br/>延長する?"}
+    FORK -- yes --> TIP["チェーン先端を更新、<br/>承認済み tx をメモリープールから除去"]
+    FORK -- no --> REORG{"現先端より<br/>累積ワークが多い?"}
+    REORG -- no --> STALE["失効ブランチ<br/>として保存"]
+    REORG -- yes --> REORGANIZE["再編成:<br/>旧先端ブロックを切断、<br/>新ブランチを接続"]
 ```
 
 ## 5. 二時代比較
@@ -239,22 +239,22 @@ flowchart TD
 
 ```mermaid
 mindmap
-  root((Bitcoin<br/>Design Series))
-    L0 Overview
-      L0: System overview
-    L1 Domains
-      1: P2P Network
-      2: Transaction
-      3: Block / Chain
-      4: Consensus
-      5: Monetary
-      6: Cryptography
-      7: Storage
-      8: Wallet / RPC
-    L2 Cross-cutting
-      9: Architecture evolution
-      10: Ecosystem
-      11: Security model
+  root((ビットコイン<br/>設計書シリーズ))
+    L0 全体俯瞰
+      L0: システム全体設計
+    L1 ドメイン別
+      1: P2P ネットワーク
+      2: トランザクション
+      3: ブロック・チェーン
+      4: コンセンサス
+      5: 貨幣
+      6: 暗号
+      7: ストレージ
+      8: ウォレット / RPC
+    L2 横断・比較
+      9: アーキテクチャー進化
+      10: エコシステム
+      11: セキュリティーモデル
 ```
 
 ### L1 — ドメインページ

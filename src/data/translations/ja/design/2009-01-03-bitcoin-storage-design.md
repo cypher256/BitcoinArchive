@@ -51,34 +51,34 @@ translationStatus: complete
 
 ```mermaid
 flowchart TB
-    subgraph DISK["On-disk storage"]
+    subgraph DISK["ディスク上ストレージ"]
         direction TB
-        BLK["Block files<br/>(blk00000.dat … blk0NNNN.dat)<br/>≈ 650+ GB total"]
-        REV["Undo files<br/>(rev00000.dat … rev0NNNN.dat)<br/>one per block file"]
-        COINS_DB["Coins database<br/>(LevelDB)<br/>UTXO set on disk"]
-        BLK_IDX["Block index<br/>(LevelDB)<br/>hash → file position"]
+        BLK["ブロックファイル<br/>(blk00000.dat … blk0NNNN.dat)<br/>合計約 650 GB 以上"]
+        REV["undo ファイル<br/>(rev00000.dat … rev0NNNN.dat)<br/>ブロックファイル 1 つに 1 つ"]
+        COINS_DB["coins データベース<br/>(LevelDB)<br/>ディスク上の UTXO セット"]
+        BLK_IDX["ブロックインデックス<br/>(LevelDB)<br/>hash → ファイル位置"]
     end
 
-    subgraph MEMORY["In-memory state"]
+    subgraph MEMORY["メモリー上状態"]
         direction TB
-        COINS_CACHE["Coins cache<br/>(UTXO write-back cache)<br/>default ≈ 450 MiB"]
-        MEMPOOL["Mempool<br/>(unconfirmed transactions)<br/>default 300 MB limit"]
-        CHAINSTATE["Chain-state metadata<br/>(best tip, block tree,<br/>nChainWork)"]
+        COINS_CACHE["coins キャッシュ<br/>（UTXO ライトバックキャッシュ）<br/>既定約 450 MiB"]
+        MEMPOOL["メモリープール<br/>（未承認トランザクション）<br/>既定 300 MB 上限"]
+        CHAINSTATE["チェーン状態メタデータ<br/>（最良先端、ブロックツリー、<br/>nChainWork）"]
     end
 
-    subgraph INPUT["Incoming data"]
-        NET["Network layer<br/>(new blocks + txs)"]
+    subgraph INPUT["受信データ"]
+        NET["ネットワーク層<br/>（新ブロック + tx）"]
     end
 
-    NET -- "new block" --> BLK
-    NET -- "new block" --> BLK_IDX
-    NET -- "new tx" --> MEMPOOL
-    BLK -- "undo data at<br/>connect time" --> REV
-    NET -- "validated block<br/>updates UTXO set" --> COINS_CACHE
-    COINS_CACHE -- "periodic flush" --> COINS_DB
-    MEMPOOL -- "confirmed txs<br/>removed at<br/>block connect" --> COINS_CACHE
-    BLK_IDX -. "lookup" .-> BLK
-    CHAINSTATE -. "tracks best tip" .-> BLK_IDX
+    NET -- "新ブロック" --> BLK
+    NET -- "新ブロック" --> BLK_IDX
+    NET -- "新 tx" --> MEMPOOL
+    BLK -- "接続時の<br/>undo データ" --> REV
+    NET -- "検証済みブロックが<br/>UTXO セットを更新" --> COINS_CACHE
+    COINS_CACHE -- "定期フラッシュ" --> COINS_DB
+    MEMPOOL -- "ブロック接続時に<br/>承認済み tx を削除" --> COINS_CACHE
+    BLK_IDX -. "検索" .-> BLK
+    CHAINSTATE -. "最良先端を追跡" .-> BLK_IDX
 ```
 
 
@@ -102,15 +102,15 @@ flowchart TB
 flowchart LR
     subgraph FILE["blk00042.dat (≤ 128 MiB)"]
         direction LR
-        B1["Magic bytes<br/>(4 bytes)"]
-        S1["Block size<br/>(4 bytes)"]
-        D1["Serialized<br/>block A"]
-        B2["Magic<br/>bytes"]
-        S2["Block<br/>size"]
-        D2["Serialized<br/>block B"]
-        B3["Magic<br/>bytes"]
-        S3["Block<br/>size"]
-        D3["Serialized<br/>block C"]
+        B1["マジックバイト<br/>(4 バイト)"]
+        S1["ブロックサイズ<br/>(4 バイト)"]
+        D1["直列化済み<br/>ブロック A"]
+        B2["マジック<br/>バイト"]
+        S2["ブロック<br/>サイズ"]
+        D2["直列化済み<br/>ブロック B"]
+        B3["マジック<br/>バイト"]
+        S3["ブロック<br/>サイズ"]
+        D3["直列化済み<br/>ブロック C"]
         ETC["..."]
     end
 
@@ -140,11 +140,11 @@ UTXO セットは Bitcoin Core で最もパフォーマンスが重要なデー�
 
 ```mermaid
 flowchart TD
-    TX["Incoming transaction<br/>references input<br/>(txid + output index)"] --> CACHE{"In coins<br/>cache?"}
-    CACHE -- "hit" --> FOUND["UTXO found in memory<br/>(fast path)"]
-    CACHE -- "miss" --> DB["Query coins<br/>database<br/>(LevelDB on disk)"]
-    DB -- "found" --> LOAD["Load into cache,<br/>return UTXO"]
-    DB -- "not found" --> REJECT["Input does not exist:<br/>transaction invalid"]
+    TX["受信トランザクションが<br/>入力を参照<br/>(txid + 出力インデックス)"] --> CACHE{"coins<br/>キャッシュにあり?"}
+    CACHE -- "ヒット" --> FOUND["UTXO をメモリーで検出<br/>（高速パス）"]
+    CACHE -- "ミス" --> DB["coins データベースに<br/>問い合わせ<br/>（ディスク上 LevelDB）"]
+    DB -- "あり" --> LOAD["キャッシュに読込み、<br/>UTXO を返す"]
+    DB -- "なし" --> REJECT["入力が存在しない:<br/>トランザクション無効"]
 ```
 
 
@@ -180,10 +180,10 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    HASH["Block hash"] --> IDX["Block index<br/>(LevelDB)"]
-    IDX --> POS["File: blk00042.dat<br/>Offset: 0x1A3F00"]
-    POS --> READ["Read block from<br/>flat file at offset"]
-    READ --> BLOCK["Deserialized block"]
+    HASH["ブロックハッシュ"] --> IDX["ブロックインデックス<br/>(LevelDB)"]
+    IDX --> POS["ファイル: blk00042.dat<br/>オフセット: 0x1A3F00"]
+    POS --> READ["フラットファイルの<br/>オフセットからブロックを読込み"]
+    READ --> BLOCK["デシリアライズ済みブロック"]
 ```
 
 
@@ -198,17 +198,17 @@ flowchart LR
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Received: Transaction arrives\nfrom network or wallet
-    Received --> Validated: Passes policy checks\n+ consensus validation
-    Validated --> InMempool: Accepted into mempool
-    InMempool --> Confirmed: Included in a\nvalidated block
-    InMempool --> Evicted: Mempool full,\nlowest fee-rate dropped
-    InMempool --> Expired: Exceeds max age\n(default 2 weeks)
-    Confirmed --> [*]: Removed from mempool
+    [*] --> Received: トランザクションが\nネットワークまたはウォレットから到着
+    Received --> Validated: ポリシー検査と\n合意検証を通過
+    Validated --> InMempool: メモリープールに受理
+    InMempool --> Confirmed: 検証済みブロックに\n含まれる
+    InMempool --> Evicted: メモリープール満杯、\n最低手数料率を除外
+    InMempool --> Expired: 最大保持時間超過\n（既定 2 週間）
+    Confirmed --> [*]: メモリープールから削除
     Evicted --> [*]
     Expired --> [*]
 
-    InMempool --> Replaced: Higher fee-rate\nreplacement (RBF)
+    InMempool --> Replaced: より高い手数料率による\n置換 (RBF)
     Replaced --> [*]
 ```
 
@@ -232,19 +232,19 @@ stateDiagram-v2
 
 ```mermaid
 flowchart TB
-    subgraph KEPT["Retained by a pruned node"]
-        UTXO["Complete UTXO set<br/>(coins database)"]
-        IDX["Full block index<br/>(all headers)"]
-        RECENT["Recent block files<br/>(configurable window)"]
+    subgraph KEPT["剪定済みノードが保持"]
+        UTXO["完全な UTXO セット<br/>（coins データベース）"]
+        IDX["完全なブロックインデックス<br/>（全ヘッダー）"]
+        RECENT["最近のブロックファイル<br/>（設定可能な保持窓）"]
     end
 
-    subgraph DISCARDED["Discarded by a pruned node"]
-        OLD["Old block files<br/>(blk*.dat beyond<br/>the retention window)"]
-        OLD_UNDO["Corresponding undo files<br/>(rev*.dat)"]
+    subgraph DISCARDED["剪定済みノードが破棄"]
+        OLD["古いブロックファイル<br/>（保持窓を超える<br/>blk*.dat）"]
+        OLD_UNDO["対応する undo ファイル<br/>(rev*.dat)"]
     end
 
-    UTXO -. "still validates<br/>new blocks" .-> VALID["Full consensus<br/>validation capability"]
-    OLD -. "cannot serve<br/>historical blocks<br/>to peers" .-> LIMIT["Cannot serve as<br/>a full archival peer"]
+    UTXO -. "新ブロックは<br/>引き続き検証可能" .-> VALID["完全な合意検証能力"]
+    OLD -. "ピアに過去ブロックを<br/>提供できない" .-> LIMIT["完全アーカイブピアとしては<br/>機能しない"]
 ```
 
 
@@ -268,27 +268,27 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-    participant U as User
-    participant N as Node
-    participant S as Snapshot
-    participant BG as Background validation
+    participant U as ユーザー
+    participant N as ノード
+    participant S as スナップショット
+    participant BG as バックグラウンド検証
 
-    U->>N: Start node with snapshot file
-    N->>S: Load UTXO snapshot
-    N->>N: Verify snapshot hash matches<br/>hardcoded assumeUTXO hash
-    N->>N: Activate snapshot as working UTXO set
+    U->>N: スナップショットファイルを指定してノード起動
+    N->>S: UTXO スナップショットを読込み
+    N->>N: スナップショットハッシュが<br/>ハードコード assumeUTXO ハッシュに一致するか確認
+    N->>N: スナップショットを稼働中 UTXO セットとして有効化
 
-    Note over N: Node is now functional —<br/>can validate new blocks<br/>and relay transactions
+    Note over N: ノードは稼働状態 —<br/>新ブロック検証および<br/>トランザクション中継が可能
 
-    N->>BG: Begin full IBD from genesis (background)
-    BG->>BG: Validate every historical block
-    BG->>BG: Build independent UTXO set<br/>from genesis
+    N->>BG: ジェネシスから完全 IBD 開始（バックグラウンド）
+    BG->>BG: 全過去ブロックを検証
+    BG->>BG: ジェネシスから独立した<br/>UTXO セットを構築
 
-    Note over BG: When background IBD reaches<br/>snapshot height:
+    Note over BG: バックグラウンド IBD が<br/>スナップショット高に到達:
 
-    BG->>N: Compare background UTXO set<br/>against snapshot UTXO set
-    N->>N: Hash match → snapshot verified
-    N->>N: Merge into single chain state
+    BG->>N: バックグラウンド UTXO セットと<br/>スナップショット UTXO セットを比較
+    N->>N: ハッシュ一致 → スナップショット検証済み
+    N->>N: 単一のチェーン状態に統合
 ```
 
 

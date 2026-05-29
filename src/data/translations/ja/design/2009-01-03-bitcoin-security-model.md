@@ -65,21 +65,21 @@ translationStatus: complete
 
 ```mermaid
 flowchart TB
-    subgraph TRUSTED["Trusted by the protocol"]
-        CRYPTO["Cryptographic hardness\n(SHA-256, ECDLP)"]
-        MAJORITY["Honest-majority\nhash rate"]
-        CONNECT["Network connectivity\n(≥ 1 honest peer)"]
-        SOFTWARE["Correct validation\nsoftware"]
+    subgraph TRUSTED["プロトコルが信頼する"]
+        CRYPTO["暗号学的困難性\n(SHA-256, ECDLP)"]
+        MAJORITY["正直な多数派の\nハッシュレート"]
+        CONNECT["ネットワーク接続性\n（1 つ以上の正直なピア）"]
+        SOFTWARE["正確な検証\nソフトウェア"]
     end
 
-    subgraph ELIMINATED["Trust eliminated"]
-        CENTRAL["No central issuer"]
-        BANK["No anti-double-spend\nauthority"]
-        IDENTITY["No participant\nidentity required"]
-        SERVER["No single point\nof failure"]
+    subgraph ELIMINATED["信頼を排除"]
+        CENTRAL["中央発行者なし"]
+        BANK["二重支払い防止の\n権威機関なし"]
+        IDENTITY["参加者の\nアイデンティティー不要"]
+        SERVER["単一障害点なし"]
     end
 
-    CRYPTO --> CHAIN["Valid chain\nstate"]
+    CRYPTO --> CHAIN["有効な\nチェーン状態"]
     MAJORITY --> CHAIN
     CONNECT --> CHAIN
     SOFTWARE --> CHAIN
@@ -95,20 +95,20 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-    participant H as Honest network
-    participant A as Attacker (>50%)
+    participant H as 正直なネットワーク
+    participant A as 攻撃者（50% 超）
 
-    Note over H,A: Attacker sends payment to merchant
-    H->>H: Confirm transaction in block N
-    H->>H: Extend to block N+1, N+2...
+    Note over H,A: 攻撃者が商人に支払いを送る
+    H->>H: ブロック N でトランザクション承認
+    H->>H: ブロック N+1、N+2... を延長
 
-    A->>A: Mine private chain from block N-1
-    A->>A: Private chain excludes the payment
-    A->>A: Private chain overtakes honest chain
+    A->>A: ブロック N-1 から秘密チェーンをマイニング
+    A->>A: 秘密チェーンに支払いを含めない
+    A->>A: 秘密チェーンが正直チェーンを追い越す
 
-    A->>H: Release private chain
-    Note over H: Reorganization: honest blocks N, N+1, N+2 replaced
-    Note over H: Merchant's payment vanishes
+    A->>H: 秘密チェーンを公開
+    Note over H: 再編成: 正直ブロック N、N+1、N+2 が置換される
+    Note over H: 商人への支払いが消失
 ```
 
 **コストモデル。** 攻撃者は攻撃の期間中、ネットワークの 50% を超えるハッシュレートを維持しなければならない。2024 年時点の難易度レベルでは、ハードウェアだけで数十億ドル規模の資本支出が必要であり、加えて 1 日あたり数千万ドルのエネルギーコストがかかる。攻撃はまた、ネットワークへの信頼を損なうことで攻撃者自身のマイニング投資の価値も毀損する。
@@ -134,21 +134,21 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-    subgraph NORMAL["Normal operation"]
-        NODE_N["Target node"] --- HONEST1["Honest peer"]
-        NODE_N --- HONEST2["Honest peer"]
-        NODE_N --- HONEST3["Honest peer"]
-        NODE_N --- ATK_N["Attacker peer"]
+    subgraph NORMAL["通常運用"]
+        NODE_N["対象ノード"] --- HONEST1["正直なピア"]
+        NODE_N --- HONEST2["正直なピア"]
+        NODE_N --- HONEST3["正直なピア"]
+        NODE_N --- ATK_N["攻撃者ピア"]
     end
 
-    subgraph ECLIPSED["Eclipsed state"]
-        NODE_E["Target node\n(isolated)"] --- ATK1["Attacker"]
-        NODE_E --- ATK2["Attacker"]
-        NODE_E --- ATK3["Attacker"]
-        NODE_E --- ATK4["Attacker"]
+    subgraph ECLIPSED["日食状態"]
+        NODE_E["対象ノード\n（隔離）"] --- ATK1["攻撃者"]
+        NODE_E --- ATK2["攻撃者"]
+        NODE_E --- ATK3["攻撃者"]
+        NODE_E --- ATK4["攻撃者"]
     end
 
-    NORMAL --> |"Attacker floods\naddr messages +\nfills all connection slots"| ECLIPSED
+    NORMAL --> |"攻撃者が addr メッセージで\nフラッドし接続スロットを\nすべて占有"| ECLIPSED
 ```
 
 **影響。** 日食状態のノードは低ワークチェーンを送り込まれたり、そのノードに対して特定的に二重支払いに使われたり、新しくマイニングされたブロックを見ることを妨げられて正直なチェーン先端から取り残される可能性がある。
@@ -177,15 +177,15 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph HONEST["Honest miner behavior"]
-        FIND_H["Find block"] --> BROADCAST["Broadcast\nimmediately"]
+    subgraph HONEST["正直なマイナーの挙動"]
+        FIND_H["ブロック発見"] --> BROADCAST["即座に\n配信"]
     end
 
-    subgraph SELFISH["Selfish miner behavior"]
-        FIND_S["Find block"] --> WITHHOLD["Withhold block"]
-        WITHHOLD --> WAIT{"Honest network\nfinds a block?"}
-        WAIT -- "No\n(attacker extends lead)" --> FIND_NEXT["Continue mining\non private chain"]
-        WAIT -- "Yes\n(honest block found)" --> RELEASE["Release withheld\nblock(s) to trigger\nfork + orphan\nhonest work"]
+    subgraph SELFISH["利己的マイナーの挙動"]
+        FIND_S["ブロック発見"] --> WITHHOLD["ブロックを保留"]
+        WITHHOLD --> WAIT{"正直なネットワークが\nブロックを発見?"}
+        WAIT -- "No\n（攻撃者がリードを延長）" --> FIND_NEXT["秘密チェーン上で\nマイニング継続"]
+        WAIT -- "Yes\n（正直ブロック発見）" --> RELEASE["保留ブロックを公開し\nフォーク誘発 +\n正直作業を孤立化"]
         FIND_NEXT --> WAIT
     end
 ```
@@ -200,28 +200,28 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    subgraph L1["Layer 1: Cryptographic guarantees"]
-        HASH["SHA-256d proof of work\n(block production cost)"]
-        SIG["ECDSA / Schnorr signatures\n(spend authorization)"]
-        MERKLE["Merkle tree commitments\n(tamper detection)"]
+    subgraph L1["層 1: 暗号学的保証"]
+        HASH["SHA-256d プルーフオブワーク\n（ブロック生成コスト）"]
+        SIG["ECDSA / Schnorr 署名\n（支出認可）"]
+        MERKLE["マークルツリーコミットメント\n（改竄検出）"]
     end
 
-    subgraph L2["Layer 2: Consensus rules"]
-        VALID["Deterministic block\nvalidation"]
-        WORK["Most-work chain\nselection"]
-        DIFF["Difficulty adjustment\n(regulates block rate)"]
+    subgraph L2["層 2: コンセンサスルール"]
+        VALID["決定論的ブロック\n検証"]
+        WORK["最多ワークチェーン\n選択"]
+        DIFF["難易度調整\n（ブロック速度を規制）"]
     end
 
-    subgraph L3["Layer 3: Network architecture"]
-        GOSSIP["Gossip relay\n(no single point\nof failure)"]
-        DIVERSE["Peer diversity\n(Eclipse resistance)"]
-        ENCRYPT["BIP 324 encrypted\ntransport"]
+    subgraph L3["層 3: ネットワークアーキテクチャー"]
+        GOSSIP["ゴシップ中継\n（単一障害点なし）"]
+        DIVERSE["ピア多様性\n（日食攻撃耐性）"]
+        ENCRYPT["BIP 324\n暗号化トランスポート"]
     end
 
-    subgraph L4["Layer 4: Economic incentives"]
-        REWARD["Block reward\n(honest mining pays)"]
-        COST["Hash-rate cost\n(attack is expensive)"]
-        ASSET["Attacker's own BTC\nloses value"]
+    subgraph L4["層 4: 経済的インセンティブ"]
+        REWARD["ブロック報酬\n（正直マイニングが採算）"]
+        COST["ハッシュレートコスト\n（攻撃は高価）"]
+        ASSET["攻撃者自身の BTC が\n価値を失う"]
     end
 
     L1 --> L2
@@ -254,16 +254,16 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    subgraph DEFENSES["Network-level defenses (v27+ baseline)"]
-        ANCHOR["Anchor connections\n(persist across restarts)"]
-        BLOCKONLY["Block-relay-only peers\n(2 extra outbound,\nno mempool leak)"]
-        EVICT["Diversity-preserving\neviction algorithm"]
-        FEELER["Feeler connections\n(probe address\nreachability)"]
-        BIP324["BIP 324 encrypted\ntransport"]
-        ADDRV2["addrv2\n(Tor, I2P, CJDNS\naddress support)"]
+    subgraph DEFENSES["ネットワーク層の防御（v27 以降基準）"]
+        ANCHOR["アンカー接続\n（再起動をまたいで保持）"]
+        BLOCKONLY["ブロック中継専用ピア\n（追加 2 出方向、\nメモリープール漏洩なし）"]
+        EVICT["多様性保持型\n退去アルゴリズム"]
+        FEELER["フィーラー接続\n（アドレス到達性を\nプローブ）"]
+        BIP324["BIP 324\n暗号化トランスポート"]
+        ADDRV2["addrv2\n(Tor、I2P、CJDNS\nアドレス対応)"]
     end
 
-    ANCHOR --> GOAL["Goal:\nresist Eclipse +\nresist surveillance +\nmaintain honest\nconnectivity"]
+    ANCHOR --> GOAL["目標:\n日食耐性 +\n監視耐性 +\n正直な接続性\nを維持"]
     BLOCKONLY --> GOAL
     EVICT --> GOAL
     FEELER --> GOAL
@@ -289,14 +289,14 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    SUBSIDY["Block subsidy\n(currently 3.125 BTC)"] --> REWARD["Block reward\n= subsidy + fees"]
-    FEES["Transaction fees"] --> REWARD
-    REWARD --> REVENUE["Miner daily revenue\n= 144 blocks × reward"]
-    REVENUE --> HARDWARE["Supports hardware\ninvestment"]
-    REVENUE --> ENERGY["Supports energy\nconsumption"]
-    HARDWARE --> HASHRATE["Network hash rate"]
+    SUBSIDY["ブロック新規発行分\n（現状 3.125 BTC）"] --> REWARD["ブロック報酬\n= 新規発行分 + 手数料"]
+    FEES["トランザクション手数料"] --> REWARD
+    REWARD --> REVENUE["マイナー日次収入\n= 144 ブロック × 報酬"]
+    REVENUE --> HARDWARE["ハードウェア\n投資を支える"]
+    REVENUE --> ENERGY["エネルギー消費を\n支える"]
+    HARDWARE --> HASHRATE["ネットワークハッシュレート"]
     ENERGY --> HASHRATE
-    HASHRATE --> COST["Attack cost\n= cost to acquire and\noperate >50% of\nthis hash rate"]
+    HASHRATE --> COST["攻撃コスト\n= このハッシュレートの\n50% 超を取得・運用する\nコスト"]
 ```
 
 | パラメーター | おおよその値（2024 年） | 意味 |
@@ -330,23 +330,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    subgraph ATTACKS["Attack surfaces"]
-        A51["51% attack"]
-        ADS["Double-spend\nvariants"]
-        AEC["Eclipse attack"]
-        ASY["Sybil attack"]
-        ATJ["Timejacking"]
-        ASM["Selfish mining"]
-        AQC["Quantum\n(future)"]
+    subgraph ATTACKS["攻撃面"]
+        A51["51% 攻撃"]
+        ADS["二重支払い\n各種"]
+        AEC["日食攻撃"]
+        ASY["シビル攻撃"]
+        ATJ["タイムジャッキング"]
+        ASM["利己的マイニング"]
+        AQC["量子\n（将来）"]
     end
 
-    subgraph DEFENSES_MAP["Primary defense"]
-        D_POW["Proof-of-work cost\n+ confirmations"]
-        D_NET["Network diversity\n+ peer management"]
-        D_SYBIL["PoW-weighted consensus\n(not node-count)"]
-        D_TIME["Timestamp clamping\n+ MTP rule"]
-        D_PROP["Fast block propagation\n(BIP 152)"]
-        D_CRYPTO["Post-quantum migration\n(future)"]
+    subgraph DEFENSES_MAP["主たる防御"]
+        D_POW["プルーフオブワーク\nコスト + 承認"]
+        D_NET["ネットワーク多様性\n+ ピア管理"]
+        D_SYBIL["PoW 重み付けコンセンサス\n（ノード数ではない）"]
+        D_TIME["タイムスタンプクランプ\n+ MTP ルール"]
+        D_PROP["高速ブロック伝播\n(BIP 152)"]
+        D_CRYPTO["耐量子移行\n（将来）"]
     end
 
     A51 --> D_POW

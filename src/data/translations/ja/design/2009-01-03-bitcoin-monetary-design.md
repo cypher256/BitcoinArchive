@@ -60,21 +60,21 @@ translationStatus: complete
 
 ```mermaid
 gantt
-    title Bitcoin subsidy halving schedule
+    title ビットコイン新規発行分の半減スケジュール
     dateFormat YYYY
     axisFormat %Y
-    section Active halvings
-        50 BTC (era 0)       :done, e0, 2009, 2012
-        25 BTC (era 1)       :done, e1, 2012, 2016
-        12.5 BTC (era 2)     :done, e2, 2016, 2020
-        6.25 BTC (era 3)     :done, e3, 2020, 2024
-        3.125 BTC (era 4)    :active, e4, 2024, 2028
-    section Future halvings
-        1.5625 BTC (era 5)   :e5, 2028, 2032
-        0.78125 BTC (era 6)  :e6, 2032, 2036
-        ... 26 more halvings  :e7, 2036, 2140
-    section Fee-only era
-        Subsidy = 0          :e8, 2140, 2145
+    section 進行中の半減
+        50 BTC (期 0)       :done, e0, 2009, 2012
+        25 BTC (期 1)       :done, e1, 2012, 2016
+        12.5 BTC (期 2)     :done, e2, 2016, 2020
+        6.25 BTC (期 3)     :done, e3, 2020, 2024
+        3.125 BTC (期 4)    :active, e4, 2024, 2028
+    section 将来の半減
+        1.5625 BTC (期 5)   :e5, 2028, 2032
+        0.78125 BTC (期 6)  :e6, 2032, 2036
+        ... 残り 26 回の半減  :e7, 2036, 2140
+    section 手数料のみ時代
+        新規発行分 = 0       :e8, 2140, 2145
 ```
 
 ### 半減エポック
@@ -109,17 +109,17 @@ v0.1 の `GetBlockValue` 関数は右ビットシフトで新規発行分を計�
 
 ```mermaid
 flowchart LR
-    subgraph BlockReward["Block reward"]
+    subgraph BlockReward["ブロック報酬"]
         direction TB
-        SUB["Subsidy\n(newly minted BTC,\nhalves every 210,000 blocks)"]
-        FEES["Transaction fees\n(sum of all\ninput − output\ndifferences)"]
+        SUB["新規発行分\n（新規鋳造 BTC、\n210,000 ブロックごとに半減）"]
+        FEES["トランザクション手数料\n（全入力 − 出力\n差分の合計）"]
     end
 
-    SUB --> CB["Coinbase\ntransaction"]
+    SUB --> CB["コインベース\nトランザクション"]
     FEES --> CB
-    CB --> OUTPUTS["Miner's output\naddress(es)"]
+    CB --> OUTPUTS["マイナーの出力\nアドレス"]
 
-    RULE["Consensus rule:\ncoinbase outputs ≤\nsubsidy + fees"]
+    RULE["合意規則:\nコインベース出力 ≤\n新規発行分 + 手数料"]
     RULE -.- CB
 ```
 
@@ -143,14 +143,14 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    MEMPOOL["Mempool\n(unconfirmed transactions)"] --> SORT["Sort by fee rate\n(sat/vB)"]
-    SORT --> FILL["Fill block template\ntop-down until\nweight limit (4 MWU)"]
-    FILL --> HIGH["High fee-rate txs\n→ included in next block"]
-    FILL --> MED["Medium fee-rate txs\n→ wait 1-3 blocks"]
-    FILL --> LOW["Low fee-rate txs\n→ wait many blocks\nor drop from mempool"]
+    MEMPOOL["メモリープール\n（未承認トランザクション）"] --> SORT["手数料率で並び替え\n(sat/vB)"]
+    SORT --> FILL["ブロックテンプレートを\n上位から埋める\n（ウェイト上限 4 MWU まで）"]
+    FILL --> HIGH["高手数料率の tx\n→ 次のブロックに含まれる"]
+    FILL --> MED["中手数料率の tx\n→ 1〜3 ブロック待ち"]
+    FILL --> LOW["低手数料率の tx\n→ 多数ブロック待ち\nまたはメモリープールから除外"]
 
-    RBF["RBF: sender bumps\nfee rate to jump\nhigher in queue"] --> MEMPOOL
-    CPFP["CPFP: child tx pays\nhigh fee, pulling\nparent into block"] --> MEMPOOL
+    RBF["RBF: 送信者が手数料率を\n引上げて待ち列の上位へ"] --> MEMPOOL
+    CPFP["CPFP: 子 tx が高手数料を\n支払い親をブロックに引込む"] --> MEMPOOL
 ```
 
 ### 手数料メカニズム
@@ -186,10 +186,10 @@ v0.1 では、大半のトランザクションは手数料を一切支払わな
 
 ```mermaid
 flowchart LR
-    HONEST["Miners follow\nprotocol rules"] --> VALID["Valid blocks\nproduced"]
-    VALID --> TRUST["Network remains\ntrustworthy"]
-    TRUST --> VALUE["BTC retains\nor gains value"]
-    VALUE --> REWARD["Block rewards\nworth more in\nreal terms"]
+    HONEST["マイナーがプロトコル\n規則に従う"] --> VALID["有効ブロックが\n生産される"]
+    VALID --> TRUST["ネットワークの\n信頼が維持される"]
+    TRUST --> VALUE["BTC が価値を\n保つ／高める"]
+    VALUE --> REWARD["ブロック報酬の\n実質価値が\n高まる"]
     REWARD --> HONEST
 ```
 
@@ -201,21 +201,21 @@ flowchart LR
 
 各半減は離散的な貨幣政策イベントである — 新規供給の発行率が一夜にして 50% 下落する。以下の表はこれまでに発生した 4 回の半減を、当時の市場とネットワークの状況とともに記録する。
 
-| 半減 | 日付 | ブロック高 | 半減前後の新規発行分 | BTC 価格（概算） | ネットワークハッシュレート（概算） | 注目すべき背景 |
-|---|---|---|---|---|---|---|
-| **第 1 回** | 2012 年 11 月 28 日 | 210,000 | 50 → 25 BTC | 約 12 ドル | 約 25 TH/s | 最初の ASIC マイナー登場; GPU 時代の終焉 |
-| **第 2 回** | 2016 年 7 月 9 日 | 420,000 | 25 → 12.5 BTC | 約 650 ドル | 約 1.5 EH/s | SegWit 議論が進行中; イーサリアムが 1 年前に誕生 |
-| **第 3 回** | 2020 年 5 月 11 日 | 630,000 | 12.5 → 6.25 BTC | 約 8,600 ドル | 約 120 EH/s | 機関投資家の採用が加速 |
-| **第 4 回** | 2024 年 4 月 19 日 | 840,000 | 6.25 → 3.125 BTC | 約 64,000 ドル（2024 年半ば） | 約 600 EH/s（2024 年半ば） | 米国でビットコイン現物 ETF が承認（2024 年 1 月）; Ordinals / インスクリプションが手数料急騰を牽引 |
+| 半減 | 日付 | ブロック高 | 半減前後の新規発行分 | 半減後ブロック報酬（円換算） | BTC 価格（概算） | ネットワークハッシュレート（概算） | 注目すべき背景 |
+|---|---|---|---|---|---|---|---|
+| **第 1 回** | 2012 年 11 月 28 日 | 210,000 | 50 → 25 BTC | 約 2.5 万円 | 約 1,000 円 | 約 25 TH/s | 最初の ASIC マイナー登場; GPU 時代の終焉 |
+| **第 2 回** | 2016 年 7 月 9 日 | 420,000 | 25 → 12.5 BTC | 約 82 万円 | 約 6.5 万円 | 約 1.5 EH/s | SegWit 議論が進行中; イーサリアムが 1 年前に誕生 |
+| **第 3 回** | 2020 年 5 月 11 日 | 630,000 | 12.5 → 6.25 BTC | 約 575 万円 | 約 92 万円 | 約 120 EH/s | 機関投資家の採用が加速 |
+| **第 4 回** | 2024 年 4 月 19 日 | 840,000 | 6.25 → 3.125 BTC | 約 3,080 万円 | 約 990 万円 | 約 600 EH/s | 米国でビットコイン現物 ETF が承認（2024 年 1 月）; Ordinals / インスクリプションが手数料急騰を牽引 |
 
 各半減はマイニング業界に構造的な調整を強いる。半減後の新規発行分の水準で運用コストが収益を超えるマイナーは、より安価なエネルギーを見つけるか、より効率的なハードウェアにアップグレードするか、操業を停止しなければならない。歴史的にハッシュレートは各半減後に一時的に低下した後、成長を再開している — 生き残ったマイニング設備が前世代よりもコスト効率に優れている証拠である。
 
 ### 新規発行分への依存低下
 
 ```mermaid
-pie title Block reward composition by era (approximate)
-    "Subsidy" : 95
-    "Fees" : 5
+pie title 時代別ブロック報酬の内訳（概算）
+    "新規発行分" : 95
+    "手数料" : 5
 ```
 
 第 0〜3 期では、新規発行分が平均ブロック報酬の 95% 以上を占めた。2017 年以降ブロックが恒常的に満杯になるにつれ手数料の比率は目に見えて成長し、極端な需要期（2017 年末の SegWit 有効化に伴う混雑、2023〜2024 年の Ordinals インスクリプションの波）には 50% を超える急騰を見せた。長期的な趨勢は、新規発行分がゼロに近づくにつれて手数料が支配的になる方向にある。
@@ -232,7 +232,7 @@ pie title Block reward composition by era (approximate)
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
-> "In a few decades when the reward gets too small, the transaction fee will become the main compensation for nodes."
+> 「数十年後に報酬が小さくなりすぎると、トランザクション手数料がノードの主な報酬になる。」
 
 ### 両論
 

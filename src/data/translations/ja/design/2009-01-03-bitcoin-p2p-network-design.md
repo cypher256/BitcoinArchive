@@ -47,15 +47,15 @@ translationStatus: complete
 
 ```mermaid
 graph TD
-    A["Node A"] --- B["Node B"]
-    A --- C["Node C"]
-    B --- D["Node D"]
-    B --- E["Node E"]
+    A["ノード A"] --- B["ノード B"]
+    A --- C["ノード C"]
+    B --- D["ノード D"]
+    B --- E["ノード E"]
     C --- E
-    C --- F["Node F"]
-    D --- G["Node G"]
+    C --- F["ノード F"]
+    D --- G["ノード G"]
     E --- G
-    F --- H["Node H"]
+    F --- H["ノード H"]
     G --- H
 
     style A fill:#e8f4fd,stroke:#333
@@ -96,17 +96,17 @@ graph TD
 
 ```mermaid
 flowchart TD
-    START["Node starts"] --> CACHE{"peers.dat\nhas addresses?"}
-    CACHE -- "Yes" --> TRY["Try cached peers"]
-    CACHE -- "No" --> DNS["Query DNS seeds"]
-    TRY --> ENOUGH{"Connected to\n≥1 peer?"}
-    ENOUGH -- "Yes" --> RELAY["Request addr messages\nfrom connected peers"]
-    ENOUGH -- "No" --> DNS
-    DNS --> CONNECT["Connect to\nreturned addresses"]
+    START["ノード起動"] --> CACHE{"peers.dat に\nアドレスあり?"}
+    CACHE -- "あり" --> TRY["キャッシュ済みピアに\n接続試行"]
+    CACHE -- "なし" --> DNS["DNS シードに\n問い合わせ"]
+    TRY --> ENOUGH{"1 ピア以上に\n接続できた?"}
+    ENOUGH -- "あり" --> RELAY["接続済みピアから\naddr メッセージを要求"]
+    ENOUGH -- "なし" --> DNS
+    DNS --> CONNECT["返されたアドレスに\n接続"]
     CONNECT --> RELAY
-    RELAY --> STABLE["Stable peer set\nestablished"]
+    RELAY --> STABLE["安定ピア集合\n確立"]
 
-    DNS2["Hardcoded seeds\n(last resort)"] -.-> CONNECT
+    DNS2["ハードコードシード\n（最終手段）"] -.-> CONNECT
 ```
 
 **サトシ時代と v27 以降基準の比較。** 元の v0.1 クライアントは主要な発見メカニズムとして IRC に依存していた — 単純だが、IRC サーバーのダウンタイムやチャネル追放に脆弱な中央集権的アプローチであった。現行の Bitcoin Core は独立したコミュニティメンバーが運営する DNS シードで IRC を置き換えている。DNS シード運営者はネットワークを継続的に探索するクローラーソフトウェアを動作させており、DNS レコードには現在到達可能で互換性のあるプロトコルバージョンを実行しているノードのみが反映される。
@@ -144,25 +144,25 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    participant A as Node A (initiator)
-    participant B as Node B (responder)
+    participant A as ノード A（開始側）
+    participant B as ノード B（応答側）
 
-    Note over A,B: Connection established (TCP)
-    A->>B: version (protocol version, services, best height)
-    B->>A: version (protocol version, services, best height)
+    Note over A,B: TCP 接続確立
+    A->>B: version（プロトコル版、サービス、最良ブロック高）
+    B->>A: version（プロトコル版、サービス、最良ブロック高）
     B->>A: verack
     A->>B: verack
-    Note over A,B: Handshake complete — peers are live
+    Note over A,B: ハンドシェイク完了 — ピア稼働中
 
-    A->>B: sendcmpct (signal compact block support)
+    A->>B: sendcmpct（コンパクトブロック対応を通知）
     B->>A: sendcmpct
 
-    Note over A,B: Later — new block found
-    B->>A: cmpctblock (header + short tx IDs)
-    A->>A: Reconstruct block from mempool
-    A->>B: getblocktxn (request missing txs)
-    B->>A: blocktxn (missing transactions)
-    A->>A: Validate complete block
+    Note over A,B: 後刻 — 新ブロック発見
+    B->>A: cmpctblock（ヘッダー + 短縮 tx ID）
+    A->>A: メモリープールからブロックを再構築
+    A->>B: getblocktxn（不足トランザクションを要求）
+    B->>A: blocktxn（不足トランザクション）
+    A->>A: 完全ブロックを検証
 ```
 
 ### 主要メッセージ型
@@ -193,13 +193,13 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    WALLET["Wallet submits\ntransaction"] --> NODE_A["Node A:\nvalidate → accept\ninto mempool"]
-    NODE_A --> |"inv (txid)"| NODE_B["Node B"]
-    NODE_A --> |"inv (txid)"| NODE_C["Node C"]
+    WALLET["ウォレットが\nトランザクションを送信"] --> NODE_A["ノード A:\n検証 → メモリープールに受理"]
+    NODE_A --> |"inv (txid)"| NODE_B["ノード B"]
+    NODE_A --> |"inv (txid)"| NODE_C["ノード C"]
     NODE_B --> |"getdata"| NODE_A
-    NODE_A --> |"tx (full transaction)"| NODE_B
-    NODE_B --> |"validate → mempool"| NODE_B
-    NODE_B --> |"inv (txid)"| NODE_D["Node D"]
+    NODE_A --> |"tx（完全トランザクション）"| NODE_B
+    NODE_B --> |"検証 → メモリープール"| NODE_B
+    NODE_B --> |"inv (txid)"| NODE_D["ノード D"]
     NODE_C --> |"getdata"| NODE_A
     NODE_A --> |"tx"| NODE_C
 ```
@@ -225,31 +225,31 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    subgraph Legacy["Legacy: full block relay (v0.1)"]
+    subgraph Legacy["従来: 完全ブロック中継 (v0.1)"]
         direction TB
-        L1["Miner finds block"] --> L2["inv (block hash)\nto all peers"]
-        L2 --> L3["Peer: getdata"]
-        L3 --> L4["block (full serialized block)\n~1-2 MB"]
-        L4 --> L5["Peer validates\nand relays"]
+        L1["マイナーが\nブロック発見"] --> L2["inv（ブロックハッシュ）\nを全ピアへ"]
+        L2 --> L3["ピア: getdata"]
+        L3 --> L4["block（完全直列化ブロック）\n約 1〜2 MB"]
+        L4 --> L5["ピアが検証し\n中継"]
     end
 
-    subgraph HF["Headers-first sync (v0.10+)"]
+    subgraph HF["ヘッダー先行同期 (v0.10 以降)"]
         direction TB
-        H1["Node starts IBD"] --> H2["getheaders\n(request header chain)"]
-        H2 --> H3["headers\n(up to 2,000 headers)"]
-        H3 --> H4["Build header chain,\nverify PoW"]
-        H4 --> H5["getdata (parallel block requests\nfrom multiple peers)"]
-        H5 --> H6["Validate full blocks\nin chain order"]
+        H1["ノードが IBD 開始"] --> H2["getheaders\n（ヘッダーチェーンを要求）"]
+        H2 --> H3["headers\n（最大 2,000 ヘッダー）"]
+        H3 --> H4["ヘッダーチェーン構築、\nPoW を検証"]
+        H4 --> H5["getdata（複数ピアから\n並列ブロック要求）"]
+        H5 --> H6["チェーン順に\n完全ブロック検証"]
     end
 
-    subgraph CB["Compact blocks (BIP 152, v0.13+)"]
+    subgraph CB["コンパクトブロック (BIP 152, v0.13 以降)"]
         direction TB
-        C1["Miner finds block"] --> C2["cmpctblock\n(header + short tx IDs)\n~20 kB"]
-        C2 --> C3["Peer reconstructs block\nfrom mempool"]
-        C3 --> C4{"All txs\nfound?"}
-        C4 -- "Yes" --> C5["Validate block"]
-        C4 -- "No" --> C6["getblocktxn\n(request missing)"]
-        C6 --> C7["blocktxn\n(missing txs only)"]
+        C1["マイナーが\nブロック発見"] --> C2["cmpctblock\n（ヘッダー + 短縮 tx ID）\n約 20 kB"]
+        C2 --> C3["ピアがメモリープール\nからブロック再構築"]
+        C3 --> C4{"全 tx\nあり?"}
+        C4 -- "あり" --> C5["ブロックを検証"]
+        C4 -- "なし" --> C6["getblocktxn\n（不足分を要求）"]
+        C6 --> C7["blocktxn\n（不足 tx のみ）"]
         C7 --> C5
     end
 ```

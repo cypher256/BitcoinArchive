@@ -44,43 +44,43 @@ translationStatus: complete
 
 ```mermaid
 graph TB
-    subgraph External["External callers"]
+    subgraph External["外部呼び出し元"]
         CLI["bitcoin-cli"]
-        APP["Third-party application"]
-        ZMQC["ZMQ subscriber"]
+        APP["サードパーティアプリ"]
+        ZMQC["ZMQ 購読者"]
     end
 
-    subgraph Node["Bitcoin Core node process"]
-        RPC["RPC server\n(JSON-RPC over HTTP)"]
-        REST["REST interface\n(read-only, no auth)"]
-        ZMQ["ZMQ publisher\n(push notifications)"]
-        VALID["Validation engine"]
-        MEMPOOL["Mempool"]
-        P2P["P2P network layer"]
-        CHAIN["Chain state\n(UTXO set)"]
+    subgraph Node["Bitcoin Core ノードプロセス"]
+        RPC["RPC サーバー\n(HTTP 上の JSON-RPC)"]
+        REST["REST インターフェース\n（読み取り専用、認証なし）"]
+        ZMQ["ZMQ パブリッシャー\n（プッシュ通知）"]
+        VALID["検証エンジン"]
+        MEMPOOL["メモリープール"]
+        P2P["P2P ネットワーク層"]
+        CHAIN["チェーン状態\n（UTXO セット）"]
     end
 
-    subgraph Wallet["Wallet (same or separate process)"]
-        KEYS["Key manager\n(descriptors + keypool)"]
-        COIN["Coin selection"]
-        BUILD["Transaction builder"]
-        SIGN["Signer\n(ECDSA / Schnorr)"]
-        FEE["Fee estimator"]
-        WSTORE["Wallet database\n(SQLite, v27+)"]
+    subgraph Wallet["ウォレット（同一または別プロセス）"]
+        KEYS["鍵マネージャー\n（記述子 + keypool）"]
+        COIN["コイン選択"]
+        BUILD["トランザクションビルダー"]
+        SIGN["署名者\n(ECDSA / シュノア)"]
+        FEE["手数料推定器"]
+        WSTORE["ウォレットデータベース\n(SQLite、v27 以降)"]
     end
 
     CLI -- "JSON-RPC" --> RPC
     APP -- "JSON-RPC / REST" --> RPC
     APP -- "HTTP GET" --> REST
-    ZMQC -- "subscribe" --> ZMQ
+    ZMQC -- "購読" --> ZMQ
 
     RPC --> Wallet
-    Wallet -- "broadcast tx" --> P2P
-    Wallet -- "query UTXOs" --> CHAIN
-    Wallet -- "fee estimates" --> FEE
-    FEE -- "mempool snapshot" --> MEMPOOL
-    VALID -- "new block" --> ZMQ
-    VALID -- "new block" --> Wallet
+    Wallet -- "tx 配信" --> P2P
+    Wallet -- "UTXO 問い合わせ" --> CHAIN
+    Wallet -- "手数料推定" --> FEE
+    FEE -- "メモリープール状態" --> MEMPOOL
+    VALID -- "新ブロック" --> ZMQ
+    VALID -- "新ブロック" --> Wallet
 ```
 
 
@@ -103,15 +103,15 @@ v0.1 ではウォレットはインターフェース境界なしにノードバ
 
 ```mermaid
 flowchart TB
-    SEED["Raw seed entropy\n(BIP 32 master seed)"] --> DESC_WPKH["Descriptor:\nwpkh([fp/84h/0h/0h]xpub.../0/*)"]
-    SEED --> DESC_TR["Descriptor:\ntr([fp/86h/0h/0h]xpub.../0/*)"]
-    SEED --> DESC_PKH["Descriptor:\npkh([fp/44h/0h/0h]xpub.../0/*)"]
+    SEED["生のシードエントロピー\n(BIP 32 マスターシード)"] --> DESC_WPKH["記述子:\nwpkh([fp/84h/0h/0h]xpub.../0/*)"]
+    SEED --> DESC_TR["記述子:\ntr([fp/86h/0h/0h]xpub.../0/*)"]
+    SEED --> DESC_PKH["記述子:\npkh([fp/44h/0h/0h]xpub.../0/*)"]
 
-    DESC_WPKH --> POOL_W["Derived keypool\n(P2WPKH addresses:\nbc1q...)"]
-    DESC_TR --> POOL_T["Derived keypool\n(P2TR addresses:\nbc1p...)"]
-    DESC_PKH --> POOL_P["Derived keypool\n(P2PKH addresses:\n1...)"]
+    DESC_WPKH --> POOL_W["導出 keypool\n(P2WPKH アドレス:\nbc1q...)"]
+    DESC_TR --> POOL_T["導出 keypool\n(P2TR アドレス:\nbc1p...)"]
+    DESC_PKH --> POOL_P["導出 keypool\n(P2PKH アドレス:\n1...)"]
 
-    POOL_W --> DB["SQLite wallet database"]
+    POOL_W --> DB["SQLite ウォレットデータベース"]
     POOL_T --> DB
     POOL_P --> DB
 ```
@@ -134,17 +134,17 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    DESC["Active descriptor\ne.g. wpkh(xpub.../0/*)"] --> IDX["Next unused index\n(e.g. index 7)"]
-    IDX --> DERIVE["BIP 32 child key\nderivation at index 7"]
-    DERIVE --> PK["Public key\n(compressed, 33 bytes)"]
+    DESC["有効な記述子\n例 wpkh(xpub.../0/*)"] --> IDX["次の未使用インデックス\n（例: インデックス 7）"]
+    IDX --> DERIVE["インデックス 7 で\nBIP 32 子鍵を導出"]
+    DERIVE --> PK["公開鍵\n（圧縮、33 バイト）"]
 
-    PK --> |P2PKH| HASH160_1["Hash160\n→ 20-byte hash"]
+    PK --> |P2PKH| HASH160_1["Hash160\n→ 20 バイトハッシュ"]
     HASH160_1 --> BASE58["Base58Check\n→ 1..."]
 
-    PK --> |P2WPKH| HASH160_2["Hash160\n→ 20-byte hash"]
+    PK --> |P2WPKH| HASH160_2["Hash160\n→ 20 バイトハッシュ"]
     HASH160_2 --> BECH32["Bech32\n→ bc1q..."]
 
-    PK --> |P2TR| TWEAK["Taproot tweak\n(x-only key)"]
+    PK --> |P2TR| TWEAK["Taproot tweak\n(x-only 鍵)"]
     TWEAK --> BECH32M["Bech32m\n→ bc1p..."]
 ```
 
@@ -162,22 +162,22 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    START["Payment request\n(amount + fee rate)"] --> FILTER["Filter eligible UTXOs\n(confirmed, not locked,\nabove dust threshold)"]
-    FILTER --> BNB["Branch-and-bound search\n(exact match, no change)"]
+    START["支払い要求\n（額面 + 手数料率）"] --> FILTER["候補 UTXO をフィルター\n（承認済、未ロック、\nダスト閾値超）"]
+    FILTER --> BNB["分枝限定法 (BnB) 探索\n（厳密一致、おつりなし）"]
 
-    BNB -- "exact match found" --> SCORE_BNB["Score with waste metric"]
-    BNB -- "no exact match" --> KNAPSACK["Knapsack selection\n(random trials,\nminimize excess)"]
+    BNB -- "厳密一致あり" --> SCORE_BNB["無駄指標で採点"]
+    BNB -- "厳密一致なし" --> KNAPSACK["ナップサック選択\n（ランダム試行、\n超過を最小化）"]
 
-    KNAPSACK --> SCORE_KS["Score with waste metric"]
+    KNAPSACK --> SCORE_KS["無駄指標で採点"]
 
-    FILTER --> SRD["Single random draw\n(shuffle and accumulate\nuntil target met)"]
-    SRD --> SCORE_SRD["Score with waste metric"]
+    FILTER --> SRD["単一ランダム抽選\n（目標到達までシャッフル\nして累積）"]
+    SRD --> SCORE_SRD["無駄指標で採点"]
 
-    SCORE_BNB --> PICK["Pick lowest-waste\ncandidate"]
+    SCORE_BNB --> PICK["最低無駄の\n候補を選択"]
     SCORE_KS --> PICK
     SCORE_SRD --> PICK
 
-    PICK --> BUILD["Build transaction\n(inputs + outputs +\nchange if needed)"]
+    PICK --> BUILD["トランザクション構築\n（入力 + 出力 +\n必要に応じておつり）"]
 ```
 
 
@@ -200,28 +200,28 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    participant C as Creator
-    participant U as Updater
-    participant S1 as Signer 1<br/>(hot wallet)
-    participant S2 as Signer 2<br/>(hardware device)
-    participant F as Finalizer
-    participant N as Node
+    participant C as 作成者
+    participant U as 更新者
+    participant S1 as 署名者 1<br/>（ホットウォレット）
+    participant S2 as 署名者 2<br/>（ハードウェアデバイス）
+    participant F as ファイナライザー
+    participant N as ノード
 
-    C->>C: Create unsigned PSBT<br/>(inputs, outputs, no signatures)
-    C->>U: Pass PSBT
+    C->>C: 未署名 PSBT を作成<br/>（入力、出力、署名なし）
+    C->>U: PSBT を渡す
 
-    U->>U: Add UTXO data,<br/>derivation paths,<br/>sighash types
-    U->>S1: Pass updated PSBT
+    U->>U: UTXO データ、<br/>導出パス、<br/>sighash 種別を追加
+    U->>S1: 更新済み PSBT を渡す
 
-    S1->>S1: Sign own inputs<br/>(add partial signatures)
-    S1->>S2: Pass partially signed PSBT
+    S1->>S1: 自身の入力に署名<br/>（部分署名を追加）
+    S1->>S2: 部分署名済み PSBT を渡す
 
-    S2->>S2: Verify outputs on screen,<br/>sign remaining inputs
-    S2->>F: Pass fully signed PSBT
+    S2->>S2: 画面で出力を検証、<br/>残りの入力に署名
+    S2->>F: 完全署名済み PSBT を渡す
 
-    F->>F: Combine partial signatures,<br/>assemble final scriptSig/witness,<br/>produce network-ready transaction
-    F->>N: Broadcast raw transaction
-    N->>N: Validate and relay
+    F->>F: 部分署名を結合し、<br/>最終 scriptSig/witness を組立、<br/>ネットワーク用トランザクションを生成
+    F->>N: 生トランザクションを配信
+    N->>N: 検証して中継
 ```
 
 
@@ -267,16 +267,16 @@ Bitcoin Core は外部呼び出し元に 3 つのインターフェースを公�
 
 ```mermaid
 flowchart LR
-    subgraph Callers
-        CLI["bitcoin-cli\n(command line)"]
-        WEBAPP["Web application"]
-        STREAM["Streaming consumer\n(indexer, monitor)"]
+    subgraph Callers["呼び出し元"]
+        CLI["bitcoin-cli\n（コマンドライン）"]
+        WEBAPP["Web アプリ"]
+        STREAM["Streaming consumer\n（インデクサー、モニター）"]
     end
 
-    subgraph Interfaces
-        RPC["JSON-RPC\n(port 8332)\nAuthenticated,\nread + write"]
-        REST["REST\n(port 8332)\nUnauthenticated,\nread-only"]
-        ZMQ_IF["ZMQ\n(configurable port)\nPush notifications,\nno request needed"]
+    subgraph Interfaces["インターフェース"]
+        RPC["JSON-RPC\n（ポート 8332）\n認証あり、\n読み書き"]
+        REST["REST\n（ポート 8332）\n認証なし、\n読み取り専用"]
+        ZMQ_IF["ZMQ\n（設定可能ポート）\nプッシュ通知、\nリクエスト不要"]
     end
 
     CLI --> RPC
@@ -320,24 +320,24 @@ flowchart LR
 flowchart LR
     subgraph V01["v0.1 (2009)"]
         direction TB
-        MONO["Single binary\n(wallet + node + miner + GUI)"]
+        MONO["単一バイナリ\n（ウォレット + ノード + マイナー + GUI）"]
         BDB["wallet.dat\n(Berkeley DB)"]
         MONO --> BDB
     end
 
     subgraph V18["v0.17–v0.20"]
         direction TB
-        NODE1["bitcoind\n(node + wallet module)"]
-        W1["Wallet module\n(internal, linked library)"]
+        NODE1["bitcoind\n（ノード + ウォレットモジュール）"]
+        W1["ウォレットモジュール\n（内部、リンクライブラリー）"]
         BDB2["wallet.dat\n(Berkeley DB)"]
         NODE1 --> W1
         W1 --> BDB2
     end
 
-    subgraph V27["v27+ baseline"]
+    subgraph V27["v27 以降基準"]
         direction TB
-        NODE2["bitcoind\n(node only)"]
-        W2["bitcoin-wallet\n(optional separate process)"]
+        NODE2["bitcoind\n（ノードのみ）"]
+        W2["bitcoin-wallet\n（任意で別プロセス）"]
         SQL["wallet.dat\n(SQLite)"]
         NODE2 -- "IPC\n(Cap'n Proto)" --- W2
         W2 --> SQL

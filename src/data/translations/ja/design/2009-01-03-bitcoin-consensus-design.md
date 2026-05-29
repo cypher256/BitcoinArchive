@@ -51,10 +51,10 @@ translationStatus: complete
 
 ```mermaid
 flowchart TD
-    START["Assemble block header\n(prev hash, Merkle root,\ntimestamp, difficulty bits)"] --> HASH["Compute SHA-256d\nof 80-byte header"]
-    HASH --> CMP{"Hash ≤ target?"}
-    CMP -- "Yes" --> FOUND["Valid block found.\nBroadcast to network."]
-    CMP -- "No" --> INC["Increment ナンス\n(or mutate coinbase\nfor extra-ナンス space)"]
+    START["ブロックヘッダー組立\n（前ハッシュ、マークルルート、\nタイムスタンプ、難易度ビット）"] --> HASH["80 バイトヘッダーの\nSHA-256d を計算"]
+    HASH --> CMP{"hash ≤ target?"}
+    CMP -- "Yes" --> FOUND["有効ブロック発見。\nネットワークに配信。"]
+    CMP -- "No" --> INC["ナンスをインクリメント\n（または extra-ナンス用に\nコインベースを変更）"]
     INC --> HASH
 ```
 
@@ -80,15 +80,15 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph Window["Retarget window: 2,016 blocks"]
-        B1["Block N"] --> B2["Block\nN+1"] --> DOTS["···"] --> B2015["Block\nN+2015"]
+    subgraph Window["再ターゲット窓: 2,016 ブロック"]
+        B1["ブロック N"] --> B2["ブロック\nN+1"] --> DOTS["···"] --> B2015["ブロック\nN+2015"]
     end
 
-    B2015 --> CALC["Calculate elapsed time:\ntimestamp(N+2015) − timestamp(N)"]
-    CALC --> RATIO["Ratio = elapsed / expected\nexpected = 2,016 × 600 s"]
-    RATIO --> CLAMP["Clamp ratio to\n[1/4, 4]"]
-    CLAMP --> NEW["New target =\nold target × clamped ratio"]
-    NEW --> NEXT["Apply to next\n2,016 blocks"]
+    B2015 --> CALC["経過時間を算出:\ntimestamp(N+2015) − timestamp(N)"]
+    CALC --> RATIO["比率 = 実経過 / 想定\n想定 = 2,016 × 600 秒"]
+    RATIO --> CLAMP["比率を [1/4, 4] に\nクランプ"]
+    CLAMP --> NEW["新ターゲット =\n旧ターゲット × クランプ比"]
+    NEW --> NEXT["次の 2,016 ブロックに\n適用"]
 ```
 
 ### 調整パラメーター
@@ -120,19 +120,19 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    RECV["Receive block"] --> POW{"Header PoW valid?\nhash ≤ target"}
-    POW -- "fail" --> REJECT["Reject block"]
-    POW -- "pass" --> TS{"Timestamp within\nacceptable range?"}
+    RECV["ブロック受信"] --> POW{"ヘッダー PoW 有効?\nhash ≤ target"}
+    POW -- "fail" --> REJECT["ブロック拒否"]
+    POW -- "pass" --> TS{"タイムスタンプが\n許容範囲内?"}
     TS -- "fail" --> REJECT
-    TS -- "pass" --> SIZE{"Block weight\n≤ 4 MWU?"}
+    TS -- "pass" --> SIZE{"ブロックウェイト\n≤ 4 MWU?"}
     SIZE -- "fail" --> REJECT
-    SIZE -- "pass" --> MERKLE{"Merkle root matches\nrecomputed value?"}
+    SIZE -- "pass" --> MERKLE{"マークルルートが\n再計算値に一致?"}
     MERKLE -- "fail" --> REJECT
-    MERKLE -- "pass" --> CB{"Coinbase transaction\nvalid? (exactly one,\nreward ≤ subsidy + fees)"}
+    MERKLE -- "pass" --> CB{"コインベーストランザクション\n有効?（1 件のみ、\n報酬 ≤ 新規発行分 + 手数料）"}
     CB -- "fail" --> REJECT
-    CB -- "pass" --> TXS{"All transactions valid?\n(signatures, UTXO existence,\nno double-spends within block)"}
+    CB -- "pass" --> TXS{"全トランザクション有効?\n（署名、UTXO 存在、\nブロック内に二重支払いなし）"}
     TXS -- "fail" --> REJECT
-    TXS -- "pass" --> ACCEPT["Accept block,\nupdate chain state"]
+    TXS -- "pass" --> ACCEPT["ブロック受理、\nチェーン状態を更新"]
 ```
 
 ### 検証項目
@@ -156,23 +156,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    subgraph Natural["Natural fork\n(propagation delay)"]
-        NA["Two miners find blocks\nat nearly the same time"]
-        NA --> NB["Both blocks are valid\nand reference the same parent"]
-        NB --> NC["Resolved automatically:\nnext block extends one branch,\nmaking it the most-work chain"]
+    subgraph Natural["自然フォーク\n（伝播遅延）"]
+        NA["2 マイナーが\nほぼ同時にブロックを発見"]
+        NA --> NB["双方が有効で\n同じ親を参照"]
+        NB --> NC["自動的に解決:\n次のブロックが一方を延長し\n最多ワークチェーンとなる"]
     end
 
-    subgraph Soft["Soft fork\n(rule tightening)"]
-        SA["New rule makes some\npreviously valid blocks invalid"]
-        SA --> SB["Upgraded nodes enforce\nstricter rules"]
-        SB --> SC["Non-upgraded nodes still accept\nall new blocks (backward compatible)"]
-        SC --> SD["No permanent split if\nmajority of hash rate upgrades"]
+    subgraph Soft["ソフトフォーク\n（規則の厳格化）"]
+        SA["新規則により従来有効な\nブロックの一部が無効化"]
+        SA --> SB["更新済みノードが\n厳格規則を適用"]
+        SB --> SC["未更新ノードも引き続き\n全新ブロックを受理（後方互換）"]
+        SC --> SD["ハッシュレート多数派が\n更新すれば恒久分裂なし"]
     end
 
-    subgraph Hard["Hard fork\n(rule relaxation or change)"]
-        HA["New rule makes some\npreviously invalid blocks valid"]
-        HA --> HB["Upgraded nodes accept\nblocks that old nodes reject"]
-        HB --> HC["Permanent chain split\nunless all nodes upgrade"]
+    subgraph Hard["ハードフォーク\n（規則の緩和または変更）"]
+        HA["新規則により従来無効な\nブロックの一部が有効化"]
+        HA --> HB["更新済みノードが旧ノードの\n拒否するブロックを受理"]
+        HB --> HC["全ノードが更新しない限り\n恒久的にチェーン分裂"]
     end
 ```
 
@@ -198,15 +198,15 @@ flowchart TD
 
 ```mermaid
 timeline
-    title Consensus activation mechanisms
+    title コンセンサス起動機構
     section 2009–2012
-        Flag day : Fixed block height or date. No miner signaling. Used for early changes (e.g., 1 MB block-size limit).
+        Flag day : 固定ブロック高または日付。マイナーシグナリングなし。初期の変更（例: 1 MB ブロックサイズ上限）に使用。
     section 2012–2015
-        IsSuperMajority : 950 of last 1,000 blocks must signal. Single-bit version field. Used for BIPs 34, 66, 65.
+        IsSuperMajority : 直近 1,000 ブロックのうち 950 がシグナル必須。バージョンフィールドの 1 ビット。BIP 34、66、65 に使用。
     section 2015–2017
-        BIP 9 versionbits : Per-bit signaling in version field. Time-bounded activation window. Parallel deployments possible. Used for SegWit.
-    section 2017–present
-        BIP 8 LOT=true : Versionbits with mandatory lock-in at timeout. Prevents indefinite miner veto. Proposed for Taproot activation debate, implemented as Speedy Trial variant.
+        BIP 9 versionbits : バージョンフィールドのビット単位シグナリング。時間境界のある起動窓。並列展開が可能。SegWit に使用。
+    section 2017–現在
+        BIP 8 LOT=true : タイムアウト時の強制ロックインを伴う versionbits。マイナーの無期限拒否を防ぐ。Taproot 起動の議論で提案され、Speedy Trial として実装された。
 ```
 
 ### 有効化パラメーターの比較

@@ -34,31 +34,31 @@ v0.1 と v27 以降の間で最も目に見える変化はアーキテクチャ�
 
 ```mermaid
 flowchart TB
-    subgraph V01["v0.1 — monolithic (January 2009)"]
+    subgraph V01["v0.1 — モノリシック (2009 年 1 月)"]
         direction TB
-        MONO["Single binary<br/>(bitcoin.exe)"]
-        MONO --> GUI_0["Built-in GUI<br/>(wxWidgets)"]
-        MONO --> MINE_0["Built-in CPU miner"]
-        MONO --> VALID_0["Validation + relay"]
-        MONO --> WALL_0["Wallet (random keys)"]
-        MONO --> BDB["Berkeley DB<br/>(all state in one DB)"]
+        MONO["単一バイナリ<br/>(bitcoin.exe)"]
+        MONO --> GUI_0["内蔵 GUI<br/>(wxWidgets)"]
+        MONO --> MINE_0["内蔵 CPU マイナー"]
+        MONO --> VALID_0["検証 + 中継"]
+        MONO --> WALL_0["ウォレット（ランダム鍵）"]
+        MONO --> BDB["Berkeley DB<br/>（全状態を 1 つの DB に）"]
     end
 
-    subgraph V27["v27+ — modular"]
+    subgraph V27["v27 以降 — モジュール構成"]
         direction TB
-        NODE["bitcoind<br/>(node)"]
-        NODE --> P2P_N["P2P network layer"]
-        NODE --> VALID_N["Validation engine"]
-        NODE --> MEMPOOL_N["Mempool"]
-        NODE --> STORE_N["Storage layer"]
-        STORE_N --> LEVEL["LevelDB<br/>(UTXO set + block index)"]
-        STORE_N --> FLAT["Flat files<br/>(blk*.dat / rev*.dat)"]
-        WALL_N["bitcoin-wallet<br/>(logical separation;<br/>experimental multiprocess)"]
-        WALL_N --> SQL["SQLite<br/>(descriptor wallet)"]
+        NODE["bitcoind<br/>（ノード）"]
+        NODE --> P2P_N["P2P ネットワーク層"]
+        NODE --> VALID_N["検証エンジン"]
+        NODE --> MEMPOOL_N["メモリープール"]
+        NODE --> STORE_N["ストレージ層"]
+        STORE_N --> LEVEL["LevelDB<br/>(UTXO セット + ブロックインデックス)"]
+        STORE_N --> FLAT["フラットファイル<br/>(blk*.dat / rev*.dat)"]
+        WALL_N["bitcoin-wallet<br/>（論理的に分離;<br/>マルチプロセスは実験的）"]
+        WALL_N --> SQL["SQLite<br/>（記述子ウォレット）"]
         NODE -- "IPC" --- WALL_N
-        QT["bitcoin-qt<br/>(optional GUI)"]
+        QT["bitcoin-qt<br/>（任意の GUI）"]
         NODE --- QT
-        EXT_MINE["External miner<br/>(via getblocktemplate /<br/>Stratum v2)"]
+        EXT_MINE["外部マイナー<br/>（getblocktemplate /<br/>Stratum v2 経由）"]
         NODE --- EXT_MINE
     end
 ```
@@ -76,22 +76,22 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    subgraph V01_NET["v0.1 — network"]
+    subgraph V01_NET["v0.1 — ネットワーク"]
         direction TB
-        IRC["IRC ブートストラップ<br/>(#bitcoin on lfnet.org)"]
-        ADDR_0["addr messages<br/>(IPv4 only)"]
-        FULL_BLK["Full block relay<br/>(~1 MB per peer)"]
-        PLAIN["Plaintext TCP"]
-        PEER_0["8 outbound peers"]
+        IRC["IRC ブートストラップ<br/>(lfnet.org の #bitcoin)"]
+        ADDR_0["addr メッセージ<br/>(IPv4 のみ)"]
+        FULL_BLK["完全ブロック中継<br/>（ピアあたり約 1 MB）"]
+        PLAIN["平文 TCP"]
+        PEER_0["出方向ピア 8"]
     end
 
-    subgraph V27_NET["v27+ — network"]
+    subgraph V27_NET["v27 以降 — ネットワーク"]
         direction TB
-        DNS["DNS seed ブートストラップ"]
+        DNS["DNS シードブートストラップ"]
         ADDRV2["addr / addrv2<br/>(IPv4, IPv6, Tor,<br/>I2P, CJDNS)"]
-        COMPACT["Compact block relay<br/>(BIP 152, ~20 kB)"]
-        ENC["Encrypted transport<br/>(BIP 324, ChaCha20)"]
-        PEER_N["8 full-relay +<br/>2 block-relay-only +<br/>feeler + anchor"]
+        COMPACT["コンパクトブロック中継<br/>(BIP 152、約 20 kB)"]
+        ENC["暗号化トランスポート<br/>(BIP 324, ChaCha20)"]
+        PEER_N["全中継 8 +<br/>ブロック中継専用 2 +<br/>フィーラー + アンカー"]
     end
 ```
 
@@ -111,22 +111,22 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_TX["v0.1 — transaction"]
+    subgraph V01_TX["v0.1 — トランザクション"]
         direction TB
-        LEG["Legacy format<br/>(version + inputs +<br/>outputs + locktime)"]
-        ECDSA_0["ECDSA only<br/>(OpenSSL)"]
-        P2PK_0["P2PK, P2PKH"]
-        SIG_0["Signatures in<br/>scriptSig<br/>(70–72 bytes DER)"]
-        MALL["Malleable txid"]
+        LEG["レガシー形式<br/>（バージョン + 入力 +<br/>出力 + ロックタイム）"]
+        ECDSA_0["ECDSA のみ<br/>(OpenSSL)"]
+        P2PK_0["P2PK、P2PKH"]
+        SIG_0["署名は<br/>scriptSig 内<br/>(70–72 バイト DER)"]
+        MALL["展性のある txid"]
     end
 
-    subgraph V27_TX["v27+ — transaction"]
+    subgraph V27_TX["v27 以降 — トランザクション"]
         direction TB
-        SEG["SegWit format<br/>(+ marker/flag +<br/>witness field)"]
+        SEG["SegWit 形式<br/>（+ marker/flag +<br/>witness フィールド）"]
         SIG_N["ECDSA + Schnorr<br/>(libsecp256k1)"]
         TYPES["P2PKH, P2SH, P2WPKH,<br/>P2WSH, P2TR"]
-        WIT["Signatures in witness<br/>(Schnorr: 64 bytes fixed)"]
-        FIXED["Non-malleable txid<br/>(witness excluded)"]
+        WIT["署名は witness 内<br/>（Schnorr: 64 バイト固定）"]
+        FIXED["非展性 txid<br/>（witness を除外）"]
     end
 ```
 
@@ -148,20 +148,20 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_BLK["v0.1 — block structure"]
+    subgraph V01_BLK["v0.1 — ブロック構造"]
         direction TB
-        HDR_0["80-byte header<br/>(version 1)"]
-        MERK_0["Single Merkle tree<br/>(full serialized txs)"]
-        SIZE_0["No explicit size limit<br/>(1 MB added mid-2010)"]
-        SIGOP_0["20,000 sigops/block"]
+        HDR_0["80 バイトヘッダー<br/>（バージョン 1）"]
+        MERK_0["単一マークルツリー<br/>（完全直列化 tx）"]
+        SIZE_0["明示的サイズ上限なし<br/>（2010 年半ばに 1 MB 追加）"]
+        SIGOP_0["20,000 sigops/ブロック"]
     end
 
-    subgraph V27_BLK["v27+ — block structure"]
+    subgraph V27_BLK["v27 以降 — ブロック構造"]
         direction TB
-        HDR_N["80-byte header<br/>(BIP 9 version-bits)"]
-        MERK_N["Primary Merkle tree +<br/>witness commitment<br/>(in coinbase OP_RETURN)"]
-        WEIGHT["4 MWU weight limit<br/>(~1.5–2 MB observed)"]
-        SIGOP_N["80,000 sigops/block<br/>(weight-adjusted)"]
+        HDR_N["80 バイトヘッダー<br/>(BIP 9 versionbits)"]
+        MERK_N["主マークルツリー +<br/>witness コミットメント<br/>（コインベース OP_RETURN 内）"]
+        WEIGHT["4 MWU ウェイト上限<br/>（実測約 1.5〜2 MB）"]
+        SIGOP_N["80,000 sigops/ブロック<br/>（ウェイト調整）"]
     end
 ```
 
@@ -181,22 +181,22 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_CON["v0.1 — consensus"]
+    subgraph V01_CON["v0.1 — コンセンサス"]
         direction TB
-        POW_0["SHA-256d proof of work"]
-        DIFF_0["Difficulty adjustment<br/>(every 2,016 blocks,<br/>off-by-one bug)"]
-        CHAIN_0["Most-work chain<br/>(nChainWork)"]
-        ACT_0["Flag-day activation<br/>(direct code change)"]
-        CHECK_0["Hardcoded checkpoints<br/>(anti-DoS)"]
+        POW_0["SHA-256d プルーフオブワーク"]
+        DIFF_0["難易度調整<br/>（2,016 ブロックごと、<br/>off-by-one バグ）"]
+        CHAIN_0["最多ワークチェーン<br/>(nChainWork)"]
+        ACT_0["フラグデー有効化<br/>（コード直接変更）"]
+        CHECK_0["ハードコード済み<br/>チェックポイント（DoS 対策）"]
     end
 
-    subgraph V27_CON["v27+ — consensus"]
+    subgraph V27_CON["v27 以降 — コンセンサス"]
         direction TB
-        POW_N["SHA-256d proof of work<br/>(unchanged)"]
-        DIFF_N["Same algorithm<br/>(off-by-one preserved<br/>as consensus rule)"]
-        CHAIN_N["Most-work chain<br/>(hardened nChainWork)"]
+        POW_N["SHA-256d プルーフオブワーク<br/>（変更なし）"]
+        DIFF_N["同一アルゴリズム<br/>（off-by-one は合意規則<br/>として保持）"]
+        CHAIN_N["最多ワークチェーン<br/>（強化された nChainWork）"]
         ACT_N["BIP 9 versionbits /<br/>BIP 8 Speedy Trial"]
-        ASSUME["assumevalid<br/>(skip script verification<br/>below trusted hash)"]
+        ASSUME["assumevalid<br/>（信頼ハッシュ以下では<br/>スクリプト検証をスキップ）"]
     end
 ```
 
@@ -216,20 +216,20 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_MON["v0.1 — monetary"]
+    subgraph V01_MON["v0.1 — 貨幣"]
         direction TB
-        SUB_0["50 BTC subsidy<br/>(era 0)"]
-        FREE_0["Most transactions free<br/>(priority by coin age)"]
-        MINE_0["Internal CPU miner"]
-        TMPL_0["Trivial block template"]
+        SUB_0["50 BTC 新規発行分<br/>（期 0）"]
+        FREE_0["大半のトランザクションが無料<br/>（コイン年齢による優先度）"]
+        MINE_0["内部 CPU マイナー"]
+        TMPL_0["単純なブロックテンプレート"]
     end
 
-    subgraph V27_MON["v27+ — monetary"]
+    subgraph V27_MON["v27 以降 — 貨幣"]
         direction TB
-        SUB_N["3.125 BTC subsidy<br/>(era 4, post-halving 2024)"]
-        FEE_N["Fee-rate auction<br/>(sat/vB)"]
-        MINE_N["External miner via<br/>getblocktemplate / Stratum v2"]
-        TMPL_N["Fee-rate-sorted template<br/>with SegWit weight accounting"]
+        SUB_N["3.125 BTC 新規発行分<br/>（期 4、2024 年半減後）"]
+        FEE_N["手数料率オークション<br/>(sat/vB)"]
+        MINE_N["外部マイナー<br/>(getblocktemplate / Stratum v2)"]
+        TMPL_N["手数料率で並べたテンプレート<br/>（SegWit ウェイト計算付き）"]
     end
 ```
 
@@ -248,26 +248,26 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_CRYPTO["v0.1 — cryptography"]
+    subgraph V01_CRYPTO["v0.1 — 暗号"]
         direction TB
-        OPENSSL["OpenSSL<br/>(all operations)"]
-        ECDSA_V0["ECDSA only"]
-        UNCOMP["Uncompressed<br/>public keys<br/>(65 bytes)"]
-        DER_V0["DER encoding<br/>(variable, 70–72 bytes)"]
-        NONCE_V0["OpenSSL PRNG<br/>ナンス generation"]
+        OPENSSL["OpenSSL<br/>（全操作）"]
+        ECDSA_V0["ECDSA のみ"]
+        UNCOMP["非圧縮公開鍵<br/>(65 バイト)"]
+        DER_V0["DER エンコード<br/>（可変、70〜72 バイト）"]
+        NONCE_V0["OpenSSL PRNG による<br/>ナンス生成"]
         ADDR_V0["Base58Check<br/>(P2PKH: 1...)"]
-        KEY_V0["Random key pool<br/>(non-deterministic)"]
+        KEY_V0["ランダム鍵プール<br/>（非決定性）"]
     end
 
-    subgraph V27_CRYPTO["v27+ — cryptography"]
+    subgraph V27_CRYPTO["v27 以降 — 暗号"]
         direction TB
-        LIBSECP["libsecp256k1<br/>(constant-time, audited)"]
+        LIBSECP["libsecp256k1<br/>（定時間、監査済み）"]
         SCHNORR["ECDSA + Schnorr"]
-        COMP["Compressed keys<br/>(33 bytes);<br/>x-only (32 bytes, Taproot)"]
-        SIG_ENC["DER (ECDSA) +<br/>fixed 64-byte (Schnorr)"]
-        NONCE_N["RFC 6979 deterministic<br/>(ECDSA); BIP 340 synthetic<br/>(Schnorr)"]
+        COMP["圧縮鍵<br/>(33 バイト);<br/>x-only (32 バイト、Taproot)"]
+        SIG_ENC["DER (ECDSA) +<br/>固定 64 バイト (Schnorr)"]
+        NONCE_N["RFC 6979 決定性<br/>(ECDSA); BIP 340 合成<br/>(Schnorr)"]
         ADDR_N["Base58Check + Bech32<br/>(bc1q...) + Bech32m<br/>(bc1p...)"]
-        KEY_N["HD derivation<br/>(BIP 32/44/84/86);<br/>descriptor wallets"]
+        KEY_N["HD 導出<br/>(BIP 32/44/84/86);<br/>記述子ウォレット"]
     end
 ```
 
@@ -287,20 +287,20 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_STORE["v0.1 — storage"]
+    subgraph V01_STORE["v0.1 — ストレージ"]
         direction TB
-        BDB_S["Berkeley DB<br/>(all state in one DB)"]
-        FULL_TX["Full transactions stored<br/>(spent + unspent)"]
-        NO_UNDO["No undo data<br/>(reorg = re-validate<br/>from fork point)"]
-        NO_PRUNE["No pruning<br/>(store everything)"]
+        BDB_S["Berkeley DB<br/>（全状態を 1 つの DB に）"]
+        FULL_TX["完全トランザクションを保存<br/>（使用済み + 未使用）"]
+        NO_UNDO["undo データなし<br/>（再編成 = フォーク点から<br/>再検証）"]
+        NO_PRUNE["剪定なし<br/>（全件保存）"]
     end
 
-    subgraph V27_STORE["v27+ — storage"]
+    subgraph V27_STORE["v27 以降 — ストレージ"]
         direction TB
-        MULTI_S["LevelDB (UTXO set +<br/>block index) + flat files<br/>(blocks + undo data)"]
-        UTXO_ONLY["Unspent outputs only<br/>(outpoint-indexed)"]
-        UNDO_S["Dedicated undo files<br/>(rev*.dat for fast rollback)"]
-        PRUNE_S["Pruning (min 550 MiB) +<br/>assumeUTXO ブートストラップ"]
+        MULTI_S["LevelDB（UTXO セット +<br/>ブロックインデックス）+ フラットファイル<br/>（ブロック + undo データ）"]
+        UTXO_ONLY["未使用出力のみ<br/>（outpoint インデックス）"]
+        UNDO_S["専用 undo ファイル<br/>（rev*.dat、高速ロールバック用）"]
+        PRUNE_S["剪定（最小 550 MiB）+<br/>assumeUTXO ブートストラップ"]
     end
 ```
 
@@ -321,22 +321,22 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph V01_WALL["v0.1 — wallet"]
+    subgraph V01_WALL["v0.1 — ウォレット"]
         direction TB
-        EMBED["Embedded in node binary<br/>(no interface boundary)"]
-        RAND_K["Random key pool<br/>(100 independent keys)"]
+        EMBED["ノードバイナリ内に埋込み<br/>（インターフェース境界なし）"]
+        RAND_K["ランダム鍵プール<br/>（独立 100 鍵）"]
         BDB_W["Berkeley DB<br/>(wallet.dat)"]
-        BACKUP["Backup = export file<br/>(new keys after backup<br/>are unrecoverable)"]
-        NO_FEE["No fee estimation<br/>(transactions free)"]
+        BACKUP["バックアップ = ファイルエクスポート<br/>（バックアップ後の新鍵は<br/>復元不可）"]
+        NO_FEE["手数料推定なし<br/>（トランザクション無料）"]
     end
 
-    subgraph V27_WALL["v27+ — wallet"]
+    subgraph V27_WALL["v27 以降 — ウォレット"]
         direction TB
-        SEP["Logical separation<br/>(experimental multiprocess)"]
-        DESC["Descriptor wallets<br/>(deterministic derivation)"]
-        SQLITE["SQLite<br/>(wallet.dat, new format)"]
-        SEED["One-time seed backup<br/>(covers all derived keys)"]
-        EST["Fee estimation +<br/>RBF + PSBT workflow"]
+        SEP["論理的に分離<br/>（マルチプロセスは実験的）"]
+        DESC["記述子ウォレット<br/>（決定論的導出）"]
+        SQLITE["SQLite<br/>(wallet.dat、新形式)"]
+        SEED["一度のシードバックアップ<br/>（全導出鍵をカバー）"]
+        EST["手数料推定 +<br/>RBF + PSBT ワークフロー"]
     end
 ```
 
@@ -358,22 +358,22 @@ flowchart LR
 
 ```mermaid
 timeline
-    title Architectural milestones: v0.1 → v27+
+    title アーキテクチャー上のマイルストーン: v0.1 → v27 以降
     section 2009–2010
-        v0.1 (Jan 2009) : Monolithic binary, BDB, IRC, CPU miner, OpenSSL
-        1 MB limit (Sep 2010) : Block-size cap, opcodes disabled
+        v0.1 (2009 年 1 月) : モノリシックバイナリ、BDB、IRC、CPU マイナー、OpenSSL
+        1 MB 上限 (2010 年 9 月) : ブロックサイズ上限、オペコード無効化
     section 2012–2013
-        v0.8 (Mar 2013) : BDB → LevelDB, flat block files, undo data
+        v0.8 (2013 年 3 月) : BDB → LevelDB、フラットブロックファイル、undo データ
     section 2015–2017
-        v0.10 (2015) : Headers-first sync, libsecp256k1
-        SegWit — BIP 141 (Aug 2017) : Witness field, 4 MWU, non-malleable txid
+        v0.10 (2015) : ヘッダー先行同期、libsecp256k1
+        SegWit — BIP 141 (2017 年 8 月) : Witness フィールド、4 MWU、非展性 txid
     section 2018–2021
-        BIP 174 (2018) : PSBT workflow
-        Taproot — BIP 341 (Nov 2021) : Schnorr, tapscript, key/script-path
+        BIP 174 (2018) : PSBT ワークフロー
+        Taproot — BIP 341 (2021 年 11 月) : Schnorr、tapscript、鍵/スクリプトパス
     section 2023–2025
-        v26 (2023) : BIP 324 encrypted transport, BDB deprecated
-        v27 baseline (2024) : assumeUTXO snapshot sync
-        v28 (2024) : full RBF default
+        v26 (2023) : BIP 324 暗号化トランスポート、BDB 非推奨
+        v27 基準 (2024) : assumeUTXO スナップショット同期
+        v28 (2024) : 完全 RBF が既定
 ```
 
 ## 11. 変わったものと変わらなかったもの

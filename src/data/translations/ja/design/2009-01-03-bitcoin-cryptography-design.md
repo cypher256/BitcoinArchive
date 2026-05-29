@@ -48,12 +48,12 @@ translationStatus: complete
 
 ```mermaid
 flowchart LR
-    RNG["Cryptographically secure\nrandom number generator"] --> SK["Private key\n(256-bit integer k,\n1 ≤ k < n)"]
-    SK --> MUL["Scalar multiplication\nK = k × G"]
-    G["Generator point G\n(defined by secp256k1)"] --> MUL
-    MUL --> PK["Public key K\n(point on curve)"]
-    PK --> COMP["Compressed form\n(33 bytes:\n02/03 prefix + x-coordinate)"]
-    PK --> UNCOMP["Uncompressed form\n(65 bytes:\n04 prefix + x + y)"]
+    RNG["暗号学的に安全な\n乱数生成器"] --> SK["秘密鍵\n（256 ビット整数 k、\n1 ≤ k < n）"]
+    SK --> MUL["スカラー倍算\nK = k × G"]
+    G["生成元 G\n(secp256k1 で定義)"] --> MUL
+    MUL --> PK["公開鍵 K\n（曲線上の点）"]
+    PK --> COMP["圧縮形式\n(33 バイト:\n02/03 接頭辞 + x 座標)"]
+    PK --> UNCOMP["非圧縮形式\n(65 バイト:\n04 接頭辞 + x + y)"]
 ```
 
 ### secp256k1 曲線パラメーター
@@ -88,21 +88,21 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    TX1["Transaction 1\n(serialized bytes)"] --> TXID1["SHA-256d → txid₁"]
-    TX2["Transaction 2\n(serialized bytes)"] --> TXID2["SHA-256d → txid₂"]
-    TX3["Transaction 3"] --> TXID3["SHA-256d → txid₃"]
-    TX4["Transaction 4"] --> TXID4["SHA-256d → txid₄"]
+    TX1["トランザクション 1\n（直列化バイト）"] --> TXID1["SHA-256d → txid₁"]
+    TX2["トランザクション 2\n（直列化バイト）"] --> TXID2["SHA-256d → txid₂"]
+    TX3["トランザクション 3"] --> TXID3["SHA-256d → txid₃"]
+    TX4["トランザクション 4"] --> TXID4["SHA-256d → txid₄"]
 
     TXID1 --> H12["SHA-256d\n(txid₁ ‖ txid₂)"]
     TXID2 --> H12
     TXID3 --> H34["SHA-256d\n(txid₃ ‖ txid₄)"]
     TXID4 --> H34
 
-    H12 --> ROOT["Merkle root\nSHA-256d(H12 ‖ H34)"]
+    H12 --> ROOT["マークルルート\nSHA-256d(H12 ‖ H34)"]
     H34 --> ROOT
 
-    ROOT --> HDR["Block header\n(80 bytes including\nMerkle root)"]
-    HDR --> POW["SHA-256d → block hash\nmust be ≤ target"]
+    ROOT --> HDR["ブロックヘッダー\n（80 バイト、\nマークルルートを含む）"]
+    HDR --> POW["SHA-256d → ブロックハッシュ\nhash ≤ target が必須"]
 
     style ROOT fill:#f9f,stroke:#333,stroke-width:2px
     style POW fill:#ff9,stroke:#333,stroke-width:2px
@@ -118,21 +118,21 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-    participant Owner as Key holder
-    participant TX as Transaction
-    participant Node as Verifying node
+    participant Owner as 鍵保有者
+    participant TX as トランザクション
+    participant Node as 検証ノード
 
-    Owner->>Owner: Hold private key k
-    Owner->>TX: Construct transaction (inputs, outputs)
-    Owner->>Owner: Compute sighash (hash of transaction data per sighash flag)
-    Owner->>Owner: Sign: σ = Sign(k, sighash)
-    Owner->>TX: Attach σ to witness (or scriptSig)
+    Owner->>Owner: 秘密鍵 k を保持
+    Owner->>TX: トランザクション構築（入力、出力）
+    Owner->>Owner: sighash を計算（sighash フラグに応じたデータのハッシュ）
+    Owner->>Owner: 署名: σ = Sign(k, sighash)
+    Owner->>TX: σ を witness（または scriptSig）に添付
 
-    TX->>Node: Broadcast
-    Node->>Node: Extract public key K from locking script
-    Node->>Node: Recompute sighash from transaction data
+    TX->>Node: ブロードキャスト
+    Node->>Node: ロックスクリプトから公開鍵 K を抽出
+    Node->>Node: トランザクションデータから sighash を再計算
     Node->>Node: Verify(K, sighash, σ) → true/false
-    Node-->>TX: Valid → accept into mempool
+    Node-->>TX: 有効 → メモリープールに受理
 ```
 
 ### ECDSA 対シュノア
@@ -160,20 +160,20 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    SK["Private key\n(256-bit)"] --> PK["Public key\n(compressed,\n33 bytes)"]
+    SK["秘密鍵\n(256 ビット)"] --> PK["公開鍵\n（圧縮、\n33 バイト）"]
     PK --> HASH["Hash160\nRIPEMD-160(SHA-256(pubkey))"]
-    HASH --> PAYLOAD["20-byte hash\n(pubkey hash)"]
+    HASH --> PAYLOAD["20 バイトハッシュ\n（pubkey hash）"]
 
-    PAYLOAD --> B58["Base58Check\n(version + payload + checksum)"]
-    B58 --> P2PKH["P2PKH address\n1A1zP1eP5QGefi2DM..."]
+    PAYLOAD --> B58["Base58Check\n（バージョン + ペイロード + チェックサム）"]
+    B58 --> P2PKH["P2PKH アドレス\n1A1zP1eP5QGefi2DM..."]
 
-    PAYLOAD --> BECH32["Bech32\n(witness version 0 +\n32/20-byte program)"]
-    BECH32 --> P2WPKH["P2WPKH address\nbc1qw508d6qejxtd..."]
+    PAYLOAD --> BECH32["Bech32\n（witness バージョン 0 +\n32/20 バイトプログラム）"]
+    BECH32 --> P2WPKH["P2WPKH アドレス\nbc1qw508d6qejxtd..."]
 
-    PK --> TWEAK["Taproot tweak\n(internal key +\nMerkle root of scripts)"]
-    TWEAK --> XONLY["x-only public key\n(32 bytes)"]
-    XONLY --> BECH32M["Bech32m\n(witness version 1 +\n32-byte program)"]
-    BECH32M --> P2TR["P2TR address\nbc1p5cyxnuxmeuw..."]
+    PK --> TWEAK["Taproot tweak\n（内部鍵 +\nスクリプトのマークルルート）"]
+    TWEAK --> XONLY["x-only 公開鍵\n(32 バイト)"]
+    XONLY --> BECH32M["Bech32m\n（witness バージョン 1 +\n32 バイトプログラム）"]
+    BECH32M --> P2TR["P2TR アドレス\nbc1p5cyxnuxmeuw..."]
 ```
 
 ### アドレス形式の比較
@@ -196,30 +196,30 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    SEED["Seed entropy\n(BIP 32 seed or\necosystem BIP 39 mnemonic)"] --> MASTER["Master key + chain code\n(HMAC-SHA512 of seed)"]
+    SEED["シードエントロピー\n（BIP 32 シード または\nエコシステム BIP 39 ニーモニック）"] --> MASTER["マスター鍵 + chain code\n（シードの HMAC-SHA512）"]
 
     MASTER --> M44["m/44'/0'/0'\n(BIP 44: P2PKH)"]
     MASTER --> M84["m/84'/0'/0'\n(BIP 84: P2WPKH)"]
     MASTER --> M86["m/86'/0'/0'\n(BIP 86: P2TR)"]
 
-    M44 --> EXT44["External chain\nm/.../0"]
-    M44 --> INT44["Change chain\nm/.../1"]
+    M44 --> EXT44["外部チェーン\nm/.../0"]
+    M44 --> INT44["おつりチェーン\nm/.../1"]
 
-    EXT44 --> K0_44["Key 0"]
-    EXT44 --> K1_44["Key 1"]
-    EXT44 --> KN_44["Key n"]
+    EXT44 --> K0_44["鍵 0"]
+    EXT44 --> K1_44["鍵 1"]
+    EXT44 --> KN_44["鍵 n"]
 
-    M84 --> EXT84["External chain\nm/.../0"]
-    M84 --> INT84["Change chain\nm/.../1"]
+    M84 --> EXT84["外部チェーン\nm/.../0"]
+    M84 --> INT84["おつりチェーン\nm/.../1"]
 
-    EXT84 --> K0_84["Key 0"]
-    EXT84 --> K1_84["Key 1"]
+    EXT84 --> K0_84["鍵 0"]
+    EXT84 --> K1_84["鍵 1"]
 
-    M86 --> EXT86["External chain\nm/.../0"]
-    M86 --> INT86["Change chain\nm/.../1"]
+    M86 --> EXT86["外部チェーン\nm/.../0"]
+    M86 --> INT86["おつりチェーン\nm/.../1"]
 
-    EXT86 --> K0_86["Key 0"]
-    EXT86 --> K1_86["Key 1"]
+    EXT86 --> K0_86["鍵 0"]
+    EXT86 --> K1_86["鍵 1"]
 ```
 
 ### BIP 32 / 39 / 44 の役割

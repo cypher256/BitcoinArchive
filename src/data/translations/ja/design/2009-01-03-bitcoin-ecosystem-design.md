@@ -43,32 +43,32 @@ translationStatus: complete
 
 ```mermaid
 graph TB
-    subgraph L1["L1 — Base chain (consensus-enforced)"]
+    subgraph L1["L1 — 基盤チェーン（コンセンサスで強制）"]
         direction LR
-        UTXO["UTXO set"]
+        UTXO["UTXO セット"]
         SCRIPT["Script / Tapscript"]
-        WITNESS["Witness space"]
-        ORD["Ordinals / Inscriptions<br/>(L1 envelope data)"]
+        WITNESS["Witness 空間"]
+        ORD["Ordinals / Inscriptions<br/>(L1 エンベロープデータ)"]
     end
 
-    subgraph BRIDGE["Bridge layer (anchored to L1)"]
+    subgraph BRIDGE["ブリッジ層（L1 にアンカー）"]
         direction LR
-        CHAN["Payment channels<br/>(2-of-2 multisig)"]
-        PEG["Federated pegs<br/>(m-of-n multisig)"]
+        CHAN["ペイメントチャネル<br/>(2-of-2 マルチシグ)"]
+        PEG["連合ペグ<br/>(m-of-n マルチシグ)"]
     end
 
-    subgraph L2["L2 — Off-chain protocols"]
+    subgraph L2["L2 — オフチェーンプロトコル"]
         direction LR
-        LN["Lightning Network<br/>(routed payment channels)"]
-        LIQUID["Liquid Network<br/>(federated sidechain)"]
-        RSK["RSK<br/>(merge-mined sidechain)"]
+        LN["Lightning Network<br/>（ルーティングされたペイメントチャネル）"]
+        LIQUID["Liquid Network<br/>（連合型サイドチェーン）"]
+        RSK["RSK<br/>（マージマイニングサイドチェーン）"]
     end
 
-    subgraph INFRA["Infrastructure layer"]
+    subgraph INFRA["インフラ層"]
         direction LR
-        POOL["Mining pools<br/>(Stratum v1/v2)"]
-        INDEX["Indexers / Explorers"]
-        EXCHANGE["Exchanges / Custodians"]
+        POOL["マイニングプール<br/>(Stratum v1/v2)"]
+        INDEX["インデクサー / エクスプローラー"]
+        EXCHANGE["取引所 / カストディアン"]
     end
 
     UTXO --- SCRIPT
@@ -102,15 +102,15 @@ Lightning Network はルーティング型決済チャネルネットワーク�
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Funding: Open channel\n(broadcast funding tx)
-    Funding --> Open: Funding tx confirmed\n(both parties hold commitment txs)
-    Open --> Open: Update balances\n(exchange new commitment txs,\nrevoke old states)
-    Open --> ClosingCooperative: Mutual close\n(broadcast closing tx,\nsplit funds by final balance)
-    Open --> ClosingForced: Unilateral close\n(broadcast latest commitment tx,\ntimelock delay for dispute)
-    ClosingCooperative --> [*]: Funds returned to\nindividual wallets
-    ClosingForced --> Dispute: Counterparty broadcasts\nrevoked state
-    ClosingForced --> [*]: Timelock expires,\nfunds released
-    Dispute --> [*]: Penalty tx claims\nall channel funds
+    [*] --> Funding: チャネル開設\n（資金トランザクションを配信）
+    Funding --> Open: 資金 tx 承認\n（両当事者が commitment tx を保持）
+    Open --> Open: 残高更新\n（新しい commitment tx を交換、\n旧状態を失効）
+    Open --> ClosingCooperative: 協調クローズ\n（クローズ tx を配信、\n最終残高で資金分配）
+    Open --> ClosingForced: 一方的クローズ\n（最新 commitment tx を配信、\n争訟用タイムロック遅延）
+    ClosingCooperative --> [*]: 各ウォレットに\n資金返却
+    ClosingForced --> Dispute: 相手が失効状態を\n配信
+    ClosingForced --> [*]: タイムロック期限切れ、\n資金解放
+    Dispute --> [*]: ペナルティ tx が\nチャネル全資金を回収
 ```
 
 ### マルチホップ決済ルーティング (HTLC)
@@ -119,20 +119,20 @@ stateDiagram-v2
 
 ```mermaid
 sequenceDiagram
-    participant A as Alice
-    participant B as Bob (routing node)
-    participant C as Carol (payee)
+    participant A as アリス
+    participant B as ボブ（ルーティングノード）
+    participant C as キャロル（受取人）
 
-    C->>C: Generate random preimage R,<br/>compute hash H = SHA-256(R)
-    C->>A: Invoice containing H and amount
+    C->>C: ランダムな preimage R を生成、<br/>ハッシュ H = SHA-256(R) を計算
+    C->>A: H と金額を含むインボイス
 
-    A->>B: HTLC: "Pay Bob 1,001 sats<br/>if you reveal preimage of H<br/>within 40 blocks"
-    B->>C: HTLC: "Pay Carol 1,000 sats<br/>if you reveal preimage of H<br/>within 20 blocks"
+    A->>B: HTLC:「40 ブロック以内に<br/>H の preimage を明かせば<br/>ボブに 1,001 sat 支払う」
+    B->>C: HTLC:「20 ブロック以内に<br/>H の preimage を明かせば<br/>キャロルに 1,000 sat 支払う」
 
-    C->>B: Reveal R (claim 1,000 sats)
-    B->>A: Reveal R (claim 1,001 sats)
+    C->>B: R を明かす（1,000 sat を請求）
+    B->>A: R を明かす（1,001 sat を請求）
 
-    Note over A,C: Payment complete.<br/>Bob earned 1 sat routing fee.<br/>If Carol never reveals R,<br/>both HTLCs expire and refund.
+    Note over A,C: 支払い完了。<br/>ボブはルーティング手数料 1 sat を獲得。<br/>キャロルが R を明かさなければ<br/>両 HTLC は期限切れで返金。
 ```
 
 ### Lightning Network の特性
@@ -166,26 +166,26 @@ Lightning Network はサトシの v0.1 実装上では動作できなかった�
 
 ```mermaid
 flowchart LR
-    subgraph MAIN["Bitcoin main chain"]
-        UTXO_LOCK["User's BTC<br/>locked in federation<br/>multisig address"]
+    subgraph MAIN["ビットコインメインチェーン"]
+        UTXO_LOCK["ユーザーの BTC が<br/>連合マルチシグアドレスに<br/>ロックされる"]
     end
 
-    subgraph FEDERATION["Liquid federation (m-of-n)"]
-        WATCH["Watchmen:<br/>monitor main chain<br/>for peg-in deposits"]
-        SIGN["Blocksigners:<br/>produce Liquid blocks<br/>every 60 seconds"]
+    subgraph FEDERATION["Liquid 連合 (m-of-n)"]
+        WATCH["Watchmen:<br/>ペグイン入金をメインチェーンで<br/>監視"]
+        SIGN["Blocksigners:<br/>60 秒ごとに<br/>Liquid ブロックを生成"]
     end
 
-    subgraph LIQUID["Liquid sidechain"]
-        LBTC["L-BTC issued<br/>to user's Liquid address"]
-        TX["User transacts<br/>on Liquid<br/>(confidential transactions)"]
-        PEGOUT["Peg-out request<br/>submitted on Liquid"]
+    subgraph LIQUID["Liquid サイドチェーン"]
+        LBTC["L-BTC を<br/>ユーザーの Liquid アドレスに発行"]
+        TX["ユーザーが Liquid 上で<br/>トランザクション<br/>（コンフィデンシャル）"]
+        PEGOUT["ペグアウト要求を<br/>Liquid 上で提出"]
     end
 
-    UTXO_LOCK -- "Peg-in:<br/>102 confirmations" --> WATCH
-    WATCH -- "Mint L-BTC" --> LBTC
+    UTXO_LOCK -- "ペグイン:<br/>102 承認" --> WATCH
+    WATCH -- "L-BTC を発行" --> LBTC
     LBTC --> TX
     TX --> PEGOUT
-    PEGOUT -- "Peg-out:<br/>federation signs<br/>main-chain release" --> MAIN
+    PEGOUT -- "ペグアウト:<br/>連合がメインチェーン<br/>解放に署名" --> MAIN
 ```
 
 ### サイドチェーン比較
@@ -211,21 +211,21 @@ Ordinals と Inscriptions は**レイヤー 2 ではない**。ビットコイ�
 
 ```mermaid
 flowchart TB
-    subgraph BLOCK["Bitcoin block"]
-        subgraph TX["Transaction"]
-            IN["Input<br/>(spends a Taproot UTXO)"]
-            subgraph WIT["Witness (Tapscript path)"]
-                SIG["Schnorr signature"]
-                ENVELOPE["Envelope:<br/>OP_FALSE OP_IF<br/>  content-type<br/>  data push(es)<br/>OP_ENDIF"]
+    subgraph BLOCK["ビットコインブロック"]
+        subgraph TX["トランザクション"]
+            IN["入力<br/>(Taproot UTXO を消費)"]
+            subgraph WIT["Witness (Tapscript パス)"]
+                SIG["Schnorr 署名"]
+                ENVELOPE["エンベロープ:<br/>OP_FALSE OP_IF<br/>  content-type<br/>  data push<br/>OP_ENDIF"]
             end
-            OUT["Output<br/>(P2TR to recipient)"]
+            OUT["出力<br/>（受取人への P2TR）"]
         end
     end
 
     IN --> WIT
     WIT --> OUT
 
-    NOTE["This data lives in L1 witness space.<br/>It is consensus-valid, stored by all<br/>full nodes, and counts toward<br/>the 4 MWU block weight limit."]
+    NOTE["このデータは L1 witness 空間に存在する。<br/>コンセンサス上有効で、全フルノードに<br/>保存され、4 MWU のブロックウェイト<br/>上限に算入される。"]
     BLOCK -.-> NOTE
 ```
 
@@ -258,30 +258,30 @@ Ordinal プロトコルは、マイニングされた順序に基づいてすべ
 
 ```mermaid
 flowchart TB
-    subgraph POOL["Mining pool"]
-        COORD["Pool coordinator<br/>(constructs block template,<br/>distributes work)"]
+    subgraph POOL["マイニングプール"]
+        COORD["プールコーディネーター<br/>（ブロックテンプレート構築、<br/>作業配布）"]
     end
 
-    subgraph MINERS["Individual miners"]
-        M1["Miner A<br/>(submits shares)"]
-        M2["Miner B<br/>(submits shares)"]
-        M3["Miner C<br/>(submits shares)"]
+    subgraph MINERS["個別マイナー"]
+        M1["マイナー A<br/>（share を提出）"]
+        M2["マイナー B<br/>（share を提出）"]
+        M3["マイナー C<br/>（share を提出）"]
     end
 
-    subgraph CHAIN["Bitcoin network"]
-        NODE["Full node<br/>(mempool, block relay)"]
+    subgraph CHAIN["ビットコインネットワーク"]
+        NODE["フルノード<br/>（メモリープール、ブロック中継）"]
     end
 
-    NODE -- "Unconfirmed txs" --> COORD
-    COORD -- "Work unit<br/>(block header + target)" --> M1
-    COORD -- "Work unit" --> M2
-    COORD -- "Work unit" --> M3
+    NODE -- "未承認 tx" --> COORD
+    COORD -- "作業ユニット<br/>（ブロックヘッダー + target）" --> M1
+    COORD -- "作業ユニット" --> M2
+    COORD -- "作業ユニット" --> M3
 
-    M1 -- "Share<br/>(partial PoW solution)" --> COORD
-    M2 -- "Share" --> COORD
-    M3 -- "Share" --> COORD
+    M1 -- "share<br/>（部分的 PoW 解）" --> COORD
+    M2 -- "share" --> COORD
+    M3 -- "share" --> COORD
 
-    COORD -- "Valid block found:<br/>broadcast to network" --> NODE
+    COORD -- "有効ブロック発見:<br/>ネットワークに配信" --> NODE
 ```
 
 ### プールプロトコル: Stratum v1 と Stratum v2

@@ -54,30 +54,30 @@ translationStatus: complete
 
 ```mermaid
 flowchart TB
-    subgraph BLOCK["Block N"]
+    subgraph BLOCK["ブロック N"]
         direction TB
-        subgraph HEADER["Block header (80 bytes)"]
+        subgraph HEADER["ブロックヘッダー (80 バイト)"]
             direction TB
-            VER["Version (4 bytes)"]
-            PREV["Previous block hash (32 bytes)"]
-            MERK["Merkle root (32 bytes)"]
-            TIME["Timestamp (4 bytes)"]
-            BITS["Difficulty target / nBits (4 bytes)"]
-            NONCE["Nonce (4 bytes)"]
+            VER["バージョン (4 バイト)"]
+            PREV["前ブロックハッシュ (32 バイト)"]
+            MERK["マークルルート (32 バイト)"]
+            TIME["タイムスタンプ (4 バイト)"]
+            BITS["難易度ターゲット / nBits (4 バイト)"]
+            NONCE["ナンス (4 バイト)"]
         end
 
-        subgraph TXLIST["Transaction list"]
+        subgraph TXLIST["トランザクション一覧"]
             direction TB
-            CB["Coinbase transaction (tx₀)"]
-            TX1["Transaction 1"]
-            TX2["Transaction 2"]
+            CB["コインベーストランザクション (tx₀)"]
+            TX1["トランザクション 1"]
+            TX2["トランザクション 2"]
             TXN["..."]
-            TXK["Transaction k"]
+            TXK["トランザクション k"]
         end
     end
 
-    MERK -. "Merkle root of\nall transactions" .-> CB
-    PREV -. "SHA-256d hash of\nprevious block header" .-> PREVBLOCK["Block N−1\nheader"]
+    MERK -. "全トランザクションの\nマークルルート" .-> CB
+    PREV -. "前ブロックヘッダーの\nSHA-256d ハッシュ" .-> PREVBLOCK["ブロック N−1\nヘッダー"]
 
     VER ~~~ PREV ~~~ MERK ~~~ TIME ~~~ BITS ~~~ NONCE
 ```
@@ -112,14 +112,14 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    ROOT["Merkle root\nH(AB + CD)"] --- HAB["H(A + B)"]
+    ROOT["マークルルート\nH(AB + CD)"] --- HAB["H(A + B)"]
     ROOT --- HCD["H(C + D)"]
     HAB --- HA["H(tx₀)"]
     HAB --- HB["H(tx₁)"]
     HCD --- HC["H(tx₂)"]
     HCD --- HD["H(tx₃)"]
 
-    HA --- TX0["tx₀\n(coinbase)"]
+    HA --- TX0["tx₀\n（コインベース）"]
     HB --- TX1["tx₁"]
     HC --- TX2["tx₂"]
     HD --- TX3["tx₃"]
@@ -149,11 +149,11 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    G["Genesis block\n(block 0)\nhash: 000000000019d6..."]
-    B1["Block 1\nprevBlockHash:\n000000000019d6..."]
-    B2["Block 2\nprevBlockHash:\nhash of block 1"]
-    B3["Block 3\nprevBlockHash:\nhash of block 2"]
-    BN["Block N\n(chain tip)\nprevBlockHash:\nhash of block N−1"]
+    G["ジェネシスブロック\n（ブロック 0）\nhash: 000000000019d6..."]
+    B1["ブロック 1\nprevBlockHash:\n000000000019d6..."]
+    B2["ブロック 2\nprevBlockHash:\nブロック 1 のハッシュ"]
+    B3["ブロック 3\nprevBlockHash:\nブロック 2 のハッシュ"]
+    BN["ブロック N\n（チェーン先端）\nprevBlockHash:\nブロック N−1 のハッシュ"]
 
     G --> B1 --> B2 --> B3 --> |"..."| BN
 ```
@@ -176,14 +176,14 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    RECV["Receive new block"] --> VALID{"Block header\nand contents\nvalid?"}
-    VALID -- "No" --> REJECT["Reject block"]
-    VALID -- "Yes" --> EXTENDS{"Extends\ncurrent\nbest chain?"}
-    EXTENDS -- "Yes" --> TIP["Accept: update chain tip"]
-    EXTENDS -- "No" --> COMPARE{"New chain's total\nwork > current\nbest chain's\ntotal work?"}
-    COMPARE -- "No" --> STORE["Store as\nalternative branch"]
-    COMPARE -- "Yes" --> REORG["Reorganize:\ndisconnect old tip,\nconnect new branch"]
-    REORG --> TIP2["New chain tip established"]
+    RECV["新ブロック受信"] --> VALID{"ブロックヘッダーと\n内容は有効?"}
+    VALID -- "No" --> REJECT["ブロック拒否"]
+    VALID -- "Yes" --> EXTENDS{"現在の最良チェーンを\n延長する?"}
+    EXTENDS -- "Yes" --> TIP["受理: チェーン先端を更新"]
+    EXTENDS -- "No" --> COMPARE{"新チェーンの累積ワーク\n> 現最良チェーンの\n累積ワーク?"}
+    COMPARE -- "No" --> STORE["代替ブランチとして\n保存"]
+    COMPARE -- "Yes" --> REORG["再編成:\n旧先端を切断、\n新ブランチを接続"]
+    REORG --> TIP2["新チェーン先端を確立"]
 ```
 
 ### チェーン選択とフォーク解決の比較

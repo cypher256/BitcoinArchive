@@ -56,15 +56,15 @@ translationStatus: complete
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Created: Coinbase reward or\ntransaction output
-    Created --> InUTXOSet: Block confirmed,\noutput added to UTXO set
-    InUTXOSet --> Spent: Referenced as input\nin a new transaction
-    Spent --> [*]: Removed from UTXO set,\nstored in undo data
+    [*] --> Created: コインベース報酬または\nトランザクション出力
+    Created --> InUTXOSet: ブロック承認、\n出力が UTXO セットに追加
+    InUTXOSet --> Spent: 新しいトランザクションの\n入力として参照
+    Spent --> [*]: UTXO セットから削除、\nundo データに保存
 
     note right of InUTXOSet
-        "Coin" = an entry in the UTXO set.
-        A wallet's "balance" is the sum
-        of all UTXOs it can unlock.
+        「コイン」とは UTXO セットの 1 エントリー。
+        ウォレットの「残高」は、
+        アンロック可能な全 UTXO の合計。
     end note
 ```
 
@@ -88,28 +88,28 @@ stateDiagram-v2
 
 ```mermaid
 flowchart TB
-    subgraph TX["Transaction"]
+    subgraph TX["トランザクション"]
         direction TB
-        VER["Version (4 bytes)"]
+        VER["バージョン (4 バイト)"]
 
-        subgraph INPUTS["Inputs"]
-            I1["Input 0\nprev txid + output index\nscriptSig or witness\nsequence"]
-            I2["Input 1\n..."]
+        subgraph INPUTS["入力"]
+            I1["入力 0\n前 txid + 出力インデックス\nscriptSig または witness\nシーケンス"]
+            I2["入力 1\n..."]
         end
 
-        subgraph OUTPUTS["Outputs"]
-            O1["Output 0\namount (satoshis)\nscriptPubKey (locking script)"]
-            O2["Output 1\n(change back to sender)\namount\nscriptPubKey"]
+        subgraph OUTPUTS["出力"]
+            O1["出力 0\n額面（サトシ）\nscriptPubKey（ロックスクリプト）"]
+            O2["出力 1\n（送信者へのおつり）\n額面\nscriptPubKey"]
         end
 
-        LOCK["Locktime (4 bytes)"]
+        LOCK["ロックタイム (4 バイト)"]
     end
 
-    subgraph PREV["Previous transaction"]
-        PO["Output 0\n0.7 BTC\nlocked to Alice"]
+    subgraph PREV["前のトランザクション"]
+        PO["出力 0\n0.7 BTC\nアリスにロック"]
     end
 
-    PREV -. "Input 0 references\nthis output" .-> I1
+    PREV -. "入力 0 が\nこの出力を参照" .-> I1
 
     VER ~~~ INPUTS
     INPUTS ~~~ OUTPUTS
@@ -147,12 +147,12 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    SIG["Unlocking script\n(scriptSig / witness)"] --> STACK["Combine and\npush onto stack"]
-    LOCK["Locking script\n(scriptPubKey)"] --> STACK
-    STACK --> EVAL["Execute opcodes\nleft to right"]
-    EVAL --> CHECK{"Top of stack\n= true?"}
-    CHECK -- "Yes" --> VALID["Spend authorized"]
-    CHECK -- "No" --> INVALID["Spend rejected"]
+    SIG["アンロックスクリプト\n(scriptSig / witness)"] --> STACK["結合して\nスタックにプッシュ"]
+    LOCK["ロックスクリプト\n(scriptPubKey)"] --> STACK
+    STACK --> EVAL["オペコードを\n左から右に実行"]
+    EVAL --> CHECK{"スタックトップ\n= true?"}
+    CHECK -- "Yes" --> VALID["支出を承認"]
+    CHECK -- "No" --> INVALID["支出を拒否"]
 ```
 
 インタープリターはオペコードを順次処理する。データ項目をスタックにプッシュし、スタック要素を消費・生成する操作を実行する。すべてのオペコード処理後にスタック最上位の要素がゼロでない（真）であれば、支払いは有効である。
@@ -197,21 +197,21 @@ flowchart LR
 
 ```mermaid
 sequenceDiagram
-    participant S as Spender
-    participant TX as Transaction
-    participant V as Verifier (node)
+    participant S as 支出者
+    participant TX as トランザクション
+    participant V as 検証者（ノード）
 
-    S->>S: Hold private key (k)
-    S->>TX: Construct transaction
-    S->>S: Hash the transaction data (sighash)
-    S->>S: Sign sighash with private key → signature (σ)
-    S->>TX: Attach signature to input (scriptSig or witness)
+    S->>S: 秘密鍵 (k) を保持
+    S->>TX: トランザクションを構築
+    S->>S: トランザクションデータをハッシュ化 (sighash)
+    S->>S: 秘密鍵で sighash に署名 → 署名 (σ)
+    S->>TX: 署名を入力に添付（scriptSig または witness）
 
-    TX->>V: Broadcast transaction
-    V->>V: Extract public key (K) from locking script
-    V->>V: Recompute sighash from transaction data
-    V->>V: Verify: does σ match K and sighash?
-    V-->>TX: Valid → accept into mempool
+    TX->>V: トランザクションをブロードキャスト
+    V->>V: ロックスクリプトから公開鍵 (K) を抽出
+    V->>V: トランザクションデータから sighash を再計算
+    V->>V: 検証: σ は K と sighash に一致するか?
+    V-->>TX: 有効 → メモリープールに受理
 ```
 
 ## 5. SegWit と Taproot
@@ -222,34 +222,34 @@ SegWit（Segregated Witness、2017 年）と Taproot（2021 年）は、ビッ�
 
 ```mermaid
 flowchart TB
-    subgraph LEGACY["Legacy transaction (2009)"]
+    subgraph LEGACY["レガシートランザクション (2009)"]
         direction TB
-        L_VER["Version"]
-        L_IN["Inputs\n(scriptSig contains signatures)"]
-        L_OUT["Outputs\n(scriptPubKey)"]
-        L_LOCK["Locktime"]
+        L_VER["バージョン"]
+        L_IN["入力\n（scriptSig に署名）"]
+        L_OUT["出力\n(scriptPubKey)"]
+        L_LOCK["ロックタイム"]
         L_VER ~~~ L_IN ~~~ L_OUT ~~~ L_LOCK
     end
 
-    subgraph SEGWIT["SegWit transaction (2017)"]
+    subgraph SEGWIT["SegWit トランザクション (2017)"]
         direction TB
-        S_VER["Version"]
-        S_MF["Marker + Flag"]
-        S_IN["Inputs\n(scriptSig empty for native)"]
-        S_OUT["Outputs\n(scriptPubKey)"]
-        S_WIT["Witness\n(signatures moved here)"]
-        S_LOCK["Locktime"]
+        S_VER["バージョン"]
+        S_MF["マーカー + フラグ"]
+        S_IN["入力\n（ネイティブでは scriptSig 空）"]
+        S_OUT["出力\n(scriptPubKey)"]
+        S_WIT["Witness\n（署名はここへ移動）"]
+        S_LOCK["ロックタイム"]
         S_VER ~~~ S_MF ~~~ S_IN ~~~ S_OUT ~~~ S_WIT ~~~ S_LOCK
     end
 
-    subgraph TAPROOT["Taproot transaction (2021)"]
+    subgraph TAPROOT["Taproot トランザクション (2021)"]
         direction TB
-        T_VER["Version"]
-        T_MF["Marker + Flag"]
-        T_IN["Inputs"]
-        T_OUT["Outputs\n(witness program v1)"]
-        T_WIT["Witness\n(key-path: single Schnorr sig\nscript-path: control block + script)"]
-        T_LOCK["Locktime"]
+        T_VER["バージョン"]
+        T_MF["マーカー + フラグ"]
+        T_IN["入力"]
+        T_OUT["出力\n（witness プログラム v1）"]
+        T_WIT["Witness\n（鍵パス: 単一シュノア署名\nスクリプトパス: 制御ブロック + スクリプト）"]
+        T_LOCK["ロックタイム"]
         T_VER ~~~ T_MF ~~~ T_IN ~~~ T_OUT ~~~ T_WIT ~~~ T_LOCK
     end
 ```
