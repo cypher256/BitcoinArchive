@@ -72,10 +72,10 @@ translationStatus: complete
 ハッチの記事はサッサマン仮説の標準的な引用元となった。これを基盤に・参照する後続の報道は以下を含む：
 
 - Wikipedia の *Len Sassaman* 項目。本仮説節の主要出典としてハッチを引用している。
-- HBO 2024 年[*Money Electric: The Bitcoin Mystery*](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)ドキュメンタリーサイクル時の宣伝言説。サッサマンは本ドキュメンタリーが正体を明かす可能性のある名前として広く目されていたが、最終的には[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)が名指しされた。
+- HBO 2024 年[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)ドキュメンタリーサイクル時の宣伝言説。サッサマンは本ドキュメンタリーが正体を明かす可能性のある名前として広く目されていたが、最終的には[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)が名指しされた。
 - Medium・Substack・Hacker News を横断するサイファーパンク社会の議論。
 
-反証分析の系譜も発展している — 最も注目度が高いのは、ピーター・ミラーの 2026 年 4 月 Medium 記事「Len Sassaman was not Satoshi Nakamoto」 とデイヴィッド・Z・モリスの Substack 反論であり、両者ともハッチの記事を反論対象の標準的論拠として扱っている。
+反証分析の系譜も発展している — 最も注目度が高いのは、ピーター・ミラーの 2026 年 4 月 Medium 記事『Len Sassaman was not Satoshi Nakamoto』 とデイヴィッド・Z・モリスの Substack 反論であり、両者ともハッチの記事を反論対象の標準的論拠として扱っている。
 
 **サッサマンの未亡人の応答：**
 

@@ -60,10 +60,10 @@ translationStatus: complete
 
 **反響：**
 
-ポパーの記事は、サボ＝サトシ仮説がサイファーパンク社会内の議論（[Skye Grey の 2013 年 12 月の LikeInAMirror 記事](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[2014 年 4 月の Aston University による法言語学的研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)）から、米国主流大手紙へ越境した転換点となった。書籍の*デジタル・ゴールド*はビットコイン創成期の標準的ジャーナリズム史として定着した。本書がサボを最も妥当なサトシ候補と位置づけた枠組みは、以後継続して参照されており、以下の媒体を含む：
+ポパーの記事は、サボ＝サトシ仮説がサイファーパンク社会内の議論（[Skye Grey の 2013 年 12 月の LikeInAMirror 記事](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[2014 年 4 月の Aston University による法言語学的研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)）から、米国主流大手紙へ越境した転換点となった。書籍の『デジタル・ゴールド』 はビットコイン創成期の標準的ジャーナリズム史として定着した。本書がサボを最も妥当なサトシ候補と位置づけた枠組みは、以後継続して参照されており、以下の媒体を含む：
 
-- 2014 年 4 月の*ガーディアン*による Skye Grey 取材（同様にサボを首位とする枠組み）。
-- ハンナ・マーフィー / *Fortune*「Is There Any Doubt This Man Created Bitcoin?」（2018 年 10 月 31 日）。
+- 2014 年 4 月の『ガーディアン』 による Skye Grey 取材（同様にサボを首位とする枠組み）。
+- ハンナ・マーフィー / 『Fortune』『Is There Any Doubt This Man Created Bitcoin?』（2018 年 10 月 31 日）。
 - ティム・フェリス・ショー第 244 回（2017 年 6 月 4 日）— 公開記録上最も長尺なサボ単独音声インタビュー。
 
 **本記事に直接関係する既収蔵のアーカイブ資料：**
@@ -71,7 +71,7 @@ translationStatus: complete
 本アーカイブは、ポパーの特定とサボの否定の双方に直接関わる一次資料を保持している：
 
 - [サボの 2008 年 4 月 27 日の Unenumerated ブログでのコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) — ビットコイン白書の半年前 — Bit Gold の実装について「誰か手伝ってコードを書いてくれないか？」 と公的に協力者を募集している。本コメントは特定に対する単独で最も強い反証信号である：2008 年 4 月時点でサボは、ビットコイン白書が同年 10 月に提示する設計よりも建築的に単純な系の実装協力を、公的に要請している。
-- [サボの 2011 年 5 月 28 日 Unenumerated 投稿「Bitcoin, what took ye so long?」](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — その中でサボは「ナカモトは私の設計が抱えていた重要な安全上の欠陥を改善した（Nakamoto improved a significant security shortcoming that my design had）」 と書いており、Bit Gold の設計を自身の功として認めつつ、ナカモトを三人称で論じている。
+- [サボの 2011 年 5 月 28 日 Unenumerated 投稿『Bitcoin, what took ye so long?』](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — その中でサボは「ナカモトは私の設計が抱えていた重要な安全上の欠陥を改善した（Nakamoto improved a significant security shortcoming that my design had）」 と書いており、Bit Gold の設計を自身の功として認めつつ、ナカモトを三人称で論じている。
 - [サボのプロフィールページ](/BitcoinArchive/ja/participants/nick-szabo/) — Unenumerated および Bit Gold の全記録を含む。
 
 **方法論的な位置づけ：**
