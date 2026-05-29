@@ -76,7 +76,7 @@ translationStatus: complete
 
 ## 1. 仮説が主張する内容
 
-仮説の主張は、サボがサトシ・ナカモトの仮名の中の人物だったというもの。サボのビットコインに関する公的記録上のやり取り — [2008 年 4 月の Bit Gold 実装支援を求める Unenumerated コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)や、[2011 年 5 月「Nakamoto improved a significant security shortcoming that my design had」 と認めたブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、サボは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、Unenumerated ブログでの公的執筆活動を公開記録上のデコイとして並行させていた、ということになる。
+仮説の主張は、サボがサトシ・ナカモトの仮名の中の人物だったというもの。サボのビットコインに関する公的記録上のやり取り — [2008 年 4 月の Bit Gold 実装支援を求める Unenumerated コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)や、[2011 年 5 月「ナカモトは私の設計にあった重大なセキュリティ上の欠陥を改善した」 と認めたブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — は仮名を維持するための演出であった、という読みになる。この読みのもと、サボは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動した人物であり、Unenumerated ブログでの公的執筆活動を公開記録上のデコイとして並行させていた、ということになる。
 
 最初の本格的な文体計量的定式化は、[匿名のブロガー Skye Grey による 2013 年 12 月の LikeInAMirror.com 記事「サトシ・ナカモトは（おそらく）ニック・サボである」 と TechCrunch による 2013 年 12 月 5 日の主流報道](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)。さらに [2014 年 4 月のアストン大学法言語学センターによる文体計量研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) — CoinDesk と ScienceDaily が報じた — により定着が進んだ。
 
@@ -163,7 +163,7 @@ Skye Grey の主張：サボの Unenumerated 文章とパターンが強く一�
 
 - **ハンガリー系の系譜の接続。** サボの父はハンガリー出身で共産体制に抵抗し米国へ移住した。[サトシ・ナカモトの初の公的銅像](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)はハンガリーのブダペストに設置された（2021 年 9 月）— この地理を仮説支持者は手がかりと解釈し、懐疑的な読み手は地元ビットコインコミュニティの独立した取り組みとサボの系譜が偶然重なっただけと解釈する。
 
-- **2017 年ティム・フェリス・ショウの言い間違え。** [第 244 回ティム・フェリス・ショウ](https://tim.blog/2017/06/04/nick-szabo/)（2017 年 6 月 4 日、ナバル・ラビカント共同司会）の中で、サボはある場面で「bitcoin」 と言いかけて「bit gold」 に修正したように聞こえる — 多くのトランスクリプトでは「I designed bitcoi…gold with two layers because…」 と書き起こされている。仮説支持者はこれをフロイト的失言と扱い自己著作を露呈したと読む。懐疑的な読み手は、Bit Gold の設計者にとって音韻的・意味的に隣接する 2 つの語の自然な言い淀みと読む。音声は公的記録に存在する。
+- **2017 年ティム・フェリス・ショウの言い間違え。** [第 244 回ティム・フェリス・ショウ](https://tim.blog/2017/06/04/nick-szabo/)（2017 年 6 月 4 日、ナバル・ラビカント共同司会）の中で、サボはある場面で「bitcoin」 と言いかけて「bit gold」 に修正したように聞こえる — 多くのトランスクリプトでは「ビットコイ……ゴールドを二層で設計したのは……」 と書き起こされている。仮説支持者はこれをフロイト的失言と扱い自己著作を露呈したと読む。懐疑的な読み手は、Bit Gold の設計者にとって音韻的・意味的に隣接する 2 つの語の自然な言い淀みと読む。音声は公的記録に存在する。
 
 - **Bit Gold ブログのタイムスタンプ異常。** 一部の論者は、元の Bit Gold ブログ投稿の日付メタデータが変更された痕跡を指摘している — 後ろ向け（2005 年 12 月 → より前）にされたとも、前向け（2008 年 4 月 → 2008 年 12 月）にされたとも様々に報告される。後日談エントリー [「誰かコードを書いてくれないか？」](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) はこの異常を記録する：「サボの元の bit gold ブログ投稿は 2005 年 12 月の日付だったが、ブログのタイムスタンプは後に修正された痕跡があり、正確な年表を複雑にしている」。仮説支持者の読みでは、これは年表操作の証拠。懐疑的な読みでは、サボは 2008 年 8 月に Unenumerated の好きなエントリーの「reruns（再放送）」 を行うと公的に告知しており、日付がずれた再投稿に無実の説明を与える。証拠は両方向に作用する。
 

@@ -88,11 +88,11 @@ timeline
 
 Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0.3.6（2010年7月29日リリース）で統合された。一次資料による時系列：
 
-- 2010-07-25：BitcoinTalk のメンバー「BlackEye」が [Crypto++ 5.6.0 SHA-256 の SSE2 アセンブリ統合を実演](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/) — 「the fastest SHA256 yet using the SSE2 assembly code」。
-- 2010-07-26：サトシが[応答](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-501/2010-07-26-re-bitcoin-x64-for-windows/) — 「Is that still starting from Crypto++? Lets get this into the main sourcecode」。
+- 2010-07-25：BitcoinTalk のメンバー「BlackEye」が [Crypto++ 5.6.0 SHA-256 の SSE2 アセンブリ統合を実演](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/) — 「SSE2 アセンブリコードを使ったこれまでで最速の SHA256」。
+- 2010-07-26：サトシが[応答](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-501/2010-07-26-re-bitcoin-x64-for-windows/) — 「それはまだ Crypto++ から始まっているのか？ メインのソースコードに取り込もう」。
 - 2010-07-27（SVN rev 114）：サトシが[ライブラリサブセットを追加したと確認](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-572/2010-07-27-sni282-re-bitcoin-x86-for-windows/) — 「I added a subset of the Crypto++ 5.6.0 library to the SVN. I stripped it down to just SHA and 11 general dependency files... The combined speedup is about 2.5x faster than version 0.3.3. This is SVN rev 114」。
-- 2010-07-29：[v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/) — サトシは BlackEye を Crypto++ ASM SHA-256 で、tcatm を midstate キャッシュ最適化でクレジット：「Total generating speedup 2.4x faster」。
-- 2010-08-09：サトシが[明示的に](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-765/2010-08-09-version-0-3-8-1-update-for-linux-64-bit/) — 「When we switched to Crypto++ 5.6.0 SHA-256 in version 0.3.6, generation got broken on the Linux 64-bit build」。
+- 2010-07-29：[v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/) — サトシは BlackEye を Crypto++ ASM SHA-256 で、tcatm を midstate キャッシュ最適化でクレジット：「生成全体で 2.4 倍の高速化」。
+- 2010-08-09：サトシが[明示的に](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-765/2010-08-09-version-0-3-8-1-update-for-linux-64-bit/) — 「バージョン 0.3.6 で Crypto++ 5.6.0 SHA-256 に切り替えたとき、Linux 64-bit ビルドで生成が壊れた」。
 
 ダイのビットコインへのコード貢献は二重である：知的先駆者としての b-money と、最も古いリリース時点から既にコードベースの直接的な依存関係としての Crypto++である。
 

@@ -47,7 +47,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
-それから 5 年近く経った 2016 年 1 月 14 日、ハーンは Medium に[「The resolution of the Bitcoin experiment」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)を公開した。冒頭は 1 行だった:
+それから 5 年近く経った 2016 年 1 月 14 日、ハーンは Medium に[「ビットコイン実験の決着」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)を公開した。冒頭は 1 行だった:
 
 > 「ビットコインは失敗した」
 

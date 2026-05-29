@@ -343,9 +343,9 @@ v0.1 コンセンサス上、ブロック 0 はハッシュ等価性検証のみ
 
 ### 6.1 技術的挙動
 
-ブロック 0 の 50 BTC 報酬は一度も動いていない、かつ動かせない。v0.1 でも現代の Bitcoin Core でも、空 DB からのジェネシス構築はブロック 0 をブロックデータベースには書くが、コインベース出力を UTXO セットには書かない。現代 `chainparams.cpp` のコメントに明記されている： *"the output of its generation transaction cannot be spent since it did not originally exist in the database."*
+ブロック 0 の 50 BTC 報酬は一度も動いていない、かつ動かせない。v0.1 でも現代の Bitcoin Core でも、空 DB からのジェネシス構築はブロック 0 をブロックデータベースには書くが、コインベース出力を UTXO セットには書かない。現代 `chainparams.cpp` のコメントに明記されている：「コインベーストランザクションの出力は使用できない、元来データベースに存在しなかったため」
 
-Bitcoin Wiki は *"it is not known if this was done intentionally or accidentally"*（意図的か偶発的か不明）と控えめに記述している。
+Bitcoin Wiki は「意図的に行われたか偶発的に行われたか不明」 と控えめに記述している。
 
 ### 6.2 偶発 vs 意図的ブートストラップ解釈
 
@@ -361,7 +361,7 @@ Bitcoin Wiki は *"it is not known if this was done intentionally or accidentall
 | 処理の非対称性そのもの | 当然。初期化とトランザクション処理は意味的に異なる操作である。両者が対称であればむしろ不自然 |
 | 17 年間の Core 開発で変わっていない | 当然。修正すべきバグではない |
 
-現代 Core のコメントをこの枠組みで読み直すと、レガシーな不具合への後付けの言い訳ではない。*"did not originally exist in the database"* は記述そのものである：ブロック 0 はトランザクションイベントとして起こったことがないので、その出力はトランザクションとしてインデックスされない。
+現代 Core のコメントをこの枠組みで読み直すと、レガシーな不具合への後付けの言い訳ではない。「元来データベースに存在しなかった」 は記述そのものである：ブロック 0 はトランザクションイベントとして起こったことがないので、その出力はトランザクションとしてインデックスされない。
 
 オッカムの剃刀はブートストラップの読みの方を支持する。偶発の読みは、エッジケース処理が概して綿密なリリースにおいて、見落としが一箇所存在したと仮定する必要がある。ブートストラップの読みは何も仮定する必要がない。観察される挙動はすべて、一つの意味論的選択から導出される。
 
@@ -441,7 +441,7 @@ Block 0 = ブートストラップ初期化（意図的設計、解釈 B）
 
 ### 現代 Bitcoin Core `src/kernel/chainparams.cpp`
 
-- L57〜60：*"Build the genesis block. Note that the output of its generation transaction cannot be spent since it did not originally exist in the database."*
+- L57〜60：「ジェネシスブロックを構築する。コインベーストランザクションの出力は使用できないことに注意 — 元来データベースに存在しなかったため」
 - L126：`CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, ...)`
 
 v0.1 と現行 Core で定数値は同一である。

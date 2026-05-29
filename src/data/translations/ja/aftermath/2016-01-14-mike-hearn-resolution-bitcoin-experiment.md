@@ -41,7 +41,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2016年1月14日、サトシ・ナカモトと直接メールを交わした最初期のビットコイン貢献者の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、個人ブログ（blog.plan99.net、Medium 上にホスト）に「The resolution of the Bitcoin experiment」と題する長文のブログ記事を公開した。
+2016年1月14日、サトシ・ナカモトと直接メールを交わした最初期のビットコイン貢献者の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、個人ブログ（blog.plan99.net、Medium 上にホスト）に「ビットコイン実験の決着」と題する長文のブログ記事を公開した。
 
 <!-- speaker: narrator -->
 記事の中で、ハーンはこう宣言した。

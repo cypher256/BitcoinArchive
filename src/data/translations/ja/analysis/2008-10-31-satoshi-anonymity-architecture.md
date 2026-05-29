@@ -130,7 +130,7 @@ flowchart TD
 - **暗号学メーリングリスト (Metzdowd cryptography)** — 論文初公開 (2008 年 10 月 31 日) と v0.1 リリース告知 (2009 年 1 月 9 日)。
 - **SourceForge** — v0.1 の初期配布 (2009 年 1 月 8 日、`.rar` 形式)。SVN リポジトリは 2009 年 8 月以降 (マルッティ・マルミがセットアップ、サトシ自身ではない)。
 - **BitcoinTalk フォーラム** — 2009 年 11 月 22 日〜2010 年 12 月 12 日の間に 575 投稿。
-- **P2P Foundation** — 2009 年 2 月 11 日にアカウント作成、同日「Bitcoin open source implementation of P2P currency」 スレッドを投稿。
+- **P2P Foundation** — 2009 年 2 月 11 日にアカウント作成、同日「P2P 通貨のオープンソース実装」 スレッドを投稿。
 - **p2p-research メーリングリスト** — 2009 年 2 月 11 日に並行投稿。
 - **AnonymousSpeech 経由のドメイン取得** — 2008 年 8 月 18 日、匿名登録仲介サービスを経由して `bitcoin.org` を取得。
 
@@ -189,14 +189,14 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 | 日付 (UTC) | 出来事 | 出典 |
 |---|---|---|
 | 2010 年 9 月 | サトシ → ギャビン・アンドレセンへメール「他のプロジェクトに取り組んでいる」。具体的な日付・媒体は公開記録になく、アンドレセンの後年の回想からの再構成。 | ギャビン・アンドレセンのインタビュー ([CoinMarketCap「Satoshi Files: ギャビン・アンドレセン」](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
-| 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me.」 (アンドレセンが適任である理由として信頼性・責任感・プロフェッショナリズム・Linux 能力を挙げる) | [`mmalmi.github.io/satoshi` 公開メール](/BitcoinArchive/ja/entries/aftermath/2009-05-02-first-contact-satoshi-reply/) |
-| 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」 スレッドへのサトシの公的反対投稿: 「No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way.」 | [BitcoinTalk スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/) |
-| 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (メール)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「I'm doing a few more things, then I plan to pass the baton.」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
+| 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビン[・アンドレセン]がいい。彼は信頼できるし、責任感があり、プロフェッショナルで、技術的にも私よりずっと Linux に習熟している」 (アンドレセンが適任である理由として信頼性・責任感・プロフェッショナリズム・Linux 能力を挙げる) | [`mmalmi.github.io/satoshi` 公開メール](/BitcoinArchive/ja/entries/aftermath/2009-05-02-first-contact-satoshi-reply/) |
+| 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」 スレッドへのサトシの公的反対投稿: 「いや、『bring it on』 ではない。プロジェクトは段階的に成長させる必要があり、その過程でソフトウェアも強化されていく」 | [BitcoinTalk スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/) |
+| 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (メール)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「もう少しやることを片付けたら、バトンを渡すつもりだ」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | 2010 年 12 月 15 日 | サトシ最終 SVN コミット (revision 202) — IRC 経由の外部 IP 取得処理の小さな修正。 | SourceForge SVN 履歴 |
 | 2010 年 12 月 19 日 | アンドレセンがリードメンテナーとしての就任を公式に発表。同日、GitHub `bitcoin/bitcoin` リポジトリ作成。 | BitcoinTalk アナウンスメント |
 | 2010 年 12 月 27 日 | マイク・ハーン → サトシ、クリスマスメッセージと 21M コイン上限・10 分ブロック目標・500 KB ブロックサイズ上限への質問。 | [`plan99.net`](https://plan99.net/~mike/satoshi-emails/) 公開メール |
 | 2010 年 12 月 29 日 | サトシ → マイク・ハーン、長文メール。完全な SPV / クライアントモード設計の解説、21M の「Educated guess」 説明、ブロックサイズ拡大に対するムーアの法則の引用。サトシが書いた最後の長文メール。 | `plan99.net` |
-| 2011 年 4 月 23 日 | サトシ → マイク・ハーン: 「I've moved on to other things. It's in good hands with Gavin and everyone.」 | `plan99.net` |
+| 2011 年 4 月 23 日 | サトシ → マイク・ハーン: 「他のことに取り組むことにした。ギャビンや皆に任せれば、安心だ」 | `plan99.net` |
 | 2011 年 4 月 26 日 | サトシ → ギャビン・アンドレセン: 「謎の影の人物として語らないでほしい」 と要請、CAlert キーとブロードキャストコード (ネットワーク非常停止権限 — サトシが最後まで保持していた技術的権限) を譲渡。 | ギャビン・アンドレセンの後年公開 ([CoinMarketCap](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
 | 2014 年 3 月 6 日 | サトシ P2P Foundation アカウントから「I am not Dorian Nakamoto」 投稿。本人かアカウント侵害かの真偽は議論されている。 | [P2P Foundation スレッド](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source) |
 
