@@ -215,8 +215,9 @@ timeline
 | **Flag day** | None (hardcoded height/time) | N/A | Activates unconditionally at the specified point | 1 MB limit, early patches |
 | **IsSuperMajority** | Block `nVersion` ≥ N | 950/1,000 blocks | No explicit timeout; stays pending until threshold is met | BIP 34, BIP 66, BIP 65 |
 | **BIP 9 versionbits** | Individual bit in `nVersion` | 95% of retarget period (1,916/2,016) | Fails if not locked in before end date; bit becomes available for reuse | CSV (BIP 68/112/113), SegWit (BIP 141) |
-| **BIP 8 (LOT=true)** | Individual bit in `nVersion` | 95% of retarget period | Mandatory lock-in at timeout (miners cannot prevent activation) | Speedy Trial variant used for Taproot |
+| **BIP 8 (LOT=true)** | Individual bit in `nVersion` | 95% of retarget period | Mandatory lock-in at timeout (miners cannot prevent activation) | Proposed during Taproot activation debate; not the mechanism ultimately used |
 | **BIP 8 (LOT=false)** | Individual bit in `nVersion` | 95% of retarget period | Fails at timeout (same as BIP 9) | Proposed but not deployed standalone |
+| **Speedy Trial** | Individual bit in `nVersion` | 90% of retarget period | Short signaling window; no mandatory lock-in at timeout | Taproot (BIP 341) |
 
 ## 6. Finality model
 
