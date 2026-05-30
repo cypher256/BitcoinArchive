@@ -62,7 +62,7 @@ translationStatus: complete
 
 ### 1.1 ソースデータ
 
-集計済み XLSX ファイル（`output/comparison.xlsx`、43 MB）をプロジェクトの GitHub リポジトリから取得した。本ファイルは 76,407 行 × 76 列で構成され、各行は（著者・出典）の 1 組 — 例えば「weidai_eskimo_com.txt」 は cypherpunks-cpunks1、cryptography、testlist-cpunks など出典別に複数行存在する。ファイル名のマングリング：ヴァン・ドルストはメールアドレスを `@` と `.` を `_` に置換した形のファイル名で格納している（例：`weidai@eskimo.com` → `weidai_eskimo_com.txt`）。76 列にはサトシに対するバローズ・デルタ（10 列目）、ジャッカード類似度（11 列目）、行ごとのチャンク数（2 列目）、および n-gram 一致数・読みやすさ指標・句読点パターン・代名詞頻度・語長分布・ハイフン用法・英米綴り数などの広範な派生特徴量が含まれる。
+集計済み XLSX ファイル（`output/comparison.xlsx`、43 MB）をプロジェクトの GitHub リポジトリから取得した。本ファイルは 76,407 行 × 76 列で構成され、各行は（著者・出典）の 1 組 — 例えば `weidai_eskimo_com.txt` は cypherpunks-cpunks1、cryptography、testlist-cpunks など出典別に複数行存在する。ファイル名のマングリング：ヴァン・ドルストはメールアドレスを `@` と `.` を `_` に置換した形のファイル名で格納している（例：`weidai@eskimo.com` → `weidai_eskimo_com.txt`）。76 列にはサトシに対するバローズ・デルタ（10 列目）、ジャッカード類似度（11 列目）、行ごとのチャンク数（2 列目）、および n-gram 一致数・読みやすさ指標・句読点パターン・代名詞頻度・語長分布・ハイフン用法・英米綴り数などの広範な派生特徴量が含まれる。
 
 ### 1.2 候補の同定
 

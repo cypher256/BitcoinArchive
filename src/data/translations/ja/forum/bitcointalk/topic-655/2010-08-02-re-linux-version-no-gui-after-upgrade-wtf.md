@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-コンソールに何か表示されたか？ 「bitcoind」を実行したのではないか？
+コンソールに何か表示されたか？ `bitcoind` を実行したのではないか？
 
 バージョン 0.3.7 を試してみてくれ。
