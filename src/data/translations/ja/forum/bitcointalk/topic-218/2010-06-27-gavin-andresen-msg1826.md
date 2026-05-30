@@ -30,7 +30,7 @@ quotes:
 <!-- /tone-skip -->
 
 うーん、おそらく正常だ。デフォルトのアドレスには空のラベルが付いていると思っていたが、間違いだった。`Your Address` というラベルが付けられている。
-なので：Code:./bitcoind getaddressesbylabel "Your Address" でうまくいくはずだ。
+なので：`./bitcoind getaddressesbylabel "Your Address"` でうまくいくはずだ。
 
 または、ラベル付きでもなしでも新しいアドレスを生成すればいい：
 
