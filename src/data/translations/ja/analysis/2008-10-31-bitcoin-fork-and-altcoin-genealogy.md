@@ -74,6 +74,7 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
   - aftermath/2013-10-01-mike-belshe-biography
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
   - "ビットコイン分岐の系譜"
   - "ブロックサイズ戦争"

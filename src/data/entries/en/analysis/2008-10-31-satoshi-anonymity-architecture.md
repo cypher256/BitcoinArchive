@@ -70,6 +70,7 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
   - "anonymity architecture"
   - "Satoshi anonymity architecture"

@@ -22,6 +22,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
   - "ビットコイン供給上限"
   - "半減スケジュール"

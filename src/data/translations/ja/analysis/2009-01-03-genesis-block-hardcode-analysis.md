@@ -50,6 +50,7 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-activity-timeline"
   - "aftermath/2016-05-02-craig-wright-biography"
   - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
+  - "analysis/2008-10-31-bitcoin-digital-gold-structural-features"
 inlineLinkKeywords:
   - "5日間の空白"
   - "5 日間の空白"

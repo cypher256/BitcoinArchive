@@ -31,6 +31,7 @@ relatedEntries:
   - "aftermath/2010-12-03-handover-to-gavin"
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 quotes:
   - id: "q1"
     person: "Gavin Andresen"

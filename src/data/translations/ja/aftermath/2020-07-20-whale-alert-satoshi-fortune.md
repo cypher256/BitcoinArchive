@@ -28,6 +28,8 @@ secondarySources:
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "Sergio Demian Lerner — The Patoshi Mining Machine (August 22, 2020)"
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
+relatedEntries:
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 translationStatus: complete
 ---
 

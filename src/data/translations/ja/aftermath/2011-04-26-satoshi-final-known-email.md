@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2009-01-03-genesis-block
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

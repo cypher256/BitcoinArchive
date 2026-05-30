@@ -51,6 +51,7 @@ relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2011-09-01-vitalik-buterin-biography
   - design/2009-01-03-bitcoin-monetary-design
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
   - "固定供給"
   - "2100 万枚上限"
