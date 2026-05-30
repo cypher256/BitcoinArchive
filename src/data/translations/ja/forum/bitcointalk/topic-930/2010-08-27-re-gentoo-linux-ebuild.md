@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
--datadir=を試してみてほしい。
+`-datadir=` を試してみてほしい。
 
 前回$(shell /usr/bin/wx-config)を試した時、すぐにビルド問題について騒ぎになった。当時は調査する時間がなかった。
 

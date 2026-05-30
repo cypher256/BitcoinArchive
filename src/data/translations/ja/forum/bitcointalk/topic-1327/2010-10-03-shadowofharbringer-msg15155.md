@@ -22,9 +22,9 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ShadowOfHarbringer、あなたのは-4way の方が速いか？
+> ShadowOfHarbringer、あなたのは `-4way` の方が速いか？
 <!-- /tone-skip -->
 
-確かに、-4way ありの方が、なしの場合と比べてほぼ 2倍速い。
+確かに、`-4way` ありの方が、なしの場合と比べてほぼ 2倍速い。
 
--4way ありで約 8500 khash/sec、なしで 4500 khash/sec が出ている。
+`-4way` ありで約 8500 khash/sec、なしで 4500 khash/sec が出ている。

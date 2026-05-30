@@ -16,6 +16,6 @@ tags:
 translationStatus: complete
 ---
 
--rescan 機能を改善・自動化するためのサトシからのアイデア：
+`-rescan` 機能を改善・自動化するためのサトシからのアイデア：
 
 新しいブロックが受理されるたびに、blkindex.dat の最良ブロックポインタが更新される。これを wallet.dat にも（CBlockLocator として）記録しておけば、起動時にウォレットの最終確認済み最良ブロックが blkindex.dat のものより古い場合、そこから再スキャンを開始すべきである。

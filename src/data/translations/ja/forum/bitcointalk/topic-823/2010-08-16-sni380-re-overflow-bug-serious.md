@@ -30,7 +30,7 @@ quotes:
 まだ 74638 ブロックと表示されているなら、0.3.10 のノードに接続されていない。
 
 今日のところは、以下のパラメーターを追加してみてほしい：
--addnode=75.158.131.108 -addnode=99.27.237.13 -addnode=68.68.99.14
+`-addnode=75.158.131.108` `-addnode=99.27.237.13` `-addnode=68.68.99.14`
 
 参照
 [http://bitcointalk.org/index.php?topic=828](http://bitcointalk.org/index.php?topic=828)

@@ -20,7 +20,7 @@ translationStatus: complete
 
 tcatm の 4-way SSE2 SHA-256 はファイル sha256.cpp に入っており、数リビジョン前にすでにアップロードされている。
 
-たった今、Linux 上でのビルドを有効にする makefile.unix である rev 134 をアップロードした。今 Linux で rev 134 をビルドすると-4way スイッチが使える。
+たった今、Linux 上でのビルドを有効にする makefile.unix である rev 134 をアップロードした。今 Linux で rev 134 をビルドすると `-4way` スイッチが使える。
 
 ビルドに問題がある場合は、makefile.unix を編集して：
 - -DFOURWAYSSE2 を削除
@@ -31,7 +31,7 @@ bitcoin: $(OBJS) obj/ui.o obj/uibase.o obj/sha256.o
 bitcoind: $(OBJS:obj/%=obj/nogui/%) obj/sha256.o
 ```
 
-0.3.10 の Linux ビルドには、私がビルドする際に-4way オプションが*含まれる*。
+0.3.10 の Linux ビルドには、私がビルドする際に `-4way` オプションが*含まれる*。
 
 Windows 用のパッチダウンロードはこちらだ：
 

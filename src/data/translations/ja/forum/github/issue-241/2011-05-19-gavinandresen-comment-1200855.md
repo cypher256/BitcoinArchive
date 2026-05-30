@@ -15,4 +15,4 @@ tags:
 translationStatus: complete
 ---
 
-おかしな話だが、-testnet は bitcoin.conf を datadir/testnet からではなく、datadir から読み込む。
+おかしな話だが、`-testnet` は bitcoin.conf を datadir/testnet からではなく、datadir から読み込む。

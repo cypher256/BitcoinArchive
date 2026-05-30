@@ -14,6 +14,6 @@ tags: []
 translationStatus: complete
 ---
 
--4way あり：5,911 khash
+`-4way` あり：5,911 khash
 なし：11,260 khash
 （Dual Xeon E5450、64 ビット、8 スレッド）

@@ -18,7 +18,7 @@ translationStatus: complete
 
 JSON-RPC にパスワードを追加する変更を SVN にアップロードした。ビルド環境がある方は、テストしてほしい。
 
--server スイッチは-rpcpw=<password>に置き換えられ、bitcoind でも使用される。
+`-server` スイッチは `-rpcpw=<password>` に置き換えられ、bitcoind でも使用される。
 bitcoin -rpcpw=<password>    -- JSON-RPC ポートを開いて実行
 bitcoind -rpcpw=<password>   -- パスワード付きデーモン
 

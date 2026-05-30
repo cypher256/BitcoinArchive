@@ -39,7 +39,7 @@ translationStatus: complete
 Linux 64 ビット版の SSE2 自動検出は、64 ビットモードの AMD では動作しない。代わりにこちらを試して、正しく動作するか知らせてほしい：
 [http://www.bitcoin.org/download/bitcoin-0.3.13.1-specialbuild-linux64.tar.gz](http://www.bitcoin.org/download/bitcoin-0.3.13.1-specialbuild-linux64.tar.gz)
 
--4way および-4way=0 で手動で SSE2 の使用を制御することもできる。
+`-4way` および `-4way=0` で手動で SSE2 の使用を制御することもできる。
 
 バージョン 0.3.13.2（SVN rev 161）には、すでに 0/未承認トランザクションがあり、それをすでに使用した可能性がある場合の改善が含まれている。Windows 版のビルドはこちらだ：
 [http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe)

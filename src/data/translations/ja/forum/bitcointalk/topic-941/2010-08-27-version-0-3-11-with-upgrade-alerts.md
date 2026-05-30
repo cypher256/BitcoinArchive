@@ -20,7 +20,7 @@ translationStatus: complete
 
 変更点：
 - ロード時の blk*.dat の検証
-- -4way コードを-march=amdfam10 でビルドし、少し高速化
+- `-4way` コードを-march=amdfam10 でビルドし、少し高速化
 - 時計がずれすぎている場合の警告
 - 警告/エラー/アラートが getinfo コマンドでも確認可能
 - アラートシステム
@@ -35,7 +35,7 @@ translationStatus: complete
  listreceivedbyaddress
  listreceivedbylabel
 
-誤報だと判断してリスクを取りたい場合は、-disablesafemode スイッチを使って再有効化できる。
+誤報だと判断してリスクを取りたい場合は、`-disablesafemode` スイッチを使って再有効化できる。
 
 これは重要な安全性の改善だ。可能な問題の大部分について、問題が発見されたらすぐに全員に警告し、不正な情報に基づいて行動するのを防ぐことができる。
 

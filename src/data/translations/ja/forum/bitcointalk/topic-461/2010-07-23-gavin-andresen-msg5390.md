@@ -21,9 +21,9 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> ところで、テストはしていないが、conf ファイルに rpcpassword=があっても有効であることを願う。-server や-daemon や bitcoind を使う場合のみ警告付きで失敗すべきだ。パスワードが不要な場合は問題ないはずだ。合っているか？
+> ところで、テストはしていないが、conf ファイルに rpcpassword=があっても有効であることを願う。`-server` や `-daemon` や bitcoind を使う場合のみ警告付きで失敗すべきだ。パスワードが不要な場合は問題ないはずだ。合っているか？
 
-そう、その通りだ。rpcpassword が必須なのは-server や-daemon、bitcoind を使う場合だけだ（念のためたった今テストした）。
+そう、その通りだ。rpcpassword が必須なのは `-server` や `-daemon`、bitcoind を使う場合だけだ（念のためたった今テストした）。
 
 RE: プログラマが古い COBOL コードで HTTP 認証をどうやればいいか分からない場合は？
 それなら、「rpcpassword を空にしたら認証が切れる」というマジカルな仕様より、RPC 認証を明示的に切るための別の設定項目を conf ファイルに用意する方がいいと思う。ただ、誰かが実際に困るか、認証手段が複数になる（いつか https 対応とか）まではこれを実装するつもりはないね。

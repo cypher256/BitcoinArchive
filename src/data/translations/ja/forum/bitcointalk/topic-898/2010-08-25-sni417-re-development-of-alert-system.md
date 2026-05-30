@@ -42,9 +42,9 @@ RPC メソッドは、エラー説明「Safe mode: 」に続いてアラート�
 
 <!-- quote: q2 -->
 <!-- tone-skip -->
-> [http://www.bitcoin.org/wiki/doku.php?id=man_page](http://www.bitcoin.org/wiki/doku.php?id=man_page) を発見したが、-disablesafemodeへの言及がない。追加すべきではないか！また-4wayなどの他のものも追加すべきだ。
+> [http://www.bitcoin.org/wiki/doku.php?id=man_page](http://www.bitcoin.org/wiki/doku.php?id=man_page) を発見したが、`-disablesafemode` への言及がない。追加すべきではないか！また `-4way` などの他のものも追加すべきだ。
 <!-- /tone-skip -->
 
 多くのスイッチは意図的にドキュメント化されていない。機能がまだ開発中だったり、名前がまだ確定していなかったり、リリース向けでないテストコードだったりする場合だ。
 
--4way は最終的に自動検出に置き換えられるべきだ。
+`-4way` は最終的に自動検出に置き換えられるべきだ。

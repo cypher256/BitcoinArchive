@@ -29,4 +29,4 @@ TODO：JSON-RPC の Wiki ページを更新する。
 port=   # listen ポートの設定（デフォルト 8333 を上書き）
 rpc.port= # JSON-RPC ポートの設定（デフォルト 8332 を上書き）
 
-既存の-datadir オプションと合わせれば、1 台のマシンで複数の Bitcoin を実行しやすくなる。
+既存の `-datadir` オプションと合わせれば、1 台のマシンで複数の Bitcoin を実行しやすくなる。

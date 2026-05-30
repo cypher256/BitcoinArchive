@@ -16,8 +16,8 @@ secondarySources:
 translationStatus: complete
 ---
 
-ShadowOfHarbringer、あなたのは-4way の方が速いか？
+ShadowOfHarbringer、あなたのは `-4way` の方が速いか？
 
 もしそうなら、64 ビットをサポートするすべての AMD が 128 ビット SSE2 を搭載していると考えている。
 
-ここに投稿したスペシャルビルド版はモデル 4 以上を探す。あなたのが-4way で速いなら、64 ビット対応のすべての AMD で常に SSE2 を使用するように変更すべきだろう。
+ここに投稿したスペシャルビルド版はモデル 4 以上を探す。あなたのが `-4way` で速いなら、64 ビット対応のすべての AMD で常に SSE2 を使用するように変更すべきだろう。

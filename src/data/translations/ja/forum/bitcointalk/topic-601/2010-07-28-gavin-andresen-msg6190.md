@@ -14,4 +14,4 @@ tags: []
 translationStatus: complete
 ---
 
-フルパスを指定すれば動くか？例：-datadir=/home/psyvenrix/datadir2
+フルパスを指定すれば動くか？例：`-datadir=/home/psyvenrix/datadir2`

@@ -18,9 +18,9 @@ translationStatus: complete
 
 rev 130 の各種バグ修正：
 
-相対パスでの-datadir を修正
+相対パスでの `-datadir` を修正
 自動起動は Windows 以外ではデフォルトでオフに
 msvc でコンパイルした際の「vector iterator not dereferencable」アサーションが時々発生する問題を修正
 Linux ビルドでの readlink コンパイル警告を修正
 __BSD__の代わりに sys/param.h と BSD 定義を使用
--paytxfee スイッチ、例：-paytxfee=0.01
+`-paytxfee` スイッチ、例：`-paytxfee=0.01`
