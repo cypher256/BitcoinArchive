@@ -56,4 +56,4 @@ longerkey =   this sentence would be this    # "this sentence would be this"
       right = justified
 ```
 
-通常の構文は「key=value」にすべきだが、時々「key = value」にする人を責めることはできない。
+通常の構文は `key=value` にすべきだが、時々 `key = value` にする人を責めることはできない。

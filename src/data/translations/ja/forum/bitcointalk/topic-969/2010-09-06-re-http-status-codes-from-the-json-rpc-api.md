@@ -24,4 +24,4 @@ translationStatus: complete
 
 SVN rev 147 にはさらに：
 - コマンドライン json-rpc がエラーコードを終了コードとして返す。unix では終了コードは 0-255 のみなので、abs(code)%256 だ。
-- 別のスレッドで議論された「backupwallet <destination>」コマンド。ウォレットをロックしてコピーするため、正しいコピーを確実に取得できる。
+- 別のスレッドで議論された `backupwallet <destination>` コマンド。ウォレットをロックしてコピーするため、正しいコピーを確実に取得できる。

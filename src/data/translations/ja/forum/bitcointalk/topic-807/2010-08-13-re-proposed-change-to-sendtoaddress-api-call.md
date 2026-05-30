@@ -18,4 +18,4 @@ translationStatus: complete
 
 後方互換性のために API を複雑にし始めるには時期尚早だ。
 
-単に「<txid>」を返せばいい。
+単に `<txid>` を返せばいい。
