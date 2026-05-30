@@ -16,4 +16,4 @@ translationStatus: complete
 
 それは良いが、自動 4way 検出が Gentoo AMD 64 版のクライアントで動いていない。
 
-まだ"`-4way`"スイッチを追加する必要がある。
+まだ `-4way` スイッチを追加する必要がある。
