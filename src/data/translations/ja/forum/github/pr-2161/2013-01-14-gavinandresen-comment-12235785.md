@@ -15,4 +15,4 @@ tags:
 translationStatus: complete
 ---
 
-@jgarzik：fClient の作業はここの「blockheaders」ブランチにある。サトシから受け取ったコードスニペットは署名キャッシュだけで、すでにマージ済みである。
+@jgarzik：fClient の作業はここの `blockheaders` ブランチにある。サトシから受け取ったコードスニペットは署名キャッシュだけで、すでにマージ済みである。

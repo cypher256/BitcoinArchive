@@ -33,10 +33,10 @@ poedit を使って.po と.mo ファイルを作成する簡単な手順：
 - trunk ディレクトリで、mkdir locale\<lang>\LC_MESSAGES
 - poedit で、File->New catalog->Paths タブ
 - 「New item」の点線の四角ボタンをクリック
-- 「../../..」を入力し、パスを追加するために必ず Enter を押す
+- `../../..` を入力し、パスを追加するために必ず Enter を押す
 - OK をクリック
-- 作成した LC_MESSAGES ディレクトリに「bitcoin.po」として保存
+- 作成した LC_MESSAGES ディレクトリに `bitcoin.po` として保存
 - ソースコードをスキャンして約 170 の文字列が見つかるはず
-- 何も見つからない場合は、Catalog->Settings->Path タブで「../../..」が追加されているか確認
+- 何も見つからない場合は、Catalog->Settings->Path タブで `../../..` が追加されているか確認
 
 翻訳が完了したら、bitcoin.po（編集可能なカタログファイル）と bitcoin.mo（プログラムが使用するコンパイル済みデータ）の両方をコミットしてほしい。
