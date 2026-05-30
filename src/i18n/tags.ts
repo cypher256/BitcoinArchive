@@ -85,6 +85,7 @@ export const tagTranslations: Record<string, string> = {
   'difficulty': '難易度',
   'difficulty-adjustment': '難易度調整',
   'digital-signatures': 'デジタル署名',
+  'digital-gold': 'デジタルゴールド',
   'disappearance': '消失',
   'disaster-recovery': '災害復旧',
   'disputed': '係争中',
