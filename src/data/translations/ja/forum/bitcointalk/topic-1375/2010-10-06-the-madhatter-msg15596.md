@@ -14,6 +14,6 @@ tags: []
 translationStatus: complete
 ---
 
-Tor からのシーディングは簡単だ。IP を提供できる.onion ノードが 7 つある。「-noirc」で IRC 関連のものをオフにして高速化もしたい。
+Tor からのシーディングは簡単だ。IP を提供できる.onion ノードが 7 つある。`-noirc` で IRC 関連のものをオフにして高速化もしたい。
 
 https://www.bitcoin.org/smf/index.php?topic=59.msg14635#msg14635 を参照

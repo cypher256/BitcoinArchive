@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-了解した。非公開スイッチ「-minimizetotray」でオプションを再び有効にできる。
+了解した。非公開スイッチ `-minimizetotray` でオプションを再び有効にできる。
 
 変更を SVN にアップロードした。
