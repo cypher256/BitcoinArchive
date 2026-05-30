@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-conf ファイルがない場合や設定ファイルに「rpcpassword」が含まれていない場合に認証をデフォルトで無効にすべきではないと思うが、「rpcpassword=」を含む場合はどうだろうか？
+conf ファイルがない場合や設定ファイルに `rpcpassword` が含まれていない場合に認証をデフォルトで無効にすべきではないと思うが、`rpcpassword=` を含む場合はどうだろうか？
 
 両方の意見がわかる。
 
