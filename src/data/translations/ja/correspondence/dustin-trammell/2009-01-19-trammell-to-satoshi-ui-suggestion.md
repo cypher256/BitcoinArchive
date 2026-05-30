@@ -31,7 +31,7 @@ quotes:
 On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> 最初のデフォルトのアドレスには、作成時に「Your Address」と
+> 最初のデフォルトのアドレスには、作成時に `Your Address` と
 > ラベルが付く。
 > 
 > アドレス帳ラベルが設定されるのはすべてユーザーが手動で設定した
@@ -49,11 +49,11 @@ On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
 > この概念は現実世界にあまり類比がない。
 
 単に `Received with: X` ではなく `Received with address: X` と表示
-されていれば理解できたと思う。とはいえ、そのアドレスに「Satoshi」と
+されていれば理解できたと思う。とはいえ、そのアドレスにサトシと
 誤ラベル付けされていたことが、最初の混乱の主な原因だったのは確かだ。
 ただ、おっしゃるとおりだ。現在の金融システムで人々が慣れているもの
 のうち、強いて言えば PayPal で複数の受信用メールアドレスを使える
-くらいのものしか比較対象はない。「Received payment to: X」と
+くらいのものしか比較対象はない。`Received payment to: X` と
 するのはどうだろうか？
 
 -- 
