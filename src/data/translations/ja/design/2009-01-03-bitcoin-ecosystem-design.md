@@ -59,9 +59,9 @@ graph TB
 
     subgraph L2["L2 — オフチェーンプロトコル"]
         direction LR
-        LN["Lightning Network<br/>（ルーティングされたペイメントチャネル）"]
+        LN["Lightning Network<br/>（ルーティングされた<br/>ペイメントチャネル）"]
         LIQUID["Liquid Network<br/>（連合型サイドチェーン）"]
-        RSK["RSK<br/>（マージマイニングサイドチェーン）"]
+        RSK["RSK<br/>（マージマイニング<br/>サイドチェーン）"]
     end
 
     subgraph INFRA["インフラ層"]
@@ -102,15 +102,15 @@ Lightning Network はルーティング型決済チャネルネットワーク�
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Funding: チャネル開設\n（資金トランザクションを配信）
+    [*] --> Funding: チャネル開設<br/>（資金<br/>トランザクションを配信）
     Funding --> Open: 資金 tx 承認\n（両当事者が commitment tx を保持）
-    Open --> Open: 残高更新\n（新しい commitment tx を交換、\n旧状態を失効）
-    Open --> ClosingCooperative: 協調クローズ\n（クローズ tx を配信、\n最終残高で資金分配）
-    Open --> ClosingForced: 一方的クローズ\n（最新 commitment tx を配信、\n争訟用タイムロック遅延）
-    ClosingCooperative --> [*]: 各ウォレットに\n資金返却
+    Open --> Open: 残高更新<br/>（新しい commitment tx を交換、<br/>旧状態を失効）
+    Open --> ClosingCooperative: 協調クローズ<br/>（クローズ tx を配信、<br/>最終残高で資金分配）
+    Open --> ClosingForced: 一方的クローズ<br/>（最新 commitment tx を配信、<br/>争訟用タイムロック遅延）
+    ClosingCooperative --> [*]: 各ウォレットに<br/>資金返却
     ClosingForced --> Dispute: 相手が失効状態を\n配信
-    ClosingForced --> [*]: タイムロック期限切れ、\n資金解放
-    Dispute --> [*]: ペナルティ tx が\nチャネル全資金を回収
+    ClosingForced --> [*]: タイムロック期限切れ、<br/>資金解放
+    Dispute --> [*]: ペナルティ tx が<br/>チャネル全資金を回収
 ```
 
 ### マルチホップ決済ルーティング (HTLC)
@@ -171,7 +171,7 @@ flowchart LR
     end
 
     subgraph FEDERATION["Liquid 連合 (m-of-n)"]
-        WATCH["Watchmen:<br/>ペグイン入金をメインチェーンで<br/>監視"]
+        WATCH["Watchmen:<br/>ペグイン入金を<br/>メインチェーンで<br/>監視"]
         SIGN["Blocksigners:<br/>60 秒ごとに<br/>Liquid ブロックを生成"]
     end
 
@@ -225,7 +225,7 @@ flowchart TB
     IN --> WIT
     WIT --> OUT
 
-    NOTE["このデータは L1 witness 空間に存在する。<br/>コンセンサス上有効で、全フルノードに<br/>保存され、4 MWU のブロックウェイト<br/>上限に算入される。"]
+    NOTE["このデータは L1 witness 空間に存在する。<br/>コンセンサス上有効で、<br/>全フルノードに<br/>保存され、4 MWU のブロックウェイト<br/>上限に算入される。"]
     BLOCK -.-> NOTE
 ```
 
@@ -259,7 +259,7 @@ Ordinal プロトコルは、マイニングされた順序に基づいてすべ
 ```mermaid
 flowchart TB
     subgraph POOL["マイニングプール"]
-        COORD["プールコーディネーター<br/>（ブロックテンプレート構築、<br/>作業配布）"]
+        COORD["プールコーディネーター<br/>（ブロックテンプレート<br/>構築、<br/>作業配布）"]
     end
 
     subgraph MINERS["個別マイナー"]
@@ -269,7 +269,7 @@ flowchart TB
     end
 
     subgraph CHAIN["ビットコインネットワーク"]
-        NODE["フルノード<br/>（メモリープール、ブロック中継）"]
+        NODE["フルノード<br/>（メモリープール、<br/>ブロック中継）"]
     end
 
     NODE -- "未承認 tx" --> COORD

@@ -48,7 +48,7 @@ translationStatus: complete
 
 ```mermaid
 flowchart LR
-    RNG["暗号学的に安全な\n乱数生成器"] --> SK["秘密鍵\n（256 ビット整数 k、\n1 ≤ k < n）"]
+    RNG["暗号学的に安全な<br/>乱数生成器"] --> SK["秘密鍵\n（256 ビット整数 k、\n1 ≤ k < n）"]
     SK --> MUL["スカラー倍算\nK = k × G"]
     G["生成元 G\n(secp256k1 で定義)"] --> MUL
     MUL --> PK["公開鍵 K\n（曲線上の点）"]
@@ -98,11 +98,11 @@ flowchart TB
     TXID3 --> H34["SHA-256d\n(txid₃ ‖ txid₄)"]
     TXID4 --> H34
 
-    H12 --> ROOT["マークルルート\nSHA-256d(H12 ‖ H34)"]
+    H12 --> ROOT["マークルルート<br/>SHA-256d(H12 ‖ H34)"]
     H34 --> ROOT
 
-    ROOT --> HDR["ブロックヘッダー\n（80 バイト、\nマークルルートを含む）"]
-    HDR --> POW["SHA-256d → ブロックハッシュ\nhash ≤ target が必須"]
+    ROOT --> HDR["ブロックヘッダー<br/>（80 バイト、<br/>マークルルートを含む）"]
+    HDR --> POW["SHA-256d → ブロックハッシュ<br/>hash ≤ target が必須"]
 
     style ROOT fill:#f9f,stroke:#333,stroke-width:2px
     style POW fill:#ff9,stroke:#333,stroke-width:2px
@@ -160,20 +160,20 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    SK["秘密鍵\n(256 ビット)"] --> PK["公開鍵\n（圧縮、\n33 バイト）"]
+    SK["秘密鍵\n(256 ビット)"] --> PK["公開鍵<br/>（圧縮、<br/>33 バイト）"]
     PK --> HASH["Hash160\nRIPEMD-160(SHA-256(pubkey))"]
-    HASH --> PAYLOAD["20 バイトハッシュ\n（pubkey hash）"]
+    HASH --> PAYLOAD["20 バイトハッシュ<br/>（pubkey hash）"]
 
-    PAYLOAD --> B58["Base58Check\n（バージョン + ペイロード + チェックサム）"]
-    B58 --> P2PKH["P2PKH アドレス\n1A1zP1eP5QGefi2DM..."]
+    PAYLOAD --> B58["Base58Check<br/>（バージョン + ペイロード + チェックサム）"]
+    B58 --> P2PKH["P2PKH アドレス<br/>1A1zP1eP5QGefi2DM..."]
 
     PAYLOAD --> BECH32["Bech32\n（witness バージョン 0 +\n32/20 バイトプログラム）"]
-    BECH32 --> P2WPKH["P2WPKH アドレス\nbc1qw508d6qejxtd..."]
+    BECH32 --> P2WPKH["P2WPKH アドレス<br/>bc1qw508d6qejxtd..."]
 
-    PK --> TWEAK["Taproot 鍵調整 (tweak)\n（内部鍵 +\nスクリプトのマークルルート）"]
+    PK --> TWEAK["Taproot 鍵調整 (tweak)<br/>（内部鍵 +<br/>スクリプトの<br/>マークルルート）"]
     TWEAK --> XONLY["x-only 公開鍵\n(32 バイト)"]
     XONLY --> BECH32M["Bech32m\n（witness バージョン 1 +\n32 バイトプログラム）"]
-    BECH32M --> P2TR["P2TR アドレス\nbc1p5cyxnuxmeuw..."]
+    BECH32M --> P2TR["P2TR アドレス<br/>bc1p5cyxnuxmeuw..."]
 ```
 
 ### アドレス形式の比較
@@ -196,27 +196,27 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    SEED["シードエントロピー\n（BIP 32 シード または\nエコシステム BIP 39 ニーモニック）"] --> MASTER["マスター鍵 + chain code\n（シードの HMAC-SHA512）"]
+    SEED["シードエントロピー<br/>（BIP 32 シード または<br/>エコシステム BIP 39 ニーモニック）"] --> MASTER["マスター鍵 + chain code\n（シードの HMAC-SHA512）"]
 
     MASTER --> M44["m/44'/0'/0'\n(BIP 44: P2PKH)"]
     MASTER --> M84["m/84'/0'/0'\n(BIP 84: P2WPKH)"]
     MASTER --> M86["m/86'/0'/0'\n(BIP 86: P2TR)"]
 
-    M44 --> EXT44["外部チェーン\nm/.../0"]
-    M44 --> INT44["おつりチェーン\nm/.../1"]
+    M44 --> EXT44["外部チェーン<br/>m/.../0"]
+    M44 --> INT44["おつりチェーン<br/>m/.../1"]
 
     EXT44 --> K0_44["鍵 0"]
     EXT44 --> K1_44["鍵 1"]
     EXT44 --> KN_44["鍵 n"]
 
-    M84 --> EXT84["外部チェーン\nm/.../0"]
-    M84 --> INT84["おつりチェーン\nm/.../1"]
+    M84 --> EXT84["外部チェーン<br/>m/.../0"]
+    M84 --> INT84["おつりチェーン<br/>m/.../1"]
 
     EXT84 --> K0_84["鍵 0"]
     EXT84 --> K1_84["鍵 1"]
 
-    M86 --> EXT86["外部チェーン\nm/.../0"]
-    M86 --> INT86["おつりチェーン\nm/.../1"]
+    M86 --> EXT86["外部チェーン<br/>m/.../0"]
+    M86 --> INT86["おつりチェーン<br/>m/.../1"]
 
     EXT86 --> K0_86["鍵 0"]
     EXT86 --> K1_86["鍵 1"]

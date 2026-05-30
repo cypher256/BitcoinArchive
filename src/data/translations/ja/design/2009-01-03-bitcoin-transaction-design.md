@@ -56,10 +56,10 @@ translationStatus: complete
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Created: コインベース報酬または\nトランザクション出力
+    [*] --> Created: コインベース報酬または<br/>トランザクション出力
     Created --> InUTXOSet: ブロック承認、\n出力が UTXO セットに追加
-    InUTXOSet --> Spent: 新しいトランザクションの\n入力として参照
-    Spent --> [*]: UTXO セットから削除、\nundo データに保存
+    InUTXOSet --> Spent: 新しいトランザクションの<br/>入力として参照
+    Spent --> [*]: UTXO セットから削除、<br/>undo データに保存
 
     note right of InUTXOSet
         「コイン」とは UTXO セットの 1 エントリー。
@@ -93,13 +93,13 @@ flowchart TB
         VER["バージョン (4 バイト)"]
 
         subgraph INPUTS["入力"]
-            I1["入力 0\n前 txid + 出力インデックス\nscriptSig または witness\nシーケンス"]
+            I1["入力 0<br/>前 txid + 出力インデックス<br/>scriptSig または witness<br/>シーケンス"]
             I2["入力 1\n..."]
         end
 
         subgraph OUTPUTS["出力"]
-            O1["出力 0\n額面（サトシ）\nscriptPubKey（ロックスクリプト）"]
-            O2["出力 1\n（送信者へのおつり）\n額面\nscriptPubKey"]
+            O1["出力 0<br/>額面（サトシ）<br/>scriptPubKey<br/>（ロックスクリプト）"]
+            O2["出力 1<br/>（送信者へのおつり）<br/>額面<br/>scriptPubKey"]
         end
 
         LOCK["ロックタイム (4 バイト)"]
@@ -147,9 +147,9 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    SIG["アンロックスクリプト\n(scriptSig / witness)"] --> STACK["結合して\nスタックにプッシュ"]
+    SIG["アンロックスクリプト\n(scriptSig / witness)"] --> STACK["結合して<br/>スタックにプッシュ"]
     LOCK["ロックスクリプト\n(scriptPubKey)"] --> STACK
-    STACK --> EVAL["オペコードを\n左から右に実行"]
+    STACK --> EVAL["オペコードを<br/>左から右に実行"]
     EVAL --> CHECK{"スタックトップ\n= true?"}
     CHECK -- "はい" --> VALID["支出を承認"]
     CHECK -- "いいえ" --> INVALID["支出を拒否"]
@@ -225,7 +225,7 @@ flowchart TB
     subgraph LEGACY["レガシートランザクション (2009)"]
         direction TB
         L_VER["バージョン"]
-        L_IN["入力\n（scriptSig に署名）"]
+        L_IN["入力<br/>（scriptSig に署名）"]
         L_OUT["出力\n(scriptPubKey)"]
         L_LOCK["ロックタイム"]
         L_VER ~~~ L_IN ~~~ L_OUT ~~~ L_LOCK
@@ -237,7 +237,7 @@ flowchart TB
         S_MF["マーカー + フラグ"]
         S_IN["入力\n（ネイティブでは scriptSig 空）"]
         S_OUT["出力\n(scriptPubKey)"]
-        S_WIT["Witness\n（署名はここへ移動）"]
+        S_WIT["Witness<br/>（署名はここへ移動）"]
         S_LOCK["ロックタイム"]
         S_VER ~~~ S_MF ~~~ S_IN ~~~ S_OUT ~~~ S_WIT ~~~ S_LOCK
     end
@@ -248,7 +248,7 @@ flowchart TB
         T_MF["マーカー + フラグ"]
         T_IN["入力"]
         T_OUT["出力\n（witness プログラム v1）"]
-        T_WIT["Witness\n（鍵パス: 単一シュノア署名\nスクリプトパス: 制御ブロック + スクリプト）"]
+        T_WIT["Witness<br/>（鍵パス: 単一シュノア署名<br/>スクリプトパス: 制御ブロック + スクリプト）"]
         T_LOCK["ロックタイム"]
         T_VER ~~~ T_MF ~~~ T_IN ~~~ T_OUT ~~~ T_WIT ~~~ T_LOCK
     end

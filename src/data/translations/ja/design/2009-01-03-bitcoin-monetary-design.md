@@ -112,14 +112,14 @@ flowchart LR
     subgraph BlockReward["ブロック報酬"]
         direction TB
         SUB["新規発行分\n（新規鋳造 BTC、\n210,000 ブロックごとに半減）"]
-        FEES["トランザクション手数料\n（全入力 − 出力\n差分の合計）"]
+        FEES["トランザクション手数料<br/>（全入力 − 出力<br/>差分の合計）"]
     end
 
-    SUB --> CB["コインベース\nトランザクション"]
+    SUB --> CB["コインベース<br/>トランザクション"]
     FEES --> CB
-    CB --> OUTPUTS["マイナーの出力\nアドレス"]
+    CB --> OUTPUTS["マイナーの出力<br/>アドレス"]
 
-    RULE["合意規則:\nコインベース出力 ≤\n新規発行分 + 手数料"]
+    RULE["合意規則:<br/>コインベース出力 ≤<br/>新規発行分 + 手数料"]
     RULE -.- CB
 ```
 
@@ -143,14 +143,14 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    MEMPOOL["メモリープール\n（未承認トランザクション）"] --> SORT["手数料率で並び替え\n(sat/vB)"]
-    SORT --> FILL["ブロックテンプレートを\n上位から埋める\n（ウェイト上限 4 MWU まで）"]
+    MEMPOOL["メモリープール<br/>（未承認<br/>トランザクション）"] --> SORT["手数料率で並び替え\n(sat/vB)"]
+    SORT --> FILL["ブロックテンプレートを<br/>上位から埋める<br/>（ウェイト上限 4 MWU まで）"]
     FILL --> HIGH["高手数料率の tx\n→ 次のブロックに含まれる"]
     FILL --> MED["中手数料率の tx\n→ 1〜3 ブロック待ち"]
-    FILL --> LOW["低手数料率の tx\n→ 多数ブロック待ち\nまたはメモリープールから除外"]
+    FILL --> LOW["低手数料率の tx<br/>→ 多数ブロック待ち<br/>またはメモリープール<br/>から除外"]
 
-    RBF["RBF: 送信者が手数料率を\n引上げて待ち列の上位へ"] --> MEMPOOL
-    CPFP["CPFP: 子 tx が高手数料を\n支払い親をブロックに引込む"] --> MEMPOOL
+    RBF["RBF: 送信者が手数料率を<br/>引上げて待ち列の上位へ"] --> MEMPOOL
+    CPFP["CPFP: 子 tx が高手数料を<br/>支払い親を<br/>ブロックに引込む"] --> MEMPOOL
 ```
 
 ### 手数料メカニズム
@@ -186,10 +186,10 @@ v0.1 では、大半のトランザクションは手数料を一切支払わな
 
 ```mermaid
 flowchart LR
-    HONEST["マイナーがプロトコル\n規則に従う"] --> VALID["有効ブロックが\n生産される"]
-    VALID --> TRUST["ネットワークの\n信頼が維持される"]
+    HONEST["マイナーがプロトコル<br/>規則に従う"] --> VALID["有効ブロックが<br/>生産される"]
+    VALID --> TRUST["ネットワークの<br/>信頼が維持される"]
     TRUST --> VALUE["BTC が価値を\n保つ／高める"]
-    VALUE --> REWARD["ブロック報酬の\n実質価値が\n高まる"]
+    VALUE --> REWARD["ブロック報酬の<br/>実質価値が<br/>高まる"]
     REWARD --> HONEST
 ```
 

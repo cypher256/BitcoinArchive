@@ -67,15 +67,15 @@ translationStatus: complete
 flowchart TB
     subgraph TRUSTED["プロトコルが信頼する"]
         CRYPTO["暗号学的困難性\n(SHA-256, ECDLP)"]
-        MAJORITY["正直な多数派の\nハッシュレート"]
-        CONNECT["ネットワーク接続性\n（1 つ以上の正直なピア）"]
-        SOFTWARE["正確な検証\nソフトウェア"]
+        MAJORITY["正直な多数派の<br/>ハッシュレート"]
+        CONNECT["ネットワーク接続性<br/>（1 つ以上の正直なピア）"]
+        SOFTWARE["正確な検証<br/>ソフトウェア"]
     end
 
     subgraph ELIMINATED["信頼を排除"]
         CENTRAL["中央発行者なし"]
-        BANK["二重支払い防止の\n権威機関なし"]
-        IDENTITY["参加者の\nアイデンティティー不要"]
+        BANK["二重支払い防止の<br/>権威機関なし"]
+        IDENTITY["参加者の<br/>アイデンティティー不要"]
         SERVER["単一障害点なし"]
     end
 
@@ -148,7 +148,7 @@ flowchart TD
         NODE_E --- ATK4["攻撃者"]
     end
 
-    NORMAL --> |"攻撃者が addr メッセージで\nフラッドし接続スロットを\nすべて占有"| ECLIPSED
+    NORMAL --> |"攻撃者が addr メッセージで<br/>フラッドし接続スロットを<br/>すべて占有"| ECLIPSED
 ```
 
 **影響。** 日食状態のノードは低ワークチェーンを送り込まれたり、そのノードに対して特定的に二重支払いに使われたり、新しくマイニングされたブロックを見ることを妨げられて正直なチェーン先端から取り残される可能性がある。
@@ -183,9 +183,9 @@ flowchart LR
 
     subgraph SELFISH["利己的マイナーの挙動"]
         FIND_S["ブロック発見"] --> WITHHOLD["ブロックを保留"]
-        WITHHOLD --> WAIT{"正直なネットワークが\nブロックを発見?"}
-        WAIT -- "いいえ\n（攻撃者がリードを延長）" --> FIND_NEXT["秘密チェーン上で\nマイニング継続"]
-        WAIT -- "はい\n（正直ブロック発見）" --> RELEASE["保留ブロックを公開し\nフォーク誘発 +\n正直作業を孤立化"]
+        WITHHOLD --> WAIT{"正直なネットワークが<br/>ブロックを発見?"}
+        WAIT -- "いいえ<br/>（攻撃者がリードを延長）" --> FIND_NEXT["秘密チェーン上で<br/>マイニング継続"]
+        WAIT -- "はい<br/>（正直ブロック発見）" --> RELEASE["保留ブロックを公開し<br/>フォーク誘発 +<br/>正直作業を孤立化"]
         FIND_NEXT --> WAIT
     end
 ```
@@ -201,26 +201,26 @@ flowchart LR
 ```mermaid
 flowchart TB
     subgraph L1["層 1: 暗号学的保証"]
-        HASH["SHA-256d プルーフオブワーク\n（ブロック生成コスト）"]
+        HASH["SHA-256d プルーフオブワーク<br/>（ブロック生成コスト）"]
         SIG["ECDSA / Schnorr 署名\n（支出認可）"]
-        MERKLE["マークルツリーコミットメント\n（改竄検出）"]
+        MERKLE["マークルツリー<br/>コミットメント<br/>（改竄検出）"]
     end
 
     subgraph L2["層 2: コンセンサスルール"]
         VALID["決定論的ブロック\n検証"]
-        WORK["最多ワークチェーン\n選択"]
-        DIFF["難易度調整\n（ブロック速度を規制）"]
+        WORK["最多ワークチェーン<br/>選択"]
+        DIFF["難易度調整<br/>（ブロック速度を規制）"]
     end
 
     subgraph L3["層 3: ネットワークアーキテクチャー"]
-        GOSSIP["ゴシップ中継\n（単一障害点なし）"]
-        DIVERSE["ピア多様性\n（日食攻撃耐性）"]
-        ENCRYPT["BIP 324\n暗号化トランスポート"]
+        GOSSIP["ゴシップ中継<br/>（単一障害点なし）"]
+        DIVERSE["ピア多様性<br/>（日食攻撃耐性）"]
+        ENCRYPT["BIP 324<br/>暗号化トランスポート"]
     end
 
     subgraph L4["層 4: 経済的インセンティブ"]
-        REWARD["ブロック報酬\n（正直マイニングが採算）"]
-        COST["ハッシュレートコスト\n（攻撃は高価）"]
+        REWARD["ブロック報酬<br/>（正直マイニングが採算）"]
+        COST["ハッシュレートコスト<br/>（攻撃は高価）"]
         ASSET["攻撃者自身の BTC が\n価値を失う"]
     end
 
@@ -255,15 +255,15 @@ flowchart TB
 ```mermaid
 flowchart LR
     subgraph DEFENSES["ネットワーク層の防御（v27 以降基準）"]
-        ANCHOR["アンカー接続\n（再起動をまたいで保持）"]
-        BLOCKONLY["ブロック中継専用ピア\n（追加 2 出方向、\nメモリープール漏洩なし）"]
-        EVICT["多様性保持型\n退去アルゴリズム"]
-        FEELER["フィーラー接続\n（アドレス到達性を\nプローブ）"]
-        BIP324["BIP 324\n暗号化トランスポート"]
-        ADDRV2["addrv2\n(Tor、I2P、CJDNS\nアドレス対応)"]
+        ANCHOR["アンカー接続<br/>（再起動をまたいで保持）"]
+        BLOCKONLY["ブロック中継専用ピア<br/>（追加 2 出方向、<br/>メモリープール漏洩なし）"]
+        EVICT["多様性保持型<br/>退去アルゴリズム"]
+        FEELER["フィーラー接続<br/>（アドレス到達性を<br/>プローブ）"]
+        BIP324["BIP 324<br/>暗号化トランスポート"]
+        ADDRV2["addrv2<br/>(Tor、I2P、CJDNS<br/>アドレス対応)"]
     end
 
-    ANCHOR --> GOAL["目標:\n日食耐性 +\n監視耐性 +\n正直な接続性\nを維持"]
+    ANCHOR --> GOAL["目標:<br/>日食耐性 +<br/>監視耐性 +<br/>正直な接続性<br/>を維持"]
     BLOCKONLY --> GOAL
     EVICT --> GOAL
     FEELER --> GOAL
@@ -289,14 +289,14 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    SUBSIDY["ブロック新規発行分\n（現状 3.125 BTC）"] --> REWARD["ブロック報酬\n= 新規発行分 + 手数料"]
+    SUBSIDY["ブロック新規発行分<br/>（現状 3.125 BTC）"] --> REWARD["ブロック報酬\n= 新規発行分 + 手数料"]
     FEES["トランザクション手数料"] --> REWARD
     REWARD --> REVENUE["マイナー日次収入\n= 144 ブロック × 報酬"]
-    REVENUE --> HARDWARE["ハードウェア\n投資を支える"]
-    REVENUE --> ENERGY["エネルギー消費を\n支える"]
-    HARDWARE --> HASHRATE["ネットワークハッシュレート"]
+    REVENUE --> HARDWARE["ハードウェア<br/>投資を支える"]
+    REVENUE --> ENERGY["エネルギー消費を<br/>支える"]
+    HARDWARE --> HASHRATE["ネットワーク<br/>ハッシュレート"]
     ENERGY --> HASHRATE
-    HASHRATE --> COST["攻撃コスト\n= このハッシュレートの\n50% 超を取得・運用する\nコスト"]
+    HASHRATE --> COST["攻撃コスト<br/>= このハッシュレートの<br/>50% 超を取得・運用する<br/>コスト"]
 ```
 
 | パラメーター | おおよその値（2024 年） | 意味 |
@@ -341,10 +341,10 @@ flowchart TD
     end
 
     subgraph DEFENSES_MAP["主たる防御"]
-        D_POW["プルーフオブワーク\nコスト + 承認"]
+        D_POW["プルーフオブワーク<br/>コスト + 承認"]
         D_NET["ネットワーク多様性\n+ ピア管理"]
-        D_SYBIL["PoW 重み付けコンセンサス\n（ノード数ではない）"]
-        D_TIME["タイムスタンプクランプ\n+ MTP ルール"]
+        D_SYBIL["PoW 重み付けコンセンサス<br/>（ノード数ではない）"]
+        D_TIME["タイムスタンプクランプ<br/>+ MTP ルール"]
         D_PROP["高速ブロック伝播\n(BIP 152)"]
         D_CRYPTO["耐量子移行\n（将来）"]
     end

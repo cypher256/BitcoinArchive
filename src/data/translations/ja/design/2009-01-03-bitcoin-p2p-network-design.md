@@ -97,16 +97,16 @@ graph TD
 ```mermaid
 flowchart TD
     START["ノード起動"] --> CACHE{"peers.dat に\nアドレスあり?"}
-    CACHE -- "あり" --> TRY["キャッシュ済みピアに\n接続試行"]
+    CACHE -- "あり" --> TRY["キャッシュ済みピアに<br/>接続試行"]
     CACHE -- "なし" --> DNS["DNS シードに\n問い合わせ"]
-    TRY --> ENOUGH{"1 ピア以上に\n接続できた?"}
-    ENOUGH -- "あり" --> RELAY["接続済みピアから\naddr メッセージを要求"]
+    TRY --> ENOUGH{"1 ピア以上に<br/>接続できた?"}
+    ENOUGH -- "あり" --> RELAY["接続済みピアから<br/>addr メッセージを要求"]
     ENOUGH -- "なし" --> DNS
-    DNS --> CONNECT["返されたアドレスに\n接続"]
+    DNS --> CONNECT["返されたアドレスに<br/>接続"]
     CONNECT --> RELAY
     RELAY --> STABLE["安定ピア集合\n確立"]
 
-    DNS2["ハードコードシード\n（最終手段）"] -.-> CONNECT
+    DNS2["ハードコードシード<br/>（最終手段）"] -.-> CONNECT
 ```
 
 **サトシ時代と v27 以降基準の比較。** 元の v0.1 クライアントは主要な発見メカニズムとして IRC に依存していた — 単純だが、IRC サーバーのダウンタイムやチャネル追放に脆弱な中央集権的アプローチであった。現行の Bitcoin Core は独立したコミュニティメンバーが運営する DNS シードで IRC を置き換えている。DNS シード運営者はネットワークを継続的に探索するクローラーソフトウェアを動作させており、DNS レコードには現在到達可能で互換性のあるプロトコルバージョンを実行しているノードのみが反映される。
@@ -193,11 +193,11 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    WALLET["ウォレットが\nトランザクションを送信"] --> NODE_A["ノード A:\n検証 → メモリープールに受理"]
+    WALLET["ウォレットが<br/>トランザクションを送信"] --> NODE_A["ノード A:\n検証 → メモリープールに受理"]
     NODE_A --> |"inv (txid)"| NODE_B["ノード B"]
     NODE_A --> |"inv (txid)"| NODE_C["ノード C"]
     NODE_B --> |"getdata"| NODE_A
-    NODE_A --> |"tx（完全トランザクション）"| NODE_B
+    NODE_A --> |"tx（完全<br/>トランザクション）"| NODE_B
     NODE_B --> |"検証 → メモリープール"| NODE_B
     NODE_B --> |"inv (txid)"| NODE_D["ノード D"]
     NODE_C --> |"getdata"| NODE_A
@@ -227,29 +227,29 @@ flowchart LR
 flowchart TD
     subgraph Legacy["従来: 完全ブロック中継 (v0.1)"]
         direction TB
-        L1["マイナーが\nブロック発見"] --> L2["inv（ブロックハッシュ）\nを全ピアへ"]
+        L1["マイナーが<br/>ブロック発見"] --> L2["inv（<br/>ブロックハッシュ）<br/>を全ピアへ"]
         L2 --> L3["ピア: getdata"]
-        L3 --> L4["block（完全直列化ブロック）\n約 1〜2 MB"]
+        L3 --> L4["block（完全直列化<br/>ブロック）<br/>約 1〜2 MB"]
         L4 --> L5["ピアが検証し\n中継"]
     end
 
     subgraph HF["ヘッダー先行同期 (v0.10 以降)"]
         direction TB
-        H1["ノードが IBD 開始"] --> H2["getheaders\n（ヘッダーチェーンを要求）"]
+        H1["ノードが IBD 開始"] --> H2["getheaders<br/>（ヘッダーチェーンを<br/>要求）"]
         H2 --> H3["headers\n（最大 2,000 ヘッダー）"]
-        H3 --> H4["ヘッダーチェーン構築、\nPoW を検証"]
-        H4 --> H5["getdata（複数ピアから\n並列ブロック要求）"]
-        H5 --> H6["チェーン順に\n完全ブロック検証"]
+        H3 --> H4["ヘッダーチェーン構築、<br/>PoW を検証"]
+        H4 --> H5["getdata（<br/>複数ピアから<br/>並列ブロック要求）"]
+        H5 --> H6["チェーン順に<br/>完全ブロック検証"]
     end
 
     subgraph CB["コンパクトブロック (BIP 152, v0.13 以降)"]
         direction TB
-        C1["マイナーが\nブロック発見"] --> C2["cmpctblock\n（ヘッダー + 短縮 tx ID）\n約 20 kB"]
-        C2 --> C3["ピアがメモリープール\nからブロック再構築"]
+        C1["マイナーが<br/>ブロック発見"] --> C2["cmpctblock<br/>（ヘッダー + 短縮 tx ID）<br/>約 20 kB"]
+        C2 --> C3["ピアがメモリープール<br/>からブロック再構築"]
         C3 --> C4{"全 tx\nあり?"}
         C4 -- "あり" --> C5["ブロックを検証"]
-        C4 -- "なし" --> C6["getblocktxn\n（不足分を要求）"]
-        C6 --> C7["blocktxn\n（不足 tx のみ）"]
+        C4 -- "なし" --> C6["getblocktxn<br/>（不足分を要求）"]
+        C6 --> C7["blocktxn<br/>（不足 tx のみ）"]
         C7 --> C5
     end
 ```

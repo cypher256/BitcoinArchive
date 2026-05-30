@@ -68,7 +68,7 @@ flowchart TB
 
         subgraph TXLIST["トランザクション一覧"]
             direction TB
-            CB["コインベーストランザクション (tx₀)"]
+            CB["コインベース<br/>トランザクション (tx₀)"]
             TX1["トランザクション 1"]
             TX2["トランザクション 2"]
             TXN["..."]
@@ -76,8 +76,8 @@ flowchart TB
         end
     end
 
-    MERK -. "全トランザクションの\nマークルルート" .-> CB
-    PREV -. "前ブロックヘッダーの\nSHA-256d ハッシュ" .-> PREVBLOCK["ブロック N−1\nヘッダー"]
+    MERK -. "全トランザクションの<br/>マークルルート" .-> CB
+    PREV -. "前ブロックヘッダーの<br/>SHA-256d ハッシュ" .-> PREVBLOCK["ブロック N−1\nヘッダー"]
 
     VER ~~~ PREV ~~~ MERK ~~~ TIME ~~~ BITS ~~~ NONCE
 ```
@@ -119,7 +119,7 @@ flowchart TB
     HCD --- HC["H(tx₂)"]
     HCD --- HD["H(tx₃)"]
 
-    HA --- TX0["tx₀\n（コインベース）"]
+    HA --- TX0["tx₀<br/>（コインベース）"]
     HB --- TX1["tx₁"]
     HC --- TX2["tx₂"]
     HD --- TX3["tx₃"]
@@ -149,11 +149,11 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    G["ジェネシスブロック\n（ブロック 0）\nhash: 000000000019d6..."]
+    G["ジェネシスブロック<br/>（ブロック 0）<br/>hash: 000000000019d6..."]
     B1["ブロック 1\nprevBlockHash:\n000000000019d6..."]
-    B2["ブロック 2\nprevBlockHash:\nブロック 1 のハッシュ"]
-    B3["ブロック 3\nprevBlockHash:\nブロック 2 のハッシュ"]
-    BN["ブロック N\n（チェーン先端）\nprevBlockHash:\nブロック N−1 のハッシュ"]
+    B2["ブロック 2<br/>prevBlockHash:<br/>ブロック 1 のハッシュ"]
+    B3["ブロック 3<br/>prevBlockHash:<br/>ブロック 2 のハッシュ"]
+    BN["ブロック N<br/>（チェーン先端）<br/>prevBlockHash:<br/>ブロック N−1 のハッシュ"]
 
     G --> B1 --> B2 --> B3 --> |"..."| BN
 ```
@@ -176,13 +176,13 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    RECV["新ブロック受信"] --> VALID{"ブロックヘッダーと\n内容は有効?"}
+    RECV["新ブロック受信"] --> VALID{"ブロックヘッダーと<br/>内容は有効?"}
     VALID -- "いいえ" --> REJECT["ブロック拒否"]
-    VALID -- "はい" --> EXTENDS{"現在の最良チェーンを\n延長する?"}
+    VALID -- "はい" --> EXTENDS{"現在の最良チェーンを<br/>延長する?"}
     EXTENDS -- "はい" --> TIP["受理: チェーン先端を更新"]
-    EXTENDS -- "いいえ" --> COMPARE{"新チェーンの累積ワーク\n> 現最良チェーンの\n累積ワーク?"}
-    COMPARE -- "いいえ" --> STORE["代替ブランチとして\n保存"]
-    COMPARE -- "はい" --> REORG["再編成:\n旧先端を切断、\n新ブランチを接続"]
+    EXTENDS -- "いいえ" --> COMPARE{"新チェーンの累積ワーク<br/>> 現最良チェーンの<br/>累積ワーク?"}
+    COMPARE -- "いいえ" --> STORE["代替ブランチとして<br/>保存"]
+    COMPARE -- "はい" --> REORG["再編成:<br/>旧先端を切断、<br/>新ブランチを接続"]
     REORG --> TIP2["新チェーン先端を確立"]
 ```
 

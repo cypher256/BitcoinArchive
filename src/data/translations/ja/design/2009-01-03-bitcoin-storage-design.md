@@ -62,8 +62,8 @@ flowchart TB
     subgraph MEMORY["メモリー上状態"]
         direction TB
         COINS_CACHE["coins キャッシュ<br/>（UTXO ライトバックキャッシュ）<br/>既定約 450 MiB"]
-        MEMPOOL["メモリープール<br/>（未承認トランザクション）<br/>既定 300 MB 上限"]
-        CHAINSTATE["チェーン状態メタデータ<br/>（最良先端、ブロックツリー、<br/>nChainWork）"]
+        MEMPOOL["メモリープール<br/>（未承認<br/>トランザクション）<br/>既定 300 MB 上限"]
+        CHAINSTATE["チェーン状態メタデータ<br/>（最良先端、<br/>ブロックツリー、<br/>nChainWork）"]
     end
 
     subgraph INPUT["受信データ"]
@@ -182,8 +182,8 @@ flowchart TD
 flowchart LR
     HASH["ブロックハッシュ"] --> IDX["ブロックインデックス<br/>(LevelDB)"]
     IDX --> POS["ファイル: blk00042.dat<br/>オフセット: 0x1A3F00"]
-    POS --> READ["フラットファイルの<br/>オフセットからブロックを読込み"]
-    READ --> BLOCK["デシリアライズ済みブロック"]
+    POS --> READ["フラットファイルの<br/>オフセットから<br/>ブロックを読込み"]
+    READ --> BLOCK["デシリアライズ済み<br/>ブロック"]
 ```
 
 
@@ -198,17 +198,17 @@ flowchart LR
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Received: トランザクションが\nネットワークまたはウォレットから到着
-    Received --> Validated: ポリシー検査と\n合意検証を通過
+    [*] --> Received: トランザクションが<br/>ネットワークまたは<br/>ウォレットから到着
+    Received --> Validated: ポリシー検査と<br/>合意検証を通過
     Validated --> InMempool: メモリープールに受理
-    InMempool --> Confirmed: 検証済みブロックに\n含まれる
-    InMempool --> Evicted: メモリープール満杯、\n最低手数料率を除外
-    InMempool --> Expired: 最大保持時間超過\n（既定 2 週間）
+    InMempool --> Confirmed: 検証済みブロックに<br/>含まれる
+    InMempool --> Evicted: メモリープール満杯、<br/>最低手数料率を除外
+    InMempool --> Expired: 最大保持時間超過<br/>（既定 2 週間）
     Confirmed --> [*]: メモリープールから削除
     Evicted --> [*]
     Expired --> [*]
 
-    InMempool --> Replaced: より高い手数料率による\n置換 (RBF)
+    InMempool --> Replaced: より高い手数料率による<br/>置換 (RBF)
     Replaced --> [*]
 ```
 
@@ -234,7 +234,7 @@ stateDiagram-v2
 flowchart TB
     subgraph KEPT["剪定済みノードが保持"]
         UTXO["完全な UTXO セット<br/>（coins データベース）"]
-        IDX["完全なブロックインデックス<br/>（全ヘッダー）"]
+        IDX["完全な<br/>ブロックインデックス<br/>（全ヘッダー）"]
         RECENT["最近のブロックファイル<br/>（設定可能な保持窓）"]
     end
 
@@ -244,7 +244,7 @@ flowchart TB
     end
 
     UTXO -. "新ブロックは<br/>引き続き検証可能" .-> VALID["完全な合意検証能力"]
-    OLD -. "ピアに過去ブロックを<br/>提供できない" .-> LIMIT["完全アーカイブピアとしては<br/>機能しない"]
+    OLD -. "ピアに過去ブロックを<br/>提供できない" .-> LIMIT["完全アーカイブ<br/>ピアとしては<br/>機能しない"]
 ```
 
 

@@ -196,7 +196,7 @@ flowchart LR
         DIFF_N["同一アルゴリズム<br/>（off-by-one は合意規則<br/>として保持）"]
         CHAIN_N["最多ワークチェーン<br/>（強化された nChainWork）"]
         ACT_N["BIP 9 versionbits /<br/>BIP 8 Speedy Trial"]
-        ASSUME["assumevalid<br/>（信頼ハッシュ以下では<br/>スクリプト検証をスキップ）"]
+        ASSUME["assumevalid<br/>（信頼ハッシュ以下では<br/>スクリプト検証を<br/>スキップ）"]
     end
 ```
 
@@ -219,9 +219,9 @@ flowchart LR
     subgraph V01_MON["v0.1 — 貨幣"]
         direction TB
         SUB_0["50 BTC 新規発行分<br/>（期 0）"]
-        FREE_0["大半のトランザクションが無料<br/>（コイン年齢による優先度）"]
+        FREE_0["大半の<br/>トランザクションが無料<br/>（コイン年齢<br/>による優先度）"]
         MINE_0["内部 CPU マイナー"]
-        TMPL_0["単純なブロックテンプレート"]
+        TMPL_0["単純な<br/>ブロックテンプレート"]
     end
 
     subgraph V27_MON["v27 以降 — 貨幣"]
@@ -229,7 +229,7 @@ flowchart LR
         SUB_N["3.125 BTC 新規発行分<br/>（期 4、2024 年半減後）"]
         FEE_N["手数料率オークション<br/>(sat/vB)"]
         MINE_N["外部マイナー<br/>(getblocktemplate / Stratum v2)"]
-        TMPL_N["手数料率で並べたテンプレート<br/>（SegWit ウェイト計算付き）"]
+        TMPL_N["手数料率で並べた<br/>テンプレート<br/>（SegWit ウェイト計算付き）"]
     end
 ```
 
@@ -290,7 +290,7 @@ flowchart LR
     subgraph V01_STORE["v0.1 — ストレージ"]
         direction TB
         BDB_S["Berkeley DB<br/>（全状態を 1 つの DB に）"]
-        FULL_TX["完全トランザクションを保存<br/>（使用済み + 未使用）"]
+        FULL_TX["完全トランザクションを<br/>保存<br/>（使用済み + 未使用）"]
         NO_UNDO["undo データなし<br/>（再編成 = フォーク点から<br/>再検証）"]
         NO_PRUNE["剪定なし<br/>（全件保存）"]
     end
@@ -299,7 +299,7 @@ flowchart LR
         direction TB
         MULTI_S["LevelDB（UTXO セット +<br/>ブロックインデックス）+ フラットファイル<br/>（ブロック + undo データ）"]
         UTXO_ONLY["未使用出力のみ<br/>（outpoint インデックス）"]
-        UNDO_S["専用 undo ファイル<br/>（rev*.dat、高速ロールバック用）"]
+        UNDO_S["専用 undo ファイル<br/>（rev*.dat、<br/>高速ロールバック用）"]
         PRUNE_S["剪定（最小 550 MiB）+<br/>assumeUTXO ブートストラップ"]
     end
 ```
@@ -323,7 +323,7 @@ flowchart LR
 flowchart LR
     subgraph V01_WALL["v0.1 — ウォレット"]
         direction TB
-        EMBED["ノードバイナリ内に埋込み<br/>（インターフェース境界なし）"]
+        EMBED["ノードバイナリ内に埋込み<br/>（インターフェース<br/>境界なし）"]
         RAND_K["ランダム鍵プール<br/>（独立 100 鍵）"]
         BDB_W["Berkeley DB<br/>(wallet.dat)"]
         BACKUP["バックアップ = ファイルエクスポート<br/>（バックアップ後の新鍵は<br/>復元不可）"]
@@ -332,9 +332,9 @@ flowchart LR
 
     subgraph V27_WALL["v27 以降 — ウォレット"]
         direction TB
-        SEP["論理的に分離<br/>（マルチプロセスは実験的）"]
+        SEP["論理的に分離<br/>（マルチプロセスは<br/>実験的）"]
         DESC["記述子ウォレット<br/>（決定論的導出）"]
-        SQLITE["SQLite<br/>(wallet.dat、新形式)"]
+        SQLITE["SQLite<br/>(wallet.dat、<br/>新形式)"]
         SEED["一度のシードバックアップ<br/>（全導出鍵をカバー）"]
         EST["手数料推定 +<br/>RBF + PSBT ワークフロー"]
     end
@@ -360,18 +360,18 @@ flowchart LR
 timeline
     title アーキテクチャー上のマイルストーン: v0.1 → v27 以降
     section 2009–2010
-        v0.1 (2009 年 1 月) : モノリシックバイナリ、BDB、IRC、CPU マイナー、OpenSSL
-        1 MB 上限 (2010 年 9 月) : ブロックサイズ上限、オペコード無効化
+        v0.1 (2009 年 1 月) : モノリシックバイナリ、 BDB、IRC、CPU マイナー、OpenSSL
+        1 MB 上限 (2010 年 9 月) : ブロックサイズ上限、 オペコード無効化
     section 2012–2013
-        v0.8 (2013 年 3 月) : BDB → LevelDB、フラットブロックファイル、undo データ
+        v0.8 (2013 年 3 月) : BDB → LevelDB、 フラットブロック ファイル、 undo データ
     section 2015–2017
-        v0.10 (2015) : ヘッダー先行同期、libsecp256k1
+        v0.10 (2015) : ヘッダー先行同期、 libsecp256k1
         SegWit — BIP 141 (2017 年 8 月) : Witness フィールド、4 MWU、非展性 txid
     section 2018–2021
         BIP 174 (2018) : PSBT ワークフロー
-        Taproot — BIP 341 (2021 年 11 月) : Schnorr、tapscript、鍵/スクリプトパス
+        Taproot — BIP 341 (2021 年 11 月) : Schnorr、tapscript、 鍵/スクリプトパス
     section 2023–2025
-        v26 (2023) : BIP 324 暗号化トランスポート、BDB 非推奨
+        v26 (2023) : BIP 324 暗号化トランスポート、 BDB 非推奨
         v27 基準 (2024) : assumeUTXO スナップショット同期
         v28 (2024) : 完全 RBF が既定
 ```

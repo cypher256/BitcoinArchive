@@ -52,21 +52,21 @@ graph TB
 
     subgraph Node["Bitcoin Core ノードプロセス"]
         RPC["RPC サーバー\n(HTTP 上の JSON-RPC)"]
-        REST["REST インターフェース\n（読み取り専用、認証なし）"]
-        ZMQ["ZMQ パブリッシャー\n（プッシュ通知）"]
+        REST["REST インターフェース<br/>（読み取り専用、<br/>認証なし）"]
+        ZMQ["ZMQ パブリッシャー<br/>（プッシュ通知）"]
         VALID["検証エンジン"]
         MEMPOOL["メモリープール"]
         P2P["P2P ネットワーク層"]
-        CHAIN["チェーン状態\n（UTXO セット）"]
+        CHAIN["チェーン状態<br/>（UTXO セット）"]
     end
 
     subgraph Wallet["ウォレット（同一または別プロセス）"]
-        KEYS["鍵マネージャー\n（記述子 + keypool）"]
+        KEYS["鍵マネージャー<br/>（記述子 + keypool）"]
         COIN["コイン選択"]
         BUILD["トランザクションビルダー"]
         SIGN["署名者\n(ECDSA / シュノア)"]
         FEE["手数料推定器"]
-        WSTORE["ウォレットデータベース\n(SQLite、v27 以降)"]
+        WSTORE["ウォレットデータベース<br/>(SQLite、v27 以降)"]
     end
 
     CLI -- "JSON-RPC" --> RPC
@@ -103,12 +103,12 @@ v0.1 ではウォレットはインターフェース境界なしにノードバ
 
 ```mermaid
 flowchart TB
-    SEED["生のシードエントロピー\n(BIP 32 マスターシード)"] --> DESC_WPKH["記述子:\nwpkh([fp/84h/0h/0h]xpub.../0/*)"]
+    SEED["生のシードエントロピー<br/>(BIP 32 マスターシード)"] --> DESC_WPKH["記述子:\nwpkh([fp/84h/0h/0h]xpub.../0/*)"]
     SEED --> DESC_TR["記述子:\ntr([fp/86h/0h/0h]xpub.../0/*)"]
     SEED --> DESC_PKH["記述子:\npkh([fp/44h/0h/0h]xpub.../0/*)"]
 
-    DESC_WPKH --> POOL_W["導出 keypool\n(P2WPKH アドレス:\nbc1q...)"]
-    DESC_TR --> POOL_T["導出 keypool\n(P2TR アドレス:\nbc1p...)"]
+    DESC_WPKH --> POOL_W["導出 keypool<br/>(P2WPKH アドレス:<br/>bc1q...)"]
+    DESC_TR --> POOL_T["導出 keypool<br/>(P2TR アドレス:<br/>bc1p...)"]
     DESC_PKH --> POOL_P["導出 keypool\n(P2PKH アドレス:\n1...)"]
 
     POOL_W --> DB["SQLite ウォレットデータベース"]
@@ -134,7 +134,7 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    DESC["有効な記述子\n例 wpkh(xpub.../0/*)"] --> IDX["次の未使用インデックス\n（例: インデックス 7）"]
+    DESC["有効な記述子\n例 wpkh(xpub.../0/*)"] --> IDX["次の未使用インデックス<br/>（例: インデックス 7）"]
     IDX --> DERIVE["インデックス 7 で\nBIP 32 子鍵を導出"]
     DERIVE --> PK["公開鍵\n（圧縮、33 バイト）"]
 
@@ -162,22 +162,22 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    START["支払い要求\n（額面 + 手数料率）"] --> FILTER["候補 UTXO をフィルター\n（承認済、未ロック、\nダスト閾値超）"]
-    FILTER --> BNB["分枝限定法 (BnB) 探索\n（厳密一致、おつりなし）"]
+    START["支払い要求\n（額面 + 手数料率）"] --> FILTER["候補 UTXO をフィルター<br/>（承認済、未ロック、<br/>ダスト閾値超）"]
+    FILTER --> BNB["分枝限定法 (BnB) 探索<br/>（厳密一致、おつりなし）"]
 
     BNB -- "厳密一致あり" --> SCORE_BNB["無駄指標で採点"]
-    BNB -- "厳密一致なし" --> KNAPSACK["ナップサック選択\n（ランダム試行、\n超過を最小化）"]
+    BNB -- "厳密一致なし" --> KNAPSACK["ナップサック選択<br/>（ランダム試行、<br/>超過を最小化）"]
 
     KNAPSACK --> SCORE_KS["無駄指標で採点"]
 
-    FILTER --> SRD["単一ランダム抽選\n（目標到達までシャッフル\nして累積）"]
+    FILTER --> SRD["単一ランダム抽選<br/>（目標到達までシャッフル<br/>して累積）"]
     SRD --> SCORE_SRD["無駄指標で採点"]
 
     SCORE_BNB --> PICK["最低無駄の\n候補を選択"]
     SCORE_KS --> PICK
     SCORE_SRD --> PICK
 
-    PICK --> BUILD["トランザクション構築\n（入力 + 出力 +\n必要に応じておつり）"]
+    PICK --> BUILD["トランザクション構築<br/>（入力 + 出力 +<br/>必要に応じておつり）"]
 ```
 
 
@@ -268,15 +268,15 @@ Bitcoin Core は外部呼び出し元に 3 つのインターフェースを公�
 ```mermaid
 flowchart LR
     subgraph Callers["呼び出し元"]
-        CLI["bitcoin-cli\n（コマンドライン）"]
+        CLI["bitcoin-cli<br/>（コマンドライン）"]
         WEBAPP["Web アプリ"]
-        STREAM["ストリーミング購読者\n（インデクサー、モニター）"]
+        STREAM["ストリーミング購読者<br/>（インデクサー、<br/>モニター）"]
     end
 
     subgraph Interfaces["インターフェース"]
-        RPC["JSON-RPC\n（ポート 8332）\n認証あり、\n読み書き"]
-        REST["REST\n（ポート 8332）\n認証なし、\n読み取り専用"]
-        ZMQ_IF["ZMQ\n（設定可能ポート）\nプッシュ通知、\nリクエスト不要"]
+        RPC["JSON-RPC<br/>（ポート 8332）<br/>認証あり、<br/>読み書き"]
+        REST["REST<br/>（ポート 8332）<br/>認証なし、<br/>読み取り専用"]
+        ZMQ_IF["ZMQ<br/>（設定可能ポート）<br/>プッシュ通知、<br/>リクエスト不要"]
     end
 
     CLI --> RPC
@@ -320,15 +320,15 @@ flowchart LR
 flowchart LR
     subgraph V01["v0.1 (2009)"]
         direction TB
-        MONO["単一バイナリ\n（ウォレット + ノード + マイナー + GUI）"]
+        MONO["単一バイナリ<br/>（ウォレット + ノード + マイナー + GUI）"]
         BDB["wallet.dat\n(Berkeley DB)"]
         MONO --> BDB
     end
 
     subgraph V18["v0.17–v0.20"]
         direction TB
-        NODE1["bitcoind\n（ノード + ウォレットモジュール）"]
-        W1["ウォレットモジュール\n（内部、リンクライブラリー）"]
+        NODE1["bitcoind<br/>（ノード + ウォレットモジュール）"]
+        W1["ウォレットモジュール<br/>（内部、<br/>リンクライブラリー）"]
         BDB2["wallet.dat\n(Berkeley DB)"]
         NODE1 --> W1
         W1 --> BDB2
@@ -336,8 +336,8 @@ flowchart LR
 
     subgraph V27["v27 以降基準"]
         direction TB
-        NODE2["bitcoind\n（ノードのみ）"]
-        W2["bitcoin-wallet\n（任意で別プロセス）"]
+        NODE2["bitcoind<br/>（ノードのみ）"]
+        W2["bitcoin-wallet<br/>（任意で別プロセス）"]
         SQL["wallet.dat\n(SQLite)"]
         NODE2 -- "IPC\n(Cap'n Proto)" --- W2
         W2 --> SQL
