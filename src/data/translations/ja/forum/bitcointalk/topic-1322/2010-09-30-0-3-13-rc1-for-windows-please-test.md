@@ -28,5 +28,5 @@ translationStatus: complete
 - Linux での 128 ビット 4-way SSE2 の自動検出
 
 ギャビン・アンドレセン:
-- 別のマシンからの JSON-RPC 接続を受け入れるオプション -rpcallowip=
+- 別のマシンからの JSON-RPC 接続を受け入れるオプション `-rpcallowip=`
 - Linux での SIGTERM によるクリーンシャットダウン
