@@ -48,7 +48,7 @@ On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
 > 受取アドレスを分けて作り、誰が支払っているのかを区別する必要がある。
 > この概念は現実世界にあまり類比がない。
 
-単に「Received with: X」ではなく「Received with address: X」と表示
+単に `Received with: X` ではなく `Received with address: X` と表示
 されていれば理解できたと思う。とはいえ、そのアドレスに「Satoshi」と
 誤ラベル付けされていたことが、最初の混乱の主な原因だったのは確かだ。
 ただ、おっしゃるとおりだ。現在の金融システムで人々が慣れているもの
