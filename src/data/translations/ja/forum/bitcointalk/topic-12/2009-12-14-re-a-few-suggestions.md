@@ -30,7 +30,7 @@ std::string から wxString への暗黙の変換が機能していないよう�
 
 wxString は win32 の 16 ビット wchar と 8 ビット ansi のデュアルコンパイルをサポートするため複雑だ。Windows では「unicode」（つまり wchar）ビルドを使用した場合にこの問題が発生する可能性があり、その場合 wxString は wchar で std::string は char になる。
 
-おそらく wxWidgets のコンパイル定義やビルド設定の問題だろう。「configure」でどのオプションを使用したか？
+おそらく wxWidgets のコンパイル定義やビルド設定の問題だろう。`configure` でどのオプションを使用したか？
 
 __WXMAC__が正しい定義かわからない。wxString を複雑にしているのは Mac Classic サポートかもしれないが、私たちは OSX だけが必要だ。__WXOSX__を試してみてほしい（または以下を参照）
 

@@ -27,7 +27,7 @@ quotes:
 <!-- /tone-skip -->
 それなら、wxWidgets のビルドまたは設定で何か異なることをしているはずだ。
 
-wxWidgets の「configure」スクリプトでどのオプションを使用したか？私が使用したオプションは build-unix.txt に記載されている。
+wxWidgets の `configure` スクリプトでどのオプションを使用したか？私が使用したオプションは build-unix.txt に記載されている。
 
 <!-- speaker: madhatter2 -->
 > 「一つ質問：debug.logを有効にするにはどうすればいいですか？Bitcoinを停止して~/.bitcoin/debug.logをtouchして、再度Bitcoinを起動してみましたが、ファイルに書き込まれることはありません。何か見落としていますか？」

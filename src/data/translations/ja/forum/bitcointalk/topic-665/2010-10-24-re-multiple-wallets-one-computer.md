@@ -22,7 +22,7 @@ translationStatus: complete
 
 move <fromaccount> <toaccount> <amount>
    内部アカウント間の移動。空のアカウント名（""）がデフォルトアカウントになると思う。ユーザーに何かを販売した場合、move "theiraccount" "" 123.45 とできる。
-   「move」はこれに最適な名前だろうか？「transfer」はトランザクションの送信と混同しそうなので避けた。
+   `move` はこれに最適な名前だろうか？`transfer` はトランザクションの送信と混同しそうなので避けた。
 
 getnewaddress をオーバーロードする代わりに、新しい関数 getaccountaddress を考えている：
 
