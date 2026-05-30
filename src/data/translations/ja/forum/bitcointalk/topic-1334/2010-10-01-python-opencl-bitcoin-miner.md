@@ -40,7 +40,7 @@ Mac - [https://bitcointalk.org/index.php?topic=12360](https://bitcointalk.org/in
 （お使いのプラットフォームでより良い設定がある場合は PM で連絡してほしい）
 
 *AMD 5xxx 以上*
-'-v -w 128'を使用すること。
+`-v -w 128` を使用すること。
 
 **よくある質問**
 
