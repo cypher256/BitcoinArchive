@@ -18,7 +18,7 @@ translationStatus: complete
 
 0.3.10 には tcatm の 4-way SSE2 がオプションスイッチとして含まれている。
 
-「-4way」スイッチを使って有効にしてほしい。スイッチなしでは Crypto++ ASM SHA-256 が使用される。
+`-4way` スイッチを使って有効にしてほしい。スイッチなしでは Crypto++ ASM SHA-256 が使用される。
 
 Linux でのみ動作させることができた。
 

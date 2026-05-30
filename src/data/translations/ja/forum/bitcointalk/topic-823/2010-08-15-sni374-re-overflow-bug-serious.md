@@ -22,7 +22,7 @@ translationStatus: complete
 
 Linux 版のビルドリンクは以下の通りだ。
 
-Linux 版には tcatm の 4-way SSE2 SHA-256 が含まれており、i5 および AMD CPU での生成が高速になる。「-4way」スイッチを使って有効にし、お使いの環境で高速かどうか確認してほしい。
+Linux 版には tcatm の 4-way SSE2 SHA-256 が含まれており、i5 および AMD CPU での生成が高速になる。`-4way` スイッチを使って有効にし、お使いの環境で高速かどうか確認してほしい。
 
 ダウンロードリンク：
 [http://www.bitcoin.org/download/bitcoin-0.3.10-win32-setup.exe](http://www.bitcoin.org/download/bitcoin-0.3.10-win32-setup.exe)

@@ -25,7 +25,7 @@ translationStatus: complete
 
 バージョン 0.3.10 はブロック 74638 のオーバーフローバグを修正する。[http://bitcointalk.org/index.php?topic=823](http://bitcointalk.org/index.php?topic=823)
 
-Linux 版には tcatm の 4-way SSE2 SHA-256 が含まれており、i5、i7（ハイパースレッディング対応）、AMD CPU での生成が高速になる。「-4way」スイッチを試して有効にし、お使いの環境で高速かどうか確認してほしい。
+Linux 版には tcatm の 4-way SSE2 SHA-256 が含まれており、i5、i7（ハイパースレッディング対応）、AMD CPU での生成が高速になる。`-4way` スイッチを試して有効にし、お使いの環境で高速かどうか確認してほしい。
 
 SourceForge からダウンロード：
 [http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.10/](http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.10/)
