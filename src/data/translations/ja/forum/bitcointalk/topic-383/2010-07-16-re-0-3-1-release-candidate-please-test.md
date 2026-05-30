@@ -16,6 +16,6 @@ secondarySources:
 translationStatus: complete
 ---
 
-非公開スイッチ -minimizetotray を付けて実行すると、オプションメニューからそのオプションが利用可能になる。
+非公開スイッチ `-minimizetotray` を付けて実行すると、オプションメニューからそのオプションが利用可能になる。
 
 修正方法がわからない。wxWidgets、GTK、または Gnome の内部深くにある何かの問題だ。

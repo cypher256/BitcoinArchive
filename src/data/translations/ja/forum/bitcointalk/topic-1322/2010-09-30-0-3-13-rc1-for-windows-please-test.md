@@ -22,7 +22,7 @@ translationStatus: complete
 - 1回の承認があるまで支払いをカウントまたは使用しない
      [topic 1306](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1306/2010-09-30-sni465-re-i-broke-my-wallet-sends-never-confirm-now/)
 - 内部バージョン番号を 312 から 31300 に変更
-- -allowreceivebyip が指定された場合のみ IP アドレスで送信されたトランザクションを受け入れる
+- `-allowreceivebyip` が指定された場合のみ IP アドレスで送信されたトランザクションを受け入れる
 - DB_PRIVATE Berkeley DB フラグを廃止
 - 1 セント未満の端数のお釣りで最後の 1 セントを送金する際の問題を修正
 - Linux での 128 ビット 4-way SSE2 の自動検出
