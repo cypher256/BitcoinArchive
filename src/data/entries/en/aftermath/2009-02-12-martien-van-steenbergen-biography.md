@@ -42,7 +42,7 @@ Satoshi replied the same day with one of his most significant early statements:
 
 This was the first time Satoshi publicly stated the 21 million coin limit outside the Bitcoin source code.
 
-In a follow-up exchange on February 13, van Steenbergen asked about [Ripple](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), protocol specifications, and whether Bitcoin could support self-organizing monetary models. Satoshi responded by describing Bitcoin as "a foundation and first step" for programmable P2P social currencies, and discussed Bitcoin's relationship to Pekunio and reputation-based systems.
+In a follow-up exchange on February 13, van Steenbergen asked about Ripple, protocol specifications, and whether Bitcoin could support self-organizing monetary models. Satoshi responded by describing Bitcoin as "a foundation and first step" for programmable P2P social currencies, and discussed Bitcoin's relationship to Pekunio and reputation-based systems.
 
 ### Significance
 Van Steenbergen's direct question about money supply elicited one of Satoshi's most frequently quoted statements about Bitcoin's fundamental design. His questions helped draw out important early explanations of Bitcoin's monetary policy and vision for the future of programmable currencies.
