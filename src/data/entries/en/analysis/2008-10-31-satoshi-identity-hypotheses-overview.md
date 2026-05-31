@@ -93,7 +93,7 @@ Ten named candidates, seven dimensions of Satoshi's documented public-record out
 - Wei Dai's 2014 identifiability argument that Satoshi was *not* a publicly active cypherpunk during the 2007–2008 development window (consistent with the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/));
 - the 19,901-line v0.1 C++ codebase;
 - the near-native English register;
-- the 18-month intensive development window from mid-2007 through August 2008;
+- the 18-month intensive development window from mid-2007 through the v0.1 release in January 2009 (implementation work substantially complete by August 2008);
 - the April 2011 withdrawal.
 
 The four structural layers are not interchangeable; each narrows the candidate space differently and none selects a unique person. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Entry" column in each table); the other candidates are treated within this entry.

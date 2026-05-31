@@ -73,7 +73,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
-Satoshi wrote this to [Adam Back](/BitcoinArchive/participants/adam-back/) on August 21, 2008 — eighteen months into Bitcoin's design, and one day after Back introduced him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s 1998 b-money proposal. b-money was the closest pre-existing system in the same design space. Satoshi had not seen it.
+Satoshi wrote this to [Adam Back](/BitcoinArchive/participants/adam-back/) on August 21, 2008 — well over a year into Bitcoin's design (Satoshi's own "last year and a half" timeline, stated three months later on the cryptography mailing list, locates the start around mid-2007), and one day after Back introduced him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s 1998 b-money proposal. b-money was the closest pre-existing system in the same design space. Satoshi had not seen it.
 
 This entry reads three observations together: (a) the b-money disclaimer above, in Satoshi's own words; (b) Wei Dai's 2014 retrospective assessment that Satoshi was "not previously active" in cypherpunk communities; (c) the tight alignment between Satoshi's documented practice and the six-point ideological core of Eric Hughes's 1993 *A Cypherpunk's Manifesto*. How does a designer who appears never to have participated in the cypherpunk community arrive at a system that maps almost point-by-point onto its founding manifesto?
 
@@ -130,7 +130,7 @@ Satoshi dated the development period twice in the public record.
 On November 17, 2008, 17 days after the whitepaper was posted, on the cryptography mailing list ([archived post](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)):
 
 <!-- speaker: Satoshi Nakamoto -->
-> "I believe I've worked through every detail in the last year and a half while coding it, and there were a lot of them."
+> "I believe I've worked through all those little details over the last year and a half while coding it, and there were a lot of them."
 
 On July 21, 2009, in a private email to Martti Malmi ([archived](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)):
 
@@ -154,7 +154,7 @@ This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/
 
 The chronology constrains what can be said about Satoshi's relationship to the cypherpunk technical lineage during development:
 
-| Source | Status during development period (mid-2007 to 2008-08-20) |
+| Source | Status during the pre-disclosure implementation phase (mid-2007 to 2008-08-20) |
 |---|---|
 | Hashcash (Back 1997) | **Known** — Satoshi sought the citation himself |
 | b-money (Dai 1998) | **Not known** — Satoshi's own admission to Back |
@@ -215,7 +215,7 @@ This matters because it limits how strong a claim the alignment in §3 can suppo
 
 ## 6. Summary
 
-- During the 18-month Bitcoin development period (mid-2007 to August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
+- During the 18-month Bitcoin development period (mid-2007 to the v0.1 release in January 2009 — implementation work substantially complete by August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
 - Wei Dai's 2014 retrospective adds a second independent constraint: Satoshi was probably not previously active in cypherpunk communities, by an identifiability argument.
 - Satoshi's documented practice in 2008-2011 maps point-by-point onto the six-axis cypherpunk philosophical core articulated in Eric Hughes's 1993 *A Cypherpunk's Manifesto*.
 - The most parsimonious reading is *independent arrival* — convergence on the same answers from outside the visible community — but the question of passive readership remains open in the public record.
