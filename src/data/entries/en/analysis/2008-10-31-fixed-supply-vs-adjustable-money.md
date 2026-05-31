@@ -72,7 +72,7 @@ Any monetary system has to answer two questions:
 
 The two questions are independent. A central bank can run a fixed schedule. A protocol can implement a discretionary feedback loop. Bitcoin's specific combination — decided by a protocol, on a fixed schedule with a hard cap — is one of several internally consistent answers, not the only one.
 
-The chronology of the debate, from b-money's 1998 elastic-supply proposal through the Ethereum Merge:
+The chronology of the debate, from b-money's 1998 elastic-supply proposal through the [Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) Merge:
 
 ```mermaid
 timeline

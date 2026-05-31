@@ -37,7 +37,7 @@ translationStatus: complete
 
 ## Why the question matters
 
-Later cryptocurrencies (Ethereum, Ripple, Cardano, Solana) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
+Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), Ripple, Cardano, Solana) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
 
 The standard explanation is "first-mover advantage." On this reading, Bitcoin's value is a path-dependent accident: it arrived first, accumulated the network effect, and is now defended by inertia rather than by anything intrinsic to the design.
 

@@ -204,7 +204,7 @@ Each halving is a discrete monetary-policy event: the rate of new supply issuanc
 | Halving | Date | Block height | Subsidy before → after | Subsidy per block, post (USD ~) | BTC price (approx.) | Network hash rate (approx.) | Notable context |
 |---|---|---|---|---|---|---|---|
 | **1st** | Nov 28, 2012 | 210,000 | 50 → 25 BTC | ~$300 | ~$12 | ~25 TH/s | First ASIC miners arriving; GPU era ending |
-| **2nd** | Jul 9, 2016 | 420,000 | 25 → 12.5 BTC | ~$8,100 | ~$650 | ~1.5 EH/s | SegWit debate underway; Ethereum launched one year prior |
+| **2nd** | Jul 9, 2016 | 420,000 | 25 → 12.5 BTC | ~$8,100 | ~$650 | ~1.5 EH/s | SegWit debate underway; [Ethereum](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/) launched one year prior |
 | **3rd** | May 11, 2020 | 630,000 | 12.5 → 6.25 BTC | ~$54,000 | ~$8,600 | ~120 EH/s | Institutional adoption accelerating |
 | **4th** | Apr 19, 2024 | 840,000 | 6.25 → 3.125 BTC | ~$200,000 | ~$64,000 | ~600 EH/s | Spot Bitcoin ETFs approved in US (Jan 2024); Ordinals/inscriptions driving fee spikes |
 
