@@ -1975,8 +1975,14 @@ Defined at `:root` in `src/styles/global.css`:
 | Token | Value | Concern |
 |---|---|---|
 | `--max-width-prose` | 640px | Prose paragraph readability (env- and language-independent) |
-| `--max-width-read` | 800px | Reading-tier page (single document) |
+| `--max-width-read` | 1000px | Reading-tier page (single document) |
 | `--max-width-wide` | 1200px | Dashboard-tier page (lists, viz) |
+
+**Per-page width overrides** (not tokens, single-page exceptions):
+
+| Selector | Value | Where |
+|---|---|---|
+| `.novel-page` | 720px | `/novel/` and `/ja/novel/` only. The novel intro is denser prose where 720px reads as a published essay rather than a documentation column. |
 
 `--max-width` is kept as an alias for `--max-width-read` for backward
 compatibility. Prefer the tier-specific tokens in new code.
@@ -2000,7 +2006,7 @@ font fallback chains produce different widths) and language-dependent
 - types index, types filter (`/types/`, `/types/{type}/`)
 - sources index, sources filter (`/sources/`, `/sources/{source}/`)
 
-`.container` (800px) — single-document reading pages:
+`.container` (1000px) — single-document reading pages:
 
 - about
 - 404
@@ -2037,14 +2043,14 @@ the constraint only causes mid-word wraps without improving
 readability. Let the container constrain subtitles. The current
 `.page-lead` style intentionally has no `max-width`.
 
-On `.container` (800px) pages, the container itself already
+On `.container` (1000px) pages, the container itself already
 constrains prose, so `.prose` is usually redundant.
 
 ### Responsive
 
 | Breakpoint | Behavior |
 |---|---|
-| ≥1200 | Containers at fixed max-width (800 / 1200) |
+| ≥1200 | Containers at fixed max-width (1000 / 1200) |
 | 768–1199 | Containers fluid to viewport (`max-width: 100%`), padding 1.5rem |
 | <768 | Containers full-width, padding 1rem, font-size 15px |
 
@@ -2066,13 +2072,14 @@ container fluid behavior and intentionally uses a different breakpoint.
 ### What this policy does not cover
 
 - Hybrid pages (analysis with embedded D3 visualizations) live on
-  `.container` (800px). When a chart is wider than that, the page
+  `.container` (1000px). When a chart is wider than that, the page
   tier does **not** change — the chart wrapper extends at the element
-  level, the same pattern as `.mermaid-scroll` and `.table-scroll`.
-  See § d3 components → Layout width consideration for the canonical
-  CSS recipe. Switching the entire page to a wider tier widens the
-  prose column too, which defeats the line-length argument for
-  keeping analysis pages at 800px.
+  level via the unified `.figure-outer` + `.figure-block` pattern
+  shared by mermaid, tables, and d3. See § d3 components → Layout
+  width consideration for the canonical CSS recipe. Switching the
+  entire page to a wider tier widens the prose column too, which
+  defeats the line-length argument for keeping analysis pages at
+  1000px.
 - Ultrawide monitors (>1440px viewport) are not fluid-scaled; the
   1200px ceiling holds. Card grids and prose stay readable; left/right
   whitespace is acceptable.
@@ -2216,9 +2223,12 @@ markdown without touching component code.
 
 Mermaid SVGs render at their natural pixel size (per-diagram-type
 `useMaxWidth: false` is set in `astro.config.mjs`). A custom rehype
-plugin (`src/lib/rehype-mermaid-wrapper.mjs`) wraps each rendered SVG
-in a `<div class="mermaid-scroll">`, and `.mermaid-scroll` has
-`overflow-x: auto` in `global.css`.
+plugin (`src/lib/rehype-mermaid-wrapper.mjs`) wraps each rendered
+SVG in the unified figure structure
+(`<div class="figure-outer"><figure class="figure-block"
+data-kind="mermaid">`), and `.figure-block` has `overflow-x: auto`
+in `global.css`. See § "Layout width consideration — unified
+figure-block + figure-outer" for the full pattern.
 
 The combined effect:
 
@@ -2230,7 +2240,7 @@ The combined effect:
   events at readable text size.
 
 Without this wrapper, dense timelines collapse into tiny illegible
-text when constrained to the 800px reading-tier container.
+text when constrained to the 1000px reading-tier container.
 
 If a specific diagram is too dense even with horizontal scroll
 (common signal: still need to zoom the browser to read it), prefer
@@ -2391,53 +2401,88 @@ chart is laid out**. A line like "labels in the left margin" or
 the reader can see the layout. Keep the subtitle focused on the
 data and what to look for.
 
-#### Layout width consideration
+#### Layout width consideration — unified figure-block + figure-outer
 
-Analysis pages use `.container` (800px) so prose stays at a readable
-line length. When a chart is wider than that, **break out at the
-element level** rather than widening the page tier — the same pattern
-already used for Mermaid (`.mermaid-scroll`) and tables
-(`.table-scroll`).
+Analysis pages use `.container` (1000px) so prose stays at a readable
+line length. When a figure (chart, mermaid diagram, or table) is wider
+than that, **break out at the element level** rather than widening
+the page tier. All three figure types share the same wrapper
+structure:
 
-For d3 components, use the **capped variant** of the breakout (matching
-`.table-scroll`, not `.mermaid-scroll`):
+```html
+<div class="figure-outer">
+  <figure class="figure-block" data-kind="chart|mermaid|table">
+    <!-- svg | table | chart-container -->
+  </figure>
+</div>
+```
+
+The CSS (defined once in `src/styles/global.css`):
 
 ```css
-@media (min-width: 1200px) {
-  .my-viz .chart-scroll {
-    --chart-breakout: min(
-      calc((100vw - var(--max-width-read) - 3rem) / 2),
-      calc((var(--max-width-wide) - var(--max-width-read)) / 2)
-    );
-    margin-left: calc(-1 * var(--chart-breakout));
-    margin-right: calc(-1 * var(--chart-breakout));
+/* Outer: provides the breakout context */
+.figure-outer { margin-block: 1.5em; }
+
+@media (min-width: 1500px) {              /* = 1.5 × --max-width-read */
+  .figure-outer {
+    margin-inline: calc((100vw - 100%) / -2);
   }
+}
+
+/* Inner block: visual boundary, scrolls horizontally on overflow */
+.figure-block {
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.figure-block[data-kind="mermaid"],
+.figure-block[data-kind="table"] {
+  width: max-content;
+  max-width: 100%;
+}
+
+.figure-block[data-kind="chart"] {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow-y: hidden;
 }
 ```
 
-The 1200px cap is essential for d3 because a typical d3 component
-sizes its SVG to the wrapper's clientWidth (so an ultrawide viewport
-would stretch the chart linearly, producing huge empty horizontal
-bands and uselessly long bars). The cap keeps the chart at a
-comfortable maximum width regardless of monitor size while still
-giving it more room than the 800px reading tier on normal desktop
-viewports. Below 1200px the `.container` is fluid, the wrapper sits
-inside it naturally, and `overflow-x: auto` on the wrapper lets the
-SVG scroll horizontally if its minimum natural width exceeds the
-available space.
+**Threshold (1.5× container)**: at viewport ≥ 1500px (= 1.5 ×
+`--max-width-read`) the outer extends to the viewport edges so wide
+figures can use the full horizontal room. Below 1500px the outer
+sits flush with the container — small breakouts in the 1100-1499px
+range visually mis-align with prose ("微妙にずれてる" gata zone),
+so the threshold is set high enough that any breakout reads as
+intentional.
 
-| Wrapper class    | Cap     | Reason |
+**Per-kind sizing**:
+
+| `data-kind` | width | Reason |
 |---|---|---|
-| `.mermaid-scroll` | none   | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); a wider wrapper just adds whitespace, so capping is unnecessary. |
-| `.table-scroll`  | 1200px | `inline-table` expands long-text cells when given more width; the cap prevents one-line overflow on ultrawide viewports. |
-| `.chart-scroll` (d3) | 1200px | The chart sizes its SVG to the wrapper width and would stretch indefinitely on ultrawide viewports without the cap. |
+| `mermaid` | `max-content` + `max-width: 100%` | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); the block sizes to content and never wider than wrapper. Small diagrams stay small (no wasted whitespace). |
+| `table` | same | Tables size to natural content; combined with `min-width: 100%` on the table itself, short tables fill the block while wide tables overflow with internal scroll. |
+| `chart` (d3) | `width: 100%` | D3 sizes its SVG to the wrapper's `clientWidth`, so the block must be 100% width (not `max-content`) for the chart to use the available room. `position: relative` + `overflow-y: hidden` support the tooltip pattern. |
 
-This rule replaces an earlier draft that proposed switching the page
-to a `.container-hybrid` (~1100px) tier. That approach widens the
-prose column too, defeating the line-length argument for keeping
-analysis pages at 800px in the first place. Element-level breakout
-keeps prose at the reading tier and lets the chart use the available
-space — the same trade-off Mermaid and tables already adopt.
+**History — past patches and the present design**: this section once
+specified per-wrapper classes (`.mermaid-scroll`, `.table-scroll`,
+`.chart-scroll`) with different cap policies (Mermaid uncapped,
+table/chart capped at 1200px). The uncapped Mermaid breakout was
+introduced in commit `9f93e628` (2026-05-04), then removed in
+`64658b7c` (2026-05-13) with the reason "bleeding past the prose
+left/right edges". The actual visual problem — figures sticking out
+slightly past prose without a clear "this is a separate block"
+indicator — is solved by the visual boundary (border + background)
+on `.figure-block`, not by the absence of breakout. The 1.5×
+threshold further prevents the gata zone the original implementation
+exposed. See `todo/0531_図表overflowとコンテナ幅.md` for the full
+diagnosis.
 
 ### Tables: the lowest-cost visual structure
 
