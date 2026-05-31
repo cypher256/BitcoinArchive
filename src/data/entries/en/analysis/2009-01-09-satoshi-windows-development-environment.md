@@ -47,7 +47,6 @@ relatedEntries:
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - design/2009-01-03-bitcoin-architecture-evolution
-  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 translationStatus: complete
 ---
 

@@ -50,7 +50,6 @@ relatedEntries:
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
-  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 inlineLinkKeywords:
   - "サトシの自己言及"
   - "サトシ自身の言葉"

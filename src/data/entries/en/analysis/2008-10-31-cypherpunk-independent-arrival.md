@@ -64,7 +64,6 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-activity-timeline
   - aftermath/2013-07-06-isamu-kaneko-biography
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
-  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 inlineLinkKeywords:
   - "Cypherpunk's Manifesto"
   - "independent arrival"

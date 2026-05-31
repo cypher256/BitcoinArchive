@@ -30,7 +30,6 @@ secondarySources:
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
-  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 translationStatus: complete
 ---
 

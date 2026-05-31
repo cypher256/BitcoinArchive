@@ -55,7 +55,6 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - design/2009-01-03-bitcoin-system-design-overview
-  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 inlineLinkKeywords:
   - "Bitcoin design lineage"
   - "what Bitcoin reuses"

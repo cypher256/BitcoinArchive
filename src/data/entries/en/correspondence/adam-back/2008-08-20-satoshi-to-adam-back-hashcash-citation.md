@@ -24,8 +24,6 @@ secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Entered into evidence in COPA v. Craig Wright in London, February 2024. Adam Back filed the complete email chain as a witness statement."
-relatedEntries:
-  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 ---
 
 I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.  Here's what I have:

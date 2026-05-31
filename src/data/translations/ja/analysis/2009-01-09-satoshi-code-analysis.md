@@ -44,7 +44,6 @@ relatedEntries:
   - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
   - "design/2009-01-03-bitcoin-system-design-overview"
   - "design/2009-01-03-bitcoin-architecture-evolution"
-  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 inlineLinkKeywords:
   - "サトシのコーディングスタイル"
   - "コーディングスタイルの指紋"
