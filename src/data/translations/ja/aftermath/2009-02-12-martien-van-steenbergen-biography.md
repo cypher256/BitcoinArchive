@@ -37,7 +37,7 @@ translationStatus: complete
 ### サトシとのやり取り
 2009年2月12日、ファン・ステーンベルゲンは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の [P2P Research メーリングリストでのビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に対し、二つの重要な技術的質問で返信した。ビットコインがデビッド・チャウムの匿名デジタルマネーシステムに似ているかどうか、そしてビットコインに通貨供給量の上限があるのか、それとも取引時に通貨が生成されるのかという質問である。
 
-サトシは同日中に、最も重要な初期の声明の一つで返信した。
+サトシは同日中に、初期の最も重要な発言の一つを返した。
 
 > 「通貨供給量には上限がある。流通量は21,000,000コインだ。取引は所有権を移転するだけだ。」
 
