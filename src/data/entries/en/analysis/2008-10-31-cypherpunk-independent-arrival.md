@@ -123,7 +123,7 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 
 ## 2. What Satoshi documented knowing — and not knowing — during the development period
 
-### 2.1 The coding-period statements and the broader design window
+### 2.1 The coding-period statements and what Satoshi said about the work order
 
 Satoshi referenced the duration of his Bitcoin work in the public record several times. Two are coding-period framings.
 
@@ -149,7 +149,7 @@ And on January 10, 2011, in a private email to Mike Hearn about ECDSA key sizes 
 <!-- speaker: Satoshi Nakamoto -->
 > "I must admit, this project was 2 years of development before release"
 
-By Satoshi's own framing, the design period was longer than the coding period and began earlier. The "approximately 18 months" measures coding; "Since 2007" and "2 years of development before release" describe a broader span that the coding sat inside.
+D9's "Much more of the work was designing than coding" is about the share of effort within the work, not about a discrete pre-coding design phase. The work order Satoshi himself documented separately is that the code came first and the paper came second — "I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper" (Satoshi to [Hal Finney](/BitcoinArchive/participants/hal-finney/), [November 10, 2008](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)). The 18-month coding span (D6, D7) and the "Since 2007" / "2 years of development before release" framings (D9, D11) describe the same pre-release work with different scopes and granularities — the contemporaneous coding-window framing and the later approximately-2-year retrospective; they do not establish a separate design phase that preceded coding.
 
 ### 2.2 What was known during that period
 
@@ -160,7 +160,7 @@ Adam Back's reply on August 21, 2008 introduced Satoshi to b-money for the first
 <!-- speaker: Satoshi Nakamoto -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
-This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the pre-disclosure phase of the project (the coding period running from mid-2007 to August 2008, set within the broader "Since 2007" design period Satoshi later described) he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
+This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the pre-disclosure phase of the project (the coding period running from mid-2007 to August 2008, within the approximately 2-year pre-release work Satoshi later described as "Since 2007" / "2 years of development before release") he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
 
 ### 2.3 What this constrains
 
@@ -227,7 +227,7 @@ This matters because it limits how strong a claim the alignment in §3 can suppo
 
 ## 6. Summary
 
-- During the Bitcoin development window (approximately 18 months of coding from mid-2007 to the v0.1 release in January 2009 per Satoshi's contemporaneous statements, set within the broader "Since 2007" / "2 years of development before release" design period Satoshi described later — implementation work substantially complete by August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
+- During the Bitcoin development window (approximately 18 months of coding from mid-2007 to the v0.1 release in January 2009 per Satoshi's contemporaneous statements, within the approximately 2-year pre-release work Satoshi later put at "Since 2007" / "2 years of development before release" — implementation work substantially complete by August 2008, with the whitepaper written after the code, per Satoshi to Hal Finney on November 10, 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
 - Wei Dai's 2014 retrospective adds a second independent constraint: Satoshi was probably not previously active in cypherpunk communities, by an identifiability argument.
 - Satoshi's documented practice in 2008-2011 maps point-by-point onto the six-axis cypherpunk philosophical core articulated in Eric Hughes's 1993 *A Cypherpunk's Manifesto*.
 - The most parsimonious reading is *independent arrival* — convergence on the same answers from outside the visible community — but the question of passive readership remains open in the public record.

@@ -93,7 +93,7 @@ Ten named candidates, seven dimensions of Satoshi's documented public-record out
 - Wei Dai's 2014 identifiability argument that Satoshi was *not* a publicly active cypherpunk during the 2007–2008 development window (consistent with the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/));
 - the 19,901-line v0.1 C++ codebase;
 - the near-native English register;
-- the approximately 18-month intensive coding window from mid-2007 through the v0.1 release in January 2009 (implementation work substantially complete by August 2008), set within the broader design period Satoshi later described as "Since 2007" and "2 years of development before release";
+- the approximately 18-month intensive coding window from mid-2007 through the v0.1 release in January 2009 (implementation work substantially complete by August 2008; whitepaper written after the code was substantially complete, per Satoshi to Hal Finney on November 10, 2008), within the approximately 2-year pre-release work Satoshi later put at "Since 2007" / "2 years of development before release";
 - the April 2011 withdrawal.
 
 The four structural layers are not interchangeable; each narrows the candidate space differently and none selects a unique person. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Entry" column in each table); the other candidates are treated within this entry.
@@ -145,7 +145,7 @@ Per-candidate background and external status are in §6 (Candidate profiles). Th
 - *Monetary system design*: documented thinking about digital-cash / monetary-system mechanisms — proof-of-work tokens, scarcity mechanisms, fee markets, mining incentives, distributed issuance schemes. Bitcoin v0.1 required not only cryptographic and distributed-systems engineering (covered by Implementation) but also coherent thinking about monetary mechanism design; this dimension separates that aspect. A theorist who designed a monetary mechanism without shipping code (Szabo with Bit Gold, for example) scores 🟢 here even with 🔴 on Implementation; an implementer with no monetary-system work in their record (Sassaman with Mixmaster, Le Roux with E4M, Kaneko with Winny) scores the inverse.
 - *Near-native English register*: idiom, register-shift, and literary fluency comparable to Satoshi's white paper, BitcoinTalk posts, and email correspondence.
 - *Tight timing vs Satoshi's silence*: closeness of a documented major life event (death, retirement, etc.) to Satoshi's last known correspondence (April 26, 2011 email to Gavin Andresen).
-- *Low public visibility during 2007–2008 development*: degree to which the candidate could plausibly have undertaken the multi-year pre-release effort (approximately 18 months of coding inside a broader design period Satoshi later described as beginning in 2007) without leaving public traces in their documented activity.
+- *Low public visibility during 2007–2008 development*: degree to which the candidate could plausibly have undertaken the approximately 2-year pre-release effort (about 18 months of intensive coding from mid-2007, within the pre-release work Satoshi later put at "Since 2007" / "2 years of development before release") without leaving public traces in their documented activity.
 
 **Two-group structure.** The seven dimensions split into two groups that pull against each other:
 
