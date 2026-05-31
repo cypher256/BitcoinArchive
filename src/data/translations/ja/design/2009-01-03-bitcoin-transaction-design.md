@@ -216,7 +216,7 @@ sequenceDiagram
 
 ## 5. SegWit と Taproot
 
-SegWit（Segregated Witness、2017 年）と Taproot（2021 年）は、ビットコインのトランザクション形式に対するその誕生以来最大の 2 つの構造的変更である。どちらも後方互換性のあるソフトフォークである。
+SegWit（Segregated Witness、2017 年）と Taproot（2021 年）は、ビットコインのトランザクション形式に対する誕生以来最大の 2 つの構造的変更である。どちらも後方互換性のあるソフトフォークである。
 
 ### 構造比較
 
