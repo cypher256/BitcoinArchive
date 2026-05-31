@@ -84,7 +84,7 @@ timeline
 1998年11月、ダイは匿名の分散型電子キャッシュシステムの提案[「b-money」](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)をサイファーパンクスメーリングリストに公開した。b-money 提案は、参加者が計算パズルの解を放送することで貨幣を作成できるシステムを記述した — ビットコインのプルーフ・オブ・ワーク・マイニングと概念的に類似する概念である。論文では 2 つのプロトコルを概説した：1 つは同期的なブロードキャストチャネルを必要とするもの、もう 1 つは残高を追跡するサーバー群を使用するものである。b-money は実装されなかったが、ビットコインの主要な知的先駆者の一つとなった。
 
 ### Crypto++
-ダイは Crypto++を作成・保守した。これは暗号アルゴリズムとスキームの包括的なコレクションを提供する無料のオープンソース C++ライブラリである。このライブラリは学術・商用プロジェクトで広く使用されており、利用可能な最も信頼される暗号ライブラリの一つであり続けている。ビットコインは最も古く保管されているリリースから SHA-256 実装に Crypto++を使用していた：v0.1.3 ALPHA（2009年初頭）の`src/sha.cpp`および`src/sha.h`には、ルーチンが「Crypto++ Version 5.5.2（2007年9月24日リリース）からスタンドアロンのファイルとして切り出された」旨のヘッダーコメントが付いている — これはビットコインが設計されていた時期（2007年中頃以降）に利用可能だった Crypto++の最新版。
+ダイは Crypto++を作成・保守した。これは暗号アルゴリズムとスキームを幅広く提供する無料のオープンソース C++ライブラリである。このライブラリは学術・商用プロジェクトで広く使用されており、利用できる暗号ライブラリのなかでもっとも信頼されているものの一つであり続けている。ビットコインは現存する最も古いリリースから SHA-256 実装に Crypto++を使用していた：v0.1.3 ALPHA（2009年初頭）の`src/sha.cpp`および`src/sha.h`には、ルーチンが「Crypto++ Version 5.5.2（2007年9月24日リリース）からスタンドアロンのファイルとして切り出された」旨のヘッダーコメントが付いている — これはビットコインが設計されていた時期（2007年中頃以降）に利用可能だった Crypto++の最新版。
 
 Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0.3.6（2010年7月29日リリース）で統合された。一次資料による時系列：
 
@@ -94,10 +94,10 @@ Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0
 - 2010-07-29：[v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/) — サトシは BlackEye を Crypto++ ASM SHA-256 で、tcatm を midstate キャッシュ最適化でクレジット：「生成全体で 2.4 倍の高速化」。
 - 2010-08-09：サトシが[明示的に](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-765/2010-08-09-version-0-3-8-1-update-for-linux-64-bit/) — 「バージョン 0.3.6 で Crypto++ 5.6.0 SHA-256 に切り替えたとき、Linux 64-bit ビルドで生成が壊れた」。
 
-ダイのビットコインへのコード貢献は二重である：知的先駆者としての b-money と、最も古いリリース時点から既にコードベースの直接的な依存関係としての Crypto++である。
+ダイのビットコインへのコード貢献は二つある：知的先駆者としての b-money と、現存する最も古いリリースの時点で既にコードベースの直接的な依存関係になっていた Crypto++である。
 
 ### サトシの最初の接触
-2008年8月22日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ダイの b-money のアイデアを拡張する論文を発表する準備をしていると書いた。サトシはダイに b-money の発表年を尋ね、適切に引用するためだった。このメールは、2日前に[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)に送られた同様のメールとともに、サトシがビットコインホワイトペーパーの発表前に既存の暗号学者に接触した最も初期の既知の証拠である。2008年10月31日に発表された[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は、b-money を最初の参考文献として引用している。
+2008年8月22日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ダイの b-money のアイデアを拡張する論文を発表する準備をしていると書いた。サトシはダイに b-money の発表年を尋ね、適切に引用するためだった。このメールは、2日前に[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)に送られた同様のメールとともに、サトシがビットコインホワイトペーパーの発表前に以前から活動していた暗号学者に接触した最も初期の既知の証拠である。2008年10月31日に発表された[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は、b-money を最初の参考文献として引用している。
 
 ### その後のやり取り
 2009年1月、ビットコインのローンチ後、ダイとサトシはさらにメールをやり取りした。サトシは[ダイにメールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/)、[ダイは応答して](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi/)ビットコインの設計について考えを述べ、b-money との類似点と相違点を指摘した。ダイはまた、貨幣と暗号通貨の本質について哲学的な考察を行い、関連する課題への深い理解を示した。
