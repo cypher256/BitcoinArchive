@@ -59,7 +59,7 @@ translationStatus: complete
 
 ### 1.1 メールの表現（一次資料）
 
-2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは[サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期ウィンドウの内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
+2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは[サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期間の内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
 
 <!-- audit:quote-skip -->
 > 「残念ながら、**今いる場所からは**外部からの接続を受け付けることができず、そのせいで作業がより困難になっている」
