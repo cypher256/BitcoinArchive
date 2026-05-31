@@ -25,6 +25,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2011-10-13-litecoin-launch
+inlineLinkKeywords:
+  - "Dogecoin"
 ---
 
 On December 6, 2013, Billy Markus (a software engineer at IBM) and Jackson Palmer (a marketing employee at Adobe Sydney) launched Dogecoin (DOGE), a cryptocurrency built around the "Doge" Shiba Inu internet meme. The initial framing was explicitly satirical: Palmer, observing the proliferation of cryptocurrencies in 2013, registered dogecoin.com as a joke about cryptocurrency speculation. Markus saw the joke, contacted Palmer, and turned it into a working chain by forking [Litecoin](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/).

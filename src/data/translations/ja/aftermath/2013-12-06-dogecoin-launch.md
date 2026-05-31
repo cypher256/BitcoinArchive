@@ -25,6 +25,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2011-10-13-litecoin-launch
+inlineLinkKeywords:
+  - "ドージコイン"
 ---
 
 2013 年 12 月 6 日、IBM のソフトウェアエンジニアだったビリー・マーカスと、Adobe Sydney のマーケティング社員だったジャクソン・パーマーが、柴犬のインターネットミーム「Doge」 を題材にした暗号通貨ドージコイン (DOGE) をローンチした。当初の枠付けは明示的に風刺だった。パーマーは 2013 年に乱立する暗号通貨を観察し、暗号通貨投機への冗談として dogecoin.com を取得した。マーカスはその冗談を見つけてパーマーに連絡し、[ライトコイン](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)をフォークすることで動作するチェーンへと作り変えた。

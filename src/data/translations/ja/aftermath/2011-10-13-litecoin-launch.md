@@ -23,6 +23,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
+inlineLinkKeywords:
+  - "ライトコイン"
 ---
 
 2011 年 10 月 13 日、当時 Google のソフトウェアエンジニアで BitcoinTalk のハンドル `coblee` で活動していたチャーリー・リーは、ライトコイン (LTC) のジェネシスブロックを採掘してチェーンをローンチした。その 6 日前 (10 月 7 日)、彼は BitcoinTalk でプロジェクトを発表し、litecoin.org でバイナリを公開していた。

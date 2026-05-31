@@ -23,6 +23,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
+inlineLinkKeywords:
+  - "Litecoin"
 ---
 
 On October 13, 2011, Charlie Lee — then a Google software engineer who had been active on BitcoinTalk under the handle `coblee` — launched Litecoin (LTC) by mining its genesis block. Six days earlier, on October 7, he had announced the project on BitcoinTalk with binaries available on the litecoin.org website.
