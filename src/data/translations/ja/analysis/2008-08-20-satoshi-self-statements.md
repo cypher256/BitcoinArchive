@@ -111,7 +111,33 @@ translationStatus: complete
 
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
-| 「私はドリアン・ナカモトではない」 | [Newsweek 報道後の P2P Foundation プロフィール投稿](/BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) | 2014-03-07 | 真正性議論あり。投稿が元のサトシ本人かどうかは未確定 |
+| 「私はドリアン・ナカモトではない」 | [Newsweek 報道後の P2P Foundation プロフィール投稿](/BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) | 2014-03-07 | 真正性議論あり。 投稿が元のサトシ本人かどうかは未確定 |
+
+### 1.6 公開前期間に関する自己発言 (記録された 11 の言及)
+
+上の小節は*自己開示の種類*で発言を分類している。 本小節はそのうちの一部を *サトシが公開前作業について何かを言った時期*で並べ直したもの ― 2009 年 1 月 9 日の v0.1 リリースまで誰にも知られず進行した設計とコーディングの取り組みについての言及。 11 の記録された言及がこの期間に関わる: 5 つは作業中のもの (2008 年 8 月 〜 2009 年 7 月)、 4 つは事後のもの (2010 年 6 月 〜 2011 年 1 月)、 最古の 2 つはサイファーパンク系譜に関する知識の問いの年代的枠組みも固定する。 日付順:
+
+| # | 日付 (UTC) | 宛先または媒体 | 時期・順序に関する発言 | この発言が直接確定すること (解釈ではなく utterance fact) |
+|---|---|---|---|---|
+| D1 | 2008-08-20 | → [アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation/) | 「あなたの Hashcash 論文を参考文献として引用する論文をリリースする準備をしている」 + 「C++ 実装もほぼ完成しており、 オープンソースとしてリリース予定だ」 | 2008 年 8 月 20 日時点の表現: 論文公開準備中、 C++ 実装は「ほぼ完成」 |
+| D2 | 2008-08-21 | → [アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) | 「ありがとう、 b-money のページは知らなかったが、 私のアイデアはまさにその地点から始まっている」 | 2008 年 8 月 21 日時点の知識状態: b-money はバックの紹介まで未知。 設計の出発点は「まさにその地点」 と表現 |
+| D3 | 2008-08-22 | → [ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 「あなたの b-money ページを非常に興味深く読んだ。 あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしている」 | 2008 年 8 月 22 日時点の表現: 自身の作業を「完全に動作するシステム」 と記述 |
+| D4 | 2008-10-31 | [cryptography メーリングリスト (告知投稿)](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) | 「新しい電子キャッシュシステムに取り組んでいる。 完全な P2P 方式で、 信頼された第三者を必要としない」 | 最初の公開告知が「取り組んでいる」 を使用 (英文原文は present-perfect "I've been working on")。 過去から続く作業を含意するが、 期間は明示しない |
+| D5 | 2008-11-09 | → [ハル・フィニー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/) | 「ご質問をありがたく思う。 実は私はこれを逆の順序で行った。 すべての問題を解決できると自分を納得させるために、 まずすべてのコードを書き、 その後論文を書いた」 | 作業順序: コードを先に書き、 その後で論文 |
+| D6 | 2008-11-17 | [cryptography メーリングリスト (ジェームズ・A・ドナルドへの返信)](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 「コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきた」 | コーディングの期間を「1 年半」 と呼称 |
+| D7 | 2009-07-21 | → [マルッティ・マルミ](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 「18 か月の開発の後で一息つく必要がある」 | 期間を「18 か月」 と呼称 (この表現が示す範囲がコーディング期間と一致するかは表現上開いている) |
+| D8 | 2010-06-17 | [BitcoinTalk 返信](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-195/2010-06-17-re-transactions-and-scripts-dup-hash160-equalverify-checksig/) | 「この設計は、 私が何年も前に設計した非常に多様なトランザクション種別をサポートする」 | 設計は「何年も前に」 行われた ― トランザクション種別の設計作業を発言時点より前に位置づける |
+| D9 | 2010-06-18 | [BitcoinTalk でのラズロ・ハニエツへの返信](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig/) | 「2007 年から。 ある時点で、 一切の信頼を必要とせずにこれを実現する方法があると確信し、 考え続けずにはいられなかった。 作業の大部分は設計であり、 コーディングはそれより少なかった」 | 「この設計にどれくらい取り組んできたか」 への返答:「2007 年から」。 設計とコーディングを別個の (かつより長い) 作業として明示的に区別 |
+| D10 | 2010-07-18 | [BitcoinTalk 返信](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-18-re-msvc-build-and-sha-256/) | 「これを書いた 2 年以上前は、 SHA1 の実装は猛烈に速いものが多数あったが、 SHA256 はあまり注目されていなかった」 | 「2 年以上前」 ― ある特定の実装上の選択 (ビットコイン内の SHA-256 ルーチン) を 2008 年半ば以前に位置づける |
+| D11 | 2011-01-10 | → [マイク・ハーン](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/) | 「正直に言うと、 このプロジェクトはリリース前に 2 年間の開発を要した」 | 期間を「2 年」 と呼称 |
+
+これら 11 の発言は別個の 3 つの事柄に関わる:
+
+- **作業順序**。 D5 がコード先・論文後の順序を述べる唯一の自己発言
+- **期間**。 D6 と D7 は「1 年半」「18 か月」 を同時期にほぼ近接して述べ、 D11 は「2 年」 を retrospective に述べ、 D8 / D9 / D10 は作業の一部をさらに過去に位置づける。 これらを単一の canonical な数値に統合するのは、 サトシが異なる文脈・異なる時期に用いた phrase を混同することになる。 保守的な読みは、 サトシが同時期に言及したコーディング期間 (D6, D7) が 2007 年半ばから v0.1 リリース付近までおおむね走り、 設計作業は後の枠付け (D8, D9, D11) によれば 2007 年内のより早い時点で始まり並行して走っていた、 というもの
+- **設計とコーディングの区別**。 D9 がこの 2 つを明示的に区別する唯一の発言。 「1.5 年のコーディング」 と「2 年の開発」 を単一の時間軸数値に統合しない canonical な理由がここにある
+
+D1〜D11 のいずれも確定しないこと: 月単位精度の暦上の着手日、 「設計」 (コーディングとは別) の暦上の終了日、 ホワイトペーパー時点の「信頼の代わりに」 という枠付けを超える動機、 単独開発者か否か、 地理的位置 ― いずれも本小節ではなく隣接する分析で扱われる。
 
 ## 2. カテゴリー別の読解
 
