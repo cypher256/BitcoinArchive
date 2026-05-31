@@ -109,7 +109,7 @@ Patterson's silence on the identity claim is information. If she knew the hypoth
 
 ### 3.3 KU Leuven workload
 
-Sassaman was an active PhD candidate at KU Leuven during 2008–2011 — the period of Bitcoin's development and early operation. The 18 months of intensive Bitcoin development (mid-2007 through the v0.1 release in January 2009 — implementation work substantially complete by August 2008, [per Satoshi's own documented timeline](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)) overlap with the period a PhD candidate at COSIC would normally be at the highest workload of their academic career. The hypothesis requires Sassaman to have done both — the PhD work *and* an 18-month intensive Bitcoin-development effort — concurrently. Possible, but not without cost.
+Sassaman was an active PhD candidate at KU Leuven during 2008–2011 — the period of Bitcoin's development and early operation. The approximately 18 months of intensive Bitcoin coding (mid-2007 through the v0.1 release in January 2009 — implementation work substantially complete by August 2008, [per Satoshi's own documented timeline](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), and the broader pre-release design period Satoshi later described as "Since 2007" and "2 years of development before release", overlap with the period a PhD candidate at COSIC would normally be at the highest workload of their academic career. The hypothesis requires Sassaman to have done both — the PhD work *and* a multi-year intensive Bitcoin design-and-coding effort — concurrently. Possible, but not without cost.
 
 ## 4. Within the broader documentary record
 

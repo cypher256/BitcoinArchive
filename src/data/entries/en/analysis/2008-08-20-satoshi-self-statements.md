@@ -129,7 +129,7 @@ The profile claims are best read as **declared identity material that the rest o
 
 These are the most evidentially valuable self-references because they are casual asides in technical conversation, not formal identity declarations:
 
-- The "year and a half" timeline (cryptography ML 2008-11-17 + Malmi 2009-07-21) places development work in roughly mid-2007 onward.
+- The "year and a half" timeline (cryptography ML 2008-11-17 + Malmi 2009-07-21) names an approximately 18-month coding span running from mid-2007 to roughly the v0.1 release in January 2009. Satoshi later described a broader design window inside which the coding sat: "Since 2007. ... Much more of the work was designing than coding." (BitcoinTalk reply to Laszlo Hanyecz, June 18, 2010) and "this project was 2 years of development before release" (email to Mike Hearn, January 10, 2011). The coding-period and design-period framings are both Satoshi's own; treating them as one number conflates two distinct spans.
 - The "I wasn't aware of the b-money page" disclosure (Adam Back 2008-08-21) bounds Satoshi's exposure to the cypherpunk technical lineage during development — analyzed in detail in [the cypherpunk independent-arrival entry](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 - The first-person authorship statements ("I'm getting ready to release a paper..." to Back; "I've developed... Bitcoin" on P2P Foundation) consistently attribute the work to a single individual, not a team.
 
@@ -161,7 +161,7 @@ The disputed 2014 P2P Foundation post is the single ambiguous addition: brief, c
 
 **Established by Satoshi's own statements:**
 
-- Design timeline: roughly mid-2007 to August 2008 for the implementation work
+- Implementation-work timeline: roughly mid-2007 to August 2008 (a narrower window than the overall pre-release design period, which Satoshi later described as "Since 2007" and "2 years of development before release")
 - Knowledge boundary at development time: knew Hashcash, did not know b-money
 - Operational state during launch week: location-contingent connection constraint
 - Expertise profile: more comfortable on Windows than Linux

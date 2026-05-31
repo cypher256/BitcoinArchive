@@ -123,9 +123,9 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 
 ## 2. What Satoshi documented knowing — and not knowing — during the development period
 
-### 2.1 The 18-month claim
+### 2.1 The coding-period statements and the broader design window
 
-Satoshi dated the development period twice in the public record.
+Satoshi referenced the duration of his Bitcoin work in the public record several times. Two are coding-period framings.
 
 On November 17, 2008, 17 days after the whitepaper was posted, on the cryptography mailing list ([archived post](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)):
 
@@ -137,7 +137,19 @@ On July 21, 2009, in a private email to Martti Malmi ([archived](/BitcoinArchive
 <!-- speaker: Satoshi Nakamoto -->
 > "need a break from it after 18 months development"
 
-Both statements place the start of design work around mid-2007.
+Read together, these two locate an approximately 18-month coding period whose end-point sits around the v0.1 release in January 2009, with the start in mid-2007.
+
+Two later statements broaden the picture. On June 18, 2010, asked by Laszlo Hanyecz on BitcoinTalk how long he had been working on the design, Satoshi [replied](/BitcoinArchive/entries/forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig/):
+
+<!-- speaker: Satoshi Nakamoto -->
+> "Since 2007. At some point I became convinced there was a way to do this without any trust required at all and couldn't resist to keep thinking about it. Much more of the work was designing than coding."
+
+And on January 10, 2011, in a private email to Mike Hearn about ECDSA key sizes ([archived](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/)):
+
+<!-- speaker: Satoshi Nakamoto -->
+> "I must admit, this project was 2 years of development before release"
+
+By Satoshi's own framing, the design period was longer than the coding period and began earlier. The "approximately 18 months" measures coding; "Since 2007" and "2 years of development before release" describe a broader span that the coding sat inside.
 
 ### 2.2 What was known during that period
 
@@ -215,7 +227,7 @@ This matters because it limits how strong a claim the alignment in §3 can suppo
 
 ## 6. Summary
 
-- During the 18-month Bitcoin development period (mid-2007 to the v0.1 release in January 2009 — implementation work substantially complete by August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
+- During the Bitcoin development window (approximately 18 months of coding from mid-2007 to the v0.1 release in January 2009 per Satoshi's contemporaneous statements, set within the broader "Since 2007" / "2 years of development before release" design period Satoshi described later — implementation work substantially complete by August 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
 - Wei Dai's 2014 retrospective adds a second independent constraint: Satoshi was probably not previously active in cypherpunk communities, by an identifiability argument.
 - Satoshi's documented practice in 2008-2011 maps point-by-point onto the six-axis cypherpunk philosophical core articulated in Eric Hughes's 1993 *A Cypherpunk's Manifesto*.
 - The most parsimonious reading is *independent arrival* — convergence on the same answers from outside the visible community — but the question of passive readership remains open in the public record.
