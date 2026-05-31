@@ -2,17 +2,44 @@
  * rehype-mermaid-wrapper.mjs
  *
  * Wraps each `<svg id="mermaid-N">` element produced by `rehype-mermaid`
- * in a `<div class="mermaid-scroll">` so the SVG can render at its
- * natural pixel width while the wrapper provides horizontal scroll on
- * overflow. Without this, dense timelines (e.g. 20+ events across 17
- * years) get squashed into the prose container width and the text
- * becomes unreadable.
+ * in the unified figure-block structure:
+ *
+ *   <div class="figure-outer">
+ *     <figure class="figure-block" data-kind="mermaid">
+ *       <svg id="mermaid-N">...</svg>
+ *     </figure>
+ *   </div>
+ *
+ * The block lets the SVG render at its natural pixel width while
+ * providing horizontal scroll on overflow. The outer enables
+ * viewport-edge breakout at viewport >= 1500px (1.5 × --max-width-read).
+ * See `src/styles/global.css` § "Figure block" and TODO
+ * `0531_図表overflowとコンテナ幅.md`.
  *
  * Run this AFTER rehype-mermaid in the rehype pipeline.
  */
 import { visit } from 'unist-util-visit';
 
 const MERMAID_ID_PREFIX = 'mermaid-';
+
+function isFigureOuter(node) {
+  return (
+    node?.type === 'element' &&
+    node.tagName === 'div' &&
+    Array.isArray(node.properties?.className) &&
+    node.properties.className.includes('figure-outer')
+  );
+}
+
+function isMermaidFigureBlock(node) {
+  return (
+    node?.type === 'element' &&
+    node.tagName === 'figure' &&
+    Array.isArray(node.properties?.className) &&
+    node.properties.className.includes('figure-block') &&
+    node.properties?.['data-kind'] === 'mermaid'
+  );
+}
 
 export function rehypeMermaidWrapper() {
   return (tree) => {
@@ -25,21 +52,29 @@ export function rehypeMermaidWrapper() {
         !node.properties.id.startsWith(MERMAID_ID_PREFIX)
       ) return;
 
-      // Skip if already wrapped (idempotent)
-      if (
-        parent.type === 'element' &&
-        parent.tagName === 'div' &&
-        Array.isArray(parent.properties?.className) &&
-        parent.properties.className.includes('mermaid-scroll')
-      ) return;
+      // Skip if already wrapped (idempotent). After the first pass the
+      // svg's direct parent is the figure.figure-block, NOT the outer
+      // div, so we must check the immediate parent for the figure-block
+      // signature too — otherwise a re-run would double-wrap.
+      if (isFigureOuter(parent)) return;
+      if (isMermaidFigureBlock(parent)) return;
 
-      const wrapper = {
+      const figure = {
         type: 'element',
-        tagName: 'div',
-        properties: { className: ['mermaid-scroll'] },
+        tagName: 'figure',
+        properties: {
+          className: ['figure-block'],
+          'data-kind': 'mermaid',
+        },
         children: [node],
       };
-      parent.children[index] = wrapper;
+      const outer = {
+        type: 'element',
+        tagName: 'div',
+        properties: { className: ['figure-outer'] },
+        children: [figure],
+      };
+      parent.children[index] = outer;
       // Don't descend into the wrapped svg (it's the same node we just moved).
       return ['skip'];
     });

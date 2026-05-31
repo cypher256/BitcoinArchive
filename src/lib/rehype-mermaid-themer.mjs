@@ -37,8 +37,9 @@
  *
  * # How it works
  *
- * 1. We only touch SVGs that sit inside the `<div class="mermaid-scroll">`
- *    wrapper produced by `rehype-mermaid-wrapper`. Arbitrary inline SVG
+ * 1. We only touch SVGs that sit inside the
+ *    `<figure class="figure-block" data-kind="mermaid">` wrapper
+ *    produced by `rehype-mermaid-wrapper`. Arbitrary inline SVG
  *    elsewhere on the page is ignored.
  * 2. For each matched SVG, we walk every descendant. The inline
  *    `<style>` text node, plus all `style=` / `fill=` / `stroke=`
@@ -53,7 +54,7 @@
  *    `black`, `red`, etc.). After one pass those literals have been
  *    replaced by `var(--mermaid-...)` strings, so a second pass finds
  *    nothing to rewrite.
- * 5. The wrapping `<div class="mermaid-scroll">` gets `mermaid-themed`
+ * 5. The wrapping `<figure class="figure-block">` gets `mermaid-themed`
  *    appended to its className list so it is easy to verify the plugin
  *    ran (visible in DevTools).
  *
@@ -62,7 +63,8 @@
  * Add to `rehypePlugins` AFTER `rehype-mermaid` (= the SVG must already
  * exist) AFTER `rehype-mermaid-link` (= we don't care about anchors but
  * placing this last is least disruptive) and AFTER
- * `rehype-mermaid-wrapper` (= we use `.mermaid-scroll` as the marker).
+ * `rehype-mermaid-wrapper` (= we use `.figure-block[data-kind="mermaid"]`
+ * as the marker).
  *
  * # Mapping table
  *
@@ -409,11 +411,11 @@ function rewriteSvgTree(root) {
   }
 }
 
-function isMermaidScrollWrapper(node) {
-  if (!node || node.type !== 'element' || node.tagName !== 'div') return false;
+function isMermaidFigureBlock(node) {
+  if (!node || node.type !== 'element' || node.tagName !== 'figure') return false;
   const cls = node.properties?.className;
-  if (!Array.isArray(cls)) return false;
-  return cls.includes('mermaid-scroll');
+  if (!Array.isArray(cls) || !cls.includes('figure-block')) return false;
+  return node.properties?.['data-kind'] === 'mermaid';
 }
 
 function findMermaidSvg(wrapper) {
@@ -435,15 +437,15 @@ function findMermaidSvg(wrapper) {
 export function rehypeMermaidThemer() {
   return (tree) => {
     visit(tree, 'element', (node) => {
-      if (!isMermaidScrollWrapper(node)) return;
+      if (!isMermaidFigureBlock(node)) return;
       const svg = findMermaidSvg(node);
       if (!svg) return;
 
       // Rewrite the SVG (style block + per-element style/fill/stroke).
       rewriteSvgTree(svg);
 
-      // Mark the wrapper so it is obvious in DevTools that the plugin
-      // ran. Idempotent: skipped if already present.
+      // Mark the figure-block so it is obvious in DevTools that the
+      // plugin ran. Idempotent: skipped if already present.
       const cls = node.properties?.className;
       if (Array.isArray(cls) && !cls.includes('mermaid-themed')) {
         cls.push('mermaid-themed');

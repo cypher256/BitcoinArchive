@@ -115,13 +115,16 @@ export default defineConfig({
       // diagrams follow the active `data-theme` / `data-mode`. Must run
       // AFTER both rehype-mermaid-link (so it doesn't recolour the new
       // <a> wrappers — anchors carry no color attributes anyway) and
-      // rehype-mermaid-wrapper (so the themer can use `.mermaid-scroll`
-      // as the marker for which SVGs to touch).
+      // rehype-mermaid-wrapper (so the themer can use
+      // `.figure-block[data-kind="mermaid"]` as the marker for which
+      // SVGs to touch).
       rehypeMermaidThemer,
-      // Wrap each <table> in `<div class="table-scroll">` so wide tables
-      // scroll horizontally inside the wrapper instead of pushing the
-      // whole page into a body-level horizontal scroll on small
-      // viewports. See `.table-scroll` CSS in `src/styles/global.css`.
+      // Wrap each <table> in the unified figure wrapper
+      // (`<div class="figure-outer"><figure class="figure-block"
+      // data-kind="table">`) so wide tables scroll horizontally inside
+      // the block instead of pushing the whole page into a body-level
+      // horizontal scroll on small viewports. See `.figure-block`
+      // CSS in `src/styles/global.css`.
       rehypeTableWrapper,
     ],
     // Tell Shiki to skip 'mermaid' code blocks. Without this, Shiki converts
