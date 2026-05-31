@@ -82,8 +82,10 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 <div class="fork-genealogy">
   <h3>{l.title}</h3>
   <p class="chart-sub">{l.subtitle}</p>
-  <div class="chart-scroll">
-    <div id="fork-genealogy-chart" class="chart-container"></div>
+  <div class="figure-outer">
+    <figure class="figure-block" data-kind="chart">
+      <div id="fork-genealogy-chart" class="chart-container"></div>
+    </figure>
   </div>
 
   <script type="application/json" id="fork-genealogy-data" is:inline set:html={JSON.stringify({
@@ -212,7 +214,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       var chartHeight = laneHeight * chains.length + margin.top + margin.bottom;
 
       // Aim for ~1100px natural width; container scrolls horizontally on
-      // narrower viewports via .chart-scroll { overflow-x: auto }.
+      // narrower viewports via .figure-block { overflow-x: auto }.
       var containerWidth = container.clientWidth || 800;
       var chartWidth = Math.max(containerWidth, 1080);
 
@@ -466,40 +468,17 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     margin-top: 0;
     margin-bottom: 1rem;
   }
-  .fork-genealogy .chart-scroll {
-    position: relative;
-    overflow-x: auto;
-    overflow-y: hidden;
-    background: var(--color-bg-alt);
-    border: 1px solid var(--color-divider);
-    border-radius: 4px;
-  }
+  /* Wrapper styles (background, border, overflow, viewport-edge
+     breakout) come from the unified .figure-block + .figure-outer
+     rules in src/styles/global.css (data-kind="chart" variant).
+     Component-local CSS only carries the chart-container min-width
+     (so D3 always has at least 1080px to render into) and the
+     embedded SVG display rule. */
   .fork-genealogy .chart-container {
     position: relative;
     min-width: 1080px;
   }
   .fork-genealogy .chart-container :global(svg) {
     display: block;
-  }
-  /* Capped viewport-breakout, matching .table-scroll (not the uncapped
-     .mermaid-scroll variant). The chart's SVG sizes itself to the
-     wrapper's clientWidth (chartWidth = max(containerWidth, 1080)), so
-     an uncapped wrapper on an ultrawide viewport would stretch the
-     chart linearly with the viewport — months of empty horizontal
-     space and uselessly long bars. The 1200px cap (via min() with the
-     viewport-edge breakout) keeps the chart at a comfortable maximum
-     width regardless of how wide the monitor is, while still giving
-     it more room than the 800px reading tier on normal-sized desktop
-     viewports. Below 1200px the container is fluid; the breakout
-     would push past the viewport edge, so the rule does not apply. */
-  @media (min-width: 1200px) {
-    .fork-genealogy .chart-scroll {
-      --chart-breakout: min(
-        calc((100vw - var(--max-width-read) - 3rem) / 2),
-        calc((var(--max-width-wide) - var(--max-width-read)) / 2)
-      );
-      margin-left: calc(-1 * var(--chart-breakout));
-      margin-right: calc(-1 * var(--chart-breakout));
-    }
   }
 </style>
