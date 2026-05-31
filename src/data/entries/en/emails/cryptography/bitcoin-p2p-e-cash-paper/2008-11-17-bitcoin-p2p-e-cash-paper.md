@@ -80,7 +80,7 @@ sourcecode is coming soon.  I sent you the main files.
 
 Satoshi Nakamoto
 
-*[Editor: Satoshi's "year and a half while coding it" timeline locates the design work between mid-2007 and late 2008 — the same window in which, by his own statement to Wei Dai three months earlier, he was unaware of b-money. This is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
+*[Editor: Satoshi's "year and a half while coding it" timeline names the *coding* span; backward-counting from Nov 17, 2008 locates the start of coding around mid-2007. Satoshi later (BitcoinTalk, 2010-06-18) distinguished design from coding — "Since 2007. ... Much more of the work was designing than coding" — so the broader design period begins inside 2007 and the ~18-month coding sat within it. Either way, the coding window matches the period in which, by Satoshi's own statement to Wei Dai three months earlier, he was unaware of b-money. This is one of the primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
 
 ---------------------------------------------------------------------
 The Cryptography Mailing List

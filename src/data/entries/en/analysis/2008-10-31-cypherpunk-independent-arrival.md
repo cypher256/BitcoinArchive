@@ -160,7 +160,7 @@ Adam Back's reply on August 21, 2008 introduced Satoshi to b-money for the first
 <!-- speaker: Satoshi Nakamoto -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
-This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the 18 months of development he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
+This is a primary-source confirmation, [in Satoshi's own words](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), that during the pre-disclosure phase of the project (the coding period running from mid-2007 to August 2008, set within the broader "Since 2007" design period Satoshi later described) he did not know about b-money — the closest pre-existing proposal in design space. He learned of it only after the system was substantially built, then contacted Wei Dai directly the next day (August 22, 2008) and added the citation as reference [1] to the whitepaper.
 
 ### 2.3 What this constrains
 
@@ -200,7 +200,7 @@ The alignment is unusually tight on all six points. None of the matches is engin
 
 Three observations now sit on the table:
 
-- (a) Satoshi did not know b-money during the 18-month development period (own admission, August 2008).
+- (a) Satoshi did not know b-money during the pre-disclosure coding period (own admission, August 2008).
 - (b) Satoshi was likely not previously active in cypherpunk communities (Wei Dai's identifiability argument, 2014).
 - (c) Satoshi's documented practice maps point-by-point onto the cypherpunk philosophical core (§3 alignment).
 
