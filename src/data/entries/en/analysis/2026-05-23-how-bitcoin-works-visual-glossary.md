@@ -94,43 +94,43 @@ Use this as a lookup table. Each term links to the chapter where it is explained
 
 | Term | One-line meaning | Chapter |
 |---|---|---|
-| Node | A computer running Bitcoin software | [1](#1-what-is-bitcoin-exactly) |
-| Full node | Node holding the whole blockchain and verifying every rule (assumed kind here) | [1](#1-what-is-bitcoin-exactly) |
-| Light node (SPV) | Node downloading only block headers, trusting full nodes for the rest (typical on phones) | [1](#1-what-is-bitcoin-exactly) |
-| Peer-to-peer (P2P) | Direct computer-to-computer network, no central server | [1](#1-what-is-bitcoin-exactly) |
-| Wallet | Software that holds your keys and lets you send/receive bitcoins | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Private key | A secret number; whoever holds it controls the coins | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Public key | A number derived from the private key; safe to share | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Address | A short text string derived from the public key, for receiving coins | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Digital signature | Cryptographic proof that the holder of a private key authorised something | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Transaction | A message that moves coins from one or more inputs to one or more outputs | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Input | A reference to a previous output you are now spending | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Output | A new chunk of coins, locked to a recipient address | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| UTXO | An unspent output — the actual form a "coin" takes | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| BTC / satoshi | The unit (1 BTC = 100,000,000 satoshi) | [3](#3-what-a-coin-actually-is-the-utxo-model) |
-| Block | A batch of transactions, packaged together | [4](#4-blockchain-the-permanent-record) |
-| Hash | A short fingerprint number computed from any data | [4](#4-blockchain-the-permanent-record) |
-| Hash function | The function that produces a hash; tiny input change = totally different hash | [4](#4-blockchain-the-permanent-record) |
-| Blockchain | All the blocks, chained together by hashes, oldest to newest | [4](#4-blockchain-the-permanent-record) |
-| Genesis block | The very first block, Block 0 | [4](#4-blockchain-the-permanent-record) |
-| Block height | The position number of a block in the chain (Block 0 is height 0) | [4](#4-blockchain-the-permanent-record) |
-| Miner | A node that tries to add new blocks | [5](#5-mining-issuance-and-validation) |
-| Mining | The process of trying to add a new block | [5](#5-mining-issuance-and-validation) |
-| Nonce | A number a miner keeps changing to find a valid block hash | [5](#5-mining-issuance-and-validation) |
-| Proof-of-work (PoW) | The puzzle a miner must solve to add a block | [5](#5-mining-issuance-and-validation) |
-| Difficulty | How hard the puzzle currently is | [5](#5-mining-issuance-and-validation) |
-| Coinbase transaction | The special first transaction in a block that creates new bitcoins | [5](#5-mining-issuance-and-validation) |
-| Block reward | New bitcoins minted in the coinbase transaction | [5](#5-mining-issuance-and-validation) |
-| Transaction fee | A small extra amount included with a transaction, paid to the miner | [5](#5-mining-issuance-and-validation) |
-| Miner reward | Block reward + total transaction fees in the block | [5](#5-mining-issuance-and-validation) |
-| Halving | The block reward cut in half every 210,000 blocks (~4 years) | [5](#5-mining-issuance-and-validation) |
-| Mempool | The waiting room of transactions not yet in a block | [6](#6-mempool-the-waiting-room) |
-| Confirmation | One block added on top of yours; more confirmations = more permanent | [6](#6-mempool-the-waiting-room) |
-| Consensus | All nodes agreeing on the same blockchain | [7](#7-consensus-and-tamper-resistance) |
-| Verification | A node checking that a transaction or block follows the rules | [7](#7-consensus-and-tamper-resistance) |
-| Double-spending | The attempt to spend the same coin twice; the problem Bitcoin solves | [7](#7-consensus-and-tamper-resistance) |
-| Tampering | Trying to change a block after the fact | [7](#7-consensus-and-tamper-resistance) |
-| Longest chain | The chain with the most accumulated work; the one all honest nodes follow | [7](#7-consensus-and-tamper-resistance) |
+| Node | A computer running Bitcoin software | [1. What is Bitcoin, exactly?](#1-what-is-bitcoin-exactly) |
+| Full node | Node holding the whole blockchain and verifying every rule (assumed kind here) | [1. What is Bitcoin, exactly?](#1-what-is-bitcoin-exactly) |
+| Light node (SPV) | Node downloading only block headers, trusting full nodes for the rest (typical on phones) | [1. What is Bitcoin, exactly?](#1-what-is-bitcoin-exactly) |
+| Peer-to-peer (P2P) | Direct computer-to-computer network, no central server | [1. What is Bitcoin, exactly?](#1-what-is-bitcoin-exactly) |
+| Wallet | Software that holds your keys and lets you send/receive bitcoins | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Private key | A secret number; whoever holds it controls the coins | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Public key | A number derived from the private key; safe to share | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Address | A short text string derived from the public key, for receiving coins | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Digital signature | Cryptographic proof that the holder of a private key authorised something | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Transaction | A message that moves coins from one or more inputs to one or more outputs | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Input | A reference to a previous output you are now spending | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Output | A new chunk of coins, locked to a recipient address | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| UTXO | An unspent output — the actual form a "coin" takes | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| BTC / satoshi | The unit (1 BTC = 100,000,000 satoshi) | [3. What a coin actually is: the UTXO model](#3-what-a-coin-actually-is-the-utxo-model) |
+| Block | A batch of transactions, packaged together | [4. Blockchain: the permanent record](#4-blockchain-the-permanent-record) |
+| Hash | A short fingerprint number computed from any data | [4. Blockchain: the permanent record](#4-blockchain-the-permanent-record) |
+| Hash function | The function that produces a hash; tiny input change = totally different hash | [4. Blockchain: the permanent record](#4-blockchain-the-permanent-record) |
+| Blockchain | All the blocks, chained together by hashes, oldest to newest | [4. Blockchain: the permanent record](#4-blockchain-the-permanent-record) |
+| Genesis block | The very first block, Block 0 | [4. Blockchain: the permanent record](#4-blockchain-the-permanent-record) |
+| Block height | The position number of a block in the chain (Block 0 is height 0) | [4. Blockchain: the permanent record](#4-blockchain-the-permanent-record) |
+| Miner | A node that tries to add new blocks | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Mining | The process of trying to add a new block | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Nonce | A number a miner keeps changing to find a valid block hash | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Proof-of-work (PoW) | The puzzle a miner must solve to add a block | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Difficulty | How hard the puzzle currently is | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Coinbase transaction | The special first transaction in a block that creates new bitcoins | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Block reward | New bitcoins minted in the coinbase transaction | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Transaction fee | A small extra amount included with a transaction, paid to the miner | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Miner reward | Block reward + total transaction fees in the block | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Halving | The block reward cut in half every 210,000 blocks (~4 years) | [5. Mining: issuance and validation](#5-mining-issuance-and-validation) |
+| Mempool | The waiting room of transactions not yet in a block | [6. Mempool: the waiting room](#6-mempool-the-waiting-room) |
+| Confirmation | One block added on top of yours; more confirmations = more permanent | [6. Mempool: the waiting room](#6-mempool-the-waiting-room) |
+| Consensus | All nodes agreeing on the same blockchain | [7. Consensus and tamper-resistance](#7-consensus-and-tamper-resistance) |
+| Verification | A node checking that a transaction or block follows the rules | [7. Consensus and tamper-resistance](#7-consensus-and-tamper-resistance) |
+| Double-spending | The attempt to spend the same coin twice; the problem Bitcoin solves | [7. Consensus and tamper-resistance](#7-consensus-and-tamper-resistance) |
+| Tampering | Trying to change a block after the fact | [7. Consensus and tamper-resistance](#7-consensus-and-tamper-resistance) |
+| Longest chain | The chain with the most accumulated work; the one all honest nodes follow | [7. Consensus and tamper-resistance](#7-consensus-and-tamper-resistance) |
 
 ## 3. What a coin actually is: the UTXO model
 
