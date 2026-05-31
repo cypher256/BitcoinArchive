@@ -49,7 +49,7 @@ inlineLinkKeywords:
   - "application-specific integrated circuit"
 ---
 
-This entry assumes you know nothing about Bitcoin, nothing about cryptography, and nothing about how computers exchange data. By the time you reach the bottom, you should be able to read the rest of the Archive without getting lost in jargon. Every key term gets a one-line definition the first time it appears, plus a diagram showing where it fits.
+This entry is written to be readable without prior background — no prior knowledge of Bitcoin, cryptography, or how computers exchange data is assumed. By the time you reach the bottom, you should be able to read the rest of the Archive without getting lost in jargon. Every key term gets a one-line definition the first time it appears, plus a diagram showing where it fits.
 
 If you want to look up a single word, jump to the [Quick reference glossary](#2-quick-reference-glossary). Otherwise read top-to-bottom — each chapter assumes only what the previous chapters covered.
 
@@ -327,6 +327,7 @@ The agreement on a single canonical chain across all nodes — emerging from the
 
 The chapters above are the model. From here, every term you saw can be followed deeper:
 
+- The [Bitcoin system design overview](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the design-document index that expands every term in this entry across eleven areas (consensus, blockchain, P2P network, wallet, cryptography, transaction, monetary, security, storage, architecture evolution, ecosystem). Start here for a systematic deep dive.
 - The [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — the original 8-page description Satoshi published in October 2008. Now that you have the terms, it is short and readable.
 - The [genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) — what Satoshi etched into the very first block, and why.
 - The [genesis block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) — the technical story of how Block 0 was constructed and why its 50 BTC reward can never move.
