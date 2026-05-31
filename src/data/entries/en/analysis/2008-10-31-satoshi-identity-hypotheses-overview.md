@@ -77,6 +77,7 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
+  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 inlineLinkKeywords:
   - "Satoshi Nakamoto candidates"
   - "Satoshi Nakamoto identity candidates"

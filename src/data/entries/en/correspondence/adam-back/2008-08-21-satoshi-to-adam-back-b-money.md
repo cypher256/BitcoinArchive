@@ -36,6 +36,8 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2008-08-20T17:30:39Z"
     sourceEntryId: "correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation"
+relatedEntries:
+  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 ---
 
 Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.  I'll e-mail him to confirm the year of publication so I can credit him.

@@ -51,6 +51,7 @@ relatedEntries:
   - "aftermath/2016-05-02-craig-wright-biography"
   - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
   - "analysis/2008-10-31-bitcoin-digital-gold-structural-features"
+  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 inlineLinkKeywords:
   - "5日間の空白"
   - "5 日間の空白"

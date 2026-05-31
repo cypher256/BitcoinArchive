@@ -297,6 +297,8 @@ export const tagTranslations: Record<string, string> = {
   'security-breach': 'セキュリティ侵害',
   'security-budget': 'セキュリティ予算',
   'self-statements': '自己言及',
+  'evidence-tiering': '証拠の段階分け',
+  'pre-release-period': 'リリース前期間',
   'smart-contracts': 'スマートコントラクト',
   'soft-fork': 'ソフトフォーク',
   'software': 'ソフトウェア',

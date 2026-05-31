@@ -71,6 +71,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 inlineLinkKeywords:
   - "匿名性のアーキテクチャ"
   - "サトシ匿名性のアーキテクチャ"

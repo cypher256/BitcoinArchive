@@ -30,6 +30,7 @@ quotes:
 relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 ---
 
 <!-- speaker: James A. Donald -->

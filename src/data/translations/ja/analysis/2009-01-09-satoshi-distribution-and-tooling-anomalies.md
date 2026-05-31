@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-activity-timeline
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
+  - analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said
 inlineLinkKeywords:
   - ".rar パッケージング"
   - "Warez シーン慣習との重なり"

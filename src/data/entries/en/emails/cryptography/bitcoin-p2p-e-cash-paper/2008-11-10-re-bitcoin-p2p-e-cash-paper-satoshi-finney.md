@@ -25,6 +25,8 @@ quotes:
     personSlug: "hal-finney"
     date: "2008-11-07T23:40:12Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
+relatedEntries:
+  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 ---
 
 <!-- speaker: Hal Finney -->

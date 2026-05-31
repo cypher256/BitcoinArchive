@@ -27,6 +27,7 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "aftermath/2008-08-20-satoshi-to-adam-back"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
+  - "analysis/2026-05-31-satoshi-pre-release-period-what-can-be-said"
 translationStatus: complete
 ---
 
