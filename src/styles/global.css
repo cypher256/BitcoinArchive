@@ -557,14 +557,15 @@ hr {
   margin: 2em 0;
 }
 
-/* Table sizing — pairs with `.table-scroll` (rehype-table-wrapper.mjs).
+/* Table sizing — pairs with `.figure-block[data-kind="table"]`
+   (rehype-table-wrapper.mjs).
    - `width: auto` lets the table size to its content: a narrow table
      stays narrow (no forced 100% stretch), a wider table grows to
      fill the wrapper and overflows into horizontal scroll only when
      it exceeds the wrapper.
-   The pairing is the same pattern as `.mermaid-scroll` for figures:
-   the wrapper handles overflow + viewport breakout, the inner element
-   sizes to its natural content. */
+   The figure-block + figure-outer pattern is shared with mermaid and
+   d3 chart wrappers: the block handles overflow + viewport breakout
+   while the inner element sizes to its natural content. */
 table {
   width: auto;
   border-collapse: collapse;
@@ -618,7 +619,7 @@ table td {
   table:not(:has(tr > :nth-child(4))) td {
     max-width: none;
   }
-  .table-scroll > table:not(:has(tr > :nth-child(4))) {
+  .figure-block[data-kind="table"] > table:not(:has(tr > :nth-child(4))) {
     width: auto;
     min-width: 0;
   }
@@ -644,39 +645,100 @@ th {
   font-weight: 600;
 }
 
-/* Table overflow wrapper — applied by `rehype-table-wrapper.mjs`.
-   Scrollbar appears only when the table is wider than this wrapper
-   (i.e., wider than the prose container); narrow tables show no
-   scrollbar. Prevents wide tables from triggering body-level
-   horizontal scroll on small viewports. */
-.table-scroll {
+/* ----------------------------------------------------------------
+   Figure block — unified wrapper for mermaid / table / d3 chart.
+   Replaces the prior .mermaid-scroll / .table-scroll / .chart-scroll
+   trio. data-kind distinguishes type for kind-specific selectors.
+   Applied by rehype-mermaid-wrapper.mjs, rehype-table-wrapper.mjs,
+   and per-component for d3 (e.g. BitcoinForkGenealogy.astro).
+   See STYLE_GUIDE.md § Layout Width Policy → Figure overflow.
+
+   Structure:
+     <div class="figure-outer">
+       <figure class="figure-block" data-kind="mermaid|table|chart">
+         <svg|table|div>...</...>
+       </figure>
+     </div>
+
+   - .figure-outer: provides breakout context. Below 1500px viewport
+     it sits flush with .container; at ≥ 1500px (= 1.5×
+     --max-width-read) it extends to viewport edges so wide figures
+     can use the full horizontal room.
+   - .figure-block: the visible "figure" with border + background +
+     padding. Sized per-kind. Scrolls horizontally when content
+     exceeds its width.
+
+   Threshold rationale: 1.5× container avoids the "微妙にずれてる"
+   gata zone (1100-1499px) where small breakouts visually mis-align
+   with prose. At ≥ 1500px the breakout is wide enough to read as
+   "intentional figure block" not "misaligned column". */
+.figure-outer {
+  margin-block: 1.5em;
+}
+@media (min-width: 1500px) {
+  .figure-outer {
+    margin-inline: calc((100vw - 100%) / -2);
+  }
+}
+
+/* Visual block: explicit margin override kills the <figure>
+   UA-stylesheet default 16px left/right margin. box-sizing:
+   border-box + max-width: 100% keeps padding + border from
+   pushing past the parent's width. */
+.figure-block {
+  box-sizing: border-box;
+  margin: 0 auto;
   overflow-x: auto;
-  margin: 1em 0;
-  /* Use the border token for the scrollbar so it matches whichever
-     theme is active. In dark mode the default OS scrollbar reads as
-     a bright stripe against the dark background; this overrides it
-     to a translucent bar that blends with the rest of the border
-     treatment. Width stays at OS default. */
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  border-radius: 6px;
+  padding: 0.5rem;
   scrollbar-color: var(--color-border) transparent;
 }
-.table-scroll > table {
-  /* `width: max-content` + `min-width: 100%` is the responsive table
-     idiom: short tables expand to fill the wrapper (no left-stuck
-     narrow box) and long tables size to their natural content
-     width and overflow the wrapper, where `.table-scroll`'s
-     `overflow-x: auto` provides horizontal scroll. This stops
-     narrow viewports from squeezing wide multi-column matrices
-     (e.g. 10-col candidate profile) into 1ch columns where the
-     label cells render as one character per line. */
+
+/* Kind-specific sizing:
+   - mermaid / table: SVG / TABLE render at natural pixel width,
+     so the block sizes to content (max-content) and never wider
+     than wrapper (max-width: 100%).
+   - chart (d3): SVG is sized by D3 to clientWidth, so the block
+     must be width: 100% (not max-content) for the chart to use
+     the available room. position: relative + overflow-y: hidden
+     supports the existing tooltip pattern. */
+.figure-block[data-kind="mermaid"],
+.figure-block[data-kind="table"] {
+  width: max-content;
+  max-width: 100%;
+}
+.figure-block[data-kind="chart"] {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+/* Tables already carry per-cell borders that define the figure's
+   visual area; an outer block border + background creates a
+   visible double border. Strip the wrapper styling for tables —
+   the scroll wrapper still works, just without redundant chrome.
+   Mermaid and chart figures keep the wrapper styling because their
+   inner content (SVG) has no native border. */
+.figure-block[data-kind="table"] {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* Table inside figure-block: `width: max-content; min-width: 100%`
+   is the responsive table idiom — short tables expand to fill the
+   block (no left-stuck narrow box), long tables size to natural
+   content and overflow the block where its `overflow-x: auto`
+   provides horizontal scroll. */
+.figure-block[data-kind="table"] > table {
   display: table;
   width: max-content;
   min-width: 100%;
   margin: 0;
 }
-/* No viewport breakout: the table stays in the same column flow
-   as the surrounding prose. Without this, on viewports ≥ 1200px
-   the wrapper used to bleed past the prose left/right edges,
-   making the table look misaligned vs the body paragraphs. */
 
 /* Utility */
 .container {
@@ -983,35 +1045,27 @@ a[href^="#"]:hover {
 }
 
 /* Mermaid SVGs render at natural pixel size (rehype-mermaid is configured
-   with useMaxWidth: false). The wrapper provides horizontal scroll for
-   charts that exceed the prose container, so dense timelines stay
-   readable instead of getting squashed into ~800px of width. */
-.mermaid-scroll {
-  overflow-x: auto;
-  margin: 1.5em 0;
-  /* Match `.table-scroll`: blend the scrollbar with the active
-     theme's border token instead of using the bright OS default
-     (which is very visible against the dark mode background). */
-  scrollbar-color: var(--color-border) transparent;
-}
-.mermaid-scroll > svg[id^="mermaid-"] {
+   with useMaxWidth: false). The figure-block wrapper provides horizontal
+   scroll for charts that exceed the wrapper width. See the figure-block
+   base rules above for sizing / breakout behavior. */
+.figure-block[data-kind="mermaid"] > svg[id^="mermaid-"] {
   display: block;
-  /* Keep SVG centered within the wrapper when it's narrower than the
-     container; let it overflow (and scroll) when wider. */
+  /* Keep SVG centered within the block when it's narrower; let it
+     overflow (and scroll inside the block) when wider. */
   margin: 0 auto;
 }
+
 /* Thicken flowchart edge lines from 1px to 2.5px so diagonal segments
    render with more anti-aliased pixels per row — the staircase
    aliasing visible at full-opacity 1px stroke widths is much less
    noticeable on a thicker line. Combined with the 30% alpha
    on `--mermaid-edge` (color-mix in :root), the edges read clearly
-   without looking heavy. */
-.mermaid-scroll svg path.flowchart-link {
-  /* `!important` to override the per-instance `<style>` block Mermaid
-     emits inside each SVG (e.g. `#mermaid-NN .flowchart-link { stroke-
-     width: 1px }`), which wins on specificity against an external rule. */
+   without looking heavy. `!important` to override the per-instance
+   `<style>` block Mermaid emits inside each SVG. */
+.figure-block[data-kind="mermaid"] svg path.flowchart-link {
   stroke-width: 2.5 !important;
 }
+
 /* Mermaid emits `<br/>` line breaks inside flowchart node labels (and
    gantt / state / class diagrams that also use HTML labels). hast-util-to-html
    serializes the SVG subtree in 'svg' mode, where `<br>` is not in the void-
@@ -1031,24 +1085,20 @@ a[href^="#"]:hover {
    Pure CSS workaround because rehype-raw is not in this project's
    pipeline, so a HAST-level substitution to a raw `<br>` would be dropped
    during serialization. */
-.mermaid-scroll svg foreignObject p br:nth-of-type(even) {
+.figure-block[data-kind="mermaid"] svg foreignObject p br:nth-of-type(even) {
   display: none;
 }
-/* No viewport breakout for Mermaid: figures stay inside the
-   reading-tier container (`--max-width-read` = 1000px) and align
-   with the surrounding prose. If a diagram is wider than the
-   container, the wrapper's `overflow-x: auto` provides horizontal
-   scroll inside the column. */
+
 /* Tighten the gap when an immediately-preceding paragraph contains only a
    <strong> (the title-above-diagram convention from STYLE_GUIDE.md
    "Mermaid diagram titles outside the block"). The bold paragraph
    functions as a heading for the diagram; treating it as a separate
    block of prose with full 1.5em + paragraph margin produces too much
    white space between the title and the chart. */
-p:has(> strong:only-child) + .mermaid-scroll {
+p:has(> strong:only-child) + .figure-outer:has([data-kind="mermaid"]) {
   margin-top: 0.25em;
 }
-p:has(> strong:only-child):has(+ .mermaid-scroll) {
+p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
   margin-bottom: 0.25em;
 }
 
