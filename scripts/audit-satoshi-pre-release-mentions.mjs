@@ -64,11 +64,18 @@ const patternGroups = [
   },
   {
     key: 'duration-eighteen-months',
-    re: /(1\s*年半|一年半|18\s*(?:か月|ヶ月|カ月)|十八(?:か月|ヶ月|カ月))|\b(1\.5\s*years?|one and a half years?|eighteen\s+months|18\s+months)/i,
+    // Canonical Satoshi self-statements:
+    //   2008-11-17 cryptography list: "last year and a half while coding it"
+    //   2009-07-21 to Malmi: "after 18 months development"
+    re: /(1\s*年半|一年半|18\s*(?:か月|ヶ月|カ月)|十八(?:か月|ヶ月|カ月))|\byear and a half\b|\b(1\.5\s*years?|one and a half years?|eighteen\s+months|18\s+months)/i,
   },
   {
     key: 'reverse-order',
-    re: /(逆順|コード(?:が|を)?先|論文(?:が|を)?後)|\b(reverse order|coded.{0,20}first|wrote.{0,40}before.{0,30}(paper|whitepaper)|finished.{0,40}before.{0,30}(paper|whitepaper)|code.{0,20}before.{0,20}(the\s+)?(paper|whitepaper))/i,
+    // Canonical Satoshi self-statement (2008-11-10 to Finney):
+    //   "I actually did this kind of backwards. I had to write all the code
+    //    before I could convince myself that I could solve every problem,
+    //    then I wrote the paper."
+    re: /(逆順|コード(?:が|を)?先|論文(?:が|を)?後|順序が逆|逆の順)|\b(reverse order|coded.{0,20}first|wrote.{0,40}before.{0,30}(paper|whitepaper)|finished.{0,40}before.{0,30}(paper|whitepaper)|code.{0,20}before.{0,20}(the\s+)?(paper|whitepaper)|did this.{0,10}backwards|kind of backwards|had to write.{0,20}(all the )?code.{0,20}before|wrote the (paper|whitepaper).{0,40}(after|later)|code.{0,40}before.{0,40}paper)/i,
   },
   {
     key: 'pre-launch-period',
