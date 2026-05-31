@@ -70,6 +70,22 @@ const patternGroups = [
     re: /(1\s*年半|一年半|18\s*(?:か月|ヶ月|カ月)|十八(?:か月|ヶ月|カ月))|\byear and a half\b|\b(1\.5\s*years?|one and a half years?|eighteen\s+months|18\s+months)/i,
   },
   {
+    key: 'duration-two-years',
+    // Canonical Satoshi self-statements (added 2026-05 after audit miss):
+    //   2010-07-18 BitcoinTalk SHA-256: "When I wrote it more than 2 years ago"
+    //   2011-01-10 to Hearn: "2 years of development before release"
+    //   2010-06-17 BitcoinTalk: "transaction types that I designed years ago"
+    // These are all Satoshi utterances using "2 years" or "years ago" framing.
+    re: /(2\s*年(?:の|間|の開発|の作業|前)|二\s*年(?:の|間)?|二年前|何年も前)|\b(2\s*years?\b(?:\s+(?:ago|of|before))?|two\s*years?\b(?:\s+(?:ago|of|before))?|years\s*ago|years\s*of\s*development|more than 2 years)/i,
+  },
+  {
+    key: 'since-anchor',
+    // Canonical Satoshi self-statement:
+    //   2010-06-18 BitcoinTalk to Laszlo: "Since 2007. ..."
+    // Plus general "since YYYY" / "started in YYYY" forms.
+    re: /(20(07|08)\s*年(?:から|以来|以降|の半ば)|2007\s*年半ば|2007\s*年央|2007\s*年初)|\b(since\s+(?:mid-?)?20(0[7-8]|07|08)\b|started.{0,30}(?:in|since|around)\s+20(0[7-8])|began.{0,30}(?:in|since|around)\s+20(0[7-8]))/i,
+  },
+  {
     key: 'reverse-order',
     // Canonical Satoshi self-statement (2008-11-10 to Finney):
     //   "I actually did this kind of backwards. I had to write all the code
