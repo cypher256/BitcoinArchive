@@ -14,6 +14,12 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
+  - name: "Wei Dai"
+    slug: "wei-dai"
+  - name: "Paul Le Roux"
+    slug: "paul-le-roux"
 description: "Finding Satoshi (Tooley / Miele, April 2026) names Hal Finney and Len Sassaman as Bitcoin co-creators — Finney coded, Sassaman wrote the paper. Lopp and Back disputed the timing."
 isSatoshi: false
 tags:

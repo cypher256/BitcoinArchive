@@ -54,7 +54,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」 仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。本エントリは[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)＝サトシ仮説、支持論者の論じ方、そして反証を同じ詳細度で並べる。 2026 年 4 月公開の[サトシ複数人説 ― Finding Satoshi ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、 この単独仮説を共作仮説に拡張し、 サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
+2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」 仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。本エントリは[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)＝サトシ仮説、支持論者の論じ方、そして反証を同じ詳細度で並べる。 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』 ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、 この単独仮説を共作仮説に拡張し、 サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
 
 ## 1. 仮説が主張する内容
 
