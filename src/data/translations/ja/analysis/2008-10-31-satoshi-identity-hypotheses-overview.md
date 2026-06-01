@@ -95,6 +95,8 @@ relatedEntries:
 
 本エントリーは「最も蓋然性の高いサトシ候補」 を指名しない。
 
+**2024-2026 年のサトシ特定の波。** 2024 年後半以降、 主要メディア / ドキュメンタリーによる特定が 4 件相次いだ。 それぞれ依拠する根拠が違う ― [HBO『Money Electric』 によるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (2024 年 10 月、 フォーラム投稿のタイミング論)、 [NYT カレイロウのアダム・バック調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (2026 年 4 月、 文体計量による単独候補名指し)、 [サトシ複数人説 ― Finding Satoshi ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (2026 年 4 月、 活動時刻と遺族証言からハル・フィニーとレン・サッサマンを共作者として提示)、 そして他とは経路の違う[サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (2025 年 4 月、 政府文書開示請求)。 いずれも暗号学的確認は得られていない。 以下の比較表は、 この波で出た証拠が候補の状況を動かす範囲で取り込んでいる。
+
 ## 1. 候補一覧
 
 10 人の名指し候補は、サトシ正体問題の議論にどう登場したかで 3 群に分かれる：
@@ -153,7 +155,7 @@ relatedEntries:
 
 ### 2.3 能力 × 隠匿性マップ
 
-各候補を、能力スコア（x 軸）と隠匿性スコア（y 軸）の 2 次元空間にプロット。**座標は §2.1 表の厳密な平均ではなく、視覚配置のための概略値**である ― 純粋な平均（🟢 = 1、🟡 = 0.5、🔴 = 0 で換算）だと、一部の候補が境界に張り付いたり（例：ウェイ・ダイの能力 = 1.0、ハル・フィニーと金子勇の隠匿性 = 0）、同じ点に重なったり（ポール・ル・ルーとピーター・トッドはどちらも [0.5, 0.5]）して、mermaid quadrantChart のレンダリングでラベルが軸タイトルや他のラベルと重なる。各点を内側に約 0.02 〜 0.12 ほどずらしてラベルの可読性を確保している。相対順序（誰が誰より右、誰が誰より上）は表と一致する。マップは §7 の横断的観察を空間的に可視化する：サトシが引用したサイファーパンク候補（アダム・バック、ウェイ・ダイ、ハル・フィニー、サボ）は能力高・隠匿性低の帯に集中、サッサマンが能力高・隠匿性高の象限に唯一位置、ライト・ドリアン・金子勇は能力低の領域。
+各候補を、能力スコア（x 軸）と隠匿性スコア（y 軸）の 2 次元空間にプロット。**座標は §2.1 表の厳密な平均ではなく、視覚配置のための概略値**である ― 純粋な平均（🟢 = 1、🟡 = 0.5、🔴 = 0 で換算）だと、一部の候補が境界に張り付いたり（例：ウェイ・ダイの能力 = 1.0、ハル・フィニーと金子勇の隠匿性 = 0）、同じ点に重なったり（ポール・ルルーとピーター・トッドはどちらも [0.5, 0.5]）して、mermaid quadrantChart のレンダリングでラベルが軸タイトルや他のラベルと重なる。各点を内側に約 0.02 〜 0.12 ほどずらしてラベルの可読性を確保している。相対順序（誰が誰より右、誰が誰より上）は表と一致する。マップは §7 の横断的観察を空間的に可視化する：サトシが引用したサイファーパンク候補（アダム・バック、ウェイ・ダイ、ハル・フィニー、サボ）は能力高・隠匿性低の帯に集中、サッサマンが能力高・隠匿性高の象限に唯一位置、ライト・ドリアン・金子勇は能力低の領域。
 
 **候補プロファイル、能力 vs 隠匿性**
 
@@ -171,7 +173,7 @@ quadrantChart
     "ハル・フィニー": [0.83, 0.05]
     "ニック・サボ": [0.71, 0.18]
     "レン・サッサマン": [0.6, 0.75]
-    "ポール・ル・ルー": [0.5, 0.6]
+    "ポール・ルルー": [0.5, 0.6]
     "ピーター・トッド": [0.5, 0.35]
     "クレイグ・ライト": [0.2, 0.4]
     "ドリアン・ナカモト": [0.1, 0.6]
@@ -235,7 +237,7 @@ gantt
 | **メール往復** | アダム・バック、ウェイ・ダイ | サトシがホワイトペーパー公開直前に「先行研究を引用したい」 旨で第三者として接触 |
 | **メール＋公開言論** | ハル・フィニー | RPOW 経験者として技術応答を継続。メール＋暗号学メーリングリスト返信＋BitcoinTalk 投稿にわたる |
 | **公開フォーラム<br>スレッドへの返信** | ピーター・トッド | retep アカウントでサトシ提案スレッドに 1 返信。「直接接触」 ではないが [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)が特定根拠とした |
-| **通信記録なし** | ニック・サボ、レン・サッサマン、金子勇、ドリアン・ナカモト、クレイグ・ライト、ポール・ル・ルー | サトシは公開前に**バック → ウェイ・ダイ** 経由で先行研究系譜を確認したのみで、これら 6 名のいずれにも接触しなかった |
+| **通信記録なし** | ニック・サボ、レン・サッサマン、金子勇、ドリアン・ナカモト、クレイグ・ライト、ポール・ルルー | サトシは公開前に**バック → ウェイ・ダイ** 経由で先行研究系譜を確認したのみで、これら 6 名のいずれにも接触しなかった |
 
 ### 4.3 表の読み方
 
@@ -269,7 +271,7 @@ gantt
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 ― v0.1 規模の C++ 出荷記録なし | アーカイブ記録なし | C++ 出荷実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 出荷記録なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | ― 該当せず（COPA 対ライト 2024 判決） | ― | ― | ― |
-| [ポール・ル・ルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号出荷を満たすが、公開出荷記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号出荷を満たすが、公開出荷記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
 | [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
 | [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 ― 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
 | [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 ― OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
@@ -280,7 +282,7 @@ gantt
 
 **開発環境レイヤの読み方：**
 
-- **Phase 1 の「Windows + MSVC + C++ 出荷」 像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++ ― 当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ ― はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ル・ルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を出荷したが、公開出荷の記録はその時点で途切れる。
+- **Phase 1 の「Windows + MSVC + C++ 出荷」 像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++ ― 当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ ― はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を出荷したが、公開出荷の記録はその時点で途切れる。
 - **3 名は Phase 1 と OS が直接不整合。** [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（長期 Mac、スネークケース＋タブ）、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（GitHub 一貫して Linux）、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（Unix 主体のツール環境）はいずれも Windows 以外の主要環境が記録されている。
 - **3 名は v0.1 規模の出荷コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。
 - **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの出荷実績を持つ候補と比べて大きい。

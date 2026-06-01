@@ -1,5 +1,5 @@
 ---
-title: "フィニー＋サッサマン＝サトシ共作説 ― 『Finding Satoshi』 (2026 年 4 月 22 日公開) ドキュメンタリーの主張と反証"
+title: "サトシ複数人説 ― フィニー＋サッサマン共作説と『Finding Satoshi』 (2026 年 4 月 22 日公開) ドキュメンタリー"
 date: 2026-04-22T00:00:00Z
 type: "article"
 source: "decrypt"
@@ -14,6 +14,12 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
+  - name: "Wei Dai"
+    slug: "wei-dai"
+  - name: "Paul Le Roux"
+    slug: "paul-le-roux"
 description: "Finding Satoshi (2026 年 4 月) はハル・フィニーとレン・サッサマンをビットコイン共作者として提示。 ロップとバックが時間矛盾を指摘して反論。"
 isSatoshi: false
 tags:
@@ -55,7 +61,7 @@ translationStatus: complete
 
 **他に検討された候補:**
 
-フィニー＋サッサマンの組に絞り込む前、 作品は次の人物も検討した: [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、 [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)、 デイヴィッド・チャウム、 [ポール・ル・ルー](/BitcoinArchive/ja/participants/paul-le-roux/)、 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)。 また、 2021 年に収録した 90 分のサム・バンクマン=フリードへのインタビューも最終版では編集で外された、 と報じられている。
+フィニー＋サッサマンの組に絞り込む前、 作品は次の人物も検討した: [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、 [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)、 デイヴィッド・チャウム、 [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)、 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)。 また、 2021 年に収録した 90 分のサム・バンクマン=フリードへのインタビューも最終版では編集で外された、 と報じられている。
 
 **反論:**
 

@@ -102,6 +102,8 @@ The four structural layers are not interchangeable; each narrows the candidate s
 
 This entry does not name "the most likely Satoshi candidate."
 
+**The 2024-2026 identification wave.** Four major-press / documentary identifications have appeared since late 2024, each resting on a different evidence base: the [HBO Money Electric documentary on Peter Todd](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (October 2024, forum-post-timing argument); the [NYT Carreyrou investigation of Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (April 2026, stylometric, single candidate); the [Finding Satoshi multi-person reading](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) naming Hal Finney and Len Sassaman as co-creators (April 2026, activity-window + family testimony); and the [Murphy v DHS FOIA action](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (April 2025, government-record subpoena route — a different evidence channel than the others). None has produced cryptographic confirmation. The dimensions in the comparison tables below incorporate this wave's evidence where it affects a candidate's status.
+
 ## 1. Candidates
 
 The ten named candidates fall into three groups by how they entered Satoshi-identity discourse:
