@@ -1066,6 +1066,40 @@ override the generic templates where they conflict.
     ✓ `Satoshi mines the Bitcoin genesis block (January 3, 2009)`
   - `source: <channel>` records the distribution channel; the entry
     itself is editorial article in `aftermath/`.
+- **Identification claims / theories** (entries documenting a specific
+  Satoshi-identification claim or named theory — HBO Money Electric,
+  NYT Carreyrou, Finding Satoshi, Murphy v DHS, etc.) may use the
+  archetype **`{Theory name or subject} — {source artifact}: {claims
+  and counter-evidence}`**. The original article / documentary title
+  goes in the body of the title after the em-dash; the theory or
+  identification frame leads. Examples in the corpus:
+  - ✓ `Peter Todd = Satoshi Nakamoto theory — HBO "Money Electric" claims and counterevidence`
+  - ✓ `Adam Back = Satoshi Nakamoto theory — New York Times 2026 investigation claims and counter-evidence`
+  - ✓ `Finney + Sassaman 'Satoshi co-creators' theory — Finding Satoshi (April 22, 2026) documentary case and counter-evidence`
+  - ✓ `The U.S. government and Satoshi Nakamoto — Murphy v DHS (April 7, 2025) FOIA suit for records of a 2019 DHS-agent claim to have interviewed four people behind Bitcoin`
+
+  The JA mirror uses a parallel `「{theory name}」 ― {source artifact + details}` form (`サトシ複数人説 ― ...`, `サトシ政府機関説 ― ...`) to keep wave-grouping visually coherent in the JA listing.
+
+- **Multi-year incident aftermath** (exchange hacks, prosecutions,
+  loss sagas spanning several documented events): the title may lead
+  with the canonical event name (Wikipedia-page-title style) and list
+  the most search-relevant subordinate facts after an em-dash. The
+  Wikipedia / first-major-coverage title is preserved as the lead;
+  the suffix is editorial SEO context for the multi-year span.
+  - ✓ `Mt. Gox files for bankruptcy — 850,000 BTC lost`
+  - ✓ `2016 Bitfinex hack — Razzlekhan arrest, $3.6B recovery, six-year laundering arc`
+
+Why these two carve-outs: identification entries and multi-year
+incident entries both fail the "preserve original title" rule under
+its plain reading, because the original source title is too generic
+(`U.S. Government, Satoshi Nakamoto's Identity, FOIA Lawsuit`,
+`2016 Bitfinex hack`) to function as a stand-alone landing page in
+search / AI-citation contexts. The patterns above are the corpus's
+practiced compromise: lead with the SEO-load-bearing identifier
+(theory name or canonical event name), append the source artifact
+and key facts after an em-dash. Forum / mailing-list / correspondence
+entries continue to follow strict preservation per the per-category
+rules above.
 
 #### Analysis (Bitcoin Institute editorial readings)
 
