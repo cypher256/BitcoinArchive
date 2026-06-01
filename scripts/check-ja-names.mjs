@@ -59,6 +59,84 @@ function loadNameMap() {
 const NAME_MAP = loadNameMap();
 
 // -------------------------------------------------------------------------
+// Katakana drift detection: canonical JA forms vs malformed variants
+//
+// Loads all canonical katakana display names from both
+//   - participantDisplayNamesJaBySlug
+//   - properNameTranslationsJa
+// and generates malformed variants by (a) removing all middle dots
+// and (b) splitting any token at every interior position with an extra
+// middle dot. Each variant is mapped to its canonical form so the
+// detector can suggest the fix.
+//
+// Past incident (2026-06-02): "Paul Le Roux" was rendered as
+// 「ポール・ル・ルー」 (two middle dots) in several JA files while the
+// canonical entry in participants.ts is 「ポール・ルルー」 (one middle
+// dot). The existing English-name check missed it because both forms
+// are katakana; nothing flagged the drift until a human reader did.
+// Similarly 「サトシナカモト」 (no middle dot) snuck into 6 email
+// translations against the canonical 「サトシ・ナカモト」.
+//
+// Variants identical to another canonical entry (e.g. 「フィニー」 may
+// occur as both a Hal Finney variant and a Fran Finney variant) are
+// excluded so a real name is never flagged as a misspelling of another
+// real name. The body-scan also strips every canonical name from the
+// line before searching for variants, so a line that already contains
+// the correct canonical form will not falsely fire on its substring.
+// -------------------------------------------------------------------------
+function loadAllCanonicalJa() {
+  const set = new Set();
+  const blocks = [
+    /participantDisplayNamesJaBySlug\s*:\s*Record<[^>]+>\s*=\s*\{([\s\S]*?)\n\};/,
+    /properNameTranslationsJa\s*:\s*Record<[^>]+>\s*=\s*\{([\s\S]*?)\n\};/,
+  ];
+  for (const re of blocks) {
+    const m = participantsTxt.match(re);
+    if (!m) continue;
+    for (const entry of m[1].matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)) {
+      if (entry[1] === entry[2]) continue;
+      // Only keep entries whose display form is built from katakana
+      // and middle dots. Skips kanji-name slugs (e.g., 金子勇) and
+      // brand-style entries (e.g., 「中国人民銀行」, COPA).
+      if (/^[ァ-ヿ・ー]+$/.test(entry[2])) set.add(entry[2]);
+    }
+  }
+  return set;
+}
+
+const ALL_CANONICAL_JA = loadAllCanonicalJa();
+
+function generateMidDotVariants(canonical) {
+  const variants = new Map();
+  for (const c of canonical) {
+    // (a) Remove all middle dots
+    const noDot = c.replace(/・/g, '');
+    if (noDot.length >= 2 && noDot !== c && !canonical.has(noDot)) {
+      if (!variants.has(noDot)) variants.set(noDot, c);
+    }
+    // (b) Insert one extra middle dot at every interior position of
+    //     each existing token
+    const tokens = c.split('・');
+    for (let ti = 0; ti < tokens.length; ti++) {
+      const t = tokens[ti];
+      if (t.length < 2) continue;
+      for (let pos = 1; pos < t.length; pos++) {
+        const left = t.slice(0, pos);
+        const right = t.slice(pos);
+        const newTokens = [...tokens.slice(0, ti), left, right, ...tokens.slice(ti + 1)];
+        const variant = newTokens.join('・');
+        if (variant !== c && !canonical.has(variant)) {
+          if (!variants.has(variant)) variants.set(variant, c);
+        }
+      }
+    }
+  }
+  return variants;
+}
+
+const MID_DOT_VARIANTS = generateMidDotVariants(ALL_CANONICAL_JA);
+
+// -------------------------------------------------------------------------
 // First-name detection map
 //
 // Catches the case where JA prose uses a bare first name (e.g., "Gavin が…")
@@ -387,6 +465,33 @@ for (const file of files) {
           context: line.trim().substring(0, 100),
           type: 'body',
         });
+      }
+    }
+
+    // Check body text — katakana drift (mid-dot variants).
+    // Strip every canonical name from the line first, so that a line
+    // containing the correct 「ポール・ルルー」 does not falsely fire on
+    // a variant that is a substring of some other canonical (e.g.
+    // 「フィニー」 vs 「ハル・フィニー」 / 「フラン・フィニー」).
+    {
+      let strippedJa = line;
+      for (const c of ALL_CANONICAL_JA) {
+        if (strippedJa.includes(c)) strippedJa = strippedJa.split(c).join('');
+      }
+      const seenVariantsOnLine = new Set();
+      for (const [variant, canonical] of MID_DOT_VARIANTS) {
+        if (seenVariantsOnLine.has(variant)) continue;
+        if (strippedJa.includes(variant)) {
+          seenVariantsOnLine.add(variant);
+          violations.push({
+            file: path.relative(process.cwd(), file),
+            line: i + 1,
+            name: variant,
+            katakana: canonical,
+            context: line.trim().substring(0, 100),
+            type: 'katakana-drift',
+          });
+        }
       }
     }
 
