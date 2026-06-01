@@ -33,7 +33,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2022年10月6日、セキュリティ研究者 SerHack が『The Story Behind the Alternative Genesis Block of Bitcoin』 を発表し、公式ローンチの約 4 か月前のリリース前ビットコインジェネシスブロックを分析した。
+2022年10月6日、セキュリティ研究者 SerHack が『The Story Behind the Alternative Genesis Block of Bitcoin』 を発表し、公式ローンチの約 4 か月前のリリース前のビットコイン・ジェネシスブロックを分析した。
 
 **発見の経緯：**
 2013年12月23日、BitcoinTalk ユーザー「Cryddit」（[レイ・ディリンジャー](/BitcoinArchive/ja/participants/ray-dillinger/)、別名 Bear）が、2008年11月に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)からセキュリティ監査のために非公開で共有されたソースコードを投稿した。ディリンジャーはブロックチェーンコードのレビューを、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)はスクリプト言語のレビューを担当した。このコードには 2009年1月3日にローンチされたものとは全く異なるパラメーターのジェネシスブロックが含まれていた。

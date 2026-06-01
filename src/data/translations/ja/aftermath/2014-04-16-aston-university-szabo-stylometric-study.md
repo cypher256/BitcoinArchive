@@ -49,7 +49,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2014 年 4 月、英国バーミンガムの**アストン大学法言語学センター**が「**Project Bitcoin**」 の結果を発表した。当時 Lecturer in Forensic Linguistics だった**ジャック・グリーヴ博士**の指導下で、法言語学を専攻する最終学年の学生 40 名から成るチームが実施した文体計量研究である。本研究は、検討した 11 名の候補のうち[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)がビットコイン白書の著者として最も可能性が高いと結論づけた。結果は [2014 年 4 月 16 日 CoinDesk により報じられ](https://www.coindesk.com/markets/2014/04/16/linguistic-researchers-name-nick-szabo-as-author-of-bitcoin-whitepaper)、続く数日のうちに ScienceDaily、Slate、Sci.News、Phys.org、Cointelegraph に取り上げられた。
+2014 年 4 月、英国バーミンガムの**アストン大学法言語学センター**が「**Project Bitcoin**」 の結果を発表した。当時法言語学の講師だった**ジャック・グリーヴ博士**の指導下で、法言語学を専攻する最終学年の学生 40 名から成るチームが実施した文体計量研究である。本研究は、検討した 11 名の候補のうち[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)がビットコイン白書の著者として最も可能性が高いと結論づけた。結果は [2014 年 4 月 16 日 CoinDesk により報じられ](https://www.coindesk.com/markets/2014/04/16/linguistic-researchers-name-nick-szabo-as-author-of-bitcoin-whitepaper)、続く数日のうちに ScienceDaily、Slate、Sci.News、Phys.org、Cointelegraph に取り上げられた。
 
 本研究は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)著者性に関する最初の複数候補横断的な学術側文体計量検討であった。[2013 年 12 月の Skye Grey による LikeInAMirror 調査](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)を踏まえ、同じ首位候補（サボ）に到達し、後に[ナサニエル・ポパーの 2015 年『ニューヨーク・タイムズ』 調査記事](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/)および書籍『デジタル・ゴールド』 で引用されることになる。
 

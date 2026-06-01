@@ -53,7 +53,7 @@ timeline
     2011 : GitHub コミット権限 付与、 3 番目の メンテナー
          : サトシと BitcoinTalk + コードで やり取り
     2015 : Bloq エンタープライズ ブロックチェーン企業 共同設立
-    2018 : 「Looking Back」 回顧録 公開 (10月)
+    2018 : 「Looking Back」 回顧記事 公開 (10月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2018-10-29-jeff-garzik-retrospective/
     2024 : 「サトシは独狼の天才」 発言 — CryptoNews / Bad Crypto Podcast (10月28日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius/
