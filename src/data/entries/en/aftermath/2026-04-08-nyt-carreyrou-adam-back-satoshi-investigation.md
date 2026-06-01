@@ -50,11 +50,13 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - aftermath/2014-04-16-aston-university-szabo-stylometric-study
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - tweets/adam-back/2026-04-08-response-to-nyt-investigation
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
 On April 8, 2026, [John Carreyrou](https://en.wikipedia.org/wiki/John_Carreyrou) — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.

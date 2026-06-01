@@ -39,6 +39,21 @@ Counsel of record is Lewis & Lin LLC. The novel legal theory rests on **Article 
 
 The legal innovation is significant. New York courts have applied Article 7-B to physical chattels — wallets, jewelry, motor vehicles — but never to digital assets recorded on a public blockchain. The pleading therefore frames a question of first impression: whether the statutory category of "personal property" extends to UTXO-controlled coins whose control private key has been lost, forgotten, or destroyed.
 
+```mermaid
+flowchart TD
+    P[Anonymous plaintiff<br/>Noah Doe + 2 Wyoming LLCs]
+    P -->|filed 2026-03-11| C[NY Supreme Court<br/>Index 153119/2026]
+    P -->|legal theory| L[NY Personal Property Law<br/>Article 7-B — lost-property statute]
+    L -->|historic scope| T[Physical chattels only<br/>watches, jewelry, vehicles]
+    P -->|claims jurisdiction over| D[39,069 dormant BTC addresses<br/>~3.8M BTC, ~$293B]
+    D -->|Galaxy Digital May 2026| Pat[21,923 = Patoshi pattern<br/>~1.096M BTC]
+    C -.->|hypothetical judgment| J{Transfer order issued?}
+    J -->|yes, but| E[Private keys missing]
+    E --> X[UTXO cannot move<br/>order is unenforceable]
+    classDef gap fill:#ffff99,stroke:#c80
+    class J,E,X gap
+```
+
 In May 2026, Galaxy Digital's research head Alex Thorn published an analysis classifying the 39,069 defendant addresses against [Sergio Demian Lerner's Patoshi nonce signature](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). After excluding addresses linked to the [Bitfinex 2016 hack](https://en.wikipedia.org/wiki/2016_Bitfinex_hack) and known exchange wallets, Thorn identified **21,923 addresses (56% of the defendants) as carrying the Patoshi pattern** — approximately 1.096 million BTC, in alignment with Lerner's earlier estimate of ~1.1M BTC mined by the single early miner widely understood to be Satoshi Nakamoto himself.
 
 The remaining 17,146 addresses likely belong to other early miners or are unclassified. None of the defendant addresses have moved coins since the dormancy thresholds applied in the complaint.

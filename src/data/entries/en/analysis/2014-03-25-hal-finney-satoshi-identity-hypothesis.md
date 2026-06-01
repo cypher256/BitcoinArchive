@@ -48,6 +48,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2014-03-06-dorian-nakamoto-biography
   - analysis/2009-01-09-satoshi-windows-development-environment
 inlineLinkKeywords:

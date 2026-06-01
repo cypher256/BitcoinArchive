@@ -745,4 +745,13 @@ export const tagTranslations: Record<string, string> = {
   'explainer': '解説',
   'terminology': '用語',
   'utxo': 'UTXO',
+
+  // Additional translations (2026-06-02): Finding Satoshi documentary tags
+  // and Bitfinex 2022 arrest entry tags
+  'co-creators-theory': '共作説',
+  'finding-satoshi': 'Finding Satoshi',
+  'bitfinex': 'Bitfinex',
+  'doj': '米司法省',
+  'exchange-hack': '取引所ハック',
+  'razzlekhan': 'Razzlekhan',
 };

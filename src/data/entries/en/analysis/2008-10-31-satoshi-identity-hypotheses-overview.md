@@ -78,6 +78,7 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 inlineLinkKeywords:
   - "Satoshi Nakamoto candidates"
   - "Satoshi Nakamoto identity candidates"

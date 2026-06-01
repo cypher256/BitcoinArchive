@@ -34,6 +34,21 @@ Bitcoin's difficulty-adjustment algorithm contains a long-known off-by-one bug i
 
 **The mechanic.** When a majority of hashrate cooperates, miners can stamp the first block of a retarget window with a far-future timestamp, then stamp the remaining 2,015 blocks with realistic (or even slightly past) timestamps. Because the difficulty formula uses the timestamp of the **last** block in the previous window as its anchor — and the off-by-one excludes the first block of the new window — the elapsed time the algorithm "sees" can be made far shorter than the actual elapsed time. Difficulty drops on the next retarget; the colluding majority then mines blocks at faster-than-10-minute pace without adding any hashrate.
 
+```mermaid
+sequenceDiagram
+    autonumber
+    participant M as Attacker majority<br/>(>50% hashrate)
+    participant W as Retarget window N+1
+    participant D as Difficulty algorithm
+    Note over M,W: Window N+1 begins
+    M->>W: Block 0 — stamp with far-future time
+    M->>W: Block 1..2015 — realistic timestamps
+    W->>D: Compute elapsed from last(N) to block 2,015 (excludes block 0)
+    D-->>D: Sees a SHORT elapsed window<br/>(off-by-one drops block 0)
+    D-->>W: Lower difficulty for window N+2
+    Note over M: Same hashrate, faster blocks
+```
+
 The attack is not free or instant. The published descriptions place the cost-effective minimum at roughly **four weeks of sustained majority operation** before meaningful exploitation. That is long enough that any real attempt would be visible to the rest of the network well before the difficulty distortion materialized — which is the main reason the bug has remained unfixed for so long: it is exploitable in principle but expensive in practice, and a coordinating majority that visible would face far easier and more profitable mischief than gaming the retarget window.
 
 **Why this is in Satoshi's code.** Examination of the v0.1.0 source — preserved in [trottier/original-bitcoin](https://github.com/trottier/original-bitcoin) — shows the bug present from the initial release in January 2009. The loop that walks the previous retarget window starts at the latest block and counts back 2,015 entries, then takes the time delta between that 2,015-block-earlier ancestor and the current block. The intent was clearly to span 2,016 blocks; the implementation spans 2,015. There is no surviving evidence that Satoshi was aware of the discrepancy. The bug was first publicly described on BitcoinTalk in 2011 and has been periodically rediscovered since.

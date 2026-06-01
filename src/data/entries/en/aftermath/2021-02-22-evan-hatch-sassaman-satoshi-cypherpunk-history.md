@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
 On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published ["Len Sassaman and Satoshi: a Cypherpunk history"](https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10) on Medium. The piece is the most-cited public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.

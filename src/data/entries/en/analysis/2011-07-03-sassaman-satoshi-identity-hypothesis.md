@@ -35,6 +35,7 @@ secondarySources:
     note: "Wikipedia identifies a March 15, 2013 BitcoinTalk thread as the earliest public discussion of the Sassaman-as-Satoshi hypothesis recovered in its sources. The specific topic URL has not been preserved here."
 relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2011-07-03-len-sassaman-biography
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history

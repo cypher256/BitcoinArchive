@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 translationStatus: complete
 ---
 

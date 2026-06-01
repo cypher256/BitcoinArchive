@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - aftermath/2022-11-11-ftx-collapse
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
 ---
 
 On February 28, 2014, Mt. Gox — once the world's largest Bitcoin exchange, handling approximately 70% of all Bitcoin transactions at its peak — filed for bankruptcy protection in Tokyo District Court.

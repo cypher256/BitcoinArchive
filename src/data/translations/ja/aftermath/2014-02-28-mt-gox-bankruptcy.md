@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - aftermath/2022-11-11-ftx-collapse
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
 translationStatus: complete
 ---
 

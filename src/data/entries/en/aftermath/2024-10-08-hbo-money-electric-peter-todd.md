@@ -37,12 +37,14 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - aftermath/2010-12-07-peter-todd-biography
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
   - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 quotes:
   - id: "q1"
     person: "Peter Todd"
