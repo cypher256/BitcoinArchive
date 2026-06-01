@@ -4,7 +4,7 @@ date: 2009-02-27T20:00:12Z
 type: "mailing-list"
 source: "bitcoin-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/9/"
-sourceNote: "SourceForge の bitcoin-list への投稿。 サトシナカモト研究所のスレッドページが現存する正典写し。 この Hal Finney の返信には個別の永続リンクが存在しない。"
+sourceNote: "SourceForge の bitcoin-list への投稿。 サトシ・ナカモト研究所のスレッドページが現存する正典写し。 この Hal Finney の返信には個別の永続リンクが存在しない。"
 author: "Hal Finney"
 participants:
   - name: "Hal Finney"

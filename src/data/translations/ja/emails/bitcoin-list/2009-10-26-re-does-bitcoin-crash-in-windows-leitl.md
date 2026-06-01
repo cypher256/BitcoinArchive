@@ -4,7 +4,7 @@ date: 2009-10-26T12:46:27Z
 type: "mailing-list"
 source: "bitcoin-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/10/"
-sourceNote: "SourceForge の bitcoin-list への投稿。 サトシナカモト研究所のスレッドページが現存する正典写し。 この返信には個別の永続リンクが存在しない。"
+sourceNote: "SourceForge の bitcoin-list への投稿。 サトシ・ナカモト研究所のスレッドページが現存する正典写し。 この返信には個別の永続リンクが存在しない。"
 author: "Eugen Leitl"
 participants:
   - name: "Eugen Leitl"

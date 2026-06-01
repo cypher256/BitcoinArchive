@@ -4,7 +4,7 @@ date: 2009-02-13T06:19:18Z
 type: "mailing-list"
 source: "p2p-research-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
-sourceNote: "P2P Research メーリングリストへの投稿。 サトシナカモト研究所のスレッドページが現存する正典写し。 この Bauwens の返信には個別の永続リンクが存在しない。"
+sourceNote: "P2P Research メーリングリストへの投稿。 サトシ・ナカモト研究所のスレッドページが現存する正典写し。 この Bauwens の返信には個別の永続リンクが存在しない。"
 author: "Michel Bauwens"
 participants:
   - name: "Michel Bauwens"

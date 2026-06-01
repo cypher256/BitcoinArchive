@@ -4,7 +4,7 @@ date: 2009-02-18T14:55:50Z
 type: "mailing-list"
 source: "bitcoin-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/9/"
-sourceNote: "SourceForge の bitcoin-list への投稿。 サトシナカモト研究所のスレッドページが現存する正典写し。 この Nicholas Bohm の返信には個別の永続リンクが存在しない。"
+sourceNote: "SourceForge の bitcoin-list への投稿。 サトシ・ナカモト研究所のスレッドページが現存する正典写し。 この Nicholas Bohm の返信には個別の永続リンクが存在しない。"
 author: "Nicholas Bohm"
 participants:
   - name: "Nicholas Bohm"
