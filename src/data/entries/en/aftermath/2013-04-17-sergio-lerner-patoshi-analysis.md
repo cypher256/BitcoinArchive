@@ -43,6 +43,7 @@ relatedEntries:
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
   - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - aftermath/2026-05-28-noah-doe-lawsuit
 ---
 
 On April 17, 2013, Argentine Bitcoin researcher [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Well Deserved Fortune of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/), Bitcoin creator, Visionary and Genius" on his blog Bitslog. The post presented the first systematic analysis of Bitcoin's earliest mining patterns.

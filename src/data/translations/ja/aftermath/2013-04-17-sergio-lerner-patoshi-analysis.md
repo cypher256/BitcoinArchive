@@ -43,6 +43,7 @@ relatedEntries:
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
   - analysis/2009-01-03-genesis-block-hardcode-analysis
+  - aftermath/2026-05-28-noah-doe-lawsuit
 translationStatus: complete
 ---
 
