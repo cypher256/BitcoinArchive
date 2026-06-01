@@ -23,6 +23,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
+  - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis

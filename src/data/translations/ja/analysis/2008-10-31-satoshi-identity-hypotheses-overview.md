@@ -77,6 +77,7 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
+  - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
 ---
 
 10 人の名指し候補、サトシの公的記録から導かれる 7 つの次元。どの候補も 7 つすべてに合致しない —— それぞれが少なくとも 1 つの次元で破綻する。本エントリーは名指し候補を 4 つの独立した構造的レイヤ —— プロファイル整合（§2）、文体計量による帰属（§3）、直接通信（§4）、開発環境（§5）—— に並列比較し、各プロフィールがどこで破綻するかを記す。各候補は、以下のサトシに関する公的記録から導かれる輪郭に照らして比較する：

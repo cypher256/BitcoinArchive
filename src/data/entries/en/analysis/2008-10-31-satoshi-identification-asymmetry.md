@@ -78,6 +78,7 @@ relatedEntries:
   - aftermath/2016-12-12-satoshi-p2pfoundation-profile-login
   - aftermath/2017-09-04-china-ico-ban
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
+  - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
 inlineLinkKeywords:
   - "identification asymmetry"
   - "Satoshi identification asymmetry"
