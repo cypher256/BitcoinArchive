@@ -62,7 +62,7 @@ translationStatus: complete
 <!-- quote: q1 -->
 > 「どのくらいの規模になると想定しているんだい？数十ノード？数千？数百万？」
 
-これはビットコイン公開ローンチの 2 か月前、プレリリースコードレビュー期間中のことだった。
+これはビットコイン公開ローンチの 2 か月前、リリース前のコードレビュー期間中のことだった。
 
 **メール 2：[2009年1月8日](/BitcoinArchive/ja/entries/aftermath/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
 件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：

@@ -59,7 +59,7 @@ Skye Grey は二つのコーパスの間で文体的比較を手作業で行っ�
 - カンマの用法、句点後のダブルスペースのパターン。
 - 両コーパスで集計されたおよそ 70 個の追加の語彙・言い回しの指標。
 
-本記事はこれらの文体所見を、それ以前から提示されていた概念的論拠と組み合わせた：サボの [Bit Gold 提案](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)（1998 年構想、2005 年 12 月 29 日に Unenumerated ブログで完全公開）はビットコインの建築に最も近い公表済みの前駆であり、サボの [2008 年 4 月の Bit Gold 実装協力を要請した Unenumerated ブログでのコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)はビットコイン白書の半年前に、同じ問題空間で能動的に活動していたサボを位置づけている。
+本記事はこれらの文体所見を、それ以前から提示されていた概念的論拠と組み合わせた：サボの [Bit Gold 提案](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)（1998 年構想、2005 年 12 月 29 日に Unenumerated ブログで完全公開）はビットコインのアーキテクチャに最も近い公表済みの前駆であり、サボの [2008 年 4 月の Bit Gold 実装協力を要請した Unenumerated ブログでのコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)はビットコイン白書の半年前に、同じ問題空間で能動的に活動していたサボを位置づけている。
 
 **TechCrunch による反応：**
 
