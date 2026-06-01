@@ -33,7 +33,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-階層的決定性ウォレット。Segregated Witness。シュノア署名。Taproot。現代のすべてのビットコインウォレットの鍵導出方法、すべてのトランザクションがマレアビリティを回避する方法、ブロック容量の拡張、Taproot のプライバシーと script 柔軟性 —— これらを定義する 4 つの BIP のすべてを書いた／共著したのが **ピーター・ウィーユ**（GitHub と IRC では **sipa**）である。2013 年に [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) も開始した —— OpenSSL に代わって Bitcoin Core の署名バックエンドとなった、目的特化型の楕円曲線ライブラリである。
+階層的決定性ウォレット。Segregated Witness。シュノア署名。Taproot。現代のすべてのビットコインウォレットの鍵導出方法、すべてのトランザクションがマレアビリティを回避する方法、ブロック容量の拡張、Taproot のプライバシーとスクリプトの柔軟性 —— これらを定義する 4 つの BIP のすべてを書いた／共著したのが **ピーター・ウィーユ**（GitHub と IRC では **sipa**）である。2013 年に [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) も開始した —— OpenSSL に代わって Bitcoin Core の署名バックエンドとなった、目的特化型の楕円曲線ライブラリである。
 
 ウィーユはベルギーのソフトウェア技術者。bitcoin/bitcoin への最初の貢献は [2011 年 3 月 17 日の PR #122](/BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/)。6 週間後にコミット権限を取得し、ギャビン・アンドレセンに次ぐ 2 番目の長期メンテナーとなった。2014 年に Blockstream を共同設立、後に Chaincode Labs へ。
 
@@ -71,4 +71,4 @@ timeline
 ウィーユは 2014年、グレゴリー・マクスウェルらとともに Blockstream を共同創業し、後に Chaincode Labs にも参画した。一貫して Bitcoin Core の最も継続的なレビュアーであり、暗号設計者でもあり続けている。
 
 ### 意義
-4 本の BIP と libsecp256k1 を合わせれば、ウィーユの直接的な設計作業は、現代のあらゆるビットコインウォレットが鍵を導出する方法、あらゆる現代のトランザクションが署名を検証する方法、あらゆる現代の決済がオンチェーン Malleability を逃れる方法、あらゆる Taproot 出力が得る privacy とスクリプト柔軟性──その全ての下地となっている。プロトコル自体にこれほど広い影響面を持つサトシ離脱後の貢献者はごく少ない。
+4 本の BIP と libsecp256k1 を合わせれば、ウィーユの直接的な設計作業は、現代のあらゆるビットコインウォレットが鍵を導出する方法、あらゆる現代のトランザクションが署名を検証する方法、あらゆる現代の決済がオンチェーン Malleability を逃れる方法、あらゆる Taproot 出力が得るプライバシーとスクリプトの柔軟性──その全ての下地となっている。プロトコル自体にこれほど広い影響面を持つサトシ離脱後の貢献者はごく少ない。
