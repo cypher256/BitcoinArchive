@@ -64,7 +64,9 @@ He treated the question of "what hardware can run Bitcoin" as a matrix to be fil
 | 2.8 GHz Pentium 4 | reported across fleet |
 | 3.0 GHz Pentium 4 (hyper-threading off) | reported across fleet |
 | Pentium E5300 dual-core | 2,261 khash/s |
-| CentOS fleet (custom compile) | reported across fleet | When [tcatm's 4-way SSE2 patch](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-820/) appeared, knightmb tested it across his fleet within hours and reported back with hash-rate deltas per CPU class. When SSE2 detection broke on a Pentium III, he flagged it and offered to test future builds.
+| CentOS fleet (custom compile) | reported across fleet |
+
+When [tcatm's 4-way SSE2 patch](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-820/) appeared, knightmb tested it across his fleet within hours and reported back with hash-rate deltas per CPU class. When SSE2 detection broke on a Pentium III, he flagged it and offered to test future builds.
 
 This is a particular flavor of community contribution that doesn't have a clean name. He wasn't a core developer; he wasn't writing patches; he wasn't running mining pools. He was, on the evidence of the Archive's posts, the kind of participant who keeps the infrastructure breathing — testing across hardware, hosting snapshots, answering basic syncing questions for newcomers — without making it into anyone's biographical canon.
 

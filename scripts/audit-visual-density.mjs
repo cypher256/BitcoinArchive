@@ -99,16 +99,18 @@ function computeDensity(body) {
       continue;
     }
     if (trim.startsWith('```')) {
+      // Non-mermaid code fence: excluded from denominator per STYLE_GUIDE.md
+      // § Visual Representation ("excluding frontmatter and code blocks other
+      // than mermaid"). Toggle state without counting the fence line itself.
       inCodeBlock = !inCodeBlock;
-      bodyLines++;
       continue;
     }
     if (inCodeBlock) {
-      bodyLines++;
+      // Non-mermaid code body: excluded from denominator (same rule).
       continue;
     }
     bodyLines++;
-    if (/^\|.*\|/.test(trim)) { visualLines++; continue; }
+    if (/^\|.*\|\s*$/.test(trim)) { visualLines++; continue; }
     if (/^<[A-Z][\w]*/.test(trim)) { visualLines++; continue; }
   }
   return {
