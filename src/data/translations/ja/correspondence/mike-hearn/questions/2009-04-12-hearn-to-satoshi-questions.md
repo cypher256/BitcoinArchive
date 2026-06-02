@@ -22,6 +22,7 @@ secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
   - aftermath/2009-04-12-mike-hearn-biography
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
   - aftermath/2017-08-11-mike-hearn-publishes-emails

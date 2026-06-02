@@ -61,6 +61,8 @@ quotes:
     personSlug: "mike-hearn"
     date: "2011-03-07T14:13:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 <!-- quote: q1 -->

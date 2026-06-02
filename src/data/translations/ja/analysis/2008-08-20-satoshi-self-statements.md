@@ -27,6 +27,7 @@ secondarySources:
   - name: "Gavin Andresen — Eleven Years Ago Today (alert key handover)"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry

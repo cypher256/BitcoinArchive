@@ -30,6 +30,7 @@ secondarySources:
   - name: "White House — Establishment of the Strategic Bitcoin Reserve (Executive Order, 2025-03-06)"
     url: "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
 relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit

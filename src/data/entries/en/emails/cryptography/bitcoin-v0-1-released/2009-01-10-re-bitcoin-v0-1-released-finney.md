@@ -32,6 +32,8 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2009-01-08T19:27:40Z"
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 <!-- quote: q1 -->

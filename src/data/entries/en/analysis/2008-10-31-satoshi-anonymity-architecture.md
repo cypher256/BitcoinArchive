@@ -20,6 +20,7 @@ secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (April 2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
 relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation

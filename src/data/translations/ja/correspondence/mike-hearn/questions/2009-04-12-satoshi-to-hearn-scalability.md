@@ -23,6 +23,8 @@ secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
 translationStatus: complete
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

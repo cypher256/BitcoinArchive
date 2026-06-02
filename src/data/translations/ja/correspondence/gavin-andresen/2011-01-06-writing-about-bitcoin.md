@@ -22,6 +22,8 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 Rainey とは喜んで話す。 サトシ、 報道・広報・取材対応はしたくないと理解しているが、 そうだろうか ?

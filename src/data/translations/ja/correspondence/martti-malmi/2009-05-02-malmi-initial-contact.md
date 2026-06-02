@@ -21,6 +21,8 @@ secondarySources:
   - name: "COPA 対ライト裁判の証拠資料"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 translationStatus: complete
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 メッセージ本文:

@@ -20,6 +20,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 Message body follows:

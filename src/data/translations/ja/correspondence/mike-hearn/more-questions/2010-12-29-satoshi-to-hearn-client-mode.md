@@ -45,6 +45,8 @@ quotes:
     personSlug: "mike-hearn"
     date: "2010-12-27T20:21:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
+relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
 ---
 
 <!-- speaker: Mike Hearn -->

@@ -1438,13 +1438,28 @@ Good candidates:
       reader already has a body-level path to the entry.
 3. **Bidirectional required.** If A declares B as related, B must also
    declare A as related. Enforced by `npm run check:internal-links`.
-4. **No self-reference.** An entry cannot relate to itself.
-5. **No thread-internal relations.** If two entries are already in the
+4. **Reciprocal body inline-link for strong relations.** When the
+   relation is *strong* (a reader of A will substantively benefit
+   from reading B, not just be reminded of B's existence), the
+   reciprocal link should also exist as an **inline markdown link
+   in B's body prose** pointing to A — not only as a `relatedEntries`
+   entry. The `relatedEntries` side handles all related pairs (weak
+   and strong) mechanically and bidirectionally; body inline links
+   handle the strong subset, also bidirectionally. A new page that
+   declares 15 `relatedEntries` should expect that roughly half of
+   those are strong enough to warrant a body-prose mention in the
+   reciprocal direction; the remaining half stay as `relatedEntries`
+   only on both sides. Weak relations (mentioned for context, not
+   load-bearing for the argument) should not be forced into body
+   prose just to satisfy this rule — leave them as `relatedEntries`-
+   only and accept the asymmetry.
+5. **No self-reference.** An entry cannot relate to itself.
+6. **No thread-internal relations.** If two entries are already in the
    same thread (same directory), do not use `relatedEntries` for them.
-6. **Same `relatedEntries` in EN and JA mirrors.** Both language versions
+7. **Same `relatedEntries` in EN and JA mirrors.** Both language versions
    of an entry must declare the same set of related entries (and in the
    same priority order).
-7. **Format is the entry ID** (path relative to `src/data/entries/en/`
+8. **Format is the entry ID** (path relative to `src/data/entries/en/`
    without `.md`), e.g. `emails/cryptography/2008-10-31-bitcoin-whitepaper-final`.
 
 ### Why no data-side cap

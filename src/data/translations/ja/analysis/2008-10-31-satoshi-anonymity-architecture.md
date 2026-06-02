@@ -20,6 +20,7 @@ secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (April 2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
 relatedEntries:
+  - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
@@ -227,7 +228,7 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 - 自己主張型候補 (クレイグ・ライト) と名前一致候補 (ドリアン・ナカモト) は複数層で同時に整合しない。
 - 能力のみ適合の候補 (ピーター・トッド、金子勇、ポール・ルルー) は 1〜2 層 (実装能力、日本人名一致) で整合し、他で整合しない。
 
-各場合、整合しない層は公開記録から観察可能である。構造的観察は、いずれの候補も 6 層を同時には満たさない、ということ。本エントリの枠組みでは、層構造はこの結果の**原因**ではない — しかし、原因が公開記録に現れる**形式**である。
+各場合、整合しない層は公開記録から観察可能である。構造的観察は、どの候補も 6 層を同時には満たさない、ということ。本エントリの枠組みでは、層構造はこの結果の**原因**ではない — しかし、原因が公開記録に現れる**形式**である。
 
 本エントリは、層が意図的に非特定化を生むよう設計された、と主張するわけではない。記述的観察で十分である: 層はそこにあり、互いに独立であり、6 つの異なる識別次元を集合的にカバーしており、いくつかの次元で成立する身元仮説は他の次元で成立しない。
 
