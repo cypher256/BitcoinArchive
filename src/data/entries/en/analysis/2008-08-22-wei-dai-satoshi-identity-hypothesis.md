@@ -63,6 +63,14 @@ The hypothesis is that Wei Dai is the person behind the Satoshi Nakamoto pseudon
 
 ## 2. The arguments the hypothesis rests on
 
+| Argument | Central observation | Objection |
+|---|---|---|
+| §2.1 b-money conceptual proximity | b-money is whitepaper ref [1] and maps onto Bitcoin's monetary mechanism most tightly of all pre-Bitcoin proposals | Design proximity does not uniquely select — Hashcash → Adam Back is a parallel candidate by the same logic |
+| §2.2 Crypto++ codebase dependency | Bitcoin v0.1 used Wei Dai's Crypto++ for SHA-256 (22-month dependency through v0.4.x) | Crypto++ was the de-facto C++ standard of the era; the v0.3.6 SSE2 upgrade was proposed by "BlackEye", not Satoshi |
+| §2.3 Cypherpunk credentials | Long-tenure cypherpunk, early mailing-list subscriber, decades in adjacent communities | Applies to several candidates (Back, Finney, Szabo, Sassaman) — narrows the set but doesn't uniquely select |
+| §2.4 Capability profile | CS background at U. Washington + Microsoft employment + Crypto++ maintenance — consistent with v0.1's 19,901-line C++ codebase | Profile applies to many candidates and non-candidates; necessary but not sufficient |
+| §2.5 Windows-side environment overlap | Wei Dai's Crypto++ formative period was Windows / Microsoft VC++; matches v0.1's Visual C++ 6.0 / `.rar` / MingW PGP stack | Windows-side C++ was the late-2000s default; matches any Windows-side C++ developer of the period |
+
 ### 2.1 b-money's conceptual proximity to Bitcoin
 
 Of the eight references in the Bitcoin whitepaper, [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) is the one that maps most directly onto Bitcoin's monetary-design space. Both reuse proof-of-work as the source of digital scarcity, both posit a peer-to-peer network propagating new coins, both explicitly position the design within an anti-trust monetary frame, and both include a mining-style issuance mechanism. The b-money proposal was published on the cypherpunks mailing list in November 1998 and outlined two protocols — one synchronous-broadcast, one server-tracked — that anticipate aspects of Bitcoin's full-node and SPV-client distinction. The whitepaper cites b-money as reference [1].
@@ -104,6 +112,15 @@ The objection: this profile applies to many candidates and several non-candidate
 The objection: a Windows-side development environment in the late 2000s was the default across professional C++ work and is consistent with several candidates plus many non-candidate developers. The dimension contributes to the supporting picture but does not select Wei Dai uniquely; the same overlap applies to any Windows-side C++ developer of the period.
 
 ## 3. The counter-evidence
+
+| Counter-evidence | Central observation | Strength assessment |
+|---|---|---|
+| §3.1 August 22, 2008 email exchange | The Adam Back → Wei Dai → Satoshi chain reads as third-party reception; under the hypothesis, Wei Dai would be writing to himself about his own paper | Strongest archive-internal counter |
+| §3.2 "I wasn't aware of the b-money page" | Satoshi told Adam Back in private email he had not seen b-money before the referral | Under the hypothesis: a self-deception with no audience |
+| §3.3 2014 AALWA retrospective | Wei Dai distinguished himself from Satoshi and asserted Satoshi was "not previously active" in cypherpunks — a claim that argues against Wei Dai's own candidacy | Hypothesis requires sustained public self-deception including this self-undermining structural claim |
+| §3.4 Stylometric distance | Bitcoin Institute reanalysis of van Dorst corpus: top 22.99%, 4th of 5 named candidates (Szabo / Finney / Back ahead) | Across the four most-cited stylometric studies, Wei Dai never appears as a top match |
+| §3.5 Crypto++ codebase dependency cuts both ways | Crypto++ was the standard C++ crypto library of the era; the SSE2 upgrade was proposed by "BlackEye" | Weakens §2.2 rather than strengthening it under the hypothesis |
+| §3.6 Self-denial across multiple statements | 2014 AALWA + long-form interviews + sustained Crypto++ / LessWrong profile under his own name | Hypothesis requires decades of voluntary public self-deception |
 
 ### 3.1 The August 22, 2008 email exchange reads as third-party reception
 

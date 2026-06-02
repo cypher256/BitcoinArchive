@@ -90,6 +90,12 @@ The objection: Mixmaster is a remailer system (anonymity routing), not a digital
 
 ## 3. The counter-evidence
 
+| Counter-evidence | Central observation | Strength assessment |
+|---|---|---|
+| §3.1 No direct documentary link | No Sassaman ↔ Satoshi correspondence, no joint commits, no trace of Bitcoin involvement in any public corpus | The hypothesis's strongest single counter — its survival requires that everything happened entirely outside the public record |
+| §3.2 Patterson's silence | Sassaman's widow Meredith Patterson (herself a cryptographer) has neither endorsed nor denied the hypothesis | Information, but the silence on its own does not move the posterior probability in either direction |
+| §3.3 KU Leuven workload | Sassaman was an active PhD candidate at KU Leuven COSIC during 2008–2011, overlapping with Bitcoin's ~18-month intensive development window | Compatible but cost-bearing — possible, not a full refutation |
+
 ### 3.1 No direct documentary link
 
 The strongest counter-evidence is the absence of any direct documentary link between Sassaman and Satoshi:
@@ -116,7 +122,15 @@ Sassaman was an active PhD candidate at KU Leuven during 2008–2011 — the per
 
 The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during development, support a "not a visibly active cypherpunk during 2007–2008" reading.
 
-That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Sassaman's 2007–2008 public activity is documented in his [Wikipedia entry](https://en.wikipedia.org/wiki/Len_Sassaman) and conference proceedings: he gave *Anonymity for 2015* at 24C3 in Berlin (December 2007) and *Anonymity and its Discontents* at Black Hat USA 2007 in Las Vegas, and coauthored *The Byzantine Postman Problem* with Bart Preneel (May 2008). The talks and the paper are in the anonymity-networks specialty, not in digital-cash discussion specifically. Whether that level of public anonymity-research visibility implies the kind of cypherpunk-digital-cash visibility Wei Dai's identifiability argument selects against is a separate question — Sassaman was not invisible during the development window, but his visible activity was in a different specialty than the one the argument names.
+That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Sassaman's 2007–2008 public activity is documented in his [Wikipedia entry](https://en.wikipedia.org/wiki/Len_Sassaman) and in conference proceedings:
+
+| Date | Venue | Output |
+|---|---|---|
+| 2007-08 | Black Hat USA 2007 (Las Vegas) | Talk: *Anonymity and its Discontents* |
+| 2007-12 | 24C3 (Berlin) | Talk: *Anonymity for 2015* |
+| 2008-05 | Coauthored with Bart Preneel | Paper: *The Byzantine Postman Problem* |
+
+The talks and the paper are in the anonymity-networks specialty, not in digital-cash discussion specifically. Whether that level of public anonymity-research visibility implies the kind of cypherpunk-digital-cash visibility Wei Dai's identifiability argument selects against is a separate question — Sassaman was not invisible during the development window, but his visible activity was in a different specialty than the one the argument names.
 
 The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies equally regardless of whether the person behind the pseudonym was Sassaman, someone else, or a group.
 

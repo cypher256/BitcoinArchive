@@ -112,15 +112,14 @@ This is the most rigorous security review of v0.1 by an outside expert in the pu
 
 ## 5. The distinction: foresighted security vs. informal process
 
-The picture that emerges across §1–§4 is unusual:
+The picture across §1–§4 is unusual on two axes, and each axis is unusual on its own:
 
-- **Security architecture**: remarkably foresighted. Kaminsky's nine attempted exploits were all pre-blocked.
-- **Implementation process**: informal. No version control, no test suite, no issue tracker, `.rar` distribution. (Personal-environment markers — Hungarian notation, OpenSSL dependency, Visual C++ 6.0, MingW32 PGP footer — sit on a different axis and are collected in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/).)
+| Axis | Satoshi's practice | What's rare about it |
+|---|---|---|
+| Security architecture | Remarkably foresighted — all nine Kaminsky-attempted exploits pre-blocked | Most informal solo developers do not pre-block sophisticated cryptographic attacks they have not personally been targeted by |
+| Implementation process | Informal — no VCS, no test suite, no issue tracker, `.rar` distribution | Most developers with documented security foresight work within teams, with version control, and with formal test infrastructure |
 
-This combination is distinctive. It is rare in two directions:
-
-- The *foresighted security* end of this is rare among informal solo developers. Most informal solo developers do not pre-block sophisticated cryptographic attacks they have not personally been targeted by.
-- The *informal process* end of this is rare among developers with the security foresight Kaminsky documented. Most developers with that level of security awareness work within teams, with version control, and with formal test infrastructure.
+Personal-environment markers — Hungarian notation, OpenSSL dependency, Visual C++ 6.0, MingW32 PGP footer — sit on a different axis and are collected in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/).
 
 The combination supports a structural reading: Satoshi clearly thought hard about *what could go wrong with the system itself*, but did not work within the conventions of professional collaborative software engineering. The two competencies developed independently. This is not impossible — solo cryptographic systems builders with non-standard process backgrounds exist — but it is unusual enough to be worth naming as a distinguishing trait.
 

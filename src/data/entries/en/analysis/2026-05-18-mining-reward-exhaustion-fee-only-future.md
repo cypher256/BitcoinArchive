@@ -92,6 +92,13 @@ Satoshi made no recorded statement to the effect "fees *will* be sufficient." Th
 
 The arguments about whether a fee-only regime is sustainable fall into two main lines.
 
+| Dimension | §3.1 Sufficiency line | §3.2 Instability line |
+|---|---|---|
+| Central claim | As subsidy contracts, blockspace scarcity raises fees, and aggregate fee revenue converges to historic subsidy levels | Even with high total fee revenue, between-block fee variance introduces game-theoretic instabilities the subsidy era did not have |
+| Evidence cited | 2012 / 2016 / 2020 / 2024 halvings each cut new issuance without precipitating a security collapse | Carlsten, Kalodner, Weinberg, Narayanan (ACM CCS 2016): undercutting, fee-based forks, no honest-majority Nash equilibrium |
+| Requirement for success | Fees fund enough hashpower to make double-spend attacks economically unattractive against transacted value | Fee arrival pattern stable enough that rational miners prefer extending the honest chain over re-mining |
+| Status of argument | Empirical / adaptation-based reasoning | Theoretical model — the 2140 conditions cannot be verified in advance |
+
 ### 3.1 The sufficiency line
 
 The sufficiency argument is essentially: as the subsidy contracts, blockspace becomes scarcer relative to demand, fees rise, and the aggregate fee revenue per block converges to something close to what the subsidy used to provide. Proponents of this line cite the early halvings — the 2012, 2016, 2020, and 2024 halvings each cut new issuance in half without precipitating a security collapse — as evidence that the network can adapt. The view does not require fees to *match* the historic subsidy in dollar terms; it requires them to fund enough hashpower to make a double-spend attack economically unattractive against the value being transacted.
