@@ -4,7 +4,7 @@ date: 2009-02-12T20:08:03Z
 type: "mailing-list"
 source: "p2p-research-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"
-sourceNote: "P2P Research メーリングリストへの投稿。 サトシナカモト研究所のスレッドページが現存する正典写し。 この Steenbergen の返信には個別の永続リンクが存在しない。"
+sourceNote: "P2P Research メーリングリストへの投稿。 サトシ・ナカモト研究所のスレッドページが現存する正典写し。 この Steenbergen の返信には個別の永続リンクが存在しない。"
 author: "Martien van Steenbergen"
 participants:
   - name: "Martien van Steenbergen"
