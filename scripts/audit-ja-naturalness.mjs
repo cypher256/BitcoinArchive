@@ -139,21 +139,32 @@ if (!targets.length) {
 console.log(`🔍 ${targets.length} 件の JA ファイルを直訳調検査します (1 件あたり 30 秒〜2 分)。`);
 
 let totalFlagged = 0;
+let verifiedCount = 0;   // verifier returned a valid verdict (natural or not)
+let failedCount = 0;     // verifier call/parse failed — verdict unknown
+let skippedCount = 0;    // pre-check skip (file unreadable, prose too short)
 const reports = [];
+const failedFiles = [];
 for (let i = 0; i < targets.length; i++) {
   const file = targets[i];
   const rel = path.relative(REPO_ROOT, file);
   process.stdout.write(`[${i + 1}/${targets.length}] ${rel} ... `);
   let content;
   try { content = readFileSync(file, 'utf-8'); }
-  catch { console.log('読み取り失敗、 スキップ'); continue; }
+  catch { console.log('読み取り失敗、 スキップ'); skippedCount++; continue; }
   const prose = extractProse(content);
   if (prose.length < MIN_PROSE_CHARS || !CJK_RE.test(prose)) {
     console.log('散文短すぎ or 非 JA、 スキップ');
+    skippedCount++;
     continue;
   }
   const verdict = callVerifier(prose);
-  if (!verdict) { console.log('検証エージェント失敗、 スキップ'); continue; }
+  if (!verdict) {
+    console.log('✗ 検証エージェント失敗 (claude 未導入 / 応答 JSON 崩れ / timeout 等)');
+    failedCount++;
+    failedFiles.push(rel);
+    continue;
+  }
+  verifiedCount++;
   if (verdict.natural) { console.log('✓ 自然'); continue; }
   const issues = (verdict.issues || []).slice(0, 10);
   console.log(`✗ ${issues.length} 件の直訳調候補`);
@@ -161,20 +172,46 @@ for (let i = 0; i < targets.length; i++) {
   reports.push({ file: rel, issues });
 }
 
-if (!reports.length) {
-  console.log('\n✓ 全件 自然な日本語と判定されました。');
-  process.exit(0);
+console.log(
+  `\n=== 集計 ===\n` +
+  `対象 ${targets.length} 件: 検証成功 ${verifiedCount} / 検証失敗 ${failedCount} / 事前スキップ ${skippedCount}`,
+);
+
+if (reports.length) {
+  console.log('\n=== 直訳調候補レポート ===\n');
+  for (const r of reports) {
+    console.log(`📄 ${r.file}`);
+    for (const it of r.issues) {
+      console.log(`  • 「${it.phrase}」`);
+      console.log(`    → ${it.issue}`);
+      if (it.suggestion) console.log(`    💡 ${it.suggestion}`);
+    }
+    console.log();
+  }
+  console.log(`計 ${totalFlagged} 件の直訳調候補 (${reports.length} ファイル)。`);
 }
 
-console.log('\n=== 直訳調候補レポート ===\n');
-for (const r of reports) {
-  console.log(`📄 ${r.file}`);
-  for (const it of r.issues) {
-    console.log(`  • 「${it.phrase}」`);
-    console.log(`    → ${it.issue}`);
-    if (it.suggestion) console.log(`    💡 ${it.suggestion}`);
-  }
-  console.log();
+// Exit-code policy:
+// - any flagged issue                          -> 1 (violations found)
+// - no verifier success but verifier-eligible  -> 1 (audit could not run)
+// - all verified and no flags                  -> 0 (clean)
+// "verifier-eligible" = at least one file passed pre-checks. If every
+// file was pre-skipped (no JA prose), exiting 0 is correct.
+if (totalFlagged > 0) {
+  process.exit(1);
 }
-console.log(`計 ${totalFlagged} 件の直訳調候補 (${reports.length} ファイル)。`);
-process.exit(totalFlagged > 0 ? 1 : 0);
+if (failedCount > 0 && verifiedCount === 0) {
+  console.log(
+    `\n✗ 検証エージェントが 1 件も成功していません。 監査は未完了扱いです (失敗 ${failedCount} 件)。\n` +
+    `   失敗ファイル例:\n   - ` + failedFiles.slice(0, 5).join('\n   - '),
+  );
+  process.exit(1);
+}
+if (failedCount > 0) {
+  console.log(
+    `\n⚠️  検証失敗 ${failedCount} 件あり (成功 ${verifiedCount} 件)。 失敗分は監査対象外として扱われます。`,
+  );
+  process.exit(1);
+}
+console.log('\n✓ 全件 自然な日本語と判定されました。');
+process.exit(0);
