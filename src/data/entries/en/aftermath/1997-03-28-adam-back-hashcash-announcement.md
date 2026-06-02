@@ -29,6 +29,7 @@ secondarySources:
     url: "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
     note: "Secondary reporting on the 1997 announcement and its monetary-discourse positioning."
 relatedEntries:
+  - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"

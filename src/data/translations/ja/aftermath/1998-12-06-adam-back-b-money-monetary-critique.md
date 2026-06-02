@@ -29,6 +29,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Bitcoin, Adam Back and the Quest for Digital Cash"
     url: "https://bitcoinmagazine.com/culture/bitcoin-adam-back-and-digital-cash"
 relatedEntries:
+  - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"

@@ -32,6 +32,7 @@ secondarySources:
     url: "https://www.lesswrong.com/posts/6gAv9XwSjPmTGJfWS/bitcoin-and-me"
     note: "An early, named critique of Bitcoin's fixed-supply monetary policy from the author of b-money."
 relatedEntries:
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - analysis/2008-10-31-bitcoin-design-lineage
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement

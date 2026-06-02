@@ -39,6 +39,7 @@ secondarySources:
   - name: "Wei Dai — AALWA thread on LessWrong (2014)"
     url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
 relatedEntries:
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis

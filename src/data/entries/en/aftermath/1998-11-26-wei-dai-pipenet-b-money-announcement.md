@@ -26,6 +26,7 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"

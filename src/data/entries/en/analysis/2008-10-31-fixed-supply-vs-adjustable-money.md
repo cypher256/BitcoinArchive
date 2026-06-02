@@ -40,6 +40,7 @@ secondarySources:
   - name: "Carlsten, Kalodner, Weinberg, Narayanan — 'On the Instability of Bitcoin Without the Block Reward' (ACM CCS 2016)"
     url: "https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf"
 relatedEntries:
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique

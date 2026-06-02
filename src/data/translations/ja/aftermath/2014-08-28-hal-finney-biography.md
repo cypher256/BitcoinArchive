@@ -45,6 +45,7 @@ secondarySources:
   - name: "21ideas — Hal Finney Biography"
     url: "https://21ideas.org/en/hal-finney/"
 relatedEntries:
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2014-08-28-hal-finney-passes-away

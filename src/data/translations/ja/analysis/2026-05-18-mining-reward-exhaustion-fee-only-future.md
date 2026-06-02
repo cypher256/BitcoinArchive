@@ -32,6 +32,7 @@ secondarySources:
     url: "https://www.lesswrong.com/posts/6gAv9XwSjPmTGJfWS/bitcoin-and-me"
     note: "b-money の設計者であるウェイ・ダイ本人が、ビットコインの固定供給による金融政策設計に対して残した同時代の批判的所見。"
 relatedEntries:
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - analysis/2008-10-31-bitcoin-design-lineage
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement

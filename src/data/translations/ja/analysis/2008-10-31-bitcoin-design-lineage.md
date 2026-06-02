@@ -34,6 +34,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Adam Back's Complete Emails with Satoshi Nakamoto"
     url: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
 relatedEntries:
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - aftermath/1997-03-28-adam-back-hashcash-announcement
