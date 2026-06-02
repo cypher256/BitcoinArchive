@@ -52,6 +52,21 @@ Through 2018-2019 a public conflict developed between Wu and Zhan over Bitmain's
 
 Post-Bitmain, Wu founded **Matrixport** (2019, a Bitcoin financial services / custody platform) and **Bitdeer** (originally a Bitmain-internal cloud-mining service spun off in 2018, later operating independently with Wu in leadership). Both remain Bitcoin-centric businesses; Wu continues to be active in Bitcoin mining and adjacent infrastructure.
 
+## Career timeline
+
+| Year | Event |
+|---|---|
+| 1986 | Born in Chongqing, China |
+| 2011 | Translated the Bitcoin whitepaper into Chinese |
+| 2013 | Co-founded Bitmain Technologies with Micree Zhan |
+| Late 2013 | Antminer S1 ASIC released |
+| 2015–2018 | Bitmain dominates ASIC manufacturing; AntPool becomes largest Bitcoin mining pool |
+| 2017-05 | Signed the New York Agreement |
+| 2017-08-01 | Committed Bitmain-aligned hashpower to the Bitcoin Cash hard fork |
+| 2018 | Bitdeer spun off from Bitmain's internal cloud-mining service |
+| 2018–2019 | Bitmain leadership conflict with Zhan |
+| 2019 | Founded Matrixport |
+
 ## Significance to Bitcoin
 
 Wu's record matters in this archive for three reasons. First, the 2011 Chinese whitepaper translation is a foundational document in the Chinese-language Bitcoin community. Second, Bitmain's 2014–2018 dominance of ASIC manufacturing made Wu one of the most consequential individuals in Bitcoin mining-economics during that period; the geographic concentration of mining in China during the same years is partly downstream of Bitmain's customer base. Third, his commitment of hashpower to Bitcoin Cash at launch was structurally necessary for BCH to survive its first weeks; without large early hashpower, the chain would have been vulnerable to reorganization attacks during the difficulty-adjustment ramp.

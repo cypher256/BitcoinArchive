@@ -51,6 +51,17 @@ By October 2017 it was clear that the SegWit2x hard fork would not have communit
 
 On November 8, 2017 — three days before the planned activation at block 494784 — Belshe posted the [SegWit2x cancellation message](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) to the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list. The message was co-signed by five other principal signatories (Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, Erik Voorhees). The cancellation effectively ended the New York Agreement and closed the main-chain side of the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
 
+## Career timeline
+
+| Date | Event |
+|---|---|
+| Pre-2013 | Co-authored the SPDY protocol specification at Google — basis for HTTP/2 |
+| 2013-10 | Co-founded BitGo with Will O'Brien and Ben Davenport |
+| 2014–2016 | BitGo multisig SDK and HSM-backed signing service become standard exchange-industry infrastructure |
+| 2017-05-23 | Signed the New York Agreement at Consensus 2017 |
+| 2017-08 | SegWit activates on the Bitcoin main chain (NYA's first commitment) |
+| 2017-11-08 | Posted the SegWit2x cancellation message — three days before planned activation at block 494784 |
+
 ## Significance to Bitcoin
 
 Belshe's record matters in this archive for two reasons. First, BitGo's multisignature infrastructure is one of the foundational technical contributions that made Bitcoin viable for institutional holders during 2014–2018; without that custody layer, much of the corporate adoption that followed would have been operationally infeasible. Second, the November 8, 2017 cancellation message is the literal end of the New York Agreement — the moment at which the larger-block faction's main-chain campaign concluded, leaving Bitcoin Core's soft-fork-only protocol-evolution culture as the surviving model.

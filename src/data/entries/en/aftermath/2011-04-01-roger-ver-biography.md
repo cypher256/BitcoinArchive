@@ -39,7 +39,18 @@ Ver founded Memory Dealers in 2002, a Silicon Valley computer-parts e-commerce b
 
 ## Angel investing (2011–2014)
 
-Through 2011-2014 Ver was an early investor in many of the foundational Bitcoin businesses of that era — BitInstant (Charlie Shrem's exchange), Blockchain.info (block explorer / wallet), Kraken (exchange), Bitpay (merchant processor), Bitcoin Magazine itself, and others. He also funded an early stake in Ripple (then a separate payments protocol). At the time he was widely characterized as the "angel investor of Bitcoin," and the nickname "Bitcoin Jesus" — sometimes self-applied, sometimes journalist-affixed — emerged from his evangelistic style at conferences and YouTube videos.
+Through 2011-2014 Ver was an early investor in many of the foundational Bitcoin businesses of that era:
+
+| Investment | Role |
+|---|---|
+| BitInstant | Exchange (Charlie Shrem) |
+| Blockchain.info | Block explorer / wallet |
+| Kraken | Exchange |
+| Bitpay | Merchant processor |
+| Bitcoin Magazine | Media |
+| Ripple | Payments protocol (then separate) |
+
+At the time he was widely characterized as the "angel investor of Bitcoin," and the nickname "Bitcoin Jesus" — sometimes self-applied, sometimes journalist-affixed — emerged from his evangelistic style at conferences and YouTube videos.
 
 In 2014 Ver renounced his US citizenship and acquired citizenship from Saint Kitts and Nevis, citing tax and political reasons. The renunciation event later became a structural element of the 2024 US tax-fraud charges (see below).
 
@@ -50,6 +61,20 @@ By 2015 Ver had positioned bitcoin.com (the domain) as a public platform advocat
 ## US tax-fraud charges (2024)
 
 On April 30, 2024, Spanish authorities arrested Ver on a U.S. extradition request. The U.S. Department of Justice indictment (linked under `secondarySources`) alleges mail fraud, tax evasion, and false tax returns related to the 2014 expatriation event — specifically, that Ver allegedly under-reported the value of his bitcoin holdings at the time of the citizenship renunciation, evading approximately $48 million in U.S. exit-tax obligations. Ver disputes the charges. The case was ongoing at the time of the most recent edit to this entry; status updates will be noted here as they become public.
+
+## Career timeline
+
+| Date | Event |
+|---|---|
+| 1979-01-27 | Born in San Jose, California |
+| 2002 | Founded Memory Dealers |
+| Early 2011 | Discovered Bitcoin via the *Free Talk Live* podcast |
+| 2011 | Memory Dealers begins accepting Bitcoin (one of the first established retailers) |
+| 2011–2014 | Early-stage investments in BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, Ripple |
+| 2014 | Renounced US citizenship; acquired Saint Kitts and Nevis citizenship |
+| 2015–2017 | Promoted larger blocks via bitcoin.com during the block-size war |
+| 2017-08-01 | Bitcoin Cash hard fork; principal public advocate |
+| 2024-04-30 | Arrested in Spain on US extradition request (~$48 M exit-tax fraud charges) |
 
 ## Significance to Bitcoin
 

@@ -67,6 +67,20 @@ In January 2014 Buterin announced Ethereum at the North American Bitcoin Confere
 
 Buterin's post-2014 activity is principally Ethereum and is outside the scope of this archive. The chains and protocols he has touched since (Ethereum mainnet, the Beacon Chain merge to proof-of-stake, layer-2 rollups, etc.) are documented in Ethereum's own historical record.
 
+## Bitcoin-period timeline (2011–2014)
+
+| Date | Event |
+|---|---|
+| 1994-01-31 | Born in Kolomna, Russia |
+| ~2000 | Moved to Canada at age 6 |
+| 2011 | Began contributing to Mihai Alisie's *Bitcoin Weekly* at 5 BTC (~$3.50) per article (age 17) |
+| 2012-05 | *Bitcoin Magazine* first print issue published (co-founded with Mihai Alisie) |
+| 2011–2014 | Lead writer for *Bitcoin Magazine*; published `pybitcointools` library |
+| Late 2013 | Wrote and circulated the Ethereum whitepaper |
+| 2014-01 | Announced Ethereum at the North American Bitcoin Conference, Miami |
+| 2014-07 | Ethereum crowdsale |
+| 2015-07-30 | Ethereum mainnet (Frontier release) launched (age 21) |
+
 ## Significance to Bitcoin
 
 Buterin's Bitcoin-period record matters for two reasons recorded in this archive. First, he is the most prolific 2012–2014 Bitcoin Magazine contributor; his article archive constitutes a substantial portion of the contemporary public-facing documentation of Bitcoin's middle-early-period (between the launch period and the block-size war). Second, the [Bitcoin family-tree analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) records Ethereum as the most-cited "next-generation" chain whose origin runs *through* Bitcoin: the design motivation comes from Buterin's Bitcoin-Magazine-era thinking about scripting limits, even though the codebase is independent.
