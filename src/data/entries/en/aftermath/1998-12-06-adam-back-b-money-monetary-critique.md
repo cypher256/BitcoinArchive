@@ -79,7 +79,11 @@ The table below is the editor's structured comparison.
 | Back 1998-12-06 issue | Bitcoin's resolution |
 |---|---|
 | ❶ Moore's-Law mint-cost decline → inflation pressure | **Difficulty adjustment** — re-targeted every 2016 blocks to keep block-time approximately constant against compute-power growth, decoupling mint-rate from hardware-cost decline |
+| ❷ Borrowed-resource exploitation (CPU on machines the user does not own) | **Indirectly neutralised** — the mining-economics shift to ASIC-dominant hardware (see ❹) made general-purpose-CPU borrowing structurally uncompetitive; the vector was retired by a different system property, not by direct mitigation |
+| ❸ Transaction linkability ("pseudonymity, not unlinkable anonymity") | **Persists at the base layer** — Bitcoin's UTXO graph remains publicly traceable, and address-clustering / chain-analysis tooling operationalise the linkability Back identified; privacy-layer protocols exist as opt-in mitigations rather than base-layer fixes |
 | ❹ Economy-of-scale custom-hardware advantage | **Unresolved** — surfaced later as the mining-ASIC concentration question in Bitcoin's operational history |
+| ❺ Fiat on-ramp privacy leakage | **Reinforced by regulation** — modern AML / KYC frameworks require regulated fiat-onramps to verify identity, formalising the privacy gap Back named rather than closing it |
+| ❻ Fiat off-ramp identity exposure | **Same regulatory frame as ❺** — withdrawal-compliance requirements at regulated venues extend the same identification requirement to exit |
 | ❼ Resource-waste overhead equivalent to circulating value | **Live debate** — the energy-consumption critique that has continued to attach to Bitcoin's proof-of-work since launch |
 | Central proposal: "to create value you burn CPU time, just like with hashcash" | **Bitcoin's central mechanism** — Bitcoin couples a Hashcash-style PoW primitive with a decentralized digital-cash ledger and uses block-subsidy issuance for mint allocation |
 

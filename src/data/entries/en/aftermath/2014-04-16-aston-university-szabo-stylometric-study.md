@@ -54,24 +54,29 @@ This was the first multi-candidate academic stylometric examination of [Satoshi 
 
 **The candidate set:**
 
-The 11 candidates examined included those named in earlier journalistic and forum-community speculation:
+The 11 candidates examined were drawn from earlier journalistic and forum-community speculation. The four publicly named candidates:
 
-- Nick Szabo
-- Dorian S. Nakamoto (named in the March 2014 Newsweek piece)
-- Vili Lehdonvirta
-- Michael Clear
+| Candidate | Source of inclusion |
+|---|---|
+| Nick Szabo | Standing speculation list, with the largest study corpus (40+ academic papers from his personal website plus a substantial Unenumerated blog corpus) |
+| Dorian S. Nakamoto | Named in the March 2014 *Newsweek* piece |
+| Vili Lehdonvirta | Earlier journalistic / forum-community speculation |
+| Michael Clear | Earlier journalistic / forum-community speculation |
+| 7 unnamed others | Drawn from the standing list of widely-named Satoshi candidates |
 
-— along with seven others drawn from the standing list of widely-named Satoshi candidates. The Aston team considered hundreds of writing samples per candidate, with a particularly large sample for Szabo: more than 40 academic papers from his personal website and a substantial corpus of his Unenumerated blog posts.
+The Aston team considered hundreds of writing samples per candidate, with the largest sample for Szabo as noted above.
 
 **Methodology:**
 
-The Aston study applied **forensic linguistic / stylometric analysis** — the same family of methods used in document examination cases for litigation, threat-attribution, and historical authorship disputes. Variables examined include:
+The Aston study applied **forensic linguistic / stylometric analysis** — the same family of methods used in document examination cases for litigation, threat-attribution, and historical authorship disputes. Variables examined:
 
-- Distinctive vocabulary use across candidate corpora.
-- Punctuation and spelling conventions (notably the British/American spelling mix and the double-spacing-after-period pattern visible in Satoshi's writing).
-- Sentence-construction patterns and syntactic preferences.
-- Hyphenation conventions and compound-word formation.
-- Recurring discourse markers and stylistic tells across multiple writing-context types.
+| Variable | Examined for |
+|---|---|
+| Vocabulary | Distinctive vocabulary use across candidate corpora |
+| Punctuation & spelling | British/American spelling mix, double-spacing-after-period pattern visible in Satoshi's writing |
+| Sentence construction | Construction patterns, syntactic preferences |
+| Hyphenation | Hyphenation conventions, compound-word formation |
+| Discourse markers | Recurring stylistic tells across multiple writing-context types |
 
 **The reported conclusion:**
 

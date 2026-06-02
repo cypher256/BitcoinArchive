@@ -50,14 +50,16 @@ On April 13, 2024, **Bas van Dorst** released ["Where is Satoshi?"](https://gith
 
 For every (author, time-window) pair the project computes:
 
-- **N-gram analysis** at the 1/2/3-gram level (vocabulary, phrase patterns).
-- **Burrows' Delta** — the standard stylometric distance metric in computational stylometry.
-- **Jaccard similarity** — set-overlap measure across vocabulary.
-- **Five readability indices**: Flesch, Gunning Fog, Dale-Chall, Coleman, SMOG.
-- **Punctuation patterns**, including hyphenation conventions and double-spacing-after-period (one of the markers later highlighted in the [Carreyrou NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)).
-- **Word-length frequency distributions**.
-- **Personal pronoun usage** (first-person singular vs. plural, presence/absence patterns).
-- **British vs. American spelling variants** — including the British-spelling tells in Satoshi's writing that have driven multiple identification hypotheses.
+| Metric | What it measures |
+|---|---|
+| N-gram analysis (1/2/3-gram) | Vocabulary and phrase patterns |
+| Burrows' Delta | Standard stylometric distance metric in computational stylometry |
+| Jaccard similarity | Set-overlap measure across vocabulary |
+| Five readability indices | Flesch, Gunning Fog, Dale-Chall, Coleman, SMOG |
+| Punctuation patterns | Hyphenation conventions, double-spacing-after-period (later highlighted in the [Carreyrou NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)) |
+| Word-length frequency distributions | Lexical-length signature |
+| Personal pronoun usage | First-person singular vs. plural, presence/absence patterns |
+| British vs. American spelling variants | Including the British-spelling tells in Satoshi's writing that have driven multiple identification hypotheses |
 
 **Data release:**
 
