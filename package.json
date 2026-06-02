@@ -30,6 +30,7 @@
     "audit:inline-reference-gaps": "node scripts/check-internal-links.mjs --inline-gaps",
     "audit:external-link-redundancy": "node scripts/check-external-link-redundancy.mjs",
     "audit:external-links": "node scripts/audit-external-links.mjs",
+    "audit:ja-naturalness": "node scripts/audit-ja-naturalness.mjs",
     "audit:bitcointalk-threads": "node scripts/check-bitcointalk-thread-coherence.mjs",
     "audit:f-candidates": "node scripts/check-editorial-markers.mjs --report-f-candidates",
     "audit:quote-translation-consistency": "node scripts/check-quote-translation-consistency.mjs",
