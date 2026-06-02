@@ -679,6 +679,14 @@ th {
   .figure-outer {
     margin-inline: calc((100vw - 100%) / -2);
   }
+  /* Exception: figure-outer wrapping a 3-column-or-fewer table
+     stays in the container so it never exceeds the container
+     width. 4-column-or-more tables and all mermaid / chart
+     figures keep the breakout above.
+     `:has` requires Chrome 105+ / Safari 15.4+ / Firefox 121+. */
+  .figure-outer:has(table):not(:has(table tr > :nth-child(4))) {
+    margin-inline: 0;
+  }
 }
 
 /* Visual block: explicit margin override kills the <figure>
@@ -704,9 +712,16 @@ th {
      must be width: 100% (not max-content) for the chart to use
      the available room. position: relative + overflow-y: hidden
      supports the existing tooltip pattern. */
-.figure-block[data-kind="mermaid"],
-.figure-block[data-kind="table"] {
+.figure-block[data-kind="mermaid"] {
   width: max-content;
+  max-width: 100%;
+}
+/* Table figure-blocks fill the container width so a small 2-3 col
+   table doesn't shrink to its natural width and leave the container
+   half empty. Large tables still overflow inside the block thanks
+   to its `overflow-x: auto`. */
+.figure-block[data-kind="table"] {
+  width: 100%;
   max-width: 100%;
 }
 .figure-block[data-kind="chart"] {
