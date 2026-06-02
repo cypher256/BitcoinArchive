@@ -1438,21 +1438,36 @@ Good candidates:
       reader already has a body-level path to the entry.
 3. **Bidirectional required.** If A declares B as related, B must also
    declare A as related. Enforced by `npm run check:internal-links`.
-4. **Reciprocal body inline-link for strong relations.** When the
-   relation is *strong* (a reader of A will substantively benefit
-   from reading B, not just be reminded of B's existence), the
-   reciprocal link should also exist as an **inline markdown link
-   in B's body prose** pointing to A — not only as a `relatedEntries`
-   entry. The `relatedEntries` side handles all related pairs (weak
-   and strong) mechanically and bidirectionally; body inline links
-   handle the strong subset, also bidirectionally. A new page that
-   declares 15 `relatedEntries` should expect that roughly half of
-   those are strong enough to warrant a body-prose mention in the
-   reciprocal direction; the remaining half stay as `relatedEntries`
-   only on both sides. Weak relations (mentioned for context, not
-   load-bearing for the argument) should not be forced into body
-   prose just to satisfy this rule — leave them as `relatedEntries`-
-   only and accept the asymmetry.
+4. **Reciprocal body inline-link for strong relations — editorial
+   types only.** When the relation is *strong* (a reader of A will
+   substantively benefit from reading B, not just be reminded of B's
+   existence), the reciprocal link should also exist as an **inline
+   markdown link in B's body prose** pointing to A — not only as a
+   `relatedEntries` entry. The `relatedEntries` side handles all
+   related pairs (weak and strong) mechanically and bidirectionally;
+   body inline links handle the strong subset, also bidirectionally.
+
+   **Scope: editorial types only** (`article`, `analysis`, `biography`,
+   `design`). Primary-source types (`correspondence`, `mailing-list`,
+   `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`) are
+   **excluded** from this rule — their bodies are the verbatim source
+   record and must not carry editor-inserted prose for any purpose,
+   per [§ Primary-Source Entries](#primary-source-entries) and
+   [§ No editor narrator inside primary-source bodies](#no-editor-narrator-inside-primary-source-bodies).
+   `relatedEntries`-side bidirectionality (rule 3) continues to apply
+   to primary-source entries; only body-prose reciprocity is
+   restricted to editorial types.
+
+   A new editorial page that declares 15 `relatedEntries` should
+   expect that roughly half of those are strong enough to warrant a
+   body-prose mention in the reciprocal direction; the remaining half
+   stay as `relatedEntries` only on both sides. Weak relations
+   (mentioned for context, not load-bearing for the argument) should
+   not be forced into body prose just to satisfy this rule — leave
+   them as `relatedEntries`-only and accept the asymmetry. Strong
+   relations whose other side is a primary-source entry rely on
+   `relatedEntries` alone in the primary-source direction, with body
+   inline-link reciprocity provided only on the editorial side.
 5. **No self-reference.** An entry cannot relate to itself.
 6. **No thread-internal relations.** If two entries are already in the
    same thread (same directory), do not use `relatedEntries` for them.
