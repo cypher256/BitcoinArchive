@@ -677,7 +677,10 @@ th {
 }
 @media (min-width: 1500px) {
   .figure-outer {
-    margin-inline: calc((100vw - 100%) / -2);
+    /* Breakout to viewport edges minus a small horizontal gutter
+       so 4-column-or-more tables / mermaid / chart figures don't
+       sit flush against the viewport edge (hard to read). */
+    margin-inline: calc((100vw - 100%) / -2 + 2rem);
   }
   /* Exception: figure-outer wrapping a 3-column-or-fewer table
      stays in the container so it never exceeds the container
@@ -712,17 +715,19 @@ th {
      must be width: 100% (not max-content) for the chart to use
      the available room. position: relative + overflow-y: hidden
      supports the existing tooltip pattern. */
-.figure-block[data-kind="mermaid"] {
+.figure-block[data-kind="mermaid"],
+.figure-block[data-kind="table"] {
   width: max-content;
   max-width: 100%;
 }
-/* Table figure-blocks fill the container width so a small 2-3 col
-   table doesn't shrink to its natural width and leave the container
-   half empty. Large tables still overflow inside the block thanks
-   to its `overflow-x: auto`. */
-.figure-block[data-kind="table"] {
+/* 3-column-or-fewer table figure-blocks fill the container width
+   so a small 2-3 col table doesn't shrink to its natural width
+   and leave the container half empty. 4-column-or-more tables
+   keep `width: max-content` so their column widths stay
+   content-based (avoids the "container leftover space stretches
+   one descriptive column" effect on matrix-style wide tables). */
+.figure-block[data-kind="table"]:not(:has(table tr > :nth-child(4))) {
   width: 100%;
-  max-width: 100%;
 }
 .figure-block[data-kind="chart"] {
   width: 100%;
