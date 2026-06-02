@@ -681,6 +681,7 @@ export const tagTranslations: Record<string, string> = {
   'trusted-setup': 'トラステッドセットアップ',
   'tweet': 'ツイート',
   'twitter': 'Twitter',
+  'uasf': 'UASF',
   'ui': 'UI',
   'uk-high-court': '英国高等裁判所',
   'upnp': 'UPnP',

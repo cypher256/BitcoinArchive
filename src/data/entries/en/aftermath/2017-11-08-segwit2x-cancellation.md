@@ -1,5 +1,5 @@
 ---
-title: "SegWit2x cancelled three days before activation — Mike Belshe ends the New York Agreement (November 2017)"
+title: "SegWit2x cancelled about a week before activation — Mike Belshe ends the New York Agreement (November 2017)"
 date: 2017-11-08T17:00:00Z
 type: "mailing-list"
 source: "linuxfoundation"
@@ -8,7 +8,7 @@ author: "Mike Belshe"
 participants:
   - name: "Mike Belshe"
     slug: "mike-belshe"
-description: "Mike Belshe suspended the SegWit2x hard fork on the mailing list, three days before the planned 2 MB activation at block 494784. The New York Agreement collapsed without a chain split."
+description: "Mike Belshe suspended the SegWit2x hard fork on the mailing list, about a week before the planned 2 MB activation at block 494784. The New York Agreement collapsed without a chain split."
 isSatoshi: false
 tags:
   - "segwit2x"
@@ -21,6 +21,7 @@ secondarySources:
   - name: "Wikipedia — SegWit2x"
     url: "https://en.wikipedia.org/wiki/SegWit2x"
 relatedEntries:
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2015-08-15-bitcoin-xt-launch
@@ -29,7 +30,7 @@ relatedEntries:
   - aftermath/2013-10-01-mike-belshe-biography
 ---
 
-On November 8, 2017, [Mike Belshe](https://en.wikipedia.org/wiki/SegWit2x) announced on the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list that the SegWit2x hard fork — scheduled for block 494784, approximately three days later — was being suspended. The full message:
+On November 8, 2017, [Mike Belshe](https://en.wikipedia.org/wiki/SegWit2x) announced on the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list that the SegWit2x hard fork — scheduled for block 494784, approximately one week later — was being suspended. The full message:
 
 <!-- audit:quote-skip -->
 > "Our goal has always been a smooth upgrade for Bitcoin. Although we strongly believe in the need for a larger block size, there is something we believe is even more important: keeping the community together. Unfortunately, it is clear that we have not built sufficient consensus for a clean blocksize upgrade at this time. Continuing on the current path could divide the community and be a setback to Bitcoin's growth. This was never the goal of Segwit2x."

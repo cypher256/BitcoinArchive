@@ -49,7 +49,7 @@ Belshe was one of the principal signatories of the [New York Agreement](https://
 
 By October 2017 it was clear that the SegWit2x hard fork would not have community-wide support. Bitcoin Core developers had been publicly opposed throughout, the user-activated soft fork (UASF) movement had demonstrated that node operators could enforce protocol rules independently of mining hashrate, and several major exchanges signaled they would not list a SegWit2x chain.
 
-On November 8, 2017 — three days before the planned activation at block 494784 — Belshe posted the [SegWit2x cancellation message](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) to the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list. The message was co-signed by five other principal signatories (Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, Erik Voorhees). The cancellation effectively ended the New York Agreement and closed the main-chain side of the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
+On November 8, 2017 — about a week before the planned activation at block 494784 — Belshe posted the [SegWit2x cancellation message](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) to the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list. The message was co-signed by five other principal signatories (Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, Erik Voorhees). The cancellation effectively ended the New York Agreement and closed the main-chain side of the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
 
 ## Career timeline
 
@@ -60,7 +60,7 @@ On November 8, 2017 — three days before the planned activation at block 494784
 | 2014–2016 | BitGo multisig SDK and HSM-backed signing service become standard exchange-industry infrastructure |
 | 2017-05-23 | Signed the New York Agreement at Consensus 2017 |
 | 2017-08 | SegWit activates on the Bitcoin main chain (NYA's first commitment) |
-| 2017-11-08 | Posted the SegWit2x cancellation message — three days before planned activation at block 494784 |
+| 2017-11-08 | Posted the SegWit2x cancellation message — about a week before planned activation at block 494784 |
 
 ## Significance to Bitcoin
 

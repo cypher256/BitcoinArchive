@@ -1,5 +1,5 @@
 ---
-title: "SegWit2x が有効化 3 日前に中止 — マイク・ベルシェがニューヨーク合意を終わらせる (2017 年 11 月)"
+title: "SegWit2x が有効化約 1 週間前に中止 — マイク・ベルシェがニューヨーク合意を終わらせる (2017 年 11 月)"
 date: 2017-11-08T17:00:00Z
 type: "mailing-list"
 source: "linuxfoundation"
@@ -8,7 +8,7 @@ author: "Mike Belshe"
 participants:
   - name: "Mike Belshe"
     slug: "mike-belshe"
-description: "マイク・ベルシェがメーリングリストで SegWit2x ハードフォーク中止を告知。ブロック 494784 での 2 MB 有効化予定の 3 日前。ニューヨーク合意はチェーン分裂を生まず崩壊した。"
+description: "マイク・ベルシェがメーリングリストで SegWit2x ハードフォーク中止を告知。ブロック 494784 での 2 MB 有効化予定の約 1 週間前。ニューヨーク合意はチェーン分裂を生まず崩壊した。"
 isSatoshi: false
 tags:
   - "segwit2x"
@@ -21,6 +21,7 @@ secondarySources:
   - name: "Wikipedia — SegWit2x"
     url: "https://en.wikipedia.org/wiki/SegWit2x"
 relatedEntries:
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2015-08-15-bitcoin-xt-launch
@@ -29,7 +30,7 @@ relatedEntries:
   - aftermath/2013-10-01-mike-belshe-biography
 ---
 
-2017 年 11 月 8 日、[マイク・ベルシェ](https://en.wikipedia.org/wiki/SegWit2x)は `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストで、約 3 日後のブロック 494784 で予定されていた SegWit2x ハードフォークの中止を告知した。投稿全文:
+2017 年 11 月 8 日、[マイク・ベルシェ](https://en.wikipedia.org/wiki/SegWit2x)は `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストで、約 1 週間後のブロック 494784 で予定されていた SegWit2x ハードフォークの中止を告知した。投稿全文:
 
 <!-- audit:quote-skip -->
 > 「ビットコインの円滑なアップグレードが我々の目標だった。より大きなブロックサイズが必要だと強く信じてはいるが、それ以上に大切だと我々が信じるものがある ─ コミュニティを一つに保つこと、である。残念ながら、現時点ではクリーンなブロックサイズアップグレードに必要な合意は形成できていないことが明らかになった。現在の経路を進めばコミュニティを分裂させ、ビットコインの成長の妨げになりかねない。それは Segwit2x の目標ではなかった。」

@@ -23,6 +23,7 @@ secondarySources:
   - name: "BIP 101 — Increase maximum block size"
     url: "https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki"
 relatedEntries:
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
   - bip/2015-12-21-bip-0141

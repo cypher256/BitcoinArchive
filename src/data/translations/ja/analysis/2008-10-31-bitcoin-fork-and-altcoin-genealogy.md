@@ -99,7 +99,7 @@ inlineLinkKeywords:
 | 2016-10-13 | Bitcoin Unlimited | アンドリュー・ストーン他 | 可変ブロックサイズ、マイナー主導 | 2018 年までに無視できる占有率 |
 | 2017-08-01 | [ビットコインキャッシュ (BCH)](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) | [ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/) (初期のビットコイン投資家、bitcoin.com 運用者)、[ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/) (Bitmain 共同創業者、ビットコイン採掘ハードウェア)、[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/) (Bitcoin Core 寄稿者、Bitcoin ABC リード) | 8 MB ブロック、SegWit なし、ブロック 478558 で分岐 | 規模の小さい生存チェーン。2018 年にさらに分裂 |
 | 2017-10-24 | ビットコインゴールド (BTG) | ジャック・リャオ (LightningASIC) | Equihash PoW (ASIC 耐性)、ブロック 491407 で分岐 | ニッチな生存チェーン。2018 年・2020 年に 51% 攻撃を受けた |
-| 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | [マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/) (BitGo 共同創業者、ビットコイン保管事業) 他 (ニューヨーク合意の主要ビットコイン事業者の署名者) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化 3 日前に中止。分岐は発生せず |
+| 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | [マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/) (BitGo 共同創業者、ビットコイン保管事業) 他 (ニューヨーク合意の主要ビットコイン事業者の署名者) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化約 1 週間前に中止。分岐は発生せず |
 | 2018-11-15 | [ビットコイン SV (BSV)](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | クレイグ・ライト、カルヴィン・エア (nChain) | 128 MB ブロック、「オリジナル」 オペコードを復活 | 2018 年の BCH ハッシュ戦争分裂を生き残る。COPA v Wright (2024) でライト敗訴後、占有率はさらに減少 |
 
 2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い問いはプロトコルガバナンスにあった ─ 開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という問いである。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちがビットコインキャッシュとして分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html)による土壇場での中止が、本体チェーン側の論争を終わらせた。
@@ -142,7 +142,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
          : SegWit が本体チェーンで有効化 (8 月 24 日)
     %% link: /BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/
-         : SegWit2x が予定ハードフォーク 3 日前に中止 (11 月 8 日)
+         : SegWit2x が予定ハードフォーク 約 1 週間前に中止 (11 月 8 日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/
     2018 : BSV が BCH から分岐 (11 月 15 日、128 MB、 オリジナルオペコード復活)
     %% link: /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
@@ -152,7 +152,7 @@ timeline
 
 ## 4. 正典のチェーンが生き残った理由
 
-分裂したいずれのチェーンもビットコインに取って代わらなかった理由として、構造的な要因が三つ挙げられる:
+分裂したどのチェーンもビットコインに取って代わらなかった理由として、構造的な要因が三つ挙げられる:
 
 - **ハッシュレートにおけるネットワーク効果**。分裂したチェーン群は、相対的に小さいハッシュレートで開始した。これにより攻撃コストが低く、確認時間が遅くなる。ビットコインゴールドは二度の 51% 攻撃を受け (2018 年・2020 年)、BSV は繰り返し起きた再編成を受けた。
 - **ブランドと取引所上場の慣性**。主要な取引所は本体チェーン上のビットコインのティッカーとアドレス形式を維持した。新しいティッカー (BCH、BSV、BTG) は別個の市場を形成したが、規模はずっと小さい。
