@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
 On November 11, 2022, FTX Trading Ltd. — along with Alameda Research and over 130 affiliated entities — filed for Chapter 11 bankruptcy in U.S. Bankruptcy Court. Founder Sam Bankman-Fried (SBF) resigned as CEO.

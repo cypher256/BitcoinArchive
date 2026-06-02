@@ -29,6 +29,7 @@ secondarySources:
     url: "https://www.theverge.com/2024/11/14/24296595/heather-morgan-razzlekhan-bitfinex-hack-sentencing-laundering"
 relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
+  - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
 On August 2, 2016, 119,756 bitcoins were drained from hot wallets at the Hong Kong–based exchange **Bitfinex** in 2,072 unauthorized transactions. The haul was worth roughly $72 million at the time of the theft; by the time of the arrests it had appreciated to around $4.5 billion. For six years the funds sat in a single cluster of addresses tied to the breach, with only small portions tumbled through mixers and cashed out. The bulk of the stolen coins did not move.
