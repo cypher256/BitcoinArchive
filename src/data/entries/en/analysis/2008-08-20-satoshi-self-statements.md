@@ -235,3 +235,5 @@ The systematic pattern: **operational and technical self-statements converge wit
 - Satoshi made very few motivational statements; the project's anti-trust framing came through code and design choices more than through explicit self-description.
 - The departure sequence in April 2011 is consistent across three independent recipient channels (Mike Hearn, Gavin Andresen, and the BitcoinTalk silence that followed).
 - Where self-statements converge with behavioral evidence, both describe the developer. Where they diverge, the divergence is concentrated entirely in identity-locating claims — exactly the divergence pattern of a designed pseudonym.
+
+What the self-statements inventory captures is the *content* axis — what Satoshi did say. The complementary axis — what Satoshi *did not* respond to — is in [Satoshi's non-technical silence](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/), which catalogues non-technical conversational openings that received either no reply, a one-line acknowledgement, or a redirection to technical content.

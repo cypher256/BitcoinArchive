@@ -152,4 +152,6 @@ Approximately 1.1 million BTC were mined under a single coordinated pattern in B
 
 Across mailing-list and forum messages, Satoshi explained design choices, responded to technical objections, and made operational decisions — declining the WikiLeaks donation push in December 2010, handing source-repository commit rights and the network alert key to Andresen in late 2010 and early 2011.
 
+For the ideological lineage Satoshi designed inside — Hayek's 1976 *Denationalisation of Money*, the 1990s Extropian milieu, the cypherpunk movement, and the bounded direct-influence claims supported by the primary record — see [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/) and the companion analysis [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+
 *[Context: This biography is the documentary basis for the protagonist of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — every dated event the protagonist participates in is anchored to the primary records compiled here.]*

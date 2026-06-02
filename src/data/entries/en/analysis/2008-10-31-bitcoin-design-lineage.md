@@ -177,3 +177,5 @@ Other named-candidate hypotheses (Sassaman, Kaneko, Todd, Wright, etc.) are not 
 - The "novel synthesis" category claims absence of precedent only at the level of integration. Some sub-components have related prior work in distributed-systems literature; the claim is that the specific *synthesis* is novel.
 
 *[Editor: this entry is the canonical place in the archive for "what Bitcoin reuses vs invents". Hypothesis entries should not duplicate the table here; they should reference this entry and cite the specific row(s) relevant to their argument.]*
+
+The technical-lineage focus of this entry sits inside the broader ideological lineage traced from Hayek's 1976 *Denationalisation of Money* through the 1990s Extropian and cypherpunk milieus; that earlier-stage ideological framing is in [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/).
