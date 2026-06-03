@@ -68,3 +68,5 @@ translationStatus: complete
 『The Patoshi Mining Machine』でラーナーは、Patoshi が 50 台以上のネットワーク接続コンピューターではなく **マルチスレッドの単一高性能 CPU** を使用したと結論付けた。ナンス空間は並列スレッドで走査される 5 つのサブレンジに分割され、Bitcoin v0.1 の標準クライアントではなく SSE2 最適化を施した修正版マイニングクライアントが使用されていた。
 
 Patoshi 分析は史上最も重要なブロックチェーンフォレンジクスの一つであり続けている。サトシ・ナカモトがビットコインの総供給量 2,100 万 BTC の約 5%を蓄積し — そしてそれを一度も使わないことを選んだことを明らかにした。
+
+その後の研究が当初の信号を複数の方向から精緻化した: [ラーナー伝記](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は分析者の長年の追跡記録、 [2013 年ナンス LSB 発見](/BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/)と [2019 年「Patoshi」 命名](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)は方法論的追加、 [2021 年 PLOS ONE Patoshi 異常性研究](/BitcoinArchive/ja/entries/aftermath/2021-09-30-plos-one-patoshi-anomaly-study/)は同パターンの査読論文初出、 [ハル・フィニー身元仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)は Patoshi をフィニー=サトシ可能性と照らして読み、 [同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)は Patoshi をフォレンジック帰属の事例として扱い、 [2026 年ノア・ドウ訴訟](/BitcoinArchive/ja/entries/aftermath/2026-05-28-noah-doe-lawsuit/)は Patoshi が確立した休眠コイン帰属を保管返還請求の法的前提として援用する。

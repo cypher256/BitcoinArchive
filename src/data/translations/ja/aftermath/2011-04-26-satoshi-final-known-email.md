@@ -76,3 +76,5 @@ translationStatus: complete
 最後に、ネットワークアラートキー — すべてのビットコインクライアントに緊急メッセージを配信するための重要なツール — を移譲し、プロジェクトの引き継ぎの最後の要素を完了させた。
 
 [アンドレセンは返信](/BitcoinArchive/ja/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/)でアラートキーを受諾し、In-Q-Tel の招きで CIA の会議でビットコインのプレゼンテーションを行うことを明かした。サトシが返信することはなかった。以降、サトシからの確認済みの通信は記録されていない。
+
+本最終既知メール記録は複数のエントリから参照される: [ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) (サトシの公的存在の開始と終了の対)、 [同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) (撤退後の沈黙を設計の証拠として)、 [2011-11-20 ビットコイン v0.5 Crypto++ 依存除去](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/) (サトシ以降初のコードベース変更)、 [サトシ設計 vs 現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) (サトシ以降の時代がどこから始まったか)、 [デジタルゴールド構造的特徴分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) (創設者撤退を資産クラスの根拠的性質として)。

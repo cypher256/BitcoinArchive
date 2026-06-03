@@ -180,3 +180,5 @@ PoW で重み付けされた最長チェーン規則による分散型合意形�
 *[編者注：本エントリーは「ビットコインが何を再利用し何を発明したか」 のアーカイブ内における正典の場所である。仮説エントリーは本表の内容を重複して書くべきではなく、本エントリーを参照し、論点に関係する個別の行を引用するべきである。]*
 
 本エントリーの技術系譜の焦点は、 ハイエク 1976 年『貨幣発行自由化論』 から 1990 年代のエクストロピアン・サイファーパンク環境を経てビットコインに至る、 より広い思想史的系譜の中に位置する。 その一段早い思想枠組みは[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)で扱う。
+
+本エントリーは、 「ビットコインが何を再利用し何を発明したか」 の単一典拠を必要とする仮説議論・一次資料レビューの上流参照となる。 [ウェイ・ダイ身元仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) (b-money 構成要素)、 [ニック・サボ身元仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) (Bit Gold 構成要素)、 [サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) (Hashcash 構成要素)、 [Hashcash 告知一次資料記録](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)、 [アダム・バックの 1998 年 b-money 経済批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)、 [ビットコインの仕組み視覚用語集](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) (読者向け層) から呼び出される。
