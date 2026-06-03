@@ -177,4 +177,6 @@ Reasons consistent with the record:
 - The discipline is best read as a **communication-layer anonymity architecture**, complementary to the [technical anonymity layer](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) (Tor, anonymising mail, header stripping). Where the technical layer keeps the *channel* opaque, this layer keeps the *content* opaque.
 - The pattern's consistency over hundreds of opportunities is the load-bearing observation; no single message would carry the reading.
 
+This non-technical-silence analysis is treated as a complementary reading by [the cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — the independent-arrival entry covers the technical-axis side of Satoshi's documented practice, and references this entry as the behavioural-axis counterpart that records the same pattern on non-technical openings.
+
 *[Editor: this entry catalogues representative cases rather than enumerating every recorded exchange. A complete sweep of the Malmi 257-message corpus and the BitcoinTalk record is left as a future expansion; any additional exception cases that surface should be added to the §1 matrix and assessed against the five-pattern classification in §2.]*

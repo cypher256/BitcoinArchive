@@ -145,3 +145,5 @@ SegWit は 2017 年 8 月 24 日に主鎖で起動。
 ## ビットコインガバナンスコーパスにおける位置
 
 ブロックサイズ戦争は、 ビットコインのプロトコル変更がどう実現するかに関する議論で最も多く引用される単一の事件。 [ビットコイン家系図分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)が論争をフォーク史記録の中で広く整理し、 [「フォーク戦争はオープンソースではない」 分析](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)がオープンソース運営の視点で読むなら、 本エントリは記録された一連の流れ ― 段階・提案・起動結果 ― を整理し、 ビットコインの運営モデルに関する議論が実際に起きた共有記録に立ち返れるようにする。
+
+本段階別再構成は、 論争の一次記録エントリ二件によって規範的な記録として扱われる。 [2015 年 8 月の Bitcoin XT 公開エントリ](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)は本総覧を、 開幕事件が含まれるより広い連鎖として読む。 [2017 年 8 月のビットコインキャッシュ・フォークエントリ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)は本総覧を、 8 月 1 日分裂が終結事件として位置付けられる、 論争の完全な段階別記録として引用する。

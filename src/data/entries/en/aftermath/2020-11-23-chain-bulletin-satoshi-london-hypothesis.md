@@ -57,3 +57,5 @@ The article identifies British English conventions in Satoshi's writing:
 **Conclusion:**
 
 While no single piece of evidence is conclusive, the convergence of The Times physical newspaper access, GMT-consistent activity patterns, and British linguistic markers builds a circumstantial case for London as Satoshi's base of operations during Bitcoin's development.
+
+This Chain Bulletin London hypothesis is read in parallel with [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which uses The Times headline as evidence of authorial intent and explicitly references this Chain Bulletin reading as the same surviving signal read for geographic attribution rather than for intent.

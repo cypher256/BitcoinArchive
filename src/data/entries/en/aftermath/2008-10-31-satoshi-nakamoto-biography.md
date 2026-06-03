@@ -154,4 +154,6 @@ Across mailing-list and forum messages, Satoshi explained design choices, respon
 
 For the ideological lineage Satoshi designed inside — Hayek's 1976 *Denationalisation of Money*, the 1990s Extropian milieu, the cypherpunk movement, and the bounded direct-influence claims supported by the primary record — see [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/) and the companion analysis [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
+This biography is read in companion with [the Satoshi self-statements inventory](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), which catalogues every place where Satoshi was the subject of his own sentence and reads them as a single body of evidence about what Satoshi said about himself — a complementary axis to the biographical documentary record collated here.
+
 *[Context: This biography is the documentary basis for the protagonist of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — every dated event the protagonist participates in is anchored to the primary records compiled here.]*

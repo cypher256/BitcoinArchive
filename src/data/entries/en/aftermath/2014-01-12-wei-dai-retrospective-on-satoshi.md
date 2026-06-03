@@ -95,3 +95,5 @@ In response to a question about why he never implemented b-money, Dai explained:
 
 <!-- audit:quote-skip -->
 > "My views haven't changed very much, since the main surprise of Bitcoin to me is that people find such a system useful for reasons other than crypto-anarchy."
+
+This 2014 retrospective is treated as principal counter-evidence in [the Wei Dai identity hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/). The hypothesis returns to Wei Dai's "my guess is that he's not anyone we've heard of" answer across multiple sections — the intro pull quote, §1 framing, §2.5 references, the §3 counter-evidence table, a dedicated §3.3 subsection on the LessWrong reply, §3.6 weighing the denial pattern, and §5 limits — using the retrospective as the documented public statement the hypothesis must explain away.

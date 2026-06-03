@@ -74,4 +74,6 @@ Finding Satoshi belongs to the post-2024 wave of major-press and documentary ide
 
 The individual constituent hypotheses are developed independently at [Hal Finney = Satoshi](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) and [Len Sassaman = Satoshi](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/). The two-person joint reading — which carries the additional burden of explaining a Finney–Sassaman collaboration that left no surviving written trace — is the documentary's specific contribution.
 
+This 2026 documentary is referenced by [the Sassaman identity hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), which treats this documentary as the latest journalistic articulation of the Sassaman-Finney pairing the hypothesis weighs.
+
 *[Editor: Production-company, distribution-platform, and runtime details were not yet confirmable at the time of writing; the Decrypt summary and the IMDb / Block secondary references will be supplemented as more reporting comes online.]*

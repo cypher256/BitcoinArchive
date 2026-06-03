@@ -199,4 +199,6 @@ flowchart LR
 
 §1-§4 の読みはひとつの読みとして提示するものである。主張するのは次の一点だけである — 参加者自身の枠付け (権威・名前・真空・アイデンティティ) は、コードの上に乗った実在の荷重を記述したものであって、普通のオープンソースの意見対立を誤認したものではない。
 
+本「フォーク戦争はオープンソースの話ではない」 分析は、 本分析が位置付ける 2015〜2016 年の一次記録のうち二件によって参照される。 [2015 年 8 月の Bitcoin XT 公開エントリ](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)は本分析の構造的読解を、 XT 事件が含まれるより広い文脈として読む。 [マイク・ハーン「決着」 エッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)は本分析を、 再ブランディングとフォーク戦争が何になり果てたかについての統治失敗事例研究として引用する。
+
 *[編者注：本記事は 2014-2017 年のビットコインに揃っていた 3 つの構造的条件を集め、それらを系として読む。特定の人物の動機についての主張は意図的に避けた。主張するのは構造であって、心理ではない。語彙の軸については [Bitcoin Core 改称が権威構造に与えた影響の考察](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)、出来事の連鎖については[ビットコインの家系図](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)を参照。]*

@@ -57,3 +57,5 @@ translationStatus: complete
 **結論：**
 
 単一の証拠だけでは決定的ではないが、タイムズの物理的新聞へのアクセス、GMT と一致する活動パターン、英国式の言語的特徴の収束が、ビットコイン開発中のサトシの活動拠点としてロンドンを支持する状況証拠を構築している。
+
+本 Chain Bulletin ロンドン仮説は[ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と並行して読まれる。 同分析はタイムズ見出しを著者の意図の証拠として用い、 本 Chain Bulletin 読解を「同じ残存シグナルを意図ではなく地理的属性として読む」 対応物として明示的に参照する。

@@ -65,3 +65,5 @@ The paper found that approximately one third of all coins mined at the first dif
 **Significance:**
 
 As the first peer-reviewed academic study of Patoshi mining, this paper elevated the discussion from blog posts and community analysis to formal academic literature. Its finding that all 64 initial blocks share the Patoshi nonce fingerprint strengthened the case that the early non-Patoshi blocks (by ExtraNonce classification) were still mined by Satoshi, not by other participants.
+
+This 2021 peer-reviewed study formalises the empirical pattern first documented in [the 2013 Patoshi-pattern analysis](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) into academic literature — the earlier blog-and-community work whose findings this PLOS ONE paper subjects to peer-reviewed treatment using the same nonce-fingerprint signal Lerner first identified.

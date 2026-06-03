@@ -113,3 +113,5 @@ translationStatus: complete
 アストン研究は、Skye Grey 後・厳格コーパス公開のヴァン・ドルスト前という位置で、複数候補の学術側検討としては最初の事例である。その立ち位置は決定的ではなく基礎的なものであり：その後の文体計量研究は候補プールを拡大し、方法論によって異なる首位候補を生み出してきた。
 
 ニック・サボ＝サトシ仮説の分析的検討（本研究の根拠を、[2008 年 4 月の Unenumerated ブログでの Bit Gold 実装協力要請コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)、[2011 年 5 月の三人称表現](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)、2007〜2008 年を通したサボの Unenumerated 上の継続的可視性、繰り返しの否定発言と照合する）については、[ニック・サボ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)を参照。
+
+本アストン大学研究は[ニック・サボ同定仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)によって、 根拠的な文体計量の柱の一つとして扱われる。 同仮説は本研究を Skye Grey 2013 とは独立に 11 候補中でサボを首位と位置付けた学術的定量研究として参照し、 仮説の論証が拠り所とする「法医学的整合性のシグナル」 の記録の一部として、 支持証拠の各節で繰り返し戻ってくる。

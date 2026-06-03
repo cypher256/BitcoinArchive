@@ -199,4 +199,6 @@ Three counter-readings deserve explicit acknowledgement.
 
 The reading in §1-§4 is offered as one reading. It claims only that the participants' own framings — authority, naming, vacuum, identity — describe a real load on top of the code, not a misperception of an ordinary OSS dispute.
 
+This fork-wars-as-not-OSS analysis is invoked by two of the 2015–2016 primary records it situates. [The August 2015 Bitcoin XT launch entry](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) reads the structural reading here as the broader context the XT episode sits within. [The Mike Hearn "Resolution" essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) cites this analysis as the governance-failure case-study reading of what the rebrand and fork wars had become.
+
 *[Editor: This entry collects three structural conditions present in 2014-2017 Bitcoin and reads them as a system. Individual claims about specific actors' motivations are deliberately avoided; what is claimed is structural, not psychological. See [the Bitcoin Core rebrand authority-effects analysis](/BitcoinArchive/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/) for the naming axis, and [the fork and altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) for the event sequence.]*

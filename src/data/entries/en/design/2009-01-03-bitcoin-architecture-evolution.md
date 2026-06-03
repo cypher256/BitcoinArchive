@@ -419,3 +419,5 @@ Out of scope:
 - **Security model** (threat analysis, 51% attack economics — see [L2 #11 Security model](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/))
 - **Ecosystem** (Lightning, sidechains, Ordinals — see [L2 #10 Ecosystem](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/))
 - **Satoshi's coding style** (see the [Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and [Windows development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) entries)
+
+This architecture-evolution design entry is treated as the design-side counterpart by [the Satoshi Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which uses this entry as the architectural-drift reading that the Phase 1 Windows-centric codebase produced.

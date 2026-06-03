@@ -62,4 +62,6 @@ He also argued that Bitcoin introduced a new kind of universal ledger, moving ac
 
 Bauwens framed Bitcoin as a post-capitalist invention rather than a simply anti-capitalist one. In his view, Bitcoin created a new coordination layer for value, but still lacked a strong connection to productive, local, commons-based reality.
 
+This 2025 Bauwens interview is treated as the documented context for the lone 2014 P2P Foundation entry by [the Satoshi activity timeline](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-activity-timeline/), which uses Bauwens's recollection that Satoshi privately denied being Dorian Nakamoto as the missing context for the timeline's isolated 2014 dot.
+
 *[Editor: This interview is notable because Bauwens was among the first people to engage Satoshi on the [P2P Foundation](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) / [P2P Research](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/) channels in February 2009. His 2025 comments add new personal detail to that early contact, including the previously underemphasized fact that Satoshi directly offered him bitcoins and explained his decision to post on the P2P Foundation site.]*

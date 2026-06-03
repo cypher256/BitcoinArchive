@@ -77,4 +77,6 @@ translationStatus: complete
 
 この役割は 2012 年 9 月の Bitcoin Foundation 設立に伴い、アンドレセンが同財団のチーフサイエンティストに就任した時点で制度化された。
 
+のちの記録は、 この 12 月 19 日告知を三つの異なる文脈で錨として用いる。 [ギャビン・アンドレセン伝記](/BitcoinArchive/ja/participants/gavin-andresen/)は本告知を参加者年表、 「サトシの後継者 ― 段階的引き継ぎ」 対比表、 そして専用のリードメンテナー節で繰り返し参照する。 [2010 年 9 月 1 日のアンドレセン宛「他のプロジェクトに取り組む」 通知](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)は 9 月のシグナルを撤退連鎖の時系列的な起点として枠付け、 12 月 19 日告知をその公的な終結点として位置付ける。 そして [2016 年のアンドレセン自身によるサトシ回顧](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/)は本告知の BitcoinTalk 上の文面 (「サトシの祝福を受けて……」 の冒頭) を錨となる引用の一つとして引き、 結びの段落で本エントリへとリンクを戻す。
+
 *[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。一次資料の投稿は[併走するフォーラムエントリー](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/)に保全されており、本 aftermath エントリーは編集的な読解として並走させる。]*

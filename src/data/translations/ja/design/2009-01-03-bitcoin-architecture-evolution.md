@@ -420,3 +420,5 @@ timeline
 - **セキュリティーモデル**（脅威分析、51% 攻撃の経済学 — [L2 #11 — セキュリティーモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）
 - **エコシステム**（Lightning、サイドチェーン、Ordinals — [L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
 - **サトシのコーディングスタイル**（[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と [Windows 開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)エントリーを参照）
+
+本アーキテクチャ進化設計書は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)から、 Phase 1 の Windows 中心コードベースが生み出した「アーキテクチャ漂流」 の設計側対応物として扱われる。

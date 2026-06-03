@@ -71,3 +71,5 @@ Satoshi Nakamoto distributed Bitcoin's source code as `.rar` archives on SourceF
 Andresen's final SVN commit, r252 on September 13, 2011, contained the message: "Development has moved to github." This marked the official end of the SourceForge SVN era.
 
 **Notable absences:** Jeff Garzik and Pieter Wuille are listed as SourceForge project members but never made any SVN commits. Their commit access began on GitHub.
+
+This SVN-repository history is treated as load-bearing evidence in [the Satoshi Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/). The analysis references this entry across multiple sections — §2.1 toolchain anchor, §2.4 team-tooling absence, §3 asymmetry of 252 SVN revisions / 160 by Satoshi, and the §3 cross-references table — using the SVN committer record as the porting-side confirmation of the Visual C++ 6.0 toolchain on which the Windows-only argument turns.

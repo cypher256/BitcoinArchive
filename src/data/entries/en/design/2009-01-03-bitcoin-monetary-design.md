@@ -270,3 +270,5 @@ This page covers the monetary and incentive layer in isolation. The following to
 - **Mining pool protocols** — Stratum v1/v2, share accounting, and pool payout models.
 - **Layer-2 fee dynamics** — how Lightning Network channel opens/closes and submarine swaps interact with on-chain fee markets.
 - **Security model** — 51% attack economics, selfish mining game theory, and the full threat model are deferred to the L2 security-model deep dive.
+
+This monetary design is treated as the load-bearing structural reference by [the mining-reward-exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/), which positions itself as the post-issuance counterpart of the monetary-design framework documented here.

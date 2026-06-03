@@ -271,3 +271,5 @@ This page covers the block and chain layer in isolation. The following topics ar
 - **Network-layer block relay** — how `inv`, `getdata`, `headers`, `block`, and `cmpctblock` messages propagate blocks across the P2P network.
 - **Storage and chain state** — how validated blocks are persisted to disk (block files, undo data) and how the UTXO set is maintained in LevelDB.
 - **SPV client implementation** — the practical use of Merkle proofs by lightweight wallets (this page describes the Merkle tree structure; the SPV protocol itself is a network-layer topic).
+
+This block-chain design is the structural foundation that two sibling design-document entries depend on. [The storage design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-storage-design/) defers all block-format and chain-state scope to this entry. [The consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) treats the chain structure documented here as the foundation on top of which the longest-chain rule operates.

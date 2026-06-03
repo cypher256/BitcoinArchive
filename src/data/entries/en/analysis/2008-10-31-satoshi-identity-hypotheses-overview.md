@@ -411,3 +411,5 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
 - For full treatment of candidates with dedicated entries, see the "Entry" column in §2.1's table. Other candidates do not have dedicated hypothesis entries in this archive.
+
+This identity-hypotheses overview is the upstream framing for [the Wei Dai identity hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/). The Wei Dai entry references this overview across multiple sections — the §2.1 candidate grouping, the §2.4 methodology authority, and the §4 comparison anchor — relying on the overview's Group A taxonomy and necessary-but-not-sufficient evaluation framework as the structural scaffold its own argument is built on.

@@ -188,4 +188,6 @@ This puts the 2010 incident in a peculiar position in the historical record. It 
 
 The aftermath narrative records the event. This analysis records the structural reading. Identity, intent, and individual contribution belong in the entries that make those questions their primary subject. Each of those entries hedges where the evidence does not support stronger claims, and so does this one.
 
+This structural-paradox analysis is treated as the canonical reading of the August 2010 event by [the value-overflow-incident entry](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/), which references this analysis as the decentralized-vs-centralized tension reading of the same five-hour recovery.
+
 *[Context: The five-hour patch deployment and the centralization paradox analyzed here are the structural basis for one of the named scenes in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the moment a "decentralized" system is saved by a single author with unique release authority.]*

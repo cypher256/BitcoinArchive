@@ -193,3 +193,5 @@ What this analysis *does* contribute is a concrete forensic reading of a passage
 - Operative phrase: **"from where I am"** — read here as location-contingent, not as a permanent property of Satoshi's everyday setup.
 - Combined with Jan 8-12 activity intensity (three releases in four days), this is consistent with Satoshi operating from a temporary location with dedicated time during the launch week.
 - The reading is editorial. It narrows the space of compatible environments without determining any specific one, and makes no claim about Satoshi's identity, country, profession, or personal history.
+
+This launch-environment analysis is read in parallel with [the Satoshi anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/), which uses this entry's launch-day environmental reading as one of the documented practice-pattern observations that complement the six-layer anonymity structure.

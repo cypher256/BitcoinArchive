@@ -170,4 +170,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses (Sassaman,
 - This entry does not name "the most likely Satoshi candidate."
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Todd's other published code, comments by Todd or other witnesses that contradict the public record — this entry should be updated.
 
+This Peter Todd identity hypothesis is anchored by two adjacent records. [The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the prominent public articulation this hypothesis takes as its starting point. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places this hypothesis within its Group A taxonomy and uses it as one of the principal comparison anchors in the necessary-but-not-sufficient evaluation framework.
+
 *[Editor: the framing is deliberately conservative: the hypothesis is laid out, supporting arguments are described as the documentary made them, and counter-evidence is set out at equal detail. The entry does not draw an editorial conclusion about whether the hypothesis is more likely true or false; readers who want a direct verdict will not find one.]*

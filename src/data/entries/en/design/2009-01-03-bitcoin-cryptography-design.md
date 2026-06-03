@@ -275,3 +275,5 @@ This page covers Bitcoin's cryptographic primitives in isolation. The following 
 - **BIP 324 encrypted transport** — the v2 P2P protocol that encrypts node-to-node traffic. This is a network-layer concern, not a transaction-layer primitive.
 - **Quantum migration proposals** — BIP 360 (P2MR / QuBit) and post-quantum signature candidates. Covered in the [quantum threat analysis](/BitcoinArchive/entries/analysis/2026-05-18-bitcoin-quantum-threat/).
 - **Threshold and multisignature schemes** — FROST, MuSig2 protocol details, and k-of-n constructions beyond the scope of this primitives overview.
+
+This cryptography design is the primitive layer that two sibling design-document entries depend on. [The security model](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/) builds its threat-model arguments on the hash-function and signature primitives documented here. [The transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) defers all signature-scheme and hash-function scope to this entry as the foundational reference.

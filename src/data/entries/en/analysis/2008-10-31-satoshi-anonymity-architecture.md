@@ -240,4 +240,6 @@ This entry does not argue that the layers were intentionally engineered to produ
 
 The structural-anonymity reading developed here is complemented by a behavioural-anonymity reading in [Satoshi's non-technical silence](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/): how Satoshi responded to non-technical conversational openings — Christmas greetings, expressions of sympathy, personal questions — while remaining open to technical exchange. The two analyses are independent axes of the same documented pattern.
 
+This six-layered anonymity architecture is treated as a load-bearing reference by [the cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), which uses the architecture as the structural counterpart to its independent-arrival reading — the question of who Satoshi was kept separate from the question of how Satoshi engaged with the cypherpunk channel, each side reinforcing the other.
+
 *[Context: The six-layered anonymity structure analyzed here is the structural basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s reading of the protagonist's silence — the deliberate non-disclosure of nationality, age, voice, and face that the novel takes as its central interpretive frame.]*

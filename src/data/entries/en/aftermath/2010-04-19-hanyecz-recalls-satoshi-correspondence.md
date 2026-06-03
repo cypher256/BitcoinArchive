@@ -39,3 +39,5 @@ Per Hanyecz's later interview accounts, he and Satoshi Nakamoto exchanged hundre
 Hanyecz also recalled in interviews that Satoshi frequently emailed development requests in a terse style, with messages like: "Hey, can you fix this bug?" or "Hey, the west side's down," or "We have these bugs -- we need to fix this." These quoted phrases are Hanyecz's recall of the tone and content; the original email text is not on the public record.
 
 Hanyecz described Satoshi's communication style as "paranoid," "bossy," and "a little bit weird," though he continued to contribute significant development work to the project, including the macOS port and early experimentation with GPU mining.
+
+This correspondence record is treated as foundational primary evidence by [the Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/), which anchors its narrative of Hanyecz's pre-pizza-day macOS-port and GPU-mining contributions on Satoshi's documented guidance recorded here.

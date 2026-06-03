@@ -177,3 +177,5 @@ This entry is an editorial reading of structural features, not a price predictio
 - The network-effect component is the most fragile in conceptual terms: it is the one feature an external shock could most plausibly displace.
 
 The framing is an explanation of why the digital-gold label has stuck for Bitcoin and has not for the others. It is not a guarantee that it will continue to stick.
+
+This structural-features analysis is assigned a context-defining role in [the bitcoin-fork-and-altcoin family-tree analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), where the closing paragraph names this entry as one of two analyses that treat the fork catalog as the load-bearing factual base for governance and monetary-property arguments about Bitcoin's post-2017 trajectory.

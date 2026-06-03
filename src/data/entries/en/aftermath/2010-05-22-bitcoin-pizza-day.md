@@ -70,4 +70,6 @@ May 22 is now celebrated annually as "Bitcoin Pizza Day" by the Bitcoin communit
 
 At 2025 prices exceeding $100,000 per BTC, those 10,000 bitcoins would be worth over $1 billion — often called the most expensive pizzas in history.
 
+This pizza-day event is anchored in [the Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/), where it appears in the opening narrative as the identity-defining event and in a dedicated "Bitcoin Pizza Day" section as the first known real-world commercial Bitcoin transaction. The biography returns to the May 22 transaction across its participant timeline and significance section.
+
 *[Context: The Hanyecz pizza transaction is referenced by name in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as one of the early moments when Bitcoin first met the physical world.]*

@@ -53,4 +53,6 @@ The Murphy suit is structurally distinct from the journalistic and documentary i
 
 As of mid-2026 the case remains in early-stage litigation and no documents have been compelled. Whether the request will succeed turns on how the district court reads the FOIA statute against any national-security or privacy exemptions DHS may invoke.
 
+This FOIA action is referenced by [the 2026 "Finding Satoshi" Finney-Sassaman documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/), which uses the lawsuit's government-record subpoena route as one of the documented post-2024 evidence channels for the Satoshi-identification question its documentary structure draws on.
+
 *[Editor: This entry will be updated as the docket progresses. The 2019 Saoud remarks, the 2025-02-12 FOIA request, and the 2025-04-07 complaint are documented in the secondary sources listed. The identities of the four interview subjects have not been disclosed in any public reporting.]*
