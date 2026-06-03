@@ -143,4 +143,6 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 - 本エントリーは「最も蓋然性の高いサトシ候補」を指名しない。
 - 新たな証拠 — 直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言 — が出現すれば、本エントリーは更新されるべきである。
 
+本仮説は[レン・サスマン伝記](/BitcoinArchive/ja/participants/len-sassaman/) (仮説の対象人物)、 [アダム・バック身元仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[サボ身元仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)・[金子勇身元仮説](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (同じ候補ランドスケープの並列仮説)、 そして [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (サスマン枠組みを定量的文体計量と対比) から参照される。
+
 *[編者注：本エントリーは分析セクションの中で最も推論寄りのエントリーである。枠組みは意図的に保守的にしてある：仮説を提示し、支持論者の論じ方をそのまま描写し、反証を同じ詳細度で示す。本エントリーは仮説の真偽について編集的な結論を引かない。明確な判定を求める読者は本エントリーには見出さないが、判断のための材料は両側に並べて提示する。]*
