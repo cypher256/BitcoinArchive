@@ -46,7 +46,7 @@ translationStatus: complete
 >
 > 寄付者に送金したかどうか、丁寧に確認する方法を考えてみるが、今はもっと優先度の高いことがあって、それすら数日は後回しになる。
 >
-> 短期的にはBitcoinでの寄付が役に立つだろうか？
+> 短期的には Bitcoin での寄付が役に立つか？
 >
 > <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->

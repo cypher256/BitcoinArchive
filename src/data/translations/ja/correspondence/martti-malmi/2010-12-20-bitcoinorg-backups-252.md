@@ -52,7 +52,7 @@ translationStatus: complete
 > <!-- quote: q2 -->
 >> <!-- quote: q3 -->
 >>> <!-- speaker: Martti Malmi -->
->>> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明している：
+>>> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：<br>
 >>> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 >>>
 >>> この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきだろうか？
