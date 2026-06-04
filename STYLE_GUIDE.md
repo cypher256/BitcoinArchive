@@ -386,9 +386,14 @@ both presuppose this integrity invariant; they say *where* to link, not
 sections at the foot of the entry:
 
 - **`sourceUrl`** (required) — the single canonical primary
-  reference. Rendered under 「関連ソース」 / "Related source". Pick
-  the URL a reader should open first (archived original, Wikipedia
-  biography, BitcoinTalk topic, GitHub PR, etc.).
+  reference. Rendered under a type-dependent heading —
+  「原典の外部ソース」 (primary-source / article) or
+  「参照元の外部ソース」 (analysis / biography / design), EN
+  "Original external source" / "Reference external source". Every
+  variant carries 「外部ソース」 / "external source" so the reader
+  sees it is an external link. Pick the URL a reader should open
+  first (archived original, Wikipedia biography, BitcoinTalk topic,
+  GitHub PR, etc.).
 - **`sourceNote`** (optional) — short caveat or context for the
   primary reference (provenance, publication route, dataset
   description, legal-document role, etc.). Rendered as a muted
@@ -396,7 +401,9 @@ sections at the foot of the entry:
   the explanatory text without having to click through.
 - **`secondarySources[]`** (optional) — list of additional
   references with `name`, `url`, optional `note`. Rendered under
-  「その他の関連ソース」 / "Other related sources".
+  「他の外部ソース」 (primary-source / article) or
+  「その他の外部ソース」 (analysis / biography / design), EN
+  "Other external sources".
 
 **Rule.** The same URL must not appear in both fields. If it did,
 the citation block would list the link twice. When tempted to
