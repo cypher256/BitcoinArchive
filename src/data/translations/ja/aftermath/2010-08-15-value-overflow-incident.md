@@ -52,7 +52,7 @@ translationStatus: complete
 2010年8月15日18:08 UTC 頃、ビットコイン開発者[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 で異常を発見し、BitcoinTalk フォーラムの[討論スレッド (topic 823)](/BitcoinArchive/ja/entries/threads/forum/bitcointalk/topic-823/)に投稿した：
 
 <!-- quote: q1 -->
-> 「奇妙な block 74638 — 92233720368.54277039 BTC？UINT64_MAXかな？」
+> 「不正なブロック 74638 — 92233720368.54277039 BTC？これはUINT64_MAXか？」
 
 ブロック 74638 の単一トランザクションが **184,467,440,737.09551616 BTC** を生成していた — 92,233,720,368.54277039 BTC の出力が 2 つ — ビットコインの総発行予定量 2,100 万 BTC の約 9,000倍である。
 
