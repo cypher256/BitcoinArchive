@@ -163,7 +163,7 @@ Phase 2 全体で一貫したパターン: サトシは Linux ソースを読め
 
 - **2009 年 11 月 23 日**: bitcoin.org の Drupal の mod_rewrite 修正のため、 [Apache 設定アクセスをマルミに依頼](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-23-access-permissions-required-to-fix-drupal-108/)。 サーバー管理文脈で Apache 設定の知識を示す。
 - **2009 年 12 月 12 日 BitcoinTalk**: ラズロが「macOS ビルドを作った、 autoconf 使うこと考えた？」 と尋ねたのに対し、 サトシは [「Considered autoconf. 大規模プロジェクトには必要だが、 我々はまだ小さいので makefile 単純な方が最適」 と返答](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-12/2009-12-12-sni21-re-a-few-suggestions/)。 autoconf (OSS クロスプラットフォーム化の標準ツール) を「考えた (Considered)」 という痕跡は残るが、 事前から熟知していた上での却下か、 提案を受けてざっと調べた上で「うちには不要」 と判断したかは、 この応答だけからは決まらない。 新規ツールに直面した開発者がよく見せる「調べてみたが面倒・現状で十分」 反応とも整合する。
-- **2010 年 9 月 12 日 BitcoinTalk**: 「[Switch to GPL](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-989/2010-09-12-re-switch-to-gpl/)」 スレッドで MIT / Boost / new-BSD / public domain / GPL のライセンス特性を比較しつつ「ビットコインのような小プロジェクトでは閉鎖化への恐れは過剰」 とコメント。 ライセンス比較を実務的に行う水準の認識は持つ。
+- **2010 年 9 月 12 日 BitcoinTalk**: 「[GPL への切り替え](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-989/2010-09-12-re-switch-to-gpl/)」 スレッドで MIT / Boost / new-BSD / public domain / GPL のライセンス特性を比較しつつ「ビットコインのような小プロジェクトでは閉鎖化への恐れは過剰」 とコメント。 ライセンス比較を実務的に行う水準の認識は持つ。
 
 この 3 件から言える弱い結論は、 サトシが OSS 慣習を完全に「知らなかった」 とまでは断定できない、 という限度にとどまる。 事前知識からの却下か、 提案を受けて短時間調べた上での「不要」 判断かは、 これらの応答だけからは決定できない。 確実なのは応答の形だけ ― 3 件すべてで取り込みを抑える方向に振れている。 加えて、 これらの発言はいずれも**コミュニティからの問い・要請に押される形で出てきた**ものであり、 サトシ自身が能動的に持ち出した OSS 慣習話題ではない。 Linux と同じパターン: Phase 1 沈黙 → Phase 2 でコミュニティに揉まれて受動的に表面化、 そして取り込みには消極的な応答を返す。
 
