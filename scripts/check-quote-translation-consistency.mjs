@@ -128,6 +128,56 @@ function stripFrontmatter(text) {
   return text.slice(m[0].length);
 }
 
+/** Extract YAML frontmatter as a raw string (without the `---` fences). */
+function extractFrontmatter(text) {
+  const m = text.match(/^---\n([\s\S]*?)\n---/);
+  return m ? m[1] : '';
+}
+
+/** Read the `title:` scalar from a YAML frontmatter string. Supports
+ *  double-quoted, single-quoted, and bare forms on a single line. Returns
+ *  null if no title field is found or if the value is empty.
+ */
+function getYamlTitle(frontmatter) {
+  // Try quoted forms first to preserve embedded `:` characters.
+  const dq = frontmatter.match(/^title:\s*"((?:[^"\\]|\\.)*)"\s*$/m);
+  if (dq) return dq[1].replace(/\\"/g, '"').trim() || null;
+  const sq = frontmatter.match(/^title:\s*'((?:[^'\\]|\\.)*)'\s*$/m);
+  if (sq) return sq[1].replace(/\\'/g, "'").trim() || null;
+  const bare = frontmatter.match(/^title:\s*([^\n]+)$/m);
+  if (bare) return bare[1].trim() || null;
+  return null;
+}
+
+/** Read the `type:` scalar from a YAML frontmatter string. */
+function getYamlType(frontmatter) {
+  const m = frontmatter.match(/^type:\s*"?([\w-]+)"?\s*$/m);
+  return m ? m[1] : null;
+}
+
+/** Entry types whose `title` is editorially treated as a quotable phrase
+ *  (the author's own headline / subject line, often re-quoted as a
+ *  one-liner in editorial entries — `correspondence` and `bip` titles
+ *  are usually descriptive editorial labels, not the author's wording,
+ *  so they are excluded here).
+ */
+const QUOTABLE_TITLE_TYPES = new Set(['forum-post', 'mailing-list', 'tweet']);
+
+/** Split a normalised paragraph into sentence-like fragments on `.`/`?`/`!`
+ *  boundaries. `minLen` controls the per-fragment length floor — at the
+ *  default (`MIN_PHRASE_LENGTH`) only standalone-quotable fragments
+ *  survive; the title-integration pass passes a lower value so short
+ *  tail sentences still participate when concatenated with the title,
+ *  with the final length floor enforced by `registerPseudo` on the
+ *  concatenated string instead.
+ */
+function splitIntoSentences(normalised, minLen = MIN_PHRASE_LENGTH) {
+  return normalised
+    .split(/(?<=[.?!])\s+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length >= minLen);
+}
+
 /**
  * Split body into paragraphs on blank lines.
  * Also treat blockquote-only lines (`>`, `> `, `>>`, etc.) as paragraph
@@ -160,7 +210,7 @@ function splitParagraphs(text) {
  *  - collapse all whitespace to a single space, and trim.
  */
 function normaliseParagraph(para) {
-  return para
+  let s = para
     .split('\n')
     .map((line) => line.replace(/^(>+\s*)+/, ''))
     .join(' ')
@@ -169,6 +219,14 @@ function normaliseParagraph(para) {
     .replace(/(\S)\s*([*_])\s*(\S)/g, '$1$2$3')
     .replace(/\s+/g, ' ')
     .trim();
+  // Strip outer quotation marks (`"…"`, `「…」`, `『…』`) that editorial
+  // entries wrap around re-quoted text. The same passage may appear as
+  // a bare body sentence in the source post and as a quoted blockquote
+  // in the editorial entry; the outer quotes are a presentational
+  // wrapper, not part of the wording, and would otherwise prevent the
+  // two forms from collapsing to the same map key.
+  s = s.replace(/^["「『]\s*/, '').replace(/\s*["」』]$/, '');
+  return s.trim();
 }
 
 /**
@@ -273,8 +331,15 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
   }
   pairsScanned++;
 
-  const enBody = stripFrontmatter(readFileSync(enPath, 'utf-8'));
-  const jaBody = stripFrontmatter(readFileSync(jaPath, 'utf-8'));
+  const enRaw = readFileSync(enPath, 'utf-8');
+  const jaRawFull = readFileSync(jaPath, 'utf-8');
+  const enFrontmatter = extractFrontmatter(enRaw);
+  const jaFrontmatter = extractFrontmatter(jaRawFull);
+  const enType = getYamlType(enFrontmatter);
+  const enTitle = getYamlTitle(enFrontmatter);
+  const jaTitle = getYamlTitle(jaFrontmatter);
+  const enBody = stripFrontmatter(enRaw);
+  const jaBody = stripFrontmatter(jaRawFull);
   const enParasRaw = splitParagraphs(enBody);
   const jaParasRaw = splitParagraphs(jaBody);
 
@@ -355,6 +420,113 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
       isQuote: isBlockquoteParagraph(enRaw),
     });
   }
+
+  // Title-integration pseudo paragraphs.
+  //
+  // Editorial entries (aftermath / analysis / biography / design) often
+  // quote a primary-source post by gluing the author's *title* (the
+  // forum-post subject line) together with the first or last sentence
+  // of the body, using `—` or `--` as the connector — e.g. on the
+  // value-overflow incident page:
+  //
+  //   > "Strange block 74638 — 92233720368.54277039 BTC? Is that
+  //   >  UINT64_MAX, I wonder?"
+  //
+  // That summary blockquote never matches the source post under the
+  // full-paragraph equality rule above: the title sits in YAML, the
+  // tail sentence sits in a body paragraph, and the editorial quote
+  // joins them inline with an em-dash. So the existing pass — and the
+  // existing 55-finding audit — silently skip the entire class.
+  //
+  // We widen recall by synthesising pseudo paragraphs from the
+  // primary-source entry: the title alone, and the title concatenated
+  // with each sentence of each non-blockquote body paragraph using the
+  // em-dash / double-hyphen separators editorial entries actually use.
+  // Both EN and JA pseudo forms are built in parallel (jaTitle joined
+  // with the corresponding JA sentence at the matching paragraph
+  // index) and registered into the same `enParaMap` so they participate
+  // in the existing divergence check as `isQuote: true` occurrences.
+  //
+  // Only entry types whose `title` editorially represents the author's
+  // own wording are eligible (forum posts, mailing-list messages,
+  // tweets — see QUOTABLE_TITLE_TYPES). correspondence / bip / etc. use
+  // descriptive editorial titles and are excluded.
+  if (QUOTABLE_TITLE_TYPES.has(enType) && enTitle && jaTitle) {
+    function registerPseudo(enText, jaText, label) {
+      const enNorm = normaliseParagraph(enText);
+      if (enNorm.length < MIN_PHRASE_LENGTH) return;
+      if (!/[a-zA-Z]/.test(enNorm)) return;
+      const jaLex = normaliseParagraph(jaText);
+      const jaWidth = normaliseJaWidth(jaLex);
+      if (!passesLengthEnvelope(enNorm, jaWidth)) return;
+      if (!enParaMap.has(enNorm)) enParaMap.set(enNorm, []);
+      enParaMap.get(enNorm).push({
+        enPath,
+        paraIdx: -1,
+        pseudoLabel: label,
+        jaParaWidth: jaWidth,
+        jaParaLex: jaLex,
+        isQuote: true,
+      });
+    }
+
+    // Title-alone pseudo intentionally not registered. In practice it
+    // produces too many false positives from cross-entry duplicates
+    // sharing identical EN titles but having intentionally different JA
+    // titles (slug-variant duplicates, BIP / topic re-postings). Those
+    // belong to `check-source-duplication`, not here. We only register
+    // the connector forms below, whose length envelope filters that
+    // class out.
+
+    // Pseudo 2..N: title joined with each body sentence on either end
+    // of each body paragraph, under both connector styles editorial
+    // entries use. Walk EN/JA paragraphs in lock-step (same indexing as
+    // the main loop above) so EN[i]'s sentences pair with JA[i]'s.
+    const sentLen = Math.min(enParas.length, jaParas.length);
+    for (let i = 0; i < sentLen; i++) {
+      const { raw: enParaRaw } = enParas[i];
+      const { raw: jaParaRaw } = jaParas[i];
+      if (isCodeBlock(enParaRaw) || isCodeBlock(jaParaRaw)) continue;
+      if (isBlockquoteParagraph(enParaRaw)) continue;
+      if (isBlockquoteParagraph(jaParaRaw)) continue;
+      const enParaNorm = normaliseParagraph(enParaRaw);
+      const jaParaLex = normaliseParagraph(jaParaRaw);
+      if (!enParaNorm || !jaParaLex) continue;
+      if (isHeading(enParaNorm)) continue;
+      // Lower per-sentence floor — the connector forms below
+      // concatenate title + sentence, and the final length floor is
+      // applied to the concatenated string inside `registerPseudo`.
+      const enSents = splitIntoSentences(enParaNorm, 10);
+      if (!enSents.length) continue;
+      // JA "sentences" are split on the same ASCII boundary set —
+      // imperfect for fully-Japanese prose but adequate for the
+      // common case where the JA body retains the original ASCII
+      // sentence boundaries (numeric tail, English fragment, etc.).
+      const jaSents = jaParaLex
+        .split(/(?<=[.?!。？！])\s*/)
+        .map((s) => s.trim())
+        .filter((s) => s.length >= 4);
+      if (!jaSents.length) continue;
+      // Match by position within the paragraph: first-EN ↔ first-JA,
+      // last-EN ↔ last-JA. This handles both the "headline + opening
+      // line" and "headline + closing line" editorial patterns.
+      const enFirst = enSents[0];
+      const enLast = enSents[enSents.length - 1];
+      const jaFirst = jaSents[0];
+      const jaLast = jaSents[jaSents.length - 1];
+      for (const sep of [' — ', ' -- ']) {
+        registerPseudo(`${enTitle}${sep}${enLast}`, `${jaTitle}${sep}${jaLast}`, 'title+tail');
+        if (enFirst !== enLast) {
+          registerPseudo(`${enTitle}${sep}${enFirst}`, `${jaTitle}${sep}${jaFirst}`, 'title+head');
+        }
+        // Title + the whole body paragraph — handles editorial
+        // re-quotes that include more than one sentence from the body.
+        if (enFirst !== enParaNorm && enParaNorm.length >= MIN_PHRASE_LENGTH) {
+          registerPseudo(`${enTitle}${sep}${enParaNorm}`, `${jaTitle}${sep}${jaParaLex}`, 'title+para');
+        }
+      }
+    }
+  }
 }
 
 let divergentCount = 0;
@@ -363,6 +535,15 @@ const output = [];
 for (const [enPhrase, occurrences] of enParaMap.entries()) {
   if (occurrences.length < 2) continue;
   if (!occurrences.some((occ) => occ.isQuote)) continue;
+  // Require at least one real (non-pseudo) blockquote occurrence.
+  // Pseudo-only groups arise when two source posts share an identical
+  // EN title (slug variants, re-postings, duplicate archive entries)
+  // and the title+sentence join happens to collide — that's a
+  // duplicate-data problem owned by `check-source-duplication`, not a
+  // translation-consistency one. With this gate, the group must be
+  // anchored by at least one editorial entry actually quoting the
+  // passage, so the report stays on the wording-consistency axis.
+  if (!occurrences.some((occ) => occ.isQuote && !occ.pseudoLabel)) continue;
   const widthVariants = new Map();
   for (const occ of occurrences) {
     if (!occ.jaParaWidth) continue;
@@ -377,8 +558,12 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
       output.push(`  JA variant: "${truncate(ja)}"`);
       for (const occ of occs) {
         const rel = path.relative(REPO_ROOT, occ.enPath);
-        const tag = occ.isQuote ? 'quote' : 'body';
-        output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
+        if (occ.pseudoLabel) {
+          output.push(`    ${rel} (pseudo: ${occ.pseudoLabel})`);
+        } else {
+          const tag = occ.isQuote ? 'quote' : 'body';
+          output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
+        }
       }
     }
     continue;
@@ -406,8 +591,12 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
       output.push(`  JA variant: "${truncate(ja)}"`);
       for (const occ of occs) {
         const rel = path.relative(REPO_ROOT, occ.enPath);
-        const tag = occ.isQuote ? 'quote' : 'body';
-        output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
+        if (occ.pseudoLabel) {
+          output.push(`    ${rel} (pseudo: ${occ.pseudoLabel})`);
+        } else {
+          const tag = occ.isQuote ? 'quote' : 'body';
+          output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
+        }
       }
     }
   }
