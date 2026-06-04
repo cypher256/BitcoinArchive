@@ -90,8 +90,8 @@ Usenet や Google Group が補助的な防御として使える状況もある�
 <!-- quote: q2 -->
 <!-- speaker: Dustin Trammell -->
 > バージョン 0.1.3 を起動したところ、こちらのトランザクションエントリ 4 件は
-> すべて依然として 'unconfirmed' と表示されているが、Description が
-> 'Generated (not accepted)' に変わっている。これは、他のノードが先に
+> すべて依然として `unconfirmed` と表示されているが、Description が
+> `Generated (not accepted)` に変わっている。これは、他のノードが先に
 > チェーンを延ばし、こちらのコインが死んだブランチで生成されたという意味
 > か？ もしそうなら、以前のソフトウェアのインスタンスはなぜ即座に
 > それを検知して、勝ち残ったブランチで採掘を始めなかったのか？
