@@ -41,13 +41,9 @@ quotes:
 <!-- speaker: Satoshi Nakamoto -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> SourceForgeは本当に遅いね。でも他にどうすればいいかわからない。あれはもう
-> 標準みたいなもので、大抵のプロジェクトはprojectname.sourceforge.netの
-> サイトを持っている。Google検索でwhatever.sourceforge.netを見かけると、
-> それが公式サイトだと思う。
+> SourceForge は本当に遅いね。でも他にどうすればいいかわからない。あれはもう標準みたいなもので、大抵のプロジェクトは projectname.sourceforge.net のサイトを持っている。Google 検索で whatever.sourceforge.net を見かけると、それが公式サイトだと思う。
 >
-> Bitweaverでユーザーがフォーラムの自分のメッセージを編集（できれば削除も）
-> できるようにする方法はある？
+> Bitweaver でユーザーがフォーラムの自分のメッセージを編集（できれば削除も）できるようにする方法はある？
 <!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
@@ -56,9 +52,7 @@ quotes:
 <!-- speaker: Satoshi Nakamoto -->
 <!-- quote: q2 -->
 <!-- tone-skip -->
-> Linuxへの移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの
-> 作業量が倍になるから、軽々しく決められることではない。ただ、LibertyのWine
-> クラッシュは心配だ。
+> Linux への移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの作業量が倍になるから、軽々しく決められることではない。ただ、Liberty の Wine クラッシュは心配だ。
 >
 > できるだけ移植性を高めるようにして、Windowsの呼び出しの代わりに標準Cを使う
 > ようにしてきた。スレッド処理は_beginthreadで、標準Cライブラリの一部だ。
