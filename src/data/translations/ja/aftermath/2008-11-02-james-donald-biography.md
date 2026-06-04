@@ -32,7 +32,7 @@ translationStatus: complete
 
 2008 年 10 月 31 日に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が暗号学メーリングリストに[ビットコインホワイトペーパーを投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)してから 2 日後、ジェームズ・A・ドナルドが[最初に公に返信した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/):
 
-> 「我々はこのようなシステムを非常に必要としているが、あなたの提案を理解する限り、必要な規模にスケールするようには見えない」
+> 「こういうシステムは切実に必要だ。だが、この方式では必要な規模にスケールしないんじゃないか？」
 
 ドナルドの懐疑論はサトシの最も詳細な初期アーキテクチャ説明を公的記録に引き出した —— 簡易決済検証、ドナルド自身が呼んだ「ビットコインバンク」、信頼と二重支払いのモデル。ドナルドは長年サイファーパンクコミュニティで活動する暗号学者・リバタリアン評論家。jim.com というウェブサイトを運営し、暗号学・政治哲学・経済学について執筆していた。
 
