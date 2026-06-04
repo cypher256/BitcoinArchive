@@ -59,6 +59,6 @@ translationStatus: complete
 
 連続ブロック間の約 300秒の休止と、利用可能なハッシュレートの 72.5%のみの意図的使用は、サトシが個人的利益よりもネットワークの立ち上げと分散化を優先していたことを示している。
 
-[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)の Patoshi パターン研究を基に、ロップの分析はサトシのマイニング行動が搾取的ではなく利他的であったことの定量的証拠を提供した。記事は次のように締めくくる：「サトシが欲張りだったと主張する人は、単に計算をしていないだけだ。」
+[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)の [Patoshi パターン研究](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を基に、ロップの分析はサトシのマイニング行動が搾取的ではなく利他的であったことの定量的証拠を提供した。記事は次のように締めくくる：「サトシが欲張りだったと主張する人は、単に計算をしていないだけだ。」
 
 本ロップ分析は[ハル・フィニー同定仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)によって根拠的な反証として扱われる。 同仮説はロップによるパトシ再構成 (約 22,503 ブロック・約 110 万 BTC・ハッシュレート意図的抑制) を、 §3.3「パトシ採掘規模の不整合」 におけるハル＝サトシ仮説への反証として用いる。

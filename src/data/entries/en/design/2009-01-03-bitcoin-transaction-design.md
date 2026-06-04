@@ -39,6 +39,8 @@ inlineLinkKeywords:
 
 This page is **L1 #2 — Transaction design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the transaction layer end-to-end: how value is represented, transferred, locked, and unlocked. Everything in Bitcoin — mining incentives, block weight, fee markets, wallet UX — rests on the structures described here.
 
+New to these concepts? The [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) introduces UTXOs, Bitcoin Script, and transactions with diagrams and no prior knowledge assumed; this page is the design-document treatment of the same transaction layer.
+
 The transaction layer answers three questions:
 
 1. **What is a coin?** An unspent transaction output (UTXO) — not an account balance.

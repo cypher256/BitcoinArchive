@@ -82,3 +82,5 @@ timeline
 ### ホワイトペーパー訴訟
 2021年2月、ライトは bitcoin.org の匿名運営者（[Cobra](/BitcoinArchive/ja/participants/cobra/)）をビットコインホワイトペーパーの著作権侵害で[提訴した](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)。2021年6月28日、裁判所はライトに有利な欠席判決を下した——主張に根拠があったからではなく、Cobra が身元を明かすよりも匿名性の保護を選んだためである。
 
+ライトの正体主張は初期ブロック (1 ~ 9) の鍵による署名に依拠していたが、 ジェネシスブロックのコインベース鍵には決して及ばなかった —— [ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)が指摘するとおり、 決定打となるその唯一の実演を、 ライトを含め誰も行っていない。
+

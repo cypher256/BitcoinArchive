@@ -53,3 +53,5 @@ In the aftermath, over 3,000 altcoins followed. Most of them do know what they'r
 Many ICOs resemble blatant stock price manipulation and insider trading. Legitimate blockchain use cases have become caught in the fire and burned by scam association.
 
 This piece was published on LinkedIn on September 20, 2017, and reached the front page of Hacker News on September 21, 2017, receiving 329 points and 86 comments.
+
+Dillinger sketches the division of review labour with Hal Finney here; the deeper technical substance of that audit — the floating-point accounting discovery and the satoshi-precision design choice — is drawn out at length in his [2018 interview with Tim Swanson](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/).

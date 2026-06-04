@@ -36,7 +36,7 @@ quotes:
 translationStatus: complete
 ---
 
-ロンドン高等法院が bitcoin.org にビットコインホワイトペーパーの削除を命じる欠席判決を下した数時間後、 [Cobra](/BitcoinArchive/ja/participants/cobra/) は X に投稿した:
+ロンドン高等法院が bitcoin.org に[ビットコインホワイトペーパーの削除を命じる欠席判決](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)を下した数時間後、 [Cobra](/BitcoinArchive/ja/participants/cobra/) は X に投稿した:
 
 <!-- quote: q1 -->
 > お前らの法定通貨資産を守ってくれる法制度。 その同じ法制度が今日、 悪名高い詐欺師の宣誓を真に受けて、 俺のホワイトペーパー掲載を違法にしやがった。 「正義」 は金で買えるシステムだぜ。

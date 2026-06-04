@@ -29,7 +29,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
 ---
 
-On July 11, 2010, Slashdot published an article titled "Bitcoin Releases Version 0.3," marking Bitcoin's first significant coverage on a major technology news platform.
+On July 11, 2010, Slashdot published an article titled "Bitcoin Releases Version 0.3," covering [the v0.3 release](/BitcoinArchive/entries/aftermath/2010-07-06-bitcoin-v03-released/) five days earlier and marking Bitcoin's first significant coverage on a major technology news platform.
 
 The "Slashdot effect" was immediate and dramatic. Bitcoin software downloads surged from approximately 3,000 in June to over 20,000 in July 2010. New users flooded the network, and Bitcoin's price increased sharply in the following days.
 

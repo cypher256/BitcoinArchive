@@ -68,4 +68,4 @@ RBF was one of the most contentious changes in Bitcoin's history. Critics argued
 
 **Significance:**
 
-BIP 125 completed what Satoshi had started. The original transaction replacement was removed as unsafe; Todd's opt-in version made it practical. Whether this represents a developer finishing a predecessor's work or — as the HBO documentary "Money Electric" controversially suggested — the same mind returning to complete an unfinished design, remains one of Bitcoin's most debated questions.
+BIP 125 completed what Satoshi had started. The original transaction replacement was removed as unsafe; Todd's opt-in version made it practical. Whether this represents a developer finishing a predecessor's work or — as the [HBO documentary "Money Electric"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) controversially suggested — the same mind returning to complete an unfinished design, remains one of Bitcoin's most debated questions.

@@ -53,3 +53,5 @@ relatedEntries:
 **On open questions for mainstream adoption:**
 
 Dai raised questions about what would be needed for broader adoption, including price stability, business cycles, and optimal inflation rates.
+
+These 1998 reservations — that b-money would remain a niche mechanism, and Dai's growing distance from crypto-anarchy — are the contemporaneous trace of a doubt he would only name explicitly years later, in his [2014 LessWrong retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) on why he never carried b-money to implementation.

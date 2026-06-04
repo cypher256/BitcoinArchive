@@ -79,7 +79,7 @@ The objection: many Bitcoin Core contributors have built on partial mechanisms t
 
 Todd's public writing appears to shift noticeably across three periods:
 
-1. **First post (December 7, 2010):** His BitcoinTalk debut — "Will buy 1 invite for $2, msg privately." — is maximally terse. No subject pronoun, no full words where abbreviations suffice, no personality. The text reads like a classified ad, stylistically indistinguishable from any anonymous user. Neither Todd's later voice nor Satoshi's restrained precision is evident.
+1. **[First post (December 7, 2010)](/BitcoinArchive/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/):** His BitcoinTalk debut — "Will buy 1 invite for $2, msg privately." — is maximally terse. No subject pronoun, no full words where abbreviations suffice, no personality. The text reads like a classified ad, stylistically indistinguishable from any anonymous user. Neither Todd's later voice nor Satoshi's restrained precision is evident.
 2. **Second post (December 10, 2010):** His reply to Satoshi — "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee." — is calm, technically precise, and measured. The opening "Of course" carries a tone of casual authority, but the overall register is neutral. It does not yet display the profanity, self-deprecation, or combative sarcasm that would later define Todd's public persona.
 3. **2012 onward:** Todd's writing develops a highly distinctive and consistent voice: frequent profanity, self-deprecating humor, rhetorical aggression, heavy use of asterisk emphasis, and a confrontational style. This voice remained remarkably stable across blog posts, mailing list exchanges, and social media for over a decade.
 

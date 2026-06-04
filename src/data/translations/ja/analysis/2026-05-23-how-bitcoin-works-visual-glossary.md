@@ -337,3 +337,4 @@ flowchart TD
 - [ビットコイン設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) ― ビットコインのどの部分が先行研究から、 どの部分が真に新規の設計から来ているか。
 - [サトシの設計意図とビットコインの現状の乖離](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) ― 4 軸 (マイニング、 カストディ、 ガバナンス、 スケーリング) で現在の Bitcoin が本記事のプロトコル設計とどう乖離しているかを描いた対となる記事。 本記事のプロトコル章を読んだ *後* に。
 - [マイク・ハーン 2010 年 12 月 SPV 進捗報告](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/) ― 軽量ノードウォレットの実用エンジニアリングの裏側。
+- [ビットコインのトランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/) ― UTXO モデル、 Bitcoin Script、 有効な支払いの形を、 上記のトランザクション用語の背後にある設計文書の詳細度で扱う。

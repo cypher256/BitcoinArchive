@@ -54,3 +54,5 @@ translationStatus: complete
 **大規模普及のための未解決問題について：**
 
 ダイは、より広範な普及に必要な条件として、価格安定性、景気循環、最適なインフレ率などの問題を提起した。
+
+こうした 1998 年の留保 — b-money はニッチな仕組みに留まるという見立てと、 クリプトアナーキーから距離を置き始めた姿勢 — は、 ダイが後年になってようやく明言する疑念の同時代的な痕跡である。 なぜ b-money を実装まで進めなかったのかは、 彼自身が [2014 年の LessWrong 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)で振り返っている。

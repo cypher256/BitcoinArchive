@@ -49,7 +49,7 @@ Bitcoin Cash's launch parameters:
 - **Difficulty adjustment:** modified Emergency Difficulty Adjustment (EDA) to allow the small new chain to mine blocks despite minority hashrate
 - **Replay protection:** SIGHASH_FORKID flag, so transactions on one chain were not valid on the other
 
-The figureheads behind the BCH launch were [Roger Ver](https://en.wikipedia.org/wiki/Roger_Ver) (early Bitcoin investor and operator of bitcoin.com), Jihan Wu (co-founder of the Bitmain mining hardware company), and Amaury Séchet (lead developer of Bitcoin ABC). Each contributed to a different layer of the launch — Ver to the public-facing branding, Wu to the mining-pool support, Séchet to the protocol implementation.
+The figureheads behind the BCH launch were [Roger Ver](https://en.wikipedia.org/wiki/Roger_Ver) (early Bitcoin investor and operator of bitcoin.com), Jihan Wu (co-founder of the Bitmain mining hardware company), and [Amaury Séchet](/BitcoinArchive/participants/amaury-sechet/) (lead developer of Bitcoin ABC). Each contributed to a different layer of the launch — Ver to the public-facing branding, Wu to the mining-pool support, Séchet to the protocol implementation.
 
 Bitcoin Cash survived the launch event. Within hours of the fork, BCH had its own block production, exchange listings (Bitfinex, ViaBTC, Kraken), and price discovery (~$300 initial trading). Unlike Bitcoin XT, Bitcoin Classic, and Bitcoin Unlimited — all of which collapsed without producing a separate persistent chain — BCH's deliberate hard-fork approach left a separate network that has continued operating to the present day.
 

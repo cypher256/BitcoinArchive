@@ -88,7 +88,7 @@ inlineLinkKeywords:
   - "identity hypotheses overview"
 ---
 
-Ten named candidates, seven dimensions of Satoshi's documented public-record outline. No single candidate scores cleanly on all seven; each falls short on at least one. This entry compares the named candidates across four independent structural layers — profile match (§2), stylometric attribution (§3), direct correspondence (§4), and development environment (§5) — and notes where each profile breaks down. Each candidate is measured against the documented public-record outline of Satoshi:
+Ten named candidates, seven dimensions of Satoshi's documented public-record outline. No single candidate scores cleanly on all seven; each falls short on at least one. This entry compares the named candidates across four independent structural layers — profile match (§2), stylometric attribution (§3), direct correspondence (§4), and development environment (§5) — and notes where each profile breaks down. Each candidate is measured against the documented public-record outline of [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/):
 
 - the whitepaper's explicit citation of Hashcash and b-money;
 - the August 2008 pre-launch correspondence with Adam Back and Wei Dai;

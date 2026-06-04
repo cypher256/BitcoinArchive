@@ -35,7 +35,7 @@ quotes:
     sourceEntryId: "tweets/cobra/2021-06-28-whitepaper-ruling-response"
 ---
 
-Hours after the London High Court issued a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper, [Cobra](/BitcoinArchive/participants/cobra/) posted on X:
+Hours after the London High Court issued [a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/), [Cobra](/BitcoinArchive/participants/cobra/) posted on X:
 
 <!-- quote: q1 -->
 > All your fiat based assets are ultimately secured by the same legal system that today made it illegal for me to host the Bitcoin whitepaper because a notorious liar swore before a judge that he's Satoshi. A system where 'justice' depends on who's got the bigger wallet.

@@ -81,3 +81,5 @@ The December 2015 [Wired and Gizmodo investigations](/BitcoinArchive/entries/aft
 ### Whitepaper Lawsuit
 In February 2021, Wright [sued](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) the pseudonymous operator of bitcoin.org ([Cobra](/BitcoinArchive/participants/cobra/)) over Bitcoin whitepaper copyright. On June 28, 2021, the court issued a default judgment in Wright's favor — not because the claim had merit, but because Cobra chose to protect his anonymity rather than reveal his identity to defend himself.
 
+Wright's identity claims rested on signing with the keys to early blocks (1–9) but never extended to the genesis-block coinbase key — the single demonstration that would be dispositive, which [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) notes has never been performed, by Wright or anyone.
+

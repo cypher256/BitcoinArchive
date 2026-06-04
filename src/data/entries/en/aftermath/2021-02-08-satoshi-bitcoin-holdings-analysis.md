@@ -33,7 +33,7 @@ relatedEntries:
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
-Multiple independent analyses have attempted to quantify the number of bitcoins mined by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) during Bitcoin's earliest months. The most cited research, originally conducted by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) in 2013 and refined in subsequent years, identified a distinctive mining pattern that has become known as the "Patoshi pattern."
+Multiple independent analyses have attempted to quantify the number of bitcoins mined by [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) during Bitcoin's earliest months. The most cited research, originally conducted by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) in 2013 and refined in subsequent years, identified a distinctive mining pattern that has become known as the ["Patoshi pattern"](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/).
 
 Lerner's analysis examined the ExtraNonce field in the coinbase transactions of early Bitcoin blocks. He discovered that a single dominant miner -- presumed to be Satoshi -- was responsible for mining a large proportion of blocks from Bitcoin's launch in January 2009 through mid-2010. This miner exhibited consistent, identifiable characteristics that distinguished their blocks from those mined by others.
 

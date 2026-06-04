@@ -112,3 +112,5 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 トッド＝サトシ正体仮説そのものの分析的な扱い（ドキュメンタリーが提示した根拠を、トッドの年齢・OCAD 在学期間・2012 年以前のサイファーパンク参加記録・文体変遷・開発活動タイムラインに照らして検証する作業）については、[ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。
+
+映画が依拠する 2010 年 12 月のスレッドを補う隣接記録が二つある。 [トッドの BitcoinTalk 初投稿](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/) — サトシへの返信の 3 日前に登録された「retep」 名義の Diaspora 招待リクエスト — はドキュメンタリーが依拠するアカウントの挙動を記録し、 [BIP 125 Replace-by-Fee の記事](/BitcoinArchive/ja/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/)は、 映画がトッドによるサトシ設計の完成と見なす 2015 年の正式化を扱う。

@@ -46,4 +46,4 @@ translationStatus: complete
 
 再びメディアは暗号通貨の死を宣告した。再びビットコインのプロトコルは影響を受けなかった。FTX は中央集権型の仲介者 — ビットコインが排除するために設計されたまさにそのタイプの信頼される第三者 — だった。この崩壊はビットコインの設計に組み込まれた原則を改めて強化した：「Don't trust, verify.」 [失われたビットコイン横断総括](/BitcoinArchive/ja/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/)では、 FTX を不正流用による保管崩壊事例として QuadrigaCX (単独保管者詐欺) や Mt. Gox (運用失敗 + 盗難) と並べて読み、 パスワード忘却型・物理喪失型 (ステファン・トーマス、 ハウエルズ) と対置する。
 
-本 FTX 崩壊は[サトシ設計対現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)によって、 根拠的な保管軸の例として扱われる。 同分析は FTX を Mt. Gox 倒産と並べて、 プロトコルが防ぐよう設計された銀行型破綻モードの代表例として用いる ― 影響を受けた利用者はいかなるコインに対するプロトコル層の請求権も持たず、 倒産企業に対する契約上の請求権しか持たなかった。
+本 FTX 崩壊は[サトシ設計対現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)によって、 根拠的な保管軸の例として扱われる。 同分析は FTX を [Mt. Gox 倒産](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)と並べて、 プロトコルが防ぐよう設計された銀行型破綻モードの代表例として用いる ― 影響を受けた利用者はいかなるコインに対するプロトコル層の請求権も持たず、 倒産企業に対する契約上の請求権しか持たなかった。

@@ -60,7 +60,7 @@ translationStatus: complete
 
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
 
-ウェイ・ダイはコンピューターサイエンティスト・暗号学者で、ワシントン大学でコンピューターサイエンスを学び、Microsoft で働いた。ホワイトペーパー参考文献 [1] としての b-money 引用、Crypto++ のコードベース依存、サトシの公開前接触 —— これらの組み合わせから繰り返しサトシ正体候補となってきた。詳細は[専用の正体仮説エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)。上記の回顧が主要な自己否定として扱われる。暗号通貨[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)の最小単位「wei」 はウェイ・ダイに敬意を表して名付けられた。
+ウェイ・ダイはコンピューターサイエンティスト・暗号学者で、ワシントン大学でコンピューターサイエンスを学び、Microsoft で働いた。ホワイトペーパー参考文献 [1] としての b-money 引用、Crypto++ のコードベース依存、サトシの公開前接触 —— これらの組み合わせから繰り返しサトシ正体候補となってきた。詳細は[専用の正体仮説エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)。[上記の回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)が主要な自己否定として扱われる。暗号通貨[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)の最小単位「wei」 はウェイ・ダイに敬意を表して名付けられた。
 
 ```mermaid
 timeline

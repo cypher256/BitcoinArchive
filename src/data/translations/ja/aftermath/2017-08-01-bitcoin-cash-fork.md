@@ -49,7 +49,7 @@ relatedEntries:
 - **難易度調整**: Emergency Difficulty Adjustment (EDA) で改良。少数派ハッシュレートでも小さな新チェーンがブロック採掘を続けられるように
 - **再生攻撃保護**: SIGHASH_FORKID フラグ。一方のチェーンの取引はもう一方では無効
 
-BCH ローンチの旗手は、[ロジャー・ヴァー](https://en.wikipedia.org/wiki/Roger_Ver) (初期のビットコイン投資家で bitcoin.com の運用者)、ジハン・ウー (採掘ハードウェア企業 Bitmain の共同創業者)、アモリー・セシェ (Bitcoin ABC のリード開発者) だった。それぞれがリリースの異なる層に貢献した — ヴァーは公開向けのブランディング、ウーはマイニングプール側の支持、セシェはプロトコル実装である。
+BCH ローンチの旗手は、[ロジャー・ヴァー](https://en.wikipedia.org/wiki/Roger_Ver) (初期のビットコイン投資家で bitcoin.com の運用者)、ジハン・ウー (採掘ハードウェア企業 Bitmain の共同創業者)、[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/) (Bitcoin ABC のリード開発者) だった。それぞれがリリースの異なる層に貢献した — ヴァーは公開向けのブランディング、ウーはマイニングプール側の支持、セシェはプロトコル実装である。
 
 ビットコインキャッシュはローンチイベントを生き延びた。フォーク後数時間以内に BCH は独自のブロック生成、取引所上場 (Bitfinex、ViaBTC、Kraken)、価格発見 (約 300 ドルの初期取引) を持っていた。Bitcoin XT・Bitcoin Classic・Bitcoin Unlimited が永続的な別チェーンを残せず崩壊したのに対し、BCH の意図的なハードフォーク方式は、現在まで動作し続ける別ネットワークを残した。
 

@@ -65,3 +65,5 @@ translationStatus: complete
 > 「我々はLOSTの映画の中にいる：一つの謎が解けたように見えるたびに、別の謎が現れる。」
 
 本ナンス LSB 発見は、 後年の二つのラーナー読解において方法論的転換点として扱われる。 [2013 年のパトシ・パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)は本発見を、 ExtraNonce パターンをより強いナンス層の指紋に変換した技術的精緻化として読む。 [2019 年のパトシ命名エントリ](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)は本 LSB 発見を、 ラーナーの経験的観察を「パトシ」 と名指される確度の高い結論へと転換した方法論的追補の一つとして扱う (精緻化されたナンス LSB と ExtraNonce 方法論の一部として)。
+
+ラーナーはこのハードウェアの問いに [2020 年のパトシ・マイニングマシン分析](/BitcoinArchive/ja/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/)で本格的に立ち返り、 その再マイニング・シミュレーションは、 ここで発見されたナンス分割パターンが含意する単一 CPU・5 スレッド構成を裏付けた。

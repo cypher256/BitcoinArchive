@@ -63,3 +63,5 @@ Lerner concluded that the Patoshi miner used a **single high-end CPU with multi-
 **Implications:**
 
 This analysis directly refuted Whale Alert's claim of ~48 separate computers. The distinction matters: a single PC running custom software is consistent with a lone individual bootstrapping the network, while a 48-machine operation would suggest organizational resources. Lerner's findings reinforced the picture of Satoshi as a technically skilled individual working alone on consumer hardware.
+
+This hardware conclusion builds directly on Lerner's two earlier findings: the [2013 Patoshi-pattern analysis](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) that first isolated the single-miner signal from the ExtraNonce field, and the [2013 nonce-LSB discovery](/BitcoinArchive/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/) that established the nonce-partitioning fingerprint this re-mining simulation reproduces.

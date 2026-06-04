@@ -75,3 +75,5 @@ It's a millennium-and-a-half later and we are STILL finding stashes of Roman coi
 **On ASICs and mining centralization:**
 
 I'm pretty sure Satoshi didn't think of miners in places with artificially low subsidized rates for electricity outcompeting all other miners, driving the concentration of the vast majority of hashing power into just one country where it's subject to the orders and whims of just one government.
+
+This interview supplies the technical substance behind the pre-release audit summarised in the [Ray Dillinger biography](/BitcoinArchive/participants/ray-dillinger/), and complements his first-person retrospective ["If I'd known then what I know now"](/BitcoinArchive/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/), which gives the who, when, and why of the same November 2008 review this interview documents in technical detail.

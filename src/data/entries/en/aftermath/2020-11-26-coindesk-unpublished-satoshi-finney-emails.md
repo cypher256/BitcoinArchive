@@ -82,3 +82,5 @@ The phrase "from where I am" is examined alongside the cadence of Satoshi's laun
 
 **The Timezone Mystery:**
 Satoshi's January 2009 email headers showed a timezone **eight hours ahead of GMT (UTC+8)** — inconsistent with Japan's UTC+9 offset. This initially fueled speculation about Satoshi's location. However, Doncho Karaivanov of Chain Bulletin argued the UTC+8 timestamp came from AnonymousSpeech.com's email server (based in Tokyo since 1996), not Satoshi's local machine. When using webmail, the Date header timezone reflects the server, not the user's location.
+
+Finney himself recalled this email correspondence with Satoshi in his 2013 essay ["Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/), where he described reporting bugs to Satoshi in the days following the v0.1 release.

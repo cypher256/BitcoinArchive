@@ -46,4 +46,6 @@ Cobra faced an impossible choice: reveal his identity and lose his anonymity, or
 
 He chose to protect his anonymity.
 
+Cobra [responded publicly the same day](/BitcoinArchive/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/), arguing that rules enforced through cryptography are superior to rules enforced by whoever can outspend an opponent in court.
+
 This ruling was later rendered meaningless when the UK High Court ruled in COPA v. Wright (March 2024) that Craig Wright is not Satoshi Nakamoto and therefore has no claim to authorship of the Bitcoin whitepaper. The Bitcoin whitepaper remains freely available on numerous websites worldwide.
