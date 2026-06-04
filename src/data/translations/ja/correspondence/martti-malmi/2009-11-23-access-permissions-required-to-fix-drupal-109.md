@@ -34,33 +34,28 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> Drupalの.htaccessファイルは、mod_rewriteを使用して?パラメーターなしの
-> クリーンURLを有効にしているが、Apacheが「AllowOverride All」に設定
-> されていないため、変更が拒否されて動作していない。これは、私たちが望む形で
-> Drupalを他のサイトと共存させるために必要だ。
+> Drupal の.htaccess ファイルは、mod_rewrite を使用して?パラメーターなしのクリーン URL を有効にしているが、Apache が「AllowOverride All」に設定されていないため、変更が拒否されて動作していない。これは、私たちが望む形で Drupal を他のサイトと共存させるために必要だ。
 >
 > 修正するために以下のファイルへのアクセス権限が必要だ：
 >  /etc/apache2/sites-available/default
 >  /etc/apache2/sites-available/default-ssl
 >  /etc/apache2/httpd.conf
 >
-> 修正計画は以下の通りだ。もし自分でやる場合でも、後で変更が
-> 必要になるかもしれないので、httpd.confへのアクセス権限は付与してほしい。
+> 修正計画は以下の通りだ。もし自分でやる場合でも、後で変更が必要になるかもしれないので、httpd.conf へのアクセス権限は付与してほしい。
 >
-> /etc/apache2/sites-available/defaultで
-> 「AllowOverride None」の2番目のインスタンスを
->      「AllowOverride All」に変更
+> /etc/apache2/sites-available/defaultで<br>
+> 「AllowOverride None」の2番目のインスタンスを<br>
+> 「AllowOverride All」に変更
 >
-> そして/etc/apache2/sites-available/default-sslで
-> 「AllowOverride AuthConfig」の2番目のインスタンスを
->      「AllowOverride All」に変更
+> そして/etc/apache2/sites-available/default-sslで<br>
+> 「AllowOverride AuthConfig」の2番目のインスタンスを<br>
+> 「AllowOverride All」に変更
 >
 > 置き換え
 >  /etc/apache2/httpd.conf
 > を
 >  /home/maintenance/httpd.conf
 >
-> おそらくこの後Apacheの再起動が必要だ。
-> (apache2ctl graceful)
+> おそらくこの後 Apache の再起動が必要だ。 (apache2ctl graceful)
 
 <!-- speaker: Martti Malmi -->
