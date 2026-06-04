@@ -41,9 +41,9 @@ quotes:
 <!-- quote: q2 -->
 >> GUI なしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >>
->> 1) GTKはディスプレイなしでプログラムを実行することをサポートしている：
+>> 1) GTK はディスプレイなしでプログラムを実行することをサポートしています：
 >> http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
->> ただし、wxWidgetsで可能かどうかまでは分からない。
+>> ただし、wxWidgets で可能かどうかまでは分かりません。
 >
 > wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
 >
