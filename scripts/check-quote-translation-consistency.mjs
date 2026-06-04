@@ -529,9 +529,11 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
   }
 }
 
+const JSON_MODE = process.argv.includes('--json');
 let divergentCount = 0;
 let visualDivergentCount = 0;
 const output = [];
+const findings = []; // structured form for `--json`
 for (const [enPhrase, occurrences] of enParaMap.entries()) {
   if (occurrences.length < 2) continue;
   if (!occurrences.some((occ) => occ.isQuote)) continue;
@@ -554,8 +556,10 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
     divergentCount++;
     output.push(`\n[divergent translation]`);
     output.push(`  EN: "${truncate(enPhrase)}"`);
+    const findingVariants = [];
     for (const [ja, occs] of widthVariants.entries()) {
       output.push(`  JA variant: "${truncate(ja)}"`);
+      const occList = [];
       for (const occ of occs) {
         const rel = path.relative(REPO_ROOT, occ.enPath);
         if (occ.pseudoLabel) {
@@ -564,8 +568,16 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
           const tag = occ.isQuote ? 'quote' : 'body';
           output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
         }
+        occList.push({
+          enPath: rel,
+          paraIdx: occ.paraIdx,
+          isQuote: occ.isQuote,
+          pseudoLabel: occ.pseudoLabel ?? null,
+        });
       }
+      findingVariants.push({ ja, occurrences: occList });
     }
+    findings.push({ kind: 'divergent', enPhrase, variants: findingVariants });
     continue;
   }
   // No wording divergence — check for visual-only divergence on the
@@ -587,8 +599,10 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
     visualDivergentCount++;
     output.push(`\n[visual-only divergence]`);
     output.push(`  EN: "${truncate(enPhrase)}"`);
+    const findingVariants = [];
     for (const [ja, occs] of lexVariants.entries()) {
       output.push(`  JA variant: "${truncate(ja)}"`);
+      const occList = [];
       for (const occ of occs) {
         const rel = path.relative(REPO_ROOT, occ.enPath);
         if (occ.pseudoLabel) {
@@ -597,12 +611,31 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
           const tag = occ.isQuote ? 'quote' : 'body';
           output.push(`    ${rel} (paragraph #${occ.paraIdx + 1}, ${tag})`);
         }
+        occList.push({
+          enPath: rel,
+          paraIdx: occ.paraIdx,
+          isQuote: occ.isQuote,
+          pseudoLabel: occ.pseudoLabel ?? null,
+        });
       }
+      findingVariants.push({ ja, occurrences: occList });
     }
+    findings.push({ kind: 'visual-only', enPhrase, variants: findingVariants });
   }
 }
 
-if (output.length > 0) {
+if (JSON_MODE) {
+  console.log(JSON.stringify({
+    pairsScanned,
+    pairsSkipped,
+    divergentCount,
+    visualDivergentCount,
+    findings,
+  }, null, 2));
+  // In JSON mode, skip the human-readable footer so the output is a
+  // clean JSON document that downstream tooling can `JSON.parse()`.
+  process.exit(divergentCount + visualDivergentCount > 0 ? 1 : 0);
+} else if (output.length > 0) {
   console.log(output.join('\n'));
 }
 
