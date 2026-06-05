@@ -114,7 +114,7 @@ secure and Free Open Source software downloads" /></a>
 > フッターに追加できると良いですね。
 >
 <!-- /tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+<!-- speaker: Martti Malmi -->
 <!-- quote: q2 -->
 >> 現在のサイトレイアウトはすっきりしていて良いですね。
 >> ロゴだけ変更すべきです。
