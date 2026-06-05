@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-Windows 上の MinGW でコンパイルに問題があります：
+Windows 上の MinGW でコンパイルに問題がある：
 
 g++ -c -mthreads -O2 -w -Wno-invalid-offsetof -Wformat -g -D__WXDEBUG__ -DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH -I"/boost" -I"/db/build_unix" -I"/openssl/include" -I"/wxwidgets/lib/gcc_lib/mswud" -I"/wxwidgets/include" -msse2 -O3 -o obj/sha256.o sha256.cpp
 
