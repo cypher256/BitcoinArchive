@@ -29,7 +29,7 @@ translationStatus: complete
 <!-- quote: q1 -->
 >
 > <!-- quote: q2 -->
-> > 基本的には、かかってこい、だ。WikileaksにBitcoinを使うよう促そう。その行為から生じるリスクや影響にも俺は喜んで向き合う。
+> > 要するに、望むところだ。WikiLeaks に Bitcoin を使うよう促そう。それに伴うリスクや余波は、私は喜んで引き受ける。
 >
 > 違う、挑発するな。
 >
