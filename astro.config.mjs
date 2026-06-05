@@ -25,7 +25,14 @@ export default defineConfig({
   base,
   server: {
     port: 4321,
-    strictPort: true,
+  },
+  // strictPort must be set on Vite's server, not Astro's `server` (Astro's
+  // server option has no strictPort, so it silently falls back to 4322+).
+  // With this, `npm run dev` either binds 4321 or fails -- never drifts.
+  vite: {
+    server: {
+      strictPort: true,
+    },
   },
   i18n: {
     locales: ['en', 'ja'],
