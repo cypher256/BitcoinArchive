@@ -21,7 +21,7 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> ギャビン、listtransactionsに全アカウントのトランザクションを一覧表示するオプションを追加できないか？
+> ギャビン、listtransactions にすべてのアカウントのトランザクションをリストするオプションを付けられるか？
 >
 > どんなインターフェースにすべきかは分からないが、たとえば：
 > listtransactions  [count]
