@@ -330,7 +330,7 @@ quotes:
 
 例外: 文脈の必然で訳し分ける場合 (= 同じ英文が異なる意味文脈で使われる) は許容。判断に迷うときは、より正確で自然な訳に統一する。
 
-検証: `npm run audit:quote-translation-consistency` (= `scripts/check-quote-translation-consistency.mjs`) が「少なくとも 1 箇所が `>` 引用ブロックで使われている同一英語段落の訳語ずれ」 を段落単位で検出して警告する。表記揺れ (全角半角の数字、Markdown 強調記号周辺のスペース、Japanese-ASCII 境界スペース等) は本スクリプトの正規化で吸収するので、報告は実質的な訳語の差にほぼ絞られる。`check:` 系ではなく `audit:` 系に置いているため、既存の差があっても build を阻害しない。新規翻訳の追加直後と、ずれを修正する作業の前後に手動で実行する運用。
+検証: `npm run audit:quote-translation-consistency` (= `scripts/audit-quote-translation-consistency.mjs`) が「少なくとも 1 箇所が `>` 引用ブロックで使われている同一英語段落の訳語ずれ」 を段落単位で検出して警告する。表記揺れ (全角半角の数字、Markdown 強調記号周辺のスペース、Japanese-ASCII 境界スペース等) は本スクリプトの正規化で吸収するので、報告は実質的な訳語の差にほぼ絞られる。`check:` 系ではなく `audit:` 系に置いているため、既存の差があっても build を阻害しない。新規翻訳の追加直後と、ずれを修正する作業の前後に手動で実行する運用。
 
 ### 編者注 / 補足 ( Role C / D ) — エントリー型別の使い分け
 
@@ -838,7 +838,7 @@ JA × ASCII にまたがる一括置換が、こうした取り残しスペー�
 
 これら 3 つは構造的に「外部からの逐語保持区間」 を示すマーカーで、`check-ja-spacing` はこれらをスキップする。引用される側のテキスト (一次資料の英文、または他エントリーから引かれた JA 訳) のスペースをそのまま保つことを優先する。
 
-ただし、同一の JA 訳文が cross-entry で本文 (空白あり) と引用 (空白なし) という形で並ぶと、読者は同じ訳を別の表記で目にすることになる。この visual divergence は §4「プロジェクト横断の整合性」 で揃える対象であり、`check-quote-translation-consistency` の visual-only divergence カテゴリで検出される。
+ただし、同一の JA 訳文が cross-entry で本文 (空白あり) と引用 (空白なし) という形で並ぶと、読者は同じ訳を別の表記で目にすることになる。この visual divergence は §4「プロジェクト横断の整合性」 で揃える対象であり、`audit-quote-translation-consistency` の visual-only divergence カテゴリで検出される。
 
 #### インライン 「」 (鍵括弧) の取り扱い
 
@@ -955,7 +955,7 @@ timeline イベントラベルの例 (Satoshi biography から):
 
 これは翻訳品質の懸案であり、特定の外部プロジェクトへの規範的依存ではない。掲載先間の不一致は、私的または検証不能な外部文書を参照することによってではなく、編集上の意図的な判断 — 最も正確な訳を選び、それを各所で用いる — によって解決する。
 
-整合の対象には**語彙・文体の差**だけでなく、**visual 表記の差**も含む。たとえば JA-ASCII 境界の半角空白の有無 (`トランザクション b412a0` vs `トランザクションb412a0`) は、§I「半角スペースの規約」 では引用ブロックは単独適用対象外として扱うが、同じ JA 訳文が本文 (空白あり) と引用 (空白なし) として cross-entry で並ぶと、読者は同じ訳を別の表記で目にすることになる。本節の整合義務はこの visual divergence にも及ぶ。検出は `check-quote-translation-consistency` の visual-only divergence カテゴリで行う。
+整合の対象には**語彙・文体の差**だけでなく、**visual 表記の差**も含む。たとえば JA-ASCII 境界の半角空白の有無 (`トランザクション b412a0` vs `トランザクションb412a0`) は、§I「半角スペースの規約」 では引用ブロックは単独適用対象外として扱うが、同じ JA 訳文が本文 (空白あり) と引用 (空白なし) として cross-entry で並ぶと、読者は同じ訳を別の表記で目にすることになる。本節の整合義務はこの visual divergence にも及ぶ。検出は `audit-quote-translation-consistency` の visual-only divergence カテゴリで行う。
 
 正規例 — サトシからマイク・ハーンへの最後のメッセージ:
 

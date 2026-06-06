@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * check-quote-translation-consistency.mjs
+ * audit-quote-translation-consistency.mjs
  *
  * Detect cases where the same English source passage has been rendered
  * into Japanese with divergent wording across entries, when at least

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * check-ja-quote-consistency.mjs — find divergent JA translations of same EN quote.
+ * audit-ja-quote-consistency.mjs — find divergent JA translations of same EN quote.
  *
  * Scans all EN entries for blockquotes (consecutive lines starting with `> `),
  * groups blockquotes whose EN text is identical (after light normalization)
@@ -26,9 +26,9 @@
  *     if a translator splits or merges blockquotes, the script may
  *     compare unrelated translations. Visual inspection still required.
  *
- * Run: node scripts/check-ja-quote-consistency.mjs
- *      node scripts/check-ja-quote-consistency.mjs --strict   # exit 1 on any issue
- *      node scripts/check-ja-quote-consistency.mjs --json     # machine-readable output
+ * Run: node scripts/audit-ja-quote-consistency.mjs
+ *      node scripts/audit-ja-quote-consistency.mjs --strict   # exit 1 on any issue
+ *      node scripts/audit-ja-quote-consistency.mjs --json     # machine-readable output
  */
 
 import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs';

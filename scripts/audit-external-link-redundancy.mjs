@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * check-external-link-redundancy.mjs — flags external links in entry bodies
+ * audit-external-link-redundancy.mjs — flags external links in entry bodies
  * that point to a URL the archive already covers as an internal entry.
  *
  * Each entry's `sourceUrl` is the canonical external reference for that
@@ -25,8 +25,8 @@
  *     incidental matches, etc.)
  *
  * Usage:
- *   node scripts/check-external-link-redundancy.mjs           # informational
- *   node scripts/check-external-link-redundancy.mjs --strict  # exit 1 on findings
+ *   node scripts/audit-external-link-redundancy.mjs           # informational
+ *   node scripts/audit-external-link-redundancy.mjs --strict  # exit 1 on findings
  *
  * Exit codes:
  *   0 — no findings (or running without --strict)

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * check-mermaid-text.mjs
+ * audit-mermaid-contrast.mjs
  *
  * Walk every .md file under `src/data/entries/en/` and
  * `src/data/translations/ja/` that contains a ```mermaid block,

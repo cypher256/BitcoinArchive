@@ -1,5 +1,5 @@
 /**
- * check-bitcointalk-thread-coherence.mjs
+ * audit-bitcointalk-thread-coherence.mjs
  *
  * Audits BitcoinTalk thread title cascades and classifies anomalies into
  * four categories:

@@ -3,7 +3,7 @@
  * fix-quote-visual-divergence.mjs
  *
  * One-shot fixer for the `[visual-only divergence]` category surfaced
- * by check-quote-translation-consistency. For each EN passage where
+ * by audit-quote-translation-consistency. For each EN passage where
  * width-folded JA renderings agree (same wording) but the surface
  * (non-width-folded) JA renderings disagree (e.g. body has
  * `トランザクション b412a0` per § I half-width-space convention, `>`
@@ -71,7 +71,7 @@ const JA_ROOT = path.join(REPO_ROOT, 'src/data/translations/ja');
 const MIN_PHRASE_LENGTH = 40;
 const WRITE = process.argv.includes('--write');
 
-// ---------- Paragraph scan plumbing (mirrors check-quote-translation-consistency.mjs) ----------
+// ---------- Paragraph scan plumbing (mirrors audit-quote-translation-consistency.mjs) ----------
 
 function walkMarkdown(root, out = []) {
   if (!existsSync(root)) return out;
@@ -167,7 +167,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
   const enParasRaw = splitParagraphs(enBody);
   const jaParasRaw = splitParagraphs(jaBody);
 
-  // Mirror of the marker-pre-filter in check-quote-translation-consistency.mjs.
+  // Mirror of the marker-pre-filter in audit-quote-translation-consistency.mjs.
   // Strip marker-only paragraphs from both sides before the lock-step
   // walk so JA-side `<!-- speaker: -->` markers don't shift alignment.
   function filterMarkerOnly(paras) {
