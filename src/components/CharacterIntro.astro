@@ -1,7 +1,7 @@
 ---
 import { characters } from '../data/characters';
 import { localePath } from '../i18n/utils';
-import { resolveAvatar } from '../data/avatars';
+import Avatar from './Avatar.astro';
 
 interface Props {
   lang: 'ja' | 'en';
@@ -17,7 +17,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   {characters.map((c) => (
     <a href={localePath(`/participants/${c.slug}/`, lang)} class="character-card">
       <div class="character-head">
-        <img class="character-avatar" src={resolveAvatar(c.slug, base)} alt="" width="40" height="40" loading="lazy" />
+        <Avatar slug={c.slug} sizeClass="character-avatar" base={base} />
         <span class="character-name">{c.name[lang]}</span>
         <span class="character-epithet">{c.epithet[lang]}</span>
       </div>
@@ -63,14 +63,6 @@ const base = import.meta.env.BASE_URL.endsWith('/')
     margin-bottom: 0.5rem;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--color-border);
-  }
-  .character-avatar {
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    background: var(--color-bg-alt);
   }
   .character-name {
     font-family: var(--font-heading);

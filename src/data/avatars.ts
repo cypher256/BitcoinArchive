@@ -107,3 +107,33 @@ export function resolveAvatar(slug: string, base: string): string {
   }
   return `${base}avatars/${slug}.png`;
 }
+
+/**
+ * Avatar pixel size per size-class — the width/height attrs on the <img>
+ * (guards against layout shift). The CSS source of truth for the rendered
+ * size is `--avatar-size` per size-class in global.css; keep these in sync.
+ */
+export const AVATAR_PX: Record<string, number> = {
+  'quote-avatar': 25,
+  'character-avatar': 35,
+  'participant-avatar': 72,
+  'entry-author-avatar': 48,
+  'message-avatar': 30,
+};
+
+/**
+ * Single source of truth for avatar markup, shared by the remark quote
+ * chips (HTML string, here) and Avatar.astro (same classes). Satoshi is a
+ * CSS span so its "SN" colour can follow the theme — white on the
+ * light-mode orange, dark ink on the dark-mode amber — which a single
+ * baked PNG can't do. Every other slug is an <img>. Sizing is driven
+ * entirely by the size-class via --avatar-size in global.css; the px
+ * attrs only guard layout shift.
+ */
+export function avatarTag(slug: string, sizeClass: string, base: string): string {
+  if (slug === 'satoshi-nakamoto') {
+    return `<span class="avatar ${sizeClass} satoshi-av" aria-hidden="true">SN</span>`;
+  }
+  const px = AVATAR_PX[sizeClass] ?? 32;
+  return `<img class="avatar ${sizeClass}" src="${resolveAvatar(slug, base)}" alt="" width="${px}" height="${px}" loading="lazy" />`;
+}

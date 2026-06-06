@@ -3,7 +3,7 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, formatDateMaybeTime, localePath, translateParticipantName, findAuthorParticipant, absoluteUrl } from '../../../../i18n/utils';
 import { deriveThreadTitle, resolveThreadId } from '../../../../data/threads';
-import { resolveAvatar } from '../../../../data/avatars';
+import Avatar from '../../../../components/Avatar.astro';
 import commentariesData from '../../../../data/derived-commentaries.json';
 
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
@@ -147,7 +147,7 @@ const breadcrumbs = [
                 const authorSlug = ap?.slug || entry.data.author;
                 return (
                   <>
-                    <img class="message-avatar" src={resolveAvatar(authorSlug, base)} alt="" width="38" height="38" loading="lazy" />
+                    <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
                     <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={["author-name", { satoshi: isSatoshiAuthor }]}>
                       {displayName}{showHandle && <span class="author-handle">（{entry.data.author}）</span>}
                     </a>

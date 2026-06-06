@@ -1,0 +1,30 @@
+---
+/**
+ * Avatar.astro — the single avatar renderer for participant pages,
+ * dossier cards, entry titles, and thread message headers. The remark
+ * quote-chip path uses avatarTag() (avatars.ts) to emit the SAME markup,
+ * so every avatar slot across the site is identical in shape and size.
+ *
+ * Pass the size-class (quote-avatar / character-avatar / participant-avatar
+ * / entry-author-avatar / message-avatar); global.css maps it to
+ * --avatar-size. Satoshi renders as a CSS span so its "SN" colour follows
+ * the theme (white on the light-mode orange, dark ink on the dark-mode
+ * amber); every other slug is an <img>.
+ */
+import { resolveAvatar, AVATAR_PX } from '../data/avatars';
+
+interface Props {
+  slug: string;
+  sizeClass: string;
+  base: string;
+}
+
+const { slug, sizeClass, base } = Astro.props;
+const px = AVATAR_PX[sizeClass] ?? 32;
+const isSatoshi = slug === 'satoshi-nakamoto';
+---
+{isSatoshi ? (
+  <span class:list={['avatar', sizeClass, 'satoshi-av']} aria-hidden="true">SN</span>
+) : (
+  <img class:list={['avatar', sizeClass]} src={resolveAvatar(slug, base)} alt="" width={px} height={px} loading="lazy" />
+)}

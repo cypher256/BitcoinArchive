@@ -477,14 +477,6 @@ blockquote[data-speaker="satoshi"] {
   margin-bottom: 0.35em;
   color: var(--color-text-muted);
 }
-.quote-attribution .quote-avatar {
-  width: 1.75em;
-  height: 1.75em;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  background: var(--color-bg-alt);
-}
 .quote-attribution a {
   color: var(--color-link);
 }
@@ -538,17 +530,56 @@ blockquote[data-speaker="satoshi"] {
 .quote-attribution + blockquote {
   margin-top: 0;
 }
-/* Satoshi's avatar is generated with a transparent background; the fill
-   is applied here so it tracks --color-satoshi in both light and dark
-   themes, matching the bubble outline exactly. Matched by src so every
-   avatar slot (quote chip, participant page, dossier card) picks it up
-   without per-call classes. !important overrides each component's
-   placeholder background (.quote-avatar / .participant-avatar /
-   .character-avatar set background: var(--color-bg-alt) in scoped
-   styles, which would otherwise win on Astro's scope-attribute
-   specificity). */
-img[src$="/avatars/satoshi-nakamoto.png"] {
+/* ── Avatars ──────────────────────────────────────────────────────────
+   ONE shape for every avatar slot (quote chip, dossier card, participant
+   page, entry title, thread message header). Only the SIZE differs per
+   slot, set via --avatar-size on the size-class. All markup is emitted by
+   avatarTag() (avatars.ts) and Avatar.astro as `class="avatar <size-class>"`
+   (img) or `class="avatar <size-class> satoshi-av"` (span), so every slot
+   is identical in shape and pixel-identical in size. */
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--color-bg-alt);
+}
+.quote-avatar { --avatar-size: 1.575rem; }
+.character-avatar { --avatar-size: 2.2rem; }
+.participant-avatar { --avatar-size: 4.5rem; }
+.entry-author-avatar { --avatar-size: 3rem; }
+.message-avatar { --avatar-size: 1.9rem; }
+/* Satoshi's avatar is drawn in CSS (a <span class="avatar <size-class>
+   satoshi-av">SN</span>), not a baked PNG, so the "SN" colour can follow
+   the theme: white on the light-mode amber-orange, dark ink on the lighter
+   dark-mode amber — a single fixed-colour PNG can't. Background tracks
+   --color-satoshi (the bubble-outline colour). The initial's font-size is
+   a fixed fraction of --avatar-size; since --avatar-size is rem-based (NOT
+   em), there is no size<->font-size circular reference, and width/height
+   come straight from .avatar above — pixel-identical to every <img>. */
+.avatar.satoshi-av {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* !important overrides .avatar's --color-bg-alt placeholder. */
   background: var(--color-satoshi) !important;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-size: calc(var(--avatar-size) * 0.42);
+  color: #ffffff;
+}
+:root[data-mode="dark"] .avatar.satoshi-av {
+  color: #14181f;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) .avatar.satoshi-av {
+    color: #14181f;
+  }
 }
 
 code {
@@ -951,16 +982,6 @@ th {
   border-bottom: 1px solid var(--color-border);
   color: var(--color-text-muted);
 }
-/* Author avatar before the name in each thread message header. */
-.conversation-thread .message-header .message-avatar {
-  width: 1.9rem;
-  height: 1.9rem;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  background: var(--color-bg-alt);
-}
-
 .conversation-thread .message-header .author-name {
   font-weight: 700;
   font-size: 0.95rem;

@@ -24,7 +24,7 @@ import SupplyCurveComparison from '../../components/SupplyCurveComparison.astro'
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
-import { resolveAvatar } from '../../data/avatars';
+import Avatar from '../../components/Avatar.astro';
 import { resolveThreadId } from '../../data/threads';
 import { renderEditorNote } from '../../lib/editor-note';
 import gitDates from '../../data/git-dates.json';
@@ -143,7 +143,7 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
     </nav>
     <header class="entry-header">
       <div class="entry-title-row">
-        {titleAvatarSlug && <img class="entry-author-avatar" src={resolveAvatar(titleAvatarSlug, base)} alt="" width="48" height="48" />}
+        {titleAvatarSlug && <Avatar slug={titleAvatarSlug} sizeClass="entry-author-avatar" base={base} />}
         <h1>{entry.data.title}</h1>
       </div>
       <EntryMeta
@@ -317,14 +317,6 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
   }
   .entry-title-row h1 {
     margin: 0;
-  }
-  .entry-author-avatar {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    background: var(--color-bg-alt);
   }
   .editor-note {
     display: block;

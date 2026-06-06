@@ -4,7 +4,7 @@ import EntryCard from '../../../components/EntryCard.astro';
 import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath, translateParticipantName, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
-import { resolveAvatar } from '../../../data/avatars';
+import Avatar from '../../../components/Avatar.astro';
 
 export async function getStaticPaths() {
   const { getEntries, getDisplayEntries } = await import('../../../i18n/utils');
@@ -122,7 +122,7 @@ const structuredData = [
       ) : <span />}
     </nav>
     <div class="participant-head">
-      <img class="participant-avatar" src={resolveAvatar(participantSlug, base)} alt="" width="72" height="72" />
+      <Avatar slug={participantSlug} sizeClass="participant-avatar" base={base} />
       <div class="participant-head-text">
         <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
         {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
@@ -266,14 +266,6 @@ const structuredData = [
        .bio-subtitle) avoids shifting that vertical centre. */
     margin-top: 1.5rem;
     margin-bottom: 1.75rem;
-  }
-  .participant-avatar {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    background: var(--color-bg-alt);
   }
   .participant-head-text {
     min-width: 0;
