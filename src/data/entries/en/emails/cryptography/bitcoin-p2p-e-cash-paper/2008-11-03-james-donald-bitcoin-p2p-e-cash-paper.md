@@ -36,14 +36,14 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- speaker: James A. Donald -->
-> To detect and reject a double spending event in a
-> timely manner, one must have most past transactions
-> of the coins in the transaction, which, naively
-> implemented, requires each peer to have most past
-> transactions, or most past transactions that
-> occurred recently. If hundreds of millions of people
-> are doing transactions, that is a lot of bandwidth -
-> each must know all, or a substantial part thereof.
+> > To detect and reject a double spending event in a
+> > timely manner, one must have most past transactions
+> > of the coins in the transaction, which, naively
+> > implemented, requires each peer to have most past
+> > transactions, or most past transactions that
+> > occurred recently. If hundreds of millions of people
+> > are doing transactions, that is a lot of bandwidth -
+> > each must know all, or a substantial part thereof.
 
 <!-- quote: q2 -->
 <!-- speaker: Satoshi Nakamoto -->
