@@ -259,11 +259,13 @@ const structuredData = [
     display: flex;
     align-items: center;
     gap: 1.1rem;
-    /* The avatar is centred against the whole name + subtitle block, so
-       the bottom gap that used to sit on .bio-subtitle is moved here —
-       a margin on the subtitle would extend the text block's margin-box
-       and pull the vertical centre (and the avatar) downward. */
-    margin-bottom: 1.5rem;
+    /* Vertical breathing room around the whole name+subtitle block:
+       above it (gap from the prev/next nav) and below it (gap from the
+       body that follows). The avatar is centred against the name +
+       subtitle block; keeping the bottom gap here (rather than on
+       .bio-subtitle) avoids shifting that vertical centre. */
+    margin-top: 1.5rem;
+    margin-bottom: 1.75rem;
   }
   .participant-avatar {
     width: 4.5rem;
